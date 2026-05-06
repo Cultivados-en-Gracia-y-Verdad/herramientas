@@ -1,177 +1,104 @@
-```
-# MNA — Morph-NBLA Alignment
+# MNA — NBLA ↔ SBLGNT Alignment
 
-MNA is a reference project that creates a strict, token-level alignment between:
+MNA is a strict alignment project between:
 
-- SBLGNT (Greek text)
-- MorphGNT (morphology)
-- NBLA (Spanish translation)
-- OSHB (Hebrew, future phase)
+- SBLGNT Greek text
+- NBLA Spanish text
+- MorphGNT morphology
 
-This is the **base layer** for all downstream systems.
+## Purpose
 
-It is:
+The purpose of MNA is to align NBLA to SBLGNT at the token/span level.
 
-- not a commentary tool  
-- not a ROOTS dataset  
-- not interpretive  
+MNA does not interpret the text.
 
-It is a **structural alignment system**.
+MNA does not create a reader.
 
----
+MNA does not create a lexicon.
 
-## PURPOSE
+MNA does not perform ROOTS analysis.
 
-The goal is to align **every Greek token** to its corresponding expression in NBLA.
+It only produces verified alignment data.
 
-This produces a dataset that enables:
+## Core Rule
 
-- morphology tagging
-- verb identification
-- connector identification
-- interlinear display
-- lexical extraction
-- ROOTS-based analysis
+Greek is the control text.
 
-This layer contains **zero interpretation**.
+NBLA is the aligned Spanish text.
 
----
+MorphGNT supplies morphology for the Greek tokens.
 
-## CORE PRINCIPLE
+## Output Goal
 
-Each Greek token must map to:
+Each SBLGNT token must have:
 
-→ the exact NBLA word(s), OR  
-→ a minimal supplied Spanish equivalent
+- Greek token
+- lemma
+- morphology
+- NBLA aligned word/span
+- alignment type
+- source
 
-Every token must be classified.
+## Alignment Types
 
-No exceptions.
+- direct
+- expanded
+- merged-forward
+- merged-backward
+- missing
 
----
+## Non-Negotiables
 
-## ALIGNMENT TYPES
+- Do not interpret.
+- Do not smooth NBLA.
+- Do not infer theology.
+- Do not build downstream tools yet.
+- If alignment cannot be verified, mark it clearly.
 
-Each Greek token must be assigned one of the following:
+## Project Boundary
 
-1. direct  
-2. merged-forward  
-3. merged-backward  
-4. missing  
-5. expanded  
+MNA ends when the alignment is verified.
 
-### Definitions
+## COVERAGE GUARANTEE (NON-NEGOTIABLE)
 
-- **direct**  
-  One Greek token → one Spanish unit (even if form changes)
+MNA enforces full bidirectional coverage between SBLGNT and NBLA.
 
-- **expanded**  
-  One Greek token → multiple Spanish words
+### 1. Greek Coverage
 
-- **merged-forward / merged-backward**  
-  Multiple Greek tokens → one Spanish expression
+Every Greek token must be:
 
-- **missing**  
-  No NBLA equivalent → must be supplied
+- aligned to NBLA, or
+- marked as supplied
+
+No Greek token may remain unclassified.
 
 ---
 
-## CRITICAL DISTINCTION
+### 2. NBLA Coverage
 
-Form change does NOT equal expansion.
+Every NBLA word must be:
 
-Examples:
+- mapped to one or more Greek tokens, or
+- explicitly marked as:
+  - function-added
+  - restructuring
+  - helper
 
-- participle → finite verb = **direct**
-- adjective → clause = **direct**
-- noun → phrase = **direct**
-
-Expansion ONLY occurs when:
-
-→ one Greek token maps to multiple Spanish words
+  No NBLA word may remain unused.
 
 ---
 
-## ALIGNMENT RULES
+### 3. No Duplication
 
-### 1. NBLA PRIORITY
-
-If NBLA expresses the word:
-
-- use it exactly  
-- preserve full expression  
-
-✔ Correct:
-```
-
-- greek: ἡγιασμένοις
-   lemma: ἁγιάζω
-   morph: V-PPP-DPM
-   type: NF
-   spanish: han sido santificados
-   source: NBLA
-
-```
-If supplied:
-```
-
-- greek: μέν
-   lemma: μέν
-   morph: CONJ
-   type: connector
-   spanish: (por un lado)
-   source: supplied
-
-```
----
-
-## TYPES
-
-- F → finite verb  
-- NF → non-finite verb  
-- connector → clause-level connector  
-- other → all remaining tokens  
+A Spanish word cannot be mapped multiple times unless explicitly marked as shared.
 
 ---
 
-## NON-NEGOTIABLES
+### 4. Hard Validation
 
-- Greek determines structure
-- Morph determines verb status
-- Spanish does not define grammar
-- Alignment must be reproducible
+At the end of each verse:
 
----
+- All Greek tokens must be accounted for
+- All NBLA words must be accounted for
 
-## OUTPUT USAGE
-
-This dataset feeds:
-
-- ROOTS Step 2 (finite verbs)
-- ROOTS Step 4 (connectors)
-- ROOTS Step 7 (phrases)
-- interlinear tools
-- lexical extraction tools
-
----
-
-## DIRECTORY STRUCTURE
-```
-
-mna/
- ├── README.md
- ├── data/
- ├── sources/
- └── scripts/
-
-```
----
-
-## PHILOSOPHY
-
-This is not a translation project.
-
-This is a **structural alignment layer**.
-
-Everything downstream depends on its accuracy.
-```
+If either fails → the alignment fails
