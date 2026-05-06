@@ -406,6 +406,10 @@ app.get("/session.csv", (req, res) => {
   res.send(buildSessionCsv());
 });
 
+app.get("/state.json", (req, res) => {
+  res.json(buildPayload());
+});
+
 loadSlides();
 saveSession();
 

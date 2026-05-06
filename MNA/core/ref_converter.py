@@ -1,4 +1,7 @@
-BOOK_MAP = {
+import re
+
+
+BOOK_NUMBERS = {
     "mateo": "01",
     "marcos": "02",
     "lucas": "03",
@@ -28,13 +31,30 @@ BOOK_MAP = {
     "apocalipsis": "27",
 }
 
+
 def convert_ref(ref):
+    """
+    Converts:
+      filipenses 1:1 -> 110101
+      1corintios 1:10 -> 070110
+    """
+
+    ref = ref.strip().lower()
+
     parts = ref.split()
-    book = parts[0]
-    chapter, verse = parts[1].split(":")
+    if len(parts) != 2:
+        raise ValueError(f"Invalid reference format: {ref}")
 
-    bb = BOOK_MAP[book]
-    cc = chapter.zfill(2)
-    vv = verse.zfill(2)
+    book, cv = parts
 
-    return bb + cc + vv
+    if book not in BOOK_NUMBERS:
+        raise ValueError(f"Unknown book name in ref_converter: {book}")
+
+    match = re.match(r"^(\d+):(\d+)$", cv)
+    if not match:
+        raise ValueError(f"Invalid chapter:verse format: {cv}")
+
+    chapter = int(match.group(1))
+    verse = int(match.group(2))
+
+    return f"{BOOK_NUMBERS[book]}{chapter:02d}{verse:02d}"
