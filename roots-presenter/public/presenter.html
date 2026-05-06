@@ -3,38 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <title>Presenter</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      display: flex;
-      gap: 20px;
-      background: #222;
-      color: white;
-    }
-    .main {
-      flex: 3;
-      padding: 40px;
-    }
-    .side {
-      flex: 1;
-      padding: 20px;
-      background: #333;
-    }
-    .line { font-size: 2em; margin-top: 20px; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="presenter">
+  <div class="topbar">
+    <h1>Presenter View</h1>
+    <button onclick="reloadSlides()">Reload Slides</button>
+  </div>
 
-<div class="main">
-  <div id="current"></div>
-</div>
+  <main class="grid">
+    <section class="session-panel">
+      <h2>Session</h2>
+      <div id="sessionStatus"></div>
+      <div class="session-actions">
+        <button onclick="newSession()">New Session</button>
+        <a class="export-link" href="/session.csv">Export CSV</a>
+      </div>
+    </section>
 
-<div class="side">
-  <h3>Next</h3>
-  <div id="next"></div>
-</div>
+    <section>
+      <h2>Current</h2>
+      <div id="current" class="slide"></div>
+    </section>
 
-<script src="/socket.io/socket.io.js"></script>
-<script src="app.js"></script>
+    <section>
+      <h2>Next</h2>
+      <div id="next" class="slide next"></div>
+    </section>
+
+    <section class="quiz-panel">
+      <h2>Quiz Control</h2>
+      <div id="quizStatus"></div>
+      <div id="quizControls" class="quiz-controls"></div>
+      <div id="quizResults" class="quiz-results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <button onclick="prev()">← Prev</button>
+    <button onclick="next()">Next →</button>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

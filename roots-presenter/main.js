@@ -1,22 +1,73 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, screen } = require("electron");
 
-// start server
 require("./server");
 
-function createWindow() {
-  const win = new BrowserWindow({
-    width: 1200,
-    height: 800,
+const APP_URL = "http://localhost:3000";
+
+let presenterWindow;
+let projectorWindow;
+
+function getSecondaryDisplay() {
+  const primaryDisplay = screen.getPrimaryDisplay();
+  return screen
+    .getAllDisplays()
+    .find(display => display.id !== primaryDisplay.id);
+}
+
+function createPresenterWindow() {
+  const { workArea } = screen.getPrimaryDisplay();
+
+  presenterWindow = new BrowserWindow({
+    x: workArea.x + 40,
+    y: workArea.y + 40,
+    width: Math.min(1200, workArea.width),
+    height: Math.min(800, workArea.height),
     autoHideMenuBar: true
   });
 
-  // wait a moment for server to start
-  setTimeout(() => {
-    win.loadURL("http://localhost:3000/presenter.html");
-  }, 1000);
-
-  // DEBUG: open dev tools
-  win.webContents.openDevTools();
+  presenterWindow.loadURL(`${APP_URL}/presenter.html`);
 }
 
-app.whenReady().then(createWindow);
+function createProjectorWindow() {
+  const secondaryDisplay = getSecondaryDisplay();
+  const displayBounds = secondaryDisplay
+    ? secondaryDisplay.bounds
+    : screen.getPrimaryDisplay().bounds;
+
+  projectorWindow = new BrowserWindow({
+    x: displayBounds.x,
+    y: displayBounds.y,
+    width: displayBounds.width,
+    height: displayBounds.height,
+    backgroundColor: "#000000",
+    autoHideMenuBar: true,
+    frame: false,
+    fullscreen: !!secondaryDisplay,
+    show: false
+  });
+
+  projectorWindow.loadURL(`${APP_URL}/projector.html`);
+
+  projectorWindow.once("ready-to-show", () => {
+    projectorWindow.setBounds(displayBounds);
+
+    if (secondaryDisplay) {
+      projectorWindow.setFullScreen(true);
+      projectorWindow.showInactive();
+      presenterWindow.focus();
+    } else {
+      projectorWindow.show();
+    }
+  });
+}
+
+function createWindows() {
+  createPresenterWindow();
+  createProjectorWindow();
+}
+
+app.whenReady().then(createWindows);
+
+app.on("window-all-closed", () => {
+  app.quit();
+});

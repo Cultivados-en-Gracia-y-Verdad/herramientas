@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Audience</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="audience">
+  <div class="audience-stage">
+    <form id="joinForm" class="join-panel" onsubmit="joinSession(event)">
+      <label for="participantName">Name or code</label>
+      <div class="join-row">
+        <input id="participantName" autocomplete="name" maxlength="80" required>
+        <button type="submit">Join</button>
+      </div>
+    </form>
+
+    <div id="audienceSlide" class="slide audience-slide"></div>
+    <div id="quizArea" class="quiz-area"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
