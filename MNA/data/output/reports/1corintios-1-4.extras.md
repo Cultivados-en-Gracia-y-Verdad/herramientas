@@ -1,0 +1,71 @@
+# 1 Corinthians 1-4 NBLA Extra Spans
+
+Rows: 65
+
+| reference | Greek | Spanish | MorphGNT | lemma | alignment |
+|---|---|---|---|---|---|
+| 1 Corintios 1:1 | [extra] | nuestro |  |  | extra |
+| 1 Corintios 1:2 | [extra] | Señor |  |  | extra |
+| 1 Corintios 1:9 | [extra] | con |  |  | extra |
+| 1 Corintios 1:10 | [extra] | enteramente |  |  | extra |
+| 1 Corintios 1:14 | [extra] | a Dios |  |  | extra |
+| 1 Corintios 1:14 | [extra] | no |  |  | extra |
+| 1 Corintios 1:24 | [extra] | es |  |  | extra |
+| 1 Corintios 1:25 | [extra] | es |  |  | extra |
+| 1 Corintios 1:26 | [extra] | hubo |  |  | extra |
+| 1 Corintios 1:31 | [extra] | QUE |  |  | extra |
+| 1 Corintios 2:2 | [extra] | a |  |  | extra |
+| 1 Corintios 2:4 | [extra] | fueron |  |  | extra |
+| 1 Corintios 2:9 | [extra] | Son |  |  | extra |
+| 1 Corintios 2:11 | [extra] | está |  |  | extra |
+| 1 Corintios 2:14 | [extra] | las |  |  | extra |
+| 1 Corintios 2:14 | [extra] | son |  |  | extra |
+| 1 Corintios 2:14 | [extra] | cosas |  |  | extra |
+| 1 Corintios 2:14 | [extra] | que |  |  | extra |
+| 1 Corintios 2:15 | [extra] | no |  |  | extra |
+| 1 Corintios 3:4 | [extra] | soy |  |  | extra |
+| 1 Corintios 3:9 | [extra] | nosotros |  |  | extra |
+| 1 Corintios 3:9 | [extra] | en |  |  | extra |
+| 1 Corintios 3:9 | [extra] | la |  |  | extra |
+| 1 Corintios 3:9 | [extra] | labor |  |  | extra |
+| 1 Corintios 3:9 | [extra] | y |  |  | extra |
+| 1 Corintios 3:9 | [extra] | ustedes |  |  | extra |
+| 1 Corintios 3:10 | [extra] | yo |  |  | extra |
+| 1 Corintios 3:13 | [extra] | de |  |  | extra |
+| 1 Corintios 3:15 | [extra] | por |  |  | extra |
+| 1 Corintios 3:15 | [extra] | el |  |  | extra |
+| 1 Corintios 3:15 | [extra] | fuego |  |  | extra |
+| 1 Corintios 3:16 | [extra] | ustedes |  |  | extra |
+| 1 Corintios 3:17 | [extra] | a |  |  | extra |
+| 1 Corintios 3:17 | [extra] | él |  |  | extra |
+| 1 Corintios 3:17 | [extra] | y |  |  | extra |
+| 1 Corintios 3:22 | [extra] | es |  |  | extra |
+| 1 Corintios 4:1 | [extra] | Que |  |  | extra |
+| 1 Corintios 4:1 | [extra] | de |  |  | extra |
+| 1 Corintios 4:2 | [extra] | lo |  |  | extra |
+| 1 Corintios 4:2 | [extra] | que |  |  | extra |
+| 1 Corintios 4:2 | [extra] | es |  |  | extra |
+| 1 Corintios 4:3 | [extra] | yo |  |  | extra |
+| 1 Corintios 4:3 | [extra] | yo |  |  | extra |
+| 1 Corintios 4:4 | [extra] | de |  |  | extra |
+| 1 Corintios 4:4 | [extra] | no |  |  | extra |
+| 1 Corintios 4:5 | [extra] | sino |  |  | extra |
+| 1 Corintios 4:5 | [extra] | esperen |  |  | extra |
+| 1 Corintios 4:5 | [extra] | que |  |  | extra |
+| 1 Corintios 4:5 | [extra] | le |  |  | extra |
+| 1 Corintios 4:5 | [extra] | corresponda |  |  | extra |
+| 1 Corintios 4:6 | [extra] | lo |  |  | extra |
+| 1 Corintios 4:7 | [extra] | lo |  |  | extra |
+| 1 Corintios 4:8 | [extra] | ya |  |  | extra |
+| 1 Corintios 4:9 | [extra] | que |  |  | extra |
+| 1 Corintios 4:9 | [extra] | a |  |  | extra |
+| 1 Corintios 4:9 | [extra] | nosotros |  |  | extra |
+| 1 Corintios 4:10 | [extra] | somos |  |  | extra |
+| 1 Corintios 4:10 | [extra] | somos |  |  | extra |
+| 1 Corintios 4:10 | [extra] | son |  |  | extra |
+| 1 Corintios 4:15 | [extra] | ustedes |  |  | extra |
+| 1 Corintios 4:15 | [extra] | tienen |  |  | extra |
+| 1 Corintios 4:17 | [extra] | caminos |  |  | extra |
+| 1 Corintios 4:19 | [extra] | que |  |  | extra |
+| 1 Corintios 4:19 | [extra] | tienen |  |  | extra |
+| 1 Corintios 4:20 | [extra] | consiste |  |  | extra |
