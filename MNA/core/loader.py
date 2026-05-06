@@ -1,56 +1,54 @@
-def clean_token(token):
-    return (
-        token.replace("⸂", "")
-             .replace("⸃", "")
-             .replace("⸀", "")
-             .replace("·", "")
-             .strip(",.;:")
-    )
-
-
 def load_sblgnt(path):
-    verses = {}
+    data = {}
 
-    with open(path, encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
 
             if not line:
                 continue
 
-            parts = line.split()
+            if line.startswith("---"):
+                continue
+
+            parts = line.split(maxsplit=2)
 
             if len(parts) < 3:
                 continue
 
-            # combine book + verse
-            ref = parts[0] + " " + parts[1]
+            book = parts[0].lower()
+            ref = parts[1]
+            text = parts[2].strip()
 
-            words = [clean_token(w) for w in parts[2:] if clean_token(w)]
+            key = f"{book} {ref}"
+            data[key] = text.split()
 
-            verses[ref] = words
-
-    return verses
+    return data
 
 
 def load_nbla(path):
-    verses = {}
+    data = {}
 
-    with open(path, encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
 
             if not line:
                 continue
 
-            parts = line.split(maxsplit=1)
-
-            if len(parts) < 2:
+            if line.startswith("---"):
                 continue
 
-            ref = parts[0]
-            text = parts[1]
+            parts = line.split(maxsplit=2)
 
-            verses[ref] = text
+            if len(parts) < 3:
+                continue
 
-    return verses
+            book = parts[0].lower()
+            ref = parts[1]
+            text = parts[2].strip()
+
+            key = f"{book} {ref}"
+            data[key] = text
+
+    return data

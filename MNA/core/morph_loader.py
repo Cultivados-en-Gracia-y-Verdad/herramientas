@@ -1,20 +1,32 @@
 def load_morphgnt(path):
     data = {}
 
-    with open(path, encoding="utf-8") as f:
+    with open(path, "r", encoding="utf-8") as f:
         for line in f:
-            parts = line.strip().split()
+            line = line.strip()
 
-            if len(parts) < 4:
+            if not line:
+                continue
+
+            parts = line.split()
+
+            if len(parts) < 5:
                 continue
 
             ref = parts[0]
-            morph = parts[2]
+            pos = parts[1]
+            parsing = parts[2]
             greek = parts[3]
+
+            # MorphGNT often has several Greek columns.
+            # The lemma is safest as the LAST column.
+            lemma = parts[-1]
+
+            code = f"{pos}{parsing}"
 
             if ref not in data:
                 data[ref] = []
 
-            data[ref].append((greek, morph))
+            data[ref].append((greek, code, lemma))
 
     return data

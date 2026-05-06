@@ -173,6 +173,18 @@ Once verified:
 
 ---
 
+## STANDARD CHECK COMMAND
+
+From the repository root:
+
+```bash
+python3 MNA/check_mna.py MNA/data/output/mna-1cor-1-2.md --write --verbose
+```
+
+This removes redundant Extra lines, then validates the file.
+
+---
+
 # RULES (APPLY AT ALL TIMES)
 
 - Greek determines structure  

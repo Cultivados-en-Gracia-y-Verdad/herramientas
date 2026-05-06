@@ -22,14 +22,19 @@ def build_verse(ref, greek_words):
 # ----------------------------
 # APPLY ALIGNMENT
 # ----------------------------
+import re
+
+def clean(text):
+    return re.sub(r"[·.,;⸀⸂⸃]", "", text)
+
 def apply_alignment(verse, alignment):
-
-    if len(verse.tokens) != len(alignment):
-        raise ValueError("Token count does not match alignment length")
-
     for token, (g, s, t) in zip(verse.tokens, alignment):
 
-        if token.greek != g:
+        # normalize BOTH sides
+        token_clean = clean(token.greek)
+        g_clean = clean(g)
+
+        if token_clean != g_clean:
             raise ValueError(f"Mismatch: {token.greek} != {g}")
 
         token.spanish = s
