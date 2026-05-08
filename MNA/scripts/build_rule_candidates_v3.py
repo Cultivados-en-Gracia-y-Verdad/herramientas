@@ -120,6 +120,11 @@ def is_function_greek_token(s: str) -> bool:
     clean = greek_clean_token(raw)
     return raw in FUNCTION_WORDS or raw in BAD_SINGLETON_GREEK or clean in {greek_clean_token(x) for x in BAD_SINGLETON_GREEK}
 
+def right_edge_is_content(win: Sequence[AlignRow]) -> bool:
+    if not win:
+        return False
+
+    return not is_function_greek_token(win[-1].greek)
 
 def has_content_anchor(win: Sequence[AlignRow]) -> bool:
     return any(not is_function_greek_token(r.greek) for r in win)
@@ -485,22 +490,61 @@ def candidate_type(greek_rows: Sequence[AlignRow], nbla_group: Sequence[Tuple[in
 def window_score(win: Sequence[AlignRow], nbla_group: Sequence[Tuple[int, str]]) -> float:
     g_len = len(win)
     s_len = len(nbla_group)
-    score = 0.35
+
+    score = 0.30
+
+    # Weak rows are likely repair locations.
     if any(r.is_weak for r in win):
         score += 0.18
-    # Prefer multi-token Greek windows when Spanish span is long.
+
+    # Prefer multi-token Greek windows for longer Spanish spans.
     if s_len > MAX_SAFE_SINGLETON_CONSUME and g_len > 1:
         score += 0.22
+
+    # Prefer compact phrase-sized Greek windows.
     if 2 <= g_len <= 4:
-        score += 0.10
+        score += 0.12
+
+    # Direct one-to-one mappings can be valid, but should not dominate.
     if g_len == 1 and s_len == 1:
-        score += 0.20
+        score += 0.08
+
+    # Penalize unsafe singleton expansions.
     if g_len == 1 and s_len > MAX_SAFE_SINGLETON_CONSUME:
-        score -= 0.50
-    if g_len == 1 and win[0].greek in FUNCTION_WORDS and s_len > 1:
+        score -= 0.55
+
+    # Penalize Greek function-word ownership.
+    if g_len == 1 and is_function_greek_token(win[0].greek):
+        score -= 0.40
+
+    # Penalize very long Spanish ownership.
+    # Strongly penalize unrealistic ownership ratios.
+        ownership_ratio = s_len / max(g_len, 1)
+
+    if ownership_ratio >= 4:
         score -= 0.35
-    if s_len > 8:
-        score -= 0.10
+
+    if ownership_ratio >= 6:
+        score -= 0.55
+
+    if ownership_ratio >= 8:
+        score -= 0.75
+
+    # Strongly prefer windows whose last Greek token is weak.
+    # This helps avoid drift like Δαυὶδ → carne when σάρκα is closer.
+    if win[-1].is_weak:
+        score += 0.20
+
+    # Penalize windows that begin with a content word but end before the likely weak row.
+    if g_len == 1 and not win[0].is_weak:
+        score -= 0.25
+
+    # Prefer windows ending in a lexical/content anchor.
+    if right_edge_is_content(win):
+        score += 0.18
+    else:
+        score -= 0.22
+
     return max(0.01, min(score, 0.95))
 
 
