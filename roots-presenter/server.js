@@ -10,7 +10,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 const serverEvents = new EventTarget();
-const nblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
+const bundledBibleDir = path.join(__dirname, "bibles", "NBLA");
+const legacyNblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
 const coursesDir = path.join(__dirname, "courses");
 const defaultCourseDir = path.join(coursesDir, "Romanos");
 const bundledDataDir = path.join(__dirname, "data");
@@ -706,12 +707,20 @@ function buildBibleBookAliases(book) {
 }
 
 function loadBibleReferences() {
-  if (!fs.existsSync(nblaDir)) return;
+  const bibleDir = [bundledBibleDir, legacyNblaDir].find(candidate => fs.existsSync(candidate));
 
-  fs.readdirSync(nblaDir)
+  if (!bibleDir) {
+    console.warn("No NBLA Bible data found. Bible reference popups will be disabled.");
+    return;
+  }
+
+  bibleReferences = {};
+  bibleChapterVerseCounts = {};
+
+  fs.readdirSync(bibleDir)
     .filter(fileName => fileName.endsWith(".nbla.md"))
     .forEach(fileName => {
-      const filePath = path.join(nblaDir, fileName);
+      const filePath = path.join(bibleDir, fileName);
       const content = fs.readFileSync(filePath, "utf-8");
 
       content.split("\n").forEach(line => {
@@ -746,6 +755,8 @@ function loadBibleReferences() {
   bibleBookPatterns = bibleBookNames
     .flatMap(buildBibleBookAliases)
     .sort((a, b) => b.length - a.length);
+
+  console.log(`Loaded ${bibleBookNames.length} NBLA Bible books from ${bibleDir}`);
 }
 
 function getReferenceVerses(book, chapter, startVerse, endVerse = startVerse) {
