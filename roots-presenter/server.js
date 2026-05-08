@@ -1018,9 +1018,9 @@ function renderLine(line) {
 
   if (line.startsWith(synthesisMarker)) {
     const synthesis = JSON.parse(line.slice(synthesisMarker.length));
-    const title = marked.parseInline(enrichBibleReferences(synthesis.title)).trim();
+    const title = enrichBibleReferences(marked.parseInline(synthesis.title)).trim();
     const points = synthesis.points
-      .map(point => `<li>${marked.parseInline(enrichBibleReferences(point)).trim()}</li>`)
+      .map(point => `<li>${enrichBibleReferences(marked.parseInline(point)).trim()}</li>`)
       .join("");
 
     return {
@@ -1039,8 +1039,8 @@ function renderLine(line) {
   if (definitionMatch) {
     return `
       <div class="definition">
-        <div class="definition-term">${marked.parseInline(enrichBibleReferences(definitionMatch[1])).trim()}</div>
-        <div class="definition-text">${marked.parseInline(enrichBibleReferences(definitionMatch[2])).trim()}</div>
+        <div class="definition-term">${enrichBibleReferences(marked.parseInline(definitionMatch[1])).trim()}</div>
+        <div class="definition-text">${enrichBibleReferences(marked.parseInline(definitionMatch[2])).trim()}</div>
       </div>
     `.trim();
   }
