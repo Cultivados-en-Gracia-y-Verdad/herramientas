@@ -100,6 +100,7 @@ function render() {
   if (isProjector) {
     const projectorSlide = document.getElementById("projectorSlide");
     projectorSlide.innerHTML = html;
+    applySlideLayoutClass(projectorSlide);
     renderProjectorQuiz();
     fitSlideText(projectorSlide, {
       baseSize: getProjectorBaseSize(projectorSlide),
@@ -116,6 +117,7 @@ function render() {
   if (isAudience) {
     const audienceSlide = document.getElementById("audienceSlide");
     audienceSlide.innerHTML = html;
+    applySlideLayoutClass(audienceSlide);
     renderAudienceQuiz();
     fitSlideText(audienceSlide, {
       baseSize: 42,
@@ -125,6 +127,19 @@ function render() {
     });
     applySharedPopupState();
   }
+}
+
+function applySlideLayoutClass(element) {
+  if (!element) return;
+
+  const clone = element.cloneNode(true);
+  clone.querySelectorAll(".bible-popup, .popup-controls").forEach(node => node.remove());
+
+  const hasOnlyTitleContent =
+    !!clone.querySelector("h1, h2, .manual-title, .manual-subtitle") &&
+    !clone.querySelector("h3, h4, h5, h6, p:not(.manual-title):not(.manual-subtitle), ul, ol, blockquote, .definition, .synthesis-box");
+
+  element.classList.toggle("title-slide", hasOnlyTitleContent);
 }
 
 function normalizeRenderedSlide(renderedSlide) {

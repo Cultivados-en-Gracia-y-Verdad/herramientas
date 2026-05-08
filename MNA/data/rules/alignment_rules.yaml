@@ -4414,3 +4414,806 @@ rules:
     - mismos
     type: expanded
     consume: 2
+- match:
+    greek:
+    - ἐν
+  action:
+    nbla:
+    - en
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 42
+    first_seen: 1cor 1:10
+    last_seen: 1corintios 11:25
+    confidence: 0.98
+- match:
+    greek:
+    - τοῦ
+  action:
+    nbla:
+    - de
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 36
+    first_seen: 1cor 1:10
+    last_seen: 1corintios 7:31
+    confidence: 0.98
+- match:
+    greek:
+    - ἢ
+  action:
+    nbla:
+    - o
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 29
+    first_seen: 1cor 1:13
+    last_seen: 1corintios 14:7
+    confidence: 0.98
+- match:
+    greek:
+    - τοῦ
+  action:
+    nbla:
+    - del
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 27
+    first_seen: 1cor 1:27
+    last_seen: 1corintios 9:14
+    confidence: 0.98
+- match:
+    greek:
+    - οὐ
+  action:
+    nbla:
+    - 'no'
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 21
+    first_seen: 1cor 1:17
+    last_seen: 1corintios 14:34
+    confidence: 0.98
+- match:
+    greek:
+    - ὅτι
+  action:
+    nbla:
+    - que
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 19
+    first_seen: 1cor 1:11
+    last_seen: 1corintios 9:24
+    confidence: 0.98
+- match:
+    greek:
+    - τὸ
+  action:
+    nbla:
+    - el
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 18
+    first_seen: 1cor 1:13
+    last_seen: 1corintios 15:1
+    confidence: 0.98
+- match:
+    greek:
+    - ἡ
+  action:
+    nbla:
+    - la
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 14
+    first_seen: 1cor 2:5
+    last_seen: 1corintios 7:34
+    confidence: 0.98
+- match:
+    greek:
+    - ἐὰν
+  action:
+    nbla:
+    - si
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 12
+    first_seen: 1cor 4:19
+    last_seen: 1corintios 7:40
+    confidence: 0.98
+- match:
+    greek:
+    - θεὸς
+  action:
+    nbla:
+    - dios
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 11
+    first_seen: 1cor 1:20
+    last_seen: 1cor 6:14
+    confidence: 0.98
+- match:
+    greek:
+    - κυρίου
+  action:
+    nbla:
+    - señor
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 11
+    first_seen: 1cor 1:10
+    last_seen: 1corintios 7:32
+    confidence: 0.98
+- match:
+    greek:
+    - τὸ
+  action:
+    nbla:
+    - la
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 11
+    first_seen: 1cor 1:25
+    last_seen: 1corintios 7:31
+    confidence: 0.98
+- match:
+    greek:
+    - ἀδελφοί
+  action:
+    nbla:
+    - hermanos
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 11
+    first_seen: 1cor 1:10
+    last_seen: 1corintios 7:29
+    confidence: 0.98
+- match:
+    greek:
+    - ἵνα
+  action:
+    nbla:
+    - para
+    - que
+    type: expanded
+    consume: 2
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 11
+    first_seen: 1cor 1:15
+    last_seen: 1corintios 14:13
+    confidence: 0.98
+- match:
+    greek:
+    - ὑμῖν
+  action:
+    nbla:
+    - ustedes
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 11
+    first_seen: 1cor 1:10
+    last_seen: 1cor 6:5
+    confidence: 0.98
+- match:
+    greek:
+    - εἴτε
+  action:
+    nbla:
+    - o
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 10
+    first_seen: 1cor 3:22
+    last_seen: 1corintios 14:7
+    confidence: 0.98
+- match:
+    greek:
+    - κόσμου
+  action:
+    nbla:
+    - mundo
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 10
+    first_seen: 1cor 1:20
+    last_seen: 1corintios 7:33
+    confidence: 0.98
+- match:
+    greek:
+    - οἴδατε
+  action:
+    nbla:
+    - saben
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 10
+    first_seen: 1cor 3:16
+    last_seen: 1corintios 9:24
+    confidence: 0.98
+- match:
+    greek:
+    - ἡμῶν
+  action:
+    nbla:
+    - nuestro
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 10
+    first_seen: 1cor 1:10
+    last_seen: 1cor 6:11
+    confidence: 0.98
+- match:
+    greek:
+    - οὔτε
+  action:
+    nbla:
+    - ni
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 9
+    first_seen: 1cor 3:7
+    last_seen: 1cor 6:9
+    confidence: 0.95
+- match:
+    greek:
+    - σῶμα
+  action:
+    nbla:
+    - cuerpo
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 9
+    first_seen: 1cor 6:13
+    last_seen: 1corintios 12:24
+    confidence: 0.95
+- match:
+    greek:
+    - τῶν
+  action:
+    nbla:
+    - de
+    - los
+    type: expanded
+    consume: 2
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 9
+    first_seen: 1cor 1:19
+    last_seen: 1corintios 14:33
+    confidence: 0.95
+- match:
+    greek:
+    - μὴ
+  action:
+    nbla:
+    - acaso
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 8
+    first_seen: 1cor 1:13
+    last_seen: 1corintios 12:30
+    confidence: 0.95
+- match:
+    greek:
+    - τις
+  action:
+    nbla:
+    - alguien
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 8
+    first_seen: 1cor 3:12
+    last_seen: 1corintios 8:3
+    confidence: 0.95
+- match:
+    greek:
+    - χριστῷ
+  action:
+    nbla:
+    - cristo
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 8
+    first_seen: 1cor 1:2
+    last_seen: 1cor 4:17
+    confidence: 0.95
+- match:
+    greek:
+    - ἀλλʼ
+  action:
+    nbla:
+    - sino
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 8
+    first_seen: 1cor 2:13
+    last_seen: 1cor 5:8
+    confidence: 0.95
+- match:
+    greek:
+    - μέλη
+  action:
+    nbla:
+    - miembros
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 6:15
+    last_seen: 1corintios 12:25
+    confidence: 0.95
+- match:
+    greek:
+    - οὐχὶ
+  action:
+    nbla:
+    - 'no'
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 1:20
+    last_seen: 1corintios 9:1
+    confidence: 0.95
+- match:
+    greek:
+    - οὕτως
+  action:
+    nbla:
+    - así
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 3:15
+    last_seen: 1corintios 9:14
+    confidence: 0.95
+- match:
+    greek:
+    - πνεῦμα
+  action:
+    nbla:
+    - espíritu
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 2:10
+    last_seen: 1cor 5:5
+    confidence: 0.95
+- match:
+    greek:
+    - σώματος
+  action:
+    nbla:
+    - cuerpo
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 7:4
+    last_seen: 1corintios 12:23
+    confidence: 0.95
+- match:
+    greek:
+    - τοῖς
+  action:
+    nbla:
+    - los
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 1:2
+    last_seen: 1corintios 9:3
+    confidence: 0.95
+- match:
+    greek:
+    - τὰ
+  action:
+    nbla:
+    - los
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 6:13
+    last_seen: 1corintios 14:25
+    confidence: 0.95
+- match:
+    greek:
+    - ὑμεῖς
+  action:
+    nbla:
+    - ustedes
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 1:30
+    last_seen: 1cor 5:2
+    confidence: 0.95
+- match:
+    greek:
+    - ὑμῖν
+  action:
+    nbla:
+    - les
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 1:4
+    last_seen: 1corintios 14:6
+    confidence: 0.95
+- match:
+    greek:
+    - ὡς
+  action:
+    nbla:
+    - como
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 7
+    first_seen: 1cor 3:15
+    last_seen: 1corintios 7:30
+    confidence: 0.95
+- match:
+    greek:
+    - κύριος
+  action:
+    nbla:
+    - señor
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 3:5
+    last_seen: 1corintios 11:23
+    confidence: 0.95
+- match:
+    greek:
+    - οἱ
+  action:
+    nbla:
+    - los
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 6:16
+    last_seen: 1corintios 9:5
+    confidence: 0.95
+- match:
+    greek:
+    - σοφίαν
+  action:
+    nbla:
+    - sabiduría
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 1:19
+    last_seen: 1cor 2:7
+    confidence: 0.95
+- match:
+    greek:
+    - τί
+  action:
+    nbla:
+    - qué
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 3:5
+    last_seen: 1corintios 14:6
+    confidence: 0.95
+- match:
+    greek:
+    - τούτου
+  action:
+    nbla:
+    - este
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 1:20
+    last_seen: 1cor 5:10
+    confidence: 0.95
+- match:
+    greek:
+    - τὴν
+  action:
+    nbla:
+    - la
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 1:19
+    last_seen: 1corintios 11:7
+    confidence: 0.95
+- match:
+    greek:
+    - ἡ
+  action:
+    nbla:
+    - el
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 3:13
+    last_seen: 1corintios 13:8
+    confidence: 0.95
+- match:
+    greek:
+    - ὅτι
+  action:
+    nbla:
+    - porque
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 1:25
+    last_seen: 1corintios 12:15
+    confidence: 0.95
+- match:
+    greek:
+    - ὑμᾶς
+  action:
+    nbla:
+    - les
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 1:7
+    last_seen: 1corintios 14:6
+    confidence: 0.95
+- match:
+    greek:
+    - ὑμῶν
+  action:
+    nbla:
+    - ustedes
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 1:11
+    last_seen: 1cor 5:2
+    confidence: 0.95
+- match:
+    greek:
+    - ὑμῶν
+  action:
+    nbla:
+    - de
+    - ustedes
+    type: expanded
+    consume: 2
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 6
+    first_seen: 1cor 1:12
+    last_seen: 1cor 6:1
+    confidence: 0.95
+- match:
+    greek:
+    - εἰμὶ
+  action:
+    nbla:
+    - soy
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1corintios 12:15
+    last_seen: 1corintios 9:1
+    confidence: 0.95
+- match:
+    greek:
+    - πρὸς
+  action:
+    nbla:
+    - a
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 2:1
+    last_seen: 1corintios 14:6
+    confidence: 0.95
+- match:
+    greek:
+    - τὴν
+  action:
+    nbla:
+    - su
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 7:2
+    last_seen: 1corintios 7:36
+    confidence: 0.95
+- match:
+    greek:
+    - τῷ
+  action:
+    nbla:
+    - el
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 5:4
+    last_seen: 1corintios 14:15
+    confidence: 0.95
+- match:
+    greek:
+    - ἕκαστος
+  action:
+    nbla:
+    - cada
+    - uno
+    type: expanded
+    consume: 2
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 1:12
+    last_seen: 1corintios 7:20
+    confidence: 0.95
+- match:
+    greek:
+    - ἡμεῖς
+  action:
+    nbla:
+    - nosotros
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 1:23
+    last_seen: 1cor 4:8
+    confidence: 0.95
+- match:
+    greek:
+    - ἰησοῦ
+  action:
+    nbla:
+    - jesús
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 1:2
+    last_seen: 1cor 5:4
+    confidence: 0.95
+- match:
+    greek:
+    - ὃ
+  action:
+    nbla:
+    - que
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 3:14
+    last_seen: 1corintios 15:1
+    confidence: 0.95
+- match:
+    greek:
+    - ὑμᾶς
+  action:
+    nbla:
+    - ustedes
+    type: direct
+    consume: 1
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 2:1
+    last_seen: 1corintios 14:6
+    confidence: 0.95
+- match:
+    greek:
+    - ὡς
+  action:
+    nbla:
+    - como
+    - a
+    type: expanded
+    consume: 2
+  meta:
+    source: promoted_from_phrase_inventory
+    count: 5
+    first_seen: 1cor 3:1
+    last_seen: 1cor 4:9
+    confidence: 0.95
