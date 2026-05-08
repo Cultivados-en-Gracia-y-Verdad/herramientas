@@ -24,6 +24,10 @@ let quizMenuItems = [];
 let menuRefreshTimer = null;
 let loadedCourseTitle = "";
 
+function shouldShowMenuBar() {
+  return process.platform !== "darwin";
+}
+
 function scheduleCourseMenuRefresh() {
   clearTimeout(menuRefreshTimer);
   menuRefreshTimer = setTimeout(async () => {
@@ -380,7 +384,7 @@ function openStyleSettings() {
     height: 820,
     title: "Style Settings",
     icon: LOGO_PATH,
-    autoHideMenuBar: true
+    autoHideMenuBar: !shouldShowMenuBar()
   });
 
   settingsWindow.loadURL(`${APP_URL}/settings.html`);
@@ -400,7 +404,7 @@ function openCourseDownload() {
     height: 760,
     title: "Download Courses",
     icon: LOGO_PATH,
-    autoHideMenuBar: true
+    autoHideMenuBar: !shouldShowMenuBar()
   });
 
   courseDownloadWindow.loadURL(`${APP_URL}/courses.html`);
@@ -547,7 +551,7 @@ function createPresenterWindow(options = {}) {
     width: bounds.width,
     height: bounds.height,
     icon: LOGO_PATH,
-    autoHideMenuBar: true
+    autoHideMenuBar: !shouldShowMenuBar()
   });
 
   presenterWindow.loadURL(`${APP_URL}/presenter.html`);
