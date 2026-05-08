@@ -25,7 +25,22 @@ const legacyNblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
 const coursesDir = path.join(__dirname, "courses");
 const defaultCourseDir = path.join(coursesDir, "Romanos");
 const bundledDataDir = path.join(__dirname, "data");
-const runtimeDataDir = process.env.ROOTS_RUNTIME_DATA_DIR || bundledDataDir;
+
+function getRuntimeDataDir() {
+  if (process.env.ROOTS_RUNTIME_DATA_DIR) {
+    return process.env.ROOTS_RUNTIME_DATA_DIR;
+  }
+
+  const appData =
+    process.env.APPDATA ||
+    process.env.LOCALAPPDATA ||
+    process.env.HOME ||
+    process.cwd();
+
+  return path.join(appData, "ROOTS Presenter", "data");
+}
+
+const runtimeDataDir = getRuntimeDataDir();
 const defaultCourseLibraryDir = process.env.ROOTS_DEFAULT_COURSE_LIBRARY_DIR || "";
 const styleSettingsPath = path.join(runtimeDataDir, "style-settings.json");
 const bundledStyleSettingsPath = path.join(bundledDataDir, "style-settings.json");
@@ -735,8 +750,13 @@ function loadBibleReferences() {
       const filePath = path.join(bibleDir, fileName);
       const content = fs.readFileSync(filePath, "utf-8");
 
-      content.split("\n").forEach(line => {
-        const match = line.match(/^(.+?)\s+(\d+):(\d+)\s+(.+)$/);
+      content
+        .replace(/\r\n/g, "\n")
+        .split("\n")
+        .forEach(line => {
+        const match =
+          line.match(/^(.+?)\s+(\d+):(\d+)\s+(.+)$/) ||
+          line.match(/^#+\s*(.+?)\s+(\d+):(\d+)\s*$/);
         if (!match) return;
 
         const book = match[1].trim();
@@ -772,10 +792,29 @@ function loadBibleReferences() {
 }
 
 function getBibleSearchPaths() {
+  const appData =
+    process.env.APPDATA ||
+    process.env.LOCALAPPDATA ||
+    process.env.HOME ||
+    "";
+
   return Array.from(new Set([
     resourceBibleDir,
     unpackedResourceBibleDir,
     executableResourceBibleDir,
+
+    process.resourcesPath
+      ? path.join(process.resourcesPath, "app", "bibles", "NBLA")
+      : "",
+
+    process.resourcesPath
+      ? path.join(process.resourcesPath, "app.asar", "bibles", "NBLA")
+      : "",
+
+    appData
+      ? path.join(appData, "ROOTS Presenter", "bibles", "NBLA")
+      : "",
+
     bundledBibleDir,
     cwdBibleDir,
     legacyNblaDir
