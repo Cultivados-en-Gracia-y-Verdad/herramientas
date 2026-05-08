@@ -3,24 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <title>Presenter</title>
+  <link rel="icon" href="/assets/cgv-app-icon.svg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style-settings.css">
 </head>
 <body class="presenter">
   <div class="topbar">
-    <h1>Presenter View</h1>
+    <div class="app-brand">
+      <img src="/assets/cgv-logo.svg" alt="CGV">
+      <div>
+        <strong>CGV Presenter</strong>
+        <span>Presenter View</span>
+      </div>
+    </div>
     <button onclick="reloadSlides()">Reload Slides</button>
   </div>
 
   <main class="grid">
-    <section class="session-panel">
-      <h2>Session</h2>
-      <div id="sessionStatus"></div>
-      <div class="session-actions">
-        <button onclick="newSession()">New Session</button>
-        <a class="export-link" href="/session.csv">Export CSV</a>
-      </div>
-    </section>
-
     <section>
       <h2>Current</h2>
       <div id="current" class="slide"></div>
@@ -29,13 +28,6 @@
     <section>
       <h2>Next</h2>
       <div id="next" class="slide next"></div>
-    </section>
-
-    <section class="quiz-panel">
-      <h2>Quiz Control</h2>
-      <div id="quizStatus"></div>
-      <div id="quizControls" class="quiz-controls"></div>
-      <div id="quizResults" class="quiz-results"></div>
     </section>
   </main>
 

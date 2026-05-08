@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <title>Audience</title>
+  <link rel="icon" href="/assets/cgv-app-icon.svg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style-settings.css">
 </head>
 <body class="audience">
+  <div id="joinGreeting" class="join-greeting"></div>
   <div class="audience-stage">
     <form id="joinForm" class="join-panel" onsubmit="joinSession(event)">
       <label for="participantName">Name or code</label>
@@ -18,6 +21,7 @@
     <div id="audienceSlide" class="slide audience-slide"></div>
     <div id="quizArea" class="quiz-area"></div>
   </div>
+  <div id="sharedPopupOverlay" class="shared-popup-overlay"></div>
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="app.js"></script>

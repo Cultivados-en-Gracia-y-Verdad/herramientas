@@ -1,17 +1,30 @@
 {
-  "name": "roots-presenter",
+  "name": "cgv-presenter",
+  "productName": "CGV Presenter",
   "version": "1.0.0",
   "main": "main.js",
   "type": "commonjs",
   "scripts": {
-    "start": "env -u ELECTRON_RUN_AS_NODE electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-sans": "^5.2.8",
+    "electron-squirrel-startup": "^1.0.1",
     "express": "^5.2.1",
     "marked": "^18.0.3",
     "socket.io": "^4.8.3"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-deb": "^7.11.1",
+    "@electron-forge/maker-rpm": "^7.11.1",
+    "@electron-forge/maker-squirrel": "^7.11.1",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.11.1",
+    "@electron-forge/plugin-fuses": "^7.11.1",
+    "@electron/fuses": "^1.8.0",
     "electron": "^41.5.0"
   }
 }

@@ -2093,2290 +2093,2324 @@ rules:
     type: expanded
     consume: 2
   priority: 80
-
 - match:
     greek:
-      - ἢ
-      - μόνος
-      - ἐγὼ
-      - καὶ
-      - βαρναβᾶς
-      - οὐκ
-      - ἔχομεν
-      - ἐξουσίαν
-      - μὴ
-      - ἐργάζεσθαι
+    - ἢ
+    - μόνος
+    - ἐγὼ
+    - καὶ
+    - βαρναβᾶς
+    - οὐκ
+    - ἔχομεν
+    - ἐξουσίαν
+    - μὴ
+    - ἐργάζεσθαι
   action:
     nbla:
-      - o
-      - acaso
-      - solo
-      - bernabé
-      - y
-      - yo
-      - no
-      - tenemos
-      - el
-      - derecho
-      - a
-      - no
-      - trabajar
+    - o
+    - acaso
+    - solo
+    - bernabé
+    - y
+    - yo
+    - false
+    - tenemos
+    - el
+    - derecho
+    - a
+    - false
+    - trabajar
     type: expanded
     consume: 13
   priority: 220
-
 - match:
     greek:
-      - τίς
-      - στρατεύεται
-      - ἰδίοις
-      - ὀψωνίοις
-      - ποτέ
-      - τίς
-      - φυτεύει
-      - ἀμπελῶνα
-      - καὶ
-      - τὸν
-      - καρπὸν
-      - αὐτοῦ
-      - οὐκ
-      - ἐσθίει
-      - τίς
-      - ποιμαίνει
-      - ποίμνην
-      - καὶ
-      - ἐκ
-      - τοῦ
-      - γάλακτος
-      - τῆς
-      - ποίμνης
-      - οὐκ
-      - ἐσθίει
+    - τίς
+    - στρατεύεται
+    - ἰδίοις
+    - ὀψωνίοις
+    - ποτέ
+    - τίς
+    - φυτεύει
+    - ἀμπελῶνα
+    - καὶ
+    - τὸν
+    - καρπὸν
+    - αὐτοῦ
+    - οὐκ
+    - ἐσθίει
+    - τίς
+    - ποιμαίνει
+    - ποίμνην
+    - καὶ
+    - ἐκ
+    - τοῦ
+    - γάλακτος
+    - τῆς
+    - ποίμνης
+    - οὐκ
+    - ἐσθίει
   action:
     nbla:
-      - quién
-      - ha
-      - servido
-      - alguna
-      - vez
-      - como
-      - soldado
-      - a
-      - sus
-      - propias
-      - expensas
-      - quién
-      - planta
-      - una
-      - viña
-      - y
-      - no
-      - come
-      - de
-      - su
-      - fruto
-      - o
-      - quién
-      - cuida
-      - un
-      - rebaño
-      - y
-      - no
-      - bebe
-      - la
-      - leche
-      - del
-      - rebaño
+    - quién
+    - ha
+    - servido
+    - alguna
+    - vez
+    - como
+    - soldado
+    - a
+    - sus
+    - propias
+    - expensas
+    - quién
+    - planta
+    - una
+    - viña
+    - y
+    - false
+    - come
+    - de
+    - su
+    - fruto
+    - o
+    - quién
+    - cuida
+    - un
+    - rebaño
+    - y
+    - false
+    - bebe
+    - la
+    - leche
+    - del
+    - rebaño
     type: expanded
     consume: 34
   priority: 260
-
 - match:
     greek:
-      - μὴ
-      - κατὰ
-      - ἄνθρωπον
-      - ταῦτα
-      - λαλῶ
-      - ἢ
-      - καὶ
-      - ὁ
-      - νόμος
-      - ταῦτα
-      - οὐ
-      - λέγει
+    - μὴ
+    - κατὰ
+    - ἄνθρωπον
+    - ταῦτα
+    - λαλῶ
+    - ἢ
+    - καὶ
+    - ὁ
+    - νόμος
+    - ταῦτα
+    - οὐ
+    - λέγει
   action:
     nbla:
-      - acaso
-      - digo
-      - esto
-      - según
-      - el
-      - juicio
-      - humano
-      - no
-      - dice
-      - también
-      - la
-      - ley
-      - esto
-      - mismo
+    - acaso
+    - digo
+    - esto
+    - según
+    - el
+    - juicio
+    - humano
+    - false
+    - dice
+    - también
+    - la
+    - ley
+    - esto
+    - mismo
     type: expanded
     consume: 14
   priority: 240
-
 - match:
     greek:
-      - ἐν
-      - γὰρ
-      - τῷ
-      - μωϋσέως
-      - νόμῳ
-      - γέγραπται
-      - οὐ
-      - κημώσεις
-      - βοῦν
-      - ἀλοῶντα
-      - μὴ
-      - τῶν
-      - βοῶν
-      - μέλει
-      - τῷ
-      - θεῷ
+    - ἐν
+    - γὰρ
+    - τῷ
+    - μωϋσέως
+    - νόμῳ
+    - γέγραπται
+    - οὐ
+    - κημώσεις
+    - βοῦν
+    - ἀλοῶντα
+    - μὴ
+    - τῶν
+    - βοῶν
+    - μέλει
+    - τῷ
+    - θεῷ
   action:
     nbla:
-      - pues
-      - en
-      - la
-      - ley
-      - de
-      - moisés
-      - está
-      - escrito
-      - no
-      - pondrás
-      - bozal
-      - al
-      - buey
-      - cuando
-      - trilla
-      - acaso
-      - le
-      - preocupan
-      - a
-      - dios
-      - los
-      - bueyes
+    - pues
+    - en
+    - la
+    - ley
+    - de
+    - moisés
+    - está
+    - escrito
+    - false
+    - pondrás
+    - bozal
+    - al
+    - buey
+    - cuando
+    - trilla
+    - acaso
+    - le
+    - preocupan
+    - a
+    - dios
+    - los
+    - bueyes
     type: expanded
     consume: 22
   priority: 240
-
 - match:
     greek:
-      - ἢ
-      - διʼ
-      - ἡμᾶς
-      - πάντως
-      - λέγει
-      - διʼ
-      - ἡμᾶς
-      - γὰρ
-      - ἐγράφη
-      - ὅτι
-      - ὀφείλει
-      - ἐπʼ
-      - ἐλπίδι
-      - ὁ
-      - ἀροτριῶν
-      - ἀροτριᾶν
-      - καὶ
-      - ὁ
-      - ἀλοῶν
-      - ἐπʼ
-      - ἐλπίδι
-      - τοῦ
-      - μετέχειν
+    - ἢ
+    - διʼ
+    - ἡμᾶς
+    - πάντως
+    - λέγει
+    - διʼ
+    - ἡμᾶς
+    - γὰρ
+    - ἐγράφη
+    - ὅτι
+    - ὀφείλει
+    - ἐπʼ
+    - ἐλπίδι
+    - ὁ
+    - ἀροτριῶν
+    - ἀροτριᾶν
+    - καὶ
+    - ὁ
+    - ἀλοῶν
+    - ἐπʼ
+    - ἐλπίδι
+    - τοῦ
+    - μετέχειν
   action:
     nbla:
-      - o
-      - lo
-      - dice
-      - especialmente
-      - por
-      - nosotros
-      - sí
-      - se
-      - escribió
-      - por
-      - nosotros
-      - porque
-      - el
-      - que
-      - ara
-      - debe
-      - arar
-      - con
-      - esperanza
-      - y
-      - el
-      - que
-      - trilla
-      - debe
-      - trillar
-      - con
-      - la
-      - esperanza
-      - de
-      - recibir
-      - de
-      - la
-      - cosecha
+    - o
+    - lo
+    - dice
+    - especialmente
+    - por
+    - nosotros
+    - sí
+    - se
+    - escribió
+    - por
+    - nosotros
+    - porque
+    - el
+    - que
+    - ara
+    - debe
+    - arar
+    - con
+    - esperanza
+    - y
+    - el
+    - que
+    - trilla
+    - debe
+    - trillar
+    - con
+    - la
+    - esperanza
+    - de
+    - recibir
+    - de
+    - la
+    - cosecha
     type: expanded
     consume: 33
   priority: 260
-
 - match:
     greek:
-      - εἰ
-      - ἡμεῖς
-      - ὑμῖν
-      - τὰ
-      - πνευματικὰ
-      - ἐσπείραμεν
-      - μέγα
-      - εἰ
-      - ἡμεῖς
-      - ὑμῶν
-      - τὰ
-      - σαρκικὰ
-      - θερίσομεν
+    - εἰ
+    - ἡμεῖς
+    - ὑμῖν
+    - τὰ
+    - πνευματικὰ
+    - ἐσπείραμεν
+    - μέγα
+    - εἰ
+    - ἡμεῖς
+    - ὑμῶν
+    - τὰ
+    - σαρκικὰ
+    - θερίσομεν
   action:
     nbla:
-      - si
-      - en
-      - ustedes
-      - sembramos
-      - lo
-      - espiritual
-      - será
-      - demasiado
-      - que
-      - de
-      - ustedes
-      - cosechemos
-      - lo
-      - material
+    - si
+    - en
+    - ustedes
+    - sembramos
+    - lo
+    - espiritual
+    - será
+    - demasiado
+    - que
+    - de
+    - ustedes
+    - cosechemos
+    - lo
+    - material
     type: expanded
     consume: 14
   priority: 240
-
 - match:
     greek:
-      - τῆς
-      - ὑμῶν
-      - ἐξουσίας
-      - μετέχουσιν
+    - τῆς
+    - ὑμῶν
+    - ἐξουσίας
+    - μετέχουσιν
   action:
     nbla:
-      - tienen
-      - este
-      - derecho
-      - sobre
-      - ustedes
+    - tienen
+    - este
+    - derecho
+    - sobre
+    - ustedes
     type: expanded
     consume: 5
   priority: 190
-
 - match:
     greek:
-      - οὐ
-      - μᾶλλον
-      - ἡμεῖς
+    - οὐ
+    - μᾶλλον
+    - ἡμεῖς
   action:
     nbla:
-      - no
-      - lo
-      - tenemos
-      - aún
-      - más
-      - nosotros
+    - false
+    - lo
+    - tenemos
+    - aún
+    - más
+    - nosotros
     type: expanded
     consume: 6
   priority: 190
-
 - match:
     greek:
-      - ἵνα
-      - μή
-      - τινα
-      - ἐγκοπὴν
-      - δῶμεν
-      - τῷ
-      - εὐαγγελίῳ
-      - τοῦ
-      - χριστοῦ
+    - ἵνα
+    - μή
+    - τινα
+    - ἐγκοπὴν
+    - δῶμεν
+    - τῷ
+    - εὐαγγελίῳ
+    - τοῦ
+    - χριστοῦ
   action:
     nbla:
-      - para
-      - no
-      - causar
-      - estorbo
-      - al
-      - evangelio
-      - de
-      - cristo
+    - para
+    - false
+    - causar
+    - estorbo
+    - al
+    - evangelio
+    - de
+    - cristo
     type: expanded
     consume: 8
   priority: 200
-
 - match:
     greek:
-      - οἱ
-      - τὰ
-      - ἱερὰ
-      - ἐργαζόμενοι
+    - οἱ
+    - τὰ
+    - ἱερὰ
+    - ἐργαζόμενοι
   action:
     nbla:
-      - los
-      - que
-      - desempeñan
-      - los
-      - servicios
-      - sagrados
+    - los
+    - que
+    - desempeñan
+    - los
+    - servicios
+    - sagrados
     type: expanded
     consume: 6
   priority: 190
-
 - match:
     greek:
-      - τὰ
-      - ἐκ
-      - τοῦ
-      - ἱεροῦ
-      - ἐσθίουσιν
+    - τὰ
+    - ἐκ
+    - τοῦ
+    - ἱεροῦ
+    - ἐσθίουσιν
   action:
     nbla:
-      - comen
-      - la
-      - comida
-      - del
-      - templo
+    - comen
+    - la
+    - comida
+    - del
+    - templo
     type: expanded
     consume: 5
   priority: 190
-
 - match:
     greek:
-      - οἱ
-      - τῷ
-      - θυσιαστηρίῳ
-      - παρεδρεύοντες
-      - τῷ
-      - θυσιαστηρίῳ
-      - συμμερίζονται
+    - οἱ
+    - τῷ
+    - θυσιαστηρίῳ
+    - παρεδρεύοντες
+    - τῷ
+    - θυσιαστηρίῳ
+    - συμμερίζονται
   action:
     nbla:
-      - y
-      - los
-      - que
-      - regularmente
-      - sirven
-      - al
-      - altar
-      - del
-      - altar
-      - reciben
-      - su
-      - parte
+    - y
+    - los
+    - que
+    - regularmente
+    - sirven
+    - al
+    - altar
+    - del
+    - altar
+    - reciben
+    - su
+    - parte
     type: expanded
     consume: 12
   priority: 210
-
 - match:
     greek:
-      - ἐγὼ
-      - δὲ
-      - οὐ
-      - κέχρημαι
-      - οὐδενὶ
-      - τούτων
+    - ἐγὼ
+    - δὲ
+    - οὐ
+    - κέχρημαι
+    - οὐδενὶ
+    - τούτων
   action:
     nbla:
-      - pero
-      - yo
-      - de
-      - nada
-      - de
-      - esto
-      - me
-      - he
-      - aprovechado
+    - pero
+    - yo
+    - de
+    - nada
+    - de
+    - esto
+    - me
+    - he
+    - aprovechado
     type: expanded
     consume: 9
   priority: 210
-
 - match:
     greek:
-      - οὐκ
-      - ἔγραψα
-      - δὲ
-      - ταῦτα
-      - ἵνα
-      - οὕτως
-      - γένηται
-      - ἐν
-      - ἐμοί
+    - οὐκ
+    - ἔγραψα
+    - δὲ
+    - ταῦτα
+    - ἵνα
+    - οὕτως
+    - γένηται
+    - ἐν
+    - ἐμοί
   action:
     nbla:
-      - y
-      - no
-      - escribo
-      - esto
-      - para
-      - que
-      - así
-      - se
-      - haga
-      - conmigo
+    - y
+    - false
+    - escribo
+    - esto
+    - para
+    - que
+    - así
+    - se
+    - haga
+    - conmigo
     type: expanded
     consume: 10
   priority: 210
-
 - match:
     greek:
-      - καλὸν
-      - γάρ
-      - μοι
-      - μᾶλλον
-      - ἀποθανεῖν
-      - ἤ—
-      - τὸ
-      - καύχημά
-      - μου
-      - οὐδεὶς
-      - κενώσει
+    - καλὸν
+    - γάρ
+    - μοι
+    - μᾶλλον
+    - ἀποθανεῖν
+    - ἤ—
+    - τὸ
+    - καύχημά
+    - μου
+    - οὐδεὶς
+    - κενώσει
   action:
     nbla:
-      - porque
-      - mejor
-      - me
-      - fuera
-      - morir
-      - que
-      - permitir
-      - que
-      - alguien
-      - me
-      - prive
-      - de
-      - esta
-      - gloria
+    - porque
+    - mejor
+    - me
+    - fuera
+    - morir
+    - que
+    - permitir
+    - que
+    - alguien
+    - me
+    - prive
+    - de
+    - esta
+    - gloria
     type: expanded
     consume: 14
   priority: 220
-
 - match:
     greek:
-      - ἐὰν
-      - γὰρ
-      - εὐαγγελίζωμαι
+    - ἐὰν
+    - γὰρ
+    - εὐαγγελίζωμαι
   action:
     nbla:
-      - porque
-      - si
-      - predico
-      - el
-      - evangelio
+    - porque
+    - si
+    - predico
+    - el
+    - evangelio
     type: expanded
     consume: 5
   priority: 190
-
 - match:
     greek:
-      - οὐκ
-      - ἔστιν
-      - μοι
-      - καύχημα
+    - οὐκ
+    - ἔστιν
+    - μοι
+    - καύχημα
   action:
     nbla:
-      - no
-      - tengo
-      - nada
-      - de
-      - qué
-      - gloriarme
+    - false
+    - tengo
+    - nada
+    - de
+    - qué
+    - gloriarme
     type: expanded
     consume: 6
   priority: 190
-
 - match:
     greek:
-      - ἀνάγκη
-      - γάρ
-      - μοι
-      - ἐπίκειται
+    - ἀνάγκη
+    - γάρ
+    - μοι
+    - ἐπίκειται
   action:
     nbla:
-      - pues
-      - estoy
-      - bajo
-      - el
-      - deber
-      - de
-      - hacerlo
+    - pues
+    - estoy
+    - bajo
+    - el
+    - deber
+    - de
+    - hacerlo
     type: expanded
     consume: 7
   priority: 200
-
 - match:
     greek:
-      - οὐαὶ
-      - γάρ
-      - μοί
-      - ἐστιν
-      - ἐὰν
-      - μὴ
-      - εὐαγγελίσωμαι
+    - οὐαὶ
+    - γάρ
+    - μοί
+    - ἐστιν
+    - ἐὰν
+    - μὴ
+    - εὐαγγελίσωμαι
   action:
     nbla:
-      - pues
-      - ay
-      - de
-      - mí
-      - si
-      - no
-      - predico
-      - el
-      - evangelio
+    - pues
+    - ay
+    - de
+    - mí
+    - si
+    - false
+    - predico
+    - el
+    - evangelio
     type: expanded
     consume: 9
   priority: 220
-
 - match:
     greek:
-      - ἑκὼν
-      - τοῦτο
-      - πράσσω
+    - ἑκὼν
+    - τοῦτο
+    - πράσσω
   action:
     nbla:
-      - hago
-      - esto
-      - voluntariamente
+    - hago
+    - esto
+    - voluntariamente
     type: expanded
     consume: 3
   priority: 170
-
 - match:
     greek:
-      - μισθὸν
-      - ἔχω
+    - μισθὸν
+    - ἔχω
   action:
     nbla:
-      - tengo
-      - recompensa
+    - tengo
+    - recompensa
     type: expanded
     consume: 2
   priority: 170
-
 - match:
     greek:
-      - εἰ
-      - δὲ
-      - ἄκων
+    - εἰ
+    - δὲ
+    - ἄκων
   action:
     nbla:
-      - pero
-      - si
-      - lo
-      - hago
-      - en
-      - contra
-      - de
-      - mi
-      - voluntad
+    - pero
+    - si
+    - lo
+    - hago
+    - en
+    - contra
+    - de
+    - mi
+    - voluntad
     type: expanded
     consume: 9
   priority: 210
-
 - match:
     greek:
-      - οἰκονομίαν
-      - πεπίστευμαι
+    - οἰκονομίαν
+    - πεπίστευμαι
   action:
     nbla:
-      - un
-      - encargo
-      - se
-      - me
-      - ha
-      - confiado
+    - un
+    - encargo
+    - se
+    - me
+    - ha
+    - confiado
     type: expanded
     consume: 6
   priority: 200
-
 - match:
     greek:
-      - ἵνα
-      - τοὺς
-      - πλείονας
-      - κερδήσω
+    - ἵνα
+    - τοὺς
+    - πλείονας
+    - κερδήσω
   action:
     nbla:
-      - para
-      - ganar
-      - al
-      - mayor
-      - número
-      - posible
+    - para
+    - ganar
+    - al
+    - mayor
+    - número
+    - posible
     type: expanded
     consume: 6
   priority: 190
-
 - match:
     greek:
-      - πᾶσιν
-      - ἐμαυτὸν
-      - ἐδούλωσα
+    - πᾶσιν
+    - ἐμαυτὸν
+    - ἐδούλωσα
   action:
     nbla:
-      - de
-      - todos
-      - me
-      - he
-      - hecho
-      - esclavo
+    - de
+    - todos
+    - me
+    - he
+    - hecho
+    - esclavo
     type: expanded
     consume: 6
   priority: 190
-
 - match:
     greek:
-      - ἐκ
-      - πάντων
+    - ἐκ
+    - πάντων
   action:
     nbla:
-      - de
-      - todos
+    - de
+    - todos
     type: expanded
     consume: 2
   priority: 170
-
 - match:
     greek:
-      - ἐλεύθερος
-      - γὰρ
-      - ὢν
+    - ἐλεύθερος
+    - γὰρ
+    - ὢν
   action:
     nbla:
-      - porque
-      - aunque
-      - soy
-      - libre
+    - porque
+    - aunque
+    - soy
+    - libre
     type: expanded
     consume: 4
   priority: 190
-
 - match:
     greek:
-      - καὶ
-      - ἐγενόμην
-      - τοῖς
-      - ἰουδαίοις
-      - ὡς
-      - ἰουδαῖος
+    - καὶ
+    - ἐγενόμην
+    - τοῖς
+    - ἰουδαίοις
+    - ὡς
+    - ἰουδαῖος
   action:
     nbla:
-      - a
-      - los
-      - judíos
-      - me
-      - hice
-      - como
-      - judío
+    - a
+    - los
+    - judíos
+    - me
+    - hice
+    - como
+    - judío
     type: expanded
     consume: 7
   priority: 200
-
 - match:
     greek:
-      - ἵνα
-      - ἰουδαίους
-      - κερδήσω
+    - ἵνα
+    - ἰουδαίους
+    - κερδήσω
   action:
     nbla:
-      - para
-      - poder
-      - ganar
-      - a
-      - los
-      - judíos
+    - para
+    - poder
+    - ganar
+    - a
+    - los
+    - judíos
     type: expanded
     consume: 6
   priority: 190
-
 - match:
     greek:
-      - τοῖς
-      - ὑπὸ
-      - νόμον
-      - ὡς
-      - ὑπὸ
-      - νόμον
+    - τοῖς
+    - ὑπὸ
+    - νόμον
+    - ὡς
+    - ὑπὸ
+    - νόμον
   action:
     nbla:
-      - a
-      - los
-      - que
-      - están
-      - bajo
-      - la
-      - ley
-      - como
-      - bajo
-      - la
-      - ley
+    - a
+    - los
+    - que
+    - están
+    - bajo
+    - la
+    - ley
+    - como
+    - bajo
+    - la
+    - ley
     type: expanded
     consume: 11
   priority: 220
-
 - match:
     greek:
-      - μὴ
-      - ὢν
-      - αὐτὸς
-      - ὑπὸ
-      - νόμον
+    - μὴ
+    - ὢν
+    - αὐτὸς
+    - ὑπὸ
+    - νόμον
   action:
     nbla:
-      - aunque
-      - yo
-      - no
-      - estoy
-      - bajo
-      - la
-      - ley
+    - aunque
+    - yo
+    - false
+    - estoy
+    - bajo
+    - la
+    - ley
     type: expanded
     consume: 7
   priority: 210
-
 - match:
     greek:
-      - ἵνα
-      - τοὺς
-      - ὑπὸ
-      - νόμον
-      - κερδήσω
+    - ἵνα
+    - τοὺς
+    - ὑπὸ
+    - νόμον
+    - κερδήσω
   action:
     nbla:
-      - para
-      - poder
-      - ganar
-      - a
-      - los
-      - que
-      - están
-      - bajo
-      - la
-      - ley
+    - para
+    - poder
+    - ganar
+    - a
+    - los
+    - que
+    - están
+    - bajo
+    - la
+    - ley
     type: expanded
     consume: 10
   priority: 220
-
 - match:
     greek:
-      - τοῖς
-      - ἀνόμοις
-      - ὡς
-      - ἄνομος
+    - τοῖς
+    - ἀνόμοις
+    - ὡς
+    - ἄνομος
   action:
     nbla:
-      - a
-      - los
-      - que
-      - están
-      - sin
-      - ley
-      - como
-      - sin
-      - ley
+    - a
+    - los
+    - que
+    - están
+    - sin
+    - ley
+    - como
+    - sin
+    - ley
     type: expanded
     consume: 9
   priority: 220
-
 - match:
     greek:
-      - μὴ
-      - ὢν
-      - ἄνομος
-      - θεοῦ
+    - μὴ
+    - ὢν
+    - ἄνομος
+    - θεοῦ
   action:
     nbla:
-      - aunque
-      - no
-      - estoy
-      - sin
-      - la
-      - ley
-      - de
-      - dios
+    - aunque
+    - false
+    - estoy
+    - sin
+    - la
+    - ley
+    - de
+    - dios
     type: expanded
     consume: 8
   priority: 220
-
 - match:
     greek:
-      - ἀλλʼ
-      - ἔννομος
-      - χριστοῦ
+    - ἀλλʼ
+    - ἔννομος
+    - χριστοῦ
   action:
     nbla:
-      - sino
-      - bajo
-      - la
-      - ley
-      - de
-      - cristo
+    - sino
+    - bajo
+    - la
+    - ley
+    - de
+    - cristo
     type: expanded
     consume: 6
   priority: 210
-
 - match:
     greek:
-      - ἵνα
-      - κερδάνω
-      - τοὺς
-      - ἀνόμους
+    - ἵνα
+    - κερδάνω
+    - τοὺς
+    - ἀνόμους
   action:
     nbla:
-      - para
-      - poder
-      - ganar
-      - a
-      - los
-      - que
-      - están
-      - sin
-      - ley
+    - para
+    - poder
+    - ganar
+    - a
+    - los
+    - que
+    - están
+    - sin
+    - ley
     type: expanded
     consume: 9
   priority: 220
-
 - match:
     greek:
-      - ἵνα
-      - πάντως
-      - τινὰς
-      - σώσω
+    - ἵνα
+    - πάντως
+    - τινὰς
+    - σώσω
   action:
     nbla:
-      - para
-      - que
-      - por
-      - todos
-      - los
-      - medios
-      - salve
-      - a
-      - algunos
+    - para
+    - que
+    - por
+    - todos
+    - los
+    - medios
+    - salve
+    - a
+    - algunos
     type: expanded
     consume: 9
   priority: 220
-
 - match:
     greek:
-      - τοῖς
-      - πᾶσιν
-      - γέγονα
-      - πάντα
+    - τοῖς
+    - πᾶσιν
+    - γέγονα
+    - πάντα
   action:
     nbla:
-      - a
-      - todos
-      - me
-      - he
-      - hecho
-      - todo
+    - a
+    - todos
+    - me
+    - he
+    - hecho
+    - todo
     type: expanded
     consume: 6
   priority: 210
-
 - match:
     greek:
-      - πᾶς
-      - δὲ
-      - ὁ
-      - ἀγωνιζόμενος
-      - πάντα
-      - ἐγκρατεύεται
+    - πᾶς
+    - δὲ
+    - ὁ
+    - ἀγωνιζόμενος
+    - πάντα
+    - ἐγκρατεύεται
   action:
     nbla:
-      - y
-      - todo
-      - el
-      - que
-      - compite
-      - en
-      - los
-      - juegos
-      - se
-      - abstiene
-      - de
-      - todo
+    - y
+    - todo
+    - el
+    - que
+    - compite
+    - en
+    - los
+    - juegos
+    - se
+    - abstiene
+    - de
+    - todo
     type: expanded
     consume: 12
   priority: 220
-
 - match:
     greek:
-      - ἐκεῖνοι
-      - μὲν
-      - οὖν
-      - ἵνα
-      - φθαρτὸν
-      - στέφανον
-      - λάβωσιν
-      - ἡμεῖς
-      - δὲ
-      - ἄφθαρτον
+    - ἐκεῖνοι
+    - μὲν
+    - οὖν
+    - ἵνα
+    - φθαρτὸν
+    - στέφανον
+    - λάβωσιν
+    - ἡμεῖς
+    - δὲ
+    - ἄφθαρτον
   action:
     nbla:
-      - ellos
-      - lo
-      - hacen
-      - para
-      - recibir
-      - una
-      - corona
-      - corruptible
-      - pero
-      - nosotros
-      - una
-      - incorruptible
+    - ellos
+    - lo
+    - hacen
+    - para
+    - recibir
+    - una
+    - corona
+    - corruptible
+    - pero
+    - nosotros
+    - una
+    - incorruptible
     type: expanded
     consume: 12
   priority: 240
-
 - match:
     greek:
-      - ἐγὼ
-      - τοίνυν
-      - οὕτως
-      - τρέχω
+    - ἐγὼ
+    - τοίνυν
+    - οὕτως
+    - τρέχω
   action:
     nbla:
-      - por
-      - tanto
-      - yo
-      - de
-      - esta
-      - manera
-      - corro
+    - por
+    - tanto
+    - yo
+    - de
+    - esta
+    - manera
+    - corro
     type: expanded
     consume: 7
   priority: 220
-
 - match:
     greek:
-      - ὡς
-      - οὐκ
-      - ἀδήλως
+    - ὡς
+    - οὐκ
+    - ἀδήλως
   action:
     nbla:
-      - no
-      - como
-      - sin
-      - tener
-      - meta
+    - false
+    - como
+    - sin
+    - tener
+    - meta
     type: expanded
     consume: 5
   priority: 200
-
 - match:
     greek:
-      - οὕτως
-      - πυκτεύω
-      - ὡς
-      - οὐκ
-      - ἀέρα
-      - δέρων
+    - οὕτως
+    - πυκτεύω
+    - ὡς
+    - οὐκ
+    - ἀέρα
+    - δέρων
   action:
     nbla:
-      - de
-      - esta
-      - manera
-      - peleo
-      - no
-      - como
-      - dando
-      - golpes
-      - al
-      - aire
+    - de
+    - esta
+    - manera
+    - peleo
+    - false
+    - como
+    - dando
+    - golpes
+    - al
+    - aire
     type: expanded
     consume: 10
   priority: 230
-
 - match:
     greek:
-      - ὑπωπιάζω
-      - μου
-      - τὸ
-      - σῶμα
+    - ὑπωπιάζω
+    - μου
+    - τὸ
+    - σῶμα
   action:
     nbla:
-      - golpeo
-      - mi
-      - cuerpo
+    - golpeo
+    - mi
+    - cuerpo
     type: expanded
     consume: 3
   priority: 180
-
 - match:
     greek:
-      - καὶ
-      - δουλαγωγῶ
+    - καὶ
+    - δουλαγωγῶ
   action:
     nbla:
-      - y
-      - lo
-      - hago
-      - mi
-      - esclavo
+    - y
+    - lo
+    - hago
+    - mi
+    - esclavo
     type: expanded
     consume: 5
   priority: 190
-
 - match:
     greek:
-      - μή
-      - πως
-      - ἄλλοις
-      - κηρύξας
-      - αὐτὸς
-      - ἀδόκιμος
-      - γένωμαι
+    - μή
+    - πως
+    - ἄλλοις
+    - κηρύξας
+    - αὐτὸς
+    - ἀδόκιμος
+    - γένωμαι
   action:
     nbla:
-      - no
-      - sea
-      - que
-      - habiendo
-      - predicado
-      - a
-      - otros
-      - yo
-      - mismo
-      - sea
-      - descalificado
+    - false
+    - sea
+    - que
+    - habiendo
+    - predicado
+    - a
+    - otros
+    - yo
+    - mismo
+    - sea
+    - descalificado
     type: expanded
     consume: 11
   priority: 230
-
 - match:
     greek:
-      - ἀλλὰ
+    - ἀλλὰ
   action:
     nbla:
-      - sino
-      - que
+    - sino
+    - que
     type: expanded
     consume: 2
   priority: 160
-
 - match:
     greek:
-      - ἀλλʼ
-      - οὐκ
-      - ἐν
-      - τοῖς
-      - πλείοσιν
-      - αὐτῶν
-      - ηὐδόκησεν
-      - ὁ
-      - θεός
+    - ἀλλʼ
+    - οὐκ
+    - ἐν
+    - τοῖς
+    - πλείοσιν
+    - αὐτῶν
+    - ηὐδόκησεν
+    - ὁ
+    - θεός
   action:
     nbla:
-      - sin
-      - embargo
-      - dios
-      - no
-      - se
-      - agradó
-      - de
-      - la
-      - mayor
-      - parte
-      - de
-      - ellos
+    - sin
+    - embargo
+    - dios
+    - false
+    - se
+    - agradó
+    - de
+    - la
+    - mayor
+    - parte
+    - de
+    - ellos
     type: expanded
     consume: 12
   priority: 240
-
 - match:
     greek:
-      - εἰς
-      - τὸ
-      - μὴ
-      - εἶναι
-      - ἡμᾶς
-      - ἐπιθυμητὰς
-      - κακῶν
+    - εἰς
+    - τὸ
+    - μὴ
+    - εἶναι
+    - ἡμᾶς
+    - ἐπιθυμητὰς
+    - κακῶν
   action:
     nbla:
-      - a
-      - fin
-      - de
-      - que
-      - no
-      - codiciemos
-      - lo
-      - malo
+    - a
+    - fin
+    - de
+    - que
+    - false
+    - codiciemos
+    - lo
+    - malo
     type: expanded
     consume: 8
   priority: 300
-
 - match:
     greek:
-      - καθὼς
-      - κἀκεῖνοι
-      - ἐπεθύμησαν
+    - καθὼς
+    - κἀκεῖνοι
+    - ἐπεθύμησαν
   action:
     nbla:
-      - como
-      - ellos
-      - lo
-      - codiciaron
+    - como
+    - ellos
+    - lo
+    - codiciaron
     type: expanded
     consume: 4
   priority: 190
-
 - match:
     greek:
-      - ταῦτα
-      - δὲ
-      - τύποι
-      - ἡμῶν
-      - ἐγενήθησαν
-      - εἰς
-      - τὸ
-      - μὴ
-      - εἶναι
-      - ἡμᾶς
-      - ἐπιθυμητὰς
-      - κακῶν
-      - καθὼς
-      - κἀκεῖνοι
-      - ἐπεθύμησαν
+    - ταῦτα
+    - δὲ
+    - τύποι
+    - ἡμῶν
+    - ἐγενήθησαν
+    - εἰς
+    - τὸ
+    - μὴ
+    - εἶναι
+    - ἡμᾶς
+    - ἐπιθυμητὰς
+    - κακῶν
+    - καθὼς
+    - κἀκεῖνοι
+    - ἐπεθύμησαν
   action:
     nbla:
-      - estas
-      - cosas
-      - sucedieron
-      - como
-      - ejemplo
-      - para
-      - nosotros
-      - a
-      - fin
-      - de
-      - que
-      - no
-      - codiciemos
-      - lo
-      - malo
-      - como
-      - ellos
-      - lo
-      - codiciaron
+    - estas
+    - cosas
+    - sucedieron
+    - como
+    - ejemplo
+    - para
+    - nosotros
+    - a
+    - fin
+    - de
+    - que
+    - false
+    - codiciemos
+    - lo
+    - malo
+    - como
+    - ellos
+    - lo
+    - codiciaron
     type: expanded
     consume: 19
   priority: 500
-
 - match:
     greek:
-      - ταῦτα
-      - δὲ
-      - τύποι
-      - ἡμῶν
-      - ἐγενήθησαν
+    - ταῦτα
+    - δὲ
+    - τύποι
+    - ἡμῶν
+    - ἐγενήθησαν
   action:
     nbla:
-      - estas
-      - cosas
-      - sucedieron
-      - como
-      - ejemplo
-      - para
-      - nosotros
+    - estas
+    - cosas
+    - sucedieron
+    - como
+    - ejemplo
+    - para
+    - nosotros
     type: expanded
     consume: 7
   priority: 260
-
 - match:
     greek:
-      - μηδὲ
-      - εἰδωλολάτραι
-      - γίνεσθε
+    - μηδὲ
+    - εἰδωλολάτραι
+    - γίνεσθε
   action:
     nbla:
-      - no
-      - sean
-      - pues
-      - idólatras
+    - false
+    - sean
+    - pues
+    - idólatras
     type: expanded
     consume: 4
   priority: 190
-
 - match:
     greek:
-      - καθώς
-      - τινες
-      - αὐτῶν
+    - καθώς
+    - τινες
+    - αὐτῶν
   action:
     nbla:
-      - como
-      - fueron
-      - algunos
-      - de
-      - ellos
+    - como
+    - fueron
+    - algunos
+    - de
+    - ellos
     type: expanded
     consume: 5
   priority: 190
-
 - match:
     greek:
-      - ὥσπερ
-      - γέγραπται
+    - ὥσπερ
+    - γέγραπται
   action:
     nbla:
-      - según
-      - está
-      - escrito
+    - según
+    - está
+    - escrito
     type: expanded
     consume: 3
   priority: 180
-
 - match:
     greek:
-      - ἐκάθισεν
-      - ὁ
-      - λαὸς
-      - φαγεῖν
-      - καὶ
-      - πεῖν
-      - καὶ
-      - ἀνέστησαν
-      - παίζειν
+    - ἐκάθισεν
+    - ὁ
+    - λαὸς
+    - φαγεῖν
+    - καὶ
+    - πεῖν
+    - καὶ
+    - ἀνέστησαν
+    - παίζειν
   action:
     nbla:
-      - el
-      - pueblo
-      - se
-      - sentó
-      - a
-      - comer
-      - y
-      - a
-      - beber
-      - y
-      - se
-      - levantó
-      - a
-      - jugar
+    - el
+    - pueblo
+    - se
+    - sentó
+    - a
+    - comer
+    - y
+    - a
+    - beber
+    - y
+    - se
+    - levantó
+    - a
+    - jugar
     type: expanded
     consume: 14
   priority: 240
-
-
 - match:
     greek:
-      - καὶ
-      - ἀπώλοντο
-      - ὑπὸ
-      - τοῦ
-      - ὀλοθρευτοῦ
+    - καὶ
+    - ἀπώλοντο
+    - ὑπὸ
+    - τοῦ
+    - ὀλοθρευτοῦ
   action:
     nbla:
-      - y
-      - fueron
-      - destruidos
-      - por
-      - el
-      - destructor
+    - y
+    - fueron
+    - destruidos
+    - por
+    - el
+    - destructor
     type: expanded
     consume: 6
   priority: 220
-
 - match:
     greek:
-      - καθάπερ
-      - τινὲς
-      - αὐτῶν
-      - ἐγόγγυσαν
+    - καθάπερ
+    - τινὲς
+    - αὐτῶν
+    - ἐγόγγυσαν
   action:
     nbla:
-      - como
-      - algunos
-      - de
-      - ellos
-      - murmuraron
+    - como
+    - algunos
+    - de
+    - ellos
+    - murmuraron
     type: expanded
     consume: 5
   priority: 210
-
 - match:
     greek:
-      - εἰς
-      - οὓς
-      - τὰ
-      - τέλη
-      - τῶν
-      - αἰώνων
-      - κατήντηκεν
+    - εἰς
+    - οὓς
+    - τὰ
+    - τέλη
+    - τῶν
+    - αἰώνων
+    - κατήντηκεν
   action:
     nbla:
-      - para
-      - quienes
-      - ha
-      - llegado
-      - el
-      - fin
-      - de
-      - los
-      - siglos
+    - para
+    - quienes
+    - ha
+    - llegado
+    - el
+    - fin
+    - de
+    - los
+    - siglos
     type: expanded
     consume: 9
   priority: 230
-
 - match:
     greek:
-      - πρὸς
-      - νουθεσίαν
-      - ἡμῶν
+    - πρὸς
+    - νουθεσίαν
+    - ἡμῶν
   action:
     nbla:
-      - como
-      - enseñanza
-      - para
-      - nosotros
+    - como
+    - enseñanza
+    - para
+    - nosotros
     type: expanded
     consume: 4
   priority: 200
-
 - match:
     greek:
-      - ὥστε
-      - ὁ
-      - δοκῶν
-      - ἑστάναι
-      - βλεπέτω
-      - μὴ
-      - πέσῃ
+    - ὥστε
+    - ὁ
+    - δοκῶν
+    - ἑστάναι
+    - βλεπέτω
+    - μὴ
+    - πέσῃ
   action:
     nbla:
-      - por
-      - tanto
-      - el
-      - que
-      - cree
-      - que
-      - está
-      - firme
-      - tenga
-      - cuidado
-      - no
-      - sea
-      - que
-      - caiga
+    - por
+    - tanto
+    - el
+    - que
+    - cree
+    - que
+    - está
+    - firme
+    - tenga
+    - cuidado
+    - false
+    - sea
+    - que
+    - caiga
     type: expanded
     consume: 14
   priority: 240
-
 - match:
     greek:
-      - πειρασμὸς
-      - ὑμᾶς
-      - οὐκ
-      - εἴληφεν
-      - εἰ
-      - μὴ
-      - ἀνθρώπινος
+    - πειρασμὸς
+    - ὑμᾶς
+    - οὐκ
+    - εἴληφεν
+    - εἰ
+    - μὴ
+    - ἀνθρώπινος
   action:
     nbla:
-      - no
-      - les
-      - ha
-      - sobrevenido
-      - ninguna
-      - tentación
-      - que
-      - no
-      - sea
-      - común
-      - a
-      - los
-      - hombres
+    - false
+    - les
+    - ha
+    - sobrevenido
+    - ninguna
+    - tentación
+    - que
+    - false
+    - sea
+    - común
+    - a
+    - los
+    - hombres
     type: expanded
     consume: 13
   priority: 260
-
 - match:
     greek:
-      - πιστὸς
-      - δὲ
-      - ὁ
-      - θεός
-      - ὃς
-      - οὐκ
-      - ἐάσει
-      - ὑμᾶς
-      - πειρασθῆναι
-      - ὑπὲρ
-      - ὃ
-      - δύνασθε
+    - πιστὸς
+    - δὲ
+    - ὁ
+    - θεός
+    - ὃς
+    - οὐκ
+    - ἐάσει
+    - ὑμᾶς
+    - πειρασθῆναι
+    - ὑπὲρ
+    - ὃ
+    - δύνασθε
   action:
     nbla:
-      - fiel
-      - es
-      - dios
-      - que
-      - no
-      - permitirá
-      - que
-      - ustedes
-      - sean
-      - tentados
-      - más
-      - allá
-      - de
-      - lo
-      - que
-      - pueden
-      - soportar
+    - fiel
+    - es
+    - dios
+    - que
+    - false
+    - permitirá
+    - que
+    - ustedes
+    - sean
+    - tentados
+    - más
+    - allá
+    - de
+    - lo
+    - que
+    - pueden
+    - soportar
     type: expanded
     consume: 17
   priority: 270
-
 - match:
     greek:
-      - ἀλλὰ
-      - ποιήσει
-      - σὺν
-      - τῷ
-      - πειρασμῷ
-      - καὶ
-      - τὴν
-      - ἔκβασιν
-      - τοῦ
-      - δύνασθαι
-      - ὑπενεγκεῖν
+    - ἀλλὰ
+    - ποιήσει
+    - σὺν
+    - τῷ
+    - πειρασμῷ
+    - καὶ
+    - τὴν
+    - ἔκβασιν
+    - τοῦ
+    - δύνασθαι
+    - ὑπενεγκεῖν
   action:
     nbla:
-      - sino
-      - que
-      - con
-      - la
-      - tentación
-      - proveerá
-      - también
-      - la
-      - vía
-      - de
-      - escape
-      - a
-      - fin
-      - de
-      - que
-      - puedan
-      - resistirla
+    - sino
+    - que
+    - con
+    - la
+    - tentación
+    - proveerá
+    - también
+    - la
+    - vía
+    - de
+    - escape
+    - a
+    - fin
+    - de
+    - que
+    - puedan
+    - resistirla
     type: expanded
     consume: 17
   priority: 270
-
 - match:
     greek:
-      - ἀπὸ
-      - τῆς
-      - εἰδωλολατρίας
+    - ἀπὸ
+    - τῆς
+    - εἰδωλολατρίας
   action:
     nbla:
-      - de
-      - la
-      - idolatría
+    - de
+    - la
+    - idolatría
     type: expanded
     consume: 3
   priority: 180
-
 - match:
     greek:
-      - διόπερ
-      - ἀγαπητοί
-      - μου
-      - φεύγετε
+    - διόπερ
+    - ἀγαπητοί
+    - μου
+    - φεύγετε
   action:
     nbla:
-      - por
-      - tanto
-      - amados
-      - míos
-      - huyan
+    - por
+    - tanto
+    - amados
+    - míos
+    - huyan
     type: expanded
     consume: 5
   priority: 190
-
 - match:
     greek:
-      - ἀπὸ
-      - τῆς
-      - εἰδωλολατρίας
+    - ἀπὸ
+    - τῆς
+    - εἰδωλολατρίας
   action:
     nbla:
-      - de
-      - la
-      - idolatría
+    - de
+    - la
+    - idolatría
     type: expanded
     consume: 3
   priority: 180
-
 - match:
     greek:
-      - διόπερ
-      - ἀγαπητοί
-      - μου
-      - φεύγετε
+    - διόπερ
+    - ἀγαπητοί
+    - μου
+    - φεύγετε
   action:
     nbla:
-      - por
-      - tanto
-      - amados
-      - míos
-      - huyan
+    - por
+    - tanto
+    - amados
+    - míos
+    - huyan
     type: expanded
     consume: 5
   priority: 190
-
 - match:
     greek:
-      - ὡς
-      - φρονίμοις
-      - λέγω
-      - κρίνατε
-      - ὑμεῖς
-      - ὅ
-      - φημι
+    - ὡς
+    - φρονίμοις
+    - λέγω
+    - κρίνατε
+    - ὑμεῖς
+    - ὅ
+    - φημι
   action:
     nbla:
-      - les
-      - hablo
-      - como
-      - a
-      - sabios
-      - juzguen
-      - ustedes
-      - lo
-      - que
-      - digo
+    - les
+    - hablo
+    - como
+    - a
+    - sabios
+    - juzguen
+    - ustedes
+    - lo
+    - que
+    - digo
     type: expanded
     consume: 10
   priority: 220
-
 - match:
     greek:
-      - κοινωνία
-      - τοῦ
-      - σώματος
-      - τοῦ
-      - χριστοῦ
-      - ἐστιν
+    - κοινωνία
+    - τοῦ
+    - σώματος
+    - τοῦ
+    - χριστοῦ
+    - ἐστιν
   action:
     nbla:
-      - la
-      - participación
-      - en
-      - el
-      - cuerpo
-      - de
-      - cristo
+    - la
+    - participación
+    - en
+    - el
+    - cuerpo
+    - de
+    - cristo
     type: expanded
     consume: 7
   priority: 220
-
 - match:
     greek:
-      - τὸ
-      - ποτήριον
-      - τῆς
-      - εὐλογίας
-      - ὃ
-      - εὐλογοῦμεν
-      - οὐχὶ
-      - κοινωνία
-      - ἐστὶν
-      - τοῦ
-      - αἵματος
-      - τοῦ
-      - χριστοῦ
-      - τὸν
-      - ἄρτον
-      - ὃν
-      - κλῶμεν
-      - οὐχὶ
-      - κοινωνία
-      - τοῦ
-      - σώματος
-      - τοῦ
-      - χριστοῦ
-      - ἐστιν
+    - τὸ
+    - ποτήριον
+    - τῆς
+    - εὐλογίας
+    - ὃ
+    - εὐλογοῦμεν
+    - οὐχὶ
+    - κοινωνία
+    - ἐστὶν
+    - τοῦ
+    - αἵματος
+    - τοῦ
+    - χριστοῦ
+    - τὸν
+    - ἄρτον
+    - ὃν
+    - κλῶμεν
+    - οὐχὶ
+    - κοινωνία
+    - τοῦ
+    - σώματος
+    - τοῦ
+    - χριστοῦ
+    - ἐστιν
   action:
     nbla:
-      - la
-      - copa
-      - de
-      - bendición
-      - que
-      - bendecimos
-      - no
-      - es
-      - la
-      - participación
-      - en
-      - la
-      - sangre
-      - de
-      - cristo
-      - el
-      - pan
-      - que
-      - partimos
-      - no
-      - es
-      - la
-      - participación
-      - en
-      - el
-      - cuerpo
-      - de
-      - cristo
+    - la
+    - copa
+    - de
+    - bendición
+    - que
+    - bendecimos
+    - false
+    - es
+    - la
+    - participación
+    - en
+    - la
+    - sangre
+    - de
+    - cristo
+    - el
+    - pan
+    - que
+    - partimos
+    - false
+    - es
+    - la
+    - participación
+    - en
+    - el
+    - cuerpo
+    - de
+    - cristo
     type: expanded
     consume: 28
   priority: 500
-
 - match:
     greek:
-      - ὅτι
-      - εἷς
-      - ἄρτος
-      - ἓν
-      - σῶμα
-      - οἱ
-      - πολλοί
-      - ἐσμεν
-      - οἱ
-      - γὰρ
-      - πάντες
-      - ἐκ
-      - τοῦ
-      - ἑνὸς
-      - ἄρτου
-      - μετέχομεν
+    - ὅτι
+    - εἷς
+    - ἄρτος
+    - ἓν
+    - σῶμα
+    - οἱ
+    - πολλοί
+    - ἐσμεν
+    - οἱ
+    - γὰρ
+    - πάντες
+    - ἐκ
+    - τοῦ
+    - ἑνὸς
+    - ἄρτου
+    - μετέχομεν
   action:
     nbla:
-      - puesto
-      - que
-      - el
-      - pan
-      - es
-      - uno
-      - nosotros
-      - que
-      - somos
-      - muchos
-      - somos
-      - un
-      - cuerpo
-      - porque
-      - todos
-      - participamos
-      - de
-      - aquel
-      - mismo
-      - pan
+    - puesto
+    - que
+    - el
+    - pan
+    - es
+    - uno
+    - nosotros
+    - que
+    - somos
+    - muchos
+    - somos
+    - un
+    - cuerpo
+    - porque
+    - todos
+    - participamos
+    - de
+    - aquel
+    - mismo
+    - pan
     type: expanded
     consume: 20
   priority: 260
-
 - match:
     greek:
-      - τί
-      - οὖν
-      - φημι
-      - ὅτι
-      - εἰδωλόθυτόν
-      - τί
-      - ἐστιν
-      - ἢ
-      - ὅτι
-      - εἴδωλόν
-      - τί
-      - ἐστιν
+    - τί
+    - οὖν
+    - φημι
+    - ὅτι
+    - εἰδωλόθυτόν
+    - τί
+    - ἐστιν
+    - ἢ
+    - ὅτι
+    - εἴδωλόν
+    - τί
+    - ἐστιν
   action:
     nbla:
-      - qué
-      - quiero
-      - decir
-      - entonces
-      - que
-      - lo
-      - sacrificado
-      - a
-      - los
-      - ídolos
-      - es
-      - algo
-      - o
-      - que
-      - un
-      - ídolo
-      - es
-      - algo
+    - qué
+    - quiero
+    - decir
+    - entonces
+    - que
+    - lo
+    - sacrificado
+    - a
+    - los
+    - ídolos
+    - es
+    - algo
+    - o
+    - que
+    - un
+    - ídolo
+    - es
+    - algo
     type: expanded
     consume: 18
   priority: 260
-
 - match:
     greek:
-      - ἀλλʼ
-      - ὅτι
-      - ἃ
-      - θύουσιν
-      - δαιμονίοις
-      - καὶ
-      - οὐ
-      - θεῷ
-      - θύουσιν
-      - οὐ
-      - θέλω
-      - δὲ
-      - ὑμᾶς
-      - κοινωνοὺς
-      - τῶν
-      - δαιμονίων
-      - γίνεσθαι
+    - ἀλλʼ
+    - ὅτι
+    - ἃ
+    - θύουσιν
+    - δαιμονίοις
+    - καὶ
+    - οὐ
+    - θεῷ
+    - θύουσιν
+    - οὐ
+    - θέλω
+    - δὲ
+    - ὑμᾶς
+    - κοινωνοὺς
+    - τῶν
+    - δαιμονίων
+    - γίνεσθαι
   action:
     nbla:
-      - no
-      - sino
-      - que
-      - digo
-      - que
-      - lo
-      - que
-      - los
-      - gentiles
-      - sacrifican
-      - lo
-      - sacrifican
-      - a
-      - los
-      - demonios
-      - y
-      - no
-      - a
-      - dios
-      - no
-      - quiero
-      - que
-      - ustedes
-      - sean
-      - partícipes
-      - con
-      - los
-      - demonios
+    - false
+    - sino
+    - que
+    - digo
+    - que
+    - lo
+    - que
+    - los
+    - gentiles
+    - sacrifican
+    - lo
+    - sacrifican
+    - a
+    - los
+    - demonios
+    - y
+    - false
+    - a
+    - dios
+    - false
+    - quiero
+    - que
+    - ustedes
+    - sean
+    - partícipes
+    - con
+    - los
+    - demonios
     type: expanded
     consume: 28
   priority: 260
-
 - match:
     greek:
-      - οὐ
-      - δύνασθε
-      - ποτήριον
-      - κυρίου
-      - πίνειν
-      - καὶ
-      - ποτήριον
-      - δαιμονίων
-      - οὐ
-      - δύνασθε
-      - τραπέζης
-      - κυρίου
-      - μετέχειν
-      - καὶ
-      - τραπέζης
-      - δαιμονίων
+    - οὐ
+    - δύνασθε
+    - ποτήριον
+    - κυρίου
+    - πίνειν
+    - καὶ
+    - ποτήριον
+    - δαιμονίων
+    - οὐ
+    - δύνασθε
+    - τραπέζης
+    - κυρίου
+    - μετέχειν
+    - καὶ
+    - τραπέζης
+    - δαιμονίων
   action:
     nbla:
-      - ustedes
-      - no
-      - pueden
-      - beber
-      - la
-      - copa
-      - del
-      - señor
-      - y
-      - la
-      - copa
-      - de
-      - los
-      - demonios
-      - no
-      - pueden
-      - participar
-      - de
-      - la
-      - mesa
-      - del
-      - señor
-      - y
-      - de
-      - la
-      - mesa
-      - de
-      - los
-      - demonios
+    - ustedes
+    - false
+    - pueden
+    - beber
+    - la
+    - copa
+    - del
+    - señor
+    - y
+    - la
+    - copa
+    - de
+    - los
+    - demonios
+    - false
+    - pueden
+    - participar
+    - de
+    - la
+    - mesa
+    - del
+    - señor
+    - y
+    - de
+    - la
+    - mesa
+    - de
+    - los
+    - demonios
     type: expanded
     consume: 29
   priority: 260
-
 - match:
     greek:
-      - ἢ
-      - παραζηλοῦμεν
-      - τὸν
-      - κύριον
-      - μὴ
-      - ἰσχυρότεροι
-      - αὐτοῦ
-      - ἐσμεν
+    - ἢ
+    - παραζηλοῦμεν
+    - τὸν
+    - κύριον
+    - μὴ
+    - ἰσχυρότεροι
+    - αὐτοῦ
+    - ἐσμεν
   action:
     nbla:
-      - o
-      - provocaremos
-      - a
-      - celos
-      - al
-      - señor
-      - acaso
-      - somos
-      - más
-      - fuertes
-      - que
-      - él
+    - o
+    - provocaremos
+    - a
+    - celos
+    - al
+    - señor
+    - acaso
+    - somos
+    - más
+    - fuertes
+    - que
+    - él
     type: expanded
     consume: 12
   priority: 240
-
 - match:
     greek:
-      - πάντα
-      - ἔξεστιν
-      - ἀλλʼ
-      - οὐ
-      - πάντα
-      - συμφέρει
-      - ⸁πάντα
-      - ἔξεστιν
-      - ἀλλʼ
-      - οὐ
-      - πάντα
-      - οἰκοδομεῖ
+    - πάντα
+    - ἔξεστιν
+    - ἀλλʼ
+    - οὐ
+    - πάντα
+    - συμφέρει
+    - ⸁πάντα
+    - ἔξεστιν
+    - ἀλλʼ
+    - οὐ
+    - πάντα
+    - οἰκοδομεῖ
   action:
     nbla:
-      - todo
-      - es
-      - lícito
-      - pero
-      - no
-      - todo
-      - es
-      - de
-      - provecho
-      - todo
-      - es
-      - lícito
-      - pero
-      - no
-      - todo
-      - edifica
+    - todo
+    - es
+    - lícito
+    - pero
+    - false
+    - todo
+    - es
+    - de
+    - provecho
+    - todo
+    - es
+    - lícito
+    - pero
+    - false
+    - todo
+    - edifica
     type: expanded
     consume: 16
   priority: 250
-
 - match:
     greek:
-      - μηδεὶς
-      - τὸ
-      - ἑαυτοῦ
-      - ζητείτω
-      - ἀλλὰ
-      - τὸ
-      - τοῦ
-      - ἑτέρου
+    - μηδεὶς
+    - τὸ
+    - ἑαυτοῦ
+    - ζητείτω
+    - ἀλλὰ
+    - τὸ
+    - τοῦ
+    - ἑτέρου
   action:
     nbla:
-      - nadie
-      - busque
-      - su
-      - propio
-      - bien
-      - sino
-      - el
-      - de
-      - su
-      - prójimo
+    - nadie
+    - busque
+    - su
+    - propio
+    - bien
+    - sino
+    - el
+    - de
+    - su
+    - prójimo
     type: expanded
     consume: 10
   priority: 260
-
 - match:
     greek:
-      - πᾶν
-      - τὸ
-      - ἐν
-      - μακέλλῳ
-      - πωλούμενον
-      - ἐσθίετε
-      - μηδὲν
-      - ἀνακρίνοντες
-      - διὰ
-      - τὴν
-      - συνείδησιν
+    - πᾶν
+    - τὸ
+    - ἐν
+    - μακέλλῳ
+    - πωλούμενον
+    - ἐσθίετε
+    - μηδὲν
+    - ἀνακρίνοντες
+    - διὰ
+    - τὴν
+    - συνείδησιν
   action:
     nbla:
-      - coman
-      - de
-      - todo
-      - lo
-      - que
-      - se
-      - vende
-      - en
-      - la
-      - carnicería
-      - sin
-      - preguntar
-      - nada
-      - por
-      - motivos
-      - de
-      - conciencia
+    - coman
+    - de
+    - todo
+    - lo
+    - que
+    - se
+    - vende
+    - en
+    - la
+    - carnicería
+    - sin
+    - preguntar
+    - nada
+    - por
+    - motivos
+    - de
+    - conciencia
     type: expanded
     consume: 17
   priority: 240
-
 - match:
     greek:
-      - τοῦ
-      - κυρίου
-      - γὰρ
-      - ἡ
-      - γῆ
-      - καὶ
-      - τὸ
-      - πλήρωμα
-      - αὐτῆς
+    - τοῦ
+    - κυρίου
+    - γὰρ
+    - ἡ
+    - γῆ
+    - καὶ
+    - τὸ
+    - πλήρωμα
+    - αὐτῆς
   action:
     nbla:
-      - porque
-      - del
-      - señor
-      - es
-      - la
-      - tierra
-      - y
-      - todo
-      - lo
-      - que
-      - en
-      - ella
-      - hay
+    - porque
+    - del
+    - señor
+    - es
+    - la
+    - tierra
+    - y
+    - todo
+    - lo
+    - que
+    - en
+    - ella
+    - hay
     type: expanded
     consume: 13
   priority: 240
-
 - match:
     greek:
-      - συνείδησιν
-      - δὲ
-      - λέγω
-      - οὐχὶ
-      - τὴν
-      - ἑαυτοῦ
-      - ἀλλὰ
-      - τὴν
-      - τοῦ
-      - ἑτέρου
-      - ἱνατί
-      - γὰρ
-      - ἡ
-      - ἐλευθερία
-      - μου
-      - κρίνεται
-      - ὑπὸ
-      - ἄλλης
-      - συνειδήσεως
+    - συνείδησιν
+    - δὲ
+    - λέγω
+    - οὐχὶ
+    - τὴν
+    - ἑαυτοῦ
+    - ἀλλὰ
+    - τὴν
+    - τοῦ
+    - ἑτέρου
+    - ἱνατί
+    - γὰρ
+    - ἡ
+    - ἐλευθερία
+    - μου
+    - κρίνεται
+    - ὑπὸ
+    - ἄλλης
+    - συνειδήσεως
   action:
     nbla:
-      - quiero
-      - decir
-      - no
-      - la
-      - conciencia
-      - de
-      - ustedes
-      - sino
-      - la
-      - del
-      - otro
-      - pues
-      - por
-      - qué
-      - ha
-      - de
-      - ser
-      - juzgada
-      - mi
-      - libertad
-      - por
-      - la
-      - conciencia
-      - ajena
+    - quiero
+    - decir
+    - false
+    - la
+    - conciencia
+    - de
+    - ustedes
+    - sino
+    - la
+    - del
+    - otro
+    - pues
+    - por
+    - qué
+    - ha
+    - de
+    - ser
+    - juzgada
+    - mi
+    - libertad
+    - por
+    - la
+    - conciencia
+    - ajena
     type: expanded
     consume: 24
   priority: 260
-
 - match:
     greek:
-      - ἐὰν
-      - δέ
-      - τις
-      - ὑμῖν
-      - εἴπῃ
-      - τοῦτο
-      - ἱερόθυτόν
-      - ἐστιν
-      - μὴ
-      - ἐσθίετε
-      - διʼ
-      - ἐκεῖνον
-      - τὸν
-      - μηνύσαντα
-      - καὶ
-      - τὴν
-      - συνείδησιν
+    - ἐὰν
+    - δέ
+    - τις
+    - ὑμῖν
+    - εἴπῃ
+    - τοῦτο
+    - ἱερόθυτόν
+    - ἐστιν
+    - μὴ
+    - ἐσθίετε
+    - διʼ
+    - ἐκεῖνον
+    - τὸν
+    - μηνύσαντα
+    - καὶ
+    - τὴν
+    - συνείδησιν
   action:
     nbla:
-      - pero
-      - si
-      - alguien
-      - les
-      - dice
-      - esto
-      - ha
-      - sido
-      - sacrificado
-      - a
-      - los
-      - ídolos
-      - no
-      - lo
-      - coman
-      - por
-      - causa
-      - del
-      - que
-      - se
-      - lo
-      - dijo
-      - y
-      - por
-      - motivos
-      - de
-      - conciencia
-      - porque
-      - del
-      - señor
-      - es
-      - la
-      - tierra
-      - y
-      - todo
-      - lo
-      - que
-      - en
-      - ella
-      - hay
+    - pero
+    - si
+    - alguien
+    - les
+    - dice
+    - esto
+    - ha
+    - sido
+    - sacrificado
+    - a
+    - los
+    - ídolos
+    - false
+    - lo
+    - coman
+    - por
+    - causa
+    - del
+    - que
+    - se
+    - lo
+    - dijo
+    - y
+    - por
+    - motivos
+    - de
+    - conciencia
+    - porque
+    - del
+    - señor
+    - es
+    - la
+    - tierra
+    - y
+    - todo
+    - lo
+    - que
+    - en
+    - ella
+    - hay
     type: expanded
     consume: 40
   priority: 260
-
 - match:
     greek:
-      - εἰ
-      - ἐγὼ
-      - χάριτι
-      - μετέχω
-      - τί
-      - βλασφημοῦμαι
-      - ὑπὲρ
-      - οὗ
-      - ἐγὼ
-      - εὐχαριστῶ
+    - εἰ
+    - ἐγὼ
+    - χάριτι
+    - μετέχω
+    - τί
+    - βλασφημοῦμαι
+    - ὑπὲρ
+    - οὗ
+    - ἐγὼ
+    - εὐχαριστῶ
   action:
     nbla:
-      - si
-      - participo
-      - con
-      - agradecimiento
-      - por
-      - qué
-      - he
-      - de
-      - ser
-      - censurado
-      - a
-      - causa
-      - de
-      - aquello
-      - por
-      - lo
-      - cual
-      - doy
-      - gracias
+    - si
+    - participo
+    - con
+    - agradecimiento
+    - por
+    - qué
+    - he
+    - de
+    - ser
+    - censurado
+    - a
+    - causa
+    - de
+    - aquello
+    - por
+    - lo
+    - cual
+    - doy
+    - gracias
     type: expanded
     consume: 19
   priority: 240
-
 - match:
     greek:
-      - εἴτε
-      - οὖν
-      - ἐσθίετε
-      - εἴτε
-      - πίνετε
-      - εἴτε
-      - τι
-      - ποιεῖτε
-      - πάντα
-      - εἰς
-      - δόξαν
-      - θεοῦ
-      - ποιεῖτε
+    - εἴτε
+    - οὖν
+    - ἐσθίετε
+    - εἴτε
+    - πίνετε
+    - εἴτε
+    - τι
+    - ποιεῖτε
+    - πάντα
+    - εἰς
+    - δόξαν
+    - θεοῦ
+    - ποιεῖτε
   action:
     nbla:
-      - entonces
-      - ya
-      - sea
-      - que
-      - coman
-      - que
-      - beban
-      - o
-      - que
-      - hagan
-      - cualquier
-      - otra
-      - cosa
-      - háganlo
-      - todo
-      - para
-      - la
-      - gloria
-      - de
-      - dios
+    - entonces
+    - ya
+    - sea
+    - que
+    - coman
+    - que
+    - beban
+    - o
+    - que
+    - hagan
+    - cualquier
+    - otra
+    - cosa
+    - háganlo
+    - todo
+    - para
+    - la
+    - gloria
+    - de
+    - dios
     type: expanded
     consume: 20
   priority: 260
-
 - match:
     greek:
-      - ἀπρόσκοποι
-      - καὶ
-      - ἰουδαίοις
-      - γίνεσθε
-      - καὶ
-      - ἕλλησιν
-      - καὶ
-      - τῇ
-      - ἐκκλησίᾳ
-      - τοῦ
-      - θεοῦ
+    - ἀπρόσκοποι
+    - καὶ
+    - ἰουδαίοις
+    - γίνεσθε
+    - καὶ
+    - ἕλλησιν
+    - καὶ
+    - τῇ
+    - ἐκκλησίᾳ
+    - τοῦ
+    - θεοῦ
   action:
     nbla:
-      - no
-      - sean
-      - motivo
-      - de
-      - tropiezo
-      - ni
-      - a
-      - judíos
-      - ni
-      - a
-      - griegos
-      - ni
-      - a
-      - la
-      - iglesia
-      - de
-      - dios
+    - false
+    - sean
+    - motivo
+    - de
+    - tropiezo
+    - ni
+    - a
+    - judíos
+    - ni
+    - a
+    - griegos
+    - ni
+    - a
+    - la
+    - iglesia
+    - de
+    - dios
     type: expanded
     consume: 17
   priority: 250
-
 - match:
     greek:
-      - καθὼς
-      - κἀγὼ
-      - πάντα
-      - πᾶσιν
-      - ἀρέσκω
-      - μὴ
-      - ζητῶν
-      - τὸ
-      - ἐμαυτοῦ
-      - σύμφορον
-      - ἀλλὰ
-      - τὸ
-      - τῶν
-      - πολλῶν
-      - ἵνα
-      - σωθῶσιν
+    - καθὼς
+    - κἀγὼ
+    - πάντα
+    - πᾶσιν
+    - ἀρέσκω
+    - μὴ
+    - ζητῶν
+    - τὸ
+    - ἐμαυτοῦ
+    - σύμφορον
+    - ἀλλὰ
+    - τὸ
+    - τῶν
+    - πολλῶν
+    - ἵνα
+    - σωθῶσιν
   action:
     nbla:
-      - así
-      - como
-      - también
-      - yo
-      - procuro
-      - agradar
-      - a
-      - todos
-      - en
-      - todo
-      - no
-      - buscando
-      - mi
-      - propio
-      - beneficio
-      - sino
-      - el
-      - de
-      - muchos
-      - para
-      - que
-      - sean
-      - salvos
+    - así
+    - como
+    - también
+    - yo
+    - procuro
+    - agradar
+    - a
+    - todos
+    - en
+    - todo
+    - false
+    - buscando
+    - mi
+    - propio
+    - beneficio
+    - sino
+    - el
+    - de
+    - muchos
+    - para
+    - que
+    - sean
+    - salvos
     type: expanded
     consume: 23
   priority: 260
+- match:
+    greek:
+    - καθὼς
+    - κἀγὼ
+    - χριστοῦ
+  action:
+    nbla:
+    - como
+    - también
+    - yo
+    - lo
+    - soy
+    - de
+    - cristo
+    type: expanded
+    consume: 7
+  priority: 210
+- match:
+    greek:
+    - χριστοῦ
+  action:
+    nbla:
+    - de
+    - cristo
+    type: expanded
+    consume: 2
+- match:
+    greek:
+    - κυρίου
+  action:
+    nbla:
+    - del
+    - señor
+    type: expanded
+    consume: 2
+- match:
+    greek:
+    - κεφαλὴν
+  action:
+    nbla:
+    - cabeza
+    type: direct
+    consume: 1
+- match:
+    greek:
+    - ἀτιμία
+  action:
+    nbla:
+    - deshonra
+    type: direct
+    consume: 1
+- match:
+    greek:
+    - ποτήριον
+  action:
+    nbla:
+    - copa
+    type: direct
+    consume: 1
+- match:
+    greek:
+    - δὲ
+    - ἑαυτοὺς
+  action:
+    nbla:
+    - nosotros
+    - mismos
+    type: expanded
+    consume: 2
+- match:
+    greek:
+    - κἀγὼ
+    ref: 1corintios 11:1
+  action:
+    nbla:
+    - mí
+    type: direct
+    consume: 1
+- match:
+    greek:
+    - πλὴν
+    - οὔτε
+    ref: 1corintios 11:11
+  action:
+    nbla:
+    - en
+    - el
+    - señor
+    - ni
+    type: expanded
+    consume: 4
+- match:
+    greek:
+    - ἀτιμία
+    ref: 1corintios 11:14
+  action:
+    nbla:
+    - deshonra
+    type: direct
+    consume: 1
+- match:
+    greek:
+    - τί
+    - εἴπω
+    ref: 1corintios 11:22
+  action:
+    nbla:
+    - diré
+    type: expanded
+    consume: 1
+- match:
+    greek:
+    - δὲ
+    - ἑαυτοὺς
+    ref: 1corintios 11:31
+  action:
+    nbla:
+    - nosotros
+    - mismos
+    type: expanded
+    consume: 2

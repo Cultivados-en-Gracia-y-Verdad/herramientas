@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Download Courses</title>
+  <link rel="icon" href="/assets/cgv-app-icon.svg">
+  <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+  <header>
+    <div class="app-brand">
+      <img src="/assets/cgv-logo.svg" alt="CGV">
+      <div>
+        <strong>CGV Presenter</strong>
+        <span>Download Courses</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>CGV Repository</h2>
+      <div class="button-row">
+        <button id="refreshCatalogButton" type="button">Refresh Courses</button>
+      </div>
+      <p id="repositoryStatus">Downloaded courses are installed to your Documents/CGV Presenter folder.</p>
+      <div id="courseList" class="course-list"></div>
+    </section>
+  </main>
+
+  <script src="courses.js"></script>
+</body>
+</html>

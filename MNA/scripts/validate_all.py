@@ -4,7 +4,7 @@ import subprocess
 from pathlib import Path
 
 BASE = Path(".")
-ALIGN_DIR = BASE / "data" / "alignments"
+ALIGN_DIR = BASE / "data" / "alignments" / "1corintios"
 G_DIR = BASE / "data" / "g-tokens"
 S_DIR = BASE / "data" / "s-tokens"
 VALIDATOR = BASE / "scripts" / "validate_alignment.py"
