@@ -532,7 +532,8 @@ def build_candidates(
         info = failures[stem]
         ref = stem_to_ref(stem)
         alignment_file = locate_alignment_file(stem, align_root)
-        s_file = s_token_root / f"{stem}.txt"
+        book = stem_book(stem)
+        s_file = s_token_root / book / f"{stem}.txt"
 
         if not alignment_file:
             candidates.append(Candidate(stem, ref, "-", "[alignment TSV not found]", "-", "-", "diagnostic-missing-file", "missing-file", f"Could not find {stem}.tsv under {align_root}", 0.0, f"{stem}:missing-alignment"))

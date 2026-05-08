@@ -6,6 +6,7 @@ module.exports = {
     name: 'CGV Presenter',
     asar: true,
     icon: './assets/cgv-app-icon',
+    extraResource: ['./bibles'],
   },
   rebuildConfig: {},
   makers: [

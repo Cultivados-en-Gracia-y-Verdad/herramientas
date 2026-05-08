@@ -10,6 +10,9 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 const serverEvents = new EventTarget();
+const resourceBibleDir = process.resourcesPath
+  ? path.join(process.resourcesPath, "bibles", "NBLA")
+  : "";
 const bundledBibleDir = path.join(__dirname, "bibles", "NBLA");
 const legacyNblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
 const coursesDir = path.join(__dirname, "courses");
@@ -707,7 +710,9 @@ function buildBibleBookAliases(book) {
 }
 
 function loadBibleReferences() {
-  const bibleDir = [bundledBibleDir, legacyNblaDir].find(candidate => fs.existsSync(candidate));
+  const bibleDir = [resourceBibleDir, bundledBibleDir, legacyNblaDir]
+    .filter(Boolean)
+    .find(candidate => fs.existsSync(candidate));
 
   if (!bibleDir) {
     console.warn("No NBLA Bible data found. Bible reference popups will be disabled.");
@@ -757,6 +762,16 @@ function loadBibleReferences() {
     .sort((a, b) => b.length - a.length);
 
   console.log(`Loaded ${bibleBookNames.length} NBLA Bible books from ${bibleDir}`);
+}
+
+function getBibleStatus() {
+  return {
+    loaded: bibleBookNames.length > 0,
+    books: bibleBookNames.length,
+    references: Object.keys(bibleReferences).length,
+    sampleBooks: bibleBookNames.slice(0, 8),
+    searchPaths: [resourceBibleDir, bundledBibleDir, legacyNblaDir].filter(Boolean)
+  };
 }
 
 function getReferenceVerses(book, chapter, startVerse, endVerse = startVerse) {
@@ -1895,6 +1910,10 @@ app.post("/course-library", (req, res) => {
 
 app.get("/courses/repository", (req, res) => {
   res.json(loadCourseRepositoryConfig());
+});
+
+app.get("/bible/status", (req, res) => {
+  res.json(getBibleStatus());
 });
 
 app.get("/courses/catalog", async (req, res) => {
