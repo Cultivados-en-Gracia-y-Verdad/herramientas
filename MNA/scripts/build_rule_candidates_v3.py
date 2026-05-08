@@ -557,6 +557,10 @@ def is_rejected_singleton(win: Sequence[AlignRow], nbla_group: Sequence[Tuple[in
     if len(win) == 1 and is_function_greek_token(win[0].greek) and is_bad_spanish_singleton(nbla_group):
         return True
 
+    # Reject content Greek singleton → very common Spanish singleton.
+    if is_semantically_weak_singleton(win, nbla_group):
+        return True
+
     return False
 
 

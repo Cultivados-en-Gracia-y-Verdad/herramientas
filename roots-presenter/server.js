@@ -992,7 +992,7 @@ function renderLine(line) {
   if (manualTitle) {
     return `
       <div class="manual-${manualTitle.type}">
-        ${marked.parseInline(enrichBibleReferences(manualTitle.text)).trim()}
+        ${enrichBibleReferences(marked.parseInline(manualTitle.text).trim())}
       </div>
     `.trim();
   }
@@ -1045,7 +1045,7 @@ function renderLine(line) {
     `.trim();
   }
 
-  const html = marked.parse(enrichBibleReferences(line)).trim();
+  const html = enrichBibleReferences(marked.parse(line)).trim();
 
   if (line.startsWith("- ")) {
     return html.replace("<ul>", '<ul class="comment-bullets">');
