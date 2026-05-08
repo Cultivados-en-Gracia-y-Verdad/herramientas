@@ -1,0 +1,165 @@
+
+BOOK: filemon
+-------------
+PASS filemon-1-1
+PASS filemon-1-10
+FAIL filemon-1-11
+FAIL filemon-1-12
+PASS filemon-1-13
+PASS filemon-1-14
+FAIL filemon-1-15
+FAIL filemon-1-16
+FAIL filemon-1-17
+FAIL filemon-1-18
+FAIL filemon-1-19
+FAIL filemon-1-2
+PASS filemon-1-20
+FAIL filemon-1-21
+PASS filemon-1-22
+PASS filemon-1-23
+FAIL filemon-1-24
+FAIL filemon-1-25
+FAIL filemon-1-3
+PASS filemon-1-4
+FAIL filemon-1-5
+FAIL filemon-1-6
+FAIL filemon-1-7
+FAIL filemon-1-8
+FAIL filemon-1-9
+
+SUMMARY: FAIL
+
+--- filemon/filemon-1-11 ---
+FAIL
+
+- NBLA token 12 unused: útil
+- NBLA token 13 unused: a
+- NBLA token 14 unused: ti
+- NBLA token 15 unused: y
+- NBLA token 16 unused: a
+- NBLA token 17 unused: mí.
+
+--- filemon/filemon-1-12 ---
+FAIL
+
+- NBLA token 10 unused: es
+- NBLA token 11 unused: decir,
+- NBLA token 12 unused: como
+- NBLA token 13 unused: si
+- NBLA token 14 unused: fuera
+- NBLA token 15 unused: mi
+- NBLA token 16 unused: propio
+- NBLA token 17 unused: corazón.
+
+--- filemon/filemon-1-15 ---
+FAIL
+
+- NBLA token 08 unused: ti
+- NBLA token 09 unused: por
+- NBLA token 10 unused: algún
+- NBLA token 11 unused: tiempo,
+- NBLA token 12 unused: para
+- NBLA token 13 unused: que
+- NBLA token 14 unused: lo
+- NBLA token 15 unused: volvieras
+
+--- filemon/filemon-1-16 ---
+FAIL
+
+- NBLA token 02 unused: no
+- NBLA token 30 unused: Señor.
+
+--- filemon/filemon-1-17 ---
+FAIL
+
+- NBLA token 10 unused: aceptarías
+- NBLA token 11 unused: a
+- NBLA token 12 unused: mí.
+
+--- filemon/filemon-1-18 ---
+FAIL
+
+- NBLA token 06 unused: en
+- NBLA token 07 unused: alguna
+- NBLA token 08 unused: forma,
+- NBLA token 14 unused: a
+- NBLA token 15 unused: mi
+- NBLA token 16 unused: cuenta.
+
+--- filemon/filemon-1-19 ---
+FAIL
+
+- NBLA token 23 unused: mí).
+
+--- filemon/filemon-1-2 ---
+FAIL
+
+- NBLA token 21 unused: casa:
+
+--- filemon/filemon-1-21 ---
+FAIL
+
+- NBLA token 09 unused: harás
+- NBLA token 10 unused: aún
+- NBLA token 11 unused: más
+- NBLA token 12 unused: de
+- NBLA token 13 unused: lo
+
+--- filemon/filemon-1-24 ---
+FAIL
+
+- NBLA token 08 unused: colaboradores.
+
+--- filemon/filemon-1-25 ---
+FAIL
+
+- NBLA token 03 unused: del
+- NBLA token 04 unused: Señor
+- NBLA token 05 unused: Jesucristo
+- NBLA token 06 unused: sea
+- NBLA token 07 unused: con
+- NBLA token 08 unused: el
+- NBLA token 09 unused: espíritu
+
+--- filemon/filemon-1-3 ---
+FAIL
+
+- NBLA token 02 unused: a
+
+--- filemon/filemon-1-5 ---
+FAIL
+
+- NBLA token 03 unused: de
+- NBLA token 04 unused: tu
+- NBLA token 05 unused: amor
+- NBLA token 06 unused: y
+- NBLA token 07 unused: de
+
+--- filemon/filemon-1-6 ---
+FAIL
+
+- NBLA token 02 unused: que
+- NBLA token 23 unused: mediante
+- NBLA token 24 unused: Cristo.
+
+--- filemon/filemon-1-7 ---
+FAIL
+
+- NBLA token 16 unused: de
+
+--- filemon/filemon-1-8 ---
+FAIL
+
+- NBLA token 13 unused: lo
+- NBLA token 14 unused: que
+- NBLA token 15 unused: conviene,
+
+--- filemon/filemon-1-9 ---
+FAIL
+
+- NBLA token 10 unused: te
+- NBLA token 11 unused: hago
+- NBLA token 12 unused: un
+- NBLA token 13 unused: ruego,
+- NBLA token 14 unused: siendo
+

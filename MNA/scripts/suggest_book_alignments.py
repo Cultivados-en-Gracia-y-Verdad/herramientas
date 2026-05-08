@@ -46,7 +46,13 @@ def load_rules(path):
     if not data:
         return []
 
-    return data.get("rules", [])
+    if isinstance(data, list):
+        return data
+
+    if isinstance(data, dict):
+        return data.get("rules", [])
+
+    raise ValueError(f"Unsupported rules YAML structure: {type(data)}")
 
 
 def parse_ref_from_filename(path, book):

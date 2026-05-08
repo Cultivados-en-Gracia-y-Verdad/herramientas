@@ -491,6 +491,8 @@ def window_score(win: Sequence[AlignRow], nbla_group: Sequence[Tuple[int, str]])
     g_len = len(win)
     s_len = len(nbla_group)
 
+    ownership_ratio = s_len / max(g_len, 1)
+
     score = 0.30
 
     # Weak rows are likely repair locations.
@@ -553,31 +555,43 @@ def make_windows(local_rows: Sequence[AlignRow], nbla_group: Sequence[Tuple[int,
     rows = list(local_rows)
     if not rows:
         return []
+
     windows: List[List[AlignRow]] = []
     n = len(rows)
     weak_positions = [i for i, r in enumerate(rows) if r.is_weak]
-    centers = weak_positions if weak_positions else list(range(n))
 
     for length in range(1, min(MAX_GREEK_WINDOW, n) + 1):
         for start in range(0, n - length + 1):
             end = start + length
+
             # Keep only windows that touch a weak row, unless there are no weak rows.
             if weak_positions and not any(start <= p < end for p in weak_positions):
                 continue
+
             win = rows[start:end]
+
+            # Reject impossible ownership expansions before scoring.
+            # Example: 2 Greek tokens should not own 8 Spanish tokens.
+            ownership_ratio = len(nbla_group) / max(len(win), 1)
+            if ownership_ratio > 3.5:
+                continue
+
             windows.append(win)
 
     # Deduplicate by g_idx tuple.
     seen: set[Tuple[int, ...]] = set()
     unique: List[List[AlignRow]] = []
+
     for win in windows:
         key = tuple(r.g_idx for r in win)
+
         if key not in seen:
             seen.add(key)
             unique.append(win)
 
     unique = [w for w in unique if has_content_anchor(w)]
     unique.sort(key=lambda w: (-window_score(w, nbla_group), len(w), w[0].g_idx))
+
     return unique
 
 
