@@ -13,6 +13,13 @@ const serverEvents = new EventTarget();
 const resourceBibleDir = process.resourcesPath
   ? path.join(process.resourcesPath, "bibles", "NBLA")
   : "";
+const unpackedResourceBibleDir = process.resourcesPath
+  ? path.join(process.resourcesPath, "app.asar.unpacked", "bibles", "NBLA")
+  : "";
+const executableResourceBibleDir = process.execPath
+  ? path.join(path.dirname(process.execPath), "resources", "bibles", "NBLA")
+  : "";
+const cwdBibleDir = path.join(process.cwd(), "bibles", "NBLA");
 const bundledBibleDir = path.join(__dirname, "bibles", "NBLA");
 const legacyNblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
 const coursesDir = path.join(__dirname, "courses");
@@ -710,9 +717,9 @@ function buildBibleBookAliases(book) {
 }
 
 function loadBibleReferences() {
-  const bibleDir = [resourceBibleDir, bundledBibleDir, legacyNblaDir]
+  const bibleDir = getBibleSearchPaths()
     .filter(Boolean)
-    .find(candidate => fs.existsSync(candidate));
+    .find(candidate => getBibleFileCount(candidate) > 0);
 
   if (!bibleDir) {
     console.warn("No NBLA Bible data found. Bible reference popups will be disabled.");
@@ -764,13 +771,37 @@ function loadBibleReferences() {
   console.log(`Loaded ${bibleBookNames.length} NBLA Bible books from ${bibleDir}`);
 }
 
+function getBibleSearchPaths() {
+  return Array.from(new Set([
+    resourceBibleDir,
+    unpackedResourceBibleDir,
+    executableResourceBibleDir,
+    bundledBibleDir,
+    cwdBibleDir,
+    legacyNblaDir
+  ].filter(Boolean)));
+}
+
+function getBibleFileCount(candidate) {
+  try {
+    if (!candidate || !fs.existsSync(candidate)) return 0;
+    return fs.readdirSync(candidate).filter(fileName => fileName.endsWith(".nbla.md")).length;
+  } catch {
+    return 0;
+  }
+}
+
 function getBibleStatus() {
   return {
     loaded: bibleBookNames.length > 0,
     books: bibleBookNames.length,
     references: Object.keys(bibleReferences).length,
     sampleBooks: bibleBookNames.slice(0, 8),
-    searchPaths: [resourceBibleDir, bundledBibleDir, legacyNblaDir].filter(Boolean)
+    searchPaths: getBibleSearchPaths().map(candidate => ({
+      path: candidate,
+      exists: fs.existsSync(candidate),
+      files: getBibleFileCount(candidate)
+    }))
   };
 }
 
@@ -1914,6 +1945,18 @@ app.get("/courses/repository", (req, res) => {
 
 app.get("/bible/status", (req, res) => {
   res.json(getBibleStatus());
+});
+
+app.get("/bible/test", (req, res) => {
+  const text = typeof req.query.text === "string" && req.query.text.trim()
+    ? req.query.text.trim()
+    : "Hechos 8:3";
+
+  res.json({
+    text,
+    html: enrichBibleReferences(text),
+    status: getBibleStatus()
+  });
 });
 
 app.get("/courses/catalog", async (req, res) => {

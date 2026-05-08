@@ -25,7 +25,7 @@ Helpful diagnostic run:
 
 from __future__ import annotations
 
-SCRIPT_VERSION = "v3.0-window-safe-2026-05-06"
+SCRIPT_VERSION = "v3.1-quality-filter-2026-05-08"
 
 import argparse
 import csv
@@ -76,6 +76,59 @@ FUNCTION_WORDS = {
     "καί", "δὲ", "δέ", "γάρ", "οὖν", "τε", "μέν", "ἀλλά", "ἤ", "εἰ", "ὅτι", "ἵνα",
 }
 
+BAD_SINGLETON_GREEK = FUNCTION_WORDS | {
+    "περὶ", "ἐν", "εἰς", "ἐκ", "διὰ", "κατὰ", "πρὸς", "ἀπὸ",
+    "τοῦ", "τῆς", "τῷ", "τῇ", "τὸν", "τὴν", "τὸ",
+}
+
+BAD_SINGLETON_SPANISH = {
+    "el", "la", "los", "las", "un", "una", "unos", "unas",
+    "de", "a", "en", "con", "por", "para", "y", "pero",
+    "que", "se", "lo", "le", "les", "su", "sus",
+}
+
+VERY_COMMON_SPANISH = {
+    "todos", "todo", "y", "que", "de", "la", "el",
+    "los", "las", "a", "en", "con", "para",
+    "como", "por", "se", "lo", "le",
+    "ustedes", "nosotros",
+}
+
+def is_semantically_weak_singleton(
+    win: Sequence[AlignRow],
+    group: Sequence[Tuple[int, str]],
+) -> bool:
+    if len(win) != 1:
+        return False
+
+    if len(group) != 1:
+        return False
+
+    spanish = norm_text(group[0][1])
+
+    if spanish in VERY_COMMON_SPANISH:
+        return True
+
+    return False
+
+def greek_clean_token(s: str) -> str:
+    return norm_text(s).replace("ς", "σ")
+
+
+def is_function_greek_token(s: str) -> bool:
+    raw = str(s).strip()
+    clean = greek_clean_token(raw)
+    return raw in FUNCTION_WORDS or raw in BAD_SINGLETON_GREEK or clean in {greek_clean_token(x) for x in BAD_SINGLETON_GREEK}
+
+
+def has_content_anchor(win: Sequence[AlignRow]) -> bool:
+    return any(not is_function_greek_token(r.greek) for r in win)
+
+
+def is_bad_spanish_singleton(group: Sequence[Tuple[int, str]]) -> bool:
+    if len(group) != 1:
+        return False
+    return norm_text(group[0][1]) in BAD_SINGLETON_SPANISH
 
 def strip_accents(s: str) -> str:
     return "".join(ch for ch in unicodedata.normalize("NFD", str(s)) if unicodedata.category(ch) != "Mn")
@@ -479,17 +532,31 @@ def make_windows(local_rows: Sequence[AlignRow], nbla_group: Sequence[Tuple[int,
             seen.add(key)
             unique.append(win)
 
+    unique = [w for w in unique if has_content_anchor(w)]
     unique.sort(key=lambda w: (-window_score(w, nbla_group), len(w), w[0].g_idx))
     return unique
 
 
 def is_rejected_singleton(win: Sequence[AlignRow], nbla_group: Sequence[Tuple[int, str]]) -> bool:
-    if len(win) != 1:
-        return False
-    if len(nbla_group) > MAX_SAFE_SINGLETON_CONSUME:
+    if not win:
         return True
-    if win[0].greek in FUNCTION_WORDS and len(nbla_group) > 1:
+
+    # Never allow candidates with no meaningful Greek anchor.
+    if not has_content_anchor(win):
         return True
+
+    # Reject unsafe one-Greek-token ownership of long Spanish spans.
+    if len(win) == 1 and len(nbla_group) > MAX_SAFE_SINGLETON_CONSUME:
+        return True
+
+    # Reject Greek function word → Spanish phrase.
+    if len(win) == 1 and is_function_greek_token(win[0].greek) and len(nbla_group) > 1:
+        return True
+
+    # Reject Greek function word → weak Spanish singleton.
+    if len(win) == 1 and is_function_greek_token(win[0].greek) and is_bad_spanish_singleton(nbla_group):
+        return True
+
     return False
 
 

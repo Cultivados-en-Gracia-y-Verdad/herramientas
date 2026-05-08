@@ -1,12 +1,13 @@
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
+const path = require('path');
 
 module.exports = {
   packagerConfig: {
     name: 'CGV Presenter',
     asar: true,
     icon: './assets/cgv-app-icon',
-    extraResource: ['./bibles'],
+    extraResource: [path.resolve(__dirname, 'bibles')],
   },
   rebuildConfig: {},
   makers: [
