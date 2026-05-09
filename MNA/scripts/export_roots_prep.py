@@ -47,7 +47,6 @@ def read_tokens(path: Path) -> list[tuple[str, str]]:
     return rows
 
 
-
 def read_alignment(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8") as f:
         return list(csv.DictReader(f, delimiter="\t"))
@@ -118,10 +117,8 @@ def to_rmac(code: str) -> str:
     if len(parts) == 3 and parts[0] == "V":
         middle = parts[1]
         last = parts[2]
-
         if len(middle) == 4 and middle[0].isdigit():
             return f"V-{middle[1:]}-{middle[0]}{last}"
-
         return f"V-{middle}-{last}"
 
     return code
@@ -185,45 +182,20 @@ def connector_info(greek: str):
 def connector_surface(row: dict[str, str] | None, default_es: str, gr: str) -> tuple[str, bool]:
     if row and row["NBLA_IDX"] != "-" and row["NBLA_TEXT"] != "-":
         return f"({row['NBLA_TEXT']} — {gr})", True
-
     return f"[{default_es} — {gr}]", False
-
-
-def mark_nbla_tokens(
-    spanish_tokens: list[tuple[str, str]],
-    verb_marks: dict[str, str],
-    connector_marks: dict[str, str],
-    hidden_indexes: set[str],
-) -> str:
-    marked = []
-
-    for idx, token in spanish_tokens:
-        if idx in hidden_indexes:
-            continue
-        if idx in connector_marks:
-            marked.append(connector_marks[idx])
-        elif idx in verb_marks:
-            marked.append(verb_marks[idx])
-        else:
-            marked.append(token)
-
-    return " ".join(marked)
 
 
 def finite_positions_for_ref(greek_tokens, morph_lookup, ref) -> list[str]:
     positions = []
-
     for idx, _greek in greek_tokens:
         morph = morph_lookup.get((ref, idx))
         if morph and is_verb(morph["code"]) and is_finite(morph["code"]):
             positions.append(idx)
-
     return positions
 
 
 def build_connector_records(greek_tokens, align_by_gidx):
     records = []
-
     for idx, greek in greek_tokens:
         info = connector_info(greek)
         if not info:
@@ -244,24 +216,122 @@ def build_connector_records(greek_tokens, align_by_gidx):
             "presente": presente,
             "align": align,
         })
-
     return records
 
 
-def closest_connector_for_clause(
-    clause_start: int,
-    finite_idx: int,
+def structural_connector_for_clause(
+    finite_idx: str,
+    previous_finite_idx: str | None,
     connector_records: list[dict[str, str]],
 ) -> dict[str, str] | None:
+    start = int(previous_finite_idx) + 1 if previous_finite_idx else 1
+    end = int(finite_idx)
+
     candidates = [
         c for c in connector_records
-        if clause_start <= int(c["g_idx"]) <= finite_idx
+        if start <= int(c["g_idx"]) <= end
     ]
 
     if not candidates:
         return None
 
+    # Only the closest connector before this finite verb may introduce this clause.
     return sorted(candidates, key=lambda c: int(c["g_idx"]))[-1]
+
+
+def build_structural_connectors(
+    finite_positions: list[str],
+    connector_records: list[dict[str, str]],
+) -> dict[str, dict[str, str]]:
+    structural = {}
+
+    for i, finite_idx in enumerate(finite_positions):
+        prev_finite = finite_positions[i - 1] if i > 0 else None
+        connector = structural_connector_for_clause(finite_idx, prev_finite, connector_records)
+
+        if connector:
+            structural[finite_idx] = connector
+
+    return structural
+
+
+def build_marks(
+    greek_tokens,
+    align_by_gidx,
+    morph_lookup,
+    ref,
+    structural_connectors_by_finite,
+) -> tuple[list[str], list[str], list[str], dict[str, str], dict[str, str], set[str], dict[str, str]]:
+    verbs: list[str] = []
+    connectors: list[str] = []
+    connector_evidence: list[str] = []
+    verb_marks: dict[str, str] = {}
+    connector_marks: dict[str, str] = {}
+    hidden_indexes: set[str] = set()
+    structural_connector_mark_by_gidx: dict[str, str] = {}
+
+    structural_gidxs = {
+        c["g_idx"] for c in structural_connectors_by_finite.values()
+    }
+
+    for idx, greek in greek_tokens:
+        morph = morph_lookup.get((ref, idx))
+        align = align_by_gidx.get(idx)
+
+        if morph and is_verb(morph["code"]):
+            code = morph["code"]
+            rmac = morph["rmac"]
+            spanish = nbla_for_row(align)
+            tag = "[F]" if is_finite(code) else "[NF]"
+
+            if is_finite(code):
+                display = f"=={spanish}==" if spanish != "[sin equivalente]" else f"[=={morph['lemma']}==]"
+                indexes = nbla_indexes(align)
+                if indexes:
+                    verb_marks[indexes[0]] = display
+                    hidden_indexes.update(indexes[1:])
+            else:
+                display = spanish if spanish != "[sin equivalente]" else f"[{morph['lemma']}]"
+
+            verbs.append(f"- {greek} ({rmac}) {tag} → {display}")
+
+    connector_records = build_connector_records(greek_tokens, align_by_gidx)
+
+    for connector in connector_records:
+        connectors.append(
+            f"- {connector['greek']} → {connector['marker']} — {connector['tipo']}"
+        )
+
+        structural_status = "sí" if connector["g_idx"] in structural_gidxs else "no"
+
+        connector_evidence.append(
+            "\n".join([
+                f"- Griego: {connector['greek']}",
+                f"  Normalizado: {connector['key']}",
+                f"  Marcador: {connector['marker']}",
+                f"  Presente en NBLA: {'sí' if connector['presente'] else 'no; equivalencia añadida'}",
+                f"  Tipo: {connector['tipo']}",
+                f"  Estructural: {structural_status}",
+                f"  Estado: detectado mecánicamente",
+            ])
+        )
+
+        if connector["g_idx"] in structural_gidxs:
+            indexes = nbla_indexes(connector["align"])
+            if indexes:
+                connector_marks[indexes[0]] = connector["marker"]
+                hidden_indexes.update(indexes[1:])
+            structural_connector_mark_by_gidx[connector["g_idx"]] = connector["marker"]
+
+    return (
+        verbs,
+        connectors,
+        connector_evidence,
+        verb_marks,
+        connector_marks,
+        hidden_indexes,
+        structural_connector_mark_by_gidx,
+    )
 
 
 def build_marked_token_map(
@@ -271,7 +341,6 @@ def build_marked_token_map(
     hidden_indexes: set[str],
 ) -> dict[str, str]:
     marked = {}
-
     for idx, token in spanish_tokens:
         if idx in hidden_indexes:
             continue
@@ -281,8 +350,18 @@ def build_marked_token_map(
             marked[idx] = verb_marks[idx]
         else:
             marked[idx] = token
-
     return marked
+
+
+def mark_nbla_tokens(
+    spanish_tokens: list[tuple[str, str]],
+    marked_by_sidx: dict[str, str],
+) -> str:
+    return " ".join(
+        marked_by_sidx[idx]
+        for idx, _token in spanish_tokens
+        if idx in marked_by_sidx
+    )
 
 
 def build_clause_candidates(
@@ -292,68 +371,141 @@ def build_clause_candidates(
     morph_lookup: dict[tuple[str, str], dict[str, str]],
     ref: str,
     marked_by_sidx: dict[str, str],
-    connector_records: list[dict[str, str]],
+    structural_connectors_by_finite: dict[str, dict[str, str]],
 ) -> list[dict[str, str]]:
-    finite_positions = finite_positions_for_ref(greek_tokens, morph_lookup, ref)
+
+    finite_positions = finite_positions_for_ref(
+        greek_tokens,
+        morph_lookup,
+        ref,
+    )
 
     if not finite_positions:
         return []
 
-    clauses = []
-    used_sidx: set[str] = set()
+    #
+    # STEP 1
+    # Build clause centers from finite verbs
+    #
+
+    clause_centers = []
 
     for i, finite_idx in enumerate(finite_positions):
-        finite_int = int(finite_idx)
+
+        row = align_by_gidx.get(finite_idx)
+
+        s_indexes = nbla_indexes(row)
+
+        if not s_indexes:
+            continue
+
+        center = min(int(x) for x in s_indexes)
+
+        connector = structural_connectors_by_finite.get(finite_idx)
+
+        clause_centers.append({
+            "id": f"C{i + 1}",
+            "finite_idx": finite_idx,
+            "center": center,
+            "connector": connector,
+        })
+
+    if not clause_centers:
+        return []
+
+    #
+    # STEP 2
+    # Determine NBLA ownership boundaries
+    #
+
+    ownership_ranges = []
+
+    for i, clause in enumerate(clause_centers):
+
+        current_center = clause["center"]
 
         if i == 0:
-            base_start = int(greek_tokens[0][0])
+            start = 1
         else:
-            base_start = int(finite_positions[i - 1]) + 1
+            prev_center = clause_centers[i - 1]["center"]
+            start = prev_center + 1
 
-        connector = closest_connector_for_clause(base_start, finite_int, connector_records)
-
-        if connector:
-            g_start = int(connector["g_idx"])
+        if i + 1 < len(clause_centers):
+            next_center = clause_centers[i + 1]["center"]
+            end = next_center - 1
         else:
-            g_start = base_start
+            end = int(spanish_tokens[-1][0])
 
-        if i + 1 < len(finite_positions):
-            g_end = int(finite_positions[i + 1]) - 1
-        else:
-            g_end = int(greek_tokens[-1][0])
+        ownership_ranges.append({
+            "id": clause["id"],
+            "finite_idx": clause["finite_idx"],
+            "start": start,
+            "end": end,
+            "connector": clause["connector"],
+        })
 
-        greek_parts = []
-        nbla_indexes_set = set()
+    #
+    # STEP 3
+    # Pull NBLA tokens ONLY from owned NBLA range
+    #
 
-        for idx, greek in greek_tokens:
-            idx_int = int(idx)
+    clauses = []
 
-            if g_start <= idx_int <= g_end:
-                greek_parts.append(greek)
+    for r in ownership_ranges:
 
-                row = align_by_gidx.get(idx)
-                for s_idx in nbla_indexes(row):
-                    if s_idx not in used_sidx and s_idx in marked_by_sidx:
-                        nbla_indexes_set.add(s_idx)
+        owned_indexes = {
+            f"{i:02d}"
+            for i in range(r["start"], r["end"] + 1)
+        }
 
-        ordered_nbla = []
         ordered_marked = []
 
         for s_idx, token in spanish_tokens:
-            if s_idx in nbla_indexes_set:
-                ordered_nbla.append(token)
-                ordered_marked.append(marked_by_sidx.get(s_idx, token))
-                used_sidx.add(s_idx)
+
+            if s_idx not in owned_indexes:
+                continue
+
+            marked = marked_by_sidx.get(s_idx, token)
+
+            ordered_marked.append(marked)
+
+        #
+        # STEP 4
+        # prepend structural connector if needed
+        #
+
+        connector = r["connector"]
+
+        if connector:
+
+            marker = connector["marker"]
+
+            if ordered_marked:
+
+                first = ordered_marked[0]
+
+                if marker not in first:
+                    ordered_marked[0] = f"{marker} {first}"
+
+        #
+        # STEP 5
+        # Greek display span only for diagnostics
+        #
+
+        greek_parts = []
+
+        for idx, greek in greek_tokens:
+
+            if idx == r["finite_idx"]:
+                greek_parts.append(f"[{greek}]")
+            else:
+                greek_parts.append(greek)
 
         clauses.append({
-            "id": f"C{i + 1}",
-            "finite_idx": finite_idx,
-            "g_start": f"{g_start:02d}",
-            "g_end": f"{g_end:02d}",
-            "connector_gidx": connector["g_idx"] if connector else "",
+            "id": r["id"],
+            "finite_idx": r["finite_idx"],
+            "nbla_marked": " ".join(ordered_marked).strip(),
             "greek": " ".join(greek_parts),
-            "nbla": " ".join(ordered_nbla),
-            "nbla_marked": " ".join(ordered_marked),
         })
 
     return clauses
@@ -376,34 +528,24 @@ def clause_by_id(clause_id: str, clauses: list[dict[str, str]]) -> dict[str, str
 def previous_clause_id(clause_id: str) -> str | None:
     if not clause_id.startswith("C"):
         return None
-
     n = int(clause_id[1:])
     if n <= 1:
         return None
-
     return f"C{n - 1}"
 
 
 def build_relationships(
     clauses: list[dict[str, str]],
-    connector_records: list[dict[str, str]],
+    structural_connectors_by_finite: dict[str, dict[str, str]],
     previous_last_clause: str | None,
 ) -> list[dict[str, str]]:
     relationships = []
 
-    connector_by_idx = {
-        c["g_idx"]: c
-        for c in connector_records
-    }
-
     for clause in clauses:
         cid = clause["id"]
-        connector_gidx = clause.get("connector_gidx")
+        finite_idx = clause["finite_idx"]
+        connector = structural_connectors_by_finite.get(finite_idx)
 
-        if not connector_gidx:
-            continue
-
-        connector = connector_by_idx.get(connector_gidx)
         if not connector:
             continue
 
@@ -439,8 +581,8 @@ def build_structure_lines(
 
     lines: list[str] = []
 
-    for c in clauses:
-        cid = c["id"]
+    for clause in clauses:
+        cid = clause["id"]
 
         if cid in parent:
             continue
@@ -529,59 +671,25 @@ def export_book(book: str) -> None:
         greek_line = " ".join(token for _, token in greek_tokens)
         spanish_line = " ".join(token for _, token in spanish_tokens)
 
-        verbs: list[str] = []
-        connectors: list[str] = []
-        connector_evidence: list[str] = []
-
-        verb_marks: dict[str, str] = {}
-        connector_marks: dict[str, str] = {}
-        hidden_indexes: set[str] = set()
-
+        finite_positions = finite_positions_for_ref(greek_tokens, morph_lookup, ref)
         connector_records = build_connector_records(greek_tokens, align_by_gidx)
+        structural_connectors_by_finite = build_structural_connectors(finite_positions, connector_records)
 
-        for idx, greek in greek_tokens:
-            morph = morph_lookup.get((ref, idx))
-            align = align_by_gidx.get(idx)
-
-            if morph and is_verb(morph["code"]):
-                code = morph["code"]
-                rmac = morph["rmac"]
-                spanish = nbla_for_row(align)
-                tag = "[F]" if is_finite(code) else "[NF]"
-
-                if is_finite(code):
-                    display = f"=={spanish}==" if spanish != "[sin equivalente]" else f"[=={morph['lemma']}==]"
-                    indexes = nbla_indexes(align)
-                    if indexes:
-                        verb_marks[indexes[0]] = display
-                        hidden_indexes.update(indexes[1:])
-                else:
-                    display = spanish if spanish != "[sin equivalente]" else f"[{morph['lemma']}]"
-
-                verbs.append(f"- {greek} ({rmac}) {tag} → {display}")
-
-        for connector in connector_records:
-            align = connector["align"]
-            indexes = nbla_indexes(align)
-
-            if indexes:
-                connector_marks[indexes[0]] = connector["marker"]
-                hidden_indexes.update(indexes[1:])
-
-            connectors.append(
-                f"- {connector['greek']} → {connector['marker']} — {connector['tipo']}"
-            )
-
-            connector_evidence.append(
-                "\n".join([
-                    f"- Griego: {connector['greek']}",
-                    f"  Normalizado: {connector['key']}",
-                    f"  Marcador: {connector['marker']}",
-                    f"  Presente en NBLA: {'sí' if connector['presente'] else 'no; equivalencia añadida'}",
-                    f"  Tipo: {connector['tipo']}",
-                    f"  Estado: detectado mecánicamente",
-                ])
-            )
+        (
+            verbs,
+            connectors,
+            connector_evidence,
+            verb_marks,
+            connector_marks,
+            hidden_indexes,
+            _structural_connector_mark_by_gidx,
+        ) = build_marks(
+            greek_tokens,
+            align_by_gidx,
+            morph_lookup,
+            ref,
+            structural_connectors_by_finite,
+        )
 
         marked_by_sidx = build_marked_token_map(
             spanish_tokens,
@@ -597,22 +705,16 @@ def export_book(book: str) -> None:
             morph_lookup,
             ref,
             marked_by_sidx,
-            connector_records,
+            structural_connectors_by_finite,
         )
 
         relationships = build_relationships(
             clauses,
-            connector_records,
+            structural_connectors_by_finite,
             previous_last_clause,
         )
 
-        marked_nbla = mark_nbla_tokens(
-            spanish_tokens,
-            verb_marks,
-            connector_marks,
-            hidden_indexes,
-        )
-
+        marked_nbla = mark_nbla_tokens(spanish_tokens, marked_by_sidx)
         structure_lines = build_structure_lines(clauses, relationships)
 
         if clauses:
@@ -659,7 +761,6 @@ def export_book(book: str) -> None:
 
         lines.append("### Cláusulas")
         lines.append("")
-
         if clauses:
             for c in clauses:
                 lines.append(f"- {c['id']}")
@@ -667,12 +768,10 @@ def export_book(book: str) -> None:
                 lines.append(f"  NBLA: {c['nbla_marked']}")
         else:
             lines.append("- ninguno")
-
         lines.append("")
 
         lines.append("### Relaciones A–B")
         lines.append("")
-
         if relationships:
             for r in relationships:
                 a_text = clause_text(r["a"], clauses)
@@ -689,12 +788,13 @@ def export_book(book: str) -> None:
                 lines.append(f"  Estado: {r['estado']}")
         else:
             lines.append("- ninguno")
-
         lines.append("")
 
         lines.append("### Vista Estructural")
         lines.append("")
+        lines.append("```text")
         lines.extend(structure_lines)
+        lines.append("```")
         lines.append("")
 
         lines.append("---")

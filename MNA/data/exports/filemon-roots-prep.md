@@ -16,7 +16,7 @@ Pablo , prisionero de Cristo Jesús, y el hermano Timoteo: A Filemón nuestro am
 
 ### NBLA Marcado
 
-Pablo , prisionero de Cristo Jesús, (y — καὶ) el hermano Timoteo: A Filemón nuestro amado hermano (y — καὶ) colaborador,
+Pablo , prisionero de Cristo Jesús, y el hermano Timoteo: A Filemón nuestro amado hermano y colaborador,
 
 ### Verbos
 
@@ -34,12 +34,14 @@ Pablo , prisionero de Cristo Jesús, (y — καὶ) el hermano Timoteo: A Filem
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
@@ -52,7 +54,9 @@ Pablo , prisionero de Cristo Jesús, (y — καὶ) el hermano Timoteo: A Filem
 
 ### Vista Estructural
 
+```text
 - ninguno
+```
 
 ---
 
@@ -72,7 +76,7 @@ y a la hermana Apia, y a Arquipo, nuestro compañero de lucha, y a la iglesia qu
 
 ### NBLA Marcado
 
-(y — καὶ) a la hermana Apia, (y — καὶ) a Arquipo, nuestro compañero de lucha, (y — καὶ) a la iglesia que está en tu casa:
+y a la hermana Apia, y a Arquipo, nuestro compañero de lucha, y a la iglesia que está en tu casa:
 
 ### Verbos
 
@@ -91,18 +95,21 @@ y a la hermana Apia, y a Arquipo, nuestro compañero de lucha, y a la iglesia qu
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
@@ -115,7 +122,9 @@ y a la hermana Apia, y a Arquipo, nuestro compañero de lucha, y a la iglesia qu
 
 ### Vista Estructural
 
+```text
 - ninguno
+```
 
 ---
 
@@ -135,7 +144,7 @@ Gracia a ustedes y paz de parte de Dios nuestro Padre y del Señor Jesucristo.
 
 ### NBLA Marcado
 
-Gracia a ustedes (y — καὶ) paz de parte de Dios nuestro Padre (y — καὶ) del Señor Jesucristo.
+Gracia a ustedes y paz de parte de Dios nuestro Padre y del Señor Jesucristo.
 
 ### Verbos
 
@@ -153,12 +162,14 @@ Gracia a ustedes (y — καὶ) paz de parte de Dios nuestro Padre (y — κα�
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
@@ -171,7 +182,9 @@ Gracia a ustedes (y — καὶ) paz de parte de Dios nuestro Padre (y — κα�
 
 ### Vista Estructural
 
+```text
 - ninguno
+```
 
 ---
 
@@ -209,7 +222,7 @@ Doy gracias a mi Dios siempre, haciendo mención de ti en mis oraciones,
 ### Cláusulas
 
 - C1
-  Griego: Εὐχαριστῶ τῷ θεῷ μου πάντοτε μνείαν σου ποιούμενος ἐπὶ τῶν προσευχῶν μου,
+  Griego: ROOT base: finite verb 01 projected to NBLA 01-02
   NBLA: ==Doy gracias== a mi Dios siempre, haciendo mención de ti en mis oraciones,
 
 ### Relaciones A–B
@@ -218,7 +231,9 @@ Doy gracias a mi Dios siempre, haciendo mención de ti en mis oraciones,
 
 ### Vista Estructural
 
+```text
 ==Doy gracias== a mi Dios siempre, haciendo mención de ti en mis oraciones,
+```
 
 ---
 
@@ -238,7 +253,7 @@ porque oigo de tu amor y de la fe que tienes hacia el Señor Jesús y hacia todo
 
 ### NBLA Marcado
 
-porque oigo de tu amor (y — καὶ) de la fe que ==tienes== hacia el Señor Jesús (y — καὶ) hacia todos los santos.
+porque oigo de tu amor (y — καὶ) de la fe que ==tienes== hacia el Señor Jesús y hacia todos los santos.
 
 ### Verbos
 
@@ -257,32 +272,36 @@ porque oigo de tu amor (y — καὶ) de la fe que ==tienes== hacia el Señor J
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: καὶ τὴν πίστιν ἣν ἔχεις ⸀πρὸς τὸν κύριον Ἰησοῦν καὶ εἰς πάντας τοὺς ἁγίους,
-  NBLA: (y — καὶ) de la fe que ==tienes== hacia el Señor Jesús (y — καὶ) hacia todos los santos.
+  Griego: ROOT base: finite verb 09 projected to NBLA 11-11
+  NBLA: (y — καὶ) de la fe que ==tienes== hacia el Señor Jesús y hacia todos los santos.
 
 ### Relaciones A–B
 
 - A: Filemon 1:4 C1 — contexto anterior
   Conector: (y — καὶ)
-  B: C1 — (y — καὶ) de la fe que ==tienes== hacia el Señor Jesús (y — καὶ) hacia todos los santos.
+  B: C1 — (y — καὶ) de la fe que ==tienes== hacia el Señor Jesús y hacia todos los santos.
   Relación: Filemon 1:4 C1 (καὶ) C1
   Tipo: coordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-(y — καὶ) de la fe que ==tienes== hacia el Señor Jesús (y — καὶ) hacia todos los santos.
+```text
+(y — καὶ) de la fe que ==tienes== hacia el Señor Jesús y hacia todos los santos.
+```
 
 ---
 
@@ -319,8 +338,8 @@ Ruego que la comunión de tu fe ==llegue a ser== eficaz por el conocimiento de t
 ### Cláusulas
 
 - C1
-  Griego: ὅπως ἡ κοινωνία τῆς πίστεώς σου ἐνεργὴς γένηται ἐν ἐπιγνώσει παντὸς ἀγαθοῦ ⸀τοῦ ἐν ἡμῖν εἰς ⸀Χριστόν·
-  NBLA: Ruego que la comunión de tu fe ==llegue a ser== eficaz por el conocimiento de todo lo bueno que hay en ustedes mediante Cristo.
+  Griego: ROOT base: finite verb 08 projected to NBLA 08-10
+  NBLA: ==llegue a ser== eficaz por el conocimiento de todo lo bueno que hay en ustedes mediante Cristo.
 
 ### Relaciones A–B
 
@@ -328,7 +347,9 @@ Ruego que la comunión de tu fe ==llegue a ser== eficaz por el conocimiento de t
 
 ### Vista Estructural
 
-Ruego que la comunión de tu fe ==llegue a ser== eficaz por el conocimiento de todo lo bueno que hay en ustedes mediante Cristo.
+```text
+==llegue a ser== eficaz por el conocimiento de todo lo bueno que hay en ustedes mediante Cristo.
+```
 
 ---
 
@@ -348,7 +369,7 @@ Pues he llegado a tener mucho gozo y consuelo en tu amor, porque los corazones d
 
 ### NBLA Marcado
 
-(Pues — γάρ) ==he llegado a tener== mucho gozo (y — καὶ) consuelo en tu amor, (porque — ὅτι) los corazones de los santos ==han sido confortados== por ti, hermano.
+(Pues — γάρ) ==he llegado a tener== mucho gozo y consuelo en tu amor, (porque — ὅτι) los corazones de los santos ==han sido confortados== por ti, hermano.
 
 ### Verbos
 
@@ -368,48 +389,53 @@ Pues he llegado a tener mucho gozo y consuelo en tu amor, porque los corazones d
   Marcador: (Pues — γάρ)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: ὅτι
   Normalizado: οτι
   Marcador: (porque — ὅτι)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: γὰρ ⸂πολλὴν ἔσχον⸃ καὶ παράκλησιν ἐπὶ τῇ ἀγάπῃ σου, ὅτι τὰ σπλάγχνα τῶν ἁγίων
-  NBLA: (Pues — γάρ) ==he llegado a tener== mucho (y — καὶ) consuelo en tu amor, (porque — ὅτι) los corazones de los santos
+  Griego: ROOT base: finite verb 04 projected to NBLA 02-05
+  NBLA: (Pues — γάρ) ==he llegado a tener== mucho gozo y consuelo en tu amor,
 - C2
-  Griego: ὅτι τὰ σπλάγχνα τῶν ἁγίων ἀναπέπαυται διὰ σοῦ, ἀδελφέ.
-  NBLA: ==han sido confortados== por ti, hermano.
+  Griego: ROOT base: finite verb 16 projected to NBLA 19-21
+  NBLA: (porque — ὅτι) los corazones de los santos ==han sido confortados== por ti, hermano.
 
 ### Relaciones A–B
 
 - A: Filemon 1:6 C1 — contexto anterior
   Conector: (Pues — γάρ)
-  B: C1 — (Pues — γάρ) ==he llegado a tener== mucho (y — καὶ) consuelo en tu amor, (porque — ὅτι) los corazones de los santos
+  B: C1 — (Pues — γάρ) ==he llegado a tener== mucho gozo y consuelo en tu amor,
   Relación: Filemon 1:6 C1 (γάρ) C1
   Tipo: subordinante
   Estado: candidato mecánico
-- A: C1 — (Pues — γάρ) ==he llegado a tener== mucho (y — καὶ) consuelo en tu amor, (porque — ὅτι) los corazones de los santos
+- A: C1 — (Pues — γάρ) ==he llegado a tener== mucho gozo y consuelo en tu amor,
   Conector: (porque — ὅτι)
-  B: C2 — ==han sido confortados== por ti, hermano.
+  B: C2 — (porque — ὅτι) los corazones de los santos ==han sido confortados== por ti, hermano.
   Relación: C1 (ὅτι) C2
   Tipo: subordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-(Pues — γάρ) ==he llegado a tener== mucho (y — καὶ) consuelo en tu amor, (porque — ὅτι) los corazones de los santos
-    ==han sido confortados== por ti, hermano.
+```text
+(Pues — γάρ) ==he llegado a tener== mucho gozo y consuelo en tu amor,
+    (porque — ὅτι) los corazones de los santos ==han sido confortados== por ti, hermano.
+```
 
 ---
 
@@ -429,7 +455,7 @@ Por lo cual, aunque tengo mucha libertad en Cristo para mandarte hacer lo que co
 
 ### NBLA Marcado
 
-(Por lo cual, — διό) aunque tengo mucha libertad en Cristo para mandarte hacer lo que conviene,
+Por lo cual, aunque tengo mucha libertad en Cristo para mandarte hacer lo que conviene,
 
 ### Verbos
 
@@ -448,6 +474,7 @@ Por lo cual, aunque tengo mucha libertad en Cristo para mandarte hacer lo que co
   Marcador: (Por lo cual, — διό)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
@@ -460,7 +487,9 @@ Por lo cual, aunque tengo mucha libertad en Cristo para mandarte hacer lo que co
 
 ### Vista Estructural
 
+```text
 - ninguno
+```
 
 ---
 
@@ -480,7 +509,7 @@ no obstante, por causa del amor que te tengo, te hago un ruego, siendo como soy,
 
 ### NBLA Marcado
 
-no obstante, por causa del amor que te tengo, ==te hago un ruego,== siendo (como — ὡς) soy, Pablo, anciano, (y — δὲ) ahora (también — καὶ) prisionero de Cristo Jesús:
+no obstante, por causa del amor que te tengo, ==te hago un ruego,== siendo como soy, Pablo, anciano, y ahora también prisionero de Cristo Jesús:
 
 ### Verbos
 
@@ -500,25 +529,28 @@ no obstante, por causa del amor que te tengo, ==te hago un ruego,== siendo (como
   Marcador: (como — ὡς)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: δὲ
   Normalizado: δε
   Marcador: (y — δὲ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (también — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: διὰ τὴν ἀγάπην μᾶλλον παρακαλῶ, τοιοῦτος ὢν ὡς Παῦλος πρεσβύτης νυνὶ δὲ καὶ δέσμιος ⸂Χριστοῦ Ἰησοῦ⸃—
-  NBLA: no obstante, por causa del amor que te tengo, ==te hago un ruego,== siendo (como — ὡς) soy, Pablo, anciano, (y — δὲ) ahora (también — καὶ) prisionero de Cristo Jesús:
+  Griego: ROOT base: finite verb 05 projected to NBLA 10-13
+  NBLA: ==te hago un ruego,== siendo como soy, Pablo, anciano, y ahora también prisionero de Cristo Jesús:
 
 ### Relaciones A–B
 
@@ -526,7 +558,9 @@ no obstante, por causa del amor que te tengo, ==te hago un ruego,== siendo (como
 
 ### Vista Estructural
 
-no obstante, por causa del amor que te tengo, ==te hago un ruego,== siendo (como — ὡς) soy, Pablo, anciano, (y — δὲ) ahora (también — καὶ) prisionero de Cristo Jesús:
+```text
+==te hago un ruego,== siendo como soy, Pablo, anciano, y ahora también prisionero de Cristo Jesús:
+```
 
 ---
 
@@ -564,11 +598,11 @@ te ruego por mi hijo Onésimo, a quien he engendrado en mis prisiones;
 ### Cláusulas
 
 - C1
-  Griego: παρακαλῶ σε περὶ τοῦ ἐμοῦ τέκνου, ὃν
-  NBLA: ==te ruego== por mi hijo a quien
+  Griego: ROOT base: finite verb 01 projected to NBLA 01-02
+  NBLA: ==te ruego== por mi hijo Onésimo,
 - C2
-  Griego: σε περὶ τοῦ ἐμοῦ τέκνου, ὃν ἐγέννησα ἐν τοῖς ⸀δεσμοῖς Ὀνήσιμον,
-  NBLA: Onésimo, ==he engendrado== en mis prisiones;
+  Griego: ROOT base: finite verb 08 projected to NBLA 09-10
+  NBLA: a quien ==he engendrado== en mis prisiones;
 
 ### Relaciones A–B
 
@@ -576,9 +610,11 @@ te ruego por mi hijo Onésimo, a quien he engendrado en mis prisiones;
 
 ### Vista Estructural
 
-==te ruego== por mi hijo a quien
+```text
+==te ruego== por mi hijo Onésimo,
 
-Onésimo, ==he engendrado== en mis prisiones;
+a quien ==he engendrado== en mis prisiones;
+```
 
 ---
 
@@ -598,7 +634,7 @@ quien en otro tiempo te era inútil, pero ahora nos es útil a ti y a mí.
 
 ### NBLA Marcado
 
-quien en otro tiempo te era inútil, (pero — δὲ) ahora nos es útil a ti (y — καὶ) a mí.
+quien en otro tiempo te era inútil, pero ahora nos es útil a ti y a mí.
 
 ### Verbos
 
@@ -616,12 +652,14 @@ quien en otro tiempo te era inútil, (pero — δὲ) ahora nos es útil a ti (y
   Marcador: (pero — δὲ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (y — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
@@ -634,7 +672,9 @@ quien en otro tiempo te era inútil, (pero — δὲ) ahora nos es útil a ti (y
 
 ### Vista Estructural
 
+```text
 - ninguno
+```
 
 ---
 
@@ -672,11 +712,11 @@ Y te lo ==he vuelto a enviar== en persona, ==es== decir, como si fuera mi propio
 ### Cláusulas
 
 - C1
-  Griego: ὃν ἀνέπεμψά ⸂σοι αὐτόν, τοῦτʼ
-  NBLA: Y te lo ==he vuelto a enviar== en persona, ==es== decir, como si fuera
+  Griego: ROOT base: finite verb 02 projected to NBLA 04-07
+  NBLA: ==he vuelto a enviar== en persona,
 - C2
-  Griego: ⸂σοι αὐτόν, τοῦτʼ ἔστιν τὰ ἐμὰ σπλάγχνα⸃·
-  NBLA: mi propio corazón.
+  Griego: ROOT base: finite verb 06 projected to NBLA 10-10
+  NBLA: ==es== decir, como si fuera mi propio corazón.
 
 ### Relaciones A–B
 
@@ -684,9 +724,11 @@ Y te lo ==he vuelto a enviar== en persona, ==es== decir, como si fuera mi propio
 
 ### Vista Estructural
 
-Y te lo ==he vuelto a enviar== en persona, ==es== decir, como si fuera
+```text
+==he vuelto a enviar== en persona,
 
-mi propio corazón.
+==es== decir, como si fuera mi propio corazón.
+```
 
 ---
 
@@ -725,30 +767,33 @@ Hubiera querido retenerlo conmigo, para que me sirviera en lugar tuyo en mis pri
   Marcador: (para que — ἵνα)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: ὃν ἐγὼ ἐβουλόμην πρὸς ἐμαυτὸν κατέχειν, ἵνα ὑπὲρ σοῦ ⸂μοι
-  NBLA: ==Hubiera querido== retenerlo conmigo, (para que — ἵνα) me en lugar tuyo
+  Griego: ROOT base: finite verb 03 projected to NBLA 01-02
+  NBLA: ==Hubiera querido== retenerlo conmigo,
 - C2
-  Griego: ἵνα ὑπὲρ σοῦ ⸂μοι διακονῇ⸃ ἐν τοῖς δεσμοῖς τοῦ εὐαγγελίου,
-  NBLA: ==sirviera== en mis prisiones por el evangelio.
+  Griego: ROOT base: finite verb 11 projected to NBLA 08-08
+  NBLA: (para que — ἵνα) me ==sirviera== en lugar tuyo en mis prisiones por el evangelio.
 
 ### Relaciones A–B
 
-- A: C1 — ==Hubiera querido== retenerlo conmigo, (para que — ἵνα) me en lugar tuyo
+- A: C1 — ==Hubiera querido== retenerlo conmigo,
   Conector: (para que — ἵνα)
-  B: C2 — ==sirviera== en mis prisiones por el evangelio.
+  B: C2 — (para que — ἵνα) me ==sirviera== en lugar tuyo en mis prisiones por el evangelio.
   Relación: C1 (ἵνα) C2
   Tipo: subordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-==Hubiera querido== retenerlo conmigo, (para que — ἵνα) me en lugar tuyo
-    ==sirviera== en mis prisiones por el evangelio.
+```text
+==Hubiera querido== retenerlo conmigo,
+    (para que — ἵνα) me ==sirviera== en lugar tuyo en mis prisiones por el evangelio.
+```
 
 ---
 
@@ -768,7 +813,7 @@ Pero no quise hacer nada sin tu consentimiento, para que tu bondad no fuera como
 
 ### NBLA Marcado
 
-(Pero — δὲ) ==no quise== hacer nada sin tu consentimiento, (para que — ἵνα) tu bondad (no — μὴ) ==fuera== (como — ὡς) por obligación, (sino — ἀλλά) por tu propia voluntad.
+(Pero — δὲ) ==no quise== hacer nada sin tu consentimiento, (para que — ἵνα) tu bondad no ==fuera== como por obligación, sino por tu propia voluntad.
 
 ### Verbos
 
@@ -791,60 +836,67 @@ Pero no quise hacer nada sin tu consentimiento, para que tu bondad no fuera como
   Marcador: (Pero — δὲ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 - Griego: ἵνα
   Normalizado: ινα
   Marcador: (para que — ἵνα)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 - Griego: μὴ
   Normalizado: μη
   Marcador: (no — μὴ)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: ὡς
   Normalizado: ως
   Marcador: (como — ὡς)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: ἀλλὰ
   Normalizado: αλλα
   Marcador: (sino — ἀλλά)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: δὲ τῆς σῆς γνώμης οὐδὲν ἠθέλησα ποιῆσαι, ἵνα μὴ ὡς κατὰ ἀνάγκην τὸ ἀγαθόν σου
-  NBLA: (Pero — δὲ) ==no quise== hacer nada tu consentimiento, (para que — ἵνα) tu bondad (no — μὴ) (como — ὡς) por obligación,
+  Griego: ROOT base: finite verb 07 projected to NBLA 02-03
+  NBLA: (Pero — δὲ) ==no quise== hacer nada sin tu consentimiento,
 - C2
-  Griego: ὡς κατὰ ἀνάγκην τὸ ἀγαθόν σου ᾖ ἀλλὰ κατὰ ἑκούσιον·
-  NBLA: ==fuera== (sino — ἀλλά) por tu propia voluntad.
+  Griego: ROOT base: finite verb 17 projected to NBLA 14-14
+  NBLA: (para que — ἵνα) tu bondad no ==fuera== como por obligación, sino por tu propia voluntad.
 
 ### Relaciones A–B
 
 - A: Filemon 1:13 C2 — contexto anterior
   Conector: (Pero — δὲ)
-  B: C1 — (Pero — δὲ) ==no quise== hacer nada tu consentimiento, (para que — ἵνα) tu bondad (no — μὴ) (como — ὡς) por obligación,
+  B: C1 — (Pero — δὲ) ==no quise== hacer nada sin tu consentimiento,
   Relación: Filemon 1:13 C2 (δὲ) C1
   Tipo: coordinante
   Estado: candidato mecánico
-- A: C1 — (Pero — δὲ) ==no quise== hacer nada tu consentimiento, (para que — ἵνα) tu bondad (no — μὴ) (como — ὡς) por obligación,
-  Conector: (como — ὡς)
-  B: C2 — ==fuera== (sino — ἀλλά) por tu propia voluntad.
-  Relación: C1 (ὡς) C2
+- A: C1 — (Pero — δὲ) ==no quise== hacer nada sin tu consentimiento,
+  Conector: (para que — ἵνα)
+  B: C2 — (para que — ἵνα) tu bondad no ==fuera== como por obligación, sino por tu propia voluntad.
+  Relación: C1 (ἵνα) C2
   Tipo: subordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-(Pero — δὲ) ==no quise== hacer nada tu consentimiento, (para que — ἵνα) tu bondad (no — μὴ) (como — ὡς) por obligación,
-    ==fuera== (sino — ἀλλά) por tu propia voluntad.
+```text
+(Pero — δὲ) ==no quise== hacer nada sin tu consentimiento,
+    (para que — ἵνα) tu bondad no ==fuera== como por obligación, sino por tu propia voluntad.
+```
 
 ---
 
@@ -883,42 +935,46 @@ Porque quizá por esto se apartó de ti por algún tiempo, para que lo volvieras
   Marcador: (Porque — γάρ)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 - Griego: ἵνα
   Normalizado: ινα
   Marcador: (para que — ἵνα)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: γὰρ διὰ τοῦτο ἐχωρίσθη πρὸς ὥραν ἵνα αἰώνιον αὐτὸν
-  NBLA: (Porque — γάρ) por esto ==se apartó de ti== por algún tiempo, (para que — ἵνα) lo para siempre,
+  Griego: ROOT base: finite verb 05 projected to NBLA 05-08
+  NBLA: (Porque — γάρ) quizá por esto ==se apartó de ti== por algún tiempo,
 - C2
-  Griego: ἵνα αἰώνιον αὐτὸν ἀπέχῃς,
-  NBLA: ==volvieras a recibir==
+  Griego: ROOT base: finite verb 11 projected to NBLA 15-17
+  NBLA: (para que — ἵνα) lo ==volvieras a recibir== para siempre,
 
 ### Relaciones A–B
 
 - A: Filemon 1:14 C2 — contexto anterior
   Conector: (Porque — γάρ)
-  B: C1 — (Porque — γάρ) por esto ==se apartó de ti== por algún tiempo, (para que — ἵνα) lo para siempre,
+  B: C1 — (Porque — γάρ) quizá por esto ==se apartó de ti== por algún tiempo,
   Relación: Filemon 1:14 C2 (γάρ) C1
   Tipo: subordinante
   Estado: candidato mecánico
-- A: C1 — (Porque — γάρ) por esto ==se apartó de ti== por algún tiempo, (para que — ἵνα) lo para siempre,
+- A: C1 — (Porque — γάρ) quizá por esto ==se apartó de ti== por algún tiempo,
   Conector: (para que — ἵνα)
-  B: C2 — ==volvieras a recibir==
+  B: C2 — (para que — ἵνα) lo ==volvieras a recibir== para siempre,
   Relación: C1 (ἵνα) C2
   Tipo: subordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-(Porque — γάρ) por esto ==se apartó de ti== por algún tiempo, (para que — ἵνα) lo para siempre,
-    ==volvieras a recibir==
+```text
+(Porque — γάρ) quizá por esto ==se apartó de ti== por algún tiempo,
+    (para que — ἵνα) lo ==volvieras a recibir== para siempre,
+```
 
 ---
 
@@ -938,7 +994,7 @@ ya no como esclavo, sino como más que un esclavo, como un hermano amado, especi
 
 ### NBLA Marcado
 
-ya no (como — ὡς) esclavo, (sino — ἀλλά) como más que un esclavo, como un hermano amado, especialmente para mí, (pero — δὲ) cuánto más para ti, (tanto como — καὶ) en la carne en el Señor.
+ya no como esclavo, sino como más que un esclavo, como un hermano amado, especialmente para mí, pero cuánto más para ti, tanto en la carne como en el Señor.
 
 ### Verbos
 
@@ -959,30 +1015,35 @@ ya no (como — ὡς) esclavo, (sino — ἀλλά) como más que un esclavo, c
   Marcador: (como — ὡς)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: ἀλλὰ
   Normalizado: αλλα
   Marcador: (sino — ἀλλά)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: δὲ
   Normalizado: δε
   Marcador: (pero — δὲ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (tanto como — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (como — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
@@ -995,7 +1056,9 @@ ya no (como — ὡς) esclavo, (sino — ἀλλά) como más que un esclavo, c
 
 ### Vista Estructural
 
+```text
 - ninguno
+```
 
 ---
 
@@ -1015,12 +1078,12 @@ Si me tienes, pues, por compañero, acéptalo como me aceptarías a mí.
 
 ### NBLA Marcado
 
-(Si — εἰ) me ==tienes,== (pues, — οὖν) por compañero, ==acéptalo aceptarías== (como — ὡς) me a mí.
+(Si — εἰ) me ==tienes,== pues, por compañero, ==acéptalo== como me aceptarías a mí.
 
 ### Verbos
 
 - ἔχεις (V-PAI-2S) [F] → ==tienes,==
-- προσλαβοῦ (V-AMD-2S) [F] → ==acéptalo aceptarías==
+- προσλαβοῦ (V-AMD-2S) [F] → ==acéptalo==
 
 ### Conectores Detectados
 
@@ -1035,43 +1098,48 @@ Si me tienes, pues, por compañero, acéptalo como me aceptarías a mí.
   Marcador: (Si — εἰ)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 - Griego: οὖν
   Normalizado: ουν
   Marcador: (pues, — οὖν)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: ὡς
   Normalizado: ως
   Marcador: (como — ὡς)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: οὖν με ἔχεις κοινωνόν,
-  NBLA: me ==tienes,== (pues, — οὖν) por compañero,
+  Griego: ROOT base: finite verb 04 projected to NBLA 03-03
+  NBLA: (Si — εἰ) me ==tienes,== pues, por compañero,
 - C2
-  Griego: κοινωνόν, προσλαβοῦ αὐτὸν ὡς ἐμέ.
-  NBLA: ==acéptalo aceptarías== (como — ὡς) me a mí.
+  Griego: ROOT base: finite verb 06 projected to NBLA 07-10
+  NBLA: ==acéptalo== como me aceptarías a mí.
 
 ### Relaciones A–B
 
 - A: Filemon 1:15 C2 — contexto anterior
-  Conector: (pues, — οὖν)
-  B: C1 — me ==tienes,== (pues, — οὖν) por compañero,
-  Relación: Filemon 1:15 C2 (οὖν) C1
+  Conector: (Si — εἰ)
+  B: C1 — (Si — εἰ) me ==tienes,== pues, por compañero,
+  Relación: Filemon 1:15 C2 (εἰ) C1
   Tipo: subordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-me ==tienes,== (pues, — οὖν) por compañero,
+```text
+(Si — εἰ) me ==tienes,== pues, por compañero,
 
-==acéptalo aceptarías== (como — ὡς) me a mí.
+==acéptalo== como me aceptarías a mí.
+```
 
 ---
 
@@ -1091,7 +1159,7 @@ Y si te ha perjudicado en alguna forma, o te debe algo, cárgalo a mi cuenta.
 
 ### NBLA Marcado
 
-(Y — δὲ) (si — εἰ) te ==ha perjudicado== en alguna forma, o ==te debe algo,== ==cárgalo== a mi cuenta.
+(Y — δὲ) si te ==ha perjudicado== en alguna forma, o ==te debe algo,== ==cárgalo== a mi cuenta.
 
 ### Verbos
 
@@ -1111,42 +1179,46 @@ Y si te ha perjudicado en alguna forma, o te debe algo, cárgalo a mi cuenta.
   Marcador: (si — εἰ)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: δέ
   Normalizado: δε
   Marcador: (Y — δὲ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: δέ τι ἠδίκησέν σε ἢ
-  NBLA: (Y — δὲ) te ==ha perjudicado== en alguna forma, o
+  Griego: ROOT base: finite verb 04 projected to NBLA 04-05
+  NBLA: (Y — δὲ) si te ==ha perjudicado== en alguna forma, o
 - C2
-  Griego: σε ἢ ὀφείλει, τοῦτο ἐμοὶ
-  NBLA: ==te debe algo,== ==cárgalo== a mi cuenta.
+  Griego: ROOT base: finite verb 07 projected to NBLA 10-12
+  NBLA: ==te debe algo,==
 - C3
-  Griego: τοῦτο ἐμοὶ ⸀ἐλλόγα·
-  NBLA: 
+  Griego: ROOT base: finite verb 10 projected to NBLA 13-13
+  NBLA: ==cárgalo== a mi cuenta.
 
 ### Relaciones A–B
 
 - A: Filemon 1:17 C2 — contexto anterior
   Conector: (Y — δὲ)
-  B: C1 — (Y — δὲ) te ==ha perjudicado== en alguna forma, o
+  B: C1 — (Y — δὲ) si te ==ha perjudicado== en alguna forma, o
   Relación: Filemon 1:17 C2 (δὲ) C1
   Tipo: coordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-(Y — δὲ) te ==ha perjudicado== en alguna forma, o
+```text
+(Y — δὲ) si te ==ha perjudicado== en alguna forma, o
 
-==te debe algo,== ==cárgalo== a mi cuenta.
+==te debe algo,==
 
-
+==cárgalo== a mi cuenta.
+```
 
 ---
 
@@ -1166,7 +1238,7 @@ Yo, Pablo, escribo esto con mi propia mano. Yo lo pagaré (por no decirte que au
 
 ### NBLA Marcado
 
-Yo, Pablo, ==escribo esto== con mi propia mano. Yo ==lo pagaré== ((por — ἵνα) (no — μὴ) ==decirte== (que — ὅτι) (aun — καὶ) tú mismo te me ==debes== a mí).
+Yo, Pablo, ==escribo esto== con mi propia mano. Yo ==lo pagaré== ((por — ἵνα) no ==decirte== que (aun — καὶ) tú mismo te me ==debes== a mí).
 
 ### Verbos
 
@@ -1189,64 +1261,70 @@ Yo, Pablo, ==escribo esto== con mi propia mano. Yo ==lo pagaré== ((por — ἵ�
   Marcador: ((por — ἵνα)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 - Griego: μὴ
   Normalizado: μη
   Marcador: (no — μὴ)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: ὅτι
   Normalizado: οτι
   Marcador: (que — ὅτι)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (aun — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ
-  NBLA: Yo, Pablo, ==escribo esto== con mi propia mano. Yo
+  Griego: ROOT base: finite verb 03 projected to NBLA 03-04
+  NBLA: ==escribo esto== con mi propia mano. Yo
 - C2
-  Griego: τῇ ἐμῇ χειρί, ἐγὼ ἀποτίσω· ἵνα μὴ
-  NBLA: ==lo pagaré== ((por — ἵνα) (no — μὴ)
+  Griego: ROOT base: finite verb 08 projected to NBLA 10-11
+  NBLA: ==lo pagaré==
 - C3
-  Griego: μὴ λέγω σοι ὅτι καὶ σεαυτόν μοι
-  NBLA: ==decirte== (que — ὅτι) (aun — καὶ) tú mismo te me a mí).
+  Griego: ROOT base: finite verb 11 projected to NBLA 14-14
+  NBLA: ((por — ἵνα) no ==decirte== que
 - C4
-  Griego: καὶ σεαυτόν μοι προσοφείλεις.
-  NBLA: ==debes==
+  Griego: ROOT base: finite verb 17 projected to NBLA 21-21
+  NBLA: (aun — καὶ) tú mismo te me ==debes== a mí).
 
 ### Relaciones A–B
 
-- A: C2 — ==lo pagaré== ((por — ἵνα) (no — μὴ)
-  Conector: (no — μὴ)
-  B: C3 — ==decirte== (que — ὅτι) (aun — καὶ) tú mismo te me a mí).
-  Relación: C2 (μὴ) C3
+- A: C2 — ==lo pagaré==
+  Conector: ((por — ἵνα)
+  B: C3 — ((por — ἵνα) no ==decirte== que
+  Relación: C2 (ἵνα) C3
   Tipo: subordinante
   Estado: candidato mecánico
-- A: C3 — ==decirte== (que — ὅτι) (aun — καὶ) tú mismo te me a mí).
+- A: C3 — ((por — ἵνα) no ==decirte== que
   Conector: (aun — καὶ)
-  B: C4 — ==debes==
+  B: C4 — (aun — καὶ) tú mismo te me ==debes== a mí).
   Relación: C3 (καὶ) C4
   Tipo: coordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-Yo, Pablo, ==escribo esto== con mi propia mano. Yo
+```text
+==escribo esto== con mi propia mano. Yo
 
-==lo pagaré== ((por — ἵνα) (no — μὴ)
-    ==decirte== (que — ὅτι) (aun — καὶ) tú mismo te me a mí).
+==lo pagaré==
+    ((por — ἵνα) no ==decirte== que
 
-==debes==
+(aun — καὶ) tú mismo te me ==debes== a mí).
+```
 
 ---
 
@@ -1284,10 +1362,10 @@ Sí, hermano, permíteme ==disfrutar este beneficio== de ti en el Señor. ==Recr
 ### Cláusulas
 
 - C1
-  Griego: ναί, ἀδελφέ, ἐγώ σου ὀναίμην ἐν κυρίῳ·
+  Griego: ROOT base: finite verb 05 projected to NBLA 04-06
   NBLA: Sí, hermano, permíteme ==disfrutar este beneficio== de ti en el Señor.
 - C2
-  Griego: ἐν κυρίῳ· ἀνάπαυσόν μου τὰ σπλάγχνα ἐν ⸀Χριστῷ.
+  Griego: ROOT base: finite verb 08 projected to NBLA 12-12
   NBLA: ==Recrea== mi corazón en Cristo.
 
 ### Relaciones A–B
@@ -1296,9 +1374,11 @@ Sí, hermano, permíteme ==disfrutar este beneficio== de ti en el Señor. ==Recr
 
 ### Vista Estructural
 
+```text
 Sí, hermano, permíteme ==disfrutar este beneficio== de ti en el Señor.
 
 ==Recrea== mi corazón en Cristo.
+```
 
 ---
 
@@ -1318,7 +1398,7 @@ Te escribo confiado en tu obediencia, sabiendo que harás aún más de lo que di
 
 ### NBLA Marcado
 
-Te ==escribo== confiado en tu obediencia, sabiendo (que — ὅτι) ==harás== (aún — καὶ) más de lo que ==digo.==
+Te ==escribo== confiado en tu obediencia, sabiendo que ==harás== (aún — καὶ) más de lo que ==digo.==
 
 ### Verbos
 
@@ -1340,42 +1420,46 @@ Te ==escribo== confiado en tu obediencia, sabiendo (que — ὅτι) ==harás== 
   Marcador: (que — ὅτι)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (aún — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: πεποιθὼς τῇ ὑπακοῇ σου ἔγραψά σοι, εἰδὼς ὅτι καὶ ὑπὲρ ⸀ἃ
-  NBLA: Te ==escribo== confiado en tu obediencia, sabiendo (que — ὅτι) (aún — καὶ) más de lo que
+  Griego: ROOT base: finite verb 05 projected to NBLA 02-02
+  NBLA: ==escribo== confiado en tu obediencia, sabiendo que
 - C2
-  Griego: καὶ ὑπὲρ ⸀ἃ λέγω
-  NBLA: ==digo.==
-- C3
-  Griego: ποιήσεις.
+  Griego: ROOT base: finite verb 13 projected to NBLA 09-09
   NBLA: ==harás==
+- C3
+  Griego: ROOT base: finite verb 12 projected to NBLA 15-15
+  NBLA: (aún — καὶ) más de lo que ==digo.==
 
 ### Relaciones A–B
 
-- A: C1 — Te ==escribo== confiado en tu obediencia, sabiendo (que — ὅτι) (aún — καὶ) más de lo que
+- A: C2 — ==harás==
   Conector: (aún — καὶ)
-  B: C2 — ==digo.==
-  Relación: C1 (καὶ) C2
+  B: C3 — (aún — καὶ) más de lo que ==digo.==
+  Relación: C2 (καὶ) C3
   Tipo: coordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-Te ==escribo== confiado en tu obediencia, sabiendo (que — ὅτι) (aún — καὶ) más de lo que
-
-==digo.==
+```text
+==escribo== confiado en tu obediencia, sabiendo que
 
 ==harás==
+
+(aún — καὶ) más de lo que ==digo.==
+```
 
 ---
 
@@ -1395,7 +1479,7 @@ Y al mismo tiempo, prepárame también alojamiento, pues espero que por las orac
 
 ### NBLA Marcado
 
-(Y — δὲ) al mismo tiempo, ==prepárame== (también — καὶ) alojamiento, (pues — γάρ) ==espero== (que — ὅτι) por las oraciones de ustedes les ==seré concedido.==
+(Y — δὲ) al mismo tiempo, ==prepárame== también alojamiento, pues ==espero== (que — ὅτι) por las oraciones de ustedes les ==seré concedido.==
 
 ### Verbos
 
@@ -1417,59 +1501,65 @@ Y al mismo tiempo, prepárame también alojamiento, pues espero que por las orac
   Marcador: (Y — δὲ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 - Griego: καὶ
   Normalizado: και
   Marcador: (también — καὶ)
   Presente en NBLA: sí
   Tipo: coordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: γὰρ
   Normalizado: γαρ
   Marcador: (pues — γάρ)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: no
   Estado: detectado mecánicamente
 - Griego: ὅτι
   Normalizado: οτι
   Marcador: (que — ὅτι)
   Presente en NBLA: sí
   Tipo: subordinante
+  Estructural: sí
   Estado: detectado mecánicamente
 
 ### Cláusulas
 
 - C1
-  Griego: καὶ ἑτοίμαζέ μοι ξενίαν,
-  NBLA: ==prepárame== (también — καὶ) alojamiento,
+  Griego: ROOT base: finite verb 04 projected to NBLA 05-05
+  NBLA: (Y — δὲ) al mismo tiempo, ==prepárame== también alojamiento, pues
 - C2
-  Griego: μοι ξενίαν, ἐλπίζω γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν
-  NBLA: (pues — γάρ) ==espero== (que — ὅτι) por las oraciones de ustedes
+  Griego: ROOT base: finite verb 07 projected to NBLA 09-09
+  NBLA: ==espero==
 - C3
-  Griego: ὅτι διὰ τῶν προσευχῶν ὑμῶν χαρισθήσομαι ὑμῖν.
-  NBLA: les ==seré concedido.==
+  Griego: ROOT base: finite verb 14 projected to NBLA 17-18
+  NBLA: (que — ὅτι) por las oraciones de ustedes les ==seré concedido.==
 
 ### Relaciones A–B
 
 - A: Filemon 1:21 C3 — contexto anterior
-  Conector: (también — καὶ)
-  B: C1 — ==prepárame== (también — καὶ) alojamiento,
-  Relación: Filemon 1:21 C3 (καὶ) C1
+  Conector: (Y — δὲ)
+  B: C1 — (Y — δὲ) al mismo tiempo, ==prepárame== también alojamiento, pues
+  Relación: Filemon 1:21 C3 (δὲ) C1
   Tipo: coordinante
   Estado: candidato mecánico
-- A: C2 — (pues — γάρ) ==espero== (que — ὅτι) por las oraciones de ustedes
+- A: C2 — ==espero==
   Conector: (que — ὅτι)
-  B: C3 — les ==seré concedido.==
+  B: C3 — (que — ὅτι) por las oraciones de ustedes les ==seré concedido.==
   Relación: C2 (ὅτι) C3
   Tipo: subordinante
   Estado: candidato mecánico
 
 ### Vista Estructural
 
-==prepárame== (también — καὶ) alojamiento,
+```text
+(Y — δὲ) al mismo tiempo, ==prepárame== también alojamiento, pues
 
-(pues — γάρ) ==espero== (que — ὅτι) por las oraciones de ustedes
-    les ==seré concedido.==
+==espero==
+    (que — ὅτι) por las oraciones de ustedes les ==seré concedido.==
+```
 
 ---
 
@@ -1506,7 +1596,7 @@ Te saluda Epafras, mi compañero de prisión en Cristo Jesús;
 ### Cláusulas
 
 - C1
-  Griego: ⸀Ἀσπάζεταί σε Ἐπαφρᾶς ὁ συναιχμάλωτός μου ἐν Χριστῷ Ἰησοῦ,
+  Griego: ROOT base: finite verb 01 projected to NBLA 01-02
   NBLA: ==Te saluda== Epafras, mi compañero de prisión en Cristo Jesús;
 
 ### Relaciones A–B
@@ -1515,7 +1605,9 @@ Te saluda Epafras, mi compañero de prisión en Cristo Jesús;
 
 ### Vista Estructural
 
+```text
 ==Te saluda== Epafras, mi compañero de prisión en Cristo Jesús;
+```
 
 ---
 
@@ -1559,7 +1651,9 @@ también Marcos, Aristarco, Demas y Lucas, mis colaboradores.
 
 ### Vista Estructural
 
+```text
 - ninguno
+```
 
 ---
 
@@ -1603,6 +1697,8 @@ La gracia del Señor Jesucristo sea con el espíritu de ustedes.
 
 ### Vista Estructural
 
+```text
 - ninguno
+```
 
 ---
