@@ -2,260 +2,217 @@
   "book": "filemon",
   "chapter": 1,
   "verse": 1,
-
-  "reference": "Filemón 1:1",
-
+  "reference": "Filemon 1:1",
   "columns": [
     {
       "column": 1,
-
-      "nbla": "Pablo",
-
+      "nbla_idx": "01,02",
+      "nbla": "Pablo,",
       "greek": "Παῦλος",
-
-      "greek_tokens": ["01"],
-
-      "translit": "Paulos",
-
-      "lemma": "παῦλος",
-
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "Παῦλος",
       "rmac": "N-NSM",
-
-      "strongs": "G3972"
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----NSM-"
     },
-
     {
       "column": 2,
-
+      "nbla_idx": "03",
       "nbla": "prisionero",
-
       "greek": "δέσμιος",
-
-      "greek_tokens": ["02"],
-
-      "translit": "desmios",
-
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
       "lemma": "δέσμιος",
-
-      "rmac": "A-NSM",
-
-      "strongs": "G1198"
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----NSM-"
     },
-
     {
       "column": 3,
-
+      "nbla_idx": "04,05",
       "nbla": "de Cristo",
-
       "greek": "Χριστοῦ",
-
-      "greek_tokens": ["03"],
-
-      "translit": "Christou",
-
-      "lemma": "χριστός",
-
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "Χριστός",
       "rmac": "N-GSM",
-
-      "strongs": "G5547"
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----GSM-"
     },
-
     {
       "column": 4,
-
-      "nbla": "Jesús",
-
+      "nbla_idx": "06",
+      "nbla": "Jesús,",
       "greek": "Ἰησοῦ",
-
-      "greek_tokens": ["04"],
-
-      "translit": "Iēsou",
-
-      "lemma": "ἰησοῦς",
-
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "Ἰησοῦς",
       "rmac": "N-GSM",
-
-      "strongs": "G2424"
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----GSM-"
     },
-
     {
       "column": 5,
-
+      "nbla_idx": "07",
       "nbla": "y",
-
       "greek": "καὶ",
-
-      "greek_tokens": ["05"],
-
-      "translit": "kai",
-
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
       "lemma": "καί",
-
       "rmac": "CONJ",
-
-      "strongs": "G2532"
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
     },
-
     {
       "column": 6,
-
-      "nbla": "Timoteo",
-
-      "greek": "Τιμόθεος",
-
-      "greek_tokens": ["06"],
-
-      "translit": "Timotheos",
-
-      "lemma": "τιμόθεος",
-
-      "rmac": "N-NSM",
-
-      "strongs": "G5095"
+      "nbla_idx": "08",
+      "nbla": "el",
+      "greek": "ὁ",
+      "greek_tokens": [
+        "07"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-NSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RA----NSM-"
     },
-
     {
       "column": 7,
-
-      "nbla": "el",
-
-      "greek": "ὁ",
-
-      "greek_tokens": ["07"],
-
-      "translit": "ho",
-
-      "lemma": "ὁ",
-
-      "rmac": "T-NSM",
-
-      "strongs": "G3588"
+      "nbla_idx": "09",
+      "nbla": "hermano",
+      "greek": "ἀδελφὸς",
+      "greek_tokens": [
+        "08"
+      ],
+      "translit": "",
+      "lemma": "ἀδελφός",
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----NSM-"
     },
-
     {
       "column": 8,
-
-      "nbla": "hermano",
-
-      "greek": "ἀδελφὸς",
-
-      "greek_tokens": ["08"],
-
-      "translit": "adelphos",
-
-      "lemma": "ἀδελφός",
-
+      "nbla_idx": "10",
+      "nbla": "Timoteo:",
+      "greek": "Τιμόθεος",
+      "greek_tokens": [
+        "06"
+      ],
+      "translit": "",
+      "lemma": "Τιμόθεος",
       "rmac": "N-NSM",
-
-      "strongs": "G80"
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----NSM-"
     },
-
     {
       "column": 9,
-
-      "nbla": "a Filemón",
-
+      "nbla_idx": "11,12",
+      "nbla": "A Filemón",
       "greek": "Φιλήμονι",
-
-      "greek_tokens": ["09"],
-
-      "translit": "Philēmoni",
-
-      "lemma": "φιλήμων",
-
+      "greek_tokens": [
+        "09"
+      ],
+      "translit": "",
+      "lemma": "Φιλήμων",
       "rmac": "N-DSM",
-
-      "strongs": "G5371"
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----DSM-"
     },
-
     {
       "column": 10,
-
+      "nbla_idx": "13",
       "nbla": "nuestro",
-
-      "greek": "",
-
-      "greek_tokens": [],
-
+      "greek": "ἡμῶν",
+      "greek_tokens": [
+        "14"
+      ],
       "translit": "",
-
-      "lemma": "",
-
-      "rmac": "",
-
-      "strongs": ""
+      "lemma": "ἐγώ",
+      "rmac": "P-GP",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RP----GP--"
     },
-
     {
       "column": 11,
-
+      "nbla_idx": "14",
       "nbla": "amado",
-
       "greek": "ἀγαπητῷ",
-
-      "greek_tokens": ["10"],
-
-      "translit": "agapētō",
-
+      "greek_tokens": [
+        "11"
+      ],
+      "translit": "",
       "lemma": "ἀγαπητός",
-
       "rmac": "A-DSM",
-
-      "strongs": "G27"
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "A-----DSM-"
     },
-
     {
       "column": 12,
-
+      "nbla_idx": "15",
       "nbla": "hermano",
-
-      "greek": "",
-
-      "greek_tokens": [],
-
+      "greek": "τῷ",
+      "greek_tokens": [
+        "10"
+      ],
       "translit": "",
-
-      "lemma": "",
-
-      "rmac": "",
-
-      "strongs": ""
+      "lemma": "ὁ",
+      "rmac": "T-DSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----DSM-"
     },
-
     {
       "column": 13,
-
+      "nbla_idx": "16",
       "nbla": "y",
-
       "greek": "καὶ",
-
-      "greek_tokens": ["11"],
-
-      "translit": "kai",
-
+      "greek_tokens": [
+        "12"
+      ],
+      "translit": "",
       "lemma": "καί",
-
       "rmac": "CONJ",
-
-      "strongs": "G2532"
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
     },
-
     {
       "column": 14,
-
+      "nbla_idx": "17",
       "nbla": "colaborador,",
-
       "greek": "συνεργῷ",
-
-      "greek_tokens": ["12"],
-
-      "translit": "synergō",
-
+      "greek_tokens": [
+        "13"
+      ],
+      "translit": "",
       "lemma": "συνεργός",
-
-      "rmac": "N-DSM",
-
-      "strongs": "G4904"
+      "rmac": "A-DSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "A-----DSM-"
     }
   ]
 }

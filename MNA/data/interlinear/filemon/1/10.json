@@ -1,0 +1,188 @@
+{
+  "book": "filemon",
+  "chapter": 1,
+  "verse": 10,
+  "reference": "Filemon 1:10",
+  "columns": [
+    {
+      "column": 1,
+      "nbla_idx": "01,02",
+      "nbla": "te ruego",
+      "greek": "παρακαλῶ",
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "παρακαλέω",
+      "rmac": "V-PAI-1S",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-1PAI-S--"
+    },
+    {
+      "column": 2,
+      "nbla_idx": "01",
+      "nbla": "te",
+      "greek": "σε",
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
+      "lemma": "σύ",
+      "rmac": "P-AS",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RP----AS--"
+    },
+    {
+      "column": 3,
+      "nbla_idx": "03",
+      "nbla": "por",
+      "greek": "περὶ",
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "περί",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 4,
+      "nbla_idx": "04",
+      "nbla": "mi",
+      "greek": "τοῦ",
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-GSN",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----GSN-"
+    },
+    {
+      "column": 5,
+      "nbla_idx": "04",
+      "nbla": "mi",
+      "greek": "ἐμοῦ",
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
+      "lemma": "ἐμός",
+      "rmac": "A-GSN",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "A-----GSN-"
+    },
+    {
+      "column": 6,
+      "nbla_idx": "05",
+      "nbla": "hijo",
+      "greek": "τέκνου,",
+      "greek_tokens": [
+        "06"
+      ],
+      "translit": "",
+      "lemma": "τέκνον",
+      "rmac": "N-GSN",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----GSN-"
+    },
+    {
+      "column": 7,
+      "nbla_idx": "06",
+      "nbla": "Onésimo,",
+      "greek": "Ὀνήσιμον,",
+      "greek_tokens": [
+        "12"
+      ],
+      "translit": "",
+      "lemma": "Ὀνήσιμος",
+      "rmac": "N-ASM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----ASM-"
+    },
+    {
+      "column": 8,
+      "nbla_idx": "07,08",
+      "nbla": "a quien",
+      "greek": "ὃν",
+      "greek_tokens": [
+        "07"
+      ],
+      "translit": "",
+      "lemma": "ὅς",
+      "rmac": "RR----ASM-",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RR----ASM-"
+    },
+    {
+      "column": 9,
+      "nbla_idx": "09,10",
+      "nbla": "he engendrado",
+      "greek": "ἐγέννησα",
+      "greek_tokens": [
+        "08"
+      ],
+      "translit": "",
+      "lemma": "γεννάω",
+      "rmac": "V-AAI-1S",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-1AAI-S--"
+    },
+    {
+      "column": 10,
+      "nbla_idx": "11",
+      "nbla": "en",
+      "greek": "ἐν",
+      "greek_tokens": [
+        "09"
+      ],
+      "translit": "",
+      "lemma": "ἐν",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 11,
+      "nbla_idx": "12",
+      "nbla": "mis",
+      "greek": "τοῖς",
+      "greek_tokens": [
+        "10"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-DPM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----DPM-"
+    },
+    {
+      "column": 12,
+      "nbla_idx": "13",
+      "nbla": "prisiones;",
+      "greek": "⸀δεσμοῖς",
+      "greek_tokens": [
+        "11"
+      ],
+      "translit": "",
+      "lemma": "δεσμός",
+      "rmac": "N-DPM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----DPM-"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "connectors": {
+    "γάρ": {
+      "display": "γάρ",
+      "default_nbla": "porque/pues",
+      "type": "subordinating",
+      "category": "reason_explanation",
+      "direction": "backward",
+      "relationship": "B explains or gives the reason for A",
+      "structure_pattern": "A ← B",
+      "roots_function": "RAZÓN",
+      "indent_b": true,
+      "notes": "Usually points backward. The γάρ-clause normally explains, supports, or gives the reason for the prior statement."
+    },
+
+    "ὅτι": {
+      "display": "ὅτι",
+      "default_nbla": "que/porque",
+      "type": "subordinating",
+      "category": "content_or_reason",
+      "direction": "backward_or_forward",
+      "relationship": "B may give content or reason connected to A",
+      "structure_pattern": "A ← B",
+      "roots_function": "CONTENIDO/RAZÓN",
+      "indent_b": true,
+      "notes": "Can introduce content or reason. Must be evaluated by immediate context."
+    },
+
+    "ἵνα": {
+      "display": "ἵνα",
+      "default_nbla": "para que",
+      "type": "subordinating",
+      "category": "purpose_result",
+      "direction": "forward",
+      "relationship": "B expresses the purpose or intended result of A",
+      "structure_pattern": "A → B",
+      "roots_function": "PROPÓSITO/RESULTADO",
+      "indent_b": true,
+      "notes": "Normally introduces a dependent purpose/result clause."
+    },
+
+    "εἰ": {
+      "display": "εἰ",
+      "default_nbla": "si",
+      "type": "subordinating",
+      "category": "condition",
+      "direction": "forward",
+      "relationship": "B states the condition related to A",
+      "structure_pattern": "B → A",
+      "roots_function": "CONDICIÓN",
+      "indent_b": true,
+      "notes": "Introduces a conditional clause. The condition may precede or follow the main clause."
+    },
+
+    "καί": {
+      "display": "καί",
+      "default_nbla": "y/también",
+      "type": "coordinating",
+      "category": "coordination_addition",
+      "direction": "parallel",
+      "relationship": "Joins parallel items, clauses, or developments",
+      "structure_pattern": "A ↔ B",
+      "roots_function": "COORDINACIÓN",
+      "indent_b": false,
+      "notes": "Usually coordinates rather than subordinates. Does not automatically indent B."
+    },
+
+    "δέ": {
+      "display": "δέ",
+      "default_nbla": "pero/y/ahora",
+      "type": "coordinating",
+      "category": "development_contrast",
+      "direction": "parallel_or_backward",
+      "relationship": "B develops, contrasts, or continues from A",
+      "structure_pattern": "A ⇢ B",
+      "roots_function": "DESARROLLO/CONTRASTE",
+      "indent_b": false,
+      "notes": "Usually marks development or mild contrast. It does not normally create subordination by itself."
+    },
+
+    "ἀλλά": {
+      "display": "ἀλλά",
+      "default_nbla": "pero/sino",
+      "type": "coordinating",
+      "category": "strong_contrast",
+      "direction": "backward",
+      "relationship": "B contrasts with or replaces A",
+      "structure_pattern": "A ↔ B",
+      "roots_function": "CONTRASTE",
+      "indent_b": false,
+      "notes": "Marks stronger contrast than δέ."
+    },
+
+    "οὖν": {
+      "display": "οὖν",
+      "default_nbla": "por tanto/entonces",
+      "type": "inferential",
+      "category": "inference_conclusion",
+      "direction": "backward",
+      "relationship": "B draws an inference or conclusion from A",
+      "structure_pattern": "A → B",
+      "roots_function": "RESULTADO/CONCLUSIÓN",
+      "indent_b": false,
+      "notes": "Points back to prior material and moves forward with an inference."
+    },
+
+    "ὡς": {
+      "display": "ὡς",
+      "default_nbla": "como",
+      "type": "subordinating",
+      "category": "comparison_manner",
+      "direction": "backward_or_forward",
+      "relationship": "B expresses comparison, manner, or correspondence",
+      "structure_pattern": "A ↔ B",
+      "roots_function": "COMPARACIÓN/MANERA",
+      "indent_b": true,
+      "notes": "Function depends heavily on context."
+    }
+  }
+}

@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
+
 import json
+import sys
 from pathlib import Path
-
-
-VERSE_PATH = Path("data/interlinear/filemon/1/1.json")
 
 
 ROWS = [
@@ -10,6 +10,7 @@ ROWS = [
     ("Greek", "greek"),
     ("Translit", "translit"),
     ("Lemma", "lemma"),
+    ("MorphGNT", "morphgnt"),
     ("RMAC", "rmac"),
     ("Strong’s", "strongs"),
 ]
@@ -24,11 +25,7 @@ def compute_widths(columns):
     widths = []
 
     for column in columns:
-        values = [
-            str(column.get(field, ""))
-            for _, field in ROWS
-        ]
-
+        values = [str(column.get(field, "")) for _, field in ROWS]
         width = max(len(v) for v in values)
         widths.append(width + 2)
 
@@ -51,7 +48,6 @@ def render(verse):
     print()
 
     columns = verse["columns"]
-
     widths = compute_widths(columns)
 
     for label, field in ROWS:
@@ -61,7 +57,13 @@ def render(verse):
 
 
 def main():
-    verse = load_verse(VERSE_PATH)
+    if len(sys.argv) != 2:
+        print("Usage:")
+        print("  python3 scripts/render_interlinear.py data/interlinear/filemon/1/1.json")
+        sys.exit(2)
+
+    verse_path = Path(sys.argv[1])
+    verse = load_verse(verse_path)
     render(verse)
 
 
