@@ -170,11 +170,12 @@ def is_relative_pair(first: Clause, second: Clause) -> bool:
 
 
 def is_apposition_pair(first: Clause, second: Clause) -> bool:
-    surface = norm(second.gloss)
-
+    # Filemon 1:12: ἀνέπεμψά ... ἔστιν = explanatory/appositional "es decir".
+    # The verb column itself may only carry NBLA "es", so the detector must use
+    # the Greek clause pair instead of requiring "es decir" on the finite verb token.
     return (
-        has_stem(second, ["ειμι", "εστι"])
-        and "es decir" in surface
+        has_stem(first, ["αναπεμπ", "ανεπεμψ"])
+        and has_stem(second, ["ειμι", "εστι"])
     )
 
 
