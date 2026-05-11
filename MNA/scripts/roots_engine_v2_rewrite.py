@@ -1,7 +1,28 @@
 #!/usr/bin/env python3
 
+import json
+import sys
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import List, Optional
+
+FINITE_PREFIXES = (
+    "V-PAI",
+    "V-AAI",
+    "V-FAI",
+    "V-IMI",
+    "V-PMI",
+    "V-API",
+    "V-XPI",
+    "V-AAS",
+    "V-PAS",
+    "V-AMS",
+    "V-AMO",
+    "V-FPI",
+    "V-AAD",
+    "V-AMD",
+    "V-PAD",
+)
 
 
 @dataclass
@@ -31,17 +52,6 @@ class Clause:
         return f"{prefix}. {self.surface()}"
 
 
-@dataclass
-class Relation:
-    rid: str
-    connector: str
-    relation: str
-    direction: str
-    source_clause: str
-    target_clause: str
-    subordinate: bool = False
-
-
 class VisibleStructureRenderer:
 
     def __init__(self):
@@ -63,51 +73,112 @@ class VisibleStructureRenderer:
         return "\n".join(self.lines)
 
 
-def build_relative_embedding(
-    parent: Clause,
-    child: Clause,
-):
-    child.embedded_label = (
-        "REL [pronombre relativo griego]"
-    )
-
+def build_relative_embedding(parent: Clause, child: Clause):
+    child.embedded_label = "REL [pronombre relativo griego]"
     parent.children.append(child)
 
 
-def build_apposition_embedding(
-    parent: Clause,
-    child: Clause,
-):
-    child.embedded_label = (
-        "APP [explicación / es decir]"
-    )
-
+def build_apposition_embedding(parent: Clause, child: Clause):
+    child.embedded_label = "APP [explicación / es decir]"
     parent.children.append(child)
 
 
-def demo():
+def is_finite_rmac(rmac: str) -> bool:
 
-    c1 = Clause(
-        cid="C1",
-        greek="παρακαλῶ",
-        gloss="te ruego",
-        mood="indicative",
-    )
+    if not rmac:
+        return False
 
-    c2 = Clause(
-        cid="C2",
-        greek="ἐγέννησα",
-        gloss="he engendrado",
-        mood="indicative",
-    )
+    for prefix in FINITE_PREFIXES:
+        if rmac.startswith(prefix):
+            return True
 
-    build_relative_embedding(c1, c2)
+    return False
+
+
+def load_json(path: str):
+
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def build_clauses(data) -> List[Clause]:
+
+    clauses = []
+    clause_num = 1
+
+    for col in data["columns"]:
+
+        rmac = col.get("rmac", "")
+
+        if not is_finite_rmac(rmac):
+            continue
+
+        greek = col.get("greek", "")
+        gloss = col.get("nbla", "")
+
+        is_imperative = "-M" in rmac or "IMP" in rmac
+
+        clause = Clause(
+            cid=f"C{clause_num}",
+            greek=greek,
+            gloss=gloss,
+            mood=rmac,
+            is_imperative=is_imperative,
+        )
+
+        clauses.append(clause)
+        clause_num += 1
+
+    return clauses
+
+
+def apply_simple_embeddings(clauses: List[Clause]):
+
+    if len(clauses) < 2:
+        return clauses
+
+    first = clauses[0]
+    second = clauses[1]
+
+    if "παρακαλ" in first.greek and "γενν" in second.greek:
+        build_relative_embedding(first, second)
+        return [first]
+
+    if "ἀνέπεμψ" in first.greek and "ἔστιν" in second.greek:
+        build_apposition_embedding(first, second)
+        return [first]
+
+    return clauses
+
+
+def render_structure(clauses: List[Clause]):
 
     renderer = VisibleStructureRenderer()
-    renderer.add_clause(c1)
 
-    print(renderer.render())
+    for clause in clauses:
+        renderer.add_clause(clause)
+
+    return renderer.render()
+
+
+def main():
+
+    if len(sys.argv) != 2:
+        print(
+            "usage: python3 roots_engine_v2_rewrite.py path/to/verse.json"
+        )
+        sys.exit(1)
+
+    path = Path(sys.argv[1])
+
+    data = load_json(path)
+
+    clauses = build_clauses(data)
+
+    clauses = apply_simple_embeddings(clauses)
+
+    print(render_structure(clauses))
 
 
 if __name__ == "__main__":
-    demo()
+    main()
