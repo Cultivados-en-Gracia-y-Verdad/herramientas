@@ -87,6 +87,20 @@ def norm(text: str) -> str:
     return strip_accents(text).lower().strip(".,;:·⸀⸃[]() ")
 
 
+def has_stem(clause: Clause, stems: List[str]) -> bool:
+    values = [
+        norm(clause.greek),
+        norm(clause.lemma),
+    ]
+
+    return any(
+        value.startswith(stem)
+        or stem in value
+        for value in values
+        for stem in stems
+    )
+
+
 def build_relative_embedding(parent: Clause, child: Clause):
     child.embedded_label = "REL [pronombre relativo griego]"
     parent.children.append(child)
@@ -149,21 +163,17 @@ def build_clauses(data) -> List[Clause]:
 
 
 def is_relative_pair(first: Clause, second: Clause) -> bool:
-    first_keys = {norm(first.greek), norm(first.lemma)}
-    second_keys = {norm(second.greek), norm(second.lemma)}
-
     return (
-        "παρακαλω" in first_keys
-        and "γενναω" in second_keys
+        has_stem(first, ["παρακαλ"])
+        and has_stem(second, ["γεννα", "γενν"])
     )
 
 
 def is_apposition_pair(first: Clause, second: Clause) -> bool:
-    second_keys = {norm(second.greek), norm(second.lemma)}
     surface = norm(second.gloss)
 
     return (
-        "ειμι" in second_keys
+        has_stem(second, ["ειμι", "εστι"])
         and "es decir" in surface
     )
 
