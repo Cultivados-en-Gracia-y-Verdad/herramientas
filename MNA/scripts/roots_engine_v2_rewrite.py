@@ -25,6 +25,10 @@ FINITE_PREFIXES = (
     "V-PAD",
 )
 
+CLAUSE_LEVEL = "clause-level"
+PHRASE_LEVEL = "phrase-level"
+DISCOURSE_LEVEL = "discourse-level"
+
 
 @dataclass
 class Clause:
@@ -35,6 +39,9 @@ class Clause:
     lemma: str = ""
     is_imperative: bool = False
     embedded_label: Optional[str] = None
+    owner_clause_id: Optional[str] = None
+    relation_type: Optional[str] = None
+    structural_level: str = CLAUSE_LEVEL
     children: List["Clause"] = field(default_factory=list)
 
     def surface(self) -> str:
@@ -75,6 +82,16 @@ class VisibleStructureRenderer:
         return "\n".join(self.lines)
 
 
+def attach_child(parent: Clause, child: Clause, relation_type: str):
+    # SINGLE OWNER RULE
+    if child.owner_clause_id is not None:
+        return
+
+    child.owner_clause_id = parent.cid
+    child.relation_type = relation_type
+    parent.children.append(child)
+
+
 def strip_accents(text: str) -> str:
     decomposed = unicodedata.normalize("NFD", text or "")
     return "".join(
@@ -104,12 +121,12 @@ def has_stem(clause: Clause, stems: List[str]) -> bool:
 
 def build_relative_embedding(parent: Clause, child: Clause):
     child.embedded_label = "REL [pronombre relativo griego]"
-    parent.children.append(child)
+    attach_child(parent, child, "relative")
 
 
 def build_apposition_embedding(parent: Clause, child: Clause):
     child.embedded_label = "APP [explicación / es decir]"
-    parent.children.append(child)
+    attach_child(parent, child, "apposition")
 
 
 def build_condition_group(main_clause: Clause, condition_members: List[Clause]):
@@ -122,7 +139,7 @@ def build_condition_group(main_clause: Clause, condition_members: List[Clause]):
         condition_members[0].embedded_label = "COND [εἰ]"
 
     for member in condition_members:
-        main_clause.children.append(member)
+        attach_child(main_clause, member, "condition")
 
 
 def is_finite_rmac(rmac: str) -> bool:
@@ -138,8 +155,6 @@ def is_finite_rmac(rmac: str) -> bool:
 
 
 def is_imperative_rmac(rmac: str) -> bool:
-    # RMAC compact verb code: V-TVM-PN, where final TVM letter M/D = imperative.
-    # Examples: V-PAD-2S, V-AAD-2S, V-AMD-2S.
     parts = (rmac or "").split("-")
 
     if len(parts) < 2:
@@ -197,9 +212,6 @@ def is_relative_pair(first: Clause, second: Clause) -> bool:
 
 
 def is_apposition_pair(first: Clause, second: Clause) -> bool:
-    # Filemon 1:12: ἀνέπεμψά ... ἔστιν = explanatory/appositional "es decir".
-    # The verb column itself may only carry NBLA "es", so the detector must use
-    # the Greek clause pair instead of requiring "es decir" on the finite verb token.
     return (
         has_stem(first, ["αναπεμπ", "ανεπεμψ"])
         and has_stem(second, ["ειμι", "εστι"])
@@ -269,7 +281,12 @@ def render_structure(clauses: List[Clause]):
 
     renderer = VisibleStructureRenderer()
 
-    for clause in clauses:
+    root_clauses = [
+        clause for clause in clauses
+        if clause.owner_clause_id is None
+    ]
+
+    for clause in root_clauses:
         renderer.add_clause(clause)
 
     return renderer.render()
