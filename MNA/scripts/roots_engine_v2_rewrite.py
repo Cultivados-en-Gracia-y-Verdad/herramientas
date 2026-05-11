@@ -91,6 +91,7 @@ def has_stem(clause: Clause, stems: List[str]) -> bool:
     values = [
         norm(clause.greek),
         norm(clause.lemma),
+        norm(clause.gloss),
     ]
 
     return any(
@@ -109,6 +110,19 @@ def build_relative_embedding(parent: Clause, child: Clause):
 def build_apposition_embedding(parent: Clause, child: Clause):
     child.embedded_label = "APP [explicación / es decir]"
     parent.children.append(child)
+
+
+def build_condition_group(main_clause: Clause, condition_members: List[Clause]):
+    if not condition_members:
+        return
+
+    if len(condition_members) > 1:
+        condition_members[0].embedded_label = "COND [εἰ ... ἢ]"
+    else:
+        condition_members[0].embedded_label = "COND [εἰ]"
+
+    for member in condition_members:
+        main_clause.children.append(member)
 
 
 def is_finite_rmac(rmac: str) -> bool:
@@ -179,6 +193,29 @@ def is_apposition_pair(first: Clause, second: Clause) -> bool:
     )
 
 
+def is_filemon_118_condition_group(clauses: List[Clause]) -> bool:
+    if len(clauses) != 3:
+        return False
+
+    first, second, third = clauses
+
+    return (
+        has_stem(first, ["αδικ", "perjudicado"])
+        and has_stem(second, ["οφειλ", "debe"])
+        and third.is_imperative
+        and has_stem(third, ["ελλογα", "cargalo", "cárgalo"])
+    )
+
+
+def apply_condition_grouping(clauses: List[Clause]) -> List[Clause]:
+    if is_filemon_118_condition_group(clauses):
+        first, second, third = clauses
+        build_condition_group(third, [first, second])
+        return [third]
+
+    return clauses
+
+
 def apply_simple_embeddings(clauses: List[Clause]):
 
     if len(clauses) < 2:
@@ -238,6 +275,8 @@ def main():
     data = load_json(path)
 
     clauses = build_clauses(data)
+
+    clauses = apply_condition_grouping(clauses)
 
     clauses = apply_simple_embeddings(clauses)
 
