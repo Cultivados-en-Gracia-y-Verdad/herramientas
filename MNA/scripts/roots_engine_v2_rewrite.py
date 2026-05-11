@@ -34,6 +34,7 @@ ALTERNATIVE_LEMMAS = {"ἤ"}
 PURPOSE_LEMMAS = {"ἵνα"}
 CONTENT_LEMMAS = {"ὅτι"}
 COORDINATION_LEMMAS = {"καί"}
+REPORTING_LEMMA_STEMS = ["λεγω", "γραφ"]
 
 
 @dataclass
@@ -99,14 +100,15 @@ class VisibleStructureRenderer:
         return "\n".join(self.lines)
 
 
-def attach_child(parent: Clause, child: Clause, relation_type: str):
+def attach_child(parent: Clause, child: Clause, relation_type: str) -> bool:
     # SINGLE OWNER RULE
     if child.owner_clause_id is not None:
-        return
+        return False
 
     child.owner_clause_id = parent.cid
     child.relation_type = relation_type
     parent.children.append(child)
+    return True
 
 
 def strip_accents(text: str) -> str:
@@ -146,6 +148,10 @@ def has_stem(clause: Clause, stems: List[str]) -> bool:
         for value in values
         for stem in stems
     )
+
+
+def is_reporting_clause(clause: Clause) -> bool:
+    return has_stem(clause, REPORTING_LEMMA_STEMS)
 
 
 def build_relative_embedding(parent: Clause, child: Clause):
@@ -307,6 +313,10 @@ def clause_after(pos: int, clauses: List[Clause]) -> Optional[Clause]:
     return None
 
 
+def next_clause_after(clause: Clause, clauses: List[Clause]) -> Optional[Clause]:
+    return clause_after(clause.greek_pos, clauses)
+
+
 def first_imperative_after(clause: Clause, clauses: List[Clause]) -> Optional[Clause]:
     started = False
 
@@ -390,6 +400,12 @@ def apply_subordinating_connectors(clauses: List[Clause], connectors: List[Conne
         if parent is None:
             continue
 
+        if connector.relation_type == "content":
+            next_clause = next_clause_after(child, clauses)
+
+            if next_clause is not None and is_reporting_clause(next_clause):
+                child = next_clause
+
         if connector.relation_type == "purpose":
             build_connector_embedding(parent, child, "PURP [ἵνα]", "purpose")
             continue
@@ -397,6 +413,27 @@ def apply_subordinating_connectors(clauses: List[Clause], connectors: List[Conne
         if connector.relation_type == "content":
             build_connector_embedding(parent, child, "CONT [ὅτι]", "content")
             continue
+
+    return clauses
+
+
+def apply_implicit_reporting_content(clauses: List[Clause]) -> List[Clause]:
+    for clause in clauses:
+        if not is_reporting_clause(clause):
+            continue
+
+        child = next_clause_after(clause, clauses)
+
+        if child is None:
+            continue
+
+        if child.owner_clause_id is not None:
+            continue
+
+        if child.is_imperative:
+            continue
+
+        build_connector_embedding(clause, child, "CONT [implícito]", "content-implicit")
 
     return clauses
 
@@ -461,6 +498,7 @@ def main():
 
     clauses = apply_condition_grouping(clauses, connectors)
     clauses = apply_subordinating_connectors(clauses, connectors)
+    clauses = apply_implicit_reporting_content(clauses)
     clauses = apply_simple_embeddings(clauses)
 
     print(render_structure(clauses))
