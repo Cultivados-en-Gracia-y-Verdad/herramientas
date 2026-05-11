@@ -35,6 +35,7 @@ PURPOSE_LEMMAS = {"ἵνα"}
 CONTENT_LEMMAS = {"ὅτι"}
 COORDINATION_LEMMAS = {"καί"}
 REPORTING_LEMMA_STEMS = ["λεγω", "γραφ"]
+REPORTING_GLOSS_STEMS = ["digo", "decir", "escrib"]
 
 
 @dataclass
@@ -162,7 +163,13 @@ def has_stem(clause: Clause, stems: List[str]) -> bool:
 
 
 def is_reporting_clause(clause: Clause) -> bool:
-    return has_stem(clause, REPORTING_LEMMA_STEMS)
+    # λέγω is not automatically a reporting verb in Spanish alignment.
+    # Example: λέγητε = "se pongan de acuerdo" in 1 Corintios 1:10.
+    # Therefore require BOTH a reporting lemma stem and a reporting Spanish surface.
+    return (
+        has_stem(clause, REPORTING_LEMMA_STEMS)
+        and any(norm(clause.gloss).startswith(stem) for stem in REPORTING_GLOSS_STEMS)
+    )
 
 
 def build_relative_embedding(parent: Clause, child: Clause):
@@ -191,6 +198,16 @@ def build_condition_group(main_clause: Clause, condition_members: List[Clause], 
 def build_connector_embedding(parent: Clause, child: Clause, label: str, relation_type: str):
     child.embedded_label = label
     attach_child(parent, child, relation_type)
+
+
+def build_purpose_group(parent: Clause, purpose_members: List[Clause]):
+    if not purpose_members:
+        return
+
+    purpose_members[0].embedded_label = "PURP [ἵνα]"
+
+    for member in purpose_members:
+        attach_child(parent, member, "purpose")
 
 
 def is_finite_rmac(rmac: str) -> bool:
@@ -356,6 +373,14 @@ def alternatives_between(start: Clause, end: Clause, connectors: List[Connector]
     )
 
 
+def clause_level_connector_between(start_pos: int, end_pos: int, connectors: List[Connector]) -> bool:
+    return any(
+        connector.level == CLAUSE_LEVEL
+        and start_pos < connector.greek_pos < end_pos
+        for connector in connectors
+    )
+
+
 def apply_condition_grouping(clauses: List[Clause], connectors: List[Connector]) -> List[Clause]:
     for connector in connectors:
         if connector.level != CLAUSE_LEVEL:
@@ -395,6 +420,32 @@ def apply_condition_grouping(clauses: List[Clause], connectors: List[Connector])
     return clauses
 
 
+def collect_purpose_members(first_child: Clause, clauses: List[Clause], connectors: List[Connector]) -> List[Clause]:
+    members = [first_child]
+    previous = first_child
+
+    for clause in clauses:
+        if clause.greek_pos <= first_child.greek_pos:
+            continue
+
+        if clause.owner_clause_id is not None:
+            continue
+
+        if clause.is_imperative:
+            break
+
+        # A new clause-level connector between the previous member and this clause
+        # starts a different embedded relation, so do not absorb it into the same
+        # purpose sibling group. Phrase-level καί/δέ remains inside the group.
+        if clause_level_connector_between(previous.greek_pos, clause.greek_pos, connectors):
+            break
+
+        members.append(clause)
+        previous = clause
+
+    return members
+
+
 def apply_subordinating_connectors(clauses: List[Clause], connectors: List[Connector]) -> List[Clause]:
     for connector in connectors:
         if connector.level != CLAUSE_LEVEL:
@@ -414,7 +465,8 @@ def apply_subordinating_connectors(clauses: List[Clause], connectors: List[Conne
             continue
 
         if connector.relation_type == "purpose":
-            build_connector_embedding(parent, child, "PURP [ἵνα]", "purpose")
+            purpose_members = collect_purpose_members(child, clauses, connectors)
+            build_purpose_group(parent, purpose_members)
             continue
 
         if connector.relation_type == "content":
