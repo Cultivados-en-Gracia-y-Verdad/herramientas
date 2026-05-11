@@ -31,6 +31,9 @@ DISCOURSE_LEVEL = "discourse-level"
 
 CONDITION_LEMMAS = {"εἰ"}
 ALTERNATIVE_LEMMAS = {"ἤ"}
+PURPOSE_LEMMAS = {"ἵνα"}
+CONTENT_LEMMAS = {"ὅτι"}
+COORDINATION_LEMMAS = {"καί"}
 
 
 @dataclass
@@ -168,6 +171,11 @@ def build_condition_group(main_clause: Clause, condition_members: List[Clause], 
         attach_child(main_clause, member, "condition")
 
 
+def build_connector_embedding(parent: Clause, child: Clause, label: str, relation_type: str):
+    child.embedded_label = label
+    attach_child(parent, child, relation_type)
+
+
 def is_finite_rmac(rmac: str) -> bool:
 
     if not rmac:
@@ -231,32 +239,31 @@ def build_clauses(data) -> List[Clause]:
     return clauses
 
 
+def connector_key(col: Dict) -> str:
+    return norm(col.get("lemma", "") or col.get("greek", ""))
+
+
 def classify_connector(col: Dict) -> Optional[Connector]:
     lemma = col.get("lemma", "")
     greek = col.get("greek", "")
     gloss = col.get("nbla", "")
     pos = greek_index(col)
-    key = norm(lemma or greek)
+    key = connector_key(col)
 
     if key in {norm(item) for item in CONDITION_LEMMAS}:
-        return Connector(
-            greek=greek,
-            lemma=lemma,
-            gloss=gloss,
-            greek_pos=pos,
-            level=CLAUSE_LEVEL,
-            relation_type="condition",
-        )
+        return Connector(greek, lemma, gloss, pos, CLAUSE_LEVEL, "condition")
+
+    if key in {norm(item) for item in PURPOSE_LEMMAS}:
+        return Connector(greek, lemma, gloss, pos, CLAUSE_LEVEL, "purpose")
+
+    if key in {norm(item) for item in CONTENT_LEMMAS}:
+        return Connector(greek, lemma, gloss, pos, CLAUSE_LEVEL, "content")
 
     if key in {norm(item) for item in ALTERNATIVE_LEMMAS}:
-        return Connector(
-            greek=greek,
-            lemma=lemma,
-            gloss=gloss,
-            greek_pos=pos,
-            level=PHRASE_LEVEL,
-            relation_type="alternative",
-        )
+        return Connector(greek, lemma, gloss, pos, PHRASE_LEVEL, "alternative")
+
+    if key in {norm(item) for item in COORDINATION_LEMMAS}:
+        return Connector(greek, lemma, gloss, pos, PHRASE_LEVEL, "coordination")
 
     return None
 
@@ -285,6 +292,11 @@ def is_apposition_pair(first: Clause, second: Clause) -> bool:
         has_stem(first, ["αναπεμπ", "ανεπεμψ"])
         and has_stem(second, ["ειμι", "εστι"])
     )
+
+
+def clause_before(pos: int, clauses: List[Clause]) -> Optional[Clause]:
+    prior = [clause for clause in clauses if clause.greek_pos < pos]
+    return prior[-1] if prior else None
 
 
 def clause_after(pos: int, clauses: List[Clause]) -> Optional[Clause]:
@@ -321,10 +333,6 @@ def alternatives_between(start: Clause, end: Clause, connectors: List[Connector]
 
 
 def apply_condition_grouping(clauses: List[Clause], connectors: List[Connector]) -> List[Clause]:
-    # General εἰ detector:
-    # εἰ introduces the first finite clause after it as B.
-    # The first imperative after the condition span is treated as A/main clause.
-    # Any non-imperative finite clauses between B and A are grouped into the condition.
     for connector in connectors:
         if connector.level != CLAUSE_LEVEL:
             continue
@@ -359,6 +367,36 @@ def apply_condition_grouping(clauses: List[Clause], connectors: List[Connector])
         has_alternative = alternatives_between(first_condition, main_clause, connectors)
 
         build_condition_group(main_clause, condition_members, has_alternative)
+
+    return clauses
+
+
+def apply_subordinating_connectors(clauses: List[Clause], connectors: List[Connector]) -> List[Clause]:
+    # Clause-level connectors only. Phrase-level καί is quarantined here.
+    for connector in connectors:
+        if connector.level != CLAUSE_LEVEL:
+            continue
+
+        if connector.relation_type == "condition":
+            continue
+
+        child = clause_after(connector.greek_pos, clauses)
+
+        if child is None:
+            continue
+
+        parent = clause_before(connector.greek_pos, clauses)
+
+        if parent is None:
+            continue
+
+        if connector.relation_type == "purpose":
+            build_connector_embedding(parent, child, "PURP [ἵνα]", "purpose")
+            continue
+
+        if connector.relation_type == "content":
+            build_connector_embedding(parent, child, "CONT [ὅτι]", "content")
+            continue
 
     return clauses
 
@@ -422,7 +460,7 @@ def main():
     connectors = build_connectors(data)
 
     clauses = apply_condition_grouping(clauses, connectors)
-
+    clauses = apply_subordinating_connectors(clauses, connectors)
     clauses = apply_simple_embeddings(clauses)
 
     print(render_structure(clauses))
