@@ -101,7 +101,6 @@ class VisibleStructureRenderer:
 
 
 def attach_child(parent: Clause, child: Clause, relation_type: str) -> bool:
-    # SINGLE OWNER RULE
     if child.owner_clause_id is not None:
         return False
 
@@ -214,7 +213,6 @@ def load_json(path: str):
 def build_clauses(data) -> List[Clause]:
 
     clauses = []
-    clause_num = 1
 
     for col in data["columns"]:
 
@@ -226,21 +224,25 @@ def build_clauses(data) -> List[Clause]:
         greek = col.get("greek", "")
         gloss = col.get("nbla", "")
         lemma = col.get("lemma", "")
-
+        greek_pos = greek_index(col)
         is_imperative = is_imperative_rmac(rmac)
 
         clause = Clause(
-            cid=f"C{clause_num}",
+            cid="",
             greek=greek,
             gloss=gloss,
             mood=rmac,
             lemma=lemma,
-            greek_pos=greek_index(col),
+            greek_pos=greek_pos,
             is_imperative=is_imperative,
         )
 
         clauses.append(clause)
-        clause_num += 1
+
+    clauses.sort(key=lambda item: item.greek_pos)
+
+    for i, clause in enumerate(clauses, start=1):
+        clause.cid = f"C{i}"
 
     return clauses
 
@@ -382,7 +384,6 @@ def apply_condition_grouping(clauses: List[Clause], connectors: List[Connector])
 
 
 def apply_subordinating_connectors(clauses: List[Clause], connectors: List[Connector]) -> List[Clause]:
-    # Clause-level connectors only. Phrase-level καί is quarantined here.
     for connector in connectors:
         if connector.level != CLAUSE_LEVEL:
             continue
@@ -399,12 +400,6 @@ def apply_subordinating_connectors(clauses: List[Clause], connectors: List[Conne
 
         if parent is None:
             continue
-
-        if connector.relation_type == "content":
-            next_clause = next_clause_after(child, clauses)
-
-            if next_clause is not None and is_reporting_clause(next_clause):
-                child = next_clause
 
         if connector.relation_type == "purpose":
             build_connector_embedding(parent, child, "PURP [ἵνα]", "purpose")
