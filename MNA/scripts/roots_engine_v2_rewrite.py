@@ -137,6 +137,19 @@ def is_finite_rmac(rmac: str) -> bool:
     return False
 
 
+def is_imperative_rmac(rmac: str) -> bool:
+    # RMAC compact verb code: V-TVM-PN, where final TVM letter M/D = imperative.
+    # Examples: V-PAD-2S, V-AAD-2S, V-AMD-2S.
+    parts = (rmac or "").split("-")
+
+    if len(parts) < 2:
+        return False
+
+    tvm = parts[1]
+
+    return tvm.endswith("M") or tvm.endswith("D")
+
+
 def load_json(path: str):
 
     with open(path, "r", encoding="utf-8") as f:
@@ -159,7 +172,7 @@ def build_clauses(data) -> List[Clause]:
         gloss = col.get("nbla", "")
         lemma = col.get("lemma", "")
 
-        is_imperative = "-M" in rmac or "-D" in rmac or "IMP" in rmac
+        is_imperative = is_imperative_rmac(rmac)
 
         clause = Clause(
             cid=f"C{clause_num}",
