@@ -69,7 +69,7 @@
 
 #### Cláusulas finitas griegas
 
-- C1. Εὐχαριστῶ (indicativo) → Doy gracias
+- C1. Εὐχαριστῶ (indicativo) → Doy gracias [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
 
 #### Conectores detectados
 
@@ -91,7 +91,7 @@ C1. ==Doy gracias== a mi Dios siempre, haciendo mención de ti en mis oraciones,
 
 #### Cláusulas finitas griegas
 
-- C1. ἔχεις (indicativo) → tienes
+- C1. ἔχεις (indicativo) → tienes [MorphGNT: V-2PAI-S--] [RMAC display: V-PAI-2S]
 
 #### Conectores detectados
 
@@ -114,7 +114,7 @@ C1. porque oigo de tu amor y de la fe que ==tienes== hacia el Señor Jesús y ha
 
 #### Cláusulas finitas griegas
 
-- C1. γένηται (subjuntivo) → llegue a ser
+- C1. γένηται (subjuntivo) → llegue a ser [MorphGNT: V-3AMS-S--] [RMAC display: V-AMS-3S]
 
 #### Conectores detectados
 
@@ -136,8 +136,8 @@ C1. Ruego que la comunión de tu fe ==llegue a ser== eficaz por el conocimiento 
 
 #### Cláusulas finitas griegas
 
-- C1. ἔσχον⸃ (indicativo) → he llegado a tener
-- C2. ἀναπέπαυται (indicativo) → han sido confortados
+- C1. ἔσχον⸃ (indicativo) → he llegado a tener [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
+- C2. ἀναπέπαυται (indicativo) → han sido confortados [MorphGNT: V-3XPI-S--] [RMAC display: V-XPI-3S]
 
 #### Conectores detectados
 
@@ -153,9 +153,9 @@ C1. Ruego que la comunión de tu fe ==llegue a ser== eficaz por el conocimiento 
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: mismo nivel
   - descripción: B da razón gramatical para A.
-  - B confirmada: C1. ἔσχον⸃ (indicativo) → he llegado a tener
+  - B confirmada: C1. ἔσχον⸃ (indicativo) → he llegado a tener [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
   - posibles A:
-    - C1. γένηται (subjuntivo) → llegue a ser
+    - C1. γένηται (subjuntivo) → llegue a ser [MorphGNT: V-3AMS-S--] [RMAC display: V-AMS-3S]
   - nota: El conector apunta hacia atrás; A puede estar en el contexto previo.
 
 - R2 | (cn3: porque — ὅτι)
@@ -164,9 +164,9 @@ C1. Ruego que la comunión de tu fe ==llegue a ser== eficaz por el conocimiento 
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: subordinada
   - descripción: B presenta contenido relacionado con A.
-  - B confirmada: C2. ἀναπέπαυται (indicativo) → han sido confortados
+  - B confirmada: C2. ἀναπέπαυται (indicativo) → han sido confortados [MorphGNT: V-3XPI-S--] [RMAC display: V-XPI-3S]
   - posibles A:
-    - C1. ἔσχον⸃ (indicativo) → he llegado a tener
+    - C1. ἔσχον⸃ (indicativo) → he llegado a tener [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
   - nota: B es la cláusula gobernada por el conector; A se busca antes del conector.
 
 
@@ -210,7 +210,7 @@ C1. Pues ==he llegado a tener== mucho gozo y consuelo en tu amor, porque los cor
 
 #### Cláusulas finitas griegas
 
-- C1. παρακαλῶ, (indicativo) → te hago un ruego,
+- C1. παρακαλῶ, (indicativo) → te hago un ruego, [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
 
 #### Conectores detectados
 
@@ -234,8 +234,8 @@ C1. no obstante, por causa del amor que te tengo, ==te hago un ruego,== siendo c
 
 #### Cláusulas finitas griegas
 
-- C1. παρακαλῶ (indicativo) → te ruego
-- C2. ἐγέννησα (indicativo) → he engendrado
+- C1. παρακαλῶ (indicativo) → te ruego [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
+- C2. ἐγέννησα (indicativo) → he engendrado [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
 
 #### Conectores detectados
 
@@ -280,8 +280,8 @@ C2. ==he engendrado== en mis prisiones;
 
 #### Cláusulas finitas griegas
 
-- C1. ἀνέπεμψά (indicativo) → he vuelto a enviar
-- C2. ἔστιν (indicativo) → es
+- C1. ἀνέπεμψά (indicativo) → he vuelto a enviar [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
+- C2. ἔστιν (indicativo) → es [MorphGNT: V-3PAI-S--] [RMAC display: V-PAI-3S]
 
 #### Conectores detectados
 
@@ -304,8 +304,8 @@ C2. ==es== decir, como si fuera mi propio corazón.
 
 #### Cláusulas finitas griegas
 
-- C1. ἐβουλόμην (indicativo) → Hubiera querido
-- C2. διακονῇ⸃ (subjuntivo) → sirviera
+- C1. ἐβουλόμην (indicativo) → Hubiera querido [MorphGNT: V-1IMI-S--] [RMAC display: V-IMI-1S]
+- C2. διακονῇ⸃ (subjuntivo) → sirviera [MorphGNT: V-3PAS-S--] [RMAC display: V-PAS-3S]
 
 #### Conectores detectados
 
@@ -319,9 +319,9 @@ C2. ==es== decir, como si fuera mi propio corazón.
   - dirección significa: el conector normalmente busca A después de B
   - jerarquía: subordinada
   - descripción: B expresa propósito o resultado relacionado con A.
-  - B confirmada: C2. διακονῇ⸃ (subjuntivo) → sirviera
+  - B confirmada: C2. διακονῇ⸃ (subjuntivo) → sirviera [MorphGNT: V-3PAS-S--] [RMAC display: V-PAS-3S]
   - posibles A:
-    - C1. ἐβουλόμην (indicativo) → Hubiera querido
+    - C1. ἐβουλόμην (indicativo) → Hubiera querido [MorphGNT: V-1IMI-S--] [RMAC display: V-IMI-1S]
   - nota: B es la cláusula gobernada por el conector; A se busca antes del conector.
 
 
@@ -341,8 +341,8 @@ C1. ==Hubiera querido== retenerlo conmigo, para que me
 
 #### Cláusulas finitas griegas
 
-- C1. ἠθέλησα (indicativo) → no quise
-- C2. ᾖ (subjuntivo) → fuera
+- C1. ἠθέλησα (indicativo) → no quise [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
+- C2. ᾖ (subjuntivo) → fuera [MorphGNT: V-3PAS-S--] [RMAC display: V-PAS-3S]
 
 #### Conectores detectados
 
@@ -359,9 +359,9 @@ C1. ==Hubiera querido== retenerlo conmigo, para que me
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: mismo nivel
   - descripción: B contrasta gramaticalmente con A.
-  - B confirmada: C1. ἠθέλησα (indicativo) → no quise
+  - B confirmada: C1. ἠθέλησα (indicativo) → no quise [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
   - posibles A:
-    - C2. διακονῇ⸃ (subjuntivo) → sirviera
+    - C2. διακονῇ⸃ (subjuntivo) → sirviera [MorphGNT: V-3PAS-S--] [RMAC display: V-PAS-3S]
   - nota: El conector apunta hacia atrás; A puede estar en el contexto previo.
 
 - R2 | (cn2: para que — ἵνα)
@@ -370,9 +370,9 @@ C1. ==Hubiera querido== retenerlo conmigo, para que me
   - dirección significa: el conector normalmente busca A después de B
   - jerarquía: subordinada
   - descripción: B expresa propósito o resultado relacionado con A.
-  - B confirmada: C2. ᾖ (subjuntivo) → fuera
+  - B confirmada: C2. ᾖ (subjuntivo) → fuera [MorphGNT: V-3PAS-S--] [RMAC display: V-PAS-3S]
   - posibles A:
-    - C1. ἠθέλησα (indicativo) → no quise
+    - C1. ἠθέλησα (indicativo) → no quise [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
   - nota: B es la cláusula gobernada por el conector; A se busca antes del conector.
 
 
@@ -395,8 +395,8 @@ C1. Pero ==no quise== hacer nada sin tu consentimiento, para que tu bondad no
 
 #### Cláusulas finitas griegas
 
-- C1. ἐχωρίσθη (indicativo) → se apartó de ti
-- C2. ἀπέχῃς, (subjuntivo) → volvieras a recibir
+- C1. ἐχωρίσθη (indicativo) → se apartó de ti [MorphGNT: V-3API-S--] [RMAC display: V-API-3S]
+- C2. ἀπέχῃς, (subjuntivo) → volvieras a recibir [MorphGNT: V-2AAS-S--] [RMAC display: V-AAS-2S]
 
 #### Conectores detectados
 
@@ -411,9 +411,9 @@ C1. Pero ==no quise== hacer nada sin tu consentimiento, para que tu bondad no
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: mismo nivel
   - descripción: B da razón gramatical para A.
-  - B confirmada: C1. ἐχωρίσθη (indicativo) → se apartó de ti
+  - B confirmada: C1. ἐχωρίσθη (indicativo) → se apartó de ti [MorphGNT: V-3API-S--] [RMAC display: V-API-3S]
   - posibles A:
-    - C2. ᾖ (subjuntivo) → fuera
+    - C2. ᾖ (subjuntivo) → fuera [MorphGNT: V-3PAS-S--] [RMAC display: V-PAS-3S]
   - nota: El conector apunta hacia atrás; A puede estar en el contexto previo.
 
 - R2 | (cn2: para que — ἵνα)
@@ -422,9 +422,9 @@ C1. Pero ==no quise== hacer nada sin tu consentimiento, para que tu bondad no
   - dirección significa: el conector normalmente busca A después de B
   - jerarquía: subordinada
   - descripción: B expresa propósito o resultado relacionado con A.
-  - B confirmada: C2. ἀπέχῃς, (subjuntivo) → volvieras a recibir
+  - B confirmada: C2. ἀπέχῃς, (subjuntivo) → volvieras a recibir [MorphGNT: V-2AAS-S--] [RMAC display: V-AAS-2S]
   - posibles A:
-    - C1. ἐχωρίσθη (indicativo) → se apartó de ti
+    - C1. ἐχωρίσθη (indicativo) → se apartó de ti [MorphGNT: V-3API-S--] [RMAC display: V-API-3S]
   - nota: B es la cláusula gobernada por el conector; A se busca antes del conector.
 
 
@@ -472,8 +472,8 @@ C1. Porque quizá por esto ==se apartó de ti== por algún tiempo, para que lo
 
 #### Cláusulas finitas griegas
 
-- C1. ἔχεις (indicativo) → tienes,
-- C2. προσλαβοῦ (imperativo) → acéptalo aceptarías [griego: imperativo]
+- C1. ἔχεις (indicativo) → tienes, [MorphGNT: V-2PAI-S--] [RMAC display: V-PAI-2S]
+- C2. προσλαβοῦ (imperativo) → acéptalo aceptarías  [griego: imperativo] [MorphGNT: V-2AMD-S--] [RMAC display: V-AMD-2S]
 
 #### Conectores detectados
 
@@ -489,9 +489,9 @@ C1. Porque quizá por esto ==se apartó de ti== por algún tiempo, para que lo
   - dirección significa: el conector normalmente busca A después de B
   - jerarquía: subordinada
   - descripción: B establece condición relacionada con A.
-  - B confirmada: C1. ἔχεις (indicativo) → tienes,
+  - B confirmada: C1. ἔχεις (indicativo) → tienes, [MorphGNT: V-2PAI-S--] [RMAC display: V-PAI-2S]
   - posibles A:
-    - C2. προσλαβοῦ (imperativo) → acéptalo aceptarías [griego: imperativo]
+    - C2. προσλαβοῦ (imperativo) → acéptalo aceptarías  [griego: imperativo] [MorphGNT: V-2AMD-S--] [RMAC display: V-AMD-2S]
   - nota: La condición introduce B; A puede ser la cláusula finita siguiente.
 
 - R2 | (cn2: pues, — οὖν)
@@ -500,9 +500,9 @@ C1. Porque quizá por esto ==se apartó de ti== por algún tiempo, para que lo
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: mismo nivel
   - descripción: B presenta inferencia gramatical desde A.
-  - B confirmada: C1. ἔχεις (indicativo) → tienes,
+  - B confirmada: C1. ἔχεις (indicativo) → tienes, [MorphGNT: V-2PAI-S--] [RMAC display: V-PAI-2S]
   - posibles A:
-    - C2. ἀπέχῃς, (subjuntivo) → volvieras a recibir
+    - C2. ἀπέχῃς, (subjuntivo) → volvieras a recibir [MorphGNT: V-2AAS-S--] [RMAC display: V-AAS-2S]
   - nota: El conector apunta hacia atrás; A puede estar en el contexto previo.
 
 
@@ -525,9 +525,9 @@ C2 [IMP]. ==acéptalo== como me ==aceptarías== a mí.
 
 #### Cláusulas finitas griegas
 
-- C1. ἠδίκησέν (indicativo) → ha perjudicado
-- C2. ὀφείλει, (indicativo) → te debe algo,
-- C3. ⸀ἐλλόγα· (imperativo) → cárgalo [griego: imperativo]
+- C1. ἠδίκησέν (indicativo) → ha perjudicado [MorphGNT: V-3AAI-S--] [RMAC display: V-AAI-3S]
+- C2. ὀφείλει, (indicativo) → te debe algo, [MorphGNT: V-3PAI-S--] [RMAC display: V-PAI-3S]
+- C3. ⸀ἐλλόγα· (imperativo) → cárgalo  [griego: imperativo] [MorphGNT: V-2PAD-S--] [RMAC display: V-PAD-2S]
 
 #### Conectores detectados
 
@@ -542,9 +542,9 @@ C2 [IMP]. ==acéptalo== como me ==aceptarías== a mí.
   - dirección significa: el conector normalmente busca A después de B
   - jerarquía: subordinada
   - descripción: B establece condición relacionada con A.
-  - B confirmada: C1. ἠδίκησέν (indicativo) → ha perjudicado
+  - B confirmada: C1. ἠδίκησέν (indicativo) → ha perjudicado [MorphGNT: V-3AAI-S--] [RMAC display: V-AAI-3S]
   - posibles A:
-    - C2. ὀφείλει, (indicativo) → te debe algo,
+    - C2. ὀφείλει, (indicativo) → te debe algo, [MorphGNT: V-3PAI-S--] [RMAC display: V-PAI-3S]
   - nota: La condición introduce B; A puede ser la cláusula finita siguiente.
 
 - R2 | (cn2: Y — δέ)
@@ -553,9 +553,9 @@ C2 [IMP]. ==acéptalo== como me ==aceptarías== a mí.
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: mismo nivel
   - descripción: B contrasta gramaticalmente con A.
-  - B confirmada: C1. ἠδίκησέν (indicativo) → ha perjudicado
+  - B confirmada: C1. ἠδίκησέν (indicativo) → ha perjudicado [MorphGNT: V-3AAI-S--] [RMAC display: V-AAI-3S]
   - posibles A:
-    - C2. προσλαβοῦ (imperativo) → acéptalo aceptarías [griego: imperativo]
+    - C2. προσλαβοῦ (imperativo) → acéptalo aceptarías  [griego: imperativo] [MorphGNT: V-2AMD-S--] [RMAC display: V-AMD-2S]
   - nota: El conector apunta hacia atrás; A puede estar en el contexto previo.
 
 
@@ -579,10 +579,10 @@ C3 [IMP]. ==cárgalo== a mi cuenta.
 
 #### Cláusulas finitas griegas
 
-- C1. ἔγραψα (indicativo) → escribo esto
-- C2. ἀποτίσω· (indicativo) → lo pagaré
-- C3. λέγω (subjuntivo) → decirte [NBLA: reestructuración infinitival]
-- C4. προσοφείλεις. (indicativo) → debes
+- C1. ἔγραψα (indicativo) → escribo esto [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
+- C2. ἀποτίσω· (indicativo) → lo pagaré [MorphGNT: V-1FAI-S--] [RMAC display: V-FAI-1S]
+- C3. λέγω (subjuntivo) → decirte  [NBLA: reestructuración infinitival] [MorphGNT: V-1PAS-S--] [RMAC display: V-PAS-1S]
+- C4. προσοφείλεις. (indicativo) → debes [MorphGNT: V-2PAI-S--] [RMAC display: V-PAI-2S]
 
 #### Conectores detectados
 
@@ -598,9 +598,9 @@ C3 [IMP]. ==cárgalo== a mi cuenta.
   - dirección significa: el conector normalmente busca A después de B
   - jerarquía: subordinada
   - descripción: B expresa propósito o resultado relacionado con A.
-  - B confirmada: C3. λέγω (subjuntivo) → decirte [NBLA: reestructuración infinitival]
+  - B confirmada: C3. λέγω (subjuntivo) → decirte  [NBLA: reestructuración infinitival] [MorphGNT: V-1PAS-S--] [RMAC display: V-PAS-1S]
   - posibles A:
-    - C2. ἀποτίσω· (indicativo) → lo pagaré
+    - C2. ἀποτίσω· (indicativo) → lo pagaré [MorphGNT: V-1FAI-S--] [RMAC display: V-FAI-1S]
   - nota: B es la cláusula gobernada por el conector; A se busca antes del conector.
 
 - R2 | (cn2: que — ὅτι)
@@ -609,9 +609,9 @@ C3 [IMP]. ==cárgalo== a mi cuenta.
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: subordinada
   - descripción: B presenta contenido relacionado con A.
-  - B confirmada: C4. προσοφείλεις. (indicativo) → debes
+  - B confirmada: C4. προσοφείλεις. (indicativo) → debes [MorphGNT: V-2PAI-S--] [RMAC display: V-PAI-2S]
   - posibles A:
-    - C3. λέγω (subjuntivo) → decirte [NBLA: reestructuración infinitival]
+    - C3. λέγω (subjuntivo) → decirte  [NBLA: reestructuración infinitival] [MorphGNT: V-1PAS-S--] [RMAC display: V-PAS-1S]
   - nota: B es la cláusula gobernada por el conector; A se busca antes del conector.
 
 - R3 | (cn3: aun — καὶ)
@@ -620,9 +620,9 @@ C3 [IMP]. ==cárgalo== a mi cuenta.
   - dirección significa: el conector normalmente relaciona cláusulas al mismo nivel
   - jerarquía: mismo nivel
   - descripción: B se coordina gramaticalmente con A.
-  - B confirmada: C4. προσοφείλεις. (indicativo) → debes
+  - B confirmada: C4. προσοφείλεις. (indicativo) → debes [MorphGNT: V-2PAI-S--] [RMAC display: V-PAI-2S]
   - posibles A:
-    - C3. λέγω (subjuntivo) → decirte [NBLA: reestructuración infinitival]
+    - C3. λέγω (subjuntivo) → decirte  [NBLA: reestructuración infinitival] [MorphGNT: V-1PAS-S--] [RMAC display: V-PAS-1S]
   - nota: El conector coordina B con una cláusula finita previa.
 
 
@@ -650,8 +650,8 @@ C2. ==lo pagaré== (por no
 
 #### Cláusulas finitas griegas
 
-- C1. ὀναίμην (optativo) → disfrutar este beneficio [NBLA: reestructuración infinitival]
-- C2. ἀνάπαυσόν (imperativo) → Recrea [griego: imperativo]
+- C1. ὀναίμην (optativo) → disfrutar este beneficio  [NBLA: reestructuración infinitival] [MorphGNT: V-1AMO-S--] [RMAC display: V-AMO-1S]
+- C2. ἀνάπαυσόν (imperativo) → Recrea  [griego: imperativo] [MorphGNT: V-2AAD-S--] [RMAC display: V-AAD-2S]
 
 #### Conectores detectados
 
@@ -674,9 +674,9 @@ C2 [IMP]. ==Recrea== mi corazón en Cristo.
 
 #### Cláusulas finitas griegas
 
-- C1. ἔγραψά (indicativo) → escribo
-- C2. λέγω (indicativo) → digo.
-- C3. ποιήσεις. (indicativo) → harás
+- C1. ἔγραψά (indicativo) → escribo [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
+- C2. λέγω (indicativo) → digo. [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
+- C3. ποιήσεις. (indicativo) → harás [MorphGNT: V-2FAI-S--] [RMAC display: V-FAI-2S]
 
 #### Conectores detectados
 
@@ -691,9 +691,9 @@ C2 [IMP]. ==Recrea== mi corazón en Cristo.
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: subordinada
   - descripción: B presenta contenido relacionado con A.
-  - B confirmada: C2. λέγω (indicativo) → digo.
+  - B confirmada: C2. λέγω (indicativo) → digo. [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
   - posibles A:
-    - C1. ἔγραψά (indicativo) → escribo
+    - C1. ἔγραψά (indicativo) → escribo [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
   - nota: B es la cláusula gobernada por el conector; A se busca antes del conector.
 
 - R2 | (cn2: aún — καὶ)
@@ -702,9 +702,9 @@ C2 [IMP]. ==Recrea== mi corazón en Cristo.
   - dirección significa: el conector normalmente relaciona cláusulas al mismo nivel
   - jerarquía: mismo nivel
   - descripción: B se coordina gramaticalmente con A.
-  - B confirmada: C2. λέγω (indicativo) → digo.
+  - B confirmada: C2. λέγω (indicativo) → digo. [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
   - posibles A:
-    - C1. ἔγραψά (indicativo) → escribo
+    - C1. ἔγραψά (indicativo) → escribo [MorphGNT: V-1AAI-S--] [RMAC display: V-AAI-1S]
   - nota: El conector coordina B con una cláusula finita previa.
 
 - R3 | [cn_imp_2: implícito — ∅]
@@ -713,9 +713,9 @@ C2 [IMP]. ==Recrea== mi corazón en Cristo.
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: subordinada
   - descripción: B presenta contenido relacionado con A.
-  - B confirmada: C3. ποιήσεις. (indicativo) → harás
+  - B confirmada: C3. ποιήσεις. (indicativo) → harás [MorphGNT: V-2FAI-S--] [RMAC display: V-FAI-2S]
   - posibles A:
-    - C2. λέγω (indicativo) → digo.
+    - C2. λέγω (indicativo) → digo. [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
   - nota: Relación de contenido implícita detectada mecánicamente por verbo finito de reporte/escritura seguido por otra cláusula finita sin relación entrante.
 
 
@@ -742,9 +742,9 @@ C1. Te ==escribo== confiado en tu obediencia, sabiendo que harás aún más de l
 
 #### Cláusulas finitas griegas
 
-- C1. ἑτοίμαζέ (imperativo) → prepárame [griego: imperativo]
-- C2. ἐλπίζω (indicativo) → espero
-- C3. χαρισθήσομαι (indicativo) → seré concedido.
+- C1. ἑτοίμαζέ (imperativo) → prepárame  [griego: imperativo] [MorphGNT: V-2PAD-S--] [RMAC display: V-PAD-2S]
+- C2. ἐλπίζω (indicativo) → espero [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
+- C3. χαρισθήσομαι (indicativo) → seré concedido. [MorphGNT: V-1FPI-S--] [RMAC display: V-FPI-1S]
 
 #### Conectores detectados
 
@@ -761,9 +761,9 @@ C1. Te ==escribo== confiado en tu obediencia, sabiendo que harás aún más de l
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: mismo nivel
   - descripción: B contrasta gramaticalmente con A.
-  - B confirmada: C1. ἑτοίμαζέ (imperativo) → prepárame [griego: imperativo]
+  - B confirmada: C1. ἑτοίμαζέ (imperativo) → prepárame  [griego: imperativo] [MorphGNT: V-2PAD-S--] [RMAC display: V-PAD-2S]
   - posibles A:
-    - C3. ποιήσεις. (indicativo) → harás
+    - C3. ποιήσεις. (indicativo) → harás [MorphGNT: V-2FAI-S--] [RMAC display: V-FAI-2S]
   - nota: El conector apunta hacia atrás; A puede estar en el contexto previo.
 
 - R2 | (cn4: que — ὅτι)
@@ -772,9 +772,9 @@ C1. Te ==escribo== confiado en tu obediencia, sabiendo que harás aún más de l
   - dirección significa: el conector normalmente busca A antes de B
   - jerarquía: subordinada
   - descripción: B presenta contenido relacionado con A.
-  - B confirmada: C3. χαρισθήσομαι (indicativo) → seré concedido.
+  - B confirmada: C3. χαρισθήσομαι (indicativo) → seré concedido. [MorphGNT: V-1FPI-S--] [RMAC display: V-FPI-1S]
   - posibles A:
-    - C2. ἐλπίζω (indicativo) → espero
+    - C2. ἐλπίζω (indicativo) → espero [MorphGNT: V-1PAI-S--] [RMAC display: V-PAI-1S]
   - nota: B es la cláusula gobernada por el conector; A se busca antes del conector.
 
 
@@ -798,7 +798,7 @@ C2. ==espero== que por las oraciones de ustedes les
 
 #### Cláusulas finitas griegas
 
-- C1. ⸀Ἀσπάζεταί (indicativo) → Te saluda
+- C1. ⸀Ἀσπάζεταί (indicativo) → Te saluda [MorphGNT: V-3PMI-S--] [RMAC display: V-PMI-3S]
 
 #### Conectores detectados
 

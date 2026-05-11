@@ -174,48 +174,83 @@ def clean_text(text: str) -> str:
     return text.strip()
 
 
-def is_verb(rmac: str) -> bool:
-    return bool(rmac and rmac.startswith("V-"))
+# ============================================================
+# MORPHGNT AUTHORITATIVE LOGIC LAYER
+# ============================================================
+# Engine logic reads MorphGNT only.
+# JSON "rmac" is display/export only.
+# ============================================================
 
 
-def is_finite(rmac: str) -> bool:
-    if not is_verb(rmac):
-        return False
+def morphgnt_code(col_or_code) -> str:
+    if isinstance(col_or_code, dict):
+        return (col_or_code.get("morphgnt") or "").strip()
 
-    parts = rmac.split("-")
-
-    if len(parts) < 3:
-        return False
-
-    return parts[-1] in {
-        "1S", "2S", "3S",
-        "1P", "2P", "3P",
-    }
+    return (col_or_code or "").strip()
 
 
-def verb_mood_code(rmac: str) -> str:
-    """
-    Return the RMAC mood code objectively from the finite verb tag.
+def morphgnt_parts(col_or_code) -> List[str]:
+    code = morphgnt_code(col_or_code)
 
-    RMAC forms can include tense markers like 2A:
-    - V-PAI-1S   -> PAI -> I
-    - V-PAS-3S   -> PAS -> S
-    - V-AAM-2S   -> AAM -> M
-    - V-2AAM-2S  -> 2AAM -> M
+    if not code:
+        return []
 
-    Therefore mood is the final alphabetic character of the
-    tense/voice/mood block before the person-number block.
-    """
+    return code.split("-")
 
-    if not is_verb(rmac):
-        return ""
 
-    parts = rmac.split("-")
+def is_verb(col_or_code) -> bool:
+    return morphgnt_code(col_or_code).startswith("V-")
+
+
+def morphgnt_tvm(col_or_code) -> str:
+    parts = morphgnt_parts(col_or_code)
 
     if len(parts) < 2:
         return ""
 
-    tvm = parts[1].strip()
+    return parts[1].strip()
+
+
+def morphgnt_person(col_or_code) -> str:
+    tvm = morphgnt_tvm(col_or_code)
+
+    if tvm and tvm[0] in {"1", "2", "3"}:
+        return tvm[0]
+
+    parts = morphgnt_parts(col_or_code)
+
+    if len(parts) >= 3:
+        field = parts[2]
+
+        if field and field[0] in {"1", "2", "3"}:
+            return field[0]
+
+    return ""
+
+
+def morphgnt_number(col_or_code) -> str:
+    parts = morphgnt_parts(col_or_code)
+
+    if len(parts) < 3:
+        return ""
+
+    field = parts[2]
+
+    for char in field:
+        if char in {"S", "P"}:
+            return char
+
+    return ""
+
+
+def verb_mood_code(col_or_code) -> str:
+    tvm = morphgnt_tvm(col_or_code)
+
+    if not tvm:
+        return ""
+
+    if tvm[0] in {"1", "2", "3"}:
+        tvm = tvm[1:]
 
     if not tvm:
         return ""
@@ -227,12 +262,21 @@ def verb_mood_code(rmac: str) -> str:
     return ""
 
 
+def is_finite(col_or_code) -> bool:
+    if not is_verb(col_or_code):
+        return False
 
-def finite_kind_label(rmac: str) -> str:
-    if not is_finite(rmac):
+    return bool(
+        morphgnt_person(col_or_code)
+        and morphgnt_number(col_or_code)
+    )
+
+
+def finite_kind_label(col_or_code) -> str:
+    if not is_finite(col_or_code):
         return "no-finito"
 
-    mood = verb_mood_code(rmac)
+    mood = verb_mood_code(col_or_code)
 
     return {
         "I": "indicativo",
@@ -243,23 +287,11 @@ def finite_kind_label(rmac: str) -> str:
     }.get(mood, f"finito:{mood or 'sin-modo'}")
 
 
-
-def is_imperative_finite(rmac: str) -> bool:
-    return is_finite(rmac) and verb_mood_code(rmac) in {"M", "D"}
+def is_imperative_finite(col_or_code) -> bool:
+    return is_finite(col_or_code) and verb_mood_code(col_or_code) in {"M", "D"}
 
 
 def has_infinitival_surface(nbla: str) -> bool:
-    """
-    Detect only real Spanish infinitival surface restructuring.
-
-    This is deliberately conservative.
-    It avoids false positives such as:
-    - llegue a ser
-    - he llegado a tener
-    - he vuelto a enviar
-    - volvieras a recibir
-    """
-
     words = (
         (nbla or "")
         .lower()
@@ -274,66 +306,48 @@ def has_infinitival_surface(nbla: str) -> bool:
         return False
 
     finite_auxiliaries_or_finite_heads = {
-        "he",
-        "has",
-        "ha",
-        "hemos",
-        "han",
-        "había",
-        "habían",
-        "hubiera",
-        "hubieras",
-        "hubiésemos",
-        "hubieran",
-        "fue",
-        "fuera",
-        "será",
-        "serán",
-        "soy",
-        "eres",
-        "es",
-        "somos",
-        "son",
-        "estoy",
-        "estás",
-        "está",
-        "estamos",
-        "están",
-        "llegue",
-        "llegó",
-        "llegado",
-        "vuelto",
-        "volvieras",
-        "volver",
-        "puedo",
-        "puedes",
-        "puede",
-        "podemos",
-        "pueden",
+        "he", "has", "ha", "hemos", "han",
+        "había", "habían",
+        "hubiera", "hubieras", "hubiésemos", "hubieran",
+        "fue", "fuera", "será", "serán",
+        "soy", "eres", "es", "somos", "son",
+        "estoy", "estás", "está", "estamos", "están",
+        "llegue", "llegó", "llegado",
+        "vuelto", "volvieras", "volver",
+        "puedo", "puedes", "puede", "podemos", "pueden",
     }
 
-    # Single-token infinitive or attached-object infinitive:
-    # decirte, disfrutar, recibirlo, hacerlo
+    endings = (
+        "ar", "er", "ir",
+        "arte", "erte", "irte",
+        "arlo", "erlo", "irlo",
+        "arnos", "ernos", "irnos",
+    )
+
     if len(words) == 1:
         word = words[0]
+        return len(word) >= 3 and word.endswith(endings)
 
-        return (
-            len(word) >= 3
-            and word.endswith(("ar", "er", "ir", "arte", "erte", "irte", "arlo", "erlo", "irlo", "arnos", "ernos", "irnos"))
-        )
-
-    # Multiword phrase whose first word itself is an infinitive:
-    # disfrutar este beneficio
     first = words[0]
 
-    if (
+    return (
         first not in finite_auxiliaries_or_finite_heads
         and len(first) >= 3
-        and first.endswith(("ar", "er", "ir", "arte", "erte", "irte", "arlo", "erlo", "irlo", "arnos", "ernos", "irnos"))
-    ):
-        return True
+        and first.endswith(endings)
+    )
 
-    return False
+
+def validate_morph_logic_source(columns: List[Dict]) -> None:
+    for col in columns:
+        greek = (col.get("greek") or "").strip()
+        morph = morphgnt_code(col)
+        rmac = (col.get("rmac") or "").strip()
+
+        if greek and rmac.startswith("V-") and not morph:
+            raise ValueError(
+                "Verb-like RMAC display exists without MorphGNT source: "
+                f"{greek} | rmac={rmac}"
+            )
 
 
 def load_connector_rules() -> Dict:
@@ -425,7 +439,7 @@ class Clause:
         self.greek = verb_col.get("greek", "")
         self.nbla = verb_col.get("nbla", "")
         self.lemma = verb_col.get("lemma", "")
-        self.rmac = verb_col.get("rmac", "")
+        self.rmac_display = verb_col.get("rmac", "")
 
         self.greek_pos = greek_pos(verb_col)
         self.nbla_pos = nbla_pos(verb_col)
@@ -436,10 +450,10 @@ class Clause:
         self.owned_tokens: List[Tuple[int, str]] = []
 
     def kind(self) -> str:
-        return finite_kind_label(self.rmac)
+        return finite_kind_label(self.verb_col)
 
     def is_imperative(self) -> bool:
-        return is_imperative_finite(self.rmac)
+        return is_imperative_finite(self.verb_col)
 
     def force_note(self) -> str:
         notes = []
@@ -448,7 +462,7 @@ class Clause:
             notes.append("griego: imperativo")
 
         if (
-            is_finite(self.rmac)
+            is_finite(self.verb_col)
             and has_infinitival_surface(self.nbla)
         ):
             notes.append("NBLA: reestructuración infinitival")
@@ -460,13 +474,29 @@ class Clause:
 
     def short(self) -> str:
         nbla = self.nbla.strip() or "∅"
+        morph = morphgnt_code(self.verb_col)
+
+        extra = []
+
+        note = self.force_note()
+
+        if note:
+            extra.append(note)
+
+        if morph:
+            extra.append(f"[MorphGNT: {morph}]")
+
+        if self.rmac_display:
+            extra.append(f"[RMAC display: {self.rmac_display}]")
+
+        suffix = " " + " ".join(extra) if extra else ""
 
         return (
             f"{self.local_id}. "
             f"{self.greek} "
             f"({self.kind()}) → "
             f"{nbla}"
-            f"{self.force_note()}"
+            f"{suffix}"
         )
 
     def assign_token(self, idx: int, word: str) -> None:
@@ -690,13 +720,6 @@ def build_clause_boundaries(
     finite_cols: List[Dict],
     columns: List[Dict],
 ) -> List[Tuple[Optional[int], Optional[int]]]:
-    """
-    Build NBLA token ownership spans for finite Greek clauses.
-
-    Finite verbs are still detected only from Greek/RMAC.
-    This function only decides which NBLA surface tokens belong to each clause.
-    """
-
     all_nbla: List[int] = []
 
     for col in visible_columns(columns):
@@ -751,15 +774,16 @@ def build_clause_boundaries(
     return boundaries
 
 
-
 def build_clauses(
     verse_ref: str,
     columns: List[Dict],
 ) -> List[Clause]:
 
+    validate_morph_logic_source(columns)
+
     finite_cols = [
         col for col in columns
-        if is_finite(col.get("rmac", ""))
+        if is_finite(col)
     ]
 
     finite_cols.sort(key=greek_pos)
@@ -771,11 +795,7 @@ def build_clauses(
 
     clauses = []
 
-    for i, col in enumerate(
-        finite_cols,
-        start=1,
-    ):
-
+    for i, col in enumerate(finite_cols, start=1):
         start, end = boundaries[i - 1]
 
         clause = Clause(
@@ -789,12 +809,9 @@ def build_clauses(
 
         clauses.append(clause)
 
-    # TOKEN OWNERSHIP
-
     claimed = set()
 
     for clause in clauses:
-
         if clause.start_nbla is None:
             continue
 
@@ -802,9 +819,7 @@ def build_clauses(
             continue
 
         for col in ordered_visible_columns(columns):
-
             idxs = nbla_indices(col)
-
             text = col.get("nbla", "").strip()
 
             if not text or text == "-":
@@ -813,28 +828,15 @@ def build_clauses(
             words = text.split()
 
             for pos, idx in enumerate(idxs):
-
                 if idx in claimed:
                     continue
 
-                if not (
-                    clause.start_nbla
-                    <= idx
-                    <= clause.end_nbla
-                ):
+                if not (clause.start_nbla <= idx <= clause.end_nbla):
                     continue
 
-                word = (
-                    words[pos]
-                    if pos < len(words)
-                    else words[-1]
-                )
+                word = words[pos] if pos < len(words) else words[-1]
 
-                clause.assign_token(
-                    idx,
-                    word,
-                )
-
+                clause.assign_token(idx, word)
                 claimed.add(idx)
 
     return clauses
@@ -908,54 +910,34 @@ def candidate_B_for_connector(
     return following_clause_after(connector.greek_pos, clauses)
 
 
-
-
 def classify_connector_scope(
     connector: Connector,
     clauses: List[Clause],
     connectors: List[Connector],
     previous_context_clause: Optional[Clause],
 ) -> str:
-    B = candidate_B_for_connector(
-        connector,
-        clauses,
-    )
-
+    B = candidate_B_for_connector(connector, clauses)
     rel = connector.relationship_type
 
     if not clauses:
         return "phrase-level"
 
-    # ὡς/comparison frequently works inside a phrase or manner construction.
-    # Do not promote it to clause-level just because another finite verb follows.
     if rel == "comparison":
         return "phrase-level"
 
-    # καὶ is phrase-level unless there is a finite clause on both sides.
     if rel == "coordination":
-        A = previous_clause_before(
-            connector.greek_pos,
-            clauses,
-        )
+        A = previous_clause_before(connector.greek_pos, clauses)
 
         if not A or not B:
             return "phrase-level"
 
-        if stronger_connector_between(
-            connector,
-            B,
-            connectors,
-        ):
+        if stronger_connector_between(connector, B, connectors):
             return "blocked"
 
         return "clause-level"
 
     if len(clauses) == 1:
-        if rel in {
-            "contrast",
-            "inference",
-            "reason",
-        }:
+        if rel in {"contrast", "inference", "reason"}:
             return "discourse-level"
 
         return "intra-clausal"
@@ -963,45 +945,10 @@ def classify_connector_scope(
     if not B:
         return "unresolved"
 
-    if stronger_connector_between(
-        connector,
-        B,
-        connectors,
-    ):
+    if stronger_connector_between(connector, B, connectors):
         return "blocked"
 
     return "clause-level"
-
-
-
-def is_clause_level_connector(
-    connector: Connector,
-    clauses: List[Clause],
-    connectors: List[Connector],
-    previous_context_clause: Optional[Clause],
-) -> bool:
-    B = candidate_B_for_connector(connector, clauses)
-
-    if not B:
-        return False
-
-    if stronger_connector_between(connector, B, connectors):
-        return False
-
-    rel = connector.relationship_type
-
-    if rel == "coordination":
-        A = previous_clause_before(connector.greek_pos, clauses)
-        return A is not None and B is not None
-
-    if rel in {"contrast", "inference", "reason"}:
-        A = previous_clause_before(connector.greek_pos, clauses)
-        return A is not None or previous_context_clause is not None
-
-    if rel in {"content", "purpose", "result", "condition", "comparison"}:
-        return B is not None
-
-    return False
 
 
 def a_candidates_for(
@@ -1058,7 +1005,6 @@ def build_relationship_facts(
     previous_context_clause: Optional[Clause],
 ) -> List[RelationshipFact]:
     facts: List[RelationshipFact] = []
-
     eligible_connectors = []
 
     for connector in connectors:
@@ -1095,14 +1041,6 @@ def build_relationship_facts(
                 note=note,
             )
         )
-
-    # --------------------------------------------------
-    # IMPLIED CONTENT EMBEDDING
-    # --------------------------------------------------
-    # Keep every finite verb visible, but allow reporting/
-    # writing verbs to embed the following finite clause when
-    # no explicit incoming relationship already owns it.
-    # --------------------------------------------------
 
     incoming = {
         fact.B.local_id
@@ -1174,7 +1112,6 @@ def build_relationship_facts(
     return facts
 
 
-
 def render_relationship_graph(facts: List[RelationshipFact]) -> List[str]:
     lines = []
 
@@ -1193,14 +1130,6 @@ def render_visible_structure(
     clauses: List[Clause],
     facts: List[RelationshipFact],
 ) -> List[str]:
-    """
-    Render visible clause structure using confirmed subordinate relationships.
-
-    This does NOT remove finite clauses.
-    It only changes their visible level when a connector fact says that
-    B is subordinate to an A candidate.
-    """
-
     embedded_under: Dict[str, str] = {}
 
     relationship_notes_by_clause = {
@@ -1208,8 +1137,6 @@ def render_visible_structure(
         for clause in clauses
     }
 
-    # Build explicit embedding map from relationship facts.
-    # Only subordinate connector relationships can indent B.
     for fact in facts:
         if not fact.B:
             continue
@@ -1220,22 +1147,15 @@ def render_visible_structure(
         ]
 
         if fact.a_candidates:
-            candidates = ", ".join(
-                c.local_id for c in fact.a_candidates
-            )
-            note_lines.append(
-                f"    posibles A → {candidates}"
-            )
+            candidates = ", ".join(c.local_id for c in fact.a_candidates)
+            note_lines.append(f"    posibles A → {candidates}")
 
-        relationship_notes_by_clause[
-            fact.B.local_id
-        ].extend(note_lines)
+        relationship_notes_by_clause[fact.B.local_id].extend(note_lines)
 
         if (
             fact.connector.hierarchy_effect() == "subordinate"
             and fact.a_candidates
         ):
-            # First mechanical A candidate owns the visible indentation.
             embedded_under[fact.B.local_id] = fact.a_candidates[0].local_id
 
     def clause_depth(clause_id: str) -> int:
@@ -1256,20 +1176,14 @@ def render_visible_structure(
         depth = clause_depth(clause.local_id)
         indent = "    " * depth
 
-        notes = relationship_notes_by_clause.get(
-            clause.local_id,
-            [],
-        )
+        notes = relationship_notes_by_clause.get(clause.local_id, [])
 
         for note in notes:
             lines.append(f"{indent}{note}")
 
-        lines.append(
-            f"{indent}{clause.rendered_clause()}"
-        )
+        lines.append(f"{indent}{clause.rendered_clause()}")
 
     return lines
-
 
 
 def render_verse(
