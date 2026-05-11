@@ -55,6 +55,7 @@ const cgvRepositoryBaseUrl = `https://github.com/${cgvRepository.owner}/${cgvRep
 const cgvApiBaseUrl = `https://api.github.com/repos/${cgvRepository.owner}/${cgvRepository.repo}`;
 const cgvRawBaseUrl = `https://raw.githubusercontent.com/${cgvRepository.owner}/${cgvRepository.repo}/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
 const synthesisMarker = "::roots-synthesis::";
+const h4IntroMarker = "::roots-h4-intro::";
 
 app.use(express.json({ limit: "250kb" }));
 app.use(
@@ -1073,6 +1074,16 @@ function renderLine(line) {
     };
   }
 
+  if (line.startsWith(h4IntroMarker)) {
+    const intro = JSON.parse(line.slice(h4IntroMarker.length));
+
+    return {
+      h4Intro: true,
+      html: marked.parse(enrichBibleReferences(intro.full)).trim(),
+      h4OnlyHtml: marked.parse(enrichBibleReferences(intro.h4)).trim()
+    };
+  }
+
   const definitionMatch = line.match(/^(.+?)\n:\s+(.+)$/s);
 
   if (definitionMatch) {
@@ -1614,7 +1625,10 @@ function groupRevealLines(lines) {
           group.push(lines[index]);
         }
 
-        revealLines.push(group.join("\n"));
+        revealLines.push(`${h4IntroMarker}${JSON.stringify({
+          h4: line,
+          full: group.join("\n")
+        })}`);
         continue;
       }
     }
@@ -1672,7 +1686,17 @@ function getFirstHeadingLevel(lines) {
 }
 
 function getFirstH4(lines) {
-  return lines.find(line => line.startsWith("#### ")) || null;
+  const line = lines.find(item =>
+    item.startsWith("#### ") ||
+    item.startsWith(h4IntroMarker)
+  );
+
+  if (!line) return null;
+  if (line.startsWith(h4IntroMarker)) {
+    return JSON.parse(line.slice(h4IntroMarker.length)).h4 || null;
+  }
+
+  return line.split("\n")[0] || null;
 }
 
 function applyStickyH4(slidesToProcess) {
@@ -1771,6 +1795,35 @@ function jumpToSlide(slideIndex) {
   state.slide = nextSlide;
   state.step = 0;
   resetQuiz();
+  clearPopup();
+  return true;
+}
+
+function goToNextSlideStep() {
+  const current = slides[state.slide];
+  if (!current) return false;
+
+  if (state.step < current.lines.length - 1) {
+    state.step++;
+  } else if (state.slide < slides.length - 1) {
+    state.slide++;
+    state.step = 0;
+    resetQuiz();
+  }
+
+  clearPopup();
+  return true;
+}
+
+function goToPreviousSlideStep() {
+  if (state.step > 0) {
+    state.step--;
+  } else if (state.slide > 0) {
+    state.slide--;
+    state.step = slides[state.slide].lines.length - 1;
+    resetQuiz();
+  }
+
   clearPopup();
   return true;
 }
@@ -2044,6 +2097,18 @@ app.post("/jump/:slide", (req, res) => {
   res.json({ slide: state.slide, step: state.step });
 });
 
+app.post("/control/next", (req, res) => {
+  goToNextSlideStep();
+  sendState();
+  res.json({ slide: state.slide, step: state.step });
+});
+
+app.post("/control/prev", (req, res) => {
+  goToPreviousSlideStep();
+  sendState();
+  res.json({ slide: state.slide, step: state.step });
+});
+
 app.get("/quizzes", (req, res) => {
   res.json(getQuizIndex());
 });
@@ -2089,32 +2154,11 @@ io.on("connection", socket => {
   });
 
   socket.on("next", () => {
-    const current = slides[state.slide];
-    if (!current) return;
-
-    if (state.step < current.lines.length - 1) {
-      state.step++;
-    } else if (state.slide < slides.length - 1) {
-      state.slide++;
-      state.step = 0;
-      resetQuiz();
-    }
-
-    clearPopup();
-    sendState();
+    if (goToNextSlideStep()) sendState();
   });
 
   socket.on("prev", () => {
-    if (state.step > 0) {
-      state.step--;
-    } else if (state.slide > 0) {
-      state.slide--;
-      state.step = slides[state.slide].lines.length - 1;
-      resetQuiz();
-    }
-
-    clearPopup();
-    sendState();
+    if (goToPreviousSlideStep()) sendState();
   });
 
   socket.on("reload-slides", () => {

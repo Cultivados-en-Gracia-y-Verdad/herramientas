@@ -161,9 +161,12 @@ function getEntryHtml(entry) {
 function renderEntries(entries) {
   const rendered = [];
   const replaceIndexes = {};
+  const lastEntryIndex = entries.length - 1;
 
-  entries.forEach(entry => {
-    const html = getEntryHtml(entry);
+  entries.forEach((entry, index) => {
+    const html = entry?.h4Intro && index < lastEntryIndex
+      ? entry.h4OnlyHtml
+      : getEntryHtml(entry);
     const replaceGroup = typeof entry === "string" ? null : entry?.replaceGroup;
 
     if (replaceGroup && replaceIndexes[replaceGroup] !== undefined) {

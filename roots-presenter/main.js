@@ -207,6 +207,28 @@ async function jumpToSlide(slideIndex) {
   }
 }
 
+async function goToNextSlideStep() {
+  try {
+    await postLocal("/control/next");
+  } catch (error) {
+    dialog.showErrorBox(
+      "Next",
+      error?.message || "The presentation could not advance."
+    );
+  }
+}
+
+async function goToPreviousSlideStep() {
+  try {
+    await postLocal("/control/prev");
+  } catch (error) {
+    dialog.showErrorBox(
+      "Previous",
+      error?.message || "The presentation could not go back."
+    );
+  }
+}
+
 async function startQuiz(quizId) {
   try {
     await postLocal(`/quiz/start/${encodeURIComponent(quizId)}`);
@@ -437,6 +459,17 @@ function createMenu() {
       label: "Presentation",
       submenu: [
         {
+          label: "Next",
+          accelerator: "Right",
+          click: goToNextSlideStep
+        },
+        {
+          label: "Previous",
+          accelerator: "Left",
+          click: goToPreviousSlideStep
+        },
+        { type: "separator" },
+        {
           label: "Extended Screen Mode",
           type: "radio",
           checked: presentationMode === "extended",
@@ -447,6 +480,12 @@ function createMenu() {
           type: "radio",
           checked: presentationMode === "mirrored",
           click: () => switchPresentationMode("mirrored")
+        },
+        { type: "separator" },
+        {
+          label: "Exit Full Screen",
+          accelerator: "Esc",
+          click: exitFullScreen
         }
       ]
     },
@@ -511,6 +550,42 @@ function createMenu() {
   Menu.setApplicationMenu(Menu.buildFromTemplate(template));
 }
 
+function exitFullScreen() {
+  const focusedWindow = BrowserWindow.getFocusedWindow();
+  const targetWindow = focusedWindow || projectorWindow || presenterWindow;
+
+  if (targetWindow && !targetWindow.isDestroyed() && targetWindow.isFullScreen()) {
+    targetWindow.setFullScreen(false);
+  }
+}
+
+function attachPresentationShortcuts(window) {
+  if (!window) return;
+
+  window.webContents.on("before-input-event", (event, input) => {
+    if (input.type !== "keyDown" || input.isAutoRepeat) return;
+
+    const key = input.key;
+    const isTextModifier = input.control || input.meta || input.alt;
+
+    if (!isTextModifier && (key === "ArrowRight" || key === "PageDown" || key === " " || key === "Enter")) {
+      event.preventDefault();
+      goToNextSlideStep();
+      return;
+    }
+
+    if (!isTextModifier && (key === "ArrowLeft" || key === "PageUp" || key === "Backspace")) {
+      event.preventDefault();
+      goToPreviousSlideStep();
+      return;
+    }
+
+    if (key === "Escape") {
+      exitFullScreen();
+    }
+  });
+}
+
 function closeWindow(window) {
   if (!window || window.isDestroyed()) return;
   window.close();
@@ -555,6 +630,7 @@ function createPresenterWindow(options = {}) {
   });
 
   presenterWindow.loadURL(`${APP_URL}/presenter.html`);
+  attachPresentationShortcuts(presenterWindow);
 
   presenterWindow.on("closed", () => {
     presenterWindow = null;
@@ -584,6 +660,7 @@ function createProjectorWindow(options = {}) {
   });
 
   projectorWindow.loadURL(`${APP_URL}/projector.html?mode=${options.mode || presentationMode}`);
+  attachPresentationShortcuts(projectorWindow);
 
   projectorWindow.once("ready-to-show", () => {
     projectorWindow.setBounds(displayBounds);

@@ -1,181 +1,98 @@
 {
+  "theme": "cgv-teaching",
   "styles": {
     "main": {
-      "background": "#150033",
-      "h1": {
-        "size": "1.5em",
-        "color": "#ffffff"
-      },
-      "h2": {
-        "size": "1.42em",
-        "color": "#dff3ff"
-      },
-      "h3": {
-        "size": "1em",
-        "color": "#f7ffb8",
-        "indent": "0"
-      },
-      "h4": {
-        "size": "0.98em",
-        "color": "#f7ffb8",
-        "indent": "1em"
-      },
-      "h5": {
-        "size": "1.2em",
-        "color": "#ffffff",
-        "indent": "2em"
-      },
-      "h6": {
-        "size": "0.9em",
-        "color": "#f5f5f5",
-        "indent": "3.8em"
-      },
-      "bullet": {
-        "size": "0.85em",
-        "color": "#f7f7f7",
-        "indent": "5.6em"
-      },
-      "reference": {
-        "color": "#e5f7ff"
-      },
+      "background": "#111827",
+      "h1": { "size": "1.55em", "color": "#ffffff" },
+      "h2": { "size": "1.34em", "color": "#dbeafe" },
+      "h3": { "size": "1.08em", "color": "#93c5fd", "indent": "0" },
+      "h4": { "size": "1.02em", "color": "#f8fafc", "indent": "0.95em" },
+      "h5": { "size": "0.86em", "color": "#e5e7eb", "indent": "2.15em" },
+      "h6": { "size": "0.76em", "color": "#cbd5e1", "indent": "3.55em" },
+      "bullet": { "size": "0.72em", "color": "#d1d5db", "indent": "5.1em" },
+      "reference": { "color": "#7dd3fc" },
       "synthesis": {
-        "background": "#f5f2e8",
+        "background": "#f8fafc",
         "color": "#1f2937",
         "accent": "#38bdf8",
         "titleColor": "#075985",
-        "textSize": "0.75em"
+        "textSize": "0.72em"
       },
       "definition": {
-        "background": "#ffffff",
+        "background": "rgba(56,189,248,0.08)",
         "accent": "#38bdf8",
-        "termColor": "#d1f1ff",
-        "textColor": "#ededed"
+        "termColor": "#7dd3fc",
+        "textColor": "#e5e7eb"
       },
       "popup": {
-        "background": "#f5f2e8",
-        "color": "#151515",
-        "verseBackground": "rgba(255,255,255,0.72)",
+        "background": "#f8fafc",
+        "color": "#111827",
+        "verseBackground": "rgba(255,255,255,0.74)",
         "accent": "#075985",
         "referenceColor": "#075985",
         "textSize": "34px"
       }
     },
     "presenter": {
-      "background": "#f4f4f4",
-      "h1": {
-        "size": "1.5em",
-        "color": "#111111"
-      },
-      "h2": {
-        "size": "1.24em",
-        "color": "#184e77"
-      },
-      "h3": {
-        "size": "1em",
-        "color": "#075985",
-        "indent": "0"
-      },
-      "h4": {
-        "size": "0.98em",
-        "color": "#1f2937",
-        "indent": "1em"
-      },
-      "h5": {
-        "size": "0.9em",
-        "color": "#111111",
-        "indent": "2em"
-      },
-      "h6": {
-        "size": "0.8em",
-        "color": "#374151",
-        "indent": "3.8em"
-      },
-      "bullet": {
-        "size": "0.74em",
-        "color": "#374151",
-        "indent": "5.6em"
-      },
-      "reference": {
-        "color": "#075985"
-      },
+      "background": "#f3f4f6",
+      "h1": { "size": "1.5em", "color": "#111827" },
+      "h2": { "size": "1.22em", "color": "#075985" },
+      "h3": { "size": "1.04em", "color": "#075985", "indent": "0" },
+      "h4": { "size": "1em", "color": "#1f2937", "indent": "0.95em" },
+      "h5": { "size": "0.86em", "color": "#374151", "indent": "2.15em" },
+      "h6": { "size": "0.76em", "color": "#4b5563", "indent": "3.55em" },
+      "bullet": { "size": "0.72em", "color": "#4b5563", "indent": "5.1em" },
+      "reference": { "color": "#075985" },
       "synthesis": {
-        "background": "#f5f2e8",
+        "background": "#f8fafc",
         "color": "#1f2937",
         "accent": "#075985",
         "titleColor": "#075985",
-        "textSize": "0.66em"
+        "textSize": "0.68em"
       },
       "definition": {
-        "background": "#075985",
+        "background": "rgba(7,89,133,0.07)",
         "accent": "#075985",
         "termColor": "#075985",
         "textColor": "#374151"
       },
       "popup": {
-        "background": "#111111",
+        "background": "#111827",
         "color": "#ffffff",
         "verseBackground": "rgba(255,255,255,0.08)",
-        "accent": "#075985",
+        "accent": "#38bdf8",
         "referenceColor": "#d1f1ff",
         "textSize": "22px"
       }
     },
     "audience": {
-      "background": "#111111",
-      "h1": {
-        "size": "1.5em",
-        "color": "#ffffff"
-      },
-      "h2": {
-        "size": "1.32em",
-        "color": "#dff3ff"
-      },
-      "h3": {
-        "size": "1em",
-        "color": "#d1f1ff",
-        "indent": "0"
-      },
-      "h4": {
-        "size": "0.98em",
-        "color": "#f5f2e8",
-        "indent": "1em"
-      },
-      "h5": {
-        "size": "0.9em",
-        "color": "#ffffff",
-        "indent": "2em"
-      },
-      "h6": {
-        "size": "0.8em",
-        "color": "#ededed",
-        "indent": "3.8em"
-      },
-      "bullet": {
-        "size": "0.74em",
-        "color": "#ededed",
-        "indent": "5.6em"
-      },
-      "reference": {
-        "color": "#d1f1ff"
-      },
+      "background": "#111827",
+      "h1": { "size": "1.55em", "color": "#ffffff" },
+      "h2": { "size": "1.34em", "color": "#dbeafe" },
+      "h3": { "size": "1.08em", "color": "#93c5fd", "indent": "0" },
+      "h4": { "size": "1.02em", "color": "#f8fafc", "indent": "0.95em" },
+      "h5": { "size": "0.86em", "color": "#e5e7eb", "indent": "2.15em" },
+      "h6": { "size": "0.76em", "color": "#cbd5e1", "indent": "3.55em" },
+      "bullet": { "size": "0.72em", "color": "#d1d5db", "indent": "5.1em" },
+      "reference": { "color": "#7dd3fc" },
       "synthesis": {
-        "background": "#f5f2e8",
+        "background": "#f8fafc",
         "color": "#1f2937",
         "accent": "#38bdf8",
         "titleColor": "#075985",
-        "textSize": "0.66em"
+        "textSize": "0.72em"
       },
       "definition": {
-        "background": "#ffffff",
+        "background": "rgba(56,189,248,0.08)",
         "accent": "#38bdf8",
-        "termColor": "#d1f1ff",
-        "textColor": "#ededed"
+        "termColor": "#7dd3fc",
+        "textColor": "#e5e7eb"
       },
       "popup": {
-        "background": "#111111",
+        "background": "#111827",
         "color": "#ffffff",
         "verseBackground": "rgba(255,255,255,0.08)",
-        "accent": "#075985",
+        "accent": "#38bdf8",
         "referenceColor": "#d1f1ff",
         "textSize": "28px"
       }
