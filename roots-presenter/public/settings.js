@@ -8,6 +8,7 @@ const styleKeys = [
   { key: "h1", label: "H1 Main Titles", fields: ["size", "color"] },
   { key: "h2", label: "H2 Subtitles", fields: ["size", "color"] },
   { key: "h3", label: "H3 Bible Reference", fields: ["size", "color", "indent"] },
+  { key: "scripture", label: "Scripture Under H3", fields: ["size", "color", "indent", "lineHeight"] },
   { key: "h4", label: "H4 Scripture Anchor", fields: ["size", "color", "indent"] },
   { key: "h5", label: "H5 First Comment", fields: ["size", "color", "indent"] },
   { key: "h6", label: "H6 Second Comment", fields: ["size", "color", "indent"] },
@@ -39,13 +40,44 @@ const popupFields = [
   ["textSize", "Text Size"]
 ];
 
-let settings = { styles: { main: {}, presenter: {}, audience: {} } };
+const builtInThemes = window.CGV_STYLE_THEMES || [];
+
+let settings = {
+  theme: "",
+  styles: { main: {}, presenter: {}, audience: {} },
+  customThemes: []
+};
+
+function safeThemeId(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 60);
+}
+
+function getCustomThemes(rawSettings = settings) {
+  return Array.isArray(rawSettings.customThemes) ? rawSettings.customThemes : [];
+}
+
+function getAvailableThemes() {
+  return [
+    ...builtInThemes.map(theme => ({ ...theme, builtIn: true })),
+    ...getCustomThemes().map(theme => ({ ...theme, builtIn: false }))
+  ];
+}
 
 function normalizeSettings(rawSettings) {
   const styles = rawSettings.styles || {};
+  const customThemes = getCustomThemes(rawSettings);
 
   if (styles.main || styles.presenter || styles.audience) {
     return {
+      theme: rawSettings.theme || "",
+      customThemes,
       styles: {
         main: styles.main || {},
         presenter: styles.presenter || styles.main || {},
@@ -55,12 +87,18 @@ function normalizeSettings(rawSettings) {
   }
 
   return {
+    theme: rawSettings.theme || "",
+    customThemes,
     styles: {
       main: styles,
       presenter: JSON.parse(JSON.stringify(styles)),
       audience: JSON.parse(JSON.stringify(styles))
     }
   };
+}
+
+function clone(value) {
+  return JSON.parse(JSON.stringify(value));
 }
 
 function inputType(field) {
@@ -172,6 +210,7 @@ function renderPopupSection(scope) {
 function renderSettings() {
   const form = document.getElementById("settingsForm");
   form.innerHTML = "";
+  renderThemeSelect();
 
   viewScopes.forEach(scope => {
     const group = document.createElement("section");
@@ -198,8 +237,29 @@ function renderSettings() {
   });
 }
 
+function renderThemeSelect() {
+  const select = document.getElementById("themeSelect");
+  if (!select) return;
+
+  select.replaceChildren();
+  getAvailableThemes().forEach(theme => {
+    const option = document.createElement("option");
+    option.value = theme.id;
+    option.textContent = theme.builtIn ? theme.name : `${theme.name} (Custom)`;
+    select.appendChild(option);
+  });
+
+  if (settings.theme && getAvailableThemes().some(theme => theme.id === settings.theme)) {
+    select.value = settings.theme;
+  }
+}
+
 function collectSettings() {
-  const nextSettings = { styles: { main: {}, presenter: {}, audience: {} } };
+  const nextSettings = {
+    theme: document.getElementById("themeSelect")?.value || settings.theme || "",
+    customThemes: getCustomThemes(),
+    styles: { main: {}, presenter: {}, audience: {} }
+  };
 
   document.querySelectorAll("[data-scope][data-section][data-field]").forEach(input => {
     const scope = input.dataset.scope;
@@ -217,6 +277,62 @@ function collectSettings() {
   });
 
   return nextSettings;
+}
+
+function applySelectedTheme() {
+  const select = document.getElementById("themeSelect");
+  const theme = getAvailableThemes().find(item => item.id === select?.value);
+  if (!theme) return;
+
+  const currentCustomThemes = getCustomThemes();
+  settings = normalizeSettings({
+    ...clone(theme.settings),
+    customThemes: currentCustomThemes
+  });
+  renderSettings();
+  document.getElementById("statusText").textContent = `${theme.name} applied. Save to keep it.`;
+}
+
+function saveCurrentAsTheme() {
+  const status = document.getElementById("statusText");
+  const nameInput = document.getElementById("themeNameInput");
+  const themeName = nameInput?.value.trim() || window.prompt("Theme name");
+  if (!themeName) return;
+
+  const id = safeThemeId(themeName);
+  if (!id) {
+    status.textContent = "Theme name needs at least one letter or number.";
+    return;
+  }
+
+  if (builtInThemes.some(theme => theme.id === id)) {
+    status.textContent = "That name is reserved by a built-in theme.";
+    return;
+  }
+
+  const current = collectSettings();
+  const customThemes = getCustomThemes()
+    .filter(theme => theme.id !== id);
+  const theme = {
+    id,
+    name: themeName.trim(),
+    description: "Custom theme",
+    settings: {
+      theme: id,
+      styles: clone(current.styles)
+    }
+  };
+
+  settings = {
+    ...current,
+    theme: id,
+    customThemes: [...customThemes, theme]
+  };
+
+  renderSettings();
+  const nextNameInput = document.getElementById("themeNameInput");
+  if (nextNameInput) nextNameInput.value = theme.name;
+  status.textContent = `${theme.name} saved as a custom theme. Save settings to keep it.`;
 }
 
 async function loadSettings() {
@@ -244,4 +360,6 @@ async function saveSettings() {
 }
 
 document.getElementById("saveButton").addEventListener("click", saveSettings);
+document.getElementById("applyThemeButton").addEventListener("click", applySelectedTheme);
+document.getElementById("saveThemeButton").addEventListener("click", saveCurrentAsTheme);
 loadSettings();

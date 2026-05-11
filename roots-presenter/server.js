@@ -643,12 +643,13 @@ function buildStyleSettingsCss() {
       lines.push(`  --view-background: ${cssValue(styles.background, fallbackBackground)};`);
     }
 
-    ["h1", "h2", "h3", "h4", "h5", "h6", "bullet", "reference"].forEach(key => {
+    ["h1", "h2", "h3", "scripture", "h4", "h5", "h6", "bullet", "reference"].forEach(key => {
       const style = styles[key] || {};
 
       if (style.size) lines.push(`  --style-${key}-size: ${cssValue(style.size, "1em")};`);
       if (style.color) lines.push(`  --style-${key}-color: ${cssValue(style.color, "inherit")};`);
       if (style.indent) lines.push(`  --style-${key}-indent: ${cssValue(style.indent, "0")};`);
+      if (style.lineHeight) lines.push(`  --style-${key}-line-height: ${cssValue(style.lineHeight, "1.35")};`);
     });
 
     if (synthesis.background) {

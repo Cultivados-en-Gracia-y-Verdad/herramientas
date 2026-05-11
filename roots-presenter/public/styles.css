@@ -163,11 +163,12 @@ textarea {
 
 .slide h3 + p,
 .projector-slide h3 + p {
-  margin-left: 0;
-  font-size: 0.98em;
+  margin-left: var(--style-scripture-indent, 0);
+  color: var(--style-scripture-color, #f5f2e8);
+  font-size: var(--style-scripture-size, 0.98em);
   font-style: italic;
   font-weight: 400;
-  line-height: 1.38;
+  line-height: var(--style-scripture-line-height, 1.38);
   text-align: left;
 }
 
@@ -709,7 +710,7 @@ button {
 }
 
 .projector-slide h3 + p {
-  color: #f5f2e8;
+  color: var(--style-scripture-color, #f5f2e8);
 }
 
 .projector-slide h4 {

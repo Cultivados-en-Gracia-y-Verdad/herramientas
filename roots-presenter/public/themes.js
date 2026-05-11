@@ -1,0 +1,57 @@
+window.CGV_STYLE_THEMES = [
+  {
+    id: "cgv-teaching",
+    name: "CGV Teaching",
+    description: "Balanced dark teaching theme with clear H4-H6 hierarchy.",
+    settings: {
+      theme: "cgv-teaching",
+      styles: {
+        main: {
+          background: "#111827",
+          h1: { size: "1.55em", color: "#ffffff" },
+          h2: { size: "1.34em", color: "#dbeafe" },
+          h3: { size: "1.08em", color: "#93c5fd", indent: "0" },
+          scripture: { size: "0.98em", color: "#f8fafc", indent: "0.95em", lineHeight: "1.42" },
+          h4: { size: "1.02em", color: "#f8fafc", indent: "0.95em" },
+          h5: { size: "0.86em", color: "#e5e7eb", indent: "2.15em" },
+          h6: { size: "0.76em", color: "#cbd5e1", indent: "3.55em" },
+          bullet: { size: "0.72em", color: "#d1d5db", indent: "5.1em" },
+          reference: { color: "#7dd3fc" },
+          synthesis: { background: "#f8fafc", color: "#1f2937", accent: "#38bdf8", titleColor: "#075985", textSize: "0.72em" },
+          definition: { background: "rgba(56,189,248,0.08)", accent: "#38bdf8", termColor: "#7dd3fc", textColor: "#e5e7eb" },
+          popup: { background: "#f8fafc", color: "#111827", verseBackground: "rgba(255,255,255,0.74)", accent: "#075985", referenceColor: "#075985", textSize: "34px" }
+        },
+        presenter: {
+          background: "#f3f4f6",
+          h1: { size: "1.5em", color: "#111827" },
+          h2: { size: "1.22em", color: "#075985" },
+          h3: { size: "1.04em", color: "#075985", indent: "0" },
+          scripture: { size: "0.96em", color: "#1f2937", indent: "0.95em", lineHeight: "1.42" },
+          h4: { size: "1em", color: "#1f2937", indent: "0.95em" },
+          h5: { size: "0.86em", color: "#374151", indent: "2.15em" },
+          h6: { size: "0.76em", color: "#4b5563", indent: "3.55em" },
+          bullet: { size: "0.72em", color: "#4b5563", indent: "5.1em" },
+          reference: { color: "#075985" },
+          synthesis: { background: "#f8fafc", color: "#1f2937", accent: "#075985", titleColor: "#075985", textSize: "0.68em" },
+          definition: { background: "rgba(7,89,133,0.07)", accent: "#075985", termColor: "#075985", textColor: "#374151" },
+          popup: { background: "#111827", color: "#ffffff", verseBackground: "rgba(255,255,255,0.08)", accent: "#38bdf8", referenceColor: "#d1f1ff", textSize: "22px" }
+        },
+        audience: {
+          background: "#111827",
+          h1: { size: "1.55em", color: "#ffffff" },
+          h2: { size: "1.34em", color: "#dbeafe" },
+          h3: { size: "1.08em", color: "#93c5fd", indent: "0" },
+          scripture: { size: "0.98em", color: "#f8fafc", indent: "0.95em", lineHeight: "1.42" },
+          h4: { size: "1.02em", color: "#f8fafc", indent: "0.95em" },
+          h5: { size: "0.86em", color: "#e5e7eb", indent: "2.15em" },
+          h6: { size: "0.76em", color: "#cbd5e1", indent: "3.55em" },
+          bullet: { size: "0.72em", color: "#d1d5db", indent: "5.1em" },
+          reference: { color: "#7dd3fc" },
+          synthesis: { background: "#f8fafc", color: "#1f2937", accent: "#38bdf8", titleColor: "#075985", textSize: "0.72em" },
+          definition: { background: "rgba(56,189,248,0.08)", accent: "#38bdf8", termColor: "#7dd3fc", textColor: "#e5e7eb" },
+          popup: { background: "#111827", color: "#ffffff", verseBackground: "rgba(255,255,255,0.08)", accent: "#38bdf8", referenceColor: "#d1f1ff", textSize: "28px" }
+        }
+      }
+    }
+  }
+];

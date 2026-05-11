@@ -33,6 +33,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 18px;
   background: #fff;
   padding: 16px 22px;
   box-shadow: 0 2px 14px rgba(0,0,0,0.08);
@@ -79,6 +80,47 @@ h1 {
 .app-brand span {
   color: #4b5563;
   font-size: 15px;
+}
+
+select {
+  min-width: 190px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+  padding: 8px 10px;
+}
+
+.theme-panel {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.85fr) minmax(420px, 2fr);
+  gap: 18px;
+  align-items: end;
+  margin: 18px 22px 0;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.theme-panel h2 {
+  margin: 0 0 6px;
+  color: #075985;
+  font-size: 20px;
+}
+
+.theme-panel p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.35;
+}
+
+.theme-controls {
+  display: grid;
+  grid-template-columns: minmax(190px, 1fr) auto minmax(190px, 1fr) auto;
+  gap: 12px;
+  align-items: end;
 }
 
 main {
@@ -160,4 +202,25 @@ button {
 
 button:active {
   transform: translateY(1px);
+}
+
+@media (max-width: 920px) {
+  .theme-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .theme-controls {
+    grid-template-columns: 1fr;
+  }
 }

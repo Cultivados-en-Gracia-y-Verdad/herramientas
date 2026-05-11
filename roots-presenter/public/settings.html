@@ -15,15 +15,27 @@
         <span>Style Settings</span>
       </div>
     </div>
-    <div class="settings-actions">
-      <label class="theme-picker">
-        Theme
+    <button id="saveButton" type="button">Save Settings</button>
+  </header>
+
+  <section class="theme-panel">
+    <div class="theme-panel-copy">
+      <h2>Themes</h2>
+      <p>Apply a built-in or custom theme, then save the current settings under a new name.</p>
+    </div>
+    <div class="theme-controls">
+      <label>
+        Current theme
         <select id="themeSelect"></select>
       </label>
       <button id="applyThemeButton" type="button">Apply Theme</button>
-      <button id="saveButton" type="button">Save</button>
+      <label>
+        New theme name
+        <input id="themeNameInput" type="text" placeholder="Example: Filipenses Night">
+      </label>
+      <button id="saveThemeButton" type="button">Save Current as Theme</button>
     </div>
-  </header>
+  </section>
 
   <main id="settingsForm"></main>
 
@@ -31,6 +43,7 @@
     <span id="statusText">Changes apply to main, presenter, and audience views.</span>
   </footer>
 
+  <script src="themes.js"></script>
   <script src="settings.js"></script>
 </body>
 </html>
