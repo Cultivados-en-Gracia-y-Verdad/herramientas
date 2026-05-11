@@ -52,8 +52,20 @@ class Clause:
     structural_level: str = CLAUSE_LEVEL
     children: List["Clause"] = field(default_factory=list)
 
-    def surface(self) -> str:
+    def surface_text(self) -> str:
         text = self.gloss.strip()
+
+        # NBLA sometimes stores Spanish comparison/restructuring words inside
+        # the same aligned finite verb surface. For imperative display, keep
+        # the actual imperative surface only; comparison material remains
+        # phrase-level and should not be highlighted as finite.
+        if self.is_imperative and " " in text:
+            text = text.split()[0]
+
+        return text
+
+    def surface(self) -> str:
+        text = self.surface_text()
 
         if "==" not in text:
             text = f"=={text}=="
