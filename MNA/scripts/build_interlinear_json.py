@@ -252,16 +252,18 @@ def build_columns(rows: List[Dict[str, str]], verse_morph: List[Dict[str, str]])
 def build_json(rows: List[Dict[str, str]], morph_data: Dict[Tuple[int, int], List[Dict[str, str]]]) -> Dict:
     first = rows[0]
 
-    book = first["BOOK"].strip()
+    source_book = first["BOOK"].strip()
+    book = canonical_book(source_book)
     chapter = int(first["CH"])
     verse = int(first["VS"])
     key = (chapter, verse)
 
     if key not in morph_data:
-        fail(f"MorphGNT verse not found: {book} {chapter}:{verse}")
+        fail(f"MorphGNT verse not found: {source_book} {chapter}:{verse}")
 
     return {
         "book": book,
+        "source_book": source_book,
         "chapter": chapter,
         "verse": verse,
         "reference": f"{book.title()} {chapter}:{verse}",
