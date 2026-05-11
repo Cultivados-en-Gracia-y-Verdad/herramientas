@@ -2,6 +2,7 @@
 
 import json
 import sys
+import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import List, Optional
@@ -31,6 +32,7 @@ class Clause:
     greek: str
     gloss: str
     mood: str
+    lemma: str = ""
     is_imperative: bool = False
     embedded_label: Optional[str] = None
     children: List["Clause"] = field(default_factory=list)
@@ -71,6 +73,18 @@ class VisibleStructureRenderer:
 
     def render(self) -> str:
         return "\n".join(self.lines)
+
+
+def strip_accents(text: str) -> str:
+    decomposed = unicodedata.normalize("NFD", text or "")
+    return "".join(
+        ch for ch in decomposed
+        if unicodedata.category(ch) != "Mn"
+    )
+
+
+def norm(text: str) -> str:
+    return strip_accents(text).lower().strip(".,;:·⸀⸃[]() ")
 
 
 def build_relative_embedding(parent: Clause, child: Clause):
@@ -115,14 +129,16 @@ def build_clauses(data) -> List[Clause]:
 
         greek = col.get("greek", "")
         gloss = col.get("nbla", "")
+        lemma = col.get("lemma", "")
 
-        is_imperative = "-M" in rmac or "IMP" in rmac
+        is_imperative = "-M" in rmac or "-D" in rmac or "IMP" in rmac
 
         clause = Clause(
             cid=f"C{clause_num}",
             greek=greek,
             gloss=gloss,
             mood=rmac,
+            lemma=lemma,
             is_imperative=is_imperative,
         )
 
@@ -132,23 +148,60 @@ def build_clauses(data) -> List[Clause]:
     return clauses
 
 
+def is_relative_pair(first: Clause, second: Clause) -> bool:
+    first_keys = {norm(first.greek), norm(first.lemma)}
+    second_keys = {norm(second.greek), norm(second.lemma)}
+
+    return (
+        "παρακαλω" in first_keys
+        and "γενναω" in second_keys
+    )
+
+
+def is_apposition_pair(first: Clause, second: Clause) -> bool:
+    second_keys = {norm(second.greek), norm(second.lemma)}
+    surface = norm(second.gloss)
+
+    return (
+        "ειμι" in second_keys
+        and "es decir" in surface
+    )
+
+
 def apply_simple_embeddings(clauses: List[Clause]):
 
     if len(clauses) < 2:
         return clauses
 
-    first = clauses[0]
-    second = clauses[1]
+    output: List[Clause] = []
+    skip_next = False
 
-    if "παρακαλ" in first.greek and "γενν" in second.greek:
-        build_relative_embedding(first, second)
-        return [first]
+    for i, clause in enumerate(clauses):
+        if skip_next:
+            skip_next = False
+            continue
 
-    if "ἀνέπεμψ" in first.greek and "ἔστιν" in second.greek:
-        build_apposition_embedding(first, second)
-        return [first]
+        if i + 1 >= len(clauses):
+            output.append(clause)
+            continue
 
-    return clauses
+        next_clause = clauses[i + 1]
+
+        if is_relative_pair(clause, next_clause):
+            build_relative_embedding(clause, next_clause)
+            output.append(clause)
+            skip_next = True
+            continue
+
+        if is_apposition_pair(clause, next_clause):
+            build_apposition_embedding(clause, next_clause)
+            output.append(clause)
+            skip_next = True
+            continue
+
+        output.append(clause)
+
+    return output
 
 
 def render_structure(clauses: List[Clause]):
