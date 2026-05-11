@@ -5,7 +5,7 @@ import sys
 import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Optional
+from typing import Dict, List, Optional
 
 FINITE_PREFIXES = (
     "V-PAI",
@@ -29,6 +29,9 @@ CLAUSE_LEVEL = "clause-level"
 PHRASE_LEVEL = "phrase-level"
 DISCOURSE_LEVEL = "discourse-level"
 
+CONDITION_LEMMAS = {"εἰ"}
+ALTERNATIVE_LEMMAS = {"ἤ"}
+
 
 @dataclass
 class Clause:
@@ -37,6 +40,7 @@ class Clause:
     gloss: str
     mood: str
     lemma: str = ""
+    greek_pos: int = 999999
     is_imperative: bool = False
     embedded_label: Optional[str] = None
     owner_clause_id: Optional[str] = None
@@ -59,6 +63,16 @@ class Clause:
             prefix += " [IMP]"
 
         return f"{prefix}. {self.surface()}"
+
+
+@dataclass
+class Connector:
+    greek: str
+    lemma: str
+    gloss: str
+    greek_pos: int
+    level: str
+    relation_type: str
 
 
 class VisibleStructureRenderer:
@@ -104,6 +118,18 @@ def norm(text: str) -> str:
     return strip_accents(text).lower().strip(".,;:·⸀⸃[]() ")
 
 
+def greek_index(col: Dict) -> int:
+    tokens = col.get("greek_tokens") or []
+
+    for token in tokens:
+        try:
+            return int(token)
+        except Exception:
+            continue
+
+    return 999999
+
+
 def has_stem(clause: Clause, stems: List[str]) -> bool:
     values = [
         norm(clause.greek),
@@ -129,11 +155,11 @@ def build_apposition_embedding(parent: Clause, child: Clause):
     attach_child(parent, child, "apposition")
 
 
-def build_condition_group(main_clause: Clause, condition_members: List[Clause]):
+def build_condition_group(main_clause: Clause, condition_members: List[Clause], has_alternative: bool):
     if not condition_members:
         return
 
-    if len(condition_members) > 1:
+    if len(condition_members) > 1 or has_alternative:
         condition_members[0].embedded_label = "COND [εἰ ... ἢ]"
     else:
         condition_members[0].embedded_label = "COND [εἰ]"
@@ -195,6 +221,7 @@ def build_clauses(data) -> List[Clause]:
             gloss=gloss,
             mood=rmac,
             lemma=lemma,
+            greek_pos=greek_index(col),
             is_imperative=is_imperative,
         )
 
@@ -202,6 +229,48 @@ def build_clauses(data) -> List[Clause]:
         clause_num += 1
 
     return clauses
+
+
+def classify_connector(col: Dict) -> Optional[Connector]:
+    lemma = col.get("lemma", "")
+    greek = col.get("greek", "")
+    gloss = col.get("nbla", "")
+    pos = greek_index(col)
+    key = norm(lemma or greek)
+
+    if key in {norm(item) for item in CONDITION_LEMMAS}:
+        return Connector(
+            greek=greek,
+            lemma=lemma,
+            gloss=gloss,
+            greek_pos=pos,
+            level=CLAUSE_LEVEL,
+            relation_type="condition",
+        )
+
+    if key in {norm(item) for item in ALTERNATIVE_LEMMAS}:
+        return Connector(
+            greek=greek,
+            lemma=lemma,
+            gloss=gloss,
+            greek_pos=pos,
+            level=PHRASE_LEVEL,
+            relation_type="alternative",
+        )
+
+    return None
+
+
+def build_connectors(data) -> List[Connector]:
+    connectors: List[Connector] = []
+
+    for col in data["columns"]:
+        connector = classify_connector(col)
+
+        if connector is not None:
+            connectors.append(connector)
+
+    return sorted(connectors, key=lambda item: item.greek_pos)
 
 
 def is_relative_pair(first: Clause, second: Clause) -> bool:
@@ -218,25 +287,78 @@ def is_apposition_pair(first: Clause, second: Clause) -> bool:
     )
 
 
-def is_filemon_118_condition_group(clauses: List[Clause]) -> bool:
-    if len(clauses) != 3:
-        return False
+def clause_after(pos: int, clauses: List[Clause]) -> Optional[Clause]:
+    for clause in clauses:
+        if clause.greek_pos > pos:
+            return clause
 
-    first, second, third = clauses
+    return None
 
-    return (
-        has_stem(first, ["αδικ", "perjudicado"])
-        and has_stem(second, ["οφειλ", "debe"])
-        and third.is_imperative
-        and has_stem(third, ["ελλογα", "cargalo", "cárgalo"])
+
+def first_imperative_after(clause: Clause, clauses: List[Clause]) -> Optional[Clause]:
+    started = False
+
+    for candidate in clauses:
+        if candidate is clause:
+            started = True
+            continue
+
+        if not started:
+            continue
+
+        if candidate.is_imperative:
+            return candidate
+
+    return None
+
+
+def alternatives_between(start: Clause, end: Clause, connectors: List[Connector]) -> bool:
+    return any(
+        connector.relation_type == "alternative"
+        and start.greek_pos < connector.greek_pos < end.greek_pos
+        for connector in connectors
     )
 
 
-def apply_condition_grouping(clauses: List[Clause]) -> List[Clause]:
-    if is_filemon_118_condition_group(clauses):
-        first, second, third = clauses
-        build_condition_group(third, [first, second])
-        return [third]
+def apply_condition_grouping(clauses: List[Clause], connectors: List[Connector]) -> List[Clause]:
+    # General εἰ detector:
+    # εἰ introduces the first finite clause after it as B.
+    # The first imperative after the condition span is treated as A/main clause.
+    # Any non-imperative finite clauses between B and A are grouped into the condition.
+    for connector in connectors:
+        if connector.level != CLAUSE_LEVEL:
+            continue
+
+        if connector.relation_type != "condition":
+            continue
+
+        first_condition = clause_after(connector.greek_pos, clauses)
+
+        if first_condition is None:
+            continue
+
+        main_clause = first_imperative_after(first_condition, clauses)
+
+        if main_clause is None:
+            continue
+
+        condition_members = []
+
+        for clause in clauses:
+            if clause.greek_pos < first_condition.greek_pos:
+                continue
+
+            if clause is main_clause:
+                break
+
+            if clause.is_imperative:
+                break
+
+            condition_members.append(clause)
+
+        has_alternative = alternatives_between(first_condition, main_clause, connectors)
+
+        build_condition_group(main_clause, condition_members, has_alternative)
 
     return clauses
 
@@ -246,35 +368,27 @@ def apply_simple_embeddings(clauses: List[Clause]):
     if len(clauses) < 2:
         return clauses
 
-    output: List[Clause] = []
-    skip_next = False
-
     for i, clause in enumerate(clauses):
-        if skip_next:
-            skip_next = False
+        if clause.owner_clause_id is not None:
             continue
 
         if i + 1 >= len(clauses):
-            output.append(clause)
             continue
 
         next_clause = clauses[i + 1]
 
+        if next_clause.owner_clause_id is not None:
+            continue
+
         if is_relative_pair(clause, next_clause):
             build_relative_embedding(clause, next_clause)
-            output.append(clause)
-            skip_next = True
             continue
 
         if is_apposition_pair(clause, next_clause):
             build_apposition_embedding(clause, next_clause)
-            output.append(clause)
-            skip_next = True
             continue
 
-        output.append(clause)
-
-    return output
+    return clauses
 
 
 def render_structure(clauses: List[Clause]):
@@ -305,8 +419,9 @@ def main():
     data = load_json(path)
 
     clauses = build_clauses(data)
+    connectors = build_connectors(data)
 
-    clauses = apply_condition_grouping(clauses)
+    clauses = apply_condition_grouping(clauses, connectors)
 
     clauses = apply_simple_embeddings(clauses)
 
