@@ -60,7 +60,7 @@ This provides:
 
 ------
 
-## 4. EXTRACTION WORKFLOW
+## 4. EXTRACTION WORKFLOW 
 
 ```
 Greek (MorphGNT)
