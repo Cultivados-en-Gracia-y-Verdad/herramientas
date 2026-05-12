@@ -8,11 +8,6 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-FINITE_PREFIXES = (
-    "V-PAI", "V-AAI", "V-FAI", "V-IMI", "V-PMI", "V-API", "V-XPI",
-    "V-AAS", "V-PAS", "V-AMS", "V-AMO", "V-FPI", "V-AAD", "V-AMD", "V-PAD",
-)
-
 CLAUSE_LEVEL = "clause-level"
 PHRASE_LEVEL = "phrase-level"
 
@@ -23,6 +18,15 @@ CONTENT_LEMMAS = {"ὅτι"}
 COORDINATION_LEMMAS = {"καί"}
 REPORTING_LEMMA_STEMS = ["λεγω", "γραφ"]
 REPORTING_GLOSS_STEMS = ["digo", "decir", "escrib"]
+
+# These are suspicious as the full Spanish surface for a Greek finite verb.
+# They are not forbidden in the data, but they should be exposed clearly.
+SUSPICIOUS_FINITE_SURFACES = {
+    "-", "a", "al", "de", "del", "el", "la", "las", "los", "lo", "en",
+    "por", "para", "con", "sin", "que", "y", "o", "pero", "sino",
+    "un", "una", "unos", "unas", "cada", "todo", "toda", "todos", "todas",
+    "iglesias", "señor",
+}
 
 
 @dataclass
@@ -38,32 +42,45 @@ class Clause:
     finite_surface: str = ""
     clause_surface: str = ""
     is_imperative: bool = False
+    warnings: List[str] = field(default_factory=list)
     embedded_label: Optional[str] = None
     owner_clause_id: Optional[str] = None
     relation_type: Optional[str] = None
     children: List["Clause"] = field(default_factory=list)
 
+    def has_nbla_span(self) -> bool:
+        return self.nbla_start != 999999 and self.nbla_end != 999999
+
     def surface_text(self) -> str:
-        return (self.clause_surface or self.gloss or "").strip()
+        text = (self.clause_surface or self.gloss or "").strip()
+        if text and text != "-":
+            return text
+        return f"[F sin NBLA: {self.greek} ({self.mood})]"
 
     def surface(self) -> str:
         text = self.surface_text()
         finite = (self.finite_surface or self.gloss or "").strip()
+
         if not text:
             return ""
+        if text.startswith("[F sin NBLA:"):
+            return text
         if "==" in text:
             return text
-        if finite and finite in text:
+        if finite and finite != "-" and finite in text:
             return text.replace(finite, f"=={finite}==", 1)
-        if finite:
+        if finite and finite != "-":
             return re.sub(re.escape(finite), f"=={finite}==", text, count=1, flags=re.IGNORECASE)
-        return f"=={text}=="
+        return text
 
     def rendered_clause(self) -> str:
         prefix = self.cid
         if self.is_imperative:
             prefix += " [IMP]"
-        return f"{prefix}. {self.surface()}"
+        body = f"{prefix}. {self.surface()}"
+        if self.warnings:
+            return body + "  " + " ".join(f"[ADVERTENCIA: {w}]" for w in self.warnings)
+        return body
 
 
 @dataclass
@@ -111,11 +128,9 @@ def greek_index(col: Dict) -> int:
 
 
 def nbla_indexes(col: Dict) -> List[int]:
-    """Parse NBLA indexes in all current project forms: 01,02 / 01-02 / 01, 02 / -."""
     raw = str(col.get("nbla_idx", "") or "").strip()
     if not raw or raw == "-":
         return []
-
     values: List[int] = []
     for part in re.split(r"[,;\s]+", raw):
         part = part.strip()
@@ -172,7 +187,16 @@ def collect_nbla_surface(chunks: List[Tuple[int, int, str]], start: int, end: in
 
 
 def is_finite_rmac(rmac: str) -> bool:
-    return bool(rmac) and any(rmac.startswith(prefix) for prefix in FINITE_PREFIXES)
+    """Finite if RMAC has a verb tense/voice/mood slot ending in I/S/M/D."""
+    if not rmac or not rmac.startswith("V-"):
+        return False
+    parts = rmac.split("-")
+    if len(parts) < 2:
+        return False
+    tvm = parts[1]
+    if len(tvm) < 3:
+        return False
+    return tvm[-1] in {"I", "S", "M", "D"}
 
 
 def is_imperative_rmac(rmac: str) -> bool:
@@ -198,6 +222,16 @@ def attach_child(parent: Clause, child: Clause, relation_type: str) -> bool:
     return True
 
 
+def finite_warnings(greek: str, rmac: str, gloss: str, indexes: List[int]) -> List[str]:
+    warnings: List[str] = []
+    surface = norm(gloss)
+    if not indexes or not gloss or gloss.strip() == "-":
+        warnings.append(f"verbo finito griego sin equivalente NBLA alineado: {greek} ({rmac})")
+    elif surface in SUSPICIOUS_FINITE_SURFACES:
+        warnings.append(f"alineación sospechosa de verbo finito: {greek} ({rmac}) → '{gloss}'")
+    return warnings
+
+
 def build_clauses(data) -> List[Clause]:
     clauses: List[Clause] = []
     nbla_chunks = build_nbla_chunks(data)
@@ -208,9 +242,10 @@ def build_clauses(data) -> List[Clause]:
             continue
         indexes = nbla_indexes(col)
         gloss = str(col.get("nbla", "") or "").strip()
+        greek = col.get("greek", "")
         clauses.append(Clause(
             cid="",
-            greek=col.get("greek", ""),
+            greek=greek,
             gloss=gloss,
             mood=rmac,
             lemma=col.get("lemma", ""),
@@ -219,16 +254,21 @@ def build_clauses(data) -> List[Clause]:
             nbla_end=max(indexes) if indexes else 999999,
             finite_surface=gloss,
             is_imperative=is_imperative_rmac(rmac),
+            warnings=finite_warnings(greek, rmac, gloss, indexes),
         ))
 
     clauses.sort(key=lambda item: item.greek_pos)
 
-    sorted_by_nbla = sorted(clauses, key=lambda item: item.nbla_start)
+    sorted_by_nbla = sorted([c for c in clauses if c.has_nbla_span()], key=lambda item: item.nbla_start)
     max_nbla_index = max((end for _, end, _ in nbla_chunks), default=0)
     for i, clause in enumerate(sorted_by_nbla):
         next_start = sorted_by_nbla[i + 1].nbla_start if i + 1 < len(sorted_by_nbla) else max_nbla_index + 1
         clause.nbla_end = max(clause.nbla_end, next_start - 1)
         clause.clause_surface = collect_nbla_surface(nbla_chunks, clause.nbla_start, clause.nbla_end)
+
+    for clause in clauses:
+        if not clause.has_nbla_span():
+            clause.clause_surface = ""
 
     for i, clause in enumerate(clauses, start=1):
         clause.cid = f"C{i}"
@@ -245,7 +285,6 @@ def classify_connector(col: Dict) -> Optional[Connector]:
     lemma = col.get("lemma", "")
     gloss = col.get("nbla", "")
     pos = greek_index(col)
-
     if key in {norm(item) for item in CONDITION_LEMMAS}:
         return Connector(greek, lemma, gloss, pos, CLAUSE_LEVEL, "condition")
     if key in {norm(item) for item in PURPOSE_LEMMAS}:
@@ -379,6 +418,8 @@ def apply_simple_embeddings(clauses: List[Clause]) -> List[Clause]:
 
 
 def render_structure(clauses: List[Clause]) -> str:
+    if not clauses:
+        return "[sin verbo finito detectado]"
     renderer = VisibleStructureRenderer()
     for clause in [c for c in clauses if c.owner_clause_id is None]:
         renderer.add_clause(clause)
