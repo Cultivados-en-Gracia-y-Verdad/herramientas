@@ -5217,3 +5217,287 @@ rules:
     first_seen: 1cor 3:1
     last_seen: 1cor 4:9
     confidence: 0.95
+- match:
+    greek: ["ἐγήγερται"]
+  action:
+    nbla: ["ha", "resucitado"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["νεκρῶν"]
+  action:
+    nbla: ["los", "muertos"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["κενός"]
+  action:
+    nbla: ["en", "vano"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["ἐφανερώθη"]
+  action:
+    nbla: ["se", "apareció"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["χάριτι"]
+  action:
+    nbla: ["gracia"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["ἐγώ"]
+  action:
+    nbla: ["yo"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["ἔστιν"]
+  action:
+    nbla: ["es"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["ἔσται"]
+  action:
+    nbla: ["será"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["ζωοποιοῦν"]
+  action:
+    nbla: ["que", "da", "vida"]
+    type: expanded
+    consume: 3
+
+- match:
+    greek: ["μυστήριον"]
+  action:
+    nbla: ["misterio"]
+    type: direct
+    consume: 1
+- match:
+    greek: ["χριστός", "ἐγήγερται"]
+  action:
+    nbla: ["cristo", "ha", "resucitado"]
+    type: expanded
+    consume: 3
+
+- match:
+    greek: ["νεκρῶν", "ἐγήγερται"]
+  action:
+    nbla: ["muertos", "resucitan"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["ἦλθεν"]
+  action:
+    nbla: ["vino"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["ἀνάστασις"]
+  action:
+    nbla: ["resurrección"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["ἐκ", "νεκρῶν"]
+  action:
+    nbla: ["de", "entre", "los", "muertos"]
+    type: expanded
+    consume: 4
+
+- match:
+    greek: ["ἐν", "ματαιότητι"]
+  action:
+    nbla: ["en", "vano"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["ἐφάνη"]
+  action:
+    nbla: ["se", "apareció"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["ἐκκλησίαν"]
+  action:
+    nbla: ["iglesia"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["οἶκον"]
+  action:
+    nbla: ["casa"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["βασιλείαν"]
+  action:
+    nbla: ["reino"]
+    type: direct
+    consume: 1
+- match:
+    greek: ["παρέδωκα"]
+  action:
+    nbla: ["prediqué"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["παρελάβετε"]
+  action:
+    nbla: ["recibieron"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["σὺν", "ἐμοί"]
+  action:
+    nbla: ["conmigo"]
+    type: expanded
+    consume: 1
+
+- match:
+    greek: ["ἔπειτα"]
+  action:
+    nbla: ["después"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["ἔπειτα", "τοῖς"]
+  action:
+    nbla: ["luego", "a"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["ἐφανερώθη", "κἀμοί"]
+  action:
+    nbla: ["se", "me", "apareció", "también", "a", "mí"]
+    type: expanded
+    consume: 6
+
+- match:
+    greek: ["ἀλλὰ"]
+  action:
+    nbla: ["pero"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["χάριτι", "θεοῦ"]
+  action:
+    nbla: ["la", "gracia", "de", "dios"]
+    type: expanded
+    consume: 4
+
+- match:
+    greek: ["οὐκ", "ἔστιν"]
+  action:
+    nbla: ["no", "hay"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["εἰς", "κενόν"]
+  action:
+    nbla: ["en", "vano"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["ἐκ", "νεκρῶν"]
+  action:
+    nbla: ["de", "entre", "los", "muertos"]
+    type: expanded
+    consume: 4
+
+- match:
+    greek: ["ἔσχατος", "ἐχθρός"]
+  action:
+    nbla: ["último", "enemigo"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["καταργεῖται"]
+  action:
+    nbla: ["será", "eliminado"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["θάνατος"]
+  action:
+    nbla: ["muerte"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["μυστήριον"]
+  action:
+    nbla: ["misterio"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["βασιλείαν", "θεοῦ"]
+  action:
+    nbla: ["reino", "de", "dios"]
+    type: expanded
+    consume: 3
+
+- match:
+    greek: ["ἐν", "νίκῃ"]
+  action:
+    nbla: ["en", "victoria"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["ἄρα"]
+  action:
+    nbla: ["por", "tanto"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["ἀγαπητοί", "μου"]
+  action:
+    nbla: ["mis", "amados"]
+    type: expanded
+    consume: 2
+
+- match:
+    greek: ["οἴδατε"]
+  action:
+    nbla: ["conocen"]
+    type: direct
+    consume: 1
+
+- match:
+    greek: ["ἐκκλησίαι"]
+  action:
+    nbla: ["iglesias"]
+    type: direct
+    consume: 1

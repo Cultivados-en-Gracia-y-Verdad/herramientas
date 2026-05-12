@@ -1,0 +1,354 @@
+{
+  "book": "1corintios",
+  "source_book": "1cor",
+  "chapter": 6,
+  "verse": 11,
+  "reference": "1Corintios 6:11",
+  "columns": [
+    {
+      "column": 1,
+      "nbla_idx": "01",
+      "nbla": "y",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 2,
+      "nbla_idx": "02",
+      "nbla": "esto",
+      "greek": "ταῦτά",
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
+      "lemma": "οὗτος",
+      "rmac": "RD----NPN-",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RD----NPN-"
+    },
+    {
+      "column": 3,
+      "nbla_idx": "03",
+      "nbla": "eran",
+      "greek": "ἦτε",
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "εἰμί",
+      "rmac": "V-IAI-2P",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "V-2IAI-P--"
+    },
+    {
+      "column": 4,
+      "nbla_idx": "04-06",
+      "nbla": "algunos de ustedes",
+      "greek": "τινες",
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "τις",
+      "rmac": "RI----NPM-",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RI----NPM-"
+    },
+    {
+      "column": 5,
+      "nbla_idx": "07",
+      "nbla": "pero",
+      "greek": "ἀλλὰ",
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
+      "lemma": "ἀλλά",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 6,
+      "nbla_idx": "08-09",
+      "nbla": "fueron lavados",
+      "greek": "ἀπελούσασθε",
+      "greek_tokens": [
+        "06"
+      ],
+      "translit": "",
+      "lemma": "ἀπολούομαι",
+      "rmac": "V-AMI-2P",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-2AMI-P--"
+    },
+    {
+      "column": 7,
+      "nbla_idx": "10",
+      "nbla": "pero",
+      "greek": "ἀλλὰ",
+      "greek_tokens": [
+        "07"
+      ],
+      "translit": "",
+      "lemma": "ἀλλά",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 8,
+      "nbla_idx": "11-12",
+      "nbla": "fueron santificados",
+      "greek": "ἡγιάσθητε",
+      "greek_tokens": [
+        "08"
+      ],
+      "translit": "",
+      "lemma": "ἁγιάζω",
+      "rmac": "V-API-2P",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-2API-P--"
+    },
+    {
+      "column": 9,
+      "nbla_idx": "13",
+      "nbla": "pero",
+      "greek": "ἀλλὰ",
+      "greek_tokens": [
+        "09"
+      ],
+      "translit": "",
+      "lemma": "ἀλλά",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 10,
+      "nbla_idx": "14-15",
+      "nbla": "fueron justificados",
+      "greek": "ἐδικαιώθητε",
+      "greek_tokens": [
+        "10"
+      ],
+      "translit": "",
+      "lemma": "δικαιόω",
+      "rmac": "V-API-2P",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-2API-P--"
+    },
+    {
+      "column": 11,
+      "nbla_idx": "16",
+      "nbla": "en",
+      "greek": "ἐν",
+      "greek_tokens": [
+        "11"
+      ],
+      "translit": "",
+      "lemma": "ἐν",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 12,
+      "nbla_idx": "17",
+      "nbla": "el",
+      "greek": "τῷ",
+      "greek_tokens": [
+        "12"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-DSN",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RA----DSN-"
+    },
+    {
+      "column": 13,
+      "nbla_idx": "18",
+      "nbla": "nombre",
+      "greek": "ὀνόματι",
+      "greek_tokens": [
+        "13"
+      ],
+      "translit": "",
+      "lemma": "ὄνομα",
+      "rmac": "N-DSN",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----DSN-"
+    },
+    {
+      "column": 14,
+      "nbla_idx": "19",
+      "nbla": "del",
+      "greek": "τοῦ",
+      "greek_tokens": [
+        "14"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-GSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RA----GSM-"
+    },
+    {
+      "column": 15,
+      "nbla_idx": "20",
+      "nbla": "señor",
+      "greek": "κυρίου",
+      "greek_tokens": [
+        "15"
+      ],
+      "translit": "",
+      "lemma": "κύριος",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----GSM-"
+    },
+    {
+      "column": 16,
+      "nbla_idx": "21",
+      "nbla": "jesucristo",
+      "greek": "ἰησοῦ",
+      "greek_tokens": [
+        "16"
+      ],
+      "translit": "",
+      "lemma": "Ἰησοῦς",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----GSM-"
+    },
+    {
+      "column": 17,
+      "nbla_idx": "22",
+      "nbla": "y",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "17"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 18,
+      "nbla_idx": "23",
+      "nbla": "en",
+      "greek": "ἐν",
+      "greek_tokens": [
+        "18"
+      ],
+      "translit": "",
+      "lemma": "ἐν",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 19,
+      "nbla_idx": "24",
+      "nbla": "el",
+      "greek": "τῷ",
+      "greek_tokens": [
+        "19"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-DSN",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RA----DSN-"
+    },
+    {
+      "column": 20,
+      "nbla_idx": "25",
+      "nbla": "espíritu",
+      "greek": "πνεύματι",
+      "greek_tokens": [
+        "20"
+      ],
+      "translit": "",
+      "lemma": "πνεῦμα",
+      "rmac": "N-DSN",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----DSN-"
+    },
+    {
+      "column": 21,
+      "nbla_idx": "26",
+      "nbla": "de",
+      "greek": "τοῦ",
+      "greek_tokens": [
+        "21"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-GSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RA----GSM-"
+    },
+    {
+      "column": 22,
+      "nbla_idx": "27",
+      "nbla": "nuestro",
+      "greek": "ἡμῶν",
+      "greek_tokens": [
+        "23"
+      ],
+      "translit": "",
+      "lemma": "ἐγώ",
+      "rmac": "P-GP",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RP----GP--"
+    },
+    {
+      "column": 23,
+      "nbla_idx": "28",
+      "nbla": "dios",
+      "greek": "θεοῦ",
+      "greek_tokens": [
+        "22"
+      ],
+      "translit": "",
+      "lemma": "θεός",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----GSM-"
+    }
+  ]
+}

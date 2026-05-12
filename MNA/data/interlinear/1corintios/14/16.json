@@ -1,0 +1,354 @@
+{
+  "book": "1corintios",
+  "source_book": "1corintios",
+  "chapter": 14,
+  "verse": 16,
+  "reference": "1Corintios 14:16",
+  "columns": [
+    {
+      "column": 1,
+      "nbla_idx": "01,02,03",
+      "nbla": "de otra manera",
+      "greek": "ἐπεὶ",
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "ἐπεί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 2,
+      "nbla_idx": "04",
+      "nbla": "si",
+      "greek": "ἐὰν",
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
+      "lemma": "ἐάν",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 3,
+      "nbla_idx": "05",
+      "nbla": "bendices",
+      "greek": "εὐλογῇς",
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "εὐλογέω",
+      "rmac": "V-PAS-2S",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "V-2PAS-S--"
+    },
+    {
+      "column": 4,
+      "nbla_idx": "06,07,08,09",
+      "nbla": "solo en el espíritu",
+      "greek": "πνεύματι",
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "πνεῦμα",
+      "rmac": "N-DSN",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----DSN-"
+    },
+    {
+      "column": 5,
+      "nbla_idx": "10,11",
+      "nbla": "cómo dirá",
+      "greek": "πῶς",
+      "greek_tokens": [
+        "11"
+      ],
+      "translit": "",
+      "lemma": "πῶς",
+      "rmac": "D---------",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "D---------"
+    },
+    {
+      "column": 6,
+      "nbla_idx": "11",
+      "nbla": "dirá",
+      "greek": "ἐρεῖ",
+      "greek_tokens": [
+        "12"
+      ],
+      "translit": "",
+      "lemma": "λέγω",
+      "rmac": "V-FAI-3S",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "V-3FAI-S--"
+    },
+    {
+      "column": 7,
+      "nbla_idx": "12",
+      "nbla": "el",
+      "greek": "ὁ",
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-NSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RA----NSM-"
+    },
+    {
+      "column": 8,
+      "nbla_idx": "13",
+      "nbla": "amén",
+      "greek": "ἀμήν",
+      "greek_tokens": [
+        "14"
+      ],
+      "translit": "",
+      "lemma": "ἀμήν",
+      "rmac": "X---------",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "X---------"
+    },
+    {
+      "column": 9,
+      "nbla_idx": "14",
+      "nbla": "a",
+      "greek": "ἐπὶ",
+      "greek_tokens": [
+        "15"
+      ],
+      "translit": "",
+      "lemma": "ἐπί",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 10,
+      "nbla_idx": "15,16,17",
+      "nbla": "tu acción de",
+      "greek": "τῇ",
+      "greek_tokens": [
+        "16"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-DSF",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----DSF-"
+    },
+    {
+      "column": 11,
+      "nbla_idx": "15",
+      "nbla": "tu",
+      "greek": "σῇ",
+      "greek_tokens": [
+        "17"
+      ],
+      "translit": "",
+      "lemma": "σός",
+      "rmac": "A-DSF",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "A-----DSF-"
+    },
+    {
+      "column": 12,
+      "nbla_idx": "18",
+      "nbla": "gracias",
+      "greek": "εὐχαριστίᾳ",
+      "greek_tokens": [
+        "18"
+      ],
+      "translit": "",
+      "lemma": "εὐχαριστία",
+      "rmac": "N-DSF",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----DSF-"
+    },
+    {
+      "column": 13,
+      "nbla_idx": "19",
+      "nbla": "el",
+      "greek": "τὸ",
+      "greek_tokens": [
+        "13"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-ASN",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RA----ASN-"
+    },
+    {
+      "column": 14,
+      "nbla_idx": "20,21",
+      "nbla": "que ocupa",
+      "greek": "ἀναπληρῶν",
+      "greek_tokens": [
+        "06"
+      ],
+      "translit": "",
+      "lemma": "ἀναπληρόω",
+      "rmac": "V-PAP",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V--PAPNSM-"
+    },
+    {
+      "column": 15,
+      "nbla_idx": "22,23",
+      "nbla": "el lugar",
+      "greek": "τὸν",
+      "greek_tokens": [
+        "07"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-ASM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----ASM-"
+    },
+    {
+      "column": 16,
+      "nbla_idx": "23",
+      "nbla": "lugar",
+      "greek": "τόπον",
+      "greek_tokens": [
+        "08"
+      ],
+      "translit": "",
+      "lemma": "τόπος",
+      "rmac": "N-ASM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "N-----ASM-"
+    },
+    {
+      "column": 17,
+      "nbla_idx": "24,25",
+      "nbla": "del que",
+      "greek": "τοῦ",
+      "greek_tokens": [
+        "09"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-GSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----GSM-"
+    },
+    {
+      "column": 18,
+      "nbla_idx": "26,27,28,29",
+      "nbla": "no tiene ese don",
+      "greek": "ἰδιώτου",
+      "greek_tokens": [
+        "10"
+      ],
+      "translit": "",
+      "lemma": "ἰδιώτης",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----GSM-"
+    },
+    {
+      "column": 19,
+      "nbla_idx": "30,31",
+      "nbla": "puesto que",
+      "greek": "ἐπειδὴ",
+      "greek_tokens": [
+        "19"
+      ],
+      "translit": "",
+      "lemma": "ἐπειδή",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 20,
+      "nbla_idx": "32",
+      "nbla": "no",
+      "greek": "οὐκ",
+      "greek_tokens": [
+        "22"
+      ],
+      "translit": "",
+      "lemma": "οὐ",
+      "rmac": "D---------",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "D---------"
+    },
+    {
+      "column": 21,
+      "nbla_idx": "33",
+      "nbla": "sabe",
+      "greek": "οἶδεν",
+      "greek_tokens": [
+        "23"
+      ],
+      "translit": "",
+      "lemma": "οἶδα",
+      "rmac": "V-XAI-3S",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "V-3XAI-S--"
+    },
+    {
+      "column": 22,
+      "nbla_idx": "34,35,36",
+      "nbla": "lo que dices",
+      "greek": "τί",
+      "greek_tokens": [
+        "20"
+      ],
+      "translit": "",
+      "lemma": "τίς",
+      "rmac": "RI----ASN-",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RI----ASN-"
+    },
+    {
+      "column": 23,
+      "nbla_idx": "36",
+      "nbla": "dices",
+      "greek": "λέγεις",
+      "greek_tokens": [
+        "21"
+      ],
+      "translit": "",
+      "lemma": "λέγω",
+      "rmac": "V-PAI-2S",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "V-2PAI-S--"
+    }
+  ]
+}

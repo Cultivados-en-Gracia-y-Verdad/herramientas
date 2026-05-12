@@ -1,0 +1,414 @@
+{
+  "book": "1corintios",
+  "source_book": "1corintios",
+  "chapter": 8,
+  "verse": 6,
+  "reference": "1Corintios 8:6",
+  "columns": [
+    {
+      "column": 1,
+      "nbla_idx": "01",
+      "nbla": "pero",
+      "greek": "ἀλλʼ",
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "ἀλλά",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 2,
+      "nbla_idx": "02,03,04,05,06,07,08,09",
+      "nbla": "para nosotros hay un solo dios el padre",
+      "greek": "ἡμῖν",
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
+      "lemma": "ἐγώ",
+      "rmac": "P-DP",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RP----DP--"
+    },
+    {
+      "column": 3,
+      "nbla_idx": "02,03,04,05,06,07,08,09",
+      "nbla": "para nosotros hay un solo dios el padre",
+      "greek": "εἷς",
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "εἷς",
+      "rmac": "A-NSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "A-----NSM-"
+    },
+    {
+      "column": 4,
+      "nbla_idx": "02,03,04,05,06,07,08,09",
+      "nbla": "para nosotros hay un solo dios el padre",
+      "greek": "θεὸς",
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "θεός",
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "N-----NSM-"
+    },
+    {
+      "column": 5,
+      "nbla_idx": "02,03,04,05,06,07,08,09",
+      "nbla": "para nosotros hay un solo dios el padre",
+      "greek": "ὁ",
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-NSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RA----NSM-"
+    },
+    {
+      "column": 6,
+      "nbla_idx": "02,03,04,05,06,07,08,09",
+      "nbla": "para nosotros hay un solo dios el padre",
+      "greek": "πατήρ",
+      "greek_tokens": [
+        "06"
+      ],
+      "translit": "",
+      "lemma": "πατήρ",
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "N-----NSM-"
+    },
+    {
+      "column": 7,
+      "nbla_idx": "10,11,12,13,14,15",
+      "nbla": "de quien proceden todas las cosas",
+      "greek": "ἐξ",
+      "greek_tokens": [
+        "07"
+      ],
+      "translit": "",
+      "lemma": "ἐκ",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 8,
+      "nbla_idx": "10,11,12,13,14,15",
+      "nbla": "de quien proceden todas las cosas",
+      "greek": "οὗ",
+      "greek_tokens": [
+        "08"
+      ],
+      "translit": "",
+      "lemma": "ὅς",
+      "rmac": "RR----GSM-",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RR----GSM-"
+    },
+    {
+      "column": 9,
+      "nbla_idx": "10,11,12,13,14,15",
+      "nbla": "de quien proceden todas las cosas",
+      "greek": "τὰ",
+      "greek_tokens": [
+        "09"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-NPN",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RA----NPN-"
+    },
+    {
+      "column": 10,
+      "nbla_idx": "10,11,12,13,14,15",
+      "nbla": "de quien proceden todas las cosas",
+      "greek": "πάντα",
+      "greek_tokens": [
+        "10"
+      ],
+      "translit": "",
+      "lemma": "πᾶς",
+      "rmac": "A-NPN",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "A-----NPN-"
+    },
+    {
+      "column": 11,
+      "nbla_idx": "16,17,18,19,20",
+      "nbla": "y nosotros somos para él",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "11"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 12,
+      "nbla_idx": "16,17,18,19,20",
+      "nbla": "y nosotros somos para él",
+      "greek": "ἡμεῖς",
+      "greek_tokens": [
+        "12"
+      ],
+      "translit": "",
+      "lemma": "ἐγώ",
+      "rmac": "P-NP",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RP----NP--"
+    },
+    {
+      "column": 13,
+      "nbla_idx": "16,17,18,19,20",
+      "nbla": "y nosotros somos para él",
+      "greek": "εἰς",
+      "greek_tokens": [
+        "13"
+      ],
+      "translit": "",
+      "lemma": "εἰς",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 14,
+      "nbla_idx": "16,17,18,19,20",
+      "nbla": "y nosotros somos para él",
+      "greek": "αὐτόν",
+      "greek_tokens": [
+        "14"
+      ],
+      "translit": "",
+      "lemma": "αὐτός",
+      "rmac": "P-ASM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RP----ASM-"
+    },
+    {
+      "column": 15,
+      "nbla_idx": "21,22,23,24,25",
+      "nbla": "y un solo señor jesucristo",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "15"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 16,
+      "nbla_idx": "21,22,23,24,25",
+      "nbla": "y un solo señor jesucristo",
+      "greek": "εἷς",
+      "greek_tokens": [
+        "16"
+      ],
+      "translit": "",
+      "lemma": "εἷς",
+      "rmac": "A-NSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "A-----NSM-"
+    },
+    {
+      "column": 17,
+      "nbla_idx": "21,22,23,24,25",
+      "nbla": "y un solo señor jesucristo",
+      "greek": "κύριος",
+      "greek_tokens": [
+        "17"
+      ],
+      "translit": "",
+      "lemma": "κύριος",
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "N-----NSM-"
+    },
+    {
+      "column": 18,
+      "nbla_idx": "21,22,23,24,25",
+      "nbla": "y un solo señor jesucristo",
+      "greek": "ἰησοῦς",
+      "greek_tokens": [
+        "18"
+      ],
+      "translit": "",
+      "lemma": "Ἰησοῦς",
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "N-----NSM-"
+    },
+    {
+      "column": 19,
+      "nbla_idx": "21,22,23,24,25",
+      "nbla": "y un solo señor jesucristo",
+      "greek": "χριστός",
+      "greek_tokens": [
+        "19"
+      ],
+      "translit": "",
+      "lemma": "Χριστός",
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "N-----NSM-"
+    },
+    {
+      "column": 20,
+      "nbla_idx": "26,27,28,29,30,31",
+      "nbla": "por quien son todas las cosas",
+      "greek": "διʼ",
+      "greek_tokens": [
+        "20"
+      ],
+      "translit": "",
+      "lemma": "διά",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 21,
+      "nbla_idx": "26,27,28,29,30,31",
+      "nbla": "por quien son todas las cosas",
+      "greek": "οὗ",
+      "greek_tokens": [
+        "21"
+      ],
+      "translit": "",
+      "lemma": "ὅς",
+      "rmac": "RR----GSM-",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RR----GSM-"
+    },
+    {
+      "column": 22,
+      "nbla_idx": "26,27,28,29,30,31",
+      "nbla": "por quien son todas las cosas",
+      "greek": "τὰ",
+      "greek_tokens": [
+        "22"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-NPN",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RA----NPN-"
+    },
+    {
+      "column": 23,
+      "nbla_idx": "26,27,28,29,30,31",
+      "nbla": "por quien son todas las cosas",
+      "greek": "πάντα",
+      "greek_tokens": [
+        "23"
+      ],
+      "translit": "",
+      "lemma": "πᾶς",
+      "rmac": "A-NPN",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "A-----NPN-"
+    },
+    {
+      "column": 24,
+      "nbla_idx": "32,33,34,35,36,37,38",
+      "nbla": "y por medio de él existimos nosotros",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "24"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 25,
+      "nbla_idx": "32,33,34,35,36,37,38",
+      "nbla": "y por medio de él existimos nosotros",
+      "greek": "ἡμεῖς",
+      "greek_tokens": [
+        "25"
+      ],
+      "translit": "",
+      "lemma": "ἐγώ",
+      "rmac": "P-NP",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RP----NP--"
+    },
+    {
+      "column": 26,
+      "nbla_idx": "32,33,34,35,36,37,38",
+      "nbla": "y por medio de él existimos nosotros",
+      "greek": "διʼ",
+      "greek_tokens": [
+        "26"
+      ],
+      "translit": "",
+      "lemma": "διά",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 27,
+      "nbla_idx": "32,33,34,35,36,37,38",
+      "nbla": "y por medio de él existimos nosotros",
+      "greek": "αὐτοῦ",
+      "greek_tokens": [
+        "27"
+      ],
+      "translit": "",
+      "lemma": "αὐτός",
+      "rmac": "P-GSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "RP----GSM-"
+    }
+  ]
+}

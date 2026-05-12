@@ -1,0 +1,189 @@
+{
+  "book": "1corintios",
+  "source_book": "1cor",
+  "chapter": 1,
+  "verse": 3,
+  "reference": "1Corintios 1:3",
+  "columns": [
+    {
+      "column": 1,
+      "nbla_idx": "01",
+      "nbla": "gracia",
+      "greek": "χάρις",
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "χάρις",
+      "rmac": "N-NSF",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----NSF-"
+    },
+    {
+      "column": 2,
+      "nbla_idx": "02",
+      "nbla": "y",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 3,
+      "nbla_idx": "03",
+      "nbla": "paz",
+      "greek": "εἰρήνη",
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "εἰρήνη",
+      "rmac": "N-NSF",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----NSF-"
+    },
+    {
+      "column": 4,
+      "nbla_idx": "04-05",
+      "nbla": "a ustedes",
+      "greek": "ὑμῖν",
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
+      "lemma": "σύ",
+      "rmac": "P-DP",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RP----DP--"
+    },
+    {
+      "column": 5,
+      "nbla_idx": "06-08",
+      "nbla": "de parte de",
+      "greek": "ἀπὸ",
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
+      "lemma": "ἀπό",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 6,
+      "nbla_idx": "09",
+      "nbla": "dios",
+      "greek": "θεοῦ",
+      "greek_tokens": [
+        "06"
+      ],
+      "translit": "",
+      "lemma": "θεός",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----GSM-"
+    },
+    {
+      "column": 7,
+      "nbla_idx": "10",
+      "nbla": "nuestro",
+      "greek": "ἡμῶν",
+      "greek_tokens": [
+        "08"
+      ],
+      "translit": "",
+      "lemma": "ἐγώ",
+      "rmac": "P-GP",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RP----GP--"
+    },
+    {
+      "column": 8,
+      "nbla_idx": "11",
+      "nbla": "padre",
+      "greek": "πατρὸς",
+      "greek_tokens": [
+        "07"
+      ],
+      "translit": "",
+      "lemma": "πατήρ",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----GSM-"
+    },
+    {
+      "column": 9,
+      "nbla_idx": "12",
+      "nbla": "y",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "09"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 10,
+      "nbla_idx": "13-14",
+      "nbla": "del señor",
+      "greek": "κυρίου",
+      "greek_tokens": [
+        "10"
+      ],
+      "translit": "",
+      "lemma": "κύριος",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----GSM-"
+    },
+    {
+      "column": 11,
+      "nbla_idx": "15",
+      "nbla": "jesucristo",
+      "greek": "ἰησοῦ",
+      "greek_tokens": [
+        "11"
+      ],
+      "translit": "",
+      "lemma": "Ἰησοῦς",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "merged-forward",
+      "morphgnt": "N-----GSM-"
+    },
+    {
+      "column": 12,
+      "nbla_idx": "15",
+      "nbla": "jesucristo",
+      "greek": "χριστοῦ",
+      "greek_tokens": [
+        "12"
+      ],
+      "translit": "",
+      "lemma": "Χριστός",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "N-----GSM-"
+    }
+  ]
+}

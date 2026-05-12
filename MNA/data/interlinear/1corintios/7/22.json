@@ -1,0 +1,249 @@
+{
+  "book": "1corintios",
+  "source_book": "1corintios",
+  "chapter": 7,
+  "verse": 22,
+  "reference": "1Corintios 7:22",
+  "columns": [
+    {
+      "column": 1,
+      "nbla_idx": "01",
+      "nbla": "porque",
+      "greek": "γὰρ",
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
+      "lemma": "γάρ",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 2,
+      "nbla_idx": "02-05",
+      "nbla": "el que fue llamado",
+      "greek": "ὁ",
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-NSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----NSM-"
+    },
+    {
+      "column": 3,
+      "nbla_idx": "02-05",
+      "nbla": "el que fue llamado",
+      "greek": "κληθεὶς",
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
+      "lemma": "καλέω",
+      "rmac": "V-APP",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "V--APPNSM-"
+    },
+    {
+      "column": 4,
+      "nbla_idx": "06-08",
+      "nbla": "por el señor",
+      "greek": "ἐν",
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "ἐν",
+      "rmac": "P---------",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "P---------"
+    },
+    {
+      "column": 5,
+      "nbla_idx": "08",
+      "nbla": "señor",
+      "greek": "κυρίῳ",
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "κύριος",
+      "rmac": "N-DSM",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "N-----DSM-"
+    },
+    {
+      "column": 6,
+      "nbla_idx": "09-10",
+      "nbla": "siendo esclavo",
+      "greek": "δοῦλος",
+      "greek_tokens": [
+        "06"
+      ],
+      "translit": "",
+      "lemma": "δοῦλος",
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----NSM-"
+    },
+    {
+      "column": 7,
+      "nbla_idx": "11-12",
+      "nbla": "hombre libre",
+      "greek": "ἀπελεύθερος",
+      "greek_tokens": [
+        "07"
+      ],
+      "translit": "",
+      "lemma": "ἀπελεύθερος",
+      "rmac": "A-NSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "A-----NSM-"
+    },
+    {
+      "column": 8,
+      "nbla_idx": "13",
+      "nbla": "es",
+      "greek": "ἐστίν",
+      "greek_tokens": [
+        "09"
+      ],
+      "translit": "",
+      "lemma": "εἰμί",
+      "rmac": "V-PAI-3S",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "V-3PAI-S--"
+    },
+    {
+      "column": 9,
+      "nbla_idx": "14-15",
+      "nbla": "del señor",
+      "greek": "κυρίου",
+      "greek_tokens": [
+        "08"
+      ],
+      "translit": "",
+      "lemma": "κύριος",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----GSM-"
+    },
+    {
+      "column": 10,
+      "nbla_idx": "16-19",
+      "nbla": "de la misma manera",
+      "greek": "ὁμοίως",
+      "greek_tokens": [
+        "10"
+      ],
+      "translit": "",
+      "lemma": "ὁμοίως",
+      "rmac": "D---------",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "D---------"
+    },
+    {
+      "column": 11,
+      "nbla_idx": "20-23",
+      "nbla": "el que fue llamado",
+      "greek": "ὁ",
+      "greek_tokens": [
+        "11"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-NSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----NSM-"
+    },
+    {
+      "column": 12,
+      "nbla_idx": "20-23",
+      "nbla": "el que fue llamado",
+      "greek": "κληθεὶς",
+      "greek_tokens": [
+        "13"
+      ],
+      "translit": "",
+      "lemma": "καλέω",
+      "rmac": "V-APP",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "V--APPNSM-"
+    },
+    {
+      "column": 13,
+      "nbla_idx": "24-25",
+      "nbla": "siendo libre",
+      "greek": "ἐλεύθερος",
+      "greek_tokens": [
+        "12"
+      ],
+      "translit": "",
+      "lemma": "ἐλεύθερος",
+      "rmac": "A-NSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "A-----NSM-"
+    },
+    {
+      "column": 14,
+      "nbla_idx": "26",
+      "nbla": "esclavo",
+      "greek": "δοῦλός",
+      "greek_tokens": [
+        "14"
+      ],
+      "translit": "",
+      "lemma": "δοῦλος",
+      "rmac": "N-NSM",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----NSM-"
+    },
+    {
+      "column": 15,
+      "nbla_idx": "27",
+      "nbla": "es",
+      "greek": "ἐστιν",
+      "greek_tokens": [
+        "15"
+      ],
+      "translit": "",
+      "lemma": "εἰμί",
+      "rmac": "V-PAI-3S",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "V-3PAI-S--"
+    },
+    {
+      "column": 16,
+      "nbla_idx": "28-29",
+      "nbla": "de cristo",
+      "greek": "Χριστοῦ",
+      "greek_tokens": [
+        "16"
+      ],
+      "translit": "",
+      "lemma": "Χριστός",
+      "rmac": "N-GSM",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----GSM-"
+    }
+  ]
+}

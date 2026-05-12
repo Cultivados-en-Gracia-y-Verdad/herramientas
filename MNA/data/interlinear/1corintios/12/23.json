@@ -1,0 +1,279 @@
+{
+  "book": "1corintios",
+  "source_book": "1corintios",
+  "chapter": 12,
+  "verse": 23,
+  "reference": "1Corintios 12:23",
+  "columns": [
+    {
+      "column": 1,
+      "nbla_idx": "01,02",
+      "nbla": "y las",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 2,
+      "nbla_idx": "03",
+      "nbla": "partes",
+      "greek": "ἃ",
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
+      "lemma": "ὅς",
+      "rmac": "RR----APN-",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RR----APN-"
+    },
+    {
+      "column": 3,
+      "nbla_idx": "04",
+      "nbla": "del",
+      "greek": "τοῦ",
+      "greek_tokens": [
+        "06"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-GSN",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RA----GSN-"
+    },
+    {
+      "column": 4,
+      "nbla_idx": "05",
+      "nbla": "cuerpo",
+      "greek": "σώματος",
+      "greek_tokens": [
+        "07"
+      ],
+      "translit": "",
+      "lemma": "σῶμα",
+      "rmac": "N-GSN",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "N-----GSN-"
+    },
+    {
+      "column": 5,
+      "nbla_idx": "06,07",
+      "nbla": "que estimamos",
+      "greek": "δοκοῦμεν",
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "δοκέω",
+      "rmac": "V-PAI-1P",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-1PAI-P--"
+    },
+    {
+      "column": 6,
+      "nbla_idx": "06,07",
+      "nbla": "que estimamos",
+      "greek": "εἶναι",
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
+      "lemma": "εἰμί",
+      "rmac": "V-PAN",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "V--PAN----"
+    },
+    {
+      "column": 7,
+      "nbla_idx": "08,09",
+      "nbla": "menos honrosas",
+      "greek": "ἀτιμότερα",
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "ἄτιμος",
+      "rmac": "A-APN",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "A-----APNC"
+    },
+    {
+      "column": 8,
+      "nbla_idx": "10,11",
+      "nbla": "a estas",
+      "greek": "τούτοις",
+      "greek_tokens": [
+        "08"
+      ],
+      "translit": "",
+      "lemma": "οὗτος",
+      "rmac": "RD----DPN-",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RD----DPN-"
+    },
+    {
+      "column": 9,
+      "nbla_idx": "12,13",
+      "nbla": "las vestimos",
+      "greek": "περιτίθεμεν",
+      "greek_tokens": [
+        "11"
+      ],
+      "translit": "",
+      "lemma": "περιτίθημι",
+      "rmac": "V-PAI-1P",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-1PAI-P--"
+    },
+    {
+      "column": 10,
+      "nbla_idx": "14,15",
+      "nbla": "con más",
+      "greek": "τιμὴν",
+      "greek_tokens": [
+        "09"
+      ],
+      "translit": "",
+      "lemma": "τιμή",
+      "rmac": "N-ASF",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----ASF-"
+    },
+    {
+      "column": 11,
+      "nbla_idx": "16",
+      "nbla": "honra",
+      "greek": "περισσοτέραν",
+      "greek_tokens": [
+        "10"
+      ],
+      "translit": "",
+      "lemma": "περισσότερος",
+      "rmac": "A-ASF",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "A-----ASFC"
+    },
+    {
+      "column": 12,
+      "nbla_idx": "17",
+      "nbla": "así",
+      "greek": "καὶ",
+      "greek_tokens": [
+        "12"
+      ],
+      "translit": "",
+      "lemma": "καί",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 13,
+      "nbla_idx": "18,19,20",
+      "nbla": "que las partes",
+      "greek": "τὰ",
+      "greek_tokens": [
+        "13"
+      ],
+      "translit": "",
+      "lemma": "ὁ",
+      "rmac": "T-NPN",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RA----NPN-"
+    },
+    {
+      "column": 14,
+      "nbla_idx": "21,22",
+      "nbla": "que consideramos",
+      "greek": "ἡμῶν",
+      "greek_tokens": [
+        "15"
+      ],
+      "translit": "",
+      "lemma": "ἐγώ",
+      "rmac": "P-GP",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "RP----GP--"
+    },
+    {
+      "column": 15,
+      "nbla_idx": "23,24",
+      "nbla": "más íntimas",
+      "greek": "ἀσχήμονα",
+      "greek_tokens": [
+        "14"
+      ],
+      "translit": "",
+      "lemma": "ἀσχήμων",
+      "rmac": "A-NPN",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "A-----NPN-"
+    },
+    {
+      "column": 16,
+      "nbla_idx": "25",
+      "nbla": "reciben",
+      "greek": "ἔχει",
+      "greek_tokens": [
+        "18"
+      ],
+      "translit": "",
+      "lemma": "ἔχω",
+      "rmac": "V-PAI-3S",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "V-3PAI-S--"
+    },
+    {
+      "column": 17,
+      "nbla_idx": "26,27",
+      "nbla": "un trato",
+      "greek": "εὐσχημοσύνην",
+      "greek_tokens": [
+        "16"
+      ],
+      "translit": "",
+      "lemma": "εὐσχημοσύνη",
+      "rmac": "N-ASF",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "N-----ASF-"
+    },
+    {
+      "column": 18,
+      "nbla_idx": "28,29",
+      "nbla": "más honroso",
+      "greek": "περισσοτέραν",
+      "greek_tokens": [
+        "17"
+      ],
+      "translit": "",
+      "lemma": "περισσότερος",
+      "rmac": "A-ASF",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "A-----ASFC"
+    }
+  ]
+}

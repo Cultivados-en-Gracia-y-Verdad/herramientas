@@ -1,0 +1,84 @@
+{
+  "book": "1corintios",
+  "source_book": "1corintios",
+  "chapter": 14,
+  "verse": 38,
+  "reference": "1Corintios 14:38",
+  "columns": [
+    {
+      "column": 1,
+      "nbla_idx": "01,02",
+      "nbla": "pero si",
+      "greek": "εἰ",
+      "greek_tokens": [
+        "01"
+      ],
+      "translit": "",
+      "lemma": "εἰ",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 2,
+      "nbla_idx": "01",
+      "nbla": "pero",
+      "greek": "δέ",
+      "greek_tokens": [
+        "02"
+      ],
+      "translit": "",
+      "lemma": "δέ",
+      "rmac": "CONJ",
+      "strongs": "",
+      "alignment": "shared",
+      "morphgnt": "C---------"
+    },
+    {
+      "column": 3,
+      "nbla_idx": "03",
+      "nbla": "alguien",
+      "greek": "τις",
+      "greek_tokens": [
+        "03"
+      ],
+      "translit": "",
+      "lemma": "τις",
+      "rmac": "RI----NSM-",
+      "strongs": "",
+      "alignment": "direct",
+      "morphgnt": "RI----NSM-"
+    },
+    {
+      "column": 4,
+      "nbla_idx": "04,05,06",
+      "nbla": "no reconoce esto",
+      "greek": "ἀγνοεῖ",
+      "greek_tokens": [
+        "04"
+      ],
+      "translit": "",
+      "lemma": "ἀγνοέω",
+      "rmac": "V-PAI-3S",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-3PAI-S--"
+    },
+    {
+      "column": 5,
+      "nbla_idx": "07,08,09,10",
+      "nbla": "él no es reconocido",
+      "greek": "ἀγνοεῖται",
+      "greek_tokens": [
+        "05"
+      ],
+      "translit": "",
+      "lemma": "ἀγνοέω",
+      "rmac": "V-PPI-3S",
+      "strongs": "",
+      "alignment": "expanded",
+      "morphgnt": "V-3PPI-S--"
+    }
+  ]
+}
