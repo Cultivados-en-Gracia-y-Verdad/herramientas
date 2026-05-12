@@ -3,16 +3,37 @@
 import sys
 import yaml
 import shutil
+import unicodedata
+import re
 from pathlib import Path
 
 HEADER = ["BOOK", "CH", "VS", "G_IDX", "GREEK", "NBLA_IDX", "NBLA_TEXT", "ALIGNMENT"]
 
-SEARCH_WINDOW = 8
+SEARCH_WINDOW = 12
 
 G_TOKEN_ROOT = Path("data/g-tokens")
 S_TOKEN_ROOT = Path("data/s-tokens")
 ALIGNMENT_ROOT = Path("data/alignments")
 RULES_PATH = Path("data/rules/alignment_rules.yaml")
+
+
+def strip_accents(text):
+    return "".join(
+        ch for ch in unicodedata.normalize("NFD", str(text))
+        if unicodedata.category(ch) != "Mn"
+    )
+
+
+def norm_token(text):
+    text = strip_accents(text).lower().strip()
+    text = re.sub(r"[.,;:!?¿¡\[\](){}\"'“”‘’··⸂⸃⸀⸁⸃]", "", text)
+    text = text.replace("ς", "σ")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def normalize_words(words):
+    return [norm_token(w) for w in words]
 
 
 def load_tokens(path):
@@ -47,21 +68,26 @@ def load_rules(path):
         return []
 
     if isinstance(data, list):
-        return data
+        rules = data
+    elif isinstance(data, dict):
+        rules = data.get("rules", [])
+    else:
+        raise ValueError(f"Unsupported rules YAML structure: {type(data)}")
 
-    if isinstance(data, dict):
-        return data.get("rules", [])
-
-    raise ValueError(f"Unsupported rules YAML structure: {type(data)}")
+    # Phrase-first precedence: longer Greek matches must win before
+    # singleton rules can consume part of the span.
+    return sorted(
+        rules,
+        key=lambda r: (
+            -len(r.get("match", {}).get("greek", []) or []),
+            -int(r.get("priority", 0)),
+        ),
+    )
 
 
 def parse_ref_from_filename(path, book):
     stem = Path(path).stem
 
-    # Accept:
-    # romanos-1-1.txt
-    # 1-1.txt
-    # 001-001.txt
     parts = stem.split("-")
 
     if len(parts) == 3:
@@ -103,16 +129,8 @@ def rule_nbla_words(rule):
 
 
 def match_rule(greek_tokens, i, rules):
-    sorted_rules = sorted(
-        rules,
-        key=lambda r: (
-            -int(r.get("priority", 0)),
-            -len(r.get("match", {}).get("greek", [])),
-        ),
-    )
-
-    for rule in sorted_rules:
-        pattern = rule.get("match", {}).get("greek", [])
+    for rule in rules:
+        pattern = rule.get("match", {}).get("greek", []) or []
 
         if not pattern:
             continue
@@ -122,7 +140,7 @@ def match_rule(greek_tokens, i, rules):
 
         segment = [tok for _, tok in greek_tokens[i : i + len(pattern)]]
 
-        if segment == pattern:
+        if normalize_words(segment) == normalize_words(pattern):
             return rule
 
     return None
@@ -138,10 +156,12 @@ def find_nbla_phrase(s_tokens, start_i, words, window=SEARCH_WINDOW):
     if max_start < start_i:
         return None
 
+    wanted = normalize_words(words)
+
     for i in range(start_i, max_start + 1):
         segment = [tok for _, tok in s_tokens[i : i + phrase_len]]
 
-        if segment == words:
+        if normalize_words(segment) == wanted:
             return i
 
     return None
@@ -179,7 +199,7 @@ def suggest(book, ch, vs, g_tokens, s_tokens, rules):
         if rule:
             action = rule.get("action", {})
             alignment_type = action.get("type", "direct")
-            pattern = rule.get("match", {}).get("greek", [])
+            pattern = rule.get("match", {}).get("greek", []) or []
             span_len = len(pattern)
 
             if alignment_type == "missing":
@@ -193,42 +213,38 @@ def suggest(book, ch, vs, g_tokens, s_tokens, rules):
             nbla_words = rule_nbla_words(rule)
             consume = int(action.get("consume", len(nbla_words) if nbla_words else 1))
 
-            # Prevent runaway singleton expansions
-            if span_len == 1 and consume > 4:
-                rule = None
-            else:
-                if consume <= 0:
-                    for j in range(span_len):
-                        g_idx, g_tok = g_tokens[g_i + j]
-                        rows.append([book, ch, vs, g_idx, g_tok, "-", "-", "missing"])
-
-                    g_i += span_len
-                    continue
-
-                anchor_i = find_nbla_phrase(s_tokens, s_i, nbla_words) if nbla_words else None
-
-                if anchor_i is not None:
-                    s_i = anchor_i
-
-                nbla_idx, nbla_text = span_from_tokens(s_tokens, s_i, consume)
-
-                if nbla_idx == "-" or nbla_text == "-":
-                    for j in range(span_len):
-                        g_idx, g_tok = g_tokens[g_i + j]
-                        rows.append([book, ch, vs, g_idx, g_tok, "-", "-", "missing"])
-
-                    g_i += span_len
-                    continue
-
-                s_i += consume
-
+            if consume <= 0:
                 for j in range(span_len):
                     g_idx, g_tok = g_tokens[g_i + j]
-                    row_alignment = alignment_type if j == 0 else "shared"
-                    rows.append([book, ch, vs, g_idx, g_tok, nbla_idx, nbla_text, row_alignment])
+                    rows.append([book, ch, vs, g_idx, g_tok, "-", "-", "missing"])
 
                 g_i += span_len
                 continue
+
+            anchor_i = find_nbla_phrase(s_tokens, s_i, nbla_words) if nbla_words else None
+
+            if anchor_i is not None:
+                s_i = anchor_i
+
+            nbla_idx, nbla_text = span_from_tokens(s_tokens, s_i, consume)
+
+            if nbla_idx == "-" or nbla_text == "-":
+                for j in range(span_len):
+                    g_idx, g_tok = g_tokens[g_i + j]
+                    rows.append([book, ch, vs, g_idx, g_tok, "-", "-", "missing"])
+
+                g_i += span_len
+                continue
+
+            s_i += consume
+
+            for j in range(span_len):
+                g_idx, g_tok = g_tokens[g_i + j]
+                row_alignment = alignment_type if j == 0 else "shared"
+                rows.append([book, ch, vs, g_idx, g_tok, nbla_idx, nbla_text, row_alignment])
+
+            g_i += span_len
+            continue
 
         g_idx, g_tok = g_tokens[g_i]
 
