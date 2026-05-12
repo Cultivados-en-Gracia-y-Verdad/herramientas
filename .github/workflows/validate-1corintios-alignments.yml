@@ -1,0 +1,42 @@
+name: Validate 1 Corinthians Alignments
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'MNA/data/alignments/1corintios/**'
+      - 'MNA/data/g-tokens/1corintios/**'
+      - 'MNA/data/s-tokens/1corintios/**'
+      - 'MNA/scripts/validate_alignment.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Validate all corrected TSVs
+        working-directory: MNA
+        shell: bash
+        run: |
+          set -e
+
+          for f in data/alignments/1corintios/1corintios-*.tsv; do
+            case "$f" in
+              *.original.tsv) continue ;;
+            esac
+
+            base=$(basename "$f" .tsv)
+
+            echo "Validating $base"
+
+            python3 scripts/validate_alignment.py \
+              "data/g-tokens/1corintios/${base}.txt" \
+              "data/s-tokens/1corintios/${base}.txt" \
+              "$f"
+          done
