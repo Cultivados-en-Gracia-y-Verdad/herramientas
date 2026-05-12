@@ -15,7 +15,6 @@ FINITE_PREFIXES = (
 
 CLAUSE_LEVEL = "clause-level"
 PHRASE_LEVEL = "phrase-level"
-DISCOURSE_LEVEL = "discourse-level"
 
 CONDITION_LEMMAS = {"εἰ"}
 ALTERNATIVE_LEMMAS = {"ἤ"}
@@ -42,7 +41,6 @@ class Clause:
     embedded_label: Optional[str] = None
     owner_clause_id: Optional[str] = None
     relation_type: Optional[str] = None
-    structural_level: str = CLAUSE_LEVEL
     children: List["Clause"] = field(default_factory=list)
 
     def surface_text(self) -> str:
@@ -51,21 +49,14 @@ class Clause:
     def surface(self) -> str:
         text = self.surface_text()
         finite = (self.finite_surface or self.gloss or "").strip()
-
         if not text:
             return ""
-
         if "==" in text:
             return text
-
         if finite and finite in text:
             return text.replace(finite, f"=={finite}==", 1)
-
-        # Fallback: normalized whitespace match.
         if finite:
-            pattern = re.compile(re.escape(finite), re.IGNORECASE)
-            return pattern.sub(f"=={finite}==", text, count=1)
-
+            return re.sub(re.escape(finite), f"=={finite}==", text, count=1, flags=re.IGNORECASE)
         return f"=={text}=="
 
     def rendered_clause(self) -> str:
@@ -92,7 +83,6 @@ class VisibleStructureRenderer:
     def add_clause(self, clause: Clause, indent: int = 0):
         spacing = "    " * indent
         self.lines.append(f"{spacing}{clause.rendered_clause()}")
-
         for child in clause.children:
             if child.embedded_label:
                 self.lines.append(f"{spacing}    {child.embedded_label}")
@@ -100,15 +90,6 @@ class VisibleStructureRenderer:
 
     def render(self) -> str:
         return "\n".join(self.lines)
-
-
-def attach_child(parent: Clause, child: Clause, relation_type: str) -> bool:
-    if child.owner_clause_id is not None:
-        return False
-    child.owner_clause_id = parent.cid
-    child.relation_type = relation_type
-    parent.children.append(child)
-    return True
 
 
 def strip_accents(text: str) -> str:
@@ -125,17 +106,29 @@ def greek_index(col: Dict) -> int:
         try:
             return int(token)
         except Exception:
-            continue
+            pass
     return 999999
 
 
 def nbla_indexes(col: Dict) -> List[int]:
+    """Parse NBLA indexes in all current project forms: 01,02 / 01-02 / 01, 02 / -."""
     raw = str(col.get("nbla_idx", "") or "").strip()
     if not raw or raw == "-":
         return []
+
     values: List[int] = []
     for part in re.split(r"[,;\s]+", raw):
-        if not part:
+        part = part.strip()
+        if not part or part == "-":
+            continue
+        if "-" in part:
+            left, right = part.split("-", 1)
+            try:
+                start = int(left)
+                end = int(right)
+            except ValueError:
+                continue
+            values.extend(range(start, end + 1))
             continue
         try:
             values.append(int(part))
@@ -151,42 +144,40 @@ def first_nbla_index(col: Dict) -> int:
 
 def build_nbla_chunks(data) -> List[Tuple[int, int, str]]:
     chunks: List[Tuple[int, int, str]] = []
-    seen_spans = set()
-
+    seen = set()
     for col in sorted(data.get("columns", []), key=lambda c: (first_nbla_index(c), greek_index(c))):
         indexes = nbla_indexes(col)
         text = str(col.get("nbla", "") or "").strip()
-        if not indexes or not text:
+        if not indexes or not text or text == "-":
             continue
-
         span = (min(indexes), max(indexes), text)
-        if span in seen_spans:
+        if span in seen:
             continue
-        seen_spans.add(span)
+        seen.add(span)
         chunks.append(span)
 
-    # Remove chunks fully covered by a previous multi-token chunk.
     filtered: List[Tuple[int, int, str]] = []
-    covered_indexes = set()
+    covered = set()
     for start, end, text in chunks:
         span_indexes = set(range(start, end + 1))
-        if span_indexes and span_indexes.issubset(covered_indexes):
+        if span_indexes and span_indexes.issubset(covered):
             continue
         filtered.append((start, end, text))
-        covered_indexes.update(span_indexes)
-
+        covered.update(span_indexes)
     return filtered
 
 
 def collect_nbla_surface(chunks: List[Tuple[int, int, str]], start: int, end: int) -> str:
-    parts: List[str] = []
-    for chunk_start, chunk_end, text in chunks:
-        if chunk_start < start:
-            continue
-        if chunk_start > end:
-            continue
-        parts.append(text)
-    return " ".join(parts).strip()
+    return " ".join(text for chunk_start, _, text in chunks if start <= chunk_start <= end).strip()
+
+
+def is_finite_rmac(rmac: str) -> bool:
+    return bool(rmac) and any(rmac.startswith(prefix) for prefix in FINITE_PREFIXES)
+
+
+def is_imperative_rmac(rmac: str) -> bool:
+    parts = (rmac or "").split("-")
+    return len(parts) >= 2 and (parts[1].endswith("M") or parts[1].endswith("D"))
 
 
 def has_stem(clause: Clause, stems: List[str]) -> bool:
@@ -195,60 +186,16 @@ def has_stem(clause: Clause, stems: List[str]) -> bool:
 
 
 def is_reporting_clause(clause: Clause) -> bool:
-    return (
-        has_stem(clause, REPORTING_LEMMA_STEMS)
-        and any(norm(clause.gloss).startswith(stem) for stem in REPORTING_GLOSS_STEMS)
-    )
+    return has_stem(clause, REPORTING_LEMMA_STEMS) and any(norm(clause.gloss).startswith(stem) for stem in REPORTING_GLOSS_STEMS)
 
 
-def build_relative_embedding(parent: Clause, child: Clause):
-    child.embedded_label = "REL [pronombre relativo griego]"
-    attach_child(parent, child, "relative")
-
-
-def build_apposition_embedding(parent: Clause, child: Clause):
-    child.embedded_label = "APP [explicación / es decir]"
-    attach_child(parent, child, "apposition")
-
-
-def build_condition_group(main_clause: Clause, condition_members: List[Clause], has_alternative: bool):
-    if not condition_members:
-        return
-    condition_members[0].embedded_label = "COND [εἰ ... ἢ]" if len(condition_members) > 1 or has_alternative else "COND [εἰ]"
-    for member in condition_members:
-        attach_child(main_clause, member, "condition")
-
-
-def build_connector_embedding(parent: Clause, child: Clause, label: str, relation_type: str):
-    child.embedded_label = label
-    attach_child(parent, child, relation_type)
-
-
-def build_purpose_group(parent: Clause, purpose_members: List[Clause]):
-    if not purpose_members:
-        return
-    purpose_members[0].embedded_label = "PURP [ἵνα]"
-    for member in purpose_members:
-        attach_child(parent, member, "purpose")
-
-
-def is_finite_rmac(rmac: str) -> bool:
-    if not rmac:
+def attach_child(parent: Clause, child: Clause, relation_type: str) -> bool:
+    if child.owner_clause_id is not None:
         return False
-    return any(rmac.startswith(prefix) for prefix in FINITE_PREFIXES)
-
-
-def is_imperative_rmac(rmac: str) -> bool:
-    parts = (rmac or "").split("-")
-    if len(parts) < 2:
-        return False
-    tvm = parts[1]
-    return tvm.endswith("M") or tvm.endswith("D")
-
-
-def load_json(path: str):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    child.owner_clause_id = parent.cid
+    child.relation_type = relation_type
+    parent.children.append(child)
+    return True
 
 
 def build_clauses(data) -> List[Clause]:
@@ -259,30 +206,23 @@ def build_clauses(data) -> List[Clause]:
         rmac = col.get("rmac", "")
         if not is_finite_rmac(rmac):
             continue
-
-        greek = col.get("greek", "")
-        gloss = col.get("nbla", "")
-        lemma = col.get("lemma", "")
         indexes = nbla_indexes(col)
-
-        clause = Clause(
+        gloss = str(col.get("nbla", "") or "").strip()
+        clauses.append(Clause(
             cid="",
-            greek=greek,
+            greek=col.get("greek", ""),
             gloss=gloss,
             mood=rmac,
-            lemma=lemma,
+            lemma=col.get("lemma", ""),
             greek_pos=greek_index(col),
             nbla_start=min(indexes) if indexes else 999999,
             nbla_end=max(indexes) if indexes else 999999,
             finite_surface=gloss,
             is_imperative=is_imperative_rmac(rmac),
-        )
-        clauses.append(clause)
+        ))
 
     clauses.sort(key=lambda item: item.greek_pos)
 
-    # Build a visible Spanish clause span from this finite verb up to the next finite verb.
-    # This fixes the previous bug where the visible structure printed only the finite-verb column.
     sorted_by_nbla = sorted(clauses, key=lambda item: item.nbla_start)
     max_nbla_index = max((end for _, end, _ in nbla_chunks), default=0)
     for i, clause in enumerate(sorted_by_nbla):
@@ -292,7 +232,6 @@ def build_clauses(data) -> List[Clause]:
 
     for i, clause in enumerate(clauses, start=1):
         clause.cid = f"C{i}"
-
     return clauses
 
 
@@ -301,11 +240,11 @@ def connector_key(col: Dict) -> str:
 
 
 def classify_connector(col: Dict) -> Optional[Connector]:
-    lemma = col.get("lemma", "")
+    key = connector_key(col)
     greek = col.get("greek", "")
+    lemma = col.get("lemma", "")
     gloss = col.get("nbla", "")
     pos = greek_index(col)
-    key = connector_key(col)
 
     if key in {norm(item) for item in CONDITION_LEMMAS}:
         return Connector(greek, lemma, gloss, pos, CLAUSE_LEVEL, "condition")
@@ -321,20 +260,7 @@ def classify_connector(col: Dict) -> Optional[Connector]:
 
 
 def build_connectors(data) -> List[Connector]:
-    connectors: List[Connector] = []
-    for col in data.get("columns", []):
-        connector = classify_connector(col)
-        if connector is not None:
-            connectors.append(connector)
-    return sorted(connectors, key=lambda item: item.greek_pos)
-
-
-def is_relative_pair(first: Clause, second: Clause) -> bool:
-    return has_stem(first, ["παρακαλ"]) and has_stem(second, ["γεννα", "γενν"])
-
-
-def is_apposition_pair(first: Clause, second: Clause) -> bool:
-    return has_stem(first, ["αναπεμπ", "ανεπεμψ"]) and has_stem(second, ["ειμι", "εστι"])
+    return sorted((c for col in data.get("columns", []) if (c := classify_connector(col))), key=lambda item: item.greek_pos)
 
 
 def clause_before(pos: int, clauses: List[Clause]) -> Optional[Clause]:
@@ -349,35 +275,23 @@ def clause_after(pos: int, clauses: List[Clause]) -> Optional[Clause]:
     return None
 
 
-def next_clause_after(clause: Clause, clauses: List[Clause]) -> Optional[Clause]:
-    return clause_after(clause.greek_pos, clauses)
-
-
 def first_imperative_after(clause: Clause, clauses: List[Clause]) -> Optional[Clause]:
     started = False
     for candidate in clauses:
         if candidate is clause:
             started = True
             continue
-        if not started:
-            continue
-        if candidate.is_imperative:
+        if started and candidate.is_imperative:
             return candidate
     return None
 
 
 def alternatives_between(start: Clause, end: Clause, connectors: List[Connector]) -> bool:
-    return any(
-        connector.relation_type == "alternative" and start.greek_pos < connector.greek_pos < end.greek_pos
-        for connector in connectors
-    )
+    return any(c.relation_type == "alternative" and start.greek_pos < c.greek_pos < end.greek_pos for c in connectors)
 
 
 def clause_level_connector_between(start_pos: int, end_pos: int, connectors: List[Connector]) -> bool:
-    return any(
-        connector.level == CLAUSE_LEVEL and start_pos < connector.greek_pos < end_pos
-        for connector in connectors
-    )
+    return any(c.level == CLAUSE_LEVEL and start_pos < c.greek_pos < end_pos for c in connectors)
 
 
 def apply_condition_grouping(clauses: List[Clause], connectors: List[Connector]) -> List[Clause]:
@@ -390,17 +304,17 @@ def apply_condition_grouping(clauses: List[Clause], connectors: List[Connector])
         main_clause = first_imperative_after(first_condition, clauses)
         if main_clause is None:
             continue
-
-        condition_members: List[Clause] = []
+        members = []
         for clause in clauses:
             if clause.greek_pos < first_condition.greek_pos:
                 continue
             if clause is main_clause or clause.is_imperative:
                 break
-            condition_members.append(clause)
-
-        has_alternative = alternatives_between(first_condition, main_clause, connectors)
-        build_condition_group(main_clause, condition_members, has_alternative)
+            members.append(clause)
+        if members:
+            members[0].embedded_label = "COND [εἰ ... ἢ]" if len(members) > 1 or alternatives_between(first_condition, main_clause, connectors) else "COND [εἰ]"
+            for member in members:
+                attach_child(main_clause, member, "condition")
     return clauses
 
 
@@ -408,13 +322,9 @@ def collect_purpose_members(first_child: Clause, clauses: List[Clause], connecto
     members = [first_child]
     previous = first_child
     for clause in clauses:
-        if clause.greek_pos <= first_child.greek_pos:
+        if clause.greek_pos <= first_child.greek_pos or clause.owner_clause_id is not None:
             continue
-        if clause.owner_clause_id is not None:
-            continue
-        if clause.is_imperative:
-            break
-        if clause_level_connector_between(previous.greek_pos, clause.greek_pos, connectors):
+        if clause.is_imperative or clause_level_connector_between(previous.greek_pos, clause.greek_pos, connectors):
             break
         members.append(clause)
         previous = clause
@@ -429,13 +339,15 @@ def apply_subordinating_connectors(clauses: List[Clause], connectors: List[Conne
         parent = clause_before(connector.greek_pos, clauses)
         if child is None or parent is None:
             continue
-
         if connector.relation_type == "purpose":
-            build_purpose_group(parent, collect_purpose_members(child, clauses, connectors))
-            continue
-        if connector.relation_type == "content":
-            build_connector_embedding(parent, child, "CONT [ὅτι]", "content")
-            continue
+            members = collect_purpose_members(child, clauses, connectors)
+            if members:
+                members[0].embedded_label = "PURP [ἵνα]"
+                for member in members:
+                    attach_child(parent, member, "purpose")
+        elif connector.relation_type == "content":
+            child.embedded_label = "CONT [ὅτι]"
+            attach_child(parent, child, "content")
     return clauses
 
 
@@ -443,54 +355,53 @@ def apply_implicit_reporting_content(clauses: List[Clause]) -> List[Clause]:
     for clause in clauses:
         if not is_reporting_clause(clause):
             continue
-        child = next_clause_after(clause, clauses)
-        if child is None or child.owner_clause_id is not None or child.is_imperative:
-            continue
-        build_connector_embedding(clause, child, "CONT [implícito]", "content-implicit")
+        child = clause_after(clause.greek_pos, clauses)
+        if child is not None and child.owner_clause_id is None and not child.is_imperative:
+            child.embedded_label = "CONT [implícito]"
+            attach_child(clause, child, "content-implicit")
     return clauses
 
 
-def apply_simple_embeddings(clauses: List[Clause]):
-    if len(clauses) < 2:
-        return clauses
-    for i, clause in enumerate(clauses):
-        if clause.owner_clause_id is not None or i + 1 >= len(clauses):
+def apply_simple_embeddings(clauses: List[Clause]) -> List[Clause]:
+    for i, clause in enumerate(clauses[:-1]):
+        if clause.owner_clause_id is not None:
             continue
-        next_clause = clauses[i + 1]
-        if next_clause.owner_clause_id is not None:
+        nxt = clauses[i + 1]
+        if nxt.owner_clause_id is not None:
             continue
-        if is_relative_pair(clause, next_clause):
-            build_relative_embedding(clause, next_clause)
-            continue
-        if is_apposition_pair(clause, next_clause):
-            build_apposition_embedding(clause, next_clause)
-            continue
+        if has_stem(clause, ["παρακαλ"]) and has_stem(nxt, ["γεννα", "γενν"]):
+            nxt.embedded_label = "REL [pronombre relativo griego]"
+            attach_child(clause, nxt, "relative")
+        elif has_stem(clause, ["αναπεμπ", "ανεπεμψ"]) and has_stem(nxt, ["ειμι", "εστι"]):
+            nxt.embedded_label = "APP [explicación / es decir]"
+            attach_child(clause, nxt, "apposition")
     return clauses
 
 
-def render_structure(clauses: List[Clause]):
+def render_structure(clauses: List[Clause]) -> str:
     renderer = VisibleStructureRenderer()
-    root_clauses = [clause for clause in clauses if clause.owner_clause_id is None]
-    for clause in root_clauses:
+    for clause in [c for c in clauses if c.owner_clause_id is None]:
         renderer.add_clause(clause)
     return renderer.render()
+
+
+def render_json_file(path: Path) -> str:
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    clauses = build_clauses(data)
+    connectors = build_connectors(data)
+    clauses = apply_condition_grouping(clauses, connectors)
+    clauses = apply_subordinating_connectors(clauses, connectors)
+    clauses = apply_implicit_reporting_content(clauses)
+    clauses = apply_simple_embeddings(clauses)
+    return render_structure(clauses)
 
 
 def main():
     if len(sys.argv) != 2:
         print("usage: python3 roots_engine_v2_rewrite.py path/to/verse.json")
         sys.exit(1)
-
-    data = load_json(str(Path(sys.argv[1])))
-    clauses = build_clauses(data)
-    connectors = build_connectors(data)
-
-    clauses = apply_condition_grouping(clauses, connectors)
-    clauses = apply_subordinating_connectors(clauses, connectors)
-    clauses = apply_implicit_reporting_content(clauses)
-    clauses = apply_simple_embeddings(clauses)
-
-    print(render_structure(clauses))
+    print(render_json_file(Path(sys.argv[1])))
 
 
 if __name__ == "__main__":
