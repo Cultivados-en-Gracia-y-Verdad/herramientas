@@ -38,7 +38,7 @@ import csv
 import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import Dict, List, Tuple
 
 FINITE_ENDINGS = {"I", "S", "M", "D"}
 
@@ -52,6 +52,11 @@ PRE_FINITE_CARRY = {
     "δέ", "δὲ", "καί", "καὶ", "τε", "ἀλλά", "ἀλλὰ", "ἀλλʼ", "ἢ", "ἤ", "μή", "μὴ",
     "οὐ", "οὐκ", "οὐχ", "οὔτε", "μηδέ", "μηδὲ", "οὐδέ", "οὐδὲ", "μήτε",
 }
+
+MEN_PARTICLES = {"μέν", "μὲν"}
+DE_PARTICLES = {"δέ", "δὲ"}
+PAIR_HEADS = {"ὃς", "ὅς", "ἣ", "ἥ", "ὅ", "οἳ", "οἵ", "αἳ", "αἵ", "ἃ", "ἅ"}
+PAIR_LEAD_INS = {"καί", "καὶ"}
 
 HEADER = [
     "BOOK", "CH", "VS", "CLAUSE_ID", "FINITE_G_IDX", "FINITE_GREEK", "FINITE_LEMMA", "FINITE_RMAC",
@@ -154,7 +159,6 @@ def connector_start_left(tokens: List[Token], start_pos: int, floor_pos: int) ->
     notes: List[str] = []
     pos = start_pos
 
-    # If a subordinating connector immediately precedes the finite anchor, include it.
     while pos - 1 >= floor_pos:
         prev = tokens[pos - 1]
         if clean_surface(prev.greek) in SUBORDINATING_CONNECTORS:
@@ -166,6 +170,40 @@ def connector_start_left(tokens: List[Token], start_pos: int, floor_pos: int) ->
     return pos, notes
 
 
+def paired_particle_start_left(tokens: List[Token], start_pos: int, floor_pos: int) -> Tuple[int, List[str]]:
+    """Keep simple μὲν/δὲ paired heads with the finite clause they introduce.
+
+    This is mechanical span repair, not hierarchy:
+    - ὃς μὲν + finite -> include ὃς μὲν with that finite clause.
+    - ὃς δὲ + finite -> include ὃς δὲ with that finite clause.
+    - καὶ ὃς μὲν + finite -> include καὶ as lead-in only when adjacent.
+    """
+    notes: List[str] = []
+    pos = start_pos
+
+    if pos - 1 < floor_pos:
+        return pos, notes
+
+    prev_clean = clean_surface(tokens[pos - 1].greek)
+
+    if prev_clean in MEN_PARTICLES or prev_clean in DE_PARTICLES:
+        particle_pos = pos - 1
+        head_pos = particle_pos - 1
+
+        if head_pos >= floor_pos and clean_surface(tokens[head_pos].greek) in PAIR_HEADS:
+            pos = head_pos
+            notes.append(
+                f"included paired particle head {tokens[head_pos].greek} {tokens[particle_pos].greek}"
+            )
+
+            lead_pos = head_pos - 1
+            if lead_pos >= floor_pos and clean_surface(tokens[lead_pos].greek) in PAIR_LEAD_INS:
+                pos = lead_pos
+                notes.append(f"included paired particle lead-in {tokens[lead_pos].greek}")
+
+    return pos, notes
+
+
 def build_spans_for_verse(book: str, ch: str, vs: str, tokens: List[Token]) -> List[ClauseSpan]:
     finite_positions = [i for i, tok in enumerate(tokens) if is_finite(tok.rmac)]
     spans: List[ClauseSpan] = []
@@ -173,8 +211,6 @@ def build_spans_for_verse(book: str, ch: str, vs: str, tokens: List[Token]) -> L
     if not finite_positions:
         return spans
 
-    # Initial mechanical regions: midpoint-free, finite-to-before-next-finite.
-    # Then apply conservative left-carry for particles/connectors.
     proposed_starts: List[int] = []
     proposed_ends: List[int] = []
 
@@ -185,7 +221,6 @@ def build_spans_for_verse(book: str, ch: str, vs: str, tokens: List[Token]) -> L
         proposed_starts.append(start)
         proposed_ends.append(end)
 
-    # Adjust starts so immediate pre-finite particles/connectors belong to the clause they introduce.
     for idx, finite_pos in enumerate(finite_positions):
         floor = proposed_starts[idx]
         start = finite_pos
@@ -194,10 +229,12 @@ def build_spans_for_verse(book: str, ch: str, vs: str, tokens: List[Token]) -> L
         start, carry_notes = carry_start_left(tokens, start, floor)
         notes.extend(carry_notes)
 
+        start, paired_notes = paired_particle_start_left(tokens, start, floor)
+        notes.extend(paired_notes)
+
         start, connector_notes = connector_start_left(tokens, start, floor)
         notes.extend(connector_notes)
 
-        # Preserve earlier material before the first finite verb inside C1.
         if idx == 0:
             start = 0
             if finite_pos > 0:
@@ -205,7 +242,6 @@ def build_spans_for_verse(book: str, ch: str, vs: str, tokens: List[Token]) -> L
 
         proposed_starts[idx] = start
 
-    # Prevent overlaps after left-carry adjustment by ending previous span before next start.
     for idx in range(len(proposed_ends) - 1):
         proposed_ends[idx] = min(proposed_ends[idx], proposed_starts[idx + 1] - 1)
 
@@ -226,11 +262,12 @@ def build_spans_for_verse(book: str, ch: str, vs: str, tokens: List[Token]) -> L
         else:
             boundary_notes.append("ends at verse boundary")
 
-        # Add local carry notes again for visibility.
         local_start = finite_pos
         _, carry_notes = carry_start_left(tokens, local_start, start)
+        _, paired_notes = paired_particle_start_left(tokens, local_start, start)
         _, connector_notes = connector_start_left(tokens, local_start, start)
         boundary_notes.extend(carry_notes)
+        boundary_notes.extend(paired_notes)
         boundary_notes.extend(connector_notes)
 
         spans.append(
