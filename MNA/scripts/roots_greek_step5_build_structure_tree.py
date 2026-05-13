@@ -33,7 +33,6 @@ import csv
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
 
 HEADER = [
     "BOOK",
@@ -63,6 +62,11 @@ PARALLEL_PAIR_MARKERS = {
     "μὲν",
 }
 
+PARALLEL_COORDINATORS = {
+    "καὶ",
+    "καί",
+}
+
 
 @dataclass
 class Span:
@@ -80,16 +84,6 @@ class Ownership:
     ownership_type: str
     confidence: str
     status: str
-    notes: str
-
-
-@dataclass
-class Node:
-    clause_id: str
-    parent_clause: str
-    relationship_type: str
-    depth: int
-    node_type: str
     notes: str
 
 
@@ -141,6 +135,13 @@ def is_parallel_conditional(span_text: str) -> bool:
     )
 
 
+def is_parallel_coordinate(rel: Ownership) -> bool:
+    return (
+        rel.ownership_type == "coordinate"
+        and rel.connector_greek in PARALLEL_COORDINATORS
+    )
+
+
 def build_parent_map(spans, relationships):
     parent_map = {}
 
@@ -152,6 +153,9 @@ def build_parent_map(spans, relationships):
             continue
 
         if not rel.source_clause or not rel.target_clause:
+            continue
+
+        if is_parallel_coordinate(rel):
             continue
 
         target_span = span_lookup.get(rel.target_clause)
@@ -247,6 +251,17 @@ def build_rows(spans_grouped, ownership_grouped):
 
             if is_parallel_conditional(span.span_text):
                 notes = f"{notes}; parallel-conditional-structure-detected"
+
+            parallel_rel = next(
+                (
+                    r for r in relationships
+                    if r.target_clause == clause_id and is_parallel_coordinate(r)
+                ),
+                None,
+            )
+
+            if parallel_rel:
+                notes = f"{notes}; parallel-coordinate-structure-detected"
 
             depth, depth_notes = compute_depth(clause_id, parent_map)
 
