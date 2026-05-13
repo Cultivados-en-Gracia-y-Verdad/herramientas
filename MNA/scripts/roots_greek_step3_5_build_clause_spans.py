@@ -44,6 +44,8 @@ SUBORDINATING_CONNECTORS = {
     "ὡς", "ὥστε",
 }
 
+POST_FINITE_TAIL_STARTERS = SUBORDINATING_CONNECTORS
+
 HEADER = [
     "BOOK", "CH", "VS", "CLAUSE_ID",
     "FINITE_G_IDX", "FINITE_GREEK", "FINITE_LEMMA", "FINITE_RMAC",
@@ -200,6 +202,28 @@ def move_subordinate_connectors(tokens, regions):
             )
 
 
+def move_post_finite_tails(tokens, regions):
+    for idx in range(1, len(regions)):
+        prev_region = regions[idx - 1]
+        region = regions[idx]
+
+        search_start = prev_region.finite_pos + 1
+        search_end = region.start_pos - 1
+
+        if search_start > search_end:
+            continue
+
+        for pos in range(search_start, search_end + 1):
+            surface = clean_surface(tokens[pos].greek)
+
+            if surface in POST_FINITE_TAIL_STARTERS:
+                region.start_pos = pos
+                region.notes.append(
+                    f"migrated post-finite tail beginning with {tokens[pos].greek}"
+                )
+                break
+
+
 def normalize_boundaries(regions):
     for idx in range(len(regions) - 1):
         current = regions[idx]
@@ -260,6 +284,7 @@ def export_book(book, interlinear_dir, out_dir):
         regions = build_neutral_regions(tokens)
         move_pair_structures(tokens, regions)
         move_subordinate_connectors(tokens, regions)
+        move_post_finite_tails(tokens, regions)
         normalize_boundaries(regions)
         spans = build_spans(book, ch, vs, tokens, regions)
 
