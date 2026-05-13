@@ -28,7 +28,7 @@ It visibly marks:
 - FACT
 - SUGGESTION
 - REVIEW
-- BLOCKED
+- BLOCKED-TOPOLOGY
 
 Greek-only.
 No Spanish.
@@ -47,6 +47,8 @@ CERTAINTY_SYMBOLS = {
     "REVIEW": "[REVIEW]",
     "BLOCKED": "[BLOCKED]",
 }
+
+TOPOLOGY_SYMBOL = "[BLOCKED-TOPOLOGY]"
 
 
 def read_tsv(path: Path) -> List[Dict[str, str]]:
@@ -129,16 +131,22 @@ def render_clause(
     node_type = tree.get("NODE_TYPE", "unknown")
     parent = tree.get("PARENT_CLAUSE", "")
 
+    # Indentation is drawn from Step 5 topology. The certainty gate classifies
+    # that topology as BLOCKED, so indentation is disclosed as visual evidence,
+    # not confirmed hierarchy.
     indent = "    " * depth
 
     lines = []
 
-    meta = f"{certainty_symbol} {clause_id}"
+    meta = f"{certainty_symbol} {TOPOLOGY_SYMBOL} {clause_id}"
 
     if parent:
         meta += f" ← {parent}"
 
     meta += f" | {node_type}"
+
+    if depth > 0:
+        meta += f" | visual-depth={depth}"
 
     lines.append(f"{indent}{meta}")
     lines.append(f"{indent}{span_row.get('SPAN_TEXT', '')}")
@@ -163,6 +171,8 @@ def render_book(
         lines.append(f"# {book} {ch}:{vs}")
         lines.append("")
         lines.append("## PASO 6 — MOSTRAR LA ESTRUCTURA")
+        lines.append("")
+        lines.append("[DISCLOSURE] Clause spans are provisional. Topology/indentation is BLOCKED evidence, not confirmed hierarchy.")
         lines.append("")
 
         spans = sorted(
