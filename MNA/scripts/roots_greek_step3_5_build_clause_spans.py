@@ -24,7 +24,7 @@ import csv
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import List
 
 FINITE_ENDINGS = {"I", "S", "M", "D"}
 
@@ -66,7 +66,12 @@ class ClauseRegion:
     finite: Token
     start_pos: int
     end_pos: int
+    original_start_pos: int
     notes: List[str] = field(default_factory=list)
+
+    @property
+    def migrated_left(self) -> bool:
+        return self.start_pos < self.original_start_pos
 
 
 @dataclass
@@ -131,22 +136,12 @@ def is_finite(rmac: str) -> bool:
     return morph[-1] in FINITE_ENDINGS
 
 
-# PASS 1
-# -------
-
 def build_neutral_regions(tokens: List[Token]) -> List[ClauseRegion]:
-
-    finite_positions = [
-        i for i, tok in enumerate(tokens)
-        if is_finite(tok.rmac)
-    ]
-
+    finite_positions = [i for i, tok in enumerate(tokens) if is_finite(tok.rmac)]
     regions = []
 
     for idx, pos in enumerate(finite_positions):
-
         start = 0 if idx == 0 else finite_positions[idx - 1] + 1
-
         end = (
             finite_positions[idx + 1] - 1
             if idx + 1 < len(finite_positions)
@@ -157,21 +152,16 @@ def build_neutral_regions(tokens: List[Token]) -> List[ClauseRegion]:
             clause_id=f"C{idx + 1}",
             finite=tokens[pos],
             start_pos=start,
+            original_start_pos=start,
             end_pos=end,
         ))
 
     return regions
 
 
-# PASS 2
-# -------
-
 def move_pair_structures(tokens, regions):
-
     for idx in range(1, len(regions)):
-
         region = regions[idx]
-
         start = region.start_pos
 
         if start <= 0:
@@ -180,16 +170,13 @@ def move_pair_structures(tokens, regions):
         prev = clean_surface(tokens[start - 1].greek)
 
         if prev in PAIR_PARTICLES:
-
             particle_pos = start - 1
             head_pos = particle_pos - 1
 
             if head_pos >= 0:
-
                 head = clean_surface(tokens[head_pos].greek)
 
                 if head in PAIR_HEADS:
-
                     region.start_pos = head_pos
                     region.notes.append(
                         f"migrated paired head {tokens[head_pos].greek} {tokens[particle_pos].greek}"
@@ -208,9 +195,7 @@ def move_pair_structures(tokens, regions):
 
 
 def move_subordinate_connectors(tokens, regions):
-
     for region in regions:
-
         start = region.start_pos
 
         if start <= 0:
@@ -226,20 +211,19 @@ def move_subordinate_connectors(tokens, regions):
 
 
 def normalize_boundaries(regions):
-
     for idx in range(len(regions) - 1):
-        regions[idx].end_pos = regions[idx + 1].start_pos - 1
+        current = regions[idx]
+        nxt = regions[idx + 1]
+
+        if nxt.migrated_left:
+            current.end_pos = nxt.start_pos - 1
 
 
 def build_spans(book, ch, vs, tokens, regions):
-
     rows = []
 
     for region in regions:
-
-        span_tokens = tokens[
-            region.start_pos:region.end_pos + 1
-        ]
+        span_tokens = tokens[region.start_pos:region.end_pos + 1]
 
         rows.append(ClauseSpan(
             book=book,
@@ -257,7 +241,6 @@ def build_spans(book, ch, vs, tokens, regions):
 
 
 def render_text(tokens):
-
     out = []
 
     for tok in tokens:
@@ -274,29 +257,21 @@ def render_gidx(tokens):
 
 
 def export_book(book, interlinear_dir, out_dir):
-
     rows = []
 
     for path in sorted((interlinear_dir / book).glob("*/*.json")):
-
         data = read_json(path)
-
         ch = str(data["chapter"])
         vs = str(data["verse"])
-
         tokens = read_tokens(data)
 
         regions = build_neutral_regions(tokens)
-
         move_pair_structures(tokens, regions)
         move_subordinate_connectors(tokens, regions)
-
         normalize_boundaries(regions)
-
         spans = build_spans(book, ch, vs, tokens, regions)
 
         for span in spans:
-
             rows.append([
                 span.book,
                 span.ch,
@@ -315,7 +290,6 @@ def export_book(book, interlinear_dir, out_dir):
             ])
 
     out_dir.mkdir(parents=True, exist_ok=True)
-
     out_path = out_dir / f"{book}-clause-spans.tsv"
 
     with out_path.open("w", encoding="utf-8", newline="") as f:
@@ -328,26 +302,13 @@ def export_book(book, interlinear_dir, out_dir):
 
 
 def main():
-
     parser = argparse.ArgumentParser()
-
     parser.add_argument("book")
-    parser.add_argument(
-        "--interlinear-dir",
-        default="MNA/data/interlinear"
-    )
-    parser.add_argument(
-        "--out-dir",
-        default="MNA/roots-greek/dataset"
-    )
-
+    parser.add_argument("--interlinear-dir", default="MNA/data/interlinear")
+    parser.add_argument("--out-dir", default="MNA/roots-greek/dataset")
     args = parser.parse_args()
 
-    export_book(
-        args.book,
-        Path(args.interlinear_dir),
-        Path(args.out_dir),
-    )
+    export_book(args.book, Path(args.interlinear_dir), Path(args.out_dir))
 
 
 if __name__ == "__main__":
