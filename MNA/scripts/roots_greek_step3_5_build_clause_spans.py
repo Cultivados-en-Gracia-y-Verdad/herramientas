@@ -55,6 +55,7 @@ PRE_FINITE_CARRY = {
 
 MEN_PARTICLES = {"μέν", "μὲν"}
 DE_PARTICLES = {"δέ", "δὲ"}
+PAIR_PARTICLES = MEN_PARTICLES | DE_PARTICLES
 PAIR_HEADS = {"ὃς", "ὅς", "ἣ", "ἥ", "ὅ", "οἳ", "οἵ", "αἳ", "αἵ", "ἃ", "ἅ"}
 PAIR_LEAD_INS = {"καί", "καὶ"}
 
@@ -176,30 +177,33 @@ def paired_particle_start_left(tokens: List[Token], start_pos: int, floor_pos: i
     This is mechanical span repair, not hierarchy:
     - ὃς μὲν + finite -> include ὃς μὲν with that finite clause.
     - ὃς δὲ + finite -> include ὃς δὲ with that finite clause.
+    - δὲ + finite may be reached either before or after generic particle carry.
     - καὶ ὃς μὲν + finite -> include καὶ as lead-in only when adjacent.
     """
     notes: List[str] = []
     pos = start_pos
 
-    if pos - 1 < floor_pos:
+    particle_pos = None
+
+    if pos - 1 >= floor_pos and clean_surface(tokens[pos - 1].greek) in PAIR_PARTICLES:
+        particle_pos = pos - 1
+    elif clean_surface(tokens[pos].greek) in PAIR_PARTICLES:
+        particle_pos = pos
+
+    if particle_pos is None:
         return pos, notes
 
-    prev_clean = clean_surface(tokens[pos - 1].greek)
+    head_pos = particle_pos - 1
+    if head_pos >= floor_pos and clean_surface(tokens[head_pos].greek) in PAIR_HEADS:
+        pos = head_pos
+        notes.append(
+            f"included paired particle head {tokens[head_pos].greek} {tokens[particle_pos].greek}"
+        )
 
-    if prev_clean in MEN_PARTICLES or prev_clean in DE_PARTICLES:
-        particle_pos = pos - 1
-        head_pos = particle_pos - 1
-
-        if head_pos >= floor_pos and clean_surface(tokens[head_pos].greek) in PAIR_HEADS:
-            pos = head_pos
-            notes.append(
-                f"included paired particle head {tokens[head_pos].greek} {tokens[particle_pos].greek}"
-            )
-
-            lead_pos = head_pos - 1
-            if lead_pos >= floor_pos and clean_surface(tokens[lead_pos].greek) in PAIR_LEAD_INS:
-                pos = lead_pos
-                notes.append(f"included paired particle lead-in {tokens[lead_pos].greek}")
+        lead_pos = head_pos - 1
+        if lead_pos >= floor_pos and clean_surface(tokens[lead_pos].greek) in PAIR_LEAD_INS:
+            pos = lead_pos
+            notes.append(f"included paired particle lead-in {tokens[lead_pos].greek}")
 
     return pos, notes
 
@@ -225,6 +229,9 @@ def build_spans_for_verse(book: str, ch: str, vs: str, tokens: List[Token]) -> L
         floor = proposed_starts[idx]
         start = finite_pos
         notes: List[str] = []
+
+        start, paired_notes = paired_particle_start_left(tokens, start, floor)
+        notes.extend(paired_notes)
 
         start, carry_notes = carry_start_left(tokens, start, floor)
         notes.extend(carry_notes)
@@ -263,11 +270,13 @@ def build_spans_for_verse(book: str, ch: str, vs: str, tokens: List[Token]) -> L
             boundary_notes.append("ends at verse boundary")
 
         local_start = finite_pos
-        _, carry_notes = carry_start_left(tokens, local_start, start)
         _, paired_notes = paired_particle_start_left(tokens, local_start, start)
+        _, carry_notes = carry_start_left(tokens, local_start, start)
+        _, paired_notes_after_carry = paired_particle_start_left(tokens, local_start - len(carry_notes), start)
         _, connector_notes = connector_start_left(tokens, local_start, start)
         boundary_notes.extend(carry_notes)
         boundary_notes.extend(paired_notes)
+        boundary_notes.extend(paired_notes_after_carry)
         boundary_notes.extend(connector_notes)
 
         spans.append(
