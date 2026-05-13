@@ -17,6 +17,7 @@ let step = 0;
 let quizState = { active: false, quizId: null, quiz: null, counts: {} };
 let userAnswer = null;
 let session = null;
+let connection = { url: "/audience.html" };
 let participant = null;
 let activeQuizKey = null;
 let popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
@@ -32,6 +33,7 @@ localStorage.setItem("rootsParticipantId", storedParticipantId);
 
 socket.on("state", data => {
   session = data.session || null;
+  connection = data.connection || connection;
   renderedSlides = data.renderedSlides || [];
   slides = data.slides || [];
   quizzes = data.quizzes || [];
@@ -156,6 +158,15 @@ function normalizeRenderedSlide(renderedSlide) {
 function getEntryHtml(entry) {
   if (entry?.teacherOnly && !isPresenter) return "";
   return typeof entry === "string" ? entry : entry?.html || "";
+}
+
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 function renderEntries(entries) {
@@ -501,6 +512,7 @@ function renderPresenterQuiz() {
 function renderProjectorQuiz() {
   const quiz = getActiveQuiz();
   const resultsEl = document.getElementById("projectorQuiz");
+  const joinUrl = connection?.url || "/audience.html";
 
   if (!quiz) {
     resultsEl.innerHTML = "";
@@ -508,7 +520,14 @@ function renderProjectorQuiz() {
   }
 
   if (quizState.active) {
-    resultsEl.innerHTML = `<strong>Quiz live now:</strong> ${quiz.question}`;
+    resultsEl.innerHTML = `
+      <div class="projector-quiz-copy">
+        <strong>Quiz live now</strong>
+        <span>${escapeHtml(quiz.question)}</span>
+        <small>${escapeHtml(joinUrl)}</small>
+      </div>
+      <img class="projector-quiz-qr" src="/quiz-join.svg?${Date.now()}" alt="QR code to join quiz">
+    `;
   } else {
     const counts = quizState.counts || {};
     const total = Object.values(counts).reduce((sum, value) => sum + value, 0);

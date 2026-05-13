@@ -1,14 +1,17 @@
 const express = require("express");
 const http = require("http");
 const https = require("https");
+const os = require("os");
 const { Server } = require("socket.io");
 const fs = require("fs");
 const path = require("path");
 const { marked } = require("marked");
+const QRCode = require("qrcode");
 
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
+const serverPort = Number(process.env.PORT || 3000);
 const serverEvents = new EventTarget();
 const resourceBibleDir = process.resourcesPath
   ? path.join(process.resourcesPath, "bibles", "NBLA")
@@ -75,6 +78,28 @@ app.post("/style-settings", (req, res) => {
   io.emit("style-settings-updated", { updatedAt: Date.now() });
   res.json(settings);
 });
+app.get("/join-info", (req, res) => {
+  res.json(getJoinInfo());
+});
+app.get("/quiz-join.svg", async (req, res) => {
+  try {
+    const svg = await QRCode.toString(getJoinInfo().url, {
+      type: "svg",
+      margin: 1,
+      width: 360,
+      color: {
+        dark: "#111827",
+        light: "#ffffff"
+      }
+    });
+
+    res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
+    res.setHeader("Cache-Control", "no-store");
+    res.send(svg);
+  } catch (error) {
+    res.status(500).send("Could not generate QR code.");
+  }
+});
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/course-assets", (req, res, next) => {
@@ -135,6 +160,31 @@ function saveSession() {
     path.join(sessionsDir, `${currentSession.id}.json`),
     JSON.stringify(currentSession, null, 2)
   );
+}
+
+function getLocalIpAddress() {
+  const interfaces = os.networkInterfaces();
+
+  for (const addresses of Object.values(interfaces)) {
+    for (const address of addresses || []) {
+      if (address.family === "IPv4" && !address.internal) {
+        return address.address;
+      }
+    }
+  }
+
+  return "localhost";
+}
+
+function getJoinInfo() {
+  const host = getLocalIpAddress();
+
+  return {
+    host,
+    port: serverPort,
+    path: "/audience.html",
+    url: `http://${host}:${serverPort}/audience.html`
+  };
 }
 
 function cleanText(value, fallback) {
@@ -1951,6 +2001,7 @@ function buildPayload() {
       version: currentCourse.version
     },
     session: getSessionSummary(),
+    connection: getJoinInfo(),
     presentation: presentationMeta,
     quizzes: quizBank.map(publicQuiz),
     slides: slides.map(slide => ({ quiz: slide.quiz })),
@@ -2306,9 +2357,10 @@ io.on("connection", socket => {
   });
 });
 
-server.listen(3000, "0.0.0.0", () => {
-  console.log("ROOTS Presenter running at http://localhost:3000");
-  console.log("Audience pages available at http://<your-ip>:3000/audience.html");
+server.listen(serverPort, "0.0.0.0", () => {
+  const joinInfo = getJoinInfo();
+  console.log(`ROOTS Presenter running at http://localhost:${serverPort}`);
+  console.log(`Audience pages available at ${joinInfo.url}`);
 });
 
 module.exports = {
