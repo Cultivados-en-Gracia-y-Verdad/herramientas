@@ -5,12 +5,9 @@ Suggest repairs for suspicious finite-verb NBLA alignments.
 
 This script does NOT modify TSV files.
 
-It scans interlinear JSON to identify finite Greek verbs whose current NBLA
-surface is missing or suspicious, then inspects the verse's Spanish token file
-and alignment TSV to suggest likely NBLA token ownership repairs.
-
-Primary purpose:
-  audit -> suggest -> human review -> repair TSV -> regenerate JSON -> re-audit
+It scans interlinear JSON, alignment TSVs, and Spanish token files. It reports
+one best candidate per suspicious/missing finite Greek verb by default.
+Use --all-candidates to inspect the top five candidates per verb.
 """
 
 import argparse
@@ -20,7 +17,7 @@ import re
 import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import Dict, Iterable, List, Tuple
 
 
 SUSPICIOUS_FINITE_SURFACES = {
@@ -30,9 +27,24 @@ SUSPICIOUS_FINITE_SURFACES = {
     "iglesias", "señor",
 }
 
+NON_VERB_WORDS = {
+    "acaso", "ahora", "al", "alguna", "alimento", "amor", "antes", "ardientemente",
+    "bajo", "bien", "bienes", "cada", "cara", "casa", "como", "con", "conocimiento",
+    "corazón", "cosas", "cuando", "cual", "cuerpo", "cuyo", "de", "del", "demás",
+    "derecho", "dios", "dones", "el", "ellos", "embargo", "en", "entre", "espirituales",
+    "espíritu", "esta", "este", "esto", "evangelio", "fe", "fuego", "hermano",
+    "hermanos", "hombres", "ídolos", "iglesia", "iglesias", "incompleto", "incrédulo",
+    "incrédulos", "injusticia", "intérprete", "la", "las", "lenguas", "ley", "lo",
+    "los", "marido", "me", "mismo", "mis", "montañas", "nada", "no", "nombre",
+    "nosotros", "nube", "o", "ojo", "para", "parte", "perfecto", "pero", "pie",
+    "pobres", "por", "porque", "profecía", "propia", "propio", "que", "qué", "señal",
+    "señor", "si", "sino", "su", "tal", "también", "tanto", "toda", "todas",
+    "todo", "todos", "tres", "tu", "una", "uno", "ustedes", "verdad", "vida",
+    "vírgenes", "y",
+}
+
 AUXILIARIES = {
     "he", "has", "ha", "hemos", "han",
-    "hube", "hubo", "hubieron", "había", "habían",
     "fui", "fue", "fuimos", "fueron",
     "soy", "eres", "es", "somos", "son",
     "era", "eran", "será", "serán",
@@ -40,36 +52,20 @@ AUXILIARIES = {
     "estaba", "estaban", "esté", "estén",
 }
 
-# Spanish finite-looking endings. This is intentionally broad because this tool
-# only proposes candidates; it does not apply repairs.
-FINITE_ENDING_RE = re.compile(
-    r"(o|as|a|amos|áis|an|es|e|emos|éis|en|í|iste|ió|imos|ieron|aron|"
-    r"aba|abas|ábamos|aban|ía|ías|íamos|ían|aré|arás|ará|aremos|arán|"
-    r"eré|erás|erá|eremos|erán|iré|irás|irá|iremos|irán|"
-    r"aría|arían|ería|erían|iría|irían|ad|ed|id)$",
-    re.IGNORECASE,
-)
-
 STRONG_VERB_WORDS = {
-    "anda", "ande", "anden", "andemos",
-    "beba", "beban", "coma", "coman",
-    "crea", "creen", "cree", "creemos",
-    "diga", "digan", "dice", "dicen", "dijo", "dijeron",
-    "edifica", "edifican", "edifique", "edifiquen",
-    "escriba", "escriban", "escrito", "escrita", "escritas", "escritos",
-    "examine", "examínese", "juzguen", "juzga", "juzgo",
-    "llama", "llamó", "llamado", "llamados", "llamadas",
-    "muere", "murió", "murieron", "murió",
-    "ordeno", "ordena", "ordenen",
-    "puede", "pueden", "podrá", "podrán",
-    "ruego", "rogué", "saben", "sabemos", "sé",
-    "tengo", "tiene", "tienen", "tenemos", "tendrá", "tendrán",
-    "vivan", "vive", "viven",
+    "abundar", "acabará", "adorará", "agradó", "ande", "anhelan", "aprendan",
+    "arreglaré", "asignado", "bautizados", "beba", "cantaré", "colocado",
+    "coma", "comieron", "cree", "creen", "creemos", "decidido", "deja", "desean",
+    "deseen", "dice", "dicen", "dijera", "digo", "duermen", "edifica",
+    "entendiera", "entregara", "escrito", "escrita", "escritas", "examine",
+    "examínese", "fornicaron", "guarde", "hace", "habla", "hablan", "haya",
+    "hice", "juzguen", "llamó", "murió", "oraré", "ordeno", "ordenó",
+    "permanezca", "permanecen", "perderá", "procuren", "profetiza", "profetizar",
+    "profetizamos", "prohíban", "puede", "pueden", "quedarán", "quedaron",
+    "quemado", "regocija", "reúnan", "ruego", "saben", "sabemos", "sujeten",
+    "sufrimos", "tendrán", "tengo", "tiene", "tienen", "tenemos", "toma",
+    "tuviera", "venga", "vivan", "vuelto",
 }
-
-ALIGNMENT_HEADER = [
-    "BOOK", "CH", "VS", "G_IDX", "GREEK", "NBLA_IDX", "NBLA_TEXT", "ALIGNMENT",
-]
 
 REPORT_HEADER = [
     "REF", "G_IDX", "GREEK", "LEMMA", "RMAC",
@@ -101,12 +97,9 @@ def is_finite_rmac(rmac: str) -> bool:
     if not rmac or not rmac.startswith("V-"):
         return False
     parts = rmac.split("-")
-    if len(parts) < 2:
+    if len(parts) < 2 or len(parts[1]) < 3:
         return False
-    tvm = parts[1]
-    if len(tvm) < 3:
-        return False
-    return tvm[-1] in {"I", "S", "M", "D"}
+    return parts[1][-1] in {"I", "S", "M", "D"}
 
 
 def is_suspicious_finite_surface(text: str) -> bool:
@@ -128,12 +121,12 @@ def parse_nbla_indexes(raw: str) -> List[int]:
             try:
                 values.extend(range(int(left), int(right) + 1))
             except ValueError:
-                continue
+                pass
         else:
             try:
                 values.append(int(part))
             except ValueError:
-                continue
+                pass
     return values
 
 
@@ -155,8 +148,7 @@ def read_json(path: Path) -> Dict:
 
 def read_tsv(path: Path) -> List[Dict[str, str]]:
     with path.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f, delimiter="\t")
-        return list(reader)
+        return list(csv.DictReader(f, delimiter="\t"))
 
 
 def read_s_tokens(path: Path) -> Dict[int, str]:
@@ -165,14 +157,13 @@ def read_s_tokens(path: Path) -> Dict[int, str]:
         return tokens
     with path.open("r", encoding="utf-8") as f:
         for raw in f:
-            line = raw.strip()
-            if not line:
+            left, _, right = raw.strip().partition(" ")
+            if not left or not right:
                 continue
-            left, _, right = line.partition(" ")
             try:
                 tokens[int(left)] = right.strip()
             except ValueError:
-                continue
+                pass
     return tokens
 
 
@@ -197,34 +188,36 @@ def s_tokens_path_for(book: str, chapter: int, verse: int, s_tokens_dir: Path) -
 
 
 def tsv_row_by_gidx(rows: List[Dict[str, str]]) -> Dict[str, Dict[str, str]]:
-    return {row.get("G_IDX", "").strip(): row for row in rows}
+    return {row.get("G_IDX", "").strip().zfill(2): row for row in rows}
 
 
-def used_finite_indexes(data: Dict, suspicious_gidx: str) -> set:
-    used = set()
-    for col in data.get("columns", []):
-        g_tokens = col.get("greek_tokens") or []
-        gidx = str(g_tokens[0]).zfill(2) if g_tokens else ""
-        if gidx == suspicious_gidx:
-            continue
-        if is_finite_rmac(col.get("rmac", "")) and not is_suspicious_finite_surface(col.get("nbla", "")):
-            used.update(parse_nbla_indexes(col.get("nbla_idx", "")))
-    return used
-
-
-def word_is_verbish(word: str) -> bool:
+def word_is_strong_verb(word: str) -> bool:
     w = norm(word)
-    if not w:
-        return False
-    if w in AUXILIARIES or w in STRONG_VERB_WORDS:
-        return True
-    if FINITE_ENDING_RE.search(w) and len(w) >= 4:
-        return True
-    return False
+    return w in STRONG_VERB_WORDS or w in AUXILIARIES
 
 
 def span_text(tokens: Dict[int, str], indexes: List[int]) -> str:
     return " ".join(tokens[i] for i in indexes if i in tokens).strip()
+
+
+def span_has_strong_verb(tokens: Dict[int, str], indexes: List[int]) -> bool:
+    return any(word_is_strong_verb(tokens.get(i, "")) for i in indexes)
+
+
+def span_is_aux_phrase(tokens: Dict[int, str], indexes: List[int]) -> bool:
+    words = [norm(tokens.get(i, "")) for i in indexes]
+    return len(words) >= 2 and words[0] in AUXILIARIES and any(w in STRONG_VERB_WORDS for w in words[1:])
+
+
+def existing_owner_note(indexes: List[int], rows: List[Dict[str, str]], suspicious_gidx: str) -> str:
+    candidate_set = set(indexes)
+    for row in rows:
+        if row.get("G_IDX", "").strip().zfill(2) == suspicious_gidx:
+            continue
+        row_set = set(parse_nbla_indexes(row.get("NBLA_IDX", "")))
+        if candidate_set & row_set:
+            return f"currently owned by G{row.get('G_IDX')}"
+    return "unowned or no clear current owner"
 
 
 def score_span(
@@ -232,66 +225,58 @@ def score_span(
     tokens: Dict[int, str],
     current_indexes: List[int],
     greek_pos: int,
-    tsv_rows: List[Dict[str, str]],
-    data: Dict,
+    rows: List[Dict[str, str]],
     suspicious_gidx: str,
 ) -> Tuple[int, List[str]]:
-    words = [tokens[i] for i in indexes if i in tokens]
-    normalized = [norm(w) for w in words]
-    text = " ".join(words)
+    text = span_text(tokens, indexes)
+    words = [norm(w) for w in text.split()]
     notes: List[str] = []
     score = 0
 
-    if any(word_is_verbish(w) for w in words):
+    if not words or not any(w in STRONG_VERB_WORDS or w in AUXILIARIES for w in words):
+        return -999, ["no strong verb token"]
+
+    if words[0] in NON_VERB_WORDS and words[0] not in AUXILIARIES:
+        score -= 20
+        notes.append("starts with non-verb word")
+
+    strong_count = sum(1 for w in words if w in STRONG_VERB_WORDS)
+    aux_count = sum(1 for w in words if w in AUXILIARIES)
+    score += strong_count * 45
+    score += aux_count * 18
+
+    if span_is_aux_phrase(tokens, indexes):
         score += 35
-        notes.append("contains verb-like Spanish token")
+        notes.append("auxiliary + verbal phrase")
 
-    if normalized and normalized[0] in AUXILIARIES and len(indexes) >= 2:
-        score += 30
-        notes.append("auxiliary + verbal phrase candidate")
-
-    if any(w in STRONG_VERB_WORDS for w in normalized):
-        score += 25
-        notes.append("strong known verb word")
-
-    if len(indexes) <= 3:
-        score += 8
+    if len(indexes) == 1:
+        score += 15
+        notes.append("single-token candidate")
+    elif len(indexes) == 2:
+        score += 18
+        notes.append("compact phrase candidate")
+    elif len(indexes) == 3:
+        score += 5
     else:
-        score -= len(indexes) * 3
+        score -= 25
+        notes.append("long candidate span")
 
     if current_indexes:
         distance = min(abs(i - current_indexes[0]) for i in indexes)
-        if distance <= 4:
-            score += 16
-            notes.append("near current corrupted NBLA index")
-        elif distance <= 8:
-            score += 8
-        else:
-            score -= min(distance, 20)
-
-    # If the candidate is currently owned by a non-verb Greek row, it may be a drift/swap.
-    candidate_set = set(indexes)
-    finite_good_used = used_finite_indexes(data, suspicious_gidx)
-    if candidate_set & finite_good_used:
-        score -= 60
-        notes.append("candidate overlaps another apparently good finite verb")
-
-    for row in tsv_rows:
-        row_indexes = set(parse_nbla_indexes(row.get("NBLA_IDX", "")))
-        if not row_indexes or not (candidate_set & row_indexes):
-            continue
-        if row.get("G_IDX", "").strip() == suspicious_gidx:
-            continue
-        # Existing non-finite owner of a verbal phrase is a strong drift signal.
-        row_text = row.get("NBLA_TEXT", "")
-        if any(word_is_verbish(w) for w in row_text.split()):
+        if distance <= 3:
             score += 18
-            notes.append(f"currently owned by neighboring row G{row.get('G_IDX')} with verb-like text")
-            break
+            notes.append("near corrupted NBLA index")
+        elif distance <= 8:
+            score += 6
+        else:
+            score -= min(distance, 25)
+
+    owner = existing_owner_note(indexes, rows, suspicious_gidx)
+    notes.append(owner)
 
     if norm(text) in SUSPICIOUS_FINITE_SURFACES:
-        score -= 50
-        notes.append("candidate is also suspicious")
+        score -= 100
+        notes.append("candidate itself suspicious")
 
     return score, notes
 
@@ -300,26 +285,20 @@ def candidate_spans(
     tokens: Dict[int, str],
     current_indexes: List[int],
     greek_pos: int,
-    tsv_rows: List[Dict[str, str]],
-    data: Dict,
+    rows: List[Dict[str, str]],
     suspicious_gidx: str,
 ) -> List[Candidate]:
     if not tokens:
         return []
-
     max_idx = max(tokens)
     center = current_indexes[0] if current_indexes else min(max(greek_pos, 1), max_idx)
-
-    spans: List[List[int]] = []
     window_start = max(1, center - 10)
     window_end = min(max_idx, center + 10)
 
-    # single-token candidates
+    spans: List[List[int]] = []
     for i in range(window_start, window_end + 1):
         spans.append([i])
-
-    # short phrase candidates, especially useful for "ha asignado", "fue crucificado", etc.
-    for length in (2, 3, 4):
+    for length in (2, 3):
         for start in range(window_start, window_end - length + 2):
             spans.append(list(range(start, start + length)))
 
@@ -330,19 +309,15 @@ def candidate_spans(
         if key in seen:
             continue
         seen.add(key)
-        text = span_text(tokens, indexes)
-        if not text:
+        if not span_has_strong_verb(tokens, indexes):
             continue
-        # Keep only spans with at least one verbal-looking element. This avoids flooding the report.
-        if not any(word_is_verbish(word) for word in text.split()):
+        score, notes = score_span(indexes, tokens, current_indexes, greek_pos, rows, suspicious_gidx)
+        if score < 45:
             continue
-        score, notes = score_span(indexes, tokens, current_indexes, greek_pos, tsv_rows, data, suspicious_gidx)
-        if score < 20:
-            continue
-        confidence = "high" if score >= 75 else "medium" if score >= 50 else "low"
-        candidates.append(Candidate(format_idx(indexes), text, score, confidence, "; ".join(dict.fromkeys(notes))))
+        confidence = "high" if score >= 85 else "medium" if score >= 60 else "low"
+        candidates.append(Candidate(format_idx(indexes), span_text(tokens, indexes), score, confidence, "; ".join(dict.fromkeys(notes))))
 
-    candidates.sort(key=lambda c: (-c.score, len(c.idx), c.idx))
+    candidates.sort(key=lambda c: (-c.score, len(parse_nbla_indexes(c.idx)), c.idx))
     return candidates[:5]
 
 
@@ -352,10 +327,9 @@ def finite_columns(data: Dict) -> Iterable[Dict]:
             yield col
 
 
-def scan_book(book: str, interlinear_dir: Path, alignments_dir: Path, s_tokens_dir: Path) -> List[List[str]]:
-    rows_out: List[List[str]] = []
-    book_dir = interlinear_dir / book
-    for json_path in sorted(book_dir.glob("*/*.json"), key=verse_sort_key):
+def scan_book(book: str, interlinear_dir: Path, alignments_dir: Path, s_tokens_dir: Path, all_candidates: bool) -> List[List[str]]:
+    out: List[List[str]] = []
+    for json_path in sorted((interlinear_dir / book).glob("*/*.json"), key=verse_sort_key):
         data = read_json(json_path)
         chapter = int(data["chapter"])
         verse = int(data["verse"])
@@ -364,8 +338,8 @@ def scan_book(book: str, interlinear_dir: Path, alignments_dir: Path, s_tokens_d
         s_path = s_tokens_path_for(book, chapter, verse, s_tokens_dir)
         if not tsv_path.exists():
             continue
-        tsv_rows = read_tsv(tsv_path)
-        tsv_by_g = tsv_row_by_gidx(tsv_rows)
+        rows = read_tsv(tsv_path)
+        by_g = tsv_row_by_gidx(rows)
         tokens = read_s_tokens(s_path)
 
         for col in finite_columns(data):
@@ -374,38 +348,21 @@ def scan_book(book: str, interlinear_dir: Path, alignments_dir: Path, s_tokens_d
                 continue
             greek_tokens = col.get("greek_tokens") or []
             gidx = str(greek_tokens[0]).zfill(2) if greek_tokens else ""
-            tsv_row = tsv_by_g.get(gidx, {})
-            current_idx = tsv_row.get("NBLA_IDX", col.get("nbla_idx", ""))
-            current_alignment = tsv_row.get("ALIGNMENT", col.get("alignment", ""))
+            row = by_g.get(gidx, {})
+            current_idx = row.get("NBLA_IDX", col.get("nbla_idx", ""))
+            current_alignment = row.get("ALIGNMENT", col.get("alignment", ""))
             current_indexes = parse_nbla_indexes(current_idx)
             reason = "missing finite NBLA" if not current_indexes or current_text == "-" else "suspicious finite NBLA surface"
 
-            candidates = candidate_spans(
-                tokens=tokens,
-                current_indexes=current_indexes,
-                greek_pos=int(gidx or 999999),
-                tsv_rows=tsv_rows,
-                data=data,
-                suspicious_gidx=gidx,
-            )
-
+            candidates = candidate_spans(tokens, current_indexes, int(gidx or 999999), rows, gidx)
             if not candidates:
-                rows_out.append([
-                    ref, gidx, col.get("greek", ""), col.get("lemma", ""), col.get("rmac", ""),
-                    current_idx, current_text, current_alignment,
-                    reason, "", "", "0", "none", "no candidate found", str(tsv_path),
-                ])
+                out.append([ref, gidx, col.get("greek", ""), col.get("lemma", ""), col.get("rmac", ""), current_idx, current_text, current_alignment, reason, "", "", "0", "none", "no candidate found", str(tsv_path)])
                 continue
 
-            for candidate in candidates:
-                rows_out.append([
-                    ref, gidx, col.get("greek", ""), col.get("lemma", ""), col.get("rmac", ""),
-                    current_idx, current_text, current_alignment,
-                    reason, candidate.idx, candidate.text, str(candidate.score), candidate.confidence,
-                    candidate.notes, str(tsv_path),
-                ])
-
-    return rows_out
+            selected = candidates if all_candidates else candidates[:1]
+            for cand in selected:
+                out.append([ref, gidx, col.get("greek", ""), col.get("lemma", ""), col.get("rmac", ""), current_idx, current_text, current_alignment, reason, cand.idx, cand.text, str(cand.score), cand.confidence, cand.notes, str(tsv_path)])
+    return out
 
 
 def write_report(path: Path, rows: List[List[str]]) -> None:
@@ -423,19 +380,19 @@ def main() -> None:
     parser.add_argument("--alignments-dir", default="MNA/data/alignments")
     parser.add_argument("--s-tokens-dir", default="MNA/data/s-tokens")
     parser.add_argument("--out", default=None)
+    parser.add_argument("--all-candidates", action="store_true", help="write top five candidates per finite verb instead of only the best")
     args = parser.parse_args()
 
     out_path = Path(args.out) if args.out else Path("MNA/outputs/roots-visible") / f"{args.book}-finite-repair-candidates.tsv"
-    rows = scan_book(args.book, Path(args.interlinear_dir), Path(args.alignments_dir), Path(args.s_tokens_dir))
+    rows = scan_book(args.book, Path(args.interlinear_dir), Path(args.alignments_dir), Path(args.s_tokens_dir), args.all_candidates)
     write_report(out_path, rows)
 
-    high = sum(1 for row in rows if len(row) > 12 and row[12] == "high")
-    medium = sum(1 for row in rows if len(row) > 12 and row[12] == "medium")
-    low = sum(1 for row in rows if len(row) > 12 and row[12] == "low")
-    none = sum(1 for row in rows if len(row) > 12 and row[12] == "none")
-
+    counts = {"high": 0, "medium": 0, "low": 0, "none": 0}
+    for row in rows:
+        if len(row) > 12:
+            counts[row[12]] = counts.get(row[12], 0) + 1
     print(f"Wrote {len(rows)} candidate row(s) to {out_path}")
-    print({"high": high, "medium": medium, "low": low, "none": none})
+    print(counts)
 
 
 if __name__ == "__main__":
