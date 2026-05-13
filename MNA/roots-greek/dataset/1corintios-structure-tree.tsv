@@ -594,9 +594,9 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_GREEK	NODE_TYPE	PARENT_CLAUSE	RELATIONSHIP_TYPE	TREE
 1corintios	11	19	C1	δεῖ	root-parent			0		unresolved-root	==δεῖ== γὰρ καὶ αἱρέσεις ἐν ὑμῖν εἶναι ἵνα καὶ οἱ δόκιμοι φανεροὶ	no ownership relationship resolved
 1corintios	11	19	C2	γένωνται	leaf	C1	subordinate	1	medium	suggested	==γένωνται== ἐν ὑμῖν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
 1corintios	11	20	C1	ἔστιν	root-or-unresolved			0		unresolved-root	συνερχομένων οὖν ὑμῶν ἐπὶ τὸ αὐτὸ οὐκ ==ἔστιν== κυριακὸν δεῖπνον φαγεῖν	no ownership relationship resolved
-1corintios	11	21	C1	προλαμβάνει	root-parent			0		unresolved-root	ἕκαστος γὰρ τὸ ἴδιον δεῖπνον ==προλαμβάνει== ἐν τῷ φαγεῖν καὶ ὃς μὲν	no ownership relationship resolved
-1corintios	11	21	C2	πεινᾷ	internal-node	C1	coordinate	1	medium	suggested	==πεινᾷ== ὃς	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
-1corintios	11	21	C3	μεθύει	leaf	C2	coordinate	2	medium	suggested	δὲ ==μεθύει==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	21	C1	προλαμβάνει	root-parent			0		unresolved-root	ἕκαστος γὰρ τὸ ἴδιον δεῖπνον ==προλαμβάνει== ἐν τῷ φαγεῖν	no ownership relationship resolved
+1corintios	11	21	C2	πεινᾷ	internal-node	C1	coordinate	1	medium	suggested	καὶ ὃς μὲν ==πεινᾷ==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	21	C3	μεθύει	leaf	C2	coordinate	2	medium	suggested	ὃς δὲ ==μεθύει==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
 1corintios	11	22	C1	ἔχετε	root-parent			0		unresolved-root	μὴ γὰρ οἰκίας οὐκ ==ἔχετε== εἰς τὸ ἐσθίειν καὶ πίνειν ἢ τῆς ἐκκλησίας τοῦ θεοῦ	no ownership relationship resolved
 1corintios	11	22	C2	καταφρονεῖτε	internal-node	C1	coordinate	1	medium	suggested	==καταφρονεῖτε==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
 1corintios	11	22	C3	καταισχύνετε	leaf	C2	coordinate	2	medium	suggested	καὶ ==καταισχύνετε== τοὺς μὴ ἔχοντας τί	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available

@@ -364,7 +364,7 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	7	36	C5	19	ποιείτω	ποιέω	V-PAD-3S	19	19	19	==ποιείτω==	suggested-span	ends before next finite anchor
 1corintios	7	36	C6	21	ἁμαρτάνει	ἁμαρτάνω	V-PAI-3S	20	21	20,21	οὐχ ==ἁμαρτάνει==	suggested-span	ends before next finite anchor; carried pre-finite token οὐχ
 1corintios	7	36	C7	22	γαμείτωσαν	γαμέω	V-PAD-3P	22	22	22	==γαμείτωσαν==	suggested-span	ends at verse boundary
-1corintios	7	37	C1	03	ἕστηκεν	ἵστημι	V-XAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ὃς δὲ ==ἕστηκεν== ἐν τῇ καρδίᾳ αὐτοῦ ἑδραῖος μὴ ἔχων ἀνάγκην ἐξουσίαν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δὲ
+1corintios	7	37	C1	03	ἕστηκεν	ἵστημι	V-XAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ὃς δὲ ==ἕστηκεν== ἐν τῇ καρδίᾳ αὐτοῦ ἑδραῖος μὴ ἔχων ἀνάγκην ἐξουσίαν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δὲ; included paired particle head ὃς δὲ
 1corintios	7	37	C2	14	ἔχει	ἔχω	V-PAI-3S	13	20	13,14,15,16,17,18,19,20	δὲ ==ἔχει== περὶ τοῦ ἰδίου θελήματος καὶ τοῦτο	suggested-span	ends before next finite anchor; carried pre-finite token δὲ
 1corintios	7	37	C3	21	κέκρικεν	κρίνω	V-XAI-3S	21	30	21,22,23,24,25,26,27,28,29,30	==κέκρικεν== ἐν τῇ ἰδίᾳ καρδίᾳ τηρεῖν τὴν ἑαυτοῦ παρθένον καλῶς	suggested-span	ends before next finite anchor
 1corintios	7	37	C4	31	ποιήσει	ποιέω	V-FAI-3S	31	31	31	==ποιήσει==	suggested-span	ends at verse boundary
@@ -594,9 +594,9 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	11	19	C1	01	δεῖ	δέω	V-PAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	==δεῖ== γὰρ καὶ αἱρέσεις ἐν ὑμῖν εἶναι ἵνα καὶ οἱ δόκιμοι φανεροὶ	suggested-span	ends before next finite anchor
 1corintios	11	19	C2	13	γένωνται	γίνομαι	V-AMS-3P	13	15	13,14,15	==γένωνται== ἐν ὑμῖν	suggested-span	ends at verse boundary
 1corintios	11	20	C1	08	ἔστιν	εἰμί	V-PAI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	συνερχομένων οὖν ὑμῶν ἐπὶ τὸ αὐτὸ οὐκ ==ἔστιν== κυριακὸν δεῖπνον φαγεῖν	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐκ
-1corintios	11	21	C1	06	προλαμβάνει	προλαμβάνω	V-PAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ἕκαστος γὰρ τὸ ἴδιον δεῖπνον ==προλαμβάνει== ἐν τῷ φαγεῖν καὶ ὃς μὲν	suggested-span	includes pre-anchor material; ends before next finite anchor
-1corintios	11	21	C2	13	πεινᾷ	πεινάω	V-PAI-3S	13	14	13,14	==πεινᾷ== ὃς	suggested-span	ends before next finite anchor
-1corintios	11	21	C3	16	μεθύει	μεθύω	V-PAI-3S	15	16	15,16	δὲ ==μεθύει==	suggested-span	ends at verse boundary; carried pre-finite token δὲ
+1corintios	11	21	C1	06	προλαμβάνει	προλαμβάνω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	ἕκαστος γὰρ τὸ ἴδιον δεῖπνον ==προλαμβάνει== ἐν τῷ φαγεῖν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	21	C2	13	πεινᾷ	πεινάω	V-PAI-3S	10	13	10,11,12,13	καὶ ὃς μὲν ==πεινᾷ==	suggested-span	ends before next finite anchor; included paired particle head ὃς μὲν; included paired particle lead-in καὶ
+1corintios	11	21	C3	16	μεθύει	μεθύω	V-PAI-3S	14	16	14,15,16	ὃς δὲ ==μεθύει==	suggested-span	ends at verse boundary; carried pre-finite token δὲ; included paired particle head ὃς δὲ
 1corintios	11	22	C1	05	ἔχετε	ἔχω	V-PAI-2P	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	μὴ γὰρ οἰκίας οὐκ ==ἔχετε== εἰς τὸ ἐσθίειν καὶ πίνειν ἢ τῆς ἐκκλησίας τοῦ θεοῦ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
 1corintios	11	22	C2	16	καταφρονεῖτε	καταφρονέω	V-PAI-2P	16	16	16	==καταφρονεῖτε==	suggested-span	ends before next finite anchor
 1corintios	11	22	C3	18	καταισχύνετε	καταισχύνω	V-PAI-2P	17	22	17,18,19,20,21,22	καὶ ==καταισχύνετε== τοὺς μὴ ἔχοντας τί	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
