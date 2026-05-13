@@ -1,25 +1,25 @@
 BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_START	SPAN_END	SPAN_GIDX	SPAN_TEXT	SPAN_STATUS	BOUNDARY_NOTES
-1corintios	1	10	C1	01	παρακαλῶ	παρακαλέω	V-PAI-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	==παρακαλῶ== δὲ ὑμᾶς ἀδελφοί διὰ τοῦ ὀνόματος τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ ἵνα τὸ αὐτὸ	suggested-span	neutral finite-anchor region
-1corintios	1	10	C2	16	λέγητε	λέγω	V-PAS-2P	16	19	16,17,18,19	==λέγητε== πάντες καὶ μὴ	suggested-span	neutral finite-anchor region
+1corintios	1	10	C1	01	παρακαλῶ	παρακαλέω	V-PAI-1S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	==παρακαλῶ== δὲ ὑμᾶς ἀδελφοί διὰ τοῦ ὀνόματος τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ	suggested-span	neutral finite-anchor region
+1corintios	1	10	C2	16	λέγητε	λέγω	V-PAS-2P	13	19	13,14,15,16,17,18,19	ἵνα τὸ αὐτὸ ==λέγητε== πάντες καὶ μὴ	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	1	10	C3	20	ᾖ	εἰμί	V-PAS-3S	20	23	20,21,22,23	==ᾖ== ἐν ὑμῖν σχίσματα	suggested-span	neutral finite-anchor region
 1corintios	1	10	C4	24	ἦτε	εἰμί	V-PAS-2P	24	35	24,25,26,27,28,29,30,31,32,33,34,35	==ἦτε== δὲ κατηρτισμένοι ἐν τῷ αὐτῷ νοῒ καὶ ἐν τῇ αὐτῇ γνώμῃ	suggested-span	neutral finite-anchor region
-1corintios	1	11	C1	01	ἐδηλώθη	δηλόω	V-API-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	==ἐδηλώθη== γάρ μοι περὶ ὑμῶν ἀδελφοί μου ὑπὸ τῶν Χλόης ὅτι ἔριδες ἐν ὑμῖν	suggested-span	neutral finite-anchor region
-1corintios	1	11	C2	15	εἰσιν	εἰμί	V-PAI-3P	15	15	15	==εἰσιν==	suggested-span	neutral finite-anchor region
-1corintios	1	12	C1	01	λέγω	λέγω	V-PAI-1S	01	06	01,02,03,04,05,06	==λέγω== δὲ τοῦτο ὅτι ἕκαστος ὑμῶν	suggested-span	neutral finite-anchor region
-1corintios	1	12	C2	07	λέγει	λέγω	V-PAI-3S	07	09	07,08,09	==λέγει== ἐγὼ μέν	suggested-span	neutral finite-anchor region
+1corintios	1	11	C1	01	ἐδηλώθη	δηλόω	V-API-3S	01	10	01,02,03,04,05,06,07,08,09,10	==ἐδηλώθη== γάρ μοι περὶ ὑμῶν ἀδελφοί μου ὑπὸ τῶν Χλόης	suggested-span	neutral finite-anchor region
+1corintios	1	11	C2	15	εἰσιν	εἰμί	V-PAI-3P	11	15	11,12,13,14,15	ὅτι ἔριδες ἐν ὑμῖν ==εἰσιν==	suggested-span	migrated post-finite tail beginning with ὅτι
+1corintios	1	12	C1	01	λέγω	λέγω	V-PAI-1S	01	03	01,02,03	==λέγω== δὲ τοῦτο	suggested-span	neutral finite-anchor region
+1corintios	1	12	C2	07	λέγει	λέγω	V-PAI-3S	04	09	04,05,06,07,08,09	ὅτι ἕκαστος ὑμῶν ==λέγει== ἐγὼ μέν	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	1	12	C3	10	εἰμι	εἰμί	V-PAI-1S	10	20	10,11,12,13,14,15,16,17,18,19,20	==εἰμι== παύλου ἐγὼ δὲ ἀπολλῶ ἐγὼ δὲ κηφᾶ ἐγὼ δὲ χριστοῦ	suggested-span	neutral finite-anchor region
 1corintios	1	13	C1	01	μεμέρισται	μερίζω	V-XPI-3S	01	05	01,02,03,04,05	==μεμέρισται== ὁ χριστός μὴ παῦλος	suggested-span	neutral finite-anchor region
 1corintios	1	13	C2	06	ἐσταυρώθη	σταυρόω	V-API-3S	06	13	06,07,08,09,10,11,12,13	==ἐσταυρώθη== ὑπὲρ ὑμῶν ἢ εἰς τὸ ὄνομα παύλου	suggested-span	neutral finite-anchor region
 1corintios	1	13	C3	14	ἐβαπτίσθητε	βαπτίζω	V-API-2P	14	14	14	==ἐβαπτίσθητε==	suggested-span	neutral finite-anchor region
-1corintios	1	14	C1	01	εὐχαριστῶ	εὐχαριστέω	V-PAI-1S	01	04	01,02,03,04	==εὐχαριστῶ== ὅτι οὐδένα ὑμῶν	suggested-span	neutral finite-anchor region
-1corintios	1	14	C2	05	ἐβάπτισα	βαπτίζω	V-AAI-1S	05	10	05,06,07,08,09,10	==ἐβάπτισα== εἰ μὴ κρίσπον καὶ γάϊον	suggested-span	neutral finite-anchor region
-1corintios	1	15	C1	04	εἴπῃ	λέγω	V-AAS-3S	01	09	01,02,03,04,05,06,07,08,09	ἵνα μή τις ==εἴπῃ== ὅτι εἰς τὸ ἐμὸν ὄνομα	suggested-span	neutral finite-anchor region
-1corintios	1	15	C2	10	ἐβαπτίσθητε	βαπτίζω	V-API-2P	10	10	10	==ἐβαπτίσθητε==	suggested-span	neutral finite-anchor region
+1corintios	1	14	C1	01	εὐχαριστῶ	εὐχαριστέω	V-PAI-1S	01	01	01	==εὐχαριστῶ==	suggested-span	neutral finite-anchor region
+1corintios	1	14	C2	05	ἐβάπτισα	βαπτίζω	V-AAI-1S	02	10	02,03,04,05,06,07,08,09,10	ὅτι οὐδένα ὑμῶν ==ἐβάπτισα== εἰ μὴ κρίσπον καὶ γάϊον	suggested-span	migrated post-finite tail beginning with ὅτι
+1corintios	1	15	C1	04	εἴπῃ	λέγω	V-AAS-3S	01	04	01,02,03,04	ἵνα μή τις ==εἴπῃ==	suggested-span	neutral finite-anchor region
+1corintios	1	15	C2	10	ἐβαπτίσθητε	βαπτίζω	V-API-2P	05	10	05,06,07,08,09,10	ὅτι εἰς τὸ ἐμὸν ὄνομα ==ἐβαπτίσθητε==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	1	16	C1	01	ἐβάπτισα	βαπτίζω	V-AAI-1S	01	08	01,02,03,04,05,06,07,08	==ἐβάπτισα== δὲ καὶ τὸν στεφανᾶ οἶκον λοιπὸν οὐκ	suggested-span	neutral finite-anchor region
-1corintios	1	16	C2	09	οἶδα	οἶδα	V-XAI-1S	09	12	09,10,11,12	==οἶδα== εἴ τινα ἄλλον	suggested-span	neutral finite-anchor region
-1corintios	1	16	C3	13	ἐβάπτισα	βαπτίζω	V-AAI-1S	13	13	13	==ἐβάπτισα==	suggested-span	neutral finite-anchor region
-1corintios	1	17	C1	03	ἀπέστειλέν	ἀποστέλλω	V-AAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	οὐ γὰρ ==ἀπέστειλέν== με χριστὸς βαπτίζειν ἀλλὰ εὐαγγελίζεσθαι οὐκ ἐν σοφίᾳ λόγου ἵνα μὴ	suggested-span	neutral finite-anchor region
-1corintios	1	17	C2	15	κενωθῇ	κενόω	V-APS-3S	15	19	15,16,17,18,19	==κενωθῇ== ὁ σταυρὸς τοῦ χριστοῦ	suggested-span	neutral finite-anchor region
+1corintios	1	16	C2	09	οἶδα	οἶδα	V-XAI-1S	09	09	09	==οἶδα==	suggested-span	neutral finite-anchor region
+1corintios	1	16	C3	13	ἐβάπτισα	βαπτίζω	V-AAI-1S	10	13	10,11,12,13	εἴ τινα ἄλλον ==ἐβάπτισα==	suggested-span	migrated post-finite tail beginning with εἴ
+1corintios	1	17	C1	03	ἀπέστειλέν	ἀποστέλλω	V-AAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	οὐ γὰρ ==ἀπέστειλέν== με χριστὸς βαπτίζειν ἀλλὰ εὐαγγελίζεσθαι οὐκ ἐν σοφίᾳ λόγου	suggested-span	neutral finite-anchor region
+1corintios	1	17	C2	15	κενωθῇ	κενόω	V-APS-3S	13	19	13,14,15,16,17,18,19	ἵνα μὴ ==κενωθῇ== ὁ σταυρὸς τοῦ χριστοῦ	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	1	18	C1	11	ἐστίν	εἰμί	V-PAI-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	ὁ λόγος γὰρ ὁ τοῦ σταυροῦ τοῖς μὲν ἀπολλυμένοις μωρία ==ἐστίν== τοῖς δὲ σῳζομένοις ἡμῖν δύναμις θεοῦ	suggested-span	neutral finite-anchor region
 1corintios	1	18	C2	18	ἐστιν	εἰμί	V-PAI-3S	18	18	18	==ἐστιν==	suggested-span	neutral finite-anchor region
 1corintios	1	19	C1	01	γέγραπται	γράφω	V-XPI-3S	01	02	01,02	==γέγραπται== γάρ	suggested-span	neutral finite-anchor region
@@ -37,8 +37,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	1	27	C2	10	καταισχύνῃ	καταισχύνω	V-PAS-3S	09	17	09,10,11,12,13,14,15,16,17	ἵνα ==καταισχύνῃ== τοὺς σοφούς καὶ τὰ ἀσθενῆ τοῦ κόσμου	suggested-span	migrated subordinate connector ἵνα
 1corintios	1	27	C3	18	ἐξελέξατο	ἐκλέγομαι	V-AMI-3S	18	20	18,19,20	==ἐξελέξατο== ὁ θεός	suggested-span	neutral finite-anchor region
 1corintios	1	27	C4	22	καταισχύνῃ	καταισχύνω	V-PAS-3S	21	24	21,22,23,24	ἵνα ==καταισχύνῃ== τὰ ἰσχυρά	suggested-span	migrated subordinate connector ἵνα
-1corintios	1	28	C1	09	ἐξελέξατο	ἐκλέγομαι	V-AMI-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	καὶ τὰ ἀγενῆ τοῦ κόσμου καὶ τὰ ἐξουθενημένα ==ἐξελέξατο== ὁ θεός τὰ μὴ ὄντα ἵνα τὰ ὄντα	suggested-span	neutral finite-anchor region
-1corintios	1	28	C2	18	καταργήσῃ	καταργέω	V-AAS-3S	18	18	18	==καταργήσῃ==	suggested-span	neutral finite-anchor region
+1corintios	1	28	C1	09	ἐξελέξατο	ἐκλέγομαι	V-AMI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	καὶ τὰ ἀγενῆ τοῦ κόσμου καὶ τὰ ἐξουθενημένα ==ἐξελέξατο== ὁ θεός τὰ μὴ ὄντα	suggested-span	neutral finite-anchor region
+1corintios	1	28	C2	18	καταργήσῃ	καταργέω	V-AAS-3S	15	18	15,16,17,18	ἵνα τὰ ὄντα ==καταργήσῃ==	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	1	29	C1	03	καυχήσηται	καυχάομαι	V-AMS-3S	01	08	01,02,03,04,05,06,07,08	ὅπως μὴ ==καυχήσηται== πᾶσα σὰρξ ἐνώπιον τοῦ θεοῦ	suggested-span	neutral finite-anchor region
 1corintios	1	30	C1	05	ἐστε	εἰμί	V-PAI-2P	01	09	01,02,03,04,05,06,07,08,09	ἐξ αὐτοῦ δὲ ὑμεῖς ==ἐστε== ἐν χριστῷ ἰησοῦ ὃς	suggested-span	neutral finite-anchor region
 1corintios	1	30	C2	10	ἐγενήθη	γίνομαι	V-API-3S	10	20	10,11,12,13,14,15,16,17,18,19,20	==ἐγενήθη== σοφία ἡμῖν ἀπὸ θεοῦ δικαιοσύνη τε καὶ ἁγιασμὸς καὶ ἀπολύτρωσις	suggested-span	neutral finite-anchor region
@@ -49,8 +49,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	1	6	C1	06	ἐβεβαιώθη	βεβαιόω	V-API-3S	01	08	01,02,03,04,05,06,07,08	καθὼς τὸ μαρτύριον τοῦ χριστοῦ ==ἐβεβαιώθη== ἐν ὑμῖν	suggested-span	neutral finite-anchor region
 1corintios	1	8	C1	03	βεβαιώσει	βεβαιόω	V-FAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	ὃς καὶ ==βεβαιώσει== ὑμᾶς ἕως τέλους ἀνεγκλήτους ἐν τῇ ἡμέρᾳ τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ	suggested-span	neutral finite-anchor region
 1corintios	1	9	C1	06	ἐκλήθητε	καλέω	V-API-2P	01	16	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16	πιστὸς ὁ θεὸς διʼ οὗ ==ἐκλήθητε== εἰς κοινωνίαν τοῦ υἱοῦ αὐτοῦ ἰησοῦ χριστοῦ τοῦ κυρίου ἡμῶν	suggested-span	neutral finite-anchor region
-1corintios	10	1	C1	02	θέλω	θέλω	V-PAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	οὐ ==θέλω== γὰρ ὑμᾶς ἀγνοεῖν ἀδελφοί ὅτι οἱ πατέρες ἡμῶν πάντες ὑπὸ τὴν νεφέλην	suggested-span	neutral finite-anchor region
-1corintios	10	1	C2	15	ἦσαν	εἰμί	V-IAI-3P	15	20	15,16,17,18,19,20	==ἦσαν== καὶ πάντες διὰ τῆς θαλάσσης	suggested-span	neutral finite-anchor region
+1corintios	10	1	C1	02	θέλω	θέλω	V-PAI-1S	01	06	01,02,03,04,05,06	οὐ ==θέλω== γὰρ ὑμᾶς ἀγνοεῖν ἀδελφοί	suggested-span	neutral finite-anchor region
+1corintios	10	1	C2	15	ἦσαν	εἰμί	V-IAI-3P	07	20	07,08,09,10,11,12,13,14,15,16,17,18,19,20	ὅτι οἱ πατέρες ἡμῶν πάντες ὑπὸ τὴν νεφέλην ==ἦσαν== καὶ πάντες διὰ τῆς θαλάσσης	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	10	1	C3	21	διῆλθον	διέρχομαι	V-AAI-3P	21	21	21	==διῆλθον==	suggested-span	neutral finite-anchor region
 1corintios	10	10	C1	02	γογγύζετε	γογγύζω	V-PAD-2P	01	05	01,02,03,04,05	μηδὲ ==γογγύζετε== καθάπερ τινὲς αὐτῶν	suggested-span	neutral finite-anchor region
 1corintios	10	10	C2	06	ἐγόγγυσαν	γογγύζω	V-AAI-3P	06	07	06,07	==ἐγόγγυσαν== καὶ	suggested-span	neutral finite-anchor region
@@ -60,8 +60,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	10	11	C3	17	κατήντηκεν	καταντάω	V-XAI-3S	17	17	17	==κατήντηκεν==	suggested-span	neutral finite-anchor region
 1corintios	10	12	C1	05	βλεπέτω	βλέπω	V-PAD-3S	01	06	01,02,03,04,05,06	ὥστε ὁ δοκῶν ἑστάναι ==βλεπέτω== μὴ	suggested-span	neutral finite-anchor region
 1corintios	10	12	C2	07	πέσῃ	πίπτω	V-AAS-3S	07	07	07	==πέσῃ==	suggested-span	neutral finite-anchor region
-1corintios	10	13	C1	04	εἴληφεν	λαμβάνω	V-XAI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	πειρασμὸς ὑμᾶς οὐκ ==εἴληφεν== εἰ μὴ ἀνθρώπινος πιστὸς δὲ ὁ θεός ὃς οὐκ	suggested-span	neutral finite-anchor region
-1corintios	10	13	C2	14	ἐάσει	ἐάω	V-FAI-3S	14	18	14,15,16,17,18	==ἐάσει== ὑμᾶς πειρασθῆναι ὑπὲρ ὃ	suggested-span	neutral finite-anchor region
+1corintios	10	13	C1	04	εἴληφεν	λαμβάνω	V-XAI-3S	01	04	01,02,03,04	πειρασμὸς ὑμᾶς οὐκ ==εἴληφεν==	suggested-span	neutral finite-anchor region
+1corintios	10	13	C2	14	ἐάσει	ἐάω	V-FAI-3S	05	18	05,06,07,08,09,10,11,12,13,14,15,16,17,18	εἰ μὴ ἀνθρώπινος πιστὸς δὲ ὁ θεός ὃς οὐκ ==ἐάσει== ὑμᾶς πειρασθῆναι ὑπὲρ ὃ	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	10	13	C3	19	δύνασθε	δύναμαι	V-PMI-2P	19	20	19,20	==δύνασθε== ἀλλὰ	suggested-span	neutral finite-anchor region
 1corintios	10	13	C4	21	ποιήσει	ποιέω	V-FAI-3S	21	30	21,22,23,24,25,26,27,28,29,30	==ποιήσει== σὺν τῷ πειρασμῷ καὶ τὴν ἔκβασιν τοῦ δύνασθαι ὑπενεγκεῖν	suggested-span	neutral finite-anchor region
 1corintios	10	14	C1	04	φεύγετε	φεύγω	V-PAD-2P	01	07	01,02,03,04,05,06,07	διόπερ ἀγαπητοί μου ==φεύγετε== ἀπὸ τῆς εἰδωλολατρίας	suggested-span	neutral finite-anchor region
@@ -76,9 +76,9 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	10	17	C2	16	μετέχομεν	μετέχω	V-PAI-1P	16	16	16	==μετέχομεν==	suggested-span	neutral finite-anchor region
 1corintios	10	18	C1	01	βλέπετε	βλέπω	V-PAD-2P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	==βλέπετε== τὸν ἰσραὴλ κατὰ σάρκα οὐχ οἱ ἐσθίοντες τὰς θυσίας κοινωνοὶ τοῦ θυσιαστηρίου	suggested-span	neutral finite-anchor region
 1corintios	10	18	C2	14	εἰσίν	εἰμί	V-PAI-3P	14	14	14	==εἰσίν==	suggested-span	neutral finite-anchor region
-1corintios	10	19	C1	03	φημι	φημί	V-PAI-1S	01	06	01,02,03,04,05,06	τί οὖν ==φημι== ὅτι εἰδωλόθυτόν τί	suggested-span	neutral finite-anchor region
-1corintios	10	19	C2	07	ἐστιν	εἰμί	V-PAI-3S	07	11	07,08,09,10,11	==ἐστιν== ἢ ὅτι εἴδωλόν τί	suggested-span	neutral finite-anchor region
-1corintios	10	19	C3	12	ἐστιν	εἰμί	V-PAI-3S	12	12	12	==ἐστιν==	suggested-span	neutral finite-anchor region
+1corintios	10	19	C1	03	φημι	φημί	V-PAI-1S	01	03	01,02,03	τί οὖν ==φημι==	suggested-span	neutral finite-anchor region
+1corintios	10	19	C2	07	ἐστιν	εἰμί	V-PAI-3S	04	08	04,05,06,07,08	ὅτι εἰδωλόθυτόν τί ==ἐστιν== ἢ	suggested-span	migrated post-finite tail beginning with ὅτι
+1corintios	10	19	C3	12	ἐστιν	εἰμί	V-PAI-3S	09	12	09,10,11,12	ὅτι εἴδωλόν τί ==ἐστιν==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	10	2	C1	06	ἐβαπτίσαντο	βαπτίζω	V-AMI-3P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	καὶ πάντες εἰς τὸν μωϋσῆν ==ἐβαπτίσαντο== ἐν τῇ νεφέλῃ καὶ ἐν τῇ θαλάσσῃ	suggested-span	neutral finite-anchor region
 1corintios	10	20	C1	04	θύουσιν	θύω	V-PAI-3P	01	08	01,02,03,04,05,06,07,08	ἀλλʼ ὅτι ἃ ==θύουσιν== δαιμονίοις καὶ οὐ θεῷ	suggested-span	neutral finite-anchor region
 1corintios	10	20	C2	09	θύουσιν	θύω	V-PAI-3P	09	10	09,10	==θύουσιν== οὐ	suggested-span	neutral finite-anchor region
@@ -133,22 +133,22 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	11	10	C1	03	ὀφείλει	ὀφείλω	V-PAI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	διὰ τοῦτο ==ὀφείλει== ἡ γυνὴ ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς διὰ τοὺς ἀγγέλους	suggested-span	neutral finite-anchor region
 1corintios	11	13	C1	04	κρίνατε	κρίνω	V-AAD-2P	01	05	01,02,03,04,05	ἐν ὑμῖν αὐτοῖς ==κρίνατε== πρέπον	suggested-span	neutral finite-anchor region
 1corintios	11	13	C2	06	ἐστὶν	εἰμί	V-PAI-3S	06	11	06,07,08,09,10,11	==ἐστὶν== γυναῖκα ἀκατακάλυπτον τῷ θεῷ προσεύχεσθαι	suggested-span	neutral finite-anchor region
-1corintios	11	14	C1	05	διδάσκει	διδάσκω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	οὐδὲ ἡ φύσις αὐτὴ ==διδάσκει== ὑμᾶς ὅτι ἀνὴρ μὲν	suggested-span	neutral finite-anchor region
-1corintios	11	14	C2	11	κομᾷ	κομάω	V-PAS-3S	10	13	10,11,12,13	ἐὰν ==κομᾷ== ἀτιμία αὐτῷ	suggested-span	migrated subordinate connector ἐὰν
+1corintios	11	14	C1	05	διδάσκει	διδάσκω	V-PAI-3S	01	06	01,02,03,04,05,06	οὐδὲ ἡ φύσις αὐτὴ ==διδάσκει== ὑμᾶς	suggested-span	neutral finite-anchor region
+1corintios	11	14	C2	11	κομᾷ	κομάω	V-PAS-3S	07	13	07,08,09,10,11,12,13	ὅτι ἀνὴρ μὲν ἐὰν ==κομᾷ== ἀτιμία αὐτῷ	suggested-span	migrated subordinate connector ἐὰν; migrated post-finite tail beginning with ὅτι
 1corintios	11	14	C3	14	ἐστιν	εἰμί	V-PAI-3S	14	14	14	==ἐστιν==	suggested-span	neutral finite-anchor region
 1corintios	11	15	C1	04	κομᾷ	κομάω	V-PAS-3S	01	06	01,02,03,04,05,06	γυνὴ δὲ ἐὰν ==κομᾷ== δόξα αὐτῇ	suggested-span	neutral finite-anchor region
-1corintios	11	15	C2	07	ἐστιν	εἰμί	V-PAI-3S	07	12	07,08,09,10,11,12	==ἐστιν== ὅτι ἡ κόμη ἀντὶ περιβολαίου	suggested-span	neutral finite-anchor region
-1corintios	11	15	C3	13	δέδοται	δίδωμι	V-XPI-3S	13	13	13	==δέδοται==	suggested-span	neutral finite-anchor region
+1corintios	11	15	C2	07	ἐστιν	εἰμί	V-PAI-3S	07	07	07	==ἐστιν==	suggested-span	neutral finite-anchor region
+1corintios	11	15	C3	13	δέδοται	δίδωμι	V-XPI-3S	08	13	08,09,10,11,12,13	ὅτι ἡ κόμη ἀντὶ περιβολαίου ==δέδοται==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	11	16	C1	04	δοκεῖ	δοκέω	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	εἰ δέ τις ==δοκεῖ== φιλόνεικος εἶναι ἡμεῖς τοιαύτην συνήθειαν οὐκ	suggested-span	neutral finite-anchor region
 1corintios	11	16	C2	11	ἔχομεν	ἔχω	V-PAI-1P	11	16	11,12,13,14,15,16	==ἔχομεν== οὐδὲ αἱ ἐκκλησίαι τοῦ θεοῦ	suggested-span	neutral finite-anchor region
-1corintios	11	17	C1	05	ἐπαινῶ	ἐπαινέω	V-PAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	τοῦτο δὲ παραγγέλλων οὐκ ==ἐπαινῶ== ὅτι οὐκ εἰς τὸ κρεῖσσον ἀλλὰ εἰς τὸ ἧσσον	suggested-span	neutral finite-anchor region
-1corintios	11	17	C2	15	συνέρχεσθε	συνέρχομαι	V-PMI-2P	15	15	15	==συνέρχεσθε==	suggested-span	neutral finite-anchor region
+1corintios	11	17	C1	05	ἐπαινῶ	ἐπαινέω	V-PAI-1S	01	05	01,02,03,04,05	τοῦτο δὲ παραγγέλλων οὐκ ==ἐπαινῶ==	suggested-span	neutral finite-anchor region
+1corintios	11	17	C2	15	συνέρχεσθε	συνέρχομαι	V-PMI-2P	06	15	06,07,08,09,10,11,12,13,14,15	ὅτι οὐκ εἰς τὸ κρεῖσσον ἀλλὰ εἰς τὸ ἧσσον ==συνέρχεσθε==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	11	18	C1	08	ἀκούω	ἀκούω	V-PAI-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	πρῶτον μὲν γὰρ συνερχομένων ὑμῶν ἐν ἐκκλησίᾳ ==ἀκούω== σχίσματα ἐν ὑμῖν ὑπάρχειν καὶ μέρος τι	suggested-span	neutral finite-anchor region
 1corintios	11	18	C2	16	πιστεύω	πιστεύω	V-PAI-1S	16	16	16	==πιστεύω==	suggested-span	neutral finite-anchor region
-1corintios	11	19	C1	01	δεῖ	δέω	V-PAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	==δεῖ== γὰρ καὶ αἱρέσεις ἐν ὑμῖν εἶναι ἵνα καὶ οἱ δόκιμοι φανεροὶ	suggested-span	neutral finite-anchor region
-1corintios	11	19	C2	13	γένωνται	γίνομαι	V-AMS-3P	13	15	13,14,15	==γένωνται== ἐν ὑμῖν	suggested-span	neutral finite-anchor region
-1corintios	11	2	C1	01	ἐπαινῶ	ἐπαινέω	V-PAI-1S	01	06	01,02,03,04,05,06	==ἐπαινῶ== δὲ ὑμᾶς ὅτι πάντα μου	suggested-span	neutral finite-anchor region
-1corintios	11	2	C2	07	μέμνησθε	μιμνῄσκομαι	V-XMI-2P	07	09	07,08,09	==μέμνησθε== καὶ καθὼς	suggested-span	neutral finite-anchor region
+1corintios	11	19	C1	01	δεῖ	δέω	V-PAI-3S	01	07	01,02,03,04,05,06,07	==δεῖ== γὰρ καὶ αἱρέσεις ἐν ὑμῖν εἶναι	suggested-span	neutral finite-anchor region
+1corintios	11	19	C2	13	γένωνται	γίνομαι	V-AMS-3P	08	15	08,09,10,11,12,13,14,15	ἵνα καὶ οἱ δόκιμοι φανεροὶ ==γένωνται== ἐν ὑμῖν	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	11	2	C1	01	ἐπαινῶ	ἐπαινέω	V-PAI-1S	01	03	01,02,03	==ἐπαινῶ== δὲ ὑμᾶς	suggested-span	neutral finite-anchor region
+1corintios	11	2	C2	07	μέμνησθε	μιμνῄσκομαι	V-XMI-2P	04	09	04,05,06,07,08,09	ὅτι πάντα μου ==μέμνησθε== καὶ καθὼς	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	11	2	C3	10	παρέδωκα	παραδίδωμι	V-AAI-1S	10	13	10,11,12,13	==παρέδωκα== ὑμῖν τὰς παραδόσεις	suggested-span	neutral finite-anchor region
 1corintios	11	2	C4	14	κατέχετε	κατέχω	V-PAI-2P	14	14	14	==κατέχετε==	suggested-span	neutral finite-anchor region
 1corintios	11	20	C1	08	ἔστιν	εἰμί	V-PAI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	συνερχομένων οὖν ὑμῶν ἐπὶ τὸ αὐτὸ οὐκ ==ἔστιν== κυριακὸν δεῖπνον φαγεῖν	suggested-span	neutral finite-anchor region
@@ -162,8 +162,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	11	22	C5	25	ἐπαινέσω	ἐπαινέω	V-AAS-1S	25	29	25,26,27,28,29	==ἐπαινέσω== ὑμᾶς ἐν τούτῳ οὐκ	suggested-span	neutral finite-anchor region
 1corintios	11	22	C6	30	ἐπαινῶ	ἐπαινέω	V-PAI-1S	30	30	30	==ἐπαινῶ==	suggested-span	neutral finite-anchor region
 1corintios	11	23	C1	03	παρέλαβον	παραλαμβάνω	V-AAI-1S	01	08	01,02,03,04,05,06,07,08	ἐγὼ γὰρ ==παρέλαβον== ἀπὸ τοῦ κυρίου ὃ καὶ	suggested-span	neutral finite-anchor region
-1corintios	11	23	C2	09	παρέδωκα	παραδίδωμι	V-AAI-1S	09	18	09,10,11,12,13,14,15,16,17,18	==παρέδωκα== ὑμῖν ὅτι ὁ κύριος ἰησοῦς ἐν τῇ νυκτὶ ᾗ	suggested-span	neutral finite-anchor region
-1corintios	11	23	C3	19	παρεδίδετο	παραδίδωμι	V-IPI-3S	19	19	19	==παρεδίδετο==	suggested-span	neutral finite-anchor region
+1corintios	11	23	C2	09	παρέδωκα	παραδίδωμι	V-AAI-1S	09	10	09,10	==παρέδωκα== ὑμῖν	suggested-span	neutral finite-anchor region
+1corintios	11	23	C3	19	παρεδίδετο	παραδίδωμι	V-IPI-3S	11	19	11,12,13,14,15,16,17,18,19	ὅτι ὁ κύριος ἰησοῦς ἐν τῇ νυκτὶ ᾗ ==παρεδίδετο==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	11	23	C4	20	ἔλαβεν	λαμβάνω	V-AAI-3S	20	21	20,21	==ἔλαβεν== ἄρτον	suggested-span	neutral finite-anchor region
 1corintios	11	24	C1	03	ἔκλασεν	κλάω	V-AAI-3S	01	04	01,02,03,04	καὶ εὐχαριστήσας ==ἔκλασεν== καὶ	suggested-span	neutral finite-anchor region
 1corintios	11	24	C2	05	εἶπεν	λέγω	V-AAI-3S	05	07	05,06,07	==εἶπεν== τοῦτό μού	suggested-span	neutral finite-anchor region
@@ -184,25 +184,25 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	11	28	C3	15	πινέτω	πίνω	V-PAD-3S	15	15	15	==πινέτω==	suggested-span	neutral finite-anchor region
 1corintios	11	29	C1	08	ἐσθίει	ἐσθίω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	ὁ γὰρ ἐσθίων καὶ πίνων κρίμα ἑαυτῷ ==ἐσθίει== καὶ	suggested-span	neutral finite-anchor region
 1corintios	11	29	C2	10	πίνει	πίνω	V-PAI-3S	10	14	10,11,12,13,14	==πίνει== μὴ διακρίνων τὸ σῶμα	suggested-span	neutral finite-anchor region
-1corintios	11	3	C1	01	θέλω	θέλω	V-PAI-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	==θέλω== δὲ ὑμᾶς εἰδέναι ὅτι παντὸς ἀνδρὸς ἡ κεφαλὴ ὁ χριστός	suggested-span	neutral finite-anchor region
-1corintios	11	3	C2	12	ἐστιν	εἰμί	V-PAI-3S	12	23	12,13,14,15,16,17,18,19,20,21,22,23	==ἐστιν== κεφαλὴ δὲ γυναικὸς ὁ ἀνήρ κεφαλὴ δὲ τοῦ χριστοῦ ὁ θεός	suggested-span	neutral finite-anchor region
+1corintios	11	3	C1	01	θέλω	θέλω	V-PAI-1S	01	04	01,02,03,04	==θέλω== δὲ ὑμᾶς εἰδέναι	suggested-span	neutral finite-anchor region
+1corintios	11	3	C2	12	ἐστιν	εἰμί	V-PAI-3S	05	23	05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23	ὅτι παντὸς ἀνδρὸς ἡ κεφαλὴ ὁ χριστός ==ἐστιν== κεφαλὴ δὲ γυναικὸς ὁ ἀνήρ κεφαλὴ δὲ τοῦ χριστοῦ ὁ θεός	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	11	30	C1	10	κοιμῶνται	κοιμάομαι	V-PMI-3P	01	11	01,02,03,04,05,06,07,08,09,10,11	διὰ τοῦτο ἐν ὑμῖν πολλοὶ ἀσθενεῖς καὶ ἄρρωστοι καὶ ==κοιμῶνται== ἱκανοί	suggested-span	neutral finite-anchor region
 1corintios	11	31	C1	04	διεκρίνομεν	διακρίνω	V-IAI-1P	01	06	01,02,03,04,05,06	εἰ δὲ ἑαυτοὺς ==διεκρίνομεν== οὐκ ἂν	suggested-span	neutral finite-anchor region
 1corintios	11	31	C2	07	ἐκρινόμεθα	κρίνω	V-IPI-1P	07	07	07	==ἐκρινόμεθα==	suggested-span	neutral finite-anchor region
-1corintios	11	32	C1	05	παιδευόμεθα	παιδεύω	V-PPI-1P	01	10	01,02,03,04,05,06,07,08,09,10	κρινόμενοι δὲ ὑπὸ κυρίου ==παιδευόμεθα== ἵνα μὴ σὺν τῷ κόσμῳ	suggested-span	neutral finite-anchor region
-1corintios	11	32	C2	11	κατακριθῶμεν	κατακρίνω	V-APS-1P	11	11	11	==κατακριθῶμεν==	suggested-span	neutral finite-anchor region
+1corintios	11	32	C1	05	παιδευόμεθα	παιδεύω	V-PPI-1P	01	05	01,02,03,04,05	κρινόμενοι δὲ ὑπὸ κυρίου ==παιδευόμεθα==	suggested-span	neutral finite-anchor region
+1corintios	11	32	C2	11	κατακριθῶμεν	κατακρίνω	V-APS-1P	06	11	06,07,08,09,10,11	ἵνα μὴ σὺν τῷ κόσμῳ ==κατακριθῶμεν==	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	11	33	C1	09	ἐκδέχεσθε	ἐκδέχομαι	V-PMD-2P	01	09	01,02,03,04,05,06,07,08,09	ὥστε ἀδελφοί μου συνερχόμενοι εἰς τὸ φαγεῖν ἀλλήλους ==ἐκδέχεσθε==	suggested-span	neutral finite-anchor region
 1corintios	11	34	C1	03	πεινᾷ	πεινάω	V-PAI-3S	01	05	01,02,03,04,05	εἴ τις ==πεινᾷ== ἐν οἴκῳ	suggested-span	neutral finite-anchor region
-1corintios	11	34	C2	06	ἐσθιέτω	ἐσθίω	V-PAD-3S	06	10	06,07,08,09,10	==ἐσθιέτω== ἵνα μὴ εἰς κρίμα	suggested-span	neutral finite-anchor region
-1corintios	11	34	C3	11	συνέρχησθε	συνέρχομαι	V-PMS-2P	11	16	11,12,13,14,15,16	==συνέρχησθε== τὰ δὲ λοιπὰ ὡς ἂν	suggested-span	neutral finite-anchor region
-1corintios	11	34	C4	17	ἔλθω	ἔρχομαι	V-AAS-1S	17	17	17	==ἔλθω==	suggested-span	neutral finite-anchor region
+1corintios	11	34	C2	06	ἐσθιέτω	ἐσθίω	V-PAD-3S	06	06	06	==ἐσθιέτω==	suggested-span	neutral finite-anchor region
+1corintios	11	34	C3	11	συνέρχησθε	συνέρχομαι	V-PMS-2P	07	14	07,08,09,10,11,12,13,14	ἵνα μὴ εἰς κρίμα ==συνέρχησθε== τὰ δὲ λοιπὰ	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	11	34	C4	17	ἔλθω	ἔρχομαι	V-AAS-1S	15	17	15,16,17	ὡς ἂν ==ἔλθω==	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	11	34	C5	18	διατάξομαι	διατάσσω	V-FMI-1S	18	18	18	==διατάξομαι==	suggested-span	neutral finite-anchor region
 1corintios	11	4	C1	09	καταισχύνει	καταισχύνω	V-PAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	πᾶς ἀνὴρ προσευχόμενος ἢ προφητεύων κατὰ κεφαλῆς ἔχων ==καταισχύνει== τὴν κεφαλὴν αὐτοῦ	suggested-span	neutral finite-anchor region
 1corintios	11	5	C1	10	καταισχύνει	καταισχύνω	V-PAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	πᾶσα δὲ γυνὴ προσευχομένη ἢ προφητεύουσα ἀκατακαλύπτῳ τῇ κεφαλῇ ==καταισχύνει== τὴν κεφαλὴν αὐτῆς ἓν γάρ	suggested-span	neutral finite-anchor region
 1corintios	11	5	C2	16	ἐστιν	εἰμί	V-PAI-3S	16	21	16,17,18,19,20,21	==ἐστιν== καὶ τὸ αὐτὸ τῇ ἐξυρημένῃ	suggested-span	neutral finite-anchor region
 1corintios	11	6	C1	04	κατακαλύπτεται	κατακαλύπτομαι	V-PMI-3S	01	06	01,02,03,04,05,06	εἰ γὰρ οὐ ==κατακαλύπτεται== γυνή καὶ	suggested-span	neutral finite-anchor region
-1corintios	11	6	C2	07	κειράσθω	κείρω	V-AMD-3S	07	15	07,08,09,10,11,12,13,14,15	==κειράσθω== εἰ δὲ αἰσχρὸν γυναικὶ τὸ κείρασθαι ἢ ξυρᾶσθαι	suggested-span	neutral finite-anchor region
-1corintios	11	6	C3	16	κατακαλυπτέσθω	κατακαλύπτομαι	V-PMD-3S	16	16	16	==κατακαλυπτέσθω==	suggested-span	neutral finite-anchor region
+1corintios	11	6	C2	07	κειράσθω	κείρω	V-AMD-3S	07	07	07	==κειράσθω==	suggested-span	neutral finite-anchor region
+1corintios	11	6	C3	16	κατακαλυπτέσθω	κατακαλύπτομαι	V-PMD-3S	08	16	08,09,10,11,12,13,14,15,16	εἰ δὲ αἰσχρὸν γυναικὶ τὸ κείρασθαι ἢ ξυρᾶσθαι ==κατακαλυπτέσθω==	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	11	7	C1	05	ὀφείλει	ὀφείλω	V-PAI-3S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	ἀνὴρ μὲν γὰρ οὐκ ==ὀφείλει== κατακαλύπτεσθαι τὴν κεφαλήν εἰκὼν καὶ δόξα θεοῦ ὑπάρχων ἡ γυνὴ δὲ δόξα ἀνδρός	suggested-span	neutral finite-anchor region
 1corintios	11	7	C2	19	ἐστιν	εἰμί	V-PAI-3S	19	19	19	==ἐστιν==	suggested-span	neutral finite-anchor region
 1corintios	11	8	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	οὐ γάρ ==ἐστιν== ἀνὴρ ἐκ γυναικός ἀλλὰ γυνὴ ἐξ ἀνδρός	suggested-span	neutral finite-anchor region
@@ -216,20 +216,20 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	12	13	C1	11	ἐβαπτίσθημεν	βαπτίζω	V-API-1P	01	23	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23	καὶ γὰρ ἐν ἑνὶ πνεύματι ἡμεῖς πάντες εἰς ἓν σῶμα ==ἐβαπτίσθημεν== εἴτε ἰουδαῖοι εἴτε ἕλληνες εἴτε δοῦλοι εἴτε ἐλεύθεροι καὶ πάντες ἓν πνεῦμα	suggested-span	neutral finite-anchor region
 1corintios	12	13	C2	24	ἐποτίσθημεν	ποτίζω	V-API-1P	24	24	24	==ἐποτίσθημεν==	suggested-span	neutral finite-anchor region
 1corintios	12	14	C1	06	ἔστιν	εἰμί	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	καὶ γὰρ τὸ σῶμα οὐκ ==ἔστιν== ἓν μέλος ἀλλὰ πολλά	suggested-span	neutral finite-anchor region
-1corintios	12	15	C1	02	εἴπῃ	λέγω	V-AAS-3S	01	06	01,02,03,04,05,06	ἐὰν ==εἴπῃ== ὁ πούς ὅτι οὐκ	suggested-span	neutral finite-anchor region
-1corintios	12	15	C2	07	εἰμὶ	εἰμί	V-PAI-1S	07	09	07,08,09	==εἰμὶ== χείρ οὐκ	suggested-span	neutral finite-anchor region
+1corintios	12	15	C1	02	εἴπῃ	λέγω	V-AAS-3S	01	04	01,02,03,04	ἐὰν ==εἴπῃ== ὁ πούς	suggested-span	neutral finite-anchor region
+1corintios	12	15	C2	07	εἰμὶ	εἰμί	V-PAI-1S	05	09	05,06,07,08,09	ὅτι οὐκ ==εἰμὶ== χείρ οὐκ	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	12	15	C3	10	εἰμὶ	εἰμί	V-PAI-1S	10	17	10,11,12,13,14,15,16,17	==εἰμὶ== ἐκ τοῦ σώματος οὐ παρὰ τοῦτο οὐκ	suggested-span	neutral finite-anchor region
 1corintios	12	15	C4	18	ἔστιν	εἰμί	V-PAI-3S	18	21	18,19,20,21	==ἔστιν== ἐκ τοῦ σώματος	suggested-span	neutral finite-anchor region
-1corintios	12	16	C1	03	εἴπῃ	λέγω	V-AAS-3S	01	07	01,02,03,04,05,06,07	καὶ ἐὰν ==εἴπῃ== τὸ οὖς ὅτι οὐκ	suggested-span	neutral finite-anchor region
-1corintios	12	16	C2	08	εἰμὶ	εἰμί	V-PAI-1S	08	10	08,09,10	==εἰμὶ== ὀφθαλμός οὐκ	suggested-span	neutral finite-anchor region
+1corintios	12	16	C1	03	εἴπῃ	λέγω	V-AAS-3S	01	05	01,02,03,04,05	καὶ ἐὰν ==εἴπῃ== τὸ οὖς	suggested-span	neutral finite-anchor region
+1corintios	12	16	C2	08	εἰμὶ	εἰμί	V-PAI-1S	06	10	06,07,08,09,10	ὅτι οὐκ ==εἰμὶ== ὀφθαλμός οὐκ	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	12	16	C3	11	εἰμὶ	εἰμί	V-PAI-1S	11	18	11,12,13,14,15,16,17,18	==εἰμὶ== ἐκ τοῦ σώματος οὐ παρὰ τοῦτο οὐκ	suggested-span	neutral finite-anchor region
 1corintios	12	16	C4	19	ἔστιν	εἰμί	V-PAI-3S	19	22	19,20,21,22	==ἔστιν== ἐκ τοῦ σώματος	suggested-span	neutral finite-anchor region
 1corintios	12	18	C1	05	ἔθετο	τίθημι	V-AMI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	νυνὶ δὲ ὁ θεὸς ==ἔθετο== τὰ μέλη ἓν ἕκαστον αὐτῶν ἐν τῷ σώματι καθὼς	suggested-span	neutral finite-anchor region
 1corintios	12	18	C2	15	ἠθέλησεν	θέλω	V-AAI-3S	15	15	15	==ἠθέλησεν==	suggested-span	neutral finite-anchor region
 1corintios	12	19	C1	03	ἦν	εἰμί	V-IAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	εἰ δὲ ==ἦν== τὰ πάντα ἓν μέλος ποῦ τὸ σῶμα	suggested-span	neutral finite-anchor region
-1corintios	12	2	C1	01	οἴδατε	οἶδα	V-XAI-2P	01	04	01,02,03,04	==οἴδατε== ὅτι ὅτε ἔθνη	suggested-span	neutral finite-anchor region
-1corintios	12	2	C2	05	ἦτε	εἰμί	V-IAI-2P	05	12	05,06,07,08,09,10,11,12	==ἦτε== πρὸς τὰ εἴδωλα τὰ ἄφωνα ὡς ἂν	suggested-span	neutral finite-anchor region
-1corintios	12	2	C3	13	ἤγεσθε	ἄγω	V-IPI-2P	13	14	13,14	==ἤγεσθε== ἀπαγόμενοι	suggested-span	neutral finite-anchor region
+1corintios	12	2	C1	01	οἴδατε	οἶδα	V-XAI-2P	01	01	01	==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	12	2	C2	05	ἦτε	εἰμί	V-IAI-2P	02	10	02,03,04,05,06,07,08,09,10	ὅτι ὅτε ἔθνη ==ἦτε== πρὸς τὰ εἴδωλα τὰ ἄφωνα	suggested-span	migrated post-finite tail beginning with ὅτι
+1corintios	12	2	C3	13	ἤγεσθε	ἄγω	V-IPI-2P	11	14	11,12,13,14	ὡς ἂν ==ἤγεσθε== ἀπαγόμενοι	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	12	21	C1	02	δύναται	δύναμαι	V-PMI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	οὐ ==δύναται== δὲ ὁ ὀφθαλμὸς εἰπεῖν τῇ χειρί χρείαν σου οὐκ	suggested-span	neutral finite-anchor region
 1corintios	12	21	C2	12	ἔχω	ἔχω	V-PAI-1S	12	21	12,13,14,15,16,17,18,19,20,21	==ἔχω== ἢ πάλιν ἡ κεφαλὴ τοῖς ποσίν χρείαν ὑμῶν οὐκ	suggested-span	neutral finite-anchor region
 1corintios	12	21	C3	22	ἔχω	ἔχω	V-PAI-1S	22	22	22	==ἔχω==	suggested-span	neutral finite-anchor region
@@ -247,8 +247,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	12	26	C4	13	συγχαίρει	συγχαίρω	V-PAI-3S	13	16	13,14,15,16	==συγχαίρει== πάντα τὰ μέλη	suggested-span	neutral finite-anchor region
 1corintios	12	27	C1	03	ἐστε	εἰμί	V-PAI-2P	01	09	01,02,03,04,05,06,07,08,09	ὑμεῖς δέ ==ἐστε== σῶμα χριστοῦ καὶ μέλη ἐκ μέρους	suggested-span	neutral finite-anchor region
 1corintios	12	28	C1	04	ἔθετο	τίθημι	V-AMI-3S	01	24	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24	καὶ οὓς μὲν ==ἔθετο== ὁ θεὸς ἐν τῇ ἐκκλησίᾳ πρῶτον ἀποστόλους δεύτερον προφήτας τρίτον διδασκάλους ἔπειτα δυνάμεις ἔπειτα χαρίσματα ἰαμάτων ἀντιλήμψεις κυβερνήσεις γένη γλωσσῶν	suggested-span	neutral finite-anchor region
-1corintios	12	3	C1	02	γνωρίζω	γνωρίζω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	διὸ ==γνωρίζω== ὑμῖν ὅτι οὐδεὶς ἐν πνεύματι θεοῦ λαλῶν	suggested-span	neutral finite-anchor region
-1corintios	12	3	C2	10	λέγει	λέγω	V-PAI-3S	10	14	10,11,12,13,14	==λέγει== ἀνάθεμα ἰησοῦς καὶ οὐδεὶς	suggested-span	neutral finite-anchor region
+1corintios	12	3	C1	02	γνωρίζω	γνωρίζω	V-PAI-1S	01	03	01,02,03	διὸ ==γνωρίζω== ὑμῖν	suggested-span	neutral finite-anchor region
+1corintios	12	3	C2	10	λέγει	λέγω	V-PAI-3S	04	14	04,05,06,07,08,09,10,11,12,13,14	ὅτι οὐδεὶς ἐν πνεύματι θεοῦ λαλῶν ==λέγει== ἀνάθεμα ἰησοῦς καὶ οὐδεὶς	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	12	3	C3	15	δύναται	δύναμαι	V-PMI-3S	15	23	15,16,17,18,19,20,21,22,23	==δύναται== εἰπεῖν κύριος ἰησοῦς εἰ μὴ ἐν πνεύματι ἁγίῳ	suggested-span	neutral finite-anchor region
 1corintios	12	30	C1	04	ἔχουσιν	ἔχω	V-PAI-3P	01	08	01,02,03,04,05,06,07,08	μὴ πάντες χαρίσματα ==ἔχουσιν== ἰαμάτων μὴ πάντες γλώσσαις	suggested-span	neutral finite-anchor region
 1corintios	12	30	C2	09	λαλοῦσιν	λαλέω	V-PAI-3P	09	11	09,10,11	==λαλοῦσιν== μὴ πάντες	suggested-span	neutral finite-anchor region
@@ -266,10 +266,10 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	13	10	C1	03	ἔλθῃ	ἔρχομαι	V-AAS-3S	01	08	01,02,03,04,05,06,07,08	ὅταν δὲ ==ἔλθῃ== τὸ τέλειον τὸ ἐκ μέρους	suggested-span	neutral finite-anchor region
 1corintios	13	10	C2	09	καταργηθήσεται	καταργέω	V-FPI-3S	09	09	09	==καταργηθήσεται==	suggested-span	neutral finite-anchor region
 1corintios	13	11	C1	02	ἤμην	εἰμί	V-IMI-1S	01	03	01,02,03	ὅτε ==ἤμην== νήπιος	suggested-span	neutral finite-anchor region
-1corintios	13	11	C2	04	ἐλάλουν	λαλέω	V-IAI-1S	04	06	04,05,06	==ἐλάλουν== ὡς νήπιος	suggested-span	neutral finite-anchor region
-1corintios	13	11	C3	07	ἐφρόνουν	φρονέω	V-IAI-1S	07	09	07,08,09	==ἐφρόνουν== ὡς νήπιος	suggested-span	neutral finite-anchor region
-1corintios	13	11	C4	10	ἐλογιζόμην	λογίζομαι	V-IMI-1S	10	13	10,11,12,13	==ἐλογιζόμην== ὡς νήπιος ὅτε	suggested-span	neutral finite-anchor region
-1corintios	13	11	C5	14	γέγονα	γίνομαι	V-XAI-1S	14	15	14,15	==γέγονα== ἀνήρ	suggested-span	neutral finite-anchor region
+1corintios	13	11	C2	04	ἐλάλουν	λαλέω	V-IAI-1S	04	04	04	==ἐλάλουν==	suggested-span	neutral finite-anchor region
+1corintios	13	11	C3	07	ἐφρόνουν	φρονέω	V-IAI-1S	05	07	05,06,07	ὡς νήπιος ==ἐφρόνουν==	suggested-span	migrated post-finite tail beginning with ὡς
+1corintios	13	11	C4	10	ἐλογιζόμην	λογίζομαι	V-IMI-1S	08	10	08,09,10	ὡς νήπιος ==ἐλογιζόμην==	suggested-span	migrated post-finite tail beginning with ὡς
+1corintios	13	11	C5	14	γέγονα	γίνομαι	V-XAI-1S	11	15	11,12,13,14,15	ὡς νήπιος ὅτε ==γέγονα== ἀνήρ	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	13	11	C6	16	κατήργηκα	καταργέω	V-XAI-1S	16	19	16,17,18,19	==κατήργηκα== τὰ τοῦ νηπίου	suggested-span	neutral finite-anchor region
 1corintios	13	12	C1	01	βλέπομεν	βλέπω	V-PAI-1P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	==βλέπομεν== γὰρ ἄρτι διʼ ἐσόπτρου ἐν αἰνίγματι τότε δὲ πρόσωπον πρὸς πρόσωπον ἄρτι	suggested-span	neutral finite-anchor region
 1corintios	13	12	C2	14	γινώσκω	γινώσκω	V-PAI-1S	14	18	14,15,16,17,18	==γινώσκω== ἐκ μέρους τότε δὲ	suggested-span	neutral finite-anchor region
@@ -278,8 +278,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	13	13	C1	03	μένει	μένω	V-PAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	νυνὶ δὲ ==μένει== πίστις ἐλπίς ἀγάπη τὰ τρία ταῦτα μείζων δὲ τούτων ἡ ἀγάπη	suggested-span	neutral finite-anchor region
 1corintios	13	2	C1	03	ἔχω	ἔχω	V-PAS-1S	01	05	01,02,03,04,05	καὶ ἐὰν ==ἔχω== προφητείαν καὶ	suggested-span	neutral finite-anchor region
 1corintios	13	2	C2	06	εἰδῶ	οἶδα	V-XAS-1S	06	15	06,07,08,09,10,11,12,13,14,15	==εἰδῶ== τὰ μυστήρια πάντα καὶ πᾶσαν τὴν γνῶσιν ⸄καὶ ἐὰν⸅	suggested-span	neutral finite-anchor region
-1corintios	13	2	C3	16	ἔχω	ἔχω	V-PAS-1S	16	25	16,17,18,19,20,21,22,23,24,25	==ἔχω== πᾶσαν τὴν πίστιν ὥστε ὄρη μεθιστάναι ἀγάπην δὲ μὴ	suggested-span	neutral finite-anchor region
-1corintios	13	2	C4	26	ἔχω	ἔχω	V-PAS-1S	26	27	26,27	==ἔχω== οὐθέν	suggested-span	neutral finite-anchor region
+1corintios	13	2	C3	16	ἔχω	ἔχω	V-PAS-1S	16	19	16,17,18,19	==ἔχω== πᾶσαν τὴν πίστιν	suggested-span	neutral finite-anchor region
+1corintios	13	2	C4	26	ἔχω	ἔχω	V-PAS-1S	20	27	20,21,22,23,24,25,26,27	ὥστε ὄρη μεθιστάναι ἀγάπην δὲ μὴ ==ἔχω== οὐθέν	suggested-span	migrated post-finite tail beginning with ὥστε
 1corintios	13	2	C5	28	εἰμι	εἰμί	V-PAI-1S	28	28	28	==εἰμι==	suggested-span	neutral finite-anchor region
 1corintios	13	3	C1	03	ψωμίσω	ψωμίζω	V-AAS-1S	01	09	01,02,03,04,05,06,07,08,09	καὶ ἐὰν ==ψωμίσω== πάντα τὰ ὑπάρχοντά μου ⸄καὶ ἐὰν⸅	suggested-span	neutral finite-anchor region
 1corintios	13	3	C2	10	παραδῶ	παραδίδωμι	V-AAS-1S	10	13	10,11,12,13	==παραδῶ== τὸ σῶμά μου	suggested-span	neutral finite-anchor region
@@ -334,16 +334,16 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	14	17	C2	10	οἰκοδομεῖται	οἰκοδομέω	V-PPI-3S	10	10	10	==οἰκοδομεῖται==	suggested-span	neutral finite-anchor region
 1corintios	14	18	C1	01	εὐχαριστῶ	εὐχαριστέω	V-PAI-1S	01	07	01,02,03,04,05,06,07	==εὐχαριστῶ== τῷ θεῷ πάντων ὑμῶν μᾶλλον γλώσσαις	suggested-span	neutral finite-anchor region
 1corintios	14	18	C2	08	λαλῶ	λαλέω	V-PAI-1S	08	08	08	==λαλῶ==	suggested-span	neutral finite-anchor region
-1corintios	14	19	C1	04	θέλω	θέλω	V-PAI-1S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ἀλλὰ ἐν ἐκκλησίᾳ ==θέλω== πέντε λόγους τῷ νοΐ μου λαλῆσαι ἵνα καὶ ἄλλους	suggested-span	neutral finite-anchor region
-1corintios	14	19	C2	14	κατηχήσω	κατηχέω	V-AAS-1S	14	19	14,15,16,17,18,19	==κατηχήσω== ἢ μυρίους λόγους ἐν γλώσσῃ	suggested-span	neutral finite-anchor region
+1corintios	14	19	C1	04	θέλω	θέλω	V-PAI-1S	01	10	01,02,03,04,05,06,07,08,09,10	ἀλλὰ ἐν ἐκκλησίᾳ ==θέλω== πέντε λόγους τῷ νοΐ μου λαλῆσαι	suggested-span	neutral finite-anchor region
+1corintios	14	19	C2	14	κατηχήσω	κατηχέω	V-AAS-1S	11	19	11,12,13,14,15,16,17,18,19	ἵνα καὶ ἄλλους ==κατηχήσω== ἢ μυρίους λόγους ἐν γλώσσῃ	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	14	2	C1	07	λαλεῖ	λαλέω	V-PAI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	ὁ γὰρ λαλῶν γλώσσῃ οὐκ ἀνθρώποις ==λαλεῖ== ἀλλὰ θεῷ οὐδεὶς γὰρ	suggested-span	neutral finite-anchor region
 1corintios	14	2	C2	12	ἀκούει	ἀκούω	V-PAI-3S	12	14	12,13,14	==ἀκούει== πνεύματι δὲ	suggested-span	neutral finite-anchor region
 1corintios	14	2	C3	15	λαλεῖ	λαλέω	V-PAI-3S	15	16	15,16	==λαλεῖ== μυστήρια	suggested-span	neutral finite-anchor region
 1corintios	14	20	C1	04	γίνεσθε	γίνομαι	V-PMD-2P	01	09	01,02,03,04,05,06,07,08,09	ἀδελφοί μὴ παιδία ==γίνεσθε== ταῖς φρεσίν ἀλλὰ τῇ κακίᾳ	suggested-span	neutral finite-anchor region
 1corintios	14	20	C2	10	νηπιάζετε	νηπιάζω	V-PAD-2P	10	14	10,11,12,13,14	==νηπιάζετε== ταῖς δὲ φρεσὶν τέλειοι	suggested-span	neutral finite-anchor region
 1corintios	14	20	C3	15	γίνεσθε	γίνομαι	V-PMD-2P	15	15	15	==γίνεσθε==	suggested-span	neutral finite-anchor region
-1corintios	14	21	C1	04	γέγραπται	γράφω	V-XPI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	ἐν τῷ νόμῳ ==γέγραπται== ὅτι ἐν ἑτερογλώσσοις καὶ ἐν χείλεσιν ἑτέρων	suggested-span	neutral finite-anchor region
-1corintios	14	21	C2	12	λαλήσω	λαλέω	V-FAI-1S	12	18	12,13,14,15,16,17,18	==λαλήσω== τῷ λαῷ τούτῳ καὶ οὐδʼ οὕτως	suggested-span	neutral finite-anchor region
+1corintios	14	21	C1	04	γέγραπται	γράφω	V-XPI-3S	01	04	01,02,03,04	ἐν τῷ νόμῳ ==γέγραπται==	suggested-span	neutral finite-anchor region
+1corintios	14	21	C2	12	λαλήσω	λαλέω	V-FAI-1S	05	18	05,06,07,08,09,10,11,12,13,14,15,16,17,18	ὅτι ἐν ἑτερογλώσσοις καὶ ἐν χείλεσιν ἑτέρων ==λαλήσω== τῷ λαῷ τούτῳ καὶ οὐδʼ οὕτως	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	14	21	C3	19	εἰσακούσονταί	εἰσακούω	V-FMI-3P	19	20	19,20	==εἰσακούσονταί== μου	suggested-span	neutral finite-anchor region
 1corintios	14	21	C4	21	λέγει	λέγω	V-PAI-3S	21	22	21,22	==λέγει== κύριος	suggested-span	neutral finite-anchor region
 1corintios	14	22	C1	06	εἰσιν	εἰμί	V-PAI-3P	01	21	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21	ὥστε αἱ γλῶσσαι εἰς σημεῖόν ==εἰσιν== οὐ τοῖς πιστεύουσιν ἀλλὰ τοῖς ἀπίστοις ἡ δὲ προφητεία οὐ τοῖς ἀπίστοις ἀλλὰ τοῖς πιστεύουσιν	suggested-span	neutral finite-anchor region
@@ -357,8 +357,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	14	24	C3	11	ἐλέγχεται	ἐλέγχω	V-PPI-3S	11	13	11,12,13	==ἐλέγχεται== ὑπὸ πάντων	suggested-span	neutral finite-anchor region
 1corintios	14	24	C4	14	ἀνακρίνεται	ἀνακρίνω	V-PPI-3S	14	16	14,15,16	==ἀνακρίνεται== ὑπὸ πάντων	suggested-span	neutral finite-anchor region
 1corintios	14	25	C1	07	γίνεται	γίνομαι	V-PMI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	τὰ κρυπτὰ τῆς καρδίας αὐτοῦ φανερὰ ==γίνεται== καὶ οὕτως πεσὼν ἐπὶ πρόσωπον	suggested-span	neutral finite-anchor region
-1corintios	14	25	C2	13	προσκυνήσει	προσκυνέω	V-FAI-3S	13	22	13,14,15,16,17,18,19,20,21,22	==προσκυνήσει== τῷ θεῷ ἀπαγγέλλων ὅτι ὄντως ὁ θεὸς ἐν ὑμῖν	suggested-span	neutral finite-anchor region
-1corintios	14	25	C3	23	ἐστιν	εἰμί	V-PAI-3S	23	23	23	==ἐστιν==	suggested-span	neutral finite-anchor region
+1corintios	14	25	C2	13	προσκυνήσει	προσκυνέω	V-FAI-3S	13	16	13,14,15,16	==προσκυνήσει== τῷ θεῷ ἀπαγγέλλων	suggested-span	neutral finite-anchor region
+1corintios	14	25	C3	23	ἐστιν	εἰμί	V-PAI-3S	17	23	17,18,19,20,21,22,23	ὅτι ὄντως ὁ θεὸς ἐν ὑμῖν ==ἐστιν==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	14	26	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	05	01,02,03,04,05	τί οὖν ==ἐστιν== ἀδελφοί ὅταν	suggested-span	neutral finite-anchor region
 1corintios	14	26	C2	06	συνέρχησθε	συνέρχομαι	V-PMS-2P	06	08	06,07,08	==συνέρχησθε== ἕκαστος ψαλμὸν	suggested-span	neutral finite-anchor region
 1corintios	14	26	C3	09	ἔχει	ἔχω	V-PAI-3S	09	10	09,10	==ἔχει== διδαχὴν	suggested-span	neutral finite-anchor region
@@ -377,8 +377,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	14	3	C1	05	λαλεῖ	λαλέω	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	ὁ δὲ προφητεύων ἀνθρώποις ==λαλεῖ== οἰκοδομὴν καὶ παράκλησιν καὶ παραμυθίαν	suggested-span	neutral finite-anchor region
 1corintios	14	30	C1	04	ἀποκαλυφθῇ	ἀποκαλύπτω	V-APS-3S	01	07	01,02,03,04,05,06,07	ἐὰν δὲ ἄλλῳ ==ἀποκαλυφθῇ== καθημένῳ ὁ πρῶτος	suggested-span	neutral finite-anchor region
 1corintios	14	30	C2	08	σιγάτω	σιγάω	V-PAD-3S	08	08	08	==σιγάτω==	suggested-span	neutral finite-anchor region
-1corintios	14	31	C1	01	δύνασθε	δύναμαι	V-PMI-2P	01	08	01,02,03,04,05,06,07,08	==δύνασθε== γὰρ καθʼ ἕνα πάντες προφητεύειν ἵνα πάντες	suggested-span	neutral finite-anchor region
-1corintios	14	31	C2	09	μανθάνωσιν	μανθάνω	V-PAS-3P	09	11	09,10,11	==μανθάνωσιν== καὶ πάντες	suggested-span	neutral finite-anchor region
+1corintios	14	31	C1	01	δύνασθε	δύναμαι	V-PMI-2P	01	06	01,02,03,04,05,06	==δύνασθε== γὰρ καθʼ ἕνα πάντες προφητεύειν	suggested-span	neutral finite-anchor region
+1corintios	14	31	C2	09	μανθάνωσιν	μανθάνω	V-PAS-3P	07	11	07,08,09,10,11	ἵνα πάντες ==μανθάνωσιν== καὶ πάντες	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	14	31	C3	12	παρακαλῶνται	παρακαλέω	V-PPS-3P	12	12	12	==παρακαλῶνται==	suggested-span	neutral finite-anchor region
 1corintios	14	32	C1	05	ὑποτάσσεται	ὑποτάσσω	V-PPI-3S	01	05	01,02,03,04,05	καὶ πνεύματα προφητῶν προφήταις ==ὑποτάσσεται==	suggested-span	neutral finite-anchor region
 1corintios	14	33	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	οὐ γάρ ==ἐστιν== ἀκαταστασίας ὁ θεὸς ἀλλὰ εἰρήνης ὡς ἐν πάσαις ταῖς ἐκκλησίαις τῶν ἁγίων	suggested-span	neutral finite-anchor region
@@ -393,8 +393,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	14	36	C2	13	κατήντησεν	καταντάω	V-AAI-3S	13	13	13	==κατήντησεν==	suggested-span	neutral finite-anchor region
 1corintios	14	37	C1	03	δοκεῖ	δοκέω	V-PAI-3S	01	07	01,02,03,04,05,06,07	εἴ τις ==δοκεῖ== προφήτης εἶναι ἢ πνευματικός	suggested-span	neutral finite-anchor region
 1corintios	14	37	C2	08	ἐπιγινωσκέτω	ἐπιγινώσκω	V-PAD-3S	08	09	08,09	==ἐπιγινωσκέτω== ἃ	suggested-span	neutral finite-anchor region
-1corintios	14	37	C3	10	γράφω	γράφω	V-PAI-1S	10	13	10,11,12,13	==γράφω== ὑμῖν ὅτι κυρίου	suggested-span	neutral finite-anchor region
-1corintios	14	37	C4	14	ἐστίν	εἰμί	V-PAI-3S	14	14	14	==ἐστίν==	suggested-span	neutral finite-anchor region
+1corintios	14	37	C3	10	γράφω	γράφω	V-PAI-1S	10	11	10,11	==γράφω== ὑμῖν	suggested-span	neutral finite-anchor region
+1corintios	14	37	C4	14	ἐστίν	εἰμί	V-PAI-3S	12	14	12,13,14	ὅτι κυρίου ==ἐστίν==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	14	38	C1	04	ἀγνοεῖ	ἀγνοέω	V-PAI-3S	01	04	01,02,03,04	εἰ δέ τις ==ἀγνοεῖ==	suggested-span	neutral finite-anchor region
 1corintios	14	38	C2	05	ἀγνοεῖται	ἀγνοέω	V-PPI-3S	05	05	05	==ἀγνοεῖται==	suggested-span	neutral finite-anchor region
 1corintios	14	39	C1	04	ζηλοῦτε	ζηλόω	V-PAD-2P	01	10	01,02,03,04,05,06,07,08,09,10	ὥστε ἀδελφοί μου ==ζηλοῦτε== τὸ προφητεύειν καὶ τὸ λαλεῖν μὴ	suggested-span	neutral finite-anchor region
@@ -403,12 +403,12 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	14	4	C2	10	οἰκοδομεῖ	οἰκοδομέω	V-PAI-3S	10	10	10	==οἰκοδομεῖ==	suggested-span	neutral finite-anchor region
 1corintios	14	40	C1	07	γινέσθω	γίνομαι	V-PMD-3S	01	07	01,02,03,04,05,06,07	πάντα δὲ εὐσχημόνως καὶ κατὰ τάξιν ==γινέσθω==	suggested-span	neutral finite-anchor region
 1corintios	14	5	C1	01	θέλω	θέλω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	==θέλω== δὲ πάντας ὑμᾶς λαλεῖν γλώσσαις μᾶλλον δὲ	suggested-span	neutral finite-anchor region
-1corintios	14	5	C2	10	προφητεύητε	προφητεύω	V-PAS-2P	09	21	09,10,11,12,13,14,15,16,17,18,19,20,21	ἵνα ==προφητεύητε== μείζων δὲ ὁ προφητεύων ἢ ὁ λαλῶν γλώσσαις ἐκτὸς εἰ μὴ	suggested-span	migrated subordinate connector ἵνα
-1corintios	14	5	C3	22	διερμηνεύῃ	διερμηνεύω	V-PAS-3S	22	26	22,23,24,25,26	==διερμηνεύῃ== ἵνα ἡ ἐκκλησία οἰκοδομὴν	suggested-span	neutral finite-anchor region
-1corintios	14	5	C4	27	λάβῃ	λαμβάνω	V-AAS-3S	27	27	27	==λάβῃ==	suggested-span	neutral finite-anchor region
+1corintios	14	5	C2	10	προφητεύητε	προφητεύω	V-PAS-2P	09	19	09,10,11,12,13,14,15,16,17,18,19	ἵνα ==προφητεύητε== μείζων δὲ ὁ προφητεύων ἢ ὁ λαλῶν γλώσσαις ἐκτὸς	suggested-span	migrated subordinate connector ἵνα
+1corintios	14	5	C3	22	διερμηνεύῃ	διερμηνεύω	V-PAS-3S	20	22	20,21,22	εἰ μὴ ==διερμηνεύῃ==	suggested-span	migrated post-finite tail beginning with εἰ
+1corintios	14	5	C4	27	λάβῃ	λαμβάνω	V-AAS-3S	23	27	23,24,25,26,27	ἵνα ἡ ἐκκλησία οἰκοδομὴν ==λάβῃ==	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	14	6	C1	05	ἔλθω	ἔρχομαι	V-AAS-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	νῦν δέ ἀδελφοί ἐὰν ==ἔλθω== πρὸς ὑμᾶς γλώσσαις λαλῶν τί ὑμᾶς	suggested-span	neutral finite-anchor region
-1corintios	14	6	C2	12	ὠφελήσω	ὠφελέω	V-FAI-1S	12	15	12,13,14,15	==ὠφελήσω== ἐὰν μὴ ὑμῖν	suggested-span	neutral finite-anchor region
-1corintios	14	6	C3	16	λαλήσω	λαλέω	V-AAS-1S	16	28	16,17,18,19,20,21,22,23,24,25,26,27,28	==λαλήσω== ἢ ἐν ἀποκαλύψει ἢ ἐν γνώσει ἢ ἐν προφητείᾳ ἢ ἐν διδαχῇ	suggested-span	neutral finite-anchor region
+1corintios	14	6	C2	12	ὠφελήσω	ὠφελέω	V-FAI-1S	12	12	12	==ὠφελήσω==	suggested-span	neutral finite-anchor region
+1corintios	14	6	C3	16	λαλήσω	λαλέω	V-AAS-1S	13	28	13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28	ἐὰν μὴ ὑμῖν ==λαλήσω== ἢ ἐν ἀποκαλύψει ἢ ἐν γνώσει ἢ ἐν προφητείᾳ ἢ ἐν διδαχῇ	suggested-span	migrated post-finite tail beginning with ἐὰν
 1corintios	14	7	C1	15	δῷ	δίδωμι	V-AAS-3S	01	16	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16	ὅμως τὰ ἄψυχα φωνὴν διδόντα εἴτε αὐλὸς εἴτε κιθάρα ἐὰν διαστολὴν τοῖς φθόγγοις μὴ ==δῷ== πῶς	suggested-span	neutral finite-anchor region
 1corintios	14	7	C2	17	γνωσθήσεται	γινώσκω	V-FPI-3S	17	22	17,18,19,20,21,22	==γνωσθήσεται== τὸ αὐλούμενον ἢ τὸ κιθαριζόμενον	suggested-span	neutral finite-anchor region
 1corintios	14	8	C1	07	δῷ	δίδωμι	V-AAS-3S	01	08	01,02,03,04,05,06,07,08	καὶ γὰρ ἐὰν ἄδηλον φωνὴν σάλπιγξ ==δῷ== τίς	suggested-span	neutral finite-anchor region
@@ -423,15 +423,15 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	2	1	C1	06	ἦλθον	ἔρχομαι	V-AAI-1S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	κἀγὼ ἐλθὼν πρὸς ὑμᾶς ἀδελφοί ==ἦλθον== οὐ καθʼ ὑπεροχὴν λόγου ἢ σοφίας καταγγέλλων ὑμῖν τὸ μαρτύριον τοῦ θεοῦ	suggested-span	neutral finite-anchor region
 1corintios	2	10	C1	03	ἀπεκάλυψεν	ἀποκαλύπτω	V-AAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ἡμῖν γὰρ ==ἀπεκάλυψεν== ὁ θεὸς διὰ τοῦ πνεύματος τὸ γὰρ πνεῦμα πάντα	suggested-span	neutral finite-anchor region
 1corintios	2	10	C2	13	ἐραυνᾷ	ἐραυνάω	V-PAI-3S	13	18	13,14,15,16,17,18	==ἐραυνᾷ== καὶ τὰ βάθη τοῦ θεοῦ	suggested-span	neutral finite-anchor region
-1corintios	2	11	C1	03	οἶδεν	οἶδα	V-XAI-3S	01	22	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22	τίς γὰρ ==οἶδεν== ἀνθρώπων τὰ τοῦ ἀνθρώπου εἰ μὴ τὸ πνεῦμα τοῦ ἀνθρώπου τὸ ἐν αὐτῷ οὕτως καὶ τὰ τοῦ θεοῦ οὐδεὶς	suggested-span	neutral finite-anchor region
-1corintios	2	11	C2	23	ἔγνωκεν	γινώσκω	V-XAI-3S	23	29	23,24,25,26,27,28,29	==ἔγνωκεν== εἰ μὴ τὸ πνεῦμα τοῦ θεοῦ	suggested-span	neutral finite-anchor region
+1corintios	2	11	C1	03	οἶδεν	οἶδα	V-XAI-3S	01	07	01,02,03,04,05,06,07	τίς γὰρ ==οἶδεν== ἀνθρώπων τὰ τοῦ ἀνθρώπου	suggested-span	neutral finite-anchor region
+1corintios	2	11	C2	23	ἔγνωκεν	γινώσκω	V-XAI-3S	08	29	08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29	εἰ μὴ τὸ πνεῦμα τοῦ ἀνθρώπου τὸ ἐν αὐτῷ οὕτως καὶ τὰ τοῦ θεοῦ οὐδεὶς ==ἔγνωκεν== εἰ μὴ τὸ πνεῦμα τοῦ θεοῦ	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	2	12	C1	08	ἐλάβομεν	λαμβάνω	V-AAI-1P	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	ἡμεῖς δὲ οὐ τὸ πνεῦμα τοῦ κόσμου ==ἐλάβομεν== ἀλλὰ τὸ πνεῦμα τὸ ἐκ τοῦ θεοῦ	suggested-span	neutral finite-anchor region
 1corintios	2	12	C2	17	εἰδῶμεν	οἶδα	V-XAS-1P	16	23	16,17,18,19,20,21,22,23	ἵνα ==εἰδῶμεν== τὰ ὑπὸ τοῦ θεοῦ χαρισθέντα ἡμῖν	suggested-span	migrated subordinate connector ἵνα
 1corintios	2	13	C1	03	λαλοῦμεν	λαλέω	V-PAI-1P	01	16	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16	ἃ καὶ ==λαλοῦμεν== οὐκ ἐν διδακτοῖς ἀνθρωπίνης σοφίας λόγοις ἀλλʼ ἐν διδακτοῖς πνεύματος πνευματικοῖς πνευματικὰ συγκρίνοντες	suggested-span	neutral finite-anchor region
 1corintios	2	14	C1	05	δέχεται	δέχομαι	V-PMI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ψυχικὸς δὲ ἄνθρωπος οὐ ==δέχεται== τὰ τοῦ πνεύματος τοῦ θεοῦ μωρία γὰρ αὐτῷ	suggested-span	neutral finite-anchor region
 1corintios	2	14	C2	14	ἐστίν	εἰμί	V-PAI-3S	14	16	14,15,16	==ἐστίν== καὶ οὐ	suggested-span	neutral finite-anchor region
-1corintios	2	14	C3	17	δύναται	δύναμαι	V-PMI-3S	17	20	17,18,19,20	==δύναται== γνῶναι ὅτι πνευματικῶς	suggested-span	neutral finite-anchor region
-1corintios	2	14	C4	21	ἀνακρίνεται	ἀνακρίνω	V-PPI-3S	21	21	21	==ἀνακρίνεται==	suggested-span	neutral finite-anchor region
+1corintios	2	14	C3	17	δύναται	δύναμαι	V-PMI-3S	17	18	17,18	==δύναται== γνῶναι	suggested-span	neutral finite-anchor region
+1corintios	2	14	C4	21	ἀνακρίνεται	ἀνακρίνω	V-PPI-3S	19	21	19,20,21	ὅτι πνευματικῶς ==ἀνακρίνεται==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	2	15	C1	04	ἀνακρίνει	ἀνακρίνω	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	ὁ δὲ πνευματικὸς ==ἀνακρίνει== τὰ πάντα αὐτὸς δὲ ὑπʼ οὐδενὸς	suggested-span	neutral finite-anchor region
 1corintios	2	15	C2	11	ἀνακρίνεται	ἀνακρίνω	V-PPI-3S	11	11	11	==ἀνακρίνεται==	suggested-span	neutral finite-anchor region
 1corintios	2	16	C1	03	ἔγνω	γινώσκω	V-AAI-3S	01	06	01,02,03,04,05,06	τίς γὰρ ==ἔγνω== νοῦν κυρίου ὃς	suggested-span	neutral finite-anchor region
@@ -443,8 +443,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	2	6	C1	03	λαλοῦμεν	λαλέω	V-PAI-1P	01	20	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20	σοφίαν δὲ ==λαλοῦμεν== ἐν τοῖς τελείοις σοφίαν δὲ οὐ τοῦ αἰῶνος τούτου οὐδὲ τῶν ἀρχόντων τοῦ αἰῶνος τούτου τῶν καταργουμένων	suggested-span	neutral finite-anchor region
 1corintios	2	7	C1	02	λαλοῦμεν	λαλέω	V-PAI-1P	01	09	01,02,03,04,05,06,07,08,09	ἀλλὰ ==λαλοῦμεν== θεοῦ σοφίαν ἐν μυστηρίῳ τὴν ἀποκεκρυμμένην ἣν	suggested-span	neutral finite-anchor region
 1corintios	2	7	C2	10	προώρισεν	προορίζω	V-AAI-3S	10	18	10,11,12,13,14,15,16,17,18	==προώρισεν== ὁ θεὸς πρὸ τῶν αἰώνων εἰς δόξαν ἡμῶν	suggested-span	neutral finite-anchor region
-1corintios	2	8	C1	08	ἔγνωκεν	γινώσκω	V-XAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	ἣν οὐδεὶς τῶν ἀρχόντων τοῦ αἰῶνος τούτου ==ἔγνωκεν== εἰ γὰρ	suggested-span	neutral finite-anchor region
-1corintios	2	8	C2	11	ἔγνωσαν	γινώσκω	V-AAI-3P	11	17	11,12,13,14,15,16,17	==ἔγνωσαν== οὐκ ἂν τὸν κύριον τῆς δόξης	suggested-span	neutral finite-anchor region
+1corintios	2	8	C1	08	ἔγνωκεν	γινώσκω	V-XAI-3S	01	08	01,02,03,04,05,06,07,08	ἣν οὐδεὶς τῶν ἀρχόντων τοῦ αἰῶνος τούτου ==ἔγνωκεν==	suggested-span	neutral finite-anchor region
+1corintios	2	8	C2	11	ἔγνωσαν	γινώσκω	V-AAI-3P	09	17	09,10,11,12,13,14,15,16,17	εἰ γὰρ ==ἔγνωσαν== οὐκ ἂν τὸν κύριον τῆς δόξης	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	2	8	C3	18	ἐσταύρωσαν	σταυρόω	V-AAI-3P	18	18	18	==ἐσταύρωσαν==	suggested-span	neutral finite-anchor region
 1corintios	2	9	C1	03	γέγραπται	γράφω	V-XPI-3S	01	06	01,02,03,04,05,06	ἀλλὰ καθὼς ==γέγραπται== ἃ ὀφθαλμὸς οὐκ	suggested-span	neutral finite-anchor region
 1corintios	2	9	C2	07	εἶδεν	ὁράω	V-AAI-3S	07	10	07,08,09,10	==εἶδεν== καὶ οὖς οὐκ	suggested-span	neutral finite-anchor region
@@ -460,8 +460,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	3	11	C2	11	ἐστιν	εἰμί	V-PAI-3S	11	13	11,12,13	==ἐστιν== ἰησοῦς χριστός	suggested-span	neutral finite-anchor region
 1corintios	3	12	C1	04	ἐποικοδομεῖ	ἐποικοδομέω	V-PAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	εἰ δέ τις ==ἐποικοδομεῖ== ἐπὶ τὸν θεμέλιον χρυσόν ἄργυρον λίθους τιμίους ξύλα χόρτον καλάμην	suggested-span	neutral finite-anchor region
 1corintios	3	13	C1	05	γενήσεται	γίνομαι	V-FMI-3S	01	08	01,02,03,04,05,06,07,08	ἑκάστου τὸ ἔργον φανερὸν ==γενήσεται== ἡ γὰρ ἡμέρα	suggested-span	neutral finite-anchor region
-1corintios	3	13	C2	09	δηλώσει	δηλόω	V-FAI-3S	09	12	09,10,11,12	==δηλώσει== ὅτι ἐν πυρὶ	suggested-span	neutral finite-anchor region
-1corintios	3	13	C3	13	ἀποκαλύπτεται	ἀποκαλύπτω	V-PPI-3S	13	18	13,14,15,16,17,18	==ἀποκαλύπτεται== καὶ ἑκάστου τὸ ἔργον ὁποῖόν	suggested-span	neutral finite-anchor region
+1corintios	3	13	C2	09	δηλώσει	δηλόω	V-FAI-3S	09	09	09	==δηλώσει==	suggested-span	neutral finite-anchor region
+1corintios	3	13	C3	13	ἀποκαλύπτεται	ἀποκαλύπτω	V-PPI-3S	10	18	10,11,12,13,14,15,16,17,18	ὅτι ἐν πυρὶ ==ἀποκαλύπτεται== καὶ ἑκάστου τὸ ἔργον ὁποῖόν	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	3	13	C4	19	ἐστιν	εἰμί	V-PAI-3S	19	22	19,20,21,22	==ἐστιν== τὸ πῦρ αὐτὸ	suggested-span	neutral finite-anchor region
 1corintios	3	13	C5	23	δοκιμάσει	δοκιμάζω	V-FAI-3S	23	23	23	==δοκιμάσει==	suggested-span	neutral finite-anchor region
 1corintios	3	14	C1	05	μενεῖ	μένω	V-FAI-3S	01	06	01,02,03,04,05,06	εἴ τινος τὸ ἔργον ==μενεῖ== ὃ	suggested-span	neutral finite-anchor region
@@ -470,15 +470,15 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	3	15	C1	05	κατακαήσεται	κατακαίω	V-FPI-3S	01	05	01,02,03,04,05	εἴ τινος τὸ ἔργον ==κατακαήσεται==	suggested-span	neutral finite-anchor region
 1corintios	3	15	C2	06	ζημιωθήσεται	ζημιόω	V-FPI-3S	06	08	06,07,08	==ζημιωθήσεται== αὐτὸς δὲ	suggested-span	neutral finite-anchor region
 1corintios	3	15	C3	09	σωθήσεται	σῴζω	V-FPI-3S	09	14	09,10,11,12,13,14	==σωθήσεται== οὕτως δὲ ὡς διὰ πυρός	suggested-span	neutral finite-anchor region
-1corintios	3	16	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	05	01,02,03,04,05	οὐκ ==οἴδατε== ὅτι ναὸς θεοῦ	suggested-span	neutral finite-anchor region
-1corintios	3	16	C2	06	ἐστε	εἰμί	V-PAI-2P	06	11	06,07,08,09,10,11	==ἐστε== καὶ τὸ πνεῦμα τοῦ θεοῦ	suggested-span	neutral finite-anchor region
+1corintios	3	16	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	02	01,02	οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	3	16	C2	06	ἐστε	εἰμί	V-PAI-2P	03	11	03,04,05,06,07,08,09,10,11	ὅτι ναὸς θεοῦ ==ἐστε== καὶ τὸ πνεῦμα τοῦ θεοῦ	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	3	16	C3	12	οἰκεῖ	οἰκέω	V-PAI-3S	12	14	12,13,14	==οἰκεῖ== ἐν ὑμῖν	suggested-span	neutral finite-anchor region
 1corintios	3	17	C1	07	φθείρει	φθείρω	V-PAI-3S	01	07	01,02,03,04,05,06,07	εἴ τις τὸν ναὸν τοῦ θεοῦ ==φθείρει==	suggested-span	neutral finite-anchor region
 1corintios	3	17	C2	08	φθερεῖ	φθείρω	V-FAI-3S	08	17	08,09,10,11,12,13,14,15,16,17	==φθερεῖ== τοῦτον ὁ θεός ὁ γὰρ ναὸς τοῦ θεοῦ ἅγιός	suggested-span	neutral finite-anchor region
 1corintios	3	17	C3	18	ἐστιν	εἰμί	V-PAI-3S	18	19	18,19	==ἐστιν== οἵτινές	suggested-span	neutral finite-anchor region
 1corintios	3	17	C4	20	ἐστε	εἰμί	V-PAI-2P	20	21	20,21	==ἐστε== ὑμεῖς	suggested-span	neutral finite-anchor region
-1corintios	3	18	C1	03	ἐξαπατάτω	ἐξαπατάω	V-PAD-3S	01	05	01,02,03,04,05	μηδεὶς ἑαυτὸν ==ἐξαπατάτω== εἴ τις	suggested-span	neutral finite-anchor region
-1corintios	3	18	C2	06	δοκεῖ	δοκέω	V-PAI-3S	06	15	06,07,08,09,10,11,12,13,14,15	==δοκεῖ== σοφὸς εἶναι ἐν ὑμῖν ἐν τῷ αἰῶνι τούτῳ μωρὸς	suggested-span	neutral finite-anchor region
+1corintios	3	18	C1	03	ἐξαπατάτω	ἐξαπατάω	V-PAD-3S	01	03	01,02,03	μηδεὶς ἑαυτὸν ==ἐξαπατάτω==	suggested-span	neutral finite-anchor region
+1corintios	3	18	C2	06	δοκεῖ	δοκέω	V-PAI-3S	04	15	04,05,06,07,08,09,10,11,12,13,14,15	εἴ τις ==δοκεῖ== σοφὸς εἶναι ἐν ὑμῖν ἐν τῷ αἰῶνι τούτῳ μωρὸς	suggested-span	migrated post-finite tail beginning with εἴ
 1corintios	3	18	C3	16	γενέσθω	γίνομαι	V-AMD-3S	16	16	16	==γενέσθω==	suggested-span	neutral finite-anchor region
 1corintios	3	18	C4	18	γένηται	γίνομαι	V-AMS-3S	17	19	17,18,19	ἵνα ==γένηται== σοφός	suggested-span	migrated subordinate connector ἵνα
 1corintios	3	19	C1	11	ἐστιν	εἰμί	V-PAI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	ἡ γὰρ σοφία τοῦ κόσμου τούτου μωρία παρὰ τῷ θεῷ ==ἐστιν==	suggested-span	neutral finite-anchor region
@@ -498,8 +498,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	3	4	C3	15	ἐστε	εἰμί	V-PAI-2P	15	15	15	==ἐστε==	suggested-span	neutral finite-anchor region
 1corintios	3	5	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	06	01,02,03,04,05,06	τί οὖν ==ἐστιν== ἀπολλῶς τί δέ	suggested-span	neutral finite-anchor region
 1corintios	3	5	C2	07	ἐστιν	εἰμί	V-PAI-3S	07	11	07,08,09,10,11	==ἐστιν== παῦλος διάκονοι διʼ ὧν	suggested-span	neutral finite-anchor region
-1corintios	3	5	C3	12	ἐπιστεύσατε	πιστεύω	V-AAI-2P	12	17	12,13,14,15,16,17	==ἐπιστεύσατε== καὶ ἑκάστῳ ὡς ὁ κύριος	suggested-span	neutral finite-anchor region
-1corintios	3	5	C4	18	ἔδωκεν	δίδωμι	V-AAI-3S	18	18	18	==ἔδωκεν==	suggested-span	neutral finite-anchor region
+1corintios	3	5	C3	12	ἐπιστεύσατε	πιστεύω	V-AAI-2P	12	14	12,13,14	==ἐπιστεύσατε== καὶ ἑκάστῳ	suggested-span	neutral finite-anchor region
+1corintios	3	5	C4	18	ἔδωκεν	δίδωμι	V-AAI-3S	15	18	15,16,17,18	ὡς ὁ κύριος ==ἔδωκεν==	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	3	6	C1	02	ἐφύτευσα	φυτεύω	V-AAI-1S	01	03	01,02,03	ἐγὼ ==ἐφύτευσα== ἀπολλῶς	suggested-span	neutral finite-anchor region
 1corintios	3	6	C2	04	ἐπότισεν	ποτίζω	V-AAI-3S	04	07	04,05,06,07	==ἐπότισεν== ἀλλὰ ὁ θεὸς	suggested-span	neutral finite-anchor region
 1corintios	3	6	C3	08	ηὔξανεν	αὐξάνω	V-IAI-3S	08	08	08	==ηὔξανεν==	suggested-span	neutral finite-anchor region
@@ -517,8 +517,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	4	12	C1	02	κοπιῶμεν	κοπιάω	V-PAI-1P	01	07	01,02,03,04,05,06,07	καὶ ==κοπιῶμεν== ἐργαζόμενοι ταῖς ἰδίαις χερσίν λοιδορούμενοι	suggested-span	neutral finite-anchor region
 1corintios	4	12	C2	08	εὐλογοῦμεν	εὐλογέω	V-PAI-1P	08	09	08,09	==εὐλογοῦμεν== διωκόμενοι	suggested-span	neutral finite-anchor region
 1corintios	4	12	C3	10	ἀνεχόμεθα	ἀνέχομαι	V-PMI-1P	10	10	10	==ἀνεχόμεθα==	suggested-span	neutral finite-anchor region
-1corintios	4	13	C1	02	παρακαλοῦμεν	παρακαλέω	V-PAI-1P	01	06	01,02,03,04,05,06	δυσφημούμενοι ==παρακαλοῦμεν== ὡς περικαθάρματα τοῦ κόσμου	suggested-span	neutral finite-anchor region
-1corintios	4	13	C2	07	ἐγενήθημεν	γίνομαι	V-API-1P	07	11	07,08,09,10,11	==ἐγενήθημεν== πάντων περίψημα ἕως ἄρτι	suggested-span	neutral finite-anchor region
+1corintios	4	13	C1	02	παρακαλοῦμεν	παρακαλέω	V-PAI-1P	01	02	01,02	δυσφημούμενοι ==παρακαλοῦμεν==	suggested-span	neutral finite-anchor region
+1corintios	4	13	C2	07	ἐγενήθημεν	γίνομαι	V-API-1P	03	11	03,04,05,06,07,08,09,10,11	ὡς περικαθάρματα τοῦ κόσμου ==ἐγενήθημεν== πάντων περίψημα ἕως ἄρτι	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	4	14	C1	04	γράφω	γράφω	V-PAI-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	οὐκ ἐντρέπων ὑμᾶς ==γράφω== ταῦτα ἀλλʼ ὡς τέκνα μου ἀγαπητὰ νουθετῶν	suggested-span	neutral finite-anchor region
 1corintios	4	15	C1	05	ἔχητε	ἔχω	V-PAS-2P	01	20	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20	ἐὰν γὰρ μυρίους παιδαγωγοὺς ==ἔχητε== ἐν χριστῷ ἀλλʼ οὐ πολλοὺς πατέρας ἐν γὰρ χριστῷ ἰησοῦ διὰ τοῦ εὐαγγελίου ἐγὼ ὑμᾶς	suggested-span	neutral finite-anchor region
 1corintios	4	15	C2	21	ἐγέννησα	γεννάω	V-AAI-1S	21	21	21	==ἐγέννησα==	suggested-span	neutral finite-anchor region
@@ -529,15 +529,15 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	4	17	C3	17	ἀναμνήσει	ἀναμιμνῄσκω	V-FAI-3S	17	29	17,18,19,20,21,22,23,24,25,26,27,28,29	==ἀναμνήσει== τὰς ὁδούς μου τὰς ἐν χριστῷ ἰησοῦ καθὼς πανταχοῦ ἐν πάσῃ ἐκκλησίᾳ	suggested-span	neutral finite-anchor region
 1corintios	4	17	C4	30	διδάσκω	διδάσκω	V-PAI-1S	30	30	30	==διδάσκω==	suggested-span	neutral finite-anchor region
 1corintios	4	18	C1	08	ἐφυσιώθησάν	φυσιόω	V-API-3P	01	09	01,02,03,04,05,06,07,08,09	ὡς μὴ ἐρχομένου δέ μου πρὸς ὑμᾶς ==ἐφυσιώθησάν== τινες	suggested-span	neutral finite-anchor region
-1corintios	4	19	C1	01	ἐλεύσομαι	ἔρχομαι	V-FMI-1S	01	08	01,02,03,04,05,06,07,08	==ἐλεύσομαι== δὲ ταχέως πρὸς ὑμᾶς ἐὰν ὁ κύριος	suggested-span	neutral finite-anchor region
-1corintios	4	19	C2	09	θελήσῃ	θέλω	V-AAS-3S	09	10	09,10	==θελήσῃ== καὶ	suggested-span	neutral finite-anchor region
+1corintios	4	19	C1	01	ἐλεύσομαι	ἔρχομαι	V-FMI-1S	01	05	01,02,03,04,05	==ἐλεύσομαι== δὲ ταχέως πρὸς ὑμᾶς	suggested-span	neutral finite-anchor region
+1corintios	4	19	C2	09	θελήσῃ	θέλω	V-AAS-3S	06	10	06,07,08,09,10	ἐὰν ὁ κύριος ==θελήσῃ== καὶ	suggested-span	migrated post-finite tail beginning with ἐὰν
 1corintios	4	19	C3	11	γνώσομαι	γινώσκω	V-FMI-1S	11	19	11,12,13,14,15,16,17,18,19	==γνώσομαι== οὐ τὸν λόγον τῶν πεφυσιωμένων ἀλλὰ τὴν δύναμιν	suggested-span	neutral finite-anchor region
-1corintios	4	2	C1	03	ζητεῖται	ζητέω	V-PPI-3S	01	09	01,02,03,04,05,06,07,08,09	ὧδε λοιπὸν ==ζητεῖται== ἐν τοῖς οἰκονόμοις ἵνα πιστός τις	suggested-span	neutral finite-anchor region
-1corintios	4	2	C2	10	εὑρεθῇ	εὑρίσκω	V-APS-3S	10	10	10	==εὑρεθῇ==	suggested-span	neutral finite-anchor region
+1corintios	4	2	C1	03	ζητεῖται	ζητέω	V-PPI-3S	01	06	01,02,03,04,05,06	ὧδε λοιπὸν ==ζητεῖται== ἐν τοῖς οἰκονόμοις	suggested-span	neutral finite-anchor region
+1corintios	4	2	C2	10	εὑρεθῇ	εὑρίσκω	V-APS-3S	07	10	07,08,09,10	ἵνα πιστός τις ==εὑρεθῇ==	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	4	21	C1	02	θέλετε	θέλω	V-PAI-2P	01	04	01,02,03,04	τί ==θέλετε== ἐν ῥάβδῳ	suggested-span	neutral finite-anchor region
 1corintios	4	21	C2	05	ἔλθω	ἔρχομαι	V-AAS-1S	05	13	05,06,07,08,09,10,11,12,13	==ἔλθω== πρὸς ὑμᾶς ἢ ἐν ἀγάπῃ πνεύματί τε πραΰτητος	suggested-span	neutral finite-anchor region
-1corintios	4	3	C1	05	ἐστιν	εἰμί	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ἐμοὶ δὲ εἰς ἐλάχιστόν ==ἐστιν== ἵνα ὑφʼ ὑμῶν	suggested-span	neutral finite-anchor region
-1corintios	4	3	C2	09	ἀνακριθῶ	ἀνακρίνω	V-APS-1S	09	16	09,10,11,12,13,14,15,16	==ἀνακριθῶ== ἢ ὑπὸ ἀνθρωπίνης ἡμέρας ἀλλʼ οὐδὲ ἐμαυτὸν	suggested-span	neutral finite-anchor region
+1corintios	4	3	C1	05	ἐστιν	εἰμί	V-PAI-3S	01	05	01,02,03,04,05	ἐμοὶ δὲ εἰς ἐλάχιστόν ==ἐστιν==	suggested-span	neutral finite-anchor region
+1corintios	4	3	C2	09	ἀνακριθῶ	ἀνακρίνω	V-APS-1S	06	16	06,07,08,09,10,11,12,13,14,15,16	ἵνα ὑφʼ ὑμῶν ==ἀνακριθῶ== ἢ ὑπὸ ἀνθρωπίνης ἡμέρας ἀλλʼ οὐδὲ ἐμαυτὸν	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	4	3	C3	17	ἀνακρίνω	ἀνακρίνω	V-PAI-1S	17	17	17	==ἀνακρίνω==	suggested-span	neutral finite-anchor region
 1corintios	4	4	C1	04	σύνοιδα	σύνοιδα	V-XAI-1S	01	08	01,02,03,04,05,06,07,08	οὐδὲν γὰρ ἐμαυτῷ ==σύνοιδα== ἀλλʼ οὐκ ἐν τούτῳ	suggested-span	neutral finite-anchor region
 1corintios	4	4	C2	09	δεδικαίωμαι	δικαιόω	V-XPI-1S	09	14	09,10,11,12,13,14	==δεδικαίωμαι== ὁ δὲ ἀνακρίνων με κύριός	suggested-span	neutral finite-anchor region
@@ -547,27 +547,27 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	4	5	C3	14	φωτίσει	φωτίζω	V-FAI-3S	14	19	14,15,16,17,18,19	==φωτίσει== τὰ κρυπτὰ τοῦ σκότους καὶ	suggested-span	neutral finite-anchor region
 1corintios	4	5	C4	20	φανερώσει	φανερόω	V-FAI-3S	20	28	20,21,22,23,24,25,26,27,28	==φανερώσει== τὰς βουλὰς τῶν καρδιῶν καὶ τότε ὁ ἔπαινος	suggested-span	neutral finite-anchor region
 1corintios	4	5	C5	29	γενήσεται	γίνομαι	V-FMI-3S	29	33	29,30,31,32,33	==γενήσεται== ἑκάστῳ ἀπὸ τοῦ θεοῦ	suggested-span	neutral finite-anchor region
-1corintios	4	6	C1	04	μετεσχημάτισα	μετασχηματίζω	V-AAI-1S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ταῦτα δέ ἀδελφοί ==μετεσχημάτισα== εἰς ἐμαυτὸν καὶ ἀπολλῶν διʼ ὑμᾶς ἵνα ἐν ἡμῖν	suggested-span	neutral finite-anchor region
-1corintios	4	6	C2	14	μάθητε	μανθάνω	V-AAS-2P	14	18	14,15,16,17,18	==μάθητε== τό μὴ ὑπὲρ ἃ	suggested-span	neutral finite-anchor region
-1corintios	4	6	C3	19	γέγραπται	γράφω	V-XPI-3S	19	25	19,20,21,22,23,24,25	==γέγραπται== ἵνα μὴ εἷς ὑπὲρ τοῦ ἑνὸς	suggested-span	neutral finite-anchor region
-1corintios	4	6	C4	26	φυσιοῦσθε	φυσιόω	V-PPI-2P	26	29	26,27,28,29	==φυσιοῦσθε== κατὰ τοῦ ἑτέρου	suggested-span	neutral finite-anchor region
+1corintios	4	6	C1	04	μετεσχημάτισα	μετασχηματίζω	V-AAI-1S	01	10	01,02,03,04,05,06,07,08,09,10	ταῦτα δέ ἀδελφοί ==μετεσχημάτισα== εἰς ἐμαυτὸν καὶ ἀπολλῶν διʼ ὑμᾶς	suggested-span	neutral finite-anchor region
+1corintios	4	6	C2	14	μάθητε	μανθάνω	V-AAS-2P	11	18	11,12,13,14,15,16,17,18	ἵνα ἐν ἡμῖν ==μάθητε== τό μὴ ὑπὲρ ἃ	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	4	6	C3	19	γέγραπται	γράφω	V-XPI-3S	19	19	19	==γέγραπται==	suggested-span	neutral finite-anchor region
+1corintios	4	6	C4	26	φυσιοῦσθε	φυσιόω	V-PPI-2P	20	29	20,21,22,23,24,25,26,27,28,29	ἵνα μὴ εἷς ὑπὲρ τοῦ ἑνὸς ==φυσιοῦσθε== κατὰ τοῦ ἑτέρου	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	4	7	C1	04	διακρίνει	διακρίνω	V-PAI-3S	01	06	01,02,03,04,05,06	τίς γάρ σε ==διακρίνει== τί δὲ	suggested-span	neutral finite-anchor region
 1corintios	4	7	C2	07	ἔχεις	ἔχω	V-PAI-2S	07	09	07,08,09	==ἔχεις== ὃ οὐκ	suggested-span	neutral finite-anchor region
-1corintios	4	7	C3	10	ἔλαβες	λαμβάνω	V-AAI-2S	10	13	10,11,12,13	==ἔλαβες== εἰ δὲ καὶ	suggested-span	neutral finite-anchor region
-1corintios	4	7	C4	14	ἔλαβες	λαμβάνω	V-AAI-2S	14	15	14,15	==ἔλαβες== τί	suggested-span	neutral finite-anchor region
+1corintios	4	7	C3	10	ἔλαβες	λαμβάνω	V-AAI-2S	10	10	10	==ἔλαβες==	suggested-span	neutral finite-anchor region
+1corintios	4	7	C4	14	ἔλαβες	λαμβάνω	V-AAI-2S	11	15	11,12,13,14,15	εἰ δὲ καὶ ==ἔλαβες== τί	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	4	7	C5	16	καυχᾶσαι	καυχάομαι	V-PMI-2S	16	19	16,17,18,19	==καυχᾶσαι== ὡς μὴ λαβών	suggested-span	neutral finite-anchor region
 1corintios	4	8	C1	03	ἐστέ	εἰμί	V-PAI-2P	01	04	01,02,03,04	ἤδη κεκορεσμένοι ==ἐστέ== ἤδη	suggested-span	neutral finite-anchor region
 1corintios	4	8	C2	05	ἐπλουτήσατε	πλουτέω	V-AAI-2P	05	07	05,06,07	==ἐπλουτήσατε== χωρὶς ἡμῶν	suggested-span	neutral finite-anchor region
 1corintios	4	8	C3	08	ἐβασιλεύσατε	βασιλεύω	V-AAI-2P	08	11	08,09,10,11	==ἐβασιλεύσατε== καὶ ὄφελόν γε	suggested-span	neutral finite-anchor region
-1corintios	4	8	C4	12	ἐβασιλεύσατε	βασιλεύω	V-AAI-2P	12	16	12,13,14,15,16	==ἐβασιλεύσατε== ἵνα καὶ ἡμεῖς ὑμῖν	suggested-span	neutral finite-anchor region
-1corintios	4	8	C5	17	συμβασιλεύσωμεν	συμβασιλεύω	V-AAS-1P	17	17	17	==συμβασιλεύσωμεν==	suggested-span	neutral finite-anchor region
+1corintios	4	8	C4	12	ἐβασιλεύσατε	βασιλεύω	V-AAI-2P	12	12	12	==ἐβασιλεύσατε==	suggested-span	neutral finite-anchor region
+1corintios	4	8	C5	17	συμβασιλεύσωμεν	συμβασιλεύω	V-AAS-1P	13	17	13,14,15,16,17	ἵνα καὶ ἡμεῖς ὑμῖν ==συμβασιλεύσωμεν==	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	4	9	C1	01	δοκῶ	δοκέω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	==δοκῶ== γάρ ὁ θεὸς ἡμᾶς τοὺς ἀποστόλους ἐσχάτους	suggested-span	neutral finite-anchor region
-1corintios	4	9	C2	09	ἀπέδειξεν	ἀποδείκνυμι	V-AAI-3S	09	13	09,10,11,12,13	==ἀπέδειξεν== ὡς ἐπιθανατίους ὅτι θέατρον	suggested-span	neutral finite-anchor region
-1corintios	4	9	C3	14	ἐγενήθημεν	γίνομαι	V-API-1P	14	20	14,15,16,17,18,19,20	==ἐγενήθημεν== τῷ κόσμῳ καὶ ἀγγέλοις καὶ ἀνθρώποις	suggested-span	neutral finite-anchor region
+1corintios	4	9	C2	09	ἀπέδειξεν	ἀποδείκνυμι	V-AAI-3S	09	09	09	==ἀπέδειξεν==	suggested-span	neutral finite-anchor region
+1corintios	4	9	C3	14	ἐγενήθημεν	γίνομαι	V-API-1P	10	20	10,11,12,13,14,15,16,17,18,19,20	ὡς ἐπιθανατίους ὅτι θέατρον ==ἐγενήθημεν== τῷ κόσμῳ καὶ ἀγγέλοις καὶ ἀνθρώποις	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	5	1	C1	02	ἀκούεται	ἀκούω	V-PPI-3S	01	19	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19	ὅλως ==ἀκούεται== ἐν ὑμῖν πορνεία καὶ τοιαύτη πορνεία ἥτις οὐδὲ ἐν τοῖς ἔθνεσιν ὥστε γυναῖκά τινα τοῦ πατρὸς ἔχειν	suggested-span	neutral finite-anchor region
 1corintios	5	10	C1	16	ὠφείλετε	ὀφείλω	V-IAI-2P	01	21	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21	οὐ πάντως τοῖς πόρνοις τοῦ κόσμου τούτου ἢ τοῖς πλεονέκταις καὶ ἅρπαξιν ἢ εἰδωλολάτραις ἐπεὶ ==ὠφείλετε== ἄρα ἐκ τοῦ κόσμου ἐξελθεῖν	suggested-span	neutral finite-anchor region
-1corintios	5	11	C1	03	ἔγραψα	γράφω	V-AAI-1S	01	10	01,02,03,04,05,06,07,08,09,10	νῦν δὲ ==ἔγραψα== ὑμῖν μὴ συναναμίγνυσθαι ἐάν τις ἀδελφὸς ὀνομαζόμενος	suggested-span	neutral finite-anchor region
-1corintios	5	11	C2	11	ᾖ	εἰμί	V-PAS-3S	11	26	11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26	==ᾖ== πόρνος ἢ πλεονέκτης ἢ εἰδωλολάτρης ἢ λοίδορος ἢ μέθυσος ἢ ἅρπαξ τῷ τοιούτῳ μηδὲ συνεσθίειν	suggested-span	neutral finite-anchor region
+1corintios	5	11	C1	03	ἔγραψα	γράφω	V-AAI-1S	01	06	01,02,03,04,05,06	νῦν δὲ ==ἔγραψα== ὑμῖν μὴ συναναμίγνυσθαι	suggested-span	neutral finite-anchor region
+1corintios	5	11	C2	11	ᾖ	εἰμί	V-PAS-3S	07	26	07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26	ἐάν τις ἀδελφὸς ὀνομαζόμενος ==ᾖ== πόρνος ἢ πλεονέκτης ἢ εἰδωλολάτρης ἢ λοίδορος ἢ μέθυσος ἢ ἅρπαξ τῷ τοιούτῳ μηδὲ συνεσθίειν	suggested-span	migrated post-finite tail beginning with ἐάν
 1corintios	5	12	C1	11	κρίνετε	κρίνω	V-PAI-2P	01	11	01,02,03,04,05,06,07,08,09,10,11	τί γάρ μοι τοὺς ἔξω κρίνειν οὐχὶ τοὺς ἔσω ὑμεῖς ==κρίνετε==	suggested-span	neutral finite-anchor region
 1corintios	5	13	C1	06	κρίνει;	κρίνω	V-PAI-3S	01	06	01,02,03,04,05,06	τοὺς δὲ ἔξω ὁ θεὸς ==κρίνει;==	suggested-span	neutral finite-anchor region
 1corintios	5	13	C2	07	ἐξάρατε	ἐξαίρω	V-AAD-2P	07	12	07,08,09,10,11,12	==ἐξάρατε== τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν	suggested-span	neutral finite-anchor region
@@ -576,8 +576,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	5	2	C3	10	ἀρθῇ	αἴρω	V-APS-3S	09	18	09,10,11,12,13,14,15,16,17,18	ἵνα ==ἀρθῇ== ἐκ μέσου ὑμῶν ὁ τὸ ἔργον τοῦτο ποιήσας	suggested-span	migrated subordinate connector ἵνα
 1corintios	5	3	C1	12	κέκρικα	κρίνω	V-XAI-1S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	ἐγὼ μὲν γάρ ἀπὼν τῷ σώματι παρὼν δὲ τῷ πνεύματι ἤδη ==κέκρικα== ὡς παρὼν τὸν οὕτως τοῦτο κατεργασάμενον	suggested-span	neutral finite-anchor region
 1corintios	5	5	C1	13	σωθῇ	σῴζω	V-APS-3S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	παραδοῦναι τὸν τοιοῦτον τῷ σατανᾷ εἰς ὄλεθρον τῆς σαρκός ἵνα τὸ πνεῦμα ==σωθῇ== ἐν τῇ ἡμέρᾳ τοῦ κυρίου	suggested-span	neutral finite-anchor region
-1corintios	5	6	C1	07	οἴδατε	οἶδα	V-XAI-2P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	οὐ καλὸν τὸ καύχημα ὑμῶν οὐκ ==οἴδατε== ὅτι μικρὰ ζύμη ὅλον τὸ φύραμα	suggested-span	neutral finite-anchor region
-1corintios	5	6	C2	14	ζυμοῖ	ζυμόω	V-PAI-3S	14	14	14	==ζυμοῖ==	suggested-span	neutral finite-anchor region
+1corintios	5	6	C1	07	οἴδατε	οἶδα	V-XAI-2P	01	07	01,02,03,04,05,06,07	οὐ καλὸν τὸ καύχημα ὑμῶν οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	5	6	C2	14	ζυμοῖ	ζυμόω	V-PAI-3S	08	14	08,09,10,11,12,13,14	ὅτι μικρὰ ζύμη ὅλον τὸ φύραμα ==ζυμοῖ==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	5	7	C1	01	ἐκκαθάρατε	ἐκκαθαίρω	V-AAD-2P	01	04	01,02,03,04	==ἐκκαθάρατε== τὴν παλαιὰν ζύμην	suggested-span	neutral finite-anchor region
 1corintios	5	7	C2	06	ἦτε	εἰμί	V-PAS-2P	05	09	05,06,07,08,09	ἵνα ==ἦτε== νέον φύραμα καθώς	suggested-span	migrated subordinate connector ἵνα
 1corintios	5	7	C3	10	ἐστε	εἰμί	V-PAI-2P	10	16	10,11,12,13,14,15,16	==ἐστε== ἄζυμοι καὶ γὰρ τὸ πάσχα ἡμῶν	suggested-span	neutral finite-anchor region
@@ -597,11 +597,11 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	6	13	C1	17	καταργήσει	καταργέω	V-FAI-3S	01	31	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31	τὰ βρώματα τῇ κοιλίᾳ καὶ ἡ κοιλία τοῖς βρώμασιν ὁ δὲ θεὸς καὶ ταύτην καὶ ταῦτα ==καταργήσει== τὸ δὲ σῶμα οὐ τῇ πορνείᾳ ἀλλὰ τῷ κυρίῳ καὶ ὁ κύριος τῷ σώματι	suggested-span	neutral finite-anchor region
 1corintios	6	14	C1	07	ἤγειρεν	ἐγείρω	V-AAI-3S	01	09	01,02,03,04,05,06,07,08,09	ὁ δὲ θεὸς καὶ τὸν κύριον ==ἤγειρεν== καὶ ἡμᾶς	suggested-span	neutral finite-anchor region
 1corintios	6	14	C2	10	ἐξεγερεῖ	ἐξεγείρω	V-FAI-3S	10	14	10,11,12,13,14	==ἐξεγερεῖ== διὰ τῆς δυνάμεως αὐτοῦ	suggested-span	neutral finite-anchor region
-1corintios	6	15	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	08	01,02,03,04,05,06,07,08	οὐκ ==οἴδατε== ὅτι τὰ σώματα ὑμῶν μέλη χριστοῦ	suggested-span	neutral finite-anchor region
-1corintios	6	15	C2	09	ἐστιν	εἰμί	V-PAI-3S	09	15	09,10,11,12,13,14,15	==ἐστιν== ἄρας οὖν τὰ μέλη τοῦ χριστοῦ	suggested-span	neutral finite-anchor region
+1corintios	6	15	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	02	01,02	οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	6	15	C2	09	ἐστιν	εἰμί	V-PAI-3S	03	15	03,04,05,06,07,08,09,10,11,12,13,14,15	ὅτι τὰ σώματα ὑμῶν μέλη χριστοῦ ==ἐστιν== ἄρας οὖν τὰ μέλη τοῦ χριστοῦ	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	6	15	C3	16	ποιήσω	ποιέω	V-AAS-1S	16	20	16,17,18,19,20	==ποιήσω== πόρνης μέλη μὴ γένοιτο	suggested-span	neutral finite-anchor region
-1corintios	6	16	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	10	01,02,03,04,05,06,07,08,09,10	ἢ οὐκ ==οἴδατε== ὅτι ὁ κολλώμενος τῇ πόρνῃ ἓν σῶμά	suggested-span	neutral finite-anchor region
-1corintios	6	16	C2	11	ἐστιν	εἰμί	V-PAI-3S	11	11	11	==ἐστιν==	suggested-span	neutral finite-anchor region
+1corintios	6	16	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	03	01,02,03	ἢ οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	6	16	C2	11	ἐστιν	εἰμί	V-PAI-3S	04	11	04,05,06,07,08,09,10,11	ὅτι ὁ κολλώμενος τῇ πόρνῃ ἓν σῶμά ==ἐστιν==	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	6	16	C3	12	ἔσονται	εἰμί	V-FMI-3P	12	13	12,13	==ἔσονται== γάρ	suggested-span	neutral finite-anchor region
 1corintios	6	16	C4	14	φησίν	φημί	V-PAI-3S	14	19	14,15,16,17,18,19	==φησίν== οἱ δύο εἰς σάρκα μίαν	suggested-span	neutral finite-anchor region
 1corintios	6	17	C1	08	ἐστιν	εἰμί	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ὁ δὲ κολλώμενος τῷ κυρίῳ ἓν πνεῦμά ==ἐστιν==	suggested-span	neutral finite-anchor region
@@ -609,40 +609,40 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	6	18	C2	08	ποιήσῃ	ποιέω	V-AAS-3S	07	12	07,08,09,10,11,12	ἐὰν ==ποιήσῃ== ἄνθρωπος ἐκτὸς τοῦ σώματός	suggested-span	migrated subordinate connector ἐὰν
 1corintios	6	18	C3	13	ἐστιν	εἰμί	V-PAI-3S	13	20	13,14,15,16,17,18,19,20	==ἐστιν== ὁ δὲ πορνεύων εἰς τὸ ἴδιον σῶμα	suggested-span	neutral finite-anchor region
 1corintios	6	18	C4	21	ἁμαρτάνει	ἁμαρτάνω	V-PAI-3S	21	21	21	==ἁμαρτάνει==	suggested-span	neutral finite-anchor region
-1corintios	6	19	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ἢ οὐκ ==οἴδατε== ὅτι τὸ σῶμα ὑμῶν ναὸς τοῦ ἐν ὑμῖν ἁγίου πνεύματός	suggested-span	neutral finite-anchor region
-1corintios	6	19	C2	14	ἐστιν	εἰμί	V-PAI-3S	14	15	14,15	==ἐστιν== οὗ	suggested-span	neutral finite-anchor region
+1corintios	6	19	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	03	01,02,03	ἢ οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	6	19	C2	14	ἐστιν	εἰμί	V-PAI-3S	04	15	04,05,06,07,08,09,10,11,12,13,14,15	ὅτι τὸ σῶμα ὑμῶν ναὸς τοῦ ἐν ὑμῖν ἁγίου πνεύματός ==ἐστιν== οὗ	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	6	19	C3	16	ἔχετε	ἔχω	V-PAI-2P	16	20	16,17,18,19,20	==ἔχετε== ἀπὸ θεοῦ; καὶ οὐκ	suggested-span	neutral finite-anchor region
 1corintios	6	19	C4	21	ἐστὲ	εἰμί	V-PAI-2P	21	22	21,22	==ἐστὲ== ἑαυτῶν	suggested-span	neutral finite-anchor region
-1corintios	6	2	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	08	01,02,03,04,05,06,07,08	ἢ οὐκ ==οἴδατε== ὅτι οἱ ἅγιοι τὸν κόσμον	suggested-span	neutral finite-anchor region
-1corintios	6	2	C2	09	κρινοῦσιν	κρίνω	V-FAI-3P	09	13	09,10,11,12,13	==κρινοῦσιν== καὶ εἰ ἐν ὑμῖν	suggested-span	neutral finite-anchor region
-1corintios	6	2	C3	14	κρίνεται	κρίνω	V-PPI-3S	14	17	14,15,16,17	==κρίνεται== ὁ κόσμος ἀνάξιοί	suggested-span	neutral finite-anchor region
+1corintios	6	2	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	03	01,02,03	ἢ οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	6	2	C2	09	κρινοῦσιν	κρίνω	V-FAI-3P	04	10	04,05,06,07,08,09,10	ὅτι οἱ ἅγιοι τὸν κόσμον ==κρινοῦσιν== καὶ	suggested-span	migrated post-finite tail beginning with ὅτι
+1corintios	6	2	C3	14	κρίνεται	κρίνω	V-PPI-3S	11	17	11,12,13,14,15,16,17	εἰ ἐν ὑμῖν ==κρίνεται== ὁ κόσμος ἀνάξιοί	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	6	2	C4	18	ἐστε	εἰμί	V-PAI-2P	18	20	18,19,20	==ἐστε== κριτηρίων ἐλαχίστων	suggested-span	neutral finite-anchor region
 1corintios	6	20	C1	01	ἠγοράσθητε	ἀγοράζω	V-API-2P	01	03	01,02,03	==ἠγοράσθητε== γὰρ τιμῆς	suggested-span	neutral finite-anchor region
 1corintios	6	20	C2	04	δοξάσατε	δοξάζω	V-AAD-2P	04	11	04,05,06,07,08,09,10,11	==δοξάσατε== δὴ τὸν θεὸν ἐν τῷ σώματι ὑμῶν	suggested-span	neutral finite-anchor region
-1corintios	6	3	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	04	01,02,03,04	οὐκ ==οἴδατε== ὅτι ἀγγέλους	suggested-span	neutral finite-anchor region
-1corintios	6	3	C2	05	κρινοῦμεν	κρίνω	V-FAI-1P	05	07	05,06,07	==κρινοῦμεν== μήτιγε βιωτικά	suggested-span	neutral finite-anchor region
+1corintios	6	3	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	02	01,02	οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	6	3	C2	05	κρινοῦμεν	κρίνω	V-FAI-1P	03	07	03,04,05,06,07	ὅτι ἀγγέλους ==κρινοῦμεν== μήτιγε βιωτικά	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	6	4	C1	06	ἔχητε	ἔχω	V-PAS-2P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	βιωτικὰ μὲν οὖν κριτήρια ἐὰν ==ἔχητε== τοὺς ἐξουθενημένους ἐν τῇ ἐκκλησίᾳ τούτους	suggested-span	neutral finite-anchor region
 1corintios	6	4	C2	13	καθίζετε	καθίζω	V-PAI-2P	13	13	13	==καθίζετε==	suggested-span	neutral finite-anchor region
 1corintios	6	5	C1	04	λέγω	λέγω	V-PAI-1S	01	06	01,02,03,04,05,06	πρὸς ἐντροπὴν ὑμῖν ==λέγω== οὕτως οὐκ	suggested-span	neutral finite-anchor region
 1corintios	6	5	C2	07	ἔνι	ἔνι	V-PAI-3S	07	12	07,08,09,10,11,12	==ἔνι== ἐν ὑμῖν οὐδεὶς σοφὸς ὃς	suggested-span	neutral finite-anchor region
 1corintios	6	5	C3	13	δυνήσεται	δύναμαι	V-FMI-3S	13	19	13,14,15,16,17,18,19	==δυνήσεται== διακρῖναι ἀνὰ μέσον τοῦ ἀδελφοῦ αὐτοῦ	suggested-span	neutral finite-anchor region
 1corintios	6	6	C1	05	κρίνεται	κρίνω	V-PPI-3S	01	09	01,02,03,04,05,06,07,08,09	ἀλλὰ ἀδελφὸς μετὰ ἀδελφοῦ ==κρίνεται== καὶ τοῦτο ἐπὶ ἀπίστων	suggested-span	neutral finite-anchor region
-1corintios	6	7	C1	07	ἐστιν	εἰμί	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	ἤδη μὲν οὖν ὅλως ἥττημα ὑμῖν ==ἐστιν== ὅτι κρίματα	suggested-span	neutral finite-anchor region
-1corintios	6	7	C2	10	ἔχετε	ἔχω	V-PAI-2P	10	16	10,11,12,13,14,15,16	==ἔχετε== μεθʼ ἑαυτῶν διὰ τί οὐχὶ μᾶλλον	suggested-span	neutral finite-anchor region
+1corintios	6	7	C1	07	ἐστιν	εἰμί	V-PAI-3S	01	07	01,02,03,04,05,06,07	ἤδη μὲν οὖν ὅλως ἥττημα ὑμῖν ==ἐστιν==	suggested-span	neutral finite-anchor region
+1corintios	6	7	C2	10	ἔχετε	ἔχω	V-PAI-2P	08	16	08,09,10,11,12,13,14,15,16	ὅτι κρίματα ==ἔχετε== μεθʼ ἑαυτῶν διὰ τί οὐχὶ μᾶλλον	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	6	7	C3	17	ἀδικεῖσθε	ἀδικέω	V-PPI-2P	17	21	17,18,19,20,21	==ἀδικεῖσθε== διὰ τί οὐχὶ μᾶλλον	suggested-span	neutral finite-anchor region
 1corintios	6	7	C4	22	ἀποστερεῖσθε	ἀποστερέω	V-PPI-2P	22	22	22	==ἀποστερεῖσθε==	suggested-span	neutral finite-anchor region
 1corintios	6	8	C1	03	ἀδικεῖτε	ἀδικέω	V-PAI-2P	01	04	01,02,03,04	ἀλλὰ ὑμεῖς ==ἀδικεῖτε== καὶ	suggested-span	neutral finite-anchor region
 1corintios	6	8	C2	05	ἀποστερεῖτε	ἀποστερέω	V-PAI-2P	05	08	05,06,07,08	==ἀποστερεῖτε== καὶ τοῦτο ἀδελφούς	suggested-span	neutral finite-anchor region
-1corintios	6	9	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	08	01,02,03,04,05,06,07,08	ἢ οὐκ ==οἴδατε== ὅτι ἄδικοι θεοῦ βασιλείαν οὐ	suggested-span	neutral finite-anchor region
-1corintios	6	9	C2	09	κληρονομήσουσιν	κληρονομέω	V-FAI-3P	09	10	09,10	==κληρονομήσουσιν== μὴ	suggested-span	neutral finite-anchor region
+1corintios	6	9	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	03	01,02,03	ἢ οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	6	9	C2	09	κληρονομήσουσιν	κληρονομέω	V-FAI-3P	04	10	04,05,06,07,08,09,10	ὅτι ἄδικοι θεοῦ βασιλείαν οὐ ==κληρονομήσουσιν== μὴ	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	6	9	C3	11	πλανᾶσθε	πλανάω	V-PPD-2P	11	21	11,12,13,14,15,16,17,18,19,20,21	==πλανᾶσθε== οὔτε πόρνοι οὔτε εἰδωλολάτραι οὔτε μοιχοὶ οὔτε μαλακοὶ οὔτε ἀρσενοκοῖται	suggested-span	neutral finite-anchor region
 1corintios	7	1	C1	04	ἐγράψατε	γράφω	V-AAI-2P	01	09	01,02,03,04,05,06,07,08,09	περὶ δὲ ὧν ==ἐγράψατε== καλὸν ἀνθρώπῳ γυναικὸς μὴ ἅπτεσθαι	suggested-span	neutral finite-anchor region
 1corintios	7	10	C1	04	παραγγέλλω	παραγγέλλω	V-PAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	τοῖς δὲ γεγαμηκόσιν ==παραγγέλλω== οὐκ ἐγὼ ἀλλὰ ὁ κύριος γυναῖκα ἀπὸ ἀνδρὸς μὴ χωρισθῆναι—	suggested-span	neutral finite-anchor region
 1corintios	7	11	C1	04	χωρισθῇ	χωρίζω	V-APS-3S	01	04	01,02,03,04	ἐὰν δὲ καὶ ==χωρισθῇ==	suggested-span	neutral finite-anchor region
 1corintios	7	11	C2	05	μενέτω	μένω	V-PAD-3S	05	09	05,06,07,08,09	==μενέτω== ἄγαμος ἢ τῷ ἀνδρὶ	suggested-span	neutral finite-anchor region
 1corintios	7	11	C3	10	καταλλαγήτω—	καταλλάσσω	V-APD-3S	10	15	10,11,12,13,14,15	==καταλλαγήτω—== καὶ ἄνδρα γυναῖκα μὴ ἀφιέναι	suggested-span	neutral finite-anchor region
-1corintios	7	12	C1	04	λέγω	λέγω	V-PAI-1S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	Τοῖς δὲ λοιποῖς ==λέγω== ἐγώ οὐχ ὁ κύριος εἴ τις ἀδελφὸς γυναῖκα	suggested-span	neutral finite-anchor region
-1corintios	7	12	C2	13	ἔχει	ἔχω	V-PAI-3S	13	16	13,14,15,16	==ἔχει== ἄπιστον καὶ αὕτη	suggested-span	neutral finite-anchor region
+1corintios	7	12	C1	04	λέγω	λέγω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	Τοῖς δὲ λοιποῖς ==λέγω== ἐγώ οὐχ ὁ κύριος	suggested-span	neutral finite-anchor region
+1corintios	7	12	C2	13	ἔχει	ἔχω	V-PAI-3S	09	16	09,10,11,12,13,14,15,16	εἴ τις ἀδελφὸς γυναῖκα ==ἔχει== ἄπιστον καὶ αὕτη	suggested-span	migrated post-finite tail beginning with εἴ
 1corintios	7	12	C3	17	συνευδοκεῖ	συνευδοκέω	V-PAI-3S	17	21	17,18,19,20,21	==συνευδοκεῖ== οἰκεῖν μετʼ αὐτοῦ μὴ	suggested-span	neutral finite-anchor region
 1corintios	7	12	C4	22	ἀφιέτω	ἀφίημι	V-PAD-3S	22	23	22,23	==ἀφιέτω== αὐτήν	suggested-span	neutral finite-anchor region
 1corintios	7	13	C1	05	ἔχει	ἔχω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	καὶ γυνὴ εἴ τις ==ἔχει== ἄνδρα ἄπιστον καὶ οὗτος	suggested-span	neutral finite-anchor region
@@ -656,10 +656,10 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	7	15	C2	06	χωριζέσθω	χωρίζω	V-PPD-3S	06	07	06,07	==χωριζέσθω== οὐ	suggested-span	neutral finite-anchor region
 1corintios	7	15	C3	08	δεδούλωται	δουλόω	V-XPI-3S	08	19	08,09,10,11,12,13,14,15,16,17,18,19	==δεδούλωται== ὁ ἀδελφὸς ἢ ἡ ἀδελφὴ ἐν τοῖς τοιούτοις ἐν δὲ εἰρήνῃ	suggested-span	neutral finite-anchor region
 1corintios	7	15	C4	20	κέκληκεν	καλέω	V-XAI-3S	20	23	20,21,22,23	==κέκληκεν== ἡμᾶς ὁ θεός	suggested-span	neutral finite-anchor region
-1corintios	7	16	C1	03	οἶδας	οἶδα	V-XAI-2S	01	07	01,02,03,04,05,06,07	τί γὰρ ==οἶδας== γύναι εἰ τὸν ἄνδρα	suggested-span	neutral finite-anchor region
-1corintios	7	16	C2	08	σώσεις	σῴζω	V-FAI-2S	08	10	08,09,10	==σώσεις== ἢ τί	suggested-span	neutral finite-anchor region
-1corintios	7	16	C3	11	οἶδας	οἶδα	V-XAI-2S	11	15	11,12,13,14,15	==οἶδας== ἄνερ εἰ τὴν γυναῖκα	suggested-span	neutral finite-anchor region
-1corintios	7	16	C4	16	σώσεις	σῴζω	V-FAI-2S	16	16	16	==σώσεις==	suggested-span	neutral finite-anchor region
+1corintios	7	16	C1	03	οἶδας	οἶδα	V-XAI-2S	01	04	01,02,03,04	τί γὰρ ==οἶδας== γύναι	suggested-span	neutral finite-anchor region
+1corintios	7	16	C2	08	σώσεις	σῴζω	V-FAI-2S	05	10	05,06,07,08,09,10	εἰ τὸν ἄνδρα ==σώσεις== ἢ τί	suggested-span	migrated post-finite tail beginning with εἰ
+1corintios	7	16	C3	11	οἶδας	οἶδα	V-XAI-2S	11	12	11,12	==οἶδας== ἄνερ	suggested-span	neutral finite-anchor region
+1corintios	7	16	C4	16	σώσεις	σῴζω	V-FAI-2S	13	16	13,14,15,16	εἰ τὴν γυναῖκα ==σώσεις==	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	7	17	C1	05	ἐμέρισεν	μερίζω	V-AAI-3S	01	08	01,02,03,04,05,06,07,08	εἰ μὴ ἑκάστῳ ὡς ==ἐμέρισεν== ὁ κύριος ἕκαστον	suggested-span	neutral finite-anchor region
 1corintios	7	17	C2	10	κέκληκεν	καλέω	V-XAI-3S	09	13	09,10,11,12,13	ὡς ==κέκληκεν== ὁ θεός οὕτως	suggested-span	migrated subordinate connector ὡς
 1corintios	7	17	C3	14	περιπατείτω	περιπατέω	V-PAD-3S	14	20	14,15,16,17,18,19,20	==περιπατείτω== καὶ οὕτως ἐν ταῖς ἐκκλησίαις πάσαις	suggested-span	neutral finite-anchor region
@@ -675,8 +675,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	7	20	C1	06	ἐκλήθη	καλέω	V-API-3S	01	08	01,02,03,04,05,06,07,08	ἕκαστος ἐν τῇ κλήσει ᾗ ==ἐκλήθη== ἐν ταύτῃ	suggested-span	neutral finite-anchor region
 1corintios	7	20	C2	09	μενέτω	μένω	V-PAD-3S	09	09	09	==μενέτω==	suggested-span	neutral finite-anchor region
 1corintios	7	21	C1	02	ἐκλήθης;	καλέω	V-API-2S	01	04	01,02,03,04	δοῦλος ==ἐκλήθης;== μή σοι	suggested-span	neutral finite-anchor region
-1corintios	7	21	C2	05	μελέτω	μέλει	V-PAD-3S	05	08	05,06,07,08	==μελέτω== ἀλλʼ εἰ καὶ	suggested-span	neutral finite-anchor region
-1corintios	7	21	C3	09	δύνασαι	δύναμαι	V-PMI-2S	09	12	09,10,11,12	==δύνασαι== ἐλεύθερος γενέσθαι μᾶλλον	suggested-span	neutral finite-anchor region
+1corintios	7	21	C2	05	μελέτω	μέλει	V-PAD-3S	05	06	05,06	==μελέτω== ἀλλʼ	suggested-span	neutral finite-anchor region
+1corintios	7	21	C3	09	δύνασαι	δύναμαι	V-PMI-2S	07	12	07,08,09,10,11,12	εἰ καὶ ==δύνασαι== ἐλεύθερος γενέσθαι μᾶλλον	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	7	21	C4	13	χρῆσαι	χράομαι	V-AMD-2S	13	13	13	==χρῆσαι==	suggested-span	neutral finite-anchor region
 1corintios	7	22	C1	09	ἐστίν	εἰμί	V-PAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	ὁ γὰρ ἐν κυρίῳ κληθεὶς δοῦλος ἀπελεύθερος κυρίου ==ἐστίν== ὁμοίως ὁ ἐλεύθερος κληθεὶς δοῦλός	suggested-span	neutral finite-anchor region
 1corintios	7	22	C2	15	ἐστιν	εἰμί	V-PAI-3S	15	16	15,16	==ἐστιν== Χριστοῦ	suggested-span	neutral finite-anchor region
@@ -698,8 +698,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	7	28	C5	18	ἕξουσιν	ἔχω	V-FAI-3P	18	23	18,19,20,21,22,23	==ἕξουσιν== οἱ τοιοῦτοι ἐγὼ δὲ ὑμῶν	suggested-span	neutral finite-anchor region
 1corintios	7	28	C6	24	φείδομαι	φείδομαι	V-PMI-1S	24	24	24	==φείδομαι==	suggested-span	neutral finite-anchor region
 1corintios	7	29	C1	03	φημι	φημί	V-PAI-1S	01	07	01,02,03,04,05,06,07	τοῦτο δέ ==φημι== ἀδελφοί ὁ καιρὸς συνεσταλμένος	suggested-span	neutral finite-anchor region
-1corintios	7	29	C2	08	ἐστίν	εἰμί	V-PAI-3S	08	18	08,09,10,11,12,13,14,15,16,17,18	==ἐστίν== τὸ λοιπὸν ἵνα καὶ οἱ ἔχοντες γυναῖκας ὡς μὴ ἔχοντες	suggested-span	neutral finite-anchor region
-1corintios	7	29	C3	19	ὦσιν	εἰμί	V-PAS-3P	19	19	19	==ὦσιν==	suggested-span	neutral finite-anchor region
+1corintios	7	29	C2	08	ἐστίν	εἰμί	V-PAI-3S	08	10	08,09,10	==ἐστίν== τὸ λοιπὸν	suggested-span	neutral finite-anchor region
+1corintios	7	29	C3	19	ὦσιν	εἰμί	V-PAS-3P	11	19	11,12,13,14,15,16,17,18,19	ἵνα καὶ οἱ ἔχοντες γυναῖκας ὡς μὴ ἔχοντες ==ὦσιν==	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	7	3	C1	07	ἀποδιδότω	ἀποδίδωμι	V-PAD-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	τῇ γυναικὶ ὁ ἀνὴρ τὴν ὀφειλὴν ==ἀποδιδότω== ὁμοίως δὲ καὶ ἡ γυνὴ τῷ ἀνδρί	suggested-span	neutral finite-anchor region
 1corintios	7	31	C1	09	παράγει	παράγω	V-PAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	καὶ οἱ χρώμενοι τὸν κόσμον ὡς μὴ καταχρώμενοι ==παράγει== γὰρ τὸ σχῆμα τοῦ κόσμου τούτου	suggested-span	neutral finite-anchor region
 1corintios	7	32	C1	01	θέλω	θέλω	V-PAI-1S	01	07	01,02,03,04,05,06,07	==θέλω== δὲ ὑμᾶς ἀμερίμνους εἶναι ὁ ἄγαμος	suggested-span	neutral finite-anchor region
@@ -712,8 +712,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	7	34	C3	16	ᾖ	εἰμί	V-PAS-3S	15	26	15,16,17,18,19,20,21,22,23,24,25,26	ἵνα ==ᾖ== ἁγία καὶ τῷ σώματι καὶ ⸁τῷ πνεύματι ἡ δὲ γαμήσασα	suggested-span	migrated subordinate connector ἵνα
 1corintios	7	34	C4	27	μεριμνᾷ	μεριμνάω	V-PAI-3S	27	31	27,28,29,30,31	==μεριμνᾷ== τὰ τοῦ κόσμου πῶς	suggested-span	neutral finite-anchor region
 1corintios	7	34	C5	32	ἀρέσῃ	ἀρέσκω	V-AAS-3S	32	34	32,33,34	==ἀρέσῃ== τῷ ἀνδρί	suggested-span	neutral finite-anchor region
-1corintios	7	35	C1	08	λέγω	λέγω	V-PAI-1S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	τοῦτο δὲ πρὸς τὸ ὑμῶν αὐτῶν σύμφορον ==λέγω== οὐχ ἵνα βρόχον ὑμῖν	suggested-span	neutral finite-anchor region
-1corintios	7	35	C2	13	ἐπιβάλω	ἐπιβάλλω	V-AAS-1S	13	22	13,14,15,16,17,18,19,20,21,22	==ἐπιβάλω== ἀλλὰ πρὸς τὸ εὔσχημον καὶ εὐπάρεδρον τῷ κυρίῳ ἀπερισπάστως	suggested-span	neutral finite-anchor region
+1corintios	7	35	C1	08	λέγω	λέγω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	τοῦτο δὲ πρὸς τὸ ὑμῶν αὐτῶν σύμφορον ==λέγω== οὐχ	suggested-span	neutral finite-anchor region
+1corintios	7	35	C2	13	ἐπιβάλω	ἐπιβάλλω	V-AAS-1S	10	22	10,11,12,13,14,15,16,17,18,19,20,21,22	ἵνα βρόχον ὑμῖν ==ἐπιβάλω== ἀλλὰ πρὸς τὸ εὔσχημον καὶ εὐπάρεδρον τῷ κυρίῳ ἀπερισπάστως	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	7	36	C1	09	νομίζει	νομίζω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	εἰ δέ τις ἀσχημονεῖν ἐπὶ τὴν παρθένον αὐτοῦ ==νομίζει==	suggested-span	neutral finite-anchor region
 1corintios	7	36	C2	11	ᾖ	εἰμί	V-PAS-3S	10	14	10,11,12,13,14	ἐὰν ==ᾖ== ὑπέρακμος καὶ οὕτως	suggested-span	migrated subordinate connector ἐὰν
 1corintios	7	36	C3	15	ὀφείλει	ὀφείλω	V-PAI-3S	15	17	15,16,17	==ὀφείλει== γίνεσθαι ὃ	suggested-span	neutral finite-anchor region
@@ -728,29 +728,29 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	7	38	C1	09	ποιεῖ	ποιέω	V-PAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	ὥστε καὶ ὁ γαμίζων τὴν παρθένον ἑαυτοῦ καλῶς ==ποιεῖ== καὶ ὁ μὴ ⸁γαμίζων κρεῖσσον	suggested-span	neutral finite-anchor region
 1corintios	7	38	C2	15	ποιήσει	ποιέω	V-FAI-3S	15	15	15	==ποιήσει==	suggested-span	neutral finite-anchor region
 1corintios	7	39	C1	02	δέδεται	δέω	V-XPI-3S	01	05	01,02,03,04,05	γυνὴ ==δέδεται== ἐφʼ ὅσον χρόνον	suggested-span	neutral finite-anchor region
-1corintios	7	39	C2	06	ζῇ	ζάω	V-PAI-3S	06	11	06,07,08,09,10,11	==ζῇ== ὁ ἀνὴρ αὐτῆς ἐὰν δὲ	suggested-span	neutral finite-anchor region
-1corintios	7	39	C3	12	κοιμηθῇ	κοιμάομαι	V-APS-3S	12	15	12,13,14,15	==κοιμηθῇ== ὁ ἀνήρ ἐλευθέρα	suggested-span	neutral finite-anchor region
+1corintios	7	39	C2	06	ζῇ	ζάω	V-PAI-3S	06	09	06,07,08,09	==ζῇ== ὁ ἀνὴρ αὐτῆς	suggested-span	neutral finite-anchor region
+1corintios	7	39	C3	12	κοιμηθῇ	κοιμάομαι	V-APS-3S	10	15	10,11,12,13,14,15	ἐὰν δὲ ==κοιμηθῇ== ὁ ἀνήρ ἐλευθέρα	suggested-span	migrated post-finite tail beginning with ἐὰν
 1corintios	7	39	C4	16	ἐστὶν	εἰμί	V-PAI-3S	16	17	16,17	==ἐστὶν== ᾧ	suggested-span	neutral finite-anchor region
 1corintios	7	39	C5	18	θέλει	θέλω	V-PAI-3S	18	22	18,19,20,21,22	==θέλει== γαμηθῆναι μόνον ἐν κυρίῳ	suggested-span	neutral finite-anchor region
 1corintios	7	4	C1	07	ἐξουσιάζει	ἐξουσιάζω	V-PAI-3S	01	19	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19	ἡ γυνὴ τοῦ ἰδίου σώματος οὐκ ==ἐξουσιάζει== ἀλλὰ ὁ ἀνήρ ὁμοίως δὲ καὶ ὁ ἀνὴρ τοῦ ἰδίου σώματος οὐκ	suggested-span	neutral finite-anchor region
 1corintios	7	4	C2	20	ἐξουσιάζει	ἐξουσιάζω	V-PAI-3S	20	23	20,21,22,23	==ἐξουσιάζει== ἀλλὰ ἡ γυνή	suggested-span	neutral finite-anchor region
-1corintios	7	40	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	05	01,02,03,04,05	μακαριωτέρα δέ ==ἐστιν== ἐὰν οὕτως	suggested-span	neutral finite-anchor region
-1corintios	7	40	C2	06	μείνῃ	μένω	V-AAS-3S	06	10	06,07,08,09,10	==μείνῃ== κατὰ τὴν ἐμὴν γνώμην	suggested-span	neutral finite-anchor region
+1corintios	7	40	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	03	01,02,03	μακαριωτέρα δέ ==ἐστιν==	suggested-span	neutral finite-anchor region
+1corintios	7	40	C2	06	μείνῃ	μένω	V-AAS-3S	04	10	04,05,06,07,08,09,10	ἐὰν οὕτως ==μείνῃ== κατὰ τὴν ἐμὴν γνώμην	suggested-span	migrated post-finite tail beginning with ἐὰν
 1corintios	7	40	C3	11	δοκῶ	δοκέω	V-PAI-1S	11	16	11,12,13,14,15,16	==δοκῶ== δὲ κἀγὼ πνεῦμα θεοῦ ἔχειν	suggested-span	neutral finite-anchor region
-1corintios	7	5	C1	02	ἀποστερεῖτε	ἀποστερέω	V-PAD-2P	01	10	01,02,03,04,05,06,07,08,09,10	μὴ ==ἀποστερεῖτε== ἀλλήλους εἰ μήτι ἂν ἐκ συμφώνου πρὸς καιρὸν	suggested-span	neutral finite-anchor region
-1corintios	7	5	C2	12	σχολάσητε	σχολάζω	V-AAS-2P	11	19	11,12,13,14,15,16,17,18,19	ἵνα ==σχολάσητε== τῇ προσευχῇ καὶ πάλιν ἐπὶ τὸ αὐτὸ	suggested-span	migrated subordinate connector ἵνα
-1corintios	7	5	C3	20	ἦτε	εἰμί	V-PAS-2P	20	22	20,21,22	==ἦτε== ἵνα μὴ	suggested-span	neutral finite-anchor region
-1corintios	7	5	C4	23	πειράζῃ	πειράζω	V-PAS-3S	23	30	23,24,25,26,27,28,29,30	==πειράζῃ== ὑμᾶς ὁ σατανᾶς διὰ τὴν ἀκρασίαν ὑμῶν	suggested-span	neutral finite-anchor region
+1corintios	7	5	C1	02	ἀποστερεῖτε	ἀποστερέω	V-PAD-2P	01	03	01,02,03	μὴ ==ἀποστερεῖτε== ἀλλήλους	suggested-span	neutral finite-anchor region
+1corintios	7	5	C2	12	σχολάσητε	σχολάζω	V-AAS-2P	04	19	04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19	εἰ μήτι ἂν ἐκ συμφώνου πρὸς καιρὸν ἵνα ==σχολάσητε== τῇ προσευχῇ καὶ πάλιν ἐπὶ τὸ αὐτὸ	suggested-span	migrated subordinate connector ἵνα; migrated post-finite tail beginning with εἰ
+1corintios	7	5	C3	20	ἦτε	εἰμί	V-PAS-2P	20	20	20	==ἦτε==	suggested-span	neutral finite-anchor region
+1corintios	7	5	C4	23	πειράζῃ	πειράζω	V-PAS-3S	21	30	21,22,23,24,25,26,27,28,29,30	ἵνα μὴ ==πειράζῃ== ὑμᾶς ὁ σατανᾶς διὰ τὴν ἀκρασίαν ὑμῶν	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	7	6	C1	03	λέγω	λέγω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	Τοῦτο δὲ ==λέγω== κατὰ συγγνώμην οὐ κατʼ ἐπιταγήν	suggested-span	neutral finite-anchor region
-1corintios	7	7	C1	01	θέλω	θέλω	V-PAI-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	==θέλω== δὲ πάντας ἀνθρώπους εἶναι ὡς καὶ ἐμαυτόν ἀλλὰ ἕκαστος ἴδιον	suggested-span	neutral finite-anchor region
-1corintios	7	7	C2	12	ἔχει	ἔχω	V-PAI-3S	12	21	12,13,14,15,16,17,18,19,20,21	==ἔχει== χάρισμα ἐκ θεοῦ ὁ μὲν οὕτως ⸁ὁ δὲ οὕτως	suggested-span	neutral finite-anchor region
+1corintios	7	7	C1	01	θέλω	θέλω	V-PAI-1S	01	05	01,02,03,04,05	==θέλω== δὲ πάντας ἀνθρώπους εἶναι	suggested-span	neutral finite-anchor region
+1corintios	7	7	C2	12	ἔχει	ἔχω	V-PAI-3S	06	21	06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21	ὡς καὶ ἐμαυτόν ἀλλὰ ἕκαστος ἴδιον ==ἔχει== χάρισμα ἐκ θεοῦ ὁ μὲν οὕτως ⸁ὁ δὲ οὕτως	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	7	8	C1	01	λέγω	λέγω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	==λέγω== δὲ τοῖς ἀγάμοις καὶ ταῖς χήραις καλὸν αὐτοῖς	suggested-span	neutral finite-anchor region
 1corintios	7	8	C2	11	μείνωσιν	μένω	V-AAS-3P	10	13	10,11,12,13	ἐὰν ==μείνωσιν== ὡς κἀγώ	suggested-span	migrated subordinate connector ἐὰν
 1corintios	7	9	C1	04	ἐγκρατεύονται	ἐγκρατεύομαι	V-PMI-3P	01	04	01,02,03,04	εἰ δὲ οὐκ ==ἐγκρατεύονται==	suggested-span	neutral finite-anchor region
 1corintios	7	9	C2	05	γαμησάτωσαν	γαμέω	V-AAD-3P	05	07	05,06,07	==γαμησάτωσαν== κρεῖττον γάρ	suggested-span	neutral finite-anchor region
 1corintios	7	9	C3	08	ἐστιν	εἰμί	V-PAI-3S	08	11	08,09,10,11	==ἐστιν== γαμῆσαι ἢ πυροῦσθαι	suggested-span	neutral finite-anchor region
-1corintios	8	1	C1	05	οἴδαμεν	οἶδα	V-XAI-1P	01	08	01,02,03,04,05,06,07,08	περὶ δὲ τῶν εἰδωλοθύτων ==οἴδαμεν== ὅτι πάντες γνῶσιν	suggested-span	neutral finite-anchor region
-1corintios	8	1	C2	09	ἔχομεν	ἔχω	V-PAI-1P	09	11	09,10,11	==ἔχομεν== ἡ γνῶσις	suggested-span	neutral finite-anchor region
+1corintios	8	1	C1	05	οἴδαμεν	οἶδα	V-XAI-1P	01	05	01,02,03,04,05	περὶ δὲ τῶν εἰδωλοθύτων ==οἴδαμεν==	suggested-span	neutral finite-anchor region
+1corintios	8	1	C2	09	ἔχομεν	ἔχω	V-PAI-1P	06	11	06,07,08,09,10,11	ὅτι πάντες γνῶσιν ==ἔχομεν== ἡ γνῶσις	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	8	1	C3	12	φυσιοῖ	φυσιόω	V-PAI-3S	12	15	12,13,14,15	==φυσιοῖ== ἡ δὲ ἀγάπη	suggested-span	neutral finite-anchor region
 1corintios	8	1	C4	16	οἰκοδομεῖ	οἰκοδομέω	V-PAI-3S	16	16	16	==οἰκοδομεῖ==	suggested-span	neutral finite-anchor region
 1corintios	8	10	C1	04	ἴδῃ	ὁράω	V-AAS-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	ἐὰν γάρ τις ==ἴδῃ== σὲ τὸν ἔχοντα γνῶσιν ἐν εἰδωλείῳ κατακείμενον οὐχὶ ἡ συνείδησις αὐτοῦ ἀσθενοῦς ὄντος	suggested-span	neutral finite-anchor region
@@ -759,8 +759,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	8	11	C2	14	ἀπέθανεν	ἀποθνῄσκω	V-AAI-3S	14	14	14	==ἀπέθανεν==	suggested-span	neutral finite-anchor region
 1corintios	8	12	C1	15	ἁμαρτάνετε	ἁμαρτάνω	V-PAI-2P	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	οὕτως δὲ ἁμαρτάνοντες εἰς τοὺς ἀδελφοὺς καὶ τύπτοντες αὐτῶν τὴν συνείδησιν ἀσθενοῦσαν εἰς χριστὸν ==ἁμαρτάνετε==	suggested-span	neutral finite-anchor region
 1corintios	8	13	C1	04	σκανδαλίζει	σκανδαλίζω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	διόπερ εἰ βρῶμα ==σκανδαλίζει== τὸν ἀδελφόν μου οὐ μὴ	suggested-span	neutral finite-anchor region
-1corintios	8	13	C2	10	φάγω	ἐσθίω	V-AAS-1S	10	19	10,11,12,13,14,15,16,17,18,19	==φάγω== κρέα εἰς τὸν αἰῶνα ἵνα μὴ τὸν ἀδελφόν μου	suggested-span	neutral finite-anchor region
-1corintios	8	13	C3	20	σκανδαλίσω	σκανδαλίζω	V-AAS-1S	20	20	20	==σκανδαλίσω==	suggested-span	neutral finite-anchor region
+1corintios	8	13	C2	10	φάγω	ἐσθίω	V-AAS-1S	10	14	10,11,12,13,14	==φάγω== κρέα εἰς τὸν αἰῶνα	suggested-span	neutral finite-anchor region
+1corintios	8	13	C3	20	σκανδαλίσω	σκανδαλίζω	V-AAS-1S	15	20	15,16,17,18,19,20	ἵνα μὴ τὸν ἀδελφόν μου ==σκανδαλίσω==	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	8	2	C1	03	δοκεῖ	δοκέω	V-PAI-3S	01	06	01,02,03,04,05,06	εἴ τις ==δοκεῖ== ἐγνωκέναι τι οὔπω	suggested-span	neutral finite-anchor region
 1corintios	8	2	C2	07	ἔγνω	γινώσκω	V-AAI-3S	07	08	07,08	==ἔγνω== καθὼς	suggested-span	neutral finite-anchor region
 1corintios	8	2	C3	09	δεῖ	δέω	V-PAI-3S	09	10	09,10	==δεῖ== γνῶναι	suggested-span	neutral finite-anchor region
@@ -773,8 +773,8 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	8	7	C2	24	μολύνεται	μολύνω	V-PPI-3S	24	24	24	==μολύνεται==	suggested-span	neutral finite-anchor region
 1corintios	8	8	C1	05	παραστήσει	παρίστημι	V-FAI-3S	01	09	01,02,03,04,05,06,07,08,09	βρῶμα δὲ ἡμᾶς οὐ ==παραστήσει== τῷ θεῷ οὔτε γὰρ	suggested-span	neutral finite-anchor region
 1corintios	8	8	C2	11	φάγωμεν	ἐσθίω	V-AAS-1P	10	11	10,11	ἐὰν ==φάγωμεν==	suggested-span	migrated subordinate connector ἐὰν
-1corintios	8	8	C3	12	περισσεύομεν	περισσεύω	V-PAI-1P	12	15	12,13,14,15	==περισσεύομεν== οὔτε ἐὰν μὴ	suggested-span	neutral finite-anchor region
-1corintios	8	8	C4	16	φάγωμεν	ἐσθίω	V-AAS-1P	16	16	16	==φάγωμεν==	suggested-span	neutral finite-anchor region
+1corintios	8	8	C3	12	περισσεύομεν	περισσεύω	V-PAI-1P	12	13	12,13	==περισσεύομεν== οὔτε	suggested-span	neutral finite-anchor region
+1corintios	8	8	C4	16	φάγωμεν	ἐσθίω	V-AAS-1P	14	16	14,15,16	ἐὰν μὴ ==φάγωμεν==	suggested-span	migrated post-finite tail beginning with ἐὰν
 1corintios	8	8	C5	17	ὑστερούμεθα	ὑστερέω	V-PPI-1P	17	17	17	==ὑστερούμεθα==	suggested-span	neutral finite-anchor region
 1corintios	8	9	C1	01	βλέπετε	βλέπω	V-PAD-2P	01	09	01,02,03,04,05,06,07,08,09	==βλέπετε== δὲ μή πως ἡ ἐξουσία ὑμῶν αὕτη πρόσκομμα	suggested-span	neutral finite-anchor region
 1corintios	8	9	C2	10	γένηται	γίνομαι	V-AMS-3S	10	12	10,11,12	==γένηται== τοῖς ἀσθενέσιν	suggested-span	neutral finite-anchor region
@@ -785,54 +785,54 @@ BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_STA
 1corintios	9	10	C1	05	λέγει	λέγω	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ἢ διʼ ἡμᾶς πάντως ==λέγει== διʼ ἡμᾶς γὰρ	suggested-span	neutral finite-anchor region
 1corintios	9	10	C2	09	ἐγράφη	γράφω	V-API-3S	09	09	09	==ἐγράφη==	suggested-span	neutral finite-anchor region
 1corintios	9	10	C3	11	ὀφείλει	ὀφείλω	V-PAI-3S	10	23	10,11,12,13,14,15,16,17,18,19,20,21,22,23	ὅτι ==ὀφείλει== ἐπʼ ἐλπίδι ὁ ἀροτριῶν ἀροτριᾶν καὶ ὁ ἀλοῶν ἐπʼ ἐλπίδι τοῦ μετέχειν	suggested-span	migrated subordinate connector ὅτι
-1corintios	9	11	C1	06	ἐσπείραμεν	σπείρω	V-AAI-1P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	εἰ ἡμεῖς ὑμῖν τὰ πνευματικὰ ==ἐσπείραμεν== μέγα εἰ ἡμεῖς ὑμῶν τὰ σαρκικὰ	suggested-span	neutral finite-anchor region
-1corintios	9	11	C2	13	θερίσομεν	θερίζω	V-FAI-1P	13	13	13	==θερίσομεν==	suggested-span	neutral finite-anchor region
+1corintios	9	11	C1	06	ἐσπείραμεν	σπείρω	V-AAI-1P	01	07	01,02,03,04,05,06,07	εἰ ἡμεῖς ὑμῖν τὰ πνευματικὰ ==ἐσπείραμεν== μέγα	suggested-span	neutral finite-anchor region
+1corintios	9	11	C2	13	θερίσομεν	θερίζω	V-FAI-1P	08	13	08,09,10,11,12,13	εἰ ἡμεῖς ὑμῶν τὰ σαρκικὰ ==θερίσομεν==	suggested-span	migrated post-finite tail beginning with εἰ
 1corintios	9	12	C1	06	μετέχουσιν	μετέχω	V-PAI-3P	01	11	01,02,03,04,05,06,07,08,09,10,11	εἰ ἄλλοι τῆς ὑμῶν ἐξουσίας ==μετέχουσιν== οὐ μᾶλλον ἡμεῖς ἀλλʼ οὐκ	suggested-span	neutral finite-anchor region
 1corintios	9	12	C2	12	ἐχρησάμεθα	χράομαι	V-AMI-1P	12	17	12,13,14,15,16,17	==ἐχρησάμεθα== τῇ ἐξουσίᾳ ταύτῃ ἀλλὰ πάντα	suggested-span	neutral finite-anchor region
-1corintios	9	12	C3	18	στέγομεν	στέγω	V-PAI-1P	18	22	18,19,20,21,22	==στέγομεν== ἵνα μή τινα ἐγκοπὴν	suggested-span	neutral finite-anchor region
-1corintios	9	12	C4	23	δῶμεν	δίδωμι	V-AAS-1P	23	27	23,24,25,26,27	==δῶμεν== τῷ εὐαγγελίῳ τοῦ χριστοῦ	suggested-span	neutral finite-anchor region
-1corintios	9	13	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	11	01,02,03,04,05,06,07,08,09,10,11	οὐκ ==οἴδατε== ὅτι οἱ τὰ ἱερὰ ἐργαζόμενοι τὰ ἐκ τοῦ ἱεροῦ	suggested-span	neutral finite-anchor region
-1corintios	9	13	C2	12	ἐσθίουσιν	ἐσθίω	V-PAI-3P	12	18	12,13,14,15,16,17,18	==ἐσθίουσιν== οἱ τῷ θυσιαστηρίῳ παρεδρεύοντες τῷ θυσιαστηρίῳ	suggested-span	neutral finite-anchor region
+1corintios	9	12	C3	18	στέγομεν	στέγω	V-PAI-1P	18	18	18	==στέγομεν==	suggested-span	neutral finite-anchor region
+1corintios	9	12	C4	23	δῶμεν	δίδωμι	V-AAS-1P	19	27	19,20,21,22,23,24,25,26,27	ἵνα μή τινα ἐγκοπὴν ==δῶμεν== τῷ εὐαγγελίῳ τοῦ χριστοῦ	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	9	13	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	02	01,02	οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	9	13	C2	12	ἐσθίουσιν	ἐσθίω	V-PAI-3P	03	18	03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	ὅτι οἱ τὰ ἱερὰ ἐργαζόμενοι τὰ ἐκ τοῦ ἱεροῦ ==ἐσθίουσιν== οἱ τῷ θυσιαστηρίῳ παρεδρεύοντες τῷ θυσιαστηρίῳ	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	9	13	C3	19	συμμερίζονται	συμμερίζομαι	V-PMI-3P	19	19	19	==συμμερίζονται==	suggested-span	neutral finite-anchor region
 1corintios	9	14	C1	05	διέταξεν	διατάσσω	V-AAI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	οὕτως καὶ ὁ κύριος ==διέταξεν== τοῖς τὸ εὐαγγέλιον καταγγέλλουσιν ἐκ τοῦ εὐαγγελίου ζῆν	suggested-span	neutral finite-anchor region
 1corintios	9	15	C1	04	κέχρημαι	χράομαι	V-XMI-1S	01	07	01,02,03,04,05,06,07	ἐγὼ δὲ οὐ ==κέχρημαι== οὐδενὶ τούτων οὐκ	suggested-span	neutral finite-anchor region
-1corintios	9	15	C2	08	ἔγραψα	γράφω	V-AAI-1S	08	12	08,09,10,11,12	==ἔγραψα== δὲ ταῦτα ἵνα οὕτως	suggested-span	neutral finite-anchor region
-1corintios	9	15	C3	13	γένηται	γίνομαι	V-AMS-3S	13	25	13,14,15,16,17,18,19,20,21,22,23,24,25	==γένηται== ἐν ἐμοί καλὸν γάρ μοι μᾶλλον ἀποθανεῖν ἤ— τὸ καύχημά μου οὐδεὶς	suggested-span	neutral finite-anchor region
+1corintios	9	15	C2	08	ἔγραψα	γράφω	V-AAI-1S	08	10	08,09,10	==ἔγραψα== δὲ ταῦτα	suggested-span	neutral finite-anchor region
+1corintios	9	15	C3	13	γένηται	γίνομαι	V-AMS-3S	11	25	11,12,13,14,15,16,17,18,19,20,21,22,23,24,25	ἵνα οὕτως ==γένηται== ἐν ἐμοί καλὸν γάρ μοι μᾶλλον ἀποθανεῖν ἤ— τὸ καύχημά μου οὐδεὶς	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	9	15	C4	26	κενώσει	κενόω	V-FAI-3S	26	26	26	==κενώσει==	suggested-span	neutral finite-anchor region
 1corintios	9	16	C1	03	εὐαγγελίζωμαι	εὐαγγελίζω	V-PMS-1S	01	04	01,02,03,04	ἐὰν γὰρ ==εὐαγγελίζωμαι== οὐκ	suggested-span	neutral finite-anchor region
 1corintios	9	16	C2	05	ἔστιν	εἰμί	V-PAI-3S	05	10	05,06,07,08,09,10	==ἔστιν== μοι καύχημα ἀνάγκη γάρ μοι	suggested-span	neutral finite-anchor region
 1corintios	9	16	C3	11	ἐπίκειται	ἐπίκειμαι	V-PMI-3S	11	14	11,12,13,14	==ἐπίκειται== οὐαὶ γάρ μοί	suggested-span	neutral finite-anchor region
-1corintios	9	16	C4	15	ἐστιν	εἰμί	V-PAI-3S	15	17	15,16,17	==ἐστιν== ἐὰν μὴ	suggested-span	neutral finite-anchor region
-1corintios	9	16	C5	18	εὐαγγελίσωμαι	εὐαγγελίζω	V-AMS-1S	18	18	18	==εὐαγγελίσωμαι==	suggested-span	neutral finite-anchor region
+1corintios	9	16	C4	15	ἐστιν	εἰμί	V-PAI-3S	15	15	15	==ἐστιν==	suggested-span	neutral finite-anchor region
+1corintios	9	16	C5	18	εὐαγγελίσωμαι	εὐαγγελίζω	V-AMS-1S	16	18	16,17,18	ἐὰν μὴ ==εὐαγγελίσωμαι==	suggested-span	migrated post-finite tail beginning with ἐὰν
 1corintios	9	17	C1	05	πράσσω	πράσσω	V-PAI-1S	01	06	01,02,03,04,05,06	εἰ γὰρ ἑκὼν τοῦτο ==πράσσω== μισθὸν	suggested-span	neutral finite-anchor region
-1corintios	9	17	C2	07	ἔχω	ἔχω	V-PAI-1S	07	11	07,08,09,10,11	==ἔχω== εἰ δὲ ἄκων οἰκονομίαν	suggested-span	neutral finite-anchor region
-1corintios	9	17	C3	12	πεπίστευμαι	πιστεύω	V-XPI-1S	12	12	12	==πεπίστευμαι==	suggested-span	neutral finite-anchor region
-1corintios	9	18	C1	04	ἐστιν	εἰμί	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	τίς οὖν μού ==ἐστιν== ὁ μισθός ἵνα εὐαγγελιζόμενος ἀδάπανον	suggested-span	neutral finite-anchor region
-1corintios	9	18	C2	10	θήσω	τίθημι	V-AAS-1S	10	22	10,11,12,13,14,15,16,17,18,19,20,21,22	==θήσω== τὸ εὐαγγέλιον εἰς τὸ μὴ καταχρήσασθαι τῇ ἐξουσίᾳ μου ἐν τῷ εὐαγγελίῳ	suggested-span	neutral finite-anchor region
-1corintios	9	19	C1	08	ἐδούλωσα	δουλόω	V-AAI-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	ἐλεύθερος γὰρ ὢν ἐκ πάντων πᾶσιν ἐμαυτὸν ==ἐδούλωσα== ἵνα τοὺς πλείονας	suggested-span	neutral finite-anchor region
-1corintios	9	19	C2	12	κερδήσω	κερδαίνω	V-AAS-1S	12	12	12	==κερδήσω==	suggested-span	neutral finite-anchor region
+1corintios	9	17	C2	07	ἔχω	ἔχω	V-PAI-1S	07	07	07	==ἔχω==	suggested-span	neutral finite-anchor region
+1corintios	9	17	C3	12	πεπίστευμαι	πιστεύω	V-XPI-1S	08	12	08,09,10,11,12	εἰ δὲ ἄκων οἰκονομίαν ==πεπίστευμαι==	suggested-span	migrated post-finite tail beginning with εἰ
+1corintios	9	18	C1	04	ἐστιν	εἰμί	V-PAI-3S	01	06	01,02,03,04,05,06	τίς οὖν μού ==ἐστιν== ὁ μισθός	suggested-span	neutral finite-anchor region
+1corintios	9	18	C2	10	θήσω	τίθημι	V-AAS-1S	07	22	07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22	ἵνα εὐαγγελιζόμενος ἀδάπανον ==θήσω== τὸ εὐαγγέλιον εἰς τὸ μὴ καταχρήσασθαι τῇ ἐξουσίᾳ μου ἐν τῷ εὐαγγελίῳ	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	9	19	C1	08	ἐδούλωσα	δουλόω	V-AAI-1S	01	08	01,02,03,04,05,06,07,08	ἐλεύθερος γὰρ ὢν ἐκ πάντων πᾶσιν ἐμαυτὸν ==ἐδούλωσα==	suggested-span	neutral finite-anchor region
+1corintios	9	19	C2	12	κερδήσω	κερδαίνω	V-AAS-1S	09	12	09,10,11,12	ἵνα τοὺς πλείονας ==κερδήσω==	suggested-span	migrated post-finite tail beginning with ἵνα
 1corintios	9	2	C1	04	εἰμὶ	εἰμί	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	εἰ ἄλλοις οὐκ ==εἰμὶ== ἀπόστολος ἀλλά γε ὑμῖν	suggested-span	neutral finite-anchor region
 1corintios	9	2	C2	09	εἰμι	εἰμί	V-PAI-1S	09	16	09,10,11,12,13,14,15,16	==εἰμι== ἡ γὰρ σφραγίς μου τῆς ἀποστολῆς ὑμεῖς	suggested-span	neutral finite-anchor region
 1corintios	9	2	C3	17	ἐστε	εἰμί	V-PAI-2P	17	19	17,18,19	==ἐστε== ἐν κυρίῳ	suggested-span	neutral finite-anchor region
-1corintios	9	20	C1	02	ἐγενόμην	γίνομαι	V-AMI-1S	01	08	01,02,03,04,05,06,07,08	καὶ ==ἐγενόμην== τοῖς ἰουδαίοις ὡς ἰουδαῖος ἵνα ἰουδαίους	suggested-span	neutral finite-anchor region
-1corintios	9	20	C2	09	κερδήσω	κερδαίνω	V-AAS-1S	09	24	09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24	==κερδήσω== τοῖς ὑπὸ νόμον ὡς ὑπὸ νόμον μὴ ὢν αὐτὸς ὑπὸ νόμον ἵνα τοὺς ὑπὸ νόμον	suggested-span	neutral finite-anchor region
-1corintios	9	20	C3	25	κερδήσω	κερδαίνω	V-AAS-1S	25	25	25	==κερδήσω==	suggested-span	neutral finite-anchor region
+1corintios	9	20	C1	02	ἐγενόμην	γίνομαι	V-AMI-1S	01	04	01,02,03,04	καὶ ==ἐγενόμην== τοῖς ἰουδαίοις	suggested-span	neutral finite-anchor region
+1corintios	9	20	C2	09	κερδήσω	κερδαίνω	V-AAS-1S	05	12	05,06,07,08,09,10,11,12	ὡς ἰουδαῖος ἵνα ἰουδαίους ==κερδήσω== τοῖς ὑπὸ νόμον	suggested-span	migrated post-finite tail beginning with ὡς
+1corintios	9	20	C3	25	κερδήσω	κερδαίνω	V-AAS-1S	13	25	13,14,15,16,17,18,19,20,21,22,23,24,25	ὡς ὑπὸ νόμον μὴ ὢν αὐτὸς ὑπὸ νόμον ἵνα τοὺς ὑπὸ νόμον ==κερδήσω==	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	9	21	C1	13	κερδάνω	κερδαίνω	V-AAS-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	τοῖς ἀνόμοις ὡς ἄνομος μὴ ὢν ἄνομος θεοῦ ἀλλʼ ἔννομος χριστοῦ ἵνα ==κερδάνω== τοὺς ἀνόμους	suggested-span	neutral finite-anchor region
-1corintios	9	22	C1	01	ἐγενόμην	γίνομαι	V-AMI-1S	01	07	01,02,03,04,05,06,07	==ἐγενόμην== τοῖς ἀσθενέσιν ἀσθενής ἵνα τοὺς ἀσθενεῖς	suggested-span	neutral finite-anchor region
-1corintios	9	22	C2	08	κερδήσω	κερδαίνω	V-AAS-1S	08	10	08,09,10	==κερδήσω== τοῖς πᾶσιν	suggested-span	neutral finite-anchor region
-1corintios	9	22	C3	11	γέγονα	γίνομαι	V-XAI-1S	11	15	11,12,13,14,15	==γέγονα== πάντα ἵνα πάντως τινὰς	suggested-span	neutral finite-anchor region
-1corintios	9	22	C4	16	σώσω	σῴζω	V-AAS-1S	16	16	16	==σώσω==	suggested-span	neutral finite-anchor region
-1corintios	9	23	C1	03	ποιῶ	ποιέω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	πάντα δὲ ==ποιῶ== διὰ τὸ εὐαγγέλιον ἵνα συγκοινωνὸς αὐτοῦ	suggested-span	neutral finite-anchor region
-1corintios	9	23	C2	10	γένωμαι	γίνομαι	V-AMS-1S	10	10	10	==γένωμαι==	suggested-span	neutral finite-anchor region
-1corintios	9	24	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	09	01,02,03,04,05,06,07,08,09	οὐκ ==οἴδατε== ὅτι οἱ ἐν σταδίῳ τρέχοντες πάντες μὲν	suggested-span	neutral finite-anchor region
-1corintios	9	24	C2	10	τρέχουσιν	τρέχω	V-PAI-3P	10	12	10,11,12	==τρέχουσιν== εἷς δὲ	suggested-span	neutral finite-anchor region
+1corintios	9	22	C1	01	ἐγενόμην	γίνομαι	V-AMI-1S	01	04	01,02,03,04	==ἐγενόμην== τοῖς ἀσθενέσιν ἀσθενής	suggested-span	neutral finite-anchor region
+1corintios	9	22	C2	08	κερδήσω	κερδαίνω	V-AAS-1S	05	10	05,06,07,08,09,10	ἵνα τοὺς ἀσθενεῖς ==κερδήσω== τοῖς πᾶσιν	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	9	22	C3	11	γέγονα	γίνομαι	V-XAI-1S	11	12	11,12	==γέγονα== πάντα	suggested-span	neutral finite-anchor region
+1corintios	9	22	C4	16	σώσω	σῴζω	V-AAS-1S	13	16	13,14,15,16	ἵνα πάντως τινὰς ==σώσω==	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	9	23	C1	03	ποιῶ	ποιέω	V-PAI-1S	01	06	01,02,03,04,05,06	πάντα δὲ ==ποιῶ== διὰ τὸ εὐαγγέλιον	suggested-span	neutral finite-anchor region
+1corintios	9	23	C2	10	γένωμαι	γίνομαι	V-AMS-1S	07	10	07,08,09,10	ἵνα συγκοινωνὸς αὐτοῦ ==γένωμαι==	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	9	24	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	02	01,02	οὐκ ==οἴδατε==	suggested-span	neutral finite-anchor region
+1corintios	9	24	C2	10	τρέχουσιν	τρέχω	V-PAI-3P	03	12	03,04,05,06,07,08,09,10,11,12	ὅτι οἱ ἐν σταδίῳ τρέχοντες πάντες μὲν ==τρέχουσιν== εἷς δὲ	suggested-span	migrated post-finite tail beginning with ὅτι
 1corintios	9	24	C3	13	λαμβάνει	λαμβάνω	V-PAI-3S	13	16	13,14,15,16	==λαμβάνει== τὸ βραβεῖον οὕτως	suggested-span	neutral finite-anchor region
 1corintios	9	24	C4	17	τρέχετε	τρέχω	V-PAD-2P	17	17	17	==τρέχετε==	suggested-span	neutral finite-anchor region
 1corintios	9	24	C5	19	καταλάβητε	καταλαμβάνω	V-AAS-2P	18	19	18,19	ἵνα ==καταλάβητε==	suggested-span	migrated subordinate connector ἵνα
-1corintios	9	25	C1	06	ἐγκρατεύεται	ἐγκρατεύομαι	V-PMI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	πᾶς δὲ ὁ ἀγωνιζόμενος πάντα ==ἐγκρατεύεται== ἐκεῖνοι μὲν οὖν ἵνα φθαρτὸν στέφανον	suggested-span	neutral finite-anchor region
-1corintios	9	25	C2	13	λάβωσιν	λαμβάνω	V-AAS-3P	13	16	13,14,15,16	==λάβωσιν== ἡμεῖς δὲ ἄφθαρτον	suggested-span	neutral finite-anchor region
-1corintios	9	26	C1	04	τρέχω	τρέχω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	ἐγὼ τοίνυν οὕτως ==τρέχω== ὡς οὐκ ἀδήλως οὕτως	suggested-span	neutral finite-anchor region
-1corintios	9	26	C2	09	πυκτεύω	πυκτεύω	V-PAI-1S	09	13	09,10,11,12,13	==πυκτεύω== ὡς οὐκ ἀέρα δέρων	suggested-span	neutral finite-anchor region
+1corintios	9	25	C1	06	ἐγκρατεύεται	ἐγκρατεύομαι	V-PMI-3S	01	09	01,02,03,04,05,06,07,08,09	πᾶς δὲ ὁ ἀγωνιζόμενος πάντα ==ἐγκρατεύεται== ἐκεῖνοι μὲν οὖν	suggested-span	neutral finite-anchor region
+1corintios	9	25	C2	13	λάβωσιν	λαμβάνω	V-AAS-3P	10	16	10,11,12,13,14,15,16	ἵνα φθαρτὸν στέφανον ==λάβωσιν== ἡμεῖς δὲ ἄφθαρτον	suggested-span	migrated post-finite tail beginning with ἵνα
+1corintios	9	26	C1	04	τρέχω	τρέχω	V-PAI-1S	01	04	01,02,03,04	ἐγὼ τοίνυν οὕτως ==τρέχω==	suggested-span	neutral finite-anchor region
+1corintios	9	26	C2	09	πυκτεύω	πυκτεύω	V-PAI-1S	05	13	05,06,07,08,09,10,11,12,13	ὡς οὐκ ἀδήλως οὕτως ==πυκτεύω== ὡς οὐκ ἀέρα δέρων	suggested-span	migrated post-finite tail beginning with ὡς
 1corintios	9	27	C1	02	ὑπωπιάζω	ὑπωπιάζω	V-PAI-1S	01	06	01,02,03,04,05,06	ἀλλὰ ==ὑπωπιάζω== μου τὸ σῶμα καὶ	suggested-span	neutral finite-anchor region
 1corintios	9	27	C2	07	δουλαγωγῶ	δουλαγωγέω	V-PAI-1S	07	13	07,08,09,10,11,12,13	==δουλαγωγῶ== μή πως ἄλλοις κηρύξας αὐτὸς ἀδόκιμος	suggested-span	neutral finite-anchor region
 1corintios	9	27	C3	14	γένωμαι	γίνομαι	V-AMS-1S	14	14	14	==γένωμαι==	suggested-span	neutral finite-anchor region
