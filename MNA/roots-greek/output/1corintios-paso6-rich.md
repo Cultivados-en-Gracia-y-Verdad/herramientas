@@ -9,9 +9,13 @@
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==εὐχαριστῶ== τῷ θεῷ μου πάντοτε περὶ ὑμῶν ἐπὶ τῇ χάριτι τοῦ θεοῦ τῇ δοθείσῃ ὑμῖν ἐν χριστῷ ἰησοῦ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -32,9 +36,15 @@ C1. ==εὐχαριστῶ== τῷ θεῷ μου πάντοτε περὶ ὑμ
 - cn1. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὅτι) ἐν παντὶ ==ἐπλουτίσθητε== ἐν αὐτῷ ἐν παντὶ λόγῳ (καὶ) πάσῃ γνώσει
+
+### Conexiones entre versículos
+
+- cn1. ὅτι | posible conexión hacia 1corintios 1:4 | contenido/explicación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -54,9 +64,15 @@ C1. (ὅτι) ἐν παντὶ ==ἐπλουτίσθητε== ἐν αὐτῷ �
 
 - cn1. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καθὼς) τὸ μαρτύριον τοῦ χριστοῦ ==ἐβεβαιώθη== ἐν ὑμῖν
+
+### Conexiones entre versículos
+
+- cn1. καθὼς | posible conexión hacia 1corintios 1:5 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -77,9 +93,15 @@ C1. (καθὼς) τὸ μαρτύριον τοῦ χριστοῦ ==ἐβεβα
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. ἕως | subordinante | temporal | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὃς (καὶ) ==βεβαιώσει== ὑμᾶς (ἕως) τέλους ἀνεγκλήτους ἐν τῇ ἡμέρᾳ τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 1:7 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -99,9 +121,13 @@ C1. ὃς (καὶ) ==βεβαιώσει== ὑμᾶς (ἕως) τέλους ἀ
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πιστὸς ὁ θεὸς διʼ οὗ ==ἐκλήθητε== εἰς κοινωνίαν τοῦ υἱοῦ αὐτοῦ ἰησοῦ χριστοῦ τοῦ κυρίου ἡμῶν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -130,12 +156,16 @@ C1. πιστὸς ὁ θεὸς διʼ οὗ ==ἐκλήθητε== εἰς κο�
 - cn5. δὲ | coordinante | coordinación | certeza: certain
 - cn6. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==παρακαλῶ== (δὲ) ὑμᾶς ἀδελφοί διὰ τοῦ ὀνόματος τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ (ἵνα) τὸ αὐτὸ
     C2. ==λέγητε== πάντες
         C3. (καὶ) (μὴ) ==ᾖ== ἐν ὑμῖν σχίσματα
 C4. ==ἦτε== (δὲ) κατηρτισμένοι ἐν τῷ αὐτῷ νοῒ (καὶ) ἐν τῇ αὐτῇ γνώμῃ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -160,10 +190,14 @@ C4. ==ἦτε== (δὲ) κατηρτισμένοι ἐν τῷ αὐτῷ νο�
 - cn1. γάρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἐδηλώθη== (γάρ) μοι περὶ ὑμῶν ἀδελφοί μου ὑπὸ τῶν Χλόης (ὅτι) ἔριδες ἐν ὑμῖν
     C2. ==εἰσιν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -190,11 +224,15 @@ C1. ==ἐδηλώθη== (γάρ) μοι περὶ ὑμῶν ἀδελφοί μ�
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 - cn5. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==λέγω== (δὲ) τοῦτο (ὅτι) ἕκαστος ὑμῶν
     C2. ==λέγει== ἐγὼ μέν
 C3. ==εἰμι== παύλου ἐγὼ (δὲ) ἀπολλῶ ἐγὼ (δὲ) κηφᾶ ἐγὼ (δὲ) χριστοῦ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -219,11 +257,15 @@ C3. ==εἰμι== παύλου ἐγὼ (δὲ) ἀπολλῶ ἐγὼ (δὲ) 
 - cn1. μὴ | negación | negación | certeza: certain
 - cn2. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==μεμέρισται== ὁ χριστός (μὴ) παῦλος
 C2. ==ἐσταυρώθη== ὑπὲρ ὑμῶν (ἢ) εἰς τὸ ὄνομα παύλου
     C3. ==ἐβαπτίσθητε==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -249,10 +291,14 @@ C2. ==ἐσταυρώθη== ὑπὲρ ὑμῶν (ἢ) εἰς τὸ ὄνομ�
 - cn3. μὴ | negación | negación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==εὐχαριστῶ== (ὅτι) οὐδένα ὑμῶν
     C2. ==ἐβάπτισα== (εἰ) (μὴ) κρίσπον (καὶ) γάϊον
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -276,10 +322,16 @@ C1. ==εὐχαριστῶ== (ὅτι) οὐδένα ὑμῶν
 - cn2. μή | negación | negación | certeza: certain
 - cn3. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἵνα) (μή) τις ==εἴπῃ== (ὅτι) εἰς τὸ ἐμὸν ὄνομα
     C2. ==ἐβαπτίσθητε==
+
+### Conexiones entre versículos
+
+- cn1. ἵνα | posible conexión hacia 1corintios 1:14 | propósito/resultado | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -305,11 +357,15 @@ C1. (ἵνα) (μή) τις ==εἴπῃ== (ὅτι) εἰς τὸ ἐμὸν �
 - cn3. οὐκ | negación | negación | certeza: certain
 - cn4. εἴ | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἐβάπτισα== (δὲ) (καὶ) τὸν στεφανᾶ οἶκον λοιπὸν
     C2. (οὐκ) ==οἶδα== (εἴ) τινα ἄλλον
         C3. ==ἐβάπτισα==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -339,10 +395,16 @@ C1. ==ἐβάπτισα== (δὲ) (καὶ) τὸν στεφανᾶ οἶκον 
 - cn5. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn6. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) (γὰρ) ==ἀπέστειλέν== με χριστὸς βαπτίζειν (ἀλλὰ) εὐαγγελίζεσθαι (οὐκ) ἐν σοφίᾳ λόγου
     C2. (ἵνα) (μὴ) ==κενωθῇ== ὁ σταυρὸς τοῦ χριστοῦ
+
+### Conexiones entre versículos
+
+- cn2. γὰρ | posible conexión hacia 1corintios 1:16 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -367,10 +429,16 @@ C1. (οὐ) (γὰρ) ==ἀπέστειλέν== με χριστὸς βαπτί�
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ λόγος (γὰρ) ὁ τοῦ σταυροῦ τοῖς μὲν ἀπολλυμένοις μωρία ==ἐστίν== τοῖς (δὲ) σῳζομένοις ἡμῖν δύναμις θεοῦ
     C2. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 1:17 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -394,11 +462,15 @@ C1. ὁ λόγος (γὰρ) ὁ τοῦ σταυροῦ τοῖς μὲν ἀπ
 - cn1. γάρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==γέγραπται== (γάρ)
     C2. ==ἀπολῶ== τὴν σοφίαν τῶν σοφῶν (καὶ) τὴν σύνεσιν τῶν συνετῶν
         C3. ==ἀθετήσω==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -420,9 +492,13 @@ C1. ==γέγραπται== (γάρ)
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ποῦ σοφός ποῦ γραμματεύς ποῦ συζητητὴς τοῦ αἰῶνος τούτου οὐχὶ ==ἐμώρανεν== ὁ θεὸς τὴν σοφίαν τοῦ κόσμου
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -447,10 +523,18 @@ C1. ποῦ σοφός ποῦ γραμματεύς ποῦ συζητητὴς 
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn3. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐπειδὴ) (γὰρ) ἐν τῇ σοφίᾳ τοῦ θεοῦ (οὐκ) ==ἔγνω== ὁ κόσμος διὰ τῆς σοφίας τὸν θεόν
 C2. ==εὐδόκησεν== ὁ θεὸς διὰ τῆς μωρίας τοῦ κηρύγματος σῶσαι τοὺς πιστεύοντας
+
+### Conexiones entre versículos
+
+- cn1. ἐπειδὴ | posible conexión hacia 1corintios 1:20 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. γὰρ | posible conexión hacia 1corintios 1:20 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -474,10 +558,18 @@ C2. ==εὐδόκησεν== ὁ θεὸς διὰ τῆς μωρίας τοῦ �
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐπειδὴ) (καὶ) ἰουδαῖοι σημεῖα ==αἰτοῦσιν== (καὶ) ἕλληνες σοφίαν
     C2. ==ζητοῦσιν==
+
+### Conexiones entre versículos
+
+- cn1. ἐπειδὴ | posible conexión hacia 1corintios 1:21 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. καὶ | posible conexión hacia 1corintios 1:21 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -500,9 +592,15 @@ C1. (ἐπειδὴ) (καὶ) ἰουδαῖοι σημεῖα ==αἰτοῦσ
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡμεῖς (δὲ) ==κηρύσσομεν== χριστὸν ἐσταυρωμένον ἰουδαίοις μὲν σκάνδαλον ἔθνεσιν (δὲ) μωρίαν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 1:22 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -523,9 +621,15 @@ C1. ἡμεῖς (δὲ) ==κηρύσσομεν== χριστὸν ἐσταυρ�
 - cn1. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὅτι) τὸ μωρὸν τοῦ θεοῦ σοφώτερον τῶν ἀνθρώπων ==ἐστίν== (καὶ) τὸ ἀσθενὲς τοῦ θεοῦ ἰσχυρότερον τῶν ἀνθρώπων
+
+### Conexiones entre versículos
+
+- cn1. ὅτι | posible conexión hacia 1corintios 1:24 | contenido/explicación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -549,9 +653,13 @@ C1. (ὅτι) τὸ μωρὸν τοῦ θεοῦ σοφώτερον τῶν ἀ
 - cn4. οὐ | negación | negación | certeza: certain
 - cn5. οὐ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==βλέπετε== (γὰρ) τὴν κλῆσιν ὑμῶν ἀδελφοί (ὅτι) (οὐ) πολλοὶ σοφοὶ κατὰ σάρκα (οὐ) πολλοὶ δυνατοί (οὐ) πολλοὶ εὐγενεῖς
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -577,12 +685,18 @@ C1. ==βλέπετε== (γὰρ) τὴν κλῆσιν ὑμῶν ἀδελφο�
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλὰ) τὰ μωρὰ τοῦ κόσμου ==ἐξελέξατο== ὁ θεός
     C2. (ἵνα) ==καταισχύνῃ== τοὺς σοφούς (καὶ) τὰ ἀσθενῆ τοῦ κόσμου
         C3. ==ἐξελέξατο== ὁ θεός
             C4. (ἵνα) ==καταισχύνῃ== τὰ ἰσχυρά
+
+### Conexiones entre versículos
+
+- cn1. ἀλλὰ | posible conexión hacia 1corintios 1:26 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -612,10 +726,18 @@ C1. (ἀλλὰ) τὰ μωρὰ τοῦ κόσμου ==ἐξελέξατο== �
 - cn3. μὴ | negación | negación | certeza: certain
 - cn4. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) τὰ ἀγενῆ τοῦ κόσμου (καὶ) τὰ ἐξουθενημένα ==ἐξελέξατο== ὁ θεός τὰ (μὴ) ὄντα (ἵνα) τὰ ὄντα
     C2. ==καταργήσῃ==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 1:27 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καὶ | posible conexión hacia 1corintios 1:27 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -637,9 +759,15 @@ C1. (καὶ) τὰ ἀγενῆ τοῦ κόσμου (καὶ) τὰ ἐξου�
 - cn1. ὅπως | subordinante | propósito | certeza: certain
 - cn2. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὅπως) (μὴ) ==καυχήσηται== πᾶσα σὰρξ ἐνώπιον τοῦ θεοῦ
+
+### Conexiones entre versículos
+
+- cn1. ὅπως | posible conexión hacia 1corintios 1:28 | propósito | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -663,10 +791,16 @@ C1. (ὅπως) (μὴ) ==καυχήσηται== πᾶσα σὰρξ ἐνώπι
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐξ αὐτοῦ (δὲ) ὑμεῖς ==ἐστε== ἐν χριστῷ ἰησοῦ ὃς
 C2. ==ἐγενήθη== σοφία ἡμῖν ἀπὸ θεοῦ δικαιοσύνη (τε) (καὶ) ἁγιασμὸς (καὶ) ἀπολύτρωσις
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 1:29 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -690,10 +824,18 @@ C2. ==ἐγενήθη== σοφία ἡμῖν ἀπὸ θεοῦ δικαιοσ�
 - cn1. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn2. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἵνα) (καθὼς) ==γέγραπται== ὁ καυχώμενος ἐν κυρίῳ
 C2. ==καυχάσθω==
+
+### Conexiones entre versículos
+
+- cn1. ἵνα | posible conexión hacia 1corintios 1:30 | propósito/resultado | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καθὼς | posible conexión hacia 1corintios 1:30 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -717,9 +859,13 @@ C2. ==καυχάσθω==
 - cn1. οὐ | negación | negación | certeza: certain
 - cn2. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. κἀγὼ ἐλθὼν πρὸς ὑμᾶς ἀδελφοί ==ἦλθον== (οὐ) καθʼ ὑπεροχὴν λόγου (ἢ) σοφίας καταγγέλλων ὑμῖν τὸ μαρτύριον τοῦ θεοῦ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -745,9 +891,15 @@ C1. κἀγὼ ἐλθὼν πρὸς ὑμᾶς ἀδελφοί ==ἦλθον==
 - cn4. μὴ | negación | negación | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) (γὰρ) ==ἔκρινά== τι εἰδέναι ἐν ὑμῖν (εἰ) (μὴ) ἰησοῦν χριστὸν (καὶ) τοῦτον ἐσταυρωμένον
+
+### Conexiones entre versículos
+
+- cn2. γὰρ | posible conexión hacia 1corintios 2:1 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -768,9 +920,17 @@ C1. (οὐ) (γὰρ) ==ἔκρινά== τι εἰδέναι ἐν ὑμῖν (�
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. κἀγὼ ἐν ἀσθενείᾳ (καὶ) ἐν φόβῳ (καὶ) ἐν τρόμῳ πολλῷ ==ἐγενόμην== πρὸς ὑμᾶς
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 2:2 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καὶ | posible conexión hacia 1corintios 2:2 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -792,9 +952,15 @@ C1. κἀγὼ ἐν ἀσθενείᾳ (καὶ) ἐν φόβῳ (καὶ) ἐ�
 - cn2. μὴ | negación | negación | certeza: certain
 - cn3. ἀλλʼ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἵνα) ἡ πίστις ὑμῶν (μὴ) ==ᾖ== ἐν σοφίᾳ ἀνθρώπων (ἀλλʼ) ἐν δυνάμει θεοῦ
+
+### Conexiones entre versículos
+
+- cn1. ἵνα | posible conexión hacia 1corintios 2:4 | propósito/resultado | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -818,9 +984,15 @@ C1. (ἵνα) ἡ πίστις ὑμῶν (μὴ) ==ᾖ== ἐν σοφίᾳ ἀ�
 - cn3. οὐ | negación | negación | certeza: certain
 - cn4. οὐδὲ | coordinante | coordinación negativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. σοφίαν (δὲ) ==λαλοῦμεν== ἐν τοῖς τελείοις σοφίαν (δὲ) (οὐ) τοῦ αἰῶνος τούτου (οὐδὲ) τῶν ἀρχόντων τοῦ αἰῶνος τούτου τῶν καταργουμένων
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 2:5 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -842,10 +1014,16 @@ C1. σοφίαν (δὲ) ==λαλοῦμεν== ἐν τοῖς τελείοις 
 
 - cn1. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλὰ) ==λαλοῦμεν== θεοῦ σοφίαν ἐν μυστηρίῳ τὴν ἀποκεκρυμμένην ἣν
 C2. ==προώρισεν== ὁ θεὸς πρὸ τῶν αἰώνων εἰς δόξαν ἡμῶν
+
+### Conexiones entre versículos
+
+- cn1. ἀλλὰ | posible conexión hacia 1corintios 2:6 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -870,11 +1048,15 @@ C2. ==προώρισεν== ὁ θεὸς πρὸ τῶν αἰώνων εἰς �
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn3. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἣν οὐδεὶς τῶν ἀρχόντων τοῦ αἰῶνος τούτου ==ἔγνωκεν== (εἰ) (γὰρ)
     C2. ==ἔγνωσαν== (οὐκ) ἂν τὸν κύριον τῆς δόξης
 C3. ==ἐσταύρωσαν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -907,13 +1089,21 @@ C3. ==ἐσταύρωσαν==
 - cn6. καὶ | coordinante | coordinación | certeza: certain
 - cn7. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλὰ) (καθὼς) ==γέγραπται== ἃ ὀφθαλμὸς
 C2. (οὐκ) ==εἶδεν== (καὶ) οὖς
     C3. (οὐκ) ==ἤκουσεν== (καὶ) ἐπὶ καρδίαν ἀνθρώπου
         C4. (οὐκ) ==ἀνέβη== ὅσα
 C5. ==ἡτοίμασεν== ὁ θεὸς τοῖς ἀγαπῶσιν αὐτόν
+
+### Conexiones entre versículos
+
+- cn1. ἀλλὰ | posible conexión hacia 1corintios 2:8 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. καθὼς | posible conexión hacia 1corintios 2:8 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -940,10 +1130,16 @@ C5. ==ἡτοίμασεν== ὁ θεὸς τοῖς ἀγαπῶσιν αὐτό
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡμῖν (γὰρ) ==ἀπεκάλυψεν== ὁ θεὸς διὰ τοῦ πνεύματος τὸ (γὰρ) πνεῦμα πάντα
     C2. ==ἐραυνᾷ== (καὶ) τὰ βάθη τοῦ θεοῦ
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 2:9 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -970,10 +1166,16 @@ C1. ἡμῖν (γὰρ) ==ἀπεκάλυψεν== ὁ θεὸς διὰ τοῦ
 - cn5. εἰ | subordinante | condición | certeza: certain
 - cn6. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τίς (γὰρ) ==οἶδεν== ἀνθρώπων τὰ τοῦ ἀνθρώπου (εἰ) (μὴ) τὸ πνεῦμα τοῦ ἀνθρώπου τὸ ἐν αὐτῷ οὕτως (καὶ) τὰ τοῦ θεοῦ οὐδεὶς
     C2. ==ἔγνωκεν== (εἰ) (μὴ) τὸ πνεῦμα τοῦ θεοῦ
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 2:10 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -999,10 +1201,16 @@ C1. τίς (γὰρ) ==οἶδεν== ἀνθρώπων τὰ τοῦ ἀνθρώ
 - cn3. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn4. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡμεῖς (δὲ) (οὐ) τὸ πνεῦμα τοῦ κόσμου ==ἐλάβομεν== (ἀλλὰ) τὸ πνεῦμα τὸ ἐκ τοῦ θεοῦ
     C2. (ἵνα) ==εἰδῶμεν== τὰ ὑπὸ τοῦ θεοῦ χαρισθέντα ἡμῖν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 2:11 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1026,9 +1234,15 @@ C1. ἡμεῖς (δὲ) (οὐ) τὸ πνεῦμα τοῦ κόσμου ==ἐ�
 - cn2. οὐκ | negación | negación | certeza: certain
 - cn3. ἀλλʼ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἃ (καὶ) ==λαλοῦμεν== (οὐκ) ἐν διδακτοῖς ἀνθρωπίνης σοφίας λόγοις (ἀλλʼ) ἐν διδακτοῖς πνεύματος πνευματικοῖς πνευματικὰ συγκρίνοντες
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 2:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1057,12 +1271,18 @@ C1. ἃ (καὶ) ==λαλοῦμεν== (οὐκ) ἐν διδακτοῖς ἀ�
 - cn5. οὐ | negación | negación | certeza: certain
 - cn6. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ψυχικὸς (δὲ) ἄνθρωπος (οὐ) ==δέχεται== τὰ τοῦ πνεύματος τοῦ θεοῦ μωρία (γὰρ) αὐτῷ
     C2. ==ἐστίν==
         C3. (καὶ) (οὐ) ==δύναται== γνῶναι (ὅτι) πνευματικῶς
             C4. ==ἀνακρίνεται==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 2:13 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1087,10 +1307,16 @@ C1. ψυχικὸς (δὲ) ἄνθρωπος (οὐ) ==δέχεται== τὰ �
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ (δὲ) πνευματικὸς ==ἀνακρίνει== τὰ πάντα αὐτὸς (δὲ) ὑπʼ οὐδενὸς
     C2. ==ἀνακρίνεται==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 2:14 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1114,11 +1340,17 @@ C1. ὁ (δὲ) πνευματικὸς ==ἀνακρίνει== τὰ πάντα
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τίς (γὰρ) ==ἔγνω== νοῦν κυρίου ὃς
 C2. ==συμβιβάσει== αὐτόν ἡμεῖς (δὲ) νοῦν χριστοῦ
     C3. ==ἔχομεν==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 2:15 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1145,9 +1377,13 @@ C2. ==συμβιβάσει== αὐτόν ἡμεῖς (δὲ) νοῦν χρισ
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 - cn5. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. κἀγώ ἀδελφοί (οὐκ) ==ἠδυνήθην== λαλῆσαι ὑμῖν (ὡς) πνευματικοῖς (ἀλλʼ) (ὡς) σαρκίνοις (ὡς) νηπίοις ἐν χριστῷ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -1172,11 +1408,15 @@ C1. κἀγώ ἀδελφοί (οὐκ) ==ἠδυνήθην== λαλῆσαι �
 - cn3. ἀλλʼ | coordinante | contraste | certeza: certain
 - cn4. οὐδὲ | coordinante | coordinación negativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. γάλα ὑμᾶς ==ἐπότισα== (οὐ) βρῶμα οὔπω (γὰρ)
     C2. ==ἐδύνασθε== (ἀλλʼ) (οὐδὲ) ἔτι νῦν
         C3. ==δύνασθε==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -1203,11 +1443,17 @@ C1. γάλα ὑμᾶς ==ἐπότισα== (οὐ) βρῶμα οὔπω (γὰ
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἔτι (γὰρ) σαρκικοί ==ἐστε== ὅπου (γὰρ) ἐν ὑμῖν ζῆλος (καὶ) ἔρις οὐχὶ σαρκικοί
     C2. ==ἐστε== (καὶ) κατὰ ἄνθρωπον
         C3. ==περιπατεῖτε==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 3:2 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1234,11 +1480,17 @@ C1. ἔτι (γὰρ) σαρκικοί ==ἐστε== ὅπου (γὰρ) ἐν �
 - cn3. δέ | coordinante | coordinación | certeza: certain
 - cn4. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὅταν) (γὰρ) ==λέγῃ== τις ἐγὼ μέν
 C2. ==εἰμι== παύλου ἕτερος (δέ) ἐγὼ ἀπολλῶ (οὐκ) ἄνθρωποί
     C3. ==ἐστε==
+
+### Conexiones entre versículos
+
+- cn2. γὰρ | posible conexión hacia 1corintios 3:3 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1266,12 +1518,18 @@ C2. ==εἰμι== παύλου ἕτερος (δέ) ἐγὼ ἀπολλῶ (ο�
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τί (οὖν) ==ἐστιν== ἀπολλῶς τί
     C2. (δέ) ==ἐστιν== παῦλος διάκονοι διʼ ὧν
 C3. ==ἐπιστεύσατε== (καὶ) ἑκάστῳ (ὡς) ὁ κύριος
     C4. ==ἔδωκεν==
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 3:4 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1296,11 +1554,15 @@ C3. ==ἐπιστεύσατε== (καὶ) ἑκάστῳ (ὡς) ὁ κύριο�
 
 - cn1. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐγὼ ==ἐφύτευσα== ἀπολλῶς
 C2. ==ἐπότισεν== (ἀλλὰ) ὁ θεὸς
     C3. ==ηὔξανεν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -1328,9 +1590,17 @@ C2. ==ἐπότισεν== (ἀλλὰ) ὁ θεὸς
 - cn3. οὔτε | coordinante | coordinación negativa | certeza: certain
 - cn4. ἀλλʼ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) (οὔτε) ὁ φυτεύων ==ἐστίν== τι (οὔτε) ὁ ποτίζων (ἀλλʼ) ὁ αὐξάνων θεός
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 3:6 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. οὔτε | posible conexión hacia 1corintios 3:6 | coordinación negativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1355,10 +1625,18 @@ C1. (ὥστε) (οὔτε) ὁ φυτεύων ==ἐστίν== τι (οὔτε) 
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ φυτεύων (δὲ) (καὶ) ὁ ποτίζων ἕν ==εἰσιν== ἕκαστος (δὲ) τὸν ἴδιον μισθὸν
     C2. ==λήμψεται== κατὰ τὸν ἴδιον κόπον
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 3:7 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καὶ | posible conexión hacia 1corintios 3:7 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1380,10 +1658,16 @@ C1. ὁ φυτεύων (δὲ) (καὶ) ὁ ποτίζων ἕν ==εἰσιν=
 
 - cn1. γάρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. θεοῦ (γάρ) ==ἐσμεν== συνεργοί θεοῦ γεώργιον θεοῦ οἰκοδομή
 C2. ==ἐστε==
+
+### Conexiones entre versículos
+
+- cn1. γάρ | posible conexión hacia 1corintios 3:8 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1410,12 +1694,18 @@ C2. ==ἐστε==
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. κατὰ τὴν χάριν τοῦ θεοῦ τὴν δοθεῖσάν μοι (ὡς) σοφὸς ἀρχιτέκτων θεμέλιον ==ἔθηκα== ἄλλος
     C2. (δὲ) ==ἐποικοδομεῖ== ἕκαστος
         C3. (δὲ) ==βλεπέτω== πῶς
 C4. ==ἐποικοδομεῖ==
+
+### Conexiones entre versículos
+
+- cn1. ὡς | posible conexión hacia 1corintios 3:9 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1441,10 +1731,16 @@ C4. ==ἐποικοδομεῖ==
 
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. θεμέλιον (γὰρ) ἄλλον οὐδεὶς ==δύναται== θεῖναι παρὰ τὸν κείμενον ὅς
 C2. ==ἐστιν== ἰησοῦς χριστός
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 3:10 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1466,9 +1762,17 @@ C2. ==ἐστιν== ἰησοῦς χριστός
 - cn1. εἰ | subordinante | condición | certeza: certain
 - cn2. δέ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δέ) τις ==ἐποικοδομεῖ== ἐπὶ τὸν θεμέλιον χρυσόν ἄργυρον λίθους τιμίους ξύλα χόρτον καλάμην
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 3:11 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δέ | posible conexión hacia 1corintios 3:11 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1494,13 +1798,17 @@ C1. (εἰ) (δέ) τις ==ἐποικοδομεῖ== ἐπὶ τὸν θεμέ
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἑκάστου τὸ ἔργον φανερὸν ==γενήσεται== ἡ (γὰρ) ἡμέρα
     C2. ==δηλώσει== (ὅτι) ἐν πυρὶ
         C3. ==ἀποκαλύπτεται== (καὶ) ἑκάστου τὸ ἔργον ὁποῖόν
             C4. ==ἐστιν== τὸ πῦρ αὐτὸ
 C5. ==δοκιμάσει==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -1526,11 +1834,17 @@ C5. ==δοκιμάσει==
 
 - cn1. εἴ | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴ) τινος τὸ ἔργον ==μενεῖ== ὃ
 C2. ==ἐποικοδόμησεν== μισθὸν
 C3. ==λήμψεται==
+
+### Conexiones entre versículos
+
+- cn1. εἴ | posible conexión hacia 1corintios 3:13 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1557,11 +1871,17 @@ C3. ==λήμψεται==
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴ) τινος τὸ ἔργον ==κατακαήσεται==
 C2. ==ζημιωθήσεται== αὐτὸς
     C3. (δὲ) ==σωθήσεται== οὕτως (δὲ) (ὡς) διὰ πυρός
+
+### Conexiones entre versículos
+
+- cn1. εἴ | posible conexión hacia 1corintios 3:14 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1587,11 +1907,15 @@ C2. ==ζημιωθήσεται== αὐτὸς
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐκ) ==οἴδατε== (ὅτι) ναὸς θεοῦ
     C2. ==ἐστε== (καὶ) τὸ πνεῦμα τοῦ θεοῦ
         C3. ==οἰκεῖ== ἐν ὑμῖν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -1617,12 +1941,18 @@ C1. (οὐκ) ==οἴδατε== (ὅτι) ναὸς θεοῦ
 - cn1. εἴ | subordinante | condición | certeza: certain
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴ) τις τὸν ναὸν τοῦ θεοῦ ==φθείρει==
 C2. ==φθερεῖ== τοῦτον ὁ θεός ὁ (γὰρ) ναὸς τοῦ θεοῦ ἅγιός
     C3. ==ἐστιν== οἵτινές
 C4. ==ἐστε== ὑμεῖς
+
+### Conexiones entre versículos
+
+- cn1. εἴ | posible conexión hacia 1corintios 3:16 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1650,12 +1980,16 @@ C4. ==ἐστε== ὑμεῖς
 - cn1. εἴ | subordinante | condición | certeza: certain
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. μηδεὶς ἑαυτὸν ==ἐξαπατάτω== (εἴ) τις
     C2. ==δοκεῖ== σοφὸς εἶναι ἐν ὑμῖν ἐν τῷ αἰῶνι τούτῳ μωρὸς
 C3. ==γενέσθω==
     C4. (ἵνα) ==γένηται== σοφός
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -1681,10 +2015,16 @@ C3. ==γενέσθω==
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. γάρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡ (γὰρ) σοφία τοῦ κόσμου τούτου μωρία παρὰ τῷ θεῷ ==ἐστιν==
 C2. ==γέγραπται== (γάρ) ὁ δρασσόμενος τοὺς σοφοὺς ἐν τῇ πανουργίᾳ αὐτῶν
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 3:18 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1707,10 +2047,16 @@ C2. ==γέγραπται== (γάρ) ὁ δρασσόμενος τοὺς σοφ�
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) πάλιν κύριος ==γινώσκει== τοὺς διαλογισμοὺς τῶν σοφῶν
     C2. (ὅτι) ==εἰσὶν== μάταιοι
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 3:19 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1733,10 +2079,16 @@ C1. (καὶ) πάλιν κύριος ==γινώσκει== τοὺς διαλο�
 - cn1. ὥστε | subordinante | resultado/inferencia | certeza: certain
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) μηδεὶς ==καυχάσθω== ἐν ἀνθρώποις πάντα (γὰρ) ὑμῶν
     C2. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 3:20 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1758,9 +2110,13 @@ C1. (ὥστε) μηδεὶς ==καυχάσθω== ἐν ἀνθρώποις π�
 - cn1. ὡς | subordinante | comparación/manera | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. οὕτως ἡμᾶς ==λογιζέσθω== ἄνθρωπος (ὡς) ὑπηρέτας χριστοῦ (καὶ) οἰκονόμους μυστηρίων θεοῦ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -1781,10 +2137,14 @@ C1. οὕτως ἡμᾶς ==λογιζέσθω== ἄνθρωπος (ὡς) ὑ�
 
 - cn1. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὧδε λοιπὸν ==ζητεῖται== ἐν τοῖς οἰκονόμοις (ἵνα) πιστός τις
     C2. ==εὑρεθῇ==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -1811,11 +2171,17 @@ C1. ὧδε λοιπὸν ==ζητεῖται== ἐν τοῖς οἰκονόμ�
 - cn4. ἀλλʼ | coordinante | contraste | certeza: certain
 - cn5. οὐδὲ | coordinante | coordinación negativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐμοὶ (δὲ) εἰς ἐλάχιστόν ==ἐστιν== (ἵνα) ὑφʼ ὑμῶν
     C2. ==ἀνακριθῶ== (ἢ) ὑπὸ ἀνθρωπίνης ἡμέρας (ἀλλʼ) (οὐδὲ) ἐμαυτὸν
         C3. ==ἀνακρίνω==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 4:2 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1843,11 +2209,17 @@ C1. ἐμοὶ (δὲ) εἰς ἐλάχιστόν ==ἐστιν== (ἵνα) ὑ
 - cn3. οὐκ | negación | negación | certeza: certain
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. οὐδὲν (γὰρ) ἐμαυτῷ ==σύνοιδα== (ἀλλʼ) (οὐκ) ἐν τούτῳ
     C2. ==δεδικαίωμαι== ὁ (δὲ) ἀνακρίνων με κύριός
         C3. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 4:3 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1878,13 +2250,19 @@ C1. οὐδὲν (γὰρ) ἐμαυτῷ ==σύνοιδα== (ἀλλʼ) (οὐ�
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 - cn6. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) (μὴ) πρὸ καιροῦ τι ==κρίνετε== (ἕως) ἂν
     C2. ==ἔλθῃ== ὁ κύριος ὃς
         C3. (καὶ) ==φωτίσει== τὰ κρυπτὰ τοῦ σκότους
             C4. (καὶ) ==φανερώσει== τὰς βουλὰς τῶν καρδιῶν (καὶ) τότε ὁ ἔπαινος
                 C5. ==γενήσεται== ἑκάστῳ ἀπὸ τοῦ θεοῦ
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 4:4 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1916,12 +2294,18 @@ C1. (ὥστε) (μὴ) πρὸ καιροῦ τι ==κρίνετε== (ἕως) 
 - cn5. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn6. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ταῦτα (δέ) ἀδελφοί ==μετεσχημάτισα== εἰς ἐμαυτὸν (καὶ) ἀπολλῶν διʼ ὑμᾶς (ἵνα) ἐν ἡμῖν
     C2. ==μάθητε== τό (μὴ) ὑπὲρ ἃ
 C3. ==γέγραπται== (ἵνα) (μὴ) εἷς ὑπὲρ τοῦ ἑνὸς
     C4. ==φυσιοῦσθε== κατὰ τοῦ ἑτέρου
+
+### Conexiones entre versículos
+
+- cn1. δέ | posible conexión hacia 1corintios 4:5 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1956,13 +2340,19 @@ C3. ==γέγραπται== (ἵνα) (μὴ) εἷς ὑπὲρ τοῦ ἑνὸ
 - cn7. ὡς | subordinante | comparación/manera | certeza: certain
 - cn8. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τίς (γάρ) σε ==διακρίνει== τί
     C2. (δὲ) ==ἔχεις== ὃ
 C3. (οὐκ) ==ἔλαβες==
     C4. (εἰ) (δὲ) (καὶ) ==ἔλαβες== τί
 C5. ==καυχᾶσαι== (ὡς) (μὴ) λαβών
+
+### Conexiones entre versículos
+
+- cn1. γάρ | posible conexión hacia 1corintios 4:6 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -1993,13 +2383,17 @@ C5. ==καυχᾶσαι== (ὡς) (μὴ) λαβών
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἤδη κεκορεσμένοι ==ἐστέ== ἤδη
 C2. ==ἐπλουτήσατε== χωρὶς ἡμῶν
 C3. ==ἐβασιλεύσατε== (καὶ) ὄφελόν γε
     C4. ==ἐβασιλεύσατε== (ἵνα) (καὶ) ἡμεῖς ὑμῖν
         C5. ==συμβασιλεύσωμεν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2029,11 +2423,15 @@ C3. ==ἐβασιλεύσατε== (καὶ) ὄφελόν γε
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==δοκῶ== (γάρ) ὁ θεὸς ἡμᾶς τοὺς ἀποστόλους ἐσχάτους
     C2. ==ἀπέδειξεν== (ὡς) ἐπιθανατίους (ὅτι) θέατρον
         C3. ==ἐγενήθημεν== τῷ κόσμῳ (καὶ) ἀγγέλοις (καὶ) ἀνθρώποις
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2063,13 +2461,19 @@ C1. ==δοκῶ== (γάρ) ὁ θεὸς ἡμᾶς τοὺς ἀποστόλο�
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἄχρι τῆς ἄρτι ὥρας (καὶ) ==πεινῶμεν==
     C2. (καὶ) ==διψῶμεν==
         C3. (καὶ) ==γυμνιτεύομεν==
             C4. (καὶ) ==κολαφιζόμεθα==
                 C5. (καὶ) ==ἀστατοῦμεν==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 4:10 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2098,11 +2502,17 @@ C1. ἄχρι τῆς ἄρτι ὥρας (καὶ) ==πεινῶμεν==
 
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) ==κοπιῶμεν== ἐργαζόμενοι ταῖς ἰδίαις χερσίν λοιδορούμενοι
 C2. ==εὐλογοῦμεν== διωκόμενοι
 C3. ==ἀνεχόμεθα==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 4:11 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2127,10 +2537,14 @@ C3. ==ἀνεχόμεθα==
 - cn1. ὡς | subordinante | comparación/manera | certeza: certain
 - cn2. ἕως | subordinante | temporal | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. δυσφημούμενοι ==παρακαλοῦμεν== (ὡς) περικαθάρματα τοῦ κόσμου
     C2. ==ἐγενήθημεν== πάντων περίψημα (ἕως) ἄρτι
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2155,9 +2569,13 @@ C1. δυσφημούμενοι ==παρακαλοῦμεν== (ὡς) περικ�
 - cn2. ἀλλʼ | coordinante | contraste | certeza: certain
 - cn3. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐκ) ἐντρέπων ὑμᾶς ==γράφω== ταῦτα (ἀλλʼ) (ὡς) τέκνα μου ἀγαπητὰ νουθετῶν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2182,10 +2600,18 @@ C1. (οὐκ) ἐντρέπων ὑμᾶς ==γράφω== ταῦτα (ἀλλʼ
 - cn4. οὐ | negación | negación | certeza: certain
 - cn5. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (γὰρ) μυρίους παιδαγωγοὺς ==ἔχητε== ἐν χριστῷ (ἀλλʼ) (οὐ) πολλοὺς πατέρας ἐν (γὰρ) χριστῷ ἰησοῦ διὰ τοῦ εὐαγγελίου ἐγὼ ὑμᾶς
     C2. ==ἐγέννησα==
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 4:14 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 4:14 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2207,10 +2633,14 @@ C1. (ἐὰν) (γὰρ) μυρίους παιδαγωγοὺς ==ἔχητε== 
 
 - cn1. οὖν | coordinante | inferencia | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==παρακαλῶ== (οὖν) ὑμᾶς μιμηταί μου
     C2. ==γίνεσθε==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2235,12 +2665,16 @@ C1. ==παρακαλῶ== (οὖν) ὑμᾶς μιμηταί μου
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. διὰ τοῦτο ==ἔπεμψα== ὑμῖν τιμόθεον ὅς
 C2. ==ἐστίν== μου τέκνον ἀγαπητὸν (καὶ) πιστὸν ἐν κυρίῳ ὃς ὑμᾶς
     C3. ==ἀναμνήσει== τὰς ὁδούς μου τὰς ἐν χριστῷ ἰησοῦ (καθὼς) πανταχοῦ ἐν πάσῃ ἐκκλησίᾳ
         C4. ==διδάσκω==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2266,9 +2700,17 @@ C2. ==ἐστίν== μου τέκνον ἀγαπητὸν (καὶ) πιστὸ
 - cn2. μὴ | negación | negación | certeza: certain
 - cn3. δέ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὡς) (μὴ) ἐρχομένου (δέ) μου πρὸς ὑμᾶς ==ἐφυσιώθησάν== τινες
+
+### Conexiones entre versículos
+
+- cn1. ὡς | posible conexión hacia 1corintios 4:17 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn3. δέ | posible conexión hacia 1corintios 4:17 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2295,11 +2737,15 @@ C1. (ὡς) (μὴ) ἐρχομένου (δέ) μου πρὸς ὑμᾶς ==ἐ
 - cn4. οὐ | negación | negación | certeza: certain
 - cn5. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἐλεύσομαι== (δὲ) ταχέως πρὸς ὑμᾶς (ἐὰν) ὁ κύριος
     C2. ==θελήσῃ==
         C3. (καὶ) ==γνώσομαι== (οὐ) τὸν λόγον τῶν πεφυσιωμένων (ἀλλὰ) τὴν δύναμιν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2323,10 +2769,14 @@ C1. ==ἐλεύσομαι== (δὲ) ταχέως πρὸς ὑμᾶς (ἐὰν)
 - cn1. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn2. τε | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τί ==θέλετε== ἐν ῥάβδῳ
 C2. ==ἔλθω== πρὸς ὑμᾶς (ἢ) ἐν ἀγάπῃ πνεύματί (τε) πραΰτητος
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2350,9 +2800,13 @@ C2. ==ἔλθω== πρὸς ὑμᾶς (ἢ) ἐν ἀγάπῃ πνεύματί
 - cn2. οὐδὲ | coordinante | coordinación negativa | certeza: certain
 - cn3. ὥστε | subordinante | resultado/inferencia | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὅλως ==ἀκούεται== ἐν ὑμῖν πορνεία (καὶ) τοιαύτη πορνεία ἥτις (οὐδὲ) ἐν τοῖς ἔθνεσιν (ὥστε) γυναῖκά τινα τοῦ πατρὸς ἔχειν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2378,11 +2832,17 @@ C1. ὅλως ==ἀκούεται== ἐν ὑμῖν πορνεία (καὶ) τ
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) ὑμεῖς πεφυσιωμένοι ==ἐστέ== (καὶ) οὐχὶ μᾶλλον
     C2. ==ἐπενθήσατε==
         C3. (ἵνα) ==ἀρθῇ== ἐκ μέσου ὑμῶν ὁ τὸ ἔργον τοῦτο ποιήσας
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 5:1 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2410,9 +2870,17 @@ C1. (καὶ) ὑμεῖς πεφυσιωμένοι ==ἐστέ== (καὶ) ο�
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 - cn3. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐγὼ μὲν (γάρ) ἀπὼν τῷ σώματι παρὼν (δὲ) τῷ πνεύματι ἤδη ==κέκρικα== (ὡς) παρὼν τὸν οὕτως τοῦτο κατεργασάμενον
+
+### Conexiones entre versículos
+
+- cn1. γάρ | posible conexión hacia 1corintios 5:2 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. δὲ | posible conexión hacia 1corintios 5:2 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2433,9 +2901,15 @@ C1. ἐγὼ μὲν (γάρ) ἀπὼν τῷ σώματι παρὼν (δὲ) 
 
 - cn1. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. παραδοῦναι τὸν τοιοῦτον τῷ σατανᾷ εἰς ὄλεθρον τῆς σαρκός (ἵνα) τὸ πνεῦμα ==σωθῇ== ἐν τῇ ἡμέρᾳ τοῦ κυρίου
+
+### Conexiones entre versículos
+
+- cn1. ἵνα | posible conexión hacia 1corintios 5:4 | propósito/resultado | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2458,10 +2932,14 @@ C1. παραδοῦναι τὸν τοιοῦτον τῷ σατανᾷ εἰς 
 - cn2. οὐκ | negación | negación | certeza: certain
 - cn3. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) καλὸν τὸ καύχημα ὑμῶν (οὐκ) ==οἴδατε== (ὅτι) μικρὰ ζύμη ὅλον τὸ φύραμα
     C2. ==ζυμοῖ==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2488,12 +2966,16 @@ C1. (οὐ) καλὸν τὸ καύχημα ὑμῶν (οὐκ) ==οἴδατ�
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἐκκαθάρατε== τὴν παλαιὰν ζύμην
     C2. (ἵνα) ==ἦτε== νέον φύραμα
         C3. (καθώς) ==ἐστε== ἄζυμοι (καὶ) (γὰρ) τὸ πάσχα ἡμῶν
             C4. ==ἐτύθη== χριστός
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2521,9 +3003,15 @@ C1. ==ἐκκαθάρατε== τὴν παλαιὰν ζύμην
 - cn5. ἀλλʼ | coordinante | contraste | certeza: certain
 - cn6. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) ==ἑορτάζωμεν== (μὴ) ἐν ζύμῃ παλαιᾷ (μηδὲ) ἐν ζύμῃ κακίας (καὶ) πονηρίας (ἀλλʼ) ἐν ἀζύμοις εἰλικρινείας (καὶ) ἀληθείας
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 5:7 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2544,9 +3032,13 @@ C1. (ὥστε) ==ἑορτάζωμεν== (μὴ) ἐν ζύμῃ παλαιᾷ 
 
 - cn1. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἔγραψα== ὑμῖν ἐν τῇ ἐπιστολῇ (μὴ) συναναμίγνυσθαι πόρνοις
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2572,9 +3064,19 @@ C1. ==ἔγραψα== ὑμῖν ἐν τῇ ἐπιστολῇ (μὴ) συνα
 - cn5. ἐπεὶ | subordinante | cause/temporal | certeza: certain
 - cn6. ἄρα | coordinante | inferencia | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) πάντως τοῖς πόρνοις τοῦ κόσμου τούτου (ἢ) τοῖς πλεονέκταις (καὶ) ἅρπαξιν (ἢ) εἰδωλολάτραις (ἐπεὶ) ==ὠφείλετε== (ἄρα) ἐκ τοῦ κόσμου ἐξελθεῖν
+
+### Conexiones entre versículos
+
+- cn2. ἢ | posible conexión hacia 1corintios 5:9 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn3. καὶ | posible conexión hacia 1corintios 5:9 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn4. ἢ | posible conexión hacia 1corintios 5:9 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2606,10 +3108,16 @@ C1. (οὐ) πάντως τοῖς πόρνοις τοῦ κόσμου τούτ�
 - cn8. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn9. μηδὲ | coordinante | coordinación negativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. νῦν (δὲ) ==ἔγραψα== ὑμῖν (μὴ) συναναμίγνυσθαι (ἐάν) τις ἀδελφὸς ὀνομαζόμενος
     C2. ==ᾖ== πόρνος (ἢ) πλεονέκτης (ἢ) εἰδωλολάτρης (ἢ) λοίδορος (ἢ) μέθυσος (ἢ) ἅρπαξ τῷ τοιούτῳ (μηδὲ) συνεσθίειν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 5:10 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2631,9 +3139,15 @@ C1. νῦν (δὲ) ==ἔγραψα== ὑμῖν (μὴ) συναναμίγνυ�
 
 - cn1. γάρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τί (γάρ) μοι τοὺς ἔξω κρίνειν οὐχὶ τοὺς ἔσω ὑμεῖς ==κρίνετε==
+
+### Conexiones entre versículos
+
+- cn1. γάρ | posible conexión hacia 1corintios 5:11 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2654,10 +3168,16 @@ C1. τί (γάρ) μοι τοὺς ἔξω κρίνειν οὐχὶ τοὺς �
 
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τοὺς (δὲ) ἔξω ὁ θεὸς ==κρίνει;==
 C2. ==ἐξάρατε== τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 5:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2680,9 +3200,13 @@ C2. ==ἐξάρατε== τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν
 
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==τολμᾷ== τις ὑμῶν πρᾶγμα ἔχων πρὸς τὸν ἕτερον κρίνεσθαι ἐπὶ τῶν ἀδίκων (καὶ) οὐχὶ ἐπὶ τῶν ἁγίων
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2709,12 +3233,18 @@ C1. ==τολμᾷ== τις ὑμῶν πρᾶγμα ἔχων πρὸς τὸν 
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 - cn5. εἰ | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἢ) (οὐκ) ==οἴδατε== (ὅτι) οἱ ἅγιοι τὸν κόσμον
     C2. ==κρινοῦσιν== (καὶ) (εἰ) ἐν ὑμῖν
         C3. ==κρίνεται== ὁ κόσμος ἀνάξιοί
 C4. ==ἐστε== κριτηρίων ἐλαχίστων
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 6:1 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2739,10 +3269,14 @@ C4. ==ἐστε== κριτηρίων ἐλαχίστων
 - cn1. οὐκ | negación | negación | certeza: certain
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐκ) ==οἴδατε== (ὅτι) ἀγγέλους
     C2. ==κρινοῦμεν== μήτιγε βιωτικά
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2766,10 +3300,18 @@ C1. (οὐκ) ==οἴδατε== (ὅτι) ἀγγέλους
 - cn1. οὖν | coordinante | inferencia | certeza: certain
 - cn2. ἐὰν | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. βιωτικὰ μὲν (οὖν) κριτήρια (ἐὰν) ==ἔχητε== τοὺς ἐξουθενημένους ἐν τῇ ἐκκλησίᾳ τούτους
 C2. ==καθίζετε==
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 6:3 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. ἐὰν | posible conexión hacia 1corintios 6:3 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2793,11 +3335,15 @@ C2. ==καθίζετε==
 
 - cn1. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πρὸς ἐντροπὴν ὑμῖν ==λέγω== οὕτως
 C2. (οὐκ) ==ἔνι== ἐν ὑμῖν οὐδεὶς σοφὸς ὃς
 C3. ==δυνήσεται== διακρῖναι ἀνὰ μέσον τοῦ ἀδελφοῦ αὐτοῦ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -2820,9 +3366,15 @@ C3. ==δυνήσεται== διακρῖναι ἀνὰ μέσον τοῦ ἀδ
 - cn1. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλὰ) ἀδελφὸς μετὰ ἀδελφοῦ ==κρίνεται== (καὶ) τοῦτο ἐπὶ ἀπίστων
+
+### Conexiones entre versículos
+
+- cn1. ἀλλὰ | posible conexión hacia 1corintios 6:5 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2846,12 +3398,18 @@ C1. (ἀλλὰ) ἀδελφὸς μετὰ ἀδελφοῦ ==κρίνεται=
 - cn1. οὖν | coordinante | inferencia | certeza: certain
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἤδη μὲν (οὖν) ὅλως ἥττημα ὑμῖν ==ἐστιν== (ὅτι) κρίματα
     C2. ==ἔχετε== μεθʼ ἑαυτῶν διὰ τί οὐχὶ μᾶλλον
 C3. ==ἀδικεῖσθε== διὰ τί οὐχὶ μᾶλλον
 C4. ==ἀποστερεῖσθε==
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 6:6 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2877,10 +3435,16 @@ C4. ==ἀποστερεῖσθε==
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλὰ) ὑμεῖς ==ἀδικεῖτε==
     C2. (καὶ) ==ἀποστερεῖτε== (καὶ) τοῦτο ἀδελφούς
+
+### Conexiones entre versículos
+
+- cn1. ἀλλὰ | posible conexión hacia 1corintios 6:7 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2912,11 +3476,17 @@ C1. (ἀλλὰ) ὑμεῖς ==ἀδικεῖτε==
 - cn9. οὔτε | coordinante | coordinación negativa | certeza: certain
 - cn10. οὔτε | coordinante | coordinación negativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἢ) (οὐκ) ==οἴδατε== (ὅτι) ἄδικοι θεοῦ βασιλείαν
     C2. (οὐ) ==κληρονομήσουσιν==
 C3. (μὴ) ==πλανᾶσθε== (οὔτε) πόρνοι (οὔτε) εἰδωλολάτραι (οὔτε) μοιχοὶ (οὔτε) μαλακοὶ (οὔτε) ἀρσενοκοῖται
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 6:8 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2942,9 +3512,17 @@ C3. (μὴ) ==πλανᾶσθε== (οὔτε) πόρνοι (οὔτε) εἰδω
 - cn4. οὐ | negación | negación | certeza: certain
 - cn5. οὐχ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὔτε) κλέπται (οὔτε) πλεονέκται (οὐ) μέθυσοι (οὐ) λοίδοροι (οὐχ) ἅρπαγες βασιλείαν θεοῦ ==κληρονομήσουσιν==
+
+### Conexiones entre versículos
+
+- cn1. οὔτε | posible conexión hacia 1corintios 6:9 | coordinación negativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. οὔτε | posible conexión hacia 1corintios 6:9 | coordinación negativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -2971,12 +3549,18 @@ C1. (οὔτε) κλέπται (οὔτε) πλεονέκται (οὐ) μέθυ
 - cn4. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) ταῦτά τινες ==ἦτε==
     C2. (ἀλλὰ) ==ἀπελούσασθε==
         C3. (ἀλλὰ) ==ἡγιάσθητε==
             C4. (ἀλλὰ) ==ἐδικαιώθητε== ἐν τῷ ὀνόματι τοῦ κυρίου ἰησοῦ (καὶ) ἐν τῷ πνεύματι τοῦ θεοῦ ἡμῶν
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 6:10 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3005,12 +3589,16 @@ C1. (καὶ) ταῦτά τινες ==ἦτε==
 - cn3. ἀλλʼ | coordinante | contraste | certeza: certain
 - cn4. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πάντα μοι ==ἔξεστιν== (ἀλλʼ) (οὐ) πάντα
     C2. ==συμφέρει== πάντα μοι
 C3. ==ἔξεστιν== (ἀλλʼ) (οὐκ) ἐγὼ
     C4. ==ἐξουσιασθήσομαι== ὑπό τινος
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3040,9 +3628,21 @@ C3. ==ἔξεστιν== (ἀλλʼ) (οὐκ) ἐγὼ
 - cn7. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn8. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τὰ βρώματα τῇ κοιλίᾳ (καὶ) ἡ κοιλία τοῖς βρώμασιν ὁ (δὲ) θεὸς (καὶ) ταύτην (καὶ) ταῦτα ==καταργήσει== τὸ (δὲ) σῶμα (οὐ) τῇ πορνείᾳ (ἀλλὰ) τῷ κυρίῳ (καὶ) ὁ κύριος τῷ σώματι
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 6:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 6:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn3. καὶ | posible conexión hacia 1corintios 6:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn4. καὶ | posible conexión hacia 1corintios 6:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3065,10 +3665,18 @@ C1. τὰ βρώματα τῇ κοιλίᾳ (καὶ) ἡ κοιλία τοῖ�
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ (δὲ) θεὸς (καὶ) τὸν κύριον ==ἤγειρεν== (καὶ) ἡμᾶς
     C2. ==ἐξεγερεῖ== διὰ τῆς δυνάμεως αὐτοῦ
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 6:13 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καὶ | posible conexión hacia 1corintios 6:13 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3096,11 +3704,15 @@ C1. ὁ (δὲ) θεὸς (καὶ) τὸν κύριον ==ἤγειρεν== (κ
 - cn3. οὖν | coordinante | inferencia | certeza: certain
 - cn4. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐκ) ==οἴδατε== (ὅτι) τὰ σώματα ὑμῶν μέλη χριστοῦ
     C2. ==ἐστιν== ἄρας (οὖν) τὰ μέλη τοῦ χριστοῦ
         C3. ==ποιήσω== πόρνης μέλη (μὴ) γένοιτο
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3129,12 +3741,18 @@ C1. (οὐκ) ==οἴδατε== (ὅτι) τὰ σώματα ὑμῶν μέλη
 - cn3. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn4. γάρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἢ) (οὐκ) ==οἴδατε== (ὅτι) ὁ κολλώμενος τῇ πόρνῃ ἓν σῶμά
     C2. ==ἐστιν==
 C3. ==ἔσονται== (γάρ)
     C4. ==φησίν== οἱ δύο εἰς σάρκα μίαν
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 6:15 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3158,9 +3776,15 @@ C3. ==ἔσονται== (γάρ)
 
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ (δὲ) κολλώμενος τῷ κυρίῳ ἓν πνεῦμά ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 6:16 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3185,12 +3809,16 @@ C1. ὁ (δὲ) κολλώμενος τῷ κυρίῳ ἓν πνεῦμά ==ἐ
 - cn1. ἐὰν | subordinante | condición | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==φεύγετε== τὴν πορνείαν πᾶν ἁμάρτημα ὃ
     C2. (ἐὰν) ==ποιήσῃ== ἄνθρωπος ἐκτὸς τοῦ σώματός
 C3. ==ἐστιν== ὁ (δὲ) πορνεύων εἰς τὸ ἴδιον σῶμα
     C4. ==ἁμαρτάνει==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3220,12 +3848,18 @@ C3. ==ἐστιν== ὁ (δὲ) πορνεύων εἰς τὸ ἴδιον σῶ
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 - cn5. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἢ) (οὐκ) ==οἴδατε== (ὅτι) τὸ σῶμα ὑμῶν ναὸς τοῦ ἐν ὑμῖν ἁγίου πνεύματός
     C2. ==ἐστιν== οὗ
 C3. ==ἔχετε== ἀπὸ θεοῦ;
     C4. (καὶ) (οὐκ) ==ἐστὲ== ἑαυτῶν
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 6:18 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3249,10 +3883,14 @@ C3. ==ἔχετε== ἀπὸ θεοῦ;
 
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἠγοράσθητε== (γὰρ) τιμῆς
     C2. ==δοξάσατε== δὴ τὸν θεὸν ἐν τῷ σώματι ὑμῶν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3275,9 +3913,15 @@ C1. ==ἠγοράσθητε== (γὰρ) τιμῆς
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. περὶ (δὲ) ὧν ==ἐγράψατε== καλὸν ἀνθρώπῳ γυναικὸς (μὴ) ἅπτεσθαι
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 6:versículo anterior | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3299,10 +3943,16 @@ C1. περὶ (δὲ) ὧν ==ἐγράψατε== καλὸν ἀνθρώπῳ �
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. διὰ (δὲ) τὰς πορνείας ἕκαστος τὴν ἑαυτοῦ γυναῖκα ==ἐχέτω== (καὶ) ἑκάστη τὸν ἴδιον ἄνδρα
     C2. ==ἐχέτω==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:1 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3324,9 +3974,13 @@ C1. διὰ (δὲ) τὰς πορνείας ἕκαστος τὴν ἑαυτο
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τῇ γυναικὶ ὁ ἀνὴρ τὴν ὀφειλὴν ==ἀποδιδότω== ὁμοίως (δὲ) (καὶ) ἡ γυνὴ τῷ ἀνδρί
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3352,10 +4006,14 @@ C1. τῇ γυναικὶ ὁ ἀνὴρ τὴν ὀφειλὴν ==ἀποδι�
 - cn5. οὐκ | negación | negación | certeza: certain
 - cn6. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡ γυνὴ τοῦ ἰδίου σώματος (οὐκ) ==ἐξουσιάζει== (ἀλλὰ) ὁ ἀνήρ ὁμοίως (δὲ) (καὶ) ὁ ἀνὴρ τοῦ ἰδίου σώματος
     C2. (οὐκ) ==ἐξουσιάζει== (ἀλλὰ) ἡ γυνή
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3384,12 +4042,16 @@ C1. ἡ γυνὴ τοῦ ἰδίου σώματος (οὐκ) ==ἐξουσιά
 - cn5. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn6. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μὴ) ==ἀποστερεῖτε== ἀλλήλους (εἰ) μήτι ἂν ἐκ συμφώνου πρὸς καιρὸν
     C2. (ἵνα) ==σχολάσητε== τῇ προσευχῇ (καὶ) πάλιν ἐπὶ τὸ αὐτὸ
         C3. ==ἦτε==
             C4. (ἵνα) (μὴ) ==πειράζῃ== ὑμᾶς ὁ σατανᾶς διὰ τὴν ἀκρασίαν ὑμῶν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3413,9 +4075,15 @@ C1. (μὴ) ==ἀποστερεῖτε== ἀλλήλους (εἰ) μήτι ἂ�
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. οὐ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. Τοῦτο (δὲ) ==λέγω== κατὰ συγγνώμην (οὐ) κατʼ ἐπιταγήν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:5 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3441,10 +4109,14 @@ C1. Τοῦτο (δὲ) ==λέγω== κατὰ συγγνώμην (οὐ) κατ
 - cn4. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn5. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==θέλω== (δὲ) πάντας ἀνθρώπους εἶναι (ὡς) (καὶ) ἐμαυτόν (ἀλλὰ) ἕκαστος ἴδιον
     C2. ==ἔχει== χάρισμα ἐκ θεοῦ ὁ μὲν οὕτως ⸁ὁ (δὲ) οὕτως
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3469,10 +4141,14 @@ C1. ==θέλω== (δὲ) πάντας ἀνθρώπους εἶναι (ὡς) (�
 - cn3. ἐὰν | subordinante | condición | certeza: certain
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==λέγω== (δὲ) τοῖς ἀγάμοις (καὶ) ταῖς χήραις καλὸν αὐτοῖς
     C2. (ἐὰν) ==μείνωσιν== (ὡς) κἀγώ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3501,11 +4177,19 @@ C1. ==λέγω== (δὲ) τοῖς ἀγάμοις (καὶ) ταῖς χήρα�
 - cn4. γάρ | coordinante | explicación/apoyo | certeza: certain
 - cn5. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δὲ) (οὐκ) ==ἐγκρατεύονται==
 C2. ==γαμησάτωσαν== κρεῖττον (γάρ)
     C3. ==ἐστιν== γαμῆσαι (ἢ) πυροῦσθαι
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 7:8 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 7:8 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3532,9 +4216,15 @@ C2. ==γαμησάτωσαν== κρεῖττον (γάρ)
 - cn3. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn4. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τοῖς (δὲ) γεγαμηκόσιν ==παραγγέλλω== (οὐκ) ἐγὼ (ἀλλὰ) ὁ κύριος γυναῖκα ἀπὸ ἀνδρὸς (μὴ) χωρισθῆναι—
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:9 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3562,11 +4252,21 @@ C1. τοῖς (δὲ) γεγαμηκόσιν ==παραγγέλλω== (οὐκ) 
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 - cn6. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (δὲ) (καὶ) ==χωρισθῇ==
 C2. ==μενέτω== ἄγαμος (ἢ) τῷ ἀνδρὶ
     C3. ==καταλλαγήτω—== (καὶ) ἄνδρα γυναῖκα (μὴ) ἀφιέναι
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 7:10 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 7:10 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn3. καὶ | posible conexión hacia 1corintios 7:10 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3596,12 +4296,18 @@ C2. ==μενέτω== ἄγαμος (ἢ) τῷ ἀνδρὶ
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 - cn5. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. Τοῖς (δὲ) λοιποῖς ==λέγω== ἐγώ (οὐχ) ὁ κύριος (εἴ) τις ἀδελφὸς γυναῖκα
     C2. ==ἔχει== ἄπιστον (καὶ) αὕτη
         C3. ==συνευδοκεῖ== οἰκεῖν μετʼ αὐτοῦ
 C4. (μὴ) ==ἀφιέτω== αὐτήν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:11 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3630,11 +4336,19 @@ C4. (μὴ) ==ἀφιέτω== αὐτήν
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) γυνὴ (εἴ) τις ==ἔχει== ἄνδρα ἄπιστον (καὶ) οὗτος
     C2. ==συνευδοκεῖ== οἰκεῖν μετʼ αὐτῆς
 C3. (μὴ) ==ἀφιέτω== τὸν ἄνδρα
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 7:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. εἴ | posible conexión hacia 1corintios 7:12 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3663,12 +4377,16 @@ C3. (μὴ) ==ἀφιέτω== τὸν ἄνδρα
 - cn4. ἄρα | coordinante | inferencia | certeza: certain
 - cn5. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἡγίασται== (γὰρ) ὁ ἀνὴρ ὁ ἄπιστος ἐν τῇ γυναικί
     C2. (καὶ) ==ἡγίασται== ἡ γυνὴ ἡ ἄπιστος ἐν τῷ ἀδελφῷ (ἐπεὶ) (ἄρα) τὰ τέκνα ὑμῶν ἀκάθαρτά
         C3. ==ἐστιν== νῦν (δὲ) ἅγιά
             C4. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3698,12 +4416,20 @@ C1. ==ἡγίασται== (γὰρ) ὁ ἀνὴρ ὁ ἄπιστος ἐν τ�
 - cn4. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn5. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δὲ) ὁ ἄπιστος ==χωρίζεται==
 C2. ==χωριζέσθω==
 C3. (οὐ) ==δεδούλωται== ὁ ἀδελφὸς (ἢ) ἡ ἀδελφὴ ἐν τοῖς τοιούτοις ἐν (δὲ) εἰρήνῃ
     C4. ==κέκληκεν== ἡμᾶς ὁ θεός
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 7:14 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 7:14 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3732,12 +4458,18 @@ C3. (οὐ) ==δεδούλωται== ὁ ἀδελφὸς (ἢ) ἡ ἀδελφ�
 - cn3. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn4. εἰ | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τί (γὰρ) ==οἶδας== γύναι (εἰ) τὸν ἄνδρα
     C2. ==σώσεις== (ἢ) τί
         C3. ==οἶδας== ἄνερ (εἰ) τὴν γυναῖκα
             C4. ==σώσεις==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 7:15 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3767,12 +4499,20 @@ C1. τί (γὰρ) ==οἶδας== γύναι (εἰ) τὸν ἄνδρα
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (μὴ) ἑκάστῳ (ὡς) ==ἐμέρισεν== ὁ κύριος ἕκαστον
     C2. (ὡς) ==κέκληκεν== ὁ θεός οὕτως
 C3. ==περιπατείτω== (καὶ) οὕτως ἐν ταῖς ἐκκλησίαις πάσαις
     C4. ==διατάσσομαι==
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 7:16 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn3. ὡς | posible conexión hacia 1corintios 7:16 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3800,12 +4540,16 @@ C3. ==περιπατείτω== (καὶ) οὕτως ἐν ταῖς ἐκκλη
 - cn1. μὴ | negación | negación | certeza: certain
 - cn2. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. περιτετμημένος τις ==ἐκλήθη;==
 C2. (μὴ) ==ἐπισπάσθω== ἐν ἀκροβυστίᾳ
 C3. ==κέκληταί== τις;
 C4. (μὴ) ==περιτεμνέσθω==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3830,10 +4574,14 @@ C4. (μὴ) ==περιτεμνέσθω==
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡ περιτομὴ οὐδέν ==ἐστιν== (καὶ) ἡ ἀκροβυστία οὐδέν
     C2. ==ἐστιν== (ἀλλὰ) τήρησις ἐντολῶν θεοῦ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3855,10 +4603,14 @@ C1. ἡ περιτομὴ οὐδέν ==ἐστιν== (καὶ) ἡ ἀκροβ�
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἕκαστος ἐν τῇ κλήσει ᾗ ==ἐκλήθη== ἐν ταύτῃ
 C2. ==μενέτω==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3886,12 +4638,16 @@ C2. ==μενέτω==
 - cn3. εἰ | subordinante | condición | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. δοῦλος ==ἐκλήθης;== (μή) σοι
 C2. ==μελέτω== (ἀλλʼ)
     C3. (εἰ) (καὶ) ==δύνασαι== ἐλεύθερος γενέσθαι μᾶλλον
 C4. ==χρῆσαι==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3917,10 +4673,16 @@ C4. ==χρῆσαι==
 
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ (γὰρ) ἐν κυρίῳ κληθεὶς δοῦλος ἀπελεύθερος κυρίου ==ἐστίν== ὁμοίως ὁ ἐλεύθερος κληθεὶς δοῦλός
 C2. ==ἐστιν== Χριστοῦ
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 7:21 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -3942,10 +4704,14 @@ C2. ==ἐστιν== Χριστοῦ
 
 - cn1. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τιμῆς ==ἠγοράσθητε==
 C2. (μὴ) ==γίνεσθε== δοῦλοι ἀνθρώπων
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3967,10 +4733,14 @@ C2. (μὴ) ==γίνεσθε== δοῦλοι ἀνθρώπων
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἕκαστος ἐν ᾧ ==ἐκλήθη== ἀδελφοί ἐν τούτῳ
 C2. ==μενέτω== παρὰ θεῷ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -3997,10 +4767,16 @@ C2. ==μενέτω== παρὰ θεῷ
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. περὶ (δὲ) τῶν παρθένων ἐπιταγὴν κυρίου (οὐκ) ==ἔχω== γνώμην
     C2. (δὲ) ==δίδωμι== (ὡς) ἠλεημένος ὑπὸ κυρίου πιστὸς εἶναι
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:24 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4025,9 +4801,13 @@ C1. περὶ (δὲ) τῶν παρθένων ἐπιταγὴν κυρίου (
 - cn1. οὖν | coordinante | inferencia | certeza: certain
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==νομίζω== (οὖν) τοῦτο καλὸν ὑπάρχειν διὰ τὴν ἐνεστῶσαν ἀνάγκην (ὅτι) καλὸν ἀνθρώπῳ τὸ οὕτως εἶναι
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4051,12 +4831,16 @@ C1. ==νομίζω== (οὖν) τοῦτο καλὸν ὑπάρχειν διὰ
 - cn1. μὴ | negación | negación | certeza: certain
 - cn2. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==δέδεσαι== γυναικί;
 C2. (μὴ) ==ζήτει== λύσιν
 C3. ==λέλυσαι== ἀπὸ γυναικός;
 C4. (μὴ) ==ζήτει== γυναῖκα
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4092,7 +4876,7 @@ C4. (μὴ) ==ζήτει== γυναῖκα
 - cn8. δὲ | coordinante | coordinación | certeza: certain
 - cn9. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (δὲ) (καὶ) ==γαμήσῃς==
 C2. (οὐχ) ==ἥμαρτες== (καὶ)
@@ -4100,6 +4884,16 @@ C2. (οὐχ) ==ἥμαρτες== (καὶ)
 C4. (οὐχ) ==ἥμαρτεν== θλῖψιν (δὲ) τῇ σαρκὶ
     C5. ==ἕξουσιν== οἱ τοιοῦτοι ἐγὼ (δὲ) ὑμῶν
         C6. ==φείδομαι==
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 7:27 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 7:27 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn3. καὶ | posible conexión hacia 1corintios 7:27 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4133,11 +4927,17 @@ C4. (οὐχ) ==ἥμαρτεν== θλῖψιν (δὲ) τῇ σαρκὶ
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 - cn5. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τοῦτο (δέ) ==φημι== ἀδελφοί ὁ καιρὸς συνεσταλμένος
 C2. ==ἐστίν== τὸ λοιπὸν (ἵνα) (καὶ) οἱ ἔχοντες γυναῖκας (ὡς) (μὴ) ἔχοντες
     C3. ==ὦσιν==
+
+### Conexiones entre versículos
+
+- cn1. δέ | posible conexión hacia 1corintios 7:28 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4164,9 +4964,17 @@ C2. ==ἐστίν== τὸ λοιπὸν (ἵνα) (καὶ) οἱ ἔχοντε�
 - cn3. μὴ | negación | negación | certeza: certain
 - cn4. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) οἱ χρώμενοι τὸν κόσμον (ὡς) (μὴ) καταχρώμενοι ==παράγει== (γὰρ) τὸ σχῆμα τοῦ κόσμου τούτου
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 7:30 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ὡς | posible conexión hacia 1corintios 7:30 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4189,11 +4997,15 @@ C1. (καὶ) οἱ χρώμενοι τὸν κόσμον (ὡς) (μὴ) κατ
 
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==θέλω== (δὲ) ὑμᾶς ἀμερίμνους εἶναι ὁ ἄγαμος
     C2. ==μεριμνᾷ== τὰ τοῦ κυρίου πῶς
 C3. ==ἀρέσῃ== τῷ κυρίῳ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4217,10 +5029,16 @@ C3. ==ἀρέσῃ== τῷ κυρίῳ
 
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ (δὲ) γαμήσας ==μεριμνᾷ== τὰ τοῦ κόσμου πῶς
 C2. ==ἀρέσῃ== τῇ γυναικί
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:32 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4252,13 +5070,19 @@ C2. ==ἀρέσῃ== τῇ γυναικί
 - cn6. καὶ | coordinante | coordinación | certeza: certain
 - cn7. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) ==μεμέρισται== (καὶ) ἡ γυνὴ ἡ ἄγαμος (καὶ) ἡ παρθένος
     C2. ==μεριμνᾷ== τὰ τοῦ κυρίου
         C3. (ἵνα) ==ᾖ== ἁγία (καὶ) τῷ σώματι (καὶ) ⸁τῷ πνεύματι ἡ (δὲ) γαμήσασα
             C4. ==μεριμνᾷ== τὰ τοῦ κόσμου πῶς
 C5. ==ἀρέσῃ== τῷ ἀνδρί
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 7:33 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4287,10 +5111,16 @@ C5. ==ἀρέσῃ== τῷ ἀνδρί
 - cn4. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τοῦτο (δὲ) πρὸς τὸ ὑμῶν αὐτῶν σύμφορον ==λέγω== (οὐχ) (ἵνα) βρόχον ὑμῖν
     C2. ==ἐπιβάλω== (ἀλλὰ) πρὸς τὸ εὔσχημον (καὶ) εὐπάρεδρον τῷ κυρίῳ ἀπερισπάστως
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:34 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4323,7 +5153,7 @@ C1. τοῦτο (δὲ) πρὸς τὸ ὑμῶν αὐτῶν σύμφορον
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 - cn5. οὐχ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δέ) τις ἀσχημονεῖν ἐπὶ τὴν παρθένον αὐτοῦ ==νομίζει==
     C2. (ἐὰν) ==ᾖ== ὑπέρακμος (καὶ) οὕτως
@@ -4332,6 +5162,14 @@ C4. ==θέλει==
 C5. ==ποιείτω==
 C6. (οὐχ) ==ἁμαρτάνει==
 C7. ==γαμείτωσαν==
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 7:35 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δέ | posible conexión hacia 1corintios 7:35 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4365,12 +5203,18 @@ C7. ==γαμείτωσαν==
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὃς (δὲ) ==ἕστηκεν== ἐν τῇ καρδίᾳ αὐτοῦ ἑδραῖος (μὴ) ἔχων ἀνάγκην ἐξουσίαν
     C2. (δὲ) ==ἔχει== περὶ τοῦ ἰδίου θελήματος (καὶ) τοῦτο
         C3. ==κέκρικεν== ἐν τῇ ἰδίᾳ καρδίᾳ τηρεῖν τὴν ἑαυτοῦ παρθένον καλῶς
 C4. ==ποιήσει==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:36 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4399,10 +5243,18 @@ C4. ==ποιήσει==
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) (καὶ) ὁ γαμίζων τὴν παρθένον ἑαυτοῦ καλῶς ==ποιεῖ== (καὶ) ὁ (μὴ) ⸁γαμίζων κρεῖσσον
     C2. ==ποιήσει==
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 7:37 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. καὶ | posible conexión hacia 1corintios 7:37 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4429,13 +5281,17 @@ C1. (ὥστε) (καὶ) ὁ γαμίζων τὴν παρθένον ἑαυτ�
 - cn1. ἐὰν | subordinante | condición | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. γυνὴ ==δέδεται== ἐφʼ ὅσον χρόνον
 C2. ==ζῇ== ὁ ἀνὴρ αὐτῆς
     C3. (ἐὰν) (δὲ) ==κοιμηθῇ== ὁ ἀνήρ ἐλευθέρα
 C4. ==ἐστὶν== ᾧ
 C5. ==θέλει== γαμηθῆναι μόνον ἐν κυρίῳ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4464,11 +5320,17 @@ C5. ==θέλει== γαμηθῆναι μόνον ἐν κυρίῳ
 - cn2. ἐὰν | subordinante | condición | certeza: certain
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. μακαριωτέρα (δέ) ==ἐστιν== (ἐὰν) οὕτως
     C2. ==μείνῃ== κατὰ τὴν ἐμὴν γνώμην
 C3. ==δοκῶ== (δὲ) κἀγὼ πνεῦμα θεοῦ ἔχειν
+
+### Conexiones entre versículos
+
+- cn1. δέ | posible conexión hacia 1corintios 7:39 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4495,12 +5357,18 @@ C3. ==δοκῶ== (δὲ) κἀγὼ πνεῦμα θεοῦ ἔχειν
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. περὶ (δὲ) τῶν εἰδωλοθύτων ==οἴδαμεν== (ὅτι) πάντες γνῶσιν
     C2. ==ἔχομεν== ἡ γνῶσις
 C3. ==φυσιοῖ== ἡ (δὲ) ἀγάπη
     C4. ==οἰκοδομεῖ==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 7:versículo anterior | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4528,11 +5396,17 @@ C3. ==φυσιοῖ== ἡ (δὲ) ἀγάπη
 - cn1. εἴ | subordinante | condición | certeza: certain
 - cn2. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴ) τις ==δοκεῖ== ἐγνωκέναι τι οὔπω
 C2. ==ἔγνω==
     C3. (καθὼς) ==δεῖ== γνῶναι
+
+### Conexiones entre versículos
+
+- cn1. εἴ | posible conexión hacia 1corintios 8:1 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4556,10 +5430,18 @@ C2. ==ἔγνω==
 - cn1. εἰ | subordinante | condición | certeza: certain
 - cn2. δέ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δέ) τις ==ἀγαπᾷ== τὸν θεόν οὗτος
 C2. ==ἔγνωσται== ὑπʼ αὐτοῦ
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 8:2 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δέ | posible conexión hacia 1corintios 8:2 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4585,9 +5467,15 @@ C2. ==ἔγνωσται== ὑπʼ αὐτοῦ
 - cn5. εἰ | subordinante | condición | certeza: certain
 - cn6. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. περὶ τῆς βρώσεως (οὖν) τῶν εἰδωλοθύτων ==οἴδαμεν== (ὅτι) οὐδὲν εἴδωλον ἐν κόσμῳ (καὶ) (ὅτι) οὐδεὶς θεὸς (εἰ) (μὴ) εἷς
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 8:3 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4615,10 +5503,20 @@ C1. περὶ τῆς βρώσεως (οὖν) τῶν εἰδωλοθύτων =
 - cn6. ὥσπερ | subordinante | comparación/manera | certeza: certain
 - cn7. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (γὰρ) (εἴπερ) ==εἰσὶν== λεγόμενοι θεοὶ (εἴτε) ἐν οὐρανῷ (εἴτε) ἐπὶ γῆς
     C2. (ὥσπερ) ==εἰσὶν== θεοὶ πολλοὶ (καὶ) κύριοι πολλοί
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 8:4 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 8:4 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn3. εἴπερ | posible conexión hacia 1corintios 8:4 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4646,10 +5544,20 @@ C1. (καὶ) (γὰρ) (εἴπερ) ==εἰσὶν== λεγόμενοι θεο
 - cn5. ὡς | subordinante | comparación/manera | certeza: certain
 - cn6. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλʼ) (οὐκ) ἐν πᾶσιν ἡ γνῶσις τινὲς (δὲ) τῇ συνηθείᾳ (ἕως) ἄρτι τοῦ εἰδώλου (ὡς) εἰδωλόθυτον ==ἐσθίουσιν== (καὶ) ἡ συνείδησις αὐτῶν ἀσθενὴς οὖσα
     C2. ==μολύνεται==
+
+### Conexiones entre versículos
+
+- cn1. ἀλλʼ | posible conexión hacia 1corintios 8:6 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn3. δὲ | posible conexión hacia 1corintios 8:6 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn5. ὡς | posible conexión hacia 1corintios 8:6 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4681,13 +5589,19 @@ C1. (ἀλλʼ) (οὐκ) ἐν πᾶσιν ἡ γνῶσις τινὲς (δὲ
 - cn7. ἐὰν | subordinante | condición | certeza: certain
 - cn8. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. βρῶμα (δὲ) ἡμᾶς (οὐ) ==παραστήσει== τῷ θεῷ (οὔτε) (γὰρ)
     C2. (ἐὰν) ==φάγωμεν==
 C3. ==περισσεύομεν== (οὔτε)
     C4. (ἐὰν) (μὴ) ==φάγωμεν==
 C5. ==ὑστερούμεθα==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 8:7 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4713,10 +5627,14 @@ C5. ==ὑστερούμεθα==
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. μή | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==βλέπετε== (δὲ) (μή) πως ἡ ἐξουσία ὑμῶν αὕτη πρόσκομμα
     C2. ==γένηται== τοῖς ἀσθενέσιν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4743,10 +5661,18 @@ C1. ==βλέπετε== (δὲ) (μή) πως ἡ ἐξουσία ὑμῶν α�
 - cn1. ἐὰν | subordinante | condición | certeza: certain
 - cn2. γάρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (γάρ) τις ==ἴδῃ== σὲ τὸν ἔχοντα γνῶσιν ἐν εἰδωλείῳ κατακείμενον οὐχὶ ἡ συνείδησις αὐτοῦ ἀσθενοῦς ὄντος
 C2. ==οἰκοδομηθήσεται== εἰς τὸ τὰ εἰδωλόθυτα ἐσθίειν
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 8:9 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γάρ | posible conexión hacia 1corintios 8:9 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4769,10 +5695,14 @@ C2. ==οἰκοδομηθήσεται== εἰς τὸ τὰ εἰδωλόθυτ�
 
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἀπόλλυται== (γὰρ) ὁ ἀσθενῶν ἐν τῇ σῇ γνώσει ὁ ἀδελφὸς διʼ ὃν χριστὸς
     C2. ==ἀπέθανεν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4797,9 +5727,17 @@ C1. ==ἀπόλλυται== (γὰρ) ὁ ἀσθενῶν ἐν τῇ σῇ γ�
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. οὕτως (δὲ) ἁμαρτάνοντες εἰς τοὺς ἀδελφοὺς (καὶ) τύπτοντες αὐτῶν τὴν συνείδησιν ἀσθενοῦσαν εἰς χριστὸν ==ἁμαρτάνετε==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 8:11 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καὶ | posible conexión hacia 1corintios 8:11 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4826,11 +5764,19 @@ C1. οὕτως (δὲ) ἁμαρτάνοντες εἰς τοὺς ἀδελφ�
 - cn5. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn6. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (διόπερ) (εἰ) βρῶμα ==σκανδαλίζει== τὸν ἀδελφόν μου
 C2. (οὐ) (μὴ) ==φάγω== κρέα εἰς τὸν αἰῶνα (ἵνα) (μὴ) τὸν ἀδελφόν μου
     C3. ==σκανδαλίσω==
+
+### Conexiones entre versículos
+
+- cn1. διόπερ | posible conexión hacia 1corintios 8:12 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. εἰ | posible conexión hacia 1corintios 8:12 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4857,12 +5803,16 @@ C2. (οὐ) (μὴ) ==φάγω== κρέα εἰς τὸν αἰῶνα (ἵνα)
 - cn2. οὐκ | negación | negación | certeza: certain
 - cn3. οὐ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐκ) ==εἰμὶ== ἐλεύθερος
 C2. (οὐκ) ==εἰμὶ== ἀπόστολος οὐχὶ ἰησοῦν τὸν κύριον ἡμῶν
 C3. ==ἑόρακα== (οὐ) τὸ ἔργον μου ὑμεῖς
 C4. ==ἐστε== ἐν κυρίῳ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4890,11 +5840,17 @@ C4. ==ἐστε== ἐν κυρίῳ
 - cn3. ἀλλά | coordinante | contraste | certeza: certain
 - cn4. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) ἄλλοις (οὐκ) ==εἰμὶ== ἀπόστολος (ἀλλά) γε ὑμῖν
     C2. ==εἰμι== ἡ (γὰρ) σφραγίς μου τῆς ἀποστολῆς ὑμεῖς
         C3. ==ἐστε== ἐν κυρίῳ
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 9:1 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -4917,9 +5873,13 @@ C1. (εἰ) ἄλλοις (οὐκ) ==εἰμὶ== ἀπόστολος (ἀλλ�
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡ ἐμὴ ἀπολογία τοῖς ἐμὲ ἀνακρίνουσίν ==ἐστιν== αὕτη
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4943,9 +5903,13 @@ C1. ἡ ἐμὴ ἀπολογία τοῖς ἐμὲ ἀνακρίνουσίν 
 - cn2. οὐκ | negación | negación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μὴ) (οὐκ) ==ἔχομεν== ἐξουσίαν φαγεῖν (καὶ) πεῖν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4971,9 +5935,13 @@ C1. (μὴ) (οὐκ) ==ἔχομεν== ἐξουσίαν φαγεῖν (καὶ
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 - cn6. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μὴ) (οὐκ) ==ἔχομεν== ἐξουσίαν ἀδελφὴν γυναῖκα περιάγειν (ὡς) (καὶ) οἱ λοιποὶ ἀπόστολοι (καὶ) οἱ ἀδελφοὶ τοῦ κυρίου (καὶ) κηφᾶς
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -4997,9 +5965,17 @@ C1. (μὴ) (οὐκ) ==ἔχομεν== ἐξουσίαν ἀδελφὴν γυ�
 - cn3. οὐκ | negación | negación | certeza: certain
 - cn4. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἢ) μόνος ἐγὼ (καὶ) βαρναβᾶς (οὐκ) ==ἔχομεν== ἐξουσίαν (μὴ) ἐργάζεσθαι
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 9:5 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καὶ | posible conexión hacia 1corintios 9:5 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5026,13 +6002,17 @@ C1. (ἢ) μόνος ἐγὼ (καὶ) βαρναβᾶς (οὐκ) ==ἔχομ�
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τίς ==στρατεύεται== ἰδίοις ὀψωνίοις ποτέ τίς
 C2. ==φυτεύει== ἀμπελῶνα (καὶ) τὸν καρπὸν αὐτοῦ
     C3. (οὐκ) ==ἐσθίει== τίς
 C4. ==ποιμαίνει== ποίμνην (καὶ) ἐκ τοῦ γάλακτος τῆς ποίμνης
     C5. (οὐκ) ==ἐσθίει==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -5060,10 +6040,14 @@ C4. ==ποιμαίνει== ποίμνην (καὶ) ἐκ τοῦ γάλακτο
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. οὐ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μὴ) κατὰ ἄνθρωπον ταῦτα ==λαλῶ== (ἢ) (καὶ) ὁ νόμος ταῦτα
     C2. (οὐ) ==λέγει==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -5089,11 +6073,17 @@ C1. (μὴ) κατὰ ἄνθρωπον ταῦτα ==λαλῶ== (ἢ) (καὶ
 - cn2. οὐ | negación | negación | certeza: certain
 - cn3. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐν (γὰρ) τῷ μωϋσέως νόμῳ ==γέγραπται==
 C2. (οὐ) ==κημώσεις== βοῦν ἀλοῶντα (μὴ) τῶν βοῶν
 C3. ==μέλει== τῷ θεῷ
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 9:8 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5124,11 +6114,17 @@ C3. ==μέλει== τῷ θεῷ
 - cn3. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἢ) διʼ ἡμᾶς πάντως ==λέγει== διʼ ἡμᾶς (γὰρ)
     C2. ==ἐγράφη==
         C3. (ὅτι) ==ὀφείλει== ἐπʼ ἐλπίδι ὁ ἀροτριῶν ἀροτριᾶν (καὶ) ὁ ἀλοῶν ἐπʼ ἐλπίδι τοῦ μετέχειν
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 9:9 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5152,10 +6148,16 @@ C1. (ἢ) διʼ ἡμᾶς πάντως ==λέγει== διʼ ἡμᾶς (γὰ
 - cn1. εἰ | subordinante | condición | certeza: certain
 - cn2. εἰ | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) ἡμεῖς ὑμῖν τὰ πνευματικὰ ==ἐσπείραμεν== μέγα (εἰ) ἡμεῖς ὑμῶν τὰ σαρκικὰ
     C2. ==θερίσομεν==
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 9:10 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5185,12 +6187,18 @@ C1. (εἰ) ἡμεῖς ὑμῖν τὰ πνευματικὰ ==ἐσπείρ�
 - cn6. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn7. μή | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) ἄλλοι τῆς ὑμῶν ἐξουσίας ==μετέχουσιν== (οὐ) μᾶλλον ἡμεῖς
     C2. (ἀλλʼ) (οὐκ) ==ἐχρησάμεθα== τῇ ἐξουσίᾳ ταύτῃ (ἀλλὰ) πάντα
         C3. ==στέγομεν== (ἵνα) (μή) τινα ἐγκοπὴν
             C4. ==δῶμεν== τῷ εὐαγγελίῳ τοῦ χριστοῦ
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 9:11 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5218,11 +6226,15 @@ C1. (εἰ) ἄλλοι τῆς ὑμῶν ἐξουσίας ==μετέχουσ�
 - cn1. οὐκ | negación | negación | certeza: certain
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐκ) ==οἴδατε== (ὅτι) οἱ τὰ ἱερὰ ἐργαζόμενοι τὰ ἐκ τοῦ ἱεροῦ
     C2. ==ἐσθίουσιν== οἱ τῷ θυσιαστηρίῳ παρεδρεύοντες τῷ θυσιαστηρίῳ
 C3. ==συμμερίζονται==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -5246,9 +6258,15 @@ C3. ==συμμερίζονται==
 
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. οὕτως (καὶ) ὁ κύριος ==διέταξεν== τοῖς τὸ εὐαγγέλιον καταγγέλλουσιν ἐκ τοῦ εὐαγγελίου ζῆν
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 9:13 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5278,12 +6296,18 @@ C1. οὕτως (καὶ) ὁ κύριος ==διέταξεν== τοῖς τὸ 
 - cn6. γάρ | coordinante | explicación/apoyo | certeza: certain
 - cn7. ἤ— | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐγὼ (δὲ) (οὐ) ==κέχρημαι== οὐδενὶ τούτων
 C2. (οὐκ) ==ἔγραψα== (δὲ) ταῦτα (ἵνα) οὕτως
     C3. ==γένηται== ἐν ἐμοί καλὸν (γάρ) μοι μᾶλλον ἀποθανεῖν (ἤ—) τὸ καύχημά μου οὐδεὶς
         C4. ==κενώσει==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 9:14 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5316,13 +6340,21 @@ C2. (οὐκ) ==ἔγραψα== (δὲ) ταῦτα (ἵνα) οὕτως
 - cn6. ἐὰν | subordinante | condición | certeza: certain
 - cn7. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (γὰρ) ==εὐαγγελίζωμαι==
 C2. (οὐκ) ==ἔστιν== μοι καύχημα ἀνάγκη (γάρ) μοι
     C3. ==ἐπίκειται== οὐαὶ (γάρ) μοί
         C4. ==ἐστιν==
             C5. (ἐὰν) (μὴ) ==εὐαγγελίσωμαι==
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 9:15 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 9:15 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5351,11 +6383,19 @@ C2. (οὐκ) ==ἔστιν== μοι καύχημα ἀνάγκη (γάρ) μο�
 - cn3. εἰ | subordinante | condición | certeza: certain
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (γὰρ) ἑκὼν τοῦτο ==πράσσω== μισθὸν
 C2. ==ἔχω== (εἰ) (δὲ) ἄκων οἰκονομίαν
     C3. ==πεπίστευμαι==
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 9:16 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 9:16 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5382,10 +6422,16 @@ C2. ==ἔχω== (εἰ) (δὲ) ἄκων οἰκονομίαν
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn3. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τίς (οὖν) μού ==ἐστιν== ὁ μισθός (ἵνα) εὐαγγελιζόμενος ἀδάπανον
     C2. ==θήσω== τὸ εὐαγγέλιον εἰς τὸ (μὴ) καταχρήσασθαι τῇ ἐξουσίᾳ μου ἐν τῷ εὐαγγελίῳ
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 9:17 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5409,10 +6455,16 @@ C1. τίς (οὖν) μού ==ἐστιν== ὁ μισθός (ἵνα) εὐαγ
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐλεύθερος (γὰρ) ὢν ἐκ πάντων πᾶσιν ἐμαυτὸν ==ἐδούλωσα== (ἵνα) τοὺς πλείονας
     C2. ==κερδήσω==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 9:18 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5441,11 +6493,17 @@ C1. ἐλεύθερος (γὰρ) ὢν ἐκ πάντων πᾶσιν ἐμαυ
 - cn5. μὴ | negación | negación | certeza: certain
 - cn6. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) ==ἐγενόμην== τοῖς ἰουδαίοις (ὡς) ἰουδαῖος (ἵνα) ἰουδαίους
     C2. ==κερδήσω== τοῖς ὑπὸ νόμον (ὡς) ὑπὸ νόμον (μὴ) ὢν αὐτὸς ὑπὸ νόμον (ἵνα) τοὺς ὑπὸ νόμον
         C3. ==κερδήσω==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 9:19 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5471,9 +6529,19 @@ C1. (καὶ) ==ἐγενόμην== τοῖς ἰουδαίοις (ὡς) ἰο�
 - cn3. ἀλλʼ | coordinante | contraste | certeza: certain
 - cn4. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τοῖς ἀνόμοις (ὡς) ἄνομος (μὴ) ὢν ἄνομος θεοῦ (ἀλλʼ) ἔννομος χριστοῦ (ἵνα) ==κερδάνω== τοὺς ἀνόμους
+
+### Conexiones entre versículos
+
+- cn1. ὡς | posible conexión hacia 1corintios 9:20 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn3. ἀλλʼ | posible conexión hacia 1corintios 9:20 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn4. ἵνα | posible conexión hacia 1corintios 9:20 | propósito/resultado | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5497,12 +6565,16 @@ C1. τοῖς ἀνόμοις (ὡς) ἄνομος (μὴ) ὢν ἄνομος 
 - cn1. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἐγενόμην== τοῖς ἀσθενέσιν ἀσθενής (ἵνα) τοὺς ἀσθενεῖς
     C2. ==κερδήσω== τοῖς πᾶσιν
 C3. ==γέγονα== πάντα (ἵνα) πάντως τινὰς
     C4. ==σώσω==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -5527,10 +6599,16 @@ C3. ==γέγονα== πάντα (ἵνα) πάντως τινὰς
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πάντα (δὲ) ==ποιῶ== διὰ τὸ εὐαγγέλιον (ἵνα) συγκοινωνὸς αὐτοῦ
     C2. ==γένωμαι==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 9:22 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5559,13 +6637,17 @@ C1. πάντα (δὲ) ==ποιῶ== διὰ τὸ εὐαγγέλιον (ἵν�
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 - cn4. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐκ) ==οἴδατε== (ὅτι) οἱ ἐν σταδίῳ τρέχοντες πάντες μὲν
     C2. ==τρέχουσιν== εἷς
         C3. (δὲ) ==λαμβάνει== τὸ βραβεῖον οὕτως
 C4. ==τρέχετε==
     C5. (ἵνα) ==καταλάβητε==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -5594,10 +6676,16 @@ C4. ==τρέχετε==
 - cn3. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πᾶς (δὲ) ὁ ἀγωνιζόμενος πάντα ==ἐγκρατεύεται== ἐκεῖνοι μὲν (οὖν) (ἵνα) φθαρτὸν στέφανον
     C2. ==λάβωσιν== ἡμεῖς (δὲ) ἄφθαρτον
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 9:24 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5624,10 +6712,16 @@ C1. πᾶς (δὲ) ὁ ἀγωνιζόμενος πάντα ==ἐγκρατεύ
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 - cn5. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐγὼ (τοίνυν) οὕτως ==τρέχω== (ὡς) (οὐκ) ἀδήλως οὕτως
     C2. ==πυκτεύω== (ὡς) (οὐκ) ἀέρα δέρων
+
+### Conexiones entre versículos
+
+- cn1. τοίνυν | posible conexión hacia 1corintios 9:25 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5653,11 +6747,17 @@ C1. ἐγὼ (τοίνυν) οὕτως ==τρέχω== (ὡς) (οὐκ) ἀδή
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. μή | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλὰ) ==ὑπωπιάζω== μου τὸ σῶμα
     C2. (καὶ) ==δουλαγωγῶ== (μή) πως ἄλλοις κηρύξας αὐτὸς ἀδόκιμος
 C3. ==γένωμαι==
+
+### Conexiones entre versículos
+
+- cn1. ἀλλὰ | posible conexión hacia 1corintios 9:26 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5685,11 +6785,15 @@ C3. ==γένωμαι==
 - cn3. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) ==θέλω== (γὰρ) ὑμᾶς ἀγνοεῖν ἀδελφοί (ὅτι) οἱ πατέρες ἡμῶν πάντες ὑπὸ τὴν νεφέλην
     C2. ==ἦσαν== (καὶ) πάντες διὰ τῆς θαλάσσης
         C3. ==διῆλθον==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -5712,9 +6816,15 @@ C1. (οὐ) ==θέλω== (γὰρ) ὑμᾶς ἀγνοεῖν ἀδελφοί (
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) πάντες εἰς τὸν μωϋσῆν ==ἐβαπτίσαντο== ἐν τῇ νεφέλῃ (καὶ) ἐν τῇ θαλάσσῃ
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 10:1 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5734,9 +6844,15 @@ C1. (καὶ) πάντες εἰς τὸν μωϋσῆν ==ἐβαπτίσαντ
 
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) πάντες τὸ αὐτὸ πνευματικὸν βρῶμα ==ἔφαγον==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 10:2 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5761,11 +6877,17 @@ C1. (καὶ) πάντες τὸ αὐτὸ πνευματικὸν βρῶμα 
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) πάντες τὸ αὐτὸ πνευματικὸν ==ἔπιον== πόμα
 C2. ==ἔπινον== (γὰρ) ἐκ πνευματικῆς ἀκολουθούσης πέτρας ἡ πέτρα
     C3. (δὲ) ==ἦν== ὁ χριστός
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 10:3 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5790,10 +6912,16 @@ C2. ==ἔπινον== (γὰρ) ἐκ πνευματικῆς ἀκολουθο�
 - cn2. οὐκ | negación | negación | certeza: certain
 - cn3. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλʼ) (οὐκ) ἐν τοῖς πλείοσιν αὐτῶν ==ηὐδόκησεν== ὁ θεός
 C2. ==κατεστρώθησαν== (γὰρ) ἐν τῇ ἐρήμῳ
+
+### Conexiones entre versículos
+
+- cn1. ἀλλʼ | posible conexión hacia 1corintios 10:4 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5818,10 +6946,16 @@ C2. ==κατεστρώθησαν== (γὰρ) ἐν τῇ ἐρήμῳ
 - cn2. μὴ | negación | negación | certeza: certain
 - cn3. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ταῦτα (δὲ) τύποι ἡμῶν ==ἐγενήθησαν== εἰς τὸ (μὴ) εἶναι ἡμᾶς ἐπιθυμητὰς κακῶν (καθὼς) κἀκεῖνοι
     C2. ==ἐπεθύμησαν==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 10:5 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5852,12 +6986,18 @@ C1. ταῦτα (δὲ) τύποι ἡμῶν ==ἐγενήθησαν== εἰς 
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μηδὲ) εἰδωλολάτραι ==γίνεσθε== (καθώς) τινες αὐτῶν
     C2. (ὥσπερ) ==γέγραπται==
 C3. ==ἐκάθισεν== ὁ λαὸς φαγεῖν (καὶ) πεῖν
     C4. (καὶ) ==ἀνέστησαν== παίζειν
+
+### Conexiones entre versículos
+
+- cn1. μηδὲ | posible conexión hacia 1corintios 10:6 | coordinación negativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5884,11 +7024,17 @@ C3. ==ἐκάθισεν== ὁ λαὸς φαγεῖν (καὶ) πεῖν
 - cn2. καθώς | subordinante | comparación/manera | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μηδὲ) ==πορνεύωμεν== (καθώς) τινες αὐτῶν
     C2. ==ἐπόρνευσαν==
         C3. (καὶ) ==ἔπεσαν== μιᾷ ἡμέρᾳ εἴκοσι τρεῖς χιλιάδες
+
+### Conexiones entre versículos
+
+- cn1. μηδὲ | posible conexión hacia 1corintios 10:7 | coordinación negativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5914,11 +7060,17 @@ C1. (μηδὲ) ==πορνεύωμεν== (καθώς) τινες αὐτῶν
 - cn2. καθώς | subordinante | comparación/manera | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μηδὲ) ==ἐκπειράζωμεν== τὸν χριστόν (καθώς) τινες αὐτῶν
     C2. ==ἐπείρασαν== (καὶ) ὑπὸ τῶν ὄφεων
         C3. ==ἀπώλλυντο==
+
+### Conexiones entre versículos
+
+- cn1. μηδὲ | posible conexión hacia 1corintios 10:8 | coordinación negativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5944,11 +7096,17 @@ C1. (μηδὲ) ==ἐκπειράζωμεν== τὸν χριστόν (καθώς
 - cn2. καθάπερ | subordinante | comparación/manera | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μηδὲ) ==γογγύζετε== (καθάπερ) τινὲς αὐτῶν
     C2. ==ἐγόγγυσαν==
         C3. (καὶ) ==ἀπώλοντο== ὑπὸ τοῦ ὀλοθρευτοῦ
+
+### Conexiones entre versículos
+
+- cn1. μηδὲ | posible conexión hacia 1corintios 10:9 | coordinación negativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -5973,11 +7131,17 @@ C1. (μηδὲ) ==γογγύζετε== (καθάπερ) τινὲς αὐτῶν
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ταῦτα (δὲ) τυπικῶς ==συνέβαινεν== ἐκείνοις
 C2. ==ἐγράφη== (δὲ) πρὸς νουθεσίαν ἡμῶν εἰς οὓς τὰ τέλη τῶν αἰώνων
     C3. ==κατήντηκεν==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 10:10 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6003,10 +7167,16 @@ C2. ==ἐγράφη== (δὲ) πρὸς νουθεσίαν ἡμῶν εἰς ο
 - cn1. ὥστε | subordinante | resultado/inferencia | certeza: certain
 - cn2. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) ὁ δοκῶν ἑστάναι ==βλεπέτω==
 C2. (μὴ) ==πέσῃ==
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 10:11 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6039,12 +7209,16 @@ C2. (μὴ) ==πέσῃ==
 - cn6. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn7. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πειρασμὸς ὑμᾶς (οὐκ) ==εἴληφεν== (εἰ) (μὴ) ἀνθρώπινος πιστὸς (δὲ) ὁ θεός ὃς
     C2. (οὐκ) ==ἐάσει== ὑμᾶς πειρασθῆναι ὑπὲρ ὃ
 C3. ==δύνασθε==
     C4. (ἀλλὰ) ==ποιήσει== σὺν τῷ πειρασμῷ (καὶ) τὴν ἔκβασιν τοῦ δύνασθαι ὑπενεγκεῖν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6067,9 +7241,15 @@ C3. ==δύνασθε==
 
 - cn1. διόπερ | coordinante | inferencia | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (διόπερ) ἀγαπητοί μου ==φεύγετε== ἀπὸ τῆς εἰδωλολατρίας
+
+### Conexiones entre versículos
+
+- cn1. διόπερ | posible conexión hacia 1corintios 10:13 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6091,11 +7271,17 @@ C1. (διόπερ) ἀγαπητοί μου ==φεύγετε== ἀπὸ τῆς 
 
 - cn1. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὡς) φρονίμοις ==λέγω==
 C2. ==κρίνατε== ὑμεῖς ὅ
 C3. ==φημι==
+
+### Conexiones entre versículos
+
+- cn1. ὡς | posible conexión hacia 1corintios 10:14 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6120,12 +7306,16 @@ C3. ==φημι==
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τὸ ποτήριον τῆς εὐλογίας ὃ ==εὐλογοῦμεν== οὐχὶ κοινωνία
 C2. ==ἐστὶν== τοῦ αἵματος τοῦ χριστοῦ τὸν ἄρτον ὃν
 C3. ==κλῶμεν== οὐχὶ κοινωνία τοῦ σώματος τοῦ χριστοῦ
 C4. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6150,10 +7340,16 @@ C4. ==ἐστιν==
 - cn1. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὅτι) εἷς ἄρτος ἓν σῶμα οἱ πολλοί ==ἐσμεν== οἱ (γὰρ) πάντες ἐκ τοῦ ἑνὸς ἄρτου
     C2. ==μετέχομεν==
+
+### Conexiones entre versículos
+
+- cn1. ὅτι | posible conexión hacia 1corintios 10:16 | contenido/explicación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6176,10 +7372,14 @@ C1. (ὅτι) εἷς ἄρτος ἓν σῶμα οἱ πολλοί ==ἐσμε
 
 - cn1. οὐχ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==βλέπετε== τὸν ἰσραὴλ κατὰ σάρκα (οὐχ) οἱ ἐσθίοντες τὰς θυσίας κοινωνοὶ τοῦ θυσιαστηρίου
 C2. ==εἰσίν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6205,11 +7405,17 @@ C2. ==εἰσίν==
 - cn3. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn4. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τί (οὖν) ==φημι== (ὅτι) εἰδωλόθυτόν τί
     C2. ==ἐστιν== (ἢ) (ὅτι) εἴδωλόν τί
         C3. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 10:18 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6239,11 +7445,19 @@ C1. τί (οὖν) ==φημι== (ὅτι) εἰδωλόθυτόν τί
 - cn5. οὐ | negación | negación | certeza: certain
 - cn6. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλʼ) (ὅτι) ἃ ==θύουσιν== δαιμονίοις (καὶ) (οὐ) θεῷ
     C2. ==θύουσιν==
 C3. (οὐ) ==θέλω== (δὲ) ὑμᾶς κοινωνοὺς τῶν δαιμονίων γίνεσθαι
+
+### Conexiones entre versículos
+
+- cn1. ἀλλʼ | posible conexión hacia 1corintios 10:19 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. ὅτι | posible conexión hacia 1corintios 10:19 | contenido/explicación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6271,10 +7485,14 @@ C3. (οὐ) ==θέλω== (δὲ) ὑμᾶς κοινωνοὺς τῶν δαιμ
 - cn3. οὐ | negación | negación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) ==δύνασθε== ποτήριον κυρίου πίνειν (καὶ) ποτήριον δαιμονίων
     C2. (οὐ) ==δύνασθε== τραπέζης κυρίου μετέχειν (καὶ) τραπέζης δαιμονίων
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6297,10 +7515,16 @@ C1. (οὐ) ==δύνασθε== ποτήριον κυρίου πίνειν (κα�
 - cn1. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn2. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἢ) ==παραζηλοῦμεν== τὸν κύριον (μὴ) ἰσχυρότεροι αὐτοῦ
 C2. ==ἐσμεν==
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 10:21 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6327,12 +7551,16 @@ C2. ==ἐσμεν==
 - cn3. ἀλλʼ | coordinante | contraste | certeza: certain
 - cn4. οὐ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πάντα ==ἔξεστιν== (ἀλλʼ) (οὐ) πάντα
     C2. ==συμφέρει== ⸁πάντα
 C3. ==ἔξεστιν== (ἀλλʼ) (οὐ) πάντα
     C4. ==οἰκοδομεῖ==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6355,9 +7583,13 @@ C3. ==ἔξεστιν== (ἀλλʼ) (οὐ) πάντα
 
 - cn1. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. μηδεὶς τὸ ἑαυτοῦ ==ζητείτω== (ἀλλὰ) τὸ τοῦ ἑτέρου
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6379,9 +7611,13 @@ C1. μηδεὶς τὸ ἑαυτοῦ ==ζητείτω== (ἀλλὰ) τὸ τ�
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πᾶν τὸ ἐν μακέλλῳ πωλούμενον ==ἐσθίετε== μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6407,11 +7643,17 @@ C1. πᾶν τὸ ἐν μακέλλῳ πωλούμενον ==ἐσθίετε==
 - cn1. εἴ | subordinante | condición | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴ) τις ==καλεῖ== ὑμᾶς τῶν ἀπίστων
     C2. (καὶ) ==θέλετε== πορεύεσθαι πᾶν τὸ παρατιθέμενον ὑμῖν
 C3. ==ἐσθίετε== μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν
+
+### Conexiones entre versículos
+
+- cn1. εἴ | posible conexión hacia 1corintios 10:26 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6439,11 +7681,19 @@ C3. ==ἐσθίετε== μηδὲν ἀνακρίνοντες διὰ τὴν σ
 - cn3. μὴ | negación | negación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (δέ) τις ὑμῖν ==εἴπῃ== τοῦτο ἱερόθυτόν
 C2. ==ἐστιν==
 C3. (μὴ) ==ἐσθίετε== διʼ ἐκεῖνον τὸν μηνύσαντα (καὶ) τὴν συνείδησιν
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 10:27 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δέ | posible conexión hacia 1corintios 10:27 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6468,10 +7718,16 @@ C3. (μὴ) ==ἐσθίετε== διʼ ἐκεῖνον τὸν μηνύσαντ
 - cn2. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn3. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. συνείδησιν (δὲ) ==λέγω== οὐχὶ τὴν ἑαυτοῦ (ἀλλὰ) τὴν τοῦ ἑτέρου ἱνατί (γὰρ) ἡ ἐλευθερία μου
     C2. ==κρίνεται== ὑπὸ ἄλλης συνειδήσεως
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 10:28 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6494,11 +7750,17 @@ C1. συνείδησιν (δὲ) ==λέγω== οὐχὶ τὴν ἑαυτοῦ 
 
 - cn1. εἰ | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) ἐγὼ χάριτι ==μετέχω== τί
 C2. ==βλασφημοῦμαι== ὑπὲρ οὗ ἐγὼ
 C3. ==εὐχαριστῶ==
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 10:29 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6526,12 +7788,20 @@ C3. ==εὐχαριστῶ==
 - cn3. εἴτε | coordinante | alternativa | certeza: certain
 - cn4. εἴτε | coordinante | alternativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴτε) (οὖν) ==ἐσθίετε== (εἴτε)
     C2. ==πίνετε== (εἴτε) τι
         C3. ==ποιεῖτε== πάντα εἰς δόξαν θεοῦ
 C4. ==ποιεῖτε==
+
+### Conexiones entre versículos
+
+- cn1. εἴτε | posible conexión hacia 1corintios 10:30 | alternativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. οὖν | posible conexión hacia 1corintios 10:30 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6556,9 +7826,15 @@ C4. ==ποιεῖτε==
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἀπρόσκοποι (καὶ) ἰουδαίοις ==γίνεσθε== (καὶ) ἕλλησιν (καὶ) τῇ ἐκκλησίᾳ τοῦ θεοῦ
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 10:31 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6583,10 +7859,16 @@ C1. ἀπρόσκοποι (καὶ) ἰουδαίοις ==γίνεσθε== (κα
 - cn3. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn4. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καθὼς) κἀγὼ πάντα πᾶσιν ==ἀρέσκω== (μὴ) ζητῶν τὸ ἐμαυτοῦ σύμφορον (ἀλλὰ) τὸ τῶν πολλῶν
     C2. (ἵνα) ==σωθῶσιν==
+
+### Conexiones entre versículos
+
+- cn1. καθὼς | posible conexión hacia 1corintios 10:32 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6607,9 +7889,13 @@ C1. (καθὼς) κἀγὼ πάντα πᾶσιν ==ἀρέσκω== (μὴ) ζ
 
 - cn1. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. μιμηταί μου ==γίνεσθε== (καθὼς) κἀγὼ χριστοῦ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6635,12 +7921,16 @@ C1. μιμηταί μου ==γίνεσθε== (καθὼς) κἀγὼ χριστ
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ἐπαινῶ== (δὲ) ὑμᾶς (ὅτι) πάντα μου
     C2. ==μέμνησθε== (καὶ)
         C3. (καθὼς) ==παρέδωκα== ὑμῖν τὰς παραδόσεις
 C4. ==κατέχετε==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6668,10 +7958,14 @@ C4. ==κατέχετε==
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==θέλω== (δὲ) ὑμᾶς εἰδέναι (ὅτι) παντὸς ἀνδρὸς ἡ κεφαλὴ ὁ χριστός
     C2. ==ἐστιν== κεφαλὴ (δὲ) γυναικὸς ὁ ἀνήρ κεφαλὴ (δὲ) τοῦ χριστοῦ ὁ θεός
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6695,9 +7989,15 @@ C1. ==θέλω== (δὲ) ὑμᾶς εἰδέναι (ὅτι) παντὸς ἀ�
 
 - cn1. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πᾶς ἀνὴρ προσευχόμενος (ἢ) προφητεύων κατὰ κεφαλῆς ἔχων ==καταισχύνει== τὴν κεφαλὴν αὐτοῦ
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 11:3 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6724,10 +8024,18 @@ C1. πᾶς ἀνὴρ προσευχόμενος (ἢ) προφητεύων κ�
 - cn3. γάρ | coordinante | explicación/apoyo | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πᾶσα (δὲ) γυνὴ προσευχομένη (ἢ) προφητεύουσα ἀκατακαλύπτῳ τῇ κεφαλῇ ==καταισχύνει== τὴν κεφαλὴν αὐτῆς ἓν (γάρ)
     C2. ==ἐστιν== (καὶ) τὸ αὐτὸ τῇ ἐξυρημένῃ
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 11:4 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ἢ | posible conexión hacia 1corintios 11:4 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6758,11 +8066,19 @@ C1. πᾶσα (δὲ) γυνὴ προσευχομένη (ἢ) προφητεύ�
 - cn6. δὲ | coordinante | coordinación | certeza: certain
 - cn7. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (γὰρ) (οὐ) ==κατακαλύπτεται== γυνή
     C2. (καὶ) ==κειράσθω== (εἰ) (δὲ) αἰσχρὸν γυναικὶ τὸ κείρασθαι (ἢ) ξυρᾶσθαι
         C3. ==κατακαλυπτέσθω==
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 11:5 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 11:5 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6790,10 +8106,16 @@ C1. (εἰ) (γὰρ) (οὐ) ==κατακαλύπτεται== γυνή
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἀνὴρ μὲν (γὰρ) (οὐκ) ==ὀφείλει== κατακαλύπτεσθαι τὴν κεφαλήν εἰκὼν (καὶ) δόξα θεοῦ ὑπάρχων ἡ γυνὴ (δὲ) δόξα ἀνδρός
     C2. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 11:6 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6816,9 +8138,15 @@ C1. ἀνὴρ μὲν (γὰρ) (οὐκ) ==ὀφείλει== κατακαλύ�
 - cn2. γάρ | coordinante | explicación/apoyo | certeza: certain
 - cn3. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) (γάρ) ==ἐστιν== ἀνὴρ ἐκ γυναικός (ἀλλὰ) γυνὴ ἐξ ἀνδρός
+
+### Conexiones entre versículos
+
+- cn2. γάρ | posible conexión hacia 1corintios 11:7 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6841,9 +8169,17 @@ C1. (οὐ) (γάρ) ==ἐστιν== ἀνὴρ ἐκ γυναικός (ἀλλ�
 - cn3. οὐκ | negación | negación | certeza: certain
 - cn4. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (γὰρ) (οὐκ) ==ἐκτίσθη== ἀνὴρ διὰ τὴν γυναῖκα (ἀλλὰ) γυνὴ διὰ τὸν ἄνδρα
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 11:8 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 11:8 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6864,9 +8200,13 @@ C1. (καὶ) (γὰρ) (οὐκ) ==ἐκτίσθη== ἀνὴρ διὰ τὴν
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. διὰ τοῦτο ==ὀφείλει== ἡ γυνὴ ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς διὰ τοὺς ἀγγέλους
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6889,10 +8229,14 @@ C1. διὰ τοῦτο ==ὀφείλει== ἡ γυνὴ ἐξουσίαν ἔ�
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐν ὑμῖν αὐτοῖς ==κρίνατε== πρέπον
 C2. ==ἐστὶν== γυναῖκα ἀκατακάλυπτον τῷ θεῷ προσεύχεσθαι
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -6917,11 +8261,17 @@ C2. ==ἐστὶν== γυναῖκα ἀκατακάλυπτον τῷ θεῷ �
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn3. ἐὰν | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐδὲ) ἡ φύσις αὐτὴ ==διδάσκει== ὑμᾶς (ὅτι) ἀνὴρ μὲν
     C2. (ἐὰν) ==κομᾷ== ἀτιμία αὐτῷ
 C3. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. οὐδὲ | posible conexión hacia 1corintios 11:13 | coordinación negativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6947,11 +8297,19 @@ C3. ==ἐστιν==
 - cn2. ἐὰν | subordinante | condición | certeza: certain
 - cn3. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. γυνὴ (δὲ) (ἐὰν) ==κομᾷ== δόξα αὐτῇ
 C2. ==ἐστιν== (ὅτι) ἡ κόμη ἀντὶ περιβολαίου
     C3. ==δέδοται==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 11:14 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ἐὰν | posible conexión hacia 1corintios 11:14 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -6978,10 +8336,18 @@ C2. ==ἐστιν== (ὅτι) ἡ κόμη ἀντὶ περιβολαίου
 - cn3. οὐκ | negación | negación | certeza: certain
 - cn4. οὐδὲ | coordinante | coordinación negativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δέ) τις ==δοκεῖ== φιλόνεικος εἶναι ἡμεῖς τοιαύτην συνήθειαν
 C2. (οὐκ) ==ἔχομεν== (οὐδὲ) αἱ ἐκκλησίαι τοῦ θεοῦ
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 11:15 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δέ | posible conexión hacia 1corintios 11:15 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7008,10 +8374,16 @@ C2. (οὐκ) ==ἔχομεν== (οὐδὲ) αἱ ἐκκλησίαι τοῦ �
 - cn4. οὐκ | negación | negación | certeza: certain
 - cn5. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τοῦτο (δὲ) παραγγέλλων (οὐκ) ==ἐπαινῶ== (ὅτι) (οὐκ) εἰς τὸ κρεῖσσον (ἀλλὰ) εἰς τὸ ἧσσον
     C2. ==συνέρχεσθε==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 11:16 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7036,10 +8408,16 @@ C1. τοῦτο (δὲ) παραγγέλλων (οὐκ) ==ἐπαινῶ== (ὅ
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πρῶτον μὲν (γὰρ) συνερχομένων ὑμῶν ἐν ἐκκλησίᾳ ==ἀκούω== σχίσματα ἐν ὑμῖν ὑπάρχειν (καὶ) μέρος τι
     C2. ==πιστεύω==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 11:17 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7065,10 +8443,14 @@ C1. πρῶτον μὲν (γὰρ) συνερχομένων ὑμῶν ἐν �
 - cn3. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==δεῖ== (γὰρ) (καὶ) αἱρέσεις ἐν ὑμῖν εἶναι (ἵνα) (καὶ) οἱ δόκιμοι φανεροὶ
     C2. ==γένωνται== ἐν ὑμῖν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -7092,9 +8474,15 @@ C1. ==δεῖ== (γὰρ) (καὶ) αἱρέσεις ἐν ὑμῖν εἶνα
 - cn1. οὖν | coordinante | inferencia | certeza: certain
 - cn2. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. συνερχομένων (οὖν) ὑμῶν ἐπὶ τὸ αὐτὸ (οὐκ) ==ἔστιν== κυριακὸν δεῖπνον φαγεῖν
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 11:19 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7119,11 +8507,17 @@ C1. συνερχομένων (οὖν) ὑμῶν ἐπὶ τὸ αὐτὸ (ο�
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἕκαστος (γὰρ) τὸ ἴδιον δεῖπνον ==προλαμβάνει== ἐν τῷ φαγεῖν
     C2. (καὶ) ὃς μὲν ==πεινᾷ==
         C3. ὃς (δὲ) ==μεθύει==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 11:20 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7160,7 +8554,7 @@ C1. ἕκαστος (γὰρ) τὸ ἴδιον δεῖπνον ==προλαμβ
 - cn7. μὴ | negación | negación | certeza: certain
 - cn8. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μὴ) (γὰρ) οἰκίας (οὐκ) ==ἔχετε== εἰς τὸ ἐσθίειν (καὶ) πίνειν (ἢ) τῆς ἐκκλησίας τοῦ θεοῦ
     C2. ==καταφρονεῖτε==
@@ -7168,6 +8562,12 @@ C1. (μὴ) (γὰρ) οἰκίας (οὐκ) ==ἔχετε== εἰς τὸ ἐ�
 C4. ==εἴπω== ὑμῖν
 C5. ==ἐπαινέσω== ὑμᾶς ἐν τούτῳ
 C6. (οὐκ) ==ἐπαινῶ==
+
+### Conexiones entre versículos
+
+- cn2. γὰρ | posible conexión hacia 1corintios 11:21 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7197,12 +8597,18 @@ C6. (οὐκ) ==ἐπαινῶ==
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐγὼ (γὰρ) ==παρέλαβον== ἀπὸ τοῦ κυρίου ὃ
     C2. (καὶ) ==παρέδωκα== ὑμῖν (ὅτι) ὁ κύριος ἰησοῦς ἐν τῇ νυκτὶ ᾗ
         C3. ==παρεδίδετο==
 C4. ==ἔλαβεν== ἄρτον
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 11:22 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7230,12 +8636,18 @@ C4. ==ἔλαβεν== ἄρτον
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) εὐχαριστήσας ==ἔκλασεν==
     C2. (καὶ) ==εἶπεν== τοῦτό μού
 C3. ==ἐστιν== τὸ σῶμα τὸ ὑπὲρ ὑμῶν τοῦτο
 C4. ==ποιεῖτε== εἰς τὴν ἐμὴν ἀνάμνησιν
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 11:23 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7263,11 +8675,17 @@ C4. ==ποιεῖτε== εἰς τὴν ἐμὴν ἀνάμνησιν
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. ἐὰν | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὡσαύτως (καὶ) τὸ ποτήριον μετὰ τὸ δειπνῆσαι λέγων τοῦτο τὸ ποτήριον ἡ καινὴ διαθήκη ==ἐστὶν== ἐν τῷ ἐμῷ αἵματι τοῦτο
 C2. ==ποιεῖτε== ὁσάκις
     C3. (ἐὰν) ==πίνητε== εἰς τὴν ἐμὴν ἀνάμνησιν
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 11:24 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7294,12 +8712,20 @@ C2. ==ποιεῖτε== ὁσάκις
 - cn2. ἐὰν | subordinante | condición | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁσάκις (γὰρ) (ἐὰν) ==ἐσθίητε== τὸν ἄρτον τοῦτον (καὶ) τὸ ποτήριον
     C2. ==πίνητε== τὸν θάνατον τοῦ κυρίου
 C3. ==καταγγέλλετε== ἄχρι οὗ
 C4. ==ἔλθῃ==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 11:25 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. ἐὰν | posible conexión hacia 1corintios 11:25 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7326,11 +8752,17 @@ C4. ==ἔλθῃ==
 - cn2. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) ὃς ἂν ==ἐσθίῃ== τὸν ἄρτον
     C2. (ἢ) ==πίνῃ== τὸ ποτήριον τοῦ κυρίου ἀναξίως ἔνοχος
 C3. ==ἔσται== τοῦ σώματος (καὶ) τοῦ αἵματος τοῦ κυρίου
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 11:26 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7356,11 +8788,15 @@ C3. ==ἔσται== τοῦ σώματος (καὶ) τοῦ αἵματος τ�
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==δοκιμαζέτω== (δὲ) ἄνθρωπος ἑαυτόν (καὶ) οὕτως ἐκ τοῦ ἄρτου
     C2. ==ἐσθιέτω== (καὶ) ἐκ τοῦ ποτηρίου
         C3. ==πινέτω==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -7389,10 +8825,18 @@ C1. ==δοκιμαζέτω== (δὲ) ἄνθρωπος ἑαυτόν (καὶ) �
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ (γὰρ) ἐσθίων (καὶ) πίνων κρίμα ἑαυτῷ ==ἐσθίει==
     C2. (καὶ) ==πίνει== (μὴ) διακρίνων τὸ σῶμα
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 11:28 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn2. καὶ | posible conexión hacia 1corintios 11:28 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7414,9 +8858,17 @@ C1. ὁ (γὰρ) ἐσθίων (καὶ) πίνων κρίμα ἑαυτῷ ==�
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. διὰ τοῦτο ἐν ὑμῖν πολλοὶ ἀσθενεῖς (καὶ) ἄρρωστοι (καὶ) ==κοιμῶνται== ἱκανοί
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 11:29 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καὶ | posible conexión hacia 1corintios 11:29 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7439,10 +8891,18 @@ C1. διὰ τοῦτο ἐν ὑμῖν πολλοὶ ἀσθενεῖς (κα�
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 - cn3. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δὲ) ἑαυτοὺς ==διεκρίνομεν== (οὐκ) ἂν
 C2. ==ἐκρινόμεθα==
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 11:30 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 11:30 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7467,10 +8927,16 @@ C2. ==ἐκρινόμεθα==
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn3. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. κρινόμενοι (δὲ) ὑπὸ κυρίου ==παιδευόμεθα== (ἵνα) (μὴ) σὺν τῷ κόσμῳ
     C2. ==κατακριθῶμεν==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 11:31 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7493,9 +8959,15 @@ C1. κρινόμενοι (δὲ) ὑπὸ κυρίου ==παιδευόμεθα=
 
 - cn1. ὥστε | subordinante | resultado/inferencia | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) ἀδελφοί μου συνερχόμενοι εἰς τὸ φαγεῖν ἀλλήλους ==ἐκδέχεσθε==
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 11:32 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7523,13 +8995,19 @@ C1. (ὥστε) ἀδελφοί μου συνερχόμενοι εἰς τὸ φ
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 - cn5. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴ) τις ==πεινᾷ== ἐν οἴκῳ
 C2. ==ἐσθιέτω== (ἵνα) (μὴ) εἰς κρίμα
     C3. ==συνέρχησθε== τὰ (δὲ) λοιπὰ (ὡς) ἂν
         C4. ==ἔλθω==
 C5. ==διατάξομαι==
+
+### Conexiones entre versículos
+
+- cn1. εἴ | posible conexión hacia 1corintios 11:33 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7555,9 +9033,15 @@ C5. ==διατάξομαι==
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. οὐ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. περὶ (δὲ) τῶν πνευματικῶν ἀδελφοί (οὐ) ==θέλω== ὑμᾶς ἀγνοεῖν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 11:versículo anterior | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7581,11 +9065,15 @@ C1. περὶ (δὲ) τῶν πνευματικῶν ἀδελφοί (οὐ) ==
 - cn1. ὅτι | subordinante | contenido/explicación | certeza: certain
 - cn2. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==οἴδατε== (ὅτι) ὅτε ἔθνη
     C2. ==ἦτε== πρὸς τὰ εἴδωλα τὰ ἄφωνα (ὡς) ἂν
         C3. ==ἤγεσθε== ἀπαγόμενοι
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -7615,11 +9103,17 @@ C1. ==οἴδατε== (ὅτι) ὅτε ἔθνη
 - cn4. εἰ | subordinante | condición | certeza: certain
 - cn5. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (διὸ) ==γνωρίζω== ὑμῖν (ὅτι) οὐδεὶς ἐν πνεύματι θεοῦ λαλῶν
     C2. ==λέγει== ἀνάθεμα ἰησοῦς (καὶ) οὐδεὶς
         C3. ==δύναται== εἰπεῖν κύριος ἰησοῦς (εἰ) (μὴ) ἐν πνεύματι ἁγίῳ
+
+### Conexiones entre versículos
+
+- cn1. διὸ | posible conexión hacia 1corintios 12:2 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7642,9 +9136,15 @@ C1. (διὸ) ==γνωρίζω== ὑμῖν (ὅτι) οὐδεὶς ἐν πν�
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. διαιρέσεις (δὲ) χαρισμάτων ==εἰσίν== τὸ (δὲ) αὐτὸ πνεῦμα
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 12:3 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7665,9 +9165,15 @@ C1. διαιρέσεις (δὲ) χαρισμάτων ==εἰσίν== τὸ (δ�
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) διαιρέσεις διακονιῶν ==εἰσιν== (καὶ) ὁ αὐτὸς κύριος
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 12:4 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7689,9 +9195,15 @@ C1. (καὶ) διαιρέσεις διακονιῶν ==εἰσιν== (καὶ)
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) διαιρέσεις ἐνεργημάτων ==εἰσίν== ὁ (δὲ) αὐτὸς θεός ὁ ἐνεργῶν τὰ πάντα ἐν πᾶσιν
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 12:5 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7712,9 +9224,15 @@ C1. (καὶ) διαιρέσεις ἐνεργημάτων ==εἰσίν== ὁ (
 
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἑκάστῳ (δὲ) ==δίδοται== ἡ φανέρωσις τοῦ πνεύματος πρὸς τὸ συμφέρον
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 12:6 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7735,9 +9253,15 @@ C1. ἑκάστῳ (δὲ) ==δίδοται== ἡ φανέρωσις τοῦ π�
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ᾧ μὲν (γὰρ) διὰ τοῦ πνεύματος ==δίδοται== λόγος σοφίας ἄλλῳ (δὲ) λόγος γνώσεως κατὰ τὸ αὐτὸ πνεῦμα
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 12:7 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7761,10 +9285,16 @@ C1. ᾧ μὲν (γὰρ) διὰ τοῦ πνεύματος ==δίδοται== 
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πάντα (δὲ) ταῦτα ==ἐνεργεῖ== τὸ ἓν (καὶ) τὸ αὐτὸ πνεῦμα διαιροῦν ἰδίᾳ ἑκάστῳ
     C2. (καθὼς) ==βούλεται==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 12:10 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7792,11 +9322,19 @@ C1. πάντα (δὲ) ταῦτα ==ἐνεργεῖ== τὸ ἓν (καὶ) τ
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καθάπερ) (γὰρ) τὸ σῶμα ἕν ==ἐστιν== (καὶ) μέλη πολλὰ
     C2. ==ἔχει== πάντα (δὲ) τὰ μέλη τοῦ σώματος πολλὰ ὄντα ἕν
         C3. ==ἐστιν== σῶμα οὕτως (καὶ) ὁ χριστός
+
+### Conexiones entre versículos
+
+- cn1. καθάπερ | posible conexión hacia 1corintios 12:11 | comparación/manera | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 12:11 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7825,10 +9363,18 @@ C1. (καθάπερ) (γὰρ) τὸ σῶμα ἕν ==ἐστιν== (καὶ) �
 - cn6. εἴτε | coordinante | alternativa | certeza: certain
 - cn7. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (γὰρ) ἐν ἑνὶ πνεύματι ἡμεῖς πάντες εἰς ἓν σῶμα ==ἐβαπτίσθημεν== (εἴτε) ἰουδαῖοι (εἴτε) ἕλληνες (εἴτε) δοῦλοι (εἴτε) ἐλεύθεροι (καὶ) πάντες ἓν πνεῦμα
     C2. ==ἐποτίσθημεν==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 12:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 12:12 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7852,9 +9398,17 @@ C1. (καὶ) (γὰρ) ἐν ἑνὶ πνεύματι ἡμεῖς πάντε�
 - cn3. οὐκ | negación | negación | certeza: certain
 - cn4. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (γὰρ) τὸ σῶμα (οὐκ) ==ἔστιν== ἓν μέλος (ἀλλὰ) πολλά
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 12:13 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 12:13 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7882,12 +9436,18 @@ C1. (καὶ) (γὰρ) τὸ σῶμα (οὐκ) ==ἔστιν== ἓν μέλο
 - cn5. οὐ | negación | negación | certeza: certain
 - cn6. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) ==εἴπῃ== ὁ πούς
     C2. (ὅτι) (οὐκ) ==εἰμὶ== χείρ
 C3. (οὐκ) ==εἰμὶ== ἐκ τοῦ σώματος (οὐ) παρὰ τοῦτο
 C4. (οὐκ) ==ἔστιν== ἐκ τοῦ σώματος
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 12:14 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7919,12 +9479,20 @@ C4. (οὐκ) ==ἔστιν== ἐκ τοῦ σώματος
 - cn6. οὐ | negación | negación | certeza: certain
 - cn7. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (ἐὰν) ==εἴπῃ== τὸ οὖς
     C2. (ὅτι) (οὐκ) ==εἰμὶ== ὀφθαλμός
 C3. (οὐκ) ==εἰμὶ== ἐκ τοῦ σώματος (οὐ) παρὰ τοῦτο
 C4. (οὐκ) ==ἔστιν== ἐκ τοῦ σώματος
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 12:15 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ἐὰν | posible conexión hacia 1corintios 12:15 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7949,10 +9517,16 @@ C4. (οὐκ) ==ἔστιν== ἐκ τοῦ σώματος
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. καθὼς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. νυνὶ (δὲ) ὁ θεὸς ==ἔθετο== τὰ μέλη ἓν ἕκαστον αὐτῶν ἐν τῷ σώματι
     C2. (καθὼς) ==ἠθέλησεν==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 12:17 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -7974,9 +9548,17 @@ C1. νυνὶ (δὲ) ὁ θεὸς ==ἔθετο== τὰ μέλη ἓν ἕκα
 - cn1. εἰ | subordinante | condición | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δὲ) ==ἦν== τὰ πάντα ἓν μέλος ποῦ τὸ σῶμα
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 12:18 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 12:18 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8003,11 +9585,15 @@ C1. (εἰ) (δὲ) ==ἦν== τὰ πάντα ἓν μέλος ποῦ τὸ σ
 - cn4. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn5. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) ==δύναται== (δὲ) ὁ ὀφθαλμὸς εἰπεῖν τῇ χειρί χρείαν σου
     C2. (οὐκ) ==ἔχω== (ἢ) πάλιν ἡ κεφαλὴ τοῖς ποσίν χρείαν ὑμῶν
         C3. (οὐκ) ==ἔχω==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8031,9 +9617,15 @@ C1. (οὐ) ==δύναται== (δὲ) ὁ ὀφθαλμὸς εἰπεῖν τ�
 
 - cn1. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλὰ) πολλῷ μᾶλλον τὰ δοκοῦντα μέλη τοῦ σώματος ἀσθενέστερα ὑπάρχειν ἀναγκαῖά ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. ἀλλὰ | posible conexión hacia 1corintios 12:21 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8057,11 +9649,17 @@ C1. (ἀλλὰ) πολλῷ μᾶλλον τὰ δοκοῦντα μέλη το
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) ἃ ==δοκοῦμεν== ἀτιμότερα εἶναι τοῦ σώματος τούτοις τιμὴν περισσοτέραν
 C2. ==περιτίθεμεν== (καὶ) τὰ ἀσχήμονα ἡμῶν εὐσχημοσύνην περισσοτέραν
     C3. ==ἔχει==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 12:22 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8088,10 +9686,16 @@ C2. ==περιτίθεμεν== (καὶ) τὰ ἀσχήμονα ἡμῶν ε�
 - cn2. οὐ | negación | negación | certeza: certain
 - cn3. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τὰ (δὲ) εὐσχήμονα ἡμῶν (οὐ) χρείαν ==ἔχει== (ἀλλὰ) ὁ θεὸς
     C2. ==συνεκέρασεν== τὸ σῶμα τῷ ὑστεροῦντι περισσοτέραν δοὺς τιμήν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 12:23 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8115,10 +9719,16 @@ C1. τὰ (δὲ) εὐσχήμονα ἡμῶν (οὐ) χρείαν ==ἔχε�
 - cn2. μὴ | negación | negación | certeza: certain
 - cn3. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἵνα) (μὴ) ==ᾖ== σχίσμα ἐν τῷ σώματι (ἀλλὰ) τὸ αὐτὸ ὑπὲρ ἀλλήλων
     C2. ==μεριμνῶσι== τὰ μέλη
+
+### Conexiones entre versículos
+
+- cn1. ἵνα | posible conexión hacia 1corintios 12:24 | propósito/resultado | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8144,12 +9754,20 @@ C1. (ἵνα) (μὴ) ==ᾖ== σχίσμα ἐν τῷ σώματι (ἀλλὰ)
 - cn2. εἴτε | coordinante | alternativa | certeza: certain
 - cn3. εἴτε | coordinante | alternativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (εἴτε) ==πάσχει== ἓν μέλος
 C2. ==συμπάσχει== πάντα τὰ μέλη (εἴτε)
     C3. ==δοξάζεται== μέλος
 C4. ==συγχαίρει== πάντα τὰ μέλη
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 12:25 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. εἴτε | posible conexión hacia 1corintios 12:25 | alternativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8173,9 +9791,15 @@ C4. ==συγχαίρει== πάντα τὰ μέλη
 - cn1. δέ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὑμεῖς (δέ) ==ἐστε== σῶμα χριστοῦ (καὶ) μέλη ἐκ μέρους
+
+### Conexiones entre versículos
+
+- cn1. δέ | posible conexión hacia 1corintios 12:26 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8195,9 +9819,15 @@ C1. ὑμεῖς (δέ) ==ἐστε== σῶμα χριστοῦ (καὶ) μέλ
 
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) οὓς μὲν ==ἔθετο== ὁ θεὸς ἐν τῇ ἐκκλησίᾳ πρῶτον ἀποστόλους δεύτερον προφήτας τρίτον διδασκάλους ἔπειτα δυνάμεις ἔπειτα χαρίσματα ἰαμάτων ἀντιλήμψεις κυβερνήσεις γένη γλωσσῶν
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 12:27 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8221,11 +9851,15 @@ C1. (καὶ) οὓς μὲν ==ἔθετο== ὁ θεὸς ἐν τῇ ἐκκ�
 - cn2. μὴ | negación | negación | certeza: certain
 - cn3. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (μὴ) πάντες χαρίσματα ==ἔχουσιν== ἰαμάτων (μὴ) πάντες γλώσσαις
 C2. ==λαλοῦσιν== (μὴ) πάντες
 C3. ==διερμηνεύουσιν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8249,10 +9883,14 @@ C3. ==διερμηνεύουσιν==
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==ζηλοῦτε== (δὲ) τὰ χαρίσματα τὰ μείζονα (καὶ) ἔτι καθʼ ὑπερβολὴν ὁδὸν ὑμῖν
     C2. ==δείκνυμι==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8281,11 +9919,17 @@ C1. ==ζηλοῦτε== (δὲ) τὰ χαρίσματα τὰ μείζονα (�
 - cn4. μὴ | negación | negación | certeza: certain
 - cn5. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) ταῖς γλώσσαις τῶν ἀνθρώπων ==λαλῶ== (καὶ) τῶν ἀγγέλων ἀγάπην
     C2. (δὲ) (μὴ) ==ἔχω==
 C3. ==γέγονα== χαλκὸς ἠχῶν (ἢ) κύμβαλον ἀλαλάζον
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 12:versículo anterior | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8318,13 +9962,21 @@ C3. ==γέγονα== χαλκὸς ἠχῶν (ἢ) κύμβαλον ἀλαλά
 - cn6. δὲ | coordinante | coordinación | certeza: certain
 - cn7. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (ἐὰν) ==ἔχω== προφητείαν
     C2. (καὶ) ==εἰδῶ== τὰ μυστήρια πάντα (καὶ) πᾶσαν τὴν γνῶσιν ⸄καὶ ἐὰν⸅
         C3. ==ἔχω== πᾶσαν τὴν πίστιν (ὥστε) ὄρη μεθιστάναι ἀγάπην
             C4. (δὲ) (μὴ) ==ἔχω== οὐθέν
 C5. ==εἰμι==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 13:1 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ἐὰν | posible conexión hacia 1corintios 13:1 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8357,13 +10009,21 @@ C5. ==εἰμι==
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 - cn5. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (ἐὰν) ==ψωμίσω== πάντα τὰ ὑπάρχοντά μου ⸄καὶ ἐὰν⸅
 C2. ==παραδῶ== τὸ σῶμά μου
     C3. (ἵνα) ==καυθήσομαι== ἀγάπην
         C4. (δὲ) (μὴ) ==ἔχω== οὐδὲν
 C5. ==ὠφελοῦμαι==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 13:2 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ἐὰν | posible conexión hacia 1corintios 13:2 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8393,13 +10053,17 @@ C5. ==ὠφελοῦμαι==
 - cn2. οὐ | negación | negación | certeza: certain
 - cn3. οὐ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡ ἀγάπη ==μακροθυμεῖ==
 C2. ==χρηστεύεται== ἡ ἀγάπη
 C3. (οὐ) ==ζηλοῖ== ἡ ἀγάπη
 C4. (οὐ) ==περπερεύεται==
 C5. (οὐ) ==φυσιοῦται==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8429,12 +10093,16 @@ C5. (οὐ) ==φυσιοῦται==
 - cn3. οὐ | negación | negación | certeza: certain
 - cn4. οὐ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐκ) ==ἀσχημονεῖ==
 C2. (οὐ) ==ζητεῖ== τὰ ἑαυτῆς
 C3. (οὐ) ==παροξύνεται==
 C4. (οὐ) ==λογίζεται== τὸ κακόν
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8459,10 +10127,14 @@ C4. (οὐ) ==λογίζεται== τὸ κακόν
 - cn1. οὐ | negación | negación | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) ==χαίρει== ἐπὶ τῇ ἀδικίᾳ
 C2. ==συγχαίρει== (δὲ) τῇ ἀληθείᾳ
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8486,12 +10158,16 @@ C2. ==συγχαίρει== (δὲ) τῇ ἀληθείᾳ
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πάντα ==στέγει== πάντα
 C2. ==πιστεύει== πάντα
 C3. ==ἐλπίζει== πάντα
 C4. ==ὑπομένει==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8520,12 +10196,16 @@ C4. ==ὑπομένει==
 - cn3. εἴτε | coordinante | alternativa | certeza: certain
 - cn4. εἴτε | coordinante | alternativa | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἡ ἀγάπη οὐδέποτε ==πίπτει== (εἴτε) (δὲ) προφητεῖαι
     C2. ==καταργηθήσονται== (εἴτε) γλῶσσαι
         C3. ==παύσονται== (εἴτε) γνῶσις
             C4. ==καταργηθήσεται==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8550,10 +10230,16 @@ C1. ἡ ἀγάπη οὐδέποτε ==πίπτει== (εἴτε) (δὲ) πρ�
 - cn1. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐκ μέρους (γὰρ) ==γινώσκομεν== (καὶ) ἐκ μέρους
     C2. ==προφητεύομεν==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 13:8 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8576,10 +10262,16 @@ C1. ἐκ μέρους (γὰρ) ==γινώσκομεν== (καὶ) ἐκ μέρ
 - cn1. ὅταν | subordinante | temporal/condición | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὅταν) (δὲ) ==ἔλθῃ== τὸ τέλειον τὸ ἐκ μέρους
 C2. ==καταργηθήσεται==
+
+### Conexiones entre versículos
+
+- cn2. δὲ | posible conexión hacia 1corintios 13:9 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8607,7 +10299,7 @@ C2. ==καταργηθήσεται==
 - cn2. ὡς | subordinante | comparación/manera | certeza: certain
 - cn3. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὅτε ==ἤμην== νήπιος
 C2. ==ἐλάλουν== (ὡς) νήπιος
@@ -8615,6 +10307,10 @@ C2. ==ἐλάλουν== (ὡς) νήπιος
         C4. ==ἐλογιζόμην== (ὡς) νήπιος ὅτε
             C5. ==γέγονα== ἀνήρ
 C6. ==κατήργηκα== τὰ τοῦ νηπίου
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8646,12 +10342,16 @@ C6. ==κατήργηκα== τὰ τοῦ νηπίου
 - cn4. καθὼς | subordinante | comparación/manera | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==βλέπομεν== (γὰρ) ἄρτι διʼ ἐσόπτρου ἐν αἰνίγματι τότε (δὲ) πρόσωπον πρὸς πρόσωπον ἄρτι
     C2. ==γινώσκω== ἐκ μέρους τότε
         C3. (δὲ) ==ἐπιγνώσομαι==
             C4. (καθὼς) (καὶ) ==ἐπεγνώσθην==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8675,9 +10375,15 @@ C1. ==βλέπομεν== (γὰρ) ἄρτι διʼ ἐσόπτρου ἐν α�
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. νυνὶ (δὲ) ==μένει== πίστις ἐλπίς ἀγάπη τὰ τρία ταῦτα μείζων (δὲ) τούτων ἡ ἀγάπη
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 13:12 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8701,11 +10407,15 @@ C1. νυνὶ (δὲ) ==μένει== πίστις ἐλπίς ἀγάπη τὰ 
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 - cn3. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==διώκετε== τὴν ἀγάπην
 C2. ==ζηλοῦτε== (δὲ) τὰ πνευματικά μᾶλλον (δὲ)
     C3. (ἵνα) ==προφητεύητε==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8734,11 +10444,17 @@ C2. ==ζηλοῦτε== (δὲ) τὰ πνευματικά μᾶλλον (δὲ)
 - cn4. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn5. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ (γὰρ) λαλῶν γλώσσῃ (οὐκ) ἀνθρώποις ==λαλεῖ== (ἀλλὰ) θεῷ οὐδεὶς (γὰρ)
     C2. ==ἀκούει== πνεύματι
         C3. (δὲ) ==λαλεῖ== μυστήρια
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 14:1 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8763,9 +10479,15 @@ C1. ὁ (γὰρ) λαλῶν γλώσσῃ (οὐκ) ἀνθρώποις ==λα
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ (δὲ) προφητεύων ἀνθρώποις ==λαλεῖ== οἰκοδομὴν (καὶ) παράκλησιν (καὶ) παραμυθίαν
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 14:2 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8788,10 +10510,14 @@ C1. ὁ (δὲ) προφητεύων ἀνθρώποις ==λαλεῖ== οἰκ
 
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὁ λαλῶν γλώσσῃ ἑαυτὸν ==οἰκοδομεῖ== ὁ (δὲ) προφητεύων ἐκκλησίαν
     C2. ==οἰκοδομεῖ==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8825,12 +10551,16 @@ C1. ὁ λαλῶν γλώσσῃ ἑαυτὸν ==οἰκοδομεῖ== ὁ (�
 - cn7. μὴ | negación | negación | certeza: certain
 - cn8. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==θέλω== (δὲ) πάντας ὑμᾶς λαλεῖν γλώσσαις μᾶλλον (δὲ)
     C2. (ἵνα) ==προφητεύητε== μείζων (δὲ) ὁ προφητεύων (ἢ) ὁ λαλῶν γλώσσαις ἐκτὸς
         C3. (εἰ) (μὴ) ==διερμηνεύῃ== (ἵνα) ἡ ἐκκλησία οἰκοδομὴν
             C4. ==λάβῃ==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -8863,11 +10593,19 @@ C1. ==θέλω== (δὲ) πάντας ὑμᾶς λαλεῖν γλώσσαις 
 - cn7. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn8. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. νῦν (δέ) ἀδελφοί (ἐὰν) ==ἔλθω== πρὸς ὑμᾶς γλώσσαις λαλῶν τί ὑμᾶς
 C2. ==ὠφελήσω== (ἐὰν) (μὴ) ὑμῖν
     C3. ==λαλήσω== (ἢ) ἐν ἀποκαλύψει (ἢ) ἐν γνώσει (ἢ) ἐν προφητείᾳ (ἢ) ἐν διδαχῇ
+
+### Conexiones entre versículos
+
+- cn1. δέ | posible conexión hacia 1corintios 14:5 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ἐὰν | posible conexión hacia 1corintios 14:5 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8897,10 +10635,20 @@ C2. ==ὠφελήσω== (ἐὰν) (μὴ) ὑμῖν
 - cn4. μὴ | negación | negación | certeza: certain
 - cn5. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ὅμως τὰ ἄψυχα φωνὴν διδόντα (εἴτε) αὐλὸς (εἴτε) κιθάρα (ἐὰν) διαστολὴν τοῖς φθόγγοις (μὴ) ==δῷ== πῶς
 C2. ==γνωσθήσεται== τὸ αὐλούμενον (ἢ) τὸ κιθαριζόμενον
+
+### Conexiones entre versículos
+
+- cn1. εἴτε | posible conexión hacia 1corintios 14:6 | alternativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. εἴτε | posible conexión hacia 1corintios 14:6 | alternativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn3. ἐὰν | posible conexión hacia 1corintios 14:6 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8924,10 +10672,20 @@ C2. ==γνωσθήσεται== τὸ αὐλούμενον (ἢ) τὸ κιθα�
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn3. ἐὰν | subordinante | condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) (γὰρ) (ἐὰν) ἄδηλον φωνὴν σάλπιγξ ==δῷ== τίς
 C2. ==παρασκευάσεται== εἰς πόλεμον
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 14:7 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 14:7 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- cn3. ἐὰν | posible conexión hacia 1corintios 14:7 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8955,11 +10713,19 @@ C2. ==παρασκευάσεται== εἰς πόλεμον
 - cn3. μὴ | negación | negación | certeza: certain
 - cn4. γὰρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. οὕτως (καὶ) ὑμεῖς διὰ τῆς γλώσσης (ἐὰν) (μὴ) εὔσημον λόγον ==δῶτε== πῶς
 C2. ==γνωσθήσεται== τὸ λαλούμενον
 C3. ==ἔσεσθε== (γὰρ) εἰς ἀέρα λαλοῦντες
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 14:8 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ἐὰν | posible conexión hacia 1corintios 14:8 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -8983,9 +10749,15 @@ C3. ==ἔσεσθε== (γὰρ) εἰς ἀέρα λαλοῦντες
 - cn1. εἰ | subordinante | condición | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τοσαῦτα (εἰ) τύχοι γένη φωνῶν ==εἰσιν== ἐν κόσμῳ (καὶ) οὐδὲν ἄφωνον
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 14:9 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9011,10 +10783,18 @@ C1. τοσαῦτα (εἰ) τύχοι γένη φωνῶν ==εἰσιν== ἐ�
 - cn3. μὴ | negación | negación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (οὖν) (μὴ) ==εἰδῶ== τὴν δύναμιν τῆς φωνῆς
 C2. ==ἔσομαι== τῷ λαλοῦντι βάρβαρος (καὶ) ὁ λαλῶν ἐν ἐμοὶ βάρβαρος
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 14:10 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. οὖν | posible conexión hacia 1corintios 14:10 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9039,11 +10819,17 @@ C2. ==ἔσομαι== τῷ λαλοῦντι βάρβαρος (καὶ) ὁ λ�
 - cn2. ἐπεὶ | subordinante | cause/temporal | certeza: certain
 - cn3. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. οὕτως (καὶ) ὑμεῖς (ἐπεὶ) ζηλωταί ==ἐστε== πνευμάτων πρὸς τὴν οἰκοδομὴν τῆς ἐκκλησίας
 C2. ==ζητεῖτε==
     C3. (ἵνα) ==περισσεύητε==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 14:11 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9068,10 +10854,16 @@ C2. ==ζητεῖτε==
 - cn1. διὸ | coordinante | inferencia | certeza: certain
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (διὸ) ὁ λαλῶν γλώσσῃ ==προσευχέσθω==
     C2. (ἵνα) ==διερμηνεύῃ==
+
+### Conexiones entre versículos
+
+- cn1. διὸ | posible conexión hacia 1corintios 14:12 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9096,11 +10888,19 @@ C1. (διὸ) ὁ λαλῶν γλώσσῃ ==προσευχέσθω==
 - cn2. γὰρ | coordinante | explicación/apoyo | certeza: certain
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (γὰρ) ==προσεύχωμαι== γλώσσῃ τὸ πνεῦμά μου
 C2. ==προσεύχεται== ὁ (δὲ) νοῦς μου ἄκαρπός
     C3. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 14:13 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. γὰρ | posible conexión hacia 1corintios 14:13 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9130,13 +10930,19 @@ C2. ==προσεύχεται== ὁ (δὲ) νοῦς μου ἄκαρπός
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τί (οὖν) ==ἐστιν==
 C2. ==προσεύξομαι== τῷ πνεύματι
 C3. ==προσεύξομαι== (δὲ) (καὶ) τῷ νοΐ
     C4. ==ψαλῶ== τῷ πνεύματι
 C5. ==ψαλῶ== (δὲ) (καὶ) τῷ νοΐ
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 14:14 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9167,12 +10973,18 @@ C5. ==ψαλῶ== (δὲ) (καὶ) τῷ νοΐ
 - cn3. ἐπειδὴ | subordinante | explicación/apoyo | certeza: certain
 - cn4. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐπεὶ) (ἐὰν) ==εὐλογῇς== πνεύματι ὁ ἀναπληρῶν τὸν τόπον τοῦ ἰδιώτου πῶς
 C2. ==ἐρεῖ== τὸ ἀμήν ἐπὶ τῇ σῇ εὐχαριστίᾳ (ἐπειδὴ) τί
     C3. ==λέγεις==
 C4. (οὐκ) ==οἶδεν==
+
+### Conexiones entre versículos
+
+- cn2. ἐὰν | posible conexión hacia 1corintios 14:15 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9198,10 +11010,16 @@ C4. (οὐκ) ==οἶδεν==
 - cn2. ἀλλʼ | coordinante | contraste | certeza: certain
 - cn3. οὐκ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. σὺ μὲν (γὰρ) καλῶς ==εὐχαριστεῖς== (ἀλλʼ) ὁ ἕτερος
     C2. (οὐκ) ==οἰκοδομεῖται==
+
+### Conexiones entre versículos
+
+- cn1. γὰρ | posible conexión hacia 1corintios 14:16 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9223,10 +11041,14 @@ C1. σὺ μὲν (γὰρ) καλῶς ==εὐχαριστεῖς== (ἀλλʼ)
 
 - ninguno
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==εὐχαριστῶ== τῷ θεῷ πάντων ὑμῶν μᾶλλον γλώσσαις
 C2. ==λαλῶ==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -9252,10 +11074,16 @@ C2. ==λαλῶ==
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἀλλὰ) ἐν ἐκκλησίᾳ ==θέλω== πέντε λόγους τῷ νοΐ μου λαλῆσαι (ἵνα) (καὶ) ἄλλους
     C2. ==κατηχήσω== (ἢ) μυρίους λόγους ἐν γλώσσῃ
+
+### Conexiones entre versículos
+
+- cn1. ἀλλὰ | posible conexión hacia 1corintios 14:18 | contraste | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9280,11 +11108,15 @@ C1. (ἀλλὰ) ἐν ἐκκλησίᾳ ==θέλω== πέντε λόγους �
 - cn2. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn3. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἀδελφοί (μὴ) παιδία ==γίνεσθε== ταῖς φρεσίν (ἀλλὰ) τῇ κακίᾳ
     C2. ==νηπιάζετε== ταῖς (δὲ) φρεσὶν τέλειοι
         C3. ==γίνεσθε==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -9311,12 +11143,16 @@ C1. ἀδελφοί (μὴ) παιδία ==γίνεσθε== ταῖς φρεσί
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ἐν τῷ νόμῳ ==γέγραπται== (ὅτι) ἐν ἑτερογλώσσοις (καὶ) ἐν χείλεσιν ἑτέρων
     C2. ==λαλήσω== τῷ λαῷ τούτῳ (καὶ) οὐδʼ οὕτως
         C3. ==εἰσακούσονταί== μου
 C4. ==λέγει== κύριος
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -9346,9 +11182,15 @@ C4. ==λέγει== κύριος
 - cn5. οὐ | negación | negación | certeza: certain
 - cn6. ἀλλὰ | coordinante | contraste | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) αἱ γλῶσσαι εἰς σημεῖόν ==εἰσιν== (οὐ) τοῖς πιστεύουσιν (ἀλλὰ) τοῖς ἀπίστοις ἡ (δὲ) προφητεία (οὐ) τοῖς ἀπίστοις (ἀλλὰ) τοῖς πιστεύουσιν
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 14:21 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9378,13 +11220,21 @@ C1. (ὥστε) αἱ γλῶσσαι εἰς σημεῖόν ==εἰσιν== (�
 - cn6. οὐκ | negación | negación | certeza: certain
 - cn7. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (οὖν) ==συνέλθῃ== ἡ ἐκκλησία ὅλη ἐπὶ τὸ αὐτὸ (καὶ) πάντες
     C2. ==λαλῶσιν== γλώσσαις
 C3. ==εἰσέλθωσιν== (δὲ) ἰδιῶται (ἢ) ἄπιστοι
     C4. (οὐκ) ==ἐροῦσιν==
         C5. (ὅτι) ==μαίνεσθε==
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 14:22 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. οὖν | posible conexión hacia 1corintios 14:22 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9414,12 +11264,20 @@ C3. ==εἰσέλθωσιν== (δὲ) ἰδιῶται (ἢ) ἄπιστοι
 - cn3. δέ | coordinante | coordinación | certeza: certain
 - cn4. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (δὲ) πάντες ==προφητεύωσιν==
 C2. ==εἰσέλθῃ== (δέ) τις ἄπιστος (ἢ) ἰδιώτης
     C3. ==ἐλέγχεται== ὑπὸ πάντων
 C4. ==ἀνακρίνεται== ὑπὸ πάντων
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 14:23 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 14:23 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9447,11 +11305,15 @@ C4. ==ἀνακρίνεται== ὑπὸ πάντων
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 - cn2. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τὰ κρυπτὰ τῆς καρδίας αὐτοῦ φανερὰ ==γίνεται== (καὶ) οὕτως πεσὼν ἐπὶ πρόσωπον
     C2. ==προσκυνήσει== τῷ θεῷ ἀπαγγέλλων (ὅτι) ὄντως ὁ θεὸς ἐν ὑμῖν
         C3. ==ἐστιν==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -9481,7 +11343,7 @@ C1. τὰ κρυπτὰ τῆς καρδίας αὐτοῦ φανερὰ ==γί
 - cn1. οὖν | coordinante | inferencia | certeza: certain
 - cn2. ὅταν | subordinante | temporal/condición | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. τί (οὖν) ==ἐστιν== ἀδελφοί
     C2. (ὅταν) ==συνέρχησθε== ἕκαστος ψαλμὸν
@@ -9491,6 +11353,12 @@ C5. ==ἔχει== γλῶσσαν
 C6. ==ἔχει== ἑρμηνείαν
 C7. ==ἔχει== πάντα πρὸς οἰκοδομὴν
 C8. ==γινέσθω==
+
+### Conexiones entre versículos
+
+- cn1. οὖν | posible conexión hacia 1corintios 14:25 | inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9521,10 +11389,16 @@ C8. ==γινέσθω==
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 - cn4. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴτε) γλώσσῃ τις ==λαλεῖ== κατὰ δύο (ἢ) τὸ πλεῖστον τρεῖς (καὶ) ἀνὰ μέρος (καὶ) εἷς
     C2. ==διερμηνευέτω==
+
+### Conexiones entre versículos
+
+- cn1. εἴτε | posible conexión hacia 1corintios 14:26 | alternativa | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9551,11 +11425,19 @@ C1. (εἴτε) γλώσσῃ τις ==λαλεῖ== κατὰ δύο (ἢ) τ�
 - cn4. δὲ | coordinante | coordinación | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (δὲ) (μὴ) ==ᾖ== διερμηνευτής
 C2. ==σιγάτω== ἐν ἐκκλησίᾳ ἑαυτῷ
     C3. (δὲ) ==λαλείτω== (καὶ) τῷ θεῷ
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 14:27 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 14:27 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9580,10 +11462,18 @@ C2. ==σιγάτω== ἐν ἐκκλησίᾳ ἑαυτῷ
 - cn2. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. προφῆται (δὲ) δύο (ἢ) τρεῖς ==λαλείτωσαν== (καὶ) οἱ ἄλλοι
     C2. ==διακρινέτωσαν==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 14:28 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. ἢ | posible conexión hacia 1corintios 14:28 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9607,10 +11497,18 @@ C1. προφῆται (δὲ) δύο (ἢ) τρεῖς ==λαλείτωσαν== 
 - cn1. ἐὰν | subordinante | condición | certeza: certain
 - cn2. δὲ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἐὰν) (δὲ) ἄλλῳ ==ἀποκαλυφθῇ== καθημένῳ ὁ πρῶτος
 C2. ==σιγάτω==
+
+### Conexiones entre versículos
+
+- cn1. ἐὰν | posible conexión hacia 1corintios 14:29 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δὲ | posible conexión hacia 1corintios 14:29 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9636,11 +11534,15 @@ C2. ==σιγάτω==
 - cn2. ἵνα | subordinante | propósito/resultado | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==δύνασθε== (γὰρ) καθʼ ἕνα πάντες προφητεύειν (ἵνα) πάντες
     C2. ==μανθάνωσιν== (καὶ) πάντες
         C3. ==παρακαλῶνται==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -9662,9 +11564,15 @@ C1. ==δύνασθε== (γὰρ) καθʼ ἕνα πάντες προφητεύ�
 
 - cn1. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (καὶ) πνεύματα προφητῶν προφήταις ==ὑποτάσσεται==
+
+### Conexiones entre versículos
+
+- cn1. καὶ | posible conexión hacia 1corintios 14:31 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9687,9 +11595,15 @@ C1. (καὶ) πνεύματα προφητῶν προφήταις ==ὑποτ�
 - cn3. ἀλλὰ | coordinante | contraste | certeza: certain
 - cn4. ὡς | subordinante | comparación/manera | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (οὐ) (γάρ) ==ἐστιν== ἀκαταστασίας ὁ θεὸς (ἀλλὰ) εἰρήνης (ὡς) ἐν πάσαις ταῖς ἐκκλησίαις τῶν ἁγίων
+
+### Conexiones entre versículos
+
+- cn2. γάρ | posible conexión hacia 1corintios 14:32 | explicación/apoyo | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9717,12 +11631,16 @@ C1. (οὐ) (γάρ) ==ἐστιν== ἀκαταστασίας ὁ θεὸς (�
 - cn4. καθὼς | subordinante | comparación/manera | certeza: certain
 - cn5. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. αἱ γυναῖκες ἐν ταῖς ἐκκλησίαις ==σιγάτωσαν== (οὐ) (γὰρ)
     C2. ==ἐπιτρέπεται== αὐταῖς λαλεῖν
         C3. (ἀλλὰ) ==ὑποτασσέσθωσαν== (καθὼς) (καὶ) ὁ νόμος
             C4. ==λέγει==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
@@ -9751,11 +11669,19 @@ C1. αἱ γυναῖκες ἐν ταῖς ἐκκλησίαις ==σιγάτω
 - cn2. δέ | coordinante | coordinación | certeza: certain
 - cn3. γάρ | coordinante | explicación/apoyo | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δέ) τι μαθεῖν ==θέλουσιν== ἐν οἴκῳ τοὺς ἰδίους ἄνδρας
 C2. ==ἐπερωτάτωσαν== αἰσχρὸν (γάρ)
     C3. ==ἐστιν== γυναικὶ λαλεῖν ἐν ἐκκλησίᾳ
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 14:34 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δέ | posible conexión hacia 1corintios 14:34 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9779,10 +11705,16 @@ C2. ==ἐπερωτάτωσαν== αἰσχρὸν (γάρ)
 - cn1. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn2. ἢ | coordinante | alternativa/comparación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ἢ) ἀφʼ ὑμῶν ὁ λόγος τοῦ θεοῦ ==ἐξῆλθεν== (ἢ) εἰς ὑμᾶς μόνους
     C2. ==κατήντησεν==
+
+### Conexiones entre versículos
+
+- cn1. ἢ | posible conexión hacia 1corintios 14:35 | alternativa/comparación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9809,12 +11741,18 @@ C1. (ἢ) ἀφʼ ὑμῶν ὁ λόγος τοῦ θεοῦ ==ἐξῆλθεν
 - cn2. ἢ | coordinante | alternativa/comparación | certeza: certain
 - cn3. ὅτι | subordinante | contenido/explicación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἴ) τις ==δοκεῖ== προφήτης εἶναι (ἢ) πνευματικός
     C2. ==ἐπιγινωσκέτω== ἃ
 C3. ==γράφω== ὑμῖν (ὅτι) κυρίου
     C4. ==ἐστίν==
+
+### Conexiones entre versículos
+
+- cn1. εἴ | posible conexión hacia 1corintios 14:36 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9839,10 +11777,18 @@ C3. ==γράφω== ὑμῖν (ὅτι) κυρίου
 - cn1. εἰ | subordinante | condición | certeza: certain
 - cn2. δέ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (εἰ) (δέ) τις ==ἀγνοεῖ==
 C2. ==ἀγνοεῖται==
+
+### Conexiones entre versículos
+
+- cn1. εἰ | posible conexión hacia 1corintios 14:37 | condición | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. δέ | posible conexión hacia 1corintios 14:37 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9868,10 +11814,16 @@ C2. ==ἀγνοεῖται==
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. μὴ | negación | negación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. (ὥστε) ἀδελφοί μου ==ζηλοῦτε== τὸ προφητεύειν (καὶ) τὸ λαλεῖν
     C2. (μὴ) ==κωλύετε== γλώσσαις
+
+### Conexiones entre versículos
+
+- cn1. ὥστε | posible conexión hacia 1corintios 14:38 | resultado/inferencia | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=medium
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9893,9 +11845,17 @@ C1. (ὥστε) ἀδελφοί μου ==ζηλοῦτε== τὸ προφητε�
 - cn1. δὲ | coordinante | coordinación | certeza: certain
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. πάντα (δὲ) εὐσχημόνως (καὶ) κατὰ τάξιν ==γινέσθω==
+
+### Conexiones entre versículos
+
+- cn1. δὲ | posible conexión hacia 1corintios 14:39 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- cn2. καὶ | posible conexión hacia 1corintios 14:39 | coordinación | estado: REVIEW | uso: review-only; cross-verse-evidence
+  - motivo: Cross-verse candidate remains unconfirmed; confidence=low
+- Estas conexiones son evidencia para auditoría; no son estructura final confirmada.
 
 ### Observaciones estructurales
 
@@ -9920,12 +11880,16 @@ C1. πάντα (δὲ) εὐσχημόνως (καὶ) κατὰ τάξιν ==γ
 - cn2. καὶ | coordinante | coordinación | certeza: certain
 - cn3. καὶ | coordinante | coordinación | certeza: certain
 
-### Vista estructural
+### Vista estructural propuesta
 
 C1. ==γνωρίζω== (δὲ) ὑμῖν ἀδελφοί τὸ εὐαγγέλιον ὃ
     C2. ==εὐηγγελισάμην== ὑμῖν ὃ
         C3. (καὶ) ==παρελάβετε== ἐν ᾧ
             C4. (καὶ) ==ἑστήκατε==
+
+### Conexiones entre versículos
+
+- ninguna conexión entre versículos propuesta por la auditoría.
 
 ### Observaciones estructurales
 
