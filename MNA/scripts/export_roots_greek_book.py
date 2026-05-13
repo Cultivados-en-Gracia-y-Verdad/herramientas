@@ -13,7 +13,7 @@ It uses only:
 Current output:
 - detected verbs
 - finite/non-finite status
-- connector list
+- connector word list
 - Greek clause stream
 
 This is the canonical ROOTS structural reset layer.
@@ -21,58 +21,84 @@ This is the canonical ROOTS structural reset layer.
 
 import argparse
 import json
-import re
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import Dict, Iterable, List, Tuple
 
 FINITE_ENDINGS = {"I", "S", "M", "D"}
 
-# Clause-level connectors only. Simple negators are not listed as connectors here;
-# they remain inside the clause they negate.
+# Connector words should be listed whenever they appear.
+# This is detection, not yet clause-relationship ownership.
 CONNECTOR_GLOSSES = {
     "δέ": "coordination",
     "δὲ": "coordination",
     "καί": "coordination",
     "καὶ": "coordination",
+    "τε": "coordination",
+    "οὐδέ": "negative coordination",
+    "οὐδὲ": "negative coordination",
+    "μηδέ": "negative coordination",
+    "μηδὲ": "negative coordination",
+    "οὔτε": "negative coordination",
+    "μήτε": "negative coordination",
     "ἀλλά": "contrast",
     "ἀλλὰ": "contrast",
     "ἀλλʼ": "contrast",
-    "γάρ": "cause",
-    "γὰρ": "cause",
+    "πλήν": "contrast/exception",
+    "πλὴν": "contrast/exception",
+    "γάρ": "cause/ground",
+    "γὰρ": "cause/ground",
     "οὖν": "inference",
     "ἄρα": "inference",
     "ὥστε": "result/inference",
     "διό": "inference",
+    "διὸ": "inference",
     "διόπερ": "inference",
     "τοίνυν": "inference",
-    "ἵνα": "purpose",
+    "ἵνα": "purpose/result",
     "ὅπως": "purpose",
     "ὅτι": "content/cause",
     "ἐάν": "condition",
     "ἐὰν": "condition",
     "εἰ": "condition",
+    "εἴ": "condition",
     "εἴπερ": "condition",
-    "ὅταν": "temporal/condition",
+    "ἐπεί": "cause/temporal",
+    "ἐπεὶ": "cause/temporal",
     "ἐπειδή": "cause/ground",
     "ἐπειδὴ": "cause/ground",
+    "ὅταν": "temporal/condition",
+    "ἕως": "temporal",
     "καθώς": "comparison/manner",
     "καθὼς": "comparison/manner",
+    "καθάπερ": "comparison/manner",
+    "καθάπερ": "comparison/manner",
     "ὡς": "comparison/manner",
     "ὥσπερ": "comparison/manner",
+    "ἤ": "alternative/comparison",
+    "ἢ": "alternative/comparison",
+    "εἴτε": "alternative",
+    "μή": "negation",
+    "μὴ": "negation",
+    "οὐ": "negation",
+    "οὐκ": "negation",
+    "οὐχ": "negation",
 }
 
 SUBORDINATING_CONNECTORS = {
-    "ἵνα", "ὅπως", "ὅτι", "ἐάν", "ἐὰν", "εἰ", "εἴπερ", "ὅταν",
-    "ἐπειδή", "ἐπειδὴ", "καθώς", "καθὼς", "ὡς", "ὥσπερ", "ὥστε",
+    "ἵνα", "ὅπως", "ὅτι", "ἐάν", "ἐὰν", "εἰ", "εἴ", "εἴπερ", "ὅταν",
+    "ἐπεί", "ἐπεὶ", "ἐπειδή", "ἐπειδὴ", "ἕως", "καθώς", "καθὼς", "καθάπερ",
+    "ὡς", "ὥσπερ", "ὥστε",
 }
 
 COORDINATING_CONNECTORS = {
-    "δέ", "δὲ", "καί", "καὶ", "ἀλλά", "ἀλλὰ", "ἀλλʼ", "οὖν", "ἄρα", "διό", "διόπερ", "τοίνυν", "γάρ", "γὰρ",
+    "δέ", "δὲ", "καί", "καὶ", "τε", "ἀλλά", "ἀλλὰ", "ἀλλʼ", "πλήν", "πλὴν",
+    "οὖν", "ἄρα", "διό", "διὸ", "διόπερ", "τοίνυν", "γάρ", "γὰρ", "ἤ", "ἢ", "εἴτε",
+    "οὐδέ", "οὐδὲ", "μηδέ", "μηδὲ", "οὔτε", "μήτε",
 }
 
 PRE_FINITE_CARRY = {
-    "δέ", "δὲ", "καί", "καὶ", "ἀλλά", "ἀλλὰ", "ἀλλʼ", "ἢ", "μή", "μὴ",
-    "οὐ", "οὐκ", "οὐχ", "οὔτε", "μηδέ", "μηδὲ", "οὐδέ", "οὐδὲ",
+    "δέ", "δὲ", "καί", "καὶ", "τε", "ἀλλά", "ἀλλὰ", "ἀλλʼ", "ἢ", "ἤ", "μή", "μὴ",
+    "οὐ", "οὐκ", "οὐχ", "οὔτε", "μηδέ", "μηδὲ", "οὐδέ", "οὐδὲ", "μήτε",
 }
 
 CONNECTORS = set(CONNECTOR_GLOSSES)
@@ -94,6 +120,14 @@ def is_finite(rmac: str) -> bool:
     if len(parts) < 2 or len(parts[1]) < 3:
         return False
     return parts[1][-1] in FINITE_ENDINGS
+
+
+def connector_kind(surface: str) -> str:
+    if surface in SUBORDINATING_CONNECTORS:
+        return "subordinating"
+    if surface in COORDINATING_CONNECTORS:
+        return "coordinating"
+    return "connector-word"
 
 
 def is_connector(col: Dict) -> bool:
@@ -262,9 +296,11 @@ def render_verse(data: Dict) -> str:
 
         connector_count += 1
         greek = col.get("greek", "")
+        surface = clean_surface(greek)
         relation = connector_relation(col)
+        kind = connector_kind(surface)
 
-        lines.append(f"- cn{connector_count}. {greek} | relación: {relation} | alcance: clause-level")
+        lines.append(f"- cn{connector_count}. {greek} | tipo: {kind} | relación: {relation} | alcance: word-detected")
 
     if connector_count == 0:
         lines.append("- none")
