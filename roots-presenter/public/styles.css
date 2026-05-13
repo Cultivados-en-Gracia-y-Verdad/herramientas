@@ -629,6 +629,48 @@ button {
   margin-bottom: 6px;
 }
 
+.quiz-review {
+  display: grid;
+  gap: 10px;
+  width: min(900px, 100%);
+  color: #111827;
+  text-align: left;
+}
+
+.quiz-review.compact {
+  margin-top: 14px;
+  color: inherit;
+}
+
+.quiz-review-title {
+  color: #075985;
+  font-size: 0.82em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.quiz-review-item {
+  background: rgba(7,89,133,0.08);
+  border-left: 5px solid #075985;
+  border-radius: 7px;
+  padding: 10px 12px;
+}
+
+.quiz-review-question {
+  font-weight: 600;
+  line-height: 1.24;
+}
+
+.quiz-review-answer {
+  margin-top: 5px;
+  line-height: 1.24;
+}
+
+.quiz-review-answer b {
+  color: #075985;
+}
+
 .quiz-cue {
   align-items: center;
   background: #fff7ed;
@@ -761,20 +803,20 @@ button {
 
 .projector-quiz {
   position: fixed;
-  right: 48px;
-  bottom: 42px;
+  right: 42px;
+  bottom: 36px;
   z-index: 20;
   display: flex;
   align-items: center;
-  gap: 22px;
-  max-width: min(780px, 72vw);
-  padding: 18px 20px;
+  gap: 28px;
+  max-width: min(980px, 82vw);
+  padding: 22px 24px;
   background: rgba(248,250,252,0.96);
   color: #111827;
   border: 2px solid rgba(7,89,133,0.5);
   border-radius: 8px;
   box-shadow: 0 18px 46px rgba(0,0,0,0.45);
-  font-size: 28px;
+  font-size: 30px;
   text-align: left;
 }
 
@@ -784,11 +826,12 @@ button {
 
 .projector-quiz-copy {
   display: grid;
-  gap: 5px;
+  gap: 8px;
 }
 
 .projector-quiz-copy strong,
 .projector-quiz-copy span,
+.projector-quiz-join,
 .projector-quiz-copy small {
   display: block;
 }
@@ -801,24 +844,57 @@ button {
 }
 
 .projector-quiz-copy span {
-  max-width: 20em;
+  max-width: 21em;
   font-weight: 500;
   line-height: 1.18;
 }
 
+.projector-quiz-join {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: #111827;
+  font-size: 0.86em;
+  font-weight: 600;
+}
+
+.projector-quiz-join b {
+  color: #075985;
+}
+
+.projector-quiz-join code {
+  background: rgba(7,89,133,0.1);
+  border: 1px solid rgba(7,89,133,0.2);
+  border-radius: 6px;
+  color: #0f172a;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05em;
+  padding: 4px 8px;
+}
+
 .projector-quiz-copy small {
   color: #374151;
-  font-size: 0.58em;
+  font-size: 0.62em;
   overflow-wrap: anywhere;
 }
 
 .projector-quiz-qr {
-  width: 156px;
-  height: 156px;
+  width: 236px;
+  height: 236px;
   flex: 0 0 auto;
   background: #fff;
-  border-radius: 6px;
-  padding: 8px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.projector-quiz .quiz-review {
+  max-height: 56vh;
+  overflow: auto;
+  font-size: 0.72em;
+}
+
+.projector-quiz .quiz-review-item {
+  background: rgba(7,89,133,0.09);
 }
 
 .audience {

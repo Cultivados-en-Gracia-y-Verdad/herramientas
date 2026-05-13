@@ -433,6 +433,41 @@ function getAudienceQuiz() {
   return getActiveQuizSequence().find(quiz => !completedQuizIds.has(quiz.id)) || null;
 }
 
+function getQuizReviewItems() {
+  return Array.isArray(quizState.review) ? quizState.review : [];
+}
+
+function renderQuizReviewList(items, options = {}) {
+  if (!items.length) return "";
+
+  return `
+    <div class="${options.compact ? "quiz-review compact" : "quiz-review"}">
+      <div class="quiz-review-title">Review answers</div>
+      ${items
+        .map((quiz, index) => {
+          const correctAnswer = quiz.correctAnswer || quiz.choices?.[quiz.correctIndex] || "Answer not marked";
+          return `
+            <article class="quiz-review-item">
+              <div class="quiz-review-question">${index + 1}. ${escapeHtml(quiz.question)}</div>
+              <div class="quiz-review-answer"><b>Correct answer:</b> ${escapeHtml(correctAnswer)}</div>
+            </article>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
+function getTotalQuizResponses() {
+  if (quizState.countsByQuiz && Object.keys(quizState.countsByQuiz).length) {
+    return Object.values(quizState.countsByQuiz)
+      .flatMap(counts => Object.values(counts || {}))
+      .reduce((sum, value) => sum + value, 0);
+  }
+
+  return Object.values(quizState.counts || {}).reduce((sum, value) => sum + value, 0);
+}
+
 function stableHash(value) {
   return String(value || "").split("").reduce((hash, char) => {
     return ((hash << 5) - hash + char.charCodeAt(0)) | 0;
@@ -493,7 +528,10 @@ function renderPresenterQuiz() {
   }
 
   const counts = quizState.counts || {};
-  const total = Object.values(counts).reduce((sum, value) => sum + value, 0);
+  const total = quizState.active
+    ? Object.values(counts).reduce((sum, value) => sum + value, 0)
+    : getTotalQuizResponses();
+  const reviewItems = getQuizReviewItems();
 
   resultsEl.innerHTML = `
     <div class="quiz-results-title">Responses: ${total}</div>
@@ -506,6 +544,7 @@ function renderPresenterQuiz() {
         })
         .join("")}
     </ul>
+    ${renderQuizReviewList(reviewItems, { compact: true })}
   `;
 }
 
@@ -513,6 +552,9 @@ function renderProjectorQuiz() {
   const quiz = getActiveQuiz();
   const resultsEl = document.getElementById("projectorQuiz");
   const joinUrl = connection?.url || "/audience.html";
+  const joinCode = connection?.host && connection?.port
+    ? `${connection.host}:${connection.port}`
+    : joinUrl.replace(/^https?:\/\//, "").replace(/\/audience\.html$/, "");
 
   if (!quiz) {
     resultsEl.innerHTML = "";
@@ -524,16 +566,23 @@ function renderProjectorQuiz() {
       <div class="projector-quiz-copy">
         <strong>Quiz live now</strong>
         <span>${escapeHtml(quiz.question)}</span>
+        <div class="projector-quiz-join">
+          <b>Join:</b>
+          <code>${escapeHtml(joinCode)}</code>
+        </div>
         <small>${escapeHtml(joinUrl)}</small>
       </div>
       <img class="projector-quiz-qr" src="/quiz-join.svg?${Date.now()}" alt="QR code to join quiz">
     `;
   } else {
-    const counts = quizState.counts || {};
-    const total = Object.values(counts).reduce((sum, value) => sum + value, 0);
+    const total = getTotalQuizResponses();
+    const reviewItems = getQuizReviewItems();
     resultsEl.innerHTML = `
-      <strong>Quiz closed</strong><br>
-      <small>Responses: ${total}</small>
+      <div class="projector-quiz-copy">
+        <strong>Quiz closed</strong>
+        <span>Responses: ${total}</span>
+      </div>
+      ${renderQuizReviewList(reviewItems)}
     `;
   }
 }
@@ -558,6 +607,18 @@ function renderAudienceQuiz() {
   }
 
   if (!quizState.active) {
+    const reviewItems = getQuizReviewItems();
+    if (reviewItems.length) {
+      quizArea.innerHTML = `
+        <div class="quiz-waiting">
+          <div class="quiz-question">Quiz completed</div>
+          <div class="quiz-message">Thank you. Your answers have been saved.</div>
+          ${renderQuizReviewList(reviewItems, { compact: true })}
+        </div>
+      `;
+      return;
+    }
+
     quizArea.innerHTML = `
       <div class="quiz-waiting">
         <div class="quiz-question">${launchedQuiz.question}</div>
@@ -572,6 +633,7 @@ function renderAudienceQuiz() {
       <div class="quiz-waiting">
         <div class="quiz-question">Quiz completed</div>
         <div class="quiz-message">Thank you. Your answers have been saved.</div>
+        ${renderQuizReviewList(getQuizReviewItems(), { compact: true })}
       </div>
     `;
     return;

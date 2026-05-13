@@ -1,0 +1,852 @@
+BOOK	CH	VS	CLAUSE_ID	FINITE_G_IDX	FINITE_GREEK	FINITE_LEMMA	FINITE_RMAC	SPAN_START	SPAN_END	SPAN_GIDX	SPAN_TEXT	SPAN_STATUS	BOUNDARY_NOTES
+1corintios	1	4	C1	01	εὐχαριστῶ	εὐχαριστέω	V-PAI-1S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	==εὐχαριστῶ== τῷ θεῷ μου πάντοτε περὶ ὑμῶν ἐπὶ τῇ χάριτι τοῦ θεοῦ τῇ δοθείσῃ ὑμῖν ἐν χριστῷ ἰησοῦ	suggested-span	ends at verse boundary
+1corintios	1	5	C1	04	ἐπλουτίσθητε	πλουτίζω	V-API-2P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ὅτι ἐν παντὶ ==ἐπλουτίσθητε== ἐν αὐτῷ ἐν παντὶ λόγῳ καὶ πάσῃ γνώσει	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	1	6	C1	06	ἐβεβαιώθη	βεβαιόω	V-API-3S	01	08	01,02,03,04,05,06,07,08	καθὼς τὸ μαρτύριον τοῦ χριστοῦ ==ἐβεβαιώθη== ἐν ὑμῖν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	1	8	C1	03	βεβαιώσει	βεβαιόω	V-FAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	ὃς καὶ ==βεβαιώσει== ὑμᾶς ἕως τέλους ἀνεγκλήτους ἐν τῇ ἡμέρᾳ τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token καὶ
+1corintios	1	9	C1	06	ἐκλήθητε	καλέω	V-API-2P	01	16	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16	πιστὸς ὁ θεὸς διʼ οὗ ==ἐκλήθητε== εἰς κοινωνίαν τοῦ υἱοῦ αὐτοῦ ἰησοῦ χριστοῦ τοῦ κυρίου ἡμῶν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	1	10	C1	01	παρακαλῶ	παρακαλέω	V-PAI-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	==παρακαλῶ== δὲ ὑμᾶς ἀδελφοί διὰ τοῦ ὀνόματος τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ ἵνα τὸ αὐτὸ	suggested-span	ends before next finite anchor
+1corintios	1	10	C2	16	λέγητε	λέγω	V-PAS-2P	16	17	16,17	==λέγητε== πάντες	suggested-span	ends before next finite anchor
+1corintios	1	10	C3	20	ᾖ	εἰμί	V-PAS-3S	18	23	18,19,20,21,22,23	καὶ μὴ ==ᾖ== ἐν ὑμῖν σχίσματα	suggested-span	ends before next finite anchor; carried pre-finite token μὴ; carried pre-finite token καὶ
+1corintios	1	10	C4	24	ἦτε	εἰμί	V-PAS-2P	24	35	24,25,26,27,28,29,30,31,32,33,34,35	==ἦτε== δὲ κατηρτισμένοι ἐν τῷ αὐτῷ νοῒ καὶ ἐν τῇ αὐτῇ γνώμῃ	suggested-span	ends at verse boundary
+1corintios	1	11	C1	01	ἐδηλώθη	δηλόω	V-API-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	==ἐδηλώθη== γάρ μοι περὶ ὑμῶν ἀδελφοί μου ὑπὸ τῶν Χλόης ὅτι ἔριδες ἐν ὑμῖν	suggested-span	ends before next finite anchor
+1corintios	1	11	C2	15	εἰσιν	εἰμί	V-PAI-3P	15	15	15	==εἰσιν==	suggested-span	ends at verse boundary
+1corintios	1	12	C1	01	λέγω	λέγω	V-PAI-1S	01	06	01,02,03,04,05,06	==λέγω== δὲ τοῦτο ὅτι ἕκαστος ὑμῶν	suggested-span	ends before next finite anchor
+1corintios	1	12	C2	07	λέγει	λέγω	V-PAI-3S	07	09	07,08,09	==λέγει== ἐγὼ μέν	suggested-span	ends before next finite anchor
+1corintios	1	12	C3	10	εἰμι	εἰμί	V-PAI-1S	10	20	10,11,12,13,14,15,16,17,18,19,20	==εἰμι== παύλου ἐγὼ δὲ ἀπολλῶ ἐγὼ δὲ κηφᾶ ἐγὼ δὲ χριστοῦ	suggested-span	ends at verse boundary
+1corintios	1	13	C1	01	μεμέρισται	μερίζω	V-XPI-3S	01	05	01,02,03,04,05	==μεμέρισται== ὁ χριστός μὴ παῦλος	suggested-span	ends before next finite anchor
+1corintios	1	13	C2	06	ἐσταυρώθη	σταυρόω	V-API-3S	06	13	06,07,08,09,10,11,12,13	==ἐσταυρώθη== ὑπὲρ ὑμῶν ἢ εἰς τὸ ὄνομα παύλου	suggested-span	ends before next finite anchor
+1corintios	1	13	C3	14	ἐβαπτίσθητε	βαπτίζω	V-API-2P	14	14	14	==ἐβαπτίσθητε==	suggested-span	ends at verse boundary
+1corintios	1	14	C1	01	εὐχαριστῶ	εὐχαριστέω	V-PAI-1S	01	04	01,02,03,04	==εὐχαριστῶ== ὅτι οὐδένα ὑμῶν	suggested-span	ends before next finite anchor
+1corintios	1	14	C2	05	ἐβάπτισα	βαπτίζω	V-AAI-1S	05	10	05,06,07,08,09,10	==ἐβάπτισα== εἰ μὴ κρίσπον καὶ γάϊον	suggested-span	ends at verse boundary
+1corintios	1	15	C1	04	εἴπῃ	λέγω	V-AAS-3S	01	09	01,02,03,04,05,06,07,08,09	ἵνα μή τις ==εἴπῃ== ὅτι εἰς τὸ ἐμὸν ὄνομα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	1	15	C2	10	ἐβαπτίσθητε	βαπτίζω	V-API-2P	10	10	10	==ἐβαπτίσθητε==	suggested-span	ends at verse boundary
+1corintios	1	16	C1	01	ἐβάπτισα	βαπτίζω	V-AAI-1S	01	07	01,02,03,04,05,06,07	==ἐβάπτισα== δὲ καὶ τὸν στεφανᾶ οἶκον λοιπὸν	suggested-span	ends before next finite anchor
+1corintios	1	16	C2	09	οἶδα	οἶδα	V-XAI-1S	08	12	08,09,10,11,12	οὐκ ==οἶδα== εἴ τινα ἄλλον	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	1	16	C3	13	ἐβάπτισα	βαπτίζω	V-AAI-1S	13	13	13	==ἐβάπτισα==	suggested-span	ends at verse boundary
+1corintios	1	17	C1	03	ἀπέστειλέν	ἀποστέλλω	V-AAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	οὐ γὰρ ==ἀπέστειλέν== με χριστὸς βαπτίζειν ἀλλὰ εὐαγγελίζεσθαι οὐκ ἐν σοφίᾳ λόγου	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	1	17	C2	15	κενωθῇ	κενόω	V-APS-3S	13	19	13,14,15,16,17,18,19	ἵνα μὴ ==κενωθῇ== ὁ σταυρὸς τοῦ χριστοῦ	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	1	18	C1	11	ἐστίν	εἰμί	V-PAI-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	ὁ λόγος γὰρ ὁ τοῦ σταυροῦ τοῖς μὲν ἀπολλυμένοις μωρία ==ἐστίν== τοῖς δὲ σῳζομένοις ἡμῖν δύναμις θεοῦ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	1	18	C2	18	ἐστιν	εἰμί	V-PAI-3S	18	18	18	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	1	19	C1	01	γέγραπται	γράφω	V-XPI-3S	01	02	01,02	==γέγραπται== γάρ	suggested-span	ends before next finite anchor
+1corintios	1	19	C2	03	ἀπολῶ	ἀπόλλυμι	V-FAI-1S	03	12	03,04,05,06,07,08,09,10,11,12	==ἀπολῶ== τὴν σοφίαν τῶν σοφῶν καὶ τὴν σύνεσιν τῶν συνετῶν	suggested-span	ends before next finite anchor
+1corintios	1	19	C3	13	ἀθετήσω	ἀθετέω	V-FAI-1S	13	13	13	==ἀθετήσω==	suggested-span	ends at verse boundary
+1corintios	1	20	C1	11	ἐμώρανεν	μωραίνω	V-AAI-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	ποῦ σοφός ποῦ γραμματεύς ποῦ συζητητὴς τοῦ αἰῶνος τούτου οὐχὶ ==ἐμώρανεν== ὁ θεὸς τὴν σοφίαν τοῦ κόσμου	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	1	21	C1	09	ἔγνω	γινώσκω	V-AAI-3S	01	16	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16	ἐπειδὴ γὰρ ἐν τῇ σοφίᾳ τοῦ θεοῦ οὐκ ==ἔγνω== ὁ κόσμος διὰ τῆς σοφίας τὸν θεόν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	1	21	C2	17	εὐδόκησεν	εὐδοκέω	V-AAI-3S	17	27	17,18,19,20,21,22,23,24,25,26,27	==εὐδόκησεν== ὁ θεὸς διὰ τῆς μωρίας τοῦ κηρύγματος σῶσαι τοὺς πιστεύοντας	suggested-span	ends at verse boundary
+1corintios	1	22	C1	05	αἰτοῦσιν	αἰτέω	V-PAI-3P	01	08	01,02,03,04,05,06,07,08	ἐπειδὴ καὶ ἰουδαῖοι σημεῖα ==αἰτοῦσιν== καὶ ἕλληνες σοφίαν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	1	22	C2	09	ζητοῦσιν	ζητέω	V-PAI-3P	09	09	09	==ζητοῦσιν==	suggested-span	ends at verse boundary
+1corintios	1	23	C1	03	κηρύσσομεν	κηρύσσω	V-PAI-1P	01	11	01,02,03,04,05,06,07,08,09,10,11	ἡμεῖς δὲ ==κηρύσσομεν== χριστὸν ἐσταυρωμένον ἰουδαίοις μὲν σκάνδαλον ἔθνεσιν δὲ μωρίαν	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token δὲ
+1corintios	1	25	C1	09	ἐστίν	εἰμί	V-PAI-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	ὅτι τὸ μωρὸν τοῦ θεοῦ σοφώτερον τῶν ἀνθρώπων ==ἐστίν== καὶ τὸ ἀσθενὲς τοῦ θεοῦ ἰσχυρότερον τῶν ἀνθρώπων	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	1	26	C1	01	βλέπετε	βλέπω	V-PAI-2P	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	==βλέπετε== γὰρ τὴν κλῆσιν ὑμῶν ἀδελφοί ὅτι οὐ πολλοὶ σοφοὶ κατὰ σάρκα οὐ πολλοὶ δυνατοί οὐ πολλοὶ εὐγενεῖς	suggested-span	ends at verse boundary
+1corintios	1	27	C1	06	ἐξελέξατο	ἐκλέγομαι	V-AMI-3S	01	08	01,02,03,04,05,06,07,08	ἀλλὰ τὰ μωρὰ τοῦ κόσμου ==ἐξελέξατο== ὁ θεός	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	1	27	C2	10	καταισχύνῃ	καταισχύνω	V-PAS-3S	09	17	09,10,11,12,13,14,15,16,17	ἵνα ==καταισχύνῃ== τοὺς σοφούς καὶ τὰ ἀσθενῆ τοῦ κόσμου	suggested-span	ends before next finite anchor; included preceding subordinate connector ἵνα
+1corintios	1	27	C3	18	ἐξελέξατο	ἐκλέγομαι	V-AMI-3S	18	20	18,19,20	==ἐξελέξατο== ὁ θεός	suggested-span	ends before next finite anchor
+1corintios	1	27	C4	22	καταισχύνῃ	καταισχύνω	V-PAS-3S	21	24	21,22,23,24	ἵνα ==καταισχύνῃ== τὰ ἰσχυρά	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	1	28	C1	09	ἐξελέξατο	ἐκλέγομαι	V-AMI-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	καὶ τὰ ἀγενῆ τοῦ κόσμου καὶ τὰ ἐξουθενημένα ==ἐξελέξατο== ὁ θεός τὰ μὴ ὄντα ἵνα τὰ ὄντα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	1	28	C2	18	καταργήσῃ	καταργέω	V-AAS-3S	18	18	18	==καταργήσῃ==	suggested-span	ends at verse boundary
+1corintios	1	29	C1	03	καυχήσηται	καυχάομαι	V-AMS-3S	01	08	01,02,03,04,05,06,07,08	ὅπως μὴ ==καυχήσηται== πᾶσα σὰρξ ἐνώπιον τοῦ θεοῦ	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token μὴ
+1corintios	1	30	C1	05	ἐστε	εἰμί	V-PAI-2P	01	09	01,02,03,04,05,06,07,08,09	ἐξ αὐτοῦ δὲ ὑμεῖς ==ἐστε== ἐν χριστῷ ἰησοῦ ὃς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	1	30	C2	10	ἐγενήθη	γίνομαι	V-API-3S	10	20	10,11,12,13,14,15,16,17,18,19,20	==ἐγενήθη== σοφία ἡμῖν ἀπὸ θεοῦ δικαιοσύνη τε καὶ ἁγιασμὸς καὶ ἀπολύτρωσις	suggested-span	ends at verse boundary
+1corintios	1	31	C1	03	γέγραπται	γράφω	V-XPI-3S	01	07	01,02,03,04,05,06,07	ἵνα καθὼς ==γέγραπται== ὁ καυχώμενος ἐν κυρίῳ	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector καθὼς; included preceding subordinate connector ἵνα
+1corintios	1	31	C2	08	καυχάσθω	καυχάομαι	V-PMD-3S	08	08	08	==καυχάσθω==	suggested-span	ends at verse boundary
+1corintios	2	1	C1	06	ἦλθον	ἔρχομαι	V-AAI-1S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	κἀγὼ ἐλθὼν πρὸς ὑμᾶς ἀδελφοί ==ἦλθον== οὐ καθʼ ὑπεροχὴν λόγου ἢ σοφίας καταγγέλλων ὑμῖν τὸ μαρτύριον τοῦ θεοῦ	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	2	2	C1	03	ἔκρινά	κρίνω	V-AAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	οὐ γὰρ ==ἔκρινά== τι εἰδέναι ἐν ὑμῖν εἰ μὴ ἰησοῦν χριστὸν καὶ τοῦτον ἐσταυρωμένον	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	2	3	C1	11	ἐγενόμην	γίνομαι	V-AMI-1S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	κἀγὼ ἐν ἀσθενείᾳ καὶ ἐν φόβῳ καὶ ἐν τρόμῳ πολλῷ ==ἐγενόμην== πρὸς ὑμᾶς	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	2	5	C1	06	ᾖ	εἰμί	V-PAS-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ἵνα ἡ πίστις ὑμῶν μὴ ==ᾖ== ἐν σοφίᾳ ἀνθρώπων ἀλλʼ ἐν δυνάμει θεοῦ	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token μὴ
+1corintios	2	6	C1	03	λαλοῦμεν	λαλέω	V-PAI-1P	01	20	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20	σοφίαν δὲ ==λαλοῦμεν== ἐν τοῖς τελείοις σοφίαν δὲ οὐ τοῦ αἰῶνος τούτου οὐδὲ τῶν ἀρχόντων τοῦ αἰῶνος τούτου τῶν καταργουμένων	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token δὲ
+1corintios	2	7	C1	02	λαλοῦμεν	λαλέω	V-PAI-1P	01	09	01,02,03,04,05,06,07,08,09	ἀλλὰ ==λαλοῦμεν== θεοῦ σοφίαν ἐν μυστηρίῳ τὴν ἀποκεκρυμμένην ἣν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token ἀλλὰ
+1corintios	2	7	C2	10	προώρισεν	προορίζω	V-AAI-3S	10	18	10,11,12,13,14,15,16,17,18	==προώρισεν== ὁ θεὸς πρὸ τῶν αἰώνων εἰς δόξαν ἡμῶν	suggested-span	ends at verse boundary
+1corintios	2	8	C1	08	ἔγνωκεν	γινώσκω	V-XAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	ἣν οὐδεὶς τῶν ἀρχόντων τοῦ αἰῶνος τούτου ==ἔγνωκεν== εἰ γὰρ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	2	8	C2	11	ἔγνωσαν	γινώσκω	V-AAI-3P	11	17	11,12,13,14,15,16,17	==ἔγνωσαν== οὐκ ἂν τὸν κύριον τῆς δόξης	suggested-span	ends before next finite anchor
+1corintios	2	8	C3	18	ἐσταύρωσαν	σταυρόω	V-AAI-3P	18	18	18	==ἐσταύρωσαν==	suggested-span	ends at verse boundary
+1corintios	2	9	C1	03	γέγραπται	γράφω	V-XPI-3S	01	05	01,02,03,04,05	ἀλλὰ καθὼς ==γέγραπται== ἃ ὀφθαλμὸς	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector καθὼς
+1corintios	2	9	C2	07	εἶδεν	ὁράω	V-AAI-3S	06	09	06,07,08,09	οὐκ ==εἶδεν== καὶ οὖς	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	2	9	C3	11	ἤκουσεν	ἀκούω	V-AAI-3S	10	15	10,11,12,13,14,15	οὐκ ==ἤκουσεν== καὶ ἐπὶ καρδίαν ἀνθρώπου	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	2	9	C4	17	ἀνέβη	ἀναβαίνω	V-AAI-3S	16	18	16,17,18	οὐκ ==ἀνέβη== ὅσα	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	2	9	C5	19	ἡτοίμασεν	ἑτοιμάζω	V-AAI-3S	19	24	19,20,21,22,23,24	==ἡτοίμασεν== ὁ θεὸς τοῖς ἀγαπῶσιν αὐτόν	suggested-span	ends at verse boundary
+1corintios	2	10	C1	03	ἀπεκάλυψεν	ἀποκαλύπτω	V-AAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ἡμῖν γὰρ ==ἀπεκάλυψεν== ὁ θεὸς διὰ τοῦ πνεύματος τὸ γὰρ πνεῦμα πάντα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	2	10	C2	13	ἐραυνᾷ	ἐραυνάω	V-PAI-3S	13	18	13,14,15,16,17,18	==ἐραυνᾷ== καὶ τὰ βάθη τοῦ θεοῦ	suggested-span	ends at verse boundary
+1corintios	2	11	C1	03	οἶδεν	οἶδα	V-XAI-3S	01	22	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22	τίς γὰρ ==οἶδεν== ἀνθρώπων τὰ τοῦ ἀνθρώπου εἰ μὴ τὸ πνεῦμα τοῦ ἀνθρώπου τὸ ἐν αὐτῷ οὕτως καὶ τὰ τοῦ θεοῦ οὐδεὶς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	2	11	C2	23	ἔγνωκεν	γινώσκω	V-XAI-3S	23	29	23,24,25,26,27,28,29	==ἔγνωκεν== εἰ μὴ τὸ πνεῦμα τοῦ θεοῦ	suggested-span	ends at verse boundary
+1corintios	2	12	C1	08	ἐλάβομεν	λαμβάνω	V-AAI-1P	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	ἡμεῖς δὲ οὐ τὸ πνεῦμα τοῦ κόσμου ==ἐλάβομεν== ἀλλὰ τὸ πνεῦμα τὸ ἐκ τοῦ θεοῦ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	2	12	C2	17	εἰδῶμεν	οἶδα	V-XAS-1P	16	23	16,17,18,19,20,21,22,23	ἵνα ==εἰδῶμεν== τὰ ὑπὸ τοῦ θεοῦ χαρισθέντα ἡμῖν	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	2	13	C1	03	λαλοῦμεν	λαλέω	V-PAI-1P	01	16	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16	ἃ καὶ ==λαλοῦμεν== οὐκ ἐν διδακτοῖς ἀνθρωπίνης σοφίας λόγοις ἀλλʼ ἐν διδακτοῖς πνεύματος πνευματικοῖς πνευματικὰ συγκρίνοντες	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token καὶ
+1corintios	2	14	C1	05	δέχεται	δέχομαι	V-PMI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ψυχικὸς δὲ ἄνθρωπος οὐ ==δέχεται== τὰ τοῦ πνεύματος τοῦ θεοῦ μωρία γὰρ αὐτῷ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐ
+1corintios	2	14	C2	14	ἐστίν	εἰμί	V-PAI-3S	14	14	14	==ἐστίν==	suggested-span	ends before next finite anchor
+1corintios	2	14	C3	17	δύναται	δύναμαι	V-PMI-3S	15	20	15,16,17,18,19,20	καὶ οὐ ==δύναται== γνῶναι ὅτι πνευματικῶς	suggested-span	ends before next finite anchor; carried pre-finite token οὐ; carried pre-finite token καὶ
+1corintios	2	14	C4	21	ἀνακρίνεται	ἀνακρίνω	V-PPI-3S	21	21	21	==ἀνακρίνεται==	suggested-span	ends at verse boundary
+1corintios	2	15	C1	04	ἀνακρίνει	ἀνακρίνω	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	ὁ δὲ πνευματικὸς ==ἀνακρίνει== τὰ πάντα αὐτὸς δὲ ὑπʼ οὐδενὸς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	2	15	C2	11	ἀνακρίνεται	ἀνακρίνω	V-PPI-3S	11	11	11	==ἀνακρίνεται==	suggested-span	ends at verse boundary
+1corintios	2	16	C1	03	ἔγνω	γινώσκω	V-AAI-3S	01	06	01,02,03,04,05,06	τίς γὰρ ==ἔγνω== νοῦν κυρίου ὃς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	2	16	C2	07	συμβιβάσει	συμβιβάζω	V-FAI-3S	07	12	07,08,09,10,11,12	==συμβιβάσει== αὐτόν ἡμεῖς δὲ νοῦν χριστοῦ	suggested-span	ends before next finite anchor
+1corintios	2	16	C3	13	ἔχομεν	ἔχω	V-PAI-1P	13	13	13	==ἔχομεν==	suggested-span	ends at verse boundary
+1corintios	3	1	C1	04	ἠδυνήθην	δύναμαι	V-API-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	κἀγώ ἀδελφοί οὐκ ==ἠδυνήθην== λαλῆσαι ὑμῖν ὡς πνευματικοῖς ἀλλʼ ὡς σαρκίνοις ὡς νηπίοις ἐν χριστῷ	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐκ
+1corintios	3	2	C1	03	ἐπότισα	ποτίζω	V-AAI-1S	01	07	01,02,03,04,05,06,07	γάλα ὑμᾶς ==ἐπότισα== οὐ βρῶμα οὔπω γὰρ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	2	C2	08	ἐδύνασθε	δύναμαι	V-IMI-2P	08	12	08,09,10,11,12	==ἐδύνασθε== ἀλλʼ οὐδὲ ἔτι νῦν	suggested-span	ends before next finite anchor
+1corintios	3	2	C3	13	δύνασθε	δύναμαι	V-PMI-2P	13	13	13	==δύνασθε==	suggested-span	ends at verse boundary
+1corintios	3	3	C1	04	ἐστε	εἰμί	V-PAI-2P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ἔτι γὰρ σαρκικοί ==ἐστε== ὅπου γὰρ ἐν ὑμῖν ζῆλος καὶ ἔρις οὐχὶ σαρκικοί	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	3	C2	14	ἐστε	εἰμί	V-PAI-2P	14	17	14,15,16,17	==ἐστε== καὶ κατὰ ἄνθρωπον	suggested-span	ends before next finite anchor
+1corintios	3	3	C3	18	περιπατεῖτε	περιπατέω	V-PAI-2P	18	18	18	==περιπατεῖτε==	suggested-span	ends at verse boundary
+1corintios	3	4	C1	03	λέγῃ	λέγω	V-PAS-3S	01	06	01,02,03,04,05,06	ὅταν γὰρ ==λέγῃ== τις ἐγὼ μέν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	4	C2	07	εἰμι	εἰμί	V-PAI-1S	07	14	07,08,09,10,11,12,13,14	==εἰμι== παύλου ἕτερος δέ ἐγὼ ἀπολλῶ οὐκ ἄνθρωποί	suggested-span	ends before next finite anchor
+1corintios	3	4	C3	15	ἐστε	εἰμί	V-PAI-2P	15	15	15	==ἐστε==	suggested-span	ends at verse boundary
+1corintios	3	5	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	05	01,02,03,04,05	τί οὖν ==ἐστιν== ἀπολλῶς τί	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	5	C2	07	ἐστιν	εἰμί	V-PAI-3S	06	11	06,07,08,09,10,11	δέ ==ἐστιν== παῦλος διάκονοι διʼ ὧν	suggested-span	ends before next finite anchor; carried pre-finite token δέ
+1corintios	3	5	C3	12	ἐπιστεύσατε	πιστεύω	V-AAI-2P	12	17	12,13,14,15,16,17	==ἐπιστεύσατε== καὶ ἑκάστῳ ὡς ὁ κύριος	suggested-span	ends before next finite anchor
+1corintios	3	5	C4	18	ἔδωκεν	δίδωμι	V-AAI-3S	18	18	18	==ἔδωκεν==	suggested-span	ends at verse boundary
+1corintios	3	6	C1	02	ἐφύτευσα	φυτεύω	V-AAI-1S	01	03	01,02,03	ἐγὼ ==ἐφύτευσα== ἀπολλῶς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	6	C2	04	ἐπότισεν	ποτίζω	V-AAI-3S	04	07	04,05,06,07	==ἐπότισεν== ἀλλὰ ὁ θεὸς	suggested-span	ends before next finite anchor
+1corintios	3	6	C3	08	ηὔξανεν	αὐξάνω	V-IAI-3S	08	08	08	==ηὔξανεν==	suggested-span	ends at verse boundary
+1corintios	3	7	C1	05	ἐστίν	εἰμί	V-PAI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ὥστε οὔτε ὁ φυτεύων ==ἐστίν== τι οὔτε ὁ ποτίζων ἀλλʼ ὁ αὐξάνων θεός	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	3	8	C1	08	εἰσιν	εἰμί	V-PAI-3P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ὁ φυτεύων δὲ καὶ ὁ ποτίζων ἕν ==εἰσιν== ἕκαστος δὲ τὸν ἴδιον μισθὸν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	8	C2	14	λήμψεται	λαμβάνω	V-FMI-3S	14	18	14,15,16,17,18	==λήμψεται== κατὰ τὸν ἴδιον κόπον	suggested-span	ends at verse boundary
+1corintios	3	9	C1	03	ἐσμεν	εἰμί	V-PAI-1P	01	08	01,02,03,04,05,06,07,08	θεοῦ γάρ ==ἐσμεν== συνεργοί θεοῦ γεώργιον θεοῦ οἰκοδομή	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	9	C2	09	ἐστε	εἰμί	V-PAI-2P	09	09	09	==ἐστε==	suggested-span	ends at verse boundary
+1corintios	3	10	C1	13	ἔθηκα	τίθημι	V-AAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	κατὰ τὴν χάριν τοῦ θεοῦ τὴν δοθεῖσάν μοι ὡς σοφὸς ἀρχιτέκτων θεμέλιον ==ἔθηκα== ἄλλος	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	10	C2	16	ἐποικοδομεῖ	ἐποικοδομέω	V-PAI-3S	15	17	15,16,17	δὲ ==ἐποικοδομεῖ== ἕκαστος	suggested-span	ends before next finite anchor; carried pre-finite token δὲ
+1corintios	3	10	C3	19	βλεπέτω	βλέπω	V-PAD-3S	18	20	18,19,20	δὲ ==βλεπέτω== πῶς	suggested-span	ends before next finite anchor; carried pre-finite token δὲ
+1corintios	3	10	C4	21	ἐποικοδομεῖ	ἐποικοδομέω	V-PAI-3S	21	21	21	==ἐποικοδομεῖ==	suggested-span	ends at verse boundary
+1corintios	3	11	C1	05	δύναται	δύναμαι	V-PMI-3S	01	10	01,02,03,04,05,06,07,08,09,10	θεμέλιον γὰρ ἄλλον οὐδεὶς ==δύναται== θεῖναι παρὰ τὸν κείμενον ὅς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	11	C2	11	ἐστιν	εἰμί	V-PAI-3S	11	13	11,12,13	==ἐστιν== ἰησοῦς χριστός	suggested-span	ends at verse boundary
+1corintios	3	12	C1	04	ἐποικοδομεῖ	ἐποικοδομέω	V-PAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	εἰ δέ τις ==ἐποικοδομεῖ== ἐπὶ τὸν θεμέλιον χρυσόν ἄργυρον λίθους τιμίους ξύλα χόρτον καλάμην	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	3	13	C1	05	γενήσεται	γίνομαι	V-FMI-3S	01	08	01,02,03,04,05,06,07,08	ἑκάστου τὸ ἔργον φανερὸν ==γενήσεται== ἡ γὰρ ἡμέρα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	13	C2	09	δηλώσει	δηλόω	V-FAI-3S	09	12	09,10,11,12	==δηλώσει== ὅτι ἐν πυρὶ	suggested-span	ends before next finite anchor
+1corintios	3	13	C3	13	ἀποκαλύπτεται	ἀποκαλύπτω	V-PPI-3S	13	18	13,14,15,16,17,18	==ἀποκαλύπτεται== καὶ ἑκάστου τὸ ἔργον ὁποῖόν	suggested-span	ends before next finite anchor
+1corintios	3	13	C4	19	ἐστιν	εἰμί	V-PAI-3S	19	22	19,20,21,22	==ἐστιν== τὸ πῦρ αὐτὸ	suggested-span	ends before next finite anchor
+1corintios	3	13	C5	23	δοκιμάσει	δοκιμάζω	V-FAI-3S	23	23	23	==δοκιμάσει==	suggested-span	ends at verse boundary
+1corintios	3	14	C1	05	μενεῖ	μένω	V-FAI-3S	01	06	01,02,03,04,05,06	εἴ τινος τὸ ἔργον ==μενεῖ== ὃ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	14	C2	07	ἐποικοδόμησεν	ἐποικοδομέω	V-AAI-3S	07	08	07,08	==ἐποικοδόμησεν== μισθὸν	suggested-span	ends before next finite anchor
+1corintios	3	14	C3	09	λήμψεται	λαμβάνω	V-FMI-3S	09	09	09	==λήμψεται==	suggested-span	ends at verse boundary
+1corintios	3	15	C1	05	κατακαήσεται	κατακαίω	V-FPI-3S	01	05	01,02,03,04,05	εἴ τινος τὸ ἔργον ==κατακαήσεται==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	15	C2	06	ζημιωθήσεται	ζημιόω	V-FPI-3S	06	07	06,07	==ζημιωθήσεται== αὐτὸς	suggested-span	ends before next finite anchor
+1corintios	3	15	C3	09	σωθήσεται	σῴζω	V-FPI-3S	08	14	08,09,10,11,12,13,14	δὲ ==σωθήσεται== οὕτως δὲ ὡς διὰ πυρός	suggested-span	ends at verse boundary; carried pre-finite token δὲ
+1corintios	3	16	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	05	01,02,03,04,05	οὐκ ==οἴδατε== ὅτι ναὸς θεοῦ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	3	16	C2	06	ἐστε	εἰμί	V-PAI-2P	06	11	06,07,08,09,10,11	==ἐστε== καὶ τὸ πνεῦμα τοῦ θεοῦ	suggested-span	ends before next finite anchor
+1corintios	3	16	C3	12	οἰκεῖ	οἰκέω	V-PAI-3S	12	14	12,13,14	==οἰκεῖ== ἐν ὑμῖν	suggested-span	ends at verse boundary
+1corintios	3	17	C1	07	φθείρει	φθείρω	V-PAI-3S	01	07	01,02,03,04,05,06,07	εἴ τις τὸν ναὸν τοῦ θεοῦ ==φθείρει==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	17	C2	08	φθερεῖ	φθείρω	V-FAI-3S	08	17	08,09,10,11,12,13,14,15,16,17	==φθερεῖ== τοῦτον ὁ θεός ὁ γὰρ ναὸς τοῦ θεοῦ ἅγιός	suggested-span	ends before next finite anchor
+1corintios	3	17	C3	18	ἐστιν	εἰμί	V-PAI-3S	18	19	18,19	==ἐστιν== οἵτινές	suggested-span	ends before next finite anchor
+1corintios	3	17	C4	20	ἐστε	εἰμί	V-PAI-2P	20	21	20,21	==ἐστε== ὑμεῖς	suggested-span	ends at verse boundary
+1corintios	3	18	C1	03	ἐξαπατάτω	ἐξαπατάω	V-PAD-3S	01	05	01,02,03,04,05	μηδεὶς ἑαυτὸν ==ἐξαπατάτω== εἴ τις	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	18	C2	06	δοκεῖ	δοκέω	V-PAI-3S	06	15	06,07,08,09,10,11,12,13,14,15	==δοκεῖ== σοφὸς εἶναι ἐν ὑμῖν ἐν τῷ αἰῶνι τούτῳ μωρὸς	suggested-span	ends before next finite anchor
+1corintios	3	18	C3	16	γενέσθω	γίνομαι	V-AMD-3S	16	16	16	==γενέσθω==	suggested-span	ends before next finite anchor
+1corintios	3	18	C4	18	γένηται	γίνομαι	V-AMS-3S	17	19	17,18,19	ἵνα ==γένηται== σοφός	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	3	19	C1	11	ἐστιν	εἰμί	V-PAI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	ἡ γὰρ σοφία τοῦ κόσμου τούτου μωρία παρὰ τῷ θεῷ ==ἐστιν==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	19	C2	12	γέγραπται	γράφω	V-XPI-3S	12	21	12,13,14,15,16,17,18,19,20,21	==γέγραπται== γάρ ὁ δρασσόμενος τοὺς σοφοὺς ἐν τῇ πανουργίᾳ αὐτῶν	suggested-span	ends at verse boundary
+1corintios	3	20	C1	04	γινώσκει	γινώσκω	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	καὶ πάλιν κύριος ==γινώσκει== τοὺς διαλογισμοὺς τῶν σοφῶν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	20	C2	10	εἰσὶν	εἰμί	V-PAI-3P	09	11	09,10,11	ὅτι ==εἰσὶν== μάταιοι	suggested-span	ends at verse boundary; included preceding subordinate connector ὅτι
+1corintios	3	21	C1	03	καυχάσθω	καυχάομαι	V-PMD-3S	01	08	01,02,03,04,05,06,07,08	ὥστε μηδεὶς ==καυχάσθω== ἐν ἀνθρώποις πάντα γὰρ ὑμῶν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	3	21	C2	09	ἐστιν	εἰμί	V-PAI-3S	09	09	09	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	4	1	C1	03	λογιζέσθω	λογίζομαι	V-PMD-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	οὕτως ἡμᾶς ==λογιζέσθω== ἄνθρωπος ὡς ὑπηρέτας χριστοῦ καὶ οἰκονόμους μυστηρίων θεοῦ	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	4	2	C1	03	ζητεῖται	ζητέω	V-PPI-3S	01	09	01,02,03,04,05,06,07,08,09	ὧδε λοιπὸν ==ζητεῖται== ἐν τοῖς οἰκονόμοις ἵνα πιστός τις	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	2	C2	10	εὑρεθῇ	εὑρίσκω	V-APS-3S	10	10	10	==εὑρεθῇ==	suggested-span	ends at verse boundary
+1corintios	4	3	C1	05	ἐστιν	εἰμί	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ἐμοὶ δὲ εἰς ἐλάχιστόν ==ἐστιν== ἵνα ὑφʼ ὑμῶν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	3	C2	09	ἀνακριθῶ	ἀνακρίνω	V-APS-1S	09	16	09,10,11,12,13,14,15,16	==ἀνακριθῶ== ἢ ὑπὸ ἀνθρωπίνης ἡμέρας ἀλλʼ οὐδὲ ἐμαυτὸν	suggested-span	ends before next finite anchor
+1corintios	4	3	C3	17	ἀνακρίνω	ἀνακρίνω	V-PAI-1S	17	17	17	==ἀνακρίνω==	suggested-span	ends at verse boundary
+1corintios	4	4	C1	04	σύνοιδα	σύνοιδα	V-XAI-1S	01	08	01,02,03,04,05,06,07,08	οὐδὲν γὰρ ἐμαυτῷ ==σύνοιδα== ἀλλʼ οὐκ ἐν τούτῳ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	4	C2	09	δεδικαίωμαι	δικαιόω	V-XPI-1S	09	14	09,10,11,12,13,14	==δεδικαίωμαι== ὁ δὲ ἀνακρίνων με κύριός	suggested-span	ends before next finite anchor
+1corintios	4	4	C3	15	ἐστιν	εἰμί	V-PAI-3S	15	15	15	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	4	5	C1	06	κρίνετε	κρίνω	V-PAD-2P	01	08	01,02,03,04,05,06,07,08	ὥστε μὴ πρὸ καιροῦ τι ==κρίνετε== ἕως ἂν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	5	C2	09	ἔλθῃ	ἔρχομαι	V-AAS-3S	09	12	09,10,11,12	==ἔλθῃ== ὁ κύριος ὃς	suggested-span	ends before next finite anchor
+1corintios	4	5	C3	14	φωτίσει	φωτίζω	V-FAI-3S	13	18	13,14,15,16,17,18	καὶ ==φωτίσει== τὰ κρυπτὰ τοῦ σκότους	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	4	5	C4	20	φανερώσει	φανερόω	V-FAI-3S	19	28	19,20,21,22,23,24,25,26,27,28	καὶ ==φανερώσει== τὰς βουλὰς τῶν καρδιῶν καὶ τότε ὁ ἔπαινος	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	4	5	C5	29	γενήσεται	γίνομαι	V-FMI-3S	29	33	29,30,31,32,33	==γενήσεται== ἑκάστῳ ἀπὸ τοῦ θεοῦ	suggested-span	ends at verse boundary
+1corintios	4	6	C1	04	μετεσχημάτισα	μετασχηματίζω	V-AAI-1S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ταῦτα δέ ἀδελφοί ==μετεσχημάτισα== εἰς ἐμαυτὸν καὶ ἀπολλῶν διʼ ὑμᾶς ἵνα ἐν ἡμῖν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	6	C2	14	μάθητε	μανθάνω	V-AAS-2P	14	18	14,15,16,17,18	==μάθητε== τό μὴ ὑπὲρ ἃ	suggested-span	ends before next finite anchor
+1corintios	4	6	C3	19	γέγραπται	γράφω	V-XPI-3S	19	25	19,20,21,22,23,24,25	==γέγραπται== ἵνα μὴ εἷς ὑπὲρ τοῦ ἑνὸς	suggested-span	ends before next finite anchor
+1corintios	4	6	C4	26	φυσιοῦσθε	φυσιόω	V-PPI-2P	26	29	26,27,28,29	==φυσιοῦσθε== κατὰ τοῦ ἑτέρου	suggested-span	ends at verse boundary
+1corintios	4	7	C1	04	διακρίνει	διακρίνω	V-PAI-3S	01	05	01,02,03,04,05	τίς γάρ σε ==διακρίνει== τί	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	7	C2	07	ἔχεις	ἔχω	V-PAI-2S	06	08	06,07,08	δὲ ==ἔχεις== ὃ	suggested-span	ends before next finite anchor; carried pre-finite token δὲ
+1corintios	4	7	C3	10	ἔλαβες	λαμβάνω	V-AAI-2S	09	10	09,10	οὐκ ==ἔλαβες==	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	4	7	C4	14	ἔλαβες	λαμβάνω	V-AAI-2S	11	15	11,12,13,14,15	εἰ δὲ καὶ ==ἔλαβες== τί	suggested-span	ends before next finite anchor; carried pre-finite token καὶ; carried pre-finite token δὲ
+1corintios	4	7	C5	16	καυχᾶσαι	καυχάομαι	V-PMI-2S	16	19	16,17,18,19	==καυχᾶσαι== ὡς μὴ λαβών	suggested-span	ends at verse boundary
+1corintios	4	8	C1	03	ἐστέ	εἰμί	V-PAI-2P	01	04	01,02,03,04	ἤδη κεκορεσμένοι ==ἐστέ== ἤδη	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	8	C2	05	ἐπλουτήσατε	πλουτέω	V-AAI-2P	05	07	05,06,07	==ἐπλουτήσατε== χωρὶς ἡμῶν	suggested-span	ends before next finite anchor
+1corintios	4	8	C3	08	ἐβασιλεύσατε	βασιλεύω	V-AAI-2P	08	11	08,09,10,11	==ἐβασιλεύσατε== καὶ ὄφελόν γε	suggested-span	ends before next finite anchor
+1corintios	4	8	C4	12	ἐβασιλεύσατε	βασιλεύω	V-AAI-2P	12	16	12,13,14,15,16	==ἐβασιλεύσατε== ἵνα καὶ ἡμεῖς ὑμῖν	suggested-span	ends before next finite anchor
+1corintios	4	8	C5	17	συμβασιλεύσωμεν	συμβασιλεύω	V-AAS-1P	17	17	17	==συμβασιλεύσωμεν==	suggested-span	ends at verse boundary
+1corintios	4	9	C1	01	δοκῶ	δοκέω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	==δοκῶ== γάρ ὁ θεὸς ἡμᾶς τοὺς ἀποστόλους ἐσχάτους	suggested-span	ends before next finite anchor
+1corintios	4	9	C2	09	ἀπέδειξεν	ἀποδείκνυμι	V-AAI-3S	09	13	09,10,11,12,13	==ἀπέδειξεν== ὡς ἐπιθανατίους ὅτι θέατρον	suggested-span	ends before next finite anchor
+1corintios	4	9	C3	14	ἐγενήθημεν	γίνομαι	V-API-1P	14	20	14,15,16,17,18,19,20	==ἐγενήθημεν== τῷ κόσμῳ καὶ ἀγγέλοις καὶ ἀνθρώποις	suggested-span	ends at verse boundary
+1corintios	4	11	C1	06	πεινῶμεν	πεινάω	V-PAI-1P	01	06	01,02,03,04,05,06	ἄχρι τῆς ἄρτι ὥρας καὶ ==πεινῶμεν==	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token καὶ
+1corintios	4	11	C2	08	διψῶμεν	διψάω	V-PAI-1P	07	08	07,08	καὶ ==διψῶμεν==	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	4	11	C3	10	γυμνιτεύομεν	γυμνιτεύω	V-PAI-1P	09	10	09,10	καὶ ==γυμνιτεύομεν==	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	4	11	C4	12	κολαφιζόμεθα	κολαφίζω	V-PPI-1P	11	12	11,12	καὶ ==κολαφιζόμεθα==	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	4	11	C5	14	ἀστατοῦμεν	ἀστατέω	V-PAI-1P	13	14	13,14	καὶ ==ἀστατοῦμεν==	suggested-span	ends at verse boundary; carried pre-finite token καὶ
+1corintios	4	12	C1	02	κοπιῶμεν	κοπιάω	V-PAI-1P	01	07	01,02,03,04,05,06,07	καὶ ==κοπιῶμεν== ἐργαζόμενοι ταῖς ἰδίαις χερσίν λοιδορούμενοι	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token καὶ
+1corintios	4	12	C2	08	εὐλογοῦμεν	εὐλογέω	V-PAI-1P	08	09	08,09	==εὐλογοῦμεν== διωκόμενοι	suggested-span	ends before next finite anchor
+1corintios	4	12	C3	10	ἀνεχόμεθα	ἀνέχομαι	V-PMI-1P	10	10	10	==ἀνεχόμεθα==	suggested-span	ends at verse boundary
+1corintios	4	13	C1	02	παρακαλοῦμεν	παρακαλέω	V-PAI-1P	01	06	01,02,03,04,05,06	δυσφημούμενοι ==παρακαλοῦμεν== ὡς περικαθάρματα τοῦ κόσμου	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	13	C2	07	ἐγενήθημεν	γίνομαι	V-API-1P	07	11	07,08,09,10,11	==ἐγενήθημεν== πάντων περίψημα ἕως ἄρτι	suggested-span	ends at verse boundary
+1corintios	4	14	C1	04	γράφω	γράφω	V-PAI-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	οὐκ ἐντρέπων ὑμᾶς ==γράφω== ταῦτα ἀλλʼ ὡς τέκνα μου ἀγαπητὰ νουθετῶν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	4	15	C1	05	ἔχητε	ἔχω	V-PAS-2P	01	20	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20	ἐὰν γὰρ μυρίους παιδαγωγοὺς ==ἔχητε== ἐν χριστῷ ἀλλʼ οὐ πολλοὺς πατέρας ἐν γὰρ χριστῷ ἰησοῦ διὰ τοῦ εὐαγγελίου ἐγὼ ὑμᾶς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	15	C2	21	ἐγέννησα	γεννάω	V-AAI-1S	21	21	21	==ἐγέννησα==	suggested-span	ends at verse boundary
+1corintios	4	16	C1	01	παρακαλῶ	παρακαλέω	V-PAI-1S	01	05	01,02,03,04,05	==παρακαλῶ== οὖν ὑμᾶς μιμηταί μου	suggested-span	ends before next finite anchor
+1corintios	4	16	C2	06	γίνεσθε	γίνομαι	V-PMD-2P	06	06	06	==γίνεσθε==	suggested-span	ends at verse boundary
+1corintios	4	17	C1	03	ἔπεμψα	πέμπω	V-AAI-1S	01	06	01,02,03,04,05,06	διὰ τοῦτο ==ἔπεμψα== ὑμῖν τιμόθεον ὅς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	17	C2	07	ἐστίν	εἰμί	V-PAI-3S	07	16	07,08,09,10,11,12,13,14,15,16	==ἐστίν== μου τέκνον ἀγαπητὸν καὶ πιστὸν ἐν κυρίῳ ὃς ὑμᾶς	suggested-span	ends before next finite anchor
+1corintios	4	17	C3	17	ἀναμνήσει	ἀναμιμνῄσκω	V-FAI-3S	17	29	17,18,19,20,21,22,23,24,25,26,27,28,29	==ἀναμνήσει== τὰς ὁδούς μου τὰς ἐν χριστῷ ἰησοῦ καθὼς πανταχοῦ ἐν πάσῃ ἐκκλησίᾳ	suggested-span	ends before next finite anchor
+1corintios	4	17	C4	30	διδάσκω	διδάσκω	V-PAI-1S	30	30	30	==διδάσκω==	suggested-span	ends at verse boundary
+1corintios	4	18	C1	08	ἐφυσιώθησάν	φυσιόω	V-API-3P	01	09	01,02,03,04,05,06,07,08,09	ὡς μὴ ἐρχομένου δέ μου πρὸς ὑμᾶς ==ἐφυσιώθησάν== τινες	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	4	19	C1	01	ἐλεύσομαι	ἔρχομαι	V-FMI-1S	01	08	01,02,03,04,05,06,07,08	==ἐλεύσομαι== δὲ ταχέως πρὸς ὑμᾶς ἐὰν ὁ κύριος	suggested-span	ends before next finite anchor
+1corintios	4	19	C2	09	θελήσῃ	θέλω	V-AAS-3S	09	09	09	==θελήσῃ==	suggested-span	ends before next finite anchor
+1corintios	4	19	C3	11	γνώσομαι	γινώσκω	V-FMI-1S	10	19	10,11,12,13,14,15,16,17,18,19	καὶ ==γνώσομαι== οὐ τὸν λόγον τῶν πεφυσιωμένων ἀλλὰ τὴν δύναμιν	suggested-span	ends at verse boundary; carried pre-finite token καὶ
+1corintios	4	21	C1	02	θέλετε	θέλω	V-PAI-2P	01	04	01,02,03,04	τί ==θέλετε== ἐν ῥάβδῳ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	4	21	C2	05	ἔλθω	ἔρχομαι	V-AAS-1S	05	13	05,06,07,08,09,10,11,12,13	==ἔλθω== πρὸς ὑμᾶς ἢ ἐν ἀγάπῃ πνεύματί τε πραΰτητος	suggested-span	ends at verse boundary
+1corintios	5	1	C1	02	ἀκούεται	ἀκούω	V-PPI-3S	01	19	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19	ὅλως ==ἀκούεται== ἐν ὑμῖν πορνεία καὶ τοιαύτη πορνεία ἥτις οὐδὲ ἐν τοῖς ἔθνεσιν ὥστε γυναῖκά τινα τοῦ πατρὸς ἔχειν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	5	2	C1	04	ἐστέ	εἰμί	V-PAI-2P	01	07	01,02,03,04,05,06,07	καὶ ὑμεῖς πεφυσιωμένοι ==ἐστέ== καὶ οὐχὶ μᾶλλον	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	5	2	C2	08	ἐπενθήσατε	πενθέω	V-AAI-2P	08	08	08	==ἐπενθήσατε==	suggested-span	ends before next finite anchor
+1corintios	5	2	C3	10	ἀρθῇ	αἴρω	V-APS-3S	09	18	09,10,11,12,13,14,15,16,17,18	ἵνα ==ἀρθῇ== ἐκ μέσου ὑμῶν ὁ τὸ ἔργον τοῦτο ποιήσας	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	5	3	C1	12	κέκρικα	κρίνω	V-XAI-1S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	ἐγὼ μὲν γάρ ἀπὼν τῷ σώματι παρὼν δὲ τῷ πνεύματι ἤδη ==κέκρικα== ὡς παρὼν τὸν οὕτως τοῦτο κατεργασάμενον	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	5	5	C1	13	σωθῇ	σῴζω	V-APS-3S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	παραδοῦναι τὸν τοιοῦτον τῷ σατανᾷ εἰς ὄλεθρον τῆς σαρκός ἵνα τὸ πνεῦμα ==σωθῇ== ἐν τῇ ἡμέρᾳ τοῦ κυρίου	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	5	6	C1	07	οἴδατε	οἶδα	V-XAI-2P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	οὐ καλὸν τὸ καύχημα ὑμῶν οὐκ ==οἴδατε== ὅτι μικρὰ ζύμη ὅλον τὸ φύραμα	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	5	6	C2	14	ζυμοῖ	ζυμόω	V-PAI-3S	14	14	14	==ζυμοῖ==	suggested-span	ends at verse boundary
+1corintios	5	7	C1	01	ἐκκαθάρατε	ἐκκαθαίρω	V-AAD-2P	01	04	01,02,03,04	==ἐκκαθάρατε== τὴν παλαιὰν ζύμην	suggested-span	ends before next finite anchor
+1corintios	5	7	C2	06	ἦτε	εἰμί	V-PAS-2P	05	08	05,06,07,08	ἵνα ==ἦτε== νέον φύραμα	suggested-span	ends before next finite anchor; included preceding subordinate connector ἵνα
+1corintios	5	7	C3	10	ἐστε	εἰμί	V-PAI-2P	09	16	09,10,11,12,13,14,15,16	καθώς ==ἐστε== ἄζυμοι καὶ γὰρ τὸ πάσχα ἡμῶν	suggested-span	ends before next finite anchor; included preceding subordinate connector καθώς
+1corintios	5	7	C4	17	ἐτύθη	θύω	V-API-3S	17	18	17,18	==ἐτύθη== χριστός	suggested-span	ends at verse boundary
+1corintios	5	8	C1	02	ἑορτάζωμεν	ἑορτάζω	V-PAS-1P	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	ὥστε ==ἑορτάζωμεν== μὴ ἐν ζύμῃ παλαιᾷ μηδὲ ἐν ζύμῃ κακίας καὶ πονηρίας ἀλλʼ ἐν ἀζύμοις εἰλικρινείας καὶ ἀληθείας	suggested-span	includes pre-anchor material; ends at verse boundary; included preceding subordinate connector ὥστε
+1corintios	5	9	C1	01	ἔγραψα	γράφω	V-AAI-1S	01	08	01,02,03,04,05,06,07,08	==ἔγραψα== ὑμῖν ἐν τῇ ἐπιστολῇ μὴ συναναμίγνυσθαι πόρνοις	suggested-span	ends at verse boundary
+1corintios	5	10	C1	16	ὠφείλετε	ὀφείλω	V-IAI-2P	01	21	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21	οὐ πάντως τοῖς πόρνοις τοῦ κόσμου τούτου ἢ τοῖς πλεονέκταις καὶ ἅρπαξιν ἢ εἰδωλολάτραις ἐπεὶ ==ὠφείλετε== ἄρα ἐκ τοῦ κόσμου ἐξελθεῖν	suggested-span	includes pre-anchor material; ends at verse boundary; included preceding subordinate connector ἐπεὶ
+1corintios	5	11	C1	03	ἔγραψα	γράφω	V-AAI-1S	01	10	01,02,03,04,05,06,07,08,09,10	νῦν δὲ ==ἔγραψα== ὑμῖν μὴ συναναμίγνυσθαι ἐάν τις ἀδελφὸς ὀνομαζόμενος	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δὲ
+1corintios	5	11	C2	11	ᾖ	εἰμί	V-PAS-3S	11	26	11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26	==ᾖ== πόρνος ἢ πλεονέκτης ἢ εἰδωλολάτρης ἢ λοίδορος ἢ μέθυσος ἢ ἅρπαξ τῷ τοιούτῳ μηδὲ συνεσθίειν	suggested-span	ends at verse boundary
+1corintios	5	12	C1	11	κρίνετε	κρίνω	V-PAI-2P	01	11	01,02,03,04,05,06,07,08,09,10,11	τί γάρ μοι τοὺς ἔξω κρίνειν οὐχὶ τοὺς ἔσω ὑμεῖς ==κρίνετε==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	5	13	C1	06	κρίνει;	κρίνω	V-PAI-3S	01	06	01,02,03,04,05,06	τοὺς δὲ ἔξω ὁ θεὸς ==κρίνει;==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	5	13	C2	07	ἐξάρατε	ἐξαίρω	V-AAD-2P	07	12	07,08,09,10,11,12	==ἐξάρατε== τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν	suggested-span	ends at verse boundary
+1corintios	6	1	C1	01	τολμᾷ	τολμάω	V-PAI-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	==τολμᾷ== τις ὑμῶν πρᾶγμα ἔχων πρὸς τὸν ἕτερον κρίνεσθαι ἐπὶ τῶν ἀδίκων καὶ οὐχὶ ἐπὶ τῶν ἁγίων	suggested-span	ends at verse boundary
+1corintios	6	2	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	08	01,02,03,04,05,06,07,08	ἢ οὐκ ==οἴδατε== ὅτι οἱ ἅγιοι τὸν κόσμον	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ; carried pre-finite token ἢ
+1corintios	6	2	C2	09	κρινοῦσιν	κρίνω	V-FAI-3P	09	13	09,10,11,12,13	==κρινοῦσιν== καὶ εἰ ἐν ὑμῖν	suggested-span	ends before next finite anchor
+1corintios	6	2	C3	14	κρίνεται	κρίνω	V-PPI-3S	14	17	14,15,16,17	==κρίνεται== ὁ κόσμος ἀνάξιοί	suggested-span	ends before next finite anchor
+1corintios	6	2	C4	18	ἐστε	εἰμί	V-PAI-2P	18	20	18,19,20	==ἐστε== κριτηρίων ἐλαχίστων	suggested-span	ends at verse boundary
+1corintios	6	3	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	04	01,02,03,04	οὐκ ==οἴδατε== ὅτι ἀγγέλους	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	6	3	C2	05	κρινοῦμεν	κρίνω	V-FAI-1P	05	07	05,06,07	==κρινοῦμεν== μήτιγε βιωτικά	suggested-span	ends at verse boundary
+1corintios	6	4	C1	06	ἔχητε	ἔχω	V-PAS-2P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	βιωτικὰ μὲν οὖν κριτήρια ἐὰν ==ἔχητε== τοὺς ἐξουθενημένους ἐν τῇ ἐκκλησίᾳ τούτους	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	6	4	C2	13	καθίζετε	καθίζω	V-PAI-2P	13	13	13	==καθίζετε==	suggested-span	ends at verse boundary
+1corintios	6	5	C1	04	λέγω	λέγω	V-PAI-1S	01	05	01,02,03,04,05	πρὸς ἐντροπὴν ὑμῖν ==λέγω== οὕτως	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	6	5	C2	07	ἔνι	ἔνι	V-PAI-3S	06	12	06,07,08,09,10,11,12	οὐκ ==ἔνι== ἐν ὑμῖν οὐδεὶς σοφὸς ὃς	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	6	5	C3	13	δυνήσεται	δύναμαι	V-FMI-3S	13	19	13,14,15,16,17,18,19	==δυνήσεται== διακρῖναι ἀνὰ μέσον τοῦ ἀδελφοῦ αὐτοῦ	suggested-span	ends at verse boundary
+1corintios	6	6	C1	05	κρίνεται	κρίνω	V-PPI-3S	01	09	01,02,03,04,05,06,07,08,09	ἀλλὰ ἀδελφὸς μετὰ ἀδελφοῦ ==κρίνεται== καὶ τοῦτο ἐπὶ ἀπίστων	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	6	7	C1	07	ἐστιν	εἰμί	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	ἤδη μὲν οὖν ὅλως ἥττημα ὑμῖν ==ἐστιν== ὅτι κρίματα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	6	7	C2	10	ἔχετε	ἔχω	V-PAI-2P	10	16	10,11,12,13,14,15,16	==ἔχετε== μεθʼ ἑαυτῶν διὰ τί οὐχὶ μᾶλλον	suggested-span	ends before next finite anchor
+1corintios	6	7	C3	17	ἀδικεῖσθε	ἀδικέω	V-PPI-2P	17	21	17,18,19,20,21	==ἀδικεῖσθε== διὰ τί οὐχὶ μᾶλλον	suggested-span	ends before next finite anchor
+1corintios	6	7	C4	22	ἀποστερεῖσθε	ἀποστερέω	V-PPI-2P	22	22	22	==ἀποστερεῖσθε==	suggested-span	ends at verse boundary
+1corintios	6	8	C1	03	ἀδικεῖτε	ἀδικέω	V-PAI-2P	01	03	01,02,03	ἀλλὰ ὑμεῖς ==ἀδικεῖτε==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	6	8	C2	05	ἀποστερεῖτε	ἀποστερέω	V-PAI-2P	04	08	04,05,06,07,08	καὶ ==ἀποστερεῖτε== καὶ τοῦτο ἀδελφούς	suggested-span	ends at verse boundary; carried pre-finite token καὶ
+1corintios	6	9	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	07	01,02,03,04,05,06,07	ἢ οὐκ ==οἴδατε== ὅτι ἄδικοι θεοῦ βασιλείαν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ; carried pre-finite token ἢ
+1corintios	6	9	C2	09	κληρονομήσουσιν	κληρονομέω	V-FAI-3P	08	09	08,09	οὐ ==κληρονομήσουσιν==	suggested-span	ends before next finite anchor; carried pre-finite token οὐ
+1corintios	6	9	C3	11	πλανᾶσθε	πλανάω	V-PPD-2P	10	21	10,11,12,13,14,15,16,17,18,19,20,21	μὴ ==πλανᾶσθε== οὔτε πόρνοι οὔτε εἰδωλολάτραι οὔτε μοιχοὶ οὔτε μαλακοὶ οὔτε ἀρσενοκοῖται	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	6	10	C1	13	κληρονομήσουσιν	κληρονομέω	V-FAI-3P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	οὔτε κλέπται οὔτε πλεονέκται οὐ μέθυσοι οὐ λοίδοροι οὐχ ἅρπαγες βασιλείαν θεοῦ ==κληρονομήσουσιν==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	6	11	C1	04	ἦτε	εἰμί	V-IAI-2P	01	04	01,02,03,04	καὶ ταῦτά τινες ==ἦτε==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	6	11	C2	06	ἀπελούσασθε	ἀπολούομαι	V-AMI-2P	05	06	05,06	ἀλλὰ ==ἀπελούσασθε==	suggested-span	ends before next finite anchor; carried pre-finite token ἀλλὰ
+1corintios	6	11	C3	08	ἡγιάσθητε	ἁγιάζω	V-API-2P	07	08	07,08	ἀλλὰ ==ἡγιάσθητε==	suggested-span	ends before next finite anchor; carried pre-finite token ἀλλὰ
+1corintios	6	11	C4	10	ἐδικαιώθητε	δικαιόω	V-API-2P	09	23	09,10,11,12,13,14,15,16,17,18,19,20,21,22,23	ἀλλὰ ==ἐδικαιώθητε== ἐν τῷ ὀνόματι τοῦ κυρίου ἰησοῦ καὶ ἐν τῷ πνεύματι τοῦ θεοῦ ἡμῶν	suggested-span	ends at verse boundary; carried pre-finite token ἀλλὰ
+1corintios	6	12	C1	03	ἔξεστιν	ἔξεστι(ν)	V-PAI-3S	01	06	01,02,03,04,05,06	πάντα μοι ==ἔξεστιν== ἀλλʼ οὐ πάντα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	6	12	C2	07	συμφέρει	συμφέρω	V-PAI-3S	07	09	07,08,09	==συμφέρει== πάντα μοι	suggested-span	ends before next finite anchor
+1corintios	6	12	C3	10	ἔξεστιν	ἔξεστι(ν)	V-PAI-3S	10	13	10,11,12,13	==ἔξεστιν== ἀλλʼ οὐκ ἐγὼ	suggested-span	ends before next finite anchor
+1corintios	6	12	C4	14	ἐξουσιασθήσομαι	ἐξουσιάζω	V-FPI-1S	14	16	14,15,16	==ἐξουσιασθήσομαι== ὑπό τινος	suggested-span	ends at verse boundary
+1corintios	6	13	C1	17	καταργήσει	καταργέω	V-FAI-3S	01	31	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31	τὰ βρώματα τῇ κοιλίᾳ καὶ ἡ κοιλία τοῖς βρώμασιν ὁ δὲ θεὸς καὶ ταύτην καὶ ταῦτα ==καταργήσει== τὸ δὲ σῶμα οὐ τῇ πορνείᾳ ἀλλὰ τῷ κυρίῳ καὶ ὁ κύριος τῷ σώματι	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	6	14	C1	07	ἤγειρεν	ἐγείρω	V-AAI-3S	01	09	01,02,03,04,05,06,07,08,09	ὁ δὲ θεὸς καὶ τὸν κύριον ==ἤγειρεν== καὶ ἡμᾶς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	6	14	C2	10	ἐξεγερεῖ	ἐξεγείρω	V-FAI-3S	10	14	10,11,12,13,14	==ἐξεγερεῖ== διὰ τῆς δυνάμεως αὐτοῦ	suggested-span	ends at verse boundary
+1corintios	6	15	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	08	01,02,03,04,05,06,07,08	οὐκ ==οἴδατε== ὅτι τὰ σώματα ὑμῶν μέλη χριστοῦ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	6	15	C2	09	ἐστιν	εἰμί	V-PAI-3S	09	15	09,10,11,12,13,14,15	==ἐστιν== ἄρας οὖν τὰ μέλη τοῦ χριστοῦ	suggested-span	ends before next finite anchor
+1corintios	6	15	C3	16	ποιήσω	ποιέω	V-AAS-1S	16	20	16,17,18,19,20	==ποιήσω== πόρνης μέλη μὴ γένοιτο	suggested-span	ends at verse boundary
+1corintios	6	16	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	10	01,02,03,04,05,06,07,08,09,10	ἢ οὐκ ==οἴδατε== ὅτι ὁ κολλώμενος τῇ πόρνῃ ἓν σῶμά	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ; carried pre-finite token ἢ
+1corintios	6	16	C2	11	ἐστιν	εἰμί	V-PAI-3S	11	11	11	==ἐστιν==	suggested-span	ends before next finite anchor
+1corintios	6	16	C3	12	ἔσονται	εἰμί	V-FMI-3P	12	13	12,13	==ἔσονται== γάρ	suggested-span	ends before next finite anchor
+1corintios	6	16	C4	14	φησίν	φημί	V-PAI-3S	14	19	14,15,16,17,18,19	==φησίν== οἱ δύο εἰς σάρκα μίαν	suggested-span	ends at verse boundary
+1corintios	6	17	C1	08	ἐστιν	εἰμί	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ὁ δὲ κολλώμενος τῷ κυρίῳ ἓν πνεῦμά ==ἐστιν==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	6	18	C1	01	φεύγετε	φεύγω	V-PAD-2P	01	06	01,02,03,04,05,06	==φεύγετε== τὴν πορνείαν πᾶν ἁμάρτημα ὃ	suggested-span	ends before next finite anchor
+1corintios	6	18	C2	08	ποιήσῃ	ποιέω	V-AAS-3S	07	12	07,08,09,10,11,12	ἐὰν ==ποιήσῃ== ἄνθρωπος ἐκτὸς τοῦ σώματός	suggested-span	ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	6	18	C3	13	ἐστιν	εἰμί	V-PAI-3S	13	20	13,14,15,16,17,18,19,20	==ἐστιν== ὁ δὲ πορνεύων εἰς τὸ ἴδιον σῶμα	suggested-span	ends before next finite anchor
+1corintios	6	18	C4	21	ἁμαρτάνει	ἁμαρτάνω	V-PAI-3S	21	21	21	==ἁμαρτάνει==	suggested-span	ends at verse boundary
+1corintios	6	19	C1	03	οἴδατε	οἶδα	V-XAI-2P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ἢ οὐκ ==οἴδατε== ὅτι τὸ σῶμα ὑμῶν ναὸς τοῦ ἐν ὑμῖν ἁγίου πνεύματός	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ; carried pre-finite token ἢ
+1corintios	6	19	C2	14	ἐστιν	εἰμί	V-PAI-3S	14	15	14,15	==ἐστιν== οὗ	suggested-span	ends before next finite anchor
+1corintios	6	19	C3	16	ἔχετε	ἔχω	V-PAI-2P	16	18	16,17,18	==ἔχετε== ἀπὸ θεοῦ;	suggested-span	ends before next finite anchor
+1corintios	6	19	C4	21	ἐστὲ	εἰμί	V-PAI-2P	19	22	19,20,21,22	καὶ οὐκ ==ἐστὲ== ἑαυτῶν	suggested-span	ends at verse boundary; carried pre-finite token οὐκ; carried pre-finite token καὶ
+1corintios	6	20	C1	01	ἠγοράσθητε	ἀγοράζω	V-API-2P	01	03	01,02,03	==ἠγοράσθητε== γὰρ τιμῆς	suggested-span	ends before next finite anchor
+1corintios	6	20	C2	04	δοξάσατε	δοξάζω	V-AAD-2P	04	11	04,05,06,07,08,09,10,11	==δοξάσατε== δὴ τὸν θεὸν ἐν τῷ σώματι ὑμῶν	suggested-span	ends at verse boundary
+1corintios	7	1	C1	04	ἐγράψατε	γράφω	V-AAI-2P	01	09	01,02,03,04,05,06,07,08,09	περὶ δὲ ὧν ==ἐγράψατε== καλὸν ἀνθρώπῳ γυναικὸς μὴ ἅπτεσθαι	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	7	2	C1	09	ἐχέτω	ἔχω	V-PAD-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	διὰ δὲ τὰς πορνείας ἕκαστος τὴν ἑαυτοῦ γυναῖκα ==ἐχέτω== καὶ ἑκάστη τὸν ἴδιον ἄνδρα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	2	C2	15	ἐχέτω	ἔχω	V-PAD-3S	15	15	15	==ἐχέτω==	suggested-span	ends at verse boundary
+1corintios	7	3	C1	07	ἀποδιδότω	ἀποδίδωμι	V-PAD-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	τῇ γυναικὶ ὁ ἀνὴρ τὴν ὀφειλὴν ==ἀποδιδότω== ὁμοίως δὲ καὶ ἡ γυνὴ τῷ ἀνδρί	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	7	4	C1	07	ἐξουσιάζει	ἐξουσιάζω	V-PAI-3S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	ἡ γυνὴ τοῦ ἰδίου σώματος οὐκ ==ἐξουσιάζει== ἀλλὰ ὁ ἀνήρ ὁμοίως δὲ καὶ ὁ ἀνὴρ τοῦ ἰδίου σώματος	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	7	4	C2	20	ἐξουσιάζει	ἐξουσιάζω	V-PAI-3S	19	23	19,20,21,22,23	οὐκ ==ἐξουσιάζει== ἀλλὰ ἡ γυνή	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	7	5	C1	02	ἀποστερεῖτε	ἀποστερέω	V-PAD-2P	01	10	01,02,03,04,05,06,07,08,09,10	μὴ ==ἀποστερεῖτε== ἀλλήλους εἰ μήτι ἂν ἐκ συμφώνου πρὸς καιρὸν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token μὴ
+1corintios	7	5	C2	12	σχολάσητε	σχολάζω	V-AAS-2P	11	19	11,12,13,14,15,16,17,18,19	ἵνα ==σχολάσητε== τῇ προσευχῇ καὶ πάλιν ἐπὶ τὸ αὐτὸ	suggested-span	ends before next finite anchor; included preceding subordinate connector ἵνα
+1corintios	7	5	C3	20	ἦτε	εἰμί	V-PAS-2P	20	20	20	==ἦτε==	suggested-span	ends before next finite anchor
+1corintios	7	5	C4	23	πειράζῃ	πειράζω	V-PAS-3S	21	30	21,22,23,24,25,26,27,28,29,30	ἵνα μὴ ==πειράζῃ== ὑμᾶς ὁ σατανᾶς διὰ τὴν ἀκρασίαν ὑμῶν	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	7	6	C1	03	λέγω	λέγω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	Τοῦτο δὲ ==λέγω== κατὰ συγγνώμην οὐ κατʼ ἐπιταγήν	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token δὲ
+1corintios	7	7	C1	01	θέλω	θέλω	V-PAI-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	==θέλω== δὲ πάντας ἀνθρώπους εἶναι ὡς καὶ ἐμαυτόν ἀλλὰ ἕκαστος ἴδιον	suggested-span	ends before next finite anchor
+1corintios	7	7	C2	12	ἔχει	ἔχω	V-PAI-3S	12	21	12,13,14,15,16,17,18,19,20,21	==ἔχει== χάρισμα ἐκ θεοῦ ὁ μὲν οὕτως ⸁ὁ δὲ οὕτως	suggested-span	ends at verse boundary
+1corintios	7	8	C1	01	λέγω	λέγω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	==λέγω== δὲ τοῖς ἀγάμοις καὶ ταῖς χήραις καλὸν αὐτοῖς	suggested-span	ends before next finite anchor
+1corintios	7	8	C2	11	μείνωσιν	μένω	V-AAS-3P	10	13	10,11,12,13	ἐὰν ==μείνωσιν== ὡς κἀγώ	suggested-span	ends at verse boundary; included preceding subordinate connector ἐὰν
+1corintios	7	9	C1	04	ἐγκρατεύονται	ἐγκρατεύομαι	V-PMI-3P	01	04	01,02,03,04	εἰ δὲ οὐκ ==ἐγκρατεύονται==	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ; carried pre-finite token δὲ
+1corintios	7	9	C2	05	γαμησάτωσαν	γαμέω	V-AAD-3P	05	07	05,06,07	==γαμησάτωσαν== κρεῖττον γάρ	suggested-span	ends before next finite anchor
+1corintios	7	9	C3	08	ἐστιν	εἰμί	V-PAI-3S	08	11	08,09,10,11	==ἐστιν== γαμῆσαι ἢ πυροῦσθαι	suggested-span	ends at verse boundary
+1corintios	7	10	C1	04	παραγγέλλω	παραγγέλλω	V-PAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	τοῖς δὲ γεγαμηκόσιν ==παραγγέλλω== οὐκ ἐγὼ ἀλλὰ ὁ κύριος γυναῖκα ἀπὸ ἀνδρὸς μὴ χωρισθῆναι—	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	7	11	C1	04	χωρισθῇ	χωρίζω	V-APS-3S	01	04	01,02,03,04	ἐὰν δὲ καὶ ==χωρισθῇ==	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token καὶ; carried pre-finite token δὲ
+1corintios	7	11	C2	05	μενέτω	μένω	V-PAD-3S	05	09	05,06,07,08,09	==μενέτω== ἄγαμος ἢ τῷ ἀνδρὶ	suggested-span	ends before next finite anchor
+1corintios	7	11	C3	10	καταλλαγήτω—	καταλλάσσω	V-APD-3S	10	15	10,11,12,13,14,15	==καταλλαγήτω—== καὶ ἄνδρα γυναῖκα μὴ ἀφιέναι	suggested-span	ends at verse boundary
+1corintios	7	12	C1	04	λέγω	λέγω	V-PAI-1S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	Τοῖς δὲ λοιποῖς ==λέγω== ἐγώ οὐχ ὁ κύριος εἴ τις ἀδελφὸς γυναῖκα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	12	C2	13	ἔχει	ἔχω	V-PAI-3S	13	16	13,14,15,16	==ἔχει== ἄπιστον καὶ αὕτη	suggested-span	ends before next finite anchor
+1corintios	7	12	C3	17	συνευδοκεῖ	συνευδοκέω	V-PAI-3S	17	20	17,18,19,20	==συνευδοκεῖ== οἰκεῖν μετʼ αὐτοῦ	suggested-span	ends before next finite anchor
+1corintios	7	12	C4	22	ἀφιέτω	ἀφίημι	V-PAD-3S	21	23	21,22,23	μὴ ==ἀφιέτω== αὐτήν	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	7	13	C1	05	ἔχει	ἔχω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	καὶ γυνὴ εἴ τις ==ἔχει== ἄνδρα ἄπιστον καὶ οὗτος	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	13	C2	10	συνευδοκεῖ	συνευδοκέω	V-PAI-3S	10	13	10,11,12,13	==συνευδοκεῖ== οἰκεῖν μετʼ αὐτῆς	suggested-span	ends before next finite anchor
+1corintios	7	13	C3	15	ἀφιέτω	ἀφίημι	V-PAD-3S	14	17	14,15,16,17	μὴ ==ἀφιέτω== τὸν ἄνδρα	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	7	14	C1	01	ἡγίασται	ἁγιάζω	V-XPI-3S	01	09	01,02,03,04,05,06,07,08,09	==ἡγίασται== γὰρ ὁ ἀνὴρ ὁ ἄπιστος ἐν τῇ γυναικί	suggested-span	ends before next finite anchor
+1corintios	7	14	C2	11	ἡγίασται	ἁγιάζω	V-XPI-3S	10	24	10,11,12,13,14,15,16,17,18,19,20,21,22,23,24	καὶ ==ἡγίασται== ἡ γυνὴ ἡ ἄπιστος ἐν τῷ ἀδελφῷ ἐπεὶ ἄρα τὰ τέκνα ὑμῶν ἀκάθαρτά	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	7	14	C3	25	ἐστιν	εἰμί	V-PAI-3S	25	28	25,26,27,28	==ἐστιν== νῦν δὲ ἅγιά	suggested-span	ends before next finite anchor
+1corintios	7	14	C4	29	ἐστιν	εἰμί	V-PAI-3S	29	29	29	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	7	15	C1	05	χωρίζεται	χωρίζω	V-PPI-3S	01	05	01,02,03,04,05	εἰ δὲ ὁ ἄπιστος ==χωρίζεται==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	15	C2	06	χωριζέσθω	χωρίζω	V-PPD-3S	06	06	06	==χωριζέσθω==	suggested-span	ends before next finite anchor
+1corintios	7	15	C3	08	δεδούλωται	δουλόω	V-XPI-3S	07	19	07,08,09,10,11,12,13,14,15,16,17,18,19	οὐ ==δεδούλωται== ὁ ἀδελφὸς ἢ ἡ ἀδελφὴ ἐν τοῖς τοιούτοις ἐν δὲ εἰρήνῃ	suggested-span	ends before next finite anchor; carried pre-finite token οὐ
+1corintios	7	15	C4	20	κέκληκεν	καλέω	V-XAI-3S	20	23	20,21,22,23	==κέκληκεν== ἡμᾶς ὁ θεός	suggested-span	ends at verse boundary
+1corintios	7	16	C1	03	οἶδας	οἶδα	V-XAI-2S	01	07	01,02,03,04,05,06,07	τί γὰρ ==οἶδας== γύναι εἰ τὸν ἄνδρα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	16	C2	08	σώσεις	σῴζω	V-FAI-2S	08	10	08,09,10	==σώσεις== ἢ τί	suggested-span	ends before next finite anchor
+1corintios	7	16	C3	11	οἶδας	οἶδα	V-XAI-2S	11	15	11,12,13,14,15	==οἶδας== ἄνερ εἰ τὴν γυναῖκα	suggested-span	ends before next finite anchor
+1corintios	7	16	C4	16	σώσεις	σῴζω	V-FAI-2S	16	16	16	==σώσεις==	suggested-span	ends at verse boundary
+1corintios	7	17	C1	05	ἐμέρισεν	μερίζω	V-AAI-3S	01	08	01,02,03,04,05,06,07,08	εἰ μὴ ἑκάστῳ ὡς ==ἐμέρισεν== ὁ κύριος ἕκαστον	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ὡς
+1corintios	7	17	C2	10	κέκληκεν	καλέω	V-XAI-3S	09	13	09,10,11,12,13	ὡς ==κέκληκεν== ὁ θεός οὕτως	suggested-span	ends before next finite anchor; included preceding subordinate connector ὡς
+1corintios	7	17	C3	14	περιπατείτω	περιπατέω	V-PAD-3S	14	20	14,15,16,17,18,19,20	==περιπατείτω== καὶ οὕτως ἐν ταῖς ἐκκλησίαις πάσαις	suggested-span	ends before next finite anchor
+1corintios	7	17	C4	21	διατάσσομαι	διατάσσω	V-PMI-1S	21	21	21	==διατάσσομαι==	suggested-span	ends at verse boundary
+1corintios	7	18	C1	03	ἐκλήθη;	καλέω	V-API-3S	01	03	01,02,03	περιτετμημένος τις ==ἐκλήθη;==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	18	C2	05	ἐπισπάσθω	ἐπισπάομαι	V-PMD-3S	04	07	04,05,06,07	μὴ ==ἐπισπάσθω== ἐν ἀκροβυστίᾳ	suggested-span	ends before next finite anchor; carried pre-finite token μὴ
+1corintios	7	18	C3	08	κέκληταί	καλέω	V-XPI-3S	08	09	08,09	==κέκληταί== τις;	suggested-span	ends before next finite anchor
+1corintios	7	18	C4	11	περιτεμνέσθω	περιτέμνω	V-PPD-3S	10	11	10,11	μὴ ==περιτεμνέσθω==	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	7	19	C1	04	ἐστιν	εἰμί	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ἡ περιτομὴ οὐδέν ==ἐστιν== καὶ ἡ ἀκροβυστία οὐδέν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	19	C2	09	ἐστιν	εἰμί	V-PAI-3S	09	13	09,10,11,12,13	==ἐστιν== ἀλλὰ τήρησις ἐντολῶν θεοῦ	suggested-span	ends at verse boundary
+1corintios	7	20	C1	06	ἐκλήθη	καλέω	V-API-3S	01	08	01,02,03,04,05,06,07,08	ἕκαστος ἐν τῇ κλήσει ᾗ ==ἐκλήθη== ἐν ταύτῃ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	20	C2	09	μενέτω	μένω	V-PAD-3S	09	09	09	==μενέτω==	suggested-span	ends at verse boundary
+1corintios	7	21	C1	02	ἐκλήθης;	καλέω	V-API-2S	01	04	01,02,03,04	δοῦλος ==ἐκλήθης;== μή σοι	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	21	C2	05	μελέτω	μέλει	V-PAD-3S	05	06	05,06	==μελέτω== ἀλλʼ	suggested-span	ends before next finite anchor
+1corintios	7	21	C3	09	δύνασαι	δύναμαι	V-PMI-2S	07	12	07,08,09,10,11,12	εἰ καὶ ==δύνασαι== ἐλεύθερος γενέσθαι μᾶλλον	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	7	21	C4	13	χρῆσαι	χράομαι	V-AMD-2S	13	13	13	==χρῆσαι==	suggested-span	ends at verse boundary
+1corintios	7	22	C1	09	ἐστίν	εἰμί	V-PAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	ὁ γὰρ ἐν κυρίῳ κληθεὶς δοῦλος ἀπελεύθερος κυρίου ==ἐστίν== ὁμοίως ὁ ἐλεύθερος κληθεὶς δοῦλός	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	22	C2	15	ἐστιν	εἰμί	V-PAI-3S	15	16	15,16	==ἐστιν== Χριστοῦ	suggested-span	ends at verse boundary
+1corintios	7	23	C1	02	ἠγοράσθητε	ἀγοράζω	V-API-2P	01	02	01,02	τιμῆς ==ἠγοράσθητε==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	23	C2	04	γίνεσθε	γίνομαι	V-PMD-2P	03	06	03,04,05,06	μὴ ==γίνεσθε== δοῦλοι ἀνθρώπων	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	7	24	C1	04	ἐκλήθη	καλέω	V-API-3S	01	07	01,02,03,04,05,06,07	ἕκαστος ἐν ᾧ ==ἐκλήθη== ἀδελφοί ἐν τούτῳ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	24	C2	08	μενέτω	μένω	V-PAD-3S	08	10	08,09,10	==μενέτω== παρὰ θεῷ	suggested-span	ends at verse boundary
+1corintios	7	25	C1	08	ἔχω	ἔχω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	περὶ δὲ τῶν παρθένων ἐπιταγὴν κυρίου οὐκ ==ἔχω== γνώμην	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	7	25	C2	11	δίδωμι	δίδωμι	V-PAI-1S	10	17	10,11,12,13,14,15,16,17	δὲ ==δίδωμι== ὡς ἠλεημένος ὑπὸ κυρίου πιστὸς εἶναι	suggested-span	ends at verse boundary; carried pre-finite token δὲ
+1corintios	7	26	C1	01	νομίζω	νομίζω	V-PAI-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	==νομίζω== οὖν τοῦτο καλὸν ὑπάρχειν διὰ τὴν ἐνεστῶσαν ἀνάγκην ὅτι καλὸν ἀνθρώπῳ τὸ οὕτως εἶναι	suggested-span	ends at verse boundary
+1corintios	7	27	C1	01	δέδεσαι	δέω	V-XPI-2S	01	02	01,02	==δέδεσαι== γυναικί;	suggested-span	ends before next finite anchor
+1corintios	7	27	C2	04	ζήτει	ζητέω	V-PAD-2S	03	05	03,04,05	μὴ ==ζήτει== λύσιν	suggested-span	ends before next finite anchor; carried pre-finite token μὴ
+1corintios	7	27	C3	06	λέλυσαι	λύω	V-XPI-2S	06	08	06,07,08	==λέλυσαι== ἀπὸ γυναικός;	suggested-span	ends before next finite anchor
+1corintios	7	27	C4	10	ζήτει	ζητέω	V-PAD-2S	09	11	09,10,11	μὴ ==ζήτει== γυναῖκα	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	7	28	C1	04	γαμήσῃς	γαμέω	V-AAS-2S	01	04	01,02,03,04	ἐὰν δὲ καὶ ==γαμήσῃς==	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token καὶ; carried pre-finite token δὲ
+1corintios	7	28	C2	06	ἥμαρτες	ἁμαρτάνω	V-AAI-2S	05	07	05,06,07	οὐχ ==ἥμαρτες== καὶ	suggested-span	ends before next finite anchor; carried pre-finite token οὐχ
+1corintios	7	28	C3	09	γήμῃ	γαμέω	V-AAS-3S	08	11	08,09,10,11	ἐὰν ==γήμῃ== ἡ παρθένος	suggested-span	ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	7	28	C4	13	ἥμαρτεν	ἁμαρτάνω	V-AAI-3S	12	17	12,13,14,15,16,17	οὐχ ==ἥμαρτεν== θλῖψιν δὲ τῇ σαρκὶ	suggested-span	ends before next finite anchor; carried pre-finite token οὐχ
+1corintios	7	28	C5	18	ἕξουσιν	ἔχω	V-FAI-3P	18	23	18,19,20,21,22,23	==ἕξουσιν== οἱ τοιοῦτοι ἐγὼ δὲ ὑμῶν	suggested-span	ends before next finite anchor
+1corintios	7	28	C6	24	φείδομαι	φείδομαι	V-PMI-1S	24	24	24	==φείδομαι==	suggested-span	ends at verse boundary
+1corintios	7	29	C1	03	φημι	φημί	V-PAI-1S	01	07	01,02,03,04,05,06,07	τοῦτο δέ ==φημι== ἀδελφοί ὁ καιρὸς συνεσταλμένος	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δέ
+1corintios	7	29	C2	08	ἐστίν	εἰμί	V-PAI-3S	08	18	08,09,10,11,12,13,14,15,16,17,18	==ἐστίν== τὸ λοιπὸν ἵνα καὶ οἱ ἔχοντες γυναῖκας ὡς μὴ ἔχοντες	suggested-span	ends before next finite anchor
+1corintios	7	29	C3	19	ὦσιν	εἰμί	V-PAS-3P	19	19	19	==ὦσιν==	suggested-span	ends at verse boundary
+1corintios	7	31	C1	09	παράγει	παράγω	V-PAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	καὶ οἱ χρώμενοι τὸν κόσμον ὡς μὴ καταχρώμενοι ==παράγει== γὰρ τὸ σχῆμα τοῦ κόσμου τούτου	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	7	32	C1	01	θέλω	θέλω	V-PAI-1S	01	07	01,02,03,04,05,06,07	==θέλω== δὲ ὑμᾶς ἀμερίμνους εἶναι ὁ ἄγαμος	suggested-span	ends before next finite anchor
+1corintios	7	32	C2	08	μεριμνᾷ	μεριμνάω	V-PAI-3S	08	12	08,09,10,11,12	==μεριμνᾷ== τὰ τοῦ κυρίου πῶς	suggested-span	ends before next finite anchor
+1corintios	7	32	C3	13	ἀρέσῃ	ἀρέσκω	V-AAS-3S	13	15	13,14,15	==ἀρέσῃ== τῷ κυρίῳ	suggested-span	ends at verse boundary
+1corintios	7	33	C1	04	μεριμνᾷ	μεριμνάω	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ὁ δὲ γαμήσας ==μεριμνᾷ== τὰ τοῦ κόσμου πῶς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	33	C2	09	ἀρέσῃ	ἀρέσκω	V-AAS-3S	09	11	09,10,11	==ἀρέσῃ== τῇ γυναικί	suggested-span	ends at verse boundary
+1corintios	7	34	C1	02	μεμέρισται	μερίζω	V-XPI-3S	01	10	01,02,03,04,05,06,07,08,09,10	καὶ ==μεμέρισται== καὶ ἡ γυνὴ ἡ ἄγαμος καὶ ἡ παρθένος	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token καὶ
+1corintios	7	34	C2	11	μεριμνᾷ	μεριμνάω	V-PAI-3S	11	14	11,12,13,14	==μεριμνᾷ== τὰ τοῦ κυρίου	suggested-span	ends before next finite anchor
+1corintios	7	34	C3	16	ᾖ	εἰμί	V-PAS-3S	15	26	15,16,17,18,19,20,21,22,23,24,25,26	ἵνα ==ᾖ== ἁγία καὶ τῷ σώματι καὶ ⸁τῷ πνεύματι ἡ δὲ γαμήσασα	suggested-span	ends before next finite anchor; included preceding subordinate connector ἵνα
+1corintios	7	34	C4	27	μεριμνᾷ	μεριμνάω	V-PAI-3S	27	31	27,28,29,30,31	==μεριμνᾷ== τὰ τοῦ κόσμου πῶς	suggested-span	ends before next finite anchor
+1corintios	7	34	C5	32	ἀρέσῃ	ἀρέσκω	V-AAS-3S	32	34	32,33,34	==ἀρέσῃ== τῷ ἀνδρί	suggested-span	ends at verse boundary
+1corintios	7	35	C1	08	λέγω	λέγω	V-PAI-1S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	τοῦτο δὲ πρὸς τὸ ὑμῶν αὐτῶν σύμφορον ==λέγω== οὐχ ἵνα βρόχον ὑμῖν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	35	C2	13	ἐπιβάλω	ἐπιβάλλω	V-AAS-1S	13	22	13,14,15,16,17,18,19,20,21,22	==ἐπιβάλω== ἀλλὰ πρὸς τὸ εὔσχημον καὶ εὐπάρεδρον τῷ κυρίῳ ἀπερισπάστως	suggested-span	ends at verse boundary
+1corintios	7	36	C1	09	νομίζει	νομίζω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	εἰ δέ τις ἀσχημονεῖν ἐπὶ τὴν παρθένον αὐτοῦ ==νομίζει==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	36	C2	11	ᾖ	εἰμί	V-PAS-3S	10	14	10,11,12,13,14	ἐὰν ==ᾖ== ὑπέρακμος καὶ οὕτως	suggested-span	ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	7	36	C3	15	ὀφείλει	ὀφείλω	V-PAI-3S	15	17	15,16,17	==ὀφείλει== γίνεσθαι ὃ	suggested-span	ends before next finite anchor
+1corintios	7	36	C4	18	θέλει	θέλω	V-PAI-3S	18	18	18	==θέλει==	suggested-span	ends before next finite anchor
+1corintios	7	36	C5	19	ποιείτω	ποιέω	V-PAD-3S	19	19	19	==ποιείτω==	suggested-span	ends before next finite anchor
+1corintios	7	36	C6	21	ἁμαρτάνει	ἁμαρτάνω	V-PAI-3S	20	21	20,21	οὐχ ==ἁμαρτάνει==	suggested-span	ends before next finite anchor; carried pre-finite token οὐχ
+1corintios	7	36	C7	22	γαμείτωσαν	γαμέω	V-PAD-3P	22	22	22	==γαμείτωσαν==	suggested-span	ends at verse boundary
+1corintios	7	37	C1	03	ἕστηκεν	ἵστημι	V-XAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ὃς δὲ ==ἕστηκεν== ἐν τῇ καρδίᾳ αὐτοῦ ἑδραῖος μὴ ἔχων ἀνάγκην ἐξουσίαν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δὲ
+1corintios	7	37	C2	14	ἔχει	ἔχω	V-PAI-3S	13	20	13,14,15,16,17,18,19,20	δὲ ==ἔχει== περὶ τοῦ ἰδίου θελήματος καὶ τοῦτο	suggested-span	ends before next finite anchor; carried pre-finite token δὲ
+1corintios	7	37	C3	21	κέκρικεν	κρίνω	V-XAI-3S	21	30	21,22,23,24,25,26,27,28,29,30	==κέκρικεν== ἐν τῇ ἰδίᾳ καρδίᾳ τηρεῖν τὴν ἑαυτοῦ παρθένον καλῶς	suggested-span	ends before next finite anchor
+1corintios	7	37	C4	31	ποιήσει	ποιέω	V-FAI-3S	31	31	31	==ποιήσει==	suggested-span	ends at verse boundary
+1corintios	7	38	C1	09	ποιεῖ	ποιέω	V-PAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	ὥστε καὶ ὁ γαμίζων τὴν παρθένον ἑαυτοῦ καλῶς ==ποιεῖ== καὶ ὁ μὴ ⸁γαμίζων κρεῖσσον	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	38	C2	15	ποιήσει	ποιέω	V-FAI-3S	15	15	15	==ποιήσει==	suggested-span	ends at verse boundary
+1corintios	7	39	C1	02	δέδεται	δέω	V-XPI-3S	01	05	01,02,03,04,05	γυνὴ ==δέδεται== ἐφʼ ὅσον χρόνον	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	7	39	C2	06	ζῇ	ζάω	V-PAI-3S	06	09	06,07,08,09	==ζῇ== ὁ ἀνὴρ αὐτῆς	suggested-span	ends before next finite anchor
+1corintios	7	39	C3	12	κοιμηθῇ	κοιμάομαι	V-APS-3S	10	15	10,11,12,13,14,15	ἐὰν δὲ ==κοιμηθῇ== ὁ ἀνήρ ἐλευθέρα	suggested-span	ends before next finite anchor; carried pre-finite token δὲ
+1corintios	7	39	C4	16	ἐστὶν	εἰμί	V-PAI-3S	16	17	16,17	==ἐστὶν== ᾧ	suggested-span	ends before next finite anchor
+1corintios	7	39	C5	18	θέλει	θέλω	V-PAI-3S	18	22	18,19,20,21,22	==θέλει== γαμηθῆναι μόνον ἐν κυρίῳ	suggested-span	ends at verse boundary
+1corintios	7	40	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	05	01,02,03,04,05	μακαριωτέρα δέ ==ἐστιν== ἐὰν οὕτως	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δέ
+1corintios	7	40	C2	06	μείνῃ	μένω	V-AAS-3S	06	10	06,07,08,09,10	==μείνῃ== κατὰ τὴν ἐμὴν γνώμην	suggested-span	ends before next finite anchor
+1corintios	7	40	C3	11	δοκῶ	δοκέω	V-PAI-1S	11	16	11,12,13,14,15,16	==δοκῶ== δὲ κἀγὼ πνεῦμα θεοῦ ἔχειν	suggested-span	ends at verse boundary
+1corintios	8	1	C1	05	οἴδαμεν	οἶδα	V-XAI-1P	01	08	01,02,03,04,05,06,07,08	περὶ δὲ τῶν εἰδωλοθύτων ==οἴδαμεν== ὅτι πάντες γνῶσιν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	8	1	C2	09	ἔχομεν	ἔχω	V-PAI-1P	09	11	09,10,11	==ἔχομεν== ἡ γνῶσις	suggested-span	ends before next finite anchor
+1corintios	8	1	C3	12	φυσιοῖ	φυσιόω	V-PAI-3S	12	15	12,13,14,15	==φυσιοῖ== ἡ δὲ ἀγάπη	suggested-span	ends before next finite anchor
+1corintios	8	1	C4	16	οἰκοδομεῖ	οἰκοδομέω	V-PAI-3S	16	16	16	==οἰκοδομεῖ==	suggested-span	ends at verse boundary
+1corintios	8	2	C1	03	δοκεῖ	δοκέω	V-PAI-3S	01	06	01,02,03,04,05,06	εἴ τις ==δοκεῖ== ἐγνωκέναι τι οὔπω	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	8	2	C2	07	ἔγνω	γινώσκω	V-AAI-3S	07	07	07	==ἔγνω==	suggested-span	ends before next finite anchor
+1corintios	8	2	C3	09	δεῖ	δέω	V-PAI-3S	08	10	08,09,10	καθὼς ==δεῖ== γνῶναι	suggested-span	ends at verse boundary; included preceding subordinate connector καθὼς
+1corintios	8	3	C1	04	ἀγαπᾷ	ἀγαπάω	V-PAI-3S	01	07	01,02,03,04,05,06,07	εἰ δέ τις ==ἀγαπᾷ== τὸν θεόν οὗτος	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	8	3	C2	08	ἔγνωσται	γινώσκω	V-XPI-3S	08	10	08,09,10	==ἔγνωσται== ὑπʼ αὐτοῦ	suggested-span	ends at verse boundary
+1corintios	8	4	C1	07	οἴδαμεν	οἶδα	V-XAI-1P	01	19	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19	περὶ τῆς βρώσεως οὖν τῶν εἰδωλοθύτων ==οἴδαμεν== ὅτι οὐδὲν εἴδωλον ἐν κόσμῳ καὶ ὅτι οὐδεὶς θεὸς εἰ μὴ εἷς	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	8	5	C1	04	εἰσὶν	εἰμί	V-PAI-3P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	καὶ γὰρ εἴπερ ==εἰσὶν== λεγόμενοι θεοὶ εἴτε ἐν οὐρανῷ εἴτε ἐπὶ γῆς	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector εἴπερ
+1corintios	8	5	C2	14	εἰσὶν	εἰμί	V-PAI-3P	13	19	13,14,15,16,17,18,19	ὥσπερ ==εἰσὶν== θεοὶ πολλοὶ καὶ κύριοι πολλοί	suggested-span	ends at verse boundary; included preceding subordinate connector ὥσπερ
+1corintios	8	7	C1	17	ἐσθίουσιν	ἐσθίω	V-PAI-3P	01	23	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23	ἀλλʼ οὐκ ἐν πᾶσιν ἡ γνῶσις τινὲς δὲ τῇ συνηθείᾳ ἕως ἄρτι τοῦ εἰδώλου ὡς εἰδωλόθυτον ==ἐσθίουσιν== καὶ ἡ συνείδησις αὐτῶν ἀσθενὴς οὖσα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	8	7	C2	24	μολύνεται	μολύνω	V-PPI-3S	24	24	24	==μολύνεται==	suggested-span	ends at verse boundary
+1corintios	8	8	C1	05	παραστήσει	παρίστημι	V-FAI-3S	01	09	01,02,03,04,05,06,07,08,09	βρῶμα δὲ ἡμᾶς οὐ ==παραστήσει== τῷ θεῷ οὔτε γὰρ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐ
+1corintios	8	8	C2	11	φάγωμεν	ἐσθίω	V-AAS-1P	10	11	10,11	ἐὰν ==φάγωμεν==	suggested-span	ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	8	8	C3	12	περισσεύομεν	περισσεύω	V-PAI-1P	12	13	12,13	==περισσεύομεν== οὔτε	suggested-span	ends before next finite anchor
+1corintios	8	8	C4	16	φάγωμεν	ἐσθίω	V-AAS-1P	14	16	14,15,16	ἐὰν μὴ ==φάγωμεν==	suggested-span	ends before next finite anchor; carried pre-finite token μὴ
+1corintios	8	8	C5	17	ὑστερούμεθα	ὑστερέω	V-PPI-1P	17	17	17	==ὑστερούμεθα==	suggested-span	ends at verse boundary
+1corintios	8	9	C1	01	βλέπετε	βλέπω	V-PAD-2P	01	09	01,02,03,04,05,06,07,08,09	==βλέπετε== δὲ μή πως ἡ ἐξουσία ὑμῶν αὕτη πρόσκομμα	suggested-span	ends before next finite anchor
+1corintios	8	9	C2	10	γένηται	γίνομαι	V-AMS-3S	10	12	10,11,12	==γένηται== τοῖς ἀσθενέσιν	suggested-span	ends at verse boundary
+1corintios	8	10	C1	04	ἴδῃ	ὁράω	V-AAS-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	ἐὰν γάρ τις ==ἴδῃ== σὲ τὸν ἔχοντα γνῶσιν ἐν εἰδωλείῳ κατακείμενον οὐχὶ ἡ συνείδησις αὐτοῦ ἀσθενοῦς ὄντος	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	8	10	C2	18	οἰκοδομηθήσεται	οἰκοδομέω	V-FPI-3S	18	23	18,19,20,21,22,23	==οἰκοδομηθήσεται== εἰς τὸ τὰ εἰδωλόθυτα ἐσθίειν	suggested-span	ends at verse boundary
+1corintios	8	11	C1	01	ἀπόλλυται	ἀπόλλυμι	V-PPI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	==ἀπόλλυται== γὰρ ὁ ἀσθενῶν ἐν τῇ σῇ γνώσει ὁ ἀδελφὸς διʼ ὃν χριστὸς	suggested-span	ends before next finite anchor
+1corintios	8	11	C2	14	ἀπέθανεν	ἀποθνῄσκω	V-AAI-3S	14	14	14	==ἀπέθανεν==	suggested-span	ends at verse boundary
+1corintios	8	12	C1	15	ἁμαρτάνετε	ἁμαρτάνω	V-PAI-2P	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	οὕτως δὲ ἁμαρτάνοντες εἰς τοὺς ἀδελφοὺς καὶ τύπτοντες αὐτῶν τὴν συνείδησιν ἀσθενοῦσαν εἰς χριστὸν ==ἁμαρτάνετε==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	8	13	C1	04	σκανδαλίζει	σκανδαλίζω	V-PAI-3S	01	07	01,02,03,04,05,06,07	διόπερ εἰ βρῶμα ==σκανδαλίζει== τὸν ἀδελφόν μου	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	8	13	C2	10	φάγω	ἐσθίω	V-AAS-1S	08	19	08,09,10,11,12,13,14,15,16,17,18,19	οὐ μὴ ==φάγω== κρέα εἰς τὸν αἰῶνα ἵνα μὴ τὸν ἀδελφόν μου	suggested-span	ends before next finite anchor; carried pre-finite token μὴ; carried pre-finite token οὐ
+1corintios	8	13	C3	20	σκανδαλίσω	σκανδαλίζω	V-AAS-1S	20	20	20	==σκανδαλίσω==	suggested-span	ends at verse boundary
+1corintios	9	1	C1	02	εἰμὶ	εἰμί	V-PAI-1S	01	03	01,02,03	οὐκ ==εἰμὶ== ἐλεύθερος	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	9	1	C2	05	εἰμὶ	εἰμί	V-PAI-1S	04	11	04,05,06,07,08,09,10,11	οὐκ ==εἰμὶ== ἀπόστολος οὐχὶ ἰησοῦν τὸν κύριον ἡμῶν	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	9	1	C3	12	ἑόρακα	ὁράω	V-XAI-1S	12	17	12,13,14,15,16,17	==ἑόρακα== οὐ τὸ ἔργον μου ὑμεῖς	suggested-span	ends before next finite anchor
+1corintios	9	1	C4	18	ἐστε	εἰμί	V-PAI-2P	18	20	18,19,20	==ἐστε== ἐν κυρίῳ	suggested-span	ends at verse boundary
+1corintios	9	2	C1	04	εἰμὶ	εἰμί	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	εἰ ἄλλοις οὐκ ==εἰμὶ== ἀπόστολος ἀλλά γε ὑμῖν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	9	2	C2	09	εἰμι	εἰμί	V-PAI-1S	09	16	09,10,11,12,13,14,15,16	==εἰμι== ἡ γὰρ σφραγίς μου τῆς ἀποστολῆς ὑμεῖς	suggested-span	ends before next finite anchor
+1corintios	9	2	C3	17	ἐστε	εἰμί	V-PAI-2P	17	19	17,18,19	==ἐστε== ἐν κυρίῳ	suggested-span	ends at verse boundary
+1corintios	9	3	C1	07	ἐστιν	εἰμί	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ἡ ἐμὴ ἀπολογία τοῖς ἐμὲ ἀνακρίνουσίν ==ἐστιν== αὕτη	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	9	4	C1	03	ἔχομεν	ἔχω	V-PAI-1P	01	07	01,02,03,04,05,06,07	μὴ οὐκ ==ἔχομεν== ἐξουσίαν φαγεῖν καὶ πεῖν	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐκ; carried pre-finite token μὴ
+1corintios	9	5	C1	03	ἔχομεν	ἔχω	V-PAI-1P	01	19	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19	μὴ οὐκ ==ἔχομεν== ἐξουσίαν ἀδελφὴν γυναῖκα περιάγειν ὡς καὶ οἱ λοιποὶ ἀπόστολοι καὶ οἱ ἀδελφοὶ τοῦ κυρίου καὶ κηφᾶς	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐκ; carried pre-finite token μὴ
+1corintios	9	6	C1	07	ἔχομεν	ἔχω	V-PAI-1P	01	10	01,02,03,04,05,06,07,08,09,10	ἢ μόνος ἐγὼ καὶ βαρναβᾶς οὐκ ==ἔχομεν== ἐξουσίαν μὴ ἐργάζεσθαι	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐκ
+1corintios	9	7	C1	02	στρατεύεται	στρατεύομαι	V-PMI-3S	01	06	01,02,03,04,05,06	τίς ==στρατεύεται== ἰδίοις ὀψωνίοις ποτέ τίς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	7	C2	07	φυτεύει	φυτεύω	V-PAI-3S	07	12	07,08,09,10,11,12	==φυτεύει== ἀμπελῶνα καὶ τὸν καρπὸν αὐτοῦ	suggested-span	ends before next finite anchor
+1corintios	9	7	C3	14	ἐσθίει	ἐσθίω	V-PAI-3S	13	15	13,14,15	οὐκ ==ἐσθίει== τίς	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	9	7	C4	16	ποιμαίνει	ποιμαίνω	V-PAI-3S	16	23	16,17,18,19,20,21,22,23	==ποιμαίνει== ποίμνην καὶ ἐκ τοῦ γάλακτος τῆς ποίμνης	suggested-span	ends before next finite anchor
+1corintios	9	7	C5	25	ἐσθίει	ἐσθίω	V-PAI-3S	24	25	24,25	οὐκ ==ἐσθίει==	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	9	8	C1	05	λαλῶ	λαλέω	V-PAI-1S	01	10	01,02,03,04,05,06,07,08,09,10	μὴ κατὰ ἄνθρωπον ταῦτα ==λαλῶ== ἢ καὶ ὁ νόμος ταῦτα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	8	C2	12	λέγει	λέγω	V-PAI-3S	11	12	11,12	οὐ ==λέγει==	suggested-span	ends at verse boundary; carried pre-finite token οὐ
+1corintios	9	9	C1	06	γέγραπται	γράφω	V-XPI-3S	01	06	01,02,03,04,05,06	ἐν γὰρ τῷ μωϋσέως νόμῳ ==γέγραπται==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	9	C2	08	κημώσεις	κημόω	V-FAI-2S	07	13	07,08,09,10,11,12,13	οὐ ==κημώσεις== βοῦν ἀλοῶντα μὴ τῶν βοῶν	suggested-span	ends before next finite anchor; carried pre-finite token οὐ
+1corintios	9	9	C3	14	μέλει	μέλει	V-PAI-3S	14	16	14,15,16	==μέλει== τῷ θεῷ	suggested-span	ends at verse boundary
+1corintios	9	10	C1	05	λέγει	λέγω	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ἢ διʼ ἡμᾶς πάντως ==λέγει== διʼ ἡμᾶς γὰρ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	10	C2	09	ἐγράφη	γράφω	V-API-3S	09	09	09	==ἐγράφη==	suggested-span	ends before next finite anchor
+1corintios	9	10	C3	11	ὀφείλει	ὀφείλω	V-PAI-3S	10	23	10,11,12,13,14,15,16,17,18,19,20,21,22,23	ὅτι ==ὀφείλει== ἐπʼ ἐλπίδι ὁ ἀροτριῶν ἀροτριᾶν καὶ ὁ ἀλοῶν ἐπʼ ἐλπίδι τοῦ μετέχειν	suggested-span	ends at verse boundary; included preceding subordinate connector ὅτι
+1corintios	9	11	C1	06	ἐσπείραμεν	σπείρω	V-AAI-1P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	εἰ ἡμεῖς ὑμῖν τὰ πνευματικὰ ==ἐσπείραμεν== μέγα εἰ ἡμεῖς ὑμῶν τὰ σαρκικὰ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	11	C2	13	θερίσομεν	θερίζω	V-FAI-1P	13	13	13	==θερίσομεν==	suggested-span	ends at verse boundary
+1corintios	9	12	C1	06	μετέχουσιν	μετέχω	V-PAI-3P	01	09	01,02,03,04,05,06,07,08,09	εἰ ἄλλοι τῆς ὑμῶν ἐξουσίας ==μετέχουσιν== οὐ μᾶλλον ἡμεῖς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	12	C2	12	ἐχρησάμεθα	χράομαι	V-AMI-1P	10	17	10,11,12,13,14,15,16,17	ἀλλʼ οὐκ ==ἐχρησάμεθα== τῇ ἐξουσίᾳ ταύτῃ ἀλλὰ πάντα	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ; carried pre-finite token ἀλλʼ
+1corintios	9	12	C3	18	στέγομεν	στέγω	V-PAI-1P	18	22	18,19,20,21,22	==στέγομεν== ἵνα μή τινα ἐγκοπὴν	suggested-span	ends before next finite anchor
+1corintios	9	12	C4	23	δῶμεν	δίδωμι	V-AAS-1P	23	27	23,24,25,26,27	==δῶμεν== τῷ εὐαγγελίῳ τοῦ χριστοῦ	suggested-span	ends at verse boundary
+1corintios	9	13	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	11	01,02,03,04,05,06,07,08,09,10,11	οὐκ ==οἴδατε== ὅτι οἱ τὰ ἱερὰ ἐργαζόμενοι τὰ ἐκ τοῦ ἱεροῦ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	9	13	C2	12	ἐσθίουσιν	ἐσθίω	V-PAI-3P	12	18	12,13,14,15,16,17,18	==ἐσθίουσιν== οἱ τῷ θυσιαστηρίῳ παρεδρεύοντες τῷ θυσιαστηρίῳ	suggested-span	ends before next finite anchor
+1corintios	9	13	C3	19	συμμερίζονται	συμμερίζομαι	V-PMI-3P	19	19	19	==συμμερίζονται==	suggested-span	ends at verse boundary
+1corintios	9	14	C1	05	διέταξεν	διατάσσω	V-AAI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	οὕτως καὶ ὁ κύριος ==διέταξεν== τοῖς τὸ εὐαγγέλιον καταγγέλλουσιν ἐκ τοῦ εὐαγγελίου ζῆν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	9	15	C1	04	κέχρημαι	χράομαι	V-XMI-1S	01	06	01,02,03,04,05,06	ἐγὼ δὲ οὐ ==κέχρημαι== οὐδενὶ τούτων	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐ; carried pre-finite token δὲ
+1corintios	9	15	C2	08	ἔγραψα	γράφω	V-AAI-1S	07	12	07,08,09,10,11,12	οὐκ ==ἔγραψα== δὲ ταῦτα ἵνα οὕτως	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	9	15	C3	13	γένηται	γίνομαι	V-AMS-3S	13	25	13,14,15,16,17,18,19,20,21,22,23,24,25	==γένηται== ἐν ἐμοί καλὸν γάρ μοι μᾶλλον ἀποθανεῖν ἤ— τὸ καύχημά μου οὐδεὶς	suggested-span	ends before next finite anchor
+1corintios	9	15	C4	26	κενώσει	κενόω	V-FAI-3S	26	26	26	==κενώσει==	suggested-span	ends at verse boundary
+1corintios	9	16	C1	03	εὐαγγελίζωμαι	εὐαγγελίζω	V-PMS-1S	01	03	01,02,03	ἐὰν γὰρ ==εὐαγγελίζωμαι==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	16	C2	05	ἔστιν	εἰμί	V-PAI-3S	04	10	04,05,06,07,08,09,10	οὐκ ==ἔστιν== μοι καύχημα ἀνάγκη γάρ μοι	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	9	16	C3	11	ἐπίκειται	ἐπίκειμαι	V-PMI-3S	11	14	11,12,13,14	==ἐπίκειται== οὐαὶ γάρ μοί	suggested-span	ends before next finite anchor
+1corintios	9	16	C4	15	ἐστιν	εἰμί	V-PAI-3S	15	15	15	==ἐστιν==	suggested-span	ends before next finite anchor
+1corintios	9	16	C5	18	εὐαγγελίσωμαι	εὐαγγελίζω	V-AMS-1S	16	18	16,17,18	ἐὰν μὴ ==εὐαγγελίσωμαι==	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	9	17	C1	05	πράσσω	πράσσω	V-PAI-1S	01	06	01,02,03,04,05,06	εἰ γὰρ ἑκὼν τοῦτο ==πράσσω== μισθὸν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	17	C2	07	ἔχω	ἔχω	V-PAI-1S	07	11	07,08,09,10,11	==ἔχω== εἰ δὲ ἄκων οἰκονομίαν	suggested-span	ends before next finite anchor
+1corintios	9	17	C3	12	πεπίστευμαι	πιστεύω	V-XPI-1S	12	12	12	==πεπίστευμαι==	suggested-span	ends at verse boundary
+1corintios	9	18	C1	04	ἐστιν	εἰμί	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	τίς οὖν μού ==ἐστιν== ὁ μισθός ἵνα εὐαγγελιζόμενος ἀδάπανον	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	18	C2	10	θήσω	τίθημι	V-AAS-1S	10	22	10,11,12,13,14,15,16,17,18,19,20,21,22	==θήσω== τὸ εὐαγγέλιον εἰς τὸ μὴ καταχρήσασθαι τῇ ἐξουσίᾳ μου ἐν τῷ εὐαγγελίῳ	suggested-span	ends at verse boundary
+1corintios	9	19	C1	08	ἐδούλωσα	δουλόω	V-AAI-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	ἐλεύθερος γὰρ ὢν ἐκ πάντων πᾶσιν ἐμαυτὸν ==ἐδούλωσα== ἵνα τοὺς πλείονας	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	19	C2	12	κερδήσω	κερδαίνω	V-AAS-1S	12	12	12	==κερδήσω==	suggested-span	ends at verse boundary
+1corintios	9	20	C1	02	ἐγενόμην	γίνομαι	V-AMI-1S	01	08	01,02,03,04,05,06,07,08	καὶ ==ἐγενόμην== τοῖς ἰουδαίοις ὡς ἰουδαῖος ἵνα ἰουδαίους	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token καὶ
+1corintios	9	20	C2	09	κερδήσω	κερδαίνω	V-AAS-1S	09	24	09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24	==κερδήσω== τοῖς ὑπὸ νόμον ὡς ὑπὸ νόμον μὴ ὢν αὐτὸς ὑπὸ νόμον ἵνα τοὺς ὑπὸ νόμον	suggested-span	ends before next finite anchor
+1corintios	9	20	C3	25	κερδήσω	κερδαίνω	V-AAS-1S	25	25	25	==κερδήσω==	suggested-span	ends at verse boundary
+1corintios	9	21	C1	13	κερδάνω	κερδαίνω	V-AAS-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	τοῖς ἀνόμοις ὡς ἄνομος μὴ ὢν ἄνομος θεοῦ ἀλλʼ ἔννομος χριστοῦ ἵνα ==κερδάνω== τοὺς ἀνόμους	suggested-span	includes pre-anchor material; ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	9	22	C1	01	ἐγενόμην	γίνομαι	V-AMI-1S	01	07	01,02,03,04,05,06,07	==ἐγενόμην== τοῖς ἀσθενέσιν ἀσθενής ἵνα τοὺς ἀσθενεῖς	suggested-span	ends before next finite anchor
+1corintios	9	22	C2	08	κερδήσω	κερδαίνω	V-AAS-1S	08	10	08,09,10	==κερδήσω== τοῖς πᾶσιν	suggested-span	ends before next finite anchor
+1corintios	9	22	C3	11	γέγονα	γίνομαι	V-XAI-1S	11	15	11,12,13,14,15	==γέγονα== πάντα ἵνα πάντως τινὰς	suggested-span	ends before next finite anchor
+1corintios	9	22	C4	16	σώσω	σῴζω	V-AAS-1S	16	16	16	==σώσω==	suggested-span	ends at verse boundary
+1corintios	9	23	C1	03	ποιῶ	ποιέω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	πάντα δὲ ==ποιῶ== διὰ τὸ εὐαγγέλιον ἵνα συγκοινωνὸς αὐτοῦ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δὲ
+1corintios	9	23	C2	10	γένωμαι	γίνομαι	V-AMS-1S	10	10	10	==γένωμαι==	suggested-span	ends at verse boundary
+1corintios	9	24	C1	02	οἴδατε	οἶδα	V-XAI-2P	01	09	01,02,03,04,05,06,07,08,09	οὐκ ==οἴδατε== ὅτι οἱ ἐν σταδίῳ τρέχοντες πάντες μὲν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	9	24	C2	10	τρέχουσιν	τρέχω	V-PAI-3P	10	11	10,11	==τρέχουσιν== εἷς	suggested-span	ends before next finite anchor
+1corintios	9	24	C3	13	λαμβάνει	λαμβάνω	V-PAI-3S	12	16	12,13,14,15,16	δὲ ==λαμβάνει== τὸ βραβεῖον οὕτως	suggested-span	ends before next finite anchor; carried pre-finite token δὲ
+1corintios	9	24	C4	17	τρέχετε	τρέχω	V-PAD-2P	17	17	17	==τρέχετε==	suggested-span	ends before next finite anchor
+1corintios	9	24	C5	19	καταλάβητε	καταλαμβάνω	V-AAS-2P	18	19	18,19	ἵνα ==καταλάβητε==	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	9	25	C1	06	ἐγκρατεύεται	ἐγκρατεύομαι	V-PMI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	πᾶς δὲ ὁ ἀγωνιζόμενος πάντα ==ἐγκρατεύεται== ἐκεῖνοι μὲν οὖν ἵνα φθαρτὸν στέφανον	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	25	C2	13	λάβωσιν	λαμβάνω	V-AAS-3P	13	16	13,14,15,16	==λάβωσιν== ἡμεῖς δὲ ἄφθαρτον	suggested-span	ends at verse boundary
+1corintios	9	26	C1	04	τρέχω	τρέχω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	ἐγὼ τοίνυν οὕτως ==τρέχω== ὡς οὐκ ἀδήλως οὕτως	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	9	26	C2	09	πυκτεύω	πυκτεύω	V-PAI-1S	09	13	09,10,11,12,13	==πυκτεύω== ὡς οὐκ ἀέρα δέρων	suggested-span	ends at verse boundary
+1corintios	9	27	C1	02	ὑπωπιάζω	ὑπωπιάζω	V-PAI-1S	01	05	01,02,03,04,05	ἀλλὰ ==ὑπωπιάζω== μου τὸ σῶμα	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token ἀλλὰ
+1corintios	9	27	C2	07	δουλαγωγῶ	δουλαγωγέω	V-PAI-1S	06	13	06,07,08,09,10,11,12,13	καὶ ==δουλαγωγῶ== μή πως ἄλλοις κηρύξας αὐτὸς ἀδόκιμος	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	9	27	C3	14	γένωμαι	γίνομαι	V-AMS-1S	14	14	14	==γένωμαι==	suggested-span	ends at verse boundary
+1corintios	10	1	C1	02	θέλω	θέλω	V-PAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	οὐ ==θέλω== γὰρ ὑμᾶς ἀγνοεῖν ἀδελφοί ὅτι οἱ πατέρες ἡμῶν πάντες ὑπὸ τὴν νεφέλην	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐ
+1corintios	10	1	C2	15	ἦσαν	εἰμί	V-IAI-3P	15	20	15,16,17,18,19,20	==ἦσαν== καὶ πάντες διὰ τῆς θαλάσσης	suggested-span	ends before next finite anchor
+1corintios	10	1	C3	21	διῆλθον	διέρχομαι	V-AAI-3P	21	21	21	==διῆλθον==	suggested-span	ends at verse boundary
+1corintios	10	2	C1	06	ἐβαπτίσαντο	βαπτίζω	V-AMI-3P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	καὶ πάντες εἰς τὸν μωϋσῆν ==ἐβαπτίσαντο== ἐν τῇ νεφέλῃ καὶ ἐν τῇ θαλάσσῃ	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	10	3	C1	07	ἔφαγον	ἐσθίω	V-AAI-3P	01	07	01,02,03,04,05,06,07	καὶ πάντες τὸ αὐτὸ πνευματικὸν βρῶμα ==ἔφαγον==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	10	4	C1	06	ἔπιον	πίνω	V-AAI-3P	01	07	01,02,03,04,05,06,07	καὶ πάντες τὸ αὐτὸ πνευματικὸν ==ἔπιον== πόμα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	4	C2	08	ἔπινον	πίνω	V-IAI-3P	08	15	08,09,10,11,12,13,14,15	==ἔπινον== γὰρ ἐκ πνευματικῆς ἀκολουθούσης πέτρας ἡ πέτρα	suggested-span	ends before next finite anchor
+1corintios	10	4	C3	17	ἦν	εἰμί	V-IAI-3S	16	19	16,17,18,19	δὲ ==ἦν== ὁ χριστός	suggested-span	ends at verse boundary; carried pre-finite token δὲ
+1corintios	10	5	C1	07	ηὐδόκησεν	εὐδοκέω	V-AAI-3S	01	09	01,02,03,04,05,06,07,08,09	ἀλλʼ οὐκ ἐν τοῖς πλείοσιν αὐτῶν ==ηὐδόκησεν== ὁ θεός	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	5	C2	10	κατεστρώθησαν	καταστρώννυμι	V-API-3P	10	14	10,11,12,13,14	==κατεστρώθησαν== γὰρ ἐν τῇ ἐρήμῳ	suggested-span	ends at verse boundary
+1corintios	10	6	C1	05	ἐγενήθησαν	γίνομαι	V-API-3P	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	ταῦτα δὲ τύποι ἡμῶν ==ἐγενήθησαν== εἰς τὸ μὴ εἶναι ἡμᾶς ἐπιθυμητὰς κακῶν καθὼς κἀκεῖνοι	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	6	C2	15	ἐπεθύμησαν	ἐπιθυμέω	V-AAI-3P	15	15	15	==ἐπεθύμησαν==	suggested-span	ends at verse boundary
+1corintios	10	7	C1	03	γίνεσθε	γίνομαι	V-PMD-2P	01	06	01,02,03,04,05,06	μηδὲ εἰδωλολάτραι ==γίνεσθε== καθώς τινες αὐτῶν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	7	C2	08	γέγραπται	γράφω	V-XPI-3S	07	08	07,08	ὥσπερ ==γέγραπται==	suggested-span	ends before next finite anchor; included preceding subordinate connector ὥσπερ
+1corintios	10	7	C3	09	ἐκάθισεν	καθίζω	V-AAI-3S	09	14	09,10,11,12,13,14	==ἐκάθισεν== ὁ λαὸς φαγεῖν καὶ πεῖν	suggested-span	ends before next finite anchor
+1corintios	10	7	C4	16	ἀνέστησαν	ἀνίστημι	V-AAI-3P	15	17	15,16,17	καὶ ==ἀνέστησαν== παίζειν	suggested-span	ends at verse boundary; carried pre-finite token καὶ
+1corintios	10	8	C1	02	πορνεύωμεν	πορνεύω	V-PAS-1P	01	05	01,02,03,04,05	μηδὲ ==πορνεύωμεν== καθώς τινες αὐτῶν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token μηδὲ
+1corintios	10	8	C2	06	ἐπόρνευσαν	πορνεύω	V-AAI-3P	06	06	06	==ἐπόρνευσαν==	suggested-span	ends before next finite anchor
+1corintios	10	8	C3	08	ἔπεσαν	πίπτω	V-AAI-3P	07	13	07,08,09,10,11,12,13	καὶ ==ἔπεσαν== μιᾷ ἡμέρᾳ εἴκοσι τρεῖς χιλιάδες	suggested-span	ends at verse boundary; carried pre-finite token καὶ
+1corintios	10	9	C1	02	ἐκπειράζωμεν	ἐκπειράζω	V-PAS-1P	01	07	01,02,03,04,05,06,07	μηδὲ ==ἐκπειράζωμεν== τὸν χριστόν καθώς τινες αὐτῶν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token μηδὲ
+1corintios	10	9	C2	08	ἐπείρασαν	πειράζω	V-AAI-3P	08	12	08,09,10,11,12	==ἐπείρασαν== καὶ ὑπὸ τῶν ὄφεων	suggested-span	ends before next finite anchor
+1corintios	10	9	C3	13	ἀπώλλυντο	ἀπόλλυμι	V-IPI-3P	13	13	13	==ἀπώλλυντο==	suggested-span	ends at verse boundary
+1corintios	10	10	C1	02	γογγύζετε	γογγύζω	V-PAD-2P	01	05	01,02,03,04,05	μηδὲ ==γογγύζετε== καθάπερ τινὲς αὐτῶν	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token μηδὲ
+1corintios	10	10	C2	06	ἐγόγγυσαν	γογγύζω	V-AAI-3P	06	06	06	==ἐγόγγυσαν==	suggested-span	ends before next finite anchor
+1corintios	10	10	C3	08	ἀπώλοντο	ἀπόλλυμι	V-AMI-3P	07	11	07,08,09,10,11	καὶ ==ἀπώλοντο== ὑπὸ τοῦ ὀλοθρευτοῦ	suggested-span	ends at verse boundary; carried pre-finite token καὶ
+1corintios	10	11	C1	04	συνέβαινεν	συμβαίνω	V-IAI-3S	01	05	01,02,03,04,05	ταῦτα δὲ τυπικῶς ==συνέβαινεν== ἐκείνοις	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	11	C2	06	ἐγράφη	γράφω	V-API-3S	06	16	06,07,08,09,10,11,12,13,14,15,16	==ἐγράφη== δὲ πρὸς νουθεσίαν ἡμῶν εἰς οὓς τὰ τέλη τῶν αἰώνων	suggested-span	ends before next finite anchor
+1corintios	10	11	C3	17	κατήντηκεν	καταντάω	V-XAI-3S	17	17	17	==κατήντηκεν==	suggested-span	ends at verse boundary
+1corintios	10	12	C1	05	βλεπέτω	βλέπω	V-PAD-3S	01	05	01,02,03,04,05	ὥστε ὁ δοκῶν ἑστάναι ==βλεπέτω==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	12	C2	07	πέσῃ	πίπτω	V-AAS-3S	06	07	06,07	μὴ ==πέσῃ==	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	10	13	C1	04	εἴληφεν	λαμβάνω	V-XAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	πειρασμὸς ὑμᾶς οὐκ ==εἴληφεν== εἰ μὴ ἀνθρώπινος πιστὸς δὲ ὁ θεός ὃς	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	10	13	C2	14	ἐάσει	ἐάω	V-FAI-3S	13	18	13,14,15,16,17,18	οὐκ ==ἐάσει== ὑμᾶς πειρασθῆναι ὑπὲρ ὃ	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	10	13	C3	19	δύνασθε	δύναμαι	V-PMI-2P	19	19	19	==δύνασθε==	suggested-span	ends before next finite anchor
+1corintios	10	13	C4	21	ποιήσει	ποιέω	V-FAI-3S	20	30	20,21,22,23,24,25,26,27,28,29,30	ἀλλὰ ==ποιήσει== σὺν τῷ πειρασμῷ καὶ τὴν ἔκβασιν τοῦ δύνασθαι ὑπενεγκεῖν	suggested-span	ends at verse boundary; carried pre-finite token ἀλλὰ
+1corintios	10	14	C1	04	φεύγετε	φεύγω	V-PAD-2P	01	07	01,02,03,04,05,06,07	διόπερ ἀγαπητοί μου ==φεύγετε== ἀπὸ τῆς εἰδωλολατρίας	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	10	15	C1	03	λέγω	λέγω	V-PAI-1S	01	03	01,02,03	ὡς φρονίμοις ==λέγω==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	15	C2	04	κρίνατε	κρίνω	V-AAD-2P	04	06	04,05,06	==κρίνατε== ὑμεῖς ὅ	suggested-span	ends before next finite anchor
+1corintios	10	15	C3	07	φημι	φημί	V-PAI-1S	07	07	07	==φημι==	suggested-span	ends at verse boundary
+1corintios	10	16	C1	06	εὐλογοῦμεν	εὐλογέω	V-PAI-1P	01	08	01,02,03,04,05,06,07,08	τὸ ποτήριον τῆς εὐλογίας ὃ ==εὐλογοῦμεν== οὐχὶ κοινωνία	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	16	C2	09	ἐστὶν	εἰμί	V-PAI-3S	09	16	09,10,11,12,13,14,15,16	==ἐστὶν== τοῦ αἵματος τοῦ χριστοῦ τὸν ἄρτον ὃν	suggested-span	ends before next finite anchor
+1corintios	10	16	C3	17	κλῶμεν	κλάω	V-PAI-1P	17	23	17,18,19,20,21,22,23	==κλῶμεν== οὐχὶ κοινωνία τοῦ σώματος τοῦ χριστοῦ	suggested-span	ends before next finite anchor
+1corintios	10	16	C4	24	ἐστιν	εἰμί	V-PAI-3S	24	24	24	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	10	17	C1	08	ἐσμεν	εἰμί	V-PAI-1P	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	ὅτι εἷς ἄρτος ἓν σῶμα οἱ πολλοί ==ἐσμεν== οἱ γὰρ πάντες ἐκ τοῦ ἑνὸς ἄρτου	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	17	C2	16	μετέχομεν	μετέχω	V-PAI-1P	16	16	16	==μετέχομεν==	suggested-span	ends at verse boundary
+1corintios	10	18	C1	01	βλέπετε	βλέπω	V-PAD-2P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	==βλέπετε== τὸν ἰσραὴλ κατὰ σάρκα οὐχ οἱ ἐσθίοντες τὰς θυσίας κοινωνοὶ τοῦ θυσιαστηρίου	suggested-span	ends before next finite anchor
+1corintios	10	18	C2	14	εἰσίν	εἰμί	V-PAI-3P	14	14	14	==εἰσίν==	suggested-span	ends at verse boundary
+1corintios	10	19	C1	03	φημι	φημί	V-PAI-1S	01	06	01,02,03,04,05,06	τί οὖν ==φημι== ὅτι εἰδωλόθυτόν τί	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	19	C2	07	ἐστιν	εἰμί	V-PAI-3S	07	11	07,08,09,10,11	==ἐστιν== ἢ ὅτι εἴδωλόν τί	suggested-span	ends before next finite anchor
+1corintios	10	19	C3	12	ἐστιν	εἰμί	V-PAI-3S	12	12	12	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	10	20	C1	04	θύουσιν	θύω	V-PAI-3P	01	08	01,02,03,04,05,06,07,08	ἀλλʼ ὅτι ἃ ==θύουσιν== δαιμονίοις καὶ οὐ θεῷ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	20	C2	09	θύουσιν	θύω	V-PAI-3P	09	09	09	==θύουσιν==	suggested-span	ends before next finite anchor
+1corintios	10	20	C3	11	θέλω	θέλω	V-PAI-1S	10	17	10,11,12,13,14,15,16,17	οὐ ==θέλω== δὲ ὑμᾶς κοινωνοὺς τῶν δαιμονίων γίνεσθαι	suggested-span	ends at verse boundary; carried pre-finite token οὐ
+1corintios	10	21	C1	02	δύνασθε	δύναμαι	V-PMI-2P	01	08	01,02,03,04,05,06,07,08	οὐ ==δύνασθε== ποτήριον κυρίου πίνειν καὶ ποτήριον δαιμονίων	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐ
+1corintios	10	21	C2	10	δύνασθε	δύναμαι	V-PMI-2P	09	16	09,10,11,12,13,14,15,16	οὐ ==δύνασθε== τραπέζης κυρίου μετέχειν καὶ τραπέζης δαιμονίων	suggested-span	ends at verse boundary; carried pre-finite token οὐ
+1corintios	10	22	C1	02	παραζηλοῦμεν	παραζηλόω	V-PAI-1P	01	07	01,02,03,04,05,06,07	ἢ ==παραζηλοῦμεν== τὸν κύριον μὴ ἰσχυρότεροι αὐτοῦ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token ἢ
+1corintios	10	22	C2	08	ἐσμεν	εἰμί	V-PAI-1P	08	08	08	==ἐσμεν==	suggested-span	ends at verse boundary
+1corintios	10	23	C1	02	ἔξεστιν	ἔξεστι(ν)	V-PAI-3S	01	05	01,02,03,04,05	πάντα ==ἔξεστιν== ἀλλʼ οὐ πάντα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	23	C2	06	συμφέρει	συμφέρω	V-PAI-3S	06	07	06,07	==συμφέρει== ⸁πάντα	suggested-span	ends before next finite anchor
+1corintios	10	23	C3	08	ἔξεστιν	ἔξεστι(ν)	V-PAI-3S	08	11	08,09,10,11	==ἔξεστιν== ἀλλʼ οὐ πάντα	suggested-span	ends before next finite anchor
+1corintios	10	23	C4	12	οἰκοδομεῖ	οἰκοδομέω	V-PAI-3S	12	12	12	==οἰκοδομεῖ==	suggested-span	ends at verse boundary
+1corintios	10	24	C1	04	ζητείτω	ζητέω	V-PAD-3S	01	08	01,02,03,04,05,06,07,08	μηδεὶς τὸ ἑαυτοῦ ==ζητείτω== ἀλλὰ τὸ τοῦ ἑτέρου	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	10	25	C1	06	ἐσθίετε	ἐσθίω	V-PAD-2P	01	11	01,02,03,04,05,06,07,08,09,10,11	πᾶν τὸ ἐν μακέλλῳ πωλούμενον ==ἐσθίετε== μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	10	27	C1	03	καλεῖ	καλέω	V-PAI-3S	01	06	01,02,03,04,05,06	εἴ τις ==καλεῖ== ὑμᾶς τῶν ἀπίστων	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	27	C2	08	θέλετε	θέλω	V-PAI-2P	07	13	07,08,09,10,11,12,13	καὶ ==θέλετε== πορεύεσθαι πᾶν τὸ παρατιθέμενον ὑμῖν	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	10	27	C3	14	ἐσθίετε	ἐσθίω	V-PAD-2P	14	19	14,15,16,17,18,19	==ἐσθίετε== μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν	suggested-span	ends at verse boundary
+1corintios	10	28	C1	05	εἴπῃ	λέγω	V-AAS-3S	01	07	01,02,03,04,05,06,07	ἐὰν δέ τις ὑμῖν ==εἴπῃ== τοῦτο ἱερόθυτόν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	28	C2	08	ἐστιν	εἰμί	V-PAI-3S	08	08	08	==ἐστιν==	suggested-span	ends before next finite anchor
+1corintios	10	28	C3	10	ἐσθίετε	ἐσθίω	V-PAD-2P	09	17	09,10,11,12,13,14,15,16,17	μὴ ==ἐσθίετε== διʼ ἐκεῖνον τὸν μηνύσαντα καὶ τὴν συνείδησιν	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	10	29	C1	03	λέγω	λέγω	V-PAI-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	συνείδησιν δὲ ==λέγω== οὐχὶ τὴν ἑαυτοῦ ἀλλὰ τὴν τοῦ ἑτέρου ἱνατί γὰρ ἡ ἐλευθερία μου	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δὲ
+1corintios	10	29	C2	16	κρίνεται	κρίνω	V-PPI-3S	16	19	16,17,18,19	==κρίνεται== ὑπὸ ἄλλης συνειδήσεως	suggested-span	ends at verse boundary
+1corintios	10	30	C1	04	μετέχω	μετέχω	V-PAI-1S	01	05	01,02,03,04,05	εἰ ἐγὼ χάριτι ==μετέχω== τί	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	30	C2	06	βλασφημοῦμαι	βλασφημέω	V-PPI-1S	06	09	06,07,08,09	==βλασφημοῦμαι== ὑπὲρ οὗ ἐγὼ	suggested-span	ends before next finite anchor
+1corintios	10	30	C3	10	εὐχαριστῶ	εὐχαριστέω	V-PAI-1S	10	10	10	==εὐχαριστῶ==	suggested-span	ends at verse boundary
+1corintios	10	31	C1	03	ἐσθίετε	ἐσθίω	V-PAI-2P	01	04	01,02,03,04	εἴτε οὖν ==ἐσθίετε== εἴτε	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	31	C2	05	πίνετε	πίνω	V-PAI-2P	05	07	05,06,07	==πίνετε== εἴτε τι	suggested-span	ends before next finite anchor
+1corintios	10	31	C3	08	ποιεῖτε	ποιέω	V-PAI-2P	08	12	08,09,10,11,12	==ποιεῖτε== πάντα εἰς δόξαν θεοῦ	suggested-span	ends before next finite anchor
+1corintios	10	31	C4	13	ποιεῖτε	ποιέω	V-PAD-2P	13	13	13	==ποιεῖτε==	suggested-span	ends at verse boundary
+1corintios	10	32	C1	04	γίνεσθε	γίνομαι	V-PMD-2P	01	11	01,02,03,04,05,06,07,08,09,10,11	ἀπρόσκοποι καὶ ἰουδαίοις ==γίνεσθε== καὶ ἕλλησιν καὶ τῇ ἐκκλησίᾳ τοῦ θεοῦ	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	10	33	C1	05	ἀρέσκω	ἀρέσκω	V-PAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	καθὼς κἀγὼ πάντα πᾶσιν ==ἀρέσκω== μὴ ζητῶν τὸ ἐμαυτοῦ σύμφορον ἀλλὰ τὸ τῶν πολλῶν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	10	33	C2	16	σωθῶσιν	σῴζω	V-APS-3P	15	16	15,16	ἵνα ==σωθῶσιν==	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	11	1	C1	03	γίνεσθε	γίνομαι	V-PMD-2P	01	06	01,02,03,04,05,06	μιμηταί μου ==γίνεσθε== καθὼς κἀγὼ χριστοῦ	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	11	2	C1	01	ἐπαινῶ	ἐπαινέω	V-PAI-1S	01	06	01,02,03,04,05,06	==ἐπαινῶ== δὲ ὑμᾶς ὅτι πάντα μου	suggested-span	ends before next finite anchor
+1corintios	11	2	C2	07	μέμνησθε	μιμνῄσκομαι	V-XMI-2P	07	08	07,08	==μέμνησθε== καὶ	suggested-span	ends before next finite anchor
+1corintios	11	2	C3	10	παρέδωκα	παραδίδωμι	V-AAI-1S	09	13	09,10,11,12,13	καθὼς ==παρέδωκα== ὑμῖν τὰς παραδόσεις	suggested-span	ends before next finite anchor; included preceding subordinate connector καθὼς
+1corintios	11	2	C4	14	κατέχετε	κατέχω	V-PAI-2P	14	14	14	==κατέχετε==	suggested-span	ends at verse boundary
+1corintios	11	3	C1	01	θέλω	θέλω	V-PAI-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	==θέλω== δὲ ὑμᾶς εἰδέναι ὅτι παντὸς ἀνδρὸς ἡ κεφαλὴ ὁ χριστός	suggested-span	ends before next finite anchor
+1corintios	11	3	C2	12	ἐστιν	εἰμί	V-PAI-3S	12	23	12,13,14,15,16,17,18,19,20,21,22,23	==ἐστιν== κεφαλὴ δὲ γυναικὸς ὁ ἀνήρ κεφαλὴ δὲ τοῦ χριστοῦ ὁ θεός	suggested-span	ends at verse boundary
+1corintios	11	4	C1	09	καταισχύνει	καταισχύνω	V-PAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	πᾶς ἀνὴρ προσευχόμενος ἢ προφητεύων κατὰ κεφαλῆς ἔχων ==καταισχύνει== τὴν κεφαλὴν αὐτοῦ	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	11	5	C1	10	καταισχύνει	καταισχύνω	V-PAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	πᾶσα δὲ γυνὴ προσευχομένη ἢ προφητεύουσα ἀκατακαλύπτῳ τῇ κεφαλῇ ==καταισχύνει== τὴν κεφαλὴν αὐτῆς ἓν γάρ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	5	C2	16	ἐστιν	εἰμί	V-PAI-3S	16	21	16,17,18,19,20,21	==ἐστιν== καὶ τὸ αὐτὸ τῇ ἐξυρημένῃ	suggested-span	ends at verse boundary
+1corintios	11	6	C1	04	κατακαλύπτεται	κατακαλύπτομαι	V-PMI-3S	01	05	01,02,03,04,05	εἰ γὰρ οὐ ==κατακαλύπτεται== γυνή	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐ
+1corintios	11	6	C2	07	κειράσθω	κείρω	V-AMD-3S	06	15	06,07,08,09,10,11,12,13,14,15	καὶ ==κειράσθω== εἰ δὲ αἰσχρὸν γυναικὶ τὸ κείρασθαι ἢ ξυρᾶσθαι	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	11	6	C3	16	κατακαλυπτέσθω	κατακαλύπτομαι	V-PMD-3S	16	16	16	==κατακαλυπτέσθω==	suggested-span	ends at verse boundary
+1corintios	11	7	C1	05	ὀφείλει	ὀφείλω	V-PAI-3S	01	18	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18	ἀνὴρ μὲν γὰρ οὐκ ==ὀφείλει== κατακαλύπτεσθαι τὴν κεφαλήν εἰκὼν καὶ δόξα θεοῦ ὑπάρχων ἡ γυνὴ δὲ δόξα ἀνδρός	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	11	7	C2	19	ἐστιν	εἰμί	V-PAI-3S	19	19	19	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	11	8	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	οὐ γάρ ==ἐστιν== ἀνὴρ ἐκ γυναικός ἀλλὰ γυνὴ ἐξ ἀνδρός	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	11	9	C1	04	ἐκτίσθη	κτίζω	V-API-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	καὶ γὰρ οὐκ ==ἐκτίσθη== ἀνὴρ διὰ τὴν γυναῖκα ἀλλὰ γυνὴ διὰ τὸν ἄνδρα	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐκ
+1corintios	11	10	C1	03	ὀφείλει	ὀφείλω	V-PAI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	διὰ τοῦτο ==ὀφείλει== ἡ γυνὴ ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς διὰ τοὺς ἀγγέλους	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	11	13	C1	04	κρίνατε	κρίνω	V-AAD-2P	01	05	01,02,03,04,05	ἐν ὑμῖν αὐτοῖς ==κρίνατε== πρέπον	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	13	C2	06	ἐστὶν	εἰμί	V-PAI-3S	06	11	06,07,08,09,10,11	==ἐστὶν== γυναῖκα ἀκατακάλυπτον τῷ θεῷ προσεύχεσθαι	suggested-span	ends at verse boundary
+1corintios	11	14	C1	05	διδάσκει	διδάσκω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	οὐδὲ ἡ φύσις αὐτὴ ==διδάσκει== ὑμᾶς ὅτι ἀνὴρ μὲν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	14	C2	11	κομᾷ	κομάω	V-PAS-3S	10	13	10,11,12,13	ἐὰν ==κομᾷ== ἀτιμία αὐτῷ	suggested-span	ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	11	14	C3	14	ἐστιν	εἰμί	V-PAI-3S	14	14	14	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	11	15	C1	04	κομᾷ	κομάω	V-PAS-3S	01	06	01,02,03,04,05,06	γυνὴ δὲ ἐὰν ==κομᾷ== δόξα αὐτῇ	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	11	15	C2	07	ἐστιν	εἰμί	V-PAI-3S	07	12	07,08,09,10,11,12	==ἐστιν== ὅτι ἡ κόμη ἀντὶ περιβολαίου	suggested-span	ends before next finite anchor
+1corintios	11	15	C3	13	δέδοται	δίδωμι	V-XPI-3S	13	13	13	==δέδοται==	suggested-span	ends at verse boundary
+1corintios	11	16	C1	04	δοκεῖ	δοκέω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	εἰ δέ τις ==δοκεῖ== φιλόνεικος εἶναι ἡμεῖς τοιαύτην συνήθειαν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	16	C2	11	ἔχομεν	ἔχω	V-PAI-1P	10	16	10,11,12,13,14,15,16	οὐκ ==ἔχομεν== οὐδὲ αἱ ἐκκλησίαι τοῦ θεοῦ	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	11	17	C1	05	ἐπαινῶ	ἐπαινέω	V-PAI-1S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	τοῦτο δὲ παραγγέλλων οὐκ ==ἐπαινῶ== ὅτι οὐκ εἰς τὸ κρεῖσσον ἀλλὰ εἰς τὸ ἧσσον	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	11	17	C2	15	συνέρχεσθε	συνέρχομαι	V-PMI-2P	15	15	15	==συνέρχεσθε==	suggested-span	ends at verse boundary
+1corintios	11	18	C1	08	ἀκούω	ἀκούω	V-PAI-1S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	πρῶτον μὲν γὰρ συνερχομένων ὑμῶν ἐν ἐκκλησίᾳ ==ἀκούω== σχίσματα ἐν ὑμῖν ὑπάρχειν καὶ μέρος τι	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	18	C2	16	πιστεύω	πιστεύω	V-PAI-1S	16	16	16	==πιστεύω==	suggested-span	ends at verse boundary
+1corintios	11	19	C1	01	δεῖ	δέω	V-PAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	==δεῖ== γὰρ καὶ αἱρέσεις ἐν ὑμῖν εἶναι ἵνα καὶ οἱ δόκιμοι φανεροὶ	suggested-span	ends before next finite anchor
+1corintios	11	19	C2	13	γένωνται	γίνομαι	V-AMS-3P	13	15	13,14,15	==γένωνται== ἐν ὑμῖν	suggested-span	ends at verse boundary
+1corintios	11	20	C1	08	ἔστιν	εἰμί	V-PAI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	συνερχομένων οὖν ὑμῶν ἐπὶ τὸ αὐτὸ οὐκ ==ἔστιν== κυριακὸν δεῖπνον φαγεῖν	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐκ
+1corintios	11	21	C1	06	προλαμβάνει	προλαμβάνω	V-PAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ἕκαστος γὰρ τὸ ἴδιον δεῖπνον ==προλαμβάνει== ἐν τῷ φαγεῖν καὶ ὃς μὲν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	21	C2	13	πεινᾷ	πεινάω	V-PAI-3S	13	14	13,14	==πεινᾷ== ὃς	suggested-span	ends before next finite anchor
+1corintios	11	21	C3	16	μεθύει	μεθύω	V-PAI-3S	15	16	15,16	δὲ ==μεθύει==	suggested-span	ends at verse boundary; carried pre-finite token δὲ
+1corintios	11	22	C1	05	ἔχετε	ἔχω	V-PAI-2P	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	μὴ γὰρ οἰκίας οὐκ ==ἔχετε== εἰς τὸ ἐσθίειν καὶ πίνειν ἢ τῆς ἐκκλησίας τοῦ θεοῦ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	11	22	C2	16	καταφρονεῖτε	καταφρονέω	V-PAI-2P	16	16	16	==καταφρονεῖτε==	suggested-span	ends before next finite anchor
+1corintios	11	22	C3	18	καταισχύνετε	καταισχύνω	V-PAI-2P	17	22	17,18,19,20,21,22	καὶ ==καταισχύνετε== τοὺς μὴ ἔχοντας τί	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	11	22	C4	23	εἴπω	λέγω	V-AAS-1S	23	24	23,24	==εἴπω== ὑμῖν	suggested-span	ends before next finite anchor
+1corintios	11	22	C5	25	ἐπαινέσω	ἐπαινέω	V-AAS-1S	25	28	25,26,27,28	==ἐπαινέσω== ὑμᾶς ἐν τούτῳ	suggested-span	ends before next finite anchor
+1corintios	11	22	C6	30	ἐπαινῶ	ἐπαινέω	V-PAI-1S	29	30	29,30	οὐκ ==ἐπαινῶ==	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	11	23	C1	03	παρέλαβον	παραλαμβάνω	V-AAI-1S	01	07	01,02,03,04,05,06,07	ἐγὼ γὰρ ==παρέλαβον== ἀπὸ τοῦ κυρίου ὃ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	23	C2	09	παρέδωκα	παραδίδωμι	V-AAI-1S	08	18	08,09,10,11,12,13,14,15,16,17,18	καὶ ==παρέδωκα== ὑμῖν ὅτι ὁ κύριος ἰησοῦς ἐν τῇ νυκτὶ ᾗ	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	11	23	C3	19	παρεδίδετο	παραδίδωμι	V-IPI-3S	19	19	19	==παρεδίδετο==	suggested-span	ends before next finite anchor
+1corintios	11	23	C4	20	ἔλαβεν	λαμβάνω	V-AAI-3S	20	21	20,21	==ἔλαβεν== ἄρτον	suggested-span	ends at verse boundary
+1corintios	11	24	C1	03	ἔκλασεν	κλάω	V-AAI-3S	01	03	01,02,03	καὶ εὐχαριστήσας ==ἔκλασεν==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	24	C2	05	εἶπεν	λέγω	V-AAI-3S	04	07	04,05,06,07	καὶ ==εἶπεν== τοῦτό μού	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	11	24	C3	08	ἐστιν	εἰμί	V-PAI-3S	08	14	08,09,10,11,12,13,14	==ἐστιν== τὸ σῶμα τὸ ὑπὲρ ὑμῶν τοῦτο	suggested-span	ends before next finite anchor
+1corintios	11	24	C4	15	ποιεῖτε	ποιέω	V-PAD-2P	15	19	15,16,17,18,19	==ποιεῖτε== εἰς τὴν ἐμὴν ἀνάμνησιν	suggested-span	ends at verse boundary
+1corintios	11	25	C1	15	ἐστὶν	εἰμί	V-PAI-3S	01	20	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20	ὡσαύτως καὶ τὸ ποτήριον μετὰ τὸ δειπνῆσαι λέγων τοῦτο τὸ ποτήριον ἡ καινὴ διαθήκη ==ἐστὶν== ἐν τῷ ἐμῷ αἵματι τοῦτο	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	25	C2	21	ποιεῖτε	ποιέω	V-PAD-2P	21	22	21,22	==ποιεῖτε== ὁσάκις	suggested-span	ends before next finite anchor
+1corintios	11	25	C3	24	πίνητε	πίνω	V-PAS-2P	23	28	23,24,25,26,27,28	ἐὰν ==πίνητε== εἰς τὴν ἐμὴν ἀνάμνησιν	suggested-span	ends at verse boundary; included preceding subordinate connector ἐὰν
+1corintios	11	26	C1	04	ἐσθίητε	ἐσθίω	V-PAS-2P	01	10	01,02,03,04,05,06,07,08,09,10	ὁσάκις γὰρ ἐὰν ==ἐσθίητε== τὸν ἄρτον τοῦτον καὶ τὸ ποτήριον	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	11	26	C2	11	πίνητε	πίνω	V-PAS-2P	11	15	11,12,13,14,15	==πίνητε== τὸν θάνατον τοῦ κυρίου	suggested-span	ends before next finite anchor
+1corintios	11	26	C3	16	καταγγέλλετε	καταγγέλλω	V-PAI-2P	16	18	16,17,18	==καταγγέλλετε== ἄχρι οὗ	suggested-span	ends before next finite anchor
+1corintios	11	26	C4	19	ἔλθῃ	ἔρχομαι	V-AAS-3S	19	19	19	==ἔλθῃ==	suggested-span	ends at verse boundary
+1corintios	11	27	C1	04	ἐσθίῃ	ἐσθίω	V-PAS-3S	01	06	01,02,03,04,05,06	ὥστε ὃς ἂν ==ἐσθίῃ== τὸν ἄρτον	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	27	C2	08	πίνῃ	πίνω	V-PAS-3S	07	14	07,08,09,10,11,12,13,14	ἢ ==πίνῃ== τὸ ποτήριον τοῦ κυρίου ἀναξίως ἔνοχος	suggested-span	ends before next finite anchor; carried pre-finite token ἢ
+1corintios	11	27	C3	15	ἔσται	εἰμί	V-FMI-3S	15	22	15,16,17,18,19,20,21,22	==ἔσται== τοῦ σώματος καὶ τοῦ αἵματος τοῦ κυρίου	suggested-span	ends at verse boundary
+1corintios	11	28	C1	01	δοκιμαζέτω	δοκιμάζω	V-PAD-3S	01	09	01,02,03,04,05,06,07,08,09	==δοκιμαζέτω== δὲ ἄνθρωπος ἑαυτόν καὶ οὕτως ἐκ τοῦ ἄρτου	suggested-span	ends before next finite anchor
+1corintios	11	28	C2	10	ἐσθιέτω	ἐσθίω	V-PAD-3S	10	14	10,11,12,13,14	==ἐσθιέτω== καὶ ἐκ τοῦ ποτηρίου	suggested-span	ends before next finite anchor
+1corintios	11	28	C3	15	πινέτω	πίνω	V-PAD-3S	15	15	15	==πινέτω==	suggested-span	ends at verse boundary
+1corintios	11	29	C1	08	ἐσθίει	ἐσθίω	V-PAI-3S	01	08	01,02,03,04,05,06,07,08	ὁ γὰρ ἐσθίων καὶ πίνων κρίμα ἑαυτῷ ==ἐσθίει==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	29	C2	10	πίνει	πίνω	V-PAI-3S	09	14	09,10,11,12,13,14	καὶ ==πίνει== μὴ διακρίνων τὸ σῶμα	suggested-span	ends at verse boundary; carried pre-finite token καὶ
+1corintios	11	30	C1	10	κοιμῶνται	κοιμάομαι	V-PMI-3P	01	11	01,02,03,04,05,06,07,08,09,10,11	διὰ τοῦτο ἐν ὑμῖν πολλοὶ ἀσθενεῖς καὶ ἄρρωστοι καὶ ==κοιμῶνται== ἱκανοί	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token καὶ
+1corintios	11	31	C1	04	διεκρίνομεν	διακρίνω	V-IAI-1P	01	06	01,02,03,04,05,06	εἰ δὲ ἑαυτοὺς ==διεκρίνομεν== οὐκ ἂν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	31	C2	07	ἐκρινόμεθα	κρίνω	V-IPI-1P	07	07	07	==ἐκρινόμεθα==	suggested-span	ends at verse boundary
+1corintios	11	32	C1	05	παιδευόμεθα	παιδεύω	V-PPI-1P	01	10	01,02,03,04,05,06,07,08,09,10	κρινόμενοι δὲ ὑπὸ κυρίου ==παιδευόμεθα== ἵνα μὴ σὺν τῷ κόσμῳ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	32	C2	11	κατακριθῶμεν	κατακρίνω	V-APS-1P	11	11	11	==κατακριθῶμεν==	suggested-span	ends at verse boundary
+1corintios	11	33	C1	09	ἐκδέχεσθε	ἐκδέχομαι	V-PMD-2P	01	09	01,02,03,04,05,06,07,08,09	ὥστε ἀδελφοί μου συνερχόμενοι εἰς τὸ φαγεῖν ἀλλήλους ==ἐκδέχεσθε==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	11	34	C1	03	πεινᾷ	πεινάω	V-PAI-3S	01	05	01,02,03,04,05	εἴ τις ==πεινᾷ== ἐν οἴκῳ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	11	34	C2	06	ἐσθιέτω	ἐσθίω	V-PAD-3S	06	10	06,07,08,09,10	==ἐσθιέτω== ἵνα μὴ εἰς κρίμα	suggested-span	ends before next finite anchor
+1corintios	11	34	C3	11	συνέρχησθε	συνέρχομαι	V-PMS-2P	11	16	11,12,13,14,15,16	==συνέρχησθε== τὰ δὲ λοιπὰ ὡς ἂν	suggested-span	ends before next finite anchor
+1corintios	11	34	C4	17	ἔλθω	ἔρχομαι	V-AAS-1S	17	17	17	==ἔλθω==	suggested-span	ends before next finite anchor
+1corintios	11	34	C5	18	διατάξομαι	διατάσσω	V-FMI-1S	18	18	18	==διατάξομαι==	suggested-span	ends at verse boundary
+1corintios	12	1	C1	07	θέλω	θέλω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	περὶ δὲ τῶν πνευματικῶν ἀδελφοί οὐ ==θέλω== ὑμᾶς ἀγνοεῖν	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐ
+1corintios	12	2	C1	01	οἴδατε	οἶδα	V-XAI-2P	01	04	01,02,03,04	==οἴδατε== ὅτι ὅτε ἔθνη	suggested-span	ends before next finite anchor
+1corintios	12	2	C2	05	ἦτε	εἰμί	V-IAI-2P	05	12	05,06,07,08,09,10,11,12	==ἦτε== πρὸς τὰ εἴδωλα τὰ ἄφωνα ὡς ἂν	suggested-span	ends before next finite anchor
+1corintios	12	2	C3	13	ἤγεσθε	ἄγω	V-IPI-2P	13	14	13,14	==ἤγεσθε== ἀπαγόμενοι	suggested-span	ends at verse boundary
+1corintios	12	3	C1	02	γνωρίζω	γνωρίζω	V-PAI-1S	01	09	01,02,03,04,05,06,07,08,09	διὸ ==γνωρίζω== ὑμῖν ὅτι οὐδεὶς ἐν πνεύματι θεοῦ λαλῶν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	3	C2	10	λέγει	λέγω	V-PAI-3S	10	14	10,11,12,13,14	==λέγει== ἀνάθεμα ἰησοῦς καὶ οὐδεὶς	suggested-span	ends before next finite anchor
+1corintios	12	3	C3	15	δύναται	δύναμαι	V-PMI-3S	15	23	15,16,17,18,19,20,21,22,23	==δύναται== εἰπεῖν κύριος ἰησοῦς εἰ μὴ ἐν πνεύματι ἁγίῳ	suggested-span	ends at verse boundary
+1corintios	12	4	C1	04	εἰσίν	εἰμί	V-PAI-3P	01	08	01,02,03,04,05,06,07,08	διαιρέσεις δὲ χαρισμάτων ==εἰσίν== τὸ δὲ αὐτὸ πνεῦμα	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	12	5	C1	04	εἰσιν	εἰμί	V-PAI-3P	01	08	01,02,03,04,05,06,07,08	καὶ διαιρέσεις διακονιῶν ==εἰσιν== καὶ ὁ αὐτὸς κύριος	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	12	6	C1	04	εἰσίν	εἰμί	V-PAI-3P	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	καὶ διαιρέσεις ἐνεργημάτων ==εἰσίν== ὁ δὲ αὐτὸς θεός ὁ ἐνεργῶν τὰ πάντα ἐν πᾶσιν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	12	7	C1	03	δίδοται	δίδωμι	V-PPI-3S	01	10	01,02,03,04,05,06,07,08,09,10	ἑκάστῳ δὲ ==δίδοται== ἡ φανέρωσις τοῦ πνεύματος πρὸς τὸ συμφέρον	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token δὲ
+1corintios	12	8	C1	07	δίδοται	δίδωμι	V-PPI-3S	01	17	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17	ᾧ μὲν γὰρ διὰ τοῦ πνεύματος ==δίδοται== λόγος σοφίας ἄλλῳ δὲ λόγος γνώσεως κατὰ τὸ αὐτὸ πνεῦμα	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	12	11	C1	04	ἐνεργεῖ	ἐνεργέω	V-PAI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	πάντα δὲ ταῦτα ==ἐνεργεῖ== τὸ ἓν καὶ τὸ αὐτὸ πνεῦμα διαιροῦν ἰδίᾳ ἑκάστῳ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	11	C2	15	βούλεται	βούλομαι	V-PMI-3S	14	15	14,15	καθὼς ==βούλεται==	suggested-span	ends at verse boundary; included preceding subordinate connector καθὼς
+1corintios	12	12	C1	06	ἐστιν	εἰμί	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	καθάπερ γὰρ τὸ σῶμα ἕν ==ἐστιν== καὶ μέλη πολλὰ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	12	C2	10	ἔχει	ἔχω	V-PAI-3S	10	19	10,11,12,13,14,15,16,17,18,19	==ἔχει== πάντα δὲ τὰ μέλη τοῦ σώματος πολλὰ ὄντα ἕν	suggested-span	ends before next finite anchor
+1corintios	12	12	C3	20	ἐστιν	εἰμί	V-PAI-3S	20	25	20,21,22,23,24,25	==ἐστιν== σῶμα οὕτως καὶ ὁ χριστός	suggested-span	ends at verse boundary
+1corintios	12	13	C1	11	ἐβαπτίσθημεν	βαπτίζω	V-API-1P	01	23	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23	καὶ γὰρ ἐν ἑνὶ πνεύματι ἡμεῖς πάντες εἰς ἓν σῶμα ==ἐβαπτίσθημεν== εἴτε ἰουδαῖοι εἴτε ἕλληνες εἴτε δοῦλοι εἴτε ἐλεύθεροι καὶ πάντες ἓν πνεῦμα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	13	C2	24	ἐποτίσθημεν	ποτίζω	V-API-1P	24	24	24	==ἐποτίσθημεν==	suggested-span	ends at verse boundary
+1corintios	12	14	C1	06	ἔστιν	εἰμί	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	καὶ γὰρ τὸ σῶμα οὐκ ==ἔστιν== ἓν μέλος ἀλλὰ πολλά	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token οὐκ
+1corintios	12	15	C1	02	εἴπῃ	λέγω	V-AAS-3S	01	04	01,02,03,04	ἐὰν ==εἴπῃ== ὁ πούς	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	12	15	C2	07	εἰμὶ	εἰμί	V-PAI-1S	05	08	05,06,07,08	ὅτι οὐκ ==εἰμὶ== χείρ	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	12	15	C3	10	εἰμὶ	εἰμί	V-PAI-1S	09	16	09,10,11,12,13,14,15,16	οὐκ ==εἰμὶ== ἐκ τοῦ σώματος οὐ παρὰ τοῦτο	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	12	15	C4	18	ἔστιν	εἰμί	V-PAI-3S	17	21	17,18,19,20,21	οὐκ ==ἔστιν== ἐκ τοῦ σώματος	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	12	16	C1	03	εἴπῃ	λέγω	V-AAS-3S	01	05	01,02,03,04,05	καὶ ἐὰν ==εἴπῃ== τὸ οὖς	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	12	16	C2	08	εἰμὶ	εἰμί	V-PAI-1S	06	09	06,07,08,09	ὅτι οὐκ ==εἰμὶ== ὀφθαλμός	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	12	16	C3	11	εἰμὶ	εἰμί	V-PAI-1S	10	17	10,11,12,13,14,15,16,17	οὐκ ==εἰμὶ== ἐκ τοῦ σώματος οὐ παρὰ τοῦτο	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	12	16	C4	19	ἔστιν	εἰμί	V-PAI-3S	18	22	18,19,20,21,22	οὐκ ==ἔστιν== ἐκ τοῦ σώματος	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	12	18	C1	05	ἔθετο	τίθημι	V-AMI-3S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	νυνὶ δὲ ὁ θεὸς ==ἔθετο== τὰ μέλη ἓν ἕκαστον αὐτῶν ἐν τῷ σώματι	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	18	C2	15	ἠθέλησεν	θέλω	V-AAI-3S	14	15	14,15	καθὼς ==ἠθέλησεν==	suggested-span	ends at verse boundary; included preceding subordinate connector καθὼς
+1corintios	12	19	C1	03	ἦν	εἰμί	V-IAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	εἰ δὲ ==ἦν== τὰ πάντα ἓν μέλος ποῦ τὸ σῶμα	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token δὲ
+1corintios	12	21	C1	02	δύναται	δύναμαι	V-PMI-3S	01	10	01,02,03,04,05,06,07,08,09,10	οὐ ==δύναται== δὲ ὁ ὀφθαλμὸς εἰπεῖν τῇ χειρί χρείαν σου	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐ
+1corintios	12	21	C2	12	ἔχω	ἔχω	V-PAI-1S	11	20	11,12,13,14,15,16,17,18,19,20	οὐκ ==ἔχω== ἢ πάλιν ἡ κεφαλὴ τοῖς ποσίν χρείαν ὑμῶν	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	12	21	C3	22	ἔχω	ἔχω	V-PAI-1S	21	22	21,22	οὐκ ==ἔχω==	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	12	22	C1	12	ἐστιν	εἰμί	V-PAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ἀλλὰ πολλῷ μᾶλλον τὰ δοκοῦντα μέλη τοῦ σώματος ἀσθενέστερα ὑπάρχειν ἀναγκαῖά ==ἐστιν==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	12	23	C1	03	δοκοῦμεν	δοκέω	V-PAI-1P	01	10	01,02,03,04,05,06,07,08,09,10	καὶ ἃ ==δοκοῦμεν== ἀτιμότερα εἶναι τοῦ σώματος τούτοις τιμὴν περισσοτέραν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	23	C2	11	περιτίθεμεν	περιτίθημι	V-PAI-1P	11	17	11,12,13,14,15,16,17	==περιτίθεμεν== καὶ τὰ ἀσχήμονα ἡμῶν εὐσχημοσύνην περισσοτέραν	suggested-span	ends before next finite anchor
+1corintios	12	23	C3	18	ἔχει	ἔχω	V-PAI-3S	18	18	18	==ἔχει==	suggested-span	ends at verse boundary
+1corintios	12	24	C1	07	ἔχει	ἔχω	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	τὰ δὲ εὐσχήμονα ἡμῶν οὐ χρείαν ==ἔχει== ἀλλὰ ὁ θεὸς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	24	C2	11	συνεκέρασεν	συγκεράννυμι	V-AAI-3S	11	18	11,12,13,14,15,16,17,18	==συνεκέρασεν== τὸ σῶμα τῷ ὑστεροῦντι περισσοτέραν δοὺς τιμήν	suggested-span	ends at verse boundary
+1corintios	12	25	C1	03	ᾖ	εἰμί	V-PAS-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ἵνα μὴ ==ᾖ== σχίσμα ἐν τῷ σώματι ἀλλὰ τὸ αὐτὸ ὑπὲρ ἀλλήλων	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token μὴ
+1corintios	12	25	C2	13	μεριμνῶσι	μεριμνάω	V-PAS-3P	13	15	13,14,15	==μεριμνῶσι== τὰ μέλη	suggested-span	ends at verse boundary
+1corintios	12	26	C1	03	πάσχει	πάσχω	V-PAI-3S	01	05	01,02,03,04,05	καὶ εἴτε ==πάσχει== ἓν μέλος	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	26	C2	06	συμπάσχει	συμπάσχω	V-PAI-3S	06	10	06,07,08,09,10	==συμπάσχει== πάντα τὰ μέλη εἴτε	suggested-span	ends before next finite anchor
+1corintios	12	26	C3	11	δοξάζεται	δοξάζω	V-PPI-3S	11	12	11,12	==δοξάζεται== μέλος	suggested-span	ends before next finite anchor
+1corintios	12	26	C4	13	συγχαίρει	συγχαίρω	V-PAI-3S	13	16	13,14,15,16	==συγχαίρει== πάντα τὰ μέλη	suggested-span	ends at verse boundary
+1corintios	12	27	C1	03	ἐστε	εἰμί	V-PAI-2P	01	09	01,02,03,04,05,06,07,08,09	ὑμεῖς δέ ==ἐστε== σῶμα χριστοῦ καὶ μέλη ἐκ μέρους	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token δέ
+1corintios	12	28	C1	04	ἔθετο	τίθημι	V-AMI-3S	01	24	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24	καὶ οὓς μὲν ==ἔθετο== ὁ θεὸς ἐν τῇ ἐκκλησίᾳ πρῶτον ἀποστόλους δεύτερον προφήτας τρίτον διδασκάλους ἔπειτα δυνάμεις ἔπειτα χαρίσματα ἰαμάτων ἀντιλήμψεις κυβερνήσεις γένη γλωσσῶν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	12	30	C1	04	ἔχουσιν	ἔχω	V-PAI-3P	01	08	01,02,03,04,05,06,07,08	μὴ πάντες χαρίσματα ==ἔχουσιν== ἰαμάτων μὴ πάντες γλώσσαις	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	12	30	C2	09	λαλοῦσιν	λαλέω	V-PAI-3P	09	11	09,10,11	==λαλοῦσιν== μὴ πάντες	suggested-span	ends before next finite anchor
+1corintios	12	30	C3	12	διερμηνεύουσιν	διερμηνεύω	V-PAI-3P	12	12	12	==διερμηνεύουσιν==	suggested-span	ends at verse boundary
+1corintios	12	31	C1	01	ζηλοῦτε	ζηλόω	V-PAD-2P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	==ζηλοῦτε== δὲ τὰ χαρίσματα τὰ μείζονα καὶ ἔτι καθʼ ὑπερβολὴν ὁδὸν ὑμῖν	suggested-span	ends before next finite anchor
+1corintios	12	31	C2	13	δείκνυμι	δείκνυμι	V-PAI-1S	13	13	13	==δείκνυμι==	suggested-span	ends at verse boundary
+1corintios	13	1	C1	06	λαλῶ	λαλέω	V-PAS-1S	01	10	01,02,03,04,05,06,07,08,09,10	ἐὰν ταῖς γλώσσαις τῶν ἀνθρώπων ==λαλῶ== καὶ τῶν ἀγγέλων ἀγάπην	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	13	1	C2	13	ἔχω	ἔχω	V-PAS-1S	11	13	11,12,13	δὲ μὴ ==ἔχω==	suggested-span	ends before next finite anchor; carried pre-finite token μὴ; carried pre-finite token δὲ
+1corintios	13	1	C3	14	γέγονα	γίνομαι	V-XAI-1S	14	19	14,15,16,17,18,19	==γέγονα== χαλκὸς ἠχῶν ἢ κύμβαλον ἀλαλάζον	suggested-span	ends at verse boundary
+1corintios	13	2	C1	03	ἔχω	ἔχω	V-PAS-1S	01	04	01,02,03,04	καὶ ἐὰν ==ἔχω== προφητείαν	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	13	2	C2	06	εἰδῶ	οἶδα	V-XAS-1S	05	15	05,06,07,08,09,10,11,12,13,14,15	καὶ ==εἰδῶ== τὰ μυστήρια πάντα καὶ πᾶσαν τὴν γνῶσιν ⸄καὶ ἐὰν⸅	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	13	2	C3	16	ἔχω	ἔχω	V-PAS-1S	16	23	16,17,18,19,20,21,22,23	==ἔχω== πᾶσαν τὴν πίστιν ὥστε ὄρη μεθιστάναι ἀγάπην	suggested-span	ends before next finite anchor
+1corintios	13	2	C4	26	ἔχω	ἔχω	V-PAS-1S	24	27	24,25,26,27	δὲ μὴ ==ἔχω== οὐθέν	suggested-span	ends before next finite anchor; carried pre-finite token μὴ; carried pre-finite token δὲ
+1corintios	13	2	C5	28	εἰμι	εἰμί	V-PAI-1S	28	28	28	==εἰμι==	suggested-span	ends at verse boundary
+1corintios	13	3	C1	03	ψωμίσω	ψωμίζω	V-AAS-1S	01	09	01,02,03,04,05,06,07,08,09	καὶ ἐὰν ==ψωμίσω== πάντα τὰ ὑπάρχοντά μου ⸄καὶ ἐὰν⸅	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	13	3	C2	10	παραδῶ	παραδίδωμι	V-AAS-1S	10	13	10,11,12,13	==παραδῶ== τὸ σῶμά μου	suggested-span	ends before next finite anchor
+1corintios	13	3	C3	15	καυθήσομαι	καίω	V-FPI-1S	14	16	14,15,16	ἵνα ==καυθήσομαι== ἀγάπην	suggested-span	ends before next finite anchor; included preceding subordinate connector ἵνα
+1corintios	13	3	C4	19	ἔχω	ἔχω	V-PAS-1S	17	20	17,18,19,20	δὲ μὴ ==ἔχω== οὐδὲν	suggested-span	ends before next finite anchor; carried pre-finite token μὴ; carried pre-finite token δὲ
+1corintios	13	3	C5	21	ὠφελοῦμαι	ὠφελέω	V-PPI-1S	21	21	21	==ὠφελοῦμαι==	suggested-span	ends at verse boundary
+1corintios	13	4	C1	03	μακροθυμεῖ	μακροθυμέω	V-PAI-3S	01	03	01,02,03	ἡ ἀγάπη ==μακροθυμεῖ==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	13	4	C2	04	χρηστεύεται	χρηστεύομαι	V-PMI-3S	04	06	04,05,06	==χρηστεύεται== ἡ ἀγάπη	suggested-span	ends before next finite anchor
+1corintios	13	4	C3	08	ζηλοῖ	ζηλόω	V-PAI-3S	07	10	07,08,09,10	οὐ ==ζηλοῖ== ἡ ἀγάπη	suggested-span	ends before next finite anchor; carried pre-finite token οὐ
+1corintios	13	4	C4	12	περπερεύεται	περπερεύομαι	V-PMI-3S	11	12	11,12	οὐ ==περπερεύεται==	suggested-span	ends before next finite anchor; carried pre-finite token οὐ
+1corintios	13	4	C5	14	φυσιοῦται	φυσιόω	V-PPI-3S	13	14	13,14	οὐ ==φυσιοῦται==	suggested-span	ends at verse boundary; carried pre-finite token οὐ
+1corintios	13	5	C1	02	ἀσχημονεῖ	ἀσχημονέω	V-PAI-3S	01	02	01,02	οὐκ ==ἀσχημονεῖ==	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	13	5	C2	04	ζητεῖ	ζητέω	V-PAI-3S	03	06	03,04,05,06	οὐ ==ζητεῖ== τὰ ἑαυτῆς	suggested-span	ends before next finite anchor; carried pre-finite token οὐ
+1corintios	13	5	C3	08	παροξύνεται	παροξύνομαι	V-PPI-3S	07	08	07,08	οὐ ==παροξύνεται==	suggested-span	ends before next finite anchor; carried pre-finite token οὐ
+1corintios	13	5	C4	10	λογίζεται	λογίζομαι	V-PMI-3S	09	12	09,10,11,12	οὐ ==λογίζεται== τὸ κακόν	suggested-span	ends at verse boundary; carried pre-finite token οὐ
+1corintios	13	6	C1	02	χαίρει	χαίρω	V-PAI-3S	01	05	01,02,03,04,05	οὐ ==χαίρει== ἐπὶ τῇ ἀδικίᾳ	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token οὐ
+1corintios	13	6	C2	06	συγχαίρει	συγχαίρω	V-PAI-3S	06	09	06,07,08,09	==συγχαίρει== δὲ τῇ ἀληθείᾳ	suggested-span	ends at verse boundary
+1corintios	13	7	C1	02	στέγει	στέγω	V-PAI-3S	01	03	01,02,03	πάντα ==στέγει== πάντα	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	13	7	C2	04	πιστεύει	πιστεύω	V-PAI-3S	04	05	04,05	==πιστεύει== πάντα	suggested-span	ends before next finite anchor
+1corintios	13	7	C3	06	ἐλπίζει	ἐλπίζω	V-PAI-3S	06	07	06,07	==ἐλπίζει== πάντα	suggested-span	ends before next finite anchor
+1corintios	13	7	C4	08	ὑπομένει	ὑπομένω	V-PAI-3S	08	08	08	==ὑπομένει==	suggested-span	ends at verse boundary
+1corintios	13	8	C1	04	πίπτει	πίπτω	V-PAI-3S	01	07	01,02,03,04,05,06,07	ἡ ἀγάπη οὐδέποτε ==πίπτει== εἴτε δὲ προφητεῖαι	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	13	8	C2	08	καταργηθήσονται	καταργέω	V-FPI-3P	08	10	08,09,10	==καταργηθήσονται== εἴτε γλῶσσαι	suggested-span	ends before next finite anchor
+1corintios	13	8	C3	11	παύσονται	παύω	V-FMI-3P	11	13	11,12,13	==παύσονται== εἴτε γνῶσις	suggested-span	ends before next finite anchor
+1corintios	13	8	C4	14	καταργηθήσεται	καταργέω	V-FPI-3S	14	14	14	==καταργηθήσεται==	suggested-span	ends at verse boundary
+1corintios	13	9	C1	04	γινώσκομεν	γινώσκω	V-PAI-1P	01	07	01,02,03,04,05,06,07	ἐκ μέρους γὰρ ==γινώσκομεν== καὶ ἐκ μέρους	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	13	9	C2	08	προφητεύομεν	προφητεύω	V-PAI-1P	08	08	08	==προφητεύομεν==	suggested-span	ends at verse boundary
+1corintios	13	10	C1	03	ἔλθῃ	ἔρχομαι	V-AAS-3S	01	08	01,02,03,04,05,06,07,08	ὅταν δὲ ==ἔλθῃ== τὸ τέλειον τὸ ἐκ μέρους	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token δὲ
+1corintios	13	10	C2	09	καταργηθήσεται	καταργέω	V-FPI-3S	09	09	09	==καταργηθήσεται==	suggested-span	ends at verse boundary
+1corintios	13	11	C1	02	ἤμην	εἰμί	V-IMI-1S	01	03	01,02,03	ὅτε ==ἤμην== νήπιος	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	13	11	C2	04	ἐλάλουν	λαλέω	V-IAI-1S	04	06	04,05,06	==ἐλάλουν== ὡς νήπιος	suggested-span	ends before next finite anchor
+1corintios	13	11	C3	07	ἐφρόνουν	φρονέω	V-IAI-1S	07	09	07,08,09	==ἐφρόνουν== ὡς νήπιος	suggested-span	ends before next finite anchor
+1corintios	13	11	C4	10	ἐλογιζόμην	λογίζομαι	V-IMI-1S	10	13	10,11,12,13	==ἐλογιζόμην== ὡς νήπιος ὅτε	suggested-span	ends before next finite anchor
+1corintios	13	11	C5	14	γέγονα	γίνομαι	V-XAI-1S	14	15	14,15	==γέγονα== ἀνήρ	suggested-span	ends before next finite anchor
+1corintios	13	11	C6	16	κατήργηκα	καταργέω	V-XAI-1S	16	19	16,17,18,19	==κατήργηκα== τὰ τοῦ νηπίου	suggested-span	ends at verse boundary
+1corintios	13	12	C1	01	βλέπομεν	βλέπω	V-PAI-1P	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	==βλέπομεν== γὰρ ἄρτι διʼ ἐσόπτρου ἐν αἰνίγματι τότε δὲ πρόσωπον πρὸς πρόσωπον ἄρτι	suggested-span	ends before next finite anchor
+1corintios	13	12	C2	14	γινώσκω	γινώσκω	V-PAI-1S	14	17	14,15,16,17	==γινώσκω== ἐκ μέρους τότε	suggested-span	ends before next finite anchor
+1corintios	13	12	C3	19	ἐπιγνώσομαι	ἐπιγινώσκω	V-FMI-1S	18	19	18,19	δὲ ==ἐπιγνώσομαι==	suggested-span	ends before next finite anchor; carried pre-finite token δὲ
+1corintios	13	12	C4	22	ἐπεγνώσθην	ἐπιγινώσκω	V-API-1S	20	22	20,21,22	καθὼς καὶ ==ἐπεγνώσθην==	suggested-span	ends at verse boundary; carried pre-finite token καὶ
+1corintios	13	13	C1	03	μένει	μένω	V-PAI-3S	01	14	01,02,03,04,05,06,07,08,09,10,11,12,13,14	νυνὶ δὲ ==μένει== πίστις ἐλπίς ἀγάπη τὰ τρία ταῦτα μείζων δὲ τούτων ἡ ἀγάπη	suggested-span	includes pre-anchor material; ends at verse boundary; carried pre-finite token δὲ
+1corintios	14	1	C1	01	διώκετε	διώκω	V-PAD-2P	01	03	01,02,03	==διώκετε== τὴν ἀγάπην	suggested-span	ends before next finite anchor
+1corintios	14	1	C2	04	ζηλοῦτε	ζηλόω	V-PAD-2P	04	09	04,05,06,07,08,09	==ζηλοῦτε== δὲ τὰ πνευματικά μᾶλλον δὲ	suggested-span	ends before next finite anchor
+1corintios	14	1	C3	11	προφητεύητε	προφητεύω	V-PAS-2P	10	11	10,11	ἵνα ==προφητεύητε==	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	14	2	C1	07	λαλεῖ	λαλέω	V-PAI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	ὁ γὰρ λαλῶν γλώσσῃ οὐκ ἀνθρώποις ==λαλεῖ== ἀλλὰ θεῷ οὐδεὶς γὰρ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	2	C2	12	ἀκούει	ἀκούω	V-PAI-3S	12	13	12,13	==ἀκούει== πνεύματι	suggested-span	ends before next finite anchor
+1corintios	14	2	C3	15	λαλεῖ	λαλέω	V-PAI-3S	14	16	14,15,16	δὲ ==λαλεῖ== μυστήρια	suggested-span	ends at verse boundary; carried pre-finite token δὲ
+1corintios	14	3	C1	05	λαλεῖ	λαλέω	V-PAI-3S	01	10	01,02,03,04,05,06,07,08,09,10	ὁ δὲ προφητεύων ἀνθρώποις ==λαλεῖ== οἰκοδομὴν καὶ παράκλησιν καὶ παραμυθίαν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	14	4	C1	05	οἰκοδομεῖ	οἰκοδομέω	V-PAI-3S	01	09	01,02,03,04,05,06,07,08,09	ὁ λαλῶν γλώσσῃ ἑαυτὸν ==οἰκοδομεῖ== ὁ δὲ προφητεύων ἐκκλησίαν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	4	C2	10	οἰκοδομεῖ	οἰκοδομέω	V-PAI-3S	10	10	10	==οἰκοδομεῖ==	suggested-span	ends at verse boundary
+1corintios	14	5	C1	01	θέλω	θέλω	V-PAI-1S	01	08	01,02,03,04,05,06,07,08	==θέλω== δὲ πάντας ὑμᾶς λαλεῖν γλώσσαις μᾶλλον δὲ	suggested-span	ends before next finite anchor
+1corintios	14	5	C2	10	προφητεύητε	προφητεύω	V-PAS-2P	09	19	09,10,11,12,13,14,15,16,17,18,19	ἵνα ==προφητεύητε== μείζων δὲ ὁ προφητεύων ἢ ὁ λαλῶν γλώσσαις ἐκτὸς	suggested-span	ends before next finite anchor; included preceding subordinate connector ἵνα
+1corintios	14	5	C3	22	διερμηνεύῃ	διερμηνεύω	V-PAS-3S	20	26	20,21,22,23,24,25,26	εἰ μὴ ==διερμηνεύῃ== ἵνα ἡ ἐκκλησία οἰκοδομὴν	suggested-span	ends before next finite anchor; carried pre-finite token μὴ
+1corintios	14	5	C4	27	λάβῃ	λαμβάνω	V-AAS-3S	27	27	27	==λάβῃ==	suggested-span	ends at verse boundary
+1corintios	14	6	C1	05	ἔλθω	ἔρχομαι	V-AAS-1S	01	11	01,02,03,04,05,06,07,08,09,10,11	νῦν δέ ἀδελφοί ἐὰν ==ἔλθω== πρὸς ὑμᾶς γλώσσαις λαλῶν τί ὑμᾶς	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν
+1corintios	14	6	C2	12	ὠφελήσω	ὠφελέω	V-FAI-1S	12	15	12,13,14,15	==ὠφελήσω== ἐὰν μὴ ὑμῖν	suggested-span	ends before next finite anchor
+1corintios	14	6	C3	16	λαλήσω	λαλέω	V-AAS-1S	16	28	16,17,18,19,20,21,22,23,24,25,26,27,28	==λαλήσω== ἢ ἐν ἀποκαλύψει ἢ ἐν γνώσει ἢ ἐν προφητείᾳ ἢ ἐν διδαχῇ	suggested-span	ends at verse boundary
+1corintios	14	7	C1	15	δῷ	δίδωμι	V-AAS-3S	01	16	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16	ὅμως τὰ ἄψυχα φωνὴν διδόντα εἴτε αὐλὸς εἴτε κιθάρα ἐὰν διαστολὴν τοῖς φθόγγοις μὴ ==δῷ== πῶς	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token μὴ
+1corintios	14	7	C2	17	γνωσθήσεται	γινώσκω	V-FPI-3S	17	22	17,18,19,20,21,22	==γνωσθήσεται== τὸ αὐλούμενον ἢ τὸ κιθαριζόμενον	suggested-span	ends at verse boundary
+1corintios	14	8	C1	07	δῷ	δίδωμι	V-AAS-3S	01	08	01,02,03,04,05,06,07,08	καὶ γὰρ ἐὰν ἄδηλον φωνὴν σάλπιγξ ==δῷ== τίς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	8	C2	09	παρασκευάσεται	παρασκευάζω	V-FMI-3S	09	11	09,10,11	==παρασκευάσεται== εἰς πόλεμον	suggested-span	ends at verse boundary
+1corintios	14	9	C1	11	δῶτε	δίδωμι	V-AAS-2P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	οὕτως καὶ ὑμεῖς διὰ τῆς γλώσσης ἐὰν μὴ εὔσημον λόγον ==δῶτε== πῶς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	9	C2	13	γνωσθήσεται	γινώσκω	V-FPI-3S	13	15	13,14,15	==γνωσθήσεται== τὸ λαλούμενον	suggested-span	ends before next finite anchor
+1corintios	14	9	C3	16	ἔσεσθε	εἰμί	V-FMI-2P	16	20	16,17,18,19,20	==ἔσεσθε== γὰρ εἰς ἀέρα λαλοῦντες	suggested-span	ends at verse boundary
+1corintios	14	10	C1	06	εἰσιν	εἰμί	V-PAI-3P	01	11	01,02,03,04,05,06,07,08,09,10,11	τοσαῦτα εἰ τύχοι γένη φωνῶν ==εἰσιν== ἐν κόσμῳ καὶ οὐδὲν ἄφωνον	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	14	11	C1	04	εἰδῶ	οἶδα	V-XAS-1S	01	08	01,02,03,04,05,06,07,08	ἐὰν οὖν μὴ ==εἰδῶ== τὴν δύναμιν τῆς φωνῆς	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token μὴ
+1corintios	14	11	C2	09	ἔσομαι	εἰμί	V-FMI-1S	09	18	09,10,11,12,13,14,15,16,17,18	==ἔσομαι== τῷ λαλοῦντι βάρβαρος καὶ ὁ λαλῶν ἐν ἐμοὶ βάρβαρος	suggested-span	ends at verse boundary
+1corintios	14	12	C1	06	ἐστε	εἰμί	V-PAI-2P	01	12	01,02,03,04,05,06,07,08,09,10,11,12	οὕτως καὶ ὑμεῖς ἐπεὶ ζηλωταί ==ἐστε== πνευμάτων πρὸς τὴν οἰκοδομὴν τῆς ἐκκλησίας	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	12	C2	13	ζητεῖτε	ζητέω	V-PAD-2P	13	13	13	==ζητεῖτε==	suggested-span	ends before next finite anchor
+1corintios	14	12	C3	15	περισσεύητε	περισσεύω	V-PAS-2P	14	15	14,15	ἵνα ==περισσεύητε==	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	14	13	C1	05	προσευχέσθω	προσεύχομαι	V-PMD-3S	01	05	01,02,03,04,05	διὸ ὁ λαλῶν γλώσσῃ ==προσευχέσθω==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	13	C2	07	διερμηνεύῃ	διερμηνεύω	V-PAS-3S	06	07	06,07	ἵνα ==διερμηνεύῃ==	suggested-span	ends at verse boundary; included preceding subordinate connector ἵνα
+1corintios	14	14	C1	03	προσεύχωμαι	προσεύχομαι	V-PMS-1S	01	07	01,02,03,04,05,06,07	ἐὰν γὰρ ==προσεύχωμαι== γλώσσῃ τὸ πνεῦμά μου	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	14	C2	08	προσεύχεται	προσεύχομαι	V-PMI-3S	08	13	08,09,10,11,12,13	==προσεύχεται== ὁ δὲ νοῦς μου ἄκαρπός	suggested-span	ends before next finite anchor
+1corintios	14	14	C3	14	ἐστιν	εἰμί	V-PAI-3S	14	14	14	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	14	15	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	03	01,02,03	τί οὖν ==ἐστιν==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	15	C2	04	προσεύξομαι	προσεύχομαι	V-FMI-1S	04	06	04,05,06	==προσεύξομαι== τῷ πνεύματι	suggested-span	ends before next finite anchor
+1corintios	14	15	C3	07	προσεύξομαι	προσεύχομαι	V-FMI-1S	07	11	07,08,09,10,11	==προσεύξομαι== δὲ καὶ τῷ νοΐ	suggested-span	ends before next finite anchor
+1corintios	14	15	C4	12	ψαλῶ	ψάλλω	V-FAI-1S	12	14	12,13,14	==ψαλῶ== τῷ πνεύματι	suggested-span	ends before next finite anchor
+1corintios	14	15	C5	15	ψαλῶ	ψάλλω	V-FAI-1S	15	19	15,16,17,18,19	==ψαλῶ== δὲ καὶ τῷ νοΐ	suggested-span	ends at verse boundary
+1corintios	14	16	C1	03	εὐλογῇς	εὐλογέω	V-PAS-2S	01	11	01,02,03,04,05,06,07,08,09,10,11	ἐπεὶ ἐὰν ==εὐλογῇς== πνεύματι ὁ ἀναπληρῶν τὸν τόπον τοῦ ἰδιώτου πῶς	suggested-span	includes pre-anchor material; ends before next finite anchor; included preceding subordinate connector ἐὰν; included preceding subordinate connector ἐπεὶ
+1corintios	14	16	C2	12	ἐρεῖ	λέγω	V-FAI-3S	12	20	12,13,14,15,16,17,18,19,20	==ἐρεῖ== τὸ ἀμήν ἐπὶ τῇ σῇ εὐχαριστίᾳ ἐπειδὴ τί	suggested-span	ends before next finite anchor
+1corintios	14	16	C3	21	λέγεις	λέγω	V-PAI-2S	21	21	21	==λέγεις==	suggested-span	ends before next finite anchor
+1corintios	14	16	C4	23	οἶδεν	οἶδα	V-XAI-3S	22	23	22,23	οὐκ ==οἶδεν==	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	14	17	C1	05	εὐχαριστεῖς	εὐχαριστέω	V-PAI-2S	01	08	01,02,03,04,05,06,07,08	σὺ μὲν γὰρ καλῶς ==εὐχαριστεῖς== ἀλλʼ ὁ ἕτερος	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	17	C2	10	οἰκοδομεῖται	οἰκοδομέω	V-PPI-3S	09	10	09,10	οὐκ ==οἰκοδομεῖται==	suggested-span	ends at verse boundary; carried pre-finite token οὐκ
+1corintios	14	18	C1	01	εὐχαριστῶ	εὐχαριστέω	V-PAI-1S	01	07	01,02,03,04,05,06,07	==εὐχαριστῶ== τῷ θεῷ πάντων ὑμῶν μᾶλλον γλώσσαις	suggested-span	ends before next finite anchor
+1corintios	14	18	C2	08	λαλῶ	λαλέω	V-PAI-1S	08	08	08	==λαλῶ==	suggested-span	ends at verse boundary
+1corintios	14	19	C1	04	θέλω	θέλω	V-PAI-1S	01	13	01,02,03,04,05,06,07,08,09,10,11,12,13	ἀλλὰ ἐν ἐκκλησίᾳ ==θέλω== πέντε λόγους τῷ νοΐ μου λαλῆσαι ἵνα καὶ ἄλλους	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	19	C2	14	κατηχήσω	κατηχέω	V-AAS-1S	14	19	14,15,16,17,18,19	==κατηχήσω== ἢ μυρίους λόγους ἐν γλώσσῃ	suggested-span	ends at verse boundary
+1corintios	14	20	C1	04	γίνεσθε	γίνομαι	V-PMD-2P	01	09	01,02,03,04,05,06,07,08,09	ἀδελφοί μὴ παιδία ==γίνεσθε== ταῖς φρεσίν ἀλλὰ τῇ κακίᾳ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	20	C2	10	νηπιάζετε	νηπιάζω	V-PAD-2P	10	14	10,11,12,13,14	==νηπιάζετε== ταῖς δὲ φρεσὶν τέλειοι	suggested-span	ends before next finite anchor
+1corintios	14	20	C3	15	γίνεσθε	γίνομαι	V-PMD-2P	15	15	15	==γίνεσθε==	suggested-span	ends at verse boundary
+1corintios	14	21	C1	04	γέγραπται	γράφω	V-XPI-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	ἐν τῷ νόμῳ ==γέγραπται== ὅτι ἐν ἑτερογλώσσοις καὶ ἐν χείλεσιν ἑτέρων	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	21	C2	12	λαλήσω	λαλέω	V-FAI-1S	12	18	12,13,14,15,16,17,18	==λαλήσω== τῷ λαῷ τούτῳ καὶ οὐδʼ οὕτως	suggested-span	ends before next finite anchor
+1corintios	14	21	C3	19	εἰσακούσονταί	εἰσακούω	V-FMI-3P	19	20	19,20	==εἰσακούσονταί== μου	suggested-span	ends before next finite anchor
+1corintios	14	21	C4	21	λέγει	λέγω	V-PAI-3S	21	22	21,22	==λέγει== κύριος	suggested-span	ends at verse boundary
+1corintios	14	22	C1	06	εἰσιν	εἰμί	V-PAI-3P	01	21	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21	ὥστε αἱ γλῶσσαι εἰς σημεῖόν ==εἰσιν== οὐ τοῖς πιστεύουσιν ἀλλὰ τοῖς ἀπίστοις ἡ δὲ προφητεία οὐ τοῖς ἀπίστοις ἀλλὰ τοῖς πιστεύουσιν	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	14	23	C1	03	συνέλθῃ	συνέρχομαι	V-AAS-3S	01	11	01,02,03,04,05,06,07,08,09,10,11	ἐὰν οὖν ==συνέλθῃ== ἡ ἐκκλησία ὅλη ἐπὶ τὸ αὐτὸ καὶ πάντες	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	23	C2	12	λαλῶσιν	λαλέω	V-PAS-3P	12	13	12,13	==λαλῶσιν== γλώσσαις	suggested-span	ends before next finite anchor
+1corintios	14	23	C3	14	εἰσέλθωσιν	εἰσέρχομαι	V-AAS-3P	14	18	14,15,16,17,18	==εἰσέλθωσιν== δὲ ἰδιῶται ἢ ἄπιστοι	suggested-span	ends before next finite anchor
+1corintios	14	23	C4	20	ἐροῦσιν	λέγω	V-FAI-3P	19	20	19,20	οὐκ ==ἐροῦσιν==	suggested-span	ends before next finite anchor; carried pre-finite token οὐκ
+1corintios	14	23	C5	22	μαίνεσθε	μαίνομαι	V-PMI-2P	21	22	21,22	ὅτι ==μαίνεσθε==	suggested-span	ends at verse boundary; included preceding subordinate connector ὅτι
+1corintios	14	24	C1	04	προφητεύωσιν	προφητεύω	V-PAS-3P	01	04	01,02,03,04	ἐὰν δὲ πάντες ==προφητεύωσιν==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	24	C2	05	εἰσέλθῃ	εἰσέρχομαι	V-AAS-3S	05	10	05,06,07,08,09,10	==εἰσέλθῃ== δέ τις ἄπιστος ἢ ἰδιώτης	suggested-span	ends before next finite anchor
+1corintios	14	24	C3	11	ἐλέγχεται	ἐλέγχω	V-PPI-3S	11	13	11,12,13	==ἐλέγχεται== ὑπὸ πάντων	suggested-span	ends before next finite anchor
+1corintios	14	24	C4	14	ἀνακρίνεται	ἀνακρίνω	V-PPI-3S	14	16	14,15,16	==ἀνακρίνεται== ὑπὸ πάντων	suggested-span	ends at verse boundary
+1corintios	14	25	C1	07	γίνεται	γίνομαι	V-PMI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	τὰ κρυπτὰ τῆς καρδίας αὐτοῦ φανερὰ ==γίνεται== καὶ οὕτως πεσὼν ἐπὶ πρόσωπον	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	25	C2	13	προσκυνήσει	προσκυνέω	V-FAI-3S	13	22	13,14,15,16,17,18,19,20,21,22	==προσκυνήσει== τῷ θεῷ ἀπαγγέλλων ὅτι ὄντως ὁ θεὸς ἐν ὑμῖν	suggested-span	ends before next finite anchor
+1corintios	14	25	C3	23	ἐστιν	εἰμί	V-PAI-3S	23	23	23	==ἐστιν==	suggested-span	ends at verse boundary
+1corintios	14	26	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	04	01,02,03,04	τί οὖν ==ἐστιν== ἀδελφοί	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	26	C2	06	συνέρχησθε	συνέρχομαι	V-PMS-2P	05	08	05,06,07,08	ὅταν ==συνέρχησθε== ἕκαστος ψαλμὸν	suggested-span	ends before next finite anchor; included preceding subordinate connector ὅταν
+1corintios	14	26	C3	09	ἔχει	ἔχω	V-PAI-3S	09	10	09,10	==ἔχει== διδαχὴν	suggested-span	ends before next finite anchor
+1corintios	14	26	C4	11	ἔχει	ἔχω	V-PAI-3S	11	12	11,12	==ἔχει== ἀποκάλυψιν	suggested-span	ends before next finite anchor
+1corintios	14	26	C5	13	ἔχει	ἔχω	V-PAI-3S	13	14	13,14	==ἔχει== γλῶσσαν	suggested-span	ends before next finite anchor
+1corintios	14	26	C6	15	ἔχει	ἔχω	V-PAI-3S	15	16	15,16	==ἔχει== ἑρμηνείαν	suggested-span	ends before next finite anchor
+1corintios	14	26	C7	17	ἔχει	ἔχω	V-PAI-3S	17	20	17,18,19,20	==ἔχει== πάντα πρὸς οἰκοδομὴν	suggested-span	ends before next finite anchor
+1corintios	14	26	C8	21	γινέσθω	γίνομαι	V-PMD-3S	21	21	21	==γινέσθω==	suggested-span	ends at verse boundary
+1corintios	14	27	C1	04	λαλεῖ	λαλέω	V-PAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	εἴτε γλώσσῃ τις ==λαλεῖ== κατὰ δύο ἢ τὸ πλεῖστον τρεῖς καὶ ἀνὰ μέρος καὶ εἷς	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	27	C2	16	διερμηνευέτω	διερμηνεύω	V-PAD-3S	16	16	16	==διερμηνευέτω==	suggested-span	ends at verse boundary
+1corintios	14	28	C1	04	ᾖ	εἰμί	V-PAS-3S	01	05	01,02,03,04,05	ἐὰν δὲ μὴ ==ᾖ== διερμηνευτής	suggested-span	includes pre-anchor material; ends before next finite anchor; carried pre-finite token μὴ; carried pre-finite token δὲ
+1corintios	14	28	C2	06	σιγάτω	σιγάω	V-PAD-3S	06	09	06,07,08,09	==σιγάτω== ἐν ἐκκλησίᾳ ἑαυτῷ	suggested-span	ends before next finite anchor
+1corintios	14	28	C3	11	λαλείτω	λαλέω	V-PAD-3S	10	14	10,11,12,13,14	δὲ ==λαλείτω== καὶ τῷ θεῷ	suggested-span	ends at verse boundary; carried pre-finite token δὲ
+1corintios	14	29	C1	06	λαλείτωσαν	λαλέω	V-PAD-3P	01	09	01,02,03,04,05,06,07,08,09	προφῆται δὲ δύο ἢ τρεῖς ==λαλείτωσαν== καὶ οἱ ἄλλοι	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	29	C2	10	διακρινέτωσαν	διακρίνω	V-PAD-3P	10	10	10	==διακρινέτωσαν==	suggested-span	ends at verse boundary
+1corintios	14	30	C1	04	ἀποκαλυφθῇ	ἀποκαλύπτω	V-APS-3S	01	07	01,02,03,04,05,06,07	ἐὰν δὲ ἄλλῳ ==ἀποκαλυφθῇ== καθημένῳ ὁ πρῶτος	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	30	C2	08	σιγάτω	σιγάω	V-PAD-3S	08	08	08	==σιγάτω==	suggested-span	ends at verse boundary
+1corintios	14	31	C1	01	δύνασθε	δύναμαι	V-PMI-2P	01	08	01,02,03,04,05,06,07,08	==δύνασθε== γὰρ καθʼ ἕνα πάντες προφητεύειν ἵνα πάντες	suggested-span	ends before next finite anchor
+1corintios	14	31	C2	09	μανθάνωσιν	μανθάνω	V-PAS-3P	09	11	09,10,11	==μανθάνωσιν== καὶ πάντες	suggested-span	ends before next finite anchor
+1corintios	14	31	C3	12	παρακαλῶνται	παρακαλέω	V-PPS-3P	12	12	12	==παρακαλῶνται==	suggested-span	ends at verse boundary
+1corintios	14	32	C1	05	ὑποτάσσεται	ὑποτάσσω	V-PPI-3S	01	05	01,02,03,04,05	καὶ πνεύματα προφητῶν προφήταις ==ὑποτάσσεται==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	14	33	C1	03	ἐστιν	εἰμί	V-PAI-3S	01	15	01,02,03,04,05,06,07,08,09,10,11,12,13,14,15	οὐ γάρ ==ἐστιν== ἀκαταστασίας ὁ θεὸς ἀλλὰ εἰρήνης ὡς ἐν πάσαις ταῖς ἐκκλησίαις τῶν ἁγίων	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	14	34	C1	06	σιγάτωσαν	σιγάω	V-PAD-3P	01	08	01,02,03,04,05,06,07,08	αἱ γυναῖκες ἐν ταῖς ἐκκλησίαις ==σιγάτωσαν== οὐ γὰρ	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	34	C2	09	ἐπιτρέπεται	ἐπιτρέπω	V-PPI-3S	09	11	09,10,11	==ἐπιτρέπεται== αὐταῖς λαλεῖν	suggested-span	ends before next finite anchor
+1corintios	14	34	C3	13	ὑποτασσέσθωσαν	ὑποτάσσω	V-PPD-3P	12	17	12,13,14,15,16,17	ἀλλὰ ==ὑποτασσέσθωσαν== καθὼς καὶ ὁ νόμος	suggested-span	ends before next finite anchor; carried pre-finite token ἀλλὰ
+1corintios	14	34	C4	18	λέγει	λέγω	V-PAI-3S	18	18	18	==λέγει==	suggested-span	ends at verse boundary
+1corintios	14	35	C1	05	θέλουσιν	θέλω	V-PAI-3P	01	10	01,02,03,04,05,06,07,08,09,10	εἰ δέ τι μαθεῖν ==θέλουσιν== ἐν οἴκῳ τοὺς ἰδίους ἄνδρας	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	35	C2	11	ἐπερωτάτωσαν	ἐπερωτάω	V-PAD-3P	11	13	11,12,13	==ἐπερωτάτωσαν== αἰσχρὸν γάρ	suggested-span	ends before next finite anchor
+1corintios	14	35	C3	14	ἐστιν	εἰμί	V-PAI-3S	14	18	14,15,16,17,18	==ἐστιν== γυναικὶ λαλεῖν ἐν ἐκκλησίᾳ	suggested-span	ends at verse boundary
+1corintios	14	36	C1	08	ἐξῆλθεν	ἐξέρχομαι	V-AAI-3S	01	12	01,02,03,04,05,06,07,08,09,10,11,12	ἢ ἀφʼ ὑμῶν ὁ λόγος τοῦ θεοῦ ==ἐξῆλθεν== ἢ εἰς ὑμᾶς μόνους	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	36	C2	13	κατήντησεν	καταντάω	V-AAI-3S	13	13	13	==κατήντησεν==	suggested-span	ends at verse boundary
+1corintios	14	37	C1	03	δοκεῖ	δοκέω	V-PAI-3S	01	07	01,02,03,04,05,06,07	εἴ τις ==δοκεῖ== προφήτης εἶναι ἢ πνευματικός	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	37	C2	08	ἐπιγινωσκέτω	ἐπιγινώσκω	V-PAD-3S	08	09	08,09	==ἐπιγινωσκέτω== ἃ	suggested-span	ends before next finite anchor
+1corintios	14	37	C3	10	γράφω	γράφω	V-PAI-1S	10	13	10,11,12,13	==γράφω== ὑμῖν ὅτι κυρίου	suggested-span	ends before next finite anchor
+1corintios	14	37	C4	14	ἐστίν	εἰμί	V-PAI-3S	14	14	14	==ἐστίν==	suggested-span	ends at verse boundary
+1corintios	14	38	C1	04	ἀγνοεῖ	ἀγνοέω	V-PAI-3S	01	04	01,02,03,04	εἰ δέ τις ==ἀγνοεῖ==	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	38	C2	05	ἀγνοεῖται	ἀγνοέω	V-PPI-3S	05	05	05	==ἀγνοεῖται==	suggested-span	ends at verse boundary
+1corintios	14	39	C1	04	ζηλοῦτε	ζηλόω	V-PAD-2P	01	09	01,02,03,04,05,06,07,08,09	ὥστε ἀδελφοί μου ==ζηλοῦτε== τὸ προφητεύειν καὶ τὸ λαλεῖν	suggested-span	includes pre-anchor material; ends before next finite anchor
+1corintios	14	39	C2	11	κωλύετε	κωλύω	V-PAD-2P	10	12	10,11,12	μὴ ==κωλύετε== γλώσσαις	suggested-span	ends at verse boundary; carried pre-finite token μὴ
+1corintios	14	40	C1	07	γινέσθω	γίνομαι	V-PMD-3S	01	07	01,02,03,04,05,06,07	πάντα δὲ εὐσχημόνως καὶ κατὰ τάξιν ==γινέσθω==	suggested-span	includes pre-anchor material; ends at verse boundary
+1corintios	15	1	C1	01	γνωρίζω	γνωρίζω	V-PAI-1S	01	07	01,02,03,04,05,06,07	==γνωρίζω== δὲ ὑμῖν ἀδελφοί τὸ εὐαγγέλιον ὃ	suggested-span	ends before next finite anchor
+1corintios	15	1	C2	08	εὐηγγελισάμην	εὐαγγελίζω	V-AMI-1S	08	10	08,09,10	==εὐηγγελισάμην== ὑμῖν ὃ	suggested-span	ends before next finite anchor
+1corintios	15	1	C3	12	παρελάβετε	παραλαμβάνω	V-AAI-2P	11	14	11,12,13,14	καὶ ==παρελάβετε== ἐν ᾧ	suggested-span	ends before next finite anchor; carried pre-finite token καὶ
+1corintios	15	1	C4	16	ἑστήκατε	ἵστημι	V-XAI-2P	15	16	15,16	καὶ ==ἑστήκατε==	suggested-span	ends at verse boundary; carried pre-finite token καὶ

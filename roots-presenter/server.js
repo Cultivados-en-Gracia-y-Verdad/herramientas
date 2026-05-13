@@ -1896,16 +1896,33 @@ function getQuizIndex() {
   return Array.from(groups.values());
 }
 
-function publicQuiz(quiz) {
+function publicQuiz(quiz, includeAnswer = false) {
   if (!quiz) return null;
 
-  return {
+  const publicData = {
     id: quiz.id,
     groupId: quiz.groupId || quiz.id,
     title: quiz.title,
     question: quiz.question,
     choices: quiz.choices
   };
+
+  if (includeAnswer && Number.isInteger(quiz.correctIndex)) {
+    publicData.correctIndex = quiz.correctIndex;
+    publicData.correctAnswer = quiz.choices[quiz.correctIndex];
+  }
+
+  return publicData;
+}
+
+function getQuizReview() {
+  if (quizState.active || !quizState.quiz) return [];
+
+  const quizIds = quizState.sequence?.length ? quizState.sequence : [quizState.quiz.id];
+  return quizIds
+    .map(quizId => quizBank.find(item => item.id === quizId))
+    .filter(Boolean)
+    .map(quiz => publicQuiz(quiz, true));
 }
 
 function startQuizById(quizId) {
@@ -2003,7 +2020,7 @@ function buildPayload() {
     session: getSessionSummary(),
     connection: getJoinInfo(),
     presentation: presentationMeta,
-    quizzes: quizBank.map(publicQuiz),
+    quizzes: quizBank.map(quiz => publicQuiz(quiz)),
     slides: slides.map(slide => ({ quiz: slide.quiz })),
     renderedSlides: slides.map(slide => ({
       sticky: (slide.stickyLines || []).map(renderLine),
@@ -2014,11 +2031,12 @@ function buildPayload() {
     quizState: {
       active: quizState.active,
       quizId: quizState.quizId,
-      quiz: publicQuiz(quizState.quiz),
+      quiz: publicQuiz(quizState.quiz, !quizState.active),
       launchedFromSlide: quizState.launchedFromSlide,
       sequence: quizState.sequence,
       counts: quizState.counts,
-      countsByQuiz: quizState.countsByQuiz
+      countsByQuiz: quizState.countsByQuiz,
+      review: getQuizReview()
     },
     popupState: {
       reference: popupState.reference,
@@ -2324,18 +2342,13 @@ io.on("connection", socket => {
 
     if (quizAnswers[participantId] !== undefined) {
       const previous = quizAnswers[participantId];
-      if (previous === parsedIndex) {
-        socket.emit("answer-ack", {
-          accepted: true,
-          answer: parsedIndex,
-          quizId: activeQuiz.id
-        });
-        return;
-      }
-
-      if (quizCounts[previous] > 0) {
-        quizCounts[previous]--;
-      }
+      socket.emit("answer-ack", {
+        accepted: true,
+        answer: previous,
+        quizId: activeQuiz.id,
+        alreadyAnswered: true
+      });
+      return;
     }
 
     quizAnswers[participantId] = parsedIndex;

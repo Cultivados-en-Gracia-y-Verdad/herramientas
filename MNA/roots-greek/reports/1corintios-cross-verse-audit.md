@@ -1,0 +1,298 @@
+# ROOTS-GREEK Cross-Verse Audit: 1corintios
+
+## Summary
+
+- candidate rows: 312
+- strong discourse continuations: 86
+- possible subordinate continuations: 76
+- weak coordinate continuations: 150
+- no candidate rows: 0
+
+## Certainty Boundary
+
+- Confirmed: connector existence and current target clause.
+- Suggested: previous verse final clause as possible source.
+- Not confirmed: discourse continuity, hierarchy, paragraph boundaries, PASO 6-8 structure.
+
+## Classification Counts
+
+- weak-coordinate-continuation: 150
+- strong-discourse-continuation: 86
+- possible-subordinate-continuation: 76
+
+## Connector Relation Counts
+
+- coordination: 124
+- condition: 53
+- cause/ground: 47
+- inference: 17
+- alternative/comparison: 13
+- comparison/manner: 12
+- contrast: 12
+- result/inference: 10
+- negative coordination: 8
+- purpose/result: 6
+- alternative: 5
+- content/cause: 4
+- purpose: 1
+
+## Candidate Confidence Counts
+
+- low: 226
+- medium: 86
+
+## Strong Discourse Continuation Candidates
+
+- 1corintios 1:17 | γὰρ | cause/ground | 1corintios 1:16 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 1:18 | γὰρ | cause/ground | 1corintios 1:17 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 1:21 | ἐπειδὴ | cause/ground | 1corintios 1:20 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 1:21 | γὰρ | cause/ground | 1corintios 1:20 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 1:22 | ἐπειδὴ | cause/ground | 1corintios 1:21 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 1:27 | ἀλλὰ | contrast | 1corintios 1:26 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 2:2 | γὰρ | cause/ground | 1corintios 2:1 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 2:7 | ἀλλὰ | contrast | 1corintios 2:6 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 2:9 | ἀλλὰ | contrast | 1corintios 2:8 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 2:10 | γὰρ | cause/ground | 1corintios 2:9 C5 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 2:11 | γὰρ | cause/ground | 1corintios 2:10 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 2:16 | γὰρ | cause/ground | 1corintios 2:15 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 3:3 | γὰρ | cause/ground | 1corintios 3:2 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 3:4 | γὰρ | cause/ground | 1corintios 3:3 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 3:5 | οὖν | inference | 1corintios 3:4 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 3:7 | ὥστε | result/inference | 1corintios 3:6 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 3:9 | γάρ | cause/ground | 1corintios 3:8 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 3:11 | γὰρ | cause/ground | 1corintios 3:10 C4 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 3:19 | γὰρ | cause/ground | 1corintios 3:18 C4 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 3:21 | ὥστε | result/inference | 1corintios 3:20 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 4:4 | γὰρ | cause/ground | 1corintios 4:3 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 4:5 | ὥστε | result/inference | 1corintios 4:4 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 4:7 | γάρ | cause/ground | 1corintios 4:6 C4 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 4:15 | γὰρ | cause/ground | 1corintios 4:14 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 5:3 | γάρ | cause/ground | 1corintios 5:2 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 5:8 | ὥστε | result/inference | 1corintios 5:7 C4 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 5:12 | γάρ | cause/ground | 1corintios 5:11 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 6:4 | οὖν | inference | 1corintios 6:3 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 6:6 | ἀλλὰ | contrast | 1corintios 6:5 C3 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 6:7 | οὖν | inference | 1corintios 6:6 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 6:8 | ἀλλὰ | contrast | 1corintios 6:7 C4 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 7:16 | γὰρ | cause/ground | 1corintios 7:15 C4 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 7:22 | γὰρ | cause/ground | 1corintios 7:21 C4 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 7:38 | ὥστε | result/inference | 1corintios 7:37 C4 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 8:4 | οὖν | inference | 1corintios 8:3 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 8:5 | γὰρ | cause/ground | 1corintios 8:4 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 8:7 | ἀλλʼ | contrast | 1corintios 8:5 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 8:10 | γάρ | cause/ground | 1corintios 8:9 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 8:13 | διόπερ | inference | 1corintios 8:12 C1 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- 1corintios 9:9 | γὰρ | cause/ground | 1corintios 9:8 C2 → C1 | confidence: medium
+  - connector relation naturally looks backward; previous verse final clause available
+- ... 46 more
+
+## Possible Subordinate Continuation Candidates
+
+- 1corintios 1:5 | ὅτι | content/cause | 1corintios 1:4 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 1:6 | καθὼς | comparison/manner | 1corintios 1:5 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 1:15 | ἵνα | purpose/result | 1corintios 1:14 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 1:25 | ὅτι | content/cause | 1corintios 1:23 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 1:29 | ὅπως | purpose | 1corintios 1:28 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 1:31 | ἵνα | purpose/result | 1corintios 1:30 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 1:31 | καθὼς | comparison/manner | 1corintios 1:30 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 2:5 | ἵνα | purpose/result | 1corintios 2:3 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 2:9 | καθὼς | comparison/manner | 1corintios 2:8 C3 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 3:10 | ὡς | comparison/manner | 1corintios 3:9 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 3:12 | εἰ | condition | 1corintios 3:11 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 3:14 | εἴ | condition | 1corintios 3:13 C5 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 3:15 | εἴ | condition | 1corintios 3:14 C3 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 3:17 | εἴ | condition | 1corintios 3:16 C3 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 4:15 | ἐὰν | condition | 1corintios 4:14 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 4:18 | ὡς | comparison/manner | 1corintios 4:17 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 5:5 | ἵνα | purpose/result | 1corintios 5:3 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 6:4 | ἐὰν | condition | 1corintios 6:3 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:9 | εἰ | condition | 1corintios 7:8 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:11 | ἐὰν | condition | 1corintios 7:10 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:13 | εἴ | condition | 1corintios 7:12 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:15 | εἰ | condition | 1corintios 7:14 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:17 | εἰ | condition | 1corintios 7:16 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:17 | ὡς | comparison/manner | 1corintios 7:16 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:28 | ἐὰν | condition | 1corintios 7:27 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:31 | ὡς | comparison/manner | 1corintios 7:29 C3 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 7:36 | εἰ | condition | 1corintios 7:35 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 8:2 | εἴ | condition | 1corintios 8:1 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 8:3 | εἰ | condition | 1corintios 8:2 C3 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 8:5 | εἴπερ | condition | 1corintios 8:4 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 8:7 | ὡς | comparison/manner | 1corintios 8:5 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 8:10 | ἐὰν | condition | 1corintios 8:9 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 8:13 | εἰ | condition | 1corintios 8:12 C1 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 9:2 | εἰ | condition | 1corintios 9:1 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 9:11 | εἰ | condition | 1corintios 9:10 C3 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 9:12 | εἰ | condition | 1corintios 9:11 C2 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 9:16 | ἐὰν | condition | 1corintios 9:15 C4 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 9:17 | εἰ | condition | 1corintios 9:16 C5 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 9:21 | ὡς | comparison/manner | 1corintios 9:20 C3 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- 1corintios 9:21 | ἵνα | purpose/result | 1corintios 9:20 C3 → C1 | confidence: low
+  - subordinate connector may rely on previous discourse context
+- ... 36 more
+
+## Weak Coordinate Continuation Candidates
+
+- 1corintios 1:8 | καὶ | coordination | 1corintios 1:6 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 1:22 | καὶ | coordination | 1corintios 1:21 C2 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 1:23 | δὲ | coordination | 1corintios 1:22 C2 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 1:28 | καὶ | coordination | 1corintios 1:27 C4 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 1:28 | καὶ | coordination | 1corintios 1:27 C4 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 1:30 | δὲ | coordination | 1corintios 1:29 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 2:3 | καὶ | coordination | 1corintios 2:2 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 2:3 | καὶ | coordination | 1corintios 2:2 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 2:6 | δὲ | coordination | 1corintios 2:5 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 2:12 | δὲ | coordination | 1corintios 2:11 C2 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 2:13 | καὶ | coordination | 1corintios 2:12 C2 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 2:14 | δὲ | coordination | 1corintios 2:13 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 2:15 | δὲ | coordination | 1corintios 2:14 C4 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 3:7 | οὔτε | negative coordination | 1corintios 3:6 C3 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 3:8 | δὲ | coordination | 1corintios 3:7 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 3:8 | καὶ | coordination | 1corintios 3:7 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 3:12 | δέ | coordination | 1corintios 3:11 C2 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 3:20 | καὶ | coordination | 1corintios 3:19 C2 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 4:3 | δὲ | coordination | 1corintios 4:2 C2 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 4:6 | δέ | coordination | 1corintios 4:5 C5 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 4:11 | καὶ | coordination | 1corintios 4:9 C3 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 4:12 | καὶ | coordination | 1corintios 4:11 C5 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 4:18 | δέ | coordination | 1corintios 4:17 C4 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 5:2 | καὶ | coordination | 1corintios 5:1 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 5:3 | δὲ | coordination | 1corintios 5:2 C3 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 5:10 | ἢ | alternative/comparison | 1corintios 5:9 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 5:10 | καὶ | coordination | 1corintios 5:9 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 5:10 | ἢ | alternative/comparison | 1corintios 5:9 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 5:11 | δὲ | coordination | 1corintios 5:10 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 5:13 | δὲ | coordination | 1corintios 5:12 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:2 | ἢ | alternative/comparison | 1corintios 6:1 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:9 | ἢ | alternative/comparison | 1corintios 6:8 C2 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:10 | οὔτε | negative coordination | 1corintios 6:9 C3 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:10 | οὔτε | negative coordination | 1corintios 6:9 C3 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:11 | καὶ | coordination | 1corintios 6:10 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:13 | καὶ | coordination | 1corintios 6:12 C4 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:13 | δὲ | coordination | 1corintios 6:12 C4 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:13 | καὶ | coordination | 1corintios 6:12 C4 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:13 | καὶ | coordination | 1corintios 6:12 C4 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- 1corintios 6:14 | δὲ | coordination | 1corintios 6:13 C1 → C1 | confidence: low
+  - coordinating connector continuation is structurally weaker
+- ... 110 more
+
+## Rows Without Previous-Verse Candidates
+
+- none
