@@ -13,7 +13,7 @@ Apply explicit pre-finite migration rules.
 
 PASS 3
 -------
-Emit audit disclosures.
+Normalize boundaries and emit audit disclosures.
 
 This script does NOT build hierarchy.
 It only proposes clause span ownership.
@@ -64,6 +64,7 @@ class Token:
 class ClauseRegion:
     clause_id: str
     finite: Token
+    finite_pos: int
     start_pos: int
     end_pos: int
     original_start_pos: int
@@ -103,12 +104,9 @@ def read_tokens(data) -> List[Token]:
         data.get("columns", []),
         key=lambda c: int((c.get("greek_tokens") or [999999])[0])
     ):
-
         greek = str(col.get("greek", "") or "").strip()
-
         if not greek:
             continue
-
         rows.append(Token(
             g_idx=int((col.get("greek_tokens") or [999999])[0]),
             greek=greek,
@@ -122,18 +120,11 @@ def read_tokens(data) -> List[Token]:
 def is_finite(rmac: str) -> bool:
     if not rmac.startswith("V-"):
         return False
-
     parts = rmac.split("-")
-
     if len(parts) < 2:
         return False
-
     morph = parts[1]
-
-    if len(morph) < 3:
-        return False
-
-    return morph[-1] in FINITE_ENDINGS
+    return len(morph) >= 3 and morph[-1] in FINITE_ENDINGS
 
 
 def build_neutral_regions(tokens: List[Token]) -> List[ClauseRegion]:
@@ -141,7 +132,7 @@ def build_neutral_regions(tokens: List[Token]) -> List[ClauseRegion]:
     regions = []
 
     for idx, pos in enumerate(finite_positions):
-        start = 0 if idx == 0 else finite_positions[idx - 1] + 1
+        start = 0 if idx == 0 else pos
         end = (
             finite_positions[idx + 1] - 1
             if idx + 1 < len(finite_positions)
@@ -151,6 +142,7 @@ def build_neutral_regions(tokens: List[Token]) -> List[ClauseRegion]:
         regions.append(ClauseRegion(
             clause_id=f"C{idx + 1}",
             finite=tokens[pos],
+            finite_pos=pos,
             start_pos=start,
             original_start_pos=start,
             end_pos=end,
@@ -183,10 +175,8 @@ def move_pair_structures(tokens, regions):
                     )
 
                     lead_pos = head_pos - 1
-
                     if lead_pos >= 0:
                         lead = clean_surface(tokens[lead_pos].greek)
-
                         if lead in PAIR_LEAD_INS:
                             region.start_pos = lead_pos
                             region.notes.append(
@@ -214,9 +204,11 @@ def normalize_boundaries(regions):
     for idx in range(len(regions) - 1):
         current = regions[idx]
         nxt = regions[idx + 1]
+        current.end_pos = nxt.start_pos - 1
 
-        if nxt.migrated_left:
-            current.end_pos = nxt.start_pos - 1
+        if current.end_pos < current.finite_pos:
+            current.end_pos = current.finite_pos
+            current.notes.append("boundary normalized at finite anchor to prevent empty span")
 
 
 def build_spans(book, ch, vs, tokens, regions):
