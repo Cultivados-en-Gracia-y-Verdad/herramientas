@@ -14,34 +14,73 @@ Current output:
 - detected verbs
 - finite/non-finite status
 - connector list
-- raw Greek clause stream
+- Greek clause stream
 
 This is the canonical ROOTS structural reset layer.
 """
 
 import argparse
 import json
+import re
 from pathlib import Path
-from typing import Dict, Iterable, List, Tuple
+from typing import Dict, Iterable, List, Optional, Tuple
 
 FINITE_ENDINGS = {"I", "S", "M", "D"}
 
+# Clause-level connectors only. Simple negators are not listed as connectors here;
+# they remain inside the clause they negate.
 CONNECTOR_GLOSSES = {
     "δέ": "coordination",
+    "δὲ": "coordination",
     "καί": "coordination",
+    "καὶ": "coordination",
     "ἀλλά": "contrast",
+    "ἀλλὰ": "contrast",
+    "ἀλλʼ": "contrast",
     "γάρ": "cause",
+    "γὰρ": "cause",
     "οὖν": "inference",
+    "ἄρα": "inference",
+    "ὥστε": "result/inference",
+    "διό": "inference",
+    "διόπερ": "inference",
+    "τοίνυν": "inference",
     "ἵνα": "purpose",
+    "ὅπως": "purpose",
     "ὅτι": "content/cause",
     "ἐάν": "condition",
+    "ἐὰν": "condition",
     "εἰ": "condition",
+    "εἴπερ": "condition",
+    "ὅταν": "temporal/condition",
+    "ἐπειδή": "cause/ground",
+    "ἐπειδὴ": "cause/ground",
+    "καθώς": "comparison/manner",
+    "καθὼς": "comparison/manner",
     "ὡς": "comparison/manner",
-    "μή": "negation",
-    "οὐ": "negation",
+    "ὥσπερ": "comparison/manner",
+}
+
+SUBORDINATING_CONNECTORS = {
+    "ἵνα", "ὅπως", "ὅτι", "ἐάν", "ἐὰν", "εἰ", "εἴπερ", "ὅταν",
+    "ἐπειδή", "ἐπειδὴ", "καθώς", "καθὼς", "ὡς", "ὥσπερ", "ὥστε",
+}
+
+COORDINATING_CONNECTORS = {
+    "δέ", "δὲ", "καί", "καὶ", "ἀλλά", "ἀλλὰ", "ἀλλʼ", "οὖν", "ἄρα", "διό", "διόπερ", "τοίνυν", "γάρ", "γὰρ",
+}
+
+PRE_FINITE_CARRY = {
+    "δέ", "δὲ", "καί", "καὶ", "ἀλλά", "ἀλλὰ", "ἀλλʼ", "ἢ", "μή", "μὴ",
+    "οὐ", "οὐκ", "οὐχ", "οὔτε", "μηδέ", "μηδὲ", "οὐδέ", "οὐδὲ",
 }
 
 CONNECTORS = set(CONNECTOR_GLOSSES)
+
+
+def clean_surface(text: str) -> str:
+    text = str(text or "").strip()
+    return text.strip(".,;:·—⸁⸃[]();?·")
 
 
 def is_verb(rmac: str) -> bool:
@@ -55,6 +94,14 @@ def is_finite(rmac: str) -> bool:
     if len(parts) < 2 or len(parts[1]) < 3:
         return False
     return parts[1][-1] in FINITE_ENDINGS
+
+
+def is_connector(col: Dict) -> bool:
+    return clean_surface(col.get("greek", "")) in CONNECTORS
+
+
+def connector_relation(col: Dict) -> str:
+    return CONNECTOR_GLOSSES.get(clean_surface(col.get("greek", "")), "unknown")
 
 
 def read_json(path: Path) -> Dict:
@@ -74,67 +121,100 @@ def verse_sort_key(path: Path) -> Tuple[int, int]:
     return chapter, verse
 
 
+def greek_index(col: Dict) -> int:
+    gt = col.get("greek_tokens") or []
+    if not gt:
+        return 999999
+    try:
+        return int(gt[0])
+    except Exception:
+        return 999999
+
+
 def iter_columns(data: Dict) -> Iterable[Dict]:
-    cols = data.get("columns", [])
-
-    def gidx(col: Dict) -> int:
-        gt = col.get("greek_tokens") or []
-        if not gt:
-            return 999999
-        try:
-            return int(gt[0])
-        except Exception:
-            return 999999
-
-    for col in sorted(cols, key=gidx):
-        yield col
+    for col in sorted(data.get("columns", []), key=greek_index):
+        if str(col.get("greek", "") or "").strip():
+            yield col
 
 
 def finite_label(rmac: str) -> str:
     return "[F]" if is_finite(rmac) else "[NF]"
 
 
+def clause_has_finite(clause: List[Dict]) -> bool:
+    return any(is_finite(str(col.get("rmac", "") or "")) for col in clause)
+
+
+def clean_token(col: Dict) -> str:
+    return clean_surface(col.get("greek", ""))
+
+
+def starts_subordinate_clause(col: Dict) -> bool:
+    return clean_token(col) in SUBORDINATING_CONNECTORS
+
+
+def carry_trailing_prefinite_tokens(current: List[Dict]) -> List[Dict]:
+    carried: List[Dict] = []
+
+    while current and clean_token(current[-1]) in PRE_FINITE_CARRY:
+        carried.insert(0, current.pop())
+
+    return carried
+
+
 def build_clause_stream(columns: List[Dict]) -> List[List[Dict]]:
     """
-    Temporary Greek-only clause stream.
+    Greek-only clause stream v2.
 
-    Current heuristic:
-    - start new clause at finite verb after another finite verb
-    - start new clause after strong connector introducing dependency
-
-    This is intentionally simple during the reset phase.
+    Rules:
+    1. A subordinate connector starts a new clause when a finite clause is already open.
+    2. A second finite verb starts a new clause.
+    3. When a second finite verb starts a new clause, trailing pre-finite particles
+       such as καὶ, δὲ, μὴ, οὐκ are carried forward into the new clause.
+    4. Non-finite-only verses remain one visible unit for now.
     """
 
     clauses: List[List[Dict]] = []
     current: List[Dict] = []
-    finite_seen = False
 
     for col in columns:
-        greek = str(col.get("greek", "") or "")
         rmac = str(col.get("rmac", "") or "")
-
         start_new = False
+        carry: List[Dict] = []
 
         if current:
-            if greek in {"ἵνα", "ὅτι", "ἐάν", "εἰ"}:
+            if starts_subordinate_clause(col) and clause_has_finite(current):
                 start_new = True
-            elif finite_seen and is_finite(rmac):
+            elif is_finite(rmac) and clause_has_finite(current):
                 start_new = True
+                carry = carry_trailing_prefinite_tokens(current)
 
         if start_new:
-            clauses.append(current)
-            current = []
-            finite_seen = False
+            if current:
+                clauses.append(current)
+            current = carry[:]
 
         current.append(col)
-
-        if is_finite(rmac):
-            finite_seen = True
 
     if current:
         clauses.append(current)
 
     return clauses
+
+
+def render_clause(clause: List[Dict]) -> str:
+    parts: List[str] = []
+
+    for col in clause:
+        greek = str(col.get("greek", "") or "")
+        rmac = str(col.get("rmac", "") or "")
+
+        if is_finite(rmac):
+            parts.append(f"=={greek}==")
+        else:
+            parts.append(greek)
+
+    return " ".join(parts).strip()
 
 
 def render_verse(data: Dict) -> str:
@@ -165,9 +245,7 @@ def render_verse(data: Dict) -> str:
         greek = col.get("greek", "")
         lemma = col.get("lemma", "")
 
-        lines.append(
-            f"- {greek} | {lemma} | {rmac} | {finite_label(rmac)}"
-        )
+        lines.append(f"- {greek} | {lemma} | {rmac} | {finite_label(rmac)}")
 
     if not verb_found:
         lines.append("- none")
@@ -179,18 +257,14 @@ def render_verse(data: Dict) -> str:
     connector_count = 0
 
     for col in columns:
-        greek = str(col.get("greek", "") or "")
-
-        if greek not in CONNECTORS:
+        if not is_connector(col):
             continue
 
         connector_count += 1
+        greek = col.get("greek", "")
+        relation = connector_relation(col)
 
-        relation = CONNECTOR_GLOSSES.get(greek, "unknown")
-
-        lines.append(
-            f"- cn{connector_count}. {greek} | relación: {relation} | alcance: clause-level"
-        )
+        lines.append(f"- cn{connector_count}. {greek} | relación: {relation} | alcance: clause-level")
 
     if connector_count == 0:
         lines.append("- none")
@@ -202,20 +276,7 @@ def render_verse(data: Dict) -> str:
     clauses = build_clause_stream(columns)
 
     for idx, clause in enumerate(clauses, start=1):
-        parts: List[str] = []
-
-        for col in clause:
-            greek = str(col.get("greek", "") or "")
-            rmac = str(col.get("rmac", "") or "")
-
-            if is_finite(rmac):
-                parts.append(f"=={greek}==")
-            else:
-                parts.append(greek)
-
-        clause_text = " ".join(parts).strip()
-
-        lines.append(f"C{idx}. {clause_text}")
+        lines.append(f"C{idx}. {render_clause(clause)}")
 
     lines.append("")
     lines.append("---")
