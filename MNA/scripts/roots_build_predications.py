@@ -45,14 +45,15 @@ GENDER_CODE_INDEX = 2
 def normalize_greek(token: str) -> str:
     token = token.lower()
     token = token.replace("ʼ", "").replace("’", "").replace("'", "")
-    token = re.sub(r"[·.,;:!?¿¡⸀⸂⸃()\[\]«»“”\"—]", "", token)
+    token = token.replace(";", "").replace("·", "")
+    token = re.sub(r"[·.,;:!?¿¡⸀⸁⸂⸃()\[\]«»“”\"—]", "", token)
     token = unicodedata.normalize("NFD", token)
     token = "".join(ch for ch in token if unicodedata.category(ch) != "Mn")
     return token.strip()
 
 
 def has_visible_boundary(token: str) -> bool:
-    return any(mark in token for mark in [",", ";", "·", ":", "?", "!", "—", "·"])
+    return any(mark in token for mark in [",", ";", ";", "·", ":", "?", "!", "—", "·"])
 
 
 def mna_root() -> Path:
