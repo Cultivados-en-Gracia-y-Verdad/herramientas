@@ -32,6 +32,10 @@ SUBORDINATORS = {
     "ωστε", "επει", "επειδη", "καθως", "πριν",
 }
 
+BOUNDARY_CONNECTORS = {
+    "αλλα", "δε", "και", "ουδε", "μηδε", "η", "γαρ", "ουν",
+}
+
 BOOK_CODES = {"1corintios": "07"}
 CASE_CODE_INDEX = 0
 NUMBER_CODE_INDEX = 1
@@ -45,6 +49,10 @@ def normalize_greek(token: str) -> str:
     token = unicodedata.normalize("NFD", token)
     token = "".join(ch for ch in token if unicodedata.category(ch) != "Mn")
     return token.strip()
+
+
+def has_visible_boundary(token: str) -> bool:
+    return any(mark in token for mark in [",", ";", "·", ":", "?", "!", "—", "·"])
 
 
 def mna_root() -> Path:
@@ -184,7 +192,6 @@ def nominative_agrees_with_finite(code: str, finite_person: str | None, finite_n
     if nominal_number == finite_number:
         return True
 
-    # Conservative allowance: Greek neuter plural subjects may take singular verbs.
     if nominal_number == "P" and nominal_gender == "N" and finite_number == "S":
         return True
 
@@ -202,37 +209,66 @@ def finite_zone_start(finite_indexes: list[str], current_idx: str) -> int:
     return int(previous) + 1 if previous else 1
 
 
-def recover_subject(morph: dict[str, dict[str, str]], verb_idx: str, finite_indexes: list[str]) -> dict[str, Any]:
+def boundary_between(tokens: list[dict[str, Any]], morph: dict[str, dict[str, str]], start_idx: str, end_idx: str) -> bool:
+    start = int(start_idx)
+    end = int(end_idx)
+    if start >= end:
+        return False
+
+    for i in range(start + 1, end):
+        idx = f"{i:02d}"
+        token = tokens[i - 1]["token"]
+        key = normalize_greek(token)
+        row = morph.get(idx)
+        pos = row["pos"] if row else ""
+
+        if has_visible_boundary(token):
+            return True
+        if key in BOUNDARY_CONNECTORS:
+            return True
+        if pos == "C-" and key not in SUBORDINATORS:
+            return True
+
+    return False
+
+
+def recover_subject(
+    tokens: list[dict[str, Any]],
+    morph: dict[str, dict[str, str]],
+    verb_idx: str,
+    finite_indexes: list[str],
+) -> dict[str, Any]:
     verb_i = int(verb_idx)
     person, number = person_number(morph[verb_idx]["code"])
     window_start = max(finite_zone_start(finite_indexes, verb_idx), verb_i - 6, 1)
     explicit_candidates: list[dict[str, Any]] = []
 
-    # First/second-person finite verbs already encode their subject person/number.
-    # Do not promote nearby nominatives as subject candidates for them.
     if person == "3":
         for i in range(window_start, verb_i):
             idx = f"{i:02d}"
             row = morph.get(idx)
-            if row and is_nominative_candidate(row["code"]):
-                candidate = {
-                    "token": idx,
-                    "form": row["greek"],
-                    "lemma": row["lemma"],
-                    "morph": row["code"],
-                }
-                if nominative_agrees_with_finite(row["code"], person, number):
-                    explicit_candidates.append(candidate)
+            if not row or not is_nominative_candidate(row["code"]):
+                continue
+            if not nominative_agrees_with_finite(row["code"], person, number):
+                continue
+            if boundary_between(tokens, morph, idx, verb_idx):
+                continue
+            explicit_candidates.append({
+                "token": idx,
+                "form": row["greek"],
+                "lemma": row["lemma"],
+                "morph": row["code"],
+            })
 
     if explicit_candidates:
         selected = explicit_candidates[-1]
         return {
             "subject_status": "candidate",
-            "subject_source": "explicit_nominative_agrees_with_third_person_finite",
+            "subject_source": "nearest_agreeing_nominative_no_visible_boundary",
             "subject_token": selected["token"],
             "subject_person": None,
             "subject_number": None,
-            "subject_candidates": explicit_candidates,
+            "subject_candidates": [selected],
         }
     if person and number:
         return {
@@ -347,7 +383,7 @@ def build_verse(book: str, chapter: str, verse: str) -> list[dict[str, Any]]:
             raise ValueError(f"Greek/morph mismatch at {book} {chapter}:{verse} token {idx}: {token['token']} != {morph_row['greek']}")
         if not is_finite(morph_row["code"]):
             continue
-        subject = recover_subject(morph, idx, finite_indexes)
+        subject = recover_subject(tokens, morph, idx, finite_indexes)
         subordination = detect_subordination(tokens, idx, finite_indexes)
         records.append(build_record(book, chapter, verse, len(records) + 1, token, morph_row, subject, subordination, alignment.get(idx)))
     return records
