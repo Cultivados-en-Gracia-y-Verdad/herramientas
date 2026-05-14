@@ -110,8 +110,6 @@ def read_alignment(path: Path) -> dict[str, dict[str, str]]:
 
 
 def morph_ref_code(book: str, chapter: str, verse: str) -> str:
-    # MorphGNT references use a two-digit book code at the front.
-    # For this phase we are explicitly working from 1corintios.
     book_codes = {
         "1corintios": "07",
     }
@@ -166,8 +164,6 @@ def read_morph_for_verse(path: Path, book: str, chapter: str, verse: str) -> dic
 
 
 def compact_verb_code(code: str) -> str:
-    # MorphGNT verb code often looks like V-PAI-3S--.
-    # The finite test only needs V + tense/voice/mood + person/number.
     cleaned = code.strip().replace("--", "-").strip("-")
     parts = [p for p in cleaned.split("-") if p]
 
@@ -236,7 +232,6 @@ def is_nominative_candidate(code: str) -> bool:
     if not code:
         return False
 
-    # nouns, adjectives, articles, pronouns may carry nominative forms.
     if not code.startswith(("N-", "A-", "RA", "RP", "RD", "RI", "RR", "D-", "T-")):
         return False
 
@@ -244,17 +239,11 @@ def is_nominative_candidate(code: str) -> bool:
     return case == "N"
 
 
-def recover_subject(
-    tokens: list[dict[str, Any]],
-    morph: dict[str, dict[str, str]],
-    verb_idx: str,
-) -> dict[str, Any]:
+def recover_subject(tokens: list[dict[str, Any]], morph: dict[str, dict[str, str]], verb_idx: str) -> dict[str, Any]:
     verb_i = int(verb_idx)
     verb_morph = morph[verb_idx]
     person, number = person_number(verb_morph["code"])
 
-    # Strict first pass: only look backward before the finite verb.
-    # This avoids grabbing later nominatives as false subjects.
     window_start = max(1, verb_i - 6)
     explicit_candidates: list[dict[str, Any]] = []
 
@@ -354,17 +343,7 @@ def find_alignment_path(root: Path, book: str, chapter: str, verse: str) -> Path
     )
 
 
-def build_record(
-    book: str,
-    chapter: str,
-    verse: str,
-    predication_number: int,
-    token: dict[str, Any],
-    morph_row: dict[str, str],
-    subject: dict[str, Any],
-    subordination: dict[str, Any],
-    alignment: dict[str, str] | None,
-) -> dict[str, Any]:
+def build_record(book: str, chapter: str, verse: str, predication_number: int, token: dict[str, Any], morph_row: dict[str, str], subject: dict[str, Any], subordination: dict[str, Any], alignment: dict[str, str] | None) -> dict[str, Any]:
     finite_idx = token["idx"]
 
     if subordination["subordination_status"] == "candidate":
@@ -407,7 +386,7 @@ def build_record(
 def build_verse(book: str, chapter: str, verse: str) -> list[dict[str, Any]]:
     root = mna_root()
 
-    greek_path = root / "data" / "g-tokens" / f"{book}-{chapter}-{verse}.txt"
+    greek_path = root / "data" / "g-tokens" / book / f"{book}-{chapter}-{verse}.txt"
     morph_path = root / "data" / "MorphGNT" / f"{book}-morphgnt.txt"
     alignment_path = find_alignment_path(root, book, chapter, verse)
 
