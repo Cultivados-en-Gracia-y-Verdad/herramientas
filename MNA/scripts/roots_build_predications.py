@@ -4,24 +4,19 @@ from __future__ import annotations
 """
 ROOTS — finite predication candidate builder
 
-This is the first machine-readable ROOTS dataset stage.
+Machine-readable ROOTS dataset stage.
 
-Scope for this stage:
-- verse-based, not book-based
-- built from existing MNA repository files
-- no generic input.tsv interface
-- no topology
-- no Paso 5 / Paso 6 reconstruction
-- no human-readable rendering
-
-Usage from MNA directory:
-    python3 scripts/roots_build_predications.py 1corintios 1 10
+Current scope:
+- verse-based
+- 1corintios MorphGNT mapping only
+- finite predication candidates only
+- no topology, Paso 5, Paso 6, or human-readable rendering
 
 Usage from repository root:
-    python3 MNA/scripts/roots_build_predications.py 1corintios 1 10
+    python3 MNA/scripts/roots_build_predications.py 1corintios 2 4
 
 Default output:
-    MNA/data/predications/1corintios-1-10.jsonl
+    MNA/data/predications/<book>-<chapter>-<verse>.jsonl
 """
 
 import csv
@@ -32,34 +27,21 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
-
 SUBORDINATORS = {
-    "ει",
-    "εαν",
-    "ινα",
-    "οτι",
-    "οταν",
-    "οτε",
-    "οπως",
-    "ως",
-    "ωστε",
-    "επει",
-    "επειδη",
-    "καθως",
-    "πριν",
+    "ει", "εαν", "ινα", "οτι", "οταν", "οτε", "οπως", "ως",
+    "ωστε", "επει", "επειδη", "καθως", "πριν",
 }
 
+BOOK_CODES = {"1corintios": "07"}
 CASE_CODE_INDEX = 0
 NUMBER_CODE_INDEX = 1
 GENDER_CODE_INDEX = 2
 
 
-# -----------------------------------------------------------------------------
-# Basic paths and normalization
-# -----------------------------------------------------------------------------
-
 def normalize_greek(token: str) -> str:
-    token = re.sub(r"[·.,;:!?¿¡⸀⸂⸃()\[\]«»“”\"'—]", "", token).lower()
+    token = token.lower()
+    token = token.replace("ʼ", "").replace("’", "").replace("'", "")
+    token = re.sub(r"[·.,;:!?¿¡⸀⸂⸃()\[\]«»“”\"—]", "", token)
     token = unicodedata.normalize("NFD", token)
     token = "".join(ch for ch in token if unicodedata.category(ch) != "Mn")
     return token.strip()
@@ -69,19 +51,13 @@ def mna_root() -> Path:
     return Path(__file__).resolve().parents[1]
 
 
-# -----------------------------------------------------------------------------
-# Input readers
-# -----------------------------------------------------------------------------
-
 def read_tokens(path: Path) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
-
     with path.open(encoding="utf-8") as f:
         for lineno, line in enumerate(f, start=1):
             line = line.rstrip("\n")
             if not line.strip():
                 continue
-
             if "\t" in line:
                 idx, text = line.split("\t", 1)
             else:
@@ -89,101 +65,54 @@ def read_tokens(path: Path) -> list[dict[str, Any]]:
                 if len(parts) != 2:
                     raise ValueError(f"{path}:{lineno}: expected IDX<TAB>TOKEN")
                 idx, text = parts
-
             idx = idx.strip()
             if not idx.isdigit():
                 raise ValueError(f"{path}:{lineno}: invalid token index {idx!r}")
-
             rows.append({"idx": idx.zfill(2), "token": text.strip()})
-
     return rows
 
 
 def read_alignment(path: Path) -> dict[str, dict[str, str]]:
     with path.open(encoding="utf-8") as f:
         rows = list(csv.DictReader(f, delimiter="\t"))
-
     if not rows:
         return {}
-
-    required = {
-        "BOOK",
-        "CH",
-        "VS",
-        "G_IDX",
-        "GREEK",
-        "NBLA_IDX",
-        "NBLA_TEXT",
-        "ALIGNMENT",
-    }
+    required = {"BOOK", "CH", "VS", "G_IDX", "GREEK", "NBLA_IDX", "NBLA_TEXT", "ALIGNMENT"}
     missing = required - set(rows[0].keys())
     if missing:
         raise ValueError(f"{path}: missing columns: {', '.join(sorted(missing))}")
-
     return {row["G_IDX"].zfill(2): row for row in rows}
 
 
 def morph_ref_code(book: str, chapter: str, verse: str) -> str:
-    # This first predication pass is intentionally scoped to 1 Corinthians.
-    book_codes = {"1corintios": "07"}
-
-    if book not in book_codes:
-        raise ValueError(
-            f"No MorphGNT book code configured for {book!r}. "
-            "This first predication pass is intentionally limited."
-        )
-
-    return f"{book_codes[book]}{int(chapter):02d}{int(verse):02d}"
+    if book not in BOOK_CODES:
+        raise ValueError(f"No MorphGNT book code configured for {book!r}")
+    return f"{BOOK_CODES[book]}{int(chapter):02d}{int(verse):02d}"
 
 
-def read_morph_for_verse(
-    path: Path,
-    book: str,
-    chapter: str,
-    verse: str,
-) -> dict[str, dict[str, str]]:
+def read_morph_for_verse(path: Path, book: str, chapter: str, verse: str) -> dict[str, dict[str, str]]:
     wanted = morph_ref_code(book, chapter, verse)
     rows: dict[str, dict[str, str]] = {}
     counter = 0
-
     with path.open(encoding="utf-8") as f:
         for raw in f:
-            line = raw.strip()
-            if not line:
+            parts = raw.strip().split()
+            if len(parts) < 7 or parts[0] != wanted:
                 continue
-
-            parts = line.split()
-            if len(parts) < 6:
-                continue
-
-            ref_code = parts[0]
-            if ref_code != wanted:
-                continue
-
             counter += 1
             idx = f"{counter:02d}"
-            pos = parts[1]
-            morph = parts[2]
-            greek = parts[3]
-            lemma = parts[-1]
-            code = f"{pos} {morph}"
-
+            pos, morph, greek, lemma = parts[1], parts[2], parts[3], parts[-1]
             rows[idx] = {
                 "idx": idx,
-                "ref_code": ref_code,
+                "ref_code": parts[0],
                 "pos": pos,
                 "morph": morph,
-                "code": code,
+                "code": f"{pos} {morph}",
                 "greek": greek,
                 "lemma": lemma,
             }
-
     return rows
 
-
-# -----------------------------------------------------------------------------
-# MorphGNT parsing
-# -----------------------------------------------------------------------------
 
 def morphgnt_pos_and_body(code: str) -> tuple[str, str]:
     parts = code.split()
@@ -194,20 +123,13 @@ def morphgnt_pos_and_body(code: str) -> tuple[str, str]:
 
 def compact_verb_code(code: str) -> str:
     pos, body = morphgnt_pos_and_body(code)
-    if pos != "V-":
+    if pos != "V-" or len(body) < 4:
         return ""
-
-    body = body.strip()
-    if len(body) < 4:
-        return ""
-
     person = body[0]
     tvm = body[1:4]
     number = body[5] if len(body) > 5 else "-"
-
     if person not in {"1", "2", "3"}:
         return f"V-{tvm}"
-
     return f"V-{tvm}-{person}{number}"
 
 
@@ -215,17 +137,11 @@ def is_finite(code: str) -> bool:
     pos, body = morphgnt_pos_and_body(code)
     if pos != "V-" or len(body) < 6:
         return False
-
-    person = body[0]
-    tvm = body[1:4]
-    mood = body[3]
-    number = body[5]
-
     return (
-        person in {"1", "2", "3"}
-        and len(tvm) == 3
-        and mood in {"I", "S", "M", "O", "D"}
-        and number in {"S", "P"}
+        body[0] in {"1", "2", "3"}
+        and len(body[1:4]) == 3
+        and body[3] in {"I", "S", "M", "O", "D"}
+        and body[5] in {"S", "P"}
     )
 
 
@@ -233,94 +149,51 @@ def person_number(code: str) -> tuple[str | None, str | None]:
     pos, body = morphgnt_pos_and_body(code)
     if pos != "V-" or len(body) < 6:
         return None, None
-
-    person = body[0]
-    number = body[5]
-
-    if person not in {"1", "2", "3"}:
-        return None, None
-    if number not in {"S", "P"}:
-        return None, None
-
-    return person, number
+    person, number = body[0], body[5]
+    if person in {"1", "2", "3"} and number in {"S", "P"}:
+        return person, number
+    return None, None
 
 
 def parse_case_number_gender(code: str) -> tuple[str | None, str | None, str | None]:
     parts = code.split()
     if len(parts) != 2:
         return None, None, None
-
     body = parts[1].replace("-", "").strip()
     if len(body) < 3:
         return None, None, None
-
-    return (
-        body[CASE_CODE_INDEX],
-        body[NUMBER_CODE_INDEX],
-        body[GENDER_CODE_INDEX],
-    )
+    return body[CASE_CODE_INDEX], body[NUMBER_CODE_INDEX], body[GENDER_CODE_INDEX]
 
 
 def is_nominative_candidate(code: str) -> bool:
-    if not code:
-        return False
-
     pos, _body = morphgnt_pos_and_body(code)
     if pos not in {"N-", "A-", "RA", "RP", "RD", "RI", "RR", "D-", "T-"}:
         return False
-
     case, _number, _gender = parse_case_number_gender(code)
     return case == "N"
 
 
-# -----------------------------------------------------------------------------
-# Finite-verb-local helpers
-# -----------------------------------------------------------------------------
-
 def previous_finite_idx(finite_indexes: list[str], current_idx: str) -> str | None:
     current = int(current_idx)
     previous = [idx for idx in finite_indexes if int(idx) < current]
-    if not previous:
-        return None
-    return previous[-1]
+    return previous[-1] if previous else None
 
 
 def finite_zone_start(finite_indexes: list[str], current_idx: str) -> int:
     previous = previous_finite_idx(finite_indexes, current_idx)
-    if previous is None:
-        return 1
-    return int(previous) + 1
+    return int(previous) + 1 if previous else 1
 
 
-# -----------------------------------------------------------------------------
-# Candidate recovery
-# -----------------------------------------------------------------------------
-
-def recover_subject(
-    tokens: list[dict[str, Any]],
-    morph: dict[str, dict[str, str]],
-    verb_idx: str,
-    finite_indexes: list[str],
-) -> dict[str, Any]:
+def recover_subject(morph: dict[str, dict[str, str]], verb_idx: str, finite_indexes: list[str]) -> dict[str, Any]:
     verb_i = int(verb_idx)
-    verb_morph = morph[verb_idx]
-    person, number = person_number(verb_morph["code"])
-
-    # Conservative subject zone:
-    # - search only before the current finite verb
-    # - search only after the previous finite verb, never across it
-    # - keep the near-verb six-token cap for this first pass
-    zone_start = finite_zone_start(finite_indexes, verb_idx)
-    window_start = max(zone_start, verb_i - 6, 1)
-
+    person, number = person_number(morph[verb_idx]["code"])
+    window_start = max(finite_zone_start(finite_indexes, verb_idx), verb_i - 6, 1)
     explicit_candidates: list[dict[str, Any]] = []
+
     for i in range(window_start, verb_i):
         idx = f"{i:02d}"
         row = morph.get(idx)
-        if not row:
-            continue
-
-        if is_nominative_candidate(row["code"]):
+        if row and is_nominative_candidate(row["code"]):
             explicit_candidates.append({
                 "token": idx,
                 "form": row["greek"],
@@ -338,7 +211,6 @@ def recover_subject(
             "subject_number": None,
             "subject_candidates": explicit_candidates,
         }
-
     if person and number:
         return {
             "subject_status": "confirmed",
@@ -348,7 +220,6 @@ def recover_subject(
             "subject_number": number,
             "subject_candidates": [],
         }
-
     return {
         "subject_status": "unresolved",
         "subject_source": None,
@@ -359,17 +230,9 @@ def recover_subject(
     }
 
 
-def detect_subordination(
-    tokens: list[dict[str, Any]],
-    verb_idx: str,
-    finite_indexes: list[str],
-) -> dict[str, Any]:
+def detect_subordination(tokens: list[dict[str, Any]], verb_idx: str, finite_indexes: list[str]) -> dict[str, Any]:
     verb_i = int(verb_idx)
     start = finite_zone_start(finite_indexes, verb_idx)
-
-    # Scan the entire finite zone before the current finite verb.
-    # This is more objective than a fixed lookback window because a visible
-    # subordinator may appear earlier in the same finite predication zone.
     markers: list[dict[str, str]] = []
     for i in range(start, verb_i):
         idx = f"{i:02d}"
@@ -377,70 +240,38 @@ def detect_subordination(
         key = normalize_greek(token)
         if key in SUBORDINATORS:
             markers.append({"token": idx, "form": token, "key": key})
-
     if markers:
         return {
             "subordination_status": "candidate",
             "subordination_source": "explicit_marker_after_previous_finite_before_current_finite",
             "subordination_markers": markers,
         }
+    return {"subordination_status": "not_detected", "subordination_source": None, "subordination_markers": []}
 
-    return {
-        "subordination_status": "not_detected",
-        "subordination_source": None,
-        "subordination_markers": [],
-    }
-
-
-# -----------------------------------------------------------------------------
-# File-path resolution and output record construction
-# -----------------------------------------------------------------------------
 
 def find_alignment_path(root: Path, book: str, chapter: str, verse: str) -> Path:
     data = root / "data"
     filename = f"{book}-{chapter}-{verse}.tsv"
-
     candidates = [
         data / "alignments" / filename,
         data / "alignments" / book / filename,
         data / "alignments" / book / chapter / filename,
         data / "alignments" / book / chapter / f"{verse}.tsv",
     ]
-
     for candidate in candidates:
         if candidate.exists():
             return candidate
-
     matches = sorted((data / "alignments").glob(f"**/{filename}"))
     if matches:
         return matches[0]
-
-    raise FileNotFoundError(
-        "Could not find alignment TSV. Tried:\n" +
-        "\n".join(str(c) for c in candidates)
-    )
+    raise FileNotFoundError("Could not find alignment TSV. Tried:\n" + "\n".join(str(c) for c in candidates))
 
 
-def build_record(
-    book: str,
-    chapter: str,
-    verse: str,
-    predication_number: int,
-    token: dict[str, Any],
-    morph_row: dict[str, str],
-    subject: dict[str, Any],
-    subordination: dict[str, Any],
-    alignment: dict[str, str] | None,
-) -> dict[str, Any]:
+def build_record(book: str, chapter: str, verse: str, n: int, token: dict[str, Any], morph_row: dict[str, str], subject: dict[str, Any], subordination: dict[str, Any], alignment: dict[str, str] | None) -> dict[str, Any]:
     finite_idx = token["idx"]
-    independence_status = (
-        "unresolved"
-        if subordination["subordination_status"] == "candidate"
-        else "candidate"
-    )
-
+    independence_status = "unresolved" if subordination["subordination_status"] == "candidate" else "candidate"
     return {
-        "predication_id": f"{book}-{chapter}-{verse}-P{predication_number:02d}",
+        "predication_id": f"{book}-{chapter}-{verse}-P{n:02d}",
         "book": book,
         "chapter": int(chapter),
         "verse": int(verse),
@@ -458,30 +289,17 @@ def build_record(
             "predicate_g_start": finite_idx,
             "predicate_g_end": finite_idx,
         },
-        "independence": {
-            "independence_status": independence_status,
-            "independence_source": "subordination_marker_scan_only",
-        },
+        "independence": {"independence_status": independence_status, "independence_source": "subordination_marker_scan_only"},
         "subordination": subordination,
-        "certainty": {
-            "finite_verb": "confirmed",
-            "predication": "candidate",
-            "independence": independence_status,
-        },
+        "certainty": {"finite_verb": "confirmed", "predication": "candidate", "independence": independence_status},
     }
 
 
-# -----------------------------------------------------------------------------
-# Verse builder
-# -----------------------------------------------------------------------------
-
 def build_verse(book: str, chapter: str, verse: str) -> list[dict[str, Any]]:
     root = mna_root()
-
     greek_path = root / "data" / "g-tokens" / book / f"{book}-{chapter}-{verse}.txt"
     morph_path = root / "data" / "MorphGNT" / f"{book}-morphgnt.txt"
     alignment_path = find_alignment_path(root, book, chapter, verse)
-
     if not greek_path.exists():
         raise FileNotFoundError(greek_path)
     if not morph_path.exists():
@@ -492,10 +310,7 @@ def build_verse(book: str, chapter: str, verse: str) -> list[dict[str, Any]]:
     alignment = read_alignment(alignment_path)
 
     if len(tokens) != len(morph):
-        raise ValueError(
-            f"Token/morph count mismatch for {book} {chapter}:{verse}: "
-            f"tokens={len(tokens)} morph={len(morph)}"
-        )
+        raise ValueError(f"Token/morph count mismatch for {book} {chapter}:{verse}: tokens={len(tokens)} morph={len(morph)}")
 
     finite_indexes = [idx for idx, row in morph.items() if is_finite(row["code"])]
     records: list[dict[str, Any]] = []
@@ -505,41 +320,18 @@ def build_verse(book: str, chapter: str, verse: str) -> list[dict[str, Any]]:
         morph_row = morph.get(idx)
         if not morph_row:
             continue
-
         if normalize_greek(token["token"]) != normalize_greek(morph_row["greek"]):
-            raise ValueError(
-                f"Greek/morph mismatch at {book} {chapter}:{verse} token {idx}: "
-                f"{token['token']} != {morph_row['greek']}"
-            )
-
+            raise ValueError(f"Greek/morph mismatch at {book} {chapter}:{verse} token {idx}: {token['token']} != {morph_row['greek']}")
         if not is_finite(morph_row["code"]):
             continue
-
-        subject = recover_subject(tokens, morph, idx, finite_indexes)
+        subject = recover_subject(morph, idx, finite_indexes)
         subordination = detect_subordination(tokens, idx, finite_indexes)
-
-        records.append(build_record(
-            book=book,
-            chapter=chapter,
-            verse=verse,
-            predication_number=len(records) + 1,
-            token=token,
-            morph_row=morph_row,
-            subject=subject,
-            subordination=subordination,
-            alignment=alignment.get(idx),
-        ))
-
+        records.append(build_record(book, chapter, verse, len(records) + 1, token, morph_row, subject, subordination, alignment.get(idx)))
     return records
 
 
-# -----------------------------------------------------------------------------
-# JSONL writer and CLI
-# -----------------------------------------------------------------------------
-
 def write_jsonl(records: list[dict[str, Any]], output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-
     with output_path.open("w", encoding="utf-8") as f:
         for record in records:
             f.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
@@ -547,26 +339,13 @@ def write_jsonl(records: list[dict[str, Any]], output_path: Path) -> None:
 
 def main() -> None:
     if len(sys.argv) not in {4, 5}:
-        print(
-            "Usage:\n"
-            "  python3 scripts/roots_build_predications.py 1corintios <chapter> <verse> [output.jsonl]\n"
-            "\nExample:\n"
-            "  python3 scripts/roots_build_predications.py 1corintios 1 10",
-            file=sys.stderr,
-        )
+        print("Usage:\n  python3 MNA/scripts/roots_build_predications.py 1corintios <chapter> <verse> [output.jsonl]", file=sys.stderr)
         sys.exit(2)
-
     book = sys.argv[1].lower()
     chapter = str(int(sys.argv[2]))
     verse = str(int(sys.argv[3]))
-
     records = build_verse(book, chapter, verse)
-
-    if len(sys.argv) == 5:
-        output_path = Path(sys.argv[4])
-    else:
-        output_path = mna_root() / "data" / "predications" / f"{book}-{chapter}-{verse}.jsonl"
-
+    output_path = Path(sys.argv[4]) if len(sys.argv) == 5 else mna_root() / "data" / "predications" / f"{book}-{chapter}-{verse}.jsonl"
     write_jsonl(records, output_path)
     print(f"WROTE {len(records)} predication candidate(s): {output_path}")
 
