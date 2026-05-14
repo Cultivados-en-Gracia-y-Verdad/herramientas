@@ -1,309 +1,501 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 
 """
-ROOTS — Independent Predication Dataset
+ROOTS — finite predication candidate builder
 
-PURPOSE
--------
-Build machine-readable finite predication candidates from
-Greek token + MorphGNT datasets.
+This is the first machine-readable ROOTS dataset stage.
 
-THIS SCRIPT DOES:
-- detect finite verbs
-- recover subject source
-- recover conservative predicate spans
-- detect explicit subordination markers
-- emit machine-readable predication records
+Scope for this stage:
+- verse-based, not book-based
+- built from existing MNA repository files
+- no generic input.tsv interface
+- no topology
+- no Paso 5 / Paso 6 reconstruction
+- no human-readable rendering
 
-THIS SCRIPT DOES NOT:
-- infer topology
-- infer discourse trees
-- infer Paso 5
-- infer Paso 6
-- infer hierarchy
-- infer ownership
-- infer semantics
+Usage from MNA directory:
+    python3 scripts/roots_build_predications.py 1corintios 1 10
 
-OUTPUT
-------
-JSONL
-(one predication candidate per line)
+Usage from repository root:
+    python3 MNA/scripts/roots_build_predications.py 1corintios 1 10
 
-INPUT TSV
----------
-Required columns:
-
-BOOK
-CH
-VS
-TOKEN_ID
-GREEK
-LEMMA
-MORPH
+Default output:
+    MNA/data/predications/1corintios-1-10.jsonl
 """
 
 import csv
 import json
+import re
 import sys
-from collections import defaultdict
-
-
-FINITE_CODES = {
-    "PAI", "PMI", "PPI",
-    "IAI", "IMI", "IPI",
-    "FAI", "FMI", "FPI",
-    "AAI", "AMI", "API",
-    "AAS", "AMS", "APS",
-    "RAI", "RMI", "RPI",
-    "LAI"
-}
+import unicodedata
+from pathlib import Path
+from typing import Any
 
 
 SUBORDINATORS = {
-    "ἵνα",
-    "εἰ",
-    "ἐάν",
-    "ὅτι",
-    "ὡς",
-    "ὅταν",
-    "ἐπειδή",
-    "καθώς",
-    "πρίν"
+    "ει",
+    "εαν",
+    "ινα",
+    "οτι",
+    "οταν",
+    "οτε",
+    "οπως",
+    "ως",
+    "ωστε",
+    "επει",
+    "επειδη",
+    "καθως",
+    "πριν",
 }
 
 
-def load_tsv(path):
-
-    verses = defaultdict(list)
-
-    with open(path, encoding="utf-8") as f:
-
-        reader = csv.DictReader(f, delimiter="\t")
-
-        for row in reader:
-
-            key = (
-                row["BOOK"],
-                row["CH"],
-                row["VS"]
-            )
-
-            verses[key].append(row)
-
-    return verses
+CASE_CODE_INDEX = 0
+NUMBER_CODE_INDEX = 1
+GENDER_CODE_INDEX = 2
 
 
-def is_finite_verb(morph):
-
-    if not morph.startswith("V-"):
-        return False
-
-    parts = morph.split("-")
-
-    if len(parts) < 2:
-        return False
-
-    return parts[1] in FINITE_CODES
+def normalize_greek(token: str) -> str:
+    token = re.sub(r"[·.,;:!?¿¡⸀⸂⸃()\[\]«»“”\"'—]", "", token).lower()
+    token = unicodedata.normalize("NFD", token)
+    token = "".join(ch for ch in token if unicodedata.category(ch) != "Mn")
+    return token.strip()
 
 
-def parse_person_number(morph):
-
-    parts = morph.split("-")
-
-    if len(parts) < 3:
-        return None, None
-
-    pn = parts[2]
-
-    if len(pn) != 2:
-        return None, None
-
-    return pn[0], pn[1]
+def mna_root() -> Path:
+    return Path(__file__).resolve().parents[1]
 
 
-def is_nominative(morph):
+def read_tokens(path: Path) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
 
-    parts = morph.split("-")
+    with path.open(encoding="utf-8") as f:
+        for lineno, line in enumerate(f, start=1):
+            line = line.rstrip("\n")
+            if not line.strip():
+                continue
 
-    if len(parts) < 3:
-        return False
+            if "\t" in line:
+                idx, text = line.split("\t", 1)
+            else:
+                parts = line.split(maxsplit=1)
+                if len(parts) != 2:
+                    raise ValueError(f"{path}:{lineno}: expected IDX<TAB>TOKEN")
+                idx, text = parts
 
-    final = parts[-1]
+            if not idx.strip().isdigit():
+                raise ValueError(f"{path}:{lineno}: invalid token index {idx!r}")
 
-    if len(final) < 1:
-        return False
+            rows.append({
+                "idx": idx.strip().zfill(2),
+                "token": text.strip(),
+            })
 
-    return final[0] == "N"
+    return rows
 
 
-def recover_subject(tokens, verb_index, person, number):
+def read_alignment(path: Path) -> dict[str, dict[str, str]]:
+    with path.open(encoding="utf-8") as f:
+        rows = list(csv.DictReader(f, delimiter="\t"))
 
-    WINDOW = 6
+    required = {"BOOK", "CH", "VS", "G_IDX", "GREEK", "NBLA_IDX", "NBLA_TEXT", "ALIGNMENT"}
+    if not rows:
+        return {}
 
-    start = max(0, verb_index - WINDOW)
-    end = min(len(tokens), verb_index + WINDOW + 1)
+    missing = required - set(rows[0].keys())
+    if missing:
+        raise ValueError(f"{path}: missing columns: {', '.join(sorted(missing))}")
 
-    nearby = tokens[start:end]
+    return {row["G_IDX"].zfill(2): row for row in rows}
 
-    for tok in nearby:
 
-        morph = tok["MORPH"]
+def morph_ref_code(book: str, chapter: str, verse: str) -> str:
+    # MorphGNT references use a two-digit book code at the front.
+    # For this phase we are explicitly working from 1corintios.
+    book_codes = {
+        "1corintios": "07",
+    }
 
-        if is_nominative(morph):
+    if book not in book_codes:
+        raise ValueError(
+            f"No MorphGNT book code configured for {book!r}. "
+            "This first predication pass is intentionally limited."
+        )
 
-            return {
-                "subject_type": "explicit",
-                "subject_token": int(tok["TOKEN_ID"]),
-                "subject_form": tok["GREEK"],
-                "subject_lemma": tok["LEMMA"],
-                "subject_morph": morph,
-                "subject_confidence": "medium"
+    return f"{book_codes[book]}{int(chapter):02d}{int(verse):02d}"
+
+
+def read_morph_for_verse(path: Path, book: str, chapter: str, verse: str) -> dict[str, dict[str, str]]:
+    wanted = morph_ref_code(book, chapter, verse)
+    rows: dict[str, dict[str, str]] = {}
+    counter = 0
+
+    with path.open(encoding="utf-8") as f:
+        for raw in f:
+            line = raw.strip()
+            if not line:
+                continue
+
+            parts = line.split()
+            if len(parts) < 6:
+                continue
+
+            ref_code = parts[0]
+            if ref_code != wanted:
+                continue
+
+            counter += 1
+            idx = f"{counter:02d}"
+            pos = parts[1]
+            morph = parts[2]
+            greek = parts[3]
+            lemma = parts[-1]
+            code = f"{pos}{morph}"
+
+            rows[idx] = {
+                "idx": idx,
+                "ref_code": ref_code,
+                "pos": pos,
+                "morph": morph,
+                "code": code,
+                "greek": greek,
+                "lemma": lemma,
             }
 
-    if person and number:
+    return rows
 
+
+def compact_verb_code(code: str) -> str:
+    # MorphGNT verb code often looks like V-PAI-3S--.
+    # The finite test only needs V + tense/voice/mood + person/number.
+    cleaned = code.strip().replace("--", "-").strip("-")
+    parts = [p for p in cleaned.split("-") if p]
+
+    if len(parts) < 2 or parts[0] != "V":
+        return ""
+
+    if len(parts) >= 3:
+        return f"V-{parts[1]}-{parts[2]}"
+
+    return f"V-{parts[1]}"
+
+
+def is_finite(code: str) -> bool:
+    compact = compact_verb_code(code)
+    parts = compact.split("-")
+
+    if len(parts) != 3:
+        return False
+
+    tvm = parts[1]
+    person_number = parts[2]
+
+    if len(tvm) != 3:
+        return False
+
+    if tvm[2] not in {"I", "S", "M", "O", "D"}:
+        return False
+
+    if len(person_number) != 2:
+        return False
+
+    return person_number[0] in {"1", "2", "3"} and person_number[1] in {"S", "P"}
+
+
+def person_number(code: str) -> tuple[str | None, str | None]:
+    compact = compact_verb_code(code)
+    parts = compact.split("-")
+
+    if len(parts) != 3 or len(parts[2]) != 2:
+        return None, None
+
+    return parts[2][0], parts[2][1]
+
+
+def parse_case_number_gender(code: str) -> tuple[str | None, str | None, str | None]:
+    cleaned = code.strip().strip("-")
+    parts = [p for p in cleaned.split("-") if p]
+
+    if len(parts) < 2:
+        return None, None, None
+
+    ending = parts[-1].replace("-", "")
+    ending = ending.strip()
+
+    if len(ending) < 3:
+        return None, None, None
+
+    case = ending[CASE_CODE_INDEX]
+    number = ending[NUMBER_CODE_INDEX]
+    gender = ending[GENDER_CODE_INDEX]
+
+    return case, number, gender
+
+
+def is_nominative_candidate(code: str) -> bool:
+    if not code:
+        return False
+
+    # nouns, adjectives, articles, pronouns may carry nominative forms.
+    if not code.startswith(("N-", "A-", "RA", "RP", "RD", "RI", "RR", "D-", "T-")):
+        return False
+
+    case, _number, _gender = parse_case_number_gender(code)
+    return case == "N"
+
+
+def recover_subject(
+    tokens: list[dict[str, Any]],
+    morph: dict[str, dict[str, str]],
+    verb_idx: str,
+) -> dict[str, Any]:
+    verb_i = int(verb_idx)
+    verb_morph = morph[verb_idx]
+    person, number = person_number(verb_morph["code"])
+
+    # Strict first pass: only look backward before the finite verb.
+    # This avoids grabbing later nominatives as false subjects.
+    window_start = max(1, verb_i - 6)
+    explicit_candidates: list[dict[str, Any]] = []
+
+    for i in range(window_start, verb_i):
+        idx = f"{i:02d}"
+        m = morph.get(idx)
+        if not m:
+            continue
+
+        if is_nominative_candidate(m["code"]):
+            explicit_candidates.append({
+                "token": idx,
+                "form": m["greek"],
+                "lemma": m["lemma"],
+                "morph": m["code"],
+            })
+
+    if explicit_candidates:
+        selected = explicit_candidates[-1]
         return {
-            "subject_type": "implied",
+            "subject_status": "candidate",
+            "subject_source": "explicit_nominative_before_verb",
+            "subject_token": selected["token"],
+            "subject_person": None,
+            "subject_number": None,
+            "subject_candidates": explicit_candidates,
+        }
+
+    if person and number:
+        return {
+            "subject_status": "confirmed",
+            "subject_source": "finite_verb_morphology",
+            "subject_token": None,
             "subject_person": person,
             "subject_number": number,
-            "subject_confidence": "high"
+            "subject_candidates": [],
         }
 
     return {
-        "subject_type": "unresolved",
-        "subject_confidence": "low"
+        "subject_status": "unresolved",
+        "subject_source": None,
+        "subject_token": None,
+        "subject_person": None,
+        "subject_number": None,
+        "subject_candidates": [],
     }
 
 
-def detect_subordination(tokens, verb_index):
+def detect_subordination(tokens: list[dict[str, Any]], verb_idx: str) -> dict[str, Any]:
+    verb_i = int(verb_idx)
+    start = max(1, verb_i - 4)
 
-    LOOKBACK = 3
+    markers = []
+    for i in range(start, verb_i):
+        idx = f"{i:02d}"
+        token = tokens[i - 1]["token"]
+        key = normalize_greek(token)
+        if key in SUBORDINATORS:
+            markers.append({"token": idx, "form": token, "key": key})
 
-    start = max(0, verb_index - LOOKBACK)
-
-    for i in range(start, verb_index):
-
-        tok = tokens[i]["GREEK"]
-
-        if tok in SUBORDINATORS:
-
-            return {
-                "subordinated": True,
-                "marker": tok,
-                "confidence": "high"
-            }
+    if markers:
+        return {
+            "subordination_status": "candidate",
+            "subordination_source": "explicit_marker_before_finite_verb",
+            "subordination_markers": markers,
+        }
 
     return {
-        "subordinated": False,
-        "marker": None,
-        "confidence": "low"
+        "subordination_status": "not_detected",
+        "subordination_source": None,
+        "subordination_markers": [],
     }
 
 
-def recover_predicate_span(tokens, verb_index):
+def find_alignment_path(root: Path, book: str, chapter: str, verse: str) -> Path:
+    data = root / "data"
+    filename = f"{book}-{chapter}-{verse}.tsv"
 
-    start = max(0, verb_index - 2)
-    end = min(len(tokens) - 1, verb_index + 2)
+    candidates = [
+        data / "alignments" / filename,
+        data / "alignments" / book / filename,
+        data / "alignments" / book / chapter / filename,
+        data / "alignments" / book / chapter / f"{verse}.tsv",
+    ]
 
-    return start, end
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+
+    matches = sorted((data / "alignments").glob(f"**/{filename}"))
+    if matches:
+        return matches[0]
+
+    raise FileNotFoundError(
+        "Could not find alignment TSV. Tried:\n" +
+        "\n".join(str(c) for c in candidates)
+    )
 
 
-def main():
+def build_record(
+    book: str,
+    chapter: str,
+    verse: str,
+    predication_number: int,
+    token: dict[str, Any],
+    morph_row: dict[str, str],
+    subject: dict[str, Any],
+    subordination: dict[str, Any],
+    alignment: dict[str, str] | None,
+) -> dict[str, Any]:
+    finite_idx = token["idx"]
 
-    if len(sys.argv) != 3:
+    if subordination["subordination_status"] == "candidate":
+        independence_status = "unresolved"
+    else:
+        independence_status = "candidate"
 
-        print(
-            "usage:\n"
-            "python3 roots_build_predications.py input.tsv output.jsonl"
+    return {
+        "predication_id": f"{book}-{chapter}-{verse}-P{predication_number:02d}",
+        "book": book,
+        "chapter": int(chapter),
+        "verse": int(verse),
+        "g_idx": finite_idx,
+        "finite_verb": token["token"],
+        "finite_lemma": morph_row["lemma"],
+        "finite_morphgnt": morph_row["code"],
+        "finite_compact": compact_verb_code(morph_row["code"]),
+        "nbla_idx": alignment.get("NBLA_IDX") if alignment else None,
+        "nbla_text": alignment.get("NBLA_TEXT") if alignment else None,
+        "subject": subject,
+        "predicate": {
+            "predicate_status": "candidate",
+            "predicate_source": "finite_verb_anchor_only",
+            "predicate_g_start": finite_idx,
+            "predicate_g_end": finite_idx,
+        },
+        "independence": {
+            "independence_status": independence_status,
+            "independence_source": "subordination_marker_scan_only",
+        },
+        "subordination": subordination,
+        "certainty": {
+            "finite_verb": "confirmed",
+            "predication": "candidate",
+            "independence": independence_status,
+        },
+    }
+
+
+def build_verse(book: str, chapter: str, verse: str) -> list[dict[str, Any]]:
+    root = mna_root()
+
+    greek_path = root / "data" / "g-tokens" / f"{book}-{chapter}-{verse}.txt"
+    morph_path = root / "data" / "MorphGNT" / f"{book}-morphgnt.txt"
+    alignment_path = find_alignment_path(root, book, chapter, verse)
+
+    if not greek_path.exists():
+        raise FileNotFoundError(greek_path)
+
+    if not morph_path.exists():
+        raise FileNotFoundError(morph_path)
+
+    tokens = read_tokens(greek_path)
+    morph = read_morph_for_verse(morph_path, book, chapter, verse)
+    alignment = read_alignment(alignment_path)
+
+    if len(tokens) != len(morph):
+        raise ValueError(
+            f"Token/morph count mismatch for {book} {chapter}:{verse}: "
+            f"tokens={len(tokens)} morph={len(morph)}"
         )
 
-        sys.exit(1)
+    records: list[dict[str, Any]] = []
 
-    input_path = sys.argv[1]
-    output_path = sys.argv[2]
+    for token in tokens:
+        idx = token["idx"]
+        morph_row = morph.get(idx)
 
-    verses = load_tsv(input_path)
+        if not morph_row:
+            continue
 
-    predication_counter = 1
+        if normalize_greek(token["token"]) != normalize_greek(morph_row["greek"]):
+            raise ValueError(
+                f"Greek/morph mismatch at {book} {chapter}:{verse} token {idx}: "
+                f"{token['token']} != {morph_row['greek']}"
+            )
 
-    with open(output_path, "w", encoding="utf-8") as out:
+        if not is_finite(morph_row["code"]):
+            continue
 
-        for ref, tokens in verses.items():
+        subject = recover_subject(tokens, morph, idx)
+        subordination = detect_subordination(tokens, idx)
 
-            book, ch, vs = ref
+        records.append(build_record(
+            book=book,
+            chapter=chapter,
+            verse=verse,
+            predication_number=len(records) + 1,
+            token=token,
+            morph_row=morph_row,
+            subject=subject,
+            subordination=subordination,
+            alignment=alignment.get(idx),
+        ))
 
-            for i, tok in enumerate(tokens):
+    return records
 
-                morph = tok["MORPH"]
 
-                if not is_finite_verb(morph):
-                    continue
+def write_jsonl(records: list[dict[str, Any]], output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
-                person, number = parse_person_number(morph)
+    with output_path.open("w", encoding="utf-8") as f:
+        for record in records:
+            f.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
 
-                subject = recover_subject(
-                    tokens,
-                    i,
-                    person,
-                    number
-                )
 
-                subordination = detect_subordination(
-                    tokens,
-                    i
-                )
+def main() -> None:
+    if len(sys.argv) not in {4, 5}:
+        print(
+            "Usage:\n"
+            "  python3 scripts/roots_build_predications.py 1corintios <chapter> <verse> [output.jsonl]\n"
+            "\nExample:\n"
+            "  python3 scripts/roots_build_predications.py 1corintios 1 10",
+            file=sys.stderr,
+        )
+        sys.exit(2)
 
-                span_start, span_end = recover_predicate_span(
-                    tokens,
-                    i
-                )
+    book = sys.argv[1].lower()
+    chapter = str(int(sys.argv[2]))
+    verse = str(int(sys.argv[3]))
 
-                record = {
+    records = build_verse(book, chapter, verse)
 
-                    "predication_id":
-                        f"P{predication_counter:06d}",
+    if len(sys.argv) == 5:
+        output_path = Path(sys.argv[4])
+    else:
+        output_path = mna_root() / "data" / "predications" / f"{book}-{chapter}-{verse}.jsonl"
 
-                    "book": book,
-                    "chapter": int(ch),
-                    "verse": int(vs),
+    write_jsonl(records, output_path)
 
-                    "finite_verb_token":
-                        int(tok["TOKEN_ID"]),
-
-                    "finite_verb":
-                        tok["GREEK"],
-
-                    "finite_lemma":
-                        tok["LEMMA"],
-
-                    "finite_morph":
-                        morph,
-
-                    **subject,
-
-                    "predicate_token_start":
-                        int(tokens[span_start]["TOKEN_ID"]),
-
-                    "predicate_token_end":
-                        int(tokens[span_end]["TOKEN_ID"]),
-
-                    "independence_status":
-                        "candidate",
-
-                    "subordination":
-                        subordination,
-
-                    "confidence": "medium"
-                }
-
-                out.write(
-                    json.dumps(
-                        record,
-                        ensure_ascii=False
-                    ) + "\n"
-                )
-
-                predication_counter += 1
+    print(f"WROTE {len(records)} predication candidate(s): {output_path}")
 
 
 if __name__ == "__main__":
