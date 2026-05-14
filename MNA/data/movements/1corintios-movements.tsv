@@ -1,0 +1,1019 @@
+stream_index	book	chapter	verse	predication_id	previous_predication_id	finite_verb	finite_compact	subject_person	subject_number	continuity_status	independence_status	subordination_status	movement_status	movement_reason_count	movement_reasons
+1	1corintios	1	4	1corintios-1-4-P01		εὐχαριστῶ	V-PAI-1S	1	S		candidate	not_detected	strong	1	"[""stream_start""]"
+2	1corintios	1	5	1corintios-1-5-P01	1corintios-1-4-P01	ἐπλουτίσθητε	V-API-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+3	1corintios	1	6	1corintios-1-6-P01	1corintios-1-5-P01	ἐβεβαιώθη	V-API-3S	2	P		unresolved	candidate	none	0	[]
+4	1corintios	1	8	1corintios-1-8-P01	1corintios-1-6-P01	βεβαιώσει	V-FAI-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+5	1corintios	1	9	1corintios-1-9-P01	1corintios-1-8-P01	ἐκλήθητε	V-API-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+6	1corintios	1	10	1corintios-1-10-P01	1corintios-1-9-P01	παρακαλῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+7	1corintios	1	10	1corintios-1-10-P02	1corintios-1-10-P01	λέγητε	V-PAS-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+8	1corintios	1	10	1corintios-1-10-P03	1corintios-1-10-P02	ᾖ	V-PAS-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+9	1corintios	1	10	1corintios-1-10-P04	1corintios-1-10-P03	ἦτε	V-PAS-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+10	1corintios	1	11	1corintios-1-11-P01	1corintios-1-10-P04	ἐδηλώθη	V-API-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+11	1corintios	1	11	1corintios-1-11-P02	1corintios-1-11-P01	εἰσιν	V-PAI-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+12	1corintios	1	12	1corintios-1-12-P01	1corintios-1-11-P02	λέγω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+13	1corintios	1	12	1corintios-1-12-P02	1corintios-1-12-P01	λέγει	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+14	1corintios	1	12	1corintios-1-12-P03	1corintios-1-12-P02	εἰμι	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+15	1corintios	1	13	1corintios-1-13-P01	1corintios-1-12-P03	μεμέρισται	V-XPI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+16	1corintios	1	13	1corintios-1-13-P02	1corintios-1-13-P01	ἐσταυρώθη	V-API-3S	3	S		candidate	not_detected	none	0	[]
+17	1corintios	1	13	1corintios-1-13-P03	1corintios-1-13-P02	ἐβαπτίσθητε	V-API-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+18	1corintios	1	14	1corintios-1-14-P01	1corintios-1-13-P03	εὐχαριστῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+19	1corintios	1	14	1corintios-1-14-P02	1corintios-1-14-P01	ἐβάπτισα	V-AAI-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+20	1corintios	1	15	1corintios-1-15-P01	1corintios-1-14-P02	εἴπῃ	V-AAS-3S	1	S		unresolved	candidate	none	0	[]
+21	1corintios	1	15	1corintios-1-15-P02	1corintios-1-15-P01	ἐβαπτίσθητε	V-API-2P	2	P		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+22	1corintios	1	16	1corintios-1-16-P01	1corintios-1-15-P02	ἐβάπτισα	V-AAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+23	1corintios	1	16	1corintios-1-16-P02	1corintios-1-16-P01	οἶδα	V-XAI-1S	1	S		candidate	not_detected	none	0	[]
+24	1corintios	1	16	1corintios-1-16-P03	1corintios-1-16-P02	ἐβάπτισα	V-AAI-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+25	1corintios	1	17	1corintios-1-17-P01	1corintios-1-16-P03	ἀπέστειλέν	V-AAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+26	1corintios	1	17	1corintios-1-17-P02	1corintios-1-17-P01	κενωθῇ	V-APS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+27	1corintios	1	18	1corintios-1-18-P01	1corintios-1-17-P02	ἐστίν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+28	1corintios	1	18	1corintios-1-18-P02	1corintios-1-18-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+29	1corintios	1	19	1corintios-1-19-P01	1corintios-1-18-P02	γέγραπται	V-XPI-3S	3	S		candidate	not_detected	none	0	[]
+30	1corintios	1	19	1corintios-1-19-P02	1corintios-1-19-P01	ἀπολῶ	V-FAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+31	1corintios	1	19	1corintios-1-19-P03	1corintios-1-19-P02	ἀθετήσω	V-FAI-1S	1	S		candidate	not_detected	none	0	[]
+32	1corintios	1	20	1corintios-1-20-P01	1corintios-1-19-P03	ἐμώρανεν	V-AAI-3S	1	S		candidate	not_detected	none	0	[]
+33	1corintios	1	21	1corintios-1-21-P01	1corintios-1-20-P01	ἔγνω	V-AAI-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+34	1corintios	1	21	1corintios-1-21-P02	1corintios-1-21-P01	εὐδόκησεν	V-AAI-3S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+35	1corintios	1	22	1corintios-1-22-P01	1corintios-1-21-P02	αἰτοῦσιν	V-PAI-3P	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+36	1corintios	1	22	1corintios-1-22-P02	1corintios-1-22-P01	ζητοῦσιν	V-PAI-3P	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+37	1corintios	1	23	1corintios-1-23-P01	1corintios-1-22-P02	κηρύσσομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	1	"[""number_change""]"
+38	1corintios	1	25	1corintios-1-25-P01	1corintios-1-23-P01	ἐστίν	V-PAI-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+39	1corintios	1	26	1corintios-1-26-P01	1corintios-1-25-P01	βλέπετε	V-PAI-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+40	1corintios	1	27	1corintios-1-27-P01	1corintios-1-26-P01	ἐξελέξατο	V-AMI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+41	1corintios	1	27	1corintios-1-27-P02	1corintios-1-27-P01	καταισχύνῃ	V-PAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+42	1corintios	1	27	1corintios-1-27-P03	1corintios-1-27-P02	ἐξελέξατο	V-AMI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+43	1corintios	1	27	1corintios-1-27-P04	1corintios-1-27-P03	καταισχύνῃ	V-PAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+44	1corintios	1	28	1corintios-1-28-P01	1corintios-1-27-P04	ἐξελέξατο	V-AMI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+45	1corintios	1	28	1corintios-1-28-P02	1corintios-1-28-P01	καταργήσῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+46	1corintios	1	29	1corintios-1-29-P01	1corintios-1-28-P02	καυχήσηται	V-AMS-3S	3	S		unresolved	candidate	none	0	[]
+47	1corintios	1	30	1corintios-1-30-P01	1corintios-1-29-P01	ἐστε	V-PAI-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+48	1corintios	1	30	1corintios-1-30-P02	1corintios-1-30-P01	ἐγενήθη	V-API-3S	2	P		candidate	not_detected	none	0	[]
+49	1corintios	1	31	1corintios-1-31-P01	1corintios-1-30-P02	γέγραπται	V-XPI-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+50	1corintios	1	31	1corintios-1-31-P02	1corintios-1-31-P01	καυχάσθω	V-PMD-3S	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+51	1corintios	2	1	1corintios-2-1-P01	1corintios-1-31-P02	ἦλθον	V-AAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+52	1corintios	2	2	1corintios-2-2-P01	1corintios-2-1-P01	ἔκρινά	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+53	1corintios	2	3	1corintios-2-3-P01	1corintios-2-2-P01	ἐγενόμην	V-AMI-1S	1	S		candidate	not_detected	none	0	[]
+54	1corintios	2	5	1corintios-2-5-P01	1corintios-2-3-P01	ᾖ	V-PAS-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+55	1corintios	2	6	1corintios-2-6-P01	1corintios-2-5-P01	λαλοῦμεν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+56	1corintios	2	7	1corintios-2-7-P01	1corintios-2-6-P01	λαλοῦμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+57	1corintios	2	7	1corintios-2-7-P02	1corintios-2-7-P01	προώρισεν	V-AAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+58	1corintios	2	8	1corintios-2-8-P01	1corintios-2-7-P02	ἔγνωκεν	V-XAI-3S	3	S		candidate	not_detected	none	0	[]
+59	1corintios	2	8	1corintios-2-8-P02	1corintios-2-8-P01	ἔγνωσαν	V-AAI-3P	3	P		unresolved	candidate	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+60	1corintios	2	8	1corintios-2-8-P03	1corintios-2-8-P02	ἐσταύρωσαν	V-AAI-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+61	1corintios	2	9	1corintios-2-9-P01	1corintios-2-8-P03	γέγραπται	V-XPI-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+62	1corintios	2	9	1corintios-2-9-P02	1corintios-2-9-P01	εἶδεν	V-AAI-3S	3	P		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+63	1corintios	2	9	1corintios-2-9-P03	1corintios-2-9-P02	ἤκουσεν	V-AAI-3S	3	P		candidate	not_detected	none	0	[]
+64	1corintios	2	9	1corintios-2-9-P04	1corintios-2-9-P03	ἀνέβη	V-AAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+65	1corintios	2	9	1corintios-2-9-P05	1corintios-2-9-P04	ἡτοίμασεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+66	1corintios	2	10	1corintios-2-10-P01	1corintios-2-9-P05	ἀπεκάλυψεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+67	1corintios	2	10	1corintios-2-10-P02	1corintios-2-10-P01	ἐραυνᾷ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+68	1corintios	2	11	1corintios-2-11-P01	1corintios-2-10-P02	οἶδεν	V-XAI-3S	3	S		candidate	not_detected	none	0	[]
+69	1corintios	2	11	1corintios-2-11-P02	1corintios-2-11-P01	ἔγνωκεν	V-XAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+70	1corintios	2	12	1corintios-2-12-P01	1corintios-2-11-P02	ἐλάβομεν	V-AAI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+71	1corintios	2	12	1corintios-2-12-P02	1corintios-2-12-P01	εἰδῶμεν	V-XAS-1P	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+72	1corintios	2	13	1corintios-2-13-P01	1corintios-2-12-P02	λαλοῦμεν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+73	1corintios	2	14	1corintios-2-14-P01	1corintios-2-13-P01	δέχεται	V-PMI-3S	1	P		candidate	not_detected	none	0	[]
+74	1corintios	2	14	1corintios-2-14-P02	1corintios-2-14-P01	ἐστίν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+75	1corintios	2	14	1corintios-2-14-P03	1corintios-2-14-P02	δύναται	V-PMI-3S	3	S		candidate	not_detected	none	0	[]
+76	1corintios	2	14	1corintios-2-14-P04	1corintios-2-14-P03	ἀνακρίνεται	V-PPI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+77	1corintios	2	15	1corintios-2-15-P01	1corintios-2-14-P04	ἀνακρίνει	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+78	1corintios	2	15	1corintios-2-15-P02	1corintios-2-15-P01	ἀνακρίνεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+79	1corintios	2	16	1corintios-2-16-P01	1corintios-2-15-P02	ἔγνω	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+80	1corintios	2	16	1corintios-2-16-P02	1corintios-2-16-P01	συμβιβάσει	V-FAI-3S	3	S		candidate	not_detected	none	0	[]
+81	1corintios	2	16	1corintios-2-16-P03	1corintios-2-16-P02	ἔχομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+82	1corintios	3	1	1corintios-3-1-P01	1corintios-2-16-P03	ἠδυνήθην	V-API-1S	1	S		candidate	not_detected	candidate	1	"[""number_change""]"
+83	1corintios	3	2	1corintios-3-2-P01	1corintios-3-1-P01	ἐπότισα	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+84	1corintios	3	2	1corintios-3-2-P02	1corintios-3-2-P01	ἐδύνασθε	V-IMI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+85	1corintios	3	2	1corintios-3-2-P03	1corintios-3-2-P02	δύνασθε	V-PMI-2P	2	P		candidate	not_detected	none	0	[]
+86	1corintios	3	3	1corintios-3-3-P01	1corintios-3-2-P03	ἐστε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+87	1corintios	3	3	1corintios-3-3-P02	1corintios-3-3-P01	ἐστε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+88	1corintios	3	3	1corintios-3-3-P03	1corintios-3-3-P02	περιπατεῖτε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+89	1corintios	3	4	1corintios-3-4-P01	1corintios-3-3-P03	λέγῃ	V-PAS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+90	1corintios	3	4	1corintios-3-4-P02	1corintios-3-4-P01	εἰμι	V-PAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+91	1corintios	3	4	1corintios-3-4-P03	1corintios-3-4-P02	ἐστε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+92	1corintios	3	5	1corintios-3-5-P01	1corintios-3-4-P03	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+93	1corintios	3	5	1corintios-3-5-P02	1corintios-3-5-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+94	1corintios	3	5	1corintios-3-5-P03	1corintios-3-5-P02	ἐπιστεύσατε	V-AAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+95	1corintios	3	5	1corintios-3-5-P04	1corintios-3-5-P03	ἔδωκεν	V-AAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+96	1corintios	3	6	1corintios-3-6-P01	1corintios-3-5-P04	ἐφύτευσα	V-AAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+97	1corintios	3	6	1corintios-3-6-P02	1corintios-3-6-P01	ἐπότισεν	V-AAI-3S	1	S		candidate	not_detected	none	0	[]
+98	1corintios	3	6	1corintios-3-6-P03	1corintios-3-6-P02	ηὔξανεν	V-IAI-3S	1	S		candidate	not_detected	none	0	[]
+99	1corintios	3	7	1corintios-3-7-P01	1corintios-3-6-P03	ἐστίν	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+100	1corintios	3	8	1corintios-3-8-P01	1corintios-3-7-P01	εἰσιν	V-PAI-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+101	1corintios	3	8	1corintios-3-8-P02	1corintios-3-8-P01	λήμψεται	V-FMI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+102	1corintios	3	9	1corintios-3-9-P01	1corintios-3-8-P02	ἐσμεν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+103	1corintios	3	9	1corintios-3-9-P02	1corintios-3-9-P01	ἐστε	V-PAI-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+104	1corintios	3	10	1corintios-3-10-P01	1corintios-3-9-P02	ἔθηκα	V-AAI-1S	1	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+105	1corintios	3	10	1corintios-3-10-P02	1corintios-3-10-P01	ἐποικοδομεῖ	V-PAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+106	1corintios	3	10	1corintios-3-10-P03	1corintios-3-10-P02	βλεπέτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+107	1corintios	3	10	1corintios-3-10-P04	1corintios-3-10-P03	ἐποικοδομεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+108	1corintios	3	11	1corintios-3-11-P01	1corintios-3-10-P04	δύναται	V-PMI-3S	3	S		candidate	not_detected	none	0	[]
+109	1corintios	3	11	1corintios-3-11-P02	1corintios-3-11-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+110	1corintios	3	12	1corintios-3-12-P01	1corintios-3-11-P02	ἐποικοδομεῖ	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+111	1corintios	3	13	1corintios-3-13-P01	1corintios-3-12-P01	γενήσεται	V-FMI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+112	1corintios	3	13	1corintios-3-13-P02	1corintios-3-13-P01	δηλώσει	V-FAI-3S	3	S		candidate	not_detected	none	0	[]
+113	1corintios	3	13	1corintios-3-13-P03	1corintios-3-13-P02	ἀποκαλύπτεται	V-PPI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+114	1corintios	3	13	1corintios-3-13-P04	1corintios-3-13-P03	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+115	1corintios	3	13	1corintios-3-13-P05	1corintios-3-13-P04	δοκιμάσει	V-FAI-3S	3	S		candidate	not_detected	none	0	[]
+116	1corintios	3	14	1corintios-3-14-P01	1corintios-3-13-P05	μενεῖ	V-FAI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+117	1corintios	3	14	1corintios-3-14-P02	1corintios-3-14-P01	ἐποικοδόμησεν	V-AAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+118	1corintios	3	14	1corintios-3-14-P03	1corintios-3-14-P02	λήμψεται	V-FMI-3S	3	S		candidate	not_detected	none	0	[]
+119	1corintios	3	15	1corintios-3-15-P01	1corintios-3-14-P03	κατακαήσεται	V-FPI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+120	1corintios	3	15	1corintios-3-15-P02	1corintios-3-15-P01	ζημιωθήσεται	V-FPI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+121	1corintios	3	15	1corintios-3-15-P03	1corintios-3-15-P02	σωθήσεται	V-FPI-3S	3	S		candidate	not_detected	none	0	[]
+122	1corintios	3	16	1corintios-3-16-P01	1corintios-3-15-P03	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+123	1corintios	3	16	1corintios-3-16-P02	1corintios-3-16-P01	ἐστε	V-PAI-2P	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+124	1corintios	3	16	1corintios-3-16-P03	1corintios-3-16-P02	οἰκεῖ	V-PAI-3S	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+125	1corintios	3	17	1corintios-3-17-P01	1corintios-3-16-P03	φθείρει	V-PAI-3S	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+126	1corintios	3	17	1corintios-3-17-P02	1corintios-3-17-P01	φθερεῖ	V-FAI-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+127	1corintios	3	17	1corintios-3-17-P03	1corintios-3-17-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+128	1corintios	3	17	1corintios-3-17-P04	1corintios-3-17-P03	ἐστε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+129	1corintios	3	18	1corintios-3-18-P01	1corintios-3-17-P04	ἐξαπατάτω	V-PAD-3S	2	P		candidate	not_detected	none	0	[]
+130	1corintios	3	18	1corintios-3-18-P02	1corintios-3-18-P01	δοκεῖ	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+131	1corintios	3	18	1corintios-3-18-P03	1corintios-3-18-P02	γενέσθω	V-AMD-3S	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+132	1corintios	3	18	1corintios-3-18-P04	1corintios-3-18-P03	γένηται	V-AMS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+133	1corintios	3	19	1corintios-3-19-P01	1corintios-3-18-P04	ἐστιν	V-PAI-3S	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+134	1corintios	3	19	1corintios-3-19-P02	1corintios-3-19-P01	γέγραπται	V-XPI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+135	1corintios	3	20	1corintios-3-20-P01	1corintios-3-19-P02	γινώσκει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+136	1corintios	3	20	1corintios-3-20-P02	1corintios-3-20-P01	εἰσὶν	V-PAI-3P	3	P		unresolved	candidate	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+137	1corintios	3	21	1corintios-3-21-P01	1corintios-3-20-P02	καυχάσθω	V-PMD-3S	3	P		unresolved	candidate	none	0	[]
+138	1corintios	3	21	1corintios-3-21-P02	1corintios-3-21-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+139	1corintios	4	1	1corintios-4-1-P01	1corintios-3-21-P02	λογιζέσθω	V-PMD-3S	3	S		candidate	not_detected	none	0	[]
+140	1corintios	4	2	1corintios-4-2-P01	1corintios-4-1-P01	ζητεῖται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+141	1corintios	4	2	1corintios-4-2-P02	1corintios-4-2-P01	εὑρεθῇ	V-APS-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+142	1corintios	4	3	1corintios-4-3-P01	1corintios-4-2-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+143	1corintios	4	3	1corintios-4-3-P02	1corintios-4-3-P01	ἀνακριθῶ	V-APS-1S	1	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+144	1corintios	4	3	1corintios-4-3-P03	1corintios-4-3-P02	ἀνακρίνω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+145	1corintios	4	4	1corintios-4-4-P01	1corintios-4-3-P03	σύνοιδα	V-XAI-1S	1	S		candidate	not_detected	none	0	[]
+146	1corintios	4	4	1corintios-4-4-P02	1corintios-4-4-P01	δεδικαίωμαι	V-XPI-1S	1	S		candidate	not_detected	none	0	[]
+147	1corintios	4	4	1corintios-4-4-P03	1corintios-4-4-P02	ἐστιν	V-PAI-3S	1	S		candidate	not_detected	none	0	[]
+148	1corintios	4	5	1corintios-4-5-P01	1corintios-4-4-P03	κρίνετε	V-PAD-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+149	1corintios	4	5	1corintios-4-5-P02	1corintios-4-5-P01	ἔλθῃ	V-AAS-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+150	1corintios	4	5	1corintios-4-5-P03	1corintios-4-5-P02	φωτίσει	V-FAI-3S	3	S		candidate	not_detected	none	0	[]
+151	1corintios	4	5	1corintios-4-5-P04	1corintios-4-5-P03	φανερώσει	V-FAI-3S	3	S		candidate	not_detected	none	0	[]
+152	1corintios	4	5	1corintios-4-5-P05	1corintios-4-5-P04	γενήσεται	V-FMI-3S	3	S		candidate	not_detected	none	0	[]
+153	1corintios	4	6	1corintios-4-6-P01	1corintios-4-5-P05	μετεσχημάτισα	V-AAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+154	1corintios	4	6	1corintios-4-6-P02	1corintios-4-6-P01	μάθητε	V-AAS-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+155	1corintios	4	6	1corintios-4-6-P03	1corintios-4-6-P02	γέγραπται	V-XPI-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+156	1corintios	4	6	1corintios-4-6-P04	1corintios-4-6-P03	φυσιοῦσθε	V-PPI-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+157	1corintios	4	7	1corintios-4-7-P01	1corintios-4-6-P04	διακρίνει	V-PAI-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+158	1corintios	4	7	1corintios-4-7-P02	1corintios-4-7-P01	ἔχεις	V-PAI-2S	2	S		candidate	not_detected	candidate	1	"[""person_change""]"
+159	1corintios	4	7	1corintios-4-7-P03	1corintios-4-7-P02	ἔλαβες	V-AAI-2S	2	S		candidate	not_detected	none	0	[]
+160	1corintios	4	7	1corintios-4-7-P04	1corintios-4-7-P03	ἔλαβες	V-AAI-2S	2	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+161	1corintios	4	7	1corintios-4-7-P05	1corintios-4-7-P04	καυχᾶσαι	V-PMI-2S	2	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+162	1corintios	4	8	1corintios-4-8-P01	1corintios-4-7-P05	ἐστέ	V-PAI-2P	2	P		candidate	not_detected	candidate	1	"[""number_change""]"
+163	1corintios	4	8	1corintios-4-8-P02	1corintios-4-8-P01	ἐπλουτήσατε	V-AAI-2P	2	P		candidate	not_detected	none	0	[]
+164	1corintios	4	8	1corintios-4-8-P03	1corintios-4-8-P02	ἐβασιλεύσατε	V-AAI-2P	2	P		candidate	not_detected	none	0	[]
+165	1corintios	4	8	1corintios-4-8-P04	1corintios-4-8-P03	ἐβασιλεύσατε	V-AAI-2P	2	P		candidate	not_detected	none	0	[]
+166	1corintios	4	8	1corintios-4-8-P05	1corintios-4-8-P04	συμβασιλεύσωμεν	V-AAS-1P	1	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+167	1corintios	4	9	1corintios-4-9-P01	1corintios-4-8-P05	δοκῶ	V-PAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+168	1corintios	4	9	1corintios-4-9-P02	1corintios-4-9-P01	ἀπέδειξεν	V-AAI-3S	1	S		candidate	not_detected	none	0	[]
+169	1corintios	4	9	1corintios-4-9-P03	1corintios-4-9-P02	ἐγενήθημεν	V-API-1P	1	P		unresolved	candidate	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+170	1corintios	4	11	1corintios-4-11-P01	1corintios-4-9-P03	πεινῶμεν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+171	1corintios	4	11	1corintios-4-11-P02	1corintios-4-11-P01	διψῶμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+172	1corintios	4	11	1corintios-4-11-P03	1corintios-4-11-P02	γυμνιτεύομεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+173	1corintios	4	11	1corintios-4-11-P04	1corintios-4-11-P03	κολαφιζόμεθα	V-PPI-1P	1	P		candidate	not_detected	none	0	[]
+174	1corintios	4	11	1corintios-4-11-P05	1corintios-4-11-P04	ἀστατοῦμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+175	1corintios	4	12	1corintios-4-12-P01	1corintios-4-11-P05	κοπιῶμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+176	1corintios	4	12	1corintios-4-12-P02	1corintios-4-12-P01	εὐλογοῦμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+177	1corintios	4	12	1corintios-4-12-P03	1corintios-4-12-P02	ἀνεχόμεθα	V-PMI-1P	1	P		candidate	not_detected	none	0	[]
+178	1corintios	4	13	1corintios-4-13-P01	1corintios-4-12-P03	παρακαλοῦμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+179	1corintios	4	13	1corintios-4-13-P02	1corintios-4-13-P01	ἐγενήθημεν	V-API-1P	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+180	1corintios	4	14	1corintios-4-14-P01	1corintios-4-13-P02	γράφω	V-PAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+181	1corintios	4	15	1corintios-4-15-P01	1corintios-4-14-P01	ἔχητε	V-PAS-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+182	1corintios	4	15	1corintios-4-15-P02	1corintios-4-15-P01	ἐγέννησα	V-AAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+183	1corintios	4	16	1corintios-4-16-P01	1corintios-4-15-P02	παρακαλῶ	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+184	1corintios	4	16	1corintios-4-16-P02	1corintios-4-16-P01	γίνεσθε	V-PMD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+185	1corintios	4	17	1corintios-4-17-P01	1corintios-4-16-P02	ἔπεμψα	V-AAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+186	1corintios	4	17	1corintios-4-17-P02	1corintios-4-17-P01	ἐστίν	V-PAI-3S	1	S		candidate	not_detected	none	0	[]
+187	1corintios	4	17	1corintios-4-17-P03	1corintios-4-17-P02	ἀναμνήσει	V-FAI-3S	1	S		candidate	not_detected	none	0	[]
+188	1corintios	4	17	1corintios-4-17-P04	1corintios-4-17-P03	διδάσκω	V-PAI-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+189	1corintios	4	18	1corintios-4-18-P01	1corintios-4-17-P04	ἐφυσιώθησάν	V-API-3P	3	P		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+190	1corintios	4	19	1corintios-4-19-P01	1corintios-4-18-P01	ἐλεύσομαι	V-FMI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+191	1corintios	4	19	1corintios-4-19-P02	1corintios-4-19-P01	θελήσῃ	V-AAS-3S	3	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+192	1corintios	4	19	1corintios-4-19-P03	1corintios-4-19-P02	γνώσομαι	V-FMI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+193	1corintios	4	21	1corintios-4-21-P01	1corintios-4-19-P03	θέλετε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+194	1corintios	4	21	1corintios-4-21-P02	1corintios-4-21-P01	ἔλθω	V-AAS-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+195	1corintios	5	1	1corintios-5-1-P01	1corintios-4-21-P02	ἀκούεται	V-PPI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+196	1corintios	5	2	1corintios-5-2-P01	1corintios-5-1-P01	ἐστέ	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+197	1corintios	5	2	1corintios-5-2-P02	1corintios-5-2-P01	ἐπενθήσατε	V-AAI-2P	2	P		candidate	not_detected	none	0	[]
+198	1corintios	5	2	1corintios-5-2-P03	1corintios-5-2-P02	ἀρθῇ	V-APS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+199	1corintios	5	3	1corintios-5-3-P01	1corintios-5-2-P03	κέκρικα	V-XAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+200	1corintios	5	5	1corintios-5-5-P01	1corintios-5-3-P01	σωθῇ	V-APS-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+201	1corintios	5	6	1corintios-5-6-P01	1corintios-5-5-P01	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+202	1corintios	5	6	1corintios-5-6-P02	1corintios-5-6-P01	ζυμοῖ	V-PAI-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+203	1corintios	5	7	1corintios-5-7-P01	1corintios-5-6-P02	ἐκκαθάρατε	V-AAD-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+204	1corintios	5	7	1corintios-5-7-P02	1corintios-5-7-P01	ἦτε	V-PAS-2P	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+205	1corintios	5	7	1corintios-5-7-P03	1corintios-5-7-P02	ἐστε	V-PAI-2P	2	P		unresolved	candidate	none	0	[]
+206	1corintios	5	7	1corintios-5-7-P04	1corintios-5-7-P03	ἐτύθη	V-API-3S	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+207	1corintios	5	8	1corintios-5-8-P01	1corintios-5-7-P04	ἑορτάζωμεν	V-PAS-1P	1	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+208	1corintios	5	9	1corintios-5-9-P01	1corintios-5-8-P01	ἔγραψα	V-AAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+209	1corintios	5	10	1corintios-5-10-P01	1corintios-5-9-P01	ὠφείλετε	V-IAI-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+210	1corintios	5	11	1corintios-5-11-P01	1corintios-5-10-P01	ἔγραψα	V-AAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+211	1corintios	5	11	1corintios-5-11-P02	1corintios-5-11-P01	ᾖ	V-PAS-3S	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+212	1corintios	5	12	1corintios-5-12-P01	1corintios-5-11-P02	κρίνετε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+213	1corintios	5	13	1corintios-5-13-P01	1corintios-5-12-P01	κρίνει;	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+214	1corintios	5	13	1corintios-5-13-P02	1corintios-5-13-P01	ἐξάρατε	V-AAD-2P	2	P		candidate	not_detected	none	0	[]
+215	1corintios	6	1	1corintios-6-1-P01	1corintios-5-13-P02	τολμᾷ	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+216	1corintios	6	2	1corintios-6-2-P01	1corintios-6-1-P01	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+217	1corintios	6	2	1corintios-6-2-P02	1corintios-6-2-P01	κρινοῦσιν	V-FAI-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+218	1corintios	6	2	1corintios-6-2-P03	1corintios-6-2-P02	κρίνεται	V-PPI-3S	3	S		unresolved	candidate	none	0	[]
+219	1corintios	6	2	1corintios-6-2-P04	1corintios-6-2-P03	ἐστε	V-PAI-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+220	1corintios	6	3	1corintios-6-3-P01	1corintios-6-2-P04	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	none	0	[]
+221	1corintios	6	3	1corintios-6-3-P02	1corintios-6-3-P01	κρινοῦμεν	V-FAI-1P	1	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+222	1corintios	6	4	1corintios-6-4-P01	1corintios-6-3-P02	ἔχητε	V-PAS-2P	2	P		unresolved	candidate	candidate	1	"[""person_change""]"
+223	1corintios	6	4	1corintios-6-4-P02	1corintios-6-4-P01	καθίζετε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+224	1corintios	6	5	1corintios-6-5-P01	1corintios-6-4-P02	λέγω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+225	1corintios	6	5	1corintios-6-5-P02	1corintios-6-5-P01	ἔνι	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+226	1corintios	6	5	1corintios-6-5-P03	1corintios-6-5-P02	δυνήσεται	V-FMI-3S	3	S		candidate	not_detected	none	0	[]
+227	1corintios	6	6	1corintios-6-6-P01	1corintios-6-5-P03	κρίνεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+228	1corintios	6	7	1corintios-6-7-P01	1corintios-6-6-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+229	1corintios	6	7	1corintios-6-7-P02	1corintios-6-7-P01	ἔχετε	V-PAI-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+230	1corintios	6	7	1corintios-6-7-P03	1corintios-6-7-P02	ἀδικεῖσθε	V-PPI-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+231	1corintios	6	7	1corintios-6-7-P04	1corintios-6-7-P03	ἀποστερεῖσθε	V-PPI-2P	2	P		candidate	not_detected	none	0	[]
+232	1corintios	6	8	1corintios-6-8-P01	1corintios-6-7-P04	ἀδικεῖτε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+233	1corintios	6	8	1corintios-6-8-P02	1corintios-6-8-P01	ἀποστερεῖτε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+234	1corintios	6	9	1corintios-6-9-P01	1corintios-6-8-P02	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	none	0	[]
+235	1corintios	6	9	1corintios-6-9-P02	1corintios-6-9-P01	κληρονομήσουσιν	V-FAI-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+236	1corintios	6	9	1corintios-6-9-P03	1corintios-6-9-P02	πλανᾶσθε	V-PPD-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+237	1corintios	6	10	1corintios-6-10-P01	1corintios-6-9-P03	κληρονομήσουσιν	V-FAI-3P	2	P		candidate	not_detected	none	0	[]
+238	1corintios	6	11	1corintios-6-11-P01	1corintios-6-10-P01	ἦτε	V-IAI-2P	2	P		candidate	not_detected	none	0	[]
+239	1corintios	6	11	1corintios-6-11-P02	1corintios-6-11-P01	ἀπελούσασθε	V-AMI-2P	2	P		candidate	not_detected	none	0	[]
+240	1corintios	6	11	1corintios-6-11-P03	1corintios-6-11-P02	ἡγιάσθητε	V-API-2P	2	P		candidate	not_detected	none	0	[]
+241	1corintios	6	11	1corintios-6-11-P04	1corintios-6-11-P03	ἐδικαιώθητε	V-API-2P	2	P		candidate	not_detected	none	0	[]
+242	1corintios	6	12	1corintios-6-12-P01	1corintios-6-11-P04	ἔξεστιν	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+243	1corintios	6	12	1corintios-6-12-P02	1corintios-6-12-P01	συμφέρει	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+244	1corintios	6	12	1corintios-6-12-P03	1corintios-6-12-P02	ἔξεστιν	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+245	1corintios	6	12	1corintios-6-12-P04	1corintios-6-12-P03	ἐξουσιασθήσομαι	V-FPI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+246	1corintios	6	13	1corintios-6-13-P01	1corintios-6-12-P04	καταργήσει	V-FAI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+247	1corintios	6	14	1corintios-6-14-P01	1corintios-6-13-P01	ἤγειρεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+248	1corintios	6	14	1corintios-6-14-P02	1corintios-6-14-P01	ἐξεγερεῖ	V-FAI-3S	3	S		candidate	not_detected	none	0	[]
+249	1corintios	6	15	1corintios-6-15-P01	1corintios-6-14-P02	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+250	1corintios	6	15	1corintios-6-15-P02	1corintios-6-15-P01	ἐστιν	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+251	1corintios	6	15	1corintios-6-15-P03	1corintios-6-15-P02	ποιήσω	V-AAS-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+252	1corintios	6	15	1corintios-6-15-P04	1corintios-6-15-P03	γένοιτο	V-AMO-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+253	1corintios	6	16	1corintios-6-16-P01	1corintios-6-15-P04	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+254	1corintios	6	16	1corintios-6-16-P02	1corintios-6-16-P01	ἐστιν	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+255	1corintios	6	16	1corintios-6-16-P03	1corintios-6-16-P02	ἔσονται	V-FMI-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+256	1corintios	6	16	1corintios-6-16-P04	1corintios-6-16-P03	φησίν	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+257	1corintios	6	17	1corintios-6-17-P01	1corintios-6-16-P04	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+258	1corintios	6	18	1corintios-6-18-P01	1corintios-6-17-P01	φεύγετε	V-PAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+259	1corintios	6	18	1corintios-6-18-P02	1corintios-6-18-P01	ποιήσῃ	V-AAS-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+260	1corintios	6	18	1corintios-6-18-P03	1corintios-6-18-P02	ἐστιν	V-PAI-3S	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+261	1corintios	6	18	1corintios-6-18-P04	1corintios-6-18-P03	ἁμαρτάνει	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+262	1corintios	6	19	1corintios-6-19-P01	1corintios-6-18-P04	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+263	1corintios	6	19	1corintios-6-19-P02	1corintios-6-19-P01	ἐστιν	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+264	1corintios	6	19	1corintios-6-19-P03	1corintios-6-19-P02	ἔχετε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+265	1corintios	6	19	1corintios-6-19-P04	1corintios-6-19-P03	ἐστὲ	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+266	1corintios	6	20	1corintios-6-20-P01	1corintios-6-19-P04	ἠγοράσθητε	V-API-2P	2	P		candidate	not_detected	none	0	[]
+267	1corintios	6	20	1corintios-6-20-P02	1corintios-6-20-P01	δοξάσατε	V-AAD-2P	2	P		candidate	not_detected	none	0	[]
+268	1corintios	7	1	1corintios-7-1-P01	1corintios-6-20-P02	ἐγράψατε	V-AAI-2P	2	P		candidate	not_detected	none	0	[]
+269	1corintios	7	2	1corintios-7-2-P01	1corintios-7-1-P01	ἐχέτω	V-PAD-3S	2	P		candidate	not_detected	none	0	[]
+270	1corintios	7	2	1corintios-7-2-P02	1corintios-7-2-P01	ἐχέτω	V-PAD-3S	2	P		candidate	not_detected	none	0	[]
+271	1corintios	7	3	1corintios-7-3-P01	1corintios-7-2-P02	ἀποδιδότω	V-PAD-3S	2	P		candidate	not_detected	none	0	[]
+272	1corintios	7	4	1corintios-7-4-P01	1corintios-7-3-P01	ἐξουσιάζει	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+273	1corintios	7	4	1corintios-7-4-P02	1corintios-7-4-P01	ἐξουσιάζει	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+274	1corintios	7	5	1corintios-7-5-P01	1corintios-7-4-P02	ἀποστερεῖτε	V-PAD-2P	2	P		candidate	not_detected	none	0	[]
+275	1corintios	7	5	1corintios-7-5-P02	1corintios-7-5-P01	σχολάσητε	V-AAS-2P	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+276	1corintios	7	5	1corintios-7-5-P03	1corintios-7-5-P02	ἦτε	V-PAS-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+277	1corintios	7	5	1corintios-7-5-P04	1corintios-7-5-P03	πειράζῃ	V-PAS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+278	1corintios	7	6	1corintios-7-6-P01	1corintios-7-5-P04	λέγω	V-PAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+279	1corintios	7	7	1corintios-7-7-P01	1corintios-7-6-P01	θέλω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+280	1corintios	7	7	1corintios-7-7-P02	1corintios-7-7-P01	ἔχει	V-PAI-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+281	1corintios	7	8	1corintios-7-8-P01	1corintios-7-7-P02	λέγω	V-PAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+282	1corintios	7	8	1corintios-7-8-P02	1corintios-7-8-P01	μείνωσιν	V-AAS-3P	3	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+283	1corintios	7	9	1corintios-7-9-P01	1corintios-7-8-P02	ἐγκρατεύονται	V-PMI-3P	3	P		unresolved	candidate	none	0	[]
+284	1corintios	7	9	1corintios-7-9-P02	1corintios-7-9-P01	γαμησάτωσαν	V-AAD-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+285	1corintios	7	9	1corintios-7-9-P03	1corintios-7-9-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+286	1corintios	7	10	1corintios-7-10-P01	1corintios-7-9-P03	παραγγέλλω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+287	1corintios	7	11	1corintios-7-11-P01	1corintios-7-10-P01	χωρισθῇ	V-APS-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+288	1corintios	7	11	1corintios-7-11-P02	1corintios-7-11-P01	μενέτω	V-PAD-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+289	1corintios	7	11	1corintios-7-11-P03	1corintios-7-11-P02	καταλλαγήτω—	V-APD-3S	3	S		candidate	not_detected	none	0	[]
+290	1corintios	7	12	1corintios-7-12-P01	1corintios-7-11-P03	λέγω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+291	1corintios	7	12	1corintios-7-12-P02	1corintios-7-12-P01	ἔχει	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+292	1corintios	7	12	1corintios-7-12-P03	1corintios-7-12-P02	συνευδοκεῖ	V-PAI-3S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+293	1corintios	7	12	1corintios-7-12-P04	1corintios-7-12-P03	ἀφιέτω	V-PAD-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+294	1corintios	7	13	1corintios-7-13-P01	1corintios-7-12-P04	ἔχει	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+295	1corintios	7	13	1corintios-7-13-P02	1corintios-7-13-P01	συνευδοκεῖ	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+296	1corintios	7	13	1corintios-7-13-P03	1corintios-7-13-P02	ἀφιέτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+297	1corintios	7	14	1corintios-7-14-P01	1corintios-7-13-P03	ἡγίασται	V-XPI-3S	3	S		candidate	not_detected	none	0	[]
+298	1corintios	7	14	1corintios-7-14-P02	1corintios-7-14-P01	ἡγίασται	V-XPI-3S	3	S		candidate	not_detected	none	0	[]
+299	1corintios	7	14	1corintios-7-14-P03	1corintios-7-14-P02	ἐστιν	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+300	1corintios	7	14	1corintios-7-14-P04	1corintios-7-14-P03	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+301	1corintios	7	15	1corintios-7-15-P01	1corintios-7-14-P04	χωρίζεται	V-PPI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+302	1corintios	7	15	1corintios-7-15-P02	1corintios-7-15-P01	χωριζέσθω	V-PPD-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+303	1corintios	7	15	1corintios-7-15-P03	1corintios-7-15-P02	δεδούλωται	V-XPI-3S	3	S		candidate	not_detected	none	0	[]
+304	1corintios	7	15	1corintios-7-15-P04	1corintios-7-15-P03	κέκληκεν	V-XAI-3S	3	S		candidate	not_detected	none	0	[]
+305	1corintios	7	16	1corintios-7-16-P01	1corintios-7-15-P04	οἶδας	V-XAI-2S	2	S		candidate	not_detected	candidate	1	"[""person_change""]"
+306	1corintios	7	16	1corintios-7-16-P02	1corintios-7-16-P01	σώσεις	V-FAI-2S	2	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+307	1corintios	7	16	1corintios-7-16-P03	1corintios-7-16-P02	οἶδας	V-XAI-2S	2	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+308	1corintios	7	16	1corintios-7-16-P04	1corintios-7-16-P03	σώσεις	V-FAI-2S	2	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+309	1corintios	7	17	1corintios-7-17-P01	1corintios-7-16-P04	ἐμέρισεν	V-AAI-3S	3	S		unresolved	candidate	candidate	1	"[""person_change""]"
+310	1corintios	7	17	1corintios-7-17-P02	1corintios-7-17-P01	κέκληκεν	V-XAI-3S	3	S		unresolved	candidate	none	0	[]
+311	1corintios	7	17	1corintios-7-17-P03	1corintios-7-17-P02	περιπατείτω	V-PAD-3S				candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+312	1corintios	7	17	1corintios-7-17-P04	1corintios-7-17-P03	διατάσσομαι	V-PMI-1S	1	S		candidate	not_detected	none	0	[]
+313	1corintios	7	18	1corintios-7-18-P01	1corintios-7-17-P04	ἐκλήθη;	V-API-3S	1	S		candidate	not_detected	none	0	[]
+314	1corintios	7	18	1corintios-7-18-P02	1corintios-7-18-P01	ἐπισπάσθω	V-PMD-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+315	1corintios	7	18	1corintios-7-18-P03	1corintios-7-18-P02	κέκληταί	V-XPI-3S	3	S		candidate	not_detected	none	0	[]
+316	1corintios	7	18	1corintios-7-18-P04	1corintios-7-18-P03	περιτεμνέσθω	V-PPD-3S	3	S		candidate	not_detected	none	0	[]
+317	1corintios	7	19	1corintios-7-19-P01	1corintios-7-18-P04	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+318	1corintios	7	19	1corintios-7-19-P02	1corintios-7-19-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+319	1corintios	7	20	1corintios-7-20-P01	1corintios-7-19-P02	ἐκλήθη	V-API-3S	3	S		candidate	not_detected	none	0	[]
+320	1corintios	7	20	1corintios-7-20-P02	1corintios-7-20-P01	μενέτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+321	1corintios	7	21	1corintios-7-21-P01	1corintios-7-20-P02	ἐκλήθης;	V-API-2S	2	S		candidate	not_detected	candidate	1	"[""person_change""]"
+322	1corintios	7	21	1corintios-7-21-P02	1corintios-7-21-P01	μελέτω	V-PAD-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+323	1corintios	7	21	1corintios-7-21-P03	1corintios-7-21-P02	δύνασαι	V-PMI-2S	2	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+324	1corintios	7	21	1corintios-7-21-P04	1corintios-7-21-P03	χρῆσαι	V-AMD-2S	2	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+325	1corintios	7	22	1corintios-7-22-P01	1corintios-7-21-P04	ἐστίν	V-PAI-3S	2	S		candidate	not_detected	none	0	[]
+326	1corintios	7	22	1corintios-7-22-P02	1corintios-7-22-P01	ἐστιν	V-PAI-3S	2	S		candidate	not_detected	none	0	[]
+327	1corintios	7	23	1corintios-7-23-P01	1corintios-7-22-P02	ἠγοράσθητε	V-API-2P	2	P		candidate	not_detected	candidate	1	"[""number_change""]"
+328	1corintios	7	23	1corintios-7-23-P02	1corintios-7-23-P01	γίνεσθε	V-PMD-2P	2	P		candidate	not_detected	none	0	[]
+329	1corintios	7	24	1corintios-7-24-P01	1corintios-7-23-P02	ἐκλήθη	V-API-3S	2	P		candidate	not_detected	none	0	[]
+330	1corintios	7	24	1corintios-7-24-P02	1corintios-7-24-P01	μενέτω	V-PAD-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+331	1corintios	7	25	1corintios-7-25-P01	1corintios-7-24-P02	ἔχω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+332	1corintios	7	25	1corintios-7-25-P02	1corintios-7-25-P01	δίδωμι	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+333	1corintios	7	26	1corintios-7-26-P01	1corintios-7-25-P02	νομίζω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+334	1corintios	7	27	1corintios-7-27-P01	1corintios-7-26-P01	δέδεσαι	V-XPI-2S	2	S		candidate	not_detected	candidate	1	"[""person_change""]"
+335	1corintios	7	27	1corintios-7-27-P02	1corintios-7-27-P01	ζήτει	V-PAD-2S	2	S		candidate	not_detected	none	0	[]
+336	1corintios	7	27	1corintios-7-27-P03	1corintios-7-27-P02	λέλυσαι	V-XPI-2S	2	S		candidate	not_detected	none	0	[]
+337	1corintios	7	27	1corintios-7-27-P04	1corintios-7-27-P03	ζήτει	V-PAD-2S	2	S		candidate	not_detected	none	0	[]
+338	1corintios	7	28	1corintios-7-28-P01	1corintios-7-27-P04	γαμήσῃς	V-AAS-2S	2	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+339	1corintios	7	28	1corintios-7-28-P02	1corintios-7-28-P01	ἥμαρτες	V-AAI-2S	2	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+340	1corintios	7	28	1corintios-7-28-P03	1corintios-7-28-P02	γήμῃ	V-AAS-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+341	1corintios	7	28	1corintios-7-28-P04	1corintios-7-28-P03	ἥμαρτεν	V-AAI-3S	2	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+342	1corintios	7	28	1corintios-7-28-P05	1corintios-7-28-P04	ἕξουσιν	V-FAI-3P	3	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+343	1corintios	7	28	1corintios-7-28-P06	1corintios-7-28-P05	φείδομαι	V-PMI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+344	1corintios	7	29	1corintios-7-29-P01	1corintios-7-28-P06	φημι	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+345	1corintios	7	29	1corintios-7-29-P02	1corintios-7-29-P01	ἐστίν	V-PAI-3S	1	S		candidate	not_detected	none	0	[]
+346	1corintios	7	29	1corintios-7-29-P03	1corintios-7-29-P02	ὦσιν	V-PAS-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+347	1corintios	7	31	1corintios-7-31-P01	1corintios-7-29-P03	παράγει	V-PAI-3S	3	S		unresolved	candidate	none	0	[]
+348	1corintios	7	32	1corintios-7-32-P01	1corintios-7-31-P01	θέλω	V-PAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+349	1corintios	7	32	1corintios-7-32-P02	1corintios-7-32-P01	μεριμνᾷ	V-PAI-3S	1	S		candidate	not_detected	none	0	[]
+350	1corintios	7	32	1corintios-7-32-P03	1corintios-7-32-P02	ἀρέσῃ	V-AAS-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+351	1corintios	7	33	1corintios-7-33-P01	1corintios-7-32-P03	μεριμνᾷ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+352	1corintios	7	33	1corintios-7-33-P02	1corintios-7-33-P01	ἀρέσῃ	V-AAS-3S	3	S		candidate	not_detected	none	0	[]
+353	1corintios	7	34	1corintios-7-34-P01	1corintios-7-33-P02	μεμέρισται	V-XPI-3S	3	S		candidate	not_detected	none	0	[]
+354	1corintios	7	34	1corintios-7-34-P02	1corintios-7-34-P01	μεριμνᾷ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+355	1corintios	7	34	1corintios-7-34-P03	1corintios-7-34-P02	ᾖ	V-PAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+356	1corintios	7	34	1corintios-7-34-P04	1corintios-7-34-P03	μεριμνᾷ	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+357	1corintios	7	34	1corintios-7-34-P05	1corintios-7-34-P04	ἀρέσῃ	V-AAS-3S	3	S		candidate	not_detected	none	0	[]
+358	1corintios	7	35	1corintios-7-35-P01	1corintios-7-34-P05	λέγω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+359	1corintios	7	35	1corintios-7-35-P02	1corintios-7-35-P01	ἐπιβάλω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+360	1corintios	7	36	1corintios-7-36-P01	1corintios-7-35-P02	νομίζει	V-PAI-3S	1	S		unresolved	candidate	none	0	[]
+361	1corintios	7	36	1corintios-7-36-P02	1corintios-7-36-P01	ᾖ	V-PAS-3S	3	S		unresolved	candidate	candidate	1	"[""person_change""]"
+362	1corintios	7	36	1corintios-7-36-P03	1corintios-7-36-P02	ὀφείλει	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+363	1corintios	7	36	1corintios-7-36-P04	1corintios-7-36-P03	θέλει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+364	1corintios	7	36	1corintios-7-36-P05	1corintios-7-36-P04	ποιείτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+365	1corintios	7	36	1corintios-7-36-P06	1corintios-7-36-P05	ἁμαρτάνει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+366	1corintios	7	36	1corintios-7-36-P07	1corintios-7-36-P06	γαμείτωσαν	V-PAD-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+367	1corintios	7	37	1corintios-7-37-P01	1corintios-7-36-P07	ἕστηκεν	V-XAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+368	1corintios	7	37	1corintios-7-37-P02	1corintios-7-37-P01	ἔχει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+369	1corintios	7	37	1corintios-7-37-P03	1corintios-7-37-P02	κέκρικεν	V-XAI-3S	3	S		candidate	not_detected	none	0	[]
+370	1corintios	7	37	1corintios-7-37-P04	1corintios-7-37-P03	ποιήσει	V-FAI-3S	3	S		candidate	not_detected	none	0	[]
+371	1corintios	7	38	1corintios-7-38-P01	1corintios-7-37-P04	ποιεῖ	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+372	1corintios	7	38	1corintios-7-38-P02	1corintios-7-38-P01	ποιήσει	V-FAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+373	1corintios	7	39	1corintios-7-39-P01	1corintios-7-38-P02	δέδεται	V-XPI-3S	3	S		candidate	not_detected	none	0	[]
+374	1corintios	7	39	1corintios-7-39-P02	1corintios-7-39-P01	ζῇ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+375	1corintios	7	39	1corintios-7-39-P03	1corintios-7-39-P02	κοιμηθῇ	V-APS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+376	1corintios	7	39	1corintios-7-39-P04	1corintios-7-39-P03	ἐστὶν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+377	1corintios	7	39	1corintios-7-39-P05	1corintios-7-39-P04	θέλει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+378	1corintios	7	40	1corintios-7-40-P01	1corintios-7-39-P05	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+379	1corintios	7	40	1corintios-7-40-P02	1corintios-7-40-P01	μείνῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+380	1corintios	7	40	1corintios-7-40-P03	1corintios-7-40-P02	δοκῶ	V-PAI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+381	1corintios	8	1	1corintios-8-1-P01	1corintios-7-40-P03	οἴδαμεν	V-XAI-1P	1	P		candidate	not_detected	candidate	1	"[""number_change""]"
+382	1corintios	8	1	1corintios-8-1-P02	1corintios-8-1-P01	ἔχομεν	V-PAI-1P	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+383	1corintios	8	1	1corintios-8-1-P03	1corintios-8-1-P02	φυσιοῖ	V-PAI-3S	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+384	1corintios	8	1	1corintios-8-1-P04	1corintios-8-1-P03	οἰκοδομεῖ	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+385	1corintios	8	2	1corintios-8-2-P01	1corintios-8-1-P04	δοκεῖ	V-PAI-3S	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+386	1corintios	8	2	1corintios-8-2-P02	1corintios-8-2-P01	ἔγνω	V-AAI-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+387	1corintios	8	2	1corintios-8-2-P03	1corintios-8-2-P02	δεῖ	V-PAI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+388	1corintios	8	3	1corintios-8-3-P01	1corintios-8-2-P03	ἀγαπᾷ	V-PAI-3S	3	S		unresolved	candidate	none	0	[]
+389	1corintios	8	3	1corintios-8-3-P02	1corintios-8-3-P01	ἔγνωσται	V-XPI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+390	1corintios	8	4	1corintios-8-4-P01	1corintios-8-3-P02	οἴδαμεν	V-XAI-1P	1	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+391	1corintios	8	5	1corintios-8-5-P01	1corintios-8-4-P01	εἰσὶν	V-PAI-3P	3	P		candidate	not_detected	candidate	1	"[""person_change""]"
+392	1corintios	8	5	1corintios-8-5-P02	1corintios-8-5-P01	εἰσὶν	V-PAI-3P	3	P		candidate	not_detected	none	0	[]
+393	1corintios	8	7	1corintios-8-7-P01	1corintios-8-5-P02	ἐσθίουσιν	V-PAI-3P	3	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+394	1corintios	8	7	1corintios-8-7-P02	1corintios-8-7-P01	μολύνεται	V-PPI-3S	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+395	1corintios	8	8	1corintios-8-8-P01	1corintios-8-7-P02	παραστήσει	V-FAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+396	1corintios	8	8	1corintios-8-8-P02	1corintios-8-8-P01	φάγωμεν	V-AAS-1P	1	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+397	1corintios	8	8	1corintios-8-8-P03	1corintios-8-8-P02	περισσεύομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+398	1corintios	8	8	1corintios-8-8-P04	1corintios-8-8-P03	φάγωμεν	V-AAS-1P	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+399	1corintios	8	8	1corintios-8-8-P05	1corintios-8-8-P04	ὑστερούμεθα	V-PPI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+400	1corintios	8	9	1corintios-8-9-P01	1corintios-8-8-P05	βλέπετε	V-PAD-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+401	1corintios	8	9	1corintios-8-9-P02	1corintios-8-9-P01	γένηται	V-AMS-3S	2	P		candidate	not_detected	none	0	[]
+402	1corintios	8	10	1corintios-8-10-P01	1corintios-8-9-P02	ἴδῃ	V-AAS-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+403	1corintios	8	10	1corintios-8-10-P02	1corintios-8-10-P01	οἰκοδομηθήσεται	V-FPI-3S	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+404	1corintios	8	11	1corintios-8-11-P01	1corintios-8-10-P02	ἀπόλλυται	V-PPI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+405	1corintios	8	11	1corintios-8-11-P02	1corintios-8-11-P01	ἀπέθανεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+406	1corintios	8	12	1corintios-8-12-P01	1corintios-8-11-P02	ἁμαρτάνετε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+407	1corintios	8	13	1corintios-8-13-P01	1corintios-8-12-P01	σκανδαλίζει	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+408	1corintios	8	13	1corintios-8-13-P02	1corintios-8-13-P01	φάγω	V-AAS-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+409	1corintios	8	13	1corintios-8-13-P03	1corintios-8-13-P02	σκανδαλίσω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+410	1corintios	9	1	1corintios-9-1-P01	1corintios-8-13-P03	εἰμὶ	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+411	1corintios	9	1	1corintios-9-1-P02	1corintios-9-1-P01	εἰμὶ	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+412	1corintios	9	1	1corintios-9-1-P03	1corintios-9-1-P02	ἑόρακα	V-XAI-1S	1	S		candidate	not_detected	none	0	[]
+413	1corintios	9	1	1corintios-9-1-P04	1corintios-9-1-P03	ἐστε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+414	1corintios	9	2	1corintios-9-2-P01	1corintios-9-1-P04	εἰμὶ	V-PAI-1S	1	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+415	1corintios	9	2	1corintios-9-2-P02	1corintios-9-2-P01	εἰμι	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+416	1corintios	9	2	1corintios-9-2-P03	1corintios-9-2-P02	ἐστε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+417	1corintios	9	3	1corintios-9-3-P01	1corintios-9-2-P03	ἐστιν	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+418	1corintios	9	4	1corintios-9-4-P01	1corintios-9-3-P01	ἔχομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	1	"[""person_change""]"
+419	1corintios	9	5	1corintios-9-5-P01	1corintios-9-4-P01	ἔχομεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+420	1corintios	9	6	1corintios-9-6-P01	1corintios-9-5-P01	ἔχομεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+421	1corintios	9	7	1corintios-9-7-P01	1corintios-9-6-P01	στρατεύεται	V-PMI-3S	1	P		candidate	not_detected	none	0	[]
+422	1corintios	9	7	1corintios-9-7-P02	1corintios-9-7-P01	φυτεύει	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+423	1corintios	9	7	1corintios-9-7-P03	1corintios-9-7-P02	ἐσθίει	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+424	1corintios	9	7	1corintios-9-7-P04	1corintios-9-7-P03	ποιμαίνει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+425	1corintios	9	7	1corintios-9-7-P05	1corintios-9-7-P04	ἐσθίει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+426	1corintios	9	8	1corintios-9-8-P01	1corintios-9-7-P05	λαλῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+427	1corintios	9	8	1corintios-9-8-P02	1corintios-9-8-P01	λέγει	V-PAI-3S	1	S		candidate	not_detected	none	0	[]
+428	1corintios	9	9	1corintios-9-9-P01	1corintios-9-8-P02	γέγραπται	V-XPI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+429	1corintios	9	9	1corintios-9-9-P02	1corintios-9-9-P01	κημώσεις	V-FAI-2S	2	S		candidate	not_detected	candidate	1	"[""person_change""]"
+430	1corintios	9	9	1corintios-9-9-P03	1corintios-9-9-P02	μέλει	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+431	1corintios	9	10	1corintios-9-10-P01	1corintios-9-9-P03	λέγει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+432	1corintios	9	10	1corintios-9-10-P02	1corintios-9-10-P01	ἐγράφη	V-API-3S	3	S		candidate	not_detected	none	0	[]
+433	1corintios	9	10	1corintios-9-10-P03	1corintios-9-10-P02	ὀφείλει	V-PAI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+434	1corintios	9	11	1corintios-9-11-P01	1corintios-9-10-P03	ἐσπείραμεν	V-AAI-1P	1	P		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+435	1corintios	9	11	1corintios-9-11-P02	1corintios-9-11-P01	θερίσομεν	V-FAI-1P	1	P		unresolved	candidate	none	0	[]
+436	1corintios	9	12	1corintios-9-12-P01	1corintios-9-11-P02	μετέχουσιν	V-PAI-3P	1	P		unresolved	candidate	none	0	[]
+437	1corintios	9	12	1corintios-9-12-P02	1corintios-9-12-P01	ἐχρησάμεθα	V-AMI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+438	1corintios	9	12	1corintios-9-12-P03	1corintios-9-12-P02	στέγομεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+439	1corintios	9	12	1corintios-9-12-P04	1corintios-9-12-P03	δῶμεν	V-AAS-1P	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+440	1corintios	9	13	1corintios-9-13-P01	1corintios-9-12-P04	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+441	1corintios	9	13	1corintios-9-13-P02	1corintios-9-13-P01	ἐσθίουσιν	V-PAI-3P	3	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+442	1corintios	9	13	1corintios-9-13-P03	1corintios-9-13-P02	συμμερίζονται	V-PMI-3P	2	P		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+443	1corintios	9	14	1corintios-9-14-P01	1corintios-9-13-P03	διέταξεν	V-AAI-3S	2	P		candidate	not_detected	none	0	[]
+444	1corintios	9	15	1corintios-9-15-P01	1corintios-9-14-P01	κέχρημαι	V-XMI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+445	1corintios	9	15	1corintios-9-15-P02	1corintios-9-15-P01	ἔγραψα	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+446	1corintios	9	15	1corintios-9-15-P03	1corintios-9-15-P02	γένηται	V-AMS-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+447	1corintios	9	15	1corintios-9-15-P04	1corintios-9-15-P03	κενώσει	V-FAI-3S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+448	1corintios	9	16	1corintios-9-16-P01	1corintios-9-15-P04	εὐαγγελίζωμαι	V-PMS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+449	1corintios	9	16	1corintios-9-16-P02	1corintios-9-16-P01	ἔστιν	V-PAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+450	1corintios	9	16	1corintios-9-16-P03	1corintios-9-16-P02	ἐπίκειται	V-PMI-3S	3	S		candidate	not_detected	none	0	[]
+451	1corintios	9	16	1corintios-9-16-P04	1corintios-9-16-P03	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+452	1corintios	9	16	1corintios-9-16-P05	1corintios-9-16-P04	εὐαγγελίσωμαι	V-AMS-1S	1	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+453	1corintios	9	17	1corintios-9-17-P01	1corintios-9-16-P05	πράσσω	V-PAI-1S	1	S		unresolved	candidate	none	0	[]
+454	1corintios	9	17	1corintios-9-17-P02	1corintios-9-17-P01	ἔχω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+455	1corintios	9	17	1corintios-9-17-P03	1corintios-9-17-P02	πεπίστευμαι	V-XPI-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+456	1corintios	9	18	1corintios-9-18-P01	1corintios-9-17-P03	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+457	1corintios	9	18	1corintios-9-18-P02	1corintios-9-18-P01	θήσω	V-AAS-1S	1	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+458	1corintios	9	19	1corintios-9-19-P01	1corintios-9-18-P02	ἐδούλωσα	V-AAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+459	1corintios	9	19	1corintios-9-19-P02	1corintios-9-19-P01	κερδήσω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+460	1corintios	9	20	1corintios-9-20-P01	1corintios-9-19-P02	ἐγενόμην	V-AMI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+461	1corintios	9	20	1corintios-9-20-P02	1corintios-9-20-P01	κερδήσω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+462	1corintios	9	20	1corintios-9-20-P03	1corintios-9-20-P02	κερδήσω	V-AAS-1S	1	S		unresolved	candidate	none	0	[]
+463	1corintios	9	21	1corintios-9-21-P01	1corintios-9-20-P03	κερδάνω	V-AAS-1S	1	S		unresolved	candidate	none	0	[]
+464	1corintios	9	22	1corintios-9-22-P01	1corintios-9-21-P01	ἐγενόμην	V-AMI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+465	1corintios	9	22	1corintios-9-22-P02	1corintios-9-22-P01	κερδήσω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+466	1corintios	9	22	1corintios-9-22-P03	1corintios-9-22-P02	γέγονα	V-XAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+467	1corintios	9	22	1corintios-9-22-P04	1corintios-9-22-P03	σώσω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+468	1corintios	9	23	1corintios-9-23-P01	1corintios-9-22-P04	ποιῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+469	1corintios	9	23	1corintios-9-23-P02	1corintios-9-23-P01	γένωμαι	V-AMS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+470	1corintios	9	24	1corintios-9-24-P01	1corintios-9-23-P02	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+471	1corintios	9	24	1corintios-9-24-P02	1corintios-9-24-P01	τρέχουσιν	V-PAI-3P	3	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+472	1corintios	9	24	1corintios-9-24-P03	1corintios-9-24-P02	λαμβάνει	V-PAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+473	1corintios	9	24	1corintios-9-24-P04	1corintios-9-24-P03	τρέχετε	V-PAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+474	1corintios	9	24	1corintios-9-24-P05	1corintios-9-24-P04	καταλάβητε	V-AAS-2P	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+475	1corintios	9	25	1corintios-9-25-P01	1corintios-9-24-P05	ἐγκρατεύεται	V-PMI-3S	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+476	1corintios	9	25	1corintios-9-25-P02	1corintios-9-25-P01	λάβωσιν	V-AAS-3P	3	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+477	1corintios	9	26	1corintios-9-26-P01	1corintios-9-25-P02	τρέχω	V-PAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+478	1corintios	9	26	1corintios-9-26-P02	1corintios-9-26-P01	πυκτεύω	V-PAI-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+479	1corintios	9	27	1corintios-9-27-P01	1corintios-9-26-P02	ὑπωπιάζω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+480	1corintios	9	27	1corintios-9-27-P02	1corintios-9-27-P01	δουλαγωγῶ	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+481	1corintios	9	27	1corintios-9-27-P03	1corintios-9-27-P02	γένωμαι	V-AMS-1S	1	S		candidate	not_detected	none	0	[]
+482	1corintios	10	1	1corintios-10-1-P01	1corintios-9-27-P03	θέλω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+483	1corintios	10	1	1corintios-10-1-P02	1corintios-10-1-P01	ἦσαν	V-IAI-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+484	1corintios	10	1	1corintios-10-1-P03	1corintios-10-1-P02	διῆλθον	V-AAI-3P	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+485	1corintios	10	2	1corintios-10-2-P01	1corintios-10-1-P03	ἐβαπτίσαντο	V-AMI-3P	1	S		candidate	not_detected	none	0	[]
+486	1corintios	10	3	1corintios-10-3-P01	1corintios-10-2-P01	ἔφαγον	V-AAI-3P	1	S		candidate	not_detected	none	0	[]
+487	1corintios	10	4	1corintios-10-4-P01	1corintios-10-3-P01	ἔπιον	V-AAI-3P	1	S		candidate	not_detected	none	0	[]
+488	1corintios	10	4	1corintios-10-4-P02	1corintios-10-4-P01	ἔπινον	V-IAI-3P	3	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+489	1corintios	10	4	1corintios-10-4-P03	1corintios-10-4-P02	ἦν	V-IAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+490	1corintios	10	5	1corintios-10-5-P01	1corintios-10-4-P03	ηὐδόκησεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+491	1corintios	10	5	1corintios-10-5-P02	1corintios-10-5-P01	κατεστρώθησαν	V-API-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+492	1corintios	10	6	1corintios-10-6-P01	1corintios-10-5-P02	ἐγενήθησαν	V-API-3P	3	P		candidate	not_detected	none	0	[]
+493	1corintios	10	6	1corintios-10-6-P02	1corintios-10-6-P01	ἐπεθύμησαν	V-AAI-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+494	1corintios	10	7	1corintios-10-7-P01	1corintios-10-6-P02	γίνεσθε	V-PMD-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+495	1corintios	10	7	1corintios-10-7-P02	1corintios-10-7-P01	γέγραπται	V-XPI-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+496	1corintios	10	7	1corintios-10-7-P03	1corintios-10-7-P02	ἐκάθισεν	V-AAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+497	1corintios	10	7	1corintios-10-7-P04	1corintios-10-7-P03	ἀνέστησαν	V-AAI-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+498	1corintios	10	8	1corintios-10-8-P01	1corintios-10-7-P04	πορνεύωμεν	V-PAS-1P	1	P		candidate	not_detected	candidate	1	"[""person_change""]"
+499	1corintios	10	8	1corintios-10-8-P02	1corintios-10-8-P01	ἐπόρνευσαν	V-AAI-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+500	1corintios	10	8	1corintios-10-8-P03	1corintios-10-8-P02	ἔπεσαν	V-AAI-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+501	1corintios	10	9	1corintios-10-9-P01	1corintios-10-8-P03	ἐκπειράζωμεν	V-PAS-1P	1	P		candidate	not_detected	candidate	1	"[""person_change""]"
+502	1corintios	10	9	1corintios-10-9-P02	1corintios-10-9-P01	ἐπείρασαν	V-AAI-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+503	1corintios	10	9	1corintios-10-9-P03	1corintios-10-9-P02	ἀπώλλυντο	V-IPI-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+504	1corintios	10	10	1corintios-10-10-P01	1corintios-10-9-P03	γογγύζετε	V-PAD-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+505	1corintios	10	10	1corintios-10-10-P02	1corintios-10-10-P01	ἐγόγγυσαν	V-AAI-3P	2	P		candidate	not_detected	none	0	[]
+506	1corintios	10	10	1corintios-10-10-P03	1corintios-10-10-P02	ἀπώλοντο	V-AMI-3P	3	P		candidate	not_detected	candidate	1	"[""person_change""]"
+507	1corintios	10	11	1corintios-10-11-P01	1corintios-10-10-P03	συνέβαινεν	V-IAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+508	1corintios	10	11	1corintios-10-11-P02	1corintios-10-11-P01	ἐγράφη	V-API-3S	3	S		candidate	not_detected	none	0	[]
+509	1corintios	10	11	1corintios-10-11-P03	1corintios-10-11-P02	κατήντηκεν	V-XAI-3S	3	S		candidate	not_detected	none	0	[]
+510	1corintios	10	12	1corintios-10-12-P01	1corintios-10-11-P03	βλεπέτω	V-PAD-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+511	1corintios	10	12	1corintios-10-12-P02	1corintios-10-12-P01	πέσῃ	V-AAS-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+512	1corintios	10	13	1corintios-10-13-P01	1corintios-10-12-P02	εἴληφεν	V-XAI-3S	3	S		candidate	not_detected	none	0	[]
+513	1corintios	10	13	1corintios-10-13-P02	1corintios-10-13-P01	ἐάσει	V-FAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+514	1corintios	10	13	1corintios-10-13-P03	1corintios-10-13-P02	δύνασθε	V-PMI-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+515	1corintios	10	13	1corintios-10-13-P04	1corintios-10-13-P03	ποιήσει	V-FAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+516	1corintios	10	14	1corintios-10-14-P01	1corintios-10-13-P04	φεύγετε	V-PAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+517	1corintios	10	15	1corintios-10-15-P01	1corintios-10-14-P01	λέγω	V-PAI-1S	1	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+518	1corintios	10	15	1corintios-10-15-P02	1corintios-10-15-P01	κρίνατε	V-AAD-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+519	1corintios	10	15	1corintios-10-15-P03	1corintios-10-15-P02	φημι	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+520	1corintios	10	16	1corintios-10-16-P01	1corintios-10-15-P03	εὐλογοῦμεν	V-PAI-1P	1	P		candidate	not_detected	candidate	1	"[""number_change""]"
+521	1corintios	10	16	1corintios-10-16-P02	1corintios-10-16-P01	ἐστὶν	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+522	1corintios	10	16	1corintios-10-16-P03	1corintios-10-16-P02	κλῶμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+523	1corintios	10	16	1corintios-10-16-P04	1corintios-10-16-P03	ἐστιν	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+524	1corintios	10	17	1corintios-10-17-P01	1corintios-10-16-P04	ἐσμεν	V-PAI-1P	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+525	1corintios	10	17	1corintios-10-17-P02	1corintios-10-17-P01	μετέχομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+526	1corintios	10	18	1corintios-10-18-P01	1corintios-10-17-P02	βλέπετε	V-PAD-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+527	1corintios	10	18	1corintios-10-18-P02	1corintios-10-18-P01	εἰσίν	V-PAI-3P	2	P		candidate	not_detected	none	0	[]
+528	1corintios	10	19	1corintios-10-19-P01	1corintios-10-18-P02	φημι	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+529	1corintios	10	19	1corintios-10-19-P02	1corintios-10-19-P01	ἐστιν	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+530	1corintios	10	19	1corintios-10-19-P03	1corintios-10-19-P02	ἐστιν	V-PAI-3S				unresolved	candidate	none	0	[]
+531	1corintios	10	20	1corintios-10-20-P01	1corintios-10-19-P03	θύουσιν	V-PAI-3P	3	P		unresolved	candidate	none	0	[]
+532	1corintios	10	20	1corintios-10-20-P02	1corintios-10-20-P01	θύουσιν	V-PAI-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+533	1corintios	10	20	1corintios-10-20-P03	1corintios-10-20-P02	θέλω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+534	1corintios	10	21	1corintios-10-21-P01	1corintios-10-20-P03	δύνασθε	V-PMI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+535	1corintios	10	21	1corintios-10-21-P02	1corintios-10-21-P01	δύνασθε	V-PMI-2P	2	P		candidate	not_detected	none	0	[]
+536	1corintios	10	22	1corintios-10-22-P01	1corintios-10-21-P02	παραζηλοῦμεν	V-PAI-1P	1	P		candidate	not_detected	candidate	1	"[""person_change""]"
+537	1corintios	10	22	1corintios-10-22-P02	1corintios-10-22-P01	ἐσμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+538	1corintios	10	23	1corintios-10-23-P01	1corintios-10-22-P02	ἔξεστιν	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+539	1corintios	10	23	1corintios-10-23-P02	1corintios-10-23-P01	συμφέρει	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+540	1corintios	10	23	1corintios-10-23-P03	1corintios-10-23-P02	ἔξεστιν	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+541	1corintios	10	23	1corintios-10-23-P04	1corintios-10-23-P03	οἰκοδομεῖ	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+542	1corintios	10	24	1corintios-10-24-P01	1corintios-10-23-P04	ζητείτω	V-PAD-3S	1	P		candidate	not_detected	none	0	[]
+543	1corintios	10	25	1corintios-10-25-P01	1corintios-10-24-P01	ἐσθίετε	V-PAD-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+544	1corintios	10	27	1corintios-10-27-P01	1corintios-10-25-P01	καλεῖ	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+545	1corintios	10	27	1corintios-10-27-P02	1corintios-10-27-P01	θέλετε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+546	1corintios	10	27	1corintios-10-27-P03	1corintios-10-27-P02	ἐσθίετε	V-PAD-2P	2	P		candidate	not_detected	none	0	[]
+547	1corintios	10	28	1corintios-10-28-P01	1corintios-10-27-P03	εἴπῃ	V-AAS-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+548	1corintios	10	28	1corintios-10-28-P02	1corintios-10-28-P01	ἐστιν	V-PAI-3S	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+549	1corintios	10	28	1corintios-10-28-P03	1corintios-10-28-P02	ἐσθίετε	V-PAD-2P	2	P		candidate	not_detected	none	0	[]
+550	1corintios	10	29	1corintios-10-29-P01	1corintios-10-28-P03	λέγω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+551	1corintios	10	29	1corintios-10-29-P02	1corintios-10-29-P01	κρίνεται	V-PPI-3S	1	S		candidate	not_detected	none	0	[]
+552	1corintios	10	30	1corintios-10-30-P01	1corintios-10-29-P02	μετέχω	V-PAI-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+553	1corintios	10	30	1corintios-10-30-P02	1corintios-10-30-P01	βλασφημοῦμαι	V-PPI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+554	1corintios	10	30	1corintios-10-30-P03	1corintios-10-30-P02	εὐχαριστῶ	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+555	1corintios	10	31	1corintios-10-31-P01	1corintios-10-30-P03	ἐσθίετε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+556	1corintios	10	31	1corintios-10-31-P02	1corintios-10-31-P01	πίνετε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+557	1corintios	10	31	1corintios-10-31-P03	1corintios-10-31-P02	ποιεῖτε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+558	1corintios	10	31	1corintios-10-31-P04	1corintios-10-31-P03	ποιεῖτε	V-PAD-2P	2	P		candidate	not_detected	none	0	[]
+559	1corintios	10	32	1corintios-10-32-P01	1corintios-10-31-P04	γίνεσθε	V-PMD-2P	2	P		candidate	not_detected	none	0	[]
+560	1corintios	10	33	1corintios-10-33-P01	1corintios-10-32-P01	ἀρέσκω	V-PAI-1S	1	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+561	1corintios	10	33	1corintios-10-33-P02	1corintios-10-33-P01	σωθῶσιν	V-APS-3P	3	P		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+562	1corintios	11	1	1corintios-11-1-P01	1corintios-10-33-P02	γίνεσθε	V-PMD-2P	2	P		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+563	1corintios	11	2	1corintios-11-2-P01	1corintios-11-1-P01	ἐπαινῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+564	1corintios	11	2	1corintios-11-2-P02	1corintios-11-2-P01	μέμνησθε	V-XMI-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+565	1corintios	11	2	1corintios-11-2-P03	1corintios-11-2-P02	παρέδωκα	V-AAI-1S	1	S		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+566	1corintios	11	2	1corintios-11-2-P04	1corintios-11-2-P03	κατέχετε	V-PAI-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+567	1corintios	11	3	1corintios-11-3-P01	1corintios-11-2-P04	θέλω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+568	1corintios	11	3	1corintios-11-3-P02	1corintios-11-3-P01	ἐστιν	V-PAI-3S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+569	1corintios	11	4	1corintios-11-4-P01	1corintios-11-3-P02	καταισχύνει	V-PAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+570	1corintios	11	5	1corintios-11-5-P01	1corintios-11-4-P01	καταισχύνει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+571	1corintios	11	5	1corintios-11-5-P02	1corintios-11-5-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+572	1corintios	11	6	1corintios-11-6-P01	1corintios-11-5-P02	κατακαλύπτεται	V-PMI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+573	1corintios	11	6	1corintios-11-6-P02	1corintios-11-6-P01	κειράσθω	V-AMD-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+574	1corintios	11	6	1corintios-11-6-P03	1corintios-11-6-P02	κατακαλυπτέσθω	V-PMD-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+575	1corintios	11	7	1corintios-11-7-P01	1corintios-11-6-P03	ὀφείλει	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+576	1corintios	11	7	1corintios-11-7-P02	1corintios-11-7-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+577	1corintios	11	8	1corintios-11-8-P01	1corintios-11-7-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+578	1corintios	11	9	1corintios-11-9-P01	1corintios-11-8-P01	ἐκτίσθη	V-API-3S	3	S		candidate	not_detected	none	0	[]
+579	1corintios	11	10	1corintios-11-10-P01	1corintios-11-9-P01	ὀφείλει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+580	1corintios	11	13	1corintios-11-13-P01	1corintios-11-10-P01	κρίνατε	V-AAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+581	1corintios	11	13	1corintios-11-13-P02	1corintios-11-13-P01	ἐστὶν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+582	1corintios	11	14	1corintios-11-14-P01	1corintios-11-13-P02	διδάσκει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+583	1corintios	11	14	1corintios-11-14-P02	1corintios-11-14-P01	κομᾷ	V-PAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+584	1corintios	11	14	1corintios-11-14-P03	1corintios-11-14-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+585	1corintios	11	15	1corintios-11-15-P01	1corintios-11-14-P03	κομᾷ	V-PAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+586	1corintios	11	15	1corintios-11-15-P02	1corintios-11-15-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+587	1corintios	11	15	1corintios-11-15-P03	1corintios-11-15-P02	δέδοται	V-XPI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+588	1corintios	11	16	1corintios-11-16-P01	1corintios-11-15-P03	δοκεῖ	V-PAI-3S	3	S		unresolved	candidate	none	0	[]
+589	1corintios	11	16	1corintios-11-16-P02	1corintios-11-16-P01	ἔχομεν	V-PAI-1P	1	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+590	1corintios	11	17	1corintios-11-17-P01	1corintios-11-16-P02	ἐπαινῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""number_change""]"
+591	1corintios	11	17	1corintios-11-17-P02	1corintios-11-17-P01	συνέρχεσθε	V-PMI-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+592	1corintios	11	18	1corintios-11-18-P01	1corintios-11-17-P02	ἀκούω	V-PAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+593	1corintios	11	18	1corintios-11-18-P02	1corintios-11-18-P01	πιστεύω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+594	1corintios	11	19	1corintios-11-19-P01	1corintios-11-18-P02	δεῖ	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+595	1corintios	11	19	1corintios-11-19-P02	1corintios-11-19-P01	γένωνται	V-AMS-3P				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+596	1corintios	11	20	1corintios-11-20-P01	1corintios-11-19-P02	ἔστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+597	1corintios	11	21	1corintios-11-21-P01	1corintios-11-20-P01	προλαμβάνει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+598	1corintios	11	21	1corintios-11-21-P02	1corintios-11-21-P01	πεινᾷ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+599	1corintios	11	21	1corintios-11-21-P03	1corintios-11-21-P02	μεθύει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+600	1corintios	11	22	1corintios-11-22-P01	1corintios-11-21-P03	ἔχετε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+601	1corintios	11	22	1corintios-11-22-P02	1corintios-11-22-P01	καταφρονεῖτε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+602	1corintios	11	22	1corintios-11-22-P03	1corintios-11-22-P02	καταισχύνετε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+603	1corintios	11	22	1corintios-11-22-P04	1corintios-11-22-P03	εἴπω	V-AAS-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+604	1corintios	11	22	1corintios-11-22-P05	1corintios-11-22-P04	ἐπαινέσω	V-AAS-1S	1	S		candidate	not_detected	none	0	[]
+605	1corintios	11	22	1corintios-11-22-P06	1corintios-11-22-P05	ἐπαινῶ	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+606	1corintios	11	23	1corintios-11-23-P01	1corintios-11-22-P06	παρέλαβον	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+607	1corintios	11	23	1corintios-11-23-P02	1corintios-11-23-P01	παρέδωκα	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+608	1corintios	11	23	1corintios-11-23-P03	1corintios-11-23-P02	παρεδίδετο	V-IPI-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+609	1corintios	11	23	1corintios-11-23-P04	1corintios-11-23-P03	ἔλαβεν	V-AAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+610	1corintios	11	24	1corintios-11-24-P01	1corintios-11-23-P04	ἔκλασεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+611	1corintios	11	24	1corintios-11-24-P02	1corintios-11-24-P01	εἶπεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+612	1corintios	11	24	1corintios-11-24-P03	1corintios-11-24-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+613	1corintios	11	24	1corintios-11-24-P04	1corintios-11-24-P03	ποιεῖτε	V-PAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+614	1corintios	11	25	1corintios-11-25-P01	1corintios-11-24-P04	ἐστὶν	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+615	1corintios	11	25	1corintios-11-25-P02	1corintios-11-25-P01	ποιεῖτε	V-PAD-2P	2	P		candidate	not_detected	none	0	[]
+616	1corintios	11	25	1corintios-11-25-P03	1corintios-11-25-P02	πίνητε	V-PAS-2P	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+617	1corintios	11	26	1corintios-11-26-P01	1corintios-11-25-P03	ἐσθίητε	V-PAS-2P	2	P		unresolved	candidate	none	0	[]
+618	1corintios	11	26	1corintios-11-26-P02	1corintios-11-26-P01	πίνητε	V-PAS-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+619	1corintios	11	26	1corintios-11-26-P03	1corintios-11-26-P02	καταγγέλλετε	V-PAI-2P	2	P		candidate	not_detected	none	0	[]
+620	1corintios	11	26	1corintios-11-26-P04	1corintios-11-26-P03	ἔλθῃ	V-AAS-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+621	1corintios	11	27	1corintios-11-27-P01	1corintios-11-26-P04	ἐσθίῃ	V-PAS-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+622	1corintios	11	27	1corintios-11-27-P02	1corintios-11-27-P01	πίνῃ	V-PAS-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+623	1corintios	11	27	1corintios-11-27-P03	1corintios-11-27-P02	ἔσται	V-FMI-3S	3	S		candidate	not_detected	none	0	[]
+624	1corintios	11	28	1corintios-11-28-P01	1corintios-11-27-P03	δοκιμαζέτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+625	1corintios	11	28	1corintios-11-28-P02	1corintios-11-28-P01	ἐσθιέτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+626	1corintios	11	28	1corintios-11-28-P03	1corintios-11-28-P02	πινέτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+627	1corintios	11	29	1corintios-11-29-P01	1corintios-11-28-P03	ἐσθίει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+628	1corintios	11	29	1corintios-11-29-P02	1corintios-11-29-P01	πίνει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+629	1corintios	11	30	1corintios-11-30-P01	1corintios-11-29-P02	κοιμῶνται	V-PMI-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+630	1corintios	11	31	1corintios-11-31-P01	1corintios-11-30-P01	διεκρίνομεν	V-IAI-1P	1	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+631	1corintios	11	31	1corintios-11-31-P02	1corintios-11-31-P01	ἐκρινόμεθα	V-IPI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+632	1corintios	11	32	1corintios-11-32-P01	1corintios-11-31-P02	παιδευόμεθα	V-PPI-1P	1	P		candidate	not_detected	none	0	[]
+633	1corintios	11	32	1corintios-11-32-P02	1corintios-11-32-P01	κατακριθῶμεν	V-APS-1P	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+634	1corintios	11	33	1corintios-11-33-P01	1corintios-11-32-P02	ἐκδέχεσθε	V-PMD-2P	2	P		unresolved	candidate	candidate	1	"[""person_change""]"
+635	1corintios	11	34	1corintios-11-34-P01	1corintios-11-33-P01	πεινᾷ	V-PAI-3S	2	P		unresolved	candidate	none	0	[]
+636	1corintios	11	34	1corintios-11-34-P02	1corintios-11-34-P01	ἐσθιέτω	V-PAD-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+637	1corintios	11	34	1corintios-11-34-P03	1corintios-11-34-P02	συνέρχησθε	V-PMS-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+638	1corintios	11	34	1corintios-11-34-P04	1corintios-11-34-P03	ἔλθω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+639	1corintios	11	34	1corintios-11-34-P05	1corintios-11-34-P04	διατάξομαι	V-FMI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+640	1corintios	12	1	1corintios-12-1-P01	1corintios-11-34-P05	θέλω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+641	1corintios	12	2	1corintios-12-2-P01	1corintios-12-1-P01	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+642	1corintios	12	2	1corintios-12-2-P02	1corintios-12-2-P01	ἦτε	V-IAI-2P	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+643	1corintios	12	2	1corintios-12-2-P03	1corintios-12-2-P02	ἤγεσθε	V-IPI-2P	2	P		unresolved	candidate	none	0	[]
+644	1corintios	12	3	1corintios-12-3-P01	1corintios-12-2-P03	γνωρίζω	V-PAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+645	1corintios	12	3	1corintios-12-3-P02	1corintios-12-3-P01	λέγει	V-PAI-3S	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+646	1corintios	12	3	1corintios-12-3-P03	1corintios-12-3-P02	δύναται	V-PMI-3S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+647	1corintios	12	4	1corintios-12-4-P01	1corintios-12-3-P03	εἰσίν	V-PAI-3P	3	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+648	1corintios	12	5	1corintios-12-5-P01	1corintios-12-4-P01	εἰσιν	V-PAI-3P	3	P		candidate	not_detected	none	0	[]
+649	1corintios	12	6	1corintios-12-6-P01	1corintios-12-5-P01	εἰσίν	V-PAI-3P	3	P		candidate	not_detected	none	0	[]
+650	1corintios	12	7	1corintios-12-7-P01	1corintios-12-6-P01	δίδοται	V-PPI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+651	1corintios	12	8	1corintios-12-8-P01	1corintios-12-7-P01	δίδοται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+652	1corintios	12	11	1corintios-12-11-P01	1corintios-12-8-P01	ἐνεργεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+653	1corintios	12	11	1corintios-12-11-P02	1corintios-12-11-P01	βούλεται	V-PMI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+654	1corintios	12	12	1corintios-12-12-P01	1corintios-12-11-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+655	1corintios	12	12	1corintios-12-12-P02	1corintios-12-12-P01	ἔχει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+656	1corintios	12	12	1corintios-12-12-P03	1corintios-12-12-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+657	1corintios	12	13	1corintios-12-13-P01	1corintios-12-12-P03	ἐβαπτίσθημεν	V-API-1P	1	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+658	1corintios	12	13	1corintios-12-13-P02	1corintios-12-13-P01	ἐποτίσθημεν	V-API-1P	1	P		candidate	not_detected	none	0	[]
+659	1corintios	12	14	1corintios-12-14-P01	1corintios-12-13-P02	ἔστιν	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+660	1corintios	12	15	1corintios-12-15-P01	1corintios-12-14-P01	εἴπῃ	V-AAS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+661	1corintios	12	15	1corintios-12-15-P02	1corintios-12-15-P01	εἰμὶ	V-PAI-1S	1	S		unresolved	candidate	candidate	1	"[""person_change""]"
+662	1corintios	12	15	1corintios-12-15-P03	1corintios-12-15-P02	εἰμὶ	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+663	1corintios	12	15	1corintios-12-15-P04	1corintios-12-15-P03	ἔστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+664	1corintios	12	16	1corintios-12-16-P01	1corintios-12-15-P04	εἴπῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+665	1corintios	12	16	1corintios-12-16-P02	1corintios-12-16-P01	εἰμὶ	V-PAI-1S	1	S		unresolved	candidate	candidate	1	"[""person_change""]"
+666	1corintios	12	16	1corintios-12-16-P03	1corintios-12-16-P02	εἰμὶ	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+667	1corintios	12	16	1corintios-12-16-P04	1corintios-12-16-P03	ἔστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+668	1corintios	12	18	1corintios-12-18-P01	1corintios-12-16-P04	ἔθετο	V-AMI-3S	3	S		candidate	not_detected	none	0	[]
+669	1corintios	12	18	1corintios-12-18-P02	1corintios-12-18-P01	ἠθέλησεν	V-AAI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+670	1corintios	12	19	1corintios-12-19-P01	1corintios-12-18-P02	ἦν	V-IAI-3S	3	S		unresolved	candidate	none	0	[]
+671	1corintios	12	21	1corintios-12-21-P01	1corintios-12-19-P01	δύναται	V-PMI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+672	1corintios	12	21	1corintios-12-21-P02	1corintios-12-21-P01	ἔχω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+673	1corintios	12	21	1corintios-12-21-P03	1corintios-12-21-P02	ἔχω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+674	1corintios	12	22	1corintios-12-22-P01	1corintios-12-21-P03	ἐστιν	V-PAI-3S	1	S		candidate	not_detected	none	0	[]
+675	1corintios	12	23	1corintios-12-23-P01	1corintios-12-22-P01	δοκοῦμεν	V-PAI-1P	1	P		candidate	not_detected	candidate	1	"[""number_change""]"
+676	1corintios	12	23	1corintios-12-23-P02	1corintios-12-23-P01	περιτίθεμεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+677	1corintios	12	23	1corintios-12-23-P03	1corintios-12-23-P02	ἔχει	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+678	1corintios	12	24	1corintios-12-24-P01	1corintios-12-23-P03	ἔχει	V-PAI-3S	1	P		candidate	not_detected	none	0	[]
+679	1corintios	12	24	1corintios-12-24-P02	1corintios-12-24-P01	συνεκέρασεν	V-AAI-3S	1	P		candidate	not_detected	none	0	[]
+680	1corintios	12	25	1corintios-12-25-P01	1corintios-12-24-P02	ᾖ	V-PAS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+681	1corintios	12	25	1corintios-12-25-P02	1corintios-12-25-P01	μεριμνῶσι	V-PAS-3P	3	P		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+682	1corintios	12	26	1corintios-12-26-P01	1corintios-12-25-P02	πάσχει	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+683	1corintios	12	26	1corintios-12-26-P02	1corintios-12-26-P01	συμπάσχει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+684	1corintios	12	26	1corintios-12-26-P03	1corintios-12-26-P02	δοξάζεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+685	1corintios	12	26	1corintios-12-26-P04	1corintios-12-26-P03	συγχαίρει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+686	1corintios	12	27	1corintios-12-27-P01	1corintios-12-26-P04	ἐστε	V-PAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+687	1corintios	12	28	1corintios-12-28-P01	1corintios-12-27-P01	ἔθετο	V-AMI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+688	1corintios	12	30	1corintios-12-30-P01	1corintios-12-28-P01	ἔχουσιν	V-PAI-3P	3	S		candidate	not_detected	none	0	[]
+689	1corintios	12	30	1corintios-12-30-P02	1corintios-12-30-P01	λαλοῦσιν	V-PAI-3P	3	S		candidate	not_detected	none	0	[]
+690	1corintios	12	30	1corintios-12-30-P03	1corintios-12-30-P02	διερμηνεύουσιν	V-PAI-3P	3	S		candidate	not_detected	none	0	[]
+691	1corintios	12	31	1corintios-12-31-P01	1corintios-12-30-P03	ζηλοῦτε	V-PAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+692	1corintios	12	31	1corintios-12-31-P02	1corintios-12-31-P01	δείκνυμι	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+693	1corintios	13	1	1corintios-13-1-P01	1corintios-12-31-P02	λαλῶ	V-PAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+694	1corintios	13	1	1corintios-13-1-P02	1corintios-13-1-P01	ἔχω	V-PAS-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+695	1corintios	13	1	1corintios-13-1-P03	1corintios-13-1-P02	γέγονα	V-XAI-1S	1	S		candidate	not_detected	none	0	[]
+696	1corintios	13	2	1corintios-13-2-P01	1corintios-13-1-P03	ἔχω	V-PAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+697	1corintios	13	2	1corintios-13-2-P02	1corintios-13-2-P01	εἰδῶ	V-XAS-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+698	1corintios	13	2	1corintios-13-2-P03	1corintios-13-2-P02	ἔχω	V-PAS-1S	1	S		candidate	not_detected	none	0	[]
+699	1corintios	13	2	1corintios-13-2-P04	1corintios-13-2-P03	ἔχω	V-PAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+700	1corintios	13	2	1corintios-13-2-P05	1corintios-13-2-P04	εἰμι	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+701	1corintios	13	4	1corintios-13-4-P01	1corintios-13-2-P05	μακροθυμεῖ	V-PAI-3S	1	S		candidate	not_detected	none	0	[]
+702	1corintios	13	4	1corintios-13-4-P02	1corintios-13-4-P01	χρηστεύεται	V-PMI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+703	1corintios	13	4	1corintios-13-4-P03	1corintios-13-4-P02	ζηλοῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+704	1corintios	13	4	1corintios-13-4-P04	1corintios-13-4-P03	περπερεύεται	V-PMI-3S	3	S		candidate	not_detected	none	0	[]
+705	1corintios	13	4	1corintios-13-4-P05	1corintios-13-4-P04	φυσιοῦται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+706	1corintios	13	5	1corintios-13-5-P01	1corintios-13-4-P05	ἀσχημονεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+707	1corintios	13	5	1corintios-13-5-P02	1corintios-13-5-P01	ζητεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+708	1corintios	13	5	1corintios-13-5-P03	1corintios-13-5-P02	παροξύνεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+709	1corintios	13	5	1corintios-13-5-P04	1corintios-13-5-P03	λογίζεται	V-PMI-3S	3	S		candidate	not_detected	none	0	[]
+710	1corintios	13	6	1corintios-13-6-P01	1corintios-13-5-P04	χαίρει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+711	1corintios	13	6	1corintios-13-6-P02	1corintios-13-6-P01	συγχαίρει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+712	1corintios	13	7	1corintios-13-7-P01	1corintios-13-6-P02	στέγει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+713	1corintios	13	7	1corintios-13-7-P02	1corintios-13-7-P01	πιστεύει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+714	1corintios	13	7	1corintios-13-7-P03	1corintios-13-7-P02	ἐλπίζει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+715	1corintios	13	7	1corintios-13-7-P04	1corintios-13-7-P03	ὑπομένει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+716	1corintios	13	8	1corintios-13-8-P01	1corintios-13-7-P04	πίπτει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+717	1corintios	13	8	1corintios-13-8-P02	1corintios-13-8-P01	καταργηθήσονται	V-FPI-3P	3	S		candidate	not_detected	none	0	[]
+718	1corintios	13	8	1corintios-13-8-P03	1corintios-13-8-P02	παύσονται	V-FMI-3P	3	S		candidate	not_detected	none	0	[]
+719	1corintios	13	8	1corintios-13-8-P04	1corintios-13-8-P03	καταργηθήσεται	V-FPI-3S	3	S		candidate	not_detected	none	0	[]
+720	1corintios	13	9	1corintios-13-9-P01	1corintios-13-8-P04	γινώσκομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+721	1corintios	13	9	1corintios-13-9-P02	1corintios-13-9-P01	προφητεύομεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+722	1corintios	13	10	1corintios-13-10-P01	1corintios-13-9-P02	ἔλθῃ	V-AAS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+723	1corintios	13	10	1corintios-13-10-P02	1corintios-13-10-P01	καταργηθήσεται	V-FPI-3S	1	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+724	1corintios	13	11	1corintios-13-11-P01	1corintios-13-10-P02	ἤμην	V-IMI-1S	1	S		unresolved	candidate	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+725	1corintios	13	11	1corintios-13-11-P02	1corintios-13-11-P01	ἐλάλουν	V-IAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+726	1corintios	13	11	1corintios-13-11-P03	1corintios-13-11-P02	ἐφρόνουν	V-IAI-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+727	1corintios	13	11	1corintios-13-11-P04	1corintios-13-11-P03	ἐλογιζόμην	V-IMI-1S	1	S		unresolved	candidate	none	0	[]
+728	1corintios	13	11	1corintios-13-11-P05	1corintios-13-11-P04	γέγονα	V-XAI-1S	1	S		unresolved	candidate	none	0	[]
+729	1corintios	13	11	1corintios-13-11-P06	1corintios-13-11-P05	κατήργηκα	V-XAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+730	1corintios	13	12	1corintios-13-12-P01	1corintios-13-11-P06	βλέπομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	1	"[""number_change""]"
+731	1corintios	13	12	1corintios-13-12-P02	1corintios-13-12-P01	γινώσκω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""number_change""]"
+732	1corintios	13	12	1corintios-13-12-P03	1corintios-13-12-P02	ἐπιγνώσομαι	V-FMI-1S	1	S		candidate	not_detected	none	0	[]
+733	1corintios	13	12	1corintios-13-12-P04	1corintios-13-12-P03	ἐπεγνώσθην	V-API-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+734	1corintios	13	13	1corintios-13-13-P01	1corintios-13-12-P04	μένει	V-PAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+735	1corintios	14	1	1corintios-14-1-P01	1corintios-13-13-P01	διώκετε	V-PAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+736	1corintios	14	1	1corintios-14-1-P02	1corintios-14-1-P01	ζηλοῦτε	V-PAD-2P	2	P		candidate	not_detected	none	0	[]
+737	1corintios	14	1	1corintios-14-1-P03	1corintios-14-1-P02	προφητεύητε	V-PAS-2P	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+738	1corintios	14	2	1corintios-14-2-P01	1corintios-14-1-P03	λαλεῖ	V-PAI-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+739	1corintios	14	2	1corintios-14-2-P02	1corintios-14-2-P01	ἀκούει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+740	1corintios	14	2	1corintios-14-2-P03	1corintios-14-2-P02	λαλεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+741	1corintios	14	3	1corintios-14-3-P01	1corintios-14-2-P03	λαλεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+742	1corintios	14	4	1corintios-14-4-P01	1corintios-14-3-P01	οἰκοδομεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+743	1corintios	14	4	1corintios-14-4-P02	1corintios-14-4-P01	οἰκοδομεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+744	1corintios	14	5	1corintios-14-5-P01	1corintios-14-4-P02	θέλω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+745	1corintios	14	5	1corintios-14-5-P02	1corintios-14-5-P01	προφητεύητε	V-PAS-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+746	1corintios	14	5	1corintios-14-5-P03	1corintios-14-5-P02	διερμηνεύῃ	V-PAS-3S	2	P		unresolved	candidate	none	0	[]
+747	1corintios	14	5	1corintios-14-5-P04	1corintios-14-5-P03	λάβῃ	V-AAS-3S	2	P		unresolved	candidate	none	0	[]
+748	1corintios	14	6	1corintios-14-6-P01	1corintios-14-5-P04	ἔλθω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+749	1corintios	14	6	1corintios-14-6-P02	1corintios-14-6-P01	ὠφελήσω	V-FAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+750	1corintios	14	6	1corintios-14-6-P03	1corintios-14-6-P02	λαλήσω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+751	1corintios	14	7	1corintios-14-7-P01	1corintios-14-6-P03	δῷ	V-AAS-3S	1	S		unresolved	candidate	none	0	[]
+752	1corintios	14	7	1corintios-14-7-P02	1corintios-14-7-P01	γνωσθήσεται	V-FPI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+753	1corintios	14	8	1corintios-14-8-P01	1corintios-14-7-P02	δῷ	V-AAS-3S	1	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+754	1corintios	14	8	1corintios-14-8-P02	1corintios-14-8-P01	παρασκευάσεται	V-FMI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+755	1corintios	14	9	1corintios-14-9-P01	1corintios-14-8-P02	δῶτε	V-AAS-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+756	1corintios	14	9	1corintios-14-9-P02	1corintios-14-9-P01	γνωσθήσεται	V-FPI-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+757	1corintios	14	9	1corintios-14-9-P03	1corintios-14-9-P02	ἔσεσθε	V-FMI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+758	1corintios	14	10	1corintios-14-10-P01	1corintios-14-9-P03	τύχοι	V-AAO-3S	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+759	1corintios	14	10	1corintios-14-10-P02	1corintios-14-10-P01	εἰσιν	V-PAI-3P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+760	1corintios	14	11	1corintios-14-11-P01	1corintios-14-10-P02	εἰδῶ	V-XAS-1S	1	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+761	1corintios	14	11	1corintios-14-11-P02	1corintios-14-11-P01	ἔσομαι	V-FMI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+762	1corintios	14	12	1corintios-14-12-P01	1corintios-14-11-P02	ἐστε	V-PAI-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+763	1corintios	14	12	1corintios-14-12-P02	1corintios-14-12-P01	ζητεῖτε	V-PAD-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+764	1corintios	14	12	1corintios-14-12-P03	1corintios-14-12-P02	περισσεύητε	V-PAS-2P	2	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+765	1corintios	14	13	1corintios-14-13-P01	1corintios-14-12-P03	προσευχέσθω	V-PMD-3S	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+766	1corintios	14	13	1corintios-14-13-P02	1corintios-14-13-P01	διερμηνεύῃ	V-PAS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+767	1corintios	14	14	1corintios-14-14-P01	1corintios-14-13-P02	προσεύχωμαι	V-PMS-1S	1	S		unresolved	candidate	candidate	1	"[""person_change""]"
+768	1corintios	14	14	1corintios-14-14-P02	1corintios-14-14-P01	προσεύχεται	V-PMI-3S	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+769	1corintios	14	14	1corintios-14-14-P03	1corintios-14-14-P02	ἐστιν	V-PAI-3S	2	P		candidate	not_detected	none	0	[]
+770	1corintios	14	15	1corintios-14-15-P01	1corintios-14-14-P03	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+771	1corintios	14	15	1corintios-14-15-P02	1corintios-14-15-P01	προσεύξομαι	V-FMI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+772	1corintios	14	15	1corintios-14-15-P03	1corintios-14-15-P02	προσεύξομαι	V-FMI-1S	1	S		candidate	not_detected	none	0	[]
+773	1corintios	14	15	1corintios-14-15-P04	1corintios-14-15-P03	ψαλῶ	V-FAI-1S	1	S		candidate	not_detected	none	0	[]
+774	1corintios	14	15	1corintios-14-15-P05	1corintios-14-15-P04	ψαλῶ	V-FAI-1S	1	S		candidate	not_detected	none	0	[]
+775	1corintios	14	16	1corintios-14-16-P01	1corintios-14-15-P05	εὐλογῇς	V-PAS-2S	2	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+776	1corintios	14	16	1corintios-14-16-P02	1corintios-14-16-P01	ἐρεῖ	V-FAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+777	1corintios	14	16	1corintios-14-16-P03	1corintios-14-16-P02	λέγεις	V-PAI-2S	2	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+778	1corintios	14	16	1corintios-14-16-P04	1corintios-14-16-P03	οἶδεν	V-XAI-3S	3	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+779	1corintios	14	17	1corintios-14-17-P01	1corintios-14-16-P04	εὐχαριστεῖς	V-PAI-2S	2	S		candidate	not_detected	candidate	1	"[""person_change""]"
+780	1corintios	14	17	1corintios-14-17-P02	1corintios-14-17-P01	οἰκοδομεῖται	V-PPI-3S	2	S		candidate	not_detected	none	0	[]
+781	1corintios	14	18	1corintios-14-18-P01	1corintios-14-17-P02	εὐχαριστῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+782	1corintios	14	18	1corintios-14-18-P02	1corintios-14-18-P01	λαλῶ	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+783	1corintios	14	19	1corintios-14-19-P01	1corintios-14-18-P02	θέλω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+784	1corintios	14	19	1corintios-14-19-P02	1corintios-14-19-P01	κατηχήσω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+785	1corintios	14	20	1corintios-14-20-P01	1corintios-14-19-P02	γίνεσθε	V-PMD-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+786	1corintios	14	20	1corintios-14-20-P02	1corintios-14-20-P01	νηπιάζετε	V-PAD-2P	2	P		candidate	not_detected	none	0	[]
+787	1corintios	14	20	1corintios-14-20-P03	1corintios-14-20-P02	γίνεσθε	V-PMD-2P	2	P		candidate	not_detected	none	0	[]
+788	1corintios	14	21	1corintios-14-21-P01	1corintios-14-20-P03	γέγραπται	V-XPI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+789	1corintios	14	21	1corintios-14-21-P02	1corintios-14-21-P01	λαλήσω	V-FAI-1S	1	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+790	1corintios	14	21	1corintios-14-21-P03	1corintios-14-21-P02	εἰσακούσονταί	V-FMI-3P	3	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+791	1corintios	14	21	1corintios-14-21-P04	1corintios-14-21-P03	λέγει	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+792	1corintios	14	22	1corintios-14-22-P01	1corintios-14-21-P04	εἰσιν	V-PAI-3P	1	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+793	1corintios	14	23	1corintios-14-23-P01	1corintios-14-22-P01	συνέλθῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	1	"[""person_change""]"
+794	1corintios	14	23	1corintios-14-23-P02	1corintios-14-23-P01	λαλῶσιν	V-PAS-3P	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+795	1corintios	14	23	1corintios-14-23-P03	1corintios-14-23-P02	εἰσέλθωσιν	V-AAS-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+796	1corintios	14	23	1corintios-14-23-P04	1corintios-14-23-P03	ἐροῦσιν	V-FAI-3P	3	P		candidate	not_detected	none	0	[]
+797	1corintios	14	23	1corintios-14-23-P05	1corintios-14-23-P04	μαίνεσθε	V-PMI-2P	2	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+798	1corintios	14	24	1corintios-14-24-P01	1corintios-14-23-P05	προφητεύωσιν	V-PAS-3P	2	P		unresolved	candidate	none	0	[]
+799	1corintios	14	24	1corintios-14-24-P02	1corintios-14-24-P01	εἰσέλθῃ	V-AAS-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+800	1corintios	14	24	1corintios-14-24-P03	1corintios-14-24-P02	ἐλέγχεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+801	1corintios	14	24	1corintios-14-24-P04	1corintios-14-24-P03	ἀνακρίνεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+802	1corintios	14	25	1corintios-14-25-P01	1corintios-14-24-P04	γίνεται	V-PMI-3S	3	S		candidate	not_detected	none	0	[]
+803	1corintios	14	25	1corintios-14-25-P02	1corintios-14-25-P01	προσκυνήσει	V-FAI-3S	3	S		candidate	not_detected	none	0	[]
+804	1corintios	14	25	1corintios-14-25-P03	1corintios-14-25-P02	ἐστιν	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+805	1corintios	14	26	1corintios-14-26-P01	1corintios-14-25-P03	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+806	1corintios	14	26	1corintios-14-26-P02	1corintios-14-26-P01	συνέρχησθε	V-PMS-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+807	1corintios	14	26	1corintios-14-26-P03	1corintios-14-26-P02	ἔχει	V-PAI-3S	3	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+808	1corintios	14	26	1corintios-14-26-P04	1corintios-14-26-P03	ἔχει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+809	1corintios	14	26	1corintios-14-26-P05	1corintios-14-26-P04	ἔχει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+810	1corintios	14	26	1corintios-14-26-P06	1corintios-14-26-P05	ἔχει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+811	1corintios	14	26	1corintios-14-26-P07	1corintios-14-26-P06	ἔχει	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+812	1corintios	14	26	1corintios-14-26-P08	1corintios-14-26-P07	γινέσθω	V-PMD-3S	3	S		candidate	not_detected	none	0	[]
+813	1corintios	14	27	1corintios-14-27-P01	1corintios-14-26-P08	λαλεῖ	V-PAI-3S	3	S		candidate	not_detected	none	0	[]
+814	1corintios	14	27	1corintios-14-27-P02	1corintios-14-27-P01	διερμηνευέτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+815	1corintios	14	28	1corintios-14-28-P01	1corintios-14-27-P02	ᾖ	V-PAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+816	1corintios	14	28	1corintios-14-28-P02	1corintios-14-28-P01	σιγάτω	V-PAD-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+817	1corintios	14	28	1corintios-14-28-P03	1corintios-14-28-P02	λαλείτω	V-PAD-3S	3	S		candidate	not_detected	none	0	[]
+818	1corintios	14	29	1corintios-14-29-P01	1corintios-14-28-P03	λαλείτωσαν	V-PAD-3P	3	S		candidate	not_detected	none	0	[]
+819	1corintios	14	29	1corintios-14-29-P02	1corintios-14-29-P01	διακρινέτωσαν	V-PAD-3P	3	S		candidate	not_detected	none	0	[]
+820	1corintios	14	30	1corintios-14-30-P01	1corintios-14-29-P02	ἀποκαλυφθῇ	V-APS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+821	1corintios	14	30	1corintios-14-30-P02	1corintios-14-30-P01	σιγάτω	V-PAD-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+822	1corintios	14	31	1corintios-14-31-P01	1corintios-14-30-P02	δύνασθε	V-PMI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+823	1corintios	14	31	1corintios-14-31-P02	1corintios-14-31-P01	μανθάνωσιν	V-PAS-3P	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+824	1corintios	14	31	1corintios-14-31-P03	1corintios-14-31-P02	παρακαλῶνται	V-PPS-3P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+825	1corintios	14	32	1corintios-14-32-P01	1corintios-14-31-P03	ὑποτάσσεται	V-PPI-3S	2	P		candidate	not_detected	none	0	[]
+826	1corintios	14	33	1corintios-14-33-P01	1corintios-14-32-P01	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+827	1corintios	14	34	1corintios-14-34-P01	1corintios-14-33-P01	σιγάτωσαν	V-PAD-3P	3	S		candidate	not_detected	none	0	[]
+828	1corintios	14	34	1corintios-14-34-P02	1corintios-14-34-P01	ἐπιτρέπεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+829	1corintios	14	34	1corintios-14-34-P03	1corintios-14-34-P02	ὑποτασσέσθωσαν	V-PPD-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+830	1corintios	14	34	1corintios-14-34-P04	1corintios-14-34-P03	λέγει	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+831	1corintios	14	35	1corintios-14-35-P01	1corintios-14-34-P04	θέλουσιν	V-PAI-3P	3	P		unresolved	candidate	none	0	[]
+832	1corintios	14	35	1corintios-14-35-P02	1corintios-14-35-P01	ἐπερωτάτωσαν	V-PAD-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+833	1corintios	14	35	1corintios-14-35-P03	1corintios-14-35-P02	ἐστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+834	1corintios	14	36	1corintios-14-36-P01	1corintios-14-35-P03	ἐξῆλθεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+835	1corintios	14	36	1corintios-14-36-P02	1corintios-14-36-P01	κατήντησεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+836	1corintios	14	37	1corintios-14-37-P01	1corintios-14-36-P02	δοκεῖ	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+837	1corintios	14	37	1corintios-14-37-P02	1corintios-14-37-P01	ἐπιγινωσκέτω	V-PAD-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+838	1corintios	14	37	1corintios-14-37-P03	1corintios-14-37-P02	γράφω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+839	1corintios	14	37	1corintios-14-37-P04	1corintios-14-37-P03	ἐστίν	V-PAI-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+840	1corintios	14	38	1corintios-14-38-P01	1corintios-14-37-P04	ἀγνοεῖ	V-PAI-3S	3	S		unresolved	candidate	none	0	[]
+841	1corintios	14	38	1corintios-14-38-P02	1corintios-14-38-P01	ἀγνοεῖται	V-PPI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+842	1corintios	14	39	1corintios-14-39-P01	1corintios-14-38-P02	ζηλοῦτε	V-PAD-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+843	1corintios	14	39	1corintios-14-39-P02	1corintios-14-39-P01	κωλύετε	V-PAD-2P	2	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+844	1corintios	14	40	1corintios-14-40-P01	1corintios-14-39-P02	γινέσθω	V-PMD-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+845	1corintios	15	1	1corintios-15-1-P01	1corintios-14-40-P01	γνωρίζω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+846	1corintios	15	1	1corintios-15-1-P02	1corintios-15-1-P01	εὐηγγελισάμην	V-AMI-1S	1	S		candidate	not_detected	none	0	[]
+847	1corintios	15	1	1corintios-15-1-P03	1corintios-15-1-P02	παρελάβετε	V-AAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+848	1corintios	15	1	1corintios-15-1-P04	1corintios-15-1-P03	ἑστήκατε	V-XAI-2P	2	P		candidate	not_detected	none	0	[]
+849	1corintios	15	2	1corintios-15-2-P01	1corintios-15-1-P04	σῴζεσθε	V-PPI-2P	2	P		candidate	not_detected	none	0	[]
+850	1corintios	15	2	1corintios-15-2-P02	1corintios-15-2-P01	εὐηγγελισάμην	V-AMI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+851	1corintios	15	2	1corintios-15-2-P03	1corintios-15-2-P02	κατέχετε	V-PAI-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+852	1corintios	15	2	1corintios-15-2-P04	1corintios-15-2-P03	ἐπιστεύσατε	V-AAI-2P	2	P		unresolved	candidate	none	0	[]
+853	1corintios	15	3	1corintios-15-3-P01	1corintios-15-2-P04	παρέδωκα	V-AAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+854	1corintios	15	3	1corintios-15-3-P02	1corintios-15-3-P01	παρέλαβον	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+855	1corintios	15	3	1corintios-15-3-P03	1corintios-15-3-P02	ἀπέθανεν	V-AAI-3S	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+856	1corintios	15	4	1corintios-15-4-P01	1corintios-15-3-P03	ἐτάφη	V-API-3S	3	S		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+857	1corintios	15	4	1corintios-15-4-P02	1corintios-15-4-P01	ἐγήγερται	V-XPI-3S	3	S		unresolved	candidate	none	0	[]
+858	1corintios	15	5	1corintios-15-5-P01	1corintios-15-4-P02	ὤφθη	V-API-3S	3	S		unresolved	candidate	none	0	[]
+859	1corintios	15	6	1corintios-15-6-P01	1corintios-15-5-P01	ὤφθη	V-API-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+860	1corintios	15	6	1corintios-15-6-P02	1corintios-15-6-P01	μένουσιν	V-PAI-3P	3	S		candidate	not_detected	none	0	[]
+861	1corintios	15	6	1corintios-15-6-P03	1corintios-15-6-P02	ἐκοιμήθησαν	V-API-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+862	1corintios	15	7	1corintios-15-7-P01	1corintios-15-6-P03	ὤφθη	V-API-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+863	1corintios	15	8	1corintios-15-8-P01	1corintios-15-7-P01	ὤφθη	V-API-3S	3	S		candidate	not_detected	none	0	[]
+864	1corintios	15	9	1corintios-15-9-P01	1corintios-15-8-P01	εἰμι	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+865	1corintios	15	9	1corintios-15-9-P02	1corintios-15-9-P01	εἰμὶ	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+866	1corintios	15	9	1corintios-15-9-P03	1corintios-15-9-P02	ἐδίωξα	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+867	1corintios	15	10	1corintios-15-10-P01	1corintios-15-9-P03	εἰμι	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+868	1corintios	15	10	1corintios-15-10-P02	1corintios-15-10-P01	εἰμι	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+869	1corintios	15	10	1corintios-15-10-P03	1corintios-15-10-P02	ἐγενήθη	V-API-3S	1	S		candidate	not_detected	none	0	[]
+870	1corintios	15	10	1corintios-15-10-P04	1corintios-15-10-P03	ἐκοπίασα	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+871	1corintios	15	11	1corintios-15-11-P01	1corintios-15-10-P04	κηρύσσομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	1	"[""number_change""]"
+872	1corintios	15	11	1corintios-15-11-P02	1corintios-15-11-P01	ἐπιστεύσατε	V-AAI-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+873	1corintios	15	12	1corintios-15-12-P01	1corintios-15-11-P02	κηρύσσεται	V-PPI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+874	1corintios	15	12	1corintios-15-12-P02	1corintios-15-12-P01	ἐγήγερται	V-XPI-3S	3	S		unresolved	candidate	none	0	[]
+875	1corintios	15	12	1corintios-15-12-P03	1corintios-15-12-P02	λέγουσιν	V-PAI-3P	3	P		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+876	1corintios	15	12	1corintios-15-12-P04	1corintios-15-12-P03	ἔστιν	V-PAI-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+877	1corintios	15	13	1corintios-15-13-P01	1corintios-15-12-P04	ἔστιν	V-PAI-3S	3	S		unresolved	candidate	none	0	[]
+878	1corintios	15	13	1corintios-15-13-P02	1corintios-15-13-P01	ἐγήγερται	V-XPI-3S	3	P		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+879	1corintios	15	14	1corintios-15-14-P01	1corintios-15-13-P02	ἐγήγερται	V-XPI-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+880	1corintios	15	15	1corintios-15-15-P01	1corintios-15-14-P01	εὑρισκόμεθα	V-PPI-1P	1	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+881	1corintios	15	15	1corintios-15-15-P02	1corintios-15-15-P01	ἐμαρτυρήσαμεν	V-AAI-1P	1	P		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+882	1corintios	15	15	1corintios-15-15-P03	1corintios-15-15-P02	ἤγειρεν	V-AAI-3S	3	S		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+883	1corintios	15	15	1corintios-15-15-P04	1corintios-15-15-P03	ἤγειρεν	V-AAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+884	1corintios	15	15	1corintios-15-15-P05	1corintios-15-15-P04	ἐγείρονται	V-PPI-3P	3	S		candidate	not_detected	none	0	[]
+885	1corintios	15	16	1corintios-15-16-P01	1corintios-15-15-P05	ἐγείρονται	V-PPI-3P	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+886	1corintios	15	16	1corintios-15-16-P02	1corintios-15-16-P01	ἐγήγερται	V-XPI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+887	1corintios	15	17	1corintios-15-17-P01	1corintios-15-16-P02	ἐγήγερται	V-XPI-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+888	1corintios	15	17	1corintios-15-17-P02	1corintios-15-17-P01	ἐστὲ	V-PAI-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+889	1corintios	15	18	1corintios-15-18-P01	1corintios-15-17-P02	ἀπώλοντο	V-AMI-3P	2	P		candidate	not_detected	none	0	[]
+890	1corintios	15	19	1corintios-15-19-P01	1corintios-15-18-P01	ἐσμὲν	V-PAI-1P	1	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+891	1corintios	15	19	1corintios-15-19-P02	1corintios-15-19-P01	ἐσμέν	V-PAI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+892	1corintios	15	20	1corintios-15-20-P01	1corintios-15-19-P02	ἐγήγερται	V-XPI-3S	1	P		candidate	not_detected	none	0	[]
+893	1corintios	15	22	1corintios-15-22-P01	1corintios-15-20-P01	ἀποθνῄσκουσιν	V-PAI-3P	1	P		candidate	not_detected	none	0	[]
+894	1corintios	15	22	1corintios-15-22-P02	1corintios-15-22-P01	ζῳοποιηθήσονται	V-FPI-3P	1	P		candidate	not_detected	none	0	[]
+895	1corintios	15	24	1corintios-15-24-P01	1corintios-15-22-P02	παραδιδῷ	V-PAS-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+896	1corintios	15	24	1corintios-15-24-P02	1corintios-15-24-P01	καταργήσῃ	V-AAS-3S	3	S		unresolved	candidate	none	0	[]
+897	1corintios	15	25	1corintios-15-25-P01	1corintios-15-24-P02	δεῖ	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+898	1corintios	15	25	1corintios-15-25-P02	1corintios-15-25-P01	θῇ	V-AAS-3S	3	S		candidate	not_detected	none	0	[]
+899	1corintios	15	26	1corintios-15-26-P01	1corintios-15-25-P02	καταργεῖται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+900	1corintios	15	27	1corintios-15-27-P01	1corintios-15-26-P01	ὑπέταξεν	V-AAI-3S	3	S		candidate	not_detected	none	0	[]
+901	1corintios	15	27	1corintios-15-27-P02	1corintios-15-27-P01	εἴπῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+902	1corintios	15	27	1corintios-15-27-P03	1corintios-15-27-P02	ὑποτέτακται	V-XPI-3S	3	S		unresolved	candidate	none	0	[]
+903	1corintios	15	28	1corintios-15-28-P01	1corintios-15-27-P03	ὑποταγῇ	V-APS-3S	3	S		unresolved	candidate	none	0	[]
+904	1corintios	15	28	1corintios-15-28-P02	1corintios-15-28-P01	ὑποταγήσεται	V-FPI-3S				candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+905	1corintios	15	28	1corintios-15-28-P03	1corintios-15-28-P02	ᾖ	V-PAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+906	1corintios	15	29	1corintios-15-29-P01	1corintios-15-28-P03	ποιήσουσιν	V-FAI-3P	3	P		unresolved	candidate	candidate	1	"[""number_change""]"
+907	1corintios	15	29	1corintios-15-29-P02	1corintios-15-29-P01	ἐγείρονται	V-PPI-3P	3	P		unresolved	candidate	none	0	[]
+908	1corintios	15	29	1corintios-15-29-P03	1corintios-15-29-P02	βαπτίζονται	V-PPI-3P	3	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+909	1corintios	15	30	1corintios-15-30-P01	1corintios-15-29-P03	κινδυνεύομεν	V-PAI-1P	1	P		candidate	not_detected	candidate	1	"[""person_change""]"
+910	1corintios	15	31	1corintios-15-31-P01	1corintios-15-30-P01	ἀποθνῄσκω	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""number_change""]"
+911	1corintios	15	31	1corintios-15-31-P02	1corintios-15-31-P01	ἔχω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+912	1corintios	15	32	1corintios-15-32-P01	1corintios-15-31-P02	ἐθηριομάχησα	V-AAI-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+913	1corintios	15	32	1corintios-15-32-P02	1corintios-15-32-P01	ἐγείρονται	V-PPI-3P	1	S		unresolved	candidate	none	0	[]
+914	1corintios	15	32	1corintios-15-32-P03	1corintios-15-32-P02	φάγωμεν	V-AAS-1P	1	P		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+915	1corintios	15	32	1corintios-15-32-P04	1corintios-15-32-P03	πίωμεν	V-AAS-1P	1	P		candidate	not_detected	none	0	[]
+916	1corintios	15	32	1corintios-15-32-P05	1corintios-15-32-P04	ἀποθνῄσκομεν	V-PAI-1P	1	P		candidate	not_detected	none	0	[]
+917	1corintios	15	33	1corintios-15-33-P01	1corintios-15-32-P05	πλανᾶσθε	V-PPD-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+918	1corintios	15	33	1corintios-15-33-P02	1corintios-15-33-P01	φθείρουσιν	V-PAI-3P	3	P		candidate	not_detected	candidate	1	"[""person_change""]"
+919	1corintios	15	34	1corintios-15-34-P01	1corintios-15-33-P02	ἐκνήψατε	V-AAD-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+920	1corintios	15	34	1corintios-15-34-P02	1corintios-15-34-P01	ἁμαρτάνετε	V-PAD-2P	2	P		candidate	not_detected	none	0	[]
+921	1corintios	15	34	1corintios-15-34-P03	1corintios-15-34-P02	ἔχουσιν	V-PAI-3P	2	P		candidate	not_detected	none	0	[]
+922	1corintios	15	34	1corintios-15-34-P04	1corintios-15-34-P03	λαλῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+923	1corintios	15	35	1corintios-15-35-P01	1corintios-15-34-P04	ἐρεῖ	V-FAI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+924	1corintios	15	35	1corintios-15-35-P02	1corintios-15-35-P01	ἐγείρονται	V-PPI-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+925	1corintios	15	35	1corintios-15-35-P03	1corintios-15-35-P02	ἔρχονται	V-PMI-3P	3	P		candidate	not_detected	none	0	[]
+926	1corintios	15	36	1corintios-15-36-P01	1corintios-15-35-P03	σπείρεις	V-PAI-2S	2	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+927	1corintios	15	36	1corintios-15-36-P02	1corintios-15-36-P01	ζῳοποιεῖται	V-PPI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+928	1corintios	15	36	1corintios-15-36-P03	1corintios-15-36-P02	ἀποθάνῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+929	1corintios	15	37	1corintios-15-37-P01	1corintios-15-36-P03	σπείρεις	V-PAI-2S	2	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+930	1corintios	15	37	1corintios-15-37-P02	1corintios-15-37-P01	σπείρεις	V-PAI-2S	2	S		candidate	not_detected	none	0	[]
+931	1corintios	15	37	1corintios-15-37-P03	1corintios-15-37-P02	τύχοι	V-AAO-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+932	1corintios	15	38	1corintios-15-38-P01	1corintios-15-37-P03	δίδωσιν	V-PAI-3S	2	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+933	1corintios	15	38	1corintios-15-38-P02	1corintios-15-38-P01	ἠθέλησεν	V-AAI-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+934	1corintios	15	41	1corintios-15-41-P01	1corintios-15-38-P02	διαφέρει	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+935	1corintios	15	42	1corintios-15-42-P01	1corintios-15-41-P01	σπείρεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+936	1corintios	15	42	1corintios-15-42-P02	1corintios-15-42-P01	ἐγείρεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+937	1corintios	15	43	1corintios-15-43-P01	1corintios-15-42-P02	σπείρεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+938	1corintios	15	43	1corintios-15-43-P02	1corintios-15-43-P01	ἐγείρεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+939	1corintios	15	43	1corintios-15-43-P03	1corintios-15-43-P02	σπείρεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+940	1corintios	15	43	1corintios-15-43-P04	1corintios-15-43-P03	ἐγείρεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+941	1corintios	15	44	1corintios-15-44-P01	1corintios-15-43-P04	σπείρεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+942	1corintios	15	44	1corintios-15-44-P02	1corintios-15-44-P01	ἐγείρεται	V-PPI-3S	3	S		candidate	not_detected	none	0	[]
+943	1corintios	15	44	1corintios-15-44-P03	1corintios-15-44-P02	ἔστιν	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+944	1corintios	15	44	1corintios-15-44-P04	1corintios-15-44-P03	ἔστιν	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+945	1corintios	15	45	1corintios-15-45-P01	1corintios-15-44-P04	γέγραπται	V-XPI-3S	3	S		candidate	not_detected	none	0	[]
+946	1corintios	15	45	1corintios-15-45-P02	1corintios-15-45-P01	ἐγένετο	V-AMI-3S	3	S		candidate	not_detected	none	0	[]
+947	1corintios	15	49	1corintios-15-49-P01	1corintios-15-45-P02	ἐφορέσαμεν	V-AAI-1P	1	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+948	1corintios	15	49	1corintios-15-49-P02	1corintios-15-49-P01	φορέσομεν	V-FAI-1P	1	P		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+949	1corintios	15	50	1corintios-15-50-P01	1corintios-15-49-P02	φημι	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""number_change""]"
+950	1corintios	15	50	1corintios-15-50-P02	1corintios-15-50-P01	δύναται	V-PMI-3S	1	P		unresolved	candidate	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+951	1corintios	15	50	1corintios-15-50-P03	1corintios-15-50-P02	κληρονομεῖ	V-PAI-3S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+952	1corintios	15	51	1corintios-15-51-P01	1corintios-15-50-P03	λέγω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+953	1corintios	15	51	1corintios-15-51-P02	1corintios-15-51-P01	κοιμηθησόμεθα	V-FPI-1P	1	P		candidate	not_detected	candidate	1	"[""number_change""]"
+954	1corintios	15	51	1corintios-15-51-P03	1corintios-15-51-P02	ἀλλαγησόμεθα	V-FPI-1P	1	P		candidate	not_detected	none	0	[]
+955	1corintios	15	52	1corintios-15-52-P01	1corintios-15-51-P03	σαλπίσει	V-FAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+956	1corintios	15	52	1corintios-15-52-P02	1corintios-15-52-P01	ἐγερθήσονται	V-FPI-3P	3	S		candidate	not_detected	none	0	[]
+957	1corintios	15	52	1corintios-15-52-P03	1corintios-15-52-P02	ἀλλαγησόμεθα	V-FPI-1P	1	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+958	1corintios	15	53	1corintios-15-53-P01	1corintios-15-52-P03	δεῖ	V-PAI-3S	3	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+959	1corintios	15	54	1corintios-15-54-P01	1corintios-15-53-P01	ἐνδύσηται	V-AMS-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+960	1corintios	15	54	1corintios-15-54-P02	1corintios-15-54-P01	ἐνδύσηται	V-AMS-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+961	1corintios	15	54	1corintios-15-54-P03	1corintios-15-54-P02	γενήσεται	V-FMI-3S	3	S		candidate	not_detected	none	0	[]
+962	1corintios	15	54	1corintios-15-54-P04	1corintios-15-54-P03	κατεπόθη	V-API-3S	3	S		candidate	not_detected	none	0	[]
+963	1corintios	15	58	1corintios-15-58-P01	1corintios-15-54-P04	γίνεσθε	V-PMD-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+964	1corintios	15	58	1corintios-15-58-P02	1corintios-15-58-P01	ἔστιν	V-PAI-3S	2	P		unresolved	candidate	none	0	[]
+965	1corintios	16	1	1corintios-16-1-P01	1corintios-15-58-P02	διέταξα	V-AAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+966	1corintios	16	1	1corintios-16-1-P02	1corintios-16-1-P01	ποιήσατε	V-AAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+967	1corintios	16	2	1corintios-16-2-P01	1corintios-16-1-P02	τιθέτω	V-PAD-3S	2	P		candidate	not_detected	none	0	[]
+968	1corintios	16	2	1corintios-16-2-P02	1corintios-16-2-P01	εὐοδῶται	V-PPS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+969	1corintios	16	2	1corintios-16-2-P03	1corintios-16-2-P02	ἔλθω	V-AAS-1S	1	S		unresolved	candidate	candidate	1	"[""person_change""]"
+970	1corintios	16	2	1corintios-16-2-P04	1corintios-16-2-P03	γίνωνται	V-PMS-3P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+971	1corintios	16	3	1corintios-16-3-P01	1corintios-16-2-P04	παραγένωμαι	V-AMS-1S	1	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+972	1corintios	16	3	1corintios-16-3-P02	1corintios-16-3-P01	δοκιμάσητε	V-AAS-2P	2	P		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+973	1corintios	16	3	1corintios-16-3-P03	1corintios-16-3-P02	πέμψω	V-FAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+974	1corintios	16	4	1corintios-16-4-P01	1corintios-16-3-P03	ᾖ	V-PAS-3S	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+975	1corintios	16	4	1corintios-16-4-P02	1corintios-16-4-P01	πορεύσονται	V-FMI-3P	3	P		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+976	1corintios	16	5	1corintios-16-5-P01	1corintios-16-4-P02	ἐλεύσομαι	V-FMI-1S	1	S		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+977	1corintios	16	5	1corintios-16-5-P02	1corintios-16-5-P01	διέλθω	V-AAS-1S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+978	1corintios	16	5	1corintios-16-5-P03	1corintios-16-5-P02	διέρχομαι	V-PMI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+979	1corintios	16	6	1corintios-16-6-P01	1corintios-16-5-P03	παραμενῶ	V-FAI-1S	1	S		candidate	not_detected	none	0	[]
+980	1corintios	16	6	1corintios-16-6-P02	1corintios-16-6-P01	παραχειμάσω	V-FAI-1S	1	S		candidate	not_detected	none	0	[]
+981	1corintios	16	6	1corintios-16-6-P03	1corintios-16-6-P02	προπέμψητε	V-AAS-2P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+982	1corintios	16	6	1corintios-16-6-P04	1corintios-16-6-P03	πορεύωμαι	V-PMS-1S	1	S		unresolved	candidate	candidate	2	"[""number_change"", ""person_change""]"
+983	1corintios	16	7	1corintios-16-7-P01	1corintios-16-6-P04	θέλω	V-PAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+984	1corintios	16	7	1corintios-16-7-P02	1corintios-16-7-P01	ἐλπίζω	V-PAI-1S	1	S		candidate	not_detected	none	0	[]
+985	1corintios	16	7	1corintios-16-7-P03	1corintios-16-7-P02	ἐπιτρέψῃ	V-AAS-3S	1	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+986	1corintios	16	8	1corintios-16-8-P01	1corintios-16-7-P03	ἐπιμενῶ	V-FAI-1S	1	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+987	1corintios	16	9	1corintios-16-9-P01	1corintios-16-8-P01	ἀνέῳγεν	V-XAI-3S	3	S		candidate	not_detected	candidate	1	"[""person_change""]"
+988	1corintios	16	10	1corintios-16-10-P01	1corintios-16-9-P01	ἔλθῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+989	1corintios	16	10	1corintios-16-10-P02	1corintios-16-10-P01	βλέπετε	V-PAD-2P	2	P		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+990	1corintios	16	10	1corintios-16-10-P03	1corintios-16-10-P02	γένηται	V-AMS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+991	1corintios	16	10	1corintios-16-10-P04	1corintios-16-10-P03	ἐργάζεται	V-PMI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+992	1corintios	16	11	1corintios-16-11-P01	1corintios-16-10-P04	ἐξουθενήσῃ	V-AAS-3S	3	S		candidate	not_detected	none	0	[]
+993	1corintios	16	11	1corintios-16-11-P02	1corintios-16-11-P01	προπέμψατε	V-AAD-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+994	1corintios	16	11	1corintios-16-11-P03	1corintios-16-11-P02	ἔλθῃ	V-AAS-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+995	1corintios	16	11	1corintios-16-11-P04	1corintios-16-11-P03	ἐκδέχομαι	V-PMI-1S	1	S		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+996	1corintios	16	12	1corintios-16-12-P01	1corintios-16-11-P04	παρεκάλεσα	V-AAI-1S	1	S		candidate	not_detected	none	0	[]
+997	1corintios	16	12	1corintios-16-12-P02	1corintios-16-12-P01	ἔλθῃ	V-AAS-3S	3	S		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+998	1corintios	16	12	1corintios-16-12-P03	1corintios-16-12-P02	ἦν	V-IAI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+999	1corintios	16	12	1corintios-16-12-P04	1corintios-16-12-P03	ἔλθῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+1000	1corintios	16	12	1corintios-16-12-P05	1corintios-16-12-P04	ἐλεύσεται	V-FMI-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+1001	1corintios	16	12	1corintios-16-12-P06	1corintios-16-12-P05	εὐκαιρήσῃ	V-AAS-3S	3	S		unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+1002	1corintios	16	14	1corintios-16-14-P01	1corintios-16-12-P06	γινέσθω	V-PMD-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+1003	1corintios	16	15	1corintios-16-15-P01	1corintios-16-14-P01	παρακαλῶ	V-PAI-1S	1	S		candidate	not_detected	candidate	1	"[""person_change""]"
+1004	1corintios	16	15	1corintios-16-15-P02	1corintios-16-15-P01	οἴδατε	V-XAI-2P	2	P		candidate	not_detected	candidate	2	"[""number_change"", ""person_change""]"
+1005	1corintios	16	15	1corintios-16-15-P03	1corintios-16-15-P02	ἐστὶν	V-PAI-3S	3	S		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+1006	1corintios	16	15	1corintios-16-15-P04	1corintios-16-15-P03	ἔταξαν	V-AAI-3P	3	P		candidate	not_detected	strong	3	"[""independence_transition"", ""number_change"", ""subordination_transition""]"
+1007	1corintios	16	16	1corintios-16-16-P01	1corintios-16-15-P04	ὑποτάσσησθε	V-PPS-2P	2	P		unresolved	candidate	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+1008	1corintios	16	17	1corintios-16-17-P01	1corintios-16-16-P01	χαίρω	V-PAI-1S	1	S		candidate	not_detected	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+1009	1corintios	16	17	1corintios-16-17-P02	1corintios-16-17-P01	ἀνεπλήρωσαν	V-AAI-3P	2	P		unresolved	candidate	strong	4	"[""independence_transition"", ""number_change"", ""person_change"", ""subordination_transition""]"
+1010	1corintios	16	18	1corintios-16-18-P01	1corintios-16-17-P02	ἀνέπαυσαν	V-AAI-3P	3	P		candidate	not_detected	strong	3	"[""independence_transition"", ""person_change"", ""subordination_transition""]"
+1011	1corintios	16	18	1corintios-16-18-P02	1corintios-16-18-P01	ἐπιγινώσκετε	V-PAD-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+1012	1corintios	16	19	1corintios-16-19-P01	1corintios-16-18-P02	ἀσπάζονται	V-PMI-3P	3	P		candidate	not_detected	candidate	1	"[""person_change""]"
+1013	1corintios	16	19	1corintios-16-19-P02	1corintios-16-19-P01	ἀσπάζεται	V-PMI-3S	3	S		candidate	not_detected	candidate	1	"[""number_change""]"
+1014	1corintios	16	20	1corintios-16-20-P01	1corintios-16-19-P02	ἀσπάζονται	V-PMI-3P	3	P		candidate	not_detected	candidate	1	"[""number_change""]"
+1015	1corintios	16	20	1corintios-16-20-P02	1corintios-16-20-P01	ἀσπάσασθε	V-AMD-2P	2	P		candidate	not_detected	candidate	1	"[""person_change""]"
+1016	1corintios	16	22	1corintios-16-22-P01	1corintios-16-20-P02	φιλεῖ	V-PAI-3S				unresolved	candidate	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+1017	1corintios	16	22	1corintios-16-22-P02	1corintios-16-22-P01	ἤτω	V-PAD-3S	3	S		candidate	not_detected	candidate	2	"[""independence_transition"", ""subordination_transition""]"
+1018	1corintios	16	22	1corintios-16-22-P03	1corintios-16-22-P02	θά	V-AAD-2S	2	S		candidate	not_detected	candidate	1	"[""person_change""]"

@@ -199,8 +199,8 @@ def process_book(book: str) -> tuple[Path, Path, int]:
     continuity_path = (
         mna_root()
         / "data"
-        / "subject-continuity"
-        / f"{book}-subject-continuity.jsonl"
+        / "refined-subjects"
+        / f"{book}-refined-subjects.jsonl"
     )
 
     continuity_records = read_jsonl(continuity_path)
