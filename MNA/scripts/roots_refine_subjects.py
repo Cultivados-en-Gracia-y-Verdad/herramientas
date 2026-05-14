@@ -28,19 +28,28 @@ Outputs:
 - MNA/data/refined-subjects/<book>-refined-subjects.tsv
 
 Core principles:
+- finite verb morphology may supply grammatical subject person/number
 - inheritance is local and mechanical
 - inheritance stops at competing subject evidence
 - explicit subject evidence outranks inherited evidence
-- all inheritance remains traceable
+- all recovery remains traceable
 """
 
 import csv
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
 
 MAX_INHERIT_DISTANCE = 3
+
+CONTINUITY_INITIAL = "initial"
+CONTINUITY_SAME = "same"
+CONTINUITY_SHIFT = "shift"
+CONTINUITY_UNRESOLVED = "unresolved"
+
+FINITE_COMPACT_PERSON_NUMBER = re.compile(r"^V-[A-Z]+-([123])([SP])$")
 
 
 def mna_root() -> Path:
@@ -65,6 +74,35 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
+def finite_person_number(record: dict[str, Any]) -> tuple[str | None, str | None]:
+    compact = str(record.get("finite_compact") or "")
+    match = FINITE_COMPACT_PERSON_NUMBER.match(compact)
+    if not match:
+        return None, None
+    return match.group(1), match.group(2)
+
+
+def apply_finite_morphology_fallback(record: dict[str, Any]) -> bool:
+    """Fill only grammatical person/number from finite morphology.
+
+    This does not identify a lexical/semantic subject. It only records the
+    grammatical subject features already encoded in the finite verb.
+    """
+    if record.get("subject_person") and record.get("subject_number"):
+        return False
+
+    person, number = finite_person_number(record)
+    if not person or not number:
+        return False
+
+    record["subject_person"] = person
+    record["subject_number"] = number
+    record["subject_refinement_status"] = "finite_morphology_fallback"
+    record["subject_refinement_source"] = "finite_compact_person_number"
+    record["subject_inherited_from"] = None
+    return True
+
+
 def has_explicit_subject(record: dict[str, Any]) -> bool:
     source = record.get("subject_source") or ""
     return "explicit" in source
@@ -79,6 +117,24 @@ def same_person_number(a: dict[str, Any], b: dict[str, Any]) -> bool:
         a.get("subject_person") == b.get("subject_person")
         and a.get("subject_number") == b.get("subject_number")
     )
+
+
+def compute_continuity(previous: dict[str, Any] | None, current: dict[str, Any]) -> tuple[str, str]:
+    if previous is None:
+        return CONTINUITY_INITIAL, "stream_start"
+
+    prev_person = previous.get("subject_person")
+    prev_number = previous.get("subject_number")
+    curr_person = current.get("subject_person")
+    curr_number = current.get("subject_number")
+
+    if not prev_person or not prev_number or not curr_person or not curr_number:
+        return CONTINUITY_UNRESOLVED, "missing_subject_person_or_number"
+
+    if prev_person == curr_person and prev_number == curr_number:
+        return CONTINUITY_SAME, "person_number_match"
+
+    return CONTINUITY_SHIFT, "person_number_change"
 
 
 def can_inherit(previous: dict[str, Any], current: dict[str, Any], distance: int) -> tuple[bool, str]:
@@ -116,11 +172,18 @@ def refine_subjects(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
         output["subject_refinement_source"] = None
         output["subject_inherited_from"] = None
 
-        if not resolved_person_number(record):
+        if resolved_person_number(record):
+            output["subject_refinement_status"] = "explicit_or_morphological"
+            output["subject_refinement_source"] = output.get("subject_source")
+
+        elif apply_finite_morphology_fallback(output):
+            pass
+
+        else:
             inherited = False
 
             for distance, previous in enumerate(reversed(recent_resolved), start=1):
-                allowed, reason = can_inherit(previous, record, distance)
+                allowed, reason = can_inherit(previous, output, distance)
 
                 if not allowed:
                     continue
@@ -137,17 +200,20 @@ def refine_subjects(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
             if not inherited:
                 output["subject_refinement_status"] = "unresolved"
-                output["subject_refinement_source"] = "no_valid_inheritance"
-
-        else:
-            output["subject_refinement_status"] = "explicit_or_morphological"
-            output["subject_refinement_source"] = output.get("subject_source")
+                output["subject_refinement_source"] = "no_valid_inheritance_or_finite_fallback"
 
         refined.append(output)
 
         if resolved_person_number(output):
             recent_resolved.append(output)
             recent_resolved = recent_resolved[-MAX_INHERIT_DISTANCE:]
+
+    previous: dict[str, Any] | None = None
+    for row in refined:
+        continuity_status, continuity_source = compute_continuity(previous, row)
+        row["continuity_status"] = continuity_status
+        row["continuity_source"] = continuity_source
+        previous = row
 
     return refined
 
@@ -178,6 +244,8 @@ def write_tsv(path: Path, rows: list[dict[str, Any]]) -> None:
         "subject_refinement_status",
         "subject_refinement_source",
         "subject_inherited_from",
+        "continuity_status",
+        "continuity_source",
         "independence_status",
         "subordination_status",
     ]
