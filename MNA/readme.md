@@ -4,6 +4,7 @@
 
 MNA exists to create a validated alignment layer between:
 
+
 - Greek New Testament text (SBLGNT)
 - Spanish NBLA translation
 - Morphological Greek data (MorphGNT)
