@@ -49,7 +49,6 @@ SUBORDINATORS = {
     "πριν",
 }
 
-
 CASE_CODE_INDEX = 0
 NUMBER_CODE_INDEX = 1
 GENDER_CODE_INDEX = 2
@@ -86,10 +85,7 @@ def read_tokens(path: Path) -> list[dict[str, Any]]:
             if not idx.strip().isdigit():
                 raise ValueError(f"{path}:{lineno}: invalid token index {idx!r}")
 
-            rows.append({
-                "idx": idx.strip().zfill(2),
-                "token": text.strip(),
-            })
+            rows.append({"idx": idx.strip().zfill(2), "token": text.strip()})
 
     return rows
 
@@ -110,9 +106,7 @@ def read_alignment(path: Path) -> dict[str, dict[str, str]]:
 
 
 def morph_ref_code(book: str, chapter: str, verse: str) -> str:
-    book_codes = {
-        "1corintios": "07",
-    }
+    book_codes = {"1corintios": "07"}
 
     if book not in book_codes:
         raise ValueError(
@@ -148,7 +142,7 @@ def read_morph_for_verse(path: Path, book: str, chapter: str, verse: str) -> dic
             morph = parts[2]
             greek = parts[3]
             lemma = parts[-1]
-            code = f"{pos}{morph}"
+            code = f"{pos} {morph}"
 
             rows[idx] = {
                 "idx": idx,
@@ -163,76 +157,86 @@ def read_morph_for_verse(path: Path, book: str, chapter: str, verse: str) -> dic
     return rows
 
 
-def compact_verb_code(code: str) -> str:
-    cleaned = code.strip().replace("--", "-").strip("-")
-    parts = [p for p in cleaned.split("-") if p]
+def morphgnt_pos_and_body(code: str) -> tuple[str, str]:
+    parts = code.split()
+    if len(parts) == 2:
+        return parts[0], parts[1]
+    if code.startswith("V-"):
+        return "V-", code[2:]
+    return "", code
 
-    if len(parts) < 2 or parts[0] != "V":
+
+def compact_verb_code(code: str) -> str:
+    pos, body = morphgnt_pos_and_body(code)
+    if pos != "V-":
         return ""
 
-    if len(parts) >= 3:
-        return f"V-{parts[1]}-{parts[2]}"
+    body = body.strip()
+    if len(body) < 4:
+        return ""
 
-    return f"V-{parts[1]}"
+    person = body[0]
+    tvm = body[1:4]
+    number = body[5] if len(body) > 5 else "-"
+
+    if person not in {"1", "2", "3"}:
+        return f"V-{tvm}"
+
+    return f"V-{tvm}-{person}{number}"
 
 
 def is_finite(code: str) -> bool:
-    compact = compact_verb_code(code)
-    parts = compact.split("-")
-
-    if len(parts) != 3:
+    pos, body = morphgnt_pos_and_body(code)
+    if pos != "V-":
         return False
 
-    tvm = parts[1]
-    person_number = parts[2]
-
-    if len(tvm) != 3:
+    if len(body) < 6:
         return False
 
-    if tvm[2] not in {"I", "S", "M", "O", "D"}:
-        return False
+    person = body[0]
+    tvm = body[1:4]
+    mood = body[3]
+    number = body[5]
 
-    if len(person_number) != 2:
-        return False
-
-    return person_number[0] in {"1", "2", "3"} and person_number[1] in {"S", "P"}
+    return (
+        person in {"1", "2", "3"}
+        and len(tvm) == 3
+        and mood in {"I", "S", "M", "O", "D"}
+        and number in {"S", "P"}
+    )
 
 
 def person_number(code: str) -> tuple[str | None, str | None]:
-    compact = compact_verb_code(code)
-    parts = compact.split("-")
-
-    if len(parts) != 3 or len(parts[2]) != 2:
+    pos, body = morphgnt_pos_and_body(code)
+    if pos != "V-" or len(body) < 6:
         return None, None
 
-    return parts[2][0], parts[2][1]
+    person = body[0]
+    number = body[5]
+
+    if person not in {"1", "2", "3"} or number not in {"S", "P"}:
+        return None, None
+
+    return person, number
 
 
 def parse_case_number_gender(code: str) -> tuple[str | None, str | None, str | None]:
-    cleaned = code.strip().strip("-")
-    parts = [p for p in cleaned.split("-") if p]
+    parts = code.split()
+    body = parts[1] if len(parts) == 2 else code.strip().split("-")[-1]
+    body = body.replace("-", "").strip()
 
-    if len(parts) < 2:
+    if len(body) < 3:
         return None, None, None
 
-    ending = parts[-1].replace("-", "")
-    ending = ending.strip()
-
-    if len(ending) < 3:
-        return None, None, None
-
-    case = ending[CASE_CODE_INDEX]
-    number = ending[NUMBER_CODE_INDEX]
-    gender = ending[GENDER_CODE_INDEX]
-
-    return case, number, gender
+    return body[CASE_CODE_INDEX], body[NUMBER_CODE_INDEX], body[GENDER_CODE_INDEX]
 
 
 def is_nominative_candidate(code: str) -> bool:
     if not code:
         return False
 
-    if not code.startswith(("N-", "A-", "RA", "RP", "RD", "RI", "RR", "D-", "T-")):
+    pos, _body = morphgnt_pos_and_body(code)
+    if pos not in {"N-", "A-", "RA", "RP", "RD", "RI", "RR", "D-", "T-"}:
         return False
 
     case, _number, _gender = parse_case_number_gender(code)
@@ -337,19 +341,12 @@ def find_alignment_path(root: Path, book: str, chapter: str, verse: str) -> Path
     if matches:
         return matches[0]
 
-    raise FileNotFoundError(
-        "Could not find alignment TSV. Tried:\n" +
-        "\n".join(str(c) for c in candidates)
-    )
+    raise FileNotFoundError("Could not find alignment TSV. Tried:\n" + "\n".join(str(c) for c in candidates))
 
 
 def build_record(book: str, chapter: str, verse: str, predication_number: int, token: dict[str, Any], morph_row: dict[str, str], subject: dict[str, Any], subordination: dict[str, Any], alignment: dict[str, str] | None) -> dict[str, Any]:
     finite_idx = token["idx"]
-
-    if subordination["subordination_status"] == "candidate":
-        independence_status = "unresolved"
-    else:
-        independence_status = "candidate"
+    independence_status = "unresolved" if subordination["subordination_status"] == "candidate" else "candidate"
 
     return {
         "predication_id": f"{book}-{chapter}-{verse}-P{predication_number:02d}",
