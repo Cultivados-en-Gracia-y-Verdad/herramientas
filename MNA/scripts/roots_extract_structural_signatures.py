@@ -34,6 +34,8 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
+VALID_CONTINUITY = {"initial", "same", "shift", "unresolved"}
+
 
 def mna_root() -> Path:
     return Path(__file__).resolve().parents[1]
@@ -56,19 +58,19 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
-def parse_json_counter(value: Any) -> dict[str, int]:
-    if not value:
-        return {}
-    if isinstance(value, dict):
-        return {str(k): int(v) for k, v in value.items()}
-    if isinstance(value, str):
-        try:
-            parsed = json.loads(value)
-            if isinstance(parsed, dict):
-                return {str(k): int(v) for k, v in parsed.items()}
-        except json.JSONDecodeError:
-            return {}
-    return {}
+def normalize_continuity(value: Any) -> str:
+    if value is None:
+        return "unresolved"
+
+    normalized = str(value).strip().lower()
+
+    if normalized in VALID_CONTINUITY:
+        return normalized
+
+    if normalized in {"", "none", "null", "missing", "unknown"}:
+        return "unresolved"
+
+    return "unresolved"
 
 
 def rows_for_regime(strata_rows: list[dict[str, Any]], regime: dict[str, Any]) -> list[dict[str, Any]]:
@@ -104,7 +106,14 @@ def extract_signature(regime: dict[str, Any], rows: list[dict[str, Any]]) -> dic
 
     movement_class_counter = Counter(str(row.get("movement_class") or "unknown") for row in rows)
     movement_status_counter = Counter(str(row.get("movement_status") or "unknown") for row in rows)
-    continuity_counter = Counter(str(row.get("continuity_status") or "unknown") for row in rows)
+
+    normalized_continuity = [
+        normalize_continuity(row.get("continuity_status"))
+        for row in rows
+    ]
+
+    continuity_counter = Counter(normalized_continuity)
+
     person_counter = Counter(
         f"{row.get('subject_person') or '-'}{row.get('subject_number') or '-'}"
         for row in rows
@@ -124,6 +133,7 @@ def extract_signature(regime: dict[str, Any], rows: list[dict[str, Any]]) -> dic
     same_density = ratio(continuity_counter["same"], record_count)
     shift_density = ratio(continuity_counter["shift"], record_count)
     unresolved_density = ratio(continuity_counter["unresolved"], record_count)
+    initial_density = ratio(continuity_counter["initial"], record_count)
 
     weight_per_record = round(total_weight / record_count, 4) if record_count else 0
 
@@ -133,6 +143,7 @@ def extract_signature(regime: dict[str, Any], rows: list[dict[str, Any]]) -> dic
         f"stable={signature_band(stable_density)}",
         f"continuity_same={signature_band(same_density)}",
         f"continuity_shift={signature_band(shift_density)}",
+        f"continuity_unresolved={signature_band(unresolved_density)}",
         f"weight={signature_band(min(weight_per_record / 4, 1))}",
     ]
 
@@ -155,6 +166,7 @@ def extract_signature(regime: dict[str, Any], rows: list[dict[str, Any]]) -> dic
         "continuity_same_density": same_density,
         "continuity_shift_density": shift_density,
         "continuity_unresolved_density": unresolved_density,
+        "continuity_initial_density": initial_density,
         "dominant_movement_class": dominant(movement_class_counter),
         "dominant_movement_status": dominant(movement_status_counter),
         "dominant_continuity_status": dominant(continuity_counter),
