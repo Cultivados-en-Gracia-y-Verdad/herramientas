@@ -173,6 +173,24 @@ def is_nominative_candidate(code: str) -> bool:
     return case == "N"
 
 
+def nominative_agrees_with_finite(code: str, finite_person: str | None, finite_number: str | None) -> bool:
+    if finite_person != "3":
+        return False
+
+    case, nominal_number, nominal_gender = parse_case_number_gender(code)
+    if case != "N" or nominal_number is None:
+        return False
+
+    if nominal_number == finite_number:
+        return True
+
+    # Conservative allowance: Greek neuter plural subjects may take singular verbs.
+    if nominal_number == "P" and nominal_gender == "N" and finite_number == "S":
+        return True
+
+    return False
+
+
 def previous_finite_idx(finite_indexes: list[str], current_idx: str) -> str | None:
     current = int(current_idx)
     previous = [idx for idx in finite_indexes if int(idx) < current]
@@ -190,22 +208,27 @@ def recover_subject(morph: dict[str, dict[str, str]], verb_idx: str, finite_inde
     window_start = max(finite_zone_start(finite_indexes, verb_idx), verb_i - 6, 1)
     explicit_candidates: list[dict[str, Any]] = []
 
-    for i in range(window_start, verb_i):
-        idx = f"{i:02d}"
-        row = morph.get(idx)
-        if row and is_nominative_candidate(row["code"]):
-            explicit_candidates.append({
-                "token": idx,
-                "form": row["greek"],
-                "lemma": row["lemma"],
-                "morph": row["code"],
-            })
+    # First/second-person finite verbs already encode their subject person/number.
+    # Do not promote nearby nominatives as subject candidates for them.
+    if person == "3":
+        for i in range(window_start, verb_i):
+            idx = f"{i:02d}"
+            row = morph.get(idx)
+            if row and is_nominative_candidate(row["code"]):
+                candidate = {
+                    "token": idx,
+                    "form": row["greek"],
+                    "lemma": row["lemma"],
+                    "morph": row["code"],
+                }
+                if nominative_agrees_with_finite(row["code"], person, number):
+                    explicit_candidates.append(candidate)
 
     if explicit_candidates:
         selected = explicit_candidates[-1]
         return {
             "subject_status": "candidate",
-            "subject_source": "explicit_nominative_after_previous_finite_before_current_finite",
+            "subject_source": "explicit_nominative_agrees_with_third_person_finite",
             "subject_token": selected["token"],
             "subject_person": None,
             "subject_number": None,
