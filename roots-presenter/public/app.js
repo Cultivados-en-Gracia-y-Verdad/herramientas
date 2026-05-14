@@ -458,6 +458,19 @@ function renderQuizReviewList(items, options = {}) {
   `;
 }
 
+function renderStudentGrade(result) {
+  if (!result || !result.total) return "";
+
+  return `
+    <div class="quiz-grade">
+      <div class="quiz-grade-label">Your score</div>
+      <div class="quiz-grade-score">${result.correct}/${result.total}</div>
+      <div class="quiz-grade-percent">${result.percentage}%</div>
+      <div class="quiz-grade-detail">${result.answered}/${result.total} answered</div>
+    </div>
+  `;
+}
+
 function getTotalQuizResponses() {
   if (quizState.countsByQuiz && Object.keys(quizState.countsByQuiz).length) {
     return Object.values(quizState.countsByQuiz)
@@ -613,6 +626,7 @@ function renderAudienceQuiz() {
         <div class="quiz-waiting">
           <div class="quiz-question">Quiz completed</div>
           <div class="quiz-message">Thank you. Your answers have been saved.</div>
+          ${renderStudentGrade(quizState.participantResult)}
           ${renderQuizReviewList(reviewItems, { compact: true })}
         </div>
       `;
@@ -633,6 +647,7 @@ function renderAudienceQuiz() {
       <div class="quiz-waiting">
         <div class="quiz-question">Quiz completed</div>
         <div class="quiz-message">Thank you. Your answers have been saved.</div>
+        ${renderStudentGrade(quizState.participantResult)}
         ${renderQuizReviewList(getQuizReviewItems(), { compact: true })}
       </div>
     `;

@@ -1925,6 +1925,48 @@ function getQuizReview() {
     .map(quiz => publicQuiz(quiz, true));
 }
 
+function getParticipantQuizResult(participantId) {
+  if (quizState.active || !quizState.quiz || !participantId) return null;
+
+  const quizIds = quizState.sequence?.length ? quizState.sequence : [quizState.quiz.id];
+  const items = quizIds
+    .map(quizId => {
+      const quiz = quizBank.find(item => item.id === quizId);
+      if (!quiz) return null;
+
+      const answers = quizState.answersByQuiz?.[quiz.id] || {};
+      const answerIndex = answers[participantId];
+      const hasAnswer = Number.isInteger(answerIndex);
+      const correct = Number.isInteger(quiz.correctIndex) && hasAnswer
+        ? answerIndex === quiz.correctIndex
+        : false;
+
+      return {
+        quizId: quiz.id,
+        question: quiz.question,
+        answered: hasAnswer,
+        answerIndex: hasAnswer ? answerIndex : null,
+        answer: hasAnswer ? quiz.choices[answerIndex] : "",
+        correctAnswerIndex: Number.isInteger(quiz.correctIndex) ? quiz.correctIndex : null,
+        correctAnswer: Number.isInteger(quiz.correctIndex) ? quiz.choices[quiz.correctIndex] : "",
+        correct
+      };
+    })
+    .filter(Boolean);
+
+  const answered = items.filter(item => item.answered).length;
+  const correct = items.filter(item => item.correct).length;
+  const total = items.length;
+
+  return {
+    total,
+    answered,
+    correct,
+    percentage: total ? Math.round((correct / total) * 100) : 0,
+    items
+  };
+}
+
 function startQuizById(quizId) {
   const normalizedQuizId = normalizeQuizId(quizId);
   const foundIndex = normalizedQuizId
@@ -2009,7 +2051,7 @@ function loadSlides() {
   quizBank = [...loadQuizBank(presentationMeta), ...inlineQuizzes];
 }
 
-function buildPayload() {
+function buildPayload(participantId = null) {
   return {
     course: {
       id: currentCourse.id,
@@ -2036,7 +2078,8 @@ function buildPayload() {
       sequence: quizState.sequence,
       counts: quizState.counts,
       countsByQuiz: quizState.countsByQuiz,
-      review: getQuizReview()
+      review: getQuizReview(),
+      participantResult: getParticipantQuizResult(participantId)
     },
     popupState: {
       reference: popupState.reference,
@@ -2047,7 +2090,9 @@ function buildPayload() {
 }
 
 function sendState() {
-  io.emit("state", buildPayload());
+  for (const socket of io.sockets.sockets.values()) {
+    socket.emit("state", buildPayload(socket.participantId));
+  }
 }
 
 app.get("/session.csv", (req, res) => {
@@ -2215,7 +2260,7 @@ saveAppState({ lastCourseDir: currentCourse.rootDir });
 saveSession();
 
 io.on("connection", socket => {
-  socket.emit("state", buildPayload());
+  socket.emit("state", buildPayload(socket.participantId));
 
   socket.on("join-session", participant => {
     const registeredParticipant = registerParticipant(socket, participant);
