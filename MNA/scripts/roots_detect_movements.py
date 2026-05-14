@@ -13,7 +13,7 @@ independent clause stream
 This layer is strictly mechanical.
 
 It detects movement candidates ONLY from:
-- continuity interruption
+- computed continuity interruption
 - person/number change
 - independence transition
 - unresolved continuity transition
@@ -26,7 +26,11 @@ It does NOT:
 - interpret discourse
 - attach connectors
 
-Allowed input:
+Preferred input:
+- MNA/data/refined-subjects/<book>-refined-subjects-pass2.jsonl
+
+Fallback inputs:
+- MNA/data/refined-subjects/<book>-refined-subjects.jsonl
 - MNA/data/subject-continuity/<book>-subject-continuity.jsonl
 
 Outputs:
@@ -46,6 +50,11 @@ from typing import Any
 MOVEMENT_NONE = "none"
 MOVEMENT_CANDIDATE = "candidate"
 MOVEMENT_STRONG = "strong"
+
+CONTINUITY_INITIAL = "initial"
+CONTINUITY_SAME = "same"
+CONTINUITY_SHIFT = "shift"
+CONTINUITY_UNRESOLVED = "unresolved"
 
 
 def mna_root() -> Path:
@@ -70,18 +79,61 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
     return records
 
 
-def detect_movement(previous: dict[str, Any] | None, current: dict[str, Any]) -> tuple[str, list[str]]:
+def select_input_path(book: str) -> Path:
+    root = mna_root()
+
+    candidates = [
+        root / "data" / "refined-subjects" / f"{book}-refined-subjects-pass2.jsonl",
+        root / "data" / "refined-subjects" / f"{book}-refined-subjects.jsonl",
+        root / "data" / "subject-continuity" / f"{book}-subject-continuity.jsonl",
+    ]
+
+    for path in candidates:
+        if path.exists():
+            return path
+
+    raise FileNotFoundError(
+        "No usable subject continuity input found. Tried:\n"
+        + "\n".join(str(path) for path in candidates)
+    )
+
+
+def computed_continuity(previous: dict[str, Any] | None, current: dict[str, Any]) -> tuple[str, str]:
+    existing = current.get("continuity_status")
+    if existing in {CONTINUITY_INITIAL, CONTINUITY_SAME, CONTINUITY_SHIFT, CONTINUITY_UNRESOLVED}:
+        return str(existing), "existing_continuity_status"
+
+    if previous is None:
+        return CONTINUITY_INITIAL, "stream_start"
+
+    prev_person = previous.get("subject_person")
+    prev_number = previous.get("subject_number")
+    curr_person = current.get("subject_person")
+    curr_number = current.get("subject_number")
+
+    if not prev_person or not prev_number or not curr_person or not curr_number:
+        return CONTINUITY_UNRESOLVED, "missing_subject_person_or_number"
+
+    if prev_person == curr_person and prev_number == curr_number:
+        return CONTINUITY_SAME, "person_number_match"
+
+    return CONTINUITY_SHIFT, "person_number_change"
+
+
+def detect_movement(
+    previous: dict[str, Any] | None,
+    current: dict[str, Any],
+    continuity_status: str,
+) -> tuple[str, list[str]]:
     if previous is None:
         return MOVEMENT_STRONG, ["stream_start"]
 
     reasons: list[str] = []
 
-    continuity_status = current.get("continuity_status")
-
-    if continuity_status == "shift":
+    if continuity_status == CONTINUITY_SHIFT:
         reasons.append("subject_shift")
 
-    if continuity_status == "unresolved":
+    if continuity_status == CONTINUITY_UNRESOLVED:
         reasons.append("continuity_unresolved")
 
     prev_independence = previous.get("independence_status")
@@ -122,6 +174,8 @@ def detect_movement(previous: dict[str, Any] | None, current: dict[str, Any]) ->
 def build_record(
     previous: dict[str, Any] | None,
     current: dict[str, Any],
+    continuity_status: str,
+    continuity_source: str,
     movement_status: str,
     movement_reasons: list[str],
 ) -> dict[str, Any]:
@@ -136,7 +190,10 @@ def build_record(
         "finite_compact": current.get("finite_compact"),
         "subject_person": current.get("subject_person"),
         "subject_number": current.get("subject_number"),
-        "continuity_status": current.get("continuity_status"),
+        "subject_refinement_status": current.get("subject_refinement_status"),
+        "subject_refinement_source": current.get("subject_refinement_source"),
+        "continuity_status": continuity_status,
+        "continuity_source": continuity_source,
         "independence_status": current.get("independence_status"),
         "subordination_status": current.get("subordination_status"),
         "movement_status": movement_status,
@@ -150,8 +207,18 @@ def build_movements(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
     previous = None
 
     for current in records:
-        movement_status, reasons = detect_movement(previous, current)
-        out.append(build_record(previous, current, movement_status, reasons))
+        continuity_status, continuity_source = computed_continuity(previous, current)
+        movement_status, reasons = detect_movement(previous, current, continuity_status)
+        out.append(
+            build_record(
+                previous,
+                current,
+                continuity_status,
+                continuity_source,
+                movement_status,
+                reasons,
+            )
+        )
         previous = current
 
     return out
@@ -179,7 +246,10 @@ def write_tsv(path: Path, records: list[dict[str, Any]]) -> None:
         "finite_compact",
         "subject_person",
         "subject_number",
+        "subject_refinement_status",
+        "subject_refinement_source",
         "continuity_status",
+        "continuity_source",
         "independence_status",
         "subordination_status",
         "movement_status",
@@ -195,16 +265,10 @@ def write_tsv(path: Path, records: list[dict[str, Any]]) -> None:
             writer.writerow(record)
 
 
-def process_book(book: str) -> tuple[Path, Path, int]:
-    continuity_path = (
-        mna_root()
-        / "data"
-        / "subject-continuity"
-        / f"{book}-subject-continuity.jsonl"
-    )
-
-    continuity_records = read_jsonl(continuity_path)
-    movement_records = build_movements(continuity_records)
+def process_book(book: str) -> tuple[Path, Path, int, Path]:
+    input_path = select_input_path(book)
+    records = read_jsonl(input_path)
+    movement_records = build_movements(records)
 
     out_dir = mna_root() / "data" / "movements"
 
@@ -214,7 +278,7 @@ def process_book(book: str) -> tuple[Path, Path, int]:
     write_jsonl(jsonl_out, movement_records)
     write_tsv(tsv_out, movement_records)
 
-    return jsonl_out, tsv_out, len(movement_records)
+    return jsonl_out, tsv_out, len(movement_records), input_path
 
 
 def main() -> None:
@@ -228,8 +292,9 @@ def main() -> None:
 
     book = sys.argv[1].lower()
 
-    jsonl_out, tsv_out, count = process_book(book)
+    jsonl_out, tsv_out, count, input_path = process_book(book)
 
+    print(f"READ: {input_path}")
     print(f"WROTE {count} movement record(s): {jsonl_out}")
     print(f"WROTE {count} movement record(s): {tsv_out}")
 
