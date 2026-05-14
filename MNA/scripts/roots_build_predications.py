@@ -243,15 +243,32 @@ def is_nominative_candidate(code: str) -> bool:
     return case == "N"
 
 
-def recover_subject(tokens: list[dict[str, Any]], morph: dict[str, dict[str, str]], verb_idx: str) -> dict[str, Any]:
+def previous_finite_idx(finite_indexes: list[str], current_idx: str) -> str | None:
+    current = int(current_idx)
+    previous = [idx for idx in finite_indexes if int(idx) < current]
+    if not previous:
+        return None
+    return previous[-1]
+
+
+def recover_subject(tokens: list[dict[str, Any]], morph: dict[str, dict[str, str]], verb_idx: str, finite_indexes: list[str]) -> dict[str, Any]:
     verb_i = int(verb_idx)
     verb_morph = morph[verb_idx]
     person, number = person_number(verb_morph["code"])
+    previous_finite = previous_finite_idx(finite_indexes, verb_idx)
+
+    # Conservative first pass:
+    # explicit nominatives are considered only before the current finite verb
+    # AND before any previous finite boundary. This prevents material owned by
+    # a prior predication from becoming the subject of the next finite verb.
+    search_end = verb_i
+    if previous_finite is not None:
+        search_end = min(search_end, int(previous_finite) + 1)
 
     window_start = max(1, verb_i - 6)
     explicit_candidates: list[dict[str, Any]] = []
 
-    for i in range(window_start, verb_i):
+    for i in range(window_start, search_end):
         idx = f"{i:02d}"
         m = morph.get(idx)
         if not m:
@@ -269,7 +286,7 @@ def recover_subject(tokens: list[dict[str, Any]], morph: dict[str, dict[str, str
         selected = explicit_candidates[-1]
         return {
             "subject_status": "candidate",
-            "subject_source": "explicit_nominative_before_verb",
+            "subject_source": "explicit_nominative_before_verb_before_previous_finite_boundary",
             "subject_token": selected["token"],
             "subject_person": None,
             "subject_number": None,
@@ -403,6 +420,7 @@ def build_verse(book: str, chapter: str, verse: str) -> list[dict[str, Any]]:
             f"tokens={len(tokens)} morph={len(morph)}"
         )
 
+    finite_indexes = [idx for idx, row in morph.items() if is_finite(row["code"])]
     records: list[dict[str, Any]] = []
 
     for token in tokens:
@@ -421,7 +439,7 @@ def build_verse(book: str, chapter: str, verse: str) -> list[dict[str, Any]]:
         if not is_finite(morph_row["code"]):
             continue
 
-        subject = recover_subject(tokens, morph, idx)
+        subject = recover_subject(tokens, morph, idx, finite_indexes)
         subordination = detect_subordination(tokens, idx)
 
         records.append(build_record(
