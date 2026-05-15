@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Controller</title>
+  <link rel="icon" href="/assets/cgv-app-icon.svg">
+  <link rel="stylesheet" href="controller.css">
+</head>
+<body>
+  <header class="controller-topbar">
+    <div class="app-brand">
+      <img src="/assets/cgv-logo.svg" alt="CGV">
+      <div>
+        <strong>CGV Presenter</strong>
+        <span>Controller View</span>
+      </div>
+    </div>
+    <div id="liveStatus" class="live-status">Projector: teaching mode</div>
+  </header>
+
+  <main class="controller-shell">
+    <section class="song-library">
+      <div class="section-heading">
+        <div>
+          <h1>Songs</h1>
+          <p>Select a song, then send it live.</p>
+        </div>
+        <button id="newSongButton" type="button" class="secondary">New Song</button>
+      </div>
+
+      <div id="songList" class="song-list"></div>
+    </section>
+
+    <section id="songEditor" class="song-editor hidden">
+      <div class="section-heading">
+        <div>
+          <h1>Edit Song</h1>
+          <p>Blank lines create separate screens/stanzas.</p>
+        </div>
+        <button id="closeEditorButton" type="button" class="secondary">Close</button>
+      </div>
+
+      <label>
+        Title
+        <input id="songTitle" type="text" placeholder="Song title">
+      </label>
+
+      <label>
+        Lyrics
+        <textarea id="songLyrics" spellcheck="false" placeholder="Verse 1 line 1&#10;Verse 1 line 2&#10;&#10;Chorus line 1&#10;Chorus line 2"></textarea>
+      </label>
+
+      <div class="button-row">
+        <button id="saveSongButton" type="button">Save Song</button>
+        <button id="cancelEditorButton" type="button" class="secondary">Cancel</button>
+      </div>
+    </section>
+
+    <aside class="controller-panel">
+      <section class="panel-card">
+        <h2>Live Output</h2>
+        <div class="button-row">
+          <button id="goLiveButton" type="button">Send Live</button>
+          <button id="clearButton" type="button" class="secondary">Return to Teaching</button>
+        </div>
+        <div class="button-row">
+          <button id="previousButton" type="button" class="secondary">Previous</button>
+          <button id="nextButton" type="button" class="secondary">Next</button>
+        </div>
+      </section>
+
+      <section class="panel-card">
+        <h2>Background</h2>
+        <div class="color-grid">
+          <label>
+            Background
+            <input id="backgroundColor" type="color" value="#0f172a">
+          </label>
+          <label>
+            Text
+            <input id="textColor" type="color" value="#ffffff">
+          </label>
+          <label>
+            Accent
+            <input id="accentColor" type="color" value="#38bdf8">
+          </label>
+        </div>
+        <button id="applyStyleButton" type="button" class="secondary full">Apply Style</button>
+      </section>
+
+      <section class="panel-card">
+        <h2>Preview</h2>
+        <div id="controllerPreview" class="controller-preview"></div>
+        <div id="songThumbnails" class="song-thumbnails"></div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>

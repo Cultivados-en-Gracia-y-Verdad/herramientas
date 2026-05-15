@@ -15,6 +15,7 @@ let quizzes = [];
 let slide = 0;
 let step = 0;
 let quizState = { active: false, quizId: null, quiz: null, counts: {} };
+let controllerState = { active: false, title: "", sections: [], step: 0 };
 let userAnswer = null;
 let session = null;
 let connection = { url: "/audience.html" };
@@ -40,6 +41,7 @@ socket.on("state", data => {
   slide = data.slide || 0;
   step = data.step || 0;
   quizState = data.quizState || { active: false, quizId: null, quiz: null, counts: {} };
+  controllerState = data.controllerState || { active: false, title: "", sections: [], step: 0 };
   popupState = data.popupState || { reference: null, scrollRatio: 0, verseIndex: 0 };
 
   const nextQuizKey = quizState.active ? quizState.quizId : null;
@@ -101,7 +103,16 @@ function render() {
 
   if (isProjector) {
     const projectorSlide = document.getElementById("projectorSlide");
+    if (controllerState.active) {
+      renderControllerProjector(projectorSlide);
+      renderProjectorQuiz();
+      applySharedPopupState();
+      return;
+    }
+
     projectorSlide.innerHTML = html;
+    projectorSlide.classList.remove("song-output");
+    projectorSlide.removeAttribute("style");
     applySlideLayoutClass(projectorSlide);
     renderProjectorQuiz();
     fitSlideText(projectorSlide, {
@@ -129,6 +140,33 @@ function render() {
     });
     applySharedPopupState();
   }
+}
+
+function renderControllerProjector(projectorSlide) {
+  const section = controllerState.sections?.[controllerState.step] || [];
+  projectorSlide.classList.remove("title-slide");
+  projectorSlide.classList.add("song-output");
+  projectorSlide.style.setProperty("--song-background", controllerState.background || "#0f172a");
+  projectorSlide.style.setProperty("--song-color", controllerState.textColor || "#ffffff");
+  projectorSlide.style.setProperty("--song-accent", controllerState.accentColor || "#38bdf8");
+  projectorSlide.innerHTML = `
+    <div class="song-output-inner">
+      ${controllerState.title ? `<div class="song-output-title">${escapeHtml(controllerState.title)}</div>` : ""}
+      <div class="song-output-lines">
+        ${section.map(line => `<div>${escapeHtml(line)}</div>`).join("")}
+      </div>
+    </div>
+  `;
+
+  fitSlideText(projectorSlide, {
+    baseSize: 78,
+    minSize: 44,
+    hardMinSize: 38,
+    maxHeight: window.innerHeight - 60,
+    maxWidth: window.innerWidth * 0.88,
+    densityFactor: 0.08,
+    sizeBoost: 8
+  });
 }
 
 function applySlideLayoutClass(element) {
@@ -570,6 +608,11 @@ function renderProjectorQuiz() {
     : joinUrl.replace(/^https?:\/\//, "").replace(/\/audience\.html$/, "");
 
   if (!quiz) {
+    resultsEl.innerHTML = "";
+    return;
+  }
+
+  if (controllerState.active) {
     resultsEl.innerHTML = "";
     return;
   }

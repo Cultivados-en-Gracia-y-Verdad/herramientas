@@ -15,6 +15,7 @@ const { serverEvents } = require("./server");
 
 let presenterWindow;
 let projectorWindow;
+let controllerWindow;
 let settingsWindow;
 let courseDownloadWindow;
 let presentationMode = "extended";
@@ -435,6 +436,26 @@ function openCourseDownload() {
   });
 }
 
+function openControllerWindow() {
+  if (controllerWindow && !controllerWindow.isDestroyed()) {
+    controllerWindow.focus();
+    return;
+  }
+
+  controllerWindow = new BrowserWindow({
+    width: 1120,
+    height: 820,
+    title: "Controller",
+    icon: LOGO_PATH,
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  controllerWindow.loadURL(`${APP_URL}/controller.html`);
+  controllerWindow.on("closed", () => {
+    controllerWindow = null;
+  });
+}
+
 function createMenu() {
   const template = [
     {
@@ -525,6 +546,12 @@ function createMenu() {
       label: "View",
       submenu: [
         {
+          label: "Open Controller",
+          accelerator: "CmdOrCtrl+Shift+C",
+          click: openControllerWindow
+        },
+        { type: "separator" },
+        {
           label: "Show H1/H2 Headers",
           submenu: buildHeadingSubmenu()
         },
@@ -594,6 +621,7 @@ function closeWindow(window) {
 function clearWindowReferences() {
   if (presenterWindow?.isDestroyed()) presenterWindow = null;
   if (projectorWindow?.isDestroyed()) projectorWindow = null;
+  if (controllerWindow?.isDestroyed()) controllerWindow = null;
 }
 
 function switchPresentationMode(mode) {

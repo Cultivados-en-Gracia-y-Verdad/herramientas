@@ -773,6 +773,46 @@ button {
   margin: auto 0;
 }
 
+.projector-slide.song-output {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: none;
+  max-height: none;
+  margin: calc(-1 * clamp(42px, 8vh, 88px)) -24px -24px;
+  padding: clamp(52px, 8vh, 110px) clamp(70px, 9vw, 150px);
+  overflow: hidden;
+  background: var(--song-background, #0f172a);
+  color: var(--song-color, #ffffff);
+  border-bottom: clamp(10px, 1.2vh, 18px) solid var(--song-accent, #38bdf8);
+  text-align: center;
+}
+
+.song-output-inner {
+  display: grid;
+  gap: 0.55em;
+  justify-items: center;
+}
+
+.song-output-title {
+  color: var(--song-accent, #38bdf8);
+  font-size: 0.42em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.song-output-lines {
+  display: grid;
+  gap: 0.16em;
+  font-size: var(--fit-size, 82px);
+  font-weight: 600;
+  line-height: 1.14;
+  text-wrap: balance;
+}
+
 .projector-extended .projector-slide {
   width: min(86vw, 1440px);
   max-width: min(86vw, 1440px);

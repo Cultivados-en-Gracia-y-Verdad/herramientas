@@ -137,6 +137,16 @@ let popupState = {
   verseIndex: 0
 };
 
+let controllerState = {
+  active: false,
+  title: "",
+  sections: [],
+  step: 0,
+  background: "#0f172a",
+  textColor: "#ffffff",
+  accentColor: "#38bdf8"
+};
+
 let currentSession = createSession();
 
 function createSession() {
@@ -1843,6 +1853,7 @@ function jumpToSlide(slideIndex) {
     return false;
   }
 
+  returnToTeachingMode();
   state.slide = nextSlide;
   state.step = 0;
   resetQuiz();
@@ -1851,8 +1862,9 @@ function jumpToSlide(slideIndex) {
 }
 
 function goToNextSlideStep() {
+  const returnedToTeaching = returnToTeachingMode();
   const current = slides[state.slide];
-  if (!current) return false;
+  if (!current) return returnedToTeaching;
 
   if (state.step < current.lines.length - 1) {
     state.step++;
@@ -1867,6 +1879,8 @@ function goToNextSlideStep() {
 }
 
 function goToPreviousSlideStep() {
+  returnToTeachingMode();
+
   if (state.step > 0) {
     state.step--;
   } else if (state.slide > 0) {
@@ -1967,6 +1981,81 @@ function getParticipantQuizResult(participantId) {
   };
 }
 
+function normalizeSongSections(value) {
+  const text = String(value || "").replace(/\r\n/g, "\n").trim();
+  if (!text) return [];
+
+  return text
+    .split(/\n\s*\n/)
+    .map(section => section
+      .split("\n")
+      .map(line => line.trim())
+      .filter(Boolean)
+    )
+    .filter(section => section.length);
+}
+
+function publicControllerState() {
+  return {
+    ...controllerState,
+    step: Math.min(
+      Math.max(0, Number(controllerState.step) || 0),
+      Math.max(0, controllerState.sections.length - 1)
+    )
+  };
+}
+
+function setControllerSong(payload = {}) {
+  const sections = Array.isArray(payload.sections)
+    ? payload.sections
+        .map(section => Array.isArray(section) ? section.map(line => String(line || "").trim()).filter(Boolean) : [])
+        .filter(section => section.length)
+    : normalizeSongSections(payload.lyrics);
+
+  controllerState = {
+    active: sections.length > 0,
+    title: cleanText(payload.title, "Song"),
+    sections,
+    step: 0,
+    background: cleanText(payload.background, controllerState.background || "#0f172a"),
+    textColor: cleanText(payload.textColor, controllerState.textColor || "#ffffff"),
+    accentColor: cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8")
+  };
+}
+
+function updateControllerStyle(payload = {}) {
+  controllerState.background = cleanText(payload.background, controllerState.background || "#0f172a");
+  controllerState.textColor = cleanText(payload.textColor, controllerState.textColor || "#ffffff");
+  controllerState.accentColor = cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8");
+}
+
+function clearControllerOutput() {
+  controllerState.active = false;
+  controllerState.step = 0;
+}
+
+function returnToTeachingMode() {
+  const wasControllerActive = controllerState.active;
+  if (wasControllerActive) clearControllerOutput();
+  return wasControllerActive;
+}
+
+function nextControllerSection() {
+  if (!controllerState.active) return false;
+  const nextStep = Math.min(controllerState.sections.length - 1, controllerState.step + 1);
+  if (nextStep === controllerState.step) return false;
+  controllerState.step = nextStep;
+  return true;
+}
+
+function previousControllerSection() {
+  if (!controllerState.active) return false;
+  const previousStep = Math.max(0, controllerState.step - 1);
+  if (previousStep === controllerState.step) return false;
+  controllerState.step = previousStep;
+  return true;
+}
+
 function startQuizById(quizId) {
   const normalizedQuizId = normalizeQuizId(quizId);
   const foundIndex = normalizedQuizId
@@ -1978,6 +2067,7 @@ function startQuizById(quizId) {
   const quiz = quizBank[startIndex] || quizBank[0];
   if (!quiz || startIndex < 0) return false;
 
+  returnToTeachingMode();
   const activeGroupId = quiz.groupId || quiz.id;
   const sequence = quizBank
     .slice(startIndex)
@@ -2085,7 +2175,8 @@ function buildPayload(participantId = null) {
       reference: popupState.reference,
       scrollRatio: popupState.scrollRatio,
       verseIndex: popupState.verseIndex
-    }
+    },
+    controllerState: publicControllerState()
   };
 }
 
@@ -2254,6 +2345,36 @@ app.get("/state.json", (req, res) => {
   res.json(buildPayload());
 });
 
+app.post("/controller/song", (req, res) => {
+  setControllerSong(req.body || {});
+  sendState();
+  res.json(publicControllerState());
+});
+
+app.post("/controller/style", (req, res) => {
+  updateControllerStyle(req.body || {});
+  sendState();
+  res.json(publicControllerState());
+});
+
+app.post("/controller/clear", (req, res) => {
+  clearControllerOutput();
+  sendState();
+  res.json(publicControllerState());
+});
+
+app.post("/controller/next", (req, res) => {
+  nextControllerSection();
+  sendState();
+  res.json(publicControllerState());
+});
+
+app.post("/controller/previous", (req, res) => {
+  previousControllerSection();
+  sendState();
+  res.json(publicControllerState());
+});
+
 loadBibleReferences();
 loadSlides();
 saveAppState({ lastCourseDir: currentCourse.rootDir });
@@ -2277,6 +2398,7 @@ io.on("connection", socket => {
   });
 
   socket.on("reload-slides", () => {
+    returnToTeachingMode();
     loadSlides();
     state.slide = 0;
     state.step = 0;
@@ -2291,6 +2413,7 @@ io.on("connection", socket => {
   });
 
   socket.on("set-popup-reference", reference => {
+    returnToTeachingMode();
     popupState.reference = typeof reference === "string" && reference.trim()
       ? reference.trim()
       : null;
@@ -2328,6 +2451,29 @@ io.on("connection", socket => {
 
   socket.on("clear-quiz", () => {
     if (clearActiveQuizAnswers()) sendState();
+  });
+
+  socket.on("controller-set-song", payload => {
+    setControllerSong(payload || {});
+    sendState();
+  });
+
+  socket.on("controller-style", payload => {
+    updateControllerStyle(payload || {});
+    sendState();
+  });
+
+  socket.on("controller-clear", () => {
+    clearControllerOutput();
+    sendState();
+  });
+
+  socket.on("controller-next", () => {
+    if (nextControllerSection()) sendState();
+  });
+
+  socket.on("controller-previous", () => {
+    if (previousControllerSection()) sendState();
   });
 
   socket.on("submit-answer", submission => {
