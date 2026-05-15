@@ -1,0 +1,11 @@
+summary_type	name	count
+recovery_profile	continued_instability	205
+recovery_profile	mixed	1
+recovery_profile	stabilized	171
+recovery_profile	terminal	1
+recovery_source	mixed_following_behavior	1
+recovery_source	no_following_window	1
+recovery_source	same_majority	171
+recovery_source	shift_majority	205
+audit_source	person_and_number_change	210
+audit_source	person_change	168
