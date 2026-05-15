@@ -75,6 +75,23 @@ def write_text(path: Path, text: str) -> None:
 # ---------------------------------------------------------
 
 
+def available_predication_books() -> list[str]:
+    root = mna_root()
+    books: set[str] = set()
+
+    for folder, suffix in [
+        ("predications", "-predications.jsonl"),
+        ("independent-stream", "-independent-stream.jsonl"),
+    ]:
+        path = root / "data" / folder
+        if not path.exists():
+            continue
+        for item in path.glob(f"*{suffix}"):
+            books.add(item.name.removesuffix(suffix))
+
+    return sorted(books)
+
+
 def load_predications(book: str) -> list[dict[str, Any]]:
     root = mna_root()
     candidates = [
@@ -87,7 +104,15 @@ def load_predications(book: str) -> list[dict[str, Any]]:
         if rows:
             return ordered(rows)
 
-    raise FileNotFoundError("No predication source found")
+    available = available_predication_books()
+    available_text = ", ".join(available) if available else "none found"
+    tried = "\n".join(str(path) for path in candidates)
+
+    raise FileNotFoundError(
+        f"No predication source found for book: {book}\n"
+        f"Tried:\n{tried}\n"
+        f"Available books: {available_text}"
+    )
 
 
 def load_index(book: str, folder: str, suffix: str) -> dict[str, dict[str, Any]]:
@@ -261,7 +286,6 @@ def evidence_line(paso9: dict[str, Any] | None, field: dict[str, Any] | None) ->
     if field:
         evidence.extend(parse_json_list(field.get("evidence")))
 
-    # Keep this readable; full JSON remains in data files.
     evidence = evidence[:8]
     return "EVIDENCE   " + render_list(evidence)
 
@@ -369,7 +393,13 @@ def main() -> None:
         sys.exit(2)
 
     book = sys.argv[1].lower()
-    out_path = process_book(book)
+
+    try:
+        out_path = process_book(book)
+    except FileNotFoundError as exc:
+        print(str(exc), file=sys.stderr)
+        sys.exit(1)
+
     print(f"wrote: {out_path}")
 
 
