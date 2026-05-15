@@ -38,6 +38,10 @@ MNA/SOURCES/MorphGNT/
 
 No generated output is ever written into SOURCES/.
 If the expected source file cannot be found, this script fails visibly.
+
+IMPORTANT SOURCE DETAIL
+MorphGNT reference codes normally use New Testament book order, not Bible-wide
+40–66 numbering. Therefore 1 Corinthians is 07, not 46.
 """
 
 from __future__ import annotations
@@ -50,36 +54,38 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Optional
 
-VERSION = "stage1-finite-verbs-v2"
+VERSION = "stage1-finite-verbs-v3"
 
+# MorphGNT NT-order book codes. These are source-reference codes only.
+# They are required so the script extracts only the requested book.
 BOOK_CODES = {
-    "mateo": "40",
-    "marcos": "41",
-    "lucas": "42",
-    "juan": "43",
-    "hechos": "44",
-    "romanos": "45",
-    "1corintios": "46",
-    "2corintios": "47",
-    "galatas": "48",
-    "efesios": "49",
-    "filipenses": "50",
-    "colosenses": "51",
-    "1tesalonicenses": "52",
-    "2tesalonicenses": "53",
-    "1timoteo": "54",
-    "2timoteo": "55",
-    "tito": "56",
-    "filemon": "57",
-    "hebreos": "58",
-    "santiago": "59",
-    "1pedro": "60",
-    "2pedro": "61",
-    "1juan": "62",
-    "2juan": "63",
-    "3juan": "64",
-    "judas": "65",
-    "apocalipsis": "66",
+    "mateo": "01",
+    "marcos": "02",
+    "lucas": "03",
+    "juan": "04",
+    "hechos": "05",
+    "romanos": "06",
+    "1corintios": "07",
+    "2corintios": "08",
+    "galatas": "09",
+    "efesios": "10",
+    "filipenses": "11",
+    "colosenses": "12",
+    "1tesalonicenses": "13",
+    "2tesalonicenses": "14",
+    "1timoteo": "15",
+    "2timoteo": "16",
+    "tito": "17",
+    "filemon": "18",
+    "hebreos": "19",
+    "santiago": "20",
+    "1pedro": "21",
+    "2pedro": "22",
+    "1juan": "23",
+    "2juan": "24",
+    "3juan": "25",
+    "judas": "26",
+    "apocalipsis": "27",
 }
 
 FINITE_MOODS = {
@@ -323,7 +329,7 @@ def build_dataset(book: str, source: Path, output_path: Path, mna_root: Path) ->
         "generated_at": "DETERMINISTIC-NOT-RUNTIME-STAMPED",
         "version": VERSION,
         "book": book,
-        "book_code": book_code,
+        "morphgnt_book_code": book_code,
         "total_book_tokens_seen": total_book_tokens,
         "total_verb_tokens_seen": total_verb_tokens,
         "finite_verbs_extracted": finite_count,
