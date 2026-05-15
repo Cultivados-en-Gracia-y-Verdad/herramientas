@@ -12,16 +12,12 @@ PURPOSE
   - nonfinite_other,
   - unrecognized_verbal_morphology.
 - Write a human-readable audit report.
+- Print exact unrecognized verbal rows when any exist.
 - Fail visibly if verbal accounting is inconsistent.
 
 ABSOLUTE LIMITS
 This audit does NOT determine predicates, clauses, subjects, trunk,
 continuity, movement, outlines, theology, or commentary.
-
-VALIDATION CLAIM
-This script does not prove that downstream predicate work is correct.
-It only verifies whether Stage 1 finite-verb extraction accounts for
-all MorphGNT verbal tokens under the finite/non-finite distinction.
 """
 
 from __future__ import annotations
@@ -33,12 +29,7 @@ from typing import Optional
 
 import build_finite_verbs as stage1
 
-VERSION = "stage1-finite-verb-audit-v1"
-
-NONFINITE_MOODS = {
-    "N": "infinitive",
-    "P": "participle",
-}
+VERSION = "stage1-finite-verb-audit-v2"
 
 
 def classify_verbal_token(pos: str, parsing: str) -> str:
@@ -46,20 +37,24 @@ def classify_verbal_token(pos: str, parsing: str) -> str:
     if finite is not None:
         return "finite_counted"
 
-    # MorphGNT forms are normally V- + morphology. The mood code is commonly
-    # the fourth grammatical code after V-, or the finite parser would already
-    # have captured it. This is mechanical classification for audit only.
     combined = f"{pos}{parsing}"
 
-    if "N" in combined[2:6]:
-        return "nonfinite_infinitive"
-    if "P" in combined[2:6]:
-        return "nonfinite_participle"
+    # MorphGNT parsing format for verbs uses mood in the fourth grammatical
+    # slot after V-. Examples:
+    # V--PAN---- = present active infinitive
+    # V--PAPNSM- = present active participle nominative singular masculine
+    # V--AAPNSM- = aorist active participle nominative singular masculine
+    if len(combined) >= 6:
+        mood_slot = combined[5]
+        if mood_slot == "N":
+            return "nonfinite_infinitive"
+        if mood_slot == "P":
+            return "nonfinite_participle"
 
     return "unrecognized_verbal_morphology"
 
 
-def audit_book(book: str, source: Path, output_path: Path, mna_root: Path) -> tuple[Counter, dict[str, list[stage1.MorphLine]]]:
+def audit_book(book: str, source: Path, output_path: Path, mna_root: Path) -> tuple[Counter, dict[str, list[stage1.MorphLine]], Counter]:
     if book not in stage1.BOOK_CODES:
         known = ", ".join(sorted(stage1.BOOK_CODES))
         raise ValueError(f"Unknown book '{book}'. Known books: {known}")
@@ -80,7 +75,9 @@ def audit_book(book: str, source: Path, output_path: Path, mna_root: Path) -> tu
         counts[category] += 1
         morph_counts[f"{morph.pos}{morph.parsing}"] += 1
 
-        if len(examples[category]) < 30:
+        # For unrecognized forms, keep all examples. For large normal categories,
+        # keep only a bounded sample so the audit remains readable.
+        if category == "unrecognized_verbal_morphology" or len(examples[category]) < 30:
             examples[category].append(morph)
 
     accounted = (
@@ -106,13 +103,16 @@ def audit_book(book: str, source: Path, output_path: Path, mna_root: Path) -> tu
         handle.write("This audit accounts for every verbal token read from MorphGNT for the requested book.\n\n")
 
         handle.write("## Counts\n\n")
-        handle.write(f"- total_book_tokens_seen: {counts['total_book_tokens_seen']}\n")
-        handle.write(f"- total_verbal_tokens_seen: {counts['total_verbal_tokens_seen']}\n")
-        handle.write(f"- finite_counted: {counts['finite_counted']}\n")
-        handle.write(f"- nonfinite_participle: {counts['nonfinite_participle']}\n")
-        handle.write(f"- nonfinite_infinitive: {counts['nonfinite_infinitive']}\n")
-        handle.write(f"- nonfinite_other: {counts['nonfinite_other']}\n")
-        handle.write(f"- unrecognized_verbal_morphology: {counts['unrecognized_verbal_morphology']}\n")
+        for key in [
+            "total_book_tokens_seen",
+            "total_verbal_tokens_seen",
+            "finite_counted",
+            "nonfinite_participle",
+            "nonfinite_infinitive",
+            "nonfinite_other",
+            "unrecognized_verbal_morphology",
+        ]:
+            handle.write(f"- {key}: {counts[key]}\n")
         handle.write(f"- accounted_verbal_tokens: {accounted}\n\n")
 
         handle.write("## Status\n\n")
@@ -123,7 +123,7 @@ def audit_book(book: str, source: Path, output_path: Path, mna_root: Path) -> tu
         else:
             handle.write("FAIL: verbal token accounting mismatch.\n\n")
 
-        handle.write("## Example Rows by Category\n\n")
+        handle.write("## Rows by Category\n\n")
         for category in [
             "finite_counted",
             "nonfinite_participle",
@@ -135,11 +135,12 @@ def audit_book(book: str, source: Path, output_path: Path, mna_root: Path) -> tu
             if not examples[category]:
                 handle.write("[none]\n\n")
                 continue
-            handle.write("| reference | greek | lemma | morph | source_line |\n")
-            handle.write("|---|---|---|---:|---:|\n")
+            handle.write("| reference | greek | lemma | morph | source_line | raw |\n")
+            handle.write("|---|---|---|---:|---:|---|\n")
             for morph in examples[category]:
+                raw = morph.raw.replace("|", "\\|")
                 handle.write(
-                    f"| {book} {morph.chapter}:{morph.verse} | {morph.greek} | {morph.lemma} | {morph.pos}{morph.parsing} | {morph.source_line_number} |\n"
+                    f"| {book} {morph.chapter}:{morph.verse} | {morph.greek} | {morph.lemma} | {morph.pos}{morph.parsing} | {morph.source_line_number} | `{raw}` |\n"
                 )
             handle.write("\n")
 
@@ -149,10 +150,10 @@ def audit_book(book: str, source: Path, output_path: Path, mna_root: Path) -> tu
         for morph_code, count in sorted(morph_counts.items()):
             handle.write(f"| {morph_code} | {count} |\n")
 
-    return counts, examples
+    return counts, examples, morph_counts
 
 
-def print_visible_output(book: str, source: Path, output_path: Path, counts: Counter) -> None:
+def print_visible_output(book: str, source: Path, output_path: Path, counts: Counter, examples: dict[str, list[stage1.MorphLine]]) -> None:
     accounted = (
         counts["finite_counted"]
         + counts["nonfinite_participle"]
@@ -173,6 +174,15 @@ def print_visible_output(book: str, source: Path, output_path: Path, counts: Cou
     print(f"NONFINITE OTHER: {counts['nonfinite_other']}")
     print(f"UNRECOGNIZED VERBAL MORPHOLOGY: {counts['unrecognized_verbal_morphology']}")
     print(f"ACCOUNTED VERBAL TOKENS: {accounted}")
+
+    if counts["unrecognized_verbal_morphology"]:
+        print()
+        print("UNRECOGNIZED ROWS:")
+        for morph in examples["unrecognized_verbal_morphology"]:
+            print(
+                f"- {book} {morph.chapter}:{morph.verse} | {morph.greek} | lemma={morph.lemma} | "
+                f"morph={morph.pos}{morph.parsing} | line={morph.source_line_number}"
+            )
 
     if accounted != counts["total_verbal_tokens_seen"]:
         print("STATUS: FAIL — verbal token accounting mismatch")
@@ -198,8 +208,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         if not output_path.is_absolute():
             output_path = (Path.cwd() / output_path).resolve()
 
-        counts, _examples = audit_book(book, source, output_path, mna_root)
-        print_visible_output(book, source, output_path, counts)
+        counts, examples, _morph_counts = audit_book(book, source, output_path, mna_root)
+        print_visible_output(book, source, output_path, counts, examples)
 
         accounted = (
             counts["finite_counted"]
