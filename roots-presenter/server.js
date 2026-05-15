@@ -143,6 +143,7 @@ let controllerState = {
   sections: [],
   step: 0,
   background: "#0f172a",
+  backgroundMedia: "",
   textColor: "#ffffff",
   accentColor: "#38bdf8"
 };
@@ -2018,6 +2019,7 @@ function setControllerSong(payload = {}) {
     sections,
     step: 0,
     background: cleanText(payload.background, controllerState.background || "#0f172a"),
+    backgroundMedia: cleanText(payload.backgroundMedia, controllerState.backgroundMedia || ""),
     textColor: cleanText(payload.textColor, controllerState.textColor || "#ffffff"),
     accentColor: cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8")
   };
@@ -2025,6 +2027,7 @@ function setControllerSong(payload = {}) {
 
 function updateControllerStyle(payload = {}) {
   controllerState.background = cleanText(payload.background, controllerState.background || "#0f172a");
+  controllerState.backgroundMedia = cleanText(payload.backgroundMedia, controllerState.backgroundMedia || "");
   controllerState.textColor = cleanText(payload.textColor, controllerState.textColor || "#ffffff");
   controllerState.accentColor = cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8");
 }

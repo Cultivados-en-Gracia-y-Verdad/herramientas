@@ -19,6 +19,7 @@ let controllerState = {
   sections: [],
   step: 0,
   background: "#0f172a",
+  backgroundMedia: "",
   textColor: "#ffffff",
   accentColor: "#38bdf8"
 };
@@ -37,6 +38,10 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function isVideoMedia(value) {
+  return /\.(mp4|webm|ogg|mov)(?:[?#].*)?$/i.test(String(value || "").trim());
 }
 
 function loadSongs() {
@@ -76,6 +81,7 @@ function getSongPayload(song = getSelectedSong()) {
     title: song?.title || "Song",
     lyrics: song?.lyrics || "",
     background: byId("backgroundColor").value,
+    backgroundMedia: byId("backgroundMedia").value.trim(),
     textColor: byId("textColor").value,
     accentColor: byId("accentColor").value
   };
@@ -115,6 +121,7 @@ function previousSection() {
 function applyStyle() {
   socket.emit("controller-style", {
     background: byId("backgroundColor").value,
+    backgroundMedia: byId("backgroundMedia").value.trim(),
     textColor: byId("textColor").value,
     accentColor: byId("accentColor").value
   });
@@ -156,17 +163,23 @@ function saveCurrentSong() {
 
 function renderSongList() {
   const list = byId("songList");
+  const query = byId("songSearch").value.trim().toLowerCase();
+  const visibleSongs = query
+    ? songs.filter(song =>
+        `${song.title}\n${song.lyrics}`.toLowerCase().includes(query)
+      )
+    : songs;
 
-  if (!songs.length) {
+  if (!visibleSongs.length) {
     list.innerHTML = `
       <div class="empty-state">
-        No songs loaded. Click New Song to add one.
+        ${songs.length ? "No songs match your search." : "No songs loaded. Click New Song to add one."}
       </div>
     `;
     return;
   }
 
-  list.innerHTML = songs.map(song => {
+  list.innerHTML = visibleSongs.map(song => {
     const selected = song.id === selectedSongId ? " selected" : "";
     const stanzaCount = parseSections(song.lyrics).length;
     return `
@@ -185,6 +198,7 @@ function renderPreview() {
   const preview = byId("controllerPreview");
   const status = byId("liveStatus");
   const selectedSong = getSelectedSong();
+  const media = byId("backgroundMedia").value.trim();
   const previewSections = controllerState.active
     ? controllerState.sections || []
     : selectedSong
@@ -196,9 +210,18 @@ function renderPreview() {
   preview.style.setProperty("--preview-background", byId("backgroundColor").value);
   preview.style.setProperty("--preview-color", byId("textColor").value);
   preview.style.setProperty("--preview-accent", byId("accentColor").value);
+  preview.style.setProperty("--preview-media", media && !isVideoMedia(media)
+    ? `url("${media.replace(/"/g, '\\"')}")`
+    : "none");
+  preview.classList.toggle("has-media", !!media && !isVideoMedia(media));
   preview.classList.toggle("teaching-mode", !controllerState.active);
   preview.innerHTML = controllerState.active
-    ? activeSection.map(line => `<div>${escapeHtml(line)}</div>`).join("")
+    ? `
+      ${media && isVideoMedia(media) ? `<video class="preview-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
+      <div class="preview-lines">
+        ${activeSection.map(line => `<div>${escapeHtml(line)}</div>`).join("")}
+      </div>
+    `
     : `
       <div class="teaching-mode-preview">
         <strong>Teaching mode</strong>
@@ -237,6 +260,7 @@ function renderThumbnails(sections, activeIndex) {
 
 function hydrateColorsFromState() {
   byId("backgroundColor").value = controllerState.background || "#0f172a";
+  byId("backgroundMedia").value = controllerState.backgroundMedia || "";
   byId("textColor").value = controllerState.textColor || "#ffffff";
   byId("accentColor").value = controllerState.accentColor || "#38bdf8";
 }
@@ -298,6 +322,8 @@ byId("clearButton").addEventListener("click", clearLive);
 byId("nextButton").addEventListener("click", nextSection);
 byId("previousButton").addEventListener("click", previousSection);
 byId("applyStyleButton").addEventListener("click", applyStyle);
+byId("songSearch").addEventListener("input", renderSongList);
+byId("backgroundMedia").addEventListener("input", renderPreview);
 byId("backgroundColor").addEventListener("input", renderPreview);
 byId("textColor").addEventListener("input", renderPreview);
 byId("accentColor").addEventListener("input", renderPreview);

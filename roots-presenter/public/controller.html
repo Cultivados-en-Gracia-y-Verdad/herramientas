@@ -28,6 +28,11 @@
         <button id="newSongButton" type="button" class="secondary">New Song</button>
       </div>
 
+      <label class="search-field">
+        Search songs
+        <input id="songSearch" type="search" placeholder="Type a title or lyric...">
+      </label>
+
       <div id="songList" class="song-list"></div>
     </section>
 
@@ -71,6 +76,10 @@
 
       <section class="panel-card">
         <h2>Background</h2>
+        <label>
+          Image/video URL or local path
+          <input id="backgroundMedia" type="text" placeholder="https://... or /course-assets/background.mp4">
+        </label>
         <div class="color-grid">
           <label>
             Background

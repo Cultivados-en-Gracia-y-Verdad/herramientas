@@ -144,12 +144,19 @@ function render() {
 
 function renderControllerProjector(projectorSlide) {
   const section = controllerState.sections?.[controllerState.step] || [];
+  const media = String(controllerState.backgroundMedia || "").trim();
   projectorSlide.classList.remove("title-slide");
   projectorSlide.classList.add("song-output");
   projectorSlide.style.setProperty("--song-background", controllerState.background || "#0f172a");
+  projectorSlide.style.setProperty("--song-media", media && !isVideoMedia(media)
+    ? `url("${media.replace(/"/g, '\\"')}")`
+    : "none");
   projectorSlide.style.setProperty("--song-color", controllerState.textColor || "#ffffff");
   projectorSlide.style.setProperty("--song-accent", controllerState.accentColor || "#38bdf8");
+  projectorSlide.classList.toggle("song-has-media", !!media && !isVideoMedia(media));
+  projectorSlide.classList.toggle("song-has-video", !!media && isVideoMedia(media));
   projectorSlide.innerHTML = `
+    ${media && isVideoMedia(media) ? `<video class="song-background-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
     <div class="song-output-inner">
       ${controllerState.title ? `<div class="song-output-title">${escapeHtml(controllerState.title)}</div>` : ""}
       <div class="song-output-lines">
@@ -205,6 +212,10 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function isVideoMedia(value) {
+  return /\.(mp4|webm|ogg|mov)(?:[?#].*)?$/i.test(String(value || "").trim());
 }
 
 function renderEntries(entries) {

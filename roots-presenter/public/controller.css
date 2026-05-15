@@ -161,6 +161,14 @@ textarea {
   padding: 10px 12px;
 }
 
+.search-field {
+  margin-bottom: 16px;
+}
+
+.search-field input {
+  font-size: 20px;
+}
+
 textarea {
   min-height: 360px;
   resize: vertical;
@@ -270,6 +278,7 @@ input[type="color"] {
 }
 
 .controller-preview {
+  position: relative;
   display: grid;
   align-content: center;
   min-height: 230px;
@@ -282,6 +291,39 @@ input[type="color"] {
   line-height: 1.28;
   padding: 24px;
   text-align: center;
+}
+
+.controller-preview.has-media {
+  background:
+    linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.54)),
+    var(--preview-media),
+    var(--preview-background, #0f172a);
+  background-position: center;
+  background-size: cover;
+}
+
+.preview-video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.controller-preview:has(.preview-video)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.56));
+  border-radius: 8px;
+}
+
+.preview-lines {
+  position: relative;
+  z-index: 2;
 }
 
 .controller-preview.teaching-mode {

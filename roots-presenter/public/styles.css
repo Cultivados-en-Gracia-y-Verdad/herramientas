@@ -790,7 +790,35 @@ button {
   text-align: center;
 }
 
+.projector-slide.song-output.song-has-media {
+  background:
+    linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.54)),
+    var(--song-media),
+    var(--song-background, #0f172a);
+  background-position: center;
+  background-size: cover;
+}
+
+.song-background-video {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projector-slide.song-has-video::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.56));
+}
+
 .song-output-inner {
+  position: relative;
+  z-index: 2;
   display: grid;
   gap: 0.55em;
   justify-items: center;
