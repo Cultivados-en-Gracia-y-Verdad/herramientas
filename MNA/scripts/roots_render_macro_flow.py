@@ -21,15 +21,18 @@ It only renders movement visibility from:
 - Paso 9 support tendencies
 - dependency density
 - predication continuity
+- minimal textual anchors
 """
 
 import json
+import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 from typing import Any
 
 WINDOW_SIZE = 12
+MAX_ANCHORS = 6
 
 
 # ---------------------------------------------------------
@@ -121,6 +124,25 @@ def load_paso9(book: str) -> dict[str, dict[str, Any]]:
     return out
 
 
+
+def load_action_support(book: str) -> dict[str, dict[str, Any]]:
+    path = (
+        mna_root()
+        / "data"
+        / "paso13-action-support"
+        / f"{book}-paso13-action-support.jsonl"
+    )
+
+    out: dict[str, dict[str, Any]] = {}
+
+    for row in ordered(read_jsonl(path)):
+        key = str(row.get("predication_id") or row.get("stream_index") or "")
+        if key:
+            out[key] = row
+
+    return out
+
+
 # ---------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------
@@ -178,6 +200,78 @@ def chapter_verse(row: dict[str, Any]) -> str:
     return f"{row.get('chapter')}:{row.get('verse')}"
 
 
+
+def compact_space(text: str) -> str:
+    return re.sub(r"\s+", " ", str(text or "")).strip()
+
+
+
+def anchor_text(
+    row: dict[str, Any],
+    action_support: dict[str, dict[str, Any]],
+    paso9: dict[str, dict[str, Any]],
+) -> str:
+    key = str(row.get("predication_id") or row.get("stream_index") or "")
+    action = action_support.get(key, {})
+    p9 = paso9.get(key, {})
+
+    verb = str(action.get("verb_support") or "").strip()
+    subject = str(action.get("subject_support") or "").strip()
+    scope = compact_space(str(action.get("scope_support") or ""))
+    labels = parse_json_list(p9.get("candidate_labels"))
+    state = str(row.get("field_state") or "")
+
+    label_text = "/".join(labels[:2]) if labels else "—"
+
+    if not verb:
+        verb = "?"
+
+    if subject and subject != "unknown":
+        head = f"{subject} → =={verb}=="
+    else:
+        head = f"=={verb}=="
+
+    if scope:
+        # Keep anchors short; full text remains in detailed renderers.
+        if len(scope) > 72:
+            scope = scope[:69].rstrip() + "..."
+        return f"{chapter_verse(row)}  {head:<34} [{state}; {label_text}]  {scope}"
+
+    return f"{chapter_verse(row)}  {head:<34} [{state}; {label_text}]"
+
+
+
+def choose_anchor_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    if len(rows) <= MAX_ANCHORS:
+        return rows
+
+    chosen: list[dict[str, Any]] = []
+
+    # Always include start/end for movement perception.
+    chosen.append(rows[0])
+
+    # Include the strongest transition/weakening pressure points.
+    ranked = sorted(
+        rows[1:-1],
+        key=lambda row: (
+            int(row.get("transition_score") or 0)
+            + int(row.get("weakening_score") or 0),
+            int(row.get("stream_index") or 0),
+        ),
+        reverse=True,
+    )
+
+    for row in ranked:
+        if row not in chosen:
+            chosen.append(row)
+        if len(chosen) >= MAX_ANCHORS - 1:
+            break
+
+    chosen.append(rows[-1])
+
+    return sorted(chosen, key=lambda row: int(row.get("stream_index") or 0))
+
+
 # ---------------------------------------------------------
 # Rendering
 # ---------------------------------------------------------
@@ -186,6 +280,7 @@ def chapter_verse(row: dict[str, Any]) -> str:
 def render_window(
     rows: list[dict[str, Any]],
     paso9: dict[str, dict[str, Any]],
+    action_support: dict[str, dict[str, Any]],
 ) -> list[str]:
     first = rows[0]
     last = rows[-1]
@@ -225,6 +320,12 @@ def render_window(
     lines.append("```text")
     lines.append(f"FLOW BAND         {band}")
     lines.append("")
+    lines.append("TEXTUAL ANCHORS")
+
+    for row in choose_anchor_rows(rows):
+        lines.append(f"  {anchor_text(row, action_support, paso9)}")
+
+    lines.append("")
     lines.append("FIELD DISTRIBUTION")
 
     for name, count in sorted(state_counter.items()):
@@ -256,6 +357,7 @@ def render_window(
 def render_book(book: str) -> str:
     field_rows = load_field(book)
     paso9 = load_paso9(book)
+    action_support = load_action_support(book)
 
     lines: list[str] = []
     lines.append(f"# ROOTS Macro Flow — {book}")
@@ -288,7 +390,7 @@ def render_book(book: str) -> str:
             lines.append(f"## Capítulo {chapter}")
             lines.append("")
 
-        lines.extend(render_window(rows, paso9))
+        lines.extend(render_window(rows, paso9, action_support))
 
     return "\n".join(lines).rstrip() + "\n"
 
