@@ -39,9 +39,11 @@ MNA/SOURCES/MorphGNT/
 No generated output is ever written into SOURCES/.
 If the expected source file cannot be found, this script fails visibly.
 
-IMPORTANT SOURCE DETAIL
-MorphGNT reference codes normally use New Testament book order, not Bible-wide
-40–66 numbering. Therefore 1 Corinthians is 07, not 46.
+IMPORTANT SOURCE DETAILS
+- MorphGNT reference codes normally use New Testament book order, not Bible-wide
+  40–66 numbering. Therefore 1 Corinthians is 07, not 46.
+- MorphGNT marks imperative mood with D. This script also recognizes M as
+  imperative only to remain safe if a future source uses an RMAC-like label.
 """
 
 from __future__ import annotations
@@ -54,10 +56,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Optional
 
-VERSION = "stage1-finite-verbs-v3"
+VERSION = "stage1-finite-verbs-v4"
 
-# MorphGNT NT-order book codes. These are source-reference codes only.
-# They are required so the script extracts only the requested book.
 BOOK_CODES = {
     "mateo": "01",
     "marcos": "02",
@@ -92,6 +92,7 @@ FINITE_MOODS = {
     "I": "indicative",
     "S": "subjunctive",
     "O": "optative",
+    "D": "imperative",
     "M": "imperative",
 }
 
@@ -114,7 +115,6 @@ class MorphLine:
 
 
 def mna_root_from_script() -> Path:
-    # MNA/scripts/stage1/build_finite_verbs.py -> MNA
     return Path(__file__).resolve().parents[2]
 
 
@@ -228,9 +228,9 @@ def finite_features(pos: str, parsing: str) -> Optional[dict[str, str]]:
     combined = f"{pos}{parsing}"
 
     patterns = [
-        (re.compile(r"^V-([A-Z])([A-Z])([ISOMNP])-([123])([SP])"), "rm_label"),
-        (re.compile(r"^V-([123])([A-Z])([A-Z])([ISOMNP])-([SP])"), "morphgnt_person_first"),
-        (re.compile(r"^V-([A-Z])([A-Z])([ISOMNP])-?([123])([SP])"), "morphgnt_person_after_mood"),
+        (re.compile(r"^V-([A-Z])([A-Z])([ISODMNP])-([123])([SP])"), "rm_label"),
+        (re.compile(r"^V-([123])([A-Z])([A-Z])([ISODMNP])-([SP])"), "morphgnt_person_first"),
+        (re.compile(r"^V-([A-Z])([A-Z])([ISODMNP])-?([123])([SP])"), "morphgnt_person_after_mood"),
     ]
 
     for regex, shape in patterns:
@@ -333,7 +333,7 @@ def build_dataset(book: str, source: Path, output_path: Path, mna_root: Path) ->
         "total_book_tokens_seen": total_book_tokens,
         "total_verb_tokens_seen": total_verb_tokens,
         "finite_verbs_extracted": finite_count,
-        "rule": "Extract only verbal tokens whose morphology marks finite mood and person/number.",
+        "rule": "Extract only verbal tokens whose morphology marks finite mood and person/number. MorphGNT imperative mood D is finite.",
         "downstream_claims": "NONE",
     }
 
