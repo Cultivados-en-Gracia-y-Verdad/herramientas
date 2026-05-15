@@ -10,52 +10,43 @@ Purpose:
 - support later Paso 9 label evidence without assigning labels here
 
 This layer records ONLY local observable connector evidence.
+
+Current scope:
+- local Paso 9 evidence only
+- no Paso 4–8 rebuilding
+- no macro-structure
+- no clause ownership expansion
 """
 
 import csv
 import json
 import re
 import sys
+import unicodedata
 from collections import Counter
 from pathlib import Path
 from typing import Any
 
+# Canonical, accentless connector forms.
+# Original surface form is preserved separately in output.
 CONNECTOR_MAP = {
-    "καί": ("coordinating", "coordination"),
     "και": ("coordinating", "coordination"),
-    "δέ": ("coordinating", "coordination"),
     "δε": ("coordinating", "coordination"),
-    "ἀλλά": ("adversative", "coordination"),
     "αλλα": ("adversative", "coordination"),
-    "οὐδέ": ("coordinating", "coordination"),
     "ουδε": ("coordinating", "coordination"),
-    "μηδέ": ("coordinating", "coordination"),
     "μηδε": ("coordinating", "coordination"),
-    "ἤ": ("coordinating", "coordination"),
     "η": ("coordinating", "coordination"),
-    "γάρ": ("explanatory", "support"),
     "γαρ": ("explanatory", "support"),
-    "ὅτι": ("explanatory", "subordination"),
     "οτι": ("explanatory", "subordination"),
-    "διό": ("inferential", "result"),
     "διο": ("inferential", "result"),
-    "διότι": ("explanatory", "support"),
     "διοτι": ("explanatory", "support"),
-    "ὥστε": ("inferential", "result"),
     "ωστε": ("inferential", "result"),
-    "οὖν": ("inferential", "result"),
     "ουν": ("inferential", "result"),
-    "ἵνα": ("purpose", "subordination"),
     "ινα": ("purpose", "subordination"),
-    "εἰ": ("conditional", "subordination"),
     "ει": ("conditional", "subordination"),
-    "ἐάν": ("conditional", "subordination"),
     "εαν": ("conditional", "subordination"),
-    "ὅταν": ("temporal", "subordination"),
     "οταν": ("temporal", "subordination"),
-    "ὡς": ("comparative", "subordination"),
     "ως": ("comparative", "subordination"),
-    "καθώς": ("comparative", "subordination"),
     "καθως": ("comparative", "subordination"),
 }
 
@@ -115,8 +106,20 @@ def ordered(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return sorted(rows, key=lambda row: int(row.get("stream_index") or row.get("predication_index") or row.get("id") or 0))
 
 
+def strip_diacritics(text: str) -> str:
+    decomposed = unicodedata.normalize("NFD", text)
+    return "".join(ch for ch in decomposed if unicodedata.category(ch) != "Mn")
+
+
 def normalize_token(value: Any) -> str:
     text = str(value or "").strip().lower()
+    text = re.sub(r"^[\s\W_]+|[\s\W_]+$", "", text, flags=re.UNICODE)
+    text = strip_diacritics(text)
+    return text
+
+
+def clean_surface(value: Any) -> str:
+    text = str(value or "").strip()
     text = re.sub(r"^[\s\W_]+|[\s\W_]+$", "", text, flags=re.UNICODE)
     return text
 
@@ -157,19 +160,40 @@ def token_candidates(row: dict[str, Any]) -> list[str]:
     return tokens
 
 
-def find_connectors(row: dict[str, Any]) -> list[str]:
-    found: list[str] = []
+def find_connectors(row: dict[str, Any]) -> list[dict[str, str]]:
+    """Return one connector hit per normalized connector per predication row.
+
+    Upstream rows may contain both accented and accentless versions of the
+    same connector in nested fields. We preserve the first observed original
+    surface but deduplicate by canonical normalized form so counts are not
+    inflated.
+    """
+    found: list[dict[str, str]] = []
+    seen: set[str] = set()
+
     for token in token_candidates(row):
+        surface_original = clean_surface(token)
         normalized = normalize_token(token)
-        if normalized in CONNECTOR_MAP:
-            found.append(normalized)
+
+        if normalized not in CONNECTOR_MAP:
+            continue
+
+        if normalized in seen:
+            continue
+
+        seen.add(normalized)
+        found.append({
+            "surface_original": surface_original,
+            "normalized": normalized,
+        })
+
     return found
 
 
 def link_direction(connector: str) -> str:
-    if connector in {"γάρ", "γαρ", "διό", "διο", "διότι", "διοτι", "οὖν", "ουν", "ὥστε", "ωστε"}:
+    if connector in {"γαρ", "διο", "διοτι", "ουν", "ωστε"}:
         return "backward_local"
-    if connector in {"ἵνα", "ινα", "εἰ", "ει", "ἐάν", "εαν", "ὅταν", "οταν", "ὡς", "ως", "καθώς", "καθως", "ὅτι", "οτι"}:
+    if connector in {"ινα", "ει", "εαν", "οταν", "ως", "καθως", "οτι"}:
         return "forward_or_embedded_local"
     return "parallel_local"
 
@@ -183,7 +207,8 @@ def build_registry(predications: list[dict[str, Any]]) -> list[dict[str, Any]]:
         previous_row = rows[idx - 1] if idx > 0 else None
         next_row = rows[idx + 1] if idx + 1 < len(rows) else None
 
-        for occurrence_index, connector in enumerate(connectors, start=1):
+        for occurrence_index, connector_hit in enumerate(connectors, start=1):
+            connector = connector_hit["normalized"]
             connector_class, dependency_type = CONNECTOR_MAP[connector]
             direction = link_direction(connector)
             source = previous_row if direction in {"backward_local", "parallel_local"} else row
@@ -198,6 +223,7 @@ def build_registry(predications: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "stream_index": row.get("stream_index"),
                 "predication_id": row.get("predication_id"),
                 "connector_occurrence_index": occurrence_index,
+                "connector_surface_original": connector_hit["surface_original"],
                 "connector_surface": connector,
                 "connector_lemma": connector,
                 "connector_class": connector_class,
