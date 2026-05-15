@@ -2,14 +2,42 @@
 """
 MNA Stage 1 — finite verb extraction from MorphGNT.
 
-This script does exactly one thing:
-- read MorphGNT-style source lines,
-- mechanically extract finite Greek verbs,
-- write a deterministic JSONL dataset,
-- print visible whole-book output.
+PURPOSE
+- Read MorphGNT from the canonical read-only source folder.
+- Extract ONLY finite Greek verbs mechanically.
+- Write a deterministic JSONL dataset.
+- Print visible whole-book output.
 
-It does NOT infer predicates, clauses, subjects, trunk, continuity, movement,
-or any downstream structure.
+ABSOLUTE LIMITS
+This script does NOT determine:
+- predicates,
+- clause boundaries,
+- subjects,
+- implied subjects,
+- connector relationships,
+- trunk,
+- continuity,
+- movement,
+- outlines,
+- theology,
+- commentary.
+
+MECHANICAL RULE
+A token is extracted only when:
+1. the MorphGNT POS field is verbal, and
+2. the morphology marks finite mood:
+   - indicative,
+   - subjunctive,
+   - optative,
+   - imperative, and
+3. the morphology includes person/number.
+
+SOURCE RULE
+The canonical source location is:
+MNA/SOURCES/MorphGNT/
+
+No generated output is ever written into SOURCES/.
+If the expected source file cannot be found, this script fails visibly.
 """
 
 from __future__ import annotations
@@ -22,10 +50,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Optional
 
-VERSION = "stage1-finite-verbs-v1"
+VERSION = "stage1-finite-verbs-v2"
 
-# MorphGNT / SBLGNT numeric NT book codes.
-# These are source-reference codes only; they are not interpretation.
 BOOK_CODES = {
     "mateo": "40",
     "marcos": "41",
@@ -81,23 +107,24 @@ class MorphLine:
     token_index_in_verse: int
 
 
-def repo_root_from_script() -> Path:
-    # MNA/scripts/build_finite_verbs.py -> MNA
-    return Path(__file__).resolve().parents[1]
+def mna_root_from_script() -> Path:
+    # MNA/scripts/stage1/build_finite_verbs.py -> MNA
+    return Path(__file__).resolve().parents[2]
+
+
+def canonical_morphgnt_dir(mna_root: Path) -> Path:
+    return mna_root / "SOURCES" / "MorphGNT"
 
 
 def candidate_sources(mna_root: Path, book: str) -> list[Path]:
+    morph_dir = canonical_morphgnt_dir(mna_root)
     return [
-        mna_root / "sources" / "morphgnt" / f"{book}.txt",
-        mna_root / "sources" / "MorphGNT" / f"{book}.txt",
-        mna_root / "data" / "morphgnt" / f"{book}.txt",
-        mna_root / "data" / "MorphGNT" / f"{book}.txt",
-        mna_root / "data" / "morphgnt.txt",
-        mna_root / "data" / "MorphGNT.txt",
-        mna_root / "MNA_CHATPGT_FAIL" / "data" / "morphgnt" / f"{book}.txt",
-        mna_root / "MNA_CHATPGT_FAIL" / "data" / "MorphGNT" / f"{book}.txt",
-        mna_root / "MNA_CHATPGT_FAIL" / "data" / "morphgnt.txt",
-        mna_root / "MNA_CHATPGT_FAIL" / "data" / "MorphGNT.txt",
+        morph_dir / f"{book}.txt",
+        morph_dir / f"{book}.md",
+        morph_dir / f"{book}-morphgnt.txt",
+        morph_dir / f"{book}-morphgnt.md",
+        morph_dir / "morphgnt.txt",
+        morph_dir / "MorphGNT.txt",
     ]
 
 
@@ -115,9 +142,29 @@ def resolve_source(mna_root: Path, book: str, explicit_source: Optional[str]) ->
         if path.is_file():
             return path
 
-    lines = ["No MorphGNT source file found.", "Tried:"]
-    lines.extend(f"- {p}" for p in tried)
-    raise FileNotFoundError("\n".join(lines))
+    morph_dir = canonical_morphgnt_dir(mna_root)
+    visible_contents = []
+    if morph_dir.exists():
+        visible_contents = sorted(p.name for p in morph_dir.iterdir())[:50]
+
+    message = [
+        "No MorphGNT source file found.",
+        "Canonical source directory expected:",
+        f"- {morph_dir}",
+        "Tried these exact files:",
+    ]
+    message.extend(f"- {p}" for p in tried)
+
+    if morph_dir.exists():
+        message.append("Visible contents of SOURCES/MorphGNT:")
+        if visible_contents:
+            message.extend(f"- {name}" for name in visible_contents)
+        else:
+            message.append("- [directory exists but is empty]")
+    else:
+        message.append("SOURCES/MorphGNT does not exist at the expected path.")
+
+    raise FileNotFoundError("\n".join(message))
 
 
 def parse_ref(ref_code: str, expected_book_code: str) -> Optional[tuple[int, int]]:
@@ -169,24 +216,14 @@ def parse_morph_line(line: str, line_number: int, expected_book_code: str, verse
 
 
 def finite_features(pos: str, parsing: str) -> Optional[dict[str, str]]:
-    """Return mechanical finite-verb features, or None.
-
-    Supported source shapes:
-    - RMAC-like combined: V-PAI-3S
-    - MorphGNT common: pos=V-, parsing=3PAI-S--
-    - MorphGNT alternate: pos=V-, parsing=PAI-3S--
-    """
     if not pos.startswith("V"):
         return None
 
     combined = f"{pos}{parsing}"
 
     patterns = [
-        # V-PAI-3S / V-AAI-3P etc.
         (re.compile(r"^V-([A-Z])([A-Z])([ISOMNP])-([123])([SP])"), "rm_label"),
-        # V-3PAI-S-- / V-1AAI-P-- etc.
         (re.compile(r"^V-([123])([A-Z])([A-Z])([ISOMNP])-([SP])"), "morphgnt_person_first"),
-        # V-PAI-3S-- / V-AAI-3P-- etc.
         (re.compile(r"^V-([A-Z])([A-Z])([ISOMNP])-?([123])([SP])"), "morphgnt_person_after_mood"),
     ]
 
@@ -228,6 +265,13 @@ def iter_morph_lines(source: Path, book_code: str) -> Iterable[MorphLine]:
                 yield parsed
 
 
+def relpath_or_abs(path: Path, root: Path) -> str:
+    try:
+        return str(path.relative_to(root))
+    except ValueError:
+        return str(path)
+
+
 def build_dataset(book: str, source: Path, output_path: Path, mna_root: Path) -> tuple[int, int, int]:
     if book not in BOOK_CODES:
         known = ", ".join(sorted(BOOK_CODES))
@@ -239,7 +283,6 @@ def build_dataset(book: str, source: Path, output_path: Path, mna_root: Path) ->
     total_book_tokens = 0
     total_verb_tokens = 0
     finite_count = 0
-
     records: list[dict[str, object]] = []
 
     for morph in iter_morph_lines(source, book_code):
@@ -274,9 +317,9 @@ def build_dataset(book: str, source: Path, output_path: Path, mna_root: Path) ->
     metadata = {
         "record_type": "metadata",
         "stage": "Stage 1 — Finite Verbs",
-        "source": str(source.relative_to(mna_root) if source.is_relative_to(mna_root) else source),
-        "producer_script": "scripts/build_finite_verbs.py",
-        "producer_command": f"python3 scripts/build_finite_verbs.py {book}",
+        "source": relpath_or_abs(source, mna_root),
+        "producer_script": "scripts/stage1/build_finite_verbs.py",
+        "producer_command": f"python3 scripts/stage1/build_finite_verbs.py {book}",
         "generated_at": "DETERMINISTIC-NOT-RUNTIME-STAMPED",
         "version": VERSION,
         "book": book,
@@ -284,8 +327,8 @@ def build_dataset(book: str, source: Path, output_path: Path, mna_root: Path) ->
         "total_book_tokens_seen": total_book_tokens,
         "total_verb_tokens_seen": total_verb_tokens,
         "finite_verbs_extracted": finite_count,
-        "rule": "A token is extracted only when MorphGNT POS is verbal and morphology marks mood as indicative, subjunctive, optative, or imperative with person/number.",
-        "downstream_claims": "NONE: predicates, clauses, subjects, trunk, continuity, and movement are not produced here.",
+        "rule": "Extract only verbal tokens whose morphology marks finite mood and person/number.",
+        "downstream_claims": "NONE",
     }
 
     with output_path.open("w", encoding="utf-8", newline="\n") as handle:
@@ -323,7 +366,7 @@ def print_visible_output(book: str, source: Path, output_path: Path, total_token
                 break
 
     if finite_count == 0:
-        print("NO FINITE VERBS EXTRACTED — this is a failed Stage 1 output unless the source/book is wrong.")
+        print("NO FINITE VERBS EXTRACTED — failed visible output.")
     elif finite_count > shown:
         print(f"... {finite_count - shown} more finite verbs written to dataset")
 
@@ -333,11 +376,11 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("book", help="Book slug, e.g. 1corintios, romanos, filemon")
     parser.add_argument("--source", help="Explicit MorphGNT source file path")
     parser.add_argument("--output", help="Explicit output JSONL path")
-    parser.add_argument("--preview-lines", type=int, default=40, help="Number of finite-verb rows to print")
+    parser.add_argument("--preview-lines", type=int, default=40)
     args = parser.parse_args(argv)
 
     book = args.book.strip().lower()
-    mna_root = repo_root_from_script()
+    mna_root = mna_root_from_script()
 
     try:
         source = resolve_source(mna_root, book, args.source)
