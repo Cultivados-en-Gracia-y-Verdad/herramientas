@@ -1,367 +1,465 @@
 structural_regime_id	group_index	book	start_stream_index	end_stream_index	start_reference	end_reference	record_count	total_structural_weight	movement_class_counts	movement_status_counts	first_predication_id	last_predication_id	first_finite_verb	last_finite_verb
 SR0001	1	1corintios	1	1	1:4	1:4	1	0	"{""stable"": 1}"	"{""strong"": 1}"	1corintios-1-4-P01	1corintios-1-4-P01	εὐχαριστῶ	εὐχαριστῶ
-SR0002	2	1corintios	2	3	1:5	1:6	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-1-5-P01	1corintios-1-6-P01	ἐπλουτίσθητε	ἐβεβαιώθη
-SR0003	3	1corintios	4	4	1:8	1:8	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-8-P01	1corintios-1-8-P01	βεβαιώσει	βεβαιώσει
-SR0004	4	1corintios	5	5	1:9	1:9	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-1-9-P01	1corintios-1-9-P01	ἐκλήθητε	ἐκλήθητε
-SR0005	5	1corintios	6	6	1:10	1:10	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-1-10-P01	1corintios-1-10-P01	παρακαλῶ	παρακαλῶ
-SR0006	6	1corintios	7	7	1:10	1:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-10-P02	1corintios-1-10-P02	λέγητε	λέγητε
-SR0007	7	1corintios	8	8	1:10	1:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-10-P03	1corintios-1-10-P03	ᾖ	ᾖ
-SR0008	8	1corintios	9	9	1:10	1:10	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-1-10-P04	1corintios-1-10-P04	ἦτε	ἦτε
-SR0009	9	1corintios	10	14	1:11	1:12	5	12	"{""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 5}"	1corintios-1-11-P01	1corintios-1-12-P03	ἐδηλώθη	εἰμι
-SR0010	10	1corintios	15	16	1:13	1:13	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-1-13-P01	1corintios-1-13-P02	μεμέρισται	ἐσταυρώθη
-SR0011	11	1corintios	17	17	1:13	1:13	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-1-13-P03	1corintios-1-13-P03	ἐβαπτίσθητε	ἐβαπτίσθητε
-SR0012	12	1corintios	18	20	1:14	1:15	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-1-14-P01	1corintios-1-15-P01	εὐχαριστῶ	εἴπῃ
-SR0013	13	1corintios	21	21	1:15	1:15	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-1-15-P02	1corintios-1-15-P02	ἐβαπτίσθητε	ἐβαπτίσθητε
-SR0014	14	1corintios	22	24	1:16	1:16	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-1-16-P01	1corintios-1-16-P03	ἐβάπτισα	ἐβάπτισα
-SR0015	15	1corintios	25	29	1:17	1:19	5	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2, ""strong"": 1}"	1corintios-1-17-P01	1corintios-1-19-P01	ἀπέστειλέν	γέγραπται
-SR0016	16	1corintios	30	32	1:19	1:20	3	2	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-1-19-P02	1corintios-1-20-P01	ἀπολῶ	ἐμώρανεν
-SR0017	17	1corintios	33	33	1:21	1:21	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-21-P01	1corintios-1-21-P01	ἔγνω	ἔγνω
-SR0018	18	1corintios	34	34	1:21	1:21	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-21-P02	1corintios-1-21-P02	εὐδόκησεν	εὐδόκησεν
-SR0019	19	1corintios	35	35	1:22	1:22	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-22-P01	1corintios-1-22-P01	αἰτοῦσιν	αἰτοῦσιν
-SR0020	20	1corintios	36	36	1:22	1:22	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-22-P02	1corintios-1-22-P02	ζητοῦσιν	ζητοῦσιν
-SR0021	21	1corintios	37	37	1:23	1:23	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-1-23-P01	1corintios-1-23-P01	κηρύσσομεν	κηρύσσομεν
-SR0022	22	1corintios	38	38	1:25	1:25	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-25-P01	1corintios-1-25-P01	ἐστίν	ἐστίν
-SR0023	23	1corintios	39	39	1:26	1:26	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-26-P01	1corintios-1-26-P01	βλέπετε	βλέπετε
-SR0024	24	1corintios	40	46	1:27	1:29	7	14	"{""stable"": 1, ""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 6, ""none"": 1}"	1corintios-1-27-P01	1corintios-1-29-P01	ἐξελέξατο	καυχήσηται
-SR0025	25	1corintios	47	48	1:30	1:30	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-1-30-P01	1corintios-1-30-P02	ἐστε	ἐγενήθη
-SR0026	26	1corintios	49	49	1:31	1:31	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-31-P01	1corintios-1-31-P01	γέγραπται	γέγραπται
-SR0027	27	1corintios	50	50	1:31	1:31	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-31-P02	1corintios-1-31-P02	καυχάσθω	καυχάσθω
-SR0028	28	1corintios	51	56	2:1	2:7	6	8	"{""stable"": 3, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 3}"	1corintios-2-1-P01	1corintios-2-7-P01	ἦλθον	λαλοῦμεν
-SR0029	29	1corintios	57	58	2:7	2:8	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-2-7-P02	1corintios-2-8-P01	προώρισεν	ἔγνωκεν
-SR0030	30	1corintios	59	60	2:8	2:8	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-2-8-P02	1corintios-2-8-P03	ἔγνωσαν	ἐσταύρωσαν
-SR0031	31	1corintios	61	61	2:9	2:9	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-2-9-P01	1corintios-2-9-P01	γέγραπται	γέγραπται
-SR0032	32	1corintios	62	63	2:9	2:9	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-2-9-P02	1corintios-2-9-P03	εἶδεν	ἤκουσεν
-SR0033	33	1corintios	64	80	2:9	2:16	17	18	"{""stable"": 9, ""structural"": 2, ""turbulence"": 6}"	"{""candidate"": 8, ""none"": 9}"	1corintios-2-9-P04	1corintios-2-16-P02	ἀνέβη	συμβιβάσει
-SR0034	34	1corintios	81	81	2:16	2:16	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-2-16-P03	1corintios-2-16-P03	ἔχομεν	ἔχομεν
-SR0035	35	1corintios	82	83	3:1	3:2	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-3-1-P01	1corintios-3-2-P01	ἠδυνήθην	ἐπότισα
-SR0036	36	1corintios	84	88	3:2	3:3	5	4	"{""stable"": 4, ""structural"": 1}"	"{""candidate"": 1, ""none"": 4}"	1corintios-3-2-P02	1corintios-3-3-P03	ἐδύνασθε	περιπατεῖτε
-SR0037	37	1corintios	89	89	3:4	3:4	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-4-P01	1corintios-3-4-P01	λέγῃ	λέγῃ
-SR0038	38	1corintios	90	90	3:4	3:4	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-4-P02	1corintios-3-4-P02	εἰμι	εἰμι
-SR0039	39	1corintios	91	91	3:4	3:4	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-3-4-P03	1corintios-3-4-P03	ἐστε	ἐστε
-SR0040	40	1corintios	92	93	3:5	3:5	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-3-5-P01	1corintios-3-5-P02	ἐστιν	ἐστιν
-SR0041	41	1corintios	94	100	3:5	3:8	7	12	"{""stable"": 2, ""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 5, ""none"": 2}"	1corintios-3-5-P03	1corintios-3-8-P01	ἐπιστεύσατε	εἰσιν
-SR0042	42	1corintios	101	101	3:8	3:8	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-3-8-P02	1corintios-3-8-P02	λήμψεται	λήμψεται
-SR0043	43	1corintios	102	102	3:9	3:9	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-3-9-P01	1corintios-3-9-P01	ἐσμεν	ἐσμεν
-SR0044	44	1corintios	103	103	3:9	3:9	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-3-9-P02	1corintios-3-9-P02	ἐστε	ἐστε
-SR0045	45	1corintios	104	104	3:10	3:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-10-P01	1corintios-3-10-P01	ἔθηκα	ἔθηκα
-SR0046	46	1corintios	105	121	3:10	3:15	17	20	"{""stable"": 8, ""structural"": 1, ""turbulence"": 8}"	"{""candidate"": 8, ""none"": 8, ""strong"": 1}"	1corintios-3-10-P02	1corintios-3-15-P03	ἐποικοδομεῖ	σωθήσεται
-SR0047	47	1corintios	122	125	3:16	3:17	4	10	"{""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 4}"	1corintios-3-16-P01	1corintios-3-17-P01	οἴδατε	φθείρει
-SR0048	48	1corintios	126	127	3:17	3:17	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-3-17-P02	1corintios-3-17-P03	φθερεῖ	ἐστιν
-SR0049	49	1corintios	128	131	3:17	3:18	4	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 1}"	1corintios-3-17-P04	1corintios-3-18-P03	ἐστε	γενέσθω
-SR0050	50	1corintios	132	132	3:18	3:18	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-18-P04	1corintios-3-18-P04	γένηται	γένηται
-SR0051	51	1corintios	133	133	3:19	3:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-19-P01	1corintios-3-19-P01	ἐστιν	ἐστιν
-SR0052	52	1corintios	134	135	3:19	3:20	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-3-19-P02	1corintios-3-20-P01	γέγραπται	γινώσκει
-SR0053	53	1corintios	136	137	3:20	3:21	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-3-20-P02	1corintios-3-21-P01	εἰσὶν	καυχάσθω
-SR0054	54	1corintios	138	138	3:21	3:21	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-21-P02	1corintios-3-21-P02	ἐστιν	ἐστιν
-SR0055	55	1corintios	139	147	4:1	4:4	9	10	"{""stable"": 5, ""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 3, ""none"": 5, ""strong"": 1}"	1corintios-4-1-P01	1corintios-4-4-P03	λογιζέσθω	ἐστιν
-SR0056	56	1corintios	148	148	4:5	4:5	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-5-P01	1corintios-4-5-P01	κρίνετε	κρίνετε
-SR0057	57	1corintios	149	152	4:5	4:5	4	6	"{""stable"": 3, ""structural"": 1}"	"{""none"": 3, ""strong"": 1}"	1corintios-4-5-P02	1corintios-4-5-P05	ἔλθῃ	γενήσεται
-SR0058	58	1corintios	153	153	4:6	4:6	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-4-6-P01	1corintios-4-6-P01	μετεσχημάτισα	μετεσχημάτισα
-SR0059	59	1corintios	154	154	4:6	4:6	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-6-P02	1corintios-4-6-P02	μάθητε	μάθητε
-SR0060	60	1corintios	155	155	4:6	4:6	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-6-P03	1corintios-4-6-P03	γέγραπται	γέγραπται
-SR0061	61	1corintios	156	156	4:6	4:6	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-6-P04	1corintios-4-6-P04	φυσιοῦσθε	φυσιοῦσθε
-SR0062	62	1corintios	157	157	4:7	4:7	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-7-P01	1corintios-4-7-P01	διακρίνει	διακρίνει
-SR0063	63	1corintios	158	161	4:7	4:7	4	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 1}"	1corintios-4-7-P02	1corintios-4-7-P05	ἔχεις	καυχᾶσαι
-SR0064	64	1corintios	162	165	4:8	4:8	4	2	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-4-8-P01	1corintios-4-8-P04	ἐστέ	ἐβασιλεύσατε
-SR0065	65	1corintios	166	166	4:8	4:8	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-8-P05	1corintios-4-8-P05	συμβασιλεύσωμεν	συμβασιλεύσωμεν
-SR0066	66	1corintios	167	168	4:9	4:9	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-4-9-P01	1corintios-4-9-P02	δοκῶ	ἀπέδειξεν
-SR0067	67	1corintios	169	179	4:9	4:13	11	8	"{""stable"": 8, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 8, ""strong"": 1}"	1corintios-4-9-P03	1corintios-4-13-P02	ἐγενήθημεν	ἐγενήθημεν
-SR0068	68	1corintios	180	180	4:14	4:14	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-14-P01	1corintios-4-14-P01	γράφω	γράφω
-SR0069	69	1corintios	181	181	4:15	4:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-15-P01	1corintios-4-15-P01	ἔχητε	ἔχητε
-SR0070	70	1corintios	182	183	4:15	4:16	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-4-15-P02	1corintios-4-16-P01	ἐγέννησα	παρακαλῶ
-SR0071	71	1corintios	184	184	4:16	4:16	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-4-16-P02	1corintios-4-16-P02	γίνεσθε	γίνεσθε
-SR0072	72	1corintios	185	188	4:17	4:17	4	6	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 2}"	1corintios-4-17-P01	1corintios-4-17-P04	ἔπεμψα	διδάσκω
-SR0073	73	1corintios	189	189	4:18	4:18	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-4-18-P01	1corintios-4-18-P01	ἐφυσιώθησάν	ἐφυσιώθησάν
-SR0074	74	1corintios	190	190	4:19	4:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-19-P01	1corintios-4-19-P01	ἐλεύσομαι	ἐλεύσομαι
-SR0075	75	1corintios	191	191	4:19	4:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-19-P02	1corintios-4-19-P02	θελήσῃ	θελήσῃ
-SR0076	76	1corintios	192	192	4:19	4:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-19-P03	1corintios-4-19-P03	γνώσομαι	γνώσομαι
-SR0077	77	1corintios	193	193	4:21	4:21	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-4-21-P01	1corintios-4-21-P01	θέλετε	θέλετε
-SR0078	78	1corintios	194	194	4:21	4:21	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-4-21-P02	1corintios-4-21-P02	ἔλθω	ἔλθω
-SR0079	79	1corintios	195	195	5:1	5:1	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-5-1-P01	1corintios-5-1-P01	ἀκούεται	ἀκούεται
-SR0080	80	1corintios	196	197	5:2	5:2	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-5-2-P01	1corintios-5-2-P02	ἐστέ	ἐπενθήσατε
-SR0081	81	1corintios	198	198	5:2	5:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-2-P03	1corintios-5-2-P03	ἀρθῇ	ἀρθῇ
-SR0082	82	1corintios	199	199	5:3	5:3	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-3-P01	1corintios-5-3-P01	κέκρικα	κέκρικα
-SR0083	83	1corintios	200	200	5:5	5:5	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-5-P01	1corintios-5-5-P01	σωθῇ	σωθῇ
-SR0084	84	1corintios	201	201	5:6	5:6	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-6-P01	1corintios-5-6-P01	οἴδατε	οἴδατε
-SR0085	85	1corintios	202	202	5:6	5:6	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-6-P02	1corintios-5-6-P02	ζυμοῖ	ζυμοῖ
-SR0086	86	1corintios	203	206	5:7	5:7	4	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 1, ""strong"": 1}"	1corintios-5-7-P01	1corintios-5-7-P04	ἐκκαθάρατε	ἐτύθη
-SR0087	87	1corintios	207	207	5:8	5:8	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-8-P01	1corintios-5-8-P01	ἑορτάζωμεν	ἑορτάζωμεν
-SR0088	88	1corintios	208	208	5:9	5:9	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-9-P01	1corintios-5-9-P01	ἔγραψα	ἔγραψα
-SR0089	89	1corintios	209	209	5:10	5:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-10-P01	1corintios-5-10-P01	ὠφείλετε	ὠφείλετε
-SR0090	90	1corintios	210	210	5:11	5:11	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-11-P01	1corintios-5-11-P01	ἔγραψα	ἔγραψα
-SR0091	91	1corintios	211	214	5:11	5:13	4	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 2, ""strong"": 1}"	1corintios-5-11-P02	1corintios-5-13-P02	ᾖ	ἐξάρατε
-SR0092	92	1corintios	215	215	6:1	6:1	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-1-P01	1corintios-6-1-P01	τολμᾷ	τολμᾷ
-SR0093	93	1corintios	216	218	6:2	6:2	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-6-2-P01	1corintios-6-2-P03	οἴδατε	κρίνεται
-SR0094	94	1corintios	219	220	6:2	6:3	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-6-2-P04	1corintios-6-3-P01	ἐστε	οἴδατε
-SR0095	95	1corintios	221	221	6:3	6:3	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-3-P02	1corintios-6-3-P02	κρινοῦμεν	κρινοῦμεν
-SR0096	96	1corintios	222	223	6:4	6:4	2	4	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-6-4-P01	1corintios-6-4-P02	ἔχητε	καθίζετε
-SR0097	97	1corintios	224	224	6:5	6:5	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-5-P01	1corintios-6-5-P01	λέγω	λέγω
-SR0098	98	1corintios	225	228	6:5	6:7	4	2	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-6-5-P02	1corintios-6-7-P01	ἔνι	ἐστιν
-SR0099	99	1corintios	229	244	6:7	6:12	16	12	"{""stable"": 12, ""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 3, ""none"": 12, ""strong"": 1}"	1corintios-6-7-P02	1corintios-6-12-P03	ἔχετε	ἔξεστιν
-SR0100	100	1corintios	245	245	6:12	6:12	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-12-P04	1corintios-6-12-P04	ἐξουσιασθήσομαι	ἐξουσιασθήσομαι
-SR0101	101	1corintios	246	248	6:13	6:14	3	2	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-6-13-P01	1corintios-6-14-P02	καταργήσει	ἐξεγερεῖ
-SR0102	102	1corintios	249	251	6:15	6:15	3	8	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-6-15-P01	1corintios-6-15-P03	οἴδατε	ποιήσω
-SR0103	103	1corintios	252	252	6:15	6:15	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-15-P04	1corintios-6-15-P04	γένοιτο	γένοιτο
-SR0104	104	1corintios	253	255	6:16	6:16	3	8	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-6-16-P01	1corintios-6-16-P03	οἴδατε	ἔσονται
-SR0105	105	1corintios	256	257	6:16	6:17	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-6-16-P04	1corintios-6-17-P01	φησίν	ἐστιν
-SR0106	106	1corintios	258	260	6:18	6:18	3	8	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-6-18-P01	1corintios-6-18-P03	φεύγετε	ἐστιν
-SR0107	107	1corintios	261	261	6:18	6:18	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-18-P04	1corintios-6-18-P04	ἁμαρτάνει	ἁμαρτάνει
-SR0108	108	1corintios	262	267	6:19	6:20	6	8	"{""stable"": 3, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 3}"	1corintios-6-19-P01	1corintios-6-20-P02	οἴδατε	δοξάσατε
-SR0109	109	1corintios	268	276	7:1	7:5	9	4	"{""stable"": 7, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 7}"	1corintios-7-1-P01	1corintios-7-5-P03	ἐγράψατε	ἦτε
-SR0110	110	1corintios	277	277	7:5	7:5	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-5-P04	1corintios-7-5-P04	πειράζῃ	πειράζῃ
-SR0111	111	1corintios	278	279	7:6	7:7	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-7-6-P01	1corintios-7-7-P01	λέγω	θέλω
-SR0112	112	1corintios	280	280	7:7	7:7	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-7-P02	1corintios-7-7-P02	ἔχει	ἔχει
-SR0113	113	1corintios	281	281	7:8	7:8	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-8-P01	1corintios-7-8-P01	λέγω	λέγω
-SR0114	114	1corintios	282	284	7:8	7:9	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-7-8-P02	1corintios-7-9-P02	μείνωσιν	γαμησάτωσαν
-SR0115	115	1corintios	285	285	7:9	7:9	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-9-P03	1corintios-7-9-P03	ἐστιν	ἐστιν
-SR0116	116	1corintios	286	286	7:10	7:10	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-10-P01	1corintios-7-10-P01	παραγγέλλω	παραγγέλλω
-SR0117	117	1corintios	287	289	7:11	7:11	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-7-11-P01	1corintios-7-11-P03	χωρισθῇ	καταλλαγήτω—
-SR0118	118	1corintios	290	320	7:12	7:20	31	34	"{""stable"": 14, ""structural"": 5, ""turbulence"": 12}"	"{""candidate"": 17, ""none"": 14}"	1corintios-7-12-P01	1corintios-7-20-P02	λέγω	μενέτω
-SR0119	119	1corintios	321	321	7:21	7:21	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-21-P01	1corintios-7-21-P01	ἐκλήθης;	ἐκλήθης;
-SR0120	120	1corintios	322	322	7:21	7:21	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-21-P02	1corintios-7-21-P02	μελέτω	μελέτω
-SR0121	121	1corintios	323	326	7:21	7:22	4	6	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 2, ""strong"": 1}"	1corintios-7-21-P03	1corintios-7-22-P02	δύνασαι	ἐστιν
-SR0122	122	1corintios	327	329	7:23	7:24	3	2	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-7-23-P01	1corintios-7-24-P01	ἠγοράσθητε	ἐκλήθη
-SR0123	123	1corintios	330	330	7:24	7:24	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-24-P02	1corintios-7-24-P02	μενέτω	μενέτω
-SR0124	124	1corintios	331	333	7:25	7:26	3	2	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-7-25-P01	1corintios-7-26-P01	ἔχω	νομίζω
-SR0125	125	1corintios	334	339	7:27	7:28	6	6	"{""stable"": 3, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 3}"	1corintios-7-27-P01	1corintios-7-28-P02	δέδεσαι	ἥμαρτες
-SR0126	126	1corintios	340	340	7:28	7:28	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-28-P03	1corintios-7-28-P03	γήμῃ	γήμῃ
-SR0127	127	1corintios	341	341	7:28	7:28	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-28-P04	1corintios-7-28-P04	ἥμαρτεν	ἥμαρτεν
-SR0128	128	1corintios	342	342	7:28	7:28	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-28-P05	1corintios-7-28-P05	ἕξουσιν	ἕξουσιν
-SR0129	129	1corintios	343	347	7:28	7:31	5	6	"{""stable"": 3, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 3}"	1corintios-7-28-P06	1corintios-7-31-P01	φείδομαι	παράγει
-SR0130	130	1corintios	348	349	7:32	7:32	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-7-32-P01	1corintios-7-32-P02	θέλω	μεριμνᾷ
-SR0131	131	1corintios	350	379	7:32	7:40	30	28	"{""stable"": 16, ""structural"": 5, ""turbulence"": 9}"	"{""candidate"": 14, ""none"": 16}"	1corintios-7-32-P03	1corintios-7-40-P02	ἀρέσῃ	μείνῃ
-SR0132	132	1corintios	380	380	7:40	7:40	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-40-P03	1corintios-7-40-P03	δοκῶ	δοκῶ
-SR0133	133	1corintios	381	385	8:1	8:2	5	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 4, ""none"": 1}"	1corintios-8-1-P01	1corintios-8-2-P01	οἴδαμεν	δοκεῖ
-SR0134	134	1corintios	386	389	8:2	8:3	4	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 1, ""strong"": 1}"	1corintios-8-2-P02	1corintios-8-3-P02	ἔγνω	ἔγνωσται
-SR0135	135	1corintios	390	390	8:4	8:4	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-8-4-P01	1corintios-8-4-P01	οἴδαμεν	οἴδαμεν
-SR0136	136	1corintios	391	394	8:5	8:7	4	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 1}"	1corintios-8-5-P01	1corintios-8-7-P02	εἰσὶν	μολύνεται
-SR0137	137	1corintios	395	395	8:8	8:8	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-8-8-P01	1corintios-8-8-P01	παραστήσει	παραστήσει
-SR0138	138	1corintios	396	399	8:8	8:8	4	12	"{""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 3, ""strong"": 1}"	1corintios-8-8-P02	1corintios-8-8-P05	φάγωμεν	ὑστερούμεθα
-SR0139	139	1corintios	400	403	8:9	8:10	4	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 1}"	1corintios-8-9-P01	1corintios-8-10-P02	βλέπετε	οἰκοδομηθήσεται
-SR0140	140	1corintios	404	405	8:11	8:11	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-8-11-P01	1corintios-8-11-P02	ἀπόλλυται	ἀπέθανεν
-SR0141	141	1corintios	406	409	8:12	8:13	4	10	"{""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 4}"	1corintios-8-12-P01	1corintios-8-13-P03	ἁμαρτάνετε	σκανδαλίσω
-SR0142	142	1corintios	410	412	9:1	9:1	3	2	"{""stable"": 2, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-9-1-P01	1corintios-9-1-P03	εἰμὶ	ἑόρακα
-SR0143	143	1corintios	413	413	9:1	9:1	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-9-1-P04	1corintios-9-1-P04	ἐστε	ἐστε
-SR0144	144	1corintios	414	415	9:2	9:2	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-9-2-P01	1corintios-9-2-P02	εἰμὶ	εἰμι
-SR0145	145	1corintios	416	417	9:2	9:3	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-9-2-P03	1corintios-9-3-P01	ἐστε	ἐστιν
-SR0146	146	1corintios	418	422	9:4	9:7	5	2	"{""stable"": 4, ""structural"": 1}"	"{""candidate"": 1, ""none"": 4}"	1corintios-9-4-P01	1corintios-9-7-P02	ἔχομεν	φυτεύει
-SR0147	147	1corintios	423	425	9:7	9:7	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-9-7-P03	1corintios-9-7-P05	ἐσθίει	ἐσθίει
-SR0148	148	1corintios	426	427	9:8	9:8	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-9-8-P01	1corintios-9-8-P02	λαλῶ	λέγει
-SR0149	149	1corintios	428	428	9:9	9:9	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-9-9-P01	1corintios-9-9-P01	γέγραπται	γέγραπται
-SR0150	150	1corintios	429	429	9:9	9:9	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-9-9-P02	1corintios-9-9-P02	κημώσεις	κημώσεις
-SR0151	151	1corintios	430	433	9:9	9:10	4	4	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 2}"	1corintios-9-9-P03	1corintios-9-10-P03	μέλει	ὀφείλει
-SR0152	152	1corintios	434	439	9:11	9:12	6	8	"{""stable"": 3, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 3}"	1corintios-9-11-P01	1corintios-9-12-P04	ἐσπείραμεν	δῶμεν
-SR0153	153	1corintios	440	440	9:13	9:13	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-13-P01	1corintios-9-13-P01	οἴδατε	οἴδατε
-SR0154	154	1corintios	441	441	9:13	9:13	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-13-P02	1corintios-9-13-P02	ἐσθίουσιν	ἐσθίουσιν
-SR0155	155	1corintios	442	443	9:13	9:14	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-9-13-P03	1corintios-9-14-P01	συμμερίζονται	διέταξεν
-SR0156	156	1corintios	444	445	9:15	9:15	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-9-15-P01	1corintios-9-15-P02	κέχρημαι	ἔγραψα
-SR0157	157	1corintios	446	446	9:15	9:15	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-15-P03	1corintios-9-15-P03	γένηται	γένηται
-SR0158	158	1corintios	447	448	9:15	9:16	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-9-15-P04	1corintios-9-16-P01	κενώσει	εὐαγγελίζωμαι
-SR0159	159	1corintios	449	451	9:16	9:16	3	4	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-9-16-P02	1corintios-9-16-P04	ἔστιν	ἐστιν
-SR0160	160	1corintios	452	455	9:16	9:17	4	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 1, ""strong"": 1}"	1corintios-9-16-P05	1corintios-9-17-P03	εὐαγγελίσωμαι	πεπίστευμαι
-SR0161	161	1corintios	456	456	9:18	9:18	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-18-P01	1corintios-9-18-P01	ἐστιν	ἐστιν
-SR0162	162	1corintios	457	469	9:18	9:23	13	24	"{""stable"": 2, ""structural"": 1, ""turbulence"": 10}"	"{""candidate"": 10, ""none"": 2, ""strong"": 1}"	1corintios-9-18-P02	1corintios-9-23-P02	θήσω	γένωμαι
-SR0163	163	1corintios	470	470	9:24	9:24	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-24-P01	1corintios-9-24-P01	οἴδατε	οἴδατε
-SR0164	164	1corintios	471	471	9:24	9:24	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-24-P02	1corintios-9-24-P02	τρέχουσιν	τρέχουσιν
-SR0165	165	1corintios	472	472	9:24	9:24	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-24-P03	1corintios-9-24-P03	λαμβάνει	λαμβάνει
-SR0166	166	1corintios	473	475	9:24	9:25	3	8	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-9-24-P04	1corintios-9-25-P01	τρέχετε	ἐγκρατεύεται
-SR0167	167	1corintios	476	476	9:25	9:25	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-25-P02	1corintios-9-25-P02	λάβωσιν	λάβωσιν
-SR0168	168	1corintios	477	481	9:26	9:27	5	10	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2, ""strong"": 1}"	1corintios-9-26-P01	1corintios-9-27-P03	τρέχω	γένωμαι
-SR0169	169	1corintios	482	487	10:1	10:4	6	4	"{""stable"": 4, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 4}"	1corintios-10-1-P01	1corintios-10-4-P01	θέλω	ἔπιον
-SR0170	170	1corintios	488	488	10:4	10:4	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-4-P02	1corintios-10-4-P02	ἔπινον	ἔπινον
-SR0171	171	1corintios	489	490	10:4	10:5	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-10-4-P03	1corintios-10-5-P01	ἦν	ηὐδόκησεν
-SR0172	172	1corintios	491	494	10:5	10:7	4	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 1}"	1corintios-10-5-P02	1corintios-10-7-P01	κατεστρώθησαν	γίνεσθε
-SR0173	173	1corintios	495	496	10:7	10:7	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-10-7-P02	1corintios-10-7-P03	γέγραπται	ἐκάθισεν
-SR0174	174	1corintios	497	497	10:7	10:7	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-7-P04	1corintios-10-7-P04	ἀνέστησαν	ἀνέστησαν
-SR0175	175	1corintios	498	500	10:8	10:8	3	6	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-10-8-P01	1corintios-10-8-P03	πορνεύωμεν	ἔπεσαν
-SR0176	176	1corintios	501	503	10:9	10:9	3	6	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-10-9-P01	1corintios-10-9-P03	ἐκπειράζωμεν	ἀπώλλυντο
-SR0177	177	1corintios	504	505	10:10	10:10	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-10-10-P01	1corintios-10-10-P02	γογγύζετε	ἐγόγγυσαν
-SR0178	178	1corintios	506	506	10:10	10:10	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-10-P03	1corintios-10-10-P03	ἀπώλοντο	ἀπώλοντο
-SR0179	179	1corintios	507	514	10:11	10:13	8	10	"{""stable"": 3, ""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 5, ""none"": 3}"	1corintios-10-11-P01	1corintios-10-13-P03	συνέβαινεν	δύνασθε
-SR0180	180	1corintios	515	515	10:13	10:13	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-13-P04	1corintios-10-13-P04	ποιήσει	ποιήσει
-SR0181	181	1corintios	516	516	10:14	10:14	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-14-P01	1corintios-10-14-P01	φεύγετε	φεύγετε
-SR0182	182	1corintios	517	517	10:15	10:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-15-P01	1corintios-10-15-P01	λέγω	λέγω
-SR0183	183	1corintios	518	518	10:15	10:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-15-P02	1corintios-10-15-P02	κρίνατε	κρίνατε
-SR0184	184	1corintios	519	519	10:15	10:15	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-15-P03	1corintios-10-15-P03	φημι	φημι
-SR0185	185	1corintios	520	525	10:16	10:17	6	6	"{""stable"": 3, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 3}"	1corintios-10-16-P01	1corintios-10-17-P02	εὐλογοῦμεν	μετέχομεν
-SR0186	186	1corintios	526	527	10:18	10:18	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-10-18-P01	1corintios-10-18-P02	βλέπετε	εἰσίν
-SR0187	187	1corintios	528	532	10:19	10:20	5	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 2}"	1corintios-10-19-P01	1corintios-10-20-P02	φημι	θύουσιν
-SR0188	188	1corintios	533	533	10:20	10:20	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-20-P03	1corintios-10-20-P03	θέλω	θέλω
-SR0189	189	1corintios	534	535	10:21	10:21	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-10-21-P01	1corintios-10-21-P02	δύνασθε	δύνασθε
-SR0190	190	1corintios	536	559	10:22	10:32	24	24	"{""stable"": 14, ""structural"": 4, ""turbulence"": 6}"	"{""candidate"": 10, ""none"": 14}"	1corintios-10-22-P01	1corintios-10-32-P01	παραζηλοῦμεν	γίνεσθε
-SR0191	191	1corintios	560	560	10:33	10:33	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-33-P01	1corintios-10-33-P01	ἀρέσκω	ἀρέσκω
-SR0192	192	1corintios	561	561	10:33	10:33	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-33-P02	1corintios-10-33-P02	σωθῶσιν	σωθῶσιν
-SR0193	193	1corintios	562	562	11:1	11:1	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-1-P01	1corintios-11-1-P01	γίνεσθε	γίνεσθε
-SR0194	194	1corintios	563	563	11:2	11:2	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-2-P01	1corintios-11-2-P01	ἐπαινῶ	ἐπαινῶ
-SR0195	195	1corintios	564	564	11:2	11:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-2-P02	1corintios-11-2-P02	μέμνησθε	μέμνησθε
-SR0196	196	1corintios	565	565	11:2	11:2	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-2-P03	1corintios-11-2-P03	παρέδωκα	παρέδωκα
-SR0197	197	1corintios	566	566	11:2	11:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-2-P04	1corintios-11-2-P04	κατέχετε	κατέχετε
-SR0198	198	1corintios	567	568	11:3	11:3	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-11-3-P01	1corintios-11-3-P02	θέλω	ἐστιν
-SR0199	199	1corintios	569	579	11:4	11:10	11	12	"{""stable"": 6, ""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 4, ""none"": 6, ""strong"": 1}"	1corintios-11-4-P01	1corintios-11-10-P01	καταισχύνει	ὀφείλει
-SR0200	200	1corintios	580	580	11:13	11:13	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-13-P01	1corintios-11-13-P01	κρίνατε	κρίνατε
-SR0201	201	1corintios	581	588	11:13	11:16	8	14	"{""stable"": 2, ""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 6, ""none"": 2}"	1corintios-11-13-P02	1corintios-11-16-P01	ἐστὶν	δοκεῖ
-SR0202	202	1corintios	589	589	11:16	11:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-16-P02	1corintios-11-16-P02	ἔχομεν	ἔχομεν
-SR0203	203	1corintios	590	590	11:17	11:17	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-17-P01	1corintios-11-17-P01	ἐπαινῶ	ἐπαινῶ
-SR0204	204	1corintios	591	591	11:17	11:17	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-17-P02	1corintios-11-17-P02	συνέρχεσθε	συνέρχεσθε
-SR0205	205	1corintios	592	593	11:18	11:18	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-11-18-P01	1corintios-11-18-P02	ἀκούω	πιστεύω
-SR0206	206	1corintios	594	599	11:19	11:21	6	6	"{""stable"": 3, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 3}"	1corintios-11-19-P01	1corintios-11-21-P03	δεῖ	μεθύει
-SR0207	207	1corintios	600	602	11:22	11:22	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-11-22-P01	1corintios-11-22-P03	ἔχετε	καταισχύνετε
-SR0208	208	1corintios	603	628	11:22	11:29	26	26	"{""stable"": 17, ""structural"": 4, ""turbulence"": 5}"	"{""candidate"": 8, ""none"": 17, ""strong"": 1}"	1corintios-11-22-P04	1corintios-11-29-P02	εἴπω	πίνει
-SR0209	209	1corintios	629	629	11:30	11:30	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-30-P01	1corintios-11-30-P01	κοιμῶνται	κοιμῶνται
-SR0210	210	1corintios	630	633	11:31	11:32	4	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 1, ""strong"": 1}"	1corintios-11-31-P01	1corintios-11-32-P02	διεκρίνομεν	κατακριθῶμεν
-SR0211	211	1corintios	634	635	11:33	11:34	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-11-33-P01	1corintios-11-34-P01	ἐκδέχεσθε	πεινᾷ
-SR0212	212	1corintios	636	636	11:34	11:34	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-34-P02	1corintios-11-34-P02	ἐσθιέτω	ἐσθιέτω
-SR0213	213	1corintios	637	637	11:34	11:34	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-34-P03	1corintios-11-34-P03	συνέρχησθε	συνέρχησθε
-SR0214	214	1corintios	638	639	11:34	11:34	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-11-34-P04	1corintios-11-34-P05	ἔλθω	διατάξομαι
-SR0215	215	1corintios	640	640	12:1	12:1	1	0	"{""stable"": 1}"	"{""none"": 1}"	1corintios-12-1-P01	1corintios-12-1-P01	θέλω	θέλω
-SR0216	216	1corintios	641	643	12:2	12:2	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-12-2-P01	1corintios-12-2-P03	οἴδατε	ἤγεσθε
-SR0217	217	1corintios	644	644	12:3	12:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-3-P01	1corintios-12-3-P01	γνωρίζω	γνωρίζω
-SR0218	218	1corintios	645	645	12:3	12:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-3-P02	1corintios-12-3-P02	λέγει	λέγει
-SR0219	219	1corintios	646	646	12:3	12:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-3-P03	1corintios-12-3-P03	δύναται	δύναται
-SR0220	220	1corintios	647	649	12:4	12:6	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-12-4-P01	1corintios-12-6-P01	εἰσίν	εἰσίν
-SR0221	221	1corintios	650	656	12:7	12:12	7	6	"{""stable"": 4, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 4}"	1corintios-12-7-P01	1corintios-12-12-P03	δίδοται	ἐστιν
-SR0222	222	1corintios	657	659	12:13	12:14	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-12-13-P01	1corintios-12-14-P01	ἐβαπτίσθημεν	ἔστιν
-SR0223	223	1corintios	660	660	12:15	12:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-15-P01	1corintios-12-15-P01	εἴπῃ	εἴπῃ
-SR0224	224	1corintios	661	662	12:15	12:15	2	4	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-12-15-P02	1corintios-12-15-P03	εἰμὶ	εἰμὶ
-SR0225	225	1corintios	663	664	12:15	12:16	2	4	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-12-15-P04	1corintios-12-16-P01	ἔστιν	εἴπῃ
-SR0226	226	1corintios	665	666	12:16	12:16	2	4	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-12-16-P02	1corintios-12-16-P03	εἰμὶ	εἰμὶ
-SR0227	227	1corintios	667	679	12:16	12:24	13	10	"{""stable"": 8, ""structural"": 3, ""turbulence"": 2}"	"{""candidate"": 5, ""none"": 8}"	1corintios-12-16-P04	1corintios-12-24-P02	ἔστιν	συνεκέρασεν
-SR0228	228	1corintios	680	680	12:25	12:25	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-25-P01	1corintios-12-25-P01	ᾖ	ᾖ
-SR0229	229	1corintios	681	681	12:25	12:25	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-25-P02	1corintios-12-25-P02	μεριμνῶσι	μεριμνῶσι
-SR0230	230	1corintios	682	685	12:26	12:26	4	2	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-12-26-P01	1corintios-12-26-P04	πάσχει	συγχαίρει
-SR0231	231	1corintios	686	686	12:27	12:27	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-12-27-P01	1corintios-12-27-P01	ἐστε	ἐστε
-SR0232	232	1corintios	687	690	12:28	12:30	4	4	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-12-28-P01	1corintios-12-30-P03	ἔθετο	διερμηνεύουσιν
-SR0233	233	1corintios	691	691	12:31	12:31	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-12-31-P01	1corintios-12-31-P01	ζηλοῦτε	ζηλοῦτε
-SR0234	234	1corintios	692	692	12:31	12:31	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-12-31-P02	1corintios-12-31-P02	δείκνυμι	δείκνυμι
-SR0235	235	1corintios	693	719	13:1	13:8	27	14	"{""stable"": 20, ""structural"": 1, ""turbulence"": 6}"	"{""candidate"": 7, ""none"": 20}"	1corintios-13-1-P01	1corintios-13-8-P04	λαλῶ	καταργηθήσεται
-SR0236	236	1corintios	720	721	13:9	13:9	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-13-9-P01	1corintios-13-9-P02	γινώσκομεν	προφητεύομεν
-SR0237	237	1corintios	722	722	13:10	13:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-13-10-P01	1corintios-13-10-P01	ἔλθῃ	ἔλθῃ
-SR0238	238	1corintios	723	723	13:10	13:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-13-10-P02	1corintios-13-10-P02	καταργηθήσεται	καταργηθήσεται
-SR0239	239	1corintios	724	729	13:11	13:11	6	10	"{""stable"": 2, ""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 3, ""none"": 2, ""strong"": 1}"	1corintios-13-11-P01	1corintios-13-11-P06	ἤμην	κατήργηκα
-SR0240	240	1corintios	730	730	13:12	13:12	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-13-12-P01	1corintios-13-12-P01	βλέπομεν	βλέπομεν
-SR0241	241	1corintios	731	733	13:12	13:12	3	4	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-13-12-P02	1corintios-13-12-P04	γινώσκω	ἐπεγνώσθην
-SR0242	242	1corintios	734	734	13:13	13:13	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-13-13-P01	1corintios-13-13-P01	μένει	μένει
-SR0243	243	1corintios	735	737	14:1	14:1	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-14-1-P01	1corintios-14-1-P03	διώκετε	προφητεύητε
-SR0244	244	1corintios	738	743	14:2	14:4	6	6	"{""stable"": 5, ""structural"": 1}"	"{""none"": 5, ""strong"": 1}"	1corintios-14-2-P01	1corintios-14-4-P02	λαλεῖ	οἰκοδομεῖ
-SR0245	245	1corintios	744	744	14:5	14:5	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-5-P01	1corintios-14-5-P01	θέλω	θέλω
-SR0246	246	1corintios	745	747	14:5	14:5	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-14-5-P02	1corintios-14-5-P04	προφητεύητε	λάβῃ
-SR0247	247	1corintios	748	751	14:6	14:7	4	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 1}"	1corintios-14-6-P01	1corintios-14-7-P01	ἔλθω	δῷ
-SR0248	248	1corintios	752	752	14:7	14:7	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-7-P02	1corintios-14-7-P02	γνωσθήσεται	γνωσθήσεται
-SR0249	249	1corintios	753	753	14:8	14:8	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-8-P01	1corintios-14-8-P01	δῷ	δῷ
-SR0250	250	1corintios	754	754	14:8	14:8	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-8-P02	1corintios-14-8-P02	παρασκευάσεται	παρασκευάσεται
-SR0251	251	1corintios	755	755	14:9	14:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-9-P01	1corintios-14-9-P01	δῶτε	δῶτε
-SR0252	252	1corintios	756	756	14:9	14:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-9-P02	1corintios-14-9-P02	γνωσθήσεται	γνωσθήσεται
-SR0253	253	1corintios	757	759	14:9	14:10	3	8	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-14-9-P03	1corintios-14-10-P02	ἔσεσθε	εἰσιν
-SR0254	254	1corintios	760	761	14:11	14:11	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-14-11-P01	1corintios-14-11-P02	εἰδῶ	ἔσομαι
-SR0255	255	1corintios	762	765	14:12	14:13	4	12	"{""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 3, ""strong"": 1}"	1corintios-14-12-P01	1corintios-14-13-P01	ἐστε	προσευχέσθω
-SR0256	256	1corintios	766	766	14:13	14:13	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-13-P02	1corintios-14-13-P02	διερμηνεύῃ	διερμηνεύῃ
-SR0257	257	1corintios	767	767	14:14	14:14	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-14-P01	1corintios-14-14-P01	προσεύχωμαι	προσεύχωμαι
-SR0258	258	1corintios	768	769	14:14	14:14	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-14-14-P02	1corintios-14-14-P03	προσεύχεται	ἐστιν
-SR0259	259	1corintios	770	770	14:15	14:15	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-15-P01	1corintios-14-15-P01	ἐστιν	ἐστιν
-SR0260	260	1corintios	771	774	14:15	14:15	4	2	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-14-15-P02	1corintios-14-15-P05	προσεύξομαι	ψαλῶ
-SR0261	261	1corintios	775	775	14:16	14:16	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-16-P01	1corintios-14-16-P01	εὐλογῇς	εὐλογῇς
-SR0262	262	1corintios	776	776	14:16	14:16	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-16-P02	1corintios-14-16-P02	ἐρεῖ	ἐρεῖ
-SR0263	263	1corintios	777	777	14:16	14:16	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-16-P03	1corintios-14-16-P03	λέγεις	λέγεις
-SR0264	264	1corintios	778	778	14:16	14:16	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-16-P04	1corintios-14-16-P04	οἶδεν	οἶδεν
-SR0265	265	1corintios	779	780	14:17	14:17	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-14-17-P01	1corintios-14-17-P02	εὐχαριστεῖς	οἰκοδομεῖται
-SR0266	266	1corintios	781	784	14:18	14:19	4	4	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 2}"	1corintios-14-18-P01	1corintios-14-19-P02	εὐχαριστῶ	κατηχήσω
-SR0267	267	1corintios	785	787	14:20	14:20	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-14-20-P01	1corintios-14-20-P03	γίνεσθε	γίνεσθε
-SR0268	268	1corintios	788	788	14:21	14:21	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-21-P01	1corintios-14-21-P01	γέγραπται	γέγραπται
-SR0269	269	1corintios	789	789	14:21	14:21	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-21-P02	1corintios-14-21-P02	λαλήσω	λαλήσω
-SR0270	270	1corintios	790	790	14:21	14:21	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-21-P03	1corintios-14-21-P03	εἰσακούσονταί	εἰσακούσονταί
-SR0271	271	1corintios	791	791	14:21	14:21	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-21-P04	1corintios-14-21-P04	λέγει	λέγει
-SR0272	272	1corintios	792	792	14:22	14:22	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-22-P01	1corintios-14-22-P01	εἰσιν	εἰσιν
-SR0273	273	1corintios	793	794	14:23	14:23	2	4	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-14-23-P01	1corintios-14-23-P02	συνέλθῃ	λαλῶσιν
-SR0274	274	1corintios	795	796	14:23	14:23	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-14-23-P03	1corintios-14-23-P04	εἰσέλθωσιν	ἐροῦσιν
-SR0275	275	1corintios	797	798	14:23	14:24	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-14-23-P05	1corintios-14-24-P01	μαίνεσθε	προφητεύωσιν
-SR0276	276	1corintios	799	805	14:24	14:26	7	10	"{""stable"": 4, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 4, ""strong"": 1}"	1corintios-14-24-P02	1corintios-14-26-P01	εἰσέλθῃ	ἐστιν
-SR0277	277	1corintios	806	806	14:26	14:26	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-26-P02	1corintios-14-26-P02	συνέρχησθε	συνέρχησθε
-SR0278	278	1corintios	807	821	14:26	14:30	15	14	"{""stable"": 10, ""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 4, ""none"": 10, ""strong"": 1}"	1corintios-14-26-P03	1corintios-14-30-P02	ἔχει	σιγάτω
-SR0279	279	1corintios	822	822	14:31	14:31	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-31-P01	1corintios-14-31-P01	δύνασθε	δύνασθε
-SR0280	280	1corintios	823	823	14:31	14:31	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-31-P02	1corintios-14-31-P02	μανθάνωσιν	μανθάνωσιν
-SR0281	281	1corintios	824	825	14:31	14:32	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-14-31-P03	1corintios-14-32-P01	παρακαλῶνται	ὑποτάσσεται
-SR0282	282	1corintios	826	828	14:33	14:34	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-14-33-P01	1corintios-14-34-P02	ἐστιν	ἐπιτρέπεται
-SR0283	283	1corintios	829	837	14:34	14:37	9	12	"{""stable"": 3, ""structural"": 2, ""turbulence"": 4}"	"{""candidate"": 6, ""none"": 3}"	1corintios-14-34-P03	1corintios-14-37-P02	ὑποτασσέσθωσαν	ἐπιγινωσκέτω
-SR0284	284	1corintios	838	838	14:37	14:37	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-37-P03	1corintios-14-37-P03	γράφω	γράφω
-SR0285	285	1corintios	839	841	14:37	14:38	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-14-37-P04	1corintios-14-38-P02	ἐστίν	ἀγνοεῖται
-SR0286	286	1corintios	842	843	14:39	14:39	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-14-39-P01	1corintios-14-39-P02	ζηλοῦτε	κωλύετε
-SR0287	287	1corintios	844	844	14:40	14:40	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-40-P01	1corintios-14-40-P01	γινέσθω	γινέσθω
-SR0288	288	1corintios	845	846	15:1	15:1	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-1-P01	1corintios-15-1-P02	γνωρίζω	εὐηγγελισάμην
-SR0289	289	1corintios	847	849	15:1	15:2	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-15-1-P03	1corintios-15-2-P01	παρελάβετε	σῴζεσθε
-SR0290	290	1corintios	850	850	15:2	15:2	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-2-P02	1corintios-15-2-P02	εὐηγγελισάμην	εὐηγγελισάμην
-SR0291	291	1corintios	851	852	15:2	15:2	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-2-P03	1corintios-15-2-P04	κατέχετε	ἐπιστεύσατε
-SR0292	292	1corintios	853	854	15:3	15:3	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-3-P01	1corintios-15-3-P02	παρέδωκα	παρέλαβον
-SR0293	293	1corintios	855	855	15:3	15:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-3-P03	1corintios-15-3-P03	ἀπέθανεν	ἀπέθανεν
-SR0294	294	1corintios	856	860	15:4	15:6	5	6	"{""stable"": 3, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 3}"	1corintios-15-4-P01	1corintios-15-6-P02	ἐτάφη	μένουσιν
-SR0295	295	1corintios	861	861	15:6	15:6	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-6-P03	1corintios-15-6-P03	ἐκοιμήθησαν	ἐκοιμήθησαν
-SR0296	296	1corintios	862	863	15:7	15:8	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-7-P01	1corintios-15-8-P01	ὤφθη	ὤφθη
-SR0297	297	1corintios	864	870	15:9	15:10	7	2	"{""stable"": 6, ""structural"": 1}"	"{""candidate"": 1, ""none"": 6}"	1corintios-15-9-P01	1corintios-15-10-P04	εἰμι	ἐκοπίασα
-SR0298	298	1corintios	871	871	15:11	15:11	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-11-P01	1corintios-15-11-P01	κηρύσσομεν	κηρύσσομεν
-SR0299	299	1corintios	872	874	15:11	15:12	3	4	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-15-11-P02	1corintios-15-12-P02	ἐπιστεύσατε	ἐγήγερται
-SR0300	300	1corintios	875	875	15:12	15:12	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-12-P03	1corintios-15-12-P03	λέγουσιν	λέγουσιν
-SR0301	301	1corintios	876	877	15:12	15:13	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-12-P04	1corintios-15-13-P01	ἔστιν	ἔστιν
-SR0302	302	1corintios	878	878	15:13	15:13	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-13-P02	1corintios-15-13-P02	ἐγήγερται	ἐγήγερται
-SR0303	303	1corintios	879	879	15:14	15:14	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-14-P01	1corintios-15-14-P01	ἐγήγερται	ἐγήγερται
-SR0304	304	1corintios	880	881	15:15	15:15	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-15-15-P01	1corintios-15-15-P02	εὑρισκόμεθα	ἐμαρτυρήσαμεν
-SR0305	305	1corintios	882	887	15:15	15:17	6	12	"{""stable"": 1, ""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 5, ""none"": 1}"	1corintios-15-15-P03	1corintios-15-17-P01	ἤγειρεν	ἐγήγερται
-SR0306	306	1corintios	888	889	15:17	15:18	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-17-P02	1corintios-15-18-P01	ἐστὲ	ἀπώλοντο
-SR0307	307	1corintios	890	905	15:19	15:28	16	16	"{""stable"": 9, ""structural"": 1, ""turbulence"": 6}"	"{""candidate"": 6, ""none"": 9, ""strong"": 1}"	1corintios-15-19-P01	1corintios-15-28-P03	ἐσμὲν	ᾖ
-SR0308	308	1corintios	906	908	15:29	15:29	3	4	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-15-29-P01	1corintios-15-29-P03	ποιήσουσιν	βαπτίζονται
-SR0309	309	1corintios	909	909	15:30	15:30	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-30-P01	1corintios-15-30-P01	κινδυνεύομεν	κινδυνεύομεν
-SR0310	310	1corintios	910	913	15:31	15:32	4	4	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 2}"	1corintios-15-31-P01	1corintios-15-32-P02	ἀποθνῄσκω	ἐγείρονται
-SR0311	311	1corintios	914	916	15:32	15:32	3	4	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-15-32-P03	1corintios-15-32-P05	φάγωμεν	ἀποθνῄσκομεν
-SR0312	312	1corintios	917	917	15:33	15:33	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-33-P01	1corintios-15-33-P01	πλανᾶσθε	πλανᾶσθε
-SR0313	313	1corintios	918	918	15:33	15:33	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-33-P02	1corintios-15-33-P02	φθείρουσιν	φθείρουσιν
-SR0314	314	1corintios	919	921	15:34	15:34	3	2	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-15-34-P01	1corintios-15-34-P03	ἐκνήψατε	ἔχουσιν
-SR0315	315	1corintios	922	922	15:34	15:34	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-34-P04	1corintios-15-34-P04	λαλῶ	λαλῶ
-SR0316	316	1corintios	923	923	15:35	15:35	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-35-P01	1corintios-15-35-P01	ἐρεῖ	ἐρεῖ
-SR0317	317	1corintios	924	925	15:35	15:35	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-35-P02	1corintios-15-35-P03	ἐγείρονται	ἔρχονται
-SR0318	318	1corintios	926	926	15:36	15:36	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-36-P01	1corintios-15-36-P01	σπείρεις	σπείρεις
-SR0319	319	1corintios	927	928	15:36	15:36	2	4	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-15-36-P02	1corintios-15-36-P03	ζῳοποιεῖται	ἀποθάνῃ
-SR0320	320	1corintios	929	930	15:37	15:37	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-37-P01	1corintios-15-37-P02	σπείρεις	σπείρεις
-SR0321	321	1corintios	931	931	15:37	15:37	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-37-P03	1corintios-15-37-P03	τύχοι	τύχοι
-SR0322	322	1corintios	932	932	15:38	15:38	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-38-P01	1corintios-15-38-P01	δίδωσιν	δίδωσιν
-SR0323	323	1corintios	933	946	15:38	15:45	14	10	"{""stable"": 10, ""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 3, ""none"": 10, ""strong"": 1}"	1corintios-15-38-P02	1corintios-15-45-P02	ἠθέλησεν	ἐγένετο
-SR0324	324	1corintios	947	948	15:49	15:49	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-15-49-P01	1corintios-15-49-P02	ἐφορέσαμεν	φορέσομεν
-SR0325	325	1corintios	949	949	15:50	15:50	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-50-P01	1corintios-15-50-P01	φημι	φημι
-SR0326	326	1corintios	950	950	15:50	15:50	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-50-P02	1corintios-15-50-P02	δύναται	δύναται
-SR0327	327	1corintios	951	952	15:50	15:51	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-50-P03	1corintios-15-51-P01	κληρονομεῖ	λέγω
-SR0328	328	1corintios	953	954	15:51	15:51	2	2	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-51-P02	1corintios-15-51-P03	κοιμηθησόμεθα	ἀλλαγησόμεθα
-SR0329	329	1corintios	955	956	15:52	15:52	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-52-P01	1corintios-15-52-P02	σαλπίσει	ἐγερθήσονται
-SR0330	330	1corintios	957	957	15:52	15:52	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-52-P03	1corintios-15-52-P03	ἀλλαγησόμεθα	ἀλλαγησόμεθα
-SR0331	331	1corintios	958	962	15:53	15:54	5	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 2}"	1corintios-15-53-P01	1corintios-15-54-P04	δεῖ	κατεπόθη
-SR0332	332	1corintios	963	964	15:58	15:58	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-58-P01	1corintios-15-58-P02	γίνεσθε	ἔστιν
-SR0333	333	1corintios	965	965	16:1	16:1	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-1-P01	1corintios-16-1-P01	διέταξα	διέταξα
-SR0334	334	1corintios	966	967	16:1	16:2	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-16-1-P02	1corintios-16-2-P01	ποιήσατε	τιθέτω
-SR0335	335	1corintios	968	968	16:2	16:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-2-P02	1corintios-16-2-P02	εὐοδῶται	εὐοδῶται
-SR0336	336	1corintios	969	969	16:2	16:2	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-2-P03	1corintios-16-2-P03	ἔλθω	ἔλθω
-SR0337	337	1corintios	970	970	16:2	16:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-2-P04	1corintios-16-2-P04	γίνωνται	γίνωνται
-SR0338	338	1corintios	971	971	16:3	16:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-3-P01	1corintios-16-3-P01	παραγένωμαι	παραγένωμαι
-SR0339	339	1corintios	972	972	16:3	16:3	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-3-P02	1corintios-16-3-P02	δοκιμάσητε	δοκιμάσητε
-SR0340	340	1corintios	973	973	16:3	16:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-3-P03	1corintios-16-3-P03	πέμψω	πέμψω
-SR0341	341	1corintios	974	974	16:4	16:4	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-4-P01	1corintios-16-4-P01	ᾖ	ᾖ
-SR0342	342	1corintios	975	975	16:4	16:4	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-4-P02	1corintios-16-4-P02	πορεύσονται	πορεύσονται
-SR0343	343	1corintios	976	980	16:5	16:6	5	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 2}"	1corintios-16-5-P01	1corintios-16-6-P02	ἐλεύσομαι	παραχειμάσω
-SR0344	344	1corintios	981	981	16:6	16:6	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-6-P03	1corintios-16-6-P03	προπέμψητε	προπέμψητε
-SR0345	345	1corintios	982	986	16:6	16:8	5	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 4, ""none"": 1}"	1corintios-16-6-P04	1corintios-16-8-P01	πορεύωμαι	ἐπιμενῶ
-SR0346	346	1corintios	987	988	16:9	16:10	2	4	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-16-9-P01	1corintios-16-10-P01	ἀνέῳγεν	ἔλθῃ
-SR0347	347	1corintios	989	989	16:10	16:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-10-P02	1corintios-16-10-P02	βλέπετε	βλέπετε
-SR0348	348	1corintios	990	992	16:10	16:11	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-16-10-P03	1corintios-16-11-P01	γένηται	ἐξουθενήσῃ
-SR0349	349	1corintios	993	993	16:11	16:11	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-11-P02	1corintios-16-11-P02	προπέμψατε	προπέμψατε
-SR0350	350	1corintios	994	994	16:11	16:11	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-11-P03	1corintios-16-11-P03	ἔλθῃ	ἔλθῃ
-SR0351	351	1corintios	995	996	16:11	16:12	2	4	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-16-11-P04	1corintios-16-12-P01	ἐκδέχομαι	παρεκάλεσα
-SR0352	352	1corintios	997	1002	16:12	16:14	6	14	"{""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 5, ""strong"": 1}"	1corintios-16-12-P02	1corintios-16-14-P01	ἔλθῃ	γινέσθω
-SR0353	353	1corintios	1003	1003	16:15	16:15	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-15-P01	1corintios-16-15-P01	παρακαλῶ	παρακαλῶ
-SR0354	354	1corintios	1004	1004	16:15	16:15	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-15-P02	1corintios-16-15-P02	οἴδατε	οἴδατε
-SR0355	355	1corintios	1005	1005	16:15	16:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-15-P03	1corintios-16-15-P03	ἐστὶν	ἐστὶν
-SR0356	356	1corintios	1006	1006	16:15	16:15	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-15-P04	1corintios-16-15-P04	ἔταξαν	ἔταξαν
-SR0357	357	1corintios	1007	1007	16:16	16:16	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-16-P01	1corintios-16-16-P01	ὑποτάσσησθε	ὑποτάσσησθε
-SR0358	358	1corintios	1008	1008	16:17	16:17	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-17-P01	1corintios-16-17-P01	χαίρω	χαίρω
-SR0359	359	1corintios	1009	1009	16:17	16:17	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-17-P02	1corintios-16-17-P02	ἀνεπλήρωσαν	ἀνεπλήρωσαν
-SR0360	360	1corintios	1010	1010	16:18	16:18	1	4	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-18-P01	1corintios-16-18-P01	ἀνέπαυσαν	ἀνέπαυσαν
-SR0361	361	1corintios	1011	1011	16:18	16:18	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-18-P02	1corintios-16-18-P02	ἐπιγινώσκετε	ἐπιγινώσκετε
-SR0362	362	1corintios	1012	1012	16:19	16:19	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-19-P01	1corintios-16-19-P01	ἀσπάζονται	ἀσπάζονται
-SR0363	363	1corintios	1013	1013	16:19	16:19	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-19-P02	1corintios-16-19-P02	ἀσπάζεται	ἀσπάζεται
-SR0364	364	1corintios	1014	1014	16:20	16:20	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-20-P01	1corintios-16-20-P01	ἀσπάζονται	ἀσπάζονται
-SR0365	365	1corintios	1015	1017	16:20	16:22	3	6	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-16-20-P02	1corintios-16-22-P02	ἀσπάσασθε	ἤτω
-SR0366	366	1corintios	1018	1018	16:22	16:22	1	2	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-22-P03	1corintios-16-22-P03	θά	θά
+SR0002	2	1corintios	2	2	1:5	1:5	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-5-P01	1corintios-1-5-P01	ἐπλουτίσθητε	ἐπλουτίσθητε
+SR0003	3	1corintios	3	4	1:6	1:8	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-1-6-P01	1corintios-1-8-P01	ἐβεβαιώθη	βεβαιώσει
+SR0004	4	1corintios	5	5	1:9	1:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-9-P01	1corintios-1-9-P01	ἐκλήθητε	ἐκλήθητε
+SR0005	5	1corintios	6	6	1:10	1:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-10-P01	1corintios-1-10-P01	παρακαλῶ	παρακαλῶ
+SR0006	6	1corintios	7	7	1:10	1:10	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-10-P02	1corintios-1-10-P02	λέγητε	λέγητε
+SR0007	7	1corintios	8	8	1:10	1:10	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-10-P03	1corintios-1-10-P03	ᾖ	ᾖ
+SR0008	8	1corintios	9	9	1:10	1:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-10-P04	1corintios-1-10-P04	ἦτε	ἦτε
+SR0009	9	1corintios	10	10	1:11	1:11	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-11-P01	1corintios-1-11-P01	ἐδηλώθη	ἐδηλώθη
+SR0010	10	1corintios	11	11	1:11	1:11	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-11-P02	1corintios-1-11-P02	εἰσιν	εἰσιν
+SR0011	11	1corintios	12	12	1:12	1:12	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-12-P01	1corintios-1-12-P01	λέγω	λέγω
+SR0012	12	1corintios	13	13	1:12	1:12	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-12-P02	1corintios-1-12-P02	λέγει	λέγει
+SR0013	13	1corintios	14	14	1:12	1:12	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-12-P03	1corintios-1-12-P03	εἰμι	εἰμι
+SR0014	14	1corintios	15	16	1:13	1:13	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-1-13-P01	1corintios-1-13-P02	μεμέρισται	ἐσταυρώθη
+SR0015	15	1corintios	17	17	1:13	1:13	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-13-P03	1corintios-1-13-P03	ἐβαπτίσθητε	ἐβαπτίσθητε
+SR0016	16	1corintios	18	19	1:14	1:14	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-1-14-P01	1corintios-1-14-P02	εὐχαριστῶ	ἐβάπτισα
+SR0017	17	1corintios	20	20	1:15	1:15	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-1-15-P01	1corintios-1-15-P01	εἴπῃ	εἴπῃ
+SR0018	18	1corintios	21	21	1:15	1:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-15-P02	1corintios-1-15-P02	ἐβαπτίσθητε	ἐβαπτίσθητε
+SR0019	19	1corintios	22	24	1:16	1:16	3	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-1-16-P01	1corintios-1-16-P03	ἐβάπτισα	ἐβάπτισα
+SR0020	20	1corintios	25	29	1:17	1:19	5	10	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2, ""strong"": 1}"	1corintios-1-17-P01	1corintios-1-19-P01	ἀπέστειλέν	γέγραπται
+SR0021	21	1corintios	30	31	1:19	1:19	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-1-19-P02	1corintios-1-19-P03	ἀπολῶ	ἀθετήσω
+SR0022	22	1corintios	32	34	1:20	1:21	3	8	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-1-20-P01	1corintios-1-21-P02	ἐμώρανεν	εὐδόκησεν
+SR0023	23	1corintios	35	36	1:22	1:22	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-1-22-P01	1corintios-1-22-P02	αἰτοῦσιν	ζητοῦσιν
+SR0024	24	1corintios	37	37	1:23	1:23	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-1-23-P01	1corintios-1-23-P01	κηρύσσομεν	κηρύσσομεν
+SR0025	25	1corintios	38	38	1:25	1:25	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-25-P01	1corintios-1-25-P01	ἐστίν	ἐστίν
+SR0026	26	1corintios	39	39	1:26	1:26	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-26-P01	1corintios-1-26-P01	βλέπετε	βλέπετε
+SR0027	27	1corintios	40	46	1:27	1:29	7	16	"{""stable"": 1, ""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 5, ""none"": 1, ""strong"": 1}"	1corintios-1-27-P01	1corintios-1-29-P01	ἐξελέξατο	καυχήσηται
+SR0028	28	1corintios	47	47	1:30	1:30	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-1-30-P01	1corintios-1-30-P01	ἐστε	ἐστε
+SR0029	29	1corintios	48	50	1:30	1:31	3	10	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""strong"": 1}"	1corintios-1-30-P02	1corintios-1-31-P02	ἐγενήθη	καυχάσθω
+SR0030	30	1corintios	51	53	2:1	2:3	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-2-1-P01	1corintios-2-3-P01	ἦλθον	ἐγενόμην
+SR0031	31	1corintios	54	54	2:5	2:5	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-2-5-P01	1corintios-2-5-P01	ᾖ	ᾖ
+SR0032	32	1corintios	55	56	2:6	2:7	2	8	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-2-6-P01	1corintios-2-7-P01	λαλοῦμεν	λαλοῦμεν
+SR0033	33	1corintios	57	58	2:7	2:8	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-2-7-P02	1corintios-2-8-P01	προώρισεν	ἔγνωκεν
+SR0034	34	1corintios	59	60	2:8	2:8	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-2-8-P02	1corintios-2-8-P03	ἔγνωσαν	ἐσταύρωσαν
+SR0035	35	1corintios	61	69	2:9	2:11	9	10	"{""stable"": 6, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 6, ""strong"": 1}"	1corintios-2-9-P01	1corintios-2-11-P02	γέγραπται	ἔγνωκεν
+SR0036	36	1corintios	70	72	2:12	2:13	3	12	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""strong"": 1}"	1corintios-2-12-P01	1corintios-2-13-P01	ἐλάβομεν	λαλοῦμεν
+SR0037	37	1corintios	73	80	2:14	2:16	8	10	"{""stable"": 5, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 5, ""strong"": 1}"	1corintios-2-14-P01	1corintios-2-16-P02	δέχεται	συμβιβάσει
+SR0038	38	1corintios	81	81	2:16	2:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-2-16-P03	1corintios-2-16-P03	ἔχομεν	ἔχομεν
+SR0039	39	1corintios	82	83	3:1	3:2	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-3-1-P01	1corintios-3-2-P01	ἠδυνήθην	ἐπότισα
+SR0040	40	1corintios	84	88	3:2	3:3	5	6	"{""stable"": 4, ""structural"": 1}"	"{""none"": 4, ""strong"": 1}"	1corintios-3-2-P02	1corintios-3-3-P03	ἐδύνασθε	περιπατεῖτε
+SR0041	41	1corintios	89	89	3:4	3:4	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-4-P01	1corintios-3-4-P01	λέγῃ	λέγῃ
+SR0042	42	1corintios	90	90	3:4	3:4	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-4-P02	1corintios-3-4-P02	εἰμι	εἰμι
+SR0043	43	1corintios	91	91	3:4	3:4	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-4-P03	1corintios-3-4-P03	ἐστε	ἐστε
+SR0044	44	1corintios	92	93	3:5	3:5	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-3-5-P01	1corintios-3-5-P02	ἐστιν	ἐστιν
+SR0045	45	1corintios	94	94	3:5	3:5	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-5-P03	1corintios-3-5-P03	ἐπιστεύσατε	ἐπιστεύσατε
+SR0046	46	1corintios	95	95	3:5	3:5	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-5-P04	1corintios-3-5-P04	ἔδωκεν	ἔδωκεν
+SR0047	47	1corintios	96	96	3:6	3:6	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-6-P01	1corintios-3-6-P01	ἐφύτευσα	ἐφύτευσα
+SR0048	48	1corintios	97	99	3:6	3:7	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-3-6-P02	1corintios-3-7-P01	ἐπότισεν	ἐστίν
+SR0049	49	1corintios	100	100	3:8	3:8	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-8-P01	1corintios-3-8-P01	εἰσιν	εἰσιν
+SR0050	50	1corintios	101	101	3:8	3:8	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-3-8-P02	1corintios-3-8-P02	λήμψεται	λήμψεται
+SR0051	51	1corintios	102	102	3:9	3:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-9-P01	1corintios-3-9-P01	ἐσμεν	ἐσμεν
+SR0052	52	1corintios	103	103	3:9	3:9	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-3-9-P02	1corintios-3-9-P02	ἐστε	ἐστε
+SR0053	53	1corintios	104	104	3:10	3:10	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-10-P01	1corintios-3-10-P01	ἔθηκα	ἔθηκα
+SR0054	54	1corintios	105	121	3:10	3:15	17	22	"{""stable"": 8, ""structural"": 1, ""turbulence"": 8}"	"{""candidate"": 8, ""none"": 8, ""strong"": 1}"	1corintios-3-10-P02	1corintios-3-15-P03	ἐποικοδομεῖ	σωθήσεται
+SR0055	55	1corintios	122	123	3:16	3:16	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-3-16-P01	1corintios-3-16-P02	οἴδατε	ἐστε
+SR0056	56	1corintios	124	127	3:16	3:17	4	12	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 1, ""strong"": 1}"	1corintios-3-16-P03	1corintios-3-17-P03	οἰκεῖ	ἐστιν
+SR0057	57	1corintios	128	128	3:17	3:17	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-17-P04	1corintios-3-17-P04	ἐστε	ἐστε
+SR0058	58	1corintios	129	135	3:18	3:20	7	14	"{""stable"": 2, ""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 4, ""none"": 2, ""strong"": 1}"	1corintios-3-18-P01	1corintios-3-20-P01	ἐξαπατάτω	γινώσκει
+SR0059	59	1corintios	136	136	3:20	3:20	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-3-20-P02	1corintios-3-20-P02	εἰσὶν	εἰσὶν
+SR0060	60	1corintios	137	138	3:21	3:21	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-3-21-P01	1corintios-3-21-P02	καυχάσθω	ἐστιν
+SR0061	61	1corintios	139	142	4:1	4:3	4	4	"{""stable"": 2, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2}"	1corintios-4-1-P01	1corintios-4-3-P01	λογιζέσθω	ἐστιν
+SR0062	62	1corintios	143	146	4:3	4:4	4	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 2, ""strong"": 1}"	1corintios-4-3-P02	1corintios-4-4-P02	ἀνακριθῶ	δεδικαίωμαι
+SR0063	63	1corintios	147	147	4:4	4:4	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-4-4-P03	1corintios-4-4-P03	ἐστιν	ἐστιν
+SR0064	64	1corintios	148	148	4:5	4:5	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-5-P01	1corintios-4-5-P01	κρίνετε	κρίνετε
+SR0065	65	1corintios	149	152	4:5	4:5	4	8	"{""stable"": 3, ""structural"": 1}"	"{""none"": 3, ""strong"": 1}"	1corintios-4-5-P02	1corintios-4-5-P05	ἔλθῃ	γενήσεται
+SR0066	66	1corintios	153	153	4:6	4:6	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-4-6-P01	1corintios-4-6-P01	μετεσχημάτισα	μετεσχημάτισα
+SR0067	67	1corintios	154	154	4:6	4:6	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-6-P02	1corintios-4-6-P02	μάθητε	μάθητε
+SR0068	68	1corintios	155	155	4:6	4:6	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-6-P03	1corintios-4-6-P03	γέγραπται	γέγραπται
+SR0069	69	1corintios	156	156	4:6	4:6	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-6-P04	1corintios-4-6-P04	φυσιοῦσθε	φυσιοῦσθε
+SR0070	70	1corintios	157	157	4:7	4:7	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-7-P01	1corintios-4-7-P01	διακρίνει	διακρίνει
+SR0071	71	1corintios	158	161	4:7	4:7	4	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 1}"	1corintios-4-7-P02	1corintios-4-7-P05	ἔχεις	καυχᾶσαι
+SR0072	72	1corintios	162	165	4:8	4:8	4	4	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-4-8-P01	1corintios-4-8-P04	ἐστέ	ἐβασιλεύσατε
+SR0073	73	1corintios	166	166	4:8	4:8	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-8-P05	1corintios-4-8-P05	συμβασιλεύσωμεν	συμβασιλεύσωμεν
+SR0074	74	1corintios	167	167	4:9	4:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-9-P01	1corintios-4-9-P01	δοκῶ	δοκῶ
+SR0075	75	1corintios	168	168	4:9	4:9	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-4-9-P02	1corintios-4-9-P02	ἀπέδειξεν	ἀπέδειξεν
+SR0076	76	1corintios	169	179	4:9	4:13	11	12	"{""stable"": 8, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 8, ""strong"": 1}"	1corintios-4-9-P03	1corintios-4-13-P02	ἐγενήθημεν	ἐγενήθημεν
+SR0077	77	1corintios	180	180	4:14	4:14	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-14-P01	1corintios-4-14-P01	γράφω	γράφω
+SR0078	78	1corintios	181	181	4:15	4:15	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-15-P01	1corintios-4-15-P01	ἔχητε	ἔχητε
+SR0079	79	1corintios	182	183	4:15	4:16	2	8	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-4-15-P02	1corintios-4-16-P01	ἐγέννησα	παρακαλῶ
+SR0080	80	1corintios	184	184	4:16	4:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-16-P02	1corintios-4-16-P02	γίνεσθε	γίνεσθε
+SR0081	81	1corintios	185	185	4:17	4:17	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-17-P01	1corintios-4-17-P01	ἔπεμψα	ἔπεμψα
+SR0082	82	1corintios	186	187	4:17	4:17	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-4-17-P02	1corintios-4-17-P03	ἐστίν	ἀναμνήσει
+SR0083	83	1corintios	188	188	4:17	4:17	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-17-P04	1corintios-4-17-P04	διδάσκω	διδάσκω
+SR0084	84	1corintios	189	189	4:18	4:18	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-18-P01	1corintios-4-18-P01	ἐφυσιώθησάν	ἐφυσιώθησάν
+SR0085	85	1corintios	190	190	4:19	4:19	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-19-P01	1corintios-4-19-P01	ἐλεύσομαι	ἐλεύσομαι
+SR0086	86	1corintios	191	191	4:19	4:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-19-P02	1corintios-4-19-P02	θελήσῃ	θελήσῃ
+SR0087	87	1corintios	192	192	4:19	4:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-19-P03	1corintios-4-19-P03	γνώσομαι	γνώσομαι
+SR0088	88	1corintios	193	193	4:21	4:21	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-21-P01	1corintios-4-21-P01	θέλετε	θέλετε
+SR0089	89	1corintios	194	194	4:21	4:21	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-4-21-P02	1corintios-4-21-P02	ἔλθω	ἔλθω
+SR0090	90	1corintios	195	195	5:1	5:1	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-5-1-P01	1corintios-5-1-P01	ἀκούεται	ἀκούεται
+SR0091	91	1corintios	196	197	5:2	5:2	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-5-2-P01	1corintios-5-2-P02	ἐστέ	ἐπενθήσατε
+SR0092	92	1corintios	198	198	5:2	5:2	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-2-P03	1corintios-5-2-P03	ἀρθῇ	ἀρθῇ
+SR0093	93	1corintios	199	199	5:3	5:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-3-P01	1corintios-5-3-P01	κέκρικα	κέκρικα
+SR0094	94	1corintios	200	200	5:5	5:5	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-5-P01	1corintios-5-5-P01	σωθῇ	σωθῇ
+SR0095	95	1corintios	201	201	5:6	5:6	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-6-P01	1corintios-5-6-P01	οἴδατε	οἴδατε
+SR0096	96	1corintios	202	202	5:6	5:6	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-6-P02	1corintios-5-6-P02	ζυμοῖ	ζυμοῖ
+SR0097	97	1corintios	203	205	5:7	5:7	3	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-5-7-P01	1corintios-5-7-P03	ἐκκαθάρατε	ἐστε
+SR0098	98	1corintios	206	206	5:7	5:7	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-7-P04	1corintios-5-7-P04	ἐτύθη	ἐτύθη
+SR0099	99	1corintios	207	207	5:8	5:8	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-8-P01	1corintios-5-8-P01	ἑορτάζωμεν	ἑορτάζωμεν
+SR0100	100	1corintios	208	208	5:9	5:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-9-P01	1corintios-5-9-P01	ἔγραψα	ἔγραψα
+SR0101	101	1corintios	209	209	5:10	5:10	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-10-P01	1corintios-5-10-P01	ὠφείλετε	ὠφείλετε
+SR0102	102	1corintios	210	210	5:11	5:11	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-11-P01	1corintios-5-11-P01	ἔγραψα	ἔγραψα
+SR0103	103	1corintios	211	211	5:11	5:11	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-11-P02	1corintios-5-11-P02	ᾖ	ᾖ
+SR0104	104	1corintios	212	212	5:12	5:12	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-12-P01	1corintios-5-12-P01	κρίνετε	κρίνετε
+SR0105	105	1corintios	213	213	5:13	5:13	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-13-P01	1corintios-5-13-P01	κρίνει;	κρίνει;
+SR0106	106	1corintios	214	214	5:13	5:13	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-5-13-P02	1corintios-5-13-P02	ἐξάρατε	ἐξάρατε
+SR0107	107	1corintios	215	215	6:1	6:1	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-1-P01	1corintios-6-1-P01	τολμᾷ	τολμᾷ
+SR0108	108	1corintios	216	216	6:2	6:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-2-P01	1corintios-6-2-P01	οἴδατε	οἴδατε
+SR0109	109	1corintios	217	217	6:2	6:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-2-P02	1corintios-6-2-P02	κρινοῦσιν	κρινοῦσιν
+SR0110	110	1corintios	218	218	6:2	6:2	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-2-P03	1corintios-6-2-P03	κρίνεται	κρίνεται
+SR0111	111	1corintios	219	220	6:2	6:3	2	8	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-6-2-P04	1corintios-6-3-P01	ἐστε	οἴδατε
+SR0112	112	1corintios	221	221	6:3	6:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-3-P02	1corintios-6-3-P02	κρινοῦμεν	κρινοῦμεν
+SR0113	113	1corintios	222	223	6:4	6:4	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-6-4-P01	1corintios-6-4-P02	ἔχητε	καθίζετε
+SR0114	114	1corintios	224	224	6:5	6:5	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-5-P01	1corintios-6-5-P01	λέγω	λέγω
+SR0115	115	1corintios	225	228	6:5	6:7	4	4	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-6-5-P02	1corintios-6-7-P01	ἔνι	ἐστιν
+SR0116	116	1corintios	229	234	6:7	6:9	6	10	"{""stable"": 4, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 4, ""strong"": 1}"	1corintios-6-7-P02	1corintios-6-9-P01	ἔχετε	οἴδατε
+SR0117	117	1corintios	235	235	6:9	6:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-9-P02	1corintios-6-9-P02	κληρονομήσουσιν	κληρονομήσουσιν
+SR0118	118	1corintios	236	236	6:9	6:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-9-P03	1corintios-6-9-P03	πλανᾶσθε	πλανᾶσθε
+SR0119	119	1corintios	237	237	6:10	6:10	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-10-P01	1corintios-6-10-P01	κληρονομήσουσιν	κληρονομήσουσιν
+SR0120	120	1corintios	238	241	6:11	6:11	4	4	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-6-11-P01	1corintios-6-11-P04	ἦτε	ἐδικαιώθητε
+SR0121	121	1corintios	242	244	6:12	6:12	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-6-12-P01	1corintios-6-12-P03	ἔξεστιν	ἔξεστιν
+SR0122	122	1corintios	245	245	6:12	6:12	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-12-P04	1corintios-6-12-P04	ἐξουσιασθήσομαι	ἐξουσιασθήσομαι
+SR0123	123	1corintios	246	248	6:13	6:14	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-6-13-P01	1corintios-6-14-P02	καταργήσει	ἐξεγερεῖ
+SR0124	124	1corintios	249	249	6:15	6:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-15-P01	1corintios-6-15-P01	οἴδατε	οἴδατε
+SR0125	125	1corintios	250	250	6:15	6:15	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-15-P02	1corintios-6-15-P02	ἐστιν	ἐστιν
+SR0126	126	1corintios	251	251	6:15	6:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-15-P03	1corintios-6-15-P03	ποιήσω	ποιήσω
+SR0127	127	1corintios	252	252	6:15	6:15	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-6-15-P04	1corintios-6-15-P04	γένοιτο	γένοιτο
+SR0128	128	1corintios	253	253	6:16	6:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-16-P01	1corintios-6-16-P01	οἴδατε	οἴδατε
+SR0129	129	1corintios	254	254	6:16	6:16	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-16-P02	1corintios-6-16-P02	ἐστιν	ἐστιν
+SR0130	130	1corintios	255	255	6:16	6:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-16-P03	1corintios-6-16-P03	ἔσονται	ἔσονται
+SR0131	131	1corintios	256	257	6:16	6:17	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-6-16-P04	1corintios-6-17-P01	φησίν	ἐστιν
+SR0132	132	1corintios	258	258	6:18	6:18	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-18-P01	1corintios-6-18-P01	φεύγετε	φεύγετε
+SR0133	133	1corintios	259	261	6:18	6:18	3	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-6-18-P02	1corintios-6-18-P04	ποιήσῃ	ἁμαρτάνει
+SR0134	134	1corintios	262	262	6:19	6:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-19-P01	1corintios-6-19-P01	οἴδατε	οἴδατε
+SR0135	135	1corintios	263	263	6:19	6:19	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-6-19-P02	1corintios-6-19-P02	ἐστιν	ἐστιν
+SR0136	136	1corintios	264	267	6:19	6:20	4	8	"{""stable"": 3, ""structural"": 1}"	"{""none"": 3, ""strong"": 1}"	1corintios-6-19-P03	1corintios-6-20-P02	ἔχετε	δοξάσατε
+SR0137	137	1corintios	268	268	7:1	7:1	1	0	"{""stable"": 1}"	"{""none"": 1}"	1corintios-7-1-P01	1corintios-7-1-P01	ἐγράψατε	ἐγράψατε
+SR0138	138	1corintios	269	273	7:2	7:4	5	6	"{""stable"": 4, ""structural"": 1}"	"{""none"": 4, ""strong"": 1}"	1corintios-7-2-P01	1corintios-7-4-P02	ἐχέτω	ἐξουσιάζει
+SR0139	139	1corintios	274	276	7:5	7:5	3	10	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""strong"": 1}"	1corintios-7-5-P01	1corintios-7-5-P03	ἀποστερεῖτε	ἦτε
+SR0140	140	1corintios	277	277	7:5	7:5	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-5-P04	1corintios-7-5-P04	πειράζῃ	πειράζῃ
+SR0141	141	1corintios	278	279	7:6	7:7	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-7-6-P01	1corintios-7-7-P01	λέγω	θέλω
+SR0142	142	1corintios	280	280	7:7	7:7	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-7-P02	1corintios-7-7-P02	ἔχει	ἔχει
+SR0143	143	1corintios	281	281	7:8	7:8	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-8-P01	1corintios-7-8-P01	λέγω	λέγω
+SR0144	144	1corintios	282	284	7:8	7:9	3	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-7-8-P02	1corintios-7-9-P02	μείνωσιν	γαμησάτωσαν
+SR0145	145	1corintios	285	285	7:9	7:9	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-9-P03	1corintios-7-9-P03	ἐστιν	ἐστιν
+SR0146	146	1corintios	286	286	7:10	7:10	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-10-P01	1corintios-7-10-P01	παραγγέλλω	παραγγέλλω
+SR0147	147	1corintios	287	289	7:11	7:11	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-7-11-P01	1corintios-7-11-P03	χωρισθῇ	καταλλαγήτω—
+SR0148	148	1corintios	290	290	7:12	7:12	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-12-P01	1corintios-7-12-P01	λέγω	λέγω
+SR0149	149	1corintios	291	304	7:12	7:15	14	20	"{""stable"": 6, ""structural"": 1, ""turbulence"": 7}"	"{""candidate"": 7, ""none"": 6, ""strong"": 1}"	1corintios-7-12-P02	1corintios-7-15-P04	ἔχει	κέκληκεν
+SR0150	150	1corintios	305	308	7:16	7:16	4	10	"{""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 4}"	1corintios-7-16-P01	1corintios-7-16-P04	οἶδας	σώσεις
+SR0151	151	1corintios	309	311	7:17	7:17	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-7-17-P01	1corintios-7-17-P03	ἐμέρισεν	περιπατείτω
+SR0152	152	1corintios	312	312	7:17	7:17	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-17-P04	1corintios-7-17-P04	διατάσσομαι	διατάσσομαι
+SR0153	153	1corintios	313	320	7:18	7:20	8	4	"{""stable"": 7, ""structural"": 1}"	"{""candidate"": 1, ""none"": 7}"	1corintios-7-18-P01	1corintios-7-20-P02	ἐκλήθη;	μενέτω
+SR0154	154	1corintios	321	321	7:21	7:21	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-21-P01	1corintios-7-21-P01	ἐκλήθης;	ἐκλήθης;
+SR0155	155	1corintios	322	322	7:21	7:21	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-21-P02	1corintios-7-21-P02	μελέτω	μελέτω
+SR0156	156	1corintios	323	324	7:21	7:21	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-7-21-P03	1corintios-7-21-P04	δύνασαι	χρῆσαι
+SR0157	157	1corintios	325	326	7:22	7:22	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-7-22-P01	1corintios-7-22-P02	ἐστίν	ἐστιν
+SR0158	158	1corintios	327	328	7:23	7:23	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-7-23-P01	1corintios-7-23-P02	ἠγοράσθητε	γίνεσθε
+SR0159	159	1corintios	329	330	7:24	7:24	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-7-24-P01	1corintios-7-24-P02	ἐκλήθη	μενέτω
+SR0160	160	1corintios	331	333	7:25	7:26	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-7-25-P01	1corintios-7-26-P01	ἔχω	νομίζω
+SR0161	161	1corintios	334	339	7:27	7:28	6	8	"{""stable"": 3, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 3}"	1corintios-7-27-P01	1corintios-7-28-P02	δέδεσαι	ἥμαρτες
+SR0162	162	1corintios	340	341	7:28	7:28	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-7-28-P03	1corintios-7-28-P04	γήμῃ	ἥμαρτεν
+SR0163	163	1corintios	342	342	7:28	7:28	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-28-P05	1corintios-7-28-P05	ἕξουσιν	ἕξουσιν
+SR0164	164	1corintios	343	344	7:28	7:29	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-7-28-P06	1corintios-7-29-P01	φείδομαι	φημι
+SR0165	165	1corintios	345	345	7:29	7:29	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-29-P02	1corintios-7-29-P02	ἐστίν	ἐστίν
+SR0166	166	1corintios	346	346	7:29	7:29	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-29-P03	1corintios-7-29-P03	ὦσιν	ὦσιν
+SR0167	167	1corintios	347	347	7:31	7:31	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-31-P01	1corintios-7-31-P01	παράγει	παράγει
+SR0168	168	1corintios	348	348	7:32	7:32	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-32-P01	1corintios-7-32-P01	θέλω	θέλω
+SR0169	169	1corintios	349	357	7:32	7:34	9	8	"{""stable"": 6, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 6}"	1corintios-7-32-P02	1corintios-7-34-P05	μεριμνᾷ	ἀρέσῃ
+SR0170	170	1corintios	358	359	7:35	7:35	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-7-35-P01	1corintios-7-35-P02	λέγω	ἐπιβάλω
+SR0171	171	1corintios	360	365	7:36	7:36	6	6	"{""stable"": 4, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 4}"	1corintios-7-36-P01	1corintios-7-36-P06	νομίζει	ἁμαρτάνει
+SR0172	172	1corintios	366	366	7:36	7:36	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-7-36-P07	1corintios-7-36-P07	γαμείτωσαν	γαμείτωσαν
+SR0173	173	1corintios	367	379	7:37	7:40	13	14	"{""stable"": 7, ""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 6, ""none"": 7}"	1corintios-7-37-P01	1corintios-7-40-P02	ἕστηκεν	μείνῃ
+SR0174	174	1corintios	380	380	7:40	7:40	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-7-40-P03	1corintios-7-40-P03	δοκῶ	δοκῶ
+SR0175	175	1corintios	381	382	8:1	8:1	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-8-1-P01	1corintios-8-1-P02	οἴδαμεν	ἔχομεν
+SR0176	176	1corintios	383	389	8:1	8:3	7	16	"{""stable"": 2, ""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 4, ""none"": 2, ""strong"": 1}"	1corintios-8-1-P03	1corintios-8-3-P02	φυσιοῖ	ἔγνωσται
+SR0177	177	1corintios	390	390	8:4	8:4	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-8-4-P01	1corintios-8-4-P01	οἴδαμεν	οἴδαμεν
+SR0178	178	1corintios	391	393	8:5	8:7	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-8-5-P01	1corintios-8-7-P01	εἰσὶν	ἐσθίουσιν
+SR0179	179	1corintios	394	395	8:7	8:8	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-8-7-P02	1corintios-8-8-P01	μολύνεται	παραστήσει
+SR0180	180	1corintios	396	399	8:8	8:8	4	14	"{""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 3, ""strong"": 1}"	1corintios-8-8-P02	1corintios-8-8-P05	φάγωμεν	ὑστερούμεθα
+SR0181	181	1corintios	400	400	8:9	8:9	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-8-9-P01	1corintios-8-9-P01	βλέπετε	βλέπετε
+SR0182	182	1corintios	401	405	8:9	8:11	5	10	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2, ""strong"": 1}"	1corintios-8-9-P02	1corintios-8-11-P02	γένηται	ἀπέθανεν
+SR0183	183	1corintios	406	406	8:12	8:12	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-8-12-P01	1corintios-8-12-P01	ἁμαρτάνετε	ἁμαρτάνετε
+SR0184	184	1corintios	407	407	8:13	8:13	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-8-13-P01	1corintios-8-13-P01	σκανδαλίζει	σκανδαλίζει
+SR0185	185	1corintios	408	409	8:13	8:13	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-8-13-P02	1corintios-8-13-P03	φάγω	σκανδαλίσω
+SR0186	186	1corintios	410	412	9:1	9:1	3	2	"{""stable"": 2, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-9-1-P01	1corintios-9-1-P03	εἰμὶ	ἑόρακα
+SR0187	187	1corintios	413	413	9:1	9:1	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-1-P04	1corintios-9-1-P04	ἐστε	ἐστε
+SR0188	188	1corintios	414	415	9:2	9:2	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-9-2-P01	1corintios-9-2-P02	εἰμὶ	εἰμι
+SR0189	189	1corintios	416	416	9:2	9:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-2-P03	1corintios-9-2-P03	ἐστε	ἐστε
+SR0190	190	1corintios	417	417	9:3	9:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-3-P01	1corintios-9-3-P01	ἐστιν	ἐστιν
+SR0191	191	1corintios	418	420	9:4	9:6	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-9-4-P01	1corintios-9-6-P01	ἔχομεν	ἔχομεν
+SR0192	192	1corintios	421	425	9:7	9:7	5	6	"{""stable"": 4, ""structural"": 1}"	"{""none"": 4, ""strong"": 1}"	1corintios-9-7-P01	1corintios-9-7-P05	στρατεύεται	ἐσθίει
+SR0193	193	1corintios	426	426	9:8	9:8	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-9-8-P01	1corintios-9-8-P01	λαλῶ	λαλῶ
+SR0194	194	1corintios	427	428	9:8	9:9	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-9-8-P02	1corintios-9-9-P01	λέγει	γέγραπται
+SR0195	195	1corintios	429	429	9:9	9:9	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-9-9-P02	1corintios-9-9-P02	κημώσεις	κημώσεις
+SR0196	196	1corintios	430	433	9:9	9:10	4	6	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 2}"	1corintios-9-9-P03	1corintios-9-10-P03	μέλει	ὀφείλει
+SR0197	197	1corintios	434	435	9:11	9:11	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-9-11-P01	1corintios-9-11-P02	ἐσπείραμεν	θερίσομεν
+SR0198	198	1corintios	436	436	9:12	9:12	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-9-12-P01	1corintios-9-12-P01	μετέχουσιν	μετέχουσιν
+SR0199	199	1corintios	437	439	9:12	9:12	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-9-12-P02	1corintios-9-12-P04	ἐχρησάμεθα	δῶμεν
+SR0200	200	1corintios	440	440	9:13	9:13	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-13-P01	1corintios-9-13-P01	οἴδατε	οἴδατε
+SR0201	201	1corintios	441	442	9:13	9:13	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-9-13-P02	1corintios-9-13-P03	ἐσθίουσιν	συμμερίζονται
+SR0202	202	1corintios	443	443	9:14	9:14	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-9-14-P01	1corintios-9-14-P01	διέταξεν	διέταξεν
+SR0203	203	1corintios	444	445	9:15	9:15	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-9-15-P01	1corintios-9-15-P02	κέχρημαι	ἔγραψα
+SR0204	204	1corintios	446	447	9:15	9:15	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-9-15-P03	1corintios-9-15-P04	γένηται	κενώσει
+SR0205	205	1corintios	448	448	9:16	9:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-16-P01	1corintios-9-16-P01	εὐαγγελίζωμαι	εὐαγγελίζωμαι
+SR0206	206	1corintios	449	451	9:16	9:16	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-9-16-P02	1corintios-9-16-P04	ἔστιν	ἐστιν
+SR0207	207	1corintios	452	455	9:16	9:17	4	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 1, ""strong"": 1}"	1corintios-9-16-P05	1corintios-9-17-P03	εὐαγγελίσωμαι	πεπίστευμαι
+SR0208	208	1corintios	456	456	9:18	9:18	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-18-P01	1corintios-9-18-P01	ἐστιν	ἐστιν
+SR0209	209	1corintios	457	469	9:18	9:23	13	26	"{""stable"": 2, ""structural"": 1, ""turbulence"": 10}"	"{""candidate"": 10, ""none"": 2, ""strong"": 1}"	1corintios-9-18-P02	1corintios-9-23-P02	θήσω	γένωμαι
+SR0210	210	1corintios	470	470	9:24	9:24	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-24-P01	1corintios-9-24-P01	οἴδατε	οἴδατε
+SR0211	211	1corintios	471	471	9:24	9:24	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-24-P02	1corintios-9-24-P02	τρέχουσιν	τρέχουσιν
+SR0212	212	1corintios	472	472	9:24	9:24	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-24-P03	1corintios-9-24-P03	λαμβάνει	λαμβάνει
+SR0213	213	1corintios	473	474	9:24	9:24	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-9-24-P04	1corintios-9-24-P05	τρέχετε	καταλάβητε
+SR0214	214	1corintios	475	475	9:25	9:25	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-25-P01	1corintios-9-25-P01	ἐγκρατεύεται	ἐγκρατεύεται
+SR0215	215	1corintios	476	476	9:25	9:25	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-9-25-P02	1corintios-9-25-P02	λάβωσιν	λάβωσιν
+SR0216	216	1corintios	477	481	9:26	9:27	5	12	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2, ""strong"": 1}"	1corintios-9-26-P01	1corintios-9-27-P03	τρέχω	γένωμαι
+SR0217	217	1corintios	482	482	10:1	10:1	1	0	"{""stable"": 1}"	"{""none"": 1}"	1corintios-10-1-P01	1corintios-10-1-P01	θέλω	θέλω
+SR0218	218	1corintios	483	488	10:1	10:4	6	10	"{""stable"": 4, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 4, ""strong"": 1}"	1corintios-10-1-P02	1corintios-10-4-P02	ἦσαν	ἔπινον
+SR0219	219	1corintios	489	490	10:4	10:5	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-10-4-P03	1corintios-10-5-P01	ἦν	ηὐδόκησεν
+SR0220	220	1corintios	491	493	10:5	10:6	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-10-5-P02	1corintios-10-6-P02	κατεστρώθησαν	ἐπεθύμησαν
+SR0221	221	1corintios	494	494	10:7	10:7	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-7-P01	1corintios-10-7-P01	γίνεσθε	γίνεσθε
+SR0222	222	1corintios	495	496	10:7	10:7	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-10-7-P02	1corintios-10-7-P03	γέγραπται	ἐκάθισεν
+SR0223	223	1corintios	497	497	10:7	10:7	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-7-P04	1corintios-10-7-P04	ἀνέστησαν	ἀνέστησαν
+SR0224	224	1corintios	498	498	10:8	10:8	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-8-P01	1corintios-10-8-P01	πορνεύωμεν	πορνεύωμεν
+SR0225	225	1corintios	499	500	10:8	10:8	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-10-8-P02	1corintios-10-8-P03	ἐπόρνευσαν	ἔπεσαν
+SR0226	226	1corintios	501	501	10:9	10:9	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-9-P01	1corintios-10-9-P01	ἐκπειράζωμεν	ἐκπειράζωμεν
+SR0227	227	1corintios	502	503	10:9	10:9	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-10-9-P02	1corintios-10-9-P03	ἐπείρασαν	ἀπώλλυντο
+SR0228	228	1corintios	504	504	10:10	10:10	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-10-P01	1corintios-10-10-P01	γογγύζετε	γογγύζετε
+SR0229	229	1corintios	505	506	10:10	10:10	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-10-10-P02	1corintios-10-10-P03	ἐγόγγυσαν	ἀπώλοντο
+SR0230	230	1corintios	507	513	10:11	10:13	7	10	"{""stable"": 3, ""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 4, ""none"": 3}"	1corintios-10-11-P01	1corintios-10-13-P02	συνέβαινεν	ἐάσει
+SR0231	231	1corintios	514	514	10:13	10:13	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-13-P03	1corintios-10-13-P03	δύνασθε	δύνασθε
+SR0232	232	1corintios	515	515	10:13	10:13	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-13-P04	1corintios-10-13-P04	ποιήσει	ποιήσει
+SR0233	233	1corintios	516	516	10:14	10:14	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-14-P01	1corintios-10-14-P01	φεύγετε	φεύγετε
+SR0234	234	1corintios	517	517	10:15	10:15	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-15-P01	1corintios-10-15-P01	λέγω	λέγω
+SR0235	235	1corintios	518	518	10:15	10:15	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-15-P02	1corintios-10-15-P02	κρίνατε	κρίνατε
+SR0236	236	1corintios	519	519	10:15	10:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-15-P03	1corintios-10-15-P03	φημι	φημι
+SR0237	237	1corintios	520	520	10:16	10:16	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-16-P01	1corintios-10-16-P01	εὐλογοῦμεν	εὐλογοῦμεν
+SR0238	238	1corintios	521	521	10:16	10:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-16-P02	1corintios-10-16-P02	ἐστὶν	ἐστὶν
+SR0239	239	1corintios	522	522	10:16	10:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-16-P03	1corintios-10-16-P03	κλῶμεν	κλῶμεν
+SR0240	240	1corintios	523	523	10:16	10:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-16-P04	1corintios-10-16-P04	ἐστιν	ἐστιν
+SR0241	241	1corintios	524	525	10:17	10:17	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-10-17-P01	1corintios-10-17-P02	ἐσμεν	μετέχομεν
+SR0242	242	1corintios	526	526	10:18	10:18	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-18-P01	1corintios-10-18-P01	βλέπετε	βλέπετε
+SR0243	243	1corintios	527	527	10:18	10:18	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-18-P02	1corintios-10-18-P02	εἰσίν	εἰσίν
+SR0244	244	1corintios	528	528	10:19	10:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-19-P01	1corintios-10-19-P01	φημι	φημι
+SR0245	245	1corintios	529	530	10:19	10:19	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-10-19-P02	1corintios-10-19-P03	ἐστιν	ἐστιν
+SR0246	246	1corintios	531	532	10:20	10:20	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-10-20-P01	1corintios-10-20-P02	θύουσιν	θύουσιν
+SR0247	247	1corintios	533	533	10:20	10:20	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-20-P03	1corintios-10-20-P03	θέλω	θέλω
+SR0248	248	1corintios	534	535	10:21	10:21	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-10-21-P01	1corintios-10-21-P02	δύνασθε	δύνασθε
+SR0249	249	1corintios	536	537	10:22	10:22	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-10-22-P01	1corintios-10-22-P02	παραζηλοῦμεν	ἐσμεν
+SR0250	250	1corintios	538	542	10:23	10:24	5	6	"{""stable"": 4, ""structural"": 1}"	"{""none"": 4, ""strong"": 1}"	1corintios-10-23-P01	1corintios-10-24-P01	ἔξεστιν	ζητείτω
+SR0251	251	1corintios	543	543	10:25	10:25	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-25-P01	1corintios-10-25-P01	ἐσθίετε	ἐσθίετε
+SR0252	252	1corintios	544	544	10:27	10:27	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-27-P01	1corintios-10-27-P01	καλεῖ	καλεῖ
+SR0253	253	1corintios	545	546	10:27	10:27	2	8	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-10-27-P02	1corintios-10-27-P03	θέλετε	ἐσθίετε
+SR0254	254	1corintios	547	548	10:28	10:28	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-10-28-P01	1corintios-10-28-P02	εἴπῃ	ἐστιν
+SR0255	255	1corintios	549	549	10:28	10:28	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-28-P03	1corintios-10-28-P03	ἐσθίετε	ἐσθίετε
+SR0256	256	1corintios	550	550	10:29	10:29	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-29-P01	1corintios-10-29-P01	λέγω	λέγω
+SR0257	257	1corintios	551	551	10:29	10:29	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-10-29-P02	1corintios-10-29-P02	κρίνεται	κρίνεται
+SR0258	258	1corintios	552	554	10:30	10:30	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-10-30-P01	1corintios-10-30-P03	μετέχω	εὐχαριστῶ
+SR0259	259	1corintios	555	559	10:31	10:32	5	6	"{""stable"": 4, ""structural"": 1}"	"{""none"": 4, ""strong"": 1}"	1corintios-10-31-P01	1corintios-10-32-P01	ἐσθίετε	γίνεσθε
+SR0260	260	1corintios	560	560	10:33	10:33	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-33-P01	1corintios-10-33-P01	ἀρέσκω	ἀρέσκω
+SR0261	261	1corintios	561	561	10:33	10:33	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-10-33-P02	1corintios-10-33-P02	σωθῶσιν	σωθῶσιν
+SR0262	262	1corintios	562	562	11:1	11:1	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-1-P01	1corintios-11-1-P01	γίνεσθε	γίνεσθε
+SR0263	263	1corintios	563	563	11:2	11:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-2-P01	1corintios-11-2-P01	ἐπαινῶ	ἐπαινῶ
+SR0264	264	1corintios	564	564	11:2	11:2	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-2-P02	1corintios-11-2-P02	μέμνησθε	μέμνησθε
+SR0265	265	1corintios	565	565	11:2	11:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-2-P03	1corintios-11-2-P03	παρέδωκα	παρέδωκα
+SR0266	266	1corintios	566	566	11:2	11:2	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-2-P04	1corintios-11-2-P04	κατέχετε	κατέχετε
+SR0267	267	1corintios	567	567	11:3	11:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-3-P01	1corintios-11-3-P01	θέλω	θέλω
+SR0268	268	1corintios	568	579	11:3	11:10	12	16	"{""stable"": 6, ""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 5, ""none"": 6, ""strong"": 1}"	1corintios-11-3-P02	1corintios-11-10-P01	ἐστιν	ὀφείλει
+SR0269	269	1corintios	580	580	11:13	11:13	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-13-P01	1corintios-11-13-P01	κρίνατε	κρίνατε
+SR0270	270	1corintios	581	588	11:13	11:16	8	16	"{""stable"": 2, ""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 5, ""none"": 2, ""strong"": 1}"	1corintios-11-13-P02	1corintios-11-16-P01	ἐστὶν	δοκεῖ
+SR0271	271	1corintios	589	589	11:16	11:16	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-16-P02	1corintios-11-16-P02	ἔχομεν	ἔχομεν
+SR0272	272	1corintios	590	590	11:17	11:17	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-17-P01	1corintios-11-17-P01	ἐπαινῶ	ἐπαινῶ
+SR0273	273	1corintios	591	591	11:17	11:17	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-17-P02	1corintios-11-17-P02	συνέρχεσθε	συνέρχεσθε
+SR0274	274	1corintios	592	593	11:18	11:18	2	8	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-11-18-P01	1corintios-11-18-P02	ἀκούω	πιστεύω
+SR0275	275	1corintios	594	594	11:19	11:19	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-19-P01	1corintios-11-19-P01	δεῖ	δεῖ
+SR0276	276	1corintios	595	595	11:19	11:19	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-19-P02	1corintios-11-19-P02	γένωνται	γένωνται
+SR0277	277	1corintios	596	599	11:20	11:21	4	6	"{""stable"": 3, ""structural"": 1}"	"{""none"": 3, ""strong"": 1}"	1corintios-11-20-P01	1corintios-11-21-P03	ἔστιν	μεθύει
+SR0278	278	1corintios	600	602	11:22	11:22	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-11-22-P01	1corintios-11-22-P03	ἔχετε	καταισχύνετε
+SR0279	279	1corintios	603	607	11:22	11:23	5	6	"{""stable"": 4, ""structural"": 1}"	"{""none"": 4, ""strong"": 1}"	1corintios-11-22-P04	1corintios-11-23-P02	εἴπω	παρέδωκα
+SR0280	280	1corintios	608	612	11:23	11:24	5	8	"{""stable"": 3, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 3, ""strong"": 1}"	1corintios-11-23-P03	1corintios-11-24-P03	παρεδίδετο	ἐστιν
+SR0281	281	1corintios	613	613	11:24	11:24	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-24-P04	1corintios-11-24-P04	ποιεῖτε	ποιεῖτε
+SR0282	282	1corintios	614	614	11:25	11:25	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-25-P01	1corintios-11-25-P01	ἐστὶν	ἐστὶν
+SR0283	283	1corintios	615	619	11:25	11:26	5	10	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2, ""strong"": 1}"	1corintios-11-25-P02	1corintios-11-26-P03	ποιεῖτε	καταγγέλλετε
+SR0284	284	1corintios	620	628	11:26	11:29	9	10	"{""stable"": 6, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 6, ""strong"": 1}"	1corintios-11-26-P04	1corintios-11-29-P02	ἔλθῃ	πίνει
+SR0285	285	1corintios	629	629	11:30	11:30	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-30-P01	1corintios-11-30-P01	κοιμῶνται	κοιμῶνται
+SR0286	286	1corintios	630	633	11:31	11:32	4	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 1, ""strong"": 1}"	1corintios-11-31-P01	1corintios-11-32-P02	διεκρίνομεν	κατακριθῶμεν
+SR0287	287	1corintios	634	634	11:33	11:33	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-11-33-P01	1corintios-11-33-P01	ἐκδέχεσθε	ἐκδέχεσθε
+SR0288	288	1corintios	635	636	11:34	11:34	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-11-34-P01	1corintios-11-34-P02	πεινᾷ	ἐσθιέτω
+SR0289	289	1corintios	637	637	11:34	11:34	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-11-34-P03	1corintios-11-34-P03	συνέρχησθε	συνέρχησθε
+SR0290	290	1corintios	638	639	11:34	11:34	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-11-34-P04	1corintios-11-34-P05	ἔλθω	διατάξομαι
+SR0291	291	1corintios	640	640	12:1	12:1	1	0	"{""stable"": 1}"	"{""none"": 1}"	1corintios-12-1-P01	1corintios-12-1-P01	θέλω	θέλω
+SR0292	292	1corintios	641	643	12:2	12:2	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-12-2-P01	1corintios-12-2-P03	οἴδατε	ἤγεσθε
+SR0293	293	1corintios	644	644	12:3	12:3	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-3-P01	1corintios-12-3-P01	γνωρίζω	γνωρίζω
+SR0294	294	1corintios	645	646	12:3	12:3	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-12-3-P02	1corintios-12-3-P03	λέγει	δύναται
+SR0295	295	1corintios	647	649	12:4	12:6	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-12-4-P01	1corintios-12-6-P01	εἰσίν	εἰσίν
+SR0296	296	1corintios	650	656	12:7	12:12	7	8	"{""stable"": 4, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 4}"	1corintios-12-7-P01	1corintios-12-12-P03	δίδοται	ἐστιν
+SR0297	297	1corintios	657	658	12:13	12:13	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-12-13-P01	1corintios-12-13-P02	ἐβαπτίσθημεν	ἐποτίσθημεν
+SR0298	298	1corintios	659	660	12:14	12:15	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-12-14-P01	1corintios-12-15-P01	ἔστιν	εἴπῃ
+SR0299	299	1corintios	661	662	12:15	12:15	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-12-15-P02	1corintios-12-15-P03	εἰμὶ	εἰμὶ
+SR0300	300	1corintios	663	664	12:15	12:16	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-12-15-P04	1corintios-12-16-P01	ἔστιν	εἴπῃ
+SR0301	301	1corintios	665	666	12:16	12:16	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-12-16-P02	1corintios-12-16-P03	εἰμὶ	εἰμὶ
+SR0302	302	1corintios	667	671	12:16	12:21	5	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 2}"	1corintios-12-16-P04	1corintios-12-21-P01	ἔστιν	δύναται
+SR0303	303	1corintios	672	673	12:21	12:21	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-12-21-P02	1corintios-12-21-P03	ἔχω	ἔχω
+SR0304	304	1corintios	674	674	12:22	12:22	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-12-22-P01	1corintios-12-22-P01	ἐστιν	ἐστιν
+SR0305	305	1corintios	675	676	12:23	12:23	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-12-23-P01	1corintios-12-23-P02	δοκοῦμεν	περιτίθεμεν
+SR0306	306	1corintios	677	680	12:23	12:25	4	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 2, ""strong"": 1}"	1corintios-12-23-P03	1corintios-12-25-P01	ἔχει	ᾖ
+SR0307	307	1corintios	681	681	12:25	12:25	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-25-P02	1corintios-12-25-P02	μεριμνῶσι	μεριμνῶσι
+SR0308	308	1corintios	682	685	12:26	12:26	4	4	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-12-26-P01	1corintios-12-26-P04	πάσχει	συγχαίρει
+SR0309	309	1corintios	686	686	12:27	12:27	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-27-P01	1corintios-12-27-P01	ἐστε	ἐστε
+SR0310	310	1corintios	687	687	12:28	12:28	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-28-P01	1corintios-12-28-P01	ἔθετο	ἔθετο
+SR0311	311	1corintios	688	690	12:30	12:30	3	4	"{""stable"": 2, ""structural"": 1}"	"{""candidate"": 1, ""none"": 2}"	1corintios-12-30-P01	1corintios-12-30-P03	ἔχουσιν	διερμηνεύουσιν
+SR0312	312	1corintios	691	691	12:31	12:31	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-12-31-P01	1corintios-12-31-P01	ζηλοῦτε	ζηλοῦτε
+SR0313	313	1corintios	692	692	12:31	12:31	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-12-31-P02	1corintios-12-31-P02	δείκνυμι	δείκνυμι
+SR0314	314	1corintios	693	716	13:1	13:8	24	16	"{""stable"": 17, ""structural"": 1, ""turbulence"": 6}"	"{""candidate"": 7, ""none"": 17}"	1corintios-13-1-P01	1corintios-13-8-P01	λαλῶ	πίπτει
+SR0315	315	1corintios	717	718	13:8	13:8	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-13-8-P02	1corintios-13-8-P03	καταργηθήσονται	παύσονται
+SR0316	316	1corintios	719	719	13:8	13:8	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-13-8-P04	1corintios-13-8-P04	καταργηθήσεται	καταργηθήσεται
+SR0317	317	1corintios	720	721	13:9	13:9	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-13-9-P01	1corintios-13-9-P02	γινώσκομεν	προφητεύομεν
+SR0318	318	1corintios	722	723	13:10	13:10	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-13-10-P01	1corintios-13-10-P02	ἔλθῃ	καταργηθήσεται
+SR0319	319	1corintios	724	729	13:11	13:11	6	12	"{""stable"": 2, ""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 3, ""none"": 2, ""strong"": 1}"	1corintios-13-11-P01	1corintios-13-11-P06	ἤμην	κατήργηκα
+SR0320	320	1corintios	730	730	13:12	13:12	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-13-12-P01	1corintios-13-12-P01	βλέπομεν	βλέπομεν
+SR0321	321	1corintios	731	733	13:12	13:12	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-13-12-P02	1corintios-13-12-P04	γινώσκω	ἐπεγνώσθην
+SR0322	322	1corintios	734	734	13:13	13:13	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-13-13-P01	1corintios-13-13-P01	μένει	μένει
+SR0323	323	1corintios	735	737	14:1	14:1	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-14-1-P01	1corintios-14-1-P03	διώκετε	προφητεύητε
+SR0324	324	1corintios	738	743	14:2	14:4	6	8	"{""stable"": 5, ""structural"": 1}"	"{""none"": 5, ""strong"": 1}"	1corintios-14-2-P01	1corintios-14-4-P02	λαλεῖ	οἰκοδομεῖ
+SR0325	325	1corintios	744	744	14:5	14:5	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-5-P01	1corintios-14-5-P01	θέλω	θέλω
+SR0326	326	1corintios	745	745	14:5	14:5	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-5-P02	1corintios-14-5-P02	προφητεύητε	προφητεύητε
+SR0327	327	1corintios	746	747	14:5	14:5	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-14-5-P03	1corintios-14-5-P04	διερμηνεύῃ	λάβῃ
+SR0328	328	1corintios	748	750	14:6	14:6	3	8	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3}"	1corintios-14-6-P01	1corintios-14-6-P03	ἔλθω	λαλήσω
+SR0329	329	1corintios	751	754	14:7	14:8	4	10	"{""structural"": 1, ""turbulence"": 3}"	"{""candidate"": 4}"	1corintios-14-7-P01	1corintios-14-8-P02	δῷ	παρασκευάσεται
+SR0330	330	1corintios	755	755	14:9	14:9	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-9-P01	1corintios-14-9-P01	δῶτε	δῶτε
+SR0331	331	1corintios	756	756	14:9	14:9	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-9-P02	1corintios-14-9-P02	γνωσθήσεται	γνωσθήσεται
+SR0332	332	1corintios	757	757	14:9	14:9	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-9-P03	1corintios-14-9-P03	ἔσεσθε	ἔσεσθε
+SR0333	333	1corintios	758	758	14:10	14:10	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-10-P01	1corintios-14-10-P01	τύχοι	τύχοι
+SR0334	334	1corintios	759	759	14:10	14:10	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-10-P02	1corintios-14-10-P02	εἰσιν	εἰσιν
+SR0335	335	1corintios	760	761	14:11	14:11	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-14-11-P01	1corintios-14-11-P02	εἰδῶ	ἔσομαι
+SR0336	336	1corintios	762	764	14:12	14:12	3	12	"{""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""strong"": 1}"	1corintios-14-12-P01	1corintios-14-12-P03	ἐστε	περισσεύητε
+SR0337	337	1corintios	765	766	14:13	14:13	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-14-13-P01	1corintios-14-13-P02	προσευχέσθω	διερμηνεύῃ
+SR0338	338	1corintios	767	767	14:14	14:14	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-14-P01	1corintios-14-14-P01	προσεύχωμαι	προσεύχωμαι
+SR0339	339	1corintios	768	770	14:14	14:15	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-14-14-P02	1corintios-14-15-P01	προσεύχεται	ἐστιν
+SR0340	340	1corintios	771	774	14:15	14:15	4	4	"{""stable"": 3, ""structural"": 1}"	"{""candidate"": 1, ""none"": 3}"	1corintios-14-15-P02	1corintios-14-15-P05	προσεύξομαι	ψαλῶ
+SR0341	341	1corintios	775	775	14:16	14:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-16-P01	1corintios-14-16-P01	εὐλογῇς	εὐλογῇς
+SR0342	342	1corintios	776	776	14:16	14:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-16-P02	1corintios-14-16-P02	ἐρεῖ	ἐρεῖ
+SR0343	343	1corintios	777	777	14:16	14:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-16-P03	1corintios-14-16-P03	λέγεις	λέγεις
+SR0344	344	1corintios	778	778	14:16	14:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-16-P04	1corintios-14-16-P04	οἶδεν	οἶδεν
+SR0345	345	1corintios	779	779	14:17	14:17	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-17-P01	1corintios-14-17-P01	εὐχαριστεῖς	εὐχαριστεῖς
+SR0346	346	1corintios	780	780	14:17	14:17	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-17-P02	1corintios-14-17-P02	οἰκοδομεῖται	οἰκοδομεῖται
+SR0347	347	1corintios	781	784	14:18	14:19	4	6	"{""stable"": 2, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 2}"	1corintios-14-18-P01	1corintios-14-19-P02	εὐχαριστῶ	κατηχήσω
+SR0348	348	1corintios	785	787	14:20	14:20	3	8	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-14-20-P01	1corintios-14-20-P03	γίνεσθε	γίνεσθε
+SR0349	349	1corintios	788	788	14:21	14:21	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-21-P01	1corintios-14-21-P01	γέγραπται	γέγραπται
+SR0350	350	1corintios	789	789	14:21	14:21	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-21-P02	1corintios-14-21-P02	λαλήσω	λαλήσω
+SR0351	351	1corintios	790	790	14:21	14:21	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-21-P03	1corintios-14-21-P03	εἰσακούσονταί	εἰσακούσονταί
+SR0352	352	1corintios	791	791	14:21	14:21	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-21-P04	1corintios-14-21-P04	λέγει	λέγει
+SR0353	353	1corintios	792	792	14:22	14:22	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-22-P01	1corintios-14-22-P01	εἰσιν	εἰσιν
+SR0354	354	1corintios	793	793	14:23	14:23	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-23-P01	1corintios-14-23-P01	συνέλθῃ	συνέλθῃ
+SR0355	355	1corintios	794	796	14:23	14:23	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-14-23-P02	1corintios-14-23-P04	λαλῶσιν	ἐροῦσιν
+SR0356	356	1corintios	797	797	14:23	14:23	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-23-P05	1corintios-14-23-P05	μαίνεσθε	μαίνεσθε
+SR0357	357	1corintios	798	798	14:24	14:24	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-24-P01	1corintios-14-24-P01	προφητεύωσιν	προφητεύωσιν
+SR0358	358	1corintios	799	805	14:24	14:26	7	10	"{""stable"": 4, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 4, ""strong"": 1}"	1corintios-14-24-P02	1corintios-14-26-P01	εἰσέλθῃ	ἐστιν
+SR0359	359	1corintios	806	806	14:26	14:26	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-26-P02	1corintios-14-26-P02	συνέρχησθε	συνέρχησθε
+SR0360	360	1corintios	807	817	14:26	14:28	11	12	"{""stable"": 8, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 8, ""strong"": 1}"	1corintios-14-26-P03	1corintios-14-28-P03	ἔχει	λαλείτω
+SR0361	361	1corintios	818	819	14:29	14:29	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-14-29-P01	1corintios-14-29-P02	λαλείτωσαν	διακρινέτωσαν
+SR0362	362	1corintios	820	821	14:30	14:30	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-14-30-P01	1corintios-14-30-P02	ἀποκαλυφθῇ	σιγάτω
+SR0363	363	1corintios	822	822	14:31	14:31	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-31-P01	1corintios-14-31-P01	δύνασθε	δύνασθε
+SR0364	364	1corintios	823	824	14:31	14:31	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-14-31-P02	1corintios-14-31-P03	μανθάνωσιν	παρακαλῶνται
+SR0365	365	1corintios	825	826	14:32	14:33	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-14-32-P01	1corintios-14-33-P01	ὑποτάσσεται	ἐστιν
+SR0366	366	1corintios	827	827	14:34	14:34	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-34-P01	1corintios-14-34-P01	σιγάτωσαν	σιγάτωσαν
+SR0367	367	1corintios	828	828	14:34	14:34	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-34-P02	1corintios-14-34-P02	ἐπιτρέπεται	ἐπιτρέπεται
+SR0368	368	1corintios	829	829	14:34	14:34	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-34-P03	1corintios-14-34-P03	ὑποτασσέσθωσαν	ὑποτασσέσθωσαν
+SR0369	369	1corintios	830	830	14:34	14:34	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-34-P04	1corintios-14-34-P04	λέγει	λέγει
+SR0370	370	1corintios	831	832	14:35	14:35	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-14-35-P01	1corintios-14-35-P02	θέλουσιν	ἐπερωτάτωσαν
+SR0371	371	1corintios	833	837	14:35	14:37	5	8	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 3, ""none"": 2}"	1corintios-14-35-P03	1corintios-14-37-P02	ἐστιν	ἐπιγινωσκέτω
+SR0372	372	1corintios	838	838	14:37	14:37	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-14-37-P03	1corintios-14-37-P03	γράφω	γράφω
+SR0373	373	1corintios	839	841	14:37	14:38	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-14-37-P04	1corintios-14-38-P02	ἐστίν	ἀγνοεῖται
+SR0374	374	1corintios	842	843	14:39	14:39	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-14-39-P01	1corintios-14-39-P02	ζηλοῦτε	κωλύετε
+SR0375	375	1corintios	844	844	14:40	14:40	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-14-40-P01	1corintios-14-40-P01	γινέσθω	γινέσθω
+SR0376	376	1corintios	845	846	15:1	15:1	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-1-P01	1corintios-15-1-P02	γνωρίζω	εὐηγγελισάμην
+SR0377	377	1corintios	847	849	15:1	15:2	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-15-1-P03	1corintios-15-2-P01	παρελάβετε	σῴζεσθε
+SR0378	378	1corintios	850	850	15:2	15:2	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-2-P02	1corintios-15-2-P02	εὐηγγελισάμην	εὐηγγελισάμην
+SR0379	379	1corintios	851	852	15:2	15:2	2	8	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-2-P03	1corintios-15-2-P04	κατέχετε	ἐπιστεύσατε
+SR0380	380	1corintios	853	854	15:3	15:3	2	8	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-3-P01	1corintios-15-3-P02	παρέδωκα	παρέλαβον
+SR0381	381	1corintios	855	859	15:3	15:6	5	8	"{""stable"": 3, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 3, ""strong"": 1}"	1corintios-15-3-P03	1corintios-15-6-P01	ἀπέθανεν	ὤφθη
+SR0382	382	1corintios	860	861	15:6	15:6	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-6-P02	1corintios-15-6-P03	μένουσιν	ἐκοιμήθησαν
+SR0383	383	1corintios	862	863	15:7	15:8	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-7-P01	1corintios-15-8-P01	ὤφθη	ὤφθη
+SR0384	384	1corintios	864	868	15:9	15:10	5	4	"{""stable"": 4, ""structural"": 1}"	"{""candidate"": 1, ""none"": 4}"	1corintios-15-9-P01	1corintios-15-10-P02	εἰμι	εἰμι
+SR0385	385	1corintios	869	869	15:10	15:10	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-10-P03	1corintios-15-10-P03	ἐγενήθη	ἐγενήθη
+SR0386	386	1corintios	870	870	15:10	15:10	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-10-P04	1corintios-15-10-P04	ἐκοπίασα	ἐκοπίασα
+SR0387	387	1corintios	871	871	15:11	15:11	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-11-P01	1corintios-15-11-P01	κηρύσσομεν	κηρύσσομεν
+SR0388	388	1corintios	872	872	15:11	15:11	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-11-P02	1corintios-15-11-P02	ἐπιστεύσατε	ἐπιστεύσατε
+SR0389	389	1corintios	873	874	15:12	15:12	2	8	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-12-P01	1corintios-15-12-P02	κηρύσσεται	ἐγήγερται
+SR0390	390	1corintios	875	875	15:12	15:12	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-12-P03	1corintios-15-12-P03	λέγουσιν	λέγουσιν
+SR0391	391	1corintios	876	879	15:12	15:14	4	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 1, ""strong"": 1}"	1corintios-15-12-P04	1corintios-15-14-P01	ἔστιν	ἐγήγερται
+SR0392	392	1corintios	880	881	15:15	15:15	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-15-15-P01	1corintios-15-15-P02	εὑρισκόμεθα	ἐμαρτυρήσαμεν
+SR0393	393	1corintios	882	883	15:15	15:15	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-15-15-P03	1corintios-15-15-P04	ἤγειρεν	ἤγειρεν
+SR0394	394	1corintios	884	885	15:15	15:16	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-15-15-P05	1corintios-15-16-P01	ἐγείρονται	ἐγείρονται
+SR0395	395	1corintios	886	887	15:16	15:17	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-15-16-P02	1corintios-15-17-P01	ἐγήγερται	ἐγήγερται
+SR0396	396	1corintios	888	888	15:17	15:17	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-17-P02	1corintios-15-17-P02	ἐστὲ	ἐστὲ
+SR0397	397	1corintios	889	889	15:18	15:18	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-18-P01	1corintios-15-18-P01	ἀπώλοντο	ἀπώλοντο
+SR0398	398	1corintios	890	891	15:19	15:19	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-15-19-P01	1corintios-15-19-P02	ἐσμὲν	ἐσμέν
+SR0399	399	1corintios	892	892	15:20	15:20	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-20-P01	1corintios-15-20-P01	ἐγήγερται	ἐγήγερται
+SR0400	400	1corintios	893	894	15:22	15:22	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-22-P01	1corintios-15-22-P02	ἀποθνῄσκουσιν	ζῳοποιηθήσονται
+SR0401	401	1corintios	895	905	15:24	15:28	11	14	"{""stable"": 6, ""structural"": 1, ""turbulence"": 4}"	"{""candidate"": 4, ""none"": 6, ""strong"": 1}"	1corintios-15-24-P01	1corintios-15-28-P03	παραδιδῷ	ᾖ
+SR0402	402	1corintios	906	908	15:29	15:29	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-15-29-P01	1corintios-15-29-P03	ποιήσουσιν	βαπτίζονται
+SR0403	403	1corintios	909	909	15:30	15:30	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-30-P01	1corintios-15-30-P01	κινδυνεύομεν	κινδυνεύομεν
+SR0404	404	1corintios	910	912	15:31	15:32	3	6	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2, ""none"": 1}"	1corintios-15-31-P01	1corintios-15-32-P01	ἀποθνῄσκω	ἐθηριομάχησα
+SR0405	405	1corintios	913	913	15:32	15:32	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-32-P02	1corintios-15-32-P02	ἐγείρονται	ἐγείρονται
+SR0406	406	1corintios	914	916	15:32	15:32	3	6	"{""stable"": 2, ""structural"": 1}"	"{""none"": 2, ""strong"": 1}"	1corintios-15-32-P03	1corintios-15-32-P05	φάγωμεν	ἀποθνῄσκομεν
+SR0407	407	1corintios	917	917	15:33	15:33	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-33-P01	1corintios-15-33-P01	πλανᾶσθε	πλανᾶσθε
+SR0408	408	1corintios	918	918	15:33	15:33	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-33-P02	1corintios-15-33-P02	φθείρουσιν	φθείρουσιν
+SR0409	409	1corintios	919	920	15:34	15:34	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-34-P01	1corintios-15-34-P02	ἐκνήψατε	ἁμαρτάνετε
+SR0410	410	1corintios	921	921	15:34	15:34	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-34-P03	1corintios-15-34-P03	ἔχουσιν	ἔχουσιν
+SR0411	411	1corintios	922	922	15:34	15:34	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-34-P04	1corintios-15-34-P04	λαλῶ	λαλῶ
+SR0412	412	1corintios	923	923	15:35	15:35	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-35-P01	1corintios-15-35-P01	ἐρεῖ	ἐρεῖ
+SR0413	413	1corintios	924	925	15:35	15:35	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-35-P02	1corintios-15-35-P03	ἐγείρονται	ἔρχονται
+SR0414	414	1corintios	926	926	15:36	15:36	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-36-P01	1corintios-15-36-P01	σπείρεις	σπείρεις
+SR0415	415	1corintios	927	928	15:36	15:36	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-15-36-P02	1corintios-15-36-P03	ζῳοποιεῖται	ἀποθάνῃ
+SR0416	416	1corintios	929	930	15:37	15:37	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-15-37-P01	1corintios-15-37-P02	σπείρεις	σπείρεις
+SR0417	417	1corintios	931	946	15:37	15:45	16	16	"{""stable"": 10, ""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 5, ""none"": 10, ""strong"": 1}"	1corintios-15-37-P03	1corintios-15-45-P02	τύχοι	ἐγένετο
+SR0418	418	1corintios	947	948	15:49	15:49	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-15-49-P01	1corintios-15-49-P02	ἐφορέσαμεν	φορέσομεν
+SR0419	419	1corintios	949	949	15:50	15:50	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-50-P01	1corintios-15-50-P01	φημι	φημι
+SR0420	420	1corintios	950	951	15:50	15:50	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-15-50-P02	1corintios-15-50-P03	δύναται	κληρονομεῖ
+SR0421	421	1corintios	952	952	15:51	15:51	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-51-P01	1corintios-15-51-P01	λέγω	λέγω
+SR0422	422	1corintios	953	954	15:51	15:51	2	4	"{""stable"": 1, ""structural"": 1}"	"{""candidate"": 1, ""none"": 1}"	1corintios-15-51-P02	1corintios-15-51-P03	κοιμηθησόμεθα	ἀλλαγησόμεθα
+SR0423	423	1corintios	955	955	15:52	15:52	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-52-P01	1corintios-15-52-P01	σαλπίσει	σαλπίσει
+SR0424	424	1corintios	956	956	15:52	15:52	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-52-P02	1corintios-15-52-P02	ἐγερθήσονται	ἐγερθήσονται
+SR0425	425	1corintios	957	957	15:52	15:52	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-15-52-P03	1corintios-15-52-P03	ἀλλαγησόμεθα	ἀλλαγησόμεθα
+SR0426	426	1corintios	958	962	15:53	15:54	5	10	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2, ""strong"": 1}"	1corintios-15-53-P01	1corintios-15-54-P04	δεῖ	κατεπόθη
+SR0427	427	1corintios	963	963	15:58	15:58	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-58-P01	1corintios-15-58-P01	γίνεσθε	γίνεσθε
+SR0428	428	1corintios	964	964	15:58	15:58	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-15-58-P02	1corintios-15-58-P02	ἔστιν	ἔστιν
+SR0429	429	1corintios	965	965	16:1	16:1	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-1-P01	1corintios-16-1-P01	διέταξα	διέταξα
+SR0430	430	1corintios	966	966	16:1	16:1	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-1-P02	1corintios-16-1-P02	ποιήσατε	ποιήσατε
+SR0431	431	1corintios	967	968	16:2	16:2	2	8	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-16-2-P01	1corintios-16-2-P02	τιθέτω	εὐοδῶται
+SR0432	432	1corintios	969	969	16:2	16:2	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-2-P03	1corintios-16-2-P03	ἔλθω	ἔλθω
+SR0433	433	1corintios	970	970	16:2	16:2	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-2-P04	1corintios-16-2-P04	γίνωνται	γίνωνται
+SR0434	434	1corintios	971	971	16:3	16:3	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-3-P01	1corintios-16-3-P01	παραγένωμαι	παραγένωμαι
+SR0435	435	1corintios	972	972	16:3	16:3	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-3-P02	1corintios-16-3-P02	δοκιμάσητε	δοκιμάσητε
+SR0436	436	1corintios	973	973	16:3	16:3	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-3-P03	1corintios-16-3-P03	πέμψω	πέμψω
+SR0437	437	1corintios	974	974	16:4	16:4	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-4-P01	1corintios-16-4-P01	ᾖ	ᾖ
+SR0438	438	1corintios	975	975	16:4	16:4	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-4-P02	1corintios-16-4-P02	πορεύσονται	πορεύσονται
+SR0439	439	1corintios	976	980	16:5	16:6	5	10	"{""stable"": 2, ""structural"": 1, ""turbulence"": 2}"	"{""candidate"": 2, ""none"": 2, ""strong"": 1}"	1corintios-16-5-P01	1corintios-16-6-P02	ἐλεύσομαι	παραχειμάσω
+SR0440	440	1corintios	981	981	16:6	16:6	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-6-P03	1corintios-16-6-P03	προπέμψητε	προπέμψητε
+SR0441	441	1corintios	982	984	16:6	16:7	3	8	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-16-6-P04	1corintios-16-7-P02	πορεύωμαι	ἐλπίζω
+SR0442	442	1corintios	985	985	16:7	16:7	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-7-P03	1corintios-16-7-P03	ἐπιτρέψῃ	ἐπιτρέψῃ
+SR0443	443	1corintios	986	986	16:8	16:8	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-8-P01	1corintios-16-8-P01	ἐπιμενῶ	ἐπιμενῶ
+SR0444	444	1corintios	987	988	16:9	16:10	2	6	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 2}"	1corintios-16-9-P01	1corintios-16-10-P01	ἀνέῳγεν	ἔλθῃ
+SR0445	445	1corintios	989	989	16:10	16:10	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-10-P02	1corintios-16-10-P02	βλέπετε	βλέπετε
+SR0446	446	1corintios	990	992	16:10	16:11	3	10	"{""stable"": 1, ""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""none"": 1, ""strong"": 1}"	1corintios-16-10-P03	1corintios-16-11-P01	γένηται	ἐξουθενήσῃ
+SR0447	447	1corintios	993	993	16:11	16:11	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-11-P02	1corintios-16-11-P02	προπέμψατε	προπέμψατε
+SR0448	448	1corintios	994	994	16:11	16:11	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-11-P03	1corintios-16-11-P03	ἔλθῃ	ἔλθῃ
+SR0449	449	1corintios	995	996	16:11	16:12	2	6	"{""stable"": 1, ""structural"": 1}"	"{""none"": 1, ""strong"": 1}"	1corintios-16-11-P04	1corintios-16-12-P01	ἐκδέχομαι	παρεκάλεσα
+SR0450	450	1corintios	997	1002	16:12	16:14	6	16	"{""structural"": 1, ""turbulence"": 5}"	"{""candidate"": 5, ""strong"": 1}"	1corintios-16-12-P02	1corintios-16-14-P01	ἔλθῃ	γινέσθω
+SR0451	451	1corintios	1003	1003	16:15	16:15	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-15-P01	1corintios-16-15-P01	παρακαλῶ	παρακαλῶ
+SR0452	452	1corintios	1004	1004	16:15	16:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-15-P02	1corintios-16-15-P02	οἴδατε	οἴδατε
+SR0453	453	1corintios	1005	1005	16:15	16:15	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-15-P03	1corintios-16-15-P03	ἐστὶν	ἐστὶν
+SR0454	454	1corintios	1006	1006	16:15	16:15	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-15-P04	1corintios-16-15-P04	ἔταξαν	ἔταξαν
+SR0455	455	1corintios	1007	1007	16:16	16:16	1	6	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-16-P01	1corintios-16-16-P01	ὑποτάσσησθε	ὑποτάσσησθε
+SR0456	456	1corintios	1008	1008	16:17	16:17	1	8	"{""structural"": 1}"	"{""strong"": 1}"	1corintios-16-17-P01	1corintios-16-17-P01	χαίρω	χαίρω
+SR0457	457	1corintios	1009	1010	16:17	16:18	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-16-17-P02	1corintios-16-18-P01	ἀνεπλήρωσαν	ἀνέπαυσαν
+SR0458	458	1corintios	1011	1011	16:18	16:18	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-18-P02	1corintios-16-18-P02	ἐπιγινώσκετε	ἐπιγινώσκετε
+SR0459	459	1corintios	1012	1012	16:19	16:19	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-19-P01	1corintios-16-19-P01	ἀσπάζονται	ἀσπάζονται
+SR0460	460	1corintios	1013	1013	16:19	16:19	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-19-P02	1corintios-16-19-P02	ἀσπάζεται	ἀσπάζεται
+SR0461	461	1corintios	1014	1014	16:20	16:20	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-20-P01	1corintios-16-20-P01	ἀσπάζονται	ἀσπάζονται
+SR0462	462	1corintios	1015	1015	16:20	16:20	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-20-P02	1corintios-16-20-P02	ἀσπάσασθε	ἀσπάσασθε
+SR0463	463	1corintios	1016	1017	16:22	16:22	2	10	"{""structural"": 1, ""turbulence"": 1}"	"{""candidate"": 1, ""strong"": 1}"	1corintios-16-22-P01	1corintios-16-22-P02	φιλεῖ	ἤτω
+SR0464	464	1corintios	1018	1018	16:22	16:22	1	4	"{""structural"": 1}"	"{""candidate"": 1}"	1corintios-16-22-P03	1corintios-16-22-P03	θά	θά
