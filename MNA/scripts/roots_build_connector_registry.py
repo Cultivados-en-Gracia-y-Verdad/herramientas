@@ -9,55 +9,86 @@ Purpose:
 - keep connectors subordinate to already-established clause structure
 - support later Paso 9 label evidence without assigning labels here
 
-Inputs:
-- MNA/data/predications/<book>-predications.jsonl
-- MNA/data/independent-stream/<book>-independent-stream.jsonl
-
-Outputs:
-- MNA/data/connectors/<book>-connector-registry.jsonl
-- MNA/data/connectors/<book>-connector-registry.tsv
-- MNA/data/connectors/<book>-connector-summary.tsv
-
-Strict prohibitions:
-- no semantic interpretation
-- no theology
-- no macro-structure inference
-- no sectioning
-- no Paso 9 label assignment
-- no [M] assignment
-
 This layer records ONLY local observable connector evidence.
 """
 
 import csv
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
 from typing import Any
 
-# Conservative initial connector map.
-# This is intentionally small and provisional.
 CONNECTOR_MAP = {
     "καί": ("coordinating", "coordination"),
+    "και": ("coordinating", "coordination"),
     "δέ": ("coordinating", "coordination"),
+    "δε": ("coordinating", "coordination"),
     "ἀλλά": ("adversative", "coordination"),
+    "αλλα": ("adversative", "coordination"),
     "οὐδέ": ("coordinating", "coordination"),
+    "ουδε": ("coordinating", "coordination"),
     "μηδέ": ("coordinating", "coordination"),
+    "μηδε": ("coordinating", "coordination"),
     "ἤ": ("coordinating", "coordination"),
+    "η": ("coordinating", "coordination"),
     "γάρ": ("explanatory", "support"),
+    "γαρ": ("explanatory", "support"),
     "ὅτι": ("explanatory", "subordination"),
+    "οτι": ("explanatory", "subordination"),
     "διό": ("inferential", "result"),
+    "διο": ("inferential", "result"),
     "διότι": ("explanatory", "support"),
+    "διοτι": ("explanatory", "support"),
     "ὥστε": ("inferential", "result"),
+    "ωστε": ("inferential", "result"),
     "οὖν": ("inferential", "result"),
+    "ουν": ("inferential", "result"),
     "ἵνα": ("purpose", "subordination"),
+    "ινα": ("purpose", "subordination"),
     "εἰ": ("conditional", "subordination"),
+    "ει": ("conditional", "subordination"),
     "ἐάν": ("conditional", "subordination"),
+    "εαν": ("conditional", "subordination"),
     "ὅταν": ("temporal", "subordination"),
+    "οταν": ("temporal", "subordination"),
     "ὡς": ("comparative", "subordination"),
+    "ως": ("comparative", "subordination"),
     "καθώς": ("comparative", "subordination"),
+    "καθως": ("comparative", "subordination"),
 }
+
+TEXT_FIELDS = [
+    "greek",
+    "greek_text",
+    "clause_greek",
+    "text_greek",
+    "surface",
+    "clause_text",
+    "sentence_greek",
+    "finite_clause_greek",
+    "context_greek",
+    "raw_greek",
+    "sblgnt",
+]
+
+TOKEN_ARRAY_FIELDS = [
+    "tokens",
+    "greek_tokens",
+    "g_tokens",
+    "clause_tokens",
+    "source_tokens",
+]
+
+TOKEN_DICT_FIELDS = [
+    "text",
+    "surface",
+    "greek",
+    "token",
+    "word",
+    "form",
+]
 
 
 def mna_root() -> Path:
@@ -67,7 +98,6 @@ def mna_root() -> Path:
 def read_jsonl(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         raise FileNotFoundError(path)
-
     rows: list[dict[str, Any]] = []
     with path.open("r", encoding="utf-8") as f:
         for lineno, line in enumerate(f, start=1):
@@ -82,45 +112,47 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
 
 
 def ordered(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    return sorted(rows, key=lambda row: int(row.get("stream_index") or row.get("predication_index") or 0))
+    return sorted(rows, key=lambda row: int(row.get("stream_index") or row.get("predication_index") or row.get("id") or 0))
 
 
 def normalize_token(value: Any) -> str:
-    return str(value or "").strip().strip(",.;··—–“”‘’()[]{}«»").lower()
+    text = str(value or "").strip().lower()
+    text = re.sub(r"^[\s\W_]+|[\s\W_]+$", "", text, flags=re.UNICODE)
+    return text
+
+
+def collect_strings(value: Any) -> list[str]:
+    strings: list[str] = []
+    if isinstance(value, str):
+        strings.append(value)
+    elif isinstance(value, list):
+        for item in value:
+            strings.extend(collect_strings(item))
+    elif isinstance(value, dict):
+        for key in TOKEN_DICT_FIELDS:
+            if key in value:
+                strings.extend(collect_strings(value[key]))
+    return strings
 
 
 def token_candidates(row: dict[str, Any]) -> list[str]:
-    """Extract possible Greek surface tokens from common row shapes.
-
-    This stays permissive because upstream predication formats have evolved.
-    It does not interpret; it only searches available Greek strings.
-    """
-    fields = [
-        "greek",
-        "greek_text",
-        "clause_greek",
-        "text_greek",
-        "surface",
-        "clause_text",
-    ]
-
     tokens: list[str] = []
-    for field in fields:
+
+    for field in TEXT_FIELDS:
         value = row.get(field)
         if isinstance(value, str):
             tokens.extend(value.split())
 
-    # Some records store token arrays.
-    for field in ["tokens", "greek_tokens"]:
+    for field in TOKEN_ARRAY_FIELDS:
         value = row.get(field)
-        if isinstance(value, list):
-            for item in value:
-                if isinstance(item, str):
-                    tokens.append(item)
-                elif isinstance(item, dict):
-                    token = item.get("text") or item.get("surface") or item.get("greek")
-                    if token:
-                        tokens.append(str(token))
+        for string in collect_strings(value):
+            tokens.extend(string.split())
+
+    # Last-resort nested scan, restricted to Greek-looking strings.
+    for value in row.values():
+        for string in collect_strings(value):
+            if re.search(r"[α-ωΑ-Ω]", string):
+                tokens.extend(string.split())
 
     return tokens
 
@@ -135,9 +167,9 @@ def find_connectors(row: dict[str, Any]) -> list[str]:
 
 
 def link_direction(connector: str) -> str:
-    if connector in {"γάρ", "διό", "διότι", "οὖν", "ὥστε"}:
+    if connector in {"γάρ", "γαρ", "διό", "διο", "διότι", "διοτι", "οὖν", "ουν", "ὥστε", "ωστε"}:
         return "backward_local"
-    if connector in {"ἵνα", "εἰ", "ἐάν", "ὅταν", "ὡς", "καθώς", "ὅτι"}:
+    if connector in {"ἵνα", "ινα", "εἰ", "ει", "ἐάν", "εαν", "ὅταν", "οταν", "ὡς", "ως", "καθώς", "καθως", "ὅτι", "οτι"}:
         return "forward_or_embedded_local"
     return "parallel_local"
 
@@ -148,25 +180,14 @@ def build_registry(predications: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
     for idx, row in enumerate(rows):
         connectors = find_connectors(row)
-        if not connectors:
-            continue
-
         previous_row = rows[idx - 1] if idx > 0 else None
         next_row = rows[idx + 1] if idx + 1 < len(rows) else None
 
         for occurrence_index, connector in enumerate(connectors, start=1):
             connector_class, dependency_type = CONNECTOR_MAP[connector]
             direction = link_direction(connector)
-
-            if direction == "backward_local":
-                source = previous_row
-                target = row
-            elif direction == "parallel_local":
-                source = previous_row
-                target = row
-            else:
-                source = row
-                target = next_row
+            source = previous_row if direction in {"backward_local", "parallel_local"} else row
+            target = row if direction in {"backward_local", "parallel_local"} else next_row
 
             registry.append({
                 "connector_registry_id": f"CN{len(registry)+1:05d}",
@@ -201,16 +222,26 @@ def build_summary(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         "dependency_type": Counter(str(row.get("dependency_type")) for row in rows),
         "direction": Counter(str(row.get("direction")) for row in rows),
     }
-
     summary: list[dict[str, Any]] = []
     for summary_type, counter in counters.items():
         for name, count in sorted(counter.items()):
-            summary.append({
-                "summary_type": summary_type,
-                "name": name,
-                "count": count,
-            })
+            summary.append({"summary_type": summary_type, "name": name, "count": count})
     return summary
+
+
+def build_diagnostics(rows: list[dict[str, Any]], in_path: Path) -> list[dict[str, Any]]:
+    diagnostics: list[dict[str, Any]] = []
+    for idx, row in enumerate(rows[:10], start=1):
+        keys = sorted(str(k) for k in row.keys())
+        sample_tokens = token_candidates(row)[:25]
+        diagnostics.append({
+            "input_path": str(in_path),
+            "sample_row": idx,
+            "keys": json.dumps(keys, ensure_ascii=False),
+            "sample_tokens": json.dumps(sample_tokens, ensure_ascii=False),
+            "connector_hits": json.dumps(find_connectors(row), ensure_ascii=False),
+        })
+    return diagnostics
 
 
 def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
@@ -221,9 +252,10 @@ def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
 
 
 def write_tsv(path: Path, rows: list[dict[str, Any]]) -> None:
-    if not rows:
-        return
     path.parent.mkdir(parents=True, exist_ok=True)
+    if not rows:
+        path.write_text("", encoding="utf-8")
+        return
     with path.open("w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()), delimiter="\t")
         writer.writeheader()
@@ -243,22 +275,25 @@ def find_input_path(book: str) -> Path:
     raise FileNotFoundError("No connector input found. Tried:\n" + "\n".join(str(p) for p in candidates))
 
 
-def process_book(book: str) -> tuple[int, Path, Path, Path, Path]:
+def process_book(book: str) -> tuple[int, Path, Path, Path, Path, Path]:
     in_path = find_input_path(book)
     rows = read_jsonl(in_path)
     registry = build_registry(rows)
     summary = build_summary(registry)
+    diagnostics = build_diagnostics(rows, in_path) if not registry else []
 
     out_dir = mna_root() / "data" / "connectors"
     jsonl_out = out_dir / f"{book}-connector-registry.jsonl"
     tsv_out = out_dir / f"{book}-connector-registry.tsv"
     summary_out = out_dir / f"{book}-connector-summary.tsv"
+    diagnostics_out = out_dir / f"{book}-connector-diagnostics.tsv"
 
     write_jsonl(jsonl_out, registry)
     write_tsv(tsv_out, registry)
     write_tsv(summary_out, summary)
+    write_tsv(diagnostics_out, diagnostics)
 
-    return len(registry), in_path, jsonl_out, tsv_out, summary_out
+    return len(registry), in_path, jsonl_out, tsv_out, summary_out, diagnostics_out
 
 
 def main() -> None:
@@ -267,13 +302,16 @@ def main() -> None:
         sys.exit(2)
 
     book = sys.argv[1].lower()
-    count, in_path, jsonl_out, tsv_out, summary_out = process_book(book)
+    count, in_path, jsonl_out, tsv_out, summary_out, diagnostics_out = process_book(book)
 
     print(f"read: {in_path}")
     print(f"connector_occurrences = {count}")
     print(f"wrote: {jsonl_out}")
     print(f"wrote: {tsv_out}")
     print(f"wrote: {summary_out}")
+    if count == 0:
+        print(f"wrote diagnostics: {diagnostics_out}")
+        print("No connectors found. Inspect diagnostics to see the actual upstream row fields/tokens.")
 
 
 if __name__ == "__main__":
