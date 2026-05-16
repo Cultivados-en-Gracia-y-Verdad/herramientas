@@ -4,7 +4,7 @@ MNA Stage 4 — independent clause candidate builder.
 
 PURPOSE
 - Read Stage 4 predicate-completeness rows.
-- Read dependency-candidate audit datasets.
+- Read approved dependency-candidate audit datasets.
 - Mechanically mark anchors as independent-clause candidates or not.
 
 IMPORTANT
@@ -14,10 +14,15 @@ This script does NOT create connector relationships, labels, units, or titles.
 
 It only creates a mechanical Stage 4 candidate layer:
 
-- NO: grammar-based dependency candidate found in approved audit source.
+- NO: grammar-based dependency candidate found in an approved audit source.
 - UNRESOLVED_CANDIDATE: no approved dependency candidate found yet.
 
 This is intentionally conservative.
+
+QUARANTINE NOTE
+The broad subordinator detector is intentionally excluded from this official builder
+because audit review showed it mixes true dependency with possible independent
+matrix clauses. It remains audit-only until split into narrower hard-rule detectors.
 """
 
 from __future__ import annotations
@@ -29,23 +34,26 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-independent-clause-candidates-v3"
+VERSION = "stage4-independent-clause-candidates-v4-quarantine-broad-subordinator"
 
 NO_STATUS = "NO"
 UNRESOLVED_STATUS = "UNRESOLVED_CANDIDATE"
 
-AUDIT_DATASETS = {
+APPROVED_AUDIT_DATASETS = {
     "absolute-dependency-candidates": (
         "audits/stage4/absolute-dependency-candidates/{book}.jsonl"
     ),
     "relative-dependency-candidates": (
         "audits/stage4/relative-dependency-candidates/{book}.jsonl"
     ),
-    "subordinator-dependency-candidates": (
-        "audits/stage4/subordinator-dependency-candidates/{book}.jsonl"
-    ),
     "content-clause-dependency-candidates": (
         "audits/stage4/content-clause-dependency-candidates/{book}.jsonl"
+    ),
+}
+
+QUARANTINED_AUDIT_DATASETS = {
+    "subordinator-dependency-candidates": (
+        "audits/stage4/subordinator-dependency-candidates/{book}.jsonl"
     ),
 }
 
@@ -86,7 +94,7 @@ def load_jsonl(path: Path) -> tuple[dict[str, object], list[dict[str, object]]]:
 def collect_dependency_candidate_sources(root: Path, book: str) -> dict[str, set[str]]:
     anchor_sources: dict[str, set[str]] = defaultdict(set)
 
-    for source_name, relative_template in AUDIT_DATASETS.items():
+    for source_name, relative_template in APPROVED_AUDIT_DATASETS.items():
         path = root / relative_template.format(book=book)
         if not path.is_file():
             continue
@@ -101,14 +109,23 @@ def collect_dependency_candidate_sources(root: Path, book: str) -> dict[str, set
     return anchor_sources
 
 
+def present_quarantined_sources(root: Path, book: str) -> list[str]:
+    present = []
+    for source_name, relative_template in QUARANTINED_AUDIT_DATASETS.items():
+        path = root / relative_template.format(book=book)
+        if path.is_file():
+            present.append(source_name)
+    return present
+
+
 def build_candidate_row(
     row: dict[str, object],
     dependency_sources: set[str],
 ) -> dict[str, object]:
     if dependency_sources:
         status = NO_STATUS
-        reason = "Grammar-based dependency candidate found in Stage 4 audit source."
-        evidence_status = "dependency_candidate_detected"
+        reason = "Grammar-based dependency candidate found in approved Stage 4 audit source."
+        evidence_status = "approved_dependency_candidate_detected"
     else:
         status = UNRESOLVED_STATUS
         reason = "No approved grammar-based dependency candidate detected yet."
@@ -156,6 +173,7 @@ def build_dataset(book: str, root: Path) -> tuple[dict[str, object], list[dict[s
         )
 
     dependency_candidate_sources = collect_dependency_candidate_sources(root, book)
+    quarantined_present = present_quarantined_sources(root, book)
 
     rows = []
     no_count = 0
@@ -182,11 +200,12 @@ def build_dataset(book: str, root: Path) -> tuple[dict[str, object], list[dict[s
         "version": VERSION,
         "book": book,
         "source_dataset": str(completeness_path.relative_to(root)),
-        "audit_sources_used": sorted(AUDIT_DATASETS.keys()),
+        "approved_audit_sources_used": sorted(APPROVED_AUDIT_DATASETS.keys()),
+        "quarantined_audit_sources_present_but_excluded": sorted(quarantined_present),
         "rows": len(rows),
         "independent_clause_candidate_NO": no_count,
         "independent_clause_candidate_UNRESOLVED": unresolved_count,
-        "rule": "NO only when a grammar-based dependency candidate exists in an approved Stage 4 audit dataset; otherwise UNRESOLVED_CANDIDATE.",
+        "rule": "NO only when a grammar-based dependency candidate exists in an approved Stage 4 audit dataset; otherwise UNRESOLVED_CANDIDATE. Quarantined audit datasets are ignored for official classification.",
         "trunk_claim": "NONE",
         "subject_marker_claim": "NONE",
         "movement_marker_claim": "NONE",
@@ -213,6 +232,8 @@ def print_visible_output(book: str, root: Path, metadata: dict[str, object], row
     print(f"ROWS: {metadata['rows']}")
     print(f"NO: {metadata['independent_clause_candidate_NO']}")
     print(f"UNRESOLVED_CANDIDATE: {metadata['independent_clause_candidate_UNRESOLVED']}")
+    print(f"APPROVED_AUDIT_SOURCES_USED: {','.join(metadata['approved_audit_sources_used'])}")
+    print(f"QUARANTINED_AUDIT_SOURCES_EXCLUDED: {','.join(metadata['quarantined_audit_sources_present_but_excluded']) or '-'}")
     print("TRUNK_CLAIM: NONE")
     print()
     print("VISIBLE OUTPUT PREVIEW:")
