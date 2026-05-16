@@ -1,0 +1,248 @@
+#!/usr/bin/env python3
+"""
+MNA Stage 3 — trunk + [S] + [M].
+
+PURPOSE
+- Read verified Stage 2A predicate anchors.
+- Produce an ordered trunk skeleton.
+- Add mechanical [S] subject-signature markers.
+- Add mechanical [M] movement-signature markers.
+
+ABSOLUTE LIMITS
+This script does NOT determine:
+- connectors,
+- labels,
+- patterns,
+- units,
+- titles,
+- semantic subjects,
+- semantic movements,
+- predicate spans,
+- clause structures,
+- theology.
+
+MECHANICAL RULES
+[S] = person/number signature changed.
+[M] = mood signature changed.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+from typing import Optional
+
+VERSION = "stage3-trunk-subject-movement-v1"
+
+
+def mna_root_from_script() -> Path:
+    return Path(__file__).resolve().parents[2]
+
+
+def load_anchor_dataset(path: Path) -> tuple[dict[str, object], list[dict[str, object]]]:
+    if not path.is_file():
+        raise FileNotFoundError(f"Predicate-anchor dataset not found: {path}")
+
+    metadata = None
+    anchors = []
+
+    with path.open("r", encoding="utf-8") as handle:
+        for line_number, raw in enumerate(handle, start=1):
+            stripped = raw.strip()
+            if not stripped:
+                continue
+
+            try:
+                obj = json.loads(stripped)
+            except json.JSONDecodeError as exc:
+                raise ValueError(f"Invalid JSON at {path}:{line_number}: {exc}") from exc
+
+            record_type = obj.get("record_type")
+
+            if record_type == "metadata":
+                if metadata is not None:
+                    raise ValueError("Multiple metadata rows found in anchor dataset.")
+                metadata = obj
+            elif record_type == "predicate_anchor":
+                anchors.append(obj)
+            else:
+                raise ValueError(f"Unexpected record_type at line {line_number}: {record_type}")
+
+    if metadata is None:
+        raise ValueError("Anchor dataset missing metadata row.")
+
+    expected = int(metadata.get("predicate_anchors_created", -1))
+    if expected != len(anchors):
+        raise ValueError(
+            f"Predicate-anchor count mismatch: metadata={expected}, records={len(anchors)}"
+        )
+
+    return metadata, anchors
+
+
+def subject_signature(anchor: dict[str, object]) -> str:
+    return f"{anchor['person_code']}{anchor['number_code']}"
+
+
+def movement_signature(anchor: dict[str, object]) -> str:
+    return str(anchor["mood"])
+
+
+
+def build_trunk_row(anchor: dict[str, object], anchor_order: int, previous_row: Optional[dict[str, object]]) -> dict[str, object]:
+    current_subject = subject_signature(anchor)
+    current_movement = movement_signature(anchor)
+
+    previous_subject = None
+    previous_movement = None
+
+    s_marker = ""
+    m_marker = ""
+
+    if previous_row is not None:
+        previous_subject = previous_row["subject_signature"]
+        previous_movement = previous_row["movement_signature"]
+
+        if current_subject != previous_subject:
+            s_marker = "[S]"
+
+        if current_movement != previous_movement:
+            m_marker = "[M]"
+
+    return {
+        "record_type": "trunk_row",
+        "predicate_anchor_id": anchor["predicate_anchor_id"],
+        "book": anchor["book"],
+        "chapter": anchor["chapter"],
+        "verse": anchor["verse"],
+        "reference": anchor["reference"],
+        "anchor_order": anchor_order,
+        "greek_surface": anchor["greek_surface"],
+        "greek_clean": anchor["greek_clean"],
+        "lemma": anchor["lemma"],
+        "morphology": anchor["morphology"],
+        "mood": anchor["mood"],
+        "person": anchor["person"],
+        "number": anchor["number"],
+        "subject_signature": current_subject,
+        "previous_subject_signature": previous_subject,
+        "subject_change_marker": s_marker,
+        "movement_signature": current_movement,
+        "previous_movement_signature": previous_movement,
+        "movement_marker": m_marker,
+        "trunk_status": "anchor_skeleton",
+        "connector_data": "NONE",
+        "label_data": "NONE",
+        "unit_data": "NONE",
+        "title_data": "NONE",
+    }
+
+
+
+def build_trunk(book: str, input_path: Path, output_path: Path, mna_root: Path) -> tuple[dict[str, object], list[dict[str, object]]]:
+    anchor_metadata, anchors = load_anchor_dataset(input_path)
+
+    if str(anchor_metadata.get("book")) != book:
+        raise ValueError(
+            f"Requested book '{book}' but anchor dataset is '{anchor_metadata.get('book')}'."
+        )
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    trunk_rows = []
+    previous_row = None
+
+    for idx, anchor in enumerate(anchors, start=1):
+        row = build_trunk_row(anchor, idx, previous_row)
+        trunk_rows.append(row)
+        previous_row = row
+
+    metadata = {
+        "record_type": "metadata",
+        "stage": "Stage 3 — Trunk + [S] + [M]",
+        "producer_script": "scripts/stage3/build_trunk_subject_movement.py",
+        "producer_command": f"python3 scripts/stage3/build_trunk_subject_movement.py {book}",
+        "generated_at": "DETERMINISTIC-NOT-RUNTIME-STAMPED",
+        "version": VERSION,
+        "book": book,
+        "predicate_anchor_dataset": str(input_path.relative_to(mna_root)),
+        "predicate_anchors": len(anchors),
+        "trunk_rows": len(trunk_rows),
+        "subject_signature_rule": "person_code + number_code",
+        "movement_signature_rule": "mood",
+        "connector_usage": "NONE",
+        "label_usage": "NONE",
+        "unit_usage": "NONE",
+        "title_usage": "NONE",
+    }
+
+    with output_path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(metadata, ensure_ascii=False, sort_keys=True) + "\n")
+        for row in trunk_rows:
+            handle.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
+
+    return metadata, trunk_rows
+
+
+
+def print_visible_output(book: str, input_path: Path, output_path: Path, metadata: dict[str, object], rows: list[dict[str, object]], preview_lines: int) -> None:
+    print("MNA Stage 3 — Trunk + [S] + [M]")
+    print(f"BOOK: {book}")
+    print(f"INPUT: {input_path}")
+    print(f"OUTPUT: {output_path}")
+    print(f"PREDICATE_ANCHORS: {metadata['predicate_anchors']}")
+    print(f"TRUNK_ROWS: {metadata['trunk_rows']}")
+    print()
+    print("VISIBLE OUTPUT PREVIEW:")
+
+    for idx, row in enumerate(rows[:preview_lines], start=1):
+        markers = " ".join(x for x in [row['subject_change_marker'], row['movement_marker']] if x)
+        if not markers:
+            markers = "-"
+
+        print(
+            f"{idx:>4}. {row['predicate_anchor_id']} | {row['reference']} | "
+            f"{row['greek_surface']} | subj={row['subject_signature']} | "
+            f"move={row['movement_signature']} | {markers}"
+        )
+
+    remaining = len(rows) - min(len(rows), preview_lines)
+    if remaining:
+        print(f"... {remaining} more trunk rows written to dataset")
+
+
+
+def main(argv: Optional[list[str]] = None) -> int:
+    parser = argparse.ArgumentParser(description="Build MNA Stage 3 trunk skeleton with [S] and [M] markers.")
+    parser.add_argument("book", help="Book slug, e.g. 1corintios")
+    parser.add_argument("--input", help="Explicit predicate-anchor JSONL path")
+    parser.add_argument("--output", help="Explicit trunk JSONL path")
+    parser.add_argument("--preview-lines", type=int, default=40)
+    args = parser.parse_args(argv)
+
+    book = args.book.strip().lower()
+    mna_root = mna_root_from_script()
+
+    try:
+        input_path = Path(args.input) if args.input else mna_root / "datasets" / "predicate-anchors" / f"{book}.jsonl"
+        output_path = Path(args.output) if args.output else mna_root / "datasets" / "trunk" / f"{book}.jsonl"
+
+        if not input_path.is_absolute():
+            input_path = (Path.cwd() / input_path).resolve()
+
+        if not output_path.is_absolute():
+            output_path = (Path.cwd() / output_path).resolve()
+
+        metadata, rows = build_trunk(book, input_path, output_path, mna_root)
+        print_visible_output(book, input_path, output_path, metadata, rows, args.preview_lines)
+        return 0 if len(rows) == int(metadata['predicate_anchors']) else 2
+    except Exception as exc:
+        print("MNA Stage 3 FAILED", file=sys.stderr)
+        print(str(exc), file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
