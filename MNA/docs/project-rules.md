@@ -68,3 +68,5 @@ python3 scripts/stage4/validate_predicate_completeness.py 1corintios
 # STAGE 4 AUDIT
 
 python3 scripts/stage4/detect_absolute_dependency_candidates.py 1corintios
+python3 scripts/stage4/detect_relative_dependency_candidates.py \
+  1corintios
