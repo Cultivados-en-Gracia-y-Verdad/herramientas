@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """
-MNA Stage 3 — anchor skeleton + provisional signatures.
+MNA Stage 3 — anchor skeleton only.
 
 PURPOSE
 - Read verified Stage 2A predicate anchors.
-- Produce an ordered anchor skeleton.
-- Add mechanical subject-signature markers.
-- Add provisional movement-signal markers.
+- Produce an ordered predicate-anchor skeleton.
+- Preserve anchor order and identity for later stages.
 
 ABSOLUTE LIMITS
 This script does NOT determine:
 - independent clauses,
 - dependent clauses,
 - real trunk,
+- subject-change markers,
+- movement markers,
 - connectors,
 - labels,
 - patterns,
@@ -24,13 +25,10 @@ This script does NOT determine:
 - clause structures,
 - theology.
 
-MECHANICAL RULES
-[S] = person/number signature changed.
-[M] = provisional mood-change signal only.
-
 IMPORTANT TERMINOLOGY
 This output is NOT trunk.
 Real trunk = independent-clause structure, which is not built here.
+[S] and [M] belong only to verified trunk clauses and are not calculated here.
 """
 
 from __future__ import annotations
@@ -41,7 +39,7 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage3-anchor-skeleton-v1"
+VERSION = "stage3-anchor-skeleton-v2"
 
 
 def mna_root_from_script() -> Path:
@@ -89,34 +87,7 @@ def load_anchor_dataset(path: Path) -> tuple[dict[str, object], list[dict[str, o
     return metadata, anchors
 
 
-def subject_signature(anchor: dict[str, object]) -> str:
-    return f"{anchor['person_code']}{anchor['number_code']}"
-
-
-def movement_signal_signature(anchor: dict[str, object]) -> str:
-    return str(anchor["mood"])
-
-
-def build_anchor_skeleton_row(anchor: dict[str, object], anchor_order: int, previous_row: Optional[dict[str, object]]) -> dict[str, object]:
-    current_subject = subject_signature(anchor)
-    current_movement_signal = movement_signal_signature(anchor)
-
-    previous_subject = None
-    previous_movement_signal = None
-
-    s_marker = ""
-    m_signal_marker = ""
-
-    if previous_row is not None:
-        previous_subject = previous_row["subject_signature"]
-        previous_movement_signal = previous_row["movement_signal_signature"]
-
-        if current_subject != previous_subject:
-            s_marker = "[S]"
-
-        if current_movement_signal != previous_movement_signal:
-            m_signal_marker = "[M]"
-
+def build_anchor_skeleton_row(anchor: dict[str, object], anchor_order: int) -> dict[str, object]:
     return {
         "record_type": "anchor_skeleton_row",
         "predicate_anchor_id": anchor["predicate_anchor_id"],
@@ -132,15 +103,11 @@ def build_anchor_skeleton_row(anchor: dict[str, object], anchor_order: int, prev
         "mood": anchor["mood"],
         "person": anchor["person"],
         "number": anchor["number"],
-        "subject_signature": current_subject,
-        "previous_subject_signature": previous_subject,
-        "subject_change_marker": s_marker,
-        "movement_signal_signature": current_movement_signal,
-        "previous_movement_signal_signature": previous_movement_signal,
-        "movement_signal_marker": m_signal_marker,
         "skeleton_status": "ordered_predicate_anchor_sequence",
         "trunk_claim": "NONE",
         "independent_clause_claim": "NONE",
+        "subject_change_marker": "NOT_APPLICABLE_BEFORE_TRUNK",
+        "movement_marker": "NOT_APPLICABLE_BEFORE_TRUNK",
         "connector_data": "NONE",
         "label_data": "NONE",
         "unit_data": "NONE",
@@ -158,17 +125,11 @@ def build_anchor_skeleton(book: str, input_path: Path, output_path: Path, mna_ro
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    rows = []
-    previous_row = None
-
-    for idx, anchor in enumerate(anchors, start=1):
-        row = build_anchor_skeleton_row(anchor, idx, previous_row)
-        rows.append(row)
-        previous_row = row
+    rows = [build_anchor_skeleton_row(anchor, idx) for idx, anchor in enumerate(anchors, start=1)]
 
     metadata = {
         "record_type": "metadata",
-        "stage": "Stage 3 — Anchor Skeleton + [S] + provisional [M] signal",
+        "stage": "Stage 3 — Anchor Skeleton Only",
         "producer_script": "scripts/stage3/build_anchor_skeleton.py",
         "producer_command": f"python3 scripts/stage3/build_anchor_skeleton.py {book}",
         "generated_at": "DETERMINISTIC-NOT-RUNTIME-STAMPED",
@@ -177,9 +138,9 @@ def build_anchor_skeleton(book: str, input_path: Path, output_path: Path, mna_ro
         "predicate_anchor_dataset": str(input_path.relative_to(mna_root)),
         "predicate_anchors": len(anchors),
         "anchor_skeleton_rows": len(rows),
-        "subject_signature_rule": "person_code + number_code",
-        "movement_signal_rule": "mood only; provisional signal, not final movement structure",
         "trunk_claim": "NONE: real trunk = independent-clause structure, not built by this script.",
+        "subject_marker_usage": "NONE: [S] belongs only to verified trunk clauses.",
+        "movement_marker_usage": "NONE: [M] belongs only to verified trunk clauses.",
         "connector_usage": "NONE",
         "label_usage": "NONE",
         "unit_usage": "NONE",
@@ -195,25 +156,22 @@ def build_anchor_skeleton(book: str, input_path: Path, output_path: Path, mna_ro
 
 
 def print_visible_output(book: str, input_path: Path, output_path: Path, metadata: dict[str, object], rows: list[dict[str, object]], preview_lines: int) -> None:
-    print("MNA Stage 3 — Anchor Skeleton + [S] + provisional [M]")
+    print("MNA Stage 3 — Anchor Skeleton Only")
     print(f"BOOK: {book}")
     print(f"INPUT: {input_path}")
     print(f"OUTPUT: {output_path}")
     print(f"PREDICATE_ANCHORS: {metadata['predicate_anchors']}")
     print(f"ANCHOR_SKELETON_ROWS: {metadata['anchor_skeleton_rows']}")
     print("TRUNK_CLAIM: NONE")
+    print("S_MARKERS: NOT APPLICABLE BEFORE TRUNK")
+    print("M_MARKERS: NOT APPLICABLE BEFORE TRUNK")
     print()
     print("VISIBLE OUTPUT PREVIEW:")
 
     for idx, row in enumerate(rows[:preview_lines], start=1):
-        markers = " ".join(x for x in [row['subject_change_marker'], row['movement_signal_marker']] if x)
-        if not markers:
-            markers = "-"
-
         print(
             f"{idx:>4}. {row['predicate_anchor_id']} | {row['reference']} | "
-            f"{row['greek_surface']} | subj={row['subject_signature']} | "
-            f"move_signal={row['movement_signal_signature']} | {markers}"
+            f"{row['greek_surface']} | anchor_order={row['anchor_order']}"
         )
 
     remaining = len(rows) - min(len(rows), preview_lines)
@@ -222,7 +180,7 @@ def print_visible_output(book: str, input_path: Path, output_path: Path, metadat
 
 
 def main(argv: Optional[list[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description="Build MNA Stage 3 anchor skeleton with [S] and provisional [M] signal markers.")
+    parser = argparse.ArgumentParser(description="Build MNA Stage 3 anchor skeleton only.")
     parser.add_argument("book", help="Book slug, e.g. 1corintios")
     parser.add_argument("--input", help="Explicit predicate-anchor JSONL path")
     parser.add_argument("--output", help="Explicit anchor-skeleton JSONL path")
