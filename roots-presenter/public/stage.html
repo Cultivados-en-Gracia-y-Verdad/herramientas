@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Stage View</title>
+  <link rel="icon" href="/assets/cgv-app-icon.svg">
+  <link rel="stylesheet" href="stage.css">
+</head>
+<body>
+  <header class="stage-header">
+    <div>
+      <strong id="stageTitle">Stage View</strong>
+      <span id="stageStatus">Waiting for controller</span>
+    </div>
+    <div class="stage-controls" aria-label="Stage controls">
+      <button id="stagePrevious" type="button" title="Previous section">Prev</button>
+      <button id="stageNext" type="button" title="Next section">Next</button>
+      <button id="transposeDown" type="button" title="Lower key one semitone">-</button>
+      <div id="transposeStatus" class="transpose-status" title="Stage transposition">Key 0</div>
+      <button id="transposeUp" type="button" title="Raise key one semitone">+</button>
+      <div id="stagePosition" class="stage-position"></div>
+    </div>
+  </header>
+
+  <main class="stage-layout">
+    <section class="stage-current">
+      <h1>Current</h1>
+      <div id="currentSong" class="song-chords"></div>
+    </section>
+
+    <section class="stage-next">
+      <h2>Next</h2>
+      <div id="nextSong" class="song-chords next"></div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="stage.js"></script>
+</body>
+</html>

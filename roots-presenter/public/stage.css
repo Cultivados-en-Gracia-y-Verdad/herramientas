@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans/ibm-plex-sans-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  --stage-bg: #05070c;
+  --stage-panel: #0d1422;
+  --stage-panel-soft: #111827;
+  --stage-line: rgba(148, 163, 184, 0.22);
+  --stage-text: #f8fafc;
+  --stage-muted: #94a3b8;
+  --stage-chord: #67e8f9;
+  --stage-next: #d1d5db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(20, 184, 166, 0.18), transparent 28rem),
+    linear-gradient(135deg, #020617, var(--stage-bg));
+  color: var(--stage-text);
+  font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.stage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  min-height: 76px;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--stage-line);
+  background: rgba(2, 6, 23, 0.82);
+  backdrop-filter: blur(14px);
+}
+
+.stage-header > div:first-child {
+  min-width: 0;
+}
+
+.stage-header strong {
+  display: block;
+  font-size: clamp(1.4rem, 2.2vw, 2.35rem);
+  line-height: 1.05;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stage-header span {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--stage-muted);
+  font-size: clamp(0.95rem, 1.25vw, 1.2rem);
+}
+
+.stage-position {
+  min-width: 5.5rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid rgba(103, 232, 249, 0.35);
+  border-radius: 8px;
+  background: rgba(8, 47, 73, 0.52);
+  color: var(--stage-chord);
+  font-size: clamp(1.2rem, 2vw, 1.9rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.stage-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex: 0 0 auto;
+}
+
+.stage-controls button,
+.transpose-status {
+  min-height: 2.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.86);
+  color: var(--stage-text);
+  font: inherit;
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  font-weight: 700;
+}
+
+.stage-controls button {
+  min-width: 3rem;
+  padding: 0.5rem 0.72rem;
+  cursor: pointer;
+}
+
+.stage-controls button:active {
+  transform: translateY(1px);
+}
+
+.transpose-status {
+  display: grid;
+  min-width: 4.6rem;
+  place-items: center;
+  color: var(--stage-chord);
+}
+
+.stage-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2.4fr) minmax(280px, 0.7fr);
+  gap: 1rem;
+  height: calc(100vh - 76px);
+  padding: 1rem;
+}
+
+.stage-current,
+.stage-next {
+  min-height: 0;
+  overflow: auto;
+  border: 1px solid var(--stage-line);
+  border-radius: 10px;
+  background: rgba(13, 20, 34, 0.86);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.stage-current {
+  padding: clamp(1.15rem, 2vw, 2rem);
+}
+
+.stage-next {
+  padding: clamp(1rem, 1.5vw, 1.35rem);
+  background: rgba(17, 24, 39, 0.78);
+}
+
+h1,
+h2 {
+  margin: 0 0 1rem;
+  color: var(--stage-muted);
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.song-chords {
+  font-size: clamp(2.25rem, 5vw, 5rem);
+  line-height: 1.28;
+}
+
+.song-chords.next {
+  color: var(--stage-next);
+  font-size: clamp(1.2rem, 2vw, 2.05rem);
+  line-height: 1.36;
+}
+
+.song-line {
+  display: block;
+  margin: 0.28em 0;
+  overflow-wrap: anywhere;
+}
+
+.chord-token {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-height: 1.22em;
+  margin-right: 0.04em;
+  vertical-align: bottom;
+  white-space: pre-wrap;
+}
+
+.chord-token.has-chord {
+  min-width: 0.8em;
+}
+
+.chord {
+  color: var(--stage-chord);
+  font-size: 0.38em;
+  font-weight: 700;
+  line-height: 1;
+  min-height: 1em;
+  white-space: nowrap;
+}
+
+.song-chords.next .chord {
+  color: #7dd3fc;
+}
+
+.lyric {
+  display: block;
+  line-height: 1.08;
+  white-space: pre-wrap;
+}
+
+.empty {
+  display: grid;
+  min-height: 12rem;
+  place-items: center;
+  border: 1px dashed rgba(148, 163, 184, 0.32);
+  border-radius: 8px;
+  color: var(--stage-muted);
+  font-size: clamp(1.2rem, 2.1vw, 2rem);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow: auto;
+  }
+
+  .stage-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 64px;
+    padding: 0.75rem 1rem;
+  }
+
+  .stage-header strong {
+    max-width: 52vw;
+  }
+
+  .stage-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(62vh, auto) auto;
+    min-height: calc(100vh - 64px);
+    height: auto;
+    padding: 0.75rem;
+  }
+
+  .stage-current,
+  .stage-next {
+    overflow: visible;
+  }
+
+  .stage-next {
+    max-height: 24vh;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .stage-header {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stage-header strong {
+    max-width: 38vw;
+    font-size: 1.05rem;
+  }
+
+  .stage-header span {
+    margin-top: 0.1rem;
+    font-size: 0.78rem;
+  }
+
+  .stage-controls {
+    gap: 0.25rem;
+  }
+
+  .stage-controls button,
+  .transpose-status {
+    min-height: 2.25rem;
+    border-radius: 7px;
+    font-size: 0.82rem;
+  }
+
+  .stage-controls button {
+    min-width: 2.35rem;
+    padding: 0.36rem 0.42rem;
+  }
+
+  .stage-controls button:nth-child(1),
+  .stage-controls button:nth-child(2) {
+    min-width: 2.8rem;
+  }
+
+  .transpose-status {
+    min-width: 3.35rem;
+  }
+
+  .stage-position {
+    min-width: 3.3rem;
+    padding: 0.34rem 0.42rem;
+    font-size: 0.86rem;
+  }
+
+  .stage-current,
+  .stage-next {
+    border-radius: 8px;
+  }
+
+  .stage-current {
+    padding: 1rem;
+  }
+
+  .stage-next {
+    padding: 0.85rem;
+    max-height: 22vh;
+  }
+
+  h1,
+  h2 {
+    margin-bottom: 0.65rem;
+    font-size: 0.78rem;
+  }
+
+  .song-chords {
+    font-size: clamp(1.55rem, 8.5vw, 2.8rem);
+    line-height: 1.22;
+  }
+
+  .song-chords.next {
+    font-size: clamp(0.95rem, 4.8vw, 1.4rem);
+  }
+
+  .chord {
+    font-size: 0.34em;
+  }
+}

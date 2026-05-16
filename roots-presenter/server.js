@@ -26,6 +26,7 @@ const cwdBibleDir = path.join(process.cwd(), "bibles", "NBLA");
 const bundledBibleDir = path.join(__dirname, "bibles", "NBLA");
 const legacyNblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
 const coursesDir = path.join(__dirname, "courses");
+const songsDir = path.join(__dirname, "songs");
 const defaultCourseDir = path.join(coursesDir, "Romanos");
 const bundledDataDir = path.join(__dirname, "data");
 
@@ -141,6 +142,7 @@ let controllerState = {
   active: false,
   title: "",
   sections: [],
+  chordSections: [],
   step: 0,
   background: "#0f172a",
   backgroundMedia: "",
@@ -201,6 +203,11 @@ function getJoinInfo() {
 function cleanText(value, fallback) {
   const text = String(value || "").trim().replace(/\s+/g, " ");
   return text.slice(0, 80) || fallback;
+}
+
+function cleanLongText(value, fallback = "", maxLength = 2000) {
+  const text = String(value || "").trim();
+  return text.slice(0, maxLength) || fallback;
 }
 
 function getSessionSummary() {
@@ -1991,9 +1998,157 @@ function normalizeSongSections(value) {
     .map(section => section
       .split("\n")
       .map(line => line.trim())
+      .map(stripChordProChords)
       .filter(Boolean)
     )
     .filter(section => section.length);
+}
+
+function stripChordProChords(line) {
+  return String(line || "")
+    .replace(/\[[^\]]+\]/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+function parseChordProSong(content, filePath) {
+  const lines = String(content || "").replace(/\r\n/g, "\n").split("\n");
+  const metadata = {};
+  const sections = [];
+  let currentSection = null;
+
+  function ensureSection(label = "") {
+    if (!currentSection) {
+      currentSection = {
+        label,
+        lines: [],
+        chordLines: []
+      };
+      sections.push(currentSection);
+    }
+  }
+
+  lines.forEach(rawLine => {
+    const line = rawLine.trim();
+    if (!line) {
+      currentSection = null;
+      return;
+    }
+
+    const directive = line.match(/^\{([^:}]+)(?::\s*([^}]+))?\}$/);
+    if (directive) {
+      const key = directive[1].trim().toLowerCase();
+      const value = (directive[2] || "").trim();
+
+      if (["title", "t"].includes(key)) metadata.title = value;
+      else if (["subtitle", "st"].includes(key)) metadata.subtitle = value;
+      else if (key === "key") metadata.key = value;
+      else if (["verse", "chorus", "bridge", "tag"].includes(key)) {
+        currentSection = {
+          label: value ? `${key} ${value}` : key,
+          lines: [],
+          chordLines: []
+        };
+        sections.push(currentSection);
+      }
+      return;
+    }
+
+    const lyricLine = stripChordProChords(line);
+    if (!lyricLine) return;
+
+    ensureSection();
+    currentSection.lines.push(lyricLine);
+    currentSection.chordLines.push(line);
+  });
+
+  const title = metadata.title || path.basename(filePath, path.extname(filePath));
+  const normalizedSections = sections
+    .map(section => ({
+      ...section,
+      lines: section.lines.filter(Boolean),
+      chordLines: section.chordLines.filter(Boolean)
+    }))
+    .filter(section => section.lines.length);
+
+  return {
+    id: path.basename(filePath, path.extname(filePath)),
+    title,
+    subtitle: metadata.subtitle || "",
+    key: metadata.key || "",
+    file: path.basename(filePath),
+    lyrics: normalizedSections.map(section => section.lines.join("\n")).join("\n\n"),
+    chordLyrics: normalizedSections.map(section => section.chordLines.join("\n")).join("\n\n"),
+    sections: normalizedSections.map(section => section.lines),
+    chordSections: normalizedSections.map(section => section.chordLines)
+  };
+}
+
+function loadSongLibrary() {
+  if (!fs.existsSync(songsDir)) return [];
+
+  return fs.readdirSync(songsDir)
+    .filter(fileName => /\.(cho|chordpro|chopro|pro)$/i.test(fileName))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .map(fileName => {
+      const filePath = path.join(songsDir, fileName);
+      return parseChordProSong(fs.readFileSync(filePath, "utf-8"), filePath);
+    })
+    .filter(song => song.sections.length);
+}
+
+function slugifySongTitle(title) {
+  return String(title || "song")
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 64) || "song";
+}
+
+function getUniqueSongFileName(title) {
+  const baseSlug = slugifySongTitle(title);
+  let fileName = `${baseSlug}.cho`;
+  let index = 2;
+
+  while (fs.existsSync(path.join(songsDir, fileName))) {
+    fileName = `${baseSlug}-${index}.cho`;
+    index += 1;
+  }
+
+  return fileName;
+}
+
+function buildChordProFile(title, chordLyrics) {
+  const body = String(chordLyrics || "")
+    .replace(/\r\n/g, "\n")
+    .replace(/^\{title:[^\n]+\}\s*/i, "")
+    .trim();
+
+  return `{title: ${cleanLongText(title, "Untitled Song", 160)}}\n\n${body}\n`;
+}
+
+function saveSongFile(payload = {}) {
+  const title = cleanLongText(payload.title, "Untitled Song", 160);
+  const chordLyrics = cleanLongText(payload.chordLyrics || payload.lyrics, "", 100000);
+  if (!chordLyrics.trim()) {
+    throw new Error("Song lyrics are required.");
+  }
+
+  fs.mkdirSync(songsDir, { recursive: true });
+
+  const existingFile = payload.file ? path.basename(String(payload.file)) : "";
+  const existingPath = existingFile ? path.join(songsDir, existingFile) : "";
+  const fileName = existingPath && fs.existsSync(existingPath)
+    ? existingFile
+    : getUniqueSongFileName(title);
+  const filePath = path.join(songsDir, fileName);
+  const content = buildChordProFile(title, chordLyrics);
+
+  fs.writeFileSync(filePath, content, "utf-8");
+  return parseChordProSong(content, filePath);
 }
 
 function publicControllerState() {
@@ -2012,14 +2167,56 @@ function setControllerSong(payload = {}) {
         .map(section => Array.isArray(section) ? section.map(line => String(line || "").trim()).filter(Boolean) : [])
         .filter(section => section.length)
     : normalizeSongSections(payload.lyrics);
+  const chordSections = Array.isArray(payload.chordSections)
+    ? payload.chordSections
+        .map(section => Array.isArray(section) ? section.map(line => String(line || "").trim()).filter(Boolean) : [])
+        .filter(section => section.length)
+    : String(payload.chordLyrics || payload.lyrics || "").replace(/\r\n/g, "\n").trim()
+      ? String(payload.chordLyrics || payload.lyrics || "")
+          .replace(/\r\n/g, "\n")
+          .trim()
+          .split(/\n\s*\n/)
+          .map(section => section.split("\n").map(line => line.trim()).filter(Boolean))
+          .filter(section => section.length)
+      : sections;
 
   controllerState = {
     active: sections.length > 0,
     title: cleanText(payload.title, "Song"),
     sections,
+    chordSections,
     step: 0,
     background: cleanText(payload.background, controllerState.background || "#0f172a"),
-    backgroundMedia: cleanText(payload.backgroundMedia, controllerState.backgroundMedia || ""),
+    backgroundMedia: cleanLongText(payload.backgroundMedia, controllerState.backgroundMedia || ""),
+    textColor: cleanText(payload.textColor, controllerState.textColor || "#ffffff"),
+    accentColor: cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8")
+  };
+}
+
+function getSongListLines() {
+  return loadSongLibrary().map((song, index) => {
+    const number = song.file?.match(/^(\d+)/)?.[1] || String(index + 1).padStart(3, "0");
+    return `${number}  ${song.title}`;
+  });
+}
+
+function setControllerSongList(payload = {}) {
+  const lines = getSongListLines();
+  const sectionSize = 14;
+  const sections = [];
+
+  for (let index = 0; index < lines.length; index += sectionSize) {
+    sections.push(lines.slice(index, index + sectionSize));
+  }
+
+  controllerState = {
+    active: sections.length > 0,
+    title: cleanText(payload.title, "Song Requests"),
+    sections,
+    chordSections: sections,
+    step: 0,
+    background: cleanText(payload.background, controllerState.background || "#0f172a"),
+    backgroundMedia: cleanLongText(payload.backgroundMedia, controllerState.backgroundMedia || ""),
     textColor: cleanText(payload.textColor, controllerState.textColor || "#ffffff"),
     accentColor: cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8")
   };
@@ -2027,7 +2224,7 @@ function setControllerSong(payload = {}) {
 
 function updateControllerStyle(payload = {}) {
   controllerState.background = cleanText(payload.background, controllerState.background || "#0f172a");
-  controllerState.backgroundMedia = cleanText(payload.backgroundMedia, controllerState.backgroundMedia || "");
+  controllerState.backgroundMedia = cleanLongText(payload.backgroundMedia, controllerState.backgroundMedia || "");
   controllerState.textColor = cleanText(payload.textColor, controllerState.textColor || "#ffffff");
   controllerState.accentColor = cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8");
 }
@@ -2348,8 +2545,28 @@ app.get("/state.json", (req, res) => {
   res.json(buildPayload());
 });
 
+app.get("/songs", (req, res) => {
+  res.json(loadSongLibrary());
+});
+
+app.post("/songs/save", (req, res) => {
+  try {
+    res.json(saveSongFile(req.body || {}));
+  } catch (error) {
+    res.status(400).json({
+      error: error?.message || "The song could not be saved."
+    });
+  }
+});
+
 app.post("/controller/song", (req, res) => {
   setControllerSong(req.body || {});
+  sendState();
+  res.json(publicControllerState());
+});
+
+app.post("/controller/song-list", (req, res) => {
+  setControllerSongList(req.body || {});
   sendState();
   res.json(publicControllerState());
 });
@@ -2458,6 +2675,11 @@ io.on("connection", socket => {
 
   socket.on("controller-set-song", payload => {
     setControllerSong(payload || {});
+    sendState();
+  });
+
+  socket.on("controller-song-list", payload => {
+    setControllerSongList(payload || {});
     sendState();
   });
 

@@ -1,30 +1,18 @@
 const socket = io();
 
-const defaultSongs = [
-  {
-    id: "sample-amazing-grace",
-    title: "Amazing Grace",
-    lyrics: "Amazing grace, how sweet the sound\nThat saved a wretch like me\n\nI once was lost, but now am found\nWas blind, but now I see"
-  },
-  {
-    id: "sample-santo-santo",
-    title: "Santo, Santo, Santo",
-    lyrics: "Santo, santo, santo\nSeñor omnipotente\n\nDios en tres personas\nBendita Trinidad"
-  }
-];
-
 let controllerState = {
   active: false,
   title: "",
   sections: [],
+  chordSections: [],
   step: 0,
   background: "#0f172a",
   backgroundMedia: "",
   textColor: "#ffffff",
   accentColor: "#38bdf8"
 };
-let songs = loadSongs();
-let selectedSongId = songs[0]?.id || null;
+let songs = [];
+let selectedSongId = null;
 let editingSongId = null;
 
 function byId(id) {
@@ -44,22 +32,38 @@ function isVideoMedia(value) {
   return /\.(mp4|webm|ogg|mov)(?:[?#].*)?$/i.test(String(value || "").trim());
 }
 
-function loadSongs() {
-  try {
-    const stored = JSON.parse(localStorage.getItem("cgvControllerSongs") || "[]");
-    if (Array.isArray(stored) && stored.length) return stored;
-  } catch {
-    // Ignore invalid local song cache.
-  }
-
-  return defaultSongs;
+function stripChordProChords(line) {
+  return String(line || "")
+    .replace(/\[[^\]]+\]/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }
 
-function saveSongs() {
-  localStorage.setItem("cgvControllerSongs", JSON.stringify(songs));
+async function loadSongs() {
+  const response = await fetch("/songs");
+  songs = response.ok ? await response.json() : [];
+  if (!selectedSongId || !songs.some(song => song.id === selectedSongId)) {
+    selectedSongId = songs[0]?.id || null;
+  }
+  renderSongList();
+  renderPreview();
 }
 
 function parseSections(text) {
+  return String(text || "")
+    .replace(/\r\n/g, "\n")
+    .trim()
+    .split(/\n\s*\n/)
+    .map(section => section
+      .split("\n")
+      .map(line => line.trim())
+      .map(stripChordProChords)
+      .filter(Boolean)
+    )
+    .filter(section => section.length);
+}
+
+function parseChordSections(text) {
   return String(text || "")
     .replace(/\r\n/g, "\n")
     .trim()
@@ -80,6 +84,9 @@ function getSongPayload(song = getSelectedSong()) {
   return {
     title: song?.title || "Song",
     lyrics: song?.lyrics || "",
+    chordLyrics: song?.chordLyrics || song?.lyrics || "",
+    sections: song?.sections || parseSections(song?.lyrics || ""),
+    chordSections: song?.chordSections || parseChordSections(song?.chordLyrics || song?.lyrics || ""),
     background: byId("backgroundColor").value,
     backgroundMedia: byId("backgroundMedia").value.trim(),
     textColor: byId("textColor").value,
@@ -104,6 +111,16 @@ function sendLive() {
   const song = getSelectedSong();
   if (!song) return;
   socket.emit("controller-set-song", getSongPayload(song));
+}
+
+function showSongListScreen() {
+  socket.emit("controller-song-list", {
+    title: "Escoge una canción",
+    background: byId("backgroundColor").value,
+    backgroundMedia: byId("backgroundMedia").value.trim(),
+    textColor: byId("textColor").value,
+    accentColor: byId("accentColor").value
+  });
 }
 
 function clearLive() {
@@ -131,7 +148,7 @@ function openEditor(songId = null) {
   editingSongId = songId;
   const song = songs.find(item => item.id === songId) || { title: "", lyrics: "" };
   byId("songTitle").value = song.title;
-  byId("songLyrics").value = song.lyrics;
+  byId("songLyrics").value = song.chordLyrics || song.lyrics;
   byId("songEditor").classList.remove("hidden");
   byId("songTitle").focus();
 }
@@ -141,21 +158,41 @@ function closeEditor() {
   byId("songEditor").classList.add("hidden");
 }
 
-function saveCurrentSong() {
+async function saveCurrentSong() {
   const title = byId("songTitle").value.trim() || "Untitled Song";
   const lyrics = byId("songLyrics").value.trim();
   if (!lyrics) return;
 
-  if (editingSongId) {
-    songs = songs.map(song => song.id === editingSongId ? { ...song, title, lyrics } : song);
-    selectedSongId = editingSongId;
-  } else {
-    const song = { id: createSongId(title), title, lyrics };
-    songs = [...songs, song];
-    selectedSongId = song.id;
+  const existingSong = songs.find(song => song.id === editingSongId);
+  const response = await fetch("/songs/save", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      id: existingSong?.id || createSongId(title),
+      file: existingSong?.file || "",
+      title,
+      chordLyrics: lyrics
+    })
+  });
+
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({}));
+    window.alert(error.error || "The song could not be saved.");
+    return;
   }
 
-  saveSongs();
+  const savedSong = await response.json();
+  const existingIndex = songs.findIndex(song => song.id === savedSong.id || song.file === savedSong.file);
+  if (existingIndex >= 0) {
+    songs = songs.map((song, index) => index === existingIndex ? savedSong : song);
+  } else {
+    songs = [...songs, savedSong];
+  }
+
+  selectedSongId = savedSong.id;
+  editingSongId = savedSong.id;
   closeEditor();
   renderSongList();
   renderPreview();
@@ -318,6 +355,7 @@ byId("closeEditorButton").addEventListener("click", closeEditor);
 byId("cancelEditorButton").addEventListener("click", closeEditor);
 byId("saveSongButton").addEventListener("click", saveCurrentSong);
 byId("goLiveButton").addEventListener("click", sendLive);
+byId("songListScreenButton").addEventListener("click", showSongListScreen);
 byId("clearButton").addEventListener("click", clearLive);
 byId("nextButton").addEventListener("click", nextSection);
 byId("previousButton").addEventListener("click", previousSection);
@@ -344,3 +382,4 @@ window.addEventListener("keydown", event => {
 
 renderSongList();
 renderPreview();
+loadSongs();

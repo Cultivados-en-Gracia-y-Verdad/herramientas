@@ -782,7 +782,7 @@ button {
   max-width: none;
   max-height: none;
   margin: calc(-1 * clamp(42px, 8vh, 88px)) -24px -24px;
-  padding: clamp(52px, 8vh, 110px) clamp(70px, 9vw, 150px);
+  padding: clamp(54px, 8vh, 108px) clamp(58px, 7vw, 120px);
   overflow: hidden;
   background: var(--song-background, #0f172a);
   color: var(--song-color, #ffffff);
@@ -820,24 +820,34 @@ button {
   position: relative;
   z-index: 2;
   display: grid;
-  gap: 0.55em;
   justify-items: center;
 }
 
 .song-output-title {
+  position: fixed;
+  top: clamp(16px, 2.5vh, 34px);
+  left: clamp(18px, 2.8vw, 48px);
+  z-index: 3;
+  max-width: min(46vw, 720px);
   color: var(--song-accent, #38bdf8);
-  font-size: 0.42em;
+  font-size: clamp(17px, 1.6vw, 28px);
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
+  line-height: 1.15;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
   text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.78;
 }
 
 .song-output-lines {
   display: grid;
-  gap: 0.16em;
-  font-size: var(--fit-size, 82px);
+  gap: 0.12em;
+  font-size: var(--fit-size, 96px);
   font-weight: 600;
-  line-height: 1.14;
+  line-height: 1.08;
   text-wrap: balance;
 }
 

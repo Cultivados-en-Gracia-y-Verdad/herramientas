@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Director</title>
+  <link rel="icon" href="/assets/cgv-app-icon.svg">
+  <link rel="stylesheet" href="director.css">
+</head>
+<body>
+  <main class="director-view">
+    <header class="director-header">
+      <div>
+        <strong id="directorTitle">Director</strong>
+        <span id="directorMode">Waiting for presentation</span>
+      </div>
+      <div class="director-header-actions">
+        <button id="songsButton" type="button" class="ghost">Songs</button>
+        <button id="fullscreenButton" type="button" class="ghost">Fullscreen</button>
+      </div>
+    </header>
+
+    <section id="directorContent" class="director-content">
+      <div class="empty">Waiting for CGV Presenter...</div>
+    </section>
+
+    <aside id="songDrawer" class="song-drawer" aria-label="Song picker">
+      <div class="song-drawer-header">
+        <div>
+          <strong>Songs</strong>
+          <span>Search and send live</span>
+        </div>
+        <button id="closeSongsButton" type="button" class="ghost">Close</button>
+      </div>
+      <input id="songSearch" type="search" placeholder="Search song number, title, or lyric...">
+      <button id="showSongListButton" type="button">Show Song List Screen</button>
+      <div id="songList" class="song-list"></div>
+    </aside>
+
+    <footer class="director-controls">
+      <button id="previousButton" type="button" class="nav-button">Back</button>
+      <div id="directorPosition" class="director-position">--</div>
+      <button id="nextButton" type="button" class="nav-button primary">Next</button>
+    </footer>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="director.js"></script>
+</body>
+</html>

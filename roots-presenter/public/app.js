@@ -157,8 +157,8 @@ function renderControllerProjector(projectorSlide) {
   projectorSlide.classList.toggle("song-has-video", !!media && isVideoMedia(media));
   projectorSlide.innerHTML = `
     ${media && isVideoMedia(media) ? `<video class="song-background-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
+    ${controllerState.title ? `<div class="song-output-title">${escapeHtml(controllerState.title)}</div>` : ""}
     <div class="song-output-inner">
-      ${controllerState.title ? `<div class="song-output-title">${escapeHtml(controllerState.title)}</div>` : ""}
       <div class="song-output-lines">
         ${section.map(line => `<div>${escapeHtml(line)}</div>`).join("")}
       </div>
@@ -166,13 +166,13 @@ function renderControllerProjector(projectorSlide) {
   `;
 
   fitSlideText(projectorSlide, {
-    baseSize: 78,
-    minSize: 44,
-    hardMinSize: 38,
+    baseSize: 96,
+    minSize: 56,
+    hardMinSize: 44,
     maxHeight: window.innerHeight - 60,
-    maxWidth: window.innerWidth * 0.88,
-    densityFactor: 0.08,
-    sizeBoost: 8
+    maxWidth: window.innerWidth * 0.92,
+    densityFactor: 0.03,
+    sizeBoost: 14
   });
 }
 

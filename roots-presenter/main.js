@@ -16,6 +16,8 @@ const { serverEvents } = require("./server");
 let presenterWindow;
 let projectorWindow;
 let controllerWindow;
+let stageWindow;
+let directorWindow;
 let settingsWindow;
 let courseDownloadWindow;
 let presentationMode = "extended";
@@ -456,6 +458,48 @@ function openControllerWindow() {
   });
 }
 
+function openStageWindow() {
+  if (stageWindow && !stageWindow.isDestroyed()) {
+    stageWindow.focus();
+    return;
+  }
+
+  stageWindow = new BrowserWindow({
+    width: 1180,
+    height: 760,
+    title: "Stage View",
+    icon: LOGO_PATH,
+    backgroundColor: "#05070c",
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  stageWindow.loadURL(`${APP_URL}/stage.html`);
+  stageWindow.on("closed", () => {
+    stageWindow = null;
+  });
+}
+
+function openDirectorWindow() {
+  if (directorWindow && !directorWindow.isDestroyed()) {
+    directorWindow.focus();
+    return;
+  }
+
+  directorWindow = new BrowserWindow({
+    width: 1180,
+    height: 780,
+    title: "Director",
+    icon: LOGO_PATH,
+    backgroundColor: "#08111f",
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  directorWindow.loadURL(`${APP_URL}/director.html`);
+  directorWindow.on("closed", () => {
+    directorWindow = null;
+  });
+}
+
 function createMenu() {
   const template = [
     {
@@ -550,6 +594,16 @@ function createMenu() {
           accelerator: "CmdOrCtrl+Shift+C",
           click: openControllerWindow
         },
+        {
+          label: "Open Stage View",
+          accelerator: "CmdOrCtrl+Shift+S",
+          click: openStageWindow
+        },
+        {
+          label: "Open Director",
+          accelerator: "CmdOrCtrl+Shift+D",
+          click: openDirectorWindow
+        },
         { type: "separator" },
         {
           label: "Show H1/H2 Headers",
@@ -622,6 +676,8 @@ function clearWindowReferences() {
   if (presenterWindow?.isDestroyed()) presenterWindow = null;
   if (projectorWindow?.isDestroyed()) projectorWindow = null;
   if (controllerWindow?.isDestroyed()) controllerWindow = null;
+  if (stageWindow?.isDestroyed()) stageWindow = null;
+  if (directorWindow?.isDestroyed()) directorWindow = null;
 }
 
 function switchPresentationMode(mode) {
