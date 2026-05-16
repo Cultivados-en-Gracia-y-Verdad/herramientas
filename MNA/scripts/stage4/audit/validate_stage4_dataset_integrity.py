@@ -23,7 +23,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-dataset-integrity-audit-v1"
+VERSION = "stage4-dataset-integrity-audit-v2-quarantine-aware"
 
 ALLOWED_STATUSES = {"NO", "UNRESOLVED_CANDIDATE"}
 
@@ -275,10 +275,26 @@ def audit(book: str, root: Path) -> dict[str, object]:
     if int(candidate_metadata.get("independent_clause_candidate_UNRESOLVED", -1)) != unresolved_rows:
         errors["metadata_unresolved_count_error"] += 1
 
-    metadata_audit_sources = candidate_metadata.get("audit_sources_used", [])
-    if sorted(metadata_audit_sources) != sorted(APPROVED_AUDIT_DATASETS.keys()):
-        errors["metadata_audit_sources_error"] += 1
-        add_example("metadata_audit_sources_error", f"metadata={metadata_audit_sources} approved={sorted(APPROVED_AUDIT_DATASETS.keys())}")
+    approved_metadata_sources = candidate_metadata.get("approved_audit_sources_used", [])
+    if sorted(approved_metadata_sources) != sorted(APPROVED_AUDIT_DATASETS.keys()):
+        errors["metadata_approved_audit_sources_error"] += 1
+        add_example(
+            "metadata_approved_audit_sources_error",
+            f"metadata={approved_metadata_sources} approved={sorted(APPROVED_AUDIT_DATASETS.keys())}",
+        )
+
+    quarantined_metadata_sources = candidate_metadata.get("quarantined_audit_sources_present_but_excluded", [])
+    expected_quarantined_present = [name for name, template in QUARANTINED_AUDIT_DATASETS.items() if path_from_template(root, template, book).is_file()]
+    if sorted(quarantined_metadata_sources) != sorted(expected_quarantined_present):
+        errors["metadata_quarantined_audit_sources_error"] += 1
+        add_example(
+            "metadata_quarantined_audit_sources_error",
+            f"metadata={quarantined_metadata_sources} expected={sorted(expected_quarantined_present)}",
+        )
+
+    if "audit_sources_used" in candidate_metadata:
+        errors["legacy_metadata_audit_sources_field_present"] += 1
+        add_example("legacy_metadata_audit_sources_field_present", str(candidate_metadata.get("audit_sources_used")))
 
     if quarantined_paths:
         warnings["quarantined_datasets_present"] += len(quarantined_paths)
