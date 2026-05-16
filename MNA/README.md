@@ -44,6 +44,8 @@ The system must not:
 - overclaim structure,
 - collapse provisional layers into final conclusions,
 - treat finite verbs as independent clauses,
+- treat all predicate anchors as trunk,
+- mark [S] or [M] from non-trunk clauses,
 - allow connectors to generate structure,
 - silently reinterpret lower layers.
 
@@ -100,7 +102,21 @@ not:
 
 ---
 
-## 4. Connectors Do Not Create Structure
+## 4. [S] and [M] Belong Only To Trunk Clauses
+
+`[S]` and `[M]` must be calculated only after real trunk clauses have been established.
+
+They must not be calculated over all predicate anchors because predicate anchors include dependent finite clauses.
+
+Therefore:
+
+```text
+No [S] or [M] before trunk extraction.
+```
+
+---
+
+## 5. Connectors Do Not Create Structure
 
 Connectors may:
 - signal relationships,
@@ -116,7 +132,7 @@ But connectors do NOT:
 
 ---
 
-## 5. Independency Must Not Depend Primarily On Connectors
+## 6. Independency Must Not Depend Primarily On Connectors
 
 Connector-first parsing leads rapidly to:
 - interpretive drift,
@@ -184,7 +200,8 @@ The following are NOT equivalent:
 - finite clauses,
 - independent clauses,
 - trunk,
-- movement,
+- subject-change markers,
+- movement markers,
 - units,
 - titles.
 
@@ -250,7 +267,7 @@ VERIFIED
 
 ---
 
-## Stage 3 — Anchor Skeleton + Provisional Signatures
+## Stage 3 — Anchor Skeleton Only
 
 Goal:
 Produce ordered predicate-anchor sequencing.
@@ -259,19 +276,9 @@ Current Stage 3 does NOT:
 - build real trunk,
 - establish independent clauses,
 - establish dependent clauses,
+- calculate `[S]`,
+- calculate `[M]`,
 - establish units.
-
-Current `[S]`:
-
-```text
-person/number signature change
-```
-
-Current `[M]`:
-
-```text
-provisional movement signal only
-```
 
 Canonical commands:
 
@@ -283,7 +290,7 @@ python3 scripts/stage3/validate_anchor_skeleton.py 1corintios
 Current status:
 
 ```text
-PROVISIONAL / FROZEN
+ANCHOR SKELETON ONLY
 ```
 
 Reason:
@@ -292,6 +299,8 @@ Real trunk extraction requires:
 - finite-clause analysis,
 - independency testing,
 - dependency theory stabilization.
+
+`[S]` and `[M]` must wait until trunk clauses exist.
 
 ---
 
@@ -302,13 +311,14 @@ The corrected architectural direction currently appears to be:
 ```text
 Stage 1  finite verbs
 Stage 2  predicate anchors
-Stage 3  finite-clause candidates
-Stage 4  independency testing / predicate completeness
-Stage 5  trunk extraction (independent clauses only)
-Stage 6  connector relationships
-Stage 7  [S] + [M]
-Stage 8  labels / patterns / units
-Stage 9  titles
+Stage 3  anchor skeleton only
+Stage 4  finite-clause candidates
+Stage 5  independency testing / predicate completeness
+Stage 6  trunk extraction (independent clauses only)
+Stage 7  [S] + [M] on trunk clauses only
+Stage 8  connector relationships
+Stage 9  labels / patterns / units
+Stage 10 titles
 ```
 
 This sequence remains provisional until frozen formally.
@@ -351,7 +361,8 @@ The system must never:
 - imply certainty beyond verification,
 - silently reinterpret lower layers,
 - present heuristic structure as verified structure,
-- collapse provisional signals into final claims.
+- collapse provisional signals into final claims,
+- calculate trunk-only markers over non-trunk clauses.
 
 Every layer must remain:
 - explicit,
