@@ -23,11 +23,12 @@ It writes candidate evidence only.
 
 CURRENT DETECTION FAMILY
 PC-DEP-CAND-REL-001:
-- a relative token appears in a local pre-anchor window,
+- a MorphGNT relative token POS=RR appears in a local pre-anchor window,
 - the finite predicate anchor follows that relative token in the same verse,
+- no intervening finite predicate appears between the RR token and the anchor,
 - the result is recorded as a dependency candidate for manual audit.
 
-This is conservative but not final classification.
+This is strict and intentionally conservative.
 """
 
 from __future__ import annotations
@@ -36,12 +37,11 @@ import argparse
 import json
 import re
 import sys
-import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-relative-dependency-candidates-v1"
+VERSION = "stage4-relative-dependency-candidates-v2"
 
 BOOK_CODES = {
     "mateo": "01",
@@ -73,31 +73,6 @@ BOOK_CODES = {
     "apocalipsis": "27",
 }
 
-# MorphGNT commonly marks relatives with RR. This list is a backup for source variation.
-RELATIVE_SURFACE_OR_LEMMA = {
-    "ὅς", "ος",
-    "ἥ", "η",
-    "ὅ", "ο",
-    "οὗ", "ου",
-    "ᾧ", "ω",
-    "ὅν", "ον",
-    "ἣν", "ην",
-    "οἵ", "οι",
-    "αἵ", "αι",
-    "ἅ", "α",
-    "ὧν", "ων",
-    "οἷς", "οις",
-    "αἷς", "αις",
-    "οὕς", "ους",
-    "ἅς", "ας",
-    "ὅστις", "οστις",
-    "ὅσος", "οσος",
-}
-
-# If another finite anchor appears between the relative token and the current anchor,
-# the relation is too risky for this simple detector.
-FINITE_MOODS = {"I", "S", "O", "D", "M"}
-
 
 @dataclass(frozen=True)
 class SourceToken:
@@ -109,27 +84,11 @@ class SourceToken:
     pos: str
     parsing: str
     greek: str
-    greek_clean: str
     lemma: str
-    lemma_clean: str
 
 
 def mna_root_from_script() -> Path:
     return Path(__file__).resolve().parents[2]
-
-
-def strip_greek_marks(value: str) -> str:
-    decomposed = unicodedata.normalize("NFD", value)
-    stripped = "".join(ch for ch in decomposed if unicodedata.category(ch) != "Mn")
-    return unicodedata.normalize("NFC", stripped).lower()
-
-
-def clean_surface(value: str) -> str:
-    return re.sub(
-        r"^[^\w\u0370-\u03ff\u1f00-\u1fff]+|[^\w\u0370-\u03ff\u1f00-\u1fff]+$",
-        "",
-        value,
-    )
 
 
 def canonical_morphgnt_dir(mna_root: Path) -> Path:
@@ -199,8 +158,6 @@ def load_source_tokens(path: Path, expected_book_code: str) -> dict[tuple[int, i
             key = (chapter, verse)
             verse_counts[key] = verse_counts.get(key, 0) + 1
 
-            greek = parts[3]
-            lemma = parts[-1]
             token = SourceToken(
                 source_line_number=source_line_number,
                 ref_code=ref_code,
@@ -209,10 +166,8 @@ def load_source_tokens(path: Path, expected_book_code: str) -> dict[tuple[int, i
                 token_index_in_verse=verse_counts[key],
                 pos=parts[1],
                 parsing=parts[2],
-                greek=greek,
-                greek_clean=clean_surface(greek),
-                lemma=lemma,
-                lemma_clean=clean_surface(lemma),
+                greek=parts[3],
+                lemma=parts[-1],
             )
             tokens_by_ref.setdefault(key, []).append(token)
 
@@ -260,16 +215,7 @@ def is_finite_source_token(token: SourceToken) -> bool:
 
 
 def is_relative_token(token: SourceToken) -> bool:
-    if token.pos == "RR":
-        return True
-
-    candidates = {
-        token.greek_clean,
-        token.lemma_clean,
-        strip_greek_marks(token.greek_clean),
-        strip_greek_marks(token.lemma_clean),
-    }
-    return bool(candidates & RELATIVE_SURFACE_OR_LEMMA)
+    return token.pos == "RR"
 
 
 def find_local_relative_trigger(
@@ -290,7 +236,8 @@ def find_local_relative_trigger(
             continue
 
         intervening = [
-            tok for tok in tokens
+            tok
+            for tok in tokens
             if candidate.token_index_in_verse < tok.token_index_in_verse < anchor_index
         ]
         if any(is_finite_source_token(tok) for tok in intervening):
@@ -307,7 +254,7 @@ def build_candidate_record(row: dict[str, object], relative: SourceToken) -> dic
         "candidate_status": "DEPENDENCY_CANDIDATE_FOR_MANUAL_AUDIT",
         "rule_family": "PC-DEP-CAND-REL",
         "rule_id": "PC-DEP-CAND-REL-001",
-        "reason": "Finite predicate anchor follows a local relative token with no intervening finite predicate in the same verse.",
+        "reason": "Finite predicate anchor follows a local MorphGNT relative token POS=RR with no intervening finite predicate in the same verse.",
         "official_stage4_classification_changed": "NO",
         "book": row["book"],
         "chapter": row["chapter"],
@@ -367,6 +314,7 @@ def detect_candidates(
         "anchor_skeleton_dataset": str(skeleton_path.relative_to(mna_root)),
         "morphgnt_source": str(morphgnt_path.relative_to(mna_root)),
         "window_tokens_before_anchor": window,
+        "relative_detection_rule": "MorphGNT POS=RR only",
         "anchors_inspected": len(rows),
         "dependency_candidates_found": len(candidates),
         "official_stage4_classification_changed": "NO",
@@ -399,6 +347,7 @@ def print_visible_output(
     print(f"OUTPUT: {output_path}")
     print(f"ANCHORS INSPECTED: {metadata['anchors_inspected']}")
     print(f"RELATIVE DEPENDENCY CANDIDATES FOUND: {metadata['dependency_candidates_found']}")
+    print("RELATIVE DETECTION RULE: MorphGNT POS=RR only")
     print("OFFICIAL STAGE 4 CLASSIFICATION CHANGED: NO")
     print()
     print("VISIBLE OUTPUT PREVIEW:")
