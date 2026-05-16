@@ -29,10 +29,22 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-independent-clause-candidates-v1"
+VERSION = "stage4-independent-clause-candidates-v2"
 
 NO_STATUS = "NO"
 UNRESOLVED_STATUS = "UNRESOLVED_CANDIDATE"
+
+AUDIT_DATASETS = {
+    "absolute-dependency-candidates": (
+        "audits/stage4/absolute-dependency-candidates/{book}.jsonl"
+    ),
+    "relative-dependency-candidates": (
+        "audits/stage4/relative-dependency-candidates/{book}.jsonl"
+    ),
+    "subordinator-dependency-candidates": (
+        "audits/stage4/subordinator-dependency-candidates/{book}.jsonl"
+    ),
+}
 
 
 def mna_root_from_script() -> Path:
@@ -69,22 +81,10 @@ def load_jsonl(path: Path) -> tuple[dict[str, object], list[dict[str, object]]]:
 
 
 def collect_dependency_candidate_sources(root: Path, book: str) -> dict[str, set[str]]:
-    audit_paths = {
-        "absolute-dependency-candidates": root
-        / "audits"
-        / "stage4"
-        / "absolute-dependency-candidates"
-        / f"{book}.jsonl",
-        "relative-dependency-candidates": root
-        / "audits"
-        / "stage4"
-        / "relative-dependency-candidates"
-        / f"{book}.jsonl",
-    }
-
     anchor_sources: dict[str, set[str]] = defaultdict(set)
 
-    for source_name, path in audit_paths.items():
+    for source_name, relative_template in AUDIT_DATASETS.items():
+        path = root / relative_template.format(book=book)
         if not path.is_file():
             continue
 
@@ -179,6 +179,7 @@ def build_dataset(book: str, root: Path) -> tuple[dict[str, object], list[dict[s
         "version": VERSION,
         "book": book,
         "source_dataset": str(completeness_path.relative_to(root)),
+        "audit_sources_used": sorted(AUDIT_DATASETS.keys()),
         "rows": len(rows),
         "independent_clause_candidate_NO": no_count,
         "independent_clause_candidate_UNRESOLVED": unresolved_count,
