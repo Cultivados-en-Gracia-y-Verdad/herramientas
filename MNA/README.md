@@ -1,4 +1,3 @@
-```
 # MNA — Mechanical New Testament Analysis
 
 MNA is a strictly mechanical linguistic extraction system.
