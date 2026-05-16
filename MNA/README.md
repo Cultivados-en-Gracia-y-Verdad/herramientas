@@ -1,4 +1,3 @@
-```
 # MNA — Mechanical New Testament Analysis
 
 MNA is a strictly mechanical linguistic extraction system.
@@ -10,12 +9,14 @@ Its purpose is NOT:
 - summaries,
 - themes,
 - outlines,
+- discourse reconstruction,
 - or inferred structure.
 
 Its purpose IS:
 - reproducible extraction,
 - visible outputs,
 - verifiable datasets,
+- auditable structure,
 - and mechanically regeneratable analysis.
 
 ---
@@ -29,18 +30,105 @@ No exceptions.
 
 ---
 
-# FAILURE THAT MUST NEVER HAPPEN AGAIN
+# ARCHITECTURAL FREEZE
 
-The previous project failed because:
+The project is currently under:
 
-- partial datasets were treated as completed systems,
-- invisible infrastructure was mistaken for usable output,
-- render layers were assumed instead of proven,
-- reproducibility was lost,
-- provenance became unclear,
-- and outputs were claimed before they existed.
+```text
+architectural correction and stabilization
+```
 
-This repository exists specifically to prevent that failure.
+This freeze exists to prevent interpretive drift.
+
+The system must not:
+- overclaim structure,
+- collapse provisional layers into final conclusions,
+- treat finite verbs as independent clauses,
+- allow connectors to generate structure,
+- silently reinterpret lower layers.
+
+---
+
+# VERIFIED PRINCIPLES
+
+## 1. Finite Verb ≠ Independent Clause
+
+A finite verb is:
+
+```text
+finite-clause center candidate
+```
+
+not:
+
+```text
+independent clause
+```
+
+Dependent clauses may still contain finite verbs.
+
+---
+
+## 2. Predicate Anchor ≠ Trunk
+
+A predicate anchor is:
+
+```text
+one verified finite verb
+```
+
+It is NOT:
+- trunk,
+- section,
+- unit,
+- final clause span.
+
+---
+
+## 3. Real Trunk = Independent-Clause Structure
+
+The real trunk is:
+
+```text
+independent-clause structure
+```
+
+not:
+- all finite verbs,
+- all predicate anchors,
+- all finite clauses.
+
+---
+
+## 4. Connectors Do Not Create Structure
+
+Connectors may:
+- signal relationships,
+- signal dependency,
+- signal continuation,
+- signal qualification.
+
+But connectors do NOT:
+- create trunk,
+- create units,
+- create sections,
+- create titles.
+
+---
+
+## 5. Independency Must Not Depend Primarily On Connectors
+
+Connector-first parsing leads rapidly to:
+- interpretive drift,
+- unstable restructuring,
+- discourse assumptions,
+- subjective dependency assignment.
+
+Therefore:
+
+```text
+predicate completeness and independency testing must precede connector-dominant analysis
+```
 
 ---
 
@@ -50,166 +138,202 @@ This repository exists specifically to prevent that failure.
 
 Nothing is considered complete unless:
 
-```bash
+```text
 command
 → visible output
 ```
 
 works end-to-end.
 
-Example:
+---
 
-```
-do 1corintios
-```
+## 2. EVERY DATASET MUST HAVE
 
-must actually render the requested artifact.
-
-Not theoretically.
- Not partially.
- Not internally.
-
-Visibly.
-
-------
-
-## 2. EVERY DATASET MUST HAVE:
-
-### a. source
+### source
 
 Where the data came from.
 
-### b. producer script
+### producer script
 
 Exactly which script generated it.
 
-### c. reproducible command
+### reproducible command
 
 The exact command used.
 
-### d. deterministic output
+### deterministic output
 
 Running the command again must reproduce the dataset.
 
-------
+---
 
 ## 3. IF IT CANNOT BE REGENERATED, DELETE IT
 
 No mystery files.
- No orphan datasets.
- No unexplained outputs.
- No manually drifting artifacts.
+No orphan datasets.
+No manually drifting artifacts.
 
-------
+---
 
 ## 4. NEVER CLAIM COMPLETION EARLY
 
 The following are NOT equivalent:
 
-- finite verbs
-- predicates
-- clauses
-- continuity
-- trunk
-- movement
-- ROOTS output
+- finite verbs,
+- predicate anchors,
+- finite clauses,
+- independent clauses,
+- trunk,
+- movement,
+- units,
+- titles.
 
-Each stage must be visibly validated independently.
+Each layer must be independently validated.
 
-------
+---
 
-## 5. EACH STAGE MUST PASS WHOLE-BOOK TESTS
+## 5. EVERY LAYER MUST REMAIN AUDITABLE
 
-Verse-level success means nothing.
+Every downstream layer must:
+- inherit from verified lower layers,
+- preserve provenance,
+- avoid silent reinterpretation,
+- remain mechanically reproducible.
 
-A stage only exists if it can process:
+---
 
-- an entire epistle,
-- consistently,
-- reproducibly,
-- visibly.
-
-------
-
-# REQUIRED PIPELINE ORDER
+# CURRENT VERIFIED PIPELINE
 
 ## Stage 1 — Finite Verbs
 
 Goal:
- Extract ONLY finite verbs mechanically from MorphGNT.
+Extract ONLY finite verbs mechanically from MorphGNT.
 
-Required visible output:
+Canonical commands:
 
+```bash
+python3 scripts/stage1/build_finite_verbs.py 1corintios
+python3 scripts/stage1/update_verification_ledger.py 1corintios --date 2026-05-15
 ```
-do-finite-verbs 1corintios
+
+Current status:
+
+```text
+VERIFIED
 ```
 
-------
+---
 
-## Stage 2 — Predicate Clauses
+## Stage 2 — Predicate Anchors
 
 Goal:
- Resolve actual predicate clauses from finite verbs.
+Stabilize finite-verb anchor coordinates.
 
-This stage is NOT complete until:
+A predicate anchor is:
 
+```text
+one verified finite verb inherited from Stage 1
 ```
-do-predicates 1corintios
+
+Canonical commands:
+
+```bash
+python3 scripts/stage2/build_predicate_anchors.py 1corintios
+python3 scripts/stage2/validate_predicate_anchors.py 1corintios
 ```
 
-renders a whole-book visible output.
+Current status:
 
-------
+```text
+VERIFIED
+```
 
-## Stage 3 — Clause Relationships
+---
 
-Only begins AFTER predicates are validated.
+## Stage 3 — Anchor Skeleton + Provisional Signatures
 
-------
+Goal:
+Produce ordered predicate-anchor sequencing.
 
-## Stage 4 — Trunk Reduction
+Current Stage 3 does NOT:
+- build real trunk,
+- establish independent clauses,
+- establish dependent clauses,
+- establish units.
 
-Only begins AFTER clause relationships are validated.
+Current `[S]`:
 
-------
+```text
+person/number signature change
+```
 
-## Stage 5 — Subject Continuity
+Current `[M]`:
 
-Only begins AFTER trunk reduction is stable.
+```text
+provisional movement signal only
+```
 
-------
+Canonical commands:
 
-## Stage 6 — Movement Detection
+```bash
+python3 scripts/stage3/build_anchor_skeleton.py 1corintios
+python3 scripts/stage3/validate_anchor_skeleton.py 1corintios
+```
 
-Only begins AFTER continuity is stable.
+Current status:
 
-------
+```text
+PROVISIONAL / FROZEN
+```
 
-# ABSOLUTE RULE
+Reason:
 
-No downstream layer may be trusted until the previous layer is visibly reproducible.
+Real trunk extraction requires:
+- finite-clause analysis,
+- independency testing,
+- dependency theory stabilization.
 
-------
+---
+
+# FUTURE PIPELINE DIRECTION
+
+The corrected architectural direction currently appears to be:
+
+```text
+Stage 1  finite verbs
+Stage 2  predicate anchors
+Stage 3  finite-clause candidates
+Stage 4  independency testing / predicate completeness
+Stage 5  trunk extraction (independent clauses only)
+Stage 6  connector relationships
+Stage 7  [S] + [M]
+Stage 8  labels / patterns / units
+Stage 9  titles
+```
+
+This sequence remains provisional until frozen formally.
+
+---
 
 # REQUIRED DIRECTORY STRUCTURE
 
-```
-mna/
+```text
+MNA/
 ├── README.md
-├── sources/
+├── SOURCES/
 ├── datasets/
-├── outputs/
+├── audits/
 ├── scripts/
 └── docs/
 ```
 
-------
+---
 
-# REQUIRED DATASET FORMAT
+# REQUIRED DATASET METADATA
 
-Every dataset must include metadata:
+Every dataset must include:
 
-```
+```json
 {
   "source": "...",
   "producer_script": "...",
@@ -219,7 +343,23 @@ Every dataset must include metadata:
 }
 ```
 
-------
+---
+
+# ANTI-DRIFT RULE
+
+The system must never:
+- imply certainty beyond verification,
+- silently reinterpret lower layers,
+- present heuristic structure as verified structure,
+- collapse provisional signals into final claims.
+
+Every layer must remain:
+- explicit,
+- auditable,
+- reproducible,
+- mechanically constrained.
+
+---
 
 # PHILOSOPHY
 
@@ -230,114 +370,4 @@ Visible outputs are more important than architecture.
 Reproducibility is more important than complexity.
 
 If the system cannot visibly regenerate the output,
- the system has failed.
-
-```
-And here is the continuation/startover document.
-
-```markdown
-# CONTINUATION — START OVER CORRECTLY
-
-The previous attempt failed because the project advanced beyond validated foundations.
-
-The restart must be radically simpler.
-
----
-
-# WHAT ACTUALLY EXISTS
-
-At the moment, the only clearly validated layer is:
-
-- finite verb extraction from MorphGNT.
-
-Everything else must be treated as experimental until visibly reproducible.
-
----
-
-# WHAT MUST HAPPEN NEXT
-
-## Step 1
-
-Rebuild finite verb extraction cleanly.
-
-Requirements:
-- one script,
-- one command,
-- one deterministic output.
-
-Example:
-
-```bash
-python3 scripts/build_finite_verbs.py 1corintios
-```
-
-Output:
-
-```
-datasets/finite-verbs/1corintios.jsonl
-```
-
-------
-
-## Step 2
-
-Validate whole-book finite verbs manually.
-
-No next stage until this passes visibly.
-
-------
-
-## Step 3
-
-Build REAL predicate clauses.
-
-NOT:
-
-- attached spans,
-- inferred phrases,
-- loose predications.
-
-REAL predicate boundaries.
-
-------
-
-# CRITICAL DISCIPLINE
-
-Never say:
-
-- “almost,”
-- “foundation,”
-- “support layer,”
-- “partially stable.”
-
-Either:
-
-- the output exists,
-   or:
-- it does not exist.
-
-------
-
-# VALIDATION STANDARD
-
-The ONLY valid proof is:
-
-```
-command
-→ whole-book output
-```
-
-------
-
-# REMEMBER
-
-The goal is not:
-
-- cleverness,
-- architecture,
-- diagnostics,
-- experiments.
-
-The goal is:
-
-- reproducible visible linguistic data.
+the system has failed.
