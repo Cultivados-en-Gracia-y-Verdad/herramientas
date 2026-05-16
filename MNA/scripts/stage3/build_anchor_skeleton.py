@@ -5,7 +5,7 @@ MNA Stage 3 — anchor skeleton only.
 PURPOSE
 - Read verified Stage 2A predicate anchors.
 - Produce an ordered predicate-anchor skeleton.
-- Preserve anchor order and identity for later stages.
+- Preserve anchor order, identity, and source coordinates for later stages.
 
 ABSOLUTE LIMITS
 This script does NOT determine:
@@ -39,7 +39,7 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage3-anchor-skeleton-v2"
+VERSION = "stage3-anchor-skeleton-v3"
 
 
 def mna_root_from_script() -> Path:
@@ -95,14 +95,20 @@ def build_anchor_skeleton_row(anchor: dict[str, object], anchor_order: int) -> d
         "chapter": anchor["chapter"],
         "verse": anchor["verse"],
         "reference": anchor["reference"],
+        "source_line_number": anchor["source_line_number"],
+        "token_index_in_verse": anchor["token_index_in_verse"],
+        "stage1_ref_code": anchor["stage1_ref_code"],
         "anchor_order": anchor_order,
         "greek_surface": anchor["greek_surface"],
         "greek_clean": anchor["greek_clean"],
         "lemma": anchor["lemma"],
         "morphology": anchor["morphology"],
         "mood": anchor["mood"],
+        "mood_code": anchor["mood_code"],
         "person": anchor["person"],
+        "person_code": anchor["person_code"],
         "number": anchor["number"],
+        "number_code": anchor["number_code"],
         "skeleton_status": "ordered_predicate_anchor_sequence",
         "trunk_claim": "NONE",
         "independent_clause_claim": "NONE",
@@ -138,6 +144,7 @@ def build_anchor_skeleton(book: str, input_path: Path, output_path: Path, mna_ro
         "predicate_anchor_dataset": str(input_path.relative_to(mna_root)),
         "predicate_anchors": len(anchors),
         "anchor_skeleton_rows": len(rows),
+        "source_coordinates_preserved": "source_line_number + token_index_in_verse",
         "trunk_claim": "NONE: real trunk = independent-clause structure, not built by this script.",
         "subject_marker_usage": "NONE: [S] belongs only to verified trunk clauses.",
         "movement_marker_usage": "NONE: [M] belongs only to verified trunk clauses.",
@@ -171,7 +178,8 @@ def print_visible_output(book: str, input_path: Path, output_path: Path, metadat
     for idx, row in enumerate(rows[:preview_lines], start=1):
         print(
             f"{idx:>4}. {row['predicate_anchor_id']} | {row['reference']} | "
-            f"{row['greek_surface']} | anchor_order={row['anchor_order']}"
+            f"{row['greek_surface']} | token={row['token_index_in_verse']} | "
+            f"anchor_order={row['anchor_order']}"
         )
 
     remaining = len(rows) - min(len(rows), preview_lines)
