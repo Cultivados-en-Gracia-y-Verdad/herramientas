@@ -41,7 +41,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-absolute-dependency-candidates-v1"
+VERSION = "stage4-absolute-dependency-candidates-v2"
 
 BOOK_CODES = {
     "mateo": "01",
@@ -73,8 +73,6 @@ BOOK_CODES = {
     "apocalipsis": "27",
 }
 
-# These are not used as connector-first classification rules.
-# They are local grammatical triggers used only when paired with a subjunctive finite anchor.
 SUBJUNCTIVE_DEPENDENCY_TRIGGERS = {
     "ἵνα",
     "ινα",
@@ -113,12 +111,33 @@ def strip_greek_marks(value: str) -> str:
 
 
 def clean_surface(value: str) -> str:
-    cleaned = re.sub(
+    return re.sub(
         r"^[^\w\u0370-\u03ff\u1f00-\u1fff]+|[^\w\u0370-\u03ff\u1f00-\u1fff]+$",
         "",
         value,
     )
-    return cleaned
+
+
+def token_index_from_anchor_id(predicate_anchor_id: str) -> Optional[int]:
+    """Recover token index from ids like 1corintios-1-10-pa-16-7.
+
+    This keeps Stage 4 compatible with anchor-skeleton datasets produced before
+    Stage 3 began preserving token_index_in_verse explicitly.
+    """
+    match = re.search(r"-pa-(\d+)-\d+$", predicate_anchor_id)
+    if not match:
+        return None
+    return int(match.group(1))
+
+
+def row_token_index(row: dict[str, object]) -> int:
+    if "token_index_in_verse" in row:
+        return int(row["token_index_in_verse"])
+
+    recovered = token_index_from_anchor_id(str(row.get("predicate_anchor_id", "")))
+    if recovered is None:
+        raise KeyError("token_index_in_verse")
+    return recovered
 
 
 def canonical_morphgnt_dir(mna_root: Path) -> Path:
@@ -162,9 +181,7 @@ def parse_ref(ref_code: str, expected_book_code: str) -> Optional[tuple[int, int
         return None
     if not digits.startswith(expected_book_code):
         return None
-    chapter = int(digits[-4:-2])
-    verse = int(digits[-2:])
-    return chapter, verse
+    return int(digits[-4:-2]), int(digits[-2:])
 
 
 def load_source_tokens(path: Path, expected_book_code: str) -> dict[tuple[int, int], list[SourceToken]]:
@@ -194,8 +211,6 @@ def load_source_tokens(path: Path, expected_book_code: str) -> dict[tuple[int, i
             parsing = parts[2]
             greek = parts[3]
             lemma = parts[-1]
-            greek_clean = clean_surface(greek)
-            lemma_clean = clean_surface(lemma)
 
             token = SourceToken(
                 source_line_number=source_line_number,
@@ -206,11 +221,10 @@ def load_source_tokens(path: Path, expected_book_code: str) -> dict[tuple[int, i
                 pos=pos,
                 parsing=parsing,
                 greek=greek,
-                greek_clean=greek_clean,
+                greek_clean=clean_surface(greek),
                 lemma=lemma,
-                lemma_clean=lemma_clean,
+                lemma_clean=clean_surface(lemma),
             )
-
             tokens_by_ref.setdefault(key, []).append(token)
 
     return tokens_by_ref
@@ -239,7 +253,9 @@ def load_anchor_skeleton(path: Path) -> tuple[dict[str, object], list[dict[str, 
             elif obj.get("record_type") == "anchor_skeleton_row":
                 rows.append(obj)
             else:
-                raise ValueError(f"Unexpected record_type at {path}:{line_number}: {obj.get('record_type')}")
+                raise ValueError(
+                    f"Unexpected record_type at {path}:{line_number}: {obj.get('record_type')}"
+                )
 
     if metadata is None:
         raise ValueError("Anchor skeleton dataset missing metadata row.")
@@ -270,7 +286,7 @@ def find_local_subjunctive_trigger(
 
     chapter = int(row["chapter"])
     verse = int(row["verse"])
-    token_index = int(row["token_index_in_verse"])
+    token_index = row_token_index(row)
 
     tokens = tokens_by_ref.get((chapter, verse), [])
     previous_tokens = [tok for tok in tokens if tok.token_index_in_verse < token_index]
@@ -297,12 +313,12 @@ def build_candidate_record(row: dict[str, object], trigger: SourceToken) -> dict
         "reference": row["reference"],
         "predicate_anchor_id": row["predicate_anchor_id"],
         "anchor_order": row["anchor_order"],
-        "anchor_token_index_in_verse": row["token_index_in_verse"],
+        "anchor_token_index_in_verse": row_token_index(row),
         "anchor_greek_surface": row["greek_surface"],
         "anchor_lemma": row["lemma"],
         "anchor_morphology": row["morphology"],
         "anchor_mood": row["mood"],
-        "anchor_mood_code": row["mood_code"],
+        "anchor_mood_code": row.get("mood_code", ""),
         "trigger_token_index_in_verse": trigger.token_index_in_verse,
         "trigger_greek_surface": trigger.greek,
         "trigger_lemma": trigger.lemma,
@@ -331,7 +347,6 @@ def detect_candidates(
         raise ValueError(f"Unsupported book slug: {book}")
 
     tokens_by_ref = load_source_tokens(morphgnt_path, expected_book_code)
-
     candidates = []
 
     for row in rows:
