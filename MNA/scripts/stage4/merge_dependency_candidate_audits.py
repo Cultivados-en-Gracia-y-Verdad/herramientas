@@ -27,7 +27,19 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-dependency-audit-merger-v1"
+VERSION = "stage4-dependency-audit-merger-v2"
+
+AUDIT_DATASETS = {
+    "absolute-dependency-candidates": (
+        "audits/stage4/absolute-dependency-candidates/{book}.jsonl"
+    ),
+    "relative-dependency-candidates": (
+        "audits/stage4/relative-dependency-candidates/{book}.jsonl"
+    ),
+    "subordinator-dependency-candidates": (
+        "audits/stage4/subordinator-dependency-candidates/{book}.jsonl"
+    ),
+}
 
 
 def mna_root_from_script() -> Path:
@@ -66,7 +78,7 @@ def collect_candidates(
     anchor_sources: dict[str, set[str]],
     detector_counts: dict[str, int],
 ) -> None:
-    metadata, rows = load_jsonl(path)
+    _metadata, rows = load_jsonl(path)
 
     count = 0
 
@@ -92,44 +104,22 @@ def main(argv: Optional[list[str]] = None) -> int:
         root = mna_root_from_script()
         book = args.book.strip().lower()
 
-        absolute_path = (
-            root
-            / "audits"
-            / "stage4"
-            / "absolute-dependency-candidates"
-            / f"{book}.jsonl"
-        )
-
-        relative_path = (
-            root
-            / "audits"
-            / "stage4"
-            / "relative-dependency-candidates"
-            / f"{book}.jsonl"
-        )
-
         anchor_sources: dict[str, set[str]] = defaultdict(set)
         detector_counts: dict[str, int] = {}
-
         datasets_loaded = []
 
-        if absolute_path.is_file():
-            collect_candidates(
-                "absolute-dependency-candidates",
-                absolute_path,
-                anchor_sources,
-                detector_counts,
-            )
-            datasets_loaded.append(absolute_path)
+        for dataset_name, relative_template in AUDIT_DATASETS.items():
+            path = root / relative_template.format(book=book)
+            if not path.is_file():
+                continue
 
-        if relative_path.is_file():
             collect_candidates(
-                "relative-dependency-candidates",
-                relative_path,
+                dataset_name,
+                path,
                 anchor_sources,
                 detector_counts,
             )
-            datasets_loaded.append(relative_path)
+            datasets_loaded.append(path)
 
         if not datasets_loaded:
             raise FileNotFoundError(
