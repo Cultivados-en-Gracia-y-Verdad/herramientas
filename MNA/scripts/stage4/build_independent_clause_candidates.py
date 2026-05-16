@@ -29,7 +29,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-independent-clause-candidates-v2"
+VERSION = "stage4-independent-clause-candidates-v3"
 
 NO_STATUS = "NO"
 UNRESOLVED_STATUS = "UNRESOLVED_CANDIDATE"
@@ -43,6 +43,9 @@ AUDIT_DATASETS = {
     ),
     "subordinator-dependency-candidates": (
         "audits/stage4/subordinator-dependency-candidates/{book}.jsonl"
+    ),
+    "content-clause-dependency-candidates": (
+        "audits/stage4/content-clause-dependency-candidates/{book}.jsonl"
     ),
 }
 
