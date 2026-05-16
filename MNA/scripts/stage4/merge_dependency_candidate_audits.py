@@ -3,10 +3,10 @@
 MNA Stage 4 — dependency candidate audit merger.
 
 PURPOSE
-- Read all Stage 4 dependency-candidate audit datasets.
+- Read approved Stage 4 dependency-candidate audit datasets.
 - Merge candidate predicate_anchor_id values.
 - Report unique candidate counts.
-- Report overlaps across detectors.
+- Report overlaps across approved detectors.
 
 IMPORTANT
 This script:
@@ -15,7 +15,13 @@ This script:
 - does NOT create trunk,
 - does NOT create [S] or [M].
 
-It only reports current audit reduction coverage.
+It only reports current approved audit reduction coverage.
+
+QUARANTINE NOTE
+The broad subordinator detector is intentionally excluded here because audit review
+showed it mixes true dependency with possible independent matrix clauses.
+It must be split into narrower hard-rule detectors before it can become an approved
+elimination source.
 """
 
 from __future__ import annotations
@@ -27,20 +33,23 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-dependency-audit-merger-v3"
+VERSION = "stage4-dependency-audit-merger-v4-quarantine-broad-subordinator"
 
-AUDIT_DATASETS = {
+APPROVED_AUDIT_DATASETS = {
     "absolute-dependency-candidates": (
         "audits/stage4/absolute-dependency-candidates/{book}.jsonl"
     ),
     "relative-dependency-candidates": (
         "audits/stage4/relative-dependency-candidates/{book}.jsonl"
     ),
-    "subordinator-dependency-candidates": (
-        "audits/stage4/subordinator-dependency-candidates/{book}.jsonl"
-    ),
     "content-clause-dependency-candidates": (
         "audits/stage4/content-clause-dependency-candidates/{book}.jsonl"
+    ),
+}
+
+QUARANTINED_AUDIT_DATASETS = {
+    "subordinator-dependency-candidates": (
+        "audits/stage4/subordinator-dependency-candidates/{book}.jsonl"
     ),
 }
 
@@ -96,9 +105,13 @@ def collect_candidates(
     detector_counts[dataset_name] = count
 
 
+def dataset_path(root: Path, template: str, book: str) -> Path:
+    return root / template.format(book=book)
+
+
 def main(argv: Optional[list[str]] = None) -> int:
     parser = argparse.ArgumentParser(
-        description="Merge Stage 4 dependency candidate audits."
+        description="Merge approved Stage 4 dependency candidate audits."
     )
     parser.add_argument("book", help="Book slug, e.g. 1corintios")
     args = parser.parse_args(argv)
@@ -110,9 +123,10 @@ def main(argv: Optional[list[str]] = None) -> int:
         anchor_sources: dict[str, set[str]] = defaultdict(set)
         detector_counts: dict[str, int] = {}
         datasets_loaded = []
+        quarantined_present = []
 
-        for dataset_name, relative_template in AUDIT_DATASETS.items():
-            path = root / relative_template.format(book=book)
+        for dataset_name, relative_template in APPROVED_AUDIT_DATASETS.items():
+            path = dataset_path(root, relative_template, book)
             if not path.is_file():
                 continue
 
@@ -124,9 +138,14 @@ def main(argv: Optional[list[str]] = None) -> int:
             )
             datasets_loaded.append(path)
 
+        for dataset_name, relative_template in QUARANTINED_AUDIT_DATASETS.items():
+            path = dataset_path(root, relative_template, book)
+            if path.is_file():
+                quarantined_present.append((dataset_name, path))
+
         if not datasets_loaded:
             raise FileNotFoundError(
-                "No Stage 4 dependency audit datasets found."
+                "No approved Stage 4 dependency audit datasets found."
             )
 
         total_unique = len(anchor_sources)
@@ -144,21 +163,29 @@ def main(argv: Optional[list[str]] = None) -> int:
         print(f"VERSION: {VERSION}")
         print()
 
-        print("AUDIT DATASETS LOADED:")
+        print("APPROVED AUDIT DATASETS LOADED:")
         for dataset in datasets_loaded:
             print(f"  - {dataset}")
 
         print()
-        print("RAW DETECTOR COUNTS:")
+        print("QUARANTINED AUDIT DATASETS PRESENT BUT EXCLUDED:")
+        if not quarantined_present:
+            print("  - (none)")
+        else:
+            for dataset_name, path in quarantined_present:
+                print(f"  - {dataset_name}: {path}")
+
+        print()
+        print("RAW APPROVED DETECTOR COUNTS:")
         for detector_name in sorted(detector_counts):
             print(f"  - {detector_name}: {detector_counts[detector_name]}")
 
         print()
-        print(f"UNIQUE PREDICATE ANCHOR IDS: {total_unique}")
-        print(f"OVERLAPPING ANCHOR IDS: {overlap_count}")
+        print(f"UNIQUE APPROVED PREDICATE ANCHOR IDS: {total_unique}")
+        print(f"APPROVED OVERLAPPING ANCHOR IDS: {overlap_count}")
 
         print()
-        print("OVERLAP PREVIEW:")
+        print("APPROVED OVERLAP PREVIEW:")
 
         preview = list(sorted(overlaps.items()))[:25]
         if not preview:
