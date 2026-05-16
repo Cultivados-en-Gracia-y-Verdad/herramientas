@@ -27,7 +27,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-dependency-audit-merger-v2"
+VERSION = "stage4-dependency-audit-merger-v3"
 
 AUDIT_DATASETS = {
     "absolute-dependency-candidates": (
@@ -38,6 +38,9 @@ AUDIT_DATASETS = {
     ),
     "subordinator-dependency-candidates": (
         "audits/stage4/subordinator-dependency-candidates/{book}.jsonl"
+    ),
+    "content-clause-dependency-candidates": (
+        "audits/stage4/content-clause-dependency-candidates/{book}.jsonl"
     ),
 }
 
