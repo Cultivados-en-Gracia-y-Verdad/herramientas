@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """
-MNA Stage 3 validator — anchor skeleton + provisional signatures.
+MNA Stage 3 validator — anchor skeleton only.
 
 PURPOSE
 - Validate Stage 3 anchor skeleton datasets.
 - Verify ordered inheritance from predicate anchors.
-- Verify mechanical [S] markers.
-- Verify provisional [M] signal markers.
+- Verify Stage 3 remains free of trunk-only markers.
 
 ABSOLUTE LIMITS
 This validator does NOT validate:
 - independent clauses,
 - dependent clauses,
 - real trunk,
+- [S],
+- [M],
 - connectors,
 - labels,
 - patterns,
@@ -29,7 +30,7 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage3-anchor-skeleton-validator-v1"
+VERSION = "stage3-anchor-skeleton-validator-v2"
 
 
 def load_jsonl(path: Path) -> tuple[dict[str, object], list[dict[str, object]]]:
@@ -80,12 +81,10 @@ def validate(book: str, anchor_path: Path, skeleton_path: Path) -> dict[str, obj
     skeleton_count = len(skeleton_rows)
 
     duplicate_anchor_ids = 0
-    missing_subject_signature = 0
-    missing_movement_signal_signature = 0
-    invalid_s_markers = 0
-    invalid_m_signal_markers = 0
     ordering_errors = 0
     trunk_claim_errors = 0
+    subject_marker_errors = 0
+    movement_marker_errors = 0
     connector_data_errors = 0
     label_data_errors = 0
     unit_data_errors = 0
@@ -97,8 +96,6 @@ def validate(book: str, anchor_path: Path, skeleton_path: Path) -> dict[str, obj
 
     seen_ids = set()
     previous_anchor_order = 0
-    previous_subject = None
-    previous_movement_signal = None
 
     for row in skeleton_rows:
         anchor_id = str(row.get("predicate_anchor_id"))
@@ -108,37 +105,19 @@ def validate(book: str, anchor_path: Path, skeleton_path: Path) -> dict[str, obj
             duplicate_anchor_ids += 1
         seen_ids.add(anchor_id)
 
-        if not row.get("subject_signature"):
-            missing_subject_signature += 1
-
-        if not row.get("movement_signal_signature"):
-            missing_movement_signal_signature += 1
-
         anchor_order = int(row.get("anchor_order", 0))
         if anchor_order <= previous_anchor_order:
             ordering_errors += 1
         previous_anchor_order = anchor_order
 
-        current_subject = row.get("subject_signature")
-        current_movement_signal = row.get("movement_signal_signature")
-
-        expected_s = ""
-        expected_m = ""
-
-        if previous_subject is not None and current_subject != previous_subject:
-            expected_s = "[S]"
-
-        if previous_movement_signal is not None and current_movement_signal != previous_movement_signal:
-            expected_m = "[M]"
-
-        if row.get("subject_change_marker") != expected_s:
-            invalid_s_markers += 1
-
-        if row.get("movement_signal_marker") != expected_m:
-            invalid_m_signal_markers += 1
-
         if row.get("trunk_claim") != "NONE":
             trunk_claim_errors += 1
+
+        if row.get("subject_change_marker") != "NOT_APPLICABLE_BEFORE_TRUNK":
+            subject_marker_errors += 1
+
+        if row.get("movement_marker") != "NOT_APPLICABLE_BEFORE_TRUNK":
+            movement_marker_errors += 1
 
         if row.get("connector_data") != "NONE":
             connector_data_errors += 1
@@ -152,9 +131,6 @@ def validate(book: str, anchor_path: Path, skeleton_path: Path) -> dict[str, obj
         if row.get("title_data") != "NONE":
             title_data_errors += 1
 
-        previous_subject = current_subject
-        previous_movement_signal = current_movement_signal
-
     if expected_anchor_ids != actual_anchor_ids:
         inheritance_errors += 1
 
@@ -163,12 +139,10 @@ def validate(book: str, anchor_path: Path, skeleton_path: Path) -> dict[str, obj
     failure_values = [
         anchor_count != skeleton_count,
         duplicate_anchor_ids,
-        missing_subject_signature,
-        missing_movement_signal_signature,
-        invalid_s_markers,
-        invalid_m_signal_markers,
         ordering_errors,
         trunk_claim_errors,
+        subject_marker_errors,
+        movement_marker_errors,
         connector_data_errors,
         label_data_errors,
         unit_data_errors,
@@ -183,12 +157,10 @@ def validate(book: str, anchor_path: Path, skeleton_path: Path) -> dict[str, obj
         "predicate_anchors": anchor_count,
         "anchor_skeleton_rows": skeleton_count,
         "duplicate_anchor_ids": duplicate_anchor_ids,
-        "missing_subject_signature": missing_subject_signature,
-        "missing_movement_signal_signature": missing_movement_signal_signature,
-        "invalid_s_markers": invalid_s_markers,
-        "invalid_m_signal_markers": invalid_m_signal_markers,
         "ordering_errors": ordering_errors,
         "trunk_claim_errors": trunk_claim_errors,
+        "subject_marker_errors": subject_marker_errors,
+        "movement_marker_errors": movement_marker_errors,
         "connector_data_errors": connector_data_errors,
         "label_data_errors": label_data_errors,
         "unit_data_errors": unit_data_errors,
@@ -199,19 +171,17 @@ def validate(book: str, anchor_path: Path, skeleton_path: Path) -> dict[str, obj
 
 
 def print_visible_output(book: str, anchor_path: Path, skeleton_path: Path, result: dict[str, object]) -> None:
-    print("MNA Stage 3 Validation — Anchor Skeleton + provisional signatures")
+    print("MNA Stage 3 Validation — Anchor Skeleton Only")
     print(f"BOOK: {book}")
     print(f"ANCHOR DATASET: {anchor_path}")
     print(f"ANCHOR SKELETON DATASET: {skeleton_path}")
     print(f"PREDICATE_ANCHORS: {result['predicate_anchors']}")
     print(f"ANCHOR_SKELETON_ROWS: {result['anchor_skeleton_rows']}")
     print(f"DUPLICATE_ANCHOR_IDS: {result['duplicate_anchor_ids']}")
-    print(f"MISSING_SUBJECT_SIGNATURE: {result['missing_subject_signature']}")
-    print(f"MISSING_MOVEMENT_SIGNAL_SIGNATURE: {result['missing_movement_signal_signature']}")
-    print(f"INVALID_S_MARKERS: {result['invalid_s_markers']}")
-    print(f"INVALID_M_SIGNAL_MARKERS: {result['invalid_m_signal_markers']}")
     print(f"ORDERING_ERRORS: {result['ordering_errors']}")
     print(f"TRUNK_CLAIM_ERRORS: {result['trunk_claim_errors']}")
+    print(f"SUBJECT_MARKER_ERRORS: {result['subject_marker_errors']}")
+    print(f"MOVEMENT_MARKER_ERRORS: {result['movement_marker_errors']}")
     print(f"CONNECTOR_DATA_ERRORS: {result['connector_data_errors']}")
     print(f"LABEL_DATA_ERRORS: {result['label_data_errors']}")
     print(f"UNIT_DATA_ERRORS: {result['unit_data_errors']}")
