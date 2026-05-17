@@ -3,8 +3,9 @@
 MNA Stage 4 — Local Clause Span Audit
 
 PURPOSE
-- Estimate local clause spans around predicate-completeness anchors conservatively.
-- Provide auditable span reconstruction for survivability inspection.
+- Estimate local clause spans around predicate anchors conservatively.
+- Reconstruct token spans from the anchor skeleton token stream.
+- Provide auditable local clause environments for survivability inspection.
 
 IMPORTANT
 This script does NOT:
@@ -16,11 +17,6 @@ This script does NOT:
 - create sections.
 
 This is an audit-only reconstruction layer.
-
-CRITICAL DESIGN NOTE
-- Every row in predicate-completeness is already a predicate anchor.
-- This script must NOT re-decide finiteness from the morphology string.
-- It uses predicate-completeness row order as the authoritative anchor stream.
 """
 
 from __future__ import annotations
@@ -30,7 +26,9 @@ import json
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-local-clause-span-audit-v2-anchor-stream"
+VERSION = "stage4-local-clause-span-audit-v3-anchor-skeleton-token-stream"
+
+FINITE_STOPPING_MOODS = {"I", "S", "O", "M"}
 
 
 def mna_root_from_script() -> Path:
@@ -57,6 +55,15 @@ def load_jsonl(path: Path):
     return metadata, rows
 
 
+def is_finite_anchor(row: dict) -> bool:
+    morphology = str(row.get("morphology", ""))
+
+    if len(morphology) < 4:
+        return False
+
+    return morphology[3] in FINITE_STOPPING_MOODS
+
+
 def build_verse_index(rows: list[dict]):
     verses = {}
 
@@ -75,31 +82,31 @@ def build_verse_index(rows: list[dict]):
     return verses
 
 
-def estimate_clause_span(current_index: int, verse_rows: list[dict]):
-    """
-    Primitive predicate-anchor span estimate.
+def estimate_clause_span(anchor_position: int, verse_rows: list[dict]):
+    left = anchor_position
+    right = anchor_position
 
-    Since predicate-completeness already contains predicate anchors only,
-    the nearest previous/next predicate anchor becomes the hard stopping point.
+    idx = anchor_position - 1
 
-    This is intentionally conservative and primitive:
-    - it does not claim trunk,
-    - it does not prove independence,
-    - it only exposes the local predicate-to-predicate span for audit.
-    """
-
-    left = current_index
-    right = current_index
-
-    idx = current_index - 1
     while idx >= 0:
-        # Previous predicate anchor stops the span.
-        break
+        row = verse_rows[idx]
 
-    idx = current_index + 1
+        if is_finite_anchor(row):
+            break
+
+        left = idx
+        idx -= 1
+
+    idx = anchor_position + 1
+
     while idx < len(verse_rows):
-        # Next predicate anchor stops the span.
-        break
+        row = verse_rows[idx]
+
+        if is_finite_anchor(row):
+            break
+
+        right = idx
+        idx += 1
 
     return left, right
 
@@ -111,21 +118,21 @@ def build_span_text(rows: list[dict], left: int, right: int) -> str:
     )
 
 
-def build_row(row: dict, span_text: str, left_row: dict, right_row: dict):
+def build_row(anchor_row, span_text, left_row, right_row):
     return {
         "record_type": "local_clause_span_audit_row",
-        "predicate_anchor_id": row.get("predicate_anchor_id"),
-        "book": row.get("book"),
-        "chapter": row.get("chapter"),
-        "verse": row.get("verse"),
-        "reference": row.get("reference"),
-        "anchor_order": row.get("anchor_order"),
-        "anchor_token_index_in_verse": row.get("token_index_in_verse"),
-        "anchor_greek_surface": row.get("greek_surface"),
+        "predicate_anchor_id": anchor_row.get("predicate_anchor_id"),
+        "book": anchor_row.get("book"),
+        "chapter": anchor_row.get("chapter"),
+        "verse": anchor_row.get("verse"),
+        "reference": anchor_row.get("reference"),
+        "anchor_order": anchor_row.get("anchor_order"),
+        "anchor_token_index_in_verse": anchor_row.get("token_index_in_verse"),
+        "anchor_greek_surface": anchor_row.get("greek_surface"),
         "estimated_clause_span": span_text,
         "span_left_token_index": left_row.get("token_index_in_verse"),
         "span_right_token_index": right_row.get("token_index_in_verse"),
-        "span_method": "predicate_completeness_anchor_stream_v2_single_anchor_primitive",
+        "span_method": "anchor_skeleton_local_walk_v3",
         "official_stage4_classification_changed": "NO",
         "trunk_claim": "NONE",
         "subject_marker_claim": "NONE",
@@ -142,27 +149,53 @@ def main(argv: Optional[list[str]] = None):
     root = mna_root_from_script()
     book = args.book.strip().lower()
 
-    input_path = root / "datasets" / "predicate-completeness" / f"{book}.jsonl"
+    predicate_path = root / "datasets" / "predicate-completeness" / f"{book}.jsonl"
+    skeleton_path = root / "datasets" / "anchor-skeleton" / f"{book}.jsonl"
+
     output_path = root / "audits" / "stage4" / "local-clause-span-audit" / f"{book}.jsonl"
 
-    _metadata, rows = load_jsonl(input_path)
-    verses = build_verse_index(rows)
+    _predicate_metadata, predicate_rows = load_jsonl(predicate_path)
+    _skeleton_metadata, skeleton_rows = load_jsonl(skeleton_path)
+
+    verses = build_verse_index(skeleton_rows)
 
     audit_rows = []
 
-    for verse_rows in verses.values():
-        for current_index, row in enumerate(verse_rows):
-            left, right = estimate_clause_span(current_index, verse_rows)
-            span_text = build_span_text(verse_rows, left, right)
+    for anchor_row in predicate_rows:
+        key = (
+            anchor_row.get("book"),
+            anchor_row.get("chapter"),
+            anchor_row.get("verse"),
+        )
 
-            audit_rows.append(
-                build_row(
-                    row,
-                    span_text,
-                    verse_rows[left],
-                    verse_rows[right],
-                )
+        verse_rows = verses.get(key, [])
+
+        anchor_token_index = int(anchor_row.get("token_index_in_verse", 0))
+
+        anchor_position = None
+
+        for idx, row in enumerate(verse_rows):
+            token_index = int(row.get("token_index_in_verse", 0))
+
+            if token_index == anchor_token_index:
+                anchor_position = idx
+                break
+
+        if anchor_position is None:
+            continue
+
+        left, right = estimate_clause_span(anchor_position, verse_rows)
+
+        span_text = build_span_text(verse_rows, left, right)
+
+        audit_rows.append(
+            build_row(
+                anchor_row,
+                span_text,
+                verse_rows[left],
+                verse_rows[right],
             )
+        )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -171,10 +204,11 @@ def main(argv: Optional[list[str]] = None):
         "stage": "Stage 4 — Local Clause Span Audit",
         "version": VERSION,
         "book": book,
-        "source_dataset": str(input_path.relative_to(root)),
-        "rows_inspected": len(rows),
+        "predicate_dataset": str(predicate_path.relative_to(root)),
+        "anchor_skeleton_dataset": str(skeleton_path.relative_to(root)),
+        "rows_inspected": len(predicate_rows),
         "rows_written": len(audit_rows),
-        "span_method": "predicate_completeness_anchor_stream_v2_single_anchor_primitive",
+        "span_method": "anchor_skeleton_local_walk_v3",
         "official_stage4_classification_changed": "NO",
     }
 
@@ -186,11 +220,12 @@ def main(argv: Optional[list[str]] = None):
 
     print("MNA Stage 4 — Local Clause Span Audit")
     print(f"BOOK: {book}")
-    print(f"INPUT: {input_path}")
+    print(f"PREDICATE DATASET: {predicate_path}")
+    print(f"ANCHOR SKELETON: {skeleton_path}")
     print(f"OUTPUT: {output_path}")
-    print(f"ROWS INSPECTED: {len(rows)}")
+    print(f"ROWS INSPECTED: {len(predicate_rows)}")
     print(f"ROWS WRITTEN: {len(audit_rows)}")
-    print("SPAN METHOD: predicate_completeness_anchor_stream_v2_single_anchor_primitive")
+    print("SPAN METHOD: anchor_skeleton_local_walk_v3")
     print("OFFICIAL STAGE 4 CLASSIFICATION CHANGED: NO")
     print()
     print("VISIBLE OUTPUT PREVIEW:")
