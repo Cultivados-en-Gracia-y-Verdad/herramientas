@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-MNA Stage 4 — infinitive-governed dependency candidate detector.
+MNA Stage 4 — infinitive-governed environment audit.
 
 PURPOSE
-- Read Stage 3 anchor skeleton rows.
-- Read MorphGNT source tokens for local context.
-- Detect finite predicate anchors in narrow infinitive-governed environments.
+- Inspect narrow infinitive-governed environments.
+- Surface possible patterns for later detector design.
 
 IMPORTANT
-This script is an AUDIT detector, not the official classifier.
+This script is NOT an approved dependency detector.
+It is deliberately audit-only because first-pass output showed that predicates
+near governed infinitives may still be independent matrix clauses.
 
 It does NOT change:
 - Stage 1,
@@ -20,17 +21,8 @@ It does NOT change:
 - [S],
 - [M].
 
-It writes candidate evidence only.
-
-CURRENT DETECTION FAMILY
-PC-DEP-CAND-INF-GOV-001:
-- a narrow governing finite predicate appears locally,
-- an infinitive appears locally after that governor,
-- a finite predicate anchor appears after the infinitive in the same local span,
-- no additional finite predicate intervenes between the infinitive and the target anchor,
-- the result is recorded as a dependency candidate for manual audit.
-
-This detector is intentionally conservative and audit-only.
+It writes environment evidence only.
+No rows from this script should be merged into official Stage 4 elimination.
 """
 
 from __future__ import annotations
@@ -43,47 +35,21 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-infinitive-governed-dependency-candidates-v1"
+VERSION = "stage4-infinitive-governed-environment-audit-v2-quarantined"
 
 BOOK_CODES = {
-    "mateo": "01",
-    "marcos": "02",
-    "lucas": "03",
-    "juan": "04",
-    "hechos": "05",
-    "romanos": "06",
-    "1corintios": "07",
-    "2corintios": "08",
-    "galatas": "09",
-    "efesios": "10",
-    "filipenses": "11",
-    "colosenses": "12",
-    "1tesalonicenses": "13",
-    "2tesalonicenses": "14",
-    "1timoteo": "15",
-    "2timoteo": "16",
-    "tito": "17",
-    "filemon": "18",
-    "hebreos": "19",
-    "santiago": "20",
-    "1pedro": "21",
-    "2pedro": "22",
-    "1juan": "23",
-    "2juan": "24",
-    "3juan": "25",
-    "judas": "26",
-    "apocalipsis": "27",
+    "mateo": "01", "marcos": "02", "lucas": "03", "juan": "04",
+    "hechos": "05", "romanos": "06", "1corintios": "07",
+    "2corintios": "08", "galatas": "09", "efesios": "10",
+    "filipenses": "11", "colosenses": "12", "1tesalonicenses": "13",
+    "2tesalonicenses": "14", "1timoteo": "15", "2timoteo": "16",
+    "tito": "17", "filemon": "18", "hebreos": "19",
+    "santiago": "20", "1pedro": "21", "2pedro": "22",
+    "1juan": "23", "2juan": "24", "3juan": "25",
+    "judas": "26", "apocalipsis": "27",
 }
 
-# Deliberately narrow first-pass list.
-# These are lemmas, not English semantic guesses.
-GOVERNING_LEMMAS = {
-    "δύναμαι",
-    "θέλω",
-    "μέλλω",
-    "δεῖ",
-    "ἄρχομαι",
-}
+GOVERNING_LEMMAS = {"δύναμαι", "θέλω", "μέλλω", "δεῖ", "ἄρχομαι"}
 
 
 @dataclass(frozen=True)
@@ -113,22 +79,6 @@ def clean_surface(value: str) -> str:
     )
 
 
-def canonical_morphgnt_dir(mna_root: Path) -> Path:
-    return mna_root / "SOURCES" / "MorphGNT"
-
-
-def candidate_sources(mna_root: Path, book: str) -> list[Path]:
-    morph_dir = canonical_morphgnt_dir(mna_root)
-    return [
-        morph_dir / f"{book}.txt",
-        morph_dir / f"{book}.md",
-        morph_dir / f"{book}-morphgnt.txt",
-        morph_dir / f"{book}-morphgnt.md",
-        morph_dir / "morphgnt.txt",
-        morph_dir / "MorphGNT.txt",
-    ]
-
-
 def resolve_source(mna_root: Path, book: str, explicit_source: Optional[str]) -> Path:
     if explicit_source:
         path = Path(explicit_source)
@@ -138,21 +88,24 @@ def resolve_source(mna_root: Path, book: str, explicit_source: Optional[str]) ->
             raise FileNotFoundError(f"Explicit source file not found: {path}")
         return path
 
-    tried = candidate_sources(mna_root, book)
+    morph_dir = mna_root / "SOURCES" / "MorphGNT"
+    tried = [
+        morph_dir / f"{book}.txt",
+        morph_dir / f"{book}.md",
+        morph_dir / f"{book}-morphgnt.txt",
+        morph_dir / f"{book}-morphgnt.md",
+        morph_dir / "morphgnt.txt",
+        morph_dir / "MorphGNT.txt",
+    ]
     for path in tried:
         if path.is_file():
             return path
-
-    raise FileNotFoundError(
-        "No MorphGNT source file found. Tried:\n" + "\n".join(str(p) for p in tried)
-    )
+    raise FileNotFoundError("No MorphGNT source file found. Tried:\n" + "\n".join(str(p) for p in tried))
 
 
 def parse_ref(ref_code: str, expected_book_code: str) -> Optional[tuple[int, int]]:
     digits = re.sub(r"\D", "", ref_code)
-    if len(digits) < 6:
-        return None
-    if not digits.startswith(expected_book_code):
+    if len(digits) < 6 or not digits.startswith(expected_book_code):
         return None
     return int(digits[-4:-2]), int(digits[-2:])
 
@@ -171,31 +124,30 @@ def load_source_tokens(path: Path, expected_book_code: str) -> dict[tuple[int, i
             if len(parts) < 5:
                 continue
 
-            ref_code = parts[0]
-            parsed = parse_ref(ref_code, expected_book_code)
+            parsed = parse_ref(parts[0], expected_book_code)
             if parsed is None:
                 continue
 
             chapter, verse = parsed
             key = (chapter, verse)
             verse_counts[key] = verse_counts.get(key, 0) + 1
-
             greek = parts[3]
             lemma = parts[-1]
-            token = SourceToken(
-                source_line_number=source_line_number,
-                ref_code=ref_code,
-                chapter=chapter,
-                verse=verse,
-                token_index_in_verse=verse_counts[key],
-                pos=parts[1],
-                parsing=parts[2],
-                greek=greek,
-                greek_clean=clean_surface(greek),
-                lemma=lemma,
-                lemma_clean=clean_surface(lemma),
+            tokens_by_ref.setdefault(key, []).append(
+                SourceToken(
+                    source_line_number=source_line_number,
+                    ref_code=parts[0],
+                    chapter=chapter,
+                    verse=verse,
+                    token_index_in_verse=verse_counts[key],
+                    pos=parts[1],
+                    parsing=parts[2],
+                    greek=greek,
+                    greek_clean=clean_surface(greek),
+                    lemma=lemma,
+                    lemma_clean=clean_surface(lemma),
+                )
             )
-            tokens_by_ref.setdefault(key, []).append(token)
 
     return tokens_by_ref
 
@@ -206,13 +158,11 @@ def load_anchor_skeleton(path: Path) -> tuple[dict[str, object], list[dict[str, 
 
     metadata = None
     rows = []
-
     with path.open("r", encoding="utf-8") as handle:
         for line_number, raw in enumerate(handle, start=1):
             stripped = raw.strip()
             if not stripped:
                 continue
-
             try:
                 obj = json.loads(stripped)
             except json.JSONDecodeError as exc:
@@ -223,13 +173,10 @@ def load_anchor_skeleton(path: Path) -> tuple[dict[str, object], list[dict[str, 
             elif obj.get("record_type") == "anchor_skeleton_row":
                 rows.append(obj)
             else:
-                raise ValueError(
-                    f"Unexpected record_type at {path}:{line_number}: {obj.get('record_type')}"
-                )
+                raise ValueError(f"Unexpected record_type at {path}:{line_number}: {obj.get('record_type')}")
 
     if metadata is None:
         raise ValueError("Anchor skeleton dataset missing metadata row.")
-
     return metadata, rows
 
 
@@ -252,71 +199,51 @@ def is_infinitive_source_token(token: SourceToken) -> bool:
 
 
 def is_governing_predicate(token: SourceToken) -> bool:
-    if not is_finite_source_token(token):
-        return False
-    return token.lemma_clean in GOVERNING_LEMMAS
+    return is_finite_source_token(token) and token.lemma_clean in GOVERNING_LEMMAS
 
 
-def row_anchor_index(row: dict[str, object]) -> int:
-    return int(row["token_index_in_verse"])
-
-
-def find_infinitive_environment(
+def find_environment_near_anchor(
     row: dict[str, object],
     tokens_by_ref: dict[tuple[int, int], list[SourceToken]],
     window: int,
-) -> Optional[tuple[SourceToken, SourceToken]]:
+) -> Optional[tuple[SourceToken, SourceToken, str]]:
     chapter = int(row["chapter"])
     verse = int(row["verse"])
-    anchor_index = row_anchor_index(row)
+    anchor_index = int(row["token_index_in_verse"])
     tokens = tokens_by_ref.get((chapter, verse), [])
 
-    previous_tokens = [tok for tok in tokens if tok.token_index_in_verse < anchor_index]
-    local_tokens = previous_tokens[-window:]
+    local = [
+        tok for tok in tokens
+        if anchor_index - window <= tok.token_index_in_verse <= anchor_index + window
+    ]
 
-    # Search nearest infinitive before the target anchor.
-    for infinitive in reversed(local_tokens):
-        if not is_infinitive_source_token(infinitive):
-            continue
+    governors = [tok for tok in local if is_governing_predicate(tok)]
+    infinitives = [tok for tok in local if is_infinitive_source_token(tok)]
+    if not governors or not infinitives:
+        return None
 
-        between_infinitive_and_anchor = [
-            tok
-            for tok in tokens
-            if infinitive.token_index_in_verse < tok.token_index_in_verse < anchor_index
-        ]
-        if any(is_finite_source_token(tok) for tok in between_infinitive_and_anchor):
-            continue
+    nearest_governor = min(governors, key=lambda tok: abs(tok.token_index_in_verse - anchor_index))
+    nearest_infinitive = min(infinitives, key=lambda tok: abs(tok.token_index_in_verse - anchor_index))
 
-        before_infinitive = [
-            tok
-            for tok in local_tokens
-            if tok.token_index_in_verse < infinitive.token_index_in_verse
-        ]
+    if nearest_governor.token_index_in_verse < nearest_infinitive.token_index_in_verse < anchor_index:
+        risk = "UNSAFE_AFTER_INFINITIVE_NOT_APPROVED_FOR_ELIMINATION"
+    elif nearest_governor.token_index_in_verse < anchor_index < nearest_infinitive.token_index_in_verse:
+        risk = "BETWEEN_GOVERNOR_AND_INFINITIVE_REVIEW_ONLY"
+    else:
+        risk = "INF_GOV_ENVIRONMENT_REVIEW_ONLY"
 
-        for governor in reversed(before_infinitive):
-            if not is_governing_predicate(governor):
-                continue
-
-            between_governor_and_infinitive = [
-                tok
-                for tok in tokens
-                if governor.token_index_in_verse < tok.token_index_in_verse < infinitive.token_index_in_verse
-            ]
-            if any(is_finite_source_token(tok) for tok in between_governor_and_infinitive):
-                continue
-
-            return governor, infinitive
-
-    return None
+    return nearest_governor, nearest_infinitive, risk
 
 
-def build_candidate_record(row: dict[str, object], governor: SourceToken, infinitive: SourceToken) -> dict[str, object]:
+def build_audit_record(row: dict[str, object], governor: SourceToken, infinitive: SourceToken, risk: str) -> dict[str, object]:
     return {
-        "record_type": "infinitive_governed_dependency_candidate",
-        "candidate_status": "DEPENDENCY_CANDIDATE_FOR_MANUAL_AUDIT",
-        "rule_family": "PC-DEP-CAND-INF-GOV",
-        "rule_id": "PC-DEP-CAND-INF-GOV-001",
-        "reason": "Finite predicate anchor follows local infinitive governed by a narrow finite predicate, with no intervening finite predicate after the infinitive.",
+        "record_type": "infinitive_governed_environment_audit_row",
+        "audit_status": risk,
+        "approved_for_official_elimination": "NO",
+        "candidate_status": "NOT_A_DEPENDENCY_CANDIDATE",
+        "rule_family": "PC-INF-GOV-AUDIT",
+        "rule_id": "PC-INF-GOV-AUDIT-001",
+        "reason": "Infinitive-governed environment detected near finite predicate; proximity alone is not sufficient to prove finite predicate dependency.",
         "official_stage4_classification_changed": "NO",
         "book": row["book"],
         "chapter": row["chapter"],
@@ -345,7 +272,7 @@ def build_candidate_record(row: dict[str, object], governor: SourceToken, infini
     }
 
 
-def detect_candidates(
+def detect_audit_rows(
     book: str,
     skeleton_path: Path,
     morphgnt_path: Path,
@@ -354,46 +281,39 @@ def detect_candidates(
     window: int,
 ) -> tuple[dict[str, object], list[dict[str, object]]]:
     skeleton_metadata, rows = load_anchor_skeleton(skeleton_path)
-
     if str(skeleton_metadata.get("book")) != book:
-        raise ValueError(
-            f"Requested book '{book}' but anchor skeleton dataset is '{skeleton_metadata.get('book')}'."
-        )
+        raise ValueError(f"Requested book '{book}' but anchor skeleton dataset is '{skeleton_metadata.get('book')}'.")
 
     expected_book_code = BOOK_CODES.get(book)
     if expected_book_code is None:
         raise ValueError(f"Unsupported book slug: {book}")
 
     tokens_by_ref = load_source_tokens(morphgnt_path, expected_book_code)
-    candidates = []
-    seen_anchor_ids = set()
+    audit_rows = []
 
     for row in rows:
-        env = find_infinitive_environment(row, tokens_by_ref, window)
+        env = find_environment_near_anchor(row, tokens_by_ref, window)
         if env is None:
             continue
-        governor, infinitive = env
-        anchor_id = str(row["predicate_anchor_id"])
-        if anchor_id in seen_anchor_ids:
-            continue
-        seen_anchor_ids.add(anchor_id)
-        candidates.append(build_candidate_record(row, governor, infinitive))
+        governor, infinitive, risk = env
+        audit_rows.append(build_audit_record(row, governor, infinitive, risk))
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     metadata = {
         "record_type": "metadata",
-        "stage": "Stage 4 — Infinitive Governed Dependency Candidate Audit",
+        "stage": "Stage 4 — Infinitive Governed Environment Audit",
         "producer_script": "scripts/stage4/detect_infinitive_governed_dependency_candidates.py",
         "producer_command": f"python3 scripts/stage4/detect_infinitive_governed_dependency_candidates.py {book}",
         "version": VERSION,
         "book": book,
         "anchor_skeleton_dataset": str(skeleton_path.relative_to(mna_root)),
         "morphgnt_source": str(morphgnt_path.relative_to(mna_root)),
-        "window_tokens_before_anchor": window,
+        "window_tokens_around_anchor": window,
         "governing_lemmas": sorted(GOVERNING_LEMMAS),
         "anchors_inspected": len(rows),
-        "dependency_candidates_found": len(candidates),
+        "environment_audit_rows_found": len(audit_rows),
+        "approved_for_official_elimination": "NO",
         "official_stage4_classification_changed": "NO",
         "trunk_claim": "NONE",
         "subject_marker_claim": "NONE",
@@ -402,10 +322,10 @@ def detect_candidates(
 
     with output_path.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write(json.dumps(metadata, ensure_ascii=False, sort_keys=True) + "\n")
-        for candidate in candidates:
-            handle.write(json.dumps(candidate, ensure_ascii=False, sort_keys=True) + "\n")
+        for audit_row in audit_rows:
+            handle.write(json.dumps(audit_row, ensure_ascii=False, sort_keys=True) + "\n")
 
-    return metadata, candidates
+    return metadata, audit_rows
 
 
 def print_visible_output(
@@ -414,42 +334,41 @@ def print_visible_output(
     morphgnt_path: Path,
     output_path: Path,
     metadata: dict[str, object],
-    candidates: list[dict[str, object]],
+    audit_rows: list[dict[str, object]],
     preview_lines: int,
 ) -> None:
-    print("MNA Stage 4 — Infinitive Governed Dependency Candidate Detector")
+    print("MNA Stage 4 — Infinitive Governed Environment Audit")
     print(f"BOOK: {book}")
     print(f"ANCHOR SKELETON: {skeleton_path}")
     print(f"MORPHGNT SOURCE: {morphgnt_path}")
     print(f"OUTPUT: {output_path}")
     print(f"ANCHORS INSPECTED: {metadata['anchors_inspected']}")
-    print(f"INFINITIVE GOVERNED DEPENDENCY CANDIDATES FOUND: {metadata['dependency_candidates_found']}")
+    print(f"ENVIRONMENT AUDIT ROWS FOUND: {metadata['environment_audit_rows_found']}")
+    print("APPROVED FOR OFFICIAL ELIMINATION: NO")
     print("OFFICIAL STAGE 4 CLASSIFICATION CHANGED: NO")
     print()
     print("VISIBLE OUTPUT PREVIEW:")
 
-    for idx, candidate in enumerate(candidates[:preview_lines], start=1):
+    for idx, row in enumerate(audit_rows[:preview_lines], start=1):
         print(
-            f"{idx:>4}. {candidate['predicate_anchor_id']} | "
-            f"{candidate['reference']} | "
-            f"governor={candidate['governor_greek_surface']} | "
-            f"infinitive={candidate['infinitive_greek_surface']} | "
-            f"anchor={candidate['anchor_greek_surface']} | "
-            f"{candidate['candidate_status']}"
+            f"{idx:>4}. {row['predicate_anchor_id']} | "
+            f"{row['reference']} | "
+            f"governor={row['governor_greek_surface']} | "
+            f"infinitive={row['infinitive_greek_surface']} | "
+            f"anchor={row['anchor_greek_surface']} | "
+            f"{row['audit_status']}"
         )
 
-    remaining = len(candidates) - min(len(candidates), preview_lines)
+    remaining = len(audit_rows) - min(len(audit_rows), preview_lines)
     if remaining:
-        print(f"... {remaining} more infinitive-governed dependency candidates written")
+        print(f"... {remaining} more infinitive-governed environment audit rows written")
 
 
 def main(argv: Optional[list[str]] = None) -> int:
-    parser = argparse.ArgumentParser(
-        description="Detect Stage 4 infinitive-governed dependency candidates for manual audit."
-    )
+    parser = argparse.ArgumentParser(description="Audit Stage 4 infinitive-governed environments.")
     parser.add_argument("book", help="Book slug, e.g. 1corintios")
     parser.add_argument("--source", help="Explicit MorphGNT source path")
-    parser.add_argument("--window", type=int, default=12, help="Number of previous same-verse tokens to inspect")
+    parser.add_argument("--window", type=int, default=12, help="Number of same-verse tokens around anchor to inspect")
     parser.add_argument("--preview-lines", type=int, default=40)
     args = parser.parse_args(argv)
 
@@ -459,9 +378,9 @@ def main(argv: Optional[list[str]] = None) -> int:
         root = mna_root_from_script()
         skeleton_path = root / "datasets" / "anchor-skeleton" / f"{book}.jsonl"
         morphgnt_path = resolve_source(root, book, args.source)
-        output_path = root / "audits" / "stage4" / "infinitive-governed-dependency-candidates" / f"{book}.jsonl"
+        output_path = root / "audits" / "stage4" / "infinitive-governed-environment-audit" / f"{book}.jsonl"
 
-        metadata, candidates = detect_candidates(
+        metadata, audit_rows = detect_audit_rows(
             book,
             skeleton_path,
             morphgnt_path,
@@ -470,19 +389,10 @@ def main(argv: Optional[list[str]] = None) -> int:
             args.window,
         )
 
-        print_visible_output(
-            book,
-            skeleton_path,
-            morphgnt_path,
-            output_path,
-            metadata,
-            candidates,
-            args.preview_lines,
-        )
-
+        print_visible_output(book, skeleton_path, morphgnt_path, output_path, metadata, audit_rows, args.preview_lines)
         return 0
     except Exception as exc:
-        print("MNA Stage 4 infinitive-governed dependency candidate detection FAILED", file=sys.stderr)
+        print("MNA Stage 4 infinitive-governed environment audit FAILED", file=sys.stderr)
         print(str(exc), file=sys.stderr)
         return 1
 
