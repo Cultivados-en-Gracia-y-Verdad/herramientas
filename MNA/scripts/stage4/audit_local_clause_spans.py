@@ -3,7 +3,7 @@
 MNA Stage 4 — Local Clause Span Audit
 
 PURPOSE
-- Estimate local clause spans around finite predicates conservatively.
+- Estimate local clause spans around predicate-completeness anchors conservatively.
 - Provide auditable span reconstruction for survivability inspection.
 
 IMPORTANT
@@ -16,6 +16,11 @@ This script does NOT:
 - create sections.
 
 This is an audit-only reconstruction layer.
+
+CRITICAL DESIGN NOTE
+- Every row in predicate-completeness is already a predicate anchor.
+- This script must NOT re-decide finiteness from the morphology string.
+- It uses predicate-completeness row order as the authoritative anchor stream.
 """
 
 from __future__ import annotations
@@ -25,14 +30,7 @@ import json
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-local-clause-span-audit-v1"
-
-FINITE_STOPPING_MOODS = {
-    "I",  # indicative
-    "S",  # subjunctive
-    "O",  # optative
-    "M",  # imperative
-}
+VERSION = "stage4-local-clause-span-audit-v2-anchor-stream"
 
 
 def mna_root_from_script() -> Path:
@@ -59,16 +57,6 @@ def load_jsonl(path: Path):
     return metadata, rows
 
 
-def is_finite_predicate(row: dict) -> bool:
-    morphology = str(row.get("morphology", ""))
-
-    if len(morphology) < 4:
-        return False
-
-    mood = morphology[3]
-    return mood in FINITE_STOPPING_MOODS
-
-
 def build_verse_index(rows: list[dict]):
     verses = {}
 
@@ -88,30 +76,30 @@ def build_verse_index(rows: list[dict]):
 
 
 def estimate_clause_span(current_index: int, verse_rows: list[dict]):
+    """
+    Primitive predicate-anchor span estimate.
+
+    Since predicate-completeness already contains predicate anchors only,
+    the nearest previous/next predicate anchor becomes the hard stopping point.
+
+    This is intentionally conservative and primitive:
+    - it does not claim trunk,
+    - it does not prove independence,
+    - it only exposes the local predicate-to-predicate span for audit.
+    """
+
     left = current_index
     right = current_index
 
-    # walk left
     idx = current_index - 1
     while idx >= 0:
-        row = verse_rows[idx]
+        # Previous predicate anchor stops the span.
+        break
 
-        if is_finite_predicate(row):
-            break
-
-        left = idx
-        idx -= 1
-
-    # walk right
     idx = current_index + 1
     while idx < len(verse_rows):
-        row = verse_rows[idx]
-
-        if is_finite_predicate(row):
-            break
-
-        right = idx
-        idx += 1
+        # Next predicate anchor stops the span.
+        break
 
     return left, right
 
@@ -131,10 +119,13 @@ def build_row(row: dict, span_text: str, left_row: dict, right_row: dict):
         "chapter": row.get("chapter"),
         "verse": row.get("verse"),
         "reference": row.get("reference"),
+        "anchor_order": row.get("anchor_order"),
+        "anchor_token_index_in_verse": row.get("token_index_in_verse"),
         "anchor_greek_surface": row.get("greek_surface"),
         "estimated_clause_span": span_text,
         "span_left_token_index": left_row.get("token_index_in_verse"),
         "span_right_token_index": right_row.get("token_index_in_verse"),
+        "span_method": "predicate_completeness_anchor_stream_v2_single_anchor_primitive",
         "official_stage4_classification_changed": "NO",
         "trunk_claim": "NONE",
         "subject_marker_claim": "NONE",
@@ -154,18 +145,14 @@ def main(argv: Optional[list[str]] = None):
     input_path = root / "datasets" / "predicate-completeness" / f"{book}.jsonl"
     output_path = root / "audits" / "stage4" / "local-clause-span-audit" / f"{book}.jsonl"
 
-    _, rows = load_jsonl(input_path)
+    _metadata, rows = load_jsonl(input_path)
     verses = build_verse_index(rows)
 
     audit_rows = []
 
     for verse_rows in verses.values():
         for current_index, row in enumerate(verse_rows):
-            if not is_finite_predicate(row):
-                continue
-
             left, right = estimate_clause_span(current_index, verse_rows)
-
             span_text = build_span_text(verse_rows, left, right)
 
             audit_rows.append(
@@ -184,7 +171,10 @@ def main(argv: Optional[list[str]] = None):
         "stage": "Stage 4 — Local Clause Span Audit",
         "version": VERSION,
         "book": book,
+        "source_dataset": str(input_path.relative_to(root)),
+        "rows_inspected": len(rows),
         "rows_written": len(audit_rows),
+        "span_method": "predicate_completeness_anchor_stream_v2_single_anchor_primitive",
         "official_stage4_classification_changed": "NO",
     }
 
@@ -198,7 +188,9 @@ def main(argv: Optional[list[str]] = None):
     print(f"BOOK: {book}")
     print(f"INPUT: {input_path}")
     print(f"OUTPUT: {output_path}")
+    print(f"ROWS INSPECTED: {len(rows)}")
     print(f"ROWS WRITTEN: {len(audit_rows)}")
+    print("SPAN METHOD: predicate_completeness_anchor_stream_v2_single_anchor_primitive")
     print("OFFICIAL STAGE 4 CLASSIFICATION CHANGED: NO")
     print()
     print("VISIBLE OUTPUT PREVIEW:")
