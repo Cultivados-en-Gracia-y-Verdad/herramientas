@@ -14,6 +14,7 @@ It promotes existing draft suggestions into an accepted/review file for controll
 Safety rule:
 - human_override=true rows are NEVER overwritten.
 - incomplete-looking trunk spans are NEVER promoted as AI_REVIEWED.
+- spans containing unresolved internal subordinators are review-only.
 """
 
 from __future__ import annotations
@@ -25,7 +26,7 @@ import sys
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-promote-suggested-trunk-rows-v2-incomplete-span-guard"
+VERSION = "stage4-promote-suggested-trunk-rows-v3-internal-subordinator-guard"
 
 PROMOTED_STATUS = "AI_REVIEWED"
 LOW_CONFIDENCE_STATUS = "NEEDS_EXTERNAL_GREEK_REVIEW"
@@ -35,6 +36,10 @@ OPEN_ENDING_TOKENS = {
     "μή", "μὴ", "οὐ", "οὐκ", "οὐχ", "καὶ", "δὲ", "γὰρ", "ἀλλὰ",
     "ἢ", "τε", "μέν", "μὲν", "πρὸς", "ἐν", "εἰς", "ἐκ", "διὰ", "περὶ",
     "ὑπὲρ", "ὑπὸ", "ἀπὸ", "μετὰ", "κατὰ", "παρὰ", "ἐπὶ",
+}
+
+INTERNAL_SUBORDINATOR_TOKENS = {
+    "ἵνα", "ὅτι", "καθὼς", "καθώς", "ἐπειδὴ", "ἐπειδή", "εἰ", "ἐὰν", "ὅταν", "ὡς", "ὥστε"
 }
 
 
@@ -110,11 +115,10 @@ def incomplete_span_reasons(row: dict) -> list[str]:
     if last in OPEN_ENDING_TOKENS:
         reasons.append(f"open_ending_token:{last}")
 
-    # A span ending immediately before/inside a known dependent marker is review-only.
-    if "ἵνα" in tokens and last != tokens[-1].rstrip(".,;·"):
-        pass
+    internal_subordinators = [tok for tok in tokens[:-1] if tok in INTERNAL_SUBORDINATOR_TOKENS]
+    for tok in sorted(set(internal_subordinators)):
+        reasons.append(f"internal_subordinator_present:{tok}")
 
-    # If the original draft already requires review, preserve that pressure.
     if row.get("needs_review") is True:
         reasons.append("draft_needs_review_true")
 
@@ -227,7 +231,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             "last_skipped_out_of_range_count": skipped_count,
             "status_counts": status_counts,
             "confidence_counts": confidence_counts,
-            "policy": "AI-reviewed suggested trunk; not mechanically proven; incomplete spans cannot be AI_REVIEWED unless forced; human_override=true rows are protected.",
+            "policy": "AI-reviewed suggested trunk; not mechanically proven; incomplete/internal-subordinator spans cannot be AI_REVIEWED unless forced; human_override=true rows are protected.",
             "user_greek_review_required": False,
             "user_review_scope": "Spanish/manual clarity only.",
         }
@@ -247,7 +251,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         print(f"PROTECTED HUMAN OVERRIDES: {protected_count}")
         print(f"ROWS WRITTEN: {len(final_rows)}")
         print(f"STATUS COUNTS: {status_counts}")
-        print("POLICY: AI-reviewed suggested trunk; guarded incomplete spans remain review-only.")
+        print("POLICY: AI-reviewed suggested trunk; guarded incomplete/internal-subordinator spans remain review-only.")
         print()
         print("VISIBLE OUTPUT PREVIEW:")
         shown = 0
