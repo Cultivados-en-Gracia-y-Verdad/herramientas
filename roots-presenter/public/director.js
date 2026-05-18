@@ -194,6 +194,11 @@ function goPrevious() {
   }
 }
 
+function returnToTeaching() {
+  socket.emit("controller-clear");
+  closeSongDrawer();
+}
+
 function fitDirectorText() {
   const content = byId("directorContent");
   if (!content) return;
@@ -256,6 +261,7 @@ socket.on("state", renderDirector);
 byId("nextButton").addEventListener("click", goNext);
 byId("previousButton").addEventListener("click", goPrevious);
 byId("fullscreenButton").addEventListener("click", toggleFullscreen);
+byId("teachingButton").addEventListener("click", returnToTeaching);
 byId("songsButton").addEventListener("click", openSongDrawer);
 byId("closeSongsButton").addEventListener("click", closeSongDrawer);
 byId("showSongListButton").addEventListener("click", showSongListScreen);
