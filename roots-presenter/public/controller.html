@@ -68,7 +68,7 @@
           <button id="goLiveButton" type="button">Send Live</button>
           <button id="clearButton" type="button" class="secondary">Return to Teaching</button>
         </div>
-        <button id="songListScreenButton" type="button" class="secondary full">Show Song List Screen</button>
+        <button id="blankButton" type="button" class="secondary full">Blank Screen</button>
         <div class="button-row">
           <button id="previousButton" type="button" class="secondary">Previous</button>
           <button id="nextButton" type="button" class="secondary">Next</button>
@@ -76,30 +76,34 @@
       </section>
 
       <section class="panel-card">
-        <h2>Background</h2>
-        <label>
-          Image/video URL or local path
-          <input id="backgroundMedia" type="text" placeholder="https://... or /course-assets/background.mp4">
-        </label>
-        <div class="color-grid">
-          <label>
-            Background
-            <input id="backgroundColor" type="color" value="#0f172a">
-          </label>
-          <label>
-            Text
-            <input id="textColor" type="color" value="#ffffff">
-          </label>
-          <label>
-            Accent
-            <input id="accentColor" type="color" value="#38bdf8">
-          </label>
-        </div>
-        <button id="applyStyleButton" type="button" class="secondary full">Apply Style</button>
+        <details id="backgroundControls" class="background-controls">
+          <summary>Background Style</summary>
+          <input id="backgroundMedia" type="hidden">
+          <div id="backgroundGallery" class="background-gallery"></div>
+          <button id="clearBackgroundButton" type="button" class="secondary full">Clear Background Image</button>
+          <div class="color-grid">
+            <label>
+              Background
+              <input id="backgroundColor" type="color" value="#0f172a">
+            </label>
+            <label>
+              Text
+              <input id="textColor" type="color" value="#ffffff">
+            </label>
+            <label>
+              Accent
+              <input id="accentColor" type="color" value="#38bdf8">
+            </label>
+          </div>
+          <button id="applyStyleButton" type="button" class="secondary full">Apply Style</button>
+        </details>
       </section>
 
-      <section class="panel-card">
-        <h2>Preview</h2>
+      <section class="panel-card preview-card">
+        <div class="preview-heading">
+          <h2>Preview</h2>
+          <button id="toggleBackgroundButton" type="button" class="secondary">Style</button>
+        </div>
         <div id="controllerPreview" class="controller-preview"></div>
         <div id="songThumbnails" class="song-thumbnails"></div>
       </section>

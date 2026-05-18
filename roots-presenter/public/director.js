@@ -3,6 +3,7 @@ const socket = io();
 let latestState = {};
 let songs = [];
 let selectedSongId = null;
+let swipeStart = null;
 
 function byId(id) {
   return document.getElementById(id);
@@ -24,31 +25,59 @@ function stripChordProChords(line) {
     .trim();
 }
 
+function isChordToken(value) {
+  return /^[A-G](?:#|b)?(?:m|min|maj|dim|aug|sus|add|\d|\/|\(|\)|\+|-)*$/i.test(String(value || "").trim());
+}
+
+function getBracketSectionLabel(line) {
+  const match = String(line || "").trim().match(/^\[([^\]]+)\]$/);
+  if (!match) return "";
+
+  const label = match[1].trim();
+  return label && !isChordToken(label) ? label : "";
+}
+
 function parseSections(text) {
-  return String(text || "")
-    .replace(/\r\n/g, "\n")
-    .trim()
-    .split(/\n\s*\n/)
-    .map(section => section
-      .split("\n")
-      .map(line => line.trim())
-      .map(stripChordProChords)
-      .filter(Boolean)
-    )
-    .filter(section => section.length);
+  const sections = [];
+  let currentSection = [];
+
+  String(text || "").replace(/\r\n/g, "\n").split("\n").forEach(rawLine => {
+    const line = rawLine.trim();
+    const label = getBracketSectionLabel(line);
+
+    if (!line || label) {
+      if (currentSection.length) sections.push(currentSection);
+      currentSection = [];
+      return;
+    }
+
+    const lyricLine = stripChordProChords(line);
+    if (lyricLine) currentSection.push(lyricLine);
+  });
+
+  if (currentSection.length) sections.push(currentSection);
+  return sections;
 }
 
 function parseChordSections(text) {
-  return String(text || "")
-    .replace(/\r\n/g, "\n")
-    .trim()
-    .split(/\n\s*\n/)
-    .map(section => section
-      .split("\n")
-      .map(line => line.trim())
-      .filter(Boolean)
-    )
-    .filter(section => section.length);
+  const sections = [];
+  let currentSection = [];
+
+  String(text || "").replace(/\r\n/g, "\n").split("\n").forEach(rawLine => {
+    const line = rawLine.trim();
+    const label = getBracketSectionLabel(line);
+
+    if (!line || label) {
+      if (currentSection.length) sections.push(currentSection);
+      currentSection = [];
+      return;
+    }
+
+    if (line) currentSection.push(line);
+  });
+
+  if (currentSection.length) sections.push(currentSection);
+  return sections;
 }
 
 function getEntryHtml(entry) {
@@ -121,6 +150,7 @@ function getSongPayload(song = getSelectedSong()) {
     title: song?.title || "Song",
     lyrics: song?.lyrics || "",
     chordLyrics: song?.chordLyrics || song?.lyrics || "",
+    sectionLabels: song?.sectionLabels || [],
     sections: song?.sections || parseSections(song?.lyrics || ""),
     chordSections: song?.chordSections || parseChordSections(song?.chordLyrics || song?.lyrics || ""),
     background: controllerState.background || "#0f172a",
@@ -228,10 +258,12 @@ function renderDirector(state = {}) {
 
   document.body.classList.toggle("song-mode", isSongMode);
   byId("directorTitle").textContent = isSongMode
-    ? controllerState.title || "Song"
+    ? controllerState.blank
+      ? "Blank Screen"
+      : controllerState.title || "Song"
     : state.course?.title || "Teaching";
   byId("directorMode").textContent = isSongMode
-    ? "Song mode"
+    ? controllerState.blank ? "Blank mode" : "Song mode"
     : "Teaching mode";
   byId("directorPosition").textContent = isSongMode
     ? `${songStep}/${songTotal || "?"}`
@@ -240,7 +272,9 @@ function renderDirector(state = {}) {
   const content = byId("directorContent");
   content.classList.toggle("song-mode", isSongMode);
   content.innerHTML = isSongMode
-    ? getSongHtml(controllerState)
+    ? controllerState.blank
+      ? `<div class="empty">Blank screen is live.</div>`
+      : getSongHtml(controllerState)
     : getVisibleTeachingHtml(state) || `<div class="empty">No teaching slide visible.</div>`;
 
   requestAnimationFrame(fitDirectorText);
@@ -254,6 +288,47 @@ async function toggleFullscreen() {
   }
 
   await document.documentElement.requestFullscreen();
+}
+
+function isSwipeIgnoredTarget(target) {
+  return !!target.closest("input, textarea, select, button, a, .song-drawer, .bible-popup");
+}
+
+function beginSwipe(event) {
+  const touch = event.changedTouches?.[0];
+  if (!touch || isSwipeIgnoredTarget(event.target)) {
+    swipeStart = null;
+    return;
+  }
+
+  swipeStart = {
+    x: touch.clientX,
+    y: touch.clientY,
+    time: Date.now()
+  };
+}
+
+function endSwipe(event) {
+  const touch = event.changedTouches?.[0];
+  if (!touch || !swipeStart || isSwipeIgnoredTarget(event.target)) {
+    swipeStart = null;
+    return;
+  }
+
+  const deltaX = touch.clientX - swipeStart.x;
+  const deltaY = touch.clientY - swipeStart.y;
+  const elapsed = Date.now() - swipeStart.time;
+  swipeStart = null;
+
+  if (elapsed > 900 || Math.abs(deltaX) < 62 || Math.abs(deltaX) < Math.abs(deltaY) * 1.35) {
+    return;
+  }
+
+  if (deltaX < 0) {
+    goNext();
+  } else {
+    goPrevious();
+  }
 }
 
 socket.on("state", renderDirector);
@@ -302,6 +377,9 @@ document.addEventListener("click", event => {
   const isAlreadyOpen = reference.classList.contains("open");
   socket.emit("set-popup-reference", isAlreadyOpen ? null : nextReference);
 });
+
+document.addEventListener("touchstart", beginSwipe, { passive: true });
+document.addEventListener("touchend", endSwipe, { passive: true });
 
 window.addEventListener("resize", fitDirectorText);
 window.addEventListener("keydown", event => {

@@ -148,32 +148,33 @@ function renderControllerProjector(projectorSlide) {
   projectorSlide.classList.remove("title-slide");
   projectorSlide.classList.add("song-output");
   projectorSlide.style.setProperty("--song-background", controllerState.background || "#0f172a");
-  projectorSlide.style.setProperty("--song-media", media && !isVideoMedia(media)
-    ? `url("${media.replace(/"/g, '\\"')}")`
-    : "none");
   projectorSlide.style.setProperty("--song-color", controllerState.textColor || "#ffffff");
   projectorSlide.style.setProperty("--song-accent", controllerState.accentColor || "#38bdf8");
   projectorSlide.classList.toggle("song-has-media", !!media && !isVideoMedia(media));
   projectorSlide.classList.toggle("song-has-video", !!media && isVideoMedia(media));
+
+  if (controllerState.blank) {
+    projectorSlide.classList.add("blank-output");
+    projectorSlide.innerHTML = `
+      ${media && !isVideoMedia(media) ? `<div class="song-background-image" style="background-image: url('${escapeHtml(media).replace(/'/g, "&#39;")}')"></div>` : ""}
+      ${media && isVideoMedia(media) ? `<video class="song-background-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
+    `;
+    return;
+  }
+
+  projectorSlide.classList.remove("blank-output");
   projectorSlide.innerHTML = `
+    ${media && !isVideoMedia(media) ? `<div class="song-background-image" style="background-image: url('${escapeHtml(media).replace(/'/g, "&#39;")}')"></div>` : ""}
     ${media && isVideoMedia(media) ? `<video class="song-background-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
     ${controllerState.title ? `<div class="song-output-title">${escapeHtml(controllerState.title)}</div>` : ""}
     <div class="song-output-inner">
       <div class="song-output-lines">
-        ${section.map(line => `<div>${escapeHtml(line)}</div>`).join("")}
+        ${section.map(line => `<div class="song-output-line">${escapeHtml(line)}</div>`).join("")}
       </div>
     </div>
   `;
 
-  fitSlideText(projectorSlide, {
-    baseSize: 96,
-    minSize: 56,
-    hardMinSize: 44,
-    maxHeight: window.innerHeight - 60,
-    maxWidth: window.innerWidth * 0.92,
-    densityFactor: 0.03,
-    sizeBoost: 14
-  });
+  fitSongOutputText(projectorSlide);
 }
 
 function applySlideLayoutClass(element) {
@@ -430,6 +431,46 @@ function fitSlideText(element, options = {}) {
       if (size < hardMinSize) size = hardMinSize;
       element.style.setProperty("--fit-size", `${size}px`);
       rect = element.getBoundingClientRect();
+    }
+  });
+}
+
+function fitSongOutputText(element) {
+  if (!element) return;
+
+  const lines = element.querySelector(".song-output-lines");
+  if (!lines) return;
+
+  element.classList.remove("song-allow-wrap");
+
+  const baseSize = 154;
+  const hardMinSize = 52;
+  const maxWidth = Math.max(320, window.innerWidth * 0.9);
+  const maxHeight = Math.max(220, window.innerHeight * 0.78);
+  let size = baseSize;
+
+  element.style.setProperty("--fit-size", `${size}px`);
+
+  requestAnimationFrame(() => {
+    const isOverflowing = () => {
+      const widestLine = [...element.querySelectorAll(".song-output-line")]
+        .reduce((width, line) => Math.max(width, line.scrollWidth, line.getBoundingClientRect().width), 0);
+
+      return (
+        widestLine > maxWidth ||
+        lines.scrollWidth > maxWidth ||
+        lines.scrollHeight > maxHeight ||
+        lines.getBoundingClientRect().height > maxHeight
+      );
+    };
+
+    while (size > hardMinSize && isOverflowing()) {
+      size -= 2;
+      element.style.setProperty("--fit-size", `${size}px`);
+    }
+
+    if (isOverflowing()) {
+      element.classList.add("song-allow-wrap");
     }
   });
 }

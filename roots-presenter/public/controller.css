@@ -20,6 +20,8 @@
 
 body {
   margin: 0;
+  height: 100vh;
+  overflow: hidden;
   background: #f3f4f6;
   color: #111827;
   font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
@@ -85,8 +87,10 @@ textarea {
 
 .controller-shell {
   display: grid;
-  grid-template-columns: minmax(460px, 1.3fr) minmax(320px, 0.8fr);
+  grid-template-columns: minmax(260px, 320px) minmax(620px, 1fr);
   gap: 18px;
+  height: calc(100vh - 80px);
+  min-height: 0;
   padding: 18px 22px 24px;
   position: relative;
 }
@@ -98,6 +102,13 @@ textarea {
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   padding: 18px;
+}
+
+.song-library {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  min-height: 0;
+  padding: 14px;
 }
 
 .song-editor {
@@ -178,17 +189,20 @@ textarea {
 
 .song-list {
   display: grid;
-  gap: 10px;
+  gap: 7px;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 4px;
 }
 
 .song-item {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  gap: 6px;
   align-items: stretch;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  padding: 8px;
+  padding: 7px;
 }
 
 .song-item.selected {
@@ -198,11 +212,11 @@ textarea {
 
 .song-select {
   display: grid;
-  gap: 3px;
+  gap: 2px;
   justify-items: start;
   background: transparent;
   color: #111827;
-  padding: 8px 10px;
+  padding: 6px 8px;
   text-align: left;
 }
 
@@ -213,13 +227,16 @@ textarea {
 
 .song-select span {
   color: #6b7280;
-  font-size: 0.85em;
+  font-size: 0.78em;
   font-weight: 400;
 }
 
 .song-edit {
   background: #e5e7eb;
   color: #111827;
+  justify-self: start;
+  padding: 7px 9px;
+  font-size: 0.78em;
   white-space: nowrap;
 }
 
@@ -238,6 +255,9 @@ textarea {
   display: grid;
   gap: 14px;
   align-content: start;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 4px;
 }
 
 .button-row {
@@ -245,6 +265,57 @@ textarea {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+.background-controls summary {
+  color: #075985;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.background-controls summary::-webkit-details-marker {
+  display: none;
+}
+
+.background-controls summary::after {
+  content: "Open";
+  float: right;
+  border-radius: 999px;
+  background: #e5e7eb;
+  color: #374151;
+  font-size: 13px;
+  padding: 3px 8px;
+}
+
+.background-controls[open] summary {
+  margin-bottom: 12px;
+}
+
+.background-controls[open] summary::after {
+  content: "Close";
+}
+
+.preview-card {
+  display: grid;
+  min-height: 0;
+}
+
+.preview-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.preview-heading h2 {
+  margin-bottom: 0;
+}
+
+.preview-heading button {
+  padding: 8px 12px;
 }
 
 button {
@@ -277,18 +348,70 @@ input[type="color"] {
   padding: 4px;
 }
 
+.background-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 8px;
+  max-height: 228px;
+  overflow: auto;
+  padding-right: 4px;
+  margin-bottom: 10px;
+}
+
+.background-choice {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  border: 2px solid transparent;
+  background: #f3f4f6;
+  color: #111827;
+  padding: 6px;
+  text-align: left;
+}
+
+.background-choice.selected {
+  background: #e0f2fe;
+  border-color: #38bdf8;
+}
+
+.background-choice img,
+.background-video-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 5px;
+  background: #111827;
+  object-fit: cover;
+}
+
+.background-video-thumb {
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-size: 0.82em;
+}
+
+.background-choice span {
+  overflow: hidden;
+  color: #374151;
+  font-size: 0.78em;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .controller-preview {
   position: relative;
   display: grid;
   align-content: center;
-  min-height: 230px;
+  min-height: 260px;
   border-radius: 8px;
   background: var(--preview-background, #0f172a);
   color: var(--preview-color, #ffffff);
   border-bottom: 8px solid var(--preview-accent, #38bdf8);
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1.28;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.22;
   padding: 24px;
   text-align: center;
 }
@@ -388,7 +511,10 @@ input[type="color"] {
 
 .song-thumbnail b {
   color: #075985;
-  font-size: 0.86em;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .song-thumbnail span {
@@ -402,7 +528,17 @@ input[type="color"] {
 }
 
 @media (max-width: 900px) {
+  body {
+    overflow: auto;
+  }
+
   .controller-shell {
     grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .song-list,
+  .controller-panel {
+    overflow: visible;
   }
 }

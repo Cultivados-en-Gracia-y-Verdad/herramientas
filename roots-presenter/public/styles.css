@@ -212,7 +212,7 @@ textarea {
 .slide h6,
 .projector-slide h6 {
   margin-left: var(--style-h6-indent, 3.8em);
-  font-size: var(--style-h6-size, 0.8em);
+  font-size: var(--style-h6-size, 0.94em);
   font-weight: 400;
   color: var(--style-h6-color, #374151);
 }
@@ -246,7 +246,7 @@ textarea {
 .slide li,
 .projector-slide li {
   margin: 0.24em 0;
-  font-size: var(--style-bullet-size, 0.74em);
+  font-size: var(--style-bullet-size, 0.9em);
   line-height: 1.4;
   font-weight: 400;
   word-spacing: 0.035em;
@@ -274,6 +274,15 @@ textarea {
 .projector-slide em::after,
 .audience-slide em::after {
   content: "»";
+}
+
+.slide strong,
+.projector-slide strong,
+.audience-slide strong {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
 }
 
 .manual-title,
@@ -782,7 +791,7 @@ button {
   max-width: none;
   max-height: none;
   margin: calc(-1 * clamp(42px, 8vh, 88px)) -24px -24px;
-  padding: clamp(54px, 8vh, 108px) clamp(58px, 7vw, 120px);
+  padding: clamp(48px, 7vh, 96px) clamp(38px, 5vw, 92px);
   overflow: hidden;
   background: var(--song-background, #0f172a);
   color: var(--song-color, #ffffff);
@@ -790,24 +799,34 @@ button {
   text-align: center;
 }
 
-.projector-slide.song-output.song-has-media {
-  background:
-    linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.54)),
-    var(--song-media),
-    var(--song-background, #0f172a);
-  background-position: center;
-  background-size: cover;
+.projector-slide.blank-output {
+  border-bottom: 0;
 }
 
+.projector-slide.song-output.song-has-media {
+  background: var(--song-background, #0f172a);
+}
+
+.song-background-image,
 .song-background-video {
   position: fixed;
   inset: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
+}
+
+.song-background-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.song-background-video {
   object-fit: cover;
 }
 
+.projector-slide.song-has-media::before,
 .projector-slide.song-has-video::before {
   content: "";
   position: fixed;
@@ -844,11 +863,23 @@ button {
 
 .song-output-lines {
   display: grid;
-  gap: 0.12em;
-  font-size: var(--fit-size, 96px);
+  gap: 0.08em;
+  font-size: var(--fit-size, 112px);
   font-weight: 600;
-  line-height: 1.08;
+  line-height: 1.04;
+  max-width: 90vw;
+}
+
+.song-output-line {
+  overflow: visible;
+  text-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.song-allow-wrap .song-output-line {
+  overflow-wrap: anywhere;
   text-wrap: balance;
+  white-space: normal;
 }
 
 .projector-extended .projector-slide {
@@ -885,7 +916,7 @@ button {
 
 .projector-slide h6 {
   color: var(--style-h6-color, #d8d8d8);
-  font-size: var(--style-h6-size, 0.8em);
+  font-size: var(--style-h6-size, 0.94em);
 }
 
 .projector-slide li {
@@ -1019,10 +1050,17 @@ button {
   background: var(--view-background, #111);
   color: white;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: clamp(42px, 8vh, 88px) 24px 24px;
+  padding:
+    max(clamp(42px, 8vh, 88px), env(safe-area-inset-top))
+    max(24px, env(safe-area-inset-right))
+    max(24px, env(safe-area-inset-bottom))
+    max(24px, env(safe-area-inset-left));
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
 }
 
 .audience-stage {
@@ -1094,6 +1132,45 @@ button {
   color: var(--style-h5-color, #111);
   padding: 40px;
   border-radius: 12px;
+}
+
+@media (max-width: 720px) {
+  .audience {
+    padding:
+      max(56px, env(safe-area-inset-top))
+      max(12px, env(safe-area-inset-right))
+      max(16px, env(safe-area-inset-bottom))
+      max(12px, env(safe-area-inset-left));
+  }
+
+  .audience-stage {
+    width: 100%;
+  }
+
+  .audience-slide {
+    padding: 22px;
+    border-radius: 10px;
+    font-size: var(--fit-size, 34px);
+  }
+
+  .join-greeting {
+    right: max(12px, env(safe-area-inset-right));
+    top: max(12px, env(safe-area-inset-top));
+    font-size: 15px;
+  }
+
+  .join-panel {
+    padding: 14px;
+  }
+
+  .join-row {
+    display: grid;
+  }
+
+  .join-row input,
+  .join-row button {
+    width: 100%;
+  }
 }
 
 .audience-slide.title-slide {

@@ -521,6 +521,21 @@ function createMenu() {
       ]
     },
     {
+      label: "Edit",
+      submenu: [
+        { role: "undo" },
+        { role: "redo" },
+        { type: "separator" },
+        { role: "cut" },
+        { role: "copy" },
+        { role: "paste" },
+        { role: "pasteAndMatchStyle" },
+        { role: "delete" },
+        { type: "separator" },
+        { role: "selectAll" }
+      ]
+    },
+    {
       label: "Presentation",
       submenu: [
         {
@@ -664,6 +679,26 @@ function attachPresentationShortcuts(window) {
     if (key === "Escape") {
       exitFullScreen();
     }
+  });
+}
+
+function installTextEditingContextMenu() {
+  app.on("web-contents-created", (_event, contents) => {
+    contents.on("context-menu", (_menuEvent, params) => {
+      if (!params.isEditable) return;
+
+      Menu.buildFromTemplate([
+        { role: "undo", enabled: params.editFlags.canUndo },
+        { role: "redo", enabled: params.editFlags.canRedo },
+        { type: "separator" },
+        { role: "cut", enabled: params.editFlags.canCut },
+        { role: "copy", enabled: params.editFlags.canCopy },
+        { role: "paste", enabled: params.editFlags.canPaste },
+        { role: "delete", enabled: params.editFlags.canDelete },
+        { type: "separator" },
+        { role: "selectAll", enabled: params.editFlags.canSelectAll }
+      ]).popup({ window: BrowserWindow.fromWebContents(contents) });
+    });
   });
 }
 
@@ -851,7 +886,10 @@ function createWindows() {
   setTimeout(refreshQuizMenu, 600);
 }
 
-app.whenReady().then(createWindows);
+app.whenReady().then(() => {
+  installTextEditingContextMenu();
+  createWindows();
+});
 
 app.on("window-all-closed", () => {
   if (switchingMode) return;

@@ -86,10 +86,11 @@ function renderChordLine(line) {
   return rendered;
 }
 
-function renderSection(lines = []) {
-  if (!lines.length) return `<div class="empty">No section</div>`;
+function renderSection(lines = [], options = {}) {
+  const visibleLines = options.firstLineOnly ? lines.slice(0, 1) : lines;
+  if (!visibleLines.length) return `<div class="empty">No section</div>`;
 
-  return lines
+  return visibleLines
     .map(line => `<div class="song-line">${renderChordLine(line)}</div>`)
     .join("");
 }
@@ -97,6 +98,7 @@ function renderSection(lines = []) {
 function renderStage(controllerState = {}) {
   latestControllerState = controllerState;
   const active = !!controllerState.active;
+  const isBlank = !!controllerState.blank;
   const title = controllerState.title || "Stage View";
   const step = Number(controllerState.step) || 0;
   const chordSections = controllerState.chordSections || controllerState.sections || [];
@@ -105,19 +107,23 @@ function renderStage(controllerState = {}) {
 
   byId("stageTitle").textContent = active ? title : "Stage View";
   byId("stageStatus").textContent = active
-    ? "Song mode"
+    ? isBlank ? "Blank screen" : "Song mode"
     : "Waiting for controller";
   byId("stagePosition").textContent = active
-    ? `${step + 1}/${chordSections.length}`
+    ? isBlank ? "" : `${step + 1}/${chordSections.length}`
     : "";
   byId("transposeStatus").textContent = transposeOffset === 0
     ? "Key 0"
     : `Key ${transposeOffset > 0 ? "+" : ""}${transposeOffset}`;
-  byId("currentSong").innerHTML = active
+  byId("currentSong").innerHTML = isBlank
+    ? `<div class="empty">Blank screen is live.</div>`
+    : active
     ? renderSection(current)
     : `<div class="empty">No song live. Use the Controller to send a song.</div>`;
-  byId("nextSong").innerHTML = active
-    ? renderSection(next)
+  byId("nextSong").innerHTML = isBlank
+    ? `<div class="empty">No next section</div>`
+    : active
+    ? renderSection(next, { firstLineOnly: true })
     : `<div class="empty">No next section</div>`;
 }
 

@@ -12,6 +12,7 @@ let controllerState = {
   accentColor: "#38bdf8"
 };
 let songs = [];
+let backgrounds = [];
 let selectedSongId = null;
 let editingSongId = null;
 
@@ -39,6 +40,18 @@ function stripChordProChords(line) {
     .trim();
 }
 
+function isChordToken(value) {
+  return /^[A-G](?:#|b)?(?:m|min|maj|dim|aug|sus|add|\d|\/|\(|\)|\+|-)*$/i.test(String(value || "").trim());
+}
+
+function getBracketSectionLabel(line) {
+  const match = String(line || "").trim().match(/^\[([^\]]+)\]$/);
+  if (!match) return "";
+
+  const label = match[1].trim();
+  return label && !isChordToken(label) ? label : "";
+}
+
 async function loadSongs() {
   const response = await fetch("/songs");
   songs = response.ok ? await response.json() : [];
@@ -49,31 +62,53 @@ async function loadSongs() {
   renderPreview();
 }
 
+async function loadBackgrounds() {
+  const response = await fetch("/backgrounds");
+  backgrounds = response.ok ? await response.json() : [];
+  renderBackgroundGallery();
+}
+
 function parseSections(text) {
-  return String(text || "")
-    .replace(/\r\n/g, "\n")
-    .trim()
-    .split(/\n\s*\n/)
-    .map(section => section
-      .split("\n")
-      .map(line => line.trim())
-      .map(stripChordProChords)
-      .filter(Boolean)
-    )
-    .filter(section => section.length);
+  const sections = [];
+  let currentSection = [];
+
+  String(text || "").replace(/\r\n/g, "\n").split("\n").forEach(rawLine => {
+    const line = rawLine.trim();
+    const label = getBracketSectionLabel(line);
+
+    if (!line || label) {
+      if (currentSection.length) sections.push(currentSection);
+      currentSection = [];
+      return;
+    }
+
+    const lyricLine = stripChordProChords(line);
+    if (lyricLine) currentSection.push(lyricLine);
+  });
+
+  if (currentSection.length) sections.push(currentSection);
+  return sections;
 }
 
 function parseChordSections(text) {
-  return String(text || "")
-    .replace(/\r\n/g, "\n")
-    .trim()
-    .split(/\n\s*\n/)
-    .map(section => section
-      .split("\n")
-      .map(line => line.trim())
-      .filter(Boolean)
-    )
-    .filter(section => section.length);
+  const sections = [];
+  let currentSection = [];
+
+  String(text || "").replace(/\r\n/g, "\n").split("\n").forEach(rawLine => {
+    const line = rawLine.trim();
+    const label = getBracketSectionLabel(line);
+
+    if (!line || label) {
+      if (currentSection.length) sections.push(currentSection);
+      currentSection = [];
+      return;
+    }
+
+    if (line) currentSection.push(line);
+  });
+
+  if (currentSection.length) sections.push(currentSection);
+  return sections;
 }
 
 function getSelectedSong() {
@@ -85,6 +120,7 @@ function getSongPayload(song = getSelectedSong()) {
     title: song?.title || "Song",
     lyrics: song?.lyrics || "",
     chordLyrics: song?.chordLyrics || song?.lyrics || "",
+    sectionLabels: song?.sectionLabels || [],
     sections: song?.sections || parseSections(song?.lyrics || ""),
     chordSections: song?.chordSections || parseChordSections(song?.chordLyrics || song?.lyrics || ""),
     background: byId("backgroundColor").value,
@@ -113,18 +149,17 @@ function sendLive() {
   socket.emit("controller-set-song", getSongPayload(song));
 }
 
-function showSongListScreen() {
-  socket.emit("controller-song-list", {
-    title: "Escoge una canción",
+function clearLive() {
+  socket.emit("controller-clear");
+}
+
+function blankLive() {
+  socket.emit("controller-blank", {
     background: byId("backgroundColor").value,
     backgroundMedia: byId("backgroundMedia").value.trim(),
     textColor: byId("textColor").value,
     accentColor: byId("accentColor").value
   });
-}
-
-function clearLive() {
-  socket.emit("controller-clear");
 }
 
 function nextSection() {
@@ -231,12 +266,48 @@ function renderSongList() {
   }).join("");
 }
 
+function renderBackgroundGallery() {
+  const gallery = byId("backgroundGallery");
+  const selectedUrl = byId("backgroundMedia").value.trim();
+
+  if (!backgrounds.length) {
+    gallery.innerHTML = `
+      <div class="empty-state compact">
+        Add images or videos to <code>backgrounds/</code> to show them here.
+      </div>
+    `;
+    return;
+  }
+
+  gallery.innerHTML = backgrounds.map(background => {
+    const selected = background.url === selectedUrl ? " selected" : "";
+    const media = background.type === "video"
+      ? `<div class="background-video-thumb">Video</div>`
+      : `<img src="${escapeHtml(background.url)}" alt="">`;
+
+    return `
+      <button type="button" class="background-choice${selected}" data-background-url="${escapeHtml(background.url)}">
+        ${media}
+        <span>${escapeHtml(background.name)}</span>
+      </button>
+    `;
+  }).join("");
+}
+
+function selectBackground(url) {
+  byId("backgroundMedia").value = url || "";
+  renderBackgroundGallery();
+  renderPreview();
+  applyStyle();
+}
+
 function renderPreview() {
   const preview = byId("controllerPreview");
   const status = byId("liveStatus");
   const selectedSong = getSelectedSong();
   const media = byId("backgroundMedia").value.trim();
   const previewSections = controllerState.active
+    && !controllerState.blank
     ? controllerState.sections || []
     : selectedSong
       ? parseSections(selectedSong.lyrics)
@@ -253,7 +324,9 @@ function renderPreview() {
   preview.classList.toggle("has-media", !!media && !isVideoMedia(media));
   preview.classList.toggle("teaching-mode", !controllerState.active);
   preview.innerHTML = controllerState.active
-    ? `
+    ? controllerState.blank
+      ? `<div class="teaching-mode-preview"><strong>Blank screen</strong><span>Projector is intentionally blank.</span></div>`
+      : `
       ${media && isVideoMedia(media) ? `<video class="preview-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
       <div class="preview-lines">
         ${activeSection.map(line => `<div>${escapeHtml(line)}</div>`).join("")}
@@ -266,15 +339,17 @@ function renderPreview() {
       </div>
     `;
 
-  renderThumbnails(previewSections, activeIndex);
+  renderThumbnails(previewSections, activeIndex, controllerState.sectionLabels || selectedSong?.sectionLabels || []);
 
   status.textContent = controllerState.active
-    ? `Projector: ${controllerState.title} (${controllerState.step + 1}/${controllerState.sections.length})`
+    ? controllerState.blank
+      ? "Projector: blank screen"
+      : `Projector: ${controllerState.title} (${controllerState.step + 1}/${controllerState.sections.length})`
     : "Projector: teaching mode";
   status.classList.toggle("active", controllerState.active);
 }
 
-function renderThumbnails(sections, activeIndex) {
+function renderThumbnails(sections, activeIndex, labels = []) {
   const thumbnailHost = byId("songThumbnails");
   if (!thumbnailHost) return;
 
@@ -286,9 +361,10 @@ function renderThumbnails(sections, activeIndex) {
   thumbnailHost.innerHTML = sections.map((section, index) => {
     const active = controllerState.active && index === activeIndex ? " active" : "";
     const firstLine = section[0] || `Screen ${index + 1}`;
+    const label = labels[index] || `Screen ${index + 1}`;
     return `
       <button type="button" class="song-thumbnail${active}" data-screen-index="${index}">
-        <b>${index + 1}</b>
+        <b>${escapeHtml(label)}</b>
         <span>${escapeHtml(firstLine)}</span>
       </button>
     `;
@@ -300,6 +376,7 @@ function hydrateColorsFromState() {
   byId("backgroundMedia").value = controllerState.backgroundMedia || "";
   byId("textColor").value = controllerState.textColor || "#ffffff";
   byId("accentColor").value = controllerState.accentColor || "#38bdf8";
+  renderBackgroundGallery();
 }
 
 socket.on("state", data => {
@@ -355,13 +432,22 @@ byId("closeEditorButton").addEventListener("click", closeEditor);
 byId("cancelEditorButton").addEventListener("click", closeEditor);
 byId("saveSongButton").addEventListener("click", saveCurrentSong);
 byId("goLiveButton").addEventListener("click", sendLive);
-byId("songListScreenButton").addEventListener("click", showSongListScreen);
 byId("clearButton").addEventListener("click", clearLive);
+byId("blankButton").addEventListener("click", blankLive);
 byId("nextButton").addEventListener("click", nextSection);
 byId("previousButton").addEventListener("click", previousSection);
 byId("applyStyleButton").addEventListener("click", applyStyle);
 byId("songSearch").addEventListener("input", renderSongList);
-byId("backgroundMedia").addEventListener("input", renderPreview);
+byId("toggleBackgroundButton").addEventListener("click", () => {
+  const controls = byId("backgroundControls");
+  controls.open = !controls.open;
+});
+byId("backgroundGallery").addEventListener("click", event => {
+  const choice = event.target.closest("[data-background-url]");
+  if (!choice) return;
+  selectBackground(choice.dataset.backgroundUrl || "");
+});
+byId("clearBackgroundButton").addEventListener("click", () => selectBackground(""));
 byId("backgroundColor").addEventListener("input", renderPreview);
 byId("textColor").addEventListener("input", renderPreview);
 byId("accentColor").addEventListener("input", renderPreview);
@@ -383,3 +469,4 @@ window.addEventListener("keydown", event => {
 renderSongList();
 renderPreview();
 loadSongs();
+loadBackgrounds();
