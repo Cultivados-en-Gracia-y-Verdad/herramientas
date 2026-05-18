@@ -25,11 +25,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
-VERSION = "stage4-suggested-trunk-draft-v1"
+VERSION = "stage4-suggested-trunk-draft-v2-trim-internal-subordinators"
 
 APPROVED_DEPENDENCY_SOURCES = {
     "absolute-dependency-candidates",
@@ -44,9 +45,41 @@ CONFIDENCE_HIGH = "HIGH"
 CONFIDENCE_MEDIUM = "MEDIUM"
 CONFIDENCE_LOW = "LOW"
 
+TRIM_AT_INTERNAL_SUBORDINATORS = {
+    "ἵνα", "ὅτι", "καθὼς", "καθώς", "ἐπειδὴ", "ἐπειδή", "εἰ", "ἐὰν", "ὅταν", "ὡς", "ὥστε"
+}
+
 
 def mna_root_from_script() -> Path:
     return Path(__file__).resolve().parents[2]
+
+
+def normalize_token(value: str) -> str:
+    return re.sub(r"^[^\w\u0370-\u03ff\u1f00-\u1fff]+|[^\w\u0370-\u03ff\u1f00-\u1fff]+$", "", value.strip())
+
+
+def trim_span_at_internal_subordinator(span_text: str) -> tuple[str, list[str]]:
+    """
+    Trim a span before the first internal subordinator.
+
+    This is not a claim that every subordinator begins removable material.
+    It is a conservative draft guard: do not let a suggested trunk carry a
+    dangling dependent tail into promotion.
+    """
+
+    raw_tokens = span_text.split()
+    notes = []
+
+    for idx, token in enumerate(raw_tokens):
+        normalized = normalize_token(token)
+        if normalized in TRIM_AT_INTERNAL_SUBORDINATORS:
+            if idx == 0:
+                return span_text.strip(), [f"starts_with_subordinator:{normalized}"]
+            trimmed = " ".join(raw_tokens[:idx]).strip()
+            notes.append(f"trimmed_before_internal_subordinator:{normalized}")
+            return trimmed, notes
+
+    return span_text.strip(), notes
 
 
 def load_jsonl(path: Path):
@@ -105,15 +138,6 @@ def load_span_lookup(root: Path, book: str) -> dict[str, dict]:
 
 
 def choose_suggested_anchor(ref_rows: list[dict], dependency_sources: dict[str, set[str]]):
-    """
-    First-pass conservative heuristic:
-    - skip anchors with approved dependency evidence;
-    - prefer the earliest surviving predicate in the verse;
-    - mark confidence low/medium depending on how many unresolved anchors remain.
-
-    This is intentionally simple and reviewable.
-    """
-
     surviving = []
     removed = []
 
@@ -145,6 +169,9 @@ def choose_suggested_anchor(ref_rows: list[dict], dependency_sources: dict[str, 
 def build_draft_row(reference: str, ref_rows: list[dict], dependency_sources: dict[str, set[str]], span_lookup: dict[str, dict]) -> dict:
     suggested, removed, status, confidence, reason = choose_suggested_anchor(ref_rows, dependency_sources)
 
+    trim_notes = []
+    original_span = ""
+
     if suggested is None:
         trunk_greek = ""
         predicate_anchor_id = None
@@ -152,7 +179,11 @@ def build_draft_row(reference: str, ref_rows: list[dict], dependency_sources: di
     else:
         predicate_anchor_id = suggested.get("predicate_anchor_id")
         span = span_lookup.get(str(predicate_anchor_id), {})
-        trunk_greek = span.get("estimated_clause_span") or suggested.get("greek_surface") or ""
+        original_span = span.get("estimated_clause_span") or suggested.get("greek_surface") or ""
+        trunk_greek, trim_notes = trim_span_at_internal_subordinator(original_span)
+
+        if trim_notes:
+            reason = reason + " Span was trimmed conservatively before an internal subordinator."
 
     removed_items = []
     for row, sources in removed:
@@ -184,6 +215,8 @@ def build_draft_row(reference: str, ref_rows: list[dict], dependency_sources: di
         "confidence": confidence,
         "predicate_anchor_id": predicate_anchor_id,
         "trunk_greek": trunk_greek,
+        "original_span_before_trimming": original_span,
+        "trimming_notes": trim_notes,
         "trunk_translation": "",
         "selected_span_method": span.get("span_method") if span else None,
         "surviving_predicates": surviving_items,
@@ -236,9 +269,12 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     status_counts = defaultdict(int)
     confidence_counts = defaultdict(int)
+    trimmed_count = 0
     for row in draft_rows:
         status_counts[row["status"]] += 1
         confidence_counts[row["confidence"]] += 1
+        if row.get("trimming_notes"):
+            trimmed_count += 1
 
     metadata = {
         "record_type": "metadata",
@@ -250,6 +286,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         "source_dataset": str(predicate_path.relative_to(root)),
         "output_policy": "DRAFT_ONLY_DO_NOT_USE_AS_ACCEPTED_TRUNK_WITHOUT_HUMAN_REVIEW",
         "rows_written": len(draft_rows),
+        "trimmed_span_count": trimmed_count,
         "status_counts": dict(status_counts),
         "confidence_counts": dict(confidence_counts),
         "official_stage4_classification_changed": "NO",
@@ -266,6 +303,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     print(f"INPUT: {predicate_path}")
     print(f"OUTPUT: {output_path}")
     print(f"ROWS WRITTEN: {len(draft_rows)}")
+    print(f"TRIMMED SPANS: {trimmed_count}")
     print(f"STATUS COUNTS: {dict(status_counts)}")
     print(f"CONFIDENCE COUNTS: {dict(confidence_counts)}")
     print("OUTPUT POLICY: DRAFT ONLY — HUMAN REVIEW REQUIRED")
@@ -273,9 +311,10 @@ def main(argv: Optional[list[str]] = None) -> int:
     print("VISIBLE OUTPUT PREVIEW:")
 
     for idx, row in enumerate(draft_rows[: args.preview_lines], start=1):
+        trim_text = f" | trim={row.get('trimming_notes')}" if row.get("trimming_notes") else ""
         print(
             f"{idx:>4}. {row['reference']} | {row['status']} | {row['confidence']} | "
-            f"anchor={row['predicate_anchor_id']} | trunk={row['trunk_greek']}"
+            f"anchor={row['predicate_anchor_id']} | trunk={row['trunk_greek']}{trim_text}"
         )
 
     return 0
