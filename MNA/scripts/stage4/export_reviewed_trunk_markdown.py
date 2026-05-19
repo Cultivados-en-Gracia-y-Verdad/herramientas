@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-MNA Stage 4 — Export Reviewed Trunk Markdown
+MNA Etapa 4 — Exportar Tronco Revisado a Markdown
 
-PURPOSE
-- Export reviewed suggested-trunk rows into a readable Markdown file.
-- Useful for manual preparation and quick teaching review.
-- Does not change source data.
+PROPÓSITO
+- Exportar las filas revisadas de suggested-trunk a un archivo Markdown legible.
+- Útil para preparación de manuales y revisión rápida de enseñanza.
+- No modifica los datos fuente.
 
-Output:
+Salida:
   MNA/exports/reviewed-trunk/<book>.md
 """
 
@@ -20,6 +20,21 @@ from pathlib import Path
 from typing import Optional
 
 
+STATUS_ES = {
+    "AI_REVIEWED": "REVISADO_POR_IA",
+    "NEEDS_EXTERNAL_GREEK_REVIEW": "REQUIERE_REVISIÓN_GRIEGA_EXTERNA",
+    "REVIEWED_FOR_MANUAL_USE": "REVISADO_PARA_USO_EN_MANUAL",
+}
+
+CONFIDENCE_ES = {
+    "HIGH": "ALTA",
+    "MEDIUM-HIGH": "MEDIA-ALTA",
+    "MEDIUM": "MEDIA",
+    "MEDIUM-LOW": "MEDIA-BAJA",
+    "LOW": "BAJA",
+}
+
+
 def mna_root_from_script() -> Path:
     return Path(__file__).resolve().parents[2]
 
@@ -29,7 +44,7 @@ def load_jsonl(path: Path):
     rows = []
 
     if not path.is_file():
-        raise FileNotFoundError(f"File not found: {path}")
+        raise FileNotFoundError(f"Archivo no encontrado: {path}")
 
     with path.open("r", encoding="utf-8") as handle:
         for line_number, raw in enumerate(handle, start=1):
@@ -39,7 +54,7 @@ def load_jsonl(path: Path):
             try:
                 obj = json.loads(stripped)
             except json.JSONDecodeError as exc:
-                raise ValueError(f"Invalid JSON at {path}:{line_number}: {exc}") from exc
+                raise ValueError(f"JSON inválido en {path}:{line_number}: {exc}") from exc
 
             if obj.get("record_type") == "metadata":
                 metadata = obj
@@ -60,11 +75,11 @@ def should_include(row: dict, include_unreviewed: bool) -> bool:
 
 
 def main(argv: Optional[list[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description="Export reviewed suggested trunk rows to Markdown.")
-    parser.add_argument("book", help="Book slug, e.g. 1corintios")
-    parser.add_argument("--from", dest="from_ref", help="Start bound CHAPTER:VERSE, e.g. 9:1")
-    parser.add_argument("--to", dest="to_ref", help="End bound CHAPTER:VERSE, e.g. 10:33")
-    parser.add_argument("--include-unreviewed", action="store_true", help="Include rows not marked reviewed_for_manual_use=true")
+    parser = argparse.ArgumentParser(description="Exportar filas revisadas del tronco sugerido a Markdown.")
+    parser.add_argument("book", help="Slug del libro, por ejemplo: 1corintios")
+    parser.add_argument("--from", dest="from_ref", help="Inicio CAPÍTULO:VERSÍCULO, por ejemplo: 9:1")
+    parser.add_argument("--to", dest="to_ref", help="Final CAPÍTULO:VERSÍCULO, por ejemplo: 10:33")
+    parser.add_argument("--include-unreviewed", action="store_true", help="Incluir filas no marcadas como reviewed_for_manual_use=true")
     args = parser.parse_args(argv)
 
     try:
@@ -99,12 +114,12 @@ def main(argv: Optional[list[str]] = None) -> int:
 
         title_range = ""
         if args.from_ref or args.to_ref:
-            title_range = f" ({args.from_ref or 'start'}–{args.to_ref or 'end'})"
+            title_range = f" ({args.from_ref or 'inicio'}–{args.to_ref or 'fin'})"
 
         lines = []
-        lines.append(f"# Reviewed Trunk — {book}{title_range}")
+        lines.append(f"# Tronco Revisado — {book}{title_range}")
         lines.append("")
-        lines.append(f"Rows exported: {len(filtered)}")
+        lines.append(f"Filas exportadas: {len(filtered)}")
         lines.append("")
 
         current_chapter = None
@@ -112,37 +127,37 @@ def main(argv: Optional[list[str]] = None) -> int:
             chapter = int(row.get("chapter", 0))
             if chapter != current_chapter:
                 current_chapter = chapter
-                lines.append(f"## Chapter {chapter}")
+                lines.append(f"## Capítulo {chapter}")
                 lines.append("")
 
             reference = row.get("reference")
-            confidence = row.get("confidence")
-            status = row.get("status")
+            confidence = CONFIDENCE_ES.get(str(row.get("confidence")), row.get("confidence"))
+            status = STATUS_ES.get(str(row.get("status")), row.get("status"))
             trunk = row.get("trunk_greek") or ""
             notes = row.get("review_notes") or row.get("notes") or ""
 
             lines.append(f"### {reference}")
-            lines.append(f"#### Status: {status} | Confidence: {confidence}")
+            lines.append(f"#### Estado: {status} | Confianza: {confidence}")
             lines.append("```text")
             lines.append(trunk)
             lines.append("```")
             if notes:
-                lines.append(f"##### Notes")
+                lines.append("##### Notas")
                 lines.append(notes)
             lines.append("")
 
         output_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
-        print("MNA Stage 4 — Export Reviewed Trunk Markdown")
-        print(f"BOOK: {book}")
+        print("MNA Etapa 4 — Exportar Tronco Revisado a Markdown")
+        print(f"LIBRO: {book}")
         print(f"DATASET: {dataset_path}")
-        print(f"OUTPUT: {output_path}")
-        print(f"ROWS EXPORTED: {len(filtered)}")
+        print(f"SALIDA: {output_path}")
+        print(f"FILAS EXPORTADAS: {len(filtered)}")
         print("STATUS: PASS")
         return 0
 
     except Exception as exc:
-        print("MNA Stage 4 reviewed trunk markdown export FAILED", file=sys.stderr)
+        print("Falló la exportación del tronco revisado de MNA Etapa 4", file=sys.stderr)
         print(str(exc), file=sys.stderr)
         return 1
 
