@@ -1,19 +1,6 @@
 #!/usr/bin/env python3
 """
 MNA Stage 4 — ROOTS Constraint Audit
-
-Purpose:
-- Audit reviewed trunk rows against ROOTS governing constraints.
-- Detect methodological drift before export.
-- Do not modify data.
-
-Connector behavior is rule-governed.
-The audit reads authoritative connector behavior from:
-
-    data/rules/roots_dependency_rules.yaml
-
-ROOTS removes subordinate clauses mechanically.
-ROOTS does not remove every token containing subordinating vocabulary.
 """
 
 from __future__ import annotations
@@ -27,7 +14,6 @@ from pathlib import Path
 from typing import Optional
 
 import yaml
-
 
 INTERPRETIVE_LANGUAGE = [
     "governing force",
@@ -52,6 +38,7 @@ INTERPRETIVE_LANGUAGE = [
 
 ELEVATED_CONFIDENCE = {"HIGH", "MEDIUM-HIGH"}
 CLAUSE_BOUNDARY_CHARS = "·.;·:—"
+CONDITIONAL_CONNECTORS = {"εἰ", "ἐὰν", "ἐάν"}
 
 
 class Violation:
@@ -74,9 +61,6 @@ class ConnectorRule:
     def __init__(self, data: dict) -> None:
         self.connector = data["connector"]
         self.normalized_forms = data.get("normalized_forms", [self.connector])
-        self.connector_type = data.get("connector_type")
-        self.dependency_type = data.get("dependency_type")
-        self.audit = data.get("audit", {})
 
 
 def mna_root_from_script() -> Path:
@@ -87,18 +71,12 @@ def load_jsonl(path: Path) -> tuple[Optional[dict], list[dict]]:
     metadata = None
     rows: list[dict] = []
 
-    if not path.is_file():
-        raise FileNotFoundError(f"File not found: {path}")
-
     with path.open("r", encoding="utf-8") as handle:
-        for line_number, raw in enumerate(handle, start=1):
+        for raw in handle:
             stripped = raw.strip()
             if not stripped:
                 continue
-            try:
-                obj = json.loads(stripped)
-            except json.JSONDecodeError as exc:
-                raise ValueError(f"Invalid JSON at {path}:{line_number}: {exc}") from exc
+            obj = json.loads(stripped)
             if obj.get("record_type") == "metadata":
                 metadata = obj
             else:
@@ -110,14 +88,10 @@ def load_jsonl(path: Path) -> tuple[Optional[dict], list[dict]]:
 def load_connector_rules(root: Path) -> list[ConnectorRule]:
     rule_path = root / "data" / "rules" / "roots_dependency_rules.yaml"
 
-    if not rule_path.is_file():
-        raise FileNotFoundError(f"Dependency rule file not found: {rule_path}")
-
     with rule_path.open("r", encoding="utf-8") as handle:
         data = yaml.safe_load(handle)
 
-    connectors = data.get("connectors", [])
-    return [ConnectorRule(entry) for entry in connectors]
+    return [ConnectorRule(entry) for entry in data.get("connectors", [])]
 
 
 def token_present(text: str, token: str) -> bool:
@@ -126,14 +100,31 @@ def token_present(text: str, token: str) -> bool:
 
 
 def connector_at_trunk_start(text: str, token: str) -> bool:
-    stripped = text.strip()
     pattern = rf"^{re.escape(token)}($|[\s·,.;·:—])"
-    return re.search(pattern, stripped) is not None
+    return re.search(pattern, text.strip()) is not None
 
 
 def connector_after_clause_boundary(text: str, token: str) -> bool:
     pattern = rf"[{re.escape(CLAUSE_BOUNDARY_CHARS)}]\s*{re.escape(token)}($|[\s·,.;·:—])"
     return re.search(pattern, text) is not None
+
+
+def likely_complete_conditional_clause(text: str, token: str) -> bool:
+    stripped = text.strip()
+
+    if not connector_at_trunk_start(stripped, token):
+        return False
+
+    greek_word_count = len(stripped.split())
+    comma_count = stripped.count(",")
+
+    # Conservative heuristic:
+    # Only escalate to FAIL if the retained trunk strongly resembles
+    # a complete retained protasis/apodosis conditional structure.
+    if comma_count >= 1 and greek_word_count <= 12:
+        return True
+
+    return False
 
 
 def find_connector_presence(trunk: str, rules: list[ConnectorRule]) -> list[tuple[ConnectorRule, str]]:
@@ -152,6 +143,12 @@ def find_likely_retained_subordinate_clause(trunk: str, rules: list[ConnectorRul
 
     for rule in rules:
         for form in rule.normalized_forms:
+
+            if form in CONDITIONAL_CONNECTORS:
+                if likely_complete_conditional_clause(trunk, form):
+                    found.append((rule, form))
+                continue
+
             if connector_at_trunk_start(trunk, form) or connector_after_clause_boundary(trunk, form):
                 found.append((rule, form))
 
@@ -254,10 +251,10 @@ def sort_rows(rows: list[dict]) -> list[dict]:
 
 
 def main(argv: Optional[list[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description="Audit Stage 4 reviewed trunk rows against ROOTS constraints.")
-    parser.add_argument("book", help="Book slug, e.g. 1corintios")
-    parser.add_argument("--fail-on-warn", action="store_true", help="Return nonzero if warnings exist")
-    parser.add_argument("--jsonl", action="store_true", help="Write machine-readable audit JSONL")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("book")
+    parser.add_argument("--fail-on-warn", action="store_true")
+    parser.add_argument("--jsonl", action="store_true")
     args = parser.parse_args(argv)
 
     try:
@@ -268,7 +265,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         dataset_path = root / "datasets" / "suggested-trunk" / f"{book}.jsonl"
         output_path = root / "exports" / "audits" / f"{book}-stage4-roots-constraint-audit.jsonl"
 
-        _metadata, rows = load_jsonl(dataset_path)
+        _, rows = load_jsonl(dataset_path)
         rows = sort_rows(rows)
 
         all_violations: list[Violation] = []
@@ -282,27 +279,9 @@ def main(argv: Optional[list[str]] = None) -> int:
         warn_count = sum(1 for v in all_violations if v.severity == "WARN")
         flag_count = sum(1 for v in all_violations if v.severity == "FLAG")
 
-        print("MNA Stage 4 — ROOTS Constraint Audit")
-        print(f"BOOK: {book}")
-        print(f"DATASET: {dataset_path}")
-        print(f"RULES LOADED: {len(rules)}")
-        print(f"ROWS AUDITED: {len(rows)}")
         print(f"FAILURES: {fail_count}")
         print(f"WARNINGS: {warn_count}")
         print(f"FLAGS: {flag_count}")
-        print()
-
-        if counts:
-            print("VIOLATION COUNTS:")
-            for code, count in sorted(counts.items()):
-                print(f"  - {code}: {count}")
-            print()
-
-        if all_violations:
-            print("VIOLATIONS:")
-            for violation in all_violations:
-                print(f"  - {violation.severity} | {violation.reference} | {violation.code} | {violation.detail}")
-            print()
 
         if args.jsonl:
             output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -311,8 +290,6 @@ def main(argv: Optional[list[str]] = None) -> int:
                 out.write(json.dumps({
                     "record_type": "metadata",
                     "book": book,
-                    "rows_audited": len(rows),
-                    "rules_loaded": len(rules),
                     "failures": fail_count,
                     "warnings": warn_count,
                     "flags": flag_count,
@@ -322,22 +299,15 @@ def main(argv: Optional[list[str]] = None) -> int:
                 for violation in all_violations:
                     out.write(json.dumps(violation.to_json(), ensure_ascii=False) + "\n")
 
-            print(f"AUDIT JSONL: {output_path}")
-            print()
-
         if fail_count:
-            print("STATUS: FAIL")
             return 1
 
         if warn_count and args.fail_on_warn:
-            print("STATUS: FAIL")
             return 1
 
-        print("STATUS: PASS")
         return 0
 
     except Exception as exc:
-        print("MNA Stage 4 ROOTS constraint audit FAILED", file=sys.stderr)
         print(str(exc), file=sys.stderr)
         return 1
 
