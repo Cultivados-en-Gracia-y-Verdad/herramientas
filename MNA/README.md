@@ -382,3 +382,45 @@ Reproducibility is more important than complexity.
 
 If the system cannot visibly regenerate the output,
 the system has failed.
+
+
+
+# REBUILD CHAIN:
+
+## Stage 1
+
+```
+python3 scripts/stage1/build_finite_verbs.py 1corintios
+python3 scripts/stage1/update_verification_ledger.py 1corintios --date YYYY-MM-DD
+```
+
+## Stage 2
+
+```
+python3 scripts/stage2/build_predicate_anchors.py 1corintios
+python3 scripts/stage2/validate_predicate_anchors.py 1corintios
+```
+
+## Stage 3
+
+```
+python3 scripts/stage3/build_anchor_skeleton.py 1corintios
+python3 scripts/stage3/validate_anchor_skeleton.py 1corintios
+```
+
+## Stage 4 (current reviewed layer)
+
+```
+python3 scripts/stage4/rebuild_stage4_book.py 1corintios
+```
+
+That is the real current rebuild path.
+
+FULL REBUILD COMMAND:
+
+```
+python3 scripts/rebuild/rebuild_stages_1_4_book.py \
+1corintios \
+--date 2026-05-15
+
+```

@@ -202,6 +202,8 @@ function normalizeRenderedSlide(renderedSlide) {
 }
 
 function getEntryHtml(entry) {
+  if (isPresenter && entry?.presenterHtml) return entry.presenterHtml;
+  if (isProjector && projectorMode === "mirrored" && entry?.presenterHtml) return entry.presenterHtml;
   if (entry?.teacherOnly && !isPresenter) return "";
   return typeof entry === "string" ? entry : entry?.html || "";
 }
@@ -592,6 +594,7 @@ function getShuffledChoiceIndexes(quiz) {
 
 function renderPresenterQuiz() {
   const activeQuiz = getActiveQuiz();
+  const error = quizState.error;
   const statusEl = document.getElementById("quizStatus");
   const controlsEl = document.getElementById("quizControls");
   const resultsEl = document.getElementById("quizResults");
@@ -607,9 +610,11 @@ function renderPresenterQuiz() {
 
   const selectedQuizId = activeQuiz?.id || quizzes[0].id;
 
-  statusEl.innerHTML = activeQuiz
-    ? `<strong>Active:</strong> ${activeQuiz.title}<br>${activeQuiz.question}`
-    : "<em>No quiz running.</em>";
+  statusEl.innerHTML = error
+    ? `<strong>Quiz problem:</strong> ${escapeHtml(error.message)}`
+    : activeQuiz
+      ? `<strong>Active:</strong> ${activeQuiz.title}<br>${activeQuiz.question}`
+      : "<em>No quiz running.</em>";
 
   controlsEl.innerHTML = `
     <select id="quizSelect" class="quiz-select">
@@ -653,11 +658,22 @@ function renderPresenterQuiz() {
 
 function renderProjectorQuiz() {
   const quiz = getActiveQuiz();
+  const error = quizState.error;
   const resultsEl = document.getElementById("projectorQuiz");
   const joinUrl = connection?.url || "/audience.html";
   const joinCode = connection?.host && connection?.port
     ? `${connection.host}:${connection.port}`
     : joinUrl.replace(/^https?:\/\//, "").replace(/\/audience\.html$/, "");
+
+  if (error) {
+    resultsEl.innerHTML = `
+      <div class="projector-quiz-copy">
+        <strong>Quiz not available</strong>
+        <span>${escapeHtml(error.message)}</span>
+      </div>
+    `;
+    return;
+  }
 
   if (!quiz) {
     resultsEl.innerHTML = "";

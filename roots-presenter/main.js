@@ -1,11 +1,12 @@
 const fs = require("fs/promises");
 const http = require("http");
 const path = require("path");
-const { app, BrowserWindow, screen, Menu, dialog } = require("electron");
+const { app, BrowserWindow, screen, Menu, dialog, shell } = require("electron");
 
 const APP_URL = "http://localhost:3000";
 const DEFAULT_COURSE_LIBRARY_DIR = path.join(app.getPath("documents"), "CGV Presenter");
 const LOGO_PATH = path.join(__dirname, "assets", "cgv-app-icon.png");
+const APP_STATE_PATH = path.join(app.getPath("userData"), "app-state.json");
 
 app.setName("CGV Presenter");
 process.env.ROOTS_RUNTIME_DATA_DIR = app.getPath("userData");
@@ -153,6 +154,53 @@ async function getCourseLibrary() {
   }
 }
 
+async function loadLocalAppState() {
+  try {
+    return JSON.parse(await fs.readFile(APP_STATE_PATH, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+async function saveLocalAppState(nextState) {
+  const appState = {
+    ...await loadLocalAppState(),
+    ...nextState
+  };
+
+  await fs.mkdir(path.dirname(APP_STATE_PATH), { recursive: true });
+  await fs.writeFile(APP_STATE_PATH, `${JSON.stringify(appState, null, 2)}\n`, "utf8");
+}
+
+async function showFirstRunSetup() {
+  const appState = await loadLocalAppState();
+  if (appState.setupCompleted) return;
+
+  const result = await dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
+    type: "info",
+    title: "Welcome to CGV Presenter",
+    message: "CGV Presenter is ready to use.",
+    detail: [
+      "Starter content has been installed automatically:",
+      "",
+      "• Romanos course",
+      "• NBLA Bible references",
+      "• 5 starter songs",
+      "",
+      "You can begin now, or choose an easy-to-access library folder such as Documents/CGV Presenter."
+    ].join("\n"),
+    buttons: ["Use Starter Library", "Choose Library Folder..."],
+    defaultId: 0,
+    cancelId: 0
+  });
+
+  if (result.response === 1) {
+    await chooseCourseLibraryFolder();
+  }
+
+  await saveLocalAppState({ setupCompleted: true });
+}
+
 async function chooseCourseLibraryFolder() {
   try {
     const library = await getCourseLibrary();
@@ -172,6 +220,92 @@ async function chooseCourseLibraryFolder() {
     dialog.showErrorBox(
       "Choose Course Library",
       error?.message || "The course library folder could not be saved."
+    );
+  }
+}
+
+async function openFolderPath(folderPath, title) {
+  if (!folderPath || typeof folderPath !== "string") {
+    dialog.showErrorBox(title, "That folder is not available yet.");
+    return;
+  }
+
+  try {
+    await fs.mkdir(folderPath, { recursive: true });
+    const error = await shell.openPath(folderPath);
+
+    if (error) {
+      dialog.showErrorBox(title, error);
+    }
+  } catch (error) {
+    dialog.showErrorBox(
+      title,
+      error?.message || "The folder could not be opened."
+    );
+  }
+}
+
+async function getLibraryPaths() {
+  try {
+    return await getLocalJson("/library-paths");
+  } catch {
+    return {};
+  }
+}
+
+async function openCourseLibraryFolder() {
+  const paths = await getLibraryPaths();
+  await openFolderPath(paths.courses, "Open Course Library");
+}
+
+async function openSongsFolder() {
+  const paths = await getLibraryPaths();
+  await openFolderPath(paths.songs, "Open Songs Folder");
+}
+
+async function openBibleFolder() {
+  const paths = await getLibraryPaths();
+
+  if (paths.bibles) {
+    await openFolderPath(paths.bibles, "Open Bible Folder");
+    return;
+  }
+
+  dialog.showErrorBox(
+    "Open Bible Folder",
+    "No active Bible folder was found. Open Bible Status to see all search paths."
+  );
+}
+
+async function showBibleStatus() {
+  try {
+    const status = await getLocalJson("/bible/status");
+    const active = status.searchPaths.find(candidate => candidate.exists && candidate.files > 0);
+    const details = [
+      `Loaded: ${status.loaded ? "Yes" : "No"}`,
+      `Books: ${status.books}`,
+      `References: ${status.references}`,
+      "",
+      active
+        ? `Active folder:\n${active.path}`
+        : "Active folder:\nNone found",
+      "",
+      "Search paths:",
+      ...status.searchPaths.map(candidate => (
+        `${candidate.exists ? "✓" : "•"} ${candidate.path} (${candidate.files} files)`
+      ))
+    ].join("\n");
+
+    dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
+      type: status.loaded ? "info" : "warning",
+      title: "Bible Status",
+      message: "NBLA Bible Status",
+      detail: details
+    });
+  } catch (error) {
+    dialog.showErrorBox(
+      "Bible Status",
+      error?.message || "Bible status could not be loaded."
     );
   }
 }
@@ -570,7 +704,7 @@ function createMenu() {
       ]
     },
     {
-      label: "Course",
+      label: "Library",
       submenu: [
         {
           label: "Download Courses...",
@@ -584,6 +718,25 @@ function createMenu() {
           label: "Load Downloaded Course...",
           accelerator: "CmdOrCtrl+O",
           click: loadDownloadedCourse
+        },
+        { type: "separator" },
+        {
+          label: "Open Course Library Folder",
+          click: openCourseLibraryFolder
+        },
+        { type: "separator" },
+        {
+          label: "Open Songs Folder",
+          click: openSongsFolder
+        },
+        { type: "separator" },
+        {
+          label: "Open Bible Folder",
+          click: openBibleFolder
+        },
+        {
+          label: "Bible Status...",
+          click: showBibleStatus
         }
       ]
     },
@@ -884,6 +1037,7 @@ function createWindows() {
   createPresentationWindows();
   setTimeout(refreshHeadingMenu, 500);
   setTimeout(refreshQuizMenu, 600);
+  setTimeout(showFirstRunSetup, 900);
 }
 
 app.whenReady().then(() => {

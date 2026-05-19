@@ -7,7 +7,11 @@ module.exports = {
     name: 'CGV Presenter',
     asar: true,
     icon: './assets/cgv-app-icon',
-    extraResource: [path.resolve(__dirname, 'bibles')],
+    extraResource: [
+      path.resolve(__dirname, 'bibles'),
+      path.resolve(__dirname, 'courses', 'Romanos'),
+      path.resolve(__dirname, 'songs'),
+    ],
   },
   rebuildConfig: {},
   makers: [

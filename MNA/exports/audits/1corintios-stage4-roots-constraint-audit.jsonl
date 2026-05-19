@@ -1,0 +1,189 @@
+{"record_type": "metadata", "book": "1corintios", "rows_audited": 368, "failures": 72, "warnings": 116, "violation_counts": {"LIKELY_SUBORDINATE_CLAUSE_RETAINED": 49, "INTERPRETIVE_RETENTION_LANGUAGE": 36, "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY": 22, "SUBORDINATING_CONNECTOR_TOKEN_PRESENT": 37, "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN": 21, "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION": 23}}
+{"reference": "1corintios 1:5", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ὅτι"}
+{"reference": "1corintios 1:6", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: καθὼς"}
+{"reference": "1corintios 1:10", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: exhortational force"}
+{"reference": "1corintios 1:10", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 1:13", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 1:19", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 1:20", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 1:20", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 1:21", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: primary force"}
+{"reference": "1corintios 2:1", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 2:1", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 2:2", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 2:11", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 3:10", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὡς"}
+{"reference": "1corintios 3:12", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 3:16", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 3:16", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 3:18", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: exhortational force"}
+{"reference": "1corintios 4:7", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 4:18", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ὡς"}
+{"reference": "1corintios 4:18", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 4:21", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 4:21", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 7:7", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὡς"}
+{"reference": "1corintios 7:8", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἐὰν, ὡς"}
+{"reference": "1corintios 7:9", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 7:9", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 7:11", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 7:15", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 7:16", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: εἰ"}
+{"reference": "1corintios 7:17", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὡς"}
+{"reference": "1corintios 7:17", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 7:28", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 7:31", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὡς"}
+{"reference": "1corintios 7:36", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 7:40", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἐὰν"}
+{"reference": "1corintios 8:1", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 8:1", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 8:2", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: καθὼς"}
+{"reference": "1corintios 8:3", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 8:3", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 8:4", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι, εἰ"}
+{"reference": "1corintios 8:4", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 8:10", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 8:13", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 8:13", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 9:1", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 9:1", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 9:4", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 9:4", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 9:5", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 9:5", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 9:6", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 9:6", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 9:7", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 9:7", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 9:8", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 9:8", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 9:11", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 9:11", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 9:11", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 9:11", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 9:12", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 9:13", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 9:13", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 9:16", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 9:16", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 9:17", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 9:17", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 9:18", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἵνα"}
+{"reference": "1corintios 9:18", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 9:20", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὡς"}
+{"reference": "1corintios 9:20", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 9:21", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὡς"}
+{"reference": "1corintios 9:24", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 9:24", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 9:26", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὡς"}
+{"reference": "1corintios 9:26", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 10:13", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: εἰ"}
+{"reference": "1corintios 10:13", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 10:15", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ὡς"}
+{"reference": "1corintios 10:15", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 10:19", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing, rhetorical"}
+{"reference": "1corintios 10:19", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 10:22", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 10:22", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 10:28", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 10:28", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 10:30", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 10:30", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 11:1", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: καθὼς"}
+{"reference": "1corintios 11:1", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 11:1", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 11:1", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 11:3", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 11:3", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 11:3", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 11:3", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 11:6", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 11:13", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 11:13", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 11:14", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 11:15", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἐὰν"}
+{"reference": "1corintios 11:16", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 11:16", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 11:22", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 11:22", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 11:24", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: central"}
+{"reference": "1corintios 11:25", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: central"}
+{"reference": "1corintios 11:31", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 12:2", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι, ὡς"}
+{"reference": "1corintios 12:3", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 12:3", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 13:1", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 13:1", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 13:2", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 13:2", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 13:3", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:5", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἵνα"}
+{"reference": "1corintios 14:5", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 14:6", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:7", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἐὰν"}
+{"reference": "1corintios 14:8", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:9", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:9", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 14:10", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: εἰ"}
+{"reference": "1corintios 14:11", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:12", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἵνα"}
+{"reference": "1corintios 14:12", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 14:13", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἵνα"}
+{"reference": "1corintios 14:13", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 14:14", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:16", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:23", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:23", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 14:23", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 14:23", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 14:24", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:24", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 14:26", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 14:26", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 14:27", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 14:27", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 14:28", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:28", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 14:30", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 14:35", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 14:36", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 14:37", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 14:37", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 14:38", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 14:40", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: governing"}
+{"reference": "1corintios 14:40", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 15:4", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 15:4", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: central"}
+{"reference": "1corintios 15:4", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 15:4", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 15:5", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 15:10", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: central"}
+{"reference": "1corintios 15:10", "code": "CONFIDENCE_EXCEEDS_MECHANICAL_CERTAINTY", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with interpretive-retention language."}
+{"reference": "1corintios 15:12", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 15:12", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ὅτι"}
+{"reference": "1corintios 15:12", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 15:12", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 15:13", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 15:13", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 15:14", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 15:14", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 15:16", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 15:17", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 15:17", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 15:19", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 15:19", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 15:29", "code": "INTERPRETIVE_RETENTION_LANGUAGE", "severity": "WARN", "detail": "Review note contains interpretive-retention language: rhetorical"}
+{"reference": "1corintios 15:32", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: εἰ"}
+{"reference": "1corintios 15:36", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἐὰν"}
+{"reference": "1corintios 15:36", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 15:38", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: καθὼς"}
+{"reference": "1corintios 15:38", "code": "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN", "severity": "WARN", "detail": "Elevated confidence MEDIUM-HIGH paired with unverified subordinating connector token."}
+{"reference": "1corintios 15:49", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: καθὼς"}
+{"reference": "1corintios 15:49", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}
+{"reference": "1corintios 16:3", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἐὰν"}
+{"reference": "1corintios 16:4", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 16:10", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἐὰν"}
+{"reference": "1corintios 16:10", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἵνα"}
+{"reference": "1corintios 16:12", "code": "SUBORDINATING_CONNECTOR_TOKEN_PRESENT", "severity": "WARN", "detail": "Subordinating connector token present; clause scope requires review: ἵνα"}
+{"reference": "1corintios 16:16", "code": "LIKELY_SUBORDINATE_CLAUSE_RETAINED", "severity": "FAIL", "detail": "Likely subordinate clause retained in trunk: ἵνα"}
+{"reference": "1corintios 16:16", "code": "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION", "severity": "FAIL", "detail": "Elevated confidence MEDIUM-HIGH paired with likely subordinate clause retention."}

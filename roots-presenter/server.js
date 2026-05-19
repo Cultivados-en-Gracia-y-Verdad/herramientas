@@ -26,11 +26,25 @@ const cwdBibleDir = path.join(process.cwd(), "bibles", "NBLA");
 const bundledBibleDir = path.join(__dirname, "bibles", "NBLA");
 const legacyNblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
 const coursesDir = path.join(__dirname, "courses");
-const bundledSongsDir = path.join(__dirname, "songs");
+const resourceDefaultCourseDir = process.resourcesPath
+  ? path.join(process.resourcesPath, "Romanos")
+  : "";
+const resourceSongsDir = process.resourcesPath
+  ? path.join(process.resourcesPath, "songs")
+  : "";
+const bundledDefaultCourseDir = firstExistingDirectory([
+  resourceDefaultCourseDir,
+  path.join(coursesDir, "Romanos")
+]) || path.join(coursesDir, "Romanos");
+const bundledSongRoots = [
+  resourceSongsDir,
+  path.join(__dirname, "songs")
+].filter(Boolean);
 const backgroundsDir = path.join(__dirname, "backgrounds");
 const assetBackgroundsDir = path.join(__dirname, "assets", "backgrounds");
-const defaultCourseDir = path.join(coursesDir, "Romanos");
 const bundledDataDir = path.join(__dirname, "data");
+const starterContentVersion = "1.1.0";
+const starterSongLimit = 5;
 
 function getRuntimeDataDir() {
   if (process.env.ROOTS_RUNTIME_DATA_DIR) {
@@ -51,7 +65,13 @@ const defaultCourseLibraryDir = process.env.ROOTS_DEFAULT_COURSE_LIBRARY_DIR || 
 const styleSettingsPath = path.join(runtimeDataDir, "style-settings.json");
 const bundledStyleSettingsPath = path.join(bundledDataDir, "style-settings.json");
 const appStatePath = path.join(runtimeDataDir, "app-state.json");
+const starterCourseLibraryDir = path.join(runtimeDataDir, "courses");
+const starterRomanosCourseDir = path.join(starterCourseLibraryDir, "Romanos");
 const songsDir = path.join(runtimeDataDir, "songs");
+seedStarterContent();
+const defaultCourseDir = isLoadableCourseDir(starterRomanosCourseDir)
+  ? starterRomanosCourseDir
+  : bundledDefaultCourseDir;
 const cgvRepository = {
   owner: "Cultivados-en-Gracia-y-Verdad",
   repo: "curriculo",
@@ -135,6 +155,7 @@ let quizState = {
   answers: {},
   answersByQuiz: {}
 };
+let quizError = null;
 
 let popupState = {
   reference: null,
@@ -1119,16 +1140,43 @@ function renderLine(line) {
   if (quizMarker) {
     const quiz = quizBank.find(item => item.id === quizMarker.quizId);
     const title = quiz?.title || quizMarker.quizId;
+    const status = quiz ? "Quiz ready" : "Quiz not found";
+    const button = quiz
+      ? `<button type="button" onclick="launchQuiz('${escapeHtml(quizMarker.quizId)}')">Launch quiz</button>`
+      : `<button type="button" disabled>Missing quiz file</button>`;
+    const joinInfo = getJoinInfo();
+    const joinCode = joinInfo.host && joinInfo.port
+      ? `${joinInfo.host}:${joinInfo.port}`
+      : joinInfo.url.replace(/^https?:\/\//, "").replace(/\/audience\.html$/, "");
 
     return {
-      teacherOnly: true,
-      html: `
+      presenterHtml: `
         <aside class="quiz-cue">
           <div>
-            <strong>Quiz ready</strong>
+            <strong>${status}</strong>
             <span>${escapeHtml(title)}</span>
           </div>
-          <button type="button" onclick="launchQuiz('${escapeHtml(quizMarker.quizId)}')">Launch quiz</button>
+          ${button}
+        </aside>
+      `.trim(),
+      html: quiz
+        ? `
+        <aside class="quiz-cue projector-quiz-cue">
+          <div>
+            <strong>Quiz listo</strong>
+            <span>${escapeHtml(title)}</span>
+            <small>Escanee el código o entre a <code>${escapeHtml(joinCode)}</code></small>
+          </div>
+          <img class="quiz-cue-qr" src="/quiz-join.svg" alt="Código QR para entrar al quiz">
+        </aside>
+      `.trim()
+        : `
+        <aside class="quiz-cue projector-quiz-cue missing">
+          <div>
+            <strong>Quiz no disponible</strong>
+            <span>${escapeHtml(title)}</span>
+            <small>Falta el archivo YAML correspondiente.</small>
+          </div>
         </aside>
       `.trim()
     };
@@ -1228,6 +1276,112 @@ function loadAppState() {
   } catch (error) {
     console.warn(`Could not load app state: ${error.message}`);
     return {};
+  }
+}
+
+function firstExistingDirectory(candidates) {
+  return candidates.find(candidate => {
+    try {
+      return candidate && fs.existsSync(candidate) && fs.statSync(candidate).isDirectory();
+    } catch {
+      return false;
+    }
+  });
+}
+
+function copyDirectoryFiltered(sourceDir, destinationDir, options = {}) {
+  if (!sourceDir || !fs.existsSync(sourceDir)) return false;
+
+  const excludeDirs = new Set(options.excludeDirs || []);
+  const excludeFiles = new Set(options.excludeFiles || []);
+
+  fs.mkdirSync(destinationDir, { recursive: true });
+
+  fs.readdirSync(sourceDir, { withFileTypes: true }).forEach(entry => {
+    if (entry.name.startsWith(".")) return;
+    if (entry.isDirectory() && excludeDirs.has(entry.name)) return;
+    if (entry.isFile() && excludeFiles.has(entry.name)) return;
+
+    const sourcePath = path.join(sourceDir, entry.name);
+    const destinationPath = path.join(destinationDir, entry.name);
+
+    if (entry.isDirectory()) {
+      copyDirectoryFiltered(sourcePath, destinationPath, options);
+      return;
+    }
+
+    if (entry.isFile()) {
+      fs.mkdirSync(path.dirname(destinationPath), { recursive: true });
+      fs.copyFileSync(sourcePath, destinationPath);
+    }
+  });
+
+  return true;
+}
+
+function getStarterSongFiles() {
+  const sourceDir = firstExistingDirectory(bundledSongRoots);
+  if (!sourceDir) return [];
+
+  return fs.readdirSync(sourceDir)
+    .filter(fileName => /\.(cho|chordpro|chopro|pro)$/i.test(fileName))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .slice(0, starterSongLimit)
+    .map(fileName => ({
+      sourceDir,
+      fileName
+    }));
+}
+
+function seedStarterSongs() {
+  const hasUserSongs = fs.existsSync(songsDir)
+    && fs.readdirSync(songsDir).some(fileName => /\.(cho|chordpro|chopro|pro)$/i.test(fileName));
+
+  if (hasUserSongs) return;
+
+  const starterSongs = getStarterSongFiles();
+  if (!starterSongs.length) return;
+
+  fs.mkdirSync(songsDir, { recursive: true });
+  starterSongs.forEach(song => {
+    fs.copyFileSync(
+      path.join(song.sourceDir, song.fileName),
+      path.join(songsDir, song.fileName)
+    );
+  });
+}
+
+function seedStarterCourse() {
+  if (isLoadableCourseDir(starterRomanosCourseDir)) return;
+
+  copyDirectoryFiltered(bundledDefaultCourseDir, starterRomanosCourseDir, {
+    excludeDirs: new Set(["sessions"]),
+    excludeFiles: new Set([".DS_Store"])
+  });
+}
+
+function seedStarterContent() {
+  const appState = loadAppState();
+
+  try {
+    seedStarterCourse();
+    seedStarterSongs();
+
+    const nextState = {
+      starterContentVersion
+    };
+
+    if (!isLoadableCourseDir(appState.lastCourseDir) && isLoadableCourseDir(starterRomanosCourseDir)) {
+      nextState.lastCourseDir = starterRomanosCourseDir;
+    }
+
+    if (!appState.courseLibraryDir && fs.existsSync(starterCourseLibraryDir)) {
+      nextState.courseLibraryDir = starterCourseLibraryDir;
+    }
+
+    saveAppState(nextState);
+  } catch (error) {
+    console.warn(`Could not seed starter content: ${error.message}`);
   }
 }
 
@@ -1818,6 +1972,7 @@ function resetQuiz() {
     answers: {},
     answersByQuiz: {}
   };
+  quizError = null;
 }
 
 function clearPopup() {
@@ -2133,11 +2288,13 @@ function parseChordProSong(content, filePath) {
 function loadSongLibrary() {
   const songFiles = new Map();
 
-  [bundledSongsDir, songsDir].forEach(root => {
+  [...bundledSongRoots, songsDir].forEach(root => {
     if (!fs.existsSync(root)) return;
 
     fs.readdirSync(root)
       .filter(fileName => /\.(cho|chordpro|chopro|pro)$/i.test(fileName))
+      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+      .slice(0, root === songsDir ? undefined : starterSongLimit)
       .forEach(fileName => {
         songFiles.set(fileName, path.join(root, fileName));
       });
@@ -2368,9 +2525,18 @@ function startQuizById(quizId) {
     : 0;
   const startIndex = normalizedQuizId && foundIndex < 0 ? -1 : Math.max(0, foundIndex);
   const quiz = quizBank[startIndex] || quizBank[0];
-  if (!quiz || startIndex < 0) return false;
+  if (!quiz || startIndex < 0) {
+    quizError = {
+      message: normalizedQuizId
+        ? `Quiz "${normalizedQuizId}" was not found. Check that the matching YAML file exists in the course quizzes folder.`
+        : "No quiz is available for this course.",
+      quizId: normalizedQuizId || ""
+    };
+    return false;
+  }
 
   returnToTeachingMode();
+  quizError = null;
   const activeGroupId = quiz.groupId || quiz.id;
   const sequence = quizBank
     .slice(startIndex)
@@ -2472,7 +2638,8 @@ function buildPayload(participantId = null) {
       counts: quizState.counts,
       countsByQuiz: quizState.countsByQuiz,
       review: getQuizReview(),
-      participantResult: getParticipantQuizResult(participantId)
+      participantResult: getParticipantQuizResult(participantId),
+      error: quizError
     },
     popupState: {
       reference: popupState.reference,
@@ -2523,6 +2690,19 @@ app.get("/course-library", (req, res) => {
   res.json({
     path: getCourseLibraryDir(),
     suggestedPath: defaultCourseLibraryDir
+  });
+});
+
+app.get("/library-paths", (req, res) => {
+  const bibleStatus = getBibleStatus();
+  const activeBiblePath = bibleStatus.searchPaths.find(candidate => candidate.exists && candidate.files > 0);
+
+  res.json({
+    runtimeDataDir,
+    courses: getCourseLibraryDir() || starterCourseLibraryDir,
+    songs: songsDir,
+    bibles: activeBiblePath?.path || "",
+    bibleSearchPaths: bibleStatus.searchPaths
   });
 });
 
@@ -2624,7 +2804,7 @@ app.get("/quizzes", (req, res) => {
 
 app.post("/quiz/start/:quizId", (req, res) => {
   if (!startQuizById(req.params.quizId)) {
-    res.status(400).json({ error: "No quiz available." });
+    res.status(400).json({ error: quizError?.message || "No quiz available." });
     return;
   }
 
@@ -2775,7 +2955,8 @@ io.on("connection", socket => {
   });
 
   socket.on("start-quiz", quizId => {
-    if (startQuizById(quizId)) sendState();
+    startQuizById(quizId);
+    sendState();
   });
 
   socket.on("end-quiz", () => {

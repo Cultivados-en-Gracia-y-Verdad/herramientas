@@ -755,6 +755,55 @@ button {
   white-space: nowrap;
 }
 
+.projector-quiz-cue {
+  align-self: center;
+  background: #f8fafc;
+  border-color: #38bdf8;
+  color: #0f172a;
+  gap: 28px;
+  margin: 0 auto;
+  max-width: min(1100px, 88vw);
+  padding: 32px;
+}
+
+.projector-quiz-cue strong {
+  color: #075985;
+  font-size: 0.68em;
+}
+
+.projector-quiz-cue span {
+  color: #0f172a;
+  font-size: 1.08em;
+  line-height: 1.15;
+}
+
+.projector-quiz-cue small {
+  color: #334155;
+  font-size: 0.45em;
+  line-height: 1.35;
+}
+
+.projector-quiz-cue code {
+  background: rgba(14, 165, 233, 0.12);
+  border-radius: 6px;
+  color: #075985;
+  font-family: inherit;
+  padding: 0.1em 0.25em;
+}
+
+.projector-quiz-cue.missing {
+  border-color: #fb923c;
+}
+
+.quiz-cue-qr {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.18);
+  flex: 0 0 auto;
+  height: 220px;
+  width: 220px;
+}
+
 .projector {
   background: var(--view-background, #000000);
   color: white;
