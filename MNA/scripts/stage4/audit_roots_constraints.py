@@ -38,7 +38,6 @@ INTERPRETIVE_LANGUAGE = [
 
 ELEVATED_CONFIDENCE = {"HIGH", "MEDIUM-HIGH"}
 CLAUSE_BOUNDARY_CHARS = "·.;·:—"
-CONDITIONAL_CONNECTORS = {"εἰ", "ἐὰν", "ἐάν"}
 
 
 class Violation:
@@ -61,6 +60,11 @@ class ConnectorRule:
     def __init__(self, data: dict) -> None:
         self.connector = data["connector"]
         self.normalized_forms = data.get("normalized_forms", [self.connector])
+        self.audit = data.get("audit", {})
+
+    @property
+    def allows_preserved_scope(self) -> bool:
+        return self.audit.get("proven_scope_retention") == "ACCEPTABLE"
 
 
 def mna_root_from_script() -> Path:
@@ -109,24 +113,6 @@ def connector_after_clause_boundary(text: str, token: str) -> bool:
     return re.search(pattern, text) is not None
 
 
-def likely_complete_conditional_clause(text: str, token: str) -> bool:
-    stripped = text.strip()
-
-    if not connector_at_trunk_start(stripped, token):
-        return False
-
-    greek_word_count = len(stripped.split())
-    comma_count = stripped.count(",")
-
-    # Conservative heuristic:
-    # Only escalate to FAIL if the retained trunk strongly resembles
-    # a complete retained protasis/apodosis conditional structure.
-    if comma_count >= 1 and greek_word_count <= 12:
-        return True
-
-    return False
-
-
 def find_connector_presence(trunk: str, rules: list[ConnectorRule]) -> list[tuple[ConnectorRule, str]]:
     found: list[tuple[ConnectorRule, str]] = []
 
@@ -142,13 +128,12 @@ def find_likely_retained_subordinate_clause(trunk: str, rules: list[ConnectorRul
     found: list[tuple[ConnectorRule, str]] = []
 
     for rule in rules:
+
+        # Conditional units are explicitly allowed to survive.
+        if rule.allows_preserved_scope:
+            continue
+
         for form in rule.normalized_forms:
-
-            if form in CONDITIONAL_CONNECTORS:
-                if likely_complete_conditional_clause(trunk, form):
-                    found.append((rule, form))
-                continue
-
             if connector_at_trunk_start(trunk, form) or connector_after_clause_boundary(trunk, form):
                 found.append((rule, form))
 
@@ -173,11 +158,15 @@ def audit_row(row: dict, rules: list[ConnectorRule]) -> list[Violation]:
 
     likely_forms = {form for _, form in likely_scope}
 
-    unresolved = [
-        (rule, form)
-        for rule, form in token_presence
-        if form not in likely_forms
-    ]
+    unresolved = []
+
+    for rule, form in token_presence:
+
+        if rule.allows_preserved_scope:
+            continue
+
+        if form not in likely_forms:
+            unresolved.append((rule, form))
 
     if likely_scope:
         forms = sorted({form for _, form in likely_scope})
