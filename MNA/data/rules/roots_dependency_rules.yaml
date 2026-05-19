@@ -9,8 +9,18 @@
 # Connector token presence alone is not automatic failure.
 # Proven retention of the connector-governed subordinate clause is failure.
 # Unresolved scope remains warning.
+#
+# Conditional policy:
+# εἰ / ἐὰν conditional constructions are treated as
+# inseparable conditional logical units.
+#
+# Therefore:
+# protasis + apodosis may survive together in trunk reduction.
+#
+# ROOTS does not mechanically prioritize the apodosis
+# over the protasis.
 
-version: 0.1
+version: 0.2
 scope: initial_subordinating_connectors
 
 connectors:
@@ -19,15 +29,18 @@ connectors:
       - "εἰ"
     connector_type: subordinating
     dependency_type: conditional
+    conditional_unit: true
+    inseparable_conditional_structure: true
     requires_finite_clause: true
     scope_resolution_required: true
     trunk_reduction:
-      removable_when_scope_proven: true
+      removable_when_scope_proven: false
+      preserve_conditional_unit: true
     audit:
-      token_presence: WARN
-      proven_scope_retention: FAIL
-      elevated_confidence_with_token: WARN
-      elevated_confidence_with_proven_retention: FAIL
+      token_presence: ACCEPTABLE
+      proven_scope_retention: ACCEPTABLE
+      elevated_confidence_with_token: ACCEPTABLE
+      elevated_confidence_with_proven_retention: ACCEPTABLE
 
   - connector: "ἐὰν"
     normalized_forms:
@@ -35,15 +48,18 @@ connectors:
       - "ἐάν"
     connector_type: subordinating
     dependency_type: conditional
+    conditional_unit: true
+    inseparable_conditional_structure: true
     requires_finite_clause: true
     scope_resolution_required: true
     trunk_reduction:
-      removable_when_scope_proven: true
+      removable_when_scope_proven: false
+      preserve_conditional_unit: true
     audit:
-      token_presence: WARN
-      proven_scope_retention: FAIL
-      elevated_confidence_with_token: WARN
-      elevated_confidence_with_proven_retention: FAIL
+      token_presence: ACCEPTABLE
+      proven_scope_retention: ACCEPTABLE
+      elevated_confidence_with_token: ACCEPTABLE
+      elevated_confidence_with_proven_retention: ACCEPTABLE
 
   - connector: "ἵνα"
     normalized_forms:
