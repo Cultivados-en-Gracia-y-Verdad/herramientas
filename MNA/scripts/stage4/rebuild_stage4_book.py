@@ -6,6 +6,7 @@ PURPOSE
 - Deterministically rebuild the Stage 4 reviewed-trunk layer for a book.
 - Re-apply all review batches.
 - Audit coverage.
+- Audit ROOTS constraint compliance.
 - Export Spanish reviewed trunk markdown.
 
 This is intentionally limited to Stage 4.
@@ -53,6 +54,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--dry-run", action="store_true", help="Print commands without running them")
     parser.add_argument("--force", action="store_true", help="Force apply review batches")
     parser.add_argument("--raw-notes", action="store_true", help="Export raw canonical notes instead of Spanish presentation notes")
+    parser.add_argument("--allow-constraint-warnings", action="store_true", help="Allow export despite ROOTS constraint warnings")
     args = parser.parse_args(argv)
 
     try:
@@ -60,7 +62,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         book = args.book.strip().lower()
 
         apply_all_script = root / "scripts" / "stage4" / "apply_all_review_batches.py"
-        audit_script = root / "scripts" / "stage4" / "audit_suggested_trunk_review_coverage.py"
+        coverage_audit_script = root / "scripts" / "stage4" / "audit_suggested_trunk_review_coverage.py"
+        roots_constraint_audit_script = root / "scripts" / "stage4" / "audit_roots_constraints.py"
         export_script = root / "scripts" / "stage4" / "export_reviewed_trunk_markdown.py"
 
         print("MNA Stage 4 — Rebuild Book")
@@ -84,15 +87,33 @@ def main(argv: Optional[list[str]] = None) -> int:
         if code != 0:
             return code
 
-        audit_cmd = [
+        coverage_audit_cmd = [
             sys.executable,
-            str(audit_script.relative_to(root)),
+            str(coverage_audit_script.relative_to(root)),
             book,
         ]
 
         code = run_step(
             "STEP 2 — AUDIT REVIEW COVERAGE",
-            audit_cmd,
+            coverage_audit_cmd,
+            root,
+            args.dry_run,
+        )
+        if code != 0:
+            return code
+
+        roots_constraint_cmd = [
+            sys.executable,
+            str(roots_constraint_audit_script.relative_to(root)),
+            book,
+            "--jsonl",
+        ]
+        if not args.allow_constraint_warnings:
+            roots_constraint_cmd.append("--fail-on-warn")
+
+        code = run_step(
+            "STEP 3 — AUDIT ROOTS CONSTRAINTS",
+            roots_constraint_cmd,
             root,
             args.dry_run,
         )
@@ -108,7 +129,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             export_cmd.append("--raw-notes")
 
         code = run_step(
-            "STEP 3 — EXPORT SPANISH REVIEWED TRUNK MARKDOWN",
+            "STEP 4 — EXPORT SPANISH REVIEWED TRUNK MARKDOWN",
             export_cmd,
             root,
             args.dry_run,
