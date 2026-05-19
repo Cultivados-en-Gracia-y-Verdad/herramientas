@@ -8,11 +8,14 @@ Purpose:
 - Do not modify data.
 
 Primary checks:
-- subordinate connector retained in trunk
+- likely subordinate clause retained in trunk
+- subordinating connector token present where scope cannot yet be proven
 - interpretive retention language in review notes
 - elevated confidence with interpretive language
 
-This is a conservative audit. It flags likely violations for re-review.
+Important:
+This audit must not confuse connector-token presence with proven clause retention.
+ROOTS removes subordinate clauses, not every string that contains a subordinating connector.
 """
 
 from __future__ import annotations
@@ -59,6 +62,7 @@ INTERPRETIVE_LANGUAGE = [
 ]
 
 ELEVATED_CONFIDENCE = {"HIGH", "MEDIUM-HIGH"}
+CLAUSE_BOUNDARY_CHARS = "·.;·:—"
 
 
 class Violation:
@@ -106,13 +110,33 @@ def load_jsonl(path: Path) -> tuple[Optional[dict], list[dict]]:
 
 
 def token_present(text: str, token: str) -> bool:
-    # Greek connector token boundary: whitespace or punctuation around token.
-    pattern = rf"(^|[\s·,.;·:]){re.escape(token)}($|[\s·,.;·:])"
+    pattern = rf"(^|[\s·,.;·:—]){re.escape(token)}($|[\s·,.;·:—])"
     return re.search(pattern, text) is not None
 
 
-def find_subordinating_connectors(trunk: str) -> list[str]:
+def connector_at_trunk_start(text: str, token: str) -> bool:
+    stripped = text.strip()
+    pattern = rf"^{re.escape(token)}($|[\s·,.;·:—])"
+    return re.search(pattern, stripped) is not None
+
+
+def connector_after_clause_boundary(text: str, token: str) -> bool:
+    # Flags cases where a subordinate connector appears after a major clause boundary.
+    # This is stronger than token presence, but still not final proof of clause scope.
+    pattern = rf"[{re.escape(CLAUSE_BOUNDARY_CHARS)}]\s*{re.escape(token)}($|[\s·,.;·:—])"
+    return re.search(pattern, text) is not None
+
+
+def find_connector_presence(trunk: str) -> list[str]:
     return [connector for connector in SUBORDINATING_CONNECTORS if token_present(trunk, connector)]
+
+
+def find_likely_retained_subordinate_clause(trunk: str) -> list[str]:
+    connectors: list[str] = []
+    for connector in SUBORDINATING_CONNECTORS:
+        if connector_at_trunk_start(trunk, connector) or connector_after_clause_boundary(trunk, connector):
+            connectors.append(connector)
+    return connectors
 
 
 def find_interpretive_terms(notes: str) -> list[str]:
@@ -127,14 +151,27 @@ def audit_row(row: dict) -> list[Violation]:
     notes = str(row.get("review_notes") or row.get("notes") or "")
     confidence = str(row.get("confidence") or "")
 
-    connectors = find_subordinating_connectors(trunk)
-    if connectors:
+    likely_clause_connectors = find_likely_retained_subordinate_clause(trunk)
+    connector_tokens = find_connector_presence(trunk)
+    uncertain_tokens = [connector for connector in connector_tokens if connector not in likely_clause_connectors]
+
+    if likely_clause_connectors:
         violations.append(
             Violation(
                 reference,
-                "SUBORDINATE_CONNECTOR_RETAINED",
-                "Subordinating connector(s) retained in trunk: " + ", ".join(connectors),
+                "LIKELY_SUBORDINATE_CLAUSE_RETAINED",
+                "Likely subordinate clause retained in trunk: " + ", ".join(likely_clause_connectors),
                 "FAIL",
+            )
+        )
+
+    if uncertain_tokens:
+        violations.append(
+            Violation(
+                reference,
+                "SUBORDINATING_CONNECTOR_TOKEN_PRESENT",
+                "Subordinating connector token present; clause scope requires review: " + ", ".join(uncertain_tokens),
+                "WARN",
             )
         )
 
@@ -159,13 +196,23 @@ def audit_row(row: dict) -> list[Violation]:
             )
         )
 
-    if confidence in ELEVATED_CONFIDENCE and connectors:
+    if confidence in ELEVATED_CONFIDENCE and likely_clause_connectors:
         violations.append(
             Violation(
                 reference,
-                "CONFIDENCE_WITH_SUBORDINATE_RETENTION",
-                f"Elevated confidence {confidence} paired with subordinating connector retained in trunk.",
+                "CONFIDENCE_WITH_LIKELY_SUBORDINATE_RETENTION",
+                f"Elevated confidence {confidence} paired with likely subordinate clause retention.",
                 "FAIL",
+            )
+        )
+
+    if confidence in ELEVATED_CONFIDENCE and uncertain_tokens:
+        violations.append(
+            Violation(
+                reference,
+                "CONFIDENCE_WITH_UNVERIFIED_SUBORDINATING_TOKEN",
+                f"Elevated confidence {confidence} paired with unverified subordinating connector token.",
+                "WARN",
             )
         )
 
