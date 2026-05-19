@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Style Settings</title>
+  <title>Settings</title>
   <link rel="icon" href="/assets/cgv-app-icon.svg">
   <link rel="stylesheet" href="settings.css">
 </head>
@@ -12,11 +12,25 @@
       <img src="/assets/cgv-logo.svg" alt="CGV">
       <div>
         <strong>CGV Presenter</strong>
-        <span>Style Settings</span>
+        <span>Settings</span>
       </div>
     </div>
     <button id="saveButton" type="button">Save Settings</button>
   </header>
+
+  <section class="settings-panel language-panel">
+    <div>
+      <h2>Language</h2>
+      <p>Choose the application language for menus, controls, and teaching screens.</p>
+    </div>
+    <label>
+      App language
+      <select id="languageSelect">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+    </label>
+  </section>
 
   <section class="theme-panel">
     <div class="theme-panel-copy">

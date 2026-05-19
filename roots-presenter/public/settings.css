@@ -91,6 +91,7 @@ select {
   padding: 8px 10px;
 }
 
+.settings-panel,
 .theme-panel {
   display: grid;
   grid-template-columns: minmax(180px, 0.85fr) minmax(420px, 2fr);
@@ -104,16 +105,22 @@ select {
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
+.settings-panel h2,
 .theme-panel h2 {
   margin: 0 0 6px;
   color: #075985;
   font-size: 20px;
 }
 
+.settings-panel p,
 .theme-panel p {
   margin: 0;
   color: #4b5563;
   line-height: 1.35;
+}
+
+.language-panel {
+  grid-template-columns: minmax(260px, 1fr) minmax(220px, 320px);
 }
 
 .theme-controls {
@@ -206,6 +213,10 @@ button:active {
 
 @media (max-width: 920px) {
   .theme-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .language-panel {
     grid-template-columns: 1fr;
   }
 

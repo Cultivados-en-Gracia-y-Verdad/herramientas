@@ -709,6 +709,11 @@ function saveStyleSettings(settings) {
   fs.writeFileSync(styleSettingsPath, `${JSON.stringify(settings, null, 2)}\n`);
 }
 
+function getAppLanguage() {
+  const language = loadStyleSettings().language;
+  return ["es", "en"].includes(language) ? language : "es";
+}
+
 function getScopedStyles(settings) {
   const styles = settings.styles || {};
 
@@ -2621,6 +2626,7 @@ function buildPayload(participantId = null) {
     session: getSessionSummary(),
     connection: getJoinInfo(),
     presentation: presentationMeta,
+    language: getAppLanguage(),
     quizzes: quizBank.map(quiz => publicQuiz(quiz)),
     slides: slides.map(slide => ({ quiz: slide.quiz })),
     renderedSlides: slides.map(slide => ({

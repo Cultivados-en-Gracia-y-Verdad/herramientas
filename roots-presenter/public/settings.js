@@ -43,6 +43,7 @@ const popupFields = [
 const builtInThemes = window.CGV_STYLE_THEMES || [];
 
 let settings = {
+  language: "es",
   theme: "",
   styles: { main: {}, presenter: {}, audience: {} },
   customThemes: []
@@ -73,9 +74,11 @@ function getAvailableThemes() {
 function normalizeSettings(rawSettings) {
   const styles = rawSettings.styles || {};
   const customThemes = getCustomThemes(rawSettings);
+  const language = ["es", "en"].includes(rawSettings.language) ? rawSettings.language : "es";
 
   if (styles.main || styles.presenter || styles.audience) {
     return {
+      language,
       theme: rawSettings.theme || "",
       customThemes,
       styles: {
@@ -87,6 +90,7 @@ function normalizeSettings(rawSettings) {
   }
 
   return {
+    language,
     theme: rawSettings.theme || "",
     customThemes,
     styles: {
@@ -210,6 +214,7 @@ function renderPopupSection(scope) {
 function renderSettings() {
   const form = document.getElementById("settingsForm");
   form.innerHTML = "";
+  renderLanguageSelect();
   renderThemeSelect();
 
   viewScopes.forEach(scope => {
@@ -237,6 +242,14 @@ function renderSettings() {
   });
 }
 
+function renderLanguageSelect() {
+  const select = document.getElementById("languageSelect");
+  if (!select) return;
+
+  select.value = settings.language || "es";
+  document.documentElement.lang = settings.language || "es";
+}
+
 function renderThemeSelect() {
   const select = document.getElementById("themeSelect");
   if (!select) return;
@@ -256,6 +269,7 @@ function renderThemeSelect() {
 
 function collectSettings() {
   const nextSettings = {
+    language: document.getElementById("languageSelect")?.value || settings.language || "es",
     theme: document.getElementById("themeSelect")?.value || settings.theme || "",
     customThemes: getCustomThemes(),
     styles: { main: {}, presenter: {}, audience: {} }
@@ -287,6 +301,7 @@ function applySelectedTheme() {
   const currentCustomThemes = getCustomThemes();
   settings = normalizeSettings({
     ...clone(theme.settings),
+    language: settings.language || "es",
     customThemes: currentCustomThemes
   });
   renderSettings();
@@ -318,6 +333,7 @@ function saveCurrentAsTheme() {
     name: themeName.trim(),
     description: "Custom theme",
     settings: {
+      language: current.language || "es",
       theme: id,
       styles: clone(current.styles)
     }

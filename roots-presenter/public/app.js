@@ -19,6 +19,7 @@ let controllerState = { active: false, title: "", sections: [], step: 0 };
 let userAnswer = null;
 let session = null;
 let connection = { url: "/audience.html" };
+let appLanguage = "es";
 let participant = null;
 let activeQuizKey = null;
 let popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
@@ -35,6 +36,8 @@ localStorage.setItem("rootsParticipantId", storedParticipantId);
 socket.on("state", data => {
   session = data.session || null;
   connection = data.connection || connection;
+  appLanguage = data.language || "es";
+  document.documentElement.lang = appLanguage;
   renderedSlides = data.renderedSlides || [];
   slides = data.slides || [];
   quizzes = data.quizzes || [];
