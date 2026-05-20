@@ -31,21 +31,41 @@ def iter_stage4_rows(path: Path) -> Iterable[Dict[str, Any]]:
             continue
         yield record
 
-def normalize_record(record: Dict[str, Any]) -> Dict[str, Any]:
+def load_subordinator_candidates(path: Optional[Path]) -> Dict[str, Dict[str, Any]]:
+    if path is None:
+        return {}
+    indexed: Dict[str, Dict[str, Any]] = {}
+    for record in iter_stage4_rows(path):
+        anchor_id = record.get("predicate_anchor_id")
+        if not anchor_id:
+            continue
+        indexed[anchor_id] = record
+    return indexed
+
+def normalize_record(record: Dict[str, Any], subordinator_by_anchor: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:
+    anchor_id = record.get("predicate_anchor_id") or record.get("unit_id") or record.get("structure_id") or record.get("id")
+    sub = subordinator_by_anchor.get(anchor_id, {})
+
+    dependency_sources = list(record.get("dependency_sources") or [])
+    if sub:
+        dependency_sources.append("subordinator-dependency-candidates")
+
     normalized = {
         "book": record.get("book"),
         "chapter": record.get("chapter"),
         "verse": record.get("verse"),
         "reference": record.get("reference"),
-        "unit_id": record.get("unit_id") or record.get("predicate_anchor_id") or record.get("structure_id") or record.get("id"),
-        "clause_id": record.get("clause_id") or record.get("predicate_anchor_id"),
+        "unit_id": anchor_id,
+        "clause_id": record.get("clause_id") or anchor_id,
         "finite_verb": record.get("finite_verb") or record.get("anchor_greek_surface"),
         "connector": record.get("connector"),
-        "connector_greek": record.get("connector_greek"),
-        "dependency_status": record.get("dependency_status") or record.get("independency_status") or record.get("candidate_status"),
+        "connector_greek": record.get("connector_greek") or sub.get("subordinator_greek_surface"),
+        "connector_lemma": sub.get("subordinator_lemma"),
+        "connector_rule_id": sub.get("rule_id"),
+        "dependency_status": record.get("dependency_status") or record.get("independency_status") or sub.get("candidate_status"),
         "stage4_decision": record.get("stage4_decision") or record.get("decision") or record.get("survivability_status"),
         "stage4_reason": record.get("stage4_reason") or record.get("reason"),
-        "dependency_sources": list(record.get("dependency_sources") or []),
+        "dependency_sources": dependency_sources,
         "warnings": list(record.get("warnings") or []),
         "flags": list(record.get("flags") or []),
         "stage4_claims": {
@@ -77,9 +97,12 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Export Stage 4 records into Stage 5 contract format.")
     parser.add_argument("input_jsonl", type=Path)
     parser.add_argument("output_jsonl", type=Path)
+    parser.add_argument("--subordinator-candidates", type=Path)
     args = parser.parse_args(argv)
     try:
-        write_jsonl((normalize_record(record) for record in iter_stage4_rows(args.input_jsonl)), args.output_jsonl)
+        subordinator_by_anchor = load_subordinator_candidates(args.subordinator_candidates)
+        records = (normalize_record(record, subordinator_by_anchor) for record in iter_stage4_rows(args.input_jsonl))
+        write_jsonl(records, args.output_jsonl)
     except ExportError as exc:
         print(f"Stage 5 export error: {exc}", file=sys.stderr)
         return 2
