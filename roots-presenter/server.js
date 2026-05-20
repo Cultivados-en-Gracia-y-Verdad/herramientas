@@ -13,17 +13,6 @@ const server = http.createServer(app);
 const io = new Server(server);
 const serverPort = Number(process.env.PORT || 3000);
 const serverEvents = new EventTarget();
-const resourceBibleDir = process.resourcesPath
-  ? path.join(process.resourcesPath, "bibles", "NBLA")
-  : "";
-const unpackedResourceBibleDir = process.resourcesPath
-  ? path.join(process.resourcesPath, "app.asar.unpacked", "bibles", "NBLA")
-  : "";
-const executableResourceBibleDir = process.execPath
-  ? path.join(path.dirname(process.execPath), "resources", "bibles", "NBLA")
-  : "";
-const cwdBibleDir = path.join(process.cwd(), "bibles", "NBLA");
-const bundledBibleDir = path.join(__dirname, "bibles", "NBLA");
 const legacyNblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
 const coursesDir = path.join(__dirname, "courses");
 const resourceDefaultCourseDir = process.resourcesPath
@@ -57,7 +46,7 @@ function getRuntimeDataDir() {
     process.env.HOME ||
     process.cwd();
 
-  return path.join(appData, "ROOTS Presenter", "data");
+  return path.join(appData, "CGV Presenter");
 }
 
 const runtimeDataDir = getRuntimeDataDir();
@@ -65,12 +54,9 @@ const defaultCourseLibraryDir = process.env.ROOTS_DEFAULT_COURSE_LIBRARY_DIR || 
 const styleSettingsPath = path.join(runtimeDataDir, "style-settings.json");
 const bundledStyleSettingsPath = path.join(bundledDataDir, "style-settings.json");
 const appStatePath = path.join(runtimeDataDir, "app-state.json");
-const starterCourseLibraryDir = path.join(runtimeDataDir, "courses");
-const starterRomanosCourseDir = path.join(starterCourseLibraryDir, "Romanos");
-const songsDir = path.join(runtimeDataDir, "songs");
 seedStarterContent();
-const defaultCourseDir = isLoadableCourseDir(starterRomanosCourseDir)
-  ? starterRomanosCourseDir
+const defaultCourseDir = isLoadableCourseDir(getStarterRomanosCourseDir())
+  ? getStarterRomanosCourseDir()
   : bundledDefaultCourseDir;
 const cgvRepository = {
   owner: "Cultivados-en-Gracia-y-Verdad",
@@ -98,7 +84,17 @@ app.get("/style-settings", (req, res) => {
 });
 app.post("/style-settings", (req, res) => {
   const settings = req.body && typeof req.body === "object" ? req.body : {};
+  const previousBibleVersion = getBibleVersion();
   saveStyleSettings(settings);
+  const nextBibleVersion = getBibleVersion();
+
+  if (nextBibleVersion !== previousBibleVersion) {
+    ensureLibraryFolders();
+    seedStarterBible();
+    loadBibleReferences();
+    loadSlides();
+  }
+
   io.emit("style-settings-updated", { updatedAt: Date.now() });
   sendState();
   res.json(settings);
@@ -734,6 +730,21 @@ function getAppLanguage() {
   return ["es", "en"].includes(language) ? language : "es";
 }
 
+function normalizeBibleVersion(value) {
+  return String(value || "NBLA")
+    .trim()
+    .replace(/[^A-Za-z0-9_-]/g, "")
+    .toUpperCase() || "NBLA";
+}
+
+function getBibleVersion() {
+  return normalizeBibleVersion(loadStyleSettings().bibleVersion);
+}
+
+function getBibleFileExtension(version = getBibleVersion()) {
+  return `.${normalizeBibleVersion(version).toLowerCase()}.md`;
+}
+
 function serverText(key) {
   const language = getAppLanguage();
   const translations = {
@@ -885,12 +896,18 @@ function buildBibleBookAliases(book) {
 }
 
 function loadBibleReferences() {
+  const version = getBibleVersion();
+  const fileExtension = getBibleFileExtension(version);
   const bibleDir = getBibleSearchPaths()
     .filter(Boolean)
     .find(candidate => getBibleFileCount(candidate) > 0);
 
   if (!bibleDir) {
-    console.warn("No NBLA Bible data found. Bible reference popups will be disabled.");
+    bibleReferences = {};
+    bibleChapterVerseCounts = {};
+    bibleBookNames = [];
+    bibleBookPatterns = [];
+    console.warn(`No ${version} Bible data found. Bible reference popups will be disabled.`);
     return;
   }
 
@@ -898,7 +915,7 @@ function loadBibleReferences() {
   bibleChapterVerseCounts = {};
 
   fs.readdirSync(bibleDir)
-    .filter(fileName => fileName.endsWith(".nbla.md"))
+    .filter(fileName => fileName.toLowerCase().endsWith(fileExtension))
     .forEach(fileName => {
       const filePath = path.join(bibleDir, fileName);
       const content = fs.readFileSync(filePath, "utf-8");
@@ -941,10 +958,10 @@ function loadBibleReferences() {
     .flatMap(buildBibleBookAliases)
     .sort((a, b) => b.length - a.length);
 
-  console.log(`Loaded ${bibleBookNames.length} NBLA Bible books from ${bibleDir}`);
+  console.log(`Loaded ${bibleBookNames.length} ${version} Bible books from ${bibleDir}`);
 }
 
-function getBibleSearchPaths() {
+function getBibleSearchRoots() {
   const appData =
     process.env.APPDATA ||
     process.env.LOCALAPPDATA ||
@@ -952,39 +969,65 @@ function getBibleSearchPaths() {
     "";
 
   return Array.from(new Set([
-    resourceBibleDir,
-    unpackedResourceBibleDir,
-    executableResourceBibleDir,
-
-    process.resourcesPath
-      ? path.join(process.resourcesPath, "app", "bibles", "NBLA")
-      : "",
-
-    process.resourcesPath
-      ? path.join(process.resourcesPath, "app.asar", "bibles", "NBLA")
-      : "",
-
-    appData
-      ? path.join(appData, "ROOTS Presenter", "bibles", "NBLA")
-      : "",
-
-    bundledBibleDir,
-    cwdBibleDir,
-    legacyNblaDir
+    path.join(getLibraryRootDir(), "bibles"),
+    process.resourcesPath ? path.join(process.resourcesPath, "bibles") : "",
+    process.resourcesPath ? path.join(process.resourcesPath, "app.asar.unpacked", "bibles") : "",
+    process.execPath ? path.join(path.dirname(process.execPath), "resources", "bibles") : "",
+    process.resourcesPath ? path.join(process.resourcesPath, "app", "bibles") : "",
+    process.resourcesPath ? path.join(process.resourcesPath, "app.asar", "bibles") : "",
+    appData ? path.join(appData, "ROOTS Presenter", "bibles") : "",
+    path.join(__dirname, "bibles"),
+    path.join(process.cwd(), "bibles")
   ].filter(Boolean)));
 }
 
-function getBibleFileCount(candidate) {
+function getBibleSearchPaths(version = getBibleVersion()) {
+  return Array.from(new Set([
+    getUserBibleDir(version),
+    ...getBibleSearchRoots().map(root => path.join(root, version)),
+    version === "NBLA" ? legacyNblaDir : ""
+  ].filter(Boolean)));
+}
+
+function getBibleFileCount(candidate, version = getBibleVersion()) {
   try {
     if (!candidate || !fs.existsSync(candidate)) return 0;
-    return fs.readdirSync(candidate).filter(fileName => fileName.endsWith(".nbla.md")).length;
+    const fileExtension = getBibleFileExtension(version);
+    return fs.readdirSync(candidate).filter(fileName => fileName.toLowerCase().endsWith(fileExtension)).length;
   } catch {
     return 0;
   }
 }
 
+function getAvailableBibleVersions() {
+  const versions = new Set();
+
+  getBibleSearchRoots().forEach(root => {
+    try {
+      if (!fs.existsSync(root)) return;
+
+      fs.readdirSync(root, { withFileTypes: true })
+        .filter(entry => entry.isDirectory())
+        .forEach(entry => {
+          const version = normalizeBibleVersion(entry.name);
+          const candidate = path.join(root, entry.name);
+          if (getBibleFileCount(candidate, version) > 0) versions.add(version);
+        });
+    } catch {
+      // Some packaged paths cannot be read directly on every platform.
+    }
+  });
+
+  if (getBibleFileCount(legacyNblaDir, "NBLA") > 0) versions.add("NBLA");
+
+  return Array.from(versions).sort((a, b) => a.localeCompare(b));
+}
+
 function getBibleStatus() {
+  const version = getBibleVersion();
   return {
+    version,
+    availableVersions: getAvailableBibleVersions(),
     loaded: bibleBookNames.length > 0,
     books: bibleBookNames.length,
     references: Object.keys(bibleReferences).length,
@@ -1387,6 +1430,7 @@ function getStarterSongFiles() {
 }
 
 function seedStarterSongs() {
+  const songsDir = getSongsDir();
   const hasUserSongs = fs.existsSync(songsDir)
     && fs.readdirSync(songsDir).some(fileName => /\.(cho|chordpro|chopro|pro)$/i.test(fileName));
 
@@ -1405,6 +1449,7 @@ function seedStarterSongs() {
 }
 
 function seedStarterCourse() {
+  const starterRomanosCourseDir = getStarterRomanosCourseDir();
   if (isLoadableCourseDir(starterRomanosCourseDir)) return;
 
   copyDirectoryFiltered(bundledDefaultCourseDir, starterRomanosCourseDir, {
@@ -1413,23 +1458,49 @@ function seedStarterCourse() {
   });
 }
 
+function seedStarterBible() {
+  const version = getBibleVersion();
+  const targetDir = getUserBibleDir(version);
+  const fileExtension = getBibleFileExtension(version);
+  const hasUserBible = fs.existsSync(targetDir)
+    && fs.readdirSync(targetDir).some(fileName => fileName.toLowerCase().endsWith(fileExtension));
+
+  if (hasUserBible) return;
+
+  const sourceDir = firstExistingDirectory([
+    process.resourcesPath ? path.join(process.resourcesPath, "bibles", version) : "",
+    process.resourcesPath ? path.join(process.resourcesPath, "app.asar.unpacked", "bibles", version) : "",
+    process.execPath ? path.join(path.dirname(process.execPath), "resources", "bibles", version) : "",
+    path.join(__dirname, "bibles", version),
+    path.join(process.cwd(), "bibles", version),
+    version === "NBLA" ? legacyNblaDir : ""
+  ]);
+
+  if (!sourceDir) return;
+  copyDirectoryFiltered(sourceDir, targetDir, {
+    excludeFiles: new Set([".DS_Store"])
+  });
+}
+
 function seedStarterContent() {
   const appState = loadAppState();
 
   try {
+    const libraryRootDir = inferLibraryRootDir(appState);
+    ensureLibraryFolders(libraryRootDir);
     seedStarterCourse();
     seedStarterSongs();
+    seedStarterBible();
 
     const nextState = {
-      starterContentVersion
+      starterContentVersion,
+      libraryRootDir,
+      courseLibraryDir: path.join(libraryRootDir, "courses")
     };
 
+    const starterRomanosCourseDir = getStarterRomanosCourseDir();
     if (!isLoadableCourseDir(appState.lastCourseDir) && isLoadableCourseDir(starterRomanosCourseDir)) {
       nextState.lastCourseDir = starterRomanosCourseDir;
-    }
-
-    if (!appState.courseLibraryDir && fs.existsSync(starterCourseLibraryDir)) {
-      nextState.courseLibraryDir = starterCourseLibraryDir;
     }
 
     saveAppState(nextState);
@@ -1448,24 +1519,68 @@ function saveAppState(nextState) {
   fs.writeFileSync(appStatePath, `${JSON.stringify(appState, null, 2)}\n`);
 }
 
-function getCourseLibraryDir() {
-  const configuredDir = loadAppState().courseLibraryDir;
-  return typeof configuredDir === "string" ? configuredDir : "";
+function inferLibraryRootDir(state = loadAppState()) {
+  if (typeof state.libraryRootDir === "string" && state.libraryRootDir.trim()) {
+    return state.libraryRootDir;
+  }
+
+  if (typeof state.courseLibraryDir === "string" && state.courseLibraryDir.trim()) {
+    return path.basename(state.courseLibraryDir) === "courses"
+      ? path.dirname(state.courseLibraryDir)
+      : state.courseLibraryDir;
+  }
+
+  return runtimeDataDir;
 }
 
-function setCourseLibraryDir(courseLibraryDir) {
-  if (!courseLibraryDir || typeof courseLibraryDir !== "string") return false;
+function getLibraryRootDir() {
+  return inferLibraryRootDir();
+}
+
+function getStarterRomanosCourseDir() {
+  return path.join(getCourseLibraryDir(), "Romanos");
+}
+
+function getSongsDir() {
+  return path.join(getLibraryRootDir(), "songs");
+}
+
+function getUserBibleDir(version = getBibleVersion()) {
+  return path.join(getLibraryRootDir(), "bibles", normalizeBibleVersion(version));
+}
+
+function getCourseLibraryDir() {
+  return path.join(getLibraryRootDir(), "courses");
+}
+
+function ensureLibraryFolders(libraryRootDir = getLibraryRootDir()) {
+  [
+    path.join(libraryRootDir, "courses"),
+    path.join(libraryRootDir, "songs"),
+    path.join(libraryRootDir, "bibles", getBibleVersion())
+  ].forEach(folder => fs.mkdirSync(folder, { recursive: true }));
+}
+
+function setCourseLibraryDir(libraryRootDir) {
+  if (!libraryRootDir || typeof libraryRootDir !== "string") return false;
 
   try {
-    if (!fs.existsSync(courseLibraryDir)) {
-      fs.mkdirSync(courseLibraryDir, { recursive: true });
+    if (!fs.existsSync(libraryRootDir)) {
+      fs.mkdirSync(libraryRootDir, { recursive: true });
     }
 
-    if (!fs.statSync(courseLibraryDir).isDirectory()) return false;
-    saveAppState({ courseLibraryDir });
+    if (!fs.statSync(libraryRootDir).isDirectory()) return false;
+    ensureLibraryFolders(libraryRootDir);
+    saveAppState({
+      libraryRootDir,
+      courseLibraryDir: path.join(libraryRootDir, "courses")
+    });
+    seedStarterCourse();
+    seedStarterSongs();
+    seedStarterBible();
     return true;
   } catch (error) {
-    console.warn(`Could not save course library folder: ${error.message}`);
+    console.warn(`Could not save library folder: ${error.message}`);
     return false;
   }
 }
@@ -2340,6 +2455,7 @@ function parseChordProSong(content, filePath) {
 
 function loadSongLibrary() {
   const songFiles = new Map();
+  const songsDir = getSongsDir();
 
   [...bundledSongRoots, songsDir].forEach(root => {
     if (!fs.existsSync(root)) return;
@@ -2402,6 +2518,7 @@ function slugifySongTitle(title) {
 }
 
 function getUniqueSongFileName(title) {
+  const songsDir = getSongsDir();
   const baseSlug = slugifySongTitle(title);
   let fileName = `${baseSlug}.cho`;
   let index = 2;
@@ -2424,6 +2541,7 @@ function buildChordProFile(title, chordLyrics) {
 }
 
 function saveSongFile(payload = {}) {
+  const songsDir = getSongsDir();
   const title = cleanLongText(payload.title, "Untitled Song", 160);
   const chordLyrics = cleanLongText(payload.chordLyrics || payload.lyrics, "", 100000);
   if (!chordLyrics.trim()) {
@@ -2675,6 +2793,7 @@ function buildPayload(participantId = null) {
     connection: getJoinInfo(),
     presentation: presentationMeta,
     language: getAppLanguage(),
+    bibleVersion: getBibleVersion(),
     quizzes: quizBank.map(quiz => publicQuiz(quiz)),
     slides: slides.map(slide => ({ quiz: slide.quiz })),
     renderedSlides: slides.map(slide => ({
@@ -2742,7 +2861,8 @@ app.post("/course/load", (req, res) => {
 
 app.get("/course-library", (req, res) => {
   res.json({
-    path: getCourseLibraryDir(),
+    path: getLibraryRootDir(),
+    coursesPath: getCourseLibraryDir(),
     suggestedPath: defaultCourseLibraryDir
   });
 });
@@ -2752,10 +2872,13 @@ app.get("/library-paths", (req, res) => {
   const activeBiblePath = bibleStatus.searchPaths.find(candidate => candidate.exists && candidate.files > 0);
 
   res.json({
+    libraryRoot: getLibraryRootDir(),
     runtimeDataDir,
-    courses: getCourseLibraryDir() || starterCourseLibraryDir,
-    songs: songsDir,
-    bibles: activeBiblePath?.path || "",
+    courses: getCourseLibraryDir(),
+    songs: getSongsDir(),
+    bibles: getUserBibleDir(),
+    bibleVersion: bibleStatus.version,
+    activeBiblePath: activeBiblePath?.path || "",
     bibleSearchPaths: bibleStatus.searchPaths
   });
 });
@@ -2780,6 +2903,13 @@ app.get("/courses/repository", (req, res) => {
 
 app.get("/bible/status", (req, res) => {
   res.json(getBibleStatus());
+});
+
+app.get("/bible/versions", (req, res) => {
+  res.json({
+    selected: getBibleVersion(),
+    versions: getAvailableBibleVersions()
+  });
 });
 
 app.get("/bible/test", (req, res) => {

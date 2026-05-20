@@ -38,17 +38,19 @@ const MAIN_TRANSLATIONS = {
     starterDetail: "El contenido inicial se instaló automáticamente:\n\n• Curso Romanos\n• Referencias bíblicas NBLA\n• 5 canciones iniciales\n\nPuedes comenzar ahora o escoger una carpeta de biblioteca fácil de encontrar, como Documents/CGV Presenter.",
     useStarterLibrary: "Usar biblioteca inicial",
     chooseLibraryFolder: "Escoger carpeta de biblioteca...",
-    chooseCourseLibraryFolder: "Escoger carpeta de biblioteca de cursos",
-    chooseCourseLibraryMessage: "Escoge la carpeta donde CGV Presenter debe guardar los cursos descargados.",
-    chooseCourseLibrary: "Escoger biblioteca de cursos",
-    courseLibraryCouldNotSave: "No se pudo guardar la carpeta de biblioteca de cursos.",
+    chooseCourseLibraryFolder: "Escoger carpeta de biblioteca",
+    chooseCourseLibraryMessage: "Escoge la carpeta donde CGV Presenter debe guardar cursos, canciones y Biblias.",
+    chooseCourseLibrary: "Escoger biblioteca",
+    courseLibraryCouldNotSave: "No se pudo guardar la carpeta de biblioteca.",
     folderUnavailable: "Esa carpeta no está disponible todavía.",
     openCourseLibrary: "Abrir biblioteca de cursos",
+    openLibraryFolder: "Abrir carpeta de biblioteca",
     openSongsFolder: "Abrir carpeta de canciones",
     openBibleFolder: "Abrir carpeta de Biblias",
     noBibleFolder: "No se encontró una carpeta bíblica activa. Abre Estado de Biblia para ver todas las rutas de búsqueda.",
     bibleStatus: "Estado de Biblia",
     nblaBibleStatus: "Estado de Biblia NBLA",
+    version: "Versión",
     loaded: "Cargado",
     yes: "Sí",
     no: "No",
@@ -81,6 +83,8 @@ const MAIN_TRANSLATIONS = {
     newTeachingSession: "Nueva sesión de enseñanza",
     sessionCouldNotCreate: "No se pudo crear la sesión.",
     styleSettings: "Configuración de estilo",
+    languageSettings: "Idioma",
+    style: "Estilo",
     downloadCourses: "Descargar cursos",
     controller: "Control",
     stageView: "Vista de escenario",
@@ -92,7 +96,7 @@ const MAIN_TRANSLATIONS = {
     mirroredScreenMode: "Modo pantalla duplicada",
     exitFullScreen: "Salir de pantalla completa",
     library: "Biblioteca",
-    openCourseLibraryFolder: "Abrir carpeta de biblioteca de cursos",
+    openCourseLibraryFolder: "Abrir carpeta de cursos",
     bibleStatusMenu: "Estado de Biblia...",
     quiz: "Quiz",
     settings: "Configuración",
@@ -116,17 +120,19 @@ MAIN_TRANSLATIONS.en = {
   starterDetail: "Starter content has been installed automatically:\n\n• Romanos course\n• NBLA Bible references\n• 5 starter songs\n\nYou can begin now, or choose an easy-to-access library folder such as Documents/CGV Presenter.",
   useStarterLibrary: "Use Starter Library",
   chooseLibraryFolder: "Choose Library Folder...",
-  chooseCourseLibraryFolder: "Choose Course Library Folder",
-  chooseCourseLibraryMessage: "Choose the folder where CGV Presenter should store downloaded courses.",
-  chooseCourseLibrary: "Choose Course Library",
-  courseLibraryCouldNotSave: "The course library folder could not be saved.",
+  chooseCourseLibraryFolder: "Choose Library Folder",
+  chooseCourseLibraryMessage: "Choose the folder where CGV Presenter should store courses, songs, and Bibles.",
+  chooseCourseLibrary: "Choose Library",
+  courseLibraryCouldNotSave: "The library folder could not be saved.",
   folderUnavailable: "That folder is not available yet.",
   openCourseLibrary: "Open Course Library",
+  openLibraryFolder: "Open Library Folder",
   openSongsFolder: "Open Songs Folder",
   openBibleFolder: "Open Bible Folder",
   noBibleFolder: "No active Bible folder was found. Open Bible Status to see all search paths.",
   bibleStatus: "Bible Status",
   nblaBibleStatus: "NBLA Bible Status",
+  version: "Version",
   loaded: "Loaded",
   yes: "Yes",
   no: "No",
@@ -159,6 +165,8 @@ MAIN_TRANSLATIONS.en = {
   newTeachingSession: "New Teaching Session",
   sessionCouldNotCreate: "The session could not be created.",
   styleSettings: "Style Settings",
+  languageSettings: "Language",
+  style: "Style",
   downloadCourses: "Download Courses",
   controller: "Controller",
   stageView: "Stage View",
@@ -170,7 +178,7 @@ MAIN_TRANSLATIONS.en = {
   mirroredScreenMode: "Mirrored Screen Mode",
   exitFullScreen: "Exit Full Screen",
   library: "Library",
-  openCourseLibraryFolder: "Open Course Library Folder",
+  openCourseLibraryFolder: "Open Courses Folder",
   bibleStatusMenu: "Bible Status...",
   quiz: "Quiz",
   settings: "Settings",
@@ -294,7 +302,7 @@ async function loadDownloadedCourse() {
 
     const result = await dialog.showOpenDialog(presenterWindow || BrowserWindow.getFocusedWindow(), {
       title: mt("loadDownloadedCourse"),
-      defaultPath: library.path || DEFAULT_COURSE_LIBRARY_DIR,
+      defaultPath: library.coursesPath || library.path || DEFAULT_COURSE_LIBRARY_DIR,
       properties: ["openDirectory"]
     });
 
@@ -418,6 +426,11 @@ async function openCourseLibraryFolder() {
   await openFolderPath(paths.courses, mt("openCourseLibrary"));
 }
 
+async function openLibraryFolder() {
+  const paths = await getLibraryPaths();
+  await openFolderPath(paths.libraryRoot, mt("openLibraryFolder"));
+}
+
 async function openSongsFolder() {
   const paths = await getLibraryPaths();
   await openFolderPath(paths.songs, mt("openSongsFolder"));
@@ -442,6 +455,7 @@ async function showBibleStatus() {
     const status = await getLocalJson("/bible/status");
     const active = status.searchPaths.find(candidate => candidate.exists && candidate.files > 0);
     const details = [
+      `${mt("version")}: ${status.version || "NBLA"}`,
       `${mt("loaded")}: ${status.loaded ? mt("yes") : mt("no")}`,
       `${mt("books")}: ${status.books}`,
       `${mt("references")}: ${status.references}`,
@@ -459,7 +473,7 @@ async function showBibleStatus() {
     dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
       type: status.loaded ? "info" : "warning",
       title: mt("bibleStatus"),
-      message: mt("nblaBibleStatus"),
+      message: `${status.version || "NBLA"} ${mt("bibleStatus")}`,
       detail: details
     });
   } catch (error) {
@@ -692,8 +706,9 @@ async function startNewTeachingSession() {
   }
 }
 
-function openStyleSettings() {
+function openSettingsSection(section = "style") {
   if (settingsWindow && !settingsWindow.isDestroyed()) {
+    settingsWindow.loadURL(`${APP_URL}/settings.html#${encodeURIComponent(section)}`);
     settingsWindow.focus();
     return;
   }
@@ -701,17 +716,25 @@ function openStyleSettings() {
   settingsWindow = new BrowserWindow({
     width: 760,
     height: 820,
-    title: mt("styleSettings"),
+    title: mt("settings"),
     icon: LOGO_PATH,
     autoHideMenuBar: !shouldShowMenuBar()
   });
 
-  settingsWindow.loadURL(`${APP_URL}/settings.html`);
+  settingsWindow.loadURL(`${APP_URL}/settings.html#${encodeURIComponent(section)}`);
   settingsWindow.on("closed", async () => {
     settingsWindow = null;
     await refreshAppLanguage();
     createMenu();
   });
+}
+
+function openLanguageSettings() {
+  openSettingsSection("language");
+}
+
+function openStyleSettings() {
+  openSettingsSection("style");
 }
 
 function openCourseDownload() {
@@ -883,6 +906,10 @@ function createMenu() {
         },
         { type: "separator" },
         {
+          label: mt("openLibraryFolder"),
+          click: openLibraryFolder
+        },
+        {
           label: mt("openCourseLibraryFolder"),
           click: openCourseLibraryFolder
         },
@@ -910,7 +937,11 @@ function createMenu() {
       label: mt("settings"),
       submenu: [
         {
-          label: `${mt("styleSettings")}...`,
+          label: `${mt("languageSettings")}...`,
+          click: openLanguageSettings
+        },
+        {
+          label: `${mt("style")}...`,
           accelerator: "CmdOrCtrl+,",
           click: openStyleSettings
         }

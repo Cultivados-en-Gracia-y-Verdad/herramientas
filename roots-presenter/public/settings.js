@@ -41,9 +41,11 @@ const popupFields = [
 ];
 
 const builtInThemes = window.CGV_STYLE_THEMES || [];
+let availableBibleVersions = ["NBLA"];
 
 let settings = {
   language: "es",
+  bibleVersion: "NBLA",
   theme: "",
   styles: { main: {}, presenter: {}, audience: {} },
   customThemes: []
@@ -71,14 +73,23 @@ function getAvailableThemes() {
   ];
 }
 
+function normalizeBibleVersion(value) {
+  return String(value || "NBLA")
+    .trim()
+    .replace(/[^A-Za-z0-9_-]/g, "")
+    .toUpperCase() || "NBLA";
+}
+
 function normalizeSettings(rawSettings) {
   const styles = rawSettings.styles || {};
   const customThemes = getCustomThemes(rawSettings);
   const language = ["es", "en"].includes(rawSettings.language) ? rawSettings.language : "es";
+  const bibleVersion = normalizeBibleVersion(rawSettings.bibleVersion);
 
   if (styles.main || styles.presenter || styles.audience) {
     return {
       language,
+      bibleVersion,
       theme: rawSettings.theme || "",
       customThemes,
       styles: {
@@ -91,6 +102,7 @@ function normalizeSettings(rawSettings) {
 
   return {
     language,
+    bibleVersion,
     theme: rawSettings.theme || "",
     customThemes,
     styles: {
@@ -220,7 +232,9 @@ function renderPopupSection(scope) {
 function renderSettings() {
   const form = document.getElementById("settingsForm");
   form.innerHTML = "";
+  form.dataset.settingsSection = "style";
   renderLanguageSelect();
+  renderBibleVersionSelect();
   renderThemeSelect();
 
   viewScopes.forEach(scope => {
@@ -246,6 +260,21 @@ function renderSettings() {
     group.appendChild(renderPopupSection(scope.key));
     form.appendChild(group);
   });
+
+  scrollToRequestedSection();
+}
+
+function scrollToRequestedSection() {
+  const requested = window.location.hash.replace(/^#/, "") || "style";
+  const target = requested === "language"
+    ? document.getElementById("language-settings")
+    : document.getElementById("style-settings");
+
+  if (!target) return;
+
+  requestAnimationFrame(() => {
+    target.scrollIntoView({ block: "start" });
+  });
 }
 
 function renderLanguageSelect() {
@@ -254,6 +283,25 @@ function renderLanguageSelect() {
 
   select.value = settings.language || "es";
   document.documentElement.lang = settings.language || "es";
+}
+
+function renderBibleVersionSelect() {
+  const select = document.getElementById("bibleVersionSelect");
+  if (!select) return;
+
+  select.replaceChildren();
+  const versions = Array.from(new Set([settings.bibleVersion || "NBLA", ...availableBibleVersions]))
+    .filter(Boolean)
+    .sort((a, b) => a.localeCompare(b));
+
+  versions.forEach(version => {
+    const option = document.createElement("option");
+    option.value = version;
+    option.textContent = version;
+    select.appendChild(option);
+  });
+
+  select.value = settings.bibleVersion || "NBLA";
 }
 
 function renderThemeSelect() {
@@ -276,6 +324,7 @@ function renderThemeSelect() {
 function collectSettings() {
   const nextSettings = {
     language: document.getElementById("languageSelect")?.value || settings.language || "es",
+    bibleVersion: document.getElementById("bibleVersionSelect")?.value || settings.bibleVersion || "NBLA",
     theme: document.getElementById("themeSelect")?.value || settings.theme || "",
     customThemes: getCustomThemes(),
     styles: { main: {}, presenter: {}, audience: {} }
@@ -308,6 +357,7 @@ function applySelectedTheme() {
   settings = normalizeSettings({
     ...clone(theme.settings),
     language: settings.language || "es",
+    bibleVersion: settings.bibleVersion || "NBLA",
     customThemes: currentCustomThemes
   });
   renderSettings();
@@ -340,6 +390,7 @@ function saveCurrentAsTheme() {
     description: t("customThemeDescription"),
     settings: {
       language: current.language || "es",
+      bibleVersion: current.bibleVersion || "NBLA",
       theme: id,
       styles: clone(current.styles)
     }
@@ -358,8 +409,19 @@ function saveCurrentAsTheme() {
 }
 
 async function loadSettings() {
-  const response = await fetch("/style-settings");
-  settings = normalizeSettings(await response.json());
+  const [settingsResponse, bibleVersionsResponse] = await Promise.all([
+    fetch("/style-settings"),
+    fetch("/bible/versions").catch(() => null)
+  ]);
+
+  if (bibleVersionsResponse?.ok) {
+    const bibleVersions = await bibleVersionsResponse.json();
+    availableBibleVersions = Array.isArray(bibleVersions.versions) && bibleVersions.versions.length
+      ? bibleVersions.versions.map(normalizeBibleVersion)
+      : ["NBLA"];
+  }
+
+  settings = normalizeSettings(await settingsResponse.json());
   window.CGVI18N.setLanguage(settings.language || "es");
   renderSettings();
 }
@@ -391,4 +453,5 @@ document.getElementById("languageSelect").addEventListener("change", event => {
   window.CGVI18N.setLanguage(event.target.value);
   renderSettings();
 });
+window.addEventListener("hashchange", scrollToRequestedSection);
 loadSettings();

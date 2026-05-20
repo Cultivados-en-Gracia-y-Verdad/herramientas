@@ -123,6 +123,11 @@ select {
   grid-template-columns: minmax(260px, 1fr) minmax(220px, 320px);
 }
 
+.language-controls {
+  display: grid;
+  gap: 12px;
+}
+
 .theme-controls {
   display: grid;
   grid-template-columns: minmax(190px, 1fr) auto minmax(190px, 1fr) auto;

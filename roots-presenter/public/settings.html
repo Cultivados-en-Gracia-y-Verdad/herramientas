@@ -18,21 +18,30 @@
     <button id="saveButton" type="button" data-i18n="saveSettings">Save Settings</button>
   </header>
 
-  <section class="settings-panel language-panel">
+  <section id="language-settings" class="settings-panel language-panel" data-settings-section="language">
     <div>
       <h2 data-i18n="language">Language</h2>
       <p data-i18n="languageHelp">Choose the application language for menus, controls, and teaching screens.</p>
     </div>
-    <label>
-      <span data-i18n="appLanguage">App language</span>
-      <select id="languageSelect">
-        <option value="es">Español</option>
-        <option value="en">English</option>
-      </select>
-    </label>
+    <div class="language-controls">
+      <label>
+        <span data-i18n="appLanguage">App language</span>
+        <select id="languageSelect">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+      <label>
+        <span data-i18n="bibleVersion">Bible version</span>
+        <select id="bibleVersionSelect">
+          <option value="NBLA">NBLA</option>
+        </select>
+      </label>
+      <p data-i18n="bibleVersionHelp">Choose which Bible opens when clicking reference links.</p>
+    </div>
   </section>
 
-  <section class="theme-panel">
+  <section id="style-settings" class="theme-panel" data-settings-section="style">
     <div class="theme-panel-copy">
       <h2 data-i18n="themes">Themes</h2>
       <p data-i18n="themesHelp">Apply a built-in or custom theme, then save the current settings under a new name.</p>
