@@ -37,7 +37,7 @@ socket.on("state", data => {
   session = data.session || null;
   connection = data.connection || connection;
   appLanguage = data.language || "es";
-  document.documentElement.lang = appLanguage;
+  window.CGVI18N?.setLanguage(appLanguage);
   renderedSlides = data.renderedSlides || [];
   slides = data.slides || [];
   quizzes = data.quizzes || [];
@@ -95,7 +95,7 @@ function render() {
     const nextEl = document.getElementById("next");
     nextEl.innerHTML = nextSlide.lines.length
       ? renderEntries([...nextSlide.sticky, ...nextSlide.lines])
-      : "<em>No next slide</em>";
+      : `<em>${t("noNextSlide")}</em>`;
 
     renderPresenterQuiz();
     renderSessionStatus();
@@ -502,9 +502,9 @@ function renderSessionStatus() {
   const started = new Date(session.startedAt).toLocaleString();
   statusEl.innerHTML = `
     <div><strong>${session.title}</strong></div>
-    <div>Started: ${started}</div>
-    <div>Students: ${session.participantCount}</div>
-    <div>Saved responses: ${session.responseCount}</div>
+    <div>${t("started")}: ${started}</div>
+    <div>${t("students")}: ${session.participantCount}</div>
+    <div>${t("savedResponses")}: ${session.responseCount}</div>
   `;
 }
 
@@ -537,14 +537,14 @@ function renderQuizReviewList(items, options = {}) {
 
   return `
     <div class="${options.compact ? "quiz-review compact" : "quiz-review"}">
-      <div class="quiz-review-title">Review answers</div>
+      <div class="quiz-review-title">${t("reviewAnswers")}</div>
       ${items
         .map((quiz, index) => {
-          const correctAnswer = quiz.correctAnswer || quiz.choices?.[quiz.correctIndex] || "Answer not marked";
+          const correctAnswer = quiz.correctAnswer || quiz.choices?.[quiz.correctIndex] || t("answerNotMarked");
           return `
             <article class="quiz-review-item">
               <div class="quiz-review-question">${index + 1}. ${escapeHtml(quiz.question)}</div>
-              <div class="quiz-review-answer"><b>Correct answer:</b> ${escapeHtml(correctAnswer)}</div>
+              <div class="quiz-review-answer"><b>${t("correctAnswer")}:</b> ${escapeHtml(correctAnswer)}</div>
             </article>
           `;
         })
@@ -558,10 +558,10 @@ function renderStudentGrade(result) {
 
   return `
     <div class="quiz-grade">
-      <div class="quiz-grade-label">Your score</div>
+      <div class="quiz-grade-label">${t("yourScore")}</div>
       <div class="quiz-grade-score">${result.correct}/${result.total}</div>
       <div class="quiz-grade-percent">${result.percentage}%</div>
-      <div class="quiz-grade-detail">${result.answered}/${result.total} answered</div>
+      <div class="quiz-grade-detail">${result.answered}/${result.total} ${t("answered")}</div>
     </div>
   `;
 }
@@ -605,8 +605,8 @@ function renderPresenterQuiz() {
   if (!statusEl || !controlsEl || !resultsEl) return;
 
   if (!quizzes.length) {
-    statusEl.innerHTML = "<em>No quiz files loaded.</em>";
-    controlsEl.innerHTML = "<div>Add quiz YAML files in the markdown frontmatter.</div>";
+    statusEl.innerHTML = `<em>${t("noQuizFilesLoaded")}</em>`;
+    controlsEl.innerHTML = `<div>${t("addQuizYaml")}</div>`;
     resultsEl.innerHTML = "";
     return;
   }
@@ -614,10 +614,10 @@ function renderPresenterQuiz() {
   const selectedQuizId = activeQuiz?.id || quizzes[0].id;
 
   statusEl.innerHTML = error
-    ? `<strong>Quiz problem:</strong> ${escapeHtml(error.message)}`
+    ? `<strong>${t("quizProblem")}:</strong> ${escapeHtml(error.message)}`
     : activeQuiz
-      ? `<strong>Active:</strong> ${activeQuiz.title}<br>${activeQuiz.question}`
-      : "<em>No quiz running.</em>";
+      ? `<strong>${t("active")}:</strong> ${activeQuiz.title}<br>${activeQuiz.question}`
+      : `<em>${t("noQuizRunning")}</em>`;
 
   controlsEl.innerHTML = `
     <select id="quizSelect" class="quiz-select">
@@ -628,9 +628,9 @@ function renderPresenterQuiz() {
         })
         .join("")}
     </select>
-    <button onclick="startQuiz()">Launch quiz</button>
-    <button onclick="endQuiz()">End quiz</button>
-    <button onclick="clearQuiz()">Clear answers</button>
+    <button onclick="startQuiz()">${t("launchQuiz")}</button>
+    <button onclick="endQuiz()">${t("endQuiz")}</button>
+    <button onclick="clearQuiz()">${t("clearAnswers")}</button>
   `;
 
   if (!activeQuiz) {
@@ -645,7 +645,7 @@ function renderPresenterQuiz() {
   const reviewItems = getQuizReviewItems();
 
   resultsEl.innerHTML = `
-    <div class="quiz-results-title">Responses: ${total}</div>
+    <div class="quiz-results-title">${t("responses")}: ${total}</div>
     <ul class="quiz-results-list">
       ${activeQuiz.choices
         .map((choice, index) => {
@@ -671,7 +671,7 @@ function renderProjectorQuiz() {
   if (error) {
     resultsEl.innerHTML = `
       <div class="projector-quiz-copy">
-        <strong>Quiz not available</strong>
+        <strong>${t("quizNotAvailable")}</strong>
         <span>${escapeHtml(error.message)}</span>
       </div>
     `;
@@ -691,10 +691,10 @@ function renderProjectorQuiz() {
   if (quizState.active) {
     resultsEl.innerHTML = `
       <div class="projector-quiz-copy">
-        <strong>Quiz live now</strong>
+        <strong>${t("quizLiveNow")}</strong>
         <span>${escapeHtml(quiz.question)}</span>
         <div class="projector-quiz-join">
-          <b>Join:</b>
+          <b>${t("joinLabel")}:</b>
           <code>${escapeHtml(joinCode)}</code>
         </div>
         <small>${escapeHtml(joinUrl)}</small>
@@ -706,8 +706,8 @@ function renderProjectorQuiz() {
     const reviewItems = getQuizReviewItems();
     resultsEl.innerHTML = `
       <div class="projector-quiz-copy">
-        <strong>Quiz closed</strong>
-        <span>Responses: ${total}</span>
+        <strong>${t("quizClosed")}</strong>
+        <span>${t("responses")}: ${total}</span>
       </div>
       ${renderQuizReviewList(reviewItems)}
     `;
@@ -721,14 +721,14 @@ function renderAudienceQuiz() {
 
   if (!participant) {
     quizArea.innerHTML = `
-      <div class="quiz-message">Enter your name or code to answer quizzes.</div>
+      <div class="quiz-message">${t("enterNameToAnswer")}</div>
     `;
     return;
   }
 
   if (!launchedQuiz) {
     quizArea.innerHTML = `
-      <div class="quiz-message">Waiting for the presenter to launch a quiz.</div>
+      <div class="quiz-message">${t("waitingForQuiz")}</div>
     `;
     return;
   }
@@ -738,8 +738,8 @@ function renderAudienceQuiz() {
     if (reviewItems.length) {
       quizArea.innerHTML = `
         <div class="quiz-waiting">
-          <div class="quiz-question">Quiz completed</div>
-          <div class="quiz-message">Thank you. Your answers have been saved.</div>
+          <div class="quiz-question">${t("quizCompleted")}</div>
+          <div class="quiz-message">${t("thanksAnswersSaved")}</div>
           ${renderStudentGrade(quizState.participantResult)}
           ${renderQuizReviewList(reviewItems, { compact: true })}
         </div>
@@ -750,7 +750,7 @@ function renderAudienceQuiz() {
     quizArea.innerHTML = `
       <div class="quiz-waiting">
         <div class="quiz-question">${launchedQuiz.question}</div>
-        <div class="quiz-message">Waiting for the presenter to start the quiz...</div>
+        <div class="quiz-message">${t("waitingForPresenterStart")}</div>
       </div>
     `;
     return;
@@ -759,8 +759,8 @@ function renderAudienceQuiz() {
   if (!quiz) {
     quizArea.innerHTML = `
       <div class="quiz-waiting">
-        <div class="quiz-question">Quiz completed</div>
-        <div class="quiz-message">Thank you. Your answers have been saved.</div>
+        <div class="quiz-question">${t("quizCompleted")}</div>
+        <div class="quiz-message">${t("thanksAnswersSaved")}</div>
         ${renderStudentGrade(quizState.participantResult)}
         ${renderQuizReviewList(getQuizReviewItems(), { compact: true })}
       </div>
@@ -775,7 +775,7 @@ function renderAudienceQuiz() {
   const questionTotal = sequence.length;
 
   quizArea.innerHTML = `
-    <div class="quiz-results-summary">Question ${questionNumber} of ${questionTotal}</div>
+    <div class="quiz-results-summary">${t("questionOf", { current: questionNumber, total: questionTotal })}</div>
     <div class="quiz-question">${quiz.question}</div>
     <div class="quiz-options">
       ${getShuffledChoiceIndexes(quiz)
@@ -785,8 +785,8 @@ function renderAudienceQuiz() {
         })
         .join("")}
     </div>
-    <div class="quiz-your-answer">Select an answer to continue.</div>
-    <div class="quiz-results-summary">Responses: ${total}</div>
+    <div class="quiz-your-answer">${t("selectAnswer")}</div>
+    <div class="quiz-results-summary">${t("responses")}: ${total}</div>
   `;
 }
 
@@ -853,7 +853,7 @@ function renderJoinForm() {
   form.classList.toggle("joined", !!activeName);
 
   if (greeting) {
-    greeting.textContent = activeName ? `Hello, ${activeName}` : "";
+    greeting.textContent = activeName ? t("helloName", { name: activeName }) : "";
     greeting.classList.toggle("joined", !!activeName);
   }
 }

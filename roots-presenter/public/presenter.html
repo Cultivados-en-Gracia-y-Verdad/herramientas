@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Presenter</title>
+  <title data-i18n="presenter">Presenter</title>
   <link rel="icon" href="/assets/cgv-app-icon.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="style-settings.css">
@@ -13,30 +13,31 @@
       <img src="/assets/cgv-logo.svg" alt="CGV">
       <div>
         <strong>CGV Presenter</strong>
-        <span>Presenter View</span>
+        <span data-i18n="presenterView">Presenter View</span>
       </div>
     </div>
-    <button onclick="reloadSlides()">Reload Slides</button>
+    <button onclick="reloadSlides()" data-i18n="reloadSlides">Reload Slides</button>
   </div>
 
   <main class="grid">
     <section>
-      <h2>Current</h2>
+      <h2 data-i18n="current">Current</h2>
       <div id="current" class="slide"></div>
     </section>
 
     <section>
-      <h2>Next</h2>
+      <h2 data-i18n="next">Next</h2>
       <div id="next" class="slide next"></div>
     </section>
   </main>
 
   <footer>
-    <button onclick="prev()">← Prev</button>
-    <button onclick="next()">Next →</button>
+    <button onclick="prev()">← <span data-i18n="previous">Prev</span></button>
+    <button onclick="next()"><span data-i18n="next">Next</span> →</button>
   </footer>
 
   <script src="/socket.io/socket.io.js"></script>
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

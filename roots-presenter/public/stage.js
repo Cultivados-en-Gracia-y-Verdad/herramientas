@@ -88,7 +88,7 @@ function renderChordLine(line) {
 
 function renderSection(lines = [], options = {}) {
   const visibleLines = options.firstLineOnly ? lines.slice(0, 1) : lines;
-  if (!visibleLines.length) return `<div class="empty">No section</div>`;
+  if (!visibleLines.length) return `<div class="empty">${t("noSection")}</div>`;
 
   return visibleLines
     .map(line => `<div class="song-line">${renderChordLine(line)}</div>`)
@@ -99,32 +99,32 @@ function renderStage(controllerState = {}) {
   latestControllerState = controllerState;
   const active = !!controllerState.active;
   const isBlank = !!controllerState.blank;
-  const title = controllerState.title || "Stage View";
+  const title = controllerState.title || t("stageView");
   const step = Number(controllerState.step) || 0;
   const chordSections = controllerState.chordSections || controllerState.sections || [];
   const current = active ? chordSections[step] || [] : [];
   const next = active ? chordSections[step + 1] || [] : [];
 
-  byId("stageTitle").textContent = active ? title : "Stage View";
+  byId("stageTitle").textContent = active ? title : t("stageView");
   byId("stageStatus").textContent = active
-    ? isBlank ? "Blank screen" : "Song mode"
-    : "Waiting for controller";
+    ? isBlank ? t("blankScreen") : t("songMode")
+    : t("waitingForController");
   byId("stagePosition").textContent = active
     ? isBlank ? "" : `${step + 1}/${chordSections.length}`
     : "";
   byId("transposeStatus").textContent = transposeOffset === 0
-    ? "Key 0"
-    : `Key ${transposeOffset > 0 ? "+" : ""}${transposeOffset}`;
+    ? t("keyZero")
+    : `${t("stageTransposition")} ${transposeOffset > 0 ? "+" : ""}${transposeOffset}`;
   byId("currentSong").innerHTML = isBlank
-    ? `<div class="empty">Blank screen is live.</div>`
+    ? `<div class="empty">${t("blankScreenLive")}</div>`
     : active
     ? renderSection(current)
-    : `<div class="empty">No song live. Use the Controller to send a song.</div>`;
+    : `<div class="empty">${t("noSongLive")}</div>`;
   byId("nextSong").innerHTML = isBlank
-    ? `<div class="empty">No next section</div>`
+    ? `<div class="empty">${t("noNextSection")}</div>`
     : active
     ? renderSection(next, { firstLineOnly: true })
-    : `<div class="empty">No next section</div>`;
+    : `<div class="empty">${t("noNextSection")}</div>`;
 }
 
 socket.on("state", data => {
@@ -176,4 +176,4 @@ window.addEventListener("keydown", event => {
   }
 });
 
-renderStage();
+window.CGVI18N.loadLanguage().then(() => renderStage());

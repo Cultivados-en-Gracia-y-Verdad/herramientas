@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Controller</title>
+  <title data-i18n="controller">Controller</title>
   <link rel="icon" href="/assets/cgv-app-icon.svg">
   <link rel="stylesheet" href="controller.css">
 </head>
@@ -12,25 +12,25 @@
       <img src="/assets/cgv-logo.svg" alt="CGV">
       <div>
         <strong>CGV Presenter</strong>
-        <span>Controller View</span>
+        <span data-i18n="controllerView">Controller View</span>
       </div>
     </div>
-    <div id="liveStatus" class="live-status">Projector: teaching mode</div>
+    <div id="liveStatus" class="live-status" data-i18n="projectorTeachingMode">Projector: teaching mode</div>
   </header>
 
   <main class="controller-shell">
     <section class="song-library">
       <div class="section-heading">
         <div>
-          <h1>Songs</h1>
-          <p>Select a song, then send it live.</p>
+          <h1 data-i18n="songs">Songs</h1>
+          <p data-i18n="songsHelp">Select a song, then send it live.</p>
         </div>
-        <button id="newSongButton" type="button" class="secondary">New Song</button>
+        <button id="newSongButton" type="button" class="secondary" data-i18n="newSong">New Song</button>
       </div>
 
       <label class="search-field">
-        Search songs
-        <input id="songSearch" type="search" placeholder="Type a title or lyric...">
+        <span data-i18n="searchSongs">Search songs</span>
+        <input id="songSearch" type="search" placeholder="Type a title or lyric..." data-i18n-placeholder="searchSongsPlaceholder">
       </label>
 
       <div id="songList" class="song-list"></div>
@@ -39,70 +39,70 @@
     <section id="songEditor" class="song-editor hidden">
       <div class="section-heading">
         <div>
-          <h1>Edit Song</h1>
-          <p>Blank lines create separate screens/stanzas.</p>
+          <h1 data-i18n="editSong">Edit Song</h1>
+          <p data-i18n="editSongHelp">Blank lines create separate screens/stanzas.</p>
         </div>
-        <button id="closeEditorButton" type="button" class="secondary">Close</button>
+        <button id="closeEditorButton" type="button" class="secondary" data-i18n="close">Close</button>
       </div>
 
       <label>
-        Title
-        <input id="songTitle" type="text" placeholder="Song title">
+        <span data-i18n="title">Title</span>
+        <input id="songTitle" type="text" placeholder="Song title" data-i18n-placeholder="songTitlePlaceholder">
       </label>
 
       <label>
-        Lyrics and chords
+        <span data-i18n="lyricsAndChords">Lyrics and chords</span>
         <textarea id="songLyrics" spellcheck="false" placeholder="[D]Verse 1 line 1&#10;Verse 1 [G]line 2&#10;&#10;[A]Chorus line 1&#10;Chorus [D]line 2"></textarea>
       </label>
 
       <div class="button-row">
-        <button id="saveSongButton" type="button">Save Song</button>
-        <button id="cancelEditorButton" type="button" class="secondary">Cancel</button>
+        <button id="saveSongButton" type="button" data-i18n="saveSong">Save Song</button>
+        <button id="cancelEditorButton" type="button" class="secondary" data-i18n="cancel">Cancel</button>
       </div>
     </section>
 
     <aside class="controller-panel">
       <section class="panel-card">
-        <h2>Live Output</h2>
+        <h2 data-i18n="liveOutput">Live Output</h2>
         <div class="button-row">
-          <button id="goLiveButton" type="button">Send Live</button>
-          <button id="clearButton" type="button" class="secondary">Return to Teaching</button>
+          <button id="goLiveButton" type="button" data-i18n="sendLive">Send Live</button>
+          <button id="clearButton" type="button" class="secondary" data-i18n="returnToTeaching">Return to Teaching</button>
         </div>
-        <button id="blankButton" type="button" class="secondary full">Blank Screen</button>
+        <button id="blankButton" type="button" class="secondary full" data-i18n="blankScreen">Blank Screen</button>
         <div class="button-row">
-          <button id="previousButton" type="button" class="secondary">Previous</button>
-          <button id="nextButton" type="button" class="secondary">Next</button>
+          <button id="previousButton" type="button" class="secondary" data-i18n="previous">Previous</button>
+          <button id="nextButton" type="button" class="secondary" data-i18n="next">Next</button>
         </div>
       </section>
 
       <section class="panel-card">
         <details id="backgroundControls" class="background-controls">
-          <summary>Background Style</summary>
+          <summary data-i18n="backgroundStyle">Background Style</summary>
           <input id="backgroundMedia" type="hidden">
           <div id="backgroundGallery" class="background-gallery"></div>
-          <button id="clearBackgroundButton" type="button" class="secondary full">Clear Background Image</button>
+          <button id="clearBackgroundButton" type="button" class="secondary full" data-i18n="clearBackgroundImage">Clear Background Image</button>
           <div class="color-grid">
             <label>
-              Background
+              <span data-i18n="background">Background</span>
               <input id="backgroundColor" type="color" value="#0f172a">
             </label>
             <label>
-              Text
+              <span data-i18n="text">Text</span>
               <input id="textColor" type="color" value="#ffffff">
             </label>
             <label>
-              Accent
+              <span data-i18n="accent">Accent</span>
               <input id="accentColor" type="color" value="#38bdf8">
             </label>
           </div>
-          <button id="applyStyleButton" type="button" class="secondary full">Apply Style</button>
+          <button id="applyStyleButton" type="button" class="secondary full" data-i18n="applyStyle">Apply Style</button>
         </details>
       </section>
 
       <section class="panel-card preview-card">
         <div class="preview-heading">
-          <h2>Preview</h2>
-          <button id="toggleBackgroundButton" type="button" class="secondary">Style</button>
+          <h2 data-i18n="preview">Preview</h2>
+          <button id="toggleBackgroundButton" type="button" class="secondary" data-i18n="style">Style</button>
         </div>
         <div id="controllerPreview" class="controller-preview"></div>
         <div id="songThumbnails" class="song-thumbnails"></div>
@@ -111,6 +111,7 @@
   </main>
 
   <script src="/socket.io/socket.io.js"></script>
+  <script src="i18n.js"></script>
   <script src="controller.js"></script>
 </body>
 </html>

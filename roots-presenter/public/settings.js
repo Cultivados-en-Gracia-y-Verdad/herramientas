@@ -1,43 +1,43 @@
 const viewScopes = [
-  { key: "main", label: "Main View" },
-  { key: "presenter", label: "Presenter View" },
-  { key: "audience", label: "Audience View (Web)" }
+  { key: "main", labelKey: "mainView" },
+  { key: "presenter", labelKey: "presenterViewSettings" },
+  { key: "audience", labelKey: "audienceViewWeb" }
 ];
 
 const styleKeys = [
-  { key: "h1", label: "H1 Main Titles", fields: ["size", "color"] },
-  { key: "h2", label: "H2 Subtitles", fields: ["size", "color"] },
-  { key: "h3", label: "H3 Bible Reference", fields: ["size", "color", "indent"] },
-  { key: "scripture", label: "Scripture Under H3", fields: ["size", "color", "indent", "lineHeight"] },
-  { key: "h4", label: "H4 Scripture Anchor", fields: ["size", "color", "indent"] },
-  { key: "h5", label: "H5 First Comment", fields: ["size", "color", "indent"] },
-  { key: "h6", label: "H6 Second Comment", fields: ["size", "color", "indent"] },
-  { key: "bullet", label: "Bullet Comments", fields: ["size", "color", "indent"] },
-  { key: "reference", label: "Bible Reference Links", fields: ["color"] }
+  { key: "h1", labelKey: "h1MainTitles", fields: ["size", "color"] },
+  { key: "h2", labelKey: "h2Subtitles", fields: ["size", "color"] },
+  { key: "h3", labelKey: "h3BibleReference", fields: ["size", "color", "indent"] },
+  { key: "scripture", labelKey: "scriptureUnderH3", fields: ["size", "color", "indent", "lineHeight"] },
+  { key: "h4", labelKey: "h4ScriptureAnchor", fields: ["size", "color", "indent"] },
+  { key: "h5", labelKey: "h5FirstComment", fields: ["size", "color", "indent"] },
+  { key: "h6", labelKey: "h6SecondComment", fields: ["size", "color", "indent"] },
+  { key: "bullet", labelKey: "bulletComments", fields: ["size", "color", "indent"] },
+  { key: "reference", labelKey: "bibleReferenceLinks", fields: ["color"] }
 ];
 
 const synthesisFields = [
-  ["background", "Box Background"],
-  ["color", "Text Color"],
-  ["accent", "Accent Color"],
-  ["titleColor", "Title Color"],
-  ["textSize", "Text Size"]
+  ["background", "boxBackground"],
+  ["color", "textColor"],
+  ["accent", "accentColor"],
+  ["titleColor", "titleColor"],
+  ["textSize", "textSize"]
 ];
 
 const definitionFields = [
-  ["background", "Background"],
-  ["accent", "Accent Color"],
-  ["termColor", "Term Color"],
-  ["textColor", "Definition Text"]
+  ["background", "background"],
+  ["accent", "accentColor"],
+  ["termColor", "termColor"],
+  ["textColor", "definitionText"]
 ];
 
 const popupFields = [
-  ["background", "Popup Background"],
-  ["color", "Popup Text"],
-  ["verseBackground", "Verse Background"],
-  ["accent", "Accent Color"],
-  ["referenceColor", "Reference Label"],
-  ["textSize", "Text Size"]
+  ["background", "popupBackground"],
+  ["color", "popupText"],
+  ["verseBackground", "verseBackground"],
+  ["accent", "accentColor"],
+  ["referenceColor", "referenceLabel"],
+  ["textSize", "textSize"]
 ];
 
 const builtInThemes = window.CGV_STYLE_THEMES || [];
@@ -116,7 +116,13 @@ function inputType(field) {
 }
 
 function fieldLabel(field) {
-  return field.charAt(0).toUpperCase() + field.slice(1);
+  const labels = {
+    size: "textSize",
+    color: "textColor",
+    indent: "indent",
+    lineHeight: "lineHeight"
+  };
+  return labels[field] ? t(labels[field]) : field.charAt(0).toUpperCase() + field.slice(1);
 }
 
 function getValue(scope, sectionKey, field) {
@@ -150,7 +156,7 @@ function renderStyleSection(scope, section) {
 
   wrapper.className = "settings-section nested";
   grid.className = "field-grid";
-  heading.textContent = section.label;
+  heading.textContent = section.labelKey ? t(section.labelKey) : section.label;
 
   section.fields.forEach(field => {
     grid.appendChild(createInput(scope, section.key, field));
@@ -169,8 +175,8 @@ function renderSynthesisSection(scope) {
   grid.className = "field-grid";
   heading.textContent = "En Síntesis";
 
-  synthesisFields.forEach(([field, label]) => {
-    grid.appendChild(createInput(scope, "synthesis", field, label));
+  synthesisFields.forEach(([field, labelKey]) => {
+    grid.appendChild(createInput(scope, "synthesis", field, t(labelKey)));
   });
 
   wrapper.append(heading, grid);
@@ -184,10 +190,10 @@ function renderDefinitionSection(scope) {
 
   wrapper.className = "settings-section nested";
   grid.className = "field-grid";
-  heading.textContent = "Definitions";
+  heading.textContent = t("definitions");
 
-  definitionFields.forEach(([field, label]) => {
-    grid.appendChild(createInput(scope, "definition", field, label));
+  definitionFields.forEach(([field, labelKey]) => {
+    grid.appendChild(createInput(scope, "definition", field, t(labelKey)));
   });
 
   wrapper.append(heading, grid);
@@ -201,10 +207,10 @@ function renderPopupSection(scope) {
 
   wrapper.className = "settings-section nested";
   grid.className = "field-grid";
-  heading.textContent = "Bible Popup";
+  heading.textContent = t("biblePopup");
 
-  popupFields.forEach(([field, label]) => {
-    grid.appendChild(createInput(scope, "popup", field, label));
+  popupFields.forEach(([field, labelKey]) => {
+    grid.appendChild(createInput(scope, "popup", field, t(labelKey)));
   });
 
   wrapper.append(heading, grid);
@@ -222,12 +228,12 @@ function renderSettings() {
     const heading = document.createElement("h2");
     const backgroundSection = {
       key: "background",
-      label: "View Background",
+      labelKey: "viewBackground",
       fields: ["color"]
     };
 
     group.className = "view-group";
-    heading.textContent = scope.label;
+    heading.textContent = t(scope.labelKey);
     group.appendChild(heading);
     group.appendChild(renderStyleSection(scope.key, backgroundSection));
 
@@ -258,7 +264,7 @@ function renderThemeSelect() {
   getAvailableThemes().forEach(theme => {
     const option = document.createElement("option");
     option.value = theme.id;
-    option.textContent = theme.builtIn ? theme.name : `${theme.name} (Custom)`;
+    option.textContent = theme.builtIn ? theme.name : `${theme.name} (${t("customTheme")})`;
     select.appendChild(option);
   });
 
@@ -305,7 +311,7 @@ function applySelectedTheme() {
     customThemes: currentCustomThemes
   });
   renderSettings();
-  document.getElementById("statusText").textContent = `${theme.name} applied. Save to keep it.`;
+  document.getElementById("statusText").textContent = t("themeApplied", { name: theme.name });
 }
 
 function saveCurrentAsTheme() {
@@ -316,12 +322,12 @@ function saveCurrentAsTheme() {
 
   const id = safeThemeId(themeName);
   if (!id) {
-    status.textContent = "Theme name needs at least one letter or number.";
+    status.textContent = t("themeNeedsName");
     return;
   }
 
   if (builtInThemes.some(theme => theme.id === id)) {
-    status.textContent = "That name is reserved by a built-in theme.";
+    status.textContent = t("reservedThemeName");
     return;
   }
 
@@ -331,7 +337,7 @@ function saveCurrentAsTheme() {
   const theme = {
     id,
     name: themeName.trim(),
-    description: "Custom theme",
+    description: t("customThemeDescription"),
     settings: {
       language: current.language || "es",
       theme: id,
@@ -348,12 +354,13 @@ function saveCurrentAsTheme() {
   renderSettings();
   const nextNameInput = document.getElementById("themeNameInput");
   if (nextNameInput) nextNameInput.value = theme.name;
-  status.textContent = `${theme.name} saved as a custom theme. Save settings to keep it.`;
+  status.textContent = t("themeSaved", { name: theme.name });
 }
 
 async function loadSettings() {
   const response = await fetch("/style-settings");
   settings = normalizeSettings(await response.json());
+  window.CGVI18N.setLanguage(settings.language || "es");
   renderSettings();
 }
 
@@ -368,14 +375,20 @@ async function saveSettings() {
   });
 
   if (!response.ok) {
-    status.textContent = "Could not save style settings.";
+    status.textContent = t("couldNotSaveSettings");
     return;
   }
 
-  status.textContent = `Saved ${new Date().toLocaleTimeString()}`;
+  window.CGVI18N.setLanguage(settings.language || "es");
+  status.textContent = `${t("saved")} ${new Date().toLocaleTimeString()}`;
 }
 
 document.getElementById("saveButton").addEventListener("click", saveSettings);
 document.getElementById("applyThemeButton").addEventListener("click", applySelectedTheme);
 document.getElementById("saveThemeButton").addEventListener("click", saveCurrentAsTheme);
+document.getElementById("languageSelect").addEventListener("change", event => {
+  settings = collectSettings();
+  window.CGVI18N.setLanguage(event.target.value);
+  renderSettings();
+});
 loadSettings();

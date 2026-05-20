@@ -117,7 +117,7 @@ function getSelectedSong() {
 
 function getSongPayload(song = getSelectedSong()) {
   return {
-    title: song?.title || "Song",
+    title: song?.title || t("songs"),
     lyrics: song?.lyrics || "",
     chordLyrics: song?.chordLyrics || song?.lyrics || "",
     sectionLabels: song?.sectionLabels || [],
@@ -194,7 +194,7 @@ function closeEditor() {
 }
 
 async function saveCurrentSong() {
-  const title = byId("songTitle").value.trim() || "Untitled Song";
+  const title = byId("songTitle").value.trim() || t("untitledSong");
   const lyrics = byId("songLyrics").value.trim();
   if (!lyrics) return;
 
@@ -214,7 +214,7 @@ async function saveCurrentSong() {
 
   if (!response.ok) {
     const error = await response.json().catch(() => ({}));
-    window.alert(error.error || "The song could not be saved.");
+    window.alert(error.error || t("couldNotSaveSong"));
     return;
   }
 
@@ -245,7 +245,7 @@ function renderSongList() {
   if (!visibleSongs.length) {
     list.innerHTML = `
       <div class="empty-state">
-        ${songs.length ? "No songs match your search." : "No songs loaded. Click New Song to add one."}
+        ${songs.length ? t("noSongsMatch") : t("noSongsLoaded")}
       </div>
     `;
     return;
@@ -254,13 +254,14 @@ function renderSongList() {
   list.innerHTML = visibleSongs.map(song => {
     const selected = song.id === selectedSongId ? " selected" : "";
     const stanzaCount = parseSections(song.lyrics).length;
+    const screenLabel = stanzaCount === 1 ? t("screen") : t("screens");
     return `
       <article class="song-item${selected}" data-song-id="${escapeHtml(song.id)}">
         <button type="button" class="song-select">
           <strong>${escapeHtml(song.title)}</strong>
-          <span>${stanzaCount} screen${stanzaCount === 1 ? "" : "s"}</span>
+          <span>${stanzaCount} ${screenLabel}</span>
         </button>
-        <button type="button" class="song-edit">Edit Song</button>
+        <button type="button" class="song-edit">${t("editSong")}</button>
       </article>
     `;
   }).join("");
@@ -273,7 +274,7 @@ function renderBackgroundGallery() {
   if (!backgrounds.length) {
     gallery.innerHTML = `
       <div class="empty-state compact">
-        Add images or videos to <code>backgrounds/</code> to show them here.
+        ${t("addBackgrounds")}
       </div>
     `;
     return;
@@ -282,7 +283,7 @@ function renderBackgroundGallery() {
   gallery.innerHTML = backgrounds.map(background => {
     const selected = background.url === selectedUrl ? " selected" : "";
     const media = background.type === "video"
-      ? `<div class="background-video-thumb">Video</div>`
+      ? `<div class="background-video-thumb">${t("video")}</div>`
       : `<img src="${escapeHtml(background.url)}" alt="">`;
 
     return `
@@ -325,7 +326,7 @@ function renderPreview() {
   preview.classList.toggle("teaching-mode", !controllerState.active);
   preview.innerHTML = controllerState.active
     ? controllerState.blank
-      ? `<div class="teaching-mode-preview"><strong>Blank screen</strong><span>Projector is intentionally blank.</span></div>`
+      ? `<div class="teaching-mode-preview"><strong>${t("blankScreenPreview")}</strong><span>${t("projectorBlank")}</span></div>`
       : `
       ${media && isVideoMedia(media) ? `<video class="preview-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
       <div class="preview-lines">
@@ -334,8 +335,8 @@ function renderPreview() {
     `
     : `
       <div class="teaching-mode-preview">
-        <strong>Teaching mode</strong>
-        <span>The teacher currently has the projector.</span>
+        <strong>${t("teachingMode")}</strong>
+        <span>${t("teacherHasProjector")}</span>
       </div>
     `;
 
@@ -343,9 +344,9 @@ function renderPreview() {
 
   status.textContent = controllerState.active
     ? controllerState.blank
-      ? "Projector: blank screen"
-      : `Projector: ${controllerState.title} (${controllerState.step + 1}/${controllerState.sections.length})`
-    : "Projector: teaching mode";
+      ? t("projectorBlankScreen")
+      : t("projectorSong", { title: controllerState.title, current: controllerState.step + 1, total: controllerState.sections.length })
+    : t("projectorTeachingMode");
   status.classList.toggle("active", controllerState.active);
 }
 
@@ -354,14 +355,14 @@ function renderThumbnails(sections, activeIndex, labels = []) {
   if (!thumbnailHost) return;
 
   if (!sections.length) {
-    thumbnailHost.innerHTML = `<div class="empty-state compact">No song screens.</div>`;
+    thumbnailHost.innerHTML = `<div class="empty-state compact">${t("noSongScreens")}</div>`;
     return;
   }
 
   thumbnailHost.innerHTML = sections.map((section, index) => {
     const active = controllerState.active && index === activeIndex ? " active" : "";
-    const firstLine = section[0] || `Screen ${index + 1}`;
-    const label = labels[index] || `Screen ${index + 1}`;
+    const firstLine = section[0] || `${t("screen")} ${index + 1}`;
+    const label = labels[index] || `${t("screen")} ${index + 1}`;
     return `
       <button type="button" class="song-thumbnail${active}" data-screen-index="${index}">
         <b>${escapeHtml(label)}</b>
@@ -466,7 +467,9 @@ window.addEventListener("keydown", event => {
   }
 });
 
-renderSongList();
-renderPreview();
-loadSongs();
-loadBackgrounds();
+window.CGVI18N.loadLanguage().then(() => {
+  renderSongList();
+  renderPreview();
+  loadSongs();
+  loadBackgrounds();
+});

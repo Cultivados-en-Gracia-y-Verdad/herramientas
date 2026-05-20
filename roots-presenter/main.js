@@ -27,6 +27,174 @@ let headingMenuItems = [];
 let quizMenuItems = [];
 let menuRefreshTimer = null;
 let loadedCourseTitle = "";
+let appLanguage = "es";
+
+const MAIN_TRANSLATIONS = {
+  es: {
+    loadDownloadedCourse: "Cargar curso descargado",
+    selectedCourseCouldNotLoad: "No se pudo cargar el curso seleccionado.",
+    welcomeTitle: "Bienvenido a CGV Presenter",
+    welcomeMessage: "CGV Presenter está listo para usarse.",
+    starterDetail: "El contenido inicial se instaló automáticamente:\n\n• Curso Romanos\n• Referencias bíblicas NBLA\n• 5 canciones iniciales\n\nPuedes comenzar ahora o escoger una carpeta de biblioteca fácil de encontrar, como Documents/CGV Presenter.",
+    useStarterLibrary: "Usar biblioteca inicial",
+    chooseLibraryFolder: "Escoger carpeta de biblioteca...",
+    chooseCourseLibraryFolder: "Escoger carpeta de biblioteca de cursos",
+    chooseCourseLibraryMessage: "Escoge la carpeta donde CGV Presenter debe guardar los cursos descargados.",
+    chooseCourseLibrary: "Escoger biblioteca de cursos",
+    courseLibraryCouldNotSave: "No se pudo guardar la carpeta de biblioteca de cursos.",
+    folderUnavailable: "Esa carpeta no está disponible todavía.",
+    openCourseLibrary: "Abrir biblioteca de cursos",
+    openSongsFolder: "Abrir carpeta de canciones",
+    openBibleFolder: "Abrir carpeta de Biblias",
+    noBibleFolder: "No se encontró una carpeta bíblica activa. Abre Estado de Biblia para ver todas las rutas de búsqueda.",
+    bibleStatus: "Estado de Biblia",
+    nblaBibleStatus: "Estado de Biblia NBLA",
+    loaded: "Cargado",
+    yes: "Sí",
+    no: "No",
+    books: "Libros",
+    references: "Referencias",
+    activeFolder: "Carpeta activa",
+    noneFound: "Ninguna encontrada",
+    searchPaths: "Rutas de búsqueda",
+    bibleStatusCouldNotLoad: "No se pudo cargar el estado de la Biblia.",
+    jumpToHeader: "Ir al encabezado",
+    couldNotJump: "La presentación no pudo ir a ese encabezado.",
+    next: "Siguiente",
+    previous: "Anterior",
+    couldNotAdvance: "La presentación no pudo avanzar.",
+    couldNotGoBack: "La presentación no pudo retroceder.",
+    launchQuiz: "Iniciar quiz",
+    quizCouldNotLaunch: "No se pudo iniciar el quiz.",
+    endQuiz: "Terminar quiz",
+    quizCouldNotEnd: "No se pudo terminar el quiz.",
+    clearQuizAnswers: "Borrar respuestas del quiz",
+    quizCouldNotClear: "No se pudieron borrar las respuestas del quiz.",
+    noHeadersLoaded: "No hay encabezados H1/H2 cargados",
+    course: "Curso",
+    goToSection: "Ir a la sección",
+    noQuizzesLoaded: "No hay quizzes cargados",
+    clearCurrentAnswers: "Borrar respuestas actuales",
+    refreshQuizList: "Actualizar lista de quizzes",
+    exportQuizResults: "Exportar resultados del quiz",
+    quizCouldNotExport: "No se pudieron exportar los resultados del quiz.",
+    newTeachingSession: "Nueva sesión de enseñanza",
+    sessionCouldNotCreate: "No se pudo crear la sesión.",
+    styleSettings: "Configuración de estilo",
+    downloadCourses: "Descargar cursos",
+    controller: "Control",
+    stageView: "Vista de escenario",
+    director: "Director",
+    file: "Archivo",
+    edit: "Editar",
+    presentation: "Presentación",
+    extendedScreenMode: "Modo pantalla extendida",
+    mirroredScreenMode: "Modo pantalla duplicada",
+    exitFullScreen: "Salir de pantalla completa",
+    library: "Biblioteca",
+    openCourseLibraryFolder: "Abrir carpeta de biblioteca de cursos",
+    bibleStatusMenu: "Estado de Biblia...",
+    quiz: "Quiz",
+    settings: "Configuración",
+    view: "Vista",
+    openController: "Abrir control",
+    openStageView: "Abrir vista de escenario",
+    openDirector: "Abrir director",
+    showHeaders: "Mostrar encabezados H1/H2",
+    refreshHeaders: "Actualizar encabezados",
+    window: "Ventana"
+  },
+  en: {}
+};
+
+MAIN_TRANSLATIONS.en = {
+  ...MAIN_TRANSLATIONS.es,
+  loadDownloadedCourse: "Load Downloaded Course",
+  selectedCourseCouldNotLoad: "The selected course could not be loaded.",
+  welcomeTitle: "Welcome to CGV Presenter",
+  welcomeMessage: "CGV Presenter is ready to use.",
+  starterDetail: "Starter content has been installed automatically:\n\n• Romanos course\n• NBLA Bible references\n• 5 starter songs\n\nYou can begin now, or choose an easy-to-access library folder such as Documents/CGV Presenter.",
+  useStarterLibrary: "Use Starter Library",
+  chooseLibraryFolder: "Choose Library Folder...",
+  chooseCourseLibraryFolder: "Choose Course Library Folder",
+  chooseCourseLibraryMessage: "Choose the folder where CGV Presenter should store downloaded courses.",
+  chooseCourseLibrary: "Choose Course Library",
+  courseLibraryCouldNotSave: "The course library folder could not be saved.",
+  folderUnavailable: "That folder is not available yet.",
+  openCourseLibrary: "Open Course Library",
+  openSongsFolder: "Open Songs Folder",
+  openBibleFolder: "Open Bible Folder",
+  noBibleFolder: "No active Bible folder was found. Open Bible Status to see all search paths.",
+  bibleStatus: "Bible Status",
+  nblaBibleStatus: "NBLA Bible Status",
+  loaded: "Loaded",
+  yes: "Yes",
+  no: "No",
+  books: "Books",
+  references: "References",
+  activeFolder: "Active folder",
+  noneFound: "None found",
+  searchPaths: "Search paths",
+  bibleStatusCouldNotLoad: "Bible status could not be loaded.",
+  jumpToHeader: "Jump to Header",
+  couldNotJump: "The presentation could not jump to that header.",
+  next: "Next",
+  previous: "Previous",
+  couldNotAdvance: "The presentation could not advance.",
+  couldNotGoBack: "The presentation could not go back.",
+  launchQuiz: "Launch Quiz",
+  quizCouldNotLaunch: "The quiz could not be launched.",
+  endQuiz: "End Quiz",
+  quizCouldNotEnd: "The quiz could not be ended.",
+  clearQuizAnswers: "Clear Quiz Answers",
+  quizCouldNotClear: "The quiz answers could not be cleared.",
+  noHeadersLoaded: "No H1/H2 headers loaded",
+  course: "Course",
+  goToSection: "Go to Section",
+  noQuizzesLoaded: "No quizzes loaded",
+  clearCurrentAnswers: "Clear Current Answers",
+  refreshQuizList: "Refresh Quiz List",
+  exportQuizResults: "Export Quiz Results",
+  quizCouldNotExport: "The quiz results could not be exported.",
+  newTeachingSession: "New Teaching Session",
+  sessionCouldNotCreate: "The session could not be created.",
+  styleSettings: "Style Settings",
+  downloadCourses: "Download Courses",
+  controller: "Controller",
+  stageView: "Stage View",
+  director: "Director",
+  file: "File",
+  edit: "Edit",
+  presentation: "Presentation",
+  extendedScreenMode: "Extended Screen Mode",
+  mirroredScreenMode: "Mirrored Screen Mode",
+  exitFullScreen: "Exit Full Screen",
+  library: "Library",
+  openCourseLibraryFolder: "Open Course Library Folder",
+  bibleStatusMenu: "Bible Status...",
+  quiz: "Quiz",
+  settings: "Settings",
+  view: "View",
+  openController: "Open Controller",
+  openStageView: "Open Stage View",
+  openDirector: "Open Director",
+  showHeaders: "Show H1/H2 Headers",
+  refreshHeaders: "Refresh Headers",
+  window: "Window"
+};
+
+function mt(key) {
+  return MAIN_TRANSLATIONS[appLanguage]?.[key] || MAIN_TRANSLATIONS.es[key] || key;
+}
+
+async function refreshAppLanguage() {
+  try {
+    const settings = await getLocalJson("/style-settings");
+    appLanguage = ["es", "en"].includes(settings.language) ? settings.language : "es";
+  } catch {
+    appLanguage = "es";
+  }
+}
 
 function shouldShowMenuBar() {
   return process.platform !== "darwin";
@@ -125,7 +293,7 @@ async function loadDownloadedCourse() {
     const library = await getCourseLibrary();
 
     const result = await dialog.showOpenDialog(presenterWindow || BrowserWindow.getFocusedWindow(), {
-      title: "Load Downloaded Course",
+      title: mt("loadDownloadedCourse"),
       defaultPath: library.path || DEFAULT_COURSE_LIBRARY_DIR,
       properties: ["openDirectory"]
     });
@@ -137,8 +305,8 @@ async function loadDownloadedCourse() {
     await refreshQuizMenu();
   } catch (error) {
     dialog.showErrorBox(
-      "Load Downloaded Course",
-      error?.message || "The selected course could not be loaded."
+      mt("loadDownloadedCourse"),
+      error?.message || mt("selectedCourseCouldNotLoad")
     );
   }
 }
@@ -178,18 +346,10 @@ async function showFirstRunSetup() {
 
   const result = await dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
     type: "info",
-    title: "Welcome to CGV Presenter",
-    message: "CGV Presenter is ready to use.",
-    detail: [
-      "Starter content has been installed automatically:",
-      "",
-      "• Romanos course",
-      "• NBLA Bible references",
-      "• 5 starter songs",
-      "",
-      "You can begin now, or choose an easy-to-access library folder such as Documents/CGV Presenter."
-    ].join("\n"),
-    buttons: ["Use Starter Library", "Choose Library Folder..."],
+    title: mt("welcomeTitle"),
+    message: mt("welcomeMessage"),
+    detail: mt("starterDetail"),
+    buttons: [mt("useStarterLibrary"), mt("chooseLibraryFolder")],
     defaultId: 0,
     cancelId: 0
   });
@@ -205,9 +365,9 @@ async function chooseCourseLibraryFolder() {
   try {
     const library = await getCourseLibrary();
     const result = await dialog.showOpenDialog(presenterWindow || BrowserWindow.getFocusedWindow(), {
-      title: "Choose Course Library Folder",
+      title: mt("chooseCourseLibraryFolder"),
       defaultPath: library.path || library.suggestedPath || DEFAULT_COURSE_LIBRARY_DIR,
-      message: "Choose the folder where CGV Presenter should store downloaded courses.",
+      message: mt("chooseCourseLibraryMessage"),
       properties: ["openDirectory", "createDirectory"]
     });
 
@@ -218,15 +378,15 @@ async function chooseCourseLibraryFolder() {
     await refreshQuizMenu();
   } catch (error) {
     dialog.showErrorBox(
-      "Choose Course Library",
-      error?.message || "The course library folder could not be saved."
+      mt("chooseCourseLibrary"),
+      error?.message || mt("courseLibraryCouldNotSave")
     );
   }
 }
 
 async function openFolderPath(folderPath, title) {
   if (!folderPath || typeof folderPath !== "string") {
-    dialog.showErrorBox(title, "That folder is not available yet.");
+    dialog.showErrorBox(title, mt("folderUnavailable"));
     return;
   }
 
@@ -240,7 +400,7 @@ async function openFolderPath(folderPath, title) {
   } catch (error) {
     dialog.showErrorBox(
       title,
-      error?.message || "The folder could not be opened."
+      error?.message || mt("folderUnavailable")
     );
   }
 }
@@ -255,25 +415,25 @@ async function getLibraryPaths() {
 
 async function openCourseLibraryFolder() {
   const paths = await getLibraryPaths();
-  await openFolderPath(paths.courses, "Open Course Library");
+  await openFolderPath(paths.courses, mt("openCourseLibrary"));
 }
 
 async function openSongsFolder() {
   const paths = await getLibraryPaths();
-  await openFolderPath(paths.songs, "Open Songs Folder");
+  await openFolderPath(paths.songs, mt("openSongsFolder"));
 }
 
 async function openBibleFolder() {
   const paths = await getLibraryPaths();
 
   if (paths.bibles) {
-    await openFolderPath(paths.bibles, "Open Bible Folder");
+    await openFolderPath(paths.bibles, mt("openBibleFolder"));
     return;
   }
 
   dialog.showErrorBox(
-    "Open Bible Folder",
-    "No active Bible folder was found. Open Bible Status to see all search paths."
+    mt("openBibleFolder"),
+    mt("noBibleFolder")
   );
 }
 
@@ -282,15 +442,15 @@ async function showBibleStatus() {
     const status = await getLocalJson("/bible/status");
     const active = status.searchPaths.find(candidate => candidate.exists && candidate.files > 0);
     const details = [
-      `Loaded: ${status.loaded ? "Yes" : "No"}`,
-      `Books: ${status.books}`,
-      `References: ${status.references}`,
+      `${mt("loaded")}: ${status.loaded ? mt("yes") : mt("no")}`,
+      `${mt("books")}: ${status.books}`,
+      `${mt("references")}: ${status.references}`,
       "",
       active
-        ? `Active folder:\n${active.path}`
-        : "Active folder:\nNone found",
+        ? `${mt("activeFolder")}:\n${active.path}`
+        : `${mt("activeFolder")}:\n${mt("noneFound")}`,
       "",
-      "Search paths:",
+      `${mt("searchPaths")}:`,
       ...status.searchPaths.map(candidate => (
         `${candidate.exists ? "✓" : "•"} ${candidate.path} (${candidate.files} files)`
       ))
@@ -298,14 +458,14 @@ async function showBibleStatus() {
 
     dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
       type: status.loaded ? "info" : "warning",
-      title: "Bible Status",
-      message: "NBLA Bible Status",
+      title: mt("bibleStatus"),
+      message: mt("nblaBibleStatus"),
       detail: details
     });
   } catch (error) {
     dialog.showErrorBox(
-      "Bible Status",
-      error?.message || "Bible status could not be loaded."
+      mt("bibleStatus"),
+      error?.message || mt("bibleStatusCouldNotLoad")
     );
   }
 }
@@ -338,8 +498,8 @@ async function jumpToSlide(slideIndex) {
     await postLocal(`/jump/${slideIndex}`);
   } catch (error) {
     dialog.showErrorBox(
-      "Jump to Header",
-      error?.message || "The presentation could not jump to that header."
+      mt("jumpToHeader"),
+      error?.message || mt("couldNotJump")
     );
   }
 }
@@ -349,8 +509,8 @@ async function goToNextSlideStep() {
     await postLocal("/control/next");
   } catch (error) {
     dialog.showErrorBox(
-      "Next",
-      error?.message || "The presentation could not advance."
+      mt("next"),
+      error?.message || mt("couldNotAdvance")
     );
   }
 }
@@ -360,8 +520,8 @@ async function goToPreviousSlideStep() {
     await postLocal("/control/prev");
   } catch (error) {
     dialog.showErrorBox(
-      "Previous",
-      error?.message || "The presentation could not go back."
+      mt("previous"),
+      error?.message || mt("couldNotGoBack")
     );
   }
 }
@@ -371,8 +531,8 @@ async function startQuiz(quizId) {
     await postLocal(`/quiz/start/${encodeURIComponent(quizId)}`);
   } catch (error) {
     dialog.showErrorBox(
-      "Launch Quiz",
-      error?.message || "The quiz could not be launched."
+      mt("launchQuiz"),
+      error?.message || mt("quizCouldNotLaunch")
     );
   }
 }
@@ -382,8 +542,8 @@ async function endQuiz() {
     await postLocal("/quiz/end");
   } catch (error) {
     dialog.showErrorBox(
-      "End Quiz",
-      error?.message || "The quiz could not be ended."
+      mt("endQuiz"),
+      error?.message || mt("quizCouldNotEnd")
     );
   }
 }
@@ -393,8 +553,8 @@ async function clearQuizAnswers() {
     await postLocal("/quiz/clear");
   } catch (error) {
     dialog.showErrorBox(
-      "Clear Quiz Answers",
-      error?.message || "The quiz answers could not be cleared."
+      mt("clearQuizAnswers"),
+      error?.message || mt("quizCouldNotClear")
     );
   }
 }
@@ -403,7 +563,7 @@ function buildHeadingSubmenu() {
   if (!headingMenuItems.length) {
     return [
       {
-        label: loadedCourseTitle ? `Course: ${loadedCourseTitle}` : "No H1/H2 headers loaded",
+        label: loadedCourseTitle ? `${mt("course")}: ${loadedCourseTitle}` : mt("noHeadersLoaded"),
         enabled: false
       }
     ];
@@ -427,7 +587,7 @@ function buildHeadingSubmenu() {
 
   const menuItems = loadedCourseTitle
     ? [
-        { label: `Course: ${loadedCourseTitle}`, enabled: false },
+        { label: `${mt("course")}: ${loadedCourseTitle}`, enabled: false },
         { type: "separator" }
       ]
     : [];
@@ -437,7 +597,7 @@ function buildHeadingSubmenu() {
     ...sections.map(section => {
       const submenu = [
         {
-          label: "Go to Section",
+          label: mt("goToSection"),
           click: () => jumpToSlide(section.slide)
         }
       ];
@@ -466,26 +626,26 @@ function buildQuizSubmenu() {
         label: quiz.title,
         click: () => startQuiz(quiz.id)
       }))
-    : [{ label: "No quizzes loaded", enabled: false }];
+    : [{ label: mt("noQuizzesLoaded"), enabled: false }];
 
   return [
     {
-      label: "Launch Quiz",
+      label: mt("launchQuiz"),
       submenu: launchItems
     },
     { type: "separator" },
     {
-      label: "End Quiz",
+      label: mt("endQuiz"),
       accelerator: "CmdOrCtrl+Shift+Q",
       click: endQuiz
     },
     {
-      label: "Clear Current Answers",
+      label: mt("clearCurrentAnswers"),
       click: clearQuizAnswers
     },
     { type: "separator" },
     {
-      label: "Refresh Quiz List",
+      label: mt("refreshQuizList"),
       click: refreshQuizMenu
     }
   ];
@@ -504,7 +664,7 @@ async function exportQuizResults() {
   try {
     const parentWindow = presenterWindow || BrowserWindow.getFocusedWindow();
     const result = await dialog.showSaveDialog(parentWindow, {
-      title: "Export Quiz Results",
+      title: mt("exportQuizResults"),
       defaultPath: path.join(app.getPath("documents"), buildExportFilename()),
       filters: [{ name: "CSV", extensions: ["csv"] }]
     });
@@ -515,8 +675,8 @@ async function exportQuizResults() {
     await fs.writeFile(result.filePath, csv, "utf8");
   } catch (error) {
     dialog.showErrorBox(
-      "Export Quiz Results",
-      error?.message || "The quiz results could not be exported."
+      mt("exportQuizResults"),
+      error?.message || mt("quizCouldNotExport")
     );
   }
 }
@@ -526,8 +686,8 @@ async function startNewTeachingSession() {
     await postLocal("/session/new");
   } catch (error) {
     dialog.showErrorBox(
-      "New Teaching Session",
-      error?.message || "The session could not be created."
+      mt("newTeachingSession"),
+      error?.message || mt("sessionCouldNotCreate")
     );
   }
 }
@@ -541,14 +701,16 @@ function openStyleSettings() {
   settingsWindow = new BrowserWindow({
     width: 760,
     height: 820,
-    title: "Style Settings",
+    title: mt("styleSettings"),
     icon: LOGO_PATH,
     autoHideMenuBar: !shouldShowMenuBar()
   });
 
   settingsWindow.loadURL(`${APP_URL}/settings.html`);
-  settingsWindow.on("closed", () => {
+  settingsWindow.on("closed", async () => {
     settingsWindow = null;
+    await refreshAppLanguage();
+    createMenu();
   });
 }
 
@@ -561,7 +723,7 @@ function openCourseDownload() {
   courseDownloadWindow = new BrowserWindow({
     width: 860,
     height: 760,
-    title: "Download Courses",
+    title: mt("downloadCourses"),
     icon: LOGO_PATH,
     autoHideMenuBar: !shouldShowMenuBar()
   });
@@ -581,7 +743,7 @@ function openControllerWindow() {
   controllerWindow = new BrowserWindow({
     width: 1120,
     height: 820,
-    title: "Controller",
+    title: mt("controller"),
     icon: LOGO_PATH,
     autoHideMenuBar: !shouldShowMenuBar()
   });
@@ -601,7 +763,7 @@ function openStageWindow() {
   stageWindow = new BrowserWindow({
     width: 1180,
     height: 760,
-    title: "Stage View",
+    title: mt("stageView"),
     icon: LOGO_PATH,
     backgroundColor: "#05070c",
     autoHideMenuBar: !shouldShowMenuBar()
@@ -622,7 +784,7 @@ function openDirectorWindow() {
   directorWindow = new BrowserWindow({
     width: 1180,
     height: 780,
-    title: "Director",
+    title: mt("director"),
     icon: LOGO_PATH,
     backgroundColor: "#08111f",
     autoHideMenuBar: !shouldShowMenuBar()
@@ -637,16 +799,16 @@ function openDirectorWindow() {
 function createMenu() {
   const template = [
     {
-      label: "File",
+      label: mt("file"),
       submenu: [
         {
-          label: "New Teaching Session",
+          label: mt("newTeachingSession"),
           accelerator: "CmdOrCtrl+N",
           click: startNewTeachingSession
         },
         { type: "separator" },
         {
-          label: "Export Quiz Results...",
+          label: `${mt("exportQuizResults")}...`,
           accelerator: "CmdOrCtrl+Shift+E",
           click: exportQuizResults
         },
@@ -655,7 +817,7 @@ function createMenu() {
       ]
     },
     {
-      label: "Edit",
+      label: mt("edit"),
       submenu: [
         { role: "undo" },
         { role: "redo" },
@@ -670,115 +832,115 @@ function createMenu() {
       ]
     },
     {
-      label: "Presentation",
+      label: mt("presentation"),
       submenu: [
         {
-          label: "Next",
+          label: mt("next"),
           accelerator: "Right",
           click: goToNextSlideStep
         },
         {
-          label: "Previous",
+          label: mt("previous"),
           accelerator: "Left",
           click: goToPreviousSlideStep
         },
         { type: "separator" },
         {
-          label: "Extended Screen Mode",
+          label: mt("extendedScreenMode"),
           type: "radio",
           checked: presentationMode === "extended",
           click: () => switchPresentationMode("extended")
         },
         {
-          label: "Mirrored Screen Mode",
+          label: mt("mirroredScreenMode"),
           type: "radio",
           checked: presentationMode === "mirrored",
           click: () => switchPresentationMode("mirrored")
         },
         { type: "separator" },
         {
-          label: "Exit Full Screen",
+          label: mt("exitFullScreen"),
           accelerator: "Esc",
           click: exitFullScreen
         }
       ]
     },
     {
-      label: "Library",
+      label: mt("library"),
       submenu: [
         {
-          label: "Download Courses...",
+          label: `${mt("downloadCourses")}...`,
           click: openCourseDownload
         },
         {
-          label: "Choose Course Library Folder...",
+          label: `${mt("chooseCourseLibraryFolder")}...`,
           click: chooseCourseLibraryFolder
         },
         {
-          label: "Load Downloaded Course...",
+          label: `${mt("loadDownloadedCourse")}...`,
           accelerator: "CmdOrCtrl+O",
           click: loadDownloadedCourse
         },
         { type: "separator" },
         {
-          label: "Open Course Library Folder",
+          label: mt("openCourseLibraryFolder"),
           click: openCourseLibraryFolder
         },
         { type: "separator" },
         {
-          label: "Open Songs Folder",
+          label: mt("openSongsFolder"),
           click: openSongsFolder
         },
         { type: "separator" },
         {
-          label: "Open Bible Folder",
+          label: mt("openBibleFolder"),
           click: openBibleFolder
         },
         {
-          label: "Bible Status...",
+          label: mt("bibleStatusMenu"),
           click: showBibleStatus
         }
       ]
     },
     {
-      label: "Quiz",
+      label: mt("quiz"),
       submenu: buildQuizSubmenu()
     },
     {
-      label: "Settings",
+      label: mt("settings"),
       submenu: [
         {
-          label: "Style Settings...",
+          label: `${mt("styleSettings")}...`,
           accelerator: "CmdOrCtrl+,",
           click: openStyleSettings
         }
       ]
     },
     {
-      label: "View",
+      label: mt("view"),
       submenu: [
         {
-          label: "Open Controller",
+          label: mt("openController"),
           accelerator: "CmdOrCtrl+Shift+C",
           click: openControllerWindow
         },
         {
-          label: "Open Stage View",
+          label: mt("openStageView"),
           accelerator: "CmdOrCtrl+Shift+S",
           click: openStageWindow
         },
         {
-          label: "Open Director",
+          label: mt("openDirector"),
           accelerator: "CmdOrCtrl+Shift+D",
           click: openDirectorWindow
         },
         { type: "separator" },
         {
-          label: "Show H1/H2 Headers",
+          label: mt("showHeaders"),
           submenu: buildHeadingSubmenu()
         },
         {
-          label: "Refresh Headers",
+          label: mt("refreshHeaders"),
           click: refreshHeadingMenu
         },
         { type: "separator" },
@@ -788,7 +950,7 @@ function createMenu() {
       ]
     },
     {
-      label: "Window",
+      label: mt("window"),
       submenu: [
         { role: "minimize" },
         { role: "close" }
@@ -1032,7 +1194,8 @@ function recreatePresentationWindows() {
   }, 100);
 }
 
-function createWindows() {
+async function createWindows() {
+  await refreshAppLanguage();
   createMenu();
   createPresentationWindows();
   setTimeout(refreshHeadingMenu, 500);

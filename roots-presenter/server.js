@@ -100,6 +100,7 @@ app.post("/style-settings", (req, res) => {
   const settings = req.body && typeof req.body === "object" ? req.body : {};
   saveStyleSettings(settings);
   io.emit("style-settings-updated", { updatedAt: Date.now() });
+  sendState();
   res.json(settings);
 });
 app.get("/join-info", (req, res) => {
@@ -544,6 +545,7 @@ async function fetchCgvCourseManifest(coursePath) {
 async function buildCatalogCourse(item) {
   const courseLibraryDir = getCourseLibraryDir();
   const remoteManifest = await fetchCgvCourseManifest(item.name);
+  const available = Boolean(remoteManifest);
   const installedManifest = readInstalledCourseManifest(item.name);
   const installedCourseDir = courseLibraryDir
     ? path.join(courseLibraryDir, safeDirectoryName(item.name))
@@ -552,17 +554,27 @@ async function buildCatalogCourse(item) {
   const localVersion = String(installedManifest?.version || "").trim();
   const installed = Boolean(installedManifest);
   const updateAvailable = installed && remoteVersion && compareVersions(remoteVersion, localVersion) > 0;
+  const status = !available && !installed
+    ? "coming-soon"
+    : updateAvailable
+      ? "update-available"
+      : installed
+        ? "downloaded"
+        : "not-downloaded";
 
   return {
     id: safeDirectoryName(item.name),
     title: remoteManifest?.title || cleanCourseTitle(item.name),
-    description: remoteManifest?.description || "Cultivados en Gracia y Verdad course",
+    description: remoteManifest?.description || (available
+      ? "Cultivados en Gracia y Verdad course"
+      : "Course package coming soon."),
     version: remoteVersion,
     localVersion,
+    available,
     installed,
     installedCourseDir: installed ? installedCourseDir : "",
     updateAvailable,
-    status: updateAvailable ? "update-available" : installed ? "downloaded" : "not-downloaded",
+    status,
     path: item.name,
     repositoryUrl: item.html_url
   };
@@ -641,6 +653,11 @@ async function downloadCourseFromCgv(course) {
     throw new Error("The selected course path is not valid.");
   }
 
+  const remoteManifest = await fetchCgvCourseManifest(coursePath);
+  if (!remoteManifest) {
+    throw new Error("This course is not available yet because it does not include manifest.json.");
+  }
+
   const tree = await fetchCgvRepositoryTree();
   const repoPrefix = `${cgvRepository.coursesPath}/${coursePath}/`;
   const files = tree
@@ -669,11 +686,14 @@ async function downloadCourseFromCgv(course) {
   }
 
   const manifest = {
+    ...remoteManifest,
     id: courseId,
-    title: course?.title || cleanCourseTitle(coursePath),
-    subtitle: course?.subtitle || "",
-    version: course?.version || "",
-    entry: entryPath,
+    title: remoteManifest.title || course?.title || cleanCourseTitle(coursePath),
+    subtitle: remoteManifest.subtitle || course?.subtitle || "",
+    version: remoteManifest.version || course?.version || "",
+    entry: remoteManifest.entry && files.includes(remoteManifest.entry)
+      ? remoteManifest.entry
+      : entryPath,
     source: cgvRepositoryBaseUrl
   };
 
@@ -712,6 +732,34 @@ function saveStyleSettings(settings) {
 function getAppLanguage() {
   const language = loadStyleSettings().language;
   return ["es", "en"].includes(language) ? language : "es";
+}
+
+function serverText(key) {
+  const language = getAppLanguage();
+  const translations = {
+    es: {
+      quizReady: "Quiz listo",
+      quizNotFound: "Quiz no encontrado",
+      launchQuiz: "Iniciar quiz",
+      missingQuizFile: "Falta el archivo del quiz",
+      scanOrEnter: "Escanee el código o entre a",
+      qrAlt: "Código QR para entrar al quiz",
+      quizUnavailable: "Quiz no disponible",
+      missingYaml: "Falta el archivo YAML correspondiente."
+    },
+    en: {
+      quizReady: "Quiz ready",
+      quizNotFound: "Quiz not found",
+      launchQuiz: "Launch quiz",
+      missingQuizFile: "Missing quiz file",
+      scanOrEnter: "Scan the code or go to",
+      qrAlt: "QR code to join the quiz",
+      quizUnavailable: "Quiz not available",
+      missingYaml: "The matching YAML file is missing."
+    }
+  };
+
+  return translations[language]?.[key] || translations.es[key] || key;
 }
 
 function getScopedStyles(settings) {
@@ -1145,10 +1193,10 @@ function renderLine(line) {
   if (quizMarker) {
     const quiz = quizBank.find(item => item.id === quizMarker.quizId);
     const title = quiz?.title || quizMarker.quizId;
-    const status = quiz ? "Quiz ready" : "Quiz not found";
+    const status = quiz ? serverText("quizReady") : serverText("quizNotFound");
     const button = quiz
-      ? `<button type="button" onclick="launchQuiz('${escapeHtml(quizMarker.quizId)}')">Launch quiz</button>`
-      : `<button type="button" disabled>Missing quiz file</button>`;
+      ? `<button type="button" onclick="launchQuiz('${escapeHtml(quizMarker.quizId)}')">${serverText("launchQuiz")}</button>`
+      : `<button type="button" disabled>${serverText("missingQuizFile")}</button>`;
     const joinInfo = getJoinInfo();
     const joinCode = joinInfo.host && joinInfo.port
       ? `${joinInfo.host}:${joinInfo.port}`
@@ -1168,19 +1216,19 @@ function renderLine(line) {
         ? `
         <aside class="quiz-cue projector-quiz-cue">
           <div>
-            <strong>Quiz listo</strong>
+            <strong>${serverText("quizReady")}</strong>
             <span>${escapeHtml(title)}</span>
-            <small>Escanee el código o entre a <code>${escapeHtml(joinCode)}</code></small>
+            <small>${serverText("scanOrEnter")} <code>${escapeHtml(joinCode)}</code></small>
           </div>
-          <img class="quiz-cue-qr" src="/quiz-join.svg" alt="Código QR para entrar al quiz">
+          <img class="quiz-cue-qr" src="/quiz-join.svg" alt="${serverText("qrAlt")}">
         </aside>
       `.trim()
         : `
         <aside class="quiz-cue projector-quiz-cue missing">
           <div>
-            <strong>Quiz no disponible</strong>
+            <strong>${serverText("quizUnavailable")}</strong>
             <span>${escapeHtml(title)}</span>
-            <small>Falta el archivo YAML correspondiente.</small>
+            <small>${serverText("missingYaml")}</small>
           </div>
         </aside>
       `.trim()

@@ -123,7 +123,7 @@ function getSongHtml(controllerState = {}) {
   const section = controllerState.sections?.[controllerState.step] || [];
   return section.length
     ? section.map(line => `<div>${escapeHtml(line)}</div>`).join("")
-    : `<div class="empty">No song section live.</div>`;
+    : `<div class="empty">${t("noSongSectionLive")}</div>`;
 }
 
 async function post(path) {
@@ -147,7 +147,7 @@ function getSongPayload(song = getSelectedSong()) {
   const controllerState = latestState.controllerState || {};
 
   return {
-    title: song?.title || "Song",
+    title: song?.title || t("songs"),
     lyrics: song?.lyrics || "",
     chordLyrics: song?.chordLyrics || song?.lyrics || "",
     sectionLabels: song?.sectionLabels || [],
@@ -170,7 +170,7 @@ function sendSongLive(song = getSelectedSong()) {
 function showSongListScreen() {
   const controllerState = latestState.controllerState || {};
   socket.emit("controller-song-list", {
-    title: "Escoge una canción",
+    title: t("chooseSong"),
     background: controllerState.background || "#0f172a",
     backgroundMedia: controllerState.backgroundMedia || "",
     textColor: controllerState.textColor || "#ffffff",
@@ -196,7 +196,7 @@ function renderSongList() {
           </button>
         `;
       }).join("")
-    : `<div class="empty compact">No songs found.</div>`;
+    : `<div class="empty compact">${t("noSongsFound")}</div>`;
 }
 
 function openSongDrawer() {
@@ -259,12 +259,12 @@ function renderDirector(state = {}) {
   document.body.classList.toggle("song-mode", isSongMode);
   byId("directorTitle").textContent = isSongMode
     ? controllerState.blank
-      ? "Blank Screen"
-      : controllerState.title || "Song"
-    : state.course?.title || "Teaching";
+      ? t("blankScreen")
+      : controllerState.title || t("songs")
+    : state.course?.title || t("teaching");
   byId("directorMode").textContent = isSongMode
-    ? controllerState.blank ? "Blank mode" : "Song mode"
-    : "Teaching mode";
+    ? controllerState.blank ? t("blankMode") : t("songMode")
+    : t("teachingMode");
   byId("directorPosition").textContent = isSongMode
     ? `${songStep}/${songTotal || "?"}`
     : `${slideNumber}/${slideCount || "?"}`;
@@ -273,9 +273,9 @@ function renderDirector(state = {}) {
   content.classList.toggle("song-mode", isSongMode);
   content.innerHTML = isSongMode
     ? controllerState.blank
-      ? `<div class="empty">Blank screen is live.</div>`
+      ? `<div class="empty">${t("blankScreenLive")}</div>`
       : getSongHtml(controllerState)
-    : getVisibleTeachingHtml(state) || `<div class="empty">No teaching slide visible.</div>`;
+    : getVisibleTeachingHtml(state) || `<div class="empty">${t("noTeachingSlide")}</div>`;
 
   requestAnimationFrame(fitDirectorText);
   applyDirectorPopupState();
@@ -403,5 +403,7 @@ window.addEventListener("keydown", event => {
   }
 });
 
-renderDirector();
-loadSongs();
+window.CGVI18N.loadLanguage().then(() => {
+  renderDirector();
+  loadSongs();
+});
