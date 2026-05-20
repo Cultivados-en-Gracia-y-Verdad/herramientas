@@ -19,23 +19,42 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("input_jsonl", type=Path)
     p.add_argument("--connector", required=True)
+    p.add_argument("--debug-normalization", action="store_true")
     args = p.parse_args()
 
     target = normalize_connector(args.connector)
     rows = []
+    raw_counter = Counter()
+    normalized_counter = Counter()
 
     for r in load_jsonl(args.input_jsonl):
         if r.get("record_type") == "metadata":
             continue
 
-        connector = normalize_connector(
-            r.get("subordinator_greek_surface")
-        )
+        raw_connector = r.get("subordinator_greek_surface")
+        connector = normalize_connector(raw_connector)
+
+        raw_counter[raw_connector] += 1
+        normalized_counter[connector] += 1
 
         if connector != target:
             continue
 
         rows.append(r)
+
+    if args.debug_normalization:
+        print()
+        print("NORMALIZATION DEBUG")
+        print("-------------------")
+        print(f"TARGET: {args.connector} -> {target}")
+        print()
+        print("RAW FOR TARGET FAMILY")
+        for raw, count in raw_counter.most_common():
+            if normalize_connector(raw) == target:
+                print(f"{count:5}  {raw}")
+        print()
+        print("NORMALIZED TARGET COUNT")
+        print(f"{normalized_counter[target]:5}  {target}")
 
     print()
     print(f"CONNECTOR: {target}")
