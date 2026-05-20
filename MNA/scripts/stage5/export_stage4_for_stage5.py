@@ -25,21 +25,35 @@ def load_jsonl(path: Path) -> Iterable[Dict[str, Any]]:
                 raise ExportError(f"Expected JSON object at {path}:{line_no}")
             yield obj
 
+def iter_stage4_rows(path: Path) -> Iterable[Dict[str, Any]]:
+    for record in load_jsonl(path):
+        if record.get("record_type") == "metadata":
+            continue
+        yield record
+
 def normalize_record(record: Dict[str, Any]) -> Dict[str, Any]:
     normalized = {
         "book": record.get("book"),
         "chapter": record.get("chapter"),
         "verse": record.get("verse"),
-        "unit_id": record.get("unit_id") or record.get("structure_id") or record.get("id"),
-        "clause_id": record.get("clause_id"),
-        "finite_verb": record.get("finite_verb"),
+        "reference": record.get("reference"),
+        "unit_id": record.get("unit_id") or record.get("predicate_anchor_id") or record.get("structure_id") or record.get("id"),
+        "clause_id": record.get("clause_id") or record.get("predicate_anchor_id"),
+        "finite_verb": record.get("finite_verb") or record.get("anchor_greek_surface"),
         "connector": record.get("connector"),
         "connector_greek": record.get("connector_greek"),
-        "dependency_status": record.get("dependency_status") or record.get("independency_status"),
-        "stage4_decision": record.get("stage4_decision") or record.get("decision"),
+        "dependency_status": record.get("dependency_status") or record.get("independency_status") or record.get("candidate_status"),
+        "stage4_decision": record.get("stage4_decision") or record.get("decision") or record.get("survivability_status"),
         "stage4_reason": record.get("stage4_reason") or record.get("reason"),
+        "dependency_sources": list(record.get("dependency_sources") or []),
         "warnings": list(record.get("warnings") or []),
         "flags": list(record.get("flags") or []),
+        "stage4_claims": {
+            "trunk_claim": record.get("trunk_claim"),
+            "subject_marker_claim": record.get("subject_marker_claim"),
+            "movement_marker_claim": record.get("movement_marker_claim"),
+            "official_stage4_classification_changed": record.get("official_stage4_classification_changed"),
+        },
         "audit_provenance": {"source_stage": 4, "exporter": "export_stage4_for_stage5.py"},
     }
     validate_contract(normalized)
@@ -48,13 +62,16 @@ def normalize_record(record: Dict[str, Any]) -> Dict[str, Any]:
 def validate_contract(record: Dict[str, Any]) -> None:
     missing = [field for field in ["book", "chapter", "verse", "unit_id"] if record.get(field) in (None, "")]
     if missing:
-        raise ExportError(f"Missing required Stage 5 contract fields: {missing}")
+        raise ExportError(f"Missing required Stage 5 contract fields: {missing}; record={record}")
 
 def write_jsonl(records: Iterable[Dict[str, Any]], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    count = 0
     with path.open("w", encoding="utf-8") as f:
         for record in records:
             f.write(json.dumps(record, ensure_ascii=False, sort_keys=True) + "\n")
+            count += 1
+    print(f"WROTE {count} records -> {path}")
 
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Export Stage 4 records into Stage 5 contract format.")
@@ -62,7 +79,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("output_jsonl", type=Path)
     args = parser.parse_args(argv)
     try:
-        write_jsonl((normalize_record(record) for record in load_jsonl(args.input_jsonl)), args.output_jsonl)
+        write_jsonl((normalize_record(record) for record in iter_stage4_rows(args.input_jsonl)), args.output_jsonl)
     except ExportError as exc:
         print(f"Stage 5 export error: {exc}", file=sys.stderr)
         return 2
