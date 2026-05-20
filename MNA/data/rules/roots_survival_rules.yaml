@@ -1,4 +1,13 @@
 rules:
+  - id: S5-PRESERVE-STAGE4-SURVIVES-001
+    type: preserve_stage4_survivor
+    enabled: true
+    description: Preserve records already classified by Stage 4 as structurally surviving.
+    stage4_decisions:
+      - STRUCTURALLY_SURVIVES
+    action:
+      preserve: true
+
   - id: S5-PRESERVE-CONDITIONAL-UNIT-001
     type: preserve_as_unit
     enabled: true
