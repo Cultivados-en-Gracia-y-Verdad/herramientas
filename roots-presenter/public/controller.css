@@ -165,11 +165,21 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   width: 100%;
   border: 1px solid #d1d5db;
   border-radius: 7px;
   padding: 10px 12px;
+}
+
+.compact-row {
+  justify-content: flex-start;
+  margin: -4px 0 14px;
+}
+
+.hidden-file {
+  display: none;
 }
 
 .search-field {

@@ -29,7 +29,7 @@ const bundledSongRoots = [
   resourceSongsDir,
   path.join(__dirname, "songs")
 ].filter(Boolean);
-const backgroundsDir = path.join(__dirname, "backgrounds");
+const bundledBackgroundsDir = path.join(__dirname, "backgrounds");
 const assetBackgroundsDir = path.join(__dirname, "assets", "backgrounds");
 const bundledDataDir = path.join(__dirname, "data");
 const starterContentVersion = "1.1.0";
@@ -70,7 +70,7 @@ const cgvRawBaseUrl = `https://raw.githubusercontent.com/${cgvRepository.owner}/
 const synthesisMarker = "::roots-synthesis::";
 const h4IntroMarker = "::roots-h4-intro::";
 
-app.use(express.json({ limit: "250kb" }));
+app.use(express.json({ limit: "30mb" }));
 app.use(
   "/fonts/ibm-plex-sans",
   express.static(path.join(__dirname, "node_modules", "@fontsource", "ibm-plex-sans", "files"))
@@ -122,7 +122,10 @@ app.get("/quiz-join.svg", async (req, res) => {
   }
 });
 app.use("/assets", express.static(path.join(__dirname, "assets")));
-app.use("/background-media", express.static(backgroundsDir));
+app.use("/background-media", (req, res, next) => {
+  express.static(getBackgroundsDir())(req, res, next);
+});
+app.use("/bundled-background-media", express.static(bundledBackgroundsDir));
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/course-assets", (req, res, next) => {
   express.static(currentCourse?.rootDir || defaultCourseDir)(req, res, next);
@@ -1545,6 +1548,10 @@ function getSongsDir() {
   return path.join(getLibraryRootDir(), "songs");
 }
 
+function getBackgroundsDir() {
+  return path.join(getLibraryRootDir(), "backgrounds");
+}
+
 function getUserBibleDir(version = getBibleVersion()) {
   return path.join(getLibraryRootDir(), "bibles", normalizeBibleVersion(version));
 }
@@ -1557,6 +1564,7 @@ function ensureLibraryFolders(libraryRootDir = getLibraryRootDir()) {
   [
     path.join(libraryRootDir, "courses"),
     path.join(libraryRootDir, "songs"),
+    path.join(libraryRootDir, "backgrounds"),
     path.join(libraryRootDir, "bibles", getBibleVersion())
   ].forEach(folder => fs.mkdirSync(folder, { recursive: true }));
 }
@@ -2365,7 +2373,7 @@ function getBracketSectionLabel(line) {
   return label && !isChordToken(label) ? label : "";
 }
 
-function parseChordProSong(content, filePath) {
+function parseChordProSong(content, filePath, displayFile = path.basename(filePath)) {
   const lines = String(content || "").replace(/\r\n/g, "\n").split("\n");
   const metadata = {};
   const sections = [];
@@ -2397,6 +2405,7 @@ function parseChordProSong(content, filePath) {
       if (["title", "t"].includes(key)) metadata.title = value;
       else if (["subtitle", "st"].includes(key)) metadata.subtitle = value;
       else if (key === "key") metadata.key = value;
+      else if (["background", "background_media", "background-media"].includes(key)) metadata.backgroundMedia = value;
       else if (["verse", "chorus", "bridge", "tag"].includes(key)) {
         currentSection = {
           label: value ? `${key} ${value}` : key,
@@ -2437,11 +2446,12 @@ function parseChordProSong(content, filePath) {
     .filter(section => section.lines.length);
 
   return {
-    id: path.basename(filePath, path.extname(filePath)),
+    id: displayFile.replace(/\.[^.]+$/, ""),
     title,
     subtitle: metadata.subtitle || "",
     key: metadata.key || "",
-    file: path.basename(filePath),
+    backgroundMedia: metadata.backgroundMedia || "",
+    file: displayFile,
     lyrics: normalizedSections.map(section => section.lines.join("\n")).join("\n\n"),
     chordLyrics: normalizedSections.map(section => {
       const label = section.label ? [`[${section.label}]`] : [];
@@ -2453,6 +2463,35 @@ function parseChordProSong(content, filePath) {
   };
 }
 
+function listFilesRecursive(root, matcher) {
+  if (!fs.existsSync(root)) return [];
+
+  const files = [];
+  const walk = directory => {
+    fs.readdirSync(directory, { withFileTypes: true })
+      .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }))
+      .forEach(entry => {
+        if (entry.name === ".DS_Store") return;
+
+        const absolutePath = path.join(directory, entry.name);
+        if (entry.isDirectory()) {
+          walk(absolutePath);
+          return;
+        }
+
+        if (entry.isFile() && matcher(entry.name)) {
+          files.push({
+            absolutePath,
+            relativePath: path.relative(root, absolutePath).split(path.sep).join("/")
+          });
+        }
+      });
+  };
+
+  walk(root);
+  return files;
+}
+
 function loadSongLibrary() {
   const songFiles = new Map();
   const songsDir = getSongsDir();
@@ -2460,26 +2499,28 @@ function loadSongLibrary() {
   [...bundledSongRoots, songsDir].forEach(root => {
     if (!fs.existsSync(root)) return;
 
-    fs.readdirSync(root)
-      .filter(fileName => /\.(cho|chordpro|chopro|pro)$/i.test(fileName))
-      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    listFilesRecursive(root, fileName => /\.(cho|chordpro|chopro|pro)$/i.test(fileName))
       .slice(0, root === songsDir ? undefined : starterSongLimit)
-      .forEach(fileName => {
-        songFiles.set(fileName, path.join(root, fileName));
+      .forEach(file => {
+        songFiles.set(file.relativePath, file.absolutePath);
       });
   });
 
   return [...songFiles.entries()]
     .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
-    .map(([, filePath]) => parseChordProSong(fs.readFileSync(filePath, "utf-8"), filePath))
+    .map(([relativePath, filePath]) => parseChordProSong(fs.readFileSync(filePath, "utf-8"), filePath, relativePath))
     .filter(song => song.sections.length);
 }
 
 function loadBackgroundLibrary() {
   const sources = [
     {
-      root: backgroundsDir,
+      root: getBackgroundsDir(),
       urlPrefix: "/background-media"
+    },
+    {
+      root: bundledBackgroundsDir,
+      urlPrefix: "/bundled-background-media"
     },
     {
       root: assetBackgroundsDir,
@@ -2490,20 +2531,82 @@ function loadBackgroundLibrary() {
   return sources.flatMap(source => {
     if (!fs.existsSync(source.root)) return [];
 
-    return fs.readdirSync(source.root)
-      .filter(fileName => /\.(apng|avif|gif|jpe?g|png|svg|webp|mp4|webm|ogg|mov)$/i.test(fileName))
-      .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-      .map(fileName => {
-        const isVideo = /\.(mp4|webm|ogg|mov)$/i.test(fileName);
+    return listFilesRecursive(source.root, fileName => /\.(apng|avif|gif|jpe?g|png|svg|webp|mp4|webm|ogg|mov)$/i.test(fileName))
+      .map(file => {
+        const isVideo = /\.(mp4|webm|ogg|mov)$/i.test(file.relativePath);
         return {
-          id: `${source.urlPrefix}/${fileName}`,
-          name: path.basename(fileName, path.extname(fileName)),
-          file: fileName,
-          url: `${source.urlPrefix}/${encodeURIComponent(fileName)}`,
+          id: `${source.urlPrefix}/${file.relativePath}`,
+          name: path.basename(file.relativePath, path.extname(file.relativePath)),
+          file: file.relativePath,
+          url: `${source.urlPrefix}/${file.relativePath.split("/").map(encodeURIComponent).join("/")}`,
           type: isVideo ? "video" : "image"
         };
       });
   });
+}
+
+function safeBackgroundFileName(name, mimeType = "") {
+  const extensionFromName = path.extname(String(name || "")).toLowerCase();
+  const extensionFromMime = {
+    "image/jpeg": ".jpg",
+    "image/png": ".png",
+    "image/gif": ".gif",
+    "image/webp": ".webp",
+    "image/svg+xml": ".svg",
+    "video/mp4": ".mp4",
+    "video/webm": ".webm",
+    "video/ogg": ".ogg",
+    "video/quicktime": ".mov"
+  }[mimeType] || "";
+  const extension = extensionFromName || extensionFromMime || ".jpg";
+  const base = path.basename(String(name || "background"), extensionFromName)
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 72) || "background";
+
+  return `${base}${extension}`;
+}
+
+function importBackgroundFile(payload = {}) {
+  const dataUrl = String(payload.dataUrl || "");
+  const match = dataUrl.match(/^data:([^;]+);base64,(.+)$/);
+  if (!match) {
+    throw new Error("Invalid background file.");
+  }
+
+  const mimeType = match[1];
+  const allowed = /^(image\/(apng|avif|gif|jpeg|png|svg\+xml|webp)|video\/(mp4|webm|ogg|quicktime))$/i;
+  if (!allowed.test(mimeType)) {
+    throw new Error("Unsupported background file type.");
+  }
+
+  const backgroundsDir = getBackgroundsDir();
+  fs.mkdirSync(backgroundsDir, { recursive: true });
+
+  const originalName = safeBackgroundFileName(payload.name, mimeType);
+  const extension = path.extname(originalName);
+  const baseName = path.basename(originalName, extension);
+  let fileName = originalName;
+  let index = 2;
+
+  while (fs.existsSync(path.join(backgroundsDir, fileName))) {
+    fileName = `${baseName}-${index}${extension}`;
+    index += 1;
+  }
+
+  fs.writeFileSync(path.join(backgroundsDir, fileName), Buffer.from(match[2], "base64"));
+
+  return {
+    id: `/background-media/${fileName}`,
+    name: path.basename(fileName, extension),
+    file: fileName,
+    url: `/background-media/${encodeURIComponent(fileName)}`,
+    type: mimeType.startsWith("video/") ? "video" : "image"
+  };
 }
 
 function slugifySongTitle(title) {
@@ -2531,13 +2634,29 @@ function getUniqueSongFileName(title) {
   return fileName;
 }
 
-function buildChordProFile(title, chordLyrics) {
+function safeSongRelativePath(value) {
+  const relativePath = String(value || "")
+    .replace(/\\/g, "/")
+    .split("/")
+    .filter(part => part && part !== "." && part !== "..")
+    .join("/");
+
+  return /\.(cho|chordpro|chopro|pro)$/i.test(relativePath) ? relativePath : "";
+}
+
+function buildChordProFile(title, chordLyrics, backgroundMedia = "") {
   const body = String(chordLyrics || "")
     .replace(/\r\n/g, "\n")
     .replace(/^\{title:[^\n]+\}\s*/i, "")
+    .replace(/^\{background(?:[_-]media)?:[^\n]+\}\s*/gim, "")
     .trim();
+  const background = cleanOptionalLongText(backgroundMedia, 1000);
+  const header = [
+    `{title: ${cleanLongText(title, "Untitled Song", 160)}}`,
+    background ? `{background: ${background}}` : ""
+  ].filter(Boolean).join("\n");
 
-  return `{title: ${cleanLongText(title, "Untitled Song", 160)}}\n\n${body}\n`;
+  return `${header}\n\n${body}\n`;
 }
 
 function saveSongFile(payload = {}) {
@@ -2550,13 +2669,14 @@ function saveSongFile(payload = {}) {
 
   fs.mkdirSync(songsDir, { recursive: true });
 
-  const existingFile = payload.file ? path.basename(String(payload.file)) : "";
+  const existingFile = safeSongRelativePath(payload.file);
   const fileName = existingFile || getUniqueSongFileName(title);
   const filePath = path.join(songsDir, fileName);
-  const content = buildChordProFile(title, chordLyrics);
+  const content = buildChordProFile(title, chordLyrics, payload.backgroundMedia);
 
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, content, "utf-8");
-  return parseChordProSong(content, filePath);
+  return parseChordProSong(content, filePath, fileName);
 }
 
 function publicControllerState() {
@@ -2608,7 +2728,7 @@ function setControllerSong(payload = {}) {
 
 function getSongListLines() {
   return loadSongLibrary().map((song, index) => {
-    const number = song.file?.match(/^(\d+)/)?.[1] || String(index + 1).padStart(3, "0");
+    const number = song.file?.match(/(^|\/)[A-Za-z]*(\d+)/)?.[2] || String(index + 1).padStart(3, "0");
     return `${number}  ${song.title}`;
   });
 }
@@ -2644,6 +2764,7 @@ function updateControllerStyle(payload = {}) {
 }
 
 function setControllerBlank(payload = {}) {
+  const settings = loadStyleSettings();
   controllerState = {
     active: true,
     blank: true,
@@ -2653,7 +2774,7 @@ function setControllerBlank(payload = {}) {
     sectionLabels: [],
     step: 0,
     background: cleanText(payload.background, controllerState.background || "#0f172a"),
-    backgroundMedia: cleanOptionalLongText(payload.backgroundMedia),
+    backgroundMedia: cleanOptionalLongText(settings.blankBackgroundMedia || payload.backgroundMedia),
     textColor: cleanText(payload.textColor, controllerState.textColor || "#ffffff"),
     accentColor: cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8")
   };
@@ -2876,6 +2997,7 @@ app.get("/library-paths", (req, res) => {
     runtimeDataDir,
     courses: getCourseLibraryDir(),
     songs: getSongsDir(),
+    backgrounds: getBackgroundsDir(),
     bibles: getUserBibleDir(),
     bibleVersion: bibleStatus.version,
     activeBiblePath: activeBiblePath?.path || "",
@@ -3018,6 +3140,16 @@ app.get("/songs", (req, res) => {
 
 app.get("/backgrounds", (req, res) => {
   res.json(loadBackgroundLibrary());
+});
+
+app.post("/backgrounds/import", (req, res) => {
+  try {
+    res.json(importBackgroundFile(req.body || {}));
+  } catch (error) {
+    res.status(400).json({
+      error: error?.message || "The background could not be imported."
+    });
+  }
 });
 
 app.post("/songs/save", (req, res) => {

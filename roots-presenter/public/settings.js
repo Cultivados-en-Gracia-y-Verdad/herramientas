@@ -42,10 +42,12 @@ const popupFields = [
 
 const builtInThemes = window.CGV_STYLE_THEMES || [];
 let availableBibleVersions = ["NBLA"];
+let availableBackgrounds = [];
 
 let settings = {
   language: "es",
   bibleVersion: "NBLA",
+  blankBackgroundMedia: "",
   theme: "",
   styles: { main: {}, presenter: {}, audience: {} },
   customThemes: []
@@ -85,11 +87,13 @@ function normalizeSettings(rawSettings) {
   const customThemes = getCustomThemes(rawSettings);
   const language = ["es", "en"].includes(rawSettings.language) ? rawSettings.language : "es";
   const bibleVersion = normalizeBibleVersion(rawSettings.bibleVersion);
+  const blankBackgroundMedia = String(rawSettings.blankBackgroundMedia || "");
 
   if (styles.main || styles.presenter || styles.audience) {
     return {
       language,
       bibleVersion,
+      blankBackgroundMedia,
       theme: rawSettings.theme || "",
       customThemes,
       styles: {
@@ -103,6 +107,7 @@ function normalizeSettings(rawSettings) {
   return {
     language,
     bibleVersion,
+    blankBackgroundMedia,
     theme: rawSettings.theme || "",
     customThemes,
     styles: {
@@ -235,6 +240,7 @@ function renderSettings() {
   form.dataset.settingsSection = "style";
   renderLanguageSelect();
   renderBibleVersionSelect();
+  renderBlankBackgroundSelect();
   renderThemeSelect();
 
   viewScopes.forEach(scope => {
@@ -304,6 +310,28 @@ function renderBibleVersionSelect() {
   select.value = settings.bibleVersion || "NBLA";
 }
 
+function renderBlankBackgroundSelect() {
+  const select = document.getElementById("blankBackgroundSelect");
+  if (!select) return;
+
+  const selected = settings.blankBackgroundMedia || "";
+  select.replaceChildren();
+
+  const noneOption = document.createElement("option");
+  noneOption.value = "";
+  noneOption.textContent = t("none");
+  select.appendChild(noneOption);
+
+  availableBackgrounds.forEach(background => {
+    const option = document.createElement("option");
+    option.value = background.url;
+    option.textContent = background.name;
+    select.appendChild(option);
+  });
+
+  select.value = selected;
+}
+
 function renderThemeSelect() {
   const select = document.getElementById("themeSelect");
   if (!select) return;
@@ -325,6 +353,7 @@ function collectSettings() {
   const nextSettings = {
     language: document.getElementById("languageSelect")?.value || settings.language || "es",
     bibleVersion: document.getElementById("bibleVersionSelect")?.value || settings.bibleVersion || "NBLA",
+    blankBackgroundMedia: document.getElementById("blankBackgroundSelect")?.value || "",
     theme: document.getElementById("themeSelect")?.value || settings.theme || "",
     customThemes: getCustomThemes(),
     styles: { main: {}, presenter: {}, audience: {} }
@@ -358,6 +387,7 @@ function applySelectedTheme() {
     ...clone(theme.settings),
     language: settings.language || "es",
     bibleVersion: settings.bibleVersion || "NBLA",
+    blankBackgroundMedia: settings.blankBackgroundMedia || "",
     customThemes: currentCustomThemes
   });
   renderSettings();
@@ -391,6 +421,7 @@ function saveCurrentAsTheme() {
     settings: {
       language: current.language || "es",
       bibleVersion: current.bibleVersion || "NBLA",
+      blankBackgroundMedia: current.blankBackgroundMedia || "",
       theme: id,
       styles: clone(current.styles)
     }
@@ -409,9 +440,10 @@ function saveCurrentAsTheme() {
 }
 
 async function loadSettings() {
-  const [settingsResponse, bibleVersionsResponse] = await Promise.all([
+  const [settingsResponse, bibleVersionsResponse, backgroundsResponse] = await Promise.all([
     fetch("/style-settings"),
-    fetch("/bible/versions").catch(() => null)
+    fetch("/bible/versions").catch(() => null),
+    fetch("/backgrounds").catch(() => null)
   ]);
 
   if (bibleVersionsResponse?.ok) {
@@ -419,6 +451,10 @@ async function loadSettings() {
     availableBibleVersions = Array.isArray(bibleVersions.versions) && bibleVersions.versions.length
       ? bibleVersions.versions.map(normalizeBibleVersion)
       : ["NBLA"];
+  }
+
+  if (backgroundsResponse?.ok) {
+    availableBackgrounds = await backgroundsResponse.json();
   }
 
   settings = normalizeSettings(await settingsResponse.json());

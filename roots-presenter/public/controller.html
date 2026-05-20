@@ -55,6 +55,16 @@
         <textarea id="songLyrics" spellcheck="false" placeholder="[D]Verse 1 line 1&#10;Verse 1 [G]line 2&#10;&#10;[A]Chorus line 1&#10;Chorus [D]line 2"></textarea>
       </label>
 
+      <label>
+        <span data-i18n="songBackgroundImage">Song background image</span>
+        <select id="songBackgroundMedia"></select>
+      </label>
+
+      <div class="button-row compact-row">
+        <button id="importSongBackgroundButton" type="button" class="secondary" data-i18n="importBackgroundImage">Import image</button>
+        <input id="songBackgroundFile" class="hidden-file" type="file" accept="image/*,video/*">
+      </div>
+
       <div class="button-row">
         <button id="saveSongButton" type="button" data-i18n="saveSong">Save Song</button>
         <button id="cancelEditorButton" type="button" class="secondary" data-i18n="cancel">Cancel</button>

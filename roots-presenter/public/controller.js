@@ -66,6 +66,7 @@ async function loadBackgrounds() {
   const response = await fetch("/backgrounds");
   backgrounds = response.ok ? await response.json() : [];
   renderBackgroundGallery();
+  renderSongBackgroundSelect();
 }
 
 function parseSections(text) {
@@ -124,7 +125,7 @@ function getSongPayload(song = getSelectedSong()) {
     sections: song?.sections || parseSections(song?.lyrics || ""),
     chordSections: song?.chordSections || parseChordSections(song?.chordLyrics || song?.lyrics || ""),
     background: byId("backgroundColor").value,
-    backgroundMedia: byId("backgroundMedia").value.trim(),
+    backgroundMedia: song?.backgroundMedia || byId("backgroundMedia").value.trim(),
     textColor: byId("textColor").value,
     accentColor: byId("accentColor").value
   };
@@ -184,6 +185,7 @@ function openEditor(songId = null) {
   const song = songs.find(item => item.id === songId) || { title: "", lyrics: "" };
   byId("songTitle").value = song.title;
   byId("songLyrics").value = song.chordLyrics || song.lyrics;
+  renderSongBackgroundSelect(song.backgroundMedia || "");
   byId("songEditor").classList.remove("hidden");
   byId("songTitle").focus();
 }
@@ -208,7 +210,8 @@ async function saveCurrentSong() {
       id: existingSong?.id || createSongId(title),
       file: existingSong?.file || "",
       title,
-      chordLyrics: lyrics
+      chordLyrics: lyrics,
+      backgroundMedia: byId("songBackgroundMedia").value.trim()
     })
   });
 
@@ -238,7 +241,7 @@ function renderSongList() {
   const query = byId("songSearch").value.trim().toLowerCase();
   const visibleSongs = query
     ? songs.filter(song =>
-        `${song.title}\n${song.lyrics}`.toLowerCase().includes(query)
+        `${song.file}\n${song.title}\n${song.lyrics}`.toLowerCase().includes(query)
       )
     : songs;
 
@@ -255,11 +258,12 @@ function renderSongList() {
     const selected = song.id === selectedSongId ? " selected" : "";
     const stanzaCount = parseSections(song.lyrics).length;
     const screenLabel = stanzaCount === 1 ? t("screen") : t("screens");
+    const libraryName = song.file?.includes("/") ? song.file.split("/").slice(0, -1).join(" / ") : t("songs");
     return `
       <article class="song-item${selected}" data-song-id="${escapeHtml(song.id)}">
         <button type="button" class="song-select">
           <strong>${escapeHtml(song.title)}</strong>
-          <span>${stanzaCount} ${screenLabel}</span>
+          <span>${escapeHtml(libraryName)} · ${stanzaCount} ${screenLabel}</span>
         </button>
         <button type="button" class="song-edit">${t("editSong")}</button>
       </article>
@@ -295,6 +299,27 @@ function renderBackgroundGallery() {
   }).join("");
 }
 
+function renderSongBackgroundSelect(selectedUrl = byId("songBackgroundMedia")?.value || "") {
+  const select = byId("songBackgroundMedia");
+  if (!select) return;
+
+  select.replaceChildren();
+
+  const noneOption = document.createElement("option");
+  noneOption.value = "";
+  noneOption.textContent = t("none");
+  select.appendChild(noneOption);
+
+  backgrounds.forEach(background => {
+    const option = document.createElement("option");
+    option.value = background.url;
+    option.textContent = background.name;
+    select.appendChild(option);
+  });
+
+  select.value = selectedUrl;
+}
+
 function selectBackground(url) {
   byId("backgroundMedia").value = url || "";
   renderBackgroundGallery();
@@ -306,7 +331,9 @@ function renderPreview() {
   const preview = byId("controllerPreview");
   const status = byId("liveStatus");
   const selectedSong = getSelectedSong();
-  const media = byId("backgroundMedia").value.trim();
+  const media = controllerState.active
+    ? controllerState.backgroundMedia || ""
+    : selectedSong?.backgroundMedia || byId("backgroundMedia").value.trim();
   const previewSections = controllerState.active
     && !controllerState.blank
     ? controllerState.sections || []
@@ -374,7 +401,9 @@ function renderThumbnails(sections, activeIndex, labels = []) {
 
 function hydrateColorsFromState() {
   byId("backgroundColor").value = controllerState.background || "#0f172a";
-  byId("backgroundMedia").value = controllerState.backgroundMedia || "";
+  if (!controllerState.blank) {
+    byId("backgroundMedia").value = controllerState.backgroundMedia || "";
+  }
   byId("textColor").value = controllerState.textColor || "#ffffff";
   byId("accentColor").value = controllerState.accentColor || "#38bdf8";
   renderBackgroundGallery();
@@ -432,6 +461,36 @@ byId("newSongButton").addEventListener("click", () => openEditor());
 byId("closeEditorButton").addEventListener("click", closeEditor);
 byId("cancelEditorButton").addEventListener("click", closeEditor);
 byId("saveSongButton").addEventListener("click", saveCurrentSong);
+byId("importSongBackgroundButton").addEventListener("click", () => {
+  byId("songBackgroundFile").click();
+});
+byId("songBackgroundFile").addEventListener("change", async event => {
+  const file = event.target.files?.[0];
+  if (!file) return;
+
+  const dataUrl = await new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => reject(reader.error);
+    reader.readAsDataURL(file);
+  });
+
+  const response = await fetch("/backgrounds/import", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: file.name,
+      dataUrl
+    })
+  });
+
+  if (!response.ok) return;
+
+  const imported = await response.json();
+  await loadBackgrounds();
+  renderSongBackgroundSelect(imported.url || "");
+  event.target.value = "";
+});
 byId("goLiveButton").addEventListener("click", sendLive);
 byId("clearButton").addEventListener("click", clearLive);
 byId("blankButton").addEventListener("click", blankLive);
@@ -455,6 +514,16 @@ byId("accentColor").addEventListener("input", renderPreview);
 
 window.addEventListener("keydown", event => {
   if (event.target.matches("input, textarea")) return;
+
+  if (event.key === "Escape") {
+    event.preventDefault();
+    blankLive();
+  }
+
+  if (event.key === "Enter") {
+    event.preventDefault();
+    sendLive();
+  }
 
   if (event.key === "ArrowRight" || event.key === " ") {
     event.preventDefault();

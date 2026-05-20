@@ -46,6 +46,7 @@ const MAIN_TRANSLATIONS = {
     openCourseLibrary: "Abrir biblioteca de cursos",
     openLibraryFolder: "Abrir carpeta de biblioteca",
     openSongsFolder: "Abrir carpeta de canciones",
+    openBackgroundsFolder: "Abrir carpeta de fondos",
     openBibleFolder: "Abrir carpeta de Biblias",
     noBibleFolder: "No se encontró una carpeta bíblica activa. Abre Estado de Biblia para ver todas las rutas de búsqueda.",
     bibleStatus: "Estado de Biblia",
@@ -128,6 +129,7 @@ MAIN_TRANSLATIONS.en = {
   openCourseLibrary: "Open Course Library",
   openLibraryFolder: "Open Library Folder",
   openSongsFolder: "Open Songs Folder",
+  openBackgroundsFolder: "Open Backgrounds Folder",
   openBibleFolder: "Open Bible Folder",
   noBibleFolder: "No active Bible folder was found. Open Bible Status to see all search paths.",
   bibleStatus: "Bible Status",
@@ -434,6 +436,11 @@ async function openLibraryFolder() {
 async function openSongsFolder() {
   const paths = await getLibraryPaths();
   await openFolderPath(paths.songs, mt("openSongsFolder"));
+}
+
+async function openBackgroundsFolder() {
+  const paths = await getLibraryPaths();
+  await openFolderPath(paths.backgrounds, mt("openBackgroundsFolder"));
 }
 
 async function openBibleFolder() {
@@ -917,6 +924,10 @@ function createMenu() {
         {
           label: mt("openSongsFolder"),
           click: openSongsFolder
+        },
+        {
+          label: mt("openBackgroundsFolder"),
+          click: openBackgroundsFolder
         },
         { type: "separator" },
         {
