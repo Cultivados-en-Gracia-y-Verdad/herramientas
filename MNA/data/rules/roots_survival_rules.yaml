@@ -1,0 +1,25 @@
+rules:
+  - id: S5-PRESERVE-CONDITIONAL-UNIT-001
+    type: preserve_as_unit
+    enabled: true
+    description: Preserve structurally bound conditional logical units.
+    connectors:
+      - εἰ
+      - ἐὰν
+    action:
+      preserve_protasis: true
+      preserve_apodosis: true
+      preserve_as_single_unit: true
+
+  - id: S5-PRESERVE-WARN-UNKNOWN-001
+    type: preserve_warn
+    enabled: true
+    description: Preserve unresolved structures when survival certainty is insufficient.
+    connectors:
+      - ὅτι
+      - ἵνα
+      - ὡς
+      - καθὼς
+    action:
+      emit_warning: true
+      preserve_temporarily: true
