@@ -1,0 +1,64 @@
+{
+  "assertion_audit_source": "audits/stage5/santiago/trunk-candidacy-assertion-audit.jsonl",
+  "assertion_audit_summary": {
+    "audit_failures": 0,
+    "audit_pass": true,
+    "rules": {
+      "RULE-001": {
+        "failures": 0,
+        "status": "PASS"
+      },
+      "RULE-003": {
+        "failures": 0,
+        "status": "PASS"
+      },
+      "RULE-004": {
+        "failures": 0,
+        "status": "PASS"
+      },
+      "RULE-005": {
+        "failures": 0,
+        "status": "PASS"
+      }
+    }
+  },
+  "assertion_summary": {
+    "assertion_counts": {
+      "ASSERT-001-OBSERVABLE_INDEPENDENCE_SIGNAL_CLUSTER_PRESENT": 221,
+      "ASSERT-002-CONDITIONAL_SURVIVAL_UNDER_DEPENDENCY_PRESSURE_PRESENT": 16,
+      "ASSERT-003-DEPENDENCY_PRESSURE_REMAINS_UNRESOLVED": 26,
+      "ASSERT-900-NO_FINAL_TRUNK_STATUS_CLAIMED": 263
+    },
+    "environment_counts": {
+      "ENV-001-STRONG_POSITIVE_INDEPENDENCE_SIGNAL_SET": 221,
+      "ENV-002-CONDITIONAL_SURVIVAL_UNDER_DEPENDENCY_PRESSURE": 16,
+      "ENV-003-DEPENDENCY_PRESSURE_PRESERVE_WARN": 26
+    },
+    "negative_pressure_count_distribution": {
+      "0": 221,
+      "2": 16,
+      "3": 26
+    },
+    "negative_pressure_counts": {
+      "NEG-001-DEPENDENCY_CANDIDATE_PRESENT": 42,
+      "NEG-002-CONNECTOR_PRESENT": 42,
+      "NEG-004-PRESERVE_WARN_SURVIVAL_STATE": 26
+    },
+    "signal_count_distribution": {
+      "2": 42,
+      "4": 221
+    },
+    "signal_counts": {
+      "SIGNAL-001-CONNECTORLESS_FINITE_PREDICATE": 221,
+      "SIGNAL-002-NO_DEPENDENCY_CANDIDATE": 221,
+      "SIGNAL-003-SURVIVED_STAGE5": 263,
+      "SIGNAL-004-NOT_SUBORDINATOR_INTRODUCED": 263
+    },
+    "total_rows": 263
+  },
+  "assertions_source": "datasets/stage5/santiago/trunk-candidacy-assertions.jsonl",
+  "book": "santiago",
+  "final_trunk_status_claimed": false,
+  "purpose": "future structural drift detection",
+  "record_type": "stage5_baseline_snapshot"
+}

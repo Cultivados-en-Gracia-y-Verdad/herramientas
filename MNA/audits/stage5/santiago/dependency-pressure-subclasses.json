@@ -1,0 +1,30 @@
+{
+  "assertion_profile_distribution": {
+    "ASSERT-003-DEPENDENCY_PRESSURE_REMAINS_UNRESOLVED + ASSERT-900-NO_FINAL_TRUNK_STATUS_CLAIMED": 26
+  },
+  "connector_distribution": {
+    "ἕως": 2,
+    "ἵνα": 4,
+    "ὅπως": 1,
+    "ὅταν": 1,
+    "ὅτι": 14,
+    "ὡς": 3,
+    "⸂εἰ": 1
+  },
+  "environment": "ENV-003-DEPENDENCY_PRESSURE_PRESERVE_WARN",
+  "final_trunk_status_claimed": false,
+  "mood_distribution": {
+    "None": 26
+  },
+  "negative_pressure_profile_distribution": {
+    "NEG-001-DEPENDENCY_CANDIDATE_PRESENT + NEG-002-CONNECTOR_PRESENT + NEG-004-PRESERVE_WARN_SURVIVAL_STATE": 26
+  },
+  "record_type": "dependency_pressure_subclass_audit",
+  "rows": 26,
+  "signal_profile_distribution": {
+    "SIGNAL-003-SURVIVED_STAGE5 + SIGNAL-004-NOT_SUBORDINATOR_INTRODUCED": 26
+  },
+  "survival_rule_distribution": {
+    "S5-PRESERVE-WARN-UNKNOWN-001": 26
+  }
+}
