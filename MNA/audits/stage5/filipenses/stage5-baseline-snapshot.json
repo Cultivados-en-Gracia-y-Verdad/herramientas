@@ -1,0 +1,61 @@
+{
+  "assertion_audit_source": "audits/stage5/filipenses/trunk-candidacy-assertion-audit.jsonl",
+  "assertion_audit_summary": {
+    "audit_failures": 0,
+    "audit_pass": true,
+    "rules": {
+      "RULE-001": {
+        "failures": 0,
+        "status": "PASS"
+      },
+      "RULE-003": {
+        "failures": 0,
+        "status": "PASS"
+      },
+      "RULE-004": {
+        "failures": 0,
+        "status": "PASS"
+      },
+      "RULE-005": {
+        "failures": 0,
+        "status": "PASS"
+      }
+    }
+  },
+  "assertion_summary": {
+    "assertion_counts": {
+      "ASSERT-001-OBSERVABLE_INDEPENDENCE_SIGNAL_CLUSTER_PRESENT": 117,
+      "ASSERT-003-DEPENDENCY_PRESSURE_REMAINS_UNRESOLVED": 44,
+      "ASSERT-900-NO_FINAL_TRUNK_STATUS_CLAIMED": 161
+    },
+    "environment_counts": {
+      "ENV-001-STRONG_POSITIVE_INDEPENDENCE_SIGNAL_SET": 117,
+      "ENV-003-DEPENDENCY_PRESSURE_PRESERVE_WARN": 44
+    },
+    "negative_pressure_count_distribution": {
+      "0": 117,
+      "3": 44
+    },
+    "negative_pressure_counts": {
+      "NEG-001-DEPENDENCY_CANDIDATE_PRESENT": 44,
+      "NEG-002-CONNECTOR_PRESENT": 44,
+      "NEG-004-PRESERVE_WARN_SURVIVAL_STATE": 44
+    },
+    "signal_count_distribution": {
+      "2": 44,
+      "4": 117
+    },
+    "signal_counts": {
+      "SIGNAL-001-CONNECTORLESS_FINITE_PREDICATE": 117,
+      "SIGNAL-002-NO_DEPENDENCY_CANDIDATE": 117,
+      "SIGNAL-003-SURVIVED_STAGE5": 161,
+      "SIGNAL-004-NOT_SUBORDINATOR_INTRODUCED": 161
+    },
+    "total_rows": 161
+  },
+  "assertions_source": "datasets/stage5/filipenses/trunk-candidacy-assertions.jsonl",
+  "book": "filipenses",
+  "final_trunk_status_claimed": false,
+  "purpose": "future structural drift detection",
+  "record_type": "stage5_baseline_snapshot"
+}

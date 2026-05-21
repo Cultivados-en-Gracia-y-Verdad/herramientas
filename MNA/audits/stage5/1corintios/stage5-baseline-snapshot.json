@@ -1,0 +1,65 @@
+{
+  "assertion_audit_source": "audits/stage5/1corintios/trunk-candidacy-assertion-audit.jsonl",
+  "assertion_audit_summary": {
+    "audit_failures": 24,
+    "audit_pass": false,
+    "rules": {
+      "RULE-001": {
+        "failures": 0,
+        "status": "PASS"
+      },
+      "RULE-003": {
+        "failures": 0,
+        "status": "PASS"
+      },
+      "RULE-004": {
+        "failures": 24,
+        "status": "FAIL"
+      },
+      "RULE-005": {
+        "failures": 0,
+        "status": "PASS"
+      }
+    }
+  },
+  "assertion_summary": {
+    "assertion_counts": {
+      "ASSERT-001-OBSERVABLE_INDEPENDENCE_SIGNAL_CLUSTER_PRESENT": 728,
+      "ASSERT-002-CONDITIONAL_SURVIVAL_UNDER_DEPENDENCY_PRESSURE_PRESENT": 102,
+      "ASSERT-003-DEPENDENCY_PRESSURE_REMAINS_UNRESOLVED": 173,
+      "ASSERT-900-NO_FINAL_TRUNK_STATUS_CLAIMED": 1027
+    },
+    "environment_counts": {
+      "ENV-001-STRONG_POSITIVE_INDEPENDENCE_SIGNAL_SET": 728,
+      "ENV-002-CONDITIONAL_SURVIVAL_UNDER_DEPENDENCY_PRESSURE": 102,
+      "ENV-003-DEPENDENCY_PRESSURE_PRESERVE_WARN": 173,
+      "ENV-999-UNCLASSIFIED_CANDIDACY_ENVIRONMENT": 24
+    },
+    "negative_pressure_count_distribution": {
+      "0": 728,
+      "2": 126,
+      "3": 173
+    },
+    "negative_pressure_counts": {
+      "NEG-001-DEPENDENCY_CANDIDATE_PRESENT": 299,
+      "NEG-002-CONNECTOR_PRESENT": 299,
+      "NEG-004-PRESERVE_WARN_SURVIVAL_STATE": 173
+    },
+    "signal_count_distribution": {
+      "2": 299,
+      "4": 728
+    },
+    "signal_counts": {
+      "SIGNAL-001-CONNECTORLESS_FINITE_PREDICATE": 728,
+      "SIGNAL-002-NO_DEPENDENCY_CANDIDATE": 728,
+      "SIGNAL-003-SURVIVED_STAGE5": 1027,
+      "SIGNAL-004-NOT_SUBORDINATOR_INTRODUCED": 1027
+    },
+    "total_rows": 1027
+  },
+  "assertions_source": "datasets/stage5/1corintios/trunk-candidacy-assertions.jsonl",
+  "book": "1corintios",
+  "final_trunk_status_claimed": false,
+  "purpose": "future structural drift detection",
+  "record_type": "stage5_baseline_snapshot"
+}

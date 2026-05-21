@@ -1,0 +1,39 @@
+{
+  "connector_mood_distribution": {
+    "εἰ": {
+      "imperative": 1,
+      "indicative": 3,
+      "subjunctive": 2
+    },
+    "εἴτε": {
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "καθὼς": {
+      "indicative": 3
+    },
+    "μέχρι": {
+      "indicative": 1
+    },
+    "ἐπειδὴ": {
+      "indicative": 1
+    },
+    "ἵνα": {
+      "subjunctive": 11
+    },
+    "ὅτε": {
+      "indicative": 1
+    },
+    "ὅτι": {
+      "indicative": 15
+    },
+    "ὡς": {
+      "indicative": 3,
+      "subjunctive": 1
+    }
+  },
+  "environment": "ENV-003-DEPENDENCY_PRESSURE_PRESERVE_WARN",
+  "final_trunk_status_claimed": false,
+  "record_type": "connector_mood_pair_audit",
+  "rows": 44
+}
