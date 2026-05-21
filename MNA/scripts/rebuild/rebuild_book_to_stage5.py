@@ -3,8 +3,14 @@ from __future__ import annotations
 import argparse, subprocess, sys
 from pathlib import Path
 
+# IMPORTANT
+# Do NOT begin with rebuild_stages_1_4_book.py.
+# From-zero rebuilds must first create the review-boundary artifacts.
+
 MECHANICAL_PHASE = [
- ["scripts/rebuild/rebuild_stages_1_4_book.py","{book}","--date","{date}"],
+ ["scripts/stage1/build_finite_verbs.py","{book}"],
+ ["scripts/stage2/build_predicate_anchors.py","{book}"],
+ ["scripts/stage3/build_anchor_skeleton.py","{book}"],
  ["scripts/stage4/build_predicate_completeness.py","{book}"],
  ["scripts/stage4/validate_predicate_completeness.py","{book}"],
  ["scripts/stage4/build_independent_clause_candidates.py","{book}"],
