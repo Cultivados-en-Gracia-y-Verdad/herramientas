@@ -37,6 +37,13 @@ ASSERTIONS_BY_ENVIRONMENT = {
     ],
 }
 
+ANCHOR_FIELDS = [
+    "anchor_mood",
+    "anchor_morphology",
+    "anchor_person",
+    "anchor_number",
+]
+
 
 def load_jsonl(path):
     with path.open("r", encoding="utf-8") as f:
@@ -85,6 +92,10 @@ def main():
                 "negative_pressure": row.get("negative_pressure", []),
                 "negative_pressure_count": row.get("negative_pressure_count"),
             }
+
+            for field in ANCHOR_FIELDS:
+                out[field] = row.get(field)
+
             f.write(json.dumps(out, ensure_ascii=False, sort_keys=True) + "\n")
             count += 1
 
