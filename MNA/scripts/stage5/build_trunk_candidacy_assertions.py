@@ -81,7 +81,9 @@ def main():
                 "assertions": assertions,
                 "assertion_count": len(assertions),
                 "signals": row.get("signals", []),
+                "signal_count": row.get("signal_count"),
                 "negative_pressure": row.get("negative_pressure", []),
+                "negative_pressure_count": row.get("negative_pressure_count"),
             }
             f.write(json.dumps(out, ensure_ascii=False, sort_keys=True) + "\n")
             count += 1
