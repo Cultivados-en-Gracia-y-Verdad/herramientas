@@ -23,7 +23,6 @@ REQUIRED_FIELDS = {
     "mood",
     "person",
     "number",
-    "explicit_connector_before",
     "explicit_subject_before",
     "subject_signal",
     "s_marker",
