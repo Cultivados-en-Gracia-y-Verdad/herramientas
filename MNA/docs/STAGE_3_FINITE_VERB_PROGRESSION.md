@@ -14,14 +14,11 @@ Stage 3 must remain tightly confined to finite-verb-centered mechanics.
 
 # Purpose
 
-Stage 3 exists to observe finite-verb progression behavior across independent clause progression.
+Stage 3 exists to observe `[S]` and `[M]` across ordered predicate anchors.
 
-Stage 3 introduces constrained structural observation through:
+Predicate anchors already function as independent clause candidates.
 
-- `[S]`
-- `[M]`
-
-using finite verbs as the controlling center.
+Finite verbs remain the controlling center.
 
 ---
 
@@ -31,7 +28,6 @@ Stage 3 may use ONLY:
 
 - Stage 1 finite morphology
 - Stage 2 predicate anchors
-- independent clause candidates
 - anchor order
 - explicit connectors
 - explicit lexical subjects
@@ -43,11 +39,7 @@ No external information allowed.
 
 # Core Confinement Boundary
 
-Stage 3 must remain confined to:
-
-```text
-finite-verb progression behavior
-```
+Stage 3 must remain confined to observable finite-verb-centered mechanics.
 
 Stage 3 may not operate on:
 
@@ -92,17 +84,11 @@ No implied subject may be expanded beyond the verbal morphology.
 
 ## Purpose
 
-`[S]` exists to mark observable subject change across finite-verb progression.
+`[S]` exists to mark observable subject change across ordered predicate anchors.
 
 Stage 3 is not merely identifying subjects.
 
-Stage 3 is specifically observing:
-
-```text
-subject continuity disruption
-```
-
-or subject replacement.
+Stage 3 is specifically observing subject continuity disruption or subject replacement.
 
 ## Allowed `[S]` Triggers
 
@@ -130,19 +116,11 @@ or subject replacement.
 
 ## Purpose
 
-`[M]` exists to mark observable finite-verb progression movement through verbal signals.
+`[M]` exists to mark observable verbal movement signals across ordered predicate anchors.
 
 `[M]` is not thematic movement.
 
 `[M]` is not rhetorical movement.
-
-`[M]` is specifically:
-
-```text
-verbally signaled progression shift
-```
-
-inside finite-verb progression.
 
 ## Allowed `[M]` Triggers
 
@@ -151,9 +129,9 @@ inside finite-verb progression.
 - tense shift
 - mood shift
 - voice shift
-- connector-triggered progression shift
-- abrupt finite-verb progression disruption
-- observable verbal progression transition
+- connector-triggered shift
+- abrupt finite-verb disruption
+- observable verbal transition
 
 ## Forbidden `[M]` Behavior
 
@@ -171,10 +149,9 @@ inside finite-verb progression.
 
 Stage 3 observes:
 
-- subject progression
-- verbal progression movement
-- independent clause progression
-- finite-verb-centered progression behavior
+- subject progression signals
+- verbal movement signals
+- ordered predicate anchors
 - observable continuity markers
 - observable interruption markers
 
@@ -184,10 +161,9 @@ Stage 3 observes:
 
 Stage 3 may output:
 
-- ordered independent clause progression
+- ordered predicate anchors
 - `[S]`
 - `[M]`
-- finite-verb progression observations
 - observable continuity markers
 - observable interruption markers
 
@@ -219,4 +195,4 @@ Stage 3 does not introduce unrestricted interpretive structure.
 
 Stage 3 must never present constrained structural observations as absolute fact.
 
-Stage 3 outputs are finite-verb-centered structural observations built on top of frozen factual layers.
+Stage 3 outputs are constrained observations built on top of frozen factual layers.
