@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-VERSION = "stage4-test-signal-pattern-renderer-v1"
+VERSION = "stage4-test-signal-pattern-renderer-v2-raw-connectors"
 
 
 def root() -> Path:
@@ -62,21 +62,55 @@ def marker(row):
     return " ".join(parts) if parts else "—"
 
 
-def connector(row):
-    return row.get("connector_form") or "—"
+def connector_form(row):
+    return (
+        row.get("connector_form")
+        or row.get("explicit_connector_before")
+        or "—"
+    )
+
+
+def connector_lemma(row):
+    return row.get("connector_lemma") or "—"
+
+
+def connector_index(row):
+    value = row.get("connector_token_index")
+    return str(value) if value not in (None, "") else "—"
+
+
+def connector_distance(row):
+    value = row.get("connector_distance_to_anchor")
+    return str(value) if value not in (None, "") else "—"
+
+
+def connector_before(row):
+    value = row.get("connector_before_anchor")
+    if value is True:
+        return "yes"
+    if value is False:
+        return "no"
+    return "—"
+
+
+def connector_display(row):
+    form = connector_form(row)
+    if form == "—":
+        return "—"
+    return f"{form} (idx={connector_index(row)}, dist={connector_distance(row)})"
 
 
 def recurrence_tag(row, previous_subjects, previous_profiles, previous_connectors):
     tags = []
     subj = row.get("subject_signal") or ""
     prof = verbal_profile(row)
-    conn = row.get("connector_form") or ""
+    conn = connector_form(row)
 
     if subj and subj in previous_subjects:
         tags.append("SUBJ-RECUR")
     if prof and prof in previous_profiles:
         tags.append("VERB-RECUR")
-    if conn and conn in previous_connectors:
+    if conn != "—" and conn in previous_connectors:
         tags.append("CONN-RECUR")
     return ", ".join(tags) if tags else "—"
 
@@ -110,8 +144,8 @@ def main() -> int:
     out.append("")
     out.append("## Compact Pattern Table")
     out.append("")
-    out.append("| # | Ref | Verb | Subject | Verb Profile | Markers | Connector | Recurrence |")
-    out.append("|---:|---|---|---|---|---|---|---|")
+    out.append("| # | Ref | Verb | Subject | Verb Profile | Markers | Connector | Conn Lemma | Conn Before | Recurrence |")
+    out.append("|---:|---|---|---|---|---|---|---|---|---|")
 
     prev_subjects = set()
     prev_profiles = set()
@@ -126,7 +160,9 @@ def main() -> int:
             compact_subject(str(r.get("subject_signal") or "")),
             verbal_profile(r),
             marker(r),
-            connector(r),
+            connector_display(r),
+            connector_lemma(r),
+            connector_before(r),
             rec,
         ]) + " |")
         if r.get("subject_signal"):
@@ -134,8 +170,9 @@ def main() -> int:
         prof = verbal_profile(r)
         if prof:
             prev_profiles.add(prof)
-        if r.get("connector_form"):
-            prev_connectors.add(r["connector_form"])
+        conn = connector_form(r)
+        if conn != "—":
+            prev_connectors.add(conn)
 
     out.append("")
     out.append("## Visual Recurrence Lines")
@@ -146,11 +183,30 @@ def main() -> int:
         subj = compact_subject(str(r.get("subject_signal") or ""))
         ref = f"{r['chapter']}:{r['verse']}"
         rec = "↩" if r.get("subject_signal") in prev_subjects else " "
-        conn = connector(r)
-        out.append(f"{ref:<6} {marker(r):<7} {conn:<8} {rec} SUBJ={subj:<18} VERB={r.get('greek_form','')}")
+        conn = connector_display(r)
+        out.append(f"{ref:<6} {marker(r):<7} CONN={conn:<22} {rec} SUBJ={subj:<18} VERB={r.get('greek_form','')}")
         if r.get("subject_signal"):
             prev_subjects.add(r["subject_signal"])
     out.append("```")
+
+    out.append("")
+    out.append("## Connector Field Check")
+    out.append("")
+    connector_rows = [r for r in rows if connector_form(r) != "—" or r.get("connector_before_anchor") is True]
+    out.append(f"Connector rows in selected range: `{len(connector_rows)}`")
+    out.append("")
+    out.append("| Ref | Verb | connector_form | connector_lemma | connector_token_index | connector_distance_to_anchor | connector_before_anchor |")
+    out.append("|---|---|---|---|---|---|---|")
+    for r in connector_rows:
+        out.append("| " + " | ".join([
+            f"{r['chapter']}:{r['verse']}",
+            str(r.get("greek_form", "")),
+            connector_form(r),
+            connector_lemma(r),
+            connector_index(r),
+            connector_distance(r),
+            connector_before(r),
+        ]) + " |")
 
     out.append("")
     out.append("## Legend")
