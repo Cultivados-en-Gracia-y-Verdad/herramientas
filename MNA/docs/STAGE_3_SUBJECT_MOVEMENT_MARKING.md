@@ -20,6 +20,12 @@ Predicate anchors already function as independent clause candidates.
 
 Finite verbs remain the controlling center.
 
+Stage 3 also exposes raw connector data when an explicit connector is observable before the predicate anchor.
+
+Connector data at Stage 3 is raw data only.
+
+No connector category, relationship, dependency, or break force may be assigned in Stage 3.
+
 ---
 
 # Inputs
@@ -49,6 +55,32 @@ Stage 3 may not operate on:
 - semantic grouping
 - discourse architecture
 - implied conceptual flow
+
+---
+
+# Raw Connector Rule
+
+Stage 3 may expose only raw connector data.
+
+Allowed connector fields:
+
+- connector_form
+- connector_lemma
+- connector_token_index
+- connector_distance_to_anchor
+- connector_before_anchor
+
+Stage 3 may not classify connectors.
+
+Stage 3 may not assign:
+
+- coordinating category
+- subordinating category
+- explanatory category
+- dependency relationship
+- A/B relationship
+- break force
+- structural relation
 
 ---
 
@@ -121,7 +153,7 @@ No implied subject may be expanded beyond the verbal morphology.
 - tense shift
 - mood shift
 - voice shift
-- connector-triggered shift
+- connector presence as raw observable signal
 - abrupt finite-verb disruption
 - observable verbal transition
 
@@ -134,6 +166,8 @@ No implied subject may be expanded beyond the verbal morphology.
 - discourse architecture
 - rhetorical flow
 - semantic grouping
+- connector category interpretation
+- connector relationship interpretation
 
 ---
 
@@ -144,6 +178,7 @@ Stage 3 observes:
 - subject change signals
 - movement signals
 - ordered predicate anchors
+- raw connector data
 - observable continuity markers
 - observable interruption markers
 
@@ -156,6 +191,7 @@ Stage 3 may output:
 - ordered predicate anchors
 - `[S]`
 - `[M]`
+- raw connector fields
 - observable continuity markers
 - observable interruption markers
 
@@ -172,6 +208,9 @@ Stage 3 may NOT output:
 - units
 - labels
 - titles
+- connector categories
+- connector relationships
+- A/B connector relations
 
 ---
 
