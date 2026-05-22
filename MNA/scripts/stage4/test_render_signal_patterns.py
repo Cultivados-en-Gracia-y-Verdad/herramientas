@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-VERSION = "stage4-test-signal-pattern-renderer-v2-raw-connectors"
+VERSION = "stage4-test-signal-pattern-renderer-v3-morphology-profile"
 
 
 def root() -> Path:
@@ -36,13 +36,7 @@ def in_range(row, start, end):
 
 
 def verbal_profile(row):
-    return "/".join([
-        str(row.get("tense") or ""),
-        str(row.get("voice") or ""),
-        str(row.get("mood") or ""),
-        str(row.get("person") or ""),
-        str(row.get("number") or ""),
-    ])
+    return str(row.get("morphology") or "—")
 
 
 def compact_subject(signal: str):
@@ -184,7 +178,7 @@ def main() -> int:
         ref = f"{r['chapter']}:{r['verse']}"
         rec = "↩" if r.get("subject_signal") in prev_subjects else " "
         conn = connector_display(r)
-        out.append(f"{ref:<6} {marker(r):<7} CONN={conn:<22} {rec} SUBJ={subj:<18} VERB={r.get('greek_form','')}")
+        out.append(f"{ref:<6} {marker(r):<7} CONN={conn:<22} {rec} SUBJ={subj:<18} VERB={r.get('greek_form','')} MORPH={verbal_profile(r)}")
         if r.get("subject_signal"):
             prev_subjects.add(r["subject_signal"])
     out.append("```")
@@ -213,7 +207,7 @@ def main() -> int:
     out.append("")
     out.append("- `↩` = subject signal has appeared earlier in the selected range.")
     out.append("- `SUBJ-RECUR` = subject signal recurrence.")
-    out.append("- `VERB-RECUR` = same tense/voice/mood/person/number profile recurs.")
+    out.append("- `VERB-RECUR` = same morphology code recurs.")
     out.append("- `CONN-RECUR` = same raw connector form recurs.")
     out.append("- `[S]` and `[M]` are raw Stage 3 signals, not break decisions.")
 
