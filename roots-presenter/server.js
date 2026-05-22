@@ -54,6 +54,7 @@ const defaultCourseLibraryDir = process.env.ROOTS_DEFAULT_COURSE_LIBRARY_DIR || 
 const styleSettingsPath = path.join(runtimeDataDir, "style-settings.json");
 const bundledStyleSettingsPath = path.join(bundledDataDir, "style-settings.json");
 const appStatePath = path.join(runtimeDataDir, "app-state.json");
+const libraryMarkerFileName = ".cgv-presenter-library.json";
 seedStarterContent();
 const defaultCourseDir = isLoadableCourseDir(getStarterRomanosCourseDir())
   ? getStarterRomanosCourseDir()
@@ -1433,6 +1434,7 @@ function copyDirectoryFiltered(sourceDir, destinationDir, options = {}) {
 
   const excludeDirs = new Set(options.excludeDirs || []);
   const excludeFiles = new Set(options.excludeFiles || []);
+  const skipExisting = !!options.skipExisting;
 
   fs.mkdirSync(destinationDir, { recursive: true });
 
@@ -1450,6 +1452,7 @@ function copyDirectoryFiltered(sourceDir, destinationDir, options = {}) {
     }
 
     if (entry.isFile()) {
+      if (skipExisting && fs.existsSync(destinationPath)) return;
       fs.mkdirSync(path.dirname(destinationPath), { recursive: true });
       fs.copyFileSync(sourcePath, destinationPath);
     }
@@ -1497,7 +1500,8 @@ function seedStarterCourse() {
 
   copyDirectoryFiltered(bundledDefaultCourseDir, starterRomanosCourseDir, {
     excludeDirs: new Set(["sessions"]),
-    excludeFiles: new Set([".DS_Store"])
+    excludeFiles: new Set([".DS_Store"]),
+    skipExisting: true
   });
 }
 
@@ -1521,7 +1525,8 @@ function seedStarterBible() {
 
   if (!sourceDir) return;
   copyDirectoryFiltered(sourceDir, targetDir, {
-    excludeFiles: new Set([".DS_Store"])
+    excludeFiles: new Set([".DS_Store"]),
+    skipExisting: true
   });
 }
 
@@ -1573,6 +1578,10 @@ function inferLibraryRootDir(state = loadAppState()) {
       : state.courseLibraryDir;
   }
 
+  if (defaultCourseLibraryDir) {
+    return defaultCourseLibraryDir;
+  }
+
   return runtimeDataDir;
 }
 
@@ -1607,6 +1616,22 @@ function ensureLibraryFolders(libraryRootDir = getLibraryRootDir()) {
     path.join(libraryRootDir, "backgrounds"),
     path.join(libraryRootDir, "bibles", getBibleVersion())
   ].forEach(folder => fs.mkdirSync(folder, { recursive: true }));
+  writeLibraryMarker(libraryRootDir);
+}
+
+function writeLibraryMarker(libraryRootDir = getLibraryRootDir()) {
+  if (!libraryRootDir) return;
+
+  const markerPath = path.join(libraryRootDir, libraryMarkerFileName);
+  if (fs.existsSync(markerPath)) return;
+
+  fs.writeFileSync(markerPath, `${JSON.stringify({
+    app: "CGV Presenter",
+    version: 1,
+    managedBy: "CGV Presenter",
+    note: "User library folder. App updates must not delete or replace this folder.",
+    createdAt: new Date().toISOString()
+  }, null, 2)}\n`);
 }
 
 function setCourseLibraryDir(libraryRootDir) {

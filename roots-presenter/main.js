@@ -1,9 +1,12 @@
 const fs = require("fs/promises");
 const http = require("http");
+const https = require("https");
 const path = require("path");
 const { app, BrowserWindow, screen, Menu, dialog, shell } = require("electron");
 
 const APP_URL = "http://localhost:3000";
+const RELEASES_URL = "https://github.com/Cultivados-en-Gracia-y-Verdad/herramientas/releases";
+const LATEST_RELEASE_API_URL = "https://api.github.com/repos/Cultivados-en-Gracia-y-Verdad/herramientas/releases/latest";
 const DEFAULT_COURSE_LIBRARY_DIR = path.join(app.getPath("documents"), "CGV Presenter");
 const LOGO_PATH = path.join(__dirname, "assets", "cgv-app-icon.png");
 const APP_STATE_PATH = path.join(app.getPath("userData"), "app-state.json");
@@ -101,6 +104,18 @@ const MAIN_TRANSLATIONS = {
     library: "Biblioteca",
     openCourseLibraryFolder: "Abrir carpeta de cursos",
     bibleStatusMenu: "Estado de Biblia...",
+    checkForUpdates: "Buscar actualizaciones",
+    checkingForUpdates: "Buscando actualizaciones...",
+    updateAvailableTitle: "Actualización disponible",
+    updateAvailableMessage: "Hay una nueva versión de CGV Presenter.",
+    updateAvailableDetail: "Versión actual: {current}\nÚltima versión: {latest}",
+    noUpdateTitle: "CGV Presenter está actualizado",
+    noUpdateMessage: "Ya tienes la versión más reciente.",
+    noUpdateDetail: "Versión actual: {current}",
+    updateCheckFailedTitle: "No se pudo buscar actualizaciones",
+    updateCheckFailedMessage: "No se pudo consultar GitHub Releases.",
+    openReleases: "Abrir releases",
+    later: "Después",
     quiz: "Quiz",
     settings: "Configuración",
     view: "Vista",
@@ -186,6 +201,18 @@ MAIN_TRANSLATIONS.en = {
   library: "Library",
   openCourseLibraryFolder: "Open Courses Folder",
   bibleStatusMenu: "Bible Status...",
+  checkForUpdates: "Check for Updates",
+  checkingForUpdates: "Checking for updates...",
+  updateAvailableTitle: "Update Available",
+  updateAvailableMessage: "A new version of CGV Presenter is available.",
+  updateAvailableDetail: "Current version: {current}\nLatest version: {latest}",
+  noUpdateTitle: "CGV Presenter is Up to Date",
+  noUpdateMessage: "You already have the latest version.",
+  noUpdateDetail: "Current version: {current}",
+  updateCheckFailedTitle: "Could Not Check for Updates",
+  updateCheckFailedMessage: "Could not check GitHub Releases.",
+  openReleases: "Open Releases",
+  later: "Later",
   quiz: "Quiz",
   settings: "Settings",
   view: "View",
@@ -200,6 +227,10 @@ MAIN_TRANSLATIONS.en = {
 
 function mt(key) {
   return MAIN_TRANSLATIONS[appLanguage]?.[key] || MAIN_TRANSLATIONS.es[key] || key;
+}
+
+function mti(key, params = {}) {
+  return mt(key).replace(/\{(\w+)\}/g, (_match, name) => params[name] ?? "");
 }
 
 async function refreshAppLanguage() {
@@ -252,6 +283,114 @@ function fetchCsvExport() {
 
 async function getLocalJson(pathname) {
   return JSON.parse(await getLocal(pathname));
+}
+
+function getHttpsJson(url) {
+  return new Promise((resolve, reject) => {
+    const request = https.get(url, {
+      headers: {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": `CGV-Presenter/${app.getVersion()}`
+      }
+    }, response => {
+      if (response.statusCode < 200 || response.statusCode >= 300) {
+        response.resume();
+        reject(new Error(`Request failed with status ${response.statusCode}`));
+        return;
+      }
+
+      const chunks = [];
+      response.on("data", chunk => chunks.push(chunk));
+      response.on("end", () => {
+        try {
+          resolve(JSON.parse(Buffer.concat(chunks).toString("utf8")));
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+
+    request.on("error", reject);
+    request.setTimeout(8000, () => {
+      request.destroy(new Error("Request timed out."));
+    });
+  });
+}
+
+function normalizeVersion(value) {
+  const versionText = String(value || "")
+    .trim()
+    .match(/\d+(?:\.\d+){0,2}/)?.[0] || "";
+
+  return versionText
+    .split(/[+-]/)[0]
+    .split(".")
+    .map(part => Number.parseInt(part, 10))
+    .map(part => Number.isFinite(part) ? part : 0);
+}
+
+function compareVersions(a, b) {
+  const left = normalizeVersion(a);
+  const right = normalizeVersion(b);
+  const length = Math.max(left.length, right.length, 3);
+
+  for (let index = 0; index < length; index += 1) {
+    const diff = (left[index] || 0) - (right[index] || 0);
+    if (diff !== 0) return diff > 0 ? 1 : -1;
+  }
+
+  return 0;
+}
+
+async function checkForUpdates() {
+  const parentWindow = BrowserWindow.getFocusedWindow() || presenterWindow;
+  const currentVersion = app.getVersion();
+
+  try {
+    const release = await getHttpsJson(LATEST_RELEASE_API_URL);
+    const latestVersion = String(release.tag_name || release.name || "").replace(/^v/i, "") || currentVersion;
+    const releaseUrl = release.html_url || RELEASES_URL;
+    const hasUpdate = compareVersions(latestVersion, currentVersion) > 0;
+
+    if (hasUpdate) {
+      const result = await dialog.showMessageBox(parentWindow, {
+        type: "info",
+        title: mt("updateAvailableTitle"),
+        message: mt("updateAvailableMessage"),
+        detail: mti("updateAvailableDetail", { current: currentVersion, latest: latestVersion }),
+        buttons: [mt("openReleases"), mt("later")],
+        defaultId: 0,
+        cancelId: 1
+      });
+
+      if (result.response === 0) {
+        await shell.openExternal(releaseUrl);
+      }
+      return;
+    }
+
+    await dialog.showMessageBox(parentWindow, {
+      type: "info",
+      title: mt("noUpdateTitle"),
+      message: mt("noUpdateMessage"),
+      detail: mti("noUpdateDetail", { current: currentVersion }),
+      buttons: ["OK"]
+    });
+  } catch (error) {
+    const result = await dialog.showMessageBox(parentWindow, {
+      type: "warning",
+      title: mt("updateCheckFailedTitle"),
+      message: mt("updateCheckFailedMessage"),
+      detail: error?.message || "",
+      buttons: [mt("openReleases"), mt("later")],
+      defaultId: 0,
+      cancelId: 1
+    });
+
+    if (result.response === 0) {
+      await shell.openExternal(RELEASES_URL);
+    }
+  }
 }
 
 function postLocal(pathname) {
@@ -983,6 +1122,11 @@ function createMenu() {
           label: `${mt("style")}...`,
           accelerator: "CmdOrCtrl+,",
           click: openStyleSettings
+        },
+        { type: "separator" },
+        {
+          label: `${mt("checkForUpdates")}...`,
+          click: checkForUpdates
         }
       ]
     },
