@@ -229,12 +229,37 @@ function returnToTeaching() {
   closeSongDrawer();
 }
 
+function getDirectorSizing(isSongMode) {
+  const width = window.innerWidth || document.documentElement.clientWidth || 0;
+  const height = window.innerHeight || document.documentElement.clientHeight || 0;
+  const hasFinePointer = window.matchMedia?.("(pointer: fine)")?.matches;
+  const isDesktop = hasFinePointer && width >= 900 && height >= 560;
+  const isCompact = width <= 720 || height <= 520;
+
+  if (isDesktop) {
+    return isSongMode
+      ? { max: 52, min: 26 }
+      : { max: 38, min: 22 };
+  }
+
+  if (isCompact) {
+    return isSongMode
+      ? { max: 64, min: 34 }
+      : { max: 50, min: 32 };
+  }
+
+  return isSongMode
+    ? { max: 68, min: 36 }
+    : { max: 52, min: 32 };
+}
+
 function fitDirectorText() {
   const content = byId("directorContent");
   if (!content) return;
 
-  let size = content.classList.contains("song-mode") ? 72 : 58;
-  const minSize = content.classList.contains("song-mode") ? 38 : 36;
+  const sizing = getDirectorSizing(content.classList.contains("song-mode"));
+  let size = sizing.max;
+  const minSize = sizing.min;
   content.style.setProperty("--director-fit-size", `${size}px`);
 
   while (

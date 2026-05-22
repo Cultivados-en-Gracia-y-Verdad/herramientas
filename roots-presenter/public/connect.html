@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title data-i18n="connectionQr">Connection QR</title>
+  <link rel="icon" href="/assets/cgv-app-icon.png">
+  <link rel="stylesheet" href="connect.css">
+</head>
+<body>
+  <main class="connect-view">
+    <header class="connect-header">
+      <img src="/assets/cgv-app-icon.png" alt="">
+      <div>
+        <strong>CGV Presenter</strong>
+        <span data-i18n="connectionQr">Connection QR</span>
+      </div>
+    </header>
+
+    <nav class="view-tabs" aria-label="Connection view">
+      <button type="button" class="active" data-view="controller" data-i18n="controllerView">Controller View</button>
+      <button type="button" data-view="audience" data-i18n="audience">Audience</button>
+      <button type="button" data-view="director" data-i18n="director">Director</button>
+      <button type="button" data-view="stage" data-i18n="stageView">Stage View</button>
+    </nav>
+
+    <section class="qr-panel">
+      <div class="qr-frame">
+        <img id="qrImage" src="/connection-qr.svg?path=/controller.html" alt="Connection QR" data-i18n-alt="connectionQrAlt">
+      </div>
+      <h1 id="viewTitle" data-i18n="controllerView">Controller View</h1>
+      <p id="viewHelp" data-i18n="scanControllerQr">Scan to control songs and slides from another device on the same Wi-Fi.</p>
+      <button id="copyButton" type="button" data-i18n="copyLink">Copy Link</button>
+    </section>
+
+    <label class="url-field">
+      <span data-i18n="directLink">Direct Link</span>
+      <input id="urlInput" type="text" readonly>
+    </label>
+
+    <p id="statusText" class="status-text" data-i18n="sameWifiHelp">Devices must be connected to the same Wi-Fi network.</p>
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="connect.js"></script>
+</body>
+</html>

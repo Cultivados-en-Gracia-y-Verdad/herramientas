@@ -19,6 +19,7 @@ let projectorWindow;
 let controllerWindow;
 let stageWindow;
 let directorWindow;
+let connectionWindow;
 let settingsWindow;
 let courseDownloadWindow;
 let presentationMode = "extended";
@@ -88,6 +89,7 @@ const MAIN_TRANSLATIONS = {
     style: "Estilo",
     downloadCourses: "Descargar cursos",
     controller: "Control",
+    connectionQr: "Código QR de conexión",
     stageView: "Vista de escenario",
     director: "Director",
     file: "Archivo",
@@ -103,6 +105,7 @@ const MAIN_TRANSLATIONS = {
     settings: "Configuración",
     view: "Vista",
     openController: "Abrir control",
+    showConnectionQr: "Mostrar QR de conexión",
     openStageView: "Abrir vista de escenario",
     openDirector: "Abrir director",
     showHeaders: "Mostrar encabezados H1/H2",
@@ -171,6 +174,7 @@ MAIN_TRANSLATIONS.en = {
   style: "Style",
   downloadCourses: "Download Courses",
   controller: "Controller",
+  connectionQr: "Connection QR",
   stageView: "Stage View",
   director: "Director",
   file: "File",
@@ -186,6 +190,7 @@ MAIN_TRANSLATIONS.en = {
   settings: "Settings",
   view: "View",
   openController: "Open Controller",
+  showConnectionQr: "Show Connection QR",
   openStageView: "Open Stage View",
   openDirector: "Open Director",
   showHeaders: "Show H1/H2 Headers",
@@ -784,6 +789,29 @@ function openControllerWindow() {
   });
 }
 
+function openConnectionWindow() {
+  if (connectionWindow && !connectionWindow.isDestroyed()) {
+    connectionWindow.focus();
+    return;
+  }
+
+  connectionWindow = new BrowserWindow({
+    width: 460,
+    height: 640,
+    minWidth: 400,
+    minHeight: 560,
+    title: mt("connectionQr"),
+    icon: LOGO_PATH,
+    backgroundColor: "#f8fafc",
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  connectionWindow.loadURL(`${APP_URL}/connect.html`);
+  connectionWindow.on("closed", () => {
+    connectionWindow = null;
+  });
+}
+
 function openStageWindow() {
   if (stageWindow && !stageWindow.isDestroyed()) {
     stageWindow.focus();
@@ -967,6 +995,11 @@ function createMenu() {
           click: openControllerWindow
         },
         {
+          label: mt("showConnectionQr"),
+          accelerator: "CmdOrCtrl+Shift+Q",
+          click: openConnectionWindow
+        },
+        {
           label: mt("openStageView"),
           accelerator: "CmdOrCtrl+Shift+S",
           click: openStageWindow
@@ -1070,6 +1103,7 @@ function clearWindowReferences() {
   if (controllerWindow?.isDestroyed()) controllerWindow = null;
   if (stageWindow?.isDestroyed()) stageWindow = null;
   if (directorWindow?.isDestroyed()) directorWindow = null;
+  if (connectionWindow?.isDestroyed()) connectionWindow = null;
 }
 
 function switchPresentationMode(mode) {

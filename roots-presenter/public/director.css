@@ -378,6 +378,54 @@ button.ghost {
   text-align: center;
 }
 
+@media (min-width: 900px) and (min-height: 560px) and (pointer: fine) {
+  .director-header,
+  .director-controls {
+    padding: 0.7rem 1.15rem;
+  }
+
+  .director-header strong {
+    font-size: 1.18rem;
+  }
+
+  .director-header span {
+    font-size: 0.86rem;
+  }
+
+  .director-content {
+    gap: 0.28em;
+    padding: 1.2rem 1.6rem;
+    line-height: 1.28;
+  }
+
+  .director-content.song-mode {
+    line-height: 1.16;
+  }
+
+  button {
+    min-width: 8rem;
+    min-height: 2.8rem;
+    border-radius: 9px;
+    font-size: 1rem;
+    padding: 0.55rem 0.9rem;
+  }
+
+  button.ghost {
+    min-height: 2.25rem;
+    font-size: 0.82rem;
+  }
+
+  .director-position {
+    min-width: 4.7rem;
+    padding: 0.52rem 0.75rem;
+    font-size: 1.05rem;
+  }
+
+  .song-drawer {
+    width: min(420px, 100vw);
+  }
+}
+
 @media (max-width: 720px) {
   .director-header,
   .director-controls {

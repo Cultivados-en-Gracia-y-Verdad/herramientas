@@ -100,7 +100,34 @@ app.post("/style-settings", (req, res) => {
   res.json(settings);
 });
 app.get("/join-info", (req, res) => {
-  res.json(getJoinInfo());
+  res.json(getJoinInfo(req.query.path));
+});
+app.get("/connection-info", (req, res) => {
+  res.json({
+    controller: getJoinInfo("/controller.html"),
+    audience: getJoinInfo("/audience.html"),
+    director: getJoinInfo("/director.html"),
+    stage: getJoinInfo("/stage.html")
+  });
+});
+app.get("/connection-qr.svg", async (req, res) => {
+  try {
+    const svg = await QRCode.toString(getJoinInfo(req.query.path).url, {
+      type: "svg",
+      margin: 1,
+      width: 360,
+      color: {
+        dark: "#111827",
+        light: "#ffffff"
+      }
+    });
+
+    res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
+    res.setHeader("Cache-Control", "no-store");
+    res.send(svg);
+  } catch (error) {
+    res.status(500).send("Could not generate QR code.");
+  }
 });
 app.get("/quiz-join.svg", async (req, res) => {
   try {
@@ -215,14 +242,27 @@ function getLocalIpAddress() {
   return "localhost";
 }
 
-function getJoinInfo() {
+function normalizeJoinPath(value) {
+  const path = String(value || "/audience.html").trim();
+  const allowedPaths = new Set([
+    "/audience.html",
+    "/controller.html",
+    "/director.html",
+    "/stage.html"
+  ]);
+
+  return allowedPaths.has(path) ? path : "/audience.html";
+}
+
+function getJoinInfo(path = "/audience.html") {
   const host = getLocalIpAddress();
+  const joinPath = normalizeJoinPath(path);
 
   return {
     host,
     port: serverPort,
-    path: "/audience.html",
-    url: `http://${host}:${serverPort}/audience.html`
+    path: joinPath,
+    url: `http://${host}:${serverPort}${joinPath}`
   };
 }
 

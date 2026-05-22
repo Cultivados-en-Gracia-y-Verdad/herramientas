@@ -1,6 +1,16 @@
 const CGV_TRANSLATIONS = {
   es: {
     appSettings: "Configuración",
+    connectionQr: "Código QR de conexión",
+    connectionQrAlt: "Código QR de conexión",
+    scanControllerQr: "Escanea para controlar canciones y diapositivas desde otro dispositivo en la misma red Wi-Fi.",
+    scanAudienceQr: "Escanea para abrir la vista de audiencia y contestar quizzes.",
+    scanDirectorQr: "Escanea para abrir el director y controlar la presentación.",
+    scanStageQr: "Escanea para abrir la vista de escenario.",
+    copyLink: "Copiar enlace",
+    directLink: "Enlace directo",
+    sameWifiHelp: "Los dispositivos deben estar conectados a la misma red Wi-Fi.",
+    linkCopied: "Enlace copiado.",
     saveSettings: "Guardar configuración",
     language: "Idioma",
     languageHelp: "Escoge el idioma de la aplicación para menús, controles y pantallas de enseñanza.",
@@ -205,6 +215,16 @@ const CGV_TRANSLATIONS = {
   },
   en: {
     appSettings: "Settings",
+    connectionQr: "Connection QR",
+    connectionQrAlt: "Connection QR code",
+    scanControllerQr: "Scan to control songs and slides from another device on the same Wi-Fi.",
+    scanAudienceQr: "Scan to open the audience view and answer quizzes.",
+    scanDirectorQr: "Scan to open the director and control the presentation.",
+    scanStageQr: "Scan to open the stage view.",
+    copyLink: "Copy Link",
+    directLink: "Direct Link",
+    sameWifiHelp: "Devices must be connected to the same Wi-Fi network.",
+    linkCopied: "Link copied.",
     saveSettings: "Save Settings",
     language: "Language",
     languageHelp: "Choose the application language for menus, controls, and teaching screens.",
@@ -446,6 +466,10 @@ function translatePage(root = document) {
 
   root.querySelectorAll("[data-i18n-aria-label]").forEach(element => {
     element.setAttribute("aria-label", t(element.dataset.i18nAriaLabel));
+  });
+
+  root.querySelectorAll("[data-i18n-alt]").forEach(element => {
+    element.setAttribute("alt", t(element.dataset.i18nAlt));
   });
 
   const titleKey = document.querySelector("title")?.dataset.i18n;

@@ -156,7 +156,7 @@ textarea {
 .projector-slide h3 {
   margin-left: var(--style-h3-indent, 0);
   color: var(--style-h3-color, #075985);
-  font-size: var(--style-h3-size, 1em);
+  font-size: calc(var(--style-h3-size, 1em) * 1.02);
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -165,7 +165,7 @@ textarea {
 .projector-slide h3 + p {
   margin-left: var(--style-scripture-indent, 0);
   color: var(--style-scripture-color, #f5f2e8);
-  font-size: var(--style-scripture-size, 0.98em);
+  font-size: calc(var(--style-scripture-size, 0.98em) * 1.02);
   font-style: italic;
   font-weight: 400;
   line-height: var(--style-scripture-line-height, 1.38);
@@ -186,7 +186,7 @@ textarea {
 .projector-slide h4 {
   margin-left: var(--style-h4-indent, 1em);
   color: var(--style-h4-color, #1f2937);
-  font-size: var(--style-h4-size, 0.98em);
+  font-size: calc(var(--style-h4-size, 0.98em) * 1.03);
   font-style: italic;
   font-weight: 400;
 }
@@ -205,14 +205,14 @@ textarea {
 .projector-slide h5 {
   margin-left: var(--style-h5-indent, 2em);
   color: var(--style-h5-color, inherit);
-  font-size: var(--style-h5-size, 0.9em);
+  font-size: calc(var(--style-h5-size, 0.9em) * 1.05);
   font-weight: 400;
 }
 
 .slide h6,
 .projector-slide h6 {
   margin-left: var(--style-h6-indent, 3.8em);
-  font-size: var(--style-h6-size, 0.94em);
+  font-size: calc(var(--style-h6-size, 0.94em) * 1.07);
   font-weight: 400;
   color: var(--style-h6-color, #374151);
 }
@@ -246,7 +246,7 @@ textarea {
 .slide li,
 .projector-slide li {
   margin: 0.24em 0;
-  font-size: var(--style-bullet-size, 0.9em);
+  font-size: calc(var(--style-bullet-size, 0.9em) * 1.06);
   line-height: 1.4;
   font-weight: 400;
   word-spacing: 0.035em;
@@ -946,7 +946,7 @@ button {
 
 .projector-slide h3 {
   color: var(--style-h3-color, #38bdf8);
-  font-size: var(--style-h3-size, 1em);
+  font-size: calc(var(--style-h3-size, 1em) * 1.02);
 }
 
 .projector-slide h3 + p {
@@ -955,17 +955,17 @@ button {
 
 .projector-slide h4 {
   color: var(--style-h4-color, #f5f2e8);
-  font-size: var(--style-h4-size, 0.98em);
+  font-size: calc(var(--style-h4-size, 0.98em) * 1.03);
 }
 
 .projector-slide h5 {
   color: var(--style-h5-color, #ffffff);
-  font-size: var(--style-h5-size, 0.9em);
+  font-size: calc(var(--style-h5-size, 0.9em) * 1.05);
 }
 
 .projector-slide h6 {
   color: var(--style-h6-color, #d8d8d8);
-  font-size: var(--style-h6-size, 0.94em);
+  font-size: calc(var(--style-h6-size, 0.94em) * 1.07);
 }
 
 .projector-slide li {
