@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-VERSION = "stage3-subject-movement-marking-builder-v1"
+VERSION = "stage3-subject-movement-marking-builder-v2-raw-connectors"
 
 
 def root() -> Path:
@@ -52,7 +52,7 @@ def m_marker(current: dict[str, Any], previous: dict[str, Any] | None) -> str:
     for field in ["tense", "voice", "mood"]:
         if str(current.get(field) or "") != str(previous.get(field) or ""):
             changes.append(field)
-    if str(current.get("explicit_connector_before") or ""):
+    if current.get("connector_before_anchor"):
         changes.append("connector_before")
     return "[M]" if changes else ""
 
@@ -98,9 +98,13 @@ def main() -> int:
             "mood": anchor.get("mood", ""),
             "person": anchor.get("person", ""),
             "number": anchor.get("number", ""),
-            "explicit_connector_before": anchor.get("explicit_connector_before", ""),
             "explicit_subject_before": anchor.get("explicit_subject_before", ""),
             "subject_signal": subject_signal(anchor),
+            "connector_form": anchor.get("explicit_connector_before", ""),
+            "connector_lemma": anchor.get("explicit_connector_lemma_before", ""),
+            "connector_token_index": anchor.get("explicit_connector_token_index_before", ""),
+            "connector_distance_to_anchor": anchor.get("explicit_connector_distance_before", ""),
+            "connector_before_anchor": bool(anchor.get("explicit_connector_before", "")),
             "s_marker": s_marker(anchor, previous),
             "m_marker": m_marker(anchor, previous),
         })
