@@ -1,0 +1,2989 @@
+{
+  "audit_pass": true,
+  "audit_version": "stage5-candidate-boundary-audit-v1",
+  "book": "1corintios",
+  "boundary_summary": {
+    "end_reason_classes": {
+      "connector_environment_drops": 55,
+      "end": 1,
+      "movement_change": 243,
+      "new_connector_environment": 140,
+      "subject_change": 243
+    },
+    "start_reason_classes": {
+      "beginning": 1,
+      "connector_environment_drops": 55,
+      "movement_change": 243,
+      "new_connector_environment": 140,
+      "subject_change": 243
+    },
+    "top_raw_end_reasons": {
+      "connector environment drops": 55,
+      "movement changes aorist/active/indicative → present/active/indicative": 5,
+      "movement changes aorist/active/subjunctive → present/active/indicative": 7,
+      "movement changes aorist/passive/indicative → present/active/indicative": 7,
+      "movement changes present/active/indicative → aorist/active/indicative": 7,
+      "movement changes present/active/indicative → aorist/active/subjunctive": 9,
+      "movement changes present/active/indicative → present/active/D": 11,
+      "movement changes present/active/indicative → present/middle/indicative": 5,
+      "new connector environment: γάρ": 6,
+      "new connector environment: γὰρ": 7,
+      "new connector environment: δὲ": 18,
+      "new connector environment: καὶ": 8,
+      "new connector environment: ἵνα": 9,
+      "subject field changes 1P → 3S": 8,
+      "subject field changes 1S → 2P": 17,
+      "subject field changes 1S → 3S": 21,
+      "subject field changes 2P → 1S": 12,
+      "subject field changes 2P → 3S": 25,
+      "subject field changes 3P → 2P": 8,
+      "subject field changes 3P → 3S": 18,
+      "subject field changes 3S → 1P": 8,
+      "subject field changes 3S → 1S": 29,
+      "subject field changes 3S → 2P": 33,
+      "subject field changes 3S → 2S": 7,
+      "subject field changes 3S → 3P": 20
+    },
+    "top_raw_start_reasons": {
+      "connector environment drops": 55,
+      "movement changes aorist/active/indicative → present/active/indicative": 5,
+      "movement changes aorist/active/subjunctive → present/active/indicative": 7,
+      "movement changes aorist/passive/indicative → present/active/indicative": 7,
+      "movement changes present/active/indicative → aorist/active/indicative": 7,
+      "movement changes present/active/indicative → aorist/active/subjunctive": 9,
+      "movement changes present/active/indicative → present/active/D": 11,
+      "movement changes present/active/indicative → present/middle/indicative": 5,
+      "new connector environment: γάρ": 6,
+      "new connector environment: γὰρ": 7,
+      "new connector environment: δὲ": 18,
+      "new connector environment: καὶ": 8,
+      "new connector environment: ἵνα": 9,
+      "subject field changes 1P → 3S": 8,
+      "subject field changes 1S → 2P": 17,
+      "subject field changes 1S → 3S": 21,
+      "subject field changes 2P → 1S": 12,
+      "subject field changes 2P → 3S": 25,
+      "subject field changes 3P → 2P": 8,
+      "subject field changes 3P → 3S": 18,
+      "subject field changes 3S → 1P": 8,
+      "subject field changes 3S → 1S": 29,
+      "subject field changes 3S → 2P": 33,
+      "subject field changes 3S → 2S": 7,
+      "subject field changes 3S → 3P": 20
+    }
+  },
+  "chapter_summary": {
+    "1": {
+      "anchors": 50,
+      "avg_group_size": 3.85,
+      "groups": 13,
+      "medium_high_or_higher": 2,
+      "small_groups_1_to_2": 4
+    },
+    "10": {
+      "anchors": 79,
+      "avg_group_size": 4.39,
+      "groups": 18,
+      "medium_high_or_higher": 4,
+      "small_groups_1_to_2": 6
+    },
+    "11": {
+      "anchors": 79,
+      "avg_group_size": 5.64,
+      "groups": 14,
+      "medium_high_or_higher": 4,
+      "small_groups_1_to_2": 3
+    },
+    "12": {
+      "anchors": 65,
+      "avg_group_size": 5.42,
+      "groups": 12,
+      "medium_high_or_higher": 4,
+      "small_groups_1_to_2": 2
+    },
+    "13": {
+      "anchors": 37,
+      "avg_group_size": 5.29,
+      "groups": 7,
+      "medium_high_or_higher": 0,
+      "small_groups_1_to_2": 2
+    },
+    "14": {
+      "anchors": 109,
+      "avg_group_size": 3.76,
+      "groups": 29,
+      "medium_high_or_higher": 4,
+      "small_groups_1_to_2": 12
+    },
+    "15": {
+      "anchors": 118,
+      "avg_group_size": 3.81,
+      "groups": 31,
+      "medium_high_or_higher": 6,
+      "small_groups_1_to_2": 14
+    },
+    "16": {
+      "anchors": 58,
+      "avg_group_size": 2.76,
+      "groups": 21,
+      "medium_high_or_higher": 1,
+      "small_groups_1_to_2": 13
+    },
+    "2": {
+      "anchors": 33,
+      "avg_group_size": 4.12,
+      "groups": 8,
+      "medium_high_or_higher": 2,
+      "small_groups_1_to_2": 2
+    },
+    "3": {
+      "anchors": 59,
+      "avg_group_size": 7.38,
+      "groups": 8,
+      "medium_high_or_higher": 4,
+      "small_groups_1_to_2": 0
+    },
+    "4": {
+      "anchors": 53,
+      "avg_group_size": 3.12,
+      "groups": 17,
+      "medium_high_or_higher": 2,
+      "small_groups_1_to_2": 12
+    },
+    "5": {
+      "anchors": 20,
+      "avg_group_size": 2.22,
+      "groups": 9,
+      "medium_high_or_higher": 0,
+      "small_groups_1_to_2": 8
+    },
+    "6": {
+      "anchors": 53,
+      "avg_group_size": 4.08,
+      "groups": 13,
+      "medium_high_or_higher": 3,
+      "small_groups_1_to_2": 5
+    },
+    "7": {
+      "anchors": 121,
+      "avg_group_size": 5.26,
+      "groups": 23,
+      "medium_high_or_higher": 7,
+      "small_groups_1_to_2": 8
+    },
+    "8": {
+      "anchors": 23,
+      "avg_group_size": 3.83,
+      "groups": 6,
+      "medium_high_or_higher": 2,
+      "small_groups_1_to_2": 2
+    },
+    "9": {
+      "anchors": 70,
+      "avg_group_size": 4.67,
+      "groups": 15,
+      "medium_high_or_higher": 2,
+      "small_groups_1_to_2": 4
+    }
+  },
+  "confidence_summary": {
+    "low": 127,
+    "medium": 70,
+    "medium-high": 47
+  },
+  "evidence_summary": {
+    "evidence_classes": {
+      "connector_recurrence": 116,
+      "dominant_subject_field": 180,
+      "lexical_recurrence": 77,
+      "movement_restoration_pattern": 40,
+      "recurring_movement_environment": 134,
+      "subject_restoration_pattern": 11
+    },
+    "top_raw_evidence": {
+      "connector recurrence γὰρ: 2x": 8,
+      "connector recurrence γὰρ: 3x": 3,
+      "connector recurrence δὲ: 2x": 19,
+      "connector recurrence δὲ: 3x": 7,
+      "connector recurrence εἰ: 2x": 4,
+      "connector recurrence εἴτε: 2x": 5,
+      "connector recurrence καὶ: 2x": 17,
+      "connector recurrence καὶ: 3x": 5,
+      "connector recurrence καὶ: 4x": 4,
+      "connector recurrence ἵνα: 2x": 4,
+      "dominant subject field 1P: 2/2 anchors": 5,
+      "dominant subject field 1S: 2/2 anchors": 5,
+      "dominant subject field 1S: 2/3 anchors": 4,
+      "dominant subject field 1S: 2/4 anchors": 4,
+      "dominant subject field 1S: 3/4 anchors": 5,
+      "dominant subject field 1S: 4/4 anchors": 4,
+      "dominant subject field 2P: 2/2 anchors": 6,
+      "dominant subject field 2P: 2/3 anchors": 3,
+      "dominant subject field 2P: 3/3 anchors": 4,
+      "dominant subject field 3P: 2/2 anchors": 3,
+      "dominant subject field 3P: 2/3 anchors": 9,
+      "dominant subject field 3P: 3/3 anchors": 4,
+      "dominant subject field 3P: 3/4 anchors": 4,
+      "dominant subject field 3S: 2/2 anchors": 17,
+      "dominant subject field 3S: 2/3 anchors": 6,
+      "dominant subject field 3S: 3/3 anchors": 4,
+      "dominant subject field 3S: 3/4 anchors": 7,
+      "dominant subject field 3S: 5/5 anchors": 5,
+      "dominant subject field 3S: 7/7 anchors": 4,
+      "lexical recurrence ἐστε: 2x": 3,
+      "lexical recurrence ἐστιν: 2x": 9,
+      "movement restoration pattern present/active/indicative → present/middle/indicative → present/active/indicative": 4,
+      "recurring movement environment aorist/active/indicative: 2/3 anchors": 4,
+      "recurring movement environment present/active/indicative: 2/2 anchors": 7,
+      "recurring movement environment present/active/indicative: 2/3 anchors": 8,
+      "recurring movement environment present/active/indicative: 2/4 anchors": 10,
+      "recurring movement environment present/active/indicative: 3/4 anchors": 8,
+      "recurring movement environment present/active/indicative: 3/5 anchors": 3,
+      "recurring movement environment present/active/indicative: 4/5 anchors": 4,
+      "subject restoration pattern 3S → 1S → 3S": 3
+    }
+  },
+  "groups_audited": 244,
+  "rows_read": "unknown",
+  "size_summary": {
+    "avg": 4.21,
+    "count": 244,
+    "large_groups_10_plus": 18,
+    "max": 19,
+    "min": 1,
+    "single_anchor_groups": 1,
+    "small_groups_1_to_2": 97,
+    "small_groups_1_to_3": 139,
+    "two_anchor_groups": 96
+  },
+  "source": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-test/1corintios/candidate-groups.jsonl",
+  "stage5_metadata": {
+    "book": "1corintios",
+    "builder_version": "stage5-candidate-grouping-prototype-v1",
+    "groups_written": 244,
+    "input": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage3/1corintios/subject-movement-markers.jsonl",
+    "min_size": 2,
+    "record_type": "metadata",
+    "threshold": 4
+  },
+  "suspect_groups": [
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → present/active/subjunctive",
+        "new connector environment: δὲ ἵνα"
+      ],
+      "group_id": "1corintios-G002",
+      "range": "1:9-1:10",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes future/active/indicative → aorist/passive/indicative"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/3 anchors",
+        "recurring movement environment aorist/passive/indicative: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes aorist/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G005",
+      "range": "1:13-1:13",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes present/active/indicative → X/passive/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes aorist/active/indicative → aorist/active/subjunctive",
+        "new connector environment: ἵνα"
+      ],
+      "group_id": "1corintios-G006",
+      "range": "1:14-1:14",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes aorist/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes aorist/passive/indicative → aorist/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G007",
+      "range": "1:15-1:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes aorist/active/indicative → aorist/active/subjunctive",
+        "new connector environment: ἵνα"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1S: 2/2 anchors",
+        "recurring movement environment future/active/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes future/active/indicative → aorist/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G009",
+      "range": "1:19-1:19",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes X/passive/indicative → future/active/indicative",
+        "new connector environment: γάρ·"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 3/3 anchors",
+        "recurring movement environment aorist/active/indicative: 3/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes aorist/active/indicative → present/active/indicative",
+        "new connector environment: καὶ ἐπειδὴ"
+      ],
+      "group_id": "1corintios-G010",
+      "range": "1:20-1:21",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes future/active/indicative → aorist/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 1P: 2/3 anchors",
+        "recurring movement environment present/active/indicative: 2/3 anchors",
+        "lexical recurrence λαλοῦμεν: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes present/active/indicative → aorist/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G015",
+      "range": "2:5-2:7",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes aorist/middle/indicative → present/active/subjunctive",
+        "new connector environment: ἵνα"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes X/active/indicative → aorist/active/indicative",
+        "new connector environment: γὰρ εἰ"
+      ],
+      "group_id": "1corintios-G016",
+      "range": "2:7-2:8",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes present/active/indicative → aorist/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3P: 2/2 anchors",
+        "recurring movement environment aorist/active/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes aorist/active/indicative → X/passive/indicative",
+        "new connector environment: καθὼς ἀλλὰ"
+      ],
+      "group_id": "1corintios-G017",
+      "range": "2:8-2:8",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes X/active/indicative → aorist/active/indicative",
+        "new connector environment: γὰρ εἰ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1P: 3/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes present/active/indicative → present/middle/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G019",
+      "range": "2:12-2:13",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1P",
+        "movement changes X/active/indicative → aorist/active/indicative",
+        "new connector environment: δὲ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1S: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes aorist/active/indicative → imperfect/middle/indicative",
+        "new connector environment: γὰρ"
+      ],
+      "group_id": "1corintios-G021",
+      "range": "2:16-3:2",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1P",
+        "movement changes future/active/indicative → present/active/indicative",
+        "new connector environment: δὲ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/active/D → aorist/active/subjunctive",
+        "new connector environment: ἕως"
+      ],
+      "group_id": "1corintios-G031",
+      "range": "4:4-4:5",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes X/passive/indicative → present/active/indicative",
+        "new connector environment: δὲ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/subjunctive → X/passive/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G033",
+      "range": "4:6-4:6",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes future/middle/indicative → aorist/active/indicative",
+        "new connector environment: δέ,"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/passive/indicative → present/active/indicative",
+        "new connector environment: γάρ"
+      ],
+      "group_id": "1corintios-G034",
+      "range": "4:6-4:6",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/subjunctive → X/passive/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes present/active/indicative → aorist/active/indicative",
+        "new connector environment: ⸀γάρ,"
+      ],
+      "group_id": "1corintios-G037",
+      "range": "4:8-4:9",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1P",
+        "movement changes aorist/active/indicative → aorist/active/subjunctive",
+        "new connector environment: ἵνα"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes present/active/subjunctive → aorist/active/indicative"
+      ],
+      "group_id": "1corintios-G039",
+      "range": "4:14-4:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 1P → 1S",
+        "movement changes aorist/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → present/middle/D",
+        "new connector environment: οὖν"
+      ],
+      "group_id": "1corintios-G040",
+      "range": "4:15-4:16",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes present/active/subjunctive → aorist/active/indicative"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes aorist/active/indicative → present/active/indicative"
+      ],
+      "group_id": "1corintios-G041",
+      "range": "4:16-4:17",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → present/middle/D",
+        "new connector environment: οὖν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes future/active/indicative → present/active/indicative",
+        "new connector environment: καθὼς"
+      ],
+      "group_id": "1corintios-G042",
+      "range": "4:17-4:17",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes aorist/active/indicative → present/active/indicative"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3P → 1S",
+        "movement changes aorist/passive/indicative → future/middle/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G043",
+      "range": "4:17-4:18",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes future/active/indicative → present/active/indicative",
+        "new connector environment: καθὼς"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes aorist/active/subjunctive → future/middle/indicative",
+        "new connector environment: καὶ"
+      ],
+      "group_id": "1corintios-G044",
+      "range": "4:19-4:19",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 1S",
+        "movement changes aorist/passive/indicative → future/middle/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes present/active/indicative → aorist/active/subjunctive"
+      ],
+      "group_id": "1corintios-G045",
+      "range": "4:19-4:21",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes aorist/active/subjunctive → future/middle/indicative",
+        "new connector environment: καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/passive/indicative → present/active/indicative",
+        "new connector environment: καὶ"
+      ],
+      "group_id": "1corintios-G046",
+      "range": "4:21-5:1",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes present/active/indicative → aorist/active/subjunctive"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 2/2 anchors",
+        "connector recurrence καὶ: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/indicative → aorist/passive/subjunctive",
+        "new connector environment: ἵνα"
+      ],
+      "group_id": "1corintios-G047",
+      "range": "5:2-5:2",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/passive/indicative → present/active/indicative",
+        "new connector environment: καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes X/active/indicative → aorist/passive/subjunctive",
+        "new connector environment: ἵνα"
+      ],
+      "group_id": "1corintios-G048",
+      "range": "5:2-5:3",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/indicative → aorist/passive/subjunctive",
+        "new connector environment: ἵνα"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes X/active/indicative → present/active/indicative",
+        "new connector environment: ὅτι"
+      ],
+      "group_id": "1corintios-G049",
+      "range": "5:5-5:6",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes X/active/indicative → aorist/passive/subjunctive",
+        "new connector environment: ἵνα"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1P → 1S",
+        "movement changes present/active/subjunctive → aorist/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G051",
+      "range": "5:7-5:8",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/active/indicative → aorist/passive/indicative",
+        "new connector environment: γὰρ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "connector recurrence ἢ: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes imperfect/active/indicative → aorist/active/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G052",
+      "range": "5:9-5:10",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1P → 1S",
+        "movement changes present/active/subjunctive → aorist/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/subjunctive → present/active/indicative",
+        "new connector environment: γάρ"
+      ],
+      "group_id": "1corintios-G053",
+      "range": "5:11-5:11",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes imperfect/active/indicative → aorist/active/indicative",
+        "new connector environment: δὲ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "recurring movement environment present/active/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → aorist/active/D",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G054",
+      "range": "5:12-5:13",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/subjunctive → present/active/indicative",
+        "new connector environment: γάρ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → X/active/indicative",
+        "new connector environment: ⸀ἢ"
+      ],
+      "group_id": "1corintios-G055",
+      "range": "5:13-6:1",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → aorist/active/D",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes future/active/indicative → present/passive/indicative",
+        "new connector environment: εἰ καὶ"
+      ],
+      "group_id": "1corintios-G056",
+      "range": "6:2-6:2",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → X/active/indicative",
+        "new connector environment: ⸀ἢ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 1P",
+        "movement changes X/active/indicative → future/active/indicative",
+        "new connector environment: ὅτι"
+      ],
+      "group_id": "1corintios-G057",
+      "range": "6:2-6:3",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes future/active/indicative → present/passive/indicative",
+        "new connector environment: εἰ καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 3P",
+        "movement changes present/passive/D → future/active/indicative",
+        "new connector environment: οὔτε"
+      ],
+      "group_id": "1corintios-G059",
+      "range": "6:9-6:9",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3P",
+        "movement changes X/active/indicative → future/active/indicative",
+        "new connector environment: ὅτι"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 3S: 3/3 anchors",
+        "recurring movement environment present/active/indicative: 3/3 anchors",
+        "lexical recurrence ἔξεστιν: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/indicative → future/passive/indicative",
+        "new connector environment: ἀλλ’"
+      ],
+      "group_id": "1corintios-G061",
+      "range": "6:12-6:12",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/indicative → aorist/active/subjunctive",
+        "new connector environment: οὖν"
+      ],
+      "group_id": "1corintios-G063",
+      "range": "6:15-6:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes future/active/indicative → X/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes aorist/middle/optative → X/active/indicative",
+        "new connector environment: ⸀ἢ"
+      ],
+      "group_id": "1corintios-G064",
+      "range": "6:15-6:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/indicative → aorist/active/subjunctive",
+        "new connector environment: οὖν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/active/indicative → future/middle/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G065",
+      "range": "6:16-6:16",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes aorist/middle/optative → X/active/indicative",
+        "new connector environment: ⸀ἢ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/3 anchors",
+        "recurring movement environment present/active/indicative: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → present/active/D",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G066",
+      "range": "6:16-6:17",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/active/indicative → future/middle/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3P: 3/3 anchors",
+        "connector recurrence δὲ: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes aorist/active/D → present/active/indicative",
+        "new connector environment: γάρ"
+      ],
+      "group_id": "1corintios-G072",
+      "range": "7:8-7:9",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3P",
+        "movement changes present/active/indicative → aorist/active/subjunctive",
+        "new connector environment: δὲ καὶ ἐὰν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "recurring movement environment present/active/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes present/active/indicative → aorist/passive/subjunctive"
+      ],
+      "group_id": "1corintios-G073",
+      "range": "7:9-7:10",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes aorist/active/D → present/active/indicative",
+        "new connector environment: γάρ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 3/3 anchors",
+        "connector recurrence ὡς: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/D → present/middle/indicative",
+        "new connector environment: καὶ"
+      ],
+      "group_id": "1corintios-G076",
+      "range": "7:17-7:17",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2S → 3S",
+        "movement changes future/active/indicative → aorist/active/indicative",
+        "new connector environment: Εἰ ὡς"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes present/active/D → present/middle/indicative",
+        "new connector environment: εἰ ἀλλ’"
+      ],
+      "group_id": "1corintios-G078",
+      "range": "7:21-7:21",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes present/active/D → aorist/passive/indicative"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2S → 3S",
+        "movement changes aorist/middle/D → present/active/indicative",
+        "new connector environment: γὰρ"
+      ],
+      "group_id": "1corintios-G079",
+      "range": "7:21-7:21",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes present/active/D → present/middle/indicative",
+        "new connector environment: εἰ ἀλλ’"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors",
+        "recurring movement environment present/active/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → aorist/passive/indicative"
+      ],
+      "group_id": "1corintios-G080",
+      "range": "7:22-7:22",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2S → 3S",
+        "movement changes aorist/middle/D → present/active/indicative",
+        "new connector environment: γὰρ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/middle/D → aorist/passive/indicative"
+      ],
+      "group_id": "1corintios-G081",
+      "range": "7:23-7:23",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → aorist/passive/indicative"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/D → present/active/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G082",
+      "range": "7:24-7:24",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/middle/D → aorist/passive/indicative"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes aorist/active/indicative → future/active/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G085",
+      "range": "7:28-7:28",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2S → 3S",
+        "movement changes aorist/active/indicative → aorist/active/subjunctive",
+        "new connector environment: καὶ ἐὰν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes aorist/active/subjunctive → present/active/indicative",
+        "new connector environment: Εἰ δέ"
+      ],
+      "group_id": "1corintios-G088",
+      "range": "7:35-7:35",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes aorist/active/subjunctive → present/active/indicative",
+        "new connector environment: δὲ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1P",
+        "movement changes future/active/indicative → aorist/active/subjunctive",
+        "new connector environment: οὔτε ἐὰν ⸂γὰρ"
+      ],
+      "group_id": "1corintios-G093",
+      "range": "8:7-8:8",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes present/active/indicative → present/passive/indicative",
+        "new connector environment: καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "recurring movement environment present/active/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/indicative → aorist/active/subjunctive",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G096",
+      "range": "8:12-8:13",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes aorist/active/indicative → present/active/indicative",
+        "new connector environment: δὲ καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1P: 2/2 anchors",
+        "connector recurrence εἰ: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 1P → 3P",
+        "movement changes future/active/indicative → present/active/indicative"
+      ],
+      "group_id": "1corintios-G101",
+      "range": "9:11-9:11",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1P",
+        "movement changes present/active/indicative → aorist/active/indicative",
+        "new connector environment: εἰ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes future/active/indicative → present/middle/subjunctive",
+        "new connector environment: γὰρ ἐὰν"
+      ],
+      "group_id": "1corintios-G105",
+      "range": "9:15-9:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes aorist/active/indicative → aorist/middle/subjunctive",
+        "new connector environment: δὲ ἵνα"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "recurring movement environment present/active/indicative: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → present/active/D",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G109",
+      "range": "9:24-9:24",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes aorist/middle/subjunctive → X/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/subjunctive → present/middle/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G110",
+      "range": "9:24-9:24",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → present/active/D",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3P → 1S",
+        "movement changes aorist/active/subjunctive → present/active/indicative",
+        "new connector environment: τοίνυν"
+      ],
+      "group_id": "1corintios-G111",
+      "range": "9:25-9:25",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/subjunctive → present/middle/indicative",
+        "new connector environment: δὲ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3P: 3/3 anchors",
+        "recurring movement environment aorist/passive/indicative: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes aorist/active/indicative → present/middle/D",
+        "new connector environment: μηδὲ"
+      ],
+      "group_id": "1corintios-G114",
+      "range": "10:5-10:6",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes aorist/active/indicative → aorist/passive/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3P: 2/3 anchors",
+        "recurring movement environment aorist/active/indicative: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 1P",
+        "movement changes aorist/active/indicative → present/active/subjunctive",
+        "new connector environment: μηδὲ"
+      ],
+      "group_id": "1corintios-G116",
+      "range": "10:8-10:8",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 1P",
+        "movement changes aorist/active/indicative → present/active/subjunctive",
+        "new connector environment: μηδὲ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3P: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes imperfect/passive/indicative → present/active/D",
+        "new connector environment: μηδὲ"
+      ],
+      "group_id": "1corintios-G117",
+      "range": "10:9-10:9",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 1P",
+        "movement changes aorist/active/indicative → present/active/subjunctive",
+        "new connector environment: μηδὲ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3P: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes aorist/middle/indicative → imperfect/active/indicative",
+        "new connector environment: ⸀δὲ"
+      ],
+      "group_id": "1corintios-G118",
+      "range": "10:10-10:10",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes imperfect/passive/indicative → present/active/D",
+        "new connector environment: μηδὲ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes future/active/indicative → present/active/D",
+        "new connector environment: Διόπερ,"
+      ],
+      "group_id": "1corintios-G120",
+      "range": "10:13-10:13",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes future/active/indicative → present/middle/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → aorist/active/D",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G121",
+      "range": "10:14-10:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes future/active/indicative → present/active/D",
+        "new connector environment: Διόπερ,"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 2/3 anchors",
+        "recurring movement environment present/active/indicative: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/active/D → aorist/active/subjunctive",
+        "new connector environment: δέ ἐὰν"
+      ],
+      "group_id": "1corintios-G126",
+      "range": "10:27-10:27",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/active/D → present/active/indicative",
+        "new connector environment: ⸀εἴ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → present/active/D"
+      ],
+      "group_id": "1corintios-G127",
+      "range": "10:28-10:28",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/active/D → aorist/active/subjunctive",
+        "new connector environment: δέ ἐὰν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes present/active/indicative → present/passive/indicative",
+        "new connector environment: γὰρ ἀλλὰ"
+      ],
+      "group_id": "1corintios-G128",
+      "range": "10:28-10:29",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → present/active/D"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes aorist/passive/subjunctive → present/middle/D",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G130",
+      "range": "10:33-10:33",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes present/middle/D → present/active/indicative",
+        "new connector environment: καθὼς"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → X/middle/indicative",
+        "new connector environment: δὲ ὅτι"
+      ],
+      "group_id": "1corintios-G131",
+      "range": "11:1-11:2",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes aorist/passive/subjunctive → present/middle/D",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes aorist/active/indicative → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G132",
+      "range": "11:2-11:2",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → X/middle/indicative",
+        "new connector environment: δὲ ὅτι"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → present/active/D"
+      ],
+      "group_id": "1corintios-G139",
+      "range": "11:24-11:25",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/indicative → present/active/D"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/D → present/middle/subjunctive",
+        "new connector environment: ἵνα"
+      ],
+      "group_id": "1corintios-G143",
+      "range": "11:33-11:34",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1P → 2P",
+        "movement changes aorist/passive/subjunctive → present/middle/D",
+        "new connector environment: Ὥστε,"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 3/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes imperfect/passive/indicative → present/active/indicative",
+        "new connector environment: διὸ"
+      ],
+      "group_id": "1corintios-G145",
+      "range": "12:2-12:2",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → X/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/3 anchors",
+        "recurring movement environment present/active/indicative: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/middle/indicative → present/active/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G146",
+      "range": "12:3-12:3",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes imperfect/passive/indicative → present/active/indicative",
+        "new connector environment: διὸ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 3P: 3/3 anchors",
+        "recurring movement environment present/active/indicative: 3/3 anchors",
+        "connector recurrence καὶ: 2x",
+        "lexical recurrence εἰσίν: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes present/active/indicative → present/passive/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G147",
+      "range": "12:4-12:6",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/middle/indicative → present/active/indicative",
+        "new connector environment: δὲ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 1P: 2/2 anchors",
+        "recurring movement environment aorist/passive/indicative: 2/2 anchors",
+        "connector recurrence εἴτε: 4x"
+      ],
+      "end_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes aorist/passive/indicative → present/active/indicative",
+        "new connector environment: γὰρ"
+      ],
+      "group_id": "1corintios-G149",
+      "range": "12:13-12:13",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1P",
+        "movement changes present/active/indicative → aorist/passive/indicative",
+        "new connector environment: γὰρ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes aorist/active/subjunctive → present/active/indicative",
+        "new connector environment: Ὅτι"
+      ],
+      "group_id": "1corintios-G150",
+      "range": "12:14-12:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes aorist/passive/indicative → present/active/indicative",
+        "new connector environment: γὰρ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3P: 2/2 anchors",
+        "connector recurrence εἴτε: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes future/middle/indicative → future/passive/indicative"
+      ],
+      "group_id": "1corintios-G158",
+      "range": "13:8-13:8",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/active/indicative → future/passive/indicative",
+        "new connector environment: δὲ εἴτε"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes future/passive/indicative → imperfect/middle/indicative",
+        "new connector environment: ὅτε"
+      ],
+      "group_id": "1corintios-G160",
+      "range": "13:10-13:10",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes present/active/indicative → aorist/active/subjunctive",
+        "new connector environment: δὲ ὅταν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes future/passive/indicative → future/middle/indicative"
+      ],
+      "group_id": "1corintios-G166",
+      "range": "14:9-14:9",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes future/middle/indicative → aorist/active/subjunctive",
+        "new connector environment: ἐὰν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes aorist/active/optative → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G167",
+      "range": "14:9-14:10",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes future/passive/indicative → future/middle/indicative"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1S: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes future/middle/indicative → present/active/indicative",
+        "new connector environment: ἐπεὶ"
+      ],
+      "group_id": "1corintios-G168",
+      "range": "14:10-14:11",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes aorist/active/optative → present/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 3/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/active/subjunctive → present/middle/D",
+        "new connector environment: ⸀Διὸ"
+      ],
+      "group_id": "1corintios-G169",
+      "range": "14:12-14:12",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes future/middle/indicative → present/active/indicative",
+        "new connector environment: ἐπεὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/subjunctive → present/middle/subjunctive",
+        "new connector environment: γὰρ ἐὰν"
+      ],
+      "group_id": "1corintios-G170",
+      "range": "14:13-14:13",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/active/subjunctive → present/middle/D",
+        "new connector environment: ⸀Διὸ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes future/active/indicative → present/active/indicative",
+        "new connector environment: ἐπειδὴ"
+      ],
+      "group_id": "1corintios-G173",
+      "range": "14:16-14:16",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 2S",
+        "movement changes future/active/indicative → present/active/subjunctive",
+        "new connector environment: ἐπεὶ ἐὰν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes X/active/indicative → present/active/indicative",
+        "new connector environment: γὰρ μὲν"
+      ],
+      "group_id": "1corintios-G174",
+      "range": "14:16-14:16",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes future/active/indicative → present/active/indicative",
+        "new connector environment: ἐπειδὴ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G175",
+      "range": "14:17-14:17",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes X/active/indicative → present/active/indicative",
+        "new connector environment: γὰρ μὲν"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 2P: 3/3 anchors",
+        "recurring movement environment present/middle/D: 2/3 anchors",
+        "lexical recurrence γίνεσθε: 2x",
+        "movement restoration pattern present/middle/D → present/active/D → present/middle/D"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/middle/D → X/passive/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G177",
+      "range": "14:20-14:20",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes aorist/active/subjunctive → present/middle/D",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 3P",
+        "movement changes future/active/indicative → future/middle/indicative"
+      ],
+      "group_id": "1corintios-G178",
+      "range": "14:21-14:21",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/middle/D → X/passive/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes present/active/subjunctive → aorist/active/subjunctive",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G181",
+      "range": "14:23-14:24",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes future/active/indicative → present/middle/indicative",
+        "new connector environment: ὅτι"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/active/D → present/middle/indicative"
+      ],
+      "group_id": "1corintios-G184",
+      "range": "14:30-14:30",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes present/active/D → aorist/passive/subjunctive",
+        "new connector environment: δὲ ἐὰν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/active/indicative → present/active/D",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G186",
+      "range": "14:32-14:33",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes present/passive/subjunctive → present/passive/indicative",
+        "new connector environment: (καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/passive/indicative → present/passive/D",
+        "new connector environment: ἀλλὰ"
+      ],
+      "group_id": "1corintios-G187",
+      "range": "14:34-14:34",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/active/indicative → present/active/D",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 2/2 anchors",
+        "recurring movement environment present/active/D: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/active/D → present/middle/D"
+      ],
+      "group_id": "1corintios-G191",
+      "range": "14:39-14:39",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes present/passive/indicative → present/active/D",
+        "new connector environment: ὥστε,"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 1P",
+        "movement changes aorist/active/indicative → present/active/indicative",
+        "new connector environment: εἴτε οὖν"
+      ],
+      "group_id": "1corintios-G197",
+      "range": "15:10-15:10",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes present/active/indicative → aorist/passive/indicative",
+        "new connector environment: καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "connector recurrence εἴτε: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/indicative → present/passive/indicative",
+        "new connector environment: Εἰ δὲ"
+      ],
+      "group_id": "1corintios-G198",
+      "range": "15:11-15:11",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 1P",
+        "movement changes aorist/active/indicative → present/active/indicative",
+        "new connector environment: εἴτε οὖν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes X/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G199",
+      "range": "15:12-15:12",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/indicative → present/passive/indicative",
+        "new connector environment: Εἰ δὲ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 3P: 2/2 anchors",
+        "recurring movement environment present/passive/indicative: 2/2 anchors",
+        "lexical recurrence ἐγείρονται: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes present/passive/indicative → X/passive/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G202",
+      "range": "15:15-15:16",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes aorist/active/indicative → present/passive/indicative",
+        "new connector environment: εἴπερ ἄρα"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors",
+        "recurring movement environment X/passive/indicative: 2/2 anchors",
+        "lexical recurrence ἐγήγερται: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes X/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G203",
+      "range": "15:16-15:17",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 3S",
+        "movement changes present/passive/indicative → X/passive/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3P → 1P",
+        "movement changes aorist/middle/indicative → present/active/indicative",
+        "new connector environment: εἰ"
+      ],
+      "group_id": "1corintios-G204",
+      "range": "15:17-15:18",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes X/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1P: 2/2 anchors",
+        "recurring movement environment present/active/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes present/active/indicative → X/passive/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G205",
+      "range": "15:19-15:19",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 1P",
+        "movement changes aorist/middle/indicative → present/active/indicative",
+        "new connector environment: εἰ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes present/active/indicative → aorist/active/D"
+      ],
+      "group_id": "1corintios-G211",
+      "range": "15:33-15:33",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 1P → 2P",
+        "movement changes present/active/indicative → present/passive/D",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 2P: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 2P → 3P",
+        "movement changes present/active/D → present/active/indicative",
+        "new connector environment: γὰρ"
+      ],
+      "group_id": "1corintios-G212",
+      "range": "15:34-15:34",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes present/active/indicative → aorist/active/D"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "recurring movement environment present/active/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes present/active/indicative → future/active/indicative",
+        "new connector environment: Ἀλλὰ"
+      ],
+      "group_id": "1corintios-G213",
+      "range": "15:34-15:34",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3P",
+        "movement changes present/active/D → present/active/indicative",
+        "new connector environment: γὰρ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3P: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 2S",
+        "movement changes present/middle/indicative → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G214",
+      "range": "15:35-15:35",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes present/active/indicative → future/active/indicative",
+        "new connector environment: Ἀλλὰ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/3 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes aorist/active/subjunctive → present/active/indicative",
+        "new connector environment: καὶ"
+      ],
+      "group_id": "1corintios-G215",
+      "range": "15:36-15:36",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 2S",
+        "movement changes present/middle/indicative → present/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 2S: 2/2 anchors",
+        "recurring movement environment present/active/indicative: 2/2 anchors",
+        "lexical recurrence σπείρεις: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 2S → 3S",
+        "movement changes present/active/indicative → aorist/active/optative",
+        "new connector environment: εἰ ἀλλὰ"
+      ],
+      "group_id": "1corintios-G216",
+      "range": "15:37-15:37",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes aorist/active/subjunctive → present/active/indicative",
+        "new connector environment: καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1P: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1P → 1S",
+        "movement changes future/active/indicative → present/active/indicative",
+        "new connector environment: δέ"
+      ],
+      "group_id": "1corintios-G218",
+      "range": "15:49-15:49",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1P",
+        "movement changes aorist/middle/indicative → aorist/active/indicative",
+        "new connector environment: καθὼς καὶ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1P: 2/2 anchors",
+        "recurring movement environment future/passive/indicative: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes future/passive/indicative → future/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G220",
+      "range": "15:51-15:51",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 1P",
+        "movement changes present/active/indicative → future/passive/indicative"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "low",
+      "continuity_evidence": [
+        "recurring movement environment future/passive/indicative: 2/3 anchors",
+        "connector recurrence καὶ: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes future/passive/indicative → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G221",
+      "range": "15:52-15:52",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1P → 3S",
+        "movement changes future/passive/indicative → future/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/indicative → aorist/active/indicative",
+        "new connector environment: δὲ ὥσπερ"
+      ],
+      "group_id": "1corintios-G223",
+      "range": "15:58-15:58",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes aorist/passive/indicative → present/middle/D",
+        "new connector environment: Ὥστε,"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/D → present/active/D"
+      ],
+      "group_id": "1corintios-G224",
+      "range": "16:1-16:1",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/active/indicative → aorist/active/indicative",
+        "new connector environment: δὲ ὥσπερ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/passive/subjunctive → aorist/active/subjunctive",
+        "new connector environment: ἵνα ὅταν"
+      ],
+      "group_id": "1corintios-G225",
+      "range": "16:2-16:2",
+      "reasons": [
+        "low-confidence tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes aorist/active/D → present/active/D"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3P → 1S",
+        "movement changes present/middle/subjunctive → aorist/middle/subjunctive",
+        "new connector environment: δὲ ὅταν"
+      ],
+      "group_id": "1corintios-G226",
+      "range": "16:2-16:2",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes present/passive/subjunctive → aorist/active/subjunctive",
+        "new connector environment: ἵνα ὅταν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes aorist/active/subjunctive → future/active/indicative"
+      ],
+      "group_id": "1corintios-G227",
+      "range": "16:3-16:3",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3P → 1S",
+        "movement changes present/middle/subjunctive → aorist/middle/subjunctive",
+        "new connector environment: δὲ ὅταν"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/active/subjunctive → future/middle/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G228",
+      "range": "16:3-16:4",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes aorist/active/subjunctive → future/active/indicative"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes future/active/indicative → X/active/indicative",
+        "new connector environment: γάρ"
+      ],
+      "group_id": "1corintios-G231",
+      "range": "16:7-16:8",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes present/active/indicative → aorist/active/subjunctive",
+        "new connector environment: ἐὰν ⸀γὰρ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 3S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes aorist/active/subjunctive → present/active/D",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G232",
+      "range": "16:9-16:10",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes future/active/indicative → X/active/indicative",
+        "new connector environment: γάρ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes aorist/active/subjunctive → present/middle/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G234",
+      "range": "16:11-16:11",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2P",
+        "movement changes aorist/active/subjunctive → aorist/active/D",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [
+        "dominant subject field 1S: 2/2 anchors"
+      ],
+      "end_boundary": [
+        "subject field changes 1S → 3S",
+        "movement changes aorist/active/indicative → aorist/active/subjunctive",
+        "new connector environment: ἵνα"
+      ],
+      "group_id": "1corintios-G235",
+      "range": "16:11-16:12",
+      "reasons": [
+        "low-confidence tiny group",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 1S",
+        "movement changes aorist/active/subjunctive → present/middle/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → X/active/indicative",
+        "new connector environment: δὲ"
+      ],
+      "group_id": "1corintios-G238",
+      "range": "16:14-16:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 3S",
+        "movement changes present/passive/D → present/middle/D"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/active/indicative → aorist/active/indicative",
+        "new connector environment: καὶ"
+      ],
+      "group_id": "1corintios-G239",
+      "range": "16:15-16:15",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 1S → 2P",
+        "movement changes present/active/indicative → X/active/indicative",
+        "new connector environment: δὲ"
+      ]
+    },
+    {
+      "anchor_count": 2,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes present/passive/subjunctive → present/active/indicative",
+        "connector environment drops"
+      ],
+      "group_id": "1corintios-G240",
+      "range": "16:15-16:16",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence",
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 3P",
+        "movement changes present/active/indicative → aorist/active/indicative",
+        "new connector environment: καὶ"
+      ]
+    },
+    {
+      "anchor_count": 3,
+      "confidence": "medium",
+      "continuity_evidence": [
+        "dominant subject field 3P: 2/3 anchors",
+        "recurring movement environment aorist/active/indicative: 2/3 anchors",
+        "connector recurrence καὶ: 2x"
+      ],
+      "end_boundary": [
+        "subject field changes 3P → 2P",
+        "movement changes aorist/active/indicative → present/active/D",
+        "new connector environment: γὰρ καὶ"
+      ],
+      "group_id": "1corintios-G241",
+      "range": "16:17-16:18",
+      "reasons": [
+        "high boundary pressure on both sides around tiny group"
+      ],
+      "start_boundary": [
+        "subject field changes 2P → 1S",
+        "movement changes present/passive/subjunctive → present/active/indicative",
+        "connector environment drops"
+      ]
+    },
+    {
+      "anchor_count": 1,
+      "confidence": "low",
+      "continuity_evidence": [],
+      "end_boundary": [
+        "end of selected data"
+      ],
+      "group_id": "1corintios-G244",
+      "range": "16:22-16:22",
+      "reasons": [
+        "low-confidence tiny group",
+        "tiny group with no continuity evidence"
+      ],
+      "start_boundary": [
+        "subject field changes 3S → 2S",
+        "movement changes present/active/D → aorist/active/D"
+      ]
+    }
+  ]
+}
