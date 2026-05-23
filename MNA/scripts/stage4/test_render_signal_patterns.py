@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-VERSION = "stage4-test-signal-pattern-renderer-v3-morphology-profile"
+VERSION = "stage4-test-signal-pattern-renderer-v4-compact-subject"
 
 
 def root() -> Path:
@@ -36,15 +36,30 @@ def in_range(row, start, end):
 
 
 def verbal_profile(row):
-    return str(row.get("morphology") or "—")
+    return str(row.get("rmac") or row.get("morphology") or "—")
 
 
-def compact_subject(signal: str):
-    if signal.startswith("MORPH:"):
-        return signal.replace("MORPH:", "")
-    if signal.startswith("LEX:"):
-        return signal.replace("LEX:", "")
-    return signal or "—"
+def compact_person_number(row):
+    person = str(row.get("person") or "")
+    number = str(row.get("number") or "")
+    p = {"first": "1", "second": "2", "third": "3", "1": "1", "2": "2", "3": "3"}.get(person, person)
+    n = {"singular": "S", "plural": "P", "S": "S", "P": "P"}.get(number, number)
+    return f"{p}{n}" if p and n else "—"
+
+
+def compact_subject(row):
+    explicit = str(row.get("explicit_subject_before") or "").strip()
+    pn = compact_person_number(row)
+    if explicit:
+        return f"{explicit} ({pn})"
+    return pn
+
+
+def subject_recurrence_key(row):
+    explicit = str(row.get("explicit_subject_before") or "").strip()
+    if explicit:
+        return f"LEX:{explicit}"
+    return f"MORPH:{compact_person_number(row)}"
 
 
 def marker(row):
@@ -96,7 +111,7 @@ def connector_display(row):
 
 def recurrence_tag(row, previous_subjects, previous_profiles, previous_connectors):
     tags = []
-    subj = row.get("subject_signal") or ""
+    subj = subject_recurrence_key(row)
     prof = verbal_profile(row)
     conn = connector_form(row)
 
@@ -138,7 +153,7 @@ def main() -> int:
     out.append("")
     out.append("## Compact Pattern Table")
     out.append("")
-    out.append("| # | Ref | Verb | Subject | Verb Profile | Markers | Connector | Conn Lemma | Conn Before | Recurrence |")
+    out.append("| # | Ref | Verb | Subject | RMAC | Markers | Connector | Conn Lemma | Conn Before | Recurrence |")
     out.append("|---:|---|---|---|---|---|---|---|---|---|")
 
     prev_subjects = set()
@@ -151,7 +166,7 @@ def main() -> int:
             str(r.get("order", "")),
             f"{r['chapter']}:{r['verse']}",
             str(r.get("greek_form", "")),
-            compact_subject(str(r.get("subject_signal") or "")),
+            compact_subject(r),
             verbal_profile(r),
             marker(r),
             connector_display(r),
@@ -159,8 +174,7 @@ def main() -> int:
             connector_before(r),
             rec,
         ]) + " |")
-        if r.get("subject_signal"):
-            prev_subjects.add(r["subject_signal"])
+        prev_subjects.add(subject_recurrence_key(r))
         prof = verbal_profile(r)
         if prof:
             prev_profiles.add(prof)
@@ -174,13 +188,12 @@ def main() -> int:
     out.append("```text")
     prev_subjects = set()
     for r in rows:
-        subj = compact_subject(str(r.get("subject_signal") or ""))
+        subj = compact_subject(r)
         ref = f"{r['chapter']}:{r['verse']}"
-        rec = "↩" if r.get("subject_signal") in prev_subjects else " "
+        rec = "↩" if subject_recurrence_key(r) in prev_subjects else " "
         conn = connector_display(r)
-        out.append(f"{ref:<6} {marker(r):<7} CONN={conn:<22} {rec} SUBJ={subj:<18} VERB={r.get('greek_form','')} MORPH={verbal_profile(r)}")
-        if r.get("subject_signal"):
-            prev_subjects.add(r["subject_signal"])
+        out.append(f"{ref:<6} {marker(r):<7} CONN={conn:<22} {rec} SUBJ={subj:<22} VERB={r.get('greek_form','')} RMAC={verbal_profile(r)}")
+        prev_subjects.add(subject_recurrence_key(r))
     out.append("```")
 
     out.append("")
@@ -206,8 +219,8 @@ def main() -> int:
     out.append("## Legend")
     out.append("")
     out.append("- `↩` = subject signal has appeared earlier in the selected range.")
-    out.append("- `SUBJ-RECUR` = subject signal recurrence.")
-    out.append("- `VERB-RECUR` = same morphology code recurs.")
+    out.append("- `SUBJ-RECUR` = subject signal recurrence using explicit subject when present, otherwise person/number.")
+    out.append("- `VERB-RECUR` = same RMAC code recurs.")
     out.append("- `CONN-RECUR` = same raw connector form recurs.")
     out.append("- `[S]` and `[M]` are raw Stage 3 signals, not break decisions.")
 
