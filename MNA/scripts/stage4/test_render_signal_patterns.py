@@ -5,7 +5,17 @@ import argparse
 import json
 from pathlib import Path
 
-VERSION = "stage4-test-signal-pattern-renderer-v6-map-view"
+VERSION = "stage4-test-signal-pattern-renderer-v7-color"
+
+RESET = "\033[0m"
+BLUE = "\033[34m"
+GREEN = "\033[32m"
+YELLOW = "\033[33m"
+CYAN = "\033[36m"
+MAGENTA = "\033[35m"
+WHITE = "\033[37m"
+DIM = "\033[2m"
+BOLD = "\033[1m"
 
 
 def root() -> Path:
@@ -108,8 +118,69 @@ def connector_display(row):
     return " ".join(parts)
 
 
+def colorize(value: str, color: str, enabled: bool) -> str:
+    if not enabled:
+        return value
+    return f"{color}{value}{RESET}"
+
+
+def subject_color(subject: str) -> str:
+    if "3S" in subject:
+        return BLUE
+    if "3P" in subject:
+        return GREEN
+    if "1P" in subject:
+        return YELLOW
+    if "2P" in subject:
+        return MAGENTA
+    return WHITE
+
+
+def connector_color(conn: str) -> str:
+    if conn == "—":
+        return DIM
+    if "γ" in conn:
+        return CYAN
+    if "εἰ" in conn or "Εἰ" in conn:
+        return YELLOW
+    if "ὅτι" in conn or "ὅταν" in conn:
+        return MAGENTA
+    return WHITE
+
+
+def rmac_color(rmac: str) -> str:
+    if "S" in rmac[4:6] if len(rmac) > 5 else False:
+        return MAGENTA
+    if "V-X" in rmac:
+        return CYAN
+    return WHITE
+
+
 def seen_flag(value, seen):
     return "↩" if value and value in seen else "—"
+
+
+def render_map(rows, color: bool) -> list[str]:
+    out = []
+    out.append("REF     MK      CONN             SUBJ       VERB                 RMAC")
+    out.append("──────  ─────── ──────────────── ────────── ─────────────────── ─────────")
+    prev_ref = None
+    for r in rows:
+        ref = f"{r['chapter']}:{r['verse']}"
+        if prev_ref and ref != prev_ref:
+            out.append("")
+        subj = compact_subject(r)
+        conn = connector_display(r)
+        rmac = verbal_profile(r)
+        out.append(
+            f"{ref:<6}  {marker(r):<7} "
+            f"{colorize(f'{conn:<16}', connector_color(conn), color)} "
+            f"{colorize(f'{subj:<10}', subject_color(subj), color)} "
+            f"{str(r.get('greek_form','')):<19} "
+            f"{colorize(rmac, rmac_color(rmac), color)}"
+        )
+        prev_ref = ref
+    return out
 
 
 def main() -> int:
@@ -117,6 +188,7 @@ def main() -> int:
     ap.add_argument("book")
     ap.add_argument("--from", dest="from_ref", required=True)
     ap.add_argument("--to", dest="to_ref", required=True)
+    ap.add_argument("--color", action="store_true", help="Print ANSI-colored structural map to terminal.")
     args = ap.parse_args()
 
     book = args.book.strip().lower()
@@ -130,6 +202,13 @@ def main() -> int:
 
     rows = [r for r in load_jsonl(in_path) if in_range(r, start, end)]
 
+    if args.color:
+        print(f"MNA Stage 4 TEST — Colored Signal Map: {book} {args.from_ref}-{args.to_ref}")
+        print("TEMPORARY TEST OUTPUT — NOT CANONICAL")
+        print()
+        print("\n".join(render_map(rows, True)))
+        return 0
+
     out = []
     out.append(f"# Stage 4 TEST — Signal Pattern View: {book} {args.from_ref}–{args.to_ref}")
     out.append("")
@@ -141,57 +220,15 @@ def main() -> int:
     out.append("## Structural Map View")
     out.append("")
     out.append("```text")
-    out.append("REF     MK      CONN             SUBJ       VERB                 RMAC")
-    out.append("──────  ─────── ──────────────── ────────── ─────────────────── ─────────")
-    prev_ref = None
-    for r in rows:
-        ref = f"{r['chapter']}:{r['verse']}"
-        if prev_ref and ref != prev_ref:
-            out.append("")
-        out.append(f"{ref:<6}  {marker(r):<7} {connector_display(r):<16} {compact_subject(r):<10} {str(r.get('greek_form','')):<19} {verbal_profile(r)}")
-        prev_ref = ref
+    out.extend(render_map(rows, False))
     out.append("```")
     out.append("")
 
-    out.append("## Compact Pattern Table")
-    out.append("")
-    out.append("| # | Ref | Verb | Subject | RMAC | Markers | Conn | S↩ | V↩ | C↩ |")
-    out.append("|---:|---|---|---|---|---|---|---|---|---|")
-
-    prev_subjects = set()
-    prev_profiles = set()
-    prev_connectors = set()
-
-    for r in rows:
-        subj_key = subject_recurrence_key(r)
-        prof = verbal_profile(r)
-        conn = connector_form(r)
-        out.append("| " + " | ".join([
-            str(r.get("order", "")),
-            f"{r['chapter']}:{r['verse']}",
-            str(r.get("greek_form", "")),
-            compact_subject(r),
-            prof,
-            marker(r),
-            connector_display(r),
-            seen_flag(subj_key, prev_subjects),
-            seen_flag(prof, prev_profiles),
-            seen_flag(conn, prev_connectors) if conn != "—" else "—",
-        ]) + " |")
-        prev_subjects.add(subj_key)
-        if prof:
-            prev_profiles.add(prof)
-        if conn != "—":
-            prev_connectors.add(conn)
-
-    out.append("")
     out.append("## Legend")
     out.append("")
     out.append("- `Conn` renders raw connectors as `connector(distance-to-anchor)`, e.g. `γάρ(2)`.")
-    out.append("- `S↩` = same subject signal appeared earlier in the selected range.")
-    out.append("- `V↩` = same RMAC code appeared earlier in the selected range.")
-    out.append("- `C↩` = same raw connector form appeared earlier in the selected range.")
     out.append("- `[S]` and `[M]` are raw Stage 3 signals, not break decisions.")
+    out.append("- Use `--color` to print an ANSI-colored terminal view.")
 
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path.write_text("\n".join(out), encoding="utf-8")
