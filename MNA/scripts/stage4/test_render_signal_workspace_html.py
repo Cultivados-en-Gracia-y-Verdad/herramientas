@@ -8,7 +8,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
-VERSION = "stage4-test-html-observation-workspace-v1"
+VERSION = "stage4-test-html-observation-workspace-v2-hide-lemma"
 
 SUBJECT_COLORS = {
     "3S": "subject-3s",
@@ -157,14 +157,15 @@ def row_to_html(row: dict[str, Any]) -> str:
     code = html.escape(rmac(row))
     mk = html.escape(marker(row))
     lemma = html.escape(str(row.get("lemma", "")))
-    title = html.escape(json.dumps(row, ensure_ascii=False, indent=2))
+    raw_title = json.dumps(row, ensure_ascii=False, indent=2)
+    title = html.escape(f"lemma: {lemma}\n\n{raw_title}")
     return f"""
     <div class="anchor-row" title="{title}">
       <div class="ref">{html.escape(ref)}</div>
       <div class="markers">{mk}</div>
       <div class="connectors">{connector_badges(row)}</div>
       <div class="subject {subject_class(row)}">{subj}</div>
-      <div class="verb">{verb}<span class="lemma">{lemma}</span></div>
+      <div class="verb">{verb}</div>
       <div class="rmac {rmac_class(code)}">{code}</div>
     </div>
     """
@@ -279,7 +280,7 @@ def css() -> str:
     .panel h2 { margin: 0; padding: 14px 16px; background: var(--panel2); font-size: 15px; border-bottom: 1px solid var(--line); }
     .verse-block { border-bottom: 1px solid var(--line); padding: 10px 12px 12px; }
     .verse-block h3 { margin: 0 0 8px; font-size: 13px; color: var(--muted); letter-spacing: .08em; }
-    .anchor-row { display: grid; grid-template-columns: 58px 70px 180px 130px 1fr 110px; gap: 8px; align-items: center; min-height: 30px; padding: 4px 6px; border-radius: 8px; }
+    .anchor-row { display: grid; grid-template-columns: 58px 70px 180px 130px minmax(160px,1fr) 110px; gap: 8px; align-items: center; min-height: 30px; padding: 4px 6px; border-radius: 8px; }
     .anchor-row:hover { background: rgba(255,255,255,.06); }
     .ref { color: var(--muted); font-variant-numeric: tabular-nums; }
     .markers { color: #f3b6ff; font-size: 12px; }
@@ -301,8 +302,7 @@ def css() -> str:
     .subject-1p { background: var(--yellow); }
     .subject-2p { background: var(--magenta); }
     .subject-1s, .subject-2s, .subject-other { background: #cbd5e1; }
-    .verb { font-family: ui-serif, Georgia, serif; font-size: 16px; }
-    .lemma { display: block; color: var(--muted); font-size: 11px; font-family: ui-sans-serif, system-ui; }
+    .verb { font-family: ui-serif, Georgia, serif; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .rmac { padding: 4px 6px; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; text-align: center; }
     .rmac-subjunctive { background: rgba(214,140,255,.22); color: var(--magenta); border: 1px solid rgba(214,140,255,.35); }
     .rmac-perfect { background: rgba(103,232,249,.18); color: var(--cyan); border: 1px solid rgba(103,232,249,.3); }
@@ -344,6 +344,7 @@ def html_doc(book: str, from_ref: str, to_ref: str, rows: list[dict[str, Any]]) 
         <ul>{phenomena_html(rows)}</ul>
       </div>
       <div class="legend">
+        <p><strong>Display note:</strong> repeated Greek forms may be real repetition in the text. Lemma is hidden from the row and available on hover to avoid false visual duplication.</p>
         <p><strong>What to look for:</strong> continuity pressure, restoration, interruption, clustering, connector environments, lexical gravity, sequence movement, closure pressure, development pressure.</p>
         <p><span class="warning">Important:</span> observations are evidence prompts only, not structural decisions.</p>
       </div>
