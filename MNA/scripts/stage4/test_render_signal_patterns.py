@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-VERSION = "stage4-test-signal-pattern-renderer-v4-compact-subject"
+VERSION = "stage4-test-signal-pattern-renderer-v5-less-noise"
 
 
 def root() -> Path:
@@ -71,57 +71,46 @@ def marker(row):
     return " ".join(parts) if parts else "—"
 
 
+def connector_items(row):
+    items = row.get("connectors_before_anchor") or []
+    if isinstance(items, list) and items:
+        return items
+
+    form = row.get("connector_form") or row.get("explicit_connector_before") or ""
+    if not form:
+        return []
+    distances = row.get("connector_distance_to_anchor") or []
+    if not isinstance(distances, list):
+        distances = [distances]
+    forms = form.split()
+    out = []
+    for i, f in enumerate(forms):
+        dist = distances[i] if i < len(distances) else ""
+        out.append({"form": f, "distance_to_anchor": dist})
+    return out
+
+
 def connector_form(row):
-    return (
-        row.get("connector_form")
-        or row.get("explicit_connector_before")
-        or "—"
-    )
-
-
-def connector_lemma(row):
-    return row.get("connector_lemma") or "—"
-
-
-def connector_index(row):
-    value = row.get("connector_token_index")
-    return str(value) if value not in (None, "") else "—"
-
-
-def connector_distance(row):
-    value = row.get("connector_distance_to_anchor")
-    return str(value) if value not in (None, "") else "—"
-
-
-def connector_before(row):
-    value = row.get("connector_before_anchor")
-    if value is True:
-        return "yes"
-    if value is False:
-        return "no"
-    return "—"
+    items = connector_items(row)
+    if not items:
+        return "—"
+    return " ".join(str(i.get("form", "")) for i in items if i.get("form")) or "—"
 
 
 def connector_display(row):
-    form = connector_form(row)
-    if form == "—":
+    items = connector_items(row)
+    if not items:
         return "—"
-    return f"{form} (idx={connector_index(row)}, dist={connector_distance(row)})"
+    parts = []
+    for item in items:
+        form = item.get("form", "")
+        dist = item.get("distance_to_anchor", "")
+        parts.append(f"{form}({dist})" if dist not in (None, "") else str(form))
+    return " ".join(parts)
 
 
-def recurrence_tag(row, previous_subjects, previous_profiles, previous_connectors):
-    tags = []
-    subj = subject_recurrence_key(row)
-    prof = verbal_profile(row)
-    conn = connector_form(row)
-
-    if subj and subj in previous_subjects:
-        tags.append("SUBJ-RECUR")
-    if prof and prof in previous_profiles:
-        tags.append("VERB-RECUR")
-    if conn != "—" and conn in previous_connectors:
-        tags.append("CONN-RECUR")
-    return ", ".join(tags) if tags else "—"
+def seen_flag(value, seen):
+    return "↩" if value and value in seen else "—"
 
 
 def main() -> int:
@@ -153,7 +142,7 @@ def main() -> int:
     out.append("")
     out.append("## Compact Pattern Table")
     out.append("")
-    out.append("| # | Ref | Verb | Subject | RMAC | Markers | Connector | Conn Lemma | Conn Before | Recurrence |")
+    out.append("| # | Ref | Verb | Subject | RMAC | Markers | Conn | S↩ | V↩ | C↩ |")
     out.append("|---:|---|---|---|---|---|---|---|---|---|")
 
     prev_subjects = set()
@@ -161,29 +150,29 @@ def main() -> int:
     prev_connectors = set()
 
     for r in rows:
-        rec = recurrence_tag(r, prev_subjects, prev_profiles, prev_connectors)
+        subj_key = subject_recurrence_key(r)
+        prof = verbal_profile(r)
+        conn = connector_form(r)
         out.append("| " + " | ".join([
             str(r.get("order", "")),
             f"{r['chapter']}:{r['verse']}",
             str(r.get("greek_form", "")),
             compact_subject(r),
-            verbal_profile(r),
+            prof,
             marker(r),
             connector_display(r),
-            connector_lemma(r),
-            connector_before(r),
-            rec,
+            seen_flag(subj_key, prev_subjects),
+            seen_flag(prof, prev_profiles),
+            seen_flag(conn, prev_connectors) if conn != "—" else "—",
         ]) + " |")
-        prev_subjects.add(subject_recurrence_key(r))
-        prof = verbal_profile(r)
+        prev_subjects.add(subj_key)
         if prof:
             prev_profiles.add(prof)
-        conn = connector_form(r)
         if conn != "—":
             prev_connectors.add(conn)
 
     out.append("")
-    out.append("## Visual Recurrence Lines")
+    out.append("## Visual Lines")
     out.append("")
     out.append("```text")
     prev_subjects = set()
@@ -192,36 +181,17 @@ def main() -> int:
         ref = f"{r['chapter']}:{r['verse']}"
         rec = "↩" if subject_recurrence_key(r) in prev_subjects else " "
         conn = connector_display(r)
-        out.append(f"{ref:<6} {marker(r):<7} CONN={conn:<22} {rec} SUBJ={subj:<22} VERB={r.get('greek_form','')} RMAC={verbal_profile(r)}")
+        out.append(f"{ref:<6} {marker(r):<7} {conn:<16} {rec} {subj:<18} {r.get('greek_form',''):<18} {verbal_profile(r)}")
         prev_subjects.add(subject_recurrence_key(r))
     out.append("```")
 
     out.append("")
-    out.append("## Connector Field Check")
-    out.append("")
-    connector_rows = [r for r in rows if connector_form(r) != "—" or r.get("connector_before_anchor") is True]
-    out.append(f"Connector rows in selected range: `{len(connector_rows)}`")
-    out.append("")
-    out.append("| Ref | Verb | connector_form | connector_lemma | connector_token_index | connector_distance_to_anchor | connector_before_anchor |")
-    out.append("|---|---|---|---|---|---|---|")
-    for r in connector_rows:
-        out.append("| " + " | ".join([
-            f"{r['chapter']}:{r['verse']}",
-            str(r.get("greek_form", "")),
-            connector_form(r),
-            connector_lemma(r),
-            connector_index(r),
-            connector_distance(r),
-            connector_before(r),
-        ]) + " |")
-
-    out.append("")
     out.append("## Legend")
     out.append("")
-    out.append("- `↩` = subject signal has appeared earlier in the selected range.")
-    out.append("- `SUBJ-RECUR` = subject signal recurrence using explicit subject when present, otherwise person/number.")
-    out.append("- `VERB-RECUR` = same RMAC code recurs.")
-    out.append("- `CONN-RECUR` = same raw connector form recurs.")
+    out.append("- `Conn` renders raw connectors as `connector(distance-to-anchor)`, e.g. `γάρ(2)`.")
+    out.append("- `S↩` = same subject signal appeared earlier in the selected range.")
+    out.append("- `V↩` = same RMAC code appeared earlier in the selected range.")
+    out.append("- `C↩` = same raw connector form appeared earlier in the selected range.")
     out.append("- `[S]` and `[M]` are raw Stage 3 signals, not break decisions.")
 
     out_dir.mkdir(parents=True, exist_ok=True)
