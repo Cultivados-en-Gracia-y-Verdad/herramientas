@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-VERSION = "stage4-test-signal-pattern-renderer-v5-less-noise"
+VERSION = "stage4-test-signal-pattern-renderer-v6-map-view"
 
 
 def root() -> Path:
@@ -75,7 +75,6 @@ def connector_items(row):
     items = row.get("connectors_before_anchor") or []
     if isinstance(items, list) and items:
         return items
-
     form = row.get("connector_form") or row.get("explicit_connector_before") or ""
     if not form:
         return []
@@ -136,10 +135,24 @@ def main() -> int:
     out.append("")
     out.append("TEMPORARY TEST OUTPUT — NOT CANONICAL")
     out.append("")
-    out.append("Purpose: render Stage 3 raw signals so recurrence and possible local blocks become visible.")
-    out.append("")
     out.append("No H2/H1/H0 decisions are made here.")
     out.append("")
+
+    out.append("## Structural Map View")
+    out.append("")
+    out.append("```text")
+    out.append("REF     MK      CONN             SUBJ       VERB                 RMAC")
+    out.append("──────  ─────── ──────────────── ────────── ─────────────────── ─────────")
+    prev_ref = None
+    for r in rows:
+        ref = f"{r['chapter']}:{r['verse']}"
+        if prev_ref and ref != prev_ref:
+            out.append("")
+        out.append(f"{ref:<6}  {marker(r):<7} {connector_display(r):<16} {compact_subject(r):<10} {str(r.get('greek_form','')):<19} {verbal_profile(r)}")
+        prev_ref = ref
+    out.append("```")
+    out.append("")
+
     out.append("## Compact Pattern Table")
     out.append("")
     out.append("| # | Ref | Verb | Subject | RMAC | Markers | Conn | S↩ | V↩ | C↩ |")
@@ -170,20 +183,6 @@ def main() -> int:
             prev_profiles.add(prof)
         if conn != "—":
             prev_connectors.add(conn)
-
-    out.append("")
-    out.append("## Visual Lines")
-    out.append("")
-    out.append("```text")
-    prev_subjects = set()
-    for r in rows:
-        subj = compact_subject(r)
-        ref = f"{r['chapter']}:{r['verse']}"
-        rec = "↩" if subject_recurrence_key(r) in prev_subjects else " "
-        conn = connector_display(r)
-        out.append(f"{ref:<6} {marker(r):<7} {conn:<16} {rec} {subj:<18} {r.get('greek_form',''):<18} {verbal_profile(r)}")
-        prev_subjects.add(subject_recurrence_key(r))
-    out.append("```")
 
     out.append("")
     out.append("## Legend")
