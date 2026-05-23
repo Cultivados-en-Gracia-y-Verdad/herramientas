@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-VERSION = "stage4-test-signal-pattern-renderer-v7-color"
+VERSION = "stage4-test-signal-pattern-renderer-v8-color-modes"
 
 RESET = "\033[0m"
 BLUE = "\033[34m"
@@ -15,7 +15,6 @@ CYAN = "\033[36m"
 MAGENTA = "\033[35m"
 WHITE = "\033[37m"
 DIM = "\033[2m"
-BOLD = "\033[1m"
 
 
 def root() -> Path:
@@ -65,13 +64,6 @@ def compact_subject(row):
     return pn
 
 
-def subject_recurrence_key(row):
-    explicit = str(row.get("explicit_subject_before") or "").strip()
-    if explicit:
-        return f"LEX:{explicit}"
-    return f"MORPH:{compact_person_number(row)}"
-
-
 def marker(row):
     parts = []
     if row.get("s_marker"):
@@ -99,13 +91,6 @@ def connector_items(row):
     return out
 
 
-def connector_form(row):
-    items = connector_items(row)
-    if not items:
-        return "—"
-    return " ".join(str(i.get("form", "")) for i in items if i.get("form")) or "—"
-
-
 def connector_display(row):
     items = connector_items(row)
     if not items:
@@ -119,9 +104,7 @@ def connector_display(row):
 
 
 def colorize(value: str, color: str, enabled: bool) -> str:
-    if not enabled:
-        return value
-    return f"{color}{value}{RESET}"
+    return f"{color}{value}{RESET}" if enabled else value
 
 
 def subject_color(subject: str) -> str:
@@ -149,18 +132,30 @@ def connector_color(conn: str) -> str:
 
 
 def rmac_color(rmac: str) -> str:
-    if "S" in rmac[4:6] if len(rmac) > 5 else False:
+    if "-S" in rmac:
         return MAGENTA
     if "V-X" in rmac:
         return CYAN
+    if "V-F" in rmac:
+        return GREEN
     return WHITE
 
 
-def seen_flag(value, seen):
-    return "↩" if value and value in seen else "—"
+def apply_color(value: str, signal: str, color_mode: str) -> str:
+    if color_mode == "none":
+        return value
+    if color_mode == "all":
+        return value
+    # handled column-by-column in render_map
+    return value
 
 
-def render_map(rows, color: bool) -> list[str]:
+def render_map(rows, color_mode: str) -> list[str]:
+    color_all = color_mode == "all"
+    color_subject = color_mode in {"all", "subject"}
+    color_rmac = color_mode in {"all", "rmac"}
+    color_connector = color_mode in {"all", "connector"}
+
     out = []
     out.append("REF     MK      CONN             SUBJ       VERB                 RMAC")
     out.append("──────  ─────── ──────────────── ────────── ─────────────────── ─────────")
@@ -172,12 +167,15 @@ def render_map(rows, color: bool) -> list[str]:
         subj = compact_subject(r)
         conn = connector_display(r)
         rmac = verbal_profile(r)
+        conn_text = colorize(f"{conn:<16}", connector_color(conn), color_connector)
+        subj_text = colorize(f"{subj:<10}", subject_color(subj), color_subject)
+        rmac_text = colorize(rmac, rmac_color(rmac), color_rmac)
         out.append(
             f"{ref:<6}  {marker(r):<7} "
-            f"{colorize(f'{conn:<16}', connector_color(conn), color)} "
-            f"{colorize(f'{subj:<10}', subject_color(subj), color)} "
+            f"{conn_text} "
+            f"{subj_text} "
             f"{str(r.get('greek_form','')):<19} "
-            f"{colorize(rmac, rmac_color(rmac), color)}"
+            f"{rmac_text}"
         )
         prev_ref = ref
     return out
@@ -188,7 +186,8 @@ def main() -> int:
     ap.add_argument("book")
     ap.add_argument("--from", dest="from_ref", required=True)
     ap.add_argument("--to", dest="to_ref", required=True)
-    ap.add_argument("--color", action="store_true", help="Print ANSI-colored structural map to terminal.")
+    ap.add_argument("--color", action="store_true", help="Alias for --color-mode all.")
+    ap.add_argument("--color-mode", choices=["none", "all", "subject", "rmac", "connector"], default="none")
     args = ap.parse_args()
 
     book = args.book.strip().lower()
@@ -201,12 +200,14 @@ def main() -> int:
     out_path = out_dir / f"signal-patterns-{args.from_ref.replace(':','-')}-{args.to_ref.replace(':','-')}.md"
 
     rows = [r for r in load_jsonl(in_path) if in_range(r, start, end)]
+    color_mode = "all" if args.color else args.color_mode
 
-    if args.color:
+    if color_mode != "none":
         print(f"MNA Stage 4 TEST — Colored Signal Map: {book} {args.from_ref}-{args.to_ref}")
+        print(f"COLOR MODE: {color_mode}")
         print("TEMPORARY TEST OUTPUT — NOT CANONICAL")
         print()
-        print("\n".join(render_map(rows, True)))
+        print("\n".join(render_map(rows, color_mode)))
         return 0
 
     out = []
@@ -216,19 +217,17 @@ def main() -> int:
     out.append("")
     out.append("No H2/H1/H0 decisions are made here.")
     out.append("")
-
     out.append("## Structural Map View")
     out.append("")
     out.append("```text")
-    out.extend(render_map(rows, False))
+    out.extend(render_map(rows, "none"))
     out.append("```")
     out.append("")
-
     out.append("## Legend")
     out.append("")
     out.append("- `Conn` renders raw connectors as `connector(distance-to-anchor)`, e.g. `γάρ(2)`.")
     out.append("- `[S]` and `[M]` are raw Stage 3 signals, not break decisions.")
-    out.append("- Use `--color` to print an ANSI-colored terminal view.")
+    out.append("- Color modes: `--color-mode subject`, `--color-mode rmac`, `--color-mode connector`, or `--color-mode all`.")
 
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path.write_text("\n".join(out), encoding="utf-8")
