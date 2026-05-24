@@ -1,0 +1,47 @@
+{
+  "book": "1corintios",
+  "record_type": "stage5_variant_summary",
+  "variants": [
+    {
+      "avg_group_size": 8.42,
+      "disruption_streak": 2,
+      "groups": 122,
+      "large_groups_10_plus": 34,
+      "low_confidence": 51,
+      "medium_confidence": 28,
+      "medium_high_confidence": 43,
+      "min_size": 2,
+      "outputs": {
+        "candidate-boundary-audit.json": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-2__min-2/candidate-boundary-audit.json",
+        "candidate-boundary-audit.md": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-2__min-2/candidate-boundary-audit.md",
+        "candidate-groups.jsonl": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-2__min-2/candidate-groups.jsonl",
+        "candidate-groups.md": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-2__min-2/candidate-groups.md",
+        "grouping-audit.json": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-2__min-2/grouping-audit.json"
+      },
+      "small_groups_1_to_2": 33,
+      "threshold": 4,
+      "variant": "threshold-4__streak-2__min-2"
+    },
+    {
+      "avg_group_size": 22.82,
+      "disruption_streak": 3,
+      "groups": 45,
+      "large_groups_10_plus": 23,
+      "low_confidence": 10,
+      "medium_confidence": 9,
+      "medium_high_confidence": 26,
+      "min_size": 2,
+      "outputs": {
+        "candidate-boundary-audit.json": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-3__min-2/candidate-boundary-audit.json",
+        "candidate-boundary-audit.md": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-3__min-2/candidate-boundary-audit.md",
+        "candidate-groups.jsonl": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-3__min-2/candidate-groups.jsonl",
+        "candidate-groups.md": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-3__min-2/candidate-groups.md",
+        "grouping-audit.json": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/MNA/datasets/stage5-variants/1corintios/threshold-4__streak-3__min-2/grouping-audit.json"
+      },
+      "small_groups_1_to_2": 0,
+      "threshold": 4,
+      "variant": "threshold-4__streak-3__min-2"
+    }
+  ],
+  "version": "stage5-variant-runner-v1"
+}
