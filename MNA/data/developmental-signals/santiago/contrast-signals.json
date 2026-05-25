@@ -1,0 +1,41 @@
+{
+  "book": "santiago",
+  "chapter": 1,
+  "record_type": "developmental_contrast_signal_seed",
+  "version": "developmental-contrast-seed-v1",
+  "signals": [
+    {
+      "signal_id": "santiago-1-lack-completion",
+      "signal_type": "recurring_unresolved_contrast",
+      "label": "falta / completo",
+      "status": "REVIEW",
+      "terms": {
+        "side_a": ["falta", "falte", "falto", "carece", "necesita"],
+        "side_b": ["completo", "perfecto", "íntegro", "sin que nada falte"]
+      },
+      "observation_question": "¿Sigue activa la presión entre falta y completo?"
+    },
+    {
+      "signal_id": "santiago-1-trial-steadfastness",
+      "signal_type": "recurring_unresolved_contrast",
+      "label": "prueba / perseverancia",
+      "status": "REVIEW",
+      "terms": {
+        "side_a": ["prueba", "pruebas", "tentación", "tentado", "tentados"],
+        "side_b": ["perseverancia", "resiste", "soporta", "aprobado"]
+      },
+      "observation_question": "¿La presión de prueba sigue produciendo o examinando perseverancia?"
+    },
+    {
+      "signal_id": "santiago-1-stability-instability",
+      "signal_type": "recurring_unresolved_contrast",
+      "label": "estabilidad / inestabilidad",
+      "status": "REVIEW",
+      "terms": {
+        "side_a": ["duda", "dudando", "inconstante", "doble ánimo", "llevado", "sacudida"],
+        "side_b": ["fe", "pida con fe", "recibirá", "sabiduría"]
+      },
+      "observation_question": "¿La inestabilidad interrumpe la presión hacia lo completo?"
+    }
+  ]
+}
