@@ -59,9 +59,9 @@ def parse_ref_line(raw: str) -> tuple[str, str] | None:
 
 def read_nbla(book: str, mna: Path) -> list[dict[str, str]]:
     candidates = [
+        mna / "SOURCES" / "NBLA" / f"{book}.nbla.md",
         mna / "data" / "NBLA" / f"{book}.nbla.md",
         mna / "data" / "NBLA" / f"{book}.md",
-        mna / "../data" / "NBLA" / f"{book}.nbla.md",
     ]
 
     path = next((p.resolve() for p in candidates if p.exists()), None)
