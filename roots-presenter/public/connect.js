@@ -4,6 +4,11 @@ const views = {
     titleKey: "controllerView",
     helpKey: "scanControllerQr"
   },
+  tablet: {
+    path: "/tablet.html",
+    titleKey: "tabletView",
+    helpKey: "scanTabletQr"
+  },
   audience: {
     path: "/audience.html",
     titleKey: "audience",
@@ -14,11 +19,6 @@ const views = {
     titleKey: "director",
     helpKey: "scanDirectorQr"
   },
-  stage: {
-    path: "/stage.html",
-    titleKey: "stageView",
-    helpKey: "scanStageQr"
-  }
 };
 
 let connectionInfo = {};

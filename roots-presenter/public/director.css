@@ -293,6 +293,22 @@ body.song-mode {
   padding-right: 0.2rem;
 }
 
+.section-drawer {
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.song-library-heading {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.5rem 0.25rem 0.15rem;
+  background: rgba(15, 23, 42, 0.98);
+  color: var(--director-accent);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 .song-choice {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
@@ -317,6 +333,15 @@ body.song-mode {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.section-choice.level-2 {
+  margin-left: 1rem;
+}
+
+.section-choice.active {
+  border-color: var(--director-accent);
+  background: rgba(8, 47, 73, 0.42);
 }
 
 .director-position {

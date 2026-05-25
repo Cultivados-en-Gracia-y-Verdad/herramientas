@@ -16,6 +16,7 @@
       </div>
       <div class="director-header-actions">
         <button id="teachingButton" type="button" class="ghost" data-i18n="teaching">Teaching</button>
+        <button id="sectionsButton" type="button" class="ghost" data-i18n="courseSections">Sections</button>
         <button id="songsButton" type="button" class="ghost" data-i18n="songs">Songs</button>
         <button id="fullscreenButton" type="button" class="ghost" data-i18n="fullscreen">Fullscreen</button>
       </div>
@@ -24,6 +25,17 @@
     <section id="directorContent" class="director-content">
       <div class="empty" data-i18n="waitingForPresenter">Waiting for CGV Presenter...</div>
     </section>
+
+    <aside id="sectionDrawer" class="song-drawer section-drawer" aria-label="Course sections" data-i18n-aria-label="courseSections">
+      <div class="song-drawer-header">
+        <div>
+          <strong data-i18n="courseSections">Course Sections</strong>
+          <span data-i18n="goToSection">Go to section</span>
+        </div>
+        <button id="closeSectionsButton" type="button" class="ghost" data-i18n="close">Close</button>
+      </div>
+      <div id="sectionList" class="song-list section-list"></div>
+    </aside>
 
     <aside id="songDrawer" class="song-drawer" aria-label="Song picker" data-i18n-aria-label="songPicker">
       <div class="song-drawer-header">

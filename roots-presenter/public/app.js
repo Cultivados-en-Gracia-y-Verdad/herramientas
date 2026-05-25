@@ -153,8 +153,8 @@ function renderControllerProjector(projectorSlide) {
   projectorSlide.style.setProperty("--song-background", controllerState.background || "#0f172a");
   projectorSlide.style.setProperty("--song-color", controllerState.textColor || "#ffffff");
   projectorSlide.style.setProperty("--song-accent", controllerState.accentColor || "#38bdf8");
-  projectorSlide.classList.toggle("song-has-media", !!media && !isVideoMedia(media));
-  projectorSlide.classList.toggle("song-has-video", !!media && isVideoMedia(media));
+  projectorSlide.classList.toggle("song-has-media", !controllerState.blank && !!media && !isVideoMedia(media));
+  projectorSlide.classList.toggle("song-has-video", !controllerState.blank && !!media && isVideoMedia(media));
 
   if (controllerState.blank) {
     projectorSlide.classList.add("blank-output");

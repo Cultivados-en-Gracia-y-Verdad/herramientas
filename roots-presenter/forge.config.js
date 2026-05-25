@@ -2,11 +2,22 @@ const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 const path = require('path');
 
+const macEntitlements = path.resolve(__dirname, 'build', 'entitlements.mac.plist');
+
 module.exports = {
   packagerConfig: {
     name: 'CGV Presenter',
     asar: true,
     icon: './assets/cgv-app-icon',
+    osxSign: {
+      identity: '-',
+      identityValidation: false,
+      preAutoEntitlements: false,
+      optionsForFile: () => ({
+        entitlements: macEntitlements,
+        hardenedRuntime: false,
+      }),
+    },
     extraResource: [
       path.resolve(__dirname, 'bibles'),
       path.resolve(__dirname, 'courses', 'Romanos'),

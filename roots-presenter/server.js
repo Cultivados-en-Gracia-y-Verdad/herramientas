@@ -65,9 +65,17 @@ const cgvRepository = {
   branch: "main",
   coursesPath: "courses"
 };
+const songRepository = {
+  owner: "johnwry",
+  repo: "canciones",
+  branch: "main",
+  songsPath: "songs/chordpro"
+};
 const cgvRepositoryBaseUrl = `https://github.com/${cgvRepository.owner}/${cgvRepository.repo}/tree/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
 const cgvApiBaseUrl = `https://api.github.com/repos/${cgvRepository.owner}/${cgvRepository.repo}`;
 const cgvRawBaseUrl = `https://raw.githubusercontent.com/${cgvRepository.owner}/${cgvRepository.repo}/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
+const songApiBaseUrl = `https://api.github.com/repos/${songRepository.owner}/${songRepository.repo}`;
+const songRawBaseUrl = `https://raw.githubusercontent.com/${songRepository.owner}/${songRepository.repo}/${songRepository.branch}/${songRepository.songsPath}`;
 const synthesisMarker = "::roots-synthesis::";
 const h4IntroMarker = "::roots-h4-intro::";
 
@@ -106,9 +114,9 @@ app.get("/join-info", (req, res) => {
 app.get("/connection-info", (req, res) => {
   res.json({
     controller: getJoinInfo("/controller.html"),
+    tablet: getJoinInfo("/tablet.html"),
     audience: getJoinInfo("/audience.html"),
-    director: getJoinInfo("/director.html"),
-    stage: getJoinInfo("/stage.html")
+    director: getJoinInfo("/director.html")
   });
 });
 app.get("/connection-qr.svg", async (req, res) => {
@@ -155,9 +163,7 @@ app.use("/background-media", (req, res, next) => {
 });
 app.use("/bundled-background-media", express.static(bundledBackgroundsDir));
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/course-assets", (req, res, next) => {
-  express.static(currentCourse?.rootDir || defaultCourseDir)(req, res, next);
-});
+app.use("/course-assets", serveCourseAsset);
 
 let slides = [];
 let presentationMeta = {};
@@ -248,6 +254,7 @@ function normalizeJoinPath(value) {
   const allowedPaths = new Set([
     "/audience.html",
     "/controller.html",
+    "/tablet.html",
     "/director.html",
     "/stage.html"
   ]);
@@ -414,6 +421,75 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
+function isExternalOrRootedUrl(value) {
+  return /^(?:[a-z][a-z0-9+.-]*:|\/\/|#|\/)/i.test(String(value || ""));
+}
+
+function rewriteCourseAssetUrl(value) {
+  const url = String(value || "").trim();
+  if (!url || isExternalOrRootedUrl(url)) return url;
+
+  const normalized = url.replace(/^\.?\//, "");
+  return `/course-assets/${encodeURI(normalized).replace(/%25([0-9a-f]{2})/gi, "%$1")}`;
+}
+
+const courseMarkdownRenderer = new marked.Renderer();
+
+courseMarkdownRenderer.image = function image(token) {
+  const href = rewriteCourseAssetUrl(token.href);
+  const title = token.title ? ` title="${escapeHtml(token.title)}"` : "";
+  const alt = token.text || "";
+
+  return `<img src="${escapeHtml(href)}" alt="${escapeHtml(alt)}"${title}>`;
+};
+
+function renderMarkdown(value) {
+  return marked.parse(value, { renderer: courseMarkdownRenderer });
+}
+
+function renderMarkdownInline(value) {
+  return marked.parseInline(value, { renderer: courseMarkdownRenderer });
+}
+
+function uniqueExistingDirectories(directories) {
+  const seen = new Set();
+  return directories
+    .filter(Boolean)
+    .map(directory => path.resolve(directory))
+    .filter(directory => {
+      if (seen.has(directory) || !fs.existsSync(directory)) return false;
+      seen.add(directory);
+      return true;
+    });
+}
+
+function serveCourseAsset(req, res, next) {
+  const directories = uniqueExistingDirectories([
+    currentCourse?.rootDir,
+    defaultCourseDir,
+    bundledDefaultCourseDir
+  ]);
+  let index = 0;
+
+  const tryNextDirectory = err => {
+    if (err) {
+      next(err);
+      return;
+    }
+
+    const directory = directories[index];
+    index += 1;
+    if (!directory) {
+      next();
+      return;
+    }
+
+    express.static(directory)(req, res, tryNextDirectory);
+  };
+
+  tryNextDirectory();
+}
+
 function escapeRegExp(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
@@ -514,8 +590,16 @@ function githubApiUrl(pathname) {
   return `${cgvApiBaseUrl}${pathname}`;
 }
 
+function songGithubApiUrl(pathname) {
+  return `${songApiBaseUrl}${pathname}`;
+}
+
 function rawCgvCourseUrl(relativePath) {
   return `${cgvRawBaseUrl}/${String(relativePath).split("/").map(encodeURIComponent).join("/")}`;
+}
+
+function rawSongUrl(relativePath) {
+  return `${songRawBaseUrl}/${String(relativePath).split("/").map(encodeURIComponent).join("/")}`;
 }
 
 function isSafeCgvCoursePath(value) {
@@ -632,6 +716,14 @@ function shouldDownloadCourseBlob(relativePath) {
   return true;
 }
 
+function shouldDownloadSongBlob(relativePath) {
+  const lowerPath = relativePath.toLowerCase();
+  const fileName = path.basename(relativePath);
+
+  if (fileName === ".DS_Store" || fileName.startsWith("~$")) return false;
+  return /\.(cho|chordpro|chopro|pro)$/i.test(lowerPath);
+}
+
 function chooseCourseEntry(files) {
   const markdownFiles = files
     .filter(file => /\.md$/i.test(file))
@@ -675,6 +767,18 @@ async function fetchCgvRepositoryTree() {
 
   if (!Array.isArray(tree?.tree)) {
     throw new Error("The CGV repository tree could not be loaded.");
+  }
+
+  return tree.tree;
+}
+
+async function fetchSongRepositoryTree() {
+  const tree = await fetchJson(songGithubApiUrl(
+    `/git/trees/${encodeURIComponent(songRepository.branch)}?recursive=1`
+  ));
+
+  if (!Array.isArray(tree?.tree)) {
+    throw new Error("The song repository tree could not be loaded.");
   }
 
   return tree.tree;
@@ -745,6 +849,37 @@ async function downloadCourseFromCgv(course) {
   return {
     courseDir: destinationDir,
     manifest,
+    fileCount: files.length
+  };
+}
+
+async function syncSongsFromGithub() {
+  ensureLibraryFolders();
+
+  const songsDir = getSongsDir();
+  const tree = await fetchSongRepositoryTree();
+  const repoPrefix = `${songRepository.songsPath}/`;
+  const files = tree
+    .filter(item => item.type === "blob" && item.path.startsWith(repoPrefix))
+    .map(item => item.path.slice(repoPrefix.length))
+    .filter(shouldDownloadSongBlob);
+
+  if (!files.length) {
+    throw new Error("No downloadable songs were found in the GitHub song repository.");
+  }
+
+  fs.mkdirSync(songsDir, { recursive: true });
+
+  for (const relativePath of files) {
+    await downloadFile(
+      rawSongUrl(relativePath),
+      path.join(songsDir, relativePath)
+    );
+  }
+
+  return {
+    repository: `https://github.com/${songRepository.owner}/${songRepository.repo}/tree/${songRepository.branch}/${songRepository.songsPath}`,
+    songsDir,
     fileCount: files.length
   };
 }
@@ -1266,12 +1401,17 @@ function enrichBibleReferences(markdownLine) {
   );
 }
 
+function getMarkdownHeadingLevel(line) {
+  const match = String(line || "").match(/^(#{1,6})\s+/);
+  return match ? match[1].length : 0;
+}
+
 function renderLine(line) {
   const manualTitle = parseManualTitleBlock(line);
   if (manualTitle) {
     return `
       <div class="manual-${manualTitle.type}">
-        ${enrichBibleReferences(marked.parseInline(manualTitle.text).trim())}
+        ${enrichBibleReferences(renderMarkdownInline(manualTitle.text).trim())}
       </div>
     `.trim();
   }
@@ -1324,9 +1464,9 @@ function renderLine(line) {
 
   if (line.startsWith(synthesisMarker)) {
     const synthesis = JSON.parse(line.slice(synthesisMarker.length));
-    const title = enrichBibleReferences(marked.parseInline(synthesis.title)).trim();
+    const title = enrichBibleReferences(renderMarkdownInline(synthesis.title)).trim();
     const points = synthesis.points
-      .map(point => `<li>${enrichBibleReferences(marked.parseInline(point)).trim()}</li>`)
+      .map(point => `<li>${enrichBibleReferences(renderMarkdownInline(point)).trim()}</li>`)
       .join("");
 
     return {
@@ -1345,8 +1485,8 @@ function renderLine(line) {
 
     return {
       h4Intro: true,
-      html: marked.parse(enrichBibleReferences(intro.full)).trim(),
-      h4OnlyHtml: marked.parse(enrichBibleReferences(intro.h4)).trim()
+      html: renderMarkdown(enrichBibleReferences(intro.full)).trim(),
+      h4OnlyHtml: renderMarkdown(enrichBibleReferences(intro.h4)).trim()
     };
   }
 
@@ -1355,13 +1495,16 @@ function renderLine(line) {
   if (definitionMatch) {
     return `
       <div class="definition">
-        <div class="definition-term">${enrichBibleReferences(marked.parseInline(definitionMatch[1])).trim()}</div>
-        <div class="definition-text">${enrichBibleReferences(marked.parseInline(definitionMatch[2])).trim()}</div>
+        <div class="definition-term">${enrichBibleReferences(renderMarkdownInline(definitionMatch[1])).trim()}</div>
+        <div class="definition-text">${enrichBibleReferences(renderMarkdownInline(definitionMatch[2])).trim()}</div>
       </div>
     `.trim();
   }
 
-  const html = enrichBibleReferences(marked.parse(line)).trim();
+  const headingLevel = getMarkdownHeadingLevel(line);
+  const html = headingLevel > 0 && headingLevel <= 2
+    ? renderMarkdown(line).trim()
+    : enrichBibleReferences(renderMarkdown(line)).trim();
 
   if (line.startsWith("- ")) {
     return html.replace("<ul>", '<ul class="comment-bullets">');
@@ -1496,7 +1639,6 @@ function seedStarterSongs() {
 
 function seedStarterCourse() {
   const starterRomanosCourseDir = getStarterRomanosCourseDir();
-  if (isLoadableCourseDir(starterRomanosCourseDir)) return;
 
   copyDirectoryFiltered(bundledDefaultCourseDir, starterRomanosCourseDir, {
     excludeDirs: new Set(["sessions"]),
@@ -2978,6 +3120,7 @@ function buildPayload(participantId = null) {
     session: getSessionSummary(),
     connection: getJoinInfo(),
     presentation: presentationMeta,
+    headings: getHeadingIndex(2),
     language: getAppLanguage(),
     bibleVersion: getBibleVersion(),
     quizzes: quizBank.map(quiz => publicQuiz(quiz)),
@@ -3201,6 +3344,16 @@ app.get("/state.json", (req, res) => {
 
 app.get("/songs", (req, res) => {
   res.json(loadSongLibrary());
+});
+
+app.post("/songs/sync", async (req, res) => {
+  try {
+    const result = await syncSongsFromGithub();
+    res.json(result);
+    io.emit("songs-updated", result);
+  } catch (error) {
+    res.status(500).json({ error: error.message || "Could not download songs." });
+  }
 });
 
 app.get("/backgrounds", (req, res) => {

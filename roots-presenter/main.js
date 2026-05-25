@@ -91,6 +91,10 @@ const MAIN_TRANSLATIONS = {
     languageSettings: "Idioma",
     style: "Estilo",
     downloadCourses: "Descargar cursos",
+    downloadSongs: "Descargar canciones de GitHub",
+    songsDownloadedTitle: "Canciones actualizadas",
+    songsDownloadedMessage: "Se descargaron {count} canciones desde GitHub.",
+    songsDownloadFailedTitle: "No se pudieron descargar las canciones",
     controller: "Control",
     connectionQr: "Código QR de conexión",
     stageView: "Vista de escenario",
@@ -188,6 +192,10 @@ MAIN_TRANSLATIONS.en = {
   languageSettings: "Language",
   style: "Style",
   downloadCourses: "Download Courses",
+  downloadSongs: "Download Songs from GitHub",
+  songsDownloadedTitle: "Songs Updated",
+  songsDownloadedMessage: "Downloaded {count} songs from GitHub.",
+  songsDownloadFailedTitle: "Could Not Download Songs",
   controller: "Controller",
   connectionQr: "Connection QR",
   stageView: "Stage View",
@@ -442,6 +450,32 @@ function postJsonLocal(pathname, body) {
   });
 }
 
+function postLocalJsonResponse(pathname) {
+  return new Promise((resolve, reject) => {
+    const request = http.request(`${APP_URL}${pathname}`, { method: "POST" }, response => {
+      let content = "";
+      response.setEncoding("utf-8");
+      response.on("data", chunk => {
+        content += chunk;
+      });
+      response.on("end", () => {
+        const data = content ? JSON.parse(content) : {};
+        if (response.statusCode < 200 || response.statusCode >= 300) {
+          reject(new Error(data.error || `Request failed with status ${response.statusCode}`));
+          return;
+        }
+        resolve(data);
+      });
+    });
+
+    request.on("error", reject);
+    request.setTimeout(120000, () => {
+      request.destroy(new Error("Request timed out."));
+    });
+    request.end();
+  });
+}
+
 async function loadDownloadedCourse() {
   try {
     const library = await getCourseLibrary();
@@ -580,6 +614,23 @@ async function openLibraryFolder() {
 async function openSongsFolder() {
   const paths = await getLibraryPaths();
   await openFolderPath(paths.songs, mt("openSongsFolder"));
+}
+
+async function downloadSongsFromGithub() {
+  try {
+    const result = await postLocalJsonResponse("/songs/sync");
+    await dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
+      type: "info",
+      title: mt("songsDownloadedTitle"),
+      message: mti("songsDownloadedMessage", { count: result.fileCount || 0 }),
+      detail: result.songsDir || ""
+    });
+  } catch (error) {
+    dialog.showErrorBox(
+      mt("songsDownloadFailedTitle"),
+      error?.message || mt("songsDownloadFailedTitle")
+    );
+  }
 }
 
 async function openBackgroundsFolder() {
@@ -1080,17 +1131,21 @@ function createMenu() {
         },
         { type: "separator" },
         {
+          label: `${mt("downloadSongs")}...`,
+          click: downloadSongsFromGithub
+        },
+        {
+          label: mt("openSongsFolder"),
+          click: openSongsFolder
+        },
+        { type: "separator" },
+        {
           label: mt("openLibraryFolder"),
           click: openLibraryFolder
         },
         {
           label: mt("openCourseLibraryFolder"),
           click: openCourseLibraryFolder
-        },
-        { type: "separator" },
-        {
-          label: mt("openSongsFolder"),
-          click: openSongsFolder
         },
         {
           label: mt("openBackgroundsFolder"),
@@ -1142,11 +1197,6 @@ function createMenu() {
           label: mt("showConnectionQr"),
           accelerator: "CmdOrCtrl+Shift+Q",
           click: openConnectionWindow
-        },
-        {
-          label: mt("openStageView"),
-          accelerator: "CmdOrCtrl+Shift+S",
-          click: openStageWindow
         },
         {
           label: mt("openDirector"),

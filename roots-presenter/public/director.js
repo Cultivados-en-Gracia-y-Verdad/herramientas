@@ -143,6 +143,16 @@ function getSelectedSong() {
   return songs.find(song => song.id === selectedSongId) || songs[0] || null;
 }
 
+function getSongLibraryName(song) {
+  const parts = String(song?.file || "").split("/").filter(Boolean);
+  return parts.length > 1 ? parts.slice(0, -1).join(" / ") : t("songs");
+}
+
+function getSongNumber(song, fallbackIndex = 0) {
+  const fileName = String(song?.file || "").split("/").pop() || "";
+  return fileName.match(/^[A-Za-z]*(\d+)/)?.[1] || String(fallbackIndex + 1).padStart(3, "0");
+}
+
 function getSongPayload(song = getSelectedSong()) {
   const controllerState = latestState.controllerState || {};
 
@@ -186,17 +196,41 @@ function renderSongList() {
     ? songs.filter(song => `${song.file}\n${song.title}\n${song.lyrics}`.toLowerCase().includes(query))
     : songs;
 
+  let previousLibrary = "";
   list.innerHTML = visibleSongs.length
-    ? visibleSongs.map(song => {
-        const number = song.file?.match(/^(\d+)/)?.[1] || "";
+    ? visibleSongs.map((song, index) => {
+        const libraryName = getSongLibraryName(song);
+        const libraryHeader = libraryName !== previousLibrary
+          ? `<div class="song-library-heading">${escapeHtml(libraryName)}</div>`
+          : "";
+        previousLibrary = libraryName;
+
         return `
+          ${libraryHeader}
           <button type="button" class="song-choice" data-song-id="${escapeHtml(song.id)}">
-            <b>${escapeHtml(number)}</b>
+            <b>${escapeHtml(getSongNumber(song, index))}</b>
             <span>${escapeHtml(song.title)}</span>
           </button>
         `;
       }).join("")
     : `<div class="empty compact">${t("noSongsFound")}</div>`;
+}
+
+function renderSectionList(headings = latestState.headings || []) {
+  const list = byId("sectionList");
+  if (!list) return;
+
+  list.innerHTML = headings.length
+    ? headings.map(heading => {
+        const active = Number(latestState.slide) === Number(heading.slide) ? " active" : "";
+        return `
+          <button type="button" class="song-choice section-choice level-${heading.level}${active}" data-slide-index="${heading.slide}">
+            <b>H${heading.level}</b>
+            <span>${escapeHtml(heading.title)}</span>
+          </button>
+        `;
+      }).join("")
+    : `<div class="empty compact">${t("noCourseSections")}</div>`;
 }
 
 function openSongDrawer() {
@@ -206,6 +240,20 @@ function openSongDrawer() {
 
 function closeSongDrawer() {
   byId("songDrawer").classList.remove("open");
+}
+
+function openSectionDrawer() {
+  renderSectionList();
+  byId("sectionDrawer").classList.add("open");
+}
+
+function closeSectionDrawer() {
+  byId("sectionDrawer").classList.remove("open");
+}
+
+async function jumpToCourseSlide(slideIndex) {
+  await post(`/jump/${encodeURIComponent(slideIndex)}`);
+  closeSectionDrawer();
 }
 
 function goNext() {
@@ -273,6 +321,7 @@ function fitDirectorText() {
 
 function renderDirector(state = {}) {
   latestState = state;
+  renderSectionList(state.headings || []);
 
   const controllerState = state.controllerState || {};
   const isSongMode = !!controllerState.active;
@@ -357,11 +406,14 @@ function endSwipe(event) {
 }
 
 socket.on("state", renderDirector);
+socket.on("songs-updated", loadSongs);
 
 byId("nextButton").addEventListener("click", goNext);
 byId("previousButton").addEventListener("click", goPrevious);
 byId("fullscreenButton").addEventListener("click", toggleFullscreen);
 byId("teachingButton").addEventListener("click", returnToTeaching);
+byId("sectionsButton").addEventListener("click", openSectionDrawer);
+byId("closeSectionsButton").addEventListener("click", closeSectionDrawer);
 byId("songsButton").addEventListener("click", openSongDrawer);
 byId("closeSongsButton").addEventListener("click", closeSongDrawer);
 byId("showSongListButton").addEventListener("click", showSongListScreen);
@@ -372,6 +424,11 @@ byId("songList").addEventListener("click", event => {
 
   const song = songs.find(item => item.id === choice.dataset.songId);
   if (song) sendSongLive(song);
+});
+byId("sectionList").addEventListener("click", event => {
+  const section = event.target.closest("[data-slide-index]");
+  if (!section) return;
+  jumpToCourseSlide(section.dataset.slideIndex);
 });
 
 function applyDirectorPopupState() {

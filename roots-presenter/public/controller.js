@@ -13,6 +13,7 @@ let controllerState = {
 };
 let songs = [];
 let backgrounds = [];
+let latestState = {};
 let selectedSongId = null;
 let editingSongId = null;
 
@@ -114,6 +115,16 @@ function parseChordSections(text) {
 
 function getSelectedSong() {
   return songs.find(song => song.id === selectedSongId) || songs[0] || null;
+}
+
+function getSongLibraryName(song) {
+  const parts = String(song?.file || "").split("/").filter(Boolean);
+  return parts.length > 1 ? parts.slice(0, -1).join(" / ") : t("songs");
+}
+
+function getSongNumber(song, fallbackIndex = 0) {
+  const fileName = String(song?.file || "").split("/").pop() || "";
+  return fileName.match(/^[A-Za-z]*(\d+)/)?.[1] || String(fallbackIndex + 1).padStart(3, "0");
 }
 
 function getSongPayload(song = getSelectedSong()) {
@@ -254,15 +265,22 @@ function renderSongList() {
     return;
   }
 
-  list.innerHTML = visibleSongs.map(song => {
+  let previousLibrary = "";
+  list.innerHTML = visibleSongs.map((song, index) => {
     const selected = song.id === selectedSongId ? " selected" : "";
     const stanzaCount = parseSections(song.lyrics).length;
     const screenLabel = stanzaCount === 1 ? t("screen") : t("screens");
-    const libraryName = song.file?.includes("/") ? song.file.split("/").slice(0, -1).join(" / ") : t("songs");
+    const libraryName = getSongLibraryName(song);
+    const libraryHeader = libraryName !== previousLibrary
+      ? `<div class="song-library-heading">${escapeHtml(libraryName)}</div>`
+      : "";
+    previousLibrary = libraryName;
+
     return `
+      ${libraryHeader}
       <article class="song-item${selected}" data-song-id="${escapeHtml(song.id)}">
         <button type="button" class="song-select">
-          <strong>${escapeHtml(song.title)}</strong>
+          <strong><span>${escapeHtml(getSongNumber(song, index))}</span>${escapeHtml(song.title)}</strong>
           <span>${escapeHtml(libraryName)} · ${stanzaCount} ${screenLabel}</span>
         </button>
         <button type="button" class="song-edit">${t("editSong")}</button>
@@ -284,19 +302,47 @@ function renderBackgroundGallery() {
     return;
   }
 
-  gallery.innerHTML = backgrounds.map(background => {
+  gallery.innerHTML = backgrounds.map((background, index) => {
     const selected = background.url === selectedUrl ? " selected" : "";
     const media = background.type === "video"
       ? `<div class="background-video-thumb">${t("video")}</div>`
       : `<img src="${escapeHtml(background.url)}" alt="">`;
+    const shortcut = index < 9 ? String(index + 1) : index === 9 ? "0" : "";
 
     return `
       <button type="button" class="background-choice${selected}" data-background-url="${escapeHtml(background.url)}">
+        ${shortcut ? `<kbd>${shortcut}</kbd>` : ""}
         ${media}
         <span>${escapeHtml(background.name)}</span>
       </button>
     `;
   }).join("");
+}
+
+function renderCourseSections(headings = latestState.headings || []) {
+  const host = byId("courseSections");
+  if (!host) return;
+
+  if (!headings.length) {
+    host.innerHTML = `<div class="empty-state compact">${t("noCourseSections")}</div>`;
+    return;
+  }
+
+  host.innerHTML = headings.map(heading => {
+    const active = Number(latestState.slide) === Number(heading.slide) ? " active" : "";
+    return `
+      <button type="button" class="course-section-choice level-${heading.level}${active}" data-slide-index="${heading.slide}">
+        <span>H${heading.level}</span>
+        <b>${escapeHtml(heading.title)}</b>
+      </button>
+    `;
+  }).join("");
+}
+
+async function jumpToCourseSlide(slideIndex) {
+  const response = await fetch(`/jump/${encodeURIComponent(slideIndex)}`, { method: "POST" });
+  if (!response.ok) return;
+  renderCourseSections();
 }
 
 function renderSongBackgroundSelect(selectedUrl = byId("songBackgroundMedia")?.value || "") {
@@ -325,6 +371,26 @@ function selectBackground(url) {
   renderBackgroundGallery();
   renderPreview();
   applyStyle();
+}
+
+function getBackgroundShortcutIndex(event) {
+  if (event.altKey || event.ctrlKey || event.metaKey) return -1;
+
+  const digitMatch = event.code?.match(/^(?:Digit|Numpad)(\d)$/);
+  const key = digitMatch ? digitMatch[1] : event.key;
+
+  if (!/^\d$/.test(key)) return -1;
+  return key === "0" ? 9 : Number(key) - 1;
+}
+
+function selectBackgroundFromShortcut(event) {
+  const index = getBackgroundShortcutIndex(event);
+  const background = index >= 0 ? backgrounds[index] : null;
+  if (!background) return false;
+
+  event.preventDefault();
+  selectBackground(background.url);
+  return true;
 }
 
 function renderPreview() {
@@ -410,10 +476,13 @@ function hydrateColorsFromState() {
 }
 
 socket.on("state", data => {
+  latestState = data || {};
   controllerState = data.controllerState || controllerState;
   hydrateColorsFromState();
+  renderCourseSections(data.headings || []);
   renderPreview();
 });
+socket.on("songs-updated", loadSongs);
 
 byId("songList").addEventListener("click", event => {
   const songItem = event.target.closest("[data-song-id]");
@@ -455,6 +524,12 @@ byId("songThumbnails").addEventListener("click", event => {
   for (let index = 0; index < distance; index += 1) {
     socket.emit(direction);
   }
+});
+
+byId("courseSections").addEventListener("click", event => {
+  const section = event.target.closest("[data-slide-index]");
+  if (!section) return;
+  jumpToCourseSlide(section.dataset.slideIndex);
 });
 
 byId("newSongButton").addEventListener("click", () => openEditor());
@@ -513,21 +588,26 @@ byId("textColor").addEventListener("input", renderPreview);
 byId("accentColor").addEventListener("input", renderPreview);
 
 window.addEventListener("keydown", event => {
-  if (event.target.matches("input, textarea")) return;
+  if (event.target.matches("input, textarea, select") || event.target.isContentEditable) return;
+
+  if (selectBackgroundFromShortcut(event)) return;
 
   if (event.key === "Escape") {
     event.preventDefault();
     blankLive();
+    return;
   }
 
   if (event.key === "Enter") {
     event.preventDefault();
     sendLive();
+    return;
   }
 
   if (event.key === "ArrowRight" || event.key === " ") {
     event.preventDefault();
     nextSection();
+    return;
   }
 
   if (event.key === "ArrowLeft") {

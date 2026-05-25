@@ -215,6 +215,18 @@ textarea {
   padding: 7px;
 }
 
+.song-library-heading {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 8px 4px 4px;
+  background: #ffffff;
+  color: #075985;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 .song-item.selected {
   border-color: #38bdf8;
   box-shadow: 0 0 0 3px rgba(56,189,248,0.16);
@@ -233,6 +245,18 @@ textarea {
 .song-select strong,
 .song-select span {
   display: block;
+}
+
+.song-select strong {
+  display: flex;
+  gap: 0.45rem;
+  align-items: baseline;
+}
+
+.song-select strong span {
+  color: #075985;
+  font-size: 0.82em;
+  font-weight: 800;
 }
 
 .song-select span {
@@ -259,6 +283,54 @@ textarea {
 .empty-state.compact {
   padding: 10px;
   font-size: 0.9em;
+}
+
+.course-sections-card {
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.course-sections {
+  display: grid;
+  gap: 6px;
+  max-height: 168px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.course-section-choice {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  color: #111827;
+  padding: 8px;
+  text-align: left;
+}
+
+.course-section-choice span {
+  color: #075985;
+  font-size: 0.78em;
+  font-weight: 800;
+}
+
+.course-section-choice b {
+  overflow: hidden;
+  font-size: 0.9em;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.course-section-choice.level-2 {
+  padding-left: 18px;
+}
+
+.course-section-choice.active {
+  border-color: #38bdf8;
+  background: #e0f2fe;
 }
 
 .controller-panel {
@@ -369,6 +441,7 @@ input[type="color"] {
 }
 
 .background-choice {
+  position: relative;
   display: grid;
   gap: 6px;
   align-content: start;
@@ -377,6 +450,24 @@ input[type="color"] {
   color: #111827;
   padding: 6px;
   text-align: left;
+}
+
+.background-choice kbd {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  display: grid;
+  min-width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 5px;
+  background: rgba(17, 24, 39, 0.86);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
 }
 
 .background-choice.selected {
