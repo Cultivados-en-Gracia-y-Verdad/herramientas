@@ -53,24 +53,39 @@ function saveCurrentCanvas() {
   slideDrawingDataUrl = getCanvasDataUrl();
 }
 
-function loadCanvasDataUrl(dataUrl = "", shouldBroadcast = true) {
-  clearCanvasOnly();
+function getActiveSnapshot() {
+  return blankMode ? blankDrawingDataUrl : slideDrawingDataUrl;
+}
 
+function restoreSnapshotSync(dataUrl) {
+  const size = getViewportSize();
+  if (!size || !dataUrl) return;
+
+  const image = new Image();
+  image.onload = () => {
+    context.drawImage(image, 0, 0, size.width, size.height);
+  };
+  image.src = dataUrl;
+}
+
+function loadCanvasDataUrl(dataUrl = "", shouldBroadcast = true) {
   if (!dataUrl) {
+    clearCanvasOnly();
     if (shouldBroadcast) tabletSocket.emit("tablet-drawing-clear");
     return;
   }
 
   const size = getViewportSize();
   if (!size) return;
-  const { width, height } = size;
-  const image = new Image();
-  image.onload = () => {
-    clearCanvasOnly();
-    context.drawImage(image, 0, 0, width, height);
-    if (shouldBroadcast) sendDrawing();
-  };
-  image.src = dataUrl;
+
+  if (blankMode) {
+    blankDrawingDataUrl = dataUrl;
+  } else {
+    slideDrawingDataUrl = dataUrl;
+  }
+
+  restoreSnapshotSync(dataUrl);
+  if (shouldBroadcast) sendDrawing();
 }
 
 function updateTabletReadyState() {
@@ -87,15 +102,22 @@ function positionDrawingCanvas() {
 
 function prepareDrawingCanvas() {
   const size = getViewportSize();
-  if (!size) return;
+  if (!size) return false;
   const { width, height } = size;
-  if (canvas.width === width && canvas.height === height) return;
+  if (canvas.width === width && canvas.height === height) return false;
 
+  const snapshot = getCanvasDataUrl() || getActiveSnapshot();
   canvas.width = width;
   canvas.height = height;
   context.setTransform(1, 0, 0, 1, 0, 0);
   context.lineCap = "round";
   context.lineJoin = "round";
+
+  if (snapshot) {
+    restoreSnapshotSync(snapshot);
+  }
+
+  return true;
 }
 
 function resizeCanvas() {
@@ -103,19 +125,16 @@ function resizeCanvas() {
   positionDrawingCanvas();
   prepareDrawingCanvas();
   const snapshot = blankMode ? blankDrawingDataUrl : slideDrawingDataUrl;
-  loadCanvasDataUrl(snapshot, !!snapshot);
+  loadCanvasDataUrl(snapshot, false);
 }
 
 function scheduleCanvasSync() {
   cancelAnimationFrame(canvasSyncFrame);
-  canvasSyncFrame = requestAnimationFrame(() => {
-    positionDrawingCanvas();
-    window.CGV_TABLET_RENDER?.();
-  });
+  canvasSyncFrame = requestAnimationFrame(positionDrawingCanvas);
 }
 
 function pointFromEvent(event) {
-  return sync.mapClientPoint(event.clientX, event.clientY);
+  return sync.mapClientPoint(event.clientX, event.clientY, canvas.getBoundingClientRect());
 }
 
 function penWidthForDisplay() {
@@ -293,9 +312,8 @@ canvas.addEventListener("pointermove", draw);
 canvas.addEventListener("pointerup", stopDrawing);
 canvas.addEventListener("pointercancel", stopDrawing);
 canvas.addEventListener("contextmenu", event => event.preventDefault());
-["touchstart", "touchmove", "touchend", "gesturestart"].forEach(type => {
+["touchstart", "touchmove"].forEach(type => {
   previewHost?.addEventListener(type, blockDefaultTouch, { capture: true, passive: false });
-  canvas?.addEventListener(type, blockDefaultTouch, { capture: true, passive: false });
 });
 document.addEventListener("gesturestart", event => event.preventDefault(), { passive: false });
 previousButton.addEventListener("click", goPrevious);
@@ -306,10 +324,8 @@ fullscreenButton.addEventListener("click", toggleFullscreen);
 tabletSocket.on("state", handleState);
 
 function syncAfterRender() {
-  saveCurrentCanvas();
   positionDrawingCanvas();
   prepareDrawingCanvas();
-  loadCanvasDataUrl(blankMode ? blankDrawingDataUrl : slideDrawingDataUrl, false);
 }
 
 window.CGV_TABLET_RENDER = syncAfterRender;

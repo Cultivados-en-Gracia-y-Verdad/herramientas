@@ -135,8 +135,8 @@ function render() {
     const projectorViewport = isTablet
       ? window.CGV_DRAWING_SYNC?.getProjectorViewport?.()
       : {
-          width: document.documentElement.clientWidth,
-          height: document.documentElement.clientHeight
+          width: window.innerWidth,
+          height: window.innerHeight
         };
 
     if (isTablet && !projectorViewport) {
@@ -1087,8 +1087,8 @@ window.addEventListener("resize", () => {
 if (isProjector && !document.body.classList.contains("tablet")) {
   function reportProjectorViewport() {
     socket.emit("projector-viewport", {
-      width: Math.round(document.documentElement.clientWidth),
-      height: Math.round(document.documentElement.clientHeight),
+      width: Math.round(window.innerWidth),
+      height: Math.round(window.innerHeight),
       mode: projectorMode
     });
   }

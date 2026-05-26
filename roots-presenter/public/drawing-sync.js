@@ -104,22 +104,12 @@
     const vp = getProjectorViewport();
     if (!vp) return { x: 0, y: 0 };
 
-    if (isTablet()) {
-      const metrics = getPreviewMetrics();
-      const { left, top, width, height } = metrics;
-      if (width <= 0 || height <= 0) return { x: 0, y: 0 };
-      return {
-        x: ((clientX - left) / width) * vp.width,
-        y: ((clientY - top) / height) * vp.height
-      };
-    }
+    const rect = displayRect || (isTablet() ? null : { left: 0, top: 0, width: window.innerWidth, height: window.innerHeight });
+    if (!rect || rect.width <= 0 || rect.height <= 0) return { x: 0, y: 0 };
 
-    const rect = displayRect || { left: 0, top: 0, width: window.innerWidth, height: window.innerHeight };
-    const w = Math.max(1, rect.width);
-    const h = Math.max(1, rect.height);
     return {
-      x: ((clientX - rect.left) / w) * vp.width,
-      y: ((clientY - rect.top) / h) * vp.height
+      x: ((clientX - rect.left) / rect.width) * vp.width,
+      y: ((clientY - rect.top) / rect.height) * vp.height
     };
   }
 
@@ -127,8 +117,9 @@
     if (!element || !target) return null;
 
     if (!isTablet()) {
-      const width = Math.round(document.documentElement.clientWidth);
-      const height = Math.round(document.documentElement.clientHeight);
+      const vp = getProjectorViewport();
+      const width = vp?.width || Math.round(window.innerWidth);
+      const height = vp?.height || Math.round(window.innerHeight);
       element.style.position = "fixed";
       element.style.left = "0";
       element.style.top = "0";
