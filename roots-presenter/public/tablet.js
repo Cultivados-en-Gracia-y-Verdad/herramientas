@@ -134,14 +134,14 @@ function scheduleCanvasSync() {
 }
 
 function pointFromEvent(event) {
-  return sync.mapClientPoint(event.clientX, event.clientY, canvas.getBoundingClientRect());
+  return sync.mapClientPoint(event.clientX, event.clientY);
 }
 
 function penWidthForDisplay() {
   const size = getViewportSize();
-  const metrics = sync.getPreviewMetrics?.();
-  if (!size || !metrics?.width) return Number(penSize.value);
-  return Number(penSize.value) * (size.width / metrics.width);
+  const rect = canvas.getBoundingClientRect();
+  if (!size || rect.width <= 0) return Number(penSize.value);
+  return Number(penSize.value) * (size.width / rect.width);
 }
 
 function shouldIgnorePointer(event) {

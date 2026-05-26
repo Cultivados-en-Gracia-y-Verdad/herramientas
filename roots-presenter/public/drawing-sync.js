@@ -41,6 +41,16 @@
     return projectorMode;
   }
 
+  function getToolbarInset() {
+    const toolbar = document.querySelector(".tablet-toolbar");
+    if (!toolbar) return 0;
+
+    const safeBottom = Number.parseFloat(
+      getComputedStyle(document.documentElement).getPropertyValue("env(safe-area-inset-bottom)")
+    ) || 0;
+    return Math.ceil(toolbar.getBoundingClientRect().height + safeBottom + 8);
+  }
+
   function getPreviewMetrics() {
     const vp = getProjectorViewport();
     if (!vp) {
@@ -48,8 +58,9 @@
     }
 
     const host = document.getElementById("tabletPreviewHost");
+    const toolbarInset = getToolbarInset();
     const availableWidth = host?.clientWidth || window.innerWidth;
-    const availableHeight = host?.clientHeight || window.innerHeight;
+    const availableHeight = Math.max(120, (host?.clientHeight || window.innerHeight) - toolbarInset);
     const scale = Math.min(availableWidth / vp.width, availableHeight / vp.height);
     const width = vp.width * scale;
     const height = vp.height * scale;
@@ -104,12 +115,22 @@
     const vp = getProjectorViewport();
     if (!vp) return { x: 0, y: 0 };
 
-    const rect = displayRect || (isTablet() ? null : { left: 0, top: 0, width: window.innerWidth, height: window.innerHeight });
-    if (!rect || rect.width <= 0 || rect.height <= 0) return { x: 0, y: 0 };
+    if (isTablet()) {
+      const canvas = document.getElementById("drawingCanvas");
+      const rect = displayRect || canvas?.getBoundingClientRect();
+      if (!rect || rect.width <= 0 || rect.height <= 0) return { x: 0, y: 0 };
+      return {
+        x: ((clientX - rect.left) / rect.width) * vp.width,
+        y: ((clientY - rect.top) / rect.height) * vp.height
+      };
+    }
 
+    const rect = displayRect || { left: 0, top: 0, width: window.innerWidth, height: window.innerHeight };
+    const w = Math.max(1, rect.width);
+    const h = Math.max(1, rect.height);
     return {
-      x: ((clientX - rect.left) / rect.width) * vp.width,
-      y: ((clientY - rect.top) / rect.height) * vp.height
+      x: ((clientX - rect.left) / w) * vp.width,
+      y: ((clientY - rect.top) / h) * vp.height
     };
   }
 
@@ -117,9 +138,8 @@
     if (!element || !target) return null;
 
     if (!isTablet()) {
-      const vp = getProjectorViewport();
-      const width = vp?.width || Math.round(window.innerWidth);
-      const height = vp?.height || Math.round(window.innerHeight);
+      const width = Math.round(window.innerWidth);
+      const height = Math.round(window.innerHeight);
       element.style.position = "fixed";
       element.style.left = "0";
       element.style.top = "0";
