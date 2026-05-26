@@ -10,6 +10,8 @@ const clearButton = document.getElementById("clearButton");
 const blankButton = document.getElementById("blankButton");
 const fullscreenButton = document.getElementById("fullscreenButton");
 const toolbar = document.querySelector(".tablet-toolbar");
+const previewHost = document.getElementById("tabletPreviewHost");
+const waitingEl = document.getElementById("tabletWaiting");
 
 let drawing = false;
 let blankMode = false;
@@ -71,10 +73,16 @@ function loadCanvasDataUrl(dataUrl = "", shouldBroadcast = true) {
   image.src = dataUrl;
 }
 
+function updateTabletReadyState() {
+  const ready = ensureViewportReady();
+  waitingEl?.toggleAttribute("hidden", ready);
+  previewHost?.toggleAttribute("hidden", !ready);
+  return ready;
+}
+
 function positionDrawingCanvas() {
-  if (!ensureViewportReady()) return;
-  sync.applyTabletPreviewLayout();
-  sync.positionElementOverTarget(canvas, sync.getDrawingTarget());
+  if (!updateTabletReadyState()) return;
+  sync.positionTabletDrawingCanvas(canvas);
 }
 
 function prepareDrawingCanvas() {
@@ -107,17 +115,14 @@ function scheduleCanvasSync() {
 }
 
 function pointFromEvent(event) {
-  const rect = canvas.getBoundingClientRect();
-  return sync.mapClientPoint(event.clientX, event.clientY, rect);
+  return sync.mapClientPoint(event.clientX, event.clientY);
 }
 
 function penWidthForDisplay() {
-  const rect = canvas.getBoundingClientRect();
   const size = getViewportSize();
-  if (!size) return Number(penSize.value);
-  const { width } = size;
-  const displayWidth = Math.max(1, rect.width);
-  return Number(penSize.value) * (width / displayWidth);
+  const metrics = sync.getPreviewMetrics?.();
+  if (!size || !metrics?.width) return Number(penSize.value);
+  return Number(penSize.value) * (size.width / metrics.width);
 }
 
 function shouldIgnorePointer(event) {
@@ -229,7 +234,17 @@ function toggleFullscreen() {
 function handleState(data = {}) {
   if (data.projectorViewport) {
     sync.setProjectorViewport(data.projectorViewport);
+  } else {
+    sync.setProjectorViewport(null);
   }
+
+  if (data.projectorMode) {
+    sync.setProjectorMode(data.projectorMode);
+    document.body.classList.remove("projector-extended", "projector-mirrored");
+    document.body.classList.add(`projector-${data.projectorMode}`);
+  }
+
+  updateTabletReadyState();
 
   const controllerState = data.controllerState || {};
   const nextBlankMode = !!(controllerState.active && controllerState.blank);
@@ -264,6 +279,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   await window.CGVI18N.loadLanguage();
 });
 
+function blockDefaultTouch(event) {
+  if (shouldIgnorePointer(event)) return;
+  event.preventDefault();
+  event.stopPropagation();
+}
+
 toolbar?.addEventListener("pointerdown", event => event.stopPropagation());
 toolbar?.addEventListener("click", event => event.stopPropagation());
 window.addEventListener("resize", resizeCanvas);
@@ -272,6 +293,11 @@ canvas.addEventListener("pointermove", draw);
 canvas.addEventListener("pointerup", stopDrawing);
 canvas.addEventListener("pointercancel", stopDrawing);
 canvas.addEventListener("contextmenu", event => event.preventDefault());
+["touchstart", "touchmove", "touchend", "gesturestart"].forEach(type => {
+  previewHost?.addEventListener(type, blockDefaultTouch, { capture: true, passive: false });
+  canvas?.addEventListener(type, blockDefaultTouch, { capture: true, passive: false });
+});
+document.addEventListener("gesturestart", event => event.preventDefault(), { passive: false });
 previousButton.addEventListener("click", goPrevious);
 nextButton.addEventListener("click", goNext);
 clearButton.addEventListener("click", clearDrawing);

@@ -1,5 +1,6 @@
 (function () {
   let projectorViewport = null;
+  let projectorMode = "extended";
 
   function isTablet() {
     return document.body.classList.contains("tablet");
@@ -25,15 +26,19 @@
     projectorViewport = null;
   }
 
+  function setProjectorMode(mode) {
+    if (mode === "mirrored" || mode === "extended") {
+      projectorMode = mode;
+    }
+  }
+
   function getProjectorViewport() {
     if (!hasProjectorViewport()) return null;
     return { ...projectorViewport };
   }
 
-  function getToolbarInset() {
-    // The toolbar is overlayed (fixed) and should not change the effective viewport
-    // used to compute projector-matching preview scaling/coordinates.
-    return 0;
+  function getProjectorMode() {
+    return projectorMode;
   }
 
   function getPreviewMetrics() {
@@ -42,8 +47,9 @@
       return { vp: null, scale: 1, left: 0, top: 0, width: 0, height: 0 };
     }
 
-    const availableWidth = window.innerWidth;
-    const availableHeight = Math.max(120, window.innerHeight);
+    const host = document.getElementById("tabletPreviewHost");
+    const availableWidth = host?.clientWidth || window.innerWidth;
+    const availableHeight = host?.clientHeight || window.innerHeight;
     const scale = Math.min(availableWidth / vp.width, availableHeight / vp.height);
     const width = vp.width * scale;
     const height = vp.height * scale;
@@ -72,6 +78,20 @@
     return metrics;
   }
 
+  function positionTabletDrawingCanvas(canvas) {
+    const host = document.getElementById("tabletPreviewHost");
+    if (!host || !canvas || !hasProjectorViewport()) return null;
+
+    const metrics = applyTabletPreviewLayout();
+    canvas.style.position = "absolute";
+    canvas.style.left = `${metrics.left}px`;
+    canvas.style.top = `${metrics.top}px`;
+    canvas.style.width = `${metrics.width}px`;
+    canvas.style.height = `${metrics.height}px`;
+    canvas.style.zIndex = "30";
+    return metrics;
+  }
+
   function getDrawingTarget() {
     if (isTablet()) {
       return hasProjectorViewport() ? getPreviewFrame() : null;
@@ -82,9 +102,19 @@
 
   function mapClientPoint(clientX, clientY, displayRect) {
     const vp = getProjectorViewport();
-    const rect = displayRect || getDrawingTarget()?.getBoundingClientRect();
-    if (!vp || !rect) return { x: 0, y: 0 };
+    if (!vp) return { x: 0, y: 0 };
 
+    if (isTablet()) {
+      const metrics = getPreviewMetrics();
+      const { left, top, width, height } = metrics;
+      if (width <= 0 || height <= 0) return { x: 0, y: 0 };
+      return {
+        x: ((clientX - left) / width) * vp.width,
+        y: ((clientY - top) / height) * vp.height
+      };
+    }
+
+    const rect = displayRect || { left: 0, top: 0, width: window.innerWidth, height: window.innerHeight };
     const w = Math.max(1, rect.width);
     const h = Math.max(1, rect.height);
     return {
@@ -97,34 +127,39 @@
     if (!element || !target) return null;
 
     if (!isTablet()) {
+      const width = Math.round(document.documentElement.clientWidth);
+      const height = Math.round(document.documentElement.clientHeight);
       element.style.position = "fixed";
       element.style.left = "0";
       element.style.top = "0";
-      element.style.width = `${window.innerWidth}px`;
-      element.style.height = `${window.innerHeight}px`;
+      element.style.width = `${width}px`;
+      element.style.height = `${height}px`;
       element.style.objectFit = "fill";
       element.style.pointerEvents = element.tagName === "CANVAS" ? "" : "none";
-      return { left: 0, top: 0, width: window.innerWidth, height: window.innerHeight };
+      return { left: 0, top: 0, width, height };
     }
 
-    const rect = target.getBoundingClientRect();
-    element.style.position = "fixed";
-    element.style.left = `${rect.left}px`;
-    element.style.top = `${rect.top}px`;
-    element.style.width = `${rect.width}px`;
-    element.style.height = `${rect.height}px`;
+    const metrics = getPreviewMetrics();
+    element.style.position = "absolute";
+    element.style.left = `${metrics.left}px`;
+    element.style.top = `${metrics.top}px`;
+    element.style.width = `${metrics.width}px`;
+    element.style.height = `${metrics.height}px`;
     element.style.objectFit = "fill";
     element.style.pointerEvents = element.tagName === "CANVAS" ? "" : "none";
-    return rect;
+    return metrics;
   }
 
   window.CGV_DRAWING_SYNC = {
     hasProjectorViewport,
     getProjectorViewport,
+    getProjectorMode,
     setProjectorViewport,
+    setProjectorMode,
     isTablet,
     getPreviewMetrics,
     applyTabletPreviewLayout,
+    positionTabletDrawingCanvas,
     getDrawingTarget,
     mapClientPoint,
     positionElementOverTarget

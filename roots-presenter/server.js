@@ -209,6 +209,7 @@ let tabletDrawingState = {
 };
 
 let projectorViewport = null;
+let projectorMode = "extended";
 let projectorSocketId = null;
 
 let controllerState = {
@@ -3259,6 +3260,7 @@ function buildPayload(participantId = null) {
       dataUrl: tabletDrawingState.dataUrl
     },
     projectorViewport,
+    projectorMode,
     controllerState: publicControllerState()
   };
 }
@@ -3620,6 +3622,9 @@ io.on("connection", socket => {
 
     projectorSocketId = socket.id;
     projectorViewport = { width, height };
+    if (payload?.mode === "mirrored" || payload?.mode === "extended") {
+      projectorMode = payload.mode;
+    }
     sendState();
   });
 
@@ -3774,6 +3779,7 @@ io.on("connection", socket => {
 
     projectorSocketId = null;
     projectorViewport = null;
+    projectorMode = "extended";
     sendState();
   });
 });

@@ -53,8 +53,18 @@ socket.on("state", data => {
   popupState = data.popupState || { reference: null, scrollRatio: 0, verseIndex: 0 };
   audienceQrVisible = !!data.audienceQrVisible;
   tabletDrawing = data.tabletDrawing || { visible: false, dataUrl: "" };
-  if (data.projectorViewport) {
-    window.CGV_DRAWING_SYNC?.setProjectorViewport?.(data.projectorViewport);
+  if (document.body.classList.contains("tablet")) {
+    if (data.projectorViewport) {
+      window.CGV_DRAWING_SYNC?.setProjectorViewport?.(data.projectorViewport);
+    } else {
+      window.CGV_DRAWING_SYNC?.setProjectorViewport?.(null);
+    }
+
+    if (data.projectorMode) {
+      window.CGV_DRAWING_SYNC?.setProjectorMode?.(data.projectorMode);
+      document.body.classList.remove("projector-extended", "projector-mirrored");
+      document.body.classList.add(`projector-${data.projectorMode}`);
+    }
   }
 
   const nextQuizKey = quizState.active ? quizState.quizId : null;
@@ -122,8 +132,16 @@ function render() {
   if (isProjector) {
     const projectorSlide = document.getElementById("projectorSlide");
     const isTablet = document.body.classList.contains("tablet");
-    const projectorViewport = window.CGV_DRAWING_SYNC?.getProjectorViewport?.()
-      || { width: window.innerWidth, height: window.innerHeight };
+    const projectorViewport = isTablet
+      ? window.CGV_DRAWING_SYNC?.getProjectorViewport?.()
+      : {
+          width: document.documentElement.clientWidth,
+          height: document.documentElement.clientHeight
+        };
+
+    if (isTablet && !projectorViewport) {
+      return;
+    }
 
     if (controllerState.active) {
       renderControllerProjector(projectorSlide);
@@ -1069,13 +1087,19 @@ window.addEventListener("resize", () => {
 if (isProjector && !document.body.classList.contains("tablet")) {
   function reportProjectorViewport() {
     socket.emit("projector-viewport", {
-      width: window.innerWidth,
-      height: window.innerHeight
+      width: Math.round(document.documentElement.clientWidth),
+      height: Math.round(document.documentElement.clientHeight),
+      mode: projectorMode
     });
   }
 
   reportProjectorViewport();
   window.addEventListener("resize", reportProjectorViewport);
+  document.addEventListener("fullscreenchange", reportProjectorViewport);
+  window.visualViewport?.addEventListener("resize", reportProjectorViewport);
+  requestAnimationFrame(() => requestAnimationFrame(reportProjectorViewport));
+  setTimeout(reportProjectorViewport, 300);
+  setTimeout(reportProjectorViewport, 1200);
 }
 
 if (isPresenter || isProjector) {

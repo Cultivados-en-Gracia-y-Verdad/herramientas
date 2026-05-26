@@ -19,14 +19,40 @@ body.tablet.projector {
   padding: 0;
 }
 
+.tablet-waiting {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #020617;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+.tablet-waiting[hidden] {
+  display: none;
+}
+
+.tablet-waiting p {
+  max-width: 28rem;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 .tablet-preview-host {
-  position: relative;
-  width: 100vw;
-  /* Toolbar is fixed/overlayed, so the preview should use the full projector viewport height. */
-  height: 100dvh;
+  position: fixed;
+  inset: 0;
   overflow: hidden;
   background: #020617;
   -webkit-touch-callout: none;
+  touch-action: none;
+}
+
+.tablet-preview-host[hidden] {
+  display: none;
 }
 
 .tablet-preview-frame {
@@ -35,6 +61,7 @@ body.tablet.projector {
   background: var(--view-background, #000000);
   color: #ffffff;
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
 }
 
 .tablet-preview-frame.projector {
@@ -56,10 +83,16 @@ body.tablet.projector-extended .tablet-preview-frame .projector-slide {
   max-height: calc(100% - clamp(104px, 13vh, 152px));
 }
 
+.tablet-preview-frame .projector-quiz,
+.tablet-preview-frame .shared-popup-overlay,
+.tablet-preview-frame .bible-ref,
+.tablet-preview-frame a {
+  pointer-events: none;
+}
+
 .tablet-preview-frame .projector-quiz {
   position: absolute;
   inset: 0;
-  pointer-events: none;
 }
 
 body.tablet-blank .tablet-preview-frame .projector-slide,
@@ -68,17 +101,13 @@ body.tablet-blank .tablet-preview-frame .projector-quiz {
 }
 
 #drawingCanvas {
-  position: fixed;
-  z-index: 26;
+  position: absolute;
+  z-index: 30;
   touch-action: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
-}
-
-.tablet-preview-frame .shared-popup-overlay {
-  position: absolute;
-  inset: 0;
+  cursor: crosshair;
 }
 
 .tablet-toolbar {
@@ -99,6 +128,7 @@ body.tablet-blank .tablet-preview-frame .projector-quiz {
   border: 1px solid rgba(148, 163, 184, 0.5);
   border-radius: 8px;
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.34);
+  touch-action: manipulation;
 }
 
 .tablet-toolbar button,
