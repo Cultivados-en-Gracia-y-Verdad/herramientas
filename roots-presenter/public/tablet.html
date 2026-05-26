@@ -10,12 +10,14 @@
   <link rel="stylesheet" href="tablet.css">
 </head>
 <body class="projector tablet">
-  <main id="tabletStage" class="tablet-stage">
-    <div id="projectorSlide" class="projector-slide"></div>
-    <div id="projectorQuiz" class="projector-quiz"></div>
-    <canvas id="drawingCanvas"></canvas>
-    <div id="sharedPopupOverlay" class="shared-popup-overlay"></div>
-  </main>
+  <div id="tabletPreviewHost" class="tablet-preview-host">
+    <div id="tabletPreviewFrame" class="tablet-preview-frame projector">
+      <div id="projectorSlide" class="projector-slide"></div>
+      <div id="projectorQuiz" class="projector-quiz"></div>
+      <div id="sharedPopupOverlay" class="shared-popup-overlay"></div>
+      <canvas id="drawingCanvas"></canvas>
+    </div>
+  </div>
 
   <nav class="tablet-toolbar" aria-label="Drawing controls">
     <button id="previousButton" type="button" data-i18n="previous">Previous</button>
@@ -25,16 +27,17 @@
       <span data-i18n="penColor">Pen</span>
       <input id="penColor" type="color" value="#f97316">
     </label>
-      <label>
-        <span data-i18n="penSize">Size</span>
-        <input id="penSize" type="range" min="1" max="24" value="3">
-      </label>
-      <button id="blankButton" type="button" data-i18n="blankScreen">Blank Screen</button>
-      <button id="fullscreenButton" type="button" data-i18n="fullscreen">Fullscreen</button>
-    </nav>
+    <label>
+      <span data-i18n="penSize">Size</span>
+      <input id="penSize" type="range" min="1" max="24" value="3">
+    </label>
+    <button id="blankButton" type="button" data-i18n="blankScreen">Blank Screen</button>
+    <button id="fullscreenButton" type="button" data-i18n="fullscreen">Fullscreen</button>
+  </nav>
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="i18n.js"></script>
+  <script src="drawing-sync.js"></script>
   <script src="app.js"></script>
   <script src="tablet.js"></script>
 </body>

@@ -53,6 +53,9 @@ socket.on("state", data => {
   popupState = data.popupState || { reference: null, scrollRatio: 0, verseIndex: 0 };
   audienceQrVisible = !!data.audienceQrVisible;
   tabletDrawing = data.tabletDrawing || { visible: false, dataUrl: "" };
+  if (data.projectorViewport) {
+    window.CGV_DRAWING_SYNC?.setProjectorViewport?.(data.projectorViewport);
+  }
 
   const nextQuizKey = quizState.active ? quizState.quizId : null;
   if (nextQuizKey !== activeQuizKey) {
@@ -62,6 +65,9 @@ socket.on("state", data => {
   }
 
   render();
+  if (document.body.classList.contains("tablet")) {
+    window.CGV_TABLET_RENDER?.();
+  }
 });
 
 socket.on("participant-ack", data => {
@@ -115,6 +121,10 @@ function render() {
 
   if (isProjector) {
     const projectorSlide = document.getElementById("projectorSlide");
+    const isTablet = document.body.classList.contains("tablet");
+    const projectorViewport = window.CGV_DRAWING_SYNC?.getProjectorViewport?.()
+      || { width: window.innerWidth, height: window.innerHeight };
+
     if (controllerState.active) {
       renderControllerProjector(projectorSlide);
       renderProjectorQuiz();
@@ -135,8 +145,10 @@ function render() {
       baseSize: getProjectorBaseSize(projectorSlide),
       minSize: projectorMode === "extended" ? 40 : 32,
       hardMinSize: 28,
-      maxHeight: window.innerHeight - 160,
-      maxWidth: Math.min(projectorSlide.clientWidth || window.innerWidth * 0.78, window.innerWidth - 140),
+      maxHeight: (isTablet ? projectorViewport.height : window.innerHeight) - 160,
+      maxWidth: isTablet
+        ? Math.min(projectorSlide.clientWidth || projectorViewport.width * 0.78, projectorViewport.width - 140)
+        : Math.min(projectorSlide.clientWidth || window.innerWidth * 0.78, window.innerWidth - 140),
       densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
       sizeBoost: projectorMode === "extended" ? 12 : 0
     });
@@ -169,6 +181,10 @@ function renderAudienceQrToggle() {
 function renderTabletDrawingOverlay() {
   const overlay = document.getElementById("tabletDrawingOverlay");
   if (!overlay) return;
+
+  const sync = window.CGV_DRAWING_SYNC;
+  const target = sync?.getDrawingTarget?.() || document.getElementById("projectorSlide");
+  sync?.positionElementOverTarget?.(overlay, target);
 
   const visible = !!tabletDrawing.visible && !!tabletDrawing.dataUrl;
   overlay.hidden = !visible;
@@ -1049,6 +1065,18 @@ document.getElementById("audienceQrToggle")?.addEventListener("click", toggleAud
 window.addEventListener("resize", () => {
   render();
 });
+
+if (isProjector && !document.body.classList.contains("tablet")) {
+  function reportProjectorViewport() {
+    socket.emit("projector-viewport", {
+      width: window.innerWidth,
+      height: window.innerHeight
+    });
+  }
+
+  reportProjectorViewport();
+  window.addEventListener("resize", reportProjectorViewport);
+}
 
 if (isPresenter || isProjector) {
   window.addEventListener("keydown", e => {

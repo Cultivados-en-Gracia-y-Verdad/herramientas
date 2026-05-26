@@ -208,6 +208,9 @@ let tabletDrawingState = {
   dataUrl: ""
 };
 
+let projectorViewport = null;
+let projectorSocketId = null;
+
 let controllerState = {
   active: false,
   blank: false,
@@ -3255,6 +3258,7 @@ function buildPayload(participantId = null) {
       visible: tabletDrawingState.visible,
       dataUrl: tabletDrawingState.dataUrl
     },
+    projectorViewport,
     controllerState: publicControllerState()
   };
 }
@@ -3609,6 +3613,16 @@ io.on("connection", socket => {
     sendState();
   });
 
+  socket.on("projector-viewport", payload => {
+    const width = Math.round(Number(payload?.width));
+    const height = Math.round(Number(payload?.height));
+    if (width <= 0 || height <= 0) return;
+
+    projectorSocketId = socket.id;
+    projectorViewport = { width, height };
+    sendState();
+  });
+
   socket.on("tablet-drawing", payload => {
     const dataUrl = typeof payload?.dataUrl === "string" ? payload.dataUrl : "";
     if (dataUrl.length > 25000000) return;
@@ -3752,6 +3766,14 @@ io.on("connection", socket => {
       answer: parsedIndex,
       quizId: activeQuiz.id
     });
+    sendState();
+  });
+
+  socket.on("disconnect", () => {
+    if (socket.id !== projectorSocketId) return;
+
+    projectorSocketId = null;
+    projectorViewport = null;
     sendState();
   });
 });

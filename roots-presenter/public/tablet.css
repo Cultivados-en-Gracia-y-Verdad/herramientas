@@ -1,55 +1,82 @@
 body.tablet {
-  display: grid;
-  place-items: center;
-  padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) calc(68px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  height: 100dvh;
+  display: block;
+  padding: 0;
   background: #020617;
   cursor: crosshair;
   touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
-body.tablet-blank #projectorSlide,
-body.tablet-blank #projectorQuiz {
-  opacity: 0;
+body.tablet.projector {
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
 }
 
-.tablet-stage {
+.tablet-preview-host {
   position: relative;
+  width: 100vw;
+  /* Toolbar is fixed/overlayed, so the preview should use the full projector viewport height. */
+  height: 100dvh;
+  overflow: hidden;
+  background: #020617;
+  -webkit-touch-callout: none;
+}
+
+.tablet-preview-frame {
+  position: absolute;
+  overflow: hidden;
+  background: var(--view-background, #000000);
+  color: #ffffff;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+.tablet-preview-frame.projector {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: calc(100vw - 16px);
-  aspect-ratio: 16 / 9;
-  padding: 8% 5% 3%;
-  overflow: hidden;
-  background: #000000;
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+  padding: clamp(42px, 8vh, 88px) clamp(42px, 5vw, 96px) 24px;
 }
 
-.tablet .projector-slide {
-  position: relative;
+body.tablet.projector-extended .tablet-preview-frame .projector-slide {
   width: min(80%, 1360px);
   max-width: min(80%, 1360px);
-  max-height: none;
-  user-select: none;
 }
 
-.tablet .projector-quiz {
+.tablet-preview-frame .projector-slide {
+  width: min(76%, 1240px);
+  max-width: min(76%, 1240px);
+  max-height: calc(100% - clamp(104px, 13vh, 152px));
+}
+
+.tablet-preview-frame .projector-quiz {
   position: absolute;
   inset: 0;
   pointer-events: none;
 }
 
-#drawingCanvas {
-  position: absolute;
-  inset: 0;
-  z-index: 26;
-  width: 100%;
-  height: 100%;
-  touch-action: none;
+body.tablet-blank .tablet-preview-frame .projector-slide,
+body.tablet-blank .tablet-preview-frame .projector-quiz {
+  opacity: 0;
 }
 
-.tablet .shared-popup-overlay {
+#drawingCanvas {
+  position: fixed;
+  z-index: 26;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.tablet-preview-frame .shared-popup-overlay {
   position: absolute;
   inset: 0;
 }
