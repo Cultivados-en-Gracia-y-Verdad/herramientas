@@ -1,0 +1,115 @@
+body.tablet {
+  display: grid;
+  place-items: center;
+  padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) calc(68px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+  background: #020617;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+body.tablet-blank #projectorSlide,
+body.tablet-blank #projectorQuiz {
+  opacity: 0;
+}
+
+.tablet-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100vw - 16px);
+  aspect-ratio: 16 / 9;
+  padding: 8% 5% 3%;
+  overflow: hidden;
+  background: #000000;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+.tablet .projector-slide {
+  position: relative;
+  width: min(80%, 1360px);
+  max-width: min(80%, 1360px);
+  max-height: none;
+  user-select: none;
+}
+
+.tablet .projector-quiz {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+#drawingCanvas {
+  position: absolute;
+  inset: 0;
+  z-index: 26;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.tablet .shared-popup-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.tablet-toolbar {
+  position: fixed;
+  left: 50%;
+  bottom: max(8px, env(safe-area-inset-bottom));
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  width: min(920px, calc(100vw - 16px));
+  min-height: 46px;
+  padding: 6px;
+  transform: translateX(-50%);
+  background: rgba(248, 250, 252, 0.94);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.34);
+}
+
+.tablet-toolbar button,
+.tablet-toolbar input {
+  font: inherit;
+}
+
+.tablet-toolbar button {
+  border: 0;
+  border-radius: 6px;
+  background: #e2e8f0;
+  color: #0f172a;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 8px 10px;
+}
+
+.tablet-toolbar button.active {
+  background: #075985;
+  color: #ffffff;
+}
+
+.tablet-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.tablet-toolbar input[type="color"] {
+  width: 34px;
+  height: 30px;
+  padding: 2px;
+}
+
+.tablet-toolbar input[type="range"] {
+  width: min(140px, 20vw);
+}

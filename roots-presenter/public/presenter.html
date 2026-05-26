@@ -16,7 +16,13 @@
         <span data-i18n="presenterView">Presenter View</span>
       </div>
     </div>
-    <button onclick="reloadSlides()" data-i18n="reloadSlides">Reload Slides</button>
+    <div class="presenter-tools">
+      <label class="section-select-label">
+        <span data-i18n="courseSections">Course Sections</span>
+        <select id="presenterSectionSelect"></select>
+      </label>
+      <button onclick="reloadSlides()" data-i18n="reloadSlides">Reload Slides</button>
+    </div>
   </div>
 
   <main class="grid">

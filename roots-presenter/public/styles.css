@@ -55,6 +55,37 @@ textarea {
   gap: 20px;
 }
 
+.presenter-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.presenter-tools button.active {
+  background: #075985;
+  border-color: #075985;
+  color: #ffffff;
+}
+
+.section-select-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #374151;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section-select-label select {
+  max-width: min(46vw, 560px);
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 18px;
+  padding: 9px 12px;
+}
+
 .app-brand {
   display: flex;
   align-items: center;
@@ -416,8 +447,6 @@ textarea {
   margin-top: 12px;
 }
 
-.bible-ref:hover .bible-popup,
-.bible-ref:focus .bible-popup,
 .bible-ref.open .bible-popup {
   opacity: 1;
   pointer-events: auto;
@@ -560,6 +589,16 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.slide img,
+.projector-slide img,
+.audience-slide img {
+  display: block;
+  max-width: min(100%, 1080px);
+  max-height: 70vh;
+  margin: 0.5em auto;
+  object-fit: contain;
 }
 
 .session-panel {
@@ -812,7 +851,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: clamp(42px, 8vh, 88px) 24px 24px;
+  padding: clamp(42px, 8vh, 88px) clamp(42px, 5vw, 96px) 24px;
   overflow: hidden;
 }
 
@@ -820,11 +859,15 @@ button {
   font-size: var(--fit-size, 52px);
   line-height: 1.34;
   text-align: left;
-  width: min(76vw, 1320px);
-  max-width: min(76vw, 1320px);
+  width: min(76vw, 1240px);
+  max-width: min(76vw, 1240px);
   max-height: calc(100vh - clamp(104px, 13vh, 152px));
   overflow: visible;
   overflow-wrap: anywhere;
+}
+
+.projector-slide > * {
+  max-width: 100%;
 }
 
 .projector-slide.title-slide {
@@ -839,7 +882,7 @@ button {
   width: 100vw;
   max-width: none;
   max-height: none;
-  margin: calc(-1 * clamp(42px, 8vh, 88px)) -24px -24px;
+  margin: calc(-1 * clamp(42px, 8vh, 88px)) calc(-1 * clamp(42px, 5vw, 96px)) -24px;
   padding: clamp(48px, 7vh, 96px) clamp(38px, 5vw, 92px);
   overflow: hidden;
   background: var(--song-background, #0f172a);
@@ -920,7 +963,7 @@ button {
   font-size: var(--fit-size, 112px);
   font-weight: 600;
   line-height: 1.04;
-  max-width: 90vw;
+  max-width: 84vw;
 }
 
 .song-output-line {
@@ -936,8 +979,8 @@ button {
 }
 
 .projector-extended .projector-slide {
-  width: min(86vw, 1440px);
-  max-width: min(86vw, 1440px);
+  width: min(80vw, 1360px);
+  max-width: min(80vw, 1360px);
   line-height: 1.28;
 }
 
@@ -1097,6 +1140,77 @@ button {
 
 .projector-quiz .quiz-review-item {
   background: rgba(7,89,133,0.09);
+}
+
+.tablet-drawing-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.tablet-drawing-overlay[hidden] {
+  display: none;
+}
+
+.audience-qr-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 23, 42, 0.72);
+  color: #111827;
+}
+
+.audience-qr-overlay[hidden] {
+  display: none;
+}
+
+.audience-qr-card {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  width: min(560px, 86vw);
+  padding: 34px;
+  background: #ffffff;
+  border: 2px solid rgba(7, 89, 133, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.audience-qr-card strong {
+  color: #075985;
+  font-size: 34px;
+  line-height: 1.08;
+}
+
+.audience-qr-card img {
+  width: min(360px, 62vw);
+  height: min(360px, 62vw);
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.audience-qr-card code {
+  max-width: 100%;
+  color: #0f172a;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.audience-qr-card span {
+  color: #475569;
+  font-size: 20px;
+  line-height: 1.25;
 }
 
 .audience {

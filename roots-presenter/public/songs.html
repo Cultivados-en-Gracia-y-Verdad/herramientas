@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="downloadSongs">Download Songs from GitHub</title>
+  <link rel="icon" href="/assets/cgv-app-icon.png">
+  <link rel="stylesheet" href="songs.css">
+</head>
+<body>
+  <main class="song-library">
+    <header>
+      <img src="/assets/cgv-app-icon.png" alt="">
+      <div>
+        <strong data-i18n="downloadSongs">Download Songs from GitHub</strong>
+        <span data-i18n="songsGithubHelp">Add a ChordPro song library from a GitHub repository.</span>
+      </div>
+    </header>
+
+    <form id="songRepositoryForm">
+      <label>
+        <span data-i18n="githubRepository">GitHub repository</span>
+        <input id="songRepositoryInput" type="text" autocomplete="off" spellcheck="false">
+      </label>
+      <a
+        id="suggestedRepositoryLink"
+        class="suggested-repository"
+        href="https://github.com/Cultivados-en-Gracia-y-Verdad/canciones/"
+        target="_blank"
+        rel="noreferrer"
+      >https://github.com/Cultivados-en-Gracia-y-Verdad/canciones/</a>
+      <button id="downloadSongsButton" type="submit" data-i18n="downloadSongs">Download Songs from GitHub</button>
+    </form>
+
+    <p id="songStatus" class="status" data-i18n="songsDefaultHint">Press Enter to use the default CGV canciones repository.</p>
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="songs.js"></script>
+</body>
+</html>

@@ -3,12 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>CGV Presenter Tablet</title>
+  <title data-i18n="tabletView">Tablet</title>
   <link rel="icon" href="/assets/cgv-app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style-settings.css">
+  <link rel="stylesheet" href="tablet.css">
 </head>
-<body>
-  <script>
-    window.location.replace(`/controller.html${window.location.search || ""}${window.location.hash || ""}`);
-  </script>
+<body class="projector tablet">
+  <main id="tabletStage" class="tablet-stage">
+    <div id="projectorSlide" class="projector-slide"></div>
+    <div id="projectorQuiz" class="projector-quiz"></div>
+    <canvas id="drawingCanvas"></canvas>
+    <div id="sharedPopupOverlay" class="shared-popup-overlay"></div>
+  </main>
+
+  <nav class="tablet-toolbar" aria-label="Drawing controls">
+    <button id="previousButton" type="button" data-i18n="previous">Previous</button>
+    <button id="nextButton" type="button" data-i18n="next">Next</button>
+    <button id="clearButton" type="button" data-i18n="clearDrawing">Clear</button>
+    <label>
+      <span data-i18n="penColor">Pen</span>
+      <input id="penColor" type="color" value="#f97316">
+    </label>
+      <label>
+        <span data-i18n="penSize">Size</span>
+        <input id="penSize" type="range" min="1" max="24" value="3">
+      </label>
+      <button id="blankButton" type="button" data-i18n="blankScreen">Blank Screen</button>
+      <button id="fullscreenButton" type="button" data-i18n="fullscreen">Fullscreen</button>
+    </nav>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="tablet.js"></script>
 </body>
 </html>

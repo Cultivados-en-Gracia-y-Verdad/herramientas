@@ -106,7 +106,7 @@ textarea {
 
 .song-library {
   display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr);
+  grid-template-rows: auto auto auto minmax(0, 1fr);
   min-height: 0;
   padding: 14px;
 }
@@ -133,6 +133,11 @@ textarea {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 16px;
+}
+
+.song-actions {
+  display: flex;
+  gap: 8px;
 }
 
 h1,
@@ -183,11 +188,54 @@ select {
 }
 
 .search-field {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+}
+
+.github-song-form {
+  display: grid;
+  gap: 10px;
+  margin: -4px 0 14px;
+  padding: 12px;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  background: #eff6ff;
+}
+
+.github-song-form.hidden {
+  display: none;
+}
+
+.github-song-form label {
+  margin-bottom: 0;
+}
+
+.github-song-form button {
+  justify-self: start;
+}
+
+.download-status {
+  color: #475569;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.download-status.error {
+  color: #b91c1c;
 }
 
 .search-field input {
   font-size: 20px;
+}
+
+.library-filter {
+  margin-bottom: 16px;
+}
+
+.library-filter select {
+  background: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 textarea {
@@ -283,54 +331,6 @@ textarea {
 .empty-state.compact {
   padding: 10px;
   font-size: 0.9em;
-}
-
-.course-sections-card {
-  max-height: 220px;
-  overflow: hidden;
-}
-
-.course-sections {
-  display: grid;
-  gap: 6px;
-  max-height: 168px;
-  overflow: auto;
-  padding-right: 4px;
-}
-
-.course-section-choice {
-  display: grid;
-  grid-template-columns: 34px 1fr;
-  gap: 8px;
-  align-items: center;
-  border: 1px solid #e5e7eb;
-  background: #f8fafc;
-  color: #111827;
-  padding: 8px;
-  text-align: left;
-}
-
-.course-section-choice span {
-  color: #075985;
-  font-size: 0.78em;
-  font-weight: 800;
-}
-
-.course-section-choice b {
-  overflow: hidden;
-  font-size: 0.9em;
-  font-weight: 650;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.course-section-choice.level-2 {
-  padding-left: 18px;
-}
-
-.course-section-choice.active {
-  border-color: #38bdf8;
-  background: #e0f2fe;
 }
 
 .controller-panel {

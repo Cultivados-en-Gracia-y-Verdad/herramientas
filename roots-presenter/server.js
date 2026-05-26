@@ -65,17 +65,15 @@ const cgvRepository = {
   branch: "main",
   coursesPath: "courses"
 };
-const songRepository = {
-  owner: "johnwry",
+const cgvRepositoryBaseUrl = `https://github.com/${cgvRepository.owner}/${cgvRepository.repo}/tree/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
+const cgvApiBaseUrl = `https://api.github.com/repos/${cgvRepository.owner}/${cgvRepository.repo}`;
+const cgvRawBaseUrl = `https://raw.githubusercontent.com/${cgvRepository.owner}/${cgvRepository.repo}/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
+const defaultSongRepository = {
+  owner: "Cultivados-en-Gracia-y-Verdad",
   repo: "canciones",
   branch: "main",
   songsPath: "songs/chordpro"
 };
-const cgvRepositoryBaseUrl = `https://github.com/${cgvRepository.owner}/${cgvRepository.repo}/tree/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
-const cgvApiBaseUrl = `https://api.github.com/repos/${cgvRepository.owner}/${cgvRepository.repo}`;
-const cgvRawBaseUrl = `https://raw.githubusercontent.com/${cgvRepository.owner}/${cgvRepository.repo}/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
-const songApiBaseUrl = `https://api.github.com/repos/${songRepository.owner}/${songRepository.repo}`;
-const songRawBaseUrl = `https://raw.githubusercontent.com/${songRepository.owner}/${songRepository.repo}/${songRepository.branch}/${songRepository.songsPath}`;
 const synthesisMarker = "::roots-synthesis::";
 const h4IntroMarker = "::roots-h4-intro::";
 
@@ -108,6 +106,11 @@ app.post("/style-settings", (req, res) => {
   sendState();
   res.json(settings);
 });
+app.post("/audience-qr", (req, res) => {
+  audienceQrVisible = !!req.body?.visible;
+  sendState();
+  res.json({ visible: audienceQrVisible });
+});
 app.get("/join-info", (req, res) => {
   res.json(getJoinInfo(req.query.path));
 });
@@ -116,7 +119,8 @@ app.get("/connection-info", (req, res) => {
     controller: getJoinInfo("/controller.html"),
     tablet: getJoinInfo("/tablet.html"),
     audience: getJoinInfo("/audience.html"),
-    director: getJoinInfo("/director.html")
+    director: getJoinInfo("/director.html"),
+    stage: getJoinInfo("/stage.html")
   });
 });
 app.get("/connection-qr.svg", async (req, res) => {
@@ -195,6 +199,13 @@ let popupState = {
   reference: null,
   scrollRatio: 0,
   verseIndex: 0
+};
+
+let audienceQrVisible = false;
+
+let tabletDrawingState = {
+  visible: false,
+  dataUrl: ""
 };
 
 let controllerState = {
@@ -502,8 +513,9 @@ function safeDirectoryName(value, fallback = "course") {
   return path.basename(String(value || fallback)).replace(/[^\w.\- ]/g, "_") || fallback;
 }
 
-function downloadFile(url, destinationPath) {
+function downloadFile(url, destinationPath, options = {}) {
   return new Promise((resolve, reject) => {
+    const timeout = Number(options.timeout || 30000);
     const client = String(url).startsWith("https:") ? https : http;
     const request = client.get(url, { headers: { "User-Agent": "ROOTS-Presenter" } }, response => {
       if ([301, 302, 303, 307, 308].includes(response.statusCode) && response.headers.location) {
@@ -530,7 +542,7 @@ function downloadFile(url, destinationPath) {
     });
 
     request.on("error", reject);
-    request.setTimeout(30000, () => {
+    request.setTimeout(timeout, () => {
       request.destroy(new Error("Download timed out."));
     });
   });
@@ -590,16 +602,23 @@ function githubApiUrl(pathname) {
   return `${cgvApiBaseUrl}${pathname}`;
 }
 
-function songGithubApiUrl(pathname) {
-  return `${songApiBaseUrl}${pathname}`;
+function songGithubApiUrl(config, pathname) {
+  return `https://api.github.com/repos/${config.owner}/${config.repo}${pathname}`;
 }
 
 function rawCgvCourseUrl(relativePath) {
   return `${cgvRawBaseUrl}/${String(relativePath).split("/").map(encodeURIComponent).join("/")}`;
 }
 
-function rawSongUrl(relativePath) {
-  return `${songRawBaseUrl}/${String(relativePath).split("/").map(encodeURIComponent).join("/")}`;
+function rawSongUrl(config, relativePath) {
+  const segments = [config.branch, config.songsPath, relativePath]
+    .filter(Boolean)
+    .join("/")
+    .split("/")
+    .map(encodeURIComponent)
+    .join("/");
+
+  return `https://raw.githubusercontent.com/${config.owner}/${config.repo}/${segments}`;
 }
 
 function isSafeCgvCoursePath(value) {
@@ -724,6 +743,19 @@ function shouldDownloadSongBlob(relativePath) {
   return /\.(cho|chordpro|chopro|pro)$/i.test(lowerPath);
 }
 
+function normalizeSongRepositoryConfig(payload = {}) {
+  const input = String(payload.repository || payload.repo || payload.url || "").trim();
+  const branch = String(payload.branch || defaultSongRepository.branch).trim() || defaultSongRepository.branch;
+  const songsPath = String(payload.songsPath || payload.path || defaultSongRepository.songsPath || "")
+    .trim()
+    .replace(/^\/+|\/+$/g, "");
+  const match = input.match(/github\.com\/([^/\s]+)\/([^/\s#?]+)|^([^/\s]+)\/([^/\s]+)$/i);
+  const owner = match?.[1] || match?.[3] || defaultSongRepository.owner;
+  const repo = (match?.[2] || match?.[4] || defaultSongRepository.repo).replace(/\.git$/i, "");
+
+  return { owner, repo, branch, songsPath };
+}
+
 function chooseCourseEntry(files) {
   const markdownFiles = files
     .filter(file => /\.md$/i.test(file))
@@ -772,9 +804,10 @@ async function fetchCgvRepositoryTree() {
   return tree.tree;
 }
 
-async function fetchSongRepositoryTree() {
+async function fetchSongRepositoryTree(config) {
   const tree = await fetchJson(songGithubApiUrl(
-    `/git/trees/${encodeURIComponent(songRepository.branch)}?recursive=1`
+    config,
+    `/git/trees/${encodeURIComponent(config.branch)}?recursive=1`
   ));
 
   if (!Array.isArray(tree?.tree)) {
@@ -853,15 +886,17 @@ async function downloadCourseFromCgv(course) {
   };
 }
 
-async function syncSongsFromGithub() {
+async function syncSongsFromGithub(payload = {}) {
   ensureLibraryFolders();
 
+  const config = normalizeSongRepositoryConfig(payload);
   const songsDir = getSongsDir();
-  const tree = await fetchSongRepositoryTree();
-  const repoPrefix = `${songRepository.songsPath}/`;
+  const tree = await fetchSongRepositoryTree(config);
+  const repoPrefix = config.songsPath ? `${config.songsPath}/` : "";
   const files = tree
-    .filter(item => item.type === "blob" && item.path.startsWith(repoPrefix))
-    .map(item => item.path.slice(repoPrefix.length))
+    .filter(item => item.type === "blob")
+    .filter(item => !repoPrefix || item.path.startsWith(repoPrefix))
+    .map(item => repoPrefix ? item.path.slice(repoPrefix.length) : item.path)
     .filter(shouldDownloadSongBlob);
 
   if (!files.length) {
@@ -872,13 +907,16 @@ async function syncSongsFromGithub() {
 
   for (const relativePath of files) {
     await downloadFile(
-      rawSongUrl(relativePath),
-      path.join(songsDir, relativePath)
+      rawSongUrl(config, relativePath),
+      path.join(songsDir, relativePath),
+      { timeout: 60000 }
     );
   }
 
   return {
-    repository: `https://github.com/${songRepository.owner}/${songRepository.repo}/tree/${songRepository.branch}/${songRepository.songsPath}`,
+    repository: `https://github.com/${config.owner}/${config.repo}`,
+    branch: config.branch,
+    songsPath: config.songsPath,
     songsDir,
     fileCount: files.length
   };
@@ -1396,9 +1434,14 @@ function enrichBibleReferences(markdownLine) {
     "gi"
   );
 
-  return markdownLine.replace(referencePattern, (match, book, referenceList) =>
+  const enrichText = text => text.replace(referencePattern, (match, book, referenceList) =>
     buildBibleReferenceListMarkup(match, book, referenceList)
   );
+
+  return String(markdownLine || "")
+    .split(/(<[^>]+>)/g)
+    .map(part => part.startsWith("<") && part.endsWith(">") ? part : enrichText(part))
+    .join("");
 }
 
 function getMarkdownHeadingLevel(line) {
@@ -1647,6 +1690,21 @@ function seedStarterCourse() {
   });
 }
 
+function seedStarterBackgrounds() {
+  const backgroundsDir = getBackgroundsDir();
+  const sourceDir = firstExistingDirectory([
+    process.resourcesPath ? path.join(process.resourcesPath, "backgrounds") : "",
+    bundledBackgroundsDir
+  ]);
+
+  if (!sourceDir) return;
+
+  copyDirectoryFiltered(sourceDir, backgroundsDir, {
+    excludeFiles: new Set([".DS_Store"]),
+    skipExisting: true
+  });
+}
+
 function seedStarterBible() {
   const version = getBibleVersion();
   const targetDir = getUserBibleDir(version);
@@ -1680,6 +1738,7 @@ function seedStarterContent() {
     ensureLibraryFolders(libraryRootDir);
     seedStarterCourse();
     seedStarterSongs();
+    seedStarterBackgrounds();
     seedStarterBible();
 
     const nextState = {
@@ -1792,6 +1851,7 @@ function setCourseLibraryDir(libraryRootDir) {
     });
     seedStarterCourse();
     seedStarterSongs();
+    seedStarterBackgrounds();
     seedStarterBible();
     return true;
   } catch (error) {
@@ -2700,7 +2760,7 @@ function listFilesRecursive(root, matcher) {
 }
 
 function loadSongLibrary() {
-  const songFiles = new Map();
+  const songsByIdentity = new Map();
   const songsDir = getSongsDir();
 
   [...bundledSongRoots, songsDir].forEach(root => {
@@ -2709,14 +2769,34 @@ function loadSongLibrary() {
     listFilesRecursive(root, fileName => /\.(cho|chordpro|chopro|pro)$/i.test(fileName))
       .slice(0, root === songsDir ? undefined : starterSongLimit)
       .forEach(file => {
-        songFiles.set(file.relativePath, file.absolutePath);
+        const song = parseChordProSong(
+          fs.readFileSync(file.absolutePath, "utf-8"),
+          file.absolutePath,
+          file.relativePath
+        );
+        const identity = normalizeSongIdentity(song);
+
+        if (song.sections.length) {
+          songsByIdentity.set(identity, song);
+        }
       });
   });
 
-  return [...songFiles.entries()]
-    .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
-    .map(([relativePath, filePath]) => parseChordProSong(fs.readFileSync(filePath, "utf-8"), filePath, relativePath))
-    .filter(song => song.sections.length);
+  return [...songsByIdentity.values()]
+    .sort((a, b) => a.file.localeCompare(b.file, undefined, { numeric: true }));
+}
+
+function normalizeSongIdentity(song) {
+  const label = song.title || path.basename(song.file || "", path.extname(song.file || ""));
+
+  return label
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/^\d+[\s._-]+/, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 function loadBackgroundLibrary() {
@@ -2735,21 +2815,28 @@ function loadBackgroundLibrary() {
     }
   ];
 
-  return sources.flatMap(source => {
+  const backgroundsByFile = new Map();
+
+  sources.forEach(source => {
     if (!fs.existsSync(source.root)) return [];
 
-    return listFilesRecursive(source.root, fileName => /\.(apng|avif|gif|jpe?g|png|svg|webp|mp4|webm|ogg|mov)$/i.test(fileName))
-      .map(file => {
+    listFilesRecursive(source.root, fileName => /\.(apng|avif|gif|jpe?g|png|svg|webp|mp4|webm|ogg|mov)$/i.test(fileName))
+      .forEach(file => {
+        const key = file.relativePath.toLowerCase();
+        if (backgroundsByFile.has(key)) return;
+
         const isVideo = /\.(mp4|webm|ogg|mov)$/i.test(file.relativePath);
-        return {
+        backgroundsByFile.set(key, {
           id: `${source.urlPrefix}/${file.relativePath}`,
           name: path.basename(file.relativePath, path.extname(file.relativePath)),
           file: file.relativePath,
           url: `${source.urlPrefix}/${file.relativePath.split("/").map(encodeURIComponent).join("/")}`,
           type: isVideo ? "video" : "image"
-        };
+        });
       });
   });
+
+  return [...backgroundsByFile.values()];
 }
 
 function safeBackgroundFileName(name, mimeType = "") {
@@ -2972,6 +3059,7 @@ function updateControllerStyle(payload = {}) {
 
 function setControllerBlank(payload = {}) {
   const settings = loadStyleSettings();
+  const useConfiguredBlankMedia = payload.useConfiguredBlankMedia !== false;
   controllerState = {
     active: true,
     blank: true,
@@ -2981,7 +3069,9 @@ function setControllerBlank(payload = {}) {
     sectionLabels: [],
     step: 0,
     background: cleanText(payload.background, controllerState.background || "#0f172a"),
-    backgroundMedia: cleanOptionalLongText(settings.blankBackgroundMedia || payload.backgroundMedia),
+    backgroundMedia: cleanOptionalLongText(useConfiguredBlankMedia
+      ? settings.blankBackgroundMedia || payload.backgroundMedia
+      : payload.backgroundMedia),
     textColor: cleanText(payload.textColor, controllerState.textColor || "#ffffff"),
     accentColor: cleanText(payload.accentColor, controllerState.accentColor || "#38bdf8")
   };
@@ -3086,7 +3176,7 @@ function loadSlides() {
 
   presentationMeta = parsedDocument.meta;
 
-  slides = applyStickyH4(parsedDocument.body
+  const parsedSlides = applyStickyH4(parsedDocument.body
     .split(/\n\s*\n/)
     .map(block =>
       block
@@ -3096,6 +3186,11 @@ function loadSlides() {
     )
     .filter(slide => slide.length > 0)
     .map(parseSlide));
+
+  slides = [
+    ...buildCoverSlides(presentationMeta),
+    ...parsedSlides
+  ];
 
   const inlineQuizzes = slides
     .filter(slide => slide.quiz)
@@ -3107,6 +3202,13 @@ function loadSlides() {
     }));
 
   quizBank = [...loadQuizBank(presentationMeta), ...inlineQuizzes];
+}
+
+function buildCoverSlides(meta = {}) {
+  const cover = String(meta.cover || "").trim();
+  if (!cover) return [];
+
+  return [parseSlide([`![${meta.title || "Course cover"}](${cover})`])];
 }
 
 function buildPayload(participantId = null) {
@@ -3147,6 +3249,11 @@ function buildPayload(participantId = null) {
       reference: popupState.reference,
       scrollRatio: popupState.scrollRatio,
       verseIndex: popupState.verseIndex
+    },
+    audienceQrVisible,
+    tabletDrawing: {
+      visible: tabletDrawingState.visible,
+      dataUrl: tabletDrawingState.dataUrl
     },
     controllerState: publicControllerState()
   };
@@ -3346,9 +3453,18 @@ app.get("/songs", (req, res) => {
   res.json(loadSongLibrary());
 });
 
+app.get("/songs/repository", (req, res) => {
+  res.json({
+    repository: `${defaultSongRepository.owner}/${defaultSongRepository.repo}`,
+    url: `https://github.com/${defaultSongRepository.owner}/${defaultSongRepository.repo}/`,
+    branch: defaultSongRepository.branch,
+    songsPath: defaultSongRepository.songsPath
+  });
+});
+
 app.post("/songs/sync", async (req, res) => {
   try {
-    const result = await syncSongsFromGithub();
+    const result = await syncSongsFromGithub(req.body || {});
     res.json(result);
     io.emit("songs-updated", result);
   } catch (error) {
@@ -3485,6 +3601,27 @@ io.on("connection", socket => {
     if (Number.isInteger(parsedVerseIndex) && parsedVerseIndex >= 0) {
       popupState.verseIndex = parsedVerseIndex;
     }
+    sendState();
+  });
+
+  socket.on("set-audience-qr-visible", visible => {
+    audienceQrVisible = !!visible;
+    sendState();
+  });
+
+  socket.on("tablet-drawing", payload => {
+    const dataUrl = typeof payload?.dataUrl === "string" ? payload.dataUrl : "";
+    if (dataUrl.length > 25000000) return;
+
+    tabletDrawingState = {
+      visible: payload?.visible !== false,
+      dataUrl
+    };
+    sendState();
+  });
+
+  socket.on("tablet-drawing-clear", () => {
+    tabletDrawingState = { visible: false, dataUrl: "" };
     sendState();
   });
 

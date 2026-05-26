@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title data-i18n="controller">Controller</title>
   <link rel="icon" href="/assets/cgv-app-icon.png">
   <link rel="stylesheet" href="controller.css">
@@ -25,12 +26,29 @@
           <h1 data-i18n="songs">Songs</h1>
           <p data-i18n="songsHelp">Select a song, then send it live.</p>
         </div>
-        <button id="newSongButton" type="button" class="secondary" data-i18n="newSong">New Song</button>
+        <div class="song-actions">
+          <button id="downloadSongsToggle" type="button" class="secondary" data-i18n="downloadSongsShort">GitHub</button>
+          <button id="newSongButton" type="button" class="secondary" data-i18n="newSong">New Song</button>
+        </div>
       </div>
+
+      <form id="downloadSongsForm" class="github-song-form hidden">
+        <label>
+          <span data-i18n="githubRepository">GitHub repository</span>
+          <input id="downloadSongsRepository" type="text" autocomplete="off" spellcheck="false" value="https://github.com/Cultivados-en-Gracia-y-Verdad/canciones/">
+        </label>
+        <button id="downloadSongsButton" type="submit" class="secondary" data-i18n="downloadSongs">Download Songs from GitHub</button>
+        <p id="downloadSongsStatus" class="download-status" data-i18n="songsDefaultHint">Press Enter to use the suggested CGV canciones repository.</p>
+      </form>
 
       <label class="search-field">
         <span data-i18n="searchSongs">Search songs</span>
         <input id="songSearch" type="search" placeholder="Type a title or lyric..." data-i18n-placeholder="searchSongsPlaceholder">
+      </label>
+
+      <label class="library-filter">
+        <span data-i18n="songLibrary">Song library</span>
+        <select id="songLibraryFilter"></select>
       </label>
 
       <div id="songList" class="song-list"></div>
@@ -72,11 +90,6 @@
     </section>
 
     <aside class="controller-panel">
-      <section class="panel-card course-sections-card">
-        <h2 data-i18n="courseSections">Course Sections</h2>
-        <div id="courseSections" class="course-sections"></div>
-      </section>
-
       <section class="panel-card">
         <h2 data-i18n="liveOutput">Live Output</h2>
         <div class="button-row">

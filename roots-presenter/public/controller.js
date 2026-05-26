@@ -13,9 +13,15 @@ let controllerState = {
 };
 let songs = [];
 let backgrounds = [];
-let latestState = {};
 let selectedSongId = null;
 let editingSongId = null;
+let selectedLibrary = "all";
+let defaultSongRepository = {
+  repository: "Cultivados-en-Gracia-y-Verdad/canciones",
+  url: "https://github.com/Cultivados-en-Gracia-y-Verdad/canciones/",
+  branch: "main",
+  songsPath: "songs/chordpro"
+};
 
 function byId(id) {
   return document.getElementById(id);
@@ -56,11 +62,34 @@ function getBracketSectionLabel(line) {
 async function loadSongs() {
   const response = await fetch("/songs");
   songs = response.ok ? await response.json() : [];
+  renderSongLibraryFilter();
   if (!selectedSongId || !songs.some(song => song.id === selectedSongId)) {
-    selectedSongId = songs[0]?.id || null;
+    selectedSongId = getVisibleSongs()[0]?.id || songs[0]?.id || null;
   }
   renderSongList();
   renderPreview();
+}
+
+async function loadDefaultSongRepository() {
+  try {
+    const response = await fetch("/songs/repository");
+    if (!response.ok) return;
+
+    const config = await response.json();
+    defaultSongRepository = {
+      ...defaultSongRepository,
+      ...config,
+      url: config.url || `https://github.com/${config.repository || defaultSongRepository.repository}/`
+    };
+  } catch {
+    // Keep the built-in CGV canciones suggestion.
+  }
+
+  const input = byId("downloadSongsRepository");
+  if (input) {
+    input.value = input.value.trim() || defaultSongRepository.url;
+    input.placeholder = defaultSongRepository.url;
+  }
 }
 
 async function loadBackgrounds() {
@@ -120,6 +149,22 @@ function getSelectedSong() {
 function getSongLibraryName(song) {
   const parts = String(song?.file || "").split("/").filter(Boolean);
   return parts.length > 1 ? parts.slice(0, -1).join(" / ") : t("songs");
+}
+
+function getSongLibraryKey(song) {
+  return getSongLibraryName(song).toLowerCase();
+}
+
+function getSongLibraries() {
+  const libraries = new Map();
+  songs.forEach(song => {
+    const name = getSongLibraryName(song);
+    libraries.set(name.toLowerCase(), name);
+  });
+
+  return [...libraries.entries()]
+    .sort(([, a], [, b]) => a.localeCompare(b, undefined, { numeric: true }))
+    .map(([key, name]) => ({ key, name }));
 }
 
 function getSongNumber(song, fallbackIndex = 0) {
@@ -206,6 +251,63 @@ function closeEditor() {
   byId("songEditor").classList.add("hidden");
 }
 
+function setDownloadStatus(message, isError = false) {
+  const status = byId("downloadSongsStatus");
+  if (!status) return;
+
+  status.textContent = message;
+  status.classList.toggle("error", isError);
+}
+
+async function downloadSongsFromGithub(event) {
+  event.preventDefault();
+
+  const button = byId("downloadSongsButton");
+  const input = byId("downloadSongsRepository");
+  const repository = input.value.trim() || defaultSongRepository.url;
+
+  button.disabled = true;
+  setDownloadStatus(t("songsDownloading"));
+
+  try {
+    const response = await fetch("/songs/sync", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        repository,
+        branch: defaultSongRepository.branch,
+        songsPath: defaultSongRepository.songsPath
+      })
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(result.error || response.statusText);
+
+    setDownloadStatus(t("songsDownloadedMessage").replace("{count}", result.fileCount || 0));
+    await loadSongs();
+  } catch (error) {
+    setDownloadStatus(error.message || t("songsDownloadFailedTitle"), true);
+  } finally {
+    button.disabled = false;
+  }
+}
+
+function toggleGithubSongForm() {
+  const form = byId("downloadSongsForm");
+  form.classList.toggle("hidden");
+
+  if (!form.classList.contains("hidden")) {
+    const input = byId("downloadSongsRepository");
+    input.value = input.value.trim() || defaultSongRepository.url;
+    input.focus();
+    input.select();
+  }
+}
+
+function isEditingText(event) {
+  const tagName = event.target?.tagName?.toLowerCase();
+  return tagName === "input" || tagName === "textarea" || tagName === "select" || event.target?.isContentEditable;
+}
+
 async function saveCurrentSong() {
   const title = byId("songTitle").value.trim() || t("untitledSong");
   const lyrics = byId("songLyrics").value.trim();
@@ -249,12 +351,11 @@ async function saveCurrentSong() {
 
 function renderSongList() {
   const list = byId("songList");
-  const query = byId("songSearch").value.trim().toLowerCase();
-  const visibleSongs = query
-    ? songs.filter(song =>
-        `${song.file}\n${song.title}\n${song.lyrics}`.toLowerCase().includes(query)
-      )
-    : songs;
+  const visibleSongs = getVisibleSongs();
+
+  if (!visibleSongs.some(song => song.id === selectedSongId)) {
+    selectedSongId = visibleSongs[0]?.id || null;
+  }
 
   if (!visibleSongs.length) {
     list.innerHTML = `
@@ -271,7 +372,8 @@ function renderSongList() {
     const stanzaCount = parseSections(song.lyrics).length;
     const screenLabel = stanzaCount === 1 ? t("screen") : t("screens");
     const libraryName = getSongLibraryName(song);
-    const libraryHeader = libraryName !== previousLibrary
+    const showLibraryHeader = selectedLibrary === "all" && libraryName !== previousLibrary;
+    const libraryHeader = showLibraryHeader
       ? `<div class="song-library-heading">${escapeHtml(libraryName)}</div>`
       : "";
     previousLibrary = libraryName;
@@ -287,6 +389,45 @@ function renderSongList() {
       </article>
     `;
   }).join("");
+}
+
+function getVisibleSongs() {
+  const query = byId("songSearch").value.trim().toLowerCase();
+  const librarySongs = selectedLibrary === "all"
+    ? songs
+    : songs.filter(song => getSongLibraryKey(song) === selectedLibrary);
+
+  return query
+    ? librarySongs.filter(song =>
+        `${song.file}\n${song.title}\n${song.lyrics}`.toLowerCase().includes(query)
+      )
+    : librarySongs;
+}
+
+function renderSongLibraryFilter() {
+  const select = byId("songLibraryFilter");
+  if (!select) return;
+
+  const libraries = getSongLibraries();
+  const previousValue = selectedLibrary;
+  select.replaceChildren();
+
+  const allOption = document.createElement("option");
+  allOption.value = "all";
+  allOption.textContent = t("allSongLibraries");
+  select.appendChild(allOption);
+
+  libraries.forEach(library => {
+    const option = document.createElement("option");
+    option.value = library.key;
+    option.textContent = library.name;
+    select.appendChild(option);
+  });
+
+  selectedLibrary = previousValue === "all" || libraries.some(library => library.key === previousValue)
+    ? previousValue
+    : "all";
+  select.value = selectedLibrary;
 }
 
 function renderBackgroundGallery() {
@@ -319,32 +460,6 @@ function renderBackgroundGallery() {
   }).join("");
 }
 
-function renderCourseSections(headings = latestState.headings || []) {
-  const host = byId("courseSections");
-  if (!host) return;
-
-  if (!headings.length) {
-    host.innerHTML = `<div class="empty-state compact">${t("noCourseSections")}</div>`;
-    return;
-  }
-
-  host.innerHTML = headings.map(heading => {
-    const active = Number(latestState.slide) === Number(heading.slide) ? " active" : "";
-    return `
-      <button type="button" class="course-section-choice level-${heading.level}${active}" data-slide-index="${heading.slide}">
-        <span>H${heading.level}</span>
-        <b>${escapeHtml(heading.title)}</b>
-      </button>
-    `;
-  }).join("");
-}
-
-async function jumpToCourseSlide(slideIndex) {
-  const response = await fetch(`/jump/${encodeURIComponent(slideIndex)}`, { method: "POST" });
-  if (!response.ok) return;
-  renderCourseSections();
-}
-
 function renderSongBackgroundSelect(selectedUrl = byId("songBackgroundMedia")?.value || "") {
   const select = byId("songBackgroundMedia");
   if (!select) return;
@@ -374,6 +489,7 @@ function selectBackground(url) {
 }
 
 function getBackgroundShortcutIndex(event) {
+  if (isEditingText(event)) return -1;
   if (event.altKey || event.ctrlKey || event.metaKey) return -1;
 
   const digitMatch = event.code?.match(/^(?:Digit|Numpad)(\d)$/);
@@ -476,10 +592,8 @@ function hydrateColorsFromState() {
 }
 
 socket.on("state", data => {
-  latestState = data || {};
   controllerState = data.controllerState || controllerState;
   hydrateColorsFromState();
-  renderCourseSections(data.headings || []);
   renderPreview();
 });
 socket.on("songs-updated", loadSongs);
@@ -526,12 +640,6 @@ byId("songThumbnails").addEventListener("click", event => {
   }
 });
 
-byId("courseSections").addEventListener("click", event => {
-  const section = event.target.closest("[data-slide-index]");
-  if (!section) return;
-  jumpToCourseSlide(section.dataset.slideIndex);
-});
-
 byId("newSongButton").addEventListener("click", () => openEditor());
 byId("closeEditorButton").addEventListener("click", closeEditor);
 byId("cancelEditorButton").addEventListener("click", closeEditor);
@@ -573,6 +681,12 @@ byId("nextButton").addEventListener("click", nextSection);
 byId("previousButton").addEventListener("click", previousSection);
 byId("applyStyleButton").addEventListener("click", applyStyle);
 byId("songSearch").addEventListener("input", renderSongList);
+byId("songLibraryFilter").addEventListener("change", event => {
+  selectedLibrary = event.target.value || "all";
+  selectedSongId = getVisibleSongs()[0]?.id || null;
+  renderSongList();
+  renderPreview();
+});
 byId("toggleBackgroundButton").addEventListener("click", () => {
   const controls = byId("backgroundControls");
   controls.open = !controls.open;
@@ -586,10 +700,11 @@ byId("clearBackgroundButton").addEventListener("click", () => selectBackground("
 byId("backgroundColor").addEventListener("input", renderPreview);
 byId("textColor").addEventListener("input", renderPreview);
 byId("accentColor").addEventListener("input", renderPreview);
+byId("downloadSongsToggle").addEventListener("click", toggleGithubSongForm);
+byId("downloadSongsForm").addEventListener("submit", downloadSongsFromGithub);
 
 window.addEventListener("keydown", event => {
-  if (event.target.matches("input, textarea, select") || event.target.isContentEditable) return;
-
+  if (isEditingText(event)) return;
   if (selectBackgroundFromShortcut(event)) return;
 
   if (event.key === "Escape") {
@@ -619,6 +734,7 @@ window.addEventListener("keydown", event => {
 window.CGVI18N.loadLanguage().then(() => {
   renderSongList();
   renderPreview();
+  loadDefaultSongRepository();
   loadSongs();
   loadBackgrounds();
 });

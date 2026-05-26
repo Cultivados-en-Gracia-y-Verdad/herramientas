@@ -19,6 +19,11 @@ const views = {
     titleKey: "director",
     helpKey: "scanDirectorQr"
   },
+  stage: {
+    path: "/stage.html",
+    titleKey: "stageView",
+    helpKey: "scanStageQr"
+  },
 };
 
 let connectionInfo = {};

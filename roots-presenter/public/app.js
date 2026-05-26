@@ -1,4 +1,5 @@
 const socket = io();
+window.CGV_SOCKET = socket;
 
 const isPresenter = document.body.classList.contains("presenter");
 const isAudience = document.body.classList.contains("audience");
@@ -11,6 +12,7 @@ if (isProjector) {
 
 let renderedSlides = [];
 let slides = [];
+let headings = [];
 let quizzes = [];
 let slide = 0;
 let step = 0;
@@ -19,6 +21,8 @@ let controllerState = { active: false, title: "", sections: [], step: 0 };
 let userAnswer = null;
 let session = null;
 let connection = { url: "/audience.html" };
+let audienceQrVisible = false;
+let tabletDrawing = { visible: false, dataUrl: "" };
 let appLanguage = "es";
 let participant = null;
 let activeQuizKey = null;
@@ -40,12 +44,15 @@ socket.on("state", data => {
   window.CGVI18N?.setLanguage(appLanguage);
   renderedSlides = data.renderedSlides || [];
   slides = data.slides || [];
+  headings = data.headings || [];
   quizzes = data.quizzes || [];
   slide = data.slide || 0;
   step = data.step || 0;
   quizState = data.quizState || { active: false, quizId: null, quiz: null, counts: {} };
   controllerState = data.controllerState || { active: false, title: "", sections: [], step: 0 };
   popupState = data.popupState || { reference: null, scrollRatio: 0, verseIndex: 0 };
+  audienceQrVisible = !!data.audienceQrVisible;
+  tabletDrawing = data.tabletDrawing || { visible: false, dataUrl: "" };
 
   const nextQuizKey = quizState.active ? quizState.quizId : null;
   if (nextQuizKey !== activeQuizKey) {
@@ -99,6 +106,8 @@ function render() {
 
     renderPresenterQuiz();
     renderSessionStatus();
+    renderPresenterSectionSelect();
+    renderAudienceQrToggle();
     fitSlideText(currentEl, { baseSize: 46, minSize: 20 });
     fitSlideText(nextEl, { baseSize: 32, minSize: 16 });
     applySharedPopupState();
@@ -109,6 +118,8 @@ function render() {
     if (controllerState.active) {
       renderControllerProjector(projectorSlide);
       renderProjectorQuiz();
+      renderTabletDrawingOverlay();
+      renderAudienceQrOverlay();
       applySharedPopupState();
       return;
     }
@@ -118,12 +129,14 @@ function render() {
     projectorSlide.removeAttribute("style");
     applySlideLayoutClass(projectorSlide);
     renderProjectorQuiz();
+    renderTabletDrawingOverlay();
+    renderAudienceQrOverlay();
     fitSlideText(projectorSlide, {
       baseSize: getProjectorBaseSize(projectorSlide),
       minSize: projectorMode === "extended" ? 40 : 32,
       hardMinSize: 28,
       maxHeight: window.innerHeight - 160,
-      maxWidth: Math.min(window.innerWidth * (projectorMode === "extended" ? 0.86 : 0.76), 1440),
+      maxWidth: Math.min(projectorSlide.clientWidth || window.innerWidth * 0.78, window.innerWidth - 140),
       densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
       sizeBoost: projectorMode === "extended" ? 12 : 0
     });
@@ -143,6 +156,54 @@ function render() {
     });
     applySharedPopupState();
   }
+}
+
+function renderAudienceQrToggle() {
+  const button = document.getElementById("audienceQrToggle");
+  if (!button) return;
+
+  button.classList.toggle("active", audienceQrVisible);
+  button.textContent = audienceQrVisible ? t("hideAudienceQr") : t("showAudienceQr");
+}
+
+function renderTabletDrawingOverlay() {
+  const overlay = document.getElementById("tabletDrawingOverlay");
+  if (!overlay) return;
+
+  const visible = !!tabletDrawing.visible && !!tabletDrawing.dataUrl;
+  overlay.hidden = !visible;
+  overlay.src = visible ? tabletDrawing.dataUrl : "";
+}
+
+function renderAudienceQrOverlay() {
+  const overlay = document.getElementById("audienceQrOverlay");
+  if (!overlay) return;
+
+  overlay.hidden = !audienceQrVisible;
+  if (!audienceQrVisible) {
+    overlay.innerHTML = "";
+    return;
+  }
+
+  const joinUrl = getAudienceJoinUrl();
+  overlay.innerHTML = `
+    <div class="audience-qr-card">
+      <strong>${escapeHtml(t("audienceQrTitle"))}</strong>
+      <img src="/connection-qr.svg?path=/audience.html&t=${Date.now()}" alt="${escapeHtml(t("connectionQrAlt"))}">
+      <code>${escapeHtml(joinUrl.replace(/^https?:\/\//, ""))}</code>
+      <span>${escapeHtml(t("sameWifiHelp"))}</span>
+    </div>
+  `;
+}
+
+function getAudienceJoinUrl() {
+  if (connection?.url) return connection.url;
+
+  if (connection?.host && connection?.port) {
+    return `http://${connection.host}:${connection.port}/audience.html`;
+  }
+
+  return `${window.location.origin}/audience.html`;
 }
 
 function renderControllerProjector(projectorSlide) {
@@ -450,7 +511,7 @@ function fitSongOutputText(element) {
 
   const baseSize = 154;
   const hardMinSize = 52;
-  const maxWidth = Math.max(320, window.innerWidth * 0.9);
+  const maxWidth = Math.max(320, Math.min(window.innerWidth * 0.84, element.clientWidth || window.innerWidth));
   const maxHeight = Math.max(220, window.innerHeight * 0.78);
   let size = baseSize;
 
@@ -802,6 +863,33 @@ function reloadSlides() {
   socket.emit("reload-slides");
 }
 
+function renderPresenterSectionSelect() {
+  const select = document.getElementById("presenterSectionSelect");
+  if (!select) return;
+
+  if (!headings.length) {
+    select.innerHTML = `<option value="">${t("noCourseSections")}</option>`;
+    select.disabled = true;
+    return;
+  }
+
+  const currentValue = String(slide);
+  select.disabled = false;
+  select.innerHTML = headings
+    .map(heading => {
+      const selected = String(heading.slide) === currentValue ? " selected" : "";
+      const prefix = heading.level === 2 ? "  H2 " : "H1 ";
+      return `<option value="${heading.slide}"${selected}>${escapeHtml(prefix + heading.title)}</option>`;
+    })
+    .join("");
+}
+
+async function jumpToPresenterSection() {
+  const select = document.getElementById("presenterSectionSelect");
+  if (!select?.value) return;
+  await fetch(`/jump/${encodeURIComponent(select.value)}`, { method: "POST" });
+}
+
 function newSession() {
   userAnswer = null;
   socket.emit("new-session");
@@ -870,6 +958,10 @@ function submitAnswer(answerIndex) {
       name: participant?.name || localStorage.getItem("rootsParticipantName") || "Anonymous"
     }
   });
+}
+
+function toggleAudienceQr() {
+  socket.emit("set-audience-qr-visible", !audienceQrVisible);
 }
 
 document.addEventListener("click", event => {
@@ -951,12 +1043,16 @@ if (isAudience) {
   });
 }
 
+document.getElementById("presenterSectionSelect")?.addEventListener("change", jumpToPresenterSection);
+document.getElementById("audienceQrToggle")?.addEventListener("click", toggleAudienceQr);
+
 window.addEventListener("resize", () => {
   render();
 });
 
 if (isPresenter || isProjector) {
   window.addEventListener("keydown", e => {
+    if (e.target.matches("input, textarea, select")) return;
     if (e.key === "ArrowRight" || e.key === " ") next();
     if (e.key === "ArrowLeft") prev();
     if (isProjector && e.key === "Escape") {

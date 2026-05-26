@@ -25,6 +25,7 @@ let directorWindow;
 let connectionWindow;
 let settingsWindow;
 let courseDownloadWindow;
+let songLibraryWindow;
 let presentationMode = "extended";
 let switchingMode = false;
 let headingMenuItems = [];
@@ -32,6 +33,7 @@ let quizMenuItems = [];
 let menuRefreshTimer = null;
 let loadedCourseTitle = "";
 let appLanguage = "es";
+let audienceQrMenuVisible = false;
 
 const MAIN_TRANSLATIONS = {
   es: {
@@ -92,9 +94,6 @@ const MAIN_TRANSLATIONS = {
     style: "Estilo",
     downloadCourses: "Descargar cursos",
     downloadSongs: "Descargar canciones de GitHub",
-    songsDownloadedTitle: "Canciones actualizadas",
-    songsDownloadedMessage: "Se descargaron {count} canciones desde GitHub.",
-    songsDownloadFailedTitle: "No se pudieron descargar las canciones",
     controller: "Control",
     connectionQr: "Código QR de conexión",
     stageView: "Vista de escenario",
@@ -125,6 +124,8 @@ const MAIN_TRANSLATIONS = {
     view: "Vista",
     openController: "Abrir control",
     showConnectionQr: "Mostrar QR de conexión",
+    showAudienceQrOnMainScreen: "Mostrar QR de audiencia en pantalla principal",
+    hideAudienceQrOnMainScreen: "Ocultar QR de audiencia en pantalla principal",
     openStageView: "Abrir vista de escenario",
     openDirector: "Abrir director",
     showHeaders: "Mostrar encabezados H1/H2",
@@ -193,9 +194,6 @@ MAIN_TRANSLATIONS.en = {
   style: "Style",
   downloadCourses: "Download Courses",
   downloadSongs: "Download Songs from GitHub",
-  songsDownloadedTitle: "Songs Updated",
-  songsDownloadedMessage: "Downloaded {count} songs from GitHub.",
-  songsDownloadFailedTitle: "Could Not Download Songs",
   controller: "Controller",
   connectionQr: "Connection QR",
   stageView: "Stage View",
@@ -226,6 +224,8 @@ MAIN_TRANSLATIONS.en = {
   view: "View",
   openController: "Open Controller",
   showConnectionQr: "Show Connection QR",
+  showAudienceQrOnMainScreen: "Show Audience QR on Main Screen",
+  hideAudienceQrOnMainScreen: "Hide Audience QR on Main Screen",
   openStageView: "Open Stage View",
   openDirector: "Open Director",
   showHeaders: "Show H1/H2 Headers",
@@ -616,23 +616,6 @@ async function openSongsFolder() {
   await openFolderPath(paths.songs, mt("openSongsFolder"));
 }
 
-async function downloadSongsFromGithub() {
-  try {
-    const result = await postLocalJsonResponse("/songs/sync");
-    await dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
-      type: "info",
-      title: mt("songsDownloadedTitle"),
-      message: mti("songsDownloadedMessage", { count: result.fileCount || 0 }),
-      detail: result.songsDir || ""
-    });
-  } catch (error) {
-    dialog.showErrorBox(
-      mt("songsDownloadFailedTitle"),
-      error?.message || mt("songsDownloadFailedTitle")
-    );
-  }
-}
-
 async function openBackgroundsFolder() {
   const paths = await getLibraryPaths();
   await openFolderPath(paths.backgrounds, mt("openBackgroundsFolder"));
@@ -959,6 +942,40 @@ function openCourseDownload() {
   });
 }
 
+function openSongLibraryWindow() {
+  if (songLibraryWindow && !songLibraryWindow.isDestroyed()) {
+    songLibraryWindow.focus();
+    return;
+  }
+
+  songLibraryWindow = new BrowserWindow({
+    width: 720,
+    height: 520,
+    title: mt("downloadSongs"),
+    icon: LOGO_PATH,
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  songLibraryWindow.loadURL(`${APP_URL}/songs.html`);
+  songLibraryWindow.on("closed", () => {
+    songLibraryWindow = null;
+  });
+}
+
+async function toggleAudienceQrOnMainScreen() {
+  const nextVisible = !audienceQrMenuVisible;
+  audienceQrMenuVisible = nextVisible;
+  createMenu();
+
+  try {
+    await postJsonLocal("/audience-qr", { visible: nextVisible });
+  } catch (error) {
+    audienceQrMenuVisible = !nextVisible;
+    createMenu();
+    dialog.showErrorBox(mt("connectionQr"), error?.message || mt("connectionQr"));
+  }
+}
+
 function openControllerWindow() {
   if (controllerWindow && !controllerWindow.isDestroyed()) {
     controllerWindow.focus();
@@ -1129,10 +1146,9 @@ function createMenu() {
           accelerator: "CmdOrCtrl+O",
           click: loadDownloadedCourse
         },
-        { type: "separator" },
         {
           label: `${mt("downloadSongs")}...`,
-          click: downloadSongsFromGithub
+          click: openSongLibraryWindow
         },
         {
           label: mt("openSongsFolder"),
@@ -1197,6 +1213,10 @@ function createMenu() {
           label: mt("showConnectionQr"),
           accelerator: "CmdOrCtrl+Shift+Q",
           click: openConnectionWindow
+        },
+        {
+          label: mt(audienceQrMenuVisible ? "hideAudienceQrOnMainScreen" : "showAudienceQrOnMainScreen"),
+          click: toggleAudienceQrOnMainScreen
         },
         {
           label: mt("openDirector"),
@@ -1298,6 +1318,8 @@ function clearWindowReferences() {
   if (stageWindow?.isDestroyed()) stageWindow = null;
   if (directorWindow?.isDestroyed()) directorWindow = null;
   if (connectionWindow?.isDestroyed()) connectionWindow = null;
+  if (settingsWindow?.isDestroyed()) settingsWindow = null;
+  if (courseDownloadWindow?.isDestroyed()) courseDownloadWindow = null;
 }
 
 function switchPresentationMode(mode) {
