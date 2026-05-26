@@ -4,11 +4,6 @@ const views = {
     titleKey: "controllerView",
     helpKey: "scanControllerQr"
   },
-  tablet: {
-    path: "/tablet.html",
-    titleKey: "tabletView",
-    helpKey: "scanTabletQr"
-  },
   audience: {
     path: "/audience.html",
     titleKey: "audience",

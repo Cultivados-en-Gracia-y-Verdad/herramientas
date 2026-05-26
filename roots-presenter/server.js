@@ -117,7 +117,6 @@ app.get("/join-info", (req, res) => {
 app.get("/connection-info", (req, res) => {
   res.json({
     controller: getJoinInfo("/controller.html"),
-    tablet: getJoinInfo("/tablet.html"),
     audience: getJoinInfo("/audience.html"),
     director: getJoinInfo("/director.html"),
     stage: getJoinInfo("/stage.html")
@@ -203,15 +202,6 @@ let popupState = {
 
 let audienceQrVisible = false;
 
-let tabletDrawingState = {
-  visible: false,
-  dataUrl: ""
-};
-
-let projectorViewport = null;
-let projectorMode = "extended";
-let projectorSocketId = null;
-
 let controllerState = {
   active: false,
   blank: false,
@@ -269,7 +259,6 @@ function normalizeJoinPath(value) {
   const allowedPaths = new Set([
     "/audience.html",
     "/controller.html",
-    "/tablet.html",
     "/director.html",
     "/stage.html"
   ]);
@@ -3255,12 +3244,6 @@ function buildPayload(participantId = null) {
       verseIndex: popupState.verseIndex
     },
     audienceQrVisible,
-    tabletDrawing: {
-      visible: tabletDrawingState.visible,
-      dataUrl: tabletDrawingState.dataUrl
-    },
-    projectorViewport,
-    projectorMode,
     controllerState: publicControllerState()
   };
 }
@@ -3615,35 +3598,6 @@ io.on("connection", socket => {
     sendState();
   });
 
-  socket.on("projector-viewport", payload => {
-    const width = Math.round(Number(payload?.width));
-    const height = Math.round(Number(payload?.height));
-    if (width <= 0 || height <= 0) return;
-
-    projectorSocketId = socket.id;
-    projectorViewport = { width, height };
-    if (payload?.mode === "mirrored" || payload?.mode === "extended") {
-      projectorMode = payload.mode;
-    }
-    sendState();
-  });
-
-  socket.on("tablet-drawing", payload => {
-    const dataUrl = typeof payload?.dataUrl === "string" ? payload.dataUrl : "";
-    if (dataUrl.length > 25000000) return;
-
-    tabletDrawingState = {
-      visible: payload?.visible !== false,
-      dataUrl
-    };
-    sendState();
-  });
-
-  socket.on("tablet-drawing-clear", () => {
-    tabletDrawingState = { visible: false, dataUrl: "" };
-    sendState();
-  });
-
   socket.on("start-quiz", quizId => {
     startQuizById(quizId);
     sendState();
@@ -3771,15 +3725,6 @@ io.on("connection", socket => {
       answer: parsedIndex,
       quizId: activeQuiz.id
     });
-    sendState();
-  });
-
-  socket.on("disconnect", () => {
-    if (socket.id !== projectorSocketId) return;
-
-    projectorSocketId = null;
-    projectorViewport = null;
-    projectorMode = "extended";
     sendState();
   });
 });

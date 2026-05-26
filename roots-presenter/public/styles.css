@@ -1142,17 +1142,6 @@ button {
   background: rgba(7,89,133,0.09);
 }
 
-.tablet-drawing-overlay {
-  position: fixed;
-  z-index: 25;
-  object-fit: fill;
-  pointer-events: none;
-}
-
-.tablet-drawing-overlay[hidden] {
-  display: none;
-}
-
 .audience-qr-overlay {
   position: fixed;
   inset: 0;
