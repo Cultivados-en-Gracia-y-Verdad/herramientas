@@ -125,3 +125,58 @@ body.tablet-fullscreen .tablet-stage {
   pointer-events: none;
   z-index: 99999;
 }
+/* existing styles above */
+
+
+/* ADD THESE AT THE END */
+
+.tablet-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+  .tablet-toolbar {
+    height: auto;
+    min-height: 64px;
+    padding: 8px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tablet-actions {
+    width: 100%;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .tablet-toolbar button,
+  #tabletExitFullscreenButton {
+    padding: 8px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .tablet-stage {
+    height: calc(100vh - 96px);
+  }
+}
+#tabletFullscreenBlankButton {
+  position: fixed;
+  top: 14px;
+  right: 92px;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  background: #2d2d2d;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 16px;
+}
+
+body.tablet-fullscreen #tabletFullscreenBlankButton {
+  opacity: 1;
+  pointer-events: auto;
+}

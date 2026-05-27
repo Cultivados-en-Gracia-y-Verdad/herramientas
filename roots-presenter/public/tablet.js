@@ -9,6 +9,12 @@ const exitFullscreenButton = document.getElementById("tabletExitFullscreenButton
 const blankSurface = document.getElementById("tabletBlankSurface");
 const tabletSurface = document.getElementById("tabletSurface");
 
+if (fullscreenBlankButton && blankButton) {
+  fullscreenBlankButton.addEventListener("click", () => {
+    blankButton.click();
+  });
+}
+
 if (tabletCanvas) {
   const drawingSocket = window.CGV_SOCKET || io();
 
