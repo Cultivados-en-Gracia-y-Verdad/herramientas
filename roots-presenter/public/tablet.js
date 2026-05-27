@@ -5,6 +5,7 @@ const nextButton = document.getElementById("tabletNextButton");
 const prevButton = document.getElementById("tabletPrevButton");
 const blankButton = document.getElementById("tabletBlankButton");
 const fullscreenButton = document.getElementById("tabletFullscreenButton");
+const fullscreenBlankButton = document.getElementById("tabletFullscreenBlankButton");
 const exitFullscreenButton = document.getElementById("tabletExitFullscreenButton");
 const blankSurface = document.getElementById("tabletBlankSurface");
 const tabletSurface = document.getElementById("tabletSurface");
@@ -47,6 +48,11 @@ if (tabletCanvas) {
 
     if (fullscreenButton) {
       fullscreenButton.textContent = active ? "Window" : "Fullscreen";
+    }
+
+    if (fullscreenBlankButton) {
+      fullscreenBlankButton.style.opacity = active ? "1" : "0";
+      fullscreenBlankButton.style.pointerEvents = active ? "auto" : "none";
     }
 
     requestAnimationFrame(() => {
@@ -213,12 +219,12 @@ if (tabletCanvas) {
   }
 
   function isEraserEvent(event) {
-    // Many stylus side buttons / erasers report button 5, buttons 32, or button/buttons 2.
     return event.pointerType === "pen" && (
       event.button === 5 ||
       event.buttons === 32 ||
       event.button === 2 ||
-      event.buttons === 2
+      event.buttons === 2 ||
+      event.buttons === 4
     );
   }
 
@@ -431,6 +437,10 @@ if (tabletCanvas) {
 
   if (exitFullscreenButton) {
     exitFullscreenButton.addEventListener("click", exitFullscreen);
+  }
+
+  if (fullscreenBlankButton && blankButton) {
+    fullscreenBlankButton.addEventListener("click", () => blankButton.click());
   }
 
   if (clearButton) {
