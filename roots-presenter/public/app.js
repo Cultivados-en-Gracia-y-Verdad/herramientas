@@ -4,9 +4,10 @@ window.CGV_SOCKET = socket;
 const isPresenter = document.body.classList.contains("presenter");
 const isAudience = document.body.classList.contains("audience");
 const isProjector = document.body.classList.contains("projector");
+const isTablet = document.body.classList.contains("tablet");
 const projectorMode = new URLSearchParams(window.location.search).get("mode") || "extended";
 
-if (isProjector) {
+if (isProjector || isTablet) {
   document.body.classList.add(`projector-${projectorMode}`);
 }
 
@@ -113,12 +114,16 @@ function render() {
 
   if (isProjector) {
     const projectorSlide = document.getElementById("projectorSlide");
+    if (!projectorSlide) return;
 
     if (controllerState.active) {
       renderControllerProjector(projectorSlide);
-      renderProjectorQuiz();
-      renderAudienceQrOverlay();
+      if (!isTablet) {
+        renderProjectorQuiz();
+        renderAudienceQrOverlay();
+      }
       applySharedPopupState();
+      if (isTablet) applyTabletPreviewScale();
       return;
     }
 
@@ -126,18 +131,13 @@ function render() {
     projectorSlide.classList.remove("song-output");
     projectorSlide.removeAttribute("style");
     applySlideLayoutClass(projectorSlide);
-    renderProjectorQuiz();
-    renderAudienceQrOverlay();
-    fitSlideText(projectorSlide, {
-      baseSize: getProjectorBaseSize(projectorSlide),
-      minSize: projectorMode === "extended" ? 40 : 32,
-      hardMinSize: 28,
-      maxHeight: window.innerHeight - 160,
-      maxWidth: Math.min(projectorSlide.clientWidth || window.innerWidth * 0.78, window.innerWidth - 140),
-      densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
-      sizeBoost: projectorMode === "extended" ? 12 : 0
-    });
+    if (!isTablet) {
+      renderProjectorQuiz();
+      renderAudienceQrOverlay();
+    }
+    fitProjectorSlide(projectorSlide);
     applySharedPopupState();
+    if (isTablet) applyTabletPreviewScale();
   }
 
   if (isAudience) {
@@ -438,6 +438,66 @@ function getProjectorBaseSize(element) {
   return 52 + modeBoost;
 }
 
+const TABLET_SURFACE_W = 1920;
+const TABLET_SURFACE_H = 1080;
+
+function getProjectorLayoutSize() {
+  if (isTablet) {
+    return { width: TABLET_SURFACE_W, height: TABLET_SURFACE_H };
+  }
+
+  return {
+    width: window.innerWidth,
+    height: window.innerHeight
+  };
+}
+
+function fitProjectorSlide(slideEl) {
+  if (!slideEl) return;
+
+  if (isTablet) {
+    fitSlideText(slideEl, {
+      baseSize: getProjectorBaseSize(slideEl),
+      minSize: projectorMode === "extended" ? 40 : 32,
+      hardMinSize: 28,
+      maxHeight: slideEl.clientHeight,
+      maxWidth: slideEl.clientWidth,
+      densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
+      sizeBoost: projectorMode === "extended" ? 12 : 0
+    });
+    return;
+  }
+
+  const viewport = getProjectorLayoutSize();
+
+  fitSlideText(slideEl, {
+    baseSize: getProjectorBaseSize(slideEl),
+    minSize: projectorMode === "extended" ? 40 : 32,
+    hardMinSize: 28,
+    maxHeight: viewport.height - 160,
+    maxWidth: Math.min(slideEl.clientWidth || viewport.width * 0.78, viewport.width - 140),
+    densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
+    sizeBoost: projectorMode === "extended" ? 12 : 0
+  });
+}
+
+function applyTabletPreviewScale() {
+  if (!isTablet) return;
+
+  const viewport = document.querySelector(".tablet-viewport");
+  const root = document.querySelector(".tablet-scale-root");
+  if (!viewport || !root) return;
+
+  root.style.width = `${TABLET_SURFACE_W}px`;
+  root.style.height = `${TABLET_SURFACE_H}px`;
+
+  const scale = Math.min(
+    viewport.clientWidth / TABLET_SURFACE_W,
+    viewport.clientHeight / TABLET_SURFACE_H
+  );
+  root.style.transform = `scale(${scale})`;
+}
+
 function scrollActivePresenterPopup(direction) {
   const popup = document.querySelector(".bible-ref.open .bible-popup");
   if (!popup) return;
@@ -470,21 +530,18 @@ function fitSlideText(element, options = {}) {
   element.style.setProperty("--fit-size", `${size}px`);
 
   requestAnimationFrame(() => {
-    let rect = element.getBoundingClientRect();
-
     while (
       size > hardMinSize &&
       (
         element.scrollHeight > maxHeight ||
         element.scrollWidth > maxWidth ||
-        rect.height > maxHeight ||
-        rect.width > maxWidth
+        element.offsetHeight > maxHeight ||
+        element.offsetWidth > maxWidth
       )
     ) {
       size -= 2;
       if (size < hardMinSize) size = hardMinSize;
       element.style.setProperty("--fit-size", `${size}px`);
-      rect = element.getBoundingClientRect();
     }
   });
 }
@@ -712,6 +769,8 @@ function renderProjectorQuiz() {
   const quiz = getActiveQuiz();
   const error = quizState.error;
   const resultsEl = document.getElementById("projectorQuiz");
+  if (!resultsEl) return;
+  if (!resultsEl) return;
   const joinUrl = connection?.url || "/audience.html";
   const joinCode = connection?.host && connection?.port
     ? `${connection.host}:${connection.port}`
@@ -1036,9 +1095,10 @@ document.getElementById("audienceQrToggle")?.addEventListener("click", toggleAud
 
 window.addEventListener("resize", () => {
   render();
+  applyTabletPreviewScale();
 });
 
-if (isPresenter || isProjector) {
+if (isPresenter || (isProjector && !isTablet)) {
   window.addEventListener("keydown", e => {
     if (e.target.matches("input, textarea, select")) return;
     if (e.key === "ArrowRight" || e.key === " ") next();
@@ -1047,5 +1107,174 @@ if (isPresenter || isProjector) {
       popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
       renderSharedPopupOverlay();
     }
+  });
+}
+
+const DRAW_W = 1920;
+const DRAW_H = 1080;
+const DRAW_COLOR = "#facc15";
+const PEN_WIDTH = 6;
+const ERASER_WIDTH = 36;
+
+let drawingMode = "pen";
+let drawingActive = false;
+
+function initDrawingCanvas(canvas) {
+  if (!canvas) return;
+
+  canvas.width = DRAW_W;
+  canvas.height = DRAW_H;
+}
+
+function getDrawPoint(event, canvas) {
+  const rect = canvas.getBoundingClientRect();
+
+  if (!rect.width || !rect.height) {
+    return { x: 0, y: 0 };
+  }
+
+  return {
+    x: ((event.clientX - rect.left) / rect.width) * DRAW_W,
+    y: ((event.clientY - rect.top) / rect.height) * DRAW_H
+  };
+}
+
+function prepareDrawingContext(ctx, erase) {
+  ctx.lineCap = "round";
+  ctx.lineJoin = "round";
+  ctx.lineWidth = erase ? ERASER_WIDTH : PEN_WIDTH;
+
+  if (erase) {
+    ctx.globalCompositeOperation = "destination-out";
+    ctx.strokeStyle = "rgba(0,0,0,1)";
+  } else {
+    ctx.globalCompositeOperation = "source-over";
+    ctx.strokeStyle = DRAW_COLOR;
+  }
+}
+
+function drawPoint(ctx, point) {
+  ctx.lineTo(point.x, point.y);
+}
+
+function applyDrawPoint(point, canvas, erase) {
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+
+  prepareDrawingContext(ctx, erase);
+
+  if (!point.drawing) {
+    ctx.beginPath();
+    ctx.moveTo(point.x, point.y);
+    return;
+  }
+
+  drawPoint(ctx, point);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(point.x, point.y);
+}
+
+function setDrawingMode(mode) {
+  drawingMode = mode === "eraser" ? "eraser" : "pen";
+
+  document.querySelectorAll(".tablet-toolbar button").forEach(button => {
+    const label = button.textContent.trim().toLowerCase();
+    button.classList.toggle("active", label === drawingMode);
+  });
+}
+
+function clearDrawing() {
+  const canvas = document.getElementById("projectorCanvas");
+  if (canvas) {
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, DRAW_W, DRAW_H);
+  }
+
+  socket.emit("draw-clear");
+}
+
+function emitDrawPoint(point) {
+  socket.emit("draw-point", point);
+}
+
+function handleDrawingPointerDown(event) {
+  if (!isTablet || event.button !== 0) return;
+
+  const canvas = document.getElementById("projectorCanvas");
+  if (!canvas) return;
+
+  event.preventDefault();
+  drawingActive = true;
+
+  const point = {
+    ...getDrawPoint(event, canvas),
+    drawing: false,
+    erase: drawingMode === "eraser"
+  };
+
+  applyDrawPoint(point, canvas, point.erase);
+  emitDrawPoint(point);
+  event.currentTarget.setPointerCapture(event.pointerId);
+}
+
+function handleDrawingPointerMove(event) {
+  if (!isTablet || !drawingActive) return;
+
+  const canvas = document.getElementById("projectorCanvas");
+  if (!canvas) return;
+
+  event.preventDefault();
+
+  const point = {
+    ...getDrawPoint(event, canvas),
+    drawing: true,
+    erase: drawingMode === "eraser"
+  };
+
+  applyDrawPoint(point, canvas, point.erase);
+  emitDrawPoint(point);
+}
+
+function finishDrawingPointer(event) {
+  if (!isTablet || !drawingActive) return;
+
+  drawingActive = false;
+
+  if (event.currentTarget.hasPointerCapture?.(event.pointerId)) {
+    event.currentTarget.releasePointerCapture(event.pointerId);
+  }
+}
+
+if (isTablet) {
+  window.setDrawingMode = setDrawingMode;
+  window.clearDrawing = clearDrawing;
+
+  const drawingCanvas = document.getElementById("projectorCanvas");
+  initDrawingCanvas(drawingCanvas);
+
+  drawingCanvas?.addEventListener("pointerdown", handleDrawingPointerDown);
+  drawingCanvas?.addEventListener("pointermove", handleDrawingPointerMove);
+  drawingCanvas?.addEventListener("pointerup", finishDrawingPointer);
+  drawingCanvas?.addEventListener("pointercancel", finishDrawingPointer);
+
+  applyTabletPreviewScale();
+}
+
+if (isProjector && !isTablet) {
+  const projectorCanvas = document.getElementById("projectorCanvas");
+  initDrawingCanvas(projectorCanvas);
+
+  socket.on("draw-point", point => {
+    if (!projectorCanvas || !point) return;
+
+    applyDrawPoint(point, projectorCanvas, !!point.erase);
+  });
+
+  socket.on("draw-clear", () => {
+    if (!projectorCanvas) return;
+
+    const ctx = projectorCanvas.getContext("2d");
+    ctx.clearRect(0, 0, DRAW_W, DRAW_H);
   });
 }

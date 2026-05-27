@@ -19,6 +19,11 @@ const views = {
     titleKey: "stageView",
     helpKey: "scanStageQr"
   },
+  tablet: {
+    path: "/tablet.html",
+    titleKey: "tabletView",
+    helpKey: "scanTabletQr"
+  },
 };
 
 let connectionInfo = {};

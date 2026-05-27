@@ -119,7 +119,8 @@ app.get("/connection-info", (req, res) => {
     controller: getJoinInfo("/controller.html"),
     audience: getJoinInfo("/audience.html"),
     director: getJoinInfo("/director.html"),
-    stage: getJoinInfo("/stage.html")
+    stage: getJoinInfo("/stage.html"),
+    tablet: getJoinInfo("/tablet.html")
   });
 });
 app.get("/connection-qr.svg", async (req, res) => {
@@ -260,7 +261,8 @@ function normalizeJoinPath(value) {
     "/audience.html",
     "/controller.html",
     "/director.html",
-    "/stage.html"
+    "/stage.html",
+    "/tablet.html"
   ]);
 
   return allowedPaths.has(path) ? path : "/audience.html";
@@ -3596,6 +3598,15 @@ io.on("connection", socket => {
   socket.on("set-audience-qr-visible", visible => {
     audienceQrVisible = !!visible;
     sendState();
+  });
+
+  socket.on("draw-point", point => {
+    if (!point || typeof point.x !== "number" || typeof point.y !== "number") return;
+    socket.broadcast.emit("draw-point", point);
+  });
+
+  socket.on("draw-clear", () => {
+    socket.broadcast.emit("draw-clear");
   });
 
   socket.on("start-quiz", quizId => {

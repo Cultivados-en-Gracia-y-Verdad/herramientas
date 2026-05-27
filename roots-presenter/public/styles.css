@@ -855,6 +855,20 @@ button {
   overflow: hidden;
 }
 
+.projector-drawing-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 500;
+  pointer-events: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  touch-action: none;
+}
+
 .projector-slide {
   font-size: var(--fit-size, 52px);
   line-height: 1.34;
@@ -1377,4 +1391,110 @@ button {
 .quiz-message {
   font-size: 24px;
   opacity: 0.9;
+}
+
+body.projector.tablet {
+  display: block;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #111111;
+}
+
+.tablet-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(15, 23, 42, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  height: 70px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.tablet-toolbar button {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font: inherit;
+  font-size: 16px;
+  padding: 10px 18px;
+}
+
+.tablet-toolbar button.active {
+  background: #facc15;
+  border-color: #facc15;
+  color: #111827;
+}
+
+.tablet-viewport {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #111111;
+}
+
+.tablet-scale-root {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: center center;
+  flex-shrink: 0;
+}
+
+body.projector.tablet .projector-frame {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background: var(--view-background, #000000);
+  overflow: hidden;
+}
+
+body.projector.tablet .projector-frame .projector-slide {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 80px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+body.projector.tablet .projector-frame .projector-slide.song-output {
+  width: 1920px;
+  max-width: none;
+  min-height: 1080px;
+  max-height: none;
+  margin: 0;
+  padding: 80px;
+}
+
+body.projector.tablet .projector-frame .drawing-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  touch-action: none;
+  z-index: 50;
+  pointer-events: auto;
+  cursor: crosshair;
 }
