@@ -19,6 +19,7 @@ const { serverEvents } = require("./server");
 
 let presenterWindow;
 let projectorWindow;
+let projectorCaptureTimer = null;
 let controllerWindow;
 let stageWindow;
 let directorWindow;
@@ -1311,6 +1312,46 @@ function closeWindow(window) {
   window.close();
 }
 
+function startProjectorCaptureFeed() {
+  if (projectorCaptureTimer) return;
+
+  projectorCaptureTimer = setInterval(async () => {
+    if (!projectorWindow || projectorWindow.isDestroyed()) {
+      return;
+    }
+
+    try {
+      const image = await projectorWindow.capturePage();
+
+      const resized = image.resize({
+        width: 1280
+      });
+
+      const dataUrl = image.toDataURL();
+
+      await projectorWindow.webContents.executeJavaScript(`
+        if (window.CGV_SOCKET) {
+          window.CGV_SOCKET.emit("draw-point", {
+            x: 0,
+            y: 0,
+            drawing: false,
+            erase: false,
+            meta: "projector-frame",
+            frame: {
+              width: window.innerWidth,
+              height: window.innerHeight,
+              dataUrl: ${JSON.stringify(dataUrl)}
+            }
+          });
+        }
+      `);
+
+    } catch (error) {
+      console.warn("Projector capture failed:", error);
+    }
+  }, 1000);
+}
+
 function clearWindowReferences() {
   if (presenterWindow?.isDestroyed()) presenterWindow = null;
   if (projectorWindow?.isDestroyed()) projectorWindow = null;
@@ -1402,6 +1443,7 @@ function createProjectorWindow(options = {}) {
       projectorWindow.show();
       projectorWindow.focus();
     }
+    startProjectorCaptureFeed();
   });
 
   projectorWindow.on("closed", () => {
