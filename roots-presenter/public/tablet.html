@@ -21,9 +21,11 @@
   </div>
 
   <div class="tablet-stage" id="tabletStage">
-    <iframe id="tabletProjectorPreview" src="/projector.html" title="Projector preview"></iframe>
-    <div id="tabletBlankSurface" aria-hidden="true"></div>
-    <canvas id="tabletDrawingCanvas"></canvas>
+    <div class="tablet-surface" id="tabletSurface">
+      <iframe id="tabletProjectorPreview" src="/projector.html" title="Projector preview"></iframe>
+      <div id="tabletBlankSurface" aria-hidden="true"></div>
+      <canvas id="tabletDrawingCanvas"></canvas>
+    </div>
   </div>
 
   <script src="/socket.io/socket.io.js"></script>
