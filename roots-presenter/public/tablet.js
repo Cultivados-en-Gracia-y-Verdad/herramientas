@@ -4,6 +4,8 @@ const clearButton = document.getElementById("tabletClearButton");
 const nextButton = document.getElementById("tabletNextButton");
 const prevButton = document.getElementById("tabletPrevButton");
 const blankButton = document.getElementById("tabletBlankButton");
+const fullscreenButton = document.getElementById("tabletFullscreenButton");
+const exitFullscreenButton = document.getElementById("tabletExitFullscreenButton");
 const blankSurface = document.getElementById("tabletBlankSurface");
 const tabletSurface = document.getElementById("tabletSurface");
 
@@ -14,12 +16,72 @@ if (tabletCanvas) {
   const DRAW_HEIGHT = 1080;
   const DRAW_COLOR = "#facc15";
   const PEN_WIDTH = 6;
+  const ERASER_WIDTH = 42;
 
   const ctx = tabletCanvas.getContext("2d");
 
   let drawing = false;
   let blankMode = false;
   let blankInkImage = null;
+  let lastViewport = { width: DRAW_WIDTH, height: DRAW_HEIGHT };
+
+  function isFullscreenActive() {
+    return !!(
+      document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.body.classList.contains("tablet-fullscreen")
+    );
+  }
+
+  function setFullscreenClass(active) {
+    document.body.classList.toggle("tablet-fullscreen", active);
+
+    if (fullscreenButton) {
+      fullscreenButton.textContent = active ? "Window" : "Fullscreen";
+    }
+
+    requestAnimationFrame(() => {
+      applyViewport(lastViewport.width, lastViewport.height);
+    });
+  }
+
+  async function enterFullscreen() {
+    const target = document.documentElement;
+
+    try {
+      if (target.requestFullscreen) {
+        await target.requestFullscreen();
+      } else if (target.webkitRequestFullscreen) {
+        target.webkitRequestFullscreen();
+      }
+    } catch {
+      // Some mobile browsers reject native fullscreen unless installed as PWA.
+    }
+
+    setFullscreenClass(true);
+  }
+
+  async function exitFullscreen() {
+    try {
+      if (document.exitFullscreen && document.fullscreenElement) {
+        await document.exitFullscreen();
+      } else if (document.webkitExitFullscreen && document.webkitFullscreenElement) {
+        document.webkitExitFullscreen();
+      }
+    } catch {
+      // Keep fallback class behavior below.
+    }
+
+    setFullscreenClass(false);
+  }
+
+  async function toggleFullscreen() {
+    if (isFullscreenActive()) {
+      await exitFullscreen();
+    } else {
+      await enterFullscreen();
+    }
+  }
 
   function setNavigationDisabled(disabled) {
     if (nextButton) {
@@ -85,11 +147,14 @@ if (tabletCanvas) {
   function applyViewport(width, height) {
     if (!width || !height || !tabletSurface) return;
 
+    lastViewport = { width, height };
+
     const aspect = width / height;
     tabletSurface.style.aspectRatio = `${width} / ${height}`;
 
     const availableWidth = window.innerWidth;
-    const availableHeight = window.innerHeight - 64;
+    const toolbarHeight = document.body.classList.contains("tablet-fullscreen") ? 0 : 64;
+    const availableHeight = window.innerHeight - toolbarHeight;
 
     let surfaceWidth = availableWidth;
     let surfaceHeight = surfaceWidth / aspect;
@@ -118,18 +183,39 @@ if (tabletCanvas) {
     };
   }
 
-  function prepareContext() {
-    ctx.globalCompositeOperation = "source-over";
-    ctx.strokeStyle = DRAW_COLOR;
-    ctx.lineWidth = PEN_WIDTH;
+  function isStylusEvent(event) {
+    return event.pointerType === "pen" || event.pointerType === "mouse";
+  }
+
+  function isEraserEvent(event) {
+    // Many stylus erasers report button 5 / buttons 32.
+    // Some devices report the barrel/eraser as button 2.
+    return event.pointerType === "pen" && (
+      event.button === 5 ||
+      event.buttons === 32 ||
+      event.button === 2 ||
+      event.buttons === 2
+    );
+  }
+
+  function prepareContext(erase = false) {
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
+    ctx.lineWidth = erase ? ERASER_WIDTH : PEN_WIDTH;
+
+    if (erase) {
+      ctx.globalCompositeOperation = "destination-out";
+      ctx.strokeStyle = "rgba(0,0,0,1)";
+    } else {
+      ctx.globalCompositeOperation = "source-over";
+      ctx.strokeStyle = DRAW_COLOR;
+    }
   }
 
   function applyPoint(point) {
     if (!point) return;
 
-    prepareContext();
+    prepareContext(!!point.erase);
 
     if (!point.drawing) {
       ctx.beginPath();
@@ -144,21 +230,20 @@ if (tabletCanvas) {
   }
 
   function emitPoint(point) {
-    drawingSocket.emit("draw-point", {
-      ...point,
-      erase: false
-    });
+    drawingSocket.emit("draw-point", point);
   }
 
   tabletCanvas.addEventListener("pointerdown", event => {
-    if (event.button !== 0) return;
+    if (event.button !== 0 && !isEraserEvent(event)) return;
+    if (!isStylusEvent(event)) return;
 
     event.preventDefault();
     drawing = true;
 
     const point = {
       ...getPoint(event),
-      drawing: false
+      drawing: false,
+      erase: isEraserEvent(event)
     };
 
     applyPoint(point);
@@ -169,12 +254,14 @@ if (tabletCanvas) {
 
   tabletCanvas.addEventListener("pointermove", event => {
     if (!drawing) return;
+    if (!isStylusEvent(event)) return;
 
     event.preventDefault();
 
     const point = {
       ...getPoint(event),
-      drawing: true
+      drawing: true,
+      erase: isEraserEvent(event)
     };
 
     applyPoint(point);
@@ -242,6 +329,26 @@ if (tabletCanvas) {
     clearLocalInk();
     clearBlankInkMemory();
   });
+
+  document.addEventListener("fullscreenchange", () => {
+    setFullscreenClass(!!document.fullscreenElement);
+  });
+
+  document.addEventListener("webkitfullscreenchange", () => {
+    setFullscreenClass(!!document.webkitFullscreenElement);
+  });
+
+  window.addEventListener("resize", () => {
+    applyViewport(lastViewport.width, lastViewport.height);
+  });
+
+  if (fullscreenButton) {
+    fullscreenButton.addEventListener("click", toggleFullscreen);
+  }
+
+  if (exitFullscreenButton) {
+    exitFullscreenButton.addEventListener("click", exitFullscreen);
+  }
 
   if (clearButton) {
     clearButton.addEventListener("click", clearSyncedInk);
