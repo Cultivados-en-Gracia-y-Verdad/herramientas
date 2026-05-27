@@ -2,29 +2,26 @@
 <html>
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Tablet Drawing</title>
   <link rel="icon" href="/assets/cgv-app-icon.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="style-settings.css">
+  <link rel="stylesheet" href="tablet.css">
 </head>
-<body class="projector tablet">
+<body class="tablet">
   <div class="tablet-toolbar">
-    <button type="button" class="active" onclick="setDrawingMode('pen')">Pen</button>
-    <button type="button" onclick="setDrawingMode('eraser')">Eraser</button>
-    <button type="button" onclick="clearDrawing()">Clear</button>
+    <div class="tablet-title">Tablet Drawing</div>
+    <button id="tabletClearButton" type="button">Clear</button>
   </div>
 
-  <div class="tablet-viewport">
-    <div class="tablet-scale-root">
-      <div class="projector-frame">
-        <div id="projectorSlide" class="projector-slide"></div>
-        <canvas id="projectorCanvas" class="drawing-canvas"></canvas>
-      </div>
-    </div>
+  <div class="tablet-stage" id="tabletStage">
+    <img id="tabletProjectorImage" alt="Projector preview" draggable="false">
+    <canvas id="tabletDrawingCanvas"></canvas>
   </div>
 
   <script src="/socket.io/socket.io.js"></script>
-  <script src="i18n.js"></script>
   <script src="app.js"></script>
+  <script src="tablet.js"></script>
 </body>
 </html>
