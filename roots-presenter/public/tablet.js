@@ -29,6 +29,15 @@ if (tabletCanvas) {
     tabletCanvas.height = DRAW_HEIGHT;
   }
 
+  function clearLocalInk() {
+    ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
+  }
+
+  function clearSyncedInk() {
+    clearLocalInk();
+    drawingSocket.emit("draw-clear");
+  }
+
   function applyViewport(width, height) {
     if (!width || !height || !tabletSurface) return;
 
@@ -168,32 +177,41 @@ if (tabletCanvas) {
     applyPoint(point);
   });
 
-  drawingSocket.on("draw-clear", () => {
-    ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
-  });
+  drawingSocket.on("draw-clear", clearLocalInk);
 
   if (clearButton) {
-    clearButton.addEventListener("click", () => {
-      ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
-      drawingSocket.emit("draw-clear");
-    });
+    clearButton.addEventListener("click", clearSyncedInk);
   }
 
   if (nextButton) {
     nextButton.addEventListener("click", () => {
+      if (!blankMode) {
+        clearSyncedInk();
+      }
+
       drawingSocket.emit("next");
     });
   }
 
   if (prevButton) {
     prevButton.addEventListener("click", () => {
+      if (!blankMode) {
+        clearSyncedInk();
+      }
+
       drawingSocket.emit("prev");
     });
   }
 
   if (blankButton) {
     blankButton.addEventListener("click", () => {
-      blankMode = !blankMode;
+      const nextBlankMode = !blankMode;
+
+      if (nextBlankMode) {
+        clearSyncedInk();
+      }
+
+      blankMode = nextBlankMode;
 
       if (blankSurface) {
         blankSurface.classList.toggle("active", blankMode);
