@@ -12,8 +12,6 @@ if (tabletCanvas) {
 
   const DEFAULT_DRAW_WIDTH = 1920;
   const DEFAULT_DRAW_HEIGHT = 1080;
-  const DRAW_COLOR = "#facc15";
-  const PEN_WIDTH = 6;
 
   const ctx = tabletCanvas.getContext("2d");
 
@@ -23,16 +21,9 @@ if (tabletCanvas) {
   let drawHeight = DEFAULT_DRAW_HEIGHT;
 
   function resizeCanvas() {
-    const imageData = tabletCanvas.width && tabletCanvas.height
-      ? ctx.getImageData(0, 0, tabletCanvas.width, tabletCanvas.height)
-      : null;
-
     tabletCanvas.width = drawWidth;
     tabletCanvas.height = drawHeight;
-
-    if (imageData) {
-      ctx.putImageData(imageData, 0, 0);
-    }
+    ctx.clearRect(0, 0, drawWidth, drawHeight);
   }
 
   function applyViewport(width, height) {
@@ -78,31 +69,6 @@ if (tabletCanvas) {
     };
   }
 
-  function prepareContext() {
-    ctx.globalCompositeOperation = "source-over";
-    ctx.strokeStyle = DRAW_COLOR;
-    ctx.lineWidth = PEN_WIDTH;
-    ctx.lineCap = "round";
-    ctx.lineJoin = "round";
-  }
-
-  function applyPoint(point) {
-    if (!point) return;
-
-    prepareContext();
-
-    if (!point.drawing) {
-      ctx.beginPath();
-      ctx.moveTo(point.x, point.y);
-      return;
-    }
-
-    ctx.lineTo(point.x, point.y);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(point.x, point.y);
-  }
-
   function emitPoint(point) {
     drawingSocket.emit("draw-point", {
       ...point,
@@ -116,13 +82,10 @@ if (tabletCanvas) {
     event.preventDefault();
     drawing = true;
 
-    const point = {
+    emitPoint({
       ...getPoint(event),
       drawing: false
-    };
-
-    applyPoint(point);
-    emitPoint(point);
+    });
 
     tabletCanvas.setPointerCapture?.(event.pointerId);
   });
@@ -132,13 +95,10 @@ if (tabletCanvas) {
 
     event.preventDefault();
 
-    const point = {
+    emitPoint({
       ...getPoint(event),
       drawing: true
-    };
-
-    applyPoint(point);
-    emitPoint(point);
+    });
   });
 
   function stopDrawing(event) {
