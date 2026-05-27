@@ -41,6 +41,18 @@
   position: relative;
   width: 100vw;
   height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #071633;
+}
+
+.tablet-surface {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: min(100vw, calc((100vh - 64px) * 16 / 9));
+  height: min(calc(100vw * 9 / 16), calc(100vh - 64px));
   overflow: hidden;
   background: black;
 }
