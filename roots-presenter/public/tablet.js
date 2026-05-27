@@ -32,6 +32,7 @@ if (tabletCanvas) {
   let fullscreenClearButton = null;
   let fullscreenEraseButton = null;
   let lastStylusButtonToggleAt = 0;
+  let stylusButtonActive = false;
 
   function styleFloatingButton(button, rightPx) {
     if (!button) return;
@@ -302,15 +303,33 @@ if (tabletCanvas) {
     const buttons = Number(event.buttons || 0);
     const button = Number(event.button ?? -1);
 
-    return button === 2 || button === 5 || (buttons & 2) === 2 || (buttons & 4) === 4 || (buttons & 32) === 32;
+    return (
+      button === 1 ||
+      button === 2 ||
+      button === 5 ||
+      (buttons & 2) === 2 ||
+      (buttons & 4) === 4 ||
+      (buttons & 8) === 8 ||
+      (buttons & 16) === 16 ||
+      (buttons & 32) === 32 ||
+      (buttons > 1 && buttons !== 1)
+    );
   }
 
   function maybeToggleEraserFromStylusButton(event) {
-    if (!hasStylusSideButton(event)) return false;
+    const sideButtonDown = hasStylusSideButton(event);
+
+    if (!sideButtonDown) {
+      stylusButtonActive = false;
+      return false;
+    }
+
+    if (stylusButtonActive) return true;
 
     const now = Date.now();
-    if (now - lastStylusButtonToggleAt < 350) return true;
+    if (now - lastStylusButtonToggleAt < 250) return true;
 
+    stylusButtonActive = true;
     lastStylusButtonToggleAt = now;
     toggleManualEraseMode();
     return true;
@@ -431,6 +450,11 @@ if (tabletCanvas) {
       return;
     }
 
+    if (maybeToggleEraserFromStylusButton(event)) {
+      event.preventDefault();
+      return;
+    }
+
     if (!drawing) return;
     if (!isStylusEvent(event)) return;
 
@@ -452,6 +476,7 @@ if (tabletCanvas) {
       return;
     }
 
+    stylusButtonActive = false;
     drawing = false;
 
     if (event?.pointerId !== undefined && tabletCanvas.hasPointerCapture?.(event.pointerId)) {
@@ -462,6 +487,16 @@ if (tabletCanvas) {
   tabletCanvas.addEventListener("pointerup", stopDrawing);
   tabletCanvas.addEventListener("pointercancel", stopDrawing);
   tabletCanvas.addEventListener("pointerleave", stopDrawing);
+
+  tabletCanvas.addEventListener("contextmenu", event => {
+    event.preventDefault();
+    toggleManualEraseMode();
+  });
+
+  tabletCanvas.addEventListener("auxclick", event => {
+    event.preventDefault();
+    toggleManualEraseMode();
+  });
 
   drawingSocket.on("draw-point", point => {
     if (point?.meta === "projector-viewport" && point.viewport) {
