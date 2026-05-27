@@ -1,7 +1,7 @@
 {
   "name": "cgv-presenter",
   "productName": "CGV Presenter",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Offline-first presentation and training delivery app for Cultivados en Gracia y Verdad courses.",
   "author": "Cultivados en Gracia y Verdad",
   "homepage": "https://github.com/Cultivados-en-Gracia-y-Verdad/herramientas/releases",
@@ -18,7 +18,9 @@
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "make:mac": "electron-forge make --platform=darwin --arch=arm64",
+    "make:win": "electron-forge make --platform=win32 --arch=x64"
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^5.2.8",

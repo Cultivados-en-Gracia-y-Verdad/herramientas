@@ -1,0 +1,67 @@
+name: Build CGV Presenter
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Package version to build (must match roots-presenter/package.json)
+        required: true
+        default: 1.1.13
+  push:
+    tags:
+      - 'CGV-Presenter-v*'
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: roots-presenter
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: roots-presenter/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build macOS zip
+        run: npm run make:mac
+
+      - name: Upload macOS artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cgv-presenter-macos-arm64
+          path: roots-presenter/out/make/zip/darwin/arm64/*.zip
+          if-no-files-found: error
+
+  build-windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: roots-presenter
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: roots-presenter/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Windows installer
+        run: npm run make:win
+
+      - name: Upload Windows artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cgv-presenter-windows-x64
+          path: roots-presenter/out/make/squirrel.windows/x64/*.exe
+          if-no-files-found: error

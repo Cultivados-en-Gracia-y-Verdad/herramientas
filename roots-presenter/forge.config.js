@@ -3,12 +3,13 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 const path = require('path');
 
 const macEntitlements = path.resolve(__dirname, 'build', 'entitlements.mac.plist');
+const appIcon = path.resolve(__dirname, 'assets', 'cgv-app-icon');
 
 module.exports = {
   packagerConfig: {
     name: 'CGV Presenter',
     asar: true,
-    icon: './assets/cgv-app-icon',
+    icon: appIcon,
     osxSign: {
       identity: '-',
       identityValidation: false,
@@ -28,7 +29,13 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      platforms: ['win32'],
+      config: {
+        name: 'CGV.Presenter',
+        authors: 'Cultivados en Gracia y Verdad',
+        description: 'Offline-first presentation and training delivery app for Cultivados en Gracia y Verdad courses.',
+        setupIcon: path.resolve(__dirname, 'assets', 'cgv-app-icon.ico'),
+      },
     },
     {
       name: '@electron-forge/maker-zip',
@@ -48,8 +55,6 @@ module.exports = {
       name: '@electron-forge/plugin-auto-unpack-natives',
       config: {},
     },
-    // Fuses are used to enable/disable various Electron functionality
-    // at package time, before code signing the application
     new FusesPlugin({
       version: FuseVersion.V1,
       [FuseV1Options.RunAsNode]: false,
