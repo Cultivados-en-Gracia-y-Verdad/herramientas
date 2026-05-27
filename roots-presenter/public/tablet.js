@@ -21,6 +21,18 @@ if (tabletCanvas) {
   let blankMode = false;
   let blankInkImage = null;
 
+  function setNavigationDisabled(disabled) {
+    if (nextButton) {
+      nextButton.disabled = disabled;
+      nextButton.style.opacity = disabled ? "0.4" : "1";
+    }
+
+    if (prevButton) {
+      prevButton.disabled = disabled;
+      prevButton.style.opacity = disabled ? "0.4" : "1";
+    }
+  }
+
   function resizeCanvas() {
     if (tabletCanvas.width === DRAW_WIDTH && tabletCanvas.height === DRAW_HEIGHT) {
       return;
@@ -207,6 +219,7 @@ if (tabletCanvas) {
       }
 
       blankMode = nextBlankMode;
+      setNavigationDisabled(blankMode);
 
       if (blankSurface) {
         blankSurface.classList.toggle("active", blankMode);
@@ -236,10 +249,10 @@ if (tabletCanvas) {
 
   if (nextButton) {
     nextButton.addEventListener("click", () => {
-      if (!blankMode) {
-        clearLocalInk();
-        emitSlideChanged();
-      }
+      if (blankMode) return;
+
+      clearLocalInk();
+      emitSlideChanged();
 
       drawingSocket.emit("next");
     });
@@ -247,10 +260,10 @@ if (tabletCanvas) {
 
   if (prevButton) {
     prevButton.addEventListener("click", () => {
-      if (!blankMode) {
-        clearLocalInk();
-        emitSlideChanged();
-      }
+      if (blankMode) return;
+
+      clearLocalInk();
+      emitSlideChanged();
 
       drawingSocket.emit("prev");
     });
@@ -268,6 +281,7 @@ if (tabletCanvas) {
       }
 
       blankMode = nextBlankMode;
+      setNavigationDisabled(blankMode);
 
       if (blankSurface) {
         blankSurface.classList.toggle("active", blankMode);
