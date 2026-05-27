@@ -6,9 +6,16 @@
   if (!socket || isPreview) return;
 
   function sendProjectorViewport() {
-    socket.emit("projector-viewport", {
-      width: window.innerWidth,
-      height: window.innerHeight
+    socket.emit("draw-point", {
+      x: 0,
+      y: 0,
+      drawing: false,
+      erase: false,
+      meta: "projector-viewport",
+      viewport: {
+        width: window.innerWidth,
+        height: window.innerHeight
+      }
     });
   }
 
