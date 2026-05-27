@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Tablet Drawing</title>
+  <link rel="icon" href="/assets/cgv-app-icon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style-settings.css">
+</head>
+<body class="tablet">
+  <div class="tablet-toolbar">
+    <div class="tablet-title">Tablet Drawing</div>
+    <button id="tabletClearButton" type="button">Clear</button>
+  </div>
+
+  <div class="tablet-stage" id="tabletStage">
+    <img id="tabletProjectorImage" alt="Projector preview" draggable="false">
+    <canvas id="tabletDrawingCanvas"></canvas>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+  <script src="tablet.js"></script>
+</body>
+</html>
