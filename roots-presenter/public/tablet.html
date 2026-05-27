@@ -10,15 +10,18 @@
   <link rel="stylesheet" href="tablet.css">
 </head>
 <body class="tablet">
-  <div class="tablet-toolbar">
+  <div class="tablet-toolbar" id="tabletToolbar">
     <div class="tablet-title">Tablet Drawing</div>
     <div class="tablet-actions">
       <button id="tabletPrevButton" type="button">Previous</button>
       <button id="tabletNextButton" type="button">Next</button>
       <button id="tabletBlankButton" type="button">Blank</button>
+      <button id="tabletFullscreenButton" type="button">Fullscreen</button>
       <button id="tabletClearButton" type="button">Clear</button>
     </div>
   </div>
+
+  <button id="tabletExitFullscreenButton" type="button" aria-label="Exit fullscreen">Exit</button>
 
   <div class="tablet-stage" id="tabletStage">
     <div class="tablet-surface" id="tabletSurface">
