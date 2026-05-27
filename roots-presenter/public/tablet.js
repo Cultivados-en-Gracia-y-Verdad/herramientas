@@ -1,6 +1,9 @@
 const tabletCanvas = document.getElementById("tabletDrawingCanvas");
-const projectorImage = document.getElementById("tabletProjectorImage");
 const clearButton = document.getElementById("tabletClearButton");
+const nextButton = document.getElementById("tabletNextButton");
+const prevButton = document.getElementById("tabletPrevButton");
+const blankButton = document.getElementById("tabletBlankButton");
+const blankSurface = document.getElementById("tabletBlankSurface");
 
 if (tabletCanvas) {
   const drawingSocket = window.CGV_SOCKET || io();
@@ -13,7 +16,7 @@ if (tabletCanvas) {
   const ctx = tabletCanvas.getContext("2d");
 
   let drawing = false;
-  let previousPoint = null;
+  let blankMode = false;
 
   function resizeCanvas() {
     tabletCanvas.width = DRAW_WIDTH;
@@ -80,7 +83,6 @@ if (tabletCanvas) {
       drawing: false
     };
 
-    previousPoint = point;
     applyPoint(point);
     emitPoint(point);
 
@@ -97,14 +99,12 @@ if (tabletCanvas) {
       drawing: true
     };
 
-    previousPoint = point;
     applyPoint(point);
     emitPoint(point);
   });
 
   function stopDrawing(event) {
     drawing = false;
-    previousPoint = null;
 
     if (event?.pointerId !== undefined && tabletCanvas.hasPointerCapture?.(event.pointerId)) {
       tabletCanvas.releasePointerCapture(event.pointerId);
@@ -115,12 +115,6 @@ if (tabletCanvas) {
   tabletCanvas.addEventListener("pointercancel", stopDrawing);
   tabletCanvas.addEventListener("pointerleave", stopDrawing);
 
-  drawingSocket.on("projector-snapshot", image => {
-    if (projectorImage) {
-      projectorImage.src = image;
-    }
-  });
-
   drawingSocket.on("draw-clear", () => {
     ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
   });
@@ -129,6 +123,28 @@ if (tabletCanvas) {
     clearButton.addEventListener("click", () => {
       ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
       drawingSocket.emit("draw-clear");
+    });
+  }
+
+  if (nextButton) {
+    nextButton.addEventListener("click", () => {
+      drawingSocket.emit("next");
+    });
+  }
+
+  if (prevButton) {
+    prevButton.addEventListener("click", () => {
+      drawingSocket.emit("prev");
+    });
+  }
+
+  if (blankButton) {
+    blankButton.addEventListener("click", () => {
+      blankMode = !blankMode;
+
+      if (blankSurface) {
+        blankSurface.classList.toggle("active", blankMode);
+      }
     });
   }
 }
