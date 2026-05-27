@@ -19,6 +19,7 @@ if (tabletCanvas) {
 
   let drawing = false;
   let blankMode = false;
+  let blankInkImage = null;
 
   function resizeCanvas() {
     if (tabletCanvas.width === DRAW_WIDTH && tabletCanvas.height === DRAW_HEIGHT) {
@@ -33,8 +34,29 @@ if (tabletCanvas) {
     ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
   }
 
+  function saveBlankInk() {
+    try {
+      blankInkImage = ctx.getImageData(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
+    } catch {
+      blankInkImage = null;
+    }
+  }
+
+  function restoreBlankInk() {
+    clearLocalInk();
+
+    if (blankInkImage) {
+      ctx.putImageData(blankInkImage, 0, 0);
+    }
+  }
+
+  function clearBlankInkMemory() {
+    blankInkImage = null;
+  }
+
   function clearSyncedInk() {
     clearLocalInk();
+    clearBlankInkMemory();
     drawingSocket.emit("draw-clear");
   }
 
@@ -175,7 +197,16 @@ if (tabletCanvas) {
     }
 
     if (point?.meta === "tablet-blank") {
-      blankMode = !!point.active;
+      const nextBlankMode = !!point.active;
+
+      if (nextBlankMode) {
+        restoreBlankInk();
+      } else if (blankMode) {
+        saveBlankInk();
+        clearLocalInk();
+      }
+
+      blankMode = nextBlankMode;
 
       if (blankSurface) {
         blankSurface.classList.toggle("active", blankMode);
@@ -185,14 +216,19 @@ if (tabletCanvas) {
     }
 
     if (point?.meta === "slide-changed") {
-      clearLocalInk();
+      if (!blankMode) {
+        clearLocalInk();
+      }
       return;
     }
 
     applyPoint(point);
   });
 
-  drawingSocket.on("draw-clear", clearLocalInk);
+  drawingSocket.on("draw-clear", () => {
+    clearLocalInk();
+    clearBlankInkMemory();
+  });
 
   if (clearButton) {
     clearButton.addEventListener("click", clearSyncedInk);
@@ -201,7 +237,7 @@ if (tabletCanvas) {
   if (nextButton) {
     nextButton.addEventListener("click", () => {
       if (!blankMode) {
-        clearSyncedInk();
+        clearLocalInk();
         emitSlideChanged();
       }
 
@@ -212,7 +248,7 @@ if (tabletCanvas) {
   if (prevButton) {
     prevButton.addEventListener("click", () => {
       if (!blankMode) {
-        clearSyncedInk();
+        clearLocalInk();
         emitSlideChanged();
       }
 
@@ -225,7 +261,10 @@ if (tabletCanvas) {
       const nextBlankMode = !blankMode;
 
       if (nextBlankMode) {
-        clearSyncedInk();
+        restoreBlankInk();
+      } else {
+        saveBlankInk();
+        clearLocalInk();
       }
 
       blankMode = nextBlankMode;
