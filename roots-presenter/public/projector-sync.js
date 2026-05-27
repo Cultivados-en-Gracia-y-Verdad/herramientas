@@ -38,13 +38,26 @@
     blankOverlay.style.opacity = "0";
     blankOverlay.style.pointerEvents = "none";
     blankOverlay.style.transition = "opacity 120ms ease";
-    blankOverlay.style.zIndex = "99998";
+    blankOverlay.style.zIndex = "100000";
     document.body.appendChild(blankOverlay);
 
     return blankOverlay;
   }
 
+  function clearProjectorDrawing() {
+    const canvas = document.getElementById("projectorCanvas");
+    const ctx = canvas?.getContext("2d");
+
+    if (canvas && ctx) {
+      ctx.clearRect(0, 0, canvas.width || 1920, canvas.height || 1080);
+    }
+  }
+
   function setProjectorBlank(active) {
+    if (active) {
+      clearProjectorDrawing();
+    }
+
     ensureBlankOverlay().style.opacity = active ? "1" : "0";
   }
 
