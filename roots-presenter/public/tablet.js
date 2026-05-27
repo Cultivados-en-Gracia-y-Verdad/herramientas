@@ -10,12 +10,6 @@ const exitFullscreenButton = document.getElementById("tabletExitFullscreenButton
 const blankSurface = document.getElementById("tabletBlankSurface");
 const tabletSurface = document.getElementById("tabletSurface");
 
-if (fullscreenBlankButton && blankButton) {
-  fullscreenBlankButton.addEventListener("click", () => {
-    blankButton.click();
-  });
-}
-
 if (tabletCanvas) {
   const drawingSocket = window.CGV_SOCKET || io();
 
@@ -37,6 +31,7 @@ if (tabletCanvas) {
   let touchSwipe = null;
   let fullscreenClearButton = null;
   let fullscreenEraseButton = null;
+  let lastStylusButtonToggleAt = 0;
 
   function styleFloatingButton(button, rightPx) {
     if (!button) return;
@@ -169,9 +164,7 @@ if (tabletCanvas) {
   }
 
   function resizeCanvas() {
-    if (tabletCanvas.width === DRAW_WIDTH && tabletCanvas.height === DRAW_HEIGHT) {
-      return;
-    }
+    if (tabletCanvas.width === DRAW_WIDTH && tabletCanvas.height === DRAW_HEIGHT) return;
 
     tabletCanvas.width = DRAW_WIDTH;
     tabletCanvas.height = DRAW_HEIGHT;
@@ -303,17 +296,28 @@ if (tabletCanvas) {
     return event.pointerType === "pen" || event.pointerType === "mouse";
   }
 
-  function isEraserEvent(event) {
+  function hasStylusSideButton(event) {
+    if (event.pointerType !== "pen") return false;
+
     const buttons = Number(event.buttons || 0);
     const button = Number(event.button ?? -1);
 
-    return manualEraseMode || (event.pointerType === "pen" && (
-      button === 2 ||
-      button === 5 ||
-      (buttons & 2) === 2 ||
-      (buttons & 4) === 4 ||
-      (buttons & 32) === 32
-    ));
+    return button === 2 || button === 5 || (buttons & 2) === 2 || (buttons & 4) === 4 || (buttons & 32) === 32;
+  }
+
+  function maybeToggleEraserFromStylusButton(event) {
+    if (!hasStylusSideButton(event)) return false;
+
+    const now = Date.now();
+    if (now - lastStylusButtonToggleAt < 350) return true;
+
+    lastStylusButtonToggleAt = now;
+    toggleManualEraseMode();
+    return true;
+  }
+
+  function isEraserEvent() {
+    return manualEraseMode;
   }
 
   function prepareContext(erase = false) {
@@ -388,11 +392,8 @@ if (tabletCanvas) {
     if (Math.abs(dx) < SWIPE_MIN_DISTANCE) return;
     if (Math.abs(dy) > SWIPE_MAX_VERTICAL_DRIFT) return;
 
-    if (dx < 0) {
-      goNextFromSwipe();
-    } else {
-      goPrevFromSwipe();
-    }
+    if (dx < 0) goNextFromSwipe();
+    else goPrevFromSwipe();
   }
 
   tabletCanvas.addEventListener("pointerdown", event => {
@@ -401,7 +402,12 @@ if (tabletCanvas) {
       return;
     }
 
-    if (event.button !== 0 && !isEraserEvent(event)) return;
+    if (maybeToggleEraserFromStylusButton(event)) {
+      event.preventDefault();
+      return;
+    }
+
+    if (event.button !== 0) return;
     if (!isStylusEvent(event)) return;
 
     event.preventDefault();
@@ -410,7 +416,7 @@ if (tabletCanvas) {
     const point = {
       ...getPoint(event),
       drawing: false,
-      erase: isEraserEvent(event)
+      erase: isEraserEvent()
     };
 
     applyPoint(point);
@@ -433,7 +439,7 @@ if (tabletCanvas) {
     const point = {
       ...getPoint(event),
       drawing: true,
-      erase: isEraserEvent(event)
+      erase: isEraserEvent()
     };
 
     applyPoint(point);
@@ -507,41 +513,16 @@ if (tabletCanvas) {
     clearBlankInkMemory();
   });
 
-  document.addEventListener("fullscreenchange", () => {
-    setFullscreenClass(!!document.fullscreenElement);
-  });
+  document.addEventListener("fullscreenchange", () => setFullscreenClass(!!document.fullscreenElement));
+  document.addEventListener("webkitfullscreenchange", () => setFullscreenClass(!!document.webkitFullscreenElement));
+  window.addEventListener("resize", () => applyViewport(lastViewport.width, lastViewport.height));
 
-  document.addEventListener("webkitfullscreenchange", () => {
-    setFullscreenClass(!!document.webkitFullscreenElement);
-  });
-
-  window.addEventListener("resize", () => {
-    applyViewport(lastViewport.width, lastViewport.height);
-  });
-
-  if (fullscreenButton) {
-    fullscreenButton.addEventListener("click", toggleFullscreen);
-  }
-
-  if (exitFullscreenButton) {
-    exitFullscreenButton.addEventListener("click", exitFullscreen);
-  }
-
-  if (fullscreenBlankButton) {
-    fullscreenBlankButton.addEventListener("click", toggleBlankMode);
-  }
-
-  if (fullscreenClearButton) {
-    fullscreenClearButton.addEventListener("click", clearSyncedInk);
-  }
-
-  if (fullscreenEraseButton) {
-    fullscreenEraseButton.addEventListener("click", toggleManualEraseMode);
-  }
-
-  if (clearButton) {
-    clearButton.addEventListener("click", clearSyncedInk);
-  }
+  if (fullscreenButton) fullscreenButton.addEventListener("click", toggleFullscreen);
+  if (exitFullscreenButton) exitFullscreenButton.addEventListener("click", exitFullscreen);
+  if (fullscreenBlankButton) fullscreenBlankButton.addEventListener("click", toggleBlankMode);
+  if (fullscreenClearButton) fullscreenClearButton.addEventListener("click", clearSyncedInk);
+  if (fullscreenEraseButton) fullscreenEraseButton.addEventListener("click", toggleManualEraseMode);
+  if (clearButton) clearButton.addEventListener("click", clearSyncedInk);
 
   if (nextButton) {
     nextButton.addEventListener("click", () => {
@@ -549,7 +530,6 @@ if (tabletCanvas) {
 
       clearLocalInk();
       emitSlideChanged();
-
       drawingSocket.emit("next");
     });
   }
@@ -560,14 +540,11 @@ if (tabletCanvas) {
 
       clearLocalInk();
       emitSlideChanged();
-
       drawingSocket.emit("prev");
     });
   }
 
-  if (blankButton) {
-    blankButton.addEventListener("click", toggleBlankMode);
-  }
+  if (blankButton) blankButton.addEventListener("click", toggleBlankMode);
 
   updateFloatingControls(isFullscreenActive());
 }
