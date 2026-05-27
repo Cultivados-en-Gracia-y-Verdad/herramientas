@@ -9,8 +9,8 @@ const tabletSurface = document.getElementById("tabletSurface");
 if (tabletCanvas) {
   const drawingSocket = window.CGV_SOCKET || io();
 
-  const DRAW_WIDTH = 1920;
-  const DRAW_HEIGHT = 1080;
+  const DEFAULT_DRAW_WIDTH = 1920;
+  const DEFAULT_DRAW_HEIGHT = 1080;
   const DRAW_COLOR = "#facc15";
   const PEN_WIDTH = 6;
 
@@ -18,18 +18,33 @@ if (tabletCanvas) {
 
   let drawing = false;
   let blankMode = false;
+  let drawWidth = DEFAULT_DRAW_WIDTH;
+  let drawHeight = DEFAULT_DRAW_HEIGHT;
 
   function resizeCanvas() {
-    tabletCanvas.width = DRAW_WIDTH;
-    tabletCanvas.height = DRAW_HEIGHT;
+    const existingImage = ctx.getImageData(0, 0, tabletCanvas.width || 1, tabletCanvas.height || 1);
+
+    tabletCanvas.width = drawWidth;
+    tabletCanvas.height = drawHeight;
+
+    if (existingImage.width && existingImage.height) {
+      ctx.putImageData(existingImage, 0, 0);
+    }
   }
 
   function applyViewport(width, height) {
-    if (!tabletSurface || !width || !height) return;
+    if (!width || !height) return;
 
-    const aspect = width / height;
+    drawWidth = Math.round(width);
+    drawHeight = Math.round(height);
 
-    tabletSurface.style.aspectRatio = `${width} / ${height}`;
+    resizeCanvas();
+
+    if (!tabletSurface) return;
+
+    const aspect = drawWidth / drawHeight;
+
+    tabletSurface.style.aspectRatio = `${drawWidth} / ${drawHeight}`;
 
     const availableWidth = window.innerWidth;
     const availableHeight = window.innerHeight - 64;
@@ -60,8 +75,8 @@ if (tabletCanvas) {
     }
 
     return {
-      x: ((event.clientX - rect.left) / rect.width) * DRAW_WIDTH,
-      y: ((event.clientY - rect.top) / rect.height) * DRAW_HEIGHT
+      x: ((event.clientX - rect.left) / rect.width) * drawWidth,
+      y: ((event.clientY - rect.top) / rect.height) * drawHeight
     };
   }
 
@@ -147,12 +162,12 @@ if (tabletCanvas) {
   });
 
   drawingSocket.on("draw-clear", () => {
-    ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
+    ctx.clearRect(0, 0, drawWidth, drawHeight);
   });
 
   if (clearButton) {
     clearButton.addEventListener("click", () => {
-      ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
+      ctx.clearRect(0, 0, drawWidth, drawHeight);
       drawingSocket.emit("draw-clear");
     });
   }
