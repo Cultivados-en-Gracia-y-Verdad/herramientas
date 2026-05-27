@@ -38,7 +38,7 @@
     blankOverlay.style.opacity = "0";
     blankOverlay.style.pointerEvents = "none";
     blankOverlay.style.transition = "opacity 120ms ease";
-    blankOverlay.style.zIndex = "100000";
+    blankOverlay.style.zIndex = "99998";
     document.body.appendChild(blankOverlay);
 
     return blankOverlay;
@@ -54,16 +54,17 @@
   }
 
   function setProjectorBlank(active) {
-    if (active) {
-      clearProjectorDrawing();
-    }
-
     ensureBlankOverlay().style.opacity = active ? "1" : "0";
   }
 
   socket.on("draw-point", point => {
     if (point?.meta === "tablet-blank") {
       setProjectorBlank(!!point.active);
+      return;
+    }
+
+    if (point?.meta === "slide-changed") {
+      clearProjectorDrawing();
     }
   });
 
