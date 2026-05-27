@@ -38,6 +38,16 @@ if (tabletCanvas) {
     drawingSocket.emit("draw-clear");
   }
 
+  function emitSlideChanged() {
+    drawingSocket.emit("draw-point", {
+      x: 0,
+      y: 0,
+      drawing: false,
+      erase: false,
+      meta: "slide-changed"
+    });
+  }
+
   function applyViewport(width, height) {
     if (!width || !height || !tabletSurface) return;
 
@@ -174,6 +184,11 @@ if (tabletCanvas) {
       return;
     }
 
+    if (point?.meta === "slide-changed") {
+      clearLocalInk();
+      return;
+    }
+
     applyPoint(point);
   });
 
@@ -187,6 +202,7 @@ if (tabletCanvas) {
     nextButton.addEventListener("click", () => {
       if (!blankMode) {
         clearSyncedInk();
+        emitSlideChanged();
       }
 
       drawingSocket.emit("next");
@@ -197,6 +213,7 @@ if (tabletCanvas) {
     prevButton.addEventListener("click", () => {
       if (!blankMode) {
         clearSyncedInk();
+        emitSlideChanged();
       }
 
       drawingSocket.emit("prev");
