@@ -57,7 +57,7 @@
   touch-action: none;
 }
 
-#projectorDrawingCanvas {
+#projectorCanvas {
   position: fixed;
   inset: 0;
   width: 100vw;
