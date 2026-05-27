@@ -15,6 +15,14 @@
   padding: 0 16px;
   background: #1b1b1b;
   border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: transform 160ms ease, opacity 160ms ease;
+  z-index: 100;
+}
+
+body.tablet-fullscreen .tablet-toolbar {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .tablet-title {
@@ -28,13 +36,28 @@
   gap: 10px;
 }
 
-.tablet-toolbar button {
+.tablet-toolbar button,
+#tabletExitFullscreenButton {
   background: #2d2d2d;
   color: white;
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 10px;
   padding: 10px 16px;
   font-size: 16px;
+}
+
+#tabletExitFullscreenButton {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.tablet-fullscreen #tabletExitFullscreenButton {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .tablet-stage {
@@ -46,6 +69,10 @@
   justify-content: center;
   overflow: hidden;
   background: #071633;
+}
+
+body.tablet-fullscreen .tablet-stage {
+  height: 100vh;
 }
 
 .tablet-surface {
