@@ -22,6 +22,12 @@
   font-weight: 600;
 }
 
+.tablet-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .tablet-toolbar button {
   background: #2d2d2d;
   color: white;
@@ -39,14 +45,28 @@
   background: black;
 }
 
-#tabletProjectorImage {
+#tabletProjectorPreview {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  user-select: none;
+  border: 0;
+  background: black;
   pointer-events: none;
+}
+
+#tabletBlankSurface {
+  position: absolute;
+  inset: 0;
+  background: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease;
+  z-index: 5;
+}
+
+#tabletBlankSurface.active {
+  opacity: 1;
 }
 
 #tabletDrawingCanvas {
@@ -55,6 +75,7 @@
   width: 100%;
   height: 100%;
   touch-action: none;
+  z-index: 10;
 }
 
 #projectorCanvas {
