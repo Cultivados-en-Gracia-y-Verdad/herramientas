@@ -1,0 +1,5 @@
+{"book":"santiago","dataset":"subject","dataset_version":"v0.1","record_type":"metadata","scope":"predicate_anchors_only","created_from":["MNA/datasets/predicate-anchors/santiago.jsonl"],"allowed_evidence":["greek_token_explicit_subject","finite_verb_morphology_person_number"],"disallowed":["topic_subject","semantic_inference","context_only"],"notes":"All records must be traceable to Greek token(s) or morphology."}
+
+{"record_type":"subject","book":"santiago","anchor_id":"santiago-00001","chapter":1,"verse":2,"token_index":18,"predicate_greek_form":"ἡγήσασθε,","predicate_morphology":"V-2AMD-P--","subject_type":"from_finite_morphology","person":"second","number":"plural","evidence":{"type":"morphology","value":"V-2AMD-P--"}}
+
+{"record_type":"subject","book":"santiago","anchor_id":"santiago-00006","chapter":1,"verse":5,"token_index":52,"predicate_greek_form":"λείπεται","predicate_morphology":"V-3PMI-S--","subject_type":"explicit_greek_token","person":null,"number":null,"evidence":{"type":"greek_token","token_forms":["τις"],"note":"Example only — must match actual tokenization rules."}}

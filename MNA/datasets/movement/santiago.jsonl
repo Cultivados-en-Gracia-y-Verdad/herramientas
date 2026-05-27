@@ -1,0 +1,7 @@
+{"book":"santiago","dataset":"movement","dataset_version":"v0.1","record_type":"metadata","scope":"boundary_markers_only","created_from":["MNA/datasets/predicate-anchors/santiago.jsonl","MNA/SOURCES/MorphGNT/*","MNA/SOURCES/SBLGNT/*"],"enabled_marker_types":["connector_boundary","mood_boundary","person_number_boundary"],"disallowed":["purpose_reason_result_labels","topic_shift_labels"],"notes":"Movement records mark boundaries only and must cite explicit Greek/morphology evidence."}
+
+{"record_type":"movement","book":"santiago","chapter":1,"verse":6,"token_index":67,"anchor_id_before":"santiago-00008","anchor_id_after":"santiago-00009","movement_type":"connector_boundary","evidence":{"type":"greek_token","greek_form":"δὲ","note":"Example only"}}
+
+{"record_type":"movement","book":"santiago","chapter":1,"verse":5,"token_index":54,"anchor_id_before":"santiago-00006","anchor_id_after":"santiago-00007","movement_type":"mood_boundary","evidence":{"type":"morphology","from":null,"to":"imperative","note":"Example: boundary enters imperative mood"}}
+
+{"record_type":"movement","book":"santiago","chapter":1,"verse":5,"token_index":52,"anchor_id_before":"santiago-00005","anchor_id_after":"santiago-00006","movement_type":"person_number_boundary","evidence":{"type":"morphology","from":{"person":"second","number":"plural"},"to":{"person":"third","number":"singular"}}}
