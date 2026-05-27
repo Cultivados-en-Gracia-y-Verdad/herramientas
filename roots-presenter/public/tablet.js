@@ -17,6 +17,8 @@ if (tabletCanvas) {
   const DRAW_COLOR = "#facc15";
   const PEN_WIDTH = 6;
   const ERASER_WIDTH = 42;
+  const SWIPE_MIN_DISTANCE = 80;
+  const SWIPE_MAX_VERTICAL_DRIFT = 90;
 
   const ctx = tabletCanvas.getContext("2d");
 
@@ -24,6 +26,7 @@ if (tabletCanvas) {
   let blankMode = false;
   let blankInkImage = null;
   let lastViewport = { width: DRAW_WIDTH, height: DRAW_HEIGHT };
+  let touchSwipe = null;
 
   function isFullscreenActive() {
     return !!(
@@ -144,6 +147,22 @@ if (tabletCanvas) {
     });
   }
 
+  function goNextFromSwipe() {
+    if (blankMode) return;
+
+    clearLocalInk();
+    emitSlideChanged();
+    drawingSocket.emit("next");
+  }
+
+  function goPrevFromSwipe() {
+    if (blankMode) return;
+
+    clearLocalInk();
+    emitSlideChanged();
+    drawingSocket.emit("prev");
+  }
+
   function applyViewport(width, height) {
     if (!width || !height || !tabletSurface) return;
 
@@ -188,8 +207,7 @@ if (tabletCanvas) {
   }
 
   function isEraserEvent(event) {
-    // Many stylus erasers report button 5 / buttons 32.
-    // Some devices report the barrel/eraser as button 2.
+    // Many stylus side buttons / erasers report button 5, buttons 32, or button/buttons 2.
     return event.pointerType === "pen" && (
       event.button === 5 ||
       event.buttons === 32 ||
@@ -233,7 +251,56 @@ if (tabletCanvas) {
     drawingSocket.emit("draw-point", point);
   }
 
+  function beginTouchSwipe(event) {
+    touchSwipe = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startY: event.clientY,
+      lastX: event.clientX,
+      lastY: event.clientY
+    };
+
+    event.preventDefault();
+    tabletCanvas.setPointerCapture?.(event.pointerId);
+  }
+
+  function updateTouchSwipe(event) {
+    if (!touchSwipe || touchSwipe.pointerId !== event.pointerId) return;
+
+    touchSwipe.lastX = event.clientX;
+    touchSwipe.lastY = event.clientY;
+    event.preventDefault();
+  }
+
+  function finishTouchSwipe(event) {
+    if (!touchSwipe || touchSwipe.pointerId !== event.pointerId) return;
+
+    const dx = touchSwipe.lastX - touchSwipe.startX;
+    const dy = touchSwipe.lastY - touchSwipe.startY;
+
+    touchSwipe = null;
+
+    if (event?.pointerId !== undefined && tabletCanvas.hasPointerCapture?.(event.pointerId)) {
+      tabletCanvas.releasePointerCapture(event.pointerId);
+    }
+
+    if (blankMode) return;
+    if (Math.abs(dx) < SWIPE_MIN_DISTANCE) return;
+    if (Math.abs(dy) > SWIPE_MAX_VERTICAL_DRIFT) return;
+
+    if (dx < 0) {
+      goNextFromSwipe();
+    } else {
+      goPrevFromSwipe();
+    }
+  }
+
   tabletCanvas.addEventListener("pointerdown", event => {
+    if (event.pointerType === "touch") {
+      beginTouchSwipe(event);
+      return;
+    }
+
     if (event.button !== 0 && !isEraserEvent(event)) return;
     if (!isStylusEvent(event)) return;
 
@@ -253,6 +320,11 @@ if (tabletCanvas) {
   });
 
   tabletCanvas.addEventListener("pointermove", event => {
+    if (event.pointerType === "touch") {
+      updateTouchSwipe(event);
+      return;
+    }
+
     if (!drawing) return;
     if (!isStylusEvent(event)) return;
 
@@ -269,6 +341,11 @@ if (tabletCanvas) {
   });
 
   function stopDrawing(event) {
+    if (event?.pointerType === "touch") {
+      finishTouchSwipe(event);
+      return;
+    }
+
     drawing = false;
 
     if (event?.pointerId !== undefined && tabletCanvas.hasPointerCapture?.(event.pointerId)) {
