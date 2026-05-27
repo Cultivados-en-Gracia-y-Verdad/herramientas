@@ -6,6 +6,7 @@
   if (!socket || isPreview) return;
 
   let blankOverlay = null;
+  let blankInkImage = null;
 
   function emitMeta(meta, extra = {}) {
     socket.emit("draw-point", {
@@ -44,17 +45,65 @@
     return blankOverlay;
   }
 
-  function clearProjectorDrawing() {
+  function getProjectorCanvasContext() {
     const canvas = document.getElementById("projectorCanvas");
     const ctx = canvas?.getContext("2d");
 
-    if (canvas && ctx) {
-      ctx.clearRect(0, 0, canvas.width || 1920, canvas.height || 1080);
+    if (!canvas || !ctx) return null;
+
+    return { canvas, ctx };
+  }
+
+  function clearProjectorDrawing() {
+    const target = getProjectorCanvasContext();
+    if (!target) return;
+
+    target.ctx.clearRect(0, 0, target.canvas.width || 1920, target.canvas.height || 1080);
+  }
+
+  function saveBlankInk() {
+    const target = getProjectorCanvasContext();
+    if (!target) return;
+
+    try {
+      blankInkImage = target.ctx.getImageData(
+        0,
+        0,
+        target.canvas.width || 1920,
+        target.canvas.height || 1080
+      );
+    } catch {
+      blankInkImage = null;
     }
   }
 
+  function restoreBlankInk() {
+    const target = getProjectorCanvasContext();
+    if (!target) return;
+
+    clearProjectorDrawing();
+
+    if (blankInkImage) {
+      target.ctx.putImageData(blankInkImage, 0, 0);
+    }
+  }
+
+  function clearBlankInkMemory() {
+    blankInkImage = null;
+  }
+
   function setProjectorBlank(active) {
-    ensureBlankOverlay().style.opacity = active ? "1" : "0";
+    const overlay = ensureBlankOverlay();
+
+    if (active) {
+      restoreBlankInk();
+      overlay.style.opacity = "1";
+      return;
+    }
+
+    saveBlankInk();
+    clearProjectorDrawing();
+    overlay.style.opacity = "0";
   }
 
   socket.on("draw-point", point => {
@@ -65,7 +114,16 @@
 
     if (point?.meta === "slide-changed") {
       clearProjectorDrawing();
+      return;
     }
+
+    if (point?.meta === "blank-clear") {
+      clearBlankInkMemory();
+    }
+  });
+
+  socket.on("draw-clear", () => {
+    clearBlankInkMemory();
   });
 
   window.addEventListener("resize", sendProjectorViewport);
