@@ -23,7 +23,7 @@ if (tabletCanvas) {
   const DRAW_HEIGHT = 1080;
   const DRAW_COLOR = "#facc15";
   const PEN_WIDTH = 6;
-  const ERASER_WIDTH = 42;
+  const ERASER_WIDTH = 56;
   const SWIPE_MIN_DISTANCE = 80;
   const SWIPE_MAX_VERTICAL_DRIFT = 90;
 
@@ -31,9 +31,48 @@ if (tabletCanvas) {
 
   let drawing = false;
   let blankMode = false;
+  let manualEraseMode = false;
   let blankInkImage = null;
   let lastViewport = { width: DRAW_WIDTH, height: DRAW_HEIGHT };
   let touchSwipe = null;
+  let fullscreenClearButton = null;
+  let fullscreenEraseButton = null;
+
+  function styleFloatingButton(button, rightPx) {
+    if (!button) return;
+
+    button.style.position = "fixed";
+    button.style.top = "14px";
+    button.style.right = `${rightPx}px`;
+    button.style.zIndex = "1000";
+    button.style.opacity = "0";
+    button.style.pointerEvents = "none";
+    button.style.background = "#2d2d2d";
+    button.style.color = "white";
+    button.style.border = "1px solid rgba(255,255,255,0.1)";
+    button.style.borderRadius = "10px";
+    button.style.padding = "10px 16px";
+    button.style.fontSize = "16px";
+  }
+
+  function createFloatingButton(id, label, rightPx) {
+    let button = document.getElementById(id);
+
+    if (!button) {
+      button = document.createElement("button");
+      button.id = id;
+      button.type = "button";
+      button.textContent = label;
+      document.body.appendChild(button);
+    }
+
+    styleFloatingButton(button, rightPx);
+    return button;
+  }
+
+  fullscreenClearButton = createFloatingButton("tabletFullscreenClearButton", "Clear", 176);
+  fullscreenEraseButton = createFloatingButton("tabletFullscreenEraseButton", "Erase", 268);
+  styleFloatingButton(fullscreenBlankButton, 92);
 
   function isFullscreenActive() {
     return !!(
@@ -43,6 +82,14 @@ if (tabletCanvas) {
     );
   }
 
+  function updateFloatingControls(active) {
+    [fullscreenBlankButton, fullscreenClearButton, fullscreenEraseButton].forEach(button => {
+      if (!button) return;
+      button.style.opacity = active ? "1" : "0";
+      button.style.pointerEvents = active ? "auto" : "none";
+    });
+  }
+
   function setFullscreenClass(active) {
     document.body.classList.toggle("tablet-fullscreen", active);
 
@@ -50,10 +97,7 @@ if (tabletCanvas) {
       fullscreenButton.textContent = active ? "Window" : "Fullscreen";
     }
 
-    if (fullscreenBlankButton) {
-      fullscreenBlankButton.style.opacity = active ? "1" : "0";
-      fullscreenBlankButton.style.pointerEvents = active ? "auto" : "none";
-    }
+    updateFloatingControls(active);
 
     requestAnimationFrame(() => {
       applyViewport(lastViewport.width, lastViewport.height);
@@ -108,6 +152,20 @@ if (tabletCanvas) {
       prevButton.disabled = disabled;
       prevButton.style.opacity = disabled ? "0.4" : "1";
     }
+  }
+
+  function setManualEraseMode(active) {
+    manualEraseMode = !!active;
+
+    if (fullscreenEraseButton) {
+      fullscreenEraseButton.textContent = manualEraseMode ? "Pen" : "Erase";
+      fullscreenEraseButton.style.background = manualEraseMode ? "#7c2d12" : "#2d2d2d";
+      fullscreenEraseButton.style.borderColor = manualEraseMode ? "rgba(251,146,60,0.8)" : "rgba(255,255,255,0.1)";
+    }
+  }
+
+  function toggleManualEraseMode() {
+    setManualEraseMode(!manualEraseMode);
   }
 
   function resizeCanvas() {
@@ -175,6 +233,33 @@ if (tabletCanvas) {
     drawingSocket.emit("prev");
   }
 
+  function toggleBlankMode() {
+    const nextBlankMode = !blankMode;
+
+    if (nextBlankMode) {
+      restoreBlankInk();
+    } else {
+      saveBlankInk();
+      clearLocalInk();
+    }
+
+    blankMode = nextBlankMode;
+    setNavigationDisabled(blankMode);
+
+    if (blankSurface) {
+      blankSurface.classList.toggle("active", blankMode);
+    }
+
+    drawingSocket.emit("draw-point", {
+      x: 0,
+      y: 0,
+      drawing: false,
+      erase: false,
+      meta: "tablet-blank",
+      active: blankMode
+    });
+  }
+
   function applyViewport(width, height) {
     if (!width || !height || !tabletSurface) return;
 
@@ -219,13 +304,16 @@ if (tabletCanvas) {
   }
 
   function isEraserEvent(event) {
-    return event.pointerType === "pen" && (
-      event.button === 5 ||
-      event.buttons === 32 ||
-      event.button === 2 ||
-      event.buttons === 2 ||
-      event.buttons === 4
-    );
+    const buttons = Number(event.buttons || 0);
+    const button = Number(event.button ?? -1);
+
+    return manualEraseMode || (event.pointerType === "pen" && (
+      button === 2 ||
+      button === 5 ||
+      (buttons & 2) === 2 ||
+      (buttons & 4) === 4 ||
+      (buttons & 32) === 32
+    ));
   }
 
   function prepareContext(erase = false) {
@@ -439,8 +527,16 @@ if (tabletCanvas) {
     exitFullscreenButton.addEventListener("click", exitFullscreen);
   }
 
-  if (fullscreenBlankButton && blankButton) {
-    fullscreenBlankButton.addEventListener("click", () => blankButton.click());
+  if (fullscreenBlankButton) {
+    fullscreenBlankButton.addEventListener("click", toggleBlankMode);
+  }
+
+  if (fullscreenClearButton) {
+    fullscreenClearButton.addEventListener("click", clearSyncedInk);
+  }
+
+  if (fullscreenEraseButton) {
+    fullscreenEraseButton.addEventListener("click", toggleManualEraseMode);
   }
 
   if (clearButton) {
@@ -470,31 +566,8 @@ if (tabletCanvas) {
   }
 
   if (blankButton) {
-    blankButton.addEventListener("click", () => {
-      const nextBlankMode = !blankMode;
-
-      if (nextBlankMode) {
-        restoreBlankInk();
-      } else {
-        saveBlankInk();
-        clearLocalInk();
-      }
-
-      blankMode = nextBlankMode;
-      setNavigationDisabled(blankMode);
-
-      if (blankSurface) {
-        blankSurface.classList.toggle("active", blankMode);
-      }
-
-      drawingSocket.emit("draw-point", {
-        x: 0,
-        y: 0,
-        drawing: false,
-        erase: false,
-        meta: "tablet-blank",
-        active: blankMode
-      });
-    });
+    blankButton.addEventListener("click", toggleBlankMode);
   }
+
+  updateFloatingControls(isFullscreenActive());
 }
