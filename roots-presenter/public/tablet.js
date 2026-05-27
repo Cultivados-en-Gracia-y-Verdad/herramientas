@@ -1,4 +1,5 @@
 const tabletCanvas = document.getElementById("tabletDrawingCanvas");
+const projectorFeed = document.getElementById("tabletProjectorFeed");
 const clearButton = document.getElementById("tabletClearButton");
 const nextButton = document.getElementById("tabletNextButton");
 const prevButton = document.getElementById("tabletPrevButton");
@@ -22,13 +23,15 @@ if (tabletCanvas) {
   let drawHeight = DEFAULT_DRAW_HEIGHT;
 
   function resizeCanvas() {
-    const existingImage = ctx.getImageData(0, 0, tabletCanvas.width || 1, tabletCanvas.height || 1);
+    const imageData = tabletCanvas.width && tabletCanvas.height
+      ? ctx.getImageData(0, 0, tabletCanvas.width, tabletCanvas.height)
+      : null;
 
     tabletCanvas.width = drawWidth;
     tabletCanvas.height = drawHeight;
 
-    if (existingImage.width && existingImage.height) {
-      ctx.putImageData(existingImage, 0, 0);
+    if (imageData) {
+      ctx.putImageData(imageData, 0, 0);
     }
   }
 
@@ -43,7 +46,6 @@ if (tabletCanvas) {
     if (!tabletSurface) return;
 
     const aspect = drawWidth / drawHeight;
-
     tabletSurface.style.aspectRatio = `${drawWidth} / ${drawHeight}`;
 
     const availableWidth = window.innerWidth;
@@ -62,10 +64,6 @@ if (tabletCanvas) {
   }
 
   resizeCanvas();
-
-  window.addEventListener("resize", () => {
-    resizeCanvas();
-  });
 
   function getPoint(event) {
     const rect = tabletCanvas.getBoundingClientRect();
@@ -158,6 +156,24 @@ if (tabletCanvas) {
   drawingSocket.on("draw-point", point => {
     if (point?.meta === "projector-viewport" && point.viewport) {
       applyViewport(point.viewport.width, point.viewport.height);
+      return;
+    }
+
+    if (point?.meta === "projector-frame" && point.frame) {
+      applyViewport(point.frame.width, point.frame.height);
+
+      if (projectorFeed) {
+        projectorFeed.src = point.frame.dataUrl;
+      }
+      return;
+    }
+
+    if (point?.meta === "tablet-blank") {
+      blankMode = !!point.active;
+
+      if (blankSurface) {
+        blankSurface.classList.toggle("active", blankMode);
+      }
     }
   });
 
@@ -191,6 +207,15 @@ if (tabletCanvas) {
       if (blankSurface) {
         blankSurface.classList.toggle("active", blankMode);
       }
+
+      drawingSocket.emit("draw-point", {
+        x: 0,
+        y: 0,
+        drawing: false,
+        erase: false,
+        meta: "tablet-blank",
+        active: blankMode
+      });
     });
   }
 }
