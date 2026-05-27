@@ -1,0 +1,150 @@
+# ROOTS Dependency Rules
+#
+# Purpose:
+# - Define connector behavior mechanically.
+# - Keep Stage 4 audit rule-governed rather than reviewer-governed.
+# - Start small with the highest-impact subordinating connectors.
+#
+# Governing rule:
+# Connector token presence alone is not automatic failure.
+# Proven retention of the connector-governed subordinate clause is failure.
+# Unresolved scope remains warning.
+#
+# Conditional policy:
+# εἰ / ἐὰν conditional constructions are treated as
+# inseparable conditional logical units.
+#
+# Therefore:
+# protasis + apodosis may survive together in trunk reduction.
+#
+# ROOTS does not mechanically prioritize the apodosis
+# over the protasis.
+
+version: 0.2
+scope: initial_subordinating_connectors
+
+connectors:
+  - connector: "εἰ"
+    normalized_forms:
+      - "εἰ"
+    connector_type: subordinating
+    dependency_type: conditional
+    conditional_unit: true
+    inseparable_conditional_structure: true
+    requires_finite_clause: true
+    scope_resolution_required: true
+    trunk_reduction:
+      removable_when_scope_proven: false
+      preserve_conditional_unit: true
+    audit:
+      token_presence: ACCEPTABLE
+      proven_scope_retention: ACCEPTABLE
+      elevated_confidence_with_token: ACCEPTABLE
+      elevated_confidence_with_proven_retention: ACCEPTABLE
+
+  - connector: "ἐὰν"
+    normalized_forms:
+      - "ἐὰν"
+      - "ἐάν"
+    connector_type: subordinating
+    dependency_type: conditional
+    conditional_unit: true
+    inseparable_conditional_structure: true
+    requires_finite_clause: true
+    scope_resolution_required: true
+    trunk_reduction:
+      removable_when_scope_proven: false
+      preserve_conditional_unit: true
+    audit:
+      token_presence: ACCEPTABLE
+      proven_scope_retention: ACCEPTABLE
+      elevated_confidence_with_token: ACCEPTABLE
+      elevated_confidence_with_proven_retention: ACCEPTABLE
+
+  - connector: "ἵνα"
+    normalized_forms:
+      - "ἵνα"
+    connector_type: subordinating
+    dependency_type: purpose_result
+    requires_finite_clause: true
+    scope_resolution_required: true
+    trunk_reduction:
+      removable_when_scope_proven: true
+    audit:
+      token_presence: WARN
+      proven_scope_retention: FAIL
+      elevated_confidence_with_token: WARN
+      elevated_confidence_with_proven_retention: FAIL
+
+  - connector: "ὅτι"
+    normalized_forms:
+      - "ὅτι"
+    connector_type: subordinating
+    dependency_type:
+      - content
+      - causal
+    requires_finite_clause: true
+    scope_resolution_required: true
+    trunk_reduction:
+      removable_when_scope_proven: true
+    audit:
+      token_presence: WARN
+      proven_scope_retention: FAIL
+      elevated_confidence_with_token: WARN
+      elevated_confidence_with_proven_retention: FAIL
+
+  - connector: "ὡς"
+    normalized_forms:
+      - "ὡς"
+    connector_type: subordinating
+    dependency_type:
+      - comparative
+      - manner
+    requires_finite_clause: true
+    scope_resolution_required: true
+    trunk_reduction:
+      removable_when_scope_proven: true
+    audit:
+      token_presence: WARN
+      proven_scope_retention: FAIL
+      elevated_confidence_with_token: WARN
+      elevated_confidence_with_proven_retention: FAIL
+
+  - connector: "καθὼς"
+    normalized_forms:
+      - "καθὼς"
+      - "καθώς"
+    connector_type: subordinating
+    dependency_type:
+      - comparative
+      - manner
+    requires_finite_clause: true
+    scope_resolution_required: true
+    trunk_reduction:
+      removable_when_scope_proven: true
+    audit:
+      token_presence: WARN
+      proven_scope_retention: FAIL
+      elevated_confidence_with_token: WARN
+      elevated_confidence_with_proven_retention: FAIL
+
+compound_connectors:
+  - connector_unit: "εἰ δὲ"
+    head_connector: "εἰ"
+    connector_type: subordinating
+    dependency_type: conditional
+
+  - connector_unit: "ἐὰν δὲ"
+    head_connector: "ἐὰν"
+    connector_type: subordinating
+    dependency_type: conditional
+
+  - connector_unit: "καθὼς καὶ"
+    head_connector: "καθὼς"
+    connector_type: subordinating
+    dependency_type: comparative
+
+  - connector_unit: "ὡς καὶ"
+    head_connector: "ὡς"
+    connector_type: subordinating
+    dependency_type: comparative

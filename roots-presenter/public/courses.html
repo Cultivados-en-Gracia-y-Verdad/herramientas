@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Download Courses</title>
-  <link rel="icon" href="/assets/cgv-app-icon.svg">
+  <title data-i18n="downloadCourses">Download Courses</title>
+  <link rel="icon" href="/assets/cgv-app-icon.png">
   <link rel="stylesheet" href="courses.css">
 </head>
 <body>
@@ -12,22 +12,23 @@
       <img src="/assets/cgv-logo.svg" alt="CGV">
       <div>
         <strong>CGV Presenter</strong>
-        <span>Download Courses</span>
+        <span data-i18n="downloadCourses">Download Courses</span>
       </div>
     </div>
   </header>
 
   <main>
     <section>
-      <h2>CGV Repository</h2>
+      <h2 data-i18n="cgvRepository">CGV Repository</h2>
       <div class="button-row">
-        <button id="refreshCatalogButton" type="button">Refresh Courses</button>
+        <button id="refreshCatalogButton" type="button" data-i18n="refreshCourses">Refresh Courses</button>
       </div>
-      <p id="repositoryStatus">Downloaded courses are installed to your Documents/CGV Presenter folder.</p>
+      <p id="repositoryStatus" data-i18n="downloadedCoursesDefault">Downloaded courses are installed to your local CGV Presenter library.</p>
       <div id="courseList" class="course-list"></div>
     </section>
   </main>
 
+  <script src="i18n.js"></script>
   <script src="courses.js"></script>
 </body>
 </html>

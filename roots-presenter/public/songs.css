@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #111827;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.song-library {
+  display: grid;
+  gap: 26px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+header img {
+  width: 58px;
+  height: 58px;
+}
+
+header strong,
+header span,
+label span {
+  display: block;
+}
+
+header strong {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+header span,
+.status {
+  color: #475569;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+form {
+  display: grid;
+  gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #0f172a;
+  font: inherit;
+  font-size: 20px;
+  padding: 14px 16px;
+}
+
+input::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+.suggested-repository {
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+button {
+  justify-self: start;
+  border: 0;
+  border-radius: 8px;
+  background: #075985;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 13px 18px;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.status {
+  min-height: 1.4em;
+  margin: 0;
+}
+
+.status.error {
+  color: #b91c1c;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title data-i18n="director">Director</title>
+  <link rel="icon" href="/assets/cgv-app-icon.png">
+  <link rel="stylesheet" href="director.css">
+</head>
+<body>
+  <main class="director-view">
+    <header class="director-header">
+      <div>
+        <strong id="directorTitle" data-i18n="director">Director</strong>
+        <span id="directorMode" data-i18n="waitingForPresentation">Waiting for presentation</span>
+      </div>
+      <div class="director-header-actions">
+        <button id="teachingButton" type="button" class="ghost" data-i18n="teaching">Teaching</button>
+        <button id="sectionsButton" type="button" class="ghost" data-i18n="courseSections">Sections</button>
+        <button id="songsButton" type="button" class="ghost" data-i18n="songs">Songs</button>
+        <button id="fullscreenButton" type="button" class="ghost" data-i18n="fullscreen">Fullscreen</button>
+      </div>
+    </header>
+
+    <section id="directorContent" class="director-content">
+      <div class="empty" data-i18n="waitingForPresenter">Waiting for CGV Presenter...</div>
+    </section>
+
+    <aside id="sectionDrawer" class="song-drawer section-drawer" aria-label="Course sections" data-i18n-aria-label="courseSections">
+      <div class="song-drawer-header">
+        <div>
+          <strong data-i18n="courseSections">Course Sections</strong>
+          <span data-i18n="goToSection">Go to section</span>
+        </div>
+        <button id="closeSectionsButton" type="button" class="ghost" data-i18n="close">Close</button>
+      </div>
+      <div id="sectionList" class="song-list section-list"></div>
+    </aside>
+
+    <aside id="songDrawer" class="song-drawer" aria-label="Song picker" data-i18n-aria-label="songPicker">
+      <div class="song-drawer-header">
+        <div>
+          <strong data-i18n="songs">Songs</strong>
+          <span data-i18n="searchAndSendLive">Search and send live</span>
+        </div>
+        <button id="closeSongsButton" type="button" class="ghost" data-i18n="close">Close</button>
+      </div>
+      <input id="songSearch" type="search" placeholder="Search song number, title, or lyric..." data-i18n-placeholder="searchSongNumberTitleLyric">
+      <button id="showSongListButton" type="button" data-i18n="showSongListScreen">Show Song List Screen</button>
+      <div id="songList" class="song-list"></div>
+    </aside>
+
+    <footer class="director-controls">
+      <button id="previousButton" type="button" class="nav-button" data-i18n="back">Back</button>
+      <div id="directorPosition" class="director-position">--</div>
+      <button id="nextButton" type="button" class="nav-button primary" data-i18n="next">Next</button>
+    </footer>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="i18n.js"></script>
+  <script src="director.js"></script>
+</body>
+</html>

@@ -2,8 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Audience</title>
-  <link rel="icon" href="/assets/cgv-app-icon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title data-i18n="audience">Audience</title>
+  <link rel="icon" href="/assets/cgv-app-icon.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="style-settings.css">
 </head>
@@ -11,10 +12,10 @@
   <div id="joinGreeting" class="join-greeting"></div>
   <div class="audience-stage">
     <form id="joinForm" class="join-panel" onsubmit="joinSession(event)">
-      <label for="participantName">Name or code</label>
+      <label for="participantName" data-i18n="nameOrCode">Name or code</label>
       <div class="join-row">
         <input id="participantName" autocomplete="name" maxlength="80" required>
-        <button type="submit">Join</button>
+        <button type="submit" data-i18n="join">Join</button>
       </div>
     </form>
 
@@ -24,6 +25,7 @@
   <div id="sharedPopupOverlay" class="shared-popup-overlay"></div>
 
   <script src="/socket.io/socket.io.js"></script>
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

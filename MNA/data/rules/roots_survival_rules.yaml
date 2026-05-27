@@ -1,0 +1,34 @@
+rules:
+  - id: S5-PRESERVE-STAGE4-SURVIVES-001
+    type: preserve_stage4_survivor
+    enabled: true
+    description: Preserve records already classified by Stage 4 as structurally surviving.
+    stage4_decisions:
+      - STRUCTURALLY_SURVIVES
+    action:
+      preserve: true
+
+  - id: S5-PRESERVE-CONDITIONAL-UNIT-001
+    type: preserve_as_unit
+    enabled: true
+    description: Preserve structurally bound conditional logical units.
+    connectors:
+      - εἰ
+      - ἐὰν
+    action:
+      preserve_protasis: true
+      preserve_apodosis: true
+      preserve_as_single_unit: true
+
+  - id: S5-PRESERVE-WARN-UNKNOWN-001
+    type: preserve_warn
+    enabled: true
+    description: Preserve unresolved structures when survival certainty is insufficient.
+    connectors:
+      - ὅτι
+      - ἵνα
+      - ὡς
+      - καθὼς
+    action:
+      emit_warning: true
+      preserve_temporarily: true

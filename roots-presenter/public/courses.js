@@ -16,18 +16,26 @@ function setRepositoryStatus(message) {
   repositoryStatus.textContent = message;
 }
 
+function getCourseActionLabel(course) {
+  if (!course.available && !course.installed) return t("comingSoon");
+  if (course.updateAvailable) return t("updateAndLoad");
+  if (course.installed) return t("load");
+  return t("downloadAndLoad");
+}
+
 function renderCourses() {
   courseList.replaceChildren();
 
   if (!catalogCourses.length) {
     const empty = document.createElement("p");
     empty.className = "empty-state";
-    empty.textContent = "No courses loaded.";
+    empty.textContent = t("noCoursesLoaded");
     courseList.append(empty);
     return;
   }
 
   catalogCourses.forEach(course => {
+    const unavailable = !course.available && !course.installed;
     const item = document.createElement("article");
     item.className = "course-item";
     item.dataset.status = course.status || "not-downloaded";
@@ -40,33 +48,34 @@ function renderCourses() {
 
     const badge = document.createElement("span");
     badge.className = `course-badge ${course.status || "not-downloaded"}`;
-    badge.textContent = course.updateAvailable
-      ? "Update available"
+    badge.textContent = unavailable
+      ? t("comingSoon")
+      : course.updateAvailable
+      ? t("updateAvailable")
       : course.installed
-        ? "Downloaded"
-        : "Not downloaded";
+        ? t("downloaded")
+        : t("notDownloaded");
 
     const meta = document.createElement("p");
     meta.className = "course-meta";
     meta.textContent = [
-      course.version ? `Online ${course.version}` : "",
-      course.localVersion ? `Local ${course.localVersion}` : "",
+      course.version ? `${t("online")} ${course.version}` : "",
+      course.localVersion ? `${t("local")} ${course.localVersion}` : "",
       course.path
     ]
       .filter(Boolean)
       .join(" · ");
 
     const description = document.createElement("p");
-    description.textContent = course.description || "Cultivados en Gracia y Verdad course";
+    description.textContent = course.description || t("courseFallbackDescription");
 
     const installButton = document.createElement("button");
     installButton.type = "button";
-    installButton.textContent = course.updateAvailable
-      ? "Update and Load"
-      : course.installed
-        ? "Load"
-        : "Download and Load";
+    installButton.textContent = getCourseActionLabel(course);
+    installButton.disabled = unavailable;
     installButton.addEventListener("click", () => {
+      if (unavailable) return;
+
       if (course.installed && !course.updateAvailable) {
         loadInstalledCourse(course, installButton);
         return;
@@ -86,31 +95,32 @@ async function loadRepositorySettings() {
     const config = await readJson(await fetch("/courses/repository"));
     const library = config.downloadDir
       ? `Library: ${config.downloadDir}`
-      : "Choose Course > Choose Course Library Folder... before downloading.";
+      : t("chooseLibraryBeforeDownload");
 
     setRepositoryStatus(`Source: ${config.url}. ${library}`);
     await refreshCatalog();
   } catch (error) {
-    setRepositoryStatus(error.message || "Could not load repository settings.");
+    setRepositoryStatus(error.message || t("couldNotLoadRepository"));
   }
 }
 
 async function refreshCatalog() {
   refreshCatalogButton.disabled = true;
-  setRepositoryStatus("Loading courses from CGV GitHub...");
+  setRepositoryStatus(t("loadingCourses"));
 
   try {
     const catalog = await readJson(await fetch("/courses/catalog"));
     const config = await readJson(await fetch("/courses/repository"));
     catalogCourses = catalog.courses || [];
     renderCourses();
-    setRepositoryStatus(`${catalog.name}: ${catalogCourses.length} course${catalogCourses.length === 1 ? "" : "s"} available. ${
-      config.downloadDir ? `Library: ${config.downloadDir}` : "Choose a course library folder from the Course menu before downloading."
+    const courseWord = catalogCourses.length === 1 ? t("courseSingular") : t("coursePlural");
+    setRepositoryStatus(`${catalog.name}: ${catalogCourses.length} ${courseWord} ${t("available")}. ${
+      config.downloadDir ? `Library: ${config.downloadDir}` : t("chooseLibraryMenu")
     }`);
   } catch (error) {
     catalogCourses = [];
     renderCourses();
-    setRepositoryStatus(error.message || "Could not load CGV courses.");
+    setRepositoryStatus(error.message || t("couldNotLoadCourses"));
   } finally {
     refreshCatalogButton.disabled = false;
   }
@@ -118,8 +128,8 @@ async function refreshCatalog() {
 
 async function installCourse(course, button) {
   button.disabled = true;
-  button.textContent = course.updateAvailable ? "Updating..." : "Downloading...";
-  setRepositoryStatus(`${course.updateAvailable ? "Updating" : "Downloading"} ${course.title} from CGV GitHub...`);
+  button.textContent = course.updateAvailable ? `${t("updating")}...` : `${t("downloading")}...`;
+  setRepositoryStatus(`${course.updateAvailable ? t("updating") : t("downloading")} ${course.title} from CGV GitHub...`);
 
   try {
     const result = await readJson(await fetch("/courses/install", {
@@ -134,23 +144,19 @@ async function installCourse(course, button) {
       body: JSON.stringify({ courseDir: result.courseDir })
     }));
 
-    setRepositoryStatus(`${result.title || course.title} ${course.updateAvailable ? "updated" : "downloaded"}, installed, and loaded. ${result.fileCount || 0} files saved locally.`);
+    setRepositoryStatus(`${result.title || course.title} ${course.updateAvailable ? t("updated") : t("downloadedLower")}, ${t("installedLoaded")}. ${result.fileCount || 0} ${t("filesSavedLocally")}.`);
     await refreshCatalog();
   } catch (error) {
-    setRepositoryStatus(error.message || "Could not download course.");
+    setRepositoryStatus(error.message || t("couldNotDownloadCourse"));
   } finally {
     button.disabled = false;
-    button.textContent = course.updateAvailable
-      ? "Update and Load"
-      : course.installed
-        ? "Load"
-        : "Download and Load";
+    button.textContent = getCourseActionLabel(course);
   }
 }
 
 async function loadInstalledCourse(course, button) {
   button.disabled = true;
-  button.textContent = "Loading...";
+  button.textContent = t("loading");
   setRepositoryStatus(`Loading ${course.title}...`);
 
   try {
@@ -160,14 +166,14 @@ async function loadInstalledCourse(course, button) {
       body: JSON.stringify({ courseDir: course.installedCourseDir })
     }));
 
-    setRepositoryStatus(`${course.title} loaded.`);
+    setRepositoryStatus(`${course.title} ${t("loaded")}`);
   } catch (error) {
-    setRepositoryStatus(error.message || "Could not load course.");
+    setRepositoryStatus(error.message || t("couldNotLoadCourse"));
   } finally {
     button.disabled = false;
-    button.textContent = "Load";
+    button.textContent = t("load");
   }
 }
 
 refreshCatalogButton.addEventListener("click", refreshCatalog);
-loadRepositorySettings();
+window.CGVI18N.loadLanguage().then(loadRepositorySettings);

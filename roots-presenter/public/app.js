@@ -1,22 +1,29 @@
 const socket = io();
+window.CGV_SOCKET = socket;
 
 const isPresenter = document.body.classList.contains("presenter");
 const isAudience = document.body.classList.contains("audience");
 const isProjector = document.body.classList.contains("projector");
+const isTablet = document.body.classList.contains("tablet");
 const projectorMode = new URLSearchParams(window.location.search).get("mode") || "extended";
 
-if (isProjector) {
+if (isProjector || isTablet) {
   document.body.classList.add(`projector-${projectorMode}`);
 }
 
 let renderedSlides = [];
 let slides = [];
+let headings = [];
 let quizzes = [];
 let slide = 0;
 let step = 0;
 let quizState = { active: false, quizId: null, quiz: null, counts: {} };
+let controllerState = { active: false, title: "", sections: [], step: 0 };
 let userAnswer = null;
 let session = null;
+let connection = { url: "/audience.html" };
+let audienceQrVisible = false;
+let appLanguage = "es";
 let participant = null;
 let activeQuizKey = null;
 let popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
@@ -32,13 +39,19 @@ localStorage.setItem("rootsParticipantId", storedParticipantId);
 
 socket.on("state", data => {
   session = data.session || null;
+  connection = data.connection || connection;
+  appLanguage = data.language || "es";
+  window.CGVI18N?.setLanguage(appLanguage);
   renderedSlides = data.renderedSlides || [];
   slides = data.slides || [];
+  headings = data.headings || [];
   quizzes = data.quizzes || [];
   slide = data.slide || 0;
   step = data.step || 0;
   quizState = data.quizState || { active: false, quizId: null, quiz: null, counts: {} };
+  controllerState = data.controllerState || { active: false, title: "", sections: [], step: 0 };
   popupState = data.popupState || { reference: null, scrollRatio: 0, verseIndex: 0 };
+  audienceQrVisible = !!data.audienceQrVisible;
 
   const nextQuizKey = quizState.active ? quizState.quizId : null;
   if (nextQuizKey !== activeQuizKey) {
@@ -88,10 +101,12 @@ function render() {
     const nextEl = document.getElementById("next");
     nextEl.innerHTML = nextSlide.lines.length
       ? renderEntries([...nextSlide.sticky, ...nextSlide.lines])
-      : "<em>No next slide</em>";
+      : `<em>${t("noNextSlide")}</em>`;
 
     renderPresenterQuiz();
     renderSessionStatus();
+    renderPresenterSectionSelect();
+    renderAudienceQrToggle();
     fitSlideText(currentEl, { baseSize: 46, minSize: 20 });
     fitSlideText(nextEl, { baseSize: 32, minSize: 16 });
     applySharedPopupState();
@@ -99,19 +114,30 @@ function render() {
 
   if (isProjector) {
     const projectorSlide = document.getElementById("projectorSlide");
+    if (!projectorSlide) return;
+
+    if (controllerState.active) {
+      renderControllerProjector(projectorSlide);
+      if (!isTablet) {
+        renderProjectorQuiz();
+        renderAudienceQrOverlay();
+      }
+      applySharedPopupState();
+      if (isTablet) applyTabletPreviewScale();
+      return;
+    }
+
     projectorSlide.innerHTML = html;
+    projectorSlide.classList.remove("song-output");
+    projectorSlide.removeAttribute("style");
     applySlideLayoutClass(projectorSlide);
-    renderProjectorQuiz();
-    fitSlideText(projectorSlide, {
-      baseSize: getProjectorBaseSize(projectorSlide),
-      minSize: projectorMode === "extended" ? 40 : 32,
-      hardMinSize: 28,
-      maxHeight: window.innerHeight - 160,
-      maxWidth: Math.min(window.innerWidth * (projectorMode === "extended" ? 0.86 : 0.76), 1440),
-      densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
-      sizeBoost: projectorMode === "extended" ? 12 : 0
-    });
+    if (!isTablet) {
+      renderProjectorQuiz();
+      renderAudienceQrOverlay();
+    }
+    fitProjectorSlide(projectorSlide);
     applySharedPopupState();
+    if (isTablet) applyTabletPreviewScale();
   }
 
   if (isAudience) {
@@ -127,6 +153,80 @@ function render() {
     });
     applySharedPopupState();
   }
+}
+
+function renderAudienceQrToggle() {
+  const button = document.getElementById("audienceQrToggle");
+  if (!button) return;
+
+  button.classList.toggle("active", audienceQrVisible);
+  button.textContent = audienceQrVisible ? t("hideAudienceQr") : t("showAudienceQr");
+}
+
+function renderAudienceQrOverlay() {
+  const overlay = document.getElementById("audienceQrOverlay");
+  if (!overlay) return;
+
+  overlay.hidden = !audienceQrVisible;
+  if (!audienceQrVisible) {
+    overlay.innerHTML = "";
+    return;
+  }
+
+  const joinUrl = getAudienceJoinUrl();
+  overlay.innerHTML = `
+    <div class="audience-qr-card">
+      <strong>${escapeHtml(t("audienceQrTitle"))}</strong>
+      <img src="/connection-qr.svg?path=/audience.html&t=${Date.now()}" alt="${escapeHtml(t("connectionQrAlt"))}">
+      <code>${escapeHtml(joinUrl.replace(/^https?:\/\//, ""))}</code>
+      <span>${escapeHtml(t("sameWifiHelp"))}</span>
+    </div>
+  `;
+}
+
+function getAudienceJoinUrl() {
+  if (connection?.url) return connection.url;
+
+  if (connection?.host && connection?.port) {
+    return `http://${connection.host}:${connection.port}/audience.html`;
+  }
+
+  return `${window.location.origin}/audience.html`;
+}
+
+function renderControllerProjector(projectorSlide) {
+  const section = controllerState.sections?.[controllerState.step] || [];
+  const media = String(controllerState.backgroundMedia || "").trim();
+  projectorSlide.classList.remove("title-slide");
+  projectorSlide.classList.add("song-output");
+  projectorSlide.style.setProperty("--song-background", controllerState.background || "#0f172a");
+  projectorSlide.style.setProperty("--song-color", controllerState.textColor || "#ffffff");
+  projectorSlide.style.setProperty("--song-accent", controllerState.accentColor || "#38bdf8");
+  projectorSlide.classList.toggle("song-has-media", !controllerState.blank && !!media && !isVideoMedia(media));
+  projectorSlide.classList.toggle("song-has-video", !controllerState.blank && !!media && isVideoMedia(media));
+
+  if (controllerState.blank) {
+    projectorSlide.classList.add("blank-output");
+    projectorSlide.innerHTML = `
+      ${media && !isVideoMedia(media) ? `<div class="song-background-image" style="background-image: url('${escapeHtml(media).replace(/'/g, "&#39;")}')"></div>` : ""}
+      ${media && isVideoMedia(media) ? `<video class="song-background-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
+    `;
+    return;
+  }
+
+  projectorSlide.classList.remove("blank-output");
+  projectorSlide.innerHTML = `
+    ${media && !isVideoMedia(media) ? `<div class="song-background-image" style="background-image: url('${escapeHtml(media).replace(/'/g, "&#39;")}')"></div>` : ""}
+    ${media && isVideoMedia(media) ? `<video class="song-background-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
+    ${controllerState.title ? `<div class="song-output-title">${escapeHtml(controllerState.title)}</div>` : ""}
+    <div class="song-output-inner">
+      <div class="song-output-lines">
+        ${section.map(line => `<div class="song-output-line">${escapeHtml(line)}</div>`).join("")}
+      </div>
+    </div>
+  `;
+
+  fitSongOutputText(projectorSlide);
 }
 
 function applySlideLayoutClass(element) {
@@ -154,8 +254,23 @@ function normalizeRenderedSlide(renderedSlide) {
 }
 
 function getEntryHtml(entry) {
+  if (isPresenter && entry?.presenterHtml) return entry.presenterHtml;
+  if (isProjector && projectorMode === "mirrored" && entry?.presenterHtml) return entry.presenterHtml;
   if (entry?.teacherOnly && !isPresenter) return "";
   return typeof entry === "string" ? entry : entry?.html || "";
+}
+
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function isVideoMedia(value) {
+  return /\.(mp4|webm|ogg|mov)(?:[?#].*)?$/i.test(String(value || "").trim());
 }
 
 function renderEntries(entries) {
@@ -323,6 +438,66 @@ function getProjectorBaseSize(element) {
   return 52 + modeBoost;
 }
 
+const TABLET_SURFACE_W = 1920;
+const TABLET_SURFACE_H = 1080;
+
+function getProjectorLayoutSize() {
+  if (isTablet) {
+    return { width: TABLET_SURFACE_W, height: TABLET_SURFACE_H };
+  }
+
+  return {
+    width: window.innerWidth,
+    height: window.innerHeight
+  };
+}
+
+function fitProjectorSlide(slideEl) {
+  if (!slideEl) return;
+
+  if (isTablet) {
+    fitSlideText(slideEl, {
+      baseSize: getProjectorBaseSize(slideEl),
+      minSize: projectorMode === "extended" ? 40 : 32,
+      hardMinSize: 28,
+      maxHeight: slideEl.clientHeight,
+      maxWidth: slideEl.clientWidth,
+      densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
+      sizeBoost: projectorMode === "extended" ? 12 : 0
+    });
+    return;
+  }
+
+  const viewport = getProjectorLayoutSize();
+
+  fitSlideText(slideEl, {
+    baseSize: getProjectorBaseSize(slideEl),
+    minSize: projectorMode === "extended" ? 40 : 32,
+    hardMinSize: 28,
+    maxHeight: viewport.height - 160,
+    maxWidth: Math.min(slideEl.clientWidth || viewport.width * 0.78, viewport.width - 140),
+    densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
+    sizeBoost: projectorMode === "extended" ? 12 : 0
+  });
+}
+
+function applyTabletPreviewScale() {
+  if (!isTablet) return;
+
+  const viewport = document.querySelector(".tablet-viewport");
+  const root = document.querySelector(".tablet-scale-root");
+  if (!viewport || !root) return;
+
+  root.style.width = `${TABLET_SURFACE_W}px`;
+  root.style.height = `${TABLET_SURFACE_H}px`;
+
+  const scale = Math.min(
+    viewport.clientWidth / TABLET_SURFACE_W,
+    viewport.clientHeight / TABLET_SURFACE_H
+  );
+  root.style.transform = `scale(${scale})`;
+}
+
 function scrollActivePresenterPopup(direction) {
   const popup = document.querySelector(".bible-ref.open .bible-popup");
   if (!popup) return;
@@ -355,21 +530,58 @@ function fitSlideText(element, options = {}) {
   element.style.setProperty("--fit-size", `${size}px`);
 
   requestAnimationFrame(() => {
-    let rect = element.getBoundingClientRect();
-
     while (
       size > hardMinSize &&
       (
         element.scrollHeight > maxHeight ||
         element.scrollWidth > maxWidth ||
-        rect.height > maxHeight ||
-        rect.width > maxWidth
+        element.offsetHeight > maxHeight ||
+        element.offsetWidth > maxWidth
       )
     ) {
       size -= 2;
       if (size < hardMinSize) size = hardMinSize;
       element.style.setProperty("--fit-size", `${size}px`);
-      rect = element.getBoundingClientRect();
+    }
+  });
+}
+
+function fitSongOutputText(element) {
+  if (!element) return;
+
+  const lines = element.querySelector(".song-output-lines");
+  if (!lines) return;
+
+  element.classList.remove("song-allow-wrap");
+
+  const baseSize = 154;
+  const hardMinSize = 52;
+  const maxWidth = Math.max(320, Math.min(window.innerWidth * 0.84, element.clientWidth || window.innerWidth));
+  const maxHeight = Math.max(220, window.innerHeight * 0.78);
+  let size = baseSize;
+
+  element.style.setProperty("--fit-size", `${size}px`);
+
+  requestAnimationFrame(() => {
+    const isOverflowing = () => {
+      const widestLine = [...element.querySelectorAll(".song-output-line")]
+        .reduce((width, line) => Math.max(width, line.scrollWidth, line.getBoundingClientRect().width), 0);
+
+      return (
+        widestLine > maxWidth ||
+        lines.scrollWidth > maxWidth ||
+        lines.scrollHeight > maxHeight ||
+        lines.getBoundingClientRect().height > maxHeight
+      );
+    };
+
+    while (size > hardMinSize && isOverflowing()) {
+      size -= 2;
+      element.style.setProperty("--fit-size", `${size}px`);
+    }
+
+    if (isOverflowing()) {
+      element.classList.add("song-allow-wrap");
     }
   });
 }
@@ -396,9 +608,9 @@ function renderSessionStatus() {
   const started = new Date(session.startedAt).toLocaleString();
   statusEl.innerHTML = `
     <div><strong>${session.title}</strong></div>
-    <div>Started: ${started}</div>
-    <div>Students: ${session.participantCount}</div>
-    <div>Saved responses: ${session.responseCount}</div>
+    <div>${t("started")}: ${started}</div>
+    <div>${t("students")}: ${session.participantCount}</div>
+    <div>${t("savedResponses")}: ${session.responseCount}</div>
   `;
 }
 
@@ -422,6 +634,54 @@ function getAudienceQuiz() {
   return getActiveQuizSequence().find(quiz => !completedQuizIds.has(quiz.id)) || null;
 }
 
+function getQuizReviewItems() {
+  return Array.isArray(quizState.review) ? quizState.review : [];
+}
+
+function renderQuizReviewList(items, options = {}) {
+  if (!items.length) return "";
+
+  return `
+    <div class="${options.compact ? "quiz-review compact" : "quiz-review"}">
+      <div class="quiz-review-title">${t("reviewAnswers")}</div>
+      ${items
+        .map((quiz, index) => {
+          const correctAnswer = quiz.correctAnswer || quiz.choices?.[quiz.correctIndex] || t("answerNotMarked");
+          return `
+            <article class="quiz-review-item">
+              <div class="quiz-review-question">${index + 1}. ${escapeHtml(quiz.question)}</div>
+              <div class="quiz-review-answer"><b>${t("correctAnswer")}:</b> ${escapeHtml(correctAnswer)}</div>
+            </article>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
+function renderStudentGrade(result) {
+  if (!result || !result.total) return "";
+
+  return `
+    <div class="quiz-grade">
+      <div class="quiz-grade-label">${t("yourScore")}</div>
+      <div class="quiz-grade-score">${result.correct}/${result.total}</div>
+      <div class="quiz-grade-percent">${result.percentage}%</div>
+      <div class="quiz-grade-detail">${result.answered}/${result.total} ${t("answered")}</div>
+    </div>
+  `;
+}
+
+function getTotalQuizResponses() {
+  if (quizState.countsByQuiz && Object.keys(quizState.countsByQuiz).length) {
+    return Object.values(quizState.countsByQuiz)
+      .flatMap(counts => Object.values(counts || {}))
+      .reduce((sum, value) => sum + value, 0);
+  }
+
+  return Object.values(quizState.counts || {}).reduce((sum, value) => sum + value, 0);
+}
+
 function stableHash(value) {
   return String(value || "").split("").reduce((hash, char) => {
     return ((hash << 5) - hash + char.charCodeAt(0)) | 0;
@@ -443,6 +703,7 @@ function getShuffledChoiceIndexes(quiz) {
 
 function renderPresenterQuiz() {
   const activeQuiz = getActiveQuiz();
+  const error = quizState.error;
   const statusEl = document.getElementById("quizStatus");
   const controlsEl = document.getElementById("quizControls");
   const resultsEl = document.getElementById("quizResults");
@@ -450,17 +711,19 @@ function renderPresenterQuiz() {
   if (!statusEl || !controlsEl || !resultsEl) return;
 
   if (!quizzes.length) {
-    statusEl.innerHTML = "<em>No quiz files loaded.</em>";
-    controlsEl.innerHTML = "<div>Add quiz YAML files in the markdown frontmatter.</div>";
+    statusEl.innerHTML = `<em>${t("noQuizFilesLoaded")}</em>`;
+    controlsEl.innerHTML = `<div>${t("addQuizYaml")}</div>`;
     resultsEl.innerHTML = "";
     return;
   }
 
   const selectedQuizId = activeQuiz?.id || quizzes[0].id;
 
-  statusEl.innerHTML = activeQuiz
-    ? `<strong>Active:</strong> ${activeQuiz.title}<br>${activeQuiz.question}`
-    : "<em>No quiz running.</em>";
+  statusEl.innerHTML = error
+    ? `<strong>${t("quizProblem")}:</strong> ${escapeHtml(error.message)}`
+    : activeQuiz
+      ? `<strong>${t("active")}:</strong> ${activeQuiz.title}<br>${activeQuiz.question}`
+      : `<em>${t("noQuizRunning")}</em>`;
 
   controlsEl.innerHTML = `
     <select id="quizSelect" class="quiz-select">
@@ -471,9 +734,9 @@ function renderPresenterQuiz() {
         })
         .join("")}
     </select>
-    <button onclick="startQuiz()">Launch quiz</button>
-    <button onclick="endQuiz()">End quiz</button>
-    <button onclick="clearQuiz()">Clear answers</button>
+    <button onclick="startQuiz()">${t("launchQuiz")}</button>
+    <button onclick="endQuiz()">${t("endQuiz")}</button>
+    <button onclick="clearQuiz()">${t("clearAnswers")}</button>
   `;
 
   if (!activeQuiz) {
@@ -482,10 +745,13 @@ function renderPresenterQuiz() {
   }
 
   const counts = quizState.counts || {};
-  const total = Object.values(counts).reduce((sum, value) => sum + value, 0);
+  const total = quizState.active
+    ? Object.values(counts).reduce((sum, value) => sum + value, 0)
+    : getTotalQuizResponses();
+  const reviewItems = getQuizReviewItems();
 
   resultsEl.innerHTML = `
-    <div class="quiz-results-title">Responses: ${total}</div>
+    <div class="quiz-results-title">${t("responses")}: ${total}</div>
     <ul class="quiz-results-list">
       ${activeQuiz.choices
         .map((choice, index) => {
@@ -495,26 +761,63 @@ function renderPresenterQuiz() {
         })
         .join("")}
     </ul>
+    ${renderQuizReviewList(reviewItems, { compact: true })}
   `;
 }
 
 function renderProjectorQuiz() {
   const quiz = getActiveQuiz();
+  const error = quizState.error;
   const resultsEl = document.getElementById("projectorQuiz");
+  if (!resultsEl) return;
+  if (!resultsEl) return;
+  const joinUrl = connection?.url || "/audience.html";
+  const joinCode = connection?.host && connection?.port
+    ? `${connection.host}:${connection.port}`
+    : joinUrl.replace(/^https?:\/\//, "").replace(/\/audience\.html$/, "");
+
+  if (error) {
+    resultsEl.innerHTML = `
+      <div class="projector-quiz-copy">
+        <strong>${t("quizNotAvailable")}</strong>
+        <span>${escapeHtml(error.message)}</span>
+      </div>
+    `;
+    return;
+  }
 
   if (!quiz) {
     resultsEl.innerHTML = "";
     return;
   }
 
+  if (controllerState.active) {
+    resultsEl.innerHTML = "";
+    return;
+  }
+
   if (quizState.active) {
-    resultsEl.innerHTML = `<strong>Quiz live now:</strong> ${quiz.question}`;
-  } else {
-    const counts = quizState.counts || {};
-    const total = Object.values(counts).reduce((sum, value) => sum + value, 0);
     resultsEl.innerHTML = `
-      <strong>Quiz closed</strong><br>
-      <small>Responses: ${total}</small>
+      <div class="projector-quiz-copy">
+        <strong>${t("quizLiveNow")}</strong>
+        <span>${escapeHtml(quiz.question)}</span>
+        <div class="projector-quiz-join">
+          <b>${t("joinLabel")}:</b>
+          <code>${escapeHtml(joinCode)}</code>
+        </div>
+        <small>${escapeHtml(joinUrl)}</small>
+      </div>
+      <img class="projector-quiz-qr" src="/quiz-join.svg?${Date.now()}" alt="QR code to join quiz">
+    `;
+  } else {
+    const total = getTotalQuizResponses();
+    const reviewItems = getQuizReviewItems();
+    resultsEl.innerHTML = `
+      <div class="projector-quiz-copy">
+        <strong>${t("quizClosed")}</strong>
+        <span>${t("responses")}: ${total}</span>
+      </div>
+      ${renderQuizReviewList(reviewItems)}
     `;
   }
 }
@@ -526,23 +829,36 @@ function renderAudienceQuiz() {
 
   if (!participant) {
     quizArea.innerHTML = `
-      <div class="quiz-message">Enter your name or code to answer quizzes.</div>
+      <div class="quiz-message">${t("enterNameToAnswer")}</div>
     `;
     return;
   }
 
   if (!launchedQuiz) {
     quizArea.innerHTML = `
-      <div class="quiz-message">Waiting for the presenter to launch a quiz.</div>
+      <div class="quiz-message">${t("waitingForQuiz")}</div>
     `;
     return;
   }
 
   if (!quizState.active) {
+    const reviewItems = getQuizReviewItems();
+    if (reviewItems.length) {
+      quizArea.innerHTML = `
+        <div class="quiz-waiting">
+          <div class="quiz-question">${t("quizCompleted")}</div>
+          <div class="quiz-message">${t("thanksAnswersSaved")}</div>
+          ${renderStudentGrade(quizState.participantResult)}
+          ${renderQuizReviewList(reviewItems, { compact: true })}
+        </div>
+      `;
+      return;
+    }
+
     quizArea.innerHTML = `
       <div class="quiz-waiting">
         <div class="quiz-question">${launchedQuiz.question}</div>
-        <div class="quiz-message">Waiting for the presenter to start the quiz...</div>
+        <div class="quiz-message">${t("waitingForPresenterStart")}</div>
       </div>
     `;
     return;
@@ -551,8 +867,10 @@ function renderAudienceQuiz() {
   if (!quiz) {
     quizArea.innerHTML = `
       <div class="quiz-waiting">
-        <div class="quiz-question">Quiz completed</div>
-        <div class="quiz-message">Thank you. Your answers have been saved.</div>
+        <div class="quiz-question">${t("quizCompleted")}</div>
+        <div class="quiz-message">${t("thanksAnswersSaved")}</div>
+        ${renderStudentGrade(quizState.participantResult)}
+        ${renderQuizReviewList(getQuizReviewItems(), { compact: true })}
       </div>
     `;
     return;
@@ -565,7 +883,7 @@ function renderAudienceQuiz() {
   const questionTotal = sequence.length;
 
   quizArea.innerHTML = `
-    <div class="quiz-results-summary">Question ${questionNumber} of ${questionTotal}</div>
+    <div class="quiz-results-summary">${t("questionOf", { current: questionNumber, total: questionTotal })}</div>
     <div class="quiz-question">${quiz.question}</div>
     <div class="quiz-options">
       ${getShuffledChoiceIndexes(quiz)
@@ -575,8 +893,8 @@ function renderAudienceQuiz() {
         })
         .join("")}
     </div>
-    <div class="quiz-your-answer">Select an answer to continue.</div>
-    <div class="quiz-results-summary">Responses: ${total}</div>
+    <div class="quiz-your-answer">${t("selectAnswer")}</div>
+    <div class="quiz-results-summary">${t("responses")}: ${total}</div>
   `;
 }
 
@@ -590,6 +908,33 @@ function prev() {
 
 function reloadSlides() {
   socket.emit("reload-slides");
+}
+
+function renderPresenterSectionSelect() {
+  const select = document.getElementById("presenterSectionSelect");
+  if (!select) return;
+
+  if (!headings.length) {
+    select.innerHTML = `<option value="">${t("noCourseSections")}</option>`;
+    select.disabled = true;
+    return;
+  }
+
+  const currentValue = String(slide);
+  select.disabled = false;
+  select.innerHTML = headings
+    .map(heading => {
+      const selected = String(heading.slide) === currentValue ? " selected" : "";
+      const prefix = heading.level === 2 ? "  H2 " : "H1 ";
+      return `<option value="${heading.slide}"${selected}>${escapeHtml(prefix + heading.title)}</option>`;
+    })
+    .join("");
+}
+
+async function jumpToPresenterSection() {
+  const select = document.getElementById("presenterSectionSelect");
+  if (!select?.value) return;
+  await fetch(`/jump/${encodeURIComponent(select.value)}`, { method: "POST" });
 }
 
 function newSession() {
@@ -643,7 +988,7 @@ function renderJoinForm() {
   form.classList.toggle("joined", !!activeName);
 
   if (greeting) {
-    greeting.textContent = activeName ? `Hello, ${activeName}` : "";
+    greeting.textContent = activeName ? t("helloName", { name: activeName }) : "";
     greeting.classList.toggle("joined", !!activeName);
   }
 }
@@ -660,6 +1005,10 @@ function submitAnswer(answerIndex) {
       name: participant?.name || localStorage.getItem("rootsParticipantName") || "Anonymous"
     }
   });
+}
+
+function toggleAudienceQr() {
+  socket.emit("set-audience-qr-visible", !audienceQrVisible);
 }
 
 document.addEventListener("click", event => {
@@ -741,17 +1090,191 @@ if (isAudience) {
   });
 }
 
+document.getElementById("presenterSectionSelect")?.addEventListener("change", jumpToPresenterSection);
+document.getElementById("audienceQrToggle")?.addEventListener("click", toggleAudienceQr);
+
 window.addEventListener("resize", () => {
   render();
+  applyTabletPreviewScale();
 });
 
-if (isPresenter || isProjector) {
+if (isPresenter || (isProjector && !isTablet)) {
   window.addEventListener("keydown", e => {
+    if (e.target.matches("input, textarea, select")) return;
     if (e.key === "ArrowRight" || e.key === " ") next();
     if (e.key === "ArrowLeft") prev();
     if (isProjector && e.key === "Escape") {
       popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
       renderSharedPopupOverlay();
     }
+  });
+}
+
+const DRAW_W = 1920;
+const DRAW_H = 1080;
+const DRAW_COLOR = "#facc15";
+const PEN_WIDTH = 6;
+const ERASER_WIDTH = 36;
+
+let drawingMode = "pen";
+let drawingActive = false;
+
+function initDrawingCanvas(canvas) {
+  if (!canvas) return;
+
+  canvas.width = DRAW_W;
+  canvas.height = DRAW_H;
+}
+
+function getDrawPoint(event, canvas) {
+  const rect = canvas.getBoundingClientRect();
+
+  if (!rect.width || !rect.height) {
+    return { x: 0, y: 0 };
+  }
+
+  return {
+    x: ((event.clientX - rect.left) / rect.width) * DRAW_W,
+    y: ((event.clientY - rect.top) / rect.height) * DRAW_H
+  };
+}
+
+function prepareDrawingContext(ctx, erase) {
+  ctx.lineCap = "round";
+  ctx.lineJoin = "round";
+  ctx.lineWidth = erase ? ERASER_WIDTH : PEN_WIDTH;
+
+  if (erase) {
+    ctx.globalCompositeOperation = "destination-out";
+    ctx.strokeStyle = "rgba(0,0,0,1)";
+  } else {
+    ctx.globalCompositeOperation = "source-over";
+    ctx.strokeStyle = DRAW_COLOR;
+  }
+}
+
+function drawPoint(ctx, point) {
+  ctx.lineTo(point.x, point.y);
+}
+
+function applyDrawPoint(point, canvas, erase) {
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+
+  prepareDrawingContext(ctx, erase);
+
+  if (!point.drawing) {
+    ctx.beginPath();
+    ctx.moveTo(point.x, point.y);
+    return;
+  }
+
+  drawPoint(ctx, point);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(point.x, point.y);
+}
+
+function setDrawingMode(mode) {
+  drawingMode = mode === "eraser" ? "eraser" : "pen";
+
+  document.querySelectorAll(".tablet-toolbar button").forEach(button => {
+    const label = button.textContent.trim().toLowerCase();
+    button.classList.toggle("active", label === drawingMode);
+  });
+}
+
+function clearDrawing() {
+  const canvas = document.getElementById("projectorCanvas");
+  if (canvas) {
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, DRAW_W, DRAW_H);
+  }
+
+  socket.emit("draw-clear");
+}
+
+function emitDrawPoint(point) {
+  socket.emit("draw-point", point);
+}
+
+function handleDrawingPointerDown(event) {
+  if (!isTablet || event.button !== 0) return;
+
+  const canvas = document.getElementById("projectorCanvas");
+  if (!canvas) return;
+
+  event.preventDefault();
+  drawingActive = true;
+
+  const point = {
+    ...getDrawPoint(event, canvas),
+    drawing: false,
+    erase: drawingMode === "eraser"
+  };
+
+  applyDrawPoint(point, canvas, point.erase);
+  emitDrawPoint(point);
+  event.currentTarget.setPointerCapture(event.pointerId);
+}
+
+function handleDrawingPointerMove(event) {
+  if (!isTablet || !drawingActive) return;
+
+  const canvas = document.getElementById("projectorCanvas");
+  if (!canvas) return;
+
+  event.preventDefault();
+
+  const point = {
+    ...getDrawPoint(event, canvas),
+    drawing: true,
+    erase: drawingMode === "eraser"
+  };
+
+  applyDrawPoint(point, canvas, point.erase);
+  emitDrawPoint(point);
+}
+
+function finishDrawingPointer(event) {
+  if (!isTablet || !drawingActive) return;
+
+  drawingActive = false;
+
+  if (event.currentTarget.hasPointerCapture?.(event.pointerId)) {
+    event.currentTarget.releasePointerCapture(event.pointerId);
+  }
+}
+
+if (isTablet) {
+  window.setDrawingMode = setDrawingMode;
+  window.clearDrawing = clearDrawing;
+
+  const drawingCanvas = document.getElementById("projectorCanvas");
+  initDrawingCanvas(drawingCanvas);
+
+  drawingCanvas?.addEventListener("pointerdown", handleDrawingPointerDown);
+  drawingCanvas?.addEventListener("pointermove", handleDrawingPointerMove);
+  drawingCanvas?.addEventListener("pointerup", finishDrawingPointer);
+  drawingCanvas?.addEventListener("pointercancel", finishDrawingPointer);
+
+  applyTabletPreviewScale();
+}
+
+if (isProjector && !isTablet) {
+  const projectorCanvas = document.getElementById("projectorCanvas");
+  initDrawingCanvas(projectorCanvas);
+
+  socket.on("draw-point", point => {
+    if (!projectorCanvas || !point) return;
+
+    applyDrawPoint(point, projectorCanvas, !!point.erase);
+  });
+
+  socket.on("draw-clear", () => {
+    if (!projectorCanvas) return;
+
+    const ctx = projectorCanvas.getContext("2d");
+    ctx.clearRect(0, 0, DRAW_W, DRAW_H);
   });
 }

@@ -1,0 +1,37 @@
+{
+  "allowed_claims": [
+    "finite form existence",
+    "Greek form",
+    "lemma",
+    "morphology",
+    "tense/voice/mood/person/number",
+    "token location"
+  ],
+  "audit_pass": true,
+  "book": "1corintios",
+  "dataset": "datasets/finite-verbs/1corintios.jsonl",
+  "failure_details": [],
+  "failures": 0,
+  "forbidden_claims": [
+    "adjacency_distance",
+    "anchor_id",
+    "connector",
+    "discourse",
+    "explicit_connector_before",
+    "explicit_subject_before",
+    "independency",
+    "label",
+    "movement",
+    "next_anchor",
+    "previous_anchor",
+    "structure",
+    "subject",
+    "subject_continuity",
+    "title",
+    "trunk",
+    "unit"
+  ],
+  "record_type": "stage1_frozen_finite_verbs_audit",
+  "rows": 1027,
+  "validator_version": "stage1-frozen-finite-verbs-validator-v1"
+}

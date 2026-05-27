@@ -1,0 +1,503 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  --director-bg: #030712;
+  --director-panel: #0b1220;
+  --director-line: rgba(148, 163, 184, 0.22);
+  --director-text: #f8fafc;
+  --director-muted: #94a3b8;
+  --director-accent: #38bdf8;
+  --director-song: #fbbf24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(56, 189, 248, 0.12), transparent 28rem),
+    linear-gradient(135deg, #020617, var(--director-bg));
+  color: var(--director-text);
+  font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+}
+
+body.song-mode {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(251, 191, 36, 0.15), transparent 26rem),
+    linear-gradient(135deg, #020617, #111827);
+}
+
+.director-view {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding:
+    env(safe-area-inset-top)
+    env(safe-area-inset-right)
+    env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+}
+
+.director-header,
+.director-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: clamp(0.85rem, 2vh, 1.25rem) clamp(1rem, 3vw, 2rem);
+  background: rgba(2, 6, 23, 0.78);
+  backdrop-filter: blur(14px);
+}
+
+.director-header-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex: 0 0 auto;
+}
+
+.director-header {
+  border-bottom: 1px solid var(--director-line);
+}
+
+.director-controls {
+  border-top: 1px solid var(--director-line);
+}
+
+.director-header strong,
+.director-header span {
+  display: block;
+}
+
+.director-header strong {
+  max-width: 68vw;
+  overflow: hidden;
+  font-size: clamp(1.15rem, 2.3vw, 2rem);
+  font-weight: 600;
+  line-height: 1.08;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.director-header span {
+  margin-top: 0.2rem;
+  color: var(--director-muted);
+  font-size: clamp(0.9rem, 1.35vw, 1.1rem);
+}
+
+.director-content {
+  display: grid;
+  align-content: start;
+  gap: 0.35em;
+  min-height: 0;
+  overflow: hidden;
+  padding: clamp(1.15rem, 3vw, 3rem);
+  font-size: var(--director-fit-size, 58px);
+  line-height: 1.22;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.director-content.song-mode {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  font-size: var(--director-fit-size, 72px);
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.director-content h1,
+.director-content h2 {
+  margin: 0 0 0.35em;
+  text-align: center;
+}
+
+.director-content h1 {
+  font-size: 1.55em;
+}
+
+.director-content h2 {
+  color: var(--director-accent);
+  font-size: 1.25em;
+}
+
+.director-content h3,
+.director-content h4,
+.director-content h5,
+.director-content h6,
+.director-content p,
+.director-content ul,
+.director-content ol {
+  margin: 0.26em 0;
+}
+
+.director-content h3 {
+  color: var(--director-accent);
+  font-size: 1em;
+}
+
+.director-content h4 {
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+.director-content h5 {
+  font-size: 0.85em;
+}
+
+.director-content h6,
+.director-content li {
+  font-size: 0.78em;
+}
+
+.director-content ul,
+.director-content ol {
+  padding-left: 1.2em;
+}
+
+.director-content a {
+  color: var(--director-accent);
+}
+
+.director-content strong {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
+}
+
+.director-content .bible-ref {
+  position: relative;
+  color: var(--director-accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.16em;
+}
+
+.director-content .bible-popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 30;
+  width: min(880px, calc(100vw - 2rem));
+  max-height: min(70vh, 620px);
+  overflow: auto;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(56, 189, 248, 0.38);
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #111827;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.5);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1.3rem, 2.4vw, 2.1rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.34;
+  text-align: left;
+}
+
+.director-content .bible-ref.open .bible-popup {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.director-content .bible-popup div {
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: rgba(8, 47, 73, 0.08);
+}
+
+.song-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+  gap: 0.85rem;
+  width: min(460px, 100vw);
+  padding: 1rem;
+  transform: translateX(100%);
+  transition: transform 160ms ease;
+  border-left: 1px solid var(--director-line);
+  background: rgba(15, 23, 42, 0.98);
+  box-shadow: -18px 0 60px rgba(0, 0, 0, 0.36);
+  touch-action: pan-y;
+}
+
+.song-drawer.open {
+  transform: translateX(0);
+}
+
+.song-drawer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.song-drawer-header strong,
+.song-drawer-header span {
+  display: block;
+}
+
+.song-drawer-header strong {
+  font-size: 1.3rem;
+}
+
+.song-drawer-header span {
+  color: var(--director-muted);
+}
+
+.song-drawer input {
+  width: 100%;
+  border: 1px solid var(--director-line);
+  border-radius: 9px;
+  background: #020617;
+  color: var(--director-text);
+  font: inherit;
+  font-size: 1.05rem;
+  padding: 0.85rem 0.95rem;
+}
+
+.song-list {
+  display: grid;
+  gap: 0.55rem;
+  overflow: auto;
+  padding-right: 0.2rem;
+}
+
+.section-drawer {
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.song-library-heading {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.5rem 0.25rem 0.15rem;
+  background: rgba(15, 23, 42, 0.98);
+  color: var(--director-accent);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.song-choice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  justify-items: start;
+  gap: 0.8rem;
+  min-width: 0;
+  min-height: auto;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(30, 41, 59, 0.78);
+  color: var(--director-text);
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.song-choice b {
+  color: var(--director-song);
+  font-size: 0.9rem;
+}
+
+.song-choice span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.section-choice.level-2 {
+  margin-left: 1rem;
+}
+
+.section-choice.active {
+  border-color: var(--director-accent);
+  background: rgba(8, 47, 73, 0.42);
+}
+
+.director-position {
+  min-width: 5rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(56, 189, 248, 0.38);
+  border-radius: 10px;
+  background: rgba(8, 47, 73, 0.42);
+  color: var(--director-accent);
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  font-weight: 600;
+  text-align: center;
+}
+
+body.song-mode .director-position {
+  border-color: rgba(251, 191, 36, 0.42);
+  background: rgba(113, 63, 18, 0.34);
+  color: var(--director-song);
+}
+
+button {
+  min-height: clamp(3rem, 8vh, 4.6rem);
+  min-width: clamp(7rem, 20vw, 14rem);
+  border: 0;
+  border-radius: 12px;
+  background: #1f2937;
+  color: var(--director-text);
+  cursor: pointer;
+  font: inherit;
+  font-size: clamp(1rem, 2vw, 1.55rem);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+}
+
+button.primary {
+  background: var(--director-accent);
+  color: #03111f;
+}
+
+body.song-mode button.primary {
+  background: var(--director-song);
+  color: #111827;
+}
+
+button.ghost {
+  min-height: 2.6rem;
+  min-width: auto;
+  border: 1px solid var(--director-line);
+  background: rgba(15, 23, 42, 0.7);
+  color: var(--director-muted);
+  font-size: clamp(0.82rem, 1.2vw, 1rem);
+}
+
+.empty {
+  display: grid;
+  min-height: 40vh;
+  place-items: center;
+  color: var(--director-muted);
+  text-align: center;
+}
+
+@media (min-width: 900px) and (min-height: 560px) and (pointer: fine) {
+  .director-header,
+  .director-controls {
+    padding: 0.7rem 1.15rem;
+  }
+
+  .director-header strong {
+    font-size: 1.18rem;
+  }
+
+  .director-header span {
+    font-size: 0.86rem;
+  }
+
+  .director-content {
+    gap: 0.28em;
+    padding: 1.2rem 1.6rem;
+    line-height: 1.28;
+  }
+
+  .director-content.song-mode {
+    line-height: 1.16;
+  }
+
+  button {
+    min-width: 8rem;
+    min-height: 2.8rem;
+    border-radius: 9px;
+    font-size: 1rem;
+    padding: 0.55rem 0.9rem;
+  }
+
+  button.ghost {
+    min-height: 2.25rem;
+    font-size: 0.82rem;
+  }
+
+  .director-position {
+    min-width: 4.7rem;
+    padding: 0.52rem 0.75rem;
+    font-size: 1.05rem;
+  }
+
+  .song-drawer {
+    width: min(420px, 100vw);
+  }
+}
+
+@media (max-width: 720px) {
+  .director-header,
+  .director-controls {
+    padding: 0.75rem;
+  }
+
+  .director-content {
+    padding: 1rem;
+  }
+
+  .director-header strong {
+    max-width: 58vw;
+    font-size: 1.05rem;
+  }
+
+  .director-header span {
+    font-size: 0.82rem;
+  }
+
+  button {
+    min-width: 5.8rem;
+    min-height: 3.25rem;
+    border-radius: 9px;
+    font-size: 1rem;
+  }
+
+  button.ghost {
+    min-height: 2.4rem;
+    font-size: 0.8rem;
+  }
+
+  .director-header-actions {
+    gap: 0.35rem;
+  }
+
+  .director-position {
+    min-width: 4rem;
+    padding: 0.55rem 0.6rem;
+    font-size: 1rem;
+  }
+
+  .song-drawer {
+    padding: 0.75rem;
+  }
+
+  .director-content .bible-popup {
+    max-height: 74vh;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title data-i18n="stageView">Stage View</title>
+  <link rel="icon" href="/assets/cgv-app-icon.png">
+  <link rel="stylesheet" href="stage.css">
+</head>
+<body>
+  <header class="stage-header">
+    <div>
+      <strong id="stageTitle" data-i18n="stageView">Stage View</strong>
+      <span id="stageStatus" data-i18n="waitingForController">Waiting for controller</span>
+    </div>
+    <div class="stage-controls" aria-label="Stage controls" data-i18n-aria-label="stageControls">
+      <button id="stagePrevious" type="button" title="Previous section" data-i18n-title="previousSection" data-i18n="previous">Prev</button>
+      <button id="stageNext" type="button" title="Next section" data-i18n-title="nextSection" data-i18n="next">Next</button>
+      <button id="transposeDown" type="button" title="Lower key one semitone" data-i18n-title="lowerKey">-</button>
+      <div id="transposeStatus" class="transpose-status" title="Stage transposition" data-i18n-title="stageTransposition">Key 0</div>
+      <button id="transposeUp" type="button" title="Raise key one semitone" data-i18n-title="raiseKey">+</button>
+      <div id="stagePosition" class="stage-position"></div>
+    </div>
+  </header>
+
+  <main class="stage-layout">
+    <section class="stage-current">
+      <h1 data-i18n="current">Current</h1>
+      <div id="currentSong" class="song-chords"></div>
+    </section>
+
+    <section class="stage-next">
+      <h2 data-i18n="next">Next</h2>
+      <div id="nextSong" class="song-chords next"></div>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="i18n.js"></script>
+  <script src="stage.js"></script>
+</body>
+</html>

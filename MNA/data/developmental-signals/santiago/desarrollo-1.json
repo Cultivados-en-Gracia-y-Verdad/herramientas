@@ -1,0 +1,64 @@
+{
+  "book": "santiago",
+  "chapter": 1,
+  "record_type": "developmental_trace_seed",
+  "version": "desarrollo-trace-v1",
+  "signals": [
+    {
+      "signal_id": "santiago-1-falta-completo",
+      "label": "falta / completo",
+      "pregunta": "¿Sigue activa la presión entre falta y completo?",
+      "trace_points": [
+        {
+          "ref": "1:2-4",
+          "funcion": "se abre la presión",
+          "observacion": "Las pruebas introducen una presión que se mueve hacia perseverancia, obra completa y falta resuelta.",
+          "evidencia": ["pruebas", "produce perseverancia", "obra perfecta", "sin que nada les falte"],
+          "estado": "activo"
+        },
+        {
+          "ref": "1:5",
+          "funcion": "la falta reaparece",
+          "observacion": "La falta no desaparece; reaparece concretamente como falta de sabiduría.",
+          "evidencia": ["si a alguno de ustedes le falta sabiduría"],
+          "estado": "activo"
+        },
+        {
+          "ref": "1:6-8",
+          "funcion": "la inestabilidad amenaza la integridad",
+          "observacion": "La duda y el doble ánimo presentan una condición inconstante dentro de la misma presión hacia lo completo.",
+          "evidencia": ["sin dudar", "doble ánimo", "inconstante"],
+          "estado": "activo"
+        }
+      ]
+    },
+    {
+      "signal_id": "santiago-1-prueba-perseverancia",
+      "label": "prueba / perseverancia",
+      "pregunta": "¿La prueba sigue produciendo o examinando perseverancia?",
+      "trace_points": [
+        {
+          "ref": "1:2-4",
+          "funcion": "la prueba produce perseverancia",
+          "observacion": "La prueba no queda aislada; se conecta explícitamente con perseverancia y resultado completo.",
+          "evidencia": ["pruebas", "la prueba de su fe produce perseverancia", "perfecto resultado"],
+          "estado": "activo"
+        },
+        {
+          "ref": "1:12",
+          "funcion": "la presión vuelve como perseverar bajo prueba",
+          "observacion": "La prueba vuelve con el hombre que persevera, ha sido aprobado y recibe corona de vida.",
+          "evidencia": ["persevera bajo la prueba", "aprobado", "corona de vida"],
+          "estado": "retomado"
+        },
+        {
+          "ref": "1:13-15",
+          "funcion": "se distingue de la tentación",
+          "observacion": "La presión de prueba se distingue de la tentación que procede del deseo y termina en muerte.",
+          "evidencia": ["tentado", "propia pasión", "pecado", "muerte"],
+          "estado": "distinguido"
+        }
+      ]
+    }
+  ]
+}

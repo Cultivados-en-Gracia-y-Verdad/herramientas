@@ -1,0 +1,145 @@
+observation_type	rank	chapter	chapter_b	metric	value	delta	note
+chapter_similarity	1	2	8	similarity	0.4575	1.1856	chapters 2 and 8 have similarity 0.4575
+chapter_similarity	2	1	12	similarity	0.3787	1.6408	chapters 1 and 12 have similarity 0.3787
+chapter_similarity	3	8	12	similarity	0.3164	2.1603	chapters 8 and 12 have similarity 0.3164
+chapter_similarity	4	2	12	similarity	0.3163	2.1613	chapters 2 and 12 have similarity 0.3163
+chapter_similarity	5	2	5	similarity	0.2916	2.4299	chapters 2 and 5 have similarity 0.2916
+chapter_similarity	6	11	16	similarity	0.2913	2.4331	chapters 11 and 16 have similarity 0.2913
+chapter_similarity	7	3	11	similarity	0.2901	2.4475	chapters 3 and 11 have similarity 0.2901
+chapter_similarity	8	1	3	similarity	0.2866	2.4896	chapters 1 and 3 have similarity 0.2866
+chapter_similarity	9	3	12	similarity	0.2849	2.5097	chapters 3 and 12 have similarity 0.2849
+chapter_similarity	10	1	5	similarity	0.2754	2.6306	chapters 1 and 5 have similarity 0.2754
+chapter_similarity	11	3	6	similarity	0.2751	2.6352	chapters 3 and 6 have similarity 0.2751
+chapter_similarity	12	5	12	similarity	0.2745	2.6432	chapters 5 and 12 have similarity 0.2745
+chapter_similarity	13	3	8	similarity	0.2627	2.8062	chapters 3 and 8 have similarity 0.2627
+chapter_similarity	14	5	8	similarity	0.2622	2.8132	chapters 5 and 8 have similarity 0.2622
+chapter_similarity	15	3	16	similarity	0.2613	2.8271	chapters 3 and 16 have similarity 0.2613
+metric_top_rank	1	15		total_predications	120		chapter 15 ranks 1 for total_predications
+metric_top_rank	2	7		total_predications	113		chapter 7 ranks 2 for total_predications
+metric_top_rank	3	14		total_predications	110		chapter 14 ranks 3 for total_predications
+metric_top_rank	4	10		total_predications	80		chapter 10 ranks 4 for total_predications
+metric_top_rank	5	11		total_predications	78		chapter 11 ranks 5 for total_predications
+metric_top_rank	1	13		predications_per_verse	3.5		chapter 13 ranks 1 for predications_per_verse
+metric_top_rank	2	4		predications_per_verse	2.95		chapter 4 ranks 2 for predications_per_verse
+metric_top_rank	3	7		predications_per_verse	2.9		chapter 7 ranks 3 for predications_per_verse
+metric_top_rank	4	14		predications_per_verse	2.75		chapter 14 ranks 4 for predications_per_verse
+metric_top_rank	5	3		predications_per_verse	2.71		chapter 3 ranks 5 for predications_per_verse
+metric_top_rank	1	14		max_predications_single_verse	8		chapter 14 ranks 1 for max_predications_single_verse
+metric_top_rank	2	7		max_predications_single_verse	7		chapter 7 ranks 2 for max_predications_single_verse
+metric_top_rank	3	11		max_predications_single_verse	6		chapter 11 ranks 3 for max_predications_single_verse
+metric_top_rank	4	13		max_predications_single_verse	6		chapter 13 ranks 4 for max_predications_single_verse
+metric_top_rank	5	16		max_predications_single_verse	6		chapter 16 ranks 5 for max_predications_single_verse
+metric_top_rank	1	9		finite_1S	31		chapter 9 ranks 1 for finite_1S
+metric_top_rank	2	13		finite_1S	17		chapter 13 ranks 2 for finite_1S
+metric_top_rank	3	14		finite_1S	17		chapter 14 ranks 3 for finite_1S
+metric_top_rank	4	15		finite_1S	17		chapter 15 ranks 4 for finite_1S
+metric_top_rank	5	16		finite_1S	17		chapter 16 ranks 5 for finite_1S
+metric_top_rank	1	15		finite_1P	14		chapter 15 ranks 1 for finite_1P
+metric_top_rank	2	4		finite_1P	12		chapter 4 ranks 2 for finite_1P
+metric_top_rank	3	9		finite_1P	8		chapter 9 ranks 3 for finite_1P
+metric_top_rank	4	10		finite_1P	8		chapter 10 ranks 4 for finite_1P
+metric_top_rank	5	8		finite_1P	7		chapter 8 ranks 5 for finite_1P
+metric_top_rank	1	7		finite_2S	13		chapter 7 ranks 1 for finite_2S
+metric_top_rank	2	4		finite_2S	4		chapter 4 ranks 2 for finite_2S
+metric_top_rank	3	14		finite_2S	3		chapter 14 ranks 3 for finite_2S
+metric_top_rank	4	15		finite_2S	3		chapter 15 ranks 4 for finite_2S
+metric_top_rank	5	9		finite_2S	1		chapter 9 ranks 5 for finite_2S
+metric_top_rank	1	6		finite_2P	24		chapter 6 ranks 1 for finite_2P
+metric_top_rank	2	10		finite_2P	17		chapter 10 ranks 2 for finite_2P
+metric_top_rank	3	14		finite_2P	17		chapter 14 ranks 3 for finite_2P
+metric_top_rank	4	11		finite_2P	16		chapter 11 ranks 4 for finite_2P
+metric_top_rank	5	3		finite_2P	11		chapter 3 ranks 5 for finite_2P
+metric_top_rank	1	7		finite_3S	73		chapter 7 ranks 1 for finite_3S
+metric_top_rank	2	14		finite_3S	58		chapter 14 ranks 2 for finite_3S
+metric_top_rank	3	15		finite_3S	58		chapter 15 ranks 3 for finite_3S
+metric_top_rank	4	11		finite_3S	42		chapter 11 ranks 4 for finite_3S
+metric_top_rank	5	3		finite_3S	38		chapter 3 ranks 5 for finite_3S
+metric_top_rank	1	10		finite_3P	20		chapter 10 ranks 1 for finite_3P
+metric_top_rank	2	15		finite_3P	17		chapter 15 ranks 2 for finite_3P
+metric_top_rank	3	14		finite_3P	15		chapter 14 ranks 3 for finite_3P
+metric_top_rank	4	12		finite_3P	7		chapter 12 ranks 4 for finite_3P
+metric_top_rank	5	16		finite_3P	7		chapter 16 ranks 5 for finite_3P
+metric_top_rank	1	14		subject_candidate	36		chapter 14 ranks 1 for subject_candidate
+metric_top_rank	2	15		subject_candidate	35		chapter 15 ranks 2 for subject_candidate
+metric_top_rank	3	7		subject_candidate	32		chapter 7 ranks 3 for subject_candidate
+metric_top_rank	4	10		subject_candidate	28		chapter 10 ranks 4 for subject_candidate
+metric_top_rank	5	3		subject_candidate	22		chapter 3 ranks 5 for subject_candidate
+metric_top_rank	1	15		independence_unresolved	35		chapter 15 ranks 1 for independence_unresolved
+metric_top_rank	2	14		independence_unresolved	34		chapter 14 ranks 2 for independence_unresolved
+metric_top_rank	3	7		independence_unresolved	26		chapter 7 ranks 3 for independence_unresolved
+metric_top_rank	4	9		independence_unresolved	24		chapter 9 ranks 4 for independence_unresolved
+metric_top_rank	5	11		independence_unresolved	21		chapter 11 ranks 5 for independence_unresolved
+metric_top_rank	1	15		subordination_candidate	35		chapter 15 ranks 1 for subordination_candidate
+metric_top_rank	2	14		subordination_candidate	34		chapter 14 ranks 2 for subordination_candidate
+metric_top_rank	3	7		subordination_candidate	26		chapter 7 ranks 3 for subordination_candidate
+metric_top_rank	4	9		subordination_candidate	24		chapter 9 ranks 4 for subordination_candidate
+metric_top_rank	5	11		subordination_candidate	21		chapter 11 ranks 5 for subordination_candidate
+adjacent_chapter_shift	1	7	8	total_predications	29	-84.0	total_predications changes from 113 to 29 between chapters 7 and 8
+adjacent_chapter_shift	2	13	14	total_predications	110	68.0	total_predications changes from 42 to 110 between chapters 13 and 14
+adjacent_chapter_shift	3	15	16	total_predications	54	-66.0	total_predications changes from 120 to 54 between chapters 15 and 16
+adjacent_chapter_shift	4	6	7	total_predications	113	60.0	total_predications changes from 53 to 113 between chapters 6 and 7
+adjacent_chapter_shift	5	7	8	finite_3S	15	-58.0	finite_3S changes from 73 to 15 between chapters 7 and 8
+adjacent_chapter_shift	6	6	7	finite_3S	73	52.0	finite_3S changes from 21 to 73 between chapters 6 and 7
+adjacent_chapter_shift	7	8	9	total_predications	72	43.0	total_predications changes from 29 to 72 between chapters 8 and 9
+adjacent_chapter_shift	8	13	14	finite_3S	58	38.0	finite_3S changes from 20 to 58 between chapters 13 and 14
+adjacent_chapter_shift	9	15	16	finite_3S	20	-38.0	finite_3S changes from 58 to 20 between chapters 15 and 16
+adjacent_chapter_shift	10	4	5	total_predications	20	-36.0	total_predications changes from 56 to 20 between chapters 4 and 5
+adjacent_chapter_shift	11	5	6	total_predications	53	33.0	total_predications changes from 20 to 53 between chapters 5 and 6
+adjacent_chapter_shift	12	8	9	finite_1S	31	29.0	finite_1S changes from 2 to 31 between chapters 8 and 9
+adjacent_chapter_shift	13	13	14	subject_candidate	36	28.0	subject_candidate changes from 8 to 36 between chapters 13 and 14
+adjacent_chapter_shift	14	15	16	subject_candidate	8	-27.0	subject_candidate changes from 35 to 8 between chapters 15 and 16
+adjacent_chapter_shift	15	2	3	total_predications	57	26.0	total_predications changes from 31 to 57 between chapters 2 and 3
+adjacent_chapter_shift	16	11	12	total_predications	53	-25.0	total_predications changes from 78 to 53 between chapters 11 and 12
+adjacent_chapter_shift	17	13	14	independence_unresolved	34	25.0	independence_unresolved changes from 9 to 34 between chapters 13 and 14
+adjacent_chapter_shift	18	13	14	subordination_candidate	34	25.0	subordination_candidate changes from 9 to 34 between chapters 13 and 14
+adjacent_chapter_shift	19	3	4	finite_3S	15	-23.0	finite_3S changes from 38 to 15 between chapters 3 and 4
+adjacent_chapter_shift	20	7	8	subject_candidate	11	-21.0	subject_candidate changes from 32 to 11 between chapters 7 and 8
+adjacent_chapter_shift	21	9	10	finite_1S	10	-21.0	finite_1S changes from 31 to 10 between chapters 9 and 10
+zero_metric		1		finite_2S	0		chapter 1 has zero count for finite_2S
+zero_metric		1		subject_unresolved	0		chapter 1 has zero count for subject_unresolved
+zero_metric		1		subordination_unresolved	0		chapter 1 has zero count for subordination_unresolved
+zero_metric		2		finite_2S	0		chapter 2 has zero count for finite_2S
+zero_metric		2		finite_2P	0		chapter 2 has zero count for finite_2P
+zero_metric		2		subject_unresolved	0		chapter 2 has zero count for subject_unresolved
+zero_metric		2		subordination_unresolved	0		chapter 2 has zero count for subordination_unresolved
+zero_metric		3		finite_2S	0		chapter 3 has zero count for finite_2S
+zero_metric		3		subject_unresolved	0		chapter 3 has zero count for subject_unresolved
+zero_metric		3		subordination_unresolved	0		chapter 3 has zero count for subordination_unresolved
+zero_metric		4		subject_unresolved	0		chapter 4 has zero count for subject_unresolved
+zero_metric		4		subordination_unresolved	0		chapter 4 has zero count for subordination_unresolved
+zero_metric		5		finite_2S	0		chapter 5 has zero count for finite_2S
+zero_metric		5		finite_3P	0		chapter 5 has zero count for finite_3P
+zero_metric		5		subject_unresolved	0		chapter 5 has zero count for subject_unresolved
+zero_metric		5		subordination_unresolved	0		chapter 5 has zero count for subordination_unresolved
+zero_metric		6		finite_2S	0		chapter 6 has zero count for finite_2S
+zero_metric		6		subject_unresolved	0		chapter 6 has zero count for subject_unresolved
+zero_metric		6		subordination_unresolved	0		chapter 6 has zero count for subordination_unresolved
+zero_metric		7		finite_1P	0		chapter 7 has zero count for finite_1P
+zero_metric		7		subject_unresolved	0		chapter 7 has zero count for subject_unresolved
+zero_metric		7		subordination_unresolved	0		chapter 7 has zero count for subordination_unresolved
+zero_metric		8		finite_2S	0		chapter 8 has zero count for finite_2S
+zero_metric		8		subject_unresolved	0		chapter 8 has zero count for subject_unresolved
+zero_metric		8		subordination_unresolved	0		chapter 8 has zero count for subordination_unresolved
+zero_metric		9		subject_unresolved	0		chapter 9 has zero count for subject_unresolved
+zero_metric		9		subordination_unresolved	0		chapter 9 has zero count for subordination_unresolved
+zero_metric		10		finite_2S	0		chapter 10 has zero count for finite_2S
+zero_metric		10		subject_unresolved	0		chapter 10 has zero count for subject_unresolved
+zero_metric		10		subordination_unresolved	0		chapter 10 has zero count for subordination_unresolved
+zero_metric		11		finite_2S	0		chapter 11 has zero count for finite_2S
+zero_metric		11		subject_unresolved	0		chapter 11 has zero count for subject_unresolved
+zero_metric		11		subordination_unresolved	0		chapter 11 has zero count for subordination_unresolved
+zero_metric		12		finite_2S	0		chapter 12 has zero count for finite_2S
+zero_metric		12		subject_unresolved	0		chapter 12 has zero count for subject_unresolved
+zero_metric		12		subordination_unresolved	0		chapter 12 has zero count for subordination_unresolved
+zero_metric		13		finite_2S	0		chapter 13 has zero count for finite_2S
+zero_metric		13		finite_2P	0		chapter 13 has zero count for finite_2P
+zero_metric		13		subject_unresolved	0		chapter 13 has zero count for subject_unresolved
+zero_metric		13		subordination_unresolved	0		chapter 13 has zero count for subordination_unresolved
+zero_metric		14		finite_1P	0		chapter 14 has zero count for finite_1P
+zero_metric		14		subject_unresolved	0		chapter 14 has zero count for subject_unresolved
+zero_metric		14		subordination_unresolved	0		chapter 14 has zero count for subordination_unresolved
+zero_metric		15		subject_unresolved	0		chapter 15 has zero count for subject_unresolved
+zero_metric		15		subordination_unresolved	0		chapter 15 has zero count for subordination_unresolved
+zero_metric		16		finite_1P	0		chapter 16 has zero count for finite_1P
+zero_metric		16		subject_unresolved	0		chapter 16 has zero count for subject_unresolved
+zero_metric		16		subordination_unresolved	0		chapter 16 has zero count for subordination_unresolved

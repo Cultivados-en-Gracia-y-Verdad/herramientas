@@ -1,0 +1,852 @@
+BOOK	CH	VS	CLAUSE_ID	FINITE_GREEK	NODE_TYPE	PARENT_CLAUSE	RELATIONSHIP_TYPE	TREE_DEPTH	OWNERSHIP_CONFIDENCE	TREE_STATUS	SPAN_TEXT	NOTES
+1corintios	1	4	C1	εὐχαριστῶ	root-or-unresolved			0		unresolved-root	==εὐχαριστῶ== τῷ θεῷ μου πάντοτε περὶ ὑμῶν ἐπὶ τῇ χάριτι τοῦ θεοῦ τῇ δοθείσῃ ὑμῖν ἐν χριστῷ ἰησοῦ	no-confirmed-topology
+1corintios	1	5	C1	ἐπλουτίσθητε	root-or-unresolved			0		unresolved-root	ὅτι ἐν παντὶ ==ἐπλουτίσθητε== ἐν αὐτῷ ἐν παντὶ λόγῳ καὶ πάσῃ γνώσει	no-confirmed-topology
+1corintios	1	6	C1	ἐβεβαιώθη	root-or-unresolved			0		unresolved-root	καθὼς τὸ μαρτύριον τοῦ χριστοῦ ==ἐβεβαιώθη== ἐν ὑμῖν	no-confirmed-topology
+1corintios	1	8	C1	βεβαιώσει	root-or-unresolved			0		unresolved-root	ὃς καὶ ==βεβαιώσει== ὑμᾶς ἕως τέλους ἀνεγκλήτους ἐν τῇ ἡμέρᾳ τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	1	9	C1	ἐκλήθητε	root-or-unresolved			0		unresolved-root	πιστὸς ὁ θεὸς διʼ οὗ ==ἐκλήθητε== εἰς κοινωνίαν τοῦ υἱοῦ αὐτοῦ ἰησοῦ χριστοῦ τοῦ κυρίου ἡμῶν	no-confirmed-topology
+1corintios	1	10	C1	παρακαλῶ	root-parent			0		unresolved-root	==παρακαλῶ== δὲ ὑμᾶς ἀδελφοί διὰ τοῦ ὀνόματος τοῦ κυρίου ἡμῶν ἰησοῦ χριστοῦ	no-confirmed-topology
+1corintios	1	10	C2	λέγητε	leaf	C1	coordinate	1	medium	suggested	ἵνα τὸ αὐτὸ ==λέγητε== πάντες καὶ μὴ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	1	10	C3	ᾖ	root-or-unresolved			0		unresolved-root	==ᾖ== ἐν ὑμῖν σχίσματα	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	1	10	C4	ἦτε	root-or-unresolved			0		unresolved-root	==ἦτε== δὲ κατηρτισμένοι ἐν τῷ αὐτῷ νοῒ καὶ ἐν τῇ αὐτῇ γνώμῃ	no-confirmed-topology
+1corintios	1	11	C1	ἐδηλώθη	root-parent			0		unresolved-root	==ἐδηλώθη== γάρ μοι περὶ ὑμῶν ἀδελφοί μου ὑπὸ τῶν Χλόης	no-confirmed-topology
+1corintios	1	11	C2	εἰσιν	leaf	C1	subordinate	1	medium	suggested	ὅτι ἔριδες ἐν ὑμῖν ==εἰσιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	1	12	C1	λέγω	root-parent			0		unresolved-root	==λέγω== δὲ τοῦτο	no-confirmed-topology
+1corintios	1	12	C2	λέγει	leaf	C1	coordinate	1	medium	suggested	ὅτι ἕκαστος ὑμῶν ==λέγει== ἐγὼ μέν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	1	12	C3	εἰμι	root-or-unresolved			0		unresolved-root	==εἰμι== παύλου ἐγὼ δὲ ἀπολλῶ ἐγὼ δὲ κηφᾶ ἐγὼ δὲ χριστοῦ	no-confirmed-topology
+1corintios	1	13	C1	μεμέρισται	root-or-unresolved			0		unresolved-root	==μεμέρισται== ὁ χριστός μὴ παῦλος	no-confirmed-topology
+1corintios	1	13	C2	ἐσταυρώθη	root-parent			0		unresolved-root	==ἐσταυρώθη== ὑπὲρ ὑμῶν ἢ εἰς τὸ ὄνομα παύλου	no-confirmed-topology
+1corintios	1	13	C3	ἐβαπτίσθητε	leaf	C2	coordinate	1	medium	suggested	==ἐβαπτίσθητε==	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	1	14	C1	εὐχαριστῶ	root-parent			0		unresolved-root	==εὐχαριστῶ==	no-confirmed-topology
+1corintios	1	14	C2	ἐβάπτισα	leaf	C1	subordinate	1	medium	suggested	ὅτι οὐδένα ὑμῶν ==ἐβάπτισα== εἰ μὴ κρίσπον καὶ γάϊον	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	1	15	C1	εἴπῃ	root-parent			0		unresolved-root	ἵνα μή τις ==εἴπῃ==	no-confirmed-topology
+1corintios	1	15	C2	ἐβαπτίσθητε	leaf	C1	subordinate	1	medium	suggested	ὅτι εἰς τὸ ἐμὸν ὄνομα ==ἐβαπτίσθητε==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	1	16	C1	ἐβάπτισα	root-parent			0		unresolved-root	==ἐβάπτισα== δὲ καὶ τὸν στεφανᾶ οἶκον λοιπὸν οὐκ	no-confirmed-topology
+1corintios	1	16	C2	οἶδα	internal-node	C1	coordinate	1	medium	suggested	==οἶδα==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	1	16	C3	ἐβάπτισα	leaf	C2	subordinate	2	medium	suggested	εἴ τινα ἄλλον ==ἐβάπτισα==	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	1	17	C1	ἀπέστειλέν	root-parent			0		unresolved-root	οὐ γὰρ ==ἀπέστειλέν== με χριστὸς βαπτίζειν ἀλλὰ εὐαγγελίζεσθαι οὐκ ἐν σοφίᾳ λόγου	no-confirmed-topology
+1corintios	1	17	C2	κενωθῇ	leaf	C1	coordinate	1	medium	suggested	ἵνα μὴ ==κενωθῇ== ὁ σταυρὸς τοῦ χριστοῦ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	1	18	C1	ἐστίν	root-parent			0		unresolved-root	ὁ λόγος γὰρ ὁ τοῦ σταυροῦ τοῖς μὲν ἀπολλυμένοις μωρία ==ἐστίν== τοῖς δὲ σῳζομένοις ἡμῖν δύναμις θεοῦ	no-confirmed-topology
+1corintios	1	18	C2	ἐστιν	leaf	C1	coordinate	1	medium	suggested	==ἐστιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	1	19	C1	γέγραπται	root-parent			0		unresolved-root	==γέγραπται== γάρ	no-confirmed-topology
+1corintios	1	19	C2	ἀπολῶ	leaf	C1	subordinate	1	medium	suggested	==ἀπολῶ== τὴν σοφίαν τῶν σοφῶν καὶ τὴν σύνεσιν τῶν συνετῶν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	1	19	C3	ἀθετήσω	root-or-unresolved			0		unresolved-root	==ἀθετήσω==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	1	20	C1	ἐμώρανεν	root-or-unresolved			0		unresolved-root	ποῦ σοφός ποῦ γραμματεύς ποῦ συζητητὴς τοῦ αἰῶνος τούτου οὐχὶ ==ἐμώρανεν== ὁ θεὸς τὴν σοφίαν τοῦ κόσμου	no-confirmed-topology
+1corintios	1	21	C1	ἔγνω	root-or-unresolved			0		unresolved-root	ἐπειδὴ γὰρ ἐν τῇ σοφίᾳ τοῦ θεοῦ οὐκ ==ἔγνω== ὁ κόσμος διὰ τῆς σοφίας τὸν θεόν	no-confirmed-topology
+1corintios	1	21	C2	εὐδόκησεν	root-or-unresolved			0		unresolved-root	==εὐδόκησεν== ὁ θεὸς διὰ τῆς μωρίας τοῦ κηρύγματος σῶσαι τοὺς πιστεύοντας	no-confirmed-topology
+1corintios	1	22	C1	αἰτοῦσιν	root-or-unresolved			0		unresolved-root	ἐπειδὴ καὶ ἰουδαῖοι σημεῖα ==αἰτοῦσιν== καὶ ἕλληνες σοφίαν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	1	22	C2	ζητοῦσιν	root-or-unresolved			0		unresolved-root	==ζητοῦσιν==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	1	23	C1	κηρύσσομεν	root-or-unresolved			0		unresolved-root	ἡμεῖς δὲ ==κηρύσσομεν== χριστὸν ἐσταυρωμένον ἰουδαίοις μὲν σκάνδαλον ἔθνεσιν δὲ μωρίαν	no-confirmed-topology
+1corintios	1	25	C1	ἐστίν	root-or-unresolved			0		unresolved-root	ὅτι τὸ μωρὸν τοῦ θεοῦ σοφώτερον τῶν ἀνθρώπων ==ἐστίν== καὶ τὸ ἀσθενὲς τοῦ θεοῦ ἰσχυρότερον τῶν ἀνθρώπων	no-confirmed-topology
+1corintios	1	26	C1	βλέπετε	root-or-unresolved			0		unresolved-root	==βλέπετε== γὰρ τὴν κλῆσιν ὑμῶν ἀδελφοί ὅτι οὐ πολλοὶ σοφοὶ κατὰ σάρκα οὐ πολλοὶ δυνατοί οὐ πολλοὶ εὐγενεῖς	no-confirmed-topology
+1corintios	1	27	C1	ἐξελέξατο	root-parent			0		unresolved-root	ἀλλὰ τὰ μωρὰ τοῦ κόσμου ==ἐξελέξατο== ὁ θεός	no-confirmed-topology
+1corintios	1	27	C2	καταισχύνῃ	leaf	C1	subordinate	1	medium	suggested	ἵνα ==καταισχύνῃ== τοὺς σοφούς καὶ τὰ ἀσθενῆ τοῦ κόσμου	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	1	27	C3	ἐξελέξατο	root-parent			0		unresolved-root	==ἐξελέξατο== ὁ θεός	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	1	27	C4	καταισχύνῃ	leaf	C3	subordinate	1	medium	suggested	ἵνα ==καταισχύνῃ== τὰ ἰσχυρά	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	1	28	C1	ἐξελέξατο	root-parent			0		unresolved-root	καὶ τὰ ἀγενῆ τοῦ κόσμου καὶ τὰ ἐξουθενημένα ==ἐξελέξατο== ὁ θεός τὰ μὴ ὄντα	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	1	28	C2	καταργήσῃ	leaf	C1	subordinate	1	medium	suggested	ἵνα τὰ ὄντα ==καταργήσῃ==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	1	29	C1	καυχήσηται	root-or-unresolved			0		unresolved-root	ὅπως μὴ ==καυχήσηται== πᾶσα σὰρξ ἐνώπιον τοῦ θεοῦ	no-confirmed-topology
+1corintios	1	30	C1	ἐστε	root-or-unresolved			0		unresolved-root	ἐξ αὐτοῦ δὲ ὑμεῖς ==ἐστε== ἐν χριστῷ ἰησοῦ ὃς	no-confirmed-topology
+1corintios	1	30	C2	ἐγενήθη	root-or-unresolved			0		unresolved-root	==ἐγενήθη== σοφία ἡμῖν ἀπὸ θεοῦ δικαιοσύνη τε καὶ ἁγιασμὸς καὶ ἀπολύτρωσις	no-confirmed-topology
+1corintios	1	31	C1	γέγραπται	root-or-unresolved			0		unresolved-root	ἵνα καθὼς ==γέγραπται== ὁ καυχώμενος ἐν κυρίῳ	no-confirmed-topology
+1corintios	1	31	C2	καυχάσθω	root-or-unresolved			0		unresolved-root	==καυχάσθω==	no-confirmed-topology
+1corintios	2	1	C1	ἦλθον	root-or-unresolved			0		unresolved-root	κἀγὼ ἐλθὼν πρὸς ὑμᾶς ἀδελφοί ==ἦλθον== οὐ καθʼ ὑπεροχὴν λόγου ἢ σοφίας καταγγέλλων ὑμῖν τὸ μαρτύριον τοῦ θεοῦ	no-confirmed-topology
+1corintios	2	2	C1	ἔκρινά	root-or-unresolved			0		unresolved-root	οὐ γὰρ ==ἔκρινά== τι εἰδέναι ἐν ὑμῖν εἰ μὴ ἰησοῦν χριστὸν καὶ τοῦτον ἐσταυρωμένον	no-confirmed-topology
+1corintios	2	3	C1	ἐγενόμην	root-or-unresolved			0		unresolved-root	κἀγὼ ἐν ἀσθενείᾳ καὶ ἐν φόβῳ καὶ ἐν τρόμῳ πολλῷ ==ἐγενόμην== πρὸς ὑμᾶς	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	2	5	C1	ᾖ	root-or-unresolved			0		unresolved-root	ἵνα ἡ πίστις ὑμῶν μὴ ==ᾖ== ἐν σοφίᾳ ἀνθρώπων ἀλλʼ ἐν δυνάμει θεοῦ	no-confirmed-topology
+1corintios	2	6	C1	λαλοῦμεν	root-or-unresolved			0		unresolved-root	σοφίαν δὲ ==λαλοῦμεν== ἐν τοῖς τελείοις σοφίαν δὲ οὐ τοῦ αἰῶνος τούτου οὐδὲ τῶν ἀρχόντων τοῦ αἰῶνος τούτου τῶν καταργουμένων	no-confirmed-topology
+1corintios	2	7	C1	λαλοῦμεν	root-or-unresolved			0		unresolved-root	ἀλλὰ ==λαλοῦμεν== θεοῦ σοφίαν ἐν μυστηρίῳ τὴν ἀποκεκρυμμένην ἣν	no-confirmed-topology
+1corintios	2	7	C2	προώρισεν	root-or-unresolved			0		unresolved-root	==προώρισεν== ὁ θεὸς πρὸ τῶν αἰώνων εἰς δόξαν ἡμῶν	no-confirmed-topology
+1corintios	2	8	C1	ἔγνωκεν	root-parent			0		unresolved-root	ἣν οὐδεὶς τῶν ἀρχόντων τοῦ αἰῶνος τούτου ==ἔγνωκεν==	no-confirmed-topology
+1corintios	2	8	C2	ἔγνωσαν	leaf	C1	subordinate	1	medium	suggested	εἰ γὰρ ==ἔγνωσαν== οὐκ ἂν τὸν κύριον τῆς δόξης	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	2	8	C3	ἐσταύρωσαν	root-or-unresolved			0		unresolved-root	==ἐσταύρωσαν==	no-confirmed-topology
+1corintios	2	9	C1	γέγραπται	root-or-unresolved			0		unresolved-root	ἀλλὰ καθὼς ==γέγραπται== ἃ ὀφθαλμὸς οὐκ	no-confirmed-topology
+1corintios	2	9	C2	εἶδεν	root-or-unresolved			0		unresolved-root	==εἶδεν== καὶ οὖς οὐκ	no-confirmed-topology
+1corintios	2	9	C3	ἤκουσεν	root-or-unresolved			0		unresolved-root	==ἤκουσεν== καὶ ἐπὶ καρδίαν ἀνθρώπου οὐκ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	2	9	C4	ἀνέβη	root-or-unresolved			0		unresolved-root	==ἀνέβη== ὅσα	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	2	9	C5	ἡτοίμασεν	root-or-unresolved			0		unresolved-root	==ἡτοίμασεν== ὁ θεὸς τοῖς ἀγαπῶσιν αὐτόν	no-confirmed-topology
+1corintios	2	10	C1	ἀπεκάλυψεν	root-parent			0		unresolved-root	ἡμῖν γὰρ ==ἀπεκάλυψεν== ὁ θεὸς διὰ τοῦ πνεύματος τὸ γὰρ πνεῦμα πάντα	no-confirmed-topology
+1corintios	2	10	C2	ἐραυνᾷ	leaf	C1	subordinate	1	medium	suggested	==ἐραυνᾷ== καὶ τὰ βάθη τοῦ θεοῦ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	2	11	C1	οἶδεν	root-parent			0		unresolved-root	τίς γὰρ ==οἶδεν== ἀνθρώπων τὰ τοῦ ἀνθρώπου	no-confirmed-topology
+1corintios	2	11	C2	ἔγνωκεν	leaf	C1	subordinate	1	medium	suggested	εἰ μὴ τὸ πνεῦμα τοῦ ἀνθρώπου τὸ ἐν αὐτῷ οὕτως καὶ τὰ τοῦ θεοῦ οὐδεὶς ==ἔγνωκεν== εἰ μὴ τὸ πνεῦμα τοῦ θεοῦ	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	2	12	C1	ἐλάβομεν	root-parent			0		unresolved-root	ἡμεῖς δὲ οὐ τὸ πνεῦμα τοῦ κόσμου ==ἐλάβομεν== ἀλλὰ τὸ πνεῦμα τὸ ἐκ τοῦ θεοῦ	no-confirmed-topology
+1corintios	2	12	C2	εἰδῶμεν	leaf	C1	coordinate	1	medium	suggested	ἵνα ==εἰδῶμεν== τὰ ὑπὸ τοῦ θεοῦ χαρισθέντα ἡμῖν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	2	13	C1	λαλοῦμεν	root-or-unresolved			0		unresolved-root	ἃ καὶ ==λαλοῦμεν== οὐκ ἐν διδακτοῖς ἀνθρωπίνης σοφίας λόγοις ἀλλʼ ἐν διδακτοῖς πνεύματος πνευματικοῖς πνευματικὰ συγκρίνοντες	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	2	14	C1	δέχεται	root-parent			0		unresolved-root	ψυχικὸς δὲ ἄνθρωπος οὐ ==δέχεται== τὰ τοῦ πνεύματος τοῦ θεοῦ μωρία γὰρ αὐτῷ	no-confirmed-topology
+1corintios	2	14	C2	ἐστίν	leaf	C1	subordinate	1	medium	suggested	==ἐστίν== καὶ οὐ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	2	14	C3	δύναται	root-parent			0		unresolved-root	==δύναται== γνῶναι	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	2	14	C4	ἀνακρίνεται	leaf	C3	subordinate	1	medium	suggested	ὅτι πνευματικῶς ==ἀνακρίνεται==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	2	15	C1	ἀνακρίνει	root-parent			0		unresolved-root	ὁ δὲ πνευματικὸς ==ἀνακρίνει== τὰ πάντα αὐτὸς δὲ ὑπʼ οὐδενὸς	no-confirmed-topology
+1corintios	2	15	C2	ἀνακρίνεται	leaf	C1	coordinate	1	medium	suggested	==ἀνακρίνεται==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	2	16	C1	ἔγνω	root-or-unresolved			0		unresolved-root	τίς γὰρ ==ἔγνω== νοῦν κυρίου ὃς	no-confirmed-topology
+1corintios	2	16	C2	συμβιβάσει	root-parent			0		unresolved-root	==συμβιβάσει== αὐτόν ἡμεῖς δὲ νοῦν χριστοῦ	no-confirmed-topology
+1corintios	2	16	C3	ἔχομεν	leaf	C2	coordinate	1	medium	suggested	==ἔχομεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	1	C1	ἠδυνήθην	root-or-unresolved			0		unresolved-root	κἀγώ ἀδελφοί οὐκ ==ἠδυνήθην== λαλῆσαι ὑμῖν ὡς πνευματικοῖς ἀλλʼ ὡς σαρκίνοις ὡς νηπίοις ἐν χριστῷ	no-confirmed-topology
+1corintios	3	2	C1	ἐπότισα	root-parent			0		unresolved-root	γάλα ὑμᾶς ==ἐπότισα== οὐ βρῶμα οὔπω γὰρ	no-confirmed-topology
+1corintios	3	2	C2	ἐδύνασθε	internal-node	C1	subordinate	1	medium	suggested	==ἐδύνασθε== ἀλλʼ οὐδὲ ἔτι νῦν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	2	C3	δύνασθε	leaf	C2	coordinate	2	medium	suggested	==δύνασθε==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	3	C1	ἐστε	root-parent			0		unresolved-root	ἔτι γὰρ σαρκικοί ==ἐστε== ὅπου γὰρ ἐν ὑμῖν ζῆλος καὶ ἔρις οὐχὶ σαρκικοί	no-confirmed-topology
+1corintios	3	3	C2	ἐστε	leaf	C1	subordinate	1	medium	suggested	==ἐστε== καὶ κατὰ ἄνθρωπον	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	3	3	C3	περιπατεῖτε	root-or-unresolved			0		unresolved-root	==περιπατεῖτε==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	3	4	C1	λέγῃ	root-or-unresolved			0		unresolved-root	ὅταν γὰρ ==λέγῃ== τις ἐγὼ μέν	no-confirmed-topology
+1corintios	3	4	C2	εἰμι	root-parent			0		unresolved-root	==εἰμι== παύλου ἕτερος δέ ἐγὼ ἀπολλῶ οὐκ ἄνθρωποί	no-confirmed-topology
+1corintios	3	4	C3	ἐστε	leaf	C2	coordinate	1	medium	suggested	==ἐστε==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	5	C1	ἐστιν	root-parent			0		unresolved-root	τί οὖν ==ἐστιν== ἀπολλῶς τί δέ	no-confirmed-topology
+1corintios	3	5	C2	ἐστιν	leaf	C1	coordinate	1	medium	suggested	==ἐστιν== παῦλος διάκονοι διʼ ὧν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	5	C3	ἐπιστεύσατε	root-parent			0		unresolved-root	==ἐπιστεύσατε== καὶ ἑκάστῳ	no-confirmed-topology
+1corintios	3	5	C4	ἔδωκεν	leaf	C3	subordinate	1	medium	suggested	ὡς ὁ κύριος ==ἔδωκεν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	3	6	C1	ἐφύτευσα	root-or-unresolved			0		unresolved-root	ἐγὼ ==ἐφύτευσα== ἀπολλῶς	no-confirmed-topology
+1corintios	3	6	C2	ἐπότισεν	root-parent			0		unresolved-root	==ἐπότισεν== ἀλλὰ ὁ θεὸς	no-confirmed-topology
+1corintios	3	6	C3	ηὔξανεν	leaf	C2	coordinate	1	medium	suggested	==ηὔξανεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	7	C1	ἐστίν	root-or-unresolved			0		unresolved-root	ὥστε οὔτε ὁ φυτεύων ==ἐστίν== τι οὔτε ὁ ποτίζων ἀλλʼ ὁ αὐξάνων θεός	no-confirmed-topology
+1corintios	3	8	C1	εἰσιν	root-parent			0		unresolved-root	ὁ φυτεύων δὲ καὶ ὁ ποτίζων ἕν ==εἰσιν== ἕκαστος δὲ τὸν ἴδιον μισθὸν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	3	8	C2	λήμψεται	leaf	C1	coordinate	1	medium	suggested	==λήμψεται== κατὰ τὸν ἴδιον κόπον	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	9	C1	ἐσμεν	root-or-unresolved			0		unresolved-root	θεοῦ γάρ ==ἐσμεν== συνεργοί θεοῦ γεώργιον θεοῦ οἰκοδομή	no-confirmed-topology
+1corintios	3	9	C2	ἐστε	root-or-unresolved			0		unresolved-root	==ἐστε==	no-confirmed-topology
+1corintios	3	10	C1	ἔθηκα	root-parent			0		unresolved-root	κατὰ τὴν χάριν τοῦ θεοῦ τὴν δοθεῖσάν μοι ὡς σοφὸς ἀρχιτέκτων θεμέλιον ==ἔθηκα== ἄλλος δὲ	no-confirmed-topology
+1corintios	3	10	C2	ἐποικοδομεῖ	internal-node	C1	coordinate	1	medium	suggested	==ἐποικοδομεῖ== ἕκαστος δὲ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	10	C3	βλεπέτω	leaf	C2	coordinate	2	medium	suggested	==βλεπέτω== πῶς	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	10	C4	ἐποικοδομεῖ	root-or-unresolved			0		unresolved-root	==ἐποικοδομεῖ==	no-confirmed-topology
+1corintios	3	11	C1	δύναται	root-or-unresolved			0		unresolved-root	θεμέλιον γὰρ ἄλλον οὐδεὶς ==δύναται== θεῖναι παρὰ τὸν κείμενον ὅς	no-confirmed-topology
+1corintios	3	11	C2	ἐστιν	root-or-unresolved			0		unresolved-root	==ἐστιν== ἰησοῦς χριστός	no-confirmed-topology
+1corintios	3	12	C1	ἐποικοδομεῖ	root-or-unresolved			0		unresolved-root	εἰ δέ τις ==ἐποικοδομεῖ== ἐπὶ τὸν θεμέλιον χρυσόν ἄργυρον λίθους τιμίους ξύλα χόρτον καλάμην	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	3	13	C1	γενήσεται	root-parent			0		unresolved-root	ἑκάστου τὸ ἔργον φανερὸν ==γενήσεται== ἡ γὰρ ἡμέρα	no-confirmed-topology
+1corintios	3	13	C2	δηλώσει	internal-node	C1	subordinate	1	medium	suggested	==δηλώσει==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	13	C3	ἀποκαλύπτεται	leaf	C2	subordinate	2	medium	suggested	ὅτι ἐν πυρὶ ==ἀποκαλύπτεται== καὶ ἑκάστου τὸ ἔργον ὁποῖόν	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	3	13	C4	ἐστιν	root-or-unresolved			0		unresolved-root	==ἐστιν== τὸ πῦρ αὐτὸ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	3	13	C5	δοκιμάσει	root-or-unresolved			0		unresolved-root	==δοκιμάσει==	no-confirmed-topology
+1corintios	3	14	C1	μενεῖ	root-or-unresolved			0		unresolved-root	εἴ τινος τὸ ἔργον ==μενεῖ== ὃ	no-confirmed-topology
+1corintios	3	14	C2	ἐποικοδόμησεν	root-or-unresolved			0		unresolved-root	==ἐποικοδόμησεν== μισθὸν	no-confirmed-topology
+1corintios	3	14	C3	λήμψεται	root-or-unresolved			0		unresolved-root	==λήμψεται==	no-confirmed-topology
+1corintios	3	15	C1	κατακαήσεται	root-or-unresolved			0		unresolved-root	εἴ τινος τὸ ἔργον ==κατακαήσεται==	no-confirmed-topology
+1corintios	3	15	C2	ζημιωθήσεται	root-parent			0		unresolved-root	==ζημιωθήσεται== αὐτὸς δὲ	no-confirmed-topology
+1corintios	3	15	C3	σωθήσεται	leaf	C2	coordinate	1	medium	suggested	==σωθήσεται== οὕτως δὲ ὡς διὰ πυρός	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	16	C1	οἴδατε	root-parent			0		unresolved-root	οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	3	16	C2	ἐστε	leaf	C1	subordinate	1	medium	suggested	ὅτι ναὸς θεοῦ ==ἐστε== καὶ τὸ πνεῦμα τοῦ θεοῦ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	3	16	C3	οἰκεῖ	root-or-unresolved			0		unresolved-root	==οἰκεῖ== ἐν ὑμῖν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	3	17	C1	φθείρει	root-or-unresolved			0		unresolved-root	εἴ τις τὸν ναὸν τοῦ θεοῦ ==φθείρει==	no-confirmed-topology
+1corintios	3	17	C2	φθερεῖ	root-parent			0		unresolved-root	==φθερεῖ== τοῦτον ὁ θεός ὁ γὰρ ναὸς τοῦ θεοῦ ἅγιός	no-confirmed-topology
+1corintios	3	17	C3	ἐστιν	leaf	C2	subordinate	1	medium	suggested	==ἐστιν== οἵτινές	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	3	17	C4	ἐστε	root-or-unresolved			0		unresolved-root	==ἐστε== ὑμεῖς	no-confirmed-topology
+1corintios	3	18	C1	ἐξαπατάτω	root-parent			0		unresolved-root	μηδεὶς ἑαυτὸν ==ἐξαπατάτω==	no-confirmed-topology
+1corintios	3	18	C2	δοκεῖ	leaf	C1	subordinate	1	medium	suggested	εἴ τις ==δοκεῖ== σοφὸς εἶναι ἐν ὑμῖν ἐν τῷ αἰῶνι τούτῳ μωρὸς	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	3	18	C3	γενέσθω	root-parent			0		unresolved-root	==γενέσθω==	no-confirmed-topology
+1corintios	3	18	C4	γένηται	leaf	C3	subordinate	1	medium	suggested	ἵνα ==γένηται== σοφός	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	3	19	C1	ἐστιν	root-or-unresolved			0		unresolved-root	ἡ γὰρ σοφία τοῦ κόσμου τούτου μωρία παρὰ τῷ θεῷ ==ἐστιν==	no-confirmed-topology
+1corintios	3	19	C2	γέγραπται	root-or-unresolved			0		unresolved-root	==γέγραπται== γάρ ὁ δρασσόμενος τοὺς σοφοὺς ἐν τῇ πανουργίᾳ αὐτῶν	no-confirmed-topology
+1corintios	3	20	C1	γινώσκει	root-parent			0		unresolved-root	καὶ πάλιν κύριος ==γινώσκει== τοὺς διαλογισμοὺς τῶν σοφῶν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	3	20	C2	εἰσὶν	leaf	C1	subordinate	1	medium	suggested	ὅτι ==εἰσὶν== μάταιοι	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	3	21	C1	καυχάσθω	root-parent			0		unresolved-root	ὥστε μηδεὶς ==καυχάσθω== ἐν ἀνθρώποις πάντα γὰρ ὑμῶν	no-confirmed-topology
+1corintios	3	21	C2	ἐστιν	leaf	C1	subordinate	1	medium	suggested	==ἐστιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	1	C1	λογιζέσθω	root-or-unresolved			0		unresolved-root	οὕτως ἡμᾶς ==λογιζέσθω== ἄνθρωπος ὡς ὑπηρέτας χριστοῦ καὶ οἰκονόμους μυστηρίων θεοῦ	no-confirmed-topology
+1corintios	4	2	C1	ζητεῖται	root-parent			0		unresolved-root	ὧδε λοιπὸν ==ζητεῖται== ἐν τοῖς οἰκονόμοις	no-confirmed-topology
+1corintios	4	2	C2	εὑρεθῇ	leaf	C1	subordinate	1	medium	suggested	ἵνα πιστός τις ==εὑρεθῇ==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	4	3	C1	ἐστιν	root-parent			0		unresolved-root	ἐμοὶ δὲ εἰς ἐλάχιστόν ==ἐστιν==	no-confirmed-topology
+1corintios	4	3	C2	ἀνακριθῶ	internal-node	C1	subordinate	1	medium	suggested	ἵνα ὑφʼ ὑμῶν ==ἀνακριθῶ== ἢ ὑπὸ ἀνθρωπίνης ἡμέρας ἀλλʼ οὐδὲ ἐμαυτὸν	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	4	3	C3	ἀνακρίνω	leaf	C2	coordinate	2	medium	suggested	==ἀνακρίνω==	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	4	C1	σύνοιδα	root-parent			0		unresolved-root	οὐδὲν γὰρ ἐμαυτῷ ==σύνοιδα== ἀλλʼ οὐκ ἐν τούτῳ	no-confirmed-topology
+1corintios	4	4	C2	δεδικαίωμαι	internal-node	C1	coordinate	1	medium	suggested	==δεδικαίωμαι== ὁ δὲ ἀνακρίνων με κύριός	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	4	C3	ἐστιν	leaf	C2	coordinate	2	medium	suggested	==ἐστιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	5	C1	κρίνετε	root-parent			0		unresolved-root	ὥστε μὴ πρὸ καιροῦ τι ==κρίνετε== ἕως ἂν	no-confirmed-topology
+1corintios	4	5	C2	ἔλθῃ	leaf	C1	subordinate	1	medium	suggested	==ἔλθῃ== ὁ κύριος ὃς καὶ	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	4	5	C3	φωτίσει	root-or-unresolved			0		unresolved-root	==φωτίσει== τὰ κρυπτὰ τοῦ σκότους καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	5	C4	φανερώσει	root-or-unresolved			0		unresolved-root	==φανερώσει== τὰς βουλὰς τῶν καρδιῶν καὶ τότε ὁ ἔπαινος	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	5	C5	γενήσεται	root-or-unresolved			0		unresolved-root	==γενήσεται== ἑκάστῳ ἀπὸ τοῦ θεοῦ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	6	C1	μετεσχημάτισα	root-parent			0		unresolved-root	ταῦτα δέ ἀδελφοί ==μετεσχημάτισα== εἰς ἐμαυτὸν καὶ ἀπολλῶν διʼ ὑμᾶς	no-confirmed-topology
+1corintios	4	6	C2	μάθητε	leaf	C1	subordinate	1	medium	suggested	ἵνα ἐν ἡμῖν ==μάθητε== τό μὴ ὑπὲρ ἃ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	4	6	C3	γέγραπται	root-parent			0		unresolved-root	==γέγραπται==	no-confirmed-topology
+1corintios	4	6	C4	φυσιοῦσθε	leaf	C3	subordinate	1	medium	suggested	ἵνα μὴ εἷς ὑπὲρ τοῦ ἑνὸς ==φυσιοῦσθε== κατὰ τοῦ ἑτέρου	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	4	7	C1	διακρίνει	root-parent			0		unresolved-root	τίς γάρ σε ==διακρίνει== τί δὲ	no-confirmed-topology
+1corintios	4	7	C2	ἔχεις	leaf	C1	coordinate	1	medium	suggested	==ἔχεις== ὃ οὐκ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	7	C3	ἔλαβες	root-or-unresolved			0		unresolved-root	==ἔλαβες==	no-confirmed-topology
+1corintios	4	7	C4	ἔλαβες	root-or-unresolved			0		unresolved-root	εἰ δὲ καὶ ==ἔλαβες== τί	no-confirmed-topology; parallel-conditional-structure-detected; parallel-coordinate-structure-detected
+1corintios	4	7	C5	καυχᾶσαι	root-or-unresolved			0		unresolved-root	==καυχᾶσαι== ὡς μὴ λαβών	no-confirmed-topology
+1corintios	4	8	C1	ἐστέ	root-or-unresolved			0		unresolved-root	ἤδη κεκορεσμένοι ==ἐστέ== ἤδη	no-confirmed-topology
+1corintios	4	8	C2	ἐπλουτήσατε	root-or-unresolved			0		unresolved-root	==ἐπλουτήσατε== χωρὶς ἡμῶν	no-confirmed-topology
+1corintios	4	8	C3	ἐβασιλεύσατε	root-or-unresolved			0		unresolved-root	==ἐβασιλεύσατε== καὶ ὄφελόν γε	no-confirmed-topology
+1corintios	4	8	C4	ἐβασιλεύσατε	root-parent			0		unresolved-root	==ἐβασιλεύσατε==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	8	C5	συμβασιλεύσωμεν	leaf	C4	subordinate	1	medium	suggested	ἵνα καὶ ἡμεῖς ὑμῖν ==συμβασιλεύσωμεν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	4	9	C1	δοκῶ	root-parent			0		unresolved-root	==δοκῶ== γάρ ὁ θεὸς ἡμᾶς τοὺς ἀποστόλους ἐσχάτους	no-confirmed-topology
+1corintios	4	9	C2	ἀπέδειξεν	internal-node	C1	subordinate	1	medium	suggested	==ἀπέδειξεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	9	C3	ἐγενήθημεν	leaf	C2	subordinate	2	medium	suggested	ὡς ἐπιθανατίους ὅτι θέατρον ==ἐγενήθημεν== τῷ κόσμῳ καὶ ἀγγέλοις καὶ ἀνθρώποις	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	4	11	C1	πεινῶμεν	root-or-unresolved			0		unresolved-root	ἄχρι τῆς ἄρτι ὥρας καὶ ==πεινῶμεν== καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	11	C2	διψῶμεν	root-or-unresolved			0		unresolved-root	==διψῶμεν== καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	11	C3	γυμνιτεύομεν	root-or-unresolved			0		unresolved-root	==γυμνιτεύομεν== καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	11	C4	κολαφιζόμεθα	root-or-unresolved			0		unresolved-root	==κολαφιζόμεθα== καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	11	C5	ἀστατοῦμεν	root-or-unresolved			0		unresolved-root	==ἀστατοῦμεν==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	12	C1	κοπιῶμεν	root-or-unresolved			0		unresolved-root	καὶ ==κοπιῶμεν== ἐργαζόμενοι ταῖς ἰδίαις χερσίν λοιδορούμενοι	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	12	C2	εὐλογοῦμεν	root-or-unresolved			0		unresolved-root	==εὐλογοῦμεν== διωκόμενοι	no-confirmed-topology
+1corintios	4	12	C3	ἀνεχόμεθα	root-or-unresolved			0		unresolved-root	==ἀνεχόμεθα==	no-confirmed-topology
+1corintios	4	13	C1	παρακαλοῦμεν	root-parent			0		unresolved-root	δυσφημούμενοι ==παρακαλοῦμεν==	no-confirmed-topology
+1corintios	4	13	C2	ἐγενήθημεν	leaf	C1	subordinate	1	medium	suggested	ὡς περικαθάρματα τοῦ κόσμου ==ἐγενήθημεν== πάντων περίψημα ἕως ἄρτι	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	4	14	C1	γράφω	root-or-unresolved			0		unresolved-root	οὐκ ἐντρέπων ὑμᾶς ==γράφω== ταῦτα ἀλλʼ ὡς τέκνα μου ἀγαπητὰ νουθετῶν	no-confirmed-topology
+1corintios	4	15	C1	ἔχητε	root-parent			0		unresolved-root	ἐὰν γὰρ μυρίους παιδαγωγοὺς ==ἔχητε== ἐν χριστῷ ἀλλʼ οὐ πολλοὺς πατέρας ἐν γὰρ χριστῷ ἰησοῦ διὰ τοῦ εὐαγγελίου ἐγὼ ὑμᾶς	no-confirmed-topology
+1corintios	4	15	C2	ἐγέννησα	leaf	C1	coordinate	1	medium	suggested	==ἐγέννησα==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	16	C1	παρακαλῶ	root-parent			0		unresolved-root	==παρακαλῶ== οὖν ὑμᾶς μιμηταί μου	no-confirmed-topology
+1corintios	4	16	C2	γίνεσθε	leaf	C1	coordinate	1	medium	suggested	==γίνεσθε==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	17	C1	ἔπεμψα	root-or-unresolved			0		unresolved-root	διὰ τοῦτο ==ἔπεμψα== ὑμῖν τιμόθεον ὅς	no-confirmed-topology
+1corintios	4	17	C2	ἐστίν	root-or-unresolved			0		unresolved-root	==ἐστίν== μου τέκνον ἀγαπητὸν καὶ πιστὸν ἐν κυρίῳ ὃς ὑμᾶς	no-confirmed-topology
+1corintios	4	17	C3	ἀναμνήσει	root-parent			0		unresolved-root	==ἀναμνήσει== τὰς ὁδούς μου τὰς ἐν χριστῷ ἰησοῦ καθὼς πανταχοῦ ἐν πάσῃ ἐκκλησίᾳ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	17	C4	διδάσκω	leaf	C3	subordinate	1	medium	suggested	==διδάσκω==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	4	18	C1	ἐφυσιώθησάν	root-or-unresolved			0		unresolved-root	ὡς μὴ ἐρχομένου δέ μου πρὸς ὑμᾶς ==ἐφυσιώθησάν== τινες	no-confirmed-topology
+1corintios	4	19	C1	ἐλεύσομαι	root-parent			0		unresolved-root	==ἐλεύσομαι== δὲ ταχέως πρὸς ὑμᾶς	no-confirmed-topology
+1corintios	4	19	C2	θελήσῃ	leaf	C1	coordinate	1	medium	suggested	ἐὰν ὁ κύριος ==θελήσῃ== καὶ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	4	19	C3	γνώσομαι	root-or-unresolved			0		unresolved-root	==γνώσομαι== οὐ τὸν λόγον τῶν πεφυσιωμένων ἀλλὰ τὴν δύναμιν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	4	21	C1	θέλετε	root-or-unresolved			0		unresolved-root	τί ==θέλετε== ἐν ῥάβδῳ	no-confirmed-topology
+1corintios	4	21	C2	ἔλθω	root-or-unresolved			0		unresolved-root	==ἔλθω== πρὸς ὑμᾶς ἢ ἐν ἀγάπῃ πνεύματί τε πραΰτητος	no-confirmed-topology
+1corintios	5	1	C1	ἀκούεται	root-or-unresolved			0		unresolved-root	ὅλως ==ἀκούεται== ἐν ὑμῖν πορνεία καὶ τοιαύτη πορνεία ἥτις οὐδὲ ἐν τοῖς ἔθνεσιν ὥστε γυναῖκά τινα τοῦ πατρὸς ἔχειν	no-confirmed-topology
+1corintios	5	2	C1	ἐστέ	root-or-unresolved			0		unresolved-root	καὶ ὑμεῖς πεφυσιωμένοι ==ἐστέ== καὶ οὐχὶ μᾶλλον	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	5	2	C2	ἐπενθήσατε	root-parent			0		unresolved-root	==ἐπενθήσατε==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	5	2	C3	ἀρθῇ	leaf	C2	subordinate	1	medium	suggested	ἵνα ==ἀρθῇ== ἐκ μέσου ὑμῶν ὁ τὸ ἔργον τοῦτο ποιήσας	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	5	3	C1	κέκρικα	root-or-unresolved			0		unresolved-root	ἐγὼ μὲν γάρ ἀπὼν τῷ σώματι παρὼν δὲ τῷ πνεύματι ἤδη ==κέκρικα== ὡς παρὼν τὸν οὕτως τοῦτο κατεργασάμενον	no-confirmed-topology
+1corintios	5	5	C1	σωθῇ	root-or-unresolved			0		unresolved-root	παραδοῦναι τὸν τοιοῦτον τῷ σατανᾷ εἰς ὄλεθρον τῆς σαρκός ἵνα τὸ πνεῦμα ==σωθῇ== ἐν τῇ ἡμέρᾳ τοῦ κυρίου	no-confirmed-topology
+1corintios	5	6	C1	οἴδατε	root-parent			0		unresolved-root	οὐ καλὸν τὸ καύχημα ὑμῶν οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	5	6	C2	ζυμοῖ	leaf	C1	subordinate	1	medium	suggested	ὅτι μικρὰ ζύμη ὅλον τὸ φύραμα ==ζυμοῖ==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	5	7	C1	ἐκκαθάρατε	root-parent			0		unresolved-root	==ἐκκαθάρατε== τὴν παλαιὰν ζύμην	no-confirmed-topology
+1corintios	5	7	C2	ἦτε	internal-node	C1	subordinate	1	medium	suggested	ἵνα ==ἦτε== νέον φύραμα καθώς	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	5	7	C3	ἐστε	internal-node	C2	subordinate	2	medium	suggested	==ἐστε== ἄζυμοι καὶ γὰρ τὸ πάσχα ἡμῶν	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	5	7	C4	ἐτύθη	leaf	C3	subordinate	3	medium	suggested	==ἐτύθη== χριστός	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	5	8	C1	ἑορτάζωμεν	root-or-unresolved			0		unresolved-root	ὥστε ==ἑορτάζωμεν== μὴ ἐν ζύμῃ παλαιᾷ μηδὲ ἐν ζύμῃ κακίας καὶ πονηρίας ἀλλʼ ἐν ἀζύμοις εἰλικρινείας καὶ ἀληθείας	no-confirmed-topology
+1corintios	5	9	C1	ἔγραψα	root-or-unresolved			0		unresolved-root	==ἔγραψα== ὑμῖν ἐν τῇ ἐπιστολῇ μὴ συναναμίγνυσθαι πόρνοις	no-confirmed-topology
+1corintios	5	10	C1	ὠφείλετε	root-or-unresolved			0		unresolved-root	οὐ πάντως τοῖς πόρνοις τοῦ κόσμου τούτου ἢ τοῖς πλεονέκταις καὶ ἅρπαξιν ἢ εἰδωλολάτραις ἐπεὶ ==ὠφείλετε== ἄρα ἐκ τοῦ κόσμου ἐξελθεῖν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	5	11	C1	ἔγραψα	root-parent			0		unresolved-root	νῦν δὲ ==ἔγραψα== ὑμῖν μὴ συναναμίγνυσθαι	no-confirmed-topology
+1corintios	5	11	C2	ᾖ	leaf	C1	subordinate	1	medium	suggested	ἐάν τις ἀδελφὸς ὀνομαζόμενος ==ᾖ== πόρνος ἢ πλεονέκτης ἢ εἰδωλολάτρης ἢ λοίδορος ἢ μέθυσος ἢ ἅρπαξ τῷ τοιούτῳ μηδὲ συνεσθίειν	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	5	12	C1	κρίνετε	root-or-unresolved			0		unresolved-root	τί γάρ μοι τοὺς ἔξω κρίνειν οὐχὶ τοὺς ἔσω ὑμεῖς ==κρίνετε==	no-confirmed-topology
+1corintios	5	13	C1	κρίνει;	root-or-unresolved			0		unresolved-root	τοὺς δὲ ἔξω ὁ θεὸς ==κρίνει;==	no-confirmed-topology
+1corintios	5	13	C2	ἐξάρατε	root-or-unresolved			0		unresolved-root	==ἐξάρατε== τὸν πονηρὸν ἐξ ὑμῶν αὐτῶν	no-confirmed-topology
+1corintios	6	1	C1	τολμᾷ	root-or-unresolved			0		unresolved-root	==τολμᾷ== τις ὑμῶν πρᾶγμα ἔχων πρὸς τὸν ἕτερον κρίνεσθαι ἐπὶ τῶν ἀδίκων καὶ οὐχὶ ἐπὶ τῶν ἁγίων	no-confirmed-topology
+1corintios	6	2	C1	οἴδατε	root-parent			0		unresolved-root	ἢ οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	6	2	C2	κρινοῦσιν	internal-node	C1	subordinate	1	medium	suggested	ὅτι οἱ ἅγιοι τὸν κόσμον ==κρινοῦσιν== καὶ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	6	2	C3	κρίνεται	leaf	C2	subordinate	2	medium	suggested	εἰ ἐν ὑμῖν ==κρίνεται== ὁ κόσμος ἀνάξιοί	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	6	2	C4	ἐστε	root-or-unresolved			0		unresolved-root	==ἐστε== κριτηρίων ἐλαχίστων	no-confirmed-topology
+1corintios	6	3	C1	οἴδατε	root-parent			0		unresolved-root	οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	6	3	C2	κρινοῦμεν	leaf	C1	subordinate	1	medium	suggested	ὅτι ἀγγέλους ==κρινοῦμεν== μήτιγε βιωτικά	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	6	4	C1	ἔχητε	root-or-unresolved			0		unresolved-root	βιωτικὰ μὲν οὖν κριτήρια ἐὰν ==ἔχητε== τοὺς ἐξουθενημένους ἐν τῇ ἐκκλησίᾳ τούτους	no-confirmed-topology
+1corintios	6	4	C2	καθίζετε	root-or-unresolved			0		unresolved-root	==καθίζετε==	no-confirmed-topology
+1corintios	6	5	C1	λέγω	root-or-unresolved			0		unresolved-root	πρὸς ἐντροπὴν ὑμῖν ==λέγω== οὕτως οὐκ	no-confirmed-topology
+1corintios	6	5	C2	ἔνι	root-or-unresolved			0		unresolved-root	==ἔνι== ἐν ὑμῖν οὐδεὶς σοφὸς ὃς	no-confirmed-topology
+1corintios	6	5	C3	δυνήσεται	root-or-unresolved			0		unresolved-root	==δυνήσεται== διακρῖναι ἀνὰ μέσον τοῦ ἀδελφοῦ αὐτοῦ	no-confirmed-topology
+1corintios	6	6	C1	κρίνεται	root-or-unresolved			0		unresolved-root	ἀλλὰ ἀδελφὸς μετὰ ἀδελφοῦ ==κρίνεται== καὶ τοῦτο ἐπὶ ἀπίστων	no-confirmed-topology
+1corintios	6	7	C1	ἐστιν	root-parent			0		unresolved-root	ἤδη μὲν οὖν ὅλως ἥττημα ὑμῖν ==ἐστιν==	no-confirmed-topology
+1corintios	6	7	C2	ἔχετε	leaf	C1	subordinate	1	medium	suggested	ὅτι κρίματα ==ἔχετε== μεθʼ ἑαυτῶν διὰ τί οὐχὶ μᾶλλον	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	6	7	C3	ἀδικεῖσθε	root-or-unresolved			0		unresolved-root	==ἀδικεῖσθε== διὰ τί οὐχὶ μᾶλλον	no-confirmed-topology
+1corintios	6	7	C4	ἀποστερεῖσθε	root-or-unresolved			0		unresolved-root	==ἀποστερεῖσθε==	no-confirmed-topology
+1corintios	6	8	C1	ἀδικεῖτε	root-or-unresolved			0		unresolved-root	ἀλλὰ ὑμεῖς ==ἀδικεῖτε== καὶ	no-confirmed-topology
+1corintios	6	8	C2	ἀποστερεῖτε	root-or-unresolved			0		unresolved-root	==ἀποστερεῖτε== καὶ τοῦτο ἀδελφούς	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	6	9	C1	οἴδατε	root-parent			0		unresolved-root	ἢ οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	6	9	C2	κληρονομήσουσιν	leaf	C1	subordinate	1	medium	suggested	ὅτι ἄδικοι θεοῦ βασιλείαν οὐ ==κληρονομήσουσιν== μὴ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	6	9	C3	πλανᾶσθε	root-or-unresolved			0		unresolved-root	==πλανᾶσθε== οὔτε πόρνοι οὔτε εἰδωλολάτραι οὔτε μοιχοὶ οὔτε μαλακοὶ οὔτε ἀρσενοκοῖται	no-confirmed-topology
+1corintios	6	10	C1	κληρονομήσουσιν	root-or-unresolved			0		unresolved-root	οὔτε κλέπται οὔτε πλεονέκται οὐ μέθυσοι οὐ λοίδοροι οὐχ ἅρπαγες βασιλείαν θεοῦ ==κληρονομήσουσιν==	no-confirmed-topology
+1corintios	6	11	C1	ἦτε	root-parent			0		unresolved-root	καὶ ταῦτά τινες ==ἦτε== ἀλλὰ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	6	11	C2	ἀπελούσασθε	internal-node	C1	coordinate	1	medium	suggested	==ἀπελούσασθε== ἀλλὰ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	6	11	C3	ἡγιάσθητε	internal-node	C2	coordinate	2	medium	suggested	==ἡγιάσθητε== ἀλλὰ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	6	11	C4	ἐδικαιώθητε	leaf	C3	coordinate	3	medium	suggested	==ἐδικαιώθητε== ἐν τῷ ὀνόματι τοῦ κυρίου ἰησοῦ καὶ ἐν τῷ πνεύματι τοῦ θεοῦ ἡμῶν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	6	12	C1	ἔξεστιν	root-parent			0		unresolved-root	πάντα μοι ==ἔξεστιν== ἀλλʼ οὐ πάντα	no-confirmed-topology
+1corintios	6	12	C2	συμφέρει	leaf	C1	coordinate	1	medium	suggested	==συμφέρει== πάντα μοι	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	6	12	C3	ἔξεστιν	root-parent			0		unresolved-root	==ἔξεστιν== ἀλλʼ οὐκ ἐγὼ	no-confirmed-topology
+1corintios	6	12	C4	ἐξουσιασθήσομαι	leaf	C3	coordinate	1	medium	suggested	==ἐξουσιασθήσομαι== ὑπό τινος	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	6	13	C1	καταργήσει	root-or-unresolved			0		unresolved-root	τὰ βρώματα τῇ κοιλίᾳ καὶ ἡ κοιλία τοῖς βρώμασιν ὁ δὲ θεὸς καὶ ταύτην καὶ ταῦτα ==καταργήσει== τὸ δὲ σῶμα οὐ τῇ πορνείᾳ ἀλλὰ τῷ κυρίῳ καὶ ὁ κύριος τῷ σώματι	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	6	14	C1	ἤγειρεν	root-or-unresolved			0		unresolved-root	ὁ δὲ θεὸς καὶ τὸν κύριον ==ἤγειρεν== καὶ ἡμᾶς	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	6	14	C2	ἐξεγερεῖ	root-or-unresolved			0		unresolved-root	==ἐξεγερεῖ== διὰ τῆς δυνάμεως αὐτοῦ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	6	15	C1	οἴδατε	root-parent			0		unresolved-root	οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	6	15	C2	ἐστιν	internal-node	C1	subordinate	1	medium	suggested	ὅτι τὰ σώματα ὑμῶν μέλη χριστοῦ ==ἐστιν== ἄρας οὖν τὰ μέλη τοῦ χριστοῦ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	6	15	C3	ποιήσω	leaf	C2	coordinate	2	medium	suggested	==ποιήσω== πόρνης μέλη μὴ γένοιτο	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	6	16	C1	οἴδατε	root-parent			0		unresolved-root	ἢ οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	6	16	C2	ἐστιν	leaf	C1	subordinate	1	medium	suggested	ὅτι ὁ κολλώμενος τῇ πόρνῃ ἓν σῶμά ==ἐστιν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	6	16	C3	ἔσονται	root-parent			0		unresolved-root	==ἔσονται== γάρ	no-confirmed-topology
+1corintios	6	16	C4	φησίν	leaf	C3	subordinate	1	medium	suggested	==φησίν== οἱ δύο εἰς σάρκα μίαν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	6	17	C1	ἐστιν	root-or-unresolved			0		unresolved-root	ὁ δὲ κολλώμενος τῷ κυρίῳ ἓν πνεῦμά ==ἐστιν==	no-confirmed-topology
+1corintios	6	18	C1	φεύγετε	root-parent			0		unresolved-root	==φεύγετε== τὴν πορνείαν πᾶν ἁμάρτημα ὃ	no-confirmed-topology
+1corintios	6	18	C2	ποιήσῃ	leaf	C1	subordinate	1	medium	suggested	ἐὰν ==ποιήσῃ== ἄνθρωπος ἐκτὸς τοῦ σώματός	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	6	18	C3	ἐστιν	root-parent			0		unresolved-root	==ἐστιν== ὁ δὲ πορνεύων εἰς τὸ ἴδιον σῶμα	no-confirmed-topology
+1corintios	6	18	C4	ἁμαρτάνει	leaf	C3	coordinate	1	medium	suggested	==ἁμαρτάνει==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	6	19	C1	οἴδατε	root-parent			0		unresolved-root	ἢ οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	6	19	C2	ἐστιν	leaf	C1	subordinate	1	medium	suggested	ὅτι τὸ σῶμα ὑμῶν ναὸς τοῦ ἐν ὑμῖν ἁγίου πνεύματός ==ἐστιν== οὗ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	6	19	C3	ἔχετε	root-or-unresolved			0		unresolved-root	==ἔχετε== ἀπὸ θεοῦ; καὶ οὐκ	no-confirmed-topology
+1corintios	6	19	C4	ἐστὲ	root-or-unresolved			0		unresolved-root	==ἐστὲ== ἑαυτῶν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	6	20	C1	ἠγοράσθητε	root-parent			0		unresolved-root	==ἠγοράσθητε== γὰρ τιμῆς	no-confirmed-topology
+1corintios	6	20	C2	δοξάσατε	leaf	C1	subordinate	1	medium	suggested	==δοξάσατε== δὴ τὸν θεὸν ἐν τῷ σώματι ὑμῶν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	1	C1	ἐγράψατε	root-or-unresolved			0		unresolved-root	περὶ δὲ ὧν ==ἐγράψατε== καλὸν ἀνθρώπῳ γυναικὸς μὴ ἅπτεσθαι	no-confirmed-topology
+1corintios	7	2	C1	ἐχέτω	root-or-unresolved			0		unresolved-root	διὰ δὲ τὰς πορνείας ἕκαστος τὴν ἑαυτοῦ γυναῖκα ==ἐχέτω== καὶ ἑκάστη τὸν ἴδιον ἄνδρα	no-confirmed-topology
+1corintios	7	2	C2	ἐχέτω	root-or-unresolved			0		unresolved-root	==ἐχέτω==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	3	C1	ἀποδιδότω	root-or-unresolved			0		unresolved-root	τῇ γυναικὶ ὁ ἀνὴρ τὴν ὀφειλὴν ==ἀποδιδότω== ὁμοίως δὲ καὶ ἡ γυνὴ τῷ ἀνδρί	no-confirmed-topology
+1corintios	7	4	C1	ἐξουσιάζει	root-parent			0		unresolved-root	ἡ γυνὴ τοῦ ἰδίου σώματος οὐκ ==ἐξουσιάζει== ἀλλὰ ὁ ἀνήρ ὁμοίως δὲ καὶ ὁ ἀνὴρ τοῦ ἰδίου σώματος οὐκ	no-confirmed-topology
+1corintios	7	4	C2	ἐξουσιάζει	leaf	C1	coordinate	1	medium	suggested	==ἐξουσιάζει== ἀλλὰ ἡ γυνή	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	7	5	C1	ἀποστερεῖτε	root-parent			0		unresolved-root	μὴ ==ἀποστερεῖτε== ἀλλήλους	no-confirmed-topology
+1corintios	7	5	C2	σχολάσητε	leaf	C1	subordinate	1	medium	suggested	εἰ μήτι ἂν ἐκ συμφώνου πρὸς καιρὸν ἵνα ==σχολάσητε== τῇ προσευχῇ καὶ πάλιν ἐπὶ τὸ αὐτὸ	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	5	C3	ἦτε	root-parent			0		unresolved-root	==ἦτε==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	5	C4	πειράζῃ	leaf	C3	subordinate	1	medium	suggested	ἵνα μὴ ==πειράζῃ== ὑμᾶς ὁ σατανᾶς διὰ τὴν ἀκρασίαν ὑμῶν	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	6	C1	λέγω	root-or-unresolved			0		unresolved-root	Τοῦτο δὲ ==λέγω== κατὰ συγγνώμην οὐ κατʼ ἐπιταγήν	no-confirmed-topology
+1corintios	7	7	C1	θέλω	root-parent			0		unresolved-root	==θέλω== δὲ πάντας ἀνθρώπους εἶναι	no-confirmed-topology
+1corintios	7	7	C2	ἔχει	leaf	C1	coordinate	1	medium	suggested	ὡς καὶ ἐμαυτόν ἀλλὰ ἕκαστος ἴδιον ==ἔχει== χάρισμα ἐκ θεοῦ ὁ μὲν οὕτως ⸁ὁ δὲ οὕτως	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	7	8	C1	λέγω	root-parent			0		unresolved-root	==λέγω== δὲ τοῖς ἀγάμοις καὶ ταῖς χήραις καλὸν αὐτοῖς	no-confirmed-topology
+1corintios	7	8	C2	μείνωσιν	leaf	C1	coordinate	1	medium	suggested	ἐὰν ==μείνωσιν== ὡς κἀγώ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	7	9	C1	ἐγκρατεύονται	root-or-unresolved			0		unresolved-root	εἰ δὲ οὐκ ==ἐγκρατεύονται==	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	7	9	C2	γαμησάτωσαν	root-parent			0		unresolved-root	==γαμησάτωσαν== κρεῖττον γάρ	no-confirmed-topology
+1corintios	7	9	C3	ἐστιν	leaf	C2	subordinate	1	medium	suggested	==ἐστιν== γαμῆσαι ἢ πυροῦσθαι	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	10	C1	παραγγέλλω	root-or-unresolved			0		unresolved-root	τοῖς δὲ γεγαμηκόσιν ==παραγγέλλω== οὐκ ἐγὼ ἀλλὰ ὁ κύριος γυναῖκα ἀπὸ ἀνδρὸς μὴ χωρισθῆναι—	no-confirmed-topology
+1corintios	7	11	C1	χωρισθῇ	root-or-unresolved			0		unresolved-root	ἐὰν δὲ καὶ ==χωρισθῇ==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	11	C2	μενέτω	root-parent			0		unresolved-root	==μενέτω== ἄγαμος ἢ τῷ ἀνδρὶ	no-confirmed-topology
+1corintios	7	11	C3	καταλλαγήτω—	leaf	C2	coordinate	1	medium	suggested	==καταλλαγήτω—== καὶ ἄνδρα γυναῖκα μὴ ἀφιέναι	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	12	C1	λέγω	root-parent			0		unresolved-root	Τοῖς δὲ λοιποῖς ==λέγω== ἐγώ οὐχ ὁ κύριος	no-confirmed-topology
+1corintios	7	12	C2	ἔχει	leaf	C1	subordinate	1	medium	suggested	εἴ τις ἀδελφὸς γυναῖκα ==ἔχει== ἄπιστον καὶ αὕτη	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	12	C3	συνευδοκεῖ	root-or-unresolved			0		unresolved-root	==συνευδοκεῖ== οἰκεῖν μετʼ αὐτοῦ μὴ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	12	C4	ἀφιέτω	root-or-unresolved			0		unresolved-root	==ἀφιέτω== αὐτήν	no-confirmed-topology
+1corintios	7	13	C1	ἔχει	root-or-unresolved			0		unresolved-root	καὶ γυνὴ εἴ τις ==ἔχει== ἄνδρα ἄπιστον καὶ οὗτος	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	13	C2	συνευδοκεῖ	root-or-unresolved			0		unresolved-root	==συνευδοκεῖ== οἰκεῖν μετʼ αὐτῆς μὴ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	13	C3	ἀφιέτω	root-or-unresolved			0		unresolved-root	==ἀφιέτω== τὸν ἄνδρα	no-confirmed-topology
+1corintios	7	14	C1	ἡγίασται	root-parent			0		unresolved-root	==ἡγίασται== γὰρ ὁ ἀνὴρ ὁ ἄπιστος ἐν τῇ γυναικί καὶ	no-confirmed-topology
+1corintios	7	14	C2	ἡγίασται	internal-node	C1	subordinate	1	medium	suggested	==ἡγίασται== ἡ γυνὴ ἡ ἄπιστος ἐν τῷ ἀδελφῷ ἐπεὶ ἄρα τὰ τέκνα ὑμῶν ἀκάθαρτά	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	7	14	C3	ἐστιν	internal-node	C2	subordinate	2	medium	suggested	==ἐστιν== νῦν δὲ ἅγιά	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	14	C4	ἐστιν	leaf	C3	coordinate	3	medium	suggested	==ἐστιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	15	C1	χωρίζεται	root-or-unresolved			0		unresolved-root	εἰ δὲ ὁ ἄπιστος ==χωρίζεται==	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	7	15	C2	χωριζέσθω	root-or-unresolved			0		unresolved-root	==χωριζέσθω== οὐ	no-confirmed-topology
+1corintios	7	15	C3	δεδούλωται	root-parent			0		unresolved-root	==δεδούλωται== ὁ ἀδελφὸς ἢ ἡ ἀδελφὴ ἐν τοῖς τοιούτοις ἐν δὲ εἰρήνῃ	no-confirmed-topology
+1corintios	7	15	C4	κέκληκεν	leaf	C3	coordinate	1	medium	suggested	==κέκληκεν== ἡμᾶς ὁ θεός	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	16	C1	οἶδας	root-parent			0		unresolved-root	τί γὰρ ==οἶδας== γύναι	no-confirmed-topology
+1corintios	7	16	C2	σώσεις	internal-node	C1	subordinate	1	medium	suggested	εἰ τὸν ἄνδρα ==σώσεις== ἢ τί	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	16	C3	οἶδας	internal-node	C2	coordinate	2	medium	suggested	==οἶδας== ἄνερ	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	16	C4	σώσεις	leaf	C3	subordinate	3	medium	suggested	εἰ τὴν γυναῖκα ==σώσεις==	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	17	C1	ἐμέρισεν	root-parent			0		unresolved-root	εἰ μὴ ἑκάστῳ ὡς ==ἐμέρισεν== ὁ κύριος ἕκαστον	no-confirmed-topology
+1corintios	7	17	C2	κέκληκεν	leaf	C1	subordinate	1	medium	suggested	ὡς ==κέκληκεν== ὁ θεός οὕτως	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	17	C3	περιπατείτω	root-or-unresolved			0		unresolved-root	==περιπατείτω== καὶ οὕτως ἐν ταῖς ἐκκλησίαις πάσαις	no-confirmed-topology
+1corintios	7	17	C4	διατάσσομαι	root-or-unresolved			0		unresolved-root	==διατάσσομαι==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	18	C1	ἐκλήθη;	root-or-unresolved			0		unresolved-root	περιτετμημένος τις ==ἐκλήθη;== μὴ	no-confirmed-topology
+1corintios	7	18	C2	ἐπισπάσθω	root-or-unresolved			0		unresolved-root	==ἐπισπάσθω== ἐν ἀκροβυστίᾳ	no-confirmed-topology
+1corintios	7	18	C3	κέκληταί	root-or-unresolved			0		unresolved-root	==κέκληταί== τις; μὴ	no-confirmed-topology
+1corintios	7	18	C4	περιτεμνέσθω	root-or-unresolved			0		unresolved-root	==περιτεμνέσθω==	no-confirmed-topology
+1corintios	7	19	C1	ἐστιν	root-or-unresolved			0		unresolved-root	ἡ περιτομὴ οὐδέν ==ἐστιν== καὶ ἡ ἀκροβυστία οὐδέν	no-confirmed-topology
+1corintios	7	19	C2	ἐστιν	root-or-unresolved			0		unresolved-root	==ἐστιν== ἀλλὰ τήρησις ἐντολῶν θεοῦ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	20	C1	ἐκλήθη	root-or-unresolved			0		unresolved-root	ἕκαστος ἐν τῇ κλήσει ᾗ ==ἐκλήθη== ἐν ταύτῃ	no-confirmed-topology
+1corintios	7	20	C2	μενέτω	root-or-unresolved			0		unresolved-root	==μενέτω==	no-confirmed-topology
+1corintios	7	21	C1	ἐκλήθης;	root-or-unresolved			0		unresolved-root	δοῦλος ==ἐκλήθης;== μή σοι	no-confirmed-topology
+1corintios	7	21	C2	μελέτω	root-parent			0		unresolved-root	==μελέτω== ἀλλʼ	no-confirmed-topology
+1corintios	7	21	C3	δύνασαι	leaf	C2	coordinate	1	medium	suggested	εἰ καὶ ==δύνασαι== ἐλεύθερος γενέσθαι μᾶλλον	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	7	21	C4	χρῆσαι	root-or-unresolved			0		unresolved-root	==χρῆσαι==	no-confirmed-topology
+1corintios	7	22	C1	ἐστίν	root-or-unresolved			0		unresolved-root	ὁ γὰρ ἐν κυρίῳ κληθεὶς δοῦλος ἀπελεύθερος κυρίου ==ἐστίν== ὁμοίως ὁ ἐλεύθερος κληθεὶς δοῦλός	no-confirmed-topology
+1corintios	7	22	C2	ἐστιν	root-or-unresolved			0		unresolved-root	==ἐστιν== Χριστοῦ	no-confirmed-topology
+1corintios	7	23	C1	ἠγοράσθητε	root-or-unresolved			0		unresolved-root	τιμῆς ==ἠγοράσθητε== μὴ	no-confirmed-topology
+1corintios	7	23	C2	γίνεσθε	root-or-unresolved			0		unresolved-root	==γίνεσθε== δοῦλοι ἀνθρώπων	no-confirmed-topology
+1corintios	7	24	C1	ἐκλήθη	root-or-unresolved			0		unresolved-root	ἕκαστος ἐν ᾧ ==ἐκλήθη== ἀδελφοί ἐν τούτῳ	no-confirmed-topology
+1corintios	7	24	C2	μενέτω	root-or-unresolved			0		unresolved-root	==μενέτω== παρὰ θεῷ	no-confirmed-topology
+1corintios	7	25	C1	ἔχω	root-parent			0		unresolved-root	περὶ δὲ τῶν παρθένων ἐπιταγὴν κυρίου οὐκ ==ἔχω== γνώμην δὲ	no-confirmed-topology
+1corintios	7	25	C2	δίδωμι	leaf	C1	coordinate	1	medium	suggested	==δίδωμι== ὡς ἠλεημένος ὑπὸ κυρίου πιστὸς εἶναι	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	26	C1	νομίζω	root-or-unresolved			0		unresolved-root	==νομίζω== οὖν τοῦτο καλὸν ὑπάρχειν διὰ τὴν ἐνεστῶσαν ἀνάγκην ὅτι καλὸν ἀνθρώπῳ τὸ οὕτως εἶναι	no-confirmed-topology
+1corintios	7	27	C1	δέδεσαι	root-or-unresolved			0		unresolved-root	==δέδεσαι== γυναικί; μὴ	no-confirmed-topology
+1corintios	7	27	C2	ζήτει	root-or-unresolved			0		unresolved-root	==ζήτει== λύσιν	no-confirmed-topology
+1corintios	7	27	C3	λέλυσαι	root-or-unresolved			0		unresolved-root	==λέλυσαι== ἀπὸ γυναικός; μὴ	no-confirmed-topology
+1corintios	7	27	C4	ζήτει	root-or-unresolved			0		unresolved-root	==ζήτει== γυναῖκα	no-confirmed-topology
+1corintios	7	28	C1	γαμήσῃς	root-or-unresolved			0		unresolved-root	ἐὰν δὲ καὶ ==γαμήσῃς== οὐχ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	28	C2	ἥμαρτες	root-parent			0		unresolved-root	==ἥμαρτες== καὶ	no-confirmed-topology
+1corintios	7	28	C3	γήμῃ	leaf	C2	subordinate	1	medium	suggested	ἐὰν ==γήμῃ== ἡ παρθένος οὐχ	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	7	28	C4	ἥμαρτεν	root-parent			0		unresolved-root	==ἥμαρτεν== θλῖψιν δὲ τῇ σαρκὶ	no-confirmed-topology
+1corintios	7	28	C5	ἕξουσιν	internal-node	C4	coordinate	1	medium	suggested	==ἕξουσιν== οἱ τοιοῦτοι ἐγὼ δὲ ὑμῶν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	28	C6	φείδομαι	leaf	C5	coordinate	2	medium	suggested	==φείδομαι==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	29	C1	φημι	root-or-unresolved			0		unresolved-root	τοῦτο δέ ==φημι== ἀδελφοί ὁ καιρὸς συνεσταλμένος	no-confirmed-topology
+1corintios	7	29	C2	ἐστίν	root-parent			0		unresolved-root	==ἐστίν== τὸ λοιπὸν	no-confirmed-topology
+1corintios	7	29	C3	ὦσιν	leaf	C2	subordinate	1	medium	suggested	ἵνα καὶ οἱ ἔχοντες γυναῖκας ὡς μὴ ἔχοντες ==ὦσιν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	7	31	C1	παράγει	root-or-unresolved			0		unresolved-root	καὶ οἱ χρώμενοι τὸν κόσμον ὡς μὴ καταχρώμενοι ==παράγει== γὰρ τὸ σχῆμα τοῦ κόσμου τούτου	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	32	C1	θέλω	root-parent			0		unresolved-root	==θέλω== δὲ ὑμᾶς ἀμερίμνους εἶναι ὁ ἄγαμος	no-confirmed-topology
+1corintios	7	32	C2	μεριμνᾷ	leaf	C1	coordinate	1	medium	suggested	==μεριμνᾷ== τὰ τοῦ κυρίου πῶς	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	32	C3	ἀρέσῃ	root-or-unresolved			0		unresolved-root	==ἀρέσῃ== τῷ κυρίῳ	no-confirmed-topology
+1corintios	7	33	C1	μεριμνᾷ	root-or-unresolved			0		unresolved-root	ὁ δὲ γαμήσας ==μεριμνᾷ== τὰ τοῦ κόσμου πῶς	no-confirmed-topology
+1corintios	7	33	C2	ἀρέσῃ	root-or-unresolved			0		unresolved-root	==ἀρέσῃ== τῇ γυναικί	no-confirmed-topology
+1corintios	7	34	C1	μεμέρισται	root-or-unresolved			0		unresolved-root	καὶ ==μεμέρισται== καὶ ἡ γυνὴ ἡ ἄγαμος καὶ ἡ παρθένος	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	34	C2	μεριμνᾷ	root-parent			0		unresolved-root	==μεριμνᾷ== τὰ τοῦ κυρίου	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	34	C3	ᾖ	internal-node	C2	subordinate	1	medium	suggested	ἵνα ==ᾖ== ἁγία καὶ τῷ σώματι καὶ ⸁τῷ πνεύματι ἡ δὲ γαμήσασα	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	34	C4	μεριμνᾷ	leaf	C3	coordinate	2	medium	suggested	==μεριμνᾷ== τὰ τοῦ κόσμου πῶς	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	7	34	C5	ἀρέσῃ	root-or-unresolved			0		unresolved-root	==ἀρέσῃ== τῷ ἀνδρί	no-confirmed-topology
+1corintios	7	35	C1	λέγω	root-parent			0		unresolved-root	τοῦτο δὲ πρὸς τὸ ὑμῶν αὐτῶν σύμφορον ==λέγω== οὐχ	no-confirmed-topology
+1corintios	7	35	C2	ἐπιβάλω	leaf	C1	subordinate	1	medium	suggested	ἵνα βρόχον ὑμῖν ==ἐπιβάλω== ἀλλὰ πρὸς τὸ εὔσχημον καὶ εὐπάρεδρον τῷ κυρίῳ ἀπερισπάστως	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	36	C1	νομίζει	root-parent			0		unresolved-root	εἰ δέ τις ἀσχημονεῖν ἐπὶ τὴν παρθένον αὐτοῦ ==νομίζει==	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	7	36	C2	ᾖ	leaf	C1	subordinate	1	medium	suggested	ἐὰν ==ᾖ== ὑπέρακμος καὶ οὕτως	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	36	C3	ὀφείλει	root-or-unresolved			0		unresolved-root	==ὀφείλει== γίνεσθαι ὃ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	36	C4	θέλει	root-or-unresolved			0		unresolved-root	==θέλει==	no-confirmed-topology
+1corintios	7	36	C5	ποιείτω	root-or-unresolved			0		unresolved-root	==ποιείτω== οὐχ	no-confirmed-topology
+1corintios	7	36	C6	ἁμαρτάνει	root-or-unresolved			0		unresolved-root	==ἁμαρτάνει==	no-confirmed-topology
+1corintios	7	36	C7	γαμείτωσαν	root-or-unresolved			0		unresolved-root	==γαμείτωσαν==	no-confirmed-topology
+1corintios	7	37	C1	ἕστηκεν	root-parent			0		unresolved-root	ὃς δὲ ==ἕστηκεν== ἐν τῇ καρδίᾳ αὐτοῦ ἑδραῖος μὴ ἔχων ἀνάγκην ἐξουσίαν δὲ	no-confirmed-topology
+1corintios	7	37	C2	ἔχει	leaf	C1	coordinate	1	medium	suggested	==ἔχει== περὶ τοῦ ἰδίου θελήματος καὶ τοῦτο	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	7	37	C3	κέκρικεν	root-or-unresolved			0		unresolved-root	==κέκρικεν== ἐν τῇ ἰδίᾳ καρδίᾳ τηρεῖν τὴν ἑαυτοῦ παρθένον καλῶς	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	37	C4	ποιήσει	root-or-unresolved			0		unresolved-root	==ποιήσει==	no-confirmed-topology
+1corintios	7	38	C1	ποιεῖ	root-or-unresolved			0		unresolved-root	ὥστε καὶ ὁ γαμίζων τὴν παρθένον ἑαυτοῦ καλῶς ==ποιεῖ== καὶ ὁ μὴ ⸁γαμίζων κρεῖσσον	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	38	C2	ποιήσει	root-or-unresolved			0		unresolved-root	==ποιήσει==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	7	39	C1	δέδεται	root-or-unresolved			0		unresolved-root	γυνὴ ==δέδεται== ἐφʼ ὅσον χρόνον	no-confirmed-topology
+1corintios	7	39	C2	ζῇ	root-parent			0		unresolved-root	==ζῇ== ὁ ἀνὴρ αὐτῆς	no-confirmed-topology
+1corintios	7	39	C3	κοιμηθῇ	leaf	C2	subordinate	1	medium	suggested	ἐὰν δὲ ==κοιμηθῇ== ὁ ἀνήρ ἐλευθέρα	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	39	C4	ἐστὶν	root-or-unresolved			0		unresolved-root	==ἐστὶν== ᾧ	no-confirmed-topology
+1corintios	7	39	C5	θέλει	root-or-unresolved			0		unresolved-root	==θέλει== γαμηθῆναι μόνον ἐν κυρίῳ	no-confirmed-topology
+1corintios	7	40	C1	ἐστιν	root-parent			0		unresolved-root	μακαριωτέρα δέ ==ἐστιν==	no-confirmed-topology
+1corintios	7	40	C2	μείνῃ	leaf	C1	subordinate	1	medium	suggested	ἐὰν οὕτως ==μείνῃ== κατὰ τὴν ἐμὴν γνώμην	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	7	40	C3	δοκῶ	root-or-unresolved			0		unresolved-root	==δοκῶ== δὲ κἀγὼ πνεῦμα θεοῦ ἔχειν	no-confirmed-topology
+1corintios	8	1	C1	οἴδαμεν	root-parent			0		unresolved-root	περὶ δὲ τῶν εἰδωλοθύτων ==οἴδαμεν==	no-confirmed-topology
+1corintios	8	1	C2	ἔχομεν	leaf	C1	subordinate	1	medium	suggested	ὅτι πάντες γνῶσιν ==ἔχομεν== ἡ γνῶσις	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	8	1	C3	φυσιοῖ	root-parent			0		unresolved-root	==φυσιοῖ== ἡ δὲ ἀγάπη	no-confirmed-topology
+1corintios	8	1	C4	οἰκοδομεῖ	leaf	C3	coordinate	1	medium	suggested	==οἰκοδομεῖ==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	8	2	C1	δοκεῖ	root-or-unresolved			0		unresolved-root	εἴ τις ==δοκεῖ== ἐγνωκέναι τι οὔπω	no-confirmed-topology
+1corintios	8	2	C2	ἔγνω	root-parent			0		unresolved-root	==ἔγνω== καθὼς	no-confirmed-topology
+1corintios	8	2	C3	δεῖ	leaf	C2	subordinate	1	medium	suggested	==δεῖ== γνῶναι	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	8	3	C1	ἀγαπᾷ	root-or-unresolved			0		unresolved-root	εἰ δέ τις ==ἀγαπᾷ== τὸν θεόν οὗτος	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	8	3	C2	ἔγνωσται	root-or-unresolved			0		unresolved-root	==ἔγνωσται== ὑπʼ αὐτοῦ	no-confirmed-topology
+1corintios	8	4	C1	οἴδαμεν	root-or-unresolved			0		unresolved-root	περὶ τῆς βρώσεως οὖν τῶν εἰδωλοθύτων ==οἴδαμεν== ὅτι οὐδὲν εἴδωλον ἐν κόσμῳ καὶ ὅτι οὐδεὶς θεὸς εἰ μὴ εἷς	no-confirmed-topology
+1corintios	8	5	C1	εἰσὶν	root-parent			0		unresolved-root	καὶ γὰρ εἴπερ ==εἰσὶν== λεγόμενοι θεοὶ εἴτε ἐν οὐρανῷ εἴτε ἐπὶ γῆς ὥσπερ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	8	5	C2	εἰσὶν	leaf	C1	coordinate	1	medium	suggested	==εἰσὶν== θεοὶ πολλοὶ καὶ κύριοι πολλοί	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	8	7	C1	ἐσθίουσιν	root-or-unresolved			0		unresolved-root	ἀλλʼ οὐκ ἐν πᾶσιν ἡ γνῶσις τινὲς δὲ τῇ συνηθείᾳ ἕως ἄρτι τοῦ εἰδώλου ὡς εἰδωλόθυτον ==ἐσθίουσιν== καὶ ἡ συνείδησις αὐτῶν ἀσθενὴς οὖσα	no-confirmed-topology
+1corintios	8	7	C2	μολύνεται	root-or-unresolved			0		unresolved-root	==μολύνεται==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	8	8	C1	παραστήσει	root-parent			0		unresolved-root	βρῶμα δὲ ἡμᾶς οὐ ==παραστήσει== τῷ θεῷ οὔτε γὰρ	no-confirmed-topology
+1corintios	8	8	C2	φάγωμεν	leaf	C1	coordinate	1	medium	suggested	ἐὰν ==φάγωμεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	8	8	C3	περισσεύομεν	root-parent			0		unresolved-root	==περισσεύομεν== οὔτε	no-confirmed-topology
+1corintios	8	8	C4	φάγωμεν	leaf	C3	coordinate	1	medium	suggested	ἐὰν μὴ ==φάγωμεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	8	8	C5	ὑστερούμεθα	root-or-unresolved			0		unresolved-root	==ὑστερούμεθα==	no-confirmed-topology
+1corintios	8	9	C1	βλέπετε	root-parent			0		unresolved-root	==βλέπετε== δὲ μή πως ἡ ἐξουσία ὑμῶν αὕτη πρόσκομμα	no-confirmed-topology
+1corintios	8	9	C2	γένηται	leaf	C1	coordinate	1	medium	suggested	==γένηται== τοῖς ἀσθενέσιν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	8	10	C1	ἴδῃ	root-or-unresolved			0		unresolved-root	ἐὰν γάρ τις ==ἴδῃ== σὲ τὸν ἔχοντα γνῶσιν ἐν εἰδωλείῳ κατακείμενον οὐχὶ ἡ συνείδησις αὐτοῦ ἀσθενοῦς ὄντος	no-confirmed-topology
+1corintios	8	10	C2	οἰκοδομηθήσεται	root-or-unresolved			0		unresolved-root	==οἰκοδομηθήσεται== εἰς τὸ τὰ εἰδωλόθυτα ἐσθίειν	no-confirmed-topology
+1corintios	8	11	C1	ἀπόλλυται	root-parent			0		unresolved-root	==ἀπόλλυται== γὰρ ὁ ἀσθενῶν ἐν τῇ σῇ γνώσει ὁ ἀδελφὸς διʼ ὃν χριστὸς	no-confirmed-topology
+1corintios	8	11	C2	ἀπέθανεν	leaf	C1	subordinate	1	medium	suggested	==ἀπέθανεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	8	12	C1	ἁμαρτάνετε	root-or-unresolved			0		unresolved-root	οὕτως δὲ ἁμαρτάνοντες εἰς τοὺς ἀδελφοὺς καὶ τύπτοντες αὐτῶν τὴν συνείδησιν ἀσθενοῦσαν εἰς χριστὸν ==ἁμαρτάνετε==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	8	13	C1	σκανδαλίζει	root-or-unresolved			0		unresolved-root	διόπερ εἰ βρῶμα ==σκανδαλίζει== τὸν ἀδελφόν μου οὐ μὴ	no-confirmed-topology
+1corintios	8	13	C2	φάγω	root-parent			0		unresolved-root	==φάγω== κρέα εἰς τὸν αἰῶνα	no-confirmed-topology
+1corintios	8	13	C3	σκανδαλίσω	leaf	C2	subordinate	1	medium	suggested	ἵνα μὴ τὸν ἀδελφόν μου ==σκανδαλίσω==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	1	C1	εἰμὶ	root-or-unresolved			0		unresolved-root	οὐκ ==εἰμὶ== ἐλεύθερος οὐκ	no-confirmed-topology
+1corintios	9	1	C2	εἰμὶ	root-or-unresolved			0		unresolved-root	==εἰμὶ== ἀπόστολος οὐχὶ ἰησοῦν τὸν κύριον ἡμῶν	no-confirmed-topology
+1corintios	9	1	C3	ἑόρακα	root-or-unresolved			0		unresolved-root	==ἑόρακα== οὐ τὸ ἔργον μου ὑμεῖς	no-confirmed-topology
+1corintios	9	1	C4	ἐστε	root-or-unresolved			0		unresolved-root	==ἐστε== ἐν κυρίῳ	no-confirmed-topology
+1corintios	9	2	C1	εἰμὶ	root-parent			0		unresolved-root	εἰ ἄλλοις οὐκ ==εἰμὶ== ἀπόστολος ἀλλά γε ὑμῖν	no-confirmed-topology
+1corintios	9	2	C2	εἰμι	internal-node	C1	coordinate	1	medium	suggested	==εἰμι== ἡ γὰρ σφραγίς μου τῆς ἀποστολῆς ὑμεῖς	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	2	C3	ἐστε	leaf	C2	subordinate	2	medium	suggested	==ἐστε== ἐν κυρίῳ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	3	C1	ἐστιν	root-or-unresolved			0		unresolved-root	ἡ ἐμὴ ἀπολογία τοῖς ἐμὲ ἀνακρίνουσίν ==ἐστιν== αὕτη	no-confirmed-topology
+1corintios	9	4	C1	ἔχομεν	root-or-unresolved			0		unresolved-root	μὴ οὐκ ==ἔχομεν== ἐξουσίαν φαγεῖν καὶ πεῖν	no-confirmed-topology
+1corintios	9	5	C1	ἔχομεν	root-or-unresolved			0		unresolved-root	μὴ οὐκ ==ἔχομεν== ἐξουσίαν ἀδελφὴν γυναῖκα περιάγειν ὡς καὶ οἱ λοιποὶ ἀπόστολοι καὶ οἱ ἀδελφοὶ τοῦ κυρίου καὶ κηφᾶς	no-confirmed-topology
+1corintios	9	6	C1	ἔχομεν	root-or-unresolved			0		unresolved-root	ἢ μόνος ἐγὼ καὶ βαρναβᾶς οὐκ ==ἔχομεν== ἐξουσίαν μὴ ἐργάζεσθαι	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	9	7	C1	στρατεύεται	root-or-unresolved			0		unresolved-root	τίς ==στρατεύεται== ἰδίοις ὀψωνίοις ποτέ τίς	no-confirmed-topology
+1corintios	9	7	C2	φυτεύει	root-or-unresolved			0		unresolved-root	==φυτεύει== ἀμπελῶνα καὶ τὸν καρπὸν αὐτοῦ οὐκ	no-confirmed-topology
+1corintios	9	7	C3	ἐσθίει	root-or-unresolved			0		unresolved-root	==ἐσθίει== τίς	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	9	7	C4	ποιμαίνει	root-or-unresolved			0		unresolved-root	==ποιμαίνει== ποίμνην καὶ ἐκ τοῦ γάλακτος τῆς ποίμνης οὐκ	no-confirmed-topology
+1corintios	9	7	C5	ἐσθίει	root-or-unresolved			0		unresolved-root	==ἐσθίει==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	9	8	C1	λαλῶ	root-parent			0		unresolved-root	μὴ κατὰ ἄνθρωπον ταῦτα ==λαλῶ== ἢ καὶ ὁ νόμος ταῦτα οὐ	no-confirmed-topology
+1corintios	9	8	C2	λέγει	leaf	C1	coordinate	1	medium	suggested	==λέγει==	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	9	9	C1	γέγραπται	root-or-unresolved			0		unresolved-root	ἐν γὰρ τῷ μωϋσέως νόμῳ ==γέγραπται== οὐ	no-confirmed-topology
+1corintios	9	9	C2	κημώσεις	root-or-unresolved			0		unresolved-root	==κημώσεις== βοῦν ἀλοῶντα μὴ τῶν βοῶν	no-confirmed-topology
+1corintios	9	9	C3	μέλει	root-or-unresolved			0		unresolved-root	==μέλει== τῷ θεῷ	no-confirmed-topology
+1corintios	9	10	C1	λέγει	root-parent			0		unresolved-root	ἢ διʼ ἡμᾶς πάντως ==λέγει== διʼ ἡμᾶς γὰρ	no-confirmed-topology
+1corintios	9	10	C2	ἐγράφη	internal-node	C1	subordinate	1	medium	suggested	==ἐγράφη==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	10	C3	ὀφείλει	leaf	C2	subordinate	2	medium	suggested	ὅτι ==ὀφείλει== ἐπʼ ἐλπίδι ὁ ἀροτριῶν ἀροτριᾶν καὶ ὁ ἀλοῶν ἐπʼ ἐλπίδι τοῦ μετέχειν	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	11	C1	ἐσπείραμεν	root-parent			0		unresolved-root	εἰ ἡμεῖς ὑμῖν τὰ πνευματικὰ ==ἐσπείραμεν== μέγα	no-confirmed-topology
+1corintios	9	11	C2	θερίσομεν	leaf	C1	subordinate	1	medium	suggested	εἰ ἡμεῖς ὑμῶν τὰ σαρκικὰ ==θερίσομεν==	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	12	C1	μετέχουσιν	root-parent			0		unresolved-root	εἰ ἄλλοι τῆς ὑμῶν ἐξουσίας ==μετέχουσιν== οὐ μᾶλλον ἡμεῖς ἀλλʼ οὐκ	no-confirmed-topology
+1corintios	9	12	C2	ἐχρησάμεθα	internal-node	C1	coordinate	1	medium	suggested	==ἐχρησάμεθα== τῇ ἐξουσίᾳ ταύτῃ ἀλλὰ πάντα	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	12	C3	στέγομεν	internal-node	C2	coordinate	2	medium	suggested	==στέγομεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	12	C4	δῶμεν	leaf	C3	subordinate	3	medium	suggested	ἵνα μή τινα ἐγκοπὴν ==δῶμεν== τῷ εὐαγγελίῳ τοῦ χριστοῦ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	13	C1	οἴδατε	root-parent			0		unresolved-root	οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	9	13	C2	ἐσθίουσιν	leaf	C1	subordinate	1	medium	suggested	ὅτι οἱ τὰ ἱερὰ ἐργαζόμενοι τὰ ἐκ τοῦ ἱεροῦ ==ἐσθίουσιν== οἱ τῷ θυσιαστηρίῳ παρεδρεύοντες τῷ θυσιαστηρίῳ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	13	C3	συμμερίζονται	root-or-unresolved			0		unresolved-root	==συμμερίζονται==	no-confirmed-topology
+1corintios	9	14	C1	διέταξεν	root-or-unresolved			0		unresolved-root	οὕτως καὶ ὁ κύριος ==διέταξεν== τοῖς τὸ εὐαγγέλιον καταγγέλλουσιν ἐκ τοῦ εὐαγγελίου ζῆν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	9	15	C1	κέχρημαι	root-or-unresolved			0		unresolved-root	ἐγὼ δὲ οὐ ==κέχρημαι== οὐδενὶ τούτων οὐκ	no-confirmed-topology
+1corintios	9	15	C2	ἔγραψα	root-parent			0		unresolved-root	==ἔγραψα== δὲ ταῦτα	no-confirmed-topology
+1corintios	9	15	C3	γένηται	internal-node	C2	coordinate	1	medium	suggested	ἵνα οὕτως ==γένηται== ἐν ἐμοί καλὸν γάρ μοι μᾶλλον ἀποθανεῖν ἤ— τὸ καύχημά μου οὐδεὶς	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	15	C4	κενώσει	leaf	C3	subordinate	2	medium	suggested	==κενώσει==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	16	C1	εὐαγγελίζωμαι	root-or-unresolved			0		unresolved-root	ἐὰν γὰρ ==εὐαγγελίζωμαι== οὐκ	no-confirmed-topology
+1corintios	9	16	C2	ἔστιν	root-parent			0		unresolved-root	==ἔστιν== μοι καύχημα ἀνάγκη γάρ μοι	no-confirmed-topology
+1corintios	9	16	C3	ἐπίκειται	internal-node	C2	subordinate	1	medium	suggested	==ἐπίκειται== οὐαὶ γάρ μοί	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	16	C4	ἐστιν	internal-node	C3	subordinate	2	medium	suggested	==ἐστιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	16	C5	εὐαγγελίσωμαι	leaf	C4	subordinate	3	medium	suggested	ἐὰν μὴ ==εὐαγγελίσωμαι==	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	17	C1	πράσσω	root-or-unresolved			0		unresolved-root	εἰ γὰρ ἑκὼν τοῦτο ==πράσσω== μισθὸν	no-confirmed-topology
+1corintios	9	17	C2	ἔχω	root-or-unresolved			0		unresolved-root	==ἔχω==	no-confirmed-topology
+1corintios	9	17	C3	πεπίστευμαι	root-or-unresolved			0		unresolved-root	εἰ δὲ ἄκων οἰκονομίαν ==πεπίστευμαι==	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	9	18	C1	ἐστιν	root-parent			0		unresolved-root	τίς οὖν μού ==ἐστιν== ὁ μισθός	no-confirmed-topology
+1corintios	9	18	C2	θήσω	leaf	C1	subordinate	1	medium	suggested	ἵνα εὐαγγελιζόμενος ἀδάπανον ==θήσω== τὸ εὐαγγέλιον εἰς τὸ μὴ καταχρήσασθαι τῇ ἐξουσίᾳ μου ἐν τῷ εὐαγγελίῳ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	19	C1	ἐδούλωσα	root-parent			0		unresolved-root	ἐλεύθερος γὰρ ὢν ἐκ πάντων πᾶσιν ἐμαυτὸν ==ἐδούλωσα==	no-confirmed-topology
+1corintios	9	19	C2	κερδήσω	leaf	C1	subordinate	1	medium	suggested	ἵνα τοὺς πλείονας ==κερδήσω==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	20	C1	ἐγενόμην	root-parent			0		unresolved-root	καὶ ==ἐγενόμην== τοῖς ἰουδαίοις	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	9	20	C2	κερδήσω	internal-node	C1	subordinate	1	medium	suggested	ὡς ἰουδαῖος ἵνα ἰουδαίους ==κερδήσω== τοῖς ὑπὸ νόμον	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	20	C3	κερδήσω	leaf	C2	subordinate	2	medium	suggested	ὡς ὑπὸ νόμον μὴ ὢν αὐτὸς ὑπὸ νόμον ἵνα τοὺς ὑπὸ νόμον ==κερδήσω==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	21	C1	κερδάνω	root-or-unresolved			0		unresolved-root	τοῖς ἀνόμοις ὡς ἄνομος μὴ ὢν ἄνομος θεοῦ ἀλλʼ ἔννομος χριστοῦ ἵνα ==κερδάνω== τοὺς ἀνόμους	no-confirmed-topology
+1corintios	9	22	C1	ἐγενόμην	root-parent			0		unresolved-root	==ἐγενόμην== τοῖς ἀσθενέσιν ἀσθενής	no-confirmed-topology
+1corintios	9	22	C2	κερδήσω	leaf	C1	subordinate	1	medium	suggested	ἵνα τοὺς ἀσθενεῖς ==κερδήσω== τοῖς πᾶσιν	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	22	C3	γέγονα	root-parent			0		unresolved-root	==γέγονα== πάντα	no-confirmed-topology
+1corintios	9	22	C4	σώσω	leaf	C3	subordinate	1	medium	suggested	ἵνα πάντως τινὰς ==σώσω==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	23	C1	ποιῶ	root-parent			0		unresolved-root	πάντα δὲ ==ποιῶ== διὰ τὸ εὐαγγέλιον	no-confirmed-topology
+1corintios	9	23	C2	γένωμαι	leaf	C1	subordinate	1	medium	suggested	ἵνα συγκοινωνὸς αὐτοῦ ==γένωμαι==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	24	C1	οἴδατε	root-parent			0		unresolved-root	οὐκ ==οἴδατε==	no-confirmed-topology
+1corintios	9	24	C2	τρέχουσιν	internal-node	C1	subordinate	1	medium	suggested	ὅτι οἱ ἐν σταδίῳ τρέχοντες πάντες μὲν ==τρέχουσιν== εἷς δὲ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	24	C3	λαμβάνει	leaf	C2	coordinate	2	medium	suggested	==λαμβάνει== τὸ βραβεῖον οὕτως	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	24	C4	τρέχετε	root-parent			0		unresolved-root	==τρέχετε==	no-confirmed-topology
+1corintios	9	24	C5	καταλάβητε	leaf	C4	subordinate	1	medium	suggested	ἵνα ==καταλάβητε==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	25	C1	ἐγκρατεύεται	root-parent			0		unresolved-root	πᾶς δὲ ὁ ἀγωνιζόμενος πάντα ==ἐγκρατεύεται== ἐκεῖνοι μὲν οὖν	no-confirmed-topology
+1corintios	9	25	C2	λάβωσιν	leaf	C1	coordinate	1	medium	suggested	ἵνα φθαρτὸν στέφανον ==λάβωσιν== ἡμεῖς δὲ ἄφθαρτον	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	9	26	C1	τρέχω	root-parent			0		unresolved-root	ἐγὼ τοίνυν οὕτως ==τρέχω==	no-confirmed-topology
+1corintios	9	26	C2	πυκτεύω	leaf	C1	subordinate	1	medium	suggested	ὡς οὐκ ἀδήλως οὕτως ==πυκτεύω== ὡς οὐκ ἀέρα δέρων	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	9	27	C1	ὑπωπιάζω	root-or-unresolved			0		unresolved-root	ἀλλὰ ==ὑπωπιάζω== μου τὸ σῶμα καὶ	no-confirmed-topology
+1corintios	9	27	C2	δουλαγωγῶ	root-or-unresolved			0		unresolved-root	==δουλαγωγῶ== μή πως ἄλλοις κηρύξας αὐτὸς ἀδόκιμος	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	9	27	C3	γένωμαι	root-or-unresolved			0		unresolved-root	==γένωμαι==	no-confirmed-topology
+1corintios	10	1	C1	θέλω	root-parent			0		unresolved-root	οὐ ==θέλω== γὰρ ὑμᾶς ἀγνοεῖν ἀδελφοί	no-confirmed-topology
+1corintios	10	1	C2	ἦσαν	leaf	C1	subordinate	1	medium	suggested	ὅτι οἱ πατέρες ἡμῶν πάντες ὑπὸ τὴν νεφέλην ==ἦσαν== καὶ πάντες διὰ τῆς θαλάσσης	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	1	C3	διῆλθον	root-or-unresolved			0		unresolved-root	==διῆλθον==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	2	C1	ἐβαπτίσαντο	root-or-unresolved			0		unresolved-root	καὶ πάντες εἰς τὸν μωϋσῆν ==ἐβαπτίσαντο== ἐν τῇ νεφέλῃ καὶ ἐν τῇ θαλάσσῃ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	3	C1	ἔφαγον	root-or-unresolved			0		unresolved-root	καὶ πάντες τὸ αὐτὸ πνευματικὸν βρῶμα ==ἔφαγον==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	4	C1	ἔπιον	root-or-unresolved			0		unresolved-root	καὶ πάντες τὸ αὐτὸ πνευματικὸν ==ἔπιον== πόμα	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	4	C2	ἔπινον	root-parent			0		unresolved-root	==ἔπινον== γὰρ ἐκ πνευματικῆς ἀκολουθούσης πέτρας ἡ πέτρα δὲ	no-confirmed-topology
+1corintios	10	4	C3	ἦν	leaf	C2	subordinate	1	medium	suggested	==ἦν== ὁ χριστός	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	5	C1	ηὐδόκησεν	root-or-unresolved			0		unresolved-root	ἀλλʼ οὐκ ἐν τοῖς πλείοσιν αὐτῶν ==ηὐδόκησεν== ὁ θεός	no-confirmed-topology
+1corintios	10	5	C2	κατεστρώθησαν	root-or-unresolved			0		unresolved-root	==κατεστρώθησαν== γὰρ ἐν τῇ ἐρήμῳ	no-confirmed-topology
+1corintios	10	6	C1	ἐγενήθησαν	root-parent			0		unresolved-root	ταῦτα δὲ τύποι ἡμῶν ==ἐγενήθησαν== εἰς τὸ μὴ εἶναι ἡμᾶς ἐπιθυμητὰς κακῶν καθὼς κἀκεῖνοι	no-confirmed-topology
+1corintios	10	6	C2	ἐπεθύμησαν	leaf	C1	subordinate	1	medium	suggested	==ἐπεθύμησαν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	10	7	C1	γίνεσθε	root-parent			0		unresolved-root	μηδὲ εἰδωλολάτραι ==γίνεσθε== καθώς τινες αὐτῶν ὥσπερ	no-confirmed-topology
+1corintios	10	7	C2	γέγραπται	leaf	C1	subordinate	1	medium	suggested	==γέγραπται==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	10	7	C3	ἐκάθισεν	root-or-unresolved			0		unresolved-root	==ἐκάθισεν== ὁ λαὸς φαγεῖν καὶ πεῖν καὶ	no-confirmed-topology
+1corintios	10	7	C4	ἀνέστησαν	root-or-unresolved			0		unresolved-root	==ἀνέστησαν== παίζειν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	8	C1	πορνεύωμεν	root-parent			0		unresolved-root	μηδὲ ==πορνεύωμεν== καθώς τινες αὐτῶν	no-confirmed-topology
+1corintios	10	8	C2	ἐπόρνευσαν	leaf	C1	subordinate	1	medium	suggested	==ἐπόρνευσαν== καὶ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	10	8	C3	ἔπεσαν	root-or-unresolved			0		unresolved-root	==ἔπεσαν== μιᾷ ἡμέρᾳ εἴκοσι τρεῖς χιλιάδες	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	9	C1	ἐκπειράζωμεν	root-parent			0		unresolved-root	μηδὲ ==ἐκπειράζωμεν== τὸν χριστόν καθώς τινες αὐτῶν	no-confirmed-topology
+1corintios	10	9	C2	ἐπείρασαν	leaf	C1	subordinate	1	medium	suggested	==ἐπείρασαν== καὶ ὑπὸ τῶν ὄφεων	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	10	9	C3	ἀπώλλυντο	root-or-unresolved			0		unresolved-root	==ἀπώλλυντο==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	10	C1	γογγύζετε	root-parent			0		unresolved-root	μηδὲ ==γογγύζετε== καθάπερ τινὲς αὐτῶν	no-confirmed-topology
+1corintios	10	10	C2	ἐγόγγυσαν	leaf	C1	subordinate	1	medium	suggested	==ἐγόγγυσαν== καὶ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	10	10	C3	ἀπώλοντο	root-or-unresolved			0		unresolved-root	==ἀπώλοντο== ὑπὸ τοῦ ὀλοθρευτοῦ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	11	C1	συνέβαινεν	root-or-unresolved			0		unresolved-root	ταῦτα δὲ τυπικῶς ==συνέβαινεν== ἐκείνοις	no-confirmed-topology
+1corintios	10	11	C2	ἐγράφη	root-parent			0		unresolved-root	==ἐγράφη== δὲ πρὸς νουθεσίαν ἡμῶν εἰς οὓς τὰ τέλη τῶν αἰώνων	no-confirmed-topology
+1corintios	10	11	C3	κατήντηκεν	leaf	C2	coordinate	1	medium	suggested	==κατήντηκεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	12	C1	βλεπέτω	root-or-unresolved			0		unresolved-root	ὥστε ὁ δοκῶν ἑστάναι ==βλεπέτω== μὴ	no-confirmed-topology
+1corintios	10	12	C2	πέσῃ	root-or-unresolved			0		unresolved-root	==πέσῃ==	no-confirmed-topology
+1corintios	10	13	C1	εἴληφεν	root-or-unresolved			0		unresolved-root	πειρασμὸς ὑμᾶς οὐκ ==εἴληφεν==	no-confirmed-topology
+1corintios	10	13	C2	ἐάσει	root-or-unresolved			0		unresolved-root	εἰ μὴ ἀνθρώπινος πιστὸς δὲ ὁ θεός ὃς οὐκ ==ἐάσει== ὑμᾶς πειρασθῆναι ὑπὲρ ὃ	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	10	13	C3	δύνασθε	root-parent			0		unresolved-root	==δύνασθε== ἀλλὰ	no-confirmed-topology
+1corintios	10	13	C4	ποιήσει	leaf	C3	coordinate	1	medium	suggested	==ποιήσει== σὺν τῷ πειρασμῷ καὶ τὴν ἔκβασιν τοῦ δύνασθαι ὑπενεγκεῖν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	14	C1	φεύγετε	root-or-unresolved			0		unresolved-root	διόπερ ἀγαπητοί μου ==φεύγετε== ἀπὸ τῆς εἰδωλολατρίας	no-confirmed-topology
+1corintios	10	15	C1	λέγω	root-or-unresolved			0		unresolved-root	ὡς φρονίμοις ==λέγω==	no-confirmed-topology
+1corintios	10	15	C2	κρίνατε	root-or-unresolved			0		unresolved-root	==κρίνατε== ὑμεῖς ὅ	no-confirmed-topology
+1corintios	10	15	C3	φημι	root-or-unresolved			0		unresolved-root	==φημι==	no-confirmed-topology
+1corintios	10	16	C1	εὐλογοῦμεν	root-or-unresolved			0		unresolved-root	τὸ ποτήριον τῆς εὐλογίας ὃ ==εὐλογοῦμεν== οὐχὶ κοινωνία	no-confirmed-topology
+1corintios	10	16	C2	ἐστὶν	root-or-unresolved			0		unresolved-root	==ἐστὶν== τοῦ αἵματος τοῦ χριστοῦ τὸν ἄρτον ὃν	no-confirmed-topology
+1corintios	10	16	C3	κλῶμεν	root-or-unresolved			0		unresolved-root	==κλῶμεν== οὐχὶ κοινωνία τοῦ σώματος τοῦ χριστοῦ	no-confirmed-topology
+1corintios	10	16	C4	ἐστιν	root-or-unresolved			0		unresolved-root	==ἐστιν==	no-confirmed-topology
+1corintios	10	17	C1	ἐσμεν	root-parent			0		unresolved-root	ὅτι εἷς ἄρτος ἓν σῶμα οἱ πολλοί ==ἐσμεν== οἱ γὰρ πάντες ἐκ τοῦ ἑνὸς ἄρτου	no-confirmed-topology
+1corintios	10	17	C2	μετέχομεν	leaf	C1	subordinate	1	medium	suggested	==μετέχομεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	18	C1	βλέπετε	root-or-unresolved			0		unresolved-root	==βλέπετε== τὸν ἰσραὴλ κατὰ σάρκα οὐχ οἱ ἐσθίοντες τὰς θυσίας κοινωνοὶ τοῦ θυσιαστηρίου	no-confirmed-topology
+1corintios	10	18	C2	εἰσίν	root-or-unresolved			0		unresolved-root	==εἰσίν==	no-confirmed-topology
+1corintios	10	19	C1	φημι	root-parent			0		unresolved-root	τί οὖν ==φημι==	no-confirmed-topology
+1corintios	10	19	C2	ἐστιν	internal-node	C1	subordinate	1	medium	suggested	ὅτι εἰδωλόθυτόν τί ==ἐστιν== ἢ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	10	19	C3	ἐστιν	leaf	C2	coordinate	2	medium	suggested	ὅτι εἴδωλόν τί ==ἐστιν==	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	20	C1	θύουσιν	root-or-unresolved			0		unresolved-root	ἀλλʼ ὅτι ἃ ==θύουσιν== δαιμονίοις καὶ οὐ θεῷ	no-confirmed-topology
+1corintios	10	20	C2	θύουσιν	root-or-unresolved			0		unresolved-root	==θύουσιν== οὐ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	20	C3	θέλω	root-or-unresolved			0		unresolved-root	==θέλω== δὲ ὑμᾶς κοινωνοὺς τῶν δαιμονίων γίνεσθαι	no-confirmed-topology
+1corintios	10	21	C1	δύνασθε	root-or-unresolved			0		unresolved-root	οὐ ==δύνασθε== ποτήριον κυρίου πίνειν καὶ ποτήριον δαιμονίων οὐ	no-confirmed-topology
+1corintios	10	21	C2	δύνασθε	root-or-unresolved			0		unresolved-root	==δύνασθε== τραπέζης κυρίου μετέχειν καὶ τραπέζης δαιμονίων	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	22	C1	παραζηλοῦμεν	root-or-unresolved			0		unresolved-root	ἢ ==παραζηλοῦμεν== τὸν κύριον μὴ ἰσχυρότεροι αὐτοῦ	no-confirmed-topology
+1corintios	10	22	C2	ἐσμεν	root-or-unresolved			0		unresolved-root	==ἐσμεν==	no-confirmed-topology
+1corintios	10	23	C1	ἔξεστιν	root-parent			0		unresolved-root	πάντα ==ἔξεστιν== ἀλλʼ οὐ πάντα	no-confirmed-topology
+1corintios	10	23	C2	συμφέρει	leaf	C1	coordinate	1	medium	suggested	==συμφέρει== ⸁πάντα	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	23	C3	ἔξεστιν	root-parent			0		unresolved-root	==ἔξεστιν== ἀλλʼ οὐ πάντα	no-confirmed-topology
+1corintios	10	23	C4	οἰκοδομεῖ	leaf	C3	coordinate	1	medium	suggested	==οἰκοδομεῖ==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	24	C1	ζητείτω	root-or-unresolved			0		unresolved-root	μηδεὶς τὸ ἑαυτοῦ ==ζητείτω== ἀλλὰ τὸ τοῦ ἑτέρου	no-confirmed-topology
+1corintios	10	25	C1	ἐσθίετε	root-or-unresolved			0		unresolved-root	πᾶν τὸ ἐν μακέλλῳ πωλούμενον ==ἐσθίετε== μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν	no-confirmed-topology
+1corintios	10	27	C1	καλεῖ	root-or-unresolved			0		unresolved-root	εἴ τις ==καλεῖ== ὑμᾶς τῶν ἀπίστων καὶ	no-confirmed-topology
+1corintios	10	27	C2	θέλετε	root-or-unresolved			0		unresolved-root	==θέλετε== πορεύεσθαι πᾶν τὸ παρατιθέμενον ὑμῖν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	27	C3	ἐσθίετε	root-or-unresolved			0		unresolved-root	==ἐσθίετε== μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν	no-confirmed-topology
+1corintios	10	28	C1	εἴπῃ	root-or-unresolved			0		unresolved-root	ἐὰν δέ τις ὑμῖν ==εἴπῃ== τοῦτο ἱερόθυτόν	no-confirmed-topology
+1corintios	10	28	C2	ἐστιν	root-or-unresolved			0		unresolved-root	==ἐστιν== μὴ	no-confirmed-topology
+1corintios	10	28	C3	ἐσθίετε	root-or-unresolved			0		unresolved-root	==ἐσθίετε== διʼ ἐκεῖνον τὸν μηνύσαντα καὶ τὴν συνείδησιν	no-confirmed-topology
+1corintios	10	29	C1	λέγω	root-parent			0		unresolved-root	συνείδησιν δὲ ==λέγω== οὐχὶ τὴν ἑαυτοῦ ἀλλὰ τὴν τοῦ ἑτέρου ἱνατί γὰρ ἡ ἐλευθερία μου	no-confirmed-topology
+1corintios	10	29	C2	κρίνεται	leaf	C1	coordinate	1	medium	suggested	==κρίνεται== ὑπὸ ἄλλης συνειδήσεως	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	30	C1	μετέχω	root-or-unresolved			0		unresolved-root	εἰ ἐγὼ χάριτι ==μετέχω== τί	no-confirmed-topology
+1corintios	10	30	C2	βλασφημοῦμαι	root-or-unresolved			0		unresolved-root	==βλασφημοῦμαι== ὑπὲρ οὗ ἐγὼ	no-confirmed-topology
+1corintios	10	30	C3	εὐχαριστῶ	root-or-unresolved			0		unresolved-root	==εὐχαριστῶ==	no-confirmed-topology
+1corintios	10	31	C1	ἐσθίετε	root-parent			0		unresolved-root	εἴτε οὖν ==ἐσθίετε== εἴτε	no-confirmed-topology
+1corintios	10	31	C2	πίνετε	internal-node	C1	coordinate	1	medium	suggested	==πίνετε== εἴτε τι	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	31	C3	ποιεῖτε	leaf	C2	coordinate	2	medium	suggested	==ποιεῖτε== πάντα εἰς δόξαν θεοῦ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	10	31	C4	ποιεῖτε	root-or-unresolved			0		unresolved-root	==ποιεῖτε==	no-confirmed-topology
+1corintios	10	32	C1	γίνεσθε	root-or-unresolved			0		unresolved-root	ἀπρόσκοποι καὶ ἰουδαίοις ==γίνεσθε== καὶ ἕλλησιν καὶ τῇ ἐκκλησίᾳ τοῦ θεοῦ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	10	33	C1	ἀρέσκω	root-parent			0		unresolved-root	καθὼς κἀγὼ πάντα πᾶσιν ==ἀρέσκω== μὴ ζητῶν τὸ ἐμαυτοῦ σύμφορον ἀλλὰ τὸ τῶν πολλῶν	no-confirmed-topology
+1corintios	10	33	C2	σωθῶσιν	leaf	C1	coordinate	1	medium	suggested	ἵνα ==σωθῶσιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	1	C1	γίνεσθε	root-or-unresolved			0		unresolved-root	μιμηταί μου ==γίνεσθε== καθὼς κἀγὼ χριστοῦ	no-confirmed-topology
+1corintios	11	2	C1	ἐπαινῶ	root-parent			0		unresolved-root	==ἐπαινῶ== δὲ ὑμᾶς	no-confirmed-topology
+1corintios	11	2	C2	μέμνησθε	internal-node	C1	coordinate	1	medium	suggested	ὅτι πάντα μου ==μέμνησθε== καὶ καθὼς	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	2	C3	παρέδωκα	leaf	C2	subordinate	2	medium	suggested	==παρέδωκα== ὑμῖν τὰς παραδόσεις	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	11	2	C4	κατέχετε	root-or-unresolved			0		unresolved-root	==κατέχετε==	no-confirmed-topology
+1corintios	11	3	C1	θέλω	root-parent			0		unresolved-root	==θέλω== δὲ ὑμᾶς εἰδέναι	no-confirmed-topology
+1corintios	11	3	C2	ἐστιν	leaf	C1	coordinate	1	medium	suggested	ὅτι παντὸς ἀνδρὸς ἡ κεφαλὴ ὁ χριστός ==ἐστιν== κεφαλὴ δὲ γυναικὸς ὁ ἀνήρ κεφαλὴ δὲ τοῦ χριστοῦ ὁ θεός	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	4	C1	καταισχύνει	root-or-unresolved			0		unresolved-root	πᾶς ἀνὴρ προσευχόμενος ἢ προφητεύων κατὰ κεφαλῆς ἔχων ==καταισχύνει== τὴν κεφαλὴν αὐτοῦ	no-confirmed-topology
+1corintios	11	5	C1	καταισχύνει	root-parent			0		unresolved-root	πᾶσα δὲ γυνὴ προσευχομένη ἢ προφητεύουσα ἀκατακαλύπτῳ τῇ κεφαλῇ ==καταισχύνει== τὴν κεφαλὴν αὐτῆς ἓν γάρ	no-confirmed-topology
+1corintios	11	5	C2	ἐστιν	leaf	C1	subordinate	1	medium	suggested	==ἐστιν== καὶ τὸ αὐτὸ τῇ ἐξυρημένῃ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	6	C1	κατακαλύπτεται	root-or-unresolved			0		unresolved-root	εἰ γὰρ οὐ ==κατακαλύπτεται== γυνή καὶ	no-confirmed-topology
+1corintios	11	6	C2	κειράσθω	root-or-unresolved			0		unresolved-root	==κειράσθω==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	6	C3	κατακαλυπτέσθω	root-or-unresolved			0		unresolved-root	εἰ δὲ αἰσχρὸν γυναικὶ τὸ κείρασθαι ἢ ξυρᾶσθαι ==κατακαλυπτέσθω==	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	11	7	C1	ὀφείλει	root-parent			0		unresolved-root	ἀνὴρ μὲν γὰρ οὐκ ==ὀφείλει== κατακαλύπτεσθαι τὴν κεφαλήν εἰκὼν καὶ δόξα θεοῦ ὑπάρχων ἡ γυνὴ δὲ δόξα ἀνδρός	no-confirmed-topology
+1corintios	11	7	C2	ἐστιν	leaf	C1	coordinate	1	medium	suggested	==ἐστιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	11	8	C1	ἐστιν	root-or-unresolved			0		unresolved-root	οὐ γάρ ==ἐστιν== ἀνὴρ ἐκ γυναικός ἀλλὰ γυνὴ ἐξ ἀνδρός	no-confirmed-topology
+1corintios	11	9	C1	ἐκτίσθη	root-or-unresolved			0		unresolved-root	καὶ γὰρ οὐκ ==ἐκτίσθη== ἀνὴρ διὰ τὴν γυναῖκα ἀλλὰ γυνὴ διὰ τὸν ἄνδρα	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	10	C1	ὀφείλει	root-or-unresolved			0		unresolved-root	διὰ τοῦτο ==ὀφείλει== ἡ γυνὴ ἐξουσίαν ἔχειν ἐπὶ τῆς κεφαλῆς διὰ τοὺς ἀγγέλους	no-confirmed-topology
+1corintios	11	13	C1	κρίνατε	root-or-unresolved			0		unresolved-root	ἐν ὑμῖν αὐτοῖς ==κρίνατε== πρέπον	no-confirmed-topology
+1corintios	11	13	C2	ἐστὶν	root-or-unresolved			0		unresolved-root	==ἐστὶν== γυναῖκα ἀκατακάλυπτον τῷ θεῷ προσεύχεσθαι	no-confirmed-topology
+1corintios	11	14	C1	διδάσκει	root-parent			0		unresolved-root	οὐδὲ ἡ φύσις αὐτὴ ==διδάσκει== ὑμᾶς	no-confirmed-topology
+1corintios	11	14	C2	κομᾷ	leaf	C1	subordinate	1	medium	suggested	ὅτι ἀνὴρ μὲν ἐὰν ==κομᾷ== ἀτιμία αὐτῷ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	11	14	C3	ἐστιν	root-or-unresolved			0		unresolved-root	==ἐστιν==	no-confirmed-topology
+1corintios	11	15	C1	κομᾷ	root-or-unresolved			0		unresolved-root	γυνὴ δὲ ἐὰν ==κομᾷ== δόξα αὐτῇ	no-confirmed-topology
+1corintios	11	15	C2	ἐστιν	root-parent			0		unresolved-root	==ἐστιν==	no-confirmed-topology
+1corintios	11	15	C3	δέδοται	leaf	C2	subordinate	1	medium	suggested	ὅτι ἡ κόμη ἀντὶ περιβολαίου ==δέδοται==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	11	16	C1	δοκεῖ	root-or-unresolved			0		unresolved-root	εἰ δέ τις ==δοκεῖ== φιλόνεικος εἶναι ἡμεῖς τοιαύτην συνήθειαν οὐκ	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	11	16	C2	ἔχομεν	root-or-unresolved			0		unresolved-root	==ἔχομεν== οὐδὲ αἱ ἐκκλησίαι τοῦ θεοῦ	no-confirmed-topology
+1corintios	11	17	C1	ἐπαινῶ	root-parent			0		unresolved-root	τοῦτο δὲ παραγγέλλων οὐκ ==ἐπαινῶ==	no-confirmed-topology
+1corintios	11	17	C2	συνέρχεσθε	leaf	C1	subordinate	1	medium	suggested	ὅτι οὐκ εἰς τὸ κρεῖσσον ἀλλὰ εἰς τὸ ἧσσον ==συνέρχεσθε==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	11	18	C1	ἀκούω	root-or-unresolved			0		unresolved-root	πρῶτον μὲν γὰρ συνερχομένων ὑμῶν ἐν ἐκκλησίᾳ ==ἀκούω== σχίσματα ἐν ὑμῖν ὑπάρχειν καὶ μέρος τι	no-confirmed-topology
+1corintios	11	18	C2	πιστεύω	root-or-unresolved			0		unresolved-root	==πιστεύω==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	19	C1	δεῖ	root-parent			0		unresolved-root	==δεῖ== γὰρ καὶ αἱρέσεις ἐν ὑμῖν εἶναι	no-confirmed-topology
+1corintios	11	19	C2	γένωνται	leaf	C1	subordinate	1	medium	suggested	ἵνα καὶ οἱ δόκιμοι φανεροὶ ==γένωνται== ἐν ὑμῖν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	11	20	C1	ἔστιν	root-or-unresolved			0		unresolved-root	συνερχομένων οὖν ὑμῶν ἐπὶ τὸ αὐτὸ οὐκ ==ἔστιν== κυριακὸν δεῖπνον φαγεῖν	no-confirmed-topology
+1corintios	11	21	C1	προλαμβάνει	root-or-unresolved			0		unresolved-root	ἕκαστος γὰρ τὸ ἴδιον δεῖπνον ==προλαμβάνει== ἐν τῷ φαγεῖν	no-confirmed-topology
+1corintios	11	21	C2	πεινᾷ	root-parent			0		unresolved-root	καὶ ὃς μὲν ==πεινᾷ==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	21	C3	μεθύει	leaf	C2	coordinate	1	medium	suggested	ὃς δὲ ==μεθύει==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	22	C1	ἔχετε	root-parent			0		unresolved-root	μὴ γὰρ οἰκίας οὐκ ==ἔχετε== εἰς τὸ ἐσθίειν καὶ πίνειν ἢ τῆς ἐκκλησίας τοῦ θεοῦ	no-confirmed-topology
+1corintios	11	22	C2	καταφρονεῖτε	leaf	C1	coordinate	1	medium	suggested	==καταφρονεῖτε== καὶ	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	11	22	C3	καταισχύνετε	root-or-unresolved			0		unresolved-root	==καταισχύνετε== τοὺς μὴ ἔχοντας τί	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	22	C4	εἴπω	root-or-unresolved			0		unresolved-root	==εἴπω== ὑμῖν	no-confirmed-topology
+1corintios	11	22	C5	ἐπαινέσω	root-or-unresolved			0		unresolved-root	==ἐπαινέσω== ὑμᾶς ἐν τούτῳ οὐκ	no-confirmed-topology
+1corintios	11	22	C6	ἐπαινῶ	root-or-unresolved			0		unresolved-root	==ἐπαινῶ==	no-confirmed-topology
+1corintios	11	23	C1	παρέλαβον	root-or-unresolved			0		unresolved-root	ἐγὼ γὰρ ==παρέλαβον== ἀπὸ τοῦ κυρίου ὃ καὶ	no-confirmed-topology
+1corintios	11	23	C2	παρέδωκα	root-parent			0		unresolved-root	==παρέδωκα== ὑμῖν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	23	C3	παρεδίδετο	leaf	C2	subordinate	1	medium	suggested	ὅτι ὁ κύριος ἰησοῦς ἐν τῇ νυκτὶ ᾗ ==παρεδίδετο==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	11	23	C4	ἔλαβεν	root-or-unresolved			0		unresolved-root	==ἔλαβεν== ἄρτον	no-confirmed-topology
+1corintios	11	24	C1	ἔκλασεν	root-or-unresolved			0		unresolved-root	καὶ εὐχαριστήσας ==ἔκλασεν== καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	24	C2	εἶπεν	root-or-unresolved			0		unresolved-root	==εἶπεν== τοῦτό μού	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	24	C3	ἐστιν	root-or-unresolved			0		unresolved-root	==ἐστιν== τὸ σῶμα τὸ ὑπὲρ ὑμῶν τοῦτο	no-confirmed-topology
+1corintios	11	24	C4	ποιεῖτε	root-or-unresolved			0		unresolved-root	==ποιεῖτε== εἰς τὴν ἐμὴν ἀνάμνησιν	no-confirmed-topology
+1corintios	11	25	C1	ἐστὶν	root-or-unresolved			0		unresolved-root	ὡσαύτως καὶ τὸ ποτήριον μετὰ τὸ δειπνῆσαι λέγων τοῦτο τὸ ποτήριον ἡ καινὴ διαθήκη ==ἐστὶν== ἐν τῷ ἐμῷ αἵματι τοῦτο	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	25	C2	ποιεῖτε	root-parent			0		unresolved-root	==ποιεῖτε== ὁσάκις	no-confirmed-topology
+1corintios	11	25	C3	πίνητε	leaf	C2	subordinate	1	medium	suggested	ἐὰν ==πίνητε== εἰς τὴν ἐμὴν ἀνάμνησιν	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	11	26	C1	ἐσθίητε	root-or-unresolved			0		unresolved-root	ὁσάκις γὰρ ἐὰν ==ἐσθίητε== τὸν ἄρτον τοῦτον καὶ τὸ ποτήριον	no-confirmed-topology
+1corintios	11	26	C2	πίνητε	root-or-unresolved			0		unresolved-root	==πίνητε== τὸν θάνατον τοῦ κυρίου	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	26	C3	καταγγέλλετε	root-or-unresolved			0		unresolved-root	==καταγγέλλετε== ἄχρι οὗ	no-confirmed-topology
+1corintios	11	26	C4	ἔλθῃ	root-or-unresolved			0		unresolved-root	==ἔλθῃ==	no-confirmed-topology
+1corintios	11	27	C1	ἐσθίῃ	root-parent			0		unresolved-root	ὥστε ὃς ἂν ==ἐσθίῃ== τὸν ἄρτον ἢ	no-confirmed-topology
+1corintios	11	27	C2	πίνῃ	leaf	C1	coordinate	1	medium	suggested	==πίνῃ== τὸ ποτήριον τοῦ κυρίου ἀναξίως ἔνοχος	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	27	C3	ἔσται	root-or-unresolved			0		unresolved-root	==ἔσται== τοῦ σώματος καὶ τοῦ αἵματος τοῦ κυρίου	no-confirmed-topology
+1corintios	11	28	C1	δοκιμαζέτω	root-parent			0		unresolved-root	==δοκιμαζέτω== δὲ ἄνθρωπος ἑαυτόν καὶ οὕτως ἐκ τοῦ ἄρτου	no-confirmed-topology
+1corintios	11	28	C2	ἐσθιέτω	leaf	C1	coordinate	1	medium	suggested	==ἐσθιέτω== καὶ ἐκ τοῦ ποτηρίου	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	11	28	C3	πινέτω	root-or-unresolved			0		unresolved-root	==πινέτω==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	29	C1	ἐσθίει	root-or-unresolved			0		unresolved-root	ὁ γὰρ ἐσθίων καὶ πίνων κρίμα ἑαυτῷ ==ἐσθίει== καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	29	C2	πίνει	root-or-unresolved			0		unresolved-root	==πίνει== μὴ διακρίνων τὸ σῶμα	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	30	C1	κοιμῶνται	root-or-unresolved			0		unresolved-root	διὰ τοῦτο ἐν ὑμῖν πολλοὶ ἀσθενεῖς καὶ ἄρρωστοι καὶ ==κοιμῶνται== ἱκανοί	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	11	31	C1	διεκρίνομεν	root-or-unresolved			0		unresolved-root	εἰ δὲ ἑαυτοὺς ==διεκρίνομεν== οὐκ ἂν	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	11	31	C2	ἐκρινόμεθα	root-or-unresolved			0		unresolved-root	==ἐκρινόμεθα==	no-confirmed-topology
+1corintios	11	32	C1	παιδευόμεθα	root-parent			0		unresolved-root	κρινόμενοι δὲ ὑπὸ κυρίου ==παιδευόμεθα==	no-confirmed-topology
+1corintios	11	32	C2	κατακριθῶμεν	leaf	C1	subordinate	1	medium	suggested	ἵνα μὴ σὺν τῷ κόσμῳ ==κατακριθῶμεν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	11	33	C1	ἐκδέχεσθε	root-or-unresolved			0		unresolved-root	ὥστε ἀδελφοί μου συνερχόμενοι εἰς τὸ φαγεῖν ἀλλήλους ==ἐκδέχεσθε==	no-confirmed-topology
+1corintios	11	34	C1	πεινᾷ	root-or-unresolved			0		unresolved-root	εἴ τις ==πεινᾷ== ἐν οἴκῳ	no-confirmed-topology
+1corintios	11	34	C2	ἐσθιέτω	root-parent			0		unresolved-root	==ἐσθιέτω==	no-confirmed-topology
+1corintios	11	34	C3	συνέρχησθε	internal-node	C2	subordinate	1	medium	suggested	ἵνα μὴ εἰς κρίμα ==συνέρχησθε== τὰ δὲ λοιπὰ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	11	34	C4	ἔλθω	leaf	C3	coordinate	2	medium	suggested	ὡς ἂν ==ἔλθω==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	11	34	C5	διατάξομαι	root-or-unresolved			0		unresolved-root	==διατάξομαι==	no-confirmed-topology
+1corintios	12	1	C1	θέλω	root-or-unresolved			0		unresolved-root	περὶ δὲ τῶν πνευματικῶν ἀδελφοί οὐ ==θέλω== ὑμᾶς ἀγνοεῖν	no-confirmed-topology
+1corintios	12	2	C1	οἴδατε	root-parent			0		unresolved-root	==οἴδατε==	no-confirmed-topology
+1corintios	12	2	C2	ἦτε	internal-node	C1	subordinate	1	medium	suggested	ὅτι ὅτε ἔθνη ==ἦτε== πρὸς τὰ εἴδωλα τὰ ἄφωνα	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	12	2	C3	ἤγεσθε	leaf	C2	subordinate	2	medium	suggested	ὡς ἂν ==ἤγεσθε== ἀπαγόμενοι	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	12	3	C1	γνωρίζω	root-parent			0		unresolved-root	διὸ ==γνωρίζω== ὑμῖν	no-confirmed-topology
+1corintios	12	3	C2	λέγει	leaf	C1	subordinate	1	medium	suggested	ὅτι οὐδεὶς ἐν πνεύματι θεοῦ λαλῶν ==λέγει== ἀνάθεμα ἰησοῦς καὶ οὐδεὶς	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	12	3	C3	δύναται	root-or-unresolved			0		unresolved-root	==δύναται== εἰπεῖν κύριος ἰησοῦς εἰ μὴ ἐν πνεύματι ἁγίῳ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	4	C1	εἰσίν	root-or-unresolved			0		unresolved-root	διαιρέσεις δὲ χαρισμάτων ==εἰσίν== τὸ δὲ αὐτὸ πνεῦμα	no-confirmed-topology
+1corintios	12	5	C1	εἰσιν	root-or-unresolved			0		unresolved-root	καὶ διαιρέσεις διακονιῶν ==εἰσιν== καὶ ὁ αὐτὸς κύριος	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	6	C1	εἰσίν	root-or-unresolved			0		unresolved-root	καὶ διαιρέσεις ἐνεργημάτων ==εἰσίν== ὁ δὲ αὐτὸς θεός ὁ ἐνεργῶν τὰ πάντα ἐν πᾶσιν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	7	C1	δίδοται	root-or-unresolved			0		unresolved-root	ἑκάστῳ δὲ ==δίδοται== ἡ φανέρωσις τοῦ πνεύματος πρὸς τὸ συμφέρον	no-confirmed-topology
+1corintios	12	8	C1	δίδοται	root-or-unresolved			0		unresolved-root	ᾧ μὲν γὰρ διὰ τοῦ πνεύματος ==δίδοται== λόγος σοφίας ἄλλῳ δὲ λόγος γνώσεως κατὰ τὸ αὐτὸ πνεῦμα	no-confirmed-topology
+1corintios	12	11	C1	ἐνεργεῖ	root-parent			0		unresolved-root	πάντα δὲ ταῦτα ==ἐνεργεῖ== τὸ ἓν καὶ τὸ αὐτὸ πνεῦμα διαιροῦν ἰδίᾳ ἑκάστῳ καθὼς	no-confirmed-topology
+1corintios	12	11	C2	βούλεται	leaf	C1	subordinate	1	medium	suggested	==βούλεται==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	12	12	C1	ἐστιν	root-or-unresolved			0		unresolved-root	καθάπερ γὰρ τὸ σῶμα ἕν ==ἐστιν== καὶ μέλη πολλὰ	no-confirmed-topology
+1corintios	12	12	C2	ἔχει	root-parent			0		unresolved-root	==ἔχει== πάντα δὲ τὰ μέλη τοῦ σώματος πολλὰ ὄντα ἕν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	12	C3	ἐστιν	leaf	C2	coordinate	1	medium	suggested	==ἐστιν== σῶμα οὕτως καὶ ὁ χριστός	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	12	13	C1	ἐβαπτίσθημεν	root-parent			0		unresolved-root	καὶ γὰρ ἐν ἑνὶ πνεύματι ἡμεῖς πάντες εἰς ἓν σῶμα ==ἐβαπτίσθημεν== εἴτε ἰουδαῖοι εἴτε ἕλληνες εἴτε δοῦλοι εἴτε ἐλεύθεροι καὶ πάντες ἓν πνεῦμα	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	13	C2	ἐποτίσθημεν	leaf	C1	coordinate	1	medium	suggested	==ἐποτίσθημεν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	12	14	C1	ἔστιν	root-or-unresolved			0		unresolved-root	καὶ γὰρ τὸ σῶμα οὐκ ==ἔστιν== ἓν μέλος ἀλλὰ πολλά	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	15	C1	εἴπῃ	root-parent			0		unresolved-root	ἐὰν ==εἴπῃ== ὁ πούς	no-confirmed-topology
+1corintios	12	15	C2	εἰμὶ	leaf	C1	subordinate	1	medium	suggested	ὅτι οὐκ ==εἰμὶ== χείρ οὐκ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	12	15	C3	εἰμὶ	root-or-unresolved			0		unresolved-root	==εἰμὶ== ἐκ τοῦ σώματος οὐ παρὰ τοῦτο οὐκ	no-confirmed-topology
+1corintios	12	15	C4	ἔστιν	root-or-unresolved			0		unresolved-root	==ἔστιν== ἐκ τοῦ σώματος	no-confirmed-topology
+1corintios	12	16	C1	εἴπῃ	root-parent			0		unresolved-root	καὶ ἐὰν ==εἴπῃ== τὸ οὖς	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	16	C2	εἰμὶ	leaf	C1	subordinate	1	medium	suggested	ὅτι οὐκ ==εἰμὶ== ὀφθαλμός οὐκ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	12	16	C3	εἰμὶ	root-or-unresolved			0		unresolved-root	==εἰμὶ== ἐκ τοῦ σώματος οὐ παρὰ τοῦτο οὐκ	no-confirmed-topology
+1corintios	12	16	C4	ἔστιν	root-or-unresolved			0		unresolved-root	==ἔστιν== ἐκ τοῦ σώματος	no-confirmed-topology
+1corintios	12	18	C1	ἔθετο	root-parent			0		unresolved-root	νυνὶ δὲ ὁ θεὸς ==ἔθετο== τὰ μέλη ἓν ἕκαστον αὐτῶν ἐν τῷ σώματι καθὼς	no-confirmed-topology
+1corintios	12	18	C2	ἠθέλησεν	leaf	C1	subordinate	1	medium	suggested	==ἠθέλησεν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	12	19	C1	ἦν	root-or-unresolved			0		unresolved-root	εἰ δὲ ==ἦν== τὰ πάντα ἓν μέλος ποῦ τὸ σῶμα	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	12	21	C1	δύναται	root-parent			0		unresolved-root	οὐ ==δύναται== δὲ ὁ ὀφθαλμὸς εἰπεῖν τῇ χειρί χρείαν σου οὐκ	no-confirmed-topology
+1corintios	12	21	C2	ἔχω	internal-node	C1	coordinate	1	medium	suggested	==ἔχω== ἢ πάλιν ἡ κεφαλὴ τοῖς ποσίν χρείαν ὑμῶν οὐκ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	12	21	C3	ἔχω	leaf	C2	coordinate	2	medium	suggested	==ἔχω==	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	12	22	C1	ἐστιν	root-or-unresolved			0		unresolved-root	ἀλλὰ πολλῷ μᾶλλον τὰ δοκοῦντα μέλη τοῦ σώματος ἀσθενέστερα ὑπάρχειν ἀναγκαῖά ==ἐστιν==	no-confirmed-topology
+1corintios	12	23	C1	δοκοῦμεν	root-or-unresolved			0		unresolved-root	καὶ ἃ ==δοκοῦμεν== ἀτιμότερα εἶναι τοῦ σώματος τούτοις τιμὴν περισσοτέραν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	23	C2	περιτίθεμεν	root-or-unresolved			0		unresolved-root	==περιτίθεμεν== καὶ τὰ ἀσχήμονα ἡμῶν εὐσχημοσύνην περισσοτέραν	no-confirmed-topology
+1corintios	12	23	C3	ἔχει	root-or-unresolved			0		unresolved-root	==ἔχει==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	24	C1	ἔχει	root-parent			0		unresolved-root	τὰ δὲ εὐσχήμονα ἡμῶν οὐ χρείαν ==ἔχει== ἀλλὰ ὁ θεὸς	no-confirmed-topology
+1corintios	12	24	C2	συνεκέρασεν	leaf	C1	coordinate	1	medium	suggested	==συνεκέρασεν== τὸ σῶμα τῷ ὑστεροῦντι περισσοτέραν δοὺς τιμήν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	12	25	C1	ᾖ	root-parent			0		unresolved-root	ἵνα μὴ ==ᾖ== σχίσμα ἐν τῷ σώματι ἀλλὰ τὸ αὐτὸ ὑπὲρ ἀλλήλων	no-confirmed-topology
+1corintios	12	25	C2	μεριμνῶσι	leaf	C1	coordinate	1	medium	suggested	==μεριμνῶσι== τὰ μέλη	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	12	26	C1	πάσχει	root-or-unresolved			0		unresolved-root	καὶ εἴτε ==πάσχει== ἓν μέλος	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	26	C2	συμπάσχει	root-parent			0		unresolved-root	==συμπάσχει== πάντα τὰ μέλη εἴτε	no-confirmed-topology
+1corintios	12	26	C3	δοξάζεται	leaf	C2	coordinate	1	medium	suggested	==δοξάζεται== μέλος	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	12	26	C4	συγχαίρει	root-or-unresolved			0		unresolved-root	==συγχαίρει== πάντα τὰ μέλη	no-confirmed-topology
+1corintios	12	27	C1	ἐστε	root-or-unresolved			0		unresolved-root	ὑμεῖς δέ ==ἐστε== σῶμα χριστοῦ καὶ μέλη ἐκ μέρους	no-confirmed-topology
+1corintios	12	28	C1	ἔθετο	root-or-unresolved			0		unresolved-root	καὶ οὓς μὲν ==ἔθετο== ὁ θεὸς ἐν τῇ ἐκκλησίᾳ πρῶτον ἀποστόλους δεύτερον προφήτας τρίτον διδασκάλους ἔπειτα δυνάμεις ἔπειτα χαρίσματα ἰαμάτων ἀντιλήμψεις κυβερνήσεις γένη γλωσσῶν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	12	30	C1	ἔχουσιν	root-or-unresolved			0		unresolved-root	μὴ πάντες χαρίσματα ==ἔχουσιν== ἰαμάτων μὴ πάντες γλώσσαις	no-confirmed-topology
+1corintios	12	30	C2	λαλοῦσιν	root-or-unresolved			0		unresolved-root	==λαλοῦσιν== μὴ πάντες	no-confirmed-topology
+1corintios	12	30	C3	διερμηνεύουσιν	root-or-unresolved			0		unresolved-root	==διερμηνεύουσιν==	no-confirmed-topology
+1corintios	12	31	C1	ζηλοῦτε	root-parent			0		unresolved-root	==ζηλοῦτε== δὲ τὰ χαρίσματα τὰ μείζονα καὶ ἔτι καθʼ ὑπερβολὴν ὁδὸν ὑμῖν	no-confirmed-topology
+1corintios	12	31	C2	δείκνυμι	leaf	C1	coordinate	1	medium	suggested	==δείκνυμι==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	13	1	C1	λαλῶ	root-parent			0		unresolved-root	ἐὰν ταῖς γλώσσαις τῶν ἀνθρώπων ==λαλῶ== καὶ τῶν ἀγγέλων ἀγάπην δὲ μὴ	no-confirmed-topology
+1corintios	13	1	C2	ἔχω	leaf	C1	coordinate	1	medium	suggested	==ἔχω==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	13	1	C3	γέγονα	root-or-unresolved			0		unresolved-root	==γέγονα== χαλκὸς ἠχῶν ἢ κύμβαλον ἀλαλάζον	no-confirmed-topology
+1corintios	13	2	C1	ἔχω	root-or-unresolved			0		unresolved-root	καὶ ἐὰν ==ἔχω== προφητείαν καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	13	2	C2	εἰδῶ	root-or-unresolved			0		unresolved-root	==εἰδῶ== τὰ μυστήρια πάντα καὶ πᾶσαν τὴν γνῶσιν ⸄καὶ ἐὰν⸅	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	13	2	C3	ἔχω	root-parent			0		unresolved-root	==ἔχω== πᾶσαν τὴν πίστιν	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	13	2	C4	ἔχω	leaf	C3	subordinate	1	medium	suggested	ὥστε ὄρη μεθιστάναι ἀγάπην δὲ μὴ ==ἔχω== οὐθέν	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	13	2	C5	εἰμι	root-or-unresolved			0		unresolved-root	==εἰμι==	no-confirmed-topology
+1corintios	13	3	C1	ψωμίσω	root-or-unresolved			0		unresolved-root	καὶ ἐὰν ==ψωμίσω== πάντα τὰ ὑπάρχοντά μου ⸄καὶ ἐὰν⸅	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	13	3	C2	παραδῶ	root-parent			0		unresolved-root	==παραδῶ== τὸ σῶμά μου	no-confirmed-topology
+1corintios	13	3	C3	καυθήσομαι	internal-node	C2	subordinate	1	medium	suggested	ἵνα ==καυθήσομαι== ἀγάπην δὲ μὴ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	13	3	C4	ἔχω	leaf	C3	coordinate	2	medium	suggested	==ἔχω== οὐδὲν	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	13	3	C5	ὠφελοῦμαι	root-or-unresolved			0		unresolved-root	==ὠφελοῦμαι==	no-confirmed-topology
+1corintios	13	4	C1	μακροθυμεῖ	root-or-unresolved			0		unresolved-root	ἡ ἀγάπη ==μακροθυμεῖ==	no-confirmed-topology
+1corintios	13	4	C2	χρηστεύεται	root-or-unresolved			0		unresolved-root	==χρηστεύεται== ἡ ἀγάπη οὐ	no-confirmed-topology
+1corintios	13	4	C3	ζηλοῖ	root-or-unresolved			0		unresolved-root	==ζηλοῖ== ἡ ἀγάπη οὐ	no-confirmed-topology
+1corintios	13	4	C4	περπερεύεται	root-or-unresolved			0		unresolved-root	==περπερεύεται== οὐ	no-confirmed-topology
+1corintios	13	4	C5	φυσιοῦται	root-or-unresolved			0		unresolved-root	==φυσιοῦται==	no-confirmed-topology
+1corintios	13	5	C1	ἀσχημονεῖ	root-or-unresolved			0		unresolved-root	οὐκ ==ἀσχημονεῖ== οὐ	no-confirmed-topology
+1corintios	13	5	C2	ζητεῖ	root-or-unresolved			0		unresolved-root	==ζητεῖ== τὰ ἑαυτῆς οὐ	no-confirmed-topology
+1corintios	13	5	C3	παροξύνεται	root-or-unresolved			0		unresolved-root	==παροξύνεται== οὐ	no-confirmed-topology
+1corintios	13	5	C4	λογίζεται	root-or-unresolved			0		unresolved-root	==λογίζεται== τὸ κακόν	no-confirmed-topology
+1corintios	13	6	C1	χαίρει	root-or-unresolved			0		unresolved-root	οὐ ==χαίρει== ἐπὶ τῇ ἀδικίᾳ	no-confirmed-topology
+1corintios	13	6	C2	συγχαίρει	root-or-unresolved			0		unresolved-root	==συγχαίρει== δὲ τῇ ἀληθείᾳ	no-confirmed-topology
+1corintios	13	7	C1	στέγει	root-or-unresolved			0		unresolved-root	πάντα ==στέγει== πάντα	no-confirmed-topology
+1corintios	13	7	C2	πιστεύει	root-or-unresolved			0		unresolved-root	==πιστεύει== πάντα	no-confirmed-topology
+1corintios	13	7	C3	ἐλπίζει	root-or-unresolved			0		unresolved-root	==ἐλπίζει== πάντα	no-confirmed-topology
+1corintios	13	7	C4	ὑπομένει	root-or-unresolved			0		unresolved-root	==ὑπομένει==	no-confirmed-topology
+1corintios	13	8	C1	πίπτει	root-parent			0		unresolved-root	ἡ ἀγάπη οὐδέποτε ==πίπτει== εἴτε δὲ προφητεῖαι	no-confirmed-topology
+1corintios	13	8	C2	καταργηθήσονται	internal-node	C1	coordinate	1	medium	suggested	==καταργηθήσονται== εἴτε γλῶσσαι	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	13	8	C3	παύσονται	internal-node	C2	coordinate	2	medium	suggested	==παύσονται== εἴτε γνῶσις	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	13	8	C4	καταργηθήσεται	leaf	C3	coordinate	3	medium	suggested	==καταργηθήσεται==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	13	9	C1	γινώσκομεν	root-or-unresolved			0		unresolved-root	ἐκ μέρους γὰρ ==γινώσκομεν== καὶ ἐκ μέρους	no-confirmed-topology
+1corintios	13	9	C2	προφητεύομεν	root-or-unresolved			0		unresolved-root	==προφητεύομεν==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	13	10	C1	ἔλθῃ	root-or-unresolved			0		unresolved-root	ὅταν δὲ ==ἔλθῃ== τὸ τέλειον τὸ ἐκ μέρους	no-confirmed-topology
+1corintios	13	10	C2	καταργηθήσεται	root-or-unresolved			0		unresolved-root	==καταργηθήσεται==	no-confirmed-topology
+1corintios	13	11	C1	ἤμην	root-or-unresolved			0		unresolved-root	ὅτε ==ἤμην== νήπιος	no-confirmed-topology
+1corintios	13	11	C2	ἐλάλουν	root-parent			0		unresolved-root	==ἐλάλουν==	no-confirmed-topology
+1corintios	13	11	C3	ἐφρόνουν	internal-node	C2	subordinate	1	medium	suggested	ὡς νήπιος ==ἐφρόνουν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	13	11	C4	ἐλογιζόμην	internal-node	C3	subordinate	2	medium	suggested	ὡς νήπιος ==ἐλογιζόμην==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	13	11	C5	γέγονα	leaf	C4	subordinate	3	medium	suggested	ὡς νήπιος ὅτε ==γέγονα== ἀνήρ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	13	11	C6	κατήργηκα	root-or-unresolved			0		unresolved-root	==κατήργηκα== τὰ τοῦ νηπίου	no-confirmed-topology
+1corintios	13	12	C1	βλέπομεν	root-parent			0		unresolved-root	==βλέπομεν== γὰρ ἄρτι διʼ ἐσόπτρου ἐν αἰνίγματι τότε δὲ πρόσωπον πρὸς πρόσωπον ἄρτι	no-confirmed-topology
+1corintios	13	12	C2	γινώσκω	internal-node	C1	subordinate	1	medium	suggested	==γινώσκω== ἐκ μέρους τότε δὲ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	13	12	C3	ἐπιγνώσομαι	internal-node	C2	coordinate	2	medium	suggested	==ἐπιγνώσομαι== καθὼς καὶ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	13	12	C4	ἐπεγνώσθην	leaf	C3	subordinate	3	medium	suggested	==ἐπεγνώσθην==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	13	13	C1	μένει	root-or-unresolved			0		unresolved-root	νυνὶ δὲ ==μένει== πίστις ἐλπίς ἀγάπη τὰ τρία ταῦτα μείζων δὲ τούτων ἡ ἀγάπη	no-confirmed-topology
+1corintios	14	1	C1	διώκετε	root-or-unresolved			0		unresolved-root	==διώκετε== τὴν ἀγάπην	no-confirmed-topology
+1corintios	14	1	C2	ζηλοῦτε	root-parent			0		unresolved-root	==ζηλοῦτε== δὲ τὰ πνευματικά μᾶλλον δὲ	no-confirmed-topology
+1corintios	14	1	C3	προφητεύητε	leaf	C2	coordinate	1	medium	suggested	ἵνα ==προφητεύητε==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	2	C1	λαλεῖ	root-parent			0		unresolved-root	ὁ γὰρ λαλῶν γλώσσῃ οὐκ ἀνθρώποις ==λαλεῖ== ἀλλὰ θεῷ οὐδεὶς γὰρ	no-confirmed-topology
+1corintios	14	2	C2	ἀκούει	internal-node	C1	coordinate	1	medium	suggested	==ἀκούει== πνεύματι δὲ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	2	C3	λαλεῖ	leaf	C2	coordinate	2	medium	suggested	==λαλεῖ== μυστήρια	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	3	C1	λαλεῖ	root-or-unresolved			0		unresolved-root	ὁ δὲ προφητεύων ἀνθρώποις ==λαλεῖ== οἰκοδομὴν καὶ παράκλησιν καὶ παραμυθίαν	no-confirmed-topology
+1corintios	14	4	C1	οἰκοδομεῖ	root-parent			0		unresolved-root	ὁ λαλῶν γλώσσῃ ἑαυτὸν ==οἰκοδομεῖ== ὁ δὲ προφητεύων ἐκκλησίαν	no-confirmed-topology
+1corintios	14	4	C2	οἰκοδομεῖ	leaf	C1	coordinate	1	medium	suggested	==οἰκοδομεῖ==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	5	C1	θέλω	root-parent			0		unresolved-root	==θέλω== δὲ πάντας ὑμᾶς λαλεῖν γλώσσαις μᾶλλον δὲ	no-confirmed-topology
+1corintios	14	5	C2	προφητεύητε	internal-node	C1	coordinate	1	medium	suggested	ἵνα ==προφητεύητε== μείζων δὲ ὁ προφητεύων ἢ ὁ λαλῶν γλώσσαις ἐκτὸς	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	5	C3	διερμηνεύῃ	internal-node	C2	coordinate	2	medium	suggested	εἰ μὴ ==διερμηνεύῃ==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	5	C4	λάβῃ	leaf	C3	subordinate	3	medium	suggested	ἵνα ἡ ἐκκλησία οἰκοδομὴν ==λάβῃ==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	6	C1	ἔλθω	root-or-unresolved			0		unresolved-root	νῦν δέ ἀδελφοί ἐὰν ==ἔλθω== πρὸς ὑμᾶς γλώσσαις λαλῶν τί ὑμᾶς	no-confirmed-topology
+1corintios	14	6	C2	ὠφελήσω	root-parent			0		unresolved-root	==ὠφελήσω==	no-confirmed-topology
+1corintios	14	6	C3	λαλήσω	leaf	C2	subordinate	1	medium	suggested	ἐὰν μὴ ὑμῖν ==λαλήσω== ἢ ἐν ἀποκαλύψει ἢ ἐν γνώσει ἢ ἐν προφητείᾳ ἢ ἐν διδαχῇ	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	7	C1	δῷ	root-or-unresolved			0		unresolved-root	ὅμως τὰ ἄψυχα φωνὴν διδόντα εἴτε αὐλὸς εἴτε κιθάρα ἐὰν διαστολὴν τοῖς φθόγγοις μὴ ==δῷ== πῶς	no-confirmed-topology
+1corintios	14	7	C2	γνωσθήσεται	root-or-unresolved			0		unresolved-root	==γνωσθήσεται== τὸ αὐλούμενον ἢ τὸ κιθαριζόμενον	no-confirmed-topology
+1corintios	14	8	C1	δῷ	root-or-unresolved			0		unresolved-root	καὶ γὰρ ἐὰν ἄδηλον φωνὴν σάλπιγξ ==δῷ== τίς	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	8	C2	παρασκευάσεται	root-or-unresolved			0		unresolved-root	==παρασκευάσεται== εἰς πόλεμον	no-confirmed-topology
+1corintios	14	9	C1	δῶτε	root-or-unresolved			0		unresolved-root	οὕτως καὶ ὑμεῖς διὰ τῆς γλώσσης ἐὰν μὴ εὔσημον λόγον ==δῶτε== πῶς	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	9	C2	γνωσθήσεται	root-or-unresolved			0		unresolved-root	==γνωσθήσεται== τὸ λαλούμενον	no-confirmed-topology
+1corintios	14	9	C3	ἔσεσθε	root-or-unresolved			0		unresolved-root	==ἔσεσθε== γὰρ εἰς ἀέρα λαλοῦντες	no-confirmed-topology
+1corintios	14	10	C1	εἰσιν	root-or-unresolved			0		unresolved-root	τοσαῦτα εἰ τύχοι γένη φωνῶν ==εἰσιν== ἐν κόσμῳ καὶ οὐδὲν ἄφωνον	no-confirmed-topology
+1corintios	14	11	C1	εἰδῶ	root-or-unresolved			0		unresolved-root	ἐὰν οὖν μὴ ==εἰδῶ== τὴν δύναμιν τῆς φωνῆς	no-confirmed-topology
+1corintios	14	11	C2	ἔσομαι	root-or-unresolved			0		unresolved-root	==ἔσομαι== τῷ λαλοῦντι βάρβαρος καὶ ὁ λαλῶν ἐν ἐμοὶ βάρβαρος	no-confirmed-topology
+1corintios	14	12	C1	ἐστε	root-or-unresolved			0		unresolved-root	οὕτως καὶ ὑμεῖς ἐπεὶ ζηλωταί ==ἐστε== πνευμάτων πρὸς τὴν οἰκοδομὴν τῆς ἐκκλησίας	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	12	C2	ζητεῖτε	root-parent			0		unresolved-root	==ζητεῖτε==	no-confirmed-topology
+1corintios	14	12	C3	περισσεύητε	leaf	C2	subordinate	1	medium	suggested	ἵνα ==περισσεύητε==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	13	C1	προσευχέσθω	root-parent			0		unresolved-root	διὸ ὁ λαλῶν γλώσσῃ ==προσευχέσθω==	no-confirmed-topology
+1corintios	14	13	C2	διερμηνεύῃ	leaf	C1	subordinate	1	medium	suggested	ἵνα ==διερμηνεύῃ==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	14	C1	προσεύχωμαι	root-or-unresolved			0		unresolved-root	ἐὰν γὰρ ==προσεύχωμαι== γλώσσῃ τὸ πνεῦμά μου	no-confirmed-topology
+1corintios	14	14	C2	προσεύχεται	root-parent			0		unresolved-root	==προσεύχεται== ὁ δὲ νοῦς μου ἄκαρπός	no-confirmed-topology
+1corintios	14	14	C3	ἐστιν	leaf	C2	coordinate	1	medium	suggested	==ἐστιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	15	C1	ἐστιν	root-or-unresolved			0		unresolved-root	τί οὖν ==ἐστιν==	no-confirmed-topology
+1corintios	14	15	C2	προσεύξομαι	root-or-unresolved			0		unresolved-root	==προσεύξομαι== τῷ πνεύματι	no-confirmed-topology
+1corintios	14	15	C3	προσεύξομαι	root-parent			0		unresolved-root	==προσεύξομαι== δὲ καὶ τῷ νοΐ	no-confirmed-topology
+1corintios	14	15	C4	ψαλῶ	leaf	C3	coordinate	1	medium	suggested	==ψαλῶ== τῷ πνεύματι	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	14	15	C5	ψαλῶ	root-or-unresolved			0		unresolved-root	==ψαλῶ== δὲ καὶ τῷ νοΐ	no-confirmed-topology
+1corintios	14	16	C1	εὐλογῇς	root-or-unresolved			0		unresolved-root	ἐπεὶ ἐὰν ==εὐλογῇς== πνεύματι ὁ ἀναπληρῶν τὸν τόπον τοῦ ἰδιώτου πῶς	no-confirmed-topology
+1corintios	14	16	C2	ἐρεῖ	root-parent			0		unresolved-root	==ἐρεῖ== τὸ ἀμήν ἐπὶ τῇ σῇ εὐχαριστίᾳ ἐπειδὴ τί	no-confirmed-topology
+1corintios	14	16	C3	λέγεις	leaf	C2	subordinate	1	medium	suggested	==λέγεις== οὐκ	function follows connector inventory; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	16	C4	οἶδεν	root-or-unresolved			0		unresolved-root	==οἶδεν==	no-confirmed-topology
+1corintios	14	17	C1	εὐχαριστεῖς	root-parent			0		unresolved-root	σὺ μὲν γὰρ καλῶς ==εὐχαριστεῖς== ἀλλʼ ὁ ἕτερος οὐκ	no-confirmed-topology
+1corintios	14	17	C2	οἰκοδομεῖται	leaf	C1	coordinate	1	medium	suggested	==οἰκοδομεῖται==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	18	C1	εὐχαριστῶ	root-or-unresolved			0		unresolved-root	==εὐχαριστῶ== τῷ θεῷ πάντων ὑμῶν μᾶλλον γλώσσαις	no-confirmed-topology
+1corintios	14	18	C2	λαλῶ	root-or-unresolved			0		unresolved-root	==λαλῶ==	no-confirmed-topology
+1corintios	14	19	C1	θέλω	root-parent			0		unresolved-root	ἀλλὰ ἐν ἐκκλησίᾳ ==θέλω== πέντε λόγους τῷ νοΐ μου λαλῆσαι	no-confirmed-topology
+1corintios	14	19	C2	κατηχήσω	leaf	C1	subordinate	1	medium	suggested	ἵνα καὶ ἄλλους ==κατηχήσω== ἢ μυρίους λόγους ἐν γλώσσῃ	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	14	20	C1	γίνεσθε	root-parent			0		unresolved-root	ἀδελφοί μὴ παιδία ==γίνεσθε== ταῖς φρεσίν ἀλλὰ τῇ κακίᾳ	no-confirmed-topology
+1corintios	14	20	C2	νηπιάζετε	internal-node	C1	coordinate	1	medium	suggested	==νηπιάζετε== ταῖς δὲ φρεσὶν τέλειοι	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	20	C3	γίνεσθε	leaf	C2	coordinate	2	medium	suggested	==γίνεσθε==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	21	C1	γέγραπται	root-parent			0		unresolved-root	ἐν τῷ νόμῳ ==γέγραπται==	no-confirmed-topology
+1corintios	14	21	C2	λαλήσω	leaf	C1	subordinate	1	medium	suggested	ὅτι ἐν ἑτερογλώσσοις καὶ ἐν χείλεσιν ἑτέρων ==λαλήσω== τῷ λαῷ τούτῳ καὶ οὐδʼ οὕτως	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	14	21	C3	εἰσακούσονταί	root-or-unresolved			0		unresolved-root	==εἰσακούσονταί== μου	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	21	C4	λέγει	root-or-unresolved			0		unresolved-root	==λέγει== κύριος	no-confirmed-topology
+1corintios	14	22	C1	εἰσιν	root-or-unresolved			0		unresolved-root	ὥστε αἱ γλῶσσαι εἰς σημεῖόν ==εἰσιν== οὐ τοῖς πιστεύουσιν ἀλλὰ τοῖς ἀπίστοις ἡ δὲ προφητεία οὐ τοῖς ἀπίστοις ἀλλὰ τοῖς πιστεύουσιν	no-confirmed-topology
+1corintios	14	23	C1	συνέλθῃ	root-or-unresolved			0		unresolved-root	ἐὰν οὖν ==συνέλθῃ== ἡ ἐκκλησία ὅλη ἐπὶ τὸ αὐτὸ καὶ πάντες	no-confirmed-topology
+1corintios	14	23	C2	λαλῶσιν	root-or-unresolved			0		unresolved-root	==λαλῶσιν== γλώσσαις	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	23	C3	εἰσέλθωσιν	root-parent			0		unresolved-root	==εἰσέλθωσιν== δὲ ἰδιῶται ἢ ἄπιστοι οὐκ	no-confirmed-topology
+1corintios	14	23	C4	ἐροῦσιν	internal-node	C3	coordinate	1	medium	suggested	==ἐροῦσιν==	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	23	C5	μαίνεσθε	leaf	C4	subordinate	2	medium	suggested	ὅτι ==μαίνεσθε==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	24	C1	προφητεύωσιν	root-or-unresolved			0		unresolved-root	ἐὰν δὲ πάντες ==προφητεύωσιν==	no-confirmed-topology
+1corintios	14	24	C2	εἰσέλθῃ	root-parent			0		unresolved-root	==εἰσέλθῃ== δέ τις ἄπιστος ἢ ἰδιώτης	no-confirmed-topology
+1corintios	14	24	C3	ἐλέγχεται	leaf	C2	coordinate	1	medium	suggested	==ἐλέγχεται== ὑπὸ πάντων	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	24	C4	ἀνακρίνεται	root-or-unresolved			0		unresolved-root	==ἀνακρίνεται== ὑπὸ πάντων	no-confirmed-topology
+1corintios	14	25	C1	γίνεται	root-or-unresolved			0		unresolved-root	τὰ κρυπτὰ τῆς καρδίας αὐτοῦ φανερὰ ==γίνεται== καὶ οὕτως πεσὼν ἐπὶ πρόσωπον	no-confirmed-topology
+1corintios	14	25	C2	προσκυνήσει	root-parent			0		unresolved-root	==προσκυνήσει== τῷ θεῷ ἀπαγγέλλων	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	25	C3	ἐστιν	leaf	C2	subordinate	1	medium	suggested	ὅτι ὄντως ὁ θεὸς ἐν ὑμῖν ==ἐστιν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	26	C1	ἐστιν	root-parent			0		unresolved-root	τί οὖν ==ἐστιν== ἀδελφοί ὅταν	no-confirmed-topology
+1corintios	14	26	C2	συνέρχησθε	leaf	C1	subordinate	1	medium	suggested	==συνέρχησθε== ἕκαστος ψαλμὸν	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	26	C3	ἔχει	root-or-unresolved			0		unresolved-root	==ἔχει== διδαχὴν	no-confirmed-topology
+1corintios	14	26	C4	ἔχει	root-or-unresolved			0		unresolved-root	==ἔχει== ἀποκάλυψιν	no-confirmed-topology
+1corintios	14	26	C5	ἔχει	root-or-unresolved			0		unresolved-root	==ἔχει== γλῶσσαν	no-confirmed-topology
+1corintios	14	26	C6	ἔχει	root-or-unresolved			0		unresolved-root	==ἔχει== ἑρμηνείαν	no-confirmed-topology
+1corintios	14	26	C7	ἔχει	root-or-unresolved			0		unresolved-root	==ἔχει== πάντα πρὸς οἰκοδομὴν	no-confirmed-topology
+1corintios	14	26	C8	γινέσθω	root-or-unresolved			0		unresolved-root	==γινέσθω==	no-confirmed-topology
+1corintios	14	27	C1	λαλεῖ	root-parent			0		unresolved-root	εἴτε γλώσσῃ τις ==λαλεῖ== κατὰ δύο ἢ τὸ πλεῖστον τρεῖς καὶ ἀνὰ μέρος καὶ εἷς	no-confirmed-topology
+1corintios	14	27	C2	διερμηνευέτω	leaf	C1	coordinate	1	medium	suggested	==διερμηνευέτω==	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	14	28	C1	ᾖ	root-or-unresolved			0		unresolved-root	ἐὰν δὲ μὴ ==ᾖ== διερμηνευτής	no-confirmed-topology
+1corintios	14	28	C2	σιγάτω	root-parent			0		unresolved-root	==σιγάτω== ἐν ἐκκλησίᾳ ἑαυτῷ δὲ	no-confirmed-topology
+1corintios	14	28	C3	λαλείτω	leaf	C2	coordinate	1	medium	suggested	==λαλείτω== καὶ τῷ θεῷ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	29	C1	λαλείτωσαν	root-or-unresolved			0		unresolved-root	προφῆται δὲ δύο ἢ τρεῖς ==λαλείτωσαν== καὶ οἱ ἄλλοι	no-confirmed-topology
+1corintios	14	29	C2	διακρινέτωσαν	root-or-unresolved			0		unresolved-root	==διακρινέτωσαν==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	30	C1	ἀποκαλυφθῇ	root-or-unresolved			0		unresolved-root	ἐὰν δὲ ἄλλῳ ==ἀποκαλυφθῇ== καθημένῳ ὁ πρῶτος	no-confirmed-topology
+1corintios	14	30	C2	σιγάτω	root-or-unresolved			0		unresolved-root	==σιγάτω==	no-confirmed-topology
+1corintios	14	31	C1	δύνασθε	root-parent			0		unresolved-root	==δύνασθε== γὰρ καθʼ ἕνα πάντες προφητεύειν	no-confirmed-topology
+1corintios	14	31	C2	μανθάνωσιν	leaf	C1	subordinate	1	medium	suggested	ἵνα πάντες ==μανθάνωσιν== καὶ πάντες	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	31	C3	παρακαλῶνται	root-or-unresolved			0		unresolved-root	==παρακαλῶνται==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	32	C1	ὑποτάσσεται	root-or-unresolved			0		unresolved-root	καὶ πνεύματα προφητῶν προφήταις ==ὑποτάσσεται==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	33	C1	ἐστιν	root-or-unresolved			0		unresolved-root	οὐ γάρ ==ἐστιν== ἀκαταστασίας ὁ θεὸς ἀλλὰ εἰρήνης ὡς ἐν πάσαις ταῖς ἐκκλησίαις τῶν ἁγίων	no-confirmed-topology
+1corintios	14	34	C1	σιγάτωσαν	root-parent			0		unresolved-root	αἱ γυναῖκες ἐν ταῖς ἐκκλησίαις ==σιγάτωσαν== οὐ γὰρ	no-confirmed-topology
+1corintios	14	34	C2	ἐπιτρέπεται	internal-node	C1	subordinate	1	medium	suggested	==ἐπιτρέπεται== αὐταῖς λαλεῖν ἀλλὰ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	34	C3	ὑποτασσέσθωσαν	internal-node	C2	coordinate	2	medium	suggested	==ὑποτασσέσθωσαν== καθὼς καὶ ὁ νόμος	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	34	C4	λέγει	leaf	C3	subordinate	3	medium	suggested	==λέγει==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available; parallel-coordinate-structure-detected
+1corintios	14	35	C1	θέλουσιν	root-or-unresolved			0		unresolved-root	εἰ δέ τι μαθεῖν ==θέλουσιν== ἐν οἴκῳ τοὺς ἰδίους ἄνδρας	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	14	35	C2	ἐπερωτάτωσαν	root-parent			0		unresolved-root	==ἐπερωτάτωσαν== αἰσχρὸν γάρ	no-confirmed-topology
+1corintios	14	35	C3	ἐστιν	leaf	C2	subordinate	1	medium	suggested	==ἐστιν== γυναικὶ λαλεῖν ἐν ἐκκλησίᾳ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	36	C1	ἐξῆλθεν	root-parent			0		unresolved-root	ἢ ἀφʼ ὑμῶν ὁ λόγος τοῦ θεοῦ ==ἐξῆλθεν== ἢ εἰς ὑμᾶς μόνους	no-confirmed-topology
+1corintios	14	36	C2	κατήντησεν	leaf	C1	coordinate	1	medium	suggested	==κατήντησεν==	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	37	C1	δοκεῖ	root-parent			0		unresolved-root	εἴ τις ==δοκεῖ== προφήτης εἶναι ἢ πνευματικός	no-confirmed-topology
+1corintios	14	37	C2	ἐπιγινωσκέτω	leaf	C1	coordinate	1	medium	suggested	==ἐπιγινωσκέτω== ἃ	context-sensitive function; keep as suggested; coordinating connector between finite clauses; source and target clauses available
+1corintios	14	37	C3	γράφω	root-parent			0		unresolved-root	==γράφω== ὑμῖν	no-confirmed-topology
+1corintios	14	37	C4	ἐστίν	leaf	C3	subordinate	1	medium	suggested	ὅτι κυρίου ==ἐστίν==	context-sensitive function; keep as suggested; subordinating connector before/near target finite clause; source and target clauses available
+1corintios	14	38	C1	ἀγνοεῖ	root-or-unresolved			0		unresolved-root	εἰ δέ τις ==ἀγνοεῖ==	no-confirmed-topology; parallel-conditional-structure-detected
+1corintios	14	38	C2	ἀγνοεῖται	root-or-unresolved			0		unresolved-root	==ἀγνοεῖται==	no-confirmed-topology
+1corintios	14	39	C1	ζηλοῦτε	root-or-unresolved			0		unresolved-root	ὥστε ἀδελφοί μου ==ζηλοῦτε== τὸ προφητεύειν καὶ τὸ λαλεῖν μὴ	no-confirmed-topology
+1corintios	14	39	C2	κωλύετε	root-or-unresolved			0		unresolved-root	==κωλύετε== γλώσσαις	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	14	40	C1	γινέσθω	root-or-unresolved			0		unresolved-root	πάντα δὲ εὐσχημόνως καὶ κατὰ τάξιν ==γινέσθω==	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	15	1	C1	γνωρίζω	root-parent			0		unresolved-root	==γνωρίζω== δὲ ὑμῖν ἀδελφοί τὸ εὐαγγέλιον ὃ	no-confirmed-topology
+1corintios	15	1	C2	εὐηγγελισάμην	leaf	C1	coordinate	1	medium	suggested	==εὐηγγελισάμην== ὑμῖν ὃ καὶ	function follows connector inventory; coordinating connector between finite clauses; source and target clauses available
+1corintios	15	1	C3	παρελάβετε	root-or-unresolved			0		unresolved-root	==παρελάβετε== ἐν ᾧ καὶ	no-confirmed-topology; parallel-coordinate-structure-detected
+1corintios	15	1	C4	ἑστήκατε	root-or-unresolved			0		unresolved-root	==ἑστήκατε==	no-confirmed-topology; parallel-coordinate-structure-detected

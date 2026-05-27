@@ -1,11 +1,15 @@
 const fs = require("fs/promises");
 const http = require("http");
+const https = require("https");
 const path = require("path");
-const { app, BrowserWindow, screen, Menu, dialog } = require("electron");
+const { app, BrowserWindow, screen, Menu, dialog, shell } = require("electron");
 
 const APP_URL = "http://localhost:3000";
+const RELEASES_URL = "https://github.com/Cultivados-en-Gracia-y-Verdad/herramientas/releases";
+const LATEST_RELEASE_API_URL = "https://api.github.com/repos/Cultivados-en-Gracia-y-Verdad/herramientas/releases/latest";
 const DEFAULT_COURSE_LIBRARY_DIR = path.join(app.getPath("documents"), "CGV Presenter");
 const LOGO_PATH = path.join(__dirname, "assets", "cgv-app-icon.png");
+const APP_STATE_PATH = path.join(app.getPath("userData"), "app-state.json");
 
 app.setName("CGV Presenter");
 process.env.ROOTS_RUNTIME_DATA_DIR = app.getPath("userData");
@@ -15,14 +19,236 @@ const { serverEvents } = require("./server");
 
 let presenterWindow;
 let projectorWindow;
+let controllerWindow;
+let stageWindow;
+let directorWindow;
+let connectionWindow;
 let settingsWindow;
 let courseDownloadWindow;
+let songLibraryWindow;
 let presentationMode = "extended";
 let switchingMode = false;
 let headingMenuItems = [];
 let quizMenuItems = [];
 let menuRefreshTimer = null;
 let loadedCourseTitle = "";
+let appLanguage = "es";
+let audienceQrMenuVisible = false;
+
+const MAIN_TRANSLATIONS = {
+  es: {
+    loadDownloadedCourse: "Cargar curso descargado",
+    selectedCourseCouldNotLoad: "No se pudo cargar el curso seleccionado.",
+    welcomeTitle: "Bienvenido a CGV Presenter",
+    welcomeMessage: "CGV Presenter está listo para usarse.",
+    starterDetail: "El contenido inicial se instaló automáticamente:\n\n• Curso Romanos\n• Referencias bíblicas NBLA\n• 5 canciones iniciales\n\nPuedes comenzar ahora o escoger una carpeta de biblioteca fácil de encontrar, como Documents/CGV Presenter.",
+    useStarterLibrary: "Usar biblioteca inicial",
+    chooseLibraryFolder: "Escoger carpeta de biblioteca...",
+    chooseCourseLibraryFolder: "Escoger carpeta de biblioteca",
+    chooseCourseLibraryMessage: "Escoge la carpeta donde CGV Presenter debe guardar cursos, canciones y Biblias.",
+    chooseCourseLibrary: "Escoger biblioteca",
+    courseLibraryCouldNotSave: "No se pudo guardar la carpeta de biblioteca.",
+    folderUnavailable: "Esa carpeta no está disponible todavía.",
+    openCourseLibrary: "Abrir biblioteca de cursos",
+    openLibraryFolder: "Abrir carpeta de biblioteca",
+    openSongsFolder: "Abrir carpeta de canciones",
+    openBackgroundsFolder: "Abrir carpeta de fondos",
+    openBibleFolder: "Abrir carpeta de Biblias",
+    noBibleFolder: "No se encontró una carpeta bíblica activa. Abre Estado de Biblia para ver todas las rutas de búsqueda.",
+    bibleStatus: "Estado de Biblia",
+    nblaBibleStatus: "Estado de Biblia NBLA",
+    version: "Versión",
+    loaded: "Cargado",
+    yes: "Sí",
+    no: "No",
+    books: "Libros",
+    references: "Referencias",
+    activeFolder: "Carpeta activa",
+    noneFound: "Ninguna encontrada",
+    searchPaths: "Rutas de búsqueda",
+    bibleStatusCouldNotLoad: "No se pudo cargar el estado de la Biblia.",
+    jumpToHeader: "Ir al encabezado",
+    couldNotJump: "La presentación no pudo ir a ese encabezado.",
+    next: "Siguiente",
+    previous: "Anterior",
+    couldNotAdvance: "La presentación no pudo avanzar.",
+    couldNotGoBack: "La presentación no pudo retroceder.",
+    launchQuiz: "Iniciar quiz",
+    quizCouldNotLaunch: "No se pudo iniciar el quiz.",
+    endQuiz: "Terminar quiz",
+    quizCouldNotEnd: "No se pudo terminar el quiz.",
+    clearQuizAnswers: "Borrar respuestas del quiz",
+    quizCouldNotClear: "No se pudieron borrar las respuestas del quiz.",
+    noHeadersLoaded: "No hay encabezados H1/H2 cargados",
+    course: "Curso",
+    goToSection: "Ir a la sección",
+    noQuizzesLoaded: "No hay quizzes cargados",
+    clearCurrentAnswers: "Borrar respuestas actuales",
+    refreshQuizList: "Actualizar lista de quizzes",
+    exportQuizResults: "Exportar resultados del quiz",
+    quizCouldNotExport: "No se pudieron exportar los resultados del quiz.",
+    newTeachingSession: "Nueva sesión de enseñanza",
+    sessionCouldNotCreate: "No se pudo crear la sesión.",
+    styleSettings: "Configuración de estilo",
+    languageSettings: "Idioma",
+    style: "Estilo",
+    downloadCourses: "Descargar cursos",
+    downloadSongs: "Descargar canciones de GitHub",
+    controller: "Control",
+    connectionQr: "Código QR de conexión",
+    stageView: "Vista de escenario",
+    director: "Director",
+    file: "Archivo",
+    edit: "Editar",
+    presentation: "Presentación",
+    extendedScreenMode: "Modo pantalla extendida",
+    mirroredScreenMode: "Modo pantalla duplicada",
+    exitFullScreen: "Salir de pantalla completa",
+    library: "Biblioteca",
+    openCourseLibraryFolder: "Abrir carpeta de cursos",
+    bibleStatusMenu: "Estado de Biblia...",
+    checkForUpdates: "Buscar actualizaciones",
+    checkingForUpdates: "Buscando actualizaciones...",
+    updateAvailableTitle: "Actualización disponible",
+    updateAvailableMessage: "Hay una nueva versión de CGV Presenter.",
+    updateAvailableDetail: "Versión actual: {current}\nÚltima versión: {latest}",
+    noUpdateTitle: "CGV Presenter está actualizado",
+    noUpdateMessage: "Ya tienes la versión más reciente.",
+    noUpdateDetail: "Versión actual: {current}",
+    updateCheckFailedTitle: "No se pudo buscar actualizaciones",
+    updateCheckFailedMessage: "No se pudo consultar GitHub Releases.",
+    openReleases: "Abrir releases",
+    later: "Después",
+    quiz: "Quiz",
+    settings: "Configuración",
+    view: "Vista",
+    openController: "Abrir control",
+    showConnectionQr: "Mostrar QR de conexión",
+    showAudienceQrOnMainScreen: "Mostrar QR de audiencia en pantalla principal",
+    hideAudienceQrOnMainScreen: "Ocultar QR de audiencia en pantalla principal",
+    openStageView: "Abrir vista de escenario",
+    openDirector: "Abrir director",
+    showHeaders: "Mostrar encabezados H1/H2",
+    refreshHeaders: "Actualizar encabezados",
+    window: "Ventana"
+  },
+  en: {}
+};
+
+MAIN_TRANSLATIONS.en = {
+  ...MAIN_TRANSLATIONS.es,
+  loadDownloadedCourse: "Load Downloaded Course",
+  selectedCourseCouldNotLoad: "The selected course could not be loaded.",
+  welcomeTitle: "Welcome to CGV Presenter",
+  welcomeMessage: "CGV Presenter is ready to use.",
+  starterDetail: "Starter content has been installed automatically:\n\n• Romanos course\n• NBLA Bible references\n• 5 starter songs\n\nYou can begin now, or choose an easy-to-access library folder such as Documents/CGV Presenter.",
+  useStarterLibrary: "Use Starter Library",
+  chooseLibraryFolder: "Choose Library Folder...",
+  chooseCourseLibraryFolder: "Choose Library Folder",
+  chooseCourseLibraryMessage: "Choose the folder where CGV Presenter should store courses, songs, and Bibles.",
+  chooseCourseLibrary: "Choose Library",
+  courseLibraryCouldNotSave: "The library folder could not be saved.",
+  folderUnavailable: "That folder is not available yet.",
+  openCourseLibrary: "Open Course Library",
+  openLibraryFolder: "Open Library Folder",
+  openSongsFolder: "Open Songs Folder",
+  openBackgroundsFolder: "Open Backgrounds Folder",
+  openBibleFolder: "Open Bible Folder",
+  noBibleFolder: "No active Bible folder was found. Open Bible Status to see all search paths.",
+  bibleStatus: "Bible Status",
+  nblaBibleStatus: "NBLA Bible Status",
+  version: "Version",
+  loaded: "Loaded",
+  yes: "Yes",
+  no: "No",
+  books: "Books",
+  references: "References",
+  activeFolder: "Active folder",
+  noneFound: "None found",
+  searchPaths: "Search paths",
+  bibleStatusCouldNotLoad: "Bible status could not be loaded.",
+  jumpToHeader: "Jump to Header",
+  couldNotJump: "The presentation could not jump to that header.",
+  next: "Next",
+  previous: "Previous",
+  couldNotAdvance: "The presentation could not advance.",
+  couldNotGoBack: "The presentation could not go back.",
+  launchQuiz: "Launch Quiz",
+  quizCouldNotLaunch: "The quiz could not be launched.",
+  endQuiz: "End Quiz",
+  quizCouldNotEnd: "The quiz could not be ended.",
+  clearQuizAnswers: "Clear Quiz Answers",
+  quizCouldNotClear: "The quiz answers could not be cleared.",
+  noHeadersLoaded: "No H1/H2 headers loaded",
+  course: "Course",
+  goToSection: "Go to Section",
+  noQuizzesLoaded: "No quizzes loaded",
+  clearCurrentAnswers: "Clear Current Answers",
+  refreshQuizList: "Refresh Quiz List",
+  exportQuizResults: "Export Quiz Results",
+  quizCouldNotExport: "The quiz results could not be exported.",
+  newTeachingSession: "New Teaching Session",
+  sessionCouldNotCreate: "The session could not be created.",
+  styleSettings: "Style Settings",
+  languageSettings: "Language",
+  style: "Style",
+  downloadCourses: "Download Courses",
+  downloadSongs: "Download Songs from GitHub",
+  controller: "Controller",
+  connectionQr: "Connection QR",
+  stageView: "Stage View",
+  director: "Director",
+  file: "File",
+  edit: "Edit",
+  presentation: "Presentation",
+  extendedScreenMode: "Extended Screen Mode",
+  mirroredScreenMode: "Mirrored Screen Mode",
+  exitFullScreen: "Exit Full Screen",
+  library: "Library",
+  openCourseLibraryFolder: "Open Courses Folder",
+  bibleStatusMenu: "Bible Status...",
+  checkForUpdates: "Check for Updates",
+  checkingForUpdates: "Checking for updates...",
+  updateAvailableTitle: "Update Available",
+  updateAvailableMessage: "A new version of CGV Presenter is available.",
+  updateAvailableDetail: "Current version: {current}\nLatest version: {latest}",
+  noUpdateTitle: "CGV Presenter is Up to Date",
+  noUpdateMessage: "You already have the latest version.",
+  noUpdateDetail: "Current version: {current}",
+  updateCheckFailedTitle: "Could Not Check for Updates",
+  updateCheckFailedMessage: "Could not check GitHub Releases.",
+  openReleases: "Open Releases",
+  later: "Later",
+  quiz: "Quiz",
+  settings: "Settings",
+  view: "View",
+  openController: "Open Controller",
+  showConnectionQr: "Show Connection QR",
+  showAudienceQrOnMainScreen: "Show Audience QR on Main Screen",
+  hideAudienceQrOnMainScreen: "Hide Audience QR on Main Screen",
+  openStageView: "Open Stage View",
+  openDirector: "Open Director",
+  showHeaders: "Show H1/H2 Headers",
+  refreshHeaders: "Refresh Headers",
+  window: "Window"
+};
+
+function mt(key) {
+  return MAIN_TRANSLATIONS[appLanguage]?.[key] || MAIN_TRANSLATIONS.es[key] || key;
+}
+
+function mti(key, params = {}) {
+  return mt(key).replace(/\{(\w+)\}/g, (_match, name) => params[name] ?? "");
+}
+
+async function refreshAppLanguage() {
+  try {
+    const settings = await getLocalJson("/style-settings");
+    appLanguage = ["es", "en"].includes(settings.language) ? settings.language : "es";
+  } catch {
+    appLanguage = "es";
+  }
+}
 
 function shouldShowMenuBar() {
   return process.platform !== "darwin";
@@ -65,6 +291,114 @@ function fetchCsvExport() {
 
 async function getLocalJson(pathname) {
   return JSON.parse(await getLocal(pathname));
+}
+
+function getHttpsJson(url) {
+  return new Promise((resolve, reject) => {
+    const request = https.get(url, {
+      headers: {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": `CGV-Presenter/${app.getVersion()}`
+      }
+    }, response => {
+      if (response.statusCode < 200 || response.statusCode >= 300) {
+        response.resume();
+        reject(new Error(`Request failed with status ${response.statusCode}`));
+        return;
+      }
+
+      const chunks = [];
+      response.on("data", chunk => chunks.push(chunk));
+      response.on("end", () => {
+        try {
+          resolve(JSON.parse(Buffer.concat(chunks).toString("utf8")));
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+
+    request.on("error", reject);
+    request.setTimeout(8000, () => {
+      request.destroy(new Error("Request timed out."));
+    });
+  });
+}
+
+function normalizeVersion(value) {
+  const versionText = String(value || "")
+    .trim()
+    .match(/\d+(?:\.\d+){0,2}/)?.[0] || "";
+
+  return versionText
+    .split(/[+-]/)[0]
+    .split(".")
+    .map(part => Number.parseInt(part, 10))
+    .map(part => Number.isFinite(part) ? part : 0);
+}
+
+function compareVersions(a, b) {
+  const left = normalizeVersion(a);
+  const right = normalizeVersion(b);
+  const length = Math.max(left.length, right.length, 3);
+
+  for (let index = 0; index < length; index += 1) {
+    const diff = (left[index] || 0) - (right[index] || 0);
+    if (diff !== 0) return diff > 0 ? 1 : -1;
+  }
+
+  return 0;
+}
+
+async function checkForUpdates() {
+  const parentWindow = BrowserWindow.getFocusedWindow() || presenterWindow;
+  const currentVersion = app.getVersion();
+
+  try {
+    const release = await getHttpsJson(LATEST_RELEASE_API_URL);
+    const latestVersion = String(release.tag_name || release.name || "").replace(/^v/i, "") || currentVersion;
+    const releaseUrl = release.html_url || RELEASES_URL;
+    const hasUpdate = compareVersions(latestVersion, currentVersion) > 0;
+
+    if (hasUpdate) {
+      const result = await dialog.showMessageBox(parentWindow, {
+        type: "info",
+        title: mt("updateAvailableTitle"),
+        message: mt("updateAvailableMessage"),
+        detail: mti("updateAvailableDetail", { current: currentVersion, latest: latestVersion }),
+        buttons: [mt("openReleases"), mt("later")],
+        defaultId: 0,
+        cancelId: 1
+      });
+
+      if (result.response === 0) {
+        await shell.openExternal(releaseUrl);
+      }
+      return;
+    }
+
+    await dialog.showMessageBox(parentWindow, {
+      type: "info",
+      title: mt("noUpdateTitle"),
+      message: mt("noUpdateMessage"),
+      detail: mti("noUpdateDetail", { current: currentVersion }),
+      buttons: ["OK"]
+    });
+  } catch (error) {
+    const result = await dialog.showMessageBox(parentWindow, {
+      type: "warning",
+      title: mt("updateCheckFailedTitle"),
+      message: mt("updateCheckFailedMessage"),
+      detail: error?.message || "",
+      buttons: [mt("openReleases"), mt("later")],
+      defaultId: 0,
+      cancelId: 1
+    });
+
+    if (result.response === 0) {
+      await shell.openExternal(RELEASES_URL);
+    }
+  }
 }
 
 function postLocal(pathname) {
@@ -116,13 +450,39 @@ function postJsonLocal(pathname, body) {
   });
 }
 
+function postLocalJsonResponse(pathname) {
+  return new Promise((resolve, reject) => {
+    const request = http.request(`${APP_URL}${pathname}`, { method: "POST" }, response => {
+      let content = "";
+      response.setEncoding("utf-8");
+      response.on("data", chunk => {
+        content += chunk;
+      });
+      response.on("end", () => {
+        const data = content ? JSON.parse(content) : {};
+        if (response.statusCode < 200 || response.statusCode >= 300) {
+          reject(new Error(data.error || `Request failed with status ${response.statusCode}`));
+          return;
+        }
+        resolve(data);
+      });
+    });
+
+    request.on("error", reject);
+    request.setTimeout(120000, () => {
+      request.destroy(new Error("Request timed out."));
+    });
+    request.end();
+  });
+}
+
 async function loadDownloadedCourse() {
   try {
     const library = await getCourseLibrary();
 
     const result = await dialog.showOpenDialog(presenterWindow || BrowserWindow.getFocusedWindow(), {
-      title: "Load Downloaded Course",
-      defaultPath: library.path || DEFAULT_COURSE_LIBRARY_DIR,
+      title: mt("loadDownloadedCourse"),
+      defaultPath: library.coursesPath || library.path || DEFAULT_COURSE_LIBRARY_DIR,
       properties: ["openDirectory"]
     });
 
@@ -133,8 +493,8 @@ async function loadDownloadedCourse() {
     await refreshQuizMenu();
   } catch (error) {
     dialog.showErrorBox(
-      "Load Downloaded Course",
-      error?.message || "The selected course could not be loaded."
+      mt("loadDownloadedCourse"),
+      error?.message || mt("selectedCourseCouldNotLoad")
     );
   }
 }
@@ -150,13 +510,52 @@ async function getCourseLibrary() {
   }
 }
 
+async function loadLocalAppState() {
+  try {
+    return JSON.parse(await fs.readFile(APP_STATE_PATH, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+async function saveLocalAppState(nextState) {
+  const appState = {
+    ...await loadLocalAppState(),
+    ...nextState
+  };
+
+  await fs.mkdir(path.dirname(APP_STATE_PATH), { recursive: true });
+  await fs.writeFile(APP_STATE_PATH, `${JSON.stringify(appState, null, 2)}\n`, "utf8");
+}
+
+async function showFirstRunSetup() {
+  const appState = await loadLocalAppState();
+  if (appState.setupCompleted) return;
+
+  const result = await dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
+    type: "info",
+    title: mt("welcomeTitle"),
+    message: mt("welcomeMessage"),
+    detail: mt("starterDetail"),
+    buttons: [mt("useStarterLibrary"), mt("chooseLibraryFolder")],
+    defaultId: 0,
+    cancelId: 0
+  });
+
+  if (result.response === 1) {
+    await chooseCourseLibraryFolder();
+  }
+
+  await saveLocalAppState({ setupCompleted: true });
+}
+
 async function chooseCourseLibraryFolder() {
   try {
     const library = await getCourseLibrary();
     const result = await dialog.showOpenDialog(presenterWindow || BrowserWindow.getFocusedWindow(), {
-      title: "Choose Course Library Folder",
+      title: mt("chooseCourseLibraryFolder"),
       defaultPath: library.path || library.suggestedPath || DEFAULT_COURSE_LIBRARY_DIR,
-      message: "Choose the folder where CGV Presenter should store downloaded courses.",
+      message: mt("chooseCourseLibraryMessage"),
       properties: ["openDirectory", "createDirectory"]
     });
 
@@ -167,8 +566,105 @@ async function chooseCourseLibraryFolder() {
     await refreshQuizMenu();
   } catch (error) {
     dialog.showErrorBox(
-      "Choose Course Library",
-      error?.message || "The course library folder could not be saved."
+      mt("chooseCourseLibrary"),
+      error?.message || mt("courseLibraryCouldNotSave")
+    );
+  }
+}
+
+async function openFolderPath(folderPath, title) {
+  if (!folderPath || typeof folderPath !== "string") {
+    dialog.showErrorBox(title, mt("folderUnavailable"));
+    return;
+  }
+
+  try {
+    await fs.mkdir(folderPath, { recursive: true });
+    const error = await shell.openPath(folderPath);
+
+    if (error) {
+      dialog.showErrorBox(title, error);
+    }
+  } catch (error) {
+    dialog.showErrorBox(
+      title,
+      error?.message || mt("folderUnavailable")
+    );
+  }
+}
+
+async function getLibraryPaths() {
+  try {
+    return await getLocalJson("/library-paths");
+  } catch {
+    return {};
+  }
+}
+
+async function openCourseLibraryFolder() {
+  const paths = await getLibraryPaths();
+  await openFolderPath(paths.courses, mt("openCourseLibrary"));
+}
+
+async function openLibraryFolder() {
+  const paths = await getLibraryPaths();
+  await openFolderPath(paths.libraryRoot, mt("openLibraryFolder"));
+}
+
+async function openSongsFolder() {
+  const paths = await getLibraryPaths();
+  await openFolderPath(paths.songs, mt("openSongsFolder"));
+}
+
+async function openBackgroundsFolder() {
+  const paths = await getLibraryPaths();
+  await openFolderPath(paths.backgrounds, mt("openBackgroundsFolder"));
+}
+
+async function openBibleFolder() {
+  const paths = await getLibraryPaths();
+
+  if (paths.bibles) {
+    await openFolderPath(paths.bibles, mt("openBibleFolder"));
+    return;
+  }
+
+  dialog.showErrorBox(
+    mt("openBibleFolder"),
+    mt("noBibleFolder")
+  );
+}
+
+async function showBibleStatus() {
+  try {
+    const status = await getLocalJson("/bible/status");
+    const active = status.searchPaths.find(candidate => candidate.exists && candidate.files > 0);
+    const details = [
+      `${mt("version")}: ${status.version || "NBLA"}`,
+      `${mt("loaded")}: ${status.loaded ? mt("yes") : mt("no")}`,
+      `${mt("books")}: ${status.books}`,
+      `${mt("references")}: ${status.references}`,
+      "",
+      active
+        ? `${mt("activeFolder")}:\n${active.path}`
+        : `${mt("activeFolder")}:\n${mt("noneFound")}`,
+      "",
+      `${mt("searchPaths")}:`,
+      ...status.searchPaths.map(candidate => (
+        `${candidate.exists ? "✓" : "•"} ${candidate.path} (${candidate.files} files)`
+      ))
+    ].join("\n");
+
+    dialog.showMessageBox(presenterWindow || BrowserWindow.getFocusedWindow(), {
+      type: status.loaded ? "info" : "warning",
+      title: mt("bibleStatus"),
+      message: `${status.version || "NBLA"} ${mt("bibleStatus")}`,
+      detail: details
+    });
+  } catch (error) {
+    dialog.showErrorBox(
+      mt("bibleStatus"),
+      error?.message || mt("bibleStatusCouldNotLoad")
     );
   }
 }
@@ -201,8 +697,8 @@ async function jumpToSlide(slideIndex) {
     await postLocal(`/jump/${slideIndex}`);
   } catch (error) {
     dialog.showErrorBox(
-      "Jump to Header",
-      error?.message || "The presentation could not jump to that header."
+      mt("jumpToHeader"),
+      error?.message || mt("couldNotJump")
     );
   }
 }
@@ -212,8 +708,8 @@ async function goToNextSlideStep() {
     await postLocal("/control/next");
   } catch (error) {
     dialog.showErrorBox(
-      "Next",
-      error?.message || "The presentation could not advance."
+      mt("next"),
+      error?.message || mt("couldNotAdvance")
     );
   }
 }
@@ -223,8 +719,8 @@ async function goToPreviousSlideStep() {
     await postLocal("/control/prev");
   } catch (error) {
     dialog.showErrorBox(
-      "Previous",
-      error?.message || "The presentation could not go back."
+      mt("previous"),
+      error?.message || mt("couldNotGoBack")
     );
   }
 }
@@ -234,8 +730,8 @@ async function startQuiz(quizId) {
     await postLocal(`/quiz/start/${encodeURIComponent(quizId)}`);
   } catch (error) {
     dialog.showErrorBox(
-      "Launch Quiz",
-      error?.message || "The quiz could not be launched."
+      mt("launchQuiz"),
+      error?.message || mt("quizCouldNotLaunch")
     );
   }
 }
@@ -245,8 +741,8 @@ async function endQuiz() {
     await postLocal("/quiz/end");
   } catch (error) {
     dialog.showErrorBox(
-      "End Quiz",
-      error?.message || "The quiz could not be ended."
+      mt("endQuiz"),
+      error?.message || mt("quizCouldNotEnd")
     );
   }
 }
@@ -256,8 +752,8 @@ async function clearQuizAnswers() {
     await postLocal("/quiz/clear");
   } catch (error) {
     dialog.showErrorBox(
-      "Clear Quiz Answers",
-      error?.message || "The quiz answers could not be cleared."
+      mt("clearQuizAnswers"),
+      error?.message || mt("quizCouldNotClear")
     );
   }
 }
@@ -266,7 +762,7 @@ function buildHeadingSubmenu() {
   if (!headingMenuItems.length) {
     return [
       {
-        label: loadedCourseTitle ? `Course: ${loadedCourseTitle}` : "No H1/H2 headers loaded",
+        label: loadedCourseTitle ? `${mt("course")}: ${loadedCourseTitle}` : mt("noHeadersLoaded"),
         enabled: false
       }
     ];
@@ -290,7 +786,7 @@ function buildHeadingSubmenu() {
 
   const menuItems = loadedCourseTitle
     ? [
-        { label: `Course: ${loadedCourseTitle}`, enabled: false },
+        { label: `${mt("course")}: ${loadedCourseTitle}`, enabled: false },
         { type: "separator" }
       ]
     : [];
@@ -300,7 +796,7 @@ function buildHeadingSubmenu() {
     ...sections.map(section => {
       const submenu = [
         {
-          label: "Go to Section",
+          label: mt("goToSection"),
           click: () => jumpToSlide(section.slide)
         }
       ];
@@ -329,26 +825,26 @@ function buildQuizSubmenu() {
         label: quiz.title,
         click: () => startQuiz(quiz.id)
       }))
-    : [{ label: "No quizzes loaded", enabled: false }];
+    : [{ label: mt("noQuizzesLoaded"), enabled: false }];
 
   return [
     {
-      label: "Launch Quiz",
+      label: mt("launchQuiz"),
       submenu: launchItems
     },
     { type: "separator" },
     {
-      label: "End Quiz",
+      label: mt("endQuiz"),
       accelerator: "CmdOrCtrl+Shift+Q",
       click: endQuiz
     },
     {
-      label: "Clear Current Answers",
+      label: mt("clearCurrentAnswers"),
       click: clearQuizAnswers
     },
     { type: "separator" },
     {
-      label: "Refresh Quiz List",
+      label: mt("refreshQuizList"),
       click: refreshQuizMenu
     }
   ];
@@ -367,7 +863,7 @@ async function exportQuizResults() {
   try {
     const parentWindow = presenterWindow || BrowserWindow.getFocusedWindow();
     const result = await dialog.showSaveDialog(parentWindow, {
-      title: "Export Quiz Results",
+      title: mt("exportQuizResults"),
       defaultPath: path.join(app.getPath("documents"), buildExportFilename()),
       filters: [{ name: "CSV", extensions: ["csv"] }]
     });
@@ -378,8 +874,8 @@ async function exportQuizResults() {
     await fs.writeFile(result.filePath, csv, "utf8");
   } catch (error) {
     dialog.showErrorBox(
-      "Export Quiz Results",
-      error?.message || "The quiz results could not be exported."
+      mt("exportQuizResults"),
+      error?.message || mt("quizCouldNotExport")
     );
   }
 }
@@ -389,14 +885,15 @@ async function startNewTeachingSession() {
     await postLocal("/session/new");
   } catch (error) {
     dialog.showErrorBox(
-      "New Teaching Session",
-      error?.message || "The session could not be created."
+      mt("newTeachingSession"),
+      error?.message || mt("sessionCouldNotCreate")
     );
   }
 }
 
-function openStyleSettings() {
+function openSettingsSection(section = "style") {
   if (settingsWindow && !settingsWindow.isDestroyed()) {
+    settingsWindow.loadURL(`${APP_URL}/settings.html#${encodeURIComponent(section)}`);
     settingsWindow.focus();
     return;
   }
@@ -404,15 +901,25 @@ function openStyleSettings() {
   settingsWindow = new BrowserWindow({
     width: 760,
     height: 820,
-    title: "Style Settings",
+    title: mt("settings"),
     icon: LOGO_PATH,
     autoHideMenuBar: !shouldShowMenuBar()
   });
 
-  settingsWindow.loadURL(`${APP_URL}/settings.html`);
-  settingsWindow.on("closed", () => {
+  settingsWindow.loadURL(`${APP_URL}/settings.html#${encodeURIComponent(section)}`);
+  settingsWindow.on("closed", async () => {
     settingsWindow = null;
+    await refreshAppLanguage();
+    createMenu();
   });
+}
+
+function openLanguageSettings() {
+  openSettingsSection("language");
+}
+
+function openStyleSettings() {
+  openSettingsSection("style");
 }
 
 function openCourseDownload() {
@@ -424,7 +931,7 @@ function openCourseDownload() {
   courseDownloadWindow = new BrowserWindow({
     width: 860,
     height: 760,
-    title: "Download Courses",
+    title: mt("downloadCourses"),
     icon: LOGO_PATH,
     autoHideMenuBar: !shouldShowMenuBar()
   });
@@ -435,19 +942,138 @@ function openCourseDownload() {
   });
 }
 
+function openSongLibraryWindow() {
+  if (songLibraryWindow && !songLibraryWindow.isDestroyed()) {
+    songLibraryWindow.focus();
+    return;
+  }
+
+  songLibraryWindow = new BrowserWindow({
+    width: 720,
+    height: 520,
+    title: mt("downloadSongs"),
+    icon: LOGO_PATH,
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  songLibraryWindow.loadURL(`${APP_URL}/songs.html`);
+  songLibraryWindow.on("closed", () => {
+    songLibraryWindow = null;
+  });
+}
+
+async function toggleAudienceQrOnMainScreen() {
+  const nextVisible = !audienceQrMenuVisible;
+  audienceQrMenuVisible = nextVisible;
+  createMenu();
+
+  try {
+    await postJsonLocal("/audience-qr", { visible: nextVisible });
+  } catch (error) {
+    audienceQrMenuVisible = !nextVisible;
+    createMenu();
+    dialog.showErrorBox(mt("connectionQr"), error?.message || mt("connectionQr"));
+  }
+}
+
+function openControllerWindow() {
+  if (controllerWindow && !controllerWindow.isDestroyed()) {
+    controllerWindow.focus();
+    return;
+  }
+
+  controllerWindow = new BrowserWindow({
+    width: 1120,
+    height: 820,
+    title: mt("controller"),
+    icon: LOGO_PATH,
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  controllerWindow.loadURL(`${APP_URL}/controller.html`);
+  controllerWindow.on("closed", () => {
+    controllerWindow = null;
+  });
+}
+
+function openConnectionWindow() {
+  if (connectionWindow && !connectionWindow.isDestroyed()) {
+    connectionWindow.focus();
+    return;
+  }
+
+  connectionWindow = new BrowserWindow({
+    width: 460,
+    height: 640,
+    minWidth: 400,
+    minHeight: 560,
+    title: mt("connectionQr"),
+    icon: LOGO_PATH,
+    backgroundColor: "#f8fafc",
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  connectionWindow.loadURL(`${APP_URL}/connect.html`);
+  connectionWindow.on("closed", () => {
+    connectionWindow = null;
+  });
+}
+
+function openStageWindow() {
+  if (stageWindow && !stageWindow.isDestroyed()) {
+    stageWindow.focus();
+    return;
+  }
+
+  stageWindow = new BrowserWindow({
+    width: 1180,
+    height: 760,
+    title: mt("stageView"),
+    icon: LOGO_PATH,
+    backgroundColor: "#05070c",
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  stageWindow.loadURL(`${APP_URL}/stage.html`);
+  stageWindow.on("closed", () => {
+    stageWindow = null;
+  });
+}
+
+function openDirectorWindow() {
+  if (directorWindow && !directorWindow.isDestroyed()) {
+    directorWindow.focus();
+    return;
+  }
+
+  directorWindow = new BrowserWindow({
+    width: 1180,
+    height: 780,
+    title: mt("director"),
+    icon: LOGO_PATH,
+    backgroundColor: "#08111f",
+    autoHideMenuBar: !shouldShowMenuBar()
+  });
+
+  directorWindow.loadURL(`${APP_URL}/director.html`);
+  directorWindow.on("closed", () => {
+    directorWindow = null;
+  });
+}
+
 function createMenu() {
   const template = [
     {
-      label: "File",
+      label: mt("file"),
       submenu: [
         {
-          label: "New Teaching Session",
+          label: mt("newTeachingSession"),
           accelerator: "CmdOrCtrl+N",
           click: startNewTeachingSession
         },
         { type: "separator" },
         {
-          label: "Export Quiz Results...",
+          label: `${mt("exportQuizResults")}...`,
           accelerator: "CmdOrCtrl+Shift+E",
           click: exportQuizResults
         },
@@ -456,80 +1082,154 @@ function createMenu() {
       ]
     },
     {
-      label: "Presentation",
+      label: mt("edit"),
+      submenu: [
+        { role: "undo" },
+        { role: "redo" },
+        { type: "separator" },
+        { role: "cut" },
+        { role: "copy" },
+        { role: "paste" },
+        { role: "pasteAndMatchStyle" },
+        { role: "delete" },
+        { type: "separator" },
+        { role: "selectAll" }
+      ]
+    },
+    {
+      label: mt("presentation"),
       submenu: [
         {
-          label: "Next",
+          label: mt("next"),
           accelerator: "Right",
           click: goToNextSlideStep
         },
         {
-          label: "Previous",
+          label: mt("previous"),
           accelerator: "Left",
           click: goToPreviousSlideStep
         },
         { type: "separator" },
         {
-          label: "Extended Screen Mode",
+          label: mt("extendedScreenMode"),
           type: "radio",
           checked: presentationMode === "extended",
           click: () => switchPresentationMode("extended")
         },
         {
-          label: "Mirrored Screen Mode",
+          label: mt("mirroredScreenMode"),
           type: "radio",
           checked: presentationMode === "mirrored",
           click: () => switchPresentationMode("mirrored")
         },
         { type: "separator" },
         {
-          label: "Exit Full Screen",
+          label: mt("exitFullScreen"),
           accelerator: "Esc",
           click: exitFullScreen
         }
       ]
     },
     {
-      label: "Course",
+      label: mt("library"),
       submenu: [
         {
-          label: "Download Courses...",
+          label: `${mt("downloadCourses")}...`,
           click: openCourseDownload
         },
         {
-          label: "Choose Course Library Folder...",
+          label: `${mt("chooseCourseLibraryFolder")}...`,
           click: chooseCourseLibraryFolder
         },
         {
-          label: "Load Downloaded Course...",
+          label: `${mt("loadDownloadedCourse")}...`,
           accelerator: "CmdOrCtrl+O",
           click: loadDownloadedCourse
+        },
+        {
+          label: `${mt("downloadSongs")}...`,
+          click: openSongLibraryWindow
+        },
+        {
+          label: mt("openSongsFolder"),
+          click: openSongsFolder
+        },
+        { type: "separator" },
+        {
+          label: mt("openLibraryFolder"),
+          click: openLibraryFolder
+        },
+        {
+          label: mt("openCourseLibraryFolder"),
+          click: openCourseLibraryFolder
+        },
+        {
+          label: mt("openBackgroundsFolder"),
+          click: openBackgroundsFolder
+        },
+        { type: "separator" },
+        {
+          label: mt("openBibleFolder"),
+          click: openBibleFolder
+        },
+        {
+          label: mt("bibleStatusMenu"),
+          click: showBibleStatus
         }
       ]
     },
     {
-      label: "Quiz",
+      label: mt("quiz"),
       submenu: buildQuizSubmenu()
     },
     {
-      label: "Settings",
+      label: mt("settings"),
       submenu: [
         {
-          label: "Style Settings...",
+          label: `${mt("languageSettings")}...`,
+          click: openLanguageSettings
+        },
+        {
+          label: `${mt("style")}...`,
           accelerator: "CmdOrCtrl+,",
           click: openStyleSettings
+        },
+        { type: "separator" },
+        {
+          label: `${mt("checkForUpdates")}...`,
+          click: checkForUpdates
         }
       ]
     },
     {
-      label: "View",
+      label: mt("view"),
       submenu: [
         {
-          label: "Show H1/H2 Headers",
+          label: mt("openController"),
+          accelerator: "CmdOrCtrl+Shift+C",
+          click: openControllerWindow
+        },
+        {
+          label: mt("showConnectionQr"),
+          accelerator: "CmdOrCtrl+Shift+Q",
+          click: openConnectionWindow
+        },
+        {
+          label: mt(audienceQrMenuVisible ? "hideAudienceQrOnMainScreen" : "showAudienceQrOnMainScreen"),
+          click: toggleAudienceQrOnMainScreen
+        },
+        {
+          label: mt("openDirector"),
+          accelerator: "CmdOrCtrl+Shift+D",
+          click: openDirectorWindow
+        },
+        { type: "separator" },
+        {
+          label: mt("showHeaders"),
           submenu: buildHeadingSubmenu()
         },
         {
-          label: "Refresh Headers",
+          label: mt("refreshHeaders"),
           click: refreshHeadingMenu
         },
         { type: "separator" },
@@ -539,7 +1239,7 @@ function createMenu() {
       ]
     },
     {
-      label: "Window",
+      label: mt("window"),
       submenu: [
         { role: "minimize" },
         { role: "close" }
@@ -586,6 +1286,26 @@ function attachPresentationShortcuts(window) {
   });
 }
 
+function installTextEditingContextMenu() {
+  app.on("web-contents-created", (_event, contents) => {
+    contents.on("context-menu", (_menuEvent, params) => {
+      if (!params.isEditable) return;
+
+      Menu.buildFromTemplate([
+        { role: "undo", enabled: params.editFlags.canUndo },
+        { role: "redo", enabled: params.editFlags.canRedo },
+        { type: "separator" },
+        { role: "cut", enabled: params.editFlags.canCut },
+        { role: "copy", enabled: params.editFlags.canCopy },
+        { role: "paste", enabled: params.editFlags.canPaste },
+        { role: "delete", enabled: params.editFlags.canDelete },
+        { type: "separator" },
+        { role: "selectAll", enabled: params.editFlags.canSelectAll }
+      ]).popup({ window: BrowserWindow.fromWebContents(contents) });
+    });
+  });
+}
+
 function closeWindow(window) {
   if (!window || window.isDestroyed()) return;
   window.close();
@@ -594,6 +1314,12 @@ function closeWindow(window) {
 function clearWindowReferences() {
   if (presenterWindow?.isDestroyed()) presenterWindow = null;
   if (projectorWindow?.isDestroyed()) projectorWindow = null;
+  if (controllerWindow?.isDestroyed()) controllerWindow = null;
+  if (stageWindow?.isDestroyed()) stageWindow = null;
+  if (directorWindow?.isDestroyed()) directorWindow = null;
+  if (connectionWindow?.isDestroyed()) connectionWindow = null;
+  if (settingsWindow?.isDestroyed()) settingsWindow = null;
+  if (courseDownloadWindow?.isDestroyed()) courseDownloadWindow = null;
 }
 
 function switchPresentationMode(mode) {
@@ -760,14 +1486,19 @@ function recreatePresentationWindows() {
   }, 100);
 }
 
-function createWindows() {
+async function createWindows() {
+  await refreshAppLanguage();
   createMenu();
   createPresentationWindows();
   setTimeout(refreshHeadingMenu, 500);
   setTimeout(refreshQuizMenu, 600);
+  setTimeout(showFirstRunSetup, 900);
 }
 
-app.whenReady().then(createWindows);
+app.whenReady().then(() => {
+  installTextEditingContextMenu();
+  createWindows();
+});
 
 app.on("window-all-closed", () => {
   if (switchingMode) return;

@@ -1,0 +1,24 @@
+summary_type	name	count
+raw_band	extended_stable_field	30
+raw_band	mixed_continuity	20
+raw_band	movement_accumulation	11
+raw_band	recovery_field	2
+raw_band	transition_cluster	22
+calibrated_band	extended_stable_field	20
+calibrated_band	mixed_continuity	54
+calibrated_band	recovery_field	1
+calibrated_band	transition_cluster	10
+smoothed_band	extended_stable_field	16
+smoothed_band	mixed_continuity	61
+smoothed_band	transition_cluster	8
+calibration_reason	default_mixed	54
+calibration_reason	recovery_ratio_threshold	1
+calibration_reason	stable_ratio_threshold	20
+calibration_reason	unstable_ratio_pressure	10
+band_changed		51
+band_changed	True	34
+smoothing_changed		57
+smoothing_changed	True	28
+switch_count	raw_band	57
+switch_count	calibrated_band	43
+switch_count	smoothed_band	29
