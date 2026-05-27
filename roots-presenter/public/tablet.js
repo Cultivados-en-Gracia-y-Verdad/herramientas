@@ -4,6 +4,7 @@ const nextButton = document.getElementById("tabletNextButton");
 const prevButton = document.getElementById("tabletPrevButton");
 const blankButton = document.getElementById("tabletBlankButton");
 const blankSurface = document.getElementById("tabletBlankSurface");
+const tabletSurface = document.getElementById("tabletSurface");
 
 if (tabletCanvas) {
   const drawingSocket = window.CGV_SOCKET || io();
@@ -23,9 +24,33 @@ if (tabletCanvas) {
     tabletCanvas.height = DRAW_HEIGHT;
   }
 
+  function applyViewport(width, height) {
+    if (!tabletSurface || !width || !height) return;
+
+    const aspect = width / height;
+
+    tabletSurface.style.aspectRatio = `${width} / ${height}`;
+
+    const availableWidth = window.innerWidth;
+    const availableHeight = window.innerHeight - 64;
+
+    let surfaceWidth = availableWidth;
+    let surfaceHeight = surfaceWidth / aspect;
+
+    if (surfaceHeight > availableHeight) {
+      surfaceHeight = availableHeight;
+      surfaceWidth = surfaceHeight * aspect;
+    }
+
+    tabletSurface.style.width = `${surfaceWidth}px`;
+    tabletSurface.style.height = `${surfaceHeight}px`;
+  }
+
   resizeCanvas();
 
-  window.addEventListener("resize", resizeCanvas);
+  window.addEventListener("resize", () => {
+    resizeCanvas();
+  });
 
   function getPoint(event) {
     const rect = tabletCanvas.getBoundingClientRect();
@@ -114,6 +139,12 @@ if (tabletCanvas) {
   tabletCanvas.addEventListener("pointerup", stopDrawing);
   tabletCanvas.addEventListener("pointercancel", stopDrawing);
   tabletCanvas.addEventListener("pointerleave", stopDrawing);
+
+  drawingSocket.on("draw-point", point => {
+    if (point?.meta === "projector-viewport" && point.viewport) {
+      applyViewport(point.viewport.width, point.viewport.height);
+    }
+  });
 
   drawingSocket.on("draw-clear", () => {
     ctx.clearRect(0, 0, DRAW_WIDTH, DRAW_HEIGHT);
