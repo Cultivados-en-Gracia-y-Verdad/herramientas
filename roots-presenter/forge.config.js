@@ -61,8 +61,19 @@ module.exports = {
       [FuseV1Options.EnableCookieEncryption]: true,
       [FuseV1Options.EnableNodeOptionsEnvironmentVariable]: false,
       [FuseV1Options.EnableNodeCliInspectArguments]: false,
-      [FuseV1Options.EnableEmbeddedAsarIntegrityValidation]: true,
-      [FuseV1Options.OnlyLoadAppFromAsar]: true,
+      [FuseV1Options.EnableEmbeddedAsarIntegrityValidation]: false,
+      [FuseV1Options.OnlyLoadAppFromAsar]: false,
     }),
   ],
+  hooks: {
+    postMake: async (_forgeConfig, makeResults) => {
+      const builtForMac = makeResults.some(result => result.platform === 'darwin');
+      if (!builtForMac || process.platform !== 'darwin') {
+        return makeResults;
+      }
+
+      require('./scripts/build-macos-release');
+      return makeResults;
+    },
+  },
 };

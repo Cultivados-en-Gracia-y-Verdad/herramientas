@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io({ transports: ["websocket", "polling"] });
 
 let controllerState = {
   active: false,

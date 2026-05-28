@@ -1,7 +1,7 @@
 (() => {
   const params = new URLSearchParams(window.location.search);
   const isPreview = params.get("preview") === "1";
-  const socket = window.CGV_SOCKET || (typeof io === "function" ? io() : null);
+  const socket = window.CGV_SOCKET || (typeof io === "function" ? io({ transports: ["websocket", "polling"] }) : null);
 
   if (!socket || isPreview) return;
 

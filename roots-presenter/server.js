@@ -1,4 +1,5 @@
 const express = require("express");
+const compression = require("compression");
 const http = require("http");
 const https = require("https");
 const os = require("os");
@@ -9,8 +10,17 @@ const { marked } = require("marked");
 const QRCode = require("qrcode");
 
 const app = express();
+app.use(compression());
 const server = http.createServer(app);
-const io = new Server(server);
+const io = new Server(server, {
+  transports: ["websocket", "polling"],
+  pingInterval: 25000,
+  pingTimeout: 20000,
+  maxHttpBufferSize: 8 * 1024 * 1024,
+  perMessageDeflate: {
+    threshold: 1024
+  }
+});
 const serverPort = Number(process.env.PORT || 3000);
 const serverEvents = new EventTarget();
 const legacyNblaDir = path.join(__dirname, "..", "MNA", "data", "NBLA");
@@ -241,12 +251,66 @@ function saveSession() {
   );
 }
 
+function isIPv4Address(address) {
+  return address && (address.family === "IPv4" || address.family === 4);
+}
+
+function isVirtualInterface(name = "") {
+  const lower = String(name).toLowerCase();
+
+  return lower.startsWith("lo")
+    || lower.includes("virtual")
+    || lower.includes("vethernet")
+    || lower.includes("vmware")
+    || lower.includes("virtualbox")
+    || lower.includes("vboxnet")
+    || lower.includes("docker")
+    || lower.includes("wsl")
+    || lower.includes("hyper-v")
+    || lower.includes("npcap")
+    || lower.startsWith("utun")
+    || lower.startsWith("bridge");
+}
+
+function scoreNetworkAddress(name, address) {
+  if (!isIPv4Address(address) || address.internal) return -1;
+  if (isVirtualInterface(name)) return -1;
+
+  let score = 0;
+  const lowerName = String(name).toLowerCase();
+
+  if (/^(en|eth|wlan|wi-fi|wifi|wireless)/.test(lowerName)) score += 100;
+  if (address.address.startsWith("192.168.")) score += 50;
+  if (address.address.startsWith("10.")) score += 40;
+
+  const secondOctet = Number(address.address.split(".")[1]);
+  if (address.address.startsWith("172.") && secondOctet >= 16 && secondOctet <= 31) {
+    score += 30;
+  }
+
+  return score;
+}
+
 function getLocalIpAddress() {
   const interfaces = os.networkInterfaces();
+  let bestAddress = "";
+  let bestScore = -1;
+
+  for (const [name, addresses] of Object.entries(interfaces)) {
+    for (const address of addresses || []) {
+      const score = scoreNetworkAddress(name, address);
+      if (score > bestScore) {
+        bestScore = score;
+        bestAddress = address.address;
+      }
+    }
+  }
+
+  if (bestAddress) return bestAddress;
 
   for (const addresses of Object.values(interfaces)) {
     for (const address of addresses || []) {
-      if (address.family === "IPv4" && !address.internal) {
+      if (isIPv4Address(address) && !address.internal) {
         return address.address;
       }
     }
@@ -1694,10 +1758,44 @@ function seedStarterBackgrounds() {
 
   if (!sourceDir) return;
 
-  copyDirectoryFiltered(sourceDir, backgroundsDir, {
-    excludeFiles: new Set([".DS_Store"]),
-    skipExisting: true
+  const appState = loadAppState();
+  const seededBackgrounds = new Set(Array.isArray(appState.seededBackgrounds) ? appState.seededBackgrounds : []);
+  const bundledFiles = fs.readdirSync(sourceDir, { withFileTypes: true })
+    .filter(entry => entry.isFile() && !entry.name.startsWith(".") && entry.name !== ".DS_Store")
+    .map(entry => entry.name);
+
+  if (!seededBackgrounds.size && bundledFiles.length) {
+    const hasUserLibrary = fs.existsSync(backgroundsDir)
+      && fs.readdirSync(backgroundsDir).some(fileName => !fileName.startsWith("."));
+
+    if (hasUserLibrary) {
+      bundledFiles.forEach(fileName => seededBackgrounds.add(fileName));
+      saveAppState({ seededBackgrounds: [...seededBackgrounds] });
+      return;
+    }
+  }
+
+  let seededChanged = false;
+
+  fs.mkdirSync(backgroundsDir, { recursive: true });
+
+  bundledFiles.forEach(fileName => {
+    if (seededBackgrounds.has(fileName)) return;
+
+    const sourcePath = path.join(sourceDir, fileName);
+    const destinationPath = path.join(backgroundsDir, fileName);
+
+    if (!fs.existsSync(destinationPath)) {
+      fs.copyFileSync(sourcePath, destinationPath);
+    }
+
+    seededBackgrounds.add(fileName);
+    seededChanged = true;
   });
+
+  if (seededChanged) {
+    saveAppState({ seededBackgrounds: [...seededBackgrounds] });
+  }
 }
 
 function seedStarterBible() {
@@ -2468,6 +2566,7 @@ function jumpToSlide(slideIndex) {
   state.step = 0;
   resetQuiz();
   clearPopup();
+  notifyPresentationStepChanged();
   return true;
 }
 
@@ -2485,6 +2584,7 @@ function goToNextSlideStep() {
   }
 
   clearPopup();
+  notifyPresentationStepChanged();
   return true;
 }
 
@@ -2500,7 +2600,29 @@ function goToPreviousSlideStep() {
   }
 
   clearPopup();
+  notifyPresentationStepChanged();
   return true;
+}
+
+function notifyPresentationStepChanged() {
+  serverEvents.dispatchEvent(new CustomEvent("presentation-step-changed"));
+}
+
+function broadcastProjectorFrame(frame) {
+  if (!frame?.dataUrl) return;
+
+  io.emit("draw-point", {
+    x: 0,
+    y: 0,
+    drawing: false,
+    erase: false,
+    meta: "projector-frame",
+    frame: {
+      width: frame.width,
+      height: frame.height,
+      dataUrl: frame.dataUrl
+    }
+  });
 }
 
 function getQuizIndex() {
@@ -3089,6 +3211,7 @@ function nextControllerSection() {
   const nextStep = Math.min(controllerState.sections.length - 1, controllerState.step + 1);
   if (nextStep === controllerState.step) return false;
   controllerState.step = nextStep;
+  notifyPresentationStepChanged();
   return true;
 }
 
@@ -3097,6 +3220,7 @@ function previousControllerSection() {
   const previousStep = Math.max(0, controllerState.step - 1);
   if (previousStep === controllerState.step) return false;
   controllerState.step = previousStep;
+  notifyPresentationStepChanged();
   return true;
 }
 
@@ -3206,6 +3330,28 @@ function buildCoverSlides(meta = {}) {
   return [parseSlide([`![${meta.title || "Course cover"}](${cover})`])];
 }
 
+function renderSlideAt(index) {
+  const slide = slides[index];
+  if (!slide) return { sticky: [], lines: [] };
+
+  return {
+    sticky: (slide.stickyLines || []).map(renderLine),
+    lines: slide.lines.map(renderLine)
+  };
+}
+
+function buildRenderedSlideWindow() {
+  const currentSlide = Number(state.slide) || 0;
+
+  return {
+    slide: currentSlide,
+    count: slides.length,
+    current: renderSlideAt(currentSlide),
+    next: renderSlideAt(currentSlide + 1),
+    previous: currentSlide > 0 ? renderSlideAt(currentSlide - 1) : null
+  };
+}
+
 function buildPayload(participantId = null) {
   return {
     course: {
@@ -3222,10 +3368,8 @@ function buildPayload(participantId = null) {
     bibleVersion: getBibleVersion(),
     quizzes: quizBank.map(quiz => publicQuiz(quiz)),
     slides: slides.map(slide => ({ quiz: slide.quiz })),
-    renderedSlides: slides.map(slide => ({
-      sticky: (slide.stickyLines || []).map(renderLine),
-      lines: slide.lines.map(renderLine)
-    })),
+    slideCount: slides.length,
+    renderedSlideWindow: buildRenderedSlideWindow(),
     slide: state.slide,
     step: state.step,
     quizState: {
@@ -3592,7 +3736,12 @@ io.on("connection", socket => {
     if (Number.isInteger(parsedVerseIndex) && parsedVerseIndex >= 0) {
       popupState.verseIndex = parsedVerseIndex;
     }
-    sendState();
+
+    io.emit("popup-scroll", {
+      reference: popupState.reference,
+      scrollRatio: popupState.scrollRatio,
+      verseIndex: popupState.verseIndex
+    });
   });
 
   socket.on("set-audience-qr-visible", visible => {
@@ -3747,5 +3896,6 @@ server.listen(serverPort, "0.0.0.0", () => {
 });
 
 module.exports = {
-  serverEvents
+  serverEvents,
+  broadcastProjectorFrame
 };

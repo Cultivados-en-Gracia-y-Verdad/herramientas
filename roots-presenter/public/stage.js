@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io({ transports: ["websocket", "polling"] });
 const sharpNotes = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
 const noteIndexes = {
   C: 0,

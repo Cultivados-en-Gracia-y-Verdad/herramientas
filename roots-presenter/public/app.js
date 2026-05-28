@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io({ transports: ["websocket", "polling"] });
 window.CGV_SOCKET = socket;
 
 const isPresenter = document.body.classList.contains("presenter");
@@ -12,6 +12,7 @@ if (isProjector || isTablet) {
 }
 
 let renderedSlides = [];
+let slideCount = 0;
 let slides = [];
 let headings = [];
 let quizzes = [];
@@ -42,7 +43,7 @@ socket.on("state", data => {
   connection = data.connection || connection;
   appLanguage = data.language || "es";
   window.CGVI18N?.setLanguage(appLanguage);
-  renderedSlides = data.renderedSlides || [];
+  syncRenderedSlides(data);
   slides = data.slides || [];
   headings = data.headings || [];
   quizzes = data.quizzes || [];
@@ -87,6 +88,42 @@ socket.on("style-settings-updated", data => {
 
   link.href = `style-settings.css?v=${data?.updatedAt || Date.now()}`;
 });
+
+socket.on("popup-scroll", data => {
+  popupState = {
+    reference: data.reference ?? popupState.reference,
+    scrollRatio: typeof data.scrollRatio === "number" ? data.scrollRatio : popupState.scrollRatio,
+    verseIndex: Number.isInteger(data.verseIndex) ? data.verseIndex : popupState.verseIndex
+  };
+  applySharedPopupState();
+});
+
+function syncRenderedSlides(data = {}) {
+  if (data.renderedSlideWindow) {
+    const windowData = data.renderedSlideWindow;
+    slideCount = Number(windowData.count) || 0;
+
+    if (!renderedSlides.length || renderedSlides.length !== slideCount) {
+      renderedSlides = Array.from({ length: slideCount }, () => ({ sticky: [], lines: [] }));
+    }
+
+    const currentSlide = Number(windowData.slide) || 0;
+    renderedSlides[currentSlide] = windowData.current || { sticky: [], lines: [] };
+
+    if (windowData.next && currentSlide + 1 < slideCount) {
+      renderedSlides[currentSlide + 1] = windowData.next;
+    }
+
+    if (windowData.previous && currentSlide > 0) {
+      renderedSlides[currentSlide - 1] = windowData.previous;
+    }
+
+    return;
+  }
+
+  renderedSlides = data.renderedSlides || [];
+  slideCount = Number(data.slideCount) || renderedSlides.length;
+}
 
 function render() {
   const currentSlide = normalizeRenderedSlide(renderedSlides[slide]);
@@ -1266,7 +1303,7 @@ if (isProjector && !isTablet) {
   initDrawingCanvas(projectorCanvas);
 
   socket.on("draw-point", point => {
-    if (!projectorCanvas || !point) return;
+    if (!projectorCanvas || !point || point.meta) return;
 
     applyDrawPoint(point, projectorCanvas, !!point.erase);
   });

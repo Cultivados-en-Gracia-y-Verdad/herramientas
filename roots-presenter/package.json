@@ -20,10 +20,12 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "make:mac": "electron-forge make --platform=darwin --arch=arm64",
+    "make:mac:release": "npm run make:mac",
     "make:win": "electron-forge make --platform=win32 --arch=x64"
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^5.2.8",
+    "compression": "^1.8.1",
     "electron-squirrel-startup": "^1.0.1",
     "express": "^5.2.1",
     "marked": "^18.0.3",

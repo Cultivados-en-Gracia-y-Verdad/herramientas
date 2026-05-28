@@ -15,11 +15,14 @@ app.setName("CGV Presenter");
 process.env.ROOTS_RUNTIME_DATA_DIR = app.getPath("userData");
 process.env.ROOTS_DEFAULT_COURSE_LIBRARY_DIR = DEFAULT_COURSE_LIBRARY_DIR;
 
-const { serverEvents } = require("./server");
+const { serverEvents, broadcastProjectorFrame } = require("./server");
 
 let presenterWindow;
 let projectorWindow;
 let projectorCaptureTimer = null;
+let projectorCaptureInFlight = false;
+let projectorCaptureQueued = false;
+let presentationCaptureTimer = null;
 let controllerWindow;
 let stageWindow;
 let directorWindow;
@@ -1312,45 +1315,71 @@ function closeWindow(window) {
   window.close();
 }
 
+function stopProjectorCaptureFeed() {
+  if (!projectorCaptureTimer) return;
+  clearInterval(projectorCaptureTimer);
+  projectorCaptureTimer = null;
+}
+
+async function captureAndBroadcastProjectorFrame() {
+  if (!projectorWindow || projectorWindow.isDestroyed()) return;
+
+  if (projectorCaptureInFlight) {
+    projectorCaptureQueued = true;
+    return;
+  }
+
+  projectorCaptureInFlight = true;
+
+  try {
+    const image = await projectorWindow.capturePage();
+    const size = image.getSize();
+    const targetWidth = 960;
+    const targetHeight = Math.max(1, Math.round((size.height / Math.max(size.width, 1)) * targetWidth));
+    const resized = image.resize({ width: targetWidth, height: targetHeight, quality: "good" });
+    const dataUrl = `data:image/jpeg;base64,${resized.toJPEG(72).toString("base64")}`;
+    const [contentWidth, contentHeight] = projectorWindow.getContentSize();
+
+    broadcastProjectorFrame({
+      width: contentWidth || size.width,
+      height: contentHeight || size.height,
+      dataUrl
+    });
+  } catch (error) {
+    console.warn("Projector capture failed:", error);
+  } finally {
+    projectorCaptureInFlight = false;
+
+    if (projectorCaptureQueued) {
+      projectorCaptureQueued = false;
+      captureAndBroadcastProjectorFrame();
+    }
+  }
+}
+
 function startProjectorCaptureFeed() {
   if (projectorCaptureTimer) return;
 
-  projectorCaptureTimer = setInterval(async () => {
+  captureAndBroadcastProjectorFrame();
+
+  projectorCaptureTimer = setInterval(() => {
     if (!projectorWindow || projectorWindow.isDestroyed()) {
+      stopProjectorCaptureFeed();
       return;
     }
 
-    try {
-      const image = await projectorWindow.capturePage();
-
-      const resized = image.resize({
-        width: 1280
-      });
-
-      const dataUrl = image.toDataURL();
-
-      await projectorWindow.webContents.executeJavaScript(`
-        if (window.CGV_SOCKET) {
-          window.CGV_SOCKET.emit("draw-point", {
-            x: 0,
-            y: 0,
-            drawing: false,
-            erase: false,
-            meta: "projector-frame",
-            frame: {
-              width: window.innerWidth,
-              height: window.innerHeight,
-              dataUrl: ${JSON.stringify(dataUrl)}
-            }
-          });
-        }
-      `);
-
-    } catch (error) {
-      console.warn("Projector capture failed:", error);
-    }
-  }, 1000);
+    captureAndBroadcastProjectorFrame();
+  }, 2000);
 }
+
+serverEvents.addEventListener("presentation-step-changed", () => {
+  if (presentationCaptureTimer) clearTimeout(presentationCaptureTimer);
+
+  presentationCaptureTimer = setTimeout(() => {
+    presentationCaptureTimer = null;
+    captureAndBroadcastProjectorFrame();
+  }, 100);
+});
 
 function clearWindowReferences() {
   if (presenterWindow?.isDestroyed()) presenterWindow = null;
@@ -1447,6 +1476,7 @@ function createProjectorWindow(options = {}) {
   });
 
   projectorWindow.on("closed", () => {
+    stopProjectorCaptureFeed();
     projectorWindow = null;
   });
 }

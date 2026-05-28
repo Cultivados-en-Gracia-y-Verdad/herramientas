@@ -11,7 +11,7 @@ const blankSurface = document.getElementById("tabletBlankSurface");
 const tabletSurface = document.getElementById("tabletSurface");
 
 if (tabletCanvas) {
-  const drawingSocket = window.CGV_SOCKET || io();
+  const drawingSocket = window.CGV_SOCKET || io({ transports: ["websocket", "polling"] });
 
   const DRAW_WIDTH = 1920;
   const DRAW_HEIGHT = 1080;

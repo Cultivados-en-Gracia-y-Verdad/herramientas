@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io({ transports: ["websocket", "polling"] });
 
 let latestState = {};
 let songs = [];
@@ -110,7 +110,10 @@ function renderEntries(entries = []) {
 }
 
 function getVisibleTeachingHtml(state = {}) {
-  const renderedSlide = state.renderedSlides?.[state.slide] || { sticky: [], lines: [] };
+  const windowData = state.renderedSlideWindow;
+  const renderedSlide = windowData?.current
+    || state.renderedSlides?.[state.slide]
+    || { sticky: [], lines: [] };
   const visible = [
     ...(renderedSlide.sticky || []),
     ...(renderedSlide.lines || []).slice(0, (Number(state.step) || 0) + 1)
@@ -325,7 +328,7 @@ function renderDirector(state = {}) {
 
   const controllerState = state.controllerState || {};
   const isSongMode = !!controllerState.active;
-  const slideCount = state.renderedSlides?.length || 0;
+  const slideCount = state.slideCount ?? state.renderedSlideWindow?.count ?? state.renderedSlides?.length ?? 0;
   const slideNumber = Math.min(slideCount, (Number(state.slide) || 0) + 1);
   const songTotal = controllerState.sections?.length || 0;
   const songStep = Math.min(songTotal, (Number(controllerState.step) || 0) + 1);
