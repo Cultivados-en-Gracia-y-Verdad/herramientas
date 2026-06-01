@@ -337,7 +337,7 @@ function renderEntries(entries) {
 }
 
 function getPopupVerseBlocks(popup) {
-  return Array.from(popup?.querySelectorAll(":scope > div") || []);
+  return Array.from(popup?.querySelectorAll(":scope > .bible-popup-verse") || []);
 }
 
 function getPopupVerseIndex(popup) {

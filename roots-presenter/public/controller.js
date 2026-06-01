@@ -16,6 +16,7 @@ let backgrounds = [];
 let selectedSongId = null;
 let editingSongId = null;
 let selectedLibrary = "all";
+const ROOT_SONG_LIBRARY_KEY = "__root__";
 let defaultSongRepository = {
   repository: "Cultivados-en-Gracia-y-Verdad/canciones",
   url: "https://github.com/Cultivados-en-Gracia-y-Verdad/canciones/",
@@ -152,14 +153,16 @@ function getSongLibraryName(song) {
 }
 
 function getSongLibraryKey(song) {
-  return getSongLibraryName(song).toLowerCase();
+  const parts = String(song?.file || "").split("/").filter(Boolean);
+  return parts.length > 1 ? parts.slice(0, -1).join("/").toLowerCase() : ROOT_SONG_LIBRARY_KEY;
 }
 
 function getSongLibraries() {
   const libraries = new Map();
   songs.forEach(song => {
+    const key = getSongLibraryKey(song);
     const name = getSongLibraryName(song);
-    libraries.set(name.toLowerCase(), name);
+    libraries.set(key, name);
   });
 
   return [...libraries.entries()]
@@ -683,6 +686,7 @@ byId("applyStyleButton").addEventListener("click", applyStyle);
 byId("songSearch").addEventListener("input", renderSongList);
 byId("songLibraryFilter").addEventListener("change", event => {
   selectedLibrary = event.target.value || "all";
+  byId("songSearch").value = "";
   selectedSongId = getVisibleSongs()[0]?.id || null;
   renderSongList();
   renderPreview();

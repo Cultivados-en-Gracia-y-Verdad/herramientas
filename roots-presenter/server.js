@@ -719,11 +719,72 @@ function compareVersions(a, b) {
   return left.localeCompare(right, undefined, { numeric: true, sensitivity: "base" });
 }
 
-function readInstalledCourseManifest(coursePath) {
-  const courseLibraryDir = getCourseLibraryDir();
-  if (!courseLibraryDir || !isSafeCgvCoursePath(coursePath)) return null;
+const installedCoursePathAliases = {
+  "Romanos1-8": ["Romanos"],
+  Romanos: ["Romanos1-8"]
+};
 
-  const manifestPath = path.join(courseLibraryDir, safeDirectoryName(coursePath), "manifest.json");
+function normalizeCourseIdentity(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+function courseManifestMatchesCatalogPath(manifest, coursePath) {
+  if (!manifest || !coursePath) return false;
+
+  const normalizedCatalogPath = normalizeCourseIdentity(coursePath);
+  const manifestValues = [
+    manifest.catalogPath,
+    manifest.repositoryPath,
+    manifest.path,
+    manifest.id,
+    manifest.title
+  ];
+
+  return manifestValues.some(value => normalizeCourseIdentity(value) === normalizedCatalogPath);
+}
+
+function findInstalledCourseDir(coursePath) {
+  const courseLibraryDir = getCourseLibraryDir();
+  if (!courseLibraryDir || !isSafeCgvCoursePath(coursePath)) return "";
+
+  const candidateDirs = [
+    path.join(courseLibraryDir, safeDirectoryName(coursePath)),
+    ...(installedCoursePathAliases[coursePath] || []).map(alias =>
+      path.join(courseLibraryDir, safeDirectoryName(alias))
+    )
+  ];
+
+  for (const courseDir of candidateDirs) {
+    if (isLoadableCourseDir(courseDir)) return courseDir;
+  }
+
+  for (const courseDir of getInstalledCourseDirs()) {
+    const manifestPath = path.join(courseDir, "manifest.json");
+    if (!fs.existsSync(manifestPath)) continue;
+
+    try {
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf-8"));
+      if (courseManifestMatchesCatalogPath(manifest, coursePath)) {
+        return courseDir;
+      }
+    } catch (error) {
+      console.warn(`Could not inspect installed course manifest: ${error.message}`);
+    }
+  }
+
+  return "";
+}
+
+function readInstalledCourseManifest(coursePath) {
+  const installedCourseDir = findInstalledCourseDir(coursePath);
+  if (!installedCourseDir) return null;
+
+  const manifestPath = path.join(installedCourseDir, "manifest.json");
   if (!fs.existsSync(manifestPath)) return null;
 
   try {
@@ -745,13 +806,10 @@ async function fetchCgvCourseManifest(coursePath) {
 }
 
 async function buildCatalogCourse(item) {
-  const courseLibraryDir = getCourseLibraryDir();
   const remoteManifest = await fetchCgvCourseManifest(item.name);
   const available = Boolean(remoteManifest);
   const installedManifest = readInstalledCourseManifest(item.name);
-  const installedCourseDir = courseLibraryDir
-    ? path.join(courseLibraryDir, safeDirectoryName(item.name))
-    : "";
+  const installedCourseDir = findInstalledCourseDir(item.name);
   const remoteVersion = String(remoteManifest?.version || "").trim();
   const localVersion = String(installedManifest?.version || "").trim();
   const installed = Boolean(installedManifest);
@@ -1367,7 +1425,7 @@ function buildBibleReferencePopup(displayReference, verses) {
   const popupText = verses
     .map(reference => {
       const verseReference = `${reference.book} ${reference.chapter}:${reference.verse}`;
-      return `<div><strong>${escapeHtml(verseReference)}</strong> ${escapeHtml(reference.text)}</div>`;
+      return `<span class="bible-popup-verse"><strong>${escapeHtml(verseReference)}</strong> ${escapeHtml(reference.text)}</span>`;
     })
     .join("");
 

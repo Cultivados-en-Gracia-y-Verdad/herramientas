@@ -443,7 +443,11 @@ textarea {
   border-top-color: var(--popup-background, #111);
 }
 
-.bible-popup div + div {
+.bible-popup-verse {
+  display: block;
+}
+
+.bible-popup-verse + .bible-popup-verse {
   margin-top: 12px;
 }
 

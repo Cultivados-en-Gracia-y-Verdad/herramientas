@@ -88,11 +88,22 @@ textarea {
 .controller-shell {
   display: grid;
   grid-template-columns: minmax(260px, 320px) minmax(620px, 1fr);
+  grid-template-rows: minmax(0, 1fr);
   gap: 18px;
   height: calc(100vh - 80px);
   min-height: 0;
   padding: 18px 22px 24px;
   position: relative;
+}
+
+.song-library {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.controller-panel {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .song-library,
@@ -105,8 +116,8 @@ textarea {
 }
 
 .song-library {
-  display: grid;
-  grid-template-rows: auto auto auto minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
   min-height: 0;
   padding: 14px;
 }
@@ -229,6 +240,7 @@ select {
 }
 
 .library-filter {
+  flex: 0 0 auto;
   margin-bottom: 16px;
 }
 
@@ -236,6 +248,7 @@ select {
   background: #ffffff;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 textarea {
@@ -248,6 +261,7 @@ textarea {
 .song-list {
   display: grid;
   gap: 7px;
+  flex: 1 1 auto;
   min-height: 0;
   overflow: auto;
   padding-right: 4px;
