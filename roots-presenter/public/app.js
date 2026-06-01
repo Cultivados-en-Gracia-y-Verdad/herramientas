@@ -182,12 +182,14 @@ function render() {
     audienceSlide.innerHTML = html;
     applySlideLayoutClass(audienceSlide);
     renderAudienceQuiz();
-    fitSlideText(audienceSlide, {
-      baseSize: 42,
-      minSize: 20,
-      maxHeight: Math.max(220, window.innerHeight * 0.48),
-      maxWidth: audienceSlide.clientWidth
-    });
+    if (!audienceSlide.classList.contains("cover-slide")) {
+      fitSlideText(audienceSlide, {
+        baseSize: 42,
+        minSize: 20,
+        maxHeight: Math.max(220, window.innerHeight * 0.48),
+        maxWidth: audienceSlide.clientWidth
+      });
+    }
     applySharedPopupState();
   }
 }
@@ -276,7 +278,12 @@ function applySlideLayoutClass(element) {
     !!clone.querySelector("h1, h2, .manual-title, .manual-subtitle") &&
     !clone.querySelector("h3, h4, h5, h6, p:not(.manual-title):not(.manual-subtitle), ul, ol, blockquote, .definition, .synthesis-box");
 
+  const hasOnlyCoverImage =
+    clone.querySelectorAll("img").length === 1 &&
+    !clone.querySelector("h1, h2, h3, h4, h5, h6, ul, ol, blockquote, .definition, .synthesis-box, .bible-ref, .manual-title, .manual-subtitle");
+
   element.classList.toggle("title-slide", hasOnlyTitleContent);
+  element.classList.toggle("cover-slide", hasOnlyCoverImage);
 }
 
 function normalizeRenderedSlide(renderedSlide) {
@@ -490,7 +497,7 @@ function getProjectorLayoutSize() {
 }
 
 function fitProjectorSlide(slideEl) {
-  if (!slideEl) return;
+  if (!slideEl || slideEl.classList.contains("cover-slide")) return;
 
   if (isTablet) {
     fitSlideText(slideEl, {

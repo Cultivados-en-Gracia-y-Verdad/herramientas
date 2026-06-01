@@ -195,7 +195,7 @@ textarea {
 .slide h3 + p,
 .projector-slide h3 + p {
   margin-left: var(--style-scripture-indent, 0);
-  color: var(--style-scripture-color, #f5f2e8);
+  color: var(--style-scripture-color, #fde68a);
   font-size: calc(var(--style-scripture-size, 0.98em) * 1.02);
   font-style: italic;
   font-weight: 400;
@@ -467,11 +467,11 @@ textarea {
 .presenter .slide .bible-ref.open .bible-popup {
   position: fixed;
   left: 50%;
-  top: 48px;
+  top: 50%;
   bottom: auto;
   width: min(1180px, 88vw);
   max-height: 46vh;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   font-size: var(--popup-text-size, 40px);
   line-height: 1.28;
 }
@@ -497,13 +497,13 @@ textarea {
 .shared-popup-overlay {
   position: fixed;
   left: 50%;
-  top: 48px;
+  top: 50%;
   z-index: 100;
   display: none;
   width: min(1180px, 88vw);
   max-height: 46vh;
   overflow: auto;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background: var(--popup-background, #111);
   color: var(--popup-color, #fff);
   border-radius: 8px;
@@ -559,7 +559,7 @@ textarea {
 .presenter .slide .bible-ref.open .popup-controls {
   position: fixed;
   left: 50%;
-  top: calc(48px + min(42vh, 360px) + 10px);
+  top: calc(50% + min(23vh, 200px) + 12px);
   z-index: 30;
   display: flex;
   gap: 10px;
@@ -602,6 +602,32 @@ button {
   max-width: min(100%, 1080px);
   max-height: 70vh;
   margin: 0.5em auto;
+  object-fit: contain;
+}
+
+.slide.cover-slide,
+.projector-slide.cover-slide,
+.audience-slide.cover-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  margin: auto;
+  text-align: center;
+}
+
+.projector-slide.cover-slide {
+  max-height: calc(100vh - clamp(104px, 13vh, 152px));
+  width: min(96vw, 100%);
+}
+
+.cover-slide img {
+  max-width: min(96vw, 100%);
+  max-height: min(92vh, 100%);
+  width: auto;
+  height: auto;
+  margin: 0;
   object-fit: contain;
 }
 
@@ -1015,7 +1041,7 @@ button {
 }
 
 .projector-slide h3 + p {
-  color: var(--style-scripture-color, #f5f2e8);
+  color: var(--style-scripture-color, #fde68a);
 }
 
 .projector-slide h4 {
