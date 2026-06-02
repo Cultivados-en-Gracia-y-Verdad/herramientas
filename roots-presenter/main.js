@@ -93,6 +93,8 @@ const MAIN_TRANSLATIONS = {
     quizCouldNotExport: "No se pudieron exportar los resultados del quiz.",
     newTeachingSession: "Nueva sesión de enseñanza",
     sessionCouldNotCreate: "No se pudo crear la sesión.",
+    importTeachingMarkdown: "Importar markdown de enseñanza...",
+    teachingMarkdownCouldNotLoad: "No se pudo cargar el archivo markdown seleccionado.",
     styleSettings: "Configuración de estilo",
     languageSettings: "Idioma",
     style: "Estilo",
@@ -193,6 +195,8 @@ MAIN_TRANSLATIONS.en = {
   quizCouldNotExport: "The quiz results could not be exported.",
   newTeachingSession: "New Teaching Session",
   sessionCouldNotCreate: "The session could not be created.",
+  importTeachingMarkdown: "Import Teaching Markdown...",
+  teachingMarkdownCouldNotLoad: "The selected markdown file could not be loaded.",
   styleSettings: "Style Settings",
   languageSettings: "Language",
   style: "Style",
@@ -499,6 +503,29 @@ async function loadDownloadedCourse() {
     dialog.showErrorBox(
       mt("loadDownloadedCourse"),
       error?.message || mt("selectedCourseCouldNotLoad")
+    );
+  }
+}
+
+async function importTeachingMarkdown() {
+  try {
+    const result = await dialog.showOpenDialog(presenterWindow || BrowserWindow.getFocusedWindow(), {
+      title: mt("importTeachingMarkdown"),
+      properties: ["openFile"],
+      filters: [
+        { name: "Markdown", extensions: ["md", "markdown"] }
+      ]
+    });
+
+    if (result.canceled || !result.filePaths.length) return;
+
+    await postJsonLocal("/course/load-markdown", { markdownPath: result.filePaths[0] });
+    await refreshHeadingMenu();
+    await refreshQuizMenu();
+  } catch (error) {
+    dialog.showErrorBox(
+      mt("importTeachingMarkdown"),
+      error?.message || mt("teachingMarkdownCouldNotLoad")
     );
   }
 }
@@ -1071,6 +1098,11 @@ function createMenu() {
       label: mt("file"),
       submenu: [
         {
+          label: `${mt("importTeachingMarkdown")}`,
+          accelerator: "CmdOrCtrl+Shift+O",
+          click: importTeachingMarkdown
+        },
+        {
           label: mt("newTeachingSession"),
           accelerator: "CmdOrCtrl+N",
           click: startNewTeachingSession
@@ -1149,6 +1181,10 @@ function createMenu() {
           label: `${mt("loadDownloadedCourse")}...`,
           accelerator: "CmdOrCtrl+O",
           click: loadDownloadedCourse
+        },
+        {
+          label: `${mt("importTeachingMarkdown")}`,
+          click: importTeachingMarkdown
         },
         {
           label: `${mt("downloadSongs")}...`,

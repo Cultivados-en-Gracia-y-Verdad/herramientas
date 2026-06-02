@@ -1,6 +1,6 @@
 # CGV Presenter — TODO
 
-Backlog for the `roots-presenter` app. Current release: **1.1.15** (in progress).
+Backlog for the `roots-presenter` app. Current release: **1.1.15**.
 
 ## Distribution
 
@@ -39,8 +39,10 @@ Backlog for the `roots-presenter` app. Current release: **1.1.15** (in progress)
 
 ## Done (1.1.15)
 
+- [x] Import teaching markdown for one-off speaking engagements
 - [x] Course cover image uses full slide area (`cover-slide`)
-- [x] Default scripture text color is slightly yellow (comments unchanged)
+- [x] Default scripture text color is yellow on H4/italics (commentary unchanged)
+- [x] Definition boxes with readable contrast on presenter and projector
 - [x] Scripture popup centered on screen (presenter, projector, audience)
 
 ## Done (1.1.14)

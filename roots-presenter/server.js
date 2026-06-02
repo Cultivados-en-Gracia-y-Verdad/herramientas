@@ -182,7 +182,7 @@ app.use("/course-assets", serveCourseAsset);
 let slides = [];
 let presentationMeta = {};
 let quizBank = [];
-let currentCourse = loadCourse(getStartupCourseDir());
+let currentCourse = resolveStartupCourse();
 let bibleReferences = {};
 let bibleChapterVerseCounts = {};
 let bibleBookNames = [];
@@ -2056,9 +2056,57 @@ function getStartupCourseDir() {
   return defaultCourseDir;
 }
 
+function isLoadableMarkdownFile(filePath) {
+  try {
+    if (!filePath || typeof filePath !== "string") return false;
+
+    const resolvedPath = path.resolve(filePath);
+    return fs.existsSync(resolvedPath)
+      && fs.statSync(resolvedPath).isFile()
+      && /\.(md|markdown)$/i.test(resolvedPath);
+  } catch (error) {
+    console.warn(`Could not inspect markdown file: ${error.message}`);
+    return false;
+  }
+}
+
+function resolveStartupCourse() {
+  const appState = loadAppState();
+  const lastTeachingMarkdown = appState.lastTeachingMarkdown;
+
+  if (isLoadableMarkdownFile(lastTeachingMarkdown)) {
+    return loadTeachingMarkdown(lastTeachingMarkdown);
+  }
+
+  return loadCourse(getStartupCourseDir());
+}
+
 function getCourseSessionsDir(course) {
   const courseId = safeDirectoryName(course?.id || path.basename(course?.rootDir || "legacy"));
   return path.join(runtimeDataDir, "sessions", courseId);
+}
+
+function loadTeachingMarkdown(markdownPath) {
+  const entryPath = path.resolve(markdownPath);
+  const rootDir = path.dirname(entryPath);
+  const parsed = parseFrontMatter(fs.readFileSync(entryPath, "utf-8"));
+  const baseName = path.basename(entryPath, path.extname(entryPath));
+  const title = String(parsed.meta?.title || baseName).trim() || "Teaching";
+
+  const course = {
+    id: `teaching-${safeDirectoryName(baseName)}`,
+    title,
+    subtitle: String(parsed.meta?.subtitle || "").trim(),
+    version: String(parsed.meta?.version || "").trim(),
+    teachingImport: true,
+    rootDir,
+    entryPath
+  };
+
+  return {
+    ...course,
+    sessionsDir: getCourseSessionsDir(course)
+  };
 }
 
 function loadCourse(courseDir) {
@@ -2108,7 +2156,30 @@ function switchCourse(courseDir) {
   currentSession = createSession();
   loadSlides();
   saveSession();
-  saveAppState({ lastCourseDir: currentCourse.rootDir });
+  saveAppState({ lastCourseDir: currentCourse.rootDir, lastTeachingMarkdown: "" });
+  serverEvents.dispatchEvent(new CustomEvent("course-loaded", {
+    detail: {
+      id: currentCourse.id,
+      title: currentCourse.title,
+      rootDir: currentCourse.rootDir
+    }
+  }));
+  return true;
+}
+
+function switchTeachingMarkdown(markdownPath) {
+  if (!isLoadableMarkdownFile(markdownPath)) return false;
+
+  const nextCourse = loadTeachingMarkdown(markdownPath);
+  currentCourse = nextCourse;
+  state.slide = 0;
+  state.step = 0;
+  resetQuiz();
+  clearPopup();
+  currentSession = createSession();
+  loadSlides();
+  saveSession();
+  saveAppState({ lastTeachingMarkdown: currentCourse.entryPath, lastCourseDir: "" });
   serverEvents.dispatchEvent(new CustomEvent("course-loaded", {
     detail: {
       id: currentCourse.id,
@@ -3488,6 +3559,23 @@ app.post("/course/load", (req, res) => {
   });
 });
 
+app.post("/course/load-markdown", (req, res) => {
+  const markdownPath = req.body?.markdownPath;
+
+  if (!markdownPath || typeof markdownPath !== "string" || !switchTeachingMarkdown(markdownPath)) {
+    res.status(400).json({ error: "Could not load teaching markdown." });
+    return;
+  }
+
+  sendState();
+  res.json({
+    id: currentCourse.id,
+    title: currentCourse.title,
+    rootDir: currentCourse.rootDir,
+    entryPath: currentCourse.entryPath
+  });
+});
+
 app.get("/course-library", (req, res) => {
   res.json({
     path: getLibraryRootDir(),
@@ -3733,7 +3821,11 @@ app.post("/controller/previous", (req, res) => {
 
 loadBibleReferences();
 loadSlides();
-saveAppState({ lastCourseDir: currentCourse.rootDir });
+if (currentCourse.teachingImport) {
+  saveAppState({ lastTeachingMarkdown: currentCourse.entryPath, lastCourseDir: "" });
+} else {
+  saveAppState({ lastCourseDir: currentCourse.rootDir, lastTeachingMarkdown: "" });
+}
 saveSession();
 
 io.on("connection", socket => {
