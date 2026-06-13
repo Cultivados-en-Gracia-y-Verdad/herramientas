@@ -1,0 +1,504 @@
+/* CGV manual typography — docs/conventions.md */
+:root {
+  --cgv-indent-h3: 0;
+  --cgv-indent-h4: 1.5rem;
+  --cgv-indent-h5: 3rem;
+  --cgv-indent-h6: 4.5rem;
+  --cgv-indent-bullets: 5.75rem;
+  --cgv-scripture-color: #1e293b;
+}
+
+.manual-editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: #e8eaed;
+}
+
+.manual-editor--writing {
+  background: #fff;
+  position: relative;
+}
+
+.manual-editor--writing .manual-page-scroll {
+  padding: 0;
+  height: 100%;
+}
+
+.manual-editor--writing .manual-page {
+  max-width: none;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: clamp(28px, 5vh, 56px) clamp(40px, 8vw, 120px) clamp(48px, 8vh, 96px);
+  box-shadow: none;
+  border: none;
+}
+
+.writing-mode-keys {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 8px 16px 12px;
+  text-align: center;
+  font-size: 0.65rem;
+  color: #94a3b8;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.92) 40%);
+  opacity: 0.55;
+  transition: opacity 0.25s ease;
+}
+
+.manual-editor--writing:focus-within .writing-mode-keys {
+  opacity: 0.2;
+}
+
+.manual-editor--writing .manual-page-scroll:hover ~ .writing-mode-keys,
+.manual-editor--writing .writing-mode-keys:hover {
+  opacity: 0.55;
+}
+
+.manual-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #fff;
+  border-bottom: 1px solid #dadce0;
+  flex-shrink: 0;
+}
+
+.manual-toolbar-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #5f6368;
+  margin-right: 4px;
+}
+
+.manual-toolbar button,
+.manual-toolbar-btn {
+  padding: 5px 11px;
+  font-size: 0.82rem;
+  border: 1px solid #dadce0;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.manual-toolbar button:hover,
+.manual-toolbar-btn:hover {
+  background: #e8f4fc;
+  border-color: #0369a1;
+}
+
+.manual-toolbar button.accent,
+.manual-toolbar-btn.accent {
+  background: #f0f9ff;
+  border-color: #7dd3fc;
+}
+
+.manual-toolbar button.is-active,
+.manual-toolbar-btn.is-active {
+  background: #0369a1;
+  border-color: #0369a1;
+  color: #fff;
+}
+
+.manual-toolbar button.is-active.accent,
+.manual-toolbar-btn.is-active.accent {
+  background: #0284c7;
+  border-color: #0284c7;
+  color: #fff;
+}
+
+.manual-style-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  font-size: 0.78rem;
+  color: #334155;
+}
+
+.manual-style-indicator-mark {
+  font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #0369a1;
+  background: #fff;
+  border: 1px solid #bae6fd;
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+
+.manual-style-indicator-label {
+  font-weight: 600;
+}
+
+.manual-style-indicator-shortcut {
+  font-size: 0.68rem;
+  color: #64748b;
+}
+
+.manual-style-indicator--writing {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.manual-toolbar-sep {
+  width: 1px;
+  height: 22px;
+  background: #dadce0;
+  margin: 0 4px;
+}
+
+.manual-page-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: 24px 16px 48px;
+}
+
+.manual-page {
+  max-width: 816px;
+  margin: 0 auto;
+  min-height: calc(100% - 24px);
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  padding: 72px 56px 96px;
+}
+
+.manual-prosemirror {
+  outline: none;
+  font-family: "Georgia", "Times New Roman", "IBM Plex Serif", serif;
+  font-size: calc(12pt * var(--cgv-type-scale));
+  line-height: 1.55;
+  color: #202124;
+}
+
+.manual-prosemirror p {
+  margin: 0 0 0.55em;
+}
+
+/* H1 / H2 — centered titles */
+.manual-prosemirror h1 {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: calc(20pt * var(--cgv-type-scale));
+  font-weight: 700;
+  color: #1e3a5f;
+  text-align: center;
+  margin: 1.4em 0 0.6em;
+}
+
+.manual-prosemirror h2 {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: calc(16pt * var(--cgv-type-scale));
+  font-weight: 600;
+  color: #0369a1;
+  text-align: center;
+  margin: 1.2em 0 0.55em;
+}
+
+/* H3 — referencia (prioridad, margen izquierdo base) */
+.manual-prosemirror h3 {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: calc(13pt * var(--cgv-type-scale));
+  font-weight: 700;
+  color: #0f172a;
+  margin: 1.1em 0 0.15em;
+  margin-left: var(--cgv-indent-h3);
+}
+
+.manual-editor--bible-ready .manual-prosemirror h3 {
+  color: #075985;
+  border-bottom: 0.08em dotted currentColor;
+  cursor: pointer;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.manual-editor--bible-ready .manual-prosemirror h3:hover {
+  color: #0369a1;
+}
+
+.manual-editor--bible-ready .manual-prosemirror .cgv-inline-bible-ref {
+  color: #075985;
+  border-bottom: 0.08em dotted currentColor;
+  cursor: pointer;
+}
+
+.manual-editor--bible-ready .manual-prosemirror .cgv-inline-bible-ref:hover {
+  color: #0369a1;
+}
+
+/* Verse block under H3 — flush left with reference */
+.manual-prosemirror h3 + p:not(.cgv-quiz):not(.definition-term):not(.definition-text),
+.manual-prosemirror h3 + p.cgv-scripture,
+.manual-prosemirror p.cgv-scripture:not(.cgv-focus):not(.cgv-h5):not(.cgv-h6) {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: calc(12pt * var(--cgv-type-scale));
+  font-weight: 400;
+  font-style: italic;
+  color: var(--cgv-scripture-color);
+  margin-left: var(--cgv-indent-h3);
+}
+
+.manual-prosemirror h3 + p:not(.cgv-quiz):not(.definition-term):not(.definition-text)::before,
+.manual-prosemirror h3 + p.cgv-scripture::before,
+.manual-prosemirror p.cgv-scripture:not(.cgv-focus):not(.cgv-h5):not(.cgv-h6)::before {
+  content: "«";
+  font-style: normal;
+  color: #64748b;
+}
+
+.manual-prosemirror h3 + p:not(.cgv-quiz):not(.definition-term):not(.definition-text)::after,
+.manual-prosemirror h3 + p.cgv-scripture::after,
+.manual-prosemirror p.cgv-scripture:not(.cgv-focus):not(.cgv-h5):not(.cgv-h6)::after {
+  content: "»";
+  font-style: normal;
+  color: #64748b;
+}
+
+/* H4 — anchor text (scripture style, nested under H3) */
+.manual-prosemirror h4,
+.manual-prosemirror p.cgv-focus,
+.manual-prosemirror p.cgv-comment-1 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: calc(12pt * var(--cgv-type-scale));
+  font-weight: 400;
+  font-style: italic;
+  color: var(--cgv-scripture-color);
+  margin: 0.35em 0 0.2em var(--cgv-indent-h4);
+}
+
+.manual-prosemirror h4::before,
+.manual-prosemirror p.cgv-focus::before,
+.manual-prosemirror p.cgv-comment-1::before {
+  content: "«";
+  font-style: normal;
+  color: #64748b;
+}
+
+.manual-prosemirror h4::after,
+.manual-prosemirror p.cgv-focus::after,
+.manual-prosemirror p.cgv-comment-1::after {
+  content: "»";
+  font-style: normal;
+  color: #64748b;
+}
+
+/* Cursiva en comentarios = estilo escritura */
+.manual-prosemirror h4 em,
+.manual-prosemirror h5 em,
+.manual-prosemirror h6 em,
+.manual-prosemirror .cgv-focus em,
+.manual-prosemirror .cgv-h5 em,
+.manual-prosemirror .cgv-h6 em,
+.manual-prosemirror .cgv-h6-bullets em,
+.manual-prosemirror .cgv-comment-1 em,
+.manual-prosemirror .cgv-comment-2 em,
+.manual-prosemirror .cgv-comment-3 em,
+.manual-prosemirror h4 i,
+.manual-prosemirror h5 i,
+.manual-prosemirror h6 i,
+.manual-prosemirror .cgv-focus i,
+.manual-prosemirror .cgv-h5 i,
+.manual-prosemirror .cgv-h6 i,
+.manual-prosemirror .cgv-h6-bullets i,
+.manual-prosemirror .cgv-comment-1 i,
+.manual-prosemirror .cgv-comment-2 i,
+.manual-prosemirror .cgv-comment-3 i {
+  font-style: italic;
+  color: var(--cgv-scripture-color);
+}
+
+.manual-prosemirror h4 em::before,
+.manual-prosemirror h5 em::before,
+.manual-prosemirror h6 em::before,
+.manual-prosemirror .cgv-focus em::before,
+.manual-prosemirror .cgv-h5 em::before,
+.manual-prosemirror .cgv-h6 em::before,
+.manual-prosemirror .cgv-h6-bullets em::before,
+.manual-prosemirror .cgv-comment-1 em::before,
+.manual-prosemirror .cgv-comment-2 em::before,
+.manual-prosemirror .cgv-comment-3 em::before {
+  content: "«";
+  font-style: normal;
+  color: #64748b;
+}
+
+.manual-prosemirror h4 em::after,
+.manual-prosemirror h5 em::after,
+.manual-prosemirror h6 em::after,
+.manual-prosemirror .cgv-focus em::after,
+.manual-prosemirror .cgv-h5 em::after,
+.manual-prosemirror .cgv-h6 em::after,
+.manual-prosemirror .cgv-h6-bullets em::after,
+.manual-prosemirror .cgv-comment-1 em::after,
+.manual-prosemirror .cgv-comment-2 em::after,
+.manual-prosemirror .cgv-comment-3 em::after {
+  content: "»";
+  font-style: normal;
+  color: #64748b;
+}
+
+/* H5 — comment level 1 (nested under H4) */
+.manual-prosemirror h5,
+.manual-prosemirror p.cgv-h5,
+.manual-prosemirror p.cgv-comment-2 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: calc(12pt * var(--cgv-type-scale));
+  font-weight: 400;
+  margin: 0 0 0.25em var(--cgv-indent-h5);
+  color: #202124;
+}
+
+.manual-prosemirror .cgv-h5-block {
+  margin: 0.35em 0 0.6em;
+}
+
+.manual-prosemirror .cgv-h5-block p.cgv-h6,
+.manual-prosemirror .cgv-h5-block ul.cgv-h6-bullets {
+  margin-left: var(--cgv-indent-h6);
+}
+
+/* H6 — comment level 2 (nested under H5) */
+.manual-prosemirror h6,
+.manual-prosemirror p.cgv-h6,
+.manual-prosemirror p.cgv-comment-3 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: calc(11.5pt * var(--cgv-type-scale));
+  font-weight: 400;
+  margin: 0 0 0.35em var(--cgv-indent-h6);
+  color: #202124;
+}
+
+/* Bullets — comment level 3 (nested under H6) */
+.manual-prosemirror ul.cgv-h6-bullets,
+.manual-prosemirror ul.cgv-comment-3 {
+  margin: 0 0 0.35em var(--cgv-indent-bullets);
+  padding-left: 1.25em;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: calc(11.5pt * var(--cgv-type-scale));
+}
+
+/* Definición léxica */
+.manual-prosemirror .cgv-definition {
+  margin: 0.85em 0 1em var(--cgv-indent-h4);
+  padding: 12px 14px;
+  border-left: 4px solid #0369a1;
+  background: #f0f9ff;
+  border-radius: 0 8px 8px 0;
+}
+
+.manual-prosemirror .cgv-definition .definition-term {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-weight: 700;
+  color: #075985;
+  margin: 0 0 4px;
+}
+
+.manual-prosemirror .cgv-definition .definition-text {
+  margin: 0;
+  color: #334155;
+}
+
+/* Espacio en blanco — subrayado */
+.manual-prosemirror u {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  background: linear-gradient(to bottom, transparent 58%, #fde68a 58%, #fde68a 92%, transparent 92%);
+}
+
+.manual-prosemirror hr.cgv-slide-break {
+  border: 0;
+  border-top: 2px dashed #cbd5e1;
+  margin: 1.5em 0;
+}
+
+.manual-prosemirror p.cgv-quiz {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: calc(10pt * var(--cgv-type-scale));
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-left: var(--cgv-indent-h3);
+  color: #9a3412;
+}
+
+/* En Síntesis — blockquote review block */
+.manual-prosemirror blockquote.cgv-synthesis,
+.manual-prosemirror blockquote.synthesis-box {
+  margin: 0.75em 0;
+  padding: 0.55em 0.75em 0.6em;
+  border: 1px solid #d8cdbb;
+  border-left: 4px solid #075985;
+  border-radius: 8px;
+  background: #f5f2e8;
+  color: #1f2937;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.manual-prosemirror blockquote.cgv-synthesis p.cgv-synthesis-title,
+.manual-prosemirror blockquote.synthesis-box p.cgv-synthesis-title,
+.manual-prosemirror blockquote.cgv-synthesis > p:first-child,
+.manual-prosemirror blockquote.synthesis-box > p:first-child {
+  margin: 0 0 0.4em;
+  color: #075985;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: calc(11pt * var(--cgv-type-scale));
+  font-weight: 600;
+}
+
+.manual-prosemirror blockquote.cgv-synthesis ul,
+.manual-prosemirror blockquote.synthesis-box ul {
+  margin: 0;
+  padding-left: 1.15em;
+}
+
+.manual-prosemirror blockquote.cgv-synthesis li,
+.manual-prosemirror blockquote.synthesis-box li {
+  margin: 0.24em 0;
+  font-size: calc(10pt * var(--cgv-type-scale));
+  line-height: 1.35;
+  color: #1f2937;
+}
+
+.manual-prosemirror .is-empty::before {
+  color: #9aa0a6;
+  font-style: italic;
+}
+
+.manual-prosemirror p.cgv-scripture.is-empty::before {
+  content: "«escritura»";
+}
+
+.manual-prosemirror p.cgv-scripture.is-empty::after {
+  content: "";
+}
+
+.cgv-search-match {
+  background-color: rgba(250, 204, 21, 0.55) !important;
+  border-radius: 2px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.cgv-search-match--current {
+  background-color: rgba(251, 146, 60, 0.75) !important;
+  box-shadow: inset 0 0 0 2px #ea580c;
+}

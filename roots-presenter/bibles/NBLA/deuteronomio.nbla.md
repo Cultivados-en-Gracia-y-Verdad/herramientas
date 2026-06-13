@@ -1,959 +1,959 @@
-Deuteronomy 1:1 Éstas son las palabras que habló Moisés a todo Israel a este lado del Jordán en el desierto, en el Arabá frente al Mar Rojo, entre Parán, Tofel, Labán, Hazerot y Dizahab.
-Deuteronomy 1:2 Once jornadas hay desde Horeb, camino del monte de Seir, hasta Cades-barnea.
-Deuteronomy 1:3 Y aconteció que a los cuarenta años, en el mes undécimo, el primero del mes, Moisés habló a los hijos de Israel conforme a todas las cosas que Jehová le había mandado acerca de ellos,
-Deuteronomy 1:4 después que derrotó a Sehón rey de los amorreos, el cual habitaba en Hesbón, y a Og rey de Basán que habitaba en Astarot en Edrei.
-Deuteronomy 1:5 De este lado del Jordán, en tierra de Moab, resolvió Moisés declarar esta ley, diciendo:
-Deuteronomy 1:6 Jehová nuestro Dios nos habló en Horeb, diciendo: Habéis estado bastante tiempo en este monte.
-Deuteronomy 1:7 Volveos e id al monte del amorreo y a todas sus comarcas, en el Arabá, en el monte, en los valles, en el Neguev, y junto a la costa del mar, a la tierra del cananeo, y al Líbano, hasta el gran río, el río Éufrates.
-Deuteronomy 1:8 Mirad, yo os he entregado la tierra; entrad y poseed la tierra que Jehová juró a vuestros padres Abraham, Isaac y Jacob, que les daría a ellos y a su descendencia después de ellos.
-Deuteronomy 1:9 En aquel tiempo yo os hablé diciendo: Yo solo no puedo llevaros.
-Deuteronomy 1:10 Jehová vuestro Dios os ha multiplicado, y he aquí hoy vosotros sois como las estrellas del cielo en multitud.
-Deuteronomy 1:11 ¡Jehová Dios de vuestros padres os haga mil veces más de lo que ahora sois, y os bendiga, como os ha prometido!
-Deuteronomy 1:12 ¿Cómo llevaré yo solo vuestras molestias, vuestras cargas y vuestros pleitos?
-Deuteronomy 1:13 Dadme de entre vosotros, de vuestras tribus, varones sabios y entendidos y expertos, para que yo los ponga por vuestros jefes.
-Deuteronomy 1:14 Y me respondisteis y dijisteis: Bueno es hacer lo que has dicho.
-Deuteronomy 1:15 Y tomé a los principales de vuestras tribus, varones sabios y expertos, y los puse por jefes sobre vosotros, jefes de millares, de centenas, de cincuenta y de diez, y gobernadores de vuestras tribus.
-Deuteronomy 1:16 Y entonces mandé a vuestros jueces, diciendo: Oíd entre vuestros hermanos, y juzgad justamente entre el hombre y su hermano, y el extranjero.
-Deuteronomy 1:17 No hagáis distinción de persona en el juicio; así al pequeño como al grande oiréis; no tendréis temor de ninguno, porque el juicio es de Dios; y la causa que os fuere difícil, la traeréis a mí, y yo la oiré.
-Deuteronomy 1:18 Os mandé, pues, en aquel tiempo, todo lo que habíais de hacer.
-Deuteronomy 1:19 Y salidos de Horeb, anduvimos todo aquel grande y terrible desierto que habéis visto, por el camino del monte del amorreo, como Jehová nuestro Dios nos lo mandó; y llegamos hasta Cades-barnea.
-Deuteronomy 1:20 Entonces os dije: Habéis llegado al monte del amorreo, el cual Jehová nuestro Dios nos da.
-Deuteronomy 1:21 Mira, Jehová tu Dios te ha entregado la tierra; sube y toma posesión de ella, como Jehová el Dios de tus padres te ha dicho; no temas ni desmayes.
-Deuteronomy 1:22 Y vinisteis a mí todos vosotros, y dijisteis: Enviemos varones delante de nosotros que nos reconozcan la tierra, y a su regreso nos traigan razón del camino por donde hemos de subir, y de las ciudades adonde hemos de llegar.
-Deuteronomy 1:23 Y el dicho me pareció bien; y tomé doce varones de entre vosotros, un varón por cada tribu.
-Deuteronomy 1:24 Y se encaminaron, y subieron al monte, y llegaron hasta el valle de Escol, y reconocieron la tierra.
-Deuteronomy 1:25 Y tomaron en sus manos del fruto del país, y nos lo trajeron, y nos dieron cuenta, y dijeron: Es buena la tierra que Jehová nuestro Dios nos da.
-Deuteronomy 1:26 Sin embargo, no quisisteis subir, antes fuisteis rebeldes al mandato de Jehová vuestro Dios;
-Deuteronomy 1:27 y murmurasteis en vuestras tiendas, diciendo: Porque Jehová nos aborrece, nos ha sacado de tierra de Egipto, para entregarnos en manos del amorreo para destruirnos.
-Deuteronomy 1:28 ¿A dónde subiremos? Nuestros hermanos han atemorizado nuestro corazón, diciendo: Este pueblo es mayor y más alto que nosotros, las ciudades grandes y amuralladas hasta el cielo; y también vimos allí a los hijos de Anac.
-Deuteronomy 1:29 Entonces os dije: No temáis, ni tengáis miedo de ellos.
-Deuteronomy 1:30 Jehová vuestro Dios, el cual va delante de vosotros, él peleará por vosotros, conforme a todas las cosas que hizo por vosotros en Egipto delante de vuestros ojos.
-Deuteronomy 1:31 Y en el desierto has visto que Jehová tu Dios te ha traído, como trae el hombre a su hijo, por todo el camino que habéis andado, hasta llegar a este lugar.
-Deuteronomy 1:32 Y aun con esto no creísteis a Jehová vuestro Dios,
-Deuteronomy 1:33 quien iba delante de vosotros por el camino para reconoceros el lugar donde habíais de acampar, con fuego de noche para mostraros el camino por donde anduvieseis, y con nube de día.
-Deuteronomy 1:34 Y oyó Jehová la voz de vuestras palabras, y se enojó, y juró diciendo:
-Deuteronomy 1:35 No verá hombre alguno de éstos, de esta mala generación, la buena tierra que juré que había de dar a vuestros padres,
-Deuteronomy 1:36 excepto Caleb hijo de Jefone; él la verá, y a él le daré la tierra que pisó, y a sus hijos; porque ha seguido fielmente a Jehová.
-Deuteronomy 1:37 También contra mí se airó Jehová por vosotros, y me dijo: Tampoco tú entrarás allá.
-Deuteronomy 1:38 Josué hijo de Nun, el cual te sirve, él entrará allá; anímale, porque él la hará heredar a Israel.
-Deuteronomy 1:39 Y vuestros niños, de los cuales dijisteis que servirían de botín, y vuestros hijos que no saben hoy lo bueno ni lo malo, ellos entrarán allá, y a ellos la daré, y ellos la heredarán.
-Deuteronomy 1:40 Pero vosotros volveos e id al desierto, camino del Mar Rojo.
-Deuteronomy 1:41 Entonces respondisteis y me dijisteis: Hemos pecado contra Jehová; nosotros subiremos y pelearemos, conforme a todo lo que Jehová nuestro Dios nos ha mandado. Y os armasteis cada uno con sus armas de guerra, y os preparasteis para subir al monte.
-Deuteronomy 1:42 Y Jehová me dijo: Diles: No subáis, ni peleéis, pues no estoy entre vosotros; para que no seáis derrotados por vuestros enemigos.
-Deuteronomy 1:43 Y os hablé, y no disteis oído; antes fuisteis rebeldes al mandato de Jehová, y persistiendo con altivez subisteis al monte.
-Deuteronomy 1:44 Pero salió a vuestro encuentro el amorreo, que habitaba en aquel monte, y os persiguieron como hacen las avispas, y os derrotaron en Seir, hasta Horma.
-Deuteronomy 1:45 Y volvisteis y llorasteis delante de Jehová, pero Jehová no escuchó vuestra voz, ni os prestó oído.
-Deuteronomy 1:46 Y estuvisteis en Cades por muchos días, los días que habéis estado allí.
-Deuteronomy 2:1 Luego volvimos y salimos al desierto, camino del Mar Rojo, como Jehová me había dicho; y rodeamos el monte de Seir por mucho tiempo.
-Deuteronomy 2:2 Y Jehová me habló, diciendo:
-Deuteronomy 2:3 Bastante habéis rodeado este monte; volveos al norte.
-Deuteronomy 2:4 Y manda al pueblo, diciendo: Pasando vosotros por el territorio de vuestros hermanos los hijos de Esaú, que habitan en Seir, ellos tendrán miedo de vosotros; mas vosotros guardaos mucho.
-Deuteronomy 2:5 No os metáis con ellos, porque no os daré de su tierra ni aun lo que cubre la planta de un pie; porque yo he dado por heredad a Esaú el monte de Seir.
-Deuteronomy 2:6 Compraréis de ellos por dinero los alimentos, y comeréis; y también compraréis de ellos el agua, y beberéis;
-Deuteronomy 2:7 pues Jehová tu Dios te ha bendecido en toda obra de tus manos; él sabe que andas por este gran desierto; estos cuarenta años Jehová tu Dios ha estado contigo, y nada te ha faltado.
-Deuteronomy 2:8 Y nos alejamos del territorio de nuestros hermanos los hijos de Esaú, que habitaban en Seir, por el camino del Arabá desde Elat y Ezión-geber; y volvimos, y tomamos el camino del desierto de Moab.
-Deuteronomy 2:9 Y Jehová me dijo: No molestes a Moab, ni te empeñes con ellos en guerra, porque no te daré posesión de su tierra; porque yo he dado a Ar por heredad a los hijos de Lot.
-Deuteronomy 2:10 (Los emitas habitaron en ella antes, pueblo grande y numeroso, y alto como los hijos de Anac.
-Deuteronomy 2:11 Por gigantes eran ellos tenidos también, como los hijos de Anac; y los moabitas los llaman emitas.
-Deuteronomy 2:12 Y en Seir habitaron antes los horeos, a los cuales echaron los hijos de Esaú; y los arrojaron de su presencia, y habitaron en lugar de ellos, como hizo Israel en la tierra que les dio Jehová por posesión.)
-Deuteronomy 2:13 Levantaos ahora, y pasad el arroyo de Zered. Y pasamos el arroyo de Zered.
-Deuteronomy 2:14 Y los días que anduvimos de Cades-barnea hasta cuando pasamos el arroyo de Zered fueron treinta y ocho años; hasta que se acabó toda la generación de los hombres de guerra de en medio del campamento, como Jehová les había jurado.
-Deuteronomy 2:15 Y también la mano de Jehová vino sobre ellos para destruirlos de en medio del campamento, hasta acabarlos.
-Deuteronomy 2:16 Y aconteció que después que murieron todos los hombres de guerra de entre el pueblo,
-Deuteronomy 2:17 Jehová me habló, diciendo:
-Deuteronomy 2:18 Tú pasarás hoy el territorio de Moab, a Ar.
-Deuteronomy 2:19 Y cuando te acerques a los hijos de Amón, no los molestes, ni contiendas con ellos; porque no te daré posesión de la tierra de los hijos de Amón, pues a los hijos de Lot la he dado por heredad.
-Deuteronomy 2:20 (Por tierra de gigantes fue también ella tenida; habitaron en ella gigantes en otro tiempo, a los cuales los amonitas llamaban zomzomeos;
-Deuteronomy 2:21 pueblo grande y numeroso, y alto, como los hijos de Anac; a los cuales Jehová destruyó delante de los amonitas. Éstos sucedieron a aquéllos, y habitaron en su lugar,
-Deuteronomy 2:22 como hizo Jehová con los hijos de Esaú que habitaban en Seir, delante de los cuales destruyó a los horeos; y ellos sucedieron a éstos, y habitaron en su lugar hasta hoy.
-Deuteronomy 2:23 Y a los aveos que habitaban en aldeas hasta Gaza, los caftoreos que salieron de Caftor los destruyeron, y habitaron en su lugar.)
-Deuteronomy 2:24 Levantaos, salid, y pasad el arroyo de Arnón; he aquí he entregado en tu mano a Sehón rey de Hesbón, amorreo, y a su tierra; comienza a tomar posesión de ella, y entra en guerra con él.
-Deuteronomy 2:25 Hoy comenzaré a poner tu temor y tu espanto sobre los pueblos debajo de todo el cielo, los cuales oirán tu fama, y temblarán y se angustiarán delante de ti.
-Deuteronomy 2:26 Y envié mensajeros desde el desierto de Cademot a Sehón rey de Hesbón con palabras de paz, diciendo:
-Deuteronomy 2:27 Pasaré por tu tierra por el camino; por el camino iré, sin apartarme ni a diestra ni a siniestra.
-Deuteronomy 2:28 La comida me venderás por dinero, y comeré; el agua también me darás por dinero, y beberé; solamente pasaré a pie,
-Deuteronomy 2:29 como lo hicieron conmigo los hijos de Esaú que habitaban en Seir, y los moabitas que habitaban en Ar; hasta que cruce el Jordán a la tierra que nos da Jehová nuestro Dios.
-Deuteronomy 2:30 Mas Sehón rey de Hesbón no quiso que pasásemos por el territorio suyo; porque Jehová tu Dios había endurecido su espíritu, y obstinado su corazón para entregarlo en tu mano, como hasta hoy.
-Deuteronomy 2:31 Y me dijo Jehová: He aquí yo he comenzado a entregar delante de ti a Sehón y a su tierra; comienza a tomar posesión de ella para que la heredes.
-Deuteronomy 2:32 Y nos salió Sehón al encuentro, él y todo su pueblo, para pelear en Jahaza.
-Deuteronomy 2:33 Mas Jehová nuestro Dios lo entregó delante de nosotros; y lo derrotamos a él y a sus hijos, y a todo su pueblo.
-Deuteronomy 2:34 Tomamos entonces todas sus ciudades, y destruimos todas las ciudades, hombres, mujeres y niños; no dejamos ninguno.
-Deuteronomy 2:35 Solamente tomamos para nosotros los ganados, y los despojos de las ciudades que habíamos tomado.
-Deuteronomy 2:36 Desde Aroer, que está junto a la ribera del arroyo de Arnón, y la ciudad que está en el valle, hasta Galaad, no hubo ciudad que escapase de nosotros; todas las entregó Jehová nuestro Dios en nuestro poder.
-Deuteronomy 2:37 Solamente a la tierra de los hijos de Amón no llegamos; ni a todo lo que está a la orilla del arroyo de Jaboc ni a las ciudades del monte, ni a lugar alguno que Jehová nuestro Dios había prohibido.
-Deuteronomy 3:1 Volvimos, pues, y subimos camino de Basán, y nos salió al encuentro Og rey de Basán para pelear, él y todo su pueblo, en Edrei.
-Deuteronomy 3:2 Y me dijo Jehová: No tengas temor de él, porque en tu mano he entregado a él y a todo su pueblo, con su tierra; y harás con él como hiciste con Sehón rey amorreo, que habitaba en Hesbón.
-Deuteronomy 3:3 Y Jehová nuestro Dios entregó también en nuestra mano a Og rey de Basán, y a todo su pueblo, al cual derrotamos hasta acabar con todos.
-Deuteronomy 3:4 Y tomamos entonces todas sus ciudades; no quedó ciudad que no les tomásemos; sesenta ciudades, toda la tierra de Argob, del reino de Og en Basán.
-Deuteronomy 3:5 Todas estas eran ciudades fortificadas con muros altos, con puertas y barras, sin contar otras muchas ciudades sin muro.
-Deuteronomy 3:6 Y las destruimos, como hicimos a Sehón rey de Hesbón, matando en toda ciudad a hombres, mujeres y niños.
-Deuteronomy 3:7 Y tomamos para nosotros todo el ganado, y los despojos de las ciudades.
-Deuteronomy 3:8 También tomamos en aquel tiempo la tierra desde el arroyo de Arnón hasta el monte de Hermón, de manos de los dos reyes amorreos que estaban a este lado del Jordán.
-Deuteronomy 3:9 (Los sidonios llaman a Hermón, Sirión; y los amorreos, Senir.)
-Deuteronomy 3:10 Todas las ciudades de la llanura, y todo Galaad, y todo Basán hasta Salca y Edrei, ciudades del reino de Og en Basán.
-Deuteronomy 3:11 Porque únicamente Og rey de Basán había quedado del resto de los gigantes. Su cama, una cama de hierro, ¿no está en Rabá de los hijos de Amón? La longitud de ella es de nueve codos, y su anchura de cuatro codos, según el codo de un hombre.
-Deuteronomy 3:12 Y esta tierra que heredamos en aquel tiempo, desde Aroer, que está junto al arroyo de Arnón, y la mitad del monte de Galaad con sus ciudades, la di a los rubenitas y a los gaditas;
-Deuteronomy 3:13 y el resto de Galaad, y todo Basán, del reino de Og, toda la tierra de Argob, que se llamaba la tierra de los gigantes, lo di a la media tribu de Manasés.
-Deuteronomy 3:14 Jair hijo de Manasés tomó toda la tierra de Argob hasta el límite con Gesur y Maaca, y la llamó por su nombre, Basán-havot-jair, hasta hoy.
-Deuteronomy 3:15 Y Galaad se lo di a Maquir.
-Deuteronomy 3:16 Y a los rubenitas y gaditas les di de Galaad hasta el arroyo de Arnón, teniendo por límite el medio del valle, hasta el arroyo de Jaboc, el cual es límite de los hijos de Amón;
-Deuteronomy 3:17 también el Arabá, con el Jordán como límite desde Cineret hasta el mar del Arabá, el Mar Salado, al pie de las laderas del Pisga al oriente.
-Deuteronomy 3:18 Y os mandé entonces, diciendo: Jehová vuestro Dios os ha dado esta tierra por heredad; pero iréis armados todos los valientes delante de vuestros hermanos los hijos de Israel.
-Deuteronomy 3:19 Solamente vuestras mujeres, vuestros hijos y vuestros ganados (yo sé que tenéis mucho ganado), quedarán en las ciudades que os he dado,
-Deuteronomy 3:20 hasta que Jehová dé reposo a vuestros hermanos, así como a vosotros, y hereden ellos también la tierra que Jehová vuestro Dios les da al otro lado del Jordán; entonces os volveréis cada uno a la heredad que yo os he dado.
-Deuteronomy 3:21 Ordené también a Josué en aquel tiempo, diciendo: Tus ojos vieron todo lo que Jehová vuestro Dios ha hecho a aquellos dos reyes; así hará Jehová a todos los reinos a los cuales pasarás tú.
-Deuteronomy 3:22 No los temáis; porque Jehová vuestro Dios, él es el que pelea por vosotros.
-Deuteronomy 3:23 Y oré a Jehová en aquel tiempo, diciendo:
-Deuteronomy 3:24 Señor Jehová, tú has comenzado a mostrar a tu siervo tu grandeza, y tu mano poderosa; porque ¿qué dios hay en el cielo ni en la tierra que haga obras y proezas como las tuyas?
-Deuteronomy 3:25 Pase yo, te ruego, y vea aquella tierra buena que está más allá del Jordán, aquel buen monte, y el Líbano.
-Deuteronomy 3:26 Pero Jehová se había enojado contra mí a causa de vosotros, por lo cual no me escuchó; y me dijo Jehová: Basta, no me hables más de este asunto.
-Deuteronomy 3:27 Sube a la cumbre del Pisga y alza tus ojos al oeste, y al norte, y al sur, y al este, y mira con tus propios ojos; porque no pasarás el Jordán.
-Deuteronomy 3:28 Y manda a Josué, y anímalo, y fortalécelo; porque él ha de pasar delante de este pueblo, y él les hará heredar la tierra que verás.
-Deuteronomy 3:29 Y paramos en el valle delante de Bet-peor.
-Deuteronomy 4:1 Ahora, pues, oh Israel, oye los estatutos y decretos que yo os enseño, para que los ejecutéis, y viváis, y entréis y poseáis la tierra que Jehová el Dios de vuestros padres os da.
-Deuteronomy 4:2 No añadiréis a la palabra que yo os mando, ni disminuiréis de ella, para que guardéis los mandamientos de Jehová vuestro Dios que yo os ordeno.
-Deuteronomy 4:3 Vuestros ojos vieron lo que hizo Jehová con motivo de Baal-peor; que a todo hombre que fue en pos de Baal-peor destruyó Jehová tu Dios de en medio de ti.
-Deuteronomy 4:4 Mas vosotros que seguisteis a Jehová vuestro Dios, todos estáis vivos hoy.
-Deuteronomy 4:5 Mirad, yo os he enseñado estatutos y decretos, como Jehová mi Dios me mandó, para que hagáis así en medio de la tierra en la cual entráis para tomar posesión de ella.
-Deuteronomy 4:6 Guardadlos, pues, y ponedlos por obra; porque ésta es vuestra sabiduría y vuestra inteligencia ante los ojos de los pueblos, los cuales oirán todos estos estatutos, y dirán: Ciertamente pueblo sabio y entendido, nación grande es ésta.
-Deuteronomy 4:7 Porque ¿qué nación grande hay que tenga dioses tan cercanos a ellos como lo está Jehová nuestro Dios en todo cuanto le pedimos?
-Deuteronomy 4:8 Y ¿qué nación grande hay que tenga estatutos y juicios justos como es toda esta ley que yo pongo hoy delante de vosotros?
-Deuteronomy 4:9 Por tanto, guárdate, y guarda tu alma con diligencia, para que no te olvides de las cosas que tus ojos han visto, ni se aparten de tu corazón todos los días de tu vida; antes bien, las enseñarás a tus hijos, y a los hijos de tus hijos.
-Deuteronomy 4:10 El día que estuviste delante de Jehová tu Dios en Horeb, cuando Jehová me dijo: Reúneme el pueblo, para que yo les haga oír mis palabras, las cuales aprenderán, para temerme todos los días que vivieren sobre la tierra, y las enseñarán a sus hijos;
-Deuteronomy 4:11 y os acercasteis y os pusisteis al pie del monte; y el monte ardía en fuego hasta en medio de los cielos con tinieblas, nube y oscuridad;
-Deuteronomy 4:12 y habló Jehová con vosotros de en medio del fuego; oísteis la voz de sus palabras, mas a excepción de oír la voz, ninguna figura visteis.
-Deuteronomy 4:13 Y él os anunció su pacto, el cual os mandó poner por obra; los diez mandamientos, y los escribió en dos tablas de piedra.
-Deuteronomy 4:14 A mí también me mandó Jehová en aquel tiempo que os enseñase los estatutos y juicios, para que los pusieseis por obra en la tierra a la cual pasáis a tomar posesión de ella.
-Deuteronomy 4:15 Guardad, pues, mucho vuestras almas; pues ninguna figura visteis el día que Jehová habló con vosotros de en medio del fuego;
-Deuteronomy 4:16 para que no os corrompáis y hagáis para vosotros escultura, imagen de figura alguna, efigie de varón o hembra,
-Deuteronomy 4:17 figura de animal alguno que está en la tierra, figura de ave alguna alada que vuele por el aire,
-Deuteronomy 4:18 figura de ningún animal que se arrastre sobre la tierra, figura de pez alguno que haya en el agua debajo de la tierra.
-Deuteronomy 4:19 No sea que alces tus ojos al cielo, y viendo el sol y la luna y las estrellas, y todo el ejército del cielo, seas impulsado, y te inclines a ellos y les sirvas; porque Jehová tu Dios los ha concedido a todos los pueblos debajo de todos los cielos.
-Deuteronomy 4:20 Pero a vosotros Jehová os tomó, y os ha sacado del horno de hierro, de Egipto, para que seáis el pueblo de su heredad como en este día.
-Deuteronomy 4:21 Y Jehová se enojó contra mí por causa de vosotros, y juró que yo no pasaría el Jordán, ni entraría en la buena tierra que Jehová tu Dios te da por heredad.
-Deuteronomy 4:22 Así que yo voy a morir en esta tierra, y no pasaré el Jordán; mas vosotros pasaréis, y poseeréis aquella buena tierra.
-Deuteronomy 4:23 Guardaos, no os olvidéis del pacto de Jehová vuestro Dios, que él estableció con vosotros, y no os hagáis escultura o imagen de ninguna cosa que Jehová tu Dios te ha prohibido.
-Deuteronomy 4:24 Porque Jehová tu Dios es fuego consumidor, Dios celoso.
-Deuteronomy 4:25 Cuando hayáis engendrado hijos y nietos, y hayáis envejecido en la tierra, si os corrompiereis e hiciereis escultura o imagen de cualquier cosa, e hiciereis lo malo ante los ojos de Jehová vuestro Dios, para enojarlo;
-Deuteronomy 4:26 yo pongo hoy por testigos al cielo y a la tierra, que pronto pereceréis totalmente de la tierra hacia la cual pasáis el Jordán para tomar posesión de ella; no estaréis en ella largos días sin que seáis destruidos.
-Deuteronomy 4:27 Y Jehová os esparcirá entre los pueblos, y quedaréis pocos en número entre las naciones a las cuales os llevará Jehová.
-Deuteronomy 4:28 Y serviréis allí a dioses hechos de manos de hombres, de madera y piedra, que no ven, ni oyen, ni comen, ni huelen.
-Deuteronomy 4:29 Mas si desde allí buscares a Jehová tu Dios, lo hallarás, si lo buscares de todo tu corazón y de toda tu alma.
-Deuteronomy 4:30 Cuando estuvieres en angustia, y te alcanzaren todas estas cosas, si en los postreros días te volvieres a Jehová tu Dios, y oyeres su voz;
-Deuteronomy 4:31 porque Dios misericordioso es Jehová tu Dios; no te dejará, ni te destruirá, ni se olvidará del pacto que les juró a tus padres.
-Deuteronomy 4:32 Porque pregunta ahora si en los tiempos pasados que han sido antes de ti, desde el día que creó Dios al hombre sobre la tierra, si desde un extremo del cielo al otro se ha hecho cosa semejante a esta gran cosa, o se haya oído otra como ella.
-Deuteronomy 4:33 ¿Ha oído pueblo alguno la voz de Dios, hablando de en medio del fuego, como tú la has oído, sin perecer?
-Deuteronomy 4:34 ¿O ha intentado Dios venir a tomar para sí una nación de en medio de otra nación, con pruebas, con señales, con milagros y con guerra, y mano poderosa y brazo extendido, y hechos aterradores como todo lo que hizo con vosotros Jehová vuestro Dios en Egipto ante tus ojos?
-Deuteronomy 4:35 A ti te fue mostrado, para que supieses que Jehová es Dios, y no hay otro fuera de él.
-Deuteronomy 4:36 Desde los cielos te hizo oír su voz, para enseñarte; y sobre la tierra te mostró su gran fuego, y has oído sus palabras de en medio del fuego.
-Deuteronomy 4:37 Y por cuanto él amó a tus padres, escogió a su descendencia después de ellos, y te sacó de Egipto con su presencia y con su gran poder,
-Deuteronomy 4:38 para echar de delante de tu presencia naciones grandes y más fuertes que tú, y para introducirte y darte su tierra por heredad, como hoy.
-Deuteronomy 4:39 Aprende pues, hoy, y reflexiona en tu corazón que Jehová es Dios arriba en el cielo y abajo en la tierra, y no hay otro.
-Deuteronomy 4:40 Y guarda sus estatutos y sus mandamientos, los cuales yo te mando hoy, para que te vaya bien a ti y a tus hijos después de ti, y prolongues tus días sobre la tierra que Jehová tu Dios te da para siempre.
-Deuteronomy 4:41 Entonces apartó Moisés tres ciudades a este lado del Jordán al nacimiento del sol,
-Deuteronomy 4:42 para que huyese allí el homicida que matase a su prójimo sin intención, sin haber tenido enemistad con él nunca antes; y que huyendo a una de estas ciudades salvase su vida:
-Deuteronomy 4:43 Beser en el desierto, en tierra de la llanura, para los rubenitas; Ramot en Galaad para los gaditas, y Golán en Basán para los de Manasés.
-Deuteronomy 4:44 Ésta, pues, es la ley que Moisés puso delante de los hijos de Israel.
-Deuteronomy 4:45 Éstos son los testimonios, los estatutos y los decretos que habló Moisés a los hijos de Israel cuando salieron de Egipto;
-Deuteronomy 4:46 a este lado del Jordán, en el valle delante de Bet-peor, en la tierra de Sehón rey de los amorreos que habitaba en Hesbón, al cual derrotó Moisés con los hijos de Israel, cuando salieron de Egipto;
-Deuteronomy 4:47 y poseyeron su tierra, y la tierra de Og rey de Basán; dos reyes de los amorreos que estaban de este lado del Jordán, al oriente.
-Deuteronomy 4:48 Desde Aroer, que está junto a la ribera del arroyo de Arnón, hasta el monte de Sion, que es Hermón;
-Deuteronomy 4:49 y todo el Arabá de este lado del Jordán, al oriente, hasta el mar del Arabá, al pie de las laderas del Pisga.
-Deuteronomy 5:1 Llamó Moisés a todo Israel y les dijo: Oye, Israel, los estatutos y decretos que yo pronuncio hoy en vuestros oídos; aprendedlos, y guardadlos, para ponerlos por obra.
-Deuteronomy 5:2 Jehová nuestro Dios hizo pacto con nosotros en Horeb.
-Deuteronomy 5:3 No con nuestros padres hizo Jehová este pacto, sino con nosotros todos los que estamos aquí hoy vivos.
-Deuteronomy 5:4 Cara a cara habló Jehová con vosotros en el monte de en medio del fuego.
-Deuteronomy 5:5 Yo estaba entonces entre Jehová y vosotros, para declararos la palabra de Jehová; porque vosotros tuvisteis temor del fuego, y no subisteis al monte. Dijo:
-Deuteronomy 5:6 Yo soy Jehová tu Dios, que te saqué de tierra de Egipto, de casa de servidumbre.
-Deuteronomy 5:7 No tendrás dioses ajenos delante de mí.
-Deuteronomy 5:8 No harás para ti escultura, ni imagen alguna de cosa que está arriba en los cielos, ni abajo en la tierra, ni en las aguas debajo de la tierra.
-Deuteronomy 5:9 No te inclinarás a ellas ni las servirás; porque yo soy Jehová tu Dios, fuerte, celoso, que visito la maldad de los padres sobre los hijos hasta la tercera y cuarta generación de los que me aborrecen,
-Deuteronomy 5:10 y que hago misericordia a millares, a los que me aman y guardan mis mandamientos.
-Deuteronomy 5:11 No tomarás el nombre de Jehová tu Dios en vano; porque Jehová no dará por inocente al que tome su nombre en vano.
-Deuteronomy 5:12 Guardarás el día de reposo para santificarlo, como Jehová tu Dios te ha mandado.
-Deuteronomy 5:13 Seis días trabajarás, y harás toda tu obra;
-Deuteronomy 5:14 mas el séptimo día es reposo a Jehová tu Dios; ninguna obra harás tú, ni tu hijo, ni tu hija, ni tu siervo, ni tu sierva, ni tu buey, ni tu asno, ni ningún animal tuyo, ni el extranjero que está dentro de tus puertas, para que descanse tu siervo y tu sierva como tú.
-Deuteronomy 5:15 Acuérdate que fuiste siervo en tierra de Egipto, y que Jehová tu Dios te sacó de allá con mano fuerte y brazo extendido; por lo cual Jehová tu Dios te ha mandado que guardes el día de reposo.
-Deuteronomy 5:16 Honra a tu padre y a tu madre, como Jehová tu Dios te ha mandado, para que sean prolongados tus días, y para que te vaya bien sobre la tierra que Jehová tu Dios te da.
-Deuteronomy 5:17 No matarás.
-Deuteronomy 5:18 No cometerás adulterio.
-Deuteronomy 5:19 No hurtarás.
-Deuteronomy 5:20 No dirás falso testimonio contra tu prójimo.
-Deuteronomy 5:21 No codiciarás la mujer de tu prójimo, ni desearás la casa de tu prójimo, ni su tierra, ni su siervo, ni su sierva, ni su buey, ni su asno, ni cosa alguna de tu prójimo.
-Deuteronomy 5:22 Estas palabras habló Jehová a toda vuestra congregación en el monte, de en medio del fuego, de la nube y de la oscuridad, a gran voz; y no añadió más. Y las escribió en dos tablas de piedra, las cuales me dio a mí.
-Deuteronomy 5:23 Y aconteció que cuando vosotros oísteis la voz de en medio de las tinieblas, y visteis al monte que ardía en fuego, vinisteis a mí, todos los príncipes de vuestras tribus, y vuestros ancianos,
-Deuteronomy 5:24 y dijisteis: He aquí Jehová nuestro Dios nos ha mostrado su gloria y su grandeza, y hemos oído su voz de en medio del fuego; hoy hemos visto que Jehová habla al hombre, y éste aún vive.
-Deuteronomy 5:25 Ahora, pues, ¿por qué vamos a morir? Porque este gran fuego nos consumirá; si oyéremos otra vez la voz de Jehová nuestro Dios, moriremos.
-Deuteronomy 5:26 Porque ¿qué es el hombre, para que oiga la voz del Dios viviente que habla de en medio del fuego, como nosotros la oímos, y aún viva?
-Deuteronomy 5:27 Acércate tú, y oye todas las cosas que dijere Jehová nuestro Dios; y tú nos dirás todo lo que Jehová nuestro Dios te dijere, y nosotros oiremos y haremos.
-Deuteronomy 5:28 Y oyó Jehová la voz de vuestras palabras cuando me hablabais, y me dijo Jehová: He oído la voz de las palabras de este pueblo, que ellos te han hablado; bien está todo lo que han dicho.
-Deuteronomy 5:29 ¡Quién diera que tuviesen tal corazón, que me temiesen y guardasen todos los días todos mis mandamientos, para que a ellos y a sus hijos les fuese bien para siempre!
-Deuteronomy 5:30 Ve y diles: Volveos a vuestras tiendas.
-Deuteronomy 5:31 Y tú quédate aquí conmigo, y te diré todos los mandamientos y estatutos y decretos que les enseñarás, a fin de que los pongan ahora por obra en la tierra que yo les doy por posesión.
-Deuteronomy 5:32 Mirad, pues, que hagáis como Jehová vuestro Dios os ha mandado; no os apartéis a diestra ni a siniestra.
-Deuteronomy 5:33 Andad en todo el camino que Jehová vuestro Dios os ha mandado, para que viváis y os vaya bien, y tengáis largos días en la tierra que habéis de poseer.
-Deuteronomy 6:1 Éstos, pues, son los mandamientos, estatutos y decretos que Jehová vuestro Dios mandó que os enseñase, para que los pongáis por obra en la tierra a la cual pasáis vosotros para tomarla;
-Deuteronomy 6:2 para que temas a Jehová tu Dios, guardando todos sus estatutos y sus mandamientos que yo te mando, tú, tu hijo, y el hijo de tu hijo, todos los días de tu vida, para que tus días sean prolongados.
-Deuteronomy 6:3 Oye, pues, oh Israel, y cuida de ponerlos por obra, para que te vaya bien en la tierra que fluye leche y miel, y os multipliquéis, como te ha dicho Jehová el Dios de tus padres.
-Deuteronomy 6:4 Oye, Israel: Jehová nuestro Dios, Jehová uno es.
-Deuteronomy 6:5 Y amarás a Jehová tu Dios de todo tu corazón, y de toda tu alma, y con todas tus fuerzas.
-Deuteronomy 6:6 Y estas palabras que yo te mando hoy, estarán sobre tu corazón;
-Deuteronomy 6:7 y las repetirás a tus hijos, y hablarás de ellas estando en tu casa, y andando por el camino, y al acostarte, y cuando te levantes.
-Deuteronomy 6:8 Y las atarás como una señal en tu mano, y estarán como frontales entre tus ojos;
-Deuteronomy 6:9 y las escribirás en los postes de tu casa, y en tus puertas.
-Deuteronomy 6:10 Cuando Jehová tu Dios te haya introducido en la tierra que juró a tus padres Abraham, Isaac y Jacob que te daría, en ciudades grandes y buenas que tú no edificaste,
-Deuteronomy 6:11 y casas llenas de todo bien, que tú no llenaste, y cisternas cavadas que tú no cavaste, viñas y olivares que no plantaste, y luego que comas y te sacies,
-Deuteronomy 6:12 cuídate de no olvidarte de Jehová, que te sacó de la tierra de Egipto, de casa de servidumbre.
-Deuteronomy 6:13 A Jehová tu Dios temerás, y a él solo servirás, y por su nombre jurarás.
-Deuteronomy 6:14 No andaréis en pos de dioses ajenos, de los dioses de los pueblos que están en vuestros contornos;
-Deuteronomy 6:15 porque el Dios celoso, Jehová tu Dios, en medio de ti está; para que no se inflame el furor de Jehová tu Dios contra ti, y te destruya de sobre la tierra.
-Deuteronomy 6:16 No tentaréis a Jehová vuestro Dios, como lo tentasteis en Masah.
-Deuteronomy 6:17 Guardad cuidadosamente los mandamientos de Jehová vuestro Dios, y sus testimonios y sus estatutos que te ha mandado.
-Deuteronomy 6:18 Y haz lo recto y bueno ante los ojos de Jehová, para que te vaya bien, y entres y poseas la buena tierra que Jehová juró a tus padres;
-Deuteronomy 6:19 para que él arroje a tus enemigos de delante de ti, como Jehová ha dicho.
-Deuteronomy 6:20 Mañana cuando te preguntare tu hijo, diciendo: ¿Qué significan los testimonios y estatutos y decretos que Jehová nuestro Dios os mandó?
-Deuteronomy 6:21 entonces dirás a tu hijo: Nosotros éramos siervos de Faraón en Egipto, y Jehová nos sacó de Egipto con mano poderosa.
-Deuteronomy 6:22 Jehová hizo señales y milagros grandes y terribles en Egipto, sobre Faraón y sobre toda su casa, delante de nuestros ojos;
-Deuteronomy 6:23 y nos sacó de allá, para traernos y darnos la tierra que juró a nuestros padres.
-Deuteronomy 6:24 Y nos mandó Jehová que cumplamos todos estos estatutos, y que temamos a Jehová nuestro Dios, para que nos vaya bien todos los días, y para que nos conserve la vida, como hasta hoy.
-Deuteronomy 6:25 Y tendremos justicia cuando cuidemos de poner por obra todos estos mandamientos delante de Jehová nuestro Dios, como él nos ha mandado.
-Deuteronomy 7:1 Cuando Jehová tu Dios te haya introducido en la tierra en la cual entrarás para tomarla, y haya echado de delante de ti a muchas naciones, al heteo, al gergeseo, al amorreo, al cananeo, al ferezeo, al heveo y al jebuseo, siete naciones mayores y más poderosas que tú,
-Deuteronomy 7:2 y Jehová tu Dios las haya entregado delante de ti, y las hayas derrotado, las destruirás del todo; no harás con ellas alianza, ni tendrás de ellas misericordia.
-Deuteronomy 7:3 Y no emparentarás con ellas; no darás tu hija a su hijo, ni tomarás a su hija para tu hijo.
-Deuteronomy 7:4 Porque desviará a tu hijo de en pos de mí, y servirán a dioses ajenos; y el furor de Jehová se encenderá sobre vosotros, y te destruirá pronto.
-Deuteronomy 7:5 Mas así habéis de hacer con ellos: sus altares destruiréis, y quebraréis sus estatuas, y destruiréis sus imágenes de Asera, y quemaréis sus esculturas en el fuego.
-Deuteronomy 7:6 Porque tú eres pueblo santo para Jehová tu Dios; Jehová tu Dios te ha escogido para serle un pueblo especial, más que todos los pueblos que están sobre la tierra.
-Deuteronomy 7:7 No por ser vosotros más que todos los pueblos os ha querido Jehová y os ha escogido, pues vosotros erais el más insignificante de todos los pueblos;
-Deuteronomy 7:8 sino por cuanto Jehová os amó, y quiso guardar el juramento que juró a vuestros padres, os ha sacado Jehová con mano poderosa, y os ha rescatado de servidumbre, de la mano de Faraón rey de Egipto.
-Deuteronomy 7:9 Conoce, pues, que Jehová tu Dios es Dios, Dios fiel, que guarda el pacto y la misericordia a los que le aman y guardan sus mandamientos, hasta mil generaciones;
-Deuteronomy 7:10 y que da el pago en persona al que le aborrece, destruyéndolo; y no se demora con el que le odia, en persona le dará el pago.
-Deuteronomy 7:11 Guarda, por tanto, los mandamientos, estatutos y decretos que yo te mando hoy que cumplas.
-Deuteronomy 7:12 Y por haber oído estos decretos y haberlos guardado y puesto por obra, Jehová tu Dios guardará contigo el pacto y la misericordia que juró a tus padres.
-Deuteronomy 7:13 Y te amará, te bendecirá y te multiplicará, y bendecirá el fruto de tu vientre y el fruto de tu tierra, tu grano, tu mosto, tu aceite, la cría de tus vacas, y los rebaños de tus ovejas, en la tierra que juró a tus padres que te daría.
-Deuteronomy 7:14 Bendito serás más que todos los pueblos; no habrá en ti varón ni hembra estéril, ni en tus ganados.
-Deuteronomy 7:15 Y quitará Jehová de ti toda enfermedad; y todas las malas plagas de Egipto, que tú conoces, no las pondrá sobre ti, antes las pondrá sobre todos los que te aborrecieren.
-Deuteronomy 7:16 Y consumirás a todos los pueblos que te da Jehová tu Dios; no los perdonará tu ojo, ni servirás a sus dioses, porque te será tropiezo.
-Deuteronomy 7:17 Si dijeres en tu corazón: Estas naciones son mucho más numerosas que yo; ¿cómo las podré exterminar?
-Deuteronomy 7:18 no tengas temor de ellas; acuérdate bien de lo que hizo Jehová tu Dios con Faraón y con todo Egipto;
-Deuteronomy 7:19 de las grandes pruebas que vieron tus ojos, y de las señales y milagros, y de la mano poderosa y el brazo extendido con que Jehová tu Dios te sacó; así hará Jehová tu Dios con todos los pueblos de cuya presencia tú temieres.
-Deuteronomy 7:20 También enviará Jehová tu Dios avispas sobre ellos, hasta que perezcan los que quedaren y los que se hubieren escondido de delante de ti.
-Deuteronomy 7:21 No desmayes delante de ellos, porque Jehová tu Dios está en medio de ti, Dios grande y temible.
-Deuteronomy 7:22 Y Jehová tu Dios echará a estas naciones de delante de ti poco a poco; no podrás acabar con ellas en seguida, para que las fieras del campo no se aumenten contra ti.
-Deuteronomy 7:23 Mas Jehová tu Dios las entregará delante de ti, y él las quebrantará con grande destrozo, hasta que sean destruidas.
-Deuteronomy 7:24 Él entregará sus reyes en tu mano, y tú destruirás el nombre de ellos de debajo del cielo; nadie te hará frente hasta que los destruyas.
-Deuteronomy 7:25 Las esculturas de sus dioses quemarás en el fuego; no codiciarás plata ni oro de ellas para tomarlo para ti, para que no tropieces en ello, pues es abominación a Jehová tu Dios;
-Deuteronomy 7:26 y no traerás cosa abominable a tu casa, para que no seas anatema; del todo la aborrecerás y la abominarás, porque es anatema.
-Deuteronomy 8:1 Cuidaréis de poner por obra todo mandamiento que yo os ordeno hoy, para que viváis, y seáis multiplicados, y entréis y poseáis la tierra que Jehová prometió con juramento a vuestros padres.
-Deuteronomy 8:2 Y te acordarás de todo el camino por donde te ha traído Jehová tu Dios estos cuarenta años en el desierto, para afligirte, para probarte, para saber lo que había en tu corazón, si habías de guardar o no sus mandamientos.
-Deuteronomy 8:3 Y te afligió, y te hizo tener hambre, y te sustentó con maná, comida que no conocías tú, ni tus padres la habían conocido, para hacerte saber que no sólo de pan vivirá el hombre, mas de todo lo que sale de la boca de Jehová vivirá el hombre.
-Deuteronomy 8:4 Tu vestido nunca se envejeció sobre ti, ni el pie se te ha hinchado en estos cuarenta años.
-Deuteronomy 8:5 Reconoce asimismo en tu corazón, que como castiga el hombre a su hijo, así Jehová tu Dios te castiga.
-Deuteronomy 8:6 Guardarás, pues, los mandamientos de Jehová tu Dios, andando en sus caminos, y temiéndole.
-Deuteronomy 8:7 Porque Jehová tu Dios te introduce en la buena tierra, tierra de arroyos, de aguas, de fuentes y de manantiales, que brotan en vegas y montes;
-Deuteronomy 8:8 tierra de trigo y cebada, de vides, higueras y granados; tierra de olivos, de aceite y de miel;
-Deuteronomy 8:9 tierra en la cual no comerás el pan con escasez, ni te faltará nada en ella; tierra cuyas piedras son hierro, y de cuyos montes sacarás cobre.
-Deuteronomy 8:10 Y comerás y te saciarás, y bendecirás a Jehová tu Dios por la buena tierra que te habrá dado.
-Deuteronomy 8:11 Cuídate de no olvidarte de Jehová tu Dios, para cumplir sus mandamientos, sus decretos y sus estatutos que yo te ordeno hoy;
-Deuteronomy 8:12 no suceda que comas y te sacies, y edifiques buenas casas en que habites,
-Deuteronomy 8:13 y tus vacas y tus ovejas se aumenten, y la plata y el oro se te multipliquen, y todo lo que tuvieres se aumente;
-Deuteronomy 8:14 y se enorgullezca tu corazón, y te olvides de Jehová tu Dios, que te sacó de tierra de Egipto, de casa de servidumbre;
-Deuteronomy 8:15 que te hizo caminar por un desierto grande y espantoso, lleno de serpientes ardientes, y de escorpiones, y de sed, donde no había agua, y él te sacó agua de la roca del pedernal;
-Deuteronomy 8:16 que te sustentó con maná en el desierto, comida que tus padres no habían conocido, afligiéndote y probándote, para a la postre hacerte bien;
-Deuteronomy 8:17 y digas en tu corazón: Mi poder y la fuerza de mi mano me han traído esta riqueza.
-Deuteronomy 8:18 Sino acuérdate de Jehová tu Dios, porque él te da el poder para hacer las riquezas, a fin de confirmar su pacto que juró a tus padres, como en este día.
-Deuteronomy 8:19 Mas si llegares a olvidarte de Jehová tu Dios y anduvieres en pos de dioses ajenos, y les sirvieres y a ellos te inclinares, yo lo afirmo hoy contra vosotros, que de cierto pereceréis.
-Deuteronomy 8:20 Como las naciones que Jehová destruirá delante de vosotros, así pereceréis, por cuanto no habréis atendido a la voz de Jehová vuestro Dios.
-Deuteronomy 9:1 Oye, Israel: tú vas hoy a pasar el Jordán, para entrar a desposeer a naciones más numerosas y más poderosas que tú, ciudades grandes y amuralladas hasta el cielo;
-Deuteronomy 9:2 un pueblo grande y alto, hijos de los anaceos, de los cuales tienes tú conocimiento, y has oído decir: ¿Quién se sostendrá delante de los hijos de Anac?
-Deuteronomy 9:3 Entiende, pues, hoy, que es Jehová tu Dios el que pasa delante de ti como fuego consumidor, que los destruirá y humillará delante de ti; y tú los echarás, y los destruirás en seguida, como Jehová te ha dicho.
-Deuteronomy 9:4 No pienses en tu corazón cuando Jehová tu Dios los haya echado de delante de ti, diciendo: Por mi justicia me ha traído Jehová a poseer esta tierra; pues por la impiedad de estas naciones Jehová las arroja de delante de ti.
-Deuteronomy 9:5 No por tu justicia, ni por la rectitud de tu corazón entras a poseer la tierra de ellos, sino por la impiedad de estas naciones Jehová tu Dios las arroja de delante de ti, y para confirmar la palabra que Jehová juró a tus padres Abraham, Isaac y Jacob.
-Deuteronomy 9:6 Por tanto, sabe que no es por tu justicia que Jehová tu Dios te da esta buena tierra para tomarla; porque pueblo duro de cerviz eres tú.
-Deuteronomy 9:7 Acuérdate, no olvides que has provocado la ira de Jehová tu Dios en el desierto; desde el día que saliste de la tierra de Egipto, hasta que entrasteis en este lugar, habéis sido rebeldes a Jehová.
-Deuteronomy 9:8 En Horeb provocasteis a ira a Jehová, y se enojó Jehová contra vosotros para destruiros.
-Deuteronomy 9:9 Cuando yo subí al monte para recibir las tablas de piedra, las tablas del pacto que Jehová hizo con vosotros, estuve entonces en el monte cuarenta días y cuarenta noches, sin comer pan ni beber agua;
-Deuteronomy 9:10 y me dio Jehová las dos tablas de piedra escritas con el dedo de Dios; y en ellas estaba escrito según todas las palabras que os habló Jehová en el monte, de en medio del fuego, el día de la asamblea.
-Deuteronomy 9:11 Sucedió al fin de los cuarenta días y cuarenta noches, que Jehová me dio las dos tablas de piedra, las tablas del pacto.
-Deuteronomy 9:12 Y me dijo Jehová: Levántate, desciende pronto de aquí, porque tu pueblo que sacaste de Egipto se ha corrompido; pronto se han apartado del camino que yo les mandé; se han hecho una imagen de fundición.
-Deuteronomy 9:13 Y me habló Jehová, diciendo: He observado a ese pueblo, y he aquí que es pueblo duro de cerviz.
-Deuteronomy 9:14 Déjame que los destruya, y borre su nombre de debajo del cielo, y yo te pondré sobre una nación fuerte y mucho más numerosa que ellos.
-Deuteronomy 9:15 Y volví y descendí del monte, el cual ardía en fuego, con las tablas del pacto en mis dos manos.
-Deuteronomy 9:16 Y miré, y he aquí habíais pecado contra Jehová vuestro Dios; os habíais hecho un becerro de fundición, apartándoos pronto del camino que Jehová os había mandado.
-Deuteronomy 9:17 Entonces tomé las dos tablas y las arrojé de mis dos manos, y las quebré delante de vuestros ojos.
-Deuteronomy 9:18 Y me postré delante de Jehová como antes, cuarenta días y cuarenta noches; no comí pan ni bebí agua, a causa de todo vuestro pecado que habíais cometido haciendo el mal ante los ojos de Jehová para enojarlo.
-Deuteronomy 9:19 Porque temí a causa del furor y de la ira con que Jehová estaba enojado contra vosotros para destruiros. Pero Jehová me escuchó aun esta vez.
-Deuteronomy 9:20 Contra Aarón también se enojó Jehová en gran manera para destruirlo; y también oré por Aarón en aquel entonces.
-Deuteronomy 9:21 Y tomé el objeto de vuestro pecado, el becerro que habíais hecho, y lo quemé en el fuego, y lo desmenucé moliéndolo muy bien, hasta que fue reducido a polvo; y eché el polvo de él en el arroyo que descendía del monte.
-Deuteronomy 9:22 También en Tabera, en Masah y en Kibrot-hataava provocasteis a ira a Jehová.
-Deuteronomy 9:23 Y cuando Jehová os envió desde Cades-barnea, diciendo: Subid y poseed la tierra que yo os he dado, también fuisteis rebeldes al mandato de Jehová vuestro Dios, y no le creísteis, ni obedecisteis a su voz.
-Deuteronomy 9:24 Rebeldes habéis sido a Jehová desde el día que yo os conozco.
-Deuteronomy 9:25 Me postré, pues, delante de Jehová; cuarenta días y cuarenta noches estuve postrado, porque Jehová dijo que os había de destruir.
-Deuteronomy 9:26 Y oré a Jehová, diciendo: Oh Señor Jehová, no destruyas a tu pueblo y a tu heredad que has redimido con tu grandeza, que sacaste de Egipto con mano poderosa.
-Deuteronomy 9:27 Acuérdate de tus siervos Abraham, Isaac y Jacob; no mires a la dureza de este pueblo, ni a su impiedad ni a su pecado,
-Deuteronomy 9:28 no sea que digan los de la tierra de donde nos sacaste: Por cuanto no pudo Jehová introducirlos en la tierra que les había prometido, o porque los aborrecía, los sacó para matarlos en el desierto.
-Deuteronomy 9:29 Y ellos son tu pueblo y tu heredad, que sacaste con tu gran poder y con tu brazo extendido.
-Deuteronomy 10:1 En aquel tiempo Jehová me dijo: Lábrate dos tablas de piedra como las primeras, y sube a mí al monte, y hazte un arca de madera;
-Deuteronomy 10:2 y escribiré en aquellas tablas las palabras que estaban en las primeras tablas que quebraste; y las pondrás en el arca.
-Deuteronomy 10:3 E hice un arca de madera de acacia, y labré dos tablas de piedra como las primeras, y subí al monte con las dos tablas en mi mano.
-Deuteronomy 10:4 Y escribió en las tablas conforme a la primera escritura, los diez mandamientos que Jehová os había hablado en el monte de en medio del fuego, el día de la asamblea; y me las dio Jehová.
-Deuteronomy 10:5 Y volví y descendí del monte, y puse las tablas en el arca que había hecho; y allí están, como Jehová me mandó.
-Deuteronomy 10:6 (Después salieron los hijos de Israel de Beerot-bene-jaacán a Mosera; allí murió Aarón, y allí fue sepultado, y en lugar suyo tuvo el sacerdocio su hijo Eleazar.
-Deuteronomy 10:7 De allí partieron a Gudgoda, y de Gudgoda a Jotbata, tierra de arroyos de aguas.
-Deuteronomy 10:8 En aquel tiempo apartó Jehová la tribu de Leví para que llevase el arca del pacto de Jehová, para que estuviese delante de Jehová para servirle, y para bendecir en su nombre, hasta hoy,
-Deuteronomy 10:9 por lo cual Leví no tuvo parte ni heredad con sus hermanos; Jehová es su heredad, como Jehová tu Dios le dijo.)
-Deuteronomy 10:10 Y yo estuve en el monte como los primeros días, cuarenta días y cuarenta noches; y Jehová también me escuchó esta vez, y no quiso Jehová destruirte.
-Deuteronomy 10:11 Y me dijo Jehová: Levántate, anda, para que marches delante del pueblo, para que entren y posean la tierra que juré a sus padres que les había de dar.
-Deuteronomy 10:12 Ahora, pues, Israel, ¿qué pide Jehová tu Dios de ti, sino que temas a Jehová tu Dios, que andes en todos sus caminos, y que lo ames, y sirvas a Jehová tu Dios con todo tu corazón y con toda tu alma;
-Deuteronomy 10:13 que guardes los mandamientos de Jehová y sus estatutos, que yo te prescribo hoy, para que tengas prosperidad?
-Deuteronomy 10:14 He aquí, de Jehová tu Dios son los cielos, y los cielos de los cielos, la tierra, y todas las cosas que hay en ella.
-Deuteronomy 10:15 Solamente de tus padres se agradó Jehová para amarlos, y escogió su descendencia después de ellos, a vosotros, de entre todos los pueblos, como en este día.
-Deuteronomy 10:16 Circuncidad, pues, el prepucio de vuestro corazón, y no endurezcáis más vuestra cerviz.
-Deuteronomy 10:17 Porque Jehová vuestro Dios es Dios de dioses y Señor de señores, Dios grande, poderoso y temible, que no hace acepción de personas, ni toma cohecho;
-Deuteronomy 10:18 que hace justicia al huérfano y a la viuda; que ama también al extranjero dándole pan y vestido.
-Deuteronomy 10:19 Amaréis, pues, al extranjero; porque extranjeros fuisteis en la tierra de Egipto.
-Deuteronomy 10:20 A Jehová tu Dios temerás, a él solo servirás, a él seguirás, y por su nombre jurarás.
-Deuteronomy 10:21 Él es el objeto de tu alabanza, y él es tu Dios, que ha hecho contigo estas cosas grandes y terribles que tus ojos han visto.
-Deuteronomy 10:22 Con setenta personas descendieron tus padres a Egipto, y ahora Jehová te ha hecho como las estrellas del cielo en multitud.
-Deuteronomy 11:1 Amarás, pues, a Jehová tu Dios, y guardarás sus ordenanzas, sus estatutos, sus decretos y sus mandamientos, todos los días.
-Deuteronomy 11:2 Y comprended hoy, porque no hablo con vuestros hijos que no han sabido ni visto el castigo de Jehová vuestro Dios, su grandeza, su mano poderosa, y su brazo extendido,
-Deuteronomy 11:3 y sus señales, y sus obras que hizo en medio de Egipto a Faraón rey de Egipto, y a toda su tierra;
-Deuteronomy 11:4 y lo que hizo al ejército de Egipto, a sus caballos y a sus carros; cómo precipitó las aguas del Mar Rojo sobre ellos, cuando venían tras vosotros, y Jehová los destruyó hasta hoy;
-Deuteronomy 11:5 y lo que ha hecho con vosotros en el desierto, hasta que habéis llegado a este lugar;
-Deuteronomy 11:6 y lo que hizo con Datán y Abiram, hijos de Eliab hijo de Rubén; cómo abrió su boca la tierra, y los tragó con sus familias, sus tiendas, y todo su ganado, en medio de todo Israel.
-Deuteronomy 11:7 Mas vuestros ojos han visto todas las grandes obras que Jehová ha hecho.
-Deuteronomy 11:8 Guardad, pues, todos los mandamientos que yo os prescribo hoy, para que seáis fortalecidos, y entréis y poseáis la tierra a la cual pasáis para tomarla;
-Deuteronomy 11:9 y para que os sean prolongados los días sobre la tierra, de la cual juró Jehová a vuestros padres, que había de darla a ellos y a su descendencia, tierra que fluye leche y miel.
-Deuteronomy 11:10 La tierra a la cual entras para tomarla no es como la tierra de Egipto de donde habéis salido, donde sembrabas tu semilla, y regabas con tu pie, como huerto de hortaliza.
-Deuteronomy 11:11 La tierra a la cual pasáis para tomarla es tierra de montes y de vegas, que bebe las aguas de la lluvia del cielo;
-Deuteronomy 11:12 tierra de la cual Jehová tu Dios cuida; siempre están sobre ella los ojos de Jehová tu Dios, desde el principio del año hasta el fin.
-Deuteronomy 11:13 Si obedeciereis cuidadosamente a mis mandamientos que yo os prescribo hoy, amando a Jehová vuestro Dios, y sirviéndole con todo vuestro corazón, y con toda vuestra alma,
-Deuteronomy 11:14 yo daré la lluvia de vuestra tierra a su tiempo, la temprana y la tardía; y recogerás tu grano, tu vino y tu aceite.
-Deuteronomy 11:15 Daré también hierba en tu campo para tus ganados; y comerás, y te saciarás.
-Deuteronomy 11:16 Guardaos, pues, que vuestro corazón no se infatúe, y os apartéis y sirváis a dioses ajenos, y os inclinéis a ellos;
-Deuteronomy 11:17 y se encienda el furor de Jehová sobre vosotros, y cierre los cielos, y no haya lluvia, ni la tierra dé su fruto, y perezcáis pronto de la buena tierra que os da Jehová.
-Deuteronomy 11:18 Por tanto, pondréis estas mis palabras en vuestro corazón y en vuestra alma, y las ataréis como señal en vuestra mano, y serán por frontales entre vuestros ojos.
-Deuteronomy 11:19 Y las enseñaréis a vuestros hijos, hablando de ellas cuando te sientes en tu casa, cuando andes por el camino, cuando te acuestes, y cuando te levantes,
-Deuteronomy 11:20 y las escribirás en los postes de tu casa, y en tus puertas;
-Deuteronomy 11:21 para que sean vuestros días, y los días de vuestros hijos, tan numerosos sobre la tierra que Jehová juró a vuestros padres que les había de dar, como los días de los cielos sobre la tierra.
-Deuteronomy 11:22 Porque si guardareis cuidadosamente todos estos mandamientos que yo os prescribo para que los cumpláis, y si amareis a Jehová vuestro Dios, andando en todos sus caminos, y siguiéndole a él,
-Deuteronomy 11:23 Jehová también echará de delante de vosotros a todas estas naciones, y desposeeréis naciones grandes y más poderosas que vosotros.
-Deuteronomy 11:24 Todo lugar que pisare la planta de vuestro pie será vuestro; desde el desierto hasta el Líbano, desde el río Éufrates hasta el mar occidental será vuestro territorio.
-Deuteronomy 11:25 Nadie se sostendrá delante de vosotros; miedo y temor de vosotros pondrá Jehová vuestro Dios sobre toda la tierra que pisareis, como él os ha dicho.
-Deuteronomy 11:26 He aquí yo pongo hoy delante de vosotros la bendición y la maldición:
-Deuteronomy 11:27 la bendición, si oyereis los mandamientos de Jehová vuestro Dios, que yo os prescribo hoy,
-Deuteronomy 11:28 y la maldición, si no oyereis los mandamientos de Jehová vuestro Dios, y os apartareis del camino que yo os ordeno hoy, para ir en pos de dioses ajenos que no habéis conocido.
-Deuteronomy 11:29 Y cuando Jehová tu Dios te haya introducido en la tierra a la cual vas para tomarla, pondrás la bendición sobre el monte Gerizim, y la maldición sobre el monte Ebal,
-Deuteronomy 11:30 los cuales están al otro lado del Jordán, tras el camino del occidente en la tierra del cananeo, que habita en el Arabá frente a Gilgal, junto al encinar de More.
-Deuteronomy 11:31 Porque vosotros pasáis el Jordán para ir a poseer la tierra que os da Jehová vuestro Dios; y la tomaréis, y habitaréis en ella.
-Deuteronomy 11:32 Cuidaréis, pues, de cumplir todos los estatutos y decretos que yo presento hoy delante de vosotros.
-Deuteronomy 12:1 Éstos son los estatutos y decretos que cuidaréis de poner por obra en la tierra que Jehová el Dios de tus padres te ha dado para que tomes posesión de ella, todos los días que vosotros viviereis sobre la tierra.
-Deuteronomy 12:2 Destruiréis enteramente todos los lugares donde las naciones que vosotros heredaréis sirvieron a sus dioses, sobre los montes altos, y sobre los collados, y debajo de todo árbol frondoso.
-Deuteronomy 12:3 Derribaréis sus altares, y quebraréis sus estatuas, y sus imágenes de Asera consumiréis con fuego; y destruiréis las esculturas de sus dioses, y raeréis su nombre de aquel lugar.
-Deuteronomy 12:4 No haréis así a Jehová vuestro Dios,
-Deuteronomy 12:5 sino que el lugar que Jehová vuestro Dios escogiere de entre todas vuestras tribus, para poner allí su nombre para su habitación, ése buscaréis, y allá iréis.
-Deuteronomy 12:6 Y allí llevaréis vuestros holocaustos, vuestros sacrificios, vuestros diezmos, y la ofrenda elevada de vuestras manos, vuestros votos, vuestras ofrendas voluntarias, y las primicias de vuestras vacas y de vuestras ovejas;
-Deuteronomy 12:7 y comeréis allí delante de Jehová vuestro Dios, y os alegraréis, vosotros y vuestras familias, en toda obra de vuestras manos en la cual Jehová tu Dios te hubiere bendecido.
-Deuteronomy 12:8 No haréis como todo lo que hacemos nosotros aquí ahora, cada uno lo que bien le parece,
-Deuteronomy 12:9 porque hasta ahora no habéis entrado al reposo y a la heredad que os da Jehová vuestro Dios.
-Deuteronomy 12:10 Mas pasaréis el Jordán, y habitaréis en la tierra que Jehová vuestro Dios os hace heredar; y él os dará reposo de todos vuestros enemigos alrededor, y habitaréis seguros.
-Deuteronomy 12:11 Y al lugar que Jehová vuestro Dios escogiere para poner en él su nombre, allí llevaréis todas las cosas que yo os mando: vuestros holocaustos, vuestros sacrificios, vuestros diezmos, las ofrendas elevadas de vuestras manos, y todo lo escogido de los votos que hubiereis prometido a Jehová.
-Deuteronomy 12:12 Y os alegraréis delante de Jehová vuestro Dios, vosotros, vuestros hijos, vuestras hijas, vuestros siervos y vuestras siervas, y el levita que habite en vuestras poblaciones; por cuanto no tiene parte ni heredad con vosotros.
-Deuteronomy 12:13 Cuídate de no ofrecer tus holocaustos en cualquier lugar que vieres;
-Deuteronomy 12:14 sino que en el lugar que Jehová escogiere, en una de tus tribus, allí ofrecerás tus holocaustos, y allí harás todo lo que yo te mando.
-Deuteronomy 12:15 Con todo, podrás matar y comer carne en todas tus poblaciones conforme a tu deseo, según la bendición que Jehová tu Dios te haya dado; el inmundo y el limpio la podrá comer, como la de gacela o de ciervo.
-Deuteronomy 12:16 Solamente que sangre no comeréis; sobre la tierra la derramaréis como agua.
-Deuteronomy 12:17 Ni comerás en tus poblaciones el diezmo de tu grano, de tu vino o de tu aceite, ni las primicias de tus vacas, ni de tus ovejas, ni los votos que prometieres, ni las ofrendas voluntarias, ni las ofrendas elevadas de tus manos;
-Deuteronomy 12:18 sino que delante de Jehová tu Dios las comerás, en el lugar que Jehová tu Dios hubiere escogido, tú, tu hijo, tu hija, tu siervo, tu sierva, y el levita que habita en tus poblaciones; te alegrarás delante de Jehová tu Dios de toda la obra de tus manos.
-Deuteronomy 12:19 Ten cuidado de no desamparar al levita en todos tus días sobre la tierra.
-Deuteronomy 12:20 Cuando Jehová tu Dios ensanchare tu territorio, como él te ha dicho, y tú dijeres: Comeré carne, porque deseaste comerla, conforme a lo que deseaste podrás comer.
-Deuteronomy 12:21 Si estuviere lejos de ti el lugar que Jehová tu Dios escogiere para poner allí su nombre, podrás matar de tus vacas y de tus ovejas que Jehová te hubiere dado, como te he mandado yo, y comerás en tus puertas según todo lo que deseares.
-Deuteronomy 12:22 Lo mismo que se come la gacela y el ciervo, así las podrás comer; el inmundo y el limpio podrán comer también de ellas.
-Deuteronomy 12:23 Solamente que te mantengas firme en no comer sangre; porque la sangre es la vida, y no comerás la vida juntamente con su carne.
-Deuteronomy 12:24 No la comerás; en tierra la derramarás como agua.
-Deuteronomy 12:25 No comerás de ella, para que te vaya bien a ti y a tus hijos después de ti, cuando hicieres lo recto ante los ojos de Jehová.
-Deuteronomy 12:26 Pero las cosas que hubieres consagrado, y tus votos, las tomarás, y vendrás con ellas al lugar que Jehová hubiere escogido;
-Deuteronomy 12:27 y ofrecerás tus holocaustos, la carne y la sangre, sobre el altar de Jehová tu Dios; y la sangre de tus sacrificios será derramada sobre el altar de Jehová tu Dios, y podrás comer la carne.
-Deuteronomy 12:28 Guarda y escucha todas estas palabras que yo te mando, para que haciendo lo bueno y lo recto ante los ojos de Jehová tu Dios, te vaya bien a ti y a tus hijos después de ti para siempre.
-Deuteronomy 12:29 Cuando Jehová tu Dios haya destruido delante de ti las naciones adonde tú vas para poseerlas, y las heredes, y habites en su tierra,
-Deuteronomy 12:30 guárdate que no tropieces yendo en pos de ellas, después que sean destruidas delante de ti; no preguntes acerca de sus dioses, diciendo: De la manera que servían aquellas naciones a sus dioses, yo también les serviré.
-Deuteronomy 12:31 No harás así a Jehová tu Dios; porque toda cosa abominable que Jehová aborrece, hicieron ellos a sus dioses; pues aun a sus hijos y a sus hijas quemaban en el fuego a sus dioses.
-Deuteronomy 12:32 Cuidarás de hacer todo lo que yo te mando; no añadirás a ello, ni de ello quitarás.
-Deuteronomy 13:1 Cuando se levantare en medio de ti profeta, o soñador de sueños, y te anunciare señal o prodigios,
-Deuteronomy 13:2 y si se cumpliere la señal o prodigio que él te anunció, diciendo: Vamos en pos de dioses ajenos, que no conociste, y sirvámosles;
-Deuteronomy 13:3 no darás oído a las palabras de tal profeta, ni al tal soñador de sueños; porque Jehová vuestro Dios os está probando, para saber si amáis a Jehová vuestro Dios con todo vuestro corazón, y con toda vuestra alma.
-Deuteronomy 13:4 En pos de Jehová vuestro Dios andaréis; a él temeréis, guardaréis sus mandamientos y escucharéis su voz, a él serviréis, y a él seguiréis.
-Deuteronomy 13:5 Tal profeta o soñador de sueños ha de ser muerto, por cuanto aconsejó rebelión contra Jehová vuestro Dios que te sacó de tierra de Egipto y te rescató de casa de servidumbre, y trató de apartarte del camino por el cual Jehová tu Dios te mandó que anduvieses; y así quitarás el mal de en medio de ti.
-Deuteronomy 13:6 Si te incitare tu hermano, hijo de tu madre, o tu hijo, tu hija, tu mujer o tu amigo íntimo, diciendo en secreto: Vamos y sirvamos a dioses ajenos, que ni tú ni tus padres conocisteis,
-Deuteronomy 13:7 de los dioses de los pueblos que están en vuestros alrededores, cerca de ti o lejos de ti, desde un extremo de la tierra hasta el otro extremo de ella;
-Deuteronomy 13:8 no consentirás con él, ni le prestarás oído; ni tu ojo le compadecerá, ni le tendrás misericordia, ni lo encubrirás,
-Deuteronomy 13:9 sino que lo matarás; tu mano se alzará primero sobre él para matarle, y después la mano de todo el pueblo.
-Deuteronomy 13:10 Le apedrearás hasta que muera, por cuanto procuró apartarte de Jehová tu Dios, que te sacó de tierra de Egipto, de casa de servidumbre;
-Deuteronomy 13:11 para que todo Israel oiga, y tema, y no vuelva a hacer en medio de ti cosa semejante a ésta.
-Deuteronomy 13:12 Si oyeres que se dice de alguna de tus ciudades que Jehová tu Dios te da para vivir en ellas,
-Deuteronomy 13:13 que han salido de en medio de ti hombres impíos que han instigado a los moradores de su ciudad, diciendo: Vamos y sirvamos a dioses ajenos, que vosotros no conocisteis;
-Deuteronomy 13:14 tú inquirirás, y buscarás y preguntarás con diligencia; y si pareciere verdad, cosa cierta, que tal abominación se hizo en medio de ti,
-Deuteronomy 13:15 irremisiblemente herirás a filo de espada a los moradores de aquella ciudad, destruyéndola con todo lo que en ella hubiere, y también matarás sus ganados a filo de espada.
-Deuteronomy 13:16 Y juntarás todo su botín en medio de la plaza, y consumirás con fuego la ciudad y todo su botín, todo ello, como holocausto a Jehová tu Dios, y llegará a ser un montón de ruinas para siempre; nunca más será edificada.
-Deuteronomy 13:17 Y no se pegará a tu mano nada del anatema, para que Jehová se aparte del ardor de su ira, y tenga de ti misericordia, y tenga compasión de ti, y te multiplique, como lo juró a tus padres,
-Deuteronomy 13:18 cuando obedecieres a la voz de Jehová tu Dios, guardando todos sus mandamientos que yo te mando hoy, para hacer lo recto ante los ojos de Jehová tu Dios.
-Deuteronomy 14:1 Hijos sois de Jehová vuestro Dios; no os sajaréis, ni os raparéis a causa de muerto.
-Deuteronomy 14:2 Porque eres pueblo santo a Jehová tu Dios, y Jehová te ha escogido para que le seas un pueblo único de entre todos los pueblos que están sobre la tierra.
-Deuteronomy 14:3 Nada abominable comerás.
-Deuteronomy 14:4 Éstos son los animales que podréis comer: el buey, la oveja, la cabra,
-Deuteronomy 14:5 el ciervo, la gacela, el corzo, la cabra montés, el íbice, el antílope y el carnero montés.
-Deuteronomy 14:6 Y todo animal de pezuñas, que tiene hendidura de dos uñas, y que rumiare entre los animales, ése podréis comer.
-Deuteronomy 14:7 Pero éstos no comeréis, entre los que rumian o entre los que tienen pezuña hendida: camello, liebre y conejo; porque rumian, mas no tienen pezuña hendida, serán inmundos;
-Deuteronomy 14:8 ni cerdo, porque tiene pezuña hendida, mas no rumia; os será inmundo. De la carne de éstos no comeréis, ni tocaréis sus cuerpos muertos.
-Deuteronomy 14:9 De todo lo que está en el agua, de éstos podréis comer: todo lo que tiene aleta y escama.
-Deuteronomy 14:10 Mas todo lo que no tiene aleta y escama, no comeréis; inmundo será.
-Deuteronomy 14:11 Toda ave limpia podréis comer.
-Deuteronomy 14:12 Y éstas son de las que no podréis comer: el águila, el quebrantahuesos, el azor,
-Deuteronomy 14:13 el gallinazo, el milano según su especie,
-Deuteronomy 14:14 todo cuervo según su especie,
-Deuteronomy 14:15 el avestruz, la lechuza, la gaviota y el gavilán según sus especies,
-Deuteronomy 14:16 el búho, el ibis, el calamón,
-Deuteronomy 14:17 el pelícano, el buitre, el somormujo,
-Deuteronomy 14:18 la cigüeña, la garza según su especie, la abubilla y el murciélago.
-Deuteronomy 14:19 Todo insecto alado será inmundo; no se comerá.
-Deuteronomy 14:20 Toda ave limpia podréis comer.
-Deuteronomy 14:21 Ninguna cosa mortecina comeréis; al extranjero que está en tus poblaciones la darás, y él podrá comerla; o véndela a un extranjero, porque tú eres pueblo santo a Jehová tu Dios. No cocerás el cabrito en la leche de su madre.
-Deuteronomy 14:22 Indefectiblemente diezmarás todo el producto del grano que rindiere tu campo cada año.
-Deuteronomy 14:23 Y comerás delante de Jehová tu Dios en el lugar que él escogiere para poner allí su nombre, el diezmo de tu grano, de tu vino y de tu aceite, y las primicias de tus manadas y de tus ganados, para que aprendas a temer a Jehová tu Dios todos los días.
-Deuteronomy 14:24 Y si el camino fuere tan largo que no puedas llevarlo, por estar lejos de ti el lugar que Jehová tu Dios hubiere escogido para poner en él su nombre, cuando Jehová tu Dios te bendijere,
-Deuteronomy 14:25 entonces lo venderás y guardarás el dinero en tu mano, y vendrás al lugar que Jehová tu Dios escogiere;
-Deuteronomy 14:26 y darás el dinero por todo lo que deseas, por vacas, por ovejas, por vino, por sidra, o por cualquier cosa que tú deseares; y comerás allí delante de Jehová tu Dios, y te alegrarás tú y tu familia.
-Deuteronomy 14:27 Y no desampararás al levita que habitare en tus poblaciones; porque no tiene parte ni heredad contigo.
-Deuteronomy 14:28 Al fin de cada tres años sacarás todo el diezmo de tus productos de aquel año, y lo guardarás en tus ciudades.
-Deuteronomy 14:29 Y vendrá el levita, que no tiene parte ni heredad contigo, y el extranjero, el huérfano y la viuda que hubiere en tus poblaciones, y comerán y serán saciados; para que Jehová tu Dios te bendiga en toda obra que tus manos hicieren.
-Deuteronomy 15:1 Cada siete años harás remisión.
-Deuteronomy 15:2 Y ésta es la manera de la remisión: perdonará a su deudor todo aquel que hizo empréstito de su mano, con el cual obligó a su prójimo; no lo demandará más a su prójimo, o a su hermano, porque es pregonada la remisión de Jehová.
-Deuteronomy 15:3 Del extranjero demandarás el reintegro; pero lo que tu hermano tuviere tuyo, lo perdonará tu mano,
-Deuteronomy 15:4 para que así no haya en medio de ti mendigo; porque Jehová te bendecirá con abundancia en la tierra que Jehová tu Dios te da por heredad para que la tomes en posesión,
-Deuteronomy 15:5 si escuchares fielmente la voz de Jehová tu Dios, para guardar y cumplir todos estos mandamientos que yo te ordeno hoy.
-Deuteronomy 15:6 Ya que Jehová tu Dios te habrá bendecido, como te ha dicho, prestarás entonces a muchas naciones, mas tú no tomarás prestado; tendrás dominio sobre muchas naciones, pero sobre ti no tendrán dominio.
-Deuteronomy 15:7 Cuando haya en medio de ti menesteroso de alguno de tus hermanos en alguna de tus ciudades, en la tierra que Jehová tu Dios te da, no endurecerás tu corazón, ni cerrarás tu mano contra tu hermano pobre,
-Deuteronomy 15:8 sino abrirás a él tu mano liberalmente, y en efecto le prestarás lo que necesite.
-Deuteronomy 15:9 Guárdate de tener en tu corazón pensamiento perverso, diciendo: Cerca está el año séptimo, el de la remisión, y mires con malos ojos a tu hermano menesteroso para no darle; porque él podrá clamar contra ti a Jehová, y se te contará por pecado.
-Deuteronomy 15:10 Sin falta le darás, y no serás de mezquino corazón cuando le des; porque por ello te bendecirá Jehová tu Dios en todos tus hechos, y en todo lo que emprendas.
-Deuteronomy 15:11 Porque no faltarán menesterosos en medio de la tierra; por eso yo te mando, diciendo: Abrirás tu mano a tu hermano, al pobre y al menesteroso en tu tierra.
-Deuteronomy 15:12 Si se vendiere a ti tu hermano hebreo o hebrea, y te hubiere servido seis años, al séptimo le despedirás libre.
-Deuteronomy 15:13 Y cuando lo despidieres libre, no le enviarás con las manos vacías.
-Deuteronomy 15:14 Le abastecerás liberalmente de tus ovejas, de tu era y de tu lagar; le darás de aquello en que Jehová te hubiere bendecido.
-Deuteronomy 15:15 Y te acordarás de que fuiste siervo en la tierra de Egipto, y que Jehová tu Dios te rescató; por tanto yo te mando esto hoy.
-Deuteronomy 15:16 Si él te dijere: No te dejaré; porque te ama a ti y a tu casa, y porque le va bien contigo;
-Deuteronomy 15:17 entonces tomarás una lesna, y horadarás su oreja contra la puerta, y será tu siervo para siempre; así también harás a tu criada.
-Deuteronomy 15:18 No te parezca duro cuando le enviares libre, pues por la mitad del costo de un jornalero te sirvió seis años; y Jehová tu Dios te bendecirá en todo cuanto hicieres.
-Deuteronomy 15:19 Consagrarás a Jehová tu Dios todo primogénito macho de tus vacas y de tus ovejas; no te servirás del primogénito de tus vacas, ni trasquilarás el primogénito de tus ovejas.
-Deuteronomy 15:20 Delante de Jehová tu Dios los comerás cada año, tú y tu familia, en el lugar que Jehová escogiere.
-Deuteronomy 15:21 Y si hubiere en él defecto, si fuere ciego, o cojo, o hubiere en él cualquier falta, no lo sacrificarás a Jehová tu Dios.
-Deuteronomy 15:22 En tus poblaciones lo comerás; el inmundo lo mismo que el limpio comerán de él, como de una gacela o de un ciervo.
-Deuteronomy 15:23 Solamente que no comas su sangre; sobre la tierra la derramarás como agua.
-Deuteronomy 16:1 Guardarás el mes de Abib, y harás pascua a Jehová tu Dios; porque en el mes de Abib te sacó Jehová tu Dios de Egipto, de noche.
-Deuteronomy 16:2 Y sacrificarás la pascua a Jehová tu Dios, de las ovejas y de las vacas, en el lugar que Jehová escogiere para que habite allí su nombre.
-Deuteronomy 16:3 No comerás con ella pan con levadura; siete días comerás con ella pan sin levadura, pan de aflicción, porque aprisa saliste de tierra de Egipto; para que todos los días de tu vida te acuerdes del día en que saliste de la tierra de Egipto.
-Deuteronomy 16:4 Y no se verá levadura contigo en todo tu territorio por siete días; y de la carne que matares en la tarde del primer día, no quedará hasta la mañana.
-Deuteronomy 16:5 No podrás sacrificar la pascua en cualquiera de las ciudades que Jehová tu Dios te da;
-Deuteronomy 16:6 sino en el lugar que Jehová tu Dios escogiere para que habite allí su nombre, sacrificarás la pascua por la tarde a la puesta del sol, a la hora que saliste de Egipto.
-Deuteronomy 16:7 Y la asarás y comerás en el lugar que Jehová tu Dios hubiere escogido; y por la mañana regresarás y volverás a tu habitación.
-Deuteronomy 16:8 Seis días comerás pan sin levadura, y el séptimo día será fiesta solemne a Jehová tu Dios; no trabajarás en él.
-Deuteronomy 16:9 Siete semanas contarás; desde que comenzare a meterse la hoz en las mieses comenzarás a contar las siete semanas.
-Deuteronomy 16:10 Y harás la fiesta solemne de las semanas a Jehová tu Dios; de la abundancia voluntaria de tu mano será lo que dieres, según Jehová tu Dios te hubiere bendecido.
-Deuteronomy 16:11 Y te alegrarás delante de Jehová tu Dios, tú, tu hijo, tu hija, tu siervo, tu sierva, el levita que habitare en tus ciudades, y el extranjero, el huérfano y la viuda que estuvieren en medio de ti, en el lugar que Jehová tu Dios hubiere escogido para poner allí su nombre.
-Deuteronomy 16:12 Y acuérdate de que fuiste siervo en Egipto; por tanto, guardarás y cumplirás estos estatutos.
-Deuteronomy 16:13 La fiesta solemne de los tabernáculos harás por siete días, cuando hayas hecho la cosecha de tu era y de tu lagar.
-Deuteronomy 16:14 Y te alegrarás en tus fiestas solemnes, tú, tu hijo, tu hija, tu siervo, tu sierva, y el levita, el extranjero, el huérfano y la viuda que viven en tus poblaciones.
-Deuteronomy 16:15 Siete días celebrarás fiesta solemne a Jehová tu Dios en el lugar que Jehová escogiere; porque te habrá bendecido Jehová tu Dios en todos tus frutos, y en toda la obra de tus manos, y estarás verdaderamente alegre.
-Deuteronomy 16:16 Tres veces cada año aparecerá todo varón tuyo delante de Jehová tu Dios en el lugar que él escogiere: en la fiesta solemne de los panes sin levadura, y en la fiesta solemne de las semanas, y en la fiesta solemne de los tabernáculos. Y ninguno se presentará delante de Jehová con las manos vacías;
-Deuteronomy 16:17 cada uno con la ofrenda de su mano, conforme a la bendición que Jehová tu Dios te hubiere dado.
-Deuteronomy 16:18 Jueces y oficiales pondrás en todas tus ciudades que Jehová tu Dios te dará en tus tribus, los cuales juzgarán al pueblo con justo juicio.
-Deuteronomy 16:19 No tuerzas el derecho; no hagas acepción de personas, ni tomes soborno; porque el soborno ciega los ojos de los sabios, y pervierte las palabras de los justos.
-Deuteronomy 16:20 La justicia, la justicia seguirás, para que vivas y heredes la tierra que Jehová tu Dios te da.
-Deuteronomy 16:21 No plantarás ningún árbol para Asera cerca del altar de Jehová tu Dios, que tú te habrás hecho,
-Deuteronomy 16:22 ni te levantarás estatua, lo cual aborrece Jehová tu Dios.
-Deuteronomy 17:1 No ofrecerás en sacrificio a Jehová tu Dios, buey o cordero en el cual haya falta o alguna cosa mala, pues es abominación a Jehová tu Dios.
-Deuteronomy 17:2 Cuando se hallare en medio de ti, en alguna de tus ciudades que Jehová tu Dios te da, hombre o mujer que haya hecho mal ante los ojos de Jehová tu Dios traspasando su pacto,
-Deuteronomy 17:3 que hubiere ido y servido a dioses ajenos, y se hubiere inclinado a ellos, ya sea al sol, o a la luna, o a todo el ejército del cielo, lo cual yo he prohibido;
-Deuteronomy 17:4 y te fuere dado aviso, y después que oyeres y hubieres indagado bien, la cosa pareciere de verdad cierta, que tal abominación ha sido hecha en Israel;
-Deuteronomy 17:5 entonces sacarás a tus puertas al hombre o a la mujer que hubiere hecho esta mala cosa, sea hombre o mujer, y los apedrearás, y así morirán.
-Deuteronomy 17:6 Por dicho de dos o de tres testigos morirá el que hubiere de morir; no morirá por el dicho de un solo testigo.
-Deuteronomy 17:7 La mano de los testigos caerá primero sobre él para matarlo, y después la mano de todo el pueblo; así quitarás el mal de en medio de ti.
-Deuteronomy 17:8 Cuando alguna cosa te fuere difícil en el juicio, entre una clase de homicidio y otra, entre una clase de derecho legal y otra, y entre una clase de herida y otra, en negocios de litigio en tus ciudades; entonces te levantarás y recurrirás al lugar que Jehová tu Dios escogiere;
-Deuteronomy 17:9 y vendrás a los sacerdotes levitas, y al juez que hubiere en aquellos días, y preguntarás; y ellos te enseñarán la sentencia del juicio.
-Deuteronomy 17:10 Y harás según la sentencia que te indiquen los del lugar que Jehová escogiere, y cuidarás de hacer según todo lo que te manifiesten.
-Deuteronomy 17:11 Según la ley que te enseñen, y según el juicio que te digan, harás; no te apartarás ni a diestra ni a siniestra de la sentencia que te declaren.
-Deuteronomy 17:12 Y el hombre que procediere con soberbia, no obedeciendo al sacerdote que está para ministrar allí delante de Jehová tu Dios, o al juez, el tal morirá; y quitarás el mal de en medio de Israel.
-Deuteronomy 17:13 Y todo el pueblo oirá, y temerá, y no se ensoberbecerá.
-Deuteronomy 17:14 Cuando hayas entrado en la tierra que Jehová tu Dios te da, y tomes posesión de ella y la habites, y digas: Pondré un rey sobre mí, como todas las naciones que están en mis alrededores;
-Deuteronomy 17:15 ciertamente pondrás por rey sobre ti al que Jehová tu Dios escogiere; de entre tus hermanos pondrás rey sobre ti; no podrás poner sobre ti a hombre extranjero, que no sea tu hermano.
-Deuteronomy 17:16 Pero él no aumentará para sí caballos, ni hará volver al pueblo a Egipto con el fin de aumentar caballos; porque Jehová os ha dicho: No volváis nunca por este camino.
-Deuteronomy 17:17 Ni tomará para sí muchas mujeres, para que su corazón no se desvíe; ni plata ni oro amontonará para sí en abundancia.
-Deuteronomy 17:18 Y cuando se siente sobre el trono de su reino, entonces escribirá para sí en un libro una copia de esta ley, del original que está al cuidado de los sacerdotes levitas;
-Deuteronomy 17:19 y lo tendrá consigo, y leerá en él todos los días de su vida, para que aprenda a temer a Jehová su Dios, para guardar todas las palabras de esta ley y estos estatutos, para ponerlos por obra;
-Deuteronomy 17:20 para que no se eleve su corazón sobre sus hermanos, ni se aparte del mandamiento a diestra ni a siniestra; a fin de que prolongue sus días en su reino, él y sus hijos, en medio de Israel.
-Deuteronomy 18:1 Los sacerdotes levitas, es decir, toda la tribu de Leví, no tendrán parte ni heredad en Israel; de las ofrendas quemadas a Jehová y de la heredad de él comerán.
-Deuteronomy 18:2 No tendrán, pues, heredad entre sus hermanos; Jehová es su heredad, como él les ha dicho.
-Deuteronomy 18:3 Y éste será el derecho de los sacerdotes de parte del pueblo, de los que ofrecieren en sacrificio buey o cordero: darán al sacerdote la espaldilla, las quijadas y el cuajar.
-Deuteronomy 18:4 Las primicias de tu grano, de tu vino y de tu aceite, y las primicias de la lana de tus ovejas le darás;
-Deuteronomy 18:5 porque le ha escogido Jehová tu Dios de entre todas tus tribus, para que esté para administrar en el nombre de Jehová, él y sus hijos para siempre.
-Deuteronomy 18:6 Y cuando saliere un levita de alguna de tus ciudades de entre todo Israel, donde hubiere vivido, y viniere con todo el deseo de su alma al lugar que Jehová escogiere,
-Deuteronomy 18:7 ministrará en el nombre de Jehová su Dios como todos sus hermanos los levitas que estuvieren allí delante de Jehová.
-Deuteronomy 18:8 Igual ración a la de los otros comerá, además de sus patrimonios.
-Deuteronomy 18:9 Cuando entres a la tierra que Jehová tu Dios te da, no aprenderás a hacer según las abominaciones de aquellas naciones.
-Deuteronomy 18:10 No sea hallado en ti quien haga pasar a su hijo o a su hija por el fuego, ni quien practique adivinación, ni agorero, ni sortílego, ni hechicero,
-Deuteronomy 18:11 ni encantador, ni adivino, ni mago, ni quien consulte a los muertos.
-Deuteronomy 18:12 Porque es abominación para con Jehová cualquiera que hace estas cosas, y por estas abominaciones Jehová tu Dios echa estas naciones de delante de ti.
-Deuteronomy 18:13 Perfecto serás delante de Jehová tu Dios.
-Deuteronomy 18:14 Porque estas naciones que vas a heredar, a agoreros y a adivinos oyen; mas a ti no te ha permitido esto Jehová tu Dios.
-Deuteronomy 18:15 Profeta de en medio de ti, de tus hermanos, como yo, te levantará Jehová tu Dios; a él oiréis;
-Deuteronomy 18:16 conforme a todo lo que pediste a Jehová tu Dios en Horeb el día de la asamblea, diciendo: No vuelva yo a oír la voz de Jehová mi Dios, ni vea yo más este gran fuego, para que no muera.
-Deuteronomy 18:17 Y Jehová me dijo: Han hablado bien en lo que han dicho.
-Deuteronomy 18:18 Profeta les levantaré de en medio de sus hermanos, como tú; y pondré mis palabras en su boca, y él les hablará todo lo que yo le mandare.
-Deuteronomy 18:19 Mas a cualquiera que no oyere mis palabras que él hablare en mi nombre, yo le pediré cuenta.
-Deuteronomy 18:20 El profeta que tuviere la presunción de hablar palabra en mi nombre, a quien yo no le haya mandado hablar, o que hablare en nombre de dioses ajenos, el tal profeta morirá.
-Deuteronomy 18:21 Y si dijeres en tu corazón: ¿Cómo conoceremos la palabra que Jehová no ha hablado?;
-Deuteronomy 18:22 si el profeta hablare en nombre de Jehová, y no se cumpliere lo que dijo, ni aconteciere, es palabra que Jehová no ha hablado; con presunción la habló el tal profeta; no tengas temor de él.
-Deuteronomy 19:1 Cuando Jehová tu Dios destruya a las naciones cuya tierra Jehová tu Dios te da a ti, y tú las heredes, y habites en sus ciudades, y en sus casas;
-Deuteronomy 19:2 te apartarás tres ciudades en medio de la tierra que Jehová tu Dios te da para que la poseas.
-Deuteronomy 19:3 Arreglarás los caminos, y dividirás en tres partes la tierra que Jehová tu Dios te dará en heredad, y será para que todo homicida huya allí.
-Deuteronomy 19:4 Y éste es el caso del homicida que huirá allí, y vivirá: aquel que hiriere a su prójimo sin intención y sin haber tenido enemistad con él anteriormente;
-Deuteronomy 19:5 como el que fuere con su prójimo al monte a cortar leña, y al dar su mano el golpe con el hacha para cortar algún leño, saltare el hierro del cabo, y diere contra su prójimo y éste muriere; aquél huirá a una de estas ciudades, y vivirá;
-Deuteronomy 19:6 no sea que el vengador de la sangre, enfurecido, persiga al homicida, y le alcance por ser largo el camino, y le hiera de muerte, no debiendo ser condenado a muerte por cuanto no tenía enemistad con su prójimo anteriormente.
-Deuteronomy 19:7 Por tanto yo te mando, diciendo: Separarás tres ciudades.
-Deuteronomy 19:8 Y si Jehová tu Dios ensanchare tu territorio, como lo juró a tus padres, y te diere toda la tierra que prometió dar a tus padres,
-Deuteronomy 19:9 siempre y cuando guardares todos estos mandamientos que yo te prescribo hoy, para ponerlos por obra; que ames a Jehová tu Dios y andes en sus caminos todos los días; entonces añadirás tres ciudades más a estas tres,
-Deuteronomy 19:10 para que no sea derramada sangre inocente en medio de la tierra que Jehová tu Dios te da por heredad, y no seas culpado de derramamiento de sangre.
-Deuteronomy 19:11 Pero si hubiere alguno que aborreciere a su prójimo y lo acechare, y se levantare contra él y lo hiriere de muerte, y muriere; si huyere a alguna de estas ciudades,
-Deuteronomy 19:12 entonces los ancianos de su ciudad enviarán y lo sacarán de allí, y lo entregarán en mano del vengador de la sangre para que muera.
-Deuteronomy 19:13 No le compadecerás; y quitarás de Israel la sangre inocente, y te irá bien.
-Deuteronomy 19:14 En la heredad que poseas en la tierra que Jehová tu Dios te da, no reducirás los límites de la propiedad de tu prójimo, que fijaron los antiguos.
-Deuteronomy 19:15 No se tomará en cuenta a un solo testigo contra ninguno en cualquier delito ni en cualquier pecado, en relación con cualquiera ofensa cometida. Sólo por el testimonio de dos o tres testigos se mantendrá la acusación.
-Deuteronomy 19:16 Cuando se levantare testigo falso contra alguno, para testificar contra él,
-Deuteronomy 19:17 entonces los dos litigantes se presentarán delante de Jehová, y delante de los sacerdotes y de los jueces que hubiere en aquellos días.
-Deuteronomy 19:18 Y los jueces inquirirán bien; y si aquel testigo resultare falso, y hubiere acusado falsamente a su hermano,
-Deuteronomy 19:19 entonces haréis a él como él pensó hacer a su hermano; y quitarás el mal de en medio de ti.
-Deuteronomy 19:20 Y los que quedaren oirán y temerán, y no volverán a hacer más una maldad semejante en medio de ti.
-Deuteronomy 19:21 Y no le compadecerás; vida por vida, ojo por ojo, diente por diente, mano por mano, pie por pie.
-Deuteronomy 20:1 Cuando salgas a la guerra contra tus enemigos, si vieres caballos y carros, y un pueblo más grande que tú, no tengas temor de ellos, porque Jehová tu Dios está contigo, el cual te sacó de tierra de Egipto.
-Deuteronomy 20:2 Y cuando os acerquéis para combatir, se pondrá en pie el sacerdote y hablará al pueblo,
-Deuteronomy 20:3 y les dirá: Oye, Israel, vosotros os juntáis hoy en batalla contra vuestros enemigos; no desmaye vuestro corazón, no temáis, ni os azoréis, ni tampoco os desalentéis delante de ellos;
-Deuteronomy 20:4 porque Jehová vuestro Dios va con vosotros, para pelear por vosotros contra vuestros enemigos, para salvaros.
-Deuteronomy 20:5 Y los oficiales hablarán al pueblo, diciendo: ¿Quién ha edificado casa nueva, y no la ha estrenado? Vaya, y vuélvase a su casa, no sea que muera en la batalla, y algún otro la estrene.
-Deuteronomy 20:6 ¿Y quién ha plantado viña, y no ha disfrutado de ella? Vaya, y vuélvase a su casa, no sea que muera en la batalla, y algún otro la disfrute.
-Deuteronomy 20:7 ¿Y quién se ha desposado con mujer, y no la ha tomado? Vaya, y vuélvase a su casa, no sea que muera en la batalla, y algún otro la tome.
-Deuteronomy 20:8 Y volverán los oficiales a hablar al pueblo, y dirán: ¿Quién es hombre medroso y pusilánime? Vaya, y vuélvase a su casa, y no apoque el corazón de sus hermanos, como el corazón suyo.
-Deuteronomy 20:9 Y cuando los oficiales acaben de hablar al pueblo, entonces los capitanes del ejército tomarán el mando a la cabeza del pueblo.
-Deuteronomy 20:10 Cuando te acerques a una ciudad para combatirla, le intimarás la paz.
-Deuteronomy 20:11 Y si respondiere: Paz, y te abriere, todo el pueblo que en ella fuere hallado te será tributario, y te servirá.
-Deuteronomy 20:12 Mas si no hiciere paz contigo, y emprendiere guerra contigo, entonces la sitiarás.
-Deuteronomy 20:13 Luego que Jehová tu Dios la entregue en tu mano, herirás a todo varón suyo a filo de espada.
-Deuteronomy 20:14 Solamente las mujeres y los niños, y los animales, y todo lo que haya en la ciudad, todo su botín tomarás para ti; y comerás del botín de tus enemigos, los cuales Jehová tu Dios te entregó.
-Deuteronomy 20:15 Así harás a todas las ciudades que estén muy lejos de ti, que no sean de las ciudades de estas naciones.
-Deuteronomy 20:16 Pero de las ciudades de estos pueblos que Jehová tu Dios te da por heredad, ninguna persona dejarás con vida,
-Deuteronomy 20:17 sino que los destruirás completamente: al heteo, al amorreo, al cananeo, al ferezeo, al heveo y al jebuseo, como Jehová tu Dios te ha mandado;
-Deuteronomy 20:18 para que no os enseñen a hacer según todas sus abominaciones que ellos han hecho para sus dioses, y pequéis contra Jehová vuestro Dios.
-Deuteronomy 20:19 Cuando sities a alguna ciudad, peleando contra ella muchos días para tomarla, no destruirás sus árboles metiendo hacha en ellos, porque de ellos podrás comer; y no los talarás, porque el árbol del campo no es hombre para venir contra ti en el sitio.
-Deuteronomy 20:20 Mas el árbol que sepas que no lleva fruto, podrás destruirlo y talarlo, para construir baluarte contra la ciudad que te hace la guerra, hasta sojuzgarla.
-Deuteronomy 21:1 Si en la tierra que Jehová tu Dios te da para que la poseas, fuere hallado alguien muerto, tendido en el campo, y no se supiere quién lo mató,
-Deuteronomy 21:2 entonces tus ancianos y tus jueces saldrán y medirán la distancia hasta las ciudades que están alrededor del muerto.
-Deuteronomy 21:3 Y los ancianos de la ciudad más cercana al lugar donde fuere hallado el muerto, tomarán de las vacas una becerra que no haya trabajado, que no haya llevado yugo;
-Deuteronomy 21:4 y los ancianos de aquella ciudad traerán la becerra a un valle escabroso, que nunca haya sido arado ni sembrado, y quebrarán la cerviz de la becerra allí en el valle.
-Deuteronomy 21:5 Entonces vendrán los sacerdotes hijos de Leví, porque a ellos escogió Jehová tu Dios para que le sirvan, y para bendecir en el nombre de Jehová; y por la palabra de ellos se decidirá toda disputa y toda ofensa.
-Deuteronomy 21:6 Y todos los ancianos de la ciudad más cercana al lugar donde fuere hallado el muerto lavarán sus manos sobre la becerra cuya cerviz fue quebrada en el valle;
-Deuteronomy 21:7 y protestarán y dirán: Nuestras manos no han derramado esta sangre, ni nuestros ojos lo han visto.
-Deuteronomy 21:8 Perdona a tu pueblo Israel, al cual redimiste, oh Jehová; y no culpes de sangre inocente a tu pueblo Israel. Y la sangre les será perdonada.
-Deuteronomy 21:9 Y tú quitarás la culpa de la sangre inocente de en medio de ti, cuando hicieres lo que es recto ante los ojos de Jehová.
-Deuteronomy 21:10 Cuando salieres a la guerra contra tus enemigos, y Jehová tu Dios los entregare en tu mano, y tomares de ellos cautivos,
-Deuteronomy 21:11 y vieres entre los cautivos a alguna mujer hermosa, y la codiciares, y la tomares para ti por mujer,
-Deuteronomy 21:12 la meterás en tu casa; y ella rapará su cabeza, y cortará sus uñas,
-Deuteronomy 21:13 y se quitará el vestido de su cautiverio, y se quedará en tu casa; y llorará a su padre y a su madre un mes entero; y después podrás llegarte a ella, y tú serás su marido, y ella será tu mujer.
-Deuteronomy 21:14 Y si no te agradare, la dejarás en libertad; no la venderás por dinero, ni la tratarás como esclava, por cuanto la humillaste.
-Deuteronomy 21:15 Si un hombre tuviere dos mujeres, la una amada y la otra aborrecida, y la amada y la aborrecida le hubieren dado hijos, y el hijo primogénito fuere de la aborrecida;
-Deuteronomy 21:16 en el día que hiciere heredar a sus hijos lo que tuviere, no podrá dar el derecho de primogenitura al hijo de la amada con preferencia al hijo de la aborrecida, que es el primogénito;
-Deuteronomy 21:17 mas al hijo de la aborrecida reconocerá como primogénito, para darle el doble de lo que correspondiere a cada uno de los demás; porque él es el principio de su vigor, y suyo es el derecho de la primogenitura.
-Deuteronomy 21:18 Si alguno tuviere un hijo contumaz y rebelde, que no obedeciere a la voz de su padre ni a la voz de su madre, y habiéndole castigado, no les obedeciere;
-Deuteronomy 21:19 entonces lo tomarán su padre y su madre, y lo sacarán ante los ancianos de su ciudad, y a la puerta del lugar donde viva;
-Deuteronomy 21:20 y dirán a los ancianos de la ciudad: Este nuestro hijo es contumaz y rebelde, no obedece a nuestra voz; es glotón y borracho.
-Deuteronomy 21:21 Entonces todos los hombres de su ciudad lo apedrearán, y morirá; así quitarás el mal de en medio de ti, y todo Israel oirá, y temerá.
-Deuteronomy 21:22 Si alguno hubiere cometido algún crimen digno de muerte, y lo hiciereis morir, y lo colgareis en un madero,
-Deuteronomy 21:23 no dejaréis que su cuerpo pase la noche sobre el madero; sin falta lo enterrarás el mismo día, porque maldito por Dios es el colgado; y no contaminarás tu tierra que Jehová tu Dios te da por heredad.
-Deuteronomy 22:1 Si vieres extraviado el buey de tu hermano, o su cordero, no le negarás tu ayuda; lo volverás a tu hermano.
-Deuteronomy 22:2 Y si tu hermano no fuere tu vecino, o no lo conocieres, lo recogerás en tu casa, y estará contigo hasta que tu hermano lo busque, y se lo devolverás.
-Deuteronomy 22:3 Así harás con su asno, así harás también con su vestido, y lo mismo harás con toda cosa de tu hermano que se le perdiere y tú la hallares; no podrás negarle tu ayuda.
-Deuteronomy 22:4 Si vieres el asno de tu hermano, o su buey, caído en el camino, no te apartarás de él; le ayudarás a levantarlo.
-Deuteronomy 22:5 No vestirá la mujer traje de hombre, ni el hombre vestirá ropa de mujer; porque abominación es a Jehová tu Dios cualquiera que esto hace.
-Deuteronomy 22:6 Cuando encuentres por el camino algún nido de ave en cualquier árbol, o sobre la tierra, con pollos o huevos, y la madre echada sobre los pollos o sobre los huevos, no tomarás la madre con los hijos.
-Deuteronomy 22:7 Dejarás ir a la madre, y tomarás los pollos para ti, para que te vaya bien, y prolongues tus días.
-Deuteronomy 22:8 Cuando edifiques casa nueva, harás pretil a tu terrado, para que no eches culpa de sangre sobre tu casa, si de él cayere alguno.
-Deuteronomy 22:9 No sembrarás tu viña con semillas diversas, no sea que se pierda todo, tanto la semilla que sembraste como el fruto de la viña.
-Deuteronomy 22:10 No ararás con buey y con asno juntamente.
-Deuteronomy 22:11 No vestirás ropa de lana y lino juntamente.
-Deuteronomy 22:12 Te harás flecos en las cuatro puntas de tu manto con que te cubras.
-Deuteronomy 22:13 Cuando alguno tomare mujer, y después de haberse llegado a ella la aborreciere,
-Deuteronomy 22:14 y le atribuyere faltas que den que hablar, y dijere: A esta mujer tomé, y me llegué a ella, y no la hallé virgen;
-Deuteronomy 22:15 entonces el padre de la joven y su madre tomarán y sacarán las señales de la virginidad de la doncella a los ancianos de la ciudad, en la puerta;
-Deuteronomy 22:16 y dirá el padre de la joven a los ancianos: Yo di mi hija a este hombre por mujer, y él la aborrece;
-Deuteronomy 22:17 y he aquí, él le atribuye faltas que dan que hablar, diciendo: No he hallado virgen a tu hija; pero ved aquí las señales de la virginidad de mi hija. Y extenderán la vestidura delante de los ancianos de la ciudad.
-Deuteronomy 22:18 Entonces los ancianos de la ciudad tomarán al hombre y lo castigarán;
-Deuteronomy 22:19 y le multarán en cien piezas de plata, las cuales darán al padre de la joven, por cuanto esparció mala fama sobre una virgen de Israel; y la tendrá por mujer, y no podrá despedirla en todos sus días.
-Deuteronomy 22:20 Mas si resultare ser verdad que no se halló virginidad en la joven,
-Deuteronomy 22:21 entonces la sacarán a la puerta de la casa de su padre, y la apedrearán los hombres de su ciudad, y morirá, por cuanto hizo vileza en Israel fornicando en casa de su padre; así quitarás el mal de en medio de ti.
-Deuteronomy 22:22 Si fuere sorprendido alguno acostado con una mujer casada con marido, ambos morirán, el hombre que se acostó con la mujer, y la mujer también; así quitarás el mal de Israel.
-Deuteronomy 22:23 Si hubiere una muchacha virgen desposada con alguno, y alguno la hallare en la ciudad, y se acostare con ella;
-Deuteronomy 22:24 entonces los sacaréis a ambos a la puerta de la ciudad, y los apedrearéis, y morirán; la joven porque no dio voces en la ciudad, y el hombre porque humilló a la mujer de su prójimo; así quitarás el mal de en medio de ti.
-Deuteronomy 22:25 Mas si un hombre hallare en el campo a la joven desposada, y la forzare aquel hombre, acostándose con ella, morirá solamente el hombre que se acostó con ella;
-Deuteronomy 22:26 mas a la joven no le harás nada; no hay en ella culpa de muerte; pues como cuando alguno se levanta contra su prójimo y le quita la vida, así es en este caso.
-Deuteronomy 22:27 Porque él la halló en el campo; dio voces la joven desposada, y no hubo quien la librase.
-Deuteronomy 22:28 Cuando algún hombre hallare a una joven virgen que no fuere desposada, y la tomare y se acostare con ella, y fueren descubiertos;
-Deuteronomy 22:29 entonces el hombre que se acostó con ella dará al padre de la joven cincuenta piezas de plata, y ella será su mujer, por cuanto la humilló; no la podrá despedir en todos sus días.
-Deuteronomy 22:30 Ninguno tomará la mujer de su padre, ni profanará el lecho de su padre.
-Deuteronomy 23:1 No entrará en la congregación de Jehová el que tenga magullados los testículos, o amputado su miembro viril.
-Deuteronomy 23:2 No entrará bastardo en la congregación de Jehová; ni hasta la décima generación no entrarán en la congregación de Jehová.
-Deuteronomy 23:3 No entrará amonita ni moabita en la congregación de Jehová, ni hasta la décima generación de ellos; no entrarán en la congregación de Jehová para siempre,
-Deuteronomy 23:4 por cuanto no os salieron a recibir con pan y agua al camino, cuando salisteis de Egipto, y porque alquilaron contra ti a Balaam hijo de Beor, de Petor en Mesopotamia, para maldecirte.
-Deuteronomy 23:5 Mas no quiso Jehová tu Dios oír a Balaam; y Jehová tu Dios te convirtió la maldición en bendición, porque Jehová tu Dios te amaba.
-Deuteronomy 23:6 No procurarás la paz de ellos ni su bien en todos los días para siempre.
-Deuteronomy 23:7 No aborrecerás al edomita, porque es tu hermano; no aborrecerás al egipcio, porque forastero fuiste en su tierra.
-Deuteronomy 23:8 Los hijos que nacieren de ellos, en la tercera generación entrarán en la congregación de Jehová.
-Deuteronomy 23:9 Cuando salieres a campaña contra tus enemigos, te guardarás de toda cosa mala.
-Deuteronomy 23:10 Si hubiere en medio de ti alguno que no fuere limpio, por razón de alguna impureza acontecida de noche, saldrá fuera del campamento, y no entrará en él.
-Deuteronomy 23:11 Pero al caer la noche se lavará con agua, y cuando se hubiere puesto el sol, podrá entrar en el campamento.
-Deuteronomy 23:12 Tendrás un lugar fuera del campamento adonde salgas;
-Deuteronomy 23:13 tendrás también entre tus armas una estaca; y cuando estuvieres allí fuera, cavarás con ella, y luego al volverte cubrirás tu excremento;
-Deuteronomy 23:14 porque Jehová tu Dios anda en medio de tu campamento, para librarte y para entregar a tus enemigos delante de ti; por tanto, tu campamento ha de ser santo, para que él no vea en ti cosa inmunda, y se vuelva de en pos de ti.
-Deuteronomy 23:15 No entregarás a su señor el siervo que se huyere a ti de su amo.
-Deuteronomy 23:16 Morará contigo, en medio de ti, en el lugar que escogiere en alguna de tus ciudades, donde a bien tuviere; no le oprimirás.
-Deuteronomy 23:17 No haya ramera de entre las hijas de Israel, ni haya sodomita de entre los hijos de Israel.
-Deuteronomy 23:18 No traerás la paga de una ramera ni el precio de un perro a la casa de Jehová tu Dios por ningún voto; porque abominación es a Jehová tu Dios tanto lo uno como lo otro.
-Deuteronomy 23:19 No exigirás de tu hermano interés de dinero, ni interés de comestibles, ni de cosa alguna de que se suele exigir interés.
-Deuteronomy 23:20 Del extraño podrás exigir interés, mas de tu hermano no lo exigirás, para que te bendiga Jehová tu Dios en toda obra de tus manos en la tierra adonde vas para tomar posesión de ella.
-Deuteronomy 23:21 Cuando haces voto a Jehová tu Dios, no tardes en pagarlo; porque ciertamente lo demandará Jehová tu Dios de ti, y sería pecado en ti.
-Deuteronomy 23:22 Mas cuando te abstengas de prometer, no habrá en ti pecado.
-Deuteronomy 23:23 Pero lo que hubiere salido de tus labios, lo guardarás y lo cumplirás, conforme lo prometiste a Jehová tu Dios, pagando la ofrenda voluntaria que prometiste con tu boca.
-Deuteronomy 23:24 Cuando entres en la viña de tu prójimo, podrás comer uvas hasta saciarte; mas no pondrás en tu cesto.
-Deuteronomy 23:25 Cuando entres en la mies de tu prójimo, podrás arrancar espigas con tu mano; mas no aplicarás hoz a la mies de tu prójimo.
-Deuteronomy 24:1 Cuando alguno tomare mujer y se casare con ella, si no le agradare por haber hallado en ella alguna cosa indecente, le escribirá carta de divorcio, y se la entregará en su mano, y la despedirá de su casa.
-Deuteronomy 24:2 Y salida de su casa, podrá ir y casarse con otro hombre.
-Deuteronomy 24:3 Pero si la aborreciere este último, y le escribiere carta de divorcio, y se la entregare en su mano, y la despidiere de su casa; o si hubiere muerto el postrer hombre que la tomó por mujer,
-Deuteronomy 24:4 no podrá su primer marido, que la despidió, volverla a tomar para que sea su mujer, después que fue envilecida; porque es abominación delante de Jehová, y no has de pervertir la tierra que Jehová tu Dios te da por heredad.
-Deuteronomy 24:5 Cuando alguno fuere recién casado, no saldrá a la guerra, ni en ninguna cosa se le ocupará; libre estará en su casa por un año, para alegrar a la mujer que tomó.
-Deuteronomy 24:6 No tomarás en prenda la muela del molino, ni la de abajo ni la de arriba; porque sería tomar en prenda la vida del hombre.
-Deuteronomy 24:7 Cuando fuere hallado alguno que hubiere hurtado a uno de sus hermanos los hijos de Israel, y le hubiere esclavizado, o le hubiere vendido, morirá el tal ladrón, y quitarás el mal de en medio de ti.
-Deuteronomy 24:8 En cuanto a la plaga de la lepra, ten cuidado de observar diligentemente y hacer según todo lo que os enseñaren los sacerdotes levitas; según yo les he mandado, así cuidaréis de hacer.
-Deuteronomy 24:9 Acuérdate de lo que hizo Jehová tu Dios a María en el camino, después que salisteis de Egipto.
-Deuteronomy 24:10 Cuando entregares a tu prójimo alguna cosa prestada, no entrarás en su casa para tomarle prenda.
-Deuteronomy 24:11 Te quedarás fuera, y el hombre a quien prestaste te sacará la prenda.
-Deuteronomy 24:12 Y si el hombre fuere pobre, no te acostarás reteniendo aún su prenda.
-Deuteronomy 24:13 Sin falta le devolverás la prenda cuando el sol se ponga, para que pueda dormir en su ropa, y te bendiga; y te será justicia delante de Jehová tu Dios.
-Deuteronomy 24:14 No oprimirás al jornalero pobre y menesteroso, ya sea de tus hermanos o de los extranjeros que habitan en tu tierra dentro de tus ciudades.
-Deuteronomy 24:15 En su día le darás su jornal, y no se pondrá el sol sin dárselo; pues es pobre, y con él sustenta su vida; para que no clame contra ti a Jehová, y sea en ti pecado.
-Deuteronomy 24:16 Los padres no morirán por los hijos, ni los hijos por los padres; cada uno morirá por su pecado.
-Deuteronomy 24:17 No torcerás el derecho del extranjero ni del huérfano, ni tomarás en prenda la ropa de la viuda,
-Deuteronomy 24:18 sino que te acordarás que fuiste siervo en Egipto, y que de allí te rescató Jehová tu Dios; por tanto, yo te mando que hagas esto.
-Deuteronomy 24:19 Cuando siegues tu mies en tu campo, y olvides alguna gavilla en el campo, no volverás para recogerla; será para el extranjero, para el huérfano y para la viuda; para que te bendiga Jehová tu Dios en toda obra de tus manos.
-Deuteronomy 24:20 Cuando sacudas tus olivos, no recorrerás las ramas que hayas dejado tras de ti; serán para el extranjero, para el huérfano y para la viuda.
-Deuteronomy 24:21 Cuando vendimies tu viña, no rebuscarás tras de ti; será para el extranjero, para el huérfano y para la viuda.
-Deuteronomy 24:22 Y acuérdate que fuiste siervo en tierra de Egipto; por tanto, yo te mando que hagas esto.
-Deuteronomy 25:1 Si hubiere pleito entre algunos, y acudieren al tribunal para que los jueces los juzguen, éstos absolverán al justo, y condenarán al culpable.
-Deuteronomy 25:2 Y si el delincuente mereciere ser azotado, entonces el juez le hará echar en tierra, y le hará azotar en su presencia; según su delito será el número de azotes.
-Deuteronomy 25:3 Se podrá dar cuarenta azotes, no más; no sea que, si lo hirieren con muchos azotes más que éstos, se sienta tu hermano envilecido delante de tus ojos.
-Deuteronomy 25:4 No pondrás bozal al buey cuando trillare.
-Deuteronomy 25:5 Cuando hermanos habitaren juntos, y muriere alguno de ellos, y no tuviere hijo, la mujer del muerto no se casará fuera con hombre extraño; su cuñado se llegará a ella, y la tomará por su mujer, y hará con ella parentesco.
-Deuteronomy 25:6 Y el primogénito que ella diere a luz sucederá en el nombre de su hermano muerto, para que el nombre de éste no sea borrado de Israel.
-Deuteronomy 25:7 Y si el hombre no quisiere tomar a su cuñada, irá entonces su cuñada a la puerta, a los ancianos, y dirá: Mi cuñado no quiere suscitar nombre en Israel a su hermano; no quiere emparentar conmigo.
-Deuteronomy 25:8 Entonces los ancianos de aquella ciudad lo harán venir, y hablarán con él; y si él se levantare y dijere: No quiero tomarla,
-Deuteronomy 25:9 se acercará entonces su cuñada a él delante de los ancianos, y le quitará el calzado del pie, y le escupirá en el rostro, y hablará y dirá: Así será hecho al varón que no quiere edificar la casa de su hermano.
-Deuteronomy 25:10 Y se le dará este nombre en Israel: La casa del descalzado.
-Deuteronomy 25:11 Si algunos riñeren uno con otro, y se acercare la mujer de uno para librar a su marido de mano del que le hiere, y alargando su mano asiere de sus partes vergonzosas,
-Deuteronomy 25:12 le cortarás entonces la mano; no la perdonarás.
-Deuteronomy 25:13 No tendrás en tu bolsa pesa grande y pesa chica,
-Deuteronomy 25:14 ni tendrás en tu casa efa grande y efa pequeño.
-Deuteronomy 25:15 Pesa exacta y justa tendrás; efa cabal y justo tendrás, para que tus días sean prolongados sobre la tierra que Jehová tu Dios te da.
-Deuteronomy 25:16 Porque abominación es a Jehová tu Dios cualquiera que hace esto, y cualquiera que hace injusticia.
-Deuteronomy 25:17 Acuérdate de lo que hizo Amalec contigo en el camino, cuando salías de Egipto;
-Deuteronomy 25:18 de cómo te salió al encuentro en el camino, y te desbarató la retaguardia de todos los débiles que iban detrás de ti, cuando tú estabas cansado y trabajado; y no tuvo ningún temor de Dios.
-Deuteronomy 25:19 Por tanto, cuando Jehová tu Dios te dé descanso de todos tus enemigos alrededor, en la tierra que Jehová tu Dios te da por heredad para que la poseas, borrarás la memoria de Amalec de debajo del cielo; no lo olvides.
-Deuteronomy 26:1 Cuando hayas entrado en la tierra que Jehová tu Dios te da por herencia, y tomes posesión de ella y la habites,
-Deuteronomy 26:2 entonces tomarás de las primicias de todos los frutos que sacares de la tierra que Jehová tu Dios te da, y las pondrás en una canasta, e irás al lugar que Jehová tu Dios escogiere para hacer habitar allí su nombre.
-Deuteronomy 26:3 Y te presentarás al sacerdote que hubiere en aquellos días, y le dirás: Declaro hoy a Jehová tu Dios, que he entrado en la tierra que juró Jehová a nuestros padres que nos daría.
-Deuteronomy 26:4 Y el sacerdote tomará la canasta de tu mano, y la pondrá delante del altar de Jehová tu Dios.
-Deuteronomy 26:5 Entonces hablarás y dirás delante de Jehová tu Dios: Un arameo a punto de perecer fue mi padre, el cual descendió a Egipto y habitó allí con pocos hombres, y allí creció y llegó a ser una nación grande, fuerte y numerosa;
-Deuteronomy 26:6 y los egipcios nos maltrataron y nos afligieron, y pusieron sobre nosotros dura servidumbre.
-Deuteronomy 26:7 Y clamamos a Jehová el Dios de nuestros padres; y Jehová oyó nuestra voz, y vio nuestra aflicción, nuestro trabajo y nuestra opresión;
-Deuteronomy 26:8 y Jehová nos sacó de Egipto con mano fuerte, con brazo extendido, con grande espanto, y con señales y con milagros;
-Deuteronomy 26:9 y nos trajo a este lugar, y nos dio esta tierra, tierra que fluye leche y miel.
-Deuteronomy 26:10 Y ahora, he aquí he traído las primicias del fruto de la tierra que me diste, oh Jehová. Y lo dejarás delante de Jehová tu Dios, y adorarás delante de Jehová tu Dios.
-Deuteronomy 26:11 Y te alegrarás en todo el bien que Jehová tu Dios te haya dado a ti y a tu casa, así tú como el levita y el extranjero que está en medio de ti.
-Deuteronomy 26:12 Cuando acabes de diezmar todo el diezmo de tus frutos en el año tercero, el año del diezmo, darás también al levita, al extranjero, al huérfano y a la viuda; y comerán en tus aldeas, y se saciarán.
-Deuteronomy 26:13 Y dirás delante de Jehová tu Dios: He sacado lo consagrado de mi casa, y también lo he dado al levita, al extranjero, al huérfano y a la viuda, conforme a todo lo que me has mandado; no he transgredido tus mandamientos, ni me he olvidado de ellos.
-Deuteronomy 26:14 No he comido de ello en mi luto, ni he gastado de ello estando yo inmundo, ni de ello he ofrecido a los muertos; he obedecido a la voz de Jehová mi Dios, he hecho conforme a todo lo que me has mandado.
-Deuteronomy 26:15 Mira desde tu morada santa, desde el cielo, y bendice a tu pueblo Israel, y a la tierra que nos has dado, como juraste a nuestros padres, tierra que fluye leche y miel.
-Deuteronomy 26:16 Jehová tu Dios te manda hoy que cumplas estos estatutos y decretos; cuida, pues, de ponerlos por obra con todo tu corazón y con toda tu alma.
-Deuteronomy 26:17 Has declarado solemnemente hoy que Jehová es tu Dios, y que andarás en sus caminos, y guardarás sus estatutos, sus mandamientos y sus decretos, y que escucharás su voz.
-Deuteronomy 26:18 Y Jehová ha declarado hoy que tú eres pueblo suyo, de su exclusiva posesión, como te lo ha prometido, para que guardes todos sus mandamientos;
-Deuteronomy 26:19 a fin de exaltarte sobre todas las naciones que hizo, para loor y fama y gloria, y para que seas un pueblo santo a Jehová tu Dios, como él ha dicho.
-Deuteronomy 27:1 Ordenó Moisés, con los ancianos de Israel, al pueblo, diciendo: Guardaréis todos los mandamientos que yo os prescribo hoy.
-Deuteronomy 27:2 Y el día que pases el Jordán a la tierra que Jehová tu Dios te da, levantarás piedras grandes, y las revocarás con cal;
-Deuteronomy 27:3 y escribirás en ellas todas las palabras de esta ley, cuando hayas pasado para entrar en la tierra que Jehová tu Dios te da, tierra que fluye leche y miel, como Jehová el Dios de tus padres te ha dicho.
-Deuteronomy 27:4 Cuando, pues, hayas pasado el Jordán, levantarás estas piedras que yo os mando hoy, en el monte Ebal, y las revocarás con cal;
-Deuteronomy 27:5 y edificarás allí un altar a Jehová tu Dios, altar de piedras; no alzarás sobre ellas instrumento de hierro.
-Deuteronomy 27:6 De piedras enteras edificarás el altar de Jehová tu Dios, y ofrecerás sobre él holocausto a Jehová tu Dios;
-Deuteronomy 27:7 y sacrificarás ofrendas de paz, y comerás allí, y te alegrarás delante de Jehová tu Dios.
-Deuteronomy 27:8 Y escribirás muy claramente en las piedras todas las palabras de esta ley.
-Deuteronomy 27:9 Y Moisés, con los sacerdotes levitas, habló a todo Israel, diciendo: Guarda silencio y escucha, oh Israel; hoy has venido a ser pueblo de Jehová tu Dios.
-Deuteronomy 27:10 Oirás, pues, la voz de Jehová tu Dios, y cumplirás sus mandamientos y sus estatutos, que yo te ordeno hoy.
-Deuteronomy 27:11 Y mandó Moisés al pueblo en aquel día, diciendo:
-Deuteronomy 27:12 Cuando hayas pasado el Jordán, éstos estarán sobre el monte Gerizim para bendecir al pueblo: Simeón, Leví, Judá, Isacar, José y Benjamín.
-Deuteronomy 27:13 Y éstos estarán sobre el monte Ebal para pronunciar la maldición: Rubén, Gad, Aser, Zabulón, Dan y Neftalí.
-Deuteronomy 27:14 Y hablarán los levitas, y dirán a todo varón de Israel en alta voz:
-Deuteronomy 27:15 Maldito el hombre que hiciere escultura o imagen de fundición, abominación a Jehová, obra de mano de artífice, y la pusiere en oculto. Y todo el pueblo responderá y dirá: Amén.
-Deuteronomy 27:16 Maldito el que deshonrare a su padre o a su madre. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:17 Maldito el que redujere el límite de su prójimo. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:18 Maldito el que hiciere errar al ciego en el camino. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:19 Maldito el que pervirtiere el derecho del extranjero, del huérfano y de la viuda. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:20 Maldito el que se acostare con la mujer de su padre, por cuanto descubrió el regazo de su padre. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:21 Maldito el que se ayuntare con cualquier bestia. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:22 Maldito el que se acostare con su hermana, hija de su padre, o hija de su madre. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:23 Maldito el que se acostare con su suegra. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:24 Maldito el que hiriere a su prójimo ocultamente. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:25 Maldito el que recibiere soborno para quitar la vida al inocente. Y dirá todo el pueblo: Amén.
-Deuteronomy 27:26 Maldito el que no confirmare las palabras de esta ley para hacerlas. Y dirá todo el pueblo: Amén.
-Deuteronomy 28:1 Acontecerá que si oyeres atentamente la voz de Jehová tu Dios, para guardar y poner por obra todos sus mandamientos que yo te prescribo hoy, también Jehová tu Dios te exaltará sobre todas las naciones de la tierra.
-Deuteronomy 28:2 Y vendrán sobre ti todas estas bendiciones, y te alcanzarán, si oyeres la voz de Jehová tu Dios.
-Deuteronomy 28:3 Bendito serás tú en la ciudad, y bendito tú en el campo.
-Deuteronomy 28:4 Bendito el fruto de tu vientre, el fruto de tu tierra, el fruto de tus bestias, la cría de tus vacas y los rebaños de tus ovejas.
-Deuteronomy 28:5 Benditas serán tu canasta y tu artesa de amasar.
-Deuteronomy 28:6 Bendito serás en tu entrar, y bendito en tu salir.
-Deuteronomy 28:7 Jehová derrotará a tus enemigos que se levantaren contra ti; por un camino saldrán contra ti, y por siete caminos huirán de delante de ti.
-Deuteronomy 28:8 Jehová te enviará su bendición sobre tus graneros, y sobre todo aquello en que pusieres tu mano; y te bendecirá en la tierra que Jehová tu Dios te da.
-Deuteronomy 28:9 Te confirmará Jehová por pueblo santo suyo, como te lo ha jurado, cuando guardares los mandamientos de Jehová tu Dios, y anduvieres en sus caminos.
-Deuteronomy 28:10 Y verán todos los pueblos de la tierra que el nombre de Jehová es invocado sobre ti, y te temerán.
-Deuteronomy 28:11 Y te hará Jehová sobreabundar en bienes, en el fruto de tu vientre, en el fruto de tu bestia, y en el fruto de tu tierra, en el país que Jehová juró a tus padres que te había de dar.
-Deuteronomy 28:12 Te abrirá Jehová su buen tesoro, el cielo, para enviar la lluvia a tu tierra en su tiempo, y para bendecir toda obra de tus manos. Y prestarás a muchas naciones, y tú no pedirás prestado.
-Deuteronomy 28:13 Te pondrá Jehová por cabeza, y no por cola; y estarás encima solamente, y no estarás debajo, si obedecieres los mandamientos de Jehová tu Dios, que yo te ordeno hoy, para que los guardes y cumplas,
-Deuteronomy 28:14 y si no te apartares de todas las palabras que yo te mando hoy, ni a diestra ni a siniestra, para ir tras dioses ajenos y servirles.
-Deuteronomy 28:15 Pero acontecerá, si no oyeres la voz de Jehová tu Dios, para procurar cumplir todos sus mandamientos y sus estatutos que yo te intimo hoy, que vendrán sobre ti todas estas maldiciones, y te alcanzarán.
-Deuteronomy 28:16 Maldito serás tú en la ciudad, y maldito en el campo.
-Deuteronomy 28:17 Maldita tu canasta, y tu artesa de amasar.
-Deuteronomy 28:18 Maldito el fruto de tu vientre, el fruto de tu tierra, la cría de tus vacas, y los rebaños de tus ovejas.
-Deuteronomy 28:19 Maldito serás en tu entrar, y maldito en tu salir.
-Deuteronomy 28:20 Y Jehová enviará contra ti la maldición, quebranto y asombro en todo cuanto pusieres mano e hicieres, hasta que seas destruido, y perezcas pronto a causa de la maldad de tus obras por las cuales me habrás dejado.
-Deuteronomy 28:21 Jehová traerá sobre ti mortandad, hasta que te consuma de la tierra a la cual entras para tomar posesión de ella.
-Deuteronomy 28:22 Jehová te herirá de tisis, de fiebre, de inflamación y de ardor, con sequía, con calamidad repentina y con añublo; y te perseguirán hasta que perezcas.
-Deuteronomy 28:23 Y los cielos que están sobre tu cabeza serán de bronce, y la tierra que está debajo de ti, de hierro.
-Deuteronomy 28:24 Dará Jehová por lluvia a tu tierra polvo y ceniza; de los cielos descenderán sobre ti hasta que perezcas.
-Deuteronomy 28:25 Jehová te entregará derrotado delante de tus enemigos; por un camino saldrás contra ellos, y por siete caminos huirás delante de ellos; y serás vejado por todos los reinos de la tierra.
-Deuteronomy 28:26 Y tus cadáveres servirán de comida a toda ave del cielo y fiera de la tierra, y no habrá quien las espante.
-Deuteronomy 28:27 Jehová te herirá con la úlcera de Egipto, con tumores, con sarna, y con comezón de que no puedas ser curado.
-Deuteronomy 28:28 Jehová te herirá con locura, ceguera y turbación de espíritu;
-Deuteronomy 28:29 y palparás a mediodía como palpa el ciego en la oscuridad, y no serás prosperado en tus caminos; y no serás sino oprimido y robado todos los días, y no habrá quien te salve.
-Deuteronomy 28:30 Te desposarás con mujer, y otro varón dormirá con ella; edificarás casa, y no habitarás en ella; plantarás viña, y no la disfrutarás.
-Deuteronomy 28:31 Tu buey será matado delante de tus ojos, y tú no comerás de él; tu asno será arrebatado de delante de ti, y no te será devuelto; tus ovejas serán dadas a tus enemigos, y no tendrás quien te las rescate.
-Deuteronomy 28:32 Tus hijos y tus hijas serán entregados a otro pueblo, y tus ojos lo verán, y desfallecerán por ellos todo el día; y no habrá fuerza en tu mano.
-Deuteronomy 28:33 El fruto de tu tierra y de todo tu trabajo comerá pueblo que no conociste; y no serás sino oprimido y quebrantado todos los días.
-Deuteronomy 28:34 Y enloquecerás a causa de lo que verás con tus ojos.
-Deuteronomy 28:35 Te herirá Jehová con maligna pústula en las rodillas y en las piernas, desde la planta de tu pie hasta tu coronilla, sin que puedas ser curado.
-Deuteronomy 28:36 Jehová te llevará a ti, y al rey que hubieres puesto sobre ti, a nación que no conociste ni tú ni tus padres; y allá servirás a dioses ajenos, al palo y a la piedra.
-Deuteronomy 28:37 Y serás motivo de horror, y servirás de refrán y de burla a todos los pueblos a los cuales te llevará Jehová.
-Deuteronomy 28:38 Sacarás mucha semilla al campo, y recogerás poco, porque la langosta lo consumirá.
-Deuteronomy 28:39 Plantarás viñas y labrarás, pero no beberás vino, ni recogerás uvas, porque el gusano se las comerá.
-Deuteronomy 28:40 Tendrás olivos en todo tu territorio, mas no te ungirás con el aceite, porque tu aceituna se caerá.
-Deuteronomy 28:41 Hijos e hijas engendrarás, y no serán para ti, porque irán en cautiverio.
-Deuteronomy 28:42 Toda tu arboleda y el fruto de tu tierra serán consumidos por la langosta.
-Deuteronomy 28:43 El extranjero que estará en medio de ti se elevará sobre ti muy alto, y tú descenderás muy abajo.
-Deuteronomy 28:44 Él te prestará a ti, y tú no le prestarás a él; él será por cabeza, y tú serás por cola.
-Deuteronomy 28:45 Y vendrán sobre ti todas estas maldiciones, y te perseguirán, y te alcanzarán hasta que perezcas; por cuanto no habrás atendido a la voz de Jehová tu Dios, para guardar sus mandamientos y sus estatutos, que él te mandó;
-Deuteronomy 28:46 y serán en ti por señal y por maravilla, y en tu descendencia para siempre.
-Deuteronomy 28:47 Por cuanto no serviste a Jehová tu Dios con alegría y con gozo de corazón, por la abundancia de todas las cosas,
-Deuteronomy 28:48 servirás, por tanto, a tus enemigos que enviare Jehová contra ti, con hambre y con sed y con desnudez, y con falta de todas las cosas; y él pondrá yugo de hierro sobre tu cuello, hasta destruirte.
-Deuteronomy 28:49 Jehová traerá contra ti una nación de lejos, del extremo de la tierra, que vuele como águila, nación cuya lengua no entiendas;
-Deuteronomy 28:50 gente fiera de rostro, que no tendrá respeto al anciano, ni perdonará al niño;
-Deuteronomy 28:51 y comerá el fruto de tu bestia y el fruto de tu tierra, hasta que perezcas; y no te dejará grano, ni mosto, ni aceite, ni la cría de tus vacas, ni los rebaños de tus ovejas, hasta destruirte.
-Deuteronomy 28:52 Pondrá sitio a todas tus ciudades, hasta que caigan tus muros altos y fortificados en que tú confías, en toda tu tierra; sitiará, pues, todas tus ciudades y toda la tierra que Jehová tu Dios te hubiere dado.
-Deuteronomy 28:53 Y comerás el fruto de tu vientre, la carne de tus hijos y de tus hijas que Jehová tu Dios te dio, en el sitio y en el apuro con que te angustiará tu enemigo.
-Deuteronomy 28:54 El hombre tierno en medio de ti, y el muy delicado, mirará con malos ojos a su hermano, y a la mujer de su seno, y al resto de sus hijos que le quedaren;
-Deuteronomy 28:55 para no dar a alguno de ellos de la carne de sus hijos, que él comiere, por no haberle quedado nada, en el asedio y en el apuro con que tu enemigo te oprimirá en todas tus ciudades.
-Deuteronomy 28:56 La tierna y la delicada entre vosotros, que nunca la planta de su pie intentaría sentar sobre la tierra, de pura delicadeza y ternura, mirará con malos ojos al marido de su seno, a su hijo, a su hija,
-Deuteronomy 28:57 al recién nacido que sale de entre sus pies, y a sus hijos que diere a luz; pues los comerá ocultamente, por la carencia de todo, en el asedio y en el apuro con que tu enemigo te oprimirá en tus ciudades.
-Deuteronomy 28:58 Si no cuidares de poner por obra todas las palabras de esta ley que están escritas en este libro, temiendo este nombre glorioso y temible: JEHOVÁ TU DIOS,
-Deuteronomy 28:59 entonces Jehová aumentará maravillosamente tus plagas y las plagas de tu descendencia, plagas grandes y permanentes, y enfermedades malignas y duraderas;
-Deuteronomy 28:60 y traerá sobre ti todos los males de Egipto, delante de los cuales temiste, y no te dejarán.
-Deuteronomy 28:61 Asimismo toda enfermedad y toda plaga que no está escrita en el libro de esta ley, Jehová la enviará sobre ti, hasta que seas destruido.
-Deuteronomy 28:62 Y quedaréis pocos en número, en lugar de haber sido como las estrellas del cielo en multitud, por cuanto no obedecisteis a la voz de Jehová tu Dios.
-Deuteronomy 28:63 Así como Jehová se gozaba en haceros bien y en multiplicaros, así se gozará Jehová en arruinaros y en destruiros; y seréis arrancados de sobre la tierra a la cual entráis para tomar posesión de ella.
-Deuteronomy 28:64 Y Jehová te esparcirá por todos los pueblos, desde un extremo de la tierra hasta el otro extremo; y allí servirás a dioses ajenos que no conociste tú ni tus padres, al leño y a la piedra.
-Deuteronomy 28:65 Y ni aun entre estas naciones descansarás, ni la planta de tu pie tendrá reposo; pues allí te dará Jehová corazón temeroso, y desfallecimiento de ojos, y tristeza de alma;
-Deuteronomy 28:66 y tendrás tu vida como algo que pende delante de ti, y estarás temeroso de noche y de día, y no tendrás seguridad de tu vida.
-Deuteronomy 28:67 Por la mañana dirás: ¡Quién diera que fuese la tarde! y a la tarde dirás: ¡Quién diera que fuese la mañana! por el miedo de tu corazón con que estarás amedrentado, y por lo que verán tus ojos.
-Deuteronomy 28:68 Y Jehová te hará volver a Egipto en naves, por el camino del cual te ha dicho: Nunca más volverás; y allí seréis vendidos a vuestros enemigos por esclavos y por esclavas, y no habrá quien os compre.
-Deuteronomy 29:1 Éstas son las palabras del pacto que Jehová mandó a Moisés que celebrase con los hijos de Israel en la tierra de Moab, además del pacto que concertó con ellos en Horeb.
-Deuteronomy 29:2 Moisés, pues, llamó a todo Israel, y les dijo: Vosotros habéis visto todo lo que Jehová ha hecho delante de vuestros ojos en la tierra de Egipto a Faraón y a todos sus siervos, y a toda su tierra,
-Deuteronomy 29:3 las grandes pruebas que vieron vuestros ojos, las señales y las grandes maravillas.
-Deuteronomy 29:4 Pero hasta hoy Jehová no os ha dado corazón para entender, ni ojos para ver, ni oídos para oír.
-Deuteronomy 29:5 Y yo os he traído cuarenta años en el desierto; vuestros vestidos no se han envejecido sobre vosotros, ni vuestro calzado se ha envejecido sobre vuestro pie.
-Deuteronomy 29:6 No habéis comido pan, ni bebisteis vino ni sidra; para que supierais que yo soy Jehová vuestro Dios.
-Deuteronomy 29:7 Y llegasteis a este lugar, y salieron Sehón rey de Hesbón y Og rey de Basán delante de nosotros para pelear, y los derrotamos;
-Deuteronomy 29:8 y tomamos su tierra, y la dimos por heredad a Rubén y a Gad y a la media tribu de Manasés.
-Deuteronomy 29:9 Guardaréis, pues, las palabras de este pacto, y las pondréis por obra, para que prosperéis en todo lo que hiciereis.
-Deuteronomy 29:10 Vosotros todos estáis hoy en presencia de Jehová vuestro Dios; los cabezas de vuestras tribus, vuestros ancianos y vuestros oficiales, todos los varones de Israel;
-Deuteronomy 29:11 vuestros niños, vuestras mujeres, y tus extranjeros que habitan en medio de tu campamento, desde el que corta tu leña hasta el que saca tu agua;
-Deuteronomy 29:12 para que entres en el pacto de Jehová tu Dios, y en su juramento, que Jehová tu Dios concierta hoy contigo,
-Deuteronomy 29:13 para confirmarte hoy como su pueblo, y para que él te sea a ti por Dios, de la manera que él te ha dicho, y como lo juró a tus padres Abraham, Isaac y Jacob.
-Deuteronomy 29:14 Y no solamente con vosotros hago yo este pacto y este juramento,
-Deuteronomy 29:15 sino con los que están aquí presentes hoy con nosotros delante de Jehová nuestro Dios, y con los que no están aquí hoy con nosotros.
-Deuteronomy 29:16 Porque vosotros sabéis cómo habitamos en la tierra de Egipto, y cómo hemos pasado por en medio de las naciones por las cuales habéis pasado;
-Deuteronomy 29:17 y habéis visto sus abominaciones y sus ídolos de madera y piedra, de plata y oro, que tienen consigo.
-Deuteronomy 29:18 No sea que haya entre vosotros varón o mujer, o familia o tribu, cuyo corazón se aparte hoy de Jehová nuestro Dios, para ir a servir a los dioses de esas naciones; no sea que haya en medio de vosotros raíz que produzca hiel y ajenjo,
-Deuteronomy 29:19 y suceda que al oír las palabras de esta maldición, él se bendiga en su corazón, diciendo: Tendré paz, aunque ande en la dureza de mi corazón, a fin de que con la embriaguez quite la sed.
-Deuteronomy 29:20 No querrá Jehová perdonarlo, sino que entonces humeará la ira de Jehová y su celo sobre el tal hombre, y se asentará sobre él toda maldición escrita en este libro, y Jehová borrará su nombre de debajo del cielo;
-Deuteronomy 29:21 y lo apartará Jehová de todas las tribus de Israel para mal, conforme a todas las maldiciones del pacto escrito en este libro de la ley.
-Deuteronomy 29:22 Y dirán las generaciones venideras, vuestros hijos que se levanten después de vosotros, y el extranjero que vendrá de lejanas tierras, cuando vieren las plagas de aquella tierra, y sus enfermedades de que Jehová la habrá hecho enfermar
-Deuteronomy 29:23 (azufre y sal, abrasada toda su tierra; no será sembrada, ni producirá, ni crecerá en ella hierba alguna, como sucedió en la destrucción de Sodoma y de Gomorra, de Adma y de Zeboim, las cuales Jehová destruyó en su furor y en su ira);
-Deuteronomy 29:24 más aún, todas las naciones dirán: ¿Por qué hizo esto Jehová a esta tierra? ¿Qué significa el ardor de esta gran ira?
-Deuteronomy 29:25 Y responderán: Por cuanto dejaron el pacto de Jehová el Dios de sus padres, que él concertó con ellos cuando los sacó de la tierra de Egipto,
-Deuteronomy 29:26 y fueron y sirvieron a dioses ajenos, y se inclinaron a ellos, dioses que no conocían, y que ninguna cosa les habían dado.
-Deuteronomy 29:27 Por tanto, se encendió la ira de Jehová contra esta tierra, para traer sobre ella todas las maldiciones escritas en este libro;
-Deuteronomy 29:28 y Jehová los desarraigó de su tierra con ira, con furor y con grande indignación, y los arrojó a otra tierra, como hoy se ve.
-Deuteronomy 29:29 Las cosas secretas pertenecen a Jehová nuestro Dios; mas las reveladas son para nosotros y para nuestros hijos para siempre, para que cumplamos todas las palabras de esta ley.
-Deuteronomy 30:1 Sucederá que cuando hubieren venido sobre ti todas estas cosas, la bendición y la maldición que he puesto delante de ti, y te arrepintieres en medio de todas las naciones adonde te hubiere arrojado Jehová tu Dios,
-Deuteronomy 30:2 y te convirtieres a Jehová tu Dios, y obedecieres a su voz conforme a todo lo que yo te mando hoy, tú y tus hijos, con todo tu corazón y con toda tu alma,
-Deuteronomy 30:3 entonces Jehová hará volver a tus cautivos, y tendrá misericordia de ti, y volverá a recogerte de entre todos los pueblos adonde te hubiere esparcido Jehová tu Dios.
-Deuteronomy 30:4 Aun cuando tus desterrados estuvieren en las partes más lejanas que hay debajo del cielo, de allí te recogerá Jehová tu Dios, y de allá te tomará;
-Deuteronomy 30:5 y te hará volver Jehová tu Dios a la tierra que heredaron tus padres, y será tuya; y te hará bien, y te multiplicará más que a tus padres.
-Deuteronomy 30:6 Y circuncidará Jehová tu Dios tu corazón, y el corazón de tu descendencia, para que ames a Jehová tu Dios con todo tu corazón y con toda tu alma, a fin de que vivas.
-Deuteronomy 30:7 Y pondrá Jehová tu Dios todas estas maldiciones sobre tus enemigos, y sobre tus aborrecedores que te persiguieron.
-Deuteronomy 30:8 Y tú volverás, y oirás la voz de Jehová, y pondrás por obra todos sus mandamientos que yo te ordeno hoy.
-Deuteronomy 30:9 Y te hará Jehová tu Dios abundar en toda obra de tus manos, en el fruto de tu vientre, en el fruto de tu bestia, y en el fruto de tu tierra, para bien; porque Jehová volverá a gozarse sobre ti para bien, de la manera que se gozó sobre tus padres,
-Deuteronomy 30:10 cuando obedecieres a la voz de Jehová tu Dios, para guardar sus mandamientos y sus estatutos escritos en este libro de la ley; cuando te convirtieres a Jehová tu Dios con todo tu corazón y con toda tu alma.
-Deuteronomy 30:11 Porque este mandamiento que yo te ordeno hoy no es demasiado difícil para ti, ni está lejos.
-Deuteronomy 30:12 No está en el cielo, para que digas: ¿Quién subirá por nosotros al cielo, y nos lo traerá y nos lo hará oír para que lo cumplamos?
-Deuteronomy 30:13 Ni está al otro lado del mar, para que digas: ¿Quién pasará por nosotros el mar, para que nos lo traiga y nos lo haga oír, a fin de que lo cumplamos?
-Deuteronomy 30:14 Porque muy cerca de ti está la palabra, en tu boca y en tu corazón, para que la cumplas.
-Deuteronomy 30:15 Mira, yo he puesto delante de ti hoy la vida y el bien, la muerte y el mal;
-Deuteronomy 30:16 porque yo te mando hoy que ames a Jehová tu Dios, que andes en sus caminos, y guardes sus mandamientos, sus estatutos y sus decretos, para que vivas y seas multiplicado, y Jehová tu Dios te bendiga en la tierra a la cual entras para tomar posesión de ella.
-Deuteronomy 30:17 Mas si tu corazón se apartare y no oyeres, y te dejares extraviar, y te inclinares a dioses ajenos y les sirvieres,
-Deuteronomy 30:18 yo os protesto hoy que de cierto pereceréis; no prolongaréis vuestros días sobre la tierra adonde vais, pasando el Jordán, para entrar en posesión de ella.
-Deuteronomy 30:19 A los cielos y a la tierra llamo por testigos hoy contra vosotros, que os he puesto delante la vida y la muerte, la bendición y la maldición; escoge, pues, la vida, para que vivas tú y tu descendencia;
-Deuteronomy 30:20 amando a Jehová tu Dios, atendiendo a su voz, y siguiéndole a él; porque él es vida para ti, y prolongación de tus días; a fin de que habites sobre la tierra que juró Jehová a tus padres, Abraham, Isaac y Jacob, que les había de dar.
-Deuteronomy 31:1 Fue Moisés y habló estas palabras a todo Israel,
-Deuteronomy 31:2 y les dijo: Este día soy de edad de ciento veinte años; no puedo más salir ni entrar; además de esto Jehová me ha dicho: No pasarás este Jordán.
-Deuteronomy 31:3 Jehová tu Dios, él pasa delante de ti; él destruirá a estas naciones delante de ti, y las heredarás; Josué será el que pasará delante de ti, como Jehová ha dicho.
-Deuteronomy 31:4 Y hará Jehová con ellos como hizo con Sehón y con Og, reyes de los amorreos, y con su tierra, a quienes destruyó.
-Deuteronomy 31:5 Y los entregará Jehová delante de vosotros, y haréis con ellos conforme a todo lo que os he mandado.
-Deuteronomy 31:6 Esforzaos y cobrad ánimo; no temáis, ni tengáis miedo de ellos, porque Jehová tu Dios es el que va contigo; no te dejará, ni te desamparará.
-Deuteronomy 31:7 Y llamó Moisés a Josué, y le dijo en presencia de todo Israel: Esfuérzate y anímate; porque tú entrarás con este pueblo a la tierra que juró Jehová a sus padres que les daría, y tú se la harás heredar.
-Deuteronomy 31:8 Y Jehová va delante de ti; él estará contigo, no te dejará, ni te desamparará; no temas ni te intimides.
-Deuteronomy 31:9 Y escribió Moisés esta ley, y la dio a los sacerdotes hijos de Leví, que llevaban el arca del pacto de Jehová, y a todos los ancianos de Israel.
-Deuteronomy 31:10 Y les mandó Moisés, diciendo: Al fin de cada siete años, en el año de la remisión, en la fiesta de los tabernáculos,
-Deuteronomy 31:11 cuando viniere todo Israel a presentarse delante de Jehová tu Dios en el lugar que él escogiere, leerás esta ley delante de todo Israel a oídos de ellos.
-Deuteronomy 31:12 Harás congregar al pueblo, varones y mujeres y niños, y tus extranjeros que estuvieren en tus ciudades, para que oigan y aprendan, y teman a Jehová vuestro Dios, y cuiden de cumplir todas las palabras de esta ley;
-Deuteronomy 31:13 y los hijos de ellos que no supieron, oigan, y aprendan a temer a Jehová vuestro Dios todos los días que viviereis sobre la tierra adonde vais, pasando el Jordán, para tomar posesión de ella.
-Deuteronomy 31:14 Y Jehová dijo a Moisés: He aquí se ha acercado el día de tu muerte; llama a Josué, y esperad en el tabernáculo de reunión para que yo le dé el cargo. Fueron, pues, Moisés y Josué, y esperaron en el tabernáculo de reunión.
-Deuteronomy 31:15 Y se apareció Jehová en el tabernáculo, en la columna de nube; y la columna de nube se puso sobre la puerta del tabernáculo.
-Deuteronomy 31:16 Y Jehová dijo a Moisés: He aquí, tú vas a dormir con tus padres, y este pueblo se levantará y fornicará tras los dioses ajenos de la tierra adonde va para estar en medio de ella; y me dejará, e invalidará mi pacto que he concertado con él;
-Deuteronomy 31:17 y se encenderá mi furor contra él en aquel día; y los abandonaré, y esconderé de ellos mi rostro, y serán consumidos; y vendrán sobre ellos muchos males y angustias, y dirán en aquel día: ¿No me han venido estos males porque no está mi Dios en medio de mí?
-Deuteronomy 31:18 Pero ciertamente yo esconderé mi rostro en aquel día, por todo el mal que ellos habrán hecho, por haberse vuelto a dioses ajenos.
-Deuteronomy 31:19 Ahora pues, escribíos este cántico, y enséñalo a los hijos de Israel; ponlo en boca de ellos, para que este cántico me sea por testigo contra los hijos de Israel.
-Deuteronomy 31:20 Porque yo les introduciré en la tierra que juré a sus padres, la cual fluye leche y miel; y comerán y se saciarán, y engordarán; y se volverán a dioses ajenos y les servirán, y me enojarán, e invalidarán mi pacto.
-Deuteronomy 31:21 Y cuando les vinieren muchos males y angustias, entonces este cántico responderá en su cara como testigo, pues será recordado por la boca de sus descendientes; porque yo conozco lo que se proponen de antemano, antes que los introduzca en la tierra que juré darles.
-Deuteronomy 31:22 Y Moisés escribió este cántico aquel día, y lo enseñó a los hijos de Israel.
-Deuteronomy 31:23 Y dio orden a Josué hijo de Nun, y dijo: Esfuérzate y anímate, pues tú introducirás a los hijos de Israel en la tierra que les juré, y yo estaré contigo.
-Deuteronomy 31:24 Y cuando acabó Moisés de escribir las palabras de esta ley en un libro hasta concluirse,
-Deuteronomy 31:25 dio órdenes Moisés a los levitas que llevaban el arca del pacto de Jehová, diciendo:
-Deuteronomy 31:26 Tomad este libro de la ley, y ponedlo al lado del arca del pacto de Jehová vuestro Dios, y esté allí por testigo contra ti.
-Deuteronomy 31:27 Porque yo conozco tu rebelión, y tu dura cerviz; he aquí que aun viviendo yo con vosotros hoy, sois rebeldes a Jehová; ¿cuánto más después que yo haya muerto?
-Deuteronomy 31:28 Congregad a mí todos los ancianos de vuestras tribus, y a vuestros oficiales, y hablaré en sus oídos estas palabras, y llamaré por testigos contra ellos a los cielos y a la tierra.
-Deuteronomy 31:29 Porque yo sé que después de mi muerte, ciertamente os corromperéis y os apartaréis del camino que os he mandado; y que os ha de venir mal en los postreros días, por haber hecho mal ante los ojos de Jehová, enojándole con la obra de vuestras manos.
-Deuteronomy 31:30 Entonces habló Moisés a oídos de toda la congregación de Israel las palabras de este cántico hasta acabarlo.
-Deuteronomy 32:1 Escuchad, cielos, y hablaré; Y oiga la tierra los dichos de mi boca.
-Deuteronomy 32:2 Goteará como la lluvia mi enseñanza; Destilará como el rocío mi razonamiento; Como la llovizna sobre la grama, Y como las gotas sobre la hierba;
-Deuteronomy 32:3 Porque el nombre de Jehová proclamaré. Engrandeced a nuestro Dios.
-Deuteronomy 32:4 Él es la Roca, cuya obra es perfecta, Porque todos sus caminos son rectitud; Dios de verdad, y sin ninguna iniquidad en él; Es justo y recto.
-Deuteronomy 32:5 La corrupción no es suya; de sus hijos es la mancha, Generación torcida y perversa.
-Deuteronomy 32:6 ¿Así pagáis a Jehová, Pueblo loco e ignorante? ¿No es él tu padre que te creó? Él te hizo y te estableció.
-Deuteronomy 32:7 Acuérdate de los tiempos antiguos, Considera los años de muchas generaciones; Pregunta a tu padre, y él te declarará; A tus ancianos, y ellos te dirán.
-Deuteronomy 32:8 Cuando el Altísimo hizo heredar a las naciones, Cuando hizo dividir a los hijos de los hombres, Estableció los límites de los pueblos Según el número de los hijos de Israel.
-Deuteronomy 32:9 Porque la porción de Jehová es su pueblo; Jacob la heredad que le tocó.
-Deuteronomy 32:10 Le halló en tierra de desierto, Y en yermo de horrible soledad; Lo trajo alrededor, lo instruyó, Lo guardó como a la niña de su ojo.
-Deuteronomy 32:11 Como el águila que excita su nidada, Revolotea sobre sus pollos, Extiende sus alas, los toma, Los lleva sobre sus plumas,
-Deuteronomy 32:12 Jehová solo le guió, Y con él no hubo dios extraño.
-Deuteronomy 32:13 Lo hizo subir sobre las alturas de la tierra, Y comió los frutos del campo, E hizo que chupase miel de la peña, Y aceite del duro pedernal;
-Deuteronomy 32:14 Mantequilla de vacas y leche de ovejas, Con grosura de corderos, Y carneros de Basán; también machos cabríos, Con lo mejor del trigo; Y de la sangre de la uva bebiste vino.
-Deuteronomy 32:15 Pero engordó Jesurún, y tiró coces (Engordaste, te cubriste de grasa); Entonces abandonó al Dios que lo hizo, Y menospreció la Roca de su salvación.
-Deuteronomy 32:16 Le despertaron a celos con los dioses ajenos; Lo provocaron a ira con abominaciones.
-Deuteronomy 32:17 Sacrificaron a los demonios, y no a Dios; A dioses que no habían conocido, A nuevos dioses venidos de cerca, Que no habían temido vuestros padres.
-Deuteronomy 32:18 De la Roca que te creó te olvidaste; Te has olvidado de Dios tu creador.
-Deuteronomy 32:19 Y lo vio Jehová, y se encendió en ira Por el menosprecio de sus hijos y de sus hijas.
-Deuteronomy 32:20 Y dijo: Esconderé de ellos mi rostro, Veré cuál será su fin; Porque son una generación perversa, Hijos infieles.
-Deuteronomy 32:21 Ellos me movieron a celos con lo que no es Dios; Me provocaron a ira con sus ídolos; Yo también los moveré a celos con un pueblo que no es pueblo, Los provocaré a ira con una nación insensata.
-Deuteronomy 32:22 Porque fuego se ha encendido en mi ira, Y arderá hasta las profundidades del Seol; Devorará la tierra y sus frutos, Y abrasará los fundamentos de los montes.
-Deuteronomy 32:23 Yo amontonaré males sobre ellos; Emplearé en ellos mis saetas.
-Deuteronomy 32:24 Consumidos serán de hambre, y devorados de fiebre ardiente Y de peste amarga; Diente de fieras enviaré también sobre ellos, Con veneno de serpientes de la tierra.
-Deuteronomy 32:25 Por fuera desolará la espada, Y dentro de las cámaras el espanto; Así al joven como a la doncella, Al niño de pecho como al hombre cano.
-Deuteronomy 32:26 Yo había dicho que los esparciría lejos, Que haría cesar de entre los hombres la memoria de ellos,
-Deuteronomy 32:27 De no haber temido la provocación del enemigo, No sea que se envanezcan sus adversarios, No sea que digan: Nuestra mano poderosa Ha hecho todo esto, y no Jehová.
-Deuteronomy 32:28 Porque son nación privada de consejos, Y no hay en ellos entendimiento.
-Deuteronomy 32:29 ¡Ojalá fueran sabios, que comprendieran esto, Y se dieran cuenta del fin que les espera!
-Deuteronomy 32:30 ¿Cómo podría perseguir uno a mil, Y dos hacer huir a diez mil, Si su Roca no los hubiese vendido, Y Jehová no los hubiera entregado?
-Deuteronomy 32:31 Porque la roca de ellos no es como nuestra Roca, Y aun nuestros enemigos son de ello jueces.
-Deuteronomy 32:32 Porque de la vid de Sodoma es la vid de ellos, Y de los campos de Gomorra; Las uvas de ellos son uvas ponzoñosas, Racimos muy amargos tienen.
-Deuteronomy 32:33 Veneno de serpientes es su vino, Y ponzoña cruel de áspides.
-Deuteronomy 32:34 ¿No tengo yo esto guardado conmigo, Sellado en mis tesoros?
-Deuteronomy 32:35 Mía es la venganza y la retribución; A su tiempo su pie resbalará, Porque el día de su aflicción está cercano, Y lo que les está preparado se apresura.
-Deuteronomy 32:36 Porque Jehová juzgará a su pueblo, Y por amor de sus siervos se arrepentirá, Cuando viere que la fuerza pereció, Y que no queda ni siervo ni libre.
-Deuteronomy 32:37 Y dirá: ¿Dónde están sus dioses, La roca en que se refugiaban;
-Deuteronomy 32:38 Que comían la grosura de sus sacrificios, Y bebían el vino de sus libaciones? Levántense, que os ayuden Y os defiendan.
-Deuteronomy 32:39 Ved ahora que yo, yo soy, Y no hay dioses conmigo; Yo hago morir, y yo hago vivir; Yo hiero, y yo sano; Y no hay quien pueda librar de mi mano.
-Deuteronomy 32:40 Porque yo alzaré a los cielos mi mano, Y diré: Vivo yo para siempre,
-Deuteronomy 32:41 Si afilare mi reluciente espada, Y echare mano del juicio, Yo tomaré venganza de mis enemigos, Y daré la retribución a los que me aborrecen.
-Deuteronomy 32:42 Embriagaré de sangre mis saetas, Y mi espada devorará carne; En la sangre de los muertos y de los cautivos, En las cabezas de larga cabellera del enemigo.
-Deuteronomy 32:43 Alabad, naciones, a su pueblo, Porque él vengará la sangre de sus siervos, Y tomará venganza de sus enemigos, Y hará expiación por la tierra de su pueblo.
-Deuteronomy 32:44 Vino Moisés y recitó todas las palabras de este cántico a oídos del pueblo, él y Josué hijo de Nun.
-Deuteronomy 32:45 Y acabó Moisés de recitar todas estas palabras a todo Israel;
-Deuteronomy 32:46 y les dijo: Aplicad vuestro corazón a todas las palabras que yo os testifico hoy, para que las mandéis a vuestros hijos, a fin de que cuiden de cumplir todas las palabras de esta ley.
-Deuteronomy 32:47 Porque no os es cosa vana; es vuestra vida, y por medio de esta ley haréis prolongar vuestros días sobre la tierra adonde vais, pasando el Jordán, para tomar posesión de ella.
-Deuteronomy 32:48 Y habló Jehová a Moisés aquel mismo día, diciendo:
-Deuteronomy 32:49 Sube a este monte de Abarim, al monte Nebo, situado en la tierra de Moab que está frente a Jericó, y mira la tierra de Canaán, que yo doy por heredad a los hijos de Israel;
-Deuteronomy 32:50 y muere en el monte al cual subes, y sé unido a tu pueblo, así como murió Aarón tu hermano en el monte Hor, y fue unido a su pueblo;
-Deuteronomy 32:51 por cuanto pecasteis contra mí en medio de los hijos de Israel en las aguas de Meriba de Cades, en el desierto de Zin; porque no me santificasteis en medio de los hijos de Israel.
-Deuteronomy 32:52 Verás, por tanto, delante de ti la tierra; mas no entrarás allá, a la tierra que doy a los hijos de Israel.
-Deuteronomy 33:1 Ésta es la bendición con la cual bendijo Moisés varón de Dios a los hijos de Israel, antes que muriese.
-Deuteronomy 33:2 Dijo: Jehová vino de Sinaí, Y de Seir les esclareció; Resplandeció desde el monte de Parán, Y vino de entre diez millares de santos, Con la ley de fuego a su mano derecha.
-Deuteronomy 33:3 Aun amó a su pueblo; Todos los consagrados a él estaban en su mano; Por tanto, ellos siguieron en tus pasos, Recibiendo dirección de ti,
-Deuteronomy 33:4 Cuando Moisés nos ordenó una ley, Como heredad a la congregación de Jacob.
-Deuteronomy 33:5 Y fue rey en Jesurún, Cuando se congregaron los jefes del pueblo Con las tribus de Israel.
-Deuteronomy 33:6 Viva Rubén, y no muera; Y no sean pocos sus varones.
-Deuteronomy 33:7 Y esta bendición profirió para Judá. Dijo así: Oye, oh Jehová, la voz de Judá, Y llévalo a su pueblo; Sus manos le basten, Y tú seas su ayuda contra sus enemigos.
-Deuteronomy 33:8 A Leví dijo: Tu Tumim y tu Urim sean para tu varón piadoso, A quien probaste en Masah, Con quien contendiste en las aguas de Meriba,
-Deuteronomy 33:9 Quien dijo de su padre y de su madre: Nunca los he visto; Y no reconoció a sus hermanos, Ni a sus hijos conoció; Pues ellos guardaron tus palabras, Y cumplieron tu pacto.
-Deuteronomy 33:10 Ellos enseñarán tus juicios a Jacob, Y tu ley a Israel; Pondrán el incienso delante de ti, Y el holocausto sobre tu altar.
-Deuteronomy 33:11 Bendice, oh Jehová, lo que hicieren, Y recibe con agrado la obra de sus manos; Hiere los lomos de sus enemigos, Y de los que lo aborrecieren, para que nunca se levanten.
-Deuteronomy 33:12 A Benjamín dijo: El amado de Jehová habitará confiado cerca de él; Lo cubrirá siempre, Y entre sus hombros morará.
-Deuteronomy 33:13 A José dijo: Bendita de Jehová sea tu tierra, Con lo mejor de los cielos, con el rocío, Y con el abismo que está abajo.
-Deuteronomy 33:14 Con los más escogidos frutos del sol, Con el rico producto de la luna,
-Deuteronomy 33:15 Con el fruto más fino de los montes antiguos, Con la abundancia de los collados eternos,
-Deuteronomy 33:16 Y con las mejores dádivas de la tierra y su plenitud; Y la gracia del que habitó en la zarza Venga sobre la cabeza de José, Y sobre la frente de aquel que es príncipe entre sus hermanos.
-Deuteronomy 33:17 Como el primogénito de su toro es su gloria, Y sus astas como astas de búfalo; Con ellas acorneará a los pueblos juntos hasta los fines de la tierra; Ellos son los diez millares de Efraín, Y ellos son los millares de Manasés.
-Deuteronomy 33:18 A Zabulón dijo: Alégrate, Zabulón, cuando salieres; Y tú, Isacar, en tus tiendas.
-Deuteronomy 33:19 Llamarán a los pueblos a su monte; Allí sacrificarán sacrificios de justicia, Por lo cual chuparán la abundancia de los mares, Y los tesoros escondidos de la arena.
-Deuteronomy 33:20 A Gad dijo: Bendito el que hizo ensanchar a Gad; Como león reposa, Y arrebata brazo y testa.
-Deuteronomy 33:21 Escoge lo mejor de la tierra para sí, Porque allí le fue reservada la porción del legislador. Y vino en la delantera del pueblo; Con Israel ejecutó los mandatos y los justos decretos de Jehová.
-Deuteronomy 33:22 A Dan dijo: Dan es cachorro de león Que salta desde Basán.
-Deuteronomy 33:23 A Neftalí dijo: Neftalí, saciado de favores, Y lleno de la bendición de Jehová, Posee el occidente y el sur.
-Deuteronomy 33:24 A Aser dijo: Bendito sobre los hijos sea Aser; Sea el amado de sus hermanos, Y moje en aceite su pie.
-Deuteronomy 33:25 Hierro y bronce serán tus cerrojos, Y como tus días serán tus fuerzas.
-Deuteronomy 33:26 No hay como el Dios de Jesurún, Quien cabalga sobre los cielos para tu ayuda, Y sobre las nubes con su grandeza.
-Deuteronomy 33:27 El eterno Dios es tu refugio, Y acá abajo los brazos eternos; Él echó de delante de ti al enemigo, Y dijo: Destruye.
-Deuteronomy 33:28 E Israel habitará confiado, la fuente de Jacob habitará sola En tierra de grano y de vino; También sus cielos destilarán rocío.
-Deuteronomy 33:29 Bienaventurado tú, oh Israel. ¿Quién como tú, Pueblo salvo por Jehová, Escudo de tu socorro, Y espada de tu triunfo? Así que tus enemigos serán humillados, Y tú hollarás sobre sus alturas.
-Deuteronomy 34:1 Subió Moisés de los campos de Moab al monte Nebo, a la cumbre del Pisga, que está enfrente de Jericó; y le mostró Jehová toda la tierra de Galaad hasta Dan,
-Deuteronomy 34:2 todo Neftalí, y la tierra de Efraín y de Manasés, toda la tierra de Judá hasta el mar occidental;
-Deuteronomy 34:3 el Neguev, y la llanura, la vega de Jericó, ciudad de las palmeras, hasta Zoar.
-Deuteronomy 34:4 Y le dijo Jehová: Ésta es la tierra de que juré a Abraham, a Isaac y a Jacob, diciendo: A tu descendencia la daré. Te he permitido verla con tus ojos, mas no pasarás allá.
-Deuteronomy 34:5 Y murió allí Moisés siervo de Jehová, en la tierra de Moab, conforme al dicho de Jehová.
-Deuteronomy 34:6 Y lo enterró en el valle, en la tierra de Moab, enfrente de Bet-peor; y ninguno conoce el lugar de su sepultura hasta hoy.
-Deuteronomy 34:7 Era Moisés de edad de ciento veinte años cuando murió; sus ojos nunca se oscurecieron, ni perdió su vigor.
-Deuteronomy 34:8 Y lloraron los hijos de Israel a Moisés en los campos de Moab treinta días; y así se cumplieron los días del lloro y del luto de Moisés.
-Deuteronomy 34:9 Y Josué hijo de Nun fue lleno del espíritu de sabiduría, porque Moisés había puesto sus manos sobre él; y los hijos de Israel le obedecieron, e hicieron como Jehová mandó a Moisés.
-Deuteronomy 34:10 Y nunca más se levantó profeta en Israel como Moisés, a quien haya conocido Jehová cara a cara;
-Deuteronomy 34:11 nadie como él en todas las señales y prodigios que Jehová le envió a hacer en tierra de Egipto, a Faraón y a todos sus siervos y a toda su tierra,
-Deuteronomy 34:12 y en el gran poder y en los hechos grandiosos y terribles que Moisés hizo a la vista de todo Israel.
+Deuteronomio 1:1 Estas son las palabras que Moisés habló a todo Israel al otro lado del río Jordán, en el desierto, en el Arabá, frente a Suf, entre Parán, Tofel, Labán, Hazerot y Dizahab.
+Deuteronomio 1:2 Hay once días de camino desde Horeb hasta Cades Barnea por el camino del monte Seir.
+Deuteronomio 1:3 En el año cuarenta, el mes undécimo, el primer día del mes, Moisés habló a los israelitas conforme a todo lo que el SEÑOR le había ordenado que les diera,
+Deuteronomio 1:4 después de haber derrotado a Sehón, rey de los amorreos, que habitaba en Hesbón, y a Og, rey de Basán, que habitaba en Astarot y en Edrei.
+Deuteronomio 1:5 Al otro lado del Jordán, en la tierra de Moab, Moisés comenzó a explicar esta ley:
+Deuteronomio 1:6 «El SEÑOR nuestro Dios nos habló en Horeb y dijo: “Ustedes han permanecido bastante tiempo en este monte.
+Deuteronomio 1:7 Vuélvanse; pónganse en marcha y vayan a la región montañosa de los amorreos, y a todos sus vecinos, en el Arabá, en la región montañosa, en el valle, en el Neguev, y por la costa del mar, la tierra de los cananeos y el Líbano, hasta el gran río, el río Éufrates.
+Deuteronomio 1:8 Miren, he puesto la tierra delante de ustedes. Entren y tomen posesión de la tierra que el SEÑOR juró dar a sus padres Abraham, Isaac y Jacob, a ellos y a su descendencia después de ellos”.
+Deuteronomio 1:9 »En aquel tiempo les hablé: “Yo solo no puedo llevar la carga de todos ustedes.
+Deuteronomio 1:10 El SEÑOR su Dios los ha multiplicado y hoy son como las estrellas del cielo en multitud.
+Deuteronomio 1:11 Que el SEÑOR, el Dios de sus padres, los multiplique mil veces más de lo que son y los bendiga, tal como les ha prometido.
+Deuteronomio 1:12 ¿Cómo puedo yo solo llevar el peso y la carga de ustedes y sus pleitos?
+Deuteronomio 1:13 Escojan de entre sus tribus hombres sabios, entendidos y expertos, y yo los nombraré como sus jefes”.
+Deuteronomio 1:14 Entonces ustedes me respondieron: “Bueno es que se haga lo que has dicho”.
+Deuteronomio 1:15 Así que tomé a los principales de sus tribus, hombres sabios y expertos, y los nombré como dirigentes suyos: jefes de mil, de cien, de cincuenta y de diez, y oficiales para sus tribus.
+Deuteronomio 1:16 »En aquella ocasión di órdenes a sus jueces y les dije: “Oigan los pleitos entre sus hermanos, y juzguen justamente entre un hombre y su hermano, o el extranjero que está con él.
+Deuteronomio 1:17 No mostrarán parcialidad en el juicio; lo mismo oirán al pequeño que al grande. No tendrán temor del hombre, porque el juicio es de Dios. El caso que sea muy difícil para ustedes, me lo traerán a mí, y yo lo oiré”.
+Deuteronomio 1:18 En aquella misma ocasión les mandé todas las cosas que debían hacer.
+Deuteronomio 1:19 »Entonces salimos de Horeb y pasamos por todo aquel vasto y terrible desierto que ustedes vieron, camino de la región montañosa de los amorreos, tal como el SEÑOR nuestro Dios nos había mandado, y llegamos a Cades Barnea.
+Deuteronomio 1:20 Y les dije: “Han llegado a la región montañosa de los amorreos que el SEÑOR nuestro Dios nos va a dar.
+Deuteronomio 1:21 Mira, Israel, el SEÑOR tu Dios ha puesto la tierra delante de ti; sube, toma posesión de ella, como el SEÑOR, el Dios de tus padres, te ha dicho. No temas ni te acobardes”.
+Deuteronomio 1:22 »Entonces todos ustedes se acercaron a mí, y dijeron: “Enviemos hombres delante de nosotros, que nos exploren la tierra, y nos traigan noticia del camino por el cual hemos de subir y de las ciudades a las cuales entraremos”.
+Deuteronomio 1:23 Me agradó el plan, y tomé a doce hombres de entre ustedes, un hombre por cada tribu.
+Deuteronomio 1:24 Ellos salieron y subieron a la región montañosa, y llegaron hasta el valle de Escol, y reconocieron la tierra.
+Deuteronomio 1:25 Entonces tomaron en sus manos del fruto de la tierra y nos lo trajeron; y nos dieron un informe y dijeron: “Es una tierra buena que el SEÑOR nuestro Dios nos da”.
+Deuteronomio 1:26 »Sin embargo, ustedes no quisieron subir, y se rebelaron contra el mandato del SEÑOR su Dios.
+Deuteronomio 1:27 Murmuraron en sus tiendas y dijeron: “Porque el SEÑOR nos aborrece, nos ha sacado de la tierra de Egipto para entregarnos en manos de los amorreos y destruirnos.
+Deuteronomio 1:28 ¿Adónde subiremos? Nuestros hermanos nos han atemorizado, diciendo: ‘El pueblo es más grande y más alto que nosotros; las ciudades son grandes y fortificadas hasta el cielo. Y además vimos allí a los hijos de Anac’”.
+Deuteronomio 1:29 »Entonces yo les dije: “No teman ni les tengan miedo.
+Deuteronomio 1:30 El SEÑOR su Dios, que va delante de ustedes, Él peleará por ustedes, así como lo hizo delante de sus ojos en Egipto
+Deuteronomio 1:31 y en el desierto, donde has visto cómo el SEÑOR tu Dios te llevó, como un hombre lleva a su hijo, por todo el camino que anduvieron hasta llegar a este lugar”.
+Deuteronomio 1:32 Pero con todo esto, ustedes no confiaron en el SEÑOR su Dios,
+Deuteronomio 1:33 que iba delante de ustedes en el camino para buscarles lugar donde acampar, con fuego de noche y nube de día, para mostrarles el camino por donde debían andar.
+Deuteronomio 1:34 »Entonces el SEÑOR oyó la voz de las palabras de ustedes, y se enojó y juró:
+Deuteronomio 1:35 “Ninguno de estos hombres, esta generación perversa, verá la buena tierra que juré dar a sus padres,
+Deuteronomio 1:36 excepto Caleb, hijo de Jefone; él la verá, y a él y a sus hijos daré la tierra que ha pisado, pues él ha seguido fielmente al SEÑOR”.
+Deuteronomio 1:37 El SEÑOR se enojó también contra mí por causa de ustedes y dijo: “Tampoco tú entrarás allá.
+Deuteronomio 1:38 Josué, hijo de Nun, que está delante de ti, él entrará allá; anímale, porque él hará que Israel la posea.
+Deuteronomio 1:39 Además, en cuanto a los pequeños, que ustedes dijeron que vendrían a ser presa, y sus hijos, que hoy no tienen conocimiento del bien ni del mal, entrarán allá, y a ellos les daré la tierra y ellos la poseerán.
+Deuteronomio 1:40 Pero ustedes, vuélvanse y vayan hacia el desierto por el camino del Mar Rojo”.
+Deuteronomio 1:41 »Entonces ustedes respondieron: “Hemos pecado contra el SEÑOR; nosotros subiremos y pelearemos tal como el SEÑOR nuestro Dios nos ha mandado”. Y cada uno de ustedes se puso sus armas de guerra, y pensaron que era fácil subir a la región montañosa.
+Deuteronomio 1:42 Pero el SEÑOR me dijo: “Diles: ‘No suban, ni peleen, pues Yo no estoy entre ustedes; para que no sean derrotados por sus enemigos’”.
+Deuteronomio 1:43 Así les hablé, pero no quisieron escuchar. Al contrario, se rebelaron contra el mandamiento del SEÑOR, y obraron con orgullo, y subieron a la región montañosa.
+Deuteronomio 1:44 Los amorreos que moraban en aquella región montañosa salieron contra ustedes, y los persiguieron como lo hacen las abejas, y los derrotaron desde Seir hasta Horma.
+Deuteronomio 1:45 Entonces volvieron y lloraron delante del SEÑOR, pero el SEÑOR no escuchó su voz, ni les hizo caso.
+Deuteronomio 1:46 Por eso ustedes permanecieron en Cades muchos días, los días que pasaron allí.
+Deuteronomio 2:1 »Después nos volvimos y salimos hacia el desierto por el camino del Mar Rojo, como el SEÑOR me había mandado, y por muchos días dimos vueltas al monte Seir.
+Deuteronomio 2:2 Entonces el SEÑOR me habló:
+Deuteronomio 2:3 “Ustedes han dado ya bastantes vueltas alrededor de este monte. Vuélvanse ahora hacia el norte,
+Deuteronomio 2:4 y da orden al pueblo, diciendo: ‘Ustedes van a pasar por el territorio de sus hermanos, los hijos de Esaú que habitan en Seir, y ellos les tendrán miedo. Así que tengan mucho cuidado;
+Deuteronomio 2:5 no los provoquen, porque no les daré nada de su tierra, ni siquiera la huella de un pie, porque a Esaú he dado el monte Seir por posesión.
+Deuteronomio 2:6 Les comprarán con dinero los alimentos para comer, y también con dinero comprarán de ellos agua para beber.
+Deuteronomio 2:7 Pues el SEÑOR tu Dios te ha bendecido en todo lo que has hecho; Él ha conocido tu peregrinar a través de este inmenso desierto. Por cuarenta años el SEÑOR tu Dios ha estado contigo; nada te ha faltado’”.
+Deuteronomio 2:8 »Pasamos, pues, de largo a nuestros hermanos, los hijos de Esaú que habitan en Seir, lejos del camino del Arabá, lejos de Elat y de Ezión Geber. Y nos volvimos, y pasamos por el camino del desierto de Moab.
+Deuteronomio 2:9 Entonces el SEÑOR me dijo: “No molestes a Moab, ni los provoques a la guerra, porque no te daré nada de su tierra por posesión, pues he dado Ar a los hijos de Lot por posesión.
+Deuteronomio 2:10 (Antes habitaban allí los emitas, un pueblo tan grande, numeroso y alto como los anaceos.
+Deuteronomio 2:11 Como los anaceos, ellos también son considerados gigantes, pero los moabitas los llaman emitas.
+Deuteronomio 2:12 Los horeos habitaban antes en Seir, pero los hijos de Esaú los desalojaron y los destruyeron delante de ellos, y se establecieron en su lugar, tal como Israel hizo con la tierra que el SEÑOR les dio en posesión).
+Deuteronomio 2:13 ”Levántense ahora, y crucen el torrente de Zered”, dijo el SEÑOR. Y cruzamos el torrente de Zered.
+Deuteronomio 2:14 El tiempo que nos llevó para venir de Cades Barnea, hasta que cruzamos el torrente de Zered, fue de treinta y ocho años; hasta que pereció toda la generación de los hombres de guerra de en medio del campamento, como el SEÑOR les había jurado.
+Deuteronomio 2:15 Además, la mano del SEÑOR fue contra ellos, para destruirlos de en medio del campamento, hasta que todos perecieron.
+Deuteronomio 2:16 »Cuando todos los hombres de guerra ya habían perecido de entre el pueblo,
+Deuteronomio 2:17 el SEÑOR me habló:
+Deuteronomio 2:18 “Tú cruzarás hoy por Ar la frontera de Moab.
+Deuteronomio 2:19 Y cuando llegues frente a los amonitas, no los molestes ni los provoques, porque no te daré en posesión nada de la tierra de los amonitas, pues se la he dado a los hijos de Lot por heredad”.
+Deuteronomio 2:20 (Esta región es también conocida como la tierra de los gigantes, porque antiguamente habitaban gigantes en ella, a los que los amonitas llaman zomzomeos,
+Deuteronomio 2:21 pueblo grande, numeroso y alto como los anaceos, pero que el SEÑOR destruyó delante de ellos. Y los amonitas los desalojaron y se establecieron en su lugar,
+Deuteronomio 2:22 tal como Dios hizo con los hijos de Esaú, que habitan en Seir, cuando destruyó a los horeos delante de ellos; y ellos los desalojaron, y se establecieron en su lugar hasta hoy.
+Deuteronomio 2:23 Y a los aveos que habitaban en aldeas hasta Gaza, los caftoreos, que salieron de Caftor, los destruyeron y se establecieron en su lugar).
+Deuteronomio 2:24 “Levántense; pónganse en marcha y pasen por el valle del Arnón. Mira, he entregado en tu mano a Sehón amorreo, rey de Hesbón, y a su tierra; comienza a tomar posesión y entra en batalla con él.
+Deuteronomio 2:25 Hoy comenzaré a infundir el espanto y terror tuyo sobre los pueblos debajo del cielo, quienes, al oír tu fama, temblarán y se angustiarán a causa de ti”.
+Deuteronomio 2:26 »Entonces, desde el desierto de Cademot, envié mensajeros a Sehón, rey de Hesbón, con palabras de paz, diciéndole:
+Deuteronomio 2:27 “Déjeme pasar por su tierra; solamente iré por el camino, sin apartarme ni a la derecha ni a la izquierda.
+Deuteronomio 2:28 Me venderá comestibles por dinero para que yo pueda comer, y me dará agua por dinero para que pueda beber; déjeme tan solo pasar a pie,
+Deuteronomio 2:29 tal como hicieron conmigo los hijos de Esaú que habitan en Seir y los moabitas que habitan en Ar, hasta que cruce el Jordán a la tierra que el SEÑOR nuestro Dios nos da”.
+Deuteronomio 2:30 Pero Sehón, rey de Hesbón, no quiso dejarnos pasar por su tierra porque el SEÑOR tu Dios endureció su espíritu e hizo obstinado su corazón, a fin de entregarlo en tus manos, como lo está hoy.
+Deuteronomio 2:31 Y el SEÑOR me dijo: “Mira, he comenzado a entregar a Sehón y su tierra en tus manos. Comienza a ocuparla para que poseas la tierra”.
+Deuteronomio 2:32 »Entonces Sehón salió con todo su pueblo a encontrarnos en batalla en Jahaza.
+Deuteronomio 2:33 Y el SEÑOR nuestro Dios lo entregó a nosotros; y lo derrotamos a él, a sus hijos y a todo su pueblo.
+Deuteronomio 2:34 En aquel tiempo tomamos todas sus ciudades, y exterminamos a hombres, mujeres y niños de cada ciudad. No dejamos ningún sobreviviente.
+Deuteronomio 2:35 Tomamos solamente como nuestro botín los animales y los despojos de las ciudades que habíamos capturado.
+Deuteronomio 2:36 Desde Aroer, que está a la orilla del valle del Arnón, y desde la ciudad que está en el valle, aun hasta Galaad, no hubo ciudad inaccesible para nosotros; el SEÑOR nuestro Dios nos las entregó todas.
+Deuteronomio 2:37 Pero, conforme a todo lo que el SEÑOR nuestro Dios había prohibido, no te acercaste a la tierra de los amonitas, a todo lo largo del arroyo Jaboc, ni a las ciudades del monte.
+Deuteronomio 3:1 »Volvimos, pues, y subimos por el camino de Basán, y Og, rey de Basán, nos salió al encuentro con todo su pueblo para pelear en Edrei.
+Deuteronomio 3:2 Pero el SEÑOR me dijo: “No le tengas miedo, porque Yo lo he entregado en tu mano a todo su pueblo y su tierra; y harás con él tal como hiciste con Sehón, rey de los amorreos, que habitaba en Hesbón”.
+Deuteronomio 3:3 Así que el SEÑOR nuestro Dios también entregó en nuestra mano a Og, rey de Basán, con todo su pueblo, y los herimos hasta que no quedaron sobrevivientes.
+Deuteronomio 3:4 Conquistamos en aquel entonces todas sus ciudades; no quedó ciudad que no les tomáramos: sesenta ciudades, toda la región de Argob, el reino de Og en Basán.
+Deuteronomio 3:5 Todas estas eran ciudades fortificadas con altas murallas, puertas y barras, aparte de muchos otros pueblos sin murallas.
+Deuteronomio 3:6 Las destruimos totalmente, como hicimos con Sehón, rey de Hesbón, exterminando a todos los hombres, mujeres y niños de cada ciudad.
+Deuteronomio 3:7 Pero tomamos como nuestro botín todos los animales y los despojos de las ciudades.
+Deuteronomio 3:8 »Tomamos entonces la tierra de mano de los dos reyes de los amorreos que estaban del otro lado del Jordán, desde el valle del Arnón hasta el monte Hermón
+Deuteronomio 3:9 (los sidonios llaman Sirión, a Hermón, y los amorreos lo llaman Senir):
+Deuteronomio 3:10 todas las ciudades de la meseta, todo Galaad y todo Basán, hasta Salca y Edrei, ciudades del reino de Og en Basán.
+Deuteronomio 3:11 Porque solo Og, rey de Basán, quedaba de los gigantes. Su cama era una cama de hierro; está en Rabá, ciudad de los amonitas. Tenía 9 codos (4 metros) de largo y 4 codos (1.6 metros) de ancho, según el codo de un hombre.
+Deuteronomio 3:12 »Tomamos posesión, pues, de esta tierra en aquel tiempo. Desde Aroer, que está en el valle del Arnón, y la mitad de la región montañosa de Galaad y sus ciudades, se la di a los rubenitas y a los gaditas.
+Deuteronomio 3:13 Y el resto de Galaad y todo Basán, el reino de Og, toda la región de Argob, se la di a la media tribu de Manasés. (En cuanto a todo Basán, se le llama la tierra de los gigantes.
+Deuteronomio 3:14 Jair, hijo de Manasés, tomó toda la región de Argob hasta la frontera con Gesur y Maaca, y la llamó, es decir a Basán, según su propio nombre, Havot Jair, como se llama hasta hoy).
+Deuteronomio 3:15 A Maquir le di Galaad.
+Deuteronomio 3:16 A los rubenitas y a los gaditas les di desde Galaad hasta el valle del Arnón, el medio del valle como frontera, hasta el arroyo Jaboc, frontera de los amonitas;
+Deuteronomio 3:17 también el Arabá, con el Jordán como frontera, desde el Cineret hasta el mar del Arabá, el Mar Salado, al pie de las laderas del Pisga al oriente.
+Deuteronomio 3:18 »En aquel tiempo yo les ordené a ustedes: “El SEÑOR su Dios les ha dado esta tierra para poseerla. Todos ustedes, hombres valientes, cruzarán armados delante de sus hermanos, los israelitas.
+Deuteronomio 3:19 Pero sus mujeres, sus pequeños y su ganado (yo sé que ustedes tienen mucho ganado) permanecerán en las ciudades que les he dado,
+Deuteronomio 3:20 hasta que el SEÑOR dé reposo a sus compatriotas como a ustedes, y ellos posean también la tierra que el SEÑOR, Dios de ustedes, les dará al otro lado del Jordán. Entonces podrán volver cada hombre a la posesión que les he dado”.
+Deuteronomio 3:21 »En aquel tiempo le ordené a Josué: “Tus ojos han visto todo lo que el SEÑOR, Dios de ustedes, ha hecho a estos dos reyes; así hará el SEÑOR a todos los reinos por los cuales vas a pasar.
+Deuteronomio 3:22 No les teman, porque el SEÑOR su Dios es el que pelea por ustedes”.
+Deuteronomio 3:23 »Yo también supliqué al SEÑOR en aquel tiempo:
+Deuteronomio 3:24 “Oh Señor DIOS, Tú has comenzado a mostrar a Tu siervo Tu grandeza y Tu mano poderosa; porque ¿qué dios hay en los cielos o en la tierra que pueda hacer obras y hechos tan poderosos como los Tuyos?
+Deuteronomio 3:25 Permíteme, te suplico, cruzar y ver la buena tierra que está al otro lado del Jordán, aquella buena región montañosa y el Líbano”.
+Deuteronomio 3:26 »Pero el SEÑOR se enojó conmigo por causa de ustedes, y no me escuchó; y el SEÑOR me dijo: “¡Basta! No me hables más de esto.
+Deuteronomio 3:27 Sube a la cumbre del monte Pisga y alza tus ojos al occidente, al norte, al sur y al oriente, y mírala con tus propios ojos, porque tú no cruzarás este Jordán.
+Deuteronomio 3:28 Pero encarga a Josué, y anímalo y fortalécelo, porque él pasará a la cabeza de este pueblo, y él les dará por heredad la tierra que tú verás”.
+Deuteronomio 3:29 Así que nos quedamos en el valle frente a Bet Peor.
+Deuteronomio 4:1 »Ahora pues, oh Israel, escucha los estatutos y los decretos que yo les enseño para que los cumplan, a fin de que vivan y entren a tomar posesión de la tierra que el SEÑOR, el Dios de sus padres, les da.
+Deuteronomio 4:2 Ustedes no añadirán nada a la palabra que yo les mando, ni quitarán nada de ella, para que guarden los mandamientos del SEÑOR su Dios que yo les mando.
+Deuteronomio 4:3 Sus ojos han visto lo que el SEÑOR hizo en el caso de Baal Peor, pues a todo hombre que siguió a Baal Peor, el SEÑOR, su Dios lo destruyó de en medio de ti.
+Deuteronomio 4:4 Pero ustedes, que permanecieron fieles al SEÑOR su Dios, todos están vivos hoy.
+Deuteronomio 4:5 »Miren, yo les he enseñado estatutos y decretos tal como el SEÑOR mi Dios me ordenó, para que así los cumplan en medio de la tierra en que van a entrar para poseerla.
+Deuteronomio 4:6 Así que guárdenlos y pónganlos por obra, porque esta será su sabiduría y su inteligencia ante los ojos de los pueblos que al escuchar todos estos estatutos, dirán: “Ciertamente esta gran nación es un pueblo sabio e inteligente”.
+Deuteronomio 4:7 Porque, ¿qué nación grande hay que tenga un dios tan cerca de ella como está el SEÑOR nuestro Dios siempre que lo invocamos?
+Deuteronomio 4:8 ¿O qué nación grande hay que tenga estatutos y decretos tan justos como toda esta ley que hoy pongo delante de ustedes?
+Deuteronomio 4:9 »Por tanto, cuídate y guarda tu alma con diligencia, para que no te olvides de las cosas que tus ojos han visto, y no se aparten de tu corazón todos los días de tu vida; sino que las hagas saber a tus hijos y a tus nietos.
+Deuteronomio 4:10 Recuerda el día que estuviste delante del SEÑOR tu Dios en Horeb, cuando el SEÑOR me dijo: “Reúneme el pueblo para que Yo les haga oír Mis palabras, a fin de que aprendan a temerme todos los días que vivan sobre la tierra y las enseñen a sus hijos”.
+Deuteronomio 4:11 Ustedes se acercaron, pues, y permanecieron al pie del monte, y el monte ardía en fuego hasta el mismo cielo: oscuridad, nube y densas tinieblas.
+Deuteronomio 4:12 »Entonces el SEÑOR les habló de en medio del fuego; oyeron su voz, solo la voz, pero no vieron figura alguna.
+Deuteronomio 4:13 Y Él les declaró Su pacto, el cual les mandó poner por obra: esto es, los Diez Mandamientos, y los escribió en dos tablas de piedra.
+Deuteronomio 4:14 El SEÑOR me ordenó en aquella ocasión que les enseñara estatutos y decretos, a fin de que los cumplieran en la tierra a la cual van a entrar para poseerla.
+Deuteronomio 4:15 »Así que tengan mucho cuidado, ya que no vieron ninguna figura el día en que el SEÑOR les habló en Horeb de en medio del fuego;
+Deuteronomio 4:16 no sea que se corrompan y hagan para ustedes una imagen tallada semejante a cualquier figura: semejanza de varón o de hembra,
+Deuteronomio 4:17 semejanza de cualquier animal que está en la tierra, semejanza de cualquier ave que vuela en el cielo,
+Deuteronomio 4:18 semejanza de cualquier animal que se arrastra sobre la tierra, semejanza de cualquier pez que hay en las aguas debajo de la tierra.
+Deuteronomio 4:19 Y ten cuidado, no sea que levantes los ojos al cielo y veas el sol, la luna, las estrellas y todo el ejército del cielo, y seas impulsado a adorarlos y servirlos, cosas que el SEÑOR tu Dios ha concedido a todos los pueblos debajo de todos los cielos.
+Deuteronomio 4:20 Pero a ustedes el SEÑOR los ha tomado y los ha sacado del horno de hierro, de Egipto, para que fueran pueblo de Su heredad como lo son ahora.
+Deuteronomio 4:21 »Y el SEÑOR se enojó conmigo por causa de ustedes, y juró que yo no pasaría el Jordán, ni entraría en la buena tierra que el SEÑOR tu Dios te da por heredad.
+Deuteronomio 4:22 Porque yo moriré en esta tierra, no cruzaré el Jordán; pero ustedes pasarán y tomarán posesión de esta buena tierra.
+Deuteronomio 4:23 Tengan cuidado, pues, no sea que olviden el pacto que el SEÑOR su Dios hizo con ustedes, y se hagan imagen tallada en forma de cualquier cosa que el SEÑOR tu Dios te ha prohibido.
+Deuteronomio 4:24 Porque el SEÑOR tu Dios es fuego consumidor, un Dios celoso.
+Deuteronomio 4:25 »Cuando hayan engendrado hijos y nietos, y hayan permanecido largo tiempo en la tierra, y se corrompan y hagan un ídolo en forma de cualquier cosa, y hagan lo que es malo ante los ojos del SEÑOR su Dios para provocarlo a ira,
+Deuteronomio 4:26 hoy pongo por testigo contra ustedes al cielo y a la tierra, que pronto serán totalmente exterminados de la tierra donde van a pasar el Jordán para poseerla. No vivirán por mucho tiempo en ella, sino que serán totalmente destruidos.
+Deuteronomio 4:27 El SEÑOR los dispersará entre los pueblos, y quedarán pocos en número entre las naciones adonde el SEÑOR los llevará.
+Deuteronomio 4:28 Allí ustedes servirán a dioses hechos por manos de hombre, de madera y de piedra, que no ven, ni oyen, ni comen, ni huelen.
+Deuteronomio 4:29 »Pero desde allí buscarás al SEÑOR tu Dios, y lo hallarás si lo buscas con todo tu corazón y con toda tu alma.
+Deuteronomio 4:30 En los postreros días, cuando estés angustiado y todas esas cosas te sobrevengan, volverás al SEÑOR tu Dios y escucharás Su voz.
+Deuteronomio 4:31 Pues el SEÑOR tu Dios es Dios compasivo; no te abandonará, ni te destruirá, ni olvidará el pacto que Él juró a tus padres.
+Deuteronomio 4:32 »Ciertamente, pregunta ahora acerca de los tiempos pasados que fueron antes de ti, desde el día en que Dios creó al hombre sobre la tierra; averigua desde un extremo de los cielos hasta el otro. ¿Se ha hecho cosa tan grande como esta, o se ha oído algo como esto?
+Deuteronomio 4:33 ¿Ha oído pueblo alguno la voz de Dios, hablando de en medio del fuego, como tú la has oído, y ha sobrevivido?
+Deuteronomio 4:34 ¿O ha intentado dios alguno tomar para sí una nación de en medio de otra nación, con pruebas, con señales y maravillas, con guerra y mano fuerte y con brazo extendido y hechos aterradores, como el SEÑOR tu Dios hizo por ti en Egipto delante de tus ojos?
+Deuteronomio 4:35 A ti te fue mostrado, para que supieras que el SEÑOR, Él es Dios; ningún otro hay fuera de Él.
+Deuteronomio 4:36 »Desde los cielos el SEÑOR te hizo oír Su voz para disciplinarte; y sobre la tierra te hizo ver Su gran fuego, y oíste Sus palabras de en medio del fuego.
+Deuteronomio 4:37 Porque Él amó a tus padres, por eso escogió a su descendencia después de ellos; y personalmente te sacó de Egipto con Su gran poder,
+Deuteronomio 4:38 expulsando delante de ti naciones más grandes y más poderosas que tú, para hacerte entrar y darte la tierra de ellos por heredad, como sucede hoy.
+Deuteronomio 4:39 Por tanto, reconoce hoy y reflexiona en tu corazón, que el SEÑOR es Dios arriba en los cielos y abajo en la tierra; no hay otro.
+Deuteronomio 4:40 Así pues, guardarás Sus estatutos y Sus mandamientos que yo te ordeno hoy, a fin de que te vaya bien a ti y a tus hijos después de ti, y para que prolongues tus días sobre la tierra que el SEÑOR tu Dios te da para siempre».
+Deuteronomio 4:41 Entonces Moisés designó tres ciudades al otro lado del Jordán, al oriente,
+Deuteronomio 4:42 para que huyera allí el que involuntariamente hubiera matado a su vecino sin haber tenido enemistad contra él en el pasado; y huyendo a una de estas ciudades, salvara su vida:
+Deuteronomio 4:43 Beser en el desierto, sobre la meseta, para los rubenitas, Ramot en Galaad para los gaditas, y Golán en Basán para los de Manasés.
+Deuteronomio 4:44 Esta es, pues, la ley que Moisés puso delante de los israelitas.
+Deuteronomio 4:45 Estos son los testimonios, los estatutos y las ordenanzas que Moisés dio a los israelitas cuando salieron de Egipto,
+Deuteronomio 4:46 al otro lado del Jordán en el valle frente a Bet Peor, en la tierra de Sehón, rey de los amorreos, que habitaba en Hesbón, a quien Moisés y los israelitas derrotaron cuando salieron de Egipto.
+Deuteronomio 4:47 Y tomaron posesión de su tierra y de la tierra de Og, rey de Basán, los dos reyes de los amorreos que estaban al otro lado del Jordán hacia el oriente,
+Deuteronomio 4:48 desde Aroer, que está a la orilla del valle del Arnón, hasta el monte Sión, es decir, Hermón,
+Deuteronomio 4:49 con todo el Arabá al otro lado del Jordán, al oriente, hasta el mar del Arabá, al pie de las laderas del monte Pisga.
+Deuteronomio 5:1 Entonces llamó Moisés a todo Israel y les dijo: «Oye, oh Israel, los estatutos y ordenanzas que hablo hoy a oídos de ustedes, para que los aprendan y pongan por obra.
+Deuteronomio 5:2 El SEÑOR nuestro Dios hizo un pacto con nosotros en Horeb.
+Deuteronomio 5:3 No hizo el SEÑOR este pacto con nuestros padres, sino con nosotros, con todos aquellos de nosotros que estamos vivos aquí hoy.
+Deuteronomio 5:4 Cara a cara el SEÑOR habló con ustedes en el monte de en medio del fuego,
+Deuteronomio 5:5 mientras yo estaba en aquella ocasión entre el SEÑOR y ustedes para declararles la palabra del SEÑOR, porque temían a causa del fuego y no subieron al monte. Y Él dijo:
+Deuteronomio 5:6 “Yo soy el SEÑOR tu Dios, que te saqué de la tierra de Egipto, de la casa de servidumbre.
+Deuteronomio 5:7 ”No tendrás otros dioses delante de Mí.
+Deuteronomio 5:8 ”No te harás ningún ídolo, ni semejanza alguna de lo que está arriba en el cielo, ni abajo en la tierra, ni en las aguas debajo de la tierra.
+Deuteronomio 5:9 No los adorarás ni los servirás; porque Yo, el SEÑOR tu Dios, soy Dios celoso, que castigo la iniquidad de los padres sobre los hijos, y sobre la tercera y la cuarta generación de los que me aborrecen,
+Deuteronomio 5:10 pero que muestro misericordia a millares, a los que me aman y guardan Mis mandamientos.
+Deuteronomio 5:11 ”No tomarás en vano el nombre del SEÑOR tu Dios, porque el SEÑOR no tendrá por inocente a quien tome Su nombre en vano.
+Deuteronomio 5:12 ”Guardarás el día de reposo para santificarlo, como el SEÑOR tu Dios lo ha mandado.
+Deuteronomio 5:13 Seis días trabajarás y harás todo tu trabajo,
+Deuteronomio 5:14 mas el séptimo día es día de reposo para el SEÑOR tu Dios; no harás en él ningún trabajo, tú, ni tu hijo, ni tu hija, ni tu siervo, ni tu sierva, ni tu buey, ni tu asno, ni ninguno de tus animales, ni el extranjero que está contigo, para que tu siervo y tu sierva también descansen como tú.
+Deuteronomio 5:15 Acuérdate que fuiste esclavo en la tierra de Egipto, y que el SEÑOR tu Dios te sacó de allí con mano fuerte y brazo extendido; por tanto, el SEÑOR tu Dios te ha ordenado que guardes el día de reposo.
+Deuteronomio 5:16 ”Honra a tu padre y a tu madre, como el SEÑOR tu Dios te ha mandado, para que tus días sean prolongados y te vaya bien en la tierra que el SEÑOR tu Dios te da.
+Deuteronomio 5:17 ”No matarás.
+Deuteronomio 5:18 ”No cometerás adulterio.
+Deuteronomio 5:19 ”No hurtarás.
+Deuteronomio 5:20 ”No darás falso testimonio contra tu prójimo.
+Deuteronomio 5:21 ”No codiciarás la mujer de tu prójimo, y no desearás la casa de tu prójimo, ni su campo, ni su siervo, ni su sierva, ni su buey, ni su asno, ni nada que sea de tu prójimo”.
+Deuteronomio 5:22 »Estas palabras habló el SEÑOR a toda la asamblea de ustedes en el monte, de en medio del fuego, de la nube y de las densas tinieblas con una gran voz, y no añadió más. Y las escribió en dos tablas de piedra y me las dio.
+Deuteronomio 5:23 Y cuando ustedes oyeron la voz de en medio de las tinieblas, mientras el monte ardía con fuego, se acercaron a mí, todos los jefes de sus tribus y sus ancianos,
+Deuteronomio 5:24 y dijeron: “El SEÑOR nuestro Dios nos ha mostrado Su gloria y Su grandeza, y hemos oído Su voz de en medio del fuego; hoy hemos visto que Dios habla con el hombre, y este aún vive.
+Deuteronomio 5:25 Ahora pues, ¿por qué hemos de morir? Porque este gran fuego nos consumirá; si seguimos oyendo la voz del SEÑOR nuestro Dios, entonces moriremos.
+Deuteronomio 5:26 Porque, ¿qué hombre hay que haya oído la voz del Dios vivo hablando de en medio del fuego, como nosotros, y haya sobrevivido?
+Deuteronomio 5:27 Acércate tú, y oye lo que el SEÑOR nuestro Dios dice; entonces dinos todo lo que el SEÑOR nuestro Dios te diga, y lo escucharemos y lo haremos”.
+Deuteronomio 5:28 »El SEÑOR oyó la voz de las palabras de ustedes cuando me hablaron y el SEÑOR me dijo: “He oído la voz de las palabras de este pueblo, que ellos te han hablado. Han hecho bien en todo lo que han dicho.
+Deuteronomio 5:29 ¡Oh, si ellos tuvieran tal corazón que me temieran, y guardaran siempre todos Mis mandamientos, para que les fuera bien a ellos y a sus hijos para siempre!
+Deuteronomio 5:30 Ve y diles: ‘Vuelvan a sus tiendas’.
+Deuteronomio 5:31 Pero tú, quédate aquí conmigo, para que Yo te diga todos los mandamientos, los estatutos y los decretos que les enseñarás, a fin de que los cumplan en la tierra que les doy en posesión”.
+Deuteronomio 5:32 Así que cuiden de hacer tal como el SEÑOR su Dios les ha mandado; no se desvíen a la derecha ni a la izquierda.
+Deuteronomio 5:33 Anden en todo el camino que el SEÑOR su Dios les ha mandado, a fin de que vivan y les vaya bien, y prolonguen sus días en la tierra que van a poseer.
+Deuteronomio 6:1 »Estos, pues, son los mandamientos, los estatutos y los decretos que el SEÑOR su Dios me ha mandado que les enseñe, para que los cumplan en la tierra que van a poseer,
+Deuteronomio 6:2 para que temas al SEÑOR tu Dios, guardando todos Sus estatutos y Sus mandamientos que yo te ordeno, tú y tus hijos y tus nietos, todos los días de tu vida, para que tus días sean prolongados.
+Deuteronomio 6:3 Escucha, pues, oh Israel, y cuida de hacerlo, para que te vaya bien y te multipliques en gran manera, en una tierra que mana leche y miel, tal como el SEÑOR, el Dios de tus padres, te ha prometido.
+Deuteronomio 6:4 »Escucha, oh Israel, el SEÑOR es nuestro Dios, el SEÑOR uno es.
+Deuteronomio 6:5 Amarás al SEÑOR tu Dios con todo tu corazón, con toda tu alma y con toda tu fuerza.
+Deuteronomio 6:6 Estas palabras que yo te mando hoy, estarán sobre tu corazón.
+Deuteronomio 6:7 Las enseñarás diligentemente a tus hijos, y hablarás de ellas cuando te sientes en tu casa y cuando andes por el camino, cuando te acuestes y cuando te levantes.
+Deuteronomio 6:8 Las atarás como una señal a tu mano, y serán por insignias entre tus ojos.
+Deuteronomio 6:9 Las escribirás en los postes de tu casa y en tus puertas.
+Deuteronomio 6:10 »Y sucederá que cuando el SEÑOR tu Dios te traiga a la tierra que juró a tus padres Abraham, Isaac y Jacob, que te daría, una tierra con grandes y espléndidas ciudades que tú no edificaste,
+Deuteronomio 6:11 y casas llenas de toda buena cosa que tú no llenaste, y cisternas cavadas que tú no cavaste, viñas y olivos que tú no plantaste, y comas y te sacies;
+Deuteronomio 6:12 entonces ten cuidado, no sea que te olvides del SEÑOR que te sacó de la tierra de Egipto, de la casa de servidumbre.
+Deuteronomio 6:13 Temerás solo al SEÑOR tu Dios; y a Él adorarás y jurarás por Su nombre.
+Deuteronomio 6:14 No seguirán a otros dioses, a ninguno de los dioses de los pueblos que los rodean,
+Deuteronomio 6:15 porque el SEÑOR tu Dios, que está en medio de ti, es Dios celoso, no sea que se encienda la ira del SEÑOR tu Dios contra ti, y Él te borre de la superficie de la tierra.
+Deuteronomio 6:16 »No pondrán a prueba al SEÑOR su Dios, como lo hicieron en Masah.
+Deuteronomio 6:17 Ustedes deben guardar diligentemente los mandamientos del SEÑOR su Dios, y Sus testimonios y Sus estatutos que te ha mandado.
+Deuteronomio 6:18 Harás lo que es justo y bueno a los ojos del SEÑOR, para que te vaya bien, y para que entres y tomes posesión de la buena tierra que el SEÑOR juró que daría a tus padres,
+Deuteronomio 6:19 echando fuera a todos tus enemigos de delante de ti, como el SEÑOR ha dicho.
+Deuteronomio 6:20 »Cuando en el futuro tu hijo te pregunte: “¿Qué significan los testimonios y los estatutos y los decretos que el SEÑOR nuestro Dios les ha mandado?”,
+Deuteronomio 6:21 entonces dirás a tu hijo: “Nosotros éramos esclavos de Faraón en Egipto, y el SEÑOR nos sacó de Egipto con mano fuerte.
+Deuteronomio 6:22 Además, el SEÑOR hizo grandes y temibles señales y maravillas delante de nuestros ojos contra Egipto, contra Faraón y contra toda su casa;
+Deuteronomio 6:23 y nos sacó de allí para traernos y darnos la tierra que Él había jurado dar a nuestros padres”.
+Deuteronomio 6:24 Así que el SEÑOR nos mandó que observáramos todos estos estatutos, y que temiéramos siempre al SEÑOR nuestro Dios para nuestro bien y para preservarnos la vida, como hasta hoy.
+Deuteronomio 6:25 Y habrá justicia para nosotros si cuidamos de observar todos estos mandamientos delante del SEÑOR nuestro Dios, tal como Él nos ha mandado.
+Deuteronomio 7:1 »Cuando el SEÑOR tu Dios te haya introducido en la tierra donde vas a entrar para poseerla y haya echado de delante de ti a muchas naciones: los hititas, los gergeseos, los amorreos, los cananeos, los ferezeos, los heveos y los jebuseos, siete naciones más grandes y más poderosas que tú,
+Deuteronomio 7:2 y cuando el SEÑOR tu Dios los haya entregado delante de ti, y los hayas derrotado, los destruirás por completo. No harás alianza con ellos ni te apiadarás de ellos.
+Deuteronomio 7:3 No contraerás matrimonio con ellos; no darás tus hijas a sus hijos, ni tomarás sus hijas para tus hijos.
+Deuteronomio 7:4 Porque ellos apartarán a tus hijos de seguirme para servir a otros dioses; entonces la ira del SEÑOR se encenderá contra ti, y Él pronto te destruirá.
+Deuteronomio 7:5 Pero así harán ustedes con ellos: derribarán sus altares, destruirán sus pilares sagrados, y cortarán sus imágenes de Asera, y quemarán a fuego sus imágenes talladas.
+Deuteronomio 7:6 »Porque tú eres pueblo santo para el SEÑOR tu Dios; el SEÑOR tu Dios te ha escogido para ser pueblo Suyo de entre todos los pueblos que están sobre la superficie de la tierra.
+Deuteronomio 7:7 El SEÑOR no puso Su amor en ustedes ni los escogió por ser ustedes más numerosos que otro pueblo, pues eran el más pequeño de todos los pueblos;
+Deuteronomio 7:8 mas porque el SEÑOR los amó y guardó el juramento que hizo a sus padres, el SEÑOR los sacó con mano fuerte y los redimió de casa de servidumbre, de la mano de Faraón, rey de Egipto.
+Deuteronomio 7:9 Reconoce, pues, que el SEÑOR tu Dios es Dios, el Dios fiel, que guarda Su pacto y Su misericordia hasta mil generaciones con aquellos que lo aman y guardan Sus mandamientos;
+Deuteronomio 7:10 pero al que lo odia, le da el pago en su misma cara, destruyéndolo; y no se tarda en castigar al que lo odia, en su misma cara le dará el pago.
+Deuteronomio 7:11 Guarda, por tanto, el mandamiento y los estatutos y los decretos que yo te mando hoy, para cumplirlos.
+Deuteronomio 7:12 »Entonces sucederá, que porque escuchas estos decretos y los guardas y los cumples, el SEÑOR tu Dios guardará Su pacto contigo y Su misericordia que juró a tus padres.
+Deuteronomio 7:13 Te amará, te bendecirá y te multiplicará; también bendecirá el fruto de tu vientre y el fruto de tu tierra, tu cereal, tu vino nuevo, tu aceite, el aumento de tu ganado y las crías de tu rebaño en la tierra que Él juró a tus padres que te daría.
+Deuteronomio 7:14 Bendito serás más que todos los pueblos; no habrá varón ni hembra estéril en ti, ni en tu ganado.
+Deuteronomio 7:15 Y el SEÑOR apartará de ti toda enfermedad; y no pondrá sobre ti ninguna de las enfermedades malignas de Egipto que has conocido, sino que las pondrá sobre los que te odian.
+Deuteronomio 7:16 Destruirás a todos los pueblos que el SEÑOR tu Dios te entregue; tu ojo no tendrá piedad de ellos; tampoco servirás a sus dioses, porque esto sería un tropiezo para ti.
+Deuteronomio 7:17 »Si dijeras en tu corazón: “Estas naciones son más poderosas que yo, ¿cómo podré desposeerlas?”.
+Deuteronomio 7:18 No tengas temor de ellas; recuerda bien lo que el SEÑOR tu Dios hizo a Faraón y a todo Egipto:
+Deuteronomio 7:19 las grandes pruebas que tus ojos vieron, las señales y maravillas, y la mano poderosa y el brazo extendido con el cual el SEÑOR tu Dios te sacó. Así el SEÑOR tu Dios hará con todos los pueblos a los cuales temes.
+Deuteronomio 7:20 Además, el SEÑOR tu Dios enviará la avispa contra ellos, hasta que perezcan los que queden y se escondan de ti.
+Deuteronomio 7:21 No te espantes de ellos, porque en medio de ti está el SEÑOR tu Dios, Dios grande y temible.
+Deuteronomio 7:22 »El SEÑOR tu Dios echará estas naciones de delante de ti poco a poco; no podrás acabar con ellas rápidamente, no sea que las fieras del campo lleguen a ser demasiado numerosas para ti.
+Deuteronomio 7:23 Pero el SEÑOR tu Dios las entregará delante de ti, y producirá entre ellas gran confusión hasta que perezcan.
+Deuteronomio 7:24 Entregará en tus manos a sus reyes de modo que harás perecer sus nombres de debajo del cielo; ningún hombre podrá hacerte frente, hasta que tú los hayas destruido a todos.
+Deuteronomio 7:25 Quemarás a fuego las esculturas de sus dioses; no codiciarás la plata ni el oro que las recubren, ni lo tomarás para ti, no sea que por ello caigas en un lazo, porque es abominación al SEÑOR tu Dios.
+Deuteronomio 7:26 No traerás cosa abominable a tu casa, pues serás anatema como ella; ciertamente la aborrecerás y la abominarás, pues es anatema.
+Deuteronomio 8:1 »Todos los mandamientos que yo te ordeno hoy, tendrán cuidado de ponerlos por obra, a fin de que vivan y se multipliquen, y entren y tomen posesión de la tierra que el SEÑOR juró dar a sus padres.
+Deuteronomio 8:2 Y te acordarás de todo el camino por donde el SEÑOR tu Dios te ha traído por el desierto durante estos cuarenta años, para humillarte, probándote, a fin de saber lo que había en tu corazón, si guardarías o no Sus mandamientos.
+Deuteronomio 8:3 Él te humilló, y te dejó tener hambre, y te alimentó con el maná que tú no conocías, ni tus padres habían conocido, para hacerte entender que el hombre no solo vive de pan, sino que vive de todo lo que procede de la boca del SEÑOR.
+Deuteronomio 8:4 Tu ropa no se gastó sobre ti, ni se hinchó tu pie durante estos cuarenta años.
+Deuteronomio 8:5 »Por tanto, debes comprender en tu corazón que el SEÑOR tu Dios te estaba disciplinando, así como un hombre disciplina a su hijo.
+Deuteronomio 8:6 Guardarás, pues, los mandamientos del SEÑOR tu Dios, para andar en Sus caminos y para temerlo.
+Deuteronomio 8:7 Porque el SEÑOR tu Dios te trae a una tierra buena, a una tierra de corrientes de aguas, de fuentes y manantiales que fluyen por valles y colinas;
+Deuteronomio 8:8 una tierra de trigo y cebada, de viñas, higueras y granados; una tierra de aceite de oliva y miel;
+Deuteronomio 8:9 una tierra donde comerás el pan sin escasez, donde nada te faltará; una tierra cuyas piedras son hierro, y de cuyos montes puedes sacar cobre.
+Deuteronomio 8:10 Cuando hayas comido y te hayas saciado, bendecirás al SEÑOR tu Dios por la buena tierra que Él te ha dado.
+Deuteronomio 8:11 »Cuídate de no olvidar al SEÑOR tu Dios dejando de guardar Sus mandamientos, Sus ordenanzas y Sus estatutos que yo te ordeno hoy;
+Deuteronomio 8:12 no sea que cuando hayas comido y te hayas saciado, y hayas construido buenas casas y habitado en ellas,
+Deuteronomio 8:13 y cuando tus vacas y tus ovejas se multipliquen, y tu plata y oro se multipliquen, y todo lo que tengas se multiplique,
+Deuteronomio 8:14 entonces tu corazón se enorgullezca, y te olvides del SEÑOR tu Dios que te sacó de la tierra de Egipto de la casa de servidumbre.
+Deuteronomio 8:15 Él te condujo a través del inmenso y terrible desierto, con sus serpientes abrasadoras y escorpiones, tierra sedienta donde no había agua; Él sacó para ti agua de la roca de pedernal.
+Deuteronomio 8:16 En el desierto te alimentó con el maná que tus padres no habían conocido, para humillarte y probarte, y para finalmente hacerte bien.
+Deuteronomio 8:17 No sea que digas en tu corazón: “Mi poder y la fuerza de mi mano me han producido esta riqueza”.
+Deuteronomio 8:18 Pero acuérdate del SEÑOR tu Dios, porque Él es el que te da poder para hacer riquezas, a fin de confirmar Su pacto, el cual juró a tus padres como en este día.
+Deuteronomio 8:19 »Pero sucederá que si alguna vez te olvidas del SEÑOR tu Dios, y vas en pos de otros dioses, y los sirves y los adoras, yo testifico contra ustedes hoy, que ciertamente perecerán.
+Deuteronomio 8:20 Como las naciones que el SEÑOR destruye delante de ustedes, así perecerán ustedes, porque no oyeron la voz del SEÑOR su Dios.
+Deuteronomio 9:1 »Oye, Israel: Hoy vas a pasar el Jordán para entrar a desposeer a naciones más grandes y más poderosas que tú, ciudades grandes y fortificadas hasta el cielo,
+Deuteronomio 9:2 un pueblo grande y alto, los hijos de los anaceos, a quienes conoces y de quienes has oído decir: “¿Quién puede resistir ante los hijos de Anac?”.
+Deuteronomio 9:3 Comprende, pues, hoy, que es el SEÑOR tu Dios el que pasa delante de ti como fuego consumidor. Él los destruirá y los humillará delante de ti, para que los expulses y los destruyas rápidamente, tal como el SEÑOR te ha dicho.
+Deuteronomio 9:4 »No digas en tu corazón cuando el SEÑOR tu Dios los haya echado de delante de ti: “Por mi justicia el SEÑOR me ha hecho entrar para poseer esta tierra”, sino que es a causa de la maldad de estas naciones que el SEÑOR las expulsa de delante de ti.
+Deuteronomio 9:5 No es por tu justicia ni por la rectitud de tu corazón que vas a poseer su tierra, sino que por la maldad de estas naciones el SEÑOR tu Dios las expulsa de delante de ti, para confirmar el pacto que el SEÑOR juró a tus padres Abraham, Isaac y Jacob.
+Deuteronomio 9:6 Comprende, pues, que no es por tu justicia que el SEÑOR tu Dios te da esta buena tierra para poseerla, pues eres un pueblo terco.
+Deuteronomio 9:7 »Acuérdate; no olvides cómo provocaste a ira al SEÑOR tu Dios en el desierto; desde el día en que saliste de la tierra de Egipto hasta que ustedes llegaron a este lugar, han sido rebeldes contra el SEÑOR.
+Deuteronomio 9:8 Hasta en Horeb provocaron a ira al SEÑOR, y el SEÑOR se enojó tanto contra ustedes que estuvo a punto de destruirlos.
+Deuteronomio 9:9 Cuando subí al monte para recibir las tablas de piedra, las tablas del pacto que el SEÑOR había hecho con ustedes, me quedé en el monte cuarenta días y cuarenta noches; no comí pan ni bebí agua.
+Deuteronomio 9:10 El SEÑOR me dio las dos tablas de piedra escritas por el dedo de Dios; y en ellas estaban todas las palabras que el SEÑOR les había dicho en el monte, de en medio del fuego, el día de la asamblea.
+Deuteronomio 9:11 »Y aconteció después de cuarenta días y cuarenta noches, que el SEÑOR me dio las dos tablas de piedra, las tablas del pacto.
+Deuteronomio 9:12 Entonces el SEÑOR me dijo: “Levántate; baja aprisa de aquí, porque tu pueblo que sacaste de Egipto se ha corrompido. Pronto se han apartado del camino que Yo les había ordenado; se han hecho un ídolo de fundición”.
+Deuteronomio 9:13 También el SEÑOR me habló y dijo: “He visto a este pueblo, y en verdad es un pueblo terco.
+Deuteronomio 9:14 Déjame que los destruya y borre su nombre de debajo del cielo; y de ti haré una nación más grande y más poderosa que ellos”.
+Deuteronomio 9:15 Y volví, y descendí del monte mientras el monte ardía en fuego, y las dos tablas del pacto estaban en mis dos manos.
+Deuteronomio 9:16 Y vi que en verdad ustedes habían pecado contra el SEÑOR su Dios. Se habían hecho un becerro de fundición; pronto se habían apartado del camino que el SEÑOR les había ordenado.
+Deuteronomio 9:17 Tomé las dos tablas, las arrojé de mis manos y las hice pedazos delante de ustedes.
+Deuteronomio 9:18 »Entonces me postré delante del SEÑOR como al principio, por cuarenta días y cuarenta noches; no comí pan ni bebí agua, a causa de todo el pecado que habían cometido al hacer lo malo ante los ojos del SEÑOR, provocando así Su ira.
+Deuteronomio 9:19 Porque temí la ira y el furor con que el SEÑOR estaba enojado contra ustedes para destruirlos, pero el SEÑOR me escuchó también esta vez.
+Deuteronomio 9:20 El SEÑOR se enojó tanto con Aarón que quiso destruirlo; y también intercedí por Aarón al mismo tiempo.
+Deuteronomio 9:21 Y tomé el objeto del pecado de ustedes, el becerro que se habían hecho, y lo quemé en el fuego, y lo hice pedazos, desmenuzándolo hasta que quedó tan fino como el polvo; y eché su polvo al arroyo que bajaba del monte.
+Deuteronomio 9:22 »Nuevamente, en Tabera, en Masah y en Kibrot Hataava, provocaron a ira al SEÑOR.
+Deuteronomio 9:23 Y cuando el SEÑOR los envió de Cades Barnea, diciendo: “Suban y tomen posesión de la tierra que Yo les he dado”, entonces se rebelaron contra la orden del SEÑOR su Dios; no le creyeron, ni escucharon Su voz.
+Deuteronomio 9:24 Ustedes han sido rebeldes al SEÑOR desde el día en que los conocí.
+Deuteronomio 9:25 »Entonces me postré delante del SEÑOR los cuarenta días y cuarenta noches, lo cual hice porque el SEÑOR había dicho que los iba a destruir.
+Deuteronomio 9:26 Oré al SEÑOR, y dije: “Oh Señor DIOS, no destruyas a Tu pueblo, a Tu heredad, que Tú has redimido con Tu grandeza, que Tú has sacado de Egipto con mano fuerte.
+Deuteronomio 9:27 Acuérdate de Tus siervos Abraham, Isaac y Jacob; no mires la dureza de este pueblo ni su maldad ni su pecado.
+Deuteronomio 9:28 De otra manera los de la tierra de donde Tú nos sacaste dirán: ‘Por cuanto el SEÑOR no pudo hacerlos entrar en la tierra que les había prometido y porque los aborreció, los sacó para hacerlos morir en el desierto’.
+Deuteronomio 9:29 Sin embargo, ellos son Tu pueblo, Tu heredad, a quien Tú has sacado con Tu gran poder y Tu brazo extendido”.
+Deuteronomio 10:1 »En aquel tiempo el SEÑOR me dijo: “Lábrate dos tablas de piedra como las anteriores, y sube a Mí al monte, y hazte un arca de madera.
+Deuteronomio 10:2 Yo escribiré sobre esas tablas las palabras que estaban sobre las primeras tablas que quebraste, y las pondrás en el arca”.
+Deuteronomio 10:3 Hice, pues, un arca de madera de acacia y labré dos tablas de piedra como las anteriores, y subí al monte con las dos tablas en mi mano.
+Deuteronomio 10:4 Y Él escribió sobre las tablas, conforme a la escritura anterior, los Diez Mandamientos que el SEÑOR les había hablado a ustedes en el monte de en medio del fuego el día de la asamblea; y el SEÑOR me las dio.
+Deuteronomio 10:5 Entonces me volví y descendí del monte, y puse las tablas en el arca que yo había hecho; y allí están tal como el SEÑOR me ordenó.
+Deuteronomio 10:6 (Después los israelitas salieron de Beerot Bene Jaacán hacia Mosera. Allí murió Aarón y allí fue sepultado, y su hijo Eleazar ministró como sacerdote en su lugar.
+Deuteronomio 10:7 De allí salieron hacia Gudgoda; y de Gudgoda hacia Jotbata, una tierra de corrientes de aguas.
+Deuteronomio 10:8 En aquel tiempo el SEÑOR apartó la tribu de Leví para que llevara el arca del pacto del SEÑOR, y para que estuviera delante del SEÑOR, sirviéndole y bendiciendo en Su nombre hasta el día de hoy.
+Deuteronomio 10:9 Por tanto, Leví no tiene porción o herencia con sus hermanos; el SEÑOR es su herencia, así como el SEÑOR tu Dios le habló).
+Deuteronomio 10:10 »Me quedé en el monte cuarenta días y cuarenta noches como la primera vez, y el SEÑOR me escuchó también esta vez; y el SEÑOR no quiso destruirte.
+Deuteronomio 10:11 Entonces me dijo el SEÑOR: “Levántate, continúa tu marcha al frente del pueblo, para que entren y tomen posesión de la tierra que Yo juré a sus padres que les daría”.
+Deuteronomio 10:12 »Y ahora, Israel, ¿qué requiere de ti el SEÑOR tu Dios, sino que temas al SEÑOR tu Dios, que andes en todos Sus caminos, que lo ames y que sirvas al SEÑOR tu Dios con todo tu corazón y con toda tu alma,
+Deuteronomio 10:13 y que guardes los mandamientos del SEÑOR y Sus estatutos que yo te ordeno hoy para tu bien?
+Deuteronomio 10:14 Al SEÑOR tu Dios pertenecen los cielos y los cielos de los cielos, la tierra y todo lo que en ella hay.
+Deuteronomio 10:15 Sin embargo, el SEÑOR se agradó de tus padres, los amó, y escogió a su descendencia después de ellos, es decir, a ustedes, de entre todos los pueblos, como se ve hoy.
+Deuteronomio 10:16 Circunciden, pues, su corazón, y no sean más tercos.
+Deuteronomio 10:17 Porque el SEÑOR su Dios es Dios de dioses y Señor de señores, Dios grande, poderoso y temible que no hace acepción de personas ni acepta soborno.
+Deuteronomio 10:18 Él hace justicia al huérfano y a la viuda, y muestra Su amor al extranjero dándole pan y vestido.
+Deuteronomio 10:19 Muestren, pues, amor al extranjero, porque ustedes fueron extranjeros en la tierra de Egipto.
+Deuteronomio 10:20 »Temerás al SEÑOR tu Dios; le servirás, te allegarás a Él y solo en Su nombre jurarás.
+Deuteronomio 10:21 Él es el objeto de tu alabanza y Él es tu Dios, que ha hecho por ti estas cosas grandes y portentosas que tus ojos han visto.
+Deuteronomio 10:22 Cuando tus padres descendieron a Egipto eran setenta personas, y ahora el SEÑOR tu Dios te ha hecho tan numeroso como las estrellas del cielo.
+Deuteronomio 11:1 »Amarás, pues, al SEÑOR tu Dios, y guardarás siempre Sus mandatos, Sus estatutos, Sus ordenanzas y Sus mandamientos.
+Deuteronomio 11:2 Comprendan ustedes hoy que no estoy hablando con sus hijos, los cuales no han visto la disciplina del SEÑOR su Dios: Su grandeza, Su mano poderosa, Su brazo extendido,
+Deuteronomio 11:3 Sus señales y Sus obras que hizo en medio de Egipto a Faraón, rey de Egipto, y a toda su tierra;
+Deuteronomio 11:4 lo que hizo al ejército de Egipto, a sus caballos y a sus carros, al hacer que el agua del Mar Rojo los cubriera cuando los perseguían a ustedes, y el SEÑOR los destruyó completamente;
+Deuteronomio 11:5 lo que hizo por ustedes en el desierto hasta que llegaron a este lugar.
+Deuteronomio 11:6 »También vieron lo que hizo a Datán y Abiram, los hijos de Eliab, hijo de Rubén, cuando la tierra abrió su boca y los tragó a ellos, a sus familias, a sus tiendas y a todo ser viviente que los seguía, en medio de todo Israel.
+Deuteronomio 11:7 Pero ustedes, con sus propios ojos, han visto toda la gran obra que el SEÑOR ha hecho.
+Deuteronomio 11:8 »Guarden, pues, todos los mandamientos que les ordeno hoy, para que sean fuertes, y entren y tomen posesión de la tierra a la cual entran para poseerla;
+Deuteronomio 11:9 para que prolonguen sus días en la tierra que el SEÑOR juró dar a sus padres y a su descendencia, una tierra que mana leche y miel.
+Deuteronomio 11:10 Porque la tierra a la cual entras para poseerla, no es como la tierra de Egipto de donde ustedes vinieron, donde sembrabas tu semilla, y la regabas con el pie como una huerta de hortalizas,
+Deuteronomio 11:11 sino que la tierra a la cual entran para poseerla, tierra de montes y valles, bebe el agua de las lluvias del cielo.
+Deuteronomio 11:12 Es una tierra que el SEÑOR tu Dios cuida; los ojos del SEÑOR tu Dios están siempre sobre ella, desde el principio hasta el fin del año.
+Deuteronomio 11:13 »Y sucederá que si obedecen mis mandamientos que les ordeno hoy, de amar al SEÑOR su Dios y de servirle con todo su corazón y con toda su alma,
+Deuteronomio 11:14 Él dará a la tierra de ustedes la lluvia a su tiempo, lluvia temprana y lluvia tardía, para que recojas tu grano, tu vino nuevo y tu aceite.
+Deuteronomio 11:15 Y Él dará hierba en tus campos para tu ganado, y comerás y te saciarás.
+Deuteronomio 11:16 Tengan cuidado, no sea que se engañe su corazón y se desvíen y sirvan a otros dioses, y los adoren.
+Deuteronomio 11:17 No sea que la ira del SEÑOR se encienda contra ustedes, y cierre los cielos y no haya lluvia y la tierra no produzca su fruto, y pronto perezcan en la buena tierra que el SEÑOR les da.
+Deuteronomio 11:18 »Graben, pues, estas mis palabras en su corazón y en su alma; átenlas como una señal en su mano, y serán por insignias entre sus ojos.
+Deuteronomio 11:19 Enséñenlas a sus hijos, hablando de ellas cuando te sientes en tu casa y cuando andes por el camino, cuando te acuestes y cuando te levantes.
+Deuteronomio 11:20 Y escríbelas en los postes de tu casa y en tus puertas,
+Deuteronomio 11:21 para que tus días y los días de tus hijos sean multiplicados en la tierra que el SEÑOR juró dar a tus padres, por todo el tiempo que los cielos permanezcan sobre la tierra.
+Deuteronomio 11:22 »Porque si guardan cuidadosamente todo este mandamiento que les ordeno para cumplirlo, amando al SEÑOR su Dios, andando en todos Sus caminos y allegándose a Él,
+Deuteronomio 11:23 entonces el SEÑOR expulsará de delante de ustedes a todas estas naciones, y ustedes desposeerán a naciones más grandes y más poderosas que ustedes.
+Deuteronomio 11:24 Todo lugar donde pise la planta de su pie será de ustedes; sus fronteras serán desde el desierto hasta el Líbano, y desde el río, el río Éufrates, hasta el mar occidental.
+Deuteronomio 11:25 Nadie les podrá hacer frente; el SEÑOR su Dios infundirá, como Él les ha dicho, el espanto y terror de ustedes en toda la tierra que pise su pie.
+Deuteronomio 11:26 »Miren, hoy pongo delante de ustedes una bendición y una maldición:
+Deuteronomio 11:27 la bendición, si escuchan los mandamientos del SEÑOR su Dios que les ordeno hoy;
+Deuteronomio 11:28 y la maldición, si no escuchan los mandamientos del SEÑOR su Dios, sino que se apartan del camino que les ordeno hoy, para seguir a otros dioses que no han conocido.
+Deuteronomio 11:29 Y acontecerá, que cuando el SEÑOR tu Dios te lleve a la tierra donde entras para poseerla, pondrás la bendición sobre el monte Gerizim y la maldición sobre el monte Ebal.
+Deuteronomio 11:30 ¿No están ellos al otro lado del Jordán, detrás del camino al oeste, en la tierra de los cananeos que habitan en el Arabá, frente a Gilgal, junto al encinar de More?
+Deuteronomio 11:31 Porque ustedes van a pasar el Jordán para ir a poseer la tierra que el SEÑOR su Dios les da, y la tomarán y habitarán en ella,
+Deuteronomio 11:32 y tendrán cuidado de cumplir todos los estatutos y decretos que hoy pongo delante de ustedes.
+Deuteronomio 12:1 »Estos son los estatutos y los decretos que observarán cuidadosamente en la tierra que el SEÑOR, el Dios de tus padres, te ha dado para que la poseas todos los días que ustedes vivan sobre su suelo.
+Deuteronomio 12:2 Destruirán completamente todos los lugares donde las naciones que desposeerán sirven a sus dioses: sobre los montes altos, sobre las colinas y debajo de todo árbol frondoso.
+Deuteronomio 12:3 Y demolerán sus altares, quebrarán sus pilares sagrados, quemarán a fuego sus imágenes de Asera, derribarán las imágenes talladas de sus dioses y borrarán su nombre de aquel lugar.
+Deuteronomio 12:4 »No actuarán así con el SEÑOR su Dios,
+Deuteronomio 12:5 sino que buscarán al SEÑOR en el lugar en que el SEÑOR su Dios escoja de todas sus tribus, para poner allí Su nombre para Su morada, y allí ustedes irán.
+Deuteronomio 12:6 Allí llevarán sus holocaustos, sus sacrificios, sus diezmos, la contribución de su mano, sus ofrendas votivas, sus ofrendas voluntarias, y el primogénito de sus vacas y de sus ovejas.
+Deuteronomio 12:7 Allí también ustedes y sus familias comerán en presencia del SEÑOR su Dios, y se alegrarán en todas sus empresas en las cuales el SEÑOR su Dios los ha bendecido.
+Deuteronomio 12:8 De ninguna manera harán lo que hacemos aquí hoy, que cada cual hace lo que le parece bien a sus propios ojos;
+Deuteronomio 12:9 porque todavía no han llegado al lugar de reposo y a la heredad que el SEÑOR su Dios les da.
+Deuteronomio 12:10 »Cuando crucen el Jordán y habiten en la tierra que el SEÑOR su Dios les da en heredad, y Él les dé descanso de todos sus enemigos alrededor de ustedes para que habiten seguros,
+Deuteronomio 12:11 entonces sucederá que al lugar que el SEÑOR, su Dios, escoja para morada de Su nombre, allí traerán todo lo que yo les mando: sus holocaustos y sus sacrificios, sus diezmos y la ofrenda alzada de su mano, y todo lo más selecto de sus ofrendas votivas que han prometido al SEÑOR.
+Deuteronomio 12:12 Y se alegrarán en presencia del SEÑOR su Dios, ustedes, sus hijos y sus hijas, sus siervos y sus siervas, y el levita que vive dentro de sus puertas, ya que no tiene parte ni heredad entre ustedes.
+Deuteronomio 12:13 »Cuídate de no ofrecer tus holocaustos en cualquier lugar que veas,
+Deuteronomio 12:14 sino en el lugar que el SEÑOR escoja en una de tus tribus, allí ofrecerás tus holocaustos, y allí harás todo lo que yo te mando.
+Deuteronomio 12:15 »Sin embargo, podrás matar y comer carne dentro de todas tus puertas, conforme a tu deseo, según la bendición que el SEÑOR tu Dios te ha dado; el inmundo y el limpio podrán comerla, como si fuera de gacela o de ciervo.
+Deuteronomio 12:16 Solo que ustedes no comerán la sangre; la derramarán sobre la tierra como el agua.
+Deuteronomio 12:17 »No te es permitido comer dentro de tus ciudades el diezmo de tu grano, de tu vino nuevo o de tu aceite, ni de los primogénitos de tus vacas o de tus ovejas, ni ninguna de las ofrendas votivas que prometas, ni tus ofrendas voluntarias, ni la ofrenda alzada de tu mano,
+Deuteronomio 12:18 sino que lo comerás en presencia del SEÑOR tu Dios en el lugar que el SEÑOR tu Dios escoja, tú, tu hijo y tu hija, tu siervo y tu sierva, y el levita que vive dentro de tus puertas; y te alegrarás en presencia del SEÑOR tu Dios de toda la obra de tus manos.
+Deuteronomio 12:19 Cuídate de no desamparar al levita mientras vivas en tu tierra.
+Deuteronomio 12:20 »Cuando el SEÑOR tu Dios haya extendido tus fronteras como te ha prometido, y tú digas: “Comeré carne”, porque deseas comer carne, entonces podrás comer carne, toda la que desees.
+Deuteronomio 12:21 Si el lugar que el SEÑOR tu Dios escoge para poner Su nombre está muy lejos de ti, entonces podrás matar de tus vacas y de tus ovejas que el SEÑOR te ha dado, como te he ordenado, y podrás comer dentro de tus puertas todo lo que desees.
+Deuteronomio 12:22 Tal como se come la gacela y el ciervo, así la podrás comer; el inmundo y el limpio podrán comer de ella.
+Deuteronomio 12:23 Solo cuídate de no comer la sangre, porque la sangre es la vida, y no comerás la vida con la carne.
+Deuteronomio 12:24 No la comerás; la derramarás sobre la tierra como el agua.
+Deuteronomio 12:25 No la comerás, para que te vaya bien a ti y a tus hijos después de ti, porque estarás haciendo lo que es justo delante del SEÑOR.
+Deuteronomio 12:26 »Solamente las cosas sagradas que tengas y tus ofrendas votivas, las tomarás e irás al lugar que el SEÑOR escoja.
+Deuteronomio 12:27 Ofrecerás tus holocaustos, la carne y la sangre, sobre el altar del SEÑOR tu Dios; y la sangre de tus sacrificios será derramada sobre el altar del SEÑOR tu Dios, y podrás comer la carne.
+Deuteronomio 12:28 Escucha con cuidado todas estas palabras que te mando, para que te vaya bien a ti y a tus hijos después de ti para siempre, porque estarás haciendo lo que es bueno y justo delante del SEÑOR tu Dios.
+Deuteronomio 12:29 »Cuando el SEÑOR tu Dios haya destruido delante de ti las naciones que vas a desposeer, y las hayas desposeído y habites en su tierra,
+Deuteronomio 12:30 cuídate de no caer en una trampa imitándolas, después que hayan sido destruidas delante de ti, y de no buscar sus dioses, diciendo: “¿Cómo servían estas naciones a sus dioses para que también yo haga lo mismo?”.
+Deuteronomio 12:31 No procederás así para con el SEÑOR tu Dios, porque toda acción abominable que el SEÑOR odia, ellos la han hecho en honor de sus dioses; porque aun a sus hijos y a sus hijas queman en el fuego en honor a sus dioses.
+Deuteronomio 12:32 »Cuidarás de hacer todo lo que te mando; nada le añadirás ni le quitarás.
+Deuteronomio 13:1 »Si se levanta en medio de ti un profeta o soñador de sueños, y te anuncia una señal o un prodigio,
+Deuteronomio 13:2 y la señal o el prodigio se cumple, acerca del cual él te había hablado, diciendo: “Vamos en pos de otros dioses (a los cuales no has conocido) y sirvámoslos”,
+Deuteronomio 13:3 no darás oído a las palabras de ese profeta o de ese soñador de sueños; porque el SEÑOR tu Dios te está probando para ver si amas al SEÑOR tu Dios con todo tu corazón y con toda tu alma.
+Deuteronomio 13:4 »En pos del SEÑOR su Dios ustedes andarán y a Él temerán; guardarán Sus mandamientos, escucharán Su voz, le servirán y a Él se unirán.
+Deuteronomio 13:5 Pero a ese profeta o a ese soñador de sueños se le dará muerte, por cuanto ha aconsejado rebelión contra el SEÑOR tu Dios, que te sacó de la tierra de Egipto y te redimió de casa de servidumbre, para apartarte del camino en el cual el SEÑOR tu Dios te mandó andar. Así quitarás el mal de en medio de ti.
+Deuteronomio 13:6 »Si tu hermano, el hijo de tu madre, o tu hijo, o tu hija, o la mujer que amas, o tu amigo entrañable, te invita en secreto, diciendo: “Vamos y sirvamos a otros dioses” (a quienes ni tú ni tus padres han conocido,
+Deuteronomio 13:7 de los dioses de los pueblos que te rodean, cerca o lejos de ti, de un término de la tierra al otro),
+Deuteronomio 13:8 no cederás ni le escucharás; y tu ojo no tendrá piedad de él, tampoco lo perdonarás ni lo encubrirás,
+Deuteronomio 13:9 sino que ciertamente lo matarás; tu mano será la primera contra él para matarlo, y después la mano de todo el pueblo.
+Deuteronomio 13:10 Lo apedrearás hasta que muera porque él trató de apartarte del SEÑOR tu Dios que te sacó de la tierra de Egipto, de la casa de servidumbre.
+Deuteronomio 13:11 Entonces todo Israel oirá y temerá, y nunca volverá a hacer tal maldad en medio de ti.
+Deuteronomio 13:12 »Si oyes decir que en alguna de las ciudades que el SEÑOR tu Dios te da para habitar,
+Deuteronomio 13:13 han salido hombres indignos de en medio de ti y han seducido a los habitantes de su ciudad, diciendo: “Vamos y sirvamos a otros dioses” (a quienes no has conocido),
+Deuteronomio 13:14 entonces consultarás, buscarás y preguntarás con diligencia. Y si es verdad y se comprueba que se ha hecho tal abominación en medio de ti,
+Deuteronomio 13:15 ciertamente herirás a filo de espada a los habitantes de esa ciudad, destruyéndola por completo con todo lo que hay en ella, y también su ganado a filo de espada.
+Deuteronomio 13:16 Entonces amontonarás todo su botín en medio de su plaza, y prenderás fuego a la ciudad con todo su botín, todo ello como ofrenda encendida al SEÑOR tu Dios; y será montón de ruinas para siempre. Nunca será reconstruida.
+Deuteronomio 13:17 Nada de lo dedicado al anatema quedará en tu mano, para que el SEÑOR se aparte del ardor de Su ira y sea misericordioso contigo, tenga compasión de ti y te multiplique, tal como Él juró a tus padres,
+Deuteronomio 13:18 si escuchas la voz del SEÑOR tu Dios, guardando todos Sus mandamientos que yo te ordeno hoy, haciendo lo que es justo ante los ojos del SEÑOR tu Dios.
+Deuteronomio 14:1 »Ustedes son hijos del SEÑOR su Dios; no se sajarán ni se rasurarán la frente a causa de un muerto.
+Deuteronomio 14:2 Porque eres pueblo santo para el SEÑOR tu Dios; y el SEÑOR te ha escogido para que le seas un pueblo de Su exclusiva posesión de entre los pueblos que están sobre la superficie de la tierra.
+Deuteronomio 14:3 No comerás nada abominable.
+Deuteronomio 14:4 Estos son los animales que ustedes podrán comer: el buey, la oveja, la cabra,
+Deuteronomio 14:5 el ciervo, la gacela, el corzo, la cabra montés, el íbice, el antílope y el carnero montés.
+Deuteronomio 14:6 Y cualquier animal de pezuña dividida que tenga la pezuña hendida en dos mitades y que rumie, lo podrán comer.
+Deuteronomio 14:7 Pero estos no comerán de entre los que rumian o de entre los que tienen la pezuña dividida en dos: el camello, el conejo y el damán; pues aunque rumian, no tienen la pezuña dividida; para ustedes serán inmundos.
+Deuteronomio 14:8 El cerdo, aunque tiene la pezuña dividida, no rumia; será inmundo para ustedes. No comerán de su carne ni tocarán sus cadáveres.
+Deuteronomio 14:9 »De todo lo que vive en el agua, estos podrán comer: todos los que tienen aletas y escamas,
+Deuteronomio 14:10 pero no comerán nada que no tenga aletas ni escamas; será inmundo para ustedes.
+Deuteronomio 14:11 »Toda ave limpia podrán comer.
+Deuteronomio 14:12 Pero estas no comerán: el águila, el buitre y el buitre negro;
+Deuteronomio 14:13 el azor, el halcón y el milano según su especie;
+Deuteronomio 14:14 todo cuervo según su especie;
+Deuteronomio 14:15 el avestruz, la lechuza, la gaviota y el gavilán según su especie;
+Deuteronomio 14:16 el búho, el búho real, la lechuza blanca,
+Deuteronomio 14:17 el pelícano, el buitre, el somormujo,
+Deuteronomio 14:18 la cigüeña y la garza según su especie; la abubilla y el murciélago.
+Deuteronomio 14:19 Todo insecto alado será inmundo para ustedes; no se comerá.
+Deuteronomio 14:20 Toda ave limpia podrán comer.
+Deuteronomio 14:21 »No comerán ningún animal que se muera. Lo podrás dar al extranjero que está en tus ciudades, para que lo coma, o lo podrás vender a un extranjero, porque tú eres un pueblo santo al SEÑOR tu Dios. No cocerás el cabrito en la leche de su madre.
+Deuteronomio 14:22 »Fielmente diezmarás todo el producto de tu siembra, lo que rinda tu campo cada año.
+Deuteronomio 14:23 Comerás en la presencia del SEÑOR tu Dios, en el lugar que Él escoja para poner allí Su nombre, el diezmo de tu grano, de tu vino nuevo y de tu aceite, y los primogénitos de tus vacas y de tus ovejas, para que aprendas a temer siempre al SEÑOR tu Dios.
+Deuteronomio 14:24 Pero si el camino es tan largo para ti, que no seas capaz de llevar el diezmo por estar lejos el lugar donde el SEÑOR tu Dios escoja para poner allí Su nombre, cuando el SEÑOR tu Dios te haya bendecido,
+Deuteronomio 14:25 entonces lo cambiarás por dinero, y atarás el dinero en tu mano e irás al lugar que el SEÑOR tu Dios escoja.
+Deuteronomio 14:26 Podrás gastar el dinero en todo lo que tu corazón apetezca: en vacas u ovejas, en vino o sidra, o en cualquier otra cosa que tu corazón desee; allí comerás en presencia del SEÑOR tu Dios, y te alegrarás tú y tu casa.
+Deuteronomio 14:27 Tampoco desampararás al levita que habite en tus ciudades, porque él no tiene parte ni heredad contigo.
+Deuteronomio 14:28 »Al fin de cada tercer año, sacarás todo el diezmo de tus productos de aquel año y lo depositarás en tus ciudades.
+Deuteronomio 14:29 Y vendrá el levita, que no tiene parte ni herencia contigo, también el extranjero, el huérfano y la viuda que habitan en tus ciudades, y comerán y se saciarán, para que el SEÑOR tu Dios te bendiga en toda obra que tu mano haga.
+Deuteronomio 15:1 »Al cabo de cada siete años harás remisión de deudas.
+Deuteronomio 15:2 Así se hará la remisión: todo acreedor hará remisión de lo que haya prestado a su prójimo; no lo exigirá de su prójimo ni de su hermano, porque se ha proclamado la remisión del SEÑOR.
+Deuteronomio 15:3 De un extranjero lo puedes exigir, pero tu mano perdonará cualquier cosa tuya que tu hermano tenga.
+Deuteronomio 15:4 Sin embargo, no habrá menesteroso entre ustedes, ya que el SEÑOR de cierto te bendecirá en la tierra que el SEÑOR tu Dios te da por heredad para poseerla,
+Deuteronomio 15:5 si solo escuchas fielmente la voz del SEÑOR tu Dios, para guardar cuidadosamente todo este mandamiento que te ordeno hoy.
+Deuteronomio 15:6 Pues el SEÑOR tu Dios te bendecirá como te ha prometido, y tú prestarás a muchas naciones, pero tú no tomarás prestado; y tendrás dominio sobre muchas naciones, pero ellas no tendrán dominio sobre ti.
+Deuteronomio 15:7 »Si hay un menesteroso contigo, uno de tus hermanos, en cualquiera de tus ciudades en la tierra que el SEÑOR tu Dios te da, no endurecerás tu corazón, ni cerrarás tu mano a tu hermano pobre,
+Deuteronomio 15:8 sino que le abrirás libremente tu mano, y con generosidad le prestarás lo que le haga falta para cubrir sus necesidades.
+Deuteronomio 15:9 Cuídate de que no haya pensamiento perverso en tu corazón, diciendo: “El séptimo año, el año de remisión, está cerca”, y mires con malos ojos a tu hermano pobre, y no le des nada; porque él podrá clamar al SEÑOR contra ti, y esto te será pecado.
+Deuteronomio 15:10 Con generosidad le darás, y no te dolerá el corazón cuando le des, ya que el SEÑOR tu Dios te bendecirá por esto en todo tu trabajo y en todo lo que emprendas.
+Deuteronomio 15:11 Porque nunca faltarán pobres en tu tierra; por eso te ordeno: “Con liberalidad abrirás tu mano a tu hermano, al necesitado y al pobre en tu tierra”.
+Deuteronomio 15:12 »Si un hermano tuyo, hebreo o hebrea, te es vendido, te servirá por seis años, pero al séptimo año lo pondrás en libertad.
+Deuteronomio 15:13 Y cuando lo dejes ir libre, no lo enviarás con las manos vacías.
+Deuteronomio 15:14 Le abastecerás generosamente de tu rebaño, de tu era y de tu lagar; le darás conforme te haya bendecido el SEÑOR tu Dios.
+Deuteronomio 15:15 Y te acordarás que fuiste esclavo en la tierra de Egipto, y que el SEÑOR tu Dios te redimió; por eso te ordeno esto hoy.
+Deuteronomio 15:16 Y sucederá que si él te dice: “No me iré de tu lado”, porque te ama a ti y a tu casa, pues le va bien contigo,
+Deuteronomio 15:17 entonces tomarás una lezna y horadarás su oreja contra la puerta, y será tu siervo para siempre. Y lo mismo harás a tu sierva.
+Deuteronomio 15:18 No te parezca duro cuando lo dejes en libertad, porque te ha dado seis años con el doble del servicio de un jornalero; y el SEÑOR tu Dios te bendecirá en todo lo que hagas.
+Deuteronomio 15:19 »Todo primogénito que nazca de tu ganado y de tu rebaño consagrarás al SEÑOR tu Dios; no trabajarás con el primogénito de tu ganado ni trasquilarás el primogénito de tu rebaño.
+Deuteronomio 15:20 Tú y tu casa lo comerán cada año delante del SEÑOR tu Dios en el lugar que el SEÑOR escoja.
+Deuteronomio 15:21 Pero si tiene algún defecto, si es cojo o ciego o con cualquier otro defecto grave, no lo sacrificarás al SEÑOR tu Dios.
+Deuteronomio 15:22 Lo comerás dentro de tus ciudades; el inmundo lo mismo que el limpio pueden comerlo, como se come una gacela o un ciervo.
+Deuteronomio 15:23 Pero no comerás su sangre; la derramarás como agua sobre la tierra.
+Deuteronomio 16:1 »Observarás el mes de Abib y celebrarás la Pascua al SEÑOR tu Dios, porque en el mes de Abib el SEÑOR tu Dios te sacó de Egipto de noche.
+Deuteronomio 16:2 Sacrificarás la Pascua al SEÑOR tu Dios con ofrendas de tus rebaños y de tus manadas, en el lugar que el SEÑOR escoja para poner allí Su nombre.
+Deuteronomio 16:3 No comerás la Pascua con pan con levadura. Siete días comerás con ella pan sin levadura, pan de aflicción (porque aprisa saliste de la tierra de Egipto), para que recuerdes todos los días de tu vida el día que saliste de la tierra de Egipto.
+Deuteronomio 16:4 Durante siete días no se verá contigo levadura en todo tu territorio. De la carne que sacrifiques en la tarde del primer día, no quedará nada para la mañana siguiente.
+Deuteronomio 16:5 »No podrás sacrificar la Pascua en cualquiera de las ciudades que el SEÑOR tu Dios te da,
+Deuteronomio 16:6 sino que en el lugar que el SEÑOR tu Dios escoja para poner allí Su nombre, sacrificarás la Pascua al atardecer, al ponerse el sol, a la hora en que saliste de Egipto.
+Deuteronomio 16:7 La asarás y la comerás en el lugar que el SEÑOR tu Dios escoja. Luego, por la mañana, regresarás a tu habitación.
+Deuteronomio 16:8 Seis días comerás pan sin levadura, y en el séptimo día habrá una asamblea solemne para el SEÑOR tu Dios. Ningún trabajo harás en él.
+Deuteronomio 16:9 »Vas a contar siete semanas. Comenzarás a contar siete semanas desde el momento en que empieces a meter la hoz a la cosecha.
+Deuteronomio 16:10 Entonces celebrarás la Fiesta de las Semanas al SEÑOR tu Dios con el tributo de una ofrenda voluntaria de tu mano, la cual darás según el SEÑOR tu Dios te haya bendecido.
+Deuteronomio 16:11 Y te alegrarás delante del SEÑOR tu Dios, tú, tu hijo, tu hija, tu siervo, tu sierva, el levita que habita en tus ciudades, y el extranjero, el huérfano y la viuda que están en medio de ti, en el lugar donde el SEÑOR tu Dios escoja para poner allí Su nombre.
+Deuteronomio 16:12 Te acordarás de que fuiste esclavo en Egipto; cuídate de guardar estos estatutos.
+Deuteronomio 16:13 »Durante siete días celebrarás la Fiesta de los Tabernáculos, cuando hayas recogido el producto de tu era y de tu lagar.
+Deuteronomio 16:14 Y te alegrarás en tu fiesta, tú, con tu hijo y tu hija, tu siervo y tu sierva, el levita y el extranjero, el huérfano y la viuda que están en tus ciudades.
+Deuteronomio 16:15 Siete días celebrarás fiesta al SEÑOR tu Dios en el lugar que escoja el SEÑOR; porque el SEÑOR tu Dios te bendecirá en todos tus productos y en toda la obra de tus manos; por tanto, estarás realmente alegre.
+Deuteronomio 16:16 Tres veces al año se presentarán todos tus varones delante del SEÑOR tu Dios en el lugar que Él escoja: en la Fiesta de los Panes sin Levadura, en la Fiesta de las Semanas y en la Fiesta de los Tabernáculos; y no se presentarán con las manos vacías delante del SEÑOR.
+Deuteronomio 16:17 Cada hombre dará lo que pueda, de acuerdo con la bendición que el SEÑOR tu Dios te haya dado.
+Deuteronomio 16:18 »Nombrarás jueces y oficiales en todas las ciudades que el SEÑOR tu Dios te da, según tus tribus, y ellos juzgarán al pueblo con justo juicio.
+Deuteronomio 16:19 No torcerás la justicia; no harás acepción de personas, ni tomarás soborno, porque el soborno ciega los ojos del sabio y pervierte las palabras del justo.
+Deuteronomio 16:20 La justicia, y solo la justicia buscarás, para que vivas y poseas la tierra que el SEÑOR tu Dios te da.
+Deuteronomio 16:21 »No plantarás para ti Asera de ninguna clase de árbol junto al altar del SEÑOR tu Dios que harás para ti.
+Deuteronomio 16:22 Ni levantarás para ti pilar sagrado, lo cual aborrece el SEÑOR tu Dios.
+Deuteronomio 17:1 »No sacrificarás al SEÑOR tu Dios buey o cordero que tenga defecto o alguna imperfección, porque es cosa abominable al SEÑOR tu Dios.
+Deuteronomio 17:2 »Si en medio de ti, en cualquiera de las ciudades que el SEÑOR tu Dios te da, se encuentra un hombre o una mujer que hace lo malo ante los ojos del SEÑOR tu Dios, violando Su pacto,
+Deuteronomio 17:3 y que haya ido y servido a otros dioses, adorándolos, o adorando al sol, a la luna o a cualquiera de las huestes celestiales, lo cual Yo no he mandado,
+Deuteronomio 17:4 y si te lo dicen y has oído hablar de ello, harás una investigación minuciosa. Y si es verdad y es cierto el hecho que esta abominación ha sido cometida en Israel,
+Deuteronomio 17:5 entonces sacarás a tus puertas a ese hombre o a esa mujer que ha cometido esta mala acción, y los apedrearás, al hombre o a la mujer, hasta que mueran.
+Deuteronomio 17:6 Al que ha de morir se le dará muerte por la declaración de dos o tres testigos. No se le dará muerte por la declaración de un solo testigo.
+Deuteronomio 17:7 La mano de los testigos caerá primero contra él para darle muerte, y después la mano de todo el pueblo. Así quitarás el mal de en medio de ti.
+Deuteronomio 17:8 »Si un caso te es muy difícil de juzgar, como entre una clase de homicidio y otra, entre una clase de pleito y otra, o entre una clase de asalto y otra, siendo casos de litigio en tus puertas, te levantarás y subirás al lugar que el SEÑOR tu Dios escoja.
+Deuteronomio 17:9 Y vendrás al sacerdote levita o al juez que oficie en aquellos días, y consultarás con ellos, y ellos te declararán el fallo del caso.
+Deuteronomio 17:10 Harás conforme a los términos de la sentencia que te declaren desde aquel lugar que el SEÑOR escoja; y cuidarás de observar todo lo que ellos te enseñen.
+Deuteronomio 17:11 Según los términos de la ley que ellos te enseñen, y según la sentencia que te declaren, así harás; no te apartarás a la derecha ni a la izquierda de la palabra que ellos te declaren.
+Deuteronomio 17:12 Y el hombre que proceda con orgullo, no escuchando al sacerdote que está allí para servir al SEÑOR tu Dios, ni al juez, ese hombre morirá. Así quitarás el mal de en medio de Israel.
+Deuteronomio 17:13 Entonces todo el pueblo escuchará y temerá, y no volverá a proceder con arrogancia.
+Deuteronomio 17:14 »Cuando entres en la tierra que el SEÑOR tu Dios te da, y la poseas y habites en ella, y digas: “Pondré un rey sobre mí, como todas las naciones que me rodean”,
+Deuteronomio 17:15 ciertamente pondrás sobre ti al rey que el SEÑOR tu Dios escoja, a uno de entre tus hermanos pondrás por rey sobre ti; no pondrás sobre ti a un extranjero que no sea hermano tuyo.
+Deuteronomio 17:16 Además, el rey no tendrá muchos caballos, ni hará que el pueblo vuelva a Egipto para tener muchos caballos, pues el SEÑOR te ha dicho: “Jamás volverán ustedes por ese camino”.
+Deuteronomio 17:17 Tampoco tendrá muchas mujeres, no sea que su corazón se desvíe; ni tendrá grandes cantidades de plata y oro.
+Deuteronomio 17:18 »Y cuando él se siente sobre el trono de su reino, escribirá para sí una copia de esta ley en un libro, en presencia de los sacerdotes levitas.
+Deuteronomio 17:19 La tendrá consigo y la leerá todos los días de su vida, para que aprenda a temer al SEÑOR su Dios, observando cuidadosamente todas las palabras de esta ley y estos estatutos,
+Deuteronomio 17:20 para que no se eleve su corazón sobre sus hermanos y no se desvíe del mandamiento ni a la derecha ni a la izquierda, a fin de que prolongue sus días en su reino, él y sus hijos, en medio de Israel.
+Deuteronomio 18:1 »Los sacerdotes levitas, toda la tribu de Leví, no tendrán porción ni heredad con el resto de Israel. Ellos comerán de las ofrendas encendidas al SEÑOR y de Su porción.
+Deuteronomio 18:2 No tendrán heredad entre sus hermanos; el SEÑOR es su heredad, como les ha prometido.
+Deuteronomio 18:3 »Este será el derecho de los sacerdotes de parte del pueblo, de los que ofrecen como sacrificio buey u oveja: darán para el sacerdote la espaldilla, las quijadas y el cuajar.
+Deuteronomio 18:4 Le darás las primicias de tu grano, de tu vino nuevo, de tu aceite y del primer esquileo de tus ovejas.
+Deuteronomio 18:5 Porque el SEÑOR tu Dios lo ha escogido, a él y a sus hijos de entre todas tus tribus, para que esté allí y sirva en el nombre del SEÑOR, para siempre.
+Deuteronomio 18:6 »Y si un levita sale de alguna de tus ciudades, de cualquier parte de Israel en que resida, y llega con todo el deseo de su alma al lugar que el SEÑOR escoja,
+Deuteronomio 18:7 él ministrará en el nombre del SEÑOR su Dios, como todos sus hermanos levitas que están allí delante del SEÑOR.
+Deuteronomio 18:8 Comerán porciones iguales, excepto lo que reciban de la venta de sus patrimonios.
+Deuteronomio 18:9 »Cuando entres en la tierra que el SEÑOR tu Dios te da, no aprenderás a hacer las cosas abominables de esas naciones.
+Deuteronomio 18:10 No sea hallado en ti nadie que haga pasar a su hijo o a su hija por el fuego, ni quien practique adivinación, ni hechicería, o que sea agorero, o hechicero,
+Deuteronomio 18:11 o encantador, o adivino, o espiritista, ni quien consulte a los muertos.
+Deuteronomio 18:12 Porque cualquiera que hace estas cosas es abominable al SEÑOR; y por causa de estas abominaciones el SEÑOR tu Dios expulsará a esas naciones de delante de ti.
+Deuteronomio 18:13 Serás intachable delante del SEÑOR tu Dios.
+Deuteronomio 18:14 »Porque esas naciones que vas a desalojar escuchan a los que practican hechicería y a los adivinos, pero a ti el SEÑOR tu Dios no te lo ha permitido.
+Deuteronomio 18:15 Un profeta de en medio de ti, de tus hermanos, como yo, te levantará el SEÑOR tu Dios; a él oirán.
+Deuteronomio 18:16 Esto es conforme a todo lo que pediste al SEÑOR tu Dios en Horeb el día de la asamblea, diciendo: “No vuelva yo a oír la voz del SEÑOR mi Dios, no vuelva a ver este gran fuego, no sea que muera”.
+Deuteronomio 18:17 Y el SEÑOR me dijo: “Bien han hablado en lo que han dicho.
+Deuteronomio 18:18 Un profeta como tú levantaré de entre sus hermanos, y pondré Mis palabras en su boca, y él les hablará todo lo que Yo le mande.
+Deuteronomio 18:19 Y sucederá que a cualquiera que no oiga Mis palabras que él ha de hablar en Mi nombre, Yo mismo le pediré cuenta.
+Deuteronomio 18:20 Pero el profeta que hable con orgullo en Mi nombre una palabra que Yo no le haya mandado hablar, o que hable en el nombre de otros dioses, ese profeta morirá”.
+Deuteronomio 18:21 Y si dices en tu corazón: “¿Cómo conoceremos la palabra que el SEÑOR no ha hablado?”.
+Deuteronomio 18:22 Cuando un profeta hable en el nombre del SEÑOR, si lo que fue dicho no acontece ni se cumple, esa es palabra que el SEÑOR no ha hablado; con arrogancia la ha hablado el profeta; no tendrás temor de él.
+Deuteronomio 19:1 »Cuando el SEÑOR tu Dios destruya las naciones cuya tierra el SEÑOR tu Dios te da, y las desalojes y habites en sus ciudades y en sus casas,
+Deuteronomio 19:2 te reservarás tres ciudades en medio de tu tierra que el SEÑOR tu Dios te da en posesión.
+Deuteronomio 19:3 Prepararás los caminos, y dividirás en tres partes el territorio de tu tierra que el SEÑOR tu Dios te dé en posesión, para que huya allí todo el que haya matado a alguien.
+Deuteronomio 19:4 »Y este será el caso del que mató y que huye allí para vivir: cuando mate a su amigo sin querer, sin haberlo odiado anteriormente
+Deuteronomio 19:5 (como cuando un hombre va al bosque con su amigo para cortar leña, y su mano blande el hacha para cortar el árbol, y el hierro salta del mango y golpea a su amigo, y este muere), él puede huir a una de estas ciudades y vivir.
+Deuteronomio 19:6 No sea que el vengador de la sangre en el furor de su ira persiga al que lo mató, y lo alcance porque el camino es largo, y le quite la vida aunque él no merecía la muerte, porque no lo había odiado anteriormente.
+Deuteronomio 19:7 »Por tanto, te ordeno: “Reservarás para ti tres ciudades”.
+Deuteronomio 19:8 Si el SEÑOR tu Dios ensancha tu territorio, como ha jurado a tus padres, y te da toda la tierra que ha prometido dar a tus padres
+Deuteronomio 19:9 (si guardas cuidadosamente todos estos mandamientos que te mando hoy, de amar al SEÑOR tu Dios y de andar siempre en Sus caminos), entonces te añadirás tres ciudades más, además de estas tres.
+Deuteronomio 19:10 Así no se derramará sangre inocente en medio de tu tierra que el SEÑOR tu Dios te da por heredad, y no seas culpable de derramar sangre.
+Deuteronomio 19:11 »Pero si hay un hombre que odia a su prójimo, y acechándolo, se levanta contra él, lo hiere y este muere, y después él huye a una de estas ciudades,
+Deuteronomio 19:12 entonces los ancianos de su ciudad enviarán a sacarlo de allí, y lo entregarán en mano del vengador de la sangre para que muera.
+Deuteronomio 19:13 No tendrás piedad de él; sino que limpiarás de Israel la sangre del inocente, para que te vaya bien.
+Deuteronomio 19:14 »No moverás los linderos de tu prójimo, fijados por los antepasados, en la herencia que recibirás en la tierra que el SEÑOR tu Dios te da en posesión.
+Deuteronomio 19:15 »No se levantará un solo testigo contra un hombre por cualquier iniquidad o por cualquier pecado que haya cometido. El caso será confirmado por el testimonio de dos o tres testigos.
+Deuteronomio 19:16 Si un testigo falso se levanta contra un hombre para acusarlo de transgresión,
+Deuteronomio 19:17 los dos litigantes se presentarán delante del SEÑOR, delante de los sacerdotes y de los jueces que haya en esos días.
+Deuteronomio 19:18 Y los jueces investigarán minuciosamente; y si el testigo es un testigo falso y ha acusado a su hermano falsamente,
+Deuteronomio 19:19 entonces ustedes le harán a él lo que él intentaba hacer a su hermano. Así quitarás el mal de en medio de ti.
+Deuteronomio 19:20 Los demás oirán y temerán, y nunca más volverán a hacer una maldad semejante en medio de ti.
+Deuteronomio 19:21 No tendrás piedad: vida por vida, ojo por ojo, diente por diente, mano por mano, pie por pie.
+Deuteronomio 20:1 »Cuando salgas a la batalla contra tus enemigos y veas caballos y carros, y pueblo más numeroso que tú, no tengas temor de ellos; porque el SEÑOR tu Dios que te sacó de la tierra de Egipto está contigo.
+Deuteronomio 20:2 Cuando se acerquen a la batalla, el sacerdote se llegará y hablará al pueblo,
+Deuteronomio 20:3 y les dirá: “Oye, Israel, hoy ustedes se acercan a la batalla contra sus enemigos; no desmaye su corazón; no teman ni se alarmen, ni se aterroricen delante de ellos,
+Deuteronomio 20:4 porque el SEÑOR su Dios es el que va con ustedes, para pelear por ustedes contra sus enemigos, para salvarlos”.
+Deuteronomio 20:5 »Los oficiales hablarán al pueblo: “¿Quién es el hombre que ha edificado una casa nueva y no la ha estrenado? Que salga y regrese a su casa, no sea que muera en la batalla y otro la estrene.
+Deuteronomio 20:6 ¿Quién es el hombre que ha plantado una viña y no ha tomado aún de su fruto? Que salga y regrese a su casa, no sea que muera en la batalla y otro goce de su fruto.
+Deuteronomio 20:7 ¿Y quién es el hombre que está comprometido con una mujer y no se ha casado? Que salga y regrese a su casa, no sea que muera en la batalla y otro se case con ella”.
+Deuteronomio 20:8 Entonces los oficiales hablarán otra vez al pueblo, y dirán: “¿Quién es hombre medroso y de corazón apocado? Que salga y regrese a su casa para que no haga desfallecer el corazón de sus hermanos como desfallece el corazón suyo”.
+Deuteronomio 20:9 Y cuando los oficiales acaben de hablar al pueblo, nombrarán capitanes de tropas que irán a la cabeza del pueblo.
+Deuteronomio 20:10 »Cuando te acerques a una ciudad para pelear contra ella, primero le ofrecerás la paz.
+Deuteronomio 20:11 Y si ella está de acuerdo en hacer la paz contigo y te abre sus puertas, entonces todo el pueblo que se encuentra en ella estará sujeto a ti para trabajos forzados y te servirá.
+Deuteronomio 20:12 Sin embargo, si no hace la paz contigo, sino que emprende la guerra contra ti, entonces la sitiarás.
+Deuteronomio 20:13 Cuando el SEÑOR tu Dios la entregue en tu mano, herirás a filo de espada a todos sus hombres.
+Deuteronomio 20:14 Solo las mujeres y los niños, los animales y todo lo que haya en la ciudad, todos sus despojos, tomarás para ti como botín. Comerás del botín de tus enemigos, que el SEÑOR tu Dios te ha dado.
+Deuteronomio 20:15 Así harás a todas las ciudades que están muy lejos de ti, que no sean de las ciudades de las naciones cercanas.
+Deuteronomio 20:16 »Pero en las ciudades de estos pueblos que el SEÑOR tu Dios te da en heredad, no dejarás con vida nada que respire,
+Deuteronomio 20:17 sino que los destruirás por completo: a los hititas, amorreos, cananeos, ferezeos, heveos y jebuseos, tal como el SEÑOR tu Dios te ha mandado,
+Deuteronomio 20:18 para que ellos no les enseñen a ustedes a imitar todas las abominaciones que ellos han hecho con sus dioses y no pequen contra el SEÑOR su Dios.
+Deuteronomio 20:19 »Cuando sities una ciudad por muchos días, peleando contra ella para tomarla, no destruirás sus árboles metiendo el hacha contra ellos; no los talarás, pues de ellos puedes comer. Porque, ¿es acaso el árbol del campo un hombre para que le pongas sitio?
+Deuteronomio 20:20 Solo los árboles que sabes que no dan fruto podrás destruir y talar, para construir máquinas de sitio contra la ciudad que está en guerra contigo, hasta que caiga.
+Deuteronomio 21:1 »Si en la tierra que el SEÑOR tu Dios te da para que la poseas, fuera encontrado alguien asesinado, tendido en el campo, y no se sabe quién lo mató,
+Deuteronomio 21:2 entonces tus ancianos y tus jueces irán y medirán la distancia a las ciudades que están alrededor del muerto.
+Deuteronomio 21:3 Y sucederá que los ancianos de la ciudad más próxima al lugar donde fue hallado el muerto, tomarán de la manada una novilla que no haya trabajado y que no haya llevado yugo;
+Deuteronomio 21:4 y los ancianos de esa ciudad traerán la novilla a un valle de aguas perennes, el cual no haya sido arado ni sembrado, y quebrarán el cuello de la novilla allí en el valle.
+Deuteronomio 21:5 »Entonces se acercarán los sacerdotes, hijos de Leví, porque el SEÑOR tu Dios los ha escogido para que le sirvan y para bendecir en el nombre del SEÑOR, y ellos decidirán todo litigio y toda ofensa;
+Deuteronomio 21:6 y todos los ancianos de la ciudad más cercana al lugar donde fue hallado el muerto, lavarán sus manos sobre la novilla cuyo cuello fue quebrado en el valle;
+Deuteronomio 21:7 y responderán y dirán: “Nuestras manos no han derramado esta sangre, ni nuestros ojos han visto nada.
+Deuteronomio 21:8 Perdona a Tu pueblo Israel, al cual has redimido, oh SEÑOR, y no culpes de sangre inocente a Tu pueblo Israel”. Y la culpa de la sangre les será perdonada.
+Deuteronomio 21:9 Así limpiarás la culpa de sangre inocente de en medio de ti, cuando hagas lo que es recto a los ojos del SEÑOR.
+Deuteronomio 21:10 »Cuando salgas a la guerra contra tus enemigos, y el SEÑOR tu Dios los entregue en tus manos, y los tomes en cautiverio,
+Deuteronomio 21:11 y veas entre los cautivos una mujer hermosa, y la desees, y la tomes para ti por mujer,
+Deuteronomio 21:12 la traerás a tu casa, y ella se rasurará la cabeza y se cortará sus uñas.
+Deuteronomio 21:13 También se quitará el vestido de su cautiverio, permanecerá en tu casa y llorará por su padre y por su madre por todo un mes; después de eso podrás llegarte a ella y ser su marido, y ella será tu mujer.
+Deuteronomio 21:14 Pero si no te agrada, la dejarás ir adonde quiera. No la venderás por dinero, ni la maltratarás, porque la has humillado.
+Deuteronomio 21:15 »Si un hombre tiene dos mujeres, una amada y otra aborrecida, y tanto la amada como la aborrecida le han dado hijos, si el primogénito es de la aborrecida,
+Deuteronomio 21:16 el día que reparta lo que tiene entre sus hijos, no puede él hacer primogénito al hijo de la amada con preferencia al hijo de la aborrecida, que es el primogénito,
+Deuteronomio 21:17 sino que reconocerá al primogénito, al hijo de la aborrecida, dándole una porción doble de todo lo que tiene, porque él es el principio de su vigor; a él le pertenece el derecho de primogenitura.
+Deuteronomio 21:18 »Si un hombre tiene un hijo terco y rebelde que no obedece a su padre ni a su madre, y aunque lo castiguen, ni aun así les hace caso,
+Deuteronomio 21:19 el padre y la madre lo tomarán y lo llevarán fuera a los ancianos de su ciudad, a la puerta de su ciudad natal.
+Deuteronomio 21:20 Y dirán a los ancianos de la ciudad: “Este hijo nuestro es terco y rebelde, no nos obedece, es glotón y borracho”.
+Deuteronomio 21:21 Entonces todos los hombres de la ciudad lo apedrearán hasta que muera. Así quitarás el mal de en medio de ti, y todo Israel oirá esto y temerá.
+Deuteronomio 21:22 »Si un hombre ha cometido pecado digno de muerte, y se le ha dado muerte, y lo has colgado de un árbol,
+Deuteronomio 21:23 su cuerpo no quedará colgado del árbol toda la noche, sino que ciertamente lo enterrarás el mismo día (pues el colgado es maldito de Dios), para que no contamines la tierra que el SEÑOR tu Dios te da en heredad.
+Deuteronomio 22:1 »No verás extraviado el buey de tu hermano, o su oveja, sin que te ocupes de ellos; sin falta los llevarás a tu hermano.
+Deuteronomio 22:2 Y si tu hermano no vive cerca de ti, o si no lo conoces, entonces lo traerás a tu casa, y estará contigo hasta que tu hermano lo busque; entonces se lo devolverás.
+Deuteronomio 22:3 Así harás con su asno, y lo mismo harás con su vestido; así harás igualmente con cualquier cosa que tu hermano haya perdido y que tú halles. No te es permitido ignorarlos.
+Deuteronomio 22:4 No verás el asno de tu hermano, o su buey, caído en el camino sin ocuparte de ellos; sin falta lo ayudarás a levantarlos.
+Deuteronomio 22:5 »La mujer no vestirá ropa de hombre, ni el hombre se pondrá ropa de mujer; porque cualquiera que hace esto es abominación al SEÑOR tu Dios.
+Deuteronomio 22:6 »Si encuentras un nido de pájaros por el camino, en un árbol o en la tierra, con polluelos o con huevos, y la madre echada sobre los polluelos o sobre los huevos, no tomarás la madre con los hijos;
+Deuteronomio 22:7 sin falta dejarás ir a la madre, aunque a los hijos los puedes tomar para ti, para que te vaya bien y prolongues tus días.
+Deuteronomio 22:8 »Cuando edifiques casa nueva, le harás un muro a tu azotea, para que no traigas culpa de sangre sobre tu casa si alguien se cayera de ella.
+Deuteronomio 22:9 »No sembrarás tu viña con dos clases de semilla, no sea que todo el fruto de la semilla que hayas sembrado y el producto de la viña queden inservibles.
+Deuteronomio 22:10 No ararás con buey y asno juntos.
+Deuteronomio 22:11 No vestirás ropa de material mezclado de lana y lino.
+Deuteronomio 22:12 »Te harás borlas en las cuatro puntas del manto con que te cubras.
+Deuteronomio 22:13 »Si un hombre toma a una mujer y se llega a ella, y después la aborrece,
+Deuteronomio 22:14 y la acusa de actos vergonzosos y la denuncia públicamente y dice: “Tomé a esta mujer, pero al llegarme a ella no la encontré virgen”,
+Deuteronomio 22:15 entonces el padre y la madre de la joven tomarán las pruebas de la virginidad de la joven y las llevarán a los ancianos de la ciudad, a la puerta.
+Deuteronomio 22:16 Y el padre de la joven dirá a los ancianos: “Yo di mi hija por mujer a este hombre, pero él la aborreció;
+Deuteronomio 22:17 ahora él le atribuye actos vergonzosos, diciendo: ‘No encontré virgen a tu hija’. Pero esta es la prueba de la virginidad de mi hija”. Y extenderán la ropa delante de los ancianos de la ciudad.
+Deuteronomio 22:18 »Entonces los ancianos de la ciudad tomarán al hombre y lo castigarán;
+Deuteronomio 22:19 le pondrán una multa de 100 siclos (1.14 kilos) de plata, que darán al padre de la joven, porque denunció públicamente a una virgen de Israel. Y ella seguirá siendo su mujer; no podrá despedirla en todos sus días.
+Deuteronomio 22:20 Pero si el asunto es verdad, que la joven no fue hallada virgen,
+Deuteronomio 22:21 entonces llevarán a la joven a la puerta de la casa de su padre, y los hombres de su ciudad la apedrearán hasta que muera, porque ella ha cometido una terrible ofensa en Israel prostituyéndose en la casa de su padre. Así quitarás el mal de en medio de ti.
+Deuteronomio 22:22 »Si se encuentra a un hombre acostado con una mujer casada, los dos morirán, el hombre que se acostó con la mujer, y la mujer. Así quitarás el mal de Israel.
+Deuteronomio 22:23 »Si hay una joven virgen que está comprometida a un hombre, y otro hombre la encuentra en la ciudad y se acuesta con ella,
+Deuteronomio 22:24 entonces ustedes llevarán a los dos a la puerta de esa ciudad y los apedrearán hasta que mueran; la joven, porque no dio voces en la ciudad, y el hombre, porque ha violado a la mujer de su prójimo; así quitarás el mal de en medio de ti.
+Deuteronomio 22:25 »Pero si el hombre encuentra en el campo a la joven que está comprometida, y el hombre la fuerza y se acuesta con ella; entonces morirá solo el que se acuesta con ella.
+Deuteronomio 22:26 No harás nada a la joven; no hay en la joven pecado digno de muerte, porque como cuando un hombre se levanta contra su vecino y lo mata, así es este caso.
+Deuteronomio 22:27 Cuando él la encontró en el campo, la joven comprometida dio voces, pero no había nadie que la salvara.
+Deuteronomio 22:28 »Si un hombre encuentra a una joven virgen que no está comprometida, y se apodera de ella y se acuesta con ella, y son descubiertos,
+Deuteronomio 22:29 entonces el hombre que se acostó con ella dará cincuenta siclos de plata al padre de la joven, y ella será su mujer porque la ha violado. No podrá despedirla en todos sus días.
+Deuteronomio 22:30 »Ninguno tomará a la mujer de su padre para que no descubra lo que es de su padre.
+Deuteronomio 23:1 »Ninguno que haya sido castrado o que tenga cortado su miembro viril entrará en la asamblea del SEÑOR.
+Deuteronomio 23:2 Ningún bastardo entrará en la asamblea del SEÑOR, ninguno de sus descendientes, aun hasta la décima generación, entrará en la asamblea del SEÑOR.
+Deuteronomio 23:3 Ningún amonita ni moabita entrará en la asamblea del SEÑOR; ninguno de sus descendientes, aun hasta la décima generación, entrará jamás en la asamblea del SEÑOR,
+Deuteronomio 23:4 porque no fueron al encuentro de ustedes con pan y agua en el camino cuando salieron de Egipto, y porque alquilaron contra ti a Balaam, hijo de Beor, de Petor en Mesopotamia, para maldecirte.
+Deuteronomio 23:5 Pero el SEÑOR tu Dios no quiso escuchar a Balaam, sino que el SEÑOR tu Dios te cambió la maldición en bendición, porque el SEÑOR tu Dios te ama.
+Deuteronomio 23:6 Nunca procurarás la paz ni la prosperidad de ellos en todos tus días.
+Deuteronomio 23:7 »No aborrecerás al edomita, porque es tu hermano; no aborrecerás al egipcio, porque fuiste extranjero en su tierra.
+Deuteronomio 23:8 Los hijos de la tercera generación que les nazcan podrán entrar en la asamblea del SEÑOR.
+Deuteronomio 23:9 »Cuando salgas como ejército contra tus enemigos, te guardarás de toda cosa impura.
+Deuteronomio 23:10 Si hay en medio de ti un hombre inmundo a causa de una emisión nocturna, debe salir fuera del campamento; no volverá a entrar al campamento.
+Deuteronomio 23:11 Pero al llegar la tarde se bañará con agua, y cuando se ponga el sol, podrá entrar de nuevo al campamento.
+Deuteronomio 23:12 Tendrás también un lugar fuera del campamento y saldrás allí;
+Deuteronomio 23:13 y entre tus herramientas tendrás una pala, y cuando te sientes allá fuera, cavarás con ella, y te darás vuelta para cubrir tu excremento.
+Deuteronomio 23:14 Porque el SEÑOR tu Dios anda en medio de tu campamento para librarte y para derrotar a tus enemigos de delante de ti, por tanto, tu campamento debe ser santo; y Él no debe ver nada indecente en medio de ti, no sea que se aparte de ti.
+Deuteronomio 23:15 »No entregarás a su amo un esclavo que venga a ti huyendo de su señor.
+Deuteronomio 23:16 Contigo habitará en medio de ti, en el lugar que él escoja en una de tus ciudades donde le parezca bien; no lo maltratarás.
+Deuteronomio 23:17 »Ninguna mujer de Israel será ramera de culto pagano; tampoco ninguno de los israelitas será sodomita de culto pagano.
+Deuteronomio 23:18 No traerás la paga de una ramera ni el sueldo de un perro a la casa del SEÑOR tu Dios para cualquier ofrenda votiva, porque los dos son abominación para el SEÑOR tu Dios.
+Deuteronomio 23:19 No cobrarás interés a tu hermano: interés sobre dinero, alimento, o cualquier cosa que pueda ser prestado a interés.
+Deuteronomio 23:20 Podrás cobrar interés a un extranjero, pero a tu hermano no le cobrarás interés a fin de que el SEÑOR tu Dios te bendiga en todo lo que emprendas en la tierra que vas a entrar para poseerla.
+Deuteronomio 23:21 »Cuando hagas un voto al SEÑOR tu Dios, no tardarás en pagarlo, porque el SEÑOR tu Dios ciertamente te lo reclamará, y sería pecado en ti si no lo cumples.
+Deuteronomio 23:22 Sin embargo, si te abstienes de hacer un voto, no sería pecado en ti.
+Deuteronomio 23:23 Lo que salga de tus labios, cuidarás de cumplirlo, tal como voluntariamente has hecho voto al SEÑOR tu Dios, lo cual has prometido con tu boca.
+Deuteronomio 23:24 »Cuando entres en la viña de tu prójimo, podrás comer las uvas que desees hasta saciarte, pero no pondrás ninguna en tu cesto.
+Deuteronomio 23:25 Cuando entres en la cosecha de tu prójimo, entonces podrás arrancar espigas con tu mano, pero no meterás la hoz a la cosecha de tu prójimo.
+Deuteronomio 24:1 »Cuando alguien toma una mujer y se casa con ella, si sucede que no le es agradable porque ha encontrado algo reprochable en ella, y le escribe certificado de divorcio, lo pone en su mano y la despide de su casa,
+Deuteronomio 24:2 y ella sale de su casa y llega a ser mujer de otro hombre;
+Deuteronomio 24:3 si el segundo marido la aborrece y le escribe certificado de divorcio, lo pone en su mano y la despide de su casa, o si muere este último marido que la tomó para ser su mujer,
+Deuteronomio 24:4 al primer marido que la despidió no le es permitido tomarla nuevamente como mujer, porque ha sido despreciada; pues eso es abominación ante el SEÑOR. No traerás pecado sobre la tierra que el SEÑOR tu Dios te da por heredad.
+Deuteronomio 24:5 »Cuando un hombre es recién casado, no saldrá con el ejército ni se le impondrá ningún deber; quedará libre en su casa por un año para hacer feliz a la mujer que ha tomado.
+Deuteronomio 24:6 »Ninguno tomará en prenda el molino de mano ni la muela del molino, porque sería tomar en prenda la vida del hombre.
+Deuteronomio 24:7 »Si se encuentra a un hombre que haya secuestrado a alguien de sus hermanos de los israelitas, y lo haya tratado con violencia, o lo haya vendido, entonces ese ladrón morirá. Así quitarás el mal de en medio de ti.
+Deuteronomio 24:8 »Cuídate de una infección de lepra, para que observes diligentemente y hagas conforme a todo lo que los sacerdotes levitas les enseñen. Como les he ordenado, así cuidarán de hacer.
+Deuteronomio 24:9 Recuerda lo que el SEÑOR tu Dios hizo a Miriam en el camino, cuando ustedes salían de Egipto.
+Deuteronomio 24:10 »Cuando prestes cualquier cosa a tu prójimo, no entrarás en su casa para tomar su prenda.
+Deuteronomio 24:11 Tú te quedarás afuera, y el hombre a quien hiciste el préstamo te traerá la prenda.
+Deuteronomio 24:12 Si él es un hombre pobre, no te acostarás reteniendo aún su prenda.
+Deuteronomio 24:13 Al ponerse el sol, sin falta le devolverás la prenda para que se acueste con su ropa, y te bendiga; y te será justicia delante del SEÑOR tu Dios.
+Deuteronomio 24:14 »No oprimirás al jornalero pobre y necesitado, ya sea uno de tus conciudadanos o uno de los extranjeros que habita en tu tierra y en tus ciudades.
+Deuteronomio 24:15 En su día le darás su jornal antes de la puesta del sol, porque es pobre y ha puesto su corazón en él; para que él no clame contra ti al SEÑOR, y llegue a ser pecado en ti.
+Deuteronomio 24:16 »Los padres no morirán por sus hijos, ni los hijos morirán por sus padres; cada uno morirá por su propio pecado.
+Deuteronomio 24:17 »No pervertirás la justicia debida al extranjero ni al huérfano, ni tomarás en prenda la ropa de la viuda,
+Deuteronomio 24:18 sino que recordarás que fuiste esclavo en Egipto y que el SEÑOR tu Dios te rescató de allí; por tanto, yo te mando que hagas esto.
+Deuteronomio 24:19 »Cuando siegues tu cosecha en tu campo y olvides alguna gavilla en el campo, no regresarás a recogerla; será para el extranjero, para el huérfano y para la viuda, para que el SEÑOR tu Dios te bendiga en toda obra de tus manos.
+Deuteronomio 24:20 Cuando sacudas tus olivos, no recorrerás las ramas que hayas dejado tras de ti, serán para el extranjero, para el huérfano y para la viuda.
+Deuteronomio 24:21 Cuando vendimies tu viña, no la repasarás; será para el extranjero, para el huérfano y para la viuda.
+Deuteronomio 24:22 Recordarás que tú fuiste esclavo en la tierra de Egipto; por tanto, yo te mando que hagas estas cosas.
+Deuteronomio 25:1 »Si hay pleito entre dos hombres y van a la corte, y los jueces deciden el caso, y absuelven al justo y condenan al culpable,
+Deuteronomio 25:2 y si el culpable merece ser azotado, entonces el juez le hará tenderse, y será azotado en su presencia con el número de azotes de acuerdo con su culpa.
+Deuteronomio 25:3 Puede darle cuarenta azotes, pero no más, no sea que le dé muchos más azotes que estos, y tu hermano quede degradado ante tus ojos.
+Deuteronomio 25:4 »No pondrás bozal al buey mientras trilla.
+Deuteronomio 25:5 »Cuando dos hermanos habitan juntos y uno de ellos muere y no tiene hijo, la mujer del fallecido no se casará fuera de la familia con un extraño. El cuñado se allegará a ella y la tomará para sí como mujer, y cumplirá con ella su deber de cuñado.
+Deuteronomio 25:6 Y será que el primogénito que ella dé a luz llevará el nombre de su hermano difunto, para que su nombre no sea borrado de Israel.
+Deuteronomio 25:7 Pero si el hombre no quiere tomar a su cuñada, entonces su cuñada irá a la puerta, a los ancianos, y dirá: “Mi cuñado se niega a establecer un nombre para su hermano en Israel; no quiere cumplir para conmigo su deber de cuñado”.
+Deuteronomio 25:8 Entonces los ancianos de su ciudad lo llamarán y le hablarán. Y si él persiste y dice: “No deseo tomarla”,
+Deuteronomio 25:9 entonces su cuñada vendrá a él a la vista de los ancianos, le quitará la sandalia de su pie y le escupirá en la cara; y ella declarará: “Así se hace al hombre que no quiere edificar la casa de su hermano”.
+Deuteronomio 25:10 Y en Israel se le llamará: “La casa del de la sandalia quitada”.
+Deuteronomio 25:11 »Si dos hombres luchan entre sí, un hombre y su conciudadano, y la mujer de uno se acerca para librar a su marido de la mano del que lo golpea, y ella extiende su mano y le agarra sus partes vergonzosas,
+Deuteronomio 25:12 entonces le cortarás su mano; no tendrás piedad.
+Deuteronomio 25:13 »No tendrás en tu bolsa pesas diferentes, una grande y una pequeña.
+Deuteronomio 25:14 No tendrás en tu casa medidas diferentes, una grande y una pequeña.
+Deuteronomio 25:15 Tendrás peso completo y justo; tendrás medida completa y justa, para que se prolonguen tus días en la tierra que el SEÑOR tu Dios te da.
+Deuteronomio 25:16 Porque todo el que hace estas cosas, todo el que comete injusticia, es abominación para el SEÑOR tu Dios.
+Deuteronomio 25:17 »Acuérdate de lo que te hizo Amalec en el camino cuando saliste de Egipto,
+Deuteronomio 25:18 cómo te salió al encuentro en el camino, y atacó entre los tuyos a todos los agotados en tu retaguardia cuando tú estabas fatigado y cansado; y él no temió a Dios.
+Deuteronomio 25:19 Por tanto, cuando el SEÑOR tu Dios te haya dado descanso de todos tus enemigos alrededor, en la tierra que el SEÑOR tu Dios te da en heredad para poseerla, borrarás de debajo del cielo la memoria de Amalec; no lo olvides.
+Deuteronomio 26:1 »Cuando entres en la tierra que el SEÑOR tu Dios te da por herencia, tomes posesión de ella y habites en ella,
+Deuteronomio 26:2 tomarás las primicias de todos los frutos del suelo que recojas de la tierra que el SEÑOR tu Dios te da, y las pondrás en una canasta e irás al lugar que el SEÑOR tu Dios escoja para establecer Su nombre.
+Deuteronomio 26:3 Te presentarás al sacerdote que esté en funciones en esos días y le dirás: “Declaro hoy al SEÑOR mi Dios que he entrado en la tierra que el SEÑOR juró a nuestros padres que nos daría”.
+Deuteronomio 26:4 »Entonces el sacerdote tomará la canasta de tu mano, y la pondrá delante del altar del SEÑOR tu Dios.
+Deuteronomio 26:5 Y tú responderás delante del SEÑOR tu Dios: “Mi padre fue un arameo errante y descendió a Egipto y residió allí, siendo pocos en número; pero allí llegó a ser una nación grande, fuerte y numerosa.
+Deuteronomio 26:6 Pero los egipcios nos maltrataron y nos afligieron y pusieron sobre nosotros dura servidumbre.
+Deuteronomio 26:7 Entonces clamamos al SEÑOR, el Dios de nuestros padres, y el SEÑOR oyó nuestra voz y vio nuestra aflicción, nuestro trabajo y nuestra opresión.
+Deuteronomio 26:8 Y el SEÑOR nos sacó de Egipto con mano fuerte y brazo extendido, con gran terror, con señales y milagros;
+Deuteronomio 26:9 y nos ha traído a este lugar y nos ha dado esta tierra, una tierra que mana leche y miel.
+Deuteronomio 26:10 Ahora, yo he traído las primicias de los frutos de la tierra que Tú, oh SEÑOR, me has dado”. Entonces las pondrás delante del SEÑOR tu Dios, y adorarás delante del SEÑOR tu Dios;
+Deuteronomio 26:11 y tú te alegrarás, y también el levita y el extranjero que está en medio de ti, por todo el bien que el SEÑOR tu Dios te ha dado a ti y a tu casa.
+Deuteronomio 26:12 »Cuando acabes de separar todo el diezmo de tus frutos en el tercer año, el año del diezmo, entonces se lo darás al levita, al extranjero, al huérfano y a la viuda, para que puedan comer en tus ciudades y sean saciados.
+Deuteronomio 26:13 Entonces dirás delante del SEÑOR tu Dios: “He sacado de mi casa la porción consagrada y también la he dado al levita, al extranjero, al huérfano y a la viuda conforme a todos Tus mandamientos que Tú me has mandado. No he violado ni olvidado ninguno de Tus mandamientos.
+Deuteronomio 26:14 No he comido de ella estando de luto, ni he tomado de ella mientras estaba inmundo, ni he ofrecido de ella a los muertos. He escuchado la voz del SEÑOR mi Dios; he hecho conforme a todo lo que Tú me has mandado.
+Deuteronomio 26:15 Mira desde Tu morada santa, desde el cielo, y bendice a Tu pueblo Israel y a la tierra que nos has dado, una tierra que mana leche y miel, como juraste a nuestros padres”.
+Deuteronomio 26:16 »El SEÑOR tu Dios te manda hoy que cumplas estos estatutos y ordenanzas. Cuidarás, pues, de cumplirlos con todo tu corazón y con toda tu alma.
+Deuteronomio 26:17 Has declarado hoy que el SEÑOR es tu Dios y que andarás en Sus caminos y guardarás Sus estatutos, Sus mandamientos y Sus ordenanzas, y que escucharás Su voz.
+Deuteronomio 26:18 Y el SEÑOR ha declarado hoy que tú eres Su pueblo, Su exclusiva posesión, como Él te prometió, y que debes guardar todos Sus mandamientos;
+Deuteronomio 26:19 y que Él te pondrá en alto sobre todas las naciones que ha hecho, para alabanza, renombre y honor; y serás un pueblo consagrado al SEÑOR tu Dios, como Él ha dicho».
+Deuteronomio 27:1 Moisés y los ancianos de Israel dieron orden al pueblo y dijeron: «Guarden todos los mandamientos que yo les ordeno hoy.
+Deuteronomio 27:2 El día que pasen el Jordán a la tierra que el SEÑOR tu Dios te da, levantarás para ti piedras grandes, y las blanquearás con cal,
+Deuteronomio 27:3 y escribirás en ellas todas las palabras de esta ley, cuando hayas pasado, para entrar en la tierra que el SEÑOR tu Dios te da, una tierra que mana leche y miel, tal como el SEÑOR, el Dios de tus padres te prometió.
+Deuteronomio 27:4 Así que cuando pases el Jordán, levantarás estas piedras en el monte Ebal, como yo te ordeno hoy, y las blanquearás con cal.
+Deuteronomio 27:5 Además, edificarás allí un altar al SEÑOR tu Dios, un altar de piedras; pero no alzarás sobre ellas herramientas de hierro.
+Deuteronomio 27:6 Construirás el altar del SEÑOR tu Dios de piedras enteras; y sobre él ofrecerás holocaustos al SEÑOR tu Dios;
+Deuteronomio 27:7 y sacrificarás ofrendas de paz y comerás allí, y te alegrarás delante del SEÑOR tu Dios.
+Deuteronomio 27:8 Escribirás claramente en las piedras todas las palabras de esta ley».
+Deuteronomio 27:9 Entonces Moisés y los sacerdotes levitas dijeron a todo Israel: «Guarda silencio y escucha, oh Israel. Hoy te has convertido en pueblo del SEÑOR tu Dios.
+Deuteronomio 27:10 Por tanto, obedecerás al SEÑOR tu Dios, y cumplirás Sus mandamientos y Sus estatutos que hoy te ordeno».
+Deuteronomio 27:11 También aquel día Moisés ordenó al pueblo:
+Deuteronomio 27:12 «Cuando pases el Jordán, estas tribus estarán sobre el monte Gerizim para bendecir al pueblo: Simeón, Leví, Judá, Isacar, José y Benjamín.
+Deuteronomio 27:13 Y para la maldición, estas tribus estarán en el monte Ebal: Rubén, Gad, Aser, Zabulón, Dan y Neftalí.
+Deuteronomio 27:14 Entonces los levitas responderán y dirán en alta voz a todos los hombres de Israel:
+Deuteronomio 27:15 “Maldito el hombre que haga ídolo o imagen de fundición, abominación al SEÑOR, obra de las manos del artífice, y la erige en secreto”. Y todo el pueblo responderá, y dirá: “Amén”.
+Deuteronomio 27:16 “Maldito el que desprecie a su padre o a su madre”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:17 “Maldito el que cambie el lindero de su vecino”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:18 “Maldito el que haga errar al ciego en el camino”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:19 “Maldito el que pervierta el derecho del extranjero, del huérfano y de la viuda”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:20 “Maldito el que se acueste con la mujer de su padre, porque ha descubierto lo que es de su padre”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:21 “Maldito el que se eche con cualquier animal”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:22 “Maldito el que se acueste con su hermana, la hija de su padre o de su madre”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:23 “Maldito el que se acueste con su suegra”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:24 “Maldito el que hiera a su vecino secretamente”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:25 “Maldito el que acepte soborno para quitar la vida a un inocente”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 27:26 “Maldito el que no confirme las palabras de esta ley para ponerlas por obra”. Y todo el pueblo dirá: “Amén”.
+Deuteronomio 28:1 »Y sucederá que si obedeces diligentemente al SEÑOR tu Dios, cuidando de cumplir todos Sus mandamientos que yo te mando hoy, el SEÑOR tu Dios te pondrá en alto sobre todas las naciones de la tierra.
+Deuteronomio 28:2 Y todas estas bendiciones vendrán sobre ti y te alcanzarán, si obedeces al SEÑOR tu Dios:
+Deuteronomio 28:3 Bendito serás en la ciudad, y bendito serás en el campo.
+Deuteronomio 28:4 Bendito el fruto de tu vientre, el producto de tu suelo, el fruto de tu ganado, el aumento de tus vacas y las crías de tus ovejas.
+Deuteronomio 28:5 Benditas serán tu canasta y tu artesa.
+Deuteronomio 28:6 Bendito serás cuando entres, y bendito serás cuando salgas.
+Deuteronomio 28:7 »El SEÑOR hará que los enemigos que se levanten contra ti sean derrotados delante de ti; saldrán contra ti por un camino y huirán delante de ti por siete caminos.
+Deuteronomio 28:8 El SEÑOR mandará que la bendición sea contigo en tus graneros y en todo aquello en que pongas tu mano, y te bendecirá en la tierra que el SEÑOR tu Dios te da.
+Deuteronomio 28:9 Te establecerá el SEÑOR como pueblo santo para sí, como te juró, si guardas los mandamientos del SEÑOR tu Dios y andas en Sus caminos.
+Deuteronomio 28:10 Entonces verán todos los pueblos de la tierra que sobre ti es invocado el nombre del SEÑOR; y te temerán.
+Deuteronomio 28:11 »El SEÑOR te hará abundar en bienes, en el fruto de tu vientre, en el fruto de tu ganado y en el producto de tu suelo, en la tierra que el SEÑOR juró a tus padres que te daría.
+Deuteronomio 28:12 El SEÑOR abrirá para ti Su buen tesoro, los cielos, para dar lluvia a tu tierra a su tiempo y para bendecir toda la obra de tu mano; y tú prestarás a muchas naciones, pero no tomarás prestado.
+Deuteronomio 28:13 El SEÑOR te pondrá a la cabeza y no a la cola, solo estarás encima y nunca estarás debajo, si escuchas los mandamientos del SEÑOR tu Dios que te ordeno hoy, para que los guardes cuidadosamente.
+Deuteronomio 28:14 No te desvíes de ninguna de las palabras que te ordeno hoy, ni a la derecha ni a la izquierda, para ir tras otros dioses y servirles.
+Deuteronomio 28:15 »Pero sucederá que si no obedeces al SEÑOR tu Dios, y no guardas todos Sus mandamientos y estatutos que hoy te ordeno, vendrán sobre ti todas estas maldiciones y te alcanzarán:
+Deuteronomio 28:16 »Maldito serás en la ciudad, y maldito serás en el campo.
+Deuteronomio 28:17 »Malditas serán tu canasta y tu artesa.
+Deuteronomio 28:18 »Maldito el fruto de tu vientre y el producto de tu suelo, el aumento de tu ganado y las crías de tu rebaño.
+Deuteronomio 28:19 »Maldito serás cuando entres y maldito serás cuando salgas.
+Deuteronomio 28:20 »El SEÑOR enviará sobre ti maldición, confusión y censura en todo lo que emprendas, hasta que seas destruido y hasta que perezcas rápidamente, a causa de la maldad de tus hechos, porque me has abandonado.
+Deuteronomio 28:21 El SEÑOR hará que la peste se te pegue hasta que te haya consumido de sobre la tierra adonde vas a entrar para poseerla.
+Deuteronomio 28:22 Te herirá el SEÑOR de tisis, de fiebre, de inflamación y de gran ardor, con la espada, con pestes y plagas; y te perseguirán hasta que perezcas.
+Deuteronomio 28:23 El cielo que está encima de tu cabeza será de bronce, y la tierra que está debajo de ti, de hierro.
+Deuteronomio 28:24 El SEÑOR hará que la lluvia de tu tierra sea polvo y ceniza; descenderá del cielo sobre ti hasta que seas destruido.
+Deuteronomio 28:25 El SEÑOR hará que seas derrotado delante de tus enemigos; saldrás contra ellos por un camino, pero huirás por siete caminos delante de ellos, y serás ejemplo de terror para todos los reinos de la tierra.
+Deuteronomio 28:26 »Y tus cadáveres serán alimento para todas las aves del cielo y para los animales de la tierra, y no habrá nadie que los espante.
+Deuteronomio 28:27 »El SEÑOR te herirá con los tumores de Egipto y con úlceras, sarna y comezón, de los que no podrás ser sanado.
+Deuteronomio 28:28 Te herirá el SEÑOR con locura, con ceguera y con turbación de corazón;
+Deuteronomio 28:29 y andarás a tientas a mediodía como el ciego anda a tientas en la oscuridad, y no serás prosperado en tus caminos; más bien serás oprimido y robado continuamente, sin que nadie te salve.
+Deuteronomio 28:30 Te desposarás con una mujer, pero otro hombre se acostará con ella; edificarás una casa, pero no habitarás en ella; plantarás una viña, pero no aprovecharás su fruto.
+Deuteronomio 28:31 Tu buey será degollado delante de tus ojos, pero no comerás de él; tu asno será arrebatado, y no te será devuelto; tu oveja será dada a tus enemigos, y no tendrás quien te salve.
+Deuteronomio 28:32 Tus hijos y tus hijas serán dados a otro pueblo, mientras tus ojos miran y desfallecen por ellos continuamente, pero no habrá nada que puedas hacer.
+Deuteronomio 28:33 Un pueblo que no conoces comerá el producto de tu suelo y de todo tu trabajo, y no serás más que un pueblo oprimido y quebrantado todos los días.
+Deuteronomio 28:34 Y te volverás loco por lo que verán tus ojos.
+Deuteronomio 28:35 Te herirá el SEÑOR en las rodillas y en las piernas con llagas malignas de las que no podrás ser sanado, desde la planta de tu pie hasta la coronilla.
+Deuteronomio 28:36 »El SEÑOR te llevará a ti y a tu rey, al que hayas puesto sobre ti, a una nación que ni tú ni tus padres han conocido, y allí servirás a otros dioses de madera y de piedra.
+Deuteronomio 28:37 Y vendrás a ser motivo de horror, proverbio y burla entre todos los pueblos donde el SEÑOR te lleve.
+Deuteronomio 28:38 »Sacarás mucha semilla al campo, pero recogerás poco, porque la langosta la devorará.
+Deuteronomio 28:39 Plantarás y cultivarás viñas, pero no beberás del vino ni recogerás las uvas, porque el gusano se las comerá.
+Deuteronomio 28:40 Tendrás olivos por todo tu territorio pero no te ungirás con el aceite, porque tus aceitunas se caerán.
+Deuteronomio 28:41 Tendrás hijos e hijas, pero no serán tuyos, porque irán al cautiverio.
+Deuteronomio 28:42 Todos tus árboles y el fruto de tu suelo los consumirá la langosta.
+Deuteronomio 28:43 »El extranjero que esté en medio de ti se elevará sobre ti cada vez más alto, pero tú descenderás cada vez más bajo.
+Deuteronomio 28:44 Él te prestará, pero tú no le podrás prestar. Él será la cabeza y tú serás la cola.
+Deuteronomio 28:45 »Todas estas maldiciones vendrán sobre ti y te perseguirán y te alcanzarán hasta que seas destruido, porque tú no escuchaste la voz del SEÑOR tu Dios, y no guardaste los mandamientos y estatutos que Él te mandó.
+Deuteronomio 28:46 Ellas serán señal y maravilla sobre ti y sobre tu descendencia para siempre.
+Deuteronomio 28:47 Por cuanto no serviste al SEÑOR tu Dios con alegría y con gozo de corazón, cuando tenías la abundancia de todas las cosas,
+Deuteronomio 28:48 por tanto servirás a tus enemigos, los cuales el SEÑOR enviará contra ti: en hambre, en sed, en desnudez y en escasez de todas las cosas. Él pondrá yugo de hierro sobre tu cuello hasta que te haya destruido.
+Deuteronomio 28:49 »El SEÑOR levantará contra ti una nación de lejos, desde el extremo de la tierra, que descenderá veloz como águila, una nación cuya lengua no entenderás,
+Deuteronomio 28:50 una nación de rostro fiero que no tendrá respeto al anciano ni tendrá compasión del niño.
+Deuteronomio 28:51 Se comerá la cría de tu ganado y el fruto de tu suelo, hasta que seas destruido; tampoco te dejará grano, ni vino nuevo, ni aceite, ni el aumento de tu ganado, ni las crías de tu rebaño, hasta que te haya hecho perecer.
+Deuteronomio 28:52 »Y esa nación te pondrá sitio en todas tus ciudades, hasta que tus muros altos y fortificados en los cuales tú confiabas caigan por toda tu tierra; y te sitiará en todas tus ciudades, por toda la tierra que el SEÑOR tu Dios te ha dado.
+Deuteronomio 28:53 Entonces comerás el fruto de tu vientre, la carne de tus hijos y de tus hijas que el SEÑOR tu Dios te ha dado, en el asedio y en la angustia con que tu enemigo te oprimirá.
+Deuteronomio 28:54 El hombre que es tierno y muy delicado en medio de ti, será hostil hacia su hermano, hacia la mujer que ama y hacia el resto de sus hijos que le queden,
+Deuteronomio 28:55 y no dará a ninguno de ellos nada de la carne de sus hijos que se comerá, ya que no le quedará nada en el asedio y en la angustia con que tu enemigo te oprimirá en todas tus ciudades.
+Deuteronomio 28:56 La mujer tierna y delicada en medio tuyo, que no osaría poner la planta de su pie en tierra por ser delicada y tierna, será hostil hacia el esposo que ama, también hacia su hijo, hacia su hija,
+Deuteronomio 28:57 hacia la placenta que salga de su seno y hacia los hijos que dé a luz; porque se los comerá en secreto por falta de otra cosa, en el asedio y en la angustia con que tu enemigo te oprimirá en tus ciudades.
+Deuteronomio 28:58 »Si no cuidas de poner en práctica todas las palabras de esta ley que están escritas en este libro, temiendo este nombre glorioso y temible, el SEÑOR tu Dios,
+Deuteronomio 28:59 entonces el SEÑOR hará horribles tus plagas y las plagas de tus descendientes, plagas severas y duraderas, y enfermedades perniciosas y crónicas.
+Deuteronomio 28:60 Y traerá de nuevo sobre ti todas las enfermedades de Egipto de las cuales tenías temor, y no te dejarán.
+Deuteronomio 28:61 »También el SEÑOR traerá sobre ti toda enfermedad y toda plaga que no están escritas en el libro de esta ley, hasta que seas destruido.
+Deuteronomio 28:62 Entonces quedarán pocos de ustedes en número, aunque eran multitud como las estrellas del cielo, porque no obedeciste al SEÑOR tu Dios.
+Deuteronomio 28:63 Y sucederá que tal como el SEÑOR se deleitaba en ustedes para prosperarlos y multiplicarlos, así el SEÑOR se deleitará en ustedes para hacerlos perecer y destruirlos; y serán arrancados de la tierra en la cual entran para poseerla.
+Deuteronomio 28:64 »Además, el SEÑOR te dispersará entre todos los pueblos de un extremo de la tierra hasta el otro extremo de la tierra; y allí servirás a otros dioses, de madera y de piedra, que ni tú ni tus padres han conocido.
+Deuteronomio 28:65 Y entre esas naciones no hallarás descanso, ni habrá reposo para la planta de tu pie, sino que allí el SEÑOR te dará un corazón temeroso, desfallecimiento de ojos y desesperación de alma.
+Deuteronomio 28:66 Tendrás la vida pendiente de un hilo; y estarás aterrado de noche y de día, y no tendrás seguridad de tu vida.
+Deuteronomio 28:67 Por la mañana dirás: “¡Oh, si fuera la tarde!”. Y por la tarde dirás: “¡Oh, si fuera la mañana!”, por causa del espanto de tu corazón con que temerás y por lo que verán tus ojos.
+Deuteronomio 28:68 Y el SEÑOR te hará volver a Egipto en naves, por el camino del cual yo te había dicho: “Nunca más volverás a verlo”. Y allí ustedes se ofrecerán en venta como esclavos y esclavas a sus enemigos, pero no habrá comprador».
+Deuteronomio 29:1 Estas son las palabras del pacto que el SEÑOR mandó a Moisés que hiciera con los israelitas en la tierra de Moab, además del pacto que Él había hecho con ellos en Horeb.
+Deuteronomio 29:2 Moisés convocó a todo Israel y les dijo: «Delante de sus ojos, ustedes han visto todo lo que el SEÑOR hizo en la tierra de Egipto a Faraón, a todos sus siervos y a toda su tierra,
+Deuteronomio 29:3 las grandes pruebas que vieron sus ojos, aquellas grandes señales y maravillas.
+Deuteronomio 29:4 Pero hasta el día de hoy el SEÑOR no les ha dado corazón para entender, ni ojos para ver, ni oídos para oír.
+Deuteronomio 29:5 »Yo los he conducido durante cuarenta años en el desierto; no se han gastado los vestidos sobre ustedes y no se ha gastado la sandalia en su pie.
+Deuteronomio 29:6 No han comido pan ni han bebido vino ni sidra, para que sepan que Yo soy el SEÑOR su Dios.
+Deuteronomio 29:7 Cuando ustedes llegaron a este lugar, Sehón, rey de Hesbón, y Og, rey de Basán, salieron a nuestro encuentro para pelear, pero los derrotamos;
+Deuteronomio 29:8 y tomamos su tierra y la dimos en herencia a los rubenitas, a los gaditas y a la media tribu de Manasés.
+Deuteronomio 29:9 Guarden, pues, las palabras de este pacto y pónganlas en práctica, para que prosperen en todo lo que hagan.
+Deuteronomio 29:10 »Hoy están todos ustedes en presencia del SEÑOR su Dios: sus jefes, sus tribus, sus ancianos y sus oficiales, todos los hombres de Israel,
+Deuteronomio 29:11 sus pequeños, sus mujeres, y el extranjero que está dentro de tus campamentos, desde tu leñador hasta el que saca tu agua,
+Deuteronomio 29:12 para que entres en el pacto con el SEÑOR tu Dios, y en Su juramento que el SEÑOR tu Dios hace hoy contigo,
+Deuteronomio 29:13 a fin de establecerte hoy como Su pueblo y que Él sea tu Dios, tal como te lo ha dicho y como lo juró a tus padres Abraham, Isaac y Jacob.
+Deuteronomio 29:14 »Y no hago solo con ustedes este pacto y este juramento,
+Deuteronomio 29:15 sino también con los que hoy están aquí con nosotros en la presencia del SEÑOR nuestro Dios, y con los que no están hoy aquí con nosotros
+Deuteronomio 29:16 (pues ustedes saben cómo habitamos en la tierra de Egipto y cómo pasamos en medio de las naciones por las cuales han pasado,
+Deuteronomio 29:17 además, han visto sus abominaciones y los ídolos de madera y de piedra, de plata y de oro, que tenían con ellos);
+Deuteronomio 29:18 no sea que haya entre ustedes hombre o mujer, familia o tribu, cuyo corazón se aleje hoy del SEÑOR nuestro Dios para ir y servir a los dioses de aquellas naciones; no sea que haya entre ustedes una raíz que produzca fruto venenoso y ajenjo.
+Deuteronomio 29:19 »Y sucederá que cuando él oiga las palabras de esta maldición, se envanecerá, diciendo: “Tendré paz aunque ande en la terquedad de mi corazón, a fin de destruir la tierra regada junto con la seca”.
+Deuteronomio 29:20 El SEÑOR jamás querrá perdonarlo, sino que la ira del SEÑOR y Su celo arderán contra ese hombre, y toda maldición que está escrita en este libro caerá sobre él, y el SEÑOR borrará su nombre de debajo del cielo.
+Deuteronomio 29:21 Entonces el SEÑOR lo señalará para adversidad de entre todas las tribus de Israel, según todas las maldiciones del pacto que están escritas en este libro de la ley.
+Deuteronomio 29:22 »Y la generación venidera, sus hijos que se levanten después de ustedes y el extranjero que venga de tierra lejana, cuando vean las plagas de la tierra y las enfermedades con las que el SEÑOR la ha afligido, dirán:
+Deuteronomio 29:23 “Toda su tierra es azufre, sal y calcinación, sin sembrar, nada germina y el pasto no crece en ella, como en la destrucción de Sodoma y Gomorra, de Adma y de Zeboim que el SEÑOR destruyó en Su ira y en Su furor”.
+Deuteronomio 29:24 Y todas las naciones dirán: “¿Por qué ha hecho así el SEÑOR a esta tierra? ¿Por qué esta gran explosión de ira?”.
+Deuteronomio 29:25 »Entonces los hombres dirán: “Porque abandonaron el pacto que el SEÑOR, el Dios de sus padres, hizo con ellos cuando los sacó de la tierra de Egipto.
+Deuteronomio 29:26 Y ellos fueron y sirvieron a otros dioses y los adoraron, dioses que no habían conocido y los cuales Él no les había dado.
+Deuteronomio 29:27 Por eso, ardió la ira del SEÑOR contra aquella tierra, para traer sobre ella toda maldición que está escrita en este libro;
+Deuteronomio 29:28 y el SEÑOR los desarraigó de su tierra con ira, con furor y con gran enojo, y los arrojó a otra tierra, hasta hoy”.
+Deuteronomio 29:29 »Las cosas secretas pertenecen al SEÑOR nuestro Dios, pero las cosas reveladas nos pertenecen a nosotros y a nuestros hijos para siempre, a fin de que guardemos todas las palabras de esta ley.
+Deuteronomio 30:1 »Y sucederá que cuando todas estas cosas hayan venido sobre ti, la bendición y la maldición que he puesto delante de ti, y tú las recuerdes en todas las naciones adonde el SEÑOR tu Dios te haya desterrado,
+Deuteronomio 30:2 y vuelvas al SEÑOR tu Dios, tú y tus hijos, y le obedezcas con todo tu corazón y con toda tu alma conforme a todo lo que yo te ordeno hoy,
+Deuteronomio 30:3 entonces el SEÑOR tu Dios te hará volver de tu cautividad, y tendrá compasión de ti y te recogerá de nuevo de entre todos los pueblos adonde el SEÑOR tu Dios te haya dispersado.
+Deuteronomio 30:4 Si tus desterrados están en los confines de la tierra, de allí el SEÑOR tu Dios te recogerá y de allí te hará volver.
+Deuteronomio 30:5 Y el SEÑOR tu Dios te llevará a la tierra que tus padres poseyeron, y tú la poseerás; y Él te prosperará y te multiplicará más que a tus padres.
+Deuteronomio 30:6 »Además, el SEÑOR tu Dios circuncidará tu corazón y el corazón de tus descendientes, para que ames al SEÑOR tu Dios con todo tu corazón y con toda tu alma, a fin de que vivas.
+Deuteronomio 30:7 El SEÑOR tu Dios pondrá todas estas maldiciones sobre los enemigos y sobre los aborrecedores que te persiguieron.
+Deuteronomio 30:8 Y tú volverás a escuchar la voz del SEÑOR, y guardarás todos Sus mandamientos que yo te ordeno hoy.
+Deuteronomio 30:9 Entonces el SEÑOR tu Dios te hará prosperar abundantemente en toda la obra de tu mano, en el fruto de tu vientre, en el fruto de tu ganado y en el producto de tu tierra, pues el SEÑOR de nuevo se deleitará en ti para bien, tal como se deleitó en tus padres,
+Deuteronomio 30:10 si obedeces a la voz del SEÑOR tu Dios, guardando Sus mandamientos y Sus estatutos que están escritos en este libro de la ley, y si te vuelves al SEÑOR tu Dios con todo tu corazón y con toda tu alma.
+Deuteronomio 30:11 »Este mandamiento que yo te ordeno hoy no es muy difícil para ti, ni está fuera de tu alcance.
+Deuteronomio 30:12 No está en el cielo, para que digas: “¿Quién subirá por nosotros al cielo para traérnoslo y hacérnoslo oír a fin de que lo guardemos?”.
+Deuteronomio 30:13 Ni está más allá del mar, para que digas: “¿Quién cruzará el mar por nosotros para traérnoslo y para hacérnoslo oír, a fin de que lo guardemos?”.
+Deuteronomio 30:14 Pues la palabra está muy cerca de ti, en tu boca y en tu corazón, para que la guardes.
+Deuteronomio 30:15 »Mira, yo he puesto hoy delante de ti la vida y el bien, la muerte y el mal.
+Deuteronomio 30:16 Hoy te ordeno amar al SEÑOR tu Dios, andar en Sus caminos y guardar Sus mandamientos, Sus estatutos y Sus decretos, para que vivas y te multipliques, a fin de que el SEÑOR tu Dios te bendiga en la tierra que vas a entrar para poseerla.
+Deuteronomio 30:17 Pero si tu corazón se desvía y no escuchas, sino que te dejas arrastrar y te postras ante otros dioses y los sirves,
+Deuteronomio 30:18 Yo les declaro hoy que ciertamente perecerán. No prolongarán sus días en la tierra adonde tú vas, cruzando el Jordán para entrar en ella y poseerla.
+Deuteronomio 30:19 Al cielo y a la tierra pongo hoy como testigos contra ustedes de que he puesto ante ti la vida y la muerte, la bendición y la maldición. Escoge, pues, la vida para que vivas, tú y tu descendencia,
+Deuteronomio 30:20 amando al SEÑOR tu Dios, escuchando Su voz y allegándote a Él; porque eso es tu vida y la largura de tus días, para que habites en la tierra que el SEÑOR juró dar a tus padres Abraham, Isaac y Jacob».
+Deuteronomio 31:1 Entonces Moisés fue y habló estas palabras a todo Israel,
+Deuteronomio 31:2 y les dijo: «Hoy tengo 120 años; ya no puedo ir ni venir, y el SEÑOR me ha dicho: “No pasarás este Jordán”.
+Deuteronomio 31:3 El SEÑOR tu Dios pasará delante de ti. Él destruirá estas naciones delante de ti y las desalojarás. Josué es el que pasará delante de ti, tal como el SEÑOR ha dicho.
+Deuteronomio 31:4 El SEÑOR hará con ellos como hizo con Sehón y con Og, reyes de los amorreos, y con su tierra cuando Él los destruyó.
+Deuteronomio 31:5 Y el SEÑOR los entregará delante de ustedes y harán con ellos conforme a los mandamientos que les he ordenado.
+Deuteronomio 31:6 Sean firmes y valientes, no teman ni se aterroricen ante ellos, porque el SEÑOR tu Dios es el que va contigo; no te dejará ni te desamparará».
+Deuteronomio 31:7 Entonces Moisés llamó a Josué y le dijo en presencia de todo Israel: «Sé firme y valiente, porque tú entrarás con este pueblo en la tierra que el SEÑOR ha jurado a sus padres que les daría, y se la darás en heredad.
+Deuteronomio 31:8 El SEÑOR irá delante de ti; Él estará contigo, no te dejará ni te desamparará; no temas ni te acobardes».
+Deuteronomio 31:9 Moisés escribió esta ley y la dio a los sacerdotes, hijos de Leví, que llevaban el arca del pacto del SEÑOR, y a todos los ancianos de Israel.
+Deuteronomio 31:10 Entonces Moisés les ordenó: «Al fin de cada siete años, durante el tiempo del año de la remisión de deudas, en la Fiesta de los Tabernáculos,
+Deuteronomio 31:11 cuando todo Israel venga a presentarse delante del SEÑOR tu Dios en el lugar que Él escoja, leerás esta ley delante de todo Israel, a oídos de ellos.
+Deuteronomio 31:12 Congrega al pueblo, hombres, mujeres y niños, y al extranjero que está en tu ciudad, para que escuchen, aprendan a temer al SEÑOR tu Dios, y cuiden de observar todas las palabras de esta ley.
+Deuteronomio 31:13 Y sus hijos, que no la conocen, la oirán y aprenderán a temer al SEÑOR su Dios, mientras vivan en la tierra adonde ustedes van, cruzando al otro lado del Jordán para poseerla».
+Deuteronomio 31:14 Entonces el SEÑOR dijo a Moisés: «El tiempo de tu muerte está cerca; llama a Josué y preséntense en la tienda de reunión para que Yo le dé mis órdenes». Fueron, pues, Moisés y Josué y se presentaron en la tienda de reunión.
+Deuteronomio 31:15 El SEÑOR se apareció en la tienda en una columna de nube, y la columna de nube se puso a la entrada de la tienda.
+Deuteronomio 31:16 Y el SEÑOR dijo a Moisés: «Mira, tú vas a dormir con tus padres; y este pueblo se levantará y fornicará tras los dioses extranjeros de la tierra en la cual va a entrar, y me dejará y quebrantará Mi pacto que hice con él.
+Deuteronomio 31:17 Entonces Mi ira se encenderá contra él en aquel día; los abandonaré y esconderé Mi rostro de ellos. Será consumido, y muchos males y tribulaciones vendrán sobre él, por lo que dirá en aquel día: “¿No será porque mi Dios no está en medio de mí que me han alcanzado estos males?”.
+Deuteronomio 31:18 Pero ciertamente esconderé Mi rostro en aquel día por todo el mal que habrá hecho, pues se volverá a otros dioses.
+Deuteronomio 31:19 »Ahora pues, escriban este cántico para ustedes, y tú, enséñaselo a los israelitas; ponlo en su boca, para que este cántico me sea por testigo contra los israelitas.
+Deuteronomio 31:20 Porque cuando Yo los introduzca en la tierra que mana leche y miel, la cual juré a sus padres, y ellos coman y se sacien y prosperen, se volverán a otros dioses y los servirán, y me despreciarán y quebrantarán Mi pacto.
+Deuteronomio 31:21 Sucederá entonces que cuando muchos males y tribulaciones vengan sobre ellos, este cántico declarará contra ellos como testigo (pues no lo olvidarán los labios de sus descendientes). Porque Yo conozco el plan que ahora están tramando antes de que los traiga a la tierra que juré darles».
+Deuteronomio 31:22 Y escribió Moisés este cántico aquel mismo día, y lo enseñó a los israelitas.
+Deuteronomio 31:23 Entonces el SEÑOR nombró a Josué, hijo de Nun, y le dijo: «Sé fuerte y valiente, pues tú llevarás a los israelitas a la tierra que les he jurado, y Yo estaré contigo».
+Deuteronomio 31:24 Cuando Moisés terminó de escribir las palabras de esta ley en un libro, hasta su conclusión,
+Deuteronomio 31:25 ordenó a los levitas que llevaban el arca del pacto del SEÑOR:
+Deuteronomio 31:26 «Tomen este libro de la ley y colóquenlo junto al arca del pacto del SEÑOR su Dios, para que permanezca allí como testigo contra ustedes.
+Deuteronomio 31:27 Porque conozco su rebelión y su obstinación; si estando yo hoy todavía vivo con ustedes, han sido rebeldes contra el SEÑOR; ¿cuánto más lo serán después de mi muerte?
+Deuteronomio 31:28 Reúnan ante mí a todos los ancianos de sus tribus y a sus oficiales, para que hable estas palabras a sus oídos, y ponga a los cielos y a la tierra como testigos en su contra.
+Deuteronomio 31:29 Porque yo sé que después de mi muerte se corromperán y se apartarán del camino que les he mandado; y el mal vendrá sobre ustedes en los postreros días, pues harán lo que es malo a la vista del SEÑOR, provocándole a ira con la obra de sus manos».
+Deuteronomio 31:30 Entonces Moisés habló a oídos de toda la asamblea de Israel las palabras de este cántico hasta terminarlas.
+Deuteronomio 32:1 «Presten atención, oh cielos, y déjenme hablar; Y oiga la tierra las palabras de mi boca.
+Deuteronomio 32:2 Caiga como la lluvia mi enseñanza, Y destile como el rocío mi discurso, Como llovizna sobre el verde prado Y como aguacero sobre la hierba.
+Deuteronomio 32:3 Porque yo proclamo el nombre del SEÑOR; Atribuyan grandeza a nuestro Dios.
+Deuteronomio 32:4 ¡La Roca! Su obra es perfecta, Porque todos Sus caminos son justos; Dios de fidelidad y sin injusticia, Justo y recto es Él.
+Deuteronomio 32:5 En forma pervertida se han portado con Él. No son Sus hijos, debido a los defectos de ellos; Son una generación perversa y torcida.
+Deuteronomio 32:6 ¿Así pagan ustedes al SEÑOR, Oh pueblo insensato e ignorante? ¿No es Él tu Padre que te compró? Él te hizo y te estableció.
+Deuteronomio 32:7 Acuérdate de los días pasados; Considera los años de todas las generaciones. Pregunta a tu padre, y él te lo hará saber; A tus ancianos, y ellos te lo dirán.
+Deuteronomio 32:8 Cuando el Altísimo dio a las naciones su herencia, Cuando separó los hijos del hombre, Fijó los límites de los pueblos Según el número de los israelitas.
+Deuteronomio 32:9 Pues la porción del SEÑOR es Su pueblo; Jacob es la parte de Su heredad.
+Deuteronomio 32:10 Lo encontró en tierra desierta, En la horrenda soledad de un desierto; Lo rodeó, cuidó de él, Lo guardó como a la niña de Sus ojos.
+Deuteronomio 32:11 Como un águila que despierta su nidada, Que revolotea sobre sus polluelos, Extendió Sus alas y los tomó, Los llevó sobre Su plumaje.
+Deuteronomio 32:12 El SEÑOR solo lo guió, Y con él no hubo dios extranjero.
+Deuteronomio 32:13 Lo hizo cabalgar sobre las alturas de la tierra, Y comió el producto del campo; Le hizo gustar miel de la peña, Y aceite del pedernal,
+Deuteronomio 32:14 Cuajada de vacas y leche de ovejas, Con grasa de corderos, Y carneros de raza de Basán y machos cabríos, Con lo mejor del trigo; De la sangre de uvas bebiste vino.
+Deuteronomio 32:15 »Pero Jesurún engordó y dio coces (has engordado, estás cebado y rollizo); Entonces abandonó a Dios que lo hizo, Y despreció a la Roca de su salvación.
+Deuteronomio 32:16 Lo provocaron a celos con dioses extraños, Con abominaciones lo provocaron a ira.
+Deuteronomio 32:17 Ofrecieron sacrificios a demonios, no a Dios, A dioses que no habían conocido, Dioses nuevos que vinieron recientemente, A los que los padres de ustedes no temieron.
+Deuteronomio 32:18 Despreciaste a la Roca que te engendró, Y olvidaste al Dios que te dio a luz.
+Deuteronomio 32:19 »Y el SEÑOR vio esto, y se llenó de ira A causa de la provocación de Sus hijos y de Sus hijas.
+Deuteronomio 32:20 Entonces Él dijo: “Esconderé de ellos Mi rostro, Veré cuál será su fin; Porque son una generación perversa, Hijos en los cuales no hay fidelidad.
+Deuteronomio 32:21 Ellos me han provocado a celo con lo que no es Dios; Me han irritado con sus ídolos. Yo, pues, los provocaré a celos con los que no son un pueblo; Los irritaré con una nación insensata.
+Deuteronomio 32:22 Porque fuego se ha encendido en Mi ira, Que quema hasta las profundidades del Seol, Consume la tierra con su fruto, E incendia los fundamentos de los montes.
+Deuteronomio 32:23 ”Amontonaré calamidades sobre ellos, Emplearé en ellos Mis flechas.
+Deuteronomio 32:24 Serán debilitados por el hambre, y consumidos por la plaga Y destrucción amarga; Dientes de fieras enviaré sobre ellos, Con veneno de serpientes que se arrastran en el polvo.
+Deuteronomio 32:25 Afuera traerá duelo la espada, Y dentro el terror, Tanto al joven como a la virgen, Al niño de pecho como al hombre encanecido.
+Deuteronomio 32:26 Yo hubiera dicho: ‘Los haré pedazos, Borraré la memoria de ellos de entre los hombres’,
+Deuteronomio 32:27 Si no hubiera temido la provocación del enemigo, No sea que entendieran mal sus adversarios, No sea que dijeran: ‘Nuestra mano ha triunfado, Y no es el SEÑOR el que ha hecho todo esto’”.
+Deuteronomio 32:28 »Porque son una nación privada de consejo, Y no hay en ellos inteligencia.
+Deuteronomio 32:29 Ojalá que fueran sabios, que comprendieran esto, Que comprendieran su futuro.
+Deuteronomio 32:30 ¿Cómo es que uno puede perseguir a mil, Y dos hacer huir a diez mil, Si su Roca no los hubiera vendido, Y el SEÑOR no los hubiera entregado?
+Deuteronomio 32:31 En verdad, su roca no es como nuestra Roca; Aun nuestros mismos enemigos así lo juzgan.
+Deuteronomio 32:32 Porque la vid de ellos es de la vid de Sodoma Y de los campos de Gomorra; Sus uvas son uvas venenosas, Sus racimos, amargos.
+Deuteronomio 32:33 Su vino es veneno de serpientes, Y ponzoña mortal de cobras.
+Deuteronomio 32:34 “¿No tengo Yo esto guardado conmigo, Sellado en Mis tesoros?
+Deuteronomio 32:35 Mía es la venganza y la retribución; A su tiempo el pie de ellos resbalará, Porque el día de su calamidad está cerca, Ya se apresura lo que les está preparado”.
+Deuteronomio 32:36 Porque el SEÑOR vindicará a Su pueblo Y tendrá compasión de Sus siervos, Cuando vea que su fuerza se ha ido, Y que nadie queda, ni siervo ni libre.
+Deuteronomio 32:37 Entonces Él dirá: “¿Dónde están sus dioses, La roca en que buscaban refugio,
+Deuteronomio 32:38 Que comían la grasa de sus sacrificios, Y bebían el vino de su libación? ¡Que se levanten y los ayuden! ¡Que sean ellos su refugio!
+Deuteronomio 32:39 Vean ahora que Yo, Yo soy el Señor, Y fuera de Mí no hay dios. Yo hago morir y hago vivir. Yo hiero y Yo sano, Y no hay quien pueda librar de Mi mano.
+Deuteronomio 32:40 Ciertamente, alzo a los cielos Mi mano, Y digo: Como que vivo Yo para siempre,
+Deuteronomio 32:41 Cuando afile Mi espada flameante Y Mi mano empuñe la justicia, Me vengaré de Mis adversarios Y daré el pago a los que me aborrecen.
+Deuteronomio 32:42 Embriagaré Mis flechas con sangre, Y Mi espada se hartará de carne, De sangre de muertos y cautivos, De los jefes de larga cabellera del enemigo”.
+Deuteronomio 32:43 Regocíjense, naciones, con Su pueblo, Porque Él vengará la sangre de Sus siervos; Traerá venganza sobre Sus adversarios, Y hará expiación por Su tierra y Su pueblo».
+Deuteronomio 32:44 Entonces llegó Moisés y habló todas las palabras de este cántico a oídos del pueblo, él, con Josué, hijo de Nun.
+Deuteronomio 32:45 Cuando terminó Moisés de hablar todas estas palabras a todo Israel,
+Deuteronomio 32:46 les dijo: «Fijen en su corazón todas las palabras con que les advierto hoy: ordenarán a sus hijos que obedezcan cuidadosamente todas las palabras de esta ley.
+Deuteronomio 32:47 Porque no es palabra inútil para ustedes; ciertamente es su vida. Por esta palabra prolongarán sus días en la tierra adonde ustedes van, cruzando el Jordán a fin de poseerla».
+Deuteronomio 32:48 En aquel mismo día, el SEÑOR le dijo a Moisés:
+Deuteronomio 32:49 «Sube a estos montes de Abarim, al monte Nebo, que está en la tierra de Moab frente a Jericó, y mira hacia la tierra de Canaán, la cual doy en posesión a los israelitas.
+Deuteronomio 32:50 Morirás en el monte al cual subes, y serás reunido a tu pueblo, así como tu hermano Aarón murió sobre el monte Hor, y fue reunido a su pueblo;
+Deuteronomio 32:51 porque ustedes me fueron infieles en medio de los israelitas en las aguas de Meriba de Cades, en el desierto de Zin, porque no me santificaron en medio de los israelitas.
+Deuteronomio 32:52 Por tanto, solo de lejos verás la tierra, pero no entrarás allí, a la tierra que doy a los israelitas».
+Deuteronomio 33:1 Esta es la bendición con la que Moisés, hombre de Dios, bendijo a los israelitas antes de morir.
+Deuteronomio 33:2 Dijo: «El SEÑOR vino del Sinaí Esclareciéndoles desde Seir; Resplandeció desde el monte Parán, Y vino de en medio de diez millares de santos; A Su diestra había fulgor centelleante para ellos.
+Deuteronomio 33:3 En verdad, Él ama al pueblo; Todos Tus santos están en Tu mano, Y siguen en Tus pasos; Todos reciben de Tus palabras.
+Deuteronomio 33:4 Una ley nos dio Moisés, Una herencia para la asamblea de Jacob.
+Deuteronomio 33:5 Él era rey en Jesurún, Cuando se reunieron los jefes del pueblo, Junto con las tribus de Israel.
+Deuteronomio 33:6 »Viva Rubén, y no muera, Y no sean pocos sus hombres».
+Deuteronomio 33:7 En cuanto a Judá, esto dijo: «Escucha, oh SEÑOR, la voz de Judá, Y tráelo a su pueblo. Con sus manos luchó por ellos; Sé Tú su ayuda contra sus adversarios».
+Deuteronomio 33:8 De Leví dijo: «Tu Tumim y Tu Urim sean para Tu hombre santo, A quien pusiste a prueba en Masah, Con quien luchaste en las aguas de Meriba;
+Deuteronomio 33:9 El que dijo de su padre y de su madre: “No los conozco”; Y no reconoció a sus hermanos, Ni consideró a sus propios hijos, Porque obedecieron Tu palabra, Y guardaron Tu pacto.
+Deuteronomio 33:10 Ellos enseñarán Tus ordenanzas a Jacob Y Tu ley a Israel. Pondrán incienso delante de Ti, Y holocaustos perfectos sobre Tu altar.
+Deuteronomio 33:11 Bendice, oh SEÑOR, sus esfuerzos, Y acepta la obra de sus manos; Quebranta los lomos de los que se levantan contra él Y de los que lo odian, para que no se levanten más».
+Deuteronomio 33:12 De Benjamín, dijo: «Habite el amado del SEÑOR en seguridad junto a Aquel Que le protege todo el día, Y entre cuyos hombros mora».
+Deuteronomio 33:13 De José, dijo: «Bendita del SEÑOR sea su tierra, Con lo mejor de los cielos, con el rocío Y con las profundidades que están debajo;
+Deuteronomio 33:14 Con lo mejor de los frutos del sol Y con los mejores productos de los meses;
+Deuteronomio 33:15 Con lo mejor de los montes antiguos Y con lo escogido de los collados eternos;
+Deuteronomio 33:16 Con lo mejor de la tierra y cuanto contiene Y el favor del que habitaba en la zarza. Descienda la bendición sobre la cabeza de José, Y sobre la coronilla del consagrado entre sus hermanos.
+Deuteronomio 33:17 Su majestad es como la del primogénito del toro, Y sus cuernos son los cuernos del búfalo. Con ellos empujará a los pueblos, Todos juntos, hasta los confines de la tierra. Tales son los diez millares de Efraín, Y tales los millares de Manasés».
+Deuteronomio 33:18 De Zabulón, dijo: «Alégrate, Zabulón, en tus salidas Y tú Isacar, en tus tiendas.
+Deuteronomio 33:19 Llamarán a los pueblos al monte; Allí ofrecerán sacrificios de justicia, Pues disfrutarán de la abundancia de los mares, Y de los tesoros escondidos en la arena».
+Deuteronomio 33:20 De Gad, dijo: «Bendito el que ensancha a Gad; Se echa como león, Y desgarra el brazo y también la coronilla.
+Deuteronomio 33:21 Entonces reservó para sí la primera parte, Pues allí la porción de gobernante le estaba reservada. Y él vino con los jefes del pueblo; Ejecutó la justicia del SEÑOR, Y Sus ordenanzas con Israel».
+Deuteronomio 33:22 De Dan, dijo: «Dan es cachorro de león Que salta desde Basán».
+Deuteronomio 33:23 De Neftalí, dijo: «Neftalí, colmado de favores, Y lleno de la bendición del SEÑOR, Toma posesión del mar y del sur».
+Deuteronomio 33:24 Y de Aser, dijo: «Más bendito que hijos es Aser; Sea favorecido por sus hermanos, Y moje su pie en aceite.
+Deuteronomio 33:25 De hierro y de bronce serán tus cerrojos, Y tan largo como tus días será tu reposo.
+Deuteronomio 33:26 »Nadie hay como el Dios de Jesurún, Que cabalga los cielos para venir en tu ayuda, Y las nubes, en Su majestad.
+Deuteronomio 33:27 El eterno Dios es tu refugio, Y debajo están los brazos eternos. Él echó al enemigo delante de ti, Y dijo: “¡Destruye!”.
+Deuteronomio 33:28 Por eso Israel habita confiado, La fuente de Jacob habita separada En una tierra de grano y vino nuevo; Sus cielos también destilan rocío.
+Deuteronomio 33:29 Dichoso tú, Israel. ¿Quién como tú, pueblo salvado por el SEÑOR? Él es escudo de tu ayuda, Y espada de tu gloria. Tus enemigos simularán someterse ante ti, Y tú pisotearás sus lugares altos».
+Deuteronomio 34:1 Y subió Moisés desde la llanura de Moab al monte Nebo, a la cumbre del Pisga, que está frente a Jericó, y el SEÑOR le mostró toda la tierra: Galaad hasta Dan,
+Deuteronomio 34:2 todo Neftalí, la tierra de Efraín y de Manasés, toda la tierra de Judá hasta el mar occidental,
+Deuteronomio 34:3 el Neguev y la llanura del valle de Jericó, la ciudad de las palmeras, hasta Zoar.
+Deuteronomio 34:4 Entonces le dijo el SEÑOR: «Esta es la tierra que juré dar a Abraham, a Isaac y a Jacob: “Yo la daré a tu descendencia”. Te he permitido verla con tus ojos, pero no pasarás a ella».
+Deuteronomio 34:5 Y allí murió Moisés, siervo del SEÑOR, en la tierra de Moab, conforme a la palabra del SEÑOR.
+Deuteronomio 34:6 Y Él lo enterró en el valle, en la tierra de Moab, frente a Bet Peor; pero nadie sabe hasta hoy el lugar de su sepultura.
+Deuteronomio 34:7 Aunque Moisés tenía 120 años cuando murió, no se habían apagado sus ojos, ni había perdido su vigor.
+Deuteronomio 34:8 Los israelitas lloraron a Moisés por treinta días en la llanura de Moab; así se cumplieron los días de llanto y duelo por Moisés.
+Deuteronomio 34:9 Y Josué, hijo de Nun, estaba lleno del espíritu de sabiduría, porque Moisés había puesto sus manos sobre él; y los israelitas le escucharon e hicieron tal como el SEÑOR había mandado a Moisés.
+Deuteronomio 34:10 Desde entonces no ha vuelto a surgir en Israel un profeta como Moisés, a quien el SEÑOR conocía cara a cara,
+Deuteronomio 34:11 nadie como él por todas las señales y prodigios que el SEÑOR le mandó hacer en la tierra de Egipto, contra Faraón, contra todos sus siervos y contra toda su tierra,
+Deuteronomio 34:12 y por la mano poderosa y por todos los hechos grandiosos y terribles que Moisés realizó ante los ojos de todo Israel.

@@ -1,0 +1,83 @@
+.empty-welcome {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(248, 250, 252, 0.92);
+  pointer-events: none;
+}
+
+.empty-welcome-card {
+  pointer-events: auto;
+  max-width: 420px;
+  text-align: center;
+  padding: 32px 28px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
+}
+
+.empty-welcome-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0369a1;
+}
+
+.empty-welcome-card p {
+  margin: 0 0 24px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.empty-welcome-card code {
+  font-size: 0.85em;
+  background: #f1f5f9;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.empty-welcome-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.empty-welcome-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 16px;
+}
+
+.empty-welcome-actions button.primary {
+  font-weight: 600;
+}
+
+.empty-welcome-actions button.subtle {
+  border-color: transparent;
+  background: transparent;
+  color: #64748b;
+}
+
+.empty-welcome-actions button.subtle:hover {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.empty-welcome-shortcut {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-left: auto;
+}
+
+.empty-welcome-actions button.primary .empty-welcome-shortcut {
+  color: rgba(255, 255, 255, 0.75);
+}

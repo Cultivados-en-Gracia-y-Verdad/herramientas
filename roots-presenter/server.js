@@ -1578,8 +1578,8 @@ function renderLine(line) {
 
   const quizMarker = parseQuizMarker(line);
   if (quizMarker) {
-    const quiz = quizBank.find(item => item.id === quizMarker.quizId);
-    const title = quiz?.title || quizMarker.quizId;
+    const quiz = findQuizByMarkerId(quizMarker.quizId);
+    const title = getQuizMarkerTitle(quiz, quizMarker.quizId);
     const status = quiz ? serverText("quizReady") : serverText("quizNotFound");
     const button = quiz
       ? `<button type="button" onclick="launchQuiz('${escapeHtml(quizMarker.quizId)}')">${serverText("launchQuiz")}</button>`
@@ -2229,6 +2229,20 @@ function normalizeQuizId(value) {
   return unquote(value).trim().replace(/^#/, "");
 }
 
+function findQuizByMarkerId(quizId) {
+  const normalizedQuizId = normalizeQuizId(quizId);
+  if (!normalizedQuizId) return null;
+
+  return quizBank.find(item =>
+    item.id === normalizedQuizId || item.groupId === normalizedQuizId
+  ) || null;
+}
+
+function getQuizMarkerTitle(quiz, fallbackId) {
+  if (!quiz) return fallbackId;
+  return String(quiz.title || fallbackId).replace(/\s+-\s+\d+$/, "").trim() || fallbackId;
+}
+
 function getQuizFiles(meta) {
   if (!meta.quizzes) return [];
   return Array.isArray(meta.quizzes) ? meta.quizzes : [meta.quizzes];
@@ -2358,13 +2372,21 @@ function parseQuizFile(filePath) {
 
 function parseQuestionSetQuizFile(content, filePath) {
   const lines = content.split("\n");
-  const fileId = normalizeQuizId(
+  const fileStem = normalizeQuizId(path.basename(filePath, path.extname(filePath)));
+  const yamlId = normalizeQuizId(
     lines.find(line => line.trim().startsWith("id:"))?.split(/:\s*/).slice(1).join(":")
-      || path.basename(filePath, path.extname(filePath))
+      || fileStem
   );
+  const fileId = fileStem;
+  const groupId = fileStem;
+  if (yamlId !== fileStem) {
+    console.warn(
+      `Quiz id "${yamlId}" in ${path.basename(filePath)} does not match filename "${fileStem}"; using filename for slide markers.`
+    );
+  }
   const title = unquote(
     lines.find(line => line.trim().startsWith("title:"))?.split(/:\s*/).slice(1).join(":")
-      || fileId
+      || fileStem
   );
   const quizzes = [];
   let currentQuiz = null;
@@ -2379,7 +2401,7 @@ function parseQuestionSetQuizFile(content, filePath) {
       if (currentQuiz) quizzes.push(currentQuiz);
       currentQuiz = {
         id: quizzes.length === 0 ? fileId : `${fileId}-${quizzes.length + 1}`,
-        groupId: fileId,
+        groupId,
         title: `${title} - ${quizzes.length + 1}`,
         question: unquote(questionMatch[1]),
         choices: []
