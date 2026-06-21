@@ -25,6 +25,13 @@ function insertAtFindInput(input: HTMLInputElement, current: string, text: strin
   return next;
 }
 
+function isSearchBarField(target: EventTarget | null): target is HTMLInputElement | HTMLTextAreaElement {
+  return (
+    target instanceof HTMLInputElement ||
+    target instanceof HTMLTextAreaElement
+  ) && target.closest(".search-replace-bar") != null;
+}
+
 export function SearchReplaceBar({
   visible,
   showReplace,
@@ -96,19 +103,17 @@ export function SearchReplaceBar({
 
   useEffect(() => {
     if (!visible || !query) return;
-    const timer = window.setTimeout(() => run("find", false), 200);
+    const timer = window.setTimeout(() => {
+      dispatchSearch({ query, replace, caseSensitive, action: "find" });
+    }, 200);
     return () => window.clearTimeout(timer);
-  }, [visible, query, caseSensitive, run]);
+  }, [visible, query, caseSensitive, replace]);
 
   useEffect(() => {
     if (!visible) return;
 
     const onPaste = (event: ClipboardEvent) => {
-      const target = event.target;
-      if (target instanceof Element && target.closest(".search-replace-bar")) {
-        event.stopPropagation();
-        return;
-      }
+      if (isSearchBarField(event.target)) return;
 
       event.preventDefault();
       event.stopImmediatePropagation();
@@ -124,25 +129,37 @@ export function SearchReplaceBar({
     if (!visible) return;
 
     const onKeyDown = (event: KeyboardEvent) => {
-      const target = event.target;
-      if (!(target instanceof Element) || !target.closest(".search-replace-bar")) return;
+      if (!isSearchBarField(event.target)) return;
 
       event.stopPropagation();
 
       const mod = event.metaKey || event.ctrlKey;
-      if (!mod) return;
-
-      if (event.key.toLowerCase() === "v") {
+      if (mod && event.key.toLowerCase() === "g") {
         event.preventDefault();
-        void navigator.clipboard.readText().then(pasteIntoFind).catch(() => {
-          /* native paste fallback */
+        dispatchSearch({
+          query,
+          replace,
+          caseSensitive,
+          action: event.shiftKey ? "prev" : "next"
         });
+        return;
+      }
+
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        dispatchSearch({ query, replace, caseSensitive, action: "next" });
+        return;
+      }
+
+      if (event.key === "Enter" && event.shiftKey) {
+        event.preventDefault();
+        dispatchSearch({ query, replace, caseSensitive, action: "prev" });
       }
     };
 
     document.addEventListener("keydown", onKeyDown, true);
     return () => document.removeEventListener("keydown", onKeyDown, true);
-  }, [visible, pasteIntoFind]);
+  }, [visible, query, replace, caseSensitive]);
 
   if (!visible) return null;
 
@@ -184,9 +201,6 @@ export function SearchReplaceBar({
             if (event.key === "Escape") {
               event.preventDefault();
               onClose();
-            } else if (event.key === "Enter" && event.shiftKey) {
-              event.preventDefault();
-              run("prev");
             }
           }}
           spellCheck={false}

@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: 24px;
-  background: rgba(15, 23, 42, 0.35);
+  background: var(--popup-overlay);
 }
 
 .bible-popup-card {
@@ -14,11 +14,12 @@
   max-height: min(72vh, 640px);
   display: flex;
   flex-direction: column;
-  background: #f5f2e8;
-  color: #151515;
+  background: var(--surface);
+  color: var(--text);
   border-radius: 12px;
-  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.22);
+  box-shadow: 0 18px 48px var(--shadow-dropdown);
   overflow: hidden;
+  border: 1px solid var(--border);
 }
 
 .bible-popup-header {
@@ -27,7 +28,7 @@
   justify-content: space-between;
   gap: 12px;
   padding: 16px 18px 10px;
-  border-bottom: 1px solid rgba(7, 89, 133, 0.15);
+  border-bottom: 1px solid var(--border);
 }
 
 .bible-popup-version {
@@ -35,13 +36,13 @@
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #075985;
+  color: var(--accent);
 }
 
 .bible-popup-header h3 {
   margin: 0;
   font-size: 1.05rem;
-  color: #075985;
+  color: var(--accent);
 }
 
 .bible-popup-close {
@@ -50,7 +51,7 @@
   font-size: 1.5rem;
   line-height: 1;
   padding: 0 4px;
-  color: #64748b;
+  color: var(--muted);
 }
 
 .bible-popup-body {
@@ -66,7 +67,7 @@
 }
 
 .bible-popup-error {
-  color: #b45309;
+  color: var(--warn);
 }
 
 .bible-popup-verse {
@@ -78,7 +79,7 @@
 }
 
 .bible-popup-verse strong {
-  color: #075985;
+  color: var(--accent);
 }
 
 .bible-popup-footer {
@@ -86,5 +87,5 @@
   justify-content: flex-end;
   gap: 8px;
   padding: 12px 18px 16px;
-  border-top: 1px solid rgba(7, 89, 133, 0.12);
+  border-top: 1px solid var(--border);
 }

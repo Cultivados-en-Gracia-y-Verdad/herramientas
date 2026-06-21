@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode
 } from "react";
-import { resolveBibleReference } from "cgv-bible";
+import { resolveBibleReference, getBibleIndexStats } from "cgv-bible";
 import {
   getBibleLibraryStatus,
   invalidateBibleIndexCache,
@@ -47,6 +47,14 @@ export function BibleProvider({ children }: { children: ReactNode }) {
       const nextIndex = await loadBibleIndex(true);
       setIndex(nextIndex);
       setSharedBibleIndex(nextIndex);
+      if (nextIndex) {
+        const stats = getBibleIndexStats(nextIndex);
+        setStatus({
+          ...nextStatus,
+          books: stats.books,
+          references: stats.references
+        });
+      }
     } else {
       setIndex(null);
       setSharedBibleIndex(null);

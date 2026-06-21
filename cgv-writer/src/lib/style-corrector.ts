@@ -6,9 +6,11 @@ import { newBlockId } from "./blocks/types";
 import { loadBibleIndex, resolveReferenceFromLibrary } from "./bible-client";
 import {
   isLikelyBibleReference,
+  isDefinitionGlossLine,
   normalizeCgvMarkdown,
   sanitizeH4AnchorText
 } from "./markdown-html";
+import { cleanBlockquoteLine, isBlockquoteLine } from "./synthesis-block";
 
 export interface StyleCorrectStats {
   scriptureUpdated: number;
@@ -22,6 +24,13 @@ export interface StyleCorrectResult {
   changed: boolean;
   stats: StyleCorrectStats;
   warnings: string[];
+}
+
+function normalizeMdForCompare(md: string): string {
+  return String(md || "")
+    .replace(/\r\n/g, "\n")
+    .replace(/[ \t]+$/gm, "")
+    .trim();
 }
 
 function cloneBlock<T extends ContentBlock>(block: T): T {
@@ -42,6 +51,25 @@ function normalizeMisplacedHeading(block: ContentBlock): ContentBlock[] {
 
   const text = block.text.trim();
   if (!text) return [];
+
+  if (isBlockquoteLine(text)) {
+    return [
+      {
+        id: newBlockId(),
+        type: "synthesis",
+        title: cleanBlockquoteLine(text),
+        bullets: []
+      }
+    ];
+  }
+
+  if (/^:::/.test(text)) {
+    return [{ id: newBlockId(), type: "raw", text: block.text }];
+  }
+
+  if (isDefinitionGlossLine(text)) {
+    return [block];
+  }
 
   if (/^######\s+/.test(text)) {
     return [commentaryBlock("", [text.replace(/^######\s+/, "")])];
@@ -84,6 +112,24 @@ function commentaryBlock(title: string, bullets: string[] = []): CommentaryBlock
 
 function cloneCommentary(block: CommentaryBlock): CommentaryBlock {
   return commentaryBlock(block.title, block.bullets);
+}
+
+function normalizeVerseComparisonText(text: string): string {
+  return String(text || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[«»"""\u201C\u201D]/g, "")
+    .replace(/\s+/g, " ");
+}
+
+/** Plain text or H4 anchor that repeats the start of the verse — not a real focus phrase. */
+function isDuplicateVerseFragment(scripture: string, text: string): boolean {
+  const s = normalizeVerseComparisonText(scripture);
+  const t = normalizeVerseComparisonText(text);
+  if (!t || t.length < 12 || !s) return false;
+  if (s.startsWith(t)) return true;
+  if (t.length >= 20 && s.includes(t)) return true;
+  return false;
 }
 
 function demotedVerseBlocks(reference: string, scripture: string): ContentBlock[] {
@@ -148,7 +194,7 @@ async function transformBlocks(
 ): Promise<ContentBlock[]> {
   const normalized = blocks.flatMap(block => normalizeMisplacedHeading(block));
   const out: ContentBlock[] = [];
-  let needsAnchor = false;
+  let afterVerseScripture: string | null = null;
 
   for (const block of normalized) {
     if (
@@ -157,20 +203,20 @@ async function transformBlocks(
       block.type === "h2" ||
       block.type === "quiz" ||
       block.type === "definition" ||
-      block.type === "synthesis"
+      block.type === "synthesis" ||
+      block.type === "table" ||
+      block.type === "raw"
     ) {
-      needsAnchor = false;
+      afterVerseScripture = null;
       out.push(cloneBlock(block));
       continue;
     }
 
     if (block.type === "verse") {
-      needsAnchor = true;
-
       if (!isLikelyBibleReference(block.reference)) {
+        afterVerseScripture = null;
         out.push(...demotedVerseBlocks(block.reference, block.scripture));
         stats.referencesDemoted += 1;
-        needsAnchor = false;
         continue;
       }
 
@@ -191,37 +237,22 @@ async function transformBlocks(
         reference: block.reference.trim(),
         scripture
       });
+      afterVerseScripture = scripture;
       continue;
     }
 
     if (block.type === "focus") {
-      needsAnchor = false;
+      if (afterVerseScripture && isDuplicateVerseFragment(afterVerseScripture, block.phrase)) {
+        continue;
+      }
+      afterVerseScripture = null;
       out.push(focusBlock(block.phrase));
       continue;
     }
 
     if (block.type === "commentary") {
-      const comm = cloneCommentary(block);
-
-      if (needsAnchor) {
-        if (comm.title) {
-          out.push(focusBlock(comm.title));
-          stats.anchorsSet += 1;
-          needsAnchor = false;
-          if (comm.bullets.length) {
-            out.push(commentaryBlock("", comm.bullets));
-          }
-        } else if (comm.bullets.length) {
-          needsAnchor = false;
-          out.push(comm);
-        }
-        continue;
-      }
-
-      out.push(comm);
-      if (comm.title) {
-        stats.linesPromotedToH5 += 1;
-      }
+      afterVerseScripture = null;
+      out.push(cloneCommentary(block));
       continue;
     }
 
@@ -229,15 +260,24 @@ async function transformBlocks(
       const text = block.text.trim();
       if (!text) continue;
 
+      if (isBlockquoteLine(text) || /^:::/.test(text) || isDefinitionGlossLine(text)) {
+        afterVerseScripture = null;
+        out.push(cloneBlock(block));
+        continue;
+      }
+
       if (text.startsWith("- ")) {
+        afterVerseScripture = null;
         out.push(commentaryBlock("", [text.slice(2).trim()]));
         continue;
       }
 
-      if (needsAnchor) {
-        out.push(focusBlock(text));
-        stats.anchorsSet += 1;
-        needsAnchor = false;
+      if (afterVerseScripture && isDuplicateVerseFragment(afterVerseScripture, text)) {
+        continue;
+      }
+
+      if (afterVerseScripture) {
+        out.push(cloneBlock(block));
         continue;
       }
 
@@ -270,17 +310,12 @@ export async function correctManualStyle(body: string): Promise<StyleCorrectResu
 
   await loadBibleIndex();
 
-  const parsed = parseBodyToBlocks(source);
+  const trimmedSource = source.trim();
+  const parsed = parseBodyToBlocks(trimmedSource);
   const corrected = await transformBlocks(parsed, stats, warnings);
   const compiled = normalizeCgvMarkdown(compileBlocks(corrected));
-  const normalizedSource = normalizeCgvMarkdown(source.trim());
 
-  const changed =
-    compiled !== normalizedSource ||
-    stats.scriptureUpdated > 0 ||
-    stats.anchorsSet > 0 ||
-    stats.linesPromotedToH5 > 0 ||
-    stats.referencesDemoted > 0;
+  const changed = normalizeMdForCompare(compiled) !== normalizeMdForCompare(trimmedSource);
 
   return {
     body: compiled,

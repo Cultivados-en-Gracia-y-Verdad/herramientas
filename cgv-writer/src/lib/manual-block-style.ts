@@ -21,11 +21,11 @@ export const MANUAL_BLOCK_STYLES: Record<string, ManualBlockStyle> = {
   h4: { id: "h4", label: "Texto ancla", markdown: "####", shortcut: "⌘4" },
   h5: { id: "h5", label: "Comentario 1", markdown: "#####", shortcut: "⌘5" },
   h6: { id: "h6", label: "Comentario 2", markdown: "######", shortcut: "⌘6" },
-  list: { id: "list", label: "Lista (comentario 3)", markdown: "-", shortcut: "⌘7" },
+  list: { id: "list", label: "Lista (comentario 3)", markdown: "-   ", shortcut: "⌘7" },
   synthesis: { id: "synthesis", label: "En Síntesis", markdown: ">" },
   scripture: { id: "scripture", label: "Versículo", markdown: "texto" },
   definition: { id: "definition", label: "Definición", markdown: "término / :" },
-  quiz: { id: "quiz", label: "Quiz", markdown: "@quiz" },
+  quiz: { id: "quiz", label: "Quiz", markdown: "<!-- @quiz -->" },
   slideBreak: { id: "slideBreak", label: "Diapositiva", markdown: "—" },
   paragraph: DEFAULT_MANUAL_BLOCK_STYLE
 };

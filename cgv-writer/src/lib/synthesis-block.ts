@@ -12,8 +12,27 @@ export function isSynthesisTitleLine(line: string): boolean {
   return /^En S[ií]ntesis/i.test(cleanBlockquoteLine(line));
 }
 
-export function parseSynthesisLines(lines: string[]): { title: string; bullets: string[] } | null {
-  if (!lines.length || !isBlockquoteLine(lines[0]) || !isSynthesisTitleLine(lines[0])) {
+/** Plain title text inside a synthesis blockquote (no leading `>`). */
+export function isSynthesisTitleText(text: string): boolean {
+  return /^En S[ií]ntesis/i.test(String(text || "").trim());
+}
+
+export function stripBulletPrefix(text: string): string {
+  return String(text || "")
+    .trim()
+    .replace(/^[-*•]\s+/, "")
+    .trim();
+}
+
+export function isSynthesisBulletText(text: string): boolean {
+  return /^[-*•]\s+\S/.test(String(text || "").trim());
+}
+
+/** Any blockquote group: first `>` line is the header, `>-` lines are bullets. */
+export function parseBlockquoteLines(
+  lines: string[]
+): { title: string; bullets: string[] } | null {
+  if (!lines.length || !isBlockquoteLine(lines[0])) {
     return null;
   }
 
@@ -34,6 +53,14 @@ export function parseSynthesisLines(lines: string[]): { title: string; bullets: 
   return { title, bullets };
 }
 
+export function parseSynthesisLines(lines: string[]): { title: string; bullets: string[] } | null {
+  if (!lines.length || !isBlockquoteLine(lines[0]) || !isSynthesisTitleLine(lines[0])) {
+    return null;
+  }
+
+  return parseBlockquoteLines(lines);
+}
+
 export function compileSynthesisMarkdown(title: string, bullets: string[]): string {
   const trimmedTitle = title.trim();
   if (!trimmedTitle) return "";
@@ -41,6 +68,14 @@ export function compileSynthesisMarkdown(title: string, bullets: string[]): stri
   const items = bullets.map(item => item.trim()).filter(Boolean);
   const lines = [`> ${trimmedTitle}`, ...items.map(item => `>- ${item}`)];
   return lines.join("\n");
+}
+
+export function isBlockquoteMarkdownChunk(chunk: string): boolean {
+  const lines = chunk
+    .split("\n")
+    .map(line => line.trim())
+    .filter(Boolean);
+  return lines.length > 0 && isBlockquoteLine(lines[0]);
 }
 
 export function isSynthesisMarkdownChunk(chunk: string): boolean {

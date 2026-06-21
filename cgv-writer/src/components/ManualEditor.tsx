@@ -3,7 +3,7 @@ import StarterKit from "@tiptap/starter-kit";
 import Placeholder from "@tiptap/extension-placeholder";
 import HorizontalRule from "@tiptap/extension-horizontal-rule";
 import Underline from "@tiptap/extension-underline";
-import { useEffect, useRef, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import type { Editor } from "@tiptap/react";
 import type { Node as ProseMirrorNode } from "@tiptap/pm/model";
 import {
@@ -20,31 +20,34 @@ import {
 import {
   applyCommentBulletList,
   applyHeadingStyle,
-  applyScriptureStyle,
-  underlineWordAtCursor
+  underlineWordAtCursor,
+  underlineWordAtDocPos
 } from "../lib/manual-comments";
+import {
+  applyReferenceHeading,
+  ensureScriptureParagraphAfterH3AtCursor,
+  tightenPassageLayoutInEditor
+} from "../lib/manual-passage-layout";
 import { CgvH5Block } from "../lib/tiptap-cgv-h5-block";
+import { CgvTable } from "../lib/tiptap-cgv-table";
 import { CgvSynthesisBlockquote } from "../lib/tiptap-cgv-synthesis";
 import { CgvParagraph } from "../lib/tiptap-cgv-paragraph";
-import { ensureScriptureParagraphsAfterH3 } from "../lib/manual-scripture-blocks";
 import { CgvSearch, cgvSearchPluginKey } from "../lib/tiptap-search";
 import type { SearchRequest } from "../lib/search-bridge";
 import {
-  editorHtmlToMarkdown,
   isLikelyBibleReference,
-  markdownToEditorHtml
+  markdownToEditorHtml,
+  normalizeCgvMarkdown,
+  quizMarkerComment
 } from "../lib/markdown-html";
+import { editorDocToMarkdown } from "../lib/blocks/parse-prosemirror";
 import { replaceAllInText } from "../lib/text-search";
-import { isManualCommandVisible } from "../lib/manual-toolbar-config";
-import {
-  DEFAULT_MANUAL_BLOCK_STYLE,
-  getManualBlockStyleAtCursor,
-  type ManualBlockStyle
-} from "../lib/manual-block-style";
+import { findManualHeadingPos, type OutlineNavigateRequest } from "../lib/outline-bridge";
+import { insertQuizIntoEditorMarkdown } from "../lib/manual-quiz-insert";
+import { ManualToolbar, ManualStyleChip } from "./ManualToolbar";
 import {
   clearManualEditorDirty,
   isManualEditorDirty,
-  MANUAL_SYNC_MS,
   markManualEditorDirty,
   setViewHandoff,
   takeViewHandoff
@@ -68,8 +71,13 @@ import "./BibleReferencePopup.css";
 interface ManualEditorProps {
   body: string;
   onBodyChange: (body: string) => void;
+  /** View switch — update shared state without marking the document dirty. */
+  onBodySync?: (body: string) => void;
+  onDirty?: () => void;
   reloadKey: string;
   isActive: boolean;
+  /** Read-only layout preview — markdown is the editable source. */
+  previewOnly?: boolean;
   writingMode?: boolean;
 }
 
@@ -151,20 +159,33 @@ function scrollToCurrentMatch(editor: Editor, scrollEl: HTMLElement | null): voi
   scrollEl.scrollTop = Math.max(0, target);
 }
 
-export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingMode = false }: ManualEditorProps) {
+function ManualEditorInner({
+  body,
+  onBodyChange,
+  onBodySync,
+  onDirty,
+  reloadKey,
+  isActive,
+  previewOnly = true,
+  writingMode = false
+}: ManualEditorProps) {
   const lastReloadKey = useRef(reloadKey);
   const suppressUpdate = useRef(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const wasActive = useRef(false);
   const onBodyChangeRef = useRef(onBodyChange);
+  const onBodySyncRef = useRef(onBodySync);
+  const onDirtyRef = useRef(onDirty);
   const bodyRef = useRef(body);
   const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const editorRef = useRef<Editor | null>(null);
   const lastSyncedFromEditor = useRef<string | null>(null);
   const lastLoadedBody = useRef(body);
+  const lastSelectionPos = useRef(0);
   const isActiveRef = useRef(isActive);
-  const [blockStyle, setBlockStyle] = useState<ManualBlockStyle>(DEFAULT_MANUAL_BLOCK_STYLE);
-  const { resolveReference, status: bibleStatus, loading: bibleLoading, index: bibleIndex } = useBible();
+  const previewOnlyRef = useRef(previewOnly);
+  const writingModeRef = useRef(writingMode);
+  const { resolveReference, status: bibleStatus, index: bibleIndex } = useBible();
   const [biblePopup, setBiblePopup] = useState<{
     kind: "h3" | "inline";
     reference: string;
@@ -173,14 +194,29 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
     error: string | null;
     result: ResolveBibleReferenceResult | null;
   } | null>(null);
+  const [underlinePaintMode, setUnderlinePaintMode] = useState(false);
+  const underlinePaintModeRef = useRef(false);
   const openBiblePopupRef = useRef<
     (request: { kind: "h3" | "inline"; reference: string; h3Pos?: number | null }) => void
   >(() => {});
   const bibleIndexRef = useRef(bibleIndex);
   bibleIndexRef.current = bibleIndex;
   onBodyChangeRef.current = onBodyChange;
+  onBodySyncRef.current = onBodySync;
+  onDirtyRef.current = onDirty;
   bodyRef.current = body;
   isActiveRef.current = isActive;
+  previewOnlyRef.current = previewOnly;
+  writingModeRef.current = writingMode;
+
+  const setUnderlinePaintModeEnabled = (enabled: boolean) => {
+    underlinePaintModeRef.current = enabled;
+    setUnderlinePaintMode(enabled);
+  };
+
+  const toggleUnderlinePaintMode = () => {
+    setUnderlinePaintModeEnabled(!underlinePaintModeRef.current);
+  };
 
   const cancelPendingSync = () => {
     if (syncTimer.current) {
@@ -189,38 +225,71 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
     }
   };
 
-  const pushBodyMarkdown = (markdown: string) => {
-    lastSyncedFromEditor.current = markdown;
-    lastLoadedBody.current = markdown;
-    clearManualEditorDirty();
-    onBodyChangeRef.current(markdown);
+  const scheduleSyncToMarkdown = () => {
+    if (previewOnlyRef.current) return;
+    if (writingModeRef.current) return;
+    markManualEditorDirty();
+    onDirtyRef.current?.();
   };
 
-  const scheduleSyncToMarkdown = () => {
-    cancelPendingSync();
-    syncTimer.current = setTimeout(() => {
-      syncTimer.current = null;
-      const ed = editorRef.current;
-      if (!ed || suppressUpdate.current) return;
-      const md = editorHtmlToMarkdown(ed.getHTML());
-      if (md.trim() === bodyRef.current.trim()) return;
-      pushBodyMarkdown(md);
-    }, MANUAL_SYNC_MS);
+  /** TipTap → markdown; tighten layout only when exporting unsynced edits. */
+  const exportEditorMarkdown = (ed: Editor, tighten = false): string => {
+    if (tighten) {
+      tightenPassageLayoutInEditor(ed);
+    }
+    return editorDocToMarkdown(ed);
+  };
+
+  const syncExportedMarkdown = (md: string) => {
+    lastSyncedFromEditor.current = md;
+    lastLoadedBody.current = md;
+    bodyRef.current = md;
   };
 
   const flushPending = () => {
+    if (previewOnlyRef.current) return;
     const ed = editorRef.current;
     if (!ed) return;
-    if (syncTimer.current) {
-      clearTimeout(syncTimer.current);
-      syncTimer.current = null;
-    }
+    cancelPendingSync();
     if (suppressUpdate.current) return;
-    const md = editorHtmlToMarkdown(ed.getHTML());
-    lastSyncedFromEditor.current = md;
-    lastLoadedBody.current = md;
+    if (!isManualEditorDirty()) return;
+
+    const md = exportEditorMarkdown(ed, true);
+    syncExportedMarkdown(md);
+    clearManualEditorDirty();
     onBodyChangeRef.current(md);
   };
+
+  const applyQuizInsertRef = useRef<(quizId: string, pos?: number) => boolean>(() => false);
+
+  const applyQuizInsert = (quizId: string, pos?: number): boolean => {
+    if (previewOnlyRef.current) return false;
+    const ed = editorRef.current;
+    if (!ed) return false;
+
+    const id = quizId.trim();
+    if (!id) return false;
+
+    cancelPendingSync();
+    const insertPos = pos ?? lastSelectionPos.current ?? ed.state.selection.from;
+    const liveMd = exportEditorMarkdown(ed, true);
+    const nextMd = insertQuizIntoEditorMarkdown(ed, id, insertPos, liveMd);
+    if (!nextMd || !nextMd.includes(quizMarkerComment(id))) return false;
+
+    suppressUpdate.current = true;
+    lastLoadedBody.current = nextMd;
+    lastSyncedFromEditor.current = nextMd;
+    bodyRef.current = nextMd;
+    clearManualEditorDirty();
+    ed.commands.setContent(markdownToEditorHtml(nextMd), { emitUpdate: false });
+    requestAnimationFrame(() => {
+      suppressUpdate.current = false;
+    });
+    onBodyChangeRef.current(nextMd);
+    return true;
+  };
+
+  applyQuizInsertRef.current = applyQuizInsert;
 
   const openBiblePopup = async (
     kind: "h3" | "inline",
@@ -236,42 +305,28 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
       result: null
     });
 
-    if (bibleLoading || !bibleStatus?.loaded) {
-      if (!bibleStatus?.configured) {
-        setBiblePopup({
-          kind,
-          reference,
-          h3Pos,
-          loading: false,
-          error:
-            "Configure la biblioteca CGV en el panel lateral (Biblioteca CGV → Elegir carpeta…). Elija la carpeta raíz que contiene bibles/, no la subcarpeta bibles/ sola.",
-          result: null
-        });
-        return;
-      }
-
-      if (!bibleStatus.loaded) {
-        setBiblePopup({
-          kind,
-          reference,
-          h3Pos,
-          loading: false,
-          error: bibleStatus.error ?? "No se pudo cargar la biblioteca NBLA.",
-          result: null
-        });
-        return;
-      }
-    }
-
     try {
       const result = await resolveReference(reference);
       if (!result) {
+        if (!bibleStatus?.configured) {
+          setBiblePopup({
+            kind,
+            reference,
+            h3Pos,
+            loading: false,
+            error:
+              "Configure la biblioteca CGV en el panel lateral (Biblioteca CGV → Elegir carpeta…). Elija la carpeta raíz que contiene bibles/, no la subcarpeta bibles/ sola.",
+            result: null
+          });
+          return;
+        }
+
         setBiblePopup({
           kind,
           reference,
           h3Pos,
           loading: false,
-          error: `No se encontró la referencia: ${reference}`,
+          error: bibleStatus?.error ?? `No se encontró la referencia: ${reference}`,
           result: null
         });
         return;
@@ -314,6 +369,7 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
           }
         }),
         CgvSynthesisBlockquote,
+        CgvTable,
         CgvParagraph,
         CgvH5Block,
         CgvInlineBibleRefs,
@@ -325,12 +381,37 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
         }),
         HorizontalRule.configure({ HTMLAttributes: { class: "cgv-slide-break" } })
       ],
-      content: markdownToEditorHtml(body || ""),
+      content: markdownToEditorHtml(normalizeCgvMarkdown(body || "")),
+      onCreate: ({ editor: ed }) => {
+        tightenPassageLayoutInEditor(ed);
+      },
       editorProps: {
         attributes: { class: "manual-prosemirror" },
+        handleDOMEvents: {
+          blur: () => {
+            const ed = editorRef.current;
+            if (ed) {
+              lastSelectionPos.current = ed.state.selection.from;
+            }
+          }
+        },
         handleClick: (_view, pos, event) => {
           const ed = editorRef.current;
+          if (ed) {
+            lastSelectionPos.current = pos;
+          }
+
           if (!ed) return false;
+
+          if (underlinePaintModeRef.current && !previewOnlyRef.current) {
+            if (underlineWordAtDocPos(ed, pos)) {
+              event.preventDefault();
+              markManualEditorDirty();
+              scheduleSyncToMarkdown();
+              return true;
+            }
+            return false;
+          }
 
           const hit = findH3AtPos(ed, pos);
           if (hit && isLikelyBibleReference(hit.text)) {
@@ -356,6 +437,21 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
           return false;
         },
         handleKeyDown: (_view, event) => {
+          if (event.key === "Escape" && underlinePaintModeRef.current) {
+            event.preventDefault();
+            setUnderlinePaintModeEnabled(false);
+            return true;
+          }
+          if (
+            (event.metaKey || event.ctrlKey) &&
+            event.shiftKey &&
+            !event.altKey &&
+            event.key.toLowerCase() === "u"
+          ) {
+            event.preventDefault();
+            toggleUnderlinePaintMode();
+            return true;
+          }
           if (
             (event.metaKey || event.ctrlKey) &&
             !event.altKey &&
@@ -368,17 +464,17 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
             return true;
           }
           if (event.key === "Enter" && !event.shiftKey) {
-            queueMicrotask(() => {
-              const ed = editorRef.current;
-              if (ed) ensureScriptureParagraphsAfterH3(ed);
-            });
+            const ed = editorRef.current;
+            if (ed) {
+              window.setTimeout(() => ensureScriptureParagraphAfterH3AtCursor(ed), 0);
+            }
           }
           return false;
         }
       },
       onUpdate: () => {
+        if (previewOnlyRef.current) return;
         if (suppressUpdate.current) return;
-        markManualEditorDirty();
         scheduleSyncToMarkdown();
       }
     },
@@ -388,12 +484,20 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
   editorRef.current = editor;
 
   useEffect(() => {
+    if (!editor) return;
+    const el = editor.view.dom;
+    el.classList.toggle("manual-prosemirror--underline-paint", underlinePaintMode);
+    return () => el.classList.remove("manual-prosemirror--underline-paint");
+  }, [editor, underlinePaintMode]);
+
+  useEffect(() => {
     if (!editor || !scrollRef.current) return;
 
     const root = scrollRef.current;
 
     const onEditorClick = (event: MouseEvent) => {
       if (!isActiveRef.current) return;
+      if (underlinePaintModeRef.current) return;
 
       const target = event.target;
       if (!(target instanceof Element)) return;
@@ -433,12 +537,20 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
     if (!editor) return;
 
     const refreshInlineRefs = () => {
-      editor.view.dispatch(editor.state.tr.setMeta(inlineBibleRefsPluginKey, true));
+      if (!isActiveRef.current) return;
+      const run = () => {
+        if (editor.isDestroyed) return;
+        editor.view.dispatch(editor.state.tr.setMeta(inlineBibleRefsPluginKey, true));
+      };
+      if (typeof requestIdleCallback === "function") {
+        requestIdleCallback(run, { timeout: 2_500 });
+      } else {
+        window.setTimeout(run, 0);
+      }
     };
 
     window.addEventListener(BIBLE_INDEX_UPDATED_EVENT, refreshInlineRefs);
     window.addEventListener("cgv-bible-library-changed", refreshInlineRefs);
-    refreshInlineRefs();
 
     return () => {
       window.removeEventListener(BIBLE_INDEX_UPDATED_EVENT, refreshInlineRefs);
@@ -463,16 +575,15 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
   useEffect(() => {
     if (!editor) return;
 
-    const updateBlockStyle = () => {
-      setBlockStyle(getManualBlockStyleAtCursor(editor));
+    const onSelection = () => {
+      if (isActiveRef.current) {
+        lastSelectionPos.current = editor.state.selection.from;
+      }
     };
 
-    updateBlockStyle();
-    editor.on("selectionUpdate", updateBlockStyle);
-    editor.on("transaction", updateBlockStyle);
+    editor.on("selectionUpdate", onSelection);
     return () => {
-      editor.off("selectionUpdate", updateBlockStyle);
-      editor.off("transaction", updateBlockStyle);
+      editor.off("selectionUpdate", onSelection);
     };
   }, [editor]);
 
@@ -487,42 +598,80 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
 
     const onFlush = () => flushPending();
     const onCancel = () => cancelPendingSync();
-    const onExport = () => {
-      flushPending();
+    const exportBodyForRequest = (): string => {
       const ed = editorRef.current;
-      const md = ed ? editorHtmlToMarkdown(ed.getHTML()) : bodyRef.current;
+      if (!ed) return bodyRef.current;
+
+      cancelPendingSync();
+      if (!isManualEditorDirty()) return bodyRef.current;
+
+      const md = exportEditorMarkdown(ed, true);
+      syncExportedMarkdown(md);
+      clearManualEditorDirty();
+      return md;
+    };
+
+    const onExport = () => {
       window.dispatchEvent(
         new CustomEvent("cgv-manual-body-export", {
-          detail: { body: md }
+          detail: { body: exportBodyForRequest() }
         })
       );
     };
 
     const onHandoff = () => {
+      window.dispatchEvent(
+        new CustomEvent("cgv-manual-body-handoff", {
+          detail: { body: exportBodyForRequest() }
+        })
+      );
+    };
+
+    const onStyleCorrectPrep = () => {
       const ed = editorRef.current;
       if (!ed) {
         window.dispatchEvent(
-          new CustomEvent("cgv-manual-body-handoff", { detail: { body: bodyRef.current } })
+          new CustomEvent("cgv-manual-style-correct-prep", {
+            detail: { body: bodyRef.current, storedBody: bodyRef.current }
+          })
         );
         return;
       }
+
       cancelPendingSync();
-      const md = editorHtmlToMarkdown(ed.getHTML());
-      lastLoadedBody.current = md;
-      lastSyncedFromEditor.current = md;
-      clearManualEditorDirty();
-      window.dispatchEvent(new CustomEvent("cgv-manual-body-handoff", { detail: { body: md } }));
+      flushPending();
+      const md = editorDocToMarkdown(ed);
+      window.dispatchEvent(
+        new CustomEvent("cgv-manual-style-correct-prep", {
+          detail: { body: md, storedBody: bodyRef.current }
+        })
+      );
+    };
+
+    const onInsertQuiz = (event: Event) => {
+      const quizId = String((event as CustomEvent<{ quizId: string }>).detail?.quizId || "").trim();
+      if (!quizId) {
+        window.dispatchEvent(new CustomEvent("cgv-insert-quiz-result", { detail: { ok: false } }));
+        return;
+      }
+
+      const ok = applyQuizInsertRef.current(quizId);
+      window.dispatchEvent(new CustomEvent("cgv-insert-quiz-result", { detail: { ok } }));
     };
 
     window.addEventListener("cgv-manual-flush-sync", onFlush);
     window.addEventListener("cgv-manual-cancel-sync", onCancel);
     window.addEventListener("cgv-manual-body-export-request", onExport);
     window.addEventListener("cgv-request-manual-body-handoff", onHandoff);
+    window.addEventListener("cgv-request-manual-style-correct-prep", onStyleCorrectPrep);
+    window.addEventListener("cgv-insert-quiz", onInsertQuiz);
     return () => {
       window.removeEventListener("cgv-manual-flush-sync", onFlush);
       window.removeEventListener("cgv-manual-cancel-sync", onCancel);
       window.removeEventListener("cgv-manual-body-export-request", onExport);
       window.removeEventListener("cgv-request-manual-body-handoff", onHandoff);
+      window.removeEventListener("cgv-request-manual-style-correct-prep", onStyleCorrectPrep);
+      window.removeEventListener("cgv-insert-quiz", onInsertQuiz);
     };
   }, [editor]);
 
@@ -538,9 +687,13 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
     clearManualEditorDirty();
     cancelPendingSync();
     suppressUpdate.current = true;
-    editor.commands.setContent(markdownToEditorHtml(body), { emitUpdate: false });
+    editor.commands.setContent(
+      markdownToEditorHtml(normalizeCgvMarkdown(body)),
+      { emitUpdate: false }
+    );
+    tightenPassageLayoutInEditor(editor);
+    bodyRef.current = body;
     requestAnimationFrame(() => {
-      ensureScriptureParagraphsAfterH3(editor);
       suppressUpdate.current = false;
     });
   }, [body, reloadKey, editor]);
@@ -559,14 +712,23 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
       return;
     }
 
+    if (!isActiveRef.current) {
+      bodyRef.current = body;
+      return;
+    }
+
+    if (isManualEditorDirty()) {
+      return;
+    }
+
     cancelPendingSync();
     suppressUpdate.current = true;
     lastLoadedBody.current = body;
     lastSyncedFromEditor.current = body;
     clearManualEditorDirty();
     editor.commands.setContent(markdownToEditorHtml(body), { emitUpdate: false });
+    tightenPassageLayoutInEditor(editor);
     requestAnimationFrame(() => {
-      ensureScriptureParagraphsAfterH3(editor);
       suppressUpdate.current = false;
     });
   }, [body, editor]);
@@ -578,18 +740,14 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
       if (!isActiveRef.current) return;
 
       const place = manualSavePlace(editor, scrollRef.current);
-      let bodyMd: string | null = null;
+      cancelPendingSync();
 
-      if (isManualEditorDirty() || syncTimer.current) {
-        cancelPendingSync();
-        bodyMd = editorHtmlToMarkdown(editor.getHTML());
-        lastLoadedBody.current = bodyMd;
-        lastSyncedFromEditor.current = bodyMd;
-        bodyRef.current = bodyMd;
+      let bodyMd = bodyRef.current;
+      if (!previewOnlyRef.current && isManualEditorDirty()) {
+        bodyMd = exportEditorMarkdown(editor, true);
+        syncExportedMarkdown(bodyMd);
         clearManualEditorDirty();
-        onBodyChangeRef.current(bodyMd);
       }
-
       setViewHandoff({ place, bodyMd });
     };
 
@@ -626,7 +784,7 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
         lastLoadedBody.current = reloadBody;
         bodyRef.current = reloadBody;
         requestAnimationFrame(() => {
-          ensureScriptureParagraphsAfterH3(editor);
+          tightenPassageLayoutInEditor(editor);
           finishActivate();
         });
       } else if (place) {
@@ -638,6 +796,11 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
 
     wasActive.current = isActive;
   }, [isActive, editor]);
+
+  useEffect(() => {
+    if (!editor) return;
+    editor.setEditable(isActive && !previewOnly);
+  }, [editor, isActive, previewOnly]);
 
   useEffect(() => {
     if (!editor) return;
@@ -675,7 +838,7 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
           editor.chain().focus().toggleHeading({ level: 2 }).run();
           break;
         case 3:
-          editor.chain().focus().toggleHeading({ level: 3 }).run();
+          applyReferenceHeading(editor);
           break;
         case 4:
           applyHeadingStyle(editor, 4);
@@ -696,6 +859,25 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
 
     window.addEventListener("cgv-apply-style", handler);
     return () => window.removeEventListener("cgv-apply-style", handler);
+  }, [editor, isActive]);
+
+  useEffect(() => {
+    if (!editor) return;
+
+    const handler = (event: Event) => {
+      if (!isActive) return;
+
+      const detail = (event as CustomEvent<OutlineNavigateRequest>).detail;
+      const pos = findManualHeadingPos(editor.state.doc, detail.level, detail.ordinal);
+      if (pos == null) return;
+
+      editor.commands.setTextSelection(pos + 1);
+      editor.commands.focus();
+      requestAnimationFrame(() => scrollManualCursorIntoView(editor, scrollRef.current));
+    };
+
+    window.addEventListener("cgv-outline-navigate", handler);
+    return () => window.removeEventListener("cgv-outline-navigate", handler);
   }, [editor, isActive]);
 
   useEffect(() => {
@@ -745,7 +927,8 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
           break;
         case "replaceAll": {
           syncQuery(detail.query, detail.caseSensitive);
-          const md = editorHtmlToMarkdown(editor.getHTML());
+          tightenPassageLayoutInEditor(editor);
+          const md = editorDocToMarkdown(editor);
           const nextMd = replaceAllInText(
             md,
             detail.query,
@@ -757,6 +940,7 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
           cancelPendingSync();
           suppressUpdate.current = true;
           editor.commands.setContent(markdownToEditorHtml(nextMd), { emitUpdate: false });
+          tightenPassageLayoutInEditor(editor);
           suppressUpdate.current = false;
           onBodyChangeRef.current(nextMd);
           editor.commands.clearDocumentSearch();
@@ -773,6 +957,10 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
   }, [editor, isActive]);
 
   const handleUseBibleText = () => {
+    if (previewOnly) {
+      setBiblePopup(null);
+      return;
+    }
     if (!editor || biblePopup?.kind !== "h3" || biblePopup.h3Pos == null || !biblePopup.result) {
       return;
     }
@@ -786,120 +974,22 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
 
   if (!editor) return null;
 
-  const insertScripture = () => {
-    applyScriptureStyle(editor);
-  };
-
-  const insertDefinition = () => {
-    editor
-      .chain()
-      .focus()
-      .insertContent(
-        `<div class="cgv-definition"><p class="definition-term">término - TERMINO</p><p class="definition-text">: definición en español</p></div>`
-      )
-      .run();
-  };
-
-  const insertSlideBreak = () => {
-    editor.chain().focus().setHorizontalRule().run();
-  };
-
-  const insertQuiz = () => {
-    const id = window.prompt("ID del quiz (ej. santiago-1-1-27)", "santiago-1-1-27");
-    if (!id?.trim()) return;
-    editor
-      .chain()
-      .focus()
-      .insertContent(
-        `<p class="cgv-quiz" data-quiz-id="${id.trim()}">Quiz: ${id.trim()}</p>`
-      )
-      .run();
-  };
-
-  const styleButtonClass = (id: string) =>
-    blockStyle.id === id ? "manual-toolbar-btn is-active" : "manual-toolbar-btn";
-
-  const blockStyleIndicator = (
-    <span className="manual-style-indicator" aria-live="polite" title="Estilo del bloque actual">
-      <span className="manual-style-indicator-mark">{blockStyle.markdown}</span>
-      <span className="manual-style-indicator-label">{blockStyle.label}</span>
-      {blockStyle.shortcut ? (
-        <span className="manual-style-indicator-shortcut">{blockStyle.shortcut}</span>
-      ) : null}
-    </span>
-  );
-
   return (
     <div
       className={`manual-editor ${writingMode ? "manual-editor--writing" : ""} ${
-        bibleIndex || bibleStatus?.loaded ? "manual-editor--bible-ready" : ""
-      }`}
+        previewOnly ? "manual-editor--preview-only" : ""
+      } ${bibleIndex || bibleStatus?.loaded ? "manual-editor--bible-ready" : ""}`}
     >
       {!writingMode && (
-        <div className="manual-toolbar">
-        <span className="manual-toolbar-label">Estilo:</span>
-        {blockStyleIndicator}
-        <span className="manual-toolbar-sep" />
-        <button type="button" className={styleButtonClass("h1")} onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()} title="⌘1">
-          Contexto
-        </button>
-        <button type="button" className={styleButtonClass("h2")} onClick={() => editor.chain().focus().toggleHeading({ level: 2 }).run()} title="⌘2">
-          Sección
-        </button>
-        <button type="button" className={styleButtonClass("h3")} onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()} title="⌘3 — referencia bíblica">
-          Referencia
-        </button>
-        <button type="button" className={`${styleButtonClass("h4")} accent`} onClick={() => applyHeadingStyle(editor, 4)} title="⌘4 — texto ancla (escritura)">
-          H4
-        </button>
-        <button type="button" className={styleButtonClass("h5")} onClick={() => applyHeadingStyle(editor, 5)} title="⌘5 — comentario nivel 1">
-          H5
-        </button>
-        <button type="button" className={styleButtonClass("h6")} onClick={() => applyHeadingStyle(editor, 6)} title="⌘6 — comentario nivel 2">
-          H6
-        </button>
-        <button type="button" className={styleButtonClass("list")} onClick={() => applyCommentBulletList(editor)} title="⌘7 — comentario nivel 3 (lista)">
-          Lista
-        </button>
-        <button type="button" className={styleButtonClass("scripture")} onClick={insertScripture} title="Versículo bajo referencia">
-          Versículo
-        </button>
-        <button type="button" className={styleButtonClass("definition")} onClick={insertDefinition}>
-          Definición
-        </button>
-        <span className="manual-toolbar-sep" />
-        <button type="button" onClick={() => editor.chain().focus().toggleItalic().run()} title="En comentarios = escritura">
-          Cursiva
-        </button>
-        <button type="button" onClick={() => underlineWordAtCursor(editor)} title="Espacio en blanco (⌘U)">
-          Subrayado
-        </button>
-        <button type="button" onClick={() => editor.chain().focus().toggleBold().run()}>
-          Negrita
-        </button>
-        {(isManualCommandVisible("slideBreak") || isManualCommandVisible("quiz")) && (
-          <>
-            <span className="manual-toolbar-sep" />
-            {isManualCommandVisible("slideBreak") && (
-              <button type="button" onClick={insertSlideBreak}>
-                Diapositiva
-              </button>
-            )}
-            {isManualCommandVisible("quiz") && (
-              <button type="button" onClick={insertQuiz}>
-                Quiz
-              </button>
-            )}
-          </>
-        )}
-      </div>
+        <ManualToolbar
+          editor={editor}
+          underlinePaintMode={underlinePaintMode}
+          onToggleUnderlinePaintMode={toggleUnderlinePaintMode}
+        />
       )}
 
       {writingMode && (
-        <div className="manual-style-indicator manual-style-indicator--writing" aria-live="polite">
-          <span className="manual-style-indicator-mark">{blockStyle.markdown}</span>
-          <span className="manual-style-indicator-label">{blockStyle.label}</span>
-        </div>
+        <ManualStyleChip editor={editor} className="manual-style-indicator--writing" />
       )}
 
       <div className="manual-page-scroll" ref={scrollRef}>
@@ -910,7 +1000,9 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
 
       {writingMode && (
         <p className="writing-mode-keys">
-          Escape · ⌘⇧F salir · ⌘/ vista · ⌘S guardar
+          {underlinePaintMode
+            ? "Espacio en blanco — clic en palabras · Escape salir · ⌘S guardar"
+            : "Escape · ⌘⇧F salir · ⌘/ vista · ⌘S guardar"}
         </p>
       )}
 
@@ -921,10 +1013,18 @@ export function ManualEditor({ body, onBodyChange, reloadKey, isActive, writingM
         loading={biblePopup?.loading ?? false}
         error={biblePopup?.error ?? null}
         result={biblePopup?.result ?? null}
-        showUseText={biblePopup?.kind === "h3"}
+        showUseText={biblePopup?.kind === "h3" && !previewOnly}
         onClose={() => setBiblePopup(null)}
         onUseText={handleUseBibleText}
       />
     </div>
   );
 }
+
+export const ManualEditor = memo(ManualEditorInner, (prev, next) =>
+  prev.body === next.body &&
+  prev.reloadKey === next.reloadKey &&
+  prev.isActive === next.isActive &&
+  prev.writingMode === next.writingMode &&
+  prev.previewOnly === next.previewOnly
+);

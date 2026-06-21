@@ -1,4 +1,4 @@
-import { message } from "@tauri-apps/plugin-dialog";
+import { confirm } from "@tauri-apps/plugin-dialog";
 
 export async function confirmAction(
   text: string,
@@ -6,15 +6,13 @@ export async function confirmAction(
     title: "CGV Writer"
   }
 ): Promise<boolean> {
-  const okLabel = options.okLabel ?? "Continuar";
   try {
-    const result = await message(text, {
+    return await confirm(text, {
       title: options.title,
       kind: "warning",
-      buttons: { ok: okLabel, cancel: options.cancelLabel ?? "Cancelar" }
+      okLabel: options.okLabel ?? "Continuar",
+      cancelLabel: options.cancelLabel ?? "Cancelar"
     });
-    // macOS may return "Ok" instead of the custom label for the primary button.
-    return result === okLabel || result === "Ok";
   } catch {
     return window.confirm(`${options.title}\n\n${text}`);
   }

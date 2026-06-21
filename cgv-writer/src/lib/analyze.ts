@@ -16,6 +16,18 @@ export interface SlideOutline {
   isIllustration: boolean;
 }
 
+export interface HeadingOutlineItem {
+  id: string;
+  level: 1 | 2 | 3;
+  title: string;
+  /** Character offset at the start of this heading line in the document body. */
+  bodyOffset: number;
+  /** 1-based index among headings of the same level (for duplicate titles). */
+  ordinal: number;
+}
+
+export type HeadingOutlineNode = HeadingOutlineItem & { children: HeadingOutlineNode[] };
+
 export function splitFrontMatter(text: string) {
   const match = String(text || "").match(FRONT_MATTER);
   if (!match) return { meta: "", body: text || "" };
@@ -50,6 +62,62 @@ function summarizeSlide(lines: string[]) {
   }
 
   return (lines[0] || "(vacía)").slice(0, 80);
+}
+
+function stripHeadingMarkdown(title: string): string {
+  return title
+    .replace(/\*\*(.+?)\*\*/g, "$1")
+    .replace(/\*(.+?)\*/g, "$1")
+    .replace(/_(.+?)_/g, "$1")
+    .trim();
+}
+
+/** H1/H2/H3 hierarchy for the sidebar outline. */
+export function parseHeadingOutline(body: string): HeadingOutlineItem[] {
+  const items: HeadingOutlineItem[] = [];
+  const ordinals: Record<1 | 2 | 3, number> = { 1: 0, 2: 0, 3: 0 };
+  let offset = 0;
+
+  for (const line of String(body || "").split("\n")) {
+    const match = line.match(/^(#{1,3})\s+(.+)$/);
+    if (match) {
+      const level = match[1].length as 1 | 2 | 3;
+      ordinals[level] += 1;
+      items.push({
+        id: `h${level}-${offset}`,
+        level,
+        title: stripHeadingMarkdown(match[2]).slice(0, 120),
+        bodyOffset: offset,
+        ordinal: ordinals[level]
+      });
+    }
+    offset += line.length + 1;
+  }
+
+  return items;
+}
+
+export function buildHeadingOutlineTree(items: HeadingOutlineItem[]): HeadingOutlineNode[] {
+  const roots: HeadingOutlineNode[] = [];
+  const stack: HeadingOutlineNode[] = [];
+
+  for (const item of items) {
+    const node: HeadingOutlineNode = { ...item, children: [] };
+
+    while (stack.length > 0 && stack[stack.length - 1].level >= item.level) {
+      stack.pop();
+    }
+
+    if (stack.length === 0) {
+      roots.push(node);
+    } else {
+      stack[stack.length - 1].children.push(node);
+    }
+
+    stack.push(node);
+  }
+
+  return roots;
 }
 
 export function analyzeDocument(text: string) {
@@ -94,5 +162,7 @@ export function analyzeDocument(text: string) {
     isIllustration: lines.some(line => ILLUSTRATION_MARKER.test(line))
   }));
 
-  return { outline, checks };
+  const headingOutline = parseHeadingOutline(body);
+
+  return { outline, headingOutline, checks };
 }

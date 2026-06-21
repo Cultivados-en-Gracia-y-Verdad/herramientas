@@ -8,6 +8,7 @@ interface FileMenuProps {
   onSave: () => void;
   onReopenLast: () => void;
   onTemplate: () => void;
+  onQuit: () => void;
 }
 
 export function FileMenu({
@@ -16,7 +17,8 @@ export function FileMenu({
   onOpen,
   onSave,
   onReopenLast,
-  onTemplate
+  onTemplate,
+  onQuit
 }: FileMenuProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -73,6 +75,11 @@ export function FileMenu({
           <hr />
           <button type="button" role="menuitem" onClick={() => pick(onTemplate)}>
             Nueva plantilla
+          </button>
+          <hr />
+          <button type="button" role="menuitem" onClick={() => pick(onQuit)}>
+            Salir
+            <span>⌘Q</span>
           </button>
         </div>
       )}

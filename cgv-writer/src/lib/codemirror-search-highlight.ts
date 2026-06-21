@@ -116,6 +116,29 @@ export function cmSearchHighlightExtension() {
   return [cmSearchHighlightField, cmSearchHighlightPlugin];
 }
 
+export function firstMatchIndexAtOrAfter(query: SearchQuery, doc: Text, pos: number): number {
+  const cursor = query.getCursor(doc);
+  let index = 0;
+  let result = cursor.next();
+  while (!result.done) {
+    if (result.value.from >= pos) return index;
+    index++;
+    result = cursor.next();
+  }
+  return 0;
+}
+
+export function revealCmSearchMatch(
+  view: EditorView,
+  match: { from: number; to: number }
+): void {
+  view.dispatch({
+    selection: { anchor: match.from, head: match.to },
+    effects: EditorView.scrollIntoView(match.from, { y: "center" }),
+    scrollIntoView: false
+  });
+}
+
 export function applyCmSearchHighlight(
   view: EditorView,
   query: SearchQuery,
@@ -136,15 +159,6 @@ export function applyCmSearchHighlight(
     current: normalizedIndex >= 0 ? normalizedIndex + 1 : 0
   });
   return next;
-}
-
-export function scrollCmMatchIntoView(view: EditorView, from: number): void {
-  const coords = view.coordsAtPos(from);
-  if (!coords) return;
-  const scroller = view.scrollDOM;
-  const box = scroller.getBoundingClientRect();
-  const target = coords.top - box.top + scroller.scrollTop - scroller.clientHeight * 0.35;
-  scroller.scrollTop = Math.max(0, target);
 }
 
 export function getCmSearchMatch(

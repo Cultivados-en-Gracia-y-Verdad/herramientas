@@ -4,7 +4,6 @@ import {
   EditorView,
   keymap,
   lineNumbers,
-  highlightActiveLine,
   drawSelection
 } from "@codemirror/view";
 import { defaultKeymap, history, historyKeymap } from "@codemirror/commands";
@@ -18,8 +17,9 @@ import {
   applyCmSearchHighlight,
   cmSearchHighlightExtension,
   cmSearchHighlightField,
+  firstMatchIndexAtOrAfter,
   getCmSearchMatch,
-  scrollCmMatchIntoView,
+  revealCmSearchMatch,
   setCmSearchHighlight
 } from "../lib/codemirror-search-highlight";
 import {
@@ -31,69 +31,93 @@ import {
   saveEditorPlace,
   type SavedEditorPlace
 } from "../lib/editor-position-bridge";
-import { MANUAL_SYNC_MS, setViewHandoff, takeViewHandoff } from "../lib/manual-sync";
+import { setViewHandoff, takeViewHandoff } from "../lib/manual-sync";
 import { replaceAllInText } from "../lib/text-search";
 import { reportSearchResult, type SearchRequest } from "../lib/search-bridge";
-import { joinYamlBody, splitYamlBody } from "../lib/markdown-html";
+import { type OutlineNavigateRequest } from "../lib/outline-bridge";
+import { joinYamlBody, splitYamlBody, bodyStartInContent, CGV_BULLET_LINE_PREFIX, tightenCgvDefaultSpacing } from "../lib/markdown-html";
+import { cgvBlankHighlightExtension } from "../lib/codemirror-underline-blank";
+
+/** Full-doc Lezer highlighting is costly on long manuals. */
+const LARGE_MARKDOWN_CHARS = 80_000;
 
 const editorTheme = EditorView.theme({
   "&": {
     height: "100%",
     fontSize: "calc(15px * var(--cgv-type-scale))",
-    backgroundColor: "#f8fafc"
+    backgroundColor: "var(--cm-bg)",
+    color: "var(--text)"
   },
   ".cm-scroller": {
-    fontFamily: '"IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace',
-    lineHeight: "1.55"
-  },
-  ".cm-gutters": {
-    backgroundColor: "#f1f5f9",
-    color: "#64748b",
-    borderRight: "1px solid #e2e8f0"
-  },
-  ".cm-activeLineGutter": { backgroundColor: "#e2e8f0" },
-  ".cm-activeLine": { backgroundColor: "rgba(56, 189, 248, 0.08)" },
-  "&.cm-focused .cm-cursor": { borderLeftColor: "#0369a1" },
-  "&.cm-focused .cm-selectionBackground, .cm-selectionBackground": {
-    backgroundColor: "rgba(56, 189, 248, 0.22) !important"
-  },
-  ".cm-searchMatch": {
-    backgroundColor: "rgba(250, 204, 21, 0.45)"
-  },
-  ".cm-searchMatch.cm-searchMatch-selected": {
-    backgroundColor: "rgba(251, 146, 60, 0.55)"
+    fontFamily: "var(--cm-font-family)",
+    fontWeight: "var(--cm-font-weight)",
+    lineHeight: "1.62",
+    WebkitFontSmoothing: "antialiased",
+    MozOsxFontSmoothing: "grayscale"
   },
   ".cm-content": {
-    textDecoration: "none"
+    fontFamily: "var(--cm-font-family)",
+    fontWeight: "var(--cm-font-weight)",
+    textDecoration: "none",
+    caretColor: "var(--cm-cursor)"
+  },
+  ".cm-line": {
+    fontWeight: "var(--cm-font-weight)"
+  },
+  ".cm-gutters": {
+    backgroundColor: "var(--cm-gutter-bg)",
+    color: "var(--cm-gutter-fg)",
+    borderRight: "1px solid var(--border)",
+    fontFamily: '"IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace',
+    fontSize: "0.88em",
+    fontWeight: "400"
+  },
+  ".cm-activeLineGutter": { backgroundColor: "var(--cm-active-gutter)" },
+  ".cm-activeLine": { backgroundColor: "var(--cm-active-line)" },
+  "&.cm-focused .cm-cursor": { borderLeftColor: "var(--cm-cursor)" },
+  "&.cm-focused .cm-selectionBackground, .cm-selectionBackground": {
+    backgroundColor: "var(--cm-selection) !important"
+  },
+  ".cm-searchMatch": {
+    backgroundColor: "var(--cm-search)"
+  },
+  ".cm-searchMatch.cm-searchMatch-selected": {
+    backgroundColor: "var(--cm-search-selected)"
+  },
+  ".cm-cgv-blank": {
+    fontWeight: "var(--cm-strong-weight)",
+    textDecoration: "underline",
+    textDecorationThickness: "2px",
+    textUnderlineOffset: "2px",
+    backgroundColor: "transparent"
   }
 });
 
-/** Like defaultHighlightStyle but without underlines (headings/links stay plain in source view). */
+/** Prose-oriented highlighting — body and headings use light weight; color marks headings. */
 const markdownHighlightStyle = HighlightStyle.define([
-  { tag: tags.meta, color: "#404740" },
-  { tag: tags.link, color: "#0369a1" },
-  { tag: tags.heading, color: "#1e3a5f", fontWeight: "bold" },
-  { tag: tags.emphasis, fontStyle: "italic" },
-  { tag: tags.strong, fontWeight: "bold" },
+  { tag: tags.meta, color: "var(--cm-meta)", fontWeight: "var(--cm-font-weight)" },
+  { tag: tags.link, color: "var(--cm-link)", fontWeight: "var(--cm-font-weight)" },
+  { tag: tags.heading, color: "var(--cm-heading)", fontWeight: "var(--cm-heading-weight)" },
+  { tag: tags.emphasis, fontStyle: "italic", fontWeight: "var(--cm-font-weight)" },
+  { tag: tags.strong, fontWeight: "var(--cm-strong-weight)" },
   { tag: tags.strikethrough, textDecoration: "line-through" },
-  { tag: tags.keyword, color: "#708" },
-  { tag: [tags.atom, tags.bool, tags.url, tags.contentSeparator, tags.labelName], color: "#219" },
-  { tag: [tags.literal, tags.inserted], color: "#164" },
-  { tag: [tags.string, tags.deleted], color: "#a11" },
-  { tag: [tags.regexp, tags.escape, tags.special(tags.string)], color: "#e40" },
-  { tag: tags.definition(tags.variableName), color: "#00f" },
-  { tag: tags.local(tags.variableName), color: "#30a" },
-  { tag: [tags.typeName, tags.namespace], color: "#085" },
-  { tag: tags.className, color: "#167" },
-  { tag: [tags.special(tags.variableName), tags.macroName], color: "#256" },
-  { tag: tags.definition(tags.propertyName), color: "#00c" },
-  { tag: tags.comment, color: "#940" },
-  { tag: tags.invalid, color: "#f00" }
+  {
+    tag: tags.monospace,
+    color: "var(--cm-meta)",
+    fontFamily: '"IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace',
+    fontWeight: "400"
+  },
+  { tag: tags.comment, color: "var(--cm-comment)", fontWeight: "var(--cm-font-weight)" },
+  { tag: tags.string, color: "var(--cm-string)", fontWeight: "var(--cm-font-weight)" },
+  { tag: tags.keyword, color: "var(--cm-keyword)", fontWeight: "var(--cm-font-weight)" }
 ]);
 
 interface MarkdownEditorProps {
   value: string;
   onChange: (value: string) => void;
+  /** View switch — update shared state without marking the document dirty. */
+  onContentSync?: (value: string) => void;
+  onDirty?: () => void;
   isActive: boolean;
   reloadKey: string;
 }
@@ -158,25 +182,45 @@ function applyMarkdownBullet(view: EditorView) {
   const { from } = view.state.selection.main;
   const line = view.state.doc.lineAt(from);
   const text = line.text.replace(/^#+\s*/, "").replace(/^-\s+/, "");
-  const prefix = "- ";
+  const prefix = CGV_BULLET_LINE_PREFIX;
   view.dispatch({
     changes: { from: line.from, to: line.to, insert: prefix + text },
     selection: { anchor: line.from + prefix.length }
   });
 }
 
-export function MarkdownEditor({ value, onChange, isActive, reloadKey }: MarkdownEditorProps) {
+export function MarkdownEditor({ value, onChange, onContentSync, onDirty, isActive, reloadKey }: MarkdownEditorProps) {
   const hostRef = useRef<HTMLDivElement>(null);
   const viewRef = useRef<EditorView | null>(null);
   const onChangeRef = useRef(onChange);
+  const onContentSyncRef = useRef(onContentSync);
+  const onDirtyRef = useRef(onDirty);
   const lastReloadKey = useRef(reloadKey);
   const wasActive = useRef(false);
   const selfChange = useRef(false);
   const valueRef = useRef(value);
   const isActiveRef = useRef(isActive);
-  const changeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const skipValueSync = useRef(false);
+
+  const syncDocToParent = (doc: string) => {
+    selfChange.current = true;
+    valueRef.current = doc;
+    onChangeRef.current(doc);
+  };
+
+  const flushPending = (): string => {
+    const view = viewRef.current;
+    if (!view) return valueRef.current;
+    const docValue = view.state.doc.toString();
+    if (docValue !== valueRef.current) {
+      syncDocToParent(docValue);
+    }
+    return docValue;
+  };
+
   onChangeRef.current = onChange;
+  onContentSyncRef.current = onContentSync;
+  onDirtyRef.current = onDirty;
   valueRef.current = value;
   isActiveRef.current = isActive;
 
@@ -186,25 +230,21 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
     const updateListener = EditorView.updateListener.of(update => {
       if (!update.docChanged) return;
       selfChange.current = true;
-      if (changeTimer.current) clearTimeout(changeTimer.current);
-      changeTimer.current = setTimeout(() => {
-        changeTimer.current = null;
-        const viewNow = viewRef.current;
-        if (!viewNow) return;
-        onChangeRef.current(viewNow.state.doc.toString());
-      }, MANUAL_SYNC_MS);
+      onDirtyRef.current?.();
     });
+
+    const useSyntaxHighlight = value.length <= LARGE_MARKDOWN_CHARS;
 
     const state = EditorState.create({
       doc: value,
       extensions: [
         lineNumbers(),
-        highlightActiveLine(),
         drawSelection(),
         history(),
         cmSearchHighlightExtension(),
+        cgvBlankHighlightExtension,
         markdown({ base: markdownLanguage }),
-        syntaxHighlighting(markdownHighlightStyle),
+        ...(useSyntaxHighlight ? [syntaxHighlighting(markdownHighlightStyle)] : []),
         editorTheme,
         keymap.of([...defaultKeymap, ...historyKeymap]),
         updateListener,
@@ -216,7 +256,6 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
     viewRef.current = view;
 
     return () => {
-      if (changeTimer.current) clearTimeout(changeTimer.current);
       view.destroy();
       viewRef.current = null;
     };
@@ -242,22 +281,37 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
     }
 
     const current = view.state.doc.toString();
-    if (!fileChanged && current === value) {
+    const split = splitYamlBody(value);
+    const displayValue = joinYamlBody(split.frontMatter, tightenCgvDefaultSpacing(split.body));
+
+    if (!fileChanged && current === displayValue) {
       return;
     }
 
+    if (!fileChanged && isActiveRef.current && current !== displayValue) {
+      syncDocToParent(current);
+      return;
+    }
+
+    if (fileChanged && displayValue !== value) {
+      skipValueSync.current = true;
+      selfChange.current = true;
+      valueRef.current = displayValue;
+      onContentSyncRef.current?.(displayValue);
+    }
+
     const place = loadSharedEditorPlace();
-    const pos = place ? markdownPosForPlace(value, place) : null;
+    const pos = place ? markdownPosForPlace(displayValue, place) : null;
     const selection = view.state.selection.main;
     view.dispatch({
-      changes: { from: 0, to: current.length, insert: value },
+      changes: { from: 0, to: current.length, insert: displayValue },
       selection: fileChanged
         ? { anchor: 0, head: 0 }
         : pos != null
           ? { anchor: pos, head: pos }
           : {
-              anchor: Math.min(selection.anchor, value.length),
-              head: Math.min(selection.head, value.length)
+              anchor: Math.min(selection.anchor, displayValue.length),
+              head: Math.min(selection.head, displayValue.length)
             },
       effects: pos != null ? EditorView.scrollIntoView(pos, { y: "center" }) : undefined,
       scrollIntoView: false
@@ -271,13 +325,9 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
     const saveIfActive = () => {
       if (!isActiveRef.current) return;
       const docValue = view.state.doc.toString();
-      if (changeTimer.current) {
-        clearTimeout(changeTimer.current);
-        changeTimer.current = null;
-        selfChange.current = true;
-        valueRef.current = docValue;
-        onChangeRef.current(docValue);
-      }
+      selfChange.current = true;
+      valueRef.current = docValue;
+      onContentSyncRef.current?.(docValue);
       const { body } = splitYamlBody(docValue);
       const place = {
         scrollRatio: 0,
@@ -295,8 +345,23 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
       setViewHandoff({ place: loadSharedEditorPlace() ?? place, bodyMd: body });
     };
 
+    const onExport = () => {
+      const docValue = flushPending();
+      window.dispatchEvent(
+        new CustomEvent("cgv-markdown-body-export", {
+          detail: { body: docValue }
+        })
+      );
+    };
+
     window.addEventListener("cgv-before-view-change", saveIfActive);
-    return () => window.removeEventListener("cgv-before-view-change", saveIfActive);
+    window.addEventListener("cgv-markdown-flush-sync", flushPending);
+    window.addEventListener("cgv-markdown-body-export-request", onExport);
+    return () => {
+      window.removeEventListener("cgv-before-view-change", saveIfActive);
+      window.removeEventListener("cgv-markdown-flush-sync", flushPending);
+      window.removeEventListener("cgv-markdown-body-export-request", onExport);
+    };
   }, []);
 
   useEffect(() => {
@@ -304,12 +369,7 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
     if (!view) return;
 
     if (!isActive && wasActive.current) {
-      if (changeTimer.current) {
-        clearTimeout(changeTimer.current);
-        changeTimer.current = null;
-        selfChange.current = true;
-        onChangeRef.current(view.state.doc.toString());
-      }
+      flushPending();
     }
 
     if (isActive && !wasActive.current) {
@@ -320,7 +380,6 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
       let nextValue = valueRef.current;
       if (handoff?.bodyMd != null) {
         nextValue = joinYamlBody(frontMatter, handoff.bodyMd);
-        valueRef.current = nextValue;
       }
 
       const current = view.state.doc.toString();
@@ -335,6 +394,8 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
         });
         skipValueSync.current = true;
         selfChange.current = true;
+        valueRef.current = nextValue;
+        onContentSyncRef.current?.(nextValue);
       } else if (place) {
         restoreMarkdownPlace(view, nextValue, place);
       } else {
@@ -371,6 +432,27 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
   useEffect(() => {
     const handler = (event: Event) => {
       const view = viewRef.current;
+      if (!view || !isActiveRef.current) return;
+
+      const detail = (event as CustomEvent<OutlineNavigateRequest>).detail;
+      const docValue = view.state.doc.toString();
+      const pos = bodyStartInContent(docValue) + detail.bodyOffset;
+
+      view.dispatch({
+        selection: { anchor: pos, head: pos },
+        effects: EditorView.scrollIntoView(pos, { y: "center" }),
+        scrollIntoView: false
+      });
+      view.focus();
+    };
+
+    window.addEventListener("cgv-outline-navigate", handler);
+    return () => window.removeEventListener("cgv-outline-navigate", handler);
+  }, []);
+
+  useEffect(() => {
+    const handler = (event: Event) => {
+      const view = viewRef.current;
       if (!view || !isActive) return;
 
       const detail = (event as CustomEvent<SearchRequest>).detail;
@@ -387,25 +469,35 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
           reportSearchResult({ total: 0, current: 0 });
           break;
         case "find": {
-          const state = applyCmSearchHighlight(view, searchQuery, 0);
+          const cursorPos = view.state.selection.main.head;
+          const startIndex = firstMatchIndexAtOrAfter(searchQuery, view.state.doc, cursorPos);
+          const state = applyCmSearchHighlight(view, searchQuery, startIndex);
           const match = state ? getCmSearchMatch(view, state) : null;
-          if (match) scrollCmMatchIntoView(view, match.from);
+          if (match) revealCmSearchMatch(view, match);
           break;
         }
         case "next": {
           const prev = view.state.field(cmSearchHighlightField);
-          const nextIndex = (prev?.currentIndex ?? -1) + 1;
-          const state = applyCmSearchHighlight(view, searchQuery, nextIndex);
+          const startIndex =
+            prev?.query.search === detail.query &&
+            prev.query.caseSensitive === detail.caseSensitive
+              ? prev.currentIndex + 1
+              : firstMatchIndexAtOrAfter(searchQuery, view.state.doc, view.state.selection.main.head);
+          const state = applyCmSearchHighlight(view, searchQuery, startIndex);
           const match = state ? getCmSearchMatch(view, state) : null;
-          if (match) scrollCmMatchIntoView(view, match.from);
+          if (match) revealCmSearchMatch(view, match);
           break;
         }
         case "prev": {
           const prev = view.state.field(cmSearchHighlightField);
-          const nextIndex = (prev?.currentIndex ?? 0) - 1;
-          const state = applyCmSearchHighlight(view, searchQuery, nextIndex);
+          const startIndex =
+            prev?.query.search === detail.query &&
+            prev.query.caseSensitive === detail.caseSensitive
+              ? prev.currentIndex - 1
+              : firstMatchIndexAtOrAfter(searchQuery, view.state.doc, view.state.selection.main.head);
+          const state = applyCmSearchHighlight(view, searchQuery, startIndex);
           const match = state ? getCmSearchMatch(view, state) : null;
-          if (match) scrollCmMatchIntoView(view, match.from);
+          if (match) revealCmSearchMatch(view, match);
           break;
         }
         case "replace": {
@@ -417,7 +509,7 @@ export function MarkdownEditor({ value, onChange, isActive, reloadKey }: Markdow
           });
           const state = applyCmSearchHighlight(view, searchQuery, prev?.currentIndex ?? 0);
           const nextMatch = state ? getCmSearchMatch(view, state) : null;
-          if (nextMatch) scrollCmMatchIntoView(view, nextMatch.from);
+          if (nextMatch) revealCmSearchMatch(view, nextMatch);
           break;
         }
         case "replaceAll": {

@@ -228,6 +228,8 @@ export const CgvSearch = Extension.create({
   },
 
   addProseMirrorPlugins() {
+    let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+
     return [
       new Plugin<CgvSearchState>({
         key: cgvSearchPluginKey,
@@ -242,18 +244,7 @@ export const CgvSearch = Extension.create({
             const meta = tr.getMeta(cgvSearchPluginKey) as CgvSearchState | undefined;
             if (meta) return meta;
             if (tr.docChanged && value.query) {
-              const matches = findMatches(tr.doc, value.query, value.caseSensitive);
-              let currentIndex = value.currentIndex;
-              if (!matches.length) {
-                currentIndex = -1;
-              } else if (currentIndex >= matches.length) {
-                currentIndex = matches.length - 1;
-              } else if (currentIndex < 0) {
-                currentIndex = 0;
-              }
-              const next = { ...value, matches, currentIndex };
-              queueMicrotask(() => reportFromState(next));
-              return next;
+              return { ...value, matches: [], currentIndex: -1 };
             }
             return value;
           }
@@ -273,6 +264,38 @@ export const CgvSearch = Extension.create({
             );
             return DecorationSet.create(state.doc, decos);
           }
+        },
+        view() {
+          return {
+            update(view, prevState) {
+              const current = cgvSearchPluginKey.getState(view.state);
+              if (!current?.query || view.state.doc === prevState.doc) return;
+
+              if (debounceTimer) clearTimeout(debounceTimer);
+              debounceTimer = setTimeout(() => {
+                debounceTimer = null;
+                if (view.isDestroyed) return;
+                const state = cgvSearchPluginKey.getState(view.state);
+                if (!state?.query) return;
+
+                const matches = findMatches(view.state.doc, state.query, state.caseSensitive);
+                let currentIndex = state.currentIndex;
+                if (!matches.length) {
+                  currentIndex = -1;
+                } else if (currentIndex >= matches.length) {
+                  currentIndex = matches.length - 1;
+                } else if (currentIndex < 0) {
+                  currentIndex = 0;
+                }
+                const next: CgvSearchState = { ...state, matches, currentIndex };
+                view.dispatch(view.state.tr.setMeta(cgvSearchPluginKey, next));
+                reportFromState(next);
+              }, 280);
+            },
+            destroy() {
+              if (debounceTimer) clearTimeout(debounceTimer);
+            }
+          };
         }
       })
     ];

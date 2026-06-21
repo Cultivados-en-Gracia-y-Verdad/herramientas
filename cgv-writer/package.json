@@ -10,7 +10,10 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "tauri:dev": "tauri dev",
-    "tauri:build": "tauri build"
+    "tauri:build": "tauri build",
+    "install:mac": "bash scripts/install-mac.sh",
+    "open:mac": "open -a 'CGV Writer' 2>/dev/null || npm run tauri:dev",
+    "icons": "python3 scripts/generate-icons.py"
   },
   "dependencies": {
     "@codemirror/commands": "^6.8.1",

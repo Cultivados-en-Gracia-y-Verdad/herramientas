@@ -70,21 +70,18 @@ pub fn get_bible_status(library_root: Option<&str>, version: Option<&str>) -> Bi
     let dir = bible_dir(root, &version);
     let bible_dir_display = dir.to_str().map(str::to_string);
 
-    match read_bible_files_from_dir(&dir, &version) {
-        Ok(files) if !files.is_empty() => {
-            let (books, references) = count_bible_entries(&files);
-            BibleStatus {
-                configured: true,
-                library_root_dir: Some(root.to_string()),
-                version,
-                loaded: true,
-                books,
-                references,
-                bible_dir: bible_dir_display,
-                available_versions,
-                error: None,
-            }
-        }
+    match count_bible_files(&dir, &version) {
+        Ok(file_count) if file_count > 0 => BibleStatus {
+            configured: true,
+            library_root_dir: Some(root.to_string()),
+            version,
+            loaded: true,
+            books: file_count,
+            references: 0,
+            bible_dir: bible_dir_display,
+            available_versions,
+            error: None,
+        },
         Ok(_) => {
             let extension = bible_file_extension(&version);
             BibleStatus {
@@ -160,28 +157,29 @@ fn read_bible_files_from_dir(dir: &Path, version: &str) -> Result<Vec<BibleFileP
     Ok(files)
 }
 
-fn count_bible_entries(files: &[BibleFilePayload]) -> (usize, usize) {
-    let mut books = std::collections::HashSet::new();
-    let mut references = 0usize;
+fn count_bible_files(dir: &Path, version: &str) -> Result<usize, String> {
+    if !dir.is_dir() {
+        return Err(format!("No se encontró la carpeta de biblias: {}", dir.display()));
+    }
 
-    for file in files {
-        for line in file.content.replace("\r\n", "\n").lines() {
-            if line.matches(':').count() < 2 {
-                continue;
-            }
+    let extension = bible_file_extension(version);
+    let mut count = 0usize;
 
-            if let Some(caps) = regex_lite::Regex::new(r"^(.+?)\s+(\d+):(\d+)\s+(.+)$")
-                .ok()
-                .and_then(|re| re.captures(line))
-            {
-                let book = caps.get(1).map(|m| m.as_str()).unwrap_or("").trim();
-                if !book.is_empty() {
-                    books.insert(book.to_string());
-                    references += 1;
-                }
-            }
+    for entry in fs::read_dir(dir).map_err(|e| e.to_string())? {
+        let entry = entry.map_err(|e| e.to_string())?;
+        if !entry.path().is_file() {
+            continue;
+        }
+
+        let path = entry.path();
+        let Some(file_name) = path.file_name().and_then(|name| name.to_str()) else {
+            continue;
+        };
+
+        if file_name.to_lowercase().ends_with(&extension) {
+            count += 1;
         }
     }
 
-    (books.len(), references)
+    Ok(count)
 }

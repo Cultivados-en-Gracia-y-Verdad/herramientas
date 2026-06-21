@@ -16,7 +16,6 @@ quizzes: []
 Texto del versículo sin cursiva ni comillas.
 
 #### Texto ancla
-
 ##### Comentario nivel 1
 
 ###### Comentario nivel 2 (anidado bajo H5).

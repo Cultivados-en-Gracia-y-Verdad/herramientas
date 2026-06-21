@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { analyzeDocument } from "../lib/analyze";
-import { splitYamlBody, joinYamlBody } from "../lib/markdown-html";
 import { compileBlocks } from "../lib/blocks/compile";
 import { createBlock } from "../lib/blocks/factory";
 import type { ContentBlock } from "../lib/blocks/types";
@@ -8,13 +7,15 @@ import "./PresentationPanel.css";
 
 interface PresentationPanelProps {
   content: string;
-  onContentChange: (content: string) => void;
+  onAppendToBody: (chunk: string) => void | Promise<void>;
+  onInsertQuiz: (quizId: string) => void | Promise<void>;
   variant?: "full" | "sidebar";
 }
 
 export function PresentationPanel({
   content,
-  onContentChange,
+  onAppendToBody,
+  onInsertQuiz,
   variant = "full"
 }: PresentationPanelProps) {
   const [verseRef, setVerseRef] = useState("Santiago 1:1");
@@ -23,13 +24,10 @@ export function PresentationPanel({
   const [comment, setComment] = useState("");
   const [quizId, setQuizId] = useState("santiago-1-1-27");
 
-  const analysis = useMemo(() => analyzeDocument(content), [content]);
-
-  const appendMarkdown = (chunk: string) => {
-    const { frontMatter, body } = splitYamlBody(content);
-    const nextBody = body.trim() ? `${body.trim()}\n\n${chunk.trim()}` : chunk.trim();
-    onContentChange(joinYamlBody(frontMatter, nextBody));
-  };
+  const analysis = useMemo(
+    () => (variant === "sidebar" ? null : analyzeDocument(content)),
+    [content, variant]
+  );
 
   const appendSlideUnit = () => {
     const blocks: ContentBlock[] = [createBlock("slideBreak")];
@@ -54,21 +52,20 @@ export function PresentationPanel({
         blocks.push(commentary);
       }
     }
-    appendMarkdown(compileBlocks(blocks));
+    void onAppendToBody(compileBlocks(blocks));
     setVerseText("");
     setFocus("");
     setComment("");
   };
 
   const appendQuiz = () => {
-    if (!quizId.trim()) return;
-    appendMarkdown(`<!-- @quiz ${quizId.trim()} -->`);
+    const id = quizId.trim();
+    if (!id) return;
+    void onInsertQuiz(id);
   };
 
   const appendSlideBreak = () => {
-    const { frontMatter, body: docBody } = splitYamlBody(content);
-    const nextBody = docBody.trim() ? `${docBody.trim()}\n\n` : "";
-    onContentChange(joinYamlBody(frontMatter, nextBody));
+    void onAppendToBody("");
   };
 
   const sidebar = variant === "sidebar";
@@ -120,7 +117,7 @@ export function PresentationPanel({
             placeholder="santiago-1-1-27"
           />
         </div>
-        <button type="button" onClick={appendQuiz}>
+        <button type="button" onMouseDown={event => event.preventDefault()} onClick={appendQuiz}>
           Insertar marcador @quiz
         </button>
       </section>
@@ -133,7 +130,7 @@ export function PresentationPanel({
         </button>
       </section>
 
-      {!sidebar && (
+      {!sidebar && analysis && (
         <section className="presentation-card">
           <h3>Esquema actual ({analysis.outline.length})</h3>
           <ol className="presentation-outline">

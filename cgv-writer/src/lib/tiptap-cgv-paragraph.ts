@@ -12,6 +12,14 @@ export const CgvParagraph = Paragraph.extend({
           if (!attributes.class) return {};
           return { class: attributes.class };
         }
+      },
+      dataQuizId: {
+        default: null,
+        parseHTML: element => element.getAttribute("data-quiz-id"),
+        renderHTML: attributes => {
+          if (!attributes.dataQuizId) return {};
+          return { "data-quiz-id": attributes.dataQuizId };
+        }
       }
     };
   }

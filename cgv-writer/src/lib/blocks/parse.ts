@@ -1,14 +1,20 @@
-import { sanitizeH4AnchorText } from "../markdown-html";
-import {
-  isBlockquoteLine,
-  isSynthesisTitleLine,
-  parseSynthesisLines
-} from "../synthesis-block";
+import { isCgvBulletLine, isDefinitionGlossLine, sanitizeH4AnchorText } from "../markdown-html";
+import { isBlockquoteLine, parseBlockquoteLines } from "../synthesis-block";
+import { collectTableLines, isTableLine } from "../table-block";
 import type { ContentBlock } from "./types";
 import { newBlockId } from "./types";
 import { splitFrontMatter } from "../analyze";
 
 const QUIZ_LINE = /^<!--\s*@quiz\s+#?([A-Za-z0-9_.:-]+)\s*-->$/;
+const QUIZ_PLAIN_LINE = /^@quiz\s+#?([A-Za-z0-9_.:-]+)\s*$/i;
+
+function isTripleColonFenceStart(line: string): boolean {
+  return /^:::/.test(String(line || "").trim());
+}
+
+function isTripleColonFenceEnd(line: string): boolean {
+  return String(line || "").trim() === ":::";
+}
 
 function parseLinesInChunk(lines: string[]): ContentBlock[] {
   const blocks: ContentBlock[] = [];
@@ -16,6 +22,11 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
 
   while (i < lines.length) {
     const line = lines[i];
+
+    if (!line.trim()) {
+      i++;
+      continue;
+    }
 
     if (QUIZ_LINE.test(line)) {
       const match = line.match(QUIZ_LINE);
@@ -25,6 +36,24 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
         quizId: match?.[1] || ""
       });
       i++;
+      continue;
+    }
+
+    const plainQuiz = line.match(QUIZ_PLAIN_LINE);
+    if (plainQuiz) {
+      blocks.push({
+        id: newBlockId(),
+        type: "quiz",
+        quizId: plainQuiz[1] || ""
+      });
+      i++;
+      continue;
+    }
+
+    if (isTableLine(line)) {
+      const table = collectTableLines(lines, i);
+      blocks.push({ id: newBlockId(), type: "table", markdown: table.markdown });
+      i = table.next;
       continue;
     }
 
@@ -48,9 +77,12 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
         i < lines.length &&
         !/^#{1,6}\s/.test(lines[i]) &&
         !QUIZ_LINE.test(lines[i]) &&
-        !(lines[i + 1]?.startsWith(": "))
+        !isDefinitionGlossLine(lines[i + 1] || "")
       ) {
-        scriptureLines.push(lines[i]);
+        const scriptureLine = lines[i].trim();
+        if (scriptureLine) {
+          scriptureLines.push(scriptureLine);
+        }
         i++;
       }
       blocks.push({
@@ -78,12 +110,12 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
       const bullets: string[] = [];
       while (
         i < lines.length &&
-        (lines[i].startsWith("###### ") || lines[i].startsWith("- "))
+        (lines[i].startsWith("###### ") || isCgvBulletLine(lines[i]))
       ) {
         if (lines[i].startsWith("###### ")) {
           bullets.push(lines[i].slice(7).trim());
         } else {
-          bullets.push(lines[i].slice(2).trim());
+          bullets.push(lines[i].replace(/^-\s+/, "").trim());
         }
         i++;
       }
@@ -96,14 +128,14 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
       continue;
     }
 
-    if (isSynthesisTitleLine(line)) {
+    if (isBlockquoteLine(line)) {
       const group = [line];
       i++;
       while (i < lines.length && isBlockquoteLine(lines[i])) {
         group.push(lines[i]);
         i++;
       }
-      const parsed = parseSynthesisLines(group);
+      const parsed = parseBlockquoteLines(group);
       if (parsed) {
         blocks.push({
           id: newBlockId(),
@@ -115,10 +147,10 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
       }
     }
 
-    if (line.startsWith("- ")) {
+    if (isCgvBulletLine(line)) {
       const bullets: string[] = [];
-      while (i < lines.length && lines[i].startsWith("- ")) {
-        bullets.push(lines[i].slice(2).trim());
+      while (i < lines.length && isCgvBulletLine(lines[i])) {
+        bullets.push(lines[i].replace(/^-\s+/, "").trim());
         i++;
       }
       blocks.push({
@@ -130,7 +162,7 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
       continue;
     }
 
-    if (i + 1 < lines.length && lines[i + 1].startsWith(": ")) {
+    if (i + 1 < lines.length && isDefinitionGlossLine(lines[i + 1])) {
       blocks.push({
         id: newBlockId(),
         type: "definition",
@@ -158,20 +190,50 @@ export function parseBodyToBlocks(body: string): ContentBlock[] {
   const trimmed = String(body || "").trim();
   if (!trimmed) return [];
 
-  const chunks = trimmed.split(/\n\s*\n/);
+  const lines = trimmed.split("\n");
   const blocks: ContentBlock[] = [];
+  let i = 0;
 
-  chunks.forEach((chunk, index) => {
-    if (index > 0) {
-      blocks.push({ id: newBlockId(), type: "slideBreak" });
+  while (i < lines.length) {
+    if (!lines[i].trim()) {
+      let blankRun = 0;
+      while (i < lines.length && !lines[i].trim()) {
+        blankRun += 1;
+        i += 1;
+      }
+      if (blankRun >= 2 && blocks.length) {
+        blocks.push({ id: newBlockId(), type: "slideBreak" });
+      }
+      continue;
     }
-    const lines = chunk
-      .split("\n")
-      .map(l => l.trim())
-      .filter(Boolean);
-    const parsed = parseLinesInChunk(lines.filter(Boolean));
-    blocks.push(...parsed);
-  });
+
+    if (isTripleColonFenceStart(lines[i])) {
+      const group = [lines[i]];
+      i++;
+      while (i < lines.length && !isTripleColonFenceEnd(lines[i])) {
+        group.push(lines[i]);
+        i++;
+      }
+      if (i < lines.length) {
+        group.push(lines[i]);
+        i++;
+      }
+      blocks.push({ id: newBlockId(), type: "raw", text: group.join("\n") });
+      continue;
+    }
+
+    const segmentStart = i;
+    while (i < lines.length) {
+      if (isTripleColonFenceStart(lines[i])) break;
+      if (!lines[i].trim() && i + 1 < lines.length && !lines[i + 1].trim()) break;
+      i++;
+    }
+
+    const segment = lines.slice(segmentStart, i);
+    if (segment.some(line => line.trim())) {
+      blocks.push(...parseLinesInChunk(segment.map(line => line.trimEnd())));
+    }
+  }
 
   return blocks;
 }

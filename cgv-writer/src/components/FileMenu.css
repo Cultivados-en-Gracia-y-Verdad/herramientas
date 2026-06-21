@@ -20,15 +20,15 @@
   z-index: 20;
   min-width: 220px;
   padding: 6px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 8px 24px var(--shadow-dropdown);
 }
 
 .file-menu-dropdown hr {
   border: none;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--border);
   margin: 6px 0;
 }
 
@@ -51,5 +51,5 @@
 
 .file-menu-dropdown button span {
   font-size: 0.72rem;
-  color: #94a3b8;
+  color: var(--muted);
 }

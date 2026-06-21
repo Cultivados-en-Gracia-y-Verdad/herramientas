@@ -1,4 +1,6 @@
 export type BlockType =
+  | "manualTitle"
+  | "manualSubtitle"
   | "h1"
   | "h2"
   | "verse"
@@ -7,12 +9,24 @@ export type BlockType =
   | "synthesis"
   | "definition"
   | "quiz"
+  | "table"
+  | "raw"
   | "paragraph"
   | "slideBreak";
 
 export interface BaseBlock {
   id: string;
   type: BlockType;
+}
+
+export interface ManualTitleBlock extends BaseBlock {
+  type: "manualTitle";
+  text: string;
+}
+
+export interface ManualSubtitleBlock extends BaseBlock {
+  type: "manualSubtitle";
+  text: string;
 }
 
 export interface H1Block extends BaseBlock {
@@ -59,6 +73,16 @@ export interface QuizBlock extends BaseBlock {
   quizId: string;
 }
 
+export interface TableBlock extends BaseBlock {
+  type: "table";
+  markdown: string;
+}
+
+export interface RawMarkdownBlock extends BaseBlock {
+  type: "raw";
+  text: string;
+}
+
 export interface ParagraphBlock extends BaseBlock {
   type: "paragraph";
   text: string;
@@ -69,6 +93,8 @@ export interface SlideBreakBlock extends BaseBlock {
 }
 
 export type ContentBlock =
+  | ManualTitleBlock
+  | ManualSubtitleBlock
   | H1Block
   | H2Block
   | VerseBlock
@@ -77,10 +103,14 @@ export type ContentBlock =
   | SynthesisBlock
   | DefinitionBlock
   | QuizBlock
+  | TableBlock
+  | RawMarkdownBlock
   | ParagraphBlock
   | SlideBreakBlock;
 
 export const BLOCK_LABELS: Record<BlockType, string> = {
+  manualTitle: "Título del manual",
+  manualSubtitle: "Subtítulo del manual",
   h1: "Contexto amplio",
   h2: "Sección",
   verse: "Versículo",
@@ -89,6 +119,8 @@ export const BLOCK_LABELS: Record<BlockType, string> = {
   synthesis: "En Síntesis",
   definition: "Definición",
   quiz: "Quiz",
+  table: "Tabla",
+  raw: "Bloque sin procesar",
   paragraph: "Párrafo",
   slideBreak: "Nueva diapositiva"
 };

@@ -31,6 +31,8 @@ export function anchorBeforeOffset(text: string, offset: number): string {
 /** Strip common markdown/HTML so anchors match Manual plain text. */
 export function normalizeForAnchor(text: string): string {
   return text
+    .replace(/<!--\s*@quiz\s+#?([A-Za-z0-9_.:-]+)\s*-->/gi, "Quiz: $1")
+    .replace(/^@quiz\s+#?([A-Za-z0-9_.:-]+)\s*$/gim, "Quiz: $1")
     .replace(/^#{1,6}\s+/gm, "")
     .replace(/<\/?u>/gi, "")
     .replace(/\*\*(.+?)\*\*/g, "$1")

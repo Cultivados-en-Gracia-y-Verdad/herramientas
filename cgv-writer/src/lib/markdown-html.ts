@@ -1,18 +1,25 @@
-import { marked } from "marked";
-import TurndownService from "turndown";
-import {
-  compileSynthesisMarkdown,
-  isBlockquoteLine,
-  isSynthesisMarkdownChunk,
-  isSynthesisTitleLine,
-  parseSynthesisLines,
-  synthesisMarkdownLinesFromChunk
-} from "./synthesis-block";
+import { compileBlocks } from "./blocks/compile";
+import { parseBodyToBlocks } from "./blocks/parse";
+import { htmlToBlocks } from "./blocks/parse-html";
+import { blocksToEditorHtml } from "./blocks/render-html";
+import { isBlockquoteLine } from "./synthesis-block";
 
-marked.setOptions({ gfm: true, breaks: false });
-
-const QUIZ_MD = /<!--\s*@quiz\s+#?([A-Za-z0-9_.:-]+)\s*-->/g;
+const QUIZ_PLAIN_LINE_GLOBAL = /^@quiz\s+#?([A-Za-z0-9_.:-]+)\s*$/gim;
+const QUIZ_LABEL_LINE_GLOBAL = /^Quiz:\s*([A-Za-z0-9_.:-]+)\s*$/gim;
+const PROTECTED_QUIZ_COMMENT = /<!--\s*@(quiz|illustration)\b[\s\S]*?-->/g;
 const STRAY_HTML_COMMENT = /<!--\s*(?!@(?:quiz|illustration)\b)([\s\S]*?)\s*-->/g;
+
+export function quizMarkerComment(quizId: string): string {
+  const id = quizId.trim();
+  return id ? `<!-- @quiz ${id} -->` : "";
+}
+
+/** Normalize loose quiz lines to Presenter HTML comment markers. */
+export function coerceQuizMarkersInMarkdown(md: string): string {
+  return String(md || "")
+    .replace(QUIZ_PLAIN_LINE_GLOBAL, (_line, id: string) => quizMarkerComment(id))
+    .replace(QUIZ_LABEL_LINE_GLOBAL, (_line, id: string) => quizMarkerComment(id));
+}
 
 /** H3 is only for short bible references — not commentary paragraphs. */
 export function isLikelyBibleReference(text: string): boolean {
@@ -55,79 +62,92 @@ function demoteMisplacedH3Lines(md: string): string {
   });
 }
 
+function stripEmptyHtmlComments(text: string): string {
+  return String(text || "").replace(/<!--\s*-->/g, "");
+}
+
 function unwrapStrayMarkdownComments(md: string): string {
-  return md.replace(STRAY_HTML_COMMENT, (_match, inner: string) =>
-    restoreUnwrappedCommentLine(inner)
-  );
-}
-
-function escapeHtml(text: string) {
-  return text
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
-
-function stripSpanishQuotes(text: string) {
-  return text.replace(/^[«"“]|[»"”]$/g, "").trim();
-}
-
-function unwrapLegacyScriptureMarkdown(text: string) {
-  let clean = stripSpanishQuotes(text.trim());
-  const guillemet = clean.match(/^\*«([\s\S]+?)»\*$/);
-  if (guillemet) clean = guillemet[1];
-  if (/^«[\s\S]+»$/.test(clean)) clean = clean.slice(1, -1);
-  return clean.trim();
-}
-
-/** Plain verse line under ### — no guillemets, no HTML comments. */
-function formatScriptureMarkdown(text: string) {
-  const clean = unwrapLegacyScriptureMarkdown(text);
-  return clean;
-}
-
-function normalizeScriptureLine(line: string) {
-  const comment = line.match(/^<!--\s*(?!@(?:quiz|illustration)\b)([\s\S]*?)\s*-->$/);
-  if (comment) return restoreUnwrappedCommentLine(comment[1]);
-  return unwrapLegacyScriptureMarkdown(line);
-}
-
-/** Keep ### reference on the line immediately above verse text (CGV format). */
-function coalesceH3WithScripture(body: string) {
-  return body.replace(
-    /^(### (?:(?!#{1,6}\s).)+)\n\s*\n(?!(#{1,6}\s|<!--\s*@(?:quiz|illustration)\b))(\S[^\n]*)/gm,
-    "$1\n$3"
-  );
-}
-
-/** Recover stray HTML comments before turndown (turndown drops comment nodes). */
-function htmlStrayCommentsToScripture(html: string) {
-  return html.replace(STRAY_HTML_COMMENT, (_match, text: string) => {
-    const inner = text.trim();
-    const h3 = inner.match(/^###\s+([\s\S]+)$/);
-    const cleaned =
-      h3 && !isLikelyBibleReference(h3[1]) ? h3[1] : restoreUnwrappedCommentLine(inner);
-    const inline = marked.parseInline(cleaned, { async: false }) as string;
-    if (h3 && !isLikelyBibleReference(h3[1])) {
-      return `<h5>${inline}</h5>`;
-    }
-    return `<p class="cgv-scripture">${inline}</p>`;
+  const placeholders: string[] = [];
+  let protectedMd = stripEmptyHtmlComments(md);
+  protectedMd = protectedMd.replace(PROTECTED_QUIZ_COMMENT, match => {
+    const token = `\u0000CGVQUIZ${placeholders.length}\u0000`;
+    placeholders.push(match);
+    return token;
   });
+
+  let result = protectedMd.replace(STRAY_HTML_COMMENT, (_match, inner: string) => {
+    const restored = restoreUnwrappedCommentLine(inner);
+    return restored ? restored : "";
+  });
+
+  result = result.replace(/\u0000CGVQUIZ(\d+)\u0000/g, (_match, index: string) => {
+    return placeholders[Number(index)] ?? "";
+  });
+
+  return result;
 }
 
-/** Tag plain paragraph(s) after H3 and before H4 as scripture blocks. */
-function tagScriptureParagraphs(html: string) {
-  let result = html;
-  let prev = "";
+/** CGV list marker: dash plus three spaces (Presenter / manual convention). */
+export const CGV_BULLET_LINE_PREFIX = "-   ";
 
-  while (prev !== result) {
-    prev = result;
-    result = result.replace(
-      /<h3>([\s\S]*?)<\/h3>\s*<p(?![^>]*class="[^"]*cgv-scripture)(?![^>]*cgv-quiz)(?![^>]*definition-)([^>]*)>/i,
-      (_match, heading, attrs) => `<h3>${heading}</h3><p class="cgv-scripture"${attrs}>`
-    );
+export function formatCgvBulletLine(text: string): string {
+  return `${CGV_BULLET_LINE_PREFIX}${text.trim()}`;
+}
+
+export function isCgvBulletLine(line: string): boolean {
+  const trimmed = String(line || "").trim();
+  return /^-\s+\S/.test(trimmed);
+}
+
+function isBulletMarkdownLine(line: string): boolean {
+  const trimmed = line.trim();
+  return isCgvBulletLine(trimmed) || /^>-\s+/.test(trimmed) || /^>\s*-\s+/.test(trimmed);
+}
+
+function normalizeCgvBulletPrefixes(md: string): string {
+  return md
+    .split("\n")
+    .map(line => {
+      if (isBlockquoteLine(line)) return line;
+      const match = line.match(/^(-)\s+(.*)$/);
+      if (!match) return line;
+      return formatCgvBulletLine(match[2]);
+    })
+    .join("\n");
+}
+
+/** Bullet lists should not contain blank lines between items. */
+function collapseBlankLinesWithinBulletLists(md: string): string {
+  const lines = md.split("\n");
+  const out: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (!line.trim()) {
+      const prev = out[out.length - 1];
+      let nextIndex = i + 1;
+      while (nextIndex < lines.length && !lines[nextIndex].trim()) nextIndex += 1;
+      const next = lines[nextIndex];
+      if (prev && next && isBulletMarkdownLine(prev) && isBulletMarkdownLine(next)) {
+        continue;
+      }
+    }
+    out.push(line);
   }
 
+  return out.join("\n");
+}
+
+/** Ensure one blank line between versículo text and the following #### anchor. */
+function ensureVerseToH4BlankLine(md: string): string {
+  let result = String(md || "");
+  result = result.replace(
+    /^(### [^\n]+)\n((?:[^\n#][^\n]*\n?)+)\n(#### )/gm,
+    (_match, heading, scripture, h4) =>
+      `${heading}\n${String(scripture).replace(/\s+$/, "")}\n\n${h4}`
+  );
+  result = result.replace(/^([^\n#][^\n]+)\n(#### )/gm, "$1\n\n$2");
+  result = result.replace(/^([^\n#][^\n]+)\n\n+(#### )/gm, "$1\n\n$2");
   return result;
 }
 
@@ -138,12 +158,23 @@ function fixCgvPassageLayout(md: string) {
   // ### Reference\n\nVerse → ### Reference\nVerse
   result = result.replace(/^(### [^\n]+)\n\n(?!(#{1,6}\s|<!--\s*@))/gm, "$1\n");
 
+  result = ensureVerseToH4BlankLine(result);
+
+  // #### anchor then ##### comment — no blank line
+  result = result.replace(/^(#### [^\n]+)\n\n(##### )/gm, "$1\n$2");
+
+  // ##### then bullet list — no blank line
+  result = result.replace(/^(##### [^\n]+)\n\n(-\s+)/gm, "$1\n$2");
+
+  result = collapseBlankLinesWithinBulletLists(result);
+  result = normalizeCgvBulletPrefixes(result);
+
   return result;
 }
 
-/** Undo turndown over-escaping — CGV manuals should not accumulate backslashes. */
-export function normalizeCgvMarkdown(md: string): string {
-  let result = md;
+/** Light cleanup on save/load/export — no layout reshaping. */
+export function sanitizeCgvMarkdown(md: string): string {
+  let result = String(md || "");
   let prev = "";
 
   while (prev !== result) {
@@ -155,391 +186,57 @@ export function normalizeCgvMarkdown(md: string): string {
     result = result.replace(/\\([\\`*_{}\[\]()#+.!\->|])/g, "$1");
   }
 
-  return fixCgvPassageLayout(result);
+  return coerceQuizMarkersInMarkdown(stripEmptyHtmlComments(result));
 }
 
-function isDefinitionPair(lines: string[], index: number) {
-  return (
-    index + 1 < lines.length &&
-    lines[index].trim() &&
-    lines[index + 1].startsWith(": ")
-  );
+/** Full CGV layout pass — only for explicit «Corregir estilo». */
+export function normalizeCgvMarkdown(md: string): string {
+  return fixCgvPassageLayout(sanitizeCgvMarkdown(md));
 }
 
-function formatDefinitionLine(definitionLine: string) {
-  const trimmed = definitionLine.trim();
-  if (trimmed.startsWith(": ")) return trimmed;
-  if (trimmed.startsWith(":")) return `: ${trimmed.slice(1).trim()}`;
-  return `: ${trimmed}`;
+/** Trim-only compare — detects spacing/layout diffs normalizeCgvMarkdown would fix. */
+export function normalizeMdForCompare(md: string): string {
+  return String(md || "")
+    .replace(/\r\n/g, "\n")
+    .replace(/[ \t]+$/gm, "")
+    .trim();
 }
 
-function definitionToHtml(term: string, definitionLine: string) {
-  const secondLine = formatDefinitionLine(definitionLine);
-  return `<div class="cgv-definition"><p class="definition-term">${escapeHtml(term)}</p><p class="definition-text">${escapeHtml(secondLine)}</p></div>`;
+export function isDefinitionGlossLine(line: string): boolean {
+  return /^:\s*\S/.test(String(line || "").trim());
 }
 
-function scriptureToHtml(text: string) {
-  const normalized = normalizeScriptureLine(text);
-  const inline = marked.parseInline(normalized, { async: false }) as string;
-  return `<p class="cgv-scripture">${inline}</p>`;
-}
-
-function focusToHtml(html: string) {
-  return `<h4>${html}</h4>`;
-}
-
-function h5TitleToHtml(html: string) {
-  return `<h5>${html}</h5>`;
-}
-
-function h6ToHtml(html: string) {
-  return `<h6>${html}</h6>`;
-}
-
-function h6ListToHtml(items: string[]) {
-  return `<ul class="cgv-h6-bullets">${items.join("")}</ul>`;
-}
-
-function synthesisLinesToHtml(lines: string[]): string {
-  const parsed = parseSynthesisLines(lines);
-  if (!parsed) return "";
-
-  const titleHtml = marked.parseInline(parsed.title, { async: false }) as string;
-  const items = parsed.bullets
-    .map(bullet => {
-      const itemHtml = marked.parseInline(bullet, { async: false }) as string;
-      return `<li>${itemHtml}</li>`;
-    })
-    .join("");
-
-  return `<blockquote class="cgv-synthesis synthesis-box"><p class="cgv-synthesis-title">${titleHtml}</p><ul class="cgv-synthesis-bullets">${items}</ul></blockquote>`;
-}
-
-function synthesisChunkToHtml(chunk: string): string {
-  const lines = synthesisMarkdownLinesFromChunk(chunk);
-  return synthesisLinesToHtml(lines) || (marked.parse(chunk, { async: false }) as string);
-}
-
-/** Parse CGV passage chunks (### reference, scripture, comments, definitions). */
-function chunkToEditorHtml(chunk: string): string {
-  const lines = chunk.split("\n").map(line => line.trim());
-
-  if (!lines.length || !lines[0]) {
-    return marked.parse(chunk, { async: false }) as string;
-  }
-
-  const first = lines[0];
-
-  if (isDefinitionPair(lines, 0)) {
-    const parts: string[] = [];
-    let index = 0;
-    while (index < lines.length) {
-      if (isDefinitionPair(lines, index)) {
-        parts.push(definitionToHtml(lines[index], lines[index + 1]));
-        index += 2;
-        continue;
-      }
-      parts.push(marked.parseInline(lines[index], { async: false }) as string);
-      index++;
-    }
-    return parts.map(line => `<p>${line}</p>`).join("");
-  }
-
-  if (!/^### /.test(first) || /^####/.test(first)) {
-    return marked.parse(chunk, { async: false }) as string;
-  }
-
-  const refText = first.slice(4).trim();
-  if (!isLikelyBibleReference(refText)) {
-    return marked.parse(demoteMisplacedH3Lines(chunk), { async: false }) as string;
-  }
-
-  const parts: string[] = [`<h3>${escapeHtml(refText)}</h3>`];
-  let index = 1;
-  let beforeCommentHeadings = true;
-
-  while (index < lines.length) {
-    const line = lines[index];
-
-    if (QUIZ_MD.test(line)) {
-      const match = line.match(QUIZ_MD);
-      const id = match?.[1] || "";
-      parts.push(`<p class="cgv-quiz" data-quiz-id="${id}">Quiz: ${id}</p>`);
-      index++;
-      continue;
-    }
-
-    if (isDefinitionPair(lines, index)) {
-      parts.push(definitionToHtml(lines[index], lines[index + 1]));
-      index += 2;
-      continue;
-    }
-
-    if (/^#### /.test(line) && !/^#####/.test(line)) {
-      beforeCommentHeadings = false;
-      const raw = sanitizeH4AnchorText(line.slice(5).trim());
-      const text = marked.parseInline(raw, { async: false }) as string;
-      parts.push(focusToHtml(text));
-      index++;
-      continue;
-    }
-
-    if (/^##### /.test(line)) {
-      beforeCommentHeadings = false;
-      const text = marked.parseInline(line.slice(6).trim(), { async: false }) as string;
-      parts.push(h5TitleToHtml(text));
-      index++;
-      continue;
-    }
-
-    if (/^###### /.test(line)) {
-      beforeCommentHeadings = false;
-      const text = marked.parseInline(line.slice(7).trim(), { async: false }) as string;
-      parts.push(h6ToHtml(text));
-      index++;
-      continue;
-    }
-
-    if (line.startsWith("- ")) {
-      const items: string[] = [];
-      while (index < lines.length && lines[index].startsWith("- ")) {
-        const itemHtml = marked.parseInline(lines[index].slice(2).trim(), {
-          async: false
-        }) as string;
-        items.push(`<li>${itemHtml}</li>`);
-        index++;
-      }
-      parts.push(h6ListToHtml(items));
-      continue;
-    }
-
-    if (isSynthesisTitleLine(line)) {
-      const group = [line];
-      index++;
-      while (index < lines.length && isBlockquoteLine(lines[index])) {
-        group.push(lines[index]);
-        index++;
-      }
-      parts.push(synthesisLinesToHtml(group));
-      continue;
-    }
-
-    if (/^#{1,3}\s/.test(line)) {
-      break;
-    }
-
-    if (beforeCommentHeadings && line) {
-      parts.push(scriptureToHtml(line));
-      index++;
-      continue;
-    }
-
-    const text = marked.parseInline(line, { async: false }) as string;
-    parts.push(h6ToHtml(text));
-    index++;
-  }
-
-  return parts.join("");
+/** Default CGV passage spacing for Markdown view and Manual export. */
+export function tightenCgvDefaultSpacing(md: string): string {
+  let result = String(md || "");
+  // ### referencia + blank + versículo → no blank line
+  result = result.replace(/^(### [^\n]+)\n\n(?!(#{1,6}\s|<!--\s*@))/gm, "$1\n");
+  // versículo + #### ancla → one blank line
+  result = ensureVerseToH4BlankLine(result);
+  // #### ancla + blank + ##### comentario → no blank line
+  result = result.replace(/^(#### [^\n]+)\n\n(##### )/gm, "$1\n$2");
+  return result;
 }
 
 export function markdownToEditorHtml(body: string): string {
-  const normalized = normalizeCgvMarkdown(String(body || ""));
-  const coalesced = coalesceH3WithScripture(normalized);
-  const withQuiz = coalesced.replace(
-    QUIZ_MD,
-    (_, id) => `\n\n<p class="cgv-quiz" data-quiz-id="${id}">Quiz: ${id}</p>\n\n`
-  );
-
-  const chunks = withQuiz.split(/\n\s*\n/);
-  return chunks
-    .map(chunk => chunk.trim())
-    .filter(Boolean)
-    .map(chunk => {
-      if (chunk.includes('class="cgv-quiz"')) return chunk;
-      if (chunk.includes("cgv-slide-break")) {
-        return '<hr class="cgv-slide-break" />';
-      }
-      if (isSynthesisMarkdownChunk(chunk)) {
-        return synthesisChunkToHtml(chunk);
-      }
-      return chunkToEditorHtml(chunk);
-    })
-    .join("");
+  return blocksToEditorHtml(parseBodyToBlocks(body || ""));
 }
 
-function h5BlockElementToMarkdown(el: HTMLElement): string {
-  const lines: string[] = [];
-  const title =
-    el.querySelector("h5")?.textContent?.trim() ||
-    el.querySelector(".cgv-h5")?.textContent?.trim() ||
-    el.querySelector(".cgv-comment-2")?.textContent?.trim();
-  if (title) lines.push(`##### ${title}`);
+/** Loose HTML compare for Manual vs canonical CGV render. */
+export function normalizeEditorHtmlForCompare(html: string): string {
+  return String(html || "")
+    .replace(/>\s+</g, "><")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
-  el.querySelectorAll("h6, p.cgv-h6, p.cgv-comment-3").forEach(node => {
-    const text = node.textContent?.trim();
-    if (text) lines.push(`###### ${text}`);
-  });
-
-  el.querySelectorAll("ul.cgv-h6-bullets li, ul.cgv-comment-3 li").forEach(li => {
-    const text = li.textContent?.trim();
-    if (text) lines.push(`- ${text}`);
-  });
-
-  return lines.length ? `${lines.join("\n")}\n\n` : "";
+export function canonicalManualEditorHtml(body: string): string {
+  return markdownToEditorHtml(normalizeCgvMarkdown(body));
 }
 
 export function editorHtmlToMarkdown(html: string): string {
-  const prepared = tagScriptureParagraphs(htmlStrayCommentsToScripture(html || ""));
-
-  const turndown = new TurndownService({
-    headingStyle: "atx",
-    bulletListMarker: "-",
-    emDelimiter: "*",
-    strongDelimiter: "**"
-  });
-
-  // CGV content is structured HTML — do not escape markdown punctuation in prose.
-  turndown.escape = (text: string) => text;
-
-  turndown.addRule("cgvSynthesis", {
-    filter: node => {
-      if (node.nodeName !== "BLOCKQUOTE") return false;
-      const el = node as HTMLElement;
-      return (
-        el.classList?.contains("cgv-synthesis") || el.classList?.contains("synthesis-box")
-      );
-    },
-    replacement: (_content, node) => {
-      const el = node as HTMLElement;
-      const title =
-        el.querySelector(".cgv-synthesis-title")?.textContent?.trim() ||
-        el.querySelector("p")?.textContent?.trim() ||
-        "";
-      const bullets: string[] = [];
-      el.querySelectorAll(".cgv-synthesis-bullets li, ul li").forEach(li => {
-        const text = li.textContent?.trim();
-        if (text) bullets.push(text);
-      });
-      return `${compileSynthesisMarkdown(title, bullets)}\n\n`;
-    }
-  });
-
-  turndown.addRule("cgvSlideBreak", {
-    filter: node =>
-      node.nodeName === "HR" &&
-      (node as HTMLElement).classList?.contains("cgv-slide-break"),
-    replacement: () => "\n\n"
-  });
-
-  turndown.addRule("cgvQuiz", {
-    filter: node =>
-      node.nodeName === "P" && (node as HTMLElement).classList?.contains("cgv-quiz"),
-    replacement: (_content, node) => {
-      const id = (node as HTMLElement).getAttribute("data-quiz-id") || "";
-      return `\n\n<!-- @quiz ${id} -->\n\n`;
-    }
-  });
-
-  turndown.addRule("cgvDefinition", {
-    filter: node =>
-      node.nodeName === "DIV" && (node as HTMLElement).classList?.contains("cgv-definition"),
-    replacement: (_content, node) => {
-      const el = node as HTMLElement;
-      const term =
-        el.querySelector(".definition-term")?.textContent?.trim() ||
-        el.querySelector("p")?.textContent?.trim() ||
-        "";
-      const definitionLine = formatDefinitionLine(
-        el.querySelector(".definition-text")?.textContent?.trim() || ""
-      );
-      return `${term}\n${definitionLine}\n\n`;
-    }
-  });
-
-  turndown.addRule("cgvScripture", {
-    filter: node => {
-      if (node.nodeName === "P") {
-        return (node as HTMLElement).classList?.contains("cgv-scripture");
-      }
-      if (node.nodeName === "H3") {
-        return (node as HTMLElement).classList?.contains("cgv-scripture");
-      }
-      return false;
-    },
-    replacement: content => `${formatScriptureMarkdown(content)}\n`
-  });
-
-  turndown.addRule("cgvH4", {
-    filter: node => node.nodeName === "H4",
-    replacement: content => `#### ${sanitizeH4AnchorText(content)}\n\n`
-  });
-
-  turndown.addRule("cgvH5Heading", {
-    filter: node => node.nodeName === "H5",
-    replacement: content => `##### ${content.trim()}\n\n`
-  });
-
-  turndown.addRule("cgvH6Heading", {
-    filter: node => node.nodeName === "H6",
-    replacement: content => `###### ${content.trim()}\n\n`
-  });
-
-  turndown.addRule("cgvH5Block", {
-    filter: node =>
-      node.nodeName === "DIV" && (node as HTMLElement).classList?.contains("cgv-h5-block"),
-    replacement: (_content, node) => h5BlockElementToMarkdown(node as HTMLElement)
-  });
-
-  turndown.addRule("cgvFocus", {
-    filter: node => {
-      if (node.nodeName !== "P") return false;
-      const el = node as HTMLElement;
-      return el.classList?.contains("cgv-focus") || el.classList?.contains("cgv-comment-1");
-    },
-    replacement: content => `#### ${sanitizeH4AnchorText(content)}\n\n`
-  });
-
-  turndown.addRule("cgvH5", {
-    filter: node => {
-      if (node.nodeName !== "P") return false;
-      const el = node as HTMLElement;
-      return (
-        (el.classList?.contains("cgv-h5") || el.classList?.contains("cgv-comment-2")) &&
-        !el.closest(".cgv-h5-block")
-      );
-    },
-    replacement: content => `##### ${content.trim()}\n\n`
-  });
-
-  turndown.addRule("cgvH6", {
-    filter: node => {
-      if (node.nodeName !== "P") return false;
-      const el = node as HTMLElement;
-      return el.classList?.contains("cgv-h6") && !el.closest(".cgv-h5-block");
-    },
-    replacement: content => `###### ${content.trim()}\n\n`
-  });
-
-  turndown.addRule("cgvH6List", {
-    filter: node => {
-      if (node.nodeName !== "UL") return false;
-      const el = node as HTMLElement;
-      if (el.closest(".cgv-h5-block")) return false;
-      return (
-        el.classList?.contains("cgv-h6-bullets") || el.classList?.contains("cgv-comment-3")
-      );
-    },
-    replacement: content => `${content.trim()}\n\n`
-  });
-
-  turndown.addRule("cgvUnderline", {
-    filter: ["u"],
-    replacement: content => `<u>${content}</u>`
-  });
-
-  let md = turndown.turndown(prepared);
-  md = md.replace(/\n{3,}/g, "\n\n").trim();
-  return normalizeCgvMarkdown(md);
+  const blocks = htmlToBlocks(stripEmptyHtmlComments(html || ""));
+  return coerceQuizMarkersInMarkdown(tightenCgvDefaultSpacing(compileBlocks(blocks)).trimEnd());
 }
 
 export function splitYamlBody(text: string) {
@@ -555,4 +252,11 @@ export function joinYamlBody(frontMatter: string, body: string) {
   const trimmed = body.trim();
   if (!frontMatter.trim()) return trimmed ? `${trimmed}\n` : "";
   return `---\n${frontMatter.trim()}\n---\n\n${trimmed}\n`;
+}
+
+/** Start index of the markdown body inside a full document string (after YAML). */
+export function bodyStartInContent(content: string): number {
+  const split = splitYamlBody(content);
+  if (!split.frontMatter.trim()) return 0;
+  return content.length - split.body.length;
 }

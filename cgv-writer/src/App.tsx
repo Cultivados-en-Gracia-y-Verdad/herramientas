@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { EmptyWelcome } from "./components/EmptyWelcome";
 import { FileMenu } from "./components/FileMenu";
 import { ManualEditor } from "./components/ManualEditor";
@@ -7,7 +7,8 @@ import { SearchReplaceBar } from "./components/SearchReplaceBar";
 import { PresentationPanel } from "./components/PresentationPanel";
 import { LibrarySettingsPanel } from "./components/LibrarySettingsPanel";
 import { BibleProvider } from "./lib/bible-context";
-import { analyzeDocument } from "./lib/analyze";
+import { analyzeDocument, buildHeadingOutlineTree } from "./lib/analyze";
+import { HeadingOutlineTree } from "./components/HeadingOutlineTree";
 import { confirmAction, deferNativeDialog } from "./lib/confirm";
 import { dispatchSearchOpen } from "./lib/search-bridge";
 import {
@@ -16,16 +17,19 @@ import {
   readManualByPath,
   saveManualFile
 } from "./lib/files";
-import { splitYamlBody, joinYamlBody, normalizeCgvMarkdown } from "./lib/markdown-html";
+import { splitYamlBody, joinYamlBody, normalizeMdForCompare, tightenCgvDefaultSpacing } from "./lib/markdown-html";
 import { clearEditorPlaces } from "./lib/editor-position-bridge";
 import {
   ANALYSIS_DEBOUNCE_MS,
   cancelManualEditorSync,
+  clearManualEditorDirty,
   clearViewHandoff,
   dispatchBeforeViewChange,
   exportManualBodyFromEditor,
+  exportMarkdownFromEditor,
   flushManualEditorSync,
-  OUTLINE_DISPLAY_CAP
+  flushMarkdownEditorSync,
+  requestManualBodyForStyleCorrect,
 } from "./lib/manual-sync";
 import { correctManualStyle } from "./lib/style-corrector";
 import { clearLastOpenedPath, getLastOpenedPath } from "./lib/recent-files";
@@ -33,6 +37,13 @@ import {
   loadWritingModePreference,
   saveWritingModePreference
 } from "./lib/writing-mode";
+import {
+  applyTheme,
+  loadThemePreference,
+  saveThemePreference,
+  toggleTheme,
+  type ThemeMode
+} from "./lib/theme";
 import "./App.css";
 
 type ViewMode = "manual" | "markdown";
@@ -41,16 +52,32 @@ export default function App() {
   const [content, setContent] = useState("");
   const [filePath, setFilePath] = useState<string | null>(null);
   const [dirty, setDirty] = useState(false);
-  const [status, setStatus] = useState("Listo");
+  const [, setStatus] = useState("Listo");
   const [viewMode, setViewMode] = useState<ViewMode>("manual");
   const [frontMatter, setFrontMatter] = useState("");
   const [body, setBody] = useState("");
   const [writingMode, setWritingMode] = useState(loadWritingModePreference);
+  const [theme, setTheme] = useState<ThemeMode>(() => loadThemePreference());
   const [analysis, setAnalysis] = useState(() => analyzeDocument(""));
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchShowReplace, setSearchShowReplace] = useState(false);
   const [styleCorrectBusy, setStyleCorrectBusy] = useState(false);
   const [styleCorrectMessage, setStyleCorrectMessage] = useState<string | null>(null);
+  const [styleCorrectRevision, setStyleCorrectRevision] = useState(0);
+  const [documentSession, setDocumentSession] = useState(0);
+  const [welcomeOverlay, setWelcomeOverlay] = useState<"startup" | null>("startup");
+  const [saving, setSaving] = useState(false);
+  const dirtyRef = useRef(false);
+  const quitInProgressRef = useRef(false);
+
+  useEffect(() => {
+    dirtyRef.current = dirty;
+  }, [dirty]);
+
+  useEffect(() => {
+    applyTheme(theme);
+    saveThemePreference(theme);
+  }, [theme]);
 
   const setWritingModeEnabled = useCallback((enabled: boolean) => {
     setWritingMode(enabled);
@@ -61,34 +88,89 @@ export default function App() {
     setWritingModeEnabled(!writingMode);
   }, [setWritingModeEnabled, writingMode]);
 
-  const cycleViewMode = useCallback(() => {
-    dispatchBeforeViewChange();
-    setViewMode(current => (current === "manual" ? "markdown" : "manual"));
-  }, []);
-
-  const switchViewMode = useCallback((mode: ViewMode) => {
-    dispatchBeforeViewChange();
-    setViewMode(mode);
+  const toggleColorTheme = useCallback(() => {
+    setTheme(current => toggleTheme(current));
   }, []);
 
   const applyContent = useCallback((text: string) => {
     const split = splitYamlBody(text);
-    const body = normalizeCgvMarkdown(split.body);
+    const body = tightenCgvDefaultSpacing(split.body);
     setFrontMatter(split.frontMatter);
     setBody(body);
     setContent(joinYamlBody(split.frontMatter, body));
+    setDocumentSession(session => session + 1);
+    clearManualEditorDirty();
     clearEditorPlaces();
     clearViewHandoff();
+    if (text.trim()) {
+      setWelcomeOverlay(null);
+    }
   }, []);
 
-  /** In-editor sync (typing / view handoff) — preserve cursor bridge. */
-  const syncContentFromEditor = useCallback((text: string) => {
-    const split = splitYamlBody(text);
-    const body = normalizeCgvMarkdown(split.body);
-    setFrontMatter(split.frontMatter);
-    setBody(body);
-    setContent(joinYamlBody(split.frontMatter, body));
+  const dismissWelcome = useCallback(() => {
+    setWelcomeOverlay(null);
   }, []);
+
+  const dismissWelcomeForNativeDialog = useCallback(async () => {
+    setWelcomeOverlay(null);
+    await deferNativeDialog();
+  }, []);
+
+  const markDocumentDirty = useCallback(() => {
+    if (dirtyRef.current) return;
+    dirtyRef.current = true;
+    setDirty(true);
+  }, []);
+
+  const syncBodyFromView = useCallback(
+    (nextBody: string) => {
+      setBody(nextBody);
+      setContent(joinYamlBody(frontMatter, nextBody));
+    },
+    [frontMatter]
+  );
+
+  const syncContentFromView = useCallback((nextContent: string) => {
+    const split = splitYamlBody(nextContent);
+    setFrontMatter(split.frontMatter);
+    setBody(split.body);
+    setContent(nextContent);
+  }, []);
+
+  const attemptViewSwitch = useCallback(
+    async (next: ViewMode) => {
+      if (next === viewMode) return;
+      dispatchBeforeViewChange();
+      setViewMode(next);
+    },
+    [viewMode]
+  );
+
+  const cycleViewMode = useCallback(async () => {
+    const next: ViewMode = viewMode === "manual" ? "markdown" : "manual";
+    await attemptViewSwitch(next);
+  }, [attemptViewSwitch, viewMode]);
+
+  const switchViewMode = useCallback(
+    async (mode: ViewMode) => {
+      await attemptViewSwitch(mode);
+    },
+    [attemptViewSwitch]
+  );
+
+  /** Live document from the active CGV editor (Manual or Markdown). */
+  const resolveLiveContent = useCallback(async (): Promise<string> => {
+    if (viewMode === "manual") {
+      const bodyMd = await exportManualBodyFromEditor();
+      if (bodyMd.trim()) {
+        return joinYamlBody(frontMatter, bodyMd);
+      }
+    }
+
+    flushMarkdownEditorSync();
+    const exported = await exportMarkdownFromEditor();
+    return exported.trim() ? exported : content;
+  }, [content, frontMatter, viewMode]);
 
   const updateBody = useCallback(
     (nextBody: string) => {
@@ -104,6 +186,41 @@ export default function App() {
     setDirty(true);
   }, [applyContent]);
 
+  /** Append markdown to the end of the live document body (flushes Manual editor first). */
+  const appendToBody = useCallback(
+    async (chunk: string) => {
+      const exported = await resolveLiveContent();
+      const split = splitYamlBody(exported);
+      let currentBody = split.body;
+
+      const trimmedChunk = chunk.trim();
+      const nextBody = trimmedChunk
+        ? currentBody.trim()
+          ? `${currentBody.trim()}\n\n${trimmedChunk}`
+          : trimmedChunk
+        : currentBody.trim()
+          ? `${currentBody.trim()}\n\n`
+          : "";
+
+      updateFullContent(joinYamlBody(frontMatter, nextBody));
+
+      const quizMatch = trimmedChunk.match(/^<!--\s*@quiz\s+#?([A-Za-z0-9_.:-]+)\s*-->$/);
+      if (quizMatch) {
+        setStatus(`Marcador @quiz añadido: ${quizMatch[1]}`);
+      }
+    },
+    [frontMatter, resolveLiveContent, updateFullContent]
+  );
+
+  const insertQuizAtCursor = useCallback(
+    async (quizId: string) => {
+      const id = quizId.trim();
+      if (!id) return;
+      void appendToBody(`<!-- @quiz ${id} -->`);
+    },
+    [appendToBody]
+  );
+
   const loadFromContent = useCallback(
     (text: string) => {
       applyContent(text);
@@ -111,15 +228,17 @@ export default function App() {
     [applyContent]
   );
 
-  const handleChangeMarkdown = useCallback(
-    (next: string) => {
-      syncContentFromEditor(next);
-      setDirty(true);
-    },
-    [syncContentFromEditor]
-  );
+  const handleChangeMarkdown = useCallback((next: string) => {
+    const split = splitYamlBody(next);
+    setFrontMatter(split.frontMatter);
+    setBody(split.body);
+    setContent(next);
+    setDirty(true);
+  }, []);
 
   const handleNew = useCallback(async () => {
+    await dismissWelcomeForNativeDialog();
+
     if (dirty) {
       const proceed = await confirmAction(
         "Tiene cambios sin guardar. Si crea un documento nuevo, perderá esos cambios.\n\n¿Continuar sin guardar?",
@@ -133,9 +252,11 @@ export default function App() {
     setFilePath(null);
     setDirty(false);
     setStatus("Nuevo documento — ⌘S para guardar");
-  }, [dirty, loadFromContent]);
+  }, [dirty, dismissWelcomeForNativeDialog, loadFromContent]);
 
   const handleOpen = useCallback(async () => {
+    await dismissWelcomeForNativeDialog();
+
     if (dirty) {
       const proceed = await confirmAction(
         "Tiene cambios sin guardar. Si abre otro archivo, perderá esos cambios.\n\n¿Continuar sin guardar?",
@@ -157,28 +278,36 @@ export default function App() {
     } catch (error) {
       setStatus(`Error al abrir: ${String(error)}`);
     }
-  }, [dirty, loadFromContent]);
+  }, [dirty, dismissWelcomeForNativeDialog, loadFromContent]);
 
   const handleSave = useCallback(async () => {
+    if (saving) return;
+
+    setSaving(true);
+    setStatus("Guardando…");
+
     try {
-      let toSave = content;
-      if (viewMode === "manual") {
-        flushManualEditorSync();
-        const bodyMd = await exportManualBodyFromEditor();
-        toSave = joinYamlBody(frontMatter, bodyMd);
-        setBody(bodyMd);
-        setContent(toSave);
-      }
+      const exported = await resolveLiveContent();
+      const split = splitYamlBody(exported);
+      const bodyMd = tightenCgvDefaultSpacing(split.body);
+      const toSave = joinYamlBody(split.frontMatter, bodyMd);
+      setBody(bodyMd);
+      setContent(toSave);
 
       const saved = await saveManualFile(filePath, toSave);
-      if (!saved) return;
+      if (!saved) {
+        setStatus("Guardado cancelado");
+        return;
+      }
       setFilePath(saved);
       setDirty(false);
-      setStatus(`Guardado: ${saved}`);
+      setStatus(`Guardado: ${saved.split(/[/\\]/).pop()}`);
     } catch (error) {
       setStatus(`Error al guardar: ${String(error)}`);
+    } finally {
+      setSaving(false);
     }
-  }, [content, filePath, frontMatter, viewMode]);
+  }, [filePath, resolveLiveContent, saving]);
 
   const openPath = useCallback(
     async (path: string) => {
@@ -194,6 +323,8 @@ export default function App() {
   const handleReopenLast = useCallback(async () => {
     const last = getLastOpenedPath();
     if (!last) return;
+
+    await dismissWelcomeForNativeDialog();
 
     if (dirty) {
       const proceed = await confirmAction(
@@ -211,16 +342,21 @@ export default function App() {
       clearLastOpenedPath();
       setStatus(`No se pudo reabrir: ${String(error)}`);
     }
-  }, [dirty, openPath]);
+  }, [dirty, dismissWelcomeForNativeDialog, openPath]);
 
   const handleStarter = useCallback(async () => {
-    const proceed = await confirmAction(
-      "El documento actual se reemplazará por la plantilla.\n\nGuarde primero (⌘S) si necesita conservar su trabajo.",
-      { title: "Nueva plantilla", okLabel: "Reemplazar" }
-    );
-    if (!proceed) {
-      setStatus("Plantilla cancelada");
-      return;
+    await dismissWelcomeForNativeDialog();
+
+    const hasWork = dirty || Boolean(body.trim()) || Boolean(filePath);
+    if (hasWork) {
+      const proceed = await confirmAction(
+        "El documento actual se reemplazará por la plantilla.\n\nGuarde primero (⌘S) si necesita conservar su trabajo.",
+        { title: "Nueva plantilla", okLabel: "Reemplazar" }
+      );
+      if (!proceed) {
+        setStatus("Plantilla cancelada");
+        return;
+      }
     }
 
     cancelManualEditorSync();
@@ -229,7 +365,33 @@ export default function App() {
     setFilePath(null);
     setDirty(true);
     setStatus("Plantilla nueva (sin guardar)");
-  }, [loadFromContent]);
+  }, [body, dirty, dismissWelcomeForNativeDialog, filePath, loadFromContent]);
+
+  const handleQuit = useCallback(async () => {
+    if (quitInProgressRef.current) return;
+    quitInProgressRef.current = true;
+
+    try {
+      await dismissWelcomeForNativeDialog();
+
+      if (dirtyRef.current) {
+        const proceed = await confirmAction(
+          "Tiene cambios sin guardar.\n\n¿Salir sin guardar?",
+          { title: "Salir", okLabel: "Salir sin guardar" }
+        );
+        if (!proceed) return;
+      }
+
+      await deferNativeDialog();
+
+      const { invoke } = await import("@tauri-apps/api/core");
+      await invoke("quit_app");
+    } catch {
+      window.close();
+    } finally {
+      quitInProgressRef.current = false;
+    }
+  }, [dismissWelcomeForNativeDialog]);
 
   const hasCorrectableContent = Boolean(body.trim() || splitYamlBody(content).body.trim());
 
@@ -241,13 +403,18 @@ export default function App() {
     setStatus("Corrigiendo estilo CGV…");
 
     try {
-      let sourceBody = body.trim() ? body : splitYamlBody(content).body;
+      const storedBody = body.trim() ? body : splitYamlBody(content).body;
+      let sourceBody = storedBody;
 
       if (viewMode === "manual") {
         flushManualEditorSync();
-        const exported = await exportManualBodyFromEditor();
+        const prep = await requestManualBodyForStyleCorrect();
+        sourceBody = prep.storedBody.trim() || prep.body.trim() || storedBody;
+      } else {
+        flushMarkdownEditorSync();
+        const exported = await exportMarkdownFromEditor();
         if (exported.trim()) {
-          sourceBody = exported;
+          sourceBody = splitYamlBody(exported).body;
         }
       }
 
@@ -258,11 +425,12 @@ export default function App() {
         return;
       }
 
+      const beforeMd = normalizeMdForCompare(sourceBody);
       const result = await correctManualStyle(sourceBody);
-      updateBody(result.body);
-      setDirty(true);
+      const afterMd = normalizeMdForCompare(result.body);
+      const markdownChanged = afterMd !== beforeMd;
 
-      if (!result.changed) {
+      if (!markdownChanged) {
         const message = result.warnings.length
           ? `Sin cambios de estilo. ${result.warnings[0]}`
           : "Sin cambios de estilo — el documento ya cumple las reglas.";
@@ -271,12 +439,14 @@ export default function App() {
         return;
       }
 
+      cancelManualEditorSync();
+      applyContent(joinYamlBody(frontMatter, result.body));
+      setStyleCorrectRevision(revision => revision + 1);
+      setDirty(true);
+
       const parts: string[] = [];
       if (result.stats.scriptureUpdated) {
         parts.push(`${result.stats.scriptureUpdated} versículo(s) NBLA`);
-      }
-      if (result.stats.anchorsSet) {
-        parts.push(`${result.stats.anchorsSet} ancla(s) H4`);
       }
       if (result.stats.linesPromotedToH5) {
         parts.push(`${result.stats.linesPromotedToH5} línea(s) H5`);
@@ -284,10 +454,13 @@ export default function App() {
       if (result.stats.referencesDemoted) {
         parts.push(`${result.stats.referencesDemoted} referencia(s) reubicada(s)`);
       }
+      if (!parts.length) {
+        parts.push("espaciado de pasajes");
+      }
 
-      const summary = parts.length ? parts.join(" · ") : "estructura normalizada";
+      const summary = parts.join(" · ");
       const warning = result.warnings.length ? ` (${result.warnings.length} aviso(s))` : "";
-      const message = `Estilo corregido: ${summary}${warning}. Revise y guarde (⌘S).`;
+      const message = `Estilo corregido: ${summary}${warning}. Guarde con ⌘S.`;
       setStyleCorrectMessage(message);
       setStatus(message);
     } catch (error) {
@@ -297,7 +470,7 @@ export default function App() {
     } finally {
       setStyleCorrectBusy(false);
     }
-  }, [body, content, styleCorrectBusy, updateBody, viewMode]);
+  }, [applyContent, body, content, frontMatter, styleCorrectBusy, viewMode]);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -354,7 +527,7 @@ export default function App() {
 
       if (event.key === "/" || event.code === "Slash") {
         event.preventDefault();
-        cycleViewMode();
+        void cycleViewMode();
         return;
       }
 
@@ -373,6 +546,11 @@ export default function App() {
         void handleNew();
         return;
       }
+      if (event.key === "q") {
+        event.preventDefault();
+        void handleQuit();
+        return;
+      }
 
       const styleKey = event.key >= "1" && event.key <= "7" ? Number(event.key) : 0;
       if (!styleKey) return;
@@ -380,13 +558,15 @@ export default function App() {
       if (viewMode === "manual" || viewMode === "markdown") {
         event.preventDefault();
         window.dispatchEvent(
-          new CustomEvent("cgv-apply-style", { detail: { styleKey, viewMode } })
+          new CustomEvent("cgv-apply-style", {
+            detail: { styleKey, viewMode }
+          })
         );
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [cycleViewMode, handleNew, handleOpen, handleSave, searchOpen, setWritingModeEnabled, toggleWritingMode, viewMode, writingMode]);
+  }, [cycleViewMode, handleNew, handleOpen, handleQuit, handleSave, searchOpen, setWritingModeEnabled, toggleWritingMode, viewMode, writingMode]);
 
   useEffect(() => {
     let cancelled = false;
@@ -406,6 +586,8 @@ export default function App() {
         await bind("menu-file_save", () => void handleSave());
         await bind("menu-file_reopen", () => void handleReopenLast());
         await bind("menu-file_template", () => void handleStarter());
+        await bind("menu-app_quit", () => void handleQuit());
+        await bind("app-request-quit", () => void handleQuit());
       } catch {
         /* web-only dev */
       }
@@ -415,35 +597,71 @@ export default function App() {
       cancelled = true;
       unsubs.forEach(unsub => unsub());
     };
-  }, [handleNew, handleOpen, handleReopenLast, handleSave, handleStarter]);
+  }, [handleNew, handleOpen, handleQuit, handleReopenLast, handleSave, handleStarter]);
 
   useEffect(() => {
+    if (dirty) return;
     const timer = window.setTimeout(() => {
       setAnalysis(analyzeDocument(content));
     }, ANALYSIS_DEBOUNCE_MS);
     return () => window.clearTimeout(timer);
-  }, [content]);
+  }, [content, dirty]);
 
   useEffect(() => {
-    loadFromContent("");
-    setFilePath(null);
-    setDirty(false);
-    setStatus("Sin archivo — ⌘O para abrir o escriba aquí");
+    void (async () => {
+      const last = getLastOpenedPath();
+      if (last) {
+        try {
+          const text = await readManualByPath(last);
+          loadFromContent(text);
+          setFilePath(last);
+          setDirty(false);
+          setWelcomeOverlay(null);
+          setStatus(`Abierto: ${last.split(/[/\\]/).pop()}`);
+          return;
+        } catch {
+          clearLastOpenedPath();
+        }
+      }
+
+      loadFromContent("");
+      setFilePath(null);
+      setDirty(false);
+      setStatus("Sin archivo — ⌘O para abrir o escriba aquí");
+    })();
   }, [loadFromContent]);
 
   const title = filePath
-    ? `${dirty ? "• " : ""}${filePath.split(/[/\\]/).pop()}`
-    : dirty
-      ? "• Sin título"
-      : "Sin archivo";
+    ? filePath.split(/[/\\]/).pop() ?? "Sin título"
+    : "Sin archivo";
 
   const lastOpenedPath = getLastOpenedPath();
-  const outlineVisible = analysis.outline.slice(0, OUTLINE_DISPLAY_CAP);
-  const outlineHiddenCount = Math.max(0, analysis.outline.length - OUTLINE_DISPLAY_CAP);
+  const headingOutlineTree = buildHeadingOutlineTree(analysis.headingOutline);
+  const headingCounts = analysis.headingOutline.reduce(
+    (counts, item) => {
+      counts[item.level] += 1;
+      return counts;
+    },
+    { 1: 0, 2: 0, 3: 0 }
+  );
 
   const focusWriting =
     writingMode && (viewMode === "manual" || viewMode === "markdown");
-  const showWelcome = !filePath && !body.trim() && !focusWriting;
+  const showWelcome =
+    welcomeOverlay === "startup" && !filePath && !body.trim() && !focusWriting;
+
+  useEffect(() => {
+    if (!showWelcome) return;
+
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      event.preventDefault();
+      dismissWelcome();
+    };
+
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [dismissWelcome, showWelcome]);
 
   return (
     <BibleProvider>
@@ -457,9 +675,31 @@ export default function App() {
             onSave={() => void handleSave()}
             onReopenLast={() => void handleReopenLast()}
             onTemplate={() => void handleStarter()}
+            onQuit={() => void handleQuit()}
           />
           <div className="brand">
-            <span className="brand-name">CGV Writer</span>
+            <div className="brand-title-row">
+              <span className="brand-name">CGV Writer</span>
+              <span
+                className={`save-indicator${
+                  saving
+                    ? " save-indicator--saving"
+                    : dirty
+                      ? " save-indicator--dirty"
+                      : " save-indicator--saved"
+                }`}
+                title={
+                  saving
+                    ? "Guardando…"
+                    : dirty
+                      ? "Cambios sin guardar"
+                      : "Guardado"
+                }
+                aria-live="polite"
+              >
+                {saving ? "…" : dirty ? "●" : "✓"}
+              </span>
+            </div>
             <span className="brand-file">{title}</span>
           </div>
           <div className="view-tabs">
@@ -467,7 +707,7 @@ export default function App() {
               type="button"
               className={viewMode === "manual" ? "active" : undefined}
               onClick={() => switchViewMode("manual")}
-              title="⌘/"
+              title="Manual CGV — edición visual con términos del formato — ⌘/"
             >
               Manual
             </button>
@@ -481,6 +721,15 @@ export default function App() {
             </button>
           </div>
           <div className="toolbar-actions">
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={toggleColorTheme}
+              title={theme === "dark" ? "Modo claro" : "Modo oscuro"}
+              aria-label={theme === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
+            >
+              {theme === "dark" ? "☀" : "☾"}
+            </button>
             {viewMode === "manual" && (
               <button
                 type="button"
@@ -498,12 +747,10 @@ export default function App() {
         </header>
       )}
 
-      {!focusWriting && <p className="status-bar">{status}</p>}
-
-      <main className="workspace">
+      <main className={`workspace ${viewMode === "markdown" ? "workspace--markdown" : ""}`}>
         {focusWriting && (
           <div className="focus-mode-badge" aria-live="polite">
-            {viewMode === "manual" ? "Vista previa" : "Markdown"}
+            {viewMode === "manual" ? "Manual" : "Markdown"}
             <span className="focus-mode-badge-hint">⌘/ cambiar · Escape salir</span>
           </div>
         )}
@@ -526,62 +773,53 @@ export default function App() {
               onNew={() => void handleNew()}
               onReopenLast={() => void handleReopenLast()}
               onTemplate={() => void handleStarter()}
+              onDismiss={dismissWelcome}
             />
           )}
           <div className={`editor-pane-layer ${viewMode === "manual" ? "active" : ""}`}>
             <ManualEditor
               body={body}
               onBodyChange={updateBody}
-              reloadKey={filePath ?? "untitled"}
+              onBodySync={syncBodyFromView}
+              onDirty={markDocumentDirty}
+              reloadKey={`${documentSession}:${filePath ?? "untitled"}:sc${styleCorrectRevision}`}
               isActive={viewMode === "manual"}
               writingMode={focusWriting && viewMode === "manual"}
+              previewOnly={false}
             />
           </div>
           <div className={`editor-pane-layer ${viewMode === "markdown" ? "active" : ""}`}>
             <MarkdownEditor
               value={content}
               onChange={handleChangeMarkdown}
-              reloadKey={filePath ?? "untitled"}
+              onContentSync={syncContentFromView}
+              onDirty={markDocumentDirty}
+              reloadKey={`${documentSession}:${filePath ?? "untitled"}`}
               isActive={viewMode === "markdown"}
             />
           </div>
         </section>
 
-        {!focusWriting && (
+        {!focusWriting && viewMode === "manual" && (
           <aside className="sidebar">
           <section className="panel">
             <h2>Esquema</h2>
             <p className="panel-meta">
-              {analysis.outline.length
-                ? `${analysis.outline.length} bloques`
+              {analysis.headingOutline.length
+                ? `${headingCounts[1]} contexto${headingCounts[1] === 1 ? "" : "s"} · ${headingCounts[2]} sección${headingCounts[2] === 1 ? "" : "es"} · ${headingCounts[3]} referencia${headingCounts[3] === 1 ? "" : "s"}`
                 : "—"}
             </p>
-            <ol className="outline-list">
-              {outlineVisible.map(slide => (
-                <li
-                  key={slide.index}
-                  className={
-                    slide.isQuiz
-                      ? "quiz"
-                      : slide.isIllustration
-                        ? "illustration"
-                        : undefined
-                  }
-                >
-                  {slide.index}. {slide.title}
-                </li>
-              ))}
-              {outlineHiddenCount > 0 && (
-                <li className="outline-truncated">
-                  … {outlineHiddenCount} bloques más (use Markdown para buscar)
-                </li>
-              )}
-            </ol>
+            <HeadingOutlineTree nodes={headingOutlineTree} />
           </section>
 
           <section className="panel panel-presentation">
             <h2>Presenter</h2>
-            <PresentationPanel content={content} onContentChange={updateFullContent} variant="sidebar" />
+            <PresentationPanel
+              content={content}
+              onAppendToBody={appendToBody}
+              onInsertQuiz={insertQuizAtCursor}
+              variant="sidebar"
+            />
           </section>
 
           <LibrarySettingsPanel />
@@ -621,7 +859,7 @@ export default function App() {
             <h2>Notas</h2>
             <p>
               <strong>Archivo</strong> — Nuevo, Abrir, Guardar, plantilla. <strong>Enfoque</strong> — ⌘⇧F.
-              Buscar — ⌘F, reemplazar — ⌘⌥F. Atajos: ⌘/ Manual ↔ Markdown, ⌘N/O/S, ⌘1–7 estilos.
+              Buscar — ⌘F, reemplazar — ⌘⌥F. Atajos: ⌘/ Manual ↔ Markdown, ⌘N/O/S, ⌘1–7 estilos CGV.
               Marcadores de Presenter — panel <strong>Presenter</strong> (derecha).
             </p>
           </section>

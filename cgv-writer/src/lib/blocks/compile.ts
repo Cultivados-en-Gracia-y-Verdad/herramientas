@@ -1,7 +1,20 @@
-import { sanitizeH4AnchorText } from "../markdown-html";
+import { formatCgvBulletLine, sanitizeH4AnchorText } from "../markdown-html";
 import { compileSynthesisMarkdown } from "../synthesis-block";
 import type { ContentBlock } from "./types";
 import { splitFrontMatter } from "../analyze";
+
+function needsBlankLineBetweenBlocks(prev: ContentBlock | null, next: ContentBlock): boolean {
+  if (!prev || prev.type === "slideBreak" || next.type === "slideBreak") {
+    return false;
+  }
+  if (prev.type === "verse" && next.type === "commentary") {
+    return false;
+  }
+  if (prev.type === "focus" && next.type === "commentary") {
+    return false;
+  }
+  return true;
+}
 
 function compileBlock(block: ContentBlock): string {
   switch (block.type) {
@@ -21,7 +34,7 @@ function compileBlock(block: ContentBlock): string {
       const bulletLines = block.bullets
         .map(b => b.trim())
         .filter(Boolean)
-        .map(b => `- ${b}`)
+        .map(b => formatCgvBulletLine(b))
         .join("\n");
       if (title && bulletLines) return `##### ${title}\n${bulletLines}`;
       if (title) return `##### ${title}`;
@@ -37,6 +50,10 @@ function compileBlock(block: ContentBlock): string {
     }
     case "quiz":
       return `<!-- @quiz ${block.quizId.trim()} -->`;
+    case "table":
+      return block.markdown.trim();
+    case "raw":
+      return block.text;
     case "paragraph":
       return block.text.trim();
     case "slideBreak":
@@ -47,18 +64,27 @@ function compileBlock(block: ContentBlock): string {
 }
 
 export function compileBlocks(blocks: ContentBlock[]): string {
-  const parts: string[] = [];
+  let result = "";
+  let prev: ContentBlock | null = null;
 
   for (const block of blocks) {
     if (block.type === "slideBreak") {
-      parts.push("");
+      if (result) result += "\n\n";
+      prev = null;
       continue;
     }
+
     const text = compileBlock(block);
-    if (text) parts.push(text);
+    if (!text) continue;
+
+    if (result) {
+      result += needsBlankLineBetweenBlocks(prev, block) ? "\n\n" : "\n";
+    }
+    result += text;
+    prev = block;
   }
 
-  return parts.join("\n\n").replace(/\n{3,}/g, "\n\n").trim();
+  return result.replace(/\n{3,}/g, "\n\n").trim();
 }
 
 export function mergeDocument(frontMatter: string, blocks: ContentBlock[]): string {

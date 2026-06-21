@@ -1,5 +1,4 @@
 import type { Editor } from "@tiptap/react";
-import { ensureScriptureParagraphsAfterH3 } from "./manual-scripture-blocks";
 
 function escapeHtml(value: string): string {
   return value
@@ -34,6 +33,7 @@ export function applyScriptureTextAfterH3(
       .focus()
       .setTextSelection({ from, to })
       .insertContent(trimmed)
+      .updateAttributes("paragraph", { class: "cgv-scripture" })
       .run();
   } else {
     editor
@@ -42,24 +42,6 @@ export function applyScriptureTextAfterH3(
       .insertContentAt(afterH3, `<p class="cgv-scripture">${escapeHtml(trimmed)}</p>`)
       .run();
   }
-
-  ensureScriptureParagraphsAfterH3(editor);
 }
 
-export function findH3AtPos(editor: Editor, pos: number): { pos: number; text: string } | null {
-  const $pos = editor.state.doc.resolve(pos);
-
-  for (let depth = $pos.depth; depth > 0; depth -= 1) {
-    const node = $pos.node(depth);
-    if (node.type.name !== "heading" || node.attrs.level !== 3) {
-      continue;
-    }
-
-    const text = node.textContent.trim();
-    if (!text) return null;
-
-    return { pos: $pos.before(depth), text };
-  }
-
-  return null;
-}
+export { findH3AtPos } from "./h3-reference-click";

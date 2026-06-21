@@ -82,6 +82,23 @@ Focus mode hides the style toolbar, sidebar, status bar, and file tabs. A thin f
 - [Rust](https://www.rust-lang.org/tools/install) (Tauri desktop builds)
 - Platform deps: [Tauri prerequisites](https://v2.tauri.app/start/prerequisites/)
 
+## Daily use (macOS)
+
+Install once so CGV Writer lives in **Applications** like any other app:
+
+```bash
+cd cgv-writer
+npm run install:mac
+```
+
+Then open it from **Spotlight** (⌘Space → “CGV Writer”), the **Dock**, or:
+
+```bash
+npm run open:mac
+```
+
+On launch, Writer reopens your **last manual** automatically. **⌘Q** or **Archivo → Salir** quits (with a prompt if you have unsaved changes). Click the Dock icon again to bring the window back.
+
 ## Development
 
 ```bash
