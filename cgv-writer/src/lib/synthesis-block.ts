@@ -47,6 +47,9 @@ export function parseBlockquoteLines(
       bullets.push(cleaned.slice(2).trim());
     } else if (cleaned.startsWith("-")) {
       bullets.push(cleaned.slice(1).trim());
+    } else if (!isSynthesisTitleText(cleaned)) {
+      // Plain `>` lines after the title are synthesis points too.
+      bullets.push(cleaned);
     }
   }
 

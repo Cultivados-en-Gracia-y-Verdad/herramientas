@@ -1,6 +1,12 @@
-import { isCgvBulletLine, isDefinitionGlossLine, sanitizeH4AnchorText } from "../markdown-html";
+import {
+  isCgvBulletLine,
+  isDefinitionGlossLine,
+  restoreStrayMarkdownComments,
+  sanitizeH4AnchorText
+} from "../markdown-html";
 import { isBlockquoteLine, parseBlockquoteLines } from "../synthesis-block";
 import { collectTableLines, isTableLine } from "../table-block";
+import { markH6Bullet } from "./commentary-helpers";
 import type { ContentBlock } from "./types";
 import { newBlockId } from "./types";
 import { splitFrontMatter } from "../analyze";
@@ -73,16 +79,14 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
       const reference = line.slice(4).trim();
       i++;
       const scriptureLines: string[] = [];
-      while (
+      if (
         i < lines.length &&
+        lines[i].trim() &&
         !/^#{1,6}\s/.test(lines[i]) &&
         !QUIZ_LINE.test(lines[i]) &&
         !isDefinitionGlossLine(lines[i + 1] || "")
       ) {
-        const scriptureLine = lines[i].trim();
-        if (scriptureLine) {
-          scriptureLines.push(scriptureLine);
-        }
+        scriptureLines.push(lines[i].trim());
         i++;
       }
       blocks.push({
@@ -104,20 +108,52 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
       continue;
     }
 
+    if (line.startsWith("###### ") && !line.startsWith("####### ")) {
+      const h6 = line.slice(7).trim();
+      i++;
+      const bullets: string[] = [];
+      while (i < lines.length) {
+        if (!lines[i].trim()) {
+          i++;
+          continue;
+        }
+        if (isCgvBulletLine(lines[i])) {
+          bullets.push(lines[i].replace(/^-\s+/, "").trim());
+          i++;
+          continue;
+        }
+        break;
+      }
+      blocks.push({
+        id: newBlockId(),
+        type: "commentary",
+        title: "",
+        h6,
+        bullets
+      });
+      continue;
+    }
+
     if (line.startsWith("##### ")) {
       const title = line.slice(6).trim();
       i++;
       const bullets: string[] = [];
-      while (
-        i < lines.length &&
-        (lines[i].startsWith("###### ") || isCgvBulletLine(lines[i]))
-      ) {
-        if (lines[i].startsWith("###### ")) {
-          bullets.push(lines[i].slice(7).trim());
-        } else {
-          bullets.push(lines[i].replace(/^-\s+/, "").trim());
+      while (i < lines.length) {
+        if (!lines[i].trim()) {
+          i++;
+          continue;
         }
-        i++;
+        if (lines[i].startsWith("###### ") && !lines[i].startsWith("####### ")) {
+          bullets.push(markH6Bullet(lines[i].slice(7).trim()));
+          i++;
+          continue;
+        }
+        if (isCgvBulletLine(lines[i])) {
+          bullets.push(lines[i].replace(/^-\s+/, "").trim());
+          i++;
+          continue;
+        }
+        break;
       }
       blocks.push({
         id: newBlockId(),
@@ -137,11 +173,27 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
       }
       const parsed = parseBlockquoteLines(group);
       if (parsed) {
+        const bullets = [...parsed.bullets];
+        while (i < lines.length) {
+          if (!lines[i].trim()) {
+            if (!bullets.length) {
+              i++;
+              continue;
+            }
+            break;
+          }
+          if (isCgvBulletLine(lines[i])) {
+            bullets.push(lines[i].replace(/^-\s+/, "").trim());
+            i++;
+            continue;
+          }
+          break;
+        }
         blocks.push({
           id: newBlockId(),
           type: "synthesis",
           title: parsed.title,
-          bullets: parsed.bullets
+          bullets
         });
         continue;
       }
@@ -149,7 +201,12 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
 
     if (isCgvBulletLine(line)) {
       const bullets: string[] = [];
-      while (i < lines.length && isCgvBulletLine(lines[i])) {
+      while (i < lines.length) {
+        if (!lines[i].trim()) {
+          i++;
+          continue;
+        }
+        if (!isCgvBulletLine(lines[i])) break;
         bullets.push(lines[i].replace(/^-\s+/, "").trim());
         i++;
       }
@@ -187,7 +244,7 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
 }
 
 export function parseBodyToBlocks(body: string): ContentBlock[] {
-  const trimmed = String(body || "").trim();
+  const trimmed = restoreStrayMarkdownComments(String(body || "")).trim();
   if (!trimmed) return [];
 
   const lines = trimmed.split("\n");

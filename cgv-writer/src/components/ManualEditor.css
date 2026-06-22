@@ -4,8 +4,8 @@
   --cgv-indent-h3: 0;
   --cgv-indent-h4: 1.5rem;
   --cgv-indent-h5: 3.5rem;
-  --cgv-indent-h6: 4.5rem;
-  --cgv-indent-bullets: 5.75rem;
+  --cgv-indent-h6: 5.75rem;
+  --cgv-indent-bullets: 7rem;
   --cgv-scripture-color: #9b1c1c;
   --cgv-heading-h1: #1e3a5f;
   --cgv-heading-h2: #0369a1;
@@ -492,6 +492,19 @@
   margin-top: 0;
 }
 
+/* Next #### anchor in the same verse unit — flush under ##### */
+.manual-prosemirror h5 + h4,
+.manual-prosemirror p.cgv-h5 + p.cgv-focus,
+.manual-prosemirror h5 + p.cgv-md-spacer + h4 {
+  margin-top: 0;
+}
+
+.manual-prosemirror h5 + p.cgv-md-spacer {
+  display: none;
+  height: 0;
+  margin: 0;
+}
+
 /* Markdown spacer — visible blank line between passage blocks */
 .manual-prosemirror p.cgv-md-spacer {
   display: block;
@@ -636,7 +649,7 @@
 /* En Síntesis — blockquote review block */
 .manual-prosemirror blockquote.cgv-synthesis,
 .manual-prosemirror blockquote.synthesis-box {
-  margin: 0.75em 0;
+  margin: 0.75em 0 0.75em var(--cgv-indent-h6);
   padding: 0.55em 0.75em 0.6em;
   border: 1px solid var(--cgv-synthesis-border);
   border-left: 4px solid var(--cgv-synthesis-accent);
@@ -696,8 +709,8 @@
   font-style: italic;
 }
 
-.manual-prosemirror h3 + p.is-empty:not(.cgv-md-spacer),
-.manual-prosemirror h4 + p.is-empty:not(.cgv-md-spacer) {
+/* Hide TipTap's transient empty gap under H3 until versículo class is applied. */
+.manual-prosemirror h3 + p.is-empty:not(.cgv-md-spacer):not(.cgv-scripture) {
   display: none;
   margin: 0;
   min-height: 0;

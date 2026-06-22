@@ -1,5 +1,6 @@
-import { formatCgvBulletLine, sanitizeH4AnchorText } from "../markdown-html";
+import { formatCgvBulletLine, sanitizeH4AnchorText, stripCommentWrapper } from "../markdown-html";
 import { compileSynthesisMarkdown } from "../synthesis-block";
+import { isH6Bullet, unmarkH6Bullet } from "./commentary-helpers";
 import type { ContentBlock } from "./types";
 import { splitFrontMatter } from "../analyze";
 
@@ -7,11 +8,24 @@ function needsBlankLineBetweenBlocks(prev: ContentBlock | null, next: ContentBlo
   if (!prev || prev.type === "slideBreak" || next.type === "slideBreak") {
     return false;
   }
-  if (prev.type === "verse" && next.type === "commentary") {
+  // Presenter slide: ### + scripture only — blank line before everything that follows.
+  if (prev.type === "verse") {
+    return true;
+  }
+  if (prev.type === "paragraph" && next.type === "paragraph") {
     return false;
   }
   if (prev.type === "focus" && next.type === "commentary") {
     return false;
+  }
+  // Same verse unit: next #### anchor follows ##### without a blank line.
+  if (prev.type === "commentary" && next.type === "focus") {
+    return false;
+  }
+  if (prev.type === "commentary" && next.type === "commentary") {
+    if (!prev.title.trim() && !next.title.trim()) {
+      return false;
+    }
   }
   return true;
 }
@@ -31,15 +45,25 @@ function compileBlock(block: ContentBlock): string {
       return `#### ${sanitizeH4AnchorText(block.phrase)}`;
     case "commentary": {
       const title = block.title.trim();
-      const bulletLines = block.bullets
-        .map(b => b.trim())
-        .filter(Boolean)
-        .map(b => formatCgvBulletLine(b))
-        .join("\n");
-      if (title && bulletLines) return `##### ${title}\n${bulletLines}`;
-      if (title) return `##### ${title}`;
-      if (bulletLines) return bulletLines;
-      return "";
+      const lines: string[] = [];
+      if (title) lines.push(`##### ${title}`);
+      if (block.h6?.trim()) lines.push(`###### ${block.h6.trim()}`);
+      let prevWasDashBullet = false;
+      for (const bullet of block.bullets) {
+        const text = bullet.trim();
+        if (!text) continue;
+        if (isH6Bullet(text)) {
+          if (prevWasDashBullet) {
+            lines.push("");
+          }
+          lines.push(`###### ${unmarkH6Bullet(text)}`);
+          prevWasDashBullet = false;
+        } else {
+          lines.push(formatCgvBulletLine(text));
+          prevWasDashBullet = true;
+        }
+      }
+      return lines.join("\n");
     }
     case "synthesis":
       return compileSynthesisMarkdown(block.title, block.bullets);
@@ -55,7 +79,7 @@ function compileBlock(block: ContentBlock): string {
     case "raw":
       return block.text;
     case "paragraph":
-      return block.text.trim();
+      return stripCommentWrapper(block.text);
     case "slideBreak":
       return "";
     default:

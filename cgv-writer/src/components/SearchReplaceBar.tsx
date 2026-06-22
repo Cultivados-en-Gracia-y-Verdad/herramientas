@@ -63,14 +63,15 @@ export function SearchReplaceBar({
     const onOpen = (event: Event) => {
       const detail = (event as CustomEvent<{ showReplace?: boolean; seed?: string }>).detail;
       if (detail?.showReplace) onShowReplaceChange(true);
-      const seed = detail?.seed?.trim();
-      if (seed) {
-        setQuery(seed);
-        requestAnimationFrame(() => {
-          findRef.current?.focus();
+      const seed = detail?.seed?.trim() ?? "";
+      setQuery(seed);
+      setReport({ total: 0, current: 0 });
+      requestAnimationFrame(() => {
+        findRef.current?.focus();
+        if (seed) {
           findRef.current?.select();
-        });
-      }
+        }
+      });
     };
     const onReport = (event: Event) => {
       setReport((event as CustomEvent<SearchReport>).detail);
@@ -89,6 +90,9 @@ export function SearchReplaceBar({
 
   useEffect(() => {
     if (visible) return;
+    setQuery("");
+    setReplace("");
+    setCaseSensitive(false);
     setReport({ total: 0, current: 0 });
     dispatchSearch({ query: "", replace: "", caseSensitive: false, action: "clear" });
   }, [visible]);

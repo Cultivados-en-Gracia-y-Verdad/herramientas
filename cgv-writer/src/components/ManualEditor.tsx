@@ -26,6 +26,7 @@ import {
 import {
   applyReferenceHeading,
   ensureScriptureParagraphAfterH3AtCursor,
+  handleManualEnterKey,
   tightenPassageLayoutInEditor
 } from "../lib/manual-passage-layout";
 import { CgvH5Block } from "../lib/tiptap-cgv-h5-block";
@@ -37,9 +38,11 @@ import type { SearchRequest } from "../lib/search-bridge";
 import {
   isLikelyBibleReference,
   markdownToEditorHtml,
-  normalizeCgvMarkdown,
-  quizMarkerComment
+  quizMarkerComment,
+  sanitizeCgvMarkdown,
+  tightenCgvDefaultSpacing
 } from "../lib/markdown-html";
+import { checkContentPreserved } from "../lib/content-preservation";
 import { editorDocToMarkdown } from "../lib/blocks/parse-prosemirror";
 import { replaceAllInText } from "../lib/text-search";
 import { findManualHeadingPos, type OutlineNavigateRequest } from "../lib/outline-bridge";
@@ -232,12 +235,18 @@ function ManualEditorInner({
     onDirtyRef.current?.();
   };
 
-  /** TipTap → markdown; tighten layout only when exporting unsynced edits. */
+  /** TipTap → markdown; layout tighten only when it preserves all editor text. */
   const exportEditorMarkdown = (ed: Editor, tighten = false): string => {
-    if (tighten) {
-      tightenPassageLayoutInEditor(ed);
+    const beforeTighten = editorDocToMarkdown(ed);
+    if (!tighten) return beforeTighten;
+
+    tightenPassageLayoutInEditor(ed);
+    const afterTighten = editorDocToMarkdown(ed);
+    const loss = checkContentPreserved(beforeTighten, afterTighten);
+    if (loss.missingCount > 0) {
+      return beforeTighten;
     }
-    return editorDocToMarkdown(ed);
+    return afterTighten;
   };
 
   const syncExportedMarkdown = (md: string) => {
@@ -381,7 +390,7 @@ function ManualEditorInner({
         }),
         HorizontalRule.configure({ HTMLAttributes: { class: "cgv-slide-break" } })
       ],
-      content: markdownToEditorHtml(normalizeCgvMarkdown(body || "")),
+      content: markdownToEditorHtml(sanitizeCgvMarkdown(body || "")),
       onCreate: ({ editor: ed }) => {
         tightenPassageLayoutInEditor(ed);
       },
@@ -466,6 +475,12 @@ function ManualEditorInner({
           if (event.key === "Enter" && !event.shiftKey) {
             const ed = editorRef.current;
             if (ed) {
+              if (handleManualEnterKey(ed)) {
+                event.preventDefault();
+                markManualEditorDirty();
+                scheduleSyncToMarkdown();
+                return true;
+              }
               window.setTimeout(() => ensureScriptureParagraphAfterH3AtCursor(ed), 0);
             }
           }
@@ -688,7 +703,7 @@ function ManualEditorInner({
     cancelPendingSync();
     suppressUpdate.current = true;
     editor.commands.setContent(
-      markdownToEditorHtml(normalizeCgvMarkdown(body)),
+      markdownToEditorHtml(sanitizeCgvMarkdown(body)),
       { emitUpdate: false }
     );
     tightenPassageLayoutInEditor(editor);
@@ -723,11 +738,18 @@ function ManualEditorInner({
 
     cancelPendingSync();
     suppressUpdate.current = true;
-    lastLoadedBody.current = body;
-    lastSyncedFromEditor.current = body;
+    const layoutBody = tightenCgvDefaultSpacing(body);
+    lastLoadedBody.current = layoutBody;
+    lastSyncedFromEditor.current = layoutBody;
     clearManualEditorDirty();
-    editor.commands.setContent(markdownToEditorHtml(body), { emitUpdate: false });
+    editor.commands.setContent(markdownToEditorHtml(sanitizeCgvMarkdown(layoutBody)), {
+      emitUpdate: false
+    });
     tightenPassageLayoutInEditor(editor);
+    if (layoutBody !== body) {
+      bodyRef.current = layoutBody;
+      onBodyChangeRef.current(layoutBody);
+    }
     requestAnimationFrame(() => {
       suppressUpdate.current = false;
     });

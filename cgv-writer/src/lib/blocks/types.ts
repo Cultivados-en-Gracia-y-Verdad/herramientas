@@ -53,6 +53,8 @@ export interface FocusBlock extends BaseBlock {
 export interface CommentaryBlock extends BaseBlock {
   type: "commentary";
   title: string;
+  /** Standalone ###### heading before dash bullets (no ##### parent). */
+  h6?: string;
   bullets: string[];
 }
 

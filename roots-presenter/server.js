@@ -1039,18 +1039,80 @@ async function syncSongsFromGithub(payload = {}) {
   };
 }
 
-function loadStyleSettings() {
-  const settingsPath = fs.existsSync(styleSettingsPath)
-    ? styleSettingsPath
-    : bundledStyleSettingsPath;
-
-  if (!fs.existsSync(settingsPath)) return {};
+function loadBundledStyleSettings() {
+  if (!fs.existsSync(bundledStyleSettingsPath)) return {};
 
   try {
-    return JSON.parse(fs.readFileSync(settingsPath, "utf-8"));
+    return JSON.parse(fs.readFileSync(bundledStyleSettingsPath, "utf-8"));
+  } catch (error) {
+    console.warn(`Could not load bundled style settings: ${error.message}`);
+    return {};
+  }
+}
+
+function deepMergeObjects(base, override) {
+  if (!override || typeof override !== "object" || Array.isArray(override)) {
+    return base;
+  }
+
+  const result = { ...(base && typeof base === "object" ? base : {}) };
+
+  Object.entries(override).forEach(([key, value]) => {
+    if (
+      value &&
+      typeof value === "object" &&
+      !Array.isArray(value) &&
+      result[key] &&
+      typeof result[key] === "object" &&
+      !Array.isArray(result[key])
+    ) {
+      result[key] = deepMergeObjects(result[key], value);
+      return;
+    }
+
+    result[key] = value;
+  });
+
+  return result;
+}
+
+const LEGACY_H6_INDENTS = new Set(["3.55em", "3.8em", "4.5em", "5.75em"]);
+const LEGACY_BULLET_INDENTS = new Set(["5.1em", "5.6em", "6.25em", "8em"]);
+const DEFAULT_H6_INDENT = "7em";
+const DEFAULT_BULLET_INDENT = "9.5em";
+
+function migrateLegacyStyleIndents(settings) {
+  if (!settings?.styles) return settings;
+
+  ["main", "presenter", "audience"].forEach(scope => {
+    const scoped = settings.styles[scope];
+    if (!scoped) return;
+
+    if (scoped.h6?.indent && LEGACY_H6_INDENTS.has(String(scoped.h6.indent).trim())) {
+      scoped.h6.indent = DEFAULT_H6_INDENT;
+    }
+
+    if (scoped.bullet?.indent && LEGACY_BULLET_INDENTS.has(String(scoped.bullet.indent).trim())) {
+      scoped.bullet.indent = DEFAULT_BULLET_INDENT;
+    }
+  });
+
+  return settings;
+}
+
+function loadStyleSettings() {
+  const bundled = loadBundledStyleSettings();
+
+  if (!fs.existsSync(styleSettingsPath)) {
+    return migrateLegacyStyleIndents(bundled);
+  }
+
+  try {
+    const saved = JSON.parse(fs.readFileSync(styleSettingsPath, "utf-8"));
+    return migrateLegacyStyleIndents(deepMergeObjects(bundled, saved));
   } catch (error) {
     console.warn(`Could not load style settings: ${error.message}`);
-    return {};
+    return migrateLegacyStyleIndents(bundled);
   }
 }
 
@@ -2687,7 +2749,11 @@ function cleanHeadingText(line) {
 }
 
 function getHeadingIndex(maxLevel = 2) {
-  return slides.flatMap((slide, index) =>
+  if (maxLevel === 2 && cachedHeadingIndex) {
+    return cachedHeadingIndex;
+  }
+
+  const headings = slides.flatMap((slide, index) =>
     slide.lines
       .map(line => {
         const match = line.match(/^(#{1,6})\s+/);
@@ -2704,6 +2770,12 @@ function getHeadingIndex(maxLevel = 2) {
       })
       .filter(Boolean)
   );
+
+  if (maxLevel === 2) {
+    cachedHeadingIndex = headings;
+  }
+
+  return headings;
 }
 
 function jumpToSlide(slideIndex) {
@@ -3472,6 +3544,7 @@ function loadSlides() {
     }));
 
   quizBank = [...loadQuizBank(presentationMeta), ...inlineQuizzes];
+  invalidatePresentationCaches();
 }
 
 function buildCoverSlides(meta = {}) {
@@ -3481,14 +3554,27 @@ function buildCoverSlides(meta = {}) {
   return [parseSlide([`![${meta.title || "Course cover"}](${cover})`])];
 }
 
+const renderedSlideCache = new Map();
+let cachedHeadingIndex = null;
+
+function invalidatePresentationCaches() {
+  renderedSlideCache.clear();
+  cachedHeadingIndex = null;
+}
+
 function renderSlideAt(index) {
   const slide = slides[index];
   if (!slide) return { sticky: [], lines: [] };
 
-  return {
+  const cached = renderedSlideCache.get(index);
+  if (cached) return cached;
+
+  const rendered = {
     sticky: (slide.stickyLines || []).map(renderLine),
     lines: slide.lines.map(renderLine)
   };
+  renderedSlideCache.set(index, rendered);
+  return rendered;
 }
 
 function buildRenderedSlideWindow() {

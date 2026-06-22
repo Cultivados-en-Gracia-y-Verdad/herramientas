@@ -145,9 +145,17 @@ textarea {
 .projector-slide h3,
 .projector-slide h4,
 .projector-slide h5,
-.projector-slide h6 {
+.projector-slide h6,
+.audience-slide h1,
+.audience-slide h2,
+.audience-slide h3,
+.audience-slide h4,
+.audience-slide h5,
+.audience-slide h6 {
   line-height: 1.16;
-  margin: 0 0 0.38em 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0.38em;
   font-weight: 500;
 }
 
@@ -240,16 +248,18 @@ textarea {
 }
 
 .slide h5,
-.projector-slide h5 {
-  margin-left: var(--style-h5-indent, 2em);
+.projector-slide h5,
+.audience-slide h5 {
+  margin-left: var(--style-h5-indent, 2.15em);
   color: var(--style-h5-color, inherit);
   font-size: calc(var(--style-h5-size, 0.9em) * 1.05);
   font-weight: 400;
 }
 
 .slide h6,
-.projector-slide h6 {
-  margin-left: var(--style-h6-indent, 3.8em);
+.projector-slide h6,
+.audience-slide h6 {
+  margin-left: var(--style-h6-indent, 7em);
   font-size: calc(var(--style-h6-size, 0.94em) * 1.07);
   font-weight: 400;
   color: var(--style-h6-color, #374151);
@@ -277,8 +287,9 @@ textarea {
 }
 
 .slide .comment-bullets,
-.projector-slide .comment-bullets {
-  padding-left: var(--style-bullet-indent, 5.6em);
+.projector-slide .comment-bullets,
+.audience-slide .comment-bullets {
+  padding-left: var(--style-bullet-indent, 9.5em);
 }
 
 .slide li,
@@ -1073,6 +1084,7 @@ button {
 .projector-slide h6 {
   color: var(--style-h6-color, #d8d8d8);
   font-size: calc(var(--style-h6-size, 0.94em) * 1.07);
+  margin-left: var(--style-h6-indent, 7em);
 }
 
 .projector-slide li {

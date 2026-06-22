@@ -2,6 +2,7 @@ import { compileBlocks } from "./blocks/compile";
 import { parseBodyToBlocks } from "./blocks/parse";
 import { htmlToBlocks } from "./blocks/parse-html";
 import { blocksToEditorHtml } from "./blocks/render-html";
+import { safeMarkdownTransform } from "./content-preservation";
 import { isBlockquoteLine } from "./synthesis-block";
 
 const QUIZ_PLAIN_LINE_GLOBAL = /^@quiz\s+#?([A-Za-z0-9_.:-]+)\s*$/gim;
@@ -55,6 +56,13 @@ function restoreUnwrappedCommentLine(inner: string): string {
   return text;
 }
 
+/** Unwrap a single-line `<!-- markdown -->` wrapper, if present. */
+export function stripCommentWrapper(text: string): string {
+  const trimmed = String(text || "").trim();
+  const match = trimmed.match(/^<!--\s*([\s\S]*?)\s*-->$/);
+  return match ? match[1].trim() : trimmed;
+}
+
 function demoteMisplacedH3Lines(md: string): string {
   return md.replace(/^### (.+)$/gm, (line, content: string) => {
     if (isLikelyBibleReference(content)) return line;
@@ -66,7 +74,8 @@ function stripEmptyHtmlComments(text: string): string {
   return String(text || "").replace(/<!--\s*-->/g, "");
 }
 
-function unwrapStrayMarkdownComments(md: string): string {
+/** Restore CGV markdown hidden inside non-quiz HTML comments (e.g. `<!-- ###### Sino: -->`). */
+export function restoreStrayMarkdownComments(md: string): string {
   const placeholders: string[] = [];
   let protectedMd = stripEmptyHtmlComments(md);
   protectedMd = protectedMd.replace(PROTECTED_QUIZ_COMMENT, match => {
@@ -151,8 +160,89 @@ function ensureVerseToH4BlankLine(md: string): string {
   return result;
 }
 
+/** Presenter slide: ### + first scripture line only — blank line before any following content. */
+function ensureBlankLineAfterVerseSlide(md: string): string {
+  const lines = md.split("\n");
+  const out: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    out.push(line);
+
+    if (!/^### /.test(line) || /^####/.test(line)) continue;
+
+    i++;
+    const scriptureStart = out.length;
+    if (i < lines.length && lines[i].trim() && !/^#{1,6}\s/.test(lines[i])) {
+      out.push(lines[i]);
+      i++;
+    }
+
+    if (out.length === scriptureStart) {
+      i--;
+      continue;
+    }
+
+    const extraStart = i;
+    while (
+      i < lines.length &&
+      lines[i].trim() &&
+      !/^#{1,6}\s/.test(lines[i]) &&
+      !isBlockquoteLine(lines[i])
+    ) {
+      i++;
+    }
+
+    if (i > extraStart) {
+      out.push("");
+      for (let j = extraStart; j < i; j++) {
+        out.push(lines[j]);
+      }
+    }
+
+    if (i < lines.length && !lines[i].trim()) {
+      out.push("");
+      while (i < lines.length && !lines[i].trim()) i++;
+      i--;
+      continue;
+    }
+
+    if (i < lines.length && out[out.length - 1]?.trim()) {
+      out.push("");
+    }
+
+    i--;
+  }
+
+  return out.join("\n");
+}
+
+/** Tighten ##### / ###### / bullets — but keep a blank line after a list before the next ######. */
+function tightenCommentaryNestedSpacing(md: string): string {
+  let result = String(md || "");
+  let prev = "";
+
+  while (prev !== result) {
+    prev = result;
+    result = result.replace(/^(##### [^\n]+)\n\n+(###### )/gm, "$1\n$2");
+    result = result.replace(/^(##### [^\n]+)\n\n+(-\s+)/gm, "$1\n$2");
+    result = result.replace(/^(###### [^\n]+)\n\n+(-\s+)/gm, "$1\n$2");
+    result = result.replace(/^(###### [^\n]+)\n\n+(###### )/gm, "$1\n$2");
+  }
+
+  return result;
+}
+
+/** After a bullet list, one blank line before the next ###### (comment level 2 break). */
+function ensureBlankLineAfterBulletListBeforeH6(md: string): string {
+  let result = String(md || "");
+  result = result.replace(/^(-\s+\S[^\n]*)\n\n+(###### )/gm, "$1\n\n$2");
+  result = result.replace(/^(-\s+\S[^\n]*)\n(###### )/gm, "$1\n\n$2");
+  return result;
+}
+
 function fixCgvPassageLayout(md: string) {
-  let result = unwrapStrayMarkdownComments(md);
+  let result = restoreStrayMarkdownComments(md);
   result = demoteMisplacedH3Lines(result);
 
   // ### Reference\n\nVerse → ### Reference\nVerse
@@ -163,18 +253,24 @@ function fixCgvPassageLayout(md: string) {
   // #### anchor then ##### comment — no blank line
   result = result.replace(/^(#### [^\n]+)\n\n(##### )/gm, "$1\n$2");
 
+  // ##### comment then next #### anchor in same verse — no blank line
+  result = result.replace(/^(##### [^\n]+)\n\n(#### )/gm, "$1\n$2");
+
   // ##### then bullet list — no blank line
   result = result.replace(/^(##### [^\n]+)\n\n(-\s+)/gm, "$1\n$2");
 
+  result = tightenCommentaryNestedSpacing(result);
+  result = ensureBlankLineAfterBulletListBeforeH6(result);
   result = collapseBlankLinesWithinBulletLists(result);
   result = normalizeCgvBulletPrefixes(result);
+  result = ensureBlankLineAfterVerseSlide(result);
 
   return result;
 }
 
 /** Light cleanup on save/load/export — no layout reshaping. */
 export function sanitizeCgvMarkdown(md: string): string {
-  let result = String(md || "");
+  let result = restoreStrayMarkdownComments(String(md || ""));
   let prev = "";
 
   while (prev !== result) {
@@ -189,9 +285,11 @@ export function sanitizeCgvMarkdown(md: string): string {
   return coerceQuizMarkersInMarkdown(stripEmptyHtmlComments(result));
 }
 
-/** Full CGV layout pass — only for explicit «Corregir estilo». */
+/** Full CGV layout pass — only for explicit «Corregir estilo»; aborts if content would be lost. */
 export function normalizeCgvMarkdown(md: string): string {
-  return fixCgvPassageLayout(sanitizeCgvMarkdown(md));
+  return safeMarkdownTransform(String(md || ""), input =>
+    fixCgvPassageLayout(sanitizeCgvMarkdown(input))
+  ).output;
 }
 
 /** Trim-only compare — detects spacing/layout diffs normalizeCgvMarkdown would fix. */
@@ -206,20 +304,23 @@ export function isDefinitionGlossLine(line: string): boolean {
   return /^:\s*\S/.test(String(line || "").trim());
 }
 
-/** Default CGV passage spacing for Markdown view and Manual export. */
+/** Default CGV passage spacing — aborts if content would be lost. */
 export function tightenCgvDefaultSpacing(md: string): string {
-  let result = String(md || "");
-  // ### referencia + blank + versículo → no blank line
-  result = result.replace(/^(### [^\n]+)\n\n(?!(#{1,6}\s|<!--\s*@))/gm, "$1\n");
-  // versículo + #### ancla → one blank line
-  result = ensureVerseToH4BlankLine(result);
-  // #### ancla + blank + ##### comentario → no blank line
-  result = result.replace(/^(#### [^\n]+)\n\n(##### )/gm, "$1\n$2");
-  return result;
+  return safeMarkdownTransform(String(md || ""), input => {
+    let result = restoreStrayMarkdownComments(input);
+    result = result.replace(/^(### [^\n]+)\n\n(?!(#{1,6}\s|<!--\s*@))/gm, "$1\n");
+    result = ensureVerseToH4BlankLine(result);
+    result = ensureBlankLineAfterVerseSlide(result);
+    result = result.replace(/^(#### [^\n]+)\n\n(##### )/gm, "$1\n$2");
+    result = result.replace(/^(##### [^\n]+)\n\n(#### )/gm, "$1\n$2");
+    result = tightenCommentaryNestedSpacing(result);
+    result = ensureBlankLineAfterBulletListBeforeH6(result);
+    return result;
+  }).output;
 }
 
 export function markdownToEditorHtml(body: string): string {
-  return blocksToEditorHtml(parseBodyToBlocks(body || ""));
+  return blocksToEditorHtml(parseBodyToBlocks(restoreStrayMarkdownComments(body || "")));
 }
 
 /** Loose HTML compare for Manual vs canonical CGV render. */
@@ -236,7 +337,9 @@ export function canonicalManualEditorHtml(body: string): string {
 
 export function editorHtmlToMarkdown(html: string): string {
   const blocks = htmlToBlocks(stripEmptyHtmlComments(html || ""));
-  return coerceQuizMarkersInMarkdown(tightenCgvDefaultSpacing(compileBlocks(blocks)).trimEnd());
+  return restoreStrayMarkdownComments(
+    coerceQuizMarkersInMarkdown(tightenCgvDefaultSpacing(compileBlocks(blocks)).trimEnd())
+  );
 }
 
 export function splitYamlBody(text: string) {

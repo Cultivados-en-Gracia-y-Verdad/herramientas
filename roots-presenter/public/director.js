@@ -219,10 +219,33 @@ function renderSongList() {
     : `<div class="empty compact">${t("noSongsFound")}</div>`;
 }
 
+let cachedSectionHeadingsKey = null;
+
+function getSectionHeadingsKey(headings = []) {
+  return headings.map(heading => `${heading.slide}:${heading.level}:${heading.title}`).join("|");
+}
+
+function updateSectionListActive(slideIndex) {
+  const list = byId("sectionList");
+  if (!list) return;
+
+  list.querySelectorAll(".section-choice").forEach(button => {
+    const index = Number(button.dataset.slideIndex);
+    button.classList.toggle("active", index === Number(slideIndex));
+  });
+}
+
 function renderSectionList(headings = latestState.headings || []) {
   const list = byId("sectionList");
   if (!list) return;
 
+  const headingsKey = getSectionHeadingsKey(headings);
+  if (headingsKey === cachedSectionHeadingsKey) {
+    updateSectionListActive(latestState.slide);
+    return;
+  }
+
+  cachedSectionHeadingsKey = headingsKey;
   list.innerHTML = headings.length
     ? headings.map(heading => {
         const active = Number(latestState.slide) === Number(heading.slide) ? " active" : "";
@@ -304,13 +327,19 @@ function getDirectorSizing(isSongMode) {
     : { max: 52, min: 32 };
 }
 
+let lastFitContext = { slide: -1, step: -1, songMode: false, size: null };
+
 function fitDirectorText() {
   const content = byId("directorContent");
   if (!content) return;
 
-  const sizing = getDirectorSizing(content.classList.contains("song-mode"));
-  let size = sizing.max;
+  const isSongMode = content.classList.contains("song-mode");
+  const sizing = getDirectorSizing(isSongMode);
   const minSize = sizing.min;
+  const sameSlide = !isSongMode && lastFitContext.slide === Number(latestState.slide);
+  const stepIncreased = sameSlide && Number(latestState.step) > lastFitContext.step;
+  let size = stepIncreased && lastFitContext.size ? lastFitContext.size : sizing.max;
+
   content.style.setProperty("--director-fit-size", `${size}px`);
 
   while (
@@ -320,6 +349,13 @@ function fitDirectorText() {
     size -= 2;
     content.style.setProperty("--director-fit-size", `${size}px`);
   }
+
+  lastFitContext = {
+    slide: Number(latestState.slide),
+    step: Number(latestState.step),
+    songMode: isSongMode,
+    size
+  };
 }
 
 function renderDirector(state = {}) {
