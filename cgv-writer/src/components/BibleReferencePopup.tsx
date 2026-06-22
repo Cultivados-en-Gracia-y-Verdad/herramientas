@@ -59,7 +59,7 @@ export function BibleReferencePopup({
         <footer className="bible-popup-footer">
           {!loading && showUseText && result?.verses.length ? (
             <button type="button" className="primary" onClick={onUseText}>
-              Usar texto NBLA
+              Agregar texto NBLA
             </button>
           ) : null}
           <button type="button" onClick={onClose}>

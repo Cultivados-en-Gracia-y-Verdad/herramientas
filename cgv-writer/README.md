@@ -8,10 +8,10 @@ Built for daily authoring: a calm writing surface, CGV-specific styles, and plai
 
 | Need | Writer |
 |------|--------|
-| CGV heading / comment / scripture styles | **Manual** tab with toolbar + shortcuts |
+| CGV heading / comment / scripture styles | **Manual** visual mode with toolbar + shortcuts |
 | Raw `#` syntax when you want it | **Markdown** tab (CodeMirror) |
 | Quizzes, slide breaks | **Presentación** tab (not mixed into writing flow) |
-| Large files, scroll position | Both editors stay mounted; cursor/scroll preserved across tab switches |
+| Large files, cursor/scroll position | One shared document; switching modes cannot rewrite or relocate content |
 | Quiet, Typora-like focus | **Modo enfoque** hides chrome; shortcuts still work |
 
 Output is always normal `.md`. No proprietary format.
@@ -20,7 +20,9 @@ Output is always normal `.md`. No proprietary format.
 
 ### Manual (default)
 
-Word-like editing on a white page (TipTap). Styles map to Presenter markdown — see [docs/conventions.md](docs/conventions.md).
+Word-like editing on a white page, backed directly by the same CodeMirror Markdown document used by the Markdown tab. Styles map to Presenter markdown — see [docs/conventions.md](docs/conventions.md).
+
+Manual and Markdown are presentation modes of one editor state. Switching modes preserves the exact source, cursor, selection, undo history, and scroll context; no Markdown conversion runs during a switch.
 
 - **Contexto / Sección / Referencia** → `#` `##` `###` (H3 = Bible reference, flush left)
 - **H4** → `####` anchor text (scripture style with « »)
@@ -71,7 +73,7 @@ Focus mode hides the style toolbar, sidebar, status bar, and file tabs. A thin f
 
 1. **Abrir** (⌘O) — open `manual.md` or `markdown.md` from a curriculo course folder, or start typing on the blank page.
 2. Write in **Manual**; use **Modo enfoque** for long sessions.
-3. Switch to **Markdown** occasionally to inspect source; your place in the file is kept.
+3. Switch to **Markdown** occasionally to inspect source; the same cursor and undo history remain active.
 4. Add quizzes and slide structure in **Presentación** when needed.
 5. **Guardar** (⌘S) — Presenter reads the same file as before.
 6. Build PDFs with existing curriculo scripts when ready (`build_manual.sh`, etc.).
@@ -128,11 +130,10 @@ cgv-writer/
   src/
     App.tsx                 Shell, tabs, shortcuts, focus mode
     components/
-      ManualEditor.tsx      TipTap “page” editor
-      MarkdownEditor.tsx    CodeMirror source
+      SharedDocumentEditor.tsx  One CodeMirror document, Manual + Markdown modes
       PresentationPanel.tsx Slide/quiz append UI
     lib/
-      markdown-html.ts      Manual ↔ markdown conversion
+      codemirror-manual-mode.ts Visual Manual decorations over exact Markdown
       analyze.ts            Outline + light checks (sidebar)
       manual-comments.ts    H4/H5/H6 structure
       writing-mode.ts       Focus mode preference
@@ -154,7 +155,7 @@ cgv-writer/
 
 ## Roadmap
 
-- **Now:** Improve through daily use — performance on very large manuals, round-trip edge cases, UI polish.
+- **Now:** Improve through daily use — performance on very large manuals and visual-mode polish. Native saves are atomic and retain recent backups in `.cgv-writer-backups/` beside each changed manual.
 - **v2:** Illustration storyboards (`@illustration` + sidecar JSON) — [docs/illustrations-example.md](docs/illustrations-example.md).
 
 ## Authoring reference

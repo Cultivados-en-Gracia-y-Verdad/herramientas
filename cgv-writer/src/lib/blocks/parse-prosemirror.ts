@@ -1,6 +1,6 @@
 import type { Editor } from "@tiptap/core";
 import type { Mark, Node as ProseMirrorNode } from "@tiptap/pm/model";
-import { coerceQuizMarkersInMarkdown, restoreStrayMarkdownComments, sanitizeH4AnchorText, tightenCgvDefaultSpacing } from "../markdown-html";
+import { coerceQuizMarkersInMarkdown, restoreStrayMarkdownComments, sanitizeH4AnchorText, sanitizeCgvMarkdown } from "../markdown-html";
 import { markH6Bullet } from "./commentary-helpers";
 import {
   isSynthesisBulletText,
@@ -416,6 +416,6 @@ export function prosemirrorDocToBlocks(doc: ProseMirrorNode): ContentBlock[] {
 export function editorDocToMarkdown(editor: Editor): string {
   const blocks = prosemirrorDocToBlocks(editor.state.doc);
   return restoreStrayMarkdownComments(
-    coerceQuizMarkersInMarkdown(tightenCgvDefaultSpacing(compileBlocks(blocks)).trimEnd())
+    coerceQuizMarkersInMarkdown(sanitizeCgvMarkdown(compileBlocks(blocks)).trimEnd())
   );
 }

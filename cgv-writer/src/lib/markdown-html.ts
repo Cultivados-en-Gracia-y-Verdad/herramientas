@@ -2,7 +2,7 @@ import { compileBlocks } from "./blocks/compile";
 import { parseBodyToBlocks } from "./blocks/parse";
 import { htmlToBlocks } from "./blocks/parse-html";
 import { blocksToEditorHtml } from "./blocks/render-html";
-import { safeMarkdownTransform } from "./content-preservation";
+import { checkContentPreserved, safeMarkdownTransform } from "./content-preservation";
 import { isBlockquoteLine } from "./synthesis-block";
 
 const QUIZ_PLAIN_LINE_GLOBAL = /^@quiz\s+#?([A-Za-z0-9_.:-]+)\s*$/gim;
@@ -323,6 +323,16 @@ export function markdownToEditorHtml(body: string): string {
   return blocksToEditorHtml(parseBodyToBlocks(restoreStrayMarkdownComments(body || "")));
 }
 
+/** Detect markdown → blocks → markdown round-trip content loss. */
+export function checkBodyRoundTripLoss(body: string) {
+  const source = sanitizeCgvMarkdown(String(body || ""));
+  if (!source.trim()) {
+    return { missing: [], missingCount: 0 };
+  }
+  const compiled = compileBlocks(parseBodyToBlocks(source));
+  return checkContentPreserved(source, compiled);
+}
+
 /** Loose HTML compare for Manual vs canonical CGV render. */
 export function normalizeEditorHtmlForCompare(html: string): string {
   return String(html || "")
@@ -338,7 +348,7 @@ export function canonicalManualEditorHtml(body: string): string {
 export function editorHtmlToMarkdown(html: string): string {
   const blocks = htmlToBlocks(stripEmptyHtmlComments(html || ""));
   return restoreStrayMarkdownComments(
-    coerceQuizMarkersInMarkdown(tightenCgvDefaultSpacing(compileBlocks(blocks)).trimEnd())
+    coerceQuizMarkersInMarkdown(sanitizeCgvMarkdown(compileBlocks(blocks)).trimEnd())
   );
 }
 

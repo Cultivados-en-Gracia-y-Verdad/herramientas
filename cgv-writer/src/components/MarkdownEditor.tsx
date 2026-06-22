@@ -35,7 +35,7 @@ import { setViewHandoff, takeViewHandoff } from "../lib/manual-sync";
 import { replaceAllInText } from "../lib/text-search";
 import { reportSearchResult, type SearchRequest } from "../lib/search-bridge";
 import { type OutlineNavigateRequest } from "../lib/outline-bridge";
-import { joinYamlBody, splitYamlBody, bodyStartInContent, CGV_BULLET_LINE_PREFIX, tightenCgvDefaultSpacing } from "../lib/markdown-html";
+import { joinYamlBody, splitYamlBody, bodyStartInContent, CGV_BULLET_LINE_PREFIX } from "../lib/markdown-html";
 import { cgvBlankHighlightExtension } from "../lib/codemirror-underline-blank";
 
 /** Full-doc Lezer highlighting is costly on long manuals. */
@@ -281,8 +281,8 @@ export function MarkdownEditor({ value, onChange, onContentSync, onDirty, isActi
     }
 
     const current = view.state.doc.toString();
-    const split = splitYamlBody(value);
-    const displayValue = joinYamlBody(split.frontMatter, tightenCgvDefaultSpacing(split.body));
+    // View navigation must never format or otherwise rewrite source markdown.
+    const displayValue = value;
 
     if (!fileChanged && current === displayValue) {
       return;
@@ -291,13 +291,6 @@ export function MarkdownEditor({ value, onChange, onContentSync, onDirty, isActi
     if (!fileChanged && isActiveRef.current && current !== displayValue) {
       syncDocToParent(current);
       return;
-    }
-
-    if (fileChanged && displayValue !== value) {
-      skipValueSync.current = true;
-      selfChange.current = true;
-      valueRef.current = displayValue;
-      onContentSyncRef.current?.(displayValue);
     }
 
     const place = loadSharedEditorPlace();

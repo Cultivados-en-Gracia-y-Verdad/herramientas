@@ -58,6 +58,21 @@ export function checkContentPreserved(before: string, after: string): ContentLos
   return { missing, missingCount };
 }
 
+export const CONTENT_LOSS_BLOCKED_EVENT = "cgv-content-loss-blocked";
+
+export interface ContentLossBlockedDetail {
+  message: string;
+  missing: string[];
+}
+
+export function reportContentLossBlocked(message: string, missing: string[] = []): void {
+  window.dispatchEvent(
+    new CustomEvent(CONTENT_LOSS_BLOCKED_EVENT, {
+      detail: { message, missing } satisfies ContentLossBlockedDetail
+    })
+  );
+}
+
 export interface SafeTransformResult {
   output: string;
   changed: boolean;

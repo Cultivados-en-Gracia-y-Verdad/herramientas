@@ -49,30 +49,40 @@ export function clearViewHandoff(): void {
 
 const EXPORT_BODY_TIMEOUT_MS = 8000;
 
-export function exportManualBodyFromEditor(): Promise<string> {
+export interface ManualBodyExport {
+  body: string;
+  blocked: boolean;
+  changed: boolean;
+}
+
+export function exportManualBodyFromEditor(): Promise<ManualBodyExport> {
   return new Promise(resolve => {
     let settled = false;
 
-    const finish = (body: string) => {
+    const finish = (result: ManualBodyExport) => {
       if (settled) return;
       settled = true;
       window.removeEventListener("cgv-manual-body-export", onResponse);
-      resolve(body);
+      resolve(result);
     };
 
     const onResponse = (event: Event) => {
-      finish(String((event as CustomEvent<{ body: string }>).detail.body ?? ""));
+      const detail = (event as CustomEvent<ManualBodyExport>).detail;
+      finish({
+        body: String(detail?.body ?? ""),
+        blocked: Boolean(detail?.blocked),
+        changed: Boolean(detail?.changed)
+      });
     };
 
     window.addEventListener("cgv-manual-body-export", onResponse, { once: true });
     window.dispatchEvent(new CustomEvent("cgv-manual-body-export-request"));
 
-    window.setTimeout(() => finish(""), EXPORT_BODY_TIMEOUT_MS);
+    window.setTimeout(
+      () => finish({ body: "", blocked: true, changed: false }),
+      EXPORT_BODY_TIMEOUT_MS
+    );
   });
-}
-
-export function flushManualEditorSync(): void {
-  window.dispatchEvent(new CustomEvent("cgv-manual-flush-sync"));
 }
 
 export function flushMarkdownEditorSync(): void {
@@ -105,44 +115,17 @@ export function cancelManualEditorSync(): void {
   window.dispatchEvent(new CustomEvent("cgv-manual-cancel-sync"));
 }
 
-/** Flush Manual editor and return stored body for «Corregir estilo». */
-export function requestManualBodyForStyleCorrect(): Promise<{
-  body: string;
-  storedBody: string;
-}> {
-  return new Promise(resolve => {
-    const onResponse = (event: Event) => {
-      window.removeEventListener("cgv-manual-style-correct-prep", onResponse);
-      const detail = (event as CustomEvent<{ body: string; storedBody: string }>).detail;
-      resolve({
-        body: detail.body ?? "",
-        storedBody: detail.storedBody ?? detail.body ?? ""
-      });
-    };
-    window.addEventListener("cgv-manual-style-correct-prep", onResponse, { once: true });
-    window.dispatchEvent(new CustomEvent("cgv-request-manual-style-correct-prep"));
-    window.setTimeout(
-      () => resolve({ body: "", storedBody: "" }),
-      EXPORT_BODY_TIMEOUT_MS
-    );
-  });
-}
+let viewChangeBlocked = false;
 
-/** Export current Manual body for Markdown view switch (single turndown, no React flush). */
-export function requestManualBodyHandoff(): Promise<string> {
-  return new Promise(resolve => {
-    const onResponse = (event: Event) => {
-      window.removeEventListener("cgv-manual-body-handoff", onResponse);
-      resolve((event as CustomEvent<{ body: string }>).detail.body);
-    };
-    window.addEventListener("cgv-manual-body-handoff", onResponse, { once: true });
-    window.dispatchEvent(new CustomEvent("cgv-request-manual-body-handoff"));
-  });
+export function blockPendingViewChange(): void {
+  viewChangeBlocked = true;
 }
 
 /** Save cursor on the active editor before React switches views. */
-export function dispatchBeforeViewChange(): void {
+export function dispatchBeforeViewChange(): boolean {
+  viewChangeBlocked = false;
   window.dispatchEvent(new CustomEvent("cgv-before-view-change"));
+  return !viewChangeBlocked;
 }
 
 const INSERT_QUIZ_TIMEOUT_MS = 2000;

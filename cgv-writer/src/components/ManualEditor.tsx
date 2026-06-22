@@ -37,18 +37,22 @@ import { CgvSearch, cgvSearchPluginKey } from "../lib/tiptap-search";
 import type { SearchRequest } from "../lib/search-bridge";
 import {
   isLikelyBibleReference,
+  checkBodyRoundTripLoss,
   markdownToEditorHtml,
   quizMarkerComment,
-  sanitizeCgvMarkdown,
-  tightenCgvDefaultSpacing
+  sanitizeCgvMarkdown
 } from "../lib/markdown-html";
-import { checkContentPreserved } from "../lib/content-preservation";
+import {
+  checkContentPreserved,
+  reportContentLossBlocked
+} from "../lib/content-preservation";
 import { editorDocToMarkdown } from "../lib/blocks/parse-prosemirror";
 import { replaceAllInText } from "../lib/text-search";
 import { findManualHeadingPos, type OutlineNavigateRequest } from "../lib/outline-bridge";
 import { insertQuizIntoEditorMarkdown } from "../lib/manual-quiz-insert";
 import { ManualToolbar, ManualStyleChip } from "./ManualToolbar";
 import {
+  blockPendingViewChange,
   clearManualEditorDirty,
   isManualEditorDirty,
   markManualEditorDirty,
@@ -198,6 +202,7 @@ function ManualEditorInner({
     result: ResolveBibleReferenceResult | null;
   } | null>(null);
   const [underlinePaintMode, setUnderlinePaintMode] = useState(false);
+  const [safetyWarning, setSafetyWarning] = useState<string | null>(null);
   const underlinePaintModeRef = useRef(false);
   const openBiblePopupRef = useRef<
     (request: { kind: "h3" | "inline"; reference: string; h3Pos?: number | null }) => void
@@ -219,6 +224,19 @@ function ManualEditorInner({
 
   const toggleUnderlinePaintMode = () => {
     setUnderlinePaintModeEnabled(!underlinePaintModeRef.current);
+  };
+
+  const warnRoundTripLoss = (sourceBody: string) => {
+    const loss = checkBodyRoundTripLoss(sourceBody);
+    if (loss.missingCount === 0) {
+      setSafetyWarning(null);
+      return;
+    }
+    const message =
+      `La vista Manual no representa ${loss.missingCount} línea(s) de este archivo. ` +
+      "Edite en Markdown hasta corregirlo — no guarde desde Manual.";
+    setSafetyWarning(message);
+    reportContentLossBlocked(message, loss.missing);
   };
 
   const cancelPendingSync = () => {
@@ -249,6 +267,21 @@ function ManualEditorInner({
     return afterTighten;
   };
 
+  const exportIfContentSafe = (ed: Editor, storedBody: string, tighten = false): string | null => {
+    const md = exportEditorMarkdown(ed, tighten);
+    const loss = checkContentPreserved(storedBody, md);
+    if (loss.missingCount === 0) {
+      setSafetyWarning(null);
+      return md;
+    }
+    const message =
+      `Sincronización bloqueada: se perderían ${loss.missingCount} línea(s). ` +
+      "Use vista Markdown.";
+    setSafetyWarning(message);
+    reportContentLossBlocked(message, loss.missing);
+    return null;
+  };
+
   const syncExportedMarkdown = (md: string) => {
     lastSyncedFromEditor.current = md;
     lastLoadedBody.current = md;
@@ -263,7 +296,9 @@ function ManualEditorInner({
     if (suppressUpdate.current) return;
     if (!isManualEditorDirty()) return;
 
-    const md = exportEditorMarkdown(ed, true);
+    const md = exportIfContentSafe(ed, bodyRef.current, false);
+    if (md === null) return;
+
     syncExportedMarkdown(md);
     clearManualEditorDirty();
     onBodyChangeRef.current(md);
@@ -613,52 +648,26 @@ function ManualEditorInner({
 
     const onFlush = () => flushPending();
     const onCancel = () => cancelPendingSync();
-    const exportBodyForRequest = (): string => {
+    const exportBodyForRequest = (): { body: string; blocked: boolean; changed: boolean } => {
       const ed = editorRef.current;
-      if (!ed) return bodyRef.current;
+      if (!ed) return { body: bodyRef.current, blocked: false, changed: false };
 
       cancelPendingSync();
-      if (!isManualEditorDirty()) return bodyRef.current;
+      if (!isManualEditorDirty()) {
+        return { body: bodyRef.current, blocked: false, changed: false };
+      }
 
-      const md = exportEditorMarkdown(ed, true);
+      const md = exportIfContentSafe(ed, bodyRef.current, false);
+      if (md === null) return { body: bodyRef.current, blocked: true, changed: false };
       syncExportedMarkdown(md);
       clearManualEditorDirty();
-      return md;
+      return { body: md, blocked: false, changed: true };
     };
 
     const onExport = () => {
       window.dispatchEvent(
         new CustomEvent("cgv-manual-body-export", {
-          detail: { body: exportBodyForRequest() }
-        })
-      );
-    };
-
-    const onHandoff = () => {
-      window.dispatchEvent(
-        new CustomEvent("cgv-manual-body-handoff", {
-          detail: { body: exportBodyForRequest() }
-        })
-      );
-    };
-
-    const onStyleCorrectPrep = () => {
-      const ed = editorRef.current;
-      if (!ed) {
-        window.dispatchEvent(
-          new CustomEvent("cgv-manual-style-correct-prep", {
-            detail: { body: bodyRef.current, storedBody: bodyRef.current }
-          })
-        );
-        return;
-      }
-
-      cancelPendingSync();
-      flushPending();
-      const md = editorDocToMarkdown(ed);
-      window.dispatchEvent(
-        new CustomEvent("cgv-manual-style-correct-prep", {
-          detail: { body: md, storedBody: bodyRef.current }
+          detail: exportBodyForRequest()
         })
       );
     };
@@ -677,15 +686,11 @@ function ManualEditorInner({
     window.addEventListener("cgv-manual-flush-sync", onFlush);
     window.addEventListener("cgv-manual-cancel-sync", onCancel);
     window.addEventListener("cgv-manual-body-export-request", onExport);
-    window.addEventListener("cgv-request-manual-body-handoff", onHandoff);
-    window.addEventListener("cgv-request-manual-style-correct-prep", onStyleCorrectPrep);
     window.addEventListener("cgv-insert-quiz", onInsertQuiz);
     return () => {
       window.removeEventListener("cgv-manual-flush-sync", onFlush);
       window.removeEventListener("cgv-manual-cancel-sync", onCancel);
       window.removeEventListener("cgv-manual-body-export-request", onExport);
-      window.removeEventListener("cgv-request-manual-body-handoff", onHandoff);
-      window.removeEventListener("cgv-request-manual-style-correct-prep", onStyleCorrectPrep);
       window.removeEventListener("cgv-insert-quiz", onInsertQuiz);
     };
   }, [editor]);
@@ -708,6 +713,7 @@ function ManualEditorInner({
     );
     tightenPassageLayoutInEditor(editor);
     bodyRef.current = body;
+    warnRoundTripLoss(body);
     requestAnimationFrame(() => {
       suppressUpdate.current = false;
     });
@@ -738,18 +744,15 @@ function ManualEditorInner({
 
     cancelPendingSync();
     suppressUpdate.current = true;
-    const layoutBody = tightenCgvDefaultSpacing(body);
-    lastLoadedBody.current = layoutBody;
-    lastSyncedFromEditor.current = layoutBody;
+    lastLoadedBody.current = body;
+    lastSyncedFromEditor.current = body;
     clearManualEditorDirty();
-    editor.commands.setContent(markdownToEditorHtml(sanitizeCgvMarkdown(layoutBody)), {
+    bodyRef.current = body;
+    editor.commands.setContent(markdownToEditorHtml(sanitizeCgvMarkdown(body)), {
       emitUpdate: false
     });
     tightenPassageLayoutInEditor(editor);
-    if (layoutBody !== body) {
-      bodyRef.current = layoutBody;
-      onBodyChangeRef.current(layoutBody);
-    }
+    warnRoundTripLoss(body);
     requestAnimationFrame(() => {
       suppressUpdate.current = false;
     });
@@ -766,7 +769,12 @@ function ManualEditorInner({
 
       let bodyMd = bodyRef.current;
       if (!previewOnlyRef.current && isManualEditorDirty()) {
-        bodyMd = exportEditorMarkdown(editor, true);
+        const exported = exportIfContentSafe(editor, bodyRef.current, false);
+        if (exported === null) {
+          blockPendingViewChange();
+          return;
+        }
+        bodyMd = exported;
         syncExportedMarkdown(bodyMd);
         clearManualEditorDirty();
       }
@@ -1008,6 +1016,12 @@ function ManualEditorInner({
           underlinePaintMode={underlinePaintMode}
           onToggleUnderlinePaintMode={toggleUnderlinePaintMode}
         />
+      )}
+
+      {safetyWarning && (
+        <div className="manual-safety-banner" role="alert">
+          {safetyWarning}
+        </div>
       )}
 
       {writingMode && (

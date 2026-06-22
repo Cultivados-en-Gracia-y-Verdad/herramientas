@@ -1,4 +1,16 @@
 /* CGV manual typography — docs/conventions.md */
+
+.manual-safety-banner {
+  margin: 0 0.75rem 0.5rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  background: #fef2f2;
+  color: #991b1b;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
 :root,
 [data-theme="light"] {
   --cgv-indent-h3: 0;

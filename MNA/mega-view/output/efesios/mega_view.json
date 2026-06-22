@@ -1,0 +1,3792 @@
+{
+  "book": "efesios",
+  "token_count": 2416,
+  "mood_distribution": {
+    "moods": {
+      "indicative": 121,
+      "participle": 107,
+      "imperative": 41,
+      "infinitive": 30,
+      "subjunctive": 28
+    },
+    "tenses": {
+      "present": 175,
+      "aorist": 121,
+      "perfect": 19,
+      "future": 8,
+      "imperfect": 4
+    },
+    "voices": {
+      "active": 217,
+      "passive": 58,
+      "middle": 52
+    }
+  },
+  "imperatives": [
+    {
+      "ref": "2:11",
+      "tok": 2,
+      "surface": "μνημονεύετε",
+      "lemma": "μνημονεύω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "recordar"
+    },
+    {
+      "ref": "4:25",
+      "tok": 5,
+      "surface": "λαλεῖτε",
+      "lemma": "λαλέω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "hablar"
+    },
+    {
+      "ref": "4:26",
+      "tok": 1,
+      "surface": "ὀργίζεσθε",
+      "lemma": "ὀργίζομαι",
+      "morph": "V-2PMD-P--",
+      "tense": "present",
+      "voice": "middle",
+      "person": "2nd",
+      "number": "plural",
+      "es": "enojarse"
+    },
+    {
+      "ref": "4:26",
+      "tok": 4,
+      "surface": "ἁμαρτάνετε·",
+      "lemma": "ἁμαρτάνω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "pecar"
+    },
+    {
+      "ref": "4:26",
+      "tok": 8,
+      "surface": "ἐπιδυέτω",
+      "lemma": "ἐπιδύω",
+      "morph": "V-3PAD-S--",
+      "tense": "present",
+      "voice": "active",
+      "person": "3rd",
+      "number": "singular",
+      "es": "ponerse"
+    },
+    {
+      "ref": "4:27",
+      "tok": 2,
+      "surface": "δίδοτε",
+      "lemma": "δίδωμι",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "dar"
+    },
+    {
+      "ref": "4:28",
+      "tok": 4,
+      "surface": "κλεπτέτω,",
+      "lemma": "κλέπτω",
+      "morph": "V-3PAD-S--",
+      "tense": "present",
+      "voice": "active",
+      "person": "3rd",
+      "number": "singular",
+      "es": "robar"
+    },
+    {
+      "ref": "4:28",
+      "tok": 7,
+      "surface": "κοπιάτω",
+      "lemma": "κοπιάω",
+      "morph": "V-3PAD-S--",
+      "tense": "present",
+      "voice": "active",
+      "person": "3rd",
+      "number": "singular",
+      "es": "trabajar"
+    },
+    {
+      "ref": "4:29",
+      "tok": 9,
+      "surface": "ἐκπορευέσθω,",
+      "lemma": "ἐκπορεύομαι",
+      "morph": "V-3PMD-S--",
+      "tense": "present",
+      "voice": "middle",
+      "person": "3rd",
+      "number": "singular",
+      "es": "salir"
+    },
+    {
+      "ref": "4:30",
+      "tok": 3,
+      "surface": "λυπεῖτε",
+      "lemma": "λυπέω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "entristecer"
+    },
+    {
+      "ref": "4:31",
+      "tok": 11,
+      "surface": "ἀρθήτω",
+      "lemma": "αἴρω",
+      "morph": "V-3APD-S--",
+      "tense": "aorist",
+      "voice": "passive",
+      "person": "3rd",
+      "number": "singular",
+      "es": "levantar"
+    },
+    {
+      "ref": "4:32",
+      "tok": 1,
+      "surface": "⸀γίνεσθε",
+      "lemma": "γίνομαι",
+      "morph": "V-2PMD-P--",
+      "tense": "present",
+      "voice": "middle",
+      "person": "2nd",
+      "number": "plural",
+      "es": "llegar·a·ser"
+    },
+    {
+      "ref": "5:1",
+      "tok": 1,
+      "surface": "γίνεσθε",
+      "lemma": "γίνομαι",
+      "morph": "V-2PMD-P--",
+      "tense": "present",
+      "voice": "middle",
+      "person": "2nd",
+      "number": "plural",
+      "es": "llegar·a·ser"
+    },
+    {
+      "ref": "5:2",
+      "tok": 2,
+      "surface": "περιπατεῖτε",
+      "lemma": "περιπατέω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "andar"
+    },
+    {
+      "ref": "5:3",
+      "tok": 9,
+      "surface": "ὀνομαζέσθω",
+      "lemma": "ὀνομάζω",
+      "morph": "V-3PPD-S--",
+      "tense": "present",
+      "voice": "passive",
+      "person": "3rd",
+      "number": "singular",
+      "es": "nombrar"
+    },
+    {
+      "ref": "5:5",
+      "tok": 3,
+      "surface": "⸀ἴστε",
+      "lemma": "οἶδα",
+      "morph": "V-2XAD-P--",
+      "tense": "perfect",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "saber"
+    },
+    {
+      "ref": "5:6",
+      "tok": 3,
+      "surface": "ἀπατάτω",
+      "lemma": "ἀπατάω",
+      "morph": "V-3PAD-S--",
+      "tense": "present",
+      "voice": "active",
+      "person": "3rd",
+      "number": "singular",
+      "es": "engañar"
+    },
+    {
+      "ref": "5:7",
+      "tok": 3,
+      "surface": "γίνεσθε",
+      "lemma": "γίνομαι",
+      "morph": "V-2PMD-P--",
+      "tense": "present",
+      "voice": "middle",
+      "person": "2nd",
+      "number": "plural",
+      "es": "llegar·a·ser"
+    },
+    {
+      "ref": "5:8",
+      "tok": 13,
+      "surface": "περιπατεῖτε,",
+      "lemma": "περιπατέω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "andar"
+    },
+    {
+      "ref": "5:11",
+      "tok": 3,
+      "surface": "συγκοινωνεῖτε",
+      "lemma": "συγκοινωνέω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "compartir"
+    },
+    {
+      "ref": "5:11",
+      "tok": 13,
+      "surface": "ἐλέγχετε,",
+      "lemma": "ἐλέγχω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "reprender"
+    },
+    {
+      "ref": "5:14",
+      "tok": 9,
+      "surface": "Ἔγειρε,",
+      "lemma": "ἐγείρω",
+      "morph": "V-2PAD-S--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "singular",
+      "es": "levantar"
+    },
+    {
+      "ref": "5:14",
+      "tok": 13,
+      "surface": "ἀνάστα",
+      "lemma": "ἀνίστημι",
+      "morph": "V-2AAD-S--",
+      "tense": "aorist",
+      "voice": "active",
+      "person": "2nd",
+      "number": "singular",
+      "es": "levantar"
+    },
+    {
+      "ref": "5:15",
+      "tok": 1,
+      "surface": "Βλέπετε",
+      "lemma": "βλέπω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "mirar"
+    },
+    {
+      "ref": "5:17",
+      "tok": 4,
+      "surface": "γίνεσθε",
+      "lemma": "γίνομαι",
+      "morph": "V-2PMD-P--",
+      "tense": "present",
+      "voice": "middle",
+      "person": "2nd",
+      "number": "plural",
+      "es": "llegar·a·ser"
+    },
+    {
+      "ref": "5:17",
+      "tok": 7,
+      "surface": "⸀συνίετε",
+      "lemma": "συνίημι",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "entender"
+    },
+    {
+      "ref": "5:18",
+      "tok": 3,
+      "surface": "μεθύσκεσθε",
+      "lemma": "μεθύσκομαι",
+      "morph": "V-2PPD-P--",
+      "tense": "present",
+      "voice": "passive",
+      "person": "2nd",
+      "number": "plural",
+      "es": "embriagarse"
+    },
+    {
+      "ref": "5:18",
+      "tok": 10,
+      "surface": "πληροῦσθε",
+      "lemma": "πληρόω",
+      "morph": "V-2PPD-P--",
+      "tense": "present",
+      "voice": "passive",
+      "person": "2nd",
+      "number": "plural",
+      "es": "cumplir"
+    },
+    {
+      "ref": "5:25",
+      "tok": 3,
+      "surface": "ἀγαπᾶτε",
+      "lemma": "ἀγαπάω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "amar"
+    },
+    {
+      "ref": "5:33",
+      "tok": 12,
+      "surface": "ἀγαπάτω",
+      "lemma": "ἀγαπάω",
+      "morph": "V-3PAD-S--",
+      "tense": "present",
+      "voice": "active",
+      "person": "3rd",
+      "number": "singular",
+      "es": "amar"
+    },
+    {
+      "ref": "6:1",
+      "tok": 3,
+      "surface": "ὑπακούετε",
+      "lemma": "ὑπακούω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "obedecer"
+    },
+    {
+      "ref": "6:2",
+      "tok": 1,
+      "surface": "τίμα",
+      "lemma": "τιμάω",
+      "morph": "V-2PAD-S--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "singular",
+      "es": "honrar"
+    },
+    {
+      "ref": "6:4",
+      "tok": 5,
+      "surface": "παροργίζετε",
+      "lemma": "παροργίζω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "provocar·a·ira"
+    },
+    {
+      "ref": "6:4",
+      "tok": 10,
+      "surface": "ἐκτρέφετε",
+      "lemma": "ἐκτρέφω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "criar"
+    },
+    {
+      "ref": "6:5",
+      "tok": 3,
+      "surface": "ὑπακούετε",
+      "lemma": "ὑπακούω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "obedecer"
+    },
+    {
+      "ref": "6:9",
+      "tok": 6,
+      "surface": "ποιεῖτε",
+      "lemma": "ποιέω",
+      "morph": "V-2PAD-P--",
+      "tense": "present",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "hacer"
+    },
+    {
+      "ref": "6:10",
+      "tok": 3,
+      "surface": "ἐνδυναμοῦσθε",
+      "lemma": "ἐνδυναμόω",
+      "morph": "V-2PPD-P--",
+      "tense": "present",
+      "voice": "passive",
+      "person": "2nd",
+      "number": "plural",
+      "es": "fortalecer"
+    },
+    {
+      "ref": "6:11",
+      "tok": 1,
+      "surface": "ἐνδύσασθε",
+      "lemma": "ἐνδύω",
+      "morph": "V-2AMD-P--",
+      "tense": "aorist",
+      "voice": "middle",
+      "person": "2nd",
+      "number": "plural",
+      "es": "vestir"
+    },
+    {
+      "ref": "6:13",
+      "tok": 3,
+      "surface": "ἀναλάβετε",
+      "lemma": "ἀναλαμβάνω",
+      "morph": "V-2AAD-P--",
+      "tense": "aorist",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "recibir"
+    },
+    {
+      "ref": "6:14",
+      "tok": 1,
+      "surface": "στῆτε",
+      "lemma": "ἵστημι",
+      "morph": "V-2AAD-P--",
+      "tense": "aorist",
+      "voice": "active",
+      "person": "2nd",
+      "number": "plural",
+      "es": "poner"
+    },
+    {
+      "ref": "6:17",
+      "tok": 6,
+      "surface": "⸀δέξασθε,",
+      "lemma": "δέχομαι",
+      "morph": "V-2AMD-P--",
+      "tense": "aorist",
+      "voice": "middle",
+      "person": "2nd",
+      "number": "plural",
+      "es": "recibir"
+    }
+  ],
+  "discourse_markers": [
+    {
+      "ref": "1:4",
+      "tok": 1,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "1:17",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "1:21",
+      "tok": 20,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "2:3",
+      "tok": 27,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "2:4",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "2:7",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "2:8",
+      "tok": 2,
+      "surface": "γὰρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "2:9",
+      "tok": 4,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "2:10",
+      "tok": 2,
+      "surface": "γάρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "2:10",
+      "tok": 16,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "2:11",
+      "tok": 1,
+      "surface": "Διὸ",
+      "lemma": "διό",
+      "category": "inference / therefore",
+      "es": "por·lo·cual"
+    },
+    {
+      "ref": "2:11",
+      "tok": 3,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "2:12",
+      "tok": 1,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "2:13",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "2:14",
+      "tok": 2,
+      "surface": "γάρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "2:15",
+      "tok": 8,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "2:18",
+      "tok": 1,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "2:19",
+      "tok": 1,
+      "surface": "ἄρα",
+      "lemma": "ἄρα",
+      "category": "inference / then",
+      "es": "por·tanto"
+    },
+    {
+      "ref": "2:19",
+      "tok": 2,
+      "surface": "οὖν",
+      "lemma": "οὖν",
+      "category": "inference / therefore",
+      "es": "por·tanto"
+    },
+    {
+      "ref": "2:19",
+      "tok": 8,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "3:2",
+      "tok": 1,
+      "surface": "εἴ",
+      "lemma": "εἰ",
+      "category": "condition",
+      "es": "si"
+    },
+    {
+      "ref": "3:3",
+      "tok": 7,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "3:5",
+      "tok": 10,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "3:10",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "3:13",
+      "tok": 1,
+      "surface": "διὸ",
+      "lemma": "διό",
+      "category": "inference / therefore",
+      "es": "por·lo·cual"
+    },
+    {
+      "ref": "3:16",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "3:18",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "3:19",
+      "tok": 10,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "3:20",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:1",
+      "tok": 2,
+      "surface": "οὖν",
+      "lemma": "οὖν",
+      "category": "inference / therefore",
+      "es": "por·tanto"
+    },
+    {
+      "ref": "4:4",
+      "tok": 6,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "4:7",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:8",
+      "tok": 1,
+      "surface": "διὸ",
+      "lemma": "διό",
+      "category": "inference / therefore",
+      "es": "por·lo·cual"
+    },
+    {
+      "ref": "4:9",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:9",
+      "tok": 6,
+      "surface": "εἰ",
+      "lemma": "εἰ",
+      "category": "condition",
+      "es": "si"
+    },
+    {
+      "ref": "4:9",
+      "tok": 8,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "4:10",
+      "tok": 12,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "4:11",
+      "tok": 5,
+      "surface": "μὲν",
+      "lemma": "μέν",
+      "category": "paired development",
+      "es": "a·la·verdad"
+    },
+    {
+      "ref": "4:11",
+      "tok": 8,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:11",
+      "tok": 11,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:11",
+      "tok": 14,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:14",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "4:15",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:17",
+      "tok": 2,
+      "surface": "οὖν",
+      "lemma": "οὖν",
+      "category": "inference / therefore",
+      "es": "por·tanto"
+    },
+    {
+      "ref": "4:17",
+      "tok": 11,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "4:20",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:21",
+      "tok": 1,
+      "surface": "εἴ",
+      "lemma": "εἰ",
+      "category": "condition",
+      "es": "si"
+    },
+    {
+      "ref": "4:21",
+      "tok": 9,
+      "surface": "καθώς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "4:23",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:25",
+      "tok": 1,
+      "surface": "Διὸ",
+      "lemma": "διό",
+      "category": "inference / therefore",
+      "es": "por·lo·cual"
+    },
+    {
+      "ref": "4:25",
+      "tok": 12,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "4:28",
+      "tok": 6,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "4:28",
+      "tok": 14,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "4:29",
+      "tok": 10,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "4:29",
+      "tok": 11,
+      "surface": "εἴ",
+      "lemma": "εἰ",
+      "category": "condition",
+      "es": "si"
+    },
+    {
+      "ref": "4:29",
+      "tok": 18,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "4:32",
+      "tok": 8,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "5:1",
+      "tok": 2,
+      "surface": "οὖν",
+      "lemma": "οὖν",
+      "category": "inference / therefore",
+      "es": "por·tanto"
+    },
+    {
+      "ref": "5:1",
+      "tok": 6,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:2",
+      "tok": 5,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "5:3",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "5:3",
+      "tok": 12,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "5:4",
+      "tok": 10,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "5:5",
+      "tok": 2,
+      "surface": "γὰρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "5:5",
+      "tok": 5,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "5:6",
+      "tok": 8,
+      "surface": "γὰρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "5:7",
+      "tok": 2,
+      "surface": "οὖν",
+      "lemma": "οὖν",
+      "category": "inference / therefore",
+      "es": "por·tanto"
+    },
+    {
+      "ref": "5:8",
+      "tok": 2,
+      "surface": "γάρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "5:8",
+      "tok": 6,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "5:8",
+      "tok": 10,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:9",
+      "tok": 2,
+      "surface": "γὰρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "5:11",
+      "tok": 11,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "5:12",
+      "tok": 2,
+      "surface": "γὰρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "5:13",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "5:14",
+      "tok": 2,
+      "surface": "γὰρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "5:14",
+      "tok": 7,
+      "surface": "διὸ",
+      "lemma": "διό",
+      "category": "inference / therefore",
+      "es": "por·lo·cual"
+    },
+    {
+      "ref": "5:15",
+      "tok": 2,
+      "surface": "οὖν",
+      "lemma": "οὖν",
+      "category": "inference / therefore",
+      "es": "por·tanto"
+    },
+    {
+      "ref": "5:15",
+      "tok": 7,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:15",
+      "tok": 9,
+      "surface": "ἀλλ’",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "5:15",
+      "tok": 10,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:16",
+      "tok": 4,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "5:17",
+      "tok": 6,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "5:18",
+      "tok": 9,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "5:22",
+      "tok": 6,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:23",
+      "tok": 1,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "5:23",
+      "tok": 7,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:24",
+      "tok": 1,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "5:24",
+      "tok": 2,
+      "surface": "⸀ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:25",
+      "tok": 6,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "5:26",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "5:27",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "5:27",
+      "tok": 17,
+      "surface": "ἀλλ’",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "5:27",
+      "tok": 18,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "5:28",
+      "tok": 10,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:29",
+      "tok": 2,
+      "surface": "γάρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "5:29",
+      "tok": 8,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "5:29",
+      "tok": 13,
+      "surface": "καθὼς",
+      "lemma": "καθώς",
+      "category": "comparison / just as",
+      "es": "así·como"
+    },
+    {
+      "ref": "5:30",
+      "tok": 1,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "5:32",
+      "tok": 7,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "5:33",
+      "tok": 1,
+      "surface": "πλὴν",
+      "lemma": "πλήν",
+      "category": "contrast / nevertheless",
+      "es": "excepto"
+    },
+    {
+      "ref": "5:33",
+      "tok": 13,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "5:33",
+      "tok": 16,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "5:33",
+      "tok": 18,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "6:1",
+      "tok": 10,
+      "surface": "γάρ",
+      "lemma": "γάρ",
+      "category": "reason / explanation",
+      "es": "porque"
+    },
+    {
+      "ref": "6:3",
+      "tok": 1,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "6:4",
+      "tok": 9,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "6:5",
+      "tok": 17,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "6:6",
+      "tok": 4,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "6:6",
+      "tok": 6,
+      "surface": "ἀλλ’",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "6:6",
+      "tok": 7,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "6:7",
+      "tok": 4,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "6:8",
+      "tok": 2,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "6:9",
+      "tok": 13,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "6:12",
+      "tok": 1,
+      "surface": "ὅτι",
+      "lemma": "ὅτι",
+      "category": "content / because / that",
+      "es": "que"
+    },
+    {
+      "ref": "6:12",
+      "tok": 11,
+      "surface": "ἀλλὰ",
+      "lemma": "ἀλλά",
+      "category": "contrast",
+      "es": "pero"
+    },
+    {
+      "ref": "6:13",
+      "tok": 8,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "6:14",
+      "tok": 2,
+      "surface": "οὖν",
+      "lemma": "οὖν",
+      "category": "inference / therefore",
+      "es": "por·tanto"
+    },
+    {
+      "ref": "6:19",
+      "tok": 4,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "6:20",
+      "tok": 6,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "6:20",
+      "tok": 10,
+      "surface": "ὡς",
+      "lemma": "ὡς",
+      "category": "comparison / as",
+      "es": "como"
+    },
+    {
+      "ref": "6:21",
+      "tok": 1,
+      "surface": "Ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    },
+    {
+      "ref": "6:21",
+      "tok": 2,
+      "surface": "δὲ",
+      "lemma": "δέ",
+      "category": "development / mild contrast",
+      "es": "y"
+    },
+    {
+      "ref": "6:22",
+      "tok": 8,
+      "surface": "ἵνα",
+      "lemma": "ἵνα",
+      "category": "purpose / result",
+      "es": "para·que"
+    }
+  ],
+  "repeated_lemmas": [
+    {
+      "lemma": "πᾶς",
+      "count": 52,
+      "refs": [
+        "1:3",
+        "1:8",
+        "1:10",
+        "1:11",
+        "1:15",
+        "1:21",
+        "1:22",
+        "1:23",
+        "2:3",
+        "2:21",
+        "3:8",
+        "3:9",
+        "3:15",
+        "3:18",
+        "3:19",
+        "3:20",
+        "3:21",
+        "4:2",
+        "4:6",
+        "4:10",
+        "4:13",
+        "4:14",
+        "4:15",
+        "4:16",
+        "4:19"
+      ]
+    },
+    {
+      "lemma": "Χριστός",
+      "count": 46,
+      "refs": [
+        "1:1",
+        "1:2",
+        "1:3",
+        "1:5",
+        "1:10",
+        "1:12",
+        "1:17",
+        "1:20",
+        "2:5",
+        "2:6",
+        "2:7",
+        "2:10",
+        "2:12",
+        "2:13",
+        "2:20",
+        "3:1",
+        "3:4",
+        "3:6",
+        "3:8",
+        "3:11",
+        "3:17",
+        "3:19",
+        "3:21",
+        "4:7",
+        "4:12"
+      ]
+    },
+    {
+      "lemma": "θεός",
+      "count": 31,
+      "refs": [
+        "1:1",
+        "1:2",
+        "1:3",
+        "1:17",
+        "2:4",
+        "2:8",
+        "2:10",
+        "2:16",
+        "2:19",
+        "2:22",
+        "3:2",
+        "3:7",
+        "3:9",
+        "3:10",
+        "3:19",
+        "4:6",
+        "4:13",
+        "4:18",
+        "4:24",
+        "4:30",
+        "4:32",
+        "5:1",
+        "5:2",
+        "5:5",
+        "5:6"
+      ]
+    },
+    {
+      "lemma": "κύριος",
+      "count": 26,
+      "refs": [
+        "1:2",
+        "1:3",
+        "1:15",
+        "1:17",
+        "2:21",
+        "3:11",
+        "4:1",
+        "4:5",
+        "4:17",
+        "5:8",
+        "5:10",
+        "5:17",
+        "5:19",
+        "5:20",
+        "5:22",
+        "6:1",
+        "6:4",
+        "6:5",
+        "6:7",
+        "6:8",
+        "6:9",
+        "6:10",
+        "6:21",
+        "6:23",
+        "6:24"
+      ]
+    },
+    {
+      "lemma": "κατά",
+      "count": 24,
+      "refs": [
+        "1:5",
+        "1:7",
+        "1:9",
+        "1:11",
+        "1:15",
+        "1:19",
+        "2:2",
+        "3:3",
+        "3:7",
+        "3:11",
+        "3:16",
+        "3:20",
+        "4:7",
+        "4:16",
+        "4:22",
+        "4:24",
+        "5:33",
+        "6:5",
+        "6:6",
+        "6:21"
+      ]
+    },
+    {
+      "lemma": "ἵνα",
+      "count": 23,
+      "refs": [
+        "1:17",
+        "2:7",
+        "2:9",
+        "2:10",
+        "2:15",
+        "3:10",
+        "3:16",
+        "3:18",
+        "3:19",
+        "4:10",
+        "4:14",
+        "4:28",
+        "4:29",
+        "5:26",
+        "5:27",
+        "5:33",
+        "6:3",
+        "6:13",
+        "6:19",
+        "6:20",
+        "6:21",
+        "6:22"
+      ]
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "count": 20,
+      "refs": [
+        "1:1",
+        "1:2",
+        "1:3",
+        "1:5",
+        "1:15",
+        "1:17",
+        "2:6",
+        "2:7",
+        "2:10",
+        "2:13",
+        "2:20",
+        "3:1",
+        "3:6",
+        "3:11",
+        "3:21",
+        "4:21",
+        "5:20",
+        "6:23",
+        "6:24"
+      ]
+    },
+    {
+      "lemma": "ὡς",
+      "count": 16,
+      "refs": [
+        "2:3",
+        "3:5",
+        "5:1",
+        "5:8",
+        "5:15",
+        "5:22",
+        "5:23",
+        "5:24",
+        "5:28",
+        "5:33",
+        "6:5",
+        "6:6",
+        "6:7",
+        "6:20"
+      ]
+    },
+    {
+      "lemma": "ἅγιος",
+      "count": 15,
+      "refs": [
+        "1:1",
+        "1:4",
+        "1:13",
+        "1:15",
+        "1:18",
+        "2:19",
+        "2:21",
+        "3:5",
+        "3:8",
+        "3:18",
+        "4:12",
+        "4:30",
+        "5:3",
+        "5:27",
+        "6:18"
+      ]
+    },
+    {
+      "lemma": "εἷς",
+      "count": 15,
+      "refs": [
+        "2:14",
+        "2:15",
+        "2:16",
+        "2:18",
+        "4:4",
+        "4:5",
+        "4:6",
+        "4:7",
+        "4:16",
+        "5:31",
+        "5:33"
+      ]
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "count": 15,
+      "refs": [
+        "2:15",
+        "4:16",
+        "4:19",
+        "4:32",
+        "5:2",
+        "5:19",
+        "5:25",
+        "5:27",
+        "5:28",
+        "5:29",
+        "5:33"
+      ]
+    },
+    {
+      "lemma": "πνεῦμα",
+      "count": 14,
+      "refs": [
+        "1:13",
+        "1:17",
+        "2:2",
+        "2:18",
+        "2:22",
+        "3:5",
+        "3:16",
+        "4:3",
+        "4:4",
+        "4:23",
+        "4:30",
+        "5:18",
+        "6:17",
+        "6:18"
+      ]
+    },
+    {
+      "lemma": "ἀλλά",
+      "count": 13,
+      "refs": [
+        "1:21",
+        "2:19",
+        "4:29",
+        "5:4",
+        "5:15",
+        "5:17",
+        "5:18",
+        "5:24",
+        "5:27",
+        "5:29",
+        "6:4",
+        "6:6",
+        "6:12"
+      ]
+    },
+    {
+      "lemma": "χάρις",
+      "count": 12,
+      "refs": [
+        "1:2",
+        "1:6",
+        "1:7",
+        "2:5",
+        "2:7",
+        "2:8",
+        "3:2",
+        "3:7",
+        "3:8",
+        "4:7",
+        "4:29",
+        "6:24"
+      ]
+    },
+    {
+      "lemma": "δίδωμι",
+      "count": 12,
+      "refs": [
+        "1:17",
+        "1:22",
+        "3:2",
+        "3:7",
+        "3:8",
+        "3:16",
+        "4:7",
+        "4:8",
+        "4:11",
+        "4:27",
+        "4:29",
+        "6:19"
+      ]
+    },
+    {
+      "lemma": "ὅτι",
+      "count": 12,
+      "refs": [
+        "2:11",
+        "2:12",
+        "2:18",
+        "4:9",
+        "4:25",
+        "5:5",
+        "5:16",
+        "5:23",
+        "5:30",
+        "6:8",
+        "6:9",
+        "6:12"
+      ]
+    },
+    {
+      "lemma": "πατήρ",
+      "count": 11,
+      "refs": [
+        "1:2",
+        "1:3",
+        "1:17",
+        "2:18",
+        "3:14",
+        "4:6",
+        "5:20",
+        "5:31",
+        "6:2",
+        "6:4",
+        "6:23"
+      ]
+    },
+    {
+      "lemma": "ἐπί",
+      "count": 11,
+      "refs": [
+        "1:10",
+        "1:16",
+        "2:7",
+        "2:10",
+        "2:20",
+        "3:15",
+        "4:6",
+        "4:26",
+        "5:6",
+        "6:3"
+      ]
+    },
+    {
+      "lemma": "καθώς",
+      "count": 10,
+      "refs": [
+        "1:4",
+        "3:3",
+        "4:4",
+        "4:17",
+        "4:21",
+        "4:32",
+        "5:2",
+        "5:3",
+        "5:25",
+        "5:29"
+      ]
+    },
+    {
+      "lemma": "ἀγάπη",
+      "count": 10,
+      "refs": [
+        "1:4",
+        "1:15",
+        "2:4",
+        "3:17",
+        "3:19",
+        "4:2",
+        "4:15",
+        "4:16",
+        "5:2",
+        "6:23"
+      ]
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "count": 10,
+      "refs": [
+        "1:6",
+        "2:4",
+        "5:2",
+        "5:25",
+        "5:28",
+        "5:33",
+        "6:24"
+      ]
+    },
+    {
+      "lemma": "ὑπέρ",
+      "count": 10,
+      "refs": [
+        "1:16",
+        "1:22",
+        "3:1",
+        "3:13",
+        "3:20",
+        "5:2",
+        "5:20",
+        "5:25",
+        "6:19",
+        "6:20"
+      ]
+    },
+    {
+      "lemma": "ποιέω",
+      "count": 10,
+      "refs": [
+        "1:16",
+        "2:3",
+        "2:14",
+        "2:15",
+        "3:11",
+        "3:20",
+        "4:16",
+        "6:6",
+        "6:8",
+        "6:9"
+      ]
+    },
+    {
+      "lemma": "τίς",
+      "count": 9,
+      "refs": [
+        "1:18",
+        "1:19",
+        "3:9",
+        "3:18",
+        "4:9",
+        "5:10",
+        "5:17",
+        "6:21"
+      ]
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "count": 9,
+      "refs": [
+        "1:22",
+        "3:10",
+        "3:21",
+        "5:23",
+        "5:24",
+        "5:25",
+        "5:27",
+        "5:29",
+        "5:32"
+      ]
+    },
+    {
+      "lemma": "σῶμα",
+      "count": 9,
+      "refs": [
+        "1:23",
+        "2:16",
+        "4:4",
+        "4:12",
+        "4:16",
+        "5:23",
+        "5:28",
+        "5:30"
+      ]
+    },
+    {
+      "lemma": "σάρξ",
+      "count": 9,
+      "refs": [
+        "2:3",
+        "2:11",
+        "2:14",
+        "5:29",
+        "5:31",
+        "6:5",
+        "6:12"
+      ]
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "count": 9,
+      "refs": [
+        "2:15",
+        "3:5",
+        "3:16",
+        "4:8",
+        "4:14",
+        "4:22",
+        "4:24",
+        "5:31",
+        "6:7"
+      ]
+    },
+    {
+      "lemma": "γυνή",
+      "count": 9,
+      "refs": [
+        "5:22",
+        "5:23",
+        "5:24",
+        "5:25",
+        "5:28",
+        "5:31",
+        "5:33"
+      ]
+    },
+    {
+      "lemma": "εἰρήνη",
+      "count": 8,
+      "refs": [
+        "1:2",
+        "2:14",
+        "2:15",
+        "2:17",
+        "4:3",
+        "6:15",
+        "6:23"
+      ]
+    },
+    {
+      "lemma": "δόξα",
+      "count": 8,
+      "refs": [
+        "1:6",
+        "1:12",
+        "1:14",
+        "1:17",
+        "1:18",
+        "3:13",
+        "3:16",
+        "3:21"
+      ]
+    },
+    {
+      "lemma": "ἔχω",
+      "count": 8,
+      "refs": [
+        "1:7",
+        "2:12",
+        "2:18",
+        "3:12",
+        "4:28",
+        "5:5",
+        "5:27"
+      ]
+    },
+    {
+      "lemma": "πίστις",
+      "count": 8,
+      "refs": [
+        "1:15",
+        "2:8",
+        "3:12",
+        "3:17",
+        "4:5",
+        "4:13",
+        "6:16",
+        "6:23"
+      ]
+    },
+    {
+      "lemma": "ἐκ",
+      "count": 8,
+      "refs": [
+        "1:20",
+        "2:8",
+        "2:9",
+        "3:15",
+        "4:16",
+        "4:29",
+        "5:14",
+        "6:6"
+      ]
+    },
+    {
+      "lemma": "περιπατέω",
+      "count": 8,
+      "refs": [
+        "2:2",
+        "2:10",
+        "4:1",
+        "4:17",
+        "5:2",
+        "5:8",
+        "5:15"
+      ]
+    },
+    {
+      "lemma": "γίνομαι",
+      "count": 8,
+      "refs": [
+        "2:13",
+        "3:7",
+        "4:32",
+        "5:1",
+        "5:7",
+        "5:12",
+        "5:17",
+        "6:3"
+      ]
+    },
+    {
+      "lemma": "θέλημα",
+      "count": 7,
+      "refs": [
+        "1:1",
+        "1:5",
+        "1:9",
+        "1:11",
+        "2:3",
+        "5:17",
+        "6:6"
+      ]
+    },
+    {
+      "lemma": "αἰών",
+      "count": 7,
+      "refs": [
+        "1:21",
+        "2:2",
+        "2:7",
+        "3:9",
+        "3:11",
+        "3:21"
+      ]
+    },
+    {
+      "lemma": "λέγω",
+      "count": 7,
+      "refs": [
+        "2:11",
+        "4:8",
+        "4:17",
+        "5:12",
+        "5:14",
+        "5:32"
+      ]
+    },
+    {
+      "lemma": "οὖν",
+      "count": 7,
+      "refs": [
+        "2:19",
+        "4:1",
+        "4:17",
+        "5:1",
+        "5:7",
+        "5:15",
+        "6:14"
+      ]
+    },
+    {
+      "lemma": "ἤ",
+      "count": 7,
+      "refs": [
+        "3:20",
+        "5:3",
+        "5:4",
+        "5:5",
+        "5:27"
+      ]
+    },
+    {
+      "lemma": "μετά",
+      "count": 7,
+      "refs": [
+        "4:2",
+        "4:25",
+        "6:5",
+        "6:7",
+        "6:23",
+        "6:24"
+      ]
+    },
+    {
+      "lemma": "ἀνήρ",
+      "count": 7,
+      "refs": [
+        "4:13",
+        "5:22",
+        "5:23",
+        "5:24",
+        "5:25",
+        "5:28",
+        "5:33"
+      ]
+    },
+    {
+      "lemma": "γνωρίζω",
+      "count": 6,
+      "refs": [
+        "1:9",
+        "3:3",
+        "3:5",
+        "3:10",
+        "6:19",
+        "6:21"
+      ]
+    },
+    {
+      "lemma": "μυστήριον",
+      "count": 6,
+      "refs": [
+        "1:9",
+        "3:3",
+        "3:4",
+        "3:9",
+        "5:32",
+        "6:19"
+      ]
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "count": 6,
+      "refs": [
+        "1:13",
+        "4:21",
+        "4:24",
+        "4:25",
+        "5:9",
+        "6:14"
+      ]
+    },
+    {
+      "lemma": "καρδία",
+      "count": 6,
+      "refs": [
+        "1:18",
+        "3:17",
+        "4:18",
+        "5:19",
+        "6:5",
+        "6:22"
+      ]
+    },
+    {
+      "lemma": "ποτέ",
+      "count": 6,
+      "refs": [
+        "2:2",
+        "2:3",
+        "2:11",
+        "2:13",
+        "5:8",
+        "5:29"
+      ]
+    },
+    {
+      "lemma": "ἐπουράνιος",
+      "count": 5,
+      "refs": [
+        "1:3",
+        "1:20",
+        "2:6",
+        "3:10",
+        "6:12"
+      ]
+    },
+    {
+      "lemma": "πλοῦτος",
+      "count": 5,
+      "refs": [
+        "1:7",
+        "1:18",
+        "2:7",
+        "3:8",
+        "3:16"
+      ]
+    },
+    {
+      "lemma": "ἀκούω",
+      "count": 5,
+      "refs": [
+        "1:13",
+        "1:15",
+        "3:2",
+        "4:21",
+        "4:29"
+      ]
+    },
+    {
+      "lemma": "οἶδα",
+      "count": 5,
+      "refs": [
+        "1:18",
+        "5:5",
+        "6:8",
+        "6:9",
+        "6:21"
+      ]
+    },
+    {
+      "lemma": "δύναμις",
+      "count": 5,
+      "refs": [
+        "1:19",
+        "1:21",
+        "3:7",
+        "3:16",
+        "3:20"
+      ]
+    },
+    {
+      "lemma": "τέκνον",
+      "count": 5,
+      "refs": [
+        "2:3",
+        "5:1",
+        "5:8",
+        "6:1",
+        "6:4"
+      ]
+    },
+    {
+      "lemma": "διό",
+      "count": 5,
+      "refs": [
+        "2:11",
+        "3:13",
+        "4:8",
+        "4:25",
+        "5:14"
+      ]
+    },
+    {
+      "lemma": "ἔθνος",
+      "count": 5,
+      "refs": [
+        "2:11",
+        "3:1",
+        "3:6",
+        "3:8",
+        "4:17"
+      ]
+    },
+    {
+      "lemma": "δύναμαι",
+      "count": 5,
+      "refs": [
+        "3:4",
+        "3:20",
+        "6:11",
+        "6:13",
+        "6:16"
+      ]
+    },
+    {
+      "lemma": "ἕκαστος",
+      "count": 5,
+      "refs": [
+        "4:7",
+        "4:16",
+        "4:25",
+        "5:33",
+        "6:8"
+      ]
+    },
+    {
+      "lemma": "φῶς",
+      "count": 5,
+      "refs": [
+        "5:8",
+        "5:9",
+        "5:13",
+        "5:14"
+      ]
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "count": 4,
+      "refs": [
+        "1:1",
+        "2:20",
+        "3:5",
+        "4:11"
+      ]
+    },
+    {
+      "lemma": "πλήρωμα",
+      "count": 4,
+      "refs": [
+        "1:10",
+        "1:23",
+        "3:19",
+        "4:13"
+      ]
+    },
+    {
+      "lemma": "καιρός",
+      "count": 4,
+      "refs": [
+        "1:10",
+        "2:12",
+        "5:16",
+        "6:18"
+      ]
+    },
+    {
+      "lemma": "οὐρανός",
+      "count": 4,
+      "refs": [
+        "1:10",
+        "3:15",
+        "4:10",
+        "6:9"
+      ]
+    },
+    {
+      "lemma": "γῆ",
+      "count": 4,
+      "refs": [
+        "1:10",
+        "3:15",
+        "4:9",
+        "6:3"
+      ]
+    },
+    {
+      "lemma": "ἐνεργέω",
+      "count": 4,
+      "refs": [
+        "1:11",
+        "1:20",
+        "2:2",
+        "3:20"
+      ]
+    },
+    {
+      "lemma": "λόγος",
+      "count": 4,
+      "refs": [
+        "1:13",
+        "4:29",
+        "5:6",
+        "6:19"
+      ]
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "count": 4,
+      "refs": [
+        "1:13",
+        "3:6",
+        "6:15",
+        "6:19"
+      ]
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "count": 4,
+      "refs": [
+        "1:13",
+        "2:12",
+        "3:6",
+        "6:2"
+      ]
+    },
+    {
+      "lemma": "νεκρός",
+      "count": 4,
+      "refs": [
+        "1:20",
+        "2:1",
+        "2:5",
+        "5:14"
+      ]
+    },
+    {
+      "lemma": "ἐξουσία",
+      "count": 4,
+      "refs": [
+        "1:21",
+        "2:2",
+        "3:10",
+        "6:12"
+      ]
+    },
+    {
+      "lemma": "ὑπό",
+      "count": 4,
+      "refs": [
+        "1:22",
+        "2:11",
+        "5:12",
+        "5:13"
+      ]
+    },
+    {
+      "lemma": "κεφαλή",
+      "count": 4,
+      "refs": [
+        "1:22",
+        "4:15",
+        "5:23"
+      ]
+    },
+    {
+      "lemma": "ὅστις",
+      "count": 4,
+      "refs": [
+        "1:23",
+        "3:13",
+        "4:19",
+        "6:2"
+      ]
+    },
+    {
+      "lemma": "πληρόω",
+      "count": 4,
+      "refs": [
+        "1:23",
+        "3:19",
+        "4:10",
+        "5:18"
+      ]
+    },
+    {
+      "lemma": "νῦν",
+      "count": 4,
+      "refs": [
+        "2:2",
+        "3:5",
+        "3:10",
+        "5:8"
+      ]
+    },
+    {
+      "lemma": "υἱός",
+      "count": 4,
+      "refs": [
+        "2:2",
+        "3:5",
+        "4:13",
+        "5:6"
+      ]
+    },
+    {
+      "lemma": "ἔργον",
+      "count": 4,
+      "refs": [
+        "2:9",
+        "2:10",
+        "4:12",
+        "5:11"
+      ]
+    },
+    {
+      "lemma": "κτίζω",
+      "count": 4,
+      "refs": [
+        "2:10",
+        "2:15",
+        "3:9",
+        "4:24"
+      ]
+    },
+    {
+      "lemma": "ἀγαθός",
+      "count": 4,
+      "refs": [
+        "2:10",
+        "4:28",
+        "4:29",
+        "6:8"
+      ]
+    },
+    {
+      "lemma": "οἰκοδομή",
+      "count": 4,
+      "refs": [
+        "2:21",
+        "4:12",
+        "4:16",
+        "4:29"
+      ]
+    },
+    {
+      "lemma": "εἰ",
+      "count": 4,
+      "refs": [
+        "3:2",
+        "4:9",
+        "4:21",
+        "4:29"
+      ]
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "count": 4,
+      "refs": [
+        "4:2",
+        "4:25",
+        "4:32",
+        "5:21"
+      ]
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "count": 4,
+      "refs": [
+        "4:20",
+        "5:24",
+        "5:28",
+        "5:33"
+      ]
+    },
+    {
+      "lemma": "πνευματικός",
+      "count": 3,
+      "refs": [
+        "1:3",
+        "5:19",
+        "6:12"
+      ]
+    },
+    {
+      "lemma": "κόσμος",
+      "count": 3,
+      "refs": [
+        "1:4",
+        "2:2",
+        "2:12"
+      ]
+    },
+    {
+      "lemma": "ἔπαινος",
+      "count": 3,
+      "refs": [
+        "1:6",
+        "1:12",
+        "1:14"
+      ]
+    },
+    {
+      "lemma": "ἀπολύτρωσις",
+      "count": 3,
+      "refs": [
+        "1:7",
+        "1:14",
+        "4:30"
+      ]
+    },
+    {
+      "lemma": "αἷμα",
+      "count": 3,
+      "refs": [
+        "1:7",
+        "2:13",
+        "6:12"
+      ]
+    },
+    {
+      "lemma": "παράπτωμα",
+      "count": 3,
+      "refs": [
+        "1:7",
+        "2:1",
+        "2:5"
+      ]
+    },
+    {
+      "lemma": "σοφία",
+      "count": 3,
+      "refs": [
+        "1:8",
+        "1:17",
+        "3:10"
+      ]
+    },
+    {
+      "lemma": "οἰκονομία",
+      "count": 3,
+      "refs": [
+        "1:10",
+        "3:2",
+        "3:9"
+      ]
+    },
+    {
+      "lemma": "κληρονομία",
+      "count": 3,
+      "refs": [
+        "1:14",
+        "1:18",
+        "5:5"
+      ]
+    },
+    {
+      "lemma": "ἐλπίς",
+      "count": 3,
+      "refs": [
+        "1:18",
+        "2:12",
+        "4:4"
+      ]
+    },
+    {
+      "lemma": "κλῆσις",
+      "count": 3,
+      "refs": [
+        "1:18",
+        "4:1",
+        "4:4"
+      ]
+    },
+    {
+      "lemma": "ὑπερβάλλω",
+      "count": 3,
+      "refs": [
+        "1:19",
+        "2:7",
+        "3:19"
+      ]
+    },
+    {
+      "lemma": "ἐνέργεια",
+      "count": 3,
+      "refs": [
+        "1:19",
+        "3:7",
+        "4:16"
+      ]
+    },
+    {
+      "lemma": "ἀρχή",
+      "count": 3,
+      "refs": [
+        "1:21",
+        "3:10",
+        "6:12"
+      ]
+    },
+    {
+      "lemma": "ὀνομάζω",
+      "count": 3,
+      "refs": [
+        "1:21",
+        "3:15",
+        "5:3"
+      ]
+    },
+    {
+      "lemma": "ὑποτάσσω",
+      "count": 3,
+      "refs": [
+        "1:22",
+        "5:21",
+        "5:24"
+      ]
+    },
+    {
+      "lemma": "ὀργή",
+      "count": 3,
+      "refs": [
+        "2:3",
+        "4:31",
+        "5:6"
+      ]
+    }
+  ],
+  "contrast_markers": [
+    {
+      "type": "pair",
+      "pair": [
+        "οὐ",
+        "ἀλλά"
+      ],
+      "from_ref": "1:21",
+      "from_surface": "οὐ",
+      "to_ref": "1:21",
+      "to_surface": "ἀλλὰ",
+      "distance_tokens": 6
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "οὐ",
+        "ἀλλά"
+      ],
+      "from_ref": "5:4",
+      "from_surface": "οὐκ",
+      "to_ref": "5:4",
+      "to_surface": "ἀλλὰ",
+      "distance_tokens": 2
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "οὐ",
+        "ἀλλά"
+      ],
+      "from_ref": "6:12",
+      "from_surface": "οὐκ",
+      "to_ref": "6:12",
+      "to_surface": "ἀλλὰ",
+      "distance_tokens": 9
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "μή",
+        "ἀλλά"
+      ],
+      "from_ref": "4:29",
+      "from_surface": "μὴ",
+      "to_ref": "4:29",
+      "to_surface": "ἀλλὰ",
+      "distance_tokens": 2
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "μή",
+        "ἀλλά"
+      ],
+      "from_ref": "5:15",
+      "from_surface": "μὴ",
+      "to_ref": "5:15",
+      "to_surface": "ἀλλ’",
+      "distance_tokens": 3
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "μή",
+        "ἀλλά"
+      ],
+      "from_ref": "5:17",
+      "from_surface": "μὴ",
+      "to_ref": "5:17",
+      "to_surface": "ἀλλὰ",
+      "distance_tokens": 3
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "μή",
+        "ἀλλά"
+      ],
+      "from_ref": "5:18",
+      "from_surface": "μὴ",
+      "to_ref": "5:18",
+      "to_surface": "ἀλλὰ",
+      "distance_tokens": 7
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "μή",
+        "ἀλλά"
+      ],
+      "from_ref": "5:27",
+      "from_surface": "μὴ",
+      "to_ref": "5:27",
+      "to_surface": "ἀλλ’",
+      "distance_tokens": 9
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "μή",
+        "ἀλλά"
+      ],
+      "from_ref": "6:4",
+      "from_surface": "μὴ",
+      "to_ref": "6:4",
+      "to_surface": "ἀλλὰ",
+      "distance_tokens": 5
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "μή",
+        "ἀλλά"
+      ],
+      "from_ref": "6:6",
+      "from_surface": "μὴ",
+      "to_ref": "6:6",
+      "to_surface": "ἀλλ’",
+      "distance_tokens": 5
+    },
+    {
+      "type": "pair",
+      "pair": [
+        "σκότος",
+        "φῶς"
+      ],
+      "from_ref": "5:8",
+      "from_surface": "σκότος,",
+      "to_ref": "5:8",
+      "to_surface": "φῶς",
+      "distance_tokens": 3
+    }
+  ],
+  "boundary_signals": [
+    {
+      "ref": "1:18",
+      "signals": [
+        {
+          "signal": "question signal",
+          "value": [
+            "τίς",
+            "⸀τίς"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "1:19",
+      "signals": [
+        {
+          "signal": "question signal",
+          "value": [
+            "τί"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "2:11",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "διό"
+          ]
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "μνημονεύω"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 3
+    },
+    {
+      "ref": "2:12",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "2:19",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "ἄρα",
+            "οὖν"
+          ]
+        },
+        {
+          "signal": "marker density",
+          "value": 3
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "3:9",
+      "signals": [
+        {
+          "signal": "question signal",
+          "value": [
+            "τίς"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "3:13",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "διό"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "3:18",
+      "signals": [
+        {
+          "signal": "question signal",
+          "value": [
+            "τί"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:1",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "οὖν"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:8",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "διό"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:9",
+      "signals": [
+        {
+          "signal": "marker density",
+          "value": 3
+        },
+        {
+          "signal": "question signal",
+          "value": [
+            "τί",
+            "γῆς;"
+          ]
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "4:11",
+      "signals": [
+        {
+          "signal": "marker density",
+          "value": 4
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:17",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "οὖν"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:25",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "διό"
+          ]
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "λαλέω"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 3
+    },
+    {
+      "ref": "4:26",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ὀργίζομαι",
+            "ἁμαρτάνω",
+            "ἐπιδύω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:27",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "δίδωμι"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:28",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "κλέπτω",
+            "κοπιάω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:29",
+      "signals": [
+        {
+          "signal": "marker density",
+          "value": 3
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἐκπορεύομαι"
+          ]
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "4:30",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "λυπέω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:31",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "αἴρω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "4:32",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "γίνομαι"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:1",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "οὖν"
+          ]
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "γίνομαι"
+          ]
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "5:2",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "περιπατέω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:3",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ὀνομάζω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:4",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:5",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "οἶδα"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "5:6",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἀπατάω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:7",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "οὖν"
+          ]
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "γίνομαι"
+          ]
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "5:8",
+      "signals": [
+        {
+          "signal": "marker density",
+          "value": 3
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "περιπατέω"
+          ]
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "5:10",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        },
+        {
+          "signal": "question signal",
+          "value": [
+            "τί"
+          ]
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "5:11",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "συγκοινωνέω",
+            "ἐλέγχω"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "5:12",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:14",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "διό"
+          ]
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἐγείρω",
+            "ἀνίστημι"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 3
+    },
+    {
+      "ref": "5:15",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "οὖν"
+          ]
+        },
+        {
+          "signal": "marker density",
+          "value": 4
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "βλέπω"
+          ]
+        },
+        {
+          "signal": "question signal",
+          "value": [
+            "πῶς⸃"
+          ]
+        }
+      ],
+      "score": 4
+    },
+    {
+      "ref": "5:16",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:17",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "γίνομαι",
+            "συνίημι"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        },
+        {
+          "signal": "question signal",
+          "value": [
+            "τί"
+          ]
+        }
+      ],
+      "score": 3
+    },
+    {
+      "ref": "5:18",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "μεθύσκομαι",
+            "πληρόω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:23",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:25",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἀγαπάω"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "5:27",
+      "signals": [
+        {
+          "signal": "marker density",
+          "value": 3
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:28",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:29",
+      "signals": [
+        {
+          "signal": "marker density",
+          "value": 3
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "5:33",
+      "signals": [
+        {
+          "signal": "marker density",
+          "value": 4
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἀγαπάω"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 3
+    },
+    {
+      "ref": "6:1",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ὑπακούω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:2",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "τιμάω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:3",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:4",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "παροργίζω",
+            "ἐκτρέφω"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "6:5",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ὑπακούω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:6",
+      "signals": [
+        {
+          "signal": "marker density",
+          "value": 3
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:8",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:9",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ποιέω"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "6:10",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἐνδυναμόω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:11",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἐνδύω"
+          ]
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:12",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:13",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἀναλαμβάνω"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "6:14",
+      "signals": [
+        {
+          "signal": "strong discourse marker",
+          "value": [
+            "οὖν"
+          ]
+        },
+        {
+          "signal": "imperative present",
+          "value": [
+            "ἵστημι"
+          ]
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "6:16",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:17",
+      "signals": [
+        {
+          "signal": "imperative present",
+          "value": [
+            "δέχομαι"
+          ]
+        },
+        {
+          "signal": "mood shift",
+          "value": "indicative → imperative"
+        }
+      ],
+      "score": 2
+    },
+    {
+      "ref": "6:20",
+      "signals": [
+        {
+          "signal": "mood shift",
+          "value": "imperative → indicative"
+        }
+      ],
+      "score": 1
+    },
+    {
+      "ref": "6:21",
+      "signals": [
+        {
+          "signal": "question signal",
+          "value": [
+            "τί"
+          ]
+        }
+      ],
+      "score": 1
+    }
+  ]
+}

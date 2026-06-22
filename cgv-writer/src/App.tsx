@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { EmptyWelcome } from "./components/EmptyWelcome";
 import { FileMenu } from "./components/FileMenu";
-import { ManualEditor } from "./components/ManualEditor";
-import { MarkdownEditor } from "./components/MarkdownEditor";
+import { SharedDocumentEditor } from "./components/SharedDocumentEditor";
 import { SearchReplaceBar } from "./components/SearchReplaceBar";
 import { PresentationPanel } from "./components/PresentationPanel";
 import { LibrarySettingsPanel } from "./components/LibrarySettingsPanel";
@@ -17,21 +16,13 @@ import {
   readManualByPath,
   saveManualFile
 } from "./lib/files";
-import { splitYamlBody, joinYamlBody, normalizeMdForCompare, tightenCgvDefaultSpacing } from "./lib/markdown-html";
+import { splitYamlBody, joinYamlBody } from "./lib/markdown-html";
 import { clearEditorPlaces } from "./lib/editor-position-bridge";
 import {
   ANALYSIS_DEBOUNCE_MS,
-  cancelManualEditorSync,
-  clearManualEditorDirty,
-  clearViewHandoff,
-  dispatchBeforeViewChange,
-  exportManualBodyFromEditor,
   exportMarkdownFromEditor,
-  flushManualEditorSync,
   flushMarkdownEditorSync,
-  requestManualBodyForStyleCorrect,
 } from "./lib/manual-sync";
-import { correctManualStyle } from "./lib/style-corrector";
 import { clearLastOpenedPath, getLastOpenedPath } from "./lib/recent-files";
 import {
   loadWritingModePreference,
@@ -61,9 +52,6 @@ export default function App() {
   const [analysis, setAnalysis] = useState(() => analyzeDocument(""));
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchShowReplace, setSearchShowReplace] = useState(false);
-  const [styleCorrectBusy, setStyleCorrectBusy] = useState(false);
-  const [styleCorrectMessage, setStyleCorrectMessage] = useState<string | null>(null);
-  const [styleCorrectRevision, setStyleCorrectRevision] = useState(0);
   const [documentSession, setDocumentSession] = useState(0);
   const [welcomeOverlay, setWelcomeOverlay] = useState<"startup" | null>("startup");
   const [saving, setSaving] = useState(false);
@@ -94,14 +82,11 @@ export default function App() {
 
   const applyContent = useCallback((text: string) => {
     const split = splitYamlBody(text);
-    const body = tightenCgvDefaultSpacing(split.body);
     setFrontMatter(split.frontMatter);
-    setBody(body);
-    setContent(joinYamlBody(split.frontMatter, body));
+    setBody(split.body);
+    setContent(text);
     setDocumentSession(session => session + 1);
-    clearManualEditorDirty();
     clearEditorPlaces();
-    clearViewHandoff();
     if (text.trim()) {
       setWelcomeOverlay(null);
     }
@@ -122,25 +107,9 @@ export default function App() {
     setDirty(true);
   }, []);
 
-  const syncBodyFromView = useCallback(
-    (nextBody: string) => {
-      setBody(nextBody);
-      setContent(joinYamlBody(frontMatter, nextBody));
-    },
-    [frontMatter]
-  );
-
-  const syncContentFromView = useCallback((nextContent: string) => {
-    const split = splitYamlBody(nextContent);
-    setFrontMatter(split.frontMatter);
-    setBody(split.body);
-    setContent(nextContent);
-  }, []);
-
   const attemptViewSwitch = useCallback(
     async (next: ViewMode) => {
       if (next === viewMode) return;
-      dispatchBeforeViewChange();
       setViewMode(next);
     },
     [viewMode]
@@ -158,28 +127,12 @@ export default function App() {
     [attemptViewSwitch]
   );
 
-  /** Live document from the active CGV editor (Manual or Markdown). */
+  /** Live document from the single shared editor. */
   const resolveLiveContent = useCallback(async (): Promise<string> => {
-    if (viewMode === "manual") {
-      const bodyMd = await exportManualBodyFromEditor();
-      if (bodyMd.trim()) {
-        return joinYamlBody(frontMatter, bodyMd);
-      }
-    }
-
     flushMarkdownEditorSync();
     const exported = await exportMarkdownFromEditor();
     return exported.trim() ? exported : content;
-  }, [content, frontMatter, viewMode]);
-
-  const updateBody = useCallback(
-    (nextBody: string) => {
-      setBody(nextBody);
-      setContent(joinYamlBody(frontMatter, nextBody));
-      setDirty(true);
-    },
-    [frontMatter]
-  );
+  }, [content]);
 
   const updateFullContent = useCallback((text: string) => {
     applyContent(text);
@@ -247,7 +200,6 @@ export default function App() {
       if (!proceed) return;
     }
 
-    cancelManualEditorSync();
     loadFromContent("");
     setFilePath(null);
     setDirty(false);
@@ -265,7 +217,6 @@ export default function App() {
       if (!proceed) return;
     }
 
-    cancelManualEditorSync();
     await deferNativeDialog();
 
     try {
@@ -289,9 +240,9 @@ export default function App() {
     try {
       const exported = await resolveLiveContent();
       const split = splitYamlBody(exported);
-      const bodyMd = tightenCgvDefaultSpacing(split.body);
-      const toSave = joinYamlBody(split.frontMatter, bodyMd);
-      setBody(bodyMd);
+      const toSave = exported;
+      setFrontMatter(split.frontMatter);
+      setBody(split.body);
       setContent(toSave);
 
       const saved = await saveManualFile(filePath, toSave);
@@ -334,8 +285,6 @@ export default function App() {
       if (!proceed) return;
     }
 
-    cancelManualEditorSync();
-
     try {
       await openPath(last);
     } catch (error) {
@@ -359,7 +308,6 @@ export default function App() {
       }
     }
 
-    cancelManualEditorSync();
     const text = await loadStarterTemplate();
     loadFromContent(text);
     setFilePath(null);
@@ -393,91 +341,13 @@ export default function App() {
     }
   }, [dismissWelcomeForNativeDialog]);
 
-  const hasCorrectableContent = Boolean(body.trim() || splitYamlBody(content).body.trim());
-
-  const handleStyleCorrect = useCallback(async () => {
-    if (styleCorrectBusy) return;
-
-    setStyleCorrectBusy(true);
-    setStyleCorrectMessage(null);
-    setStatus("Corrigiendo estilo CGV…");
-
-    try {
-      const storedBody = body.trim() ? body : splitYamlBody(content).body;
-      let sourceBody = storedBody;
-
-      if (viewMode === "manual") {
-        flushManualEditorSync();
-        const prep = await requestManualBodyForStyleCorrect();
-        sourceBody = prep.storedBody.trim() || prep.body.trim() || storedBody;
-      } else {
-        flushMarkdownEditorSync();
-        const exported = await exportMarkdownFromEditor();
-        if (exported.trim()) {
-          sourceBody = splitYamlBody(exported).body;
-        }
-      }
-
-      if (!sourceBody.trim()) {
-        const message = "No hay contenido para corregir.";
-        setStyleCorrectMessage(message);
-        setStatus(message);
-        return;
-      }
-
-      const beforeMd = normalizeMdForCompare(sourceBody);
-      const result = await correctManualStyle(sourceBody);
-      const afterMd = normalizeMdForCompare(result.body);
-      const markdownChanged = afterMd !== beforeMd;
-
-      if (!markdownChanged) {
-        const message = result.warnings.length
-          ? `Sin cambios de estilo. ${result.warnings[0]}`
-          : "Sin cambios de estilo — el documento ya cumple las reglas.";
-        setStyleCorrectMessage(message);
-        setStatus(message);
-        return;
-      }
-
-      cancelManualEditorSync();
-      applyContent(joinYamlBody(frontMatter, result.body));
-      setStyleCorrectRevision(revision => revision + 1);
-      setDirty(true);
-
-      const parts: string[] = [];
-      if (result.stats.scriptureUpdated) {
-        parts.push(`${result.stats.scriptureUpdated} versículo(s) NBLA`);
-      }
-      if (result.stats.linesPromotedToH5) {
-        parts.push(`${result.stats.linesPromotedToH5} línea(s) H5`);
-      }
-      if (result.stats.referencesDemoted) {
-        parts.push(`${result.stats.referencesDemoted} referencia(s) reubicada(s)`);
-      }
-      if (!parts.length) {
-        parts.push("espaciado de pasajes");
-      }
-
-      const summary = parts.join(" · ");
-      const warning = result.warnings.length ? ` (${result.warnings.length} aviso(s))` : "";
-      const message = `Estilo corregido: ${summary}${warning}. Guarde con ⌘S.`;
-      setStyleCorrectMessage(message);
-      setStatus(message);
-    } catch (error) {
-      const message = `Error al corregir estilo: ${String(error)}`;
-      setStyleCorrectMessage(message);
-      setStatus(message);
-    } finally {
-      setStyleCorrectBusy(false);
-    }
-  }, [applyContent, body, content, frontMatter, styleCorrectBusy, viewMode]);
-
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       const target = event.target;
       if (target instanceof Element && target.closest(".search-replace-bar")) {
         return;
       }
+      if (event.defaultPrevented) return;
 
       const mod = event.metaKey || event.ctrlKey;
 
@@ -776,26 +646,15 @@ export default function App() {
               onDismiss={dismissWelcome}
             />
           )}
-          <div className={`editor-pane-layer ${viewMode === "manual" ? "active" : ""}`}>
-            <ManualEditor
-              body={body}
-              onBodyChange={updateBody}
-              onBodySync={syncBodyFromView}
-              onDirty={markDocumentDirty}
-              reloadKey={`${documentSession}:${filePath ?? "untitled"}:sc${styleCorrectRevision}`}
-              isActive={viewMode === "manual"}
-              writingMode={focusWriting && viewMode === "manual"}
-              previewOnly={false}
-            />
-          </div>
-          <div className={`editor-pane-layer ${viewMode === "markdown" ? "active" : ""}`}>
-            <MarkdownEditor
+          <div className="editor-pane-layer active">
+            <SharedDocumentEditor
               value={content}
               onChange={handleChangeMarkdown}
-              onContentSync={syncContentFromView}
               onDirty={markDocumentDirty}
               reloadKey={`${documentSession}:${filePath ?? "untitled"}`}
-              isActive={viewMode === "markdown"}
+              mode={viewMode}
+              writingMode={focusWriting}
+              onToggleMode={() => void cycleViewMode()}
             />
           </div>
         </section>
@@ -823,26 +682,6 @@ export default function App() {
           </section>
 
           <LibrarySettingsPanel />
-
-          <section className="panel">
-            <h2>Estilo CGV</h2>
-            <p className="panel-meta">
-              Referencias H3 + NBLA, anclas H4, comentarios H5.
-            </p>
-            <button
-              type="button"
-              className="style-correct-btn"
-              disabled={styleCorrectBusy || !hasCorrectableContent}
-              onClick={() => void handleStyleCorrect()}
-            >
-              {styleCorrectBusy ? "Corrigiendo…" : "Corregir estilo"}
-            </button>
-            {styleCorrectMessage && (
-              <p className="style-correct-result" role="status">
-                {styleCorrectMessage}
-              </p>
-            )}
-          </section>
 
           <section className="panel">
             <h2>Revisión</h2>
