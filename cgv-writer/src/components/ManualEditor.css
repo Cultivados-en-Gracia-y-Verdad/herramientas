@@ -355,7 +355,7 @@
 .manual-editor--bible-ready .manual-prosemirror h3 {
   color: var(--cgv-link-color);
   border-bottom: 0.08em dotted currentColor;
-  cursor: pointer;
+  cursor: text;
   width: fit-content;
   max-width: 100%;
 }
@@ -367,7 +367,8 @@
 .manual-editor--bible-ready .manual-prosemirror .cgv-inline-bible-ref {
   color: var(--cgv-link-color);
   border-bottom: 0.08em dotted currentColor;
-  cursor: pointer;
+  cursor: text;
+  pointer-events: none;
 }
 
 .manual-editor--bible-ready .manual-prosemirror .cgv-inline-bible-ref:hover {
@@ -487,7 +488,7 @@
   color: var(--cgv-quote-mark);
 }
 
-/* H5 — comment level 1 (nested under H4, flush under ancla) */
+/* H5 — comment level 1 */
 .manual-prosemirror h5,
 .manual-prosemirror p.cgv-h5,
 .manual-prosemirror p.cgv-comment-2 {
@@ -496,25 +497,6 @@
   font-weight: var(--cgv-weight-body);
   margin: 0 0 0.35em var(--cgv-indent-h5);
   color: var(--cgv-comment-body);
-}
-
-.manual-prosemirror h4 + h5,
-.manual-prosemirror p.cgv-focus + p.cgv-h5,
-.manual-prosemirror p.cgv-comment-1 + p.cgv-comment-2 {
-  margin-top: 0;
-}
-
-/* Next #### anchor in the same verse unit — flush under ##### */
-.manual-prosemirror h5 + h4,
-.manual-prosemirror p.cgv-h5 + p.cgv-focus,
-.manual-prosemirror h5 + p.cgv-md-spacer + h4 {
-  margin-top: 0;
-}
-
-.manual-prosemirror h5 + p.cgv-md-spacer {
-  display: none;
-  height: 0;
-  margin: 0;
 }
 
 /* Markdown spacer — visible blank line between passage blocks */

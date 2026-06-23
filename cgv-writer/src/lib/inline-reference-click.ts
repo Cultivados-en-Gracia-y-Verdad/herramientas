@@ -49,3 +49,14 @@ export function getInlineReferenceFromClick(
   if (pos == null) return null;
   return getInlineReferenceAtDocPos(editor, pos, index);
 }
+
+export function getInlineReferenceFromElement(
+  element: Element,
+  index: BibleIndex | null
+): InlineBibleMatch | null {
+  const referenceElement = element.closest(".cgv-inline-bible-ref");
+  const text = referenceElement?.textContent?.trim() ?? "";
+  if (!text || !index) return null;
+
+  return getInlineBibleReferenceAtPosition(text, 0, index);
+}

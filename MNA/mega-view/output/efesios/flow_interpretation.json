@@ -1,0 +1,363 @@
+{
+  "peaks": [
+    {
+      "metric": "imperatives",
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "metric": "markers",
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "metric": "contrasts",
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "metric": "boundaries",
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "metric": "action_lemmas",
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "metric": "indicatives",
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "metric": "participles",
+      "chapters": [
+        2
+      ]
+    },
+    {
+      "metric": "subjunctives",
+      "chapters": [
+        6
+      ]
+    },
+    {
+      "metric": "infinitives",
+      "chapters": [
+        3
+      ]
+    }
+  ],
+  "rises": [
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "imperatives",
+      "from_value": 0,
+      "to_value": 1
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "imperatives",
+      "from_value": 0,
+      "to_value": 11
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "imperatives",
+      "from_value": 11,
+      "to_value": 18
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "markers",
+      "from_value": 3,
+      "to_value": 17
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "markers",
+      "from_value": 9,
+      "to_value": 28
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "markers",
+      "from_value": 28,
+      "to_value": 46
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "contrasts",
+      "from_value": 0,
+      "to_value": 1
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "contrasts",
+      "from_value": 1,
+      "to_value": 6
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "boundaries",
+      "from_value": 2,
+      "to_value": 3
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "boundaries",
+      "from_value": 3,
+      "to_value": 13
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "boundaries",
+      "from_value": 13,
+      "to_value": 22
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "action_lemmas",
+      "from_value": 7,
+      "to_value": 14
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "action_lemmas",
+      "from_value": 13,
+      "to_value": 19
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "action_lemmas",
+      "from_value": 19,
+      "to_value": 20
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "indicatives",
+      "from_value": 14,
+      "to_value": 20
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "indicatives",
+      "from_value": 16,
+      "to_value": 25
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "indicatives",
+      "from_value": 25,
+      "to_value": 32
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "participles",
+      "from_value": 21,
+      "to_value": 24
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "participles",
+      "from_value": 10,
+      "to_value": 23
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "subjunctives",
+      "from_value": 1,
+      "to_value": 5
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "subjunctives",
+      "from_value": 4,
+      "to_value": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "subjunctives",
+      "from_value": 4,
+      "to_value": 8
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "metric": "infinitives",
+      "from_value": 0,
+      "to_value": 10
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "infinitives",
+      "from_value": 2,
+      "to_value": 7
+    }
+  ],
+  "falls": [
+    {
+      "from": 2,
+      "to": 3,
+      "metric": "imperatives",
+      "from_value": 1,
+      "to_value": 0
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "imperatives",
+      "from_value": 18,
+      "to_value": 11
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "metric": "markers",
+      "from_value": 17,
+      "to_value": 9
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "markers",
+      "from_value": 46,
+      "to_value": 20
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "contrasts",
+      "from_value": 1,
+      "to_value": 0
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "contrasts",
+      "from_value": 6,
+      "to_value": 3
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "boundaries",
+      "from_value": 22,
+      "to_value": 17
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "metric": "action_lemmas",
+      "from_value": 14,
+      "to_value": 13
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "action_lemmas",
+      "from_value": 20,
+      "to_value": 8
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "metric": "indicatives",
+      "from_value": 20,
+      "to_value": 16
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "indicatives",
+      "from_value": 32,
+      "to_value": 14
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "metric": "participles",
+      "from_value": 24,
+      "to_value": 10
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "participles",
+      "from_value": 23,
+      "to_value": 15
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metric": "participles",
+      "from_value": 15,
+      "to_value": 14
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "metric": "subjunctives",
+      "from_value": 5,
+      "to_value": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "subjunctives",
+      "from_value": 6,
+      "to_value": 4
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metric": "infinitives",
+      "from_value": 4,
+      "to_value": 0
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metric": "infinitives",
+      "from_value": 10,
+      "to_value": 7
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metric": "infinitives",
+      "from_value": 7,
+      "to_value": 2
+    }
+  ]
+}

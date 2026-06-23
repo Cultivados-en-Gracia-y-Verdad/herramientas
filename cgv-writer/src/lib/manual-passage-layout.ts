@@ -57,12 +57,18 @@ function findH3AtSelection(editor: Editor): number | null {
   return null;
 }
 
-function findHeadingAtCursor(editor: Editor, level: number): { end: number } | null {
+function findCurrentTextblock(editor: Editor): {
+  node: { type: { name: string }; attrs: Record<string, unknown> };
+  end: number;
+} | null {
   const { $from } = editor.state.selection;
   for (let depth = $from.depth; depth > 0; depth -= 1) {
     const node = $from.node(depth);
-    if (node.type.name === "heading" && node.attrs.level === level) {
-      return { end: $from.after(depth) };
+    if (node.isTextblock) {
+      return {
+        node: node as { type: { name: string }; attrs: Record<string, unknown> },
+        end: $from.after(depth)
+      };
     }
   }
   return null;
@@ -73,27 +79,31 @@ function isAtEndOfTextblock(editor: Editor): boolean {
   return $from.parent.isTextblock && $from.parentOffset === $from.parent.content.size;
 }
 
-/** #### ancla → Enter inserts ##### comentario (CGV default — no invisible blank gap). */
-export function handleManualEnterKey(editor: Editor): boolean {
-  if (!editor.state.selection.empty) return false;
+/** Default writing flow: Enter after body text opens a fresh H5 comment line. */
+export function handleManualDefaultH5Enter(editor: Editor): boolean {
+  if (!editor.state.selection.empty || !isAtEndOfTextblock(editor)) return false;
 
-  const h4 = findHeadingAtCursor(editor, 4);
-  if (!h4 || !isAtEndOfTextblock(editor)) return false;
+  const block = findCurrentTextblock(editor);
+  if (!block) return false;
+
+  if (block.node.type.name === "heading") {
+    const level = Number(block.node.attrs.level);
+    if (level <= 3) return false;
+  }
 
   const { state } = editor;
-  const next = state.doc.nodeAt(h4.end);
+  const next = state.doc.nodeAt(block.end);
   if (next?.type.name === "heading" && next.attrs.level === 5) {
-    editor.chain().focus().setTextSelection(h4.end + 1).run();
+    editor.chain().focus().setTextSelection(block.end + 1).run();
     return true;
   }
 
   editor
     .chain()
     .focus()
-    .insertContentAt(h4.end, { type: "heading", attrs: { level: 5 } })
-    .setTextSelection(h4.end + 1)
+    .insertContentAt(block.end, { type: "heading", attrs: { level: 5 } })
+    .setTextSelection(block.end + 1)
     .run();
-  removeEmptyParagraphsBetweenH4AndFirstH5(editor);
   return true;
 }
 
@@ -159,44 +169,6 @@ export function ensureScriptureParagraphsAfterH3(editor: Editor): void {
   });
 
   if (changed) {
-    editor.view.dispatch(tr);
-  }
-}
-
-/** Remove blank paragraphs between #### and the first ##### (default CGV layout). */
-export function removeEmptyParagraphsBetweenH4AndFirstH5(editor: Editor): void {
-  const { state } = editor;
-  const tr = state.tr;
-  const toDelete: { from: number; to: number }[] = [];
-
-  state.doc.descendants((node, pos) => {
-    if (node.type.name !== "heading" || node.attrs.level !== 4) {
-      return true;
-    }
-
-    let scan = pos + node.nodeSize;
-    while (true) {
-      const next = tr.doc.nodeAt(scan);
-      if (!next) break;
-      if (next.type.name === "heading" && next.attrs.level === 5) break;
-      if (isRemovableGapParagraph(next as typeof node)) {
-        toDelete.push({ from: scan, to: scan + next.nodeSize });
-        scan += next.nodeSize;
-        continue;
-      }
-      break;
-    }
-
-    return false;
-  });
-
-  if (!toDelete.length) return;
-
-  toDelete.sort((a, b) => b.from - a.from).forEach(({ from, to }) => {
-    tr.delete(from, to);
-  });
-
-  if (tr.docChanged) {
     editor.view.dispatch(tr);
   }
 }
@@ -366,7 +338,6 @@ export function tightenPassageLayoutInEditor(editor: Editor): void {
   removeEmptyParagraphsBetweenH3AndScripture(editor);
   ensureScriptureParagraphsAfterH3(editor);
   ensureBlankLineBetweenVerseAndH4(editor);
-  removeEmptyParagraphsBetweenH4AndFirstH5(editor);
 }
 
 /** Referencia H3 with versículo paragraph ready directly underneath. */

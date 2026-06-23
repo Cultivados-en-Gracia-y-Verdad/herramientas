@@ -1,8 +1,5 @@
 import type { Editor } from "@tiptap/core";
-import {
-  removeEmptyParagraphsBetweenH4AndFirstH5,
-  tightenPassageLayoutInEditor
-} from "./manual-passage-layout";
+import { tightenPassageLayoutInEditor } from "./manual-passage-layout";
 
 const SCRIPTURE_CLASS = "cgv-scripture";
 const WORD_CHAR = /[\p{L}\p{N}'’_-]/u;
@@ -78,9 +75,6 @@ export function applyScriptureStyle(editor: Editor): void {
 
 export function applyHeadingStyle(editor: Editor, level: 4 | 5 | 6): void {
   editor.chain().focus().toggleHeading({ level }).run();
-  if (level === 5) {
-    removeEmptyParagraphsBetweenH4AndFirstH5(editor);
-  }
   tightenPassageLayoutInEditor(editor);
 }
 

@@ -2,6 +2,209 @@
 
 Generated from interlinear token data. These are observable signals, not an outline or interpretation.
 
+## Flow
+| chapter | imperatives | markers | contrasts | boundaries | action_lemmas | indicatives | participles | subjunctives | infinitives |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 3 | 1 | 2 | 7 | 14 | 21 | 1 | 4 |
+| 2 | 1 | 17 | 0 | 3 | 14 | 20 | 24 | 5 | 0 |
+| 3 | 0 | 9 | 0 | 3 | 13 | 16 | 10 | 4 | 10 |
+| 4 | 11 | 28 | 1 | 13 | 19 | 25 | 23 | 6 | 7 |
+| 5 | 18 | 46 | 6 | 22 | 20 | 32 | 15 | 4 | 2 |
+| 6 | 11 | 20 | 3 | 17 | 8 | 14 | 14 | 8 | 7 |
+
+
+## Flow Interpretation
+
+### Peaks
+| metric | chapters |
+| --- | --- |
+| imperatives | 5 |
+| markers | 5 |
+| contrasts | 5 |
+| boundaries | 5 |
+| action_lemmas | 5 |
+| indicatives | 5 |
+| participles | 2 |
+| subjunctives | 6 |
+| infinitives | 3 |
+
+
+### Rises
+| metric | from | to | from_value | to_value |
+| --- | --- | --- | --- | --- |
+| imperatives | 1 | 2 | 0 | 1 |
+| imperatives | 3 | 4 | 0 | 11 |
+| imperatives | 4 | 5 | 11 | 18 |
+| markers | 1 | 2 | 3 | 17 |
+| markers | 3 | 4 | 9 | 28 |
+| markers | 4 | 5 | 28 | 46 |
+| contrasts | 3 | 4 | 0 | 1 |
+| contrasts | 4 | 5 | 1 | 6 |
+| boundaries | 1 | 2 | 2 | 3 |
+| boundaries | 3 | 4 | 3 | 13 |
+| boundaries | 4 | 5 | 13 | 22 |
+| action_lemmas | 1 | 2 | 7 | 14 |
+| action_lemmas | 3 | 4 | 13 | 19 |
+| action_lemmas | 4 | 5 | 19 | 20 |
+| indicatives | 1 | 2 | 14 | 20 |
+| indicatives | 3 | 4 | 16 | 25 |
+| indicatives | 4 | 5 | 25 | 32 |
+| participles | 1 | 2 | 21 | 24 |
+| participles | 3 | 4 | 10 | 23 |
+| subjunctives | 1 | 2 | 1 | 5 |
+| subjunctives | 3 | 4 | 4 | 6 |
+| subjunctives | 5 | 6 | 4 | 8 |
+| infinitives | 2 | 3 | 0 | 10 |
+| infinitives | 5 | 6 | 2 | 7 |
+
+
+### Falls
+| metric | from | to | from_value | to_value |
+| --- | --- | --- | --- | --- |
+| imperatives | 2 | 3 | 1 | 0 |
+| imperatives | 5 | 6 | 18 | 11 |
+| markers | 2 | 3 | 17 | 9 |
+| markers | 5 | 6 | 46 | 20 |
+| contrasts | 1 | 2 | 1 | 0 |
+| contrasts | 5 | 6 | 6 | 3 |
+| boundaries | 5 | 6 | 22 | 17 |
+| action_lemmas | 2 | 3 | 14 | 13 |
+| action_lemmas | 5 | 6 | 20 | 8 |
+| indicatives | 2 | 3 | 20 | 16 |
+| indicatives | 5 | 6 | 32 | 14 |
+| participles | 2 | 3 | 24 | 10 |
+| participles | 4 | 5 | 23 | 15 |
+| participles | 5 | 6 | 15 | 14 |
+| subjunctives | 2 | 3 | 5 | 4 |
+| subjunctives | 4 | 5 | 6 | 4 |
+| infinitives | 1 | 2 | 4 | 0 |
+| infinitives | 3 | 4 | 10 | 7 |
+| infinitives | 4 | 5 | 7 | 2 |
+
+
+## Wanted Families
+| family | count | lemmas | sources | refs |
+| --- | --- | --- | --- | --- |
+| knowledge | 16 | γινώσκω, γνωρίζω, οἶδα, συνίημι | imperative, repeated | 1:18, 1:9, 3:10, 3:19, 3:3, 3:5, 5:17, 5:5, 6:19, 6:21, 6:22, 6:8 |
+| becoming | 12 | γίνομαι | imperative, repeated | 2:13, 3:7, 4:32, 5:1, 5:12, 5:17, 5:7, 6:3 |
+| speech | 10 | λέγω, λαλέω | imperative, repeated | 2:11, 4:17, 4:25, 4:8, 5:12, 5:14, 5:19, 5:32, 6:20 |
+| fullness | 9 | πλήρωμα, πληρόω | imperative, repeated | 1:10, 1:23, 3:19, 4:10, 4:13, 5:18 |
+| love | 9 | ἀγαπάω | imperative, repeated | 1:6, 2:4, 5:2, 5:25, 5:28, 5:33, 6:24 |
+| walk | 9 | περιπατέω | imperative, repeated | 2:10, 2:2, 4:1, 4:17, 5:15, 5:2, 5:8 |
+| building | 8 | κτίζω, οἰκοδομή | repeated | 2:10, 2:15, 2:21, 3:9, 4:12, 4:16, 4:24, 4:29 |
+| standing | 7 | ἀναλαμβάνω, ἐνδυναμόω, ἐνδύω, ἵστημι | imperative, repeated | 4:24, 6:10, 6:11, 6:13, 6:14 |
+| obedience | 2 | ὑπακούω | imperative | 6:1, 6:5 |
+
+
+## Signal Summary
+
+### Strong Boundary Signals
+| ref | score | signals |
+| --- | --- | --- |
+| 5:15 | 4 | strong discourse marker: ['οὖν']; marker density: 4; imperative present: ['βλέπω']; question signal: ['πῶς⸃'] |
+| 2:11 | 3 | strong discourse marker: ['διό']; imperative present: ['μνημονεύω']; mood shift: indicative → imperative |
+| 4:25 | 3 | strong discourse marker: ['διό']; imperative present: ['λαλέω']; mood shift: indicative → imperative |
+| 5:14 | 3 | strong discourse marker: ['διό']; imperative present: ['ἐγείρω', 'ἀνίστημι']; mood shift: indicative → imperative |
+| 5:17 | 3 | imperative present: ['γίνομαι', 'συνίημι']; mood shift: indicative → imperative; question signal: ['τί'] |
+| 5:33 | 3 | marker density: 4; imperative present: ['ἀγαπάω']; mood shift: indicative → imperative |
+
+
+### Imperative Clusters
+| range | count | lemmas |
+| --- | --- | --- |
+| 4:25–4:32 | 11 | αἴρω, γίνομαι, δίδωμι, κλέπτω, κοπιάω, λαλέω, λυπέω, ἁμαρτάνω, ἐκπορεύομαι, ἐπιδύω, ὀργίζομαι |
+| 5:1–5:3 | 3 | γίνομαι, περιπατέω, ὀνομάζω |
+| 5:5–5:8 | 4 | γίνομαι, οἶδα, περιπατέω, ἀπατάω |
+| 5:14–5:15 | 3 | βλέπω, ἀνίστημι, ἐγείρω |
+| 5:17–5:18 | 4 | γίνομαι, μεθύσκομαι, πληρόω, συνίημι |
+| 6:4–6:5 | 3 | παροργίζω, ἐκτρέφω, ὑπακούω |
+| 6:9–6:11 | 3 | ποιέω, ἐνδυναμόω, ἐνδύω |
+
+
+### Marker Clusters
+| range | count | lemmas |
+| --- | --- | --- |
+| 2:7–2:12 | 8 | γάρ, διό, ἵνα, ὅτι |
+| 2:18–2:19 | 4 | οὖν, ἀλλά, ἄρα, ὅτι |
+| 4:8–4:10 | 4 | διό, εἰ, ἵνα, ὅτι |
+| 4:28–4:29 | 4 | εἰ, ἀλλά, ἵνα |
+| 5:4–5:9 | 7 | γάρ, οὖν, ἀλλά, ὅτι |
+| 5:14–5:18 | 7 | γάρ, διό, οὖν, ἀλλά, ὅτι |
+| 5:26–5:27 | 4 | ἀλλά, ἵνα |
+| 5:29–5:30 | 3 | γάρ, ἀλλά, ὅτι |
+| 6:12–6:14 | 4 | οὖν, ἀλλά, ἵνα, ὅτι |
+| 6:19–6:22 | 4 | ἵνα |
+
+
+### Repeated Action Lemmas
+| lemma | count | refs |
+| --- | --- | --- |
+| δίδωμι | 12 | 1:17, 1:22, 3:2, 3:7, 3:8, 3:16, 4:7, 4:8, 4:11, 4:27, 4:29, 6:19 |
+| ποιέω | 10 | 1:16, 2:3, 2:14, 2:15, 3:11, 3:20, 4:16, 6:6, 6:8, 6:9 |
+| ἀγαπάω | 10 | 1:6, 2:4, 5:2, 5:25, 5:28, 5:33, 6:24 |
+| γίνομαι | 8 | 2:13, 3:7, 4:32, 5:1, 5:7, 5:12, 5:17, 6:3 |
+| περιπατέω | 8 | 2:2, 2:10, 4:1, 4:17, 5:2, 5:8, 5:15 |
+| ἔχω | 8 | 1:7, 2:12, 2:18, 3:12, 4:28, 5:5, 5:27 |
+| λέγω | 7 | 2:11, 4:8, 4:17, 5:12, 5:14, 5:32 |
+| γνωρίζω | 6 | 1:9, 3:3, 3:5, 3:10, 6:19, 6:21 |
+| κτίζω | 4 | 2:10, 2:15, 3:9, 4:24 |
+| οἰκοδομή | 4 | 2:21, 4:12, 4:16, 4:29 |
+| πληρόω | 4 | 1:23, 3:19, 4:10, 5:18 |
+
+
+### Contrast Patterns
+| pattern | count |
+| --- | --- |
+| μή ... ἀλλά | 7 |
+| οὐ ... ἀλλά | 3 |
+| σκότος ... φῶς | 1 |
+
+
+## Concentration
+| ref | score | signals |
+| --- | --- | --- |
+| 5:15 | 9 | boundary, contrast, imperative, οὖν, ἀλλά |
+| 5:17 | 8 | boundary, contrast, imperative, ἀλλά |
+| 4:29 | 7 | boundary, contrast, imperative, ἀλλά, ἵνα |
+| 5:14 | 7 | boundary, imperative, γάρ, διό |
+| 6:4 | 7 | boundary, contrast, imperative, ἀλλά |
+| 2:11 | 6 | boundary, imperative, διό, ὅτι |
+| 4:25 | 6 | boundary, imperative, διό, ὅτι |
+| 5:8 | 6 | boundary, contrast, imperative, γάρ |
+| 5:18 | 6 | boundary, contrast, imperative, ἀλλά |
+| 5:27 | 6 | boundary, contrast, ἀλλά, ἵνα |
+| 5:33 | 6 | boundary, imperative, πλήν, ἵνα |
+
+
+## Concentration Clusters
+| range | peak | total_score | count | refs |
+| --- | --- | --- | --- | --- |
+| 5:14–5:15 | 9 | 16 | 2 | 5:14, 5:15 |
+| 5:17–5:18 | 8 | 14 | 2 | 5:17, 5:18 |
+| 4:29 | 7 | 7 | 1 | 4:29 |
+| 6:4 | 7 | 7 | 1 | 6:4 |
+| 2:11 | 6 | 6 | 1 | 2:11 |
+| 4:25 | 6 | 6 | 1 | 4:25 |
+| 5:8 | 6 | 6 | 1 | 5:8 |
+| 5:27 | 6 | 6 | 1 | 5:27 |
+| 5:33 | 6 | 6 | 1 | 5:33 |
+
+
+## Regions
+| range | total_score | peak | count | refs | signals |
+| --- | --- | --- | --- | --- | --- |
+| 5:14–5:18 | 32 | 9 | 5 | 5:14, 5:15, 5:16, 5:17, 5:18 | boundary, contrast, imperative, γάρ, διό, οὖν, ἀλλά, ὅτι |
+| 5:1–5:9 | 31 | 6 | 9 | 5:1, 5:2, 5:3, 5:4, 5:5, 5:6, 5:7, 5:8, 5:9 | boundary, contrast, imperative, γάρ, οὖν, ἀλλά, ὅτι |
+| 4:25–4:32 | 29 | 7 | 8 | 4:25, 4:26, 4:27, 4:28, 4:29, 4:30, 4:31, 4:32 | boundary, contrast, imperative, διό, ἀλλά, ἵνα, ὅτι |
+| 6:9–6:14 | 21 | 5 | 6 | 6:9, 6:10, 6:11, 6:12, 6:13, 6:14 | boundary, contrast, imperative, οὖν, ἀλλά, ἵνα, ὅτι |
+| 5:26–5:33 | 17 | 6 | 5 | 5:26, 5:27, 5:29, 5:30, 5:33 | boundary, contrast, imperative, γάρ, πλήν, ἀλλά, ἵνα, ὅτι |
+| 2:7–2:12 | 13 | 6 | 6 | 2:7, 2:8, 2:9, 2:10, 2:11, 2:12 | boundary, imperative, γάρ, διό, ἵνα, ὅτι |
+| 6:4–6:5 | 9 | 7 | 2 | 6:4, 6:5 | boundary, contrast, imperative, ἀλλά |
+| 2:18–2:19 | 6 | 5 | 2 | 2:18, 2:19 | boundary, οὖν, ἀλλά, ἄρα, ὅτι |
+| 4:8–4:10 | 6 | 3 | 3 | 4:8, 4:9, 4:10 | boundary, διό, ἵνα, ὅτι |
+| 6:19–6:22 | 6 | 2 | 4 | 6:19, 6:20, 6:21, 6:22 | boundary, ἵνα |
+
+
 ## Mood Distribution
 ### Moods
 | item | count |
@@ -203,14 +406,10 @@ Generated from interlinear token data. These are observable signals, not an outl
 ## Repeated Lemmas
 | lemma | count | refs |
 | --- | --- | --- |
-| πᾶς | 52 | 1:3, 1:8, 1:10, 1:11, 1:15, 1:21, 1:22, 1:23, 2:3, 2:21, 3:8, 3:9 |
 | Χριστός | 46 | 1:1, 1:2, 1:3, 1:5, 1:10, 1:12, 1:17, 1:20, 2:5, 2:6, 2:7, 2:10 |
 | θεός | 31 | 1:1, 1:2, 1:3, 1:17, 2:4, 2:8, 2:10, 2:16, 2:19, 2:22, 3:2, 3:7 |
 | κύριος | 26 | 1:2, 1:3, 1:15, 1:17, 2:21, 3:11, 4:1, 4:5, 4:17, 5:8, 5:10, 5:17 |
-| κατά | 24 | 1:5, 1:7, 1:9, 1:11, 1:15, 1:19, 2:2, 3:3, 3:7, 3:11, 3:16, 3:20 |
-| ἵνα | 23 | 1:17, 2:7, 2:9, 2:10, 2:15, 3:10, 3:16, 3:18, 3:19, 4:10, 4:14, 4:28 |
 | Ἰησοῦς | 20 | 1:1, 1:2, 1:3, 1:5, 1:15, 1:17, 2:6, 2:7, 2:10, 2:13, 2:20, 3:1 |
-| ὡς | 16 | 2:3, 3:5, 5:1, 5:8, 5:15, 5:22, 5:23, 5:24, 5:28, 5:33, 6:5, 6:6 |
 | ἅγιος | 15 | 1:1, 1:4, 1:13, 1:15, 1:18, 2:19, 2:21, 3:5, 3:8, 3:18, 4:12, 4:30 |
 | εἷς | 15 | 2:14, 2:15, 2:16, 2:18, 4:4, 4:5, 4:6, 4:7, 4:16, 5:31, 5:33 |
 | ἑαυτοῦ | 15 | 2:15, 4:16, 4:19, 4:32, 5:2, 5:19, 5:25, 5:27, 5:28, 5:29, 5:33 |
@@ -218,15 +417,12 @@ Generated from interlinear token data. These are observable signals, not an outl
 | ἀλλά | 13 | 1:21, 2:19, 4:29, 5:4, 5:15, 5:17, 5:18, 5:24, 5:27, 5:29, 6:4, 6:6 |
 | χάρις | 12 | 1:2, 1:6, 1:7, 2:5, 2:7, 2:8, 3:2, 3:7, 3:8, 4:7, 4:29, 6:24 |
 | δίδωμι | 12 | 1:17, 1:22, 3:2, 3:7, 3:8, 3:16, 4:7, 4:8, 4:11, 4:27, 4:29, 6:19 |
-| ὅτι | 12 | 2:11, 2:12, 2:18, 4:9, 4:25, 5:5, 5:16, 5:23, 5:30, 6:8, 6:9, 6:12 |
 | πατήρ | 11 | 1:2, 1:3, 1:17, 2:18, 3:14, 4:6, 5:20, 5:31, 6:2, 6:4, 6:23 |
-| ἐπί | 11 | 1:10, 1:16, 2:7, 2:10, 2:20, 3:15, 4:6, 4:26, 5:6, 6:3 |
 | καθώς | 10 | 1:4, 3:3, 4:4, 4:17, 4:21, 4:32, 5:2, 5:3, 5:25, 5:29 |
 | ἀγάπη | 10 | 1:4, 1:15, 2:4, 3:17, 3:19, 4:2, 4:15, 4:16, 5:2, 6:23 |
 | ἀγαπάω | 10 | 1:6, 2:4, 5:2, 5:25, 5:28, 5:33, 6:24 |
 | ὑπέρ | 10 | 1:16, 1:22, 3:1, 3:13, 3:20, 5:2, 5:20, 5:25, 6:19, 6:20 |
 | ποιέω | 10 | 1:16, 2:3, 2:14, 2:15, 3:11, 3:20, 4:16, 6:6, 6:8, 6:9 |
-| τίς | 9 | 1:18, 1:19, 3:9, 3:18, 4:9, 5:10, 5:17, 6:21 |
 | ἐκκλησία | 9 | 1:22, 3:10, 3:21, 5:23, 5:24, 5:25, 5:27, 5:29, 5:32 |
 | σῶμα | 9 | 1:23, 2:16, 4:4, 4:12, 4:16, 5:23, 5:28, 5:30 |
 | σάρξ | 9 | 2:3, 2:11, 2:14, 5:29, 5:31, 6:5, 6:12 |
@@ -236,15 +432,12 @@ Generated from interlinear token data. These are observable signals, not an outl
 | δόξα | 8 | 1:6, 1:12, 1:14, 1:17, 1:18, 3:13, 3:16, 3:21 |
 | ἔχω | 8 | 1:7, 2:12, 2:18, 3:12, 4:28, 5:5, 5:27 |
 | πίστις | 8 | 1:15, 2:8, 3:12, 3:17, 4:5, 4:13, 6:16, 6:23 |
-| ἐκ | 8 | 1:20, 2:8, 2:9, 3:15, 4:16, 4:29, 5:14, 6:6 |
 | περιπατέω | 8 | 2:2, 2:10, 4:1, 4:17, 5:2, 5:8, 5:15 |
 | γίνομαι | 8 | 2:13, 3:7, 4:32, 5:1, 5:7, 5:12, 5:17, 6:3 |
 | θέλημα | 7 | 1:1, 1:5, 1:9, 1:11, 2:3, 5:17, 6:6 |
 | αἰών | 7 | 1:21, 2:2, 2:7, 3:9, 3:11, 3:21 |
 | λέγω | 7 | 2:11, 4:8, 4:17, 5:12, 5:14, 5:32 |
 | οὖν | 7 | 2:19, 4:1, 4:17, 5:1, 5:7, 5:15, 6:14 |
-| ἤ | 7 | 3:20, 5:3, 5:4, 5:5, 5:27 |
-| μετά | 7 | 4:2, 4:25, 6:5, 6:7, 6:23, 6:24 |
 | ἀνήρ | 7 | 4:13, 5:22, 5:23, 5:24, 5:25, 5:28, 5:33 |
 | γνωρίζω | 6 | 1:9, 3:3, 3:5, 3:10, 6:19, 6:21 |
 | μυστήριον | 6 | 1:9, 3:3, 3:4, 3:9, 5:32, 6:19 |
@@ -283,7 +476,6 @@ Generated from interlinear token data. These are observable signals, not an outl
 | κτίζω | 4 | 2:10, 2:15, 3:9, 4:24 |
 | ἀγαθός | 4 | 2:10, 4:28, 4:29, 6:8 |
 | οἰκοδομή | 4 | 2:21, 4:12, 4:16, 4:29 |
-| εἰ | 4 | 3:2, 4:9, 4:21, 4:29 |
 | ἀλλήλων | 4 | 4:2, 4:25, 4:32, 5:21 |
 | οὕτω(ς) | 4 | 4:20, 5:24, 5:28, 5:33 |
 | πνευματικός | 3 | 1:3, 5:19, 6:12 |
@@ -303,6 +495,17 @@ Generated from interlinear token data. These are observable signals, not an outl
 | ὀνομάζω | 3 | 1:21, 3:15, 5:3 |
 | ὑποτάσσω | 3 | 1:22, 5:21, 5:24 |
 | ὀργή | 3 | 2:3, 4:31, 5:6 |
+| τις | 3 | 2:9, 4:29, 5:27 |
+| ἀμφότεροι | 3 | 2:14, 2:16, 2:18 |
+| προφήτης | 3 | 2:20, 3:5, 4:11 |
+| γινώσκω | 3 | 3:19, 5:5, 6:22 |
+| μέτρον | 3 | 4:7, 4:13, 4:16 |
+| ἀναβαίνω | 3 | 4:8, 4:9, 4:10 |
+| μηκέτι | 3 | 4:14, 4:17, 4:28 |
+| παραδίδωμι | 3 | 4:19, 5:2, 5:25 |
+| ἐνδύω | 3 | 4:24, 6:11, 6:14 |
+| δικαιοσύνη | 3 | 4:24, 5:9, 6:14 |
+| λαλέω | 3 | 4:25, 5:19, 6:20 |
 
 ## Contrast Markers / Pairs
 | pair | from_ref | from_surface | to_ref | to_surface | distance_tokens |
@@ -322,63 +525,24 @@ Generated from interlinear token data. These are observable signals, not an outl
 ## Possible Boundary Signals
 | ref | score | signals |
 | --- | --- | --- |
-| 1:18 | 1 | question signal: ['τίς', '⸀τίς'] |
-| 1:19 | 1 | question signal: ['τί'] |
 | 2:11 | 3 | strong discourse marker: ['διό']; imperative present: ['μνημονεύω']; mood shift: indicative → imperative |
-| 2:12 | 1 | mood shift: imperative → indicative |
 | 2:19 | 2 | strong discourse marker: ['ἄρα', 'οὖν']; marker density: 3 |
-| 3:9 | 1 | question signal: ['τίς'] |
-| 3:13 | 1 | strong discourse marker: ['διό'] |
-| 3:18 | 1 | question signal: ['τί'] |
-| 4:1 | 1 | strong discourse marker: ['οὖν'] |
-| 4:8 | 1 | strong discourse marker: ['διό'] |
 | 4:9 | 2 | marker density: 3; question signal: ['τί', 'γῆς;'] |
-| 4:11 | 1 | marker density: 4 |
-| 4:17 | 1 | strong discourse marker: ['οὖν'] |
 | 4:25 | 3 | strong discourse marker: ['διό']; imperative present: ['λαλέω']; mood shift: indicative → imperative |
-| 4:26 | 1 | imperative present: ['ὀργίζομαι', 'ἁμαρτάνω', 'ἐπιδύω'] |
-| 4:27 | 1 | imperative present: ['δίδωμι'] |
-| 4:28 | 1 | imperative present: ['κλέπτω', 'κοπιάω'] |
 | 4:29 | 2 | marker density: 3; imperative present: ['ἐκπορεύομαι'] |
-| 4:30 | 1 | imperative present: ['λυπέω'] |
-| 4:31 | 1 | imperative present: ['αἴρω'] |
-| 4:32 | 1 | imperative present: ['γίνομαι'] |
 | 5:1 | 2 | strong discourse marker: ['οὖν']; imperative present: ['γίνομαι'] |
-| 5:2 | 1 | imperative present: ['περιπατέω'] |
-| 5:3 | 1 | imperative present: ['ὀνομάζω'] |
-| 5:4 | 1 | mood shift: imperative → indicative |
 | 5:5 | 2 | imperative present: ['οἶδα']; mood shift: indicative → imperative |
-| 5:6 | 1 | imperative present: ['ἀπατάω'] |
 | 5:7 | 2 | strong discourse marker: ['οὖν']; imperative present: ['γίνομαι'] |
 | 5:8 | 2 | marker density: 3; imperative present: ['περιπατέω'] |
 | 5:10 | 2 | mood shift: imperative → indicative; question signal: ['τί'] |
 | 5:11 | 2 | imperative present: ['συγκοινωνέω', 'ἐλέγχω']; mood shift: indicative → imperative |
-| 5:12 | 1 | mood shift: imperative → indicative |
 | 5:14 | 3 | strong discourse marker: ['διό']; imperative present: ['ἐγείρω', 'ἀνίστημι']; mood shift: indicative → imperative |
 | 5:15 | 4 | strong discourse marker: ['οὖν']; marker density: 4; imperative present: ['βλέπω']; question signal: ['πῶς⸃'] |
-| 5:16 | 1 | mood shift: imperative → indicative |
 | 5:17 | 3 | imperative present: ['γίνομαι', 'συνίημι']; mood shift: indicative → imperative; question signal: ['τί'] |
-| 5:18 | 1 | imperative present: ['μεθύσκομαι', 'πληρόω'] |
-| 5:23 | 1 | mood shift: imperative → indicative |
 | 5:25 | 2 | imperative present: ['ἀγαπάω']; mood shift: indicative → imperative |
-| 5:27 | 1 | marker density: 3 |
-| 5:28 | 1 | mood shift: imperative → indicative |
-| 5:29 | 1 | marker density: 3 |
 | 5:33 | 3 | marker density: 4; imperative present: ['ἀγαπάω']; mood shift: indicative → imperative |
-| 6:1 | 1 | imperative present: ['ὑπακούω'] |
-| 6:2 | 1 | imperative present: ['τιμάω'] |
-| 6:3 | 1 | mood shift: imperative → indicative |
 | 6:4 | 2 | imperative present: ['παροργίζω', 'ἐκτρέφω']; mood shift: indicative → imperative |
-| 6:5 | 1 | imperative present: ['ὑπακούω'] |
-| 6:6 | 1 | marker density: 3 |
-| 6:8 | 1 | mood shift: imperative → indicative |
 | 6:9 | 2 | imperative present: ['ποιέω']; mood shift: indicative → imperative |
-| 6:10 | 1 | imperative present: ['ἐνδυναμόω'] |
-| 6:11 | 1 | imperative present: ['ἐνδύω'] |
-| 6:12 | 1 | mood shift: imperative → indicative |
 | 6:13 | 2 | imperative present: ['ἀναλαμβάνω']; mood shift: indicative → imperative |
 | 6:14 | 2 | strong discourse marker: ['οὖν']; imperative present: ['ἵστημι'] |
-| 6:16 | 1 | mood shift: imperative → indicative |
 | 6:17 | 2 | imperative present: ['δέχομαι']; mood shift: indicative → imperative |
-| 6:20 | 1 | mood shift: imperative → indicative |
-| 6:21 | 1 | question signal: ['τί'] |

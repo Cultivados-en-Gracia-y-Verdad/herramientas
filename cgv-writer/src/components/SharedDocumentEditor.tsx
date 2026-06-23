@@ -6,7 +6,6 @@ import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 import { HighlightStyle, syntaxHighlighting } from "@codemirror/language";
 import { SearchQuery } from "@codemirror/search";
 import { tags } from "@lezer/highlight";
-import { getInlineBibleReferenceAtPosition, type BibleIndex } from "cgv-bible";
 import {
   applyCmSearchHighlight,
   cmSearchHighlightExtension,
@@ -17,9 +16,9 @@ import {
   setCmSearchHighlight
 } from "../lib/codemirror-search-highlight";
 import { cgvBlankHighlightExtension } from "../lib/codemirror-underline-blank";
+import { bibleReferenceClickHandlers } from "../lib/codemirror-h3-click";
 import { codemirrorManualMode } from "../lib/codemirror-manual-mode";
 import { bodyStartInContent, CGV_BULLET_LINE_PREFIX } from "../lib/markdown-html";
-import { isLikelyBibleReference } from "../lib/markdown-html";
 import { useBible } from "../lib/bible-context";
 import { formatScriptureLine, type ResolveBibleReferenceResult } from "../lib/bible-client";
 import type { OutlineNavigateRequest } from "../lib/outline-bridge";
@@ -109,6 +108,44 @@ function applyBullet(view: EditorView) {
   view.focus();
 }
 
+function insertManualH5Line(view: EditorView, mode: SharedEditorMode): boolean {
+  if (mode !== "manual") return false;
+
+  const selection = view.state.selection.main;
+  if (!selection.empty) return false;
+
+  const line = view.state.doc.lineAt(selection.head);
+  const offset = selection.head - line.from;
+  const before = line.text.slice(0, offset);
+  const after = line.text.slice(offset);
+
+  if (/^#{1,3}\s+/.test(line.text)) {
+    view.dispatch({
+      changes: { from: line.to, insert: "\n##### " },
+      selection: { anchor: line.to + 7 }
+    });
+    return true;
+  }
+
+  if (after.trim()) return false;
+
+  if (!line.text.trim()) {
+    view.dispatch({
+      changes: { from: line.from, to: line.to, insert: "##### " },
+      selection: { anchor: line.from + 6 }
+    });
+    return true;
+  }
+
+  if (!before.trim()) return false;
+
+  view.dispatch({
+    changes: { from: selection.head, insert: "\n##### " },
+    selection: { anchor: selection.head + 7 }
+  });
+  return true;
+}
+
 function wrapSelection(view: EditorView, before: string, after = before) {
   const range = view.state.selection.main;
   const selected = view.state.sliceDoc(range.from, range.to);
@@ -136,16 +173,6 @@ function blockStyleAtSelection(state: EditorState): string {
   if (heading) return `h${heading[1].length}`;
   if (/^-\s+/.test(line)) return "list";
   return "paragraph";
-}
-
-function bibleReferenceFromHeadingLine(text: string): string {
-  const plain = text.match(/^###\s+(.+)$/);
-  const legacy = text.match(/^<!--\s*###\s+([\s\S]*?)\s*-->$/);
-  const reference = (plain?.[1] ?? legacy?.[1] ?? "")
-    .replace(/<\/?u>/gi, "")
-    .replace(/[*_]/g, "")
-    .trim();
-  return isLikelyBibleReference(reference) ? reference : "";
 }
 
 function SharedToolbar({
@@ -212,8 +239,10 @@ export function SharedDocumentEditor({
   onToggleMode
 }: SharedDocumentEditorProps) {
   const hostRef = useRef<HTMLDivElement>(null);
+  const mountRef = useRef<HTMLDivElement>(null);
   const viewRef = useRef<EditorView | null>(null);
   const modeCompartment = useRef(new Compartment());
+  const syntaxCompartment = useRef(new Compartment());
   const onChangeRef = useRef(onChange);
   const onDirtyRef = useRef(onDirty);
   const valueRef = useRef(value);
@@ -226,8 +255,7 @@ export function SharedDocumentEditor({
     headingFrom?: number | null
   ) => void>(() => {});
   const onToggleModeRef = useRef(onToggleMode);
-  const { resolveReference, status: bibleStatus, index: bibleIndex } = useBible();
-  const bibleIndexRef = useRef<BibleIndex | null>(bibleIndex);
+  const { resolveReference, status: bibleStatus } = useBible();
   const [biblePopup, setBiblePopup] = useState<{
     kind: "h3" | "inline";
     reference: string;
@@ -243,7 +271,6 @@ export function SharedDocumentEditor({
   valueRef.current = value;
   modeRef.current = mode;
   onToggleModeRef.current = onToggleMode;
-  bibleIndexRef.current = bibleIndex;
 
   openBibleRef.current = (reference, kind, headingFrom = null) => {
     setBiblePopup({ kind, reference, headingFrom, loading: true, error: null, result: null });
@@ -283,7 +310,7 @@ export function SharedDocumentEditor({
   };
 
   useEffect(() => {
-    if (!hostRef.current) return;
+    if (!mountRef.current) return;
     const updateListener = EditorView.updateListener.of(update => {
       if (update.selectionSet || update.docChanged) {
         setActiveStyle(blockStyleAtSelection(update.state));
@@ -295,9 +322,13 @@ export function SharedDocumentEditor({
       onChangeRef.current(doc);
       onDirtyRef.current?.();
     });
-    const useSyntaxHighlight = value.length <= LARGE_MARKDOWN_CHARS;
     const viewSwitchKeymap = Prec.highest(
       keymap.of([
+        {
+          key: "Enter",
+          preventDefault: true,
+          run: view => insertManualH5Line(view, modeRef.current)
+        },
         {
           key: "Mod-/",
           preventDefault: true,
@@ -308,116 +339,13 @@ export function SharedDocumentEditor({
         }
       ])
     );
-    const openInlineReferenceAtPosition = (view: EditorView, position: number): boolean => {
-      const index = bibleIndexRef.current;
-      if (!index) return false;
-
-      const line = view.state.doc.lineAt(position);
-      if (/^###\s+/.test(line.text)) return false;
-
-      const match = getInlineBibleReferenceAtPosition(line.text, position - line.from, index);
-      if (!match) return false;
-      openBibleRef.current(match.reference, "inline");
-      return true;
-    };
-    const openInlineReferenceAtDomPosition = (
-      lineElement: Element,
-      caretNode: Node,
-      caretOffset: number
-    ): boolean => {
-      const index = bibleIndexRef.current;
-      if (!index || !lineElement.contains(caretNode)) return false;
-
-      const visibleText = lineElement.textContent ?? "";
-      const range = document.createRange();
-      range.selectNodeContents(lineElement);
-      range.setEnd(caretNode, caretOffset);
-      const visibleOffset = range.toString().length;
-      const match = getInlineBibleReferenceAtPosition(visibleText, visibleOffset, index);
-      if (!match) return false;
-      openBibleRef.current(match.reference, "inline");
-      return true;
-    };
-    const bibleReferenceClicks = EditorView.domEventHandlers({
-      click(event, view) {
-        if (modeRef.current !== "manual") return false;
-        if (!view.state.selection.main.empty) return false;
-        const target = event.target;
-        if (!(target instanceof Element)) return false;
-
-        const lineElement = target.closest(".cm-line");
-        if (!lineElement) return false;
-        const caretDocument = document as Document & {
-          caretPositionFromPoint?: (x: number, y: number) => { offsetNode: Node; offset: number } | null;
-          caretRangeFromPoint?: (x: number, y: number) => Range | null;
-        };
-        const caretPosition = caretDocument.caretPositionFromPoint?.(event.clientX, event.clientY);
-        const caretRange = caretPosition
-          ? null
-          : caretDocument.caretRangeFromPoint?.(event.clientX, event.clientY);
-        const caretNode = caretPosition?.offsetNode ?? caretRange?.startContainer;
-        const caretOffset = caretPosition?.offset ?? caretRange?.startOffset;
-        const clickedPosition = caretNode && caretOffset !== undefined && lineElement.contains(caretNode)
-          ? view.posAtDOM(caretNode, caretOffset)
-          : view.posAtDOM(lineElement);
-        const line = view.state.doc.lineAt(clickedPosition);
-        const visibleHeadingReference = lineElement.classList.contains("cm-cgv-manual-h3")
-          ? (lineElement.textContent ?? "").trim()
-          : "";
-        if (isLikelyBibleReference(visibleHeadingReference)) {
-          event.preventDefault();
-          openBibleRef.current(visibleHeadingReference, "h3", line.from);
-          return true;
-        }
-
-        const headingReference = bibleReferenceFromHeadingLine(line.text);
-        if (headingReference) {
-          event.preventDefault();
-          openBibleRef.current(headingReference, "h3", line.from);
-          return true;
-        }
-        if (
-          caretNode &&
-          caretOffset !== undefined &&
-          openInlineReferenceAtDomPosition(lineElement, caretNode, caretOffset)
-        ) {
-          event.preventDefault();
-          return true;
-        }
-
-        const formatted = target.closest(
-          ".cm-cgv-manual-underline, .cm-cgv-manual-bold, .cm-cgv-manual-italic"
-        );
-        if (formatted && view.dom.contains(formatted)) {
-          const textNode = formatted.firstChild;
-          const textLength = textNode?.textContent?.length ?? 0;
-          if (textNode && textLength > 0) {
-            const box = formatted.getBoundingClientRect();
-            const ratio = box.width > 0
-              ? Math.max(0, Math.min(1, (event.clientX - box.left) / box.width))
-              : 0;
-            const offset = Math.max(0, Math.min(textLength, Math.round(textLength * ratio)));
-            const position = view.posAtDOM(textNode, offset);
-            event.preventDefault();
-            if (openInlineReferenceAtPosition(view, position)) return true;
-            view.dispatch({ selection: { anchor: position } });
-            view.focus();
-            return true;
-          }
-        }
-
-        if (!caretNode || caretOffset === undefined || !lineElement.contains(caretNode)) return false;
-
-        const position = Math.max(
-          line.from,
-          Math.min(line.to, clickedPosition)
-        );
-        event.preventDefault();
-        if (openInlineReferenceAtPosition(view, position)) return true;
-        view.dispatch({ selection: { anchor: position } });
-        view.focus();
-        return true;
-      }
+    const useSyntaxHighlight = value.length <= LARGE_MARKDOWN_CHARS;
+    const syntaxExtensions =
+      mode !== "manual" && useSyntaxHighlight
+        ? [syntaxHighlighting(markdownHighlightStyle)]
+        : [];
+    const bibleReferenceClicks = bibleReferenceClickHandlers(modeRef, (reference, kind, headingFrom = null) => {
+      openBibleRef.current(reference, kind, headingFrom);
     });
     const state = EditorState.create({
       doc: value,
@@ -428,7 +356,7 @@ export function SharedDocumentEditor({
         cmSearchHighlightExtension(),
         cgvBlankHighlightExtension,
         markdown({ base: markdownLanguage }),
-        ...(useSyntaxHighlight ? [syntaxHighlighting(markdownHighlightStyle)] : []),
+        syntaxCompartment.current.of(syntaxExtensions),
         editorTheme,
         viewSwitchKeymap,
         keymap.of([...defaultKeymap, ...historyKeymap]),
@@ -438,7 +366,7 @@ export function SharedDocumentEditor({
         modeCompartment.current.of(mode === "manual" ? codemirrorManualMode : [])
       ]
     });
-    const view = new EditorView({ state, parent: hostRef.current });
+    const view = new EditorView({ state, parent: mountRef.current });
     viewRef.current = view;
     setActiveStyle(blockStyleAtSelection(view.state));
     return () => {
@@ -450,8 +378,14 @@ export function SharedDocumentEditor({
   useEffect(() => {
     const view = viewRef.current;
     if (!view) return;
+    const useSyntaxHighlight = valueRef.current.length <= LARGE_MARKDOWN_CHARS;
     view.dispatch({
-      effects: modeCompartment.current.reconfigure(mode === "manual" ? codemirrorManualMode : [])
+      effects: [
+        modeCompartment.current.reconfigure(mode === "manual" ? codemirrorManualMode : []),
+        syntaxCompartment.current.reconfigure(
+          mode !== "manual" && useSyntaxHighlight ? [syntaxHighlighting(markdownHighlightStyle)] : []
+        )
+      ]
     });
     requestAnimationFrame(() => view.focus());
   }, [mode]);
@@ -598,7 +532,9 @@ export function SharedDocumentEditor({
         }}
       >
         {mode === "manual" && <SharedToolbar viewRef={viewRef} activeStyle={activeStyle} />}
-        <div className="editor-host" ref={hostRef} />
+        <div className="editor-host" ref={hostRef}>
+          <div className="editor-mount" ref={mountRef} />
+        </div>
       </div>
       <BibleReferencePopup
         open={Boolean(biblePopup)}

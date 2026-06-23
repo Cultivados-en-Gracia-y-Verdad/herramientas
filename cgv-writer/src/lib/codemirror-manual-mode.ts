@@ -1,40 +1,48 @@
-import type { EditorState, Extension, Range } from "@codemirror/state";
+import type { EditorState, Extension, Range, Text } from "@codemirror/state";
 import {
   Decoration,
   EditorView,
   ViewPlugin,
-  WidgetType,
   type DecorationSet,
   type ViewUpdate
 } from "@codemirror/view";
+import { findInlineBibleReferenceMatches } from "cgv-bible";
+import { BIBLE_INDEX_UPDATED_EVENT, getSharedBibleIndex } from "./bible-index-store";
+
+/** Hide markdown syntax with marks (not replace) so mouse selection keeps working. */
 
 interface ManualLineStyle {
   className: string;
-  label: string;
   prefixLength: number;
   suffixLength: number;
   legacyComment?: boolean;
-  widget?: WidgetType;
 }
 
-class ManualLabelWidget extends WidgetType {
-  constructor(
-    private readonly label: string,
-    private readonly className: string
-  ) {
-    super();
+const hiddenMark = Decoration.mark({ class: "cm-cgv-manual-hidden" });
+
+function findTableLineNumbers(doc: Text): Set<number> {
+  const lines = new Set<number>();
+  let lineNumber = 1;
+
+  while (lineNumber <= doc.lines) {
+    const text = doc.line(lineNumber).text;
+    if (!/^\|.+\|/.test(text.trim()) && !/^\|.*\|/.test(text.trim())) {
+      lineNumber += 1;
+      continue;
+    }
+
+    let index = lineNumber;
+    while (index <= doc.lines) {
+      const row = doc.line(index).text;
+      if (!row.trim()) break;
+      if (!row.includes("|")) break;
+      lines.add(index);
+      index += 1;
+    }
+    lineNumber = index;
   }
 
-  eq(other: ManualLabelWidget): boolean {
-    return other.label === this.label && other.className === this.className;
-  }
-
-  toDOM(): HTMLElement {
-    const element = document.createElement("span");
-    element.className = this.className;
-    element.textContent = this.label;
-    return element;
-  }
+  return lines;
 }
 
 function previousNonBlankLine(view: EditorView, lineNumber: number): string {
@@ -56,7 +64,6 @@ function frontMatterEndLine(state: EditorState): number {
 function headingStyle(level: number, prefixLength: number, suffixLength = 0): ManualLineStyle {
   return {
     className: `cm-cgv-manual-h${level}`,
-    label: "",
     prefixLength,
     suffixLength
   };
@@ -66,14 +73,19 @@ function classifyLine(
   view: EditorView,
   lineNumber: number,
   text: string,
-  frontMatterEnd: number
+  frontMatterEnd: number,
+  tableLines: Set<number>
 ): ManualLineStyle {
   if (frontMatterEnd && lineNumber <= frontMatterEnd) {
-    return { className: "cm-cgv-manual-yaml", label: "", prefixLength: 0, suffixLength: 0 };
+    return { className: "cm-cgv-manual-yaml", prefixLength: 0, suffixLength: 0 };
   }
 
   if (!text.trim()) {
-    return { className: "cm-cgv-manual-blank", label: "", prefixLength: 0, suffixLength: 0 };
+    return { className: "cm-cgv-manual-blank", prefixLength: 0, suffixLength: 0 };
+  }
+
+  if (tableLines.has(lineNumber)) {
+    return { className: "cm-cgv-manual-table-row", prefixLength: 0, suffixLength: 0 };
   }
 
   const wrappedHeading = text.match(/^<!--\s*(#{1,6}\s+)([\s\S]*?)\s*-->$/);
@@ -94,71 +106,36 @@ function classifyLine(
   if (bullet) {
     return {
       className: "cm-cgv-manual-bullet",
-      label: "",
       prefixLength: bullet[0].length,
       suffixLength: 0
     };
   }
 
   if (/^:\s*/.test(text)) {
-    return {
-      className: "cm-cgv-manual-definition",
-      label: "",
-      prefixLength: 0,
-      suffixLength: 0
-    };
+    return { className: "cm-cgv-manual-definition", prefixLength: 0, suffixLength: 0 };
   }
 
-  const quiz = text.match(/^<!--\s*@quiz\s+#?([^\s]+)\s*-->$/);
-  if (quiz) {
-    return {
-      className: "cm-cgv-manual-quiz",
-      label: "",
-      prefixLength: 0,
-      suffixLength: 0,
-      widget: new ManualLabelWidget(`Quiz: ${quiz[1]}`, "cm-cgv-manual-widget cm-cgv-manual-widget--quiz")
-    };
+  if (/^<!--\s*@quiz\s+#?([^\s]+)\s*-->$/i.test(text)) {
+    return { className: "cm-cgv-manual-quiz", prefixLength: 0, suffixLength: 0 };
   }
 
   if (/^---\s*$/.test(text)) {
-    return {
-      className: "cm-cgv-manual-break",
-      label: "",
-      prefixLength: 0,
-      suffixLength: 0,
-      widget: new ManualLabelWidget("Nueva diapositiva", "cm-cgv-manual-widget cm-cgv-manual-widget--break")
-    };
+    return { className: "cm-cgv-manual-break", prefixLength: 0, suffixLength: 0 };
   }
 
   if (text.trim() && /^###\s+/.test(previousNonBlankLine(view, lineNumber))) {
-    return {
-      className: "cm-cgv-manual-scripture",
-      label: "",
-      prefixLength: 0,
-      suffixLength: 0
-    };
+    return { className: "cm-cgv-manual-scripture", prefixLength: 0, suffixLength: 0 };
   }
 
-  return {
-    className: "cm-cgv-manual-paragraph",
-    label: "",
-    prefixLength: 0,
-    suffixLength: 0
-  };
+  return { className: "cm-cgv-manual-paragraph", prefixLength: 0, suffixLength: 0 };
 }
 
-function addReplacement(
+function addHidden(
   decorations: Range<Decoration>[],
-  atomic: Range<Decoration>[],
   from: number,
-  to: number,
-  widget?: WidgetType
+  to: number
 ) {
-  if (to <= from) return;
-  const replacement = Decoration.replace(widget ? { widget } : {});
-  const range = replacement.range(from, to);
-  decorations.push(range);
-  atomic.push(range);
+  if (to > from) decorations.push(hiddenMark.range(from, to));
 }
 
 function addInlineDecorations(
@@ -166,15 +143,21 @@ function addInlineDecorations(
   lineFrom: number,
   contentStart: number,
   contentEnd: number,
-  decorations: Range<Decoration>[],
-  atomic: Range<Decoration>[]
+  scriptureLine: boolean,
+  decorations: Range<Decoration>[]
 ) {
   const patterns = [
     { regex: /__<u>([^<\n]+)<\/u>__/g, open: 5, close: 6, className: "cm-cgv-manual-underline" },
     { regex: /<u>([^<\n]+)<\/u>/g, open: 3, close: 4, className: "cm-cgv-manual-underline" },
     { regex: /\*\*([^*\n]+)\*\*/g, open: 2, close: 2, className: "cm-cgv-manual-bold" },
     { regex: /__([^_\n]+)__/g, open: 2, close: 2, className: "cm-cgv-manual-bold" },
-    { regex: /(^|[^*])\*([^*\n]+)\*(?!\*)/g, open: 1, close: 1, className: "cm-cgv-manual-italic", leading: true }
+    {
+      regex: /(^|[^*])\*([^*\n]+)\*(?!\*)/g,
+      open: 1,
+      close: 1,
+      className: scriptureLine ? "cm-cgv-manual-scripture-text" : "cm-cgv-manual-italic",
+      leading: true
+    }
   ];
   const occupied: Array<{ from: number; to: number }> = [];
 
@@ -191,23 +174,39 @@ function addInlineDecorations(
       if (occupied.some(range => start < range.to && end > range.from)) continue;
       occupied.push({ from: start, to: end });
 
-      addReplacement(decorations, atomic, start, innerFrom);
+      addHidden(decorations, start, innerFrom);
       decorations.push(Decoration.mark({ class: pattern.className }).range(innerFrom, innerTo));
-      addReplacement(decorations, atomic, innerTo, end);
+      addHidden(decorations, innerTo, end);
     }
   }
 }
 
-interface ManualDecorationSets {
-  decorations: DecorationSet;
-  atomic: DecorationSet;
+function addInlineBibleRefs(
+  text: string,
+  lineFrom: number,
+  style: ManualLineStyle,
+  decorations: Range<Decoration>[]
+) {
+  const index = getSharedBibleIndex();
+  if (!index) return;
+  if (style.className.includes("cm-cgv-manual-h3")) return;
+  if (style.className.includes("yaml") || style.className.includes("quiz")) return;
+
+  for (const match of findInlineBibleReferenceMatches(text, index)) {
+    decorations.push(
+      Decoration.mark({ class: "cm-cgv-inline-bible-ref" }).range(
+        lineFrom + match.start,
+        lineFrom + match.end
+      )
+    );
+  }
 }
 
-function buildDecorations(view: EditorView): ManualDecorationSets {
+function buildDecorations(view: EditorView): DecorationSet {
   const decorations: Range<Decoration>[] = [];
-  const atomic: Range<Decoration>[] = [];
   const seen = new Set<number>();
   const frontMatterEnd = frontMatterEndLine(view.state);
+  const tableLines = findTableLineNumbers(view.state.doc);
 
   for (const visible of view.visibleRanges) {
     const first = view.state.doc.lineAt(visible.from).number;
@@ -218,29 +217,18 @@ function buildDecorations(view: EditorView): ManualDecorationSets {
       seen.add(number);
 
       const line = view.state.doc.line(number);
-      const style = classifyLine(view, number, line.text, frontMatterEnd);
-      const active = view.state.selection.ranges.some(
-        range => range.from <= line.to && range.to >= line.from
-      );
-      const classes = ["cm-cgv-manual-line", style.className, active ? "cm-cgv-manual-line--active" : ""]
-        .filter(Boolean)
-        .join(" ");
+      const style = classifyLine(view, number, line.text, frontMatterEnd, tableLines);
 
       decorations.push(
         Decoration.line({
-          attributes: { class: classes, "data-cgv-label": style.label }
+          attributes: { class: `cm-cgv-manual-line ${style.className}` }
         }).range(line.from)
       );
 
-      if (style.widget) {
-        addReplacement(decorations, atomic, line.from, line.to, style.widget);
-        continue;
-      }
-
       const contentStart = line.from + style.prefixLength;
       const contentEnd = line.to - style.suffixLength;
-      addReplacement(decorations, atomic, line.from, contentStart);
-      addReplacement(decorations, atomic, contentEnd, line.to);
+      addHidden(decorations, line.from, contentStart);
+      addHidden(decorations, contentEnd, line.to);
 
       if (style.legacyComment && contentEnd > contentStart) {
         decorations.push(
@@ -248,39 +236,46 @@ function buildDecorations(view: EditorView): ManualDecorationSets {
         );
       }
 
+      const scriptureLine =
+        style.className.includes("scripture") || style.className.includes("cm-cgv-manual-h4");
+
       addInlineDecorations(
         line.text,
         line.from,
         contentStart,
         contentEnd,
-        decorations,
-        atomic
+        scriptureLine,
+        decorations
       );
+
+      addInlineBibleRefs(line.text, line.from, style, decorations);
     }
   }
 
-  return {
-    decorations: Decoration.set(decorations, true),
-    atomic: Decoration.set(atomic, true)
-  };
+  return Decoration.set(decorations, true);
 }
 
 const manualDecorations = ViewPlugin.fromClass(
   class {
-    decorations: DecorationSet;
-    atomic: DecorationSet;
+    decorations!: DecorationSet;
+    private onBibleIndex = () => {
+      this.decorations = buildDecorations(this.view);
+    };
+    private view!: EditorView;
 
     constructor(view: EditorView) {
-      const sets = buildDecorations(view);
-      this.decorations = sets.decorations;
-      this.atomic = sets.atomic;
+      this.view = view;
+      window.addEventListener(BIBLE_INDEX_UPDATED_EVENT, this.onBibleIndex);
+      this.decorations = buildDecorations(view);
+    }
+
+    destroy() {
+      window.removeEventListener(BIBLE_INDEX_UPDATED_EVENT, this.onBibleIndex);
     }
 
     update(update: ViewUpdate) {
       if (update.docChanged || update.selectionSet || update.viewportChanged) {
-        const sets = buildDecorations(update.view);
-        this.decorations = sets.decorations;
-        this.atomic = sets.atomic;
+        this.decorations = buildDecorations(update.view);
       }
     }
   },
@@ -289,6 +284,5 @@ const manualDecorations = ViewPlugin.fromClass(
 
 export const codemirrorManualMode: Extension = [
   EditorView.editorAttributes.of({ class: "cm-cgv-manual-mode" }),
-  manualDecorations,
-  EditorView.atomicRanges.of(view => view.plugin(manualDecorations)?.atomic ?? Decoration.none)
+  manualDecorations
 ];

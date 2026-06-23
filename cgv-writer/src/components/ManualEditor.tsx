@@ -26,7 +26,7 @@ import {
 import {
   applyReferenceHeading,
   ensureScriptureParagraphAfterH3AtCursor,
-  handleManualEnterKey,
+  handleManualDefaultH5Enter,
   tightenPassageLayoutInEditor
 } from "../lib/manual-passage-layout";
 import { CgvH5Block } from "../lib/tiptap-cgv-h5-block";
@@ -66,7 +66,11 @@ import {
   findH3AtPos
 } from "../lib/insert-scripture-from-bible";
 import { findH3FromDomClick } from "../lib/h3-reference-click";
-import { getInlineReferenceAtDocPos, getInlineReferenceFromClick } from "../lib/inline-reference-click";
+import {
+  getInlineReferenceAtDocPos,
+  getInlineReferenceFromClick,
+  getInlineReferenceFromElement
+} from "../lib/inline-reference-click";
 import { CgvInlineBibleRefs, inlineBibleRefsPluginKey } from "../lib/tiptap-inline-bible-refs";
 import {
   BIBLE_INDEX_UPDATED_EVENT
@@ -400,6 +404,20 @@ function ManualEditorInner({
     void openBiblePopup(kind, reference, h3Pos);
   };
 
+  const handleEnterToH5 = (event: KeyboardEvent): boolean => {
+    if (event.key !== "Enter" || event.shiftKey) return false;
+
+    const ed = editorRef.current;
+    if (!ed) return false;
+
+    if (!handleManualDefaultH5Enter(ed)) return false;
+
+    event.preventDefault();
+    markManualEditorDirty();
+    scheduleSyncToMarkdown();
+    return true;
+  };
+
   const editor = useEditor(
     {
       extensions: [
@@ -432,6 +450,7 @@ function ManualEditorInner({
       editorProps: {
         attributes: { class: "manual-prosemirror" },
         handleDOMEvents: {
+          keydown: (_view, event) => handleEnterToH5(event),
           blur: () => {
             const ed = editorRef.current;
             if (ed) {
@@ -456,6 +475,8 @@ function ManualEditorInner({
             }
             return false;
           }
+
+          if (!event.metaKey && !event.ctrlKey) return false;
 
           const hit = findH3AtPos(ed, pos);
           if (hit && isLikelyBibleReference(hit.text)) {
@@ -508,14 +529,11 @@ function ManualEditorInner({
             return true;
           }
           if (event.key === "Enter" && !event.shiftKey) {
+            if (handleEnterToH5(event)) {
+              return true;
+            }
             const ed = editorRef.current;
             if (ed) {
-              if (handleManualEnterKey(ed)) {
-                event.preventDefault();
-                markManualEditorDirty();
-                scheduleSyncToMarkdown();
-                return true;
-              }
               window.setTimeout(() => ensureScriptureParagraphAfterH3AtCursor(ed), 0);
             }
           }
@@ -548,6 +566,7 @@ function ManualEditorInner({
     const onEditorClick = (event: MouseEvent) => {
       if (!isActiveRef.current) return;
       if (underlinePaintModeRef.current) return;
+      if (!event.metaKey && !event.ctrlKey) return;
 
       const target = event.target;
       if (!(target instanceof Element)) return;
@@ -568,7 +587,9 @@ function ManualEditorInner({
         return;
       }
 
-      const inline = getInlineReferenceFromClick(editor, event, bibleIndexRef.current);
+      const inline =
+        getInlineReferenceFromElement(target, bibleIndexRef.current) ??
+        getInlineReferenceFromClick(editor, event, bibleIndexRef.current);
       if (!inline) return;
 
       event.preventDefault();
