@@ -6,6 +6,7 @@ interface FileMenuProps {
   onNew: () => void;
   onOpen: () => void;
   onSave: () => void;
+  onDuplicate: () => void;
   onReopenLast: () => void;
   onTemplate: () => void;
   onQuit: () => void;
@@ -16,6 +17,7 @@ export function FileMenu({
   onNew,
   onOpen,
   onSave,
+  onDuplicate,
   onReopenLast,
   onTemplate,
   onQuit
@@ -71,6 +73,9 @@ export function FileMenu({
           <button type="button" role="menuitem" onClick={() => pick(onSave)}>
             Guardar
             <span>⌘S</span>
+          </button>
+          <button type="button" role="menuitem" onClick={() => pick(onDuplicate)}>
+            Duplicar como…
           </button>
           <hr />
           <button type="button" role="menuitem" onClick={() => pick(onTemplate)}>

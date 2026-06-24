@@ -368,7 +368,6 @@
   color: var(--cgv-link-color);
   border-bottom: 0.08em dotted currentColor;
   cursor: text;
-  pointer-events: none;
 }
 
 .manual-editor--bible-ready .manual-prosemirror .cgv-inline-bible-ref:hover {

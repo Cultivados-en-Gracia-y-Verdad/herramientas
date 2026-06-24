@@ -57,9 +57,6 @@ function resolveInlineReferenceClick(
   if (!(target instanceof Element)) return null;
   if (!target.closest(".cm-line")) return null;
 
-  const elementReference = referenceFromInlineElement(target);
-  if (elementReference) return { reference: elementReference };
-
   const pos = clickedDocumentPosition(event, view);
   if (pos === null) return null;
 
@@ -70,7 +67,12 @@ function resolveInlineReferenceClick(
   if (!index) return null;
 
   const match = getInlineBibleReferenceAtPosition(line.text, pos - line.from, index);
-  return match ? { reference: match.reference } : null;
+  if (match) return { reference: match.reference };
+
+  const elementReference = referenceFromInlineElement(target);
+  if (elementReference) return { reference: elementReference };
+
+  return null;
 }
 
 export function bibleReferenceClickHandlers(

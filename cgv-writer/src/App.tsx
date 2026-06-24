@@ -11,10 +11,12 @@ import { HeadingOutlineTree } from "./components/HeadingOutlineTree";
 import { confirmAction, deferNativeDialog } from "./lib/confirm";
 import { dispatchSearchOpen } from "./lib/search-bridge";
 import {
+  duplicateManualFile,
   loadStarterTemplate,
   openManualFile,
   readManualByPath,
-  saveManualFile
+  saveManualFile,
+  takeOpenedManualPaths
 } from "./lib/files";
 import { splitYamlBody, joinYamlBody } from "./lib/markdown-html";
 import { clearEditorPlaces } from "./lib/editor-position-bridge";
@@ -57,6 +59,9 @@ export default function App() {
   const [saving, setSaving] = useState(false);
   const dirtyRef = useRef(false);
   const quitInProgressRef = useRef(false);
+  const openRequestRef = useRef(0);
+  const externalOpenSeenRef = useRef(false);
+  const startupCompleteRef = useRef(false);
 
   useEffect(() => {
     dirtyRef.current = dirty;
@@ -260,15 +265,64 @@ export default function App() {
     }
   }, [filePath, resolveLiveContent, saving]);
 
+  const handleDuplicate = useCallback(async () => {
+    if (saving) return;
+
+    await dismissWelcomeForNativeDialog();
+    await deferNativeDialog();
+    setStatus("Duplicando…");
+
+    try {
+      const exported = await resolveLiveContent();
+      const duplicated = await duplicateManualFile(filePath, exported);
+      if (!duplicated) {
+        setStatus("Duplicado cancelado");
+        return;
+      }
+      setStatus(`Copia creada: ${duplicated.split(/[/\\]/).pop()}`);
+    } catch (error) {
+      setStatus(`Error al duplicar: ${String(error)}`);
+    }
+  }, [dismissWelcomeForNativeDialog, filePath, resolveLiveContent, saving]);
+
   const openPath = useCallback(
     async (path: string) => {
+      const requestId = openRequestRef.current + 1;
+      openRequestRef.current = requestId;
       const text = await readManualByPath(path);
+      if (requestId !== openRequestRef.current) return false;
       loadFromContent(text);
       setFilePath(path);
+      dirtyRef.current = false;
       setDirty(false);
       setStatus(`Abierto: ${path}`);
+      return true;
     },
     [loadFromContent]
+  );
+
+  const handleExternalOpenPath = useCallback(
+    async (path: string) => {
+      if (!path) return;
+
+      await dismissWelcomeForNativeDialog();
+
+      if (dirtyRef.current) {
+        const proceed = await confirmAction(
+          "Tiene cambios sin guardar. Si abre este archivo, perderá esos cambios.\n\n¿Continuar sin guardar?",
+          { title: "Abrir archivo", okLabel: "Abrir sin guardar" }
+        );
+        if (!proceed) return;
+      }
+
+      try {
+        const opened = await openPath(path);
+        if (opened) dismissWelcome();
+      } catch (error) {
+        setStatus(`Error al abrir: ${String(error)}`);
+      }
+    },
+    [dismissWelcome, dismissWelcomeForNativeDialog, openPath]
   );
 
   const handleReopenLast = useCallback(async () => {
@@ -454,6 +508,7 @@ export default function App() {
         await bind("menu-file_new", () => void handleNew());
         await bind("menu-file_open", () => void handleOpen());
         await bind("menu-file_save", () => void handleSave());
+        await bind("menu-file_duplicate", () => void handleDuplicate());
         await bind("menu-file_reopen", () => void handleReopenLast());
         await bind("menu-file_template", () => void handleStarter());
         await bind("menu-app_quit", () => void handleQuit());
@@ -467,7 +522,92 @@ export default function App() {
       cancelled = true;
       unsubs.forEach(unsub => unsub());
     };
-  }, [handleNew, handleOpen, handleQuit, handleReopenLast, handleSave, handleStarter]);
+  }, [handleDuplicate, handleNew, handleOpen, handleQuit, handleReopenLast, handleSave, handleStarter]);
+
+  useEffect(() => {
+    let cancelled = false;
+    let unlisten: (() => void) | null = null;
+
+    void (async () => {
+      let pending: string[] = [];
+
+      try {
+        const { listen } = await import("@tauri-apps/api/event");
+        if (cancelled) return;
+
+        unlisten = await listen("cgv-open-file-request", () => {
+          externalOpenSeenRef.current = true;
+          void (async () => {
+            const [path] = await takeOpenedManualPaths();
+            if (!path) return;
+            if (!startupCompleteRef.current) {
+              const opened = await openPath(path);
+              if (opened) dismissWelcome();
+              return;
+            }
+            await handleExternalOpenPath(path);
+          })();
+        });
+
+        pending = await takeOpenedManualPaths();
+      } catch {
+        /* web-only dev */
+      }
+
+      if (cancelled) return;
+      if (pending[0]) {
+        externalOpenSeenRef.current = true;
+        const opened = await openPath(pending[0]);
+        if (opened) dismissWelcome();
+        startupCompleteRef.current = true;
+        return;
+      }
+
+      await new Promise(resolve => window.setTimeout(resolve, 250));
+      if (cancelled) return;
+
+      const latePending = await takeOpenedManualPaths().catch(() => []);
+      if (latePending[0]) {
+        externalOpenSeenRef.current = true;
+        const opened = await openPath(latePending[0]);
+        if (opened) dismissWelcome();
+        startupCompleteRef.current = true;
+        return;
+      }
+
+      if (externalOpenSeenRef.current) {
+        startupCompleteRef.current = true;
+        return;
+      }
+
+      const last = getLastOpenedPath();
+      if (last) {
+        try {
+          const opened = await openPath(last);
+          if (opened) {
+            setWelcomeOverlay(null);
+            startupCompleteRef.current = true;
+            return;
+          }
+        } catch {
+          clearLastOpenedPath();
+        }
+      }
+
+      if (cancelled || externalOpenSeenRef.current || openRequestRef.current > 0) return;
+      loadFromContent("");
+      setFilePath(null);
+      dirtyRef.current = false;
+      setDirty(false);
+      setStatus("Sin archivo — ⌘O para abrir o escriba aquí");
+      startupCompleteRef.current = true;
+    })();
+
+    return () => {
+      cancelled = true;
+      unlisten?.();
+    };
+  }, [dismissWelcome, handleExternalOpenPath, loadFromContent, openPath]);
 
   useEffect(() => {
     if (dirty) return;
@@ -476,30 +616,6 @@ export default function App() {
     }, ANALYSIS_DEBOUNCE_MS);
     return () => window.clearTimeout(timer);
   }, [content, dirty]);
-
-  useEffect(() => {
-    void (async () => {
-      const last = getLastOpenedPath();
-      if (last) {
-        try {
-          const text = await readManualByPath(last);
-          loadFromContent(text);
-          setFilePath(last);
-          setDirty(false);
-          setWelcomeOverlay(null);
-          setStatus(`Abierto: ${last.split(/[/\\]/).pop()}`);
-          return;
-        } catch {
-          clearLastOpenedPath();
-        }
-      }
-
-      loadFromContent("");
-      setFilePath(null);
-      setDirty(false);
-      setStatus("Sin archivo — ⌘O para abrir o escriba aquí");
-    })();
-  }, [loadFromContent]);
 
   const title = filePath
     ? filePath.split(/[/\\]/).pop() ?? "Sin título"
@@ -543,6 +659,7 @@ export default function App() {
             onNew={() => void handleNew()}
             onOpen={() => void handleOpen()}
             onSave={() => void handleSave()}
+            onDuplicate={() => void handleDuplicate()}
             onReopenLast={() => void handleReopenLast()}
             onTemplate={() => void handleStarter()}
             onQuit={() => void handleQuit()}

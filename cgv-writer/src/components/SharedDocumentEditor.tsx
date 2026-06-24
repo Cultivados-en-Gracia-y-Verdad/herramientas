@@ -45,7 +45,7 @@ const LARGE_MARKDOWN_CHARS = 80_000;
 const editorTheme = EditorView.theme({
   "&": {
     height: "100%",
-    fontSize: "calc(15px * var(--cgv-type-scale))",
+    fontSize: "calc(17px * var(--cgv-type-scale))",
     backgroundColor: "var(--cm-bg)",
     color: "var(--text)"
   },
@@ -119,7 +119,16 @@ function insertManualH5Line(view: EditorView, mode: SharedEditorMode): boolean {
   const before = line.text.slice(0, offset);
   const after = line.text.slice(offset);
 
-  if (/^#{1,3}\s+/.test(line.text)) {
+  const heading = line.text.match(/^(#{1,3}\s+)/);
+  if (heading) {
+    if (offset <= heading[0].length) {
+      view.dispatch({
+        changes: { from: line.from, insert: "##### \n" },
+        selection: { anchor: line.from + 6 }
+      });
+      return true;
+    }
+
     view.dispatch({
       changes: { from: line.to, insert: "\n##### " },
       selection: { anchor: line.to + 7 }
@@ -247,6 +256,7 @@ export function SharedDocumentEditor({
   const onDirtyRef = useRef(onDirty);
   const valueRef = useRef(value);
   const selfChange = useRef(false);
+  const syncingFromProps = useRef(false);
   const lastReloadKey = useRef(reloadKey);
   const modeRef = useRef(mode);
   const openBibleRef = useRef<(
@@ -254,6 +264,7 @@ export function SharedDocumentEditor({
     kind: "h3" | "inline",
     headingFrom?: number | null
   ) => void>(() => {});
+  const biblePopupRequestId = useRef(0);
   const onToggleModeRef = useRef(onToggleMode);
   const { resolveReference, status: bibleStatus } = useBible();
   const [biblePopup, setBiblePopup] = useState<{
@@ -272,10 +283,18 @@ export function SharedDocumentEditor({
   modeRef.current = mode;
   onToggleModeRef.current = onToggleMode;
 
+  const closeBiblePopup = () => {
+    biblePopupRequestId.current += 1;
+    setBiblePopup(null);
+  };
+
   openBibleRef.current = (reference, kind, headingFrom = null) => {
+    const requestId = biblePopupRequestId.current + 1;
+    biblePopupRequestId.current = requestId;
     setBiblePopup({ kind, reference, headingFrom, loading: true, error: null, result: null });
     void resolveReference(reference)
       .then(result => {
+        if (requestId !== biblePopupRequestId.current) return;
         setBiblePopup({
           kind,
           reference,
@@ -288,6 +307,7 @@ export function SharedDocumentEditor({
         });
       })
       .catch(error => {
+        if (requestId !== biblePopupRequestId.current) return;
         setBiblePopup({
           kind,
           reference,
@@ -318,6 +338,7 @@ export function SharedDocumentEditor({
       if (!update.docChanged) return;
       const doc = update.state.doc.toString();
       valueRef.current = doc;
+      if (syncingFromProps.current) return;
       selfChange.current = true;
       onChangeRef.current(doc);
       onDirtyRef.current?.();
@@ -395,22 +416,29 @@ export function SharedDocumentEditor({
     if (!view) return;
     const fileChanged = lastReloadKey.current !== reloadKey;
     if (fileChanged) lastReloadKey.current = reloadKey;
-    if (selfChange.current) {
+    if (selfChange.current && !fileChanged) {
       selfChange.current = false;
       return;
     }
+    selfChange.current = false;
     const current = view.state.doc.toString();
     if (!fileChanged && current === value) return;
     const selection = view.state.selection.main;
-    view.dispatch({
-      changes: { from: 0, to: current.length, insert: value },
-      selection: fileChanged
-        ? { anchor: modeRef.current === "manual" ? bodyStartInContent(value) : 0 }
-        : {
-            anchor: Math.min(selection.anchor, value.length),
-            head: Math.min(selection.head, value.length)
-          }
-    });
+    syncingFromProps.current = true;
+    try {
+      view.dispatch({
+        changes: { from: 0, to: current.length, insert: value },
+        selection: fileChanged
+          ? { anchor: modeRef.current === "manual" ? bodyStartInContent(value) : 0 }
+          : {
+              anchor: Math.min(selection.anchor, value.length),
+              head: Math.min(selection.head, value.length)
+            }
+      });
+      valueRef.current = value;
+    } finally {
+      syncingFromProps.current = false;
+    }
   }, [value, reloadKey]);
 
   useEffect(() => {
@@ -544,7 +572,7 @@ export function SharedDocumentEditor({
         error={biblePopup?.error ?? null}
         result={biblePopup?.result ?? null}
         showUseText={biblePopup?.kind === "h3"}
-        onClose={() => setBiblePopup(null)}
+        onClose={closeBiblePopup}
         onUseText={handleUseBibleText}
       />
     </>

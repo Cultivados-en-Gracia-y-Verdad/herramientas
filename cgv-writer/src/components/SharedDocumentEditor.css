@@ -41,13 +41,31 @@
   color: var(--manual-text);
   box-shadow: var(--manual-page-shadow);
   font-family: "Georgia", "Times New Roman", serif;
-  font-size: calc(14pt * var(--cgv-type-scale));
+  font-size: calc(16pt * var(--cgv-type-scale));
   line-height: 1.58;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.cm-cgv-manual-mode .cm-selectionLayer {
+  z-index: 20 !important;
+  pointer-events: none;
+}
+
+.cm-cgv-manual-mode .cm-cursorLayer {
+  z-index: 30 !important;
 }
 
 .cm-cgv-manual-mode .cm-line {
   position: relative;
   padding-block: 0.12em;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.cm-cgv-manual-mode .cm-line span {
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 /* Collapse markdown syntax in the DOM but keep chars for selection/clipboard. */
@@ -120,7 +138,6 @@
   text-decoration-color: var(--cgv-link-color);
   text-underline-offset: 2px;
   cursor: text;
-  pointer-events: none;
 }
 
 .cm-cgv-manual-mode .cm-cgv-inline-bible-ref:hover {
@@ -285,6 +302,20 @@
 
 .cm-cgv-manual-mode .cm-cgv-manual-table-source {
   display: none;
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-table-source-first {
+  display: block;
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-table-source-first .cm-cgv-manual-table {
+  color: var(--manual-text);
+  font-size: calc(16pt * var(--cgv-type-scale));
+  line-height: 1.45;
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-table-edit {

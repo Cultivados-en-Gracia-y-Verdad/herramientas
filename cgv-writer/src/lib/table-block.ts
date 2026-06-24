@@ -1,10 +1,9 @@
 import { renderMarkdownInline } from "./marked-gfm";
 
-/** GFM pipe table row — at least one pipe with content on both sides. */
+/** Pipe-table row with an opening and closing pipe. */
 export function isTableLine(line: string): boolean {
   const trimmed = String(line || "").trim();
-  if (!trimmed.includes("|")) return false;
-  return /^\|.+\|$/.test(trimmed) || /^\|.*\|/.test(trimmed);
+  return trimmed.startsWith("|") && trimmed.endsWith("|") && trimmed.length >= 2;
 }
 
 export function collectTableLines(lines: string[], start: number): { markdown: string; next: number } {
@@ -53,8 +52,14 @@ function isSeparatorCell(cell: string): boolean {
   return false;
 }
 
-function isSeparatorRow(cells: string[]): boolean {
+export function isTableSeparatorRow(line: string): boolean {
+  const cells = splitPipeRow(line);
   return cells.length > 0 && cells.every(isSeparatorCell);
+}
+
+export function isTableStart(lines: string[], start: number): boolean {
+  if (start < 0 || start + 1 >= lines.length) return false;
+  return isTableLine(lines[start]) && isTableSeparatorRow(lines[start + 1]);
 }
 
 function renderTableCell(text: string, tag: "th" | "td"): string {
@@ -79,7 +84,7 @@ export function pipeTableMarkdownToHtml(markdown: string): string {
   let headerRow: string[] | null = null;
   let bodyRows = rows;
 
-  if (rows.length >= 2 && isSeparatorRow(rows[1])) {
+  if (rows.length >= 2 && isTableSeparatorRow(lines[1])) {
     headerRow = rows[0];
     bodyRows = rows.slice(2);
   }

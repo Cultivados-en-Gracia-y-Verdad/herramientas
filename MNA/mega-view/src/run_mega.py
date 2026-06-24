@@ -22,6 +22,7 @@ from engines import (
     flow_engine,
     flow_interpreter,
     wanted_engine,
+    co_occurrence_engine,
 )
 
 
@@ -122,7 +123,7 @@ def write_markdown(path, book, results):
     lines.append(md_table(rows, ["metric", "from", "to", "from_value", "to_value"]))
     lines.append("")
 
-    lines.append("## Wanted Families")
+    lines.append("## Possible Wanted Families")
     rows = []
     for r in results.get("wanted", []):
         rows.append({
@@ -133,6 +134,28 @@ def write_markdown(path, book, results):
             "refs": ", ".join(r.get("refs", [])[:12]),
         })
     lines.append(md_table(rows, ["family", "count", "lemmas", "sources", "refs"]))
+    lines.append("")
+
+    lines.append("## Co-occurrence Pairs")
+    rows = []
+    for r in results.get("co_occurrence", []):
+        near = []
+        for p in r.get("near_refs", [])[:5]:
+            near.append(f"{p.get('a')}~{p.get('b')}({p.get('distance')})")
+
+        rows.append({
+            "lemma_a": r.get("lemma_a", ""),
+            "lemma_b": r.get("lemma_b", ""),
+            "score": r.get("score", ""),
+            "shared_chapters": ", ".join(map(str, r.get("shared_chapters", []))),
+            "near_refs": "; ".join(near),
+        })
+
+    lines.append(md_table(
+        rows,
+        ["lemma_a", "lemma_b", "score", "shared_chapters", "near_refs"],
+        limit=100,
+    ))
     lines.append("")
 
     summary = results.get("signal_summary", {})
@@ -308,10 +331,17 @@ def main():
     ensure_dir(out_dir)
 
     tokens = load_tokens(data_path)
+
     markers = load_json(ROOT / "src" / "config" / "discourse_markers.json")
     contrasts = load_json(ROOT / "src" / "config" / "contrast_pairs.json")
     stops = load_json(ROOT / "src" / "config" / "stop_lemmas.json")
     wanted_families = load_json(ROOT / "src" / "config" / "wanted_families.json")
+
+    co_stop_path = ROOT / "src" / "config" / "co_occurrence_stop_lemmas.json"
+    if co_stop_path.exists():
+        co_stop = load_json(co_stop_path)
+    else:
+        co_stop = []
 
     results = {
         "book": args.book,
@@ -326,13 +356,12 @@ def main():
 
     results["signal_summary"] = signal_summary.run(results)
     results["concentration"] = concentration_engine.run(results)
-    results["concentration_clusters"] = concentration_clusters.run(
-        results["concentration"]
-    )
+    results["concentration_clusters"] = concentration_clusters.run(results["concentration"])
     results["regions"] = region_engine.run(results)
     results["flow"] = flow_engine.run(tokens, results)
     results["flow_interpretation"] = flow_interpreter.run(results)
     results["wanted"] = wanted_engine.run(tokens, results, wanted_families)
+    results["co_occurrence"] = co_occurrence_engine.run(results, co_stop)
 
     for key, value in results.items():
         if key in {"book", "token_count"}:

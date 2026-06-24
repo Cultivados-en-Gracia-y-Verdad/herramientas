@@ -211,6 +211,7 @@ function ManualEditorInner({
   const openBiblePopupRef = useRef<
     (request: { kind: "h3" | "inline"; reference: string; h3Pos?: number | null }) => void
   >(() => {});
+  const biblePopupRequestId = useRef(0);
   const bibleIndexRef = useRef(bibleIndex);
   bibleIndexRef.current = bibleIndex;
   onBodyChangeRef.current = onBodyChange;
@@ -344,6 +345,8 @@ function ManualEditorInner({
     reference: string,
     h3Pos: number | null = null
   ) => {
+    const requestId = biblePopupRequestId.current + 1;
+    biblePopupRequestId.current = requestId;
     setBiblePopup({
       kind,
       reference,
@@ -355,6 +358,7 @@ function ManualEditorInner({
 
     try {
       const result = await resolveReference(reference);
+      if (requestId !== biblePopupRequestId.current) return;
       if (!result) {
         if (!bibleStatus?.configured) {
           setBiblePopup({
@@ -389,6 +393,7 @@ function ManualEditorInner({
         result
       });
     } catch (error) {
+      if (requestId !== biblePopupRequestId.current) return;
       setBiblePopup({
         kind,
         reference,
@@ -402,6 +407,11 @@ function ManualEditorInner({
 
   openBiblePopupRef.current = ({ kind, reference, h3Pos = null }) => {
     void openBiblePopup(kind, reference, h3Pos);
+  };
+
+  const closeBiblePopup = () => {
+    biblePopupRequestId.current += 1;
+    setBiblePopup(null);
   };
 
   const handleEnterToH5 = (event: KeyboardEvent): boolean => {
@@ -588,8 +598,8 @@ function ManualEditorInner({
       }
 
       const inline =
-        getInlineReferenceFromElement(target, bibleIndexRef.current) ??
-        getInlineReferenceFromClick(editor, event, bibleIndexRef.current);
+        getInlineReferenceFromClick(editor, event, bibleIndexRef.current) ??
+        getInlineReferenceFromElement(target, bibleIndexRef.current);
       if (!inline) return;
 
       event.preventDefault();
@@ -1071,7 +1081,7 @@ function ManualEditorInner({
         error={biblePopup?.error ?? null}
         result={biblePopup?.result ?? null}
         showUseText={biblePopup?.kind === "h3" && !previewOnly}
-        onClose={() => setBiblePopup(null)}
+        onClose={closeBiblePopup}
         onUseText={handleUseBibleText}
       />
     </div>

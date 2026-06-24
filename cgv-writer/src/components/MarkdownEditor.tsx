@@ -44,7 +44,7 @@ const LARGE_MARKDOWN_CHARS = 80_000;
 const editorTheme = EditorView.theme({
   "&": {
     height: "100%",
-    fontSize: "calc(15px * var(--cgv-type-scale))",
+    fontSize: "calc(17px * var(--cgv-type-scale))",
     backgroundColor: "var(--cm-bg)",
     color: "var(--text)"
   },

@@ -5,7 +5,7 @@ import {
   sanitizeH4AnchorText
 } from "../markdown-html";
 import { isBlockquoteLine, parseBlockquoteLines } from "../synthesis-block";
-import { collectTableLines, isTableLine } from "../table-block";
+import { collectTableLines, isTableStart } from "../table-block";
 import { markH6Bullet } from "./commentary-helpers";
 import type { ContentBlock } from "./types";
 import { newBlockId } from "./types";
@@ -56,7 +56,7 @@ function parseLinesInChunk(lines: string[]): ContentBlock[] {
       continue;
     }
 
-    if (isTableLine(line)) {
+    if (isTableStart(lines, i)) {
       const table = collectTableLines(lines, i);
       blocks.push({ id: newBlockId(), type: "table", markdown: table.markdown });
       i = table.next;

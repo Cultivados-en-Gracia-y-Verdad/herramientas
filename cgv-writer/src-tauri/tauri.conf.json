@@ -30,6 +30,16 @@
     "category": "Productivity",
     "shortDescription": "Editor de manuales CGV",
     "longDescription": "Editor de manuales markdown para CGV Presenter.",
+    "fileAssociations": [
+      {
+        "ext": ["md", "markdown"],
+        "name": "Markdown",
+        "description": "Markdown manual",
+        "mimeType": "text/markdown",
+        "role": "Editor",
+        "rank": "Alternate"
+      }
+    ],
     "macOS": {
       "minimumSystemVersion": "10.15"
     },

@@ -3,11 +3,13 @@ import {
   Decoration,
   EditorView,
   ViewPlugin,
+  WidgetType,
   type DecorationSet,
   type ViewUpdate
 } from "@codemirror/view";
 import { findInlineBibleReferenceMatches } from "cgv-bible";
 import { BIBLE_INDEX_UPDATED_EVENT, getSharedBibleIndex } from "./bible-index-store";
+import { collectTableLines, isTableStart, renderTableHtml } from "./table-block";
 
 /** Hide markdown syntax with marks (not replace) so mouse selection keeps working. */
 
@@ -20,29 +22,60 @@ interface ManualLineStyle {
 
 const hiddenMark = Decoration.mark({ class: "cm-cgv-manual-hidden" });
 
-function findTableLineNumbers(doc: Text): Set<number> {
-  const lines = new Set<number>();
+class TableWidget extends WidgetType {
+  constructor(readonly markdown: string) {
+    super();
+  }
+
+  eq(other: TableWidget): boolean {
+    return other.markdown === this.markdown;
+  }
+
+  toDOM(): HTMLElement {
+    const dom = document.createElement("div");
+    dom.className = "cm-cgv-manual-table";
+    const inner = document.createElement("div");
+    inner.className = "cm-cgv-manual-table-inner";
+    inner.innerHTML = renderTableHtml(this.markdown);
+    dom.appendChild(inner);
+    return dom;
+  }
+}
+
+interface TableRange {
+  from: number;
+  to: number;
+  startLine: number;
+  endLine: number;
+  markdown: string;
+}
+
+function findTableRanges(doc: Text): TableRange[] {
+  const ranges: TableRange[] = [];
+  const lines = doc.toString().split("\n");
   let lineNumber = 1;
 
   while (lineNumber <= doc.lines) {
-    const text = doc.line(lineNumber).text;
-    if (!/^\|.+\|/.test(text.trim()) && !/^\|.*\|/.test(text.trim())) {
+    const line = doc.line(lineNumber);
+    if (!isTableStart(lines, lineNumber - 1)) {
       lineNumber += 1;
       continue;
     }
 
-    let index = lineNumber;
-    while (index <= doc.lines) {
-      const row = doc.line(index).text;
-      if (!row.trim()) break;
-      if (!row.includes("|")) break;
-      lines.add(index);
-      index += 1;
-    }
-    lineNumber = index;
+    const table = collectTableLines(lines, lineNumber - 1);
+    const endLineNumber = table.next;
+    const endLine = doc.line(endLineNumber);
+    ranges.push({
+      from: line.from,
+      to: endLine.to,
+      startLine: lineNumber,
+      endLine: endLineNumber,
+      markdown: table.markdown
+    });
+    lineNumber = endLineNumber + 1;
   }
 
-  return lines;
+  return ranges;
 }
 
 function previousNonBlankLine(view: EditorView, lineNumber: number): string {
@@ -206,7 +239,29 @@ function buildDecorations(view: EditorView): DecorationSet {
   const decorations: Range<Decoration>[] = [];
   const seen = new Set<number>();
   const frontMatterEnd = frontMatterEndLine(view.state);
-  const tableLines = findTableLineNumbers(view.state.doc);
+  const tableRanges = findTableRanges(view.state.doc);
+  const tableLines = new Set<number>();
+  for (const range of tableRanges) {
+    decorations.push(
+      Decoration.widget({
+        widget: new TableWidget(range.markdown),
+        side: -1
+      }).range(range.from)
+    );
+    for (let number = range.startLine; number <= range.endLine; number += 1) {
+      tableLines.add(number);
+      decorations.push(
+        Decoration.line({
+          attributes: {
+            class:
+              number === range.startLine
+                ? "cm-cgv-manual-table-source cm-cgv-manual-table-source-first"
+                : "cm-cgv-manual-table-source"
+          }
+        }).range(view.state.doc.line(number).from)
+      );
+    }
+  }
 
   for (const visible of view.visibleRanges) {
     const first = view.state.doc.lineAt(visible.from).number;
@@ -217,6 +272,8 @@ function buildDecorations(view: EditorView): DecorationSet {
       seen.add(number);
 
       const line = view.state.doc.line(number);
+      if (tableLines.has(number)) continue;
+
       const style = classifyLine(view, number, line.text, frontMatterEnd, tableLines);
 
       decorations.push(
@@ -274,7 +331,7 @@ const manualDecorations = ViewPlugin.fromClass(
     }
 
     update(update: ViewUpdate) {
-      if (update.docChanged || update.selectionSet || update.viewportChanged) {
+      if (update.docChanged || update.viewportChanged) {
         this.decorations = buildDecorations(update.view);
       }
     }

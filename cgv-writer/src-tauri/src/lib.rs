@@ -10,9 +10,11 @@ use std::time::{SystemTime, UNIX_EPOCH};
 use tauri::Emitter;
 use tauri::menu::{Menu, MenuItem, PredefinedMenuItem, Submenu};
 use std::sync::atomic::{AtomicBool, Ordering};
+use std::sync::Mutex;
 use tauri::{Manager, RunEvent, WindowEvent};
 
 static ALLOW_EXIT: AtomicBool = AtomicBool::new(false);
+static OPENED_MANUAL_PATHS: Mutex<Vec<String>> = Mutex::new(Vec::new());
 
 #[tauri::command]
 fn read_manual(path: String) -> Result<String, String> {
@@ -22,6 +24,70 @@ fn read_manual(path: String) -> Result<String, String> {
 #[tauri::command]
 fn write_manual(path: String, content: String) -> Result<(), String> {
     write_manual_safely(Path::new(&path), content.as_bytes())
+}
+
+#[tauri::command]
+fn take_opened_manual_paths() -> Result<Vec<String>, String> {
+    let mut paths = OPENED_MANUAL_PATHS.lock().map_err(|e| e.to_string())?;
+    Ok(paths.drain(..).collect())
+}
+
+fn opened_manual_paths(urls: Vec<tauri::Url>) -> Vec<String> {
+    urls.into_iter()
+        .filter_map(|url| {
+            if url.scheme() != "file" {
+                return None;
+            }
+            let path = url.to_file_path().ok()?;
+            let extension = path.extension()?.to_str()?.to_ascii_lowercase();
+            if extension != "md" && extension != "markdown" {
+                return None;
+            }
+            Some(path.to_string_lossy().to_string())
+        })
+        .collect()
+}
+
+fn manual_path_from_arg(arg: String) -> Option<String> {
+    if let Ok(url) = tauri::Url::parse(&arg) {
+        if url.scheme() == "file" {
+            return url.to_file_path().ok().and_then(manual_path_from_path);
+        }
+    }
+
+    manual_path_from_path(PathBuf::from(arg))
+}
+
+fn manual_path_from_path(path: PathBuf) -> Option<String> {
+    let extension = path.extension()?.to_str()?.to_ascii_lowercase();
+    if extension != "md" && extension != "markdown" {
+        return None;
+    }
+    if !path.is_file() {
+        return None;
+    }
+    Some(path.to_string_lossy().to_string())
+}
+
+fn startup_manual_paths() -> Vec<String> {
+    std::env::args().skip(1).filter_map(manual_path_from_arg).collect()
+}
+
+fn queue_opened_manual_paths(app: &tauri::AppHandle, paths: Vec<String>) {
+    if paths.is_empty() {
+        return;
+    }
+
+    if let Ok(mut pending) = OPENED_MANUAL_PATHS.lock() {
+        pending.extend(paths.clone());
+    }
+
+    if let Some(window) = app.get_webview_window("main") {
+        let _ = window.emit("cgv-open-file-request", paths);
+        let _ = window.unminimize();
+        let _ = window.show();
+        let _ = window.set_focus();
+    }
 }
 
 const MAX_MANUAL_BACKUPS: usize = 20;
@@ -210,6 +276,8 @@ fn build_app_menu(app: &tauri::App) -> tauri::Result<Menu<tauri::Wry>> {
         Some("CmdOrCtrl+Shift+O"),
     )?;
     let save_item = MenuItem::with_id(handle, "file_save", "Guardar", true, Some("CmdOrCtrl+S"))?;
+    let duplicate_item =
+        MenuItem::with_id(handle, "file_duplicate", "Duplicar como…", true, None::<&str>)?;
     let template_item = MenuItem::with_id(
         handle,
         "file_template",
@@ -269,6 +337,7 @@ fn build_app_menu(app: &tauri::App) -> tauri::Result<Menu<tauri::Wry>> {
                 &reopen_item,
                 &separator,
                 &save_item,
+                &duplicate_item,
                 &separator,
                 &template_item,
             ],
@@ -289,6 +358,7 @@ fn build_app_menu(app: &tauri::App) -> tauri::Result<Menu<tauri::Wry>> {
                 &reopen_item,
                 &separator,
                 &save_item,
+                &duplicate_item,
                 &separator,
                 &template_item,
                 &separator,
@@ -307,6 +377,7 @@ pub fn run() {
         .plugin(tauri_plugin_opener::init())
         .setup(|app| {
             app.set_menu(build_app_menu(app)?)?;
+            queue_opened_manual_paths(app.handle(), startup_manual_paths());
             Ok(())
         })
         .on_menu_event(|app, event| {
@@ -325,6 +396,7 @@ pub fn run() {
         .invoke_handler(tauri::generate_handler![
             read_manual,
             write_manual,
+            take_opened_manual_paths,
             read_writer_settings,
             save_writer_settings,
             get_bible_library_status,
@@ -348,6 +420,10 @@ pub fn run() {
                         let _ = window.show();
                         let _ = window.set_focus();
                     }
+                }
+                #[cfg(any(target_os = "macos", target_os = "ios", target_os = "android"))]
+                RunEvent::Opened { urls } => {
+                    queue_opened_manual_paths(app_handle, opened_manual_paths(urls));
                 }
                 _ => {}
             }
