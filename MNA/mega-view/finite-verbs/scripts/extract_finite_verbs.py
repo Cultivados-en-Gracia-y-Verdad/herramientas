@@ -30,6 +30,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 from collections import Counter, defaultdict, deque
 from pathlib import Path
 
@@ -75,7 +76,31 @@ NUMBER_MAP = {
     "-": "",
 }
 
+TENSE_RMAC = {"P": "P", "I": "I", "F": "F", "A": "A", "R": "X", "L": "Y"}
+VOICE_RMAC = {
+    "A": "A",
+    "M": "M",
+    "P": "P",
+    "E": "E",
+    "D": "M",
+    "O": "P",
+    "N": "E",
+}
+MOOD_RMAC = {
+    "I": "I",
+    "S": "S",
+    "O": "O",
+    "D": "M",
+    "M": "M",
+    "N": "N",
+    "P": "P",
+}
+NUMBER_RMAC = {"S": "S", "P": "P"}
+
 MATCH_MARKS = str.maketrans("", "", "⸀⸂⸃[]·,.;:!?“”\"")
+INTERLINEAR_TOKEN = re.compile(
+    r"(\S+?)<([^|<>]*)\|([^|<>]*)\|([^|<>]*)\|([^<>]*)>"
+)
 
 
 def parse_ref(raw_ref: str):
@@ -118,6 +143,33 @@ def load_spanish_tokens(path: Path):
     return by_form
 
 
+def load_interlinear_chapters(directory: Path):
+    verses = {}
+    for path in sorted(directory.glob("efesios-*.interlinear.txt")):
+        for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if not line.strip():
+                continue
+            try:
+                raw_ref, content = line.split("\t", 1)
+            except ValueError as error:
+                raise SystemExit(f"{path}:{line_no}: invalid interlinear line") from error
+            ref_match = re.fullmatch(r"efesios\s+(\d+):(\d+)", raw_ref.strip())
+            if not ref_match:
+                raise SystemExit(f"{path}:{line_no}: invalid reference {raw_ref!r}")
+            chapter, verse = map(int, ref_match.groups())
+            verses[f"Eph {chapter}:{verse}"] = [
+                {
+                    "greek": match.group(1),
+                    "lemma": match.group(2),
+                    "strong": match.group(3),
+                    "rmac": match.group(4),
+                    "es": match.group(5).replace("·", " "),
+                }
+                for match in INTERLINEAR_TOKEN.finditer(content)
+            ]
+    return verses
+
+
 def is_finite_verb(pos: str, morph: str) -> bool:
     if pos != "V-":
         return False
@@ -151,6 +203,20 @@ def parse_verb_morph(morph: str):
         "mood_code": mood_code,
         "number_code": number_code,
     }
+
+
+def morphgnt_to_rmac(morphology: str) -> str:
+    code = morphology[2:] if morphology.startswith("V-") else morphology
+    if len(code) < 4:
+        return morphology
+    person = code[0]
+    tense = TENSE_RMAC.get(code[1], code[1])
+    voice = VOICE_RMAC.get(code[2], code[2])
+    mood = MOOD_RMAC.get(code[3], code[3])
+    number = NUMBER_RMAC.get(code[5], code[5]) if len(code) > 5 else ""
+    if person in {"1", "2", "3"} and number:
+        return f"V-{tense}{voice}{mood}-{person}{number}"
+    return f"V-{tense}{voice}{mood}"
 
 
 def extract(path: Path, tokens_path: Path):
@@ -207,6 +273,7 @@ def extract(path: Path, tokens_path: Path):
             "es": spanish,
             "pos": pos,
             "morph": morph,
+            "rmac": morphgnt_to_rmac(morph),
             **parse_verb_morph(morph),
             "raw": line,
         })
@@ -214,7 +281,7 @@ def extract(path: Path, tokens_path: Path):
     return finite_verbs
 
 
-def write_outputs(finite_verbs, out_dir: Path):
+def write_outputs(finite_verbs, out_dir: Path, interlinear_dir: Path):
     out_dir.mkdir(parents=True, exist_ok=True)
 
     (out_dir / "finite_verbs.json").write_text(
@@ -265,10 +332,20 @@ def write_outputs(finite_verbs, out_dir: Path):
         + ";\n",
         encoding="utf-8",
     )
+    (out_dir / "interlinear_data.js").write_text(
+        "window.EPHESIANS_INTERLINEAR = "
+        + json.dumps(
+            load_interlinear_chapters(interlinear_dir),
+            ensure_ascii=False,
+            indent=2,
+        )
+        + ";\n",
+        encoding="utf-8",
+    )
 
     fields = [
         "order", "ref", "chapter", "verse", "surface", "es", "normalized", "lemma",
-        "morph", "person", "tense", "voice", "mood", "number",
+        "morph", "rmac", "person", "tense", "voice", "mood", "number",
     ]
 
     with (out_dir / "finite_verbs.csv").open("w", encoding="utf-8", newline="") as f:
@@ -328,11 +405,11 @@ def write_outputs(finite_verbs, out_dir: Path):
         md.append("| " + str(ch) + " | " + " | ".join(str(counts.get(m, 0)) for m in moods) + " |")
 
     md.append("\n## Ordered Finite Verb Path\n")
-    md.append("| # | ref | form | español | lemma | morph | person | tense | voice | mood | number |")
+    md.append("| # | ref | form | español | lemma | RMAC | person | tense | voice | mood | number |")
     md.append("| ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
     for v in finite_verbs:
         md.append(
-            f"| {v['order']} | {v['ref']} | {v['surface']} | {v['es']} | {v['lemma']} | {v['morph']} | "
+            f"| {v['order']} | {v['ref']} | {v['surface']} | {v['es']} | {v['lemma']} | {v['rmac']} | "
             f"{v['person']} | {v['tense']} | {v['voice']} | {v['mood']} | {v['number']} |"
         )
 
@@ -356,6 +433,11 @@ def main():
         default="MNA/datasets/interlinear/NT/efesios.tokens.jsonl",
         help="Path to Ephesians interlinear tokens containing Spanish glosses.",
     )
+    parser.add_argument(
+        "--interlinear-dir",
+        default="MNA/mega-view/finite-verbs/interlinear/NT",
+        help="Directory containing Ephesians chapter interlinear text files.",
+    )
     args = parser.parse_args()
 
     morph_path = Path(args.morphgnt)
@@ -364,9 +446,12 @@ def main():
     tokens_path = Path(args.tokens)
     if not tokens_path.exists():
         raise SystemExit(f"Missing interlinear tokens file: {tokens_path}")
+    interlinear_dir = Path(args.interlinear_dir)
+    if not interlinear_dir.exists():
+        raise SystemExit(f"Missing interlinear chapter directory: {interlinear_dir}")
 
     finite_verbs = extract(morph_path, tokens_path)
-    write_outputs(finite_verbs, Path(args.out))
+    write_outputs(finite_verbs, Path(args.out), interlinear_dir)
 
     print(f"Extracted {len(finite_verbs)} finite verbs.")
     print(f"Wrote outputs to: {args.out}")

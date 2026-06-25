@@ -1,4 +1,5 @@
 const STORAGE_KEY = "mna-finite-verbs-assertions-v1";
+const SESSION_STORAGE_KEY = "mna-finite-verbs-observation-session-v1";
 
 const chapterFilter = document.querySelector("#chapter-filter");
 const moodFilter = document.querySelector("#mood-filter");
@@ -18,12 +19,231 @@ const assertionTableBody = document.querySelector("#assertion-table-body");
 const compressedAssertions = document.querySelector("#compressed-assertions");
 const saveJsonButton = document.querySelector("#save-json-button");
 const loadJsonInput = document.querySelector("#load-json-input");
+const subjectsComplete = document.querySelector("#subjects-complete");
+const objectsComplete = document.querySelector("#objects-complete");
+const compressedObserved = document.querySelector("#compressed-observed");
+const observationNotes = document.querySelector("#observation-notes");
+const rmacPopover = document.querySelector("#rmac-popover");
+const rmacPopoverCode = document.querySelector("#rmac-popover-code");
+const rmacPopoverDetails = document.querySelector("#rmac-popover-details");
+const rmacPopoverClose = document.querySelector("#rmac-popover-close");
+const interlinearPopover = document.querySelector("#interlinear-popover");
+const interlinearPopoverRef = document.querySelector("#interlinear-popover-ref");
+const interlinearPopoverBody = document.querySelector("#interlinear-popover-body");
+const interlinearPopoverClose = document.querySelector("#interlinear-popover-close");
 
 let finiteVerbs = [];
 let assertions = [];
 let currentView = "verbs";
 let assertionMode = "full";
 let openOrder = null;
+const ASSERTION_SCOPE = {
+  chapter: 1,
+  verseStart: 4,
+  verseEnd: 14,
+};
+
+const RMAC_TENSE = {
+  P: "Presente",
+  I: "Imperfecto",
+  F: "Futuro",
+  A: "Aoristo",
+  X: "Perfecto",
+  Y: "Pluscuamperfecto",
+};
+const RMAC_VOICE = {
+  A: "Activa",
+  M: "Media",
+  P: "Pasiva",
+  E: "Media o pasiva",
+};
+const RMAC_MOOD = {
+  I: "Indicativo",
+  S: "Subjuntivo",
+  O: "Optativo",
+  M: "Imperativo",
+  N: "Infinitivo",
+  P: "Participio",
+};
+const RMAC_PERSON = { 1: "Primera", 2: "Segunda", 3: "Tercera" };
+const RMAC_NUMBER = { S: "Singular", P: "Plural" };
+const RMAC_PRONOUN = {
+  "1S": "yo",
+  "1P": "nosotros / nosotras",
+  "2S": "tú / usted",
+  "2P": "ustedes / vosotros / vosotras",
+  "3S": "él / ella / ello",
+  "3P": "ellos / ellas",
+};
+
+function decodeRmac(code) {
+  const match = /^V-([PIFAXY])([AMPE])([ISOMNP])(?:-([123])([SP]))?$/.exec(code);
+  if (!match) {
+    return [{ label: "Código", value: "No hay explicación disponible" }];
+  }
+  const [, tense, voice, mood, person, number] = match;
+  const details = [
+    { label: "Parte de la oración", value: "Verbo" },
+    { label: "Tiempo", value: RMAC_TENSE[tense] || tense },
+    { label: "Voz", value: RMAC_VOICE[voice] || voice },
+    { label: "Modo", value: RMAC_MOOD[mood] || mood },
+  ];
+  if (person) {
+    details.push(
+      { label: "Persona", value: RMAC_PERSON[person] || person },
+      { label: "Número", value: RMAC_NUMBER[number] || number },
+      {
+        label: "Pronombre orientativo",
+        value: RMAC_PRONOUN[`${person}${number}`] || "—",
+      },
+    );
+  }
+  return details;
+}
+
+function rmacSummary(code) {
+  return decodeRmac(code)
+    .filter((detail) => detail.label !== "Parte de la oración")
+    .map((detail) => `${detail.label}: ${detail.value}`)
+    .join("; ");
+}
+
+function closeRmacHelp() {
+  rmacPopover.hidden = true;
+}
+
+function openRmacHelp(trigger, code) {
+  rmacPopoverCode.textContent = code;
+  rmacPopoverDetails.replaceChildren(
+    ...decodeRmac(code).flatMap((detail) => {
+      const term = document.createElement("dt");
+      term.textContent = detail.label;
+      const description = document.createElement("dd");
+      description.textContent = detail.value;
+      return [term, description];
+    }),
+  );
+
+  const rect = trigger.getBoundingClientRect();
+  rmacPopover.hidden = false;
+  const popoverRect = rmacPopover.getBoundingClientRect();
+  const left = Math.min(
+    Math.max(12, rect.left),
+    window.innerWidth - popoverRect.width - 12,
+  );
+  const preferredTop = rect.bottom + 8;
+  const top =
+    preferredTop + popoverRect.height <= window.innerHeight - 12
+      ? preferredTop
+      : Math.max(12, rect.top - popoverRect.height - 8);
+  rmacPopover.style.left = `${left}px`;
+  rmacPopover.style.top = `${top}px`;
+}
+
+function createRmacButton(code) {
+  const button = document.createElement("button");
+  button.className = "rmac-help";
+  button.type = "button";
+  button.textContent = code;
+  button.title = rmacSummary(code);
+  button.setAttribute("aria-label", `${code}. ${rmacSummary(code)}. Abrir ayuda RMAC`);
+  button.addEventListener("click", (event) => {
+    event.stopPropagation();
+    openRmacHelp(button, code);
+  });
+  return button;
+}
+
+function closeInterlinear() {
+  interlinearPopover.hidden = true;
+}
+
+function openInterlinear(ref) {
+  const tokens = window.EPHESIANS_INTERLINEAR?.[ref] || [];
+  interlinearPopoverRef.textContent = ref;
+  interlinearPopoverBody.replaceChildren(
+    ...tokens.map((token) => {
+      const word = document.createElement("span");
+      word.className = "interlinear-word";
+
+      const greek = document.createElement("span");
+      greek.className = "interlinear-greek";
+      greek.lang = "grc";
+      greek.textContent = token.greek || "—";
+
+      const spanish = document.createElement("span");
+      spanish.className = "interlinear-spanish";
+      spanish.lang = "es";
+      spanish.textContent = token.es || "—";
+
+      const details = document.createElement("span");
+      details.className = "interlinear-details";
+
+      const lemma = document.createElement("span");
+      lemma.className = "interlinear-lemma";
+      lemma.lang = "grc";
+      lemma.textContent = token.lemma || "—";
+
+      const strong = document.createElement("span");
+      strong.className = "interlinear-code";
+      strong.textContent = token.strong || "—";
+
+      const rmac = document.createElement("span");
+      rmac.className = "interlinear-code";
+      rmac.textContent = token.rmac || "—";
+
+      details.append(lemma, strong, rmac);
+      word.append(greek, spanish, details);
+      return word;
+    }),
+  );
+  interlinearPopover.hidden = false;
+}
+
+function createReferenceButton(ref) {
+  const button = document.createElement("button");
+  button.className = "reference-link";
+  button.type = "button";
+  button.textContent = ref;
+  button.title = `Abrir interlineal de ${ref}`;
+  button.setAttribute("aria-label", `Abrir interlineal de ${ref}`);
+  button.addEventListener("click", (event) => {
+    event.stopPropagation();
+    openInterlinear(ref);
+  });
+  return button;
+}
+
+function loadObservationSession() {
+  let session = {};
+  try {
+    session = JSON.parse(localStorage.getItem(SESSION_STORAGE_KEY) || "{}");
+  } catch {
+    session = {};
+  }
+  subjectsComplete.checked = session.subjects_complete === true;
+  objectsComplete.checked = session.objects_complete === true;
+  compressedObserved.checked = session.observed_compressed_view === true;
+  observationNotes.value =
+    typeof session.notes === "string" ? session.notes : "";
+}
+
+function persistObservationSession() {
+  localStorage.setItem(
+    SESSION_STORAGE_KEY,
+    JSON.stringify(
+      {
+        subjects_complete: subjectsComplete.checked,
+        objects_complete: objectsComplete.checked,
+        observed_compressed_view: compressedObserved.checked,
+        notes: observationNotes.value,
+      },
+      null,
+      2,
+    ),
+  );
+  saveStatus.textContent = "Saved locally";
+}
 
 function uniqueSorted(values, numeric = false) {
   return [...new Set(values)].sort((a, b) =>
@@ -67,15 +287,18 @@ function createVerbItem(verb) {
   const card = document.createElement("div");
   card.className = "verb-card";
 
+  const row = document.createElement("div");
+  row.className = "verb-button";
+
   const button = document.createElement("button");
-  button.className = "verb-button";
+  button.className = "verb-details-toggle";
   button.type = "button";
   button.setAttribute("aria-expanded", String(openOrder === verb.order));
   button.setAttribute("aria-controls", `morphology-${verb.order}`);
 
   const ref = document.createElement("span");
   ref.className = "ref";
-  ref.textContent = verb.ref;
+  ref.append(createReferenceButton(verb.ref));
 
   const surface = document.createElement("span");
   surface.className = "surface";
@@ -92,14 +315,23 @@ function createVerbItem(verb) {
   lemma.lang = "grc";
   lemma.textContent = verb.lemma;
 
-  button.append(ref, surface, spanish, lemma);
+  button.append(surface, spanish, lemma);
+  row.append(ref, button);
 
   const morphology = document.createElement("div");
   morphology.className = "morphology-row";
   morphology.id = `morphology-${verb.order}`;
   morphology.hidden = openOrder !== verb.order;
   morphology.append(
-    morphologyCell("Morph", verb.morph, "morph-code"),
+    (() => {
+      const cell = document.createElement("div");
+      cell.className = "morphology-cell";
+      const label = document.createElement("span");
+      label.className = "morphology-label";
+      label.textContent = "RMAC";
+      cell.append(label, createRmacButton(verb.rmac || verb.morph));
+      return cell;
+    })(),
     morphologyCell("Person", verb.person),
     morphologyCell("Tense", verb.tense),
     morphologyCell("Voice", verb.voice),
@@ -107,21 +339,22 @@ function createVerbItem(verb) {
     morphologyCell("Number", verb.number),
   );
 
-  button.addEventListener("click", () => {
+  const toggleMorphology = () => {
     const isOpen = openOrder === verb.order;
     openOrder = isOpen ? null : verb.order;
     document.querySelectorAll(".morphology-row").forEach((row) => {
       row.hidden = row.id !== `morphology-${openOrder}`;
     });
-    document.querySelectorAll(".verb-button").forEach((candidate) => {
+    document.querySelectorAll(".verb-details-toggle").forEach((candidate) => {
       candidate.setAttribute(
         "aria-expanded",
         String(candidate.getAttribute("aria-controls") === `morphology-${openOrder}`),
       );
     });
-  });
+  };
 
-  card.append(button, morphology);
+  button.addEventListener("click", toggleMorphology);
+  card.append(row, morphology);
   item.append(marker, card);
   return item;
 }
@@ -167,10 +400,19 @@ function persistAssertions() {
 function filteredVerbs() {
   const chapter = chapterFilter.value;
   const mood = moodFilter.value;
-  return finiteVerbs.filter(
+  const filtered = finiteVerbs.filter(
     (verb) =>
       (!chapter || String(verb.chapter) === chapter) &&
       (!mood || verb.mood === mood),
+  );
+  if (currentView !== "assertions") {
+    return filtered;
+  }
+  return filtered.filter(
+    (verb) =>
+      verb.chapter === ASSERTION_SCOPE.chapter &&
+      verb.verse >= ASSERTION_SCOPE.verseStart &&
+      verb.verse <= ASSERTION_SCOPE.verseEnd,
   );
 }
 
@@ -225,11 +467,11 @@ function createAssertionRow(verb, assertion) {
 
   const refCell = document.createElement("td");
   refCell.className = "assertion-ref";
-  refCell.textContent = assertion.ref;
+  refCell.append(createReferenceButton(assertion.ref));
 
   const morphologyCellElement = document.createElement("td");
   morphologyCellElement.className = "assertion-morph";
-  morphologyCellElement.textContent = verb.morph;
+  morphologyCellElement.append(createRmacButton(verb.rmac || verb.morph));
 
   row.append(
     subjectCell,
@@ -291,7 +533,7 @@ function renderCompressedAssertions(verbs) {
           : "";
         const refText = document.createElement("span");
         refText.className = "compressed-ref";
-        refText.textContent = assertion.ref;
+        refText.append(createReferenceButton(assertion.ref));
         item.append(verbText, objectText, refText);
         list.append(item);
       }
@@ -330,6 +572,9 @@ function setCurrentView(view) {
   assertionActions.hidden = !showAssertions;
   verbsViewButton.classList.toggle("active", !showAssertions);
   assertionsViewButton.classList.toggle("active", showAssertions);
+  if (showAssertions) {
+    chapterFilter.value = "";
+  }
   render();
 }
 
@@ -414,6 +659,7 @@ async function load() {
 
     finiteVerbs.sort((a, b) => a.order - b.order);
     loadAssertions();
+    loadObservationSession();
 
     addOptions(
       chapterFilter,
@@ -442,6 +688,34 @@ async function load() {
     loadJsonInput.addEventListener("change", () => {
       if (loadJsonInput.files[0]) {
         loadAssertionsJson(loadJsonInput.files[0]);
+      }
+    });
+    subjectsComplete.addEventListener("change", persistObservationSession);
+    objectsComplete.addEventListener("change", persistObservationSession);
+    compressedObserved.addEventListener("change", persistObservationSession);
+    observationNotes.addEventListener("input", persistObservationSession);
+    rmacPopoverClose.addEventListener("click", closeRmacHelp);
+    interlinearPopoverClose.addEventListener("click", closeInterlinear);
+    document.addEventListener("click", (event) => {
+      if (
+        !rmacPopover.hidden &&
+        !rmacPopover.contains(event.target) &&
+        !event.target.closest(".rmac-help")
+      ) {
+        closeRmacHelp();
+      }
+      if (
+        !interlinearPopover.hidden &&
+        !interlinearPopover.contains(event.target) &&
+        !event.target.closest(".reference-link")
+      ) {
+        closeInterlinear();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeRmacHelp();
+        closeInterlinear();
       }
     });
 

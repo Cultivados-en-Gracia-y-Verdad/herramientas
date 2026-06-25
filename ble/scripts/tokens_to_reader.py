@@ -9,7 +9,10 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from tokens_to_ble import NT_BOOKS, TOKENS_DIR, display_book, load_tokens
+from tokens_to_ble import TOKENS_DIR_NT, display_book, load_tokens, token_index
+from testament_books import NT_BOOKS
+from grc_morph import display_morph
+from grc_strongs import display_strongs
 
 OUTPUT_DIR = Path(__file__).resolve().parents[1] / "output" / "interlinear" / "NT"
 
@@ -22,19 +25,20 @@ def render_verse(label: str, ch: int, vs: int, tokens: list[dict]) -> str:
     lines = [
         f"## {label} {ch}:{vs}",
         "",
-        "| # | Griego | Lemma | Morph | Español |",
-        "|---:|---|---|---|---|",
+        "| # | Griego | Lemma | Strong's | RMAC | Español |",
+        "|---:|---|---|---|---|---|",
     ]
     for token in tokens:
         es = str(token.get("es", ""))
         if es == "?" or not es.strip():
             es = f"**{es or '?'}**"
         lines.append(
-            "| {tok} | {surface} | {lemma} | {morph} | {es} |".format(
-                tok=token["tok"],
+            "| {tok} | {surface} | {lemma} | {strongs} | {rmac} | {es} |".format(
+                tok=token_index(token),
                 surface=md_cell(token.get("surface", "")),
                 lemma=md_cell(token.get("lemma", "")),
-                morph=md_cell(token.get("morph", "")),
+                strongs=md_cell(display_strongs(token)),
+                rmac=md_cell(display_morph(token)),
                 es=md_cell(es),
             )
         )
@@ -49,7 +53,7 @@ def render_chapter(book_slug: str, ch: int, verses: dict[int, list[dict]]) -> st
     header = (
         f"# {label} {ch} — Interlinear (literal)\n\n"
         "Formato: cada token griego conserva el orden original y muestra "
-        "lema, morfología y el token español literal.\n\n"
+        "lema, número Strong's, morfología RMAC y el token español literal.\n\n"
         f"<!-- producer: ble/scripts/tokens_to_reader.py "
         f"generated: {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')} -->\n\n"
     )
@@ -68,7 +72,7 @@ def group_by_chapter(tokens: list[dict]) -> dict[int, dict[int, list[dict]]]:
         chapters[ch][vs].append(token)
     for ch in chapters:
         for vs in chapters[ch]:
-            chapters[ch][vs].sort(key=lambda item: int(item["tok"]))
+            chapters[ch][vs].sort(key=token_index)
     return chapters
 
 
@@ -94,7 +98,7 @@ def export_book(
         parts = [
             f"# {label} — Interlinear (literal)\n\n"
             "Formato: cada token griego conserva el orden original y muestra "
-            "lema, morfología y el token español literal.\n\n"
+            "lema, número Strong's, morfología RMAC y el token español literal.\n\n"
         ]
         for ch in selected:
             if ch not in by_chapter:
@@ -136,7 +140,7 @@ def main() -> int:
         action="store_true",
         help="one .reader.md per book instead of per chapter",
     )
-    parser.add_argument("--tokens-dir", type=Path, default=TOKENS_DIR)
+    parser.add_argument("--tokens-dir", type=Path, default=TOKENS_DIR_NT)
     parser.add_argument("--output-dir", type=Path, default=OUTPUT_DIR)
     args = parser.parse_args()
 

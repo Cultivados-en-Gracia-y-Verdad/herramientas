@@ -45,9 +45,11 @@ python3 scripts/tokens_to_ble.py --all   # full NT
 python3 scripts/validate_ble.py output/mateo.ble.md
 
 # Interlinear reader (QA / gloss editing)
-python3 scripts/tokens_to_reader.py mateo --chapter 1
-python3 scripts/tokens_to_reader.py mateo              # all chapters, one .reader.md per chapter
-python3 scripts/tokens_to_reader.py --all              # full NT interlinear export
+python3 scripts/export_interlinear.py mateo --chapter 1
+python3 scripts/export_interlinear.py mateo --single-file
+python3 scripts/export_interlinear.py --all              # full NT (reader + compact txt)
+python3 scripts/tokens_to_reader.py mateo --chapter 1    # markdown tables only
+python3 scripts/tokens_to_interlinear_txt.py mateo       # compact .interlinear.txt only
 
 # e-Sword Bible modules (NT only)
 python3 scripts/ble_to_esword.py
@@ -64,7 +66,7 @@ Canonical rule: if a verse cannot be rebuilt from tokens by the producer script,
 
 | Testament | Status |
 |-----------|--------|
-| **NT** | 27 books · ~137k tokens · glosses complete · ready to assemble |
+| **NT** | 27 books · ~137k tokens · glosses complete · interlinear export ready |
 | **OT** | not yet — `genesis.tokens.jsonl` only in MNA |
 
 ## Interlinear first, or literal Bible first?

@@ -14,7 +14,7 @@
             Finite verbs
           </button>
           <button class="switch-button" id="assertions-view-button" type="button">
-            S–V–O
+            Assertions
           </button>
         </div>
 
@@ -34,6 +34,7 @@
           </label>
 
           <div class="assertion-actions" id="assertion-actions" hidden>
+            <div class="passage-scope">Eph 1:4–14</div>
             <div class="mode-switch" aria-label="Assertion display">
               <button class="mode-button active" id="full-view-button" type="button">
                 Full
@@ -60,6 +61,28 @@
       </div>
 
       <div id="assertions-view" hidden>
+        <div class="observation-session">
+          <div class="observation-title">Observation Session</div>
+          <div class="observation-checks">
+            <label class="observation-check">
+              <input id="subjects-complete" type="checkbox" />
+              Subjects complete
+            </label>
+            <label class="observation-check">
+              <input id="objects-complete" type="checkbox" />
+              Objects complete
+            </label>
+            <label class="observation-check">
+              <input id="compressed-observed" type="checkbox" />
+              Observed compressed view
+            </label>
+          </div>
+          <label class="observation-notes-label" for="observation-notes">
+            Notes:
+          </label>
+          <textarea id="observation-notes" class="observation-notes" rows="3"></textarea>
+        </div>
+
         <div class="assertion-table-wrap" id="assertion-table-wrap">
           <table class="assertion-table">
             <thead>
@@ -68,7 +91,7 @@
                 <th>Verb</th>
                 <th>Object</th>
                 <th>Ref</th>
-                <th>Morphology</th>
+                <th>RMAC</th>
               </tr>
             </thead>
             <tbody id="assertion-table-body"></tbody>
@@ -81,8 +104,47 @@
       <output id="save-status" class="save-status" aria-live="polite"></output>
     </main>
 
+    <div class="rmac-popover" id="rmac-popover" role="dialog" aria-modal="false" hidden>
+      <div class="rmac-popover-header">
+        <code id="rmac-popover-code"></code>
+        <button id="rmac-popover-close" type="button" aria-label="Cerrar ayuda RMAC">×</button>
+      </div>
+      <dl id="rmac-popover-details"></dl>
+    </div>
+
+    <div
+      class="interlinear-popover"
+      id="interlinear-popover"
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby="interlinear-popover-ref"
+      hidden
+    >
+      <div class="interlinear-popover-header">
+        <div>
+          <div class="interlinear-popover-label">Interlineal</div>
+          <div id="interlinear-popover-ref"></div>
+        </div>
+        <button
+          id="interlinear-popover-close"
+          type="button"
+          aria-label="Cerrar interlineal"
+        >
+          ×
+        </button>
+      </div>
+      <div class="interlinear-verse-wrap">
+        <div
+          class="interlinear-verse"
+          id="interlinear-popover-body"
+          aria-label="Texto interlineal del versículo"
+        ></div>
+      </div>
+    </div>
+
     <script src="output/finite_verbs_data.js"></script>
     <script src="output/assertions_data.js"></script>
+    <script src="output/interlinear_data.js"></script>
     <script src="viewer.js"></script>
   </body>
 </html>
