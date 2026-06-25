@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "MNA" / "scripts"))
 
-from grc_inflect_es import inflect_from_lemma, is_nominal_morph  # noqa: E402
+from grc_inflect_es import inflect_from_lemma, is_nominal_morph, load_spanish_gender  # noqa: E402
 
 TOKENS_DIR = ROOT / "MNA" / "datasets" / "interlinear" / "NT"
 RULES_DIR = ROOT / "MNA" / "datasets" / "rules"
@@ -69,6 +69,7 @@ def main() -> int:
     args = parser.parse_args()
 
     load_lexica(args.rules_dir)
+    load_spanish_gender(args.rules_dir)
     books = NT_BOOKS if args.all else ([args.book] if args.book else [])
     if not books:
         parser.error("provide book or --all")

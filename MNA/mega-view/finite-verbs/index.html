@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finite Verbs</title>
+    <link rel="stylesheet" href="viewer.css" />
+  </head>
+  <body>
+    <main>
+      <div class="controls">
+        <div class="view-switch" aria-label="Viewer">
+          <button class="switch-button active" id="verbs-view-button" type="button">
+            Finite verbs
+          </button>
+          <button class="switch-button" id="assertions-view-button" type="button">
+            S–V–O
+          </button>
+        </div>
+
+        <div class="filters" aria-label="Viewer filters">
+          <label>
+            Chapter
+            <select id="chapter-filter">
+              <option value="">All</option>
+            </select>
+          </label>
+
+          <label>
+            Mood
+            <select id="mood-filter">
+              <option value="">All</option>
+            </select>
+          </label>
+
+          <div class="assertion-actions" id="assertion-actions" hidden>
+            <div class="mode-switch" aria-label="Assertion display">
+              <button class="mode-button active" id="full-view-button" type="button">
+                Full
+              </button>
+              <button class="mode-button" id="compressed-view-button" type="button">
+                Compressed
+              </button>
+            </div>
+            <button class="file-button" id="save-json-button" type="button">
+              Save JSON
+            </button>
+            <label class="file-button load-button">
+              Load JSON
+              <input id="load-json-input" type="file" accept=".json,application/json" />
+            </label>
+          </div>
+
+          <output id="count" aria-live="polite"></output>
+        </div>
+      </div>
+
+      <div id="verbs-view">
+        <ol id="verb-path" class="verb-path" aria-label="Ordered finite-verb path"></ol>
+      </div>
+
+      <div id="assertions-view" hidden>
+        <div class="assertion-table-wrap" id="assertion-table-wrap">
+          <table class="assertion-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Verb</th>
+                <th>Object</th>
+                <th>Ref</th>
+                <th>Morphology</th>
+              </tr>
+            </thead>
+            <tbody id="assertion-table-body"></tbody>
+          </table>
+        </div>
+        <div class="compressed-assertions" id="compressed-assertions" hidden></div>
+      </div>
+
+      <p id="message" class="message" aria-live="polite">Loading…</p>
+      <output id="save-status" class="save-status" aria-live="polite"></output>
+    </main>
+
+    <script src="output/finite_verbs_data.js"></script>
+    <script src="output/assertions_data.js"></script>
+    <script src="viewer.js"></script>
+  </body>
+</html>

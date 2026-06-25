@@ -49,9 +49,13 @@ python3 scripts/tokens_to_reader.py mateo --chapter 1
 python3 scripts/tokens_to_reader.py mateo              # all chapters, one .reader.md per chapter
 python3 scripts/tokens_to_reader.py --all              # full NT interlinear export
 
-# e-Sword Bible module (NT only)
+# e-Sword Bible modules (NT only)
 python3 scripts/ble_to_esword.py
-# → output/esword/BLE.bblx  (copy to Documents/e-Sword/)
+# → output/esword/BLE.bblx  (Windows)
+# → output/esword/BLE.bbli  (e-Sword X / macOS, iOS, Android)
+
+# Convert an existing .bblx to .bbli
+python3 scripts/bblx_to_bbli.py output/esword/BLE.bblx
 ```
 
 Canonical rule: if a verse cannot be rebuilt from tokens by the producer script, it is not official BLE text. Gloss corrections go in MNA token data, not by hand-editing `.ble.md`.

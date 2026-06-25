@@ -11,38 +11,20 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-TOKENS_DIR = ROOT / "MNA" / "datasets" / "interlinear" / "NT"
+TOKENS_DIR_NT = ROOT / "MNA" / "datasets" / "interlinear" / "NT"
+TOKENS_DIR_OT = ROOT / "MNA" / "datasets" / "interlinear" / "OT"
+TOKENS_DIR = TOKENS_DIR_NT  # default
 OUTPUT_DIR = Path(__file__).resolve().parents[1] / "output"
 
-NT_BOOKS = [
-    "mateo",
-    "marcos",
-    "lucas",
-    "juan",
-    "hechos",
-    "romanos",
-    "1corintios",
-    "2corintios",
-    "galatas",
-    "efesios",
-    "filipenses",
-    "colosenses",
-    "1tesalonicenses",
-    "2tesalonicenses",
-    "1timoteo",
-    "2timoteo",
-    "tito",
-    "filemon",
-    "hebreos",
-    "santiago",
-    "1pedro",
-    "2pedro",
-    "1juan",
-    "2juan",
-    "3juan",
-    "judas",
-    "apocalipsis",
-]
+from testament_books import NT_BOOKS, OT_BOOKS  # noqa: E402
+
+
+def token_index(token: dict) -> int:
+    if "tok" in token:
+        return int(token["tok"])
+    if "w" in token:
+        return int(token["w"])
+    raise KeyError(f"token missing tok/w: {token}")
 
 
 def display_book(slug: str) -> str:
@@ -80,7 +62,7 @@ def tokens_to_verses(tokens: list[dict]) -> list[tuple[int, int, str]]:
 
     for token in tokens:
         key = (int(token["ch"]), int(token["vs"]))
-        by_verse[key].append((int(token["tok"]), str(token.get("es", ""))))
+        by_verse[key].append((token_index(token), str(token.get("es", ""))))
 
     verses: list[tuple[int, int, str]] = []
     unresolved = 0
@@ -130,14 +112,20 @@ def build_book(book: str, tokens_dir: Path, output_dir: Path) -> Path:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Build BLE verse files from MNA NT tokens.")
-    parser.add_argument("book", nargs="?", help="book slug (e.g. mateo, efesios)")
-    parser.add_argument("--all", action="store_true", help="build all 27 NT books")
+    parser = argparse.ArgumentParser(description="Build BLE verse files from MNA interlinear tokens.")
+    parser.add_argument("book", nargs="?", help="book slug (e.g. mateo, genesis)")
+    parser.add_argument("--all", action="store_true", help="build all books for the selected testament")
+    parser.add_argument(
+        "--testament",
+        choices=("nt", "ot"),
+        default="nt",
+        help="which testament to build (default: nt)",
+    )
     parser.add_argument(
         "--tokens-dir",
         type=Path,
-        default=TOKENS_DIR,
-        help=f"token JSONL directory (default: {TOKENS_DIR})",
+        default=None,
+        help="token JSONL directory (default: interlinear/NT or OT)",
     )
     parser.add_argument(
         "--output-dir",
@@ -147,15 +135,20 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    tokens_dir = args.tokens_dir or (TOKENS_DIR_OT if args.testament == "ot" else TOKENS_DIR_NT)
+    book_list = OT_BOOKS if args.testament == "ot" else NT_BOOKS
+
     if args.all:
-        books = NT_BOOKS
+        books = [b for b in book_list if (tokens_dir / f"{b}.tokens.jsonl").is_file()]
+        if not books:
+            parser.error(f"no token files found in {tokens_dir}")
     elif args.book:
         books = [args.book]
     else:
         parser.error("provide a book slug or --all")
 
     for book in books:
-        dest = build_book(book, args.tokens_dir, args.output_dir)
+        dest = build_book(book, tokens_dir, args.output_dir)
         line_count = sum(1 for _ in dest.open(encoding="utf-8"))
         print(f"wrote {dest} ({line_count} lines)")
 

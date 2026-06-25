@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from grc_inflect_es import inflect_from_lemma, is_nominal_morph
+from grc_inflect_es import inflect_from_lemma, inflect_genitive_mark, is_nominal_morph, load_spanish_gender
 
 def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
@@ -120,6 +120,7 @@ def apply_rules(book: str, tokens_path: Path, rules_dir: Path, overrides_path: P
     pas_by_morph    = load(rules_dir / "grc_pas_by_morph.json")
     raw_gender      = load(rules_dir / "grc_spanish_noun_gender.json")
     spanish_gender  = {k: v for k, v in raw_gender.items() if not str(k).startswith("_")}
+    load_spanish_gender(rules_dir)
 
     rows = read_jsonl(tokens_path)
 

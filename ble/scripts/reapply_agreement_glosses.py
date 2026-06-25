@@ -64,6 +64,21 @@ def guess_gender_from_gloss(gloss: str) -> str | None:
     return None
 
 
+def gender_from_greek_morph(morph: str) -> str | None:
+    if len(morph) <= 8:
+        return None
+    g = morph[8]
+    if g == "F":
+        return "f"
+    if g in ("M", "N"):
+        return "m"
+    return None
+
+
+def is_participle_morph(morph: str) -> bool:
+    return morph.startswith("V") and len(morph) > 5 and morph[5] == "P"
+
+
 def spanish_gender_for_token(row: dict) -> str | None:
     lemma = str(row.get("lemma", ""))
     gloss = str(row.get("es", ""))
@@ -72,11 +87,31 @@ def spanish_gender_for_token(row: dict) -> str | None:
     if lemma in SPANISH_GENDER:
         return SPANISH_GENDER[lemma]
     morph = str(row.get("morph", ""))
+    if is_participle_morph(morph):
+        return gender_from_greek_morph(morph)
     if morph.startswith("A"):
-        return guess_gender_from_gloss(gloss)
+        return gender_from_greek_morph(morph) or guess_gender_from_gloss(gloss)
     if morph.startswith("N"):
         return guess_gender_from_gloss(gloss)
     return None
+
+
+def next_head_gender(rows: list[dict], index: int) -> str | None:
+    """Gender for article agreement: noun lexical gender, or Greek gender for participle/adj."""
+    deferred_adj: str | None = None
+    for j in range(index + 1, min(index + 6, len(rows))):
+        row = rows[j]
+        morph = str(row.get("morph", ""))
+        if morph.startswith("RA"):
+            continue
+        if is_participle_morph(morph):
+            return gender_from_greek_morph(morph)
+        if morph.startswith("N"):
+            return spanish_gender_for_token(row)
+        if morph.startswith("A"):
+            deferred_adj = gender_from_greek_morph(morph) or spanish_gender_for_token(row)
+            continue
+    return deferred_adj
 
 
 def morph_with_gender(morph: str, gender: str) -> str:
@@ -91,15 +126,7 @@ def article_for_spanish_noun(article_morph: str, noun_gender: str) -> str | None
 
 
 def next_noun_gender(rows: list[dict], index: int) -> str | None:
-    for j in range(index + 1, min(index + 6, len(rows))):
-        row = rows[j]
-        morph = str(row.get("morph", ""))
-        if morph.startswith("RA"):
-            continue
-        gender = spanish_gender_for_token(row)
-        if gender:
-            return gender
-    return None
+    return next_head_gender(rows, index)
 
 
 def reapply_file(path: Path) -> tuple[int, int]:
