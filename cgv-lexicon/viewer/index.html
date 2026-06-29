@@ -3,21 +3,34 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
   <title>ROOTS Lexicon — Observation Layer</title>
   <link rel="stylesheet" href="/viewer.css" />
 </head>
 <body>
   <header>
-    <h1>ROOTS Lexicon</h1>
-    <p class="subtitle">Observation Layer — Greek NT verbs</p>
-    <form id="search-form" action="/lexicon/greek/" method="get" onsubmit="return goLemma(event)">
-      <input id="lemma-input" type="text" placeholder="Lemma (e.g. ἀγαπάω)" autocomplete="off" />
-      <button type="submit">Look up</button>
+    <div class="header-row">
+      <div>
+        <h1><a href="/lexicon" class="home-link">ROOTS Lexicon</a></h1>
+        <p class="subtitle" id="page-subtitle">Observation Layer</p>
+      </div>
+      <nav class="lang-nav" id="lang-nav">
+        <a href="/lexicon/greek" data-lang="greek">Greek</a>
+        <a href="/lexicon/hebrew" data-lang="hebrew">Hebrew</a>
+      </nav>
+    </div>
+    <form id="search-form" class="search-form" onsubmit="return goLemma(event)">
+      <input id="lemma-input" type="search" placeholder="Search lemma…" autocomplete="off" />
+      <button type="submit">Open</button>
     </form>
   </header>
   <main id="content">
-    <p class="hint">Enter a Greek lemma above, or open <code>/lexicon/greek/{lemma}</code>.</p>
+    <p class="hint">Loading…</p>
   </main>
-  <script src="/viewer.js"></script>
+  <noscript>
+    <p class="error">JavaScript is required. Start the server with <code>npm run serve:lexicon</code> and open
+    <code>http://localhost:4177/lexicon</code> in your browser.</p>
+  </noscript>
+  <script src="/viewer.js" type="module"></script>
 </body>
 </html>
