@@ -11,7 +11,7 @@
   --warn: #b45309;
   --ok: #15803d;
   --font: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --cgv-type-scale: 1.25;
+  --cgv-type-scale: 1.3;
   --status-bar-bg: #f1f5f9;
   --sidebar-bg: #f1f5f9;
   --tabs-bg: #f1f5f9;
@@ -228,8 +228,20 @@ button.primary:hover {
   color: var(--muted);
 }
 
-.writing-mode-toggle:hover {
+.writing-mode-toggle:hover,
+.source-toggle:hover {
   color: var(--text);
+}
+
+.source-toggle {
+  border-color: #cbd5e1;
+  color: var(--muted);
+}
+
+.source-toggle.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 .app.writing-mode .workspace {
@@ -256,12 +268,8 @@ button.primary:hover {
   grid-template-columns: 1fr min(320px, 30vw);
 }
 
-.workspace--markdown {
-  grid-template-columns: 1fr;
-}
-
-.workspace--markdown .editor-pane {
-  border-right: none;
+.workspace--source-open {
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 36vw);
 }
 
 .editor-pane {
@@ -311,6 +319,32 @@ button.primary:hover {
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.panel-source {
+  display: flex;
+  min-height: min(54vh, 620px);
+  flex-direction: column;
+}
+
+.source-editor {
+  flex: 1;
+  min-height: 360px;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  resize: vertical;
+  color: var(--text);
+  background: var(--cm-bg);
+  font-family: "IBM Plex Mono", Menlo, Consolas, monospace;
+  font-size: calc(15px * var(--cgv-type-scale));
+  line-height: 1.55;
+}
+
+.source-editor:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .panel-meta {
@@ -428,28 +462,6 @@ button.primary:hover {
   background: var(--accent-soft);
   padding: 1px 4px;
   border-radius: 4px;
-}
-
-.view-tabs {
-  display: flex;
-  gap: 4px;
-  background: var(--tabs-bg);
-  padding: 4px;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-.view-tabs button {
-  padding: 6px 14px;
-  border: 0;
-  background: transparent;
-}
-
-.view-tabs button.active {
-  background: var(--surface);
-  color: var(--accent);
-  font-weight: 600;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .structured-editor {

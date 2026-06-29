@@ -39,14 +39,12 @@ import {
 } from "./lib/theme";
 import "./App.css";
 
-type ViewMode = "manual" | "markdown";
-
 export default function App() {
   const [content, setContent] = useState("");
   const [filePath, setFilePath] = useState<string | null>(null);
   const [dirty, setDirty] = useState(false);
   const [, setStatus] = useState("Listo");
-  const [viewMode, setViewMode] = useState<ViewMode>("manual");
+  const [sourceOpen, setSourceOpen] = useState(false);
   const [frontMatter, setFrontMatter] = useState("");
   const [body, setBody] = useState("");
   const [writingMode, setWritingMode] = useState(loadWritingModePreference);
@@ -122,25 +120,9 @@ export default function App() {
     setDirty(true);
   }, []);
 
-  const attemptViewSwitch = useCallback(
-    async (next: ViewMode) => {
-      if (next === viewMode) return;
-      setViewMode(next);
-    },
-    [viewMode]
-  );
-
-  const cycleViewMode = useCallback(async () => {
-    const next: ViewMode = viewMode === "manual" ? "markdown" : "manual";
-    await attemptViewSwitch(next);
-  }, [attemptViewSwitch, viewMode]);
-
-  const switchViewMode = useCallback(
-    async (mode: ViewMode) => {
-      await attemptViewSwitch(mode);
-    },
-    [attemptViewSwitch]
-  );
+  const toggleSourcePanel = useCallback(() => {
+    setSourceOpen(open => !open);
+  }, []);
 
   /** Live document from the single shared editor. */
   const resolveLiveContent = useCallback(async (): Promise<string> => {
@@ -430,30 +412,24 @@ export default function App() {
       }
 
       if (mod && event.shiftKey && event.key.toLowerCase() === "f") {
-        if (viewMode === "manual" || viewMode === "markdown") {
-          event.preventDefault();
-          toggleWritingMode();
-        }
+        event.preventDefault();
+        toggleWritingMode();
         return;
       }
 
       if (mod && event.altKey && event.key.toLowerCase() === "f") {
-        if (viewMode === "manual" || viewMode === "markdown") {
-          event.preventDefault();
-          setSearchOpen(true);
-          setSearchShowReplace(true);
-          dispatchSearchOpen(true, window.getSelection()?.toString().trim() ?? "");
-        }
+        event.preventDefault();
+        setSearchOpen(true);
+        setSearchShowReplace(true);
+        dispatchSearchOpen(true, window.getSelection()?.toString().trim() ?? "");
         return;
       }
 
       if (mod && event.key.toLowerCase() === "f") {
-        if (viewMode === "manual" || viewMode === "markdown") {
-          event.preventDefault();
-          setSearchOpen(true);
-          setSearchShowReplace(false);
-          dispatchSearchOpen(false, window.getSelection()?.toString().trim() ?? "");
-        }
+        event.preventDefault();
+        setSearchOpen(true);
+        setSearchShowReplace(false);
+        dispatchSearchOpen(false, window.getSelection()?.toString().trim() ?? "");
         return;
       }
 
@@ -461,7 +437,7 @@ export default function App() {
 
       if (event.key === "/" || event.code === "Slash") {
         event.preventDefault();
-        void cycleViewMode();
+        toggleSourcePanel();
         return;
       }
 
@@ -489,18 +465,16 @@ export default function App() {
       const styleKey = event.key >= "1" && event.key <= "7" ? Number(event.key) : 0;
       if (!styleKey) return;
 
-      if (viewMode === "manual" || viewMode === "markdown") {
-        event.preventDefault();
-        window.dispatchEvent(
-          new CustomEvent("cgv-apply-style", {
-            detail: { styleKey, viewMode }
-          })
-        );
-      }
+      event.preventDefault();
+      window.dispatchEvent(
+        new CustomEvent("cgv-apply-style", {
+          detail: { styleKey, viewMode: "manual" }
+        })
+      );
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [cycleViewMode, handleNew, handleOpen, handleQuit, handleSave, searchOpen, setWritingModeEnabled, toggleWritingMode, viewMode, writingMode]);
+  }, [handleNew, handleOpen, handleQuit, handleSave, searchOpen, setWritingModeEnabled, toggleSourcePanel, toggleWritingMode, writingMode]);
 
   useEffect(() => {
     let cancelled = false;
@@ -641,8 +615,7 @@ export default function App() {
     { 1: 0, 2: 0, 3: 0 }
   );
 
-  const focusWriting =
-    writingMode && (viewMode === "manual" || viewMode === "markdown");
+  const focusWriting = writingMode;
   const showWelcome =
     welcomeOverlay === "startup" && !filePath && !body.trim() && !focusWriting;
 
@@ -699,24 +672,6 @@ export default function App() {
             </div>
             <span className="brand-file">{title}</span>
           </div>
-          <div className="view-tabs">
-            <button
-              type="button"
-              className={viewMode === "manual" ? "active" : undefined}
-              onClick={() => switchViewMode("manual")}
-              title="Manual CGV — edición visual con términos del formato — ⌘/"
-            >
-              Manual
-            </button>
-            <button
-              type="button"
-              className={viewMode === "markdown" ? "active" : undefined}
-              onClick={() => switchViewMode("markdown")}
-              title="⌘/"
-            >
-              Markdown
-            </button>
-          </div>
           <div className="toolbar-actions">
             <button
               type="button"
@@ -727,16 +682,22 @@ export default function App() {
             >
               {theme === "dark" ? "☀" : "☾"}
             </button>
-            {viewMode === "manual" && (
-              <button
-                type="button"
-                className="writing-mode-toggle"
-                onClick={toggleWritingMode}
-                title="Modo enfoque (⌘⇧F)"
-              >
-                Enfoque
-              </button>
-            )}
+            <button
+              type="button"
+              className={`source-toggle${sourceOpen ? " active" : ""}`}
+              onClick={toggleSourcePanel}
+              title="Mostrar markdown (⌘/)"
+            >
+              Markdown
+            </button>
+            <button
+              type="button"
+              className="writing-mode-toggle"
+              onClick={toggleWritingMode}
+              title="Modo enfoque (⌘⇧F)"
+            >
+              Enfoque
+            </button>
             <button type="button" className="primary" onClick={() => void handleSave()} title="⌘S">
               Guardar
             </button>
@@ -744,25 +705,23 @@ export default function App() {
         </header>
       )}
 
-      <main className={`workspace ${viewMode === "markdown" ? "workspace--markdown" : ""}`}>
+      <main className={`workspace ${sourceOpen ? "workspace--source-open" : ""}`}>
         {focusWriting && (
           <div className="focus-mode-badge" aria-live="polite">
-            {viewMode === "manual" ? "Manual" : "Markdown"}
-            <span className="focus-mode-badge-hint">⌘/ cambiar · Escape salir</span>
+            Manual
+            <span className="focus-mode-badge-hint">Escape salir</span>
           </div>
         )}
         <section className="editor-pane" ref={editorPaneRef}>
-          {(viewMode === "manual" || viewMode === "markdown") && (
-            <SearchReplaceBar
-              visible={searchOpen}
-              showReplace={searchShowReplace}
-              onShowReplaceChange={setSearchShowReplace}
-              onClose={() => {
-                setSearchOpen(false);
-                setSearchShowReplace(false);
-              }}
-            />
-          )}
+          <SearchReplaceBar
+            visible={searchOpen}
+            showReplace={searchShowReplace}
+            onShowReplaceChange={setSearchShowReplace}
+            onClose={() => {
+              setSearchOpen(false);
+              setSearchShowReplace(false);
+            }}
+          />
           {showWelcome && (
             <EmptyWelcome
               lastOpenedPath={lastOpenedPath}
@@ -779,16 +738,28 @@ export default function App() {
               onChange={handleChangeMarkdown}
               onDirty={markDocumentDirty}
               reloadKey={`${documentSession}:${filePath ?? "untitled"}`}
-              mode={viewMode}
+              mode="manual"
               writingMode={focusWriting}
               filePath={filePath}
-              onToggleMode={() => void cycleViewMode()}
+              onToggleMode={toggleSourcePanel}
             />
           </div>
         </section>
 
-        {!focusWriting && viewMode === "manual" && (
+        {!focusWriting && (
           <aside className="sidebar">
+          {sourceOpen && (
+            <section className="panel panel-source">
+              <h2>Markdown</h2>
+              <textarea
+                className="source-editor"
+                value={content}
+                spellCheck={false}
+                onChange={event => handleChangeMarkdown(event.currentTarget.value)}
+              />
+            </section>
+          )}
+
           <section className="panel">
             <h2>Esquema</h2>
             <p className="panel-meta">
@@ -826,7 +797,7 @@ export default function App() {
             <h2>Notas</h2>
             <p>
               <strong>Archivo</strong> — Nuevo, Abrir, Guardar, plantilla. <strong>Enfoque</strong> — ⌘⇧F.
-              Buscar — ⌘F, reemplazar — ⌘⌥F. Atajos: ⌘/ Manual ↔ Markdown, ⌘N/O/S, ⌘1–7 estilos CGV.
+              Buscar — ⌘F, reemplazar — ⌘⌥F. Atajos: ⌘/ Markdown lateral, ⌘N/O/S, ⌘1–7 estilos CGV.
               Marcadores de Presenter — panel <strong>Presenter</strong> (derecha).
             </p>
           </section>
