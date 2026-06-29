@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Greek and Hebrew lemma lexicon for CGV (gloss + Strong's lookup)",
+  "description": "ROOTS Lexicon Engine — observation layer + gloss lookup for CGV",
+  "scripts": {
+    "build:lexicon": "python3 scripts/build_lexicon.py",
+    "build:lexicon-phase1": "python3 scripts/build_phase1_greek.py"
+  },
   "exports": {
     ".": "./src/index.ts"
   }
