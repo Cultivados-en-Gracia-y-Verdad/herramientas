@@ -1,0 +1,86 @@
+{
+  "lemma": "ἐπιδιορθόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιδιορθώσῃ,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Titus 1:5",
+      "form": "ἐπιδιορθώσῃ,",
+      "morph": "V-A-M-S-2S",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "σε ἐν Κρήτῃ ἵνα τὰ λείποντα",
+      "right_context": "καὶ καταστήσῃς κατὰ πόλιν πρεσβυτέρους, ὡς"
+    }
+  ],
+  "books": {
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Κρήτη",
+      "display": "Creta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λείπω",
+      "display": "faltando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίστημι",
+      "display": "establecas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρεσβύτερος",
+      "display": "ancianos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Titus 1:5",
+      "reason": "occurs near Κρήτη, καθίστημι, λείπω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

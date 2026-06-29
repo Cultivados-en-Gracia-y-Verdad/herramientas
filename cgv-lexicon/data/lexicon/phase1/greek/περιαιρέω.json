@@ -1,0 +1,273 @@
+{
+  "lemma": "περιαιρέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "περιαιρεῖται",
+      "count": 1
+    },
+    {
+      "form": "περιελεῖν",
+      "count": 1
+    },
+    {
+      "form": "περιῃρεῖτο",
+      "count": 1
+    },
+    {
+      "form": "περιελόντες",
+      "count": 1
+    },
+    {
+      "form": "⸀περιελόντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "infinitive": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 3,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 3:16",
+      "form": "περιαιρεῖται",
+      "morph": "V-P-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "ἡνίκα ⸂δὲ ἐὰν⸃ ἐπιστρέψῃ πρὸς κύριον,",
+      "right_context": "τὸ κάλυμμα."
+    },
+    {
+      "ref": "Hebrews 10:11",
+      "form": "περιελεῖν",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 11,
+      "left_context": "πολλάκις προσφέρων θυσίας, αἵτινες οὐδέποτε δύνανται",
+      "right_context": "ἁμαρτίας."
+    },
+    {
+      "ref": "Acts 27:20",
+      "form": "περιῃρεῖτο",
+      "morph": "V-I-P-I-3S",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 20,
+      "left_context": "χειμῶνός τε οὐκ ὀλίγου ἐπικειμένου, λοιπὸν",
+      "right_context": "⸂ἐλπὶς πᾶσα⸃ τοῦ σῴζεσθαι ἡμᾶς."
+    },
+    {
+      "ref": "Acts 27:40",
+      "form": "περιελόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 40,
+      "left_context": "καὶ τὰς ἀγκύρας",
+      "right_context": "εἴων εἰς τὴν θάλασσαν, ἅμα ἀνέντες"
+    },
+    {
+      "ref": "Acts 28:13",
+      "form": "⸀περιελόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 13,
+      "left_context": "ὅθεν",
+      "right_context": "κατηντήσαμεν εἰς Ῥήγιον. καὶ μετὰ μίαν"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "2 Corinthians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιστρέφω",
+      "display": "volva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάλυμμα",
+      "display": "velo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "ofreciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυσία",
+      "display": "sacrificios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐδέποτε",
+      "display": "nunca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "pueden",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγος",
+      "display": "de·poco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίκειμαι",
+      "display": "estar·sobre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "salvar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγκυρα",
+      "display": "anclas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐάω",
+      "display": "dejaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅθεν",
+      "display": "de·donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταντάω",
+      "display": "llegamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ῥήγιον",
+      "display": "Regio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 27:20",
+      "negator": "οὐκ",
+      "clause_text": "πλείονας ἡμέρας, χειμῶνός τε οὐκ ὀλίγου ἐπικειμένου, λοιπὸν περιῃρεῖτο ⸂ἐλπὶς πᾶσα⸃ τοῦ σῴζεσθαι ἡμᾶς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 27:40",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 28:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 3:16",
+      "reason": "occurs near κάλυμμα, κύριος, ἐπιστρέφω"
+    },
+    {
+      "ref": "Hebrews 10:11",
+      "reason": "occurs near θυσία, προσφέρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

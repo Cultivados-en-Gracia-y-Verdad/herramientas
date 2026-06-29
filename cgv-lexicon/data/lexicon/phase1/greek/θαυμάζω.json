@@ -1,0 +1,838 @@
+{
+  "lemma": "θαυμάζω",
+  "language": "greek",
+  "total_occurrences": 43,
+  "forms": [
+    {
+      "form": "ἐθαύμασαν",
+      "count": 6
+    },
+    {
+      "form": "ἐθαύμασεν",
+      "count": 4
+    },
+    {
+      "form": "ἐθαύμαζον",
+      "count": 3
+    },
+    {
+      "form": "θαυμάζετε",
+      "count": 2
+    },
+    {
+      "form": "θαυμάζοντες",
+      "count": 2
+    },
+    {
+      "form": "ἐθαύμασαν,",
+      "count": 2
+    },
+    {
+      "form": "θαυμαζόντων",
+      "count": 2
+    },
+    {
+      "form": "θαυμάζειν",
+      "count": 2
+    },
+    {
+      "form": "θαυμάζετε,",
+      "count": 1
+    },
+    {
+      "form": "θαυμασθῆναι",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐθαυμάσθη",
+      "count": 1
+    },
+    {
+      "form": "ἐθαύμασα",
+      "count": 1
+    },
+    {
+      "form": "ἐθαύμασας;",
+      "count": 1
+    },
+    {
+      "form": "⸀θαυμασθήσονται",
+      "count": 1
+    },
+    {
+      "form": "Θαυμάζω",
+      "count": 1
+    },
+    {
+      "form": "ἐθαύμαζον,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐθαύμασεν",
+      "count": 1
+    },
+    {
+      "form": "θαυμάσατε",
+      "count": 1
+    },
+    {
+      "form": "θαυμάσῃς",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐθαύμαζον",
+      "count": 1
+    },
+    {
+      "form": "θαυμάζητε.",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐθαύμαζον",
+      "count": 1
+    },
+    {
+      "form": "θαυμάζετε.",
+      "count": 1
+    },
+    {
+      "form": "θαυμάσαντες",
+      "count": 1
+    },
+    {
+      "form": "θαυμάζων",
+      "count": 1
+    },
+    {
+      "form": "ἐθαύμαζον.",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐθαύμαζεν",
+      "count": 1
+    },
+    {
+      "form": "θαυμάσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 3,
+      "infinitive": 4,
+      "indicative": 28,
+      "subjunctive": 2,
+      "participle": 6
+    },
+    "tenses": {
+      "present": 13,
+      "aorist": 21,
+      "future": 1,
+      "imperfect": 8
+    },
+    "voices": {
+      "active": 40,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 3:13",
+      "form": "θαυμάζετε,",
+      "morph": "V-P-A-D-2P",
+      "book": "1 John",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "⸀μὴ",
+      "right_context": "⸀ἀδελφοί, εἰ μισεῖ ὑμᾶς ὁ κόσμος."
+    },
+    {
+      "ref": "2 Thessalonians 1:10",
+      "form": "θαυμασθῆναι",
+      "morph": "V-A-P-N",
+      "book": "2 Thessalonians",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "ἐνδοξασθῆναι ἐν τοῖς ἁγίοις αὐτοῦ καὶ",
+      "right_context": "ἐν πᾶσιν τοῖς πιστεύσασιν, ὅτι ἐπιστεύθη"
+    },
+    {
+      "ref": "Revelation 13:3",
+      "form": "⸀ἐθαυμάσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 13,
+      "verse": 3,
+      "left_context": "πληγὴ τοῦ θανάτου αὐτοῦ ἐθεραπεύθη. καὶ",
+      "right_context": "⸂ὅλη ἡ γῆ⸃ ὀπίσω τοῦ θηρίου,"
+    },
+    {
+      "ref": "Revelation 17:6",
+      "form": "ἐθαύμασα",
+      "morph": "V-A-A-I-1S",
+      "book": "Revelation",
+      "chapter": 17,
+      "verse": 6,
+      "left_context": "τοῦ αἵματος τῶν μαρτύρων Ἰησοῦ. Καὶ",
+      "right_context": "ἰδὼν αὐτὴν θαῦμα μέγα·"
+    },
+    {
+      "ref": "Revelation 17:7",
+      "form": "ἐθαύμασας;",
+      "morph": "V-A-A-I-2S",
+      "book": "Revelation",
+      "chapter": 17,
+      "verse": 7,
+      "left_context": "εἶπέν μοι ὁ ἄγγελος· Διὰ τί",
+      "right_context": "ἐγὼ ἐρῶ σοι τὸ μυστήριον τῆς"
+    },
+    {
+      "ref": "Revelation 17:8",
+      "form": "⸀θαυμασθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Revelation",
+      "chapter": 17,
+      "verse": 8,
+      "left_context": "ἀβύσσου, καὶ εἰς ἀπώλειαν ⸀ὑπάγει· καὶ",
+      "right_context": "οἱ κατοικοῦντες ἐπὶ τῆς γῆς, ὧν"
+    },
+    {
+      "ref": "Galatians 1:6",
+      "form": "Θαυμάζω",
+      "morph": "V-P-A-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "ὅτι οὕτως ταχέως μετατίθεσθε ἀπὸ τοῦ"
+    },
+    {
+      "ref": "Acts 2:7",
+      "form": "ἐθαύμαζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "ἐξίσταντο ⸀δὲ καὶ",
+      "right_context": "⸀λέγοντες· ⸀Οὐχ ἰδοὺ ⸀πάντες οὗτοί εἰσιν"
+    },
+    {
+      "ref": "Acts 3:12",
+      "form": "θαυμάζετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "πρὸς τὸν λαόν· Ἄνδρες Ἰσραηλῖται, τί",
+      "right_context": "ἐπὶ τούτῳ, ἢ ἡμῖν τί ἀτενίζετε"
+    },
+    {
+      "ref": "Acts 4:13",
+      "form": "ἐθαύμαζον,",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "ὅτι ἄνθρωποι ἀγράμματοί εἰσιν καὶ ἰδιῶται,",
+      "right_context": "ἐπεγίνωσκόν τε αὐτοὺς ὅτι σὺν τῷ"
+    },
+    {
+      "ref": "Acts 7:31",
+      "form": "⸀ἐθαύμασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 31,
+      "left_context": "ὁ δὲ Μωϋσῆς ἰδὼν",
+      "right_context": "τὸ ὅραμα. προσερχομένου δὲ αὐτοῦ κατανοῆσαι"
+    },
+    {
+      "ref": "Acts 13:41",
+      "form": "θαυμάσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 41,
+      "left_context": "Ἴδετε, οἱ καταφρονηταί, καὶ",
+      "right_context": "καὶ ἀφανίσθητε, ὅτι ἔργον ⸂ἐργάζομαι ἐγὼ⸃"
+    },
+    {
+      "ref": "John 3:7",
+      "form": "θαυμάσῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "John",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "μὴ",
+      "right_context": "ὅτι εἶπόν σοι Δεῖ ὑμᾶς γεννηθῆναι"
+    },
+    {
+      "ref": "John 4:27",
+      "form": "⸀ἐθαύμαζον",
+      "morph": "V-I-A-I-3P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 27,
+      "left_context": "τούτῳ ἦλθαν οἱ μαθηταὶ αὐτοῦ, καὶ",
+      "right_context": "ὅτι μετὰ γυναικὸς ἐλάλει· οὐδεὶς μέντοι"
+    },
+    {
+      "ref": "John 5:20",
+      "form": "θαυμάζητε.",
+      "morph": "V-P-A-S-2P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "τούτων δείξει αὐτῷ ἔργα, ἵνα ὑμεῖς",
+      "right_context": ""
+    },
+    {
+      "ref": "John 5:28",
+      "form": "θαυμάζετε",
+      "morph": "V-P-A-D-2P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 28,
+      "left_context": "μὴ",
+      "right_context": "τοῦτο, ὅτι ἔρχεται ὥρα ἐν ᾗ"
+    },
+    {
+      "ref": "John 7:15",
+      "form": "⸂ἐθαύμαζον",
+      "morph": "V-I-A-I-3P",
+      "book": "John",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "",
+      "right_context": "οὖν⸃ οἱ Ἰουδαῖοι λέγοντες· Πῶς οὗτος"
+    },
+    {
+      "ref": "John 7:21",
+      "form": "θαυμάζετε.",
+      "morph": "V-P-A-I-2P",
+      "book": "John",
+      "chapter": 7,
+      "verse": 21,
+      "left_context": "αὐτοῖς· Ἓν ἔργον ἐποίησα καὶ πάντες",
+      "right_context": ""
+    },
+    {
+      "ref": "Jude 1:16",
+      "form": "θαυμάζοντες",
+      "morph": "V-P-A-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "καὶ τὸ στόμα αὐτῶν λαλεῖ ὑπέρογκα,",
+      "right_context": "πρόσωπα ὠφελείας χάριν."
+    },
+    {
+      "ref": "Luke 1:21",
+      "form": "ἐθαύμαζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "ὁ λαὸς προσδοκῶν τὸν Ζαχαρίαν, καὶ",
+      "right_context": "ἐν τῷ χρονίζειν ⸂ἐν τῷ ναῷ"
+    },
+    {
+      "ref": "Luke 1:63",
+      "form": "ἐθαύμασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 63,
+      "left_context": "λέγων· Ἰωάννης ⸀ἐστὶν ὄνομα αὐτοῦ. καὶ",
+      "right_context": "πάντες."
+    },
+    {
+      "ref": "Luke 2:18",
+      "form": "ἐθαύμασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "καὶ πάντες οἱ ἀκούσαντες",
+      "right_context": "περὶ τῶν λαληθέντων ὑπὸ τῶν ποιμένων"
+    },
+    {
+      "ref": "Luke 2:33",
+      "form": "θαυμάζοντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 33,
+      "left_context": "⸂ὁ πατὴρ αὐτοῦ⸃ καὶ ἡ ⸀μήτηρ",
+      "right_context": "ἐπὶ τοῖς λαλουμένοις περὶ αὐτοῦ."
+    },
+    {
+      "ref": "Luke 4:22",
+      "form": "ἐθαύμαζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 22,
+      "left_context": "καὶ πάντες ἐμαρτύρουν αὐτῷ καὶ",
+      "right_context": "ἐπὶ τοῖς λόγοις τῆς χάριτος τοῖς"
+    },
+    {
+      "ref": "Luke 7:9",
+      "form": "ἐθαύμασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "ἀκούσας δὲ ταῦτα ὁ Ἰησοῦς",
+      "right_context": "αὐτόν, καὶ στραφεὶς τῷ ἀκολουθοῦντι αὐτῷ"
+    },
+    {
+      "ref": "Luke 8:25",
+      "form": "ἐθαύμασαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 25,
+      "left_context": "⸀Ποῦ ἡ πίστις ὑμῶν; φοβηθέντες δὲ",
+      "right_context": "λέγοντες πρὸς ἀλλήλους· Τίς ἄρα οὗτός"
+    },
+    {
+      "ref": "Luke 9:43",
+      "form": "θαυμαζόντων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 43,
+      "left_context": "τῇ μεγαλειότητι τοῦ θεοῦ. Πάντων δὲ",
+      "right_context": "ἐπὶ πᾶσιν οἷς ⸀ἐποίει εἶπεν πρὸς"
+    },
+    {
+      "ref": "Luke 11:14",
+      "form": "ἐθαύμασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 14,
+      "left_context": "δαιμονίου ἐξελθόντος ἐλάλησεν ὁ κωφός. καὶ",
+      "right_context": "οἱ ὄχλοι·"
+    },
+    {
+      "ref": "Luke 11:38",
+      "form": "ἐθαύμασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 38,
+      "left_context": "ὁ δὲ Φαρισαῖος ἰδὼν",
+      "right_context": "ὅτι οὐ πρῶτον ἐβαπτίσθη πρὸ τοῦ"
+    },
+    {
+      "ref": "Luke 20:26",
+      "form": "θαυμάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 26,
+      "left_context": "⸀τοῦ ῥήματος ἐναντίον τοῦ λαοῦ, καὶ",
+      "right_context": "ἐπὶ τῇ ἀποκρίσει αὐτοῦ ἐσίγησαν."
+    },
+    {
+      "ref": "Luke 24:12",
+      "form": "θαυμάζων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 12,
+      "left_context": "⸀ὀθόνια μόνα· καὶ ἀπῆλθεν πρὸς ⸀αὑτὸν",
+      "right_context": "τὸ γεγονός.⸃"
+    },
+    {
+      "ref": "Luke 24:41",
+      "form": "θαυμαζόντων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 41,
+      "left_context": "ἀπιστούντων αὐτῶν ἀπὸ τῆς χαρᾶς καὶ",
+      "right_context": "εἶπεν αὐτοῖς· Ἔχετέ τι βρώσιμον ἐνθάδε;"
+    },
+    {
+      "ref": "Mark 5:20",
+      "form": "ἐθαύμαζον.",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "ἐποίησεν αὐτῷ ὁ Ἰησοῦς, καὶ πάντες",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 6:6",
+      "form": "⸀ἐθαύμαζεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "καὶ",
+      "right_context": "διὰ τὴν ἀπιστίαν αὐτῶν. Καὶ περιῆγεν"
+    },
+    {
+      "ref": "Mark 15:5",
+      "form": "θαυμάζειν",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 5,
+      "left_context": "δὲ Ἰησοῦς οὐκέτι οὐδὲν ἀπεκρίθη, ὥστε",
+      "right_context": "τὸν Πιλᾶτον."
+    },
+    {
+      "ref": "Mark 15:44",
+      "form": "ἐθαύμασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 44,
+      "left_context": "ὁ δὲ Πιλᾶτος",
+      "right_context": "εἰ ἤδη τέθνηκεν, καὶ προσκαλεσάμενος τὸν"
+    },
+    {
+      "ref": "Matthew 8:10",
+      "form": "ἐθαύμασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 10,
+      "left_context": "ἀκούσας δὲ ὁ Ἰησοῦς",
+      "right_context": "καὶ εἶπεν τοῖς ἀκολουθοῦσιν· Ἀμὴν λέγω"
+    },
+    {
+      "ref": "Matthew 8:27",
+      "form": "ἐθαύμασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 27,
+      "left_context": "οἱ δὲ ἄνθρωποι",
+      "right_context": "λέγοντες· Ποταπός ἐστιν οὗτος ὅτι καὶ"
+    },
+    {
+      "ref": "Matthew 9:33",
+      "form": "ἐθαύμασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 33,
+      "left_context": "τοῦ δαιμονίου ἐλάλησεν ὁ κωφός. καὶ",
+      "right_context": "οἱ ὄχλοι λέγοντες· Οὐδέποτε ἐφάνη οὕτως"
+    },
+    {
+      "ref": "Matthew 15:31",
+      "form": "θαυμάσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 31,
+      "left_context": "ὥστε ⸂τὸν ὄχλον⸃",
+      "right_context": "βλέποντας κωφοὺς λαλοῦντας ⸂κυλλοὺς ὑγιεῖς⸃ ⸀καὶ"
+    },
+    {
+      "ref": "Matthew 21:20",
+      "form": "ἐθαύμασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 20,
+      "left_context": "καὶ ἰδόντες οἱ μαθηταὶ",
+      "right_context": "λέγοντες· Πῶς παραχρῆμα ἐξηράνθη ἡ συκῆ;"
+    },
+    {
+      "ref": "Matthew 22:22",
+      "form": "ἐθαύμασαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 22,
+      "left_context": "καὶ ἀκούσαντες",
+      "right_context": "καὶ ἀφέντες αὐτὸν ἀπῆλθαν."
+    },
+    {
+      "ref": "Matthew 27:14",
+      "form": "θαυμάζειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 14,
+      "left_context": "αὐτῷ πρὸς οὐδὲ ἓν ῥῆμα, ὥστε",
+      "right_context": "τὸν ἡγεμόνα λίαν."
+    }
+  ],
+  "books": {
+    "Luke": 13,
+    "Matthew": 7,
+    "John": 6,
+    "Acts": 5,
+    "Revelation": 4,
+    "Mark": 4,
+    "1 John": 1,
+    "2 Thessalonians": 1,
+    "Galatians": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λαλέω",
+      "display": "hablaba",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κωφός",
+      "display": "sordo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκολουθέω",
+      "display": "seguiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "de·dicho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισέω",
+      "display": "odia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεραπεύω",
+      "display": "fue sanado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 John 3:13",
+      "form": "θαυμάζετε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "⸀μὴ θαυμάζετε, ⸀ἀδελφοί, εἰ μισεῖ ὑμᾶς ὁ κόσμος.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Acts 13:41",
+      "form": "θαυμάσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Ἴδετε, οἱ καταφρονηταί, καὶ θαυμάσατε καὶ ἀφανίσθητε, ὅτι ἔργον ⸂ἐργάζομαι ἐγὼ⸃ ἐν ταῖς"
+    },
+    {
+      "ref": "John 3:7",
+      "form": "θαυμάσῃς",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "μὴ θαυμάσῃς ὅτι εἶπόν σοι Δεῖ ὑμᾶς γεννηθῆναι ἄνωθεν.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "John 5:28",
+      "form": "θαυμάζετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "μὴ θαυμάζετε τοῦτο, ὅτι ἔρχεται ὥρα ἐν ᾗ πάντες οἱ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 John 3:13",
+      "negator": "⸀μὴ",
+      "clause_text": "⸀μὴ θαυμάζετε, ⸀ἀδελφοί, εἰ μισεῖ ὑμᾶς ὁ κόσμος."
+    },
+    {
+      "ref": "Acts 2:7",
+      "negator": "⸀Οὐχ",
+      "clause_text": "ἐξίσταντο ⸀δὲ καὶ ἐθαύμαζον ⸀λέγοντες· ⸀Οὐχ ἰδοὺ ⸀πάντες οὗτοί εἰσιν οἱ λαλοῦντες"
+    },
+    {
+      "ref": "John 3:7",
+      "negator": "μὴ",
+      "clause_text": "μὴ θαυμάσῃς ὅτι εἶπόν σοι Δεῖ ὑμᾶς γεννηθῆναι ἄνωθεν."
+    },
+    {
+      "ref": "John 5:28",
+      "negator": "μὴ",
+      "clause_text": "μὴ θαυμάζετε τοῦτο, ὅτι ἔρχεται ὥρα ἐν ᾗ πάντες οἱ"
+    },
+    {
+      "ref": "Luke 11:38",
+      "negator": "οὐ",
+      "clause_text": "ὁ δὲ Φαρισαῖος ἰδὼν ἐθαύμασεν ὅτι οὐ πρῶτον ἐβαπτίσθη πρὸ τοῦ ἀρίστου."
+    },
+    {
+      "ref": "Matthew 27:14",
+      "negator": "οὐδὲ",
+      "clause_text": "οὐκ ἀπεκρίθη αὐτῷ πρὸς οὐδὲ ἓν ῥῆμα, ὥστε θαυμάζειν τὸν ἡγεμόνα λίαν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 5:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 13:41",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 John 3:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 11:14",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 11:38",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Matthew 15:31",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Mark 15:44",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 13:3",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

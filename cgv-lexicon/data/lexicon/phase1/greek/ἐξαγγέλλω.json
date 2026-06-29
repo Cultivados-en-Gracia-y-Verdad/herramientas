@@ -1,0 +1,118 @@
+{
+  "lemma": "ἐξαγγέλλω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐξαγγείλητε",
+      "count": 1
+    },
+    {
+      "form": "ἐξήγγειλαν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:9",
+      "form": "ἐξαγγείλητε",
+      "morph": "V-A-A-S-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "λαὸς εἰς περιποίησιν, ὅπως τὰς ἀρετὰς",
+      "right_context": "τοῦ ἐκ σκότους ὑμᾶς καλέσαντος εἰς"
+    },
+    {
+      "ref": "Mark 16:8",
+      "form": "ἐξήγγειλαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 8,
+      "left_context": "παρηγγελμένα τοῖς περὶ τὸν Πέτρον συντόμως",
+      "right_context": "μετὰ δὲ ταῦτα καὶ αὐτὸς ὁ"
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "περιποίησις",
+      "display": "posesión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρετή",
+      "display": "virtudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκότος",
+      "display": "de·tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συντόμως",
+      "display": "brevemente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 2:9",
+      "reason": "occurs near καλέω, περιποίησις, σκότος"
+    },
+    {
+      "ref": "Mark 16:8",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

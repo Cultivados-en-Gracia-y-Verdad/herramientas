@@ -1,0 +1,68 @@
+{
+  "lemma": "ἑλκόομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εἱλκωμένος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 16:20",
+      "form": "εἱλκωμένος",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 20,
+      "left_context": "⸀Λάζαρος ἐβέβλητο πρὸς τὸν πυλῶνα αὐτοῦ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βάλλω",
+      "display": "había arrojado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυλών",
+      "display": "portal",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:20",
+      "reason": "occurs near βάλλω, πυλών"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐκφοβέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκφοβεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 10:9",
+      "form": "ἐκφοβεῖν",
+      "morph": "V-P-A-N",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 9,
+      "left_context": "ἵνα μὴ δόξω ὡς ἂν",
+      "right_context": "ὑμᾶς διὰ τῶν ἐπιστολῶν·"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δοκέω",
+      "display": "pareca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστολή",
+      "display": "de·cartas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 10:9",
+      "negator": "μὴ",
+      "clause_text": "ἵνα μὴ δόξω ὡς ἂν ἐκφοβεῖν ὑμᾶς διὰ τῶν ἐπιστολῶν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 10:9",
+      "reason": "occurs near δοκέω, ἐπιστολή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,163 @@
+{
+  "lemma": "προοράω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "προϊδοῦσα",
+      "count": 1
+    },
+    {
+      "form": "Προορώμην",
+      "count": 1
+    },
+    {
+      "form": "προϊδὼν",
+      "count": 1
+    },
+    {
+      "form": "⸀προεωρακότες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "imperfect": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 3,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 3:8",
+      "form": "προϊδοῦσα",
+      "morph": "V-A-A-P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "δὲ ἡ γραφὴ ὅτι ἐκ πίστεως"
+    },
+    {
+      "ref": "Acts 2:25",
+      "form": "Προορώμην",
+      "morph": "V-I-M-I-1S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "Δαυὶδ γὰρ λέγει εἰς αὐτόν·",
+      "right_context": "τὸν κύριον ἐνώπιόν μου διὰ παντός,"
+    },
+    {
+      "ref": "Acts 2:31",
+      "form": "προϊδὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 31,
+      "left_context": "",
+      "right_context": "ἐλάλησεν περὶ τῆς ἀναστάσεως τοῦ χριστοῦ"
+    },
+    {
+      "ref": "Acts 21:29",
+      "form": "⸀προεωρακότες",
+      "morph": "V-X-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 29,
+      "left_context": "ἦσαν γὰρ",
+      "right_context": "Τρόφιμον τὸν Ἐφέσιον ἐν τῇ πόλει"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γραφή",
+      "display": "escritura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαυίδ",
+      "display": "David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "habló",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάστασις",
+      "display": "de·resurrección",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τρόφιμος",
+      "display": "Trófimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἐφέσιος",
+      "display": "Efesio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 2:25",
+      "reason": "occurs near Δαυίδ, κύριος, ἐνώπιον"
+    },
+    {
+      "ref": "Acts 2:31",
+      "reason": "occurs near λαλέω"
+    },
+    {
+      "ref": "Galatians 3:8",
+      "reason": "occurs near γραφή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

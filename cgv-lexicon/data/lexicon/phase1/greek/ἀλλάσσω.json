@@ -1,0 +1,255 @@
+{
+  "lemma": "ἀλλάσσω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἀλλαγησόμεθα,",
+      "count": 1
+    },
+    {
+      "form": "ἀλλαγησόμεθα.",
+      "count": 1
+    },
+    {
+      "form": "ἀλλάξαι",
+      "count": 1
+    },
+    {
+      "form": "ἀλλαγήσονται·",
+      "count": 1
+    },
+    {
+      "form": "ἀλλάξει",
+      "count": 1
+    },
+    {
+      "form": "ἤλλαξαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "infinitive": 1
+    },
+    "tenses": {
+      "future": 4,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 3,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 15:51",
+      "form": "ἀλλαγησόμεθα,",
+      "morph": "V-F-P-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 51,
+      "left_context": "λέγω· ⸀πάντες οὐ κοιμηθησόμεθα πάντες δὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 15:52",
+      "form": "ἀλλαγησόμεθα.",
+      "morph": "V-F-P-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 52,
+      "left_context": "οἱ νεκροὶ ἐγερθήσονται ἄφθαρτοι, καὶ ἡμεῖς",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 4:20",
+      "form": "ἀλλάξαι",
+      "morph": "V-A-A-N",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 20,
+      "left_context": "δὲ παρεῖναι πρὸς ὑμᾶς ἄρτι, καὶ",
+      "right_context": "τὴν φωνήν μου, ὅτι ἀποροῦμαι ἐν"
+    },
+    {
+      "ref": "Hebrews 1:12",
+      "form": "ἀλλαγήσονται·",
+      "morph": "V-F-P-I-3P",
+      "book": "Hebrews",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "περιβόλαιον ἑλίξεις αὐτούς, ⸂ὡς ἱμάτιον⸃ καὶ",
+      "right_context": "σὺ δὲ ὁ αὐτὸς εἶ, καὶ"
+    },
+    {
+      "ref": "Acts 6:14",
+      "form": "ἀλλάξει",
+      "morph": "V-F-A-I-3S",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "οὗτος καταλύσει τὸν τόπον τοῦτον καὶ",
+      "right_context": "τὰ ἔθη ἃ παρέδωκεν ἡμῖν Μωϋσῆς."
+    },
+    {
+      "ref": "Romans 1:23",
+      "form": "ἤλλαξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "καὶ",
+      "right_context": "τὴν δόξαν τοῦ ἀφθάρτου θεοῦ ἐν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "Galatians": 1,
+    "Hebrews": 1,
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄφθαρτος",
+      "display": "incorruptibles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κοιμάομαι",
+      "display": "serán dormido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "serán levantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάρειμι",
+      "display": "estar·presente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτι",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπορέω",
+      "display": "perplejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑλίσσω",
+      "display": "enrollarás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "manto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταλύω",
+      "display": "destruirá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθος",
+      "display": "costumbres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 15:51",
+      "negator": "οὐ",
+      "clause_text": "μυστήριον ὑμῖν λέγω· ⸀πάντες οὐ κοιμηθησόμεθα πάντες δὲ ἀλλαγησόμεθα,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 15:51",
+      "reason": "occurs near κοιμάομαι"
+    },
+    {
+      "ref": "1 Corinthians 15:52",
+      "reason": "occurs near νεκρός, ἄφθαρτος, ἐγείρω"
+    },
+    {
+      "ref": "Acts 6:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 4:20",
+      "reason": "occurs near πάρειμι"
+    },
+    {
+      "ref": "Hebrews 1:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 1:23",
+      "reason": "occurs near ἄφθαρτος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

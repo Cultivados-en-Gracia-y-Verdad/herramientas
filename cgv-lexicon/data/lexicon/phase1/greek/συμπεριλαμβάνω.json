@@ -1,0 +1,80 @@
+{
+  "lemma": "συμπεριλαμβάνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συμπεριλαβὼν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:10",
+      "form": "συμπεριλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 10,
+      "left_context": "δὲ ὁ Παῦλος ἐπέπεσεν αὐτῷ καὶ",
+      "right_context": "εἶπεν· Μὴ θορυβεῖσθε, ἡ γὰρ ψυχὴ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιπίπτω",
+      "display": "echarse·sobre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θορυβέω",
+      "display": "alborotad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 20:10",
+      "negator": "Μὴ",
+      "clause_text": "καταβὰς δὲ ὁ Παῦλος ἐπέπεσεν αὐτῷ καὶ συμπεριλαβὼν εἶπεν· Μὴ θορυβεῖσθε, ἡ γὰρ ψυχὴ αὐτοῦ ἐν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:10",
+      "reason": "occurs near Παῦλος, θορυβέω, ἐπιπίπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

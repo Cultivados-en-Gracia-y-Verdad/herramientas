@@ -1,0 +1,540 @@
+{
+  "lemma": "διακρίνω",
+  "language": "greek",
+  "total_occurrences": 19,
+  "forms": [
+    {
+      "form": "διακρινόμενος",
+      "count": 3
+    },
+    {
+      "form": "διακρινόμενος,",
+      "count": 2
+    },
+    {
+      "form": "διακρίνει;",
+      "count": 1
+    },
+    {
+      "form": "διακρῖναι",
+      "count": 1
+    },
+    {
+      "form": "διακρίνων",
+      "count": 1
+    },
+    {
+      "form": "διεκρίνομεν,",
+      "count": 1
+    },
+    {
+      "form": "διακρινέτωσαν·",
+      "count": 1
+    },
+    {
+      "form": "διεκρίνοντο",
+      "count": 1
+    },
+    {
+      "form": "⸀διακρίναντα.",
+      "count": 1
+    },
+    {
+      "form": "διέκρινεν",
+      "count": 1
+    },
+    {
+      "form": "⸂διακρινομένους,",
+      "count": 1
+    },
+    {
+      "form": "διακριθῇ",
+      "count": 1
+    },
+    {
+      "form": "διακρίνειν,",
+      "count": 1
+    },
+    {
+      "form": "διακριθῆτε,",
+      "count": 1
+    },
+    {
+      "form": "διεκρίθη",
+      "count": 1
+    },
+    {
+      "form": "διεκρίθητε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 6,
+      "infinitive": 2,
+      "participle": 8,
+      "imperative": 1,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "present": 10,
+      "aorist": 7,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 8,
+      "middle": 7,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:7",
+      "form": "διακρίνει;",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "τίς γάρ σε",
+      "right_context": "τί δὲ ἔχεις ὃ οὐκ ἔλαβες;"
+    },
+    {
+      "ref": "1 Corinthians 6:5",
+      "form": "διακρῖναι",
+      "morph": "V-A-A-N",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "ἐν ὑμῖν ⸂οὐδεὶς σοφὸς⸃ ὃς δυνήσεται",
+      "right_context": "ἀνὰ μέσον τοῦ ⸀ἀδελφοῦ αὐτοῦ,"
+    },
+    {
+      "ref": "1 Corinthians 11:29",
+      "form": "διακρίνων",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 29,
+      "left_context": "κρίμα ἑαυτῷ ἐσθίει καὶ πίνει μὴ",
+      "right_context": "τὸ ⸀σῶμα."
+    },
+    {
+      "ref": "1 Corinthians 11:31",
+      "form": "διεκρίνομεν,",
+      "morph": "V-I-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 31,
+      "left_context": "εἰ ⸀δὲ ἑαυτοὺς",
+      "right_context": "οὐκ ἂν ἐκρινόμεθα·"
+    },
+    {
+      "ref": "1 Corinthians 14:29",
+      "form": "διακρινέτωσαν·",
+      "morph": "V-P-A-D-3P",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 29,
+      "left_context": "ἢ τρεῖς λαλείτωσαν, καὶ οἱ ἄλλοι",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 10:20",
+      "form": "διακρινόμενος,",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 20,
+      "left_context": "κατάβηθι καὶ πορεύου σὺν αὐτοῖς μηδὲν",
+      "right_context": "⸀ὅτι ἐγὼ ἀπέσταλκα αὐτούς."
+    },
+    {
+      "ref": "Acts 11:2",
+      "form": "διεκρίνοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 2,
+      "left_context": "⸂ὅτε δὲ⸃ ἀνέβη Πέτρος εἰς ⸀Ἰερουσαλήμ,",
+      "right_context": "πρὸς αὐτὸν οἱ ἐκ περιτομῆς"
+    },
+    {
+      "ref": "Acts 11:12",
+      "form": "⸀διακρίναντα.",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 12,
+      "left_context": "⸂τὸ πνεῦμά μοι⸃ συνελθεῖν αὐτοῖς μηδὲν",
+      "right_context": "ἦλθον δὲ σὺν ἐμοὶ καὶ οἱ"
+    },
+    {
+      "ref": "Acts 15:9",
+      "form": "διέκρινεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 9,
+      "left_context": "καὶ ⸀οὐθὲν",
+      "right_context": "μεταξὺ ἡμῶν τε καὶ αὐτῶν, τῇ"
+    },
+    {
+      "ref": "Jude 1:9",
+      "form": "διακρινόμενος",
+      "morph": "V-P-M-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "Μιχαὴλ ὁ ἀρχάγγελος, ὅτε τῷ διαβόλῳ",
+      "right_context": "διελέγετο περὶ τοῦ Μωϋσέως σώματος, οὐκ"
+    },
+    {
+      "ref": "Jude 1:22",
+      "form": "⸂διακρινομένους,",
+      "morph": "V-P-M-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "καὶ οὓς μὲν ⸀ἐλεᾶτε",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 11:23",
+      "form": "διακριθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 23,
+      "left_context": "βλήθητι εἰς τὴν θάλασσαν, καὶ μὴ",
+      "right_context": "ἐν τῇ καρδίᾳ αὐτοῦ ἀλλὰ ⸀πιστεύῃ"
+    },
+    {
+      "ref": "Matthew 16:3",
+      "form": "διακρίνειν,",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 3,
+      "left_context": "⸀τὸ μὲν πρόσωπον τοῦ οὐρανοῦ γινώσκετε",
+      "right_context": "τὰ δὲ σημεῖα τῶν καιρῶν οὐ"
+    },
+    {
+      "ref": "Matthew 21:21",
+      "form": "διακριθῆτε,",
+      "morph": "V-A-P-S-2P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 21,
+      "left_context": "ὑμῖν, ἐὰν ἔχητε πίστιν καὶ μὴ",
+      "right_context": "οὐ μόνον τὸ τῆς συκῆς ποιήσετε,"
+    },
+    {
+      "ref": "Romans 4:20",
+      "form": "διεκρίθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Romans",
+      "chapter": 4,
+      "verse": 20,
+      "left_context": "δὲ τὴν ἐπαγγελίαν τοῦ θεοῦ οὐ",
+      "right_context": "τῇ ἀπιστίᾳ ἀλλὰ ἐνεδυναμώθη τῇ πίστει,"
+    },
+    {
+      "ref": "Romans 14:23",
+      "form": "διακρινόμενος",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 23,
+      "left_context": "ὁ δὲ",
+      "right_context": "ἐὰν φάγῃ κατακέκριται, ὅτι οὐκ ἐκ"
+    },
+    {
+      "ref": "James 1:6",
+      "form": "διακρινόμενος,",
+      "morph": "V-P-M-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "αἰτείτω δὲ ἐν πίστει, μηδὲν",
+      "right_context": "ὁ γὰρ διακρινόμενος ἔοικεν κλύδωνι θαλάσσης"
+    },
+    {
+      "ref": "James 1:6",
+      "form": "διακρινόμενος",
+      "morph": "V-P-M-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "ἐν πίστει, μηδὲν διακρινόμενος, ὁ γὰρ",
+      "right_context": "ἔοικεν κλύδωνι θαλάσσης ἀνεμιζομένῳ καὶ ῥιπιζομένῳ·"
+    },
+    {
+      "ref": "James 2:4",
+      "form": "διεκρίθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "James",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "⸀οὐ",
+      "right_context": "ἐν ἑαυτοῖς καὶ ἐγένεσθε κριταὶ διαλογισμῶν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 5,
+    "Acts": 4,
+    "James": 3,
+    "Jude": 2,
+    "Matthew": 2,
+    "Romans": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "come",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διακρίνω",
+      "display": "discerniendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔοικα",
+      "display": "ha parecido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλύδων",
+      "display": "oleaje",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σοφός",
+      "display": "sabio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podrá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνά",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "de·hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίνω",
+      "display": "bebe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "eran juzgado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "e",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "he enviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιτομή",
+      "display": "de·circuncisión",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 14:29",
+      "form": "διακρινέτωσαν·",
+      "morph": "V-P-A-D-3P",
+      "clause_text": "δὲ δύο ἢ τρεῖς λαλείτωσαν, καὶ οἱ ἄλλοι διακρινέτωσαν·"
+    },
+    {
+      "ref": "Mark 11:23",
+      "form": "διακριθῇ",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "Ἄρθητι καὶ βλήθητι εἰς τὴν θάλασσαν, καὶ μὴ διακριθῇ ἐν τῇ καρδίᾳ αὐτοῦ ἀλλὰ ⸀πιστεύῃ ὅτι ⸂ὃ",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 21:21",
+      "form": "διακριθῆτε,",
+      "morph": "V-A-P-S-2P",
+      "clause_text": "Ἀμὴν λέγω ὑμῖν, ἐὰν ἔχητε πίστιν καὶ μὴ διακριθῆτε, οὐ μόνον τὸ τῆς συκῆς ποιήσετε, ἀλλὰ κἂν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 11:29",
+      "negator": "μὴ",
+      "clause_text": "καὶ ⸀πίνων κρίμα ἑαυτῷ ἐσθίει καὶ πίνει μὴ διακρίνων τὸ ⸀σῶμα."
+    },
+    {
+      "ref": "1 Corinthians 11:31",
+      "negator": "οὐκ",
+      "clause_text": "εἰ ⸀δὲ ἑαυτοὺς διεκρίνομεν, οὐκ ἂν ἐκρινόμεθα·"
+    },
+    {
+      "ref": "Mark 11:23",
+      "negator": "μὴ",
+      "clause_text": "Ἄρθητι καὶ βλήθητι εἰς τὴν θάλασσαν, καὶ μὴ διακριθῇ ἐν τῇ καρδίᾳ αὐτοῦ ἀλλὰ ⸀πιστεύῃ ὅτι ⸂ὃ"
+    },
+    {
+      "ref": "Matthew 21:21",
+      "negator": "μὴ",
+      "clause_text": "Ἀμὴν λέγω ὑμῖν, ἐὰν ἔχητε πίστιν καὶ μὴ διακριθῆτε, οὐ μόνον τὸ τῆς συκῆς ποιήσετε, ἀλλὰ κἂν"
+    },
+    {
+      "ref": "Romans 4:20",
+      "negator": "οὐ",
+      "clause_text": "εἰς δὲ τὴν ἐπαγγελίαν τοῦ θεοῦ οὐ διεκρίθη τῇ ἀπιστίᾳ ἀλλὰ ἐνεδυναμώθη τῇ πίστει, δοὺς δόξαν"
+    },
+    {
+      "ref": "James 2:4",
+      "negator": "⸀οὐ",
+      "clause_text": "⸀οὐ διεκρίθητε ἐν ἑαυτοῖς καὶ ἐγένεσθε κριταὶ διαλογισμῶν πονηρῶν;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 14:29",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 11:29",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 11:31",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 4:7",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 6:5",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "Acts 10:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 11:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 11:2",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

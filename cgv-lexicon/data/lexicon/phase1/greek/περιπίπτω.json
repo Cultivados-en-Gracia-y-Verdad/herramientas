@@ -1,0 +1,168 @@
+{
+  "lemma": "περιπίπτω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "περιπεσόντες",
+      "count": 1
+    },
+    {
+      "form": "περιέπεσεν,",
+      "count": 1
+    },
+    {
+      "form": "περιπέσητε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:41",
+      "form": "περιπεσόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 41,
+      "left_context": "",
+      "right_context": "δὲ εἰς τόπον διθάλασσον ⸀ἐπέκειλαν τὴν"
+    },
+    {
+      "ref": "Luke 10:30",
+      "form": "περιέπεσεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 30,
+      "left_context": "ἀπὸ Ἰερουσαλὴμ εἰς Ἰεριχὼ καὶ λῃσταῖς",
+      "right_context": "οἳ καὶ ἐκδύσαντες αὐτὸν καὶ πληγὰς"
+    },
+    {
+      "ref": "James 1:2",
+      "form": "περιπέσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "χαρὰν ἡγήσασθε, ἀδελφοί μου, ὅταν πειρασμοῖς",
+      "right_context": "ποικίλοις,"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διθάλασσος",
+      "display": "donde·se·unen·dos·mares",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπικέλλω",
+      "display": "encallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "de·Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰεριχώ",
+      "display": "Jericó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λῃστής",
+      "display": "ladrónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδύω",
+      "display": "desvestidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγέομαι",
+      "display": "considerad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειρασμός",
+      "display": "tentaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποικίλος",
+      "display": "varios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:41",
+      "reason": "occurs near διθάλασσος, τόπος, ἐπικέλλω"
+    },
+    {
+      "ref": "James 1:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 10:30",
+      "reason": "occurs near Ἰεριχώ, Ἰερουσαλήμ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

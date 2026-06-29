@@ -1,0 +1,210 @@
+{
+  "lemma": "ψευδομαρτυρέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ψευδομαρτυρήσῃς,",
+      "count": 2
+    },
+    {
+      "form": "ἐψευδομαρτύρουν",
+      "count": 2
+    },
+    {
+      "form": "ψευδομαρτυρήσεις,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "imperfect": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 18:20",
+      "form": "ψευδομαρτυρήσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 20,
+      "left_context": "μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ",
+      "right_context": "Τίμα τὸν πατέρα σου καὶ τὴν"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "ψευδομαρτυρήσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ",
+      "right_context": "Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου"
+    },
+    {
+      "ref": "Mark 14:56",
+      "form": "ἐψευδομαρτύρουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 56,
+      "left_context": "πολλοὶ γὰρ",
+      "right_context": "κατ’ αὐτοῦ, καὶ ἴσαι αἱ μαρτυρίαι"
+    },
+    {
+      "ref": "Mark 14:57",
+      "form": "ἐψευδομαρτύρουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 57,
+      "left_context": "καί τινες ἀναστάντες",
+      "right_context": "κατ’ αὐτοῦ λέγοντες"
+    },
+    {
+      "ref": "Matthew 19:18",
+      "form": "ψευδομαρτυρήσεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 18,
+      "left_context": "φονεύσεις, Οὐ μοιχεύσεις, Οὐ κλέψεις, Οὐ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Mark": 3,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κλέπτω",
+      "display": "robes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τιμάω",
+      "display": "honra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μοιχεύω",
+      "display": "adulteres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φονεύω",
+      "display": "asesines",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστερέω",
+      "display": "defraudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴσος",
+      "display": "iguales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 18:20",
+      "form": "ψευδομαρτυρήσῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν ⸀μητέρα.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "ψευδομαρτυρήσῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 18:20",
+      "negator": "Μὴ",
+      "clause_text": "οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν ⸀μητέρα."
+    },
+    {
+      "ref": "Mark 10:19",
+      "negator": "Μὴ",
+      "clause_text": "οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν"
+    },
+    {
+      "ref": "Matthew 19:18",
+      "negator": "Οὐ",
+      "clause_text": "Τὸ Οὐ φονεύσεις, Οὐ μοιχεύσεις, Οὐ κλέψεις, Οὐ ψευδομαρτυρήσεις,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 14:56",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 14:57",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 18:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 19:18",
+      "reason": "occurs near κλέπτω, μοιχεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

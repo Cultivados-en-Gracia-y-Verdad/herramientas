@@ -1,0 +1,100 @@
+{
+  "lemma": "ἐπιστέλλω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπέστειλα",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστεῖλαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 13:22",
+      "form": "ἐπέστειλα",
+      "morph": "V-A-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 22,
+      "left_context": "τῆς παρακλήσεως, καὶ γὰρ διὰ βραχέων",
+      "right_context": "ὑμῖν."
+    },
+    {
+      "ref": "Acts 15:20",
+      "form": "ἐπιστεῖλαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 20,
+      "left_context": "ἀλλὰ",
+      "right_context": "αὐτοῖς τοῦ ⸀ἀπέχεσθαι τῶν ἀλισγημάτων τῶν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παράκλησις",
+      "display": "de·consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βραχύς",
+      "display": "de·cortos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέχω",
+      "display": "tener",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλίσγημα",
+      "display": "de·contaminaciónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:20",
+      "reason": "occurs near ἀλίσγημα, ἀπέχω"
+    },
+    {
+      "ref": "Hebrews 13:22",
+      "reason": "occurs near βραχύς, παράκλησις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

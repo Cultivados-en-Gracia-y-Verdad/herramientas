@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀποφορτίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀποφορτιζόμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 21:3",
+      "form": "ἀποφορτιζόμενον",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 3,
+      "left_context": "Τύρον, ἐκεῖσε γὰρ ⸂τὸ πλοῖον ἦν⸃",
+      "right_context": "τὸν γόμον."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκεῖσε",
+      "display": "allá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γόμος",
+      "display": "carga",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:3",
+      "reason": "occurs near γόμος, πλοῖον, ἐκεῖσε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

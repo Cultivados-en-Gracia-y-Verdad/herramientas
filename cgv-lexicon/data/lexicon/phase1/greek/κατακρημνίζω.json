@@ -1,0 +1,74 @@
+{
+  "lemma": "κατακρημνίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατακρημνίσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 4:29",
+      "form": "κατακρημνίσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 29,
+      "left_context": "οὗ ἡ πόλις ⸂ᾠκοδόμητο αὐτῶν, ὥστε⸃",
+      "right_context": "αὐτόν·"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "había edificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 4:29",
+      "reason": "occurs near οἰκοδομέω, πόλις, ὥστε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

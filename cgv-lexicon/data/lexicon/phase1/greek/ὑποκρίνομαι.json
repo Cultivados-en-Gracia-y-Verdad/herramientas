@@ -1,0 +1,92 @@
+{
+  "lemma": "ὑποκρίνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑποκρινομένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 20:20",
+      "form": "ὑποκρινομένους",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 20,
+      "left_context": "Καὶ παρατηρήσαντες ἀπέστειλαν ἐγκαθέτους",
+      "right_context": "ἑαυτοὺς δικαίους εἶναι, ἵνα ἐπιλάβωνται αὐτοῦ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρατηρέω",
+      "display": "observados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκάθετος",
+      "display": "espías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκαιος",
+      "display": "justos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιλαμβάνομαι",
+      "display": "asan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 20:20",
+      "reason": "occurs near δίκαιος, παρατηρέω, ἀποστέλλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

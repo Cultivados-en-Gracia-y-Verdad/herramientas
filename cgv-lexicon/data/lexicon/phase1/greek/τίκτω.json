@@ -1,0 +1,471 @@
+{
+  "lemma": "τίκτω",
+  "language": "greek",
+  "total_occurrences": 18,
+  "forms": [
+    {
+      "form": "ἔτεκεν",
+      "count": 4
+    },
+    {
+      "form": "τεκεῖν",
+      "count": 2
+    },
+    {
+      "form": "τέξεται",
+      "count": 2
+    },
+    {
+      "form": "τεκεῖν.",
+      "count": 1
+    },
+    {
+      "form": "τεκεῖν,",
+      "count": 1
+    },
+    {
+      "form": "τέκῃ",
+      "count": 1
+    },
+    {
+      "form": "τίκτουσα,",
+      "count": 1
+    },
+    {
+      "form": "τίκτουσα",
+      "count": 1
+    },
+    {
+      "form": "τίκτῃ",
+      "count": 1
+    },
+    {
+      "form": "τέξῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐτέχθη",
+      "count": 1
+    },
+    {
+      "form": "τεχθεὶς",
+      "count": 1
+    },
+    {
+      "form": "τίκτει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 4,
+      "subjunctive": 2,
+      "indicative": 9,
+      "participle": 3
+    },
+    "tenses": {
+      "aorist": 11,
+      "present": 4,
+      "future": 3
+    },
+    "voices": {
+      "active": 13,
+      "middle": 3,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 12:2",
+      "form": "τεκεῖν.",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "ἔχουσα· ⸂καὶ κράζει⸃ ὠδίνουσα καὶ βασανιζομένη",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 12:4",
+      "form": "τεκεῖν,",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "ἕστηκεν ἐνώπιον τῆς γυναικὸς τῆς μελλούσης",
+      "right_context": "ἵνα ὅταν τέκῃ τὸ τέκνον αὐτῆς"
+    },
+    {
+      "ref": "Revelation 12:4",
+      "form": "τέκῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "γυναικὸς τῆς μελλούσης τεκεῖν, ἵνα ὅταν",
+      "right_context": "τὸ τέκνον αὐτῆς καταφάγῃ."
+    },
+    {
+      "ref": "Revelation 12:5",
+      "form": "ἔτεκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "καὶ",
+      "right_context": "υἱόν, ⸀ἄρσεν, ὃς μέλλει ποιμαίνειν πάντα"
+    },
+    {
+      "ref": "Revelation 12:13",
+      "form": "ἔτεκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "τὴν γῆν, ἐδίωξεν τὴν γυναῖκα ἥτις",
+      "right_context": "τὸν ἄρσενα."
+    },
+    {
+      "ref": "Galatians 4:27",
+      "form": "τίκτουσα,",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 27,
+      "left_context": "γέγραπται γάρ· Εὐφράνθητι, στεῖρα ἡ οὐ",
+      "right_context": "ῥῆξον καὶ βόησον, ἡ οὐκ ὠδίνουσα·"
+    },
+    {
+      "ref": "Hebrews 6:7",
+      "form": "τίκτουσα",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "ἐπ’ αὐτῆς ⸂ἐρχόμενον πολλάκις⸃ ὑετόν, καὶ",
+      "right_context": "βοτάνην εὔθετον ἐκείνοις δι’ οὓς καὶ"
+    },
+    {
+      "ref": "John 16:21",
+      "form": "τίκτῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "John",
+      "chapter": 16,
+      "verse": 21,
+      "left_context": "ἡ γυνὴ ὅταν",
+      "right_context": "λύπην ἔχει, ὅτι ἦλθεν ἡ ὥρα"
+    },
+    {
+      "ref": "Luke 1:31",
+      "form": "τέξῃ",
+      "morph": "V-F-M-I-2S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 31,
+      "left_context": "καὶ ἰδοὺ συλλήμψῃ ἐν γαστρὶ καὶ",
+      "right_context": "υἱόν, καὶ καλέσεις τὸ ὄνομα αὐτοῦ"
+    },
+    {
+      "ref": "Luke 1:57",
+      "form": "τεκεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 57,
+      "left_context": "δὲ Ἐλισάβετ ἐπλήσθη ὁ χρόνος τοῦ",
+      "right_context": "αὐτήν, καὶ ἐγέννησεν υἱόν."
+    },
+    {
+      "ref": "Luke 2:6",
+      "form": "τεκεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "αὐτοὺς ἐκεῖ ἐπλήσθησαν αἱ ἡμέραι τοῦ",
+      "right_context": "αὐτήν,"
+    },
+    {
+      "ref": "Luke 2:7",
+      "form": "ἔτεκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "καὶ",
+      "right_context": "τὸν υἱὸν αὐτῆς τὸν πρωτότοκον, καὶ"
+    },
+    {
+      "ref": "Luke 2:11",
+      "form": "ἐτέχθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "ὅτι",
+      "right_context": "ὑμῖν σήμερον σωτὴρ ὅς ἐστιν χριστὸς"
+    },
+    {
+      "ref": "Matthew 1:21",
+      "form": "τέξεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "",
+      "right_context": "δὲ υἱὸν καὶ καλέσεις τὸ ὄνομα"
+    },
+    {
+      "ref": "Matthew 1:23",
+      "form": "τέξεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "ἡ παρθένος ἐν γαστρὶ ἕξει καὶ",
+      "right_context": "υἱόν, καὶ καλέσουσιν τὸ ὄνομα αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 1:25",
+      "form": "ἔτεκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 25,
+      "left_context": "καὶ οὐκ ἐγίνωσκεν αὐτὴν ἕως οὗ",
+      "right_context": "⸀υἱόν· καὶ ἐκάλεσεν τὸ ὄνομα αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 2:2",
+      "form": "τεχθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "λέγοντες· Ποῦ ἐστιν ὁ",
+      "right_context": "βασιλεὺς τῶν Ἰουδαίων; εἴδομεν γὰρ αὐτοῦ"
+    },
+    {
+      "ref": "James 1:15",
+      "form": "τίκτει",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "εἶτα ἡ ἐπιθυμία συλλαβοῦσα",
+      "right_context": "ἁμαρτίαν, ἡ δὲ ἁμαρτία ἀποτελεσθεῖσα ἀποκύει"
+    }
+  ],
+  "books": {
+    "Revelation": 5,
+    "Luke": 5,
+    "Matthew": 4,
+    "Galatians": 1,
+    "Hebrews": 1,
+    "John": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamarás",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "de·mujer",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τίκτω",
+      "display": "dar·a·luz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρσην",
+      "display": "varón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "veniendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συλλαμβάνω",
+      "display": "prenderás",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γαστήρ",
+      "display": "vientre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πίμπλημι",
+      "display": "fue llenado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κράζω",
+      "display": "clama",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὠδίνω",
+      "display": "dolor·de·parto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασανίζω",
+      "display": "atormentada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατεσθίω",
+      "display": "devore",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποιμαίνω",
+      "display": "pastorear",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διώκω",
+      "display": "perseguió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐφραίνω",
+      "display": "regocijarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στεῖρα",
+      "display": "estéril",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 4:27",
+      "negator": "οὐ",
+      "clause_text": "γέγραπται γάρ· Εὐφράνθητι, στεῖρα ἡ οὐ τίκτουσα, ῥῆξον καὶ βόησον, ἡ οὐκ ὠδίνουσα· ὅτι πολλὰ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:31",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 1:57",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 2:11",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 2:6",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 2:7",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Revelation 12:13",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 12:2",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 12:4",
+      "reason": "frequent in Revelation"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

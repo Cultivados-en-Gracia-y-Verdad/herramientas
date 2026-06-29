@@ -1,0 +1,290 @@
+{
+  "lemma": "νήφω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "νήφοντες",
+      "count": 1
+    },
+    {
+      "form": "νήψατε",
+      "count": 1
+    },
+    {
+      "form": "νήψατε,",
+      "count": 1
+    },
+    {
+      "form": "νήφωμεν.",
+      "count": 1
+    },
+    {
+      "form": "νήφωμεν,",
+      "count": 1
+    },
+    {
+      "form": "νῆφε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "imperative": 3,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "present": 4,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:13",
+      "form": "νήφοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν,",
+      "right_context": "τελείως, ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν"
+    },
+    {
+      "ref": "1 Peter 4:7",
+      "form": "νήψατε",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "τὸ τέλος ἤγγικεν. σωφρονήσατε οὖν καὶ",
+      "right_context": "⸀εἰς προσευχάς·"
+    },
+    {
+      "ref": "1 Peter 5:8",
+      "form": "νήψατε,",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "γρηγορήσατε. ὁ ἀντίδικος ὑμῶν διάβολος ὡς"
+    },
+    {
+      "ref": "1 Thessalonians 5:6",
+      "form": "νήφωμεν.",
+      "morph": "V-P-A-S-1P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "⸀ὡς οἱ λοιποί, ἀλλὰ γρηγορῶμεν καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Thessalonians 5:8",
+      "form": "νήφωμεν,",
+      "morph": "V-P-A-S-1P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "ἡμεῖς δὲ ἡμέρας ὄντες",
+      "right_context": "ἐνδυσάμενοι θώρακα πίστεως καὶ ἀγάπης καὶ"
+    },
+    {
+      "ref": "2 Timothy 4:5",
+      "form": "νῆφε",
+      "morph": "V-P-A-D-2S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 5,
+      "left_context": "σὺ δὲ",
+      "right_context": "ἐν πᾶσιν, κακοπάθησον, ἔργον ποίησον εὐαγγελιστοῦ,"
+    }
+  ],
+  "books": {
+    "1 Peter": 3,
+    "1 Thessalonians": 2,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γρηγορέω",
+      "display": "velad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀσφύς",
+      "display": "lomos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάνοια",
+      "display": "de·entendimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελείως",
+      "display": "completamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίζω",
+      "display": "esperad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέλος",
+      "display": "fin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγίζω",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωφρονέω",
+      "display": "estar·en·su·juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσευχή",
+      "display": "oraciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντίδικος",
+      "display": "adversario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάβολος",
+      "display": "diablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδύω",
+      "display": "vestidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θώραξ",
+      "display": "coraza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "de·amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακοπαθέω",
+      "display": "padece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 4:7",
+      "form": "νήψατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Πάντων δὲ τὸ τέλος ἤγγικεν. σωφρονήσατε οὖν καὶ νήψατε ⸀εἰς προσευχάς·"
+    },
+    {
+      "ref": "1 Peter 5:8",
+      "form": "νήψατε,",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "νήψατε, γρηγορήσατε. ὁ ἀντίδικος ὑμῶν διάβολος ὡς λέων ὠρυόμενος"
+    },
+    {
+      "ref": "2 Timothy 4:5",
+      "form": "νῆφε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "σὺ δὲ νῆφε ἐν πᾶσιν, κακοπάθησον, ἔργον ποίησον εὐαγγελιστοῦ, τὴν διακονίαν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 4:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Peter 5:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 4:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Peter 1:13",
+      "reason": "occurs near διάνοια, τελείως, ἐλπίζω"
+    },
+    {
+      "ref": "1 Thessalonians 5:6",
+      "reason": "occurs near γρηγορέω"
+    },
+    {
+      "ref": "1 Thessalonians 5:8",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

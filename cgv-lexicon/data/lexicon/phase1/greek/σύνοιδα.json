@@ -1,0 +1,118 @@
+{
+  "lemma": "σύνοιδα",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "σύνοιδα,",
+      "count": 1
+    },
+    {
+      "form": "συνειδυίης",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:4",
+      "form": "σύνοιδα,",
+      "morph": "V-X-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "οὐδὲν γὰρ ἐμαυτῷ",
+      "right_context": "ἀλλ’ οὐκ ἐν τούτῳ δεδικαίωμαι, ὁ"
+    },
+    {
+      "ref": "Acts 5:2",
+      "form": "συνειδυίης",
+      "morph": "V-X-A-P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "καὶ ἐνοσφίσατο ἀπὸ τῆς τιμῆς,",
+      "right_context": "καὶ τῆς ⸀γυναικός, καὶ ἐνέγκας μέρος"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐμαυτοῦ",
+      "display": "me",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιόω",
+      "display": "he justificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοσφίζομαι",
+      "display": "apropiarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "de·honora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "de·mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 4:4",
+      "negator": "οὐκ",
+      "clause_text": "οὐδὲν γὰρ ἐμαυτῷ σύνοιδα, ἀλλ’ οὐκ ἐν τούτῳ δεδικαίωμαι, ὁ δὲ ἀνακρίνων"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 4:4",
+      "reason": "occurs near δικαιόω, ἐμαυτοῦ"
+    },
+    {
+      "ref": "Acts 5:2",
+      "reason": "occurs near γυνή, νοσφίζομαι, τιμή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

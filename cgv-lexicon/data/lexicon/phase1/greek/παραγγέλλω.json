@@ -1,0 +1,707 @@
+{
+  "lemma": "παραγγέλλω",
+  "language": "greek",
+  "total_occurrences": 32,
+  "forms": [
+    {
+      "form": "παρήγγειλεν",
+      "count": 6
+    },
+    {
+      "form": "παραγγείλας",
+      "count": 3
+    },
+    {
+      "form": "παρήγγειλαν",
+      "count": 2
+    },
+    {
+      "form": "⸀παραγγέλλει",
+      "count": 2
+    },
+    {
+      "form": "παραγγέλλω,",
+      "count": 1
+    },
+    {
+      "form": "⸂παραγγέλλων",
+      "count": 1
+    },
+    {
+      "form": "παρηγγείλαμεν,",
+      "count": 1
+    },
+    {
+      "form": "παραγγείλῃς",
+      "count": 1
+    },
+    {
+      "form": "Παράγγελλε",
+      "count": 1
+    },
+    {
+      "form": "παράγγελλε,",
+      "count": 1
+    },
+    {
+      "form": "παραγγέλλω",
+      "count": 1
+    },
+    {
+      "form": "παράγγελλε",
+      "count": 1
+    },
+    {
+      "form": "⸀παραγγέλλομεν",
+      "count": 1
+    },
+    {
+      "form": "Παραγγέλλομεν",
+      "count": 1
+    },
+    {
+      "form": "παρηγγέλλομεν",
+      "count": 1
+    },
+    {
+      "form": "παραγγέλλομεν",
+      "count": 1
+    },
+    {
+      "form": "παρηγγείλαμεν",
+      "count": 1
+    },
+    {
+      "form": "παραγγέλλειν",
+      "count": 1
+    },
+    {
+      "form": "Παραγγέλλω",
+      "count": 1
+    },
+    {
+      "form": "παραγγείλαντες",
+      "count": 1
+    },
+    {
+      "form": "⸀παρήγγελλεν",
+      "count": 1
+    },
+    {
+      "form": "παρηγγελμένα",
+      "count": 1
+    },
+    {
+      "form": "⸀παραγγείλας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 20,
+      "participle": 7,
+      "subjunctive": 1,
+      "imperative": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 13,
+      "aorist": 17,
+      "imperfect": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 31,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:10",
+      "form": "παραγγέλλω,",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "Τοῖς δὲ γεγαμηκόσιν",
+      "right_context": "οὐκ ἐγὼ ἀλλὰ ὁ κύριος, γυναῖκα"
+    },
+    {
+      "ref": "1 Corinthians 11:17",
+      "form": "⸂παραγγέλλων",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "Τοῦτο δὲ",
+      "right_context": "οὐκ ἐπαινῶ⸃ ὅτι οὐκ εἰς τὸ"
+    },
+    {
+      "ref": "1 Thessalonians 4:11",
+      "form": "παρηγγείλαμεν,",
+      "morph": "V-A-A-I-1P",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "ἐργάζεσθαι ⸀ταῖς χερσὶν ὑμῶν, καθὼς ὑμῖν",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Timothy 1:3",
+      "form": "παραγγείλῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "ἐν Ἐφέσῳ, πορευόμενος εἰς Μακεδονίαν, ἵνα",
+      "right_context": "τισὶν μὴ ἑτεροδιδασκαλεῖν"
+    },
+    {
+      "ref": "1 Timothy 4:11",
+      "form": "Παράγγελλε",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "",
+      "right_context": "ταῦτα καὶ δίδασκε."
+    },
+    {
+      "ref": "1 Timothy 5:7",
+      "form": "παράγγελλε,",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "καὶ ταῦτα",
+      "right_context": "ἵνα ἀνεπίλημπτοι ὦσιν·"
+    },
+    {
+      "ref": "1 Timothy 6:13",
+      "form": "παραγγέλλω",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "σοι ἐνώπιον τοῦ θεοῦ τοῦ ⸀ζῳογονοῦντος"
+    },
+    {
+      "ref": "1 Timothy 6:17",
+      "form": "παράγγελλε",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "Τοῖς πλουσίοις ἐν τῷ νῦν αἰῶνι",
+      "right_context": "μὴ ὑψηλοφρονεῖν μηδὲ ἠλπικέναι ἐπὶ πλούτου"
+    },
+    {
+      "ref": "2 Thessalonians 3:4",
+      "form": "⸀παραγγέλλομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "ἐν κυρίῳ ἐφ’ ὑμᾶς, ὅτι ἃ",
+      "right_context": "καὶ ποιεῖτε καὶ ποιήσετε."
+    },
+    {
+      "ref": "2 Thessalonians 3:6",
+      "form": "Παραγγέλλομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "δὲ ὑμῖν, ἀδελφοί, ἐν ὀνόματι τοῦ"
+    },
+    {
+      "ref": "2 Thessalonians 3:10",
+      "form": "παρηγγέλλομεν",
+      "morph": "V-I-A-I-1P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "γὰρ ὅτε ἦμεν πρὸς ὑμᾶς, τοῦτο",
+      "right_context": "ὑμῖν, ὅτι εἴ τις οὐ θέλει"
+    },
+    {
+      "ref": "2 Thessalonians 3:12",
+      "form": "παραγγέλλομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "τοῖς δὲ τοιούτοις",
+      "right_context": "καὶ παρακαλοῦμεν ⸂ἐν κυρίῳ Ἰησοῦ Χριστῷ⸃"
+    },
+    {
+      "ref": "Acts 1:4",
+      "form": "παρήγγειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "καὶ συναλιζόμενος",
+      "right_context": "αὐτοῖς ἀπὸ Ἱεροσολύμων μὴ χωρίζεσθαι, ἀλλὰ"
+    },
+    {
+      "ref": "Acts 4:18",
+      "form": "παρήγγειλαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 18,
+      "left_context": "καὶ καλέσαντες αὐτοὺς",
+      "right_context": "⸀τὸ καθόλου μὴ φθέγγεσθαι μηδὲ διδάσκειν"
+    },
+    {
+      "ref": "Acts 5:28",
+      "form": "παρηγγείλαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 28,
+      "left_context": "⸀λέγων· Παραγγελίᾳ",
+      "right_context": "ὑμῖν μὴ διδάσκειν ἐπὶ τῷ ὀνόματι"
+    },
+    {
+      "ref": "Acts 5:40",
+      "form": "παρήγγειλαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 40,
+      "left_context": "καὶ προσκαλεσάμενοι τοὺς ἀποστόλους δείραντες",
+      "right_context": "μὴ λαλεῖν ἐπὶ τῷ ὀνόματι τοῦ"
+    },
+    {
+      "ref": "Acts 10:42",
+      "form": "παρήγγειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 42,
+      "left_context": "καὶ",
+      "right_context": "ἡμῖν κηρύξαι τῷ λαῷ καὶ διαμαρτύρασθαι"
+    },
+    {
+      "ref": "Acts 15:5",
+      "form": "παραγγέλλειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 5,
+      "left_context": "πεπιστευκότες, λέγοντες ὅτι δεῖ περιτέμνειν αὐτοὺς",
+      "right_context": "τε τηρεῖν τὸν νόμον Μωϋσέως."
+    },
+    {
+      "ref": "Acts 16:18",
+      "form": "Παραγγέλλω",
+      "morph": "V-P-A-I-1S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "Παῦλος καὶ ἐπιστρέψας τῷ πνεύματι εἶπεν·",
+      "right_context": "σοι ⸀ἐν ὀνόματι Ἰησοῦ Χριστοῦ ἐξελθεῖν"
+    },
+    {
+      "ref": "Acts 16:23",
+      "form": "παραγγείλαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 23,
+      "left_context": "ἐπιθέντες αὐτοῖς πληγὰς ἔβαλον εἰς φυλακήν,",
+      "right_context": "τῷ δεσμοφύλακι ἀσφαλῶς τηρεῖν αὐτούς·"
+    },
+    {
+      "ref": "Acts 17:30",
+      "form": "⸀παραγγέλλει",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 30,
+      "left_context": "ἀγνοίας ὑπεριδὼν ὁ θεὸς τὰ νῦν",
+      "right_context": "τοῖς ἀνθρώποις ⸀πάντας πανταχοῦ μετανοεῖν,"
+    },
+    {
+      "ref": "Acts 23:22",
+      "form": "παραγγείλας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 22,
+      "left_context": "μὲν οὖν χιλίαρχος ἀπέλυσε τὸν ⸀νεανίσκον",
+      "right_context": "μηδενὶ ἐκλαλῆσαι ὅτι ταῦτα ἐνεφάνισας πρὸς"
+    },
+    {
+      "ref": "Acts 23:30",
+      "form": "παραγγείλας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 30,
+      "left_context": "⸀ἄνδρα ἔσεσθαι ⸀ἐξαυτῆς ἔπεμψα πρὸς σέ,",
+      "right_context": "καὶ τοῖς κατηγόροις ⸀λέγειν πρὸς αὐτὸν"
+    },
+    {
+      "ref": "Luke 5:14",
+      "form": "παρήγγειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "καὶ αὐτὸς",
+      "right_context": "αὐτῷ μηδενὶ εἰπεῖν, ἀλλὰ ἀπελθὼν δεῖξον"
+    },
+    {
+      "ref": "Luke 8:29",
+      "form": "⸀παρήγγελλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 29,
+      "left_context": "",
+      "right_context": "γὰρ τῷ πνεύματι τῷ ἀκαθάρτῳ ἐξελθεῖν"
+    },
+    {
+      "ref": "Luke 8:56",
+      "form": "παρήγγειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 56,
+      "left_context": "ἐξέστησαν οἱ γονεῖς αὐτῆς· ὁ δὲ",
+      "right_context": "αὐτοῖς μηδενὶ εἰπεῖν τὸ γεγονός."
+    },
+    {
+      "ref": "Luke 9:21",
+      "form": "παρήγγειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 21,
+      "left_context": "Ὁ δὲ ἐπιτιμήσας αὐτοῖς",
+      "right_context": "μηδενὶ ⸀λέγειν τοῦτο,"
+    },
+    {
+      "ref": "Mark 6:8",
+      "form": "παρήγγειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῖς ἵνα μηδὲν αἴρωσιν εἰς ὁδὸν"
+    },
+    {
+      "ref": "Mark 8:6",
+      "form": "⸀παραγγέλλει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 6,
+      "left_context": "καὶ",
+      "right_context": "τῷ ὄχλῳ ἀναπεσεῖν ἐπὶ τῆς γῆς·"
+    },
+    {
+      "ref": "Mark 16:8",
+      "form": "παρηγγελμένα",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 8,
+      "left_context": "εἶπαν, ἐφοβοῦντο ⸁γάρ. ⟦Πάντα δὲ τὰ",
+      "right_context": "τοῖς περὶ τὸν Πέτρον συντόμως ἐξήγγειλαν."
+    },
+    {
+      "ref": "Matthew 10:5",
+      "form": "παραγγείλας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 5,
+      "left_context": "Τούτους τοὺς δώδεκα ἀπέστειλεν ὁ Ἰησοῦς",
+      "right_context": "αὐτοῖς λέγων· Εἰς ὁδὸν ἐθνῶν μὴ"
+    },
+    {
+      "ref": "Matthew 15:35",
+      "form": "⸀παραγγείλας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 35,
+      "left_context": "καὶ",
+      "right_context": "⸂τῷ ὄχλῳ⸃ ἀναπεσεῖν ἐπὶ τὴν γῆν"
+    }
+  ],
+  "books": {
+    "Acts": 11,
+    "1 Timothy": 5,
+    "2 Thessalonians": 4,
+    "Luke": 4,
+    "Mark": 3,
+    "1 Corinthians": 2,
+    "Matthew": 2,
+    "1 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τηρέω",
+      "display": "guardar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναπίπτω",
+      "display": "recostarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαινέω",
+      "display": "alabo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἔφεσος",
+      "display": "Éfeso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "iendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μακεδονία",
+      "display": "Macedonia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτεροδιδασκαλέω",
+      "display": "enseñar·diferente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνεπίλημπτος",
+      "display": "irreprensibles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "ricos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑψηλοφρονέω",
+      "display": "ser·altivo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίζω",
+      "display": "esperar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 4:11",
+      "form": "Παράγγελλε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Παράγγελλε ταῦτα καὶ δίδασκε."
+    },
+    {
+      "ref": "1 Timothy 5:7",
+      "form": "παράγγελλε,",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "καὶ ταῦτα παράγγελλε, ἵνα ἀνεπίλημπτοι ὦσιν·"
+    },
+    {
+      "ref": "1 Timothy 6:17",
+      "form": "παράγγελλε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Τοῖς πλουσίοις ἐν τῷ νῦν αἰῶνι παράγγελλε μὴ ὑψηλοφρονεῖν μηδὲ ἠλπικέναι ἐπὶ πλούτου ἀδηλότητι, ἀλλ’"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:10",
+      "negator": "οὐκ",
+      "clause_text": "Τοῖς δὲ γεγαμηκόσιν παραγγέλλω, οὐκ ἐγὼ ἀλλὰ ὁ κύριος, γυναῖκα ἀπὸ ἀνδρὸς"
+    },
+    {
+      "ref": "1 Corinthians 11:17",
+      "negator": "οὐκ",
+      "clause_text": "Τοῦτο δὲ ⸂παραγγέλλων οὐκ ἐπαινῶ⸃ ὅτι οὐκ εἰς τὸ κρεῖσσον ἀλλὰ"
+    },
+    {
+      "ref": "1 Timothy 1:3",
+      "negator": "μὴ",
+      "clause_text": "σε προσμεῖναι ἐν Ἐφέσῳ, πορευόμενος εἰς Μακεδονίαν, ἵνα παραγγείλῃς τισὶν μὴ ἑτεροδιδασκαλεῖν"
+    },
+    {
+      "ref": "1 Timothy 6:17",
+      "negator": "μὴ",
+      "clause_text": "Τοῖς πλουσίοις ἐν τῷ νῦν αἰῶνι παράγγελλε μὴ ὑψηλοφρονεῖν μηδὲ ἠλπικέναι ἐπὶ πλούτου ἀδηλότητι, ἀλλ’"
+    },
+    {
+      "ref": "Acts 1:4",
+      "negator": "μὴ",
+      "clause_text": "καὶ συναλιζόμενος παρήγγειλεν αὐτοῖς ἀπὸ Ἱεροσολύμων μὴ χωρίζεσθαι, ἀλλὰ περιμένειν τὴν"
+    },
+    {
+      "ref": "Acts 4:18",
+      "negator": "μὴ",
+      "clause_text": "καὶ καλέσαντες αὐτοὺς παρήγγειλαν ⸀τὸ καθόλου μὴ φθέγγεσθαι μηδὲ διδάσκειν ἐπὶ τῷ"
+    },
+    {
+      "ref": "Acts 5:28",
+      "negator": "μὴ",
+      "clause_text": "⸀λέγων· Παραγγελίᾳ παρηγγείλαμεν ὑμῖν μὴ διδάσκειν ἐπὶ τῷ ὀνόματι τούτῳ, καὶ"
+    },
+    {
+      "ref": "Acts 5:40",
+      "negator": "μὴ",
+      "clause_text": "καὶ προσκαλεσάμενοι τοὺς ἀποστόλους δείραντες παρήγγειλαν μὴ λαλεῖν ἐπὶ τῷ ὀνόματι τοῦ Ἰησοῦ καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 5:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 6:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 10:42",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 15:5",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:18",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:23",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 17:30",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

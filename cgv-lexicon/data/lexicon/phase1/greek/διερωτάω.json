@@ -1,0 +1,86 @@
+{
+  "lemma": "διερωτάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διερωτήσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:17",
+      "form": "διερωτήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 17,
+      "left_context": "ἄνδρες οἱ ἀπεσταλμένοι ⸀ὑπὸ τοῦ Κορνηλίου",
+      "right_context": "τὴν οἰκίαν ⸀τοῦ Σίμωνος ἐπέστησαν ἐπὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κορνήλιος",
+      "display": "de·Cornelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "de·Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:17",
+      "reason": "occurs near Κορνήλιος, Σίμων, οἰκία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

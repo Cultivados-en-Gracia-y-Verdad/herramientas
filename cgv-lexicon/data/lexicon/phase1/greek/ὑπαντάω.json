@@ -1,0 +1,349 @@
+{
+  "lemma": "ὑπαντάω",
+  "language": "greek",
+  "total_occurrences": 10,
+  "forms": [
+    {
+      "form": "ὑπήντησεν",
+      "count": 3
+    },
+    {
+      "form": "⸀ὑπαντῆσαι",
+      "count": 2
+    },
+    {
+      "form": "⸀ὑπήντησεν",
+      "count": 2
+    },
+    {
+      "form": "⸀ὑπήντησαν",
+      "count": 1
+    },
+    {
+      "form": "ὑπήντησεν⸃",
+      "count": 1
+    },
+    {
+      "form": "ὑπήντησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 8
+    },
+    "tenses": {
+      "aorist": 10
+    },
+    "voices": {
+      "active": 10
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:16",
+      "form": "⸀ὑπαντῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 16,
+      "left_context": "προσευχὴν παιδίσκην τινὰ ἔχουσαν πνεῦμα ⸀πύθωνα",
+      "right_context": "ἡμῖν, ἥτις ἐργασίαν πολλὴν παρεῖχεν τοῖς"
+    },
+    {
+      "ref": "John 4:51",
+      "form": "⸀ὑπήντησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 51,
+      "left_context": "δὲ αὐτοῦ καταβαίνοντος οἱ δοῦλοι αὐτοῦ",
+      "right_context": "⸀αὐτῷ λέγοντες ὅτι ὁ παῖς ⸀αὐτοῦ"
+    },
+    {
+      "ref": "John 11:20",
+      "form": "ὑπήντησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 20,
+      "left_context": "Μάρθα ὡς ἤκουσεν ὅτι Ἰησοῦς ἔρχεται",
+      "right_context": "αὐτῷ· ⸀Μαρία δὲ ἐν τῷ οἴκῳ"
+    },
+    {
+      "ref": "John 11:30",
+      "form": "ὑπήντησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 30,
+      "left_context": "ἦν ⸀ἔτι ἐν τῷ τόπῳ ὅπου",
+      "right_context": "αὐτῷ ἡ Μάρθα."
+    },
+    {
+      "ref": "John 12:18",
+      "form": "ὑπήντησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 18,
+      "left_context": "διὰ τοῦτο ⸀καὶ",
+      "right_context": "αὐτῷ ὁ ὄχλος ὅτι ⸀ἤκουσαν τοῦτο"
+    },
+    {
+      "ref": "Luke 8:27",
+      "form": "⸀ὑπήντησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 27,
+      "left_context": "ἐξελθόντι δὲ αὐτῷ ἐπὶ τὴν γῆν",
+      "right_context": "ἀνήρ τις ἐκ τῆς πόλεως ⸀ἔχων"
+    },
+    {
+      "ref": "Luke 14:31",
+      "form": "⸀ὑπαντῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 31,
+      "left_context": "εἰ δυνατός ἐστιν ἐν δέκα χιλιάσιν",
+      "right_context": "τῷ μετὰ εἴκοσι χιλιάδων ἐρχομένῳ ἐπ’"
+    },
+    {
+      "ref": "Mark 5:2",
+      "form": "ὑπήντησεν⸃",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "⸂ἐξελθόντος αὐτοῦ⸃ ἐκ τοῦ πλοίου ⸂εὐθὺς",
+      "right_context": "αὐτῷ ἐκ τῶν μνημείων ἄνθρωπος ἐν"
+    },
+    {
+      "ref": "Matthew 8:28",
+      "form": "ὑπήντησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 28,
+      "left_context": "πέραν εἰς τὴν χώραν τῶν ⸀Γαδαρηνῶν",
+      "right_context": "αὐτῷ δύο δαιμονιζόμενοι ἐκ τῶν μνημείων"
+    },
+    {
+      "ref": "Matthew 28:9",
+      "form": "⸀ὑπήντησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 9,
+      "left_context": "⸀καὶ ⸀ἰδοὺ Ἰησοῦς",
+      "right_context": "αὐταῖς λέγων· Χαίρετε· αἱ δὲ προσελθοῦσαι"
+    }
+  ],
+  "books": {
+    "John": 4,
+    "Luke": 2,
+    "Matthew": 2,
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χιλιάς",
+      "display": "miles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παιδίσκη",
+      "display": "criada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πύθων",
+      "display": "pitón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργασία",
+      "display": "trabajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρέχω",
+      "display": "proveía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "bajando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παῖς",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαρία",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μάρθα",
+      "display": "Marta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderoso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέκα",
+      "display": "diez",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:20",
+      "reason": "occurs near ἀκούω, ἔρχομαι, Ἰησοῦς"
+    },
+    {
+      "ref": "John 11:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 12:18",
+      "reason": "occurs near ἀκούω"
+    },
+    {
+      "ref": "John 4:51",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 14:31",
+      "reason": "occurs near χιλιάς, ἔρχομαι"
+    },
+    {
+      "ref": "Luke 8:27",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 28:9",
+      "reason": "occurs near Ἰησοῦς"
+    },
+    {
+      "ref": "Matthew 8:28",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

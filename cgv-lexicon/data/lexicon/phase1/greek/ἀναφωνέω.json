@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀναφωνέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀνεφώνησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:42",
+      "form": "ἀνεφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 42,
+      "left_context": "καὶ",
+      "right_context": "⸀κραυγῇ μεγάλῃ καὶ εἶπεν· Εὐλογημένη σὺ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κραυγή",
+      "display": "clamora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογέω",
+      "display": "bendecida",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:42",
+      "reason": "occurs near εὐλογέω, κραυγή, μέγας"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

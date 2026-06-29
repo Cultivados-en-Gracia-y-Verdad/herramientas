@@ -1,0 +1,104 @@
+{
+  "lemma": "προσαναλίσκω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προσαναλώσασα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:43",
+      "form": "προσαναλώσασα",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 43,
+      "left_context": "αἵματος ἀπὸ ἐτῶν δώδεκα, ἥτις ⸂ἰατροῖς",
+      "right_context": "ὅλον τὸν βίον⸃ οὐκ ἴσχυσεν ⸀ἀπ’"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔτος",
+      "display": "de·añoses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δώδεκα",
+      "display": "de·doces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰατρός",
+      "display": "médicos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βίος",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "pudo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 8:43",
+      "negator": "οὐκ",
+      "clause_text": "ἐν ῥύσει αἵματος ἀπὸ ἐτῶν δώδεκα, ἥτις ⸂ἰατροῖς προσαναλώσασα ὅλον τὸν βίον⸃ οὐκ ἴσχυσεν ⸀ἀπ’ οὐδενὸς θεραπευθῆναι,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:43",
+      "reason": "occurs near δώδεκα, ἔτος, ἰατρός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

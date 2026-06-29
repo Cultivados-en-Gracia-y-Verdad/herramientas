@@ -1,0 +1,120 @@
+{
+  "lemma": "ἐλλογέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἐλλόγα·",
+      "count": 1
+    },
+    {
+      "form": "ἐλλογεῖται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philemon 1:18",
+      "form": "⸀ἐλλόγα·",
+      "morph": "V-P-A-D-2S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "ἠδίκησέν σε ἢ ὀφείλει, τοῦτο ἐμοὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 5:13",
+      "form": "ἐλλογεῖται",
+      "morph": "V-P-P-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "ἦν ἐν κόσμῳ, ἁμαρτία δὲ οὐκ",
+      "right_context": "μὴ ὄντος νόμου,"
+    }
+  ],
+  "books": {
+    "Philemon": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφείλω",
+      "display": "debe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Philemon 1:18",
+      "form": "⸀ἐλλόγα·",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "δέ τι ἠδίκησέν σε ἢ ὀφείλει, τοῦτο ἐμοὶ ⸀ἐλλόγα·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 5:13",
+      "negator": "οὐκ",
+      "clause_text": "νόμου ἁμαρτία ἦν ἐν κόσμῳ, ἁμαρτία δὲ οὐκ ἐλλογεῖται μὴ ὄντος νόμου,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philemon 1:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 5:13",
+      "reason": "occurs near κόσμος, νόμος, ἁμαρτία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

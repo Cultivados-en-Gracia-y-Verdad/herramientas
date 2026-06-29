@@ -1,0 +1,455 @@
+{
+  "lemma": "ψεύδομαι",
+  "language": "greek",
+  "total_occurrences": 12,
+  "forms": [
+    {
+      "form": "ψεύδομαι.",
+      "count": 2
+    },
+    {
+      "form": "ψεύδεσθε",
+      "count": 2
+    },
+    {
+      "form": "ψευδόμεθα",
+      "count": 1
+    },
+    {
+      "form": "ψεύδομαι—",
+      "count": 1
+    },
+    {
+      "form": "ψεύδονται—",
+      "count": 1
+    },
+    {
+      "form": "ψεύσασθαι",
+      "count": 1
+    },
+    {
+      "form": "ψεύσασθαί",
+      "count": 1
+    },
+    {
+      "form": "ἐψεύσω",
+      "count": 1
+    },
+    {
+      "form": "ψευδόμενοι",
+      "count": 1
+    },
+    {
+      "form": "ψεύδομαι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 7,
+      "imperative": 2,
+      "infinitive": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 9,
+      "aorist": 3
+    },
+    "voices": {
+      "middle": 12
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 1:6",
+      "form": "ψευδόμεθα",
+      "morph": "V-P-M-I-1P",
+      "book": "1 John",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "αὐτοῦ καὶ ἐν τῷ σκότει περιπατῶμεν,",
+      "right_context": "καὶ οὐ ποιοῦμεν τὴν ἀλήθειαν·"
+    },
+    {
+      "ref": "1 Timothy 2:7",
+      "form": "ψεύδομαι—",
+      "morph": "V-P-M-I-1S",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "κῆρυξ καὶ ἀπόστολος— ἀλήθειαν ⸀λέγω, οὐ",
+      "right_context": "διδάσκαλος ἐθνῶν ἐν πίστει καὶ ἀληθείᾳ."
+    },
+    {
+      "ref": "2 Corinthians 11:31",
+      "form": "ψεύδομαι.",
+      "morph": "V-P-M-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 31,
+      "left_context": "εὐλογητὸς εἰς τοὺς αἰῶνας, ὅτι οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 3:9",
+      "form": "ψεύδονται—",
+      "morph": "V-P-M-I-3P",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "Ἰουδαίους εἶναι, καὶ οὐκ εἰσὶν ἀλλὰ",
+      "right_context": "ἰδοὺ ποιήσω αὐτοὺς ἵνα ⸂ἥξουσιν καὶ"
+    },
+    {
+      "ref": "Colossians 3:9",
+      "form": "ψεύδεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "μὴ",
+      "right_context": "εἰς ἀλλήλους· ἀπεκδυσάμενοι τὸν παλαιὸν ἄνθρωπον"
+    },
+    {
+      "ref": "Galatians 1:20",
+      "form": "ψεύδομαι.",
+      "morph": "V-P-M-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "ἰδοὺ ἐνώπιον τοῦ θεοῦ ὅτι οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 6:18",
+      "form": "ψεύσασθαι",
+      "morph": "V-A-M-N",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "δύο πραγμάτων ἀμεταθέτων, ἐν οἷς ἀδύνατον",
+      "right_context": "⸀θεόν, ἰσχυρὰν παράκλησιν ἔχωμεν οἱ καταφυγόντες"
+    },
+    {
+      "ref": "Acts 5:3",
+      "form": "ψεύσασθαί",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "ἐπλήρωσεν ὁ Σατανᾶς τὴν καρδίαν σου,",
+      "right_context": "σε τὸ πνεῦμα τὸ ἅγιον καὶ"
+    },
+    {
+      "ref": "Acts 5:4",
+      "form": "ἐψεύσω",
+      "morph": "V-A-M-I-2S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "καρδίᾳ σου τὸ πρᾶγμα τοῦτο; οὐκ",
+      "right_context": "ἀνθρώποις ἀλλὰ τῷ θεῷ."
+    },
+    {
+      "ref": "Matthew 5:11",
+      "form": "ψευδόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "καὶ εἴπωσιν πᾶν ⸀πονηρὸν καθ’ ὑμῶν",
+      "right_context": "ἕνεκεν ἐμοῦ."
+    },
+    {
+      "ref": "Romans 9:1",
+      "form": "ψεύδομαι,",
+      "morph": "V-P-M-I-1S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 1,
+      "left_context": "Ἀλήθειαν λέγω ἐν Χριστῷ, οὐ",
+      "right_context": "συμμαρτυρούσης μοι τῆς συνειδήσεώς μου ἐν"
+    },
+    {
+      "ref": "James 3:14",
+      "form": "ψεύδεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "τῇ καρδίᾳ ὑμῶν, μὴ κατακαυχᾶσθε καὶ",
+      "right_context": "κατὰ τῆς ἀληθείας."
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "1 John": 1,
+    "1 Timothy": 1,
+    "2 Corinthians": 1,
+    "Revelation": 1,
+    "Colossians": 1,
+    "Galatians": 1,
+    "Hebrews": 1,
+    "Matthew": 1,
+    "Romans": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πρᾶγμα",
+      "display": "de·cosas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σκότος",
+      "display": "tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andáramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "apóstol",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "siglos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥκω",
+      "display": "vendrán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπεκδύομαι",
+      "display": "despojarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παλαιός",
+      "display": "viejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμετάθετος",
+      "display": "de·inmutables",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδύνατος",
+      "display": "imposible",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχυρός",
+      "display": "fuerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σατανᾶς",
+      "display": "Satanás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 3:9",
+      "form": "ψεύδεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "μὴ ψεύδεσθε εἰς ἀλλήλους· ἀπεκδυσάμενοι τὸν παλαιὸν ἄνθρωπον σὺν ταῖς",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "James 3:14",
+      "form": "ψεύδεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "ἐριθείαν ἐν τῇ καρδίᾳ ὑμῶν, μὴ κατακαυχᾶσθε καὶ ψεύδεσθε κατὰ τῆς ἀληθείας.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 John 1:6",
+      "negator": "οὐ",
+      "clause_text": "ἔχομεν μετ’ αὐτοῦ καὶ ἐν τῷ σκότει περιπατῶμεν, ψευδόμεθα καὶ οὐ ποιοῦμεν τὴν ἀλήθειαν·"
+    },
+    {
+      "ref": "1 Timothy 2:7",
+      "negator": "οὐ",
+      "clause_text": "ἐτέθην ἐγὼ κῆρυξ καὶ ἀπόστολος— ἀλήθειαν ⸀λέγω, οὐ ψεύδομαι— διδάσκαλος ἐθνῶν ἐν πίστει καὶ ἀληθείᾳ."
+    },
+    {
+      "ref": "2 Corinthians 11:31",
+      "negator": "οὐ",
+      "clause_text": "ὁ ὢν εὐλογητὸς εἰς τοὺς αἰῶνας, ὅτι οὐ ψεύδομαι."
+    },
+    {
+      "ref": "Revelation 3:9",
+      "negator": "οὐκ",
+      "clause_text": "λεγόντων ἑαυτοὺς Ἰουδαίους εἶναι, καὶ οὐκ εἰσὶν ἀλλὰ ψεύδονται— ἰδοὺ ποιήσω αὐτοὺς ἵνα ⸂ἥξουσιν καὶ προσκυνήσουσιν⸃ ἐνώπιον"
+    },
+    {
+      "ref": "Colossians 3:9",
+      "negator": "μὴ",
+      "clause_text": "μὴ ψεύδεσθε εἰς ἀλλήλους· ἀπεκδυσάμενοι τὸν παλαιὸν ἄνθρωπον σὺν ταῖς"
+    },
+    {
+      "ref": "Galatians 1:20",
+      "negator": "οὐ",
+      "clause_text": "γράφω ὑμῖν, ἰδοὺ ἐνώπιον τοῦ θεοῦ ὅτι οὐ ψεύδομαι."
+    },
+    {
+      "ref": "Acts 5:4",
+      "negator": "οὐκ",
+      "clause_text": "ἐν τῇ καρδίᾳ σου τὸ πρᾶγμα τοῦτο; οὐκ ἐψεύσω ἀνθρώποις ἀλλὰ τῷ θεῷ."
+    },
+    {
+      "ref": "Romans 9:1",
+      "negator": "οὐ",
+      "clause_text": "Ἀλήθειαν λέγω ἐν Χριστῷ, οὐ ψεύδομαι, συμμαρτυρούσης μοι τῆς συνειδήσεώς μου ἐν πνεύματι ἁγίῳ,"
+    },
+    {
+      "ref": "James 3:14",
+      "negator": "μὴ",
+      "clause_text": "ἐριθείαν ἐν τῇ καρδίᾳ ὑμῶν, μὴ κατακαυχᾶσθε καὶ ψεύδεσθε κατὰ τῆς ἀληθείας."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 3:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 3:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 5:3",
+      "reason": "occurs near καρδία"
+    },
+    {
+      "ref": "Acts 5:4",
+      "reason": "occurs near θεός, πρᾶγμα"
+    },
+    {
+      "ref": "1 John 1:6",
+      "reason": "occurs near σκότος, ἀλήθεια"
+    },
+    {
+      "ref": "1 Timothy 2:7",
+      "reason": "occurs near ἀλήθεια"
+    },
+    {
+      "ref": "2 Corinthians 11:31",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 1:20",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

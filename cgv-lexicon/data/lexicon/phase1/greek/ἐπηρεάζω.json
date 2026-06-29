@@ -1,0 +1,111 @@
+{
+  "lemma": "ἐπηρεάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπηρεάζοντες",
+      "count": 1
+    },
+    {
+      "form": "ἐπηρεαζόντων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:16",
+      "form": "ἐπηρεάζοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "ἵνα ἐν ᾧ ⸀καταλαλεῖσθε καταισχυνθῶσιν οἱ",
+      "right_context": "ὑμῶν τὴν ἀγαθὴν ἐν Χριστῷ ἀναστροφήν."
+    },
+    {
+      "ref": "Luke 6:28",
+      "form": "ἐπηρεαζόντων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 28,
+      "left_context": "τοὺς καταρωμένους ⸀ὑμᾶς, προσεύχεσθε ⸀περὶ τῶν",
+      "right_context": "ὑμᾶς."
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καταλαλέω",
+      "display": "hablar·contra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταισχύνω",
+      "display": "avergonzen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "buena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταράομαι",
+      "display": "maldeciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 3:16",
+      "reason": "occurs near Χριστός, καταισχύνω, καταλαλέω"
+    },
+    {
+      "ref": "Luke 6:28",
+      "reason": "occurs near καταράομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

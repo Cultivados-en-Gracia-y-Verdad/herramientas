@@ -1,0 +1,170 @@
+{
+  "lemma": "θροέομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "θροεῖσθε·",
+      "count": 2
+    },
+    {
+      "form": "θροεῖσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "imperative": 2
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 2:2",
+      "form": "θροεῖσθαι",
+      "morph": "V-P-P-N",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "σαλευθῆναι ὑμᾶς ἀπὸ τοῦ νοὸς ⸀μηδὲ",
+      "right_context": "μήτε διὰ πνεύματος μήτε διὰ λόγου"
+    },
+    {
+      "ref": "Mark 13:7",
+      "form": "θροεῖσθε·",
+      "morph": "V-P-P-D-2P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "⸀ἀκούσητε πολέμους καὶ ἀκοὰς πολέμων, μὴ",
+      "right_context": "⸀δεῖ γενέσθαι, ἀλλ’ οὔπω τὸ τέλος."
+    },
+    {
+      "ref": "Matthew 24:6",
+      "form": "θροεῖσθε·",
+      "morph": "V-P-P-D-2P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 6,
+      "left_context": "πολέμους καὶ ἀκοὰς πολέμων· ὁρᾶτε, μὴ",
+      "right_context": "δεῖ ⸀γὰρ γενέσθαι, ἀλλ’ οὔπω ἐστὶν"
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πόλεμος",
+      "display": "guerras",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μήτε",
+      "display": "ni",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκοή",
+      "display": "oíres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὔπω",
+      "display": "aún·no",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "de·mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ved",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 13:7",
+      "form": "θροεῖσθε·",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "ὅταν δὲ ⸀ἀκούσητε πολέμους καὶ ἀκοὰς πολέμων, μὴ θροεῖσθε· ⸀δεῖ γενέσθαι, ἀλλ’ οὔπω τὸ τέλος.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 24:6",
+      "form": "θροεῖσθε·",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "δὲ ἀκούειν πολέμους καὶ ἀκοὰς πολέμων· ὁρᾶτε, μὴ θροεῖσθε· δεῖ ⸀γὰρ γενέσθαι, ἀλλ’ οὔπω ἐστὶν τὸ τέλος.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Thessalonians 2:2",
+      "negator": "⸀μηδὲ",
+      "clause_text": "μὴ ταχέως σαλευθῆναι ὑμᾶς ἀπὸ τοῦ νοὸς ⸀μηδὲ θροεῖσθαι μήτε διὰ πνεύματος μήτε διὰ λόγου μήτε δι’"
+    },
+    {
+      "ref": "Mark 13:7",
+      "negator": "μὴ",
+      "clause_text": "ὅταν δὲ ⸀ἀκούσητε πολέμους καὶ ἀκοὰς πολέμων, μὴ θροεῖσθε· ⸀δεῖ γενέσθαι, ἀλλ’ οὔπω τὸ τέλος."
+    },
+    {
+      "ref": "Matthew 24:6",
+      "negator": "μὴ",
+      "clause_text": "δὲ ἀκούειν πολέμους καὶ ἀκοὰς πολέμων· ὁρᾶτε, μὴ θροεῖσθε· δεῖ ⸀γὰρ γενέσθαι, ἀλλ’ οὔπω ἐστὶν τὸ τέλος."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 13:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 24:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Thessalonians 2:2",
+      "reason": "occurs near μήτε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

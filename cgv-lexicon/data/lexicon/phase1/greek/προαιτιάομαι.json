@@ -1,0 +1,92 @@
+{
+  "lemma": "προαιτιάομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προῃτιασάμεθα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 3:9",
+      "form": "προῃτιασάμεθα",
+      "morph": "V-A-M-I-1P",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "Τί οὖν; προεχόμεθα; οὐ πάντως,",
+      "right_context": "γὰρ Ἰουδαίους τε καὶ Ἕλληνας πάντας"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προέχομαι",
+      "display": "aventajamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάντως",
+      "display": "ciertamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἕλλην",
+      "display": "Griego",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 3:9",
+      "negator": "οὐ",
+      "clause_text": "Τί οὖν; προεχόμεθα; οὐ πάντως, προῃτιασάμεθα γὰρ Ἰουδαίους τε καὶ Ἕλληνας πάντας ὑφ’ ἁμαρτίαν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 3:9",
+      "reason": "occurs near πάντως, προέχομαι, τέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

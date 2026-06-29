@@ -1,0 +1,543 @@
+{
+  "lemma": "περιβάλλω",
+  "language": "greek",
+  "total_occurrences": 23,
+  "forms": [
+    {
+      "form": "περιβεβλημένη",
+      "count": 3
+    },
+    {
+      "form": "περιβεβλημένους",
+      "count": 2
+    },
+    {
+      "form": "περιβεβλημένον",
+      "count": 2
+    },
+    {
+      "form": "περιβεβλημένος",
+      "count": 2
+    },
+    {
+      "form": "περιεβάλετο",
+      "count": 2
+    },
+    {
+      "form": "περιεβάλετέ",
+      "count": 2
+    },
+    {
+      "form": "περιβαλεῖται",
+      "count": 1
+    },
+    {
+      "form": "περιβάλῃ",
+      "count": 1
+    },
+    {
+      "form": "περιβεβλημένοι",
+      "count": 1
+    },
+    {
+      "form": "⸀περιβεβλημένοι",
+      "count": 1
+    },
+    {
+      "form": "περιβάληται",
+      "count": 1
+    },
+    {
+      "form": "Περιβαλοῦ",
+      "count": 1
+    },
+    {
+      "form": "περιέβαλον",
+      "count": 1
+    },
+    {
+      "form": "⸀περιβαλὼν",
+      "count": 1
+    },
+    {
+      "form": "περιβαλώμεθα;",
+      "count": 1
+    },
+    {
+      "form": "περιεβάλομεν;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 7,
+      "subjunctive": 3,
+      "participle": 12,
+      "imperative": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 11,
+      "perfect": 11
+    },
+    "voices": {
+      "middle": 18,
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 3:5",
+      "form": "περιβαλεῖται",
+      "morph": "V-F-M-I-3S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "ὁ νικῶν ⸀οὕτως",
+      "right_context": "ἐν ἱματίοις λευκοῖς, καὶ οὐ μὴ"
+    },
+    {
+      "ref": "Revelation 3:18",
+      "form": "περιβάλῃ",
+      "morph": "V-A-M-S-2S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "ἵνα πλουτήσῃς, καὶ ἱμάτια λευκὰ ἵνα",
+      "right_context": "καὶ μὴ φανερωθῇ ἡ αἰσχύνη τῆς"
+    },
+    {
+      "ref": "Revelation 4:4",
+      "form": "περιβεβλημένους",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "τοὺς ⸀θρόνους εἴκοσι τέσσαρας πρεσβυτέρους καθημένους",
+      "right_context": "⸀ἐν ἱματίοις λευκοῖς, καὶ ἐπὶ τὰς"
+    },
+    {
+      "ref": "Revelation 7:9",
+      "form": "περιβεβλημένους",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "τοῦ θρόνου καὶ ἐνώπιον τοῦ ἀρνίου,",
+      "right_context": "στολὰς λευκάς, καὶ ⸀φοίνικες ἐν ταῖς"
+    },
+    {
+      "ref": "Revelation 7:13",
+      "form": "περιβεβλημένοι",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 13,
+      "left_context": "τῶν πρεσβυτέρων λέγων μοι· Οὗτοι οἱ",
+      "right_context": "τὰς στολὰς τὰς λευκὰς τίνες εἰσὶν"
+    },
+    {
+      "ref": "Revelation 10:1",
+      "form": "περιβεβλημένον",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 10,
+      "verse": 1,
+      "left_context": "ἄγγελον ἰσχυρὸν καταβαίνοντα ἐκ τοῦ οὐρανοῦ,",
+      "right_context": "νεφέλην, καὶ ἡ ἶρις ἐπὶ ⸂τὴν"
+    },
+    {
+      "ref": "Revelation 11:3",
+      "form": "⸀περιβεβλημένοι",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 3,
+      "left_context": "καὶ προφητεύσουσιν ἡμέρας χιλίας διακοσίας ἑξήκοντα,",
+      "right_context": "σάκκους."
+    },
+    {
+      "ref": "Revelation 12:1",
+      "form": "περιβεβλημένη",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "μέγα ὤφθη ἐν τῷ οὐρανῷ, γυνὴ",
+      "right_context": "τὸν ἥλιον, καὶ ἡ σελήνη ὑποκάτω"
+    },
+    {
+      "ref": "Revelation 17:4",
+      "form": "περιβεβλημένη",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 17,
+      "verse": 4,
+      "left_context": "καὶ ἡ γυνὴ ἦν",
+      "right_context": "πορφυροῦν καὶ κόκκινον, ⸀καὶ κεχρυσωμένη ⸀χρυσίῳ"
+    },
+    {
+      "ref": "Revelation 18:16",
+      "form": "περιβεβλημένη",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 16,
+      "left_context": "οὐαί, ἡ πόλις ἡ μεγάλη, ἡ",
+      "right_context": "βύσσινον καὶ πορφυροῦν καὶ κόκκινον καὶ"
+    },
+    {
+      "ref": "Revelation 19:8",
+      "form": "περιβάληται",
+      "morph": "V-A-M-S-3S",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 8,
+      "left_context": "καὶ ἐδόθη αὐτῇ ἵνα",
+      "right_context": "βύσσινον ⸀λαμπρὸν καθαρόν, τὸ γὰρ βύσσινον"
+    },
+    {
+      "ref": "Revelation 19:13",
+      "form": "περιβεβλημένος",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 13,
+      "left_context": "καὶ",
+      "right_context": "ἱμάτιον ⸀βεβαμμένον αἵματι, καὶ ⸀κέκληται τὸ"
+    },
+    {
+      "ref": "Acts 12:8",
+      "form": "Περιβαλοῦ",
+      "morph": "V-A-M-D-2S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 8,
+      "left_context": "ἐποίησεν δὲ οὕτως. καὶ λέγει αὐτῷ·",
+      "right_context": "τὸ ἱμάτιόν σου καὶ ἀκολούθει μοι."
+    },
+    {
+      "ref": "John 19:2",
+      "form": "περιέβαλον",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 2,
+      "left_context": "αὐτοῦ τῇ κεφαλῇ, καὶ ἱμάτιον πορφυροῦν",
+      "right_context": "αὐτόν,"
+    },
+    {
+      "ref": "Luke 12:27",
+      "form": "περιεβάλετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 27,
+      "left_context": "Σολομὼν ἐν πάσῃ τῇ δόξῃ αὐτοῦ",
+      "right_context": "ὡς ἓν τούτων."
+    },
+    {
+      "ref": "Luke 23:11",
+      "form": "⸀περιβαλὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 11,
+      "left_context": "σὺν τοῖς στρατεύμασιν αὐτοῦ καὶ ἐμπαίξας",
+      "right_context": "ἐσθῆτα λαμπρὰν ἀνέπεμψεν αὐτὸν τῷ Πιλάτῳ."
+    },
+    {
+      "ref": "Mark 14:51",
+      "form": "περιβεβλημένος",
+      "morph": "V-X-M-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 51,
+      "left_context": "Καὶ ⸂νεανίσκος τις⸃ ⸀συνηκολούθει αὐτῷ",
+      "right_context": "σινδόνα ἐπὶ γυμνοῦ, καὶ κρατοῦσιν ⸀αὐτόν,"
+    },
+    {
+      "ref": "Mark 16:5",
+      "form": "περιβεβλημένον",
+      "morph": "V-X-M-P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 5,
+      "left_context": "εἶδον νεανίσκον καθήμενον ἐν τοῖς δεξιοῖς",
+      "right_context": "στολὴν λευκήν, καὶ ἐξεθαμβήθησαν."
+    },
+    {
+      "ref": "Matthew 6:29",
+      "form": "περιεβάλετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 29,
+      "left_context": "Σολομὼν ἐν πάσῃ τῇ δόξῃ αὐτοῦ",
+      "right_context": "ὡς ἓν τούτων."
+    },
+    {
+      "ref": "Matthew 6:31",
+      "form": "περιβαλώμεθα;",
+      "morph": "V-A-M-S-1P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 31,
+      "left_context": "φάγωμεν; ἤ· Τί πίωμεν; ἤ· Τί",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 25:36",
+      "form": "περιεβάλετέ",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 36,
+      "left_context": "γυμνὸς καὶ",
+      "right_context": "με, ἠσθένησα καὶ ἐπεσκέψασθέ με, ἐν"
+    },
+    {
+      "ref": "Matthew 25:38",
+      "form": "περιεβάλομεν;",
+      "morph": "V-A-A-I-1P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 38,
+      "left_context": "ξένον καὶ συνηγάγομεν, ἢ γυμνὸν καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 25:43",
+      "form": "περιεβάλετέ",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 43,
+      "left_context": "οὐ συνηγάγετέ με, γυμνὸς καὶ οὐ",
+      "right_context": "με, ἀσθενὴς καὶ ἐν φυλακῇ καὶ"
+    }
+  ],
+  "books": {
+    "Revelation": 12,
+    "Matthew": 5,
+    "Luke": 2,
+    "Mark": 2,
+    "Acts": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "λευκός",
+      "display": "blancos",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "γυμνός",
+      "display": "de·desnudo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "στολή",
+      "display": "vestiduras",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πορφυροῦς",
+      "display": "púrpura",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θρόνος",
+      "display": "tronos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρεσβύτερος",
+      "display": "ancianos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarses",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόκκινος",
+      "display": "escarlata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βύσσινος",
+      "display": "lino·fino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαμπρός",
+      "display": "resplandeciente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νεανίσκος",
+      "display": "joven",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reunimos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νικάω",
+      "display": "venciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλουτέω",
+      "display": "enriquecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φανερόω",
+      "display": "manifeste",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχύνη",
+      "display": "vergüenza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴκοσι(ν)",
+      "display": "veintes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέσσαρες",
+      "display": "cuatro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 12:8",
+      "form": "Περιβαλοῦ",
+      "morph": "V-A-M-D-2S",
+      "clause_text": "σανδάλιά σου· ἐποίησεν δὲ οὕτως. καὶ λέγει αὐτῷ· Περιβαλοῦ τὸ ἱμάτιόν σου καὶ ἀκολούθει μοι."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Revelation 3:18",
+      "negator": "μὴ",
+      "clause_text": "ἐκ πυρὸς ἵνα πλουτήσῃς, καὶ ἱμάτια λευκὰ ἵνα περιβάλῃ καὶ μὴ φανερωθῇ ἡ αἰσχύνη τῆς γυμνότητός σου,"
+    },
+    {
+      "ref": "Matthew 25:43",
+      "negator": "οὐ",
+      "clause_text": "ἤμην καὶ οὐ συνηγάγετέ με, γυμνὸς καὶ οὐ περιεβάλετέ με, ἀσθενὴς καὶ ἐν φυλακῇ καὶ οὐκ ἐπεσκέψασθέ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 10:1",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 11:3",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 12:1",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 17:4",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 18:16",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 19:13",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 19:8",
+      "reason": "frequent in Revelation"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

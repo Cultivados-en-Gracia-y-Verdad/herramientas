@@ -1,0 +1,290 @@
+{
+  "lemma": "κυριεύω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "κυριευόντων,",
+      "count": 1
+    },
+    {
+      "form": "κυριεύομεν",
+      "count": 1
+    },
+    {
+      "form": "κυριεύουσιν",
+      "count": 1
+    },
+    {
+      "form": "κυριεύει·",
+      "count": 1
+    },
+    {
+      "form": "κυριεύσει,",
+      "count": 1
+    },
+    {
+      "form": "κυριεύει",
+      "count": 1
+    },
+    {
+      "form": "κυριεύσῃ.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 5,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 5,
+      "future": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:15",
+      "form": "κυριευόντων,",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 15,
+      "left_context": "βασιλεὺς τῶν βασιλευόντων καὶ κύριος τῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 1:24",
+      "form": "κυριεύομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "οὐχ ὅτι",
+      "right_context": "ὑμῶν τῆς πίστεως, ἀλλὰ συνεργοί ἐσμεν"
+    },
+    {
+      "ref": "Luke 22:25",
+      "form": "κυριεύουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 25,
+      "left_context": "εἶπεν αὐτοῖς· Οἱ βασιλεῖς τῶν ἐθνῶν",
+      "right_context": "αὐτῶν καὶ οἱ ἐξουσιάζοντες αὐτῶν εὐεργέται"
+    },
+    {
+      "ref": "Romans 6:9",
+      "form": "κυριεύει·",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "νεκρῶν οὐκέτι ἀποθνῄσκει, θάνατος αὐτοῦ οὐκέτι",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 6:14",
+      "form": "κυριεύσει,",
+      "morph": "V-F-A-I-3S",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "ἁμαρτία γὰρ ὑμῶν οὐ",
+      "right_context": "οὐ γάρ ἐστε ὑπὸ νόμον ἀλλὰ"
+    },
+    {
+      "ref": "Romans 7:1",
+      "form": "κυριεύει",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 1,
+      "left_context": "γὰρ νόμον λαλῶ, ὅτι ὁ νόμος",
+      "right_context": "τοῦ ἀνθρώπου ἐφ’ ὅσον χρόνον ζῇ;"
+    },
+    {
+      "ref": "Romans 14:9",
+      "form": "κυριεύσῃ.",
+      "morph": "V-A-A-S-3S",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 9,
+      "left_context": "ἔζησεν ἵνα καὶ νεκρῶν καὶ ζώντων",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Romans": 4,
+    "1 Timothy": 1,
+    "2 Corinthians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὐκέτι",
+      "display": "ya·no",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύω",
+      "display": "reinando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνεργός",
+      "display": "colaboradores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "reyes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσιάζω",
+      "display": "ejercer·autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "more",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "de·muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 1:24",
+      "negator": "οὐχ",
+      "clause_text": "οὐχ ὅτι κυριεύομεν ὑμῶν τῆς πίστεως, ἀλλὰ συνεργοί ἐσμεν τῆς χαρᾶς"
+    },
+    {
+      "ref": "Romans 6:14",
+      "negator": "οὐ",
+      "clause_text": "ἁμαρτία γὰρ ὑμῶν οὐ κυριεύσει, οὐ γάρ ἐστε ὑπὸ νόμον ἀλλὰ ὑπὸ χάριν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 14:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 6:14",
+      "reason": "occurs near νόμος"
+    },
+    {
+      "ref": "Romans 6:9",
+      "reason": "occurs near οὐκέτι"
+    },
+    {
+      "ref": "Romans 7:1",
+      "reason": "occurs near νόμος"
+    },
+    {
+      "ref": "1 Timothy 6:15",
+      "reason": "occurs near βασιλεύω, κύριος"
+    },
+    {
+      "ref": "2 Corinthians 1:24",
+      "reason": "occurs near πίστις"
+    },
+    {
+      "ref": "Luke 22:25",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

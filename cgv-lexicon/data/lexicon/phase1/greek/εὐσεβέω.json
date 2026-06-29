@@ -1,0 +1,142 @@
+{
+  "lemma": "εὐσεβέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "εὐσεβεῖν",
+      "count": 1
+    },
+    {
+      "form": "εὐσεβεῖτε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:4",
+      "form": "εὐσεβεῖν",
+      "morph": "V-P-A-N",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "ἔχει, μανθανέτωσαν πρῶτον τὸν ἴδιον οἶκον",
+      "right_context": "καὶ ἀμοιβὰς ἀποδιδόναι τοῖς προγόνοις, τοῦτο"
+    },
+    {
+      "ref": "Acts 17:23",
+      "form": "εὐσεβεῖτε,",
+      "morph": "V-P-A-I-2P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 23,
+      "left_context": "ἐπεγέγραπτο· Ἀγνώστῳ θεῷ. ⸀ὃ οὖν ἀγνοοῦντες",
+      "right_context": "⸀τοῦτο ἐγὼ καταγγέλλω ὑμῖν."
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μανθάνω",
+      "display": "aprenden",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτον",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμοιβή",
+      "display": "recompensas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόγονος",
+      "display": "antepasados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγνωστος",
+      "display": "desconocido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγνοέω",
+      "display": "ignorando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταγγέλλω",
+      "display": "anuncio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:4",
+      "reason": "occurs near μανθάνω, οἶκος, πρῶτον"
+    },
+    {
+      "ref": "Acts 17:23",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

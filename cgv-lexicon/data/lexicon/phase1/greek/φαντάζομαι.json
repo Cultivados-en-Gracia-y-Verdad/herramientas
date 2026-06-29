@@ -1,0 +1,80 @@
+{
+  "lemma": "φαντάζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "φανταζόμενον,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:21",
+      "form": "φανταζόμενον,",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 21,
+      "left_context": "καί, οὕτω φοβερὸν ἦν τὸ",
+      "right_context": "Μωϋσῆς εἶπεν· Ἔκφοβός εἰμι καὶ ἔντρομος."
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβερός",
+      "display": "temible",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔκφοβος",
+      "display": "aterrado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:21",
+      "reason": "occurs near Μωϋσῆς, οὕτω(ς), φοβερός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

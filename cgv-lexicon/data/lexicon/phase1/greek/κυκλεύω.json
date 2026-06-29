@@ -1,0 +1,80 @@
+{
+  "lemma": "κυκλεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐκύκλευσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 20:9",
+      "form": "⸀ἐκύκλευσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Revelation",
+      "chapter": 20,
+      "verse": 9,
+      "left_context": "ἐπὶ τὸ πλάτος τῆς γῆς, καὶ",
+      "right_context": "τὴν παρεμβολὴν τῶν ἁγίων καὶ τὴν"
+    }
+  ],
+  "books": {
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλάτος",
+      "display": "anchura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρεμβολή",
+      "display": "campamento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 20:9",
+      "reason": "occurs near γῆ, παρεμβολή, πλάτος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

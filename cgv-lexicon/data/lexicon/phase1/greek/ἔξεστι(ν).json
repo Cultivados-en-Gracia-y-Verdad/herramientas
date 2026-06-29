@@ -1,0 +1,664 @@
+{
+  "lemma": "ἔξεστι(ν)",
+  "language": "greek",
+  "total_occurrences": 31,
+  "forms": [
+    {
+      "form": "ἔξεστιν",
+      "count": 14
+    },
+    {
+      "form": "ἔξεστίν",
+      "count": 5
+    },
+    {
+      "form": "ἔξεστιν·",
+      "count": 4
+    },
+    {
+      "form": "ἐξὸν",
+      "count": 3
+    },
+    {
+      "form": "⸀ἔξεστιν",
+      "count": 1
+    },
+    {
+      "form": "⸀Ἔξεστιν",
+      "count": 1
+    },
+    {
+      "form": "ἔξεστιν;",
+      "count": 1
+    },
+    {
+      "form": "Ἔξεστιν",
+      "count": 1
+    },
+    {
+      "form": "ἔξεστι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 28,
+      "participle": 3
+    },
+    "tenses": {
+      "present": 31
+    },
+    "voices": {
+      "active": 31
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 6:12",
+      "form": "ἔξεστιν·",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "Πάντα μοι",
+      "right_context": "ἀλλ’ οὐ πάντα συμφέρει. πάντα μοι"
+    },
+    {
+      "ref": "1 Corinthians 6:12",
+      "form": "ἔξεστιν·",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "ἀλλ’ οὐ πάντα συμφέρει. πάντα μοι",
+      "right_context": "ἀλλ’ οὐκ ἐγὼ ἐξουσιασθήσομαι ὑπό τινος."
+    },
+    {
+      "ref": "1 Corinthians 10:23",
+      "form": "ἔξεστιν·",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 23,
+      "left_context": "⸀Πάντα",
+      "right_context": "ἀλλ’ οὐ πάντα συμφέρει. ⸁πάντα ἔξεστιν·"
+    },
+    {
+      "ref": "1 Corinthians 10:23",
+      "form": "ἔξεστιν·",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 23,
+      "left_context": "ἔξεστιν· ἀλλ’ οὐ πάντα συμφέρει. ⸁πάντα",
+      "right_context": "ἀλλ’ οὐ πάντα οἰκοδομεῖ."
+    },
+    {
+      "ref": "2 Corinthians 12:4",
+      "form": "ἐξὸν",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "καὶ ἤκουσεν ἄρρητα ῥήματα ἃ οὐκ",
+      "right_context": "ἀνθρώπῳ λαλῆσαι."
+    },
+    {
+      "ref": "Acts 2:29",
+      "form": "ἐξὸν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 29,
+      "left_context": "Ἄνδρες ἀδελφοί,",
+      "right_context": "εἰπεῖν μετὰ παρρησίας πρὸς ὑμᾶς περὶ"
+    },
+    {
+      "ref": "Acts 16:21",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 21,
+      "left_context": "καὶ καταγγέλλουσιν ἔθη ἃ οὐκ",
+      "right_context": "ἡμῖν παραδέχεσθαι οὐδὲ ποιεῖν Ῥωμαίοις οὖσιν."
+    },
+    {
+      "ref": "Acts 21:37",
+      "form": "ἔξεστίν",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 37,
+      "left_context": "ὁ Παῦλος λέγει τῷ χιλιάρχῳ· Εἰ",
+      "right_context": "μοι εἰπεῖν ⸀τι πρὸς σέ; ὁ"
+    },
+    {
+      "ref": "Acts 22:25",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 25,
+      "left_context": "Παῦλος· Εἰ ἄνθρωπον Ῥωμαῖον καὶ ἀκατάκριτον",
+      "right_context": "ὑμῖν μαστίζειν;"
+    },
+    {
+      "ref": "John 5:10",
+      "form": "ἔξεστίν",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "τῷ τεθεραπευμένῳ· Σάββατόν ἐστιν, ⸀καὶ οὐκ",
+      "right_context": "σοι ἆραι τὸν ⸀κράβαττον."
+    },
+    {
+      "ref": "John 18:31",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 18,
+      "verse": 31,
+      "left_context": "⸀εἶπον αὐτῷ οἱ Ἰουδαῖοι· Ἡμῖν οὐκ",
+      "right_context": "ἀποκτεῖναι οὐδένα·"
+    },
+    {
+      "ref": "Luke 6:2",
+      "form": "⸀ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "Φαρισαίων ⸀εἶπαν· Τί ποιεῖτε ὃ οὐκ",
+      "right_context": "τοῖς σάββασιν;"
+    },
+    {
+      "ref": "Luke 6:4",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 4,
+      "left_context": "⸀ἔδωκεν τοῖς μετ’ αὐτοῦ, οὓς οὐκ",
+      "right_context": "φαγεῖν εἰ μὴ μόνους τοὺς ἱερεῖς;"
+    },
+    {
+      "ref": "Luke 6:9",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "Ἰησοῦς πρὸς αὐτούς· ⸀Ἐπερωτῶ ὑμᾶς, ⸀εἰ",
+      "right_context": "⸂τῷ σαββάτῳ⸃ ἀγαθοποιῆσαι ἢ κακοποιῆσαι, ψυχὴν"
+    },
+    {
+      "ref": "Luke 14:3",
+      "form": "⸀Ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 3,
+      "left_context": "πρὸς τοὺς νομικοὺς καὶ Φαρισαίους λέγων·",
+      "right_context": "τῷ σαββάτῳ ⸂θεραπεῦσαι ἢ οὔ⸃;"
+    },
+    {
+      "ref": "Luke 20:22",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 22,
+      "left_context": "",
+      "right_context": "⸀ἡμᾶς Καίσαρι φόρον δοῦναι ἢ οὔ;"
+    },
+    {
+      "ref": "Mark 2:24",
+      "form": "ἔξεστιν;",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 24,
+      "left_context": "τί ⸀ποιοῦσιν τοῖς σάββασιν ὃ οὐκ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 2:26",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 26,
+      "left_context": "ἄρτους τῆς προθέσεως ἔφαγεν, οὓς οὐκ",
+      "right_context": "φαγεῖν εἰ μὴ ⸂τοὺς ἱερεῖς⸃, καὶ"
+    },
+    {
+      "ref": "Mark 3:4",
+      "form": "Ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "καὶ λέγει αὐτοῖς·",
+      "right_context": "τοῖς σάββασιν ⸀ἀγαθοποιῆσαι ἢ κακοποιῆσαι, ψυχὴν"
+    },
+    {
+      "ref": "Mark 6:18",
+      "form": "ἔξεστίν",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "ὁ Ἰωάννης τῷ Ἡρῴδῃ ὅτι Οὐκ",
+      "right_context": "σοι ἔχειν τὴν γυναῖκα τοῦ ἀδελφοῦ"
+    },
+    {
+      "ref": "Mark 10:2",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 2,
+      "left_context": "⸀Καὶ ⸀ἐπηρώτων αὐτὸν εἰ",
+      "right_context": "ἀνδρὶ γυναῖκα ἀπολῦσαι, πειράζοντες αὐτόν."
+    },
+    {
+      "ref": "Mark 12:14",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "ἀληθείας τὴν ὁδὸν τοῦ θεοῦ διδάσκεις·",
+      "right_context": "⸂δοῦναι κῆνσον Καίσαρι⸃ ἢ οὔ; δῶμεν"
+    },
+    {
+      "ref": "Matthew 12:2",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "οἱ μαθηταί σου ποιοῦσιν ὃ οὐκ",
+      "right_context": "ποιεῖν ἐν σαββάτῳ."
+    },
+    {
+      "ref": "Matthew 12:4",
+      "form": "ἐξὸν",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "ἄρτους τῆς προθέσεως ⸂ἔφαγον, ὃ⸃ οὐκ",
+      "right_context": "ἦν αὐτῷ φαγεῖν οὐδὲ τοῖς μετ’"
+    },
+    {
+      "ref": "Matthew 12:10",
+      "form": "ἔξεστι",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 10,
+      "left_context": "ξηράν. καὶ ἐπηρώτησαν αὐτὸν λέγοντες· Εἰ",
+      "right_context": "τοῖς σάββασιν ⸀θεραπεύειν; ἵνα κατηγορήσωσιν αὐτοῦ."
+    },
+    {
+      "ref": "Matthew 12:12",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "πόσῳ οὖν διαφέρει ἄνθρωπος προβάτου. ὥστε",
+      "right_context": "τοῖς σάββασιν καλῶς ποιεῖν."
+    },
+    {
+      "ref": "Matthew 14:4",
+      "form": "ἔξεστίν",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 4,
+      "left_context": "ἔλεγεν γὰρ ⸂αὐτῷ ὁ Ἰωάννης⸃· Οὐκ",
+      "right_context": "σοι ἔχειν αὐτήν·"
+    },
+    {
+      "ref": "Matthew 19:3",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 3,
+      "left_context": "Φαρισαῖοι πειράζοντες αὐτὸν καὶ ⸀λέγοντες· Εἰ",
+      "right_context": "⸀ἀνθρώπῳ ἀπολῦσαι τὴν γυναῖκα αὐτοῦ κατὰ"
+    },
+    {
+      "ref": "Matthew 20:15",
+      "form": "ἔξεστίν",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 15,
+      "left_context": "⸀οὐκ",
+      "right_context": "μοι ⸂ὃ θέλω ποιῆσαι⸃ ἐν τοῖς"
+    },
+    {
+      "ref": "Matthew 22:17",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 17,
+      "left_context": "εἰπὸν οὖν ἡμῖν τί σοι δοκεῖ·",
+      "right_context": "δοῦναι κῆνσον Καίσαρι ἢ οὔ;"
+    },
+    {
+      "ref": "Matthew 27:6",
+      "form": "ἔξεστιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 6,
+      "left_context": "ἀρχιερεῖς λαβόντες τὰ ἀργύρια εἶπαν· Οὐκ",
+      "right_context": "βαλεῖν αὐτὰ εἰς τὸν κορβανᾶν, ἐπεὶ"
+    }
+  ],
+  "books": {
+    "Matthew": 9,
+    "Mark": 6,
+    "Luke": 5,
+    "1 Corinthians": 4,
+    "Acts": 4,
+    "John": 2,
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σάββατον",
+      "display": "sábado",
+      "count": 9,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comer",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "συμφέρω",
+      "display": "convene",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "θεραπεύω",
+      "display": "sanado",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπερωτάω",
+      "display": "pregunto",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὔ",
+      "display": "no",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Καῖσαρ",
+      "display": "César",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dar",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ῥωμαῖος",
+      "display": "Romano",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθοποιέω",
+      "display": "hacer·bien",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κακοποιέω",
+      "display": "hacer·mal",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρόθεσις",
+      "display": "de·proposición",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολύω",
+      "display": "despedir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πειράζω",
+      "display": "tentando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κῆνσος",
+      "display": "censo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσιάζω",
+      "display": "ejercer·autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edifica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρρητος",
+      "display": "inefables",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dichos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 6:12",
+      "negator": "οὐ",
+      "clause_text": "Πάντα μοι ἔξεστιν· ἀλλ’ οὐ πάντα συμφέρει. πάντα μοι ἔξεστιν· ἀλλ’"
+    },
+    {
+      "ref": "1 Corinthians 6:12",
+      "negator": "οὐκ",
+      "clause_text": "μοι ἔξεστιν· ἀλλ’ οὐ πάντα συμφέρει. πάντα μοι ἔξεστιν· ἀλλ’ οὐκ ἐγὼ ἐξουσιασθήσομαι ὑπό τινος."
+    },
+    {
+      "ref": "1 Corinthians 10:23",
+      "negator": "οὐ",
+      "clause_text": "⸀Πάντα ἔξεστιν· ἀλλ’ οὐ πάντα συμφέρει. ⸁πάντα ἔξεστιν· ἀλλ’ οὐ"
+    },
+    {
+      "ref": "1 Corinthians 10:23",
+      "negator": "οὐ",
+      "clause_text": "⸀Πάντα ἔξεστιν· ἀλλ’ οὐ πάντα συμφέρει. ⸁πάντα ἔξεστιν· ἀλλ’ οὐ πάντα οἰκοδομεῖ."
+    },
+    {
+      "ref": "2 Corinthians 12:4",
+      "negator": "οὐκ",
+      "clause_text": "τὸν παράδεισον καὶ ἤκουσεν ἄρρητα ῥήματα ἃ οὐκ ἐξὸν ἀνθρώπῳ λαλῆσαι."
+    },
+    {
+      "ref": "Acts 16:21",
+      "negator": "οὐκ",
+      "clause_text": "καὶ καταγγέλλουσιν ἔθη ἃ οὐκ ἔξεστιν ἡμῖν παραδέχεσθαι οὐδὲ ποιεῖν Ῥωμαίοις οὖσιν."
+    },
+    {
+      "ref": "John 5:10",
+      "negator": "οὐκ",
+      "clause_text": "οἱ Ἰουδαῖοι τῷ τεθεραπευμένῳ· Σάββατόν ἐστιν, ⸀καὶ οὐκ ἔξεστίν σοι ἆραι τὸν ⸀κράβαττον."
+    },
+    {
+      "ref": "John 18:31",
+      "negator": "οὐκ",
+      "clause_text": "κρίνατε αὐτόν. ⸀εἶπον αὐτῷ οἱ Ἰουδαῖοι· Ἡμῖν οὐκ ἔξεστιν ἀποκτεῖναι οὐδένα·"
+    },
+    {
+      "ref": "Luke 6:2",
+      "negator": "οὐκ",
+      "clause_text": "δὲ τῶν Φαρισαίων ⸀εἶπαν· Τί ποιεῖτε ὃ οὐκ ⸀ἔξεστιν τοῖς σάββασιν;"
+    },
+    {
+      "ref": "Luke 6:4",
+      "negator": "οὐκ",
+      "clause_text": "ἔφαγεν καὶ ⸀ἔδωκεν τοῖς μετ’ αὐτοῦ, οὓς οὐκ ἔξεστιν φαγεῖν εἰ μὴ μόνους τοὺς ἱερεῖς;"
+    },
+    {
+      "ref": "Mark 2:24",
+      "negator": "οὐκ",
+      "clause_text": "αὐτῷ· Ἴδε τί ⸀ποιοῦσιν τοῖς σάββασιν ὃ οὐκ ἔξεστιν;"
+    },
+    {
+      "ref": "Mark 2:26",
+      "negator": "οὐκ",
+      "clause_text": "καὶ τοὺς ἄρτους τῆς προθέσεως ἔφαγεν, οὓς οὐκ ἔξεστιν φαγεῖν εἰ μὴ ⸂τοὺς ἱερεῖς⸃, καὶ ἔδωκεν καὶ"
+    },
+    {
+      "ref": "Mark 6:18",
+      "negator": "Οὐκ",
+      "clause_text": "ἔλεγεν γὰρ ὁ Ἰωάννης τῷ Ἡρῴδῃ ὅτι Οὐκ ἔξεστίν σοι ἔχειν τὴν γυναῖκα τοῦ ἀδελφοῦ σου."
+    },
+    {
+      "ref": "Matthew 12:2",
+      "negator": "οὐκ",
+      "clause_text": "αὐτῷ· Ἰδοὺ οἱ μαθηταί σου ποιοῦσιν ὃ οὐκ ἔξεστιν ποιεῖν ἐν σαββάτῳ."
+    },
+    {
+      "ref": "Matthew 12:4",
+      "negator": "οὐκ",
+      "clause_text": "καὶ τοὺς ἄρτους τῆς προθέσεως ⸂ἔφαγον, ὃ⸃ οὐκ ἐξὸν ἦν αὐτῷ φαγεῖν οὐδὲ τοῖς μετ’ αὐτοῦ, εἰ"
+    },
+    {
+      "ref": "Matthew 14:4",
+      "negator": "Οὐκ",
+      "clause_text": "ἔλεγεν γὰρ ⸂αὐτῷ ὁ Ἰωάννης⸃· Οὐκ ἔξεστίν σοι ἔχειν αὐτήν·"
+    },
+    {
+      "ref": "Matthew 20:15",
+      "negator": "⸀οὐκ",
+      "clause_text": "⸀οὐκ ἔξεστίν μοι ⸂ὃ θέλω ποιῆσαι⸃ ἐν τοῖς ἐμοῖς; ⸀ἢ"
+    },
+    {
+      "ref": "Matthew 27:6",
+      "negator": "Οὐκ",
+      "clause_text": "οἱ δὲ ἀρχιερεῖς λαβόντες τὰ ἀργύρια εἶπαν· Οὐκ ἔξεστιν βαλεῖν αὐτὰ εἰς τὸν κορβανᾶν, ἐπεὶ τιμὴ αἵματός"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 12:10",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 12:12",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 12:2",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 12:4",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 14:4",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 19:3",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 20:15",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 22:17",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

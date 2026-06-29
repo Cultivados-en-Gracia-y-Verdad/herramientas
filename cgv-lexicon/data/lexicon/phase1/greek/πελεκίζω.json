@@ -1,0 +1,74 @@
+{
+  "lemma": "πελεκίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "πεπελεκισμένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 20:4",
+      "form": "πεπελεκισμένων",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 20,
+      "verse": 4,
+      "left_context": "ἐδόθη αὐτοῖς, καὶ τὰς ψυχὰς τῶν",
+      "right_context": "διὰ τὴν μαρτυρίαν Ἰησοῦ καὶ διὰ"
+    }
+  ],
+  "books": {
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρία",
+      "display": "testimonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 20:4",
+      "reason": "occurs near μαρτυρία, ψυχή, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

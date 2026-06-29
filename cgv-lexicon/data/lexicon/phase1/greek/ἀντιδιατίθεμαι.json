@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀντιδιατίθεμαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀντιδιατιθεμένους,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:25",
+      "form": "ἀντιδιατιθεμένους,",
+      "morph": "V-P-M-P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "ἐν πραΰτητι παιδεύοντα τοὺς",
+      "right_context": "μήποτε ⸀δώῃ αὐτοῖς ὁ θεὸς μετάνοιαν"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πραΰτης",
+      "display": "mansedumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδεύω",
+      "display": "disciplinando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:25",
+      "reason": "occurs near δίδωμι, θεός, μήποτε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

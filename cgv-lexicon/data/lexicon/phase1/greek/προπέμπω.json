@@ -1,0 +1,367 @@
+{
+  "lemma": "προπέμπω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "προπεμφθῆναι",
+      "count": 2
+    },
+    {
+      "form": "προπέμψητε",
+      "count": 1
+    },
+    {
+      "form": "προπέμψατε",
+      "count": 1
+    },
+    {
+      "form": "προπέμψας",
+      "count": 1
+    },
+    {
+      "form": "προπεμφθέντες",
+      "count": 1
+    },
+    {
+      "form": "προέπεμπον",
+      "count": 1
+    },
+    {
+      "form": "προπεμπόντων",
+      "count": 1
+    },
+    {
+      "form": "πρόπεμψον,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "imperative": 2,
+      "infinitive": 2,
+      "participle": 3,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 7,
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 6,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:6",
+      "form": "προπέμψητε",
+      "morph": "V-A-A-S-2P",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 6,
+      "left_context": "ἢ ⸀καὶ παραχειμάσω, ἵνα ὑμεῖς με",
+      "right_context": "οὗ ἐὰν πορεύωμαι."
+    },
+    {
+      "ref": "1 Corinthians 16:11",
+      "form": "προπέμψατε",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 11,
+      "left_context": "μή τις οὖν αὐτὸν ἐξουθενήσῃ.",
+      "right_context": "δὲ αὐτὸν ἐν εἰρήνῃ, ἵνα ἔλθῃ"
+    },
+    {
+      "ref": "2 Corinthians 1:16",
+      "form": "προπεμφθῆναι",
+      "morph": "V-A-P-N",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "ἐλθεῖν πρὸς ὑμᾶς καὶ ὑφ’ ὑμῶν",
+      "right_context": "εἰς τὴν Ἰουδαίαν."
+    },
+    {
+      "ref": "3 John 1:6",
+      "form": "προπέμψας",
+      "morph": "V-A-A-P",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "ἀγάπῃ ἐνώπιον ἐκκλησίας, οὓς καλῶς ποιήσεις",
+      "right_context": "ἀξίως τοῦ θεοῦ·"
+    },
+    {
+      "ref": "Acts 15:3",
+      "form": "προπεμφθέντες",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 3,
+      "left_context": "οἱ μὲν οὖν",
+      "right_context": "ὑπὸ τῆς ἐκκλησίας διήρχοντο τήν ⸀τε"
+    },
+    {
+      "ref": "Acts 20:38",
+      "form": "προέπεμπον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 38,
+      "left_context": "οὐκέτι μέλλουσιν τὸ πρόσωπον αὐτοῦ θεωρεῖν.",
+      "right_context": "δὲ αὐτὸν εἰς τὸ πλοῖον."
+    },
+    {
+      "ref": "Acts 21:5",
+      "form": "προπεμπόντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 5,
+      "left_context": "⸂ἐξαρτίσαι ἡμᾶς⸃ τὰς ἡμέρας, ἐξελθόντες ἐπορευόμεθα",
+      "right_context": "ἡμᾶς πάντων σὺν γυναιξὶ καὶ τέκνοις"
+    },
+    {
+      "ref": "Romans 15:24",
+      "form": "προπεμφθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 24,
+      "left_context": "διαπορευόμενος θεάσασθαι ὑμᾶς καὶ ὑφ’ ὑμῶν",
+      "right_context": "ἐκεῖ ἐὰν ὑμῶν πρῶτον ἀπὸ μέρους"
+    },
+    {
+      "ref": "Titus 3:13",
+      "form": "πρόπεμψον,",
+      "morph": "V-A-A-D-2S",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "ζηνᾶν τὸν νομικὸν καὶ ⸀Ἀπολλῶν σπουδαίως",
+      "right_context": "ἵνα μηδὲν αὐτοῖς λείπῃ."
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "1 Corinthians": 2,
+    "2 Corinthians": 1,
+    "3 John": 1,
+    "Romans": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πορεύομαι",
+      "display": "iera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "de·iglesia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραχειμάζω",
+      "display": "pasar·el·invierno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὗ",
+      "display": "del·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουθενέω",
+      "display": "desprecie",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαία",
+      "display": "Judea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλῶς",
+      "display": "bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀξίως",
+      "display": "dignamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διέρχομαι",
+      "display": "pasaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "ver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεάομαι",
+      "display": "contemplar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νομικός",
+      "display": "intérprete·de·la·ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀπολλῶς",
+      "display": "Apolos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 16:11",
+      "form": "προπέμψατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "μή τις οὖν αὐτὸν ἐξουθενήσῃ. προπέμψατε δὲ αὐτὸν ἐν εἰρήνῃ, ἵνα ἔλθῃ πρός ⸀με,"
+    },
+    {
+      "ref": "Titus 3:13",
+      "form": "πρόπεμψον,",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ζηνᾶν τὸν νομικὸν καὶ ⸀Ἀπολλῶν σπουδαίως πρόπεμψον, ἵνα μηδὲν αὐτοῖς λείπῃ."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 16:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Titus 3:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 15:3",
+      "reason": "occurs near ἐκκλησία"
+    },
+    {
+      "ref": "Acts 20:38",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 21:5",
+      "reason": "occurs near πορεύομαι"
+    },
+    {
+      "ref": "1 Corinthians 16:6",
+      "reason": "occurs near οὗ, παραχειμάζω, πορεύομαι"
+    },
+    {
+      "ref": "2 Corinthians 1:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "3 John 1:6",
+      "reason": "occurs near ἐκκλησία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

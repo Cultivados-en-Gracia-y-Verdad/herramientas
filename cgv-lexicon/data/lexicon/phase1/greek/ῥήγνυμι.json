@@ -1,0 +1,317 @@
+{
+  "lemma": "ῥήγνυμι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ῥῆξον",
+      "count": 1
+    },
+    {
+      "form": "ῥήξει",
+      "count": 1
+    },
+    {
+      "form": "ἔρρηξεν",
+      "count": 1
+    },
+    {
+      "form": "⸂ῥήξει",
+      "count": 1
+    },
+    {
+      "form": "ῥήσσει",
+      "count": 1
+    },
+    {
+      "form": "ῥήξωσιν",
+      "count": 1
+    },
+    {
+      "form": "ῥήγνυνται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 5,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 2,
+      "present": 2
+    },
+    "voices": {
+      "active": 6,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 4:27",
+      "form": "ῥῆξον",
+      "morph": "V-A-A-D-2S",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 27,
+      "left_context": "γάρ· Εὐφράνθητι, στεῖρα ἡ οὐ τίκτουσα,",
+      "right_context": "καὶ βόησον, ἡ οὐκ ὠδίνουσα· ὅτι"
+    },
+    {
+      "ref": "Luke 5:37",
+      "form": "ῥήξει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 37,
+      "left_context": "εἰς ἀσκοὺς παλαιούς· εἰ δὲ μήγε,",
+      "right_context": "ὁ ⸂οἶνος ὁ νέος⸃ τοὺς ἀσκούς,"
+    },
+    {
+      "ref": "Luke 9:42",
+      "form": "ἔρρηξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 42,
+      "left_context": "ἔτι δὲ προσερχομένου αὐτοῦ",
+      "right_context": "αὐτὸν τὸ δαιμόνιον καὶ συνεσπάραξεν· ἐπετίμησεν"
+    },
+    {
+      "ref": "Mark 2:22",
+      "form": "⸂ῥήξει",
+      "morph": "V-F-A-I-3S",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "εἰς ἀσκοὺς παλαιούς· εἰ δὲ μή,",
+      "right_context": "ὁ οἶνος⸃ τοὺς ἀσκούς, καὶ ὁ"
+    },
+    {
+      "ref": "Mark 9:18",
+      "form": "ῥήσσει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "καὶ ὅπου ⸀ἐὰν αὐτὸν καταλάβῃ",
+      "right_context": "αὐτόν, καὶ ἀφρίζει καὶ τρίζει τοὺς"
+    },
+    {
+      "ref": "Matthew 7:6",
+      "form": "ῥήξωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "ἐν τοῖς ποσὶν αὐτῶν καὶ στραφέντες",
+      "right_context": "ὑμᾶς."
+    },
+    {
+      "ref": "Matthew 9:17",
+      "form": "ῥήγνυνται",
+      "morph": "V-P-P-I-3P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 17,
+      "left_context": "ἀσκοὺς παλαιούς· εἰ δὲ μή γε,",
+      "right_context": "οἱ ἀσκοί, καὶ ὁ οἶνος ἐκχεῖται"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Mark": 2,
+    "Matthew": 2,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀσκός",
+      "display": "odres",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "παλαιός",
+      "display": "viejos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εὐφραίνω",
+      "display": "regocijarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στεῖρα",
+      "display": "estéril",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίκτω",
+      "display": "dar·a·luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοάω",
+      "display": "clama",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὠδίνω",
+      "display": "dolor·de·parto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήγε",
+      "display": "de·ninguna·manera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συσπαράσσω",
+      "display": "convulsionó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταλαμβάνω",
+      "display": "comprenda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφρίζω",
+      "display": "echar·espuma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρίζω",
+      "display": "cruje",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρέφω",
+      "display": "vueltos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γέ",
+      "display": "GE",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Galatians 4:27",
+      "form": "ῥῆξον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "γέγραπται γάρ· Εὐφράνθητι, στεῖρα ἡ οὐ τίκτουσα, ῥῆξον καὶ βόησον, ἡ οὐκ ὠδίνουσα· ὅτι πολλὰ τὰ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 4:27",
+      "negator": "οὐ",
+      "clause_text": "γέγραπται γάρ· Εὐφράνθητι, στεῖρα ἡ οὐ τίκτουσα, ῥῆξον καὶ βόησον, ἡ οὐκ ὠδίνουσα· ὅτι πολλὰ τὰ"
+    },
+    {
+      "ref": "Mark 2:22",
+      "negator": "μή,",
+      "clause_text": "οἶνον νέον εἰς ἀσκοὺς παλαιούς· εἰ δὲ μή, ⸂ῥήξει ὁ οἶνος⸃ τοὺς ἀσκούς, καὶ ὁ οἶνος ⸂ἀπόλλυται"
+    },
+    {
+      "ref": "Matthew 9:17",
+      "negator": "μή",
+      "clause_text": "νέον εἰς ἀσκοὺς παλαιούς· εἰ δὲ μή γε, ῥήγνυνται οἱ ἀσκοί, καὶ ὁ οἶνος ἐκχεῖται καὶ οἱ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 4:27",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 5:37",
+      "reason": "occurs near οἶνος, παλαιός, ἀσκός"
+    },
+    {
+      "ref": "Luke 9:42",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 2:22",
+      "reason": "occurs near οἶνος, παλαιός, ἀσκός"
+    },
+    {
+      "ref": "Mark 9:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 7:6",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

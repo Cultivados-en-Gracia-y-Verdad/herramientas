@@ -1,0 +1,94 @@
+{
+  "lemma": "ἐπιπλήσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιπλήξῃς,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:1",
+      "form": "ἐπιπλήξῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "Πρεσβυτέρῳ μὴ",
+      "right_context": "ἀλλὰ παρακάλει ὡς πατέρα, νεωτέρους ὡς"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πρεσβύτερος",
+      "display": "anciano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "roga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 5:1",
+      "form": "ἐπιπλήξῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "Πρεσβυτέρῳ μὴ ἐπιπλήξῃς, ἀλλὰ παρακάλει ὡς πατέρα, νεωτέρους ὡς ἀδελφούς,",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 5:1",
+      "negator": "μὴ",
+      "clause_text": "Πρεσβυτέρῳ μὴ ἐπιπλήξῃς, ἀλλὰ παρακάλει ὡς πατέρα, νεωτέρους ὡς ἀδελφούς,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:1",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,86 @@
+{
+  "lemma": "μυωπάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μυωπάζων,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:9",
+      "form": "μυωπάζων,",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "γὰρ μὴ πάρεστιν ταῦτα, τυφλός ἐστιν",
+      "right_context": "λήθην λαβὼν τοῦ καθαρισμοῦ τῶν πάλαι"
+    }
+  ],
+  "books": {
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάρειμι",
+      "display": "estar·presente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τυφλός",
+      "display": "ciego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λήθη",
+      "display": "olvido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαρισμός",
+      "display": "de·purificación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:9",
+      "reason": "occurs near καθαρισμός, λήθη, λαμβάνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

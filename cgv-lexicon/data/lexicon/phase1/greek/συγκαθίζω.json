@@ -1,0 +1,118 @@
+{
+  "lemma": "συγκαθίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνεκάθισεν",
+      "count": 1
+    },
+    {
+      "form": "⸀συγκαθισάντων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 2:6",
+      "form": "συνεκάθισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "καὶ συνήγειρεν καὶ",
+      "right_context": "ἐν τοῖς ἐπουρανίοις ἐν Χριστῷ Ἰησοῦ,"
+    },
+    {
+      "ref": "Luke 22:55",
+      "form": "⸀συγκαθισάντων",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 55,
+      "left_context": "πῦρ ἐν μέσῳ τῆς αὐλῆς καὶ",
+      "right_context": "ἐκάθητο ὁ Πέτρος ⸀μέσος αὐτῶν."
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνεγείρω",
+      "display": "resucitar·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπουράνιος",
+      "display": "celestiales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐλή",
+      "display": "de·patio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 2:6",
+      "reason": "occurs near Χριστός, συνεγείρω, ἐπουράνιος"
+    },
+    {
+      "ref": "Luke 22:55",
+      "reason": "occurs near αὐλή, μέσος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

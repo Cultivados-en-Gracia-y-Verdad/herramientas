@@ -1,0 +1,117 @@
+{
+  "lemma": "ἐξορύσσω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἐξορύξαντες",
+      "count": 1
+    },
+    {
+      "form": "ἐξορύξαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 4:15",
+      "form": "⸀ἐξορύξαντες",
+      "morph": "V-A-A-P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "ὅτι εἰ δυνατὸν τοὺς ὀφθαλμοὺς ὑμῶν",
+      "right_context": "ἐδώκατέ μοι."
+    },
+    {
+      "ref": "Mark 2:4",
+      "form": "ἐξορύξαντες",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "ἀπεστέγασαν τὴν στέγην ὅπου ἦν, καὶ",
+      "right_context": "χαλῶσι τὸν κράβαττον ⸀ὅπου ὁ παραλυτικὸς"
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderoso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "disteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στέγη",
+      "display": "techo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαλάω",
+      "display": "bajan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράβαττος",
+      "display": "camilla",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 4:15",
+      "reason": "occurs near δίδωμι, δυνατός, ὀφθαλμός"
+    },
+    {
+      "ref": "Mark 2:4",
+      "reason": "occurs near στέγη, ὅπου"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

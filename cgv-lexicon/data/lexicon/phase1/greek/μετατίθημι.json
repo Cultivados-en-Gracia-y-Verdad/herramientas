@@ -1,0 +1,274 @@
+{
+  "lemma": "μετατίθημι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "μετατίθεσθε",
+      "count": 1
+    },
+    {
+      "form": "μετατιθεμένης",
+      "count": 1
+    },
+    {
+      "form": "μετετέθη",
+      "count": 1
+    },
+    {
+      "form": "μετέθηκεν",
+      "count": 1
+    },
+    {
+      "form": "μετετέθησαν",
+      "count": 1
+    },
+    {
+      "form": "μετατιθέντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 3
+    },
+    "voices": {
+      "middle": 1,
+      "passive": 3,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 1:6",
+      "form": "μετατίθεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "Θαυμάζω ὅτι οὕτως ταχέως",
+      "right_context": "ἀπὸ τοῦ καλέσαντος ὑμᾶς ἐν χάριτι"
+    },
+    {
+      "ref": "Hebrews 7:12",
+      "form": "μετατιθεμένης",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 12,
+      "left_context": "",
+      "right_context": "γὰρ τῆς ἱερωσύνης ἐξ ἀνάγκης καὶ"
+    },
+    {
+      "ref": "Hebrews 11:5",
+      "form": "μετετέθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 5,
+      "left_context": "Πίστει Ἑνὼχ",
+      "right_context": "τοῦ μὴ ἰδεῖν θάνατον, καὶ οὐχ"
+    },
+    {
+      "ref": "Hebrews 11:5",
+      "form": "μετέθηκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 5,
+      "left_context": "ἰδεῖν θάνατον, καὶ οὐχ ηὑρίσκετο διότι",
+      "right_context": "αὐτὸν ὁ θεός· πρὸ γὰρ τῆς"
+    },
+    {
+      "ref": "Acts 7:16",
+      "form": "μετετέθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 16,
+      "left_context": "καὶ",
+      "right_context": "εἰς Συχὲμ καὶ ἐτέθησαν ἐν τῷ"
+    },
+    {
+      "ref": "Jude 1:4",
+      "form": "μετατιθέντες",
+      "morph": "V-P-A-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "ἀσεβεῖς, τὴν τοῦ θεοῦ ἡμῶν χάριτα",
+      "right_context": "εἰς ἀσέλγειαν καὶ τὸν μόνον ⸀δεσπότην"
+    }
+  ],
+  "books": {
+    "Hebrews": 3,
+    "Galatians": 1,
+    "Acts": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θαυμάζω",
+      "display": "asombro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταχέως",
+      "display": "rápidamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερωσύνη",
+      "display": "de·sacerdocio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγκη",
+      "display": "de·necesidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἑνώχ",
+      "display": "Enoc",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "era hallado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διότι",
+      "display": "porque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Συχέμ",
+      "display": "Siquem",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "fueron puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσέλγεια",
+      "display": "lascivia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 11:5",
+      "negator": "μὴ",
+      "clause_text": "Πίστει Ἑνὼχ μετετέθη τοῦ μὴ ἰδεῖν θάνατον, καὶ οὐχ ηὑρίσκετο διότι"
+    },
+    {
+      "ref": "Hebrews 11:5",
+      "negator": "οὐχ",
+      "clause_text": "τοῦ μὴ ἰδεῖν θάνατον, καὶ οὐχ ηὑρίσκετο διότι μετέθηκεν αὐτὸν ὁ θεός· πρὸ γὰρ τῆς ⸀μεταθέσεως μεμαρτύρηται"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:5",
+      "reason": "occurs near θάνατος"
+    },
+    {
+      "ref": "Hebrews 7:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 7:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 1:6",
+      "reason": "occurs near θαυμάζω, οὕτω(ς), ταχέως"
+    },
+    {
+      "ref": "Jude 1:4",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

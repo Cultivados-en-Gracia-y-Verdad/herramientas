@@ -1,0 +1,74 @@
+{
+  "lemma": "διακαθαρίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διακαθαριεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 3:12",
+      "form": "διακαθαριεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "πτύον ἐν τῇ χειρὶ αὐτοῦ, καὶ",
+      "right_context": "τὴν ἅλωνα αὐτοῦ καὶ συνάξει τὸν"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλων",
+      "display": "era",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reunirá",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 3:12",
+      "reason": "occurs near συνάγω, χείρ, ἅλων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,153 @@
+{
+  "lemma": "θαμβέομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐθαμβήθησαν",
+      "count": 1
+    },
+    {
+      "form": "ἐθαμβοῦντο",
+      "count": 1
+    },
+    {
+      "form": "ἐθαμβοῦντο,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 1:27",
+      "form": "ἐθαμβήθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 27,
+      "left_context": "καὶ",
+      "right_context": "⸀ἅπαντες, ὥστε συζητεῖν ⸂πρὸς ἑαυτοὺς⸃ λέγοντας·"
+    },
+    {
+      "ref": "Mark 10:24",
+      "form": "ἐθαμβοῦντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 24,
+      "left_context": "οἱ δὲ μαθηταὶ",
+      "right_context": "ἐπὶ τοῖς λόγοις αὐτοῦ. ὁ δὲ"
+    },
+    {
+      "ref": "Mark 10:32",
+      "form": "ἐθαμβοῦντο,",
+      "morph": "V-I-P-I-3P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 32,
+      "left_context": "ἦν προάγων αὐτοὺς ὁ Ἰησοῦς, καὶ",
+      "right_context": "⸂οἱ δὲ⸃ ἀκολουθοῦντες ἐφοβοῦντο. καὶ παραλαβὼν"
+    }
+  ],
+  "books": {
+    "Mark": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἅπας",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συζητέω",
+      "display": "discutir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προάγω",
+      "display": "ir·delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκολουθέω",
+      "display": "seguiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temían",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:24",
+      "reason": "occurs near μαθητής"
+    },
+    {
+      "ref": "Mark 10:32",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 1:27",
+      "reason": "occurs near συζητέω, ἅπας, ἑαυτοῦ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

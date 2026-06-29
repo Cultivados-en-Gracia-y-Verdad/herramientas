@@ -1,0 +1,80 @@
+{
+  "lemma": "περιπείρω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "περιέπειραν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:10",
+      "form": "περιέπειραν",
+      "morph": "V-A-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "ἀπεπλανήθησαν ἀπὸ τῆς πίστεως καὶ ἑαυτοὺς",
+      "right_context": "ὀδύναις πολλαῖς."
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀδύνη",
+      "display": "doloras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:10",
+      "reason": "occurs near πίστις, πολύς, ἑαυτοῦ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

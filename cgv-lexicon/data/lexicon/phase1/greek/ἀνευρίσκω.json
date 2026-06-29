@@ -1,0 +1,118 @@
+{
+  "lemma": "ἀνευρίσκω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸂ἀνευρόντες",
+      "count": 1
+    },
+    {
+      "form": "ἀνεῦραν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 21:4",
+      "form": "⸂ἀνευρόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 4,
+      "left_context": "",
+      "right_context": "δὲ τοὺς⸃ μαθητὰς ἐπεμείναμεν αὐτοῦ ἡμέρας"
+    },
+    {
+      "ref": "Luke 2:16",
+      "form": "ἀνεῦραν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "καὶ ἦλθαν σπεύσαντες καὶ",
+      "right_context": "τήν τε Μαριὰμ καὶ τὸν Ἰωσὴφ"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιμένω",
+      "display": "perseveramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐτοῦ",
+      "display": "de·él",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπεύδω",
+      "display": "apresurarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαριάμ",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:4",
+      "reason": "occurs near αὐτοῦ, μαθητής, ἐπιμένω"
+    },
+    {
+      "ref": "Luke 2:16",
+      "reason": "occurs near σπεύδω, ἔρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,873 @@
+{
+  "lemma": "κρατέω",
+  "language": "greek",
+  "total_occurrences": 47,
+  "forms": [
+    {
+      "form": "κρατήσας",
+      "count": 6
+    },
+    {
+      "form": "ἐκράτησαν",
+      "count": 4
+    },
+    {
+      "form": "κρατοῦντας",
+      "count": 3
+    },
+    {
+      "form": "κρατήσατε",
+      "count": 3
+    },
+    {
+      "form": "ἐκράτησεν",
+      "count": 3
+    },
+    {
+      "form": "κρατῆσαι",
+      "count": 3
+    },
+    {
+      "form": "κρατήσαντες",
+      "count": 3
+    },
+    {
+      "form": "κρατεῖτε",
+      "count": 2
+    },
+    {
+      "form": "κρατῶν",
+      "count": 2
+    },
+    {
+      "form": "ἐκρατήσατέ",
+      "count": 2
+    },
+    {
+      "form": "κρατεῖς",
+      "count": 1
+    },
+    {
+      "form": "κράτει",
+      "count": 1
+    },
+    {
+      "form": "κρατῶμεν",
+      "count": 1
+    },
+    {
+      "form": "κρατεῖσθαι",
+      "count": 1
+    },
+    {
+      "form": "Κρατοῦντος",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐκρατήσαμεν,",
+      "count": 1
+    },
+    {
+      "form": "κεκρατηκέναι",
+      "count": 1
+    },
+    {
+      "form": "κρατῆτε",
+      "count": 1
+    },
+    {
+      "form": "κεκράτηνται.",
+      "count": 1
+    },
+    {
+      "form": "ἐκρατοῦντο",
+      "count": 1
+    },
+    {
+      "form": "κρατοῦντες",
+      "count": 1
+    },
+    {
+      "form": "κρατεῖν,",
+      "count": 1
+    },
+    {
+      "form": "κρατῆσαι,",
+      "count": 1
+    },
+    {
+      "form": "κρατοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "κρατήσει",
+      "count": 1
+    },
+    {
+      "form": "κρατήσωσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 5,
+      "participle": 16,
+      "indicative": 16,
+      "subjunctive": 3,
+      "infinitive": 7
+    },
+    "tenses": {
+      "present": 16,
+      "aorist": 27,
+      "perfect": 2,
+      "imperfect": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 44,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 2:15",
+      "form": "κρατεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "ἄρα οὖν, ἀδελφοί, στήκετε, καὶ",
+      "right_context": "τὰς παραδόσεις ἃς ἐδιδάχθητε εἴτε διὰ"
+    },
+    {
+      "ref": "Revelation 2:1",
+      "form": "κρατῶν",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "Ἐφέσῳ ἐκκλησίας γράψον· Τάδε λέγει ὁ",
+      "right_context": "τοὺς ἑπτὰ ἀστέρας ἐν τῇ δεξιᾷ"
+    },
+    {
+      "ref": "Revelation 2:13",
+      "form": "κρατεῖς",
+      "morph": "V-P-A-I-2S",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "ὅπου ὁ θρόνος τοῦ Σατανᾶ, καὶ",
+      "right_context": "τὸ ὄνομά μου, καὶ οὐκ ἠρνήσω"
+    },
+    {
+      "ref": "Revelation 2:14",
+      "form": "κρατοῦντας",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "κατὰ σοῦ ὀλίγα, ὅτι ἔχεις ἐκεῖ",
+      "right_context": "τὴν διδαχὴν Βαλαάμ, ὃς ⸂ἐδίδασκεν τῷ⸃"
+    },
+    {
+      "ref": "Revelation 2:15",
+      "form": "κρατοῦντας",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "οὕτως ἔχεις καὶ σὺ",
+      "right_context": "τὴν ⸀διδαχὴν Νικολαϊτῶν ὁμοίως."
+    },
+    {
+      "ref": "Revelation 2:25",
+      "form": "κρατήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "πλὴν ὃ ἔχετε",
+      "right_context": "ἄχρι οὗ ἂν ἥξω."
+    },
+    {
+      "ref": "Revelation 3:11",
+      "form": "κράτει",
+      "morph": "V-P-A-D-2S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "ἔρχομαι ταχύ·",
+      "right_context": "ὃ ἔχεις, ἵνα μηδεὶς λάβῃ τὸν"
+    },
+    {
+      "ref": "Revelation 7:1",
+      "form": "κρατοῦντας",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 1,
+      "left_context": "ἐπὶ τὰς τέσσαρας γωνίας τῆς γῆς,",
+      "right_context": "τοὺς τέσσαρας ἀνέμους τῆς γῆς, ἵνα"
+    },
+    {
+      "ref": "Revelation 20:2",
+      "form": "ἐκράτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 20,
+      "verse": 2,
+      "left_context": "καὶ",
+      "right_context": "τὸν δράκοντα, ⸂ὁ ὄφις ὁ ἀρχαῖος⸃,"
+    },
+    {
+      "ref": "Colossians 2:19",
+      "form": "κρατῶν",
+      "morph": "V-P-A-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "καὶ οὐ",
+      "right_context": "τὴν κεφαλήν, ἐξ οὗ πᾶν τὸ"
+    },
+    {
+      "ref": "Hebrews 4:14",
+      "form": "κρατῶμεν",
+      "morph": "V-P-A-S-1P",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "οὐρανούς, Ἰησοῦν τὸν υἱὸν τοῦ θεοῦ,",
+      "right_context": "τῆς ὁμολογίας·"
+    },
+    {
+      "ref": "Hebrews 6:18",
+      "form": "κρατῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "⸀θεόν, ἰσχυρὰν παράκλησιν ἔχωμεν οἱ καταφυγόντες",
+      "right_context": "τῆς προκειμένης ἐλπίδος·"
+    },
+    {
+      "ref": "Acts 2:24",
+      "form": "κρατεῖσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 24,
+      "left_context": "τοῦ θανάτου, καθότι οὐκ ἦν δυνατὸν",
+      "right_context": "αὐτὸν ὑπ’ αὐτοῦ·"
+    },
+    {
+      "ref": "Acts 3:11",
+      "form": "Κρατοῦντος",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "",
+      "right_context": "δὲ ⸀αὐτοῦ τὸν Πέτρον καὶ ⸀τὸν"
+    },
+    {
+      "ref": "Acts 24:6",
+      "form": "⸀ἐκρατήσαμεν,",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 6,
+      "left_context": "τὸ ἱερὸν ἐπείρασεν βεβηλῶσαι, ὃν καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 27:13",
+      "form": "κεκρατηκέναι",
+      "morph": "V-X-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 13,
+      "left_context": "Ὑποπνεύσαντος δὲ νότου δόξαντες τῆς προθέσεως",
+      "right_context": "ἄραντες ἆσσον παρελέγοντο τὴν Κρήτην."
+    },
+    {
+      "ref": "John 20:23",
+      "form": "κρατῆτε",
+      "morph": "V-P-A-S-2P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 23,
+      "left_context": "τὰς ἁμαρτίας ⸀ἀφέωνται αὐτοῖς· ἄν τινων",
+      "right_context": "κεκράτηνται."
+    },
+    {
+      "ref": "John 20:23",
+      "form": "κεκράτηνται.",
+      "morph": "V-X-P-I-3P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 23,
+      "left_context": "ἁμαρτίας ⸀ἀφέωνται αὐτοῖς· ἄν τινων κρατῆτε",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 8:54",
+      "form": "κρατήσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 54,
+      "left_context": "αὐτὸς ⸀δὲ",
+      "right_context": "τῆς χειρὸς αὐτῆς ἐφώνησεν λέγων· Ἡ"
+    },
+    {
+      "ref": "Luke 24:16",
+      "form": "ἐκρατοῦντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 16,
+      "left_context": "οἱ δὲ ὀφθαλμοὶ αὐτῶν",
+      "right_context": "τοῦ μὴ ἐπιγνῶναι αὐτόν."
+    },
+    {
+      "ref": "Mark 1:31",
+      "form": "κρατήσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 31,
+      "left_context": "καὶ προσελθὼν ἤγειρεν αὐτὴν",
+      "right_context": "τῆς ⸀χειρός· καὶ ἀφῆκεν αὐτὴν ὁ"
+    },
+    {
+      "ref": "Mark 3:21",
+      "form": "κρατῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 21,
+      "left_context": "καὶ ἀκούσαντες οἱ παρ’ αὐτοῦ ἐξῆλθον",
+      "right_context": "αὐτόν, ἔλεγον γὰρ ὅτι ἐξέστη."
+    },
+    {
+      "ref": "Mark 5:41",
+      "form": "κρατήσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 41,
+      "left_context": "καὶ",
+      "right_context": "τῆς χειρὸς τοῦ παιδίου λέγει αὐτῇ·"
+    },
+    {
+      "ref": "Mark 6:17",
+      "form": "ἐκράτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "Αὐτὸς γὰρ ὁ Ἡρῴδης ἀποστείλας",
+      "right_context": "τὸν Ἰωάννην καὶ ἔδησεν αὐτὸν ἐν"
+    },
+    {
+      "ref": "Mark 7:3",
+      "form": "κρατοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 3,
+      "left_context": "πυγμῇ νίψωνται τὰς χεῖρας οὐκ ἐσθίουσιν,",
+      "right_context": "τὴν παράδοσιν τῶν πρεσβυτέρων,"
+    },
+    {
+      "ref": "Mark 7:4",
+      "form": "κρατεῖν,",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 4,
+      "left_context": "καὶ ἄλλα πολλά ἐστιν ἃ παρέλαβον",
+      "right_context": "βαπτισμοὺς ποτηρίων καὶ ξεστῶν καὶ χαλκίων"
+    },
+    {
+      "ref": "Mark 7:8",
+      "form": "κρατεῖτε",
+      "morph": "V-P-A-I-2P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 8,
+      "left_context": "⸀ἀφέντες τὴν ἐντολὴν τοῦ θεοῦ",
+      "right_context": "τὴν παράδοσιν τῶν ⸀ἀνθρώπων."
+    },
+    {
+      "ref": "Mark 9:10",
+      "form": "ἐκράτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "καὶ τὸν λόγον",
+      "right_context": "πρὸς ἑαυτοὺς συζητοῦντες τί ἐστιν τὸ"
+    },
+    {
+      "ref": "Mark 9:27",
+      "form": "κρατήσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 27,
+      "left_context": "ὁ δὲ Ἰησοῦς",
+      "right_context": "⸂τῆς χειρὸς αὐτοῦ⸃ ἤγειρεν αὐτόν, καὶ"
+    },
+    {
+      "ref": "Mark 12:12",
+      "form": "κρατῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "Καὶ ἐζήτουν αὐτὸν",
+      "right_context": "καὶ ἐφοβήθησαν τὸν ὄχλον, ἔγνωσαν γὰρ"
+    },
+    {
+      "ref": "Mark 14:1",
+      "form": "κρατήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 1,
+      "left_context": "οἱ γραμματεῖς πῶς αὐτὸν ἐν δόλῳ",
+      "right_context": "ἀποκτείνωσιν,"
+    },
+    {
+      "ref": "Mark 14:44",
+      "form": "κρατήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 44,
+      "left_context": "λέγων· Ὃν ἂν φιλήσω αὐτός ἐστιν·",
+      "right_context": "αὐτὸν καὶ ⸀ἀπάγετε ἀσφαλῶς."
+    },
+    {
+      "ref": "Mark 14:46",
+      "form": "ἐκράτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 46,
+      "left_context": "δὲ ἐπέβαλαν ⸂τὰς χεῖρας αὐτῷ⸃ καὶ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 14:49",
+      "form": "ἐκρατήσατέ",
+      "morph": "V-A-A-I-2P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 49,
+      "left_context": "ἐν τῷ ἱερῷ διδάσκων καὶ οὐκ",
+      "right_context": "με· ἀλλ’ ἵνα πληρωθῶσιν αἱ γραφαί."
+    },
+    {
+      "ref": "Mark 14:51",
+      "form": "κρατοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 51,
+      "left_context": "αὐτῷ περιβεβλημένος σινδόνα ἐπὶ γυμνοῦ, καὶ",
+      "right_context": "⸀αὐτόν,"
+    },
+    {
+      "ref": "Matthew 9:25",
+      "form": "ἐκράτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 25,
+      "left_context": "ὅτε δὲ ἐξεβλήθη ὁ ὄχλος, εἰσελθὼν",
+      "right_context": "τῆς χειρὸς αὐτῆς, καὶ ἠγέρθη τὸ"
+    },
+    {
+      "ref": "Matthew 12:11",
+      "form": "κρατήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "τοῦτο τοῖς σάββασιν εἰς βόθυνον, οὐχὶ",
+      "right_context": "αὐτὸ καὶ ἐγερεῖ;"
+    },
+    {
+      "ref": "Matthew 14:3",
+      "form": "κρατήσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 3,
+      "left_context": "Ὁ γὰρ Ἡρῴδης",
+      "right_context": "τὸν Ἰωάννην ἔδησεν ⸀αὐτὸν καὶ ⸂ἐν"
+    },
+    {
+      "ref": "Matthew 18:28",
+      "form": "κρατήσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 28,
+      "left_context": "ὃς ὤφειλεν αὐτῷ ἑκατὸν δηνάρια, καὶ",
+      "right_context": "αὐτὸν ἔπνιγεν λέγων· ⸀Ἀπόδος εἴ τι"
+    },
+    {
+      "ref": "Matthew 21:46",
+      "form": "κρατῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 46,
+      "left_context": "καὶ ζητοῦντες αὐτὸν",
+      "right_context": "ἐφοβήθησαν τοὺς ὄχλους, ⸂ἐπεὶ εἰς⸃ προφήτην"
+    },
+    {
+      "ref": "Matthew 22:6",
+      "form": "κρατήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 6,
+      "left_context": "οἱ δὲ λοιποὶ",
+      "right_context": "τοὺς δούλους αὐτοῦ ὕβρισαν καὶ ἀπέκτειναν."
+    },
+    {
+      "ref": "Matthew 26:4",
+      "form": "κρατήσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 4,
+      "left_context": "καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν δόλῳ",
+      "right_context": "καὶ ἀποκτείνωσιν·"
+    },
+    {
+      "ref": "Matthew 26:48",
+      "form": "κρατήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 48,
+      "left_context": "λέγων· Ὃν ἂν φιλήσω αὐτός ἐστιν·",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Matthew 26:50",
+      "form": "ἐκράτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 50,
+      "left_context": "τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν καὶ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Matthew 26:55",
+      "form": "ἐκρατήσατέ",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 55,
+      "left_context": "τῷ ἱερῷ ἐκαθεζόμην διδάσκων⸃ καὶ οὐκ",
+      "right_context": "με."
+    },
+    {
+      "ref": "Matthew 26:57",
+      "form": "κρατήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 57,
+      "left_context": "Οἱ δὲ",
+      "right_context": "τὸν Ἰησοῦν ἀπήγαγον πρὸς Καϊάφαν τὸν"
+    },
+    {
+      "ref": "Matthew 28:9",
+      "form": "ἐκράτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 9,
+      "left_context": "αὐταῖς λέγων· Χαίρετε· αἱ δὲ προσελθοῦσαι",
+      "right_context": "αὐτοῦ τοὺς πόδας καὶ προσεκύνησαν αὐτῷ."
+    }
+  ],
+  "books": {
+    "Mark": 15,
+    "Matthew": 12,
+    "Revelation": 8,
+    "Acts": 4,
+    "Hebrews": 2,
+    "John": 2,
+    "Luke": 2,
+    "2 Thessalonians": 1,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 8,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "fueron enseñado",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "han perdonado",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantó",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "παράδοσις",
+      "display": "tradiciónes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "διδαχή",
+      "display": "enseñanza",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέσσαρες",
+      "display": "cuatro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "han agarrado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "Herodes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ató",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscaban",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "fueron temido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δόλος",
+      "display": "engaño",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "maten",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φιλέω",
+      "display": "ame",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπάγω",
+      "display": "llevad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρα",
+      "display": "por·tanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Thessalonians 2:15",
+      "form": "κρατεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "ἄρα οὖν, ἀδελφοί, στήκετε, καὶ κρατεῖτε τὰς παραδόσεις ἃς ἐδιδάχθητε εἴτε διὰ λόγου εἴτε"
+    },
+    {
+      "ref": "Revelation 2:25",
+      "form": "κρατήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "πλὴν ὃ ἔχετε κρατήσατε ἄχρι οὗ ἂν ἥξω."
+    },
+    {
+      "ref": "Revelation 3:11",
+      "form": "κράτει",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ἔρχομαι ταχύ· κράτει ὃ ἔχεις, ἵνα μηδεὶς λάβῃ τὸν στέφανόν σου."
+    },
+    {
+      "ref": "Mark 14:44",
+      "form": "κρατήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "σύσσημον αὐτοῖς λέγων· Ὃν ἂν φιλήσω αὐτός ἐστιν· κρατήσατε αὐτὸν καὶ ⸀ἀπάγετε ἀσφαλῶς."
+    },
+    {
+      "ref": "Matthew 26:48",
+      "form": "κρατήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "αὐτοῖς σημεῖον λέγων· Ὃν ἂν φιλήσω αὐτός ἐστιν· κρατήσατε αὐτόν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 2:19",
+      "negator": "οὐ",
+      "clause_text": "καὶ οὐ κρατῶν τὴν κεφαλήν, ἐξ οὗ πᾶν τὸ σῶμα διὰ"
+    },
+    {
+      "ref": "Acts 2:24",
+      "negator": "οὐκ",
+      "clause_text": "τὰς ὠδῖνας τοῦ θανάτου, καθότι οὐκ ἦν δυνατὸν κρατεῖσθαι αὐτὸν ὑπ’ αὐτοῦ·"
+    },
+    {
+      "ref": "Luke 24:16",
+      "negator": "μὴ",
+      "clause_text": "οἱ δὲ ὀφθαλμοὶ αὐτῶν ἐκρατοῦντο τοῦ μὴ ἐπιγνῶναι αὐτόν."
+    },
+    {
+      "ref": "Mark 7:3",
+      "negator": "οὐκ",
+      "clause_text": "ἐὰν μὴ πυγμῇ νίψωνται τὰς χεῖρας οὐκ ἐσθίουσιν, κρατοῦντες τὴν παράδοσιν τῶν πρεσβυτέρων,"
+    },
+    {
+      "ref": "Mark 14:49",
+      "negator": "οὐκ",
+      "clause_text": "πρὸς ὑμᾶς ἐν τῷ ἱερῷ διδάσκων καὶ οὐκ ἐκρατήσατέ με· ἀλλ’ ἵνα πληρωθῶσιν αἱ γραφαί."
+    },
+    {
+      "ref": "Matthew 26:55",
+      "negator": "οὐκ",
+      "clause_text": "⸀ἡμέραν ⸂ἐν τῷ ἱερῷ ἐκαθεζόμην διδάσκων⸃ καὶ οὐκ ἐκρατήσατέ με."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 14:44",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 26:48",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 2:25",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 3:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Thessalonians 2:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 24:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 4:14",
+      "reason": "occurs near Ἰησοῦς"
+    },
+    {
+      "ref": "John 20:23",
+      "reason": "occurs near ἀφίημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

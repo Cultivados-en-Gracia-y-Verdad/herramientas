@@ -1,0 +1,116 @@
+{
+  "lemma": "καταγελάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "κατεγέλων",
+      "count": 3
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "imperfect": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:53",
+      "form": "κατεγέλων",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 53,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῦ, εἰδότες ὅτι ἀπέθανεν."
+    },
+    {
+      "ref": "Mark 5:40",
+      "form": "κατεγέλων",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 40,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῦ. ⸀αὐτὸς δὲ ἐκβαλὼν πάντας παραλαμβάνει"
+    },
+    {
+      "ref": "Matthew 9:24",
+      "form": "κατεγέλων",
+      "morph": "V-I-A-I-3P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 24,
+      "left_context": "ἀπέθανεν τὸ κοράσιον ἀλλὰ καθεύδει· καὶ",
+      "right_context": "αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἶδα",
+      "display": "sabidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulsado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοράσιον",
+      "display": "muchacha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθεύδω",
+      "display": "dorme",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:53",
+      "reason": "occurs near οἶδα, ἀποθνῄσκω"
+    },
+    {
+      "ref": "Mark 5:40",
+      "reason": "occurs near ἐκβάλλω"
+    },
+    {
+      "ref": "Matthew 9:24",
+      "reason": "occurs near καθεύδω, κοράσιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

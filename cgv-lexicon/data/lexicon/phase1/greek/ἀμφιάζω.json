@@ -1,0 +1,98 @@
+{
+  "lemma": "ἀμφιάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἀμφιέζει,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:28",
+      "form": "⸀ἀμφιέζει,",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 28,
+      "left_context": "εἰς κλίβανον βαλλόμενον ὁ θεὸς οὕτως",
+      "right_context": "πόσῳ μᾶλλον ὑμᾶς, ὀλιγόπιστοι."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κλίβανος",
+      "display": "horno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόσος",
+      "display": "cuánto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλιγόπιστος",
+      "display": "poca·fe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:28",
+      "reason": "occurs near βάλλω, θεός, κλίβανος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

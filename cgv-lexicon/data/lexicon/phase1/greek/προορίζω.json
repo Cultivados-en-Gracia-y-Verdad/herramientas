@@ -1,0 +1,239 @@
+{
+  "lemma": "προορίζω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "προώρισεν",
+      "count": 3
+    },
+    {
+      "form": "προορίσας",
+      "count": 1
+    },
+    {
+      "form": "προορισθέντες",
+      "count": 1
+    },
+    {
+      "form": "προώρισεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 6
+    },
+    "voices": {
+      "active": 5,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 2:7",
+      "form": "προώρισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "σοφίαν⸃ ἐν μυστηρίῳ, τὴν ἀποκεκρυμμένην, ἣν",
+      "right_context": "ὁ θεὸς πρὸ τῶν αἰώνων εἰς"
+    },
+    {
+      "ref": "Ephesians 1:5",
+      "form": "προορίσας",
+      "morph": "V-A-A-P",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "",
+      "right_context": "ἡμᾶς εἰς υἱοθεσίαν διὰ Ἰησοῦ Χριστοῦ"
+    },
+    {
+      "ref": "Ephesians 1:11",
+      "form": "προορισθέντες",
+      "morph": "V-A-P-P",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ἐν ᾧ καὶ ἐκληρώθημεν",
+      "right_context": "κατὰ πρόθεσιν τοῦ τὰ πάντα ἐνεργοῦντος"
+    },
+    {
+      "ref": "Acts 4:28",
+      "form": "προώρισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 28,
+      "left_context": "ἡ χείρ σου καὶ ἡ ⸀βουλὴ",
+      "right_context": "γενέσθαι."
+    },
+    {
+      "ref": "Romans 8:29",
+      "form": "προώρισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 29,
+      "left_context": "ὅτι οὓς προέγνω, καὶ",
+      "right_context": "συμμόρφους τῆς εἰκόνος τοῦ υἱοῦ αὐτοῦ,"
+    },
+    {
+      "ref": "Romans 8:30",
+      "form": "προώρισεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 30,
+      "left_context": "οὓς δὲ",
+      "right_context": "τούτους καὶ ἐκάλεσεν· καὶ οὓς ἐκάλεσεν,"
+    }
+  ],
+  "books": {
+    "Ephesians": 2,
+    "Romans": 2,
+    "1 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μυστήριον",
+      "display": "misterio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκρύπτω",
+      "display": "ocultada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "de·siglos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱοθεσία",
+      "display": "adopción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κληρόω",
+      "display": "fueron asignado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόθεσις",
+      "display": "proposición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βουλή",
+      "display": "consejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προγινώσκω",
+      "display": "conocer·de·antemano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύμμορφος",
+      "display": "conformes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰκών",
+      "display": "de·imagen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "de·hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 1:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Ephesians 1:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 8:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 8:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 2:7",
+      "reason": "occurs near αἰών, θεός, μυστήριον"
+    },
+    {
+      "ref": "Acts 4:28",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

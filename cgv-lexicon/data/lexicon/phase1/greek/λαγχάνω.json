@@ -1,0 +1,211 @@
+{
+  "lemma": "λαγχάνω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "λαχοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "ἔλαχεν",
+      "count": 1
+    },
+    {
+      "form": "λάχωμεν",
+      "count": 1
+    },
+    {
+      "form": "ἔλαχε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:1",
+      "form": "λαχοῦσιν",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 1,
+      "left_context": "ἀπόστολος Ἰησοῦ Χριστοῦ τοῖς ἰσότιμον ἡμῖν",
+      "right_context": "πίστιν ἐν δικαιοσύνῃ τοῦ θεοῦ ἡμῶν"
+    },
+    {
+      "ref": "Acts 1:17",
+      "form": "ἔλαχεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 17,
+      "left_context": "ὅτι κατηριθμημένος ἦν ⸀ἐν ἡμῖν καὶ",
+      "right_context": "τὸν κλῆρον τῆς διακονίας ταύτης.—"
+    },
+    {
+      "ref": "John 19:24",
+      "form": "λάχωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 24,
+      "left_context": "πρὸς ἀλλήλους· Μὴ σχίσωμεν αὐτόν, ἀλλὰ",
+      "right_context": "περὶ αὐτοῦ τίνος ἔσται· ἵνα ἡ"
+    },
+    {
+      "ref": "Luke 1:9",
+      "form": "ἔλαχε",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "κατὰ τὸ ἔθος τῆς ἱερατείας",
+      "right_context": "τοῦ θυμιᾶσαι εἰσελθὼν εἰς τὸν ναὸν"
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "Acts": 1,
+    "John": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσότιμος",
+      "display": "de·igual·valor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταριθμέω",
+      "display": "contado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλῆρος",
+      "display": "suerte,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονία",
+      "display": "de·servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σχίζω",
+      "display": "rasgemos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθος",
+      "display": "costumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερατεία",
+      "display": "de·sacerdocio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυμιάω",
+      "display": "quemar·incienso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 19:24",
+      "negator": "Μὴ",
+      "clause_text": "εἶπαν οὖν πρὸς ἀλλήλους· Μὴ σχίσωμεν αὐτόν, ἀλλὰ λάχωμεν περὶ αὐτοῦ τίνος ἔσται· ἵνα ἡ γραφὴ πληρωθῇ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:1",
+      "reason": "occurs near Χριστός, δικαιοσύνη, πίστις"
+    },
+    {
+      "ref": "Acts 1:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 19:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 1:9",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,224 @@
+{
+  "lemma": "ἡσυχάζω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἡσύχασαν",
+      "count": 2
+    },
+    {
+      "form": "ἡσυχάζειν",
+      "count": 1
+    },
+    {
+      "form": "ἡσυχάσαμεν",
+      "count": 1
+    },
+    {
+      "form": "ἡσύχασαν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 4:11",
+      "form": "ἡσυχάζειν",
+      "morph": "V-P-A-N",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "καὶ φιλοτιμεῖσθαι",
+      "right_context": "καὶ πράσσειν τὰ ἴδια καὶ ἐργάζεσθαι"
+    },
+    {
+      "ref": "Acts 11:18",
+      "form": "ἡσύχασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 18,
+      "left_context": "ἀκούσαντες δὲ ταῦτα",
+      "right_context": "καὶ ⸀ἐδόξασαν τὸν θεὸν λέγοντες· ⸀Ἄρα"
+    },
+    {
+      "ref": "Acts 21:14",
+      "form": "ἡσυχάσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 14,
+      "left_context": "μὴ πειθομένου δὲ αὐτοῦ",
+      "right_context": "εἰπόντες· ⸂Τοῦ κυρίου τὸ θέλημα⸃ ⸀γινέσθω."
+    },
+    {
+      "ref": "Luke 14:4",
+      "form": "ἡσύχασαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 4,
+      "left_context": "οἱ δὲ",
+      "right_context": "καὶ ἐπιλαβόμενος ἰάσατο αὐτὸν καὶ ἀπέλυσεν."
+    },
+    {
+      "ref": "Luke 23:56",
+      "form": "ἡσύχασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 56,
+      "left_context": "καὶ μύρα. Καὶ τὸ μὲν σάββατον",
+      "right_context": "κατὰ τὴν ἐντολήν,"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Luke": 2,
+    "1 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φιλοτιμέομαι",
+      "display": "procurar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πράσσω",
+      "display": "hacer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "persuadido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιλαμβάνομαι",
+      "display": "asido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰάομαι",
+      "display": "sanó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μύρον",
+      "display": "perfumes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "sábado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "mandamiento",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 21:14",
+      "negator": "μὴ",
+      "clause_text": "μὴ πειθομένου δὲ αὐτοῦ ἡσυχάσαμεν εἰπόντες· ⸂Τοῦ κυρίου τὸ θέλημα⸃ ⸀γινέσθω."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 11:18",
+      "reason": "occurs near δοξάζω, ἀκούω"
+    },
+    {
+      "ref": "Acts 21:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 14:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 23:56",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Thessalonians 4:11",
+      "reason": "occurs near πράσσω, φιλοτιμέομαι, ἴδιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

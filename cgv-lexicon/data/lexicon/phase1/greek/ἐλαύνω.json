@@ -1,0 +1,263 @@
+{
+  "lemma": "ἐλαύνω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐλαυνόμεναι,",
+      "count": 1
+    },
+    {
+      "form": "ἐληλακότες",
+      "count": 1
+    },
+    {
+      "form": "ἠλαύνετο",
+      "count": 1
+    },
+    {
+      "form": "ἐλαύνειν,",
+      "count": 1
+    },
+    {
+      "form": "ἐλαυνόμενα,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 3,
+      "perfect": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:17",
+      "form": "ἐλαυνόμεναι,",
+      "morph": "V-P-P-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "πηγαὶ ἄνυδροι ⸂καὶ ὁμίχλαι⸃ ὑπὸ λαίλαπος",
+      "right_context": "οἷς ὁ ζόφος τοῦ ⸀σκότους τετήρηται."
+    },
+    {
+      "ref": "John 6:19",
+      "form": "ἐληλακότες",
+      "morph": "V-X-A-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 19,
+      "left_context": "",
+      "right_context": "οὖν ὡς σταδίους εἴκοσι πέντε ἢ"
+    },
+    {
+      "ref": "Luke 8:29",
+      "form": "ἠλαύνετο",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 29,
+      "left_context": "πέδαις φυλασσόμενος, καὶ διαρρήσσων τὰ δεσμὰ",
+      "right_context": "⸀ὑπὸ τοῦ ⸀δαιμονίου εἰς τὰς ἐρήμους."
+    },
+    {
+      "ref": "Mark 6:48",
+      "form": "ἐλαύνειν,",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 48,
+      "left_context": "καὶ ⸀ἰδὼν αὐτοὺς βασανιζομένους ἐν τῷ",
+      "right_context": "ἦν γὰρ ὁ ἄνεμος ἐναντίος ⸀αὐτοῖς,"
+    },
+    {
+      "ref": "James 3:4",
+      "form": "ἐλαυνόμενα,",
+      "morph": "V-P-P-P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "τηλικαῦτα ὄντα καὶ ὑπὸ ⸂ἀνέμων σκληρῶν⸃",
+      "right_context": "μετάγεται ὑπὸ ἐλαχίστου πηδαλίου ὅπου ⸂ἡ"
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "John": 1,
+    "Luke": 1,
+    "Mark": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνεμος",
+      "display": "viento",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνυδρος",
+      "display": "sin·agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμίχλη",
+      "display": "nieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαῖλαψ",
+      "display": "de·tempestad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζόφος",
+      "display": "tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκότος",
+      "display": "de·tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στάδιος",
+      "display": "estadios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴκοσι(ν)",
+      "display": "veintes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέντε",
+      "display": "cinco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guardado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαρρήγνυμι",
+      "display": "rasgando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσμόν",
+      "display": "cadenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "de·demonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασανίζω",
+      "display": "atormentados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐναντίος",
+      "display": "contrario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκληρός",
+      "display": "de·duros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετάγω",
+      "display": "es dirigido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλάχιστος",
+      "display": "de·mínimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πηδάλιον",
+      "display": "de·timón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:17",
+      "reason": "occurs near ζόφος, λαῖλαψ, ἄνυδρος"
+    },
+    {
+      "ref": "James 3:4",
+      "reason": "occurs near ἄνεμος"
+    },
+    {
+      "ref": "John 6:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 8:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 6:48",
+      "reason": "occurs near ἄνεμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

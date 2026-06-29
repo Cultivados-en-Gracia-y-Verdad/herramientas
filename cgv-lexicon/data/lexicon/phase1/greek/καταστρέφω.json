@@ -1,0 +1,101 @@
+{
+  "lemma": "καταστρέφω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κατέστρεψεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 11:15",
+      "form": "κατέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "τὰς καθέδρας τῶν πωλούντων τὰς περιστερὰς",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 21:12",
+      "form": "κατέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "ἱερῷ καὶ τὰς τραπέζας τῶν κολλυβιστῶν",
+      "right_context": "καὶ τὰς καθέδρας τῶν πωλούντων τὰς"
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καθέδρα",
+      "display": "sillas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πωλέω",
+      "display": "vendiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιστερά",
+      "display": "palomas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τράπεζα",
+      "display": "mesas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολλυβιστής",
+      "display": "de·cambistas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 11:15",
+      "reason": "occurs near καθέδρα, περιστερά, πωλέω"
+    },
+    {
+      "ref": "Matthew 21:12",
+      "reason": "occurs near καθέδρα, κολλυβιστής, πωλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

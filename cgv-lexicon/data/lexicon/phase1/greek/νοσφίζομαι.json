@@ -1,0 +1,150 @@
+{
+  "lemma": "νοσφίζομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐνοσφίσατο",
+      "count": 1
+    },
+    {
+      "form": "⸀νοσφίσασθαι",
+      "count": 1
+    },
+    {
+      "form": "νοσφιζομένους,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:2",
+      "form": "ἐνοσφίσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "καὶ",
+      "right_context": "ἀπὸ τῆς τιμῆς, συνειδυίης καὶ τῆς"
+    },
+    {
+      "ref": "Acts 5:3",
+      "form": "⸀νοσφίσασθαι",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "σε τὸ πνεῦμα τὸ ἅγιον καὶ",
+      "right_context": "ἀπὸ τῆς τιμῆς τοῦ χωρίου;"
+    },
+    {
+      "ref": "Titus 2:10",
+      "form": "νοσφιζομένους,",
+      "morph": "V-P-M-P",
+      "book": "Titus",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "μὴ",
+      "right_context": "ἀλλὰ ⸂πᾶσαν πίστιν⸃ ἐνδεικνυμένους ἀγαθήν, ἵνα"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τιμή",
+      "display": "de·honora",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σύνοιδα",
+      "display": "sabida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίον",
+      "display": "de·campo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδείκνυμι",
+      "display": "demostrando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "buena",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Titus 2:10",
+      "negator": "μὴ",
+      "clause_text": "μὴ νοσφιζομένους, ἀλλὰ ⸂πᾶσαν πίστιν⸃ ἐνδεικνυμένους ἀγαθήν, ἵνα τὴν διδασκαλίαν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 5:2",
+      "reason": "occurs near σύνοιδα, τιμή"
+    },
+    {
+      "ref": "Acts 5:3",
+      "reason": "occurs near πνεῦμα, τιμή, χωρίον"
+    },
+    {
+      "ref": "Titus 2:10",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

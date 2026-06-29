@@ -1,0 +1,256 @@
+{
+  "lemma": "προστάσσω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "προσέταξεν",
+      "count": 5
+    },
+    {
+      "form": "προστεταγμένα",
+      "count": 1
+    },
+    {
+      "form": "προστεταγμένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 5
+    },
+    "tenses": {
+      "perfect": 2,
+      "aorist": 5
+    },
+    "voices": {
+      "passive": 2,
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:33",
+      "form": "προστεταγμένα",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 33,
+      "left_context": "τοῦ θεοῦ πάρεσμεν ἀκοῦσαι πάντα τὰ",
+      "right_context": "σοι ὑπὸ τοῦ ⸀κυρίου."
+    },
+    {
+      "ref": "Acts 10:48",
+      "form": "προσέταξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 48,
+      "left_context": "",
+      "right_context": "⸀δὲ αὐτοὺς ⸂ἐν τῷ ὀνόματι Ἰησοῦ"
+    },
+    {
+      "ref": "Acts 17:26",
+      "form": "προστεταγμένους",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 26,
+      "left_context": "ἐπὶ ⸂παντὸς προσώπου⸃ τῆς γῆς, ὁρίσας",
+      "right_context": "καιροὺς καὶ τὰς ὁροθεσίας τῆς κατοικίας"
+    },
+    {
+      "ref": "Luke 5:14",
+      "form": "προσέταξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "προσένεγκε περὶ τοῦ καθαρισμοῦ σου καθὼς",
+      "right_context": "Μωϋσῆς εἰς μαρτύριον αὐτοῖς."
+    },
+    {
+      "ref": "Mark 1:44",
+      "form": "προσέταξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 44,
+      "left_context": "προσένεγκε περὶ τοῦ καθαρισμοῦ σου ἃ",
+      "right_context": "Μωϋσῆς εἰς μαρτύριον αὐτοῖς."
+    },
+    {
+      "ref": "Matthew 1:24",
+      "form": "προσέταξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "Ἰωσὴφ ἀπὸ τοῦ ὕπνου ἐποίησεν ὡς",
+      "right_context": "αὐτῷ ὁ ἄγγελος κυρίου καὶ παρέλαβεν"
+    },
+    {
+      "ref": "Matthew 8:4",
+      "form": "προσέταξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 4,
+      "left_context": "ἱερεῖ, καὶ προσένεγκον τὸ δῶρον ὃ",
+      "right_context": "Μωϋσῆς εἰς μαρτύριον αὐτοῖς."
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Matthew": 2,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτύριον",
+      "display": "testimonio",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καθαρισμός",
+      "display": "de·purificación",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάρειμι",
+      "display": "estar·presente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "de·rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁρίζω",
+      "display": "determinado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁροθεσία",
+      "display": "límites",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕπνος",
+      "display": "de·sueño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "ofrece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δῶρον",
+      "display": "don",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:33",
+      "reason": "occurs near θεός, κύριος"
+    },
+    {
+      "ref": "Acts 10:48",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 17:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 1:24",
+      "reason": "occurs near κύριος"
+    },
+    {
+      "ref": "Matthew 8:4",
+      "reason": "occurs near Μωϋσῆς, μαρτύριον"
+    },
+    {
+      "ref": "Luke 5:14",
+      "reason": "occurs near Μωϋσῆς, καθαρισμός, μαρτύριον"
+    },
+    {
+      "ref": "Mark 1:44",
+      "reason": "occurs near Μωϋσῆς, καθαρισμός, μαρτύριον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

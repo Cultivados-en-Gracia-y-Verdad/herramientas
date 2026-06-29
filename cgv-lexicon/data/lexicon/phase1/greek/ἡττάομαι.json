@@ -1,0 +1,155 @@
+{
+  "lemma": "ἡττάομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀ἡσσώθητε",
+      "count": 1
+    },
+    {
+      "form": "ἥττηται,",
+      "count": 1
+    },
+    {
+      "form": "ἡττῶνται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 12:13",
+      "form": "⸀ἡσσώθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "τί γάρ ἐστιν ὃ",
+      "right_context": "ὑπὲρ τὰς λοιπὰς ἐκκλησίας, εἰ μὴ"
+    },
+    {
+      "ref": "2 Peter 2:19",
+      "form": "ἥττηται,",
+      "morph": "V-X-M-I-3S",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "ὑπάρχοντες τῆς φθορᾶς· ᾧ γάρ τις",
+      "right_context": "τούτῳ ⸀καὶ δεδούλωται."
+    },
+    {
+      "ref": "2 Peter 2:20",
+      "form": "ἡττῶνται,",
+      "morph": "V-X-M-I-3P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "Ἰησοῦ Χριστοῦ τούτοις δὲ πάλιν ἐμπλακέντες",
+      "right_context": "γέγονεν αὐτοῖς τὰ ἔσχατα χείρονα τῶν"
+    }
+  ],
+  "books": {
+    "2 Peter": 2,
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθορά",
+      "display": "de·corrupción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δουλόω",
+      "display": "ha esclavizado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπλέκομαι",
+      "display": "enredarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔσχατος",
+      "display": "últimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρων",
+      "display": "peores",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:19",
+      "reason": "occurs near δουλόω, φθορά"
+    },
+    {
+      "ref": "2 Peter 2:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 12:13",
+      "reason": "occurs near λοιπός, ἐκκλησία, ὑπέρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

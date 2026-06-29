@@ -1,0 +1,719 @@
+{
+  "lemma": "φυλάσσω",
+  "language": "greek",
+  "total_occurrences": 31,
+  "forms": [
+    {
+      "form": "φυλάσσεσθε",
+      "count": 2
+    },
+    {
+      "form": "φυλάξει",
+      "count": 2
+    },
+    {
+      "form": "φυλάξαι",
+      "count": 2
+    },
+    {
+      "form": "φυλάσσειν",
+      "count": 2
+    },
+    {
+      "form": "φυλάσσεσθαι",
+      "count": 2
+    },
+    {
+      "form": "φυλάξατε",
+      "count": 1
+    },
+    {
+      "form": "φυλάξῃς",
+      "count": 1
+    },
+    {
+      "form": "φύλαξον,",
+      "count": 1
+    },
+    {
+      "form": "ἐφύλαξεν,",
+      "count": 1
+    },
+    {
+      "form": "φύλαξον",
+      "count": 1
+    },
+    {
+      "form": "φυλάσσου,",
+      "count": 1
+    },
+    {
+      "form": "φυλάσσουσιν,",
+      "count": 1
+    },
+    {
+      "form": "ἐφυλάξατε.",
+      "count": 1
+    },
+    {
+      "form": "⸂φυλάσσων",
+      "count": 1
+    },
+    {
+      "form": "φυλάσσων",
+      "count": 1
+    },
+    {
+      "form": "φυλάσσοντι",
+      "count": 1
+    },
+    {
+      "form": "⸀φυλάξῃ,",
+      "count": 1
+    },
+    {
+      "form": "ἐφύλαξα,",
+      "count": 1
+    },
+    {
+      "form": "φυλάσσοντες",
+      "count": 1
+    },
+    {
+      "form": "φυλασσόμενος,",
+      "count": 1
+    },
+    {
+      "form": "φυλάσσῃ",
+      "count": 1
+    },
+    {
+      "form": "⸀φυλάσσοντες.",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐφύλαξα",
+      "count": 1
+    },
+    {
+      "form": "ἐφυλαξάμην",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐφύλαξα·",
+      "count": 1
+    },
+    {
+      "form": "φυλάσσῃ,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 6,
+      "subjunctive": 4,
+      "indicative": 9,
+      "infinitive": 6,
+      "participle": 6
+    },
+    "tenses": {
+      "aorist": 13,
+      "present": 16,
+      "future": 2
+    },
+    "voices": {
+      "active": 24,
+      "middle": 5,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 5:21",
+      "form": "φυλάξατε",
+      "morph": "V-A-A-D-2P",
+      "book": "1 John",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "Τεκνία,",
+      "right_context": "ἑαυτὰ ἀπὸ τῶν ⸀εἰδώλων."
+    },
+    {
+      "ref": "1 Timothy 5:21",
+      "form": "φυλάξῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "καὶ τῶν ἐκλεκτῶν ἀγγέλων, ἵνα ταῦτα",
+      "right_context": "χωρὶς προκρίματος, μηδὲν ποιῶν κατὰ πρόσκλισιν."
+    },
+    {
+      "ref": "1 Timothy 6:20",
+      "form": "φύλαξον,",
+      "morph": "V-A-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 20,
+      "left_context": "Ὦ Τιμόθεε, τὴν παραθήκην",
+      "right_context": "ἐκτρεπόμενος τὰς βεβήλους κενοφωνίας καὶ ἀντιθέσεις"
+    },
+    {
+      "ref": "2 Peter 2:5",
+      "form": "ἐφύλαξεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "ἐφείσατο, ἀλλὰ ὄγδοον Νῶε δικαιοσύνης κήρυκα",
+      "right_context": "κατακλυσμὸν κόσμῳ ἀσεβῶν ἐπάξας,"
+    },
+    {
+      "ref": "2 Peter 3:17",
+      "form": "φυλάσσεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "ὑμεῖς οὖν, ἀγαπητοί, προγινώσκοντες",
+      "right_context": "ἵνα μὴ τῇ τῶν ἀθέσμων πλάνῃ"
+    },
+    {
+      "ref": "2 Thessalonians 3:3",
+      "form": "φυλάξει",
+      "morph": "V-F-A-I-3S",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "ὁ κύριος, ὃς στηρίξει ὑμᾶς καὶ",
+      "right_context": "ἀπὸ τοῦ πονηροῦ."
+    },
+    {
+      "ref": "2 Timothy 1:12",
+      "form": "φυλάξαι",
+      "morph": "V-A-A-N",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "ὅτι δυνατός ἐστιν τὴν παραθήκην μου",
+      "right_context": "εἰς ἐκείνην τὴν ἡμέραν."
+    },
+    {
+      "ref": "2 Timothy 1:14",
+      "form": "φύλαξον",
+      "morph": "V-A-A-D-2S",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "τὴν καλὴν παραθήκην",
+      "right_context": "διὰ πνεύματος ἁγίου τοῦ ἐνοικοῦντος ἐν"
+    },
+    {
+      "ref": "2 Timothy 4:15",
+      "form": "φυλάσσου,",
+      "morph": "V-P-M-D-2S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "ὃν καὶ σὺ",
+      "right_context": "λίαν γὰρ ⸀ἀντέστη τοῖς ἡμετέροις λόγοις."
+    },
+    {
+      "ref": "Galatians 6:13",
+      "form": "φυλάσσουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "οὐδὲ γὰρ οἱ ⸀περιτεμνόμενοι αὐτοὶ νόμον",
+      "right_context": "ἀλλὰ θέλουσιν ὑμᾶς περιτέμνεσθαι ἵνα ἐν"
+    },
+    {
+      "ref": "Acts 7:53",
+      "form": "ἐφυλάξατε.",
+      "morph": "V-A-A-I-2P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 53,
+      "left_context": "νόμον εἰς διαταγὰς ἀγγέλων, καὶ οὐκ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 12:4",
+      "form": "φυλάσσειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "εἰς φυλακήν, παραδοὺς τέσσαρσιν τετραδίοις στρατιωτῶν",
+      "right_context": "αὐτόν, βουλόμενος μετὰ τὸ πάσχα ἀναγαγεῖν"
+    },
+    {
+      "ref": "Acts 16:4",
+      "form": "φυλάσσειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 4,
+      "left_context": "δὲ διεπορεύοντο τὰς πόλεις, ⸀παρεδίδοσαν αὐτοῖς",
+      "right_context": "τὰ δόγματα τὰ κεκριμένα ὑπὸ τῶν"
+    },
+    {
+      "ref": "Acts 21:24",
+      "form": "⸂φυλάσσων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 24,
+      "left_context": "οὐδέν ἐστιν, ἀλλὰ στοιχεῖς καὶ αὐτὸς",
+      "right_context": "τὸν νόμον⸃."
+    },
+    {
+      "ref": "Acts 21:25",
+      "form": "φυλάσσεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 25,
+      "left_context": "τῶν πεπιστευκότων ἐθνῶν ἡμεῖς ⸀ἀπεστείλαμεν ⸀κρίναντες",
+      "right_context": "αὐτοὺς τό τε εἰδωλόθυτον ⸀καὶ αἷμα"
+    },
+    {
+      "ref": "Acts 22:20",
+      "form": "φυλάσσων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 20,
+      "left_context": "αὐτὸς ἤμην ἐφεστὼς καὶ συνευδοκῶν ⸀καὶ",
+      "right_context": "τὰ ἱμάτια τῶν ἀναιρούντων αὐτόν."
+    },
+    {
+      "ref": "Acts 23:35",
+      "form": "φυλάσσεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 35,
+      "left_context": "⸀κελεύσας ἐν τῷ πραιτωρίῳ ⸀τοῦ Ἡρῴδου",
+      "right_context": "⸀αὐτόν."
+    },
+    {
+      "ref": "Acts 28:16",
+      "form": "φυλάσσοντι",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 16,
+      "left_context": "Παύλῳ⸃ μένειν καθ’ ἑαυτὸν σὺν τῷ",
+      "right_context": "αὐτὸν στρατιώτῃ."
+    },
+    {
+      "ref": "John 12:25",
+      "form": "φυλάξει",
+      "morph": "V-F-A-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 25,
+      "left_context": "τῷ κόσμῳ τούτῳ εἰς ζωὴν αἰώνιον",
+      "right_context": "αὐτήν."
+    },
+    {
+      "ref": "John 12:47",
+      "form": "⸀φυλάξῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 47,
+      "left_context": "μου ἀκούσῃ τῶν ῥημάτων καὶ μὴ",
+      "right_context": "ἐγὼ οὐ κρίνω αὐτόν, οὐ γὰρ"
+    },
+    {
+      "ref": "John 17:12",
+      "form": "ἐφύλαξα,",
+      "morph": "V-A-A-I-1S",
+      "book": "John",
+      "chapter": 17,
+      "verse": 12,
+      "left_context": "ὀνόματί σου ⸀ᾧ δέδωκάς μοι, ⸀καὶ",
+      "right_context": "καὶ οὐδεὶς ἐξ αὐτῶν ἀπώλετο εἰ"
+    },
+    {
+      "ref": "Jude 1:24",
+      "form": "φυλάξαι",
+      "morph": "V-A-A-N",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "Τῷ δὲ δυναμένῳ",
+      "right_context": "⸀ὑμᾶς ἀπταίστους καὶ στῆσαι κατενώπιον τῆς"
+    },
+    {
+      "ref": "Luke 2:8",
+      "form": "φυλάσσοντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "τῇ χώρᾳ τῇ αὐτῇ ἀγραυλοῦντες καὶ",
+      "right_context": "φυλακὰς τῆς νυκτὸς ἐπὶ τὴν ποίμνην"
+    },
+    {
+      "ref": "Luke 8:29",
+      "form": "φυλασσόμενος,",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 29,
+      "left_context": "αὐτόν, καὶ ⸀ἐδεσμεύετο ἁλύσεσιν καὶ πέδαις",
+      "right_context": "καὶ διαρρήσσων τὰ δεσμὰ ἠλαύνετο ⸀ὑπὸ"
+    },
+    {
+      "ref": "Luke 11:21",
+      "form": "φυλάσσῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 21,
+      "left_context": "ὅταν ὁ ἰσχυρὸς καθωπλισμένος",
+      "right_context": "τὴν ἑαυτοῦ αὐλήν, ἐν εἰρήνῃ ἐστὶν"
+    },
+    {
+      "ref": "Luke 11:28",
+      "form": "⸀φυλάσσοντες.",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 28,
+      "left_context": "ἀκούοντες τὸν λόγον τοῦ θεοῦ καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 12:15",
+      "form": "φυλάσσεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "εἶπεν δὲ πρὸς αὐτούς· Ὁρᾶτε καὶ",
+      "right_context": "ἀπὸ ⸀πάσης πλεονεξίας, ὅτι οὐκ ἐν"
+    },
+    {
+      "ref": "Luke 18:21",
+      "form": "⸀ἐφύλαξα",
+      "morph": "V-A-A-I-1S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 21,
+      "left_context": "ὁ δὲ εἶπεν· Ταῦτα πάντα",
+      "right_context": "ἐκ νεότητος ⸀μου."
+    },
+    {
+      "ref": "Mark 10:20",
+      "form": "ἐφυλαξάμην",
+      "morph": "V-A-M-I-1S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 20,
+      "left_context": "δὲ ⸀ἔφη αὐτῷ· Διδάσκαλε, ταῦτα πάντα",
+      "right_context": "ἐκ νεότητός μου."
+    },
+    {
+      "ref": "Matthew 19:20",
+      "form": "⸀ἐφύλαξα·",
+      "morph": "V-A-A-I-1S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 20,
+      "left_context": "λέγει αὐτῷ ὁ νεανίσκος· ⸂Πάντα ταῦτα⸃",
+      "right_context": "τί ἔτι ὑστερῶ;"
+    },
+    {
+      "ref": "Romans 2:26",
+      "form": "φυλάσσῃ,",
+      "morph": "V-P-A-S-3S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 26,
+      "left_context": "ἡ ἀκροβυστία τὰ δικαιώματα τοῦ νόμου",
+      "right_context": "⸀οὐχ ἡ ἀκροβυστία αὐτοῦ εἰς περιτομὴν"
+    }
+  ],
+  "books": {
+    "Acts": 8,
+    "Luke": 6,
+    "2 Timothy": 3,
+    "John": 3,
+    "1 Timothy": 2,
+    "2 Peter": 2,
+    "1 John": 1,
+    "2 Thessalonians": 1,
+    "Galatians": 1,
+    "Jude": 1,
+    "Mark": 1,
+    "Matthew": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "παραθήκη",
+      "display": "depósito",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "juzgados",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "de·ángeles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιτέμνω",
+      "display": "circuncidados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακή",
+      "display": "cárcel",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στρατιώτης",
+      "display": "de·soldados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νεότης",
+      "display": "de·juventud",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκροβυστία",
+      "display": "incircuncisión",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τεκνίον",
+      "display": "hijitos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴδωλον",
+      "display": "de·ídolos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλεκτός",
+      "display": "de·elegidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόκριμα",
+      "display": "de·prejuicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὦ",
+      "display": "oh",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τιμόθεος",
+      "display": "Timoteo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτρέπομαι",
+      "display": "desviarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βέβηλος",
+      "display": "profanas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κενοφωνία",
+      "display": "vana·palabrería",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄγδοος",
+      "display": "octavo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Νῶε",
+      "display": "Noé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 John 5:21",
+      "form": "φυλάξατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Τεκνία, φυλάξατε ἑαυτὰ ἀπὸ τῶν ⸀εἰδώλων."
+    },
+    {
+      "ref": "1 Timothy 6:20",
+      "form": "φύλαξον,",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "Ὦ Τιμόθεε, τὴν παραθήκην φύλαξον, ἐκτρεπόμενος τὰς βεβήλους κενοφωνίας καὶ ἀντιθέσεις τῆς ψευδωνύμου"
+    },
+    {
+      "ref": "2 Peter 3:17",
+      "form": "φυλάσσεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "ὑμεῖς οὖν, ἀγαπητοί, προγινώσκοντες φυλάσσεσθε ἵνα μὴ τῇ τῶν ἀθέσμων πλάνῃ συναπαχθέντες ἐκπέσητε"
+    },
+    {
+      "ref": "2 Timothy 1:14",
+      "form": "φύλαξον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "τὴν καλὴν παραθήκην φύλαξον διὰ πνεύματος ἁγίου τοῦ ἐνοικοῦντος ἐν ἡμῖν."
+    },
+    {
+      "ref": "2 Timothy 4:15",
+      "form": "φυλάσσου,",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "ὃν καὶ σὺ φυλάσσου, λίαν γὰρ ⸀ἀντέστη τοῖς ἡμετέροις λόγοις."
+    },
+    {
+      "ref": "John 12:47",
+      "form": "⸀φυλάξῃ,",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἐάν τίς μου ἀκούσῃ τῶν ῥημάτων καὶ μὴ ⸀φυλάξῃ, ἐγὼ οὐ κρίνω αὐτόν, οὐ γὰρ ἦλθον ἵνα",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 12:15",
+      "form": "φυλάσσεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "εἶπεν δὲ πρὸς αὐτούς· Ὁρᾶτε καὶ φυλάσσεσθε ἀπὸ ⸀πάσης πλεονεξίας, ὅτι οὐκ ἐν τῷ περισσεύειν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 3:17",
+      "negator": "μὴ",
+      "clause_text": "ὑμεῖς οὖν, ἀγαπητοί, προγινώσκοντες φυλάσσεσθε ἵνα μὴ τῇ τῶν ἀθέσμων πλάνῃ συναπαχθέντες ἐκπέσητε"
+    },
+    {
+      "ref": "Acts 7:53",
+      "negator": "οὐκ",
+      "clause_text": "ἐλάβετε τὸν νόμον εἰς διαταγὰς ἀγγέλων, καὶ οὐκ ἐφυλάξατε."
+    },
+    {
+      "ref": "John 12:47",
+      "negator": "μὴ",
+      "clause_text": "ἐάν τίς μου ἀκούσῃ τῶν ῥημάτων καὶ μὴ ⸀φυλάξῃ, ἐγὼ οὐ κρίνω αὐτόν, οὐ γὰρ ἦλθον ἵνα"
+    },
+    {
+      "ref": "Romans 2:26",
+      "negator": "⸀οὐχ",
+      "clause_text": "ἐὰν οὖν ἡ ἀκροβυστία τὰ δικαιώματα τοῦ νόμου φυλάσσῃ, ⸀οὐχ ἡ ἀκροβυστία αὐτοῦ εἰς περιτομὴν λογισθήσεται;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 1:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 4:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 6:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Peter 3:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 John 5:21",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 12:4",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "John 12:25",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

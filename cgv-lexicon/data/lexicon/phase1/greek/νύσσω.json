@@ -1,0 +1,92 @@
+{
+  "lemma": "νύσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἔνυξεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 19:34",
+      "form": "ἔνυξεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 19,
+      "verse": 34,
+      "left_context": "τῶν στρατιωτῶν λόγχῃ αὐτοῦ τὴν πλευρὰν",
+      "right_context": "καὶ ⸂ἐξῆλθεν εὐθὺς⸃ αἷμα καὶ ὕδωρ."
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "στρατιώτης",
+      "display": "de·soldados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγχη",
+      "display": "lanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλευρά",
+      "display": "costado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 19:34",
+      "reason": "occurs near εὐθύς, λόγχη, πλευρά"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

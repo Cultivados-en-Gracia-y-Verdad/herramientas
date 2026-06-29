@@ -1,0 +1,199 @@
+{
+  "lemma": "ἐκμάσσω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐκμάξασα",
+      "count": 1
+    },
+    {
+      "form": "ἐξέμαξεν",
+      "count": 1
+    },
+    {
+      "form": "ἐκμάσσειν",
+      "count": 1
+    },
+    {
+      "form": "ἐξέμασσεν,",
+      "count": 1
+    },
+    {
+      "form": "ἐξέμαξεν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "John 11:2",
+      "form": "ἐκμάξασα",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 2,
+      "left_context": "ἡ ἀλείψασα τὸν κύριον μύρῳ καὶ",
+      "right_context": "τοὺς πόδας αὐτοῦ ταῖς θριξὶν αὐτῆς,"
+    },
+    {
+      "ref": "John 12:3",
+      "form": "ἐξέμαξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 3,
+      "left_context": "ἤλειψεν τοὺς πόδας τοῦ Ἰησοῦ καὶ",
+      "right_context": "ταῖς θριξὶν αὐτῆς τοὺς πόδας αὐτοῦ·"
+    },
+    {
+      "ref": "John 13:5",
+      "form": "ἐκμάσσειν",
+      "morph": "V-P-A-N",
+      "book": "John",
+      "chapter": 13,
+      "verse": 5,
+      "left_context": "νίπτειν τοὺς πόδας τῶν μαθητῶν καὶ",
+      "right_context": "τῷ λεντίῳ ᾧ ἦν διεζωσμένος."
+    },
+    {
+      "ref": "Luke 7:38",
+      "form": "ἐξέμασσεν,",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 38,
+      "left_context": "καὶ ταῖς θριξὶν τῆς κεφαλῆς αὐτῆς",
+      "right_context": "καὶ κατεφίλει τοὺς πόδας αὐτοῦ καὶ"
+    },
+    {
+      "ref": "Luke 7:44",
+      "form": "ἐξέμαξεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 44,
+      "left_context": "τοὺς πόδας καὶ ταῖς ⸀θριξὶν αὐτῆς",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "John": 3,
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "θρίξ",
+      "display": "cabellos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλείφω",
+      "display": "ungida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μύρον",
+      "display": "perfume",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λέντιον",
+      "display": "toalla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαζώννυμι",
+      "display": "ceñido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "de·cabeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταφιλέω",
+      "display": "besaba",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:2",
+      "reason": "occurs near θρίξ, κύριος, μύρον"
+    },
+    {
+      "ref": "John 12:3",
+      "reason": "occurs near θρίξ, πούς"
+    },
+    {
+      "ref": "John 13:5",
+      "reason": "occurs near πούς"
+    },
+    {
+      "ref": "Luke 7:38",
+      "reason": "occurs near θρίξ, πούς"
+    },
+    {
+      "ref": "Luke 7:44",
+      "reason": "occurs near θρίξ, πούς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

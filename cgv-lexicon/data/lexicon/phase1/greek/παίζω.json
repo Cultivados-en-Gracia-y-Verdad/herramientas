@@ -1,0 +1,74 @@
+{
+  "lemma": "παίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παίζειν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:7",
+      "form": "παίζειν.",
+      "morph": "V-P-A-N",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 7,
+      "left_context": "λαὸς φαγεῖν καὶ πεῖν, καὶ ἀνέστησαν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐσθίω",
+      "display": "comer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίνω",
+      "display": "beber",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantaron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 10:7",
+      "reason": "occurs near πίνω, ἀνίστημι, ἐσθίω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

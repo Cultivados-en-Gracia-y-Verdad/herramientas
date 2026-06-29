@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐμμαίνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐμμαινόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 26:11",
+      "form": "ἐμμαινόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 11,
+      "left_context": "τιμωρῶν αὐτοὺς ἠνάγκαζον βλασφημεῖν, περισσῶς τε",
+      "right_context": "αὐτοῖς ἐδίωκον ἕως καὶ εἰς τὰς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀναγκάζω",
+      "display": "obligaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημέω",
+      "display": "blasfemar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περισσῶς",
+      "display": "en·gran·manera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διώκω",
+      "display": "perseguía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:11",
+      "reason": "occurs near βλασφημέω, διώκω, περισσῶς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

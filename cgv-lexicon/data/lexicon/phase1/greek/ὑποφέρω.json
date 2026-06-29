@@ -1,0 +1,174 @@
+{
+  "lemma": "ὑποφέρω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ὑπενεγκεῖν.",
+      "count": 1
+    },
+    {
+      "form": "ὑποφέρει",
+      "count": 1
+    },
+    {
+      "form": "ὑπήνεγκα·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:13",
+      "form": "ὑπενεγκεῖν.",
+      "morph": "V-A-A-N",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 13,
+      "left_context": "πειρασμῷ καὶ τὴν ἔκβασιν τοῦ ⸀δύνασθαι",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Peter 2:19",
+      "form": "ὑποφέρει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "γὰρ χάρις εἰ διὰ συνείδησιν θεοῦ",
+      "right_context": "τις λύπας πάσχων ἀδίκως·"
+    },
+    {
+      "ref": "2 Timothy 3:11",
+      "form": "ὑπήνεγκα·",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "ἐν Ἰκονίῳ, ἐν Λύστροις, οἵους διωγμοὺς",
+      "right_context": "καὶ ἐκ πάντων με ἐρρύσατο ὁ"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "1 Peter": 1,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔκβασις",
+      "display": "salida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνείδησις",
+      "display": "conciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύπη",
+      "display": "tristezas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padeciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδίκως",
+      "display": "injustamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰκόνιον",
+      "display": "Iconio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λύστρα",
+      "display": "Listra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἷος",
+      "display": "cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διωγμός",
+      "display": "persecuciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥύομαι",
+      "display": "libró",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 10:13",
+      "reason": "occurs near δύναμαι, ἔκβασις"
+    },
+    {
+      "ref": "1 Peter 2:19",
+      "reason": "occurs near θεός, συνείδησις, χάρις"
+    },
+    {
+      "ref": "2 Timothy 3:11",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,357 @@
+{
+  "lemma": "βοηθέω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "βοήθησον",
+      "count": 2
+    },
+    {
+      "form": "βοήθει",
+      "count": 2
+    },
+    {
+      "form": "ἐβοήθησά",
+      "count": 1
+    },
+    {
+      "form": "ἐβοήθησεν",
+      "count": 1
+    },
+    {
+      "form": "βοηθῆσαι.",
+      "count": 1
+    },
+    {
+      "form": "βοηθεῖτε·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "infinitive": 1,
+      "imperative": 5
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 3
+    },
+    "voices": {
+      "active": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 6:2",
+      "form": "ἐβοήθησά",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "ἐπήκουσά σου καὶ ἐν ἡμέρᾳ σωτηρίας",
+      "right_context": "σοι· ἰδοὺ νῦν καιρὸς εὐπρόσδεκτος, ἰδοὺ"
+    },
+    {
+      "ref": "Revelation 12:16",
+      "form": "ἐβοήθησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 16,
+      "left_context": "καὶ",
+      "right_context": "ἡ γῆ τῇ γυναικί, καὶ ἤνοιξεν"
+    },
+    {
+      "ref": "Hebrews 2:18",
+      "form": "βοηθῆσαι.",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "πέπονθεν αὐτὸς πειρασθείς, δύναται τοῖς πειραζομένοις",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 16:9",
+      "form": "βοήθησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 9,
+      "left_context": "αὐτὸν καὶ λέγων· Διαβὰς εἰς Μακεδονίαν",
+      "right_context": "ἡμῖν."
+    },
+    {
+      "ref": "Acts 21:28",
+      "form": "βοηθεῖτε·",
+      "morph": "V-P-A-D-2P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 28,
+      "left_context": "κράζοντες· Ἄνδρες Ἰσραηλῖται,",
+      "right_context": "οὗτός ἐστιν ὁ ἄνθρωπος ὁ κατὰ"
+    },
+    {
+      "ref": "Mark 9:22",
+      "form": "βοήθησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "ἀπολέσῃ αὐτόν· ἀλλ’ εἴ τι ⸀δύνῃ,",
+      "right_context": "ἡμῖν σπλαγχνισθεὶς ἐφ’ ἡμᾶς."
+    },
+    {
+      "ref": "Mark 9:24",
+      "form": "βοήθει",
+      "morph": "V-P-A-D-2S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 24,
+      "left_context": "ὁ πατὴρ τοῦ ⸀παιδίου ἔλεγεν· ⸀Πιστεύω·",
+      "right_context": "μου τῇ ἀπιστίᾳ."
+    },
+    {
+      "ref": "Matthew 15:25",
+      "form": "βοήθει",
+      "morph": "V-P-A-D-2S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 25,
+      "left_context": "δὲ ἐλθοῦσα ⸀προσεκύνει αὐτῷ λέγουσα· Κύριε,",
+      "right_context": "μοι."
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Mark": 2,
+    "2 Corinthians": 1,
+    "Revelation": 1,
+    "Hebrews": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πειράζω",
+      "display": "tentado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puede",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "de·salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐπρόσδεκτος",
+      "display": "aceptable",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαβαίνω",
+      "display": "pasado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μακεδονία",
+      "display": "Macedonia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράζω",
+      "display": "clamando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραηλίτης",
+      "display": "Israelita",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπλαγχνίζομαι",
+      "display": "compadecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδίον",
+      "display": "de·niño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπιστία",
+      "display": "incredulidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσκυνέω",
+      "display": "postrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 16:9",
+      "form": "βοήθησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "⸀καὶ παρακαλῶν αὐτὸν καὶ λέγων· Διαβὰς εἰς Μακεδονίαν βοήθησον ἡμῖν."
+    },
+    {
+      "ref": "Acts 21:28",
+      "form": "βοηθεῖτε·",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "κράζοντες· Ἄνδρες Ἰσραηλῖται, βοηθεῖτε· οὗτός ἐστιν ὁ ἄνθρωπος ὁ κατὰ τοῦ λαοῦ"
+    },
+    {
+      "ref": "Mark 9:22",
+      "form": "βοήθησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ὕδατα ἵνα ἀπολέσῃ αὐτόν· ἀλλ’ εἴ τι ⸀δύνῃ, βοήθησον ἡμῖν σπλαγχνισθεὶς ἐφ’ ἡμᾶς."
+    },
+    {
+      "ref": "Mark 9:24",
+      "form": "βοήθει",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "⸀εὐθὺς κράξας ὁ πατὴρ τοῦ ⸀παιδίου ἔλεγεν· ⸀Πιστεύω· βοήθει μου τῇ ἀπιστίᾳ."
+    },
+    {
+      "ref": "Matthew 15:25",
+      "form": "βοήθει",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ἡ δὲ ἐλθοῦσα ⸀προσεκύνει αὐτῷ λέγουσα· Κύριε, βοήθει μοι."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 21:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 9:22",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 9:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 15:25",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 6:2",
+      "reason": "occurs near σωτηρία, ἡμέρα, ἰδού"
+    },
+    {
+      "ref": "Hebrews 2:18",
+      "reason": "occurs near δύναμαι, πειράζω"
+    },
+    {
+      "ref": "Revelation 12:16",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

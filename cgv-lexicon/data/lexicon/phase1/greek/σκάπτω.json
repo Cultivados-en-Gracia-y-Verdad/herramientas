@@ -1,0 +1,197 @@
+{
+  "lemma": "σκάπτω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἔσκαψεν",
+      "count": 1
+    },
+    {
+      "form": "σκάψω",
+      "count": 1
+    },
+    {
+      "form": "σκάπτειν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "subjunctive": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:48",
+      "form": "ἔσκαψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 48,
+      "left_context": "ὅμοιός ἐστιν ἀνθρώπῳ οἰκοδομοῦντι οἰκίαν ὃς",
+      "right_context": "καὶ ἐβάθυνεν καὶ ἔθηκεν θεμέλιον ἐπὶ"
+    },
+    {
+      "ref": "Luke 13:8",
+      "form": "σκάψω",
+      "morph": "V-A-A-S-1S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 8,
+      "left_context": "καὶ τοῦτο τὸ ἔτος, ἕως ὅτου",
+      "right_context": "περὶ αὐτὴν καὶ βάλω κόπρια·"
+    },
+    {
+      "ref": "Luke 16:3",
+      "form": "σκάπτειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 3,
+      "left_context": "μου ἀφαιρεῖται τὴν οἰκονομίαν ἀπ’ ἐμοῦ;",
+      "right_context": "οὐκ ἰσχύω, ἐπαιτεῖν αἰσχύνομαι·"
+    }
+  ],
+  "books": {
+    "Luke": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edificando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαθύνω",
+      "display": "profundizó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "puso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεμέλιος",
+      "display": "fundamento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτος",
+      "display": "años",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arroje",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόπριον",
+      "display": "estiércoles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφαιρέω",
+      "display": "quita",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκονομία",
+      "display": "administración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "puedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαιτέω",
+      "display": "mendigar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχύνομαι",
+      "display": "avergonzarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 16:3",
+      "negator": "οὐκ",
+      "clause_text": "ὁ κύριός μου ἀφαιρεῖται τὴν οἰκονομίαν ἀπ’ ἐμοῦ; σκάπτειν οὐκ ἰσχύω, ἐπαιτεῖν αἰσχύνομαι·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 13:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 16:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 6:48",
+      "reason": "occurs near βαθύνω, οἰκία, οἰκοδομέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

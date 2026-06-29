@@ -1,0 +1,149 @@
+{
+  "lemma": "ἀδημονέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀδημονῶν",
+      "count": 1
+    },
+    {
+      "form": "ἀδημονεῖν,",
+      "count": 1
+    },
+    {
+      "form": "ἀδημονεῖν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 2:26",
+      "form": "ἀδημονῶν",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 26,
+      "left_context": "ἐπειδὴ ἐπιποθῶν ἦν πάντας ⸀ὑμᾶς, καὶ",
+      "right_context": "διότι ἠκούσατε ὅτι ἠσθένησεν."
+    },
+    {
+      "ref": "Mark 14:33",
+      "form": "ἀδημονεῖν,",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 33,
+      "left_context": "μετ’ ⸀αὐτοῦ, καὶ ἤρξατο ἐκθαμβεῖσθαι καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 26:37",
+      "form": "ἀδημονεῖν.",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 37,
+      "left_context": "δύο υἱοὺς Ζεβεδαίου ἤρξατο λυπεῖσθαι καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Philippians": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιποθέω",
+      "display": "anhelando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διότι",
+      "display": "porque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενέω",
+      "display": "estar·enfermo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκθαμβέομαι",
+      "display": "asombrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ζεβεδαῖος",
+      "display": "de·Zebedeo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λυπέω",
+      "display": "entristecer",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 14:33",
+      "reason": "occurs near ἄρχω"
+    },
+    {
+      "ref": "Matthew 26:37",
+      "reason": "occurs near ἄρχω"
+    },
+    {
+      "ref": "Philippians 2:26",
+      "reason": "occurs near διότι, ἀκούω, ἀσθενέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

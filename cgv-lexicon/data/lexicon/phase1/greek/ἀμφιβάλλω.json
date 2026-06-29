@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀμφιβάλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἀμφιβάλλοντας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 1:16",
+      "form": "⸀ἀμφιβάλλοντας",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "Σίμωνα καὶ Ἀνδρέαν τὸν ⸀ἀδελφὸν Σίμωνος",
+      "right_context": "ἐν τῇ θαλάσσῃ, ἦσαν γὰρ ἁλιεῖς·"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἀνδρέας",
+      "display": "Andrés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "de·Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 1:16",
+      "reason": "occurs near Σίμων, θάλασσα, ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,155 @@
+{
+  "lemma": "ἀπαλλοτριόομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀπηλλοτριωμένοι",
+      "count": 2
+    },
+    {
+      "form": "ἀπηλλοτριωμένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "perfect": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 1:21",
+      "form": "ἀπηλλοτριωμένους",
+      "morph": "V-X-P-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "καὶ ὑμᾶς ποτε ὄντας",
+      "right_context": "καὶ ἐχθροὺς τῇ διανοίᾳ ἐν τοῖς"
+    },
+    {
+      "ref": "Ephesians 2:12",
+      "form": "ἀπηλλοτριωμένοι",
+      "morph": "V-X-P-P",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "⸀ἦτε τῷ καιρῷ ἐκείνῳ χωρὶς Χριστοῦ,",
+      "right_context": "τῆς πολιτείας τοῦ Ἰσραὴλ καὶ ξένοι"
+    },
+    {
+      "ref": "Ephesians 4:18",
+      "form": "ἀπηλλοτριωμένοι",
+      "morph": "V-X-P-P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 18,
+      "left_context": "⸀ἐσκοτωμένοι τῇ διανοίᾳ ὄντες,",
+      "right_context": "τῆς ζωῆς τοῦ θεοῦ, διὰ τὴν"
+    }
+  ],
+  "books": {
+    "Ephesians": 2,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διάνοια",
+      "display": "entendimiento",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποτέ",
+      "display": "alguna·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐχθρός",
+      "display": "enemigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολιτεία",
+      "display": "de·ciudadanía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "de·Israel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκοτόομαι",
+      "display": "oscurecerses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 2:12",
+      "reason": "occurs near καιρός, χωρίς"
+    },
+    {
+      "ref": "Ephesians 4:18",
+      "reason": "occurs near διάνοια"
+    },
+    {
+      "ref": "Colossians 1:21",
+      "reason": "occurs near διάνοια, ποτέ, ἐχθρός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

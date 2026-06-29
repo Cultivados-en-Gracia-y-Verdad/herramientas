@@ -1,0 +1,88 @@
+{
+  "lemma": "συνθάπτομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνταφέντες",
+      "count": 1
+    },
+    {
+      "form": "συνετάφημεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:12",
+      "form": "συνταφέντες",
+      "morph": "V-A-P-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "",
+      "right_context": "αὐτῷ ἐν τῷ ⸀βαπτισμῷ, ἐν ᾧ"
+    },
+    {
+      "ref": "Romans 6:4",
+      "form": "συνετάφημεν",
+      "morph": "V-A-P-I-1P",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 4,
+      "left_context": "",
+      "right_context": "οὖν αὐτῷ διὰ τοῦ βαπτίσματος εἰς"
+    }
+  ],
+  "books": {
+    "Colossians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βαπτισμός",
+      "display": "bautismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάπτισμα",
+      "display": "de·bautismo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 2:12",
+      "reason": "occurs near βαπτισμός"
+    },
+    {
+      "ref": "Romans 6:4",
+      "reason": "occurs near βάπτισμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

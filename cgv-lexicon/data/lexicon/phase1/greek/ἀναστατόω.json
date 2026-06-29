@@ -1,0 +1,154 @@
+{
+  "lemma": "ἀναστατόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀναστατοῦντες",
+      "count": 1
+    },
+    {
+      "form": "ἀναστατώσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἀναστατώσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 5:12",
+      "form": "ἀναστατοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 12,
+      "left_context": "ὄφελον καὶ ἀποκόψονται οἱ",
+      "right_context": "ὑμᾶς."
+    },
+    {
+      "ref": "Acts 17:6",
+      "form": "ἀναστατώσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 6,
+      "left_context": "πολιτάρχας, βοῶντες ὅτι Οἱ τὴν οἰκουμένην",
+      "right_context": "οὗτοι καὶ ἐνθάδε πάρεισιν,"
+    },
+    {
+      "ref": "Acts 21:38",
+      "form": "ἀναστατώσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 38,
+      "left_context": "Αἰγύπτιος ὁ πρὸ τούτων τῶν ἡμερῶν",
+      "right_context": "καὶ ἐξαγαγὼν εἰς τὴν ἔρημον τοὺς"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄφελον",
+      "display": "ojalá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκόπτω",
+      "display": "cortarán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοάω",
+      "display": "clamando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκουμένη",
+      "display": "mundo·habitado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνθάδε",
+      "display": "aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάρειμι",
+      "display": "estar·presente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξάγω",
+      "display": "sacado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:6",
+      "reason": "occurs near βοάω, οἰκουμένη, ἐνθάδε"
+    },
+    {
+      "ref": "Acts 21:38",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 5:12",
+      "reason": "occurs near ἀποκόπτω, ὄφελον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

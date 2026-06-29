@@ -1,0 +1,110 @@
+{
+  "lemma": "προσοχθίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προσώχθισα",
+      "count": 1
+    },
+    {
+      "form": "προσώχθισεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 3:10",
+      "form": "προσώχθισα",
+      "morph": "V-A-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "τεσσεράκοντα ἔτη· διὸ",
+      "right_context": "τῇ γενεᾷ ⸀ταύτῃ καὶ εἶπον· Ἀεὶ"
+    },
+    {
+      "ref": "Hebrews 3:17",
+      "form": "προσώχθισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "τίσιν δὲ",
+      "right_context": "τεσσεράκοντα ἔτη; οὐχὶ τοῖς ἁμαρτήσασιν, ὧν"
+    }
+  ],
+  "books": {
+    "Hebrews": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τεσσεράκοντα",
+      "display": "cuarentas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτος",
+      "display": "añoses",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γενεά",
+      "display": "generación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτάνω",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 3:10",
+      "reason": "occurs near γενεά, διό, τεσσεράκοντα"
+    },
+    {
+      "ref": "Hebrews 3:17",
+      "reason": "occurs near οὐχί, τεσσεράκοντα, ἔτος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

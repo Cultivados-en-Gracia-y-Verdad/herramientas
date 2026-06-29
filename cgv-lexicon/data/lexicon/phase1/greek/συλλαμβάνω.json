@@ -1,0 +1,457 @@
+{
+  "lemma": "συλλαμβάνω",
+  "language": "greek",
+  "total_occurrences": 16,
+  "forms": [
+    {
+      "form": "συλλαβεῖν",
+      "count": 3
+    },
+    {
+      "form": "συλλαμβάνου",
+      "count": 1
+    },
+    {
+      "form": "συλλαβοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "συλλημφθέντα",
+      "count": 1
+    },
+    {
+      "form": "⸀συλλαβόμενοι",
+      "count": 1
+    },
+    {
+      "form": "συνέλαβον",
+      "count": 1
+    },
+    {
+      "form": "συνέλαβεν",
+      "count": 1
+    },
+    {
+      "form": "συλλήμψῃ",
+      "count": 1
+    },
+    {
+      "form": "⸀συνείληφεν",
+      "count": 1
+    },
+    {
+      "form": "συλλημφθῆναι",
+      "count": 1
+    },
+    {
+      "form": "συλλαβέσθαι",
+      "count": 1
+    },
+    {
+      "form": "συνέλαβον,",
+      "count": 1
+    },
+    {
+      "form": "Συλλαβόντες",
+      "count": 1
+    },
+    {
+      "form": "συλλαβοῦσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 5,
+      "infinitive": 5,
+      "indicative": 5
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 13,
+      "future": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "middle": 4,
+      "active": 10,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 4:3",
+      "form": "συλλαμβάνου",
+      "morph": "V-P-M-D-2S",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "ναὶ ἐρωτῶ καὶ σέ, ⸂γνήσιε σύζυγε⸃,",
+      "right_context": "αὐταῖς, αἵτινες ἐν τῷ εὐαγγελίῳ συνήθλησάν"
+    },
+    {
+      "ref": "Acts 1:16",
+      "form": "συλλαβοῦσιν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "περὶ Ἰούδα τοῦ γενομένου ὁδηγοῦ τοῖς",
+      "right_context": "⸀Ἰησοῦν,"
+    },
+    {
+      "ref": "Acts 12:3",
+      "form": "συλλαβεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 3,
+      "left_context": "ὅτι ἀρεστόν ἐστιν τοῖς Ἰουδαίοις προσέθετο",
+      "right_context": "καὶ Πέτρον (ἦσαν ⸀δὲ ἡμέραι τῶν"
+    },
+    {
+      "ref": "Acts 23:27",
+      "form": "συλλημφθέντα",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 27,
+      "left_context": "τὸν ἄνδρα τοῦτον",
+      "right_context": "ὑπὸ τῶν Ἰουδαίων καὶ μέλλοντα ἀναιρεῖσθαι"
+    },
+    {
+      "ref": "Acts 26:21",
+      "form": "⸀συλλαβόμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 21,
+      "left_context": "ἕνεκα τούτων ⸂με Ἰουδαῖοι⸃",
+      "right_context": "ἐν τῷ ἱερῷ ἐπειρῶντο διαχειρίσασθαι."
+    },
+    {
+      "ref": "John 18:12",
+      "form": "συνέλαβον",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 12,
+      "left_context": "χιλίαρχος καὶ οἱ ὑπηρέται τῶν Ἰουδαίων",
+      "right_context": "τὸν Ἰησοῦν καὶ ἔδησαν αὐτὸν"
+    },
+    {
+      "ref": "Luke 1:24",
+      "form": "συνέλαβεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "Μετὰ δὲ ταύτας τὰς ἡμέρας",
+      "right_context": "Ἐλισάβετ ἡ γυνὴ αὐτοῦ· καὶ περιέκρυβεν"
+    },
+    {
+      "ref": "Luke 1:31",
+      "form": "συλλήμψῃ",
+      "morph": "V-F-M-I-2S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 31,
+      "left_context": "καὶ ἰδοὺ",
+      "right_context": "ἐν γαστρὶ καὶ τέξῃ υἱόν, καὶ"
+    },
+    {
+      "ref": "Luke 1:36",
+      "form": "⸀συνείληφεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 36,
+      "left_context": "Ἐλισάβετ ἡ ⸀συγγενίς σου καὶ αὐτὴ",
+      "right_context": "υἱὸν ἐν γήρει αὐτῆς, καὶ οὗτος"
+    },
+    {
+      "ref": "Luke 2:21",
+      "form": "συλλημφθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "κληθὲν ὑπὸ τοῦ ἀγγέλου πρὸ τοῦ",
+      "right_context": "αὐτὸν ἐν τῇ κοιλίᾳ."
+    },
+    {
+      "ref": "Luke 5:7",
+      "form": "συλλαβέσθαι",
+      "morph": "V-A-M-N",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "ἐν τῷ ἑτέρῳ πλοίῳ τοῦ ἐλθόντας",
+      "right_context": "αὐτοῖς· καὶ ἦλθον, καὶ ἔπλησαν ἀμφότερα"
+    },
+    {
+      "ref": "Luke 5:9",
+      "form": "συνέλαβον,",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "ἐπὶ τῇ ἄγρᾳ τῶν ἰχθύων ⸀ὧν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 22:54",
+      "form": "Συλλαβόντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 54,
+      "left_context": "",
+      "right_context": "δὲ αὐτὸν ἤγαγον καὶ ⸀εἰσήγαγον εἰς"
+    },
+    {
+      "ref": "Mark 14:48",
+      "form": "συλλαβεῖν",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 48,
+      "left_context": "λῃστὴν ἐξήλθατε μετὰ μαχαιρῶν καὶ ξύλων",
+      "right_context": "με;"
+    },
+    {
+      "ref": "Matthew 26:55",
+      "form": "συλλαβεῖν",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 55,
+      "left_context": "λῃστὴν ἐξήλθατε μετὰ μαχαιρῶν καὶ ξύλων",
+      "right_context": "με; καθ’ ⸀ἡμέραν ⸂ἐν τῷ ἱερῷ"
+    },
+    {
+      "ref": "James 1:15",
+      "form": "συλλαβοῦσα",
+      "morph": "V-A-A-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "εἶτα ἡ ἐπιθυμία",
+      "right_context": "τίκτει ἁμαρτίαν, ἡ δὲ ἁμαρτία ἀποτελεσθεῖσα"
+    }
+  ],
+  "books": {
+    "Luke": 7,
+    "Acts": 4,
+    "Philippians": 1,
+    "John": 1,
+    "Mark": 1,
+    "Matthew": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τίκτω",
+      "display": "dar·a·luz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venidos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salisteis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μάχαιρα",
+      "display": "de·espadas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ξύλον",
+      "display": "de·maderos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρωτάω",
+      "display": "pregunto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνήσιος",
+      "display": "genuino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύζυγος",
+      "display": "compañero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰούδας",
+      "display": "de·Judá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδηγός",
+      "display": "de·guía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρεστός",
+      "display": "agradable",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προστίθημι",
+      "display": "añadió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕνεκα",
+      "display": "por·causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειράω",
+      "display": "intentaban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Philippians 4:3",
+      "form": "συλλαμβάνου",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "ναὶ ἐρωτῶ καὶ σέ, ⸂γνήσιε σύζυγε⸃, συλλαμβάνου αὐταῖς, αἵτινες ἐν τῷ εὐαγγελίῳ συνήθλησάν μοι μετὰ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 4:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 1:24",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 1:31",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 1:36",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 22:54",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 2:21",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 5:7",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 5:9",
+      "reason": "frequent in Luke"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

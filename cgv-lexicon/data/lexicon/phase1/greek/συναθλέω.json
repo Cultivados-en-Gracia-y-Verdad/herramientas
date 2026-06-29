@@ -1,0 +1,118 @@
+{
+  "lemma": "συναθλέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συναθλοῦντες",
+      "count": 1
+    },
+    {
+      "form": "συνήθλησάν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 1:27",
+      "form": "συναθλοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 27,
+      "left_context": "στήκετε ἐν ἑνὶ πνεύματι, μιᾷ ψυχῇ",
+      "right_context": "τῇ πίστει τοῦ εὐαγγελίου,"
+    },
+    {
+      "ref": "Philippians 4:3",
+      "form": "συνήθλησάν",
+      "morph": "V-A-A-I-3P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "συλλαμβάνου αὐταῖς, αἵτινες ἐν τῷ εὐαγγελίῳ",
+      "right_context": "μοι μετὰ καὶ Κλήμεντος καὶ τῶν"
+    }
+  ],
+  "books": {
+    "Philippians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "de·evangelio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κλήμης",
+      "display": "de·Clemente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 1:27",
+      "reason": "occurs near εἷς, εὐαγγέλιον, πίστις"
+    },
+    {
+      "ref": "Philippians 4:3",
+      "reason": "occurs near εὐαγγέλιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

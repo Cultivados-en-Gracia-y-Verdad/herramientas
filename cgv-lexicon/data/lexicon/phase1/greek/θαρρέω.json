@@ -1,0 +1,248 @@
+{
+  "lemma": "θαρρέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "θαρρῶ",
+      "count": 2
+    },
+    {
+      "form": "Θαρροῦντες",
+      "count": 1
+    },
+    {
+      "form": "θαρροῦμεν",
+      "count": 1
+    },
+    {
+      "form": "θαρρῆσαι",
+      "count": 1
+    },
+    {
+      "form": "θαρροῦντας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 5:6",
+      "form": "Θαρροῦντες",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "οὖν πάντοτε καὶ εἰδότες ὅτι ἐνδημοῦντες"
+    },
+    {
+      "ref": "2 Corinthians 5:8",
+      "form": "θαρροῦμεν",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "δὲ καὶ εὐδοκοῦμεν μᾶλλον ἐκδημῆσαι ἐκ"
+    },
+    {
+      "ref": "2 Corinthians 7:16",
+      "form": "θαρρῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 16,
+      "left_context": "χαίρω ὅτι ἐν παντὶ",
+      "right_context": "ἐν ὑμῖν."
+    },
+    {
+      "ref": "2 Corinthians 10:1",
+      "form": "θαρρῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 1,
+      "left_context": "μὲν ταπεινὸς ἐν ὑμῖν, ἀπὼν δὲ",
+      "right_context": "εἰς ὑμᾶς·"
+    },
+    {
+      "ref": "2 Corinthians 10:2",
+      "form": "θαρρῆσαι",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 2,
+      "left_context": "δέομαι δὲ τὸ μὴ παρὼν",
+      "right_context": "τῇ πεποιθήσει ᾗ λογίζομαι τολμῆσαι ἐπί"
+    },
+    {
+      "ref": "Hebrews 13:6",
+      "form": "θαρροῦντας",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "ὥστε",
+      "right_context": "ἡμᾶς λέγειν· Κύριος ἐμοὶ βοηθός, ⸀οὐ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 5,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάντοτε",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "sabidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐδοκέω",
+      "display": "complacemos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδημέω",
+      "display": "estar·ausente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταπεινός",
+      "display": "humilde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄπειμι",
+      "display": "ausentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέομαι",
+      "display": "rogo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάρειμι",
+      "display": "estar·presente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεποίθησις",
+      "display": "confianza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λογίζομαι",
+      "display": "considero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τολμάω",
+      "display": "atreverse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοηθός",
+      "display": "ayudador",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 10:2",
+      "negator": "μὴ",
+      "clause_text": "δέομαι δὲ τὸ μὴ παρὼν θαρρῆσαι τῇ πεποιθήσει ᾗ λογίζομαι τολμῆσαι ἐπί τινας τοὺς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 10:1",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 10:2",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 5:6",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 5:8",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 7:16",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "Hebrews 13:6",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

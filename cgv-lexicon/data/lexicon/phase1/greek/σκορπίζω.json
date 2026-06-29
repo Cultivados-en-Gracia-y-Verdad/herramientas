@@ -1,0 +1,213 @@
+{
+  "lemma": "σκορπίζω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "σκορπίζει.",
+      "count": 2
+    },
+    {
+      "form": "Ἐσκόρπισεν,",
+      "count": 1
+    },
+    {
+      "form": "⸀σκορπίζει—",
+      "count": 1
+    },
+    {
+      "form": "σκορπισθῆτε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 3
+    },
+    "voices": {
+      "active": 4,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 9:9",
+      "form": "Ἐσκόρπισεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 9,
+      "left_context": "(καθὼς γέγραπται·",
+      "right_context": "ἔδωκεν τοῖς πένησιν, ἡ δικαιοσύνη αὐτοῦ"
+    },
+    {
+      "ref": "John 10:12",
+      "form": "⸀σκορπίζει—",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 10,
+      "verse": 12,
+      "left_context": "καὶ ὁ λύκος ἁρπάζει αὐτὰ καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 16:32",
+      "form": "σκορπισθῆτε",
+      "morph": "V-A-P-S-2P",
+      "book": "John",
+      "chapter": 16,
+      "verse": 32,
+      "left_context": "ἰδοὺ ἔρχεται ὥρα ⸀καὶ ἐλήλυθεν ἵνα",
+      "right_context": "ἕκαστος εἰς τὰ ἴδια κἀμὲ μόνον"
+    },
+    {
+      "ref": "Luke 11:23",
+      "form": "σκορπίζει.",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 23,
+      "left_context": "καὶ ὁ μὴ συνάγων μετ’ ἐμοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 12:30",
+      "form": "σκορπίζει.",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 30,
+      "left_context": "καὶ ὁ μὴ συνάγων μετ’ ἐμοῦ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "John": 2,
+    "2 Corinthians": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reuniendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πένης",
+      "display": "pobres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύκος",
+      "display": "lobo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁρπάζω",
+      "display": "arrebata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 11:23",
+      "negator": "μὴ",
+      "clause_text": "ἐμοῦ ἐστιν, καὶ ὁ μὴ συνάγων μετ’ ἐμοῦ σκορπίζει."
+    },
+    {
+      "ref": "Matthew 12:30",
+      "negator": "μὴ",
+      "clause_text": "ἐμοῦ ἐστιν, καὶ ὁ μὴ συνάγων μετ’ ἐμοῦ σκορπίζει."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 10:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 16:32",
+      "reason": "occurs near ἔρχομαι"
+    },
+    {
+      "ref": "2 Corinthians 9:9",
+      "reason": "occurs near γράφω, δίδωμι, πένης"
+    },
+    {
+      "ref": "Luke 11:23",
+      "reason": "occurs near συνάγω"
+    },
+    {
+      "ref": "Matthew 12:30",
+      "reason": "occurs near συνάγω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

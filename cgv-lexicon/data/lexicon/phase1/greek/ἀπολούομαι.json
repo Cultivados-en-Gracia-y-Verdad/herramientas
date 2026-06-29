@@ -1,0 +1,125 @@
+{
+  "lemma": "ἀπολούομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀπελούσασθε,",
+      "count": 1
+    },
+    {
+      "form": "ἀπόλουσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 6:11",
+      "form": "ἀπελούσασθε,",
+      "morph": "V-A-M-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 11,
+      "left_context": "καὶ ταῦτά τινες ἦτε· ἀλλὰ",
+      "right_context": "ἀλλὰ ἡγιάσθητε, ἀλλὰ ἐδικαιώθητε ἐν τῷ"
+    },
+    {
+      "ref": "Acts 22:16",
+      "form": "ἀπόλουσαι",
+      "morph": "V-A-M-D-2S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 16,
+      "left_context": "νῦν τί μέλλεις; ἀναστὰς βάπτισαι καὶ",
+      "right_context": "τὰς ἁμαρτίας σου ἐπικαλεσάμενος τὸ ὄνομα"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἁγιάζω",
+      "display": "fueron santificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιόω",
+      "display": "fueron justificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαπτίζω",
+      "display": "bautiza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπικαλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 22:16",
+      "form": "ἀπόλουσαι",
+      "morph": "V-A-M-D-2S",
+      "clause_text": "καὶ νῦν τί μέλλεις; ἀναστὰς βάπτισαι καὶ ἀπόλουσαι τὰς ἁμαρτίας σου ἐπικαλεσάμενος τὸ ὄνομα ⸀αὐτοῦ."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 6:11",
+      "reason": "occurs near δικαιόω, ἁγιάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

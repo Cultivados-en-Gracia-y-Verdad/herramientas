@@ -1,0 +1,798 @@
+{
+  "lemma": "φωνέω",
+  "language": "greek",
+  "total_occurrences": 43,
+  "forms": [
+    {
+      "form": "ἐφώνησεν",
+      "count": 9
+    },
+    {
+      "form": "φωνήσας",
+      "count": 5
+    },
+    {
+      "form": "φωνῆσαι",
+      "count": 5
+    },
+    {
+      "form": "φωνεῖ",
+      "count": 4
+    },
+    {
+      "form": "ἐφώνησεν·",
+      "count": 2
+    },
+    {
+      "form": "φωνήσαντες",
+      "count": 1
+    },
+    {
+      "form": "φώνησον",
+      "count": 1
+    },
+    {
+      "form": "ἐφώνησαν",
+      "count": 1
+    },
+    {
+      "form": "Ἐφώνησαν",
+      "count": 1
+    },
+    {
+      "form": "⸀φωνεῖ",
+      "count": 1
+    },
+    {
+      "form": "φωνεῖτέ",
+      "count": 1
+    },
+    {
+      "form": "φωνήσῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐφώνησεν.",
+      "count": 1
+    },
+    {
+      "form": "ἐφώνει·",
+      "count": 1
+    },
+    {
+      "form": "φώνει",
+      "count": 1
+    },
+    {
+      "form": "φωνηθῆναι",
+      "count": 1
+    },
+    {
+      "form": "⸀φωνήσει",
+      "count": 1
+    },
+    {
+      "form": "⸀φωνῆσαν",
+      "count": 1
+    },
+    {
+      "form": "⸂Φωνήσατε",
+      "count": 1
+    },
+    {
+      "form": "φωνοῦσι",
+      "count": 1
+    },
+    {
+      "form": "ἐφώνησεν⸃.",
+      "count": 1
+    },
+    {
+      "form": "⸂φωνῆσαι",
+      "count": 1
+    },
+    {
+      "form": "φωνεῖ.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 25,
+      "participle": 7,
+      "infinitive": 7,
+      "imperative": 3,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 32,
+      "present": 9,
+      "imperfect": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 42,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 14:18",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 18,
+      "left_context": "ἔχων ἐξουσίαν ἐπὶ τοῦ πυρός, καὶ",
+      "right_context": "⸀φωνῇ μεγάλῃ τῷ ἔχοντι τὸ δρέπανον"
+    },
+    {
+      "ref": "Acts 9:41",
+      "form": "φωνήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 41,
+      "left_context": "δοὺς δὲ αὐτῇ χεῖρα ἀνέστησεν αὐτήν,",
+      "right_context": "δὲ τοὺς ἁγίους καὶ τὰς χήρας"
+    },
+    {
+      "ref": "Acts 10:7",
+      "form": "φωνήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 7,
+      "left_context": "ἀπῆλθεν ὁ ἄγγελος ὁ λαλῶν ⸀αὐτῷ,",
+      "right_context": "δύο τῶν ⸀οἰκετῶν καὶ στρατιώτην εὐσεβῆ"
+    },
+    {
+      "ref": "Acts 10:18",
+      "form": "φωνήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 18,
+      "left_context": "καὶ",
+      "right_context": "⸀ἐπυνθάνοντο εἰ Σίμων ὁ ἐπικαλούμενος Πέτρος"
+    },
+    {
+      "ref": "Acts 16:28",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 28,
+      "left_context": "",
+      "right_context": "δὲ ⸂φωνῇ μεγάλῃ ὁ Παῦλος⸃ λέγων·"
+    },
+    {
+      "ref": "John 1:48",
+      "form": "φωνῆσαι",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 1,
+      "verse": 48,
+      "left_context": "εἶπεν αὐτῷ· Πρὸ τοῦ σε Φίλιππον",
+      "right_context": "ὄντα ὑπὸ τὴν συκῆν εἶδόν σε."
+    },
+    {
+      "ref": "John 2:9",
+      "form": "φωνεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ,",
+      "right_context": "τὸν νυμφίον ὁ ἀρχιτρίκλινος"
+    },
+    {
+      "ref": "John 4:16",
+      "form": "φώνησον",
+      "morph": "V-A-A-D-2S",
+      "book": "John",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "Λέγει ⸀αὐτῇ· Ὕπαγε",
+      "right_context": "⸂τὸν ἄνδρα σου⸃ καὶ ἐλθὲ ἐνθάδε."
+    },
+    {
+      "ref": "John 9:18",
+      "form": "ἐφώνησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "⸂ἦν τυφλὸς⸃ καὶ ἀνέβλεψεν, ἕως ὅτου",
+      "right_context": "τοὺς γονεῖς αὐτοῦ ⸂τοῦ ἀναβλέψαντος⸃"
+    },
+    {
+      "ref": "John 9:24",
+      "form": "Ἐφώνησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 9,
+      "verse": 24,
+      "left_context": "",
+      "right_context": "οὖν ⸂τὸν ἄνθρωπον ἐκ δευτέρου⸃ ὃς"
+    },
+    {
+      "ref": "John 10:3",
+      "form": "⸀φωνεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 10,
+      "verse": 3,
+      "left_context": "αὐτοῦ ἀκούει καὶ τὰ ἴδια πρόβατα",
+      "right_context": "κατ’ ὄνομα καὶ ἐξάγει αὐτά."
+    },
+    {
+      "ref": "John 11:28",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 28,
+      "left_context": "Καὶ ⸀τοῦτο εἰποῦσα ἀπῆλθεν καὶ",
+      "right_context": "⸀Μαριὰμ τὴν ἀδελφὴν αὐτῆς λάθρᾳ εἰποῦσα·"
+    },
+    {
+      "ref": "John 11:28",
+      "form": "φωνεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 28,
+      "left_context": "λάθρᾳ εἰποῦσα· Ὁ διδάσκαλος πάρεστιν καὶ",
+      "right_context": "σε."
+    },
+    {
+      "ref": "John 12:17",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 17,
+      "left_context": "ὢν μετ’ αὐτοῦ ὅτε τὸν Λάζαρον",
+      "right_context": "ἐκ τοῦ μνημείου καὶ ἤγειρεν αὐτὸν"
+    },
+    {
+      "ref": "John 13:13",
+      "form": "φωνεῖτέ",
+      "morph": "V-P-A-I-2P",
+      "book": "John",
+      "chapter": 13,
+      "verse": 13,
+      "left_context": "ὑμεῖς",
+      "right_context": "με Ὁ διδάσκαλος καὶ Ὁ κύριος,"
+    },
+    {
+      "ref": "John 13:38",
+      "form": "φωνήσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 13,
+      "verse": 38,
+      "left_context": "ἀμὴν λέγω σοι, οὐ μὴ ἀλέκτωρ",
+      "right_context": "ἕως οὗ ⸀ἀρνήσῃ με τρίς."
+    },
+    {
+      "ref": "John 18:27",
+      "form": "ἐφώνησεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 18,
+      "verse": 27,
+      "left_context": "οὖν ⸀ἠρνήσατο Πέτρος· καὶ εὐθέως ἀλέκτωρ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 18:33",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 18,
+      "verse": 33,
+      "left_context": "εἰς τὸ πραιτώριον⸃ ὁ Πιλᾶτος καὶ",
+      "right_context": "τὸν Ἰησοῦν καὶ εἶπεν αὐτῷ· Σὺ"
+    },
+    {
+      "ref": "Luke 8:8",
+      "form": "ἐφώνει·",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 8,
+      "left_context": "φυὲν ἐποίησεν καρπὸν ἑκατονταπλασίονα. ταῦτα λέγων",
+      "right_context": "Ὁ ἔχων ὦτα ἀκούειν ἀκουέτω."
+    },
+    {
+      "ref": "Luke 8:54",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 54,
+      "left_context": "αὐτὸς ⸀δὲ κρατήσας τῆς χειρὸς αὐτῆς",
+      "right_context": "λέγων· Ἡ παῖς, ⸀ἔγειρε."
+    },
+    {
+      "ref": "Luke 14:12",
+      "form": "φώνει",
+      "morph": "V-P-A-D-2S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 12,
+      "left_context": "Ὅταν ποιῇς ἄριστον ἢ δεῖπνον, μὴ",
+      "right_context": "τοὺς φίλους σου μηδὲ τοὺς ἀδελφούς"
+    },
+    {
+      "ref": "Luke 16:2",
+      "form": "φωνήσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 2,
+      "left_context": "καὶ",
+      "right_context": "αὐτὸν εἶπεν αὐτῷ· Τί τοῦτο ἀκούω"
+    },
+    {
+      "ref": "Luke 16:24",
+      "form": "φωνήσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 24,
+      "left_context": "καὶ αὐτὸς",
+      "right_context": "εἶπεν· Πάτερ Ἀβραάμ, ἐλέησόν με καὶ"
+    },
+    {
+      "ref": "Luke 19:15",
+      "form": "φωνηθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 15,
+      "left_context": "αὐτὸν λαβόντα τὴν βασιλείαν καὶ εἶπεν",
+      "right_context": "αὐτῷ τοὺς δούλους τούτους οἷς ⸀δεδώκει"
+    },
+    {
+      "ref": "Luke 22:34",
+      "form": "⸀φωνήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 34,
+      "left_context": "δὲ εἶπεν· Λέγω σοι, Πέτρε, οὐ",
+      "right_context": "σήμερον ἀλέκτωρ ⸀ἕως τρίς ⸂με ἀπαρνήσῃ"
+    },
+    {
+      "ref": "Luke 22:60",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 60,
+      "left_context": "λέγεις. καὶ παραχρῆμα ἔτι λαλοῦντος αὐτοῦ",
+      "right_context": "ἀλέκτωρ."
+    },
+    {
+      "ref": "Luke 22:61",
+      "form": "φωνῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 61,
+      "left_context": "ὡς εἶπεν αὐτῷ ὅτι Πρὶν ἀλέκτορα",
+      "right_context": "⸀σήμερον ἀπαρνήσῃ με τρίς."
+    },
+    {
+      "ref": "Luke 23:46",
+      "form": "φωνήσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 46,
+      "left_context": "καὶ",
+      "right_context": "φωνῇ μεγάλῃ ὁ Ἰησοῦς εἶπεν· Πάτερ,"
+    },
+    {
+      "ref": "Mark 1:26",
+      "form": "⸀φωνῆσαν",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 26,
+      "left_context": "αὐτὸν τὸ πνεῦμα τὸ ἀκάθαρτον καὶ",
+      "right_context": "φωνῇ μεγάλῃ ἐξῆλθεν ἐξ αὐτοῦ."
+    },
+    {
+      "ref": "Mark 9:35",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 35,
+      "left_context": "καὶ καθίσας",
+      "right_context": "τοὺς δώδεκα καὶ λέγει αὐτοῖς· Εἴ"
+    },
+    {
+      "ref": "Mark 10:49",
+      "form": "⸂Φωνήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 49,
+      "left_context": "καὶ στὰς ὁ Ἰησοῦς εἶπεν·",
+      "right_context": "αὐτόν⸃. καὶ φωνοῦσι τὸν τυφλὸν λέγοντες"
+    },
+    {
+      "ref": "Mark 10:49",
+      "form": "φωνοῦσι",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 49,
+      "left_context": "ὁ Ἰησοῦς εἶπεν· ⸂Φωνήσατε αὐτόν⸃. καὶ",
+      "right_context": "τὸν τυφλὸν λέγοντες αὐτῷ· Θάρσει, ⸀ἔγειρε,"
+    },
+    {
+      "ref": "Mark 10:49",
+      "form": "φωνεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 49,
+      "left_context": "τὸν τυφλὸν λέγοντες αὐτῷ· Θάρσει, ⸀ἔγειρε,",
+      "right_context": "σε."
+    },
+    {
+      "ref": "Mark 14:30",
+      "form": "φωνῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 30,
+      "left_context": "τῇ νυκτὶ⸃ πρὶν ἢ δὶς ἀλέκτορα",
+      "right_context": "τρίς ⸂με ἀπαρνήσῃ⸃."
+    },
+    {
+      "ref": "Mark 14:68",
+      "form": "ἐφώνησεν⸃.",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 68,
+      "left_context": "ἔξω εἰς τὸ προαύλιον ⸂καὶ ἀλέκτωρ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 14:72",
+      "form": "ἐφώνησεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 72,
+      "left_context": "καὶ ⸀εὐθὺς ἐκ δευτέρου ἀλέκτωρ",
+      "right_context": "καὶ ἀνεμνήσθη ὁ Πέτρος τὸ ῥῆμα"
+    },
+    {
+      "ref": "Mark 14:72",
+      "form": "⸂φωνῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 72,
+      "left_context": "αὐτῷ ὁ Ἰησοῦς ὅτι Πρὶν ἀλέκτορα",
+      "right_context": "δὶς τρίς με ἀπαρνήσῃ⸃, καὶ ἐπιβαλὼν"
+    },
+    {
+      "ref": "Mark 15:35",
+      "form": "φωνεῖ.",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 35,
+      "left_context": "τῶν παρεστηκότων ἀκούσαντες ἔλεγον· ⸀Ἴδε Ἠλίαν",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 20:32",
+      "form": "ἐφώνησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 32,
+      "left_context": "καὶ στὰς ὁ Ἰησοῦς",
+      "right_context": "αὐτοὺς καὶ εἶπεν· Τί θέλετε ποιήσω"
+    },
+    {
+      "ref": "Matthew 26:34",
+      "form": "φωνῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 34,
+      "left_context": "ἐν ταύτῃ τῇ νυκτὶ πρὶν ἀλέκτορα",
+      "right_context": "τρὶς ἀπαρνήσῃ με."
+    },
+    {
+      "ref": "Matthew 26:74",
+      "form": "ἐφώνησεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 74,
+      "left_context": "οἶδα τὸν ἄνθρωπον. καὶ ⸀εὐθέως ἀλέκτωρ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 26:75",
+      "form": "φωνῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 75,
+      "left_context": "⸀ῥήματος Ἰησοῦ ⸀εἰρηκότος ὅτι Πρὶν ἀλέκτορα",
+      "right_context": "τρὶς ἀπαρνήσῃ με, καὶ ἐξελθὼν ἔξω"
+    },
+    {
+      "ref": "Matthew 27:47",
+      "form": "φωνεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 47,
+      "left_context": "ἐκεῖ ⸀ἑστηκότων ἀκούσαντες ἔλεγον ὅτι Ἠλίαν",
+      "right_context": "οὗτος."
+    }
+  ],
+  "books": {
+    "John": 13,
+    "Luke": 10,
+    "Mark": 10,
+    "Matthew": 5,
+    "Acts": 4,
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀλέκτωρ",
+      "display": "gallo",
+      "count": 12,
+      "window": 5
+    },
+    {
+      "lemma": "τρίς",
+      "display": "tres·veces",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "πρίν",
+      "display": "antes",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαρνέομαι",
+      "display": "negarás",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "τυφλός",
+      "display": "ciego",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantó",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "puesto",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβλέπω",
+      "display": "vio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δεύτερος",
+      "display": "de·segundo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρνέομαι",
+      "display": "negarás",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φωνέω",
+      "display": "llaman",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 4:16",
+      "form": "φώνησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "Λέγει ⸀αὐτῇ· Ὕπαγε φώνησον ⸂τὸν ἄνδρα σου⸃ καὶ ἐλθὲ ἐνθάδε."
+    },
+    {
+      "ref": "John 13:38",
+      "form": "φωνήσῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "θήσεις; ἀμὴν ἀμὴν λέγω σοι, οὐ μὴ ἀλέκτωρ φωνήσῃ ἕως οὗ ⸀ἀρνήσῃ με τρίς.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 14:12",
+      "form": "φώνει",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "κεκληκότι αὐτόν· Ὅταν ποιῇς ἄριστον ἢ δεῖπνον, μὴ φώνει τοὺς φίλους σου μηδὲ τοὺς ἀδελφούς σου μηδὲ",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 10:49",
+      "form": "⸂Φωνήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ στὰς ὁ Ἰησοῦς εἶπεν· ⸂Φωνήσατε αὐτόν⸃. καὶ φωνοῦσι τὸν τυφλὸν λέγοντες αὐτῷ· Θάρσει,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 13:38",
+      "negator": "οὐ",
+      "clause_text": "θήσεις; ἀμὴν ἀμὴν λέγω σοι, οὐ μὴ ἀλέκτωρ φωνήσῃ ἕως οὗ ⸀ἀρνήσῃ με τρίς."
+    },
+    {
+      "ref": "Luke 14:12",
+      "negator": "μὴ",
+      "clause_text": "κεκληκότι αὐτόν· Ὅταν ποιῇς ἄριστον ἢ δεῖπνον, μὴ φώνει τοὺς φίλους σου μηδὲ τοὺς ἀδελφούς σου μηδὲ"
+    },
+    {
+      "ref": "Luke 22:34",
+      "negator": "οὐ",
+      "clause_text": "ὁ δὲ εἶπεν· Λέγω σοι, Πέτρε, οὐ ⸀φωνήσει σήμερον ἀλέκτωρ ⸀ἕως τρίς ⸂με ἀπαρνήσῃ εἰδέναι⸃."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 4:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 14:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 10:49",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 10:3",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 11:28",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 12:17",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 13:13",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 13:38",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "καυστηριάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κεκαυστηριασμένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 4:2",
+      "form": "κεκαυστηριασμένων",
+      "morph": "V-X-P-P",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "ἐν ὑποκρίσει ψευδολόγων,",
+      "right_context": "τὴν ἰδίαν συνείδησιν,"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπόκρισις",
+      "display": "hipocresía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδολόγος",
+      "display": "de·mentirosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνείδησις",
+      "display": "conciencia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:2",
+      "reason": "occurs near συνείδησις, ψευδολόγος, ἴδιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

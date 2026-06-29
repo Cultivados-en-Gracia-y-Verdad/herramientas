@@ -1,0 +1,361 @@
+{
+  "lemma": "μεταπέμπομαι",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "μετάπεμψαι",
+      "count": 2
+    },
+    {
+      "form": "μεταπέμψασθαί",
+      "count": 1
+    },
+    {
+      "form": "μεταπεμφθείς",
+      "count": 1
+    },
+    {
+      "form": "μετεπέμψασθέ",
+      "count": 1
+    },
+    {
+      "form": "⸀μεταπεμψάμενος",
+      "count": 1
+    },
+    {
+      "form": "μετεπέμψατο",
+      "count": 1
+    },
+    {
+      "form": "μεταπεμπόμενος",
+      "count": 1
+    },
+    {
+      "form": "μεταπέμψηται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "infinitive": 1,
+      "participle": 3,
+      "indicative": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 8,
+      "present": 1
+    },
+    "voices": {
+      "middle": 8,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:5",
+      "form": "μετάπεμψαι",
+      "morph": "V-A-M-D-2S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 5,
+      "left_context": "νῦν πέμψον ⸂ἄνδρας εἰς Ἰόππην⸃ καὶ",
+      "right_context": "Σίμωνά ⸂τινα ὃς ἐπικαλεῖται Πέτρος⸃·"
+    },
+    {
+      "ref": "Acts 10:22",
+      "form": "μεταπέμψασθαί",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "τῶν Ἰουδαίων, ἐχρηματίσθη ὑπὸ ἀγγέλου ἁγίου",
+      "right_context": "σε εἰς τὸν οἶκον αὐτοῦ καὶ"
+    },
+    {
+      "ref": "Acts 10:29",
+      "form": "μεταπεμφθείς",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 29,
+      "left_context": "διὸ καὶ ἀναντιρρήτως ἦλθον",
+      "right_context": "πυνθάνομαι οὖν τίνι λόγῳ μετεπέμψασθέ με."
+    },
+    {
+      "ref": "Acts 10:29",
+      "form": "μετεπέμψασθέ",
+      "morph": "V-A-M-I-2P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 29,
+      "left_context": "ἦλθον μεταπεμφθείς πυνθάνομαι οὖν τίνι λόγῳ",
+      "right_context": "με."
+    },
+    {
+      "ref": "Acts 11:13",
+      "form": "μετάπεμψαι",
+      "morph": "V-A-M-D-2S",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 13,
+      "left_context": "καὶ ⸀εἰπόντα· Ἀπόστειλον εἰς ⸀Ἰόππην καὶ",
+      "right_context": "Σίμωνα τὸν ἐπικαλούμενον Πέτρον,"
+    },
+    {
+      "ref": "Acts 20:1",
+      "form": "⸀μεταπεμψάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 1,
+      "left_context": "Μετὰ δὲ τὸ παύσασθαι τὸν θόρυβον",
+      "right_context": "ὁ Παῦλος τοὺς μαθητὰς καὶ ⸀παρακαλέσας,"
+    },
+    {
+      "ref": "Acts 24:24",
+      "form": "μετεπέμψατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 24,
+      "left_context": "Δρουσίλλῃ τῇ ⸀ἰδίᾳ γυναικὶ οὔσῃ Ἰουδαίᾳ",
+      "right_context": "τὸν Παῦλον καὶ ἤκουσεν αὐτοῦ περὶ"
+    },
+    {
+      "ref": "Acts 24:26",
+      "form": "μεταπεμπόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 26,
+      "left_context": "τοῦ ⸀Παύλου· διὸ καὶ πυκνότερον αὐτὸν",
+      "right_context": "ὡμίλει αὐτῷ."
+    },
+    {
+      "ref": "Acts 25:3",
+      "form": "μεταπέμψηται",
+      "morph": "V-A-M-S-3S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 3,
+      "left_context": "αἰτούμενοι χάριν κατ’ αὐτοῦ ὅπως",
+      "right_context": "αὐτὸν εἰς Ἰερουσαλήμ, ἐνέδραν ποιοῦντες ἀνελεῖν"
+    }
+  ],
+  "books": {
+    "Acts": 9
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰόππη",
+      "display": "Jope",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπικαλέω",
+      "display": "es llamado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πυνθάνομαι",
+      "display": "pregunto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μεταπέμπομαι",
+      "display": "mandar·llamasteis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "envia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρηματίζω",
+      "display": "fue advertido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "de·ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναντιρρήτως",
+      "display": "sin·objeción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vine",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "envia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παύω",
+      "display": "cesar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θόρυβος",
+      "display": "alboroto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 10:5",
+      "form": "μετάπεμψαι",
+      "morph": "V-A-M-D-2S",
+      "clause_text": "καὶ νῦν πέμψον ⸂ἄνδρας εἰς Ἰόππην⸃ καὶ μετάπεμψαι Σίμωνά ⸂τινα ὃς ἐπικαλεῖται Πέτρος⸃·"
+    },
+    {
+      "ref": "Acts 11:13",
+      "form": "μετάπεμψαι",
+      "morph": "V-A-M-D-2S",
+      "clause_text": "αὐτοῦ σταθέντα καὶ ⸀εἰπόντα· Ἀπόστειλον εἰς ⸀Ἰόππην καὶ μετάπεμψαι Σίμωνα τὸν ἐπικαλούμενον Πέτρον,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 11:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 10:22",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 10:29",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 20:1",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 24:24",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 24:26",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 25:3",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

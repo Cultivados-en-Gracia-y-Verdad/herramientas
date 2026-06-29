@@ -1,0 +1,348 @@
+{
+  "lemma": "συλλέγω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "συλλέγουσιν",
+      "count": 2
+    },
+    {
+      "form": "⸀συλλέξωμεν",
+      "count": 1
+    },
+    {
+      "form": "συλλέγοντες",
+      "count": 1
+    },
+    {
+      "form": "Συλλέξατε",
+      "count": 1
+    },
+    {
+      "form": "συλλέγεται",
+      "count": 1
+    },
+    {
+      "form": "συλλέξουσιν",
+      "count": 1
+    },
+    {
+      "form": "συνέλεξαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "subjunctive": 1,
+      "participle": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 4,
+      "aorist": 3,
+      "future": 1
+    },
+    "voices": {
+      "active": 7,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:44",
+      "form": "συλλέγουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 44,
+      "left_context": "καρποῦ γινώσκεται· οὐ γὰρ ἐξ ἀκανθῶν",
+      "right_context": "σῦκα, οὐδὲ ἐκ βάτου ⸂σταφυλὴν τρυγῶσιν⸃."
+    },
+    {
+      "ref": "Matthew 7:16",
+      "form": "συλλέγουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 16,
+      "left_context": "τῶν καρπῶν αὐτῶν ἐπιγνώσεσθε αὐτούς. μήτι",
+      "right_context": "ἀπὸ ἀκανθῶν ⸀σταφυλὰς ἢ ἀπὸ τριβόλων"
+    },
+    {
+      "ref": "Matthew 13:28",
+      "form": "⸀συλλέξωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 28,
+      "left_context": "⸂δοῦλοι αὐτῷ λέγουσιν⸃· Θέλεις οὖν ἀπελθόντες",
+      "right_context": "αὐτά;"
+    },
+    {
+      "ref": "Matthew 13:29",
+      "form": "συλλέγοντες",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 29,
+      "left_context": "ὁ δέ ⸀φησιν· Οὔ, μήποτε",
+      "right_context": "τὰ ζιζάνια ἐκριζώσητε ἅμα αὐτοῖς τὸν"
+    },
+    {
+      "ref": "Matthew 13:30",
+      "form": "Συλλέξατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 30,
+      "left_context": "καιρῷ τοῦ θερισμοῦ ἐρῶ τοῖς θερισταῖς·",
+      "right_context": "πρῶτον τὰ ζιζάνια καὶ δήσατε αὐτὰ"
+    },
+    {
+      "ref": "Matthew 13:40",
+      "form": "συλλέγεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 40,
+      "left_context": "ὥσπερ οὖν",
+      "right_context": "τὰ ζιζάνια καὶ πυρὶ ⸀καίεται, οὕτως"
+    },
+    {
+      "ref": "Matthew 13:41",
+      "form": "συλλέξουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 41,
+      "left_context": "τοῦ ἀνθρώπου τοὺς ἀγγέλους αὐτοῦ, καὶ",
+      "right_context": "ἐκ τῆς βασιλείας αὐτοῦ πάντα τὰ"
+    },
+    {
+      "ref": "Matthew 13:48",
+      "form": "συνέλεξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 48,
+      "left_context": "ἀναβιβάσαντες ἐπὶ τὸν αἰγιαλὸν καὶ καθίσαντες",
+      "right_context": "τὰ καλὰ εἰς ⸀ἄγγη, τὰ δὲ"
+    }
+  ],
+  "books": {
+    "Matthew": 7,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ζιζάνιον",
+      "display": "cizañas",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκανθα",
+      "display": "de·espinas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σταφυλή",
+      "display": "uva",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "es conocido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῦκον",
+      "display": "higos;",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάτος",
+      "display": "de·zarza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "de·frutos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconoceréis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήτι",
+      "display": "¿acaso?",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quieres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φημί",
+      "display": "dice",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔ",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκριζόω",
+      "display": "desarraigéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θερισμός",
+      "display": "de·cosecha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεριστής",
+      "display": "segadores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "atad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥσπερ",
+      "display": "como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καίω",
+      "display": "es quemado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 13:30",
+      "form": "Συλλέξατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ ἐν καιρῷ τοῦ θερισμοῦ ἐρῶ τοῖς θερισταῖς· Συλλέξατε πρῶτον τὰ ζιζάνια καὶ δήσατε αὐτὰ εἰς δέσμας"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 6:44",
+      "negator": "οὐ",
+      "clause_text": "τοῦ ἰδίου καρποῦ γινώσκεται· οὐ γὰρ ἐξ ἀκανθῶν συλλέγουσιν σῦκα, οὐδὲ ἐκ βάτου ⸂σταφυλὴν τρυγῶσιν⸃."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:30",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 13:28",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 13:29",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 13:40",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 13:41",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 13:48",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 7:16",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Luke 6:44",
+      "reason": "occurs near γινώσκω, σταφυλή, σῦκον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

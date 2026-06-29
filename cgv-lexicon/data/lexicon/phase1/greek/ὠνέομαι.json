@@ -1,0 +1,86 @@
+{
+  "lemma": "ὠνέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὠνήσατο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:16",
+      "form": "ὠνήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 16,
+      "left_context": "καὶ ἐτέθησαν ἐν τῷ μνήματι ⸀ᾧ",
+      "right_context": "Ἀβραὰμ τιμῆς ἀργυρίου παρὰ τῶν υἱῶν"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τίθημι",
+      "display": "fueron puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μνῆμα",
+      "display": "sepulcro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "de·honora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργύριον",
+      "display": "de·plata",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 7:16",
+      "reason": "occurs near μνῆμα, τίθημι, τιμή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

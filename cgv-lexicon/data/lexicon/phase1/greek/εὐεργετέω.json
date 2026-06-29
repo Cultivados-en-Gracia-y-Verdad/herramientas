@@ -1,0 +1,86 @@
+{
+  "lemma": "εὐεργετέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εὐεργετῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:38",
+      "form": "εὐεργετῶν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 38,
+      "left_context": "πνεύματι ἁγίῳ καὶ δυνάμει, ὃς διῆλθεν",
+      "right_context": "καὶ ἰώμενος πάντας τοὺς καταδυναστευομένους ὑπὸ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διέρχομαι",
+      "display": "pasó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰάομαι",
+      "display": "sanando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταδυναστεύω",
+      "display": "oprimidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:38",
+      "reason": "occurs near διέρχομαι, δύναμις, καταδυναστεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

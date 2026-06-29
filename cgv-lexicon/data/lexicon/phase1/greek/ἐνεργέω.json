@@ -1,0 +1,503 @@
+{
+  "lemma": "ἐνεργέω",
+  "language": "greek",
+  "total_occurrences": 21,
+  "forms": [
+    {
+      "form": "ἐνεργῶν",
+      "count": 3
+    },
+    {
+      "form": "ἐνεργεῖται",
+      "count": 2
+    },
+    {
+      "form": "ἐνεργουμένην",
+      "count": 2
+    },
+    {
+      "form": "ἐνεργοῦντος",
+      "count": 2
+    },
+    {
+      "form": "ἐνεργουμένη.",
+      "count": 2
+    },
+    {
+      "form": "ἐνεργοῦσιν",
+      "count": 2
+    },
+    {
+      "form": "ἐνεργεῖ",
+      "count": 1
+    },
+    {
+      "form": "ἐνεργουμένης",
+      "count": 1
+    },
+    {
+      "form": "ἐνεργεῖται,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐνήργηκεν",
+      "count": 1
+    },
+    {
+      "form": "ἐνεργεῖν",
+      "count": 1
+    },
+    {
+      "form": "ἐνεργήσας",
+      "count": 1
+    },
+    {
+      "form": "ἐνήργησεν",
+      "count": 1
+    },
+    {
+      "form": "ἐνηργεῖτο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 11,
+      "indicative": 9,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 17,
+      "perfect": 1,
+      "aorist": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 12,
+      "middle": 9
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:6",
+      "form": "ἐνεργῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 6,
+      "left_context": "εἰσίν, ⸂ὁ δὲ⸃ ⸀αὐτὸς θεός, ὁ",
+      "right_context": "τὰ πάντα ἐν πᾶσιν."
+    },
+    {
+      "ref": "1 Corinthians 12:11",
+      "form": "ἐνεργεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "πάντα δὲ ταῦτα",
+      "right_context": "τὸ ἓν καὶ τὸ αὐτὸ πνεῦμα,"
+    },
+    {
+      "ref": "1 Thessalonians 2:13",
+      "form": "ἐνεργεῖται",
+      "morph": "V-P-M-I-3S",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "⸂ἀληθῶς ἐστὶν⸃ λόγον θεοῦ, ὃς καὶ",
+      "right_context": "ἐν ὑμῖν τοῖς πιστεύουσιν."
+    },
+    {
+      "ref": "2 Corinthians 1:6",
+      "form": "ἐνεργουμένης",
+      "morph": "V-P-M-P",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "παρακαλούμεθα, ὑπὲρ τῆς ὑμῶν παρακλήσεως⸃ τῆς",
+      "right_context": "ἐν ὑπομονῇ τῶν αὐτῶν παθημάτων ὧν"
+    },
+    {
+      "ref": "2 Corinthians 4:12",
+      "form": "ἐνεργεῖται,",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "ὥστε ⸀ὁ θάνατος ἐν ἡμῖν",
+      "right_context": "ἡ δὲ ζωὴ ἐν ὑμῖν."
+    },
+    {
+      "ref": "2 Thessalonians 2:7",
+      "form": "ἐνεργεῖται",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "τὸ γὰρ μυστήριον ἤδη",
+      "right_context": "τῆς ἀνομίας· μόνον ὁ κατέχων ἄρτι"
+    },
+    {
+      "ref": "Colossians 1:29",
+      "form": "ἐνεργουμένην",
+      "morph": "V-P-M-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 29,
+      "left_context": "ἀγωνιζόμενος κατὰ τὴν ἐνέργειαν αὐτοῦ τὴν",
+      "right_context": "ἐν ἐμοὶ ἐν δυνάμει."
+    },
+    {
+      "ref": "Ephesians 1:11",
+      "form": "ἐνεργοῦντος",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "προορισθέντες κατὰ πρόθεσιν τοῦ τὰ πάντα",
+      "right_context": "κατὰ τὴν βουλὴν τοῦ θελήματος αὐτοῦ,"
+    },
+    {
+      "ref": "Ephesians 1:20",
+      "form": "⸀ἐνήργηκεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "ἣν",
+      "right_context": "ἐν τῷ Χριστῷ ἐγείρας αὐτὸν ⸀ἐκ"
+    },
+    {
+      "ref": "Ephesians 2:2",
+      "form": "ἐνεργοῦντος",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "τοῦ ἀέρος, τοῦ πνεύματος τοῦ νῦν",
+      "right_context": "ἐν τοῖς υἱοῖς τῆς ἀπειθείας·"
+    },
+    {
+      "ref": "Ephesians 3:20",
+      "form": "ἐνεργουμένην",
+      "morph": "V-P-M-P",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 20,
+      "left_context": "ἢ νοοῦμεν κατὰ τὴν δύναμιν τὴν",
+      "right_context": "ἐν ἡμῖν,"
+    },
+    {
+      "ref": "Philippians 2:13",
+      "form": "ἐνεργῶν",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "⸀θεὸς γάρ ἐστιν ὁ",
+      "right_context": "ἐν ὑμῖν καὶ τὸ θέλειν καὶ"
+    },
+    {
+      "ref": "Philippians 2:13",
+      "form": "ἐνεργεῖν",
+      "morph": "V-P-A-N",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "ὑμῖν καὶ τὸ θέλειν καὶ τὸ",
+      "right_context": "ὑπὲρ τῆς εὐδοκίας."
+    },
+    {
+      "ref": "Galatians 2:8",
+      "form": "ἐνεργήσας",
+      "morph": "V-A-A-P",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "ὁ γὰρ",
+      "right_context": "Πέτρῳ εἰς ἀποστολὴν τῆς περιτομῆς ἐνήργησεν"
+    },
+    {
+      "ref": "Galatians 2:8",
+      "form": "ἐνήργησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "ἐνεργήσας Πέτρῳ εἰς ἀποστολὴν τῆς περιτομῆς",
+      "right_context": "καὶ ἐμοὶ εἰς τὰ ἔθνη,"
+    },
+    {
+      "ref": "Galatians 3:5",
+      "form": "ἐνεργῶν",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "οὖν ἐπιχορηγῶν ὑμῖν τὸ πνεῦμα καὶ",
+      "right_context": "δυνάμεις ἐν ὑμῖν ἐξ ἔργων νόμου"
+    },
+    {
+      "ref": "Galatians 5:6",
+      "form": "ἐνεργουμένη.",
+      "morph": "V-P-M-P",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "οὔτε ἀκροβυστία, ἀλλὰ πίστις δι’ ἀγάπης",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 6:14",
+      "form": "ἐνεργοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "⸂ἐγήγερται ἐκ νεκρῶν⸃, καὶ διὰ τοῦτο",
+      "right_context": "αἱ δυνάμεις ἐν αὐτῷ·"
+    },
+    {
+      "ref": "Matthew 14:2",
+      "form": "ἐνεργοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 2,
+      "left_context": "νεκρῶν, καὶ διὰ τοῦτο αἱ δυνάμεις",
+      "right_context": "ἐν αὐτῷ."
+    },
+    {
+      "ref": "Romans 7:5",
+      "form": "ἐνηργεῖτο",
+      "morph": "V-I-M-I-3S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 5,
+      "left_context": "τῶν ἁμαρτιῶν τὰ διὰ τοῦ νόμου",
+      "right_context": "ἐν τοῖς μέλεσιν ἡμῶν εἰς τὸ"
+    },
+    {
+      "ref": "James 5:16",
+      "form": "ἐνεργουμένη.",
+      "morph": "V-P-M-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "ὅπως ἰαθῆτε. πολὺ ἰσχύει δέησις δικαίου",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Ephesians": 4,
+    "Galatians": 4,
+    "1 Corinthians": 2,
+    "2 Corinthians": 2,
+    "Philippians": 2,
+    "1 Thessalonians": 1,
+    "2 Thessalonians": 1,
+    "Colossians": 1,
+    "Mark": 1,
+    "Matthew": 1,
+    "Romans": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστολή",
+      "display": "apostolado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιτομή",
+      "display": "de·circuncisión",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "de·consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομονή",
+      "display": "paciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάθημα",
+      "display": "de·padecimientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μυστήριον",
+      "display": "misterio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνομία",
+      "display": "de·iniquidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατέχω",
+      "display": "reteniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνέργεια",
+      "display": "operación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόθεσις",
+      "display": "proposición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βουλή",
+      "display": "consejo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 1:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Ephesians 1:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Ephesians 2:2",
+      "reason": "occurs near πνεῦμα"
+    },
+    {
+      "ref": "Ephesians 3:20",
+      "reason": "occurs near δύναμις"
+    },
+    {
+      "ref": "Galatians 2:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 3:5",
+      "reason": "occurs near δύναμις, πνεῦμα"
+    },
+    {
+      "ref": "Galatians 5:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 12:11",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

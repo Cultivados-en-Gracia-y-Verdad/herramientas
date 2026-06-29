@@ -1,0 +1,80 @@
+{
+  "lemma": "ῥιπίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ῥιπιζομένῳ·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 1:6",
+      "form": "ῥιπιζομένῳ·",
+      "morph": "V-P-P-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "διακρινόμενος ἔοικεν κλύδωνι θαλάσσης ἀνεμιζομένῳ καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔοικα",
+      "display": "ha parecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλύδων",
+      "display": "oleaje",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "de·mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνεμίζομαι",
+      "display": "ser·agitado·por·el·viento",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:6",
+      "reason": "occurs near θάλασσα, κλύδων, ἀνεμίζομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

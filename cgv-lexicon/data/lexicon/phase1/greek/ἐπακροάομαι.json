@@ -1,0 +1,86 @@
+{
+  "lemma": "ἐπακροάομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπηκροῶντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:25",
+      "form": "ἐπηκροῶντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 25,
+      "left_context": "καὶ Σιλᾶς προσευχόμενοι ὕμνουν τὸν θεόν,",
+      "right_context": "δὲ αὐτῶν οἱ δέσμιοι·"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Σιλᾶς",
+      "display": "Silas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑμνέω",
+      "display": "cantaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέσμιος",
+      "display": "prisioneros",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:25",
+      "reason": "occurs near Σιλᾶς, δέσμιος, θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

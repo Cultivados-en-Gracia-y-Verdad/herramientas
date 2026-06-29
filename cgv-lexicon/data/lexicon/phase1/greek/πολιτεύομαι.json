@@ -1,0 +1,150 @@
+{
+  "lemma": "πολιτεύομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "πολιτεύεσθε,",
+      "count": 1
+    },
+    {
+      "form": "πεπολίτευμαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 1:27",
+      "form": "πολιτεύεσθε,",
+      "morph": "V-P-M-D-2P",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 27,
+      "left_context": "Μόνον ἀξίως τοῦ εὐαγγελίου τοῦ Χριστοῦ",
+      "right_context": "ἵνα εἴτε ἐλθὼν καὶ ἰδὼν ὑμᾶς"
+    },
+    {
+      "ref": "Acts 23:1",
+      "form": "πεπολίτευμαι",
+      "morph": "V-X-M-I-1S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 1,
+      "left_context": "Ἄνδρες ἀδελφοί, ἐγὼ πάσῃ συνειδήσει ἀγαθῇ",
+      "right_context": "τῷ θεῷ ἄχρι ταύτης τῆς ἡμέρας."
+    }
+  ],
+  "books": {
+    "Philippians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀξίως",
+      "display": "dignamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "de·evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴτε",
+      "display": "sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνείδησις",
+      "display": "conciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "buena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Philippians 1:27",
+      "form": "πολιτεύεσθε,",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "Μόνον ἀξίως τοῦ εὐαγγελίου τοῦ Χριστοῦ πολιτεύεσθε, ἵνα εἴτε ἐλθὼν καὶ ἰδὼν ὑμᾶς εἴτε ἀπὼν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 1:27",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 23:1",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,143 @@
+{
+  "lemma": "καταβάλλω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καταβαλλόμενοι",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:9",
+      "form": "καταβαλλόμενοι",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 9,
+      "left_context": "διωκόμενοι ἀλλ’ οὐκ ἐγκαταλειπόμενοι,",
+      "right_context": "ἀλλ’ οὐκ ἀπολλύμενοι,"
+    },
+    {
+      "ref": "Hebrews 6:1",
+      "form": "καταβαλλόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "τὴν τελειότητα φερώμεθα, μὴ πάλιν θεμέλιον",
+      "right_context": "μετανοίας ἀπὸ νεκρῶν ἔργων, καὶ πίστεως"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διώκω",
+      "display": "perseguidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκαταλείπω",
+      "display": "abandonados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελειότης",
+      "display": "perfección",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "lleváramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεμέλιος",
+      "display": "fundamento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετάνοια",
+      "display": "de·metanoia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "de·muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:9",
+      "negator": "οὐκ",
+      "clause_text": "διωκόμενοι ἀλλ’ οὐκ ἐγκαταλειπόμενοι, καταβαλλόμενοι ἀλλ’ οὐκ ἀπολλύμενοι,"
+    },
+    {
+      "ref": "Hebrews 6:1",
+      "negator": "μὴ",
+      "clause_text": "λόγον ἐπὶ τὴν τελειότητα φερώμεθα, μὴ πάλιν θεμέλιον καταβαλλόμενοι μετανοίας ἀπὸ νεκρῶν ἔργων, καὶ πίστεως ἐπὶ θεόν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:9",
+      "reason": "occurs near διώκω, ἀπόλλυμι, ἐγκαταλείπω"
+    },
+    {
+      "ref": "Hebrews 6:1",
+      "reason": "occurs near τελειότης, φέρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

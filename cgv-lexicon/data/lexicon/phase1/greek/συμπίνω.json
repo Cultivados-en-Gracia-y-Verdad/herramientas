@@ -1,0 +1,80 @@
+{
+  "lemma": "συμπίνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνεπίομεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:41",
+      "form": "συνεπίομεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 41,
+      "left_context": "τοῦ θεοῦ, ἡμῖν, οἵτινες συνεφάγομεν καὶ",
+      "right_context": "αὐτῷ μετὰ τὸ ἀναστῆναι αὐτὸν ἐκ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνεσθίω",
+      "display": "comimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:41",
+      "reason": "occurs near θεός, συνεσθίω, ἀνίστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

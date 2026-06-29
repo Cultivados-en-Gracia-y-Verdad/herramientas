@@ -1,0 +1,92 @@
+{
+  "lemma": "ἀναθάλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀνεθάλετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 4:10",
+      "form": "ἀνεθάλετε",
+      "morph": "V-A-A-I-2P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 10,
+      "left_context": "ἐν κυρίῳ μεγάλως ὅτι ἤδη ποτὲ",
+      "right_context": "τὸ ὑπὲρ ἐμοῦ φρονεῖν, ἐφ’ ᾧ"
+    }
+  ],
+  "books": {
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεγάλως",
+      "display": "grandemente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποτέ",
+      "display": "alguna·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρονέω",
+      "display": "pensar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 4:10",
+      "reason": "occurs near κύριος, μεγάλως, ποτέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

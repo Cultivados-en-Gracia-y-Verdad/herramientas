@@ -1,0 +1,165 @@
+{
+  "lemma": "ἐντυλίσσω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐνετύλιξεν",
+      "count": 2
+    },
+    {
+      "form": "ἐντετυλιγμένον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "John 20:7",
+      "form": "ἐντετυλιγμένον",
+      "morph": "V-X-P-P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 7,
+      "left_context": "μετὰ τῶν ὀθονίων κείμενον ἀλλὰ χωρὶς",
+      "right_context": "εἰς ἕνα τόπον·"
+    },
+    {
+      "ref": "Luke 23:53",
+      "form": "ἐνετύλιξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 53,
+      "left_context": "καὶ ⸀καθελὼν",
+      "right_context": "αὐτὸ σινδόνι, καὶ ἔθηκεν ⸀αὐτὸν ἐν"
+    },
+    {
+      "ref": "Matthew 27:59",
+      "form": "ἐνετύλιξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 59,
+      "left_context": "καὶ λαβὼν τὸ σῶμα ὁ Ἰωσὴφ",
+      "right_context": "⸀αὐτὸ σινδόνι καθαρᾷ,"
+    }
+  ],
+  "books": {
+    "John": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σινδών",
+      "display": "lienzo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀθόνιον",
+      "display": "de·lienzos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεῖμαι",
+      "display": "yaciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαιρέω",
+      "display": "bajado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "puso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωσήφ",
+      "display": "José",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαρός",
+      "display": "limpia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 20:7",
+      "reason": "occurs near εἷς, κεῖμαι, χωρίς"
+    },
+    {
+      "ref": "Luke 23:53",
+      "reason": "occurs near σινδών"
+    },
+    {
+      "ref": "Matthew 27:59",
+      "reason": "occurs near σινδών"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

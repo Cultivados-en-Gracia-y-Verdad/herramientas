@@ -1,0 +1,104 @@
+{
+  "lemma": "παράκειμαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παράκειταί",
+      "count": 1
+    },
+    {
+      "form": "παράκειται·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 7:18",
+      "form": "παράκειταί",
+      "morph": "V-P-M-I-3S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 18,
+      "left_context": "σαρκί μου, ἀγαθόν· τὸ γὰρ θέλειν",
+      "right_context": "μοι, τὸ δὲ κατεργάζεσθαι τὸ καλὸν"
+    },
+    {
+      "ref": "Romans 7:21",
+      "form": "παράκειται·",
+      "morph": "V-P-M-I-3S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 21,
+      "left_context": "τὸ καλὸν ὅτι ἐμοὶ τὸ κακὸν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Romans": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατεργάζομαι",
+      "display": "producir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακός",
+      "display": "malo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 7:18",
+      "reason": "occurs near θέλω, κατεργάζομαι, ἀγαθός"
+    },
+    {
+      "ref": "Romans 7:21",
+      "reason": "occurs near κακός, καλός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

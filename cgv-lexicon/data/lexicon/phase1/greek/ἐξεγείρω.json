@@ -1,0 +1,112 @@
+{
+  "lemma": "ἐξεγείρω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐξεγερεῖ",
+      "count": 1
+    },
+    {
+      "form": "ἐξήγειρά",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 6:14",
+      "form": "ἐξεγερεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "καὶ τὸν κύριον ἤγειρεν καὶ ἡμᾶς",
+      "right_context": "διὰ τῆς δυνάμεως αὐτοῦ."
+    },
+    {
+      "ref": "Romans 9:17",
+      "form": "ἐξήγειρά",
+      "morph": "V-A-A-I-1S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 17,
+      "left_context": "τῷ Φαραὼ ὅτι Εἰς αὐτὸ τοῦτο",
+      "right_context": "σε ὅπως ἐνδείξωμαι ἐν σοὶ τὴν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "de·poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαραώ",
+      "display": "Faraón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδείκνυμι",
+      "display": "demostre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 6:14",
+      "reason": "occurs near δύναμις, κύριος, ἐγείρω"
+    },
+    {
+      "ref": "Romans 9:17",
+      "reason": "occurs near Φαραώ, ὅπως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

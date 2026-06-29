@@ -1,0 +1,68 @@
+{
+  "lemma": "ἀστατέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀστατοῦμεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:11",
+      "form": "ἀστατοῦμεν",
+      "morph": "V-P-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "διψῶμεν καὶ γυμνιτεύομεν καὶ κολαφιζόμεθα καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυμνιτεύω",
+      "display": "estar·desnudo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολαφίζω",
+      "display": "son golpeado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 4:11",
+      "reason": "occurs near γυμνιτεύω, κολαφίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

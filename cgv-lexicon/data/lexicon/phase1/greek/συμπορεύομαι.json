@@ -1,0 +1,184 @@
+{
+  "lemma": "συμπορεύομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "συνεπορεύοντο",
+      "count": 1
+    },
+    {
+      "form": "Συνεπορεύοντο",
+      "count": 1
+    },
+    {
+      "form": "συνεπορεύετο",
+      "count": 1
+    },
+    {
+      "form": "συμπορεύονται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "imperfect": 3,
+      "present": 1
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 7:11",
+      "form": "συνεπορεύοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 11,
+      "left_context": "⸀ἐπορεύθη εἰς πόλιν καλουμένην Ναΐν, καὶ",
+      "right_context": "αὐτῷ οἱ μαθηταὶ ⸀αὐτοῦ καὶ ὄχλος"
+    },
+    {
+      "ref": "Luke 14:25",
+      "form": "Συνεπορεύοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 25,
+      "left_context": "",
+      "right_context": "δὲ αὐτῷ ὄχλοι πολλοί, καὶ στραφεὶς"
+    },
+    {
+      "ref": "Luke 24:15",
+      "form": "συνεπορεύετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 15,
+      "left_context": "καὶ συζητεῖν καὶ ⸀αὐτὸς Ἰησοῦς ἐγγίσας",
+      "right_context": "αὐτοῖς,"
+    },
+    {
+      "ref": "Mark 10:1",
+      "form": "συμπορεύονται",
+      "morph": "V-P-M-I-3P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 1,
+      "left_context": "Ἰουδαίας ⸀καὶ πέραν τοῦ Ἰορδάνου, καὶ",
+      "right_context": "πάλιν ὄχλοι πρὸς αὐτόν, καὶ ὡς"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ναΐν",
+      "display": "Naín",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συζητέω",
+      "display": "discutir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγίζω",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέραν",
+      "display": "al·otro·lado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰορδάνης",
+      "display": "de·Jordán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 14:25",
+      "reason": "occurs near ὄχλος"
+    },
+    {
+      "ref": "Luke 24:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 7:11",
+      "reason": "occurs near Ναΐν, καλέω, μαθητής"
+    },
+    {
+      "ref": "Mark 10:1",
+      "reason": "occurs near ὄχλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

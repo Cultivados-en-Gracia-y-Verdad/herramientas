@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐπιφαύσκω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιφαύσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 5:14",
+      "form": "ἐπιφαύσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "καὶ ἀνάστα ἐκ τῶν νεκρῶν, καὶ",
+      "right_context": "σοι ὁ Χριστός."
+    }
+  ],
+  "books": {
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levanta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "de·muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 5:14",
+      "reason": "occurs near Χριστός, νεκρός, ἀνίστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

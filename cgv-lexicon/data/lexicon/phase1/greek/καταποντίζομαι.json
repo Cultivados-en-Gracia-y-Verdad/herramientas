@@ -1,0 +1,136 @@
+{
+  "lemma": "καταποντίζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καταποντίζεσθαι",
+      "count": 1
+    },
+    {
+      "form": "καταποντισθῇ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 14:30",
+      "form": "καταποντίζεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 30,
+      "left_context": "τὸν ἄνεμον ⸀ἰσχυρὸν ἐφοβήθη, καὶ ἀρξάμενος",
+      "right_context": "ἔκραξεν λέγων· Κύριε, σῶσόν με."
+    },
+    {
+      "ref": "Matthew 18:6",
+      "form": "καταποντισθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 6,
+      "left_context": "ὀνικὸς ⸀εἰς τὸν τράχηλον αὐτοῦ καὶ",
+      "right_context": "ἐν τῷ πελάγει τῆς θαλάσσης."
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνεμος",
+      "display": "viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχυρός",
+      "display": "fuerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "fue temido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράζω",
+      "display": "clamó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "salva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τράχηλος",
+      "display": "cuello",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέλαγος",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "de·mar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 14:30",
+      "reason": "occurs near κράζω, φοβέομαι, ἄνεμος"
+    },
+    {
+      "ref": "Matthew 18:6",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

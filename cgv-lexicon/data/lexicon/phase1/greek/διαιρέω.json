@@ -1,0 +1,125 @@
+{
+  "lemma": "διαιρέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διαιροῦν",
+      "count": 1
+    },
+    {
+      "form": "διεῖλεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:11",
+      "form": "διαιροῦν",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "τὸ ἓν καὶ τὸ αὐτὸ πνεῦμα,",
+      "right_context": "ἰδίᾳ ἑκάστῳ καθὼς βούλεται."
+    },
+    {
+      "ref": "Luke 15:12",
+      "form": "διεῖλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 12,
+      "left_context": "ἐπιβάλλον μέρος τῆς οὐσίας· ⸂ὁ δὲ⸃",
+      "right_context": "αὐτοῖς τὸν βίον."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "quiere",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "parte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐσία",
+      "display": "de·hacienda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βίος",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 12:11",
+      "reason": "occurs near βούλομαι, εἷς, πνεῦμα"
+    },
+    {
+      "ref": "Luke 15:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

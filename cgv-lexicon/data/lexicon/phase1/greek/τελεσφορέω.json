@@ -1,0 +1,80 @@
+{
+  "lemma": "τελεσφορέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "τελεσφοροῦσιν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:14",
+      "form": "τελεσφοροῦσιν.",
+      "morph": "V-P-A-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 14,
+      "left_context": "τοῦ βίου πορευόμενοι συμπνίγονται καὶ οὐ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βίος",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "iendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμπνίγω",
+      "display": "son ahogado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 8:14",
+      "negator": "οὐ",
+      "clause_text": "καὶ ἡδονῶν τοῦ βίου πορευόμενοι συμπνίγονται καὶ οὐ τελεσφοροῦσιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:14",
+      "reason": "occurs near βίος, πορεύομαι, συμπνίγω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

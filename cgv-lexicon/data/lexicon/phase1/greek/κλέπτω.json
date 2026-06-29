@@ -1,0 +1,470 @@
+{
+  "lemma": "κλέπτω",
+  "language": "greek",
+  "total_occurrences": 13,
+  "forms": [
+    {
+      "form": "κλέψῃς,",
+      "count": 2
+    },
+    {
+      "form": "κλέπτουσιν·",
+      "count": 2
+    },
+    {
+      "form": "κλέψεις,",
+      "count": 2
+    },
+    {
+      "form": "κλέπτων",
+      "count": 1
+    },
+    {
+      "form": "κλεπτέτω,",
+      "count": 1
+    },
+    {
+      "form": "κλέψῃ",
+      "count": 1
+    },
+    {
+      "form": "κλέψωσιν",
+      "count": 1
+    },
+    {
+      "form": "ἔκλεψαν",
+      "count": 1
+    },
+    {
+      "form": "κλέπτειν",
+      "count": 1
+    },
+    {
+      "form": "κλέπτεις;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "imperative": 1,
+      "subjunctive": 4,
+      "indicative": 6,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 6,
+      "aorist": 5,
+      "future": 2
+    },
+    "voices": {
+      "active": 13
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 4:28",
+      "form": "κλέπτων",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 28,
+      "left_context": "ὁ",
+      "right_context": "μηκέτι κλεπτέτω, μᾶλλον δὲ κοπιάτω ἐργαζόμενος"
+    },
+    {
+      "ref": "Ephesians 4:28",
+      "form": "κλεπτέτω,",
+      "morph": "V-P-A-D-3S",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 28,
+      "left_context": "ὁ κλέπτων μηκέτι",
+      "right_context": "μᾶλλον δὲ κοπιάτω ἐργαζόμενος ⸂ταῖς ἰδίαις"
+    },
+    {
+      "ref": "John 10:10",
+      "form": "κλέψῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 10,
+      "verse": 10,
+      "left_context": "κλέπτης οὐκ ἔρχεται εἰ μὴ ἵνα",
+      "right_context": "καὶ θύσῃ καὶ ἀπολέσῃ· ἐγὼ ἦλθον"
+    },
+    {
+      "ref": "Luke 18:20",
+      "form": "κλέψῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 20,
+      "left_context": "οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ",
+      "right_context": "Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "κλέψῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ",
+      "right_context": "Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν"
+    },
+    {
+      "ref": "Matthew 6:19",
+      "form": "κλέπτουσιν·",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 19,
+      "left_context": "ἀφανίζει, καὶ ὅπου κλέπται διορύσσουσιν καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 6:20",
+      "form": "κλέπτουσιν·",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 20,
+      "left_context": "καὶ ὅπου κλέπται οὐ διορύσσουσιν οὐδὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 19:18",
+      "form": "κλέψεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 18,
+      "left_context": "Τὸ Οὐ φονεύσεις, Οὐ μοιχεύσεις, Οὐ",
+      "right_context": "Οὐ ψευδομαρτυρήσεις,"
+    },
+    {
+      "ref": "Matthew 27:64",
+      "form": "κλέψωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 64,
+      "left_context": "ἡμέρας, μήποτε ἐλθόντες οἱ μαθηταὶ ⸀αὐτοῦ",
+      "right_context": "αὐτὸν καὶ εἴπωσιν τῷ λαῷ· Ἠγέρθη"
+    },
+    {
+      "ref": "Matthew 28:13",
+      "form": "ἔκλεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 13,
+      "left_context": "ὅτι Οἱ μαθηταὶ αὐτοῦ νυκτὸς ἐλθόντες",
+      "right_context": "αὐτὸν ἡμῶν κοιμωμένων·"
+    },
+    {
+      "ref": "Romans 2:21",
+      "form": "κλέπτειν",
+      "morph": "V-P-A-N",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "σεαυτὸν οὐ διδάσκεις; ὁ κηρύσσων μὴ",
+      "right_context": "κλέπτεις;"
+    },
+    {
+      "ref": "Romans 2:21",
+      "form": "κλέπτεις;",
+      "morph": "V-P-A-I-2S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "οὐ διδάσκεις; ὁ κηρύσσων μὴ κλέπτειν",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 13:9",
+      "form": "κλέψεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "Romans",
+      "chapter": 13,
+      "verse": 9,
+      "left_context": "γάρ· Οὐ μοιχεύσεις, Οὐ φονεύσεις, Οὐ",
+      "right_context": "Οὐκ ἐπιθυμήσεις, καὶ εἴ τις ἑτέρα"
+    }
+  ],
+  "books": {
+    "Matthew": 5,
+    "Romans": 3,
+    "Ephesians": 2,
+    "John": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κλέπτω",
+      "display": "roba",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "μοιχεύω",
+      "display": "adulteres",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "φονεύω",
+      "display": "asesines",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδομαρτυρέω",
+      "display": "dar·falso·testimonio,",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabaja",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τιμάω",
+      "display": "honra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτης",
+      "display": "ladrónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διορύσσω",
+      "display": "excavan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κηρύσσω",
+      "display": "proclamando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάζομαι",
+      "display": "trabajando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θύω",
+      "display": "sacrifice",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destrua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστερέω",
+      "display": "defraudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοιμάομαι",
+      "display": "dormiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμέω",
+      "display": "desearás",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Ephesians 4:28",
+      "form": "κλεπτέτω,",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "ὁ κλέπτων μηκέτι κλεπτέτω, μᾶλλον δὲ κοπιάτω ἐργαζόμενος ⸂ταῖς ἰδίαις χερσὶν τὸ"
+    },
+    {
+      "ref": "John 10:10",
+      "form": "κλέψῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ὁ κλέπτης οὐκ ἔρχεται εἰ μὴ ἵνα κλέψῃ καὶ θύσῃ καὶ ἀπολέσῃ· ἐγὼ ἦλθον ἵνα ζωὴν",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 18:20",
+      "form": "κλέψῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "κλέψῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 10:10",
+      "negator": "μὴ",
+      "clause_text": "ὁ κλέπτης οὐκ ἔρχεται εἰ μὴ ἵνα κλέψῃ καὶ θύσῃ καὶ ἀπολέσῃ· ἐγὼ ἦλθον ἵνα ζωὴν"
+    },
+    {
+      "ref": "Luke 18:20",
+      "negator": "Μὴ",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν"
+    },
+    {
+      "ref": "Mark 10:19",
+      "negator": "Μὴ",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου"
+    },
+    {
+      "ref": "Matthew 6:20",
+      "negator": "οὐ",
+      "clause_text": "βρῶσις ἀφανίζει, καὶ ὅπου κλέπται οὐ διορύσσουσιν οὐδὲ κλέπτουσιν·"
+    },
+    {
+      "ref": "Matthew 19:18",
+      "negator": "Οὐ",
+      "clause_text": "Ἰησοῦς ⸀εἶπεν· Τὸ Οὐ φονεύσεις, Οὐ μοιχεύσεις, Οὐ κλέψεις, Οὐ ψευδομαρτυρήσεις,"
+    },
+    {
+      "ref": "Romans 2:21",
+      "negator": "μὴ",
+      "clause_text": "διδάσκων ἕτερον σεαυτὸν οὐ διδάσκεις; ὁ κηρύσσων μὴ κλέπτειν κλέπτεις;"
+    },
+    {
+      "ref": "Romans 2:21",
+      "negator": "μὴ",
+      "clause_text": "ἕτερον σεαυτὸν οὐ διδάσκεις; ὁ κηρύσσων μὴ κλέπτειν κλέπτεις;"
+    },
+    {
+      "ref": "Romans 13:9",
+      "negator": "Οὐ",
+      "clause_text": "τὸ γάρ· Οὐ μοιχεύσεις, Οὐ φονεύσεις, Οὐ κλέψεις, Οὐκ ἐπιθυμήσεις, καὶ εἴ τις ἑτέρα ἐντολή, ἐν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 4:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 19:18",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 27:64",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 28:13",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 6:19",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 6:20",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Romans 13:9",
+      "reason": "occurs near κλέπτω, μοιχεύω, φονεύω"
+    },
+    {
+      "ref": "Romans 2:21",
+      "reason": "occurs near κλέπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

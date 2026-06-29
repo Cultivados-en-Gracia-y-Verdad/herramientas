@@ -1,0 +1,123 @@
+{
+  "lemma": "προϋπάρχω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προϋπῆρχεν",
+      "count": 1
+    },
+    {
+      "form": "προϋπῆρχον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 8:9",
+      "form": "προϋπῆρχεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 9,
+      "left_context": "Ἀνὴρ δέ τις ὀνόματι Σίμων",
+      "right_context": "ἐν τῇ πόλει μαγεύων καὶ ⸀ἐξιστάνων"
+    },
+    {
+      "ref": "Luke 23:12",
+      "form": "προϋπῆρχον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 12,
+      "left_context": "ἐν αὐτῇ τῇ ἡμέρᾳ μετ’ ἀλλήλων·",
+      "right_context": "γὰρ ἐν ἔχθρᾳ ὄντες πρὸς ⸀αὑτούς."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαγεύω",
+      "display": "practicar·magia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔχθρα",
+      "display": "enemistad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 8:9",
+      "reason": "occurs near Σίμων, μαγεύω, πόλις"
+    },
+    {
+      "ref": "Luke 23:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "τροποφορέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐτροποφόρησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:18",
+      "form": "ἐτροποφόρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 18,
+      "left_context": "καί, ὡς τεσσερακονταετῆ χρόνον",
+      "right_context": "αὐτοὺς ἐν τῇ ἐρήμῳ,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τεσσερακονταετής",
+      "display": "cuarenta·años",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:18",
+      "reason": "occurs near τεσσερακονταετής, χρόνος, ἔρημος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

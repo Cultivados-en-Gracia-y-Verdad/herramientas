@@ -1,0 +1,289 @@
+{
+  "lemma": "ἐξαπατάω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἐξαπατάτω·",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐξαπατηθεῖσα",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐξηπάτησεν",
+      "count": 1
+    },
+    {
+      "form": "ἐξαπατήσῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐξηπάτησέν",
+      "count": 1
+    },
+    {
+      "form": "ἐξαπατῶσι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 1,
+      "indicative": 3,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 5,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 3:18",
+      "form": "ἐξαπατάτω·",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "Μηδεὶς ἑαυτὸν",
+      "right_context": "εἴ τις δοκεῖ σοφὸς εἶναι ἐν"
+    },
+    {
+      "ref": "1 Timothy 2:14",
+      "form": "⸀ἐξαπατηθεῖσα",
+      "morph": "V-A-P-P",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "Ἀδὰμ οὐκ ἠπατήθη, ἡ δὲ γυνὴ",
+      "right_context": "ἐν παραβάσει γέγονεν."
+    },
+    {
+      "ref": "2 Corinthians 11:3",
+      "form": "⸂ἐξηπάτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 3,
+      "left_context": "δὲ μή πως, ὡς ὁ ὄφις",
+      "right_context": "Εὕαν⸃ ἐν τῇ πανουργίᾳ αὐτοῦ, ⸀φθαρῇ"
+    },
+    {
+      "ref": "2 Thessalonians 2:3",
+      "form": "ἐξαπατήσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "μή τις ὑμᾶς",
+      "right_context": "κατὰ μηδένα τρόπον· ὅτι ἐὰν μὴ"
+    },
+    {
+      "ref": "Romans 7:11",
+      "form": "ἐξηπάτησέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 11,
+      "left_context": "ἁμαρτία ἀφορμὴν λαβοῦσα διὰ τῆς ἐντολῆς",
+      "right_context": "με καὶ δι’ αὐτῆς ἀπέκτεινεν."
+    },
+    {
+      "ref": "Romans 16:18",
+      "form": "ἐξαπατῶσι",
+      "morph": "V-P-A-I-3P",
+      "book": "Romans",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "καὶ διὰ τῆς χρηστολογίας καὶ εὐλογίας",
+      "right_context": "τὰς καρδίας τῶν ἀκάκων."
+    }
+  ],
+  "books": {
+    "Romans": 2,
+    "1 Corinthians": 1,
+    "1 Timothy": 1,
+    "2 Corinthians": 1,
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "parece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σοφός",
+      "display": "sabio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπατάω",
+      "display": "fue engañado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράβασις",
+      "display": "transgresión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄφις",
+      "display": "serpiente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Εὕα",
+      "display": "Eva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πανουργία",
+      "display": "astucia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρόπος",
+      "display": "modo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφορμή",
+      "display": "ocasión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "de·mandamiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "mató",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρηστολογία",
+      "display": "buenas·palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογία",
+      "display": "de·bendición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκακος",
+      "display": "de·inocentes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 3:18",
+      "form": "ἐξαπατάτω·",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "Μηδεὶς ἑαυτὸν ἐξαπατάτω· εἴ τις δοκεῖ σοφὸς εἶναι ἐν ὑμῖν ἐν"
+    },
+    {
+      "ref": "2 Thessalonians 2:3",
+      "form": "ἐξαπατήσῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "μή τις ὑμᾶς ἐξαπατήσῃ κατὰ μηδένα τρόπον· ὅτι ἐὰν μὴ ἔλθῃ ἡ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Thessalonians 2:3",
+      "negator": "μή",
+      "clause_text": "μή τις ὑμᾶς ἐξαπατήσῃ κατὰ μηδένα τρόπον· ὅτι ἐὰν μὴ ἔλθῃ ἡ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 3:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 16:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 7:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Timothy 2:14",
+      "reason": "occurs near γυνή, ἀπατάω"
+    },
+    {
+      "ref": "2 Corinthians 11:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Thessalonians 2:3",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

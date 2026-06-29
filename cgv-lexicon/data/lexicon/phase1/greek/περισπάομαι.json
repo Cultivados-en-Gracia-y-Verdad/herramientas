@@ -1,0 +1,80 @@
+{
+  "lemma": "περισπάομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "περιεσπᾶτο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:40",
+      "form": "περιεσπᾶτο",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 40,
+      "left_context": "ἡ δὲ Μάρθα",
+      "right_context": "περὶ πολλὴν διακονίαν· ἐπιστᾶσα δὲ εἶπεν·"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Μάρθα",
+      "display": "Marta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:40",
+      "reason": "occurs near Μάρθα, διακονία, πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

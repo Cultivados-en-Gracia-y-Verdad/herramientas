@@ -1,0 +1,278 @@
+{
+  "lemma": "λανθάνω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "λανθάνει",
+      "count": 1
+    },
+    {
+      "form": "λανθανέτω",
+      "count": 1
+    },
+    {
+      "form": "ἔλαθόν",
+      "count": 1
+    },
+    {
+      "form": "λανθάνειν",
+      "count": 1
+    },
+    {
+      "form": "ἔλαθεν",
+      "count": 1
+    },
+    {
+      "form": "λαθεῖν·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "imperative": 1,
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 3:5",
+      "form": "λανθάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "",
+      "right_context": "γὰρ αὐτοὺς τοῦτο θέλοντας ὅτι οὐρανοὶ"
+    },
+    {
+      "ref": "2 Peter 3:8",
+      "form": "λανθανέτω",
+      "morph": "V-P-A-D-3S",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "Ἓν δὲ τοῦτο μὴ",
+      "right_context": "ὑμᾶς, ἀγαπητοί, ὅτι μία ἡμέρα παρὰ"
+    },
+    {
+      "ref": "Hebrews 13:2",
+      "form": "ἔλαθόν",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "φιλοξενίας μὴ ἐπιλανθάνεσθε, διὰ ταύτης γὰρ",
+      "right_context": "τινες ξενίσαντες ἀγγέλους."
+    },
+    {
+      "ref": "Acts 26:26",
+      "form": "λανθάνειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 26,
+      "left_context": "βασιλεύς, πρὸς ὃν ⸀καὶ παρρησιαζόμενος λαλῶ·",
+      "right_context": "γὰρ ⸀αὐτὸν τούτων οὐ πείθομαι ⸀οὐθέν,"
+    },
+    {
+      "ref": "Luke 8:47",
+      "form": "ἔλαθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 47,
+      "left_context": "ἰδοῦσα δὲ ἡ γυνὴ ὅτι οὐκ",
+      "right_context": "τρέμουσα ἦλθεν καὶ προσπεσοῦσα αὐτῷ δι’"
+    },
+    {
+      "ref": "Mark 7:24",
+      "form": "λαθεῖν·",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 24,
+      "left_context": "οὐδένα ἤθελεν γνῶναι, καὶ οὐκ ἠδυνήθη",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Peter": 2,
+    "Hebrews": 1,
+    "Acts": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θέλω",
+      "display": "queriendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιλανθάνομαι",
+      "display": "olvidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξενίζω",
+      "display": "hospedados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησιάζομαι",
+      "display": "hablar·con·denuedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "es persuadido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρέμω",
+      "display": "temblando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσπίπτω",
+      "display": "caida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "fue podido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Peter 3:8",
+      "form": "λανθανέτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "Ἓν δὲ τοῦτο μὴ λανθανέτω ὑμᾶς, ἀγαπητοί, ὅτι μία ἡμέρα παρὰ κυρίῳ ὡς",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 3:8",
+      "negator": "μὴ",
+      "clause_text": "Ἓν δὲ τοῦτο μὴ λανθανέτω ὑμᾶς, ἀγαπητοί, ὅτι μία ἡμέρα παρὰ κυρίῳ ὡς"
+    },
+    {
+      "ref": "Acts 26:26",
+      "negator": "οὐ",
+      "clause_text": "τούτων ὁ βασιλεύς, πρὸς ὃν ⸀καὶ παρρησιαζόμενος λαλῶ· λανθάνειν γὰρ ⸀αὐτὸν τούτων οὐ πείθομαι ⸀οὐθέν, οὐ γάρ"
+    },
+    {
+      "ref": "Luke 8:47",
+      "negator": "οὐκ",
+      "clause_text": "ἰδοῦσα δὲ ἡ γυνὴ ὅτι οὐκ ἔλαθεν τρέμουσα ἦλθεν καὶ προσπεσοῦσα αὐτῷ δι’ ἣν αἰτίαν"
+    },
+    {
+      "ref": "Mark 7:24",
+      "negator": "οὐκ",
+      "clause_text": "εἰς οἰκίαν οὐδένα ἤθελεν γνῶναι, καὶ οὐκ ἠδυνήθη λαθεῖν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 3:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Peter 3:5",
+      "reason": "occurs near θέλω"
+    },
+    {
+      "ref": "Acts 26:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 13:2",
+      "reason": "occurs near ἐπιλανθάνομαι"
+    },
+    {
+      "ref": "Luke 8:47",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 7:24",
+      "reason": "occurs near θέλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

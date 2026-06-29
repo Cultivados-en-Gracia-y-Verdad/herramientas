@@ -1,0 +1,679 @@
+{
+  "lemma": "ὑποστρέφω",
+  "language": "greek",
+  "total_occurrences": 35,
+  "forms": [
+    {
+      "form": "ὑπέστρεψαν",
+      "count": 8
+    },
+    {
+      "form": "ὑπέστρεψεν",
+      "count": 5
+    },
+    {
+      "form": "ὑποστρέφειν",
+      "count": 3
+    },
+    {
+      "form": "ὑποστρέψαντες",
+      "count": 3
+    },
+    {
+      "form": "ὑποστρέψασαι",
+      "count": 2
+    },
+    {
+      "form": "⸀ὑποστρέψαι",
+      "count": 1
+    },
+    {
+      "form": "ὑπέστρεψα",
+      "count": 1
+    },
+    {
+      "form": "ὑποστρέφοντι",
+      "count": 1
+    },
+    {
+      "form": "⸀ὑπέστρεφον",
+      "count": 1
+    },
+    {
+      "form": "ὑποστρέφων",
+      "count": 1
+    },
+    {
+      "form": "ὑπέστρεψαν,",
+      "count": 1
+    },
+    {
+      "form": "ὑποστρέψαντι",
+      "count": 1
+    },
+    {
+      "form": "ὑπέστρεψεν.",
+      "count": 1
+    },
+    {
+      "form": "Ὑπόστρεφε",
+      "count": 1
+    },
+    {
+      "form": "⸀ὑποστρέφειν",
+      "count": 1
+    },
+    {
+      "form": "Ὑπέστρεψαν",
+      "count": 1
+    },
+    {
+      "form": "Ὑποστρέψω",
+      "count": 1
+    },
+    {
+      "form": "ὑποστρέψαι.",
+      "count": 1
+    },
+    {
+      "form": "ὑπέστρεφον.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 6,
+      "indicative": 20,
+      "participle": 8,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 25,
+      "present": 7,
+      "imperfect": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 35
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:21",
+      "form": "⸀ὑποστρέψαι",
+      "morph": "V-A-A-N",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "τὴν ὁδὸν τῆς δικαιοσύνης ἢ ἐπιγνοῦσιν",
+      "right_context": "ἐκ τῆς παραδοθείσης αὐτοῖς ἁγίας ἐντολῆς·"
+    },
+    {
+      "ref": "Galatians 1:17",
+      "form": "ὑπέστρεψα",
+      "morph": "V-A-A-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 17,
+      "left_context": "ἀλλὰ ἀπῆλθον εἰς Ἀραβίαν, καὶ πάλιν",
+      "right_context": "εἰς Δαμασκόν."
+    },
+    {
+      "ref": "Hebrews 7:1",
+      "form": "ὑποστρέφοντι",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 1,
+      "left_context": "θεοῦ τοῦ ὑψίστου, ⸀ὁ συναντήσας Ἀβραὰμ",
+      "right_context": "ἀπὸ τῆς κοπῆς τῶν βασιλέων καὶ"
+    },
+    {
+      "ref": "Acts 1:12",
+      "form": "ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "Τότε",
+      "right_context": "εἰς Ἰερουσαλὴμ ἀπὸ ὄρους τοῦ καλουμένου"
+    },
+    {
+      "ref": "Acts 8:25",
+      "form": "⸀ὑπέστρεφον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 25,
+      "left_context": "καὶ λαλήσαντες τὸν λόγον τοῦ κυρίου",
+      "right_context": "εἰς ⸀Ἱεροσόλυμα, πολλάς τε κώμας τῶν"
+    },
+    {
+      "ref": "Acts 8:28",
+      "form": "ὑποστρέφων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 28,
+      "left_context": "ἦν ⸀τε",
+      "right_context": "καὶ καθήμενος ἐπὶ τοῦ ἅρματος αὐτοῦ"
+    },
+    {
+      "ref": "Acts 12:25",
+      "form": "ὑπέστρεψαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 25,
+      "left_context": "Βαρναβᾶς δὲ καὶ Σαῦλος",
+      "right_context": "⸀εἰς Ἰερουσαλὴμ πληρώσαντες τὴν διακονίαν, ⸀συμπαραλαβόντες"
+    },
+    {
+      "ref": "Acts 13:13",
+      "form": "ὑπέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 13,
+      "left_context": "Παμφυλίας· Ἰωάννης δὲ ἀποχωρήσας ἀπ’ αὐτῶν",
+      "right_context": "εἰς Ἱεροσόλυμα."
+    },
+    {
+      "ref": "Acts 13:34",
+      "form": "ὑποστρέφειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 34,
+      "left_context": "ἀνέστησεν αὐτὸν ἐκ νεκρῶν μηκέτι μέλλοντα",
+      "right_context": "εἰς διαφθοράν, οὕτως εἴρηκεν ὅτι Δώσω"
+    },
+    {
+      "ref": "Acts 14:21",
+      "form": "ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 21,
+      "left_context": "τὴν πόλιν ἐκείνην καὶ μαθητεύσαντες ἱκανοὺς",
+      "right_context": "εἰς τὴν Λύστραν καὶ ⸀εἰς Ἰκόνιον"
+    },
+    {
+      "ref": "Acts 20:3",
+      "form": "ὑποστρέφειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 3,
+      "left_context": "εἰς τὴν Συρίαν ἐγένετο ⸀γνώμης τοῦ",
+      "right_context": "διὰ Μακεδονίας."
+    },
+    {
+      "ref": "Acts 21:6",
+      "form": "ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 6,
+      "left_context": "⸀ἐνέβημεν εἰς τὸ πλοῖον, ἐκεῖνοι δὲ",
+      "right_context": "εἰς τὰ ἴδια."
+    },
+    {
+      "ref": "Acts 22:17",
+      "form": "ὑποστρέψαντι",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 17,
+      "left_context": "Ἐγένετο δέ μοι",
+      "right_context": "εἰς Ἰερουσαλὴμ καὶ προσευχομένου μου ἐν"
+    },
+    {
+      "ref": "Acts 23:32",
+      "form": "ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 32,
+      "left_context": "ἐάσαντες τοὺς ἱππεῖς ⸀ἀπέρχεσθαι σὺν αὐτῷ",
+      "right_context": "εἰς τὴν παρεμβολήν·"
+    },
+    {
+      "ref": "Luke 1:56",
+      "form": "ὑπέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 56,
+      "left_context": "σὺν αὐτῇ ⸀ὡς μῆνας τρεῖς, καὶ",
+      "right_context": "εἰς τὸν οἶκον αὐτῆς."
+    },
+    {
+      "ref": "Luke 2:20",
+      "form": "ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "καὶ",
+      "right_context": "οἱ ποιμένες δοξάζοντες καὶ αἰνοῦντες τὸν"
+    },
+    {
+      "ref": "Luke 2:43",
+      "form": "ὑποστρέφειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 43,
+      "left_context": "καὶ τελειωσάντων τὰς ἡμέρας, ἐν τῷ",
+      "right_context": "αὐτοὺς ὑπέμεινεν Ἰησοῦς ὁ παῖς ἐν"
+    },
+    {
+      "ref": "Luke 2:45",
+      "form": "ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 45,
+      "left_context": "καὶ μὴ ⸀εὑρόντες",
+      "right_context": "εἰς Ἰερουσαλὴμ ⸀ἀναζητοῦντες αὐτόν."
+    },
+    {
+      "ref": "Luke 4:1",
+      "form": "ὑπέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "Ἰησοῦς δὲ ⸂πλήρης πνεύματος ἁγίου⸃",
+      "right_context": "ἀπὸ τοῦ Ἰορδάνου, καὶ ἤγετο ἐν"
+    },
+    {
+      "ref": "Luke 4:14",
+      "form": "ὑπέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "Καὶ",
+      "right_context": "ὁ Ἰησοῦς ἐν τῇ δυνάμει τοῦ"
+    },
+    {
+      "ref": "Luke 7:10",
+      "form": "ὑποστρέψαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "καὶ",
+      "right_context": "⸂εἰς τὸν οἶκον οἱ πεμφθέντες⸃ εὗρον"
+    },
+    {
+      "ref": "Luke 8:37",
+      "form": "ὑπέστρεψεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 37,
+      "left_context": "συνείχοντο· αὐτὸς δὲ ἐμβὰς ⸀εἰς πλοῖον",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 8:39",
+      "form": "Ὑπόστρεφε",
+      "morph": "V-P-A-D-2S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 39,
+      "left_context": "",
+      "right_context": "εἰς τὸν οἶκόν σου, καὶ διηγοῦ"
+    },
+    {
+      "ref": "Luke 8:40",
+      "form": "⸀ὑποστρέφειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 40,
+      "left_context": "⸂Ἐν δὲ⸃ τῷ",
+      "right_context": "τὸν Ἰησοῦν ἀπεδέξατο αὐτὸν ὁ ὄχλος,"
+    },
+    {
+      "ref": "Luke 9:10",
+      "form": "ὑποστρέψαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "Καὶ",
+      "right_context": "οἱ ἀπόστολοι διηγήσαντο αὐτῷ ὅσα ἐποίησαν."
+    },
+    {
+      "ref": "Luke 10:17",
+      "form": "Ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 17,
+      "left_context": "",
+      "right_context": "δὲ οἱ ἑβδομήκοντα ⸀δύο μετὰ χαρᾶς"
+    },
+    {
+      "ref": "Luke 11:24",
+      "form": "Ὑποστρέψω",
+      "morph": "V-F-A-I-1S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 24,
+      "left_context": "ζητοῦν ἀνάπαυσιν, καὶ μὴ ⸀εὑρίσκον λέγει·",
+      "right_context": "εἰς τὸν οἶκόν μου ὅθεν ἐξῆλθον·"
+    },
+    {
+      "ref": "Luke 17:15",
+      "form": "ὑπέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 15,
+      "left_context": "δὲ ἐξ αὐτῶν, ἰδὼν ὅτι ἰάθη,",
+      "right_context": "μετὰ φωνῆς μεγάλης δοξάζων τὸν θεόν,"
+    },
+    {
+      "ref": "Luke 17:18",
+      "form": "ὑποστρέψαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 18,
+      "left_context": "οὐχ εὑρέθησαν",
+      "right_context": "δοῦναι δόξαν τῷ θεῷ εἰ μὴ"
+    },
+    {
+      "ref": "Luke 19:12",
+      "form": "ὑποστρέψαι.",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 12,
+      "left_context": "χώραν μακρὰν λαβεῖν ἑαυτῷ βασιλείαν καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 23:48",
+      "form": "ὑπέστρεφον.",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 48,
+      "left_context": "⸀θεωρήσαντες τὰ γενόμενα, ⸀τύπτοντες τὰ στήθη",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 23:56",
+      "form": "ὑποστρέψασαι",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 56,
+      "left_context": "",
+      "right_context": "δὲ ἡτοίμασαν ἀρώματα καὶ μύρα. Καὶ"
+    },
+    {
+      "ref": "Luke 24:9",
+      "form": "ὑποστρέψασαι",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 9,
+      "left_context": "καὶ",
+      "right_context": "ἀπὸ τοῦ μνημείου ἀπήγγειλαν ταῦτα πάντα"
+    },
+    {
+      "ref": "Luke 24:33",
+      "form": "ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 33,
+      "left_context": "καὶ ἀναστάντες αὐτῇ τῇ ὥρᾳ",
+      "right_context": "εἰς Ἰερουσαλήμ, καὶ εὗρον ⸀ἠθροισμένους τοὺς"
+    },
+    {
+      "ref": "Luke 24:52",
+      "form": "ὑπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 52,
+      "left_context": "καὶ αὐτοὶ ⸂[προσκυνήσαντες αὐτὸν]⸃",
+      "right_context": "εἰς Ἰερουσαλὴμ μετὰ χαρᾶς μεγάλης,"
+    }
+  ],
+  "books": {
+    "Luke": 21,
+    "Acts": 11,
+    "2 Peter": 1,
+    "Galatians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallados",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "de·grande",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconocidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀραβία",
+      "display": "Arabia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαμασκός",
+      "display": "Damasco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕψιστος",
+      "display": "de·Altísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναντάω",
+      "display": "encontrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπή",
+      "display": "de·corte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "de·reyes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 8:39",
+      "form": "Ὑπόστρεφε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Ὑπόστρεφε εἰς τὸν οἶκόν σου, καὶ διηγοῦ ὅσα ⸂σοι"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 2:45",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ ⸀εὑρόντες ὑπέστρεψαν εἰς Ἰερουσαλὴμ ⸀ἀναζητοῦντες αὐτόν."
+    },
+    {
+      "ref": "Luke 11:24",
+      "negator": "μὴ",
+      "clause_text": "ἀνύδρων τόπων ζητοῦν ἀνάπαυσιν, καὶ μὴ ⸀εὑρίσκον λέγει· Ὑποστρέψω εἰς τὸν οἶκόν μου ὅθεν ἐξῆλθον·"
+    },
+    {
+      "ref": "Luke 17:18",
+      "negator": "οὐχ",
+      "clause_text": "οὐχ εὑρέθησαν ὑποστρέψαντες δοῦναι δόξαν τῷ θεῷ εἰ μὴ ὁ ἀλλογενὴς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:39",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 10:17",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 11:24",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 17:15",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 17:18",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 19:12",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 1:56",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 23:48",
+      "reason": "frequent in Luke"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

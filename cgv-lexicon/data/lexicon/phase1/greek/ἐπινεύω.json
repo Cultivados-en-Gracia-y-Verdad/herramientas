@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐπινεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπένευσεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 18:20",
+      "form": "ἐπένευσεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 20,
+      "left_context": "αὐτῶν ἐπὶ πλείονα χρόνον ⸀μεῖναι οὐκ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μένω",
+      "display": "permanecer",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 18:20",
+      "negator": "οὐκ",
+      "clause_text": "ἐρωτώντων δὲ αὐτῶν ἐπὶ πλείονα χρόνον ⸀μεῖναι οὐκ ἐπένευσεν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:20",
+      "reason": "occurs near μένω, πολύς, χρόνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

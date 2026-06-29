@@ -1,0 +1,74 @@
+{
+  "lemma": "διχάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διχάσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 10:35",
+      "form": "διχάσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 35,
+      "left_context": "ἦλθον γὰρ",
+      "right_context": "ἄνθρωπον κατὰ τοῦ πατρὸς αὐτοῦ καὶ"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vine",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "de·padre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 10:35",
+      "reason": "occurs near πατήρ, ἄνθρωπος, ἔρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

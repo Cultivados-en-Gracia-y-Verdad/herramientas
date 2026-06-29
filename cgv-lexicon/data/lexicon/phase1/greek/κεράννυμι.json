@@ -1,0 +1,135 @@
+{
+  "lemma": "κεράννυμι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "κεκερασμένου",
+      "count": 1
+    },
+    {
+      "form": "ἐκέρασεν",
+      "count": 1
+    },
+    {
+      "form": "κεράσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 14:10",
+      "form": "κεκερασμένου",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 10,
+      "left_context": "οἴνου τοῦ θυμοῦ τοῦ θεοῦ τοῦ",
+      "right_context": "ἀκράτου ἐν τῷ ποτηρίῳ τῆς ὀργῆς"
+    },
+    {
+      "ref": "Revelation 18:6",
+      "form": "ἐκέρασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 6,
+      "left_context": "ἔργα αὐτῆς· ἐν τῷ ποτηρίῳ ᾧ",
+      "right_context": "κεράσατε αὐτῇ διπλοῦν·"
+    },
+    {
+      "ref": "Revelation 18:6",
+      "form": "κεράσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 6,
+      "left_context": "αὐτῆς· ἐν τῷ ποτηρίῳ ᾧ ἐκέρασεν",
+      "right_context": "αὐτῇ διπλοῦν·"
+    }
+  ],
+  "books": {
+    "Revelation": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ποτήριον",
+      "display": "copa",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κεράννυμι",
+      "display": "mezclad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διπλοῦς",
+      "display": "doble",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θυμός",
+      "display": "de·ira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκρατος",
+      "display": "de·puro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Revelation 18:6",
+      "form": "κεράσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "τὰ ἔργα αὐτῆς· ἐν τῷ ποτηρίῳ ᾧ ἐκέρασεν κεράσατε αὐτῇ διπλοῦν·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 18:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 14:10",
+      "reason": "occurs near θεός, θυμός, κεράννυμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

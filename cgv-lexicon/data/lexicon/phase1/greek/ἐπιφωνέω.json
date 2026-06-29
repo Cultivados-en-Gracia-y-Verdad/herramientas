@@ -1,0 +1,184 @@
+{
+  "lemma": "ἐπιφωνέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐπεφώνουν",
+      "count": 2
+    },
+    {
+      "form": "ἐπεφώνει·",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπεφώνουν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "imperfect": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 12:22",
+      "form": "ἐπεφώνει·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 22,
+      "left_context": "ὁ δὲ δῆμος",
+      "right_context": "⸂Θεοῦ φωνὴ⸃ καὶ οὐκ ἀνθρώπου."
+    },
+    {
+      "ref": "Acts 21:34",
+      "form": "⸀ἐπεφώνουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 34,
+      "left_context": "ἄλλοι δὲ ἄλλο τι",
+      "right_context": "ἐν τῷ ὄχλῳ· μὴ ⸂δυναμένου δὲ"
+    },
+    {
+      "ref": "Acts 22:24",
+      "form": "ἐπεφώνουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 24,
+      "left_context": "ἵνα ἐπιγνῷ δι’ ἣν αἰτίαν οὕτως",
+      "right_context": "αὐτῷ."
+    },
+    {
+      "ref": "Luke 23:21",
+      "form": "ἐπεφώνουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 21,
+      "left_context": "οἱ δὲ",
+      "right_context": "λέγοντες· ⸂Σταύρου σταύρου⸃ αὐτόν."
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄλλος",
+      "display": "otros",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρόω",
+      "display": "crucifica",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δῆμος",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconoca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτία",
+      "display": "causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 12:22",
+      "negator": "οὐκ",
+      "clause_text": "ὁ δὲ δῆμος ἐπεφώνει· ⸂Θεοῦ φωνὴ⸃ καὶ οὐκ ἀνθρώπου."
+    },
+    {
+      "ref": "Acts 21:34",
+      "negator": "μὴ",
+      "clause_text": "ἄλλοι δὲ ἄλλο τι ⸀ἐπεφώνουν ἐν τῷ ὄχλῳ· μὴ ⸂δυναμένου δὲ αὐτοῦ⸃ γνῶναι"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:22",
+      "reason": "occurs near δῆμος, θεός, φωνή"
+    },
+    {
+      "ref": "Acts 21:34",
+      "reason": "occurs near ἄλλος"
+    },
+    {
+      "ref": "Acts 22:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 23:21",
+      "reason": "occurs near σταυρόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

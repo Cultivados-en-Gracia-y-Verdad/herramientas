@@ -1,0 +1,117 @@
+{
+  "lemma": "συκοφαντέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συκοφαντήσητε,",
+      "count": 1
+    },
+    {
+      "form": "ἐσυκοφάντησα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 3:14",
+      "form": "συκοφαντήσητε,",
+      "morph": "V-A-A-S-2P",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "καὶ εἶπεν ⸀αὐτοῖς· Μηδένα διασείσητε μηδὲ",
+      "right_context": "καὶ ἀρκεῖσθε τοῖς ὀψωνίοις ὑμῶν."
+    },
+    {
+      "ref": "Luke 19:8",
+      "form": "ἐσυκοφάντησα",
+      "morph": "V-A-A-I-1S",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 8,
+      "left_context": "πτωχοῖς δίδωμι⸃, καὶ εἴ τινός τι",
+      "right_context": "ἀποδίδωμι τετραπλοῦν."
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διασείω",
+      "display": "extorsionéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρκέω",
+      "display": "bastad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψώνιον",
+      "display": "salarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "do",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolvo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τετραπλοῦς",
+      "display": "cuádruple",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 3:14",
+      "negator": "μηδὲ",
+      "clause_text": "καὶ ἡμεῖς⸃; καὶ εἶπεν ⸀αὐτοῖς· Μηδένα διασείσητε μηδὲ συκοφαντήσητε, καὶ ἀρκεῖσθε τοῖς ὀψωνίοις ὑμῶν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 19:8",
+      "reason": "occurs near δίδωμι, ἀποδίδωμι"
+    },
+    {
+      "ref": "Luke 3:14",
+      "reason": "occurs near διασείω, ἀρκέω, ὀψώνιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

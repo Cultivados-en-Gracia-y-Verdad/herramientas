@@ -1,0 +1,223 @@
+{
+  "lemma": "κατάγνυμι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κατέαξαν",
+      "count": 2
+    },
+    {
+      "form": "κατεαγῶσιν",
+      "count": 1
+    },
+    {
+      "form": "κατεάξει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "John 19:31",
+      "form": "κατεαγῶσιν",
+      "morph": "V-A-P-S-3P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 31,
+      "left_context": "τοῦ σαββάτου, ἠρώτησαν τὸν Πιλᾶτον ἵνα",
+      "right_context": "αὐτῶν τὰ σκέλη καὶ ἀρθῶσιν."
+    },
+    {
+      "ref": "John 19:32",
+      "form": "κατέαξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 32,
+      "left_context": "οἱ στρατιῶται, καὶ τοῦ μὲν πρώτου",
+      "right_context": "τὰ σκέλη καὶ τοῦ ἄλλου τοῦ"
+    },
+    {
+      "ref": "John 19:33",
+      "form": "κατέαξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 33,
+      "left_context": "ὡς εἶδον ⸂ἤδη αὐτὸν⸃ τεθνηκότα, οὐ",
+      "right_context": "αὐτοῦ τὰ σκέλη,"
+    },
+    {
+      "ref": "Matthew 12:20",
+      "form": "κατεάξει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "κάλαμον συντετριμμένον οὐ",
+      "right_context": "καὶ λίνον τυφόμενον οὐ σβέσει, ἕως"
+    }
+  ],
+  "books": {
+    "John": 3,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σκέλος",
+      "display": "piernas",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "de·sábado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρωτάω",
+      "display": "preguntaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἴρω",
+      "display": "levanten",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατιώτης",
+      "display": "soldados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "de·primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "de·otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνῄσκω",
+      "display": "muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάλαμος",
+      "display": "caña",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συντρίβω",
+      "display": "quebrantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίνον",
+      "display": "lino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τύφομαι",
+      "display": "humeante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σβέννυμι",
+      "display": "apagará",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 19:33",
+      "negator": "οὐ",
+      "clause_text": "Ἰησοῦν ἐλθόντες, ὡς εἶδον ⸂ἤδη αὐτὸν⸃ τεθνηκότα, οὐ κατέαξαν αὐτοῦ τὰ σκέλη,"
+    },
+    {
+      "ref": "Matthew 12:20",
+      "negator": "οὐ",
+      "clause_text": "κάλαμον συντετριμμένον οὐ κατεάξει καὶ λίνον τυφόμενον οὐ σβέσει, ἕως ἂν ἐκβάλῃ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 19:31",
+      "reason": "occurs near Πιλᾶτος, αἴρω, σάββατον"
+    },
+    {
+      "ref": "John 19:32",
+      "reason": "occurs near σκέλος"
+    },
+    {
+      "ref": "John 19:33",
+      "reason": "occurs near σκέλος"
+    },
+    {
+      "ref": "Matthew 12:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

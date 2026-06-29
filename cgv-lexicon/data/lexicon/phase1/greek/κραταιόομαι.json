@@ -1,0 +1,197 @@
+{
+  "lemma": "κραταιόομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐκραταιοῦτο",
+      "count": 2
+    },
+    {
+      "form": "κραταιοῦσθε.",
+      "count": 1
+    },
+    {
+      "form": "κραταιωθῆναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:13",
+      "form": "κραταιοῦσθε.",
+      "morph": "V-P-P-D-2P",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 13,
+      "left_context": "Γρηγορεῖτε, στήκετε ἐν τῇ πίστει, ἀνδρίζεσθε,",
+      "right_context": ""
+    },
+    {
+      "ref": "Ephesians 3:16",
+      "form": "κραταιωθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "⸂τὸ πλοῦτος⸃ τῆς δόξης αὐτοῦ δυνάμει",
+      "right_context": "διὰ τοῦ πνεύματος αὐτοῦ εἰς τὸν"
+    },
+    {
+      "ref": "Luke 1:80",
+      "form": "ἐκραταιοῦτο",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 80,
+      "left_context": "Τὸ δὲ παιδίον ηὔξανε καὶ",
+      "right_context": "πνεύματι, καὶ ἦν ἐν ταῖς ἐρήμοις"
+    },
+    {
+      "ref": "Luke 2:40",
+      "form": "ἐκραταιοῦτο",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 40,
+      "left_context": "Τὸ δὲ παιδίον ηὔξανεν καὶ",
+      "right_context": "⸂πληρούμενον σοφίᾳ⸃, καὶ χάρις θεοῦ ἦν"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "1 Corinthians": 1,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παιδίον",
+      "display": "niño",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αὐξάνω",
+      "display": "crecía",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στήκω",
+      "display": "estar·firme",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνδρίζομαι",
+      "display": "portarse·varonilmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῦτος",
+      "display": "riqueza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "de·gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumplido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σοφία",
+      "display": "sabiduría",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 16:13",
+      "form": "κραταιοῦσθε.",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "Γρηγορεῖτε, στήκετε ἐν τῇ πίστει, ἀνδρίζεσθε, κραταιοῦσθε."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 16:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 1:80",
+      "reason": "occurs near αὐξάνω, παιδίον, πνεῦμα"
+    },
+    {
+      "ref": "Luke 2:40",
+      "reason": "occurs near αὐξάνω, παιδίον"
+    },
+    {
+      "ref": "Ephesians 3:16",
+      "reason": "occurs near πνεῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

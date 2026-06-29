@@ -1,0 +1,106 @@
+{
+  "lemma": "μεταίρω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μετῆρεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 13:53",
+      "form": "μετῆρεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 53,
+      "left_context": "ἐτέλεσεν ὁ Ἰησοῦς τὰς παραβολὰς ταύτας,",
+      "right_context": "ἐκεῖθεν."
+    },
+    {
+      "ref": "Matthew 19:1",
+      "form": "μετῆρεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 1,
+      "left_context": "ἐτέλεσεν ὁ Ἰησοῦς τοὺς λόγους τούτους,",
+      "right_context": "ἀπὸ τῆς Γαλιλαίας καὶ ἦλθεν εἰς"
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραβολή",
+      "display": "parábolas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖθεν",
+      "display": "de·allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλιλαία",
+      "display": "de·Galilea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:53",
+      "reason": "occurs near παραβολή, ἐκεῖθεν, Ἰησοῦς"
+    },
+    {
+      "ref": "Matthew 19:1",
+      "reason": "occurs near Γαλιλαία, λόγος, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

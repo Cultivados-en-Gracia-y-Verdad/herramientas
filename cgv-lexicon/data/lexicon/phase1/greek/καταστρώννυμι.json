@@ -1,0 +1,80 @@
+{
+  "lemma": "καταστρώννυμι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατεστρώθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:5",
+      "form": "κατεστρώθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 5,
+      "left_context": "τοῖς πλείοσιν αὐτῶν ηὐδόκησεν ὁ θεός,",
+      "right_context": "γὰρ ἐν τῇ ἐρήμῳ."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐδοκέω",
+      "display": "complació",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 10:5",
+      "reason": "occurs near εὐδοκέω, θεός, πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

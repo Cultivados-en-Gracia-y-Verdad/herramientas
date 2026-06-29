@@ -1,0 +1,86 @@
+{
+  "lemma": "κουφίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκούφιζον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:38",
+      "form": "ἐκούφιζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 38,
+      "left_context": "κορεσθέντες ⸀δὲ τροφῆς",
+      "right_context": "τὸ πλοῖον ἐκβαλλόμενοι τὸν σῖτον εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κορέννυμι",
+      "display": "saciados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τροφή",
+      "display": "de·alimento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulsando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῖτος",
+      "display": "trigo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:38",
+      "reason": "occurs near κορέννυμι, πλοῖον, σῖτος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

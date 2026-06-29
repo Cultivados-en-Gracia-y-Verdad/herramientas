@@ -1,0 +1,390 @@
+{
+  "lemma": "χωρέω",
+  "language": "greek",
+  "total_occurrences": 10,
+  "forms": [
+    {
+      "form": "χωρεῖ",
+      "count": 2
+    },
+    {
+      "form": "χωρεῖν",
+      "count": 2
+    },
+    {
+      "form": "Χωρήσατε",
+      "count": 1
+    },
+    {
+      "form": "χωρῆσαι.",
+      "count": 1
+    },
+    {
+      "form": "χωροῦσαι",
+      "count": 1
+    },
+    {
+      "form": "⸀χωρήσειν",
+      "count": 1
+    },
+    {
+      "form": "χωροῦσι",
+      "count": 1
+    },
+    {
+      "form": "χωρείτω.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "infinitive": 4,
+      "participle": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 7,
+      "future": 1
+    },
+    "voices": {
+      "active": 10
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 7:2",
+      "form": "Χωρήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "ἡμᾶς· οὐδένα ἠδικήσαμεν, οὐδένα ἐφθείραμεν, οὐδένα"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "form": "χωρῆσαι.",
+      "morph": "V-A-A-N",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "τινας ἀπολέσθαι ἀλλὰ πάντας εἰς μετάνοιαν",
+      "right_context": ""
+    },
+    {
+      "ref": "John 2:6",
+      "form": "χωροῦσαι",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "⸂κατὰ τὸν καθαρισμὸν τῶν Ἰουδαίων κείμεναι⸃,",
+      "right_context": "ἀνὰ μετρητὰς δύο ἢ τρεῖς."
+    },
+    {
+      "ref": "John 8:37",
+      "form": "χωρεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 8,
+      "verse": 37,
+      "left_context": "ὅτι ὁ λόγος ὁ ἐμὸς οὐ",
+      "right_context": "ἐν ὑμῖν."
+    },
+    {
+      "ref": "John 21:25",
+      "form": "⸀χωρήσειν",
+      "morph": "V-F-A-N",
+      "book": "John",
+      "chapter": 21,
+      "verse": 25,
+      "left_context": "ἕν, οὐδ’ αὐτὸν οἶμαι τὸν κόσμον",
+      "right_context": "τὰ γραφόμενα ⸀βιβλία."
+    },
+    {
+      "ref": "Mark 2:2",
+      "form": "χωρεῖν",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "⸀καὶ συνήχθησαν πολλοὶ ὥστε μηκέτι",
+      "right_context": "μηδὲ τὰ πρὸς τὴν θύραν, καὶ"
+    },
+    {
+      "ref": "Matthew 15:17",
+      "form": "χωρεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 17,
+      "left_context": "εἰς τὸ στόμα εἰς τὴν κοιλίαν",
+      "right_context": "καὶ εἰς ἀφεδρῶνα ἐκβάλλεται;"
+    },
+    {
+      "ref": "Matthew 19:11",
+      "form": "χωροῦσι",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 11,
+      "left_context": "ὁ δὲ εἶπεν αὐτοῖς· Οὐ πάντες",
+      "right_context": "τὸν λόγον ⸀τοῦτον ἀλλ’ οἷς δέδοται."
+    },
+    {
+      "ref": "Matthew 19:12",
+      "form": "χωρεῖν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 12,
+      "left_context": "τὴν βασιλείαν τῶν οὐρανῶν. ὁ δυνάμενος",
+      "right_context": "χωρείτω."
+    },
+    {
+      "ref": "Matthew 19:12",
+      "form": "χωρείτω.",
+      "morph": "V-P-A-D-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 12,
+      "left_context": "βασιλείαν τῶν οὐρανῶν. ὁ δυνάμενος χωρεῖν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Matthew": 4,
+    "John": 3,
+    "2 Corinthians": 1,
+    "2 Peter": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χωρέω",
+      "display": "caba",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικέω",
+      "display": "hacer·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθείρω",
+      "display": "corrompimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετάνοια",
+      "display": "metanoia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαρισμός",
+      "display": "purificación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεῖμαι",
+      "display": "yaciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνά",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετρητής",
+      "display": "medidas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμός",
+      "display": "mi",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶμαι",
+      "display": "penso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escritos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βιβλίον",
+      "display": "libros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "fueron reunido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Corinthians 7:2",
+      "form": "Χωρήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Χωρήσατε ἡμᾶς· οὐδένα ἠδικήσαμεν, οὐδένα ἐφθείραμεν, οὐδένα ἐπλεονεκτήσαμεν."
+    },
+    {
+      "ref": "Matthew 19:12",
+      "form": "χωρείτω.",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "διὰ τὴν βασιλείαν τῶν οὐρανῶν. ὁ δυνάμενος χωρεῖν χωρείτω."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 8:37",
+      "negator": "οὐ",
+      "clause_text": "με ἀποκτεῖναι, ὅτι ὁ λόγος ὁ ἐμὸς οὐ χωρεῖ ἐν ὑμῖν."
+    },
+    {
+      "ref": "Mark 2:2",
+      "negator": "μηδὲ",
+      "clause_text": "⸀καὶ συνήχθησαν πολλοὶ ὥστε μηκέτι χωρεῖν μηδὲ τὰ πρὸς τὴν θύραν, καὶ ἐλάλει αὐτοῖς"
+    },
+    {
+      "ref": "Matthew 19:11",
+      "negator": "Οὐ",
+      "clause_text": "ὁ δὲ εἶπεν αὐτοῖς· Οὐ πάντες χωροῦσι τὸν λόγον ⸀τοῦτον ἀλλ’ οἷς δέδοται."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 19:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 7:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 15:17",
+      "reason": "occurs near χωρέω"
+    },
+    {
+      "ref": "Matthew 19:11",
+      "reason": "occurs near λόγος, χωρέω"
+    },
+    {
+      "ref": "John 21:25",
+      "reason": "occurs near χωρέω"
+    },
+    {
+      "ref": "John 2:6",
+      "reason": "occurs near χωρέω"
+    },
+    {
+      "ref": "John 8:37",
+      "reason": "occurs near λόγος, χωρέω"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "reason": "occurs near χωρέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

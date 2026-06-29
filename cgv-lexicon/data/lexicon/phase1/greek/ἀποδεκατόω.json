@@ -1,0 +1,211 @@
+{
+  "lemma": "ἀποδεκατόω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀποδεκατοῦτε",
+      "count": 2
+    },
+    {
+      "form": "ἀποδεκατοῦν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀποδεκατῶ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 7:5",
+      "form": "ἀποδεκατοῦν",
+      "morph": "V-P-A-N",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 5,
+      "left_context": "Λευὶ τὴν ἱερατείαν λαμβάνοντες ἐντολὴν ἔχουσιν",
+      "right_context": "τὸν λαὸν κατὰ τὸν νόμον, τοῦτ’"
+    },
+    {
+      "ref": "Luke 11:42",
+      "form": "ἀποδεκατοῦτε",
+      "morph": "V-P-A-I-2P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 42,
+      "left_context": "Ἀλλὰ οὐαὶ ὑμῖν τοῖς Φαρισαίοις, ὅτι",
+      "right_context": "τὸ ἡδύοσμον καὶ τὸ πήγανον καὶ"
+    },
+    {
+      "ref": "Luke 18:12",
+      "form": "⸀ἀποδεκατῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 12,
+      "left_context": "νηστεύω δὶς τοῦ σαββάτου,",
+      "right_context": "πάντα ὅσα κτῶμαι."
+    },
+    {
+      "ref": "Matthew 23:23",
+      "form": "ἀποδεκατοῦτε",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 23,
+      "left_context": "ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι",
+      "right_context": "τὸ ἡδύοσμον καὶ τὸ ἄνηθον καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Hebrews": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἡδύοσμον",
+      "display": "menta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερατεία",
+      "display": "sacerdocio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "mandamiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐαί",
+      "display": "¡ay!",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πήγανον",
+      "display": "ruda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νηστεύω",
+      "display": "ayuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίς",
+      "display": "dos·veces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "de·sábado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κτάομαι",
+      "display": "adquiro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραμματεύς",
+      "display": "escribas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποκριτής",
+      "display": "hipócritas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνηθον",
+      "display": "eneldo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:42",
+      "reason": "occurs near Φαρισαῖος, ἡδύοσμον"
+    },
+    {
+      "ref": "Luke 18:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 7:5",
+      "reason": "occurs near λαμβάνω, ἐντολή, ἱερατεία"
+    },
+    {
+      "ref": "Matthew 23:23",
+      "reason": "occurs near Φαρισαῖος, ἡδύοσμον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

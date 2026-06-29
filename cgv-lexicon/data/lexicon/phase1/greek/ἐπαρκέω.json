@@ -1,0 +1,176 @@
+{
+  "lemma": "ἐπαρκέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπήρκεσεν,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπαρκείτω",
+      "count": 1
+    },
+    {
+      "form": "ἐπαρκέσῃ.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "imperative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:10",
+      "form": "ἐπήρκεσεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "εἰ ἁγίων πόδας ἔνιψεν, εἰ θλιβομένοις",
+      "right_context": "εἰ παντὶ ἔργῳ ἀγαθῷ ἐπηκολούθησεν."
+    },
+    {
+      "ref": "1 Timothy 5:16",
+      "form": "⸀ἐπαρκείτω",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "εἴ ⸀τις πιστὴ ἔχει χήρας,",
+      "right_context": "αὐταῖς, καὶ μὴ βαρείσθω ἡ ἐκκλησία,"
+    },
+    {
+      "ref": "1 Timothy 5:16",
+      "form": "ἐπαρκέσῃ.",
+      "morph": "V-A-A-S-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "ἡ ἐκκλησία, ἵνα ταῖς ὄντως χήραις",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Timothy": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χήρα",
+      "display": "viudas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νίπτω",
+      "display": "lavó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλίβω",
+      "display": "afligidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπακολουθέω",
+      "display": "seguió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "fiel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαρέω",
+      "display": "pesa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄντως",
+      "display": "verdaderamente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 5:16",
+      "form": "⸀ἐπαρκείτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "εἴ ⸀τις πιστὴ ἔχει χήρας, ⸀ἐπαρκείτω αὐταῖς, καὶ μὴ βαρείσθω ἡ ἐκκλησία, ἵνα ταῖς"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 5:16",
+      "negator": "μὴ",
+      "clause_text": "εἴ ⸀τις πιστὴ ἔχει χήρας, ⸀ἐπαρκείτω αὐταῖς, καὶ μὴ βαρείσθω ἡ ἐκκλησία, ἵνα ταῖς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 5:10",
+      "reason": "occurs near θλίβω, νίπτω, πούς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

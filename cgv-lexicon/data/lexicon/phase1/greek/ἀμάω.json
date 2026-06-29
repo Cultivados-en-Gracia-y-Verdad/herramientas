@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀμάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀμησάντων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 5:4",
+      "form": "ἀμησάντων",
+      "morph": "V-A-A-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "ἰδοὺ ὁ μισθὸς τῶν ἐργατῶν τῶν",
+      "right_context": "τὰς χώρας ὑμῶν ὁ ⸀ἀφυστερημένος ἀφ’"
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μισθός",
+      "display": "salario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάτης",
+      "display": "de·obreros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "regiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφυστερέω",
+      "display": "defraudado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:4",
+      "reason": "occurs near μισθός, χώρα, ἀφυστερέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

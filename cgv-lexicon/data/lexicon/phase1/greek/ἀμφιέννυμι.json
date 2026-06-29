@@ -1,0 +1,194 @@
+{
+  "lemma": "ἀμφιέννυμι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἠμφιεσμένον;",
+      "count": 2
+    },
+    {
+      "form": "ἀμφιέννυσιν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 2,
+      "present": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 7:25",
+      "form": "ἠμφιεσμένον;",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 25,
+      "left_context": "⸀ἐξήλθατε ἰδεῖν; ἄνθρωπον ἐν μαλακοῖς ἱματίοις",
+      "right_context": "ἰδοὺ οἱ ἐν ἱματισμῷ ἐνδόξῳ καὶ"
+    },
+    {
+      "ref": "Matthew 6:30",
+      "form": "ἀμφιέννυσιν,",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 30,
+      "left_context": "εἰς κλίβανον βαλλόμενον ὁ θεὸς οὕτως",
+      "right_context": "οὐ πολλῷ μᾶλλον ὑμᾶς, ὀλιγόπιστοι;"
+    },
+    {
+      "ref": "Matthew 11:8",
+      "form": "ἠμφιεσμένον;",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 8,
+      "left_context": "τί ἐξήλθατε ἰδεῖν; ἄνθρωπον ἐν ⸀μαλακοῖς",
+      "right_context": "ἰδοὺ οἱ τὰ μαλακὰ φοροῦντες ἐν"
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μαλακός",
+      "display": "suaves",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ver",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱματισμός",
+      "display": "vestido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔνδοξος",
+      "display": "glorioso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλίβανος",
+      "display": "horno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλιγόπιστος",
+      "display": "poca·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salisteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φορέω",
+      "display": "llevando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 6:30",
+      "negator": "οὐ",
+      "clause_text": "καὶ αὔριον εἰς κλίβανον βαλλόμενον ὁ θεὸς οὕτως ἀμφιέννυσιν, οὐ πολλῷ μᾶλλον ὑμᾶς, ὀλιγόπιστοι;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 11:8",
+      "reason": "occurs near μαλακός, ἄνθρωπος, ἰδού"
+    },
+    {
+      "ref": "Matthew 6:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 7:25",
+      "reason": "occurs near μαλακός, ἄνθρωπος, ἰδού"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

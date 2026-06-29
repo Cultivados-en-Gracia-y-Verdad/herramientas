@@ -1,0 +1,86 @@
+{
+  "lemma": "φλυαρέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "φλυαρῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "3 John 1:10",
+      "form": "φλυαρῶν",
+      "morph": "V-P-A-P",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "τὰ ἔργα ἃ ποιεῖ, λόγοις πονηροῖς",
+      "right_context": "ἡμᾶς, καὶ μὴ ἀρκούμενος ἐπὶ τούτοις"
+    }
+  ],
+  "books": {
+    "3 John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρκέω",
+      "display": "bastado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "3 John 1:10",
+      "negator": "μὴ",
+      "clause_text": "ὑπομνήσω αὐτοῦ τὰ ἔργα ἃ ποιεῖ, λόγοις πονηροῖς φλυαρῶν ἡμᾶς, καὶ μὴ ἀρκούμενος ἐπὶ τούτοις οὔτε αὐτὸς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "3 John 1:10",
+      "reason": "occurs near λόγος, πονηρός, ἀρκέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,86 @@
+{
+  "lemma": "δολόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "δολοῦντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:2",
+      "form": "δολοῦντες",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "αἰσχύνης, μὴ περιπατοῦντες ἐν πανουργίᾳ μηδὲ",
+      "right_context": "τὸν λόγον τοῦ θεοῦ, ἀλλὰ τῇ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "περιπατέω",
+      "display": "andando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πανουργία",
+      "display": "astucia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:2",
+      "negator": "μηδὲ",
+      "clause_text": "κρυπτὰ τῆς αἰσχύνης, μὴ περιπατοῦντες ἐν πανουργίᾳ μηδὲ δολοῦντες τὸν λόγον τοῦ θεοῦ, ἀλλὰ τῇ φανερώσει τῆς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:2",
+      "reason": "occurs near θεός, λόγος, πανουργία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

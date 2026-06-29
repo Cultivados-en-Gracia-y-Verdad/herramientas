@@ -1,0 +1,692 @@
+{
+  "lemma": "καθαρίζω",
+  "language": "greek",
+  "total_occurrences": 31,
+  "forms": [
+    {
+      "form": "καθαρίσαι.",
+      "count": 3
+    },
+    {
+      "form": "καθαρίσθητι·",
+      "count": 3
+    },
+    {
+      "form": "καθαρίσῃ",
+      "count": 2
+    },
+    {
+      "form": "καθαρίσας",
+      "count": 2
+    },
+    {
+      "form": "ἐκαθάρισεν",
+      "count": 2
+    },
+    {
+      "form": "καθαρίζετε,",
+      "count": 2
+    },
+    {
+      "form": "καθαρίζει",
+      "count": 1
+    },
+    {
+      "form": "καθαρίσωμεν",
+      "count": 1
+    },
+    {
+      "form": "καθαριεῖ",
+      "count": 1
+    },
+    {
+      "form": "καθαρίζεται",
+      "count": 1
+    },
+    {
+      "form": "καθαρίζεσθαι,",
+      "count": 1
+    },
+    {
+      "form": "⸀κεκαθαρισμένους;",
+      "count": 1
+    },
+    {
+      "form": "ἐκαθαρίσθη,",
+      "count": 1
+    },
+    {
+      "form": "καθαρίζονται,",
+      "count": 1
+    },
+    {
+      "form": "ἐκαθαρίσθησαν.",
+      "count": 1
+    },
+    {
+      "form": "ἐκαθαρίσθησαν;",
+      "count": 1
+    },
+    {
+      "form": "ἐκαθαρίσθη.",
+      "count": 1
+    },
+    {
+      "form": "—⸀καθαρίζων",
+      "count": 1
+    },
+    {
+      "form": "ἐκαθαρίσθη",
+      "count": 1
+    },
+    {
+      "form": "καθαρίζονται",
+      "count": 1
+    },
+    {
+      "form": "καθαρίζετε",
+      "count": 1
+    },
+    {
+      "form": "καθάρισον",
+      "count": 1
+    },
+    {
+      "form": "καθαρίσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 14,
+      "subjunctive": 3,
+      "participle": 4,
+      "infinitive": 4,
+      "imperative": 6
+    },
+    "tenses": {
+      "present": 9,
+      "aorist": 20,
+      "future": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 18,
+      "passive": 13
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 1:7",
+      "form": "καθαρίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 John",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "τὸ αἷμα ⸀Ἰησοῦ τοῦ υἱοῦ αὐτοῦ",
+      "right_context": "ἡμᾶς ἀπὸ πάσης ἁμαρτίας."
+    },
+    {
+      "ref": "1 John 1:9",
+      "form": "καθαρίσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "1 John",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "ἵνα ἀφῇ ἡμῖν τὰς ἁμαρτίας καὶ",
+      "right_context": "ἡμᾶς ἀπὸ πάσης ἀδικίας."
+    },
+    {
+      "ref": "2 Corinthians 7:1",
+      "form": "καθαρίσωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 1,
+      "left_context": "ταύτας οὖν ἔχοντες τὰς ἐπαγγελίας, ἀγαπητοί,",
+      "right_context": "ἑαυτοὺς ἀπὸ παντὸς μολυσμοῦ σαρκὸς καὶ"
+    },
+    {
+      "ref": "Ephesians 5:26",
+      "form": "καθαρίσας",
+      "morph": "V-A-A-P",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 26,
+      "left_context": "ἵνα αὐτὴν ἁγιάσῃ",
+      "right_context": "τῷ λουτρῷ τοῦ ὕδατος ἐν ῥήματι,"
+    },
+    {
+      "ref": "Hebrews 9:14",
+      "form": "καθαριεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 14,
+      "left_context": "αἰωνίου ἑαυτὸν προσήνεγκεν ἄμωμον τῷ θεῷ,",
+      "right_context": "τὴν συνείδησιν ⸀ἡμῶν ἀπὸ νεκρῶν ἔργων"
+    },
+    {
+      "ref": "Hebrews 9:22",
+      "form": "καθαρίζεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "καὶ σχεδὸν ἐν αἵματι πάντα",
+      "right_context": "κατὰ τὸν νόμον, καὶ χωρὶς αἱματεκχυσίας"
+    },
+    {
+      "ref": "Hebrews 9:23",
+      "form": "καθαρίζεσθαι,",
+      "morph": "V-P-P-N",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 23,
+      "left_context": "ὑποδείγματα τῶν ἐν τοῖς οὐρανοῖς τούτοις",
+      "right_context": "αὐτὰ δὲ τὰ ἐπουράνια κρείττοσι θυσίαις"
+    },
+    {
+      "ref": "Hebrews 10:2",
+      "form": "⸀κεκαθαρισμένους;",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 2,
+      "left_context": "ἔτι συνείδησιν ἁμαρτιῶν τοὺς λατρεύοντας ἅπαξ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 10:15",
+      "form": "ἐκαθάρισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 15,
+      "left_context": "δευτέρου πρὸς αὐτόν· Ἃ ὁ θεὸς",
+      "right_context": "σὺ μὴ κοίνου."
+    },
+    {
+      "ref": "Acts 11:9",
+      "form": "ἐκαθάρισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 9,
+      "left_context": "ἐκ τοῦ οὐρανοῦ· Ἃ ὁ θεὸς",
+      "right_context": "σὺ μὴ κοίνου."
+    },
+    {
+      "ref": "Acts 15:9",
+      "form": "καθαρίσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 9,
+      "left_context": "ἡμῶν τε καὶ αὐτῶν, τῇ πίστει",
+      "right_context": "τὰς καρδίας αὐτῶν."
+    },
+    {
+      "ref": "Luke 4:27",
+      "form": "ἐκαθαρίσθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 27,
+      "left_context": "Ἐλισαίου τοῦ προφήτου⸃, καὶ οὐδεὶς αὐτῶν",
+      "right_context": "εἰ μὴ Ναιμὰν ὁ Σύρος."
+    },
+    {
+      "ref": "Luke 5:12",
+      "form": "καθαρίσαι.",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 12,
+      "left_context": "λέγων· Κύριε, ἐὰν θέλῃς δύνασαί με",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 5:13",
+      "form": "καθαρίσθητι·",
+      "morph": "V-A-P-D-2S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "τὴν χεῖρα ἥψατο αὐτοῦ ⸀εἰπών· Θέλω,",
+      "right_context": "καὶ εὐθέως ἡ λέπρα ἀπῆλθεν ἀπ’"
+    },
+    {
+      "ref": "Luke 7:22",
+      "form": "καθαρίζονται,",
+      "morph": "V-P-P-I-3P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 22,
+      "left_context": "ἠκούσατε· ⸀τυφλοὶ ἀναβλέπουσιν, χωλοὶ περιπατοῦσιν, λεπροὶ",
+      "right_context": "⸀κωφοὶ ἀκούουσιν, νεκροὶ ἐγείρονται, πτωχοὶ εὐαγγελίζονται·"
+    },
+    {
+      "ref": "Luke 11:39",
+      "form": "καθαρίζετε,",
+      "morph": "V-P-A-I-2P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 39,
+      "left_context": "ἔξωθεν τοῦ ποτηρίου καὶ τοῦ πίνακος",
+      "right_context": "τὸ δὲ ἔσωθεν ὑμῶν γέμει ἁρπαγῆς"
+    },
+    {
+      "ref": "Luke 17:14",
+      "form": "ἐκαθαρίσθησαν.",
+      "morph": "V-A-P-I-3P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 14,
+      "left_context": "καὶ ἐγένετο ἐν τῷ ὑπάγειν αὐτοὺς",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 17:17",
+      "form": "ἐκαθαρίσθησαν;",
+      "morph": "V-A-P-I-3P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 17,
+      "left_context": "ὁ Ἰησοῦς εἶπεν· ⸀Οὐχὶ οἱ δέκα",
+      "right_context": "οἱ δὲ ἐννέα ποῦ;"
+    },
+    {
+      "ref": "Mark 1:40",
+      "form": "καθαρίσαι.",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 40,
+      "left_context": "αὐτῷ ὅτι Ἐὰν θέλῃς δύνασαί με",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 1:41",
+      "form": "καθαρίσθητι·",
+      "morph": "V-A-P-D-2S",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 41,
+      "left_context": "⸂αὐτοῦ ἥψατο⸃ καὶ λέγει αὐτῷ· Θέλω,",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 1:42",
+      "form": "ἐκαθαρίσθη.",
+      "morph": "V-A-P-I-3S",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 42,
+      "left_context": "ἀπῆλθεν ἀπ’ αὐτοῦ ἡ λέπρα, καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 7:19",
+      "form": "—⸀καθαρίζων",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 19,
+      "left_context": "κοιλίαν, καὶ εἰς τὸν ἀφεδρῶνα ἐκπορεύεται;",
+      "right_context": "πάντα τὰ βρώματα."
+    },
+    {
+      "ref": "Matthew 8:2",
+      "form": "καθαρίσαι.",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 2,
+      "left_context": "λέγων· Κύριε, ἐὰν θέλῃς δύνασαί με",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 8:3",
+      "form": "καθαρίσθητι·",
+      "morph": "V-A-P-D-2S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 3,
+      "left_context": "τὴν χεῖρα ἥψατο ⸀αὐτοῦ λέγων· Θέλω,",
+      "right_context": "καὶ εὐθέως ἐκαθαρίσθη αὐτοῦ ἡ λέπρα."
+    },
+    {
+      "ref": "Matthew 8:3",
+      "form": "ἐκαθαρίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 3,
+      "left_context": "⸀αὐτοῦ λέγων· Θέλω, καθαρίσθητι· καὶ εὐθέως",
+      "right_context": "αὐτοῦ ἡ λέπρα."
+    },
+    {
+      "ref": "Matthew 10:8",
+      "form": "καθαρίζετε,",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 8,
+      "left_context": "ἀσθενοῦντας θεραπεύετε, ⸂νεκροὺς ἐγείρετε⸃, λεπροὺς",
+      "right_context": "δαιμόνια ἐκβάλλετε· δωρεὰν ἐλάβετε, δωρεὰν δότε."
+    },
+    {
+      "ref": "Matthew 11:5",
+      "form": "καθαρίζονται",
+      "morph": "V-P-P-I-3P",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 5,
+      "left_context": "τυφλοὶ ἀναβλέπουσιν καὶ χωλοὶ περιπατοῦσιν, λεπροὶ",
+      "right_context": "καὶ κωφοὶ ἀκούουσιν, ⸀καὶ νεκροὶ ἐγείρονται"
+    },
+    {
+      "ref": "Matthew 23:25",
+      "form": "καθαρίζετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 25,
+      "left_context": "ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι",
+      "right_context": "τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς"
+    },
+    {
+      "ref": "Matthew 23:26",
+      "form": "καθάρισον",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 26,
+      "left_context": "Φαρισαῖε τυφλέ,",
+      "right_context": "πρῶτον τὸ ἐντὸς τοῦ ποτηρίου ⸂καὶ"
+    },
+    {
+      "ref": "James 4:8",
+      "form": "καθαρίσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "ἐγγίσατε τῷ θεῷ, καὶ ⸀ἐγγιεῖ ὑμῖν.",
+      "right_context": "χεῖρας, ἁμαρτωλοί, καὶ ἁγνίσατε καρδίας, δίψυχοι."
+    },
+    {
+      "ref": "Titus 2:14",
+      "form": "καθαρίσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Titus",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "λυτρώσηται ἡμᾶς ἀπὸ πάσης ἀνομίας καὶ",
+      "right_context": "ἑαυτῷ λαὸν περιούσιον, ζηλωτὴν καλῶν ἔργων."
+    }
+  ],
+  "books": {
+    "Luke": 7,
+    "Matthew": 7,
+    "Hebrews": 4,
+    "Mark": 4,
+    "Acts": 3,
+    "1 John": 2,
+    "2 Corinthians": 1,
+    "Ephesians": 1,
+    "James": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θέλω",
+      "display": "querieras",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "de·muertos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecado",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puedes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπτω",
+      "display": "tocó",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "λέπρα",
+      "display": "lepra",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "λεπρός",
+      "display": "leprosos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ποτήριον",
+      "display": "de·copa",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνείδησις",
+      "display": "conciencia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κοινόω",
+      "display": "profana",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τυφλός",
+      "display": "ciegos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβλέπω",
+      "display": "ven",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χωλός",
+      "display": "cojos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κωφός",
+      "display": "sordos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 5:13",
+      "form": "καθαρίσθητι·",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "καὶ ἐκτείνας τὴν χεῖρα ἥψατο αὐτοῦ ⸀εἰπών· Θέλω, καθαρίσθητι· καὶ εὐθέως ἡ λέπρα ἀπῆλθεν ἀπ’ αὐτοῦ."
+    },
+    {
+      "ref": "Mark 1:41",
+      "form": "καθαρίσθητι·",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "τὴν χεῖρα ⸂αὐτοῦ ἥψατο⸃ καὶ λέγει αὐτῷ· Θέλω, καθαρίσθητι·"
+    },
+    {
+      "ref": "Matthew 8:3",
+      "form": "καθαρίσθητι·",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "καὶ ἐκτείνας τὴν χεῖρα ἥψατο ⸀αὐτοῦ λέγων· Θέλω, καθαρίσθητι· καὶ εὐθέως ἐκαθαρίσθη αὐτοῦ ἡ λέπρα."
+    },
+    {
+      "ref": "Matthew 10:8",
+      "form": "καθαρίζετε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "ἀσθενοῦντας θεραπεύετε, ⸂νεκροὺς ἐγείρετε⸃, λεπροὺς καθαρίζετε, δαιμόνια ἐκβάλλετε· δωρεὰν ἐλάβετε, δωρεὰν δότε."
+    },
+    {
+      "ref": "Matthew 23:26",
+      "form": "καθάρισον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου ⸂καὶ τῆς παροψίδος⸃,"
+    },
+    {
+      "ref": "James 4:8",
+      "form": "καθαρίσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἐγγίσατε τῷ θεῷ, καὶ ⸀ἐγγιεῖ ὑμῖν. καθαρίσατε χεῖρας, ἁμαρτωλοί, καὶ ἁγνίσατε καρδίας, δίψυχοι."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 10:15",
+      "negator": "μὴ",
+      "clause_text": "πάλιν ἐκ δευτέρου πρὸς αὐτόν· Ἃ ὁ θεὸς ἐκαθάρισεν σὺ μὴ κοίνου."
+    },
+    {
+      "ref": "Acts 11:9",
+      "negator": "μὴ",
+      "clause_text": "ἐκ δευτέρου⸃ ἐκ τοῦ οὐρανοῦ· Ἃ ὁ θεὸς ἐκαθάρισεν σὺ μὴ κοίνου."
+    },
+    {
+      "ref": "Luke 4:27",
+      "negator": "μὴ",
+      "clause_text": "Ἰσραὴλ ἐπὶ Ἐλισαίου τοῦ προφήτου⸃, καὶ οὐδεὶς αὐτῶν ἐκαθαρίσθη, εἰ μὴ Ναιμὰν ὁ Σύρος."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 5:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 10:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 23:26",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 8:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 1:41",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 4:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 10:2",
+      "reason": "occurs near ἁμαρτία"
+    },
+    {
+      "ref": "Acts 10:15",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

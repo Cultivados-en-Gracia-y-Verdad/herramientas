@@ -1,0 +1,117 @@
+{
+  "lemma": "προκαταγγέλλω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προκατήγγειλεν",
+      "count": 1
+    },
+    {
+      "form": "προκαταγγείλαντας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 3:18",
+      "form": "προκατήγγειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "ὁ δὲ θεὸς ἃ",
+      "right_context": "διὰ στόματος πάντων τῶν ⸀προφητῶν παθεῖν"
+    },
+    {
+      "ref": "Acts 7:52",
+      "form": "προκαταγγείλαντας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 52,
+      "left_context": "οἱ πατέρες ὑμῶν; καὶ ἀπέκτειναν τοὺς",
+      "right_context": "περὶ τῆς ἐλεύσεως τοῦ δικαίου οὗ"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "de·boca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profetas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "mataron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλευσις",
+      "display": "de·venida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκαιος",
+      "display": "de·justo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 3:18",
+      "reason": "occurs near θεός, προφήτης, στόμα"
+    },
+    {
+      "ref": "Acts 7:52",
+      "reason": "occurs near πατήρ, ἀποκτείνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

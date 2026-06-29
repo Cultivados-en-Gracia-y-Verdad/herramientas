@@ -1,0 +1,80 @@
+{
+  "lemma": "περιρήγνυμι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "περιρήξαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:22",
+      "form": "περιρήξαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 22,
+      "left_context": "ὄχλος κατ’ αὐτῶν, καὶ οἱ στρατηγοὶ",
+      "right_context": "αὐτῶν τὰ ἱμάτια ἐκέλευον ῥαβδίζειν,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "στρατηγός",
+      "display": "comandantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "mandaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥαβδίζω",
+      "display": "azotar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:22",
+      "reason": "occurs near κελεύω, στρατηγός, ἱμάτιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

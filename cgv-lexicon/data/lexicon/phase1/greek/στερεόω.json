@@ -1,0 +1,160 @@
+{
+  "lemma": "στερεόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐστερεώθησαν",
+      "count": 1
+    },
+    {
+      "form": "ἐστερέωσεν",
+      "count": 1
+    },
+    {
+      "form": "ἐστερεοῦντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 3:7",
+      "form": "ἐστερεώθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "δεξιᾶς χειρὸς ἤγειρεν ⸀αὐτόν· παραχρῆμα δὲ",
+      "right_context": "⸂αἱ βάσεις αὐτοῦ⸃ καὶ τὰ ⸀σφυδρά,"
+    },
+    {
+      "ref": "Acts 3:16",
+      "form": "ἐστερέωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "αὐτοῦ τοῦτον ὃν θεωρεῖτε καὶ οἴδατε",
+      "right_context": "τὸ ὄνομα αὐτοῦ, καὶ ἡ πίστις"
+    },
+    {
+      "ref": "Acts 16:5",
+      "form": "ἐστερεοῦντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 5,
+      "left_context": "αἱ μὲν οὖν ἐκκλησίαι",
+      "right_context": "τῇ πίστει καὶ ἐπερίσσευον τῷ ἀριθμῷ"
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραχρῆμα",
+      "display": "al·instante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάσις",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "veis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habéis sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περισσεύω",
+      "display": "abundaban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 3:16",
+      "reason": "occurs near θεωρέω"
+    },
+    {
+      "ref": "Acts 3:7",
+      "reason": "occurs near βάσις, παραχρῆμα, χείρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

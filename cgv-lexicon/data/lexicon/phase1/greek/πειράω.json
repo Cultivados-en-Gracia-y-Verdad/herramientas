@@ -1,0 +1,80 @@
+{
+  "lemma": "πειράω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπειρῶντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 26:21",
+      "form": "ἐπειρῶντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 21,
+      "left_context": "⸂με Ἰουδαῖοι⸃ ⸀συλλαβόμενοι ἐν τῷ ἱερῷ",
+      "right_context": "διαχειρίσασθαι."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συλλαμβάνω",
+      "display": "prendidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαχειρίζομαι",
+      "display": "administrar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:21",
+      "reason": "occurs near διαχειρίζομαι, συλλαμβάνω, ἱερός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

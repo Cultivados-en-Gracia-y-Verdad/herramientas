@@ -1,0 +1,108 @@
+{
+  "lemma": "λατομέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "λελατομημένον",
+      "count": 1
+    },
+    {
+      "form": "ἐλατόμησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 15:46",
+      "form": "λελατομημένον",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 46,
+      "left_context": "⸀ἔθηκεν αὐτὸν ἐν ⸀μνημείῳ ὃ ἦν",
+      "right_context": "ἐκ πέτρας, καὶ προσεκύλισεν λίθον ἐπὶ"
+    },
+    {
+      "ref": "Matthew 27:60",
+      "form": "ἐλατόμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 60,
+      "left_context": "ἐν τῷ καινῷ αὐτοῦ μνημείῳ ὃ",
+      "right_context": "ἐν τῇ πέτρᾳ, καὶ προσκυλίσας λίθον"
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μνημεῖον",
+      "display": "sepulcro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πέτρα",
+      "display": "de·roca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προσκυλίω",
+      "display": "rodó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καινός",
+      "display": "nuevo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 15:46",
+      "reason": "occurs near λίθος, μνημεῖον, πέτρα"
+    },
+    {
+      "ref": "Matthew 27:60",
+      "reason": "occurs near καινός, μνημεῖον, πέτρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

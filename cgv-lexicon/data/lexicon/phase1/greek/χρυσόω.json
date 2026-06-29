@@ -1,0 +1,110 @@
+{
+  "lemma": "χρυσόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κεχρυσωμένη",
+      "count": 1
+    },
+    {
+      "form": "⸀κεχρυσωμένη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 17:4",
+      "form": "κεχρυσωμένη",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 17,
+      "verse": 4,
+      "left_context": "ἦν περιβεβλημένη πορφυροῦν καὶ κόκκινον, ⸀καὶ",
+      "right_context": "⸀χρυσίῳ καὶ λίθῳ τιμίῳ καὶ μαργαρίταις,"
+    },
+    {
+      "ref": "Revelation 18:16",
+      "form": "⸀κεχρυσωμένη",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 16,
+      "left_context": "βύσσινον καὶ πορφυροῦν καὶ κόκκινον καὶ",
+      "right_context": "χρυσίῳ καὶ λίθῳ τιμίῳ καὶ ⸀μαργαρίτῃ,"
+    }
+  ],
+  "books": {
+    "Revelation": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πορφυροῦς",
+      "display": "púrpura",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόκκινος",
+      "display": "escarlata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χρυσίον",
+      "display": "oro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τίμιος",
+      "display": "precioso",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιβάλλω",
+      "display": "vestida",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 17:4",
+      "reason": "occurs near κόκκινος, λίθος, πορφυροῦς"
+    },
+    {
+      "ref": "Revelation 18:16",
+      "reason": "occurs near κόκκινος, λίθος, πορφυροῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

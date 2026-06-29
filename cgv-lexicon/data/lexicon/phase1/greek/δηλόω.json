@@ -1,0 +1,287 @@
+{
+  "lemma": "δηλόω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἐδηλώθη",
+      "count": 1
+    },
+    {
+      "form": "δηλώσει·",
+      "count": 1
+    },
+    {
+      "form": "ἐδήλου",
+      "count": 1
+    },
+    {
+      "form": "ἐδήλωσέν",
+      "count": 1
+    },
+    {
+      "form": "δηλώσας",
+      "count": 1
+    },
+    {
+      "form": "δηλοῦντος",
+      "count": 1
+    },
+    {
+      "form": "δηλοῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 1,
+      "imperfect": 1,
+      "present": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 1:11",
+      "form": "ἐδηλώθη",
+      "morph": "V-A-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "",
+      "right_context": "γάρ μοι περὶ ὑμῶν, ἀδελφοί μου,"
+    },
+    {
+      "ref": "1 Corinthians 3:13",
+      "form": "δηλώσει·",
+      "morph": "V-F-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "ἔργον φανερὸν γενήσεται, ἡ γὰρ ἡμέρα",
+      "right_context": "ὅτι ἐν πυρὶ ἀποκαλύπτεται, καὶ ἑκάστου"
+    },
+    {
+      "ref": "1 Peter 1:11",
+      "form": "ἐδήλου",
+      "morph": "V-I-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ἐραυνῶντες εἰς τίνα ἢ ποῖον καιρὸν",
+      "right_context": "τὸ ἐν αὐτοῖς πνεῦμα Χριστοῦ προμαρτυρόμενον"
+    },
+    {
+      "ref": "2 Peter 1:14",
+      "form": "ἐδήλωσέν",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "καὶ ὁ κύριος ἡμῶν Ἰησοῦς Χριστὸς",
+      "right_context": "μοι·"
+    },
+    {
+      "ref": "Colossians 1:8",
+      "form": "δηλώσας",
+      "morph": "V-A-A-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "ὁ καὶ",
+      "right_context": "ἡμῖν τὴν ὑμῶν ἀγάπην ἐν πνεύματι."
+    },
+    {
+      "ref": "Hebrews 9:8",
+      "form": "δηλοῦντος",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 8,
+      "left_context": "τοῦτο",
+      "right_context": "τοῦ πνεύματος τοῦ ἁγίου, μήπω πεφανερῶσθαι"
+    },
+    {
+      "ref": "Hebrews 12:27",
+      "form": "δηλοῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 27,
+      "left_context": "τὸ δὲ Ἔτι ἅπαξ",
+      "right_context": "⸂τῶν σαλευομένων⸃ μετάθεσιν ὡς πεποιημένων, ἵνα"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "Hebrews": 2,
+    "1 Peter": 1,
+    "2 Peter": 1,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φανερός",
+      "display": "manifiesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκαλύπτω",
+      "display": "es revelado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποῖος",
+      "display": "cuál",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήπω",
+      "display": "todavía·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σαλεύω",
+      "display": "sacudidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετάθεσις",
+      "display": "cambio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 1:11",
+      "reason": "occurs near ἀδελφός"
+    },
+    {
+      "ref": "1 Corinthians 3:13",
+      "reason": "occurs near φανερός, ἡμέρα"
+    },
+    {
+      "ref": "Hebrews 12:27",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 9:8",
+      "reason": "occurs near πνεῦμα"
+    },
+    {
+      "ref": "1 Peter 1:11",
+      "reason": "occurs near Χριστός, πνεῦμα"
+    },
+    {
+      "ref": "2 Peter 1:14",
+      "reason": "occurs near Χριστός"
+    },
+    {
+      "ref": "Colossians 1:8",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

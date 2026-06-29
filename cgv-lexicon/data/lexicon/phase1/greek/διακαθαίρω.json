@@ -1,0 +1,80 @@
+{
+  "lemma": "διακαθαίρω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀διακαθᾶραι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 3:17",
+      "form": "⸀διακαθᾶραι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "τὸ πτύον ἐν τῇ χειρὶ αὐτοῦ",
+      "right_context": "τὴν ἅλωνα αὐτοῦ καὶ ⸀συναγαγεῖν τὸν"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πτύον",
+      "display": "bieldo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλων",
+      "display": "era",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reunir",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 3:17",
+      "reason": "occurs near πτύον, συνάγω, χείρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

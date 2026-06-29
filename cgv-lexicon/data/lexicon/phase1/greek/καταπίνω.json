@@ -1,0 +1,320 @@
+{
+  "lemma": "καταπίνω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "καταποθῇ",
+      "count": 2
+    },
+    {
+      "form": "Κατεπόθη",
+      "count": 1
+    },
+    {
+      "form": "⸀καταπιεῖν·",
+      "count": 1
+    },
+    {
+      "form": "κατέπιεν",
+      "count": 1
+    },
+    {
+      "form": "κατεπόθησαν.",
+      "count": 1
+    },
+    {
+      "form": "καταπίνοντες.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "infinitive": 1,
+      "subjunctive": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 6,
+      "present": 1
+    },
+    "voices": {
+      "passive": 4,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 15:54",
+      "form": "Κατεπόθη",
+      "morph": "V-A-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 54,
+      "left_context": "τότε γενήσεται ὁ λόγος ὁ γεγραμμένος·",
+      "right_context": "ὁ θάνατος εἰς νῖκος."
+    },
+    {
+      "ref": "1 Peter 5:8",
+      "form": "⸀καταπιεῖν·",
+      "morph": "V-A-A-N",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "ὡς λέων ὠρυόμενος περιπατεῖ ζητῶν ⸀τινα",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 2:7",
+      "form": "καταποθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "παρακαλέσαι, μή πως τῇ περισσοτέρᾳ λύπῃ",
+      "right_context": "ὁ τοιοῦτος."
+    },
+    {
+      "ref": "2 Corinthians 5:4",
+      "form": "καταποθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "οὐ θέλομεν ἐκδύσασθαι ἀλλ’ ἐπενδύσασθαι, ἵνα",
+      "right_context": "τὸ θνητὸν ὑπὸ τῆς ζωῆς."
+    },
+    {
+      "ref": "Revelation 12:16",
+      "form": "κατέπιεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 16,
+      "left_context": "ἡ γῆ τὸ στόμα αὐτῆς καὶ",
+      "right_context": "τὸν ποταμὸν ὃν ἔβαλεν ὁ δράκων"
+    },
+    {
+      "ref": "Hebrews 11:29",
+      "form": "κατεπόθησαν.",
+      "morph": "V-A-P-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 29,
+      "left_context": "⸀γῆς, ἧς πεῖραν λαβόντες οἱ Αἰγύπτιοι",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 23:24",
+      "form": "καταπίνοντες.",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 24,
+      "left_context": "διϋλίζοντες τὸν κώνωπα τὴν δὲ κάμηλον",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "1 Corinthians": 1,
+    "1 Peter": 1,
+    "Revelation": 1,
+    "Hebrews": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῖκος",
+      "display": "victoria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λέων",
+      "display": "león",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὠρύομαι",
+      "display": "rugiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "anda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περισσότερος",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύπη",
+      "display": "tristeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queremos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδύω",
+      "display": "desvestir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπενδύομαι",
+      "display": "vestirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνητός",
+      "display": "mortal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "boca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποταμός",
+      "display": "río",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεῖρα",
+      "display": "prueba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Αἰγύπτιος",
+      "display": "Egipcio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κώνωψ",
+      "display": "mosquito",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 2:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 5:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 15:54",
+      "reason": "occurs near γράφω, θάνατος, λόγος"
+    },
+    {
+      "ref": "1 Peter 5:8",
+      "reason": "occurs near λέων"
+    },
+    {
+      "ref": "Hebrews 11:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 23:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 12:16",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

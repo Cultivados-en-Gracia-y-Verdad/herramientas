@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀνεμίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀνεμιζομένῳ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 1:6",
+      "form": "ἀνεμιζομένῳ",
+      "morph": "V-P-P-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "ὁ γὰρ διακρινόμενος ἔοικεν κλύδωνι θαλάσσης",
+      "right_context": "καὶ ῥιπιζομένῳ·"
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διακρίνω",
+      "display": "discerniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔοικα",
+      "display": "ha parecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλύδων",
+      "display": "oleaje",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "de·mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥιπίζομαι",
+      "display": "ser·empujado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:6",
+      "reason": "occurs near διακρίνω, θάλασσα, κλύδων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

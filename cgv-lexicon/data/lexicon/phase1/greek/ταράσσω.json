@@ -1,0 +1,502 @@
+{
+  "lemma": "ταράσσω",
+  "language": "greek",
+  "total_occurrences": 17,
+  "forms": [
+    {
+      "form": "ἐταράχθη",
+      "count": 3
+    },
+    {
+      "form": "ἐτάραξαν",
+      "count": 2
+    },
+    {
+      "form": "ταρασσέσθω",
+      "count": 2
+    },
+    {
+      "form": "ταραχθῆτε,",
+      "count": 1
+    },
+    {
+      "form": "ταράσσοντες",
+      "count": 1
+    },
+    {
+      "form": "ταράσσων",
+      "count": 1
+    },
+    {
+      "form": "ταράσσοντες⸃",
+      "count": 1
+    },
+    {
+      "form": "ταραχθῇ",
+      "count": 1
+    },
+    {
+      "form": "ἐτάραξεν",
+      "count": 1
+    },
+    {
+      "form": "τετάρακται,",
+      "count": 1
+    },
+    {
+      "form": "τεταραγμένοι",
+      "count": 1
+    },
+    {
+      "form": "ἐταράχθησαν.",
+      "count": 1
+    },
+    {
+      "form": "ἐταράχθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "participle": 4,
+      "indicative": 9,
+      "imperative": 2
+    },
+    "tenses": {
+      "aorist": 10,
+      "present": 5,
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 11,
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:14",
+      "form": "ταραχθῆτε,",
+      "morph": "V-A-P-S-2P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "δὲ φόβον αὐτῶν μὴ φοβηθῆτε μηδὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 1:7",
+      "form": "ταράσσοντες",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "ἄλλο· εἰ μή τινές εἰσιν οἱ",
+      "right_context": "ὑμᾶς καὶ θέλοντες μεταστρέψαι τὸ εὐαγγέλιον"
+    },
+    {
+      "ref": "Galatians 5:10",
+      "form": "ταράσσων",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "ὅτι οὐδὲν ἄλλο φρονήσετε· ὁ δὲ",
+      "right_context": "ὑμᾶς βαστάσει τὸ κρίμα, ὅστις ⸀ἐὰν"
+    },
+    {
+      "ref": "Acts 15:24",
+      "form": "ἐτάραξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 24,
+      "left_context": "ἠκούσαμεν ὅτι τινὲς ἐξ ἡμῶν ⸀ἐξελθόντες",
+      "right_context": "ὑμᾶς λόγοις ἀνασκευάζοντες τὰς ψυχὰς ⸀ὑμῶν"
+    },
+    {
+      "ref": "Acts 17:8",
+      "form": "ἐτάραξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "δὲ τὸν ὄχλον καὶ τοὺς πολιτάρχας"
+    },
+    {
+      "ref": "Acts 17:13",
+      "form": "ταράσσοντες⸃",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 13,
+      "left_context": "τοῦ θεοῦ, ἦλθον κἀκεῖ σαλεύοντες ⸂καὶ",
+      "right_context": "τοὺς ὄχλους."
+    },
+    {
+      "ref": "John 5:7",
+      "form": "ταραχθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "John",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "Κύριε, ἄνθρωπον οὐκ ἔχω ἵνα ὅταν",
+      "right_context": "τὸ ὕδωρ βάλῃ με εἰς τὴν"
+    },
+    {
+      "ref": "John 11:33",
+      "form": "ἐτάραξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 33,
+      "left_context": "Ἰουδαίους κλαίοντας ἐνεβριμήσατο τῷ πνεύματι καὶ",
+      "right_context": "ἑαυτόν,"
+    },
+    {
+      "ref": "John 12:27",
+      "form": "τετάρακται,",
+      "morph": "V-X-P-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 27,
+      "left_context": "Νῦν ἡ ψυχή μου",
+      "right_context": "καὶ τί εἴπω; πάτερ, σῶσόν με"
+    },
+    {
+      "ref": "John 13:21",
+      "form": "ἐταράχθη",
+      "morph": "V-A-P-I-3S",
+      "book": "John",
+      "chapter": 13,
+      "verse": 21,
+      "left_context": "Ταῦτα εἰπὼν ⸀ὁ Ἰησοῦς",
+      "right_context": "τῷ πνεύματι καὶ ἐμαρτύρησεν καὶ εἶπεν·"
+    },
+    {
+      "ref": "John 14:1",
+      "form": "ταρασσέσθω",
+      "morph": "V-P-P-D-3S",
+      "book": "John",
+      "chapter": 14,
+      "verse": 1,
+      "left_context": "Μὴ",
+      "right_context": "ὑμῶν ἡ καρδία· πιστεύετε εἰς τὸν"
+    },
+    {
+      "ref": "John 14:27",
+      "form": "ταρασσέσθω",
+      "morph": "V-P-P-D-3S",
+      "book": "John",
+      "chapter": 14,
+      "verse": 27,
+      "left_context": "κόσμος δίδωσιν ἐγὼ δίδωμι ὑμῖν. μὴ",
+      "right_context": "ὑμῶν ἡ καρδία μηδὲ δειλιάτω."
+    },
+    {
+      "ref": "Luke 1:12",
+      "form": "ἐταράχθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "καὶ",
+      "right_context": "Ζαχαρίας ἰδών, καὶ φόβος ἐπέπεσεν ἐπ’"
+    },
+    {
+      "ref": "Luke 24:38",
+      "form": "τεταραγμένοι",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 38,
+      "left_context": "καὶ εἶπεν αὐτοῖς· Τί",
+      "right_context": "ἐστέ, καὶ διὰ τί διαλογισμοὶ ἀναβαίνουσιν"
+    },
+    {
+      "ref": "Mark 6:50",
+      "form": "ἐταράχθησαν.",
+      "morph": "V-A-P-I-3P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 50,
+      "left_context": "πάντες γὰρ αὐτὸν εἶδον καὶ",
+      "right_context": "⸂ὁ δὲ εὐθὺς⸃ ἐλάλησεν μετ’ αὐτῶν,"
+    },
+    {
+      "ref": "Matthew 2:3",
+      "form": "ἐταράχθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "ἀκούσας δὲ ⸂ὁ βασιλεὺς Ἡρῴδης⸃",
+      "right_context": "καὶ πᾶσα Ἱεροσόλυμα μετ’ αὐτοῦ,"
+    },
+    {
+      "ref": "Matthew 14:26",
+      "form": "ἐταράχθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 26,
+      "left_context": "ἰδόντες αὐτὸν⸃ ἐπὶ ⸂τῆς θαλάσσης⸃ περιπατοῦντα",
+      "right_context": "λέγοντες ὅτι Φάντασμά ἐστιν, καὶ ἀπὸ"
+    }
+  ],
+  "books": {
+    "John": 6,
+    "Acts": 3,
+    "Galatians": 2,
+    "Luke": 2,
+    "Matthew": 2,
+    "1 Peter": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φόβος",
+      "display": "temor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "da",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεταστρέφω",
+      "display": "cambiar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρονέω",
+      "display": "pensaréis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαστάζω",
+      "display": "llevará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίμα",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνασκευάζω",
+      "display": "perturbando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀκεῖ",
+      "display": "y·allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σαλεύω",
+      "display": "sacudiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "agua",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 3:14",
+      "form": "ταραχθῆτε,",
+      "morph": "V-A-P-S-2P",
+      "clause_text": "μακάριοι. τὸν δὲ φόβον αὐτῶν μὴ φοβηθῆτε μηδὲ ταραχθῆτε,",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "John 14:1",
+      "form": "ταρασσέσθω",
+      "morph": "V-P-P-D-3S",
+      "clause_text": "Μὴ ταρασσέσθω ὑμῶν ἡ καρδία· πιστεύετε εἰς τὸν θεόν, καὶ",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "John 14:27",
+      "form": "ταρασσέσθω",
+      "morph": "V-P-P-D-3S",
+      "clause_text": "καθὼς ὁ κόσμος δίδωσιν ἐγὼ δίδωμι ὑμῖν. μὴ ταρασσέσθω ὑμῶν ἡ καρδία μηδὲ δειλιάτω.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 3:14",
+      "negator": "μὴ",
+      "clause_text": "μακάριοι. τὸν δὲ φόβον αὐτῶν μὴ φοβηθῆτε μηδὲ ταραχθῆτε,"
+    },
+    {
+      "ref": "Galatians 1:7",
+      "negator": "μή",
+      "clause_text": "οὐκ ἔστιν ἄλλο· εἰ μή τινές εἰσιν οἱ ταράσσοντες ὑμᾶς καὶ θέλοντες μεταστρέψαι τὸ εὐαγγέλιον τοῦ Χριστοῦ."
+    },
+    {
+      "ref": "John 5:7",
+      "negator": "οὐκ",
+      "clause_text": "ὁ ἀσθενῶν· Κύριε, ἄνθρωπον οὐκ ἔχω ἵνα ὅταν ταραχθῇ τὸ ὕδωρ βάλῃ με εἰς τὴν κολυμβήθραν· ἐν"
+    },
+    {
+      "ref": "John 14:1",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ ταρασσέσθω ὑμῶν ἡ καρδία· πιστεύετε εἰς τὸν θεόν, καὶ"
+    },
+    {
+      "ref": "John 14:27",
+      "negator": "μὴ",
+      "clause_text": "καθὼς ὁ κόσμος δίδωσιν ἐγὼ δίδωμι ὑμῖν. μὴ ταρασσέσθω ὑμῶν ἡ καρδία μηδὲ δειλιάτω."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 14:1",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 14:27",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 11:33",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 12:27",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 13:21",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 5:7",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "Acts 15:24",
+      "reason": "occurs near ψυχή"
+    },
+    {
+      "ref": "Acts 17:13",
+      "reason": "occurs near ὄχλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

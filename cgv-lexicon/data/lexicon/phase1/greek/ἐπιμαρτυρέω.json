@@ -1,0 +1,86 @@
+{
+  "lemma": "ἐπιμαρτυρέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιμαρτυρῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 5:12",
+      "form": "ἐπιμαρτυρῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 12,
+      "left_context": "λογίζομαι, δι’ ὀλίγων ἔγραψα, παρακαλῶν καὶ",
+      "right_context": "ταύτην εἶναι ἀληθῆ χάριν τοῦ θεοῦ·"
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀλίγος",
+      "display": "de·pocos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escribí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀληθής",
+      "display": "verdadera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 5:12",
+      "reason": "occurs near γράφω, παρακαλέω, χάρις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

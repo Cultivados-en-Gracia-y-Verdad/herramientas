@@ -1,0 +1,86 @@
+{
+  "lemma": "ματαιόομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐματαιώθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 1:21",
+      "form": "ἐματαιώθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "ὡς θεὸν ἐδόξασαν ἢ ηὐχαρίστησαν, ἀλλὰ",
+      "right_context": "ἐν τοῖς διαλογισμοῖς αὐτῶν καὶ ἐσκοτίσθη"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐχαριστέω",
+      "display": "dar·gracias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαλογισμός",
+      "display": "razonamientos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 1:21",
+      "reason": "occurs near διαλογισμός, δοξάζω, εὐχαριστέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

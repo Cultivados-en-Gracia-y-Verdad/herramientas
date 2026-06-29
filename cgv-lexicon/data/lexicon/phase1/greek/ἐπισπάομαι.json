@@ -1,0 +1,88 @@
+{
+  "lemma": "ἐπισπάομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπισπάσθω·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:18",
+      "form": "ἐπισπάσθω·",
+      "morph": "V-P-M-D-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 18,
+      "left_context": "περιτετμημένος τις ἐκλήθη; μὴ",
+      "right_context": "ἐν ἀκροβυστίᾳ ⸂κέκληταί τις⸃; μὴ περιτεμνέσθω."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καλέω",
+      "display": "fue llamado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιτέμνω",
+      "display": "circuncidado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκροβυστία",
+      "display": "incircuncisión",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 7:18",
+      "form": "ἐπισπάσθω·",
+      "morph": "V-P-M-D-3S",
+      "clause_text": "περιτετμημένος τις ἐκλήθη; μὴ ἐπισπάσθω· ἐν ἀκροβυστίᾳ ⸂κέκληταί τις⸃; μὴ περιτεμνέσθω.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:18",
+      "negator": "μὴ",
+      "clause_text": "περιτετμημένος τις ἐκλήθη; μὴ ἐπισπάσθω· ἐν ἀκροβυστίᾳ ⸂κέκληταί τις⸃; μὴ περιτεμνέσθω."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 7:18",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

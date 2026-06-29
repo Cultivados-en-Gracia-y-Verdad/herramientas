@@ -1,0 +1,115 @@
+{
+  "lemma": "ἐκτελέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐκτελέσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐκτελέσαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 14:29",
+      "form": "ἐκτελέσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 29,
+      "left_context": "θέντος αὐτοῦ θεμέλιον καὶ μὴ ἰσχύοντος",
+      "right_context": "πάντες οἱ θεωροῦντες ἄρξωνται ⸂αὐτῷ ἐμπαίζειν⸃"
+    },
+    {
+      "ref": "Luke 14:30",
+      "form": "ἐκτελέσαι.",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 30,
+      "left_context": "ἄνθρωπος ἤρξατο οἰκοδομεῖν καὶ οὐκ ἴσχυσεν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἰσχύω",
+      "display": "podiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzen",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεμέλιος",
+      "display": "fundamento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "viendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edificar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 14:29",
+      "negator": "μὴ",
+      "clause_text": "ἵνα μήποτε θέντος αὐτοῦ θεμέλιον καὶ μὴ ἰσχύοντος ἐκτελέσαι πάντες οἱ θεωροῦντες ἄρξωνται ⸂αὐτῷ ἐμπαίζειν⸃"
+    },
+    {
+      "ref": "Luke 14:30",
+      "negator": "οὐκ",
+      "clause_text": "Οὗτος ὁ ἄνθρωπος ἤρξατο οἰκοδομεῖν καὶ οὐκ ἴσχυσεν ἐκτελέσαι."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 14:29",
+      "reason": "occurs near θεμέλιος, θεωρέω, ἄρχω"
+    },
+    {
+      "ref": "Luke 14:30",
+      "reason": "occurs near οἰκοδομέω, ἄρχω, ἰσχύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,291 @@
+{
+  "lemma": "πυρόομαι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "πυροῦσθαι.",
+      "count": 1
+    },
+    {
+      "form": "πυροῦμαι;",
+      "count": 1
+    },
+    {
+      "form": "πυρούμενοι",
+      "count": 1
+    },
+    {
+      "form": "⸀πεπυρωμένης,",
+      "count": 1
+    },
+    {
+      "form": "πεπυρωμένον",
+      "count": 1
+    },
+    {
+      "form": "πεπυρωμένα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1,
+      "participle": 4
+    },
+    "tenses": {
+      "present": 3,
+      "perfect": 3
+    },
+    "voices": {
+      "passive": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:9",
+      "form": "πυροῦσθαι.",
+      "morph": "V-P-P-N",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "γαμησάτωσαν, κρεῖττον γάρ ἐστιν ⸀γαμῆσαι ἢ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 11:29",
+      "form": "πυροῦμαι;",
+      "morph": "V-P-P-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 29,
+      "left_context": "ἀσθενῶ; τίς σκανδαλίζεται καὶ οὐκ ἐγὼ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Peter 3:12",
+      "form": "πυρούμενοι",
+      "morph": "V-P-P-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "τοῦ θεοῦ ἡμέρας, δι’ ἣν οὐρανοὶ",
+      "right_context": "λυθήσονται καὶ στοιχεῖα καυσούμενα τήκεται·"
+    },
+    {
+      "ref": "Revelation 1:15",
+      "form": "⸀πεπυρωμένης,",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "αὐτοῦ ὅμοιοι χαλκολιβάνῳ, ὡς ἐν καμίνῳ",
+      "right_context": "καὶ ἡ φωνὴ αὐτοῦ ὡς φωνὴ"
+    },
+    {
+      "ref": "Revelation 3:18",
+      "form": "πεπυρωμένον",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "συμβουλεύω σοι ἀγοράσαι ⸂παρ’ ἐμοῦ χρυσίον⸃",
+      "right_context": "ἐκ πυρὸς ἵνα πλουτήσῃς, καὶ ἱμάτια"
+    },
+    {
+      "ref": "Ephesians 6:16",
+      "form": "πεπυρωμένα",
+      "morph": "V-X-P-P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 16,
+      "left_context": "δυνήσεσθε πάντα τὰ βέλη τοῦ ⸀πονηροῦ",
+      "right_context": "σβέσαι·"
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "1 Corinthians": 1,
+    "2 Corinthians": 1,
+    "2 Peter": 1,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κρείττων",
+      "display": "mejor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκανδαλίζω",
+      "display": "es hacer·tropezado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύω",
+      "display": "serán desatado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στοιχεῖον",
+      "display": "elementos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καυσόομαι",
+      "display": "ardidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τήκομαι",
+      "display": "derretirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅμοιος",
+      "display": "semejantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαλκολίβανον",
+      "display": "bronce",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάμινος",
+      "display": "horno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγοράζω",
+      "display": "comprar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρυσίον",
+      "display": "oro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλουτέω",
+      "display": "enriquecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βέλος",
+      "display": "flechas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "de·malvado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σβέννυμι",
+      "display": "apagar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 11:29",
+      "negator": "οὐκ",
+      "clause_text": "καὶ οὐκ ἀσθενῶ; τίς σκανδαλίζεται καὶ οὐκ ἐγὼ πυροῦμαι;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 1:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 3:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 7:9",
+      "reason": "occurs near γαμέω, κρείττων, ἤ"
+    },
+    {
+      "ref": "2 Corinthians 11:29",
+      "reason": "occurs near σκανδαλίζω"
+    },
+    {
+      "ref": "2 Peter 3:12",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Ephesians 6:16",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

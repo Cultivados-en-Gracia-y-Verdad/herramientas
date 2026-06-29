@@ -1,0 +1,123 @@
+{
+  "lemma": "παραινέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παρῄνει",
+      "count": 1
+    },
+    {
+      "form": "παραινῶ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:9",
+      "form": "παρῄνει",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 9,
+      "left_context": "τὸ καὶ τὴν νηστείαν ἤδη παρεληλυθέναι,",
+      "right_context": "ὁ Παῦλος"
+    },
+    {
+      "ref": "Acts 27:22",
+      "form": "παραινῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 22,
+      "left_context": "καὶ τὰ νῦν",
+      "right_context": "ὑμᾶς εὐθυμεῖν, ἀποβολὴ γὰρ ψυχῆς οὐδεμία"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νηστεία",
+      "display": "ayuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρέρχομαι",
+      "display": "pasar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθυμέω",
+      "display": "tener·buen·ánimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποβολή",
+      "display": "pérdida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "de·alma",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:22",
+      "reason": "occurs near νῦν"
+    },
+    {
+      "ref": "Acts 27:9",
+      "reason": "occurs near Παῦλος, νηστεία, παρέρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

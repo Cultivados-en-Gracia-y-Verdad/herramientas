@@ -1,0 +1,538 @@
+{
+  "lemma": "θεάομαι",
+  "language": "greek",
+  "total_occurrences": 22,
+  "forms": [
+    {
+      "form": "ἐθεασάμεθα",
+      "count": 2
+    },
+    {
+      "form": "θεασάμενοι",
+      "count": 2
+    },
+    {
+      "form": "θεασάμενος",
+      "count": 2
+    },
+    {
+      "form": "θεάσασθαι;",
+      "count": 2
+    },
+    {
+      "form": "θεαθῆναι",
+      "count": 2
+    },
+    {
+      "form": "θεάσασθαι",
+      "count": 2
+    },
+    {
+      "form": "τεθέαται·",
+      "count": 1
+    },
+    {
+      "form": "τεθεάμεθα",
+      "count": 1
+    },
+    {
+      "form": "ἐθεάσασθε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐθεάσαντο",
+      "count": 1
+    },
+    {
+      "form": "Τεθέαμαι",
+      "count": 1
+    },
+    {
+      "form": "θεάσασθε",
+      "count": 1
+    },
+    {
+      "form": "ἐθεάσατο",
+      "count": 1
+    },
+    {
+      "form": "ἐθεάσαντο",
+      "count": 1
+    },
+    {
+      "form": "ἐθεάθη",
+      "count": 1
+    },
+    {
+      "form": "θεασαμένοις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 10,
+      "participle": 5,
+      "imperative": 1,
+      "infinitive": 6
+    },
+    "tenses": {
+      "aorist": 19,
+      "perfect": 3
+    },
+    "voices": {
+      "middle": 19,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 1:1",
+      "form": "ἐθεασάμεθα",
+      "morph": "V-A-M-I-1P",
+      "book": "1 John",
+      "chapter": 1,
+      "verse": 1,
+      "left_context": "ὃ ἑωράκαμεν τοῖς ὀφθαλμοῖς ἡμῶν, ὃ",
+      "right_context": "καὶ αἱ χεῖρες ἡμῶν ἐψηλάφησαν, περὶ"
+    },
+    {
+      "ref": "1 John 4:12",
+      "form": "τεθέαται·",
+      "morph": "V-X-M-I-3S",
+      "book": "1 John",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "θεὸν οὐδεὶς πώποτε",
+      "right_context": "ἐὰν ἀγαπῶμεν ἀλλήλους, ὁ θεὸς ἐν"
+    },
+    {
+      "ref": "1 John 4:14",
+      "form": "τεθεάμεθα",
+      "morph": "V-X-M-I-1P",
+      "book": "1 John",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "καὶ ἡμεῖς",
+      "right_context": "καὶ μαρτυροῦμεν ὅτι ὁ πατὴρ ἀπέσταλκεν"
+    },
+    {
+      "ref": "Acts 1:11",
+      "form": "ἐθεάσασθε",
+      "morph": "V-A-M-I-2P",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "τὸν οὐρανὸν οὕτως ἐλεύσεται ὃν τρόπον",
+      "right_context": "αὐτὸν πορευόμενον εἰς τὸν οὐρανόν."
+    },
+    {
+      "ref": "Acts 21:27",
+      "form": "θεασάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 27,
+      "left_context": "συντελεῖσθαι, οἱ ἀπὸ τῆς Ἀσίας Ἰουδαῖοι",
+      "right_context": "αὐτὸν ἐν τῷ ἱερῷ συνέχεον πάντα"
+    },
+    {
+      "ref": "Acts 22:9",
+      "form": "⸀ἐθεάσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 9,
+      "left_context": "σὺν ἐμοὶ ὄντες τὸ μὲν φῶς",
+      "right_context": "τὴν δὲ φωνὴν οὐκ ἤκουσαν τοῦ"
+    },
+    {
+      "ref": "John 1:14",
+      "form": "ἐθεασάμεθα",
+      "morph": "V-A-M-I-1P",
+      "book": "John",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "ἐγένετο καὶ ἐσκήνωσεν ἐν ἡμῖν, καὶ",
+      "right_context": "τὴν δόξαν αὐτοῦ, δόξαν ὡς μονογενοῦς"
+    },
+    {
+      "ref": "John 1:32",
+      "form": "Τεθέαμαι",
+      "morph": "V-X-M-I-1S",
+      "book": "John",
+      "chapter": 1,
+      "verse": 32,
+      "left_context": "καὶ ἐμαρτύρησεν Ἰωάννης λέγων ὅτι",
+      "right_context": "τὸ πνεῦμα καταβαῖνον ⸀ὡς περιστερὰν ἐξ"
+    },
+    {
+      "ref": "John 1:38",
+      "form": "θεασάμενος",
+      "morph": "V-A-M-P",
+      "book": "John",
+      "chapter": 1,
+      "verse": 38,
+      "left_context": "στραφεὶς δὲ ὁ Ἰησοῦς καὶ",
+      "right_context": "αὐτοὺς ἀκολουθοῦντας λέγει αὐτοῖς· Τί ζητεῖτε;"
+    },
+    {
+      "ref": "John 4:35",
+      "form": "θεάσασθε",
+      "morph": "V-A-M-D-2P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 35,
+      "left_context": "ὑμῖν, ἐπάρατε τοὺς ὀφθαλμοὺς ὑμῶν καὶ",
+      "right_context": "τὰς χώρας ὅτι λευκαί εἰσιν πρὸς"
+    },
+    {
+      "ref": "John 6:5",
+      "form": "θεασάμενος",
+      "morph": "V-A-M-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "οὖν ⸂τοὺς ὀφθαλμοὺς ὁ Ἰησοῦς⸃ καὶ",
+      "right_context": "ὅτι πολὺς ὄχλος ἔρχεται πρὸς αὐτὸν"
+    },
+    {
+      "ref": "John 11:45",
+      "form": "θεασάμενοι",
+      "morph": "V-A-M-P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 45,
+      "left_context": "οἱ ἐλθόντες πρὸς τὴν ⸀Μαριὰμ καὶ",
+      "right_context": "⸀ἃ ⸀ἐποίησεν, ἐπίστευσαν εἰς αὐτόν·"
+    },
+    {
+      "ref": "Luke 5:27",
+      "form": "ἐθεάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 27,
+      "left_context": "Καὶ μετὰ ταῦτα ἐξῆλθεν καὶ",
+      "right_context": "τελώνην ὀνόματι Λευὶν καθήμενον ἐπὶ τὸ"
+    },
+    {
+      "ref": "Luke 7:24",
+      "form": "θεάσασθαι;",
+      "morph": "V-A-M-N",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 24,
+      "left_context": "Ἰωάννου· Τί ⸀ἐξήλθατε εἰς τὴν ἔρημον",
+      "right_context": "κάλαμον ὑπὸ ἀνέμου σαλευόμενον;"
+    },
+    {
+      "ref": "Luke 23:55",
+      "form": "ἐθεάσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 55,
+      "left_context": "ἦσαν συνεληλυθυῖαι ⸂ἐκ τῆς Γαλιλαίας αὐτῷ⸃,",
+      "right_context": "τὸ μνημεῖον καὶ ὡς ἐτέθη τὸ"
+    },
+    {
+      "ref": "Mark 16:11",
+      "form": "ἐθεάθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 11,
+      "left_context": "κἀκεῖνοι ἀκούσαντες ὅτι ζῇ καὶ",
+      "right_context": "ὑπ’ αὐτῆς ἠπίστησαν."
+    },
+    {
+      "ref": "Mark 16:14",
+      "form": "θεασαμένοις",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 14,
+      "left_context": "ἀπιστίαν αὐτῶν καὶ σκληροκαρδίαν ὅτι τοῖς",
+      "right_context": "αὐτὸν ⸀ἐγηγερμένον οὐκ ἐπίστευσαν."
+    },
+    {
+      "ref": "Matthew 6:1",
+      "form": "θεαθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "ποιεῖν ἔμπροσθεν τῶν ἀνθρώπων πρὸς τὸ",
+      "right_context": "αὐτοῖς· εἰ δὲ μή γε, μισθὸν"
+    },
+    {
+      "ref": "Matthew 11:7",
+      "form": "θεάσασθαι;",
+      "morph": "V-A-M-N",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "Ἰωάννου· Τί ἐξήλθατε εἰς τὴν ἔρημον",
+      "right_context": "κάλαμον ὑπὸ ἀνέμου σαλευόμενον;"
+    },
+    {
+      "ref": "Matthew 22:11",
+      "form": "θεάσασθαι",
+      "morph": "V-A-M-N",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 11,
+      "left_context": "εἰσελθὼν δὲ ὁ βασιλεὺς",
+      "right_context": "τοὺς ἀνακειμένους εἶδεν ἐκεῖ ἄνθρωπον οὐκ"
+    },
+    {
+      "ref": "Matthew 23:5",
+      "form": "θεαθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 5,
+      "left_context": "τὰ ἔργα αὐτῶν ποιοῦσιν πρὸς τὸ",
+      "right_context": "τοῖς ἀνθρώποις· πλατύνουσι ⸀γὰρ τὰ φυλακτήρια"
+    },
+    {
+      "ref": "Romans 15:24",
+      "form": "θεάσασθαι",
+      "morph": "V-A-M-N",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 24,
+      "left_context": "εἰς τὴν ⸀Σπανίαν, ἐλπίζω γὰρ διαπορευόμενος",
+      "right_context": "ὑμᾶς καὶ ὑφ’ ὑμῶν προπεμφθῆναι ἐκεῖ"
+    }
+  ],
+  "books": {
+    "John": 6,
+    "Matthew": 4,
+    "1 John": 3,
+    "Acts": 3,
+    "Luke": 3,
+    "Mark": 2,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vendrá",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "hemos visto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρέω",
+      "display": "testificamos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creieron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάλαμος",
+      "display": "caña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·viento",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σαλεύω",
+      "display": "sacudido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψηλαφάω",
+      "display": "palparon",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώποτε",
+      "display": "jamás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "display": "amáramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρόπος",
+      "display": "modo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "iendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 4:35",
+      "form": "θεάσασθε",
+      "morph": "V-A-M-D-2P",
+      "clause_text": "ἰδοὺ λέγω ὑμῖν, ἐπάρατε τοὺς ὀφθαλμοὺς ὑμῶν καὶ θεάσασθε τὰς χώρας ὅτι λευκαί εἰσιν πρὸς θερισμόν· ἤδη"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 22:9",
+      "negator": "οὐκ",
+      "clause_text": "οἱ δὲ σὺν ἐμοὶ ὄντες τὸ μὲν φῶς ⸀ἐθεάσαντο τὴν δὲ φωνὴν οὐκ ἤκουσαν τοῦ λαλοῦντός μοι."
+    },
+    {
+      "ref": "Mark 16:14",
+      "negator": "οὐκ",
+      "clause_text": "ὠνείδισεν τὴν ἀπιστίαν αὐτῶν καὶ σκληροκαρδίαν ὅτι τοῖς θεασαμένοις αὐτὸν ⸀ἐγηγερμένον οὐκ ἐπίστευσαν."
+    },
+    {
+      "ref": "Matthew 6:1",
+      "negator": "μή",
+      "clause_text": "ὑμῶν μὴ ποιεῖν ἔμπροσθεν τῶν ἀνθρώπων πρὸς τὸ θεαθῆναι αὐτοῖς· εἰ δὲ μή γε, μισθὸν οὐκ ἔχετε"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 4:35",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 11:45",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 1:14",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 1:32",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 1:38",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 6:5",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "Matthew 11:7",
+      "reason": "occurs near ἐξέρχομαι"
+    },
+    {
+      "ref": "Matthew 22:11",
+      "reason": "occurs near ἄνθρωπος, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

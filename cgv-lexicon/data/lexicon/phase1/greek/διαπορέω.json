@@ -1,0 +1,149 @@
+{
+  "lemma": "διαπορέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "διηπόρει",
+      "count": 2
+    },
+    {
+      "form": "⸀διηπόρουν,",
+      "count": 1
+    },
+    {
+      "form": "διηπόρουν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "imperfect": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:12",
+      "form": "⸀διηπόρουν,",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "ἐξίσταντο δὲ πάντες καὶ",
+      "right_context": "ἄλλος πρὸς ἄλλον λέγοντες· Τί ⸀θέλει"
+    },
+    {
+      "ref": "Acts 5:24",
+      "form": "διηπόρουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 24,
+      "left_context": "στρατηγὸς τοῦ ἱεροῦ καὶ οἱ ἀρχιερεῖς,",
+      "right_context": "περὶ αὐτῶν τί ἂν γένοιτο τοῦτο."
+    },
+    {
+      "ref": "Acts 10:17",
+      "form": "διηπόρει",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 17,
+      "left_context": "Ὡς δὲ ἐν ἑαυτῷ",
+      "right_context": "ὁ Πέτρος τί ἂν εἴη τὸ"
+    },
+    {
+      "ref": "Luke 9:7",
+      "form": "διηπόρει",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 7,
+      "left_context": "ὁ τετραάρχης τὰ ⸀γινόμενα πάντα, καὶ",
+      "right_context": "διὰ τὸ λέγεσθαι ὑπό τινων ὅτι"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξίστημι",
+      "display": "asombrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "de·sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τετραάρχης",
+      "display": "tetrarca",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:17",
+      "reason": "occurs near ἑαυτοῦ"
+    },
+    {
+      "ref": "Acts 2:12",
+      "reason": "occurs near ἄλλος, ἐξίστημι"
+    },
+    {
+      "ref": "Acts 5:24",
+      "reason": "occurs near ἀρχιερεύς, ἱερός"
+    },
+    {
+      "ref": "Luke 9:7",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,92 @@
+{
+  "lemma": "κατασφραγίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατεσφραγισμένον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 5:1",
+      "form": "κατεσφραγισμένον",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "θρόνου βιβλίον γεγραμμένον ἔσωθεν καὶ ⸀ὄπισθεν,",
+      "right_context": "σφραγῖσιν ἑπτά."
+    }
+  ],
+  "books": {
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βιβλίον",
+      "display": "libro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔσωθεν",
+      "display": "por·dentro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄπισθεν",
+      "display": "detrás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σφραγίς",
+      "display": "sellos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑπτά",
+      "display": "siete",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 5:1",
+      "reason": "occurs near βιβλίον, γράφω, σφραγίς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

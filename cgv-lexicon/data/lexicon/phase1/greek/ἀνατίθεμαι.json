@@ -1,0 +1,123 @@
+{
+  "lemma": "ἀνατίθεμαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνεθέμην",
+      "count": 1
+    },
+    {
+      "form": "ἀνέθετο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 2:2",
+      "form": "ἀνεθέμην",
+      "morph": "V-A-M-I-1S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "ἀνέβην δὲ κατὰ ἀποκάλυψιν· καὶ",
+      "right_context": "αὐτοῖς τὸ εὐαγγέλιον ὃ κηρύσσω ἐν"
+    },
+    {
+      "ref": "Acts 25:14",
+      "form": "ἀνέθετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 14,
+      "left_context": "⸀διέτριβον ἐκεῖ, ὁ Φῆστος τῷ βασιλεῖ",
+      "right_context": "τὰ κατὰ τὸν Παῦλον λέγων· Ἀνήρ"
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκάλυψις",
+      "display": "revelación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κηρύσσω",
+      "display": "proclamo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φῆστος",
+      "display": "Festo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 25:14",
+      "reason": "occurs near ἐκεῖ"
+    },
+    {
+      "ref": "Galatians 2:2",
+      "reason": "occurs near εὐαγγέλιον, κηρύσσω, ἀναβαίνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

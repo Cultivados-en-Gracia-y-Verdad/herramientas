@@ -1,0 +1,212 @@
+{
+  "lemma": "κείρω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κειράσθω·",
+      "count": 1
+    },
+    {
+      "form": "κείρασθαι",
+      "count": 1
+    },
+    {
+      "form": "⸀κείραντος",
+      "count": 1
+    },
+    {
+      "form": "κειράμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "infinitive": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "middle": 3,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:6",
+      "form": "κειράσθω·",
+      "morph": "V-A-M-D-3S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 6,
+      "left_context": "εἰ γὰρ οὐ κατακαλύπτεται γυνή, καὶ",
+      "right_context": "εἰ δὲ αἰσχρὸν γυναικὶ τὸ κείρασθαι"
+    },
+    {
+      "ref": "1 Corinthians 11:6",
+      "form": "κείρασθαι",
+      "morph": "V-A-M-N",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 6,
+      "left_context": "κειράσθω· εἰ δὲ αἰσχρὸν γυναικὶ τὸ",
+      "right_context": "ἢ ξυρᾶσθαι, κατακαλυπτέσθω."
+    },
+    {
+      "ref": "Acts 8:32",
+      "form": "⸀κείραντος",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "ἤχθη, καὶ ὡς ἀμνὸς ἐναντίον τοῦ",
+      "right_context": "αὐτὸν ἄφωνος, οὕτως οὐκ ἀνοίγει τὸ"
+    },
+    {
+      "ref": "Acts 18:18",
+      "form": "κειράμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 18,
+      "left_context": "καὶ σὺν αὐτῷ Πρίσκιλλα καὶ Ἀκύλας,",
+      "right_context": "⸂ἐν Κεγχρεαῖς τὴν κεφαλήν⸃, εἶχεν γὰρ"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κατακαλύπτομαι",
+      "display": "cubrirse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχρός",
+      "display": "vergonzoso",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξυράομαι",
+      "display": "afeitarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμνός",
+      "display": "cordero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐναντίον",
+      "display": "en·presencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄφωνος",
+      "display": "mudo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνοίγω",
+      "display": "abre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πρίσκιλλα",
+      "display": "Priscila",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀκύλας",
+      "display": "Aquila",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κεγχρεαί",
+      "display": "Cencrea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabeza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 11:6",
+      "form": "κειράσθω·",
+      "morph": "V-A-M-D-3S",
+      "clause_text": "εἰ γὰρ οὐ κατακαλύπτεται γυνή, καὶ κειράσθω· εἰ δὲ αἰσχρὸν γυναικὶ τὸ κείρασθαι ἢ ξυρᾶσθαι,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 11:6",
+      "negator": "οὐ",
+      "clause_text": "εἰ γὰρ οὐ κατακαλύπτεται γυνή, καὶ κειράσθω· εἰ δὲ αἰσχρὸν γυναικὶ τὸ κείρασθαι ἢ ξυρᾶσθαι,"
+    },
+    {
+      "ref": "Acts 8:32",
+      "negator": "οὐκ",
+      "clause_text": "ἐπὶ σφαγὴν ἤχθη, καὶ ὡς ἀμνὸς ἐναντίον τοῦ ⸀κείραντος αὐτὸν ἄφωνος, οὕτως οὐκ ἀνοίγει τὸ στόμα αὐτοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 11:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 18:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 8:32",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

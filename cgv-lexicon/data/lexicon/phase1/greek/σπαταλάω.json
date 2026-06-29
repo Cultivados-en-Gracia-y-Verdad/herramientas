@@ -1,0 +1,113 @@
+{
+  "lemma": "σπαταλάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "σπαταλῶσα",
+      "count": 1
+    },
+    {
+      "form": "ἐσπαταλήσατε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:6",
+      "form": "σπαταλῶσα",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "ἡ δὲ",
+      "right_context": "ζῶσα τέθνηκεν."
+    },
+    {
+      "ref": "James 5:5",
+      "form": "ἐσπαταλήσατε,",
+      "morph": "V-A-A-I-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 5,
+      "left_context": "ἐτρυφήσατε ἐπὶ τῆς γῆς καὶ",
+      "right_context": "ἐθρέψατε τὰς καρδίας ⸀ὑμῶν ἐν ἡμέρᾳ"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνῄσκω",
+      "display": "ha muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρυφάω",
+      "display": "vivir·en·deleites",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρέφω",
+      "display": "alimentasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:6",
+      "reason": "occurs near ζάω, θνῄσκω"
+    },
+    {
+      "ref": "James 5:5",
+      "reason": "occurs near γῆ, τρέφω, τρυφάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

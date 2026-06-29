@@ -1,0 +1,208 @@
+{
+  "lemma": "ἐντυγχάνω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐντυγχάνει",
+      "count": 3
+    },
+    {
+      "form": "ἐντυγχάνειν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐνέτυχόν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 4,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 7:25",
+      "form": "ἐντυγχάνειν",
+      "morph": "V-P-A-N",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 25,
+      "left_context": "τῷ θεῷ, πάντοτε ζῶν εἰς τὸ",
+      "right_context": "ὑπὲρ αὐτῶν."
+    },
+    {
+      "ref": "Acts 25:24",
+      "form": "⸀ἐνέτυχόν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 24,
+      "left_context": "οὗ ⸀ἅπαν τὸ πλῆθος τῶν Ἰουδαίων",
+      "right_context": "μοι ἔν τε Ἱεροσολύμοις καὶ ἐνθάδε,"
+    },
+    {
+      "ref": "Romans 8:27",
+      "form": "ἐντυγχάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 27,
+      "left_context": "φρόνημα τοῦ πνεύματος, ὅτι κατὰ θεὸν",
+      "right_context": "ὑπὲρ ἁγίων."
+    },
+    {
+      "ref": "Romans 8:34",
+      "form": "ἐντυγχάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 34,
+      "left_context": "ἐν δεξιᾷ τοῦ θεοῦ, ὃς καὶ",
+      "right_context": "ὑπὲρ ἡμῶν·"
+    },
+    {
+      "ref": "Romans 11:2",
+      "form": "ἐντυγχάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 2,
+      "left_context": "Ἠλίᾳ τί λέγει ἡ γραφή, ὡς",
+      "right_context": "τῷ θεῷ κατὰ τοῦ ⸀Ἰσραήλ;"
+    }
+  ],
+  "books": {
+    "Romans": 3,
+    "Hebrews": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοτε",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπας",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλῆθος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "derecha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escritura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "de·Israel",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 11:2",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Romans 8:27",
+      "reason": "occurs near θεός, ὑπέρ"
+    },
+    {
+      "ref": "Romans 8:34",
+      "reason": "occurs near θεός, ὑπέρ"
+    },
+    {
+      "ref": "Acts 25:24",
+      "reason": "occurs near ἅπας"
+    },
+    {
+      "ref": "Hebrews 7:25",
+      "reason": "occurs near ζάω, θεός, πάντοτε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

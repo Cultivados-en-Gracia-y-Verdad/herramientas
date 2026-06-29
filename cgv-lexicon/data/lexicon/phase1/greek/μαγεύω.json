@@ -1,0 +1,86 @@
+{
+  "lemma": "μαγεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μαγεύων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 8:9",
+      "form": "μαγεύων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 9,
+      "left_context": "ὀνόματι Σίμων προϋπῆρχεν ἐν τῇ πόλει",
+      "right_context": "καὶ ⸀ἐξιστάνων τὸ ἔθνος τῆς Σαμαρείας,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προϋπάρχω",
+      "display": "existir·antes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξίστημι",
+      "display": "asombrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "nación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 8:9",
+      "reason": "occurs near Σίμων, προϋπάρχω, πόλις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

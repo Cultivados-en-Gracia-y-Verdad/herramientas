@@ -1,0 +1,123 @@
+{
+  "lemma": "ἀλαλάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀλαλάζον.",
+      "count": 1
+    },
+    {
+      "form": "ἀλαλάζοντας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:1",
+      "form": "ἀλαλάζον.",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 1,
+      "left_context": "ἔχω, γέγονα χαλκὸς ἠχῶν ἢ κύμβαλον",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 5:38",
+      "form": "ἀλαλάζοντας",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 38,
+      "left_context": "καὶ θεωρεῖ θόρυβον ⸀καὶ κλαίοντας καὶ",
+      "right_context": "πολλά,"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χαλκός",
+      "display": "cobre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἠχέω",
+      "display": "sonando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύμβαλον",
+      "display": "címbalo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "ve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θόρυβος",
+      "display": "alboroto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "llorando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 13:1",
+      "reason": "occurs near κύμβαλον, χαλκός, ἠχέω"
+    },
+    {
+      "ref": "Mark 5:38",
+      "reason": "occurs near θεωρέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

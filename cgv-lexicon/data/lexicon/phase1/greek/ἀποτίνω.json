@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀποτίνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀποτίσω·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philemon 1:19",
+      "form": "ἀποτίσω·",
+      "morph": "V-F-A-I-1S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ",
+      "right_context": "ἵνα μὴ λέγω σοι ὅτι καὶ"
+    }
+  ],
+  "books": {
+    "Philemon": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γράφω",
+      "display": "escribí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμός",
+      "display": "mi",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Philemon 1:19",
+      "negator": "μὴ",
+      "clause_text": "ἐγὼ Παῦλος ἔγραψα τῇ ἐμῇ χειρί, ἐγὼ ἀποτίσω· ἵνα μὴ λέγω σοι ὅτι καὶ σεαυτόν μοι"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philemon 1:19",
+      "reason": "occurs near γράφω, χείρ, ἐμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

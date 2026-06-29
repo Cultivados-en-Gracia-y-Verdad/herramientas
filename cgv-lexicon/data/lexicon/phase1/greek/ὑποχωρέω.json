@@ -1,0 +1,118 @@
+{
+  "lemma": "ὑποχωρέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ὑποχωρῶν",
+      "count": 1
+    },
+    {
+      "form": "ὑπεχώρησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 5:16",
+      "form": "ὑποχωρῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "αὐτὸς δὲ ἦν",
+      "right_context": "ἐν ταῖς ἐρήμοις καὶ προσευχόμενος."
+    },
+    {
+      "ref": "Luke 9:10",
+      "form": "ὑπεχώρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "αὐτῷ ὅσα ἐποίησαν. καὶ παραλαβὼν αὐτοὺς",
+      "right_context": "κατ’ ἰδίαν εἰς ⸂πόλιν καλουμένην Βηθσαϊδά⸃."
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρημος",
+      "display": "desiertas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamada",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 5:16",
+      "reason": "occurs near προσεύχομαι, ἔρημος"
+    },
+    {
+      "ref": "Luke 9:10",
+      "reason": "occurs near παραλαμβάνω, ἴδιος, ὅσος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

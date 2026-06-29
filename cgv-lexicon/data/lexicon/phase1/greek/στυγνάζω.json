@@ -1,0 +1,136 @@
+{
+  "lemma": "στυγνάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "στυγνάσας",
+      "count": 1
+    },
+    {
+      "form": "στυγνάζων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 10:22",
+      "form": "στυγνάσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "ὁ δὲ",
+      "right_context": "ἐπὶ τῷ λόγῳ ἀπῆλθεν λυπούμενος, ἦν"
+    },
+    {
+      "ref": "Matthew 16:3",
+      "form": "στυγνάζων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 3,
+      "left_context": "καὶ πρωΐ· Σήμερον χειμών, πυρράζει γὰρ",
+      "right_context": "ὁ οὐρανός. ⸀τὸ μὲν πρόσωπον τοῦ"
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λυπέω",
+      "display": "entristecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρωΐ",
+      "display": "mañana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χειμών",
+      "display": "invierno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυρράζω",
+      "display": "enrojece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:22",
+      "reason": "occurs near λυπέω, λόγος, ἀπέρχομαι"
+    },
+    {
+      "ref": "Matthew 16:3",
+      "reason": "occurs near πρωΐ, σήμερον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "ὑποπνέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "Ὑποπνεύσαντος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:13",
+      "form": "Ὑποπνεύσαντος",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "δὲ νότου δόξαντες τῆς προθέσεως κεκρατηκέναι"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νότος",
+      "display": "de·sur",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "parecidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόθεσις",
+      "display": "de·proposición",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:13",
+      "reason": "occurs near δοκέω, νότος, πρόθεσις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

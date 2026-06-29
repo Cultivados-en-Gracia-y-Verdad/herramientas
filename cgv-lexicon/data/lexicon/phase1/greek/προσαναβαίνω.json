@@ -1,0 +1,93 @@
+{
+  "lemma": "προσαναβαίνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προσανάβηθι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 14:10",
+      "form": "προσανάβηθι",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 10,
+      "left_context": "ὁ κεκληκώς σε ⸀ἐρεῖ σοι· Φίλε,",
+      "right_context": "ἀνώτερον· τότε ἔσται σοι δόξα ἐνώπιον"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φίλος",
+      "display": "amigo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνώτερον",
+      "display": "más·arriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 14:10",
+      "form": "προσανάβηθι",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ὅταν ἔλθῃ ὁ κεκληκώς σε ⸀ἐρεῖ σοι· Φίλε, προσανάβηθι ἀνώτερον· τότε ἔσται σοι δόξα ἐνώπιον ⸀πάντων τῶν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 14:10",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

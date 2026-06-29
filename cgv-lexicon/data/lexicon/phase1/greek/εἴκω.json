@@ -1,0 +1,80 @@
+{
+  "lemma": "εἴκω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εἴξαμεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 2:5",
+      "form": "εἴξαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "οἷς οὐδὲ πρὸς ὥραν",
+      "right_context": "τῇ ὑποταγῇ, ἵνα ἡ ἀλήθεια τοῦ"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποταγή",
+      "display": "sujeción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 2:5",
+      "negator": "οὐδὲ",
+      "clause_text": "οἷς οὐδὲ πρὸς ὥραν εἴξαμεν τῇ ὑποταγῇ, ἵνα ἡ ἀλήθεια τοῦ εὐαγγελίου διαμείνῃ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 2:5",
+      "reason": "occurs near ἀλήθεια, ὑποταγή, ὥρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

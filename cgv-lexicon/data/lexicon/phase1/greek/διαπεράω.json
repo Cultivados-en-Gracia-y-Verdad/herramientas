@@ -1,0 +1,226 @@
+{
+  "lemma": "διαπεράω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "διαπεράσαντες",
+      "count": 2
+    },
+    {
+      "form": "διαπερῶν",
+      "count": 1
+    },
+    {
+      "form": "διαπερῶσιν.",
+      "count": 1
+    },
+    {
+      "form": "διαπεράσαντος",
+      "count": 1
+    },
+    {
+      "form": "διεπέρασεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 21:2",
+      "form": "διαπερῶν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 2,
+      "left_context": "καὶ εὑρόντες πλοῖον",
+      "right_context": "εἰς Φοινίκην ἐπιβάντες ἀνήχθημεν."
+    },
+    {
+      "ref": "Luke 16:26",
+      "form": "διαπερῶσιν.",
+      "morph": "V-P-A-S-3P",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 26,
+      "left_context": "μὴ δύνωνται, ⸀μηδὲ ἐκεῖθεν πρὸς ἡμᾶς",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 5:21",
+      "form": "διαπεράσαντος",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "Καὶ",
+      "right_context": "τοῦ Ἰησοῦ ἐν τῷ πλοίῳ πάλιν"
+    },
+    {
+      "ref": "Mark 6:53",
+      "form": "διαπεράσαντες",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 53,
+      "left_context": "Καὶ",
+      "right_context": "⸂ἐπὶ τὴν γῆν ἦλθον εἰς⸃ Γεννησαρὲτ"
+    },
+    {
+      "ref": "Matthew 9:1",
+      "form": "διεπέρασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 1,
+      "left_context": "Καὶ ⸀ἐμβὰς ⸀εἰς πλοῖον",
+      "right_context": "καὶ ἦλθεν εἰς τὴν ἰδίαν πόλιν."
+    },
+    {
+      "ref": "Matthew 14:34",
+      "form": "διαπεράσαντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 34,
+      "left_context": "Καὶ",
+      "right_context": "ἦλθον ⸂ἐπὶ τὴν γῆν εἰς⸃ Γεννησαρέτ."
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Matthew": 2,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φοινίκη",
+      "display": "Fenicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιβαίνω",
+      "display": "montados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγω",
+      "display": "fueron subido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podieran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖθεν",
+      "display": "de·allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμβαίνω",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 16:26",
+      "negator": "⸀μηδὲ",
+      "clause_text": "πρὸς ὑμᾶς μὴ δύνωνται, ⸀μηδὲ ἐκεῖθεν πρὸς ἡμᾶς διαπερῶσιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 5:21",
+      "reason": "occurs near πλοῖον"
+    },
+    {
+      "ref": "Mark 6:53",
+      "reason": "occurs near γῆ, ἔρχομαι"
+    },
+    {
+      "ref": "Matthew 14:34",
+      "reason": "occurs near γῆ, ἔρχομαι"
+    },
+    {
+      "ref": "Matthew 9:1",
+      "reason": "occurs near πλοῖον, ἔρχομαι"
+    },
+    {
+      "ref": "Acts 21:2",
+      "reason": "occurs near Φοινίκη, εὑρίσκω, πλοῖον"
+    },
+    {
+      "ref": "Luke 16:26",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

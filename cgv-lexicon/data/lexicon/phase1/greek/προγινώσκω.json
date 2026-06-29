@@ -1,0 +1,254 @@
+{
+  "lemma": "προγινώσκω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "προεγνωσμένου",
+      "count": 1
+    },
+    {
+      "form": "προγινώσκοντες",
+      "count": 1
+    },
+    {
+      "form": "προγινώσκοντές",
+      "count": 1
+    },
+    {
+      "form": "προέγνω,",
+      "count": 1
+    },
+    {
+      "form": "προέγνω.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "present": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:20",
+      "form": "προεγνωσμένου",
+      "morph": "V-X-P-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "",
+      "right_context": "μὲν πρὸ καταβολῆς κόσμου, φανερωθέντος δὲ"
+    },
+    {
+      "ref": "2 Peter 3:17",
+      "form": "προγινώσκοντες",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "ὑμεῖς οὖν, ἀγαπητοί,",
+      "right_context": "φυλάσσεσθε ἵνα μὴ τῇ τῶν ἀθέσμων"
+    },
+    {
+      "ref": "Acts 26:5",
+      "form": "προγινώσκοντές",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 5,
+      "left_context": "",
+      "right_context": "με ἄνωθεν, ἐὰν θέλωσι μαρτυρεῖν, ὅτι"
+    },
+    {
+      "ref": "Romans 8:29",
+      "form": "προέγνω,",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 29,
+      "left_context": "ὅτι οὓς",
+      "right_context": "καὶ προώρισεν συμμόρφους τῆς εἰκόνος τοῦ"
+    },
+    {
+      "ref": "Romans 11:2",
+      "form": "προέγνω.",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 2,
+      "left_context": "ὁ θεὸς τὸν λαὸν αὐτοῦ ὃν",
+      "right_context": "ἢ οὐκ οἴδατε ἐν Ἠλίᾳ τί"
+    }
+  ],
+  "books": {
+    "Romans": 2,
+    "1 Peter": 1,
+    "2 Peter": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβολή",
+      "display": "de·fundación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "de·mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φανερόω",
+      "display": "manifestado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guardad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνωθεν",
+      "display": "desde·arriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querieran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρέω",
+      "display": "testificar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προορίζω",
+      "display": "predestinó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύμμορφος",
+      "display": "conformes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰκών",
+      "display": "de·imagen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habéis sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἠλίας",
+      "display": "Elías",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 3:17",
+      "negator": "μὴ",
+      "clause_text": "ὑμεῖς οὖν, ἀγαπητοί, προγινώσκοντες φυλάσσεσθε ἵνα μὴ τῇ τῶν ἀθέσμων πλάνῃ συναπαχθέντες"
+    },
+    {
+      "ref": "Romans 11:2",
+      "negator": "οὐκ",
+      "clause_text": "οὐκ ἀπώσατο ὁ θεὸς τὸν λαὸν αὐτοῦ ὃν προέγνω. ἢ οὐκ οἴδατε ἐν Ἠλίᾳ τί λέγει ἡ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 11:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 8:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 1:20",
+      "reason": "occurs near καταβολή, κόσμος, μέν"
+    },
+    {
+      "ref": "2 Peter 3:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 26:5",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

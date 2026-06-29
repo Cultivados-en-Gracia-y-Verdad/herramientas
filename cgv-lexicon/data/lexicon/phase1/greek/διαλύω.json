@@ -1,0 +1,68 @@
+{
+  "lemma": "διαλύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διελύθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:36",
+      "form": "διελύθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 36,
+      "left_context": "ἀνῃρέθη, καὶ πάντες ὅσοι ἐπείθοντο αὐτῷ",
+      "right_context": "καὶ ἐγένοντο εἰς οὐδέν."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "eran persuadido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 5:36",
+      "reason": "occurs near πείθω, ὅσος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

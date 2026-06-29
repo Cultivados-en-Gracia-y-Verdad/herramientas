@@ -1,0 +1,126 @@
+{
+  "lemma": "φορτίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "φορτίζετε",
+      "count": 1
+    },
+    {
+      "form": "πεφορτισμένοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 11:46",
+      "form": "φορτίζετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 46,
+      "left_context": "Καὶ ὑμῖν τοῖς νομικοῖς οὐαί, ὅτι",
+      "right_context": "τοὺς ἀνθρώπους φορτία δυσβάστακτα, καὶ αὐτοὶ"
+    },
+    {
+      "ref": "Matthew 11:28",
+      "form": "πεφορτισμένοι,",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 28,
+      "left_context": "πρός με πάντες οἱ κοπιῶντες καὶ",
+      "right_context": "κἀγὼ ἀναπαύσω ὑμᾶς."
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νομικός",
+      "display": "intérprete·de·la·ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐαί",
+      "display": "¡ay!",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φορτίον",
+      "display": "cargas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυσβάστακτος",
+      "display": "difícil·de·llevar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabajando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναπαύω",
+      "display": "descansaré",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:46",
+      "reason": "occurs near δυσβάστακτος, νομικός, οὐαί"
+    },
+    {
+      "ref": "Matthew 11:28",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

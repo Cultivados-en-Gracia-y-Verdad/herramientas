@@ -1,0 +1,204 @@
+{
+  "lemma": "κατακαυχάομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κατακαυχῶ",
+      "count": 1
+    },
+    {
+      "form": "κατακαυχᾶσαι,",
+      "count": 1
+    },
+    {
+      "form": "κατακαυχᾶται",
+      "count": 1
+    },
+    {
+      "form": "κατακαυχᾶσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 4
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 11:18",
+      "form": "κατακαυχῶ",
+      "morph": "V-P-M-D-2S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 18,
+      "left_context": "μὴ",
+      "right_context": "τῶν κλάδων· εἰ δὲ κατακαυχᾶσαι, οὐ"
+    },
+    {
+      "ref": "Romans 11:18",
+      "form": "κατακαυχᾶσαι,",
+      "morph": "V-P-M-I-2S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 18,
+      "left_context": "μὴ κατακαυχῶ τῶν κλάδων· εἰ δὲ",
+      "right_context": "οὐ σὺ τὴν ῥίζαν βαστάζεις ἀλλὰ"
+    },
+    {
+      "ref": "James 2:13",
+      "form": "κατακαυχᾶται",
+      "morph": "V-P-M-I-3S",
+      "book": "James",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "κρίσις ἀνέλεος τῷ μὴ ποιήσαντι ἔλεος·",
+      "right_context": "⸀ἔλεος κρίσεως."
+    },
+    {
+      "ref": "James 3:14",
+      "form": "κατακαυχᾶσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "ἐριθείαν ἐν τῇ καρδίᾳ ὑμῶν, μὴ",
+      "right_context": "καὶ ψεύδεσθε κατὰ τῆς ἀληθείας."
+    }
+  ],
+  "books": {
+    "Romans": 2,
+    "James": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κλάδος",
+      "display": "de·ramas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κατακαυχάομαι",
+      "display": "jactarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλεος",
+      "display": "misericordia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥίζα",
+      "display": "raíz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαστάζω",
+      "display": "llevas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνέλεος",
+      "display": "sin·misericordia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίσις",
+      "display": "de·juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψεύδομαι",
+      "display": "mented",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Romans 11:18",
+      "form": "κατακαυχῶ",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "μὴ κατακαυχῶ τῶν κλάδων· εἰ δὲ κατακαυχᾶσαι, οὐ σὺ τὴν",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "James 3:14",
+      "form": "κατακαυχᾶσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "ἔχετε καὶ ἐριθείαν ἐν τῇ καρδίᾳ ὑμῶν, μὴ κατακαυχᾶσθε καὶ ψεύδεσθε κατὰ τῆς ἀληθείας.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 11:18",
+      "negator": "μὴ",
+      "clause_text": "μὴ κατακαυχῶ τῶν κλάδων· εἰ δὲ κατακαυχᾶσαι, οὐ σὺ τὴν"
+    },
+    {
+      "ref": "Romans 11:18",
+      "negator": "οὐ",
+      "clause_text": "μὴ κατακαυχῶ τῶν κλάδων· εἰ δὲ κατακαυχᾶσαι, οὐ σὺ τὴν ῥίζαν βαστάζεις ἀλλὰ ἡ ῥίζα"
+    },
+    {
+      "ref": "James 2:13",
+      "negator": "μὴ",
+      "clause_text": "ἡ γὰρ κρίσις ἀνέλεος τῷ μὴ ποιήσαντι ἔλεος· κατακαυχᾶται ⸀ἔλεος κρίσεως."
+    },
+    {
+      "ref": "James 3:14",
+      "negator": "μὴ",
+      "clause_text": "ἔχετε καὶ ἐριθείαν ἐν τῇ καρδίᾳ ὑμῶν, μὴ κατακαυχᾶσθε καὶ ψεύδεσθε κατὰ τῆς ἀληθείας."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 11:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 2:13",
+      "reason": "occurs near κατακαυχάομαι, ἔλεος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

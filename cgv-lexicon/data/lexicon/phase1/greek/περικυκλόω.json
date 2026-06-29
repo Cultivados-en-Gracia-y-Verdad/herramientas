@@ -1,0 +1,80 @@
+{
+  "lemma": "περικυκλόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "περικυκλώσουσίν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 19:43",
+      "form": "περικυκλώσουσίν",
+      "morph": "V-F-A-I-3P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 43,
+      "left_context": "οἱ ἐχθροί σου χάρακά σοι καὶ",
+      "right_context": "σε καὶ συνέξουσίν σε πάντοθεν,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐχθρός",
+      "display": "enemigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάραξ",
+      "display": "empalizada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέχω",
+      "display": "oprimirán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοθεν",
+      "display": "de·todas·partes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 19:43",
+      "reason": "occurs near πάντοθεν, συνέχω, χάραξ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

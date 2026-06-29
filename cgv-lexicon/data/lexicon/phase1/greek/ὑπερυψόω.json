@@ -1,0 +1,80 @@
+{
+  "lemma": "ὑπερυψόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑπερύψωσεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 2:9",
+      "form": "ὑπερύψωσεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "διὸ καὶ ὁ θεὸς αὐτὸν",
+      "right_context": "καὶ ἐχαρίσατο αὐτῷ ⸀τὸ ὄνομα τὸ"
+    }
+  ],
+  "books": {
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρίζομαι",
+      "display": "perdonó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 2:9",
+      "reason": "occurs near διό, θεός, χαρίζομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

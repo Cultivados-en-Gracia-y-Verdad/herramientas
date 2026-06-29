@@ -1,0 +1,143 @@
+{
+  "lemma": "ἐκπνέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐξέπνευσεν.",
+      "count": 2
+    },
+    {
+      "form": "ἐξέπνευσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 23:46",
+      "form": "ἐξέπνευσεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 46,
+      "left_context": "τὸ πνεῦμά μου. ⸂τοῦτο δὲ⸃ εἰπὼν",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 15:37",
+      "form": "ἐξέπνευσεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 37,
+      "left_context": "ὁ δὲ Ἰησοῦς ἀφεὶς φωνὴν μεγάλην",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 15:39",
+      "form": "ἐξέπνευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 39,
+      "left_context": "παρεστηκὼς ἐξ ἐναντίας αὐτοῦ ὅτι ⸀οὕτως",
+      "right_context": "εἶπεν· Ἀληθῶς ⸂οὗτος ὁ ἄνθρωπος⸃ υἱὸς"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdonado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐναντίος",
+      "display": "de·contraria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀληθῶς",
+      "display": "verdaderamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 15:37",
+      "reason": "occurs near μέγας, φωνή, ἀφίημι"
+    },
+    {
+      "ref": "Mark 15:39",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 23:46",
+      "reason": "occurs near πνεῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

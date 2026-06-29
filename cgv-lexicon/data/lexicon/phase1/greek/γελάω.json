@@ -1,0 +1,112 @@
+{
+  "lemma": "γελάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "γελάσετε.",
+      "count": 1
+    },
+    {
+      "form": "γελῶντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:21",
+      "form": "γελάσετε.",
+      "morph": "V-F-A-I-2P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 21,
+      "left_context": "χορτασθήσεσθε. μακάριοι οἱ κλαίοντες νῦν, ὅτι",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 6:25",
+      "form": "γελῶντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 25,
+      "left_context": "ἐμπεπλησμένοι ⸀νῦν, ὅτι πεινάσετε. ⸀οὐαί, οἱ",
+      "right_context": "νῦν, ὅτι πενθήσετε καὶ κλαύσετε."
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "llorando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μακάριος",
+      "display": "bienaventurados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεινάω",
+      "display": "tener·hambre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐαί",
+      "display": "¡ay!",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πενθέω",
+      "display": "lamentaréis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:21",
+      "reason": "occurs near κλαίω, μακάριος, νῦν"
+    },
+    {
+      "ref": "Luke 6:25",
+      "reason": "occurs near κλαίω, νῦν, οὐαί"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

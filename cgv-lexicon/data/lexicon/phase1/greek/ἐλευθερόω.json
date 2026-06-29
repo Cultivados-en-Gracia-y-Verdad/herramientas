@@ -1,0 +1,274 @@
+{
+  "lemma": "ἐλευθερόω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἐλευθερωθέντες",
+      "count": 2
+    },
+    {
+      "form": "ἠλευθέρωσεν·",
+      "count": 1
+    },
+    {
+      "form": "ἐλευθερώσει",
+      "count": 1
+    },
+    {
+      "form": "ἐλευθερώσῃ,",
+      "count": 1
+    },
+    {
+      "form": "ἠλευθέρωσέν",
+      "count": 1
+    },
+    {
+      "form": "ἐλευθερωθήσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "subjunctive": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 5,
+      "future": 2
+    },
+    "voices": {
+      "active": 4,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 5:1",
+      "form": "ἠλευθέρωσεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "τῇ ἐλευθερίᾳ ⸂ἡμᾶς Χριστὸς",
+      "right_context": "στήκετε οὖν⸃ καὶ μὴ πάλιν ζυγῷ"
+    },
+    {
+      "ref": "John 8:32",
+      "form": "ἐλευθερώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "John",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "γνώσεσθε τὴν ἀλήθειαν, καὶ ἡ ἀλήθεια",
+      "right_context": "ὑμᾶς."
+    },
+    {
+      "ref": "John 8:36",
+      "form": "ἐλευθερώσῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 8,
+      "verse": 36,
+      "left_context": "ἐὰν οὖν ὁ υἱὸς ὑμᾶς",
+      "right_context": "ὄντως ἐλεύθεροι ἔσεσθε."
+    },
+    {
+      "ref": "Romans 6:18",
+      "form": "ἐλευθερωθέντες",
+      "morph": "V-A-P-P",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "",
+      "right_context": "δὲ ἀπὸ τῆς ἁμαρτίας ἐδουλώθητε τῇ"
+    },
+    {
+      "ref": "Romans 6:22",
+      "form": "ἐλευθερωθέντες",
+      "morph": "V-A-P-P",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 22,
+      "left_context": "νυνὶ δέ,",
+      "right_context": "ἀπὸ τῆς ἁμαρτίας δουλωθέντες δὲ τῷ"
+    },
+    {
+      "ref": "Romans 8:2",
+      "form": "ἠλευθέρωσέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 2,
+      "left_context": "πνεύματος τῆς ζωῆς ἐν Χριστῷ Ἰησοῦ",
+      "right_context": "⸀σε ἀπὸ τοῦ νόμου τῆς ἁμαρτίας"
+    },
+    {
+      "ref": "Romans 8:21",
+      "form": "ἐλευθερωθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 21,
+      "left_context": "ὅτι καὶ αὐτὴ ἡ κτίσις",
+      "right_context": "ἀπὸ τῆς δουλείας τῆς φθορᾶς εἰς"
+    }
+  ],
+  "books": {
+    "Romans": 4,
+    "John": 2,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δουλόω",
+      "display": "fueron esclavizado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλευθερία",
+      "display": "libertad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στήκω",
+      "display": "estar·firme",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄντως",
+      "display": "verdaderamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεύθερος",
+      "display": "libres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυνί",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κτίσις",
+      "display": "creación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δουλεία",
+      "display": "de·esclavitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθορά",
+      "display": "de·corrupción",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 5:1",
+      "negator": "μὴ",
+      "clause_text": "τῇ ἐλευθερίᾳ ⸂ἡμᾶς Χριστὸς ἠλευθέρωσεν· στήκετε οὖν⸃ καὶ μὴ πάλιν ζυγῷ δουλείας ἐνέχεσθε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 6:18",
+      "reason": "occurs near δουλόω, ἁμαρτία"
+    },
+    {
+      "ref": "Romans 6:22",
+      "reason": "occurs near δουλόω, ἁμαρτία"
+    },
+    {
+      "ref": "Romans 8:2",
+      "reason": "occurs near Χριστός"
+    },
+    {
+      "ref": "Romans 8:21",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 8:32",
+      "reason": "occurs near ἀλήθεια"
+    },
+    {
+      "ref": "John 8:36",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 5:1",
+      "reason": "occurs near Χριστός, ἐλευθερία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

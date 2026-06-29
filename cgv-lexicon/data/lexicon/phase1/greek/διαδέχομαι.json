@@ -1,0 +1,74 @@
+{
+  "lemma": "διαδέχομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διαδεξάμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:45",
+      "form": "διαδεξάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 45,
+      "left_context": "ἣν καὶ εἰσήγαγον",
+      "right_context": "οἱ πατέρες ἡμῶν μετὰ Ἰησοῦ ἐν"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἰσάγω",
+      "display": "introducieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 7:45",
+      "reason": "occurs near εἰσάγω, πατήρ, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

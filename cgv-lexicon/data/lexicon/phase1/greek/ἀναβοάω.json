@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀναβοάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἀνεβόησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 27:46",
+      "form": "⸀ἀνεβόησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 46,
+      "left_context": "περὶ δὲ τὴν ἐνάτην ὥραν",
+      "right_context": "ὁ Ἰησοῦς φωνῇ μεγάλῃ λέγων· ⸂Ἠλὶ"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔνατος",
+      "display": "novena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 27:46",
+      "reason": "occurs near μέγας, φωνή, ἔνατος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

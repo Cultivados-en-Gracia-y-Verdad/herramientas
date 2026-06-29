@@ -1,0 +1,86 @@
+{
+  "lemma": "περιμένω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "περιμένειν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 1:4",
+      "form": "περιμένειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "αὐτοῖς ἀπὸ Ἱεροσολύμων μὴ χωρίζεσθαι, ἀλλὰ",
+      "right_context": "τὴν ἐπαγγελίαν τοῦ πατρὸς ἣν ἠκούσατέ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "de·Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίζω",
+      "display": "separar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "promesa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "de·padre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 1:4",
+      "negator": "μὴ",
+      "clause_text": "συναλιζόμενος παρήγγειλεν αὐτοῖς ἀπὸ Ἱεροσολύμων μὴ χωρίζεσθαι, ἀλλὰ περιμένειν τὴν ἐπαγγελίαν τοῦ πατρὸς ἣν ἠκούσατέ μου·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 1:4",
+      "reason": "occurs near πατήρ, χωρίζω, ἐπαγγελία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

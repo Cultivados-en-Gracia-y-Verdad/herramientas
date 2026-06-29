@@ -1,0 +1,305 @@
+{
+  "lemma": "μεθύω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "μεθύει.",
+      "count": 1
+    },
+    {
+      "form": "μεθύουσιν·",
+      "count": 1
+    },
+    {
+      "form": "ἐμεθύσθησαν",
+      "count": 1
+    },
+    {
+      "form": "μεθύουσαν",
+      "count": 1
+    },
+    {
+      "form": "μεθύουσιν,",
+      "count": 1
+    },
+    {
+      "form": "⸀μεθυσθῶσιν",
+      "count": 1
+    },
+    {
+      "form": "μεθυόντων,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 5,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:21",
+      "form": "μεθύει.",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 21,
+      "left_context": "καὶ ὃς μὲν πεινᾷ, ὃς δὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Thessalonians 5:7",
+      "form": "μεθύουσιν·",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "νυκτὸς καθεύδουσιν, καὶ οἱ μεθυσκόμενοι νυκτὸς",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 17:2",
+      "form": "ἐμεθύσθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Revelation",
+      "chapter": 17,
+      "verse": 2,
+      "left_context": "ἐπόρνευσαν οἱ βασιλεῖς τῆς γῆς, καὶ",
+      "right_context": "οἱ κατοικοῦντες τὴν γῆν ἐκ τοῦ"
+    },
+    {
+      "ref": "Revelation 17:6",
+      "form": "μεθύουσαν",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 17,
+      "verse": 6,
+      "left_context": "καὶ εἶδον τὴν γυναῖκα",
+      "right_context": "ἐκ τοῦ αἵματος τῶν ἁγίων ⸀καὶ"
+    },
+    {
+      "ref": "Acts 2:15",
+      "form": "μεθύουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "οὐ γὰρ ὡς ὑμεῖς ὑπολαμβάνετε οὗτοι",
+      "right_context": "ἔστιν γὰρ ὥρα τρίτη τῆς ἡμέρας,"
+    },
+    {
+      "ref": "John 2:10",
+      "form": "⸀μεθυσθῶσιν",
+      "morph": "V-A-P-S-3P",
+      "book": "John",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "τὸν καλὸν οἶνον τίθησιν, καὶ ὅταν",
+      "right_context": "τὸν ἐλάσσω· σὺ τετήρηκας τὸν καλὸν"
+    },
+    {
+      "ref": "Matthew 24:49",
+      "form": "μεθυόντων,",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 49,
+      "left_context": "ἐσθίῃ δὲ καὶ πίνῃ⸃ μετὰ τῶν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "1 Corinthians": 1,
+    "1 Thessalonians": 1,
+    "Acts": 1,
+    "John": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεινάω",
+      "display": "tener·hambre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθεύδω",
+      "display": "dormen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεθύσκομαι",
+      "display": "embriagarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "reyes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατοικέω",
+      "display": "habitando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vi",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "de·sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπολαμβάνω",
+      "display": "respondéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρίτος",
+      "display": "tercera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "pone",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλάσσων",
+      "display": "menor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηρέω",
+      "display": "has guardado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίνω",
+      "display": "bebiera",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 17:2",
+      "reason": "occurs near γῆ"
+    },
+    {
+      "ref": "Revelation 17:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 11:21",
+      "reason": "occurs near μέν, πεινάω"
+    },
+    {
+      "ref": "1 Thessalonians 5:7",
+      "reason": "occurs near καθεύδω, μεθύσκομαι"
+    },
+    {
+      "ref": "Acts 2:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 2:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 24:49",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

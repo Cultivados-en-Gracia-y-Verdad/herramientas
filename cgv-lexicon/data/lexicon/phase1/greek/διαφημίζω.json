@@ -1,0 +1,168 @@
+{
+  "lemma": "διαφημίζω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "διαφημίζειν",
+      "count": 1
+    },
+    {
+      "form": "διεφήμισαν",
+      "count": 1
+    },
+    {
+      "form": "διεφημίσθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 1:45",
+      "form": "διαφημίζειν",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 45,
+      "left_context": "δὲ ἐξελθὼν ἤρξατο κηρύσσειν πολλὰ καὶ",
+      "right_context": "τὸν λόγον, ὥστε μηκέτι αὐτὸν δύνασθαι"
+    },
+    {
+      "ref": "Matthew 9:31",
+      "form": "διεφήμισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 31,
+      "left_context": "οἱ δὲ ἐξελθόντες",
+      "right_context": "αὐτὸν ἐν ὅλῃ τῇ γῇ ἐκείνῃ."
+    },
+    {
+      "ref": "Matthew 28:15",
+      "form": "διεφημίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 15,
+      "left_context": "⸀τὰ ἀργύρια ἐποίησαν ὡς ἐδιδάχθησαν. Καὶ",
+      "right_context": "ὁ λόγος οὗτος παρὰ Ἰουδαίοις μέχρι"
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κηρύσσω",
+      "display": "proclamar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργύριον",
+      "display": "platas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "fueron enseñado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 28:15",
+      "reason": "occurs near λόγος"
+    },
+    {
+      "ref": "Matthew 9:31",
+      "reason": "occurs near ἐξέρχομαι"
+    },
+    {
+      "ref": "Mark 1:45",
+      "reason": "occurs near κηρύσσω, λόγος, πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

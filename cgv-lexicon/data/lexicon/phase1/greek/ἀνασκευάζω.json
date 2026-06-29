@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀνασκευάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀνασκευάζοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:24",
+      "form": "ἀνασκευάζοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 24,
+      "left_context": "ἐξ ἡμῶν ⸀ἐξελθόντες ἐτάραξαν ὑμᾶς λόγοις",
+      "right_context": "τὰς ψυχὰς ⸀ὑμῶν οἷς οὐ διεστειλάμεθα,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταράσσω",
+      "display": "turbaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:24",
+      "reason": "occurs near λόγος, ταράσσω, ψυχή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

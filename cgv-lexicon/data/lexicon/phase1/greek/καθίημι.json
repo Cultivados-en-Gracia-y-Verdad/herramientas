@@ -1,0 +1,194 @@
+{
+  "lemma": "καθίημι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "καθῆκαν",
+      "count": 2
+    },
+    {
+      "form": "καθιέμενον",
+      "count": 1
+    },
+    {
+      "form": "καθιεμένην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 2
+    },
+    "voices": {
+      "active": 2,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:25",
+      "form": "καθῆκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 25,
+      "left_context": "μαθηταὶ αὐτοῦ⸃ νυκτὸς ⸂διὰ τοῦ τείχους",
+      "right_context": "αὐτὸν⸃ χαλάσαντες ἐν σπυρίδι."
+    },
+    {
+      "ref": "Acts 10:11",
+      "form": "καθιέμενον",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 11,
+      "left_context": "τι ὡς ὀθόνην μεγάλην τέσσαρσιν ⸀ἀρχαῖς",
+      "right_context": "ἐπὶ τῆς γῆς,"
+    },
+    {
+      "ref": "Acts 11:5",
+      "form": "καθιεμένην",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 5,
+      "left_context": "τι ὡς ὀθόνην μεγάλην τέσσαρσιν ἀρχαῖς",
+      "right_context": "ἐκ τοῦ οὐρανοῦ, καὶ ἦλθεν ἄχρι"
+    },
+    {
+      "ref": "Luke 5:19",
+      "form": "καθῆκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 19,
+      "left_context": "ἐπὶ τὸ δῶμα διὰ τῶν κεράμων",
+      "right_context": "αὐτὸν σὺν τῷ κλινιδίῳ εἰς τὸ"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀθόνη",
+      "display": "lienzo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέσσαρες",
+      "display": "cuatro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχή",
+      "display": "principios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεῖχος",
+      "display": "de·muro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαλάω",
+      "display": "bajados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπυρίς",
+      "display": "espuerta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δῶμα",
+      "display": "azotea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κέραμος",
+      "display": "de·tejas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλινίδιον",
+      "display": "camilla",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:11",
+      "reason": "occurs near μέγας, τέσσαρες, ἀρχή"
+    },
+    {
+      "ref": "Acts 11:5",
+      "reason": "occurs near μέγας, τέσσαρες, ἀρχή"
+    },
+    {
+      "ref": "Acts 9:25",
+      "reason": "occurs near νύξ"
+    },
+    {
+      "ref": "Luke 5:19",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

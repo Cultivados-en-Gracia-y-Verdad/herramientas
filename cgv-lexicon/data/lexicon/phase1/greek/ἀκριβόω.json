@@ -1,0 +1,106 @@
+{
+  "lemma": "ἀκριβόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἠκρίβωσεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 2:7",
+      "form": "ἠκρίβωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "Τότε Ἡρῴδης λάθρᾳ καλέσας τοὺς μάγους",
+      "right_context": "παρ’ αὐτῶν τὸν χρόνον τοῦ φαινομένου"
+    },
+    {
+      "ref": "Matthew 2:16",
+      "form": "ἠκρίβωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "καὶ κατωτέρω, κατὰ τὸν χρόνον ὃν",
+      "right_context": "παρὰ τῶν μάγων."
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μάγος",
+      "display": "magos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "Herodes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λάθρᾳ",
+      "display": "secretamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατωτέρω",
+      "display": "más·abajo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 2:16",
+      "reason": "occurs near μάγος, χρόνος"
+    },
+    {
+      "ref": "Matthew 2:7",
+      "reason": "occurs near καλέω, λάθρᾳ, μάγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

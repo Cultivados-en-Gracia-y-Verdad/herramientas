@@ -1,0 +1,117 @@
+{
+  "lemma": "διαλαλέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διελαλεῖτο",
+      "count": 1
+    },
+    {
+      "form": "διελάλουν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:65",
+      "form": "διελαλεῖτο",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 65,
+      "left_context": "ἐν ὅλῃ τῇ ὀρεινῇ τῆς Ἰουδαίας",
+      "right_context": "πάντα τὰ ῥήματα ταῦτα,"
+    },
+    {
+      "ref": "Luke 6:11",
+      "form": "διελάλουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 11,
+      "left_context": "αὐτοὶ δὲ ἐπλήσθησαν ἀνοίας, καὶ",
+      "right_context": "πρὸς ἀλλήλους τί ἂν ποιήσαιεν τῷ"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅλος",
+      "display": "toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀρεινός",
+      "display": "montañosa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαία",
+      "display": "de·Judea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dichos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίμπλημι",
+      "display": "fueron llenado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνοια",
+      "display": "de·insensatez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:65",
+      "reason": "occurs near Ἰουδαία, ὀρεινός, ὅλος"
+    },
+    {
+      "ref": "Luke 6:11",
+      "reason": "occurs near πίμπλημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,686 @@
+{
+  "lemma": "ἀδικέω",
+  "language": "greek",
+  "total_occurrences": 28,
+  "forms": [
+    {
+      "form": "ἀδικῶν",
+      "count": 3
+    },
+    {
+      "form": "ἀδικεῖτε",
+      "count": 2
+    },
+    {
+      "form": "ἀδικῆσαι",
+      "count": 2
+    },
+    {
+      "form": "ἀδικῆσαι,",
+      "count": 2
+    },
+    {
+      "form": "ἀδικῶ",
+      "count": 2
+    },
+    {
+      "form": "ἀδικεῖσθε;",
+      "count": 1
+    },
+    {
+      "form": "ἠδικήσαμεν,",
+      "count": 1
+    },
+    {
+      "form": "ἀδικήσαντος,",
+      "count": 1
+    },
+    {
+      "form": "ἀδικηθέντος,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀδικούμενοι",
+      "count": 1
+    },
+    {
+      "form": "ἀδικηθῇ",
+      "count": 1
+    },
+    {
+      "form": "ἀδικήσῃς.",
+      "count": 1
+    },
+    {
+      "form": "ἀδικήσητε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀδικήσουσιν",
+      "count": 1
+    },
+    {
+      "form": "ἀδικοῦσιν.",
+      "count": 1
+    },
+    {
+      "form": "ἀδικησάτω",
+      "count": 1
+    },
+    {
+      "form": "ἠδίκησεν,",
+      "count": 1
+    },
+    {
+      "form": "ἠδίκησέν",
+      "count": 1
+    },
+    {
+      "form": "ἠδικήσατε·",
+      "count": 1
+    },
+    {
+      "form": "ἀδικούμενον",
+      "count": 1
+    },
+    {
+      "form": "⸀ἠδίκησα,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀδικήσῃ.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 12,
+      "participle": 7,
+      "subjunctive": 4,
+      "infinitive": 4,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 11,
+      "aorist": 16,
+      "future": 1
+    },
+    "voices": {
+      "passive": 4,
+      "active": 23,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 6:7",
+      "form": "ἀδικεῖσθε;",
+      "morph": "V-P-P-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "μεθ’ ἑαυτῶν· διὰ τί οὐχὶ μᾶλλον",
+      "right_context": "διὰ τί οὐχὶ μᾶλλον ἀποστερεῖσθε;"
+    },
+    {
+      "ref": "1 Corinthians 6:8",
+      "form": "ἀδικεῖτε",
+      "morph": "V-P-A-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "ἀλλὰ ὑμεῖς",
+      "right_context": "καὶ ἀποστερεῖτε, καὶ ⸀τοῦτο ἀδελφούς."
+    },
+    {
+      "ref": "2 Corinthians 7:2",
+      "form": "ἠδικήσαμεν,",
+      "morph": "V-A-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 2,
+      "left_context": "Χωρήσατε ἡμᾶς· οὐδένα",
+      "right_context": "οὐδένα ἐφθείραμεν, οὐδένα ἐπλεονεκτήσαμεν."
+    },
+    {
+      "ref": "2 Corinthians 7:12",
+      "form": "ἀδικήσαντος,",
+      "morph": "V-A-A-P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 12,
+      "left_context": "καὶ ἔγραψα ὑμῖν, οὐχ ⸀ἕνεκεν τοῦ",
+      "right_context": "⸀οὐδὲ ⸁ἕνεκεν τοῦ ἀδικηθέντος, ἀλλ’ ⸀1ἕνεκεν"
+    },
+    {
+      "ref": "2 Corinthians 7:12",
+      "form": "ἀδικηθέντος,",
+      "morph": "V-A-P-P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 12,
+      "left_context": "⸀ἕνεκεν τοῦ ἀδικήσαντος, ⸀οὐδὲ ⸁ἕνεκεν τοῦ",
+      "right_context": "ἀλλ’ ⸀1ἕνεκεν τοῦ φανερωθῆναι τὴν σπουδὴν"
+    },
+    {
+      "ref": "2 Peter 2:13",
+      "form": "⸀ἀδικούμενοι",
+      "morph": "V-P-M-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "μισθὸν ἀδικίας· ἡδονὴν ἡγούμενοι τὴν ἐν"
+    },
+    {
+      "ref": "Revelation 2:11",
+      "form": "ἀδικηθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "ταῖς ἐκκλησίαις. ὁ νικῶν οὐ μὴ",
+      "right_context": "ἐκ τοῦ θανάτου τοῦ δευτέρου."
+    },
+    {
+      "ref": "Revelation 6:6",
+      "form": "ἀδικήσῃς.",
+      "morph": "V-A-A-S-2S",
+      "book": "Revelation",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "τὸ ἔλαιον καὶ τὸν οἶνον μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 7:2",
+      "form": "ἀδικῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 2,
+      "left_context": "τοῖς τέσσαρσιν ἀγγέλοις οἷς ἐδόθη αὐτοῖς",
+      "right_context": "τὴν γῆν καὶ τὴν θάλασσαν,"
+    },
+    {
+      "ref": "Revelation 7:3",
+      "form": "ἀδικήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 3,
+      "left_context": "λέγων· Μὴ",
+      "right_context": "τὴν γῆν μήτε τὴν θάλασσαν μήτε"
+    },
+    {
+      "ref": "Revelation 9:4",
+      "form": "⸀ἀδικήσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Revelation",
+      "chapter": 9,
+      "verse": 4,
+      "left_context": "καὶ ἐρρέθη αὐταῖς ἵνα μὴ",
+      "right_context": "τὸν χόρτον τῆς γῆς οὐδὲ πᾶν"
+    },
+    {
+      "ref": "Revelation 9:10",
+      "form": "ἀδικῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "ταῖς οὐραῖς αὐτῶν ⸂ἡ ἐξουσία αὐτῶν⸃",
+      "right_context": "τοὺς ἀνθρώπους μῆνας πέντε."
+    },
+    {
+      "ref": "Revelation 9:19",
+      "form": "ἀδικοῦσιν.",
+      "morph": "V-P-A-I-3P",
+      "book": "Revelation",
+      "chapter": 9,
+      "verse": 19,
+      "left_context": "⸀ὄφεσιν, ἔχουσαι κεφαλάς, καὶ ἐν αὐταῖς",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 11:5",
+      "form": "ἀδικῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 5,
+      "left_context": "καὶ εἴ τις αὐτοὺς θέλει",
+      "right_context": "πῦρ ἐκπορεύεται ἐκ τοῦ στόματος αὐτῶν"
+    },
+    {
+      "ref": "Revelation 11:5",
+      "form": "ἀδικῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 5,
+      "left_context": "αὐτῶν· καὶ εἴ τις ⸂θελήσῃ αὐτοὺς⸃",
+      "right_context": "οὕτως δεῖ αὐτὸν ἀποκτανθῆναι."
+    },
+    {
+      "ref": "Revelation 22:11",
+      "form": "ἀδικῶν",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 22,
+      "verse": 11,
+      "left_context": "ὁ",
+      "right_context": "ἀδικησάτω ἔτι, καὶ ὁ ῥυπαρὸς ⸀ῥυπαρευθήτω"
+    },
+    {
+      "ref": "Revelation 22:11",
+      "form": "ἀδικησάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "Revelation",
+      "chapter": 22,
+      "verse": 11,
+      "left_context": "ὁ ἀδικῶν",
+      "right_context": "ἔτι, καὶ ὁ ῥυπαρὸς ⸀ῥυπαρευθήτω ἔτι,"
+    },
+    {
+      "ref": "Colossians 3:25",
+      "form": "ἀδικῶν",
+      "morph": "V-P-A-P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 25,
+      "left_context": "ὁ ⸀γὰρ",
+      "right_context": "κομίσεται ὃ ἠδίκησεν, καὶ οὐκ ἔστιν"
+    },
+    {
+      "ref": "Colossians 3:25",
+      "form": "ἠδίκησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 25,
+      "left_context": "ὁ ⸀γὰρ ἀδικῶν κομίσεται ὃ",
+      "right_context": "καὶ οὐκ ἔστιν προσωπολημψία."
+    },
+    {
+      "ref": "Philemon 1:18",
+      "form": "ἠδίκησέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "εἰ δέ τι",
+      "right_context": "σε ἢ ὀφείλει, τοῦτο ἐμοὶ ⸀ἐλλόγα·"
+    },
+    {
+      "ref": "Galatians 4:12",
+      "form": "ἠδικήσατε·",
+      "morph": "V-A-A-I-2P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "ὑμεῖς, ἀδελφοί, δέομαι ὑμῶν. οὐδέν με",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 7:24",
+      "form": "ἀδικούμενον",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 24,
+      "left_context": "καὶ ἰδών τινα",
+      "right_context": "ἠμύνατο καὶ ἐποίησεν ἐκδίκησιν τῷ καταπονουμένῳ"
+    },
+    {
+      "ref": "Acts 7:26",
+      "form": "ἀδικεῖτε",
+      "morph": "V-P-A-I-2P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 26,
+      "left_context": "εἰρήνην εἰπών· Ἄνδρες, ἀδελφοί ⸀ἐστε· ἱνατί",
+      "right_context": "ἀλλήλους;"
+    },
+    {
+      "ref": "Acts 7:27",
+      "form": "ἀδικῶν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 27,
+      "left_context": "ὁ δὲ",
+      "right_context": "τὸν πλησίον ἀπώσατο αὐτὸν εἰπών· Τίς"
+    },
+    {
+      "ref": "Acts 25:10",
+      "form": "⸀ἠδίκησα,",
+      "morph": "V-A-A-I-1S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 10,
+      "left_context": "οὗ με δεῖ κρίνεσθαι. Ἰουδαίους οὐδὲν",
+      "right_context": "ὡς καὶ σὺ κάλλιον ἐπιγινώσκεις."
+    },
+    {
+      "ref": "Acts 25:11",
+      "form": "ἀδικῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 11,
+      "left_context": "εἰ μὲν ⸀οὖν",
+      "right_context": "καὶ ἄξιον θανάτου πέπραχά τι, οὐ"
+    },
+    {
+      "ref": "Luke 10:19",
+      "form": "⸀ἀδικήσῃ.",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "ἐχθροῦ, καὶ οὐδὲν ὑμᾶς οὐ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 20:13",
+      "form": "ἀδικῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 13,
+      "left_context": "ἀποκριθεὶς ⸂ἑνὶ αὐτῶν εἶπεν⸃· Ἑταῖρε, οὐκ",
+      "right_context": "σε· οὐχὶ δηναρίου συνεφώνησάς μοι;"
+    }
+  ],
+  "books": {
+    "Revelation": 11,
+    "Acts": 5,
+    "2 Corinthians": 3,
+    "1 Corinthians": 2,
+    "Colossians": 2,
+    "2 Peter": 1,
+    "Philemon": 1,
+    "Galatians": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδικέω",
+      "display": "hacer·injusticia",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "ἕνεκεν",
+      "display": "por·causa·de",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστερέω",
+      "display": "son defraudado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiere",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥυπαρός",
+      "display": "sucio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κομίζω",
+      "display": "recibirá",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρέω",
+      "display": "cabed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθείρω",
+      "display": "corrompimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονεκτέω",
+      "display": "aprovecharse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escribí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φανερόω",
+      "display": "manifestar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθός",
+      "display": "salario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικία",
+      "display": "de·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡδονή",
+      "display": "placer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγέομαι",
+      "display": "considerando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesias",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Revelation 2:11",
+      "form": "ἀδικηθῇ",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "πνεῦμα λέγει ταῖς ἐκκλησίαις. ὁ νικῶν οὐ μὴ ἀδικηθῇ ἐκ τοῦ θανάτου τοῦ δευτέρου.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Revelation 6:6",
+      "form": "ἀδικήσῃς.",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "δηναρίου· καὶ τὸ ἔλαιον καὶ τὸν οἶνον μὴ ἀδικήσῃς.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Revelation 7:3",
+      "form": "ἀδικήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "λέγων· Μὴ ἀδικήσητε τὴν γῆν μήτε τὴν θάλασσαν μήτε τὰ δένδρα,",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Revelation 22:11",
+      "form": "ἀδικησάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "ὁ ἀδικῶν ἀδικησάτω ἔτι, καὶ ὁ ῥυπαρὸς ⸀ῥυπαρευθήτω ἔτι, καὶ ὁ"
+    },
+    {
+      "ref": "Luke 10:19",
+      "form": "⸀ἀδικήσῃ.",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "δύναμιν τοῦ ἐχθροῦ, καὶ οὐδὲν ὑμᾶς οὐ μὴ ⸀ἀδικήσῃ.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 7:12",
+      "negator": "οὐχ",
+      "clause_text": "ἄρα εἰ καὶ ἔγραψα ὑμῖν, οὐχ ⸀ἕνεκεν τοῦ ἀδικήσαντος, ⸀οὐδὲ ⸁ἕνεκεν τοῦ ἀδικηθέντος, ἀλλ’ ⸀1ἕνεκεν τοῦ φανερωθῆναι"
+    },
+    {
+      "ref": "2 Corinthians 7:12",
+      "negator": "⸀οὐδὲ",
+      "clause_text": "ὑμῖν, οὐχ ⸀ἕνεκεν τοῦ ἀδικήσαντος, ⸀οὐδὲ ⸁ἕνεκεν τοῦ ἀδικηθέντος, ἀλλ’ ⸀1ἕνεκεν τοῦ φανερωθῆναι τὴν σπουδὴν ὑμῶν τὴν"
+    },
+    {
+      "ref": "Revelation 2:11",
+      "negator": "οὐ",
+      "clause_text": "πνεῦμα λέγει ταῖς ἐκκλησίαις. ὁ νικῶν οὐ μὴ ἀδικηθῇ ἐκ τοῦ θανάτου τοῦ δευτέρου."
+    },
+    {
+      "ref": "Revelation 6:6",
+      "negator": "μὴ",
+      "clause_text": "δηναρίου· καὶ τὸ ἔλαιον καὶ τὸν οἶνον μὴ ἀδικήσῃς."
+    },
+    {
+      "ref": "Revelation 7:3",
+      "negator": "Μὴ",
+      "clause_text": "λέγων· Μὴ ἀδικήσητε τὴν γῆν μήτε τὴν θάλασσαν μήτε τὰ δένδρα,"
+    },
+    {
+      "ref": "Revelation 9:4",
+      "negator": "μὴ",
+      "clause_text": "καὶ ἐρρέθη αὐταῖς ἵνα μὴ ⸀ἀδικήσουσιν τὸν χόρτον τῆς γῆς οὐδὲ πᾶν χλωρὸν οὐδὲ"
+    },
+    {
+      "ref": "Colossians 3:25",
+      "negator": "οὐκ",
+      "clause_text": "ὁ ⸀γὰρ ἀδικῶν κομίσεται ὃ ἠδίκησεν, καὶ οὐκ ἔστιν προσωπολημψία."
+    },
+    {
+      "ref": "Luke 10:19",
+      "negator": "οὐ",
+      "clause_text": "δύναμιν τοῦ ἐχθροῦ, καὶ οὐδὲν ὑμᾶς οὐ μὴ ⸀ἀδικήσῃ."
+    },
+    {
+      "ref": "Matthew 20:13",
+      "negator": "οὐκ",
+      "clause_text": "ὁ δὲ ἀποκριθεὶς ⸂ἑνὶ αὐτῶν εἶπεν⸃· Ἑταῖρε, οὐκ ἀδικῶ σε· οὐχὶ δηναρίου συνεφώνησάς μοι;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 22:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 11:5",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 2:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 6:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 7:2",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 7:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 9:10",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 9:19",
+      "reason": "frequent in Revelation"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

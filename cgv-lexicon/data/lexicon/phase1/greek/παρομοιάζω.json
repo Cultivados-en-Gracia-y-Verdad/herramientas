@@ -1,0 +1,104 @@
+{
+  "lemma": "παρομοιάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀παρομοιάζετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 23:27",
+      "form": "⸀παρομοιάζετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 27,
+      "left_context": "ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι",
+      "right_context": "τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γραμματεύς",
+      "display": "escribas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποκριτής",
+      "display": "hipócritas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τάφος",
+      "display": "tumbas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κονιάω",
+      "display": "blanqueados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξωθεν",
+      "display": "por·fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 23:27",
+      "reason": "occurs near Φαρισαῖος, γραμματεύς, κονιάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

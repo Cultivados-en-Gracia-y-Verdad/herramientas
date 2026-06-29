@@ -1,0 +1,118 @@
+{
+  "lemma": "παροικέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παρῴκησεν",
+      "count": 1
+    },
+    {
+      "form": "παροικεῖς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:9",
+      "form": "παρῴκησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 9,
+      "left_context": "πίστει",
+      "right_context": "εἰς γῆν τῆς ἐπαγγελίας ὡς ἀλλοτρίαν,"
+    },
+    {
+      "ref": "Luke 24:18",
+      "form": "παροικεῖς",
+      "morph": "V-P-A-I-2S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 18,
+      "left_context": "Κλεοπᾶς εἶπεν πρὸς αὐτόν· Σὺ μόνος",
+      "right_context": "Ἰερουσαλὴμ καὶ οὐκ ἔγνως τὰ γενόμενα"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "de·promesa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conociste",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 24:18",
+      "negator": "οὐκ",
+      "clause_text": "⸂εἷς ὀνόματι⸃ Κλεοπᾶς εἶπεν πρὸς αὐτόν· Σὺ μόνος παροικεῖς Ἰερουσαλὴμ καὶ οὐκ ἔγνως τὰ γενόμενα ἐν αὐτῇ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:9",
+      "reason": "occurs near γῆ, πίστις, ἐπαγγελία"
+    },
+    {
+      "ref": "Luke 24:18",
+      "reason": "occurs near μόνος, Ἰερουσαλήμ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,563 @@
+{
+  "lemma": "πωλέω",
+  "language": "greek",
+  "total_occurrences": 22,
+  "forms": [
+    {
+      "form": "πωλοῦντας",
+      "count": 4
+    },
+    {
+      "form": "πώλησον",
+      "count": 2
+    },
+    {
+      "form": "πωλούντων",
+      "count": 2
+    },
+    {
+      "form": "πωλούμενον",
+      "count": 1
+    },
+    {
+      "form": "πωλῆσαι",
+      "count": 1
+    },
+    {
+      "form": "πωλοῦντες",
+      "count": 1
+    },
+    {
+      "form": "πωλήσας",
+      "count": 1
+    },
+    {
+      "form": "ἐπώλησεν",
+      "count": 1
+    },
+    {
+      "form": "πωλοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "⸀πωλοῦνται",
+      "count": 1
+    },
+    {
+      "form": "πωλήσατε",
+      "count": 1
+    },
+    {
+      "form": "ἐπώλουν,",
+      "count": 1
+    },
+    {
+      "form": "⸀πωλοῦντας,",
+      "count": 1
+    },
+    {
+      "form": "⸀πωλησάτω",
+      "count": 1
+    },
+    {
+      "form": "πωλεῖται;",
+      "count": 1
+    },
+    {
+      "form": "⸂πωλεῖ",
+      "count": 1
+    },
+    {
+      "form": "πώλησόν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 11,
+      "infinitive": 1,
+      "indicative": 5,
+      "imperative": 5
+    },
+    "tenses": {
+      "present": 13,
+      "aorist": 8,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 19
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:25",
+      "form": "πωλούμενον",
+      "morph": "V-P-P-P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 25,
+      "left_context": "πᾶν τὸ ἐν μακέλλῳ",
+      "right_context": "ἐσθίετε μηδὲν ἀνακρίνοντες διὰ τὴν συνείδησιν,"
+    },
+    {
+      "ref": "Revelation 13:17",
+      "form": "πωλῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 13,
+      "verse": 17,
+      "left_context": "ἵνα μή τις ⸀δύνηται ἀγοράσαι ἢ",
+      "right_context": "εἰ μὴ ὁ ἔχων τὸ χάραγμα,"
+    },
+    {
+      "ref": "Acts 4:34",
+      "form": "πωλοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 34,
+      "left_context": "γὰρ κτήτορες χωρίων ἢ οἰκιῶν ὑπῆρχον,",
+      "right_context": "ἔφερον τὰς τιμὰς τῶν πιπρασκομένων"
+    },
+    {
+      "ref": "Acts 4:37",
+      "form": "πωλήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 37,
+      "left_context": "ὑπάρχοντος αὐτῷ ἀγροῦ",
+      "right_context": "ἤνεγκεν τὸ χρῆμα καὶ ἔθηκεν ⸀παρὰ"
+    },
+    {
+      "ref": "Acts 5:1",
+      "form": "ἐπώλησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "ὀνόματι σὺν Σαπφίρῃ τῇ γυναικὶ αὐτοῦ",
+      "right_context": "κτῆμα"
+    },
+    {
+      "ref": "John 2:14",
+      "form": "πωλοῦντας",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "καὶ εὗρεν ἐν τῷ ἱερῷ τοὺς",
+      "right_context": "βόας καὶ πρόβατα καὶ περιστερὰς καὶ"
+    },
+    {
+      "ref": "John 2:16",
+      "form": "πωλοῦσιν",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "καὶ τοῖς τὰς περιστερὰς",
+      "right_context": "εἶπεν· Ἄρατε ταῦτα ἐντεῦθεν, μὴ ποιεῖτε"
+    },
+    {
+      "ref": "Luke 12:6",
+      "form": "⸀πωλοῦνται",
+      "morph": "V-P-P-I-3P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 6,
+      "left_context": "οὐχὶ πέντε στρουθία",
+      "right_context": "ἀσσαρίων δύο; καὶ ἓν ἐξ αὐτῶν"
+    },
+    {
+      "ref": "Luke 12:33",
+      "form": "πωλήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 33,
+      "left_context": "",
+      "right_context": "τὰ ὑπάρχοντα ὑμῶν καὶ δότε ἐλεημοσύνην·"
+    },
+    {
+      "ref": "Luke 17:28",
+      "form": "ἐπώλουν,",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 28,
+      "left_context": "ταῖς ἡμέραις Λώτ· ἤσθιον, ἔπινον, ἠγόραζον,",
+      "right_context": "ἐφύτευον, ᾠκοδόμουν·"
+    },
+    {
+      "ref": "Luke 18:22",
+      "form": "πώλησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 22,
+      "left_context": "ἕν σοι λείπει· πάντα ὅσα ἔχεις",
+      "right_context": "καὶ διάδος πτωχοῖς, καὶ ἕξεις θησαυρὸν"
+    },
+    {
+      "ref": "Luke 19:45",
+      "form": "⸀πωλοῦντας,",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 45,
+      "left_context": "εἰς τὸ ἱερὸν ἤρξατο ἐκβάλλειν τοὺς",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 22:36",
+      "form": "⸀πωλησάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 36,
+      "left_context": "καὶ πήραν, καὶ ὁ μὴ ἔχων",
+      "right_context": "τὸ ἱμάτιον αὐτοῦ καὶ ⸀ἀγορασάτω μάχαιραν."
+    },
+    {
+      "ref": "Mark 10:21",
+      "form": "πώλησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 21,
+      "left_context": "Ἕν ⸀σε ὑστερεῖ· ὕπαγε ὅσα ἔχεις",
+      "right_context": "καὶ δὸς ⸀τοῖς πτωχοῖς, καὶ ἕξεις"
+    },
+    {
+      "ref": "Mark 11:15",
+      "form": "πωλοῦντας",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "εἰς τὸ ἱερὸν ἤρξατο ἐκβάλλειν τοὺς",
+      "right_context": "καὶ ⸀τοὺς ἀγοράζοντας ἐν τῷ ἱερῷ,"
+    },
+    {
+      "ref": "Mark 11:15",
+      "form": "πωλούντων",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "τῶν κολλυβιστῶν καὶ τὰς καθέδρας τῶν",
+      "right_context": "τὰς περιστερὰς κατέστρεψεν"
+    },
+    {
+      "ref": "Matthew 10:29",
+      "form": "πωλεῖται;",
+      "morph": "V-P-P-I-3S",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 29,
+      "left_context": "οὐχὶ δύο στρουθία ἀσσαρίου",
+      "right_context": "καὶ ἓν ἐξ αὐτῶν οὐ πεσεῖται"
+    },
+    {
+      "ref": "Matthew 13:44",
+      "form": "⸂πωλεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 44,
+      "left_context": "ἀπὸ τῆς χαρᾶς αὐτοῦ ὑπάγει καὶ",
+      "right_context": "πάντα ὅσα ἔχει⸃ καὶ ἀγοράζει τὸν"
+    },
+    {
+      "ref": "Matthew 19:21",
+      "form": "πώλησόν",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 21,
+      "left_context": "Ἰησοῦς· Εἰ θέλεις τέλειος εἶναι, ὕπαγε",
+      "right_context": "σου τὰ ὑπάρχοντα καὶ ⸀δὸς πτωχοῖς,"
+    },
+    {
+      "ref": "Matthew 21:12",
+      "form": "πωλοῦντας",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "τὸ ⸀ἱερόν, καὶ ἐξέβαλεν πάντας τοὺς",
+      "right_context": "καὶ ἀγοράζοντας ἐν τῷ ἱερῷ καὶ"
+    },
+    {
+      "ref": "Matthew 21:12",
+      "form": "πωλούντων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "κολλυβιστῶν κατέστρεψεν καὶ τὰς καθέδρας τῶν",
+      "right_context": "τὰς περιστεράς,"
+    },
+    {
+      "ref": "Matthew 25:9",
+      "form": "πωλοῦντας",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 9,
+      "left_context": "καὶ ὑμῖν· ⸀πορεύεσθε μᾶλλον πρὸς τοὺς",
+      "right_context": "καὶ ἀγοράσατε ἑαυταῖς."
+    }
+  ],
+  "books": {
+    "Luke": 6,
+    "Matthew": 6,
+    "Acts": 3,
+    "Mark": 3,
+    "John": 2,
+    "1 Corinthians": 1,
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγοράζω",
+      "display": "comprar",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existían",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "περιστερά",
+      "display": "palomas",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dad",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulsar",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "e",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comed",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevaban",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στρουθίον",
+      "display": "gorriónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσσάριον",
+      "display": "de·asarios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "de·dos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πτωχός",
+      "display": "pobres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καθέδρα",
+      "display": "sillas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καταστρέφω",
+      "display": "volcó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μάκελλον",
+      "display": "carnicería",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνακρίνω",
+      "display": "interrogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κτήτωρ",
+      "display": "dueños",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίον",
+      "display": "de·campos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 12:33",
+      "form": "πωλήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "πωλήσατε τὰ ὑπάρχοντα ὑμῶν καὶ δότε ἐλεημοσύνην· ποιήσατε ἑαυτοῖς"
+    },
+    {
+      "ref": "Luke 18:22",
+      "form": "πώλησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "αὐτῷ· Ἔτι ἕν σοι λείπει· πάντα ὅσα ἔχεις πώλησον καὶ διάδος πτωχοῖς, καὶ ἕξεις θησαυρὸν ἐν ⸀οὐρανοῖς,"
+    },
+    {
+      "ref": "Luke 22:36",
+      "form": "⸀πωλησάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "ἀράτω, ὁμοίως καὶ πήραν, καὶ ὁ μὴ ἔχων ⸀πωλησάτω τὸ ἱμάτιον αὐτοῦ καὶ ⸀ἀγορασάτω μάχαιραν.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 10:21",
+      "form": "πώλησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "εἶπεν αὐτῷ· Ἕν ⸀σε ὑστερεῖ· ὕπαγε ὅσα ἔχεις πώλησον καὶ δὸς ⸀τοῖς πτωχοῖς, καὶ ἕξεις θησαυρὸν ἐν"
+    },
+    {
+      "ref": "Matthew 19:21",
+      "form": "πώλησόν",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "αὐτῷ ὁ Ἰησοῦς· Εἰ θέλεις τέλειος εἶναι, ὕπαγε πώλησόν σου τὰ ὑπάρχοντα καὶ ⸀δὸς πτωχοῖς, καὶ ἕξεις"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Revelation 13:17",
+      "negator": "μὴ",
+      "clause_text": "καὶ ἵνα μή τις ⸀δύνηται ἀγοράσαι ἢ πωλῆσαι εἰ μὴ ὁ ἔχων τὸ χάραγμα, τὸ ὄνομα"
+    },
+    {
+      "ref": "Luke 22:36",
+      "negator": "μὴ",
+      "clause_text": "ἀράτω, ὁμοίως καὶ πήραν, καὶ ὁ μὴ ἔχων ⸀πωλησάτω τὸ ἱμάτιον αὐτοῦ καὶ ⸀ἀγορασάτω μάχαιραν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:33",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 18:22",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 22:36",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 19:21",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 10:21",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 12:6",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 17:28",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 19:45",
+      "reason": "frequent in Luke"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

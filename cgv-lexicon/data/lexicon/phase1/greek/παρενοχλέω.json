@@ -1,0 +1,86 @@
+{
+  "lemma": "παρενοχλέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρενοχλεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:19",
+      "form": "παρενοχλεῖν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 19,
+      "left_context": "διὸ ἐγὼ κρίνω μὴ",
+      "right_context": "τοῖς ἀπὸ τῶν ἐθνῶν ἐπιστρέφουσιν ἐπὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "juzgo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστρέφω",
+      "display": "volviendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 15:19",
+      "negator": "μὴ",
+      "clause_text": "διὸ ἐγὼ κρίνω μὴ παρενοχλεῖν τοῖς ἀπὸ τῶν ἐθνῶν ἐπιστρέφουσιν ἐπὶ τὸν θεόν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:19",
+      "reason": "occurs near διό, κρίνω, ἐπιστρέφω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

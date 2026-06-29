@@ -1,0 +1,92 @@
+{
+  "lemma": "καταστρηνιάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καταστρηνιάσωσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:11",
+      "form": "καταστρηνιάσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "νεωτέρας δὲ χήρας παραιτοῦ· ὅταν γὰρ",
+      "right_context": "τοῦ Χριστοῦ, γαμεῖν θέλουσιν,"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χήρα",
+      "display": "viudas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραιτέομαι",
+      "display": "rechaza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quieren",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:11",
+      "reason": "occurs near Χριστός, γαμέω, παραιτέομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,107 @@
+{
+  "lemma": "φλογίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "φλογίζουσα",
+      "count": 1
+    },
+    {
+      "form": "φλογιζομένη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 3:6",
+      "form": "φλογίζουσα",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "ἡ σπιλοῦσα ὅλον τὸ σῶμα καὶ",
+      "right_context": "τὸν τροχὸν τῆς γενέσεως καὶ φλογιζομένη"
+    },
+    {
+      "ref": "James 3:6",
+      "form": "φλογιζομένη",
+      "morph": "V-P-P-P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "φλογίζουσα τὸν τροχὸν τῆς γενέσεως καὶ",
+      "right_context": "ὑπὸ τῆς γεέννης."
+    }
+  ],
+  "books": {
+    "James": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τροχός",
+      "display": "rueda",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γένεσις",
+      "display": "de·nacimiento",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σπιλόω",
+      "display": "manchando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γέεννα",
+      "display": "de·gehenna",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:6",
+      "reason": "occurs near γένεσις, σπιλόω, σῶμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

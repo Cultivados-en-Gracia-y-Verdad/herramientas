@@ -1,0 +1,74 @@
+{
+  "lemma": "παρανομέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρανομῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:3",
+      "form": "παρανομῶν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 3,
+      "left_context": "κρίνων με κατὰ τὸν νόμον, καὶ",
+      "right_context": "κελεύεις με τύπτεσθαι;"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "mandas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τύπτω",
+      "display": "golpear",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 23:3",
+      "reason": "occurs near κελεύω, νόμος, τύπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

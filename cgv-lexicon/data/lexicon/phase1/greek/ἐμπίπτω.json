@@ -1,0 +1,322 @@
+{
+  "lemma": "ἐμπίπτω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἐμπέσῃ",
+      "count": 3
+    },
+    {
+      "form": "ἐμπίπτουσιν",
+      "count": 1
+    },
+    {
+      "form": "ἐμπεσεῖν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐμπεσοῦνται;",
+      "count": 1
+    },
+    {
+      "form": "ἐμπεσόντος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 3,
+      "indicative": 2,
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 6,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 3:6",
+      "form": "ἐμπέσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "1 Timothy",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "νεόφυτον, ἵνα μὴ τυφωθεὶς εἰς κρίμα",
+      "right_context": "τοῦ διαβόλου."
+    },
+    {
+      "ref": "1 Timothy 3:7",
+      "form": "ἐμπέσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "1 Timothy",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "τῶν ἔξωθεν, ἵνα μὴ εἰς ὀνειδισμὸν",
+      "right_context": "καὶ παγίδα τοῦ διαβόλου."
+    },
+    {
+      "ref": "1 Timothy 6:9",
+      "form": "ἐμπίπτουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "οἱ δὲ βουλόμενοι πλουτεῖν",
+      "right_context": "εἰς πειρασμὸν καὶ παγίδα καὶ ἐπιθυμίας"
+    },
+    {
+      "ref": "Hebrews 10:31",
+      "form": "ἐμπεσεῖν",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 31,
+      "left_context": "φοβερὸν τὸ",
+      "right_context": "εἰς χεῖρας θεοῦ ζῶντος."
+    },
+    {
+      "ref": "Luke 6:39",
+      "form": "⸀ἐμπεσοῦνται;",
+      "morph": "V-F-M-I-3P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 39,
+      "left_context": "τυφλὸν ὁδηγεῖν; οὐχὶ ἀμφότεροι εἰς βόθυνον",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 10:36",
+      "form": "ἐμπεσόντος",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 36,
+      "left_context": "τριῶν πλησίον δοκεῖ σοι γεγονέναι τοῦ",
+      "right_context": "εἰς τοὺς λῃστάς;"
+    },
+    {
+      "ref": "Matthew 12:11",
+      "form": "ἐμπέσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "ὃς ἕξει πρόβατον ἕν, καὶ ἐὰν",
+      "right_context": "τοῦτο τοῖς σάββασιν εἰς βόθυνον, οὐχὶ"
+    }
+  ],
+  "books": {
+    "1 Timothy": 3,
+    "Luke": 2,
+    "Hebrews": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διάβολος",
+      "display": "de·diablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παγίς",
+      "display": "trampa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βόθυνος",
+      "display": "hoyo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τυφόομαι",
+      "display": "envanecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίμα",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξωθεν",
+      "display": "por·fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνειδισμός",
+      "display": "afrenta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλουτέω",
+      "display": "enriquecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειρασμός",
+      "display": "tentación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβερός",
+      "display": "temible",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδηγέω",
+      "display": "guiar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμφότεροι",
+      "display": "amboses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλησίον",
+      "display": "prójimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "parece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λῃστής",
+      "display": "ladrónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόβατον",
+      "display": "oveja",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "sábados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 3:7",
+      "form": "ἐμπέσῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἔχειν ἀπὸ τῶν ἔξωθεν, ἵνα μὴ εἰς ὀνειδισμὸν ἐμπέσῃ καὶ παγίδα τοῦ διαβόλου.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 3:6",
+      "negator": "μὴ",
+      "clause_text": "μὴ νεόφυτον, ἵνα μὴ τυφωθεὶς εἰς κρίμα ἐμπέσῃ τοῦ διαβόλου."
+    },
+    {
+      "ref": "1 Timothy 3:7",
+      "negator": "μὴ",
+      "clause_text": "ἔχειν ἀπὸ τῶν ἔξωθεν, ἵνα μὴ εἰς ὀνειδισμὸν ἐμπέσῃ καὶ παγίδα τοῦ διαβόλου."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 3:6",
+      "reason": "occurs near διάβολος, κρίμα, τυφόομαι"
+    },
+    {
+      "ref": "1 Timothy 3:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 6:9",
+      "reason": "occurs near παγίς"
+    },
+    {
+      "ref": "Luke 10:36",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 6:39",
+      "reason": "occurs near βόθυνος"
+    },
+    {
+      "ref": "Hebrews 10:31",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 12:11",
+      "reason": "occurs near βόθυνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

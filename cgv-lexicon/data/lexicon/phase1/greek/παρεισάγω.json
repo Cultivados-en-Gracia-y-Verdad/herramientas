@@ -1,0 +1,86 @@
+{
+  "lemma": "παρεισάγω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρεισάξουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:1",
+      "form": "παρεισάξουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "καὶ ἐν ὑμῖν ἔσονται ψευδοδιδάσκαλοι, οἵτινες",
+      "right_context": "αἱρέσεις ἀπωλείας, καὶ τὸν ἀγοράσαντα αὐτοὺς"
+    }
+  ],
+  "books": {
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ψευδοδιδάσκαλος",
+      "display": "falso·maestro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἵρεσις",
+      "display": "sectas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπώλεια",
+      "display": "de·perdición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγοράζω",
+      "display": "comprado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:1",
+      "reason": "occurs near αἵρεσις, ψευδοδιδάσκαλος, ἀγοράζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

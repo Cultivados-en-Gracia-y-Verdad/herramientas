@@ -1,0 +1,68 @@
+{
+  "lemma": "μεταβάλλομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀μεταβαλόμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 28:6",
+      "form": "⸀μεταβαλόμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 6,
+      "left_context": "θεωρούντων μηδὲν ἄτοπον εἰς αὐτὸν γινόμενον,",
+      "right_context": "ἔλεγον ⸂αὐτὸν εἶναι θεόν⸃."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄτοπος",
+      "display": "injusto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 28:6",
+      "reason": "occurs near θεός, ἄτοπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

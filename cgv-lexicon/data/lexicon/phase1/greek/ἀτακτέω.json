@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀτακτέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἠτακτήσαμεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 3:7",
+      "form": "ἠτακτήσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "πῶς δεῖ μιμεῖσθαι ἡμᾶς, ὅτι οὐκ",
+      "right_context": "ἐν ὑμῖν"
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μιμέομαι",
+      "display": "imitar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Thessalonians 3:7",
+      "negator": "οὐκ",
+      "clause_text": "γὰρ οἴδατε πῶς δεῖ μιμεῖσθαι ἡμᾶς, ὅτι οὐκ ἠτακτήσαμεν ἐν ὑμῖν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Thessalonians 3:7",
+      "reason": "occurs near δέω, μιμέομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

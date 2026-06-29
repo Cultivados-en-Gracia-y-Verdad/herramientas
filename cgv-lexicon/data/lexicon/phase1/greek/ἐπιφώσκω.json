@@ -1,0 +1,119 @@
+{
+  "lemma": "ἐπιφώσκω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπέφωσκεν.",
+      "count": 1
+    },
+    {
+      "form": "ἐπιφωσκούσῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 23:54",
+      "form": "ἐπέφωσκεν.",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 54,
+      "left_context": "καὶ ἡμέρα ἦν ⸂παρασκευῆς, καὶ⸃ σάββατον",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 28:1",
+      "form": "ἐπιφωσκούσῃ",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 1,
+      "left_context": "Ὀψὲ δὲ σαββάτων, τῇ",
+      "right_context": "εἰς μίαν σαββάτων, ἦλθεν ⸀Μαριὰμ ἡ"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σάββατον",
+      "display": "sábado",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρασκευή",
+      "display": "de·preparación,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψέ",
+      "display": "tarde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "una",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαριάμ",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 23:54",
+      "reason": "occurs near παρασκευή, σάββατον, ἡμέρα"
+    },
+    {
+      "ref": "Matthew 28:1",
+      "reason": "occurs near εἷς, σάββατον, ὀψέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

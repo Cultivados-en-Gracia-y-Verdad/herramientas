@@ -1,0 +1,143 @@
+{
+  "lemma": "πορθέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπόρθουν",
+      "count": 1
+    },
+    {
+      "form": "ἐπόρθει,",
+      "count": 1
+    },
+    {
+      "form": "πορθήσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "imperfect": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 1:13",
+      "form": "ἐπόρθουν",
+      "morph": "V-I-A-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ἐδίωκον τὴν ἐκκλησίαν τοῦ θεοῦ καὶ",
+      "right_context": "αὐτήν,"
+    },
+    {
+      "ref": "Galatians 1:23",
+      "form": "ἐπόρθει,",
+      "morph": "V-I-A-I-3S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "νῦν εὐαγγελίζεται τὴν πίστιν ἥν ποτε",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 9:21",
+      "form": "πορθήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 21,
+      "left_context": "καὶ ἔλεγον· Οὐχ οὗτός ἐστιν ὁ",
+      "right_context": "⸀ἐν Ἰερουσαλὴμ τοὺς ἐπικαλουμένους τὸ ὄνομα"
+    }
+  ],
+  "books": {
+    "Galatians": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγελίζω",
+      "display": "evangeliza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποτέ",
+      "display": "alguna·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπικαλέω",
+      "display": "llamando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 9:21",
+      "negator": "Οὐχ",
+      "clause_text": "οἱ ἀκούοντες καὶ ἔλεγον· Οὐχ οὗτός ἐστιν ὁ πορθήσας ⸀ἐν Ἰερουσαλὴμ τοὺς ἐπικαλουμένους τὸ ὄνομα τοῦτο, καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 1:13",
+      "reason": "occurs near θεός, ἐκκλησία"
+    },
+    {
+      "ref": "Galatians 1:23",
+      "reason": "occurs near εὐαγγελίζω, πίστις, ποτέ"
+    },
+    {
+      "ref": "Acts 9:21",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

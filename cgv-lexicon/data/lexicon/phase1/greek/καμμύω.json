@@ -1,0 +1,95 @@
+{
+  "lemma": "καμμύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐκάμμυσαν·",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 28:27",
+      "form": "ἐκάμμυσαν·",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 27,
+      "left_context": "βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν",
+      "right_context": "μήποτε ἴδωσιν τοῖς ὀφθαλμοῖς καὶ τοῖς"
+    },
+    {
+      "ref": "Matthew 13:15",
+      "form": "ἐκάμμυσαν·",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 15,
+      "left_context": "βαρέως ἤκουσαν, καὶ τοὺς ὀφθαλμοὺς αὐτῶν",
+      "right_context": "μήποτε ἴδωσιν τοῖς ὀφθαλμοῖς καὶ τοῖς"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "van",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 28:27",
+      "reason": "occurs near μήποτε, ἀκούω, ὀφθαλμός"
+    },
+    {
+      "ref": "Matthew 13:15",
+      "reason": "occurs near μήποτε, ἀκούω, ὀφθαλμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

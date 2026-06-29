@@ -1,0 +1,220 @@
+{
+  "lemma": "ἐπισκιάζω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "⸀ἐπισκιάσῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐπισκιάσει",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπεσκίαζεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπισκιάζουσα",
+      "count": 1
+    },
+    {
+      "form": "ἐπεσκίασεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "future": 1,
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:15",
+      "form": "⸀ἐπισκιάσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 15,
+      "left_context": "ἵνα ἐρχομένου Πέτρου κἂν ἡ σκιὰ",
+      "right_context": "τινὶ αὐτῶν."
+    },
+    {
+      "ref": "Luke 1:35",
+      "form": "ἐπισκιάσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 35,
+      "left_context": "ἐπελεύσεται ἐπὶ σέ, καὶ δύναμις Ὑψίστου",
+      "right_context": "σοι· διὸ καὶ τὸ γεννώμενον ἅγιον"
+    },
+    {
+      "ref": "Luke 9:34",
+      "form": "⸀ἐπεσκίαζεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 34,
+      "left_context": "δὲ αὐτοῦ λέγοντος ἐγένετο νεφέλη καὶ",
+      "right_context": "αὐτούς· ἐφοβήθησαν δὲ ἐν τῷ ⸂εἰσελθεῖν"
+    },
+    {
+      "ref": "Mark 9:7",
+      "form": "ἐπισκιάζουσα",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 7,
+      "left_context": "καὶ ἐγένετο νεφέλη",
+      "right_context": "αὐτοῖς, καὶ ⸀ἐγένετο φωνὴ ἐκ τῆς"
+    },
+    {
+      "ref": "Matthew 17:5",
+      "form": "ἐπεσκίασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 5,
+      "left_context": "ἔτι αὐτοῦ λαλοῦντος ἰδοὺ νεφέλη φωτεινὴ",
+      "right_context": "αὐτούς, καὶ ἰδοὺ φωνὴ ἐκ τῆς"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Acts": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νεφέλη",
+      "display": "nube",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "veniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "de·Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἄν",
+      "display": "y·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκιά",
+      "display": "sombra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕψιστος",
+      "display": "de·Altísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεννάω",
+      "display": "engendrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "fueron temido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωτεινός",
+      "display": "luminosa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:35",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 9:34",
+      "reason": "occurs near νεφέλη"
+    },
+    {
+      "ref": "Acts 5:15",
+      "reason": "occurs near Πέτρος, ἔρχομαι"
+    },
+    {
+      "ref": "Mark 9:7",
+      "reason": "occurs near νεφέλη, φωνή"
+    },
+    {
+      "ref": "Matthew 17:5",
+      "reason": "occurs near νεφέλη, φωνή, ἰδού"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

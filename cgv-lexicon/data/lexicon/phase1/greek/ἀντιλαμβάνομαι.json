@@ -1,0 +1,181 @@
+{
+  "lemma": "ἀντιλαμβάνομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀντιλαμβανόμενοι.",
+      "count": 1
+    },
+    {
+      "form": "ἀντιλαμβάνεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἀντελάβετο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:2",
+      "form": "ἀντιλαμβανόμενοι.",
+      "morph": "V-P-M-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "εἰσιν καὶ ἀγαπητοὶ οἱ τῆς εὐεργεσίας",
+      "right_context": "Ταῦτα δίδασκε καὶ παρακάλει."
+    },
+    {
+      "ref": "Acts 20:35",
+      "form": "ἀντιλαμβάνεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 35,
+      "left_context": "ὑπέδειξα ὑμῖν ὅτι οὕτως κοπιῶντας δεῖ",
+      "right_context": "τῶν ἀσθενούντων, μνημονεύειν τε τῶν λόγων"
+    },
+    {
+      "ref": "Luke 1:54",
+      "form": "ἀντελάβετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 54,
+      "left_context": "",
+      "right_context": "Ἰσραὴλ παιδὸς αὐτοῦ, μνησθῆναι ἐλέους,"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐεργεσία",
+      "display": "de·beneficencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseña",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "roga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabajando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενέω",
+      "display": "estar·enfermo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μνημονεύω",
+      "display": "recordar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "de·Israel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παῖς",
+      "display": "de·siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μιμνῄσκομαι",
+      "display": "recordar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλεος",
+      "display": "de·misericordia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:2",
+      "reason": "occurs near διδάσκω, εὐεργεσία, παρακαλέω"
+    },
+    {
+      "ref": "Acts 20:35",
+      "reason": "occurs near οὕτω(ς)"
+    },
+    {
+      "ref": "Luke 1:54",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

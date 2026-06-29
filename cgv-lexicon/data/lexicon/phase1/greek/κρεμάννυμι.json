@@ -1,0 +1,318 @@
+{
+  "lemma": "κρεμάννυμι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "κρεμάσαντες",
+      "count": 2
+    },
+    {
+      "form": "κρεμάμενος",
+      "count": 1
+    },
+    {
+      "form": "κρεμάμενον",
+      "count": 1
+    },
+    {
+      "form": "κρεμασθέντων",
+      "count": 1
+    },
+    {
+      "form": "κρεμασθῇ",
+      "count": 1
+    },
+    {
+      "form": "⸂κρέμαται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 5,
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 2
+    },
+    "voices": {
+      "middle": 2,
+      "active": 2,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 3:13",
+      "form": "κρεμάμενος",
+      "morph": "V-A-M-P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "κατάρα, ⸂ὅτι γέγραπται⸃· Ἐπικατάρατος πᾶς ὁ",
+      "right_context": "ἐπὶ ξύλου,"
+    },
+    {
+      "ref": "Acts 5:30",
+      "form": "κρεμάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 30,
+      "left_context": "ἡμῶν ἤγειρεν Ἰησοῦν, ὃν ὑμεῖς διεχειρίσασθε",
+      "right_context": "ἐπὶ ξύλου·"
+    },
+    {
+      "ref": "Acts 10:39",
+      "form": "κρεμάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 39,
+      "left_context": "Ἰουδαίων ⸀καὶ Ἰερουσαλήμ· ὃν καὶ ἀνεῖλαν",
+      "right_context": "ἐπὶ ξύλου."
+    },
+    {
+      "ref": "Acts 28:4",
+      "form": "κρεμάμενον",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 4,
+      "left_context": "ὡς δὲ εἶδον οἱ βάρβαροι",
+      "right_context": "τὸ θηρίον ἐκ τῆς χειρὸς αὐτοῦ,"
+    },
+    {
+      "ref": "Luke 23:39",
+      "form": "κρεμασθέντων",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 39,
+      "left_context": "Εἷς δὲ τῶν",
+      "right_context": "κακούργων ἐβλασφήμει αὐτόν ⸀λέγων· ⸀Οὐχὶ σὺ"
+    },
+    {
+      "ref": "Matthew 18:6",
+      "form": "κρεμασθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 6,
+      "left_context": "πιστευόντων εἰς ἐμέ, συμφέρει αὐτῷ ἵνα",
+      "right_context": "μύλος ὀνικὸς ⸀εἰς τὸν τράχηλον αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 22:40",
+      "form": "⸂κρέμαται",
+      "morph": "V-P-P-I-3S",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 40,
+      "left_context": "ταῖς δυσὶν ἐντολαῖς ὅλος ὁ νόμος",
+      "right_context": "καὶ οἱ προφῆται⸃."
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Matthew": 2,
+    "Galatians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ξύλον",
+      "display": "de·madero",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπικατάρατος",
+      "display": "maldito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαχειρίζομαι",
+      "display": "administrasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναιρέω",
+      "display": "mataron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάρβαρος",
+      "display": "bárbaros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θηρίον",
+      "display": "bestia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακοῦργος",
+      "display": "de·malhechores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημέω",
+      "display": "blasfemaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμφέρω",
+      "display": "convene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μύλος",
+      "display": "molino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνικός",
+      "display": "de·asno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τράχηλος",
+      "display": "cuello",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "mandamientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "profetas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:39",
+      "reason": "occurs near ξύλον"
+    },
+    {
+      "ref": "Acts 28:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 5:30",
+      "reason": "occurs near ξύλον, ἐγείρω, Ἰησοῦς"
+    },
+    {
+      "ref": "Matthew 18:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 22:40",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 3:13",
+      "reason": "occurs near γράφω, ξύλον, ἐπικατάρατος"
+    },
+    {
+      "ref": "Luke 23:39",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

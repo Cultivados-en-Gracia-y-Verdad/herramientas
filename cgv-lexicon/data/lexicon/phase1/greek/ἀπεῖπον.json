@@ -1,0 +1,68 @@
+{
+  "lemma": "ἀπεῖπον",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπειπάμεθα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:2",
+      "form": "ἀπειπάμεθα",
+      "morph": "V-A-M-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "ἀλλὰ",
+      "right_context": "τὰ κρυπτὰ τῆς αἰσχύνης, μὴ περιπατοῦντες"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κρυπτός",
+      "display": "secretos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχύνη",
+      "display": "de·vergüenza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:2",
+      "reason": "occurs near αἰσχύνη, κρυπτός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

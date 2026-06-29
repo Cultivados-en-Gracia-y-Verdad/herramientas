@@ -1,0 +1,424 @@
+{
+  "lemma": "ξηραίνω",
+  "language": "greek",
+  "total_occurrences": 15,
+  "forms": [
+    {
+      "form": "ἐξηράνθη",
+      "count": 7
+    },
+    {
+      "form": "ἐξηραμμένην",
+      "count": 2
+    },
+    {
+      "form": "ἐξηράνθη.",
+      "count": 2
+    },
+    {
+      "form": "ἐξηράνθη,",
+      "count": 1
+    },
+    {
+      "form": "ξηραίνεται·",
+      "count": 1
+    },
+    {
+      "form": "ἐξήρανται.",
+      "count": 1
+    },
+    {
+      "form": "ἐξήρανεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 13,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 11,
+      "perfect": 3,
+      "present": 1
+    },
+    "voices": {
+      "passive": 14,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:24",
+      "form": "ἐξηράνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "πᾶσα δόξα ⸀αὐτῆς ὡς ἄνθος χόρτου·",
+      "right_context": "ὁ χόρτος, καὶ τὸ ⸀ἄνθος ἐξέπεσεν·"
+    },
+    {
+      "ref": "Revelation 14:15",
+      "form": "ἐξηράνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 15,
+      "left_context": "ὅτι ἦλθεν ἡ ὥρα θερίσαι, ὅτι",
+      "right_context": "ὁ θερισμὸς τῆς γῆς."
+    },
+    {
+      "ref": "Revelation 16:12",
+      "form": "ἐξηράνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 16,
+      "verse": 12,
+      "left_context": "ποταμὸν τὸν μέγαν ⸀τὸν Εὐφράτην· καὶ",
+      "right_context": "τὸ ὕδωρ αὐτοῦ, ἵνα ἑτοιμασθῇ ἡ"
+    },
+    {
+      "ref": "John 15:6",
+      "form": "ἐξηράνθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "John",
+      "chapter": 15,
+      "verse": 6,
+      "left_context": "ἐβλήθη ἔξω ὡς τὸ κλῆμα καὶ",
+      "right_context": "καὶ συνάγουσιν αὐτὰ καὶ εἰς τὸ"
+    },
+    {
+      "ref": "Luke 8:6",
+      "form": "ἐξηράνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 6,
+      "left_context": "⸀κατέπεσεν ἐπὶ τὴν πέτραν, καὶ φυὲν",
+      "right_context": "διὰ τὸ μὴ ἔχειν ἰκμάδα."
+    },
+    {
+      "ref": "Mark 3:1",
+      "form": "ἐξηραμμένην",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "⸀εἰς συναγωγήν, καὶ ἦν ἐκεῖ ἄνθρωπος",
+      "right_context": "ἔχων τὴν χεῖρα."
+    },
+    {
+      "ref": "Mark 4:6",
+      "form": "ἐξηράνθη.",
+      "morph": "V-A-P-I-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "καὶ διὰ τὸ μὴ ἔχειν ῥίζαν",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 5:29",
+      "form": "ἐξηράνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 29,
+      "left_context": "καὶ ⸀εὐθὺς",
+      "right_context": "ἡ πηγὴ τοῦ αἵματος αὐτῆς, καὶ"
+    },
+    {
+      "ref": "Mark 9:18",
+      "form": "ξηραίνεται·",
+      "morph": "V-P-P-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "ἀφρίζει καὶ τρίζει τοὺς ⸀ὀδόντας καὶ",
+      "right_context": "καὶ εἶπα τοῖς μαθηταῖς σου ἵνα"
+    },
+    {
+      "ref": "Mark 11:20",
+      "form": "ἐξηραμμένην",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 20,
+      "left_context": "Καὶ ⸂παραπορευόμενοι πρωῒ⸃ εἶδον τὴν συκῆν",
+      "right_context": "ἐκ ῥιζῶν."
+    },
+    {
+      "ref": "Mark 11:21",
+      "form": "ἐξήρανται.",
+      "morph": "V-X-P-I-3S",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 21,
+      "left_context": "Ῥαββί, ἴδε ἡ συκῆ ἣν κατηράσω",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 13:6",
+      "form": "ἐξηράνθη.",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "καὶ διὰ τὸ μὴ ἔχειν ῥίζαν",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 21:19",
+      "form": "ἐξηράνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 19,
+      "left_context": "καρπὸς γένηται εἰς τὸν αἰῶνα· καὶ",
+      "right_context": "παραχρῆμα ἡ συκῆ."
+    },
+    {
+      "ref": "Matthew 21:20",
+      "form": "ἐξηράνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 20,
+      "left_context": "οἱ μαθηταὶ ἐθαύμασαν λέγοντες· Πῶς παραχρῆμα",
+      "right_context": "ἡ συκῆ;"
+    },
+    {
+      "ref": "James 1:11",
+      "form": "ἐξήρανεν",
+      "morph": "V-A-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ὁ ἥλιος σὺν τῷ καύσωνι καὶ",
+      "right_context": "τὸν χόρτον, καὶ τὸ ἄνθος αὐτοῦ"
+    }
+  ],
+  "books": {
+    "Mark": 6,
+    "Matthew": 3,
+    "Revelation": 2,
+    "1 Peter": 1,
+    "John": 1,
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συκῆ",
+      "display": "higuera",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθος",
+      "display": "flor",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χόρτος",
+      "display": "de·hierba",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ῥίζα",
+      "display": "raíz",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραχρῆμα",
+      "display": "al·instante",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θερίζω",
+      "display": "segar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θερισμός",
+      "display": "cosecha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Εὐφράτης",
+      "display": "Éufrates",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμάζω",
+      "display": "prepare",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλῆμα",
+      "display": "sarmiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reunen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέτρα",
+      "display": "roca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φύω",
+      "display": "crecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰκμάς",
+      "display": "humedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagoga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 8:6",
+      "negator": "μὴ",
+      "clause_text": "καὶ ἕτερον ⸀κατέπεσεν ἐπὶ τὴν πέτραν, καὶ φυὲν ἐξηράνθη διὰ τὸ μὴ ἔχειν ἰκμάδα."
+    },
+    {
+      "ref": "Mark 4:6",
+      "negator": "μὴ",
+      "clause_text": "ἥλιος⸃ ⸀ἐκαυματίσθη καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη."
+    },
+    {
+      "ref": "Matthew 13:6",
+      "negator": "μὴ",
+      "clause_text": "ἀνατείλαντος ἐκαυματίσθη καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 11:20",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 11:21",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 3:1",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 4:6",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 5:29",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 9:18",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Matthew 13:6",
+      "reason": "occurs near ῥίζα"
+    },
+    {
+      "ref": "Matthew 21:19",
+      "reason": "occurs near συκῆ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

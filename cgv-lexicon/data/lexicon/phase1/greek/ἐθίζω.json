@@ -1,0 +1,62 @@
+{
+  "lemma": "ἐθίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εἰθισμένον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 2:27",
+      "form": "εἰθισμένον",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 27,
+      "left_context": "Ἰησοῦν τοῦ ποιῆσαι αὐτοὺς κατὰ τὸ",
+      "right_context": "τοῦ νόμου περὶ αὐτοῦ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 2:27",
+      "reason": "occurs near νόμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

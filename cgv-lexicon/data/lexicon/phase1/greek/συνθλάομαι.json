@@ -1,0 +1,83 @@
+{
+  "lemma": "συνθλάομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνθλασθήσεται·",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 20:18",
+      "form": "συνθλασθήσεται·",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 18,
+      "left_context": "ὁ πεσὼν ἐπ’ ἐκεῖνον τὸν λίθον",
+      "right_context": "ἐφ’ ὃν δ’ ἂν πέσῃ, λικμήσει"
+    },
+    {
+      "ref": "Matthew 21:44",
+      "form": "συνθλασθήσεται·",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 44,
+      "left_context": "ὁ πεσὼν ἐπὶ τὸν λίθον τοῦτον",
+      "right_context": "ἐφ’ ὃν δ’ ἂν πέσῃ λικμήσει"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίπτω",
+      "display": "caido",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 20:18",
+      "reason": "occurs near λίθος, πίπτω"
+    },
+    {
+      "ref": "Matthew 21:44",
+      "reason": "occurs near λίθος, πίπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,182 @@
+{
+  "lemma": "μηνύω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "μηνύσαντα",
+      "count": 1
+    },
+    {
+      "form": "μηνυθείσης",
+      "count": 1
+    },
+    {
+      "form": "μηνύσῃ,",
+      "count": 1
+    },
+    {
+      "form": "ἐμήνυσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "active": 3,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:28",
+      "form": "μηνύσαντα",
+      "morph": "V-A-A-P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 28,
+      "left_context": "ἐστιν, μὴ ἐσθίετε δι’ ἐκεῖνον τὸν",
+      "right_context": "καὶ τὴν ⸀συνείδησιν·"
+    },
+    {
+      "ref": "Acts 23:30",
+      "form": "μηνυθείσης",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 30,
+      "left_context": "",
+      "right_context": "δέ μοι ἐπιβουλῆς εἰς τὸν ⸀ἄνδρα"
+    },
+    {
+      "ref": "John 11:57",
+      "form": "μηνύσῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 57,
+      "left_context": "ἵνα ἐάν τις γνῷ ποῦ ἐστιν",
+      "right_context": "ὅπως πιάσωσιν αὐτόν."
+    },
+    {
+      "ref": "Luke 20:37",
+      "form": "ἐμήνυσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 37,
+      "left_context": "δὲ ἐγείρονται οἱ νεκροὶ καὶ Μωϋσῆς",
+      "right_context": "ἐπὶ τῆς βάτου, ὡς λέγει κύριον"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Acts": 1,
+    "John": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐσθίω",
+      "display": "comed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνείδησις",
+      "display": "conciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιβουλή",
+      "display": "de·conspiración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποῦ",
+      "display": "dónde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιάζω",
+      "display": "prendan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "son levantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάτος",
+      "display": "de·zarza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 10:28",
+      "reason": "occurs near συνείδησις, ἐσθίω"
+    },
+    {
+      "ref": "Acts 23:30",
+      "reason": "occurs near ἐπιβουλή"
+    },
+    {
+      "ref": "John 11:57",
+      "reason": "occurs near γινώσκω, ποῦ"
+    },
+    {
+      "ref": "Luke 20:37",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

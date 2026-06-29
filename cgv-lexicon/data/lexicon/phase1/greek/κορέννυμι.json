@@ -1,0 +1,112 @@
+{
+  "lemma": "κορέννυμι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κεκορεσμένοι",
+      "count": 1
+    },
+    {
+      "form": "κορεσθέντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:8",
+      "form": "κεκορεσμένοι",
+      "morph": "V-X-P-P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "Ἤδη",
+      "right_context": "ἐστέ, ἤδη ἐπλουτήσατε, χωρὶς ἡμῶν ἐβασιλεύσατε·"
+    },
+    {
+      "ref": "Acts 27:38",
+      "form": "κορεσθέντες",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 38,
+      "left_context": "",
+      "right_context": "⸀δὲ τροφῆς ἐκούφιζον τὸ πλοῖον ἐκβαλλόμενοι"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλουτέω",
+      "display": "enriquecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τροφή",
+      "display": "de·alimento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κουφίζω",
+      "display": "aligeraban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 4:8",
+      "reason": "occurs near πλουτέω, χωρίς, ἤδη"
+    },
+    {
+      "ref": "Acts 27:38",
+      "reason": "occurs near κουφίζω, τροφή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

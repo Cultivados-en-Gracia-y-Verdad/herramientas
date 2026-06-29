@@ -1,0 +1,221 @@
+{
+  "lemma": "τρώγω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "τρώγων",
+      "count": 5
+    },
+    {
+      "form": "τρώγοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 6
+    },
+    "tenses": {
+      "present": 6
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "John 6:54",
+      "form": "τρώγων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 54,
+      "left_context": "ὁ",
+      "right_context": "μου τὴν σάρκα καὶ πίνων μου"
+    },
+    {
+      "ref": "John 6:56",
+      "form": "τρώγων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 56,
+      "left_context": "ὁ",
+      "right_context": "μου τὴν σάρκα καὶ πίνων μου"
+    },
+    {
+      "ref": "John 6:57",
+      "form": "τρώγων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 57,
+      "left_context": "ζῶ διὰ τὸν πατέρα, καὶ ὁ",
+      "right_context": "με κἀκεῖνος ⸀ζήσει δι’ ἐμέ."
+    },
+    {
+      "ref": "John 6:58",
+      "form": "τρώγων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 58,
+      "left_context": "ἔφαγον οἱ ⸀πατέρες καὶ ἀπέθανον· ὁ",
+      "right_context": "τοῦτον τὸν ἄρτον ⸀ζήσει εἰς τὸν"
+    },
+    {
+      "ref": "John 13:18",
+      "form": "τρώγων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 13,
+      "verse": 18,
+      "left_context": "ἀλλ’ ἵνα ἡ γραφὴ πληρωθῇ· Ὁ",
+      "right_context": "⸀μου τὸν ἄρτον ἐπῆρεν ἐπ’ ἐμὲ"
+    },
+    {
+      "ref": "Matthew 24:38",
+      "form": "τρώγοντες",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 38,
+      "left_context": "ταῖς ⸀ἡμέραις ταῖς πρὸ τοῦ κατακλυσμοῦ",
+      "right_context": "καὶ πίνοντες, γαμοῦντες καὶ ⸀γαμίζοντες, ἄχρι"
+    }
+  ],
+  "books": {
+    "John": 5,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίνω",
+      "display": "bebiendo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "vivirá",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κἀκεῖνος",
+      "display": "y·aquel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escritura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumpla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαίρω",
+      "display": "alzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατακλυσμός",
+      "display": "de·diluvio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γαμίζω",
+      "display": "dar·en·matrimonio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 13:18",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 6:54",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 6:56",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 6:57",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 6:58",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "Matthew 24:38",
+      "reason": "occurs near πίνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

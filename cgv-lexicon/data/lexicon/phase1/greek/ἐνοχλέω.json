@@ -1,0 +1,137 @@
+{
+  "lemma": "ἐνοχλέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐνοχλῇ",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐνοχλούμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:15",
+      "form": "ἐνοχλῇ",
+      "morph": "V-P-A-S-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "μή τις ῥίζα πικρίας ἄνω φύουσα",
+      "right_context": "καὶ ⸂δι’ αὐτῆς⸃ μιανθῶσιν ⸀πολλοί,"
+    },
+    {
+      "ref": "Luke 6:18",
+      "form": "⸂ἐνοχλούμενοι",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "ἀπὸ τῶν νόσων αὐτῶν· καὶ οἱ",
+      "right_context": "ἀπὸ⸃ πνευμάτων ⸀ἀκαθάρτων ἐθεραπεύοντο·"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ῥίζα",
+      "display": "raíz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πικρία",
+      "display": "de·amargura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνω",
+      "display": "arriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φύω",
+      "display": "creciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μιαίνω",
+      "display": "contaminen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόσος",
+      "display": "de·enfermedades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκάθαρτος",
+      "display": "de·inmundos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεραπεύω",
+      "display": "eran sanado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:15",
+      "reason": "occurs near μιαίνω, πικρία, φύω"
+    },
+    {
+      "ref": "Luke 6:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

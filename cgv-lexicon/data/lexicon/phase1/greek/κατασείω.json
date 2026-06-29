@@ -1,0 +1,187 @@
+{
+  "lemma": "κατασείω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κατασείσας",
+      "count": 3
+    },
+    {
+      "form": "κατέσεισε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 12:17",
+      "form": "κατασείσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 17,
+      "left_context": "",
+      "right_context": "δὲ αὐτοῖς τῇ χειρὶ σιγᾶν διηγήσατο"
+    },
+    {
+      "ref": "Acts 13:16",
+      "form": "κατασείσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 16,
+      "left_context": "ἀναστὰς δὲ Παῦλος καὶ",
+      "right_context": "τῇ χειρὶ εἶπεν· Ἄνδρες Ἰσραηλῖται καὶ"
+    },
+    {
+      "ref": "Acts 19:33",
+      "form": "κατασείσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 33,
+      "left_context": "αὐτὸν τῶν Ἰουδαίων, ὁ δὲ Ἀλέξανδρος",
+      "right_context": "τὴν χεῖρα ἤθελεν ἀπολογεῖσθαι τῷ δήμῳ."
+    },
+    {
+      "ref": "Acts 21:40",
+      "form": "κατέσεισε",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 40,
+      "left_context": "ὁ Παῦλος ἑστὼς ἐπὶ τῶν ἀναβαθμῶν",
+      "right_context": "τῇ χειρὶ τῷ λαῷ, πολλῆς δὲ"
+    }
+  ],
+  "books": {
+    "Acts": 4
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σιγάω",
+      "display": "callar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραηλίτης",
+      "display": "Israelita",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀλέξανδρος",
+      "display": "Alejandro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quería",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολογέομαι",
+      "display": "defenderse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαθμός",
+      "display": "de·escalerases",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·mucha",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:17",
+      "reason": "occurs near σιγάω, χείρ"
+    },
+    {
+      "ref": "Acts 13:16",
+      "reason": "occurs near Παῦλος, χείρ, ἀνήρ"
+    },
+    {
+      "ref": "Acts 19:33",
+      "reason": "occurs near χείρ"
+    },
+    {
+      "ref": "Acts 21:40",
+      "reason": "occurs near Παῦλος, χείρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

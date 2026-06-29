@@ -1,0 +1,157 @@
+{
+  "lemma": "συγκρίνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συγκρίνοντες.",
+      "count": 1
+    },
+    {
+      "form": "συγκρῖναι",
+      "count": 1
+    },
+    {
+      "form": "συγκρίνοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 2:13",
+      "form": "συγκρίνοντες.",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "ἀλλ’ ἐν διδακτοῖς ⸀πνεύματος, πνευματικοῖς πνευματικὰ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 10:12",
+      "form": "συγκρῖναι",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 12,
+      "left_context": "Οὐ γὰρ τολμῶμεν ἐγκρῖναι ἢ",
+      "right_context": "ἑαυτούς τισιν τῶν ἑαυτοὺς συνιστανόντων· ἀλλὰ"
+    },
+    {
+      "ref": "2 Corinthians 10:12",
+      "form": "συγκρίνοντες",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 12,
+      "left_context": "αὐτοὶ ἐν ἑαυτοῖς ἑαυτοὺς μετροῦντες καὶ",
+      "right_context": "ἑαυτοὺς ἑαυτοῖς οὐ συνιᾶσιν."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "πνευματικός",
+      "display": "espirituales",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διδακτός",
+      "display": "enseñados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τολμάω",
+      "display": "atreverse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκρίνω",
+      "display": "aprobar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνίστημι",
+      "display": "presentando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετρέω",
+      "display": "mediendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνίημι",
+      "display": "entenden",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 10:12",
+      "negator": "οὐ",
+      "clause_text": "συνιστανόντων· ἀλλὰ αὐτοὶ ἐν ἑαυτοῖς ἑαυτοὺς μετροῦντες καὶ συγκρίνοντες ἑαυτοὺς ἑαυτοῖς οὐ συνιᾶσιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 10:12",
+      "reason": "occurs near τολμάω, ἑαυτοῦ"
+    },
+    {
+      "ref": "1 Corinthians 2:13",
+      "reason": "occurs near διδακτός, πνευματικός, πνεῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

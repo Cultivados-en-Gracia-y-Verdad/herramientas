@@ -1,0 +1,86 @@
+{
+  "lemma": "προευαγγελίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προευηγγελίσατο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 3:8",
+      "form": "προευηγγελίσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "πίστεως δικαιοῖ τὰ ἔθνη ὁ θεὸς",
+      "right_context": "τῷ Ἀβραὰμ ὅτι Ἐνευλογηθήσονται ἐν σοὶ"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δικαιόω",
+      "display": "justifica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνευλογέω",
+      "display": "serán bendecido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 3:8",
+      "reason": "occurs near δικαιόω, θεός, Ἀβραάμ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

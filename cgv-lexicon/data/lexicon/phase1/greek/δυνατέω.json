@@ -1,0 +1,147 @@
+{
+  "lemma": "δυνατέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀δυνατεῖ",
+      "count": 1
+    },
+    {
+      "form": "δυνατεῖ",
+      "count": 1
+    },
+    {
+      "form": "⸂δυνατεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 9:8",
+      "form": "⸀δυνατεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "δὲ ὁ θεὸς πᾶσαν χάριν περισσεῦσαι"
+    },
+    {
+      "ref": "2 Corinthians 13:3",
+      "form": "δυνατεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 13,
+      "verse": 3,
+      "left_context": "ὃς εἰς ὑμᾶς οὐκ ἀσθενεῖ ἀλλὰ",
+      "right_context": "ἐν ὑμῖν,"
+    },
+    {
+      "ref": "Romans 14:4",
+      "form": "⸂δυνατεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 4,
+      "left_context": "κυρίῳ στήκει ἢ πίπτει· σταθήσεται δέ,",
+      "right_context": "γὰρ⸃ ὁ ⸀κύριος στῆσαι αὐτόν."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἵστημι",
+      "display": "será puesto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενέω",
+      "display": "estar·enfermo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στήκω",
+      "display": "estar·firme",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "cae",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 13:3",
+      "negator": "οὐκ",
+      "clause_text": "λαλοῦντος Χριστοῦ· ὃς εἰς ὑμᾶς οὐκ ἀσθενεῖ ἀλλὰ δυνατεῖ ἐν ὑμῖν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 13:3",
+      "reason": "occurs near ἀσθενέω"
+    },
+    {
+      "ref": "2 Corinthians 9:8",
+      "reason": "occurs near θεός, χάρις"
+    },
+    {
+      "ref": "Romans 14:4",
+      "reason": "occurs near στήκω, ἵστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

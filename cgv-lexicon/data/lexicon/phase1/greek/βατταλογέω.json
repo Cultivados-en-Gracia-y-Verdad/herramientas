@@ -1,0 +1,94 @@
+{
+  "lemma": "βατταλογέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "βατταλογήσητε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 6:7",
+      "form": "βατταλογήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "Προσευχόμενοι δὲ μὴ",
+      "right_context": "ὥσπερ οἱ ἐθνικοί, δοκοῦσιν γὰρ ὅτι"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥσπερ",
+      "display": "como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐθνικός",
+      "display": "gentiles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "parecen",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 6:7",
+      "form": "βατταλογήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "Προσευχόμενοι δὲ μὴ βατταλογήσητε ὥσπερ οἱ ἐθνικοί, δοκοῦσιν γὰρ ὅτι ἐν τῇ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 6:7",
+      "negator": "μὴ",
+      "clause_text": "Προσευχόμενοι δὲ μὴ βατταλογήσητε ὥσπερ οἱ ἐθνικοί, δοκοῦσιν γὰρ ὅτι ἐν τῇ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 6:7",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

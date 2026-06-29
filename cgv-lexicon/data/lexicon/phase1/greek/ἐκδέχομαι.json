@@ -1,0 +1,279 @@
+{
+  "lemma": "ἐκδέχομαι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἐκδέχεσθε.",
+      "count": 1
+    },
+    {
+      "form": "ἐκδέχομαι",
+      "count": 1
+    },
+    {
+      "form": "ἐκδεχόμενος",
+      "count": 1
+    },
+    {
+      "form": "ἐξεδέχετο",
+      "count": 1
+    },
+    {
+      "form": "ἐκδεχομένου",
+      "count": 1
+    },
+    {
+      "form": "ἐκδέχεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 5,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:33",
+      "form": "ἐκδέχεσθε.",
+      "morph": "V-P-M-D-2P",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 33,
+      "left_context": "μου, συνερχόμενοι εἰς τὸ φαγεῖν ἀλλήλους",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 16:11",
+      "form": "ἐκδέχομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 11,
+      "left_context": "ἐν εἰρήνῃ, ἵνα ἔλθῃ πρός ⸀με,",
+      "right_context": "γὰρ αὐτὸν μετὰ τῶν ἀδελφῶν."
+    },
+    {
+      "ref": "Hebrews 10:13",
+      "form": "ἐκδεχόμενος",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 13,
+      "left_context": "τὸ λοιπὸν",
+      "right_context": "ἕως τεθῶσιν οἱ ἐχθροὶ αὐτοῦ ὑποπόδιον"
+    },
+    {
+      "ref": "Hebrews 11:10",
+      "form": "ἐξεδέχετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 10,
+      "left_context": "",
+      "right_context": "γὰρ τὴν τοὺς θεμελίους ἔχουσαν πόλιν,"
+    },
+    {
+      "ref": "Acts 17:16",
+      "form": "ἐκδεχομένου",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 16,
+      "left_context": "Ἐν δὲ ταῖς Ἀθήναις",
+      "right_context": "αὐτοὺς τοῦ Παύλου, παρωξύνετο τὸ πνεῦμα"
+    },
+    {
+      "ref": "James 5:7",
+      "form": "ἐκδέχεται",
+      "morph": "V-P-M-I-3S",
+      "book": "James",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "παρουσίας τοῦ κυρίου. ἰδοὺ ὁ γεωργὸς",
+      "right_context": "τὸν τίμιον καρπὸν τῆς γῆς, μακροθυμῶν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "Hebrews": 2,
+    "Acts": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συνέρχομαι",
+      "display": "reunirses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "de·hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "ponan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐχθρός",
+      "display": "enemigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεμέλιος",
+      "display": "fundamentos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀθῆναι",
+      "display": "Atenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "de·Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παροξύνομαι",
+      "display": "irritarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεωργός",
+      "display": "labrador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίμιος",
+      "display": "precioso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 11:33",
+      "form": "ἐκδέχεσθε.",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "Ὥστε, ἀδελφοί μου, συνερχόμενοι εἰς τὸ φαγεῖν ἀλλήλους ἐκδέχεσθε."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 11:33",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 16:11",
+      "reason": "occurs near εἰρήνη, ἔρχομαι"
+    },
+    {
+      "ref": "Hebrews 10:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 11:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 17:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "James 5:7",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

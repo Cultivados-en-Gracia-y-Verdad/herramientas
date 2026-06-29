@@ -1,0 +1,733 @@
+{
+  "lemma": "βούλομαι",
+  "language": "greek",
+  "total_occurrences": 37,
+  "forms": [
+    {
+      "form": "βουλόμενος",
+      "count": 5
+    },
+    {
+      "form": "βούλομαι",
+      "count": 2
+    },
+    {
+      "form": "ἐβουλόμην",
+      "count": 2
+    },
+    {
+      "form": "βουλόμενός",
+      "count": 2
+    },
+    {
+      "form": "βούλομαι,",
+      "count": 2
+    },
+    {
+      "form": "βούλεσθε",
+      "count": 2
+    },
+    {
+      "form": "ἐβούλοντο",
+      "count": 2
+    },
+    {
+      "form": "βουλομένου",
+      "count": 2
+    },
+    {
+      "form": "βούληται",
+      "count": 2
+    },
+    {
+      "form": "βούλεται.",
+      "count": 1
+    },
+    {
+      "form": "Βούλομαι",
+      "count": 1
+    },
+    {
+      "form": "βουλόμενοι",
+      "count": 1
+    },
+    {
+      "form": "⸀βουλόμενος",
+      "count": 1
+    },
+    {
+      "form": "ἐβουλήθην",
+      "count": 1
+    },
+    {
+      "form": "βουλομένους",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐβούλετο",
+      "count": 1
+    },
+    {
+      "form": "βουλόμεθα",
+      "count": 1
+    },
+    {
+      "form": "βούλοιτο",
+      "count": 1
+    },
+    {
+      "form": "Ἐβουλόμην",
+      "count": 1
+    },
+    {
+      "form": "βούλει",
+      "count": 1
+    },
+    {
+      "form": "ἐβουλήθη",
+      "count": 1
+    },
+    {
+      "form": "βουληθεὶς",
+      "count": 1
+    },
+    {
+      "form": "βούλεται⸃·",
+      "count": 1
+    },
+    {
+      "form": "βουληθῇ",
+      "count": 1
+    },
+    {
+      "form": "βούλομαί",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 20,
+      "participle": 13,
+      "optative": 1,
+      "subjunctive": 3
+    },
+    "tenses": {
+      "present": 27,
+      "imperfect": 6,
+      "aorist": 4
+    },
+    "voices": {
+      "middle": 33,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:11",
+      "form": "βούλεται.",
+      "morph": "V-P-M-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "αὐτὸ πνεῦμα, διαιροῦν ἰδίᾳ ἑκάστῳ καθὼς",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Timothy 2:8",
+      "form": "Βούλομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "οὖν προσεύχεσθαι τοὺς ἄνδρας ἐν παντὶ"
+    },
+    {
+      "ref": "1 Timothy 5:14",
+      "form": "βούλομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "",
+      "right_context": "οὖν νεωτέρας γαμεῖν, τεκνογονεῖν, οἰκοδεσποτεῖν, μηδεμίαν"
+    },
+    {
+      "ref": "1 Timothy 6:9",
+      "form": "βουλόμενοι",
+      "morph": "V-P-M-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "οἱ δὲ",
+      "right_context": "πλουτεῖν ἐμπίπτουσιν εἰς πειρασμὸν καὶ παγίδα"
+    },
+    {
+      "ref": "2 Corinthians 1:15",
+      "form": "ἐβουλόμην",
+      "morph": "V-I-M-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "Καὶ ταύτῃ τῇ πεποιθήσει",
+      "right_context": "⸂πρότερον πρὸς ὑμᾶς ἐλθεῖν⸃, ἵνα δευτέραν"
+    },
+    {
+      "ref": "2 Corinthians 1:17",
+      "form": "⸀βουλόμενος",
+      "morph": "V-P-M-P",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 17,
+      "left_context": "τοῦτο οὖν",
+      "right_context": "μήτι ἄρα τῇ ἐλαφρίᾳ ἐχρησάμην; ἢ"
+    },
+    {
+      "ref": "2 John 1:12",
+      "form": "ἐβουλήθην",
+      "morph": "V-A-P-I-1S",
+      "book": "2 John",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "Πολλὰ ἔχων ὑμῖν γράφειν οὐκ",
+      "right_context": "διὰ χάρτου καὶ μέλανος, ἀλλὰ ἐλπίζω"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "form": "βουλόμενός",
+      "morph": "V-P-M-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "ἡγοῦνται, ἀλλὰ μακροθυμεῖ εἰς ⸀ὑμᾶς, μὴ",
+      "right_context": "τινας ἀπολέσθαι ἀλλὰ πάντας εἰς μετάνοιαν"
+    },
+    {
+      "ref": "3 John 1:10",
+      "form": "βουλομένους",
+      "morph": "V-P-M-P",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "αὐτὸς ἐπιδέχεται τοὺς ἀδελφοὺς καὶ τοὺς",
+      "right_context": "κωλύει καὶ ἐκ τῆς ἐκκλησίας ἐκβάλλει."
+    },
+    {
+      "ref": "Philemon 1:13",
+      "form": "ἐβουλόμην",
+      "morph": "V-I-M-I-1S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ὃν ἐγὼ",
+      "right_context": "πρὸς ἐμαυτὸν κατέχειν, ἵνα ὑπὲρ σοῦ"
+    },
+    {
+      "ref": "Philippians 1:12",
+      "form": "βούλομαι,",
+      "morph": "V-P-M-I-1S",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "Γινώσκειν δὲ ὑμᾶς",
+      "right_context": "ἀδελφοί, ὅτι τὰ κατ’ ἐμὲ μᾶλλον"
+    },
+    {
+      "ref": "Hebrews 6:17",
+      "form": "βουλόμενος",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "ἐν ᾧ περισσότερον",
+      "right_context": "ὁ θεὸς ἐπιδεῖξαι τοῖς κληρονόμοις τῆς"
+    },
+    {
+      "ref": "Acts 5:28",
+      "form": "βούλεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 28,
+      "left_context": "τὴν Ἰερουσαλὴμ τῆς διδαχῆς ὑμῶν, καὶ",
+      "right_context": "ἐπαγαγεῖν ἐφ’ ἡμᾶς τὸ αἷμα τοῦ"
+    },
+    {
+      "ref": "Acts 5:33",
+      "form": "ἐβούλοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 33,
+      "left_context": "Οἱ δὲ ⸀ἀκούσαντες διεπρίοντο καὶ",
+      "right_context": "ἀνελεῖν αὐτούς."
+    },
+    {
+      "ref": "Acts 12:4",
+      "form": "βουλόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "παραδοὺς τέσσαρσιν τετραδίοις στρατιωτῶν φυλάσσειν αὐτόν,",
+      "right_context": "μετὰ τὸ πάσχα ἀναγαγεῖν αὐτὸν τῷ"
+    },
+    {
+      "ref": "Acts 15:37",
+      "form": "⸀ἐβούλετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 37,
+      "left_context": "Βαρναβᾶς δὲ",
+      "right_context": "συμπαραλαβεῖν ⸀καὶ τὸν Ἰωάννην τὸν καλούμενον"
+    },
+    {
+      "ref": "Acts 17:20",
+      "form": "βουλόμεθα",
+      "morph": "V-P-M-I-1P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 20,
+      "left_context": "τινα εἰσφέρεις εἰς τὰς ἀκοὰς ἡμῶν·",
+      "right_context": "οὖν γνῶναι ⸂τίνα θέλει⸃ ταῦτα εἶναι."
+    },
+    {
+      "ref": "Acts 18:15",
+      "form": "βούλομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 15,
+      "left_context": "ὄψεσθε αὐτοί· ⸀κριτὴς ἐγὼ τούτων οὐ",
+      "right_context": "εἶναι."
+    },
+    {
+      "ref": "Acts 18:27",
+      "form": "βουλομένου",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 27,
+      "left_context": "",
+      "right_context": "δὲ αὐτοῦ διελθεῖν εἰς τὴν Ἀχαΐαν"
+    },
+    {
+      "ref": "Acts 19:30",
+      "form": "βουλομένου",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 30,
+      "left_context": "⸂Παύλου δὲ⸃",
+      "right_context": "εἰσελθεῖν εἰς τὸν δῆμον οὐκ εἴων"
+    },
+    {
+      "ref": "Acts 22:30",
+      "form": "βουλόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 30,
+      "left_context": "Τῇ δὲ ἐπαύριον",
+      "right_context": "γνῶναι τὸ ἀσφαλὲς τὸ τί κατηγορεῖται"
+    },
+    {
+      "ref": "Acts 23:28",
+      "form": "βουλόμενός",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 28,
+      "left_context": "",
+      "right_context": "⸀τε ⸀ἐπιγνῶναι τὴν αἰτίαν δι’ ἣν"
+    },
+    {
+      "ref": "Acts 25:20",
+      "form": "βούλοιτο",
+      "morph": "V-P-M-O-3S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 20,
+      "left_context": "τὴν περὶ ⸀τούτων ζήτησιν ἔλεγον εἰ",
+      "right_context": "πορεύεσθαι εἰς ⸀Ἱεροσόλυμα κἀκεῖ κρίνεσθαι περὶ"
+    },
+    {
+      "ref": "Acts 25:22",
+      "form": "Ἐβουλόμην",
+      "morph": "V-I-M-I-1S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 22,
+      "left_context": "Ἀγρίππας δὲ πρὸς τὸν ⸀Φῆστον·",
+      "right_context": "καὶ αὐτὸς τοῦ ἀνθρώπου ἀκοῦσαι. ⸀Αὔριον,"
+    },
+    {
+      "ref": "Acts 27:43",
+      "form": "βουλόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 43,
+      "left_context": "ὁ δὲ ⸀ἑκατοντάρχης",
+      "right_context": "διασῶσαι τὸν Παῦλον ἐκώλυσεν αὐτοὺς τοῦ"
+    },
+    {
+      "ref": "Acts 28:18",
+      "form": "ἐβούλοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 18,
+      "left_context": "οἵτινες ἀνακρίναντές με",
+      "right_context": "ἀπολῦσαι διὰ τὸ μηδεμίαν αἰτίαν θανάτου"
+    },
+    {
+      "ref": "John 18:39",
+      "form": "βούλεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 39,
+      "left_context": "ἕνα ⸂ἀπολύσω ὑμῖν⸃ ἐν τῷ πάσχα·",
+      "right_context": "οὖν ⸄ἀπολύσω ὑμῖν⸅ τὸν βασιλέα τῶν"
+    },
+    {
+      "ref": "Jude 1:5",
+      "form": "βούλομαι,",
+      "morph": "V-P-M-I-1S",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "Ὑπομνῆσαι δὲ ὑμᾶς",
+      "right_context": "εἰδότας ⸂ὑμᾶς ἅπαξ⸃ ⸀πάντα, ὅτι ⸀Ἰησοῦς"
+    },
+    {
+      "ref": "Luke 10:22",
+      "form": "βούληται",
+      "morph": "V-P-M-S-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "μὴ ὁ υἱὸς καὶ ᾧ ⸀ἐὰν",
+      "right_context": "ὁ υἱὸς ἀποκαλύψαι."
+    },
+    {
+      "ref": "Luke 22:42",
+      "form": "βούλει",
+      "morph": "V-P-M-I-2S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 42,
+      "left_context": "λέγων· Πάτερ, εἰ",
+      "right_context": "⸀παρένεγκε ⸂τοῦτο τὸ ποτήριον⸃ ἀπ’ ἐμοῦ·"
+    },
+    {
+      "ref": "Mark 15:15",
+      "form": "βουλόμενος",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 15,
+      "left_context": "ὁ δὲ Πιλᾶτος",
+      "right_context": "τῷ ὄχλῳ τὸ ἱκανὸν ποιῆσαι ἀπέλυσεν"
+    },
+    {
+      "ref": "Matthew 1:19",
+      "form": "ἐβουλήθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "ὢν καὶ μὴ θέλων αὐτὴν ⸀δειγματίσαι,",
+      "right_context": "λάθρᾳ ἀπολῦσαι αὐτήν."
+    },
+    {
+      "ref": "Matthew 11:27",
+      "form": "βούληται",
+      "morph": "V-P-M-S-3S",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 27,
+      "left_context": "μὴ ὁ υἱὸς καὶ ᾧ ἐὰν",
+      "right_context": "ὁ υἱὸς ἀποκαλύψαι."
+    },
+    {
+      "ref": "James 1:18",
+      "form": "βουληθεὶς",
+      "morph": "V-A-P-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "",
+      "right_context": "ἀπεκύησεν ἡμᾶς λόγῳ ἀληθείας, εἰς τὸ"
+    },
+    {
+      "ref": "James 3:4",
+      "form": "βούλεται⸃·",
+      "morph": "V-P-M-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "πηδαλίου ὅπου ⸂ἡ ὁρμὴ τοῦ εὐθύνοντος",
+      "right_context": ""
+    },
+    {
+      "ref": "James 4:4",
+      "form": "βουληθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "James",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "τοῦ θεοῦ ἐστιν; ὃς ⸀ἐὰν οὖν",
+      "right_context": "φίλος εἶναι τοῦ κόσμου, ἐχθρὸς τοῦ"
+    },
+    {
+      "ref": "Titus 3:8",
+      "form": "βούλομαί",
+      "morph": "V-P-M-I-1S",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "Πιστὸς ὁ λόγος, καὶ περὶ τούτων",
+      "right_context": "σε διαβεβαιοῦσθαι, ἵνα φροντίζωσιν καλῶν ἔργων"
+    }
+  ],
+  "books": {
+    "Acts": 14,
+    "1 Timothy": 3,
+    "James": 3,
+    "2 Corinthians": 2,
+    "Luke": 2,
+    "Matthew": 2,
+    "1 Corinthians": 1,
+    "2 John": 1,
+    "2 Peter": 1,
+    "3 John": 1,
+    "Philemon": 1,
+    "Philippians": 1,
+    "Hebrews": 1,
+    "John": 1,
+    "Jude": 1,
+    "Mark": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀπολύω",
+      "display": "despedir",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocer",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κωλύω",
+      "display": "impede",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχα",
+      "display": "pascua",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiere",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "de·Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτία",
+      "display": "causa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκαλύπτω",
+      "display": "revelar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαιρέω",
+      "display": "dividiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεκνογονέω",
+      "display": "tener·hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδεσποτέω",
+      "display": "gobernar·la·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλουτέω",
+      "display": "enriquecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπίπτω",
+      "display": "caen",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 John 1:12",
+      "negator": "οὐκ",
+      "clause_text": "Πολλὰ ἔχων ὑμῖν γράφειν οὐκ ἐβουλήθην διὰ χάρτου καὶ μέλανος, ἀλλὰ ἐλπίζω ⸀γενέσθαι πρὸς"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "negator": "μὴ",
+      "clause_text": "τινες βραδύτητα ἡγοῦνται, ἀλλὰ μακροθυμεῖ εἰς ⸀ὑμᾶς, μὴ βουλόμενός τινας ἀπολέσθαι ἀλλὰ πάντας εἰς μετάνοιαν χωρῆσαι."
+    },
+    {
+      "ref": "Acts 18:15",
+      "negator": "οὐ",
+      "clause_text": "καθ’ ὑμᾶς, ὄψεσθε αὐτοί· ⸀κριτὴς ἐγὼ τούτων οὐ βούλομαι εἶναι."
+    },
+    {
+      "ref": "Matthew 1:19",
+      "negator": "μὴ",
+      "clause_text": "αὐτῆς, δίκαιος ὢν καὶ μὴ θέλων αὐτὴν ⸀δειγματίσαι, ἐβουλήθη λάθρᾳ ἀπολῦσαι αὐτήν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:4",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 15:37",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 17:20",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 18:15",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 18:27",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 19:30",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 22:30",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:28",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

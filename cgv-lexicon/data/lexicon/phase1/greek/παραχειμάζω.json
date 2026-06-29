@@ -1,0 +1,248 @@
+{
+  "lemma": "παραχειμάζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "παραχειμάσω,",
+      "count": 1
+    },
+    {
+      "form": "παραχειμάσαι,",
+      "count": 1
+    },
+    {
+      "form": "παρακεχειμακότι",
+      "count": 1
+    },
+    {
+      "form": "παραχειμάσαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:6",
+      "form": "παραχειμάσω,",
+      "morph": "V-F-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 6,
+      "left_context": "ὑμᾶς δὲ τυχὸν ⸀παραμενῶ ἢ ⸀καὶ",
+      "right_context": "ἵνα ὑμεῖς με προπέμψητε οὗ ἐὰν"
+    },
+    {
+      "ref": "Acts 27:12",
+      "form": "παραχειμάσαι,",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 12,
+      "left_context": "εἴ πως δύναιντο καταντήσαντες εἰς Φοίνικα",
+      "right_context": "λιμένα τῆς Κρήτης βλέποντα κατὰ λίβα"
+    },
+    {
+      "ref": "Acts 28:11",
+      "form": "παρακεχειμακότι",
+      "morph": "V-X-A-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 11,
+      "left_context": "δὲ τρεῖς μῆνας ⸀ἀνήχθημεν ἐν πλοίῳ",
+      "right_context": "ἐν τῇ νήσῳ Ἀλεξανδρίνῳ, παρασήμῳ Διοσκούροις."
+    },
+    {
+      "ref": "Titus 3:12",
+      "form": "παραχειμάσαι.",
+      "morph": "V-A-A-N",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "με εἰς Νικόπολιν, ἐκεῖ γὰρ κέκρικα",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "1 Corinthians": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τυγχάνω",
+      "display": "sucedido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραμένω",
+      "display": "permaneceré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προπέμπω",
+      "display": "acompañéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὗ",
+      "display": "del·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podieran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταντάω",
+      "display": "llegados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φοῖνιξ",
+      "display": "Fénice",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λιμήν",
+      "display": "puerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κρήτη",
+      "display": "de·Creta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήν",
+      "display": "ciertamentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγω",
+      "display": "fueron subido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῆσος",
+      "display": "isla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀλεξανδρῖνος",
+      "display": "Alejandrino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράσημος",
+      "display": "insignia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Νικόπολις",
+      "display": "Nicópolis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "he juzgado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 28:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 16:6",
+      "reason": "occurs near οὗ, παραμένω, προπέμπω"
+    },
+    {
+      "ref": "Titus 3:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

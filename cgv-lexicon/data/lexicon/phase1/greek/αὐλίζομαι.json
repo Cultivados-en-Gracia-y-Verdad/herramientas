@@ -1,0 +1,125 @@
+{
+  "lemma": "αὐλίζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ηὐλίζετο",
+      "count": 1
+    },
+    {
+      "form": "ηὐλίσθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 21:37",
+      "form": "ηὐλίζετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 37,
+      "left_context": "ἱερῷ διδάσκων⸃, τὰς δὲ νύκτας ἐξερχόμενος",
+      "right_context": "εἰς τὸ ὄρος τὸ καλούμενον Ἐλαιῶν·"
+    },
+    {
+      "ref": "Matthew 21:17",
+      "form": "ηὐλίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 17,
+      "left_context": "ἔξω τῆς πόλεως εἰς Βηθανίαν, καὶ",
+      "right_context": "ἐκεῖ."
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "noches",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "saliendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βηθανία",
+      "display": "Betania",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:37",
+      "reason": "occurs near διδάσκω, καλέω, νύξ"
+    },
+    {
+      "ref": "Matthew 21:17",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

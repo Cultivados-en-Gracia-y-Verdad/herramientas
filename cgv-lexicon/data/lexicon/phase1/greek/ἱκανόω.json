@@ -1,0 +1,112 @@
+{
+  "lemma": "ἱκανόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἱκάνωσεν",
+      "count": 1
+    },
+    {
+      "form": "ἱκανώσαντι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 3:6",
+      "form": "ἱκάνωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "ὃς καὶ",
+      "right_context": "ἡμᾶς διακόνους καινῆς διαθήκης, οὐ γράμματος"
+    },
+    {
+      "ref": "Colossians 1:12",
+      "form": "ἱκανώσαντι",
+      "morph": "V-A-A-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "εὐχαριστοῦντες τῷ πατρὶ τῷ",
+      "right_context": "⸀ὑμᾶς εἰς τὴν μερίδα τοῦ κλήρου"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διάκονος",
+      "display": "servidores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καινός",
+      "display": "de·nueva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "de·pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐχαριστέω",
+      "display": "dar·gracias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μερίς",
+      "display": "parte",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 3:6",
+      "reason": "occurs near διάκονος, διαθήκη, καινός"
+    },
+    {
+      "ref": "Colossians 1:12",
+      "reason": "occurs near εὐχαριστέω, πατήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

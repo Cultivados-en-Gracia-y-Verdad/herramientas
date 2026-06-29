@@ -1,0 +1,74 @@
+{
+  "lemma": "συγκομίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνεκόμισαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 8:2",
+      "form": "συνεκόμισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "δὲ τὸν Στέφανον ἄνδρες εὐλαβεῖς καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Στέφανος",
+      "display": "Esteban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλαβής",
+      "display": "piadosos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 8:2",
+      "reason": "occurs near Στέφανος, εὐλαβής, ἀνήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

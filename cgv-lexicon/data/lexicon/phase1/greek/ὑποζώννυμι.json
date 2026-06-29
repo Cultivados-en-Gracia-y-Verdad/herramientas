@@ -1,0 +1,92 @@
+{
+  "lemma": "ὑποζώννυμι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑποζωννύντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:17",
+      "form": "ὑποζωννύντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 17,
+      "left_context": "ἣν ἄραντες βοηθείαις ἐχρῶντο",
+      "right_context": "τὸ πλοῖον· φοβούμενοί τε μὴ εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αἴρω",
+      "display": "levantados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοήθεια",
+      "display": "ayudas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χράομαι",
+      "display": "usaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:17",
+      "reason": "occurs near αἴρω, βοήθεια, πλοῖον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

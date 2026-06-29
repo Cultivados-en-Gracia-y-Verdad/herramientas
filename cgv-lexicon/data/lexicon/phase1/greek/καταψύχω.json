@@ -1,0 +1,80 @@
+{
+  "lemma": "καταψύχω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καταψύξῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 16:24",
+      "form": "καταψύξῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 24,
+      "left_context": "ἄκρον τοῦ δακτύλου αὐτοῦ ὕδατος καὶ",
+      "right_context": "τὴν γλῶσσάν μου, ὅτι ὀδυνῶμαι ἐν"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δάκτυλος",
+      "display": "de·dedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lengua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀδυνάομαι",
+      "display": "angustiarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:24",
+      "reason": "occurs near γλῶσσα, δάκτυλος, ὀδυνάομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,92 @@
+{
+  "lemma": "συγκύπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συγκύπτουσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 13:11",
+      "form": "συγκύπτουσα",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 11,
+      "left_context": "ἔχουσα ἀσθενείας ἔτη ⸀δεκαοκτώ, καὶ ἦν",
+      "right_context": "καὶ μὴ δυναμένη ἀνακύψαι εἰς τὸ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀσθένεια",
+      "display": "de·enfermedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτος",
+      "display": "añoses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεκαοκτώ",
+      "display": "dieciochos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνακύπτω",
+      "display": "enderezarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 13:11",
+      "negator": "μὴ",
+      "clause_text": "⸀γυνὴ πνεῦμα ἔχουσα ἀσθενείας ἔτη ⸀δεκαοκτώ, καὶ ἦν συγκύπτουσα καὶ μὴ δυναμένη ἀνακύψαι εἰς τὸ παντελές."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 13:11",
+      "reason": "occurs near δεκαοκτώ, δύναμαι, ἀνακύπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,213 @@
+{
+  "lemma": "προσάγω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "προσαγάγῃ",
+      "count": 1
+    },
+    {
+      "form": "προσαγαγόντες",
+      "count": 1
+    },
+    {
+      "form": "προσάγειν",
+      "count": 1
+    },
+    {
+      "form": "προσάγαγε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1,
+      "infinitive": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:18",
+      "form": "προσαγάγῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "⸀ἔπαθεν, δίκαιος ὑπὲρ ἀδίκων, ἵνα ⸀ὑμᾶς",
+      "right_context": "τῷ θεῷ, θανατωθεὶς μὲν σαρκὶ ζῳοποιηθεὶς"
+    },
+    {
+      "ref": "Acts 16:20",
+      "form": "προσαγαγόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 20,
+      "left_context": "καὶ",
+      "right_context": "αὐτοὺς τοῖς στρατηγοῖς εἶπαν· Οὗτοι οἱ"
+    },
+    {
+      "ref": "Acts 27:27",
+      "form": "προσάγειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 27,
+      "left_context": "μέσον τῆς νυκτὸς ὑπενόουν οἱ ναῦται",
+      "right_context": "τινὰ αὐτοῖς χώραν."
+    },
+    {
+      "ref": "Luke 9:41",
+      "form": "προσάγαγε",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 41,
+      "left_context": "ἔσομαι πρὸς ὑμᾶς καὶ ἀνέξομαι ὑμῶν;",
+      "right_context": "⸂ὧδε τὸν υἱόν σου⸃."
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "1 Peter": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δίκαιος",
+      "display": "justo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄδικος",
+      "display": "de·injustos.",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θανατόω",
+      "display": "matado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατηγός",
+      "display": "comandantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπονοέω",
+      "display": "sospechaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναύτης",
+      "display": "marineros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "región",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνέχομαι",
+      "display": "soportaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὧδε",
+      "display": "aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 9:41",
+      "form": "προσάγαγε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ἕως πότε ἔσομαι πρὸς ὑμᾶς καὶ ἀνέξομαι ὑμῶν; προσάγαγε ⸂ὧδε τὸν υἱόν σου⸃."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 9:41",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 16:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 27:27",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 3:18",
+      "reason": "occurs near δίκαιος, θανατόω, θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "καταβιβάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀καταβιβασθήσῃ.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:15",
+      "form": "⸀καταβιβασθήσῃ.",
+      "morph": "V-F-P-I-2S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 15,
+      "left_context": "ἕως οὐρανοῦ ὑψωθήσῃ⸃; ἕως ⸀τοῦ ᾅδου",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑψόω",
+      "display": "será exaltado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ᾅδης",
+      "display": "de·hades",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:15",
+      "reason": "occurs near οὐρανός, ἕως, ὑψόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,384 @@
+{
+  "lemma": "φυτεύω",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "ἐφύτευσεν",
+      "count": 3
+    },
+    {
+      "form": "φυτεύων",
+      "count": 2
+    },
+    {
+      "form": "ἐφύτευσα,",
+      "count": 1
+    },
+    {
+      "form": "φυτεύει",
+      "count": 1
+    },
+    {
+      "form": "⸂πεφυτευμένην",
+      "count": 1
+    },
+    {
+      "form": "φυτεύθητι",
+      "count": 1
+    },
+    {
+      "form": "ἐφύτευον,",
+      "count": 1
+    },
+    {
+      "form": "ἐφύτευσεν⸃,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 7,
+      "participle": 3,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 6,
+      "present": 3,
+      "perfect": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 9,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 3:6",
+      "form": "ἐφύτευσα,",
+      "morph": "V-A-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "ἐγὼ",
+      "right_context": "Ἀπολλῶς ἐπότισεν, ἀλλὰ ὁ θεὸς ηὔξανεν·"
+    },
+    {
+      "ref": "1 Corinthians 3:7",
+      "form": "φυτεύων",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "ὥστε οὔτε ὁ",
+      "right_context": "ἐστίν τι οὔτε ὁ ποτίζων, ἀλλ’"
+    },
+    {
+      "ref": "1 Corinthians 3:8",
+      "form": "φυτεύων",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "ὁ",
+      "right_context": "δὲ καὶ ὁ ποτίζων ἕν εἰσιν,"
+    },
+    {
+      "ref": "1 Corinthians 9:7",
+      "form": "φυτεύει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 7,
+      "left_context": "τίς στρατεύεται ἰδίοις ὀψωνίοις ποτέ; τίς",
+      "right_context": "ἀμπελῶνα καὶ ⸂τὸν καρπὸν⸃ αὐτοῦ οὐκ"
+    },
+    {
+      "ref": "Luke 13:6",
+      "form": "⸂πεφυτευμένην",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "ταύτην τὴν παραβολήν. Συκῆν εἶχέν τις",
+      "right_context": "ἐν τῷ ἀμπελῶνι αὐτοῦ⸃, καὶ ἦλθεν"
+    },
+    {
+      "ref": "Luke 17:6",
+      "form": "φυτεύθητι",
+      "morph": "V-A-P-D-2S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 6,
+      "left_context": "ἂν τῇ συκαμίνῳ ταύτῃ· Ἐκριζώθητι καὶ",
+      "right_context": "ἐν τῇ θαλάσσῃ· καὶ ὑπήκουσεν ἂν"
+    },
+    {
+      "ref": "Luke 17:28",
+      "form": "ἐφύτευον,",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 28,
+      "left_context": "ἡμέραις Λώτ· ἤσθιον, ἔπινον, ἠγόραζον, ἐπώλουν,",
+      "right_context": "ᾠκοδόμουν·"
+    },
+    {
+      "ref": "Luke 20:9",
+      "form": "ἐφύτευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 9,
+      "left_context": "λαὸν λέγειν τὴν παραβολὴν ταύτην· ⸀Ἄνθρωπος",
+      "right_context": "ἀμπελῶνα, καὶ ἐξέδετο αὐτὸν γεωργοῖς, καὶ"
+    },
+    {
+      "ref": "Mark 12:1",
+      "form": "ἐφύτευσεν⸃,",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "αὐτοῖς ἐν παραβολαῖς ⸀λαλεῖν· Ἀμπελῶνα ⸂ἄνθρωπος",
+      "right_context": "καὶ περιέθηκεν φραγμὸν καὶ ὤρυξεν ὑπολήνιον"
+    },
+    {
+      "ref": "Matthew 15:13",
+      "form": "ἐφύτευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 13,
+      "left_context": "ἀποκριθεὶς εἶπεν· Πᾶσα φυτεία ἣν οὐκ",
+      "right_context": "ὁ πατήρ μου ὁ οὐράνιος ἐκριζωθήσεται."
+    },
+    {
+      "ref": "Matthew 21:33",
+      "form": "ἐφύτευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 33,
+      "left_context": "παραβολὴν ἀκούσατε. ⸀Ἄνθρωπος ἦν οἰκοδεσπότης ὅστις",
+      "right_context": "ἀμπελῶνα καὶ φραγμὸν αὐτῷ περιέθηκεν καὶ"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 4,
+    "Luke": 4,
+    "Matthew": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀμπελών",
+      "display": "viña",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ποτίζω",
+      "display": "dar·de·bebió",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "παραβολή",
+      "display": "parábola",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὔτε",
+      "display": "ni",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιτίθημι",
+      "display": "puso",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φραγμός",
+      "display": "cerca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀπολλῶς",
+      "display": "Apolos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατεύομαι",
+      "display": "servir·como·soldado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψώνιον",
+      "display": "salarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποτέ",
+      "display": "alguna·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συκῆ",
+      "display": "higuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συκάμινος",
+      "display": "morera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκριζόω",
+      "display": "desarraiga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπακούω",
+      "display": "obedeció",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λώτ",
+      "display": "de·Lot",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίνω",
+      "display": "bebían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγοράζω",
+      "display": "compraban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 17:6",
+      "form": "φυτεύθητι",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "σινάπεως, ἐλέγετε ἂν τῇ συκαμίνῳ ταύτῃ· Ἐκριζώθητι καὶ φυτεύθητι ἐν τῇ θαλάσσῃ· καὶ ὑπήκουσεν ἂν ὑμῖν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 15:13",
+      "negator": "οὐκ",
+      "clause_text": "ὁ δὲ ἀποκριθεὶς εἶπεν· Πᾶσα φυτεία ἣν οὐκ ἐφύτευσεν ὁ πατήρ μου ὁ οὐράνιος ἐκριζωθήσεται."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 17:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 3:6",
+      "reason": "occurs near ποτίζω"
+    },
+    {
+      "ref": "1 Corinthians 3:7",
+      "reason": "occurs near οὔτε, ποτίζω"
+    },
+    {
+      "ref": "1 Corinthians 3:8",
+      "reason": "occurs near ποτίζω"
+    },
+    {
+      "ref": "1 Corinthians 9:7",
+      "reason": "occurs near ἀμπελών"
+    },
+    {
+      "ref": "Luke 13:6",
+      "reason": "occurs near παραβολή, ἀμπελών"
+    },
+    {
+      "ref": "Luke 17:28",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 20:9",
+      "reason": "occurs near παραβολή, ἀμπελών, ἄνθρωπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

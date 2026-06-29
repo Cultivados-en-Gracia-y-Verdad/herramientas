@@ -1,0 +1,139 @@
+{
+  "lemma": "κατευθύνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "κατευθύναι",
+      "count": 2
+    },
+    {
+      "form": "κατευθῦναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "optative": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 3:11",
+      "form": "κατευθύναι",
+      "morph": "V-A-A-O-3S",
+      "book": "1 Thessalonians",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "ἡμῶν καὶ ὁ κύριος ἡμῶν ⸀Ἰησοῦς",
+      "right_context": "τὴν ὁδὸν ἡμῶν πρὸς ὑμᾶς·"
+    },
+    {
+      "ref": "2 Thessalonians 3:5",
+      "form": "κατευθύναι",
+      "morph": "V-A-A-O-3S",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "ὁ δὲ κύριος",
+      "right_context": "ὑμῶν τὰς καρδίας εἰς τὴν ἀγάπην"
+    },
+    {
+      "ref": "Luke 1:79",
+      "form": "κατευθῦναι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 79,
+      "left_context": "σκότει καὶ σκιᾷ θανάτου καθημένοις, τοῦ",
+      "right_context": "τοὺς πόδας ἡμῶν εἰς ὁδὸν εἰρήνης."
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1,
+    "2 Thessalonians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκιά",
+      "display": "sombra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 3:11",
+      "reason": "occurs near κύριος, Ἰησοῦς, ὁδός"
+    },
+    {
+      "ref": "2 Thessalonians 3:5",
+      "reason": "occurs near καρδία, κύριος"
+    },
+    {
+      "ref": "Luke 1:79",
+      "reason": "occurs near σκιά, ὁδός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

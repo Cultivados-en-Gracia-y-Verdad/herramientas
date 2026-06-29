@@ -1,0 +1,159 @@
+{
+  "lemma": "συγκοινωνέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συγκοινωνήσητε",
+      "count": 1
+    },
+    {
+      "form": "συγκοινωνεῖτε",
+      "count": 1
+    },
+    {
+      "form": "συγκοινωνήσαντές",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "imperative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 18:4",
+      "form": "συγκοινωνήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 4,
+      "left_context": "λαός μου, ἐξ αὐτῆς⸃, ἵνα μὴ",
+      "right_context": "ταῖς ἁμαρτίαις αὐτῆς, καὶ ἐκ τῶν"
+    },
+    {
+      "ref": "Ephesians 5:11",
+      "form": "συγκοινωνεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "καὶ μὴ",
+      "right_context": "τοῖς ἔργοις τοῖς ἀκάρποις τοῦ σκότους,"
+    },
+    {
+      "ref": "Philippians 4:14",
+      "form": "συγκοινωνήσαντές",
+      "morph": "V-A-A-P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "πλὴν καλῶς ἐποιήσατε",
+      "right_context": "μου τῇ θλίψει."
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "Ephesians": 1,
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκαρπος",
+      "display": "sin·fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλήν",
+      "display": "excepto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλῶς",
+      "display": "bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "tribulación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Revelation 18:4",
+      "form": "συγκοινωνήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "⸀Ἐξέλθατε, ⸂ὁ λαός μου, ἐξ αὐτῆς⸃, ἵνα μὴ συγκοινωνήσητε ταῖς ἁμαρτίαις αὐτῆς, καὶ ἐκ τῶν πληγῶν αὐτῆς",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Ephesians 5:11",
+      "form": "συγκοινωνεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "καὶ μὴ συγκοινωνεῖτε τοῖς ἔργοις τοῖς ἀκάρποις τοῦ σκότους, μᾶλλον δὲ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Revelation 18:4",
+      "negator": "μὴ",
+      "clause_text": "⸀Ἐξέλθατε, ⸂ὁ λαός μου, ἐξ αὐτῆς⸃, ἵνα μὴ συγκοινωνήσητε ταῖς ἁμαρτίαις αὐτῆς, καὶ ἐκ τῶν πληγῶν αὐτῆς"
+    },
+    {
+      "ref": "Ephesians 5:11",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ συγκοινωνεῖτε τοῖς ἔργοις τοῖς ἀκάρποις τοῦ σκότους, μᾶλλον δὲ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 5:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Philippians 4:14",
+      "reason": "occurs near καλῶς, πλήν"
+    },
+    {
+      "ref": "Revelation 18:4",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

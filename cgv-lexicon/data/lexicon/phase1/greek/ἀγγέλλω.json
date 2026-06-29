@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀγγέλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἀγγέλλουσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 20:18",
+      "form": "⸀ἀγγέλλουσα",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 18,
+      "left_context": "ἔρχεται ⸀Μαριὰμ ἡ Μαγδαληνὴ",
+      "right_context": "τοῖς μαθηταῖς ὅτι ⸀Ἑώρακα τὸν κύριον"
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαριάμ",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαγδαληνή",
+      "display": "Magdalena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "he visto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 20:18",
+      "reason": "occurs near Μαγδαληνή, Μαριάμ, μαθητής"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

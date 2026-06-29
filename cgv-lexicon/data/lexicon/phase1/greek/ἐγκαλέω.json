@@ -1,0 +1,312 @@
+{
+  "lemma": "ἐγκαλέω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἐγκαλοῦμαι",
+      "count": 2
+    },
+    {
+      "form": "ἐγκαλείτωσαν",
+      "count": 1
+    },
+    {
+      "form": "ἐγκαλεῖσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐνεκάλουν",
+      "count": 1
+    },
+    {
+      "form": "ἐγκαλούμενον",
+      "count": 1
+    },
+    {
+      "form": "ἐγκαλέσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "infinitive": 1,
+      "indicative": 4,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 5,
+      "imperfect": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 3,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 19:38",
+      "form": "ἐγκαλείτωσαν",
+      "morph": "V-P-A-D-3P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 38,
+      "left_context": "λόγον, ἀγοραῖοι ἄγονται καὶ ἀνθύπατοί εἰσιν,",
+      "right_context": "ἀλλήλοις."
+    },
+    {
+      "ref": "Acts 19:40",
+      "form": "ἐγκαλεῖσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 40,
+      "left_context": "καὶ γὰρ κινδυνεύομεν",
+      "right_context": "στάσεως περὶ τῆς σήμερον μηδενὸς αἰτίου"
+    },
+    {
+      "ref": "Acts 23:28",
+      "form": "ἐνεκάλουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 28,
+      "left_context": "⸀τε ⸀ἐπιγνῶναι τὴν αἰτίαν δι’ ἣν",
+      "right_context": "αὐτῷ, ⸀κατήγαγον εἰς τὸ συνέδριον αὐτῶν."
+    },
+    {
+      "ref": "Acts 23:29",
+      "form": "ἐγκαλούμενον",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 29,
+      "left_context": "ὃν εὗρον",
+      "right_context": "περὶ ζητημάτων τοῦ νόμου αὐτῶν, μηδὲν"
+    },
+    {
+      "ref": "Acts 26:2",
+      "form": "ἐγκαλοῦμαι",
+      "morph": "V-P-P-I-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 2,
+      "left_context": "Περὶ πάντων ὧν",
+      "right_context": "ὑπὸ Ἰουδαίων, βασιλεῦ Ἀγρίππα, ἥγημαι ἐμαυτὸν"
+    },
+    {
+      "ref": "Acts 26:7",
+      "form": "ἐγκαλοῦμαι",
+      "morph": "V-P-P-I-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 7,
+      "left_context": "λατρεῦον ἐλπίζει καταντῆσαι· περὶ ἧς ἐλπίδος",
+      "right_context": "⸂ὑπὸ Ἰουδαίων, βασιλεῦ⸃·"
+    },
+    {
+      "ref": "Romans 8:33",
+      "form": "ἐγκαλέσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 33,
+      "left_context": "τίς",
+      "right_context": "κατὰ ἐκλεκτῶν θεοῦ; θεὸς ὁ δικαιῶν·"
+    }
+  ],
+  "books": {
+    "Acts": 6,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγοραῖος",
+      "display": "de·la·plaza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγω",
+      "display": "son llevado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνθύπατος",
+      "display": "procónsules",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κινδυνεύω",
+      "display": "peligro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στάσις",
+      "display": "de·sedición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconocer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτία",
+      "display": "causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάγω",
+      "display": "bajé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέδριον",
+      "display": "sanedrín",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζήτημα",
+      "display": "de·cuestiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀγρίππας",
+      "display": "Agripa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγέομαι",
+      "display": "he considerado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίζω",
+      "display": "espera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταντάω",
+      "display": "llegar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "de·esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλεκτός",
+      "display": "de·elegidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 19:38",
+      "form": "ἐγκαλείτωσαν",
+      "morph": "V-P-A-D-3P",
+      "clause_text": "πρός τινα λόγον, ἀγοραῖοι ἄγονται καὶ ἀνθύπατοί εἰσιν, ἐγκαλείτωσαν ἀλλήλοις."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:38",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 19:40",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:28",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:29",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 26:2",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 26:7",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Romans 8:33",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,138 @@
+{
+  "lemma": "συνεγείρω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συνηγέρθητε",
+      "count": 2
+    },
+    {
+      "form": "συνήγειρεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:12",
+      "form": "συνηγέρθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "ἐν τῷ ⸀βαπτισμῷ, ἐν ᾧ καὶ",
+      "right_context": "διὰ τῆς πίστεως τῆς ἐνεργείας τοῦ"
+    },
+    {
+      "ref": "Colossians 3:1",
+      "form": "συνηγέρθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "Εἰ οὖν",
+      "right_context": "τῷ Χριστῷ, τὰ ἄνω ζητεῖτε, οὗ"
+    },
+    {
+      "ref": "Ephesians 2:6",
+      "form": "συνήγειρεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "καὶ",
+      "right_context": "καὶ συνεκάθισεν ἐν τοῖς ἐπουρανίοις ἐν"
+    }
+  ],
+  "books": {
+    "Colossians": 2,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βαπτισμός",
+      "display": "bautismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνέργεια",
+      "display": "de·operación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνω",
+      "display": "arriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγκαθίζω",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπουράνιος",
+      "display": "celestiales",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 2:12",
+      "reason": "occurs near βαπτισμός, πίστις, ἐνέργεια"
+    },
+    {
+      "ref": "Colossians 3:1",
+      "reason": "occurs near Χριστός, ἄνω"
+    },
+    {
+      "ref": "Ephesians 2:6",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

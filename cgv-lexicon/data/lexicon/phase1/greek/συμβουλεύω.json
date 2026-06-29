@@ -1,0 +1,190 @@
+{
+  "lemma": "συμβουλεύω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "συνεβουλεύσαντο",
+      "count": 2
+    },
+    {
+      "form": "συμβουλεύω",
+      "count": 1
+    },
+    {
+      "form": "συμβουλεύσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 2,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 3:18",
+      "form": "συμβουλεύω",
+      "morph": "V-P-A-I-1S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "",
+      "right_context": "σοι ἀγοράσαι ⸂παρ’ ἐμοῦ χρυσίον⸃ πεπυρωμένον"
+    },
+    {
+      "ref": "Acts 9:23",
+      "form": "συνεβουλεύσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 23,
+      "left_context": "Ὡς δὲ ἐπληροῦντο ἡμέραι ἱκαναί,",
+      "right_context": "οἱ Ἰουδαῖοι ἀνελεῖν αὐτόν·"
+    },
+    {
+      "ref": "John 18:14",
+      "form": "συμβουλεύσας",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 14,
+      "left_context": "ἦν δὲ Καϊάφας ὁ",
+      "right_context": "τοῖς Ἰουδαίοις ὅτι συμφέρει ἕνα ἄνθρωπον"
+    },
+    {
+      "ref": "Matthew 26:4",
+      "form": "συνεβουλεύσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 4,
+      "left_context": "καὶ",
+      "right_context": "ἵνα τὸν Ἰησοῦν δόλῳ κρατήσωσιν καὶ"
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "Acts": 1,
+    "John": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγοράζω",
+      "display": "comprar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρυσίον",
+      "display": "oro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "eran cumplido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναιρέω",
+      "display": "matar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Καϊάφας",
+      "display": "Caifás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμφέρω",
+      "display": "convene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόλος",
+      "display": "engaño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarren",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 9:23",
+      "reason": "occurs near πληρόω, ἡμέρα, Ἰουδαῖος"
+    },
+    {
+      "ref": "John 18:14",
+      "reason": "occurs near Ἰουδαῖος"
+    },
+    {
+      "ref": "Matthew 26:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 3:18",
+      "reason": "occurs near χρυσίον, ἀγοράζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

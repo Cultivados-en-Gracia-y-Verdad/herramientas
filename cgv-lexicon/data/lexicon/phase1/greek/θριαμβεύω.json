@@ -1,0 +1,118 @@
+{
+  "lemma": "θριαμβεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "θριαμβεύοντι",
+      "count": 1
+    },
+    {
+      "form": "θριαμβεύσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 2:14",
+      "form": "θριαμβεύοντι",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "Τῷ δὲ θεῷ χάρις τῷ πάντοτε",
+      "right_context": "ἡμᾶς ἐν τῷ Χριστῷ καὶ τὴν"
+    },
+    {
+      "ref": "Colossians 2:15",
+      "form": "θριαμβεύσας",
+      "morph": "V-A-A-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "καὶ τὰς ἐξουσίας ἐδειγμάτισεν ἐν παρρησίᾳ,",
+      "right_context": "αὐτοὺς ἐν αὐτῷ."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοτε",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δειγματίζω",
+      "display": "exhibió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησία",
+      "display": "franqueza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 2:14",
+      "reason": "occurs near Χριστός, θεός, πάντοτε"
+    },
+    {
+      "ref": "Colossians 2:15",
+      "reason": "occurs near ἐξουσία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

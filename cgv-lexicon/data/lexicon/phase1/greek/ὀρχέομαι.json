@@ -1,0 +1,174 @@
+{
+  "lemma": "ὀρχέομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ὠρχήσασθε·",
+      "count": 2
+    },
+    {
+      "form": "ὀρχησαμένης",
+      "count": 1
+    },
+    {
+      "form": "ὠρχήσατο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 7:32",
+      "form": "ὠρχήσασθε·",
+      "morph": "V-A-M-I-2P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 32,
+      "left_context": "⸂ἃ λέγει⸃· Ηὐλήσαμεν ὑμῖν καὶ οὐκ",
+      "right_context": "⸀ἐθρηνήσαμεν καὶ οὐκ ἐκλαύσατε·"
+    },
+    {
+      "ref": "Mark 6:22",
+      "form": "ὀρχησαμένης",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 22,
+      "left_context": "τῆς θυγατρὸς ⸂αὐτῆς τῆς⸃ Ἡρῳδιάδος καὶ",
+      "right_context": "⸂καὶ ἀρεσάσης⸃ τῷ Ἡρῴδῃ καὶ τοῖς"
+    },
+    {
+      "ref": "Matthew 11:17",
+      "form": "ὠρχήσασθε·",
+      "morph": "V-A-M-I-2P",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "⸀λέγουσιν· Ηὐλήσαμεν ὑμῖν καὶ οὐκ",
+      "right_context": "⸀ἐθρηνήσαμεν καὶ οὐκ ἐκόψασθε·"
+    },
+    {
+      "ref": "Matthew 14:6",
+      "form": "ὠρχήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 6,
+      "left_context": "⸂γενεσίοις δὲ γενομένοις⸃ τοῦ Ἡρῴδου",
+      "right_context": "ἡ θυγάτηρ τῆς Ἡρῳδιάδος ἐν τῷ"
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αὐλέω",
+      "display": "tocar·flauta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θρηνέω",
+      "display": "lamentamos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θυγάτηρ",
+      "display": "de·hija",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῳδιάς",
+      "display": "de·Herodías",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "Herodes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "llorasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρέσκω",
+      "display": "agradada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόπτω",
+      "display": "cortasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γενέσια",
+      "display": "cumpleañoses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 7:32",
+      "negator": "οὐκ",
+      "clause_text": "προσφωνοῦσιν ἀλλήλοις, ⸂ἃ λέγει⸃· Ηὐλήσαμεν ὑμῖν καὶ οὐκ ὠρχήσασθε· ⸀ἐθρηνήσαμεν καὶ οὐκ ἐκλαύσατε·"
+    },
+    {
+      "ref": "Matthew 11:17",
+      "negator": "οὐκ",
+      "clause_text": "⸀λέγουσιν· Ηὐλήσαμεν ὑμῖν καὶ οὐκ ὠρχήσασθε· ⸀ἐθρηνήσαμεν καὶ οὐκ ἐκόψασθε·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 11:17",
+      "reason": "occurs near αὐλέω, θρηνέω"
+    },
+    {
+      "ref": "Matthew 14:6",
+      "reason": "occurs near θυγάτηρ, Ἡρῳδιάς, Ἡρῴδης"
+    },
+    {
+      "ref": "Luke 7:32",
+      "reason": "occurs near αὐλέω, θρηνέω"
+    },
+    {
+      "ref": "Mark 6:22",
+      "reason": "occurs near θυγάτηρ, Ἡρῳδιάς, Ἡρῴδης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

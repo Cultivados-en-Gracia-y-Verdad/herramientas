@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOTS Lexicon — Observation Layer</title>
+  <link rel="stylesheet" href="/viewer.css" />
+</head>
+<body>
+  <header>
+    <h1>ROOTS Lexicon</h1>
+    <p class="subtitle">Observation Layer — Greek NT verbs</p>
+    <form id="search-form" action="/lexicon/greek/" method="get" onsubmit="return goLemma(event)">
+      <input id="lemma-input" type="text" placeholder="Lemma (e.g. ἀγαπάω)" autocomplete="off" />
+      <button type="submit">Look up</button>
+    </form>
+  </header>
+  <main id="content">
+    <p class="hint">Enter a Greek lemma above, or open <code>/lexicon/greek/{lemma}</code>.</p>
+  </main>
+  <script src="/viewer.js"></script>
+</body>
+</html>

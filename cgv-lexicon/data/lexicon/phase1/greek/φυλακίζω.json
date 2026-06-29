@@ -1,0 +1,74 @@
+{
+  "lemma": "φυλακίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "φυλακίζων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 22:19",
+      "form": "φυλακίζων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 19,
+      "left_context": "Κύριε, αὐτοὶ ἐπίστανται ὅτι ἐγὼ ἤμην",
+      "right_context": "καὶ δέρων κατὰ τὰς συναγωγὰς τοὺς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπίσταμαι",
+      "display": "saben",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέρω",
+      "display": "golpeando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagogas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:19",
+      "reason": "occurs near δέρω, συναγωγή, ἐπίσταμαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

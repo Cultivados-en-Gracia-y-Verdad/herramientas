@@ -1,0 +1,131 @@
+{
+  "lemma": "στενοχωρέομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "στενοχωρεῖσθε",
+      "count": 2
+    },
+    {
+      "form": "στενοχωρούμενοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:8",
+      "form": "στενοχωρούμενοι,",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "ἐν παντὶ θλιβόμενοι ἀλλ’ οὐ",
+      "right_context": "ἀπορούμενοι ἀλλ’ οὐκ ἐξαπορούμενοι,"
+    },
+    {
+      "ref": "2 Corinthians 6:12",
+      "form": "στενοχωρεῖσθε",
+      "morph": "V-P-P-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "οὐ",
+      "right_context": "ἐν ἡμῖν, στενοχωρεῖσθε δὲ ἐν τοῖς"
+    },
+    {
+      "ref": "2 Corinthians 6:12",
+      "form": "στενοχωρεῖσθε",
+      "morph": "V-P-P-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "οὐ στενοχωρεῖσθε ἐν ἡμῖν,",
+      "right_context": "δὲ ἐν τοῖς σπλάγχνοις ὑμῶν·"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "στενοχωρέομαι",
+      "display": "angustiarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θλίβω",
+      "display": "afligidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπορέω",
+      "display": "perplejos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξαπορέομαι",
+      "display": "desesperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπλάγχνον",
+      "display": "misericordias",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:8",
+      "negator": "οὐ",
+      "clause_text": "ἐν παντὶ θλιβόμενοι ἀλλ’ οὐ στενοχωρούμενοι, ἀπορούμενοι ἀλλ’ οὐκ ἐξαπορούμενοι,"
+    },
+    {
+      "ref": "2 Corinthians 6:12",
+      "negator": "οὐ",
+      "clause_text": "οὐ στενοχωρεῖσθε ἐν ἡμῖν, στενοχωρεῖσθε δὲ ἐν τοῖς σπλάγχνοις ὑμῶν·"
+    },
+    {
+      "ref": "2 Corinthians 6:12",
+      "negator": "οὐ",
+      "clause_text": "οὐ στενοχωρεῖσθε ἐν ἡμῖν, στενοχωρεῖσθε δὲ ἐν τοῖς σπλάγχνοις ὑμῶν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:8",
+      "reason": "occurs near θλίβω, στενοχωρέομαι, ἀπορέω"
+    },
+    {
+      "ref": "2 Corinthians 6:12",
+      "reason": "occurs near στενοχωρέομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

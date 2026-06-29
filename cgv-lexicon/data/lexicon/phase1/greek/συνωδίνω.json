@@ -1,0 +1,80 @@
+{
+  "lemma": "συνωδίνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνωδίνει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 8:22",
+      "form": "συνωδίνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 22,
+      "left_context": "ὅτι πᾶσα ἡ κτίσις συστενάζει καὶ",
+      "right_context": "ἄχρι τοῦ νῦν·"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κτίσις",
+      "display": "creación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συστενάζω",
+      "display": "geme",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 8:22",
+      "reason": "occurs near κτίσις, νῦν, συστενάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,150 @@
+{
+  "lemma": "ἀποκεφαλίζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀπεκεφάλισεν",
+      "count": 2
+    },
+    {
+      "form": "ἀπεκεφάλισα·",
+      "count": 1
+    },
+    {
+      "form": "ἀπεκεφάλισα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 9:9",
+      "form": "ἀπεκεφάλισα·",
+      "morph": "V-A-A-I-1S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 9,
+      "left_context": "⸂εἶπεν δὲ⸃ ⸀ὁ Ἡρῴδης· Ἰωάννην ἐγὼ",
+      "right_context": "τίς δέ ἐστιν οὗτος περὶ ⸀οὗ"
+    },
+    {
+      "ref": "Mark 6:16",
+      "form": "ἀπεκεφάλισα",
+      "morph": "V-A-A-I-1S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 16,
+      "left_context": "δὲ ⸀ὁ Ἡρῴδης ⸀ἔλεγεν· Ὃν ἐγὼ",
+      "right_context": "Ἰωάννην, οὗτος ⸀ἠγέρθη."
+    },
+    {
+      "ref": "Mark 6:27",
+      "form": "ἀπεκεφάλισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 27,
+      "left_context": "⸀ἐνέγκαι τὴν κεφαλὴν αὐτοῦ. ⸀καὶ ἀπελθὼν",
+      "right_context": "αὐτὸν ἐν τῇ φυλακῇ"
+    },
+    {
+      "ref": "Matthew 14:10",
+      "form": "ἀπεκεφάλισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 10,
+      "left_context": "καὶ πέμψας",
+      "right_context": "⸀τὸν Ἰωάννην ἐν τῇ φυλακῇ·"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "Herodes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακή",
+      "display": "cárcel",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "fue levantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "enviado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 6:16",
+      "reason": "occurs near ἐγείρω, Ἡρῴδης, Ἰωάννης"
+    },
+    {
+      "ref": "Mark 6:27",
+      "reason": "occurs near κεφαλή, φυλακή"
+    },
+    {
+      "ref": "Luke 9:9",
+      "reason": "occurs near Ἡρῴδης, Ἰωάννης"
+    },
+    {
+      "ref": "Matthew 14:10",
+      "reason": "occurs near φυλακή, Ἰωάννης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

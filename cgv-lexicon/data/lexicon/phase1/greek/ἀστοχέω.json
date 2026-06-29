@@ -1,0 +1,148 @@
+{
+  "lemma": "ἀστοχέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀστοχήσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἠστόχησαν.",
+      "count": 1
+    },
+    {
+      "form": "ἠστόχησαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 1:6",
+      "form": "ἀστοχήσαντες",
+      "morph": "V-A-A-P",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "ὧν τινες",
+      "right_context": "ἐξετράπησαν εἰς ματαιολογίαν,"
+    },
+    {
+      "ref": "1 Timothy 6:21",
+      "form": "ἠστόχησαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 21,
+      "left_context": "ἥν τινες ἐπαγγελλόμενοι περὶ τὴν πίστιν",
+      "right_context": "Ἡ χάρις ⸂μεθ’ ὑμῶν⸃."
+    },
+    {
+      "ref": "2 Timothy 2:18",
+      "form": "ἠστόχησαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "οἵτινες περὶ τὴν ἀλήθειαν",
+      "right_context": "⸀λέγοντες ἀνάστασιν ἤδη γεγονέναι, καὶ ἀνατρέπουσιν"
+    }
+  ],
+  "books": {
+    "1 Timothy": 2,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκτρέπομαι",
+      "display": "desviarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ματαιολογία",
+      "display": "vana·palabrería",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγέλλομαι",
+      "display": "prometiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάστασις",
+      "display": "resurrección",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 1:6",
+      "reason": "occurs near ματαιολογία, ἐκτρέπομαι"
+    },
+    {
+      "ref": "1 Timothy 6:21",
+      "reason": "occurs near πίστις, χάρις, ἐπαγγέλλομαι"
+    },
+    {
+      "ref": "2 Timothy 2:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

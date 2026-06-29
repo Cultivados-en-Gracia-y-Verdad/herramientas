@@ -1,0 +1,364 @@
+{
+  "lemma": "μέλει",
+  "language": "greek",
+  "total_occurrences": 10,
+  "forms": [
+    {
+      "form": "μέλει",
+      "count": 7
+    },
+    {
+      "form": "μελέτω·",
+      "count": 1
+    },
+    {
+      "form": "⸀ἔμελεν.",
+      "count": 1
+    },
+    {
+      "form": "ἔμελεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 9
+    },
+    "tenses": {
+      "present": 8,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 10
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:21",
+      "form": "μελέτω·",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 21,
+      "left_context": "Δοῦλος ἐκλήθης; μή σοι",
+      "right_context": "ἀλλ’ εἰ καὶ δύνασαι ἐλεύθερος γενέσθαι,"
+    },
+    {
+      "ref": "1 Corinthians 9:9",
+      "form": "μέλει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 9,
+      "left_context": "⸀κημώσεις βοῦν ἀλοῶντα. μὴ τῶν βοῶν",
+      "right_context": "τῷ θεῷ,"
+    },
+    {
+      "ref": "1 Peter 5:7",
+      "form": "μέλει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "ὑμῶν ἐπιρίψαντες ἐπ’ αὐτόν, ὅτι αὐτῷ",
+      "right_context": "περὶ ὑμῶν."
+    },
+    {
+      "ref": "Acts 18:17",
+      "form": "⸀ἔμελεν.",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 17,
+      "left_context": "βήματος· καὶ οὐδὲν τούτων τῷ Γαλλίωνι",
+      "right_context": ""
+    },
+    {
+      "ref": "John 10:13",
+      "form": "μέλει",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 10,
+      "verse": 13,
+      "left_context": "⸀ὅτι μισθωτός ἐστιν καὶ οὐ",
+      "right_context": "αὐτῷ περὶ τῶν προβάτων."
+    },
+    {
+      "ref": "John 12:6",
+      "form": "ἔμελεν",
+      "morph": "V-I-A-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 6,
+      "left_context": "τοῦτο οὐχ ὅτι περὶ τῶν πτωχῶν",
+      "right_context": "αὐτῷ, ἀλλ’ ὅτι κλέπτης ἦν καὶ"
+    },
+    {
+      "ref": "Luke 10:40",
+      "form": "μέλει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 40,
+      "left_context": "διακονίαν· ἐπιστᾶσα δὲ εἶπεν· Κύριε, οὐ",
+      "right_context": "σοι ὅτι ἡ ἀδελφή μου μόνην"
+    },
+    {
+      "ref": "Mark 4:38",
+      "form": "μέλει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 38,
+      "left_context": "αὐτὸν καὶ λέγουσιν αὐτῷ· Διδάσκαλε, οὐ",
+      "right_context": "σοι ὅτι ἀπολλύμεθα;"
+    },
+    {
+      "ref": "Mark 12:14",
+      "form": "μέλει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "οἴδαμεν ὅτι ἀληθὴς εἶ καὶ οὐ",
+      "right_context": "σοι περὶ οὐδενός, οὐ γὰρ βλέπεις"
+    },
+    {
+      "ref": "Matthew 22:16",
+      "form": "μέλει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 16,
+      "left_context": "θεοῦ ἐν ἀληθείᾳ διδάσκεις, καὶ οὐ",
+      "right_context": "σοι περὶ οὐδενός, οὐ γὰρ βλέπεις"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "John": 2,
+    "Mark": 2,
+    "1 Peter": 1,
+    "Acts": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βοῦς",
+      "display": "buey",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "fue llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puedes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεύθερος",
+      "display": "libre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλοάω",
+      "display": "trillando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιρίπτω",
+      "display": "echados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλλίων",
+      "display": "Galión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθωτός",
+      "display": "jornalero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόβατον",
+      "display": "de·ovejas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτωχός",
+      "display": "de·pobres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτης",
+      "display": "ladrón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφή",
+      "display": "hermana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruemos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀληθής",
+      "display": "verdadero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 7:21",
+      "form": "μελέτω·",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "Δοῦλος ἐκλήθης; μή σοι μελέτω· ἀλλ’ εἰ καὶ δύνασαι ἐλεύθερος γενέσθαι, μᾶλλον χρῆσαι.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:21",
+      "negator": "μή",
+      "clause_text": "Δοῦλος ἐκλήθης; μή σοι μελέτω· ἀλλ’ εἰ καὶ δύνασαι ἐλεύθερος γενέσθαι, μᾶλλον χρῆσαι."
+    },
+    {
+      "ref": "1 Corinthians 9:9",
+      "negator": "μὴ",
+      "clause_text": "γέγραπται· Οὐ ⸀κημώσεις βοῦν ἀλοῶντα. μὴ τῶν βοῶν μέλει τῷ θεῷ,"
+    },
+    {
+      "ref": "John 10:13",
+      "negator": "οὐ",
+      "clause_text": "⸀ὅτι μισθωτός ἐστιν καὶ οὐ μέλει αὐτῷ περὶ τῶν προβάτων."
+    },
+    {
+      "ref": "Luke 10:40",
+      "negator": "οὐ",
+      "clause_text": "περὶ πολλὴν διακονίαν· ἐπιστᾶσα δὲ εἶπεν· Κύριε, οὐ μέλει σοι ὅτι ἡ ἀδελφή μου μόνην με ⸀κατέλειπεν"
+    },
+    {
+      "ref": "Mark 4:38",
+      "negator": "οὐ",
+      "clause_text": "καὶ ⸀ἐγείρουσιν αὐτὸν καὶ λέγουσιν αὐτῷ· Διδάσκαλε, οὐ μέλει σοι ὅτι ἀπολλύμεθα;"
+    },
+    {
+      "ref": "Mark 12:14",
+      "negator": "οὐ",
+      "clause_text": "αὐτῷ· Διδάσκαλε, οἴδαμεν ὅτι ἀληθὴς εἶ καὶ οὐ μέλει σοι περὶ οὐδενός, οὐ γὰρ βλέπεις εἰς πρόσωπον"
+    },
+    {
+      "ref": "Matthew 22:16",
+      "negator": "οὐ",
+      "clause_text": "ὁδὸν τοῦ θεοῦ ἐν ἀληθείᾳ διδάσκεις, καὶ οὐ μέλει σοι περὶ οὐδενός, οὐ γὰρ βλέπεις εἰς πρόσωπον"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 7:21",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 9:9",
+      "reason": "occurs near βοῦς"
+    },
+    {
+      "ref": "John 10:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 12:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 12:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 4:38",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 5:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 18:17",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

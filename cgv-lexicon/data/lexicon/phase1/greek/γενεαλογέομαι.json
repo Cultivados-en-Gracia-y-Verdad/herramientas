@@ -1,0 +1,74 @@
+{
+  "lemma": "γενεαλογέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "γενεαλογούμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 7:6",
+      "form": "γενεαλογούμενος",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "ὁ δὲ μὴ",
+      "right_context": "ἐξ αὐτῶν δεδεκάτωκεν ⸀Ἀβραάμ, καὶ τὸν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δεκατόω",
+      "display": "ha diezmado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 7:6",
+      "negator": "μὴ",
+      "clause_text": "ὁ δὲ μὴ γενεαλογούμενος ἐξ αὐτῶν δεδεκάτωκεν ⸀Ἀβραάμ, καὶ τὸν ἔχοντα τὰς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 7:6",
+      "reason": "occurs near δεκατόω, Ἀβραάμ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

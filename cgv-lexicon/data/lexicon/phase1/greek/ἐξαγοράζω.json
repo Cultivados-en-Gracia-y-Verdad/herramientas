@@ -1,0 +1,164 @@
+{
+  "lemma": "ἐξαγοράζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐξαγοραζόμενοι.",
+      "count": 1
+    },
+    {
+      "form": "ἐξαγοραζόμενοι",
+      "count": 1
+    },
+    {
+      "form": "ἐξηγόρασεν",
+      "count": 1
+    },
+    {
+      "form": "ἐξαγοράσῃ,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 4:5",
+      "form": "ἐξαγοραζόμενοι.",
+      "morph": "V-P-M-P",
+      "book": "Colossians",
+      "chapter": 4,
+      "verse": 5,
+      "left_context": "περιπατεῖτε πρὸς τοὺς ἔξω, τὸν καιρὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Ephesians 5:16",
+      "form": "ἐξαγοραζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "",
+      "right_context": "τὸν καιρόν, ὅτι αἱ ἡμέραι πονηραί"
+    },
+    {
+      "ref": "Galatians 3:13",
+      "form": "ἐξηγόρασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "Χριστὸς ἡμᾶς",
+      "right_context": "ἐκ τῆς κατάρας τοῦ νόμου γενόμενος"
+    },
+    {
+      "ref": "Galatians 4:5",
+      "form": "ἐξαγοράσῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 5,
+      "left_context": "ἵνα τοὺς ὑπὸ νόμον",
+      "right_context": "ἵνα τὴν υἱοθεσίαν ἀπολάβωμεν."
+    }
+  ],
+  "books": {
+    "Galatians": 2,
+    "Colossians": 1,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάρα",
+      "display": "de·maldición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱοθεσία",
+      "display": "adopción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολαμβάνω",
+      "display": "recibamos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 3:13",
+      "reason": "occurs near Χριστός, νόμος"
+    },
+    {
+      "ref": "Galatians 4:5",
+      "reason": "occurs near νόμος"
+    },
+    {
+      "ref": "Colossians 4:5",
+      "reason": "occurs near καιρός, ἔξω"
+    },
+    {
+      "ref": "Ephesians 5:16",
+      "reason": "occurs near καιρός, ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

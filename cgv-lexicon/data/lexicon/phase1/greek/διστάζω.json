@@ -1,0 +1,92 @@
+{
+  "lemma": "διστάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐδίστασας;",
+      "count": 1
+    },
+    {
+      "form": "ἐδίστασαν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 14:31",
+      "form": "ἐδίστασας;",
+      "morph": "V-A-A-I-2S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 31,
+      "left_context": "καὶ λέγει αὐτῷ· Ὀλιγόπιστε, εἰς τί",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 28:17",
+      "form": "ἐδίστασαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 17,
+      "left_context": "καὶ ἰδόντες αὐτὸν ⸀προσεκύνησαν, οἱ δὲ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀλιγόπιστος",
+      "display": "poca·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσκυνέω",
+      "display": "postrarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 14:31",
+      "reason": "occurs near ὀλιγόπιστος"
+    },
+    {
+      "ref": "Matthew 28:17",
+      "reason": "occurs near προσκυνέω, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

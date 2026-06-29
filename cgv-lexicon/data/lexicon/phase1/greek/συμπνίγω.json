@@ -1,0 +1,246 @@
+{
+  "lemma": "συμπνίγω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "συμπνίγονται",
+      "count": 1
+    },
+    {
+      "form": "συνέπνιγον",
+      "count": 1
+    },
+    {
+      "form": "συνέπνιξαν",
+      "count": 1
+    },
+    {
+      "form": "συμπνίγουσιν",
+      "count": 1
+    },
+    {
+      "form": "συμπνίγει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5
+    },
+    "tenses": {
+      "present": 3,
+      "imperfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:14",
+      "form": "συμπνίγονται",
+      "morph": "V-P-P-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 14,
+      "left_context": "πλούτου καὶ ἡδονῶν τοῦ βίου πορευόμενοι",
+      "right_context": "καὶ οὐ τελεσφοροῦσιν."
+    },
+    {
+      "ref": "Luke 8:42",
+      "form": "συνέπνιγον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 42,
+      "left_context": "δὲ τῷ ὑπάγειν αὐτὸν οἱ ὄχλοι",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 4:7",
+      "form": "συνέπνιξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ",
+      "right_context": "αὐτό, καὶ καρπὸν οὐκ ἔδωκεν."
+    },
+    {
+      "ref": "Mark 4:19",
+      "form": "συμπνίγουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 19,
+      "left_context": "αἱ περὶ τὰ λοιπὰ ἐπιθυμίαι εἰσπορευόμεναι",
+      "right_context": "τὸν λόγον, καὶ ἄκαρπος γίνεται."
+    },
+    {
+      "ref": "Matthew 13:22",
+      "form": "συμπνίγει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 22,
+      "left_context": "⸀τούτου καὶ ἡ ἀπάτη τοῦ πλούτου",
+      "right_context": "τὸν λόγον, καὶ ἄκαρπος γίνεται."
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Mark": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκαρπος",
+      "display": "sin·fruto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἡδονή",
+      "display": "de·placeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βίος",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "iendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελεσφορέω",
+      "display": "dar·fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "ir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκανθα",
+      "display": "espinas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσπορεύομαι",
+      "display": "entrando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπάτη",
+      "display": "engaño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῦτος",
+      "display": "de·riqueza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 8:14",
+      "negator": "οὐ",
+      "clause_text": "μεριμνῶν καὶ πλούτου καὶ ἡδονῶν τοῦ βίου πορευόμενοι συμπνίγονται καὶ οὐ τελεσφοροῦσιν."
+    },
+    {
+      "ref": "Mark 4:7",
+      "negator": "οὐκ",
+      "clause_text": "εἰς τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ συνέπνιξαν αὐτό, καὶ καρπὸν οὐκ ἔδωκεν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:14",
+      "reason": "occurs near βίος, πορεύομαι, ἡδονή"
+    },
+    {
+      "ref": "Luke 8:42",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 4:19",
+      "reason": "occurs near λόγος, ἄκαρπος"
+    },
+    {
+      "ref": "Mark 4:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 13:22",
+      "reason": "occurs near λόγος, ἄκαρπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

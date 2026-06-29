@@ -1,0 +1,149 @@
+{
+  "lemma": "διαγίνομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "διαγενομένου",
+      "count": 2
+    },
+    {
+      "form": "διαγενομένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 25:13",
+      "form": "διαγενομένων",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 13,
+      "left_context": "Ἡμερῶν δὲ",
+      "right_context": "τινῶν Ἀγρίππας ὁ βασιλεὺς καὶ Βερνίκη"
+    },
+    {
+      "ref": "Acts 27:9",
+      "form": "διαγενομένου",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 9,
+      "left_context": "Ἱκανοῦ δὲ χρόνου",
+      "right_context": "καὶ ὄντος ἤδη ἐπισφαλοῦς τοῦ πλοὸς"
+    },
+    {
+      "ref": "Mark 16:1",
+      "form": "διαγενομένου",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 1,
+      "left_context": "Καὶ",
+      "right_context": "τοῦ σαββάτου ⸀Μαρία ἡ Μαγδαληνὴ καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀγρίππας",
+      "display": "Agripa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "de·suficiente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "de·tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπισφαλής",
+      "display": "de·peligroso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "de·sábado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαρία",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαγδαληνή",
+      "display": "Magdalena",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 25:13",
+      "reason": "occurs near βασιλεύς, Ἀγρίππας, ἡμέρα"
+    },
+    {
+      "ref": "Acts 27:9",
+      "reason": "occurs near χρόνος, ἱκανός"
+    },
+    {
+      "ref": "Mark 16:1",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

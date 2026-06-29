@@ -1,0 +1,285 @@
+{
+  "lemma": "ἐγκακέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "⸀ἐγκακοῦμεν,",
+      "count": 2
+    },
+    {
+      "form": "⸀ἐγκακήσητε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐγκακεῖν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐγκακῶμεν,",
+      "count": 1
+    },
+    {
+      "form": "ἐγκακεῖν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "subjunctive": 2,
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:1",
+      "form": "⸀ἐγκακοῦμεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "τὴν διακονίαν ταύτην καθὼς ἠλεήθημεν, οὐκ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 4:16",
+      "form": "⸀ἐγκακοῦμεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "Διὸ οὐκ",
+      "right_context": "ἀλλ’ εἰ καὶ ὁ ἔξω ἡμῶν"
+    },
+    {
+      "ref": "2 Thessalonians 3:13",
+      "form": "⸀ἐγκακήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "ὑμεῖς δέ, ἀδελφοί, μὴ",
+      "right_context": "καλοποιοῦντες."
+    },
+    {
+      "ref": "Ephesians 3:13",
+      "form": "⸀ἐγκακεῖν",
+      "morph": "V-P-A-N",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "διὸ αἰτοῦμαι μὴ",
+      "right_context": "ἐν ταῖς θλίψεσίν μου ὑπὲρ ὑμῶν,"
+    },
+    {
+      "ref": "Galatians 6:9",
+      "form": "⸀ἐγκακῶμεν,",
+      "morph": "V-P-A-S-1P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "τὸ δὲ καλὸν ποιοῦντες μὴ",
+      "right_context": "καιρῷ γὰρ ἰδίῳ θερίσομεν μὴ ἐκλυόμενοι."
+    },
+    {
+      "ref": "Luke 18:1",
+      "form": "ἐγκακεῖν,",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 1,
+      "left_context": "δεῖν πάντοτε προσεύχεσθαι ⸀αὐτοὺς καὶ μὴ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "2 Thessalonians": 1,
+    "Ephesians": 1,
+    "Galatians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διακονία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεάω",
+      "display": "tener·misericordia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλοποιέω",
+      "display": "hacer·bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτέω",
+      "display": "pedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "tribulaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θερίζω",
+      "display": "segaremos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοτε",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Thessalonians 3:13",
+      "form": "⸀ἐγκακήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "ὑμεῖς δέ, ἀδελφοί, μὴ ⸀ἐγκακήσητε καλοποιοῦντες.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Galatians 6:9",
+      "form": "⸀ἐγκακῶμεν,",
+      "morph": "V-P-A-S-1P",
+      "clause_text": "τὸ δὲ καλὸν ποιοῦντες μὴ ⸀ἐγκακῶμεν, καιρῷ γὰρ ἰδίῳ θερίσομεν μὴ ἐκλυόμενοι.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:1",
+      "negator": "οὐκ",
+      "clause_text": "τοῦτο, ἔχοντες τὴν διακονίαν ταύτην καθὼς ἠλεήθημεν, οὐκ ⸀ἐγκακοῦμεν,"
+    },
+    {
+      "ref": "2 Corinthians 4:16",
+      "negator": "οὐκ",
+      "clause_text": "Διὸ οὐκ ⸀ἐγκακοῦμεν, ἀλλ’ εἰ καὶ ὁ ἔξω ἡμῶν ἄνθρωπος διαφθείρεται,"
+    },
+    {
+      "ref": "2 Thessalonians 3:13",
+      "negator": "μὴ",
+      "clause_text": "ὑμεῖς δέ, ἀδελφοί, μὴ ⸀ἐγκακήσητε καλοποιοῦντες."
+    },
+    {
+      "ref": "Ephesians 3:13",
+      "negator": "μὴ",
+      "clause_text": "διὸ αἰτοῦμαι μὴ ⸀ἐγκακεῖν ἐν ταῖς θλίψεσίν μου ὑπὲρ ὑμῶν, ἥτις ἐστὶν"
+    },
+    {
+      "ref": "Galatians 6:9",
+      "negator": "μὴ",
+      "clause_text": "τὸ δὲ καλὸν ποιοῦντες μὴ ⸀ἐγκακῶμεν, καιρῷ γὰρ ἰδίῳ θερίσομεν μὴ ἐκλυόμενοι."
+    },
+    {
+      "ref": "Luke 18:1",
+      "negator": "μὴ",
+      "clause_text": "πρὸς τὸ δεῖν πάντοτε προσεύχεσθαι ⸀αὐτοὺς καὶ μὴ ἐγκακεῖν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:1",
+      "reason": "occurs near διακονία, ἐλεάω"
+    },
+    {
+      "ref": "2 Corinthians 4:16",
+      "reason": "occurs near διό, ἔξω"
+    },
+    {
+      "ref": "2 Thessalonians 3:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Ephesians 3:13",
+      "reason": "occurs near διό"
+    },
+    {
+      "ref": "Galatians 6:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 18:1",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

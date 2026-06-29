@@ -1,0 +1,455 @@
+{
+  "lemma": "σαλεύω",
+  "language": "greek",
+  "total_occurrences": 15,
+  "forms": [
+    {
+      "form": "σαλευθήσονται.",
+      "count": 3
+    },
+    {
+      "form": "σαλευθῆναι",
+      "count": 2
+    },
+    {
+      "form": "σαλευόμενον;",
+      "count": 2
+    },
+    {
+      "form": "ἐσάλευσεν",
+      "count": 1
+    },
+    {
+      "form": "σαλευομένων⸃",
+      "count": 1
+    },
+    {
+      "form": "σαλευόμενα.",
+      "count": 1
+    },
+    {
+      "form": "σαλευθῶ.",
+      "count": 1
+    },
+    {
+      "form": "ἐσαλεύθη",
+      "count": 1
+    },
+    {
+      "form": "σαλεύοντες",
+      "count": 1
+    },
+    {
+      "form": "⸀σεσαλευμένον",
+      "count": 1
+    },
+    {
+      "form": "σαλεῦσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 3,
+      "indicative": 5,
+      "participle": 6,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 6,
+      "present": 5,
+      "perfect": 1,
+      "future": 3
+    },
+    "voices": {
+      "passive": 12,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 2:2",
+      "form": "σαλευθῆναι",
+      "morph": "V-A-P-N",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "εἰς τὸ μὴ ταχέως",
+      "right_context": "ὑμᾶς ἀπὸ τοῦ νοὸς ⸀μηδὲ θροεῖσθαι"
+    },
+    {
+      "ref": "Hebrews 12:26",
+      "form": "ἐσάλευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 26,
+      "left_context": "οὗ ἡ φωνὴ τὴν γῆν",
+      "right_context": "τότε, νῦν δὲ ἐπήγγελται λέγων· Ἔτι"
+    },
+    {
+      "ref": "Hebrews 12:27",
+      "form": "σαλευομένων⸃",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 27,
+      "left_context": "τὸ δὲ Ἔτι ἅπαξ δηλοῖ ⸂τῶν",
+      "right_context": "μετάθεσιν ὡς πεποιημένων, ἵνα μείνῃ τὰ"
+    },
+    {
+      "ref": "Hebrews 12:27",
+      "form": "σαλευόμενα.",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 27,
+      "left_context": "ὡς πεποιημένων, ἵνα μείνῃ τὰ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 2:25",
+      "form": "σαλευθῶ.",
+      "morph": "V-A-P-S-1S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "ἐκ δεξιῶν μού ἐστιν ἵνα μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 4:31",
+      "form": "ἐσαλεύθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 31,
+      "left_context": "καὶ δεηθέντων αὐτῶν",
+      "right_context": "ὁ τόπος ἐν ᾧ ἦσαν συνηγμένοι,"
+    },
+    {
+      "ref": "Acts 16:26",
+      "form": "σαλευθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 26,
+      "left_context": "ἄφνω δὲ σεισμὸς ἐγένετο μέγας ὥστε",
+      "right_context": "τὰ θεμέλια τοῦ δεσμωτηρίου, ἠνεῴχθησαν ⸀δὲ"
+    },
+    {
+      "ref": "Acts 17:13",
+      "form": "σαλεύοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 13,
+      "left_context": "ὁ λόγος τοῦ θεοῦ, ἦλθον κἀκεῖ",
+      "right_context": "⸂καὶ ταράσσοντες⸃ τοὺς ὄχλους."
+    },
+    {
+      "ref": "Luke 6:38",
+      "form": "⸀σεσαλευμένον",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 38,
+      "left_context": "καὶ δοθήσεται ὑμῖν· μέτρον καλὸν πεπιεσμένον",
+      "right_context": "ὑπερεκχυννόμενον δώσουσιν εἰς τὸν κόλπον ὑμῶν·"
+    },
+    {
+      "ref": "Luke 6:48",
+      "form": "σαλεῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 48,
+      "left_context": "τῇ οἰκίᾳ ἐκείνῃ, καὶ οὐκ ἴσχυσεν",
+      "right_context": "αὐτὴν ⸂διὰ τὸ καλῶς οἰκοδομῆσθαι αὐτήν⸃."
+    },
+    {
+      "ref": "Luke 7:24",
+      "form": "σαλευόμενον;",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 24,
+      "left_context": "τὴν ἔρημον θεάσασθαι; κάλαμον ὑπὸ ἀνέμου",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 21:26",
+      "form": "σαλευθήσονται.",
+      "morph": "V-F-P-I-3P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 26,
+      "left_context": "οἰκουμένῃ, αἱ γὰρ δυνάμεις τῶν οὐρανῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 13:25",
+      "form": "σαλευθήσονται.",
+      "morph": "V-F-P-I-3P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 25,
+      "left_context": "αἱ δυνάμεις αἱ ἐν τοῖς οὐρανοῖς",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 11:7",
+      "form": "σαλευόμενον;",
+      "morph": "V-P-P-P",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "τὴν ἔρημον θεάσασθαι; κάλαμον ὑπὸ ἀνέμου",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 24:29",
+      "form": "σαλευθήσονται.",
+      "morph": "V-F-P-I-3P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 29,
+      "left_context": "οὐρανοῦ, καὶ αἱ δυνάμεις τῶν οὐρανῶν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 4,
+    "Luke": 4,
+    "Hebrews": 3,
+    "Matthew": 2,
+    "2 Thessalonians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δύναμις",
+      "display": "poderes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μένω",
+      "display": "permaneca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "será dado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεάομαι",
+      "display": "contemplar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάλαμος",
+      "display": "caña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·viento",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ταχέως",
+      "display": "rápidamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "de·mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγέλλομαι",
+      "display": "ha prometido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δηλόω",
+      "display": "declara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετάθεσις",
+      "display": "cambio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "de·derechos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέομαι",
+      "display": "rogados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεισμός",
+      "display": "terremoto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 2:25",
+      "form": "σαλευθῶ.",
+      "morph": "V-A-P-S-1S",
+      "clause_text": "παντός, ὅτι ἐκ δεξιῶν μού ἐστιν ἵνα μὴ σαλευθῶ.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Thessalonians 2:2",
+      "negator": "μὴ",
+      "clause_text": "εἰς τὸ μὴ ταχέως σαλευθῆναι ὑμᾶς ἀπὸ τοῦ νοὸς ⸀μηδὲ θροεῖσθαι μήτε διὰ"
+    },
+    {
+      "ref": "Hebrews 12:27",
+      "negator": "μὴ",
+      "clause_text": "σαλευομένων⸃ μετάθεσιν ὡς πεποιημένων, ἵνα μείνῃ τὰ μὴ σαλευόμενα."
+    },
+    {
+      "ref": "Acts 2:25",
+      "negator": "μὴ",
+      "clause_text": "παντός, ὅτι ἐκ δεξιῶν μού ἐστιν ἵνα μὴ σαλευθῶ."
+    },
+    {
+      "ref": "Luke 6:48",
+      "negator": "οὐκ",
+      "clause_text": "ὁ ποταμὸς τῇ οἰκίᾳ ἐκείνῃ, καὶ οὐκ ἴσχυσεν σαλεῦσαι αὐτὴν ⸂διὰ τὸ καλῶς οἰκοδομῆσθαι αὐτήν⸃."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 17:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 2:25",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 4:31",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 21:26",
+      "reason": "occurs near δύναμις, οὐρανός"
+    },
+    {
+      "ref": "Luke 6:38",
+      "reason": "occurs near δίδωμι"
+    },
+    {
+      "ref": "Luke 6:48",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 7:24",
+      "reason": "occurs near ἔρημος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

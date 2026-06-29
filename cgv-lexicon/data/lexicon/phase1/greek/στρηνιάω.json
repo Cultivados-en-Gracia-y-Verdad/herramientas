@@ -1,0 +1,135 @@
+{
+  "lemma": "στρηνιάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐστρηνίασεν,",
+      "count": 1
+    },
+    {
+      "form": "στρηνιάσαντες,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 18:7",
+      "form": "ἐστρηνίασεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 7,
+      "left_context": "ὅσα ἐδόξασεν αὑτὴν καὶ",
+      "right_context": "τοσοῦτον δότε αὐτῇ βασανισμὸν καὶ πένθος."
+    },
+    {
+      "ref": "Revelation 18:9",
+      "form": "στρηνιάσαντες,",
+      "morph": "V-A-A-P",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 9,
+      "left_context": "γῆς οἱ μετ’ αὐτῆς πορνεύσαντες καὶ",
+      "right_context": "ὅταν βλέπωσιν τὸν καπνὸν τῆς πυρώσεως"
+    }
+  ],
+  "books": {
+    "Revelation": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοσοῦτος",
+      "display": "tanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασανισμός",
+      "display": "tormento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορνεύω",
+      "display": "fornicados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miraran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καπνός",
+      "display": "humo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 18:7",
+      "reason": "occurs near δίδωμι, δοξάζω, τοσοῦτος"
+    },
+    {
+      "ref": "Revelation 18:9",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

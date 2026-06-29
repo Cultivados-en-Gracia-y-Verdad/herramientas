@@ -1,0 +1,101 @@
+{
+  "lemma": "ἐνισχύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἐνίσχυσεν.",
+      "count": 1
+    },
+    {
+      "form": "ἐνισχύων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:19",
+      "form": "⸀ἐνίσχυσεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 19,
+      "left_context": "καὶ λαβὼν τροφὴν",
+      "right_context": "Ἐγένετο ⸀δὲ μετὰ τῶν ἐν Δαμασκῷ"
+    },
+    {
+      "ref": "Luke 22:43",
+      "form": "ἐνισχύων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 43,
+      "left_context": "⸂ὤφθη δὲ αὐτῷ ἄγγελος ⸀ἀπ’ οὐρανοῦ",
+      "right_context": "αὐτόν."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τροφή",
+      "display": "alimento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 9:19",
+      "reason": "occurs near λαμβάνω, τροφή"
+    },
+    {
+      "ref": "Luke 22:43",
+      "reason": "occurs near οὐρανός, ἄγγελος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,202 @@
+{
+  "lemma": "στέγω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "στέγομεν",
+      "count": 1
+    },
+    {
+      "form": "στέγει,",
+      "count": 1
+    },
+    {
+      "form": "στέγοντες",
+      "count": 1
+    },
+    {
+      "form": "στέγων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:12",
+      "form": "στέγομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "ἐχρησάμεθα τῇ ἐξουσίᾳ ταύτῃ, ἀλλὰ πάντα",
+      "right_context": "ἵνα μή ⸂τινα ἐγκοπὴν⸃ δῶμεν τῷ"
+    },
+    {
+      "ref": "1 Corinthians 13:7",
+      "form": "στέγει,",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "πάντα",
+      "right_context": "πάντα πιστεύει, πάντα ἐλπίζει, πάντα ὑπομένει."
+    },
+    {
+      "ref": "1 Thessalonians 3:1",
+      "form": "στέγοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Thessalonians",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "Διὸ μηκέτι",
+      "right_context": "εὐδοκήσαμεν καταλειφθῆναι ἐν Ἀθήναις μόνοι,"
+    },
+    {
+      "ref": "1 Thessalonians 3:5",
+      "form": "στέγων",
+      "morph": "V-P-A-P",
+      "book": "1 Thessalonians",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "διὰ τοῦτο κἀγὼ μηκέτι",
+      "right_context": "ἔπεμψα εἰς τὸ γνῶναι τὴν πίστιν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "1 Thessalonians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκοπή",
+      "display": "impedimento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "demos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "cree",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίζω",
+      "display": "espera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐδοκέω",
+      "display": "complacimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταλείπω",
+      "display": "dejar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀθῆναι",
+      "display": "Atenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "envié",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocer",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 9:12",
+      "negator": "μή",
+      "clause_text": "Ἀλλ’ οὐκ ἐχρησάμεθα τῇ ἐξουσίᾳ ταύτῃ, ἀλλὰ πάντα στέγομεν ἵνα μή ⸂τινα ἐγκοπὴν⸃ δῶμεν τῷ εὐαγγελίῳ τοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 13:7",
+      "reason": "occurs near πιστεύω"
+    },
+    {
+      "ref": "1 Corinthians 9:12",
+      "reason": "occurs near δίδωμι, ἐγκοπή, ἐξουσία"
+    },
+    {
+      "ref": "1 Thessalonians 3:1",
+      "reason": "occurs near μηκέτι"
+    },
+    {
+      "ref": "1 Thessalonians 3:5",
+      "reason": "occurs near μηκέτι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

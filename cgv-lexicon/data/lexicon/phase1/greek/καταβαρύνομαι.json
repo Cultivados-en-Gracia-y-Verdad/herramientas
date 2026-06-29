@@ -1,0 +1,80 @@
+{
+  "lemma": "καταβαρύνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀καταβαρυνόμενοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 14:40",
+      "form": "⸀καταβαρυνόμενοι,",
+      "morph": "V-P-P-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 40,
+      "left_context": "καθεύδοντας, ἦσαν γὰρ ⸂αὐτῶν οἱ ὀφθαλμοὶ⸃",
+      "right_context": "καὶ οὐκ ᾔδεισαν τί ⸂ἀποκριθῶσιν αὐτῷ⸃."
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habían sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "respondan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 14:40",
+      "negator": "οὐκ",
+      "clause_text": "εὗρεν αὐτοὺς⸃ καθεύδοντας, ἦσαν γὰρ ⸂αὐτῶν οἱ ὀφθαλμοὶ⸃ ⸀καταβαρυνόμενοι, καὶ οὐκ ᾔδεισαν τί ⸂ἀποκριθῶσιν αὐτῷ⸃."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 14:40",
+      "reason": "occurs near οἶδα, ἀποκρίνομαι, ὀφθαλμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

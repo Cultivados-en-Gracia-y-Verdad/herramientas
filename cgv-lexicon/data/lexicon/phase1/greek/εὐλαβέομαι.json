@@ -1,0 +1,92 @@
+{
+  "lemma": "εὐλαβέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εὐλαβηθεὶς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:7",
+      "form": "εὐλαβηθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "χρηματισθεὶς Νῶε περὶ τῶν μηδέπω βλεπομένων",
+      "right_context": "κατεσκεύασεν κιβωτὸν εἰς σωτηρίαν τοῦ οἴκου"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Νῶε",
+      "display": "Noé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηδέπω",
+      "display": "todavía·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατασκευάζω",
+      "display": "preparó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κιβωτός",
+      "display": "arca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "salvación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:7",
+      "reason": "occurs near Νῶε, βλέπω, κατασκευάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,230 @@
+{
+  "lemma": "συνεσθίω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "συνεσθίειν.",
+      "count": 1
+    },
+    {
+      "form": "συνήσθιεν·",
+      "count": 1
+    },
+    {
+      "form": "συνεφάγομεν",
+      "count": 1
+    },
+    {
+      "form": "συνέφαγες⸃",
+      "count": 1
+    },
+    {
+      "form": "συνεσθίει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 2,
+      "imperfect": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 5:11",
+      "form": "συνεσθίειν.",
+      "morph": "V-P-A-N",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "μέθυσος ἢ ἅρπαξ, τῷ τοιούτῳ μηδὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 2:12",
+      "form": "συνήσθιεν·",
+      "morph": "V-I-A-I-3S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "τινας ἀπὸ Ἰακώβου μετὰ τῶν ἐθνῶν",
+      "right_context": "ὅτε δὲ ⸀ἦλθον, ὑπέστελλεν καὶ ἀφώριζεν"
+    },
+    {
+      "ref": "Acts 10:41",
+      "form": "συνεφάγομεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 41,
+      "left_context": "προκεχειροτονημένοις ὑπὸ τοῦ θεοῦ, ἡμῖν, οἵτινες",
+      "right_context": "καὶ συνεπίομεν αὐτῷ μετὰ τὸ ἀναστῆναι"
+    },
+    {
+      "ref": "Acts 11:3",
+      "form": "συνέφαγες⸃",
+      "morph": "V-A-A-I-2S",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 3,
+      "left_context": "⸂Εἰσῆλθες πρὸς ἄνδρας ἀκροβυστίαν ἔχοντας καὶ",
+      "right_context": "αὐτοῖς."
+    },
+    {
+      "ref": "Luke 15:2",
+      "form": "συνεσθίει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 2,
+      "left_context": "λέγοντες ὅτι Οὗτος ἁμαρτωλοὺς προσδέχεται καὶ",
+      "right_context": "αὐτοῖς."
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "1 Corinthians": 1,
+    "Galatians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅρπαξ",
+      "display": "rapaz.",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰάκωβος",
+      "display": "de·Jacobo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποστέλλω",
+      "display": "rehuía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμπίνω",
+      "display": "beber·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκροβυστία",
+      "display": "incircuncisión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτωλός",
+      "display": "pecadores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσδέχομαι",
+      "display": "espera",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 5:11",
+      "negator": "μηδὲ",
+      "clause_text": "λοίδορος ἢ μέθυσος ἢ ἅρπαξ, τῷ τοιούτῳ μηδὲ συνεσθίειν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:41",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 11:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 5:11",
+      "reason": "occurs near τοιοῦτος, ἅρπαξ, ἤ"
+    },
+    {
+      "ref": "Galatians 2:12",
+      "reason": "occurs near ἔθνος, Ἰάκωβος"
+    },
+    {
+      "ref": "Luke 15:2",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,502 @@
+{
+  "lemma": "καταλύω",
+  "language": "greek",
+  "total_occurrences": 17,
+  "forms": [
+    {
+      "form": "καταλῦσαι",
+      "count": 4
+    },
+    {
+      "form": "καταλυθήσεται.",
+      "count": 2
+    },
+    {
+      "form": "καταλύων",
+      "count": 2
+    },
+    {
+      "form": "καταλυθῇ,",
+      "count": 1
+    },
+    {
+      "form": "κατέλυσα",
+      "count": 1
+    },
+    {
+      "form": "καταλυθήσεται,",
+      "count": 1
+    },
+    {
+      "form": "καταλύσει",
+      "count": 1
+    },
+    {
+      "form": "καταλύσωσιν",
+      "count": 1
+    },
+    {
+      "form": "καταλῦσαι.",
+      "count": 1
+    },
+    {
+      "form": "καταλυθῇ.",
+      "count": 1
+    },
+    {
+      "form": "καταλύσω",
+      "count": 1
+    },
+    {
+      "form": "κατάλυε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 3,
+      "indicative": 6,
+      "infinitive": 5,
+      "participle": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 9,
+      "future": 5,
+      "present": 3
+    },
+    "voices": {
+      "passive": 5,
+      "active": 12
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 5:1",
+      "form": "καταλυθῇ,",
+      "morph": "V-A-P-S-3S",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "ἡ ἐπίγειος ἡμῶν οἰκία τοῦ σκήνους",
+      "right_context": "οἰκοδομὴν ἐκ θεοῦ ἔχομεν οἰκίαν ἀχειροποίητον"
+    },
+    {
+      "ref": "Galatians 2:18",
+      "form": "κατέλυσα",
+      "morph": "V-A-A-I-1S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "εἰ γὰρ ἃ",
+      "right_context": "ταῦτα πάλιν οἰκοδομῶ, παραβάτην ἐμαυτὸν ⸀συνιστάνω."
+    },
+    {
+      "ref": "Acts 5:38",
+      "form": "καταλυθήσεται,",
+      "morph": "V-F-P-I-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 38,
+      "left_context": "βουλὴ ⸀αὕτη ἢ τὸ ἔργον τοῦτο,",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 5:39",
+      "form": "καταλῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 39,
+      "left_context": "δὲ ἐκ θεοῦ ἐστιν, οὐ ⸀δυνήσεσθε",
+      "right_context": "⸀αὐτούς·) μήποτε καὶ θεομάχοι εὑρεθῆτε. ἐπείσθησαν"
+    },
+    {
+      "ref": "Acts 6:14",
+      "form": "καταλύσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "λέγοντος ὅτι Ἰησοῦς ὁ Ναζωραῖος οὗτος",
+      "right_context": "τὸν τόπον τοῦτον καὶ ἀλλάξει τὰ"
+    },
+    {
+      "ref": "Luke 9:12",
+      "form": "καταλύσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "εἰς τὰς κύκλῳ κώμας ⸀καὶ ἀγροὺς",
+      "right_context": "καὶ εὕρωσιν ἐπισιτισμόν, ὅτι ὧδε ἐν"
+    },
+    {
+      "ref": "Luke 19:7",
+      "form": "καταλῦσαι.",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 7,
+      "left_context": "λέγοντες ὅτι Παρὰ ἁμαρτωλῷ ἀνδρὶ εἰσῆλθεν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 21:6",
+      "form": "καταλυθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 6,
+      "left_context": "ἀφεθήσεται λίθος ἐπὶ ⸀λίθῳ ὃς οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 13:2",
+      "form": "καταλυθῇ.",
+      "morph": "V-A-P-S-3S",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "λίθος ἐπὶ ⸀λίθον ὃς οὐ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 14:58",
+      "form": "καταλύσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 58,
+      "left_context": "Ἡμεῖς ἠκούσαμεν αὐτοῦ λέγοντος ὅτι Ἐγὼ",
+      "right_context": "τὸν ναὸν τοῦτον τὸν χειροποίητον καὶ"
+    },
+    {
+      "ref": "Mark 15:29",
+      "form": "καταλύων",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 29,
+      "left_context": "κεφαλὰς αὐτῶν καὶ λέγοντες· Οὐὰ ὁ",
+      "right_context": "τὸν ναὸν καὶ ⸂οἰκοδομῶν ἐν τρισὶν"
+    },
+    {
+      "ref": "Matthew 5:17",
+      "form": "καταλῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 17,
+      "left_context": "Μὴ νομίσητε ὅτι ἦλθον",
+      "right_context": "τὸν νόμον ἢ τοὺς προφήτας· οὐκ"
+    },
+    {
+      "ref": "Matthew 5:17",
+      "form": "καταλῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 17,
+      "left_context": "νόμον ἢ τοὺς προφήτας· οὐκ ἦλθον",
+      "right_context": "ἀλλὰ πληρῶσαι·"
+    },
+    {
+      "ref": "Matthew 24:2",
+      "form": "καταλυθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 2,
+      "left_context": "ὧδε λίθος ἐπὶ λίθον ὃς οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 26:61",
+      "form": "καταλῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 61,
+      "left_context": "εἶπαν· Οὗτος ἔφη· Δύναμαι",
+      "right_context": "τὸν ναὸν τοῦ θεοῦ καὶ διὰ"
+    },
+    {
+      "ref": "Matthew 27:40",
+      "form": "καταλύων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 40,
+      "left_context": "καὶ λέγοντες· Ὁ",
+      "right_context": "τὸν ναὸν καὶ ἐν τρισὶν ἡμέραις"
+    },
+    {
+      "ref": "Romans 14:20",
+      "form": "κατάλυε",
+      "morph": "V-P-A-D-2S",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 20,
+      "left_context": "μὴ ἕνεκεν βρώματος",
+      "right_context": "τὸ ἔργον τοῦ θεοῦ. πάντα μὲν"
+    }
+  ],
+  "books": {
+    "Matthew": 5,
+    "Acts": 3,
+    "Luke": 3,
+    "Mark": 3,
+    "2 Corinthians": 1,
+    "Galatians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ναός",
+      "display": "templo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edifico",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podréis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "halléis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vine",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "profetas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίγειος",
+      "display": "terrenal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκῆνος",
+      "display": "de·tienda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομή",
+      "display": "edificio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβάτης",
+      "display": "transgresor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμαυτοῦ",
+      "display": "me",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεομάχος",
+      "display": "oponerse·a·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ναζωραῖος",
+      "display": "Nazareno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλάσσω",
+      "display": "cambiará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύκλῳ",
+      "display": "alrededor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldeas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 13:2",
+      "form": "καταλυθῇ.",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "ἀφεθῇ ⸀ὧδε λίθος ἐπὶ ⸀λίθον ὃς οὐ μὴ καταλυθῇ.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Romans 14:20",
+      "form": "κατάλυε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "μὴ ἕνεκεν βρώματος κατάλυε τὸ ἔργον τοῦ θεοῦ. πάντα μὲν καθαρά, ἀλλὰ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 5:39",
+      "negator": "οὐ",
+      "clause_text": "εἰ δὲ ἐκ θεοῦ ἐστιν, οὐ ⸀δυνήσεσθε καταλῦσαι ⸀αὐτούς·) μήποτε καὶ θεομάχοι εὑρεθῆτε. ἐπείσθησαν δὲ αὐτῷ,"
+    },
+    {
+      "ref": "Luke 21:6",
+      "negator": "οὐ",
+      "clause_text": "αἷς οὐκ ἀφεθήσεται λίθος ἐπὶ ⸀λίθῳ ὃς οὐ καταλυθήσεται."
+    },
+    {
+      "ref": "Mark 13:2",
+      "negator": "οὐ",
+      "clause_text": "ἀφεθῇ ⸀ὧδε λίθος ἐπὶ ⸀λίθον ὃς οὐ μὴ καταλυθῇ."
+    },
+    {
+      "ref": "Matthew 5:17",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ νομίσητε ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας· οὐκ ἦλθον καταλῦσαι"
+    },
+    {
+      "ref": "Matthew 5:17",
+      "negator": "οὐκ",
+      "clause_text": "καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας· οὐκ ἦλθον καταλῦσαι ἀλλὰ πληρῶσαι·"
+    },
+    {
+      "ref": "Matthew 24:2",
+      "negator": "οὐ",
+      "clause_text": "μὴ ἀφεθῇ ὧδε λίθος ἐπὶ λίθον ὃς οὐ καταλυθήσεται."
+    },
+    {
+      "ref": "Romans 14:20",
+      "negator": "μὴ",
+      "clause_text": "μὴ ἕνεκεν βρώματος κατάλυε τὸ ἔργον τοῦ θεοῦ. πάντα μὲν καθαρά, ἀλλὰ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 14:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 24:2",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 26:61",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 27:40",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 5:17",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Acts 5:38",
+      "reason": "occurs near ἤ"
+    },
+    {
+      "ref": "Acts 5:39",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Acts 6:14",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

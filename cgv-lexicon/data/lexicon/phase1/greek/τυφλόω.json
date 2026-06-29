@@ -1,0 +1,145 @@
+{
+  "lemma": "τυφλόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐτύφλωσεν",
+      "count": 2
+    },
+    {
+      "form": "Τετύφλωκεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 2:11",
+      "form": "ἐτύφλωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "1 John",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "οἶδεν ποῦ ὑπάγει, ὅτι ἡ σκοτία",
+      "right_context": "τοὺς ὀφθαλμοὺς αὐτοῦ."
+    },
+    {
+      "ref": "2 Corinthians 4:4",
+      "form": "ἐτύφλωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "οἷς ὁ θεὸς τοῦ αἰῶνος τούτου",
+      "right_context": "τὰ νοήματα τῶν ἀπίστων εἰς τὸ"
+    },
+    {
+      "ref": "John 12:40",
+      "form": "Τετύφλωκεν",
+      "morph": "V-X-A-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 40,
+      "left_context": "",
+      "right_context": "αὐτῶν τοὺς ὀφθαλμοὺς καὶ ⸀ἐπώρωσεν αὐτῶν"
+    }
+  ],
+  "books": {
+    "1 John": 1,
+    "2 Corinthians": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποῦ",
+      "display": "dónde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "va",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκοτία",
+      "display": "oscuridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "de·siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόημα",
+      "display": "pensamientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄπιστος",
+      "display": "de·incrédulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πωρόω",
+      "display": "endureció",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 John 2:11",
+      "reason": "occurs near ποῦ, σκοτία, ὀφθαλμός"
+    },
+    {
+      "ref": "2 Corinthians 4:4",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "John 12:40",
+      "reason": "occurs near ὀφθαλμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

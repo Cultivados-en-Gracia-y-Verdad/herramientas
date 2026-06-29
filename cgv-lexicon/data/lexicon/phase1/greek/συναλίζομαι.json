@@ -1,0 +1,68 @@
+{
+  "lemma": "συναλίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συναλιζόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 1:4",
+      "form": "συναλιζόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "καὶ",
+      "right_context": "παρήγγειλεν αὐτοῖς ἀπὸ Ἱεροσολύμων μὴ χωρίζεσθαι,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παραγγέλλω",
+      "display": "mandó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "de·Jerusalén",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 1:4",
+      "reason": "occurs near παραγγέλλω, Ἱεροσόλυμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

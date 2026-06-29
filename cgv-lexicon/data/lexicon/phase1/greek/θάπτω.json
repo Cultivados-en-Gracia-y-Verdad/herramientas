@@ -1,0 +1,360 @@
+{
+  "lemma": "θάπτω",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "θάψαι",
+      "count": 4
+    },
+    {
+      "form": "ἐτάφη,",
+      "count": 2
+    },
+    {
+      "form": "ἔθαψαν",
+      "count": 2
+    },
+    {
+      "form": "ἔθαψαν.",
+      "count": 1
+    },
+    {
+      "form": "θαψάντων",
+      "count": 1
+    },
+    {
+      "form": "ἐτάφη.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 6,
+      "participle": 1,
+      "infinitive": 4
+    },
+    "tenses": {
+      "aorist": 11
+    },
+    "voices": {
+      "passive": 3,
+      "active": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 15:4",
+      "form": "ἐτάφη,",
+      "morph": "V-A-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 4,
+      "left_context": "καὶ ὅτι",
+      "right_context": "καὶ ὅτι ἐγήγερται τῇ ⸂ἡμέρᾳ τῇ"
+    },
+    {
+      "ref": "Acts 2:29",
+      "form": "ἐτάφη,",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 29,
+      "left_context": "πατριάρχου Δαυίδ, ὅτι καὶ ἐτελεύτησεν καὶ",
+      "right_context": "καὶ τὸ μνῆμα αὐτοῦ ἔστιν ἐν"
+    },
+    {
+      "ref": "Acts 5:6",
+      "form": "ἔθαψαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "οἱ νεώτεροι συνέστειλαν αὐτὸν καὶ ἐξενέγκαντες",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 5:9",
+      "form": "θαψάντων",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "πνεῦμα κυρίου; ἰδοὺ οἱ πόδες τῶν",
+      "right_context": "τὸν ἄνδρα σου ἐπὶ τῇ θύρᾳ"
+    },
+    {
+      "ref": "Acts 5:10",
+      "form": "ἔθαψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "νεανίσκοι εὗρον αὐτὴν νεκράν, καὶ ἐξενέγκαντες",
+      "right_context": "πρὸς τὸν ἄνδρα αὐτῆς."
+    },
+    {
+      "ref": "Luke 9:59",
+      "form": "θάψαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 59,
+      "left_context": "εἶπεν· ⸀Κύριε, ἐπίτρεψόν μοι ⸂ἀπελθόντι πρῶτον⸃",
+      "right_context": "τὸν πατέρα μου."
+    },
+    {
+      "ref": "Luke 9:60",
+      "form": "θάψαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 60,
+      "left_context": "εἶπεν δὲ ⸀αὐτῷ· Ἄφες τοὺς νεκροὺς",
+      "right_context": "τοὺς ἑαυτῶν νεκρούς, σὺ δὲ ἀπελθὼν"
+    },
+    {
+      "ref": "Luke 16:22",
+      "form": "ἐτάφη.",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 22,
+      "left_context": "ἀπέθανεν δὲ καὶ ὁ πλούσιος καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 8:21",
+      "form": "θάψαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 21,
+      "left_context": "Κύριε, ἐπίτρεψόν μοι πρῶτον ἀπελθεῖν καὶ",
+      "right_context": "τὸν πατέρα μου."
+    },
+    {
+      "ref": "Matthew 8:22",
+      "form": "θάψαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 22,
+      "left_context": "Ἀκολούθει μοι, καὶ ἄφες τοὺς νεκροὺς",
+      "right_context": "τοὺς ἑαυτῶν νεκρούς."
+    },
+    {
+      "ref": "Matthew 14:12",
+      "form": "ἔθαψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 12,
+      "left_context": "μαθηταὶ αὐτοῦ ἦραν τὸ ⸀πτῶμα καὶ",
+      "right_context": "⸀αὐτόν, καὶ ἐλθόντες ἀπήγγειλαν τῷ Ἰησοῦ."
+    }
+  ],
+  "books": {
+    "Acts": 4,
+    "Luke": 3,
+    "Matthew": 3,
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νεκρός",
+      "display": "muerta",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκφέρω",
+      "display": "sacados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτρέπω",
+      "display": "permite",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdona",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "ha levantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαυίδ",
+      "display": "de·David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελευτάω",
+      "display": "morió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μνῆμα",
+      "display": "sepulcro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συστέλλω",
+      "display": "retiraron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "rico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἴρω",
+      "display": "levantaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτῶμα",
+      "display": "cadáver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαγγέλλω",
+      "display": "anunciaron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 2:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 5:10",
+      "reason": "occurs near νεκρός, ἀνήρ, ἐκφέρω"
+    },
+    {
+      "ref": "Acts 5:6",
+      "reason": "occurs near ἐκφέρω"
+    },
+    {
+      "ref": "Acts 5:9",
+      "reason": "occurs near κύριος, ἀνήρ"
+    },
+    {
+      "ref": "Luke 16:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 9:59",
+      "reason": "occurs near κύριος, ἐπιτρέπω"
+    },
+    {
+      "ref": "Luke 9:60",
+      "reason": "occurs near νεκρός"
+    },
+    {
+      "ref": "Matthew 14:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

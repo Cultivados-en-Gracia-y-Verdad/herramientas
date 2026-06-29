@@ -1,0 +1,249 @@
+{
+  "lemma": "συμφωνέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "συνεφωνήθη",
+      "count": 1
+    },
+    {
+      "form": "συμφωνοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "⸂συμφωνήσει",
+      "count": 1
+    },
+    {
+      "form": "⸂συμφωνήσωσιν",
+      "count": 1
+    },
+    {
+      "form": "⸂συμφωνήσας",
+      "count": 1
+    },
+    {
+      "form": "συνεφώνησάς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 4,
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:9",
+      "form": "συνεφωνήθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "δὲ ⸀Πέτρος πρὸς αὐτήν· Τί ὅτι",
+      "right_context": "ὑμῖν πειράσαι τὸ πνεῦμα κυρίου; ἰδοὺ"
+    },
+    {
+      "ref": "Acts 15:15",
+      "form": "συμφωνοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 15,
+      "left_context": "καὶ τούτῳ",
+      "right_context": "οἱ λόγοι τῶν προφητῶν, καθὼς γέγραπται·"
+    },
+    {
+      "ref": "Luke 5:36",
+      "form": "⸂συμφωνήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 36,
+      "left_context": "καινὸν ⸀σχίσει καὶ τῷ παλαιῷ οὐ",
+      "right_context": "τὸ ἐπίβλημα⸃ τὸ ἀπὸ τοῦ καινοῦ."
+    },
+    {
+      "ref": "Matthew 18:19",
+      "form": "⸂συμφωνήσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 19,
+      "left_context": "⸀ἀμὴν λέγω ὑμῖν ὅτι ἐὰν δύο",
+      "right_context": "ἐξ ὑμῶν⸃ ἐπὶ τῆς γῆς περὶ"
+    },
+    {
+      "ref": "Matthew 20:2",
+      "form": "⸂συμφωνήσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "δὲ⸃ μετὰ τῶν ἐργατῶν ἐκ δηναρίου"
+    },
+    {
+      "ref": "Matthew 20:13",
+      "form": "συνεφώνησάς",
+      "morph": "V-A-A-I-2S",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 13,
+      "left_context": "Ἑταῖρε, οὐκ ἀδικῶ σε· οὐχὶ δηναρίου",
+      "right_context": "μοι;"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Acts": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειράζω",
+      "display": "tentar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profetas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σχίζω",
+      "display": "rasgará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παλαιός",
+      "display": "viejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίβλημα",
+      "display": "remiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάτης",
+      "display": "de·obreros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικέω",
+      "display": "hacer·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δηνάριον",
+      "display": "de·denario",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 5:36",
+      "negator": "οὐ",
+      "clause_text": "καὶ τὸ καινὸν ⸀σχίσει καὶ τῷ παλαιῷ οὐ ⸂συμφωνήσει τὸ ἐπίβλημα⸃ τὸ ἀπὸ τοῦ καινοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 18:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 20:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 20:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 15:15",
+      "reason": "occurs near λόγος"
+    },
+    {
+      "ref": "Acts 5:9",
+      "reason": "occurs near Πέτρος, κύριος, πειράζω"
+    },
+    {
+      "ref": "Luke 5:36",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

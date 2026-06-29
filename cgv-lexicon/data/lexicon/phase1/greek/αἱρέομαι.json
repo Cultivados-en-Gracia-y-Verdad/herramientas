@@ -1,0 +1,168 @@
+{
+  "lemma": "αἱρέομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "εἵλατο",
+      "count": 1
+    },
+    {
+      "form": "αἱρήσομαι",
+      "count": 1
+    },
+    {
+      "form": "ἑλόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "future": 1
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 2:13",
+      "form": "εἵλατο",
+      "morph": "V-A-M-I-3S",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "ὑμῶν, ἀδελφοὶ ἠγαπημένοι ὑπὸ κυρίου, ὅτι",
+      "right_context": "ὑμᾶς ὁ θεὸς ⸀ἀπαρχὴν εἰς σωτηρίαν"
+    },
+    {
+      "ref": "Philippians 1:22",
+      "form": "αἱρήσομαι",
+      "morph": "V-F-M-I-1S",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "τοῦτό μοι καρπὸς ἔργου— καὶ τί",
+      "right_context": "οὐ γνωρίζω·"
+    },
+    {
+      "ref": "Hebrews 11:25",
+      "form": "ἑλόμενος",
+      "morph": "V-A-M-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "μᾶλλον",
+      "right_context": "συγκακουχεῖσθαι τῷ λαῷ τοῦ θεοῦ ἢ"
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 1,
+    "Philippians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "display": "amados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαρχή",
+      "display": "primicias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνωρίζω",
+      "display": "dar·a·conoco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγκακουχέομαι",
+      "display": "sufrir·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Philippians 1:22",
+      "negator": "οὐ",
+      "clause_text": "ἐν σαρκί, τοῦτό μοι καρπὸς ἔργου— καὶ τί αἱρήσομαι οὐ γνωρίζω·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Thessalonians 2:13",
+      "reason": "occurs near θεός, κύριος, ἀγαπάω"
+    },
+    {
+      "ref": "Hebrews 11:25",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Philippians 1:22",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

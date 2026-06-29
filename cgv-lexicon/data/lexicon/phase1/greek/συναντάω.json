@@ -1,0 +1,292 @@
+{
+  "lemma": "συναντάω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "συναντήσας",
+      "count": 2
+    },
+    {
+      "form": "συνήντησεν",
+      "count": 2
+    },
+    {
+      "form": "συναντήσοντά",
+      "count": 1
+    },
+    {
+      "form": "συναντήσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 4,
+      "future": 2
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 7:1",
+      "form": "συναντήσας",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 1,
+      "left_context": "ἱερεὺς τοῦ θεοῦ τοῦ ὑψίστου, ⸀ὁ",
+      "right_context": "Ἀβραὰμ ὑποστρέφοντι ἀπὸ τῆς κοπῆς τῶν"
+    },
+    {
+      "ref": "Hebrews 7:10",
+      "form": "συνήντησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "τῇ ὀσφύϊ τοῦ πατρὸς ἦν ὅτε",
+      "right_context": "αὐτῷ ⸀Μελχισέδεκ."
+    },
+    {
+      "ref": "Acts 10:25",
+      "form": "συναντήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 25,
+      "left_context": "δὲ ἐγένετο τοῦ εἰσελθεῖν τὸν Πέτρον,",
+      "right_context": "αὐτῷ ὁ Κορνήλιος πεσὼν ἐπὶ τοὺς"
+    },
+    {
+      "ref": "Acts 20:22",
+      "form": "συναντήσοντά",
+      "morph": "V-F-A-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 22,
+      "left_context": "πορεύομαι εἰς Ἰερουσαλήμ, τὰ ἐν αὐτῇ",
+      "right_context": "⸀μοι μὴ εἰδώς,"
+    },
+    {
+      "ref": "Luke 9:37",
+      "form": "συνήντησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 37,
+      "left_context": "ἡμέρᾳ κατελθόντων αὐτῶν ἀπὸ τοῦ ὄρους",
+      "right_context": "αὐτῷ ὄχλος πολύς."
+    },
+    {
+      "ref": "Luke 22:10",
+      "form": "συναντήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 10,
+      "left_context": "Ἰδοὺ εἰσελθόντων ὑμῶν εἰς τὴν πόλιν",
+      "right_context": "ὑμῖν ἄνθρωπος κεράμιον ὕδατος βαστάζων· ἀκολουθήσατε"
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "Acts": 2,
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕψιστος",
+      "display": "de·Altísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποστρέφω",
+      "display": "volviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπή",
+      "display": "de·corte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀσφύς",
+      "display": "lomo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "de·padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μελχισέδεκ",
+      "display": "Melquisedec",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κορνήλιος",
+      "display": "Cornelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "caido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατέρχομαι",
+      "display": "descendidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "de·monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεράμιον",
+      "display": "cántaro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαστάζω",
+      "display": "llevando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 20:22",
+      "negator": "μὴ",
+      "clause_text": "τῷ πνεύματι πορεύομαι εἰς Ἰερουσαλήμ, τὰ ἐν αὐτῇ συναντήσοντά ⸀μοι μὴ εἰδώς,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:25",
+      "reason": "occurs near εἰσέρχομαι"
+    },
+    {
+      "ref": "Acts 20:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 7:1",
+      "reason": "occurs near θεός, Ἀβραάμ, ὑποστρέφω"
+    },
+    {
+      "ref": "Hebrews 7:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 22:10",
+      "reason": "occurs near εἰσέρχομαι"
+    },
+    {
+      "ref": "Luke 9:37",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

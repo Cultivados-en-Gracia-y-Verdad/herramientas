@@ -1,0 +1,427 @@
+{
+  "lemma": "καταρτίζω",
+  "language": "greek",
+  "total_occurrences": 13,
+  "forms": [
+    {
+      "form": "καταρτίσαι",
+      "count": 2
+    },
+    {
+      "form": "κατηρτίσω",
+      "count": 2
+    },
+    {
+      "form": "καταρτίζοντας",
+      "count": 2
+    },
+    {
+      "form": "κατηρτισμένοι",
+      "count": 1
+    },
+    {
+      "form": "⸀καταρτίσει,",
+      "count": 1
+    },
+    {
+      "form": "καταρτίζεσθε,",
+      "count": 1
+    },
+    {
+      "form": "καταρτίζετε",
+      "count": 1
+    },
+    {
+      "form": "κατηρτίσθαι",
+      "count": 1
+    },
+    {
+      "form": "κατηρτισμένος",
+      "count": 1
+    },
+    {
+      "form": "κατηρτισμένα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 5,
+      "indicative": 3,
+      "infinitive": 2,
+      "imperative": 2,
+      "optative": 1
+    },
+    "tenses": {
+      "perfect": 4,
+      "future": 1,
+      "aorist": 4,
+      "present": 4
+    },
+    "voices": {
+      "passive": 5,
+      "active": 6,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 1:10",
+      "form": "κατηρτισμένοι",
+      "morph": "V-X-P-P",
+      "book": "1 Corinthians",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "ᾖ ἐν ὑμῖν σχίσματα, ἦτε δὲ",
+      "right_context": "ἐν τῷ αὐτῷ νοῒ καὶ ἐν"
+    },
+    {
+      "ref": "1 Peter 5:10",
+      "form": "⸀καταρτίσει,",
+      "morph": "V-F-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "δόξαν ἐν ⸀Χριστῷ, ὀλίγον παθόντας αὐτὸς",
+      "right_context": "στηρίξει, σθενώσει, ⸀θεμελιώσει."
+    },
+    {
+      "ref": "1 Thessalonians 3:10",
+      "form": "καταρτίσαι",
+      "morph": "V-A-A-N",
+      "book": "1 Thessalonians",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "τὸ ἰδεῖν ὑμῶν τὸ πρόσωπον καὶ",
+      "right_context": "τὰ ὑστερήματα τῆς πίστεως ὑμῶν;"
+    },
+    {
+      "ref": "2 Corinthians 13:11",
+      "form": "καταρτίζεσθε,",
+      "morph": "V-P-P-D-2P",
+      "book": "2 Corinthians",
+      "chapter": 13,
+      "verse": 11,
+      "left_context": "Λοιπόν, ἀδελφοί, χαίρετε,",
+      "right_context": "παρακαλεῖσθε, τὸ αὐτὸ φρονεῖτε, εἰρηνεύετε, καὶ"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "form": "καταρτίζετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "ἔν τινι παραπτώματι, ὑμεῖς οἱ πνευματικοὶ",
+      "right_context": "τὸν τοιοῦτον ἐν πνεύματι πραΰτητος, σκοπῶν"
+    },
+    {
+      "ref": "Hebrews 10:5",
+      "form": "κατηρτίσω",
+      "morph": "V-A-M-I-2S",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 5,
+      "left_context": "καὶ προσφορὰν οὐκ ἠθέλησας, σῶμα δὲ",
+      "right_context": "μοι·"
+    },
+    {
+      "ref": "Hebrews 11:3",
+      "form": "κατηρτίσθαι",
+      "morph": "V-X-P-N",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 3,
+      "left_context": "πίστει νοοῦμεν",
+      "right_context": "τοὺς αἰῶνας ῥήματι θεοῦ, εἰς τὸ"
+    },
+    {
+      "ref": "Hebrews 13:21",
+      "form": "καταρτίσαι",
+      "morph": "V-A-A-O-3S",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 21,
+      "left_context": "",
+      "right_context": "ὑμᾶς ἐν ⸀παντὶ ἀγαθῷ εἰς τὸ"
+    },
+    {
+      "ref": "Luke 6:40",
+      "form": "κατηρτισμένος",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 40,
+      "left_context": "οὐκ ἔστιν μαθητὴς ὑπὲρ τὸν ⸀διδάσκαλον,",
+      "right_context": "δὲ πᾶς ἔσται ὡς ὁ διδάσκαλος"
+    },
+    {
+      "ref": "Mark 1:19",
+      "form": "καταρτίζοντας",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "αὐτοῦ, καὶ αὐτοὺς ἐν τῷ πλοίῳ",
+      "right_context": "τὰ δίκτυα,"
+    },
+    {
+      "ref": "Matthew 4:21",
+      "form": "καταρτίζοντας",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 21,
+      "left_context": "πλοίῳ μετὰ Ζεβεδαίου τοῦ πατρὸς αὐτῶν",
+      "right_context": "τὰ δίκτυα αὐτῶν, καὶ ἐκάλεσεν αὐτούς."
+    },
+    {
+      "ref": "Matthew 21:16",
+      "form": "κατηρτίσω",
+      "morph": "V-A-M-I-2S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 16,
+      "left_context": "ὅτι Ἐκ στόματος νηπίων καὶ θηλαζόντων",
+      "right_context": "αἶνον;"
+    },
+    {
+      "ref": "Romans 9:22",
+      "form": "κατηρτισμένα",
+      "morph": "V-X-P-P",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "ἤνεγκεν ἐν πολλῇ μακροθυμίᾳ σκεύη ὀργῆς",
+      "right_context": "εἰς ἀπώλειαν,"
+    }
+  ],
+  "books": {
+    "Hebrews": 3,
+    "Matthew": 2,
+    "1 Corinthians": 1,
+    "1 Peter": 1,
+    "1 Thessalonians": 1,
+    "2 Corinthians": 1,
+    "Galatians": 1,
+    "Luke": 1,
+    "Mark": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίκτυον",
+      "display": "redes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σχίσμα",
+      "display": "roturas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγος",
+      "display": "poco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padecidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στηρίζω",
+      "display": "fortalecerá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σθενόω",
+      "display": "fortalecerá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεμελιόω",
+      "display": "fundará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑστέρημα",
+      "display": "faltas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "gozad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρονέω",
+      "display": "pensad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρηνεύω",
+      "display": "estar·en·paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράπτωμα",
+      "display": "ofensa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνευματικός",
+      "display": "espirituales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πραΰτης",
+      "display": "de·mansedumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφορά",
+      "display": "ofrenda",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Corinthians 13:11",
+      "form": "καταρτίζεσθε,",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "Λοιπόν, ἀδελφοί, χαίρετε, καταρτίζεσθε, παρακαλεῖσθε, τὸ αὐτὸ φρονεῖτε, εἰρηνεύετε, καὶ ὁ θεὸς"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "form": "καταρτίζετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "προλημφθῇ ἄνθρωπος ἔν τινι παραπτώματι, ὑμεῖς οἱ πνευματικοὶ καταρτίζετε τὸν τοιοῦτον ἐν πνεύματι πραΰτητος, σκοπῶν σεαυτόν, μὴ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 10:5",
+      "negator": "οὐκ",
+      "clause_text": "λέγει· Θυσίαν καὶ προσφορὰν οὐκ ἠθέλησας, σῶμα δὲ κατηρτίσω μοι·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 13:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 10:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 11:3",
+      "reason": "occurs near πίστις"
+    },
+    {
+      "ref": "Hebrews 13:21",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 21:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 1:10",
+      "reason": "occurs near νοῦς, σχίσμα"
+    },
+    {
+      "ref": "1 Peter 5:10",
+      "reason": "occurs near Χριστός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

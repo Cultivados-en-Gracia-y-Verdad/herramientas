@@ -1,0 +1,269 @@
+{
+  "lemma": "ἀποφέρω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἀπήνεγκέν",
+      "count": 2
+    },
+    {
+      "form": "ἀπενεγκεῖν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀποφέρεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἀπενεχθῆναι",
+      "count": 1
+    },
+    {
+      "form": "ἀπήνεγκαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 3,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 1
+    },
+    "voices": {
+      "active": 4,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:3",
+      "form": "ἀπενεγκεῖν",
+      "morph": "V-A-A-N",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 3,
+      "left_context": "⸀ἐὰν δοκιμάσητε δι’ ἐπιστολῶν, τούτους πέμψω",
+      "right_context": "τὴν χάριν ὑμῶν εἰς Ἰερουσαλήμ·"
+    },
+    {
+      "ref": "Revelation 17:3",
+      "form": "ἀπήνεγκέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 17,
+      "verse": 3,
+      "left_context": "καὶ",
+      "right_context": "με εἰς ἔρημον ἐν πνεύματι. καὶ"
+    },
+    {
+      "ref": "Revelation 21:10",
+      "form": "ἀπήνεγκέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 21,
+      "verse": 10,
+      "left_context": "καὶ",
+      "right_context": "με ἐν πνεύματι ἐπὶ ὄρος μέγα"
+    },
+    {
+      "ref": "Acts 19:12",
+      "form": "⸀ἀποφέρεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 12,
+      "left_context": "ὥστε καὶ ἐπὶ τοὺς ἀσθενοῦντας",
+      "right_context": "ἀπὸ τοῦ χρωτὸς αὐτοῦ σουδάρια ἢ"
+    },
+    {
+      "ref": "Luke 16:22",
+      "form": "ἀπενεχθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 22,
+      "left_context": "ἐγένετο δὲ ἀποθανεῖν τὸν πτωχὸν καὶ",
+      "right_context": "αὐτὸν ὑπὸ τῶν ἀγγέλων εἰς τὸν"
+    },
+    {
+      "ref": "Mark 15:1",
+      "form": "ἀπήνεγκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 1,
+      "left_context": "ὅλον τὸ συνέδριον δήσαντες τὸν Ἰησοῦν",
+      "right_context": "καὶ ⸀παρέδωκαν Πιλάτῳ."
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "1 Corinthians": 1,
+    "Acts": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δοκιμάζω",
+      "display": "probéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστολή",
+      "display": "de·cartas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "enviaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενέω",
+      "display": "estar·enfermo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρώς",
+      "display": "de·piel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σουδάριον",
+      "display": "sudarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτωχός",
+      "display": "pobre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "de·ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέδριον",
+      "display": "sanedrín",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "atados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 17:3",
+      "reason": "occurs near πνεῦμα"
+    },
+    {
+      "ref": "Revelation 21:10",
+      "reason": "occurs near πνεῦμα"
+    },
+    {
+      "ref": "1 Corinthians 16:3",
+      "reason": "occurs near δοκιμάζω, πέμπω, χάρις"
+    },
+    {
+      "ref": "Acts 19:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 16:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 15:1",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

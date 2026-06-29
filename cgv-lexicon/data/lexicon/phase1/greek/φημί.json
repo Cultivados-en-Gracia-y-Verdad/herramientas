@@ -1,0 +1,991 @@
+{
+  "lemma": "φημί",
+  "language": "greek",
+  "total_occurrences": 65,
+  "forms": [
+    {
+      "form": "ἔφη·",
+      "count": 19
+    },
+    {
+      "form": "ἔφη",
+      "count": 12
+    },
+    {
+      "form": "φησίν,",
+      "count": 7
+    },
+    {
+      "form": "⸀ἔφη",
+      "count": 4
+    },
+    {
+      "form": "φησίν·",
+      "count": 3
+    },
+    {
+      "form": "⸀ἔφη·",
+      "count": 3
+    },
+    {
+      "form": "φημι,",
+      "count": 2
+    },
+    {
+      "form": "φησιν",
+      "count": 2
+    },
+    {
+      "form": "⸀φησιν·",
+      "count": 2
+    },
+    {
+      "form": "⸂ἔφη",
+      "count": 2
+    },
+    {
+      "form": "φημι.",
+      "count": 1
+    },
+    {
+      "form": "φημι;",
+      "count": 1
+    },
+    {
+      "form": "φησί·",
+      "count": 1
+    },
+    {
+      "form": "ἔφη,",
+      "count": 1
+    },
+    {
+      "form": "⸀φησίν·",
+      "count": 1
+    },
+    {
+      "form": "φησίν⸃.",
+      "count": 1
+    },
+    {
+      "form": "ἔφη⸃·",
+      "count": 1
+    },
+    {
+      "form": "⸂Ἔφη",
+      "count": 1
+    },
+    {
+      "form": "φασίν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 65
+    },
+    "tenses": {
+      "present": 22,
+      "imperfect": 43
+    },
+    "voices": {
+      "active": 65
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 6:16",
+      "form": "φησίν,",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 16,
+      "left_context": "πόρνῃ ἓν σῶμά ἐστιν; Ἔσονται γάρ,",
+      "right_context": "οἱ δύο εἰς σάρκα μίαν."
+    },
+    {
+      "ref": "1 Corinthians 7:29",
+      "form": "φημι,",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 29,
+      "left_context": "τοῦτο δέ",
+      "right_context": "ἀδελφοί, ὁ καιρὸς συνεσταλμένος ⸂ἐστίν· τὸ"
+    },
+    {
+      "ref": "1 Corinthians 10:15",
+      "form": "φημι.",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 15,
+      "left_context": "ὡς φρονίμοις λέγω· κρίνατε ὑμεῖς ὅ",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 10:19",
+      "form": "φημι;",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "τί οὖν",
+      "right_context": "ὅτι ⸂εἰδωλόθυτόν τί ἐστιν, ἢ ὅτι"
+    },
+    {
+      "ref": "1 Corinthians 15:50",
+      "form": "φημι,",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 50,
+      "left_context": "Τοῦτο δέ",
+      "right_context": "ἀδελφοί, ὅτι σὰρξ καὶ αἷμα βασιλείαν"
+    },
+    {
+      "ref": "2 Corinthians 10:10",
+      "form": "φησίν,",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 10,
+      "left_context": "ὅτι Αἱ ⸂ἐπιστολαὶ μέν⸃,",
+      "right_context": "βαρεῖαι καὶ ἰσχυραί, ἡ δὲ παρουσία"
+    },
+    {
+      "ref": "Hebrews 8:5",
+      "form": "φησίν,",
+      "morph": "V-P-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 5,
+      "left_context": "μέλλων ἐπιτελεῖν τὴν σκηνήν, Ὅρα γάρ,",
+      "right_context": "ποιήσεις πάντα κατὰ τὸν τύπον τὸν"
+    },
+    {
+      "ref": "Acts 7:2",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 2,
+      "left_context": "ὁ δὲ",
+      "right_context": "Ἄνδρες ἀδελφοὶ καὶ πατέρες, ἀκούσατε· Ὁ"
+    },
+    {
+      "ref": "Acts 8:36",
+      "form": "φησιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 36,
+      "left_context": "ὁδόν, ἦλθον ἐπί τι ὕδωρ, καί",
+      "right_context": "ὁ εὐνοῦχος· Ἰδοὺ ὕδωρ, τί κωλύει"
+    },
+    {
+      "ref": "Acts 10:28",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 28,
+      "left_context": "",
+      "right_context": "τε πρὸς αὐτούς· Ὑμεῖς ἐπίστασθε ὡς"
+    },
+    {
+      "ref": "Acts 10:30",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 30,
+      "left_context": "Καὶ ὁ Κορνήλιος",
+      "right_context": "Ἀπὸ τετάρτης ἡμέρας μέχρι ταύτης τῆς"
+    },
+    {
+      "ref": "Acts 10:31",
+      "form": "φησί·",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 31,
+      "left_context": "καὶ",
+      "right_context": "Κορνήλιε, εἰσηκούσθη σου ἡ προσευχὴ καὶ"
+    },
+    {
+      "ref": "Acts 16:30",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 30,
+      "left_context": "καὶ προαγαγὼν αὐτοὺς ἔξω",
+      "right_context": "Κύριοι, τί με δεῖ ποιεῖν ἵνα"
+    },
+    {
+      "ref": "Acts 16:37",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 37,
+      "left_context": "ὁ δὲ Παῦλος",
+      "right_context": "πρὸς αὐτούς· Δείραντες ἡμᾶς δημοσίᾳ ἀκατακρίτους,"
+    },
+    {
+      "ref": "Acts 17:22",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 22,
+      "left_context": "Παῦλος ἐν μέσῳ τοῦ Ἀρείου Πάγου",
+      "right_context": "Ἄνδρες Ἀθηναῖοι, κατὰ πάντα ὡς δεισιδαιμονεστέρους"
+    },
+    {
+      "ref": "Acts 19:35",
+      "form": "φησίν·",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 35,
+      "left_context": "καταστείλας δὲ ⸂ὁ γραμματεὺς τὸν ὄχλον⸃",
+      "right_context": "Ἄνδρες Ἐφέσιοι, τίς γάρ ἐστιν ⸀ἀνθρώπων"
+    },
+    {
+      "ref": "Acts 21:37",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 37,
+      "left_context": "εἰπεῖν ⸀τι πρὸς σέ; ὁ δὲ",
+      "right_context": "Ἑλληνιστὶ γινώσκεις;"
+    },
+    {
+      "ref": "Acts 22:2",
+      "form": "φησίν·",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 2,
+      "left_context": "προσεφώνει αὐτοῖς μᾶλλον παρέσχον ἡσυχίαν. καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 22:27",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 27,
+      "left_context": "μοι, ⸀σὺ Ῥωμαῖος εἶ; ὁ δὲ",
+      "right_context": "Ναί."
+    },
+    {
+      "ref": "Acts 22:28",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 28,
+      "left_context": "πολιτείαν ταύτην ἐκτησάμην. ὁ δὲ Παῦλος",
+      "right_context": "Ἐγὼ δὲ καὶ γεγέννημαι."
+    },
+    {
+      "ref": "Acts 23:5",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 5,
+      "left_context": "",
+      "right_context": "τε ὁ Παῦλος· Οὐκ ᾔδειν, ἀδελφοί,"
+    },
+    {
+      "ref": "Acts 23:17",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 17,
+      "left_context": "δὲ ὁ Παῦλος ἕνα τῶν ἑκατονταρχῶν",
+      "right_context": "Τὸν νεανίαν τοῦτον ⸀ἄπαγε πρὸς τὸν"
+    },
+    {
+      "ref": "Acts 23:18",
+      "form": "φησίν·",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 18,
+      "left_context": "αὐτὸν ἤγαγεν πρὸς τὸν χιλίαρχον καὶ",
+      "right_context": "Ὁ δέσμιος Παῦλος προσκαλεσάμενός με ἠρώτησεν"
+    },
+    {
+      "ref": "Acts 23:35",
+      "form": "ἔφη,",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 35,
+      "left_context": "Διακούσομαί σου,",
+      "right_context": "ὅταν καὶ οἱ κατήγοροί σου παραγένωνται·"
+    },
+    {
+      "ref": "Acts 25:5",
+      "form": "φησίν,",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 5,
+      "left_context": "Οἱ οὖν ⸂ἐν ὑμῖν,",
+      "right_context": "δυνατοὶ⸃ συγκαταβάντες εἴ τί ἐστιν ἐν"
+    },
+    {
+      "ref": "Acts 25:22",
+      "form": "φησίν,",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 22,
+      "left_context": "καὶ αὐτὸς τοῦ ἀνθρώπου ἀκοῦσαι. ⸀Αὔριον,",
+      "right_context": "ἀκούσῃ αὐτοῦ."
+    },
+    {
+      "ref": "Acts 25:24",
+      "form": "φησιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 24,
+      "left_context": "καί",
+      "right_context": "ὁ Φῆστος· Ἀγρίππα βασιλεῦ καὶ πάντες"
+    },
+    {
+      "ref": "Acts 26:1",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 1,
+      "left_context": "Ἀγρίππας δὲ πρὸς τὸν Παῦλον",
+      "right_context": "Ἐπιτρέπεταί σοι ⸀ὑπὲρ σεαυτοῦ λέγειν. τότε"
+    },
+    {
+      "ref": "Acts 26:24",
+      "form": "⸀φησιν·",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 24,
+      "left_context": "ἀπολογουμένου ὁ Φῆστος μεγάλῃ τῇ φωνῇ",
+      "right_context": "Μαίνῃ, Παῦλε· τὰ πολλά σε γράμματα"
+    },
+    {
+      "ref": "Acts 26:25",
+      "form": "φησίν,",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 25,
+      "left_context": "ὁ δὲ ⸀Παῦλος· Οὐ μαίνομαι,",
+      "right_context": "κράτιστε Φῆστε, ἀλλὰ ἀληθείας καὶ σωφροσύνης"
+    },
+    {
+      "ref": "Acts 26:32",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 32,
+      "left_context": "Ἀγρίππας δὲ τῷ Φήστῳ",
+      "right_context": "Ἀπολελύσθαι ἐδύνατο ὁ ἄνθρωπος οὗτος εἰ"
+    },
+    {
+      "ref": "John 1:23",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "John",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "",
+      "right_context": "Ἐγὼ φωνὴ βοῶντος ἐν τῇ ἐρήμῳ·"
+    },
+    {
+      "ref": "John 9:38",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "John",
+      "chapter": 9,
+      "verse": 38,
+      "left_context": "ὁ δὲ",
+      "right_context": "Πιστεύω, κύριε· καὶ προσεκύνησεν αὐτῷ."
+    },
+    {
+      "ref": "John 18:29",
+      "form": "⸀φησίν·",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 18,
+      "verse": 29,
+      "left_context": "ὁ Πιλᾶτος ⸀ἔξω πρὸς αὐτοὺς καὶ",
+      "right_context": "Τίνα κατηγορίαν φέρετε ⸀κατὰ τοῦ ἀνθρώπου"
+    },
+    {
+      "ref": "Luke 7:40",
+      "form": "φησίν⸃.",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 40,
+      "left_context": "τι εἰπεῖν. ὁ δέ· ⸂Διδάσκαλε, εἰπέ,",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 7:44",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 44,
+      "left_context": "στραφεὶς πρὸς τὴν γυναῖκα τῷ Σίμωνι",
+      "right_context": "Βλέπεις ταύτην τὴν γυναῖκα; εἰσῆλθόν σου"
+    },
+    {
+      "ref": "Luke 15:17",
+      "form": "⸀ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 17,
+      "left_context": "εἰς ἑαυτὸν δὲ ἐλθὼν",
+      "right_context": "Πόσοι μίσθιοι τοῦ πατρός μου ⸀περισσεύονται"
+    },
+    {
+      "ref": "Luke 22:58",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 58,
+      "left_context": "καὶ μετὰ βραχὺ ἕτερος ἰδὼν αὐτὸν",
+      "right_context": "Καὶ σὺ ἐξ αὐτῶν εἶ· ὁ"
+    },
+    {
+      "ref": "Luke 22:58",
+      "form": "⸀ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 58,
+      "left_context": "ἐξ αὐτῶν εἶ· ὁ δὲ Πέτρος",
+      "right_context": "Ἄνθρωπε, οὐκ εἰμί."
+    },
+    {
+      "ref": "Luke 22:70",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 70,
+      "left_context": "τοῦ θεοῦ; ὁ δὲ πρὸς αὐτοὺς",
+      "right_context": "Ὑμεῖς λέγετε ὅτι ἐγώ εἰμι."
+    },
+    {
+      "ref": "Luke 23:3",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 3,
+      "left_context": "τῶν Ἰουδαίων; ὁ δὲ ἀποκριθεὶς αὐτῷ",
+      "right_context": "Σὺ λέγεις."
+    },
+    {
+      "ref": "Luke 23:40",
+      "form": "ἔφη⸃·",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 40,
+      "left_context": "ἀποκριθεὶς δὲ ὁ ἕτερος ⸂ἐπιτιμῶν αὐτῷ",
+      "right_context": "Οὐδὲ φοβῇ σὺ τὸν θεόν, ὅτι"
+    },
+    {
+      "ref": "Mark 9:12",
+      "form": "⸀ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "ὁ δὲ",
+      "right_context": "αὐτοῖς· Ἠλίας μὲν ἐλθὼν πρῶτον ⸀ἀποκαθιστάνει"
+    },
+    {
+      "ref": "Mark 9:38",
+      "form": "⸂Ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 38,
+      "left_context": "",
+      "right_context": "αὐτῷ ὁ Ἰωάννης⸃· Διδάσκαλε, εἴδομέν τινα"
+    },
+    {
+      "ref": "Mark 10:20",
+      "form": "⸀ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 20,
+      "left_context": "ὁ δὲ",
+      "right_context": "αὐτῷ· Διδάσκαλε, ταῦτα πάντα ἐφυλαξάμην ἐκ"
+    },
+    {
+      "ref": "Mark 10:29",
+      "form": "⸂ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 29,
+      "left_context": "",
+      "right_context": "ὁ Ἰησοῦς⸃· Ἀμὴν λέγω ὑμῖν, οὐδείς"
+    },
+    {
+      "ref": "Mark 12:24",
+      "form": "⸂ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 24,
+      "left_context": "",
+      "right_context": "αὐτοῖς ὁ Ἰησοῦς⸃· Οὐ διὰ τοῦτο"
+    },
+    {
+      "ref": "Mark 14:29",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 29,
+      "left_context": "ὁ δὲ Πέτρος",
+      "right_context": "αὐτῷ· ⸂Εἰ καὶ⸃ πάντες σκανδαλισθήσονται, ἀλλ’"
+    },
+    {
+      "ref": "Matthew 4:7",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "",
+      "right_context": "αὐτῷ ὁ Ἰησοῦς· Πάλιν γέγραπται· Οὐκ"
+    },
+    {
+      "ref": "Matthew 8:8",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 8,
+      "left_context": "⸂καὶ ἀποκριθεὶς⸃ ὁ ἑκατόνταρχος",
+      "right_context": "Κύριε, οὐκ εἰμὶ ἱκανὸς ἵνα μου"
+    },
+    {
+      "ref": "Matthew 13:28",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 28,
+      "left_context": "ὁ δὲ",
+      "right_context": "αὐτοῖς· Ἐχθρὸς ἄνθρωπος τοῦτο ἐποίησεν. οἱ"
+    },
+    {
+      "ref": "Matthew 13:29",
+      "form": "⸀φησιν·",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 29,
+      "left_context": "ὁ δέ",
+      "right_context": "Οὔ, μήποτε συλλέγοντες τὰ ζιζάνια ἐκριζώσητε"
+    },
+    {
+      "ref": "Matthew 14:8",
+      "form": "φησίν,",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 8,
+      "left_context": "ὑπὸ τῆς μητρὸς αὐτῆς· Δός μοι,",
+      "right_context": "ὧδε ἐπὶ πίνακι τὴν κεφαλὴν Ἰωάννου"
+    },
+    {
+      "ref": "Matthew 17:26",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 26,
+      "left_context": "⸂εἰπόντος δέ⸃· Ἀπὸ τῶν ἀλλοτρίων,",
+      "right_context": "αὐτῷ ὁ Ἰησοῦς· Ἄρα γε ἐλεύθεροί"
+    },
+    {
+      "ref": "Matthew 19:21",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 21,
+      "left_context": "",
+      "right_context": "αὐτῷ ὁ Ἰησοῦς· Εἰ θέλεις τέλειος"
+    },
+    {
+      "ref": "Matthew 21:27",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 27,
+      "left_context": "ἀποκριθέντες τῷ Ἰησοῦ εἶπαν· Οὐκ οἴδαμεν.",
+      "right_context": "αὐτοῖς καὶ αὐτός· Οὐδὲ ἐγὼ λέγω"
+    },
+    {
+      "ref": "Matthew 22:37",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 37,
+      "left_context": "ὁ ⸀δὲ",
+      "right_context": "αὐτῷ· Ἀγαπήσεις κύριον τὸν θεόν σου"
+    },
+    {
+      "ref": "Matthew 25:21",
+      "form": "⸀ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 21,
+      "left_context": "",
+      "right_context": "αὐτῷ ὁ κύριος αὐτοῦ· Εὖ, δοῦλε"
+    },
+    {
+      "ref": "Matthew 25:23",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 23,
+      "left_context": "",
+      "right_context": "αὐτῷ ὁ κύριος αὐτοῦ· Εὖ, δοῦλε"
+    },
+    {
+      "ref": "Matthew 26:34",
+      "form": "ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 34,
+      "left_context": "",
+      "right_context": "αὐτῷ ὁ Ἰησοῦς· Ἀμὴν λέγω σοι"
+    },
+    {
+      "ref": "Matthew 26:61",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 61,
+      "left_context": "εἶπαν· Οὗτος",
+      "right_context": "Δύναμαι καταλῦσαι τὸν ναὸν τοῦ θεοῦ"
+    },
+    {
+      "ref": "Matthew 27:11",
+      "form": "⸀ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 11,
+      "left_context": "βασιλεὺς τῶν Ἰουδαίων; ὁ δὲ Ἰησοῦς",
+      "right_context": "Σὺ λέγεις."
+    },
+    {
+      "ref": "Matthew 27:23",
+      "form": "ἔφη·",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 23,
+      "left_context": "ὁ ⸀δὲ",
+      "right_context": "Τί γὰρ κακὸν ἐποίησεν; οἱ δὲ"
+    },
+    {
+      "ref": "Matthew 27:65",
+      "form": "⸀ἔφη",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 65,
+      "left_context": "",
+      "right_context": "αὐτοῖς ὁ Πιλᾶτος· Ἔχετε κουστωδίαν· ὑπάγετε"
+    },
+    {
+      "ref": "Romans 3:8",
+      "form": "φασίν",
+      "morph": "V-P-A-I-3P",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "καὶ μὴ καθὼς βλασφημούμεθα καὶ καθώς",
+      "right_context": "τινες ἡμᾶς λέγειν ὅτι Ποιήσωμεν τὰ"
+    }
+  ],
+  "books": {
+    "Acts": 24,
+    "Matthew": 16,
+    "Luke": 8,
+    "Mark": 6,
+    "1 Corinthians": 5,
+    "John": 3,
+    "2 Corinthians": 1,
+    "Hebrews": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 8,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 8,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "Φῆστος",
+      "display": "Festo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ve",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀγρίππας",
+      "display": "Agripa",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "agua",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Κορνήλιος",
+      "display": "Cornelio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "había sabido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μαίνομαι",
+      "display": "enloqueces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podía",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 23:5",
+      "negator": "Οὐκ",
+      "clause_text": "ἔφη τε ὁ Παῦλος· Οὐκ ᾔδειν, ἀδελφοί, ὅτι ἐστὶν"
+    },
+    {
+      "ref": "Acts 26:25",
+      "negator": "Οὐ",
+      "clause_text": "ὁ δὲ ⸀Παῦλος· Οὐ μαίνομαι, φησίν, κράτιστε Φῆστε, ἀλλὰ ἀληθείας καὶ σωφροσύνης ῥήματα ἀποφθέγγομαι."
+    },
+    {
+      "ref": "Luke 22:58",
+      "negator": "οὐκ",
+      "clause_text": "Καὶ σὺ ἐξ αὐτῶν εἶ· ὁ δὲ Πέτρος ⸀ἔφη· Ἄνθρωπε, οὐκ εἰμί."
+    },
+    {
+      "ref": "Luke 23:40",
+      "negator": "Οὐδὲ",
+      "clause_text": "ἀποκριθεὶς δὲ ὁ ἕτερος ⸂ἐπιτιμῶν αὐτῷ ἔφη⸃· Οὐδὲ φοβῇ σὺ τὸν θεόν, ὅτι ἐν τῷ"
+    },
+    {
+      "ref": "Mark 12:24",
+      "negator": "Οὐ",
+      "clause_text": "⸂ἔφη αὐτοῖς ὁ Ἰησοῦς⸃· Οὐ διὰ τοῦτο πλανᾶσθε μὴ"
+    },
+    {
+      "ref": "Matthew 8:8",
+      "negator": "οὐκ",
+      "clause_text": "⸂καὶ ἀποκριθεὶς⸃ ὁ ἑκατόνταρχος ἔφη· Κύριε, οὐκ εἰμὶ ἱκανὸς ἵνα μου ὑπὸ τὴν"
+    },
+    {
+      "ref": "Matthew 21:27",
+      "negator": "Οὐκ",
+      "clause_text": "καὶ ἀποκριθέντες τῷ Ἰησοῦ εἶπαν· Οὐκ οἴδαμεν. ἔφη αὐτοῖς καὶ αὐτός· Οὐδὲ ἐγὼ λέγω ὑμῖν ἐν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:28",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 10:30",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 10:31",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:30",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:37",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 17:22",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 19:35",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:37",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

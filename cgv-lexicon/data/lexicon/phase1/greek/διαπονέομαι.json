@@ -1,0 +1,106 @@
+{
+  "lemma": "διαπονέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διαπονούμενοι",
+      "count": 1
+    },
+    {
+      "form": "διαπονηθεὶς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 4:2",
+      "form": "διαπονούμενοι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "διὰ τὸ διδάσκειν αὐτοὺς τὸν λαὸν"
+    },
+    {
+      "ref": "Acts 16:18",
+      "form": "διαπονηθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "τοῦτο δὲ ἐποίει ἐπὶ πολλὰς ἡμέρας.",
+      "right_context": "⸀δὲ Παῦλος καὶ ἐπιστρέψας τῷ πνεύματι"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστρέφω",
+      "display": "vuelto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:18",
+      "reason": "occurs near Παῦλος, πολύς, ἐπιστρέφω"
+    },
+    {
+      "ref": "Acts 4:2",
+      "reason": "occurs near διδάσκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

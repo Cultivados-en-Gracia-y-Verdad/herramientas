@@ -1,0 +1,159 @@
+{
+  "lemma": "μοιχάομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "μοιχᾶται",
+      "count": 2
+    },
+    {
+      "form": "μοιχᾶται.",
+      "count": 2
+    },
+    {
+      "form": "μοιχᾶται⸃.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "middle": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 10:11",
+      "form": "μοιχᾶται",
+      "morph": "V-P-M-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 11,
+      "left_context": "τὴν γυναῖκα αὐτοῦ καὶ γαμήσῃ ἄλλην",
+      "right_context": "ἐπ’ αὐτήν,"
+    },
+    {
+      "ref": "Mark 10:12",
+      "form": "μοιχᾶται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 12,
+      "left_context": "ἀπολύσασα τὸν ἄνδρα αὐτῆς γαμήσῃ ἄλλον⸃",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 5:32",
+      "form": "μοιχᾶται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 32,
+      "left_context": "⸀μοιχευθῆναι, καὶ ὃς ἐὰν ἀπολελυμένην γαμήσῃ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 19:9",
+      "form": "μοιχᾶται",
+      "morph": "V-P-M-I-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 9,
+      "left_context": "μὴ ἐπὶ πορνείᾳ καὶ γαμήσῃ ἄλλην",
+      "right_context": "⸂καὶ ὁ ἀπολελυμένην γαμήσας μοιχᾶται⸃."
+    },
+    {
+      "ref": "Matthew 19:9",
+      "form": "μοιχᾶται⸃.",
+      "morph": "V-P-M-I-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 9,
+      "left_context": "ἄλλην μοιχᾶται ⸂καὶ ὁ ἀπολελυμένην γαμήσας",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Mark": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otra",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολύω",
+      "display": "despedida",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μοιχάομαι",
+      "display": "adultera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορνεία",
+      "display": "fornicación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 19:9",
+      "reason": "occurs near γαμέω, μοιχάομαι, ἀπολύω"
+    },
+    {
+      "ref": "Matthew 5:32",
+      "reason": "occurs near γαμέω, μοιχάομαι, ἀπολύω"
+    },
+    {
+      "ref": "Mark 10:11",
+      "reason": "occurs near γαμέω, γυνή, μοιχάομαι"
+    },
+    {
+      "ref": "Mark 10:12",
+      "reason": "occurs near γαμέω, μοιχάομαι, ἄλλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

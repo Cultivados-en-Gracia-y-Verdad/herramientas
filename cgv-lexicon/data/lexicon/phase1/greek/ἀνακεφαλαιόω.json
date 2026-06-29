@@ -1,0 +1,126 @@
+{
+  "lemma": "ἀνακεφαλαιόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνακεφαλαιώσασθαι",
+      "count": 1
+    },
+    {
+      "form": "ἀνακεφαλαιοῦται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "middle": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 1:10",
+      "form": "ἀνακεφαλαιώσασθαι",
+      "morph": "V-A-M-N",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "εἰς οἰκονομίαν τοῦ πληρώματος τῶν καιρῶν,",
+      "right_context": "τὰ πάντα ἐν τῷ Χριστῷ, τὰ"
+    },
+    {
+      "ref": "Romans 13:9",
+      "form": "ἀνακεφαλαιοῦται,",
+      "morph": "V-P-P-I-3S",
+      "book": "Romans",
+      "chapter": 13,
+      "verse": 9,
+      "left_context": "ἑτέρα ἐντολή, ἐν ⸂τῷ λόγῳ τούτῳ⸃",
+      "right_context": "⸂ἐν τῷ⸃· Ἀγαπήσεις τὸν πλησίον σου"
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἰκονομία",
+      "display": "administración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλήρωμα",
+      "display": "de·relleno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "de·tiempos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "mandamiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "display": "amarás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλησίον",
+      "display": "prójimo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 1:10",
+      "reason": "occurs near Χριστός, καιρός, οἰκονομία"
+    },
+    {
+      "ref": "Romans 13:9",
+      "reason": "occurs near ἐντολή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

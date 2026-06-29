@@ -1,0 +1,118 @@
+{
+  "lemma": "στέλλομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "στελλόμενοι",
+      "count": 1
+    },
+    {
+      "form": "στέλλεσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 8:20",
+      "form": "στελλόμενοι",
+      "morph": "V-P-M-P",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 20,
+      "left_context": "",
+      "right_context": "τοῦτο μή τις ἡμᾶς μωμήσηται ἐν"
+    },
+    {
+      "ref": "2 Thessalonians 3:6",
+      "form": "στέλλεσθαι",
+      "morph": "V-P-M-N",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "ὀνόματι τοῦ κυρίου ⸀ἡμῶν Ἰησοῦ Χριστοῦ",
+      "right_context": "ὑμᾶς ἀπὸ παντὸς ἀδελφοῦ ἀτάκτως περιπατοῦντος"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μωμάομαι",
+      "display": "censure",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "de·hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀτάκτως",
+      "display": "desordenadamente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 8:20",
+      "negator": "μή",
+      "clause_text": "στελλόμενοι τοῦτο μή τις ἡμᾶς μωμήσηται ἐν τῇ ἁδρότητι"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 8:20",
+      "reason": "occurs near μωμάομαι"
+    },
+    {
+      "ref": "2 Thessalonians 3:6",
+      "reason": "occurs near Χριστός, κύριος, ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

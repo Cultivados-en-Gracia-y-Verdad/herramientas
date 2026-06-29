@@ -1,0 +1,178 @@
+{
+  "lemma": "ζώννυμι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀Ζῶσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐζώννυες",
+      "count": 1
+    },
+    {
+      "form": "ζώσει⸃",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "imperfect": 1,
+      "future": 1
+    },
+    "voices": {
+      "middle": 1,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 12:8",
+      "form": "⸀Ζῶσαι",
+      "morph": "V-A-M-D-2S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 8,
+      "left_context": "εἶπεν ⸀δὲ ὁ ἄγγελος πρὸς αὐτόν·",
+      "right_context": "καὶ ὑπόδησαι τὰ σανδάλιά σου· ἐποίησεν"
+    },
+    {
+      "ref": "John 21:18",
+      "form": "ἐζώννυες",
+      "morph": "V-I-A-I-2S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 18,
+      "left_context": "ἀμὴν λέγω σοι, ὅτε ἦς νεώτερος,",
+      "right_context": "σεαυτὸν καὶ περιεπάτεις ὅπου ἤθελες· ὅταν"
+    },
+    {
+      "ref": "John 21:18",
+      "form": "ζώσει⸃",
+      "morph": "V-F-A-I-3S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 18,
+      "left_context": "τὰς χεῖράς σου, καὶ ἄλλος ⸂σε",
+      "right_context": "καὶ οἴσει ὅπου οὐ θέλεις."
+    }
+  ],
+  "books": {
+    "John": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querías",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποδέομαι",
+      "display": "calza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σανδάλιον",
+      "display": "sandalias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεαυτοῦ",
+      "display": "de·ti·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andabas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevará",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 12:8",
+      "form": "⸀Ζῶσαι",
+      "morph": "V-A-M-D-2S",
+      "clause_text": "εἶπεν ⸀δὲ ὁ ἄγγελος πρὸς αὐτόν· ⸀Ζῶσαι καὶ ὑπόδησαι τὰ σανδάλιά σου· ἐποίησεν δὲ οὕτως."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 21:18",
+      "negator": "οὐ",
+      "clause_text": "γηράσῃς, ἐκτενεῖς τὰς χεῖράς σου, καὶ ἄλλος ⸂σε ζώσει⸃ καὶ οἴσει ὅπου οὐ θέλεις."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 21:18",
+      "reason": "occurs near θέλω, ὅπου"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

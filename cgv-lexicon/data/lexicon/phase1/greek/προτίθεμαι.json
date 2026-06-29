@@ -1,0 +1,143 @@
+{
+  "lemma": "προτίθεμαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "προέθετο",
+      "count": 2
+    },
+    {
+      "form": "προεθέμην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 1:9",
+      "form": "προέθετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "αὐτοῦ, κατὰ τὴν εὐδοκίαν αὐτοῦ ἣν",
+      "right_context": "ἐν αὐτῷ"
+    },
+    {
+      "ref": "Romans 1:13",
+      "form": "προεθέμην",
+      "morph": "V-A-M-I-1S",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "δὲ ὑμᾶς ἀγνοεῖν, ἀδελφοί, ὅτι πολλάκις",
+      "right_context": "ἐλθεῖν πρὸς ὑμᾶς, καὶ ἐκωλύθην ἄχρι"
+    },
+    {
+      "ref": "Romans 3:25",
+      "form": "προέθετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 25,
+      "left_context": "ὃν",
+      "right_context": "ὁ θεὸς ἱλαστήριον ⸀διὰ πίστεως ἐν"
+    }
+  ],
+  "books": {
+    "Romans": 2,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εὐδοκία",
+      "display": "beneplácito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγνοέω",
+      "display": "ignorar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολλάκις",
+      "display": "muchas·veces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κωλύω",
+      "display": "fue impedido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱλαστήριον",
+      "display": "propiciatorio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 1:13",
+      "reason": "occurs near πολλάκις, ἀγνοέω, ἀδελφός"
+    },
+    {
+      "ref": "Romans 3:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Ephesians 1:9",
+      "reason": "occurs near εὐδοκία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "κεφαλιόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐκεφαλίωσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 12:4",
+      "form": "⸀ἐκεφαλίωσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "ἀπέστειλεν πρὸς αὐτοὺς ἄλλον δοῦλον· ⸀κἀκεῖνον",
+      "right_context": "καὶ ⸀ἠτίμασαν."
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀκεῖνος",
+      "display": "y·aquel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀτιμάζω",
+      "display": "deshonraron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 12:4",
+      "reason": "occurs near δοῦλος, κἀκεῖνος, ἀτιμάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

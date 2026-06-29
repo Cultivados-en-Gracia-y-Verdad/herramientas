@@ -1,0 +1,210 @@
+{
+  "lemma": "ῥαντίζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ῥαντίζουσα",
+      "count": 1
+    },
+    {
+      "form": "ἐράντισεν,",
+      "count": 1
+    },
+    {
+      "form": "ἐράντισεν.",
+      "count": 1
+    },
+    {
+      "form": "ῥεραντισμένοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 3,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 9:13",
+      "form": "ῥαντίζουσα",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 13,
+      "left_context": "⸂τράγων καὶ ταύρων⸃ καὶ σποδὸς δαμάλεως",
+      "right_context": "τοὺς κεκοινωμένους ἁγιάζει πρὸς τὴν τῆς"
+    },
+    {
+      "ref": "Hebrews 9:19",
+      "form": "ἐράντισεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 19,
+      "left_context": "τὸ βιβλίον καὶ πάντα τὸν λαὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 9:21",
+      "form": "ἐράντισεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 21,
+      "left_context": "σκεύη τῆς λειτουργίας τῷ αἵματι ὁμοίως",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 10:22",
+      "form": "ῥεραντισμένοι",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "μετὰ ἀληθινῆς καρδίας ἐν πληροφορίᾳ πίστεως,",
+      "right_context": "τὰς καρδίας ἀπὸ συνειδήσεως πονηρᾶς καὶ"
+    }
+  ],
+  "books": {
+    "Hebrews": 4
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καρδία",
+      "display": "de·corazón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ταῦρος",
+      "display": "de·toros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σποδός",
+      "display": "ceniza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δάμαλις",
+      "display": "de·novilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοινόω",
+      "display": "profanados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁγιάζω",
+      "display": "santifica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βιβλίον",
+      "display": "libro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λειτουργία",
+      "display": "de·servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμοίως",
+      "display": "igualmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀληθινός",
+      "display": "de·verdadera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληροφορία",
+      "display": "plena·certidumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνείδησις",
+      "display": "de·conciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "de·malvada",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:22",
+      "reason": "occurs near καρδία"
+    },
+    {
+      "ref": "Hebrews 9:13",
+      "reason": "occurs near δάμαλις, κοινόω, σποδός"
+    },
+    {
+      "ref": "Hebrews 9:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 9:21",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

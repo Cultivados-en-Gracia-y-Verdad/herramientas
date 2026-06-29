@@ -1,0 +1,92 @@
+{
+  "lemma": "ξενοδοχέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξενοδόχησεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:10",
+      "form": "ἐξενοδόχησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "ἔργοις καλοῖς μαρτυρουμένη, εἰ ἐτεκνοτρόφησεν, εἰ",
+      "right_context": "εἰ ἁγίων πόδας ἔνιψεν, εἰ θλιβομένοις"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καλός",
+      "display": "buenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρέω",
+      "display": "testificada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεκνοτροφέω",
+      "display": "criar·hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νίπτω",
+      "display": "lavó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:10",
+      "reason": "occurs near καλός, μαρτυρέω, πούς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

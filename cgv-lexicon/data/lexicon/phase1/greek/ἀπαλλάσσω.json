@@ -1,0 +1,170 @@
+{
+  "lemma": "ἀπαλλάσσω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀπαλλάξῃ",
+      "count": 1
+    },
+    {
+      "form": "ἀπαλλάσσεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἀπηλλάχθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 2:15",
+      "form": "ἀπαλλάξῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "καὶ",
+      "right_context": "τούτους, ὅσοι φόβῳ θανάτου διὰ παντὸς"
+    },
+    {
+      "ref": "Acts 19:12",
+      "form": "ἀπαλλάσσεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 12,
+      "left_context": "χρωτὸς αὐτοῦ σουδάρια ἢ σιμικίνθια καὶ",
+      "right_context": "ἀπ’ αὐτῶν τὰς νόσους, τά τε"
+    },
+    {
+      "ref": "Luke 12:58",
+      "form": "ἀπηλλάχθαι",
+      "morph": "V-X-P-N",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 58,
+      "left_context": "ἄρχοντα, ἐν τῇ ὁδῷ δὸς ἐργασίαν",
+      "right_context": "ἀπ’ αὐτοῦ, μήποτε κατασύρῃ σε πρὸς"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόβος",
+      "display": "temor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σουδάριον",
+      "display": "sudarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σιμικίνθιον",
+      "display": "pañuelos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόσος",
+      "display": "enfermedades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "da",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργασία",
+      "display": "trabajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατασύρω",
+      "display": "arrastrara",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:12",
+      "reason": "occurs near σουδάριον, ἤ"
+    },
+    {
+      "ref": "Hebrews 2:15",
+      "reason": "occurs near θάνατος, φόβος, ὅσος"
+    },
+    {
+      "ref": "Luke 12:58",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

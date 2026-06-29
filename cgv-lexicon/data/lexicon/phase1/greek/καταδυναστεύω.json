@@ -1,0 +1,119 @@
+{
+  "lemma": "καταδυναστεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καταδυναστευομένους",
+      "count": 1
+    },
+    {
+      "form": "καταδυναστεύουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:38",
+      "form": "καταδυναστευομένους",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 38,
+      "left_context": "διῆλθεν εὐεργετῶν καὶ ἰώμενος πάντας τοὺς",
+      "right_context": "ὑπὸ τοῦ διαβόλου, ὅτι ὁ θεὸς"
+    },
+    {
+      "ref": "James 2:6",
+      "form": "καταδυναστεύουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "James",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "ἠτιμάσατε τὸν πτωχόν. οὐχ οἱ πλούσιοι",
+      "right_context": "ὑμῶν, καὶ αὐτοὶ ἕλκουσιν ὑμᾶς εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εὐεργετέω",
+      "display": "hacer·bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰάομαι",
+      "display": "sanando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάβολος",
+      "display": "de·diablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτωχός",
+      "display": "pobre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "ricos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕλκω",
+      "display": "atraen",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "James 2:6",
+      "negator": "οὐχ",
+      "clause_text": "ὑμεῖς δὲ ἠτιμάσατε τὸν πτωχόν. οὐχ οἱ πλούσιοι καταδυναστεύουσιν ὑμῶν, καὶ αὐτοὶ ἕλκουσιν ὑμᾶς εἰς κριτήρια;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:38",
+      "reason": "occurs near διάβολος, εὐεργετέω, ἰάομαι"
+    },
+    {
+      "ref": "James 2:6",
+      "reason": "occurs near πλούσιος, πτωχός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

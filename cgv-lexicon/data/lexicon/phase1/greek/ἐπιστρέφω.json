@@ -1,0 +1,752 @@
+{
+  "lemma": "ἐπιστρέφω",
+  "language": "greek",
+  "total_occurrences": 36,
+  "forms": [
+    {
+      "form": "ἐπιστρέψας",
+      "count": 6
+    },
+    {
+      "form": "ἐπιστρέψῃ",
+      "count": 3
+    },
+    {
+      "form": "ἐπιστρεψάτω",
+      "count": 3
+    },
+    {
+      "form": "ἐπέστρεψεν",
+      "count": 2
+    },
+    {
+      "form": "ἐπιστρέφειν",
+      "count": 2
+    },
+    {
+      "form": "ἐπιστρέψωσιν,",
+      "count": 2
+    },
+    {
+      "form": "ἐπιστραφεὶς",
+      "count": 2
+    },
+    {
+      "form": "ἐπεστράφητε",
+      "count": 1
+    },
+    {
+      "form": "ἐπεστρέψατε",
+      "count": 1
+    },
+    {
+      "form": "ἐπέστρεψα",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστρέφετε",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστρέψατε",
+      "count": 1
+    },
+    {
+      "form": "ἐπέστρεψαν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστρέφουσιν",
+      "count": 1
+    },
+    {
+      "form": "Ἐπιστρέψαντες",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπιστρέψαι",
+      "count": 1
+    },
+    {
+      "form": "⸀Ἐπιστραφεὶς",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστρέψει",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστρέψαι",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπέστρεψαν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστρέψωσιν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστραφήτω.",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστρέψω⸃",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 10,
+      "subjunctive": 6,
+      "participle": 11,
+      "imperative": 5,
+      "infinitive": 4
+    },
+    "tenses": {
+      "aorist": 30,
+      "present": 4,
+      "future": 2
+    },
+    "voices": {
+      "passive": 5,
+      "active": 31
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:25",
+      "form": "ἐπεστράφητε",
+      "morph": "V-A-P-I-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "ἦτε γὰρ ὡς πρόβατα ⸀πλανώμενοι, ἀλλὰ",
+      "right_context": "νῦν ἐπὶ τὸν ποιμένα καὶ ἐπίσκοπον"
+    },
+    {
+      "ref": "1 Thessalonians 1:9",
+      "form": "ἐπεστρέψατε",
+      "morph": "V-A-A-I-2P",
+      "book": "1 Thessalonians",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "εἴσοδον ἔσχομεν πρὸς ὑμᾶς, καὶ πῶς",
+      "right_context": "πρὸς τὸν θεὸν ἀπὸ τῶν εἰδώλων"
+    },
+    {
+      "ref": "2 Corinthians 3:16",
+      "form": "ἐπιστρέψῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "ἡνίκα ⸂δὲ ἐὰν⸃",
+      "right_context": "πρὸς κύριον, περιαιρεῖται τὸ κάλυμμα."
+    },
+    {
+      "ref": "2 Peter 2:22",
+      "form": "ἐπιστρέψας",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "αὐτοῖς τὸ τῆς ἀληθοῦς παροιμίας· Κύων",
+      "right_context": "ἐπὶ τὸ ἴδιον ἐξέραμα, καί· Ὗς"
+    },
+    {
+      "ref": "Revelation 1:12",
+      "form": "ἐπέστρεψα",
+      "morph": "V-A-A-I-1S",
+      "book": "Revelation",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "⸀Καὶ",
+      "right_context": "βλέπειν τὴν φωνὴν ἥτις ἐλάλει μετ’"
+    },
+    {
+      "ref": "Revelation 1:12",
+      "form": "ἐπιστρέψας",
+      "morph": "V-A-A-P",
+      "book": "Revelation",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "φωνὴν ἥτις ἐλάλει μετ’ ἐμοῦ· καὶ",
+      "right_context": "εἶδον ἑπτὰ λυχνίας χρυσᾶς,"
+    },
+    {
+      "ref": "Galatians 4:9",
+      "form": "ἐπιστρέφετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 9,
+      "left_context": "μᾶλλον δὲ γνωσθέντες ὑπὸ θεοῦ, πῶς",
+      "right_context": "πάλιν ἐπὶ τὰ ἀσθενῆ καὶ πτωχὰ"
+    },
+    {
+      "ref": "Acts 3:19",
+      "form": "ἐπιστρέψατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 19,
+      "left_context": "μετανοήσατε οὖν καὶ",
+      "right_context": "⸀πρὸς τὸ ἐξαλειφθῆναι ὑμῶν τὰς ἁμαρτίας,"
+    },
+    {
+      "ref": "Acts 9:35",
+      "form": "ἐπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 35,
+      "left_context": "κατοικοῦντες Λύδδα καὶ τὸν ⸀Σαρῶνα, οἵτινες",
+      "right_context": "ἐπὶ τὸν κύριον."
+    },
+    {
+      "ref": "Acts 9:40",
+      "form": "ἐπιστρέψας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 40,
+      "left_context": "⸀καὶ θεὶς τὰ γόνατα προσηύξατο, καὶ",
+      "right_context": "πρὸς τὸ σῶμα εἶπεν· Ταβιθά, ἀνάστηθι."
+    },
+    {
+      "ref": "Acts 11:21",
+      "form": "ἐπέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 21,
+      "left_context": "αὐτῶν, πολύς τε ἀριθμὸς ⸀ὁ πιστεύσας",
+      "right_context": "ἐπὶ τὸν κύριον."
+    },
+    {
+      "ref": "Acts 14:15",
+      "form": "ἐπιστρέφειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 15,
+      "left_context": "εὐαγγελιζόμενοι ὑμᾶς ἀπὸ τούτων τῶν ματαίων",
+      "right_context": "ἐπὶ ⸀θεὸν ζῶντα ὃς ἐποίησεν τὸν"
+    },
+    {
+      "ref": "Acts 15:19",
+      "form": "ἐπιστρέφουσιν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 19,
+      "left_context": "μὴ παρενοχλεῖν τοῖς ἀπὸ τῶν ἐθνῶν",
+      "right_context": "ἐπὶ τὸν θεόν,"
+    },
+    {
+      "ref": "Acts 15:36",
+      "form": "Ἐπιστρέψαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 36,
+      "left_context": "τινας ἡμέρας εἶπεν ⸂πρὸς Βαρναβᾶν Παῦλος⸃·",
+      "right_context": "δὴ ἐπισκεψώμεθα τοὺς ⸀ἀδελφοὺς κατὰ ⸂πόλιν"
+    },
+    {
+      "ref": "Acts 16:18",
+      "form": "ἐπιστρέψας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "πολλὰς ἡμέρας. διαπονηθεὶς ⸀δὲ Παῦλος καὶ",
+      "right_context": "τῷ πνεύματι εἶπεν· Παραγγέλλω σοι ⸀ἐν"
+    },
+    {
+      "ref": "Acts 26:18",
+      "form": "⸀ἐπιστρέψαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 18,
+      "left_context": "ἀνοῖξαι ὀφθαλμοὺς αὐτῶν, τοῦ",
+      "right_context": "ἀπὸ σκότους εἰς φῶς καὶ τῆς"
+    },
+    {
+      "ref": "Acts 26:20",
+      "form": "ἐπιστρέφειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 20,
+      "left_context": "καὶ τοῖς ἔθνεσιν ⸀ἀπήγγελλον μετανοεῖν καὶ",
+      "right_context": "ἐπὶ τὸν θεόν, ἄξια τῆς μετανοίας"
+    },
+    {
+      "ref": "Acts 28:27",
+      "form": "ἐπιστρέψωσιν,",
+      "morph": "V-A-A-S-3P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 27,
+      "left_context": "ἀκούσωσιν καὶ τῇ καρδίᾳ συνῶσιν καὶ",
+      "right_context": "καὶ ἰάσομαι αὐτούς."
+    },
+    {
+      "ref": "John 21:20",
+      "form": "⸀Ἐπιστραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 20,
+      "left_context": "",
+      "right_context": "ὁ Πέτρος βλέπει τὸν μαθητὴν ὃν"
+    },
+    {
+      "ref": "Luke 1:16",
+      "form": "ἐπιστρέψει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "καὶ πολλοὺς τῶν υἱῶν Ἰσραὴλ",
+      "right_context": "ἐπὶ κύριον τὸν θεὸν αὐτῶν·"
+    },
+    {
+      "ref": "Luke 1:17",
+      "form": "ἐπιστρέψαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 17,
+      "left_context": "αὐτοῦ ἐν πνεύματι καὶ δυνάμει Ἠλίου,",
+      "right_context": "καρδίας πατέρων ἐπὶ τέκνα καὶ ἀπειθεῖς"
+    },
+    {
+      "ref": "Luke 2:39",
+      "form": "⸀ἐπέστρεψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 39,
+      "left_context": "⸀πάντα τὰ κατὰ τὸν νόμον κυρίου,",
+      "right_context": "εἰς τὴν Γαλιλαίαν ⸀εἰς πόλιν ἑαυτῶν"
+    },
+    {
+      "ref": "Luke 8:55",
+      "form": "ἐπέστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 55,
+      "left_context": "καὶ",
+      "right_context": "τὸ πνεῦμα αὐτῆς, καὶ ἀνέστη παραχρῆμα,"
+    },
+    {
+      "ref": "Luke 17:4",
+      "form": "ἐπιστρέψῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 4,
+      "left_context": "ἡμέρας ⸀ἁμαρτήσῃ εἰς σὲ καὶ ⸀ἑπτάκις",
+      "right_context": "⸂πρὸς σὲ⸃ λέγων· Μετανοῶ, ἀφήσεις αὐτῷ."
+    },
+    {
+      "ref": "Luke 17:31",
+      "form": "ἐπιστρεψάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 31,
+      "left_context": "καὶ ὁ ⸀ἐν ἀγρῷ ὁμοίως μὴ",
+      "right_context": "εἰς τὰ ὀπίσω."
+    },
+    {
+      "ref": "Luke 22:32",
+      "form": "ἐπιστρέψας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 32,
+      "left_context": "ἡ πίστις σου· καὶ σύ ποτε",
+      "right_context": "⸀στήρισον τοὺς ἀδελφούς σου."
+    },
+    {
+      "ref": "Mark 4:12",
+      "form": "ἐπιστρέψωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "ἀκούοντες ἀκούωσι καὶ μὴ συνιῶσιν, μήποτε",
+      "right_context": "καὶ ἀφεθῇ ⸀αὐτοῖς."
+    },
+    {
+      "ref": "Mark 5:30",
+      "form": "ἐπιστραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 30,
+      "left_context": "ἑαυτῷ τὴν ἐξ αὐτοῦ δύναμιν ἐξελθοῦσαν",
+      "right_context": "ἐν τῷ ὄχλῳ ἔλεγεν· Τίς μου"
+    },
+    {
+      "ref": "Mark 8:33",
+      "form": "ἐπιστραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 33,
+      "left_context": "ὁ δὲ",
+      "right_context": "καὶ ἰδὼν τοὺς μαθητὰς αὐτοῦ ἐπετίμησεν"
+    },
+    {
+      "ref": "Mark 13:16",
+      "form": "ἐπιστρεψάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 16,
+      "left_context": "καὶ ὁ εἰς τὸν ⸀ἀγρὸν μὴ",
+      "right_context": "εἰς τὰ ὀπίσω ἆραι τὸ ἱμάτιον"
+    },
+    {
+      "ref": "Matthew 10:13",
+      "form": "ἐπιστραφήτω.",
+      "morph": "V-A-P-D-3S",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 13,
+      "left_context": "ἀξία, ἡ εἰρήνη ὑμῶν ⸀πρὸς ὑμᾶς",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 12:44",
+      "form": "ἐπιστρέψω⸃",
+      "morph": "V-F-A-I-1S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 44,
+      "left_context": "τότε λέγει· ⸂Εἰς τὸν οἶκόν μου",
+      "right_context": "ὅθεν ἐξῆλθον· καὶ ἐλθὸν ⸀εὑρίσκει ⸀σχολάζοντα"
+    },
+    {
+      "ref": "Matthew 13:15",
+      "form": "ἐπιστρέψωσιν,",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 15,
+      "left_context": "ἀκούσωσιν καὶ τῇ καρδίᾳ συνῶσιν καὶ",
+      "right_context": "καὶ ἰάσομαι αὐτούς."
+    },
+    {
+      "ref": "Matthew 24:18",
+      "form": "ἐπιστρεψάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 18,
+      "left_context": "καὶ ὁ ἐν τῷ ἀγρῷ μὴ",
+      "right_context": "ὀπίσω ἆραι ⸂τὸ ἱμάτιον⸃ αὐτοῦ."
+    },
+    {
+      "ref": "James 5:19",
+      "form": "ἐπιστρέψῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "James",
+      "chapter": 5,
+      "verse": 19,
+      "left_context": "ὑμῖν πλανηθῇ ἀπὸ τῆς ἀληθείας καὶ",
+      "right_context": "τις αὐτόν,"
+    },
+    {
+      "ref": "James 5:20",
+      "form": "ἐπιστρέψας",
+      "morph": "V-A-A-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "⸀γινωσκέτω ὅτι ὁ",
+      "right_context": "ἁμαρτωλὸν ἐκ πλάνης ὁδοῦ αὐτοῦ σώσει"
+    }
+  ],
+  "books": {
+    "Acts": 11,
+    "Luke": 7,
+    "Mark": 4,
+    "Matthew": 4,
+    "Revelation": 2,
+    "James": 2,
+    "1 Peter": 1,
+    "1 Thessalonians": 1,
+    "2 Corinthians": 1,
+    "2 Peter": 1,
+    "Galatians": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μετανοέω",
+      "display": "metanoeo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "συνίημι",
+      "display": "entendan",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγρός",
+      "display": "campo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὀπίσω",
+      "display": "detrás",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πλανάω",
+      "display": "extraviados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablaba",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vi",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocidos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἰάομαι",
+      "display": "sanaré",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdonarás",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salida",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 3:19",
+      "form": "ἐπιστρέψατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "μετανοήσατε οὖν καὶ ἐπιστρέψατε ⸀πρὸς τὸ ἐξαλειφθῆναι ὑμῶν τὰς ἁμαρτίας,"
+    },
+    {
+      "ref": "Luke 17:31",
+      "form": "ἐπιστρεψάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "ἆραι αὐτά, καὶ ὁ ⸀ἐν ἀγρῷ ὁμοίως μὴ ἐπιστρεψάτω εἰς τὰ ὀπίσω.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 4:12",
+      "form": "ἐπιστρέψωσιν",
+      "morph": "V-A-A-S-3P",
+      "clause_text": "ἴδωσιν, καὶ ἀκούοντες ἀκούωσι καὶ μὴ συνιῶσιν, μήποτε ἐπιστρέψωσιν καὶ ἀφεθῇ ⸀αὐτοῖς.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 13:16",
+      "form": "ἐπιστρεψάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "καὶ ὁ εἰς τὸν ⸀ἀγρὸν μὴ ἐπιστρεψάτω εἰς τὰ ὀπίσω ἆραι τὸ ἱμάτιον αὐτοῦ.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 10:13",
+      "form": "ἐπιστραφήτω.",
+      "morph": "V-A-P-D-3S",
+      "clause_text": "μὴ ᾖ ἀξία, ἡ εἰρήνη ὑμῶν ⸀πρὸς ὑμᾶς ἐπιστραφήτω."
+    },
+    {
+      "ref": "Matthew 24:18",
+      "form": "ἐπιστρεψάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "καὶ ὁ ἐν τῷ ἀγρῷ μὴ ἐπιστρεψάτω ὀπίσω ἆραι ⸂τὸ ἱμάτιον⸃ αὐτοῦ.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 17:31",
+      "negator": "μὴ",
+      "clause_text": "ἆραι αὐτά, καὶ ὁ ⸀ἐν ἀγρῷ ὁμοίως μὴ ἐπιστρεψάτω εἰς τὰ ὀπίσω."
+    },
+    {
+      "ref": "Mark 4:12",
+      "negator": "μὴ",
+      "clause_text": "ἴδωσιν, καὶ ἀκούοντες ἀκούωσι καὶ μὴ συνιῶσιν, μήποτε ἐπιστρέψωσιν καὶ ἀφεθῇ ⸀αὐτοῖς."
+    },
+    {
+      "ref": "Mark 13:16",
+      "negator": "μὴ",
+      "clause_text": "καὶ ὁ εἰς τὸν ⸀ἀγρὸν μὴ ἐπιστρεψάτω εἰς τὰ ὀπίσω ἆραι τὸ ἱμάτιον αὐτοῦ."
+    },
+    {
+      "ref": "Matthew 24:18",
+      "negator": "μὴ",
+      "clause_text": "καὶ ὁ ἐν τῷ ἀγρῷ μὴ ἐπιστρεψάτω ὀπίσω ἆραι ⸂τὸ ἱμάτιον⸃ αὐτοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 3:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 17:31",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 13:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 10:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 24:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 5:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 1:12",
+      "reason": "occurs near ὅστις"
+    },
+    {
+      "ref": "1 Peter 2:25",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

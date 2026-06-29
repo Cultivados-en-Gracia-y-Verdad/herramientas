@@ -1,0 +1,74 @@
+{
+  "lemma": "διανεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διανεύων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:22",
+      "form": "διανεύων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "ἐν τῷ ναῷ· καὶ αὐτὸς ἦν",
+      "right_context": "αὐτοῖς, καὶ διέμενεν κωφός."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ναός",
+      "display": "templo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαμένω",
+      "display": "permanecía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κωφός",
+      "display": "sordo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:22",
+      "reason": "occurs near διαμένω, κωφός, ναός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

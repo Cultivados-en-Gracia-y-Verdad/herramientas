@@ -1,0 +1,212 @@
+{
+  "lemma": "ἐπαινέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "Ἐπαινῶ",
+      "count": 1
+    },
+    {
+      "form": "ἐπαινῶ⸃",
+      "count": 1
+    },
+    {
+      "form": "ἐπαινέσω",
+      "count": 1
+    },
+    {
+      "form": "ἐπαινῶ.",
+      "count": 1
+    },
+    {
+      "form": "ἐπῄνεσεν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπαινεσάτωσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "subjunctive": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:2",
+      "form": "Ἐπαινῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "δὲ ⸀ὑμᾶς ὅτι πάντα μου μέμνησθε"
+    },
+    {
+      "ref": "1 Corinthians 11:17",
+      "form": "ἐπαινῶ⸃",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "Τοῦτο δὲ ⸂παραγγέλλων οὐκ",
+      "right_context": "ὅτι οὐκ εἰς τὸ κρεῖσσον ἀλλὰ"
+    },
+    {
+      "ref": "1 Corinthians 11:22",
+      "form": "ἐπαινέσω",
+      "morph": "V-A-A-S-1S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 22,
+      "left_context": "τοὺς μὴ ἔχοντας; τί ⸂εἴπω ὑμῖν⸃;",
+      "right_context": "ὑμᾶς; ἐν τούτῳ οὐκ ἐπαινῶ."
+    },
+    {
+      "ref": "1 Corinthians 11:22",
+      "form": "ἐπαινῶ.",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 22,
+      "left_context": "ὑμῖν⸃; ἐπαινέσω ὑμᾶς; ἐν τούτῳ οὐκ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 16:8",
+      "form": "ἐπῄνεσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 8,
+      "left_context": "καὶ",
+      "right_context": "ὁ κύριος τὸν οἰκονόμον τῆς ἀδικίας"
+    },
+    {
+      "ref": "Romans 15:11",
+      "form": "⸀ἐπαινεσάτωσαν",
+      "morph": "V-A-A-D-3P",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 11,
+      "left_context": "⸂πάντα τὰ ἔθνη, τὸν κύριον⸃, καὶ",
+      "right_context": "αὐτὸν πάντες οἱ λαοί."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 4,
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπαινέω",
+      "display": "alabo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραγγέλλω",
+      "display": "mandando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρείττων",
+      "display": "mejor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκονόμος",
+      "display": "mayordomo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Romans 15:11",
+      "form": "⸀ἐπαινεσάτωσαν",
+      "morph": "V-A-A-D-3P",
+      "clause_text": "πάλιν· Αἰνεῖτε, ⸂πάντα τὰ ἔθνη, τὸν κύριον⸃, καὶ ⸀ἐπαινεσάτωσαν αὐτὸν πάντες οἱ λαοί."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 11:17",
+      "negator": "οὐκ",
+      "clause_text": "Τοῦτο δὲ ⸂παραγγέλλων οὐκ ἐπαινῶ⸃ ὅτι οὐκ εἰς τὸ κρεῖσσον ἀλλὰ εἰς τὸ"
+    },
+    {
+      "ref": "1 Corinthians 11:22",
+      "negator": "οὐκ",
+      "clause_text": "καὶ καταισχύνετε τοὺς μὴ ἔχοντας; τί ⸂εἴπω ὑμῖν⸃; ἐπαινέσω ὑμᾶς; ἐν τούτῳ οὐκ ἐπαινῶ."
+    },
+    {
+      "ref": "1 Corinthians 11:22",
+      "negator": "οὐκ",
+      "clause_text": "τί ⸂εἴπω ὑμῖν⸃; ἐπαινέσω ὑμᾶς; ἐν τούτῳ οὐκ ἐπαινῶ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 15:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 11:17",
+      "reason": "occurs near κρείττων, παραγγέλλω, ἐπαινέω"
+    },
+    {
+      "ref": "1 Corinthians 11:2",
+      "reason": "occurs near ἐπαινέω"
+    },
+    {
+      "ref": "1 Corinthians 11:22",
+      "reason": "occurs near ἐπαινέω"
+    },
+    {
+      "ref": "Luke 16:8",
+      "reason": "occurs near κύριος, οἰκονόμος, ἐπαινέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

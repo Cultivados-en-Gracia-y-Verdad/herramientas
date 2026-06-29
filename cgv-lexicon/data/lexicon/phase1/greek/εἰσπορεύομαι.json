@@ -1,0 +1,464 @@
+{
+  "lemma": "εἰσπορεύομαι",
+  "language": "greek",
+  "total_occurrences": 18,
+  "forms": [
+    {
+      "form": "εἰσπορευόμενοι",
+      "count": 4
+    },
+    {
+      "form": "εἰσπορευόμενον",
+      "count": 3
+    },
+    {
+      "form": "εἰσπορεύεται",
+      "count": 2
+    },
+    {
+      "form": "εἰσπορευομένων",
+      "count": 1
+    },
+    {
+      "form": "εἰσπορευόμενος,",
+      "count": 1
+    },
+    {
+      "form": "εἰσπορευόμενος",
+      "count": 1
+    },
+    {
+      "form": "εἰσπορευομένους",
+      "count": 1
+    },
+    {
+      "form": "εἰσπορεύονται⸃·",
+      "count": 1
+    },
+    {
+      "form": "εἰσπορεύεται.",
+      "count": 1
+    },
+    {
+      "form": "εἰσπορεύονται",
+      "count": 1
+    },
+    {
+      "form": "εἰσπορευόμεναι",
+      "count": 1
+    },
+    {
+      "form": "εἰσεπορεύετο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 12,
+      "indicative": 6
+    },
+    "tenses": {
+      "present": 17,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 18
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 3:2",
+      "form": "εἰσπορευομένων",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 2,
+      "left_context": "Ὡραίαν τοῦ αἰτεῖν ἐλεημοσύνην παρὰ τῶν",
+      "right_context": "εἰς τὸ ἱερόν,"
+    },
+    {
+      "ref": "Acts 8:3",
+      "form": "εἰσπορευόμενος,",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 3,
+      "left_context": "ἐλυμαίνετο τὴν ἐκκλησίαν κατὰ τοὺς οἴκους",
+      "right_context": "σύρων τε ἄνδρας καὶ γυναῖκας παρεδίδου"
+    },
+    {
+      "ref": "Acts 9:28",
+      "form": "εἰσπορευόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 28,
+      "left_context": "καὶ ἦν μετ’ αὐτῶν",
+      "right_context": "⸂καὶ ἐκπορευόμενος⸃ εἰς ⸀Ἰερουσαλήμ, παρρησιαζόμενος ἐν"
+    },
+    {
+      "ref": "Acts 28:30",
+      "form": "εἰσπορευομένους",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 30,
+      "left_context": "ἰδίῳ μισθώματι, καὶ ἀπεδέχετο πάντας τοὺς",
+      "right_context": "πρὸς αὐτόν,"
+    },
+    {
+      "ref": "Luke 8:16",
+      "form": "εἰσπορευόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 16,
+      "left_context": "ἀλλ’ ἐπὶ λυχνίας ⸀τίθησιν, ἵνα οἱ",
+      "right_context": "βλέπωσιν τὸ φῶς."
+    },
+    {
+      "ref": "Luke 11:33",
+      "form": "εἰσπορευόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 33,
+      "left_context": "ἀλλ’ ἐπὶ τὴν λυχνίαν, ἵνα οἱ",
+      "right_context": "τὸ ⸀φέγγος βλέπωσιν."
+    },
+    {
+      "ref": "Luke 18:24",
+      "form": "εἰσπορεύονται⸃·",
+      "morph": "V-P-M-I-3P",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 24,
+      "left_context": "ἔχοντες ⸂εἰς τὴν βασιλείαν τοῦ θεοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 19:30",
+      "form": "εἰσπορευόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 30,
+      "left_context": "εἰς τὴν κατέναντι κώμην, ἐν ᾗ",
+      "right_context": "εὑρήσετε πῶλον δεδεμένον, ἐφ’ ὃν οὐδεὶς"
+    },
+    {
+      "ref": "Luke 22:10",
+      "form": "εἰσπορεύεται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 10,
+      "left_context": "αὐτῷ εἰς τὴν οἰκίαν ⸂εἰς ἣν⸃",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 1:21",
+      "form": "εἰσπορεύονται",
+      "morph": "V-P-M-I-3P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "Καὶ",
+      "right_context": "εἰς Καφαρναούμ. καὶ ⸀εὐθὺς τοῖς σάββασιν"
+    },
+    {
+      "ref": "Mark 4:19",
+      "form": "εἰσπορευόμεναι",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 19,
+      "left_context": "καὶ αἱ περὶ τὰ λοιπὰ ἐπιθυμίαι",
+      "right_context": "συμπνίγουσιν τὸν λόγον, καὶ ἄκαρπος γίνεται."
+    },
+    {
+      "ref": "Mark 5:40",
+      "form": "εἰσπορεύεται",
+      "morph": "V-P-M-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 40,
+      "left_context": "μητέρα καὶ τοὺς μετ’ αὐτοῦ, καὶ",
+      "right_context": "ὅπου ἦν τὸ ⸀παιδίον·"
+    },
+    {
+      "ref": "Mark 6:56",
+      "form": "εἰσεπορεύετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 56,
+      "left_context": "καὶ ὅπου ἂν",
+      "right_context": "εἰς κώμας ἢ ⸂εἰς πόλεις ἢ"
+    },
+    {
+      "ref": "Mark 7:15",
+      "form": "εἰσπορευόμενον",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "οὐδέν ἐστιν ἔξωθεν τοῦ ἀνθρώπου",
+      "right_context": "εἰς αὐτὸν ὃ δύναται ⸂κοινῶσαι αὐτόν⸃·"
+    },
+    {
+      "ref": "Mark 7:18",
+      "form": "εἰσπορευόμενον",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 18,
+      "left_context": "οὐ νοεῖτε ὅτι πᾶν τὸ ἔξωθεν",
+      "right_context": "εἰς τὸν ἄνθρωπον οὐ δύναται αὐτὸν"
+    },
+    {
+      "ref": "Mark 7:19",
+      "form": "εἰσπορεύεται",
+      "morph": "V-P-M-I-3S",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 19,
+      "left_context": "ὅτι οὐκ",
+      "right_context": "αὐτοῦ εἰς τὴν καρδίαν ἀλλ’ εἰς"
+    },
+    {
+      "ref": "Mark 11:2",
+      "form": "εἰσπορευόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 2,
+      "left_context": "κώμην τὴν κατέναντι ὑμῶν, καὶ ⸀εὐθὺς",
+      "right_context": "εἰς αὐτὴν εὑρήσετε πῶλον δεδεμένον ἐφ’"
+    },
+    {
+      "ref": "Matthew 15:17",
+      "form": "εἰσπορευόμενον",
+      "morph": "V-P-M-P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 17,
+      "left_context": "⸀οὐ νοεῖτε ὅτι πᾶν τὸ",
+      "right_context": "εἰς τὸ στόμα εἰς τὴν κοιλίαν"
+    }
+  ],
+  "books": {
+    "Mark": 8,
+    "Luke": 5,
+    "Acts": 4,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λυχνία",
+      "display": "de·candelero",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miraran",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κατέναντι",
+      "display": "en·frente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldea",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaréis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πῶλος",
+      "display": "pollino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "atado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξωθεν",
+      "display": "por·fuera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puede",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νοέω",
+      "display": "entendéis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτέω",
+      "display": "pedir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεημοσύνη",
+      "display": "limosna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύρω",
+      "display": "arrastrando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπορεύομαι",
+      "display": "saliendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησιάζομαι",
+      "display": "hablar·con·denuedo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 7:18",
+      "negator": "οὐ",
+      "clause_text": "ἀσύνετοί ἐστε; οὐ νοεῖτε ὅτι πᾶν τὸ ἔξωθεν εἰσπορευόμενον εἰς τὸν ἄνθρωπον οὐ δύναται αὐτὸν κοινῶσαι,"
+    },
+    {
+      "ref": "Mark 7:19",
+      "negator": "οὐκ",
+      "clause_text": "ὅτι οὐκ εἰσπορεύεται αὐτοῦ εἰς τὴν καρδίαν ἀλλ’ εἰς τὴν κοιλίαν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 11:2",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 1:21",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 4:19",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 5:40",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 6:56",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 7:15",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 7:18",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 7:19",
+      "reason": "frequent in Mark"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

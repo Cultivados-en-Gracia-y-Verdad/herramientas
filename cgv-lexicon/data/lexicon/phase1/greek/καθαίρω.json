@@ -1,0 +1,74 @@
+{
+  "lemma": "καθαίρω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καθαίρει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 15:2",
+      "form": "καθαίρει",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 15,
+      "verse": 2,
+      "left_context": "αὐτό, καὶ πᾶν τὸ καρπὸν φέρον",
+      "right_context": "αὐτὸ ἵνα ⸂καρπὸν πλείονα⸃ φέρῃ."
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 15:2",
+      "reason": "occurs near καρπός, πολύς, φέρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

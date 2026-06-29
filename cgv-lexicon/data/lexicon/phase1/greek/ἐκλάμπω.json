@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐκλάμπω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκλάμψουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 13:43",
+      "form": "ἐκλάμψουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 43,
+      "left_context": "Τότε οἱ δίκαιοι",
+      "right_context": "ὡς ὁ ἥλιος ἐν τῇ βασιλείᾳ"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκαιος",
+      "display": "justos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "sol",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:43",
+      "reason": "occurs near δίκαιος, τότε, ἥλιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

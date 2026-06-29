@@ -1,0 +1,102 @@
+{
+  "lemma": "ἀνοικοδομέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνοικοδομήσω",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:16",
+      "form": "ἀνοικοδομήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 16,
+      "left_context": "Μετὰ ταῦτα ἀναστρέψω καὶ",
+      "right_context": "τὴν σκηνὴν Δαυὶδ τὴν πεπτωκυῖαν καὶ"
+    },
+    {
+      "ref": "Acts 15:16",
+      "form": "ἀνοικοδομήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 16,
+      "left_context": "τὴν πεπτωκυῖαν καὶ τὰ ⸀κατεσκαμμένα αὐτῆς",
+      "right_context": "καὶ ἀνορθώσω αὐτήν,"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίπτω",
+      "display": "caida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναστρέφω",
+      "display": "conducirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκηνή",
+      "display": "tienda,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαυίδ",
+      "display": "de·David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατασκάπτω",
+      "display": "derribados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνορθόω",
+      "display": "enderezaré",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:16",
+      "reason": "occurs near Δαυίδ, πίπτω, σκηνή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

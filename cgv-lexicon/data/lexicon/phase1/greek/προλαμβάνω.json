@@ -1,0 +1,151 @@
+{
+  "lemma": "προλαμβάνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "προλαμβάνει",
+      "count": 1
+    },
+    {
+      "form": "προλημφθῇ",
+      "count": 1
+    },
+    {
+      "form": "προέλαβεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:21",
+      "form": "προλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 21,
+      "left_context": "ἕκαστος γὰρ τὸ ἴδιον δεῖπνον",
+      "right_context": "ἐν τῷ φαγεῖν, καὶ ὃς μὲν"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "form": "προλημφθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "Ἀδελφοί, ἐὰν καὶ",
+      "right_context": "ἄνθρωπος ἔν τινι παραπτώματι, ὑμεῖς οἱ"
+    },
+    {
+      "ref": "Mark 14:8",
+      "form": "προέλαβεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 8,
+      "left_context": "ὃ ⸀ἔσχεν ἐποίησεν,",
+      "right_context": "μυρίσαι ⸂τὸ σῶμά μου⸃ εἰς τὸν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Galatians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεῖπνον",
+      "display": "banquete",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράπτωμα",
+      "display": "ofensa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μυρίζω",
+      "display": "perfumar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 11:21",
+      "reason": "occurs near δεῖπνον, ἐσθίω, ἕκαστος"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "reason": "occurs near ἀδελφός"
+    },
+    {
+      "ref": "Mark 14:8",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

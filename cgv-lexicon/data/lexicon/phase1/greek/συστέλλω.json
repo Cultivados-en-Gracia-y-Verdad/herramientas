@@ -1,0 +1,126 @@
+{
+  "lemma": "συστέλλω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνεσταλμένος",
+      "count": 1
+    },
+    {
+      "form": "συνέστειλαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:29",
+      "form": "συνεσταλμένος",
+      "morph": "V-X-P-P",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 29,
+      "left_context": "τοῦτο δέ φημι, ἀδελφοί, ὁ καιρὸς",
+      "right_context": "⸂ἐστίν· τὸ λοιπὸν⸃ ἵνα καὶ οἱ"
+    },
+    {
+      "ref": "Acts 5:6",
+      "form": "συνέστειλαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "ἀναστάντες δὲ οἱ νεώτεροι",
+      "right_context": "αὐτὸν καὶ ἐξενέγκαντες ἔθαψαν."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φημί",
+      "display": "digo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκφέρω",
+      "display": "sacados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάπτω",
+      "display": "enterraron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 7:29",
+      "reason": "occurs near καιρός, λοιπός, φημί"
+    },
+    {
+      "ref": "Acts 5:6",
+      "reason": "occurs near ἀνίστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

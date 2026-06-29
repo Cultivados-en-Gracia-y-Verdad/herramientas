@@ -1,0 +1,202 @@
+{
+  "lemma": "θορυβέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐθορύβουν",
+      "count": 1
+    },
+    {
+      "form": "θορυβεῖσθε,",
+      "count": 1
+    },
+    {
+      "form": "θορυβεῖσθε",
+      "count": 1
+    },
+    {
+      "form": "θορυβούμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "imperative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "imperfect": 1,
+      "present": 3
+    },
+    "voices": {
+      "active": 1,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:5",
+      "form": "ἐθορύβουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 5,
+      "left_context": "ἀγοραίων ⸂ἄνδρας τινὰς⸃ πονηροὺς καὶ ὀχλοποιήσαντες",
+      "right_context": "τὴν πόλιν, ⸂καὶ ἐπιστάντες⸃ τῇ οἰκίᾳ"
+    },
+    {
+      "ref": "Acts 20:10",
+      "form": "θορυβεῖσθε,",
+      "morph": "V-P-P-D-2P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 10,
+      "left_context": "ἐπέπεσεν αὐτῷ καὶ συμπεριλαβὼν εἶπεν· Μὴ",
+      "right_context": "ἡ γὰρ ψυχὴ αὐτοῦ ἐν αὐτῷ"
+    },
+    {
+      "ref": "Mark 5:39",
+      "form": "θορυβεῖσθε",
+      "morph": "V-P-P-I-2P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 39,
+      "left_context": "καὶ εἰσελθὼν λέγει αὐτοῖς· Τί",
+      "right_context": "καὶ κλαίετε; τὸ παιδίον οὐκ ἀπέθανεν"
+    },
+    {
+      "ref": "Matthew 9:23",
+      "form": "θορυβούμενον",
+      "morph": "V-P-P-P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 23,
+      "left_context": "ἰδὼν τοὺς αὐλητὰς καὶ τὸν ὄχλον",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀχλοποιέω",
+      "display": "alborotados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμπεριλαμβάνω",
+      "display": "llevar·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "lloráis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδίον",
+      "display": "niño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐλητής",
+      "display": "flautistas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 20:10",
+      "form": "θορυβεῖσθε,",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "ὁ Παῦλος ἐπέπεσεν αὐτῷ καὶ συμπεριλαβὼν εἶπεν· Μὴ θορυβεῖσθε, ἡ γὰρ ψυχὴ αὐτοῦ ἐν αὐτῷ ἐστιν.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 20:10",
+      "negator": "Μὴ",
+      "clause_text": "ὁ Παῦλος ἐπέπεσεν αὐτῷ καὶ συμπεριλαβὼν εἶπεν· Μὴ θορυβεῖσθε, ἡ γὰρ ψυχὴ αὐτοῦ ἐν αὐτῷ ἐστιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 17:5",
+      "reason": "occurs near πονηρός, πόλις, ἀνήρ"
+    },
+    {
+      "ref": "Mark 5:39",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 9:23",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

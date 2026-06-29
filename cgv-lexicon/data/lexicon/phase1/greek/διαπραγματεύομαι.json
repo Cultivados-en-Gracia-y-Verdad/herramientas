@@ -1,0 +1,68 @@
+{
+  "lemma": "διαπραγματεύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀διεπραγματεύσαντο.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 19:15",
+      "form": "⸀διεπραγματεύσαντο.",
+      "morph": "V-A-M-I-3P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 15,
+      "left_context": "⸀δεδώκει τὸ ἀργύριον, ἵνα ⸀γνοῖ τί",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀργύριον",
+      "display": "plata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoca",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 19:15",
+      "reason": "occurs near γινώσκω, ἀργύριον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

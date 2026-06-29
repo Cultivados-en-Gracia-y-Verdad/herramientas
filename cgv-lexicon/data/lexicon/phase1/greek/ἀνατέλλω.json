@@ -1,0 +1,343 @@
+{
+  "lemma": "ἀνατέλλω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "ἀνέτειλεν",
+      "count": 3
+    },
+    {
+      "form": "ἀνατείλαντος",
+      "count": 2
+    },
+    {
+      "form": "ἀνατείλῃ",
+      "count": 1
+    },
+    {
+      "form": "ἀνατέταλκεν",
+      "count": 1
+    },
+    {
+      "form": "ἀνατέλλουσαν",
+      "count": 1
+    },
+    {
+      "form": "ἀνατέλλει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 5,
+      "participle": 3
+    },
+    "tenses": {
+      "aorist": 6,
+      "perfect": 1,
+      "present": 2
+    },
+    "voices": {
+      "active": 9
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:19",
+      "form": "ἀνατείλῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "ἕως οὗ ἡμέρα διαυγάσῃ καὶ φωσφόρος",
+      "right_context": "ἐν ταῖς καρδίαις ὑμῶν·"
+    },
+    {
+      "ref": "Hebrews 7:14",
+      "form": "ἀνατέταλκεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 14,
+      "left_context": "πρόδηλον γὰρ ὅτι ἐξ Ἰούδα",
+      "right_context": "ὁ κύριος ἡμῶν, εἰς ἣν φυλὴν"
+    },
+    {
+      "ref": "Luke 12:54",
+      "form": "ἀνατέλλουσαν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 54,
+      "left_context": "καὶ τοῖς ὄχλοις· Ὅταν ⸀ἴδητε νεφέλην",
+      "right_context": "⸀ἐπὶ δυσμῶν, εὐθέως λέγετε ⸀ὅτι Ὄμβρος"
+    },
+    {
+      "ref": "Mark 4:6",
+      "form": "ἀνέτειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "⸂καὶ ὅτε",
+      "right_context": "ὁ ἥλιος⸃ ⸀ἐκαυματίσθη καὶ διὰ τὸ"
+    },
+    {
+      "ref": "Mark 16:2",
+      "form": "ἀνατείλαντος",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 2,
+      "left_context": "τῶν⸃ σαββάτων ἔρχονται ἐπὶ τὸ μνημεῖον",
+      "right_context": "τοῦ ἡλίου."
+    },
+    {
+      "ref": "Matthew 4:16",
+      "form": "ἀνέτειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "ἐν χώρᾳ καὶ σκιᾷ θανάτου φῶς",
+      "right_context": "αὐτοῖς."
+    },
+    {
+      "ref": "Matthew 5:45",
+      "form": "ἀνατέλλει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 45,
+      "left_context": "⸀ἐν οὐρανοῖς, ὅτι τὸν ἥλιον αὐτοῦ",
+      "right_context": "ἐπὶ πονηροὺς καὶ ἀγαθοὺς καὶ βρέχει"
+    },
+    {
+      "ref": "Matthew 13:6",
+      "form": "ἀνατείλαντος",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "ἡλίου δὲ",
+      "right_context": "ἐκαυματίσθη καὶ διὰ τὸ μὴ ἔχειν"
+    },
+    {
+      "ref": "James 1:11",
+      "form": "ἀνέτειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "",
+      "right_context": "γὰρ ὁ ἥλιος σὺν τῷ καύσωνι"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Mark": 2,
+    "2 Peter": 1,
+    "Hebrews": 1,
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἥλιος",
+      "display": "sol",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "καυματίζω",
+      "display": "fue quemado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαυγάζω",
+      "display": "brille",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωσφόρος",
+      "display": "lucero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόδηλος",
+      "display": "evidente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰούδας",
+      "display": "de·Judá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "váis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεφέλη",
+      "display": "nube",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυσμή",
+      "display": "de·ocasos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "de·sábados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vienen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μνημεῖον",
+      "display": "sepulcro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "región",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκιά",
+      "display": "sombra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φῶς",
+      "display": "luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:6",
+      "reason": "occurs near καυματίζω, ἥλιος"
+    },
+    {
+      "ref": "Matthew 4:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 5:45",
+      "reason": "occurs near ἥλιος"
+    },
+    {
+      "ref": "Mark 16:2",
+      "reason": "occurs near ἥλιος"
+    },
+    {
+      "ref": "Mark 4:6",
+      "reason": "occurs near καυματίζω, ἥλιος"
+    },
+    {
+      "ref": "2 Peter 1:19",
+      "reason": "occurs near διαυγάζω, φωσφόρος, ἡμέρα"
+    },
+    {
+      "ref": "Hebrews 7:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "James 1:11",
+      "reason": "occurs near ἥλιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

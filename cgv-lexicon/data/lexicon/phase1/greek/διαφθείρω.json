@@ -1,0 +1,252 @@
+{
+  "lemma": "διαφθείρω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "διεφθαρμένων",
+      "count": 1
+    },
+    {
+      "form": "διαφθείρεται,",
+      "count": 1
+    },
+    {
+      "form": "⸀διεφθάρησαν.",
+      "count": 1
+    },
+    {
+      "form": "διαφθεῖραι",
+      "count": 1
+    },
+    {
+      "form": "διαφθείροντας",
+      "count": 1
+    },
+    {
+      "form": "διαφθείρει·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "present": 3,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 3,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:5",
+      "form": "διεφθαρμένων",
+      "morph": "V-X-P-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "διαπαρατριβαὶ",
+      "right_context": "ἀνθρώπων τὸν νοῦν καὶ ἀπεστερημένων τῆς"
+    },
+    {
+      "ref": "2 Corinthians 4:16",
+      "form": "διαφθείρεται,",
+      "morph": "V-P-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "εἰ καὶ ὁ ἔξω ἡμῶν ἄνθρωπος",
+      "right_context": "ἀλλ’ ὁ ⸂ἔσω ἡμῶν⸃ ἀνακαινοῦται ἡμέρᾳ"
+    },
+    {
+      "ref": "Revelation 8:9",
+      "form": "⸀διεφθάρησαν.",
+      "morph": "V-A-P-I-3P",
+      "book": "Revelation",
+      "chapter": 8,
+      "verse": 9,
+      "left_context": "ψυχάς, καὶ τὸ τρίτον τῶν πλοίων",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 11:18",
+      "form": "διαφθεῖραι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 18,
+      "left_context": "⸂τοὺς μικροὺς καὶ τοὺς μεγάλους⸃, καὶ",
+      "right_context": "τοὺς διαφθείροντας τὴν γῆν."
+    },
+    {
+      "ref": "Revelation 11:18",
+      "form": "διαφθείροντας",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 18,
+      "left_context": "καὶ τοὺς μεγάλους⸃, καὶ διαφθεῖραι τοὺς",
+      "right_context": "τὴν γῆν."
+    },
+    {
+      "ref": "Luke 12:33",
+      "form": "διαφθείρει·",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 33,
+      "left_context": "ὅπου κλέπτης οὐκ ἐγγίζει οὐδὲ σὴς",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Revelation": 3,
+    "1 Timothy": 1,
+    "2 Corinthians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grandes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διαφθείρω",
+      "display": "corrompiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διαπαρατριβή",
+      "display": "disputases",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστερέω",
+      "display": "defraudados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔσω",
+      "display": "dentro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνακαινόω",
+      "display": "es renovado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρίτος",
+      "display": "tercero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "de·barcas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μικρός",
+      "display": "pequeños",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτης",
+      "display": "ladrón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγίζω",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σής",
+      "display": "polilla",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:33",
+      "negator": "οὐκ",
+      "clause_text": "τοῖς οὐρανοῖς, ὅπου κλέπτης οὐκ ἐγγίζει οὐδὲ σὴς διαφθείρει·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 11:18",
+      "reason": "occurs near γῆ, διαφθείρω, μέγας"
+    },
+    {
+      "ref": "Revelation 8:9",
+      "reason": "occurs near διαφθείρω"
+    },
+    {
+      "ref": "1 Timothy 6:5",
+      "reason": "occurs near διαπαρατριβή, διαφθείρω, ἄνθρωπος"
+    },
+    {
+      "ref": "2 Corinthians 4:16",
+      "reason": "occurs near διαφθείρω, ἄνθρωπος"
+    },
+    {
+      "ref": "Luke 12:33",
+      "reason": "occurs near διαφθείρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

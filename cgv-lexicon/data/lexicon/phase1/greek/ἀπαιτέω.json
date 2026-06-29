@@ -1,0 +1,119 @@
+{
+  "lemma": "ἀπαιτέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀπαίτει.",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀπαιτοῦσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:30",
+      "form": "ἀπαίτει.",
+      "morph": "V-P-A-D-2S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 30,
+      "left_context": "ἀπὸ τοῦ αἴροντος τὰ σὰ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 12:20",
+      "form": "⸀ἀπαιτοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "ταύτῃ τῇ νυκτὶ τὴν ψυχήν σου",
+      "right_context": "ἀπὸ σοῦ· ἃ δὲ ἡτοίμασας, τίνι"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αἴρω",
+      "display": "levantando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σός",
+      "display": "tuyos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμάζω",
+      "display": "preparaste",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 6:30",
+      "form": "ἀπαίτει.",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "δίδου, καὶ ἀπὸ τοῦ αἴροντος τὰ σὰ μὴ ἀπαίτει.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 6:30",
+      "negator": "μὴ",
+      "clause_text": "δίδου, καὶ ἀπὸ τοῦ αἴροντος τὰ σὰ μὴ ἀπαίτει."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:30",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 12:20",
+      "reason": "occurs near νύξ, ψυχή, ἑτοιμάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀφικνέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀφίκετο·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 16:19",
+      "form": "ἀφίκετο·",
+      "morph": "V-A-M-I-3S",
+      "book": "Romans",
+      "chapter": 16,
+      "verse": 19,
+      "left_context": "ἡ γὰρ ὑμῶν ὑπακοὴ εἰς πάντας",
+      "right_context": "⸂ἐφ’ ὑμῖν οὖν χαίρω⸃, θέλω δὲ"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπακοή",
+      "display": "obediencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiero",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 16:19",
+      "reason": "occurs near θέλω, χαίρω, ὑπακοή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

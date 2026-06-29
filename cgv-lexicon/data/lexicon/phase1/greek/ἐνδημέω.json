@@ -1,0 +1,144 @@
+{
+  "lemma": "ἐνδημέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐνδημοῦντες",
+      "count": 2
+    },
+    {
+      "form": "ἐνδημῆσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 5:6",
+      "form": "ἐνδημοῦντες",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "Θαρροῦντες οὖν πάντοτε καὶ εἰδότες ὅτι",
+      "right_context": "ἐν τῷ σώματι ἐκδημοῦμεν ἀπὸ τοῦ"
+    },
+    {
+      "ref": "2 Corinthians 5:8",
+      "form": "ἐνδημῆσαι",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "μᾶλλον ἐκδημῆσαι ἐκ τοῦ σώματος καὶ",
+      "right_context": "πρὸς τὸν κύριον·"
+    },
+    {
+      "ref": "2 Corinthians 5:9",
+      "form": "ἐνδημοῦντες",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "διὸ καὶ φιλοτιμούμεθα, εἴτε",
+      "right_context": "εἴτε ἐκδημοῦντες, εὐάρεστοι αὐτῷ εἶναι."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκδημέω",
+      "display": "estar·ausente",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἴτε",
+      "display": "sea·que",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοτε",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "sabidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλοτιμέομαι",
+      "display": "procuramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐάρεστος",
+      "display": "agradables",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 5:6",
+      "reason": "occurs near οἶδα, πάντοτε, σῶμα"
+    },
+    {
+      "ref": "2 Corinthians 5:8",
+      "reason": "occurs near σῶμα, ἐκδημέω"
+    },
+    {
+      "ref": "2 Corinthians 5:9",
+      "reason": "occurs near εἴτε, ἐκδημέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

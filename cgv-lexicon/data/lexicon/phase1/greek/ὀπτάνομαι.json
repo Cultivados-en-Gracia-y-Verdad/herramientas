@@ -1,0 +1,80 @@
+{
+  "lemma": "ὀπτάνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὀπτανόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 1:3",
+      "form": "ὀπτανόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "ἐν πολλοῖς τεκμηρίοις, δι’ ἡμερῶν τεσσεράκοντα",
+      "right_context": "αὐτοῖς καὶ λέγων τὰ περὶ τῆς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεκμήριον",
+      "display": "pruebas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεσσεράκοντα",
+      "display": "de·cuarentas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 1:3",
+      "reason": "occurs near πολύς, τεκμήριον, τεσσεράκοντα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

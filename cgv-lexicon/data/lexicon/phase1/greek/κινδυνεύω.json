@@ -1,0 +1,169 @@
+{
+  "lemma": "κινδυνεύω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κινδυνεύομεν",
+      "count": 2
+    },
+    {
+      "form": "κινδυνεύει",
+      "count": 1
+    },
+    {
+      "form": "ἐκινδύνευον.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 3,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 15:30",
+      "form": "κινδυνεύομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 30,
+      "left_context": "τί καὶ ἡμεῖς",
+      "right_context": "πᾶσαν ὥραν;"
+    },
+    {
+      "ref": "Acts 19:27",
+      "form": "κινδυνεύει",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 27,
+      "left_context": "οὐ μόνον δὲ τοῦτο",
+      "right_context": "ἡμῖν τὸ μέρος εἰς ἀπελεγμὸν ἐλθεῖν,"
+    },
+    {
+      "ref": "Acts 19:40",
+      "form": "κινδυνεύομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 40,
+      "left_context": "καὶ γὰρ",
+      "right_context": "ἐγκαλεῖσθαι στάσεως περὶ τῆς σήμερον μηδενὸς"
+    },
+    {
+      "ref": "Luke 8:23",
+      "form": "ἐκινδύνευον.",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "εἰς τὴν λίμνην, καὶ συνεπληροῦντο καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "1 Corinthians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "parte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπελεγμός",
+      "display": "refutación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκαλέω",
+      "display": "acusar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στάσις",
+      "display": "de·sedición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίμνη",
+      "display": "lago",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμπληρόω",
+      "display": "eran cumplido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 19:27",
+      "negator": "οὐ",
+      "clause_text": "οὐ μόνον δὲ τοῦτο κινδυνεύει ἡμῖν τὸ μέρος εἰς ἀπελεγμὸν ἐλθεῖν, ἀλλὰ καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:27",
+      "reason": "occurs near μέρος, μόνος, ἀπελεγμός"
+    },
+    {
+      "ref": "Acts 19:40",
+      "reason": "occurs near ἐγκαλέω"
+    },
+    {
+      "ref": "1 Corinthians 15:30",
+      "reason": "occurs near ὥρα"
+    },
+    {
+      "ref": "Luke 8:23",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

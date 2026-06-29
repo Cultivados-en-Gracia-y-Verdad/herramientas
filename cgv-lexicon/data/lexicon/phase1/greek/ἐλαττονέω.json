@@ -1,0 +1,68 @@
+{
+  "lemma": "ἐλαττονέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἠλαττόνησεν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 8:15",
+      "form": "ἠλαττόνησεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 15,
+      "left_context": "ἐπλεόνασεν, καὶ ὁ τὸ ὀλίγον οὐκ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀλίγος",
+      "display": "poco",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 8:15",
+      "negator": "οὐκ",
+      "clause_text": "πολὺ οὐκ ἐπλεόνασεν, καὶ ὁ τὸ ὀλίγον οὐκ ἠλαττόνησεν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 8:15",
+      "reason": "occurs near ὀλίγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

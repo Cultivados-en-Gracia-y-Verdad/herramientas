@@ -1,0 +1,411 @@
+{
+  "lemma": "ἀναχωρέω",
+  "language": "greek",
+  "total_occurrences": 14,
+  "forms": [
+    {
+      "form": "ἀνεχώρησεν",
+      "count": 7
+    },
+    {
+      "form": "ἀναχωρήσας",
+      "count": 1
+    },
+    {
+      "form": "ἀναχωρήσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἀνεχώρησεν⸃",
+      "count": 1
+    },
+    {
+      "form": "ἀνεχώρησαν",
+      "count": 1
+    },
+    {
+      "form": "Ἀναχωρησάντων",
+      "count": 1
+    },
+    {
+      "form": "Ἀναχωρεῖτε,",
+      "count": 1
+    },
+    {
+      "form": "ἀνεχώρησεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 10,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 13,
+      "present": 1
+    },
+    "voices": {
+      "active": 14
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:19",
+      "form": "ἀναχωρήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 19,
+      "left_context": "τῆς χειρὸς αὐτοῦ ὁ χιλίαρχος καὶ",
+      "right_context": "κατ’ ἰδίαν ἐπυνθάνετο· Τί ἐστιν ὃ"
+    },
+    {
+      "ref": "Acts 26:31",
+      "form": "ἀναχωρήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 31,
+      "left_context": "καὶ",
+      "right_context": "ἐλάλουν πρὸς ἀλλήλους λέγοντες ὅτι Οὐδὲν"
+    },
+    {
+      "ref": "John 6:15",
+      "form": "ἀνεχώρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 6,
+      "verse": 15,
+      "left_context": "καὶ ἁρπάζειν αὐτὸν ἵνα ⸀ποιήσωσιν βασιλέα",
+      "right_context": "⸀πάλιν εἰς τὸ ὄρος αὐτὸς μόνος."
+    },
+    {
+      "ref": "Mark 3:7",
+      "form": "ἀνεχώρησεν⸃",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "ὁ Ἰησοῦς ⸂μετὰ τῶν μαθητῶν αὐτοῦ",
+      "right_context": "πρὸς τὴν θάλασσαν· καὶ πολὺ πλῆθος"
+    },
+    {
+      "ref": "Matthew 2:12",
+      "form": "ἀνεχώρησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "ἀνακάμψαι πρὸς Ἡρῴδην δι’ ἄλλης ὁδοῦ",
+      "right_context": "εἰς τὴν χώραν αὐτῶν."
+    },
+    {
+      "ref": "Matthew 2:13",
+      "form": "Ἀναχωρησάντων",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "δὲ αὐτῶν ἰδοὺ ἄγγελος κυρίου ⸂φαίνεται"
+    },
+    {
+      "ref": "Matthew 2:14",
+      "form": "ἀνεχώρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "καὶ τὴν μητέρα αὐτοῦ νυκτὸς καὶ",
+      "right_context": "εἰς Αἴγυπτον,"
+    },
+    {
+      "ref": "Matthew 2:22",
+      "form": "ἀνεχώρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "ἐκεῖ ἀπελθεῖν· χρηματισθεὶς δὲ κατ’ ὄναρ",
+      "right_context": "εἰς τὰ μέρη τῆς Γαλιλαίας,"
+    },
+    {
+      "ref": "Matthew 4:12",
+      "form": "ἀνεχώρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "Ἀκούσας ⸀δὲ ὅτι Ἰωάννης παρεδόθη",
+      "right_context": "εἰς τὴν Γαλιλαίαν."
+    },
+    {
+      "ref": "Matthew 9:24",
+      "form": "Ἀναχωρεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 24,
+      "left_context": "⸀ἔλεγεν·",
+      "right_context": "οὐ γὰρ ἀπέθανεν τὸ κοράσιον ἀλλὰ"
+    },
+    {
+      "ref": "Matthew 12:15",
+      "form": "ἀνεχώρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "Ὁ δὲ Ἰησοῦς γνοὺς",
+      "right_context": "ἐκεῖθεν. καὶ ἠκολούθησαν ⸀αὐτῷ πολλοί, καὶ"
+    },
+    {
+      "ref": "Matthew 14:13",
+      "form": "ἀνεχώρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 13,
+      "left_context": "⸂Ἀκούσας δὲ⸃ ὁ Ἰησοῦς",
+      "right_context": "ἐκεῖθεν ἐν πλοίῳ εἰς ἔρημον τόπον"
+    },
+    {
+      "ref": "Matthew 15:21",
+      "form": "ἀνεχώρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 21,
+      "left_context": "Καὶ ἐξελθὼν ἐκεῖθεν ὁ Ἰησοῦς",
+      "right_context": "εἰς τὰ μέρη Τύρου καὶ Σιδῶνος."
+    },
+    {
+      "ref": "Matthew 27:5",
+      "form": "ἀνεχώρησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 5,
+      "left_context": "ῥίψας τὰ ἀργύρια ⸂εἰς τὸν ναὸν⸃",
+      "right_context": "καὶ ἀπελθὼν ἀπήγξατο."
+    }
+  ],
+  "books": {
+    "Matthew": 10,
+    "Acts": 2,
+    "John": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖθεν",
+      "display": "de·allí",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "partes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλιλαία",
+      "display": "de·Galilea",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιλίαρχος",
+      "display": "tribuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυνθάνομαι",
+      "display": "preguntaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁρπάζω",
+      "display": "arrebatar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "Herodes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "de·otra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "de·camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "región",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 9:24",
+      "form": "Ἀναχωρεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "⸀ἔλεγεν· Ἀναχωρεῖτε, οὐ γὰρ ἀπέθανεν τὸ κοράσιον ἀλλὰ καθεύδει· καὶ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 9:24",
+      "negator": "οὐ",
+      "clause_text": "⸀ἔλεγεν· Ἀναχωρεῖτε, οὐ γὰρ ἀπέθανεν τὸ κοράσιον ἀλλὰ καθεύδει· καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 9:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 12:15",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 14:13",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 15:21",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 27:5",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 2:12",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 2:13",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 2:14",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

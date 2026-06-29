@@ -1,0 +1,194 @@
+{
+  "lemma": "παρασκευάζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "παρασκευάσεται",
+      "count": 1
+    },
+    {
+      "form": "παρεσκεύασται",
+      "count": 1
+    },
+    {
+      "form": "παρεσκευασμένοι",
+      "count": 1
+    },
+    {
+      "form": "παρασκευαζόντων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "future": 1,
+      "perfect": 2,
+      "present": 1
+    },
+    "voices": {
+      "middle": 3,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 14:8",
+      "form": "παρασκευάσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 8,
+      "left_context": "ἐὰν ἄδηλον ⸂φωνὴν σάλπιγξ⸃ δῷ, τίς",
+      "right_context": "εἰς πόλεμον;"
+    },
+    {
+      "ref": "2 Corinthians 9:2",
+      "form": "παρεσκεύασται",
+      "morph": "V-X-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 2,
+      "left_context": "ὑπὲρ ὑμῶν καυχῶμαι Μακεδόσιν ὅτι Ἀχαΐα",
+      "right_context": "ἀπὸ πέρυσι, καὶ ⸀τὸ ὑμῶν ζῆλος"
+    },
+    {
+      "ref": "2 Corinthians 9:3",
+      "form": "παρεσκευασμένοι",
+      "morph": "V-X-M-P",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 3,
+      "left_context": "τῷ μέρει τούτῳ, ἵνα καθὼς ἔλεγον",
+      "right_context": "ἦτε,"
+    },
+    {
+      "ref": "Acts 10:10",
+      "form": "παρασκευαζόντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 10,
+      "left_context": "ἐγένετο δὲ πρόσπεινος καὶ ἤθελεν γεύσασθαι·",
+      "right_context": "δὲ ⸀αὐτῶν ⸀ἐγένετο ἐπ’ αὐτὸν ἔκστασις,"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "1 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄδηλος",
+      "display": "incierta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάλπιγξ",
+      "display": "trompeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλεμος",
+      "display": "guerra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καυχάομαι",
+      "display": "gloriarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μακεδών",
+      "display": "Macedonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀχαΐα",
+      "display": "Acaya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέρυσι(ν)",
+      "display": "el·año·pasado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "parte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσπεινος",
+      "display": "hambriento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quería",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεύομαι",
+      "display": "probar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 9:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 9:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 14:8",
+      "reason": "occurs near δίδωμι, πόλεμος, σάλπιγξ"
+    },
+    {
+      "ref": "Acts 10:10",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

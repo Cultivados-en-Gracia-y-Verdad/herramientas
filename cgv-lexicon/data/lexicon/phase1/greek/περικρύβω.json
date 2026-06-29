@@ -1,0 +1,86 @@
+{
+  "lemma": "περικρύβω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "περιέκρυβεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:24",
+      "form": "περιέκρυβεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "συνέλαβεν Ἐλισάβετ ἡ γυνὴ αὐτοῦ· καὶ",
+      "right_context": "ἑαυτὴν μῆνας πέντε, λέγουσα"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἐλισάβετ",
+      "display": "Elisabet",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήν",
+      "display": "ciertamentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέντε",
+      "display": "cinco",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:24",
+      "reason": "occurs near γυνή, μήν, πέντε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

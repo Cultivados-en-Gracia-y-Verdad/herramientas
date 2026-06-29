@@ -1,0 +1,163 @@
+{
+  "lemma": "στεφανόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "στεφανοῦται",
+      "count": 1
+    },
+    {
+      "form": "ἐστεφάνωσας",
+      "count": 1
+    },
+    {
+      "form": "ἐστεφανωμένον,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:5",
+      "form": "στεφανοῦται",
+      "morph": "V-P-P-I-3S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "ἐὰν δὲ καὶ ἀθλῇ τις, οὐ",
+      "right_context": "ἐὰν μὴ νομίμως ἀθλήσῃ·"
+    },
+    {
+      "ref": "Hebrews 2:7",
+      "form": "ἐστεφάνωσας",
+      "morph": "V-A-A-I-2S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "τι παρ’ ἀγγέλους, δόξῃ καὶ τιμῇ",
+      "right_context": "⸀αὐτόν,"
+    },
+    {
+      "ref": "Hebrews 2:9",
+      "form": "ἐστεφανωμένον,",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "πάθημα τοῦ θανάτου δόξῃ καὶ τιμῇ",
+      "right_context": "ὅπως ⸀χωρὶς θεοῦ ὑπὲρ παντὸς γεύσηται"
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀθλέω",
+      "display": "competiera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "honora",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νομίμως",
+      "display": "legítimamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Timothy 2:5",
+      "negator": "οὐ",
+      "clause_text": "ἐὰν δὲ καὶ ἀθλῇ τις, οὐ στεφανοῦται ἐὰν μὴ νομίμως ἀθλήσῃ·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 2:7",
+      "reason": "occurs near δόξα, τιμή, ἄγγελος"
+    },
+    {
+      "ref": "Hebrews 2:9",
+      "reason": "occurs near δόξα, τιμή"
+    },
+    {
+      "ref": "2 Timothy 2:5",
+      "reason": "occurs near νομίμως, ἀθλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,166 @@
+{
+  "lemma": "συναίρω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συνᾶραι",
+      "count": 1
+    },
+    {
+      "form": "συναίρειν",
+      "count": 1
+    },
+    {
+      "form": "συναίρει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 18:23",
+      "form": "συνᾶραι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 23,
+      "left_context": "τῶν οὐρανῶν ἀνθρώπῳ βασιλεῖ ὃς ἠθέλησεν",
+      "right_context": "λόγον μετὰ τῶν δούλων αὐτοῦ·"
+    },
+    {
+      "ref": "Matthew 18:24",
+      "form": "συναίρειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 24,
+      "left_context": "ἀρξαμένου δὲ αὐτοῦ",
+      "right_context": "⸀προσηνέχθη ⸂αὐτῷ εἷς⸃ ὀφειλέτης μυρίων ταλάντων."
+    },
+    {
+      "ref": "Matthew 25:19",
+      "form": "συναίρει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 19,
+      "left_context": "ὁ κύριος τῶν δούλων ἐκείνων καὶ",
+      "right_context": "⸂λόγον μετ’ αὐτῶν⸃"
+    }
+  ],
+  "books": {
+    "Matthew": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "de·siervos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "fue ofrecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφειλέτης",
+      "display": "deudor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μύριοι",
+      "display": "diez·mil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 18:23",
+      "reason": "occurs near βασιλεύς, δοῦλος, λόγος"
+    },
+    {
+      "ref": "Matthew 18:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 25:19",
+      "reason": "occurs near δοῦλος, λόγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

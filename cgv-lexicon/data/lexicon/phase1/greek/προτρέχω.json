@@ -1,0 +1,124 @@
+{
+  "lemma": "προτρέχω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προέδραμεν",
+      "count": 1
+    },
+    {
+      "form": "προδραμὼν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "John 20:4",
+      "form": "προέδραμεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 20,
+      "verse": 4,
+      "left_context": "δύο ὁμοῦ· καὶ ὁ ἄλλος μαθητὴς",
+      "right_context": "τάχιον τοῦ Πέτρου καὶ ἦλθεν πρῶτος"
+    },
+    {
+      "ref": "Luke 19:4",
+      "form": "προδραμὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 4,
+      "left_context": "καὶ",
+      "right_context": "⸂εἰς τὸ⸃ ἔμπροσθεν ἀνέβη ἐπὶ συκομορέαν"
+    }
+  ],
+  "books": {
+    "John": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὁμοῦ",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τάχιον",
+      "display": "más·rápido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "de·Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμπροσθεν",
+      "display": "delante·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subió",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 20:4",
+      "reason": "occurs near Πέτρος, μαθητής, τάχιον"
+    },
+    {
+      "ref": "Luke 19:4",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

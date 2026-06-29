@@ -1,0 +1,74 @@
+{
+  "lemma": "παραπικραίνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρεπίκραναν;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 3:16",
+      "form": "παρεπίκραναν;",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "τίνες γὰρ ἀκούσαντες",
+      "right_context": "ἀλλ’ οὐ πάντες οἱ ἐξελθόντες ἐξ"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 3:16",
+      "negator": "οὐ",
+      "clause_text": "τίνες γὰρ ἀκούσαντες παρεπίκραναν; ἀλλ’ οὐ πάντες οἱ ἐξελθόντες ἐξ Αἰγύπτου διὰ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 3:16",
+      "reason": "occurs near ἀκούω, ἐξέρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

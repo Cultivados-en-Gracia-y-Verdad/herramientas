@@ -1,0 +1,113 @@
+{
+  "lemma": "σαβαχθάνι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "σαβαχθάνι;",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 15:34",
+      "form": "σαβαχθάνι;",
+      "morph": "V-A-A-I-2S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 34,
+      "left_context": "Ἰησοῦς φωνῇ ⸀μεγάλῃ· Ἐλωῒ ἐλωῒ ⸀λεμὰ",
+      "right_context": "ὅ ἐστιν μεθερμηνευόμενον Ὁ θεός μου"
+    },
+    {
+      "ref": "Matthew 27:46",
+      "form": "σαβαχθάνι;",
+      "morph": "V-A-A-I-2S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 46,
+      "left_context": "φωνῇ μεγάλῃ λέγων· ⸂Ἠλὶ ἠλὶ⸃ λεμὰ",
+      "right_context": "τοῦτ’ ἔστιν· Θεέ μου θεέ μου,"
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλωΐ",
+      "display": "Eloí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λεμά",
+      "display": "lemá",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἠλί",
+      "display": "Eli",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεθερμηνεύω",
+      "display": "interpretado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 15:34",
+      "reason": "occurs near θεός, λεμά, μέγας"
+    },
+    {
+      "ref": "Matthew 27:46",
+      "reason": "occurs near θεός, λεμά, μέγας"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

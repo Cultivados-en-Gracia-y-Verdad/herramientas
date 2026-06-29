@@ -1,0 +1,173 @@
+{
+  "lemma": "εἴωθα",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "εἰωθὸς",
+      "count": 2
+    },
+    {
+      "form": "εἰώθει",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "perfect": 2,
+      "pluperfect": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:2",
+      "form": "εἰωθὸς",
+      "morph": "V-X-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 2,
+      "left_context": "κατὰ δὲ τὸ",
+      "right_context": "τῷ Παύλῳ εἰσῆλθεν πρὸς αὐτοὺς καὶ"
+    },
+    {
+      "ref": "Luke 4:16",
+      "form": "εἰωθὸς",
+      "morph": "V-X-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "ἦν τεθραμμένος, καὶ εἰσῆλθεν κατὰ τὸ",
+      "right_context": "αὐτῷ ἐν τῇ ἡμέρᾳ τῶν σαββάτων"
+    },
+    {
+      "ref": "Mark 10:1",
+      "form": "εἰώθει",
+      "morph": "V-Y-A-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 1,
+      "left_context": "πάλιν ὄχλοι πρὸς αὐτόν, καὶ ὡς",
+      "right_context": "πάλιν ἐδίδασκεν αὐτούς."
+    },
+    {
+      "ref": "Matthew 27:15",
+      "form": "εἰώθει",
+      "morph": "V-Y-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 15,
+      "left_context": "Κατὰ δὲ ἑορτὴν",
+      "right_context": "ὁ ἡγεμὼν ἀπολύειν ἕνα τῷ ὄχλῳ"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entró",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρέφω",
+      "display": "alimentado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑορτή",
+      "display": "fiesta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγεμών",
+      "display": "gobernador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολύω",
+      "display": "despedir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:2",
+      "reason": "occurs near Παῦλος, εἰσέρχομαι"
+    },
+    {
+      "ref": "Luke 4:16",
+      "reason": "occurs near εἰσέρχομαι, τρέφω, ἡμέρα"
+    },
+    {
+      "ref": "Mark 10:1",
+      "reason": "occurs near ὄχλος"
+    },
+    {
+      "ref": "Matthew 27:15",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,144 @@
+{
+  "lemma": "πτύω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "πτύσας",
+      "count": 2
+    },
+    {
+      "form": "ἔπτυσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "John 9:6",
+      "form": "ἔπτυσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 9,
+      "verse": 6,
+      "left_context": "ταῦτα εἰπὼν",
+      "right_context": "χαμαὶ καὶ ἐποίησεν πηλὸν ἐκ τοῦ"
+    },
+    {
+      "ref": "Mark 7:33",
+      "form": "πτύσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 33,
+      "left_context": "αὐτοῦ εἰς τὰ ὦτα αὐτοῦ καὶ",
+      "right_context": "ἥψατο τῆς γλώσσης αὐτοῦ,"
+    },
+    {
+      "ref": "Mark 8:23",
+      "form": "πτύσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "⸀ἐξήνεγκεν αὐτὸν ἔξω τῆς κώμης, καὶ",
+      "right_context": "εἰς τὰ ὄμματα αὐτοῦ, ἐπιθεὶς τὰς"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χαμαί",
+      "display": "en·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πηλός",
+      "display": "barro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὖς",
+      "display": "oídos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπτω",
+      "display": "tocó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "de·lengua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "de·aldea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄμμα",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτίθημι",
+      "display": "puesto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 7:33",
+      "reason": "occurs near γλῶσσα, οὖς, ἅπτω"
+    },
+    {
+      "ref": "Mark 8:23",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 9:6",
+      "reason": "occurs near πηλός, χαμαί"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,86 @@
+{
+  "lemma": "παρακαθέζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸂παρακαθεσθεῖσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:39",
+      "form": "⸂παρακαθεσθεῖσα",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 39,
+      "left_context": "ἦν ἀδελφὴ καλουμένη ⸀Μαριάμ, ἣ καὶ",
+      "right_context": "πρὸς⸃ τοὺς πόδας τοῦ ⸀Ἰησοῦ ἤκουεν"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφή",
+      "display": "hermana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαριάμ",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:39",
+      "reason": "occurs near Μαριάμ, καλέω, πούς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

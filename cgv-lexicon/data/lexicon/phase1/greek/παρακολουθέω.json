@@ -1,0 +1,188 @@
+{
+  "lemma": "παρακολουθέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "παρηκολούθηκας,",
+      "count": 1
+    },
+    {
+      "form": "⸀παρηκολούθησάς",
+      "count": 1
+    },
+    {
+      "form": "παρηκολουθηκότι",
+      "count": 1
+    },
+    {
+      "form": "παρακολουθήσει⸃,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 2,
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 4:6",
+      "form": "παρηκολούθηκας,",
+      "morph": "V-X-A-I-2S",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "πίστεως καὶ τῆς καλῆς διδασκαλίας ᾗ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Timothy 3:10",
+      "form": "⸀παρηκολούθησάς",
+      "morph": "V-A-A-I-2S",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "Σὺ δὲ",
+      "right_context": "μου τῇ διδασκαλίᾳ, τῇ ἀγωγῇ, τῇ"
+    },
+    {
+      "ref": "Luke 1:3",
+      "form": "παρηκολουθηκότι",
+      "morph": "V-X-A-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "ἔδοξε κἀμοὶ",
+      "right_context": "ἄνωθεν πᾶσιν ἀκριβῶς καθεξῆς σοι γράψαι,"
+    },
+    {
+      "ref": "Mark 16:17",
+      "form": "παρακολουθήσει⸃,",
+      "morph": "V-F-A-I-3S",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 17,
+      "left_context": "σημεῖα δὲ τοῖς πιστεύσασιν ⸂ταῦτα",
+      "right_context": "ἐν τῷ ὀνόματί μου δαιμόνια ἐκβαλοῦσιν,"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "2 Timothy": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διδασκαλία",
+      "display": "de·doctrina",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "de·buena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγωγή",
+      "display": "conducta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "pareció",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνωθεν",
+      "display": "desde·arriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκριβῶς",
+      "display": "exactamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθεξῆς",
+      "display": "en·orden",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σημεῖον",
+      "display": "señales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:6",
+      "reason": "occurs near διδασκαλία, καλός"
+    },
+    {
+      "ref": "2 Timothy 3:10",
+      "reason": "occurs near διδασκαλία, ἀγωγή"
+    },
+    {
+      "ref": "Luke 1:3",
+      "reason": "occurs near δοκέω, κἀγώ"
+    },
+    {
+      "ref": "Mark 16:17",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

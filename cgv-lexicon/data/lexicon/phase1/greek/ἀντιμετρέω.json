@@ -1,0 +1,68 @@
+{
+  "lemma": "ἀντιμετρέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀντιμετρηθήσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:38",
+      "form": "ἀντιμετρηθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 38,
+      "left_context": "κόλπον ὑμῶν· ⸂ᾧ γὰρ μέτρῳ⸃ μετρεῖτε",
+      "right_context": "ὑμῖν."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέτρον",
+      "display": "medida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετρέω",
+      "display": "medéis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:38",
+      "reason": "occurs near μέτρον, μετρέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

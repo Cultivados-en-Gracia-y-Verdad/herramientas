@@ -1,0 +1,226 @@
+{
+  "lemma": "μαρτύρομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "μαρτύρομαι",
+      "count": 3
+    },
+    {
+      "form": "μαρτυρόμενοι,",
+      "count": 1
+    },
+    {
+      "form": "μαρτυρόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "middle": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:12",
+      "form": "μαρτυρόμενοι,",
+      "morph": "V-P-M-P",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "παρακαλοῦντες ὑμᾶς καὶ παραμυθούμενοι καὶ",
+      "right_context": "εἰς τὸ ⸀περιπατεῖν ὑμᾶς ἀξίως τοῦ"
+    },
+    {
+      "ref": "Ephesians 4:17",
+      "form": "μαρτύρομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "Τοῦτο οὖν λέγω καὶ",
+      "right_context": "ἐν κυρίῳ, μηκέτι ὑμᾶς περιπατεῖν καθὼς"
+    },
+    {
+      "ref": "Galatians 5:3",
+      "form": "μαρτύρομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "δὲ πάλιν παντὶ ἀνθρώπῳ περιτεμνομένῳ ὅτι"
+    },
+    {
+      "ref": "Acts 20:26",
+      "form": "μαρτύρομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 26,
+      "left_context": "⸀διότι",
+      "right_context": "ὑμῖν ἐν τῇ σήμερον ἡμέρᾳ ὅτι"
+    },
+    {
+      "ref": "Acts 26:22",
+      "form": "μαρτυρόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 22,
+      "left_context": "θεοῦ ἄχρι τῆς ἡμέρας ταύτης ἕστηκα",
+      "right_context": "μικρῷ τε καὶ μεγάλῳ, οὐδὲν ἐκτὸς"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "1 Thessalonians": 1,
+    "Ephesians": 1,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "περιπατέω",
+      "display": "andar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραμυθέομαι",
+      "display": "consolando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀξίως",
+      "display": "dignamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιτέμνω",
+      "display": "circuncidado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διότι",
+      "display": "porque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "he puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μικρός",
+      "display": "pequeño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:26",
+      "reason": "occurs near ἡμέρα"
+    },
+    {
+      "ref": "Acts 26:22",
+      "reason": "occurs near ἡμέρα"
+    },
+    {
+      "ref": "1 Thessalonians 2:12",
+      "reason": "occurs near παρακαλέω, παραμυθέομαι, περιπατέω"
+    },
+    {
+      "ref": "Ephesians 4:17",
+      "reason": "occurs near περιπατέω"
+    },
+    {
+      "ref": "Galatians 5:3",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

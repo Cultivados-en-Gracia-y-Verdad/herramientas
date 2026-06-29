@@ -1,0 +1,68 @@
+{
+  "lemma": "διακωλύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διεκώλυεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 3:14",
+      "form": "διεκώλυεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "ὁ δὲ ⸀Ἰωάννης",
+      "right_context": "αὐτὸν λέγων· Ἐγὼ χρείαν ἔχω ὑπὸ"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρεία",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 3:14",
+      "reason": "occurs near χρεία, Ἰωάννης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

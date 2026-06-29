@@ -1,0 +1,122 @@
+{
+  "lemma": "ἐπενδύομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπενδύσασθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐπενδύσασθαι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 5:2",
+      "form": "ἐπενδύσασθαι",
+      "morph": "V-A-M-N",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "τὸ οἰκητήριον ἡμῶν τὸ ἐξ οὐρανοῦ",
+      "right_context": "ἐπιποθοῦντες,"
+    },
+    {
+      "ref": "2 Corinthians 5:4",
+      "form": "ἐπενδύσασθαι,",
+      "morph": "V-A-M-N",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "ἐφ’ ᾧ οὐ θέλομεν ἐκδύσασθαι ἀλλ’",
+      "right_context": "ἵνα καταποθῇ τὸ θνητὸν ὑπὸ τῆς"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἰκητήριον",
+      "display": "habitación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιποθέω",
+      "display": "anhelando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queremos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδύω",
+      "display": "desvestir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταπίνω",
+      "display": "trage",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνητός",
+      "display": "mortal",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 5:4",
+      "negator": "οὐ",
+      "clause_text": "στενάζομεν βαρούμενοι ἐφ’ ᾧ οὐ θέλομεν ἐκδύσασθαι ἀλλ’ ἐπενδύσασθαι, ἵνα καταποθῇ τὸ θνητὸν ὑπὸ τῆς ζωῆς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 5:2",
+      "reason": "occurs near οἰκητήριον, οὐρανός, ἐπιποθέω"
+    },
+    {
+      "ref": "2 Corinthians 5:4",
+      "reason": "occurs near θέλω, ἐκδύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

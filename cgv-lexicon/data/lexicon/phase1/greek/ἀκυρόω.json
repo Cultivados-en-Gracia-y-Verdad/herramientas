@@ -1,0 +1,156 @@
+{
+  "lemma": "ἀκυρόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀκυροῖ,",
+      "count": 1
+    },
+    {
+      "form": "ἀκυροῦντες",
+      "count": 1
+    },
+    {
+      "form": "ἠκυρώσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 3:17",
+      "form": "ἀκυροῖ,",
+      "morph": "V-P-A-I-3S",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "καὶ τριάκοντα ἔτη⸃ γεγονὼς νόμος οὐκ",
+      "right_context": "εἰς τὸ καταργῆσαι τὴν ἐπαγγελίαν."
+    },
+    {
+      "ref": "Mark 7:13",
+      "form": "ἀκυροῦντες",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "τὸν λόγον τοῦ θεοῦ τῇ παραδόσει"
+    },
+    {
+      "ref": "Matthew 15:6",
+      "form": "ἠκυρώσατε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 6,
+      "left_context": "μὴ ⸀τιμήσει τὸν πατέρα ⸀αὐτοῦ· καὶ",
+      "right_context": "⸂τὸν λόγον⸃ τοῦ θεοῦ διὰ τὴν"
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τριάκοντα",
+      "display": "treintas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτος",
+      "display": "añoses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταργέω",
+      "display": "anular",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "promesa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμάω",
+      "display": "honrará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 3:17",
+      "negator": "οὐκ",
+      "clause_text": "μετὰ ⸂τετρακόσια καὶ τριάκοντα ἔτη⸃ γεγονὼς νόμος οὐκ ἀκυροῖ, εἰς τὸ καταργῆσαι τὴν ἐπαγγελίαν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 3:17",
+      "reason": "occurs near νόμος, τριάκοντα, ἔτος"
+    },
+    {
+      "ref": "Mark 7:13",
+      "reason": "occurs near θεός, λόγος"
+    },
+    {
+      "ref": "Matthew 15:6",
+      "reason": "occurs near θεός, λόγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

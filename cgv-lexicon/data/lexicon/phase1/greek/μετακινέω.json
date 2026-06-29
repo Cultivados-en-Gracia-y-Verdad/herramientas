@@ -1,0 +1,86 @@
+{
+  "lemma": "μετακινέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μετακινούμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 1:23",
+      "form": "μετακινούμενοι",
+      "morph": "V-P-P-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "πίστει τεθεμελιωμένοι καὶ ἑδραῖοι καὶ μὴ",
+      "right_context": "ἀπὸ τῆς ἐλπίδος τοῦ εὐαγγελίου οὗ"
+    }
+  ],
+  "books": {
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεμελιόω",
+      "display": "fundados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑδραῖος",
+      "display": "firmes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "de·esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "de·evangelio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 1:23",
+      "negator": "μὴ",
+      "clause_text": "ἐπιμένετε τῇ πίστει τεθεμελιωμένοι καὶ ἑδραῖοι καὶ μὴ μετακινούμενοι ἀπὸ τῆς ἐλπίδος τοῦ εὐαγγελίου οὗ ἠκούσατε, τοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 1:23",
+      "reason": "occurs near εὐαγγέλιον, θεμελιόω, ἐλπίς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

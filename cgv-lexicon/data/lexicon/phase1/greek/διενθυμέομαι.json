@@ -1,0 +1,68 @@
+{
+  "lemma": "διενθυμέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διενθυμουμένου",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:19",
+      "form": "διενθυμουμένου",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "τοῦ δὲ Πέτρου",
+      "right_context": "περὶ τοῦ ὁράματος εἶπεν ⸂αὐτῷ τὸ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Πέτρος",
+      "display": "de·Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅραμα",
+      "display": "de·visión",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:19",
+      "reason": "occurs near Πέτρος, ὅραμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,154 @@
+{
+  "lemma": "ἐκψύχω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐξέψυξεν·",
+      "count": 2
+    },
+    {
+      "form": "ἐξέψυξεν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:5",
+      "form": "ἐξέψυξεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 5,
+      "left_context": "ὁ Ἁνανίας τοὺς λόγους τούτους πεσὼν",
+      "right_context": "καὶ ἐγένετο φόβος μέγας ἐπὶ πάντας"
+    },
+    {
+      "ref": "Acts 5:10",
+      "form": "ἐξέψυξεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "παραχρῆμα ⸀πρὸς τοὺς πόδας αὐτοῦ καὶ",
+      "right_context": "εἰσελθόντες δὲ οἱ νεανίσκοι εὗρον αὐτὴν"
+    },
+    {
+      "ref": "Acts 12:23",
+      "form": "ἐξέψυξεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 23,
+      "left_context": "δόξαν τῷ θεῷ, καὶ γενόμενος σκωληκόβρωτος",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἁνανίας",
+      "display": "Ananías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "caido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόβος",
+      "display": "temor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεανίσκος",
+      "display": "jovenes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκωληκόβρωτος",
+      "display": "comido·de·gusanos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:23",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 5:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 5:5",
+      "reason": "occurs near λόγος, μέγας, πίπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

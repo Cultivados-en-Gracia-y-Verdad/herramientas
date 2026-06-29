@@ -1,0 +1,118 @@
+{
+  "lemma": "ἀνασείω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "Ἀνασείει",
+      "count": 1
+    },
+    {
+      "form": "ἀνέσεισαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 23:5",
+      "form": "Ἀνασείει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 5,
+      "left_context": "οἱ δὲ ἐπίσχυον λέγοντες ὅτι",
+      "right_context": "τὸν λαὸν διδάσκων καθ’ ὅλης τῆς"
+    },
+    {
+      "ref": "Mark 15:11",
+      "form": "ἀνέσεισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 11,
+      "left_context": "οἱ δὲ ἀρχιερεῖς",
+      "right_context": "τὸν ὄχλον ἵνα μᾶλλον τὸν Βαραββᾶν"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπισχύω",
+      "display": "reforzaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "de·toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 23:5",
+      "reason": "occurs near διδάσκω, λαός, ἐπισχύω"
+    },
+    {
+      "ref": "Mark 15:11",
+      "reason": "occurs near ἀρχιερεύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

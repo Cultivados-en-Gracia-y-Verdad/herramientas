@@ -1,0 +1,68 @@
+{
+  "lemma": "ἐπεισέρχομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸂ἐπεισελεύσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 21:35",
+      "form": "⸂ἐπεισελεύσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 35,
+      "left_context": "ὡς παγίς·",
+      "right_context": "γὰρ⸃ ἐπὶ πάντας τοὺς καθημένους ἐπὶ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παγίς",
+      "display": "trampa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:35",
+      "reason": "occurs near κάθημαι, παγίς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

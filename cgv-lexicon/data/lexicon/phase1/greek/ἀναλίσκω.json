@@ -1,0 +1,121 @@
+{
+  "lemma": "ἀναλίσκω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀναλωθῆτε.",
+      "count": 1
+    },
+    {
+      "form": "ἀναλῶσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 5:15",
+      "form": "ἀναλωθῆτε.",
+      "morph": "V-A-P-S-2P",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 15,
+      "left_context": "καὶ κατεσθίετε, βλέπετε μὴ ὑπ’ ἀλλήλων",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 9:54",
+      "form": "ἀναλῶσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 54,
+      "left_context": "πῦρ καταβῆναι ἀπὸ τοῦ οὐρανοῦ καὶ",
+      "right_context": "⸀αὐτούς;"
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κατεσθίω",
+      "display": "devoráis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "bajar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Galatians 5:15",
+      "form": "ἀναλωθῆτε.",
+      "morph": "V-A-P-S-2P",
+      "clause_text": "ἀλλήλους δάκνετε καὶ κατεσθίετε, βλέπετε μὴ ὑπ’ ἀλλήλων ἀναλωθῆτε.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 5:15",
+      "negator": "μὴ",
+      "clause_text": "ἀλλήλους δάκνετε καὶ κατεσθίετε, βλέπετε μὴ ὑπ’ ἀλλήλων ἀναλωθῆτε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 5:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 9:54",
+      "reason": "occurs near καταβαίνω, οὐρανός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

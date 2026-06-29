@@ -1,0 +1,86 @@
+{
+  "lemma": "τίνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "τίσουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 1:9",
+      "form": "τίσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "2 Thessalonians",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "οἵτινες δίκην",
+      "right_context": "ὄλεθρον αἰώνιον ἀπὸ προσώπου τοῦ κυρίου"
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄλεθρος",
+      "display": "destrucción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "eterno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "de·rostro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Thessalonians 1:9",
+      "reason": "occurs near αἰώνιος, δίκη, πρόσωπον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

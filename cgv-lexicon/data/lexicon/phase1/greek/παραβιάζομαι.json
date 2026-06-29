@@ -1,0 +1,87 @@
+{
+  "lemma": "παραβιάζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παρεβιάσατο",
+      "count": 1
+    },
+    {
+      "form": "παρεβιάσαντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:15",
+      "form": "παρεβιάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 15,
+      "left_context": "εἰς τὸν οἶκόν μου ⸀μένετε· καὶ",
+      "right_context": "ἡμᾶς."
+    },
+    {
+      "ref": "Luke 24:29",
+      "form": "παρεβιάσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 29,
+      "left_context": "καὶ",
+      "right_context": "αὐτὸν λέγοντες· Μεῖνον μεθ’ ἡμῶν, ὅτι"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μένω",
+      "display": "permaneced",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:15",
+      "reason": "occurs near μένω, οἶκος"
+    },
+    {
+      "ref": "Luke 24:29",
+      "reason": "occurs near μένω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

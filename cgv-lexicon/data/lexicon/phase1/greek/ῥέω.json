@@ -1,0 +1,80 @@
+{
+  "lemma": "ῥέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ῥεύσουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 7:38",
+      "form": "ῥεύσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "John",
+      "chapter": 7,
+      "verse": 38,
+      "left_context": "γραφή, ποταμοὶ ἐκ τῆς κοιλίας αὐτοῦ",
+      "right_context": "ὕδατος ζῶντος."
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ποταμός",
+      "display": "ríos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοιλία",
+      "display": "de·vientre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 7:38",
+      "reason": "occurs near ζάω, κοιλία, ποταμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

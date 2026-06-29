@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐπισπείρω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐπέσπειρεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 13:25",
+      "form": "⸀ἐπέσπειρεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 25,
+      "left_context": "ἀνθρώπους ἦλθεν αὐτοῦ ὁ ἐχθρὸς καὶ",
+      "right_context": "ζιζάνια ἀνὰ μέσον τοῦ σίτου καὶ"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐχθρός",
+      "display": "enemigo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζιζάνιον",
+      "display": "cizañas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνά",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῖτος",
+      "display": "de·trigo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:25",
+      "reason": "occurs near ζιζάνιον, μέσος, ἀνά"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

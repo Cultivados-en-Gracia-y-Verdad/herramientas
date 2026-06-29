@@ -1,0 +1,446 @@
+{
+  "lemma": "καταλαμβάνω",
+  "language": "greek",
+  "total_occurrences": 13,
+  "forms": [
+    {
+      "form": "καταλάβῃ,",
+      "count": 2
+    },
+    {
+      "form": "καταλάβητε.",
+      "count": 1
+    },
+    {
+      "form": "καταλαβέσθαι",
+      "count": 1
+    },
+    {
+      "form": "καταλάβω,",
+      "count": 1
+    },
+    {
+      "form": "κατελήμφθην",
+      "count": 1
+    },
+    {
+      "form": "κατειληφέναι·",
+      "count": 1
+    },
+    {
+      "form": "καταλαβόμενοι",
+      "count": 1
+    },
+    {
+      "form": "καταλαμβάνομαι",
+      "count": 1
+    },
+    {
+      "form": "⸀κατελαβόμην",
+      "count": 1
+    },
+    {
+      "form": "κατέλαβεν.",
+      "count": 1
+    },
+    {
+      "form": "καταλάβῃ",
+      "count": 1
+    },
+    {
+      "form": "κατέλαβεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 5,
+      "infinitive": 2,
+      "indicative": 5,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 11,
+      "perfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 8,
+      "middle": 4,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:24",
+      "form": "καταλάβητε.",
+      "morph": "V-A-A-S-2P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 24,
+      "left_context": "λαμβάνει τὸ βραβεῖον; οὕτως τρέχετε ἵνα",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Thessalonians 5:4",
+      "form": "καταλάβῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "ἵνα ἡ ἡμέρα ὑμᾶς ὡς ⸀κλέπτης",
+      "right_context": ""
+    },
+    {
+      "ref": "Ephesians 3:18",
+      "form": "καταλαβέσθαι",
+      "morph": "V-A-M-N",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "ἵνα ἐξισχύσητε",
+      "right_context": "σὺν πᾶσιν τοῖς ἁγίοις τί τὸ"
+    },
+    {
+      "ref": "Philippians 3:12",
+      "form": "καταλάβω,",
+      "morph": "V-A-A-S-1S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "ἤδη τετελείωμαι, διώκω δὲ εἰ καὶ",
+      "right_context": "ἐφ’ ᾧ καὶ κατελήμφθην ὑπὸ ⸀Χριστοῦ."
+    },
+    {
+      "ref": "Philippians 3:12",
+      "form": "κατελήμφθην",
+      "morph": "V-A-P-I-1S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "εἰ καὶ καταλάβω, ἐφ’ ᾧ καὶ",
+      "right_context": "ὑπὸ ⸀Χριστοῦ."
+    },
+    {
+      "ref": "Philippians 3:13",
+      "form": "κατειληφέναι·",
+      "morph": "V-X-A-N",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "ἀδελφοί, ἐγὼ ἐμαυτὸν ⸀οὐ λογίζομαι",
+      "right_context": "ἓν δέ, τὰ μὲν ὀπίσω ἐπιλανθανόμενος"
+    },
+    {
+      "ref": "Acts 4:13",
+      "form": "καταλαβόμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "τοῦ Πέτρου παρρησίαν καὶ Ἰωάννου καὶ",
+      "right_context": "ὅτι ἄνθρωποι ἀγράμματοί εἰσιν καὶ ἰδιῶται,"
+    },
+    {
+      "ref": "Acts 10:34",
+      "form": "καταλαμβάνομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 34,
+      "left_context": "Πέτρος τὸ στόμα εἶπεν· Ἐπ’ ἀληθείας",
+      "right_context": "ὅτι οὐκ ἔστιν προσωπολήμπτης ὁ θεός,"
+    },
+    {
+      "ref": "Acts 25:25",
+      "form": "⸀κατελαβόμην",
+      "morph": "V-A-M-I-1S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 25,
+      "left_context": "ἐγὼ δὲ",
+      "right_context": "μηδὲν ἄξιον ⸂αὐτὸν θανάτου⸃ πεπραχέναι, ⸀αὐτοῦ"
+    },
+    {
+      "ref": "John 1:5",
+      "form": "κατέλαβεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "φαίνει, καὶ ἡ σκοτία αὐτὸ οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 12:35",
+      "form": "καταλάβῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 35,
+      "left_context": "φῶς ἔχετε, ἵνα μὴ σκοτία ὑμᾶς",
+      "right_context": "καὶ ὁ περιπατῶν ἐν τῇ σκοτίᾳ"
+    },
+    {
+      "ref": "Mark 9:18",
+      "form": "καταλάβῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "καὶ ὅπου ⸀ἐὰν αὐτὸν",
+      "right_context": "ῥήσσει αὐτόν, καὶ ἀφρίζει καὶ τρίζει"
+    },
+    {
+      "ref": "Romans 9:30",
+      "form": "κατέλαβεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 30,
+      "left_context": "ὅτι ἔθνη τὰ μὴ διώκοντα δικαιοσύνην",
+      "right_context": "δικαιοσύνην, δικαιοσύνην δὲ τὴν ἐκ πίστεως·"
+    }
+  ],
+  "books": {
+    "Philippians": 3,
+    "Acts": 3,
+    "John": 2,
+    "1 Corinthians": 1,
+    "1 Thessalonians": 1,
+    "Ephesians": 1,
+    "Mark": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "διώκω",
+      "display": "perseguo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καταλαμβάνω",
+      "display": "fue comprendido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σκοτία",
+      "display": "oscuridad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βραβεῖον",
+      "display": "premio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρέχω",
+      "display": "corred",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτης",
+      "display": "ladrón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξισχύω",
+      "display": "fortalecáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελειόω",
+      "display": "he perfeccionado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμαυτοῦ",
+      "display": "me",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λογίζομαι",
+      "display": "considero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀπίσω",
+      "display": "detrás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "de·Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησία",
+      "display": "franqueza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "de·Juan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγράμματος",
+      "display": "sin·letras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "boca",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 12:35",
+      "form": "καταλάβῃ,",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "⸀ὡς τὸ φῶς ἔχετε, ἵνα μὴ σκοτία ὑμᾶς καταλάβῃ, καὶ ὁ περιπατῶν ἐν τῇ σκοτίᾳ οὐκ οἶδεν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Philippians 3:13",
+      "negator": "⸀οὐ",
+      "clause_text": "ἀδελφοί, ἐγὼ ἐμαυτὸν ⸀οὐ λογίζομαι κατειληφέναι· ἓν δέ, τὰ μὲν ὀπίσω ἐπιλανθανόμενος τοῖς δὲ"
+    },
+    {
+      "ref": "Acts 10:34",
+      "negator": "οὐκ",
+      "clause_text": "Ἀνοίξας δὲ Πέτρος τὸ στόμα εἶπεν· Ἐπ’ ἀληθείας καταλαμβάνομαι ὅτι οὐκ ἔστιν προσωπολήμπτης ὁ θεός,"
+    },
+    {
+      "ref": "John 1:5",
+      "negator": "οὐ",
+      "clause_text": "τῇ σκοτίᾳ φαίνει, καὶ ἡ σκοτία αὐτὸ οὐ κατέλαβεν."
+    },
+    {
+      "ref": "John 12:35",
+      "negator": "μὴ",
+      "clause_text": "⸀ὡς τὸ φῶς ἔχετε, ἵνα μὴ σκοτία ὑμᾶς καταλάβῃ, καὶ ὁ περιπατῶν ἐν τῇ σκοτίᾳ οὐκ οἶδεν"
+    },
+    {
+      "ref": "Romans 9:30",
+      "negator": "μὴ",
+      "clause_text": "οὖν ἐροῦμεν; ὅτι ἔθνη τὰ μὴ διώκοντα δικαιοσύνην κατέλαβεν δικαιοσύνην, δικαιοσύνην δὲ τὴν ἐκ πίστεως·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:34",
+      "reason": "occurs near καταλαμβάνω"
+    },
+    {
+      "ref": "Acts 25:25",
+      "reason": "occurs near καταλαμβάνω"
+    },
+    {
+      "ref": "Acts 4:13",
+      "reason": "occurs near καταλαμβάνω"
+    },
+    {
+      "ref": "Philippians 3:12",
+      "reason": "occurs near διώκω, καταλαμβάνω"
+    },
+    {
+      "ref": "Philippians 3:13",
+      "reason": "occurs near καταλαμβάνω"
+    },
+    {
+      "ref": "John 12:35",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 1:5",
+      "reason": "occurs near καταλαμβάνω, σκοτία"
+    },
+    {
+      "ref": "1 Corinthians 9:24",
+      "reason": "occurs near βραβεῖον, καταλαμβάνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

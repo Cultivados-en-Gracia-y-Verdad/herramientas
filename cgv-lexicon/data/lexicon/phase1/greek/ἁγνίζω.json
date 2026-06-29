@@ -1,0 +1,319 @@
+{
+  "lemma": "ἁγνίζω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἁγνίζει",
+      "count": 1
+    },
+    {
+      "form": "ἡγνικότες",
+      "count": 1
+    },
+    {
+      "form": "ἁγνίσθητι",
+      "count": 1
+    },
+    {
+      "form": "ἁγνισθεὶς",
+      "count": 1
+    },
+    {
+      "form": "ἡγνισμένον",
+      "count": 1
+    },
+    {
+      "form": "ἁγνίσωσιν",
+      "count": 1
+    },
+    {
+      "form": "ἁγνίσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 3,
+      "imperative": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "perfect": 2,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 4,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 3:3",
+      "form": "ἁγνίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 John",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "ἔχων τὴν ἐλπίδα ταύτην ἐπ’ αὐτῷ",
+      "right_context": "ἑαυτὸν καθὼς ἐκεῖνος ἁγνός ἐστιν."
+    },
+    {
+      "ref": "1 Peter 1:22",
+      "form": "ἡγνικότες",
+      "morph": "V-X-A-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "Τὰς ψυχὰς ὑμῶν",
+      "right_context": "ἐν τῇ ὑπακοῇ τῆς ⸀ἀληθείας εἰς"
+    },
+    {
+      "ref": "Acts 21:24",
+      "form": "ἁγνίσθητι",
+      "morph": "V-A-P-D-2S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 24,
+      "left_context": "τούτους παραλαβὼν",
+      "right_context": "σὺν αὐτοῖς καὶ δαπάνησον ἐπ’ αὐτοῖς"
+    },
+    {
+      "ref": "Acts 21:26",
+      "form": "ἁγνισθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 26,
+      "left_context": "ἄνδρας τῇ ἐχομένῃ ἡμέρᾳ σὺν αὐτοῖς",
+      "right_context": "εἰσῄει εἰς τὸ ἱερόν, διαγγέλλων τὴν"
+    },
+    {
+      "ref": "Acts 24:18",
+      "form": "ἡγνισμένον",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 18,
+      "left_context": "ἐν ⸀αἷς εὗρόν με",
+      "right_context": "ἐν τῷ ἱερῷ, οὐ μετὰ ὄχλου"
+    },
+    {
+      "ref": "John 11:55",
+      "form": "ἁγνίσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 55,
+      "left_context": "τῆς χώρας πρὸ τοῦ πάσχα ἵνα",
+      "right_context": "ἑαυτούς."
+    },
+    {
+      "ref": "James 4:8",
+      "form": "ἁγνίσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "⸀ἐγγιεῖ ὑμῖν. καθαρίσατε χεῖρας, ἁμαρτωλοί, καὶ",
+      "right_context": "καρδίας, δίψυχοι."
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "1 John": 1,
+    "1 Peter": 1,
+    "John": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁγνός",
+      "display": "puro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπακοή",
+      "display": "obediencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαπανάω",
+      "display": "gasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴσειμι",
+      "display": "entraba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαγγέλλω",
+      "display": "anunciando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "de·región",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχα",
+      "display": "de·pascua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαρίζω",
+      "display": "limpiad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτωλός",
+      "display": "pecadores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίψυχος",
+      "display": "de·doble·ánimo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 21:24",
+      "form": "ἁγνίσθητι",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "τούτους παραλαβὼν ἁγνίσθητι σὺν αὐτοῖς καὶ δαπάνησον ἐπ’ αὐτοῖς ἵνα ⸀ξυρήσονται"
+    },
+    {
+      "ref": "James 4:8",
+      "form": "ἁγνίσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "θεῷ, καὶ ⸀ἐγγιεῖ ὑμῖν. καθαρίσατε χεῖρας, ἁμαρτωλοί, καὶ ἁγνίσατε καρδίας, δίψυχοι."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 24:18",
+      "negator": "οὐ",
+      "clause_text": "ἐν ⸀αἷς εὗρόν με ἡγνισμένον ἐν τῷ ἱερῷ, οὐ μετὰ ὄχλου οὐδὲ μετὰ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 4:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 21:26",
+      "reason": "occurs near ἱερός"
+    },
+    {
+      "ref": "Acts 24:18",
+      "reason": "occurs near ἱερός"
+    },
+    {
+      "ref": "1 John 3:3",
+      "reason": "occurs near ἁγνός, ἐλπίς, ἑαυτοῦ"
+    },
+    {
+      "ref": "1 Peter 1:22",
+      "reason": "occurs near ψυχή"
+    },
+    {
+      "ref": "John 11:55",
+      "reason": "occurs near ἑαυτοῦ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "διαγρηγορέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διαγρηγορήσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 9:32",
+      "form": "διαγρηγορήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 32,
+      "left_context": "οἱ σὺν αὐτῷ ἦσαν βεβαρημένοι ὕπνῳ·",
+      "right_context": "δὲ εἶδον τὴν δόξαν αὐτοῦ καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βαρέω",
+      "display": "pesados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕπνος",
+      "display": "sueño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 9:32",
+      "reason": "occurs near βαρέω, δόξα, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

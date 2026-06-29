@@ -1,0 +1,125 @@
+{
+  "lemma": "καταχέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κατέχεεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 14:3",
+      "form": "κατέχεεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 3,
+      "left_context": "νάρδου πιστικῆς πολυτελοῦς· ⸀συντρίψασα ⸀τὴν ἀλάβαστρον",
+      "right_context": "⸀αὐτοῦ τῆς κεφαλῆς."
+    },
+    {
+      "ref": "Matthew 26:7",
+      "form": "κατέχεεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 7,
+      "left_context": "γυνὴ ⸂ἔχουσα ἀλάβαστρον μύρου⸃ βαρυτίμου καὶ",
+      "right_context": "ἐπὶ ⸂τῆς κεφαλῆς⸃ αὐτοῦ ἀνακειμένου."
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κεφαλή",
+      "display": "de·cabeza",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πιστικός",
+      "display": "de·pura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολυτελής",
+      "display": "de·costosa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συντρίβω",
+      "display": "quebrantada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλάβαστρος",
+      "display": "alabastro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλάβαστρον",
+      "display": "alabastro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μύρον",
+      "display": "de·perfume",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαρύτιμος",
+      "display": "muy·precioso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάκειμαι",
+      "display": "reclinarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 14:3",
+      "reason": "occurs near κεφαλή, πιστικός, πολυτελής"
+    },
+    {
+      "ref": "Matthew 26:7",
+      "reason": "occurs near κεφαλή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

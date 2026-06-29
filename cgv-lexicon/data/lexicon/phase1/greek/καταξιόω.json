@@ -1,0 +1,156 @@
+{
+  "lemma": "καταξιόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "καταξιωθῆναι",
+      "count": 1
+    },
+    {
+      "form": "⸂κατηξιώθησαν",
+      "count": 1
+    },
+    {
+      "form": "καταξιωθέντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 1:5",
+      "form": "καταξιωθῆναι",
+      "morph": "V-A-P-N",
+      "book": "2 Thessalonians",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "δικαίας κρίσεως τοῦ θεοῦ, εἰς τὸ",
+      "right_context": "ὑμᾶς τῆς βασιλείας τοῦ θεοῦ, ὑπὲρ"
+    },
+    {
+      "ref": "Acts 5:41",
+      "form": "⸂κατηξιώθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 41,
+      "left_context": "χαίροντες ἀπὸ προσώπου τοῦ συνεδρίου ὅτι",
+      "right_context": "ὑπὲρ τοῦ ὀνόματος⸃ ἀτιμασθῆναι·"
+    },
+    {
+      "ref": "Luke 20:35",
+      "form": "καταξιωθέντες",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 35,
+      "left_context": "οἱ δὲ",
+      "right_context": "τοῦ αἰῶνος ἐκείνου τυχεῖν καὶ τῆς"
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρίσις",
+      "display": "de·juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "de·reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "de·rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέδριον",
+      "display": "de·sanedrín",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "de·nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀτιμάζω",
+      "display": "deshonrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "de·siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τυγχάνω",
+      "display": "suceder",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Thessalonians 1:5",
+      "reason": "occurs near βασιλεία, θεός, κρίσις"
+    },
+    {
+      "ref": "Acts 5:41",
+      "reason": "occurs near πρόσωπον, συνέδριον"
+    },
+    {
+      "ref": "Luke 20:35",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

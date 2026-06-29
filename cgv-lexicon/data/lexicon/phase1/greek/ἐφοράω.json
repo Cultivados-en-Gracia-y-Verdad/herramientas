@@ -1,0 +1,125 @@
+{
+  "lemma": "ἐφοράω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἔπιδε",
+      "count": 1
+    },
+    {
+      "form": "ἐπεῖδεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 4:29",
+      "form": "ἔπιδε",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 29,
+      "left_context": "καὶ τὰ νῦν, κύριε,",
+      "right_context": "ἐπὶ τὰς ἀπειλὰς αὐτῶν καὶ δὸς"
+    },
+    {
+      "ref": "Luke 1:25",
+      "form": "ἐπεῖδεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 25,
+      "left_context": "μοι ⸀πεποίηκεν κύριος ἐν ἡμέραις αἷς",
+      "right_context": "⸀ἀφελεῖν ὄνειδός μου ἐν ἀνθρώποις."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπειλή",
+      "display": "amenazas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφαιρέω",
+      "display": "quitar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνειδος",
+      "display": "afrenta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 4:29",
+      "form": "ἔπιδε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "καὶ τὰ νῦν, κύριε, ἔπιδε ἐπὶ τὰς ἀπειλὰς αὐτῶν καὶ δὸς τοῖς δούλοις"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 4:29",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 1:25",
+      "reason": "occurs near κύριος, ἀφαιρέω, ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

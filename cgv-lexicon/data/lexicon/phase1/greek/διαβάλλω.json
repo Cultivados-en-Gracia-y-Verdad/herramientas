@@ -1,0 +1,74 @@
+{
+  "lemma": "διαβάλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διεβλήθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 16:1",
+      "form": "διεβλήθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 1,
+      "left_context": "πλούσιος ὃς εἶχεν οἰκονόμον, καὶ οὗτος",
+      "right_context": "αὐτῷ ὡς διασκορπίζων τὰ ὑπάρχοντα αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἰκονόμος",
+      "display": "mayordomo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διασκορπίζω",
+      "display": "dispersando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:1",
+      "reason": "occurs near διασκορπίζω, οἰκονόμος, ὑπάρχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

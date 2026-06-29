@@ -1,0 +1,101 @@
+{
+  "lemma": "συμβασιλεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συμβασιλεύσωμεν.",
+      "count": 1
+    },
+    {
+      "form": "συμβασιλεύσομεν·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:8",
+      "form": "συμβασιλεύσωμεν.",
+      "morph": "V-A-A-S-1P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "γε ἐβασιλεύσατε, ἵνα καὶ ἡμεῖς ὑμῖν",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Timothy 2:12",
+      "form": "συμβασιλεύσομεν·",
+      "morph": "V-F-A-I-1P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "εἰ ὑπομένομεν, καὶ",
+      "right_context": "εἰ ⸀ἀρνησόμεθα, κἀκεῖνος ἀρνήσεται ἡμᾶς·"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀρνέομαι",
+      "display": "negaremos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύω",
+      "display": "reinasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομένω",
+      "display": "perseveramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀκεῖνος",
+      "display": "y·aquel",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 4:8",
+      "reason": "occurs near βασιλεύω"
+    },
+    {
+      "ref": "2 Timothy 2:12",
+      "reason": "occurs near κἀκεῖνος, ἀρνέομαι, ὑπομένω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

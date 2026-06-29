@@ -1,0 +1,629 @@
+{
+  "lemma": "ἡγέομαι",
+  "language": "greek",
+  "total_occurrences": 28,
+  "forms": [
+    {
+      "form": "ἡγήσατο",
+      "count": 3
+    },
+    {
+      "form": "ἡγησάμην",
+      "count": 2
+    },
+    {
+      "form": "ἡγούμενοι",
+      "count": 2
+    },
+    {
+      "form": "ἡγεῖσθε,",
+      "count": 2
+    },
+    {
+      "form": "ἥγημαι",
+      "count": 2
+    },
+    {
+      "form": "ἡγοῦμαι",
+      "count": 2
+    },
+    {
+      "form": "ἡγησάμενος",
+      "count": 2
+    },
+    {
+      "form": "ἡγουμένους",
+      "count": 2
+    },
+    {
+      "form": "ἡγούμενος",
+      "count": 2
+    },
+    {
+      "form": "ἡγεῖσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἡγείσθωσαν,",
+      "count": 1
+    },
+    {
+      "form": "ἡγοῦμαι,",
+      "count": 1
+    },
+    {
+      "form": "ἡγοῦνται,",
+      "count": 1
+    },
+    {
+      "form": "ἡγουμένων",
+      "count": 1
+    },
+    {
+      "form": "ἡγουμένοις",
+      "count": 1
+    },
+    {
+      "form": "ἡγούμενον",
+      "count": 1
+    },
+    {
+      "form": "ἡγούμενος,",
+      "count": 1
+    },
+    {
+      "form": "ἡγήσασθε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 11,
+      "imperative": 4,
+      "participle": 12
+    },
+    "tenses": {
+      "present": 18,
+      "aorist": 8,
+      "perfect": 2
+    },
+    "voices": {
+      "middle": 28
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 5:13",
+      "form": "ἡγεῖσθαι",
+      "morph": "V-P-M-N",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "καὶ",
+      "right_context": "αὐτοὺς ⸀ὑπερεκπερισσοῦ ἐν ἀγάπῃ διὰ τὸ"
+    },
+    {
+      "ref": "1 Timothy 1:12",
+      "form": "ἡγήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "τῷ κυρίῳ ἡμῶν, ὅτι πιστόν με",
+      "right_context": "θέμενος εἰς διακονίαν,"
+    },
+    {
+      "ref": "1 Timothy 6:1",
+      "form": "ἡγείσθωσαν,",
+      "morph": "V-P-M-D-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "τοὺς ἰδίους δεσπότας πάσης τιμῆς ἀξίους",
+      "right_context": "ἵνα μὴ τὸ ὄνομα τοῦ θεοῦ"
+    },
+    {
+      "ref": "2 Corinthians 9:5",
+      "form": "ἡγησάμην",
+      "morph": "V-A-M-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 5,
+      "left_context": "ἀναγκαῖον οὖν",
+      "right_context": "παρακαλέσαι τοὺς ἀδελφοὺς ἵνα προέλθωσιν ⸀εἰς"
+    },
+    {
+      "ref": "2 Peter 1:13",
+      "form": "ἡγοῦμαι,",
+      "morph": "V-P-M-I-1S",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "δίκαιον δὲ",
+      "right_context": "ἐφ’ ὅσον εἰμὶ ἐν τούτῳ τῷ"
+    },
+    {
+      "ref": "2 Peter 2:13",
+      "form": "ἡγούμενοι",
+      "morph": "V-P-M-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "⸀ἀδικούμενοι μισθὸν ἀδικίας· ἡδονὴν",
+      "right_context": "τὴν ἐν ἡμέρᾳ τρυφήν, σπίλοι καὶ"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "form": "ἡγοῦνται,",
+      "morph": "V-P-M-I-3P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "⸀κύριος τῆς ἐπαγγελίας, ὥς τινες βραδύτητα",
+      "right_context": "ἀλλὰ μακροθυμεῖ εἰς ⸀ὑμᾶς, μὴ βουλόμενός"
+    },
+    {
+      "ref": "2 Peter 3:15",
+      "form": "ἡγεῖσθε,",
+      "morph": "V-P-M-D-2P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "τὴν τοῦ κυρίου ἡμῶν μακροθυμίαν σωτηρίαν",
+      "right_context": "καθὼς καὶ ὁ ἀγαπητὸς ἡμῶν ἀδελφὸς"
+    },
+    {
+      "ref": "2 Thessalonians 3:15",
+      "form": "ἡγεῖσθε,",
+      "morph": "V-P-M-D-2P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "καὶ μὴ ὡς ἐχθρὸν",
+      "right_context": "ἀλλὰ νουθετεῖτε ὡς ἀδελφόν."
+    },
+    {
+      "ref": "Philippians 2:3",
+      "form": "ἡγούμενοι",
+      "morph": "V-P-M-P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "κατὰ⸃ κενοδοξίαν, ἀλλὰ τῇ ταπεινοφροσύνῃ ἀλλήλους",
+      "right_context": "ὑπερέχοντας ἑαυτῶν,"
+    },
+    {
+      "ref": "Philippians 2:6",
+      "form": "ἡγήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "ἐν μορφῇ θεοῦ ὑπάρχων οὐχ ἁρπαγμὸν",
+      "right_context": "τὸ εἶναι ἴσα θεῷ,"
+    },
+    {
+      "ref": "Philippians 2:25",
+      "form": "ἡγησάμην",
+      "morph": "V-A-M-I-1S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "Ἀναγκαῖον δὲ",
+      "right_context": "Ἐπαφρόδιτον τὸν ἀδελφὸν καὶ συνεργὸν καὶ"
+    },
+    {
+      "ref": "Philippians 3:7",
+      "form": "ἥγημαι",
+      "morph": "V-X-M-I-1S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "Ἀλλὰ ἅτινα ἦν μοι κέρδη, ταῦτα",
+      "right_context": "διὰ τὸν Χριστὸν ζημίαν."
+    },
+    {
+      "ref": "Philippians 3:8",
+      "form": "ἡγοῦμαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "ἀλλὰ ⸀μενοῦνγε καὶ",
+      "right_context": "πάντα ζημίαν εἶναι διὰ τὸ ὑπερέχον"
+    },
+    {
+      "ref": "Philippians 3:8",
+      "form": "ἡγοῦμαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "δι’ ὃν τὰ πάντα ἐζημιώθην, καὶ",
+      "right_context": "⸀σκύβαλα ἵνα Χριστὸν κερδήσω"
+    },
+    {
+      "ref": "Hebrews 10:29",
+      "form": "ἡγησάμενος",
+      "morph": "V-A-M-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 29,
+      "left_context": "καὶ τὸ αἷμα τῆς διαθήκης κοινὸν",
+      "right_context": "ἐν ᾧ ἡγιάσθη, καὶ τὸ πνεῦμα"
+    },
+    {
+      "ref": "Hebrews 11:11",
+      "form": "ἡγήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 11,
+      "left_context": "καὶ παρὰ καιρὸν ⸀ἡλικίας, ἐπεὶ πιστὸν",
+      "right_context": "τὸν ἐπαγγειλάμενον·"
+    },
+    {
+      "ref": "Hebrews 11:26",
+      "form": "ἡγησάμενος",
+      "morph": "V-A-M-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 26,
+      "left_context": "μείζονα πλοῦτον",
+      "right_context": "τῶν Αἰγύπτου θησαυρῶν τὸν ὀνειδισμὸν τοῦ"
+    },
+    {
+      "ref": "Hebrews 13:7",
+      "form": "ἡγουμένων",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "Μνημονεύετε τῶν",
+      "right_context": "ὑμῶν, οἵτινες ἐλάλησαν ὑμῖν τὸν λόγον"
+    },
+    {
+      "ref": "Hebrews 13:17",
+      "form": "ἡγουμένοις",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 17,
+      "left_context": "Πείθεσθε τοῖς",
+      "right_context": "ὑμῶν καὶ ὑπείκετε, αὐτοὶ γὰρ ἀγρυπνοῦσιν"
+    },
+    {
+      "ref": "Hebrews 13:24",
+      "form": "ἡγουμένους",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 24,
+      "left_context": "ἀσπάσασθε πάντας τοὺς",
+      "right_context": "ὑμῶν καὶ πάντας τοὺς ἁγίους. ἀσπάζονται"
+    },
+    {
+      "ref": "Acts 7:10",
+      "form": "ἡγούμενον",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "Φαραὼ βασιλέως Αἰγύπτου, καὶ κατέστησεν αὐτὸν",
+      "right_context": "ἐπ’ Αἴγυπτον ⸀καὶ ὅλον τὸν οἶκον"
+    },
+    {
+      "ref": "Acts 14:12",
+      "form": "ἡγούμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 12,
+      "left_context": "Παῦλον Ἑρμῆν, ἐπειδὴ αὐτὸς ἦν ὁ",
+      "right_context": "τοῦ λόγου."
+    },
+    {
+      "ref": "Acts 15:22",
+      "form": "ἡγουμένους",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 22,
+      "left_context": "τὸν ⸀καλούμενον Βαρσαββᾶν καὶ Σιλᾶν, ἄνδρας",
+      "right_context": "ἐν τοῖς ἀδελφοῖς,"
+    },
+    {
+      "ref": "Acts 26:2",
+      "form": "ἥγημαι",
+      "morph": "V-X-M-I-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 2,
+      "left_context": "ὧν ἐγκαλοῦμαι ὑπὸ Ἰουδαίων, βασιλεῦ Ἀγρίππα,",
+      "right_context": "ἐμαυτὸν μακάριον ἐπὶ σοῦ μέλλων ⸂σήμερον"
+    },
+    {
+      "ref": "Luke 22:26",
+      "form": "ἡγούμενος",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 26,
+      "left_context": "⸀γινέσθω ὡς ὁ νεώτερος, καὶ ὁ",
+      "right_context": "ὡς ὁ διακονῶν·"
+    },
+    {
+      "ref": "Matthew 2:6",
+      "form": "ἡγούμενος,",
+      "morph": "V-P-M-P",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "ἡγεμόσιν Ἰούδα· ἐκ σοῦ γὰρ ἐξελεύσεται",
+      "right_context": "ὅστις ποιμανεῖ τὸν λαόν μου τὸν"
+    },
+    {
+      "ref": "James 1:2",
+      "form": "ἡγήσασθε,",
+      "morph": "V-A-M-D-2P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "Πᾶσαν χαρὰν",
+      "right_context": "ἀδελφοί μου, ὅταν πειρασμοῖς περιπέσητε ποικίλοις,"
+    }
+  ],
+  "books": {
+    "Philippians": 6,
+    "Hebrews": 6,
+    "2 Peter": 4,
+    "Acts": 4,
+    "1 Timothy": 2,
+    "1 Thessalonians": 1,
+    "2 Corinthians": 1,
+    "2 Thessalonians": 1,
+    "Luke": 1,
+    "Matthew": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Αἴγυπτος",
+      "display": "de·Egipto",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "fiel",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναγκαῖος",
+      "display": "necesario",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζημία",
+      "display": "pérdida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "de·rey",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπερεκπερισσοῦ",
+      "display": "mucho·más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσπότης",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "de·honora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄξιος",
+      "display": "dignos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προέρχομαι",
+      "display": "adelantarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκαιος",
+      "display": "justo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικέω",
+      "display": "hacer·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθός",
+      "display": "salario",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 6:1",
+      "form": "ἡγείσθωσαν,",
+      "morph": "V-P-M-D-3P",
+      "clause_text": "ζυγὸν δοῦλοι, τοὺς ἰδίους δεσπότας πάσης τιμῆς ἀξίους ἡγείσθωσαν, ἵνα μὴ τὸ ὄνομα τοῦ θεοῦ καὶ ἡ"
+    },
+    {
+      "ref": "2 Peter 3:15",
+      "form": "ἡγεῖσθε,",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "καὶ τὴν τοῦ κυρίου ἡμῶν μακροθυμίαν σωτηρίαν ἡγεῖσθε, καθὼς καὶ ὁ ἀγαπητὸς ἡμῶν ἀδελφὸς Παῦλος κατὰ"
+    },
+    {
+      "ref": "2 Thessalonians 3:15",
+      "form": "ἡγεῖσθε,",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "καὶ μὴ ὡς ἐχθρὸν ἡγεῖσθε, ἀλλὰ νουθετεῖτε ὡς ἀδελφόν.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "James 1:2",
+      "form": "ἡγήσασθε,",
+      "morph": "V-A-M-D-2P",
+      "clause_text": "Πᾶσαν χαρὰν ἡγήσασθε, ἀδελφοί μου, ὅταν πειρασμοῖς περιπέσητε ποικίλοις,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 6:1",
+      "negator": "μὴ",
+      "clause_text": "ζυγὸν δοῦλοι, τοὺς ἰδίους δεσπότας πάσης τιμῆς ἀξίους ἡγείσθωσαν, ἵνα μὴ τὸ ὄνομα τοῦ θεοῦ καὶ ἡ"
+    },
+    {
+      "ref": "2 Thessalonians 3:15",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ ὡς ἐχθρὸν ἡγεῖσθε, ἀλλὰ νουθετεῖτε ὡς ἀδελφόν."
+    },
+    {
+      "ref": "Philippians 2:6",
+      "negator": "οὐχ",
+      "clause_text": "ὃς ἐν μορφῇ θεοῦ ὑπάρχων οὐχ ἁρπαγμὸν ἡγήσατο τὸ εἶναι ἴσα θεῷ,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 3:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 6:1",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Thessalonians 3:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 1:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 10:29",
+      "reason": "frequent in Hebrews"
+    },
+    {
+      "ref": "Philippians 2:25",
+      "reason": "frequent in Philippians"
+    },
+    {
+      "ref": "Acts 14:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Thessalonians 5:13",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

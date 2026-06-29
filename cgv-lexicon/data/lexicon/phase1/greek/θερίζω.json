@@ -1,0 +1,563 @@
+{
+  "lemma": "θερίζω",
+  "language": "greek",
+  "total_occurrences": 21,
+  "forms": [
+    {
+      "form": "θερίζων",
+      "count": 3
+    },
+    {
+      "form": "θερίσει",
+      "count": 2
+    },
+    {
+      "form": "θερίσομεν;",
+      "count": 1
+    },
+    {
+      "form": "θερίσει,",
+      "count": 1
+    },
+    {
+      "form": "θερίσει.",
+      "count": 1
+    },
+    {
+      "form": "θέρισον,",
+      "count": 1
+    },
+    {
+      "form": "θερίσαι,",
+      "count": 1
+    },
+    {
+      "form": "ἐθερίσθη",
+      "count": 1
+    },
+    {
+      "form": "θερίσει·",
+      "count": 1
+    },
+    {
+      "form": "θερίσομεν",
+      "count": 1
+    },
+    {
+      "form": "θερίζων.",
+      "count": 1
+    },
+    {
+      "form": "θερίζων·",
+      "count": 1
+    },
+    {
+      "form": "θερίζειν",
+      "count": 1
+    },
+    {
+      "form": "θερίζουσιν,",
+      "count": 1
+    },
+    {
+      "form": "θερίζεις",
+      "count": 1
+    },
+    {
+      "form": "θερίζουσιν",
+      "count": 1
+    },
+    {
+      "form": "θερίζω",
+      "count": 1
+    },
+    {
+      "form": "θερισάντων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 12,
+      "imperative": 1,
+      "infinitive": 2,
+      "participle": 6
+    },
+    "tenses": {
+      "future": 7,
+      "aorist": 4,
+      "present": 10
+    },
+    "voices": {
+      "active": 20,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:11",
+      "form": "θερίσομεν;",
+      "morph": "V-F-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 11,
+      "left_context": "μέγα εἰ ἡμεῖς ὑμῶν τὰ σαρκικὰ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 9:6",
+      "form": "θερίσει,",
+      "morph": "V-F-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 6,
+      "left_context": "δέ, ὁ σπείρων φειδομένως φειδομένως καὶ",
+      "right_context": "καὶ ὁ σπείρων ἐπ’ εὐλογίαις ἐπ’"
+    },
+    {
+      "ref": "2 Corinthians 9:6",
+      "form": "θερίσει.",
+      "morph": "V-F-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 6,
+      "left_context": "σπείρων ἐπ’ εὐλογίαις ἐπ’ εὐλογίαις καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 14:15",
+      "form": "θέρισον,",
+      "morph": "V-A-A-D-2S",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 15,
+      "left_context": "νεφέλης· Πέμψον τὸ δρέπανόν σου καὶ",
+      "right_context": "ὅτι ἦλθεν ἡ ὥρα θερίσαι, ὅτι"
+    },
+    {
+      "ref": "Revelation 14:15",
+      "form": "θερίσαι,",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 15,
+      "left_context": "καὶ θέρισον, ὅτι ἦλθεν ἡ ὥρα",
+      "right_context": "ὅτι ἐξηράνθη ὁ θερισμὸς τῆς γῆς."
+    },
+    {
+      "ref": "Revelation 14:16",
+      "form": "ἐθερίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 16,
+      "left_context": "δρέπανον αὐτοῦ ἐπὶ τὴν γῆν, καὶ",
+      "right_context": "ἡ γῆ."
+    },
+    {
+      "ref": "Galatians 6:7",
+      "form": "θερίσει·",
+      "morph": "V-F-A-I-3S",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "γὰρ ⸀ἐὰν σπείρῃ ἄνθρωπος, τοῦτο καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 6:8",
+      "form": "θερίσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "τὴν σάρκα ἑαυτοῦ ἐκ τῆς σαρκὸς",
+      "right_context": "φθοράν, ὁ δὲ σπείρων εἰς τὸ"
+    },
+    {
+      "ref": "Galatians 6:8",
+      "form": "θερίσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "εἰς τὸ πνεῦμα ἐκ τοῦ πνεύματος",
+      "right_context": "ζωὴν αἰώνιον."
+    },
+    {
+      "ref": "Galatians 6:9",
+      "form": "θερίσομεν",
+      "morph": "V-F-A-I-1P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "ποιοῦντες μὴ ⸀ἐγκακῶμεν, καιρῷ γὰρ ἰδίῳ",
+      "right_context": "μὴ ἐκλυόμενοι."
+    },
+    {
+      "ref": "John 4:36",
+      "form": "θερίζων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 36,
+      "left_context": "⸀ὁ",
+      "right_context": "μισθὸν λαμβάνει καὶ συνάγει καρπὸν εἰς"
+    },
+    {
+      "ref": "John 4:36",
+      "form": "θερίζων.",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 36,
+      "left_context": "ὁ σπείρων ὁμοῦ χαίρῃ καὶ ὁ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 4:37",
+      "form": "θερίζων·",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 37,
+      "left_context": "ἐστὶν ὁ σπείρων καὶ ἄλλος ὁ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 4:38",
+      "form": "θερίζειν",
+      "morph": "V-P-A-N",
+      "book": "John",
+      "chapter": 4,
+      "verse": 38,
+      "left_context": "ἐγὼ ἀπέστειλα ὑμᾶς",
+      "right_context": "ὃ οὐχ ὑμεῖς κεκοπιάκατε· ἄλλοι κεκοπιάκασιν,"
+    },
+    {
+      "ref": "Luke 12:24",
+      "form": "θερίζουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 24,
+      "left_context": "τοὺς κόρακας ὅτι οὐ σπείρουσιν οὐδὲ",
+      "right_context": "οἷς οὐκ ἔστιν ταμεῖον οὐδὲ ἀποθήκη,"
+    },
+    {
+      "ref": "Luke 19:21",
+      "form": "θερίζεις",
+      "morph": "V-P-A-I-2S",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 21,
+      "left_context": "εἶ, αἴρεις ὃ οὐκ ἔθηκας καὶ",
+      "right_context": "ὃ οὐκ ἔσπειρας."
+    },
+    {
+      "ref": "Luke 19:22",
+      "form": "θερίζων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 22,
+      "left_context": "εἰμι, αἴρων ὃ οὐκ ἔθηκα καὶ",
+      "right_context": "ὃ οὐκ ἔσπειρα;"
+    },
+    {
+      "ref": "Matthew 6:26",
+      "form": "θερίζουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 26,
+      "left_context": "τοῦ οὐρανοῦ ὅτι οὐ σπείρουσιν οὐδὲ",
+      "right_context": "οὐδὲ συνάγουσιν εἰς ἀποθήκας, καὶ ὁ"
+    },
+    {
+      "ref": "Matthew 25:24",
+      "form": "θερίζων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 24,
+      "left_context": "ἔγνων σε ὅτι σκληρὸς εἶ ἄνθρωπος,",
+      "right_context": "ὅπου οὐκ ἔσπειρας καὶ συνάγων ὅθεν"
+    },
+    {
+      "ref": "Matthew 25:26",
+      "form": "θερίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 26,
+      "left_context": "Πονηρὲ δοῦλε καὶ ὀκνηρέ, ᾔδεις ὅτι",
+      "right_context": "ὅπου οὐκ ἔσπειρα καὶ συνάγω ὅθεν"
+    },
+    {
+      "ref": "James 5:4",
+      "form": "θερισάντων",
+      "morph": "V-A-A-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "ὑμῶν κράζει, καὶ αἱ βοαὶ τῶν",
+      "right_context": "εἰς τὰ ὦτα Κυρίου Σαβαὼθ ⸀εἰσεληλύθασιν·"
+    }
+  ],
+  "books": {
+    "Galatians": 4,
+    "John": 4,
+    "Revelation": 3,
+    "Luke": 3,
+    "Matthew": 3,
+    "2 Corinthians": 2,
+    "1 Corinthians": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σπείρω",
+      "display": "sembrando",
+      "count": 12,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reune",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογία",
+      "display": "bendiciónes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "φειδομένως",
+      "display": "con·mesura",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θερίζω",
+      "display": "segar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αἴρω",
+      "display": "levantas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "pusiste",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σαρκικός",
+      "display": "carnales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "envia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δρέπανον",
+      "display": "hoz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξηραίνω",
+      "display": "fue secado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θερισμός",
+      "display": "cosecha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθορά",
+      "display": "corrupción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "eterna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκακέω",
+      "display": "desmayáramos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Revelation 14:15",
+      "form": "θέρισον,",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ἐπὶ τῆς νεφέλης· Πέμψον τὸ δρέπανόν σου καὶ θέρισον, ὅτι ἦλθεν ἡ ὥρα θερίσαι, ὅτι ἐξηράνθη ὁ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 6:9",
+      "negator": "μὴ",
+      "clause_text": "δὲ καλὸν ποιοῦντες μὴ ⸀ἐγκακῶμεν, καιρῷ γὰρ ἰδίῳ θερίσομεν μὴ ἐκλυόμενοι."
+    },
+    {
+      "ref": "John 4:38",
+      "negator": "οὐχ",
+      "clause_text": "ἐγὼ ἀπέστειλα ὑμᾶς θερίζειν ὃ οὐχ ὑμεῖς κεκοπιάκατε· ἄλλοι κεκοπιάκασιν, καὶ ὑμεῖς"
+    },
+    {
+      "ref": "Luke 12:24",
+      "negator": "οὐ",
+      "clause_text": "κατανοήσατε τοὺς κόρακας ὅτι οὐ σπείρουσιν οὐδὲ θερίζουσιν, οἷς οὐκ ἔστιν ταμεῖον οὐδὲ ἀποθήκη, καὶ ὁ"
+    },
+    {
+      "ref": "Luke 19:21",
+      "negator": "οὐκ",
+      "clause_text": "ἄνθρωπος αὐστηρὸς εἶ, αἴρεις ὃ οὐκ ἔθηκας καὶ θερίζεις ὃ οὐκ ἔσπειρας."
+    },
+    {
+      "ref": "Luke 19:22",
+      "negator": "οὐκ",
+      "clause_text": "ἄνθρωπος αὐστηρός εἰμι, αἴρων ὃ οὐκ ἔθηκα καὶ θερίζων ὃ οὐκ ἔσπειρα;"
+    },
+    {
+      "ref": "Matthew 6:26",
+      "negator": "οὐ",
+      "clause_text": "τὰ πετεινὰ τοῦ οὐρανοῦ ὅτι οὐ σπείρουσιν οὐδὲ θερίζουσιν οὐδὲ συνάγουσιν εἰς ἀποθήκας, καὶ ὁ πατὴρ ὑμῶν"
+    },
+    {
+      "ref": "Matthew 25:24",
+      "negator": "οὐκ",
+      "clause_text": "εἶπεν· Κύριε, ἔγνων σε ὅτι σκληρὸς εἶ ἄνθρωπος, θερίζων ὅπου οὐκ ἔσπειρας καὶ συνάγων ὅθεν οὐ διεσκόρπισας·"
+    },
+    {
+      "ref": "Matthew 25:26",
+      "negator": "οὐκ",
+      "clause_text": "εἶπεν αὐτῷ· Πονηρὲ δοῦλε καὶ ὀκνηρέ, ᾔδεις ὅτι θερίζω ὅπου οὐκ ἔσπειρα καὶ συνάγω ὅθεν οὐ διεσκόρπισα;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 14:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Galatians 6:7",
+      "reason": "occurs near σπείρω"
+    },
+    {
+      "ref": "Galatians 6:8",
+      "reason": "occurs near σπείρω"
+    },
+    {
+      "ref": "Galatians 6:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 4:36",
+      "reason": "occurs near συνάγω"
+    },
+    {
+      "ref": "John 4:37",
+      "reason": "occurs near σπείρω"
+    },
+    {
+      "ref": "John 4:38",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 12:24",
+      "reason": "occurs near σπείρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

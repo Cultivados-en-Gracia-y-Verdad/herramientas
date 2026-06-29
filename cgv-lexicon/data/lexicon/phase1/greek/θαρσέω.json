@@ -1,0 +1,335 @@
+{
+  "lemma": "θαρσέω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "Θάρσει,",
+      "count": 3
+    },
+    {
+      "form": "Θαρσεῖτε,",
+      "count": 2
+    },
+    {
+      "form": "⸀Θάρσει,",
+      "count": 1
+    },
+    {
+      "form": "θαρσεῖτε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 7
+    },
+    "tenses": {
+      "present": 7
+    },
+    "voices": {
+      "active": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:11",
+      "form": "⸀Θάρσει,",
+      "morph": "V-P-A-D-2S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 11,
+      "left_context": "νυκτὶ ἐπιστὰς αὐτῷ ὁ κύριος εἶπεν·",
+      "right_context": "ὡς γὰρ διεμαρτύρω τὰ περὶ ἐμοῦ"
+    },
+    {
+      "ref": "John 16:33",
+      "form": "θαρσεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "book": "John",
+      "chapter": 16,
+      "verse": 33,
+      "left_context": "ἐν τῷ κόσμῳ θλῖψιν ἔχετε, ἀλλὰ",
+      "right_context": "ἐγὼ νενίκηκα τὸν κόσμον."
+    },
+    {
+      "ref": "Mark 6:50",
+      "form": "Θαρσεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 50,
+      "left_context": "ἐλάλησεν μετ’ αὐτῶν, καὶ λέγει αὐτοῖς·",
+      "right_context": "ἐγώ εἰμι, μὴ φοβεῖσθε."
+    },
+    {
+      "ref": "Mark 10:49",
+      "form": "Θάρσει,",
+      "morph": "V-P-A-D-2S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 49,
+      "left_context": "καὶ φωνοῦσι τὸν τυφλὸν λέγοντες αὐτῷ·",
+      "right_context": "⸀ἔγειρε, φωνεῖ σε."
+    },
+    {
+      "ref": "Matthew 9:2",
+      "form": "Θάρσει,",
+      "morph": "V-P-A-D-2S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 2,
+      "left_context": "τὴν πίστιν αὐτῶν εἶπεν τῷ παραλυτικῷ·",
+      "right_context": "τέκνον· ⸀ἀφίενταί ⸂σου αἱ ἁμαρτίαι⸃."
+    },
+    {
+      "ref": "Matthew 9:22",
+      "form": "Θάρσει,",
+      "morph": "V-P-A-D-2S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "Ἰησοῦς ⸀στραφεὶς καὶ ἰδὼν αὐτὴν εἶπεν·",
+      "right_context": "θύγατερ· ἡ πίστις σου σέσωκέν σε."
+    },
+    {
+      "ref": "Matthew 14:27",
+      "form": "Θαρσεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 27,
+      "left_context": "δὲ ἐλάλησεν ⸂αὐτοῖς ὁ Ἰησοῦς⸃ λέγων·",
+      "right_context": "ἐγώ εἰμι· μὴ φοβεῖσθε."
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Mark": 2,
+    "Acts": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temed",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φωνέω",
+      "display": "llaman",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαμαρτύρομαι",
+      "display": "testificaste",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "tribulación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νικάω",
+      "display": "he vencido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τυφλός",
+      "display": "ciego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levanta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλυτικός",
+      "display": "paralítico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "son perdonado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρέφω",
+      "display": "vuelto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυγάτηρ",
+      "display": "hija",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "ha salvado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "habló",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 23:11",
+      "form": "⸀Θάρσει,",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "δὲ ἐπιούσῃ νυκτὶ ἐπιστὰς αὐτῷ ὁ κύριος εἶπεν· ⸀Θάρσει, ὡς γὰρ διεμαρτύρω τὰ περὶ ἐμοῦ εἰς Ἰερουσαλὴμ"
+    },
+    {
+      "ref": "John 16:33",
+      "form": "θαρσεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "εἰρήνην ἔχητε· ἐν τῷ κόσμῳ θλῖψιν ἔχετε, ἀλλὰ θαρσεῖτε, ἐγὼ νενίκηκα τὸν κόσμον."
+    },
+    {
+      "ref": "Mark 6:50",
+      "form": "Θαρσεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "δὲ εὐθὺς⸃ ἐλάλησεν μετ’ αὐτῶν, καὶ λέγει αὐτοῖς· Θαρσεῖτε, ἐγώ εἰμι, μὴ φοβεῖσθε."
+    },
+    {
+      "ref": "Mark 10:49",
+      "form": "Θάρσει,",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "⸂Φωνήσατε αὐτόν⸃. καὶ φωνοῦσι τὸν τυφλὸν λέγοντες αὐτῷ· Θάρσει, ⸀ἔγειρε, φωνεῖ σε."
+    },
+    {
+      "ref": "Matthew 9:2",
+      "form": "Θάρσει,",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ὁ Ἰησοῦς τὴν πίστιν αὐτῶν εἶπεν τῷ παραλυτικῷ· Θάρσει, τέκνον· ⸀ἀφίενταί ⸂σου αἱ ἁμαρτίαι⸃."
+    },
+    {
+      "ref": "Matthew 9:22",
+      "form": "Θάρσει,",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ὁ δὲ Ἰησοῦς ⸀στραφεὶς καὶ ἰδὼν αὐτὴν εἶπεν· Θάρσει, θύγατερ· ἡ πίστις σου σέσωκέν σε. καὶ ἐσώθη"
+    },
+    {
+      "ref": "Matthew 14:27",
+      "form": "Θαρσεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "⸀εὐθὺς δὲ ἐλάλησεν ⸂αὐτοῖς ὁ Ἰησοῦς⸃ λέγων· Θαρσεῖτε, ἐγώ εἰμι· μὴ φοβεῖσθε."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 6:50",
+      "negator": "μὴ",
+      "clause_text": "δὲ εὐθὺς⸃ ἐλάλησεν μετ’ αὐτῶν, καὶ λέγει αὐτοῖς· Θαρσεῖτε, ἐγώ εἰμι, μὴ φοβεῖσθε."
+    },
+    {
+      "ref": "Matthew 14:27",
+      "negator": "μὴ",
+      "clause_text": "⸀εὐθὺς δὲ ἐλάλησεν ⸂αὐτοῖς ὁ Ἰησοῦς⸃ λέγων· Θαρσεῖτε, ἐγώ εἰμι· μὴ φοβεῖσθε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 14:27",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 9:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 9:22",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 10:49",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 6:50",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 23:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 16:33",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

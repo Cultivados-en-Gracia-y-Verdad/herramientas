@@ -1,0 +1,239 @@
+{
+  "lemma": "ἐκλύομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐκλυόμενοι.",
+      "count": 2
+    },
+    {
+      "form": "ἐκλύου",
+      "count": 1
+    },
+    {
+      "form": "ἐκλυθήσονται",
+      "count": 1
+    },
+    {
+      "form": "ἐκλυθῶσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "imperative": 1,
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 3,
+      "future": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 6:9",
+      "form": "ἐκλυόμενοι.",
+      "morph": "V-P-P-P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "⸀ἐγκακῶμεν, καιρῷ γὰρ ἰδίῳ θερίσομεν μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 12:3",
+      "form": "ἐκλυόμενοι.",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 3,
+      "left_context": "ἵνα μὴ κάμητε ταῖς ψυχαῖς ὑμῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 12:5",
+      "form": "ἐκλύου",
+      "morph": "V-P-P-D-2S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "μου, μὴ ὀλιγώρει παιδείας κυρίου, μηδὲ",
+      "right_context": "ὑπ’ αὐτοῦ ἐλεγχόμενος·"
+    },
+    {
+      "ref": "Mark 8:3",
+      "form": "ἐκλυθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 3,
+      "left_context": "ἀπολύσω αὐτοὺς νήστεις εἰς οἶκον αὐτῶν,",
+      "right_context": "ἐν τῇ ὁδῷ· ⸂καί τινες⸃ αὐτῶν"
+    },
+    {
+      "ref": "Matthew 15:32",
+      "form": "ἐκλυθῶσιν",
+      "morph": "V-A-P-S-3P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 32,
+      "left_context": "ἀπολῦσαι αὐτοὺς νήστεις οὐ θέλω, μήποτε",
+      "right_context": "ἐν τῇ ὁδῷ."
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "Galatians": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νῆστις",
+      "display": "en·ayunas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θερίζω",
+      "display": "segaremos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάμνω",
+      "display": "cansarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλιγωρέω",
+      "display": "menosprecia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδεία",
+      "display": "de·disciplina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλέγχω",
+      "display": "reprendido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Hebrews 12:5",
+      "form": "ἐκλύου",
+      "morph": "V-P-P-D-2S",
+      "clause_text": "διαλέγεται, Υἱέ μου, μὴ ὀλιγώρει παιδείας κυρίου, μηδὲ ἐκλύου ὑπ’ αὐτοῦ ἐλεγχόμενος·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 6:9",
+      "negator": "μὴ",
+      "clause_text": "ποιοῦντες μὴ ⸀ἐγκακῶμεν, καιρῷ γὰρ ἰδίῳ θερίσομεν μὴ ἐκλυόμενοι."
+    },
+    {
+      "ref": "Hebrews 12:5",
+      "negator": "μηδὲ",
+      "clause_text": "διαλέγεται, Υἱέ μου, μὴ ὀλιγώρει παιδείας κυρίου, μηδὲ ἐκλύου ὑπ’ αὐτοῦ ἐλεγχόμενος·"
+    },
+    {
+      "ref": "Matthew 15:32",
+      "negator": "οὐ",
+      "clause_text": "φάγωσιν· καὶ ἀπολῦσαι αὐτοὺς νήστεις οὐ θέλω, μήποτε ἐκλυθῶσιν ἐν τῇ ὁδῷ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 12:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 6:9",
+      "reason": "occurs near θερίζω, καιρός, ἴδιος"
+    },
+    {
+      "ref": "Mark 8:3",
+      "reason": "occurs near νῆστις, ὁδός"
+    },
+    {
+      "ref": "Matthew 15:32",
+      "reason": "occurs near νῆστις, ὁδός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

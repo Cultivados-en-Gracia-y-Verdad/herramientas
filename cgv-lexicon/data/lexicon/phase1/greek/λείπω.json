@@ -1,0 +1,277 @@
+{
+  "lemma": "λείπω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "λείπει·",
+      "count": 1
+    },
+    {
+      "form": "λειπόμενοι.",
+      "count": 1
+    },
+    {
+      "form": "λείπεται",
+      "count": 1
+    },
+    {
+      "form": "⸀λειπόμενοι",
+      "count": 1
+    },
+    {
+      "form": "λείποντα",
+      "count": 1
+    },
+    {
+      "form": "λείπῃ.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 3,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 6
+    },
+    "voices": {
+      "active": 3,
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 18:22",
+      "form": "λείπει·",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 22,
+      "left_context": "Ἰησοῦς εἶπεν αὐτῷ· Ἔτι ἕν σοι",
+      "right_context": "πάντα ὅσα ἔχεις πώλησον καὶ διάδος"
+    },
+    {
+      "ref": "James 1:4",
+      "form": "λειπόμενοι.",
+      "morph": "V-P-M-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "ἦτε τέλειοι καὶ ὁλόκληροι, ἐν μηδενὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "James 1:5",
+      "form": "λείπεται",
+      "morph": "V-P-M-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "Εἰ δέ τις ὑμῶν",
+      "right_context": "σοφίας, αἰτείτω παρὰ τοῦ διδόντος θεοῦ"
+    },
+    {
+      "ref": "James 2:15",
+      "form": "⸀λειπόμενοι",
+      "morph": "V-P-M-P",
+      "book": "James",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "ἀδελφὸς ἢ ἀδελφὴ γυμνοὶ ὑπάρχωσιν καὶ",
+      "right_context": "τῆς ἐφημέρου τροφῆς,"
+    },
+    {
+      "ref": "Titus 1:5",
+      "form": "λείποντα",
+      "morph": "V-P-A-P",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "⸀ἀπέλιπόν σε ἐν Κρήτῃ ἵνα τὰ",
+      "right_context": "ἐπιδιορθώσῃ, καὶ καταστήσῃς κατὰ πόλιν πρεσβυτέρους,"
+    },
+    {
+      "ref": "Titus 3:13",
+      "form": "λείπῃ.",
+      "morph": "V-P-A-S-3S",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "⸀Ἀπολλῶν σπουδαίως πρόπεμψον, ἵνα μηδὲν αὐτοῖς",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "James": 3,
+    "Titus": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πωλέω",
+      "display": "vende",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέλειος",
+      "display": "perfectos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁλόκληρος",
+      "display": "enteros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σοφία",
+      "display": "de·sabiduría",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτέω",
+      "display": "peda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφή",
+      "display": "hermana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυμνός",
+      "display": "desnudos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existieran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφήμερος",
+      "display": "de·pasajera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τροφή",
+      "display": "de·alimento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κρήτη",
+      "display": "Creta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιδιορθόω",
+      "display": "poner·en·orden",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίστημι",
+      "display": "establecas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπουδαίως",
+      "display": "diligentemente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προπέμπω",
+      "display": "acompaña",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:4",
+      "reason": "occurs near τέλειος"
+    },
+    {
+      "ref": "James 1:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "James 2:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Titus 1:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Titus 3:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 18:22",
+      "reason": "occurs near εἷς, πωλέω, ἔτι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

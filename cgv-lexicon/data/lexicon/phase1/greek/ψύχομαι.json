@@ -1,0 +1,80 @@
+{
+  "lemma": "ψύχομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ψυγήσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 24:12",
+      "form": "ψυγήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 12,
+      "left_context": "καὶ διὰ τὸ πληθυνθῆναι τὴν ἀνομίαν",
+      "right_context": "ἡ ἀγάπη τῶν πολλῶν."
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πληθύνω",
+      "display": "multiplicar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνομία",
+      "display": "iniquidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 24:12",
+      "reason": "occurs near πληθύνω, πολύς, ἀγάπη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

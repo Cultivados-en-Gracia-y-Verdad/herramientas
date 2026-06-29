@@ -1,0 +1,200 @@
+{
+  "lemma": "ἐπιφαίνω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐπιφαινόντων",
+      "count": 1
+    },
+    {
+      "form": "ἐπιφᾶναι",
+      "count": 1
+    },
+    {
+      "form": "Ἐπεφάνη",
+      "count": 1
+    },
+    {
+      "form": "ἐπεφάνη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 2,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:20",
+      "form": "ἐπιφαινόντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 20,
+      "left_context": "μήτε δὲ ἡλίου μήτε ἄστρων",
+      "right_context": "ἐπὶ πλείονας ἡμέρας, χειμῶνός τε οὐκ"
+    },
+    {
+      "ref": "Luke 1:79",
+      "form": "ἐπιφᾶναι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 79,
+      "left_context": "",
+      "right_context": "τοῖς ἐν σκότει καὶ σκιᾷ θανάτου"
+    },
+    {
+      "ref": "Titus 2:11",
+      "form": "Ἐπεφάνη",
+      "morph": "V-A-P-I-3S",
+      "book": "Titus",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "",
+      "right_context": "γὰρ ἡ χάρις τοῦ ⸀θεοῦ σωτήριος"
+    },
+    {
+      "ref": "Titus 3:4",
+      "form": "ἐπεφάνη",
+      "morph": "V-A-P-I-3S",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "δὲ ἡ χρηστότης καὶ ἡ φιλανθρωπία",
+      "right_context": "τοῦ σωτῆρος ἡμῶν θεοῦ,"
+    }
+  ],
+  "books": {
+    "Titus": 2,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μήτε",
+      "display": "ni",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "de·sol",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄστρον",
+      "display": "de·estrellas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χειμών",
+      "display": "de·invierno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκότος",
+      "display": "tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκιά",
+      "display": "sombra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρηστότης",
+      "display": "bondad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλανθρωπία",
+      "display": "humanidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτήρ",
+      "display": "de·salvador",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Titus 2:11",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Titus 3:4",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Acts 27:20",
+      "reason": "occurs near μήτε, πολύς, ἄστρον"
+    },
+    {
+      "ref": "Luke 1:79",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

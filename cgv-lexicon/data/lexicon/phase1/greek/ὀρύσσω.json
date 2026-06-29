@@ -1,0 +1,163 @@
+{
+  "lemma": "ὀρύσσω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ὤρυξεν",
+      "count": 3
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 12:1",
+      "form": "ὤρυξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "⸂ἄνθρωπος ἐφύτευσεν⸃, καὶ περιέθηκεν φραγμὸν καὶ",
+      "right_context": "ὑπολήνιον καὶ ᾠκοδόμησεν πύργον, καὶ ἐξέδετο"
+    },
+    {
+      "ref": "Matthew 21:33",
+      "form": "ὤρυξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 33,
+      "left_context": "ἀμπελῶνα καὶ φραγμὸν αὐτῷ περιέθηκεν καὶ",
+      "right_context": "ἐν αὐτῷ ληνὸν καὶ ᾠκοδόμησεν πύργον,"
+    },
+    {
+      "ref": "Matthew 25:18",
+      "form": "ὤρυξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 18,
+      "left_context": "ὁ δὲ τὸ ἓν λαβὼν ἀπελθὼν",
+      "right_context": "⸀γῆν καὶ ⸀ἔκρυψεν τὸ ἀργύριον τοῦ"
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "περιτίθημι",
+      "display": "puso",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φραγμός",
+      "display": "cerca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edificó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φυτεύω",
+      "display": "plantó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπολήνιον",
+      "display": "lagar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πύργος",
+      "display": "torre,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ληνός",
+      "display": "lagar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρύπτω",
+      "display": "ocultó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργύριον",
+      "display": "plata",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 21:33",
+      "reason": "occurs near οἰκοδομέω, περιτίθημι, φραγμός"
+    },
+    {
+      "ref": "Matthew 25:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 12:1",
+      "reason": "occurs near οἰκοδομέω, περιτίθημι, φραγμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

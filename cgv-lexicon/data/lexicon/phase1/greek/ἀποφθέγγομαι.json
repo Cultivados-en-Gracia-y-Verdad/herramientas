@@ -1,0 +1,154 @@
+{
+  "lemma": "ἀποφθέγγομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸂ἀποφθέγγεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἀπεφθέγξατο",
+      "count": 1
+    },
+    {
+      "form": "ἀποφθέγγομαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:4",
+      "form": "⸂ἀποφθέγγεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "ἑτέραις γλώσσαις καθὼς τὸ πνεῦμα ἐδίδου",
+      "right_context": "αὐτοῖς⸃."
+    },
+    {
+      "ref": "Acts 2:14",
+      "form": "ἀπεφθέγξατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "ἕνδεκα ἐπῆρεν τὴν φωνὴν αὐτοῦ καὶ",
+      "right_context": "αὐτοῖς· Ἄνδρες Ἰουδαῖοι καὶ οἱ κατοικοῦντες"
+    },
+    {
+      "ref": "Acts 26:25",
+      "form": "ἀποφθέγγομαι.",
+      "morph": "V-P-M-I-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 25,
+      "left_context": "Φῆστε, ἀλλὰ ἀληθείας καὶ σωφροσύνης ῥήματα",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γλῶσσα",
+      "display": "lenguas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "daba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαίρω",
+      "display": "alzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωφροσύνη",
+      "display": "de·sensatez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dichos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 2:14",
+      "reason": "occurs near φωνή, ἐπαίρω"
+    },
+    {
+      "ref": "Acts 2:4",
+      "reason": "occurs near γλῶσσα, δίδωμι, πνεῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

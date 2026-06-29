@@ -1,0 +1,185 @@
+{
+  "lemma": "ἐξετάζω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐξετάσαι",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐξετάσατε",
+      "count": 1
+    },
+    {
+      "form": "ἐξετάσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "imperative": 2
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "John 21:12",
+      "form": "ἐξετάσαι",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "ἀριστήσατε. οὐδεὶς ⸀δὲ ἐτόλμα τῶν μαθητῶν",
+      "right_context": "αὐτόν· Σὺ τίς εἶ; εἰδότες ὅτι"
+    },
+    {
+      "ref": "Matthew 2:8",
+      "form": "⸂ἐξετάσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "πέμψας αὐτοὺς εἰς Βηθλέεμ εἶπεν· Πορευθέντες",
+      "right_context": "ἀκριβῶς⸃ περὶ τοῦ παιδίου· ἐπὰν δὲ"
+    },
+    {
+      "ref": "Matthew 10:11",
+      "form": "ἐξετάσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 11,
+      "left_context": "δ’ ἂν πόλιν ἢ κώμην εἰσέλθητε,",
+      "right_context": "τίς ἐν αὐτῇ ἄξιός ἐστιν· κἀκεῖ"
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τολμάω",
+      "display": "atreverse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "sabidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βηθλέεμ",
+      "display": "Belén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "idos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκριβῶς",
+      "display": "exactamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδίον",
+      "display": "de·niño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπάν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entréis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄξιος",
+      "display": "digno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 2:8",
+      "form": "⸂ἐξετάσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ πέμψας αὐτοὺς εἰς Βηθλέεμ εἶπεν· Πορευθέντες ⸂ἐξετάσατε ἀκριβῶς⸃ περὶ τοῦ παιδίου· ἐπὰν δὲ εὕρητε, ἀπαγγείλατέ"
+    },
+    {
+      "ref": "Matthew 10:11",
+      "form": "ἐξετάσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "εἰς ἣν δ’ ἂν πόλιν ἢ κώμην εἰσέλθητε, ἐξετάσατε τίς ἐν αὐτῇ ἄξιός ἐστιν· κἀκεῖ μείνατε ἕως"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 10:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 2:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 21:12",
+      "reason": "occurs near μαθητής, οἶδα, τολμάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

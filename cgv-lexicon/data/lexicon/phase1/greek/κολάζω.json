@@ -1,0 +1,120 @@
+{
+  "lemma": "κολάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κολαζομένους",
+      "count": 1
+    },
+    {
+      "form": "⸀κολάσωνται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:9",
+      "form": "κολαζομένους",
+      "morph": "V-P-P-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "ῥύεσθαι, ἀδίκους δὲ εἰς ἡμέραν κρίσεως",
+      "right_context": "τηρεῖν,"
+    },
+    {
+      "ref": "Acts 4:21",
+      "form": "⸀κολάσωνται",
+      "morph": "V-A-M-S-3P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 21,
+      "left_context": "ἀπέλυσαν αὐτούς, μηδὲν εὑρίσκοντες τὸ πῶς",
+      "right_context": "αὐτούς, διὰ τὸν λαόν, ὅτι πάντες"
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄδικος",
+      "display": "injustos.",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίσις",
+      "display": "de·juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηρέω",
+      "display": "guardar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:9",
+      "reason": "occurs near κρίσις, τηρέω, ἄδικος"
+    },
+    {
+      "ref": "Acts 4:21",
+      "reason": "occurs near εὑρίσκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

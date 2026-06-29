@@ -1,0 +1,110 @@
+{
+  "lemma": "κακουχέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κακουχούμενοι,",
+      "count": 1
+    },
+    {
+      "form": "κακουχουμένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:37",
+      "form": "κακουχούμενοι,",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 37,
+      "left_context": "μηλωταῖς, ἐν αἰγείοις δέρμασιν, ὑστερούμενοι, θλιβόμενοι,",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 13:3",
+      "form": "κακουχουμένων",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 3,
+      "left_context": "μιμνῄσκεσθε τῶν δεσμίων ὡς συνδεδεμένοι, τῶν",
+      "right_context": "ὡς καὶ αὐτοὶ ὄντες ἐν σώματι."
+    }
+  ],
+  "books": {
+    "Hebrews": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αἴγειος",
+      "display": "de·cabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέρμα",
+      "display": "pieles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑστερέω",
+      "display": "faltados;",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλίβω",
+      "display": "afligidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέσμιος",
+      "display": "de·prisioneros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνδέομαι",
+      "display": "atarses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:37",
+      "reason": "occurs near αἴγειος, δέρμα, θλίβω"
+    },
+    {
+      "ref": "Hebrews 13:3",
+      "reason": "occurs near δέσμιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

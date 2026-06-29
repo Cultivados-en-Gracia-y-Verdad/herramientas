@@ -1,0 +1,318 @@
+{
+  "lemma": "ἐπισυνάγω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "ἐπισυναχθεισῶν",
+      "count": 1
+    },
+    {
+      "form": "ἐπισυνάξαι",
+      "count": 1
+    },
+    {
+      "form": "ἐπισυναχθήσονται⸃.",
+      "count": 1
+    },
+    {
+      "form": "ἐπισυνηγμένη⸃",
+      "count": 1
+    },
+    {
+      "form": "ἐπισυνάξει",
+      "count": 1
+    },
+    {
+      "form": "ἐπισυναγαγεῖν",
+      "count": 1
+    },
+    {
+      "form": "ἐπισυνάγει⸃",
+      "count": 1
+    },
+    {
+      "form": "ἐπισυνάξουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 2,
+      "indicative": 4
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 3,
+      "perfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:1",
+      "form": "ἐπισυναχθεισῶν",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "Ἐν οἷς",
+      "right_context": "τῶν μυριάδων τοῦ ὄχλου, ὥστε καταπατεῖν"
+    },
+    {
+      "ref": "Luke 13:34",
+      "form": "ἐπισυνάξαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 34,
+      "left_context": "τοὺς ἀπεσταλμένους πρὸς αὐτήν— ποσάκις ἠθέλησα",
+      "right_context": "τὰ τέκνα σου ὃν τρόπον ὄρνις"
+    },
+    {
+      "ref": "Luke 17:37",
+      "form": "ἐπισυναχθήσονται⸃.",
+      "morph": "V-F-P-I-3P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 37,
+      "left_context": "τὸ σῶμα, ἐκεῖ ⸂καὶ οἱ ἀετοὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 1:33",
+      "form": "ἐπισυνηγμένη⸃",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 33,
+      "left_context": "καὶ ⸂ἦν ὅλη ἡ πόλις",
+      "right_context": "πρὸς τὴν θύραν."
+    },
+    {
+      "ref": "Mark 13:27",
+      "form": "ἐπισυνάξει",
+      "morph": "V-F-A-I-3S",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 27,
+      "left_context": "καὶ τότε ἀποστελεῖ τοὺς ⸀ἀγγέλους καὶ",
+      "right_context": "τοὺς ⸀ἐκλεκτοὺς ἐκ τῶν τεσσάρων ἀνέμων"
+    },
+    {
+      "ref": "Matthew 23:37",
+      "form": "ἐπισυναγαγεῖν",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 37,
+      "left_context": "τοὺς ἀπεσταλμένους πρὸς αὐτήν— ποσάκις ἠθέλησα",
+      "right_context": "τὰ τέκνα σου, ὃν τρόπον ⸂ὄρνις"
+    },
+    {
+      "ref": "Matthew 23:37",
+      "form": "ἐπισυνάγει⸃",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 37,
+      "left_context": "τὰ τέκνα σου, ὃν τρόπον ⸂ὄρνις",
+      "right_context": "τὰ νοσσία ⸀αὐτῆς ὑπὸ τὰς πτέρυγας,"
+    },
+    {
+      "ref": "Matthew 24:31",
+      "form": "ἐπισυνάξουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 31,
+      "left_context": "ἀγγέλους αὐτοῦ μετὰ ⸀σάλπιγγος μεγάλης, καὶ",
+      "right_context": "τοὺς ἐκλεκτοὺς αὐτοῦ ἐκ τῶν τεσσάρων"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Matthew": 3,
+    "Mark": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviados",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τρόπος",
+      "display": "modo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ποσάκις",
+      "display": "cuántas·veces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quise",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλεκτός",
+      "display": "elegidos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μυριάς",
+      "display": "diez·mil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀετός",
+      "display": "águilas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θύρα",
+      "display": "puerta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέσσαρες",
+      "display": "de·cuatro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρνις",
+      "display": "gallina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοσσίον",
+      "display": "pollueloses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάλπιγξ",
+      "display": "de·trompeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "de·grande",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 13:34",
+      "reason": "occurs near θέλω, ποσάκις, τέκνον"
+    },
+    {
+      "ref": "Luke 17:37",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 23:37",
+      "reason": "occurs near θέλω, ποσάκις, τέκνον"
+    },
+    {
+      "ref": "Matthew 24:31",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 13:27",
+      "reason": "occurs near ἀποστέλλω"
+    },
+    {
+      "ref": "Mark 1:33",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

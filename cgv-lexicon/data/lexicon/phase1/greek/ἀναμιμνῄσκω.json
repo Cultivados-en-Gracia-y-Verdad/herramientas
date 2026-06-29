@@ -1,0 +1,258 @@
+{
+  "lemma": "ἀναμιμνῄσκω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἀναμνήσει",
+      "count": 1
+    },
+    {
+      "form": "ἀναμιμνῃσκομένου",
+      "count": 1
+    },
+    {
+      "form": "ἀναμιμνῄσκω",
+      "count": 1
+    },
+    {
+      "form": "Ἀναμιμνῄσκεσθε",
+      "count": 1
+    },
+    {
+      "form": "ἀναμνησθεὶς",
+      "count": 1
+    },
+    {
+      "form": "ἀνεμνήσθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "future": 1,
+      "present": 3,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:17",
+      "form": "ἀναμνήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "καὶ πιστὸν ἐν κυρίῳ, ὃς ὑμᾶς",
+      "right_context": "τὰς ὁδούς μου τὰς ἐν Χριστῷ"
+    },
+    {
+      "ref": "2 Corinthians 7:15",
+      "form": "ἀναμιμνῃσκομένου",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "σπλάγχνα αὐτοῦ περισσοτέρως εἰς ὑμᾶς ἐστιν",
+      "right_context": "τὴν πάντων ὑμῶν ὑπακοήν, ὡς μετὰ"
+    },
+    {
+      "ref": "2 Timothy 1:6",
+      "form": "ἀναμιμνῄσκω",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "δι’ ἣν αἰτίαν",
+      "right_context": "σε ἀναζωπυρεῖν τὸ χάρισμα τοῦ θεοῦ,"
+    },
+    {
+      "ref": "Hebrews 10:32",
+      "form": "Ἀναμιμνῄσκεσθε",
+      "morph": "V-P-P-D-2P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 32,
+      "left_context": "",
+      "right_context": "δὲ τὰς πρότερον ἡμέρας, ἐν αἷς"
+    },
+    {
+      "ref": "Mark 11:21",
+      "form": "ἀναμνησθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 21,
+      "left_context": "καὶ",
+      "right_context": "ὁ Πέτρος λέγει αὐτῷ· Ῥαββί, ἴδε"
+    },
+    {
+      "ref": "Mark 14:72",
+      "form": "ἀνεμνήσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 72,
+      "left_context": "⸀εὐθὺς ἐκ δευτέρου ἀλέκτωρ ἐφώνησεν· καὶ",
+      "right_context": "ὁ Πέτρος τὸ ῥῆμα ⸀ὡς εἶπεν"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "1 Corinthians": 1,
+    "2 Corinthians": 1,
+    "2 Timothy": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "fiel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "caminos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περισσοτέρως",
+      "display": "más·abundantemente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπακοή",
+      "display": "obediencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτία",
+      "display": "causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναζωπυρέω",
+      "display": "avivar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρισμα",
+      "display": "don",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρότερος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥαββί",
+      "display": "Rabbí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεύτερος",
+      "display": "de·segundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλέκτωρ",
+      "display": "gallo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνέω",
+      "display": "llamó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dicho",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Hebrews 10:32",
+      "form": "Ἀναμιμνῄσκεσθε",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "Ἀναμιμνῄσκεσθε δὲ τὰς πρότερον ἡμέρας, ἐν αἷς φωτισθέντες πολλὴν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:32",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 11:21",
+      "reason": "occurs near Πέτρος"
+    },
+    {
+      "ref": "Mark 14:72",
+      "reason": "occurs near Πέτρος"
+    },
+    {
+      "ref": "1 Corinthians 4:17",
+      "reason": "occurs near κύριος, πιστός, ὁδός"
+    },
+    {
+      "ref": "2 Corinthians 7:15",
+      "reason": "occurs near περισσοτέρως"
+    },
+    {
+      "ref": "2 Timothy 1:6",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

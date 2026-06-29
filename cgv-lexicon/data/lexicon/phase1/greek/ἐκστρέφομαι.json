@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐκστρέφομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξέστραπται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Titus 3:11",
+      "form": "ἐξέστραπται",
+      "morph": "V-X-P-I-3S",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "εἰδὼς ὅτι",
+      "right_context": "ὁ τοιοῦτος καὶ ἁμαρτάνει, ὢν αὐτοκατάκριτος."
+    }
+  ],
+  "books": {
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτάνω",
+      "display": "peca",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Titus 3:11",
+      "reason": "occurs near τοιοῦτος, ἁμαρτάνω, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

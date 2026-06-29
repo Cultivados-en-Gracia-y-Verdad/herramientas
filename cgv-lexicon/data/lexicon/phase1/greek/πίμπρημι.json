@@ -1,0 +1,92 @@
+{
+  "lemma": "πίμπρημι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "πίμπρασθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 28:6",
+      "form": "πίμπρασθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 6,
+      "left_context": "οἱ δὲ προσεδόκων αὐτὸν μέλλειν",
+      "right_context": "ἢ καταπίπτειν ἄφνω νεκρόν. ἐπὶ πολὺ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προσδοκάω",
+      "display": "esperaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταπίπτω",
+      "display": "caer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄφνω",
+      "display": "de·repente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "muerto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 28:6",
+      "reason": "occurs near καταπίπτω, μέλλω, προσδοκάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

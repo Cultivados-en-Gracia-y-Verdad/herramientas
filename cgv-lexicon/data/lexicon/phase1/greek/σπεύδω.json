@@ -1,0 +1,269 @@
+{
+  "lemma": "σπεύδω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "σπεύσας",
+      "count": 2
+    },
+    {
+      "form": "σπεύδοντας",
+      "count": 1
+    },
+    {
+      "form": "ἔσπευδεν",
+      "count": 1
+    },
+    {
+      "form": "Σπεῦσον",
+      "count": 1
+    },
+    {
+      "form": "σπεύσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "indicative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "imperfect": 1,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 3:12",
+      "form": "σπεύδοντας",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "προσδοκῶντας καὶ",
+      "right_context": "τὴν παρουσίαν τῆς τοῦ θεοῦ ἡμέρας,"
+    },
+    {
+      "ref": "Acts 20:16",
+      "form": "ἔσπευδεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 16,
+      "left_context": "γένηται αὐτῷ χρονοτριβῆσαι ἐν τῇ Ἀσίᾳ,",
+      "right_context": "γὰρ εἰ δυνατὸν ⸀εἴη αὐτῷ τὴν"
+    },
+    {
+      "ref": "Acts 22:18",
+      "form": "Σπεῦσον",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 18,
+      "left_context": "καὶ ἰδεῖν αὐτὸν λέγοντά μοι·",
+      "right_context": "καὶ ἔξελθε ἐν τάχει ἐξ Ἰερουσαλήμ,"
+    },
+    {
+      "ref": "Luke 2:16",
+      "form": "σπεύσαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "καὶ ἦλθαν",
+      "right_context": "καὶ ἀνεῦραν τήν τε Μαριὰμ καὶ"
+    },
+    {
+      "ref": "Luke 19:5",
+      "form": "σπεύσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 5,
+      "left_context": "ὁ ⸀Ἰησοῦς εἶπεν πρὸς αὐτόν· Ζακχαῖε,",
+      "right_context": "κατάβηθι, σήμερον γὰρ ἐν τῷ οἴκῳ"
+    },
+    {
+      "ref": "Luke 19:6",
+      "form": "σπεύσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 6,
+      "left_context": "καὶ",
+      "right_context": "κατέβη, καὶ ὑπεδέξατο αὐτὸν χαίρων."
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Acts": 2,
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καταβαίνω",
+      "display": "baja",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προσδοκάω",
+      "display": "esperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρουσία",
+      "display": "venida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρονοτριβέω",
+      "display": "demorarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀσία",
+      "display": "Asia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderoso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "sale",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τάχος",
+      "display": "pronto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνευρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαριάμ",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ζακχαῖος",
+      "display": "Zaqueo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποδέχομαι",
+      "display": "recibió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "gozando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 22:18",
+      "form": "Σπεῦσον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "καὶ ἰδεῖν αὐτὸν λέγοντά μοι· Σπεῦσον καὶ ἔξελθε ἐν τάχει ἐξ Ἰερουσαλήμ, διότι οὐ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 19:5",
+      "reason": "occurs near καταβαίνω"
+    },
+    {
+      "ref": "Luke 19:6",
+      "reason": "occurs near καταβαίνω"
+    },
+    {
+      "ref": "Luke 2:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 20:16",
+      "reason": "occurs near χρονοτριβέω"
+    },
+    {
+      "ref": "2 Peter 3:12",
+      "reason": "occurs near θεός, παρουσία, προσδοκάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

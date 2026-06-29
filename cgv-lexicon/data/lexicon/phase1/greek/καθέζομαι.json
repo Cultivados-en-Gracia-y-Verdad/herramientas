@@ -1,0 +1,325 @@
+{
+  "lemma": "καθέζομαι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "καθεζόμενοι",
+      "count": 1
+    },
+    {
+      "form": "⸀καθεζόμενος",
+      "count": 1
+    },
+    {
+      "form": "ἐκαθέζετο",
+      "count": 1
+    },
+    {
+      "form": "ἐκαθέζετο.",
+      "count": 1
+    },
+    {
+      "form": "καθεζομένους,",
+      "count": 1
+    },
+    {
+      "form": "καθεζόμενον",
+      "count": 1
+    },
+    {
+      "form": "ἐκαθεζόμην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 4,
+      "imperfect": 3
+    },
+    "voices": {
+      "middle": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 6:15",
+      "form": "καθεζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 15,
+      "left_context": "καὶ ἀτενίσαντες εἰς αὐτὸν ⸀πάντες οἱ",
+      "right_context": "ἐν τῷ συνεδρίῳ εἶδον τὸ πρόσωπον"
+    },
+    {
+      "ref": "Acts 20:9",
+      "form": "⸀καθεζόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 9,
+      "left_context": "",
+      "right_context": "δέ τις νεανίας ὀνόματι Εὔτυχος ἐπὶ"
+    },
+    {
+      "ref": "John 4:6",
+      "form": "ἐκαθέζετο",
+      "morph": "V-I-M-I-3S",
+      "book": "John",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "οὖν Ἰησοῦς κεκοπιακὼς ἐκ τῆς ὁδοιπορίας",
+      "right_context": "οὕτως ἐπὶ τῇ πηγῇ· ὥρα ἦν"
+    },
+    {
+      "ref": "John 11:20",
+      "form": "ἐκαθέζετο.",
+      "morph": "V-I-M-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 20,
+      "left_context": "αὐτῷ· ⸀Μαρία δὲ ἐν τῷ οἴκῳ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 20:12",
+      "form": "καθεζομένους,",
+      "morph": "V-P-M-P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 12,
+      "left_context": "καὶ θεωρεῖ δύο ἀγγέλους ἐν λευκοῖς",
+      "right_context": "ἕνα πρὸς τῇ κεφαλῇ καὶ ἕνα"
+    },
+    {
+      "ref": "Luke 2:46",
+      "form": "καθεζόμενον",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 46,
+      "left_context": "τρεῖς εὗρον αὐτὸν ἐν τῷ ἱερῷ",
+      "right_context": "ἐν μέσῳ τῶν διδασκάλων καὶ ἀκούοντα"
+    },
+    {
+      "ref": "Matthew 26:55",
+      "form": "ἐκαθεζόμην",
+      "morph": "V-I-M-I-1S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 55,
+      "left_context": "με; καθ’ ⸀ἡμέραν ⸂ἐν τῷ ἱερῷ",
+      "right_context": "διδάσκων⸃ καὶ οὐκ ἐκρατήσατέ με."
+    }
+  ],
+  "books": {
+    "John": 3,
+    "Acts": 2,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀτενίζω",
+      "display": "mirar·fijamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέδριον",
+      "display": "sanedrín",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεανίας",
+      "display": "joven",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Εὔτυχος",
+      "display": "Eutico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabajado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδοιπορία",
+      "display": "de·viaje",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πηγή",
+      "display": "fuente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαρία",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "ve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λευκός",
+      "display": "blancos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "de·maestros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 26:55",
+      "negator": "οὐκ",
+      "clause_text": "ξύλων συλλαβεῖν με; καθ’ ⸀ἡμέραν ⸂ἐν τῷ ἱερῷ ἐκαθεζόμην διδάσκων⸃ καὶ οὐκ ἐκρατήσατέ με."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 20:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 4:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 20:9",
+      "reason": "occurs near νεανίας"
+    },
+    {
+      "ref": "Acts 6:15",
+      "reason": "occurs near συνέδριον, ἀτενίζω, ὁράω"
+    },
+    {
+      "ref": "Luke 2:46",
+      "reason": "occurs near ἱερός"
+    },
+    {
+      "ref": "Matthew 26:55",
+      "reason": "occurs near ἱερός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

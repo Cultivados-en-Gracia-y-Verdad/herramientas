@@ -1,0 +1,98 @@
+{
+  "lemma": "εἰστρέχω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εἰσδραμοῦσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 12:14",
+      "form": "εἰσδραμοῦσα",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "τῆς χαρᾶς οὐκ ἤνοιξεν τὸν πυλῶνα,",
+      "right_context": "δὲ ἀπήγγειλεν ἑστάναι τὸν Πέτρον πρὸ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χαρά",
+      "display": "de·gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνοίγω",
+      "display": "abrió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυλών",
+      "display": "portal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαγγέλλω",
+      "display": "anunció",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "poner",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 12:14",
+      "negator": "οὐκ",
+      "clause_text": "Πέτρου ἀπὸ τῆς χαρᾶς οὐκ ἤνοιξεν τὸν πυλῶνα, εἰσδραμοῦσα δὲ ἀπήγγειλεν ἑστάναι τὸν Πέτρον πρὸ τοῦ πυλῶνος."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:14",
+      "reason": "occurs near πυλών, χαρά, ἀνοίγω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

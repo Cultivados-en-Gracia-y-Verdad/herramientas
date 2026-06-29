@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀναψύχω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀνέψυξεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 1:16",
+      "form": "ἀνέψυξεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "τῷ Ὀνησιφόρου οἴκῳ, ὅτι πολλάκις με",
+      "right_context": "καὶ τὴν ἅλυσίν μου οὐκ ἐπαισχύνθη·"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ὀνησίφορος",
+      "display": "de·Onesíforo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολλάκις",
+      "display": "muchas·veces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλυσις",
+      "display": "cadena",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 1:16",
+      "reason": "occurs near οἶκος, πολλάκις, ἅλυσις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

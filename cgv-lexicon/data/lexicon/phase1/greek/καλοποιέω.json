@@ -1,0 +1,74 @@
+{
+  "lemma": "καλοποιέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καλοποιοῦντες.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 3:13",
+      "form": "καλοποιοῦντες.",
+      "morph": "V-P-A-P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "ὑμεῖς δέ, ἀδελφοί, μὴ ⸀ἐγκακήσητε",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκακέω",
+      "display": "desmayéis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Thessalonians 3:13",
+      "negator": "μὴ",
+      "clause_text": "ὑμεῖς δέ, ἀδελφοί, μὴ ⸀ἐγκακήσητε καλοποιοῦντες."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Thessalonians 3:13",
+      "reason": "occurs near ἀδελφός, ἐγκακέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

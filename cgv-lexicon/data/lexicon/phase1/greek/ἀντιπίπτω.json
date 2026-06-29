@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀντιπίπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀντιπίπτετε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:51",
+      "form": "ἀντιπίπτετε,",
+      "morph": "V-P-A-I-2P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 51,
+      "left_context": "ὑμεῖς ἀεὶ τῷ πνεύματι τῷ ἁγίῳ",
+      "right_context": "ὡς οἱ πατέρες ὑμῶν καὶ ὑμεῖς."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀεί",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 7:51",
+      "reason": "occurs near πατήρ, πνεῦμα, ἀεί"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

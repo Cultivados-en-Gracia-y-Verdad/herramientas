@@ -1,0 +1,107 @@
+{
+  "lemma": "βεβηλόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "βεβηλῶσαι,",
+      "count": 1
+    },
+    {
+      "form": "βεβηλοῦσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 24:6",
+      "form": "βεβηλῶσαι,",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 6,
+      "left_context": "ὃς καὶ τὸ ἱερὸν ἐπείρασεν",
+      "right_context": "ὃν καὶ ⸀ἐκρατήσαμεν,"
+    },
+    {
+      "ref": "Matthew 12:5",
+      "form": "βεβηλοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "ἱερεῖς ἐν τῷ ἱερῷ τὸ σάββατον",
+      "right_context": "καὶ ἀναίτιοί εἰσιν;"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πειράζω",
+      "display": "tentó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "sábado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναίτιος",
+      "display": "inocentes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 24:6",
+      "reason": "occurs near κρατέω, πειράζω, ἱερός"
+    },
+    {
+      "ref": "Matthew 12:5",
+      "reason": "occurs near σάββατον, ἀναίτιος, ἱερός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

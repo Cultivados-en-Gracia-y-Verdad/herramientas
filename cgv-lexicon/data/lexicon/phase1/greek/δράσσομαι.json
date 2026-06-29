@@ -1,0 +1,80 @@
+{
+  "lemma": "δράσσομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "δρασσόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 3:19",
+      "form": "δρασσόμενος",
+      "morph": "V-P-M-P",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 19,
+      "left_context": "τῷ θεῷ ἐστιν· γέγραπται γάρ· Ὁ",
+      "right_context": "τοὺς σοφοὺς ἐν τῇ πανουργίᾳ αὐτῶν·"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σοφός",
+      "display": "sabios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πανουργία",
+      "display": "astucia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 3:19",
+      "reason": "occurs near γράφω, θεός, πανουργία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

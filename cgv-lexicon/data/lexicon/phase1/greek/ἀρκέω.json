@@ -1,0 +1,379 @@
+{
+  "lemma": "ἀρκέω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "ἀρκεσθησόμεθα.",
+      "count": 1
+    },
+    {
+      "form": "Ἀρκεῖ",
+      "count": 1
+    },
+    {
+      "form": "ἀρκούμενος",
+      "count": 1
+    },
+    {
+      "form": "ἀρκούμενοι",
+      "count": 1
+    },
+    {
+      "form": "ἀρκοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "ἀρκεῖ",
+      "count": 1
+    },
+    {
+      "form": "ἀρκεῖσθε",
+      "count": 1
+    },
+    {
+      "form": "ἀρκέσῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 2,
+      "imperative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "future": 1,
+      "present": 6,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 4,
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:8",
+      "form": "ἀρκεσθησόμεθα.",
+      "morph": "V-F-P-I-1P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "ἔχοντες δὲ διατροφὰς καὶ σκεπάσματα, τούτοις",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 12:9",
+      "form": "Ἀρκεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 9,
+      "left_context": "καὶ εἴρηκέν μοι·",
+      "right_context": "σοι ἡ χάρις μου· ἡ γὰρ"
+    },
+    {
+      "ref": "3 John 1:10",
+      "form": "ἀρκούμενος",
+      "morph": "V-P-P-P",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "λόγοις πονηροῖς φλυαρῶν ἡμᾶς, καὶ μὴ",
+      "right_context": "ἐπὶ τούτοις οὔτε αὐτὸς ἐπιδέχεται τοὺς"
+    },
+    {
+      "ref": "Hebrews 13:5",
+      "form": "ἀρκούμενοι",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 5,
+      "left_context": "ἀφιλάργυρος ὁ τρόπος·",
+      "right_context": "τοῖς παροῦσιν· αὐτὸς γὰρ εἴρηκεν· Οὐ"
+    },
+    {
+      "ref": "John 6:7",
+      "form": "ἀρκοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "⸀αὐτῷ Φίλιππος· Διακοσίων δηναρίων ἄρτοι οὐκ",
+      "right_context": "αὐτοῖς ἵνα ⸀ἕκαστος βραχύ ⸀τι λάβῃ."
+    },
+    {
+      "ref": "John 14:8",
+      "form": "ἀρκεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 14,
+      "verse": 8,
+      "left_context": "Κύριε, δεῖξον ἡμῖν τὸν πατέρα, καὶ",
+      "right_context": "ἡμῖν."
+    },
+    {
+      "ref": "Luke 3:14",
+      "form": "ἀρκεῖσθε",
+      "morph": "V-P-P-D-2P",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "⸀αὐτοῖς· Μηδένα διασείσητε μηδὲ συκοφαντήσητε, καὶ",
+      "right_context": "τοῖς ὀψωνίοις ὑμῶν."
+    },
+    {
+      "ref": "Matthew 25:9",
+      "form": "ἀρκέσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 9,
+      "left_context": "αἱ φρόνιμοι λέγουσαι· Μήποτε ⸂οὐ μὴ⸃",
+      "right_context": "ἡμῖν καὶ ὑμῖν· ⸀πορεύεσθε μᾶλλον πρὸς"
+    }
+  ],
+  "books": {
+    "John": 2,
+    "1 Timothy": 1,
+    "2 Corinthians": 1,
+    "3 John": 1,
+    "Hebrews": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διατροφή",
+      "display": "sustentos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκέπασμα",
+      "display": "abrigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φλυαρέω",
+      "display": "hablar·necedades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔτε",
+      "display": "ni",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιδέχομαι",
+      "display": "recibe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφιλάργυρος",
+      "display": "no·avaro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρόπος",
+      "display": "modo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάρειμι",
+      "display": "estar·presente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φίλιππος",
+      "display": "Felipe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακόσιοι",
+      "display": "de·doscientoses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δηνάριον",
+      "display": "de·denarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "panes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βραχύς",
+      "display": "corto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δείκνυμι",
+      "display": "mostra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διασείω",
+      "display": "extorsionéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συκοφαντέω",
+      "display": "extorsionéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψώνιον",
+      "display": "salarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρόνιμος",
+      "display": "prudentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "ed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 3:14",
+      "form": "ἀρκεῖσθε",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "καὶ εἶπεν ⸀αὐτοῖς· Μηδένα διασείσητε μηδὲ συκοφαντήσητε, καὶ ἀρκεῖσθε τοῖς ὀψωνίοις ὑμῶν."
+    },
+    {
+      "ref": "Matthew 25:9",
+      "form": "ἀρκέσῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἀπεκρίθησαν δὲ αἱ φρόνιμοι λέγουσαι· Μήποτε ⸂οὐ μὴ⸃ ἀρκέσῃ ἡμῖν καὶ ὑμῖν· ⸀πορεύεσθε μᾶλλον πρὸς τοὺς πωλοῦντας",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "3 John 1:10",
+      "negator": "μὴ",
+      "clause_text": "ἃ ποιεῖ, λόγοις πονηροῖς φλυαρῶν ἡμᾶς, καὶ μὴ ἀρκούμενος ἐπὶ τούτοις οὔτε αὐτὸς ἐπιδέχεται τοὺς ἀδελφοὺς καὶ"
+    },
+    {
+      "ref": "John 6:7",
+      "negator": "οὐκ",
+      "clause_text": "ἀπεκρίθη ⸀αὐτῷ Φίλιππος· Διακοσίων δηναρίων ἄρτοι οὐκ ἀρκοῦσιν αὐτοῖς ἵνα ⸀ἕκαστος βραχύ ⸀τι λάβῃ."
+    },
+    {
+      "ref": "Luke 3:14",
+      "negator": "μηδὲ",
+      "clause_text": "καὶ εἶπεν ⸀αὐτοῖς· Μηδένα διασείσητε μηδὲ συκοφαντήσητε, καὶ ἀρκεῖσθε τοῖς ὀψωνίοις ὑμῶν."
+    },
+    {
+      "ref": "Matthew 25:9",
+      "negator": "⸂οὐ",
+      "clause_text": "ἀπεκρίθησαν δὲ αἱ φρόνιμοι λέγουσαι· Μήποτε ⸂οὐ μὴ⸃ ἀρκέσῃ ἡμῖν καὶ ὑμῖν· ⸀πορεύεσθε μᾶλλον πρὸς τοὺς πωλοῦντας"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 3:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 14:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 6:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Timothy 6:8",
+      "reason": "occurs near διατροφή, σκέπασμα"
+    },
+    {
+      "ref": "2 Corinthians 12:9",
+      "reason": "occurs near χάρις"
+    },
+    {
+      "ref": "3 John 1:10",
+      "reason": "occurs near πονηρός, φλυαρέω"
+    },
+    {
+      "ref": "Hebrews 13:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 25:9",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

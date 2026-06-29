@@ -1,0 +1,113 @@
+{
+  "lemma": "προετοιμάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προητοίμασεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 2:10",
+      "form": "προητοίμασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "Χριστῷ Ἰησοῦ ἐπὶ ἔργοις ἀγαθοῖς οἷς",
+      "right_context": "ὁ θεὸς ἵνα ἐν αὐτοῖς περιπατήσωμεν."
+    },
+    {
+      "ref": "Romans 9:23",
+      "form": "προητοίμασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 23,
+      "left_context": "δόξης αὐτοῦ ἐπὶ σκεύη ἐλέους, ἃ",
+      "right_context": "εἰς δόξαν,"
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "buenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasijas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλεος",
+      "display": "de·misericordia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 2:10",
+      "reason": "occurs near θεός, ἀγαθός, ἔργον"
+    },
+    {
+      "ref": "Romans 9:23",
+      "reason": "occurs near σκεῦος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

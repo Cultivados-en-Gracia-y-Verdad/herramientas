@@ -1,0 +1,87 @@
+{
+  "lemma": "σημειόομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "σημειοῦσθε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 3:14",
+      "form": "σημειοῦσθε,",
+      "morph": "V-P-M-D-2P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "λόγῳ ἡμῶν διὰ τῆς ἐπιστολῆς, τοῦτον",
+      "right_context": "⸀μὴ ⸀συναναμίγνυσθαι αὐτῷ, ἵνα ἐντραπῇ·"
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιστολή",
+      "display": "de·carta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναναμίγνυμι",
+      "display": "juntarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντρέπω",
+      "display": "avergonzarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Thessalonians 3:14",
+      "form": "σημειοῦσθε,",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "ὑπακούει τῷ λόγῳ ἡμῶν διὰ τῆς ἐπιστολῆς, τοῦτον σημειοῦσθε, ⸀μὴ ⸀συναναμίγνυσθαι αὐτῷ, ἵνα ἐντραπῇ·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Thessalonians 3:14",
+      "negator": "⸀μὴ",
+      "clause_text": "ὑπακούει τῷ λόγῳ ἡμῶν διὰ τῆς ἐπιστολῆς, τοῦτον σημειοῦσθε, ⸀μὴ ⸀συναναμίγνυσθαι αὐτῷ, ἵνα ἐντραπῇ·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Thessalonians 3:14",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,220 @@
+{
+  "lemma": "ἐκριζόω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐκριζωθέντα,",
+      "count": 1
+    },
+    {
+      "form": "Ἐκριζώθητι",
+      "count": 1
+    },
+    {
+      "form": "ἐκριζώσητε",
+      "count": 1
+    },
+    {
+      "form": "ἐκριζωθήσεται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "imperative": 1,
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:12",
+      "form": "ἐκριζωθέντα,",
+      "morph": "V-A-P-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "παραφερόμεναι, δένδρα φθινοπωρινὰ ἄκαρπα δὶς ἀποθανόντα",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 17:6",
+      "form": "Ἐκριζώθητι",
+      "morph": "V-A-P-D-2S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 6,
+      "left_context": "σινάπεως, ἐλέγετε ἂν τῇ συκαμίνῳ ταύτῃ·",
+      "right_context": "καὶ φυτεύθητι ἐν τῇ θαλάσσῃ· καὶ"
+    },
+    {
+      "ref": "Matthew 13:29",
+      "form": "ἐκριζώσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 29,
+      "left_context": "⸀φησιν· Οὔ, μήποτε συλλέγοντες τὰ ζιζάνια",
+      "right_context": "ἅμα αὐτοῖς τὸν σῖτον·"
+    },
+    {
+      "ref": "Matthew 15:13",
+      "form": "ἐκριζωθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 13,
+      "left_context": "ἐφύτευσεν ὁ πατήρ μου ὁ οὐράνιος",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Jude": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δένδρον",
+      "display": "árboles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθινοπωρινός",
+      "display": "otoñales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκαρπος",
+      "display": "sin·fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίς",
+      "display": "dos·veces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συκάμινος",
+      "display": "morera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυτεύω",
+      "display": "planta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔ",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συλλέγω",
+      "display": "recogiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζιζάνιον",
+      "display": "cizañas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῖτος",
+      "display": "trigo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐράνιος",
+      "display": "celestial",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 17:6",
+      "form": "Ἐκριζώθητι",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "ὡς κόκκον σινάπεως, ἐλέγετε ἂν τῇ συκαμίνῳ ταύτῃ· Ἐκριζώθητι καὶ φυτεύθητι ἐν τῇ θαλάσσῃ· καὶ ὑπήκουσεν ἂν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 17:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 13:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 15:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Jude 1:12",
+      "reason": "occurs near δένδρον, δίς, φθινοπωρινός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

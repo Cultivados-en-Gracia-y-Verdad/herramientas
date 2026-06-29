@@ -1,0 +1,116 @@
+{
+  "lemma": "νομοθετέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀νενομοθέτηται,",
+      "count": 1
+    },
+    {
+      "form": "νενομοθέτηται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 7:11",
+      "form": "⸀νενομοθέτηται,",
+      "morph": "V-X-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 11,
+      "left_context": "ἦν, ὁ λαὸς γὰρ ἐπ’ ⸀αὐτῆς",
+      "right_context": "τίς ἔτι χρεία κατὰ τὴν τάξιν"
+    },
+    {
+      "ref": "Hebrews 8:6",
+      "form": "νενομοθέτηται.",
+      "morph": "V-X-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 6,
+      "left_context": "διαθήκης μεσίτης, ἥτις ἐπὶ κρείττοσιν ἐπαγγελίαις",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Hebrews": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρεία",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεσίτης",
+      "display": "mediador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρείττων",
+      "display": "mejoras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "promesas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 7:11",
+      "reason": "occurs near λαός, χρεία, ἔτι"
+    },
+    {
+      "ref": "Hebrews 8:6",
+      "reason": "occurs near μεσίτης, ὅστις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

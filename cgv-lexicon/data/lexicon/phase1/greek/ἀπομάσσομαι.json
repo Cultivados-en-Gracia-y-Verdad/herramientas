@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀπομάσσομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπομασσόμεθα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:11",
+      "form": "ἀπομασσόμεθα",
+      "morph": "V-P-M-I-1P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 11,
+      "left_context": "τῆς πόλεως ὑμῶν ⸂εἰς τοὺς πόδας⸃",
+      "right_context": "ὑμῖν· πλὴν τοῦτο γινώσκετε ὅτι ⸀ἤγγικεν"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλήν",
+      "display": "excepto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoced",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:11",
+      "reason": "occurs near γινώσκω, πλήν, πούς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,230 @@
+{
+  "lemma": "ἐμβριμάομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐνεβριμήσατο",
+      "count": 1
+    },
+    {
+      "form": "ἐμβριμώμενος",
+      "count": 1
+    },
+    {
+      "form": "ἐμβριμησάμενος",
+      "count": 1
+    },
+    {
+      "form": "ἐνεβριμῶντο",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐνεβριμήθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 4,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 11:33",
+      "form": "ἐνεβριμήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 33,
+      "left_context": "καὶ τοὺς συνελθόντας αὐτῇ Ἰουδαίους κλαίοντας",
+      "right_context": "τῷ πνεύματι καὶ ἐτάραξεν ἑαυτόν,"
+    },
+    {
+      "ref": "John 11:38",
+      "form": "ἐμβριμώμενος",
+      "morph": "V-P-M-P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 38,
+      "left_context": "Ἰησοῦς οὖν πάλιν",
+      "right_context": "ἐν ἑαυτῷ ἔρχεται εἰς τὸ μνημεῖον·"
+    },
+    {
+      "ref": "Mark 1:43",
+      "form": "ἐμβριμησάμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 43,
+      "left_context": "καὶ",
+      "right_context": "αὐτῷ ⸀εὐθὺς ἐξέβαλεν αὐτόν,"
+    },
+    {
+      "ref": "Mark 14:5",
+      "form": "ἐνεβριμῶντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 5,
+      "left_context": "τριακοσίων⸃ καὶ δοθῆναι τοῖς πτωχοῖς· καὶ",
+      "right_context": "αὐτῇ."
+    },
+    {
+      "ref": "Matthew 9:30",
+      "form": "⸀ἐνεβριμήθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 30,
+      "left_context": "καὶ ἠνεῴχθησαν αὐτῶν οἱ ὀφθαλμοί. καὶ",
+      "right_context": "αὐτοῖς ὁ Ἰησοῦς λέγων· Ὁρᾶτε μηδεὶς"
+    }
+  ],
+  "books": {
+    "John": 2,
+    "Mark": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνέρχομαι",
+      "display": "reunirses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "llorando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταράσσω",
+      "display": "turbó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulsó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτωχός",
+      "display": "pobres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνοίγω",
+      "display": "fueron abierto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ved",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:33",
+      "reason": "occurs near κλαίω, συνέρχομαι, ἑαυτοῦ"
+    },
+    {
+      "ref": "John 11:38",
+      "reason": "occurs near ἑαυτοῦ, Ἰησοῦς"
+    },
+    {
+      "ref": "Mark 14:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 1:43",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 9:30",
+      "reason": "occurs near Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

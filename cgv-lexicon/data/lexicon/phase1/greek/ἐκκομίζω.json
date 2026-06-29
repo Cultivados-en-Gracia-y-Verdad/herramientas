@@ -1,0 +1,98 @@
+{
+  "lemma": "ἐκκομίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξεκομίζετο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 7:12",
+      "form": "ἐξεκομίζετο",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 12,
+      "left_context": "τῇ πύλῃ τῆς πόλεως, καὶ ἰδοὺ",
+      "right_context": "τεθνηκὼς ⸂μονογενὴς υἱὸς⸃ τῇ μητρὶ αὐτοῦ,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πύλη",
+      "display": "portón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνῄσκω",
+      "display": "muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μονογενής",
+      "display": "unigénito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήτηρ",
+      "display": "madre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 7:12",
+      "reason": "occurs near θνῄσκω, μονογενής, πόλις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

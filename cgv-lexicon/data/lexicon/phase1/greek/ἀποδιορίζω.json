@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀποδιορίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀποδιορίζοντες,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:19",
+      "form": "ἀποδιορίζοντες,",
+      "morph": "V-P-A-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "οὗτοί εἰσιν οἱ",
+      "right_context": "ψυχικοί, πνεῦμα μὴ ἔχοντες."
+    }
+  ],
+  "books": {
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ψυχικός",
+      "display": "naturales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Jude 1:19",
+      "negator": "μὴ",
+      "clause_text": "οὗτοί εἰσιν οἱ ἀποδιορίζοντες, ψυχικοί, πνεῦμα μὴ ἔχοντες."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Jude 1:19",
+      "reason": "occurs near πνεῦμα, ψυχικός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

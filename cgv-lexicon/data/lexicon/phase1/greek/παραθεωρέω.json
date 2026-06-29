@@ -1,0 +1,80 @@
+{
+  "lemma": "παραθεωρέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρεθεωροῦντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 6:1",
+      "form": "παρεθεωροῦντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "τῶν Ἑλληνιστῶν πρὸς τοὺς Ἑβραίους ὅτι",
+      "right_context": "ἐν τῇ διακονίᾳ τῇ καθημερινῇ αἱ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἑλληνιστής",
+      "display": "de·Helenista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἑβραῖος",
+      "display": "Hebreo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθημερινός",
+      "display": "diaria",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 6:1",
+      "reason": "occurs near διακονία, καθημερινός, Ἑβραῖος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

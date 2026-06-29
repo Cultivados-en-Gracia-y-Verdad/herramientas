@@ -1,0 +1,546 @@
+{
+  "lemma": "ἀγνοέω",
+  "language": "greek",
+  "total_occurrences": 22,
+  "forms": [
+    {
+      "form": "ἀγνοεῖν,",
+      "count": 5
+    },
+    {
+      "form": "ἀγνοῶν",
+      "count": 2
+    },
+    {
+      "form": "ἀγνοοῦντες",
+      "count": 2
+    },
+    {
+      "form": "ἠγνόουν",
+      "count": 2
+    },
+    {
+      "form": "ἀγνοεῖν.",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοεῖ,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀγνοεῖται.",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοοῦμεν.",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοούμενοι",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοούμενος",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοοῦσι",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοήσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοεῖτε",
+      "count": 1
+    },
+    {
+      "form": "ἀγνοεῖτε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 6,
+      "indicative": 8,
+      "participle": 8
+    },
+    "tenses": {
+      "present": 19,
+      "aorist": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 19,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:1",
+      "form": "ἀγνοεῖν,",
+      "morph": "V-P-A-N",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 1,
+      "left_context": "Οὐ θέλω ⸀γὰρ ὑμᾶς",
+      "right_context": "ἀδελφοί, ὅτι οἱ πατέρες ἡμῶν πάντες"
+    },
+    {
+      "ref": "1 Corinthians 12:1",
+      "form": "ἀγνοεῖν.",
+      "morph": "V-P-A-N",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "τῶν πνευματικῶν, ἀδελφοί, οὐ θέλω ὑμᾶς",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 14:38",
+      "form": "ἀγνοεῖ,",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 38,
+      "left_context": "εἰ δέ τις",
+      "right_context": "⸀ἀγνοεῖται."
+    },
+    {
+      "ref": "1 Corinthians 14:38",
+      "form": "⸀ἀγνοεῖται.",
+      "morph": "V-P-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 38,
+      "left_context": "εἰ δέ τις ἀγνοεῖ,",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Thessalonians 4:13",
+      "form": "ἀγνοεῖν,",
+      "morph": "V-P-A-N",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "Οὐ θέλομεν δὲ ὑμᾶς",
+      "right_context": "ἀδελφοί, περὶ τῶν ⸀κοιμωμένων, ἵνα μὴ"
+    },
+    {
+      "ref": "1 Timothy 1:13",
+      "form": "ἀγνοῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "διώκτην καὶ ὑβριστήν· ἀλλὰ ἠλεήθην, ὅτι",
+      "right_context": "ἐποίησα ἐν ἀπιστίᾳ,"
+    },
+    {
+      "ref": "2 Corinthians 1:8",
+      "form": "ἀγνοεῖν,",
+      "morph": "V-P-A-N",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "Οὐ γὰρ θέλομεν ὑμᾶς",
+      "right_context": "ἀδελφοί, ⸀ὑπὲρ τῆς θλίψεως ἡμῶν τῆς"
+    },
+    {
+      "ref": "2 Corinthians 2:11",
+      "form": "ἀγνοοῦμεν.",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "Σατανᾶ, οὐ γὰρ αὐτοῦ τὰ νοήματα",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 6:9",
+      "form": "ἀγνοούμενοι",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "ὡς",
+      "right_context": "καὶ ἐπιγινωσκόμενοι, ὡς ἀποθνῄσκοντες καὶ ἰδοὺ"
+    },
+    {
+      "ref": "2 Peter 2:12",
+      "form": "ἀγνοοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "εἰς ἅλωσιν καὶ φθοράν, ἐν οἷς",
+      "right_context": "βλασφημοῦντες, ἐν τῇ φθορᾷ αὐτῶν ⸂καὶ"
+    },
+    {
+      "ref": "Galatians 1:22",
+      "form": "ἀγνοούμενος",
+      "morph": "V-P-P-P",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "ἤμην δὲ",
+      "right_context": "τῷ προσώπῳ ταῖς ἐκκλησίαις τῆς Ἰουδαίας"
+    },
+    {
+      "ref": "Hebrews 5:2",
+      "form": "ἀγνοοῦσι",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "μετριοπαθεῖν δυνάμενος τοῖς",
+      "right_context": "καὶ πλανωμένοις ἐπεὶ καὶ αὐτὸς περίκειται"
+    },
+    {
+      "ref": "Acts 13:27",
+      "form": "ἀγνοήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 27,
+      "left_context": "Ἰερουσαλὴμ καὶ οἱ ἄρχοντες αὐτῶν τοῦτον",
+      "right_context": "καὶ τὰς φωνὰς τῶν προφητῶν τὰς"
+    },
+    {
+      "ref": "Acts 17:23",
+      "form": "ἀγνοοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 23,
+      "left_context": "ᾧ ἐπεγέγραπτο· Ἀγνώστῳ θεῷ. ⸀ὃ οὖν",
+      "right_context": "εὐσεβεῖτε, ⸀τοῦτο ἐγὼ καταγγέλλω ὑμῖν."
+    },
+    {
+      "ref": "Luke 9:45",
+      "form": "ἠγνόουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 45,
+      "left_context": "οἱ δὲ",
+      "right_context": "τὸ ῥῆμα τοῦτο, καὶ ἦν παρακεκαλυμμένον"
+    },
+    {
+      "ref": "Mark 9:32",
+      "form": "ἠγνόουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 32,
+      "left_context": "οἱ δὲ",
+      "right_context": "τὸ ῥῆμα, καὶ ἐφοβοῦντο αὐτὸν ἐπερωτῆσαι."
+    },
+    {
+      "ref": "Romans 1:13",
+      "form": "ἀγνοεῖν,",
+      "morph": "V-P-A-N",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "οὐ θέλω δὲ ὑμᾶς",
+      "right_context": "ἀδελφοί, ὅτι πολλάκις προεθέμην ἐλθεῖν πρὸς"
+    },
+    {
+      "ref": "Romans 2:4",
+      "form": "ἀγνοῶν",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "τῆς ἀνοχῆς καὶ τῆς μακροθυμίας καταφρονεῖς,",
+      "right_context": "ὅτι τὸ χρηστὸν τοῦ θεοῦ εἰς"
+    },
+    {
+      "ref": "Romans 6:3",
+      "form": "ἀγνοεῖτε",
+      "morph": "V-P-A-I-2P",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 3,
+      "left_context": "ἢ",
+      "right_context": "ὅτι ὅσοι ἐβαπτίσθημεν εἰς Χριστὸν Ἰησοῦν"
+    },
+    {
+      "ref": "Romans 7:1",
+      "form": "ἀγνοεῖτε,",
+      "morph": "V-P-A-I-2P",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 1,
+      "left_context": "Ἢ",
+      "right_context": "ἀδελφοί, γινώσκουσιν γὰρ νόμον λαλῶ, ὅτι"
+    },
+    {
+      "ref": "Romans 10:3",
+      "form": "ἀγνοοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "γὰρ τὴν τοῦ θεοῦ δικαιοσύνην, καὶ"
+    },
+    {
+      "ref": "Romans 11:25",
+      "form": "ἀγνοεῖν,",
+      "morph": "V-P-A-N",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "Οὐ γὰρ θέλω ὑμᾶς",
+      "right_context": "ἀδελφοί, τὸ μυστήριον τοῦτο, ἵνα μὴ"
+    }
+  ],
+  "books": {
+    "Romans": 6,
+    "1 Corinthians": 4,
+    "2 Corinthians": 3,
+    "Acts": 2,
+    "1 Thessalonians": 1,
+    "1 Timothy": 1,
+    "2 Peter": 1,
+    "Galatians": 1,
+    "Hebrews": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiero",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγνοέω",
+      "display": "es ignorado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φθορά",
+      "display": "corrupción",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dicho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνευματικός",
+      "display": "de·espirituales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοιμάομαι",
+      "display": "dormiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑβριστής",
+      "display": "insolente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεάω",
+      "display": "tener·misericordia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπιστία",
+      "display": "incredulidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "de·tribulación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόημα",
+      "display": "pensamientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconocidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "muriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλωσις",
+      "display": "captura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημέω",
+      "display": "blasfemando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετριοπαθέω",
+      "display": "compadecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλανάω",
+      "display": "extraviados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 10:1",
+      "negator": "Οὐ",
+      "clause_text": "Οὐ θέλω ⸀γὰρ ὑμᾶς ἀγνοεῖν, ἀδελφοί, ὅτι οἱ πατέρες ἡμῶν πάντες ὑπὸ τὴν"
+    },
+    {
+      "ref": "1 Corinthians 12:1",
+      "negator": "οὐ",
+      "clause_text": "Περὶ δὲ τῶν πνευματικῶν, ἀδελφοί, οὐ θέλω ὑμᾶς ἀγνοεῖν."
+    },
+    {
+      "ref": "1 Thessalonians 4:13",
+      "negator": "Οὐ",
+      "clause_text": "Οὐ θέλομεν δὲ ὑμᾶς ἀγνοεῖν, ἀδελφοί, περὶ τῶν ⸀κοιμωμένων, ἵνα μὴ λυπῆσθε καθὼς"
+    },
+    {
+      "ref": "2 Corinthians 1:8",
+      "negator": "Οὐ",
+      "clause_text": "Οὐ γὰρ θέλομεν ὑμᾶς ἀγνοεῖν, ἀδελφοί, ⸀ὑπὲρ τῆς θλίψεως ἡμῶν τῆς ⸀γενομένης ἐν"
+    },
+    {
+      "ref": "Romans 1:13",
+      "negator": "οὐ",
+      "clause_text": "οὐ θέλω δὲ ὑμᾶς ἀγνοεῖν, ἀδελφοί, ὅτι πολλάκις προεθέμην ἐλθεῖν πρὸς ὑμᾶς, καὶ"
+    },
+    {
+      "ref": "Romans 11:25",
+      "negator": "Οὐ",
+      "clause_text": "Οὐ γὰρ θέλω ὑμᾶς ἀγνοεῖν, ἀδελφοί, τὸ μυστήριον τοῦτο, ἵνα μὴ ⸀ἦτε ἑαυτοῖς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 10:3",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 11:25",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 1:13",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 2:4",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 6:3",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 7:1",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "1 Corinthians 10:1",
+      "reason": "occurs near θέλω, ἀγνοέω, ἀδελφός"
+    },
+    {
+      "ref": "1 Corinthians 12:1",
+      "reason": "occurs near θέλω, ἀγνοέω, ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,98 @@
+{
+  "lemma": "ἐπαφρίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπαφρίζοντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:13",
+      "form": "ἐπαφρίζοντα",
+      "morph": "V-P-A-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "κύματα ἄγρια θαλάσσης",
+      "right_context": "τὰς ἑαυτῶν αἰσχύνας, ἀστέρες πλανῆται οἷς"
+    }
+  ],
+  "books": {
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κῦμα",
+      "display": "olas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγριος",
+      "display": "silvestres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "de·mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχύνη",
+      "display": "vergüenzas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀστήρ",
+      "display": "estrellas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλανήτης",
+      "display": "errantes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Jude 1:13",
+      "reason": "occurs near αἰσχύνη, θάλασσα, κῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

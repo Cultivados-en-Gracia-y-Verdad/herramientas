@@ -1,0 +1,80 @@
+{
+  "lemma": "κατασύρω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατασύρῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:58",
+      "form": "κατασύρῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 58,
+      "left_context": "δὸς ἐργασίαν ἀπηλλάχθαι ἀπ’ αὐτοῦ, μήποτε",
+      "right_context": "σε πρὸς τὸν κριτήν, καὶ ὁ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐργασία",
+      "display": "trabajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαλλάσσω",
+      "display": "librar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κριτής",
+      "display": "juez",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:58",
+      "reason": "occurs near κριτής, μήποτε, ἀπαλλάσσω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

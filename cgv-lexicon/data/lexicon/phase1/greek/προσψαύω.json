@@ -1,0 +1,80 @@
+{
+  "lemma": "προσψαύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προσψαύετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 11:46",
+      "form": "προσψαύετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 46,
+      "left_context": "αὐτοὶ ἑνὶ τῶν δακτύλων ὑμῶν οὐ",
+      "right_context": "τοῖς φορτίοις."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δάκτυλος",
+      "display": "de·dedos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φορτίον",
+      "display": "cargas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 11:46",
+      "negator": "οὐ",
+      "clause_text": "δυσβάστακτα, καὶ αὐτοὶ ἑνὶ τῶν δακτύλων ὑμῶν οὐ προσψαύετε τοῖς φορτίοις."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:46",
+      "reason": "occurs near δάκτυλος, εἷς, φορτίον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

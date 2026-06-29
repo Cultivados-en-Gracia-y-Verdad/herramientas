@@ -1,0 +1,152 @@
+{
+  "lemma": "ἀνορθόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀνορθώσατε,",
+      "count": 1
+    },
+    {
+      "form": "ἀνορθώσω",
+      "count": 1
+    },
+    {
+      "form": "ἀνωρθώθη,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:12",
+      "form": "ἀνορθώσατε,",
+      "morph": "V-A-A-D-2P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "παρειμένας χεῖρας καὶ τὰ παραλελυμένα γόνατα",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 15:16",
+      "form": "ἀνορθώσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 16,
+      "left_context": "καὶ τὰ ⸀κατεσκαμμένα αὐτῆς ἀνοικοδομήσω καὶ",
+      "right_context": "αὐτήν,"
+    },
+    {
+      "ref": "Luke 13:13",
+      "form": "ἀνωρθώθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 13,
+      "left_context": "ἐπέθηκεν αὐτῇ τὰς χεῖρας· καὶ παραχρῆμα",
+      "right_context": "καὶ ἐδόξαζεν τὸν θεόν."
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραλύομαι",
+      "display": "paralizarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γόνυ",
+      "display": "rodillas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατασκάπτω",
+      "display": "derribados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνοικοδομέω",
+      "display": "reedificaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραχρῆμα",
+      "display": "al·instante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Hebrews 12:12",
+      "form": "ἀνορθώσατε,",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Διὸ τὰς παρειμένας χεῖρας καὶ τὰ παραλελυμένα γόνατα ἀνορθώσατε,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 15:16",
+      "reason": "occurs near κατασκάπτω, ἀνοικοδομέω"
+    },
+    {
+      "ref": "Luke 13:13",
+      "reason": "occurs near χείρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

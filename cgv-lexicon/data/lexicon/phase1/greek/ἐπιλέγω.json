@@ -1,0 +1,143 @@
+{
+  "lemma": "ἐπιλέγω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπιλεξάμενος",
+      "count": 1
+    },
+    {
+      "form": "ἐπιλεγομένη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "middle": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:40",
+      "form": "ἐπιλεξάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 40,
+      "left_context": "Παῦλος δὲ",
+      "right_context": "Σιλᾶν ἐξῆλθεν παραδοθεὶς τῇ χάριτι τοῦ"
+    },
+    {
+      "ref": "John 5:2",
+      "form": "ἐπιλεγομένη",
+      "morph": "V-P-P-P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "Ἱεροσολύμοις ἐπὶ τῇ προβατικῇ κολυμβήθρα ἡ",
+      "right_context": "Ἑβραϊστὶ ⸀Βηθεσδά, πέντε στοὰς ἔχουσα·"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίλας",
+      "display": "Silas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προβατικός",
+      "display": "de·ovejas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολυμβήθρα",
+      "display": "estanque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἑβραϊστί",
+      "display": "en·hebreo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βηθεσδά",
+      "display": "Betesda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέντε",
+      "display": "cinco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στοά",
+      "display": "pórticos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:40",
+      "reason": "occurs near Παῦλος, Σίλας, παραδίδωμι"
+    },
+    {
+      "ref": "John 5:2",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

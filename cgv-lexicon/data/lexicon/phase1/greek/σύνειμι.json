@@ -1,0 +1,155 @@
+{
+  "lemma": "σύνειμι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συνόντων",
+      "count": 1
+    },
+    {
+      "form": "Συνιόντος",
+      "count": 1
+    },
+    {
+      "form": "συνῆσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 22:11",
+      "form": "συνόντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 11,
+      "left_context": "τοῦ φωτὸς ἐκείνου, χειραγωγούμενος ὑπὸ τῶν",
+      "right_context": "μοι ἦλθον εἰς Δαμασκόν."
+    },
+    {
+      "ref": "Luke 8:4",
+      "form": "Συνιόντος",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 4,
+      "left_context": "",
+      "right_context": "δὲ ὄχλου πολλοῦ καὶ τῶν κατὰ"
+    },
+    {
+      "ref": "Luke 9:18",
+      "form": "συνῆσαν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "τῷ εἶναι αὐτὸν προσευχόμενον κατὰ μόνας",
+      "right_context": "αὐτῷ οἱ μαθηταί, καὶ ἐπηρώτησεν αὐτοὺς"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φῶς",
+      "display": "de·luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χειραγωγέω",
+      "display": "llevar·de·la·mano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vine",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαμασκός",
+      "display": "Damasco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπερωτάω",
+      "display": "preguntó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:4",
+      "reason": "occurs near ὄχλος"
+    },
+    {
+      "ref": "Luke 9:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 22:11",
+      "reason": "occurs near Δαμασκός, φῶς, χειραγωγέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

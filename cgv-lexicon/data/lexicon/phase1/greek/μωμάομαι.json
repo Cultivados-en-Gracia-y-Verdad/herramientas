@@ -1,0 +1,131 @@
+{
+  "lemma": "μωμάομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μωμηθῇ",
+      "count": 1
+    },
+    {
+      "form": "μωμήσηται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 6:3",
+      "form": "μωμηθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 3,
+      "left_context": "ἐν μηδενὶ διδόντες προσκοπήν, ἵνα μὴ",
+      "right_context": "ἡ διακονία,"
+    },
+    {
+      "ref": "2 Corinthians 8:20",
+      "form": "μωμήσηται",
+      "morph": "V-A-M-S-3S",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 20,
+      "left_context": "στελλόμενοι τοῦτο μή τις ἡμᾶς",
+      "right_context": "ἐν τῇ ἁδρότητι ταύτῃ τῇ διακονουμένῃ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δίδωμι",
+      "display": "dando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσκοπή",
+      "display": "tropiezo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στέλλομαι",
+      "display": "guardarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁδρότης",
+      "display": "generosidad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Corinthians 6:3",
+      "form": "μωμηθῇ",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "μηδεμίαν ἐν μηδενὶ διδόντες προσκοπήν, ἵνα μὴ μωμηθῇ ἡ διακονία,",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "2 Corinthians 8:20",
+      "form": "μωμήσηται",
+      "morph": "V-A-M-S-3S",
+      "clause_text": "στελλόμενοι τοῦτο μή τις ἡμᾶς μωμήσηται ἐν τῇ ἁδρότητι ταύτῃ τῇ διακονουμένῃ ὑφ’ ἡμῶν,",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 6:3",
+      "negator": "μὴ",
+      "clause_text": "μηδεμίαν ἐν μηδενὶ διδόντες προσκοπήν, ἵνα μὴ μωμηθῇ ἡ διακονία,"
+    },
+    {
+      "ref": "2 Corinthians 8:20",
+      "negator": "μή",
+      "clause_text": "στελλόμενοι τοῦτο μή τις ἡμᾶς μωμήσηται ἐν τῇ ἁδρότητι ταύτῃ τῇ διακονουμένῃ ὑφ’ ἡμῶν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 6:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 8:20",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

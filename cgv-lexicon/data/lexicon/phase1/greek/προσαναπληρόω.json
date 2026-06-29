@@ -1,0 +1,124 @@
+{
+  "lemma": "προσαναπληρόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προσαναπληροῦσα",
+      "count": 1
+    },
+    {
+      "form": "προσανεπλήρωσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 9:12",
+      "form": "προσαναπληροῦσα",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "τῆς λειτουργίας ταύτης οὐ μόνον ἐστὶν",
+      "right_context": "τὰ ὑστερήματα τῶν ἁγίων, ἀλλὰ καὶ"
+    },
+    {
+      "ref": "2 Corinthians 11:9",
+      "form": "προσανεπλήρωσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 9,
+      "left_context": "κατενάρκησα οὐθενός· τὸ γὰρ ὑστέρημά μου",
+      "right_context": "οἱ ἀδελφοὶ ἐλθόντες ἀπὸ Μακεδονίας· καὶ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑστέρημα",
+      "display": "faltas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λειτουργία",
+      "display": "de·servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μακεδονία",
+      "display": "de·Macedonia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 9:12",
+      "negator": "οὐ",
+      "clause_text": "ἡ διακονία τῆς λειτουργίας ταύτης οὐ μόνον ἐστὶν προσαναπληροῦσα τὰ ὑστερήματα τῶν ἁγίων, ἀλλὰ καὶ περισσεύουσα διὰ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 11:9",
+      "reason": "occurs near ἀδελφός, ὑστέρημα"
+    },
+    {
+      "ref": "2 Corinthians 9:12",
+      "reason": "occurs near λειτουργία, μόνος, ἅγιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

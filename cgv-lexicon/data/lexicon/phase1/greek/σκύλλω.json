@@ -1,0 +1,214 @@
+{
+  "lemma": "σκύλλω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "σκύλλου,",
+      "count": 1
+    },
+    {
+      "form": "σκύλλε",
+      "count": 1
+    },
+    {
+      "form": "σκύλλεις",
+      "count": 1
+    },
+    {
+      "form": "ἐσκυλμένοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 3,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 7:6",
+      "form": "σκύλλου,",
+      "morph": "V-P-P-D-2S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "ὁ ἑκατοντάρχης⸃ λέγων αὐτῷ· Κύριε, μὴ",
+      "right_context": "οὐ γὰρ ⸂ἱκανός εἰμι⸃ ἵνα ὑπὸ"
+    },
+    {
+      "ref": "Luke 8:49",
+      "form": "σκύλλε",
+      "morph": "V-P-A-D-2S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 49,
+      "left_context": "ὅτι Τέθνηκεν ἡ θυγάτηρ σου, ⸀μηκέτι",
+      "right_context": "τὸν διδάσκαλον."
+    },
+    {
+      "ref": "Mark 5:35",
+      "form": "σκύλλεις",
+      "morph": "V-P-A-I-2S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 35,
+      "left_context": "Ἡ θυγάτηρ σου ἀπέθανεν· τί ἔτι",
+      "right_context": "τὸν διδάσκαλον;"
+    },
+    {
+      "ref": "Matthew 9:36",
+      "form": "ἐσκυλμένοι",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 36,
+      "left_context": "ὄχλους ἐσπλαγχνίσθη περὶ αὐτῶν ὅτι ἦσαν",
+      "right_context": "καὶ ἐρριμμένοι ⸀ὡσεὶ πρόβατα μὴ ἔχοντα"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θυγάτηρ",
+      "display": "hija",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑκατοντάρχης",
+      "display": "centurión·",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficiente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνῄσκω",
+      "display": "ha muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπλαγχνίζομαι",
+      "display": "compadecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥίπτω",
+      "display": "arrojados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσεί",
+      "display": "como·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόβατον",
+      "display": "ovejas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 7:6",
+      "form": "σκύλλου,",
+      "morph": "V-P-P-D-2S",
+      "clause_text": "ἔπεμψεν ⸂φίλους ὁ ἑκατοντάρχης⸃ λέγων αὐτῷ· Κύριε, μὴ σκύλλου, οὐ γὰρ ⸂ἱκανός εἰμι⸃ ἵνα ὑπὸ τὴν στέγην",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 8:49",
+      "form": "σκύλλε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ἀρχισυναγώγου ⸀λέγων ὅτι Τέθνηκεν ἡ θυγάτηρ σου, ⸀μηκέτι σκύλλε τὸν διδάσκαλον."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 7:6",
+      "negator": "μὴ",
+      "clause_text": "ἔπεμψεν ⸂φίλους ὁ ἑκατοντάρχης⸃ λέγων αὐτῷ· Κύριε, μὴ σκύλλου, οὐ γὰρ ⸂ἱκανός εἰμι⸃ ἵνα ὑπὸ τὴν στέγην"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 7:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 8:49",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 5:35",
+      "reason": "occurs near διδάσκαλος, θυγάτηρ"
+    },
+    {
+      "ref": "Matthew 9:36",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

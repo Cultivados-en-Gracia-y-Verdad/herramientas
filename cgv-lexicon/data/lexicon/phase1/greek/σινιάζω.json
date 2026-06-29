@@ -1,0 +1,74 @@
+{
+  "lemma": "σινιάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "σινιάσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 22:31",
+      "form": "σινιάσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 31,
+      "left_context": "ἰδοὺ ὁ Σατανᾶς ἐξῃτήσατο ὑμᾶς τοῦ",
+      "right_context": "ὡς τὸν σῖτον·"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Σατανᾶς",
+      "display": "Satanás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξαιτέομαι",
+      "display": "pedió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῖτος",
+      "display": "trigo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 22:31",
+      "reason": "occurs near Σατανᾶς, σῖτος, ἐξαιτέομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

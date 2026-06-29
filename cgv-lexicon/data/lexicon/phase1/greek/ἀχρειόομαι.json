@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀχρειόομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἠχρεώθησαν·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 3:12",
+      "form": "ἠχρεώθησαν·",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "πάντες ἐξέκλιναν, ἅμα",
+      "right_context": "οὐκ ⸀ἔστιν ποιῶν χρηστότητα, οὐκ ἔστιν"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκκλίνω",
+      "display": "desviarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρηστότης",
+      "display": "bondad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 3:12",
+      "negator": "οὐκ",
+      "clause_text": "πάντες ἐξέκλιναν, ἅμα ἠχρεώθησαν· οὐκ ⸀ἔστιν ποιῶν χρηστότητα, οὐκ ἔστιν ἕως ἑνός."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 3:12",
+      "reason": "occurs near χρηστότης, ἅμα, ἐκκλίνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

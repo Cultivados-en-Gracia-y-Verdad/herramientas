@@ -1,0 +1,86 @@
+{
+  "lemma": "διακατελέγχομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διακατηλέγχετο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 18:28",
+      "form": "διακατηλέγχετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 28,
+      "left_context": "εὐτόνως γὰρ τοῖς Ἰουδαίοις",
+      "right_context": "δημοσίᾳ ἐπιδεικνὺς διὰ τῶν γραφῶν εἶναι"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εὐτόνως",
+      "display": "con·fuerza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δημόσιος",
+      "display": "pública",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιδείκνυμι",
+      "display": "mostrando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "de·escrituras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:28",
+      "reason": "occurs near γραφή, δημόσιος, εὐτόνως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

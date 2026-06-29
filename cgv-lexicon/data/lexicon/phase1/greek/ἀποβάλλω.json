@@ -1,0 +1,170 @@
+{
+  "lemma": "ἀποβάλλω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀποβάλητε",
+      "count": 1
+    },
+    {
+      "form": "ἀποβαλὼν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀποβαλώμεθα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 2,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 10:35",
+      "form": "ἀποβάλητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 35,
+      "left_context": "μὴ",
+      "right_context": "οὖν τὴν παρρησίαν ὑμῶν, ἥτις ἔχει"
+    },
+    {
+      "ref": "Mark 10:50",
+      "form": "ἀποβαλὼν",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 50,
+      "left_context": "ὁ δὲ",
+      "right_context": "τὸ ἱμάτιον αὐτοῦ ⸀ἀναπηδήσας ἦλθεν πρὸς"
+    },
+    {
+      "ref": "Romans 13:12",
+      "form": "⸀ἀποβαλώμεθα",
+      "morph": "V-A-M-S-1P",
+      "book": "Romans",
+      "chapter": 13,
+      "verse": 12,
+      "left_context": "νὺξ προέκοψεν, ἡ δὲ ἡμέρα ἤγγικεν.",
+      "right_context": "οὖν τὰ ἔργα τοῦ σκότους, ⸂ἐνδυσώμεθα"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Mark": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρρησία",
+      "display": "franqueza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "manto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναπηδάω",
+      "display": "saltado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προκόπτω",
+      "display": "progresó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγίζω",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκότος",
+      "display": "de·tinieblas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Hebrews 10:35",
+      "form": "ἀποβάλητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "μὴ ἀποβάλητε οὖν τὴν παρρησίαν ὑμῶν, ἥτις ἔχει ⸂μεγάλην μισθαποδοσίαν⸃,",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 10:35",
+      "negator": "μὴ",
+      "clause_text": "μὴ ἀποβάλητε οὖν τὴν παρρησίαν ὑμῶν, ἥτις ἔχει ⸂μεγάλην μισθαποδοσίαν⸃,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:35",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 10:50",
+      "reason": "occurs near ἀναπηδάω, ἔρχομαι, ἱμάτιον"
+    },
+    {
+      "ref": "Romans 13:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "συναυξάνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συναυξάνεσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 13:30",
+      "form": "συναυξάνεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 30,
+      "left_context": "ἄφετε",
+      "right_context": "ἀμφότερα ⸀μέχρι τοῦ θερισμοῦ· καὶ ἐν"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdonad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμφότεροι",
+      "display": "amboses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέχρι(ς)",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θερισμός",
+      "display": "de·cosecha",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:30",
+      "reason": "occurs near θερισμός, μέχρι(ς), ἀμφότεροι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

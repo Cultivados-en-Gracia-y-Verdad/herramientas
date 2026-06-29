@@ -1,0 +1,111 @@
+{
+  "lemma": "ῥαπίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ῥαπίζει",
+      "count": 1
+    },
+    {
+      "form": "ἐράπισαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 5:39",
+      "form": "⸀ῥαπίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 39,
+      "left_context": "ἀντιστῆναι τῷ πονηρῷ· ἀλλ’ ὅστις σε",
+      "right_context": "⸀εἰς τὴν δεξιὰν ⸀σιαγόνα, στρέψον αὐτῷ"
+    },
+    {
+      "ref": "Matthew 26:67",
+      "form": "ἐράπισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 67,
+      "left_context": "αὐτοῦ καὶ ἐκολάφισαν αὐτόν, οἱ δὲ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πονηρός",
+      "display": "malvado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "derecha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σιαγών",
+      "display": "mejilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρέφω",
+      "display": "volve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολαφίζω",
+      "display": "golpearon",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 26:67",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 5:39",
+      "reason": "occurs near δεξιός, πονηρός, σιαγών"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,238 @@
+{
+  "lemma": "εἰσακούω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "εἰσηκούσθη",
+      "count": 2
+    },
+    {
+      "form": "εἰσακούσονταί",
+      "count": 1
+    },
+    {
+      "form": "εἰσακουσθεὶς",
+      "count": 1
+    },
+    {
+      "form": "εἰσακουσθήσονται·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 2,
+      "aorist": 3
+    },
+    "voices": {
+      "middle": 1,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 14:21",
+      "form": "εἰσακούσονταί",
+      "morph": "V-F-M-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 21,
+      "left_context": "τῷ λαῷ τούτῳ, καὶ οὐδ’ οὕτως",
+      "right_context": "μου, λέγει κύριος."
+    },
+    {
+      "ref": "Hebrews 5:7",
+      "form": "εἰσακουσθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Hebrews",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "κραυγῆς ἰσχυρᾶς καὶ δακρύων προσενέγκας καὶ",
+      "right_context": "ἀπὸ τῆς εὐλαβείας,"
+    },
+    {
+      "ref": "Acts 10:31",
+      "form": "εἰσηκούσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 31,
+      "left_context": "καὶ φησί· Κορνήλιε,",
+      "right_context": "σου ἡ προσευχὴ καὶ αἱ ἐλεημοσύναι"
+    },
+    {
+      "ref": "Luke 1:13",
+      "form": "εἰσηκούσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ὁ ἄγγελος· Μὴ φοβοῦ, Ζαχαρία, διότι",
+      "right_context": "ἡ δέησίς σου, καὶ ἡ γυνή"
+    },
+    {
+      "ref": "Matthew 6:7",
+      "form": "εἰσακουσθήσονται·",
+      "morph": "V-F-P-I-3P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "γὰρ ὅτι ἐν τῇ πολυλογίᾳ αὐτῶν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Hebrews": 1,
+    "Acts": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχυρός",
+      "display": "de·fuerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δάκρυον",
+      "display": "de·lágrimas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "ofrecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλάβεια",
+      "display": "de·reverencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φημί",
+      "display": "dice",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κορνήλιος",
+      "display": "Cornelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσευχή",
+      "display": "oración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "teme",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ζαχαρίας",
+      "display": "Zacarías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διότι",
+      "display": "porque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέησις",
+      "display": "súplica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολυλογία",
+      "display": "palabrería",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 14:21",
+      "negator": "οὐδ’",
+      "clause_text": "⸀ἑτέρων λαλήσω τῷ λαῷ τούτῳ, καὶ οὐδ’ οὕτως εἰσακούσονταί μου, λέγει κύριος."
+    },
+    {
+      "ref": "Luke 1:13",
+      "negator": "Μὴ",
+      "clause_text": "πρὸς αὐτὸν ὁ ἄγγελος· Μὴ φοβοῦ, Ζαχαρία, διότι εἰσηκούσθη ἡ δέησίς σου, καὶ ἡ γυνή σου Ἐλισάβετ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 14:21",
+      "reason": "occurs near κύριος, λαός, οὕτω(ς)"
+    },
+    {
+      "ref": "Acts 10:31",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 5:7",
+      "reason": "occurs near δάκρυον, ἰσχυρός"
+    },
+    {
+      "ref": "Luke 1:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 6:7",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

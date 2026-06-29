@@ -1,0 +1,112 @@
+{
+  "lemma": "μεταλλάσσω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μετήλλαξαν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 1:25",
+      "form": "μετήλλαξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 25,
+      "left_context": "οἵτινες",
+      "right_context": "τὴν ἀλήθειαν τοῦ θεοῦ ἐν τῷ"
+    },
+    {
+      "ref": "Romans 1:26",
+      "form": "μετήλλαξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 26,
+      "left_context": "ἀτιμίας· αἵ τε γὰρ θήλειαι αὐτῶν",
+      "right_context": "τὴν φυσικὴν χρῆσιν εἰς τὴν παρὰ"
+    }
+  ],
+  "books": {
+    "Romans": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θῆλυς",
+      "display": "hembras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυσικός",
+      "display": "natural",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρῆσις",
+      "display": "uso",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 1:25",
+      "reason": "occurs near θεός, ἀλήθεια, ὅστις"
+    },
+    {
+      "ref": "Romans 1:26",
+      "reason": "occurs near θῆλυς, τέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

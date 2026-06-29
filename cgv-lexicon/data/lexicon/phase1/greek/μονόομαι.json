@@ -1,0 +1,86 @@
+{
+  "lemma": "μονόομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μεμονωμένη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:5",
+      "form": "μεμονωμένη",
+      "morph": "V-X-P-P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 5,
+      "left_context": "ἡ δὲ ὄντως χήρα καὶ",
+      "right_context": "ἤλπικεν ἐπὶ ⸀θεὸν καὶ προσμένει ταῖς"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄντως",
+      "display": "verdaderamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χήρα",
+      "display": "viuda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίζω",
+      "display": "ha esperado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσμένω",
+      "display": "permanece",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:5",
+      "reason": "occurs near θεός, προσμένω, χήρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

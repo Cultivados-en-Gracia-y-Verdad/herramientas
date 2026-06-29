@@ -1,0 +1,125 @@
+{
+  "lemma": "τιμωρέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "τιμωρηθῶσιν.",
+      "count": 1
+    },
+    {
+      "form": "τιμωρῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 22:5",
+      "form": "τιμωρηθῶσιν.",
+      "morph": "V-A-P-S-3P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 5,
+      "left_context": "ἐκεῖσε ὄντας δεδεμένους εἰς Ἰερουσαλὴμ ἵνα",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 26:11",
+      "form": "τιμωρῶν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 11,
+      "left_context": "καὶ κατὰ πάσας τὰς συναγωγὰς πολλάκις",
+      "right_context": "αὐτοὺς ἠνάγκαζον βλασφημεῖν, περισσῶς τε ἐμμαινόμενος"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δέω",
+      "display": "atados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagogas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολλάκις",
+      "display": "muchas·veces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναγκάζω",
+      "display": "obligaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημέω",
+      "display": "blasfemar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περισσῶς",
+      "display": "en·gran·manera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:5",
+      "reason": "occurs near δέω, Ἰερουσαλήμ"
+    },
+    {
+      "ref": "Acts 26:11",
+      "reason": "occurs near πολλάκις, συναγωγή, ἀναγκάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

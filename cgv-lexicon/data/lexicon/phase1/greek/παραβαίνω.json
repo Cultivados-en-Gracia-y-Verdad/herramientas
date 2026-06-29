@@ -1,0 +1,148 @@
+{
+  "lemma": "παραβαίνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "παρέβη",
+      "count": 1
+    },
+    {
+      "form": "παραβαίνουσιν",
+      "count": 1
+    },
+    {
+      "form": "παραβαίνετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 1:25",
+      "form": "παρέβη",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 25,
+      "left_context": "διακονίας ταύτης καὶ ἀποστολῆς, ⸀ἀφ’ ἧς",
+      "right_context": "Ἰούδας πορευθῆναι εἰς τὸν τόπον τὸν"
+    },
+    {
+      "ref": "Matthew 15:2",
+      "form": "παραβαίνουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 2,
+      "left_context": "Διὰ τί οἱ μαθηταί σου",
+      "right_context": "τὴν παράδοσιν τῶν πρεσβυτέρων; οὐ γὰρ"
+    },
+    {
+      "ref": "Matthew 15:3",
+      "form": "παραβαίνετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 3,
+      "left_context": "εἶπεν αὐτοῖς· Διὰ τί καὶ ὑμεῖς",
+      "right_context": "τὴν ἐντολὴν τοῦ θεοῦ διὰ τὴν"
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποστολή",
+      "display": "de·apostolado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰούδας",
+      "display": "Judá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "ir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράδοσις",
+      "display": "tradición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρεσβύτερος",
+      "display": "de·ancianos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "mandamiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 15:2",
+      "reason": "occurs near μαθητής"
+    },
+    {
+      "ref": "Matthew 15:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 1:25",
+      "reason": "occurs near πορεύομαι, τόπος, ἀποστολή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

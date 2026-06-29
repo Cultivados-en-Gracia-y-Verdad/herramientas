@@ -1,0 +1,86 @@
+{
+  "lemma": "προσδέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προσδεόμενός",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:25",
+      "form": "προσδεόμενός",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 25,
+      "left_context": "οὐδὲ ὑπὸ χειρῶν ⸀ἀνθρωπίνων θεραπεύεται",
+      "right_context": "τινος, αὐτὸς διδοὺς πᾶσι ζωὴν καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "de·manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνθρώπινος",
+      "display": "de·humanas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεραπεύω",
+      "display": "es sanado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:25",
+      "reason": "occurs near δίδωμι, ζωή, θεραπεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

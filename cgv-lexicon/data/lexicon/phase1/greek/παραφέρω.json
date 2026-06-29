@@ -1,0 +1,256 @@
+{
+  "lemma": "παραφέρω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "παραφέρεσθε·",
+      "count": 1
+    },
+    {
+      "form": "παραφερόμεναι,",
+      "count": 1
+    },
+    {
+      "form": "⸀παρένεγκε",
+      "count": 1
+    },
+    {
+      "form": "παρένεγκε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 13:9",
+      "form": "παραφέρεσθε·",
+      "morph": "V-P-P-D-2P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 9,
+      "left_context": "διδαχαῖς ποικίλαις καὶ ξέναις μὴ",
+      "right_context": "καλὸν γὰρ χάριτι βεβαιοῦσθαι τὴν καρδίαν,"
+    },
+    {
+      "ref": "Jude 1:12",
+      "form": "παραφερόμεναι,",
+      "morph": "V-P-P-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "ἑαυτοὺς ποιμαίνοντες, νεφέλαι ἄνυδροι ὑπὸ ἀνέμων",
+      "right_context": "δένδρα φθινοπωρινὰ ἄκαρπα δὶς ἀποθανόντα ἐκριζωθέντα,"
+    },
+    {
+      "ref": "Luke 22:42",
+      "form": "⸀παρένεγκε",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 42,
+      "left_context": "λέγων· Πάτερ, εἰ βούλει",
+      "right_context": "⸂τοῦτο τὸ ποτήριον⸃ ἀπ’ ἐμοῦ· πλὴν"
+    },
+    {
+      "ref": "Mark 14:36",
+      "form": "παρένεγκε",
+      "morph": "V-A-A-D-2S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 36,
+      "left_context": "Αββα ὁ πατήρ, πάντα δυνατά σοι·",
+      "right_context": "τὸ ποτήριον ⸂τοῦτο ἀπ’ ἐμοῦ⸃· ἀλλ’"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Jude": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποτήριον",
+      "display": "copa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διδαχή",
+      "display": "enseñanzas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποικίλος",
+      "display": "varias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξένος",
+      "display": "extranjeras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βεβαιόω",
+      "display": "confirmar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποιμαίνω",
+      "display": "pastoreando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεφέλη",
+      "display": "nubes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνυδρος",
+      "display": "sin·agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·vientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δένδρον",
+      "display": "árboles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθινοπωρινός",
+      "display": "otoñales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκαρπος",
+      "display": "sin·fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίς",
+      "display": "dos·veces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "quieres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderosos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Hebrews 13:9",
+      "form": "παραφέρεσθε·",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "διδαχαῖς ποικίλαις καὶ ξέναις μὴ παραφέρεσθε· καλὸν γὰρ χάριτι βεβαιοῦσθαι τὴν καρδίαν, οὐ βρώμασιν,",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 22:42",
+      "form": "⸀παρένεγκε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "λέγων· Πάτερ, εἰ βούλει ⸀παρένεγκε ⸂τοῦτο τὸ ποτήριον⸃ ἀπ’ ἐμοῦ· πλὴν μὴ τὸ"
+    },
+    {
+      "ref": "Mark 14:36",
+      "form": "παρένεγκε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "καὶ ἔλεγεν· Αββα ὁ πατήρ, πάντα δυνατά σοι· παρένεγκε τὸ ποτήριον ⸂τοῦτο ἀπ’ ἐμοῦ⸃· ἀλλ’ οὐ τί"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 13:9",
+      "negator": "μὴ",
+      "clause_text": "διδαχαῖς ποικίλαις καὶ ξέναις μὴ παραφέρεσθε· καλὸν γὰρ χάριτι βεβαιοῦσθαι τὴν καρδίαν, οὐ βρώμασιν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 13:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 22:42",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 14:36",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Jude 1:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

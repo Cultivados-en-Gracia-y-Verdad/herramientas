@@ -1,0 +1,153 @@
+{
+  "lemma": "ὑπονοέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ὑπονοεῖτε",
+      "count": 1
+    },
+    {
+      "form": "ὑπενόουν⸃",
+      "count": 1
+    },
+    {
+      "form": "ὑπενόουν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:25",
+      "form": "ὑπονοεῖτε",
+      "morph": "V-P-A-I-2P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 25,
+      "left_context": "⸀Ἰωάννης τὸν δρόμον, ἔλεγεν· ⸂Τί ἐμὲ⸃",
+      "right_context": "εἶναι; οὐκ εἰμὶ ἐγώ· ἀλλ’ ἰδοὺ"
+    },
+    {
+      "ref": "Acts 25:18",
+      "form": "ὑπενόουν⸃",
+      "morph": "V-I-A-I-1S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 18,
+      "left_context": "κατήγοροι οὐδεμίαν αἰτίαν ⸀ἔφερον ὧν ⸂ἐγὼ",
+      "right_context": "⸀πονηρῶν,"
+    },
+    {
+      "ref": "Acts 27:27",
+      "form": "ὑπενόουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 27,
+      "left_context": "τῷ Ἀδρίᾳ, κατὰ μέσον τῆς νυκτὸς",
+      "right_context": "οἱ ναῦται προσάγειν τινὰ αὐτοῖς χώραν."
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δρόμος",
+      "display": "carrera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτία",
+      "display": "causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "de·malvados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀδρίας",
+      "display": "Adria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναύτης",
+      "display": "marineros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσάγω",
+      "display": "llevar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 13:25",
+      "negator": "οὐκ",
+      "clause_text": "δὲ ἐπλήρου ⸀Ἰωάννης τὸν δρόμον, ἔλεγεν· ⸂Τί ἐμὲ⸃ ὑπονοεῖτε εἶναι; οὐκ εἰμὶ ἐγώ· ἀλλ’ ἰδοὺ ἔρχεται μετ’"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:25",
+      "reason": "occurs near δρόμος"
+    },
+    {
+      "ref": "Acts 25:18",
+      "reason": "occurs near αἰτία, πονηρός, φέρω"
+    },
+    {
+      "ref": "Acts 27:27",
+      "reason": "occurs near Ἀδρίας"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

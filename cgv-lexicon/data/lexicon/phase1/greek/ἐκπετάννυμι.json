@@ -1,0 +1,86 @@
+{
+  "lemma": "ἐκπετάννυμι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξεπέτασα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 10:21",
+      "form": "ἐξεπέτασα",
+      "morph": "V-A-A-I-1S",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 21,
+      "left_context": "τὸν Ἰσραὴλ λέγει· Ὅλην τὴν ἡμέραν",
+      "right_context": "τὰς χεῖράς μου πρὸς λαὸν ἀπειθοῦντα"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "Israel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 10:21",
+      "reason": "occurs near λαός, χείρ, ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

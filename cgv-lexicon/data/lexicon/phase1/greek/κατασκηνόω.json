@@ -1,0 +1,146 @@
+{
+  "lemma": "κατασκηνόω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κατασκηνώσει",
+      "count": 1
+    },
+    {
+      "form": "κατεσκήνωσεν",
+      "count": 1
+    },
+    {
+      "form": "κατασκηνοῦν.",
+      "count": 1
+    },
+    {
+      "form": "κατασκηνοῦν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "infinitive": 2
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 1,
+      "present": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:26",
+      "form": "κατασκηνώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 26,
+      "left_context": "ἔτι δὲ καὶ ἡ σάρξ μου",
+      "right_context": "ἐπ’ ἐλπίδι·"
+    },
+    {
+      "ref": "Luke 13:19",
+      "form": "κατεσκήνωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 19,
+      "left_context": "⸀δένδρον, καὶ τὰ πετεινὰ τοῦ οὐρανοῦ",
+      "right_context": "ἐν τοῖς κλάδοις αὐτοῦ."
+    },
+    {
+      "ref": "Mark 4:32",
+      "form": "κατασκηνοῦν.",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 32,
+      "left_context": "σκιὰν αὐτοῦ τὰ πετεινὰ τοῦ οὐρανοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 13:32",
+      "form": "κατασκηνοῦν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 32,
+      "left_context": "ἐλθεῖν τὰ πετεινὰ τοῦ οὐρανοῦ καὶ",
+      "right_context": "ἐν τοῖς κλάδοις αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πετεινόν",
+      "display": "aves",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κλάδος",
+      "display": "ramas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 2:26",
+      "reason": "occurs near σάρξ, ἐλπίς"
+    },
+    {
+      "ref": "Luke 13:19",
+      "reason": "occurs near κλάδος, οὐρανός, πετεινόν"
+    },
+    {
+      "ref": "Mark 4:32",
+      "reason": "occurs near οὐρανός, πετεινόν"
+    },
+    {
+      "ref": "Matthew 13:32",
+      "reason": "occurs near κλάδος, οὐρανός, πετεινόν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

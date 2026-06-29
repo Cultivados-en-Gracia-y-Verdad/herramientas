@@ -1,0 +1,118 @@
+{
+  "lemma": "ἀνακαινόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνακαινοῦται",
+      "count": 1
+    },
+    {
+      "form": "ἀνακαινούμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:16",
+      "form": "ἀνακαινοῦται",
+      "morph": "V-P-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "ἄνθρωπος διαφθείρεται, ἀλλ’ ὁ ⸂ἔσω ἡμῶν⸃",
+      "right_context": "ἡμέρᾳ καὶ ἡμέρᾳ."
+    },
+    {
+      "ref": "Colossians 3:10",
+      "form": "ἀνακαινούμενον",
+      "morph": "V-P-P-P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "καὶ ἐνδυσάμενοι τὸν νέον τὸν",
+      "right_context": "εἰς ἐπίγνωσιν κατ’ εἰκόνα τοῦ κτίσαντος"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διαφθείρω",
+      "display": "es corrompido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔσω",
+      "display": "dentro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδύω",
+      "display": "vestidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίγνωσις",
+      "display": "conocimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰκών",
+      "display": "imagen",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:16",
+      "reason": "occurs near διαφθείρω, ἔσω, ἡμέρα"
+    },
+    {
+      "ref": "Colossians 3:10",
+      "reason": "occurs near νέος, ἐνδύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

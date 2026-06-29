@@ -1,0 +1,80 @@
+{
+  "lemma": "διανύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διανύσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 21:7",
+      "form": "διανύσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 7,
+      "left_context": "Ἡμεῖς δὲ τὸν πλοῦν",
+      "right_context": "ἀπὸ Τύρου κατηντήσαμεν εἰς Πτολεμαΐδα, καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλοῦς",
+      "display": "viaje",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τύρος",
+      "display": "de·Tiro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταντάω",
+      "display": "llegamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πτολεμαΐς",
+      "display": "Ptolemaida",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:7",
+      "reason": "occurs near Πτολεμαΐς, Τύρος, καταντάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

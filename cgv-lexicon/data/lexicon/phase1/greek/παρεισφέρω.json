@@ -1,0 +1,74 @@
+{
+  "lemma": "παρεισφέρω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρεισενέγκαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:5",
+      "form": "παρεισενέγκαντες",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "καὶ αὐτὸ τοῦτο δὲ σπουδὴν πᾶσαν",
+      "right_context": "ἐπιχορηγήσατε ἐν τῇ πίστει ὑμῶν τὴν"
+    }
+  ],
+  "books": {
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σπουδή",
+      "display": "diligencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιχορηγέω",
+      "display": "proveed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:5",
+      "reason": "occurs near πίστις, σπουδή, ἐπιχορηγέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

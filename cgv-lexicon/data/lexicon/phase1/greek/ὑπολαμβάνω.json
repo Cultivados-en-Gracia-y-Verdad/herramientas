@@ -1,0 +1,229 @@
+{
+  "lemma": "ὑπολαμβάνω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "⸀ὑπολαμβάνειν",
+      "count": 1
+    },
+    {
+      "form": "ὑπέλαβεν",
+      "count": 1
+    },
+    {
+      "form": "ὑπολαμβάνετε",
+      "count": 1
+    },
+    {
+      "form": "Ὑπολαμβάνω",
+      "count": 1
+    },
+    {
+      "form": "ὑπολαβὼν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "3 John 1:8",
+      "form": "⸀ὑπολαμβάνειν",
+      "morph": "V-P-A-N",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "ἡμεῖς οὖν ὀφείλομεν",
+      "right_context": "τοὺς τοιούτους, ἵνα συνεργοὶ γινώμεθα τῇ"
+    },
+    {
+      "ref": "Acts 1:9",
+      "form": "ὑπέλαβεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "εἰπὼν βλεπόντων αὐτῶν ἐπήρθη καὶ νεφέλη",
+      "right_context": "αὐτὸν ἀπὸ τῶν ὀφθαλμῶν αὐτῶν."
+    },
+    {
+      "ref": "Acts 2:15",
+      "form": "ὑπολαμβάνετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "οὐ γὰρ ὡς ὑμεῖς",
+      "right_context": "οὗτοι μεθύουσιν, ἔστιν γὰρ ὥρα τρίτη"
+    },
+    {
+      "ref": "Luke 7:43",
+      "form": "Ὑπολαμβάνω",
+      "morph": "V-P-A-I-1S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 43,
+      "left_context": "⸀ἀποκριθεὶς Σίμων εἶπεν·",
+      "right_context": "ὅτι ᾧ τὸ πλεῖον ἐχαρίσατο. ὁ"
+    },
+    {
+      "ref": "Luke 10:30",
+      "form": "ὑπολαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 30,
+      "left_context": "",
+      "right_context": "⸀δὲ ὁ Ἰησοῦς εἶπεν· Ἄνθρωπός τις"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Luke": 2,
+    "3 John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀφείλω",
+      "display": "debemos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνεργός",
+      "display": "colaboradores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαίρω",
+      "display": "fue alzado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεφέλη",
+      "display": "nube",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "de·ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεθύω",
+      "display": "embriagarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "respondido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρίζομαι",
+      "display": "perdonó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 2:15",
+      "negator": "οὐ",
+      "clause_text": "οὐ γὰρ ὡς ὑμεῖς ὑπολαμβάνετε οὗτοι μεθύουσιν, ἔστιν γὰρ ὥρα τρίτη τῆς ἡμέρας,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 1:9",
+      "reason": "occurs near βλέπω, ἐπαίρω"
+    },
+    {
+      "ref": "Acts 2:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 10:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 7:43",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "3 John 1:8",
+      "reason": "occurs near συνεργός, τοιοῦτος, ὀφείλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

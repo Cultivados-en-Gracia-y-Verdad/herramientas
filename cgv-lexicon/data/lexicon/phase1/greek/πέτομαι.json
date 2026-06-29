@@ -1,0 +1,237 @@
+{
+  "lemma": "πέτομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "πετομένῳ·",
+      "count": 1
+    },
+    {
+      "form": "πετομένου",
+      "count": 1
+    },
+    {
+      "form": "πέτηται",
+      "count": 1
+    },
+    {
+      "form": "πετόμενον",
+      "count": 1
+    },
+    {
+      "form": "πετομένοις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "middle": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 4:7",
+      "form": "πετομένῳ·",
+      "morph": "V-P-M-P",
+      "book": "Revelation",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "καὶ τὸ τέταρτον ζῷον ὅμοιον ἀετῷ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 8:13",
+      "form": "πετομένου",
+      "morph": "V-P-M-P",
+      "book": "Revelation",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "Καὶ εἶδον, καὶ ἤκουσα ἑνὸς ἀετοῦ",
+      "right_context": "ἐν μεσουρανήματι λέγοντος φωνῇ μεγάλῃ· Οὐαὶ"
+    },
+    {
+      "ref": "Revelation 12:14",
+      "form": "πέτηται",
+      "morph": "V-P-M-S-3S",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "πτέρυγες τοῦ ἀετοῦ τοῦ μεγάλου, ἵνα",
+      "right_context": "εἰς τὴν ἔρημον εἰς τὸν τόπον"
+    },
+    {
+      "ref": "Revelation 14:6",
+      "form": "πετόμενον",
+      "morph": "V-P-M-P",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 6,
+      "left_context": "Καὶ εἶδον ⸀ἄλλον ἄγγελον",
+      "right_context": "ἐν μεσουρανήματι, ἔχοντα εὐαγγέλιον αἰώνιον εὐαγγελίσαι"
+    },
+    {
+      "ref": "Revelation 19:17",
+      "form": "πετομένοις",
+      "morph": "V-P-M-P",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 17,
+      "left_context": "μεγάλῃ λέγων πᾶσι τοῖς ὀρνέοις τοῖς",
+      "right_context": "ἐν μεσουρανήματι· Δεῦτε συνάχθητε εἰς τὸ"
+    }
+  ],
+  "books": {
+    "Revelation": 5
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀετός",
+      "display": "águila",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μεσουράνημα",
+      "display": "cielo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vi",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέταρτος",
+      "display": "cuarto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζῷον",
+      "display": "animal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅμοιος",
+      "display": "semejante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "eterno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρνεον",
+      "display": "aves",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεῦτε",
+      "display": "venid",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reuned",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 12:14",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 14:6",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 19:17",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 4:7",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 8:13",
+      "reason": "frequent in Revelation"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,138 @@
+{
+  "lemma": "ἐπιχειρέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπεχείρησαν",
+      "count": 2
+    },
+    {
+      "form": "ἐπεχείρουν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "imperfect": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:29",
+      "form": "ἐπεχείρουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 29,
+      "left_context": "συνεζήτει πρὸς τοὺς Ἑλληνιστάς· οἱ δὲ",
+      "right_context": "⸂ἀνελεῖν αὐτόν⸃."
+    },
+    {
+      "ref": "Acts 19:13",
+      "form": "ἐπεχείρησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "δέ τινες ⸀καὶ τῶν περιερχομένων Ἰουδαίων"
+    },
+    {
+      "ref": "Luke 1:1",
+      "form": "ἐπεχείρησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 1,
+      "left_context": "Ἐπειδήπερ πολλοὶ",
+      "right_context": "ἀνατάξασθαι διήγησιν περὶ τῶν πεπληροφορημένων ἐν"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἑλληνιστής",
+      "display": "Helenista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναιρέω",
+      "display": "matar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιέρχομαι",
+      "display": "recorriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπειδήπερ",
+      "display": "puesto·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνατάσσομαι",
+      "display": "ordenar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διήγησις",
+      "display": "relato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληροφορέω",
+      "display": "cumplidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:13",
+      "reason": "occurs near περιέρχομαι"
+    },
+    {
+      "ref": "Acts 9:29",
+      "reason": "occurs near ἀναιρέω, Ἑλληνιστής"
+    },
+    {
+      "ref": "Luke 1:1",
+      "reason": "occurs near πολύς, ἐπειδήπερ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

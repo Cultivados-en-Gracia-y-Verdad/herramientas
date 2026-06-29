@@ -1,0 +1,68 @@
+{
+  "lemma": "προκυρόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προκεκυρωμένην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 3:17",
+      "form": "προκεκυρωμένην",
+      "morph": "V-X-P-P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "τοῦτο δὲ λέγω· διαθήκην",
+      "right_context": "ὑπὸ τοῦ ⸀θεοῦ ὁ μετὰ ⸂τετρακόσια"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διαθήκη",
+      "display": "pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 3:17",
+      "reason": "occurs near διαθήκη, θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

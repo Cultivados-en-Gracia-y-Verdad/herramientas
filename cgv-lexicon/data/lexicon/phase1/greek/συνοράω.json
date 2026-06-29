@@ -1,0 +1,104 @@
+{
+  "lemma": "συνοράω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "Συνιδών",
+      "count": 1
+    },
+    {
+      "form": "συνιδόντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 12:12",
+      "form": "Συνιδών",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "",
+      "right_context": "τε ἦλθεν ἐπὶ τὴν οἰκίαν ⸀τῆς"
+    },
+    {
+      "ref": "Acts 14:6",
+      "form": "συνιδόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "κατέφυγον εἰς τὰς πόλεις τῆς Λυκαονίας"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταφεύγω",
+      "display": "huieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudades",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:12",
+      "reason": "occurs near οἰκία, τέ, ἔρχομαι"
+    },
+    {
+      "ref": "Acts 14:6",
+      "reason": "occurs near καταφεύγω, πόλις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

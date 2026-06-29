@@ -1,0 +1,456 @@
+{
+  "lemma": "φονεύω",
+  "language": "greek",
+  "total_occurrences": 12,
+  "forms": [
+    {
+      "form": "φονεύσεις,",
+      "count": 2
+    },
+    {
+      "form": "ἐφονεύσατε",
+      "count": 2
+    },
+    {
+      "form": "φονεύσῃς,",
+      "count": 1
+    },
+    {
+      "form": "⸂φονεύσῃς,",
+      "count": 1
+    },
+    {
+      "form": "φονεύσεις·",
+      "count": 1
+    },
+    {
+      "form": "φονεύσῃ,",
+      "count": 1
+    },
+    {
+      "form": "φονευσάντων",
+      "count": 1
+    },
+    {
+      "form": "⸀φονεύσῃς·",
+      "count": 1
+    },
+    {
+      "form": "φονεύεις⸃",
+      "count": 1
+    },
+    {
+      "form": "φονεύετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 4,
+      "indicative": 7,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 7,
+      "future": 3,
+      "present": 2
+    },
+    "voices": {
+      "active": 12
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 18:20",
+      "form": "φονεύσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 20,
+      "left_context": "τὰς ἐντολὰς οἶδας· Μὴ μοιχεύσῃς, Μὴ",
+      "right_context": "Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "⸂φονεύσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "τὰς ἐντολὰς οἶδας· Μὴ",
+      "right_context": "Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς,"
+    },
+    {
+      "ref": "Matthew 5:21",
+      "form": "φονεύσεις·",
+      "morph": "V-F-A-I-2S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "Ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις· Οὐ",
+      "right_context": "ὃς δ’ ἂν φονεύσῃ, ἔνοχος ἔσται"
+    },
+    {
+      "ref": "Matthew 5:21",
+      "form": "φονεύσῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "ἀρχαίοις· Οὐ φονεύσεις· ὃς δ’ ἂν",
+      "right_context": "ἔνοχος ἔσται τῇ κρίσει."
+    },
+    {
+      "ref": "Matthew 19:18",
+      "form": "φονεύσεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 18,
+      "left_context": "ὁ δὲ Ἰησοῦς ⸀εἶπεν· Τὸ Οὐ",
+      "right_context": "Οὐ μοιχεύσεις, Οὐ κλέψεις, Οὐ ψευδομαρτυρήσεις,"
+    },
+    {
+      "ref": "Matthew 23:31",
+      "form": "φονευσάντων",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 31,
+      "left_context": "μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν",
+      "right_context": "τοὺς προφήτας."
+    },
+    {
+      "ref": "Matthew 23:35",
+      "form": "ἐφονεύσατε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 35,
+      "left_context": "τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν",
+      "right_context": "μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου."
+    },
+    {
+      "ref": "Romans 13:9",
+      "form": "φονεύσεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "Romans",
+      "chapter": 13,
+      "verse": 9,
+      "left_context": "τὸ γάρ· Οὐ μοιχεύσεις, Οὐ",
+      "right_context": "Οὐ κλέψεις, Οὐκ ἐπιθυμήσεις, καὶ εἴ"
+    },
+    {
+      "ref": "James 2:11",
+      "form": "⸀φονεύσῃς·",
+      "morph": "V-A-A-S-2S",
+      "book": "James",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "εἰπών Μὴ ⸀μοιχεύσῃς εἶπεν καί Μὴ",
+      "right_context": "εἰ δὲ οὐ ⸂μοιχεύεις φονεύεις⸃ δέ,"
+    },
+    {
+      "ref": "James 2:11",
+      "form": "φονεύεις⸃",
+      "morph": "V-P-A-I-2S",
+      "book": "James",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "Μὴ ⸀φονεύσῃς· εἰ δὲ οὐ ⸂μοιχεύεις",
+      "right_context": "δέ, γέγονας παραβάτης νόμου."
+    },
+    {
+      "ref": "James 4:2",
+      "form": "φονεύετε",
+      "morph": "V-P-A-I-2P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "ἐπιθυμεῖτε, καὶ οὐκ ἔχετε·",
+      "right_context": "καὶ ζηλοῦτε, καὶ οὐ δύνασθε ἐπιτυχεῖν·"
+    },
+    {
+      "ref": "James 5:6",
+      "form": "ἐφονεύσατε",
+      "morph": "V-A-A-I-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "κατεδικάσατε,",
+      "right_context": "τὸν δίκαιον. οὐκ ἀντιτάσσεται ὑμῖν;"
+    }
+  ],
+  "books": {
+    "Matthew": 5,
+    "James": 4,
+    "Luke": 1,
+    "Mark": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μοιχεύω",
+      "display": "adulteres",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτω",
+      "display": "robes",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "φονεύω",
+      "display": "asesine",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "mandamientos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "has sabido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔνοχος",
+      "display": "culpable",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμέω",
+      "display": "desearás",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδομαρτυρέω",
+      "display": "dar·falso·testimonio,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμάω",
+      "display": "honra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχαῖος",
+      "display": "antiguos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίσις",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "profetas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "de·sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ζαχαρίας",
+      "display": "de·Zacarías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαραχίας",
+      "display": "de·Baracías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεταξύ",
+      "display": "entre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναός",
+      "display": "de·templo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβάτης",
+      "display": "transgresor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζηλόω",
+      "display": "celáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταδικάζω",
+      "display": "condenasteis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 18:20",
+      "form": "φονεύσῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "⸂φονεύσῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς,",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "James 2:11",
+      "form": "⸀φονεύσῃς·",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "ὁ γὰρ εἰπών Μὴ ⸀μοιχεύσῃς εἶπεν καί Μὴ ⸀φονεύσῃς· εἰ δὲ οὐ ⸂μοιχεύεις φονεύεις⸃ δέ, γέγονας παραβάτης",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 18:20",
+      "negator": "Μὴ",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου"
+    },
+    {
+      "ref": "Mark 10:19",
+      "negator": "Μὴ",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς,"
+    },
+    {
+      "ref": "Matthew 5:21",
+      "negator": "Οὐ",
+      "clause_text": "Ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις· Οὐ φονεύσεις· ὃς δ’ ἂν φονεύσῃ, ἔνοχος ἔσται τῇ κρίσει."
+    },
+    {
+      "ref": "Matthew 19:18",
+      "negator": "Οὐ",
+      "clause_text": "αὐτῷ· Ποίας; ὁ δὲ Ἰησοῦς ⸀εἶπεν· Τὸ Οὐ φονεύσεις, Οὐ μοιχεύσεις, Οὐ κλέψεις, Οὐ ψευδομαρτυρήσεις,"
+    },
+    {
+      "ref": "Romans 13:9",
+      "negator": "Οὐ",
+      "clause_text": "τὸ γάρ· Οὐ μοιχεύσεις, Οὐ φονεύσεις, Οὐ κλέψεις, Οὐκ ἐπιθυμήσεις, καὶ εἴ τις ἑτέρα"
+    },
+    {
+      "ref": "James 2:11",
+      "negator": "Μὴ",
+      "clause_text": "ὁ γὰρ εἰπών Μὴ ⸀μοιχεύσῃς εἶπεν καί Μὴ ⸀φονεύσῃς· εἰ δὲ οὐ ⸂μοιχεύεις φονεύεις⸃ δέ, γέγονας παραβάτης"
+    },
+    {
+      "ref": "James 2:11",
+      "negator": "οὐ",
+      "clause_text": "εἶπεν καί Μὴ ⸀φονεύσῃς· εἰ δὲ οὐ ⸂μοιχεύεις φονεύεις⸃ δέ, γέγονας παραβάτης νόμου."
+    },
+    {
+      "ref": "James 4:2",
+      "negator": "οὐκ",
+      "clause_text": "ἐπιθυμεῖτε, καὶ οὐκ ἔχετε· φονεύετε καὶ ζηλοῦτε, καὶ οὐ δύνασθε ἐπιτυχεῖν· μάχεσθε καὶ"
+    },
+    {
+      "ref": "James 5:6",
+      "negator": "οὐκ",
+      "clause_text": "κατεδικάσατε, ἐφονεύσατε τὸν δίκαιον. οὐκ ἀντιτάσσεται ὑμῖν;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 19:18",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 23:31",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 23:35",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 5:21",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "James 2:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 4:2",
+      "reason": "occurs near φονεύω"
+    },
+    {
+      "ref": "James 5:6",
+      "reason": "occurs near φονεύω"
+    },
+    {
+      "ref": "Luke 18:20",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,105 @@
+{
+  "lemma": "κατακλείω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κατέκλεισα",
+      "count": 1
+    },
+    {
+      "form": "κατέκλεισεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 26:10",
+      "form": "κατέκλεισα",
+      "morph": "V-A-A-I-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 10,
+      "left_context": "⸀τε τῶν ἁγίων ἐγὼ ⸀ἐν φυλακαῖς",
+      "right_context": "τὴν παρὰ τῶν ἀρχιερέων ἐξουσίαν λαβών,"
+    },
+    {
+      "ref": "Luke 3:20",
+      "form": "κατέκλεισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 20,
+      "left_context": "προσέθηκεν καὶ τοῦτο ἐπὶ πᾶσιν, ⸀καὶ",
+      "right_context": "τὸν Ἰωάννην ⸀ἐν φυλακῇ."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φυλακή",
+      "display": "cárceles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:10",
+      "reason": "occurs near φυλακή, ἀρχιερεύς, ἅγιος"
+    },
+    {
+      "ref": "Luke 3:20",
+      "reason": "occurs near φυλακή, Ἰωάννης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

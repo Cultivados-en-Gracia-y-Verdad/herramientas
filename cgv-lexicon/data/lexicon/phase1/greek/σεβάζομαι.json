@@ -1,0 +1,80 @@
+{
+  "lemma": "σεβάζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐσεβάσθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 1:25",
+      "form": "ἐσεβάσθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 25,
+      "left_context": "τοῦ θεοῦ ἐν τῷ ψεύδει, καὶ",
+      "right_context": "καὶ ἐλάτρευσαν τῇ κτίσει παρὰ τὸν"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψεῦδος",
+      "display": "mentira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λατρεύω",
+      "display": "servieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κτίσις",
+      "display": "creación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 1:25",
+      "reason": "occurs near θεός, κτίσις, λατρεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

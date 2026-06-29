@@ -1,0 +1,136 @@
+{
+  "lemma": "ἡγεμονεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἡγεμονεύοντος",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 2:2",
+      "form": "ἡγεμονεύοντος",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "(⸀αὕτη ἀπογραφὴ πρώτη ἐγένετο",
+      "right_context": "τῆς Συρίας Κυρηνίου·)"
+    },
+    {
+      "ref": "Luke 3:1",
+      "form": "ἡγεμονεύοντος",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "δὲ πεντεκαιδεκάτῳ τῆς ἡγεμονίας Τιβερίου Καίσαρος,",
+      "right_context": "Ποντίου Πιλάτου τῆς Ἰουδαίας, καὶ τετρααρχοῦντος"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀπογραφή",
+      "display": "censo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Συρία",
+      "display": "de·Siria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κυρήνιος",
+      "display": "de·Cirino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεντεκαιδέκατος",
+      "display": "decimoquinto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγεμονία",
+      "display": "de·gobierno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τιβέριος",
+      "display": "de·Tiberio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Καῖσαρ",
+      "display": "de·César",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πόντιος",
+      "display": "de·Poncio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "de·Pilato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαία",
+      "display": "de·Judea",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 2:2",
+      "reason": "occurs near Κυρήνιος, Συρία, πρῶτος"
+    },
+    {
+      "ref": "Luke 3:1",
+      "reason": "occurs near πεντεκαιδέκατος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

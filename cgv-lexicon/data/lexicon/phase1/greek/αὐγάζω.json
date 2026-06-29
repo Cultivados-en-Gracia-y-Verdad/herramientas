@@ -1,0 +1,80 @@
+{
+  "lemma": "αὐγάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀αὐγάσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:4",
+      "form": "⸀αὐγάσαι",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "νοήματα τῶν ἀπίστων εἰς τὸ μὴ",
+      "right_context": "τὸν φωτισμὸν τοῦ εὐαγγελίου τῆς δόξης"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄπιστος",
+      "display": "de·incrédulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωτισμός",
+      "display": "iluminación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "de·evangelio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:4",
+      "negator": "μὴ",
+      "clause_text": "ἐτύφλωσεν τὰ νοήματα τῶν ἀπίστων εἰς τὸ μὴ ⸀αὐγάσαι τὸν φωτισμὸν τοῦ εὐαγγελίου τῆς δόξης τοῦ Χριστοῦ,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:4",
+      "reason": "occurs near εὐαγγέλιον, φωτισμός, ἄπιστος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

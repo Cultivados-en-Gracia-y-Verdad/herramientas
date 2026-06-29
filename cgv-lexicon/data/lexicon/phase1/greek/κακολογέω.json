@@ -1,0 +1,188 @@
+{
+  "lemma": "κακολογέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κακολογῶν",
+      "count": 2
+    },
+    {
+      "form": "κακολογοῦντες",
+      "count": 1
+    },
+    {
+      "form": "κακολογῆσαί",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 19:9",
+      "form": "κακολογοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 9,
+      "left_context": "ὡς δέ τινες ἐσκληρύνοντο καὶ ἠπείθουν",
+      "right_context": "τὴν ὁδὸν ἐνώπιον τοῦ πλήθους, ἀποστὰς"
+    },
+    {
+      "ref": "Mark 7:10",
+      "form": "κακολογῶν",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "καὶ τὴν μητέρα σου, καί· Ὁ",
+      "right_context": "πατέρα ἢ μητέρα θανάτῳ τελευτάτω·"
+    },
+    {
+      "ref": "Mark 9:39",
+      "form": "κακολογῆσαί",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 39,
+      "left_context": "τῷ ὀνόματί μου καὶ δυνήσεται ταχὺ",
+      "right_context": "με·"
+    },
+    {
+      "ref": "Matthew 15:4",
+      "form": "κακολογῶν",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 4,
+      "left_context": "πατέρα καὶ τὴν μητέρα, καί· Ὁ",
+      "right_context": "πατέρα ἢ μητέρα θανάτῳ τελευτάτω·"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Acts": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μήτηρ",
+      "display": "madre",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τελευτάω",
+      "display": "mora",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σκληρύνω",
+      "display": "eran endurecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπειθέω",
+      "display": "desobedecían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλῆθος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podrá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταχύ",
+      "display": "pronto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 7:10",
+      "reason": "occurs near θάνατος, μήτηρ, πατήρ"
+    },
+    {
+      "ref": "Mark 9:39",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 19:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 15:4",
+      "reason": "occurs near θάνατος, μήτηρ, πατήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

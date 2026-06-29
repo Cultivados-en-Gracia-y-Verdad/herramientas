@@ -1,0 +1,203 @@
+{
+  "lemma": "παρακύπτω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "παρακύψας",
+      "count": 3
+    },
+    {
+      "form": "παρακύψαι.",
+      "count": 1
+    },
+    {
+      "form": "παρέκυψεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 3,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:12",
+      "form": "παρακύψαι.",
+      "morph": "V-A-A-N",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "ἀπ’ οὐρανοῦ, εἰς ἃ ἐπιθυμοῦσιν ἄγγελοι",
+      "right_context": ""
+    },
+    {
+      "ref": "John 20:5",
+      "form": "παρακύψας",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 5,
+      "left_context": "καὶ",
+      "right_context": "βλέπει κείμενα τὰ ὀθόνια, οὐ μέντοι"
+    },
+    {
+      "ref": "John 20:11",
+      "form": "παρέκυψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 20,
+      "verse": 11,
+      "left_context": "μνημείῳ ἔξω κλαίουσα⸃. ὡς οὖν ἔκλαιεν",
+      "right_context": "εἰς τὸ μνημεῖον,"
+    },
+    {
+      "ref": "Luke 24:12",
+      "form": "παρακύψας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 12,
+      "left_context": "ἀναστὰς ἔδραμεν ἐπὶ τὸ μνημεῖον· καὶ",
+      "right_context": "βλέπει τὰ ⸀ὀθόνια μόνα· καὶ ἀπῆλθεν"
+    },
+    {
+      "ref": "James 1:25",
+      "form": "παρακύψας",
+      "morph": "V-A-A-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 25,
+      "left_context": "ὁ δὲ",
+      "right_context": "εἰς νόμον τέλειον τὸν τῆς ἐλευθερίας"
+    }
+  ],
+  "books": {
+    "John": 2,
+    "1 Peter": 1,
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βλέπω",
+      "display": "mira",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀθόνιον",
+      "display": "lienzos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "llorando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μνημεῖον",
+      "display": "sepulcro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμέω",
+      "display": "desean",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεῖμαι",
+      "display": "yaciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρέχω",
+      "display": "corrió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέλειος",
+      "display": "perfecto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 20:11",
+      "reason": "occurs near κλαίω, μνημεῖον"
+    },
+    {
+      "ref": "John 20:5",
+      "reason": "occurs near βλέπω, ὀθόνιον"
+    },
+    {
+      "ref": "1 Peter 1:12",
+      "reason": "occurs near οὐρανός"
+    },
+    {
+      "ref": "James 1:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:12",
+      "reason": "occurs near βλέπω, μνημεῖον, ὀθόνιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

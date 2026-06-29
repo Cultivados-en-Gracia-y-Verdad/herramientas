@@ -1,0 +1,544 @@
+{
+  "lemma": "φιλέω",
+  "language": "greek",
+  "total_occurrences": 25,
+  "forms": [
+    {
+      "form": "φιλῶ",
+      "count": 4
+    },
+    {
+      "form": "φιλῶν",
+      "count": 4
+    },
+    {
+      "form": "φιλεῖ",
+      "count": 3
+    },
+    {
+      "form": "φιλεῖς",
+      "count": 2
+    },
+    {
+      "form": "ἐφίλει",
+      "count": 2
+    },
+    {
+      "form": "φιλήσω",
+      "count": 2
+    },
+    {
+      "form": "ἐφίλει·",
+      "count": 1
+    },
+    {
+      "form": "πεφιλήκατε",
+      "count": 1
+    },
+    {
+      "form": "Φιλεῖς",
+      "count": 1
+    },
+    {
+      "form": "φιλούντων",
+      "count": 1
+    },
+    {
+      "form": "φιλῆσαι",
+      "count": 1
+    },
+    {
+      "form": "φιλοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "φιλοῦσι",
+      "count": 1
+    },
+    {
+      "form": "φιλοῦντας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 15,
+      "subjunctive": 3,
+      "participle": 6,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 18,
+      "imperfect": 3,
+      "perfect": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 25
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:22",
+      "form": "φιλεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 22,
+      "left_context": "εἴ τις οὐ",
+      "right_context": "τὸν ⸀κύριον, ἤτω ἀνάθεμα. ⸂Μαράνα θά⸃."
+    },
+    {
+      "ref": "Revelation 3:19",
+      "form": "φιλῶ",
+      "morph": "V-P-A-S-1S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 19,
+      "left_context": "ἐγὼ ὅσους ἐὰν",
+      "right_context": "ἐλέγχω καὶ παιδεύω· ⸀ζήλευε οὖν καὶ"
+    },
+    {
+      "ref": "Revelation 22:15",
+      "form": "φιλῶν",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 22,
+      "verse": 15,
+      "left_context": "φονεῖς καὶ οἱ εἰδωλολάτραι καὶ πᾶς",
+      "right_context": "καὶ ποιῶν ψεῦδος."
+    },
+    {
+      "ref": "John 5:20",
+      "form": "φιλεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "ὁ γὰρ πατὴρ",
+      "right_context": "τὸν υἱὸν καὶ πάντα δείκνυσιν αὐτῷ"
+    },
+    {
+      "ref": "John 11:3",
+      "form": "φιλεῖς",
+      "morph": "V-P-A-I-2S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 3,
+      "left_context": "πρὸς αὐτὸν λέγουσαι· Κύριε, ἴδε ὃν",
+      "right_context": "ἀσθενεῖ."
+    },
+    {
+      "ref": "John 11:36",
+      "form": "ἐφίλει",
+      "morph": "V-I-A-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 36,
+      "left_context": "ἔλεγον οὖν οἱ Ἰουδαῖοι· Ἴδε πῶς",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "John 12:25",
+      "form": "φιλῶν",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 12,
+      "verse": 25,
+      "left_context": "ὁ",
+      "right_context": "τὴν ψυχὴν αὐτοῦ ⸀ἀπολλύει αὐτήν, καὶ"
+    },
+    {
+      "ref": "John 15:19",
+      "form": "ἐφίλει·",
+      "morph": "V-I-A-I-3S",
+      "book": "John",
+      "chapter": 15,
+      "verse": 19,
+      "left_context": "ἦτε, ὁ κόσμος ἂν τὸ ἴδιον",
+      "right_context": "ὅτι δὲ ἐκ τοῦ κόσμου οὐκ"
+    },
+    {
+      "ref": "John 16:27",
+      "form": "φιλεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 16,
+      "verse": 27,
+      "left_context": "αὐτὸς γὰρ ὁ πατὴρ",
+      "right_context": "ὑμᾶς, ὅτι ὑμεῖς ἐμὲ πεφιλήκατε καὶ"
+    },
+    {
+      "ref": "John 16:27",
+      "form": "πεφιλήκατε",
+      "morph": "V-X-A-I-2P",
+      "book": "John",
+      "chapter": 16,
+      "verse": 27,
+      "left_context": "πατὴρ φιλεῖ ὑμᾶς, ὅτι ὑμεῖς ἐμὲ",
+      "right_context": "καὶ πεπιστεύκατε ὅτι ἐγὼ παρὰ τοῦ"
+    },
+    {
+      "ref": "John 20:2",
+      "form": "ἐφίλει",
+      "morph": "V-I-A-I-3S",
+      "book": "John",
+      "chapter": 20,
+      "verse": 2,
+      "left_context": "καὶ πρὸς τὸν ἄλλον μαθητὴν ὃν",
+      "right_context": "ὁ Ἰησοῦς, καὶ λέγει αὐτοῖς· Ἦραν"
+    },
+    {
+      "ref": "John 21:15",
+      "form": "φιλῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 15,
+      "left_context": "αὐτῷ· Ναί, κύριε, σὺ οἶδας ὅτι",
+      "right_context": "σε. λέγει αὐτῷ· Βόσκε τὰ ἀρνία"
+    },
+    {
+      "ref": "John 21:16",
+      "form": "φιλῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 16,
+      "left_context": "αὐτῷ· Ναί, κύριε, σὺ οἶδας ὅτι",
+      "right_context": "σε. λέγει αὐτῷ· Ποίμαινε τὰ πρόβατά"
+    },
+    {
+      "ref": "John 21:17",
+      "form": "φιλεῖς",
+      "morph": "V-P-A-I-2S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 17,
+      "left_context": "λέγει αὐτῷ τὸ τρίτον· Σίμων ⸀Ἰωάννου,",
+      "right_context": "με; ἐλυπήθη ὁ Πέτρος ὅτι εἶπεν"
+    },
+    {
+      "ref": "John 21:17",
+      "form": "Φιλεῖς",
+      "morph": "V-P-A-I-2S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 17,
+      "left_context": "Πέτρος ὅτι εἶπεν αὐτῷ τὸ τρίτον·",
+      "right_context": "με; καὶ ⸀εἶπεν αὐτῷ· Κύριε, ⸂πάντα"
+    },
+    {
+      "ref": "John 21:17",
+      "form": "φιλῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 17,
+      "left_context": "⸂πάντα σὺ⸃ οἶδας, σὺ γινώσκεις ὅτι",
+      "right_context": "σε. λέγει αὐτῷ ⸀ὁ Ἰησοῦς· Βόσκε"
+    },
+    {
+      "ref": "Luke 20:46",
+      "form": "φιλούντων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 46,
+      "left_context": "τῶν θελόντων περιπατεῖν ἐν στολαῖς καὶ",
+      "right_context": "ἀσπασμοὺς ἐν ταῖς ἀγοραῖς καὶ πρωτοκαθεδρίας"
+    },
+    {
+      "ref": "Luke 22:47",
+      "form": "φιλῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 47,
+      "left_context": "προήρχετο αὐτούς, καὶ ἤγγισεν τῷ Ἰησοῦ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 14:44",
+      "form": "φιλήσω",
+      "morph": "V-A-A-S-1S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 44,
+      "left_context": "αὐτὸν σύσσημον αὐτοῖς λέγων· Ὃν ἂν",
+      "right_context": "αὐτός ἐστιν· κρατήσατε αὐτὸν καὶ ⸀ἀπάγετε"
+    },
+    {
+      "ref": "Matthew 6:5",
+      "form": "φιλοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "οὐκ ἔσεσθε ὡς⸃ οἱ ὑποκριταί· ὅτι",
+      "right_context": "ἐν ταῖς συναγωγαῖς καὶ ἐν ταῖς"
+    },
+    {
+      "ref": "Matthew 10:37",
+      "form": "φιλῶν",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 37,
+      "left_context": "ὁ",
+      "right_context": "πατέρα ἢ μητέρα ὑπὲρ ἐμὲ οὐκ"
+    },
+    {
+      "ref": "Matthew 10:37",
+      "form": "φιλῶν",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 37,
+      "left_context": "οὐκ ἔστιν μου ἄξιος· καὶ ὁ",
+      "right_context": "υἱὸν ἢ θυγατέρα ὑπὲρ ἐμὲ οὐκ"
+    },
+    {
+      "ref": "Matthew 23:6",
+      "form": "φιλοῦσι",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "⸀δὲ τὴν πρωτοκλισίαν ἐν τοῖς δείπνοις"
+    },
+    {
+      "ref": "Matthew 26:48",
+      "form": "φιλήσω",
+      "morph": "V-A-A-S-1S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 48,
+      "left_context": "ἔδωκεν αὐτοῖς σημεῖον λέγων· Ὃν ἂν",
+      "right_context": "αὐτός ἐστιν· κρατήσατε αὐτόν."
+    },
+    {
+      "ref": "Titus 3:15",
+      "form": "φιλοῦντας",
+      "morph": "V-P-A-P",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "οἱ μετ’ ἐμοῦ πάντες. ἄσπασαι τοὺς",
+      "right_context": "ἡμᾶς ἐν πίστει. ἡ χάρις μετὰ"
+    }
+  ],
+  "books": {
+    "John": 13,
+    "Matthew": 5,
+    "Revelation": 2,
+    "Luke": 2,
+    "1 Corinthians": 1,
+    "Mark": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "has sabido",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδε",
+      "display": "mira",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φιλέω",
+      "display": "habéis amado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ναί",
+      "display": "sí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τρίτος",
+      "display": "tercero",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarrad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάθεμα",
+      "display": "anatema",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαράνα",
+      "display": "Marana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλέγχω",
+      "display": "reprendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδεύω",
+      "display": "disciplino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζηλεύω",
+      "display": "cela",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰδωλολάτρης",
+      "display": "idólatras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψεῦδος",
+      "display": "mentira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δείκνυμι",
+      "display": "mostra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενέω",
+      "display": "estar·enfermo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 16:22",
+      "negator": "οὐ",
+      "clause_text": "εἴ τις οὐ φιλεῖ τὸν ⸀κύριον, ἤτω ἀνάθεμα. ⸂Μαράνα θά⸃."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:3",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 11:36",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 12:25",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 15:19",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 16:27",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 20:2",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 21:15",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 21:16",
+      "reason": "frequent in John"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

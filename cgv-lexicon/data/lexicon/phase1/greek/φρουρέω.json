@@ -1,0 +1,225 @@
+{
+  "lemma": "φρουρέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "φρουρουμένους",
+      "count": 1
+    },
+    {
+      "form": "ἐφρούρει",
+      "count": 1
+    },
+    {
+      "form": "φρουρήσει",
+      "count": 1
+    },
+    {
+      "form": "ἐφρουρούμεθα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 1,
+      "imperfect": 2,
+      "future": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:5",
+      "form": "φρουρουμένους",
+      "morph": "V-P-P-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "τοὺς ἐν δυνάμει θεοῦ",
+      "right_context": "διὰ πίστεως εἰς σωτηρίαν ἑτοίμην ἀποκαλυφθῆναι"
+    },
+    {
+      "ref": "2 Corinthians 11:32",
+      "form": "ἐφρούρει",
+      "morph": "V-I-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 32,
+      "left_context": "Δαμασκῷ ὁ ἐθνάρχης Ἁρέτα τοῦ βασιλέως",
+      "right_context": "τὴν ⸂πόλιν Δαμασκηνῶν⸃ πιάσαι ⸀με,"
+    },
+    {
+      "ref": "Philippians 4:7",
+      "form": "φρουρήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "τοῦ θεοῦ ἡ ὑπερέχουσα πάντα νοῦν",
+      "right_context": "τὰς καρδίας ὑμῶν καὶ τὰ νοήματα"
+    },
+    {
+      "ref": "Galatians 3:23",
+      "form": "ἐφρουρούμεθα",
+      "morph": "V-I-P-I-1P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 23,
+      "left_context": "δὲ ἐλθεῖν τὴν πίστιν ὑπὸ νόμον",
+      "right_context": "⸀συγκλειόμενοι εἰς τὴν μέλλουσαν πίστιν ἀποκαλυφθῆναι."
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "2 Corinthians": 1,
+    "Philippians": 1,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτοιμος",
+      "display": "lista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐθνάρχης",
+      "display": "gobernador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἁρέτας",
+      "display": "de·Aretas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "de·rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαμασκηνός",
+      "display": "de·Damasceno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιάζω",
+      "display": "prender",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπερέχω",
+      "display": "ser·superior",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγκλείω",
+      "display": "encerrados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 1:5",
+      "reason": "occurs near δύναμις, θεός, πίστις"
+    },
+    {
+      "ref": "2 Corinthians 11:32",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 3:23",
+      "reason": "occurs near πίστις"
+    },
+    {
+      "ref": "Philippians 4:7",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

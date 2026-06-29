@@ -1,0 +1,304 @@
+{
+  "lemma": "στρατεύομαι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "στρατεύεται",
+      "count": 1
+    },
+    {
+      "form": "στρατεύονται",
+      "count": 1
+    },
+    {
+      "form": "⸀στρατεύῃ",
+      "count": 1
+    },
+    {
+      "form": "στρατευόμεθα—",
+      "count": 1
+    },
+    {
+      "form": "στρατευόμενος",
+      "count": 1
+    },
+    {
+      "form": "στρατευόμενοι",
+      "count": 1
+    },
+    {
+      "form": "στρατευομένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "subjunctive": 1,
+      "participle": 3
+    },
+    "tenses": {
+      "present": 7
+    },
+    "voices": {
+      "middle": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:7",
+      "form": "στρατεύεται",
+      "morph": "V-P-M-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 7,
+      "left_context": "τίς",
+      "right_context": "ἰδίοις ὀψωνίοις ποτέ; τίς φυτεύει ἀμπελῶνα"
+    },
+    {
+      "ref": "1 Peter 2:11",
+      "form": "στρατεύονται",
+      "morph": "V-P-M-I-3P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "παρεπιδήμους ἀπέχεσθαι τῶν σαρκικῶν ἐπιθυμιῶν, αἵτινες",
+      "right_context": "κατὰ τῆς ψυχῆς·"
+    },
+    {
+      "ref": "1 Timothy 1:18",
+      "form": "⸀στρατεύῃ",
+      "morph": "V-P-M-S-2S",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "τὰς προαγούσας ἐπὶ σὲ προφητείας, ἵνα",
+      "right_context": "ἐν αὐταῖς τὴν καλὴν στρατείαν,"
+    },
+    {
+      "ref": "2 Corinthians 10:3",
+      "form": "στρατευόμεθα—",
+      "morph": "V-P-M-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 3,
+      "left_context": "σαρκὶ γὰρ περιπατοῦντες οὐ κατὰ σάρκα",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Timothy 2:4",
+      "form": "στρατευόμενος",
+      "morph": "V-P-M-P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "οὐδεὶς",
+      "right_context": "ἐμπλέκεται ταῖς τοῦ βίου πραγματείαις, ἵνα"
+    },
+    {
+      "ref": "Luke 3:14",
+      "form": "στρατευόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "ἐπηρώτων δὲ αὐτὸν καὶ",
+      "right_context": "λέγοντες· ⸂Τί ποιήσωμεν καὶ ἡμεῖς⸃; καὶ"
+    },
+    {
+      "ref": "James 4:1",
+      "form": "στρατευομένων",
+      "morph": "V-P-M-P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "ἐντεῦθεν, ἐκ τῶν ἡδονῶν ὑμῶν τῶν",
+      "right_context": "ἐν τοῖς μέλεσιν ὑμῶν;"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "1 Peter": 1,
+    "1 Timothy": 1,
+    "2 Corinthians": 1,
+    "2 Timothy": 1,
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψώνιον",
+      "display": "salarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποτέ",
+      "display": "alguna·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυτεύω",
+      "display": "planta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέχω",
+      "display": "tener",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σαρκικός",
+      "display": "de·carnales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "de·deseos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "de·alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προάγω",
+      "display": "ir·delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφητεία",
+      "display": "profecías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "buena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατεία",
+      "display": "guerra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπλέκομαι",
+      "display": "enredarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βίος",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πραγματεία",
+      "display": "negocios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπερωτάω",
+      "display": "preguntaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡδονή",
+      "display": "de·placeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλος",
+      "display": "miembros",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 10:3",
+      "negator": "οὐ",
+      "clause_text": "ἐν σαρκὶ γὰρ περιπατοῦντες οὐ κατὰ σάρκα στρατευόμεθα—"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:7",
+      "reason": "occurs near ποτέ, φυτεύω, ἴδιος"
+    },
+    {
+      "ref": "1 Peter 2:11",
+      "reason": "occurs near ἀπέχω"
+    },
+    {
+      "ref": "1 Timothy 1:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 10:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Timothy 2:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "James 4:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 3:14",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

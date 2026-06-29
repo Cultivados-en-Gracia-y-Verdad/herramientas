@@ -1,0 +1,175 @@
+{
+  "lemma": "ἐπακολουθέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐπακολουθήσητε",
+      "count": 1
+    },
+    {
+      "form": "ἐπηκολούθησεν.",
+      "count": 1
+    },
+    {
+      "form": "ἐπακολουθοῦσιν·",
+      "count": 1
+    },
+    {
+      "form": "ἐπακολουθούντων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:21",
+      "form": "ἐπακολουθήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "ὑπὲρ ⸀ὑμῶν, ὑμῖν ὑπολιμπάνων ὑπογραμμὸν ἵνα",
+      "right_context": "τοῖς ἴχνεσιν αὐτοῦ·"
+    },
+    {
+      "ref": "1 Timothy 5:10",
+      "form": "ἐπηκολούθησεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "θλιβομένοις ἐπήρκεσεν, εἰ παντὶ ἔργῳ ἀγαθῷ",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Timothy 5:24",
+      "form": "ἐπακολουθοῦσιν·",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 24,
+      "left_context": "προάγουσαι εἰς κρίσιν, τισὶν δὲ καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 16:20",
+      "form": "ἐπακολουθούντων",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 20,
+      "left_context": "καὶ τὸν λόγον βεβαιοῦντος διὰ τῶν",
+      "right_context": "⸀σημείων.⟧"
+    }
+  ],
+  "books": {
+    "1 Timothy": 2,
+    "1 Peter": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπολιμπάνω",
+      "display": "dejando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπογραμμός",
+      "display": "ejemplo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴχνος",
+      "display": "huellas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαρκέω",
+      "display": "ser·suficiente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίσις",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βεβαιόω",
+      "display": "confirmando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σημεῖον",
+      "display": "de·señales",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:10",
+      "reason": "occurs near ἐπαρκέω, ἔργον"
+    },
+    {
+      "ref": "1 Timothy 5:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 2:21",
+      "reason": "occurs near ἴχνος, ὑπογραμμός, ὑπολιμπάνω"
+    },
+    {
+      "ref": "Mark 16:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

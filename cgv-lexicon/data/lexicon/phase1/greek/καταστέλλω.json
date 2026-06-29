@@ -1,0 +1,112 @@
+{
+  "lemma": "καταστέλλω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καταστείλας",
+      "count": 1
+    },
+    {
+      "form": "κατεσταλμένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 19:35",
+      "form": "καταστείλας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 35,
+      "left_context": "",
+      "right_context": "δὲ ⸂ὁ γραμματεὺς τὸν ὄχλον⸃ φησίν·"
+    },
+    {
+      "ref": "Acts 19:36",
+      "form": "κατεσταλμένους",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 36,
+      "left_context": "οὖν ὄντων τούτων δέον ἐστὶν ὑμᾶς",
+      "right_context": "ὑπάρχειν καὶ μηδὲν προπετὲς πράσσειν."
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γραμματεύς",
+      "display": "escriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "atando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προπετής",
+      "display": "precipitado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πράσσω",
+      "display": "hacer",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:35",
+      "reason": "occurs near γραμματεύς, ὄχλος"
+    },
+    {
+      "ref": "Acts 19:36",
+      "reason": "occurs near δέω, προπετής, ὑπάρχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

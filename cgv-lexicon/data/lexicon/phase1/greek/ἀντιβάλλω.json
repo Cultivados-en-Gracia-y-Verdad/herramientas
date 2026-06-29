@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀντιβάλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀντιβάλλετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 24:17",
+      "form": "ἀντιβάλλετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 17,
+      "left_context": "αὐτούς· Τίνες οἱ λόγοι οὗτοι οὓς",
+      "right_context": "πρὸς ἀλλήλους περιπατοῦντες; καὶ ⸀ἐστάθησαν σκυθρωποί."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "fueron puesto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 24:17",
+      "reason": "occurs near λόγος, περιπατέω, ἀλλήλων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

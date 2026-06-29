@@ -1,0 +1,154 @@
+{
+  "lemma": "μολύνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "μολύνεται.",
+      "count": 1
+    },
+    {
+      "form": "ἐμόλυναν",
+      "count": 1
+    },
+    {
+      "form": "ἐμολύνθησαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 8:7",
+      "form": "μολύνεται.",
+      "morph": "V-P-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 8,
+      "verse": 7,
+      "left_context": "καὶ ἡ συνείδησις αὐτῶν ἀσθενὴς οὖσα",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 3:4",
+      "form": "ἐμόλυναν",
+      "morph": "V-A-A-I-3P",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "ὀλίγα⸃ ὀνόματα ἐν Σάρδεσιν ἃ οὐκ",
+      "right_context": "τὰ ἱμάτια αὐτῶν, καὶ περιπατήσουσιν μετ’"
+    },
+    {
+      "ref": "Revelation 14:4",
+      "form": "ἐμολύνθησαν,",
+      "morph": "V-A-P-I-3P",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 4,
+      "left_context": "οὗτοί εἰσιν οἳ μετὰ γυναικῶν οὐκ",
+      "right_context": "παρθένοι γάρ εἰσιν· ⸀οὗτοι οἱ ἀκολουθοῦντες"
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συνείδησις",
+      "display": "conciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενής",
+      "display": "débil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σάρδεις",
+      "display": "Sardis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andarán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "de·mujeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρθένος",
+      "display": "virgenes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Revelation 3:4",
+      "negator": "οὐκ",
+      "clause_text": "ἀλλὰ ⸂ἔχεις ὀλίγα⸃ ὀνόματα ἐν Σάρδεσιν ἃ οὐκ ἐμόλυναν τὰ ἱμάτια αὐτῶν, καὶ περιπατήσουσιν μετ’ ἐμοῦ ἐν"
+    },
+    {
+      "ref": "Revelation 14:4",
+      "negator": "οὐκ",
+      "clause_text": "οὗτοί εἰσιν οἳ μετὰ γυναικῶν οὐκ ἐμολύνθησαν, παρθένοι γάρ εἰσιν· ⸀οὗτοι οἱ ἀκολουθοῦντες τῷ ἀρνίῳ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 14:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 3:4",
+      "reason": "occurs near Σάρδεις, ἱμάτιον, ὄνομα"
+    },
+    {
+      "ref": "1 Corinthians 8:7",
+      "reason": "occurs near συνείδησις, ἀσθενής"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

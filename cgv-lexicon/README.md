@@ -1,6 +1,35 @@
 # CGV Lexicon — Greek & Hebrew
 
-Unified lemma lookup for CGV tools: **Writer**, **Presenter**, interlinear QA, and future study apps.
+Unified lemma lookup and **ROOTS Lexicon Engine** observation data for CGV tools: **Writer**, **Presenter**, interlinear QA, and study apps.
+
+## Two layers
+
+| Layer | Purpose | Output |
+|-------|---------|--------|
+| **Gloss lookup (v1)** | Strong's + Spanish gloss merge | `data/grc.entries.jsonl` |
+| **Phase 1 observation** | How a lemma is used in the NT (no definitions) | `data/lexicon/phase1/greek/{lemma}.json` |
+
+Phase 1 answers *“How is this lemma used in the text?”* — forms, morphology, references, collocations, commands, negation. Definitions belong to Phase 2 (`definition_phase2: null`).
+
+### Phase 1 build (Greek verbs — Milestone 1)
+
+```bash
+cd cgv-lexicon
+npm run build:lexicon-phase1
+```
+
+Sources: `MNA/datasets/interlinear/NT/*.tokens.jsonl` (SBLGNT / MorphGNT).
+
+Viewer:
+
+```bash
+npm run serve:lexicon
+# → http://localhost:4177/lexicon/greek/ἀγαπάω
+```
+
+---
+
+## Gloss lookup (v1)
 
 This is **not** a full BDAG/BDB replacement. v1 assembles what the CGV pipeline already maintains:
 
@@ -73,9 +102,15 @@ lookupLemma("grc", "ἐκλέγομαι");
 cgv-lexicon/
   README.md
   package.json
-  scripts/build_lexicon.py
-  data/              # generated entries + manifest
-  src/               # TS lookup (cgv-bible style)
+  scripts/
+    build_lexicon.py
+    build_phase1_greek.py
+  lexicon_engine/     # Phase 1 Python modules
+  data/
+    grc.entries.jsonl
+    lexicon/phase1/greek/   # generated observation JSON
+  viewer/             # /lexicon/greek/{lemma} page
+  src/                # TS gloss lookup
 ```
 
 ## Related projects

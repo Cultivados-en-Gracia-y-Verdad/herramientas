@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐνδέχεται",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐνδέχεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 13:33",
+      "form": "ἐνδέχεται",
+      "morph": "V-P-M-I-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 33,
+      "left_context": "καὶ τῇ ἐχομένῃ πορεύεσθαι, ὅτι οὐκ",
+      "right_context": "προφήτην ἀπολέσθαι ἔξω Ἰερουσαλήμ."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πορεύομαι",
+      "display": "ir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "profeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "de·Jerusalén",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 13:33",
+      "negator": "οὐκ",
+      "clause_text": "καὶ αὔριον καὶ τῇ ἐχομένῃ πορεύεσθαι, ὅτι οὐκ ἐνδέχεται προφήτην ἀπολέσθαι ἔξω Ἰερουσαλήμ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 13:33",
+      "reason": "occurs near πορεύομαι, προφήτης, ἀπόλλυμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,367 @@
+{
+  "lemma": "ἐξομολογέω",
+  "language": "greek",
+  "total_occurrences": 10,
+  "forms": [
+    {
+      "form": "ἐξομολογούμενοι",
+      "count": 3
+    },
+    {
+      "form": "Ἐξομολογοῦμαί",
+      "count": 2
+    },
+    {
+      "form": "ἐξομολογήσηται",
+      "count": 1
+    },
+    {
+      "form": "ἐξωμολόγησεν,",
+      "count": 1
+    },
+    {
+      "form": "ἐξομολογήσεται⸃",
+      "count": 1
+    },
+    {
+      "form": "ἐξομολογήσομαί",
+      "count": 1
+    },
+    {
+      "form": "ἐξομολογεῖσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 3,
+      "indicative": 5,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 6,
+      "future": 2
+    },
+    "voices": {
+      "middle": 9,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 2:11",
+      "form": "ἐξομολογήσηται",
+      "morph": "V-A-M-S-3S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "καὶ πᾶσα γλῶσσα",
+      "right_context": "ὅτι κύριος Ἰησοῦς Χριστὸς εἰς δόξαν"
+    },
+    {
+      "ref": "Acts 19:18",
+      "form": "ἐξομολογούμενοι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 18,
+      "left_context": "πολλοί τε τῶν πεπιστευκότων ἤρχοντο",
+      "right_context": "καὶ ἀναγγέλλοντες τὰς πράξεις αὐτῶν."
+    },
+    {
+      "ref": "Luke 10:21",
+      "form": "Ἐξομολογοῦμαί",
+      "morph": "V-P-M-I-1S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 21,
+      "left_context": "⸀τῷ πνεύματι ⸂τῷ ἁγίῳ⸃ καὶ εἶπεν·",
+      "right_context": "σοι, πάτερ κύριε τοῦ οὐρανοῦ καὶ"
+    },
+    {
+      "ref": "Luke 22:6",
+      "form": "ἐξωμολόγησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 6,
+      "left_context": "καὶ",
+      "right_context": "καὶ ἐζήτει εὐκαιρίαν τοῦ παραδοῦναι αὐτὸν"
+    },
+    {
+      "ref": "Mark 1:5",
+      "form": "ἐξομολογούμενοι",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "⸂ὑπ’ αὐτοῦ ἐν τῷ Ἰορδάνῃ ποταμῷ⸃",
+      "right_context": "τὰς ἁμαρτίας αὐτῶν."
+    },
+    {
+      "ref": "Matthew 3:6",
+      "form": "ἐξομολογούμενοι",
+      "morph": "V-P-M-P",
+      "book": "Matthew",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "ἐν τῷ Ἰορδάνῃ ⸀ποταμῷ ὑπ’ αὐτοῦ",
+      "right_context": "τὰς ἁμαρτίας αὐτῶν."
+    },
+    {
+      "ref": "Matthew 11:25",
+      "form": "Ἐξομολογοῦμαί",
+      "morph": "V-P-M-I-1S",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "τῷ καιρῷ ἀποκριθεὶς ὁ Ἰησοῦς εἶπεν·",
+      "right_context": "σοι, πάτερ κύριε τοῦ οὐρανοῦ καὶ"
+    },
+    {
+      "ref": "Romans 14:11",
+      "form": "ἐξομολογήσεται⸃",
+      "morph": "V-F-M-I-3S",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 11,
+      "left_context": "κάμψει πᾶν γόνυ, καὶ ⸂πᾶσα γλῶσσα",
+      "right_context": "τῷ θεῷ."
+    },
+    {
+      "ref": "Romans 15:9",
+      "form": "ἐξομολογήσομαί",
+      "morph": "V-F-M-I-1S",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 9,
+      "left_context": "τὸν θεόν· καθὼς γέγραπται· Διὰ τοῦτο",
+      "right_context": "σοι ἐν ἔθνεσι, καὶ τῷ ὀνόματί"
+    },
+    {
+      "ref": "James 5:16",
+      "form": "ἐξομολογεῖσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "",
+      "right_context": "⸀οὖν ἀλλήλοις ⸂τὰς ἁμαρτίας⸃ καὶ ⸀εὔχεσθε"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Matthew": 2,
+    "Romans": 2,
+    "Philippians": 1,
+    "Acts": 1,
+    "Mark": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lengua",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰορδάνης",
+      "display": "Jordán",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποταμός",
+      "display": "río",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναγγέλλω",
+      "display": "anunciando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρᾶξις",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐκαιρία",
+      "display": "oportunidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "respondido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γόνυ",
+      "display": "rodilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "James 5:16",
+      "form": "ἐξομολογεῖσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "ἐξομολογεῖσθε ⸀οὖν ἀλλήλοις ⸂τὰς ἁμαρτίας⸃ καὶ ⸀εὔχεσθε ὑπὲρ ἀλλήλων,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 10:21",
+      "reason": "occurs near κύριος, πατήρ"
+    },
+    {
+      "ref": "Luke 22:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 11:25",
+      "reason": "occurs near κύριος, πατήρ, Ἰησοῦς"
+    },
+    {
+      "ref": "Matthew 3:6",
+      "reason": "occurs near ἁμαρτία"
+    },
+    {
+      "ref": "Romans 14:11",
+      "reason": "occurs near γλῶσσα"
+    },
+    {
+      "ref": "Acts 19:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 1:5",
+      "reason": "occurs near ἁμαρτία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

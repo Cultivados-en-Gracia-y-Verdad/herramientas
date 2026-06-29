@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀποκλείω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀποκλείσῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 13:25",
+      "form": "ἀποκλείσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 25,
+      "left_context": "οὗ ἂν ἐγερθῇ ὁ οἰκοδεσπότης καὶ",
+      "right_context": "τὴν θύραν, καὶ ἄρξησθε ἔξω ἑστάναι"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐγείρω",
+      "display": "levante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδεσπότης",
+      "display": "amo·de·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θύρα",
+      "display": "puerta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 13:25",
+      "reason": "occurs near θύρα, οἰκοδεσπότης, ἄρχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,81 @@
+{
+  "lemma": "δειλιάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "δειλιάτω.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 14:27",
+      "form": "δειλιάτω.",
+      "morph": "V-P-A-D-3S",
+      "book": "John",
+      "chapter": 14,
+      "verse": 27,
+      "left_context": "μὴ ταρασσέσθω ὑμῶν ἡ καρδία μηδὲ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ταράσσω",
+      "display": "turba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 14:27",
+      "form": "δειλιάτω.",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "δίδωμι ὑμῖν. μὴ ταρασσέσθω ὑμῶν ἡ καρδία μηδὲ δειλιάτω."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 14:27",
+      "negator": "μηδὲ",
+      "clause_text": "δίδωμι ὑμῖν. μὴ ταρασσέσθω ὑμῶν ἡ καρδία μηδὲ δειλιάτω."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 14:27",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

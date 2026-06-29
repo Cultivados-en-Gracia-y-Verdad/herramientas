@@ -1,0 +1,101 @@
+{
+  "lemma": "προεπαγγέλλομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀προεπηγγελμένην",
+      "count": 1
+    },
+    {
+      "form": "προεπηγγείλατο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 9:5",
+      "form": "⸀προεπηγγελμένην",
+      "morph": "V-X-M-P",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 5,
+      "left_context": "προέλθωσιν ⸀εἰς ὑμᾶς καὶ προκαταρτίσωσι τὴν",
+      "right_context": "εὐλογίαν ὑμῶν, ταύτην ἑτοίμην εἶναι οὕτως"
+    },
+    {
+      "ref": "Romans 1:2",
+      "form": "προεπηγγείλατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "ὃ",
+      "right_context": "διὰ τῶν προφητῶν αὐτοῦ ἐν γραφαῖς"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προκαταρτίζω",
+      "display": "preparar·de·antemano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογία",
+      "display": "bendición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτοιμος",
+      "display": "lista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profetas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 9:5",
+      "reason": "occurs near εὐλογία, προκαταρτίζω, ἕτοιμος"
+    },
+    {
+      "ref": "Romans 1:2",
+      "reason": "occurs near προφήτης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

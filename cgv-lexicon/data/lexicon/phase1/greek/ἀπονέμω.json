@@ -1,0 +1,92 @@
+{
+  "lemma": "ἀπονέμω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπονέμοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:7",
+      "form": "ἀπονέμοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "γνῶσιν, ὡς ἀσθενεστέρῳ σκεύει τῷ γυναικείῳ",
+      "right_context": "τιμήν, ὡς καὶ ⸀συγκληρονόμοις χάριτος ζωῆς,"
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀσθενής",
+      "display": "débil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasija",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυναικεῖος",
+      "display": "femenino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "honora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγκληρονόμος",
+      "display": "coherederos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "de·gracia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 3:7",
+      "reason": "occurs near γυναικεῖος, σκεῦος, συγκληρονόμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

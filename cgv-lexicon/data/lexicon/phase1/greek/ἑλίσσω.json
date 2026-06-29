@@ -1,0 +1,132 @@
+{
+  "lemma": "ἑλίσσω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἑλισσόμενον,",
+      "count": 1
+    },
+    {
+      "form": "ἑλίξεις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 6:14",
+      "form": "ἑλισσόμενον,",
+      "morph": "V-P-P-P",
+      "book": "Revelation",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "καὶ ὁ οὐρανὸς ἀπεχωρίσθη ὡς βιβλίον",
+      "right_context": "καὶ πᾶν ὄρος καὶ νῆσος ἐκ"
+    },
+    {
+      "ref": "Hebrews 1:12",
+      "form": "ἑλίξεις",
+      "morph": "V-F-A-I-2S",
+      "book": "Hebrews",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "καὶ ὡσεὶ περιβόλαιον",
+      "right_context": "αὐτούς, ⸂ὡς ἱμάτιον⸃ καὶ ἀλλαγήσονται· σὺ"
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποχωρίζομαι",
+      "display": "separarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βιβλίον",
+      "display": "libro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῆσος",
+      "display": "isla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσεί",
+      "display": "como·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιβόλαιον",
+      "display": "velo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "manto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλάσσω",
+      "display": "serán cambiado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 1:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 6:14",
+      "reason": "occurs near βιβλίον, νῆσος, οὐρανός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

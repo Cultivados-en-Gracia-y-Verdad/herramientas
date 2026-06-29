@@ -1,0 +1,74 @@
+{
+  "lemma": "καπηλεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καπηλεύοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 2:17",
+      "form": "καπηλεύοντες",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "οὐ γάρ ἐσμεν ὡς οἱ ⸀πολλοὶ",
+      "right_context": "τὸν λόγον τοῦ θεοῦ, ἀλλ’ ὡς"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 2:17",
+      "reason": "occurs near θεός, λόγος, πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

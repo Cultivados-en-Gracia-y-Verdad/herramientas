@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐξολεθρεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξολεθρευθήσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 3:23",
+      "form": "ἐξολεθρευθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 23,
+      "left_context": "⸀ἂν μὴ ἀκούσῃ τοῦ προφήτου ἐκείνου",
+      "right_context": "ἐκ τοῦ λαοῦ."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "de·pueblo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 3:23",
+      "reason": "occurs near λαός, προφήτης, ἀκούω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

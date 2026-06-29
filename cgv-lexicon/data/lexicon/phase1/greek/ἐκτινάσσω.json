@@ -1,0 +1,201 @@
+{
+  "lemma": "ἐκτινάσσω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐκτινάξατε",
+      "count": 2
+    },
+    {
+      "form": "ἐκτιναξάμενοι",
+      "count": 1
+    },
+    {
+      "form": "ἐκτιναξάμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "imperative": 2
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "middle": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:51",
+      "form": "ἐκτιναξάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 51,
+      "left_context": "οἱ δὲ",
+      "right_context": "τὸν κονιορτὸν τῶν ⸀ποδῶν ἐπ’ αὐτοὺς"
+    },
+    {
+      "ref": "Acts 18:6",
+      "form": "ἐκτιναξάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 6,
+      "left_context": "ἀντιτασσομένων δὲ αὐτῶν καὶ βλασφημούντων",
+      "right_context": "τὰ ἱμάτια εἶπεν πρὸς αὐτούς· Τὸ"
+    },
+    {
+      "ref": "Mark 6:11",
+      "form": "ἐκτινάξατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 11,
+      "left_context": "ὑμᾶς μηδὲ ἀκούσωσιν ὑμῶν, ἐκπορευόμενοι ἐκεῖθεν",
+      "right_context": "τὸν χοῦν τὸν ὑποκάτω τῶν ποδῶν"
+    },
+    {
+      "ref": "Matthew 10:14",
+      "form": "ἐκτινάξατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 14,
+      "left_context": "τῆς οἰκίας ἢ τῆς πόλεως ἐκείνης",
+      "right_context": "τὸν κονιορτὸν τῶν ποδῶν ὑμῶν."
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κονιορτός",
+      "display": "polvo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "de·pies",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντιτάσσομαι",
+      "display": "oponerses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημέω",
+      "display": "blasfemando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπορεύομαι",
+      "display": "saliendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖθεν",
+      "display": "de·allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χοῦς",
+      "display": "polvo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποκάτω",
+      "display": "debajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "de·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 6:11",
+      "form": "ἐκτινάξατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "μὴ δέξηται⸃ ὑμᾶς μηδὲ ἀκούσωσιν ὑμῶν, ἐκπορευόμενοι ἐκεῖθεν ἐκτινάξατε τὸν χοῦν τὸν ὑποκάτω τῶν ποδῶν ὑμῶν εἰς"
+    },
+    {
+      "ref": "Matthew 10:14",
+      "form": "ἐκτινάξατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἐξερχόμενοι ⸀ἔξω τῆς οἰκίας ἢ τῆς πόλεως ἐκείνης ἐκτινάξατε τὸν κονιορτὸν τῶν ποδῶν ὑμῶν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 6:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 10:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 13:51",
+      "reason": "occurs near κονιορτός, πούς"
+    },
+    {
+      "ref": "Acts 18:6",
+      "reason": "occurs near βλασφημέω, ἀντιτάσσομαι, ἱμάτιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

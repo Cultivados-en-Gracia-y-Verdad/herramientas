@@ -1,0 +1,113 @@
+{
+  "lemma": "διϊσχυρίζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διϊσχυρίζετο",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 12:15",
+      "form": "διϊσχυρίζετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "πρὸς αὐτὴν εἶπαν· Μαίνῃ. ἡ δὲ",
+      "right_context": "οὕτως ἔχειν. οἱ δὲ ἔλεγον· Ὁ"
+    },
+    {
+      "ref": "Luke 22:59",
+      "form": "διϊσχυρίζετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 59,
+      "left_context": "διαστάσης ὡσεὶ ὥρας μιᾶς ἄλλος τις",
+      "right_context": "λέγων· Ἐπ’ ἀληθείας καὶ οὗτος μετ’"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μαίνομαι",
+      "display": "enloqueces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσεί",
+      "display": "como·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "de·hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·una",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:15",
+      "reason": "occurs near μαίνομαι, οὕτω(ς)"
+    },
+    {
+      "ref": "Luke 22:59",
+      "reason": "occurs near εἷς, ὡσεί, ὥρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

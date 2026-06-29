@@ -1,0 +1,100 @@
+{
+  "lemma": "χειροτονέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "χειροτονηθεὶς",
+      "count": 1
+    },
+    {
+      "form": "χειροτονήσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 8:19",
+      "form": "χειροτονηθεὶς",
+      "morph": "V-A-P-P",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 19,
+      "left_context": "οὐ μόνον δὲ ἀλλὰ καὶ",
+      "right_context": "ὑπὸ τῶν ἐκκλησιῶν συνέκδημος ἡμῶν ⸀σὺν"
+    },
+    {
+      "ref": "Acts 14:23",
+      "form": "χειροτονήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 23,
+      "left_context": "",
+      "right_context": "δὲ αὐτοῖς ⸂κατ’ ἐκκλησίαν πρεσβυτέρους⸃ προσευξάμενοι"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκκλησία",
+      "display": "de·iglesias",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέκδημος",
+      "display": "compañero·de·viaje",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρεσβύτερος",
+      "display": "ancianos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 8:19",
+      "reason": "occurs near μόνος, συνέκδημος, ἐκκλησία"
+    },
+    {
+      "ref": "Acts 14:23",
+      "reason": "occurs near πρεσβύτερος, ἐκκλησία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

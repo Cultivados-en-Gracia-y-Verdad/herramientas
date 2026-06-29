@@ -1,0 +1,263 @@
+{
+  "lemma": "στενάζω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "στενάζομεν,",
+      "count": 2
+    },
+    {
+      "form": "στενάζομεν",
+      "count": 1
+    },
+    {
+      "form": "στενάζοντες,",
+      "count": 1
+    },
+    {
+      "form": "ἐστέναξεν,",
+      "count": 1
+    },
+    {
+      "form": "στενάζετε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 5:2",
+      "form": "στενάζομεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "καὶ γὰρ ἐν τούτῳ",
+      "right_context": "τὸ οἰκητήριον ἡμῶν τὸ ἐξ οὐρανοῦ"
+    },
+    {
+      "ref": "2 Corinthians 5:4",
+      "form": "στενάζομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "γὰρ οἱ ὄντες ἐν τῷ σκήνει",
+      "right_context": "βαρούμενοι ἐφ’ ᾧ οὐ θέλομεν ἐκδύσασθαι"
+    },
+    {
+      "ref": "Hebrews 13:17",
+      "form": "στενάζοντες,",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 17,
+      "left_context": "μετὰ χαρᾶς τοῦτο ποιῶσιν καὶ μὴ",
+      "right_context": "ἀλυσιτελὲς γὰρ ὑμῖν τοῦτο."
+    },
+    {
+      "ref": "Mark 7:34",
+      "form": "ἐστέναξεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 34,
+      "left_context": "καὶ ἀναβλέψας εἰς τὸν οὐρανὸν",
+      "right_context": "καὶ λέγει αὐτῷ· Εφφαθα, ὅ ἐστιν"
+    },
+    {
+      "ref": "Romans 8:23",
+      "form": "στενάζομεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "ἔχοντες ⸂ἡμεῖς καὶ⸃ αὐτοὶ ἐν ἑαυτοῖς",
+      "right_context": "υἱοθεσίαν ἀπεκδεχόμενοι τὴν ἀπολύτρωσιν τοῦ σώματος"
+    },
+    {
+      "ref": "James 5:9",
+      "form": "στενάζετε,",
+      "morph": "V-P-A-D-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "μὴ",
+      "right_context": "⸂ἀδελφοί, κατ’ ἀλλήλων⸃, ἵνα μὴ κριθῆτε·"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "Hebrews": 1,
+    "Mark": 1,
+    "Romans": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἰκητήριον",
+      "display": "habitación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκῆνος",
+      "display": "tienda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαρέω",
+      "display": "pesados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queremos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρά",
+      "display": "de·gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλυσιτελής",
+      "display": "inútil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβλέπω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εφφαθα",
+      "display": "ephphatha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱοθεσία",
+      "display": "adopción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπεκδέχομαι",
+      "display": "esperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολύτρωσις",
+      "display": "redención",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "James 5:9",
+      "form": "στενάζετε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "μὴ στενάζετε, ⸂ἀδελφοί, κατ’ ἀλλήλων⸃, ἵνα μὴ κριθῆτε· ἰδοὺ ὁ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 5:4",
+      "negator": "οὐ",
+      "clause_text": "καὶ γὰρ οἱ ὄντες ἐν τῷ σκήνει στενάζομεν βαρούμενοι ἐφ’ ᾧ οὐ θέλομεν ἐκδύσασθαι ἀλλ’ ἐπενδύσασθαι,"
+    },
+    {
+      "ref": "Hebrews 13:17",
+      "negator": "μὴ",
+      "clause_text": "ἀποδώσοντες, ἵνα μετὰ χαρᾶς τοῦτο ποιῶσιν καὶ μὴ στενάζοντες, ἀλυσιτελὲς γὰρ ὑμῖν τοῦτο."
+    },
+    {
+      "ref": "James 5:9",
+      "negator": "μὴ",
+      "clause_text": "μὴ στενάζετε, ⸂ἀδελφοί, κατ’ ἀλλήλων⸃, ἵνα μὴ κριθῆτε· ἰδοὺ ὁ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 5:2",
+      "reason": "occurs near οἰκητήριον"
+    },
+    {
+      "ref": "2 Corinthians 5:4",
+      "reason": "occurs near βαρέω, θέλω, σκῆνος"
+    },
+    {
+      "ref": "Hebrews 13:17",
+      "reason": "occurs near χαρά"
+    },
+    {
+      "ref": "Mark 7:34",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 8:23",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

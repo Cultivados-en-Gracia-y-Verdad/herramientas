@@ -1,0 +1,344 @@
+{
+  "lemma": "ῥίπτω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "ῥιπτούντων",
+      "count": 1
+    },
+    {
+      "form": "⸀ἔρριψαν.",
+      "count": 1
+    },
+    {
+      "form": "ῥίψαντες",
+      "count": 1
+    },
+    {
+      "form": "ῥίψαν",
+      "count": 1
+    },
+    {
+      "form": "ἔρριπται",
+      "count": 1
+    },
+    {
+      "form": "ἐρριμμένοι",
+      "count": 1
+    },
+    {
+      "form": "ἔρριψαν",
+      "count": 1
+    },
+    {
+      "form": "ῥίψας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 5,
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 5,
+      "perfect": 2
+    },
+    "voices": {
+      "active": 6,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 22:23",
+      "form": "ῥιπτούντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 23,
+      "left_context": "⸀κραυγαζόντων ⸀τε αὐτῶν καὶ",
+      "right_context": "τὰ ἱμάτια καὶ κονιορτὸν βαλλόντων εἰς"
+    },
+    {
+      "ref": "Acts 27:19",
+      "form": "⸀ἔρριψαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 19,
+      "left_context": "τρίτῃ αὐτόχειρες τὴν σκευὴν τοῦ πλοίου",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 27:29",
+      "form": "ῥίψαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 29,
+      "left_context": "κατὰ⸃ τραχεῖς τόπους ἐκπέσωμεν ἐκ πρύμνης",
+      "right_context": "ἀγκύρας τέσσαρας ηὔχοντο ἡμέραν γενέσθαι."
+    },
+    {
+      "ref": "Luke 4:35",
+      "form": "ῥίψαν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 35,
+      "left_context": "Φιμώθητι καὶ ἔξελθε ⸀ἀπ’ αὐτοῦ. καὶ",
+      "right_context": "αὐτὸν τὸ δαιμόνιον εἰς ⸀τὸ μέσον"
+    },
+    {
+      "ref": "Luke 17:2",
+      "form": "ἔρριπται",
+      "morph": "V-X-P-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 2,
+      "left_context": "περίκειται περὶ τὸν τράχηλον αὐτοῦ καὶ",
+      "right_context": "εἰς τὴν θάλασσαν ἢ ἵνα σκανδαλίσῃ"
+    },
+    {
+      "ref": "Matthew 9:36",
+      "form": "ἐρριμμένοι",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 36,
+      "left_context": "περὶ αὐτῶν ὅτι ἦσαν ἐσκυλμένοι καὶ",
+      "right_context": "⸀ὡσεὶ πρόβατα μὴ ἔχοντα ποιμένα."
+    },
+    {
+      "ref": "Matthew 15:30",
+      "form": "ἔρριψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 30,
+      "left_context": "χωλούς, κυλλούς⸃, καὶ ἑτέρους πολλούς, καὶ",
+      "right_context": "αὐτοὺς παρὰ τοὺς πόδας ⸀αὐτοῦ, καὶ"
+    },
+    {
+      "ref": "Matthew 27:5",
+      "form": "ῥίψας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 5,
+      "left_context": "καὶ",
+      "right_context": "τὰ ἀργύρια ⸂εἰς τὸν ναὸν⸃ ἀνεχώρησεν,"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Matthew": 3,
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κραυγάζω",
+      "display": "gritando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κονιορτός",
+      "display": "polvo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐτόχειρ",
+      "display": "propia·mano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκευή",
+      "display": "equipo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "de·barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τραχύς",
+      "display": "ásperos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugares",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπίπτω",
+      "display": "naufragemos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρύμνα",
+      "display": "de·popa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγκυρα",
+      "display": "anclas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέσσαρες",
+      "display": "cuatro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὔχομαι",
+      "display": "oraban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "sale",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τράχηλος",
+      "display": "cuello",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκύλλω",
+      "display": "fatigados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσεί",
+      "display": "como·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόβατον",
+      "display": "ovejas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποιμήν",
+      "display": "pastor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 9:36",
+      "negator": "μὴ",
+      "clause_text": "ὄχλους ἐσπλαγχνίσθη περὶ αὐτῶν ὅτι ἦσαν ἐσκυλμένοι καὶ ἐρριμμένοι ⸀ὡσεὶ πρόβατα μὴ ἔχοντα ποιμένα."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:23",
+      "reason": "occurs near βάλλω, κονιορτός, κραυγάζω"
+    },
+    {
+      "ref": "Acts 27:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 27:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 15:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 27:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 9:36",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 17:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 4:35",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

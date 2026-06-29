@@ -1,0 +1,143 @@
+{
+  "lemma": "ἐπιφέρω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπενεγκεῖν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιφέρων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:9",
+      "form": "ἐπενεγκεῖν",
+      "morph": "V-A-A-N",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "τοῦ Μωϋσέως σώματος, οὐκ ἐτόλμησεν κρίσιν",
+      "right_context": "βλασφημίας, ἀλλὰ εἶπεν· Ἐπιτιμήσαι σοι κύριος."
+    },
+    {
+      "ref": "Romans 3:5",
+      "form": "ἐπιφέρων",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "ἐροῦμεν; μὴ ἄδικος ὁ θεὸς ὁ",
+      "right_context": "τὴν ὀργήν; κατὰ ἄνθρωπον λέγω."
+    }
+  ],
+  "books": {
+    "Jude": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "de·Moisés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "de·cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τολμάω",
+      "display": "atreverse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίσις",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημία",
+      "display": "de·blasfemia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτιμάω",
+      "display": "reprenda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄδικος",
+      "display": "injusto.",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀργή",
+      "display": "ira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Jude 1:9",
+      "negator": "οὐκ",
+      "clause_text": "διελέγετο περὶ τοῦ Μωϋσέως σώματος, οὐκ ἐτόλμησεν κρίσιν ἐπενεγκεῖν βλασφημίας, ἀλλὰ εἶπεν· Ἐπιτιμήσαι σοι κύριος."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Jude 1:9",
+      "reason": "occurs near Μωϋσῆς, βλασφημία, κρίσις"
+    },
+    {
+      "ref": "Romans 3:5",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

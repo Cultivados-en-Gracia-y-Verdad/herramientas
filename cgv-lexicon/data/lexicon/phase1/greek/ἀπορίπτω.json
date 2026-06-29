@@ -1,0 +1,98 @@
+{
+  "lemma": "ἀπορίπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπορίψαντας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:43",
+      "form": "ἀπορίψαντας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 43,
+      "left_context": "βουλήματος, ἐκέλευσέν τε τοὺς δυναμένους κολυμβᾶν",
+      "right_context": "πρώτους ἐπὶ τὴν γῆν ἐξιέναι,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κελεύω",
+      "display": "mandó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολυμβάω",
+      "display": "nadar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primeros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξειμι",
+      "display": "salir",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:43",
+      "reason": "occurs near δύναμαι, κελεύω, κολυμβάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

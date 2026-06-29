@@ -1,0 +1,137 @@
+{
+  "lemma": "ἀνατρέπω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνατρέπουσιν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:18",
+      "form": "ἀνατρέπουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "ἠστόχησαν, ⸀λέγοντες ἀνάστασιν ἤδη γεγονέναι, καὶ",
+      "right_context": "τήν τινων πίστιν."
+    },
+    {
+      "ref": "Titus 1:11",
+      "form": "ἀνατρέπουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "οὓς δεῖ ἐπιστομίζειν, οἵτινες ὅλους οἴκους",
+      "right_context": "διδάσκοντες ἃ μὴ δεῖ αἰσχροῦ κέρδους"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάστασις",
+      "display": "resurrección",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστομίζω",
+      "display": "tapar·la·boca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχρός",
+      "display": "de·vergonzoso",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Titus 1:11",
+      "negator": "μὴ",
+      "clause_text": "οὓς δεῖ ἐπιστομίζειν, οἵτινες ὅλους οἴκους ἀνατρέπουσιν διδάσκοντες ἃ μὴ δεῖ αἰσχροῦ κέρδους χάριν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:18",
+      "reason": "occurs near πίστις, ἀνάστασις, ἤδη"
+    },
+    {
+      "ref": "Titus 1:11",
+      "reason": "occurs near δέω, ἐπιστομίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

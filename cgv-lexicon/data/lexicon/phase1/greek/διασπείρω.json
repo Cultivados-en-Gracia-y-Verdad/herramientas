@@ -1,0 +1,137 @@
+{
+  "lemma": "διασπείρω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "διασπαρέντες",
+      "count": 2
+    },
+    {
+      "form": "διεσπάρησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 8:1",
+      "form": "διεσπάρησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 1,
+      "left_context": "ἐκκλησίαν τὴν ἐν Ἱεροσολύμοις· πάντες δὲ",
+      "right_context": "κατὰ τὰς χώρας τῆς Ἰουδαίας καὶ"
+    },
+    {
+      "ref": "Acts 8:4",
+      "form": "διασπαρέντες",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 4,
+      "left_context": "Οἱ μὲν οὖν",
+      "right_context": "διῆλθον εὐαγγελιζόμενοι τὸν λόγον."
+    },
+    {
+      "ref": "Acts 11:19",
+      "form": "διασπαρέντες",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 19,
+      "left_context": "Οἱ μὲν οὖν",
+      "right_context": "ἀπὸ τῆς θλίψεως τῆς γενομένης ἐπὶ"
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "regiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαία",
+      "display": "de·Judea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διέρχομαι",
+      "display": "pasaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγελίζω",
+      "display": "evangelizando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "de·tribulación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 11:19",
+      "reason": "occurs near μέν"
+    },
+    {
+      "ref": "Acts 8:1",
+      "reason": "occurs near χώρα, Ἰουδαία, Ἱεροσόλυμα"
+    },
+    {
+      "ref": "Acts 8:4",
+      "reason": "occurs near διέρχομαι, μέν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

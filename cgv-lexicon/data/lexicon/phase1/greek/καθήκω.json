@@ -1,0 +1,118 @@
+{
+  "lemma": "καθήκω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καθῆκεν",
+      "count": 1
+    },
+    {
+      "form": "καθήκοντα,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 22:22",
+      "form": "καθῆκεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 22,
+      "left_context": "τῆς γῆς τὸν τοιοῦτον, οὐ γὰρ",
+      "right_context": "αὐτὸν ζῆν."
+    },
+    {
+      "ref": "Romans 1:28",
+      "form": "καθήκοντα,",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 28,
+      "left_context": "εἰς ἀδόκιμον νοῦν, ποιεῖν τὰ μὴ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "vivir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδόκιμος",
+      "display": "reprobado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 22:22",
+      "negator": "οὐ",
+      "clause_text": "Αἶρε ἀπὸ τῆς γῆς τὸν τοιοῦτον, οὐ γὰρ καθῆκεν αὐτὸν ζῆν."
+    },
+    {
+      "ref": "Romans 1:28",
+      "negator": "μὴ",
+      "clause_text": "ὁ θεὸς εἰς ἀδόκιμον νοῦν, ποιεῖν τὰ μὴ καθήκοντα,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:22",
+      "reason": "occurs near γῆ, ζάω, τοιοῦτος"
+    },
+    {
+      "ref": "Romans 1:28",
+      "reason": "occurs near νοῦς, ἀδόκιμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

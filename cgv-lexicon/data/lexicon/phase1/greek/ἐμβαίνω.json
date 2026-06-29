@@ -1,0 +1,451 @@
+{
+  "lemma": "ἐμβαίνω",
+  "language": "greek",
+  "total_occurrences": 17,
+  "forms": [
+    {
+      "form": "ἐμβὰς",
+      "count": 3
+    },
+    {
+      "form": "ἐνέβησαν",
+      "count": 2
+    },
+    {
+      "form": "ἐνέβη",
+      "count": 2
+    },
+    {
+      "form": "ἐμβῆναι",
+      "count": 2
+    },
+    {
+      "form": "⸀ἐνέβημεν",
+      "count": 1
+    },
+    {
+      "form": "ἐμβάντες",
+      "count": 1
+    },
+    {
+      "form": "ἐμβάντα⸃",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐμβαίνοντος",
+      "count": 1
+    },
+    {
+      "form": "ἐμβὰς⸃",
+      "count": 1
+    },
+    {
+      "form": "ἐμβάντι",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐμβὰς",
+      "count": 1
+    },
+    {
+      "form": "ἐμβάντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "participle": 10,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 16,
+      "present": 1
+    },
+    "voices": {
+      "active": 17
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 21:6",
+      "form": "⸀ἐνέβημεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 6,
+      "left_context": "⸂ἀπησπασάμεθα ἀλλήλους, καὶ⸃",
+      "right_context": "εἰς τὸ πλοῖον, ἐκεῖνοι δὲ ὑπέστρεψαν"
+    },
+    {
+      "ref": "John 6:17",
+      "form": "ἐμβάντες",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "καὶ",
+      "right_context": "⸀εἰς πλοῖον ἤρχοντο πέραν τῆς θαλάσσης"
+    },
+    {
+      "ref": "John 6:24",
+      "form": "ἐνέβησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 24,
+      "left_context": "ἔστιν ἐκεῖ οὐδὲ οἱ μαθηταὶ αὐτοῦ,",
+      "right_context": "αὐτοὶ εἰς τὰ ⸀πλοιάρια καὶ ἦλθον"
+    },
+    {
+      "ref": "John 21:3",
+      "form": "ἐνέβησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 3,
+      "left_context": "καὶ ἡμεῖς σὺν σοί. ἐξῆλθον καὶ",
+      "right_context": "εἰς τὸ ⸀πλοῖον, καὶ ἐν ἐκείνῃ"
+    },
+    {
+      "ref": "Luke 5:3",
+      "form": "ἐμβὰς",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "δὲ εἰς ἓν τῶν πλοίων, ὃ"
+    },
+    {
+      "ref": "Luke 8:22",
+      "form": "ἐνέβη",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 22,
+      "left_context": "ἐν μιᾷ τῶν ἡμερῶν καὶ αὐτὸς",
+      "right_context": "εἰς πλοῖον καὶ οἱ μαθηταὶ αὐτοῦ,"
+    },
+    {
+      "ref": "Luke 8:37",
+      "form": "ἐμβὰς",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 37,
+      "left_context": "ὅτι φόβῳ μεγάλῳ συνείχοντο· αὐτὸς δὲ",
+      "right_context": "⸀εἰς πλοῖον ὑπέστρεψεν."
+    },
+    {
+      "ref": "Mark 4:1",
+      "form": "ἐμβάντα⸃",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "ὄχλος ⸀πλεῖστος, ὥστε αὐτὸν ⸂εἰς πλοῖον",
+      "right_context": "καθῆσθαι ἐν τῇ θαλάσσῃ, καὶ πᾶς"
+    },
+    {
+      "ref": "Mark 5:18",
+      "form": "⸀ἐμβαίνοντος",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 18,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῦ εἰς τὸ πλοῖον παρεκάλει αὐτὸν"
+    },
+    {
+      "ref": "Mark 6:45",
+      "form": "ἐμβῆναι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 45,
+      "left_context": "Καὶ ⸀εὐθὺς ἠνάγκασεν τοὺς μαθητὰς αὐτοῦ",
+      "right_context": "εἰς τὸ πλοῖον καὶ προάγειν ⸂εἰς"
+    },
+    {
+      "ref": "Mark 8:10",
+      "form": "ἐμβὰς",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 10,
+      "left_context": "καὶ ⸀εὐθὺς",
+      "right_context": "εἰς τὸ πλοῖον μετὰ τῶν μαθητῶν"
+    },
+    {
+      "ref": "Mark 8:13",
+      "form": "ἐμβὰς⸃",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "καὶ ἀφεὶς αὐτοὺς ⸂πάλιν",
+      "right_context": "ἀπῆλθεν εἰς τὸ πέραν."
+    },
+    {
+      "ref": "Matthew 8:23",
+      "form": "ἐμβάντι",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "Καὶ",
+      "right_context": "αὐτῷ ⸀εἰς πλοῖον ἠκολούθησαν αὐτῷ οἱ"
+    },
+    {
+      "ref": "Matthew 9:1",
+      "form": "⸀ἐμβὰς",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 1,
+      "left_context": "Καὶ",
+      "right_context": "⸀εἰς πλοῖον διεπέρασεν καὶ ἦλθεν εἰς"
+    },
+    {
+      "ref": "Matthew 13:2",
+      "form": "ἐμβάντα",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "ὄχλοι πολλοί, ὥστε αὐτὸν ⸀εἰς πλοῖον",
+      "right_context": "καθῆσθαι, καὶ πᾶς ὁ ὄχλος ἐπὶ"
+    },
+    {
+      "ref": "Matthew 14:22",
+      "form": "ἐμβῆναι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 22,
+      "left_context": "Καὶ εὐθέως ⸀ἠνάγκασεν τοὺς μαθητὰς",
+      "right_context": "⸀εἰς πλοῖον καὶ προάγειν αὐτὸν εἰς"
+    },
+    {
+      "ref": "Matthew 15:39",
+      "form": "ἐνέβη",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 39,
+      "left_context": "καὶ ἀπολύσας τοὺς ὄχλους",
+      "right_context": "εἰς τὸ πλοῖον, καὶ ἦλθεν εἰς"
+    }
+  ],
+  "books": {
+    "Mark": 5,
+    "Matthew": 5,
+    "John": 3,
+    "Luke": 3,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 15,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "πέραν",
+      "display": "al·otro·lado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναγκάζω",
+      "display": "obligó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προάγω",
+      "display": "ir·delante",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποσπάω",
+      "display": "arrancamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοιάριον",
+      "display": "barquitas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόβος",
+      "display": "temor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέχω",
+      "display": "eran oprimido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποστρέφω",
+      "display": "volvió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogaba",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 6:24",
+      "negator": "οὐδὲ",
+      "clause_text": "Ἰησοῦς οὐκ ἔστιν ἐκεῖ οὐδὲ οἱ μαθηταὶ αὐτοῦ, ἐνέβησαν αὐτοὶ εἰς τὰ ⸀πλοιάρια καὶ ἦλθον εἰς Καφαρναοὺμ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 4:1",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 5:18",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 6:45",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 8:10",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 8:13",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Matthew 13:2",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 14:22",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 15:39",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

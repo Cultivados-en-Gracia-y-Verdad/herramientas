@@ -1,0 +1,86 @@
+{
+  "lemma": "κατεφίστημι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατεπέστησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 18:12",
+      "form": "κατεπέστησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 12,
+      "left_context": "Γαλλίωνος δὲ ⸂ἀνθυπάτου ὄντος⸃ τῆς Ἀχαΐας",
+      "right_context": "⸂ὁμοθυμαδὸν οἱ Ἰουδαῖοι⸃ τῷ Παύλῳ καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνθύπατος",
+      "display": "de·procónsul",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀχαΐα",
+      "display": "de·Acaya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμοθυμαδόν",
+      "display": "unánimes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:12",
+      "reason": "occurs near Παῦλος, ἀνθύπατος, Ἀχαΐα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

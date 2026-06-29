@@ -1,0 +1,130 @@
+{
+  "lemma": "κατατίθημι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καταθέσθαι",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 24:27",
+      "form": "καταθέσθαι",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 27,
+      "left_context": "Φῆλιξ Πόρκιον Φῆστον· θέλων τε ⸀χάριτα",
+      "right_context": "τοῖς Ἰουδαίοις ὁ Φῆλιξ κατέλιπε τὸν"
+    },
+    {
+      "ref": "Acts 25:9",
+      "form": "καταθέσθαι",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 9,
+      "left_context": "Φῆστος δὲ ⸂θέλων τοῖς Ἰουδαίοις⸃ χάριν",
+      "right_context": "ἀποκριθεὶς τῷ Παύλῳ εἶπεν· Θέλεις εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θέλω",
+      "display": "queriendo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πόρκιος",
+      "display": "Porcio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φῆστος",
+      "display": "Festo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φῆλιξ",
+      "display": "Félix",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταλείπω",
+      "display": "dejó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "respondido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 24:27",
+      "reason": "occurs near Πόρκιος, Φῆστος, θέλω"
+    },
+    {
+      "ref": "Acts 25:9",
+      "reason": "occurs near θέλω, χάρις, Ἰουδαῖος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

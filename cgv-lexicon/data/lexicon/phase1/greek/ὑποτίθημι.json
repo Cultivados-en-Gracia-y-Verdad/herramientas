@@ -1,0 +1,132 @@
+{
+  "lemma": "ὑποτίθημι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ὑποτιθέμενος",
+      "count": 1
+    },
+    {
+      "form": "ὑπέθηκαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 4:6",
+      "form": "ὑποτιθέμενος",
+      "morph": "V-P-M-P",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "Ταῦτα",
+      "right_context": "τοῖς ἀδελφοῖς καλὸς ἔσῃ διάκονος ⸂Χριστοῦ"
+    },
+    {
+      "ref": "Romans 16:4",
+      "form": "ὑπέθηκαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "Romans",
+      "chapter": 16,
+      "verse": 4,
+      "left_context": "τῆς ψυχῆς μου τὸν ἑαυτῶν τράχηλον",
+      "right_context": "οἷς οὐκ ἐγὼ μόνος εὐχαριστῶ ἀλλὰ"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάκονος",
+      "display": "servidor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "de·alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τράχηλος",
+      "display": "cuello",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐχαριστέω",
+      "display": "dar·gracias",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 16:4",
+      "negator": "οὐκ",
+      "clause_text": "οἵτινες ὑπὲρ τῆς ψυχῆς μου τὸν ἑαυτῶν τράχηλον ὑπέθηκαν, οἷς οὐκ ἐγὼ μόνος εὐχαριστῶ ἀλλὰ καὶ πᾶσαι"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:6",
+      "reason": "occurs near διάκονος, καλός, ἀδελφός"
+    },
+    {
+      "ref": "Romans 16:4",
+      "reason": "occurs near ψυχή, ἑαυτοῦ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

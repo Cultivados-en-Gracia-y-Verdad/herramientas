@@ -1,0 +1,118 @@
+{
+  "lemma": "ἀναγεννάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀναγεννήσας",
+      "count": 1
+    },
+    {
+      "form": "ἀναγεγεννημένοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:3",
+      "form": "ἀναγεννήσας",
+      "morph": "V-A-A-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "ὁ κατὰ τὸ πολὺ αὐτοῦ ἔλεος",
+      "right_context": "ἡμᾶς εἰς ἐλπίδα ζῶσαν δι’ ἀναστάσεως"
+    },
+    {
+      "ref": "1 Peter 1:23",
+      "form": "ἀναγεγεννημένοι",
+      "morph": "V-X-P-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "",
+      "right_context": "οὐκ ἐκ σπορᾶς φθαρτῆς ἀλλὰ ἀφθάρτου,"
+    }
+  ],
+  "books": {
+    "1 Peter": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλεος",
+      "display": "misericordia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπορά",
+      "display": "de·semilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθαρτός",
+      "display": "de·corruptible",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 1:23",
+      "negator": "οὐκ",
+      "clause_text": "ἀναγεγεννημένοι οὐκ ἐκ σπορᾶς φθαρτῆς ἀλλὰ ἀφθάρτου, διὰ λόγου"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 1:23",
+      "reason": "occurs near σπορά"
+    },
+    {
+      "ref": "1 Peter 1:3",
+      "reason": "occurs near ζάω, πολύς, ἐλπίς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

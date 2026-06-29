@@ -1,0 +1,180 @@
+{
+  "lemma": "ἀριστάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀριστήσατε.",
+      "count": 1
+    },
+    {
+      "form": "ἠρίστησαν",
+      "count": 1
+    },
+    {
+      "form": "ἀριστήσῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "John 21:12",
+      "form": "ἀριστήσατε.",
+      "morph": "V-A-A-D-2P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "λέγει αὐτοῖς ὁ Ἰησοῦς· Δεῦτε",
+      "right_context": "οὐδεὶς ⸀δὲ ἐτόλμα τῶν μαθητῶν ἐξετάσαι"
+    },
+    {
+      "ref": "John 21:15",
+      "form": "ἠρίστησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 15,
+      "left_context": "Ὅτε οὖν",
+      "right_context": "λέγει τῷ Σίμωνι Πέτρῳ ὁ Ἰησοῦς·"
+    },
+    {
+      "ref": "Luke 11:37",
+      "form": "ἀριστήσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 37,
+      "left_context": "τῷ λαλῆσαι ⸀ἐρωτᾷ αὐτὸν ⸀Φαρισαῖος ὅπως",
+      "right_context": "παρ’ αὐτῷ· εἰσελθὼν δὲ ἀνέπεσεν."
+    }
+  ],
+  "books": {
+    "John": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεῦτε",
+      "display": "venid",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τολμάω",
+      "display": "atreverse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρωτάω",
+      "display": "pregunta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναπίπτω",
+      "display": "recostarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 21:12",
+      "form": "ἀριστήσατε.",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "λέγει αὐτοῖς ὁ Ἰησοῦς· Δεῦτε ἀριστήσατε. οὐδεὶς ⸀δὲ ἐτόλμα τῶν μαθητῶν ἐξετάσαι αὐτόν· Σὺ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 21:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 21:15",
+      "reason": "occurs near ὅτε"
+    },
+    {
+      "ref": "Luke 11:37",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

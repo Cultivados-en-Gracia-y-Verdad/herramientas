@@ -1,0 +1,80 @@
+{
+  "lemma": "παροτρύνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρώτρυναν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:50",
+      "form": "παρώτρυναν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 50,
+      "left_context": "οἱ δὲ Ἰουδαῖοι",
+      "right_context": "τὰς σεβομένας ⸀γυναῖκας τὰς εὐσχήμονας καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σέβομαι",
+      "display": "adorando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐσχήμων",
+      "display": "honorables",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:50",
+      "reason": "occurs near γυνή, εὐσχήμων, σέβομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,125 @@
+{
+  "lemma": "ἐπαναπαύομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπαναπαήσεται",
+      "count": 1
+    },
+    {
+      "form": "ἐπαναπαύῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:6",
+      "form": "ἐπαναπαήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 6,
+      "left_context": "καὶ ἐὰν ⸂ᾖ ἐκεῖ⸃ υἱὸς εἰρήνης,",
+      "right_context": "ἐπ’ αὐτὸν ἡ εἰρήνη ὑμῶν· εἰ"
+    },
+    {
+      "ref": "Romans 2:17",
+      "form": "ἐπαναπαύῃ",
+      "morph": "V-P-M-I-2S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "⸂Εἰ δὲ⸃ σὺ Ἰουδαῖος ἐπονομάζῃ καὶ",
+      "right_context": "⸀νόμῳ καὶ καυχᾶσαι ἐν θεῷ"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἰρήνη",
+      "display": "de·paz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judío",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπονομάζομαι",
+      "display": "llamarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καυχάομαι",
+      "display": "gloriarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:6",
+      "reason": "occurs near εἰρήνη, υἱός, ἐκεῖ"
+    },
+    {
+      "ref": "Romans 2:17",
+      "reason": "occurs near ἐπονομάζομαι, Ἰουδαῖος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

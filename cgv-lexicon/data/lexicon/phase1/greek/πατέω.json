@@ -1,0 +1,248 @@
+{
+  "lemma": "πατέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "πατήσουσιν",
+      "count": 1
+    },
+    {
+      "form": "ἐπατήθη",
+      "count": 1
+    },
+    {
+      "form": "πατεῖ",
+      "count": 1
+    },
+    {
+      "form": "πατεῖν",
+      "count": 1
+    },
+    {
+      "form": "πατουμένη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 1,
+      "present": 3
+    },
+    "voices": {
+      "active": 3,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 11:2",
+      "form": "πατήσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 2,
+      "left_context": "ἔθνεσιν, καὶ τὴν πόλιν τὴν ἁγίαν",
+      "right_context": "μῆνας ⸀τεσσεράκοντα δύο."
+    },
+    {
+      "ref": "Revelation 14:20",
+      "form": "ἐπατήθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 20,
+      "left_context": "καὶ",
+      "right_context": "ἡ ληνὸς ἔξωθεν τῆς πόλεως, καὶ"
+    },
+    {
+      "ref": "Revelation 19:15",
+      "form": "πατεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 15,
+      "left_context": "αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ· καὶ αὐτὸς",
+      "right_context": "τὴν ληνὸν τοῦ οἴνου τοῦ θυμοῦ"
+    },
+    {
+      "ref": "Luke 10:19",
+      "form": "πατεῖν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "ἰδοὺ ⸀δέδωκα ὑμῖν τὴν ἐξουσίαν τοῦ",
+      "right_context": "ἐπάνω ὄφεων καὶ σκορπίων, καὶ ἐπὶ"
+    },
+    {
+      "ref": "Luke 21:24",
+      "form": "πατουμένη",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 24,
+      "left_context": "⸂τὰ ἔθνη πάντα⸃, καὶ Ἰερουσαλὴμ ἔσται",
+      "right_context": "ὑπὸ ἐθνῶν, ἄχρι ⸀οὗ ⸀πληρωθῶσιν καιροὶ"
+    }
+  ],
+  "books": {
+    "Revelation": 3,
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ληνός",
+      "display": "lagar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήν",
+      "display": "ciertamentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεσσεράκοντα",
+      "display": "cuarentas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξωθεν",
+      "display": "por·fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥάβδος",
+      "display": "vara·",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σιδηροῦς",
+      "display": "de·hierro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "de·vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "he dado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπάνω",
+      "display": "encima",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄφις",
+      "display": "de·serpientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκορπίος",
+      "display": "de·escorpiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumplan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 11:2",
+      "reason": "occurs near μήν, πόλις, ἅγιος"
+    },
+    {
+      "ref": "Revelation 14:20",
+      "reason": "occurs near ληνός, πόλις"
+    },
+    {
+      "ref": "Revelation 19:15",
+      "reason": "occurs near ληνός"
+    },
+    {
+      "ref": "Luke 10:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 21:24",
+      "reason": "occurs near ἔθνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

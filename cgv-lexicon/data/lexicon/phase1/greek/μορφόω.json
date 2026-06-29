@@ -1,0 +1,80 @@
+{
+  "lemma": "μορφόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μορφωθῇ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 4:19",
+      "form": "μορφωθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 19,
+      "left_context": "μου, οὓς πάλιν ὠδίνω ⸀μέχρις οὗ",
+      "right_context": "Χριστὸς ἐν ὑμῖν·"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὠδίνω",
+      "display": "dolor·de·parto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέχρι(ς)",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 4:19",
+      "reason": "occurs near Χριστός, μέχρι(ς), πάλιν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

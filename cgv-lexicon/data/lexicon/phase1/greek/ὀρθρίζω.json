@@ -1,0 +1,68 @@
+{
+  "lemma": "ὀρθρίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὤρθριζεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 21:38",
+      "form": "ὤρθριζεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 38,
+      "left_context": "καὶ πᾶς ὁ λαὸς",
+      "right_context": "πρὸς αὐτὸν ἐν τῷ ἱερῷ ἀκούειν"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:38",
+      "reason": "occurs near λαός, ἱερός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

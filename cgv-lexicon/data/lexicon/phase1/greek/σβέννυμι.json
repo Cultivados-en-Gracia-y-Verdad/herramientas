@@ -1,0 +1,281 @@
+{
+  "lemma": "σβέννυμι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "σβέννυτε,",
+      "count": 1
+    },
+    {
+      "form": "σβέσαι·",
+      "count": 1
+    },
+    {
+      "form": "ἔσβεσαν",
+      "count": 1
+    },
+    {
+      "form": "σβέννυται.",
+      "count": 1
+    },
+    {
+      "form": "σβέσει,",
+      "count": 1
+    },
+    {
+      "form": "σβέννυνται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "infinitive": 1,
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 4,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 5:19",
+      "form": "σβέννυτε,",
+      "morph": "V-P-A-D-2P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 19,
+      "left_context": "τὸ πνεῦμα μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Ephesians 6:16",
+      "form": "σβέσαι·",
+      "morph": "V-A-A-N",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 16,
+      "left_context": "πάντα τὰ βέλη τοῦ ⸀πονηροῦ πεπυρωμένα",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 11:34",
+      "form": "ἔσβεσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 34,
+      "left_context": "",
+      "right_context": "δύναμιν πυρός, ἔφυγον στόματα ⸀μαχαίρης, ⸀ἐδυναμώθησαν"
+    },
+    {
+      "ref": "Mark 9:48",
+      "form": "σβέννυται.",
+      "morph": "V-P-P-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 48,
+      "left_context": "οὐ τελευτᾷ καὶ τὸ πῦρ οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 12:20",
+      "form": "σβέσει,",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "οὐ κατεάξει καὶ λίνον τυφόμενον οὐ",
+      "right_context": "ἕως ἂν ἐκβάλῃ εἰς νῖκος τὴν"
+    },
+    {
+      "ref": "Matthew 25:8",
+      "form": "σβέννυνται.",
+      "morph": "V-P-P-I-3P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 8,
+      "left_context": "ἐλαίου ὑμῶν, ὅτι αἱ λαμπάδες ἡμῶν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "1 Thessalonians": 1,
+    "Ephesians": 1,
+    "Hebrews": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βέλος",
+      "display": "flechas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "de·malvado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυρόομαι",
+      "display": "ardidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φεύγω",
+      "display": "huieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "bocas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχαιρα",
+      "display": "de·espada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελευτάω",
+      "display": "more",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάγνυμι",
+      "display": "quebrará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίνον",
+      "display": "lino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τύφομαι",
+      "display": "humeante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῖκος",
+      "display": "victoria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμπάς",
+      "display": "lámparas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Thessalonians 5:19",
+      "form": "σβέννυτε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "τὸ πνεῦμα μὴ σβέννυτε,",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 5:19",
+      "negator": "μὴ",
+      "clause_text": "τὸ πνεῦμα μὴ σβέννυτε,"
+    },
+    {
+      "ref": "Mark 9:48",
+      "negator": "οὐ",
+      "clause_text": "σκώληξ αὐτῶν οὐ τελευτᾷ καὶ τὸ πῦρ οὐ σβέννυται."
+    },
+    {
+      "ref": "Matthew 12:20",
+      "negator": "οὐ",
+      "clause_text": "κάλαμον συντετριμμένον οὐ κατεάξει καὶ λίνον τυφόμενον οὐ σβέσει, ἕως ἂν ἐκβάλῃ εἰς νῖκος τὴν κρίσιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 5:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 12:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 25:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Ephesians 6:16",
+      "reason": "occurs near βέλος, πονηρός, πυρόομαι"
+    },
+    {
+      "ref": "Hebrews 11:34",
+      "reason": "occurs near πῦρ"
+    },
+    {
+      "ref": "Mark 9:48",
+      "reason": "occurs near πῦρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

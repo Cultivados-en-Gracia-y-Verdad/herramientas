@@ -1,0 +1,203 @@
+{
+  "lemma": "φθέγγομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "φθεγξάμενον",
+      "count": 1
+    },
+    {
+      "form": "φθεγγόμενοι",
+      "count": 1
+    },
+    {
+      "form": "φθέγγεσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 2
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:16",
+      "form": "φθεγξάμενον",
+      "morph": "V-A-M-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "παρανομίας· ὑποζύγιον ἄφωνον ἐν ἀνθρώπου φωνῇ",
+      "right_context": "ἐκώλυσεν τὴν τοῦ προφήτου παραφρονίαν."
+    },
+    {
+      "ref": "2 Peter 2:18",
+      "form": "φθεγγόμενοι",
+      "morph": "V-P-M-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "ὑπέρογκα γὰρ ματαιότητος",
+      "right_context": "δελεάζουσιν ἐν ἐπιθυμίαις σαρκὸς ἀσελγείαις τοὺς"
+    },
+    {
+      "ref": "Acts 4:18",
+      "form": "φθέγγεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 18,
+      "left_context": "καλέσαντες αὐτοὺς παρήγγειλαν ⸀τὸ καθόλου μὴ",
+      "right_context": "μηδὲ διδάσκειν ἐπὶ τῷ ὀνόματι τοῦ"
+    }
+  ],
+  "books": {
+    "2 Peter": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑποζύγιον",
+      "display": "animal·de·carga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄφωνος",
+      "display": "mudo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κωλύω",
+      "display": "impedió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραφρονία",
+      "display": "locura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρογκος",
+      "display": "jactanciosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ματαιότης",
+      "display": "de·vanidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δελεάζω",
+      "display": "seducen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσέλγεια",
+      "display": "lascivias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγγέλλω",
+      "display": "mandaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθόλου",
+      "display": "en·general",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 4:18",
+      "negator": "μὴ",
+      "clause_text": "καὶ καλέσαντες αὐτοὺς παρήγγειλαν ⸀τὸ καθόλου μὴ φθέγγεσθαι μηδὲ διδάσκειν ἐπὶ τῷ ὀνόματι τοῦ Ἰησοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:16",
+      "reason": "occurs near κωλύω, φωνή, ἄνθρωπος"
+    },
+    {
+      "ref": "2 Peter 2:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 4:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

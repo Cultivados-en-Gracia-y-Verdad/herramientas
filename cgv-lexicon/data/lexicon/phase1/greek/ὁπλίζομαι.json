@@ -1,0 +1,87 @@
+{
+  "lemma": "ὁπλίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὁπλίσασθε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 4:1",
+      "form": "ὁπλίσασθε,",
+      "morph": "V-A-M-D-2P",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "σαρκὶ καὶ ὑμεῖς τὴν αὐτὴν ἔννοιαν",
+      "right_context": "ὅτι ὁ ⸀παθὼν σαρκὶ πέπαυται ⸀ἁμαρτίας,"
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔννοια",
+      "display": "pensamiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παύω",
+      "display": "ha cesado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 4:1",
+      "form": "ὁπλίσασθε,",
+      "morph": "V-A-M-D-2P",
+      "clause_text": "οὖν ⸀παθόντος σαρκὶ καὶ ὑμεῖς τὴν αὐτὴν ἔννοιαν ὁπλίσασθε, ὅτι ὁ ⸀παθὼν σαρκὶ πέπαυται ⸀ἁμαρτίας,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 4:1",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀγραυλέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀγραυλοῦντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 2:8",
+      "form": "ἀγραυλοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "ἦσαν ἐν τῇ χώρᾳ τῇ αὐτῇ",
+      "right_context": "καὶ φυλάσσοντες φυλακὰς τῆς νυκτὸς ἐπὶ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χώρα",
+      "display": "región",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guardando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακή",
+      "display": "cárceles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 2:8",
+      "reason": "occurs near νύξ, φυλάσσω, φυλακή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

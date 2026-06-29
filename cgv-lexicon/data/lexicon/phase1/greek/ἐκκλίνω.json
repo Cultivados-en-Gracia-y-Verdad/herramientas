@@ -1,0 +1,138 @@
+{
+  "lemma": "ἐκκλίνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐκκλινάτω",
+      "count": 1
+    },
+    {
+      "form": "ἐξέκλιναν,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐκκλίνετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:11",
+      "form": "ἐκκλινάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "",
+      "right_context": "⸀δὲ ἀπὸ κακοῦ καὶ ποιησάτω ἀγαθόν,"
+    },
+    {
+      "ref": "Romans 3:12",
+      "form": "ἐξέκλιναν,",
+      "morph": "V-A-A-I-3P",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "πάντες",
+      "right_context": "ἅμα ἠχρεώθησαν· οὐκ ⸀ἔστιν ποιῶν χρηστότητα,"
+    },
+    {
+      "ref": "Romans 16:17",
+      "form": "⸀ἐκκλίνετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Romans",
+      "chapter": 16,
+      "verse": 17,
+      "left_context": "διδαχὴν ἣν ὑμεῖς ἐμάθετε ποιοῦντας, καὶ",
+      "right_context": "ἀπ’ αὐτῶν·"
+    }
+  ],
+  "books": {
+    "Romans": 2,
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κακός",
+      "display": "de·malo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀχρειόομαι",
+      "display": "volverse·inútil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μανθάνω",
+      "display": "aprendisteis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 3:11",
+      "form": "ἐκκλινάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "ἐκκλινάτω ⸀δὲ ἀπὸ κακοῦ καὶ ποιησάτω ἀγαθόν, ζητησάτω εἰρήνην"
+    },
+    {
+      "ref": "Romans 16:17",
+      "form": "⸀ἐκκλίνετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "παρὰ τὴν διδαχὴν ἣν ὑμεῖς ἐμάθετε ποιοῦντας, καὶ ⸀ἐκκλίνετε ἀπ’ αὐτῶν·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 3:12",
+      "negator": "οὐκ",
+      "clause_text": "πάντες ἐξέκλιναν, ἅμα ἠχρεώθησαν· οὐκ ⸀ἔστιν ποιῶν χρηστότητα, οὐκ ἔστιν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 16:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Peter 3:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 3:12",
+      "reason": "occurs near ἀχρειόομαι, ἅμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,170 @@
+{
+  "lemma": "ἀποχωρέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀποχωρήσας",
+      "count": 1
+    },
+    {
+      "form": "ἀποχωρεῖ",
+      "count": 1
+    },
+    {
+      "form": "ἀποχωρεῖτε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:13",
+      "form": "ἀποχωρήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 13,
+      "left_context": "εἰς Πέργην τῆς Παμφυλίας· Ἰωάννης δὲ",
+      "right_context": "ἀπ’ αὐτῶν ὑπέστρεψεν εἰς Ἱεροσόλυμα."
+    },
+    {
+      "ref": "Luke 9:39",
+      "form": "ἀποχωρεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 39,
+      "left_context": "σπαράσσει αὐτὸν μετὰ ἀφροῦ καὶ ⸀μόγις",
+      "right_context": "ἀπ’ αὐτοῦ συντρῖβον αὐτόν·"
+    },
+    {
+      "ref": "Matthew 7:23",
+      "form": "ἀποχωρεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 23,
+      "left_context": "ὁμολογήσω αὐτοῖς ὅτι Οὐδέποτε ἔγνων ὑμᾶς·",
+      "right_context": "ἀπ’ ἐμοῦ οἱ ἐργαζόμενοι τὴν ἀνομίαν."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Πέργη",
+      "display": "Perge",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παμφυλία",
+      "display": "de·Panfilia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποστρέφω",
+      "display": "volvió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφρός",
+      "display": "de·espuma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόγις",
+      "display": "difícilmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συντρίβω",
+      "display": "quebrantando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐδέποτε",
+      "display": "nunca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάζομαι",
+      "display": "trabajando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 7:23",
+      "form": "ἀποχωρεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "καὶ τότε ὁμολογήσω αὐτοῖς ὅτι Οὐδέποτε ἔγνων ὑμᾶς· ἀποχωρεῖτε ἀπ’ ἐμοῦ οἱ ἐργαζόμενοι τὴν ἀνομίαν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 7:23",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 13:13",
+      "reason": "occurs near Πέργη, Παμφυλία, Ἰωάννης"
+    },
+    {
+      "ref": "Luke 9:39",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

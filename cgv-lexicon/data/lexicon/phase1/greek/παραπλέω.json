@@ -1,0 +1,86 @@
+{
+  "lemma": "παραπλέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παραπλεῦσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:16",
+      "form": "παραπλεῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 16,
+      "left_context": "⸀κεκρίκει γὰρ ὁ Παῦλος",
+      "right_context": "τὴν Ἔφεσον, ὅπως μὴ γένηται αὐτῷ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κρίνω",
+      "display": "había juzgado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἔφεσος",
+      "display": "Éfeso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 20:16",
+      "negator": "μὴ",
+      "clause_text": "⸀κεκρίκει γὰρ ὁ Παῦλος παραπλεῦσαι τὴν Ἔφεσον, ὅπως μὴ γένηται αὐτῷ χρονοτριβῆσαι ἐν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:16",
+      "reason": "occurs near Παῦλος, κρίνω, Ἔφεσος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

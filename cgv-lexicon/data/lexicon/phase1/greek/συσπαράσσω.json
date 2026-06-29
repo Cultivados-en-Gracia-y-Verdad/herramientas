@@ -1,0 +1,123 @@
+{
+  "lemma": "συσπαράσσω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνεσπάραξεν·",
+      "count": 1
+    },
+    {
+      "form": "⸀συνεσπάραξεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 9:42",
+      "form": "συνεσπάραξεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 42,
+      "left_context": "αὐτοῦ ἔρρηξεν αὐτὸν τὸ δαιμόνιον καὶ",
+      "right_context": "ἐπετίμησεν δὲ ὁ Ἰησοῦς τῷ πνεύματι"
+    },
+    {
+      "ref": "Mark 9:20",
+      "form": "⸀συνεσπάραξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 20,
+      "left_context": "καὶ ἰδὼν αὐτὸν ⸂τὸ πνεῦμα εὐθὺς⸃",
+      "right_context": "αὐτόν, καὶ πεσὼν ἐπὶ τῆς γῆς"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ῥήγνυμι",
+      "display": "rasgó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτιμάω",
+      "display": "reprendió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "caido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 9:42",
+      "reason": "occurs near δαιμόνιον, ἐπιτιμάω, Ἰησοῦς"
+    },
+    {
+      "ref": "Mark 9:20",
+      "reason": "occurs near ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

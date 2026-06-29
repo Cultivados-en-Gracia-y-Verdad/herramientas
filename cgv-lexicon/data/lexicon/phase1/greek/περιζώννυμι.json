@@ -1,0 +1,302 @@
+{
+  "lemma": "περιζώννυμι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "περιεζωσμένον",
+      "count": 1
+    },
+    {
+      "form": "περιεζωσμένοι",
+      "count": 1
+    },
+    {
+      "form": "περιζωσάμενοι",
+      "count": 1
+    },
+    {
+      "form": "περιεζωσμέναι",
+      "count": 1
+    },
+    {
+      "form": "περιζώσεται",
+      "count": 1
+    },
+    {
+      "form": "περιζωσάμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 5,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 3,
+      "aorist": 2,
+      "future": 1
+    },
+    "voices": {
+      "middle": 5,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 1:13",
+      "form": "περιεζωσμένον",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ὅμοιον ⸀υἱὸν ἀνθρώπου, ἐνδεδυμένον ποδήρη καὶ",
+      "right_context": "πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·"
+    },
+    {
+      "ref": "Revelation 15:6",
+      "form": "περιεζωσμένοι",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 15,
+      "verse": 6,
+      "left_context": "ναοῦ, ⸀ἐνδεδυμένοι ⸀λίνον καθαρὸν λαμπρὸν καὶ",
+      "right_context": "περὶ τὰ στήθη ζώνας χρυσᾶς."
+    },
+    {
+      "ref": "Ephesians 6:14",
+      "form": "περιζωσάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "στῆτε οὖν",
+      "right_context": "τὴν ὀσφὺν ὑμῶν ἐν ἀληθείᾳ, καὶ"
+    },
+    {
+      "ref": "Luke 12:35",
+      "form": "περιεζωσμέναι",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 35,
+      "left_context": "Ἔστωσαν ὑμῶν αἱ ὀσφύες",
+      "right_context": "καὶ οἱ λύχνοι καιόμενοι,"
+    },
+    {
+      "ref": "Luke 12:37",
+      "form": "περιζώσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 37,
+      "left_context": "εὑρήσει γρηγοροῦντας· ἀμὴν λέγω ὑμῖν ὅτι",
+      "right_context": "καὶ ἀνακλινεῖ αὐτοὺς καὶ παρελθὼν διακονήσει"
+    },
+    {
+      "ref": "Luke 17:8",
+      "form": "περιζωσάμενος",
+      "morph": "V-A-M-P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 8,
+      "left_context": "ἐρεῖ αὐτῷ· Ἑτοίμασον τί δειπνήσω καὶ",
+      "right_context": "διακόνει μοι ἕως φάγω καὶ πίω,"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Revelation": 2,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐνδύω",
+      "display": "vestido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζώνη",
+      "display": "cinturón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χρυσοῦς",
+      "display": "de·oro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀσφύς",
+      "display": "lomo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποδήρης",
+      "display": "túnica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαστός",
+      "display": "pechos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίνον",
+      "display": "lino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαρός",
+      "display": "limpio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμπρός",
+      "display": "resplandeciente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στῆθος",
+      "display": "pechos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "poned",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύχνος",
+      "display": "lámparas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καίω",
+      "display": "quemados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γρηγορέω",
+      "display": "velando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμήν",
+      "display": "amén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνακλίνω",
+      "display": "reclinará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρέρχομαι",
+      "display": "pasado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμάζω",
+      "display": "prepara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δειπνέω",
+      "display": "cene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονέω",
+      "display": "serve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "coma",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:35",
+      "reason": "occurs near ὀσφύς"
+    },
+    {
+      "ref": "Luke 12:37",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 17:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 15:6",
+      "reason": "occurs near ζώνη, χρυσοῦς, ἐνδύω"
+    },
+    {
+      "ref": "Revelation 1:13",
+      "reason": "occurs near ζώνη, υἱός, χρυσοῦς"
+    },
+    {
+      "ref": "Ephesians 6:14",
+      "reason": "occurs near ὀσφύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

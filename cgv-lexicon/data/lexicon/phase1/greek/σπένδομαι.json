@@ -1,0 +1,105 @@
+{
+  "lemma": "σπένδομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "σπένδομαι,",
+      "count": 1
+    },
+    {
+      "form": "σπένδομαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 4:6",
+      "form": "σπένδομαι,",
+      "morph": "V-P-P-I-1S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "Ἐγὼ γὰρ ἤδη",
+      "right_context": "καὶ ὁ καιρὸς τῆς ⸂ἀναλύσεώς μου⸃"
+    },
+    {
+      "ref": "Philippians 2:17",
+      "form": "σπένδομαι",
+      "morph": "V-P-P-I-1S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "ἀλλὰ εἰ καὶ",
+      "right_context": "ἐπὶ τῇ θυσίᾳ καὶ λειτουργίᾳ τῆς"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1,
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάλυσις",
+      "display": "de·partida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυσία",
+      "display": "sacrificio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λειτουργία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 4:6",
+      "reason": "occurs near καιρός, ἀνάλυσις, ἤδη"
+    },
+    {
+      "ref": "Philippians 2:17",
+      "reason": "occurs near θυσία, λειτουργία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

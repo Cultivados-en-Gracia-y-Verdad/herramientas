@@ -1,0 +1,145 @@
+{
+  "lemma": "φάσκω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "φάσκοντες",
+      "count": 2
+    },
+    {
+      "form": "ἔφασκεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 24:9",
+      "form": "φάσκοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 9,
+      "left_context": "συνεπέθεντο δὲ καὶ οἱ Ἰουδαῖοι",
+      "right_context": "ταῦτα οὕτως ἔχειν."
+    },
+    {
+      "ref": "Acts 25:19",
+      "form": "ἔφασκεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 19,
+      "left_context": "καὶ περί τινος Ἰησοῦ τεθνηκότος, ὃν",
+      "right_context": "ὁ Παῦλος ζῆν."
+    },
+    {
+      "ref": "Romans 1:22",
+      "form": "φάσκοντες",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "",
+      "right_context": "εἶναι σοφοὶ ἐμωράνθησαν,"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συνεπιτίθεμαι",
+      "display": "atacaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνῄσκω",
+      "display": "muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "vivir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σοφός",
+      "display": "sabios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μωραίνω",
+      "display": "hacer·necio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 24:9",
+      "reason": "occurs near οὕτω(ς), συνεπιτίθεμαι, Ἰουδαῖος"
+    },
+    {
+      "ref": "Acts 25:19",
+      "reason": "occurs near θνῄσκω, Ἰησοῦς"
+    },
+    {
+      "ref": "Romans 1:22",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

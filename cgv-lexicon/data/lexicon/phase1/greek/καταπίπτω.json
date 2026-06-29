@@ -1,0 +1,174 @@
+{
+  "lemma": "καταπίπτω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "καταπεσόντων",
+      "count": 1
+    },
+    {
+      "form": "καταπίπτειν",
+      "count": 1
+    },
+    {
+      "form": "⸀κατέπεσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 26:14",
+      "form": "καταπεσόντων",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 14,
+      "left_context": "πάντων ⸀τε",
+      "right_context": "ἡμῶν εἰς τὴν γῆν ἤκουσα φωνὴν"
+    },
+    {
+      "ref": "Acts 28:6",
+      "form": "καταπίπτειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 6,
+      "left_context": "δὲ προσεδόκων αὐτὸν μέλλειν πίμπρασθαι ἢ",
+      "right_context": "ἄφνω νεκρόν. ἐπὶ πολὺ δὲ αὐτῶν"
+    },
+    {
+      "ref": "Luke 8:6",
+      "form": "⸀κατέπεσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 6,
+      "left_context": "καὶ ἕτερον",
+      "right_context": "ἐπὶ τὴν πέτραν, καὶ φυὲν ἐξηράνθη"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσδοκάω",
+      "display": "esperaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίμπρημι",
+      "display": "hinchar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄφνω",
+      "display": "de·repente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέτρα",
+      "display": "roca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φύω",
+      "display": "crecido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:14",
+      "reason": "occurs near γῆ, τέ, ἀκούω"
+    },
+    {
+      "ref": "Acts 28:6",
+      "reason": "occurs near μέλλω, προσδοκάω"
+    },
+    {
+      "ref": "Luke 8:6",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

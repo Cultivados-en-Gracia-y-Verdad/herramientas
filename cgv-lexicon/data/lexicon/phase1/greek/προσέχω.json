@@ -1,0 +1,613 @@
+{
+  "lemma": "προσέχω",
+  "language": "greek",
+  "total_occurrences": 24,
+  "forms": [
+    {
+      "form": "προσέχετε",
+      "count": 4
+    },
+    {
+      "form": "Προσέχετε",
+      "count": 4
+    },
+    {
+      "form": "προσέχειν",
+      "count": 3
+    },
+    {
+      "form": "προσέχοντες",
+      "count": 3
+    },
+    {
+      "form": "προσεῖχον",
+      "count": 3
+    },
+    {
+      "form": "προσέχοντας,",
+      "count": 1
+    },
+    {
+      "form": "πρόσεχε",
+      "count": 1
+    },
+    {
+      "form": "⸂προσέχειν",
+      "count": 1
+    },
+    {
+      "form": "προσέσχηκεν",
+      "count": 1
+    },
+    {
+      "form": "⸀προσέχετε",
+      "count": 1
+    },
+    {
+      "form": "⸀Προσέχετε",
+      "count": 1
+    },
+    {
+      "form": "⸂προσέχετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 4,
+      "participle": 4,
+      "imperative": 12,
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 20,
+      "perfect": 1,
+      "imperfect": 3
+    },
+    "voices": {
+      "active": 24
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 1:4",
+      "form": "προσέχειν",
+      "morph": "V-P-A-N",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "μηδὲ",
+      "right_context": "μύθοις καὶ γενεαλογίαις ἀπεράντοις, αἵτινες ⸀ἐκζητήσεις"
+    },
+    {
+      "ref": "1 Timothy 3:8",
+      "form": "προσέχοντας,",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "σεμνούς, μὴ διλόγους, μὴ οἴνῳ πολλῷ",
+      "right_context": "μὴ αἰσχροκερδεῖς,"
+    },
+    {
+      "ref": "1 Timothy 4:1",
+      "form": "προσέχοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "ὑστέροις καιροῖς ἀποστήσονταί τινες τῆς πίστεως,",
+      "right_context": "πνεύμασι πλάνοις καὶ διδασκαλίαις δαιμονίων"
+    },
+    {
+      "ref": "1 Timothy 4:13",
+      "form": "πρόσεχε",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "ἕως ἔρχομαι",
+      "right_context": "τῇ ἀναγνώσει, τῇ παρακλήσει, τῇ διδασκαλίᾳ."
+    },
+    {
+      "ref": "2 Peter 1:19",
+      "form": "προσέχοντες",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "τὸν προφητικὸν λόγον, ᾧ καλῶς ποιεῖτε",
+      "right_context": "ὡς λύχνῳ φαίνοντι ἐν αὐχμηρῷ τόπῳ,"
+    },
+    {
+      "ref": "Hebrews 2:1",
+      "form": "⸂προσέχειν",
+      "morph": "V-P-A-N",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "Διὰ τοῦτο δεῖ περισσοτέρως",
+      "right_context": "ἡμᾶς⸃ τοῖς ἀκουσθεῖσιν, μήποτε παραρυῶμεν."
+    },
+    {
+      "ref": "Hebrews 7:13",
+      "form": "προσέσχηκεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 13,
+      "left_context": "φυλῆς ἑτέρας μετέσχηκεν, ἀφ’ ἧς οὐδεὶς",
+      "right_context": "τῷ θυσιαστηρίῳ·"
+    },
+    {
+      "ref": "Acts 5:35",
+      "form": "προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 35,
+      "left_context": "εἶπέν τε πρὸς αὐτούς· Ἄνδρες Ἰσραηλῖται,",
+      "right_context": "ἑαυτοῖς ἐπὶ τοῖς ἀνθρώποις τούτοις τί"
+    },
+    {
+      "ref": "Acts 8:6",
+      "form": "προσεῖχον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "⸀δὲ οἱ ὄχλοι τοῖς λεγομένοις ὑπὸ"
+    },
+    {
+      "ref": "Acts 8:10",
+      "form": "προσεῖχον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 10,
+      "left_context": "ᾧ",
+      "right_context": "⸀πάντες ἀπὸ μικροῦ ἕως μεγάλου λέγοντες·"
+    },
+    {
+      "ref": "Acts 8:11",
+      "form": "προσεῖχον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 11,
+      "left_context": "",
+      "right_context": "δὲ αὐτῷ διὰ τὸ ἱκανῷ χρόνῳ"
+    },
+    {
+      "ref": "Acts 16:14",
+      "form": "προσέχειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 14,
+      "left_context": "ἧς ὁ κύριος διήνοιξεν τὴν καρδίαν",
+      "right_context": "τοῖς λαλουμένοις ὑπὸ ⸀τοῦ Παύλου."
+    },
+    {
+      "ref": "Acts 20:28",
+      "form": "⸀προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 28,
+      "left_context": "",
+      "right_context": "ἑαυτοῖς καὶ παντὶ τῷ ποιμνίῳ, ἐν"
+    },
+    {
+      "ref": "Luke 12:1",
+      "form": "Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "λέγειν πρὸς τοὺς μαθητὰς αὐτοῦ πρῶτον·",
+      "right_context": "ἑαυτοῖς ἀπὸ τῆς ζύμης, ⸂ἥτις ἐστὶν"
+    },
+    {
+      "ref": "Luke 17:3",
+      "form": "προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "ἑαυτοῖς. ἐὰν ⸀ἁμάρτῃ ὁ ἀδελφός σου"
+    },
+    {
+      "ref": "Luke 20:46",
+      "form": "Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 46,
+      "left_context": "",
+      "right_context": "ἀπὸ τῶν γραμματέων τῶν θελόντων περιπατεῖν"
+    },
+    {
+      "ref": "Luke 21:34",
+      "form": "Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 34,
+      "left_context": "",
+      "right_context": "δὲ ἑαυτοῖς μήποτε βαρηθῶσιν ⸂ὑμῶν αἱ"
+    },
+    {
+      "ref": "Matthew 6:1",
+      "form": "Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "",
+      "right_context": "⸀δὲ τὴν ⸀δικαιοσύνην ὑμῶν μὴ ποιεῖν"
+    },
+    {
+      "ref": "Matthew 7:15",
+      "form": "⸀Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "",
+      "right_context": "ἀπὸ τῶν ψευδοπροφητῶν, οἵτινες ἔρχονται πρὸς"
+    },
+    {
+      "ref": "Matthew 10:17",
+      "form": "προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 17,
+      "left_context": "",
+      "right_context": "δὲ ἀπὸ τῶν ἀνθρώπων· παραδώσουσιν γὰρ"
+    },
+    {
+      "ref": "Matthew 16:6",
+      "form": "προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 6,
+      "left_context": "δὲ Ἰησοῦς εἶπεν αὐτοῖς· Ὁρᾶτε καὶ",
+      "right_context": "ἀπὸ τῆς ζύμης τῶν Φαρισαίων καὶ"
+    },
+    {
+      "ref": "Matthew 16:11",
+      "form": "⸂προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 11,
+      "left_context": "ὅτι οὐ περὶ ⸀ἄρτων εἶπον ὑμῖν;",
+      "right_context": "δὲ⸃ ἀπὸ τῆς ζύμης τῶν Φαρισαίων"
+    },
+    {
+      "ref": "Matthew 16:12",
+      "form": "προσέχειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 12,
+      "left_context": "τότε συνῆκαν ὅτι οὐκ εἶπεν",
+      "right_context": "ἀπὸ τῆς ζύμης ⸂τῶν ἄρτων⸃ ἀλλὰ"
+    },
+    {
+      "ref": "Titus 1:14",
+      "form": "προσέχοντες",
+      "morph": "V-P-A-P",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "μὴ",
+      "right_context": "Ἰουδαϊκοῖς μύθοις καὶ ἐντολαῖς ἀνθρώπων ἀποστρεφομένων"
+    }
+  ],
+  "books": {
+    "Acts": 6,
+    "Matthew": 6,
+    "1 Timothy": 4,
+    "Luke": 4,
+    "Hebrews": 2,
+    "2 Peter": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ζύμη",
+      "display": "de·levadura",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μῦθος",
+      "display": "mitos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vengo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "de·panes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γενεαλογία",
+      "display": "genealogías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέραντος",
+      "display": "interminables",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίλογος",
+      "display": "de·doble·lengua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχροκερδής",
+      "display": "codiciosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίσταμαι",
+      "display": "apartarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλάνος",
+      "display": "engañadores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδασκαλία",
+      "display": "doctrinas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "de·demonios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγνωσις",
+      "display": "lectura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφητικός",
+      "display": "profético",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 4:13",
+      "form": "πρόσεχε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ἕως ἔρχομαι πρόσεχε τῇ ἀναγνώσει, τῇ παρακλήσει, τῇ διδασκαλίᾳ."
+    },
+    {
+      "ref": "Acts 5:35",
+      "form": "προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "εἶπέν τε πρὸς αὐτούς· Ἄνδρες Ἰσραηλῖται, προσέχετε ἑαυτοῖς ἐπὶ τοῖς ἀνθρώποις τούτοις τί μέλλετε πράσσειν."
+    },
+    {
+      "ref": "Acts 20:28",
+      "form": "⸀προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "⸀προσέχετε ἑαυτοῖς καὶ παντὶ τῷ ποιμνίῳ, ἐν ᾧ ὑμᾶς"
+    },
+    {
+      "ref": "Luke 12:1",
+      "form": "Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "ἀλλήλους, ἤρξατο λέγειν πρὸς τοὺς μαθητὰς αὐτοῦ πρῶτον· Προσέχετε ἑαυτοῖς ἀπὸ τῆς ζύμης, ⸂ἥτις ἐστὶν ὑπόκρισις, τῶν"
+    },
+    {
+      "ref": "Luke 17:3",
+      "form": "προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "προσέχετε ἑαυτοῖς. ἐὰν ⸀ἁμάρτῃ ὁ ἀδελφός σου ἐπιτίμησον αὐτῷ,"
+    },
+    {
+      "ref": "Luke 20:46",
+      "form": "Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Προσέχετε ἀπὸ τῶν γραμματέων τῶν θελόντων περιπατεῖν ἐν στολαῖς"
+    },
+    {
+      "ref": "Luke 21:34",
+      "form": "Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Προσέχετε δὲ ἑαυτοῖς μήποτε βαρηθῶσιν ⸂ὑμῶν αἱ καρδίαι⸃ ἐν"
+    },
+    {
+      "ref": "Matthew 6:1",
+      "form": "Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Προσέχετε ⸀δὲ τὴν ⸀δικαιοσύνην ὑμῶν μὴ ποιεῖν ἔμπροσθεν τῶν"
+    },
+    {
+      "ref": "Matthew 7:15",
+      "form": "⸀Προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "⸀Προσέχετε ἀπὸ τῶν ψευδοπροφητῶν, οἵτινες ἔρχονται πρὸς ὑμᾶς ἐν"
+    },
+    {
+      "ref": "Matthew 10:17",
+      "form": "προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "προσέχετε δὲ ἀπὸ τῶν ἀνθρώπων· παραδώσουσιν γὰρ ὑμᾶς εἰς"
+    },
+    {
+      "ref": "Matthew 16:6",
+      "form": "προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς· Ὁρᾶτε καὶ προσέχετε ἀπὸ τῆς ζύμης τῶν Φαρισαίων καὶ Σαδδουκαίων."
+    },
+    {
+      "ref": "Matthew 16:11",
+      "form": "⸂προσέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "οὐ νοεῖτε ὅτι οὐ περὶ ⸀ἄρτων εἶπον ὑμῖν; ⸂προσέχετε δὲ⸃ ἀπὸ τῆς ζύμης τῶν Φαρισαίων καὶ Σαδδουκαίων."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 1:4",
+      "negator": "μηδὲ",
+      "clause_text": "μηδὲ προσέχειν μύθοις καὶ γενεαλογίαις ἀπεράντοις, αἵτινες ⸀ἐκζητήσεις παρέχουσι μᾶλλον"
+    },
+    {
+      "ref": "1 Timothy 3:8",
+      "negator": "μὴ",
+      "clause_text": "Διακόνους ὡσαύτως σεμνούς, μὴ διλόγους, μὴ οἴνῳ πολλῷ προσέχοντας, μὴ αἰσχροκερδεῖς,"
+    },
+    {
+      "ref": "Matthew 16:12",
+      "negator": "οὐκ",
+      "clause_text": "τότε συνῆκαν ὅτι οὐκ εἶπεν προσέχειν ἀπὸ τῆς ζύμης ⸂τῶν ἄρτων⸃ ἀλλὰ ἀπὸ τῆς"
+    },
+    {
+      "ref": "Titus 1:14",
+      "negator": "μὴ",
+      "clause_text": "μὴ προσέχοντες Ἰουδαϊκοῖς μύθοις καὶ ἐντολαῖς ἀνθρώπων ἀποστρεφομένων τὴν ἀλήθειαν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 5:35",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 10:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 16:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 16:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 6:1",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 7:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 4:13",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

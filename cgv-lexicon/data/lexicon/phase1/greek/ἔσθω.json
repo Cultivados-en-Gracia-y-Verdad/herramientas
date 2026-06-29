@@ -1,0 +1,80 @@
+{
+  "lemma": "ἔσθω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἔσθων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 1:6",
+      "form": "ἔσθων",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "δερματίνην περὶ τὴν ὀσφὺν αὐτοῦ, καὶ",
+      "right_context": "ἀκρίδας καὶ μέλι ἄγριον."
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀσφύς",
+      "display": "lomo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκρίς",
+      "display": "langostas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλι",
+      "display": "miel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγριος",
+      "display": "silvestre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 1:6",
+      "reason": "occurs near μέλι, ἀκρίς, ἄγριος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

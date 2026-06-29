@@ -1,0 +1,80 @@
+{
+  "lemma": "συναγωνίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συναγωνίσασθαί",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 15:30",
+      "form": "συναγωνίσασθαί",
+      "morph": "V-A-M-N",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 30,
+      "left_context": "καὶ διὰ τῆς ἀγάπης τοῦ πνεύματος",
+      "right_context": "μοι ἐν ταῖς προσευχαῖς ὑπὲρ ἐμοῦ"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγάπη",
+      "display": "de·amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσευχή",
+      "display": "oraciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 15:30",
+      "reason": "occurs near πνεῦμα, προσευχή, ἀγάπη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

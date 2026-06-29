@@ -1,0 +1,262 @@
+{
+  "lemma": "θεμελιόω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "⸀θεμελιώσει.",
+      "count": 1
+    },
+    {
+      "form": "τεθεμελιωμένοι",
+      "count": 1
+    },
+    {
+      "form": "τεθεμελιωμένοι,",
+      "count": 1
+    },
+    {
+      "form": "ἐθεμελίωσας,",
+      "count": 1
+    },
+    {
+      "form": "τεθεμελίωτο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "future": 1,
+      "perfect": 2,
+      "aorist": 1,
+      "pluperfect": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 5:10",
+      "form": "⸀θεμελιώσει.",
+      "morph": "V-F-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "ὀλίγον παθόντας αὐτὸς ⸀καταρτίσει, στηρίξει, σθενώσει,",
+      "right_context": ""
+    },
+    {
+      "ref": "Colossians 1:23",
+      "form": "τεθεμελιωμένοι",
+      "morph": "V-X-P-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "εἴ γε ἐπιμένετε τῇ πίστει",
+      "right_context": "καὶ ἑδραῖοι καὶ μὴ μετακινούμενοι ἀπὸ"
+    },
+    {
+      "ref": "Ephesians 3:17",
+      "form": "τεθεμελιωμένοι,",
+      "morph": "V-X-P-P",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "καρδίαις ὑμῶν ἐν ἀγάπῃ· ἐρριζωμένοι καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 1:10",
+      "form": "ἐθεμελίωσας,",
+      "morph": "V-A-A-I-2S",
+      "book": "Hebrews",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "Σὺ κατ’ ἀρχάς, κύριε, τὴν γῆν",
+      "right_context": "καὶ ἔργα τῶν χειρῶν σού εἰσιν"
+    },
+    {
+      "ref": "Matthew 7:25",
+      "form": "τεθεμελίωτο",
+      "morph": "V-Y-P-I-3S",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 25,
+      "left_context": "τῇ οἰκίᾳ ἐκείνῃ, καὶ οὐκ ἔπεσεν,",
+      "right_context": "γὰρ ἐπὶ τὴν πέτραν."
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Colossians": 1,
+    "Ephesians": 1,
+    "Hebrews": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάσχω",
+      "display": "padecidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταρτίζω",
+      "display": "reparará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στηρίζω",
+      "display": "fortalecerá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σθενόω",
+      "display": "fortalecerá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γέ",
+      "display": "GE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιμένω",
+      "display": "perseveráis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑδραῖος",
+      "display": "firmes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετακινέω",
+      "display": "movidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥιζόομαι",
+      "display": "arraigarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχή",
+      "display": "principios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "de·manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "cayó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέτρα",
+      "display": "roca",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 1:23",
+      "negator": "μὴ",
+      "clause_text": "εἴ γε ἐπιμένετε τῇ πίστει τεθεμελιωμένοι καὶ ἑδραῖοι καὶ μὴ μετακινούμενοι ἀπὸ τῆς ἐλπίδος"
+    },
+    {
+      "ref": "Matthew 7:25",
+      "negator": "οὐκ",
+      "clause_text": "καὶ προσέπεσαν τῇ οἰκίᾳ ἐκείνῃ, καὶ οὐκ ἔπεσεν, τεθεμελίωτο γὰρ ἐπὶ τὴν πέτραν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 5:10",
+      "reason": "occurs near καταρτίζω, πάσχω, σθενόω"
+    },
+    {
+      "ref": "Colossians 1:23",
+      "reason": "occurs near γέ"
+    },
+    {
+      "ref": "Ephesians 3:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 1:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 7:25",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

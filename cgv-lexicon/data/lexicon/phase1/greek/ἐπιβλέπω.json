@@ -1,0 +1,137 @@
+{
+  "lemma": "ἐπιβλέπω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπέβλεψεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιβλέψαι",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐπιβλέψητε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:48",
+      "form": "ἐπέβλεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 48,
+      "left_context": "ὅτι",
+      "right_context": "ἐπὶ τὴν ταπείνωσιν τῆς δούλης αὐτοῦ,"
+    },
+    {
+      "ref": "Luke 9:38",
+      "form": "ἐπιβλέψαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 38,
+      "left_context": "ὄχλου ⸀ἐβόησεν λέγων· Διδάσκαλε, δέομαί σου",
+      "right_context": "ἐπὶ τὸν υἱόν μου, ὅτι μονογενής"
+    },
+    {
+      "ref": "James 2:3",
+      "form": "⸂ἐπιβλέψητε",
+      "morph": "V-A-A-S-2P",
+      "book": "James",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "δὲ⸃ ἐπὶ τὸν φοροῦντα τὴν ἐσθῆτα"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ταπείνωσις",
+      "display": "humillación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δούλη",
+      "display": "de·sierva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοάω",
+      "display": "clamó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέομαι",
+      "display": "rogo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φορέω",
+      "display": "llevando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:48",
+      "reason": "occurs near δούλη, ταπείνωσις"
+    },
+    {
+      "ref": "Luke 9:38",
+      "reason": "occurs near βοάω, δέομαι, διδάσκαλος"
+    },
+    {
+      "ref": "James 2:3",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

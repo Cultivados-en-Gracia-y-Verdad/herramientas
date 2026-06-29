@@ -1,0 +1,95 @@
+{
+  "lemma": "φραγελλόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "φραγελλώσας",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 15:15",
+      "form": "φραγελλώσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 15,
+      "left_context": "τὸν Βαραββᾶν, καὶ παρέδωκεν τὸν Ἰησοῦν",
+      "right_context": "ἵνα σταυρωθῇ."
+    },
+    {
+      "ref": "Matthew 27:26",
+      "form": "φραγελλώσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 26,
+      "left_context": "αὐτοῖς τὸν Βαραββᾶν, τὸν δὲ Ἰησοῦν",
+      "right_context": "παρέδωκεν ἵνα σταυρωθῇ."
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Βαραββᾶς",
+      "display": "Barrabás",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρόω",
+      "display": "crucifice",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 15:15",
+      "reason": "occurs near Βαραββᾶς, παραδίδωμι, σταυρόω"
+    },
+    {
+      "ref": "Matthew 27:26",
+      "reason": "occurs near Βαραββᾶς, παραδίδωμι, σταυρόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,201 @@
+{
+  "lemma": "ὁρμάω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ὥρμησεν",
+      "count": 3
+    },
+    {
+      "form": "ὥρμησαν",
+      "count": 1
+    },
+    {
+      "form": "ὥρμησάν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5
+    },
+    "tenses": {
+      "aorist": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:57",
+      "form": "ὥρμησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 57,
+      "left_context": "μεγάλῃ συνέσχον τὰ ὦτα αὐτῶν, καὶ",
+      "right_context": "ὁμοθυμαδὸν ἐπ’ αὐτόν,"
+    },
+    {
+      "ref": "Acts 19:29",
+      "form": "ὥρμησάν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 29,
+      "left_context": "καὶ ἐπλήσθη ἡ ⸀πόλις τῆς συγχύσεως,",
+      "right_context": "τε ὁμοθυμαδὸν εἰς τὸ θέατρον συναρπάσαντες"
+    },
+    {
+      "ref": "Luke 8:33",
+      "form": "ὥρμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 33,
+      "left_context": "ἀνθρώπου εἰσῆλθον εἰς τοὺς χοίρους, καὶ",
+      "right_context": "ἡ ἀγέλη κατὰ τοῦ κρημνοῦ εἰς"
+    },
+    {
+      "ref": "Mark 5:13",
+      "form": "ὥρμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "ἀκάθαρτα εἰσῆλθον εἰς τοὺς χοίρους, καὶ",
+      "right_context": "ἡ ἀγέλη κατὰ τοῦ κρημνοῦ εἰς"
+    },
+    {
+      "ref": "Matthew 8:32",
+      "form": "ὥρμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "ἀπῆλθον εἰς ⸂τοὺς χοίρους⸃· καὶ ἰδοὺ",
+      "right_context": "πᾶσα ἡ ⸀ἀγέλη κατὰ τοῦ κρημνοῦ"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χοῖρος",
+      "display": "cerdos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγέλη",
+      "display": "manada",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμοθυμαδόν",
+      "display": "unánimes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entraron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρημνός",
+      "display": "de·precipicio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνέχω",
+      "display": "oprimieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὖς",
+      "display": "oídos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίμπλημι",
+      "display": "fue llenado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύγχυσις",
+      "display": "de·confusión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέατρον",
+      "display": "teatro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:29",
+      "reason": "occurs near ὁμοθυμαδόν"
+    },
+    {
+      "ref": "Acts 7:57",
+      "reason": "occurs near ὁμοθυμαδόν"
+    },
+    {
+      "ref": "Luke 8:33",
+      "reason": "occurs near εἰσέρχομαι, κρημνός, χοῖρος"
+    },
+    {
+      "ref": "Mark 5:13",
+      "reason": "occurs near εἰσέρχομαι, κρημνός, χοῖρος"
+    },
+    {
+      "ref": "Matthew 8:32",
+      "reason": "occurs near χοῖρος, ἀγέλη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

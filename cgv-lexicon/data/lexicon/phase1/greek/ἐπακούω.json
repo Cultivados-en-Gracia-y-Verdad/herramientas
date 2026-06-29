@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐπακούω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπήκουσά",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 6:2",
+      "form": "ἐπήκουσά",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "λέγει γάρ· Καιρῷ δεκτῷ",
+      "right_context": "σου καὶ ἐν ἡμέρᾳ σωτηρίας ἐβοήθησά"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεκτός",
+      "display": "aceptable",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "de·salvación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 6:2",
+      "reason": "occurs near δεκτός, καιρός, σωτηρία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

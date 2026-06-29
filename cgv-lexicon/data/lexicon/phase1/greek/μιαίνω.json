@@ -1,0 +1,232 @@
+{
+  "lemma": "μιαίνω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "μιανθῶσιν",
+      "count": 2
+    },
+    {
+      "form": "μιαίνουσιν,",
+      "count": 1
+    },
+    {
+      "form": "μεμιαμμένοις",
+      "count": 1
+    },
+    {
+      "form": "μεμίανται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1,
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 4,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:15",
+      "form": "μιανθῶσιν",
+      "morph": "V-A-P-S-3P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "ἄνω φύουσα ἐνοχλῇ καὶ ⸂δι’ αὐτῆς⸃",
+      "right_context": "⸀πολλοί,"
+    },
+    {
+      "ref": "John 18:28",
+      "form": "μιανθῶσιν",
+      "morph": "V-A-P-S-3P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 28,
+      "left_context": "εἰσῆλθον εἰς τὸ πραιτώριον, ἵνα μὴ",
+      "right_context": "⸀ἀλλὰ φάγωσιν τὸ πάσχα."
+    },
+    {
+      "ref": "Jude 1:8",
+      "form": "μιαίνουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "μέντοι καὶ οὗτοι ἐνυπνιαζόμενοι σάρκα μὲν",
+      "right_context": "κυριότητα δὲ ἀθετοῦσιν, δόξας δὲ βλασφημοῦσιν."
+    },
+    {
+      "ref": "Titus 1:15",
+      "form": "μεμιαμμένοις",
+      "morph": "V-X-P-P",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "⸀πάντα καθαρὰ τοῖς καθαροῖς· τοῖς δὲ",
+      "right_context": "καὶ ἀπίστοις οὐδὲν καθαρόν, ἀλλὰ μεμίανται"
+    },
+    {
+      "ref": "Titus 1:15",
+      "form": "μεμίανται",
+      "morph": "V-X-P-I-3S",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "μεμιαμμένοις καὶ ἀπίστοις οὐδὲν καθαρόν, ἀλλὰ",
+      "right_context": "αὐτῶν καὶ ὁ νοῦς καὶ ἡ"
+    }
+  ],
+  "books": {
+    "Titus": 2,
+    "Hebrews": 1,
+    "John": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καθαρός",
+      "display": "limpios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄπιστος",
+      "display": "incrédulos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φύω",
+      "display": "creciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνοχλέω",
+      "display": "molestara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πραιτώριον",
+      "display": "pretorio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "coman",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχα",
+      "display": "pascua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνυπνιάζομαι",
+      "display": "soñando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κυριότης",
+      "display": "señorío",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀθετέω",
+      "display": "invalidan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "glorias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 18:28",
+      "form": "μιανθῶσιν",
+      "morph": "V-A-P-S-3P",
+      "clause_text": "αὐτοὶ οὐκ εἰσῆλθον εἰς τὸ πραιτώριον, ἵνα μὴ μιανθῶσιν ⸀ἀλλὰ φάγωσιν τὸ πάσχα.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 18:28",
+      "negator": "μὴ",
+      "clause_text": "αὐτοὶ οὐκ εἰσῆλθον εἰς τὸ πραιτώριον, ἵνα μὴ μιανθῶσιν ⸀ἀλλὰ φάγωσιν τὸ πάσχα."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Titus 1:15",
+      "reason": "occurs near καθαρός, ἄπιστος"
+    },
+    {
+      "ref": "Hebrews 12:15",
+      "reason": "occurs near πολύς, φύω, ἐνοχλέω"
+    },
+    {
+      "ref": "John 18:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Jude 1:8",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

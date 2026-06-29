@@ -1,0 +1,234 @@
+{
+  "lemma": "διεγείρω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "διεγείρειν",
+      "count": 1
+    },
+    {
+      "form": "διεγείρω",
+      "count": 1
+    },
+    {
+      "form": "⸀διεγείρετο.",
+      "count": 1
+    },
+    {
+      "form": "διήγειραν",
+      "count": 1
+    },
+    {
+      "form": "⸀διεγερθεὶς",
+      "count": 1
+    },
+    {
+      "form": "διεγερθεὶς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2,
+      "imperfect": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:13",
+      "form": "διεγείρειν",
+      "morph": "V-P-A-N",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ὅσον εἰμὶ ἐν τούτῳ τῷ σκηνώματι,",
+      "right_context": "ὑμᾶς ἐν ὑπομνήσει,"
+    },
+    {
+      "ref": "2 Peter 3:1",
+      "form": "διεγείρω",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "δευτέραν ὑμῖν γράφω ἐπιστολήν, ἐν αἷς",
+      "right_context": "ὑμῶν ἐν ὑπομνήσει τὴν εἰλικρινῆ διάνοιαν,"
+    },
+    {
+      "ref": "John 6:18",
+      "form": "⸀διεγείρετο.",
+      "morph": "V-I-P-I-3S",
+      "book": "John",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "ἥ τε θάλασσα ἀνέμου μεγάλου πνέοντος",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 8:24",
+      "form": "διήγειραν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 24,
+      "left_context": "προσελθόντες δὲ",
+      "right_context": "αὐτὸν λέγοντες· Ἐπιστάτα ἐπιστάτα, ἀπολλύμεθα· ὁ"
+    },
+    {
+      "ref": "Luke 8:24",
+      "form": "⸀διεγερθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 24,
+      "left_context": "λέγοντες· Ἐπιστάτα ἐπιστάτα, ἀπολλύμεθα· ὁ δὲ",
+      "right_context": "ἐπετίμησεν τῷ ἀνέμῳ καὶ τῷ κλύδωνι"
+    },
+    {
+      "ref": "Mark 4:39",
+      "form": "διεγερθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 39,
+      "left_context": "καὶ",
+      "right_context": "ἐπετίμησεν τῷ ἀνέμῳ καὶ εἶπεν τῇ"
+    }
+  ],
+  "books": {
+    "2 Peter": 2,
+    "Luke": 2,
+    "John": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιστάτης",
+      "display": "maestro",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·viento",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπόμνησις",
+      "display": "recordatorio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruemos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτιμάω",
+      "display": "reprendió",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σκήνωμα",
+      "display": "tabernáculo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escribo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστολή",
+      "display": "carta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰλικρινής",
+      "display": "sincera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "de·grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνέω",
+      "display": "soplando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:13",
+      "reason": "occurs near ὑπόμνησις"
+    },
+    {
+      "ref": "2 Peter 3:1",
+      "reason": "occurs near ὑπόμνησις"
+    },
+    {
+      "ref": "Luke 8:24",
+      "reason": "occurs near ἀπόλλυμι, ἐπιστάτης"
+    },
+    {
+      "ref": "John 6:18",
+      "reason": "occurs near ἄνεμος"
+    },
+    {
+      "ref": "Mark 4:39",
+      "reason": "occurs near ἄνεμος, ἐπιτιμάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

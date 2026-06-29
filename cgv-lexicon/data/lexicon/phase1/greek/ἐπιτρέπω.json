@@ -1,0 +1,492 @@
+{
+  "lemma": "ἐπιτρέπω",
+  "language": "greek",
+  "total_occurrences": 18,
+  "forms": [
+    {
+      "form": "ἐπέτρεψεν",
+      "count": 5
+    },
+    {
+      "form": "ἐπίτρεψόν",
+      "count": 4
+    },
+    {
+      "form": "⸀ἐπιτρέπεται",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπιτρέψῃ.",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτρέπω,",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτρέπῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτρέψαντος",
+      "count": 1
+    },
+    {
+      "form": "Ἐπιτρέπεταί",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐπετράπη",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτρέψῃ",
+      "count": 1
+    },
+    {
+      "form": "⸂Ἐπέτρεψεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 10,
+      "subjunctive": 3,
+      "imperative": 4,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 4,
+      "aorist": 14
+    },
+    "voices": {
+      "passive": 3,
+      "active": 15
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 14:34",
+      "form": "⸀ἐπιτρέπεται",
+      "morph": "V-P-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 34,
+      "left_context": "ἐν ταῖς ἐκκλησίαις σιγάτωσαν, οὐ γὰρ",
+      "right_context": "αὐταῖς λαλεῖν· ἀλλὰ ⸀ὑποτασσέσθωσαν, καθὼς καὶ"
+    },
+    {
+      "ref": "1 Corinthians 16:7",
+      "form": "⸀ἐπιτρέψῃ.",
+      "morph": "V-A-A-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 7,
+      "left_context": "ἐπιμεῖναι πρὸς ὑμᾶς, ἐὰν ὁ κύριος",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Timothy 2:12",
+      "form": "ἐπιτρέπω,",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "⸂διδάσκειν δὲ γυναικὶ⸃ οὐκ",
+      "right_context": "οὐδὲ αὐθεντεῖν ἀνδρός, ἀλλ’ εἶναι ἐν"
+    },
+    {
+      "ref": "Hebrews 6:3",
+      "form": "ἐπιτρέπῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 3,
+      "left_context": "καὶ τοῦτο ⸀ποιήσομεν ἐάνπερ",
+      "right_context": "ὁ θεός."
+    },
+    {
+      "ref": "Acts 21:39",
+      "form": "ἐπίτρεψόν",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 39,
+      "left_context": "ἀσήμου πόλεως πολίτης· δέομαι δέ σου,",
+      "right_context": "μοι λαλῆσαι πρὸς τὸν λαόν."
+    },
+    {
+      "ref": "Acts 21:40",
+      "form": "ἐπιτρέψαντος",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 40,
+      "left_context": "",
+      "right_context": "δὲ αὐτοῦ ὁ Παῦλος ἑστὼς ἐπὶ"
+    },
+    {
+      "ref": "Acts 26:1",
+      "form": "Ἐπιτρέπεταί",
+      "morph": "V-P-P-I-3S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 1,
+      "left_context": "Ἀγρίππας δὲ πρὸς τὸν Παῦλον ἔφη·",
+      "right_context": "σοι ⸀ὑπὲρ σεαυτοῦ λέγειν. τότε ὁ"
+    },
+    {
+      "ref": "Acts 27:3",
+      "form": "ἐπέτρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 3,
+      "left_context": "τε ὁ Ἰούλιος τῷ Παύλῳ χρησάμενος",
+      "right_context": "πρὸς τοὺς φίλους ⸀πορευθέντι ἐπιμελείας τυχεῖν."
+    },
+    {
+      "ref": "Acts 28:16",
+      "form": "⸂ἐπετράπη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 16,
+      "left_context": "Ὅτε δὲ ⸀εἰσήλθομεν εἰς Ῥώμην,",
+      "right_context": "τῷ Παύλῳ⸃ μένειν καθ’ ἑαυτὸν σὺν"
+    },
+    {
+      "ref": "John 19:38",
+      "form": "ἐπέτρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 19,
+      "verse": 38,
+      "left_context": "ἄρῃ τὸ σῶμα τοῦ Ἰησοῦ· καὶ",
+      "right_context": "ὁ Πιλᾶτος. ἦλθεν οὖν καὶ ἦρεν"
+    },
+    {
+      "ref": "Luke 8:32",
+      "form": "ἐπιτρέψῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "τῷ ὄρει· καὶ ⸀παρεκάλεσαν αὐτὸν ἵνα",
+      "right_context": "αὐτοῖς εἰς ἐκείνους εἰσελθεῖν· καὶ ἐπέτρεψεν"
+    },
+    {
+      "ref": "Luke 8:32",
+      "form": "ἐπέτρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "ἐπιτρέψῃ αὐτοῖς εἰς ἐκείνους εἰσελθεῖν· καὶ",
+      "right_context": "αὐτοῖς."
+    },
+    {
+      "ref": "Luke 9:59",
+      "form": "ἐπίτρεψόν",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 59,
+      "left_context": "Ἀκολούθει μοι. ὁ δὲ εἶπεν· ⸀Κύριε,",
+      "right_context": "μοι ⸂ἀπελθόντι πρῶτον⸃ θάψαι τὸν πατέρα"
+    },
+    {
+      "ref": "Luke 9:61",
+      "form": "ἐπίτρεψόν",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 61,
+      "left_context": "ἕτερος· Ἀκολουθήσω σοι, κύριε· πρῶτον δὲ",
+      "right_context": "μοι ἀποτάξασθαι τοῖς εἰς τὸν οἶκόν"
+    },
+    {
+      "ref": "Mark 5:13",
+      "form": "ἐπέτρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "καὶ",
+      "right_context": "⸀αὐτοῖς. καὶ ἐξελθόντα τὰ πνεύματα τὰ"
+    },
+    {
+      "ref": "Mark 10:4",
+      "form": "⸂Ἐπέτρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 4,
+      "left_context": "οἱ δὲ εἶπαν·",
+      "right_context": "Μωϋσῆς⸃ βιβλίον ἀποστασίου γράψαι καὶ ἀπολῦσαι."
+    },
+    {
+      "ref": "Matthew 8:21",
+      "form": "ἐπίτρεψόν",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 21,
+      "left_context": "δὲ τῶν ⸀μαθητῶν εἶπεν αὐτῷ· Κύριε,",
+      "right_context": "μοι πρῶτον ἀπελθεῖν καὶ θάψαι τὸν"
+    },
+    {
+      "ref": "Matthew 19:8",
+      "form": "ἐπέτρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 8,
+      "left_context": "ὅτι Μωϋσῆς πρὸς τὴν σκληροκαρδίαν ὑμῶν",
+      "right_context": "ὑμῖν ἀπολῦσαι τὰς γυναῖκας ὑμῶν, ἀπ’"
+    }
+  ],
+  "books": {
+    "Acts": 5,
+    "Luke": 4,
+    "1 Corinthians": 2,
+    "Mark": 2,
+    "Matthew": 2,
+    "1 Timothy": 1,
+    "Hebrews": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entramos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάπτω",
+      "display": "enterrar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σιγάω",
+      "display": "callan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποτάσσω",
+      "display": "someten",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐθεντέω",
+      "display": "ejercer·autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "de·varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐάνπερ",
+      "display": "si·en·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολίτης",
+      "display": "ciudadano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέομαι",
+      "display": "rogo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φημί",
+      "display": "decía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεαυτοῦ",
+      "display": "de·ti·mismo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 21:39",
+      "form": "ἐπίτρεψόν",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "Κιλικίας, οὐκ ἀσήμου πόλεως πολίτης· δέομαι δέ σου, ἐπίτρεψόν μοι λαλῆσαι πρὸς τὸν λαόν."
+    },
+    {
+      "ref": "Luke 9:59",
+      "form": "ἐπίτρεψόν",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "πρὸς ἕτερον· Ἀκολούθει μοι. ὁ δὲ εἶπεν· ⸀Κύριε, ἐπίτρεψόν μοι ⸂ἀπελθόντι πρῶτον⸃ θάψαι τὸν πατέρα μου."
+    },
+    {
+      "ref": "Luke 9:61",
+      "form": "ἐπίτρεψόν",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "δὲ καὶ ἕτερος· Ἀκολουθήσω σοι, κύριε· πρῶτον δὲ ἐπίτρεψόν μοι ἀποτάξασθαι τοῖς εἰς τὸν οἶκόν μου."
+    },
+    {
+      "ref": "Matthew 8:21",
+      "form": "ἐπίτρεψόν",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ἕτερος δὲ τῶν ⸀μαθητῶν εἶπεν αὐτῷ· Κύριε, ἐπίτρεψόν μοι πρῶτον ἀπελθεῖν καὶ θάψαι τὸν πατέρα μου."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 14:34",
+      "negator": "οὐ",
+      "clause_text": "Αἱ ⸀γυναῖκες ἐν ταῖς ἐκκλησίαις σιγάτωσαν, οὐ γὰρ ⸀ἐπιτρέπεται αὐταῖς λαλεῖν· ἀλλὰ ⸀ὑποτασσέσθωσαν, καθὼς καὶ ὁ νόμος"
+    },
+    {
+      "ref": "1 Timothy 2:12",
+      "negator": "οὐκ",
+      "clause_text": "⸂διδάσκειν δὲ γυναικὶ⸃ οὐκ ἐπιτρέπω, οὐδὲ αὐθεντεῖν ἀνδρός, ἀλλ’ εἶναι ἐν ἡσυχίᾳ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:39",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 9:59",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 9:61",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 8:21",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 21:40",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 26:1",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 27:3",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 28:16",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

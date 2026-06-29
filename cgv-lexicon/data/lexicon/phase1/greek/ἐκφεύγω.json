@@ -1,0 +1,357 @@
+{
+  "lemma": "ἐκφεύγω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "ἐκφυγεῖν",
+      "count": 2
+    },
+    {
+      "form": "ἐκφύγωσιν.",
+      "count": 1
+    },
+    {
+      "form": "ἐξέφυγον",
+      "count": 1
+    },
+    {
+      "form": "ἐκφευξόμεθα",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐξέφυγον",
+      "count": 1
+    },
+    {
+      "form": "ἐκπεφευγέναι",
+      "count": 1
+    },
+    {
+      "form": "ἐκφεύξῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 4,
+      "infinitive": 3
+    },
+    "tenses": {
+      "aorist": 5,
+      "future": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 6,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 5:3",
+      "form": "ἐκφύγωσιν.",
+      "morph": "V-A-A-S-3P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "ἐν γαστρὶ ἐχούσῃ, καὶ οὐ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 11:33",
+      "form": "ἐξέφυγον",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 33,
+      "left_context": "σαργάνῃ ἐχαλάσθην διὰ τοῦ τείχους καὶ",
+      "right_context": "τὰς χεῖρας αὐτοῦ."
+    },
+    {
+      "ref": "Hebrews 2:3",
+      "form": "ἐκφευξόμεθα",
+      "morph": "V-F-M-I-1P",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "πῶς ἡμεῖς",
+      "right_context": "τηλικαύτης ἀμελήσαντες σωτηρίας, ἥτις, ἀρχὴν λαβοῦσα"
+    },
+    {
+      "ref": "Hebrews 12:25",
+      "form": "⸀ἐξέφυγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 25,
+      "left_context": "τὸν λαλοῦντα· εἰ γὰρ ἐκεῖνοι οὐκ",
+      "right_context": "⸂ἐπὶ γῆς παραιτησάμενοι τὸν⸃ χρηματίζοντα, ⸀πολὺ"
+    },
+    {
+      "ref": "Acts 16:27",
+      "form": "ἐκπεφευγέναι",
+      "morph": "V-X-A-N",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 27,
+      "left_context": "⸀τὴν μάχαιραν ἤμελλεν ἑαυτὸν ἀναιρεῖν, νομίζων",
+      "right_context": "τοὺς δεσμίους."
+    },
+    {
+      "ref": "Acts 19:16",
+      "form": "ἐκφυγεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 16,
+      "left_context": "κατ’ αὐτῶν, ὥστε γυμνοὺς καὶ τετραυματισμένους",
+      "right_context": "ἐκ τοῦ οἴκου ἐκείνου."
+    },
+    {
+      "ref": "Luke 21:36",
+      "form": "ἐκφυγεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 36,
+      "left_context": "ἐν παντὶ καιρῷ δεόμενοι ἵνα ⸀κατισχύσητε",
+      "right_context": "⸀ταῦτα πάντα τὰ μέλλοντα γίνεσθαι, καὶ"
+    },
+    {
+      "ref": "Romans 2:3",
+      "form": "ἐκφεύξῃ",
+      "morph": "V-F-M-I-2S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "πράσσοντας καὶ ποιῶν αὐτά, ὅτι σὺ",
+      "right_context": "τὸ κρίμα τοῦ θεοῦ;"
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "Acts": 2,
+    "1 Thessalonians": 1,
+    "2 Corinthians": 1,
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γαστήρ",
+      "display": "vientre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαλάω",
+      "display": "fue bajado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεῖχος",
+      "display": "de·muro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηλικοῦτος",
+      "display": "tan·grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμελέω",
+      "display": "desatendidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "de·salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχή",
+      "display": "principio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραιτέομαι",
+      "display": "rechazados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρηματίζω",
+      "display": "advertiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχαιρα",
+      "display": "espada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναιρέω",
+      "display": "matar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νομίζω",
+      "display": "pensando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέσμιος",
+      "display": "prisioneros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυμνός",
+      "display": "desnudos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τραυματίζω",
+      "display": "heridos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "de·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Thessalonians 5:3",
+      "form": "ἐκφύγωσιν.",
+      "morph": "V-A-A-S-3P",
+      "clause_text": "ὠδὶν τῇ ἐν γαστρὶ ἐχούσῃ, καὶ οὐ μὴ ἐκφύγωσιν.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 5:3",
+      "negator": "οὐ",
+      "clause_text": "ὠδὶν τῇ ἐν γαστρὶ ἐχούσῃ, καὶ οὐ μὴ ἐκφύγωσιν."
+    },
+    {
+      "ref": "Hebrews 12:25",
+      "negator": "οὐκ",
+      "clause_text": "μὴ παραιτήσησθε τὸν λαλοῦντα· εἰ γὰρ ἐκεῖνοι οὐκ ⸀ἐξέφυγον ⸂ἐπὶ γῆς παραιτησάμενοι τὸν⸃ χρηματίζοντα, ⸀πολὺ μᾶλλον ἡμεῖς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:27",
+      "reason": "occurs near μέλλω"
+    },
+    {
+      "ref": "Acts 19:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 2:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Thessalonians 5:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 11:33",
+      "reason": "occurs near τεῖχος, χαλάω, χείρ"
+    },
+    {
+      "ref": "Luke 21:36",
+      "reason": "occurs near μέλλω"
+    },
+    {
+      "ref": "Romans 2:3",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

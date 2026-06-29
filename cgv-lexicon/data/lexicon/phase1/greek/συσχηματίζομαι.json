@@ -1,0 +1,131 @@
+{
+  "lemma": "συσχηματίζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συσχηματιζόμενοι",
+      "count": 1
+    },
+    {
+      "form": "⸀συσχηματίζεσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:14",
+      "form": "συσχηματιζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "ὡς τέκνα ὑπακοῆς, μὴ",
+      "right_context": "ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν"
+    },
+    {
+      "ref": "Romans 12:2",
+      "form": "⸀συσχηματίζεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "καὶ μὴ",
+      "right_context": "τῷ αἰῶνι τούτῳ, ἀλλὰ ⸀μεταμορφοῦσθε τῇ"
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπακοή",
+      "display": "de·obediencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρότερος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγνοια",
+      "display": "ignorancia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεταμορφόομαι",
+      "display": "transfigurarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Romans 12:2",
+      "form": "⸀συσχηματίζεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "καὶ μὴ ⸀συσχηματίζεσθε τῷ αἰῶνι τούτῳ, ἀλλὰ ⸀μεταμορφοῦσθε τῇ ἀνακαινώσει τοῦ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 1:14",
+      "negator": "μὴ",
+      "clause_text": "ὡς τέκνα ὑπακοῆς, μὴ συσχηματιζόμενοι ταῖς πρότερον ἐν τῇ ἀγνοίᾳ ὑμῶν ἐπιθυμίαις,"
+    },
+    {
+      "ref": "Romans 12:2",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ ⸀συσχηματίζεσθε τῷ αἰῶνι τούτῳ, ἀλλὰ ⸀μεταμορφοῦσθε τῇ ἀνακαινώσει τοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 12:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Peter 1:14",
+      "reason": "occurs near πρότερος, τέκνον, ἄγνοια"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

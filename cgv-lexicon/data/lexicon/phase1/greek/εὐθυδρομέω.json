@@ -1,0 +1,117 @@
+{
+  "lemma": "εὐθυδρομέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "εὐθυδρομήσαμεν",
+      "count": 1
+    },
+    {
+      "form": "εὐθυδρομήσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:11",
+      "form": "εὐθυδρομήσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 11,
+      "left_context": "Ἀναχθέντες ⸀οὖν ⸀ἀπὸ Τρῳάδος",
+      "right_context": "εἰς Σαμοθρᾴκην, τῇ ⸀δὲ ἐπιούσῃ εἰς"
+    },
+    {
+      "ref": "Acts 21:1",
+      "form": "εὐθυδρομήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 1,
+      "left_context": "ἐγένετο ἀναχθῆναι ἡμᾶς ἀποσπασθέντας ἀπ’ αὐτῶν,",
+      "right_context": "ἤλθομεν εἰς τὴν ⸀Κῶ, τῇ δὲ"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνάγω",
+      "display": "subidos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Τρῳάς",
+      "display": "de·Troas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαμοθρᾴκη",
+      "display": "Samotracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔπειμι",
+      "display": "veniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποσπάω",
+      "display": "arrancados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κώς",
+      "display": "Cos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:11",
+      "reason": "occurs near Σαμοθρᾴκη, Τρῳάς, ἀνάγω"
+    },
+    {
+      "ref": "Acts 21:1",
+      "reason": "occurs near ἀνάγω, ἀποσπάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

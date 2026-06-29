@@ -1,0 +1,95 @@
+{
+  "lemma": "ῥιζόομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐρριζωμένοι",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:7",
+      "form": "ἐρριζωμένοι",
+      "morph": "V-X-P-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "",
+      "right_context": "καὶ ἐποικοδομούμενοι ἐν αὐτῷ καὶ ⸀βεβαιούμενοι"
+    },
+    {
+      "ref": "Ephesians 3:17",
+      "form": "ἐρριζωμένοι",
+      "morph": "V-X-P-P",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "ἐν ταῖς καρδίαις ὑμῶν ἐν ἀγάπῃ·",
+      "right_context": "καὶ τεθεμελιωμένοι,"
+    }
+  ],
+  "books": {
+    "Colossians": 1,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐποικοδομέω",
+      "display": "edificados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεμελιόω",
+      "display": "fundados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 2:7",
+      "reason": "occurs near ἐποικοδομέω"
+    },
+    {
+      "ref": "Ephesians 3:17",
+      "reason": "occurs near θεμελιόω, καρδία, ἀγάπη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

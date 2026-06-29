@@ -1,0 +1,100 @@
+{
+  "lemma": "κατακολουθέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀κατακολουθοῦσα",
+      "count": 1
+    },
+    {
+      "form": "κατακολουθήσασαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:17",
+      "form": "⸀κατακολουθοῦσα",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 17,
+      "left_context": "αὕτη",
+      "right_context": "τῷ Παύλῳ καὶ ἡμῖν ἔκραζεν λέγουσα·"
+    },
+    {
+      "ref": "Luke 23:55",
+      "form": "κατακολουθήσασαι",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 55,
+      "left_context": "",
+      "right_context": "δὲ ⸀αἱ γυναῖκες, αἵτινες ἦσαν συνεληλυθυῖαι"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράζω",
+      "display": "clamaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:17",
+      "reason": "occurs near Παῦλος, κράζω"
+    },
+    {
+      "ref": "Luke 23:55",
+      "reason": "occurs near γυνή, ὅστις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

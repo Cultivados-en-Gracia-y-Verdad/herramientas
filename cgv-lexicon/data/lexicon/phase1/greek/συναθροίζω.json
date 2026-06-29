@@ -1,0 +1,112 @@
+{
+  "lemma": "συναθροίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνηθροισμένοι",
+      "count": 1
+    },
+    {
+      "form": "συναθροίσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 12:12",
+      "form": "συνηθροισμένοι",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "τοῦ ἐπικαλουμένου Μάρκου, οὗ ἦσαν ἱκανοὶ",
+      "right_context": "καὶ προσευχόμενοι."
+    },
+    {
+      "ref": "Acts 19:25",
+      "form": "συναθροίσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 25,
+      "left_context": "οὓς",
+      "right_context": "καὶ τοὺς περὶ τὰ τοιαῦτα ἐργάτας"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπικαλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μᾶρκος",
+      "display": "de·Marcos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὗ",
+      "display": "del·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:12",
+      "reason": "occurs near Μᾶρκος, οὗ, προσεύχομαι"
+    },
+    {
+      "ref": "Acts 19:25",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

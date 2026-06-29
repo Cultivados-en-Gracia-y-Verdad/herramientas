@@ -1,0 +1,68 @@
+{
+  "lemma": "συνεπιτίθεμαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνεπέθεντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 24:9",
+      "form": "συνεπέθεντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 9,
+      "left_context": "",
+      "right_context": "δὲ καὶ οἱ Ἰουδαῖοι φάσκοντες ταῦτα"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φάσκω",
+      "display": "afirmando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 24:9",
+      "reason": "occurs near φάσκω, Ἰουδαῖος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

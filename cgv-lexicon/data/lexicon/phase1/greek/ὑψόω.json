@@ -1,0 +1,491 @@
+{
+  "lemma": "ὑψόω",
+  "language": "greek",
+  "total_occurrences": 20,
+  "forms": [
+    {
+      "form": "ὕψωσεν",
+      "count": 4
+    },
+    {
+      "form": "ὑψωθῆναι",
+      "count": 2
+    },
+    {
+      "form": "ὑψωθήσῃ⸃;",
+      "count": 2
+    },
+    {
+      "form": "ὑψῶν",
+      "count": 2
+    },
+    {
+      "form": "ὑψωθήσεται.",
+      "count": 2
+    },
+    {
+      "form": "ὑψώσει",
+      "count": 2
+    },
+    {
+      "form": "ὑψώσῃ",
+      "count": 1
+    },
+    {
+      "form": "ὑψωθῆτε,",
+      "count": 1
+    },
+    {
+      "form": "ὑψωθεὶς",
+      "count": 1
+    },
+    {
+      "form": "ὑψώσητε",
+      "count": 1
+    },
+    {
+      "form": "ὑψωθῶ",
+      "count": 1
+    },
+    {
+      "form": "⸀ὑψωθήσεται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 4,
+      "participle": 3,
+      "indicative": 11,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 11,
+      "future": 7,
+      "present": 2
+    },
+    "voices": {
+      "active": 10,
+      "passive": 10
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 5:6",
+      "form": "ὑψώσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "κραταιὰν χεῖρα τοῦ θεοῦ, ἵνα ὑμᾶς",
+      "right_context": "ἐν καιρῷ,"
+    },
+    {
+      "ref": "2 Corinthians 11:7",
+      "form": "ὑψωθῆτε,",
+      "morph": "V-A-P-S-2P",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "ἁμαρτίαν ἐποίησα ἐμαυτὸν ταπεινῶν ἵνα ὑμεῖς",
+      "right_context": "ὅτι δωρεὰν τὸ τοῦ θεοῦ εὐαγγέλιον"
+    },
+    {
+      "ref": "Acts 2:33",
+      "form": "ὑψωθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 33,
+      "left_context": "τῇ δεξιᾷ οὖν τοῦ θεοῦ",
+      "right_context": "τήν τε ἐπαγγελίαν τοῦ ⸂πνεύματος τοῦ"
+    },
+    {
+      "ref": "Acts 5:31",
+      "form": "ὕψωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 31,
+      "left_context": "τοῦτον ὁ θεὸς ἀρχηγὸν καὶ σωτῆρα",
+      "right_context": "τῇ δεξιᾷ αὐτοῦ, ⸀τοῦ δοῦναι μετάνοιαν"
+    },
+    {
+      "ref": "Acts 13:17",
+      "form": "ὕψωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 17,
+      "left_context": "τοὺς πατέρας ἡμῶν, καὶ τὸν λαὸν",
+      "right_context": "ἐν τῇ παροικίᾳ ἐν γῇ ⸀Αἰγύπτου,"
+    },
+    {
+      "ref": "John 3:14",
+      "form": "ὕψωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "καὶ καθὼς Μωϋσῆς",
+      "right_context": "τὸν ὄφιν ἐν τῇ ἐρήμῳ, οὕτως"
+    },
+    {
+      "ref": "John 3:14",
+      "form": "ὑψωθῆναι",
+      "morph": "V-A-P-N",
+      "book": "John",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "τὸν ὄφιν ἐν τῇ ἐρήμῳ, οὕτως",
+      "right_context": "δεῖ τὸν υἱὸν τοῦ ἀνθρώπου,"
+    },
+    {
+      "ref": "John 8:28",
+      "form": "ὑψώσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "John",
+      "chapter": 8,
+      "verse": 28,
+      "left_context": "εἶπεν ⸀οὖν ὁ Ἰησοῦς· Ὅταν",
+      "right_context": "τὸν υἱὸν τοῦ ἀνθρώπου, τότε γνώσεσθε"
+    },
+    {
+      "ref": "John 12:32",
+      "form": "ὑψωθῶ",
+      "morph": "V-A-P-S-1S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 32,
+      "left_context": "κἀγὼ ⸀ἐὰν",
+      "right_context": "ἐκ τῆς γῆς, πάντας ἑλκύσω πρὸς"
+    },
+    {
+      "ref": "John 12:34",
+      "form": "ὑψωθῆναι",
+      "morph": "V-A-P-N",
+      "book": "John",
+      "chapter": 12,
+      "verse": 34,
+      "left_context": "καὶ πῶς ⸂λέγεις σὺ⸃ ⸀ὅτι δεῖ",
+      "right_context": "τὸν υἱὸν τοῦ ἀνθρώπου; τίς ἐστιν"
+    },
+    {
+      "ref": "Luke 1:52",
+      "form": "ὕψωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 52,
+      "left_context": "καθεῖλεν δυνάστας ἀπὸ θρόνων καὶ",
+      "right_context": "ταπεινούς,"
+    },
+    {
+      "ref": "Luke 10:15",
+      "form": "ὑψωθήσῃ⸃;",
+      "morph": "V-F-P-I-2S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 15,
+      "left_context": "καὶ σύ, Καφαρναούμ, ⸂μὴ ἕως οὐρανοῦ",
+      "right_context": "ἕως ⸀τοῦ ᾅδου ⸀καταβιβασθήσῃ."
+    },
+    {
+      "ref": "Luke 14:11",
+      "form": "ὑψῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 11,
+      "left_context": "ὅτι πᾶς ὁ",
+      "right_context": "ἑαυτὸν ταπεινωθήσεται καὶ ὁ ταπεινῶν ἑαυτὸν"
+    },
+    {
+      "ref": "Luke 14:11",
+      "form": "ὑψωθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 11,
+      "left_context": "ἑαυτὸν ταπεινωθήσεται καὶ ὁ ταπεινῶν ἑαυτὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 18:14",
+      "form": "ὑψῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 14,
+      "left_context": "αὐτοῦ ⸂παρ’ ἐκεῖνον⸃· ὅτι πᾶς ὁ",
+      "right_context": "ἑαυτὸν ταπεινωθήσεται, ὁ δὲ ταπεινῶν ἑαυτὸν"
+    },
+    {
+      "ref": "Luke 18:14",
+      "form": "ὑψωθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 14,
+      "left_context": "ἑαυτὸν ταπεινωθήσεται, ὁ δὲ ταπεινῶν ἑαυτὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 11:23",
+      "form": "ὑψωθήσῃ⸃;",
+      "morph": "V-F-P-I-2S",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 23,
+      "left_context": "καὶ σύ, Καφαρναούμ, ⸂μὴ ἕως οὐρανοῦ",
+      "right_context": "ἕως ᾅδου ⸀καταβήσῃ· ὅτι εἰ ἐν"
+    },
+    {
+      "ref": "Matthew 23:12",
+      "form": "ὑψώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 12,
+      "left_context": "ὅστις δὲ",
+      "right_context": "ἑαυτὸν ταπεινωθήσεται, καὶ ὅστις ταπεινώσει ἑαυτὸν"
+    },
+    {
+      "ref": "Matthew 23:12",
+      "form": "⸀ὑψωθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 12,
+      "left_context": "ἑαυτὸν ταπεινωθήσεται, καὶ ὅστις ταπεινώσει ἑαυτὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "James 4:10",
+      "form": "ὑψώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "James",
+      "chapter": 4,
+      "verse": 10,
+      "left_context": "ταπεινώθητε ἐνώπιον ⸀κυρίου, καὶ",
+      "right_context": "ὑμᾶς."
+    }
+  ],
+  "books": {
+    "Luke": 6,
+    "John": 5,
+    "Acts": 3,
+    "Matthew": 3,
+    "1 Peter": 1,
+    "2 Corinthians": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ταπεινόω",
+      "display": "humillando",
+      "count": 14,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "derecha",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄφις",
+      "display": "serpiente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Καφαρναούμ",
+      "display": "Capernaúm",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ᾅδης",
+      "display": "de·hades",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμαυτοῦ",
+      "display": "me",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δωρεάν",
+      "display": "gratis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "promesa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχηγός",
+      "display": "autor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτήρ",
+      "display": "salvador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 10:15",
+      "negator": "⸂μὴ",
+      "clause_text": "καὶ σύ, Καφαρναούμ, ⸂μὴ ἕως οὐρανοῦ ὑψωθήσῃ⸃; ἕως ⸀τοῦ ᾅδου ⸀καταβιβασθήσῃ."
+    },
+    {
+      "ref": "Matthew 11:23",
+      "negator": "⸂μὴ",
+      "clause_text": "καὶ σύ, Καφαρναούμ, ⸂μὴ ἕως οὐρανοῦ ὑψωθήσῃ⸃; ἕως ᾅδου ⸀καταβήσῃ· ὅτι εἰ ἐν Σοδόμοις ⸀ἐγενήθησαν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:15",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 14:11",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 18:14",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 1:52",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "John 12:32",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 12:34",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 3:14",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 8:28",
+      "reason": "frequent in John"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

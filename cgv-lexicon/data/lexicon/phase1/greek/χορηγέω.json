@@ -1,0 +1,124 @@
+{
+  "lemma": "χορηγέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "χορηγεῖ",
+      "count": 1
+    },
+    {
+      "form": "⸀χορηγήσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 4:11",
+      "form": "χορηγεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "τις διακονεῖ, ὡς ἐξ ἰσχύος ⸀ἧς",
+      "right_context": "ὁ θεός· ἵνα ἐν πᾶσιν δοξάζηται"
+    },
+    {
+      "ref": "2 Corinthians 9:10",
+      "form": "⸀χορηγήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "τῷ σπείροντι καὶ ἄρτον εἰς βρῶσιν",
+      "right_context": "καὶ ⸀πληθυνεῖ τὸν σπόρον ὑμῶν καὶ"
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διακονέω",
+      "display": "serve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύς",
+      "display": "de·fuerza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπείρω",
+      "display": "sembrando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βρῶσις",
+      "display": "herrumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληθύνω",
+      "display": "multiplicará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπόρος",
+      "display": "semilla",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 4:11",
+      "reason": "occurs near διακονέω, θεός, ἰσχύς"
+    },
+    {
+      "ref": "2 Corinthians 9:10",
+      "reason": "occurs near σπείρω, ἄρτος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

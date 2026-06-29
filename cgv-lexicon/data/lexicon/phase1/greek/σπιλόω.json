@@ -1,0 +1,113 @@
+{
+  "lemma": "σπιλόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐσπιλωμένον",
+      "count": 1
+    },
+    {
+      "form": "σπιλοῦσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:23",
+      "form": "ἐσπιλωμένον",
+      "morph": "V-X-P-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "μισοῦντες καὶ τὸν ἀπὸ τῆς σαρκὸς",
+      "right_context": "χιτῶνα."
+    },
+    {
+      "ref": "James 3:6",
+      "form": "σπιλοῦσα",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "καθίσταται ἐν τοῖς μέλεσιν ἡμῶν, ἡ",
+      "right_context": "ὅλον τὸ σῶμα καὶ φλογίζουσα τὸν"
+    }
+  ],
+  "books": {
+    "Jude": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιτών",
+      "display": "túnica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλος",
+      "display": "miembros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φλογίζω",
+      "display": "encendiendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:6",
+      "reason": "occurs near μέλος, σῶμα, ὅλος"
+    },
+    {
+      "ref": "Jude 1:23",
+      "reason": "occurs near σάρξ, χιτών"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀσεβέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἠσέβησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:15",
+      "form": "ἠσέβησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "πάντων τῶν ἔργων ἀσεβείας αὐτῶν ὧν",
+      "right_context": "καὶ περὶ πάντων τῶν σκληρῶν ὧν"
+    }
+  ],
+  "books": {
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσέβεια",
+      "display": "de·impiedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκληρός",
+      "display": "de·duros",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Jude 1:15",
+      "reason": "occurs near σκληρός, ἀσέβεια, ἔργον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

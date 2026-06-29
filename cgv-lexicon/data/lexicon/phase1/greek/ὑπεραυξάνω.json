@@ -1,0 +1,80 @@
+{
+  "lemma": "ὑπεραυξάνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑπεραυξάνει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 1:3",
+      "form": "ὑπεραυξάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Thessalonians",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "ὑμῶν, ἀδελφοί, καθὼς ἄξιόν ἐστιν, ὅτι",
+      "right_context": "ἡ πίστις ὑμῶν καὶ πλεονάζει ἡ"
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄξιος",
+      "display": "digno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονάζω",
+      "display": "abunda",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Thessalonians 1:3",
+      "reason": "occurs near πίστις, πλεονάζω, ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

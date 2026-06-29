@@ -1,0 +1,258 @@
+{
+  "lemma": "ἀποστερέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἀποστερεῖσθε;",
+      "count": 1
+    },
+    {
+      "form": "ἀποστερεῖτε,",
+      "count": 1
+    },
+    {
+      "form": "ἀποστερεῖτε",
+      "count": 1
+    },
+    {
+      "form": "ἀπεστερημένων",
+      "count": 1
+    },
+    {
+      "form": "ἀποστερήσῃς,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "imperative": 1,
+      "participle": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 3,
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 6:7",
+      "form": "ἀποστερεῖσθε;",
+      "morph": "V-P-P-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "μᾶλλον ἀδικεῖσθε; διὰ τί οὐχὶ μᾶλλον",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 6:8",
+      "form": "ἀποστερεῖτε,",
+      "morph": "V-P-A-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "ἀλλὰ ὑμεῖς ἀδικεῖτε καὶ",
+      "right_context": "καὶ ⸀τοῦτο ἀδελφούς."
+    },
+    {
+      "ref": "1 Corinthians 7:5",
+      "form": "ἀποστερεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 5,
+      "left_context": "μὴ",
+      "right_context": "ἀλλήλους, εἰ μήτι ἂν ἐκ συμφώνου"
+    },
+    {
+      "ref": "1 Timothy 6:5",
+      "form": "ἀπεστερημένων",
+      "morph": "V-X-P-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "διαπαρατριβαὶ διεφθαρμένων ἀνθρώπων τὸν νοῦν καὶ",
+      "right_context": "τῆς ἀληθείας, νομιζόντων πορισμὸν εἶναι τὴν"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "ἀποστερήσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ",
+      "right_context": "Τίμα τὸν πατέρα σου καὶ τὴν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 3,
+    "1 Timothy": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδικέω",
+      "display": "hacer·injusticia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήτι",
+      "display": "¿acaso?",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαφθείρω",
+      "display": "corrompidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νομίζω",
+      "display": "pensando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορισμός",
+      "display": "ganancia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτω",
+      "display": "robes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδομαρτυρέω",
+      "display": "dar·falso·testimonio,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμάω",
+      "display": "honra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 7:5",
+      "form": "ἀποστερεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "μὴ ἀποστερεῖτε ἀλλήλους, εἰ μήτι ἂν ἐκ συμφώνου πρὸς καιρὸν",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "ἀποστερήσῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν μητέρα.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:5",
+      "negator": "μὴ",
+      "clause_text": "μὴ ἀποστερεῖτε ἀλλήλους, εἰ μήτι ἂν ἐκ συμφώνου πρὸς καιρὸν"
+    },
+    {
+      "ref": "Mark 10:19",
+      "negator": "Μὴ",
+      "clause_text": "⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν μητέρα."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 7:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 6:7",
+      "reason": "occurs near μᾶλλον, οὐχί, ἀδικέω"
+    },
+    {
+      "ref": "1 Corinthians 6:8",
+      "reason": "occurs near ἀδελφός, ἀδικέω"
+    },
+    {
+      "ref": "1 Timothy 6:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 10:19",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

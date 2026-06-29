@@ -1,0 +1,87 @@
+{
+  "lemma": "ῥώννυμαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἔρρωσθε.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:29",
+      "form": "ἔρρωσθε.",
+      "morph": "V-X-M-D-2P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 29,
+      "left_context": "ἐξ ὧν διατηροῦντες ἑαυτοὺς εὖ πράξετε.",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διατηρέω",
+      "display": "guardando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὖ",
+      "display": "bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πράσσω",
+      "display": "haréis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 15:29",
+      "form": "ἔρρωσθε.",
+      "morph": "V-X-M-D-2P",
+      "clause_text": "καὶ πορνείας· ἐξ ὧν διατηροῦντες ἑαυτοὺς εὖ πράξετε. ἔρρωσθε."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:29",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

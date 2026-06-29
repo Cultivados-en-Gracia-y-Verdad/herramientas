@@ -1,0 +1,317 @@
+{
+  "lemma": "συμβιβάζω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "συμβιβαζόμενον",
+      "count": 2
+    },
+    {
+      "form": "συμβιβάσει",
+      "count": 1
+    },
+    {
+      "form": "⸀συμβιβασθέντες",
+      "count": 1
+    },
+    {
+      "form": "συμβιβάζων",
+      "count": 1
+    },
+    {
+      "form": "συμβιβάζοντες",
+      "count": 1
+    },
+    {
+      "form": "⸀συνεβίβασαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 5
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 2,
+      "present": 4
+    },
+    "voices": {
+      "active": 4,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 2:16",
+      "form": "συμβιβάσει",
+      "morph": "V-F-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "τίς γὰρ ἔγνω νοῦν κυρίου, ὃς",
+      "right_context": "αὐτόν; ἡμεῖς δὲ νοῦν Χριστοῦ ἔχομεν."
+    },
+    {
+      "ref": "Colossians 2:2",
+      "form": "⸀συμβιβασθέντες",
+      "morph": "V-A-P-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "ἵνα παρακληθῶσιν αἱ καρδίαι αὐτῶν,",
+      "right_context": "ἐν ἀγάπῃ καὶ εἰς ⸂πᾶν πλοῦτος⸃"
+    },
+    {
+      "ref": "Colossians 2:19",
+      "form": "συμβιβαζόμενον",
+      "morph": "V-P-P-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "τῶν ἁφῶν καὶ συνδέσμων ἐπιχορηγούμενον καὶ",
+      "right_context": "αὔξει τὴν αὔξησιν τοῦ θεοῦ."
+    },
+    {
+      "ref": "Ephesians 4:16",
+      "form": "συμβιβαζόμενον",
+      "morph": "V-P-P-P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "οὗ πᾶν τὸ σῶμα συναρμολογούμενον καὶ",
+      "right_context": "διὰ πάσης ἁφῆς τῆς ἐπιχορηγίας κατ’"
+    },
+    {
+      "ref": "Acts 9:22",
+      "form": "συμβιβάζων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "⸀τοὺς Ἰουδαίους τοὺς κατοικοῦντας ἐν Δαμασκῷ,",
+      "right_context": "ὅτι οὗτός ἐστιν ὁ χριστός."
+    },
+    {
+      "ref": "Acts 16:10",
+      "form": "συμβιβάζοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 10,
+      "left_context": "εἶδεν, εὐθέως ἐζητήσαμεν ἐξελθεῖν ⸀εἰς Μακεδονίαν,",
+      "right_context": "ὅτι προσκέκληται ἡμᾶς ὁ ⸀θεὸς εὐαγγελίσασθαι"
+    },
+    {
+      "ref": "Acts 19:33",
+      "form": "⸀συνεβίβασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 33,
+      "left_context": "ἐκ δὲ τοῦ ὄχλου",
+      "right_context": "Ἀλέξανδρον προβαλόντων αὐτὸν τῶν Ἰουδαίων, ὁ"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Colossians": 2,
+    "1 Corinthians": 1,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁφή",
+      "display": "de·coyunturas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoció",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύνδεσμος",
+      "display": "de·lazos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιχορηγέω",
+      "display": "proveido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὔξω",
+      "display": "crece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὔξησις",
+      "display": "crecimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναρμολογέομαι",
+      "display": "ser·unido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιχορηγία",
+      "display": "de·provisión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατοικέω",
+      "display": "habitando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαμασκός",
+      "display": "Damasco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μακεδονία",
+      "display": "Macedonia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσκαλέομαι",
+      "display": "ha llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:10",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Acts 19:33",
+      "reason": "occurs near Ἰουδαῖος"
+    },
+    {
+      "ref": "Acts 9:22",
+      "reason": "occurs near Χριστός, Ἰουδαῖος"
+    },
+    {
+      "ref": "Colossians 2:19",
+      "reason": "occurs near θεός, ἁφή"
+    },
+    {
+      "ref": "Colossians 2:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 2:16",
+      "reason": "occurs near Χριστός, νοῦς"
+    },
+    {
+      "ref": "Ephesians 4:16",
+      "reason": "occurs near ἁφή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

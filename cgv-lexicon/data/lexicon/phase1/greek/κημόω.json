@@ -1,0 +1,92 @@
+{
+  "lemma": "κημόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀κημώσεις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:9",
+      "form": "⸀κημώσεις",
+      "morph": "V-F-A-I-2S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 9,
+      "left_context": "γὰρ τῷ Μωϋσέως νόμῳ γέγραπται· Οὐ",
+      "right_context": "βοῦν ἀλοῶντα. μὴ τῶν βοῶν μέλει"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βοῦς",
+      "display": "buey",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "de·Moisés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλοάω",
+      "display": "trillando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 9:9",
+      "negator": "Οὐ",
+      "clause_text": "ἐν γὰρ τῷ Μωϋσέως νόμῳ γέγραπται· Οὐ ⸀κημώσεις βοῦν ἀλοῶντα. μὴ τῶν βοῶν μέλει τῷ θεῷ,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:9",
+      "reason": "occurs near Μωϋσῆς, βοῦς, γράφω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,204 @@
+{
+  "lemma": "καταλαλέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "καταλαλοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "⸀καταλαλεῖσθε",
+      "count": 1
+    },
+    {
+      "form": "καταλαλεῖτε",
+      "count": 1
+    },
+    {
+      "form": "καταλαλῶν",
+      "count": 1
+    },
+    {
+      "form": "καταλαλεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "imperative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "active": 4,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:12",
+      "form": "καταλαλοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "ἔθνεσιν ἔχοντες καλήν⸃, ἵνα, ἐν ᾧ",
+      "right_context": "ὑμῶν ὡς κακοποιῶν, ἐκ τῶν καλῶν"
+    },
+    {
+      "ref": "1 Peter 3:16",
+      "form": "⸀καταλαλεῖσθε",
+      "morph": "V-P-P-I-2P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "συνείδησιν ἔχοντες ἀγαθήν, ἵνα ἐν ᾧ",
+      "right_context": "καταισχυνθῶσιν οἱ ἐπηρεάζοντες ὑμῶν τὴν ἀγαθὴν"
+    },
+    {
+      "ref": "James 4:11",
+      "form": "καταλαλεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "Μὴ",
+      "right_context": "ἀλλήλων, ἀδελφοί· ὁ καταλαλῶν ἀδελφοῦ ⸀ἢ"
+    },
+    {
+      "ref": "James 4:11",
+      "form": "καταλαλῶν",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "Μὴ καταλαλεῖτε ἀλλήλων, ἀδελφοί· ὁ",
+      "right_context": "ἀδελφοῦ ⸀ἢ κρίνων τὸν ἀδελφὸν αὐτοῦ"
+    },
+    {
+      "ref": "James 4:11",
+      "form": "καταλαλεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "ἀδελφοῦ ⸀ἢ κρίνων τὸν ἀδελφὸν αὐτοῦ",
+      "right_context": "νόμου καὶ κρίνει νόμον· εἰ δὲ"
+    }
+  ],
+  "books": {
+    "James": 3,
+    "1 Peter": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "juzgando",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καταλαλέω",
+      "display": "hablar·contra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "buena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακοποιός",
+      "display": "de·malhechores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "buena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταισχύνω",
+      "display": "avergonzen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπηρεάζω",
+      "display": "injuriando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "James 4:11",
+      "form": "καταλαλεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Μὴ καταλαλεῖτε ἀλλήλων, ἀδελφοί· ὁ καταλαλῶν ἀδελφοῦ ⸀ἢ κρίνων τὸν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "James 4:11",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ καταλαλεῖτε ἀλλήλων, ἀδελφοί· ὁ καταλαλῶν ἀδελφοῦ ⸀ἢ κρίνων τὸν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 4:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Peter 2:12",
+      "reason": "occurs near καταλαλέω"
+    },
+    {
+      "ref": "1 Peter 3:16",
+      "reason": "occurs near καταλαλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

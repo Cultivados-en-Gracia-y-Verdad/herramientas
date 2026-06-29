@@ -1,0 +1,68 @@
+{
+  "lemma": "προσαπειλέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προσαπειλησάμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 4:21",
+      "form": "προσαπειλησάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 21,
+      "left_context": "οἱ δὲ",
+      "right_context": "ἀπέλυσαν αὐτούς, μηδὲν εὑρίσκοντες τὸ πῶς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀπολύω",
+      "display": "despedieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 4:21",
+      "reason": "occurs near εὑρίσκω, ἀπολύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

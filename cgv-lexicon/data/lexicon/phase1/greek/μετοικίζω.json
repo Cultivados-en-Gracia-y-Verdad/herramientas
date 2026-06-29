@@ -1,0 +1,111 @@
+{
+  "lemma": "μετοικίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μετῴκισεν",
+      "count": 1
+    },
+    {
+      "form": "μετοικιῶ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:4",
+      "form": "μετῴκισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 4,
+      "left_context": "μετὰ τὸ ἀποθανεῖν τὸν πατέρα αὐτοῦ",
+      "right_context": "αὐτὸν εἰς τὴν γῆν ταύτην εἰς"
+    },
+    {
+      "ref": "Acts 7:43",
+      "form": "μετοικιῶ",
+      "morph": "V-F-A-I-1S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 43,
+      "left_context": "τύπους οὓς ἐποιήσατε προσκυνεῖν αὐτοῖς. καὶ",
+      "right_context": "ὑμᾶς ἐπέκεινα Βαβυλῶνος."
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσκυνέω",
+      "display": "postrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπέκεινα",
+      "display": "más·allá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαβυλών",
+      "display": "de·Babilonia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 7:4",
+      "reason": "occurs near γῆ, πατήρ, ἀποθνῄσκω"
+    },
+    {
+      "ref": "Acts 7:43",
+      "reason": "occurs near προσκυνέω, ἐπέκεινα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

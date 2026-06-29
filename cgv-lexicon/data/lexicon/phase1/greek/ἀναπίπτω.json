@@ -1,0 +1,395 @@
+{
+  "lemma": "ἀναπίπτω",
+  "language": "greek",
+  "total_occurrences": 12,
+  "forms": [
+    {
+      "form": "ἀνέπεσαν",
+      "count": 2
+    },
+    {
+      "form": "ἀνέπεσεν",
+      "count": 2
+    },
+    {
+      "form": "ἀναπεσεῖν",
+      "count": 2
+    },
+    {
+      "form": "ἀναπεσεῖν.",
+      "count": 1
+    },
+    {
+      "form": "ἀνέπεσεν⸃,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀναπεσὼν",
+      "count": 1
+    },
+    {
+      "form": "ἀνέπεσεν.",
+      "count": 1
+    },
+    {
+      "form": "ἀνάπεσε",
+      "count": 1
+    },
+    {
+      "form": "ἀνάπεσε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 3,
+      "indicative": 6,
+      "participle": 1,
+      "imperative": 2
+    },
+    "tenses": {
+      "aorist": 12
+    },
+    "voices": {
+      "active": 12
+    }
+  },
+  "references": [
+    {
+      "ref": "John 6:10",
+      "form": "ἀναπεσεῖν.",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "⸀εἶπεν ὁ Ἰησοῦς· Ποιήσατε τοὺς ἀνθρώπους",
+      "right_context": "ἦν δὲ χόρτος πολὺς ἐν τῷ"
+    },
+    {
+      "ref": "John 6:10",
+      "form": "ἀνέπεσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "δὲ χόρτος πολὺς ἐν τῷ τόπῳ.",
+      "right_context": "οὖν οἱ ἄνδρες τὸν ἀριθμὸν ⸀ὡς"
+    },
+    {
+      "ref": "John 13:12",
+      "form": "ἀνέπεσεν⸃,",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 13,
+      "verse": 12,
+      "left_context": "⸀καὶ ἔλαβεν τὰ ἱμάτια αὐτοῦ ⸂καὶ",
+      "right_context": "πάλιν εἶπεν αὐτοῖς· Γινώσκετε τί πεποίηκα"
+    },
+    {
+      "ref": "John 13:25",
+      "form": "⸀ἀναπεσὼν",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 13,
+      "verse": 25,
+      "left_context": "",
+      "right_context": "ἐκεῖνος οὕτως ἐπὶ τὸ στῆθος τοῦ"
+    },
+    {
+      "ref": "John 21:20",
+      "form": "ἀνέπεσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 20,
+      "left_context": "ἠγάπα ὁ Ἰησοῦς ἀκολουθοῦντα, ὃς καὶ",
+      "right_context": "ἐν τῷ δείπνῳ ἐπὶ τὸ στῆθος"
+    },
+    {
+      "ref": "Luke 11:37",
+      "form": "ἀνέπεσεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 37,
+      "left_context": "ὅπως ἀριστήσῃ παρ’ αὐτῷ· εἰσελθὼν δὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 14:10",
+      "form": "ἀνάπεσε",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 10,
+      "left_context": "ἀλλ’ ὅταν κληθῇς πορευθεὶς",
+      "right_context": "εἰς τὸν ἔσχατον τόπον, ἵνα ὅταν"
+    },
+    {
+      "ref": "Luke 17:7",
+      "form": "ἀνάπεσε,",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 7,
+      "left_context": "τοῦ ἀγροῦ ἐρεῖ ⸀αὐτῷ· Εὐθέως παρελθὼν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 22:14",
+      "form": "ἀνέπεσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 14,
+      "left_context": "Καὶ ὅτε ἐγένετο ἡ ὥρα,",
+      "right_context": "καὶ ⸀οἱ ἀπόστολοι σὺν αὐτῷ."
+    },
+    {
+      "ref": "Mark 6:40",
+      "form": "ἀνέπεσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 40,
+      "left_context": "καὶ",
+      "right_context": "πρασιαὶ πρασιαὶ ⸀κατὰ ἑκατὸν καὶ ⸁κατὰ"
+    },
+    {
+      "ref": "Mark 8:6",
+      "form": "ἀναπεσεῖν",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 6,
+      "left_context": "καὶ ⸀παραγγέλλει τῷ ὄχλῳ",
+      "right_context": "ἐπὶ τῆς γῆς· καὶ λαβὼν τοὺς"
+    },
+    {
+      "ref": "Matthew 15:35",
+      "form": "ἀναπεσεῖν",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 35,
+      "left_context": "καὶ ⸀παραγγείλας ⸂τῷ ὄχλῳ⸃",
+      "right_context": "ἐπὶ τὴν γῆν"
+    }
+  ],
+  "books": {
+    "John": 5,
+    "Luke": 4,
+    "Mark": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χόρτος",
+      "display": "hierba",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρασιά",
+      "display": "prados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραγγέλλω",
+      "display": "manda",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀριθμός",
+      "display": "número",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στῆθος",
+      "display": "pecho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκολουθέω",
+      "display": "seguiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεῖπνον",
+      "display": "banquete",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀριστάω",
+      "display": "almorze",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llames",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "ido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔσχατος",
+      "display": "último",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 14:10",
+      "form": "ἀνάπεσε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ἀλλ’ ὅταν κληθῇς πορευθεὶς ἀνάπεσε εἰς τὸν ἔσχατον τόπον, ἵνα ὅταν ἔλθῃ ὁ"
+    },
+    {
+      "ref": "Luke 17:7",
+      "form": "ἀνάπεσε,",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "εἰσελθόντι ἐκ τοῦ ἀγροῦ ἐρεῖ ⸀αὐτῷ· Εὐθέως παρελθὼν ἀνάπεσε,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 14:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 17:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 13:12",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 13:25",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 21:20",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 6:10",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "Luke 11:37",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 22:14",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

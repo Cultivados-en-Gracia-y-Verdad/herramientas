@@ -1,0 +1,107 @@
+{
+  "lemma": "διοδεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "Διοδεύσαντες",
+      "count": 1
+    },
+    {
+      "form": "διώδευεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:1",
+      "form": "Διοδεύσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 1,
+      "left_context": "",
+      "right_context": "δὲ τὴν Ἀμφίπολιν καὶ ⸀τὴν Ἀπολλωνίαν"
+    },
+    {
+      "ref": "Luke 8:1",
+      "form": "διώδευεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 1,
+      "left_context": "ἐγένετο ἐν τῷ καθεξῆς καὶ αὐτὸς",
+      "right_context": "κατὰ πόλιν καὶ κώμην κηρύσσων καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἀμφίπολις",
+      "display": "Anfípolis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθεξῆς",
+      "display": "en·orden",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κηρύσσω",
+      "display": "proclamando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:1",
+      "reason": "occurs near Ἀμφίπολις"
+    },
+    {
+      "ref": "Luke 8:1",
+      "reason": "occurs near καθεξῆς, κηρύσσω, κώμη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

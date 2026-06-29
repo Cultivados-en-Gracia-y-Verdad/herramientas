@@ -1,0 +1,89 @@
+{
+  "lemma": "προσκολλάομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προσκολληθήσεται",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 5:31",
+      "form": "προσκολληθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 31,
+      "left_context": "⸀τὸν ⸀πατέρα καὶ ⸀τὴν μητέρα καὶ",
+      "right_context": "⸂τῇ γυναικὶ⸃ αὐτοῦ, καὶ ἔσονται οἱ"
+    },
+    {
+      "ref": "Mark 10:7",
+      "form": "προσκολληθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 7,
+      "left_context": "πατέρα αὐτοῦ καὶ τὴν μητέρα ⸂καὶ",
+      "right_context": "πρὸς τὴν γυναῖκα αὐτοῦ⸃,"
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μήτηρ",
+      "display": "madre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 5:31",
+      "reason": "occurs near γυνή, μήτηρ, πατήρ"
+    },
+    {
+      "ref": "Mark 10:7",
+      "reason": "occurs near γυνή, μήτηρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

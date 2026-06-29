@@ -1,0 +1,693 @@
+{
+  "lemma": "παρέρχομαι",
+  "language": "greek",
+  "total_occurrences": 29,
+  "forms": [
+    {
+      "form": "παρέλθῃ",
+      "count": 6
+    },
+    {
+      "form": "παρελθεῖν",
+      "count": 3
+    },
+    {
+      "form": "παρελθὼν",
+      "count": 2
+    },
+    {
+      "form": "⸀παρελεύσονται,",
+      "count": 2
+    },
+    {
+      "form": "παρεληλυθὼς",
+      "count": 1
+    },
+    {
+      "form": "παρῆλθεν,",
+      "count": 1
+    },
+    {
+      "form": "παρελεύσονται,",
+      "count": 1
+    },
+    {
+      "form": "παρελθόντες",
+      "count": 1
+    },
+    {
+      "form": "παρεληλυθέναι,",
+      "count": 1
+    },
+    {
+      "form": "παρέρχεσθε",
+      "count": 1
+    },
+    {
+      "form": "παρῆλθον,",
+      "count": 1
+    },
+    {
+      "form": "παρέρχεται.",
+      "count": 1
+    },
+    {
+      "form": "παρελεύσονται.",
+      "count": 1
+    },
+    {
+      "form": "⸁παρελεύσονται.",
+      "count": 1
+    },
+    {
+      "form": "παρῆλθεν·",
+      "count": 1
+    },
+    {
+      "form": "⸀παρελεύσεται,",
+      "count": 1
+    },
+    {
+      "form": "παρέλθωσιν.",
+      "count": 1
+    },
+    {
+      "form": "παρελθάτω",
+      "count": 1
+    },
+    {
+      "form": "⸀παρελθεῖν",
+      "count": 1
+    },
+    {
+      "form": "παρελεύσεται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "indicative": 12,
+      "infinitive": 5,
+      "subjunctive": 7,
+      "imperative": 1
+    },
+    "tenses": {
+      "perfect": 2,
+      "aorist": 18,
+      "future": 7,
+      "present": 2
+    },
+    "voices": {
+      "active": 20,
+      "middle": 9
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 4:3",
+      "form": "παρεληλυθὼς",
+      "morph": "V-X-A-P",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "ἀρκετὸς ⸀γὰρ ὁ",
+      "right_context": "⸀χρόνος τὸ ⸀βούλημα τῶν ἐθνῶν ⸀κατειργάσθαι,"
+    },
+    {
+      "ref": "2 Corinthians 5:17",
+      "form": "παρῆλθεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 17,
+      "left_context": "ἐν Χριστῷ, καινὴ κτίσις· τὰ ἀρχαῖα",
+      "right_context": "ἰδοὺ γέγονεν ⸀καινά·"
+    },
+    {
+      "ref": "2 Peter 3:10",
+      "form": "παρελεύσονται,",
+      "morph": "V-F-M-I-3P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "⸀κλέπτης, ἐν ᾗ οἱ οὐρανοὶ ῥοιζηδὸν",
+      "right_context": "στοιχεῖα δὲ καυσούμενα ⸀λυθήσεται, καὶ γῆ"
+    },
+    {
+      "ref": "Acts 16:8",
+      "form": "παρελθόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "δὲ τὴν Μυσίαν κατέβησαν εἰς Τρῳάδα."
+    },
+    {
+      "ref": "Acts 27:9",
+      "form": "παρεληλυθέναι,",
+      "morph": "V-X-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 9,
+      "left_context": "διὰ τὸ καὶ τὴν νηστείαν ἤδη",
+      "right_context": "παρῄνει ὁ Παῦλος"
+    },
+    {
+      "ref": "Luke 11:42",
+      "form": "παρέρχεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 42,
+      "left_context": "τὸ πήγανον καὶ πᾶν λάχανον, καὶ",
+      "right_context": "τὴν κρίσιν καὶ τὴν ἀγάπην τοῦ"
+    },
+    {
+      "ref": "Luke 12:37",
+      "form": "παρελθὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 37,
+      "left_context": "ὅτι περιζώσεται καὶ ἀνακλινεῖ αὐτοὺς καὶ",
+      "right_context": "διακονήσει αὐτοῖς."
+    },
+    {
+      "ref": "Luke 15:29",
+      "form": "παρῆλθον,",
+      "morph": "V-A-A-I-1S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 29,
+      "left_context": "δουλεύω σοι καὶ οὐδέποτε ἐντολήν σου",
+      "right_context": "καὶ ἐμοὶ οὐδέποτε ἔδωκας ἔριφον ἵνα"
+    },
+    {
+      "ref": "Luke 16:17",
+      "form": "παρελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 17,
+      "left_context": "ἐστιν τὸν οὐρανὸν καὶ τὴν γῆν",
+      "right_context": "ἢ τοῦ νόμου μίαν κεραίαν πεσεῖν."
+    },
+    {
+      "ref": "Luke 17:7",
+      "form": "παρελθὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 7,
+      "left_context": "ἐκ τοῦ ἀγροῦ ἐρεῖ ⸀αὐτῷ· Εὐθέως",
+      "right_context": "ἀνάπεσε,"
+    },
+    {
+      "ref": "Luke 18:37",
+      "form": "παρέρχεται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 37,
+      "left_context": "δὲ αὐτῷ ὅτι Ἰησοῦς ὁ Ναζωραῖος",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 21:32",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 32,
+      "left_context": "ἀμὴν λέγω ὑμῖν ὅτι οὐ μὴ",
+      "right_context": "ἡ γενεὰ αὕτη ἕως ἂν πάντα"
+    },
+    {
+      "ref": "Luke 21:33",
+      "form": "⸀παρελεύσονται,",
+      "morph": "V-F-M-I-3P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 33,
+      "left_context": "ὁ οὐρανὸς καὶ ἡ γῆ",
+      "right_context": "οἱ δὲ λόγοι μου οὐ μὴ"
+    },
+    {
+      "ref": "Luke 21:33",
+      "form": "παρελεύσονται.",
+      "morph": "V-F-M-I-3P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 33,
+      "left_context": "οἱ δὲ λόγοι μου οὐ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 6:48",
+      "form": "παρελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 48,
+      "left_context": "περιπατῶν ἐπὶ τῆς θαλάσσης· καὶ ἤθελεν",
+      "right_context": "αὐτούς."
+    },
+    {
+      "ref": "Mark 13:30",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 30,
+      "left_context": "ἀμὴν λέγω ὑμῖν ὅτι οὐ μὴ",
+      "right_context": "ἡ γενεὰ αὕτη μέχρις οὗ ⸂ταῦτα"
+    },
+    {
+      "ref": "Mark 13:31",
+      "form": "⸀παρελεύσονται,",
+      "morph": "V-F-M-I-3P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 31,
+      "left_context": "ὁ οὐρανὸς καὶ ἡ γῆ",
+      "right_context": "οἱ δὲ λόγοι μου οὐ ⸀μὴ"
+    },
+    {
+      "ref": "Mark 13:31",
+      "form": "⸁παρελεύσονται.",
+      "morph": "V-F-M-I-3P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 31,
+      "left_context": "οἱ δὲ λόγοι μου οὐ ⸀μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 14:35",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 35,
+      "left_context": "καὶ προσηύχετο ἵνα εἰ δυνατόν ἐστιν",
+      "right_context": "ἀπ’ αὐτοῦ ἡ ὥρα,"
+    },
+    {
+      "ref": "Matthew 5:18",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 18,
+      "left_context": "ἀμὴν γὰρ λέγω ὑμῖν, ἕως ἂν",
+      "right_context": "ὁ οὐρανὸς καὶ ἡ γῆ, ἰῶτα"
+    },
+    {
+      "ref": "Matthew 5:18",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 18,
+      "left_context": "ἓν ἢ μία κεραία οὐ μὴ",
+      "right_context": "ἀπὸ τοῦ νόμου, ἕως ἂν πάντα"
+    },
+    {
+      "ref": "Matthew 8:28",
+      "form": "παρελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 28,
+      "left_context": "χαλεποὶ λίαν ὥστε μὴ ἰσχύειν τινὰ",
+      "right_context": "διὰ τῆς ὁδοῦ ἐκείνης."
+    },
+    {
+      "ref": "Matthew 14:15",
+      "form": "παρῆλθεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 15,
+      "left_context": "ὁ τόπος καὶ ἡ ὥρα ἤδη",
+      "right_context": "ἀπόλυσον τοὺς ὄχλους, ἵνα ἀπελθόντες εἰς"
+    },
+    {
+      "ref": "Matthew 24:34",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 34,
+      "left_context": "ἀμὴν λέγω ὑμῖν ⸀ὅτι οὐ μὴ",
+      "right_context": "ἡ γενεὰ αὕτη ἕως ἂν πάντα"
+    },
+    {
+      "ref": "Matthew 24:35",
+      "form": "⸀παρελεύσεται,",
+      "morph": "V-F-M-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 35,
+      "left_context": "ὁ οὐρανὸς καὶ ἡ γῆ",
+      "right_context": "οἱ δὲ λόγοι μου οὐ μὴ"
+    },
+    {
+      "ref": "Matthew 24:35",
+      "form": "παρέλθωσιν.",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 35,
+      "left_context": "οἱ δὲ λόγοι μου οὐ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 26:39",
+      "form": "παρελθάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 39,
+      "left_context": "λέγων· Πάτερ μου, εἰ δυνατόν ἐστιν,",
+      "right_context": "ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν"
+    },
+    {
+      "ref": "Matthew 26:42",
+      "form": "⸀παρελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 42,
+      "left_context": "Πάτερ μου, εἰ οὐ δύναται ⸀τοῦτο",
+      "right_context": "ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ"
+    },
+    {
+      "ref": "James 1:10",
+      "form": "παρελεύσεται.",
+      "morph": "V-F-M-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "ταπεινώσει αὐτοῦ, ὅτι ὡς ἄνθος χόρτου",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 9,
+    "Matthew": 9,
+    "Mark": 5,
+    "Acts": 2,
+    "1 Peter": 1,
+    "2 Corinthians": 1,
+    "2 Peter": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "γενεά",
+      "display": "generación",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "καινός",
+      "display": "nueva",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐδέποτε",
+      "display": "nunca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "una",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κεραία",
+      "display": "tilde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderoso",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρκετός",
+      "display": "suficiente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κτίσις",
+      "display": "creación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχαῖος",
+      "display": "antiguos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥοιζηδόν",
+      "display": "con·estruendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στοιχεῖον",
+      "display": "elementos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καυσόομαι",
+      "display": "ardidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 21:32",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἀμὴν λέγω ὑμῖν ὅτι οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη ἕως ἂν πάντα γένηται.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 13:30",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἀμὴν λέγω ὑμῖν ὅτι οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη μέχρις οὗ ⸂ταῦτα πάντα⸃ γένηται.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 5:18",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "γῆ, ἰῶτα ἓν ἢ μία κεραία οὐ μὴ παρέλθῃ ἀπὸ τοῦ νόμου, ἕως ἂν πάντα γένηται.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 24:34",
+      "form": "παρέλθῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἀμὴν λέγω ὑμῖν ⸀ὅτι οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη ἕως ἂν πάντα ταῦτα γένηται.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 24:35",
+      "form": "παρέλθωσιν.",
+      "morph": "V-A-A-S-3P",
+      "clause_text": "γῆ ⸀παρελεύσεται, οἱ δὲ λόγοι μου οὐ μὴ παρέλθωσιν.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 26:39",
+      "form": "παρελθάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "προσευχόμενος καὶ λέγων· Πάτερ μου, εἰ δυνατόν ἐστιν, παρελθάτω ἀπ’ ἐμοῦ τὸ ποτήριον τοῦτο· πλὴν οὐχ ὡς"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 21:32",
+      "negator": "οὐ",
+      "clause_text": "ἀμὴν λέγω ὑμῖν ὅτι οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη ἕως ἂν πάντα γένηται."
+    },
+    {
+      "ref": "Luke 21:33",
+      "negator": "οὐ",
+      "clause_text": "γῆ ⸀παρελεύσονται, οἱ δὲ λόγοι μου οὐ μὴ παρελεύσονται."
+    },
+    {
+      "ref": "Mark 13:30",
+      "negator": "οὐ",
+      "clause_text": "ἀμὴν λέγω ὑμῖν ὅτι οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη μέχρις οὗ ⸂ταῦτα πάντα⸃ γένηται."
+    },
+    {
+      "ref": "Mark 13:31",
+      "negator": "οὐ",
+      "clause_text": "γῆ ⸀παρελεύσονται, οἱ δὲ λόγοι μου οὐ ⸀μὴ ⸁παρελεύσονται."
+    },
+    {
+      "ref": "Matthew 5:18",
+      "negator": "οὐ",
+      "clause_text": "γῆ, ἰῶτα ἓν ἢ μία κεραία οὐ μὴ παρέλθῃ ἀπὸ τοῦ νόμου, ἕως ἂν πάντα γένηται."
+    },
+    {
+      "ref": "Matthew 8:28",
+      "negator": "μὴ",
+      "clause_text": "μνημείων ἐξερχόμενοι, χαλεποὶ λίαν ὥστε μὴ ἰσχύειν τινὰ παρελθεῖν διὰ τῆς ὁδοῦ ἐκείνης."
+    },
+    {
+      "ref": "Matthew 24:34",
+      "negator": "οὐ",
+      "clause_text": "ἀμὴν λέγω ὑμῖν ⸀ὅτι οὐ μὴ παρέλθῃ ἡ γενεὰ αὕτη ἕως ἂν πάντα ταῦτα γένηται."
+    },
+    {
+      "ref": "Matthew 24:35",
+      "negator": "οὐ",
+      "clause_text": "γῆ ⸀παρελεύσεται, οἱ δὲ λόγοι μου οὐ μὴ παρέλθωσιν."
+    },
+    {
+      "ref": "Matthew 26:42",
+      "negator": "οὐ",
+      "clause_text": "προσηύξατο λέγων· Πάτερ μου, εἰ οὐ δύναται ⸀τοῦτο ⸀παρελθεῖν ἐὰν μὴ αὐτὸ πίω, γενηθήτω τὸ θέλημά σου."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 26:39",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 11:42",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 12:37",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 15:29",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 16:17",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 17:7",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 18:37",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 21:32",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

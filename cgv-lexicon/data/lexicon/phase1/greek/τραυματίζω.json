@@ -1,0 +1,113 @@
+{
+  "lemma": "τραυματίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "τετραυματισμένους",
+      "count": 1
+    },
+    {
+      "form": "τραυματίσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 19:16",
+      "form": "τετραυματισμένους",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 16,
+      "left_context": "ἴσχυσεν κατ’ αὐτῶν, ὥστε γυμνοὺς καὶ",
+      "right_context": "ἐκφυγεῖν ἐκ τοῦ οἴκου ἐκείνου."
+    },
+    {
+      "ref": "Luke 20:12",
+      "form": "τραυματίσαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 12,
+      "left_context": "⸂τρίτον πέμψαι⸃· οἱ δὲ καὶ τοῦτον",
+      "right_context": "ἐξέβαλον."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυμνός",
+      "display": "desnudos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκφεύγω",
+      "display": "escapar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "de·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "enviar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulsaron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:16",
+      "reason": "occurs near γυμνός, οἶκος, ἐκφεύγω"
+    },
+    {
+      "ref": "Luke 20:12",
+      "reason": "occurs near πέμπω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

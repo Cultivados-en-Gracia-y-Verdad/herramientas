@@ -1,0 +1,259 @@
+{
+  "lemma": "συγχαίρω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "συγχαίρει",
+      "count": 2
+    },
+    {
+      "form": "Συγχάρητέ",
+      "count": 2
+    },
+    {
+      "form": "συγχαίρω",
+      "count": 1
+    },
+    {
+      "form": "συγχαίρετέ",
+      "count": 1
+    },
+    {
+      "form": "συνέχαιρον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "imperative": 3
+    },
+    "tenses": {
+      "present": 4,
+      "imperfect": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 5,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:26",
+      "form": "συγχαίρει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 26,
+      "left_context": "πάντα τὰ μέλη· εἴτε δοξάζεται ⸀μέλος,",
+      "right_context": "πάντα τὰ μέλη."
+    },
+    {
+      "ref": "1 Corinthians 13:6",
+      "form": "συγχαίρει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "οὐ χαίρει ἐπὶ τῇ ἀδικίᾳ,",
+      "right_context": "δὲ τῇ ἀληθείᾳ·"
+    },
+    {
+      "ref": "Philippians 2:17",
+      "form": "συγχαίρω",
+      "morph": "V-P-A-I-1S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "λειτουργίᾳ τῆς πίστεως ὑμῶν, χαίρω καὶ",
+      "right_context": "πᾶσιν ὑμῖν·"
+    },
+    {
+      "ref": "Philippians 2:18",
+      "form": "συγχαίρετέ",
+      "morph": "V-P-A-D-2P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "δὲ αὐτὸ καὶ ὑμεῖς χαίρετε καὶ",
+      "right_context": "μοι."
+    },
+    {
+      "ref": "Luke 1:58",
+      "form": "συνέχαιρον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 58,
+      "left_context": "τὸ ἔλεος αὐτοῦ μετ’ αὐτῆς, καὶ",
+      "right_context": "αὐτῇ."
+    },
+    {
+      "ref": "Luke 15:6",
+      "form": "Συγχάρητέ",
+      "morph": "V-A-P-D-2P",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 6,
+      "left_context": "φίλους καὶ τοὺς γείτονας, λέγων αὐτοῖς·",
+      "right_context": "μοι ὅτι εὗρον τὸ πρόβατόν μου"
+    },
+    {
+      "ref": "Luke 15:9",
+      "form": "Συγχάρητέ",
+      "morph": "V-A-P-D-2P",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 9,
+      "left_context": "⸀συγκαλεῖ τὰς φίλας ⸀καὶ γείτονας λέγουσα·",
+      "right_context": "μοι ὅτι εὗρον τὴν δραχμὴν ἣν"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "1 Corinthians": 2,
+    "Philippians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέλος",
+      "display": "miembros",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "goza",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γείτων",
+      "display": "vecinos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallé",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἴτε",
+      "display": "sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "es glorificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικία",
+      "display": "injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλεος",
+      "display": "misericordia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόβατον",
+      "display": "oveja",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φίλος",
+      "display": "amigas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δραχμή",
+      "display": "dracma",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Philippians 2:18",
+      "form": "συγχαίρετέ",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "τὸ δὲ αὐτὸ καὶ ὑμεῖς χαίρετε καὶ συγχαίρετέ μοι."
+    },
+    {
+      "ref": "Luke 15:6",
+      "form": "Συγχάρητέ",
+      "morph": "V-A-P-D-2P",
+      "clause_text": "συγκαλεῖ τοὺς φίλους καὶ τοὺς γείτονας, λέγων αὐτοῖς· Συγχάρητέ μοι ὅτι εὗρον τὸ πρόβατόν μου τὸ ἀπολωλός."
+    },
+    {
+      "ref": "Luke 15:9",
+      "form": "Συγχάρητέ",
+      "morph": "V-A-P-D-2P",
+      "clause_text": "καὶ εὑροῦσα ⸀συγκαλεῖ τὰς φίλας ⸀καὶ γείτονας λέγουσα· Συγχάρητέ μοι ὅτι εὗρον τὴν δραχμὴν ἣν ἀπώλεσα."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 15:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 15:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Philippians 2:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 1:58",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 12:26",
+      "reason": "occurs near εἴτε, μέλος"
+    },
+    {
+      "ref": "1 Corinthians 13:6",
+      "reason": "occurs near χαίρω"
+    },
+    {
+      "ref": "Philippians 2:17",
+      "reason": "occurs near χαίρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

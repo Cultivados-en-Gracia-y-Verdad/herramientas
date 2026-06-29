@@ -1,0 +1,188 @@
+{
+  "lemma": "ἀποκυλίω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀποκεκυλισμένον",
+      "count": 1
+    },
+    {
+      "form": "ἀποκυλίσει",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀποκεκύλισται",
+      "count": 1
+    },
+    {
+      "form": "ἀπεκύλισε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "perfect": 2,
+      "future": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 24:2",
+      "form": "ἀποκεκυλισμένον",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 2,
+      "left_context": "εὗρον δὲ τὸν λίθον",
+      "right_context": "ἀπὸ τοῦ μνημείου,"
+    },
+    {
+      "ref": "Mark 16:3",
+      "form": "ἀποκυλίσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 3,
+      "left_context": "καὶ ἔλεγον πρὸς ἑαυτάς· Τίς",
+      "right_context": "ἡμῖν τὸν λίθον ⸀ἐκ τῆς θύρας"
+    },
+    {
+      "ref": "Mark 16:4",
+      "form": "⸀ἀποκεκύλισται",
+      "morph": "V-X-P-I-3S",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 4,
+      "left_context": "καὶ ἀναβλέψασαι θεωροῦσιν ὅτι",
+      "right_context": "ὁ λίθος, ἦν γὰρ μέγας σφόδρα."
+    },
+    {
+      "ref": "Matthew 28:2",
+      "form": "ἀπεκύλισε",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 2,
+      "left_context": "κυρίου καταβὰς ἐξ οὐρανοῦ ⸀καὶ προσελθὼν",
+      "right_context": "τὸν ⸀λίθον καὶ ἐκάθητο ἐπάνω αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μνημεῖον",
+      "display": "de·sepulcro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβλέπω",
+      "display": "vistas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "ven",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "bajado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπάνω",
+      "display": "encima",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 16:3",
+      "reason": "occurs near λίθος, ἑαυτοῦ"
+    },
+    {
+      "ref": "Mark 16:4",
+      "reason": "occurs near λίθος, ἀναβλέπω"
+    },
+    {
+      "ref": "Luke 24:2",
+      "reason": "occurs near εὑρίσκω, λίθος, μνημεῖον"
+    },
+    {
+      "ref": "Matthew 28:2",
+      "reason": "occurs near λίθος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

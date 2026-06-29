@@ -1,0 +1,467 @@
+{
+  "lemma": "κλείω",
+  "language": "greek",
+  "total_occurrences": 16,
+  "forms": [
+    {
+      "form": "κλεῖσαι",
+      "count": 2
+    },
+    {
+      "form": "ἐκλείσθη",
+      "count": 2
+    },
+    {
+      "form": "κλείσῃ",
+      "count": 1
+    },
+    {
+      "form": "κλείσει,",
+      "count": 1
+    },
+    {
+      "form": "κλείων⸃",
+      "count": 1
+    },
+    {
+      "form": "ἔκλεισεν",
+      "count": 1
+    },
+    {
+      "form": "κλεισθῶσιν",
+      "count": 1
+    },
+    {
+      "form": "κεκλεισμένον",
+      "count": 1
+    },
+    {
+      "form": "ἐκλείσθησαν",
+      "count": 1
+    },
+    {
+      "form": "κεκλεισμένων",
+      "count": 1
+    },
+    {
+      "form": "κεκλεισμένων,",
+      "count": 1
+    },
+    {
+      "form": "κέκλεισται,",
+      "count": 1
+    },
+    {
+      "form": "κλείσας",
+      "count": 1
+    },
+    {
+      "form": "κλείετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "indicative": 7,
+      "participle": 5,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 9,
+      "future": 1,
+      "present": 2,
+      "perfect": 4
+    },
+    "voices": {
+      "active": 8,
+      "passive": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 3:17",
+      "form": "κλείσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "1 John",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "τὸν ἀδελφὸν αὐτοῦ χρείαν ἔχοντα καὶ",
+      "right_context": "τὰ σπλάγχνα αὐτοῦ ἀπ’ αὐτοῦ, πῶς"
+    },
+    {
+      "ref": "Revelation 3:7",
+      "form": "κλείσει,",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "κλεῖν ⸀Δαυίδ, ὁ ἀνοίγων καὶ οὐδεὶς",
+      "right_context": "⸂καὶ κλείων⸃ καὶ οὐδεὶς ⸀ἀνοίγει·"
+    },
+    {
+      "ref": "Revelation 3:7",
+      "form": "κλείων⸃",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "ὁ ἀνοίγων καὶ οὐδεὶς κλείσει, ⸂καὶ",
+      "right_context": "καὶ οὐδεὶς ⸀ἀνοίγει·"
+    },
+    {
+      "ref": "Revelation 3:8",
+      "form": "κλεῖσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "σου θύραν ἠνεῳγμένην, ἣν οὐδεὶς δύναται",
+      "right_context": "αὐτήν— ὅτι μικρὰν ἔχεις δύναμιν, καὶ"
+    },
+    {
+      "ref": "Revelation 11:6",
+      "form": "κλεῖσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 6,
+      "left_context": "οὗτοι ἔχουσιν ⸂τὴν ἐξουσίαν",
+      "right_context": "τὸν οὐρανόν⸃, ἵνα μὴ ὑετὸς βρέχῃ"
+    },
+    {
+      "ref": "Revelation 20:3",
+      "form": "ἔκλεισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 20,
+      "verse": 3,
+      "left_context": "ἔβαλεν αὐτὸν εἰς τὴν ἄβυσσον, καὶ",
+      "right_context": "καὶ ἐσφράγισεν ἐπάνω αὐτοῦ, ἵνα μὴ"
+    },
+    {
+      "ref": "Revelation 21:25",
+      "form": "κλεισθῶσιν",
+      "morph": "V-A-P-S-3P",
+      "book": "Revelation",
+      "chapter": 21,
+      "verse": 25,
+      "left_context": "καὶ οἱ πυλῶνες αὐτῆς οὐ μὴ",
+      "right_context": "ἡμέρας, νὺξ γὰρ οὐκ ἔσται ἐκεῖ,"
+    },
+    {
+      "ref": "Acts 5:23",
+      "form": "κεκλεισμένον",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 23,
+      "left_context": "λέγοντες ὅτι ⸀Τὸ δεσμωτήριον εὕρομεν",
+      "right_context": "ἐν πάσῃ ἀσφαλείᾳ καὶ τοὺς φύλακας"
+    },
+    {
+      "ref": "Acts 21:30",
+      "form": "ἐκλείσθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 30,
+      "left_context": "αὐτὸν ἔξω τοῦ ἱεροῦ, καὶ εὐθέως",
+      "right_context": "αἱ θύραι."
+    },
+    {
+      "ref": "John 20:19",
+      "form": "κεκλεισμένων",
+      "morph": "V-X-P-P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 19,
+      "left_context": "τῇ ⸀μιᾷ σαββάτων, καὶ τῶν θυρῶν",
+      "right_context": "ὅπου ἦσαν οἱ ⸀μαθηταὶ διὰ τὸν"
+    },
+    {
+      "ref": "John 20:26",
+      "form": "κεκλεισμένων,",
+      "morph": "V-X-P-P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 26,
+      "left_context": "αὐτῶν. ἔρχεται ὁ Ἰησοῦς τῶν θυρῶν",
+      "right_context": "καὶ ἔστη εἰς τὸ μέσον καὶ"
+    },
+    {
+      "ref": "Luke 4:25",
+      "form": "ἐκλείσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 25,
+      "left_context": "ἡμέραις Ἠλίου ἐν τῷ Ἰσραήλ, ὅτε",
+      "right_context": "ὁ οὐρανὸς ⸀ἐπὶ ἔτη τρία καὶ"
+    },
+    {
+      "ref": "Luke 11:7",
+      "form": "κέκλεισται,",
+      "morph": "V-X-P-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "μοι κόπους πάρεχε· ἤδη ἡ θύρα",
+      "right_context": "καὶ τὰ παιδία μου μετ’ ἐμοῦ"
+    },
+    {
+      "ref": "Matthew 6:6",
+      "form": "κλείσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "εἴσελθε εἰς τὸ ταμεῖόν σου καὶ",
+      "right_context": "τὴν θύραν σου πρόσευξαι τῷ πατρί"
+    },
+    {
+      "ref": "Matthew 23:13",
+      "form": "κλείετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 13,
+      "left_context": "ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι",
+      "right_context": "τὴν βασιλείαν τῶν οὐρανῶν ἔμπροσθεν τῶν"
+    },
+    {
+      "ref": "Matthew 25:10",
+      "form": "ἐκλείσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 10,
+      "left_context": "μετ’ αὐτοῦ εἰς τοὺς γάμους, καὶ",
+      "right_context": "ἡ θύρα."
+    }
+  ],
+  "books": {
+    "Revelation": 6,
+    "Matthew": 3,
+    "Acts": 2,
+    "John": 2,
+    "Luke": 2,
+    "1 John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θύρα",
+      "display": "puerta",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνοίγω",
+      "display": "abriendo",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κλείω",
+      "display": "cerrando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρεία",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπλάγχνον",
+      "display": "misericordias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαυίδ",
+      "display": "de·David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puede",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μικρός",
+      "display": "pequeña",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑετός",
+      "display": "lluvia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄβυσσος",
+      "display": "abismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σφραγίζω",
+      "display": "selló",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπάνω",
+      "display": "encima",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυλών",
+      "display": "portales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσμωτήριον",
+      "display": "cárcel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσφάλεια",
+      "display": "certeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "de·sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Revelation 21:25",
+      "form": "κλεισθῶσιν",
+      "morph": "V-A-P-S-3P",
+      "clause_text": "καὶ οἱ πυλῶνες αὐτῆς οὐ μὴ κλεισθῶσιν ἡμέρας, νὺξ γὰρ οὐκ ἔσται ἐκεῖ,",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Revelation 11:6",
+      "negator": "μὴ",
+      "clause_text": "οὗτοι ἔχουσιν ⸂τὴν ἐξουσίαν κλεῖσαι τὸν οὐρανόν⸃, ἵνα μὴ ὑετὸς βρέχῃ τὰς ἡμέρας"
+    },
+    {
+      "ref": "Revelation 21:25",
+      "negator": "οὐ",
+      "clause_text": "καὶ οἱ πυλῶνες αὐτῆς οὐ μὴ κλεισθῶσιν ἡμέρας, νὺξ γὰρ οὐκ ἔσται ἐκεῖ,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 11:6",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 20:3",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 21:25",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 3:7",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 3:8",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Matthew 23:13",
+      "reason": "occurs near κλείω, οὐρανός"
+    },
+    {
+      "ref": "Matthew 25:10",
+      "reason": "occurs near θύρα, κλείω"
+    },
+    {
+      "ref": "Matthew 6:6",
+      "reason": "occurs near θύρα, κλείω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,189 @@
+{
+  "lemma": "πικραίνω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐπικράνθησαν.",
+      "count": 1
+    },
+    {
+      "form": "πικρανεῖ",
+      "count": 1
+    },
+    {
+      "form": "ἐπικράνθη",
+      "count": 1
+    },
+    {
+      "form": "πικραίνεσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "future": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 8:11",
+      "form": "ἐπικράνθησαν.",
+      "morph": "V-A-P-I-3P",
+      "book": "Revelation",
+      "chapter": 8,
+      "verse": 11,
+      "left_context": "ἀνθρώπων ἀπέθανον ἐκ τῶν ὑδάτων, ὅτι",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 10:9",
+      "form": "πικρανεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 10,
+      "verse": 9,
+      "left_context": "μοι· Λάβε καὶ κατάφαγε αὐτό, καὶ",
+      "right_context": "σου τὴν κοιλίαν, ἀλλ’ ἐν τῷ"
+    },
+    {
+      "ref": "Revelation 10:10",
+      "form": "ἐπικράνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 10,
+      "verse": 10,
+      "left_context": "μέλι γλυκύ· καὶ ὅτε ἔφαγον αὐτό,",
+      "right_context": "ἡ κοιλία μου."
+    },
+    {
+      "ref": "Colossians 3:19",
+      "form": "πικραίνεσθε",
+      "morph": "V-P-P-D-2P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 19,
+      "left_context": "ἄνδρες, ἀγαπᾶτε τὰς γυναῖκας καὶ μὴ",
+      "right_context": "πρὸς αὐτάς."
+    }
+  ],
+  "books": {
+    "Revelation": 3,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κοιλία",
+      "display": "vientre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·aguas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "toma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατεσθίω",
+      "display": "devora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλυκύς",
+      "display": "dulce",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "display": "amad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujeres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 3:19",
+      "form": "πικραίνεσθε",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "οἱ ἄνδρες, ἀγαπᾶτε τὰς γυναῖκας καὶ μὴ πικραίνεσθε πρὸς αὐτάς.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 3:19",
+      "negator": "μὴ",
+      "clause_text": "οἱ ἄνδρες, ἀγαπᾶτε τὰς γυναῖκας καὶ μὴ πικραίνεσθε πρὸς αὐτάς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 3:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 10:10",
+      "reason": "occurs near κοιλία"
+    },
+    {
+      "ref": "Revelation 10:9",
+      "reason": "occurs near κατεσθίω, κοιλία, λαμβάνω"
+    },
+    {
+      "ref": "Revelation 8:11",
+      "reason": "occurs near ἀποθνῄσκω, ὕδωρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

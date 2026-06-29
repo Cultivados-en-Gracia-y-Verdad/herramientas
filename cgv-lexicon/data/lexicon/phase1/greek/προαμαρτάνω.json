@@ -1,0 +1,122 @@
+{
+  "lemma": "προαμαρτάνω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προημαρτηκότων",
+      "count": 1
+    },
+    {
+      "form": "προημαρτηκόσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 12:21",
+      "form": "προημαρτηκότων",
+      "morph": "V-X-A-P",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 21,
+      "left_context": "πρὸς ὑμᾶς, καὶ πενθήσω πολλοὺς τῶν",
+      "right_context": "καὶ μὴ μετανοησάντων ἐπὶ τῇ ἀκαθαρσίᾳ"
+    },
+    {
+      "ref": "2 Corinthians 13:2",
+      "form": "προημαρτηκόσιν",
+      "morph": "V-X-A-P",
+      "book": "2 Corinthians",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "τὸ δεύτερον καὶ ἀπὼν ⸀νῦν, τοῖς",
+      "right_context": "καὶ τοῖς λοιποῖς πᾶσιν, ὅτι ἐὰν"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πενθέω",
+      "display": "lamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετανοέω",
+      "display": "metanoeos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεύτερος",
+      "display": "segundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄπειμι",
+      "display": "ausentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 12:21",
+      "negator": "μὴ",
+      "clause_text": "θεός μου πρὸς ὑμᾶς, καὶ πενθήσω πολλοὺς τῶν προημαρτηκότων καὶ μὴ μετανοησάντων ἐπὶ τῇ ἀκαθαρσίᾳ καὶ πορνείᾳ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 12:21",
+      "reason": "occurs near μετανοέω, πενθέω, πολύς"
+    },
+    {
+      "ref": "2 Corinthians 13:2",
+      "reason": "occurs near δεύτερος, ἄπειμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

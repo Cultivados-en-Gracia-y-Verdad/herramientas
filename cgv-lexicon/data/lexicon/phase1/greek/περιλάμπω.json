@@ -1,0 +1,136 @@
+{
+  "lemma": "περιλάμπω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "περιλάμψαν",
+      "count": 1
+    },
+    {
+      "form": "περιέλαμψεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 26:13",
+      "form": "περιλάμψαν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 13,
+      "left_context": "οὐρανόθεν ὑπὲρ τὴν λαμπρότητα τοῦ ἡλίου",
+      "right_context": "με φῶς καὶ τοὺς σὺν ἐμοὶ"
+    },
+    {
+      "ref": "Luke 2:9",
+      "form": "περιέλαμψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "κυρίου ἐπέστη αὐτοῖς καὶ δόξα κυρίου",
+      "right_context": "αὐτούς, καὶ ἐφοβήθησαν φόβον μέγαν·"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμπρότης",
+      "display": "esplendora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "de·sol",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φῶς",
+      "display": "luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "fueron temido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόβος",
+      "display": "temor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:13",
+      "reason": "occurs near λαμπρότης, φῶς, ἥλιος"
+    },
+    {
+      "ref": "Luke 2:9",
+      "reason": "occurs near ἐφίστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,320 @@
+{
+  "lemma": "μεθερμηνεύω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "μεθερμηνευόμενον",
+      "count": 4
+    },
+    {
+      "form": "⸀μεθερμηνευόμενον",
+      "count": 2
+    },
+    {
+      "form": "μεθερμηνεύεται",
+      "count": 1
+    },
+    {
+      "form": "μεθερμηνευόμενον·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 7,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 8
+    },
+    "voices": {
+      "passive": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 4:36",
+      "form": "μεθερμηνευόμενον",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 36,
+      "left_context": "Βαρναβᾶς ἀπὸ τῶν ἀποστόλων, ὅ ἐστιν",
+      "right_context": "υἱὸς παρακλήσεως, Λευίτης, Κύπριος τῷ γένει,"
+    },
+    {
+      "ref": "Acts 13:8",
+      "form": "μεθερμηνεύεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 8,
+      "left_context": "αὐτοῖς Ἐλύμας ὁ μάγος, οὕτως γὰρ",
+      "right_context": "τὸ ὄνομα αὐτοῦ, ζητῶν διαστρέψαι τὸν"
+    },
+    {
+      "ref": "John 1:38",
+      "form": "⸀μεθερμηνευόμενον",
+      "morph": "V-P-P-P",
+      "book": "John",
+      "chapter": 1,
+      "verse": 38,
+      "left_context": "δὲ εἶπαν αὐτῷ· Ῥαββί (ὃ λέγεται",
+      "right_context": "Διδάσκαλε), ποῦ μένεις;"
+    },
+    {
+      "ref": "John 1:41",
+      "form": "μεθερμηνευόμενον",
+      "morph": "V-P-P-P",
+      "book": "John",
+      "chapter": 1,
+      "verse": 41,
+      "left_context": "αὐτῷ· Εὑρήκαμεν τὸν Μεσσίαν (ὅ ἐστιν",
+      "right_context": "χριστός)."
+    },
+    {
+      "ref": "Mark 5:41",
+      "form": "μεθερμηνευόμενον·",
+      "morph": "V-P-P-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 41,
+      "left_context": "λέγει αὐτῇ· Ταλιθα ⸀κουμ, ὅ ἐστιν",
+      "right_context": "Τὸ κοράσιον, σοὶ λέγω, ⸀ἔγειρε."
+    },
+    {
+      "ref": "Mark 15:22",
+      "form": "⸀μεθερμηνευόμενον",
+      "morph": "V-P-P-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 22,
+      "left_context": "ἐπὶ ⸀τὸν ⸀Γολγοθᾶν τόπον, ὅ ἐστιν",
+      "right_context": "Κρανίου Τόπος."
+    },
+    {
+      "ref": "Mark 15:34",
+      "form": "μεθερμηνευόμενον",
+      "morph": "V-P-P-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 34,
+      "left_context": "Ἐλωῒ ἐλωῒ ⸀λεμὰ σαβαχθάνι; ὅ ἐστιν",
+      "right_context": "Ὁ θεός μου ὁ θεός μου,"
+    },
+    {
+      "ref": "Matthew 1:23",
+      "form": "μεθερμηνευόμενον",
+      "morph": "V-P-P-P",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "τὸ ὄνομα αὐτοῦ Ἐμμανουήλ· ὅ ἐστιν",
+      "right_context": "Μεθ’ ἡμῶν ὁ θεός."
+    }
+  ],
+  "books": {
+    "Mark": 3,
+    "Acts": 2,
+    "John": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "de·apóstoles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "de·consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λευίτης",
+      "display": "Levito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κύπριος",
+      "display": "Chipriota",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἐλύμας",
+      "display": "Elimas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάγος",
+      "display": "mago",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαστρέφω",
+      "display": "pervertir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥαββί",
+      "display": "Rabbí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποῦ",
+      "display": "dónde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μένω",
+      "display": "permaneces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hemos hallado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μεσσίας",
+      "display": "Mesías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταλιθα",
+      "display": "talita",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κουμ",
+      "display": "cum",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοράσιον",
+      "display": "muchacha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levanta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γολγοθᾶ",
+      "display": "Gólgota",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 15:22",
+      "reason": "occurs near τόπος"
+    },
+    {
+      "ref": "Mark 15:34",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Mark 5:41",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 13:8",
+      "reason": "occurs near ὄνομα"
+    },
+    {
+      "ref": "Acts 4:36",
+      "reason": "occurs near υἱός, ἀπόστολος"
+    },
+    {
+      "ref": "John 1:38",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 1:41",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 1:23",
+      "reason": "occurs near θεός, ὄνομα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,68 @@
+{
+  "lemma": "δημηγορέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐδημηγόρει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 12:21",
+      "form": "ἐδημηγόρει",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 21,
+      "left_context": "βασιλικὴν ⸀καὶ καθίσας ἐπὶ τοῦ βήματος",
+      "right_context": "πρὸς αὐτούς·"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καθίζω",
+      "display": "sentado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βῆμα",
+      "display": "de·tribunal",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:21",
+      "reason": "occurs near βῆμα, καθίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

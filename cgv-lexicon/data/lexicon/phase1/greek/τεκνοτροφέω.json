@@ -1,0 +1,92 @@
+{
+  "lemma": "τεκνοτροφέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐτεκνοτρόφησεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:10",
+      "form": "ἐτεκνοτρόφησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "ἐν ἔργοις καλοῖς μαρτυρουμένη, εἰ",
+      "right_context": "εἰ ἐξενοδόχησεν, εἰ ἁγίων πόδας ἔνιψεν,"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "buenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρέω",
+      "display": "testificada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξενοδοχέω",
+      "display": "hospedó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:10",
+      "reason": "occurs near καλός, μαρτυρέω, ξενοδοχέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

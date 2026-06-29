@@ -1,0 +1,100 @@
+{
+  "lemma": "διαπρίομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διεπρίοντο",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:33",
+      "form": "διεπρίοντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 33,
+      "left_context": "Οἱ δὲ ⸀ἀκούσαντες",
+      "right_context": "καὶ ἐβούλοντο ἀνελεῖν αὐτούς."
+    },
+    {
+      "ref": "Acts 7:54",
+      "form": "διεπρίοντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 54,
+      "left_context": "Ἀκούοντες δὲ ταῦτα",
+      "right_context": "ταῖς καρδίαις αὐτῶν καὶ ἔβρυχον τοὺς"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "querían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναιρέω",
+      "display": "matar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βρύχω",
+      "display": "crujían",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 5:33",
+      "reason": "occurs near βούλομαι, ἀκούω, ἀναιρέω"
+    },
+    {
+      "ref": "Acts 7:54",
+      "reason": "occurs near βρύχω, καρδία, ἀκούω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

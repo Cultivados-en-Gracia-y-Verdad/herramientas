@@ -1,0 +1,111 @@
+{
+  "lemma": "ἐκφύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐκφύῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐκφύῃ,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 13:28",
+      "form": "ἐκφύῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 28,
+      "left_context": "ὁ κλάδος αὐτῆς⸃ ἁπαλὸς γένηται καὶ",
+      "right_context": "τὰ φύλλα, γινώσκετε ὅτι ἐγγὺς τὸ"
+    },
+    {
+      "ref": "Matthew 24:32",
+      "form": "ἐκφύῃ,",
+      "morph": "V-P-A-S-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 32,
+      "left_context": "αὐτῆς γένηται ἁπαλὸς καὶ τὰ φύλλα",
+      "right_context": "γινώσκετε ὅτι ἐγγὺς τὸ θέρος·"
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἁπαλός",
+      "display": "tierno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φύλλον",
+      "display": "hojas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocéis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγύς",
+      "display": "cerca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλάδος",
+      "display": "rama",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέρος",
+      "display": "verano",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 13:28",
+      "reason": "occurs near γινώσκω, κλάδος, φύλλον"
+    },
+    {
+      "ref": "Matthew 24:32",
+      "reason": "occurs near γινώσκω, φύλλον, ἁπαλός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

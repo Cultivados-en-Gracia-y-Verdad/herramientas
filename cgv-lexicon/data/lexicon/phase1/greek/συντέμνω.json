@@ -1,0 +1,80 @@
+{
+  "lemma": "συντέμνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀συντέμνων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 9:28",
+      "form": "⸀συντέμνων",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 28,
+      "left_context": "λόγον γὰρ συντελῶν καὶ",
+      "right_context": "ποιήσει κύριος ἐπὶ τῆς γῆς."
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συντελέω",
+      "display": "cumpliendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 9:28",
+      "reason": "occurs near γῆ, κύριος, λόγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

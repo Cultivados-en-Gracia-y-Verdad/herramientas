@@ -1,0 +1,233 @@
+{
+  "lemma": "πειθαρχέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "Πειθαρχεῖν",
+      "count": 1
+    },
+    {
+      "form": "πειθαρχοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "πειθαρχήσαντάς",
+      "count": 1
+    },
+    {
+      "form": "πειθαρχεῖν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:29",
+      "form": "Πειθαρχεῖν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 29,
+      "left_context": "δὲ Πέτρος καὶ οἱ ἀπόστολοι εἶπαν·",
+      "right_context": "δεῖ θεῷ μᾶλλον ἢ ἀνθρώποις."
+    },
+    {
+      "ref": "Acts 5:32",
+      "form": "πειθαρχοῦσιν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 32,
+      "left_context": "ἅγιον ὃ ἔδωκεν ὁ θεὸς τοῖς",
+      "right_context": "αὐτῷ."
+    },
+    {
+      "ref": "Acts 27:21",
+      "form": "πειθαρχήσαντάς",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 21,
+      "left_context": "αὐτῶν εἶπεν· Ἔδει μέν, ὦ ἄνδρες,",
+      "right_context": "μοι μὴ ἀνάγεσθαι ἀπὸ τῆς Κρήτης"
+    },
+    {
+      "ref": "Titus 3:1",
+      "form": "πειθαρχεῖν,",
+      "morph": "V-P-A-N",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "Ὑπομίμνῃσκε αὐτοὺς ⸀ἀρχαῖς ἐξουσίαις ὑποτάσσεσθαι",
+      "right_context": "πρὸς πᾶν ἔργον ἀγαθὸν ἑτοίμους εἶναι,"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "apóstoles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὦ",
+      "display": "oh",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγω",
+      "display": "subir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομιμνῄσκω",
+      "display": "recorda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχή",
+      "display": "principios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποτάσσω",
+      "display": "someter",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτοιμος",
+      "display": "listos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 27:21",
+      "negator": "μὴ",
+      "clause_text": "ἐν μέσῳ αὐτῶν εἶπεν· Ἔδει μέν, ὦ ἄνδρες, πειθαρχήσαντάς μοι μὴ ἀνάγεσθαι ἀπὸ τῆς Κρήτης κερδῆσαί τε"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:21",
+      "reason": "occurs near δέω"
+    },
+    {
+      "ref": "Acts 5:29",
+      "reason": "occurs near Πέτρος, δέω, θεός"
+    },
+    {
+      "ref": "Acts 5:32",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Titus 3:1",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

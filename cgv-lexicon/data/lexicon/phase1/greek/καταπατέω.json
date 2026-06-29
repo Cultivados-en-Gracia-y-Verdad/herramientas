@@ -1,0 +1,267 @@
+{
+  "lemma": "καταπατέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "καταπατήσας,",
+      "count": 1
+    },
+    {
+      "form": "κατεπατήθη",
+      "count": 1
+    },
+    {
+      "form": "καταπατεῖν",
+      "count": 1
+    },
+    {
+      "form": "καταπατεῖσθαι",
+      "count": 1
+    },
+    {
+      "form": "⸀καταπατήσουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 3,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 10:29",
+      "form": "καταπατήσας,",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 29,
+      "left_context": "τιμωρίας ὁ τὸν υἱὸν τοῦ θεοῦ",
+      "right_context": "καὶ τὸ αἷμα τῆς διαθήκης κοινὸν"
+    },
+    {
+      "ref": "Luke 8:5",
+      "form": "κατεπατήθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 5,
+      "left_context": "μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ",
+      "right_context": "καὶ τὰ πετεινὰ τοῦ οὐρανοῦ κατέφαγεν"
+    },
+    {
+      "ref": "Luke 12:1",
+      "form": "καταπατεῖν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "ἐπισυναχθεισῶν τῶν μυριάδων τοῦ ὄχλου, ὥστε",
+      "right_context": "ἀλλήλους, ἤρξατο λέγειν πρὸς τοὺς μαθητὰς"
+    },
+    {
+      "ref": "Matthew 5:13",
+      "form": "καταπατεῖσθαι",
+      "morph": "V-P-P-N",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "ἰσχύει ἔτι εἰ μὴ ⸂βληθὲν ἔξω⸃",
+      "right_context": "ὑπὸ τῶν ἀνθρώπων."
+    },
+    {
+      "ref": "Matthew 7:6",
+      "form": "⸀καταπατήσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "μαργαρίτας ὑμῶν ἔμπροσθεν τῶν χοίρων, μήποτε",
+      "right_context": "αὐτοὺς ἐν τοῖς ποσὶν αὐτῶν καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Matthew": 2,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "de·pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "cayó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πετεινόν",
+      "display": "aves",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μυριάς",
+      "display": "diez·mil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμπροσθεν",
+      "display": "delante·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χοῖρος",
+      "display": "de·cerdos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 5:13",
+      "negator": "μὴ",
+      "clause_text": "εἰς οὐδὲν ἰσχύει ἔτι εἰ μὴ ⸂βληθὲν ἔξω⸃ καταπατεῖσθαι ὑπὸ τῶν ἀνθρώπων."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 8:5",
+      "reason": "occurs near πίπτω"
+    },
+    {
+      "ref": "Matthew 5:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 7:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 10:29",
+      "reason": "occurs near αἷμα, διαθήκη, θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

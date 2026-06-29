@@ -1,0 +1,74 @@
+{
+  "lemma": "δυσφημέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀δυσφημούμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:13",
+      "form": "⸀δυσφημούμενοι",
+      "morph": "V-P-P-P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "παρακαλοῦμεν· ὡς περικαθάρματα τοῦ κόσμου ἐγενήθημεν,"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περικάθαρμα",
+      "display": "basuras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "de·mundo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 4:13",
+      "reason": "occurs near κόσμος, παρακαλέω, περικάθαρμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

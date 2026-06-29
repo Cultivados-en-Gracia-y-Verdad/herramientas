@@ -1,0 +1,198 @@
+{
+  "lemma": "παίω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἔπαισεν",
+      "count": 2
+    },
+    {
+      "form": "παίσας",
+      "count": 2
+    },
+    {
+      "form": "παίσῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 9:5",
+      "form": "παίσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Revelation",
+      "chapter": 9,
+      "verse": 5,
+      "left_context": "βασανισμὸς αὐτῶν ὡς βασανισμὸς σκορπίου, ὅταν",
+      "right_context": "ἄνθρωπον."
+    },
+    {
+      "ref": "John 18:10",
+      "form": "ἔπαισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 18,
+      "verse": 10,
+      "left_context": "Πέτρος ἔχων μάχαιραν εἵλκυσεν αὐτὴν καὶ",
+      "right_context": "τὸν τοῦ ἀρχιερέως δοῦλον καὶ ἀπέκοψεν"
+    },
+    {
+      "ref": "Luke 22:64",
+      "form": "παίσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 64,
+      "left_context": "ἐπηρώτων⸃ λέγοντες· Προφήτευσον, τίς ἐστιν ὁ",
+      "right_context": "σε;"
+    },
+    {
+      "ref": "Mark 14:47",
+      "form": "ἔπαισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 47,
+      "left_context": "⸀τις τῶν παρεστηκότων σπασάμενος τὴν μάχαιραν",
+      "right_context": "τὸν δοῦλον τοῦ ἀρχιερέως καὶ ἀφεῖλεν"
+    },
+    {
+      "ref": "Matthew 26:68",
+      "form": "παίσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 68,
+      "left_context": "Προφήτευσον ἡμῖν, χριστέ, τίς ἐστιν ὁ",
+      "right_context": "σε;"
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "John": 1,
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μάχαιρα",
+      "display": "espada",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασανισμός",
+      "display": "tormento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκορπίος",
+      "display": "de·escorpión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕλκω",
+      "display": "atraió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφητεύω",
+      "display": "profetiza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρίστημι",
+      "display": "presentados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπάομαι",
+      "display": "sacado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 18:10",
+      "reason": "occurs near δοῦλος, μάχαιρα, ἀρχιερεύς"
+    },
+    {
+      "ref": "Luke 22:64",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 14:47",
+      "reason": "occurs near δοῦλος, μάχαιρα, ἀρχιερεύς"
+    },
+    {
+      "ref": "Matthew 26:68",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 9:5",
+      "reason": "occurs near βασανισμός, σκορπίος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

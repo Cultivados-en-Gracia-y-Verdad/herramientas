@@ -1,0 +1,80 @@
+{
+  "lemma": "προσκλίνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀προσεκλίθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:36",
+      "form": "⸀προσεκλίθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 36,
+      "left_context": "Θευδᾶς, λέγων εἶναί τινα ἑαυτόν, ᾧ",
+      "right_context": "⸂ἀνδρῶν ἀριθμὸς ὡς⸃ τετρακοσίων· ὃς ἀνῃρέθη,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "de·varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀριθμός",
+      "display": "número",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τετρακόσιοι",
+      "display": "de·cuatrocientoses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 5:36",
+      "reason": "occurs near τετρακόσιοι, ἀνήρ, ἀριθμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

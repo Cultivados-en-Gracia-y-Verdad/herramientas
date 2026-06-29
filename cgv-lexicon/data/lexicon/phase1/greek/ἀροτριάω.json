@@ -1,0 +1,138 @@
+{
+  "lemma": "ἀροτριάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀροτριῶν",
+      "count": 1
+    },
+    {
+      "form": "ἀροτριᾶν,",
+      "count": 1
+    },
+    {
+      "form": "ἀροτριῶντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:10",
+      "form": "ἀροτριῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "ἐγράφη, ὅτι ⸂ὀφείλει ἐπ’ ἐλπίδι⸃ ὁ",
+      "right_context": "ἀροτριᾶν, καὶ ὁ ἀλοῶν ⸂ἐπ’ ἐλπίδι"
+    },
+    {
+      "ref": "1 Corinthians 9:10",
+      "form": "ἀροτριᾶν,",
+      "morph": "V-P-A-N",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "ὅτι ⸂ὀφείλει ἐπ’ ἐλπίδι⸃ ὁ ἀροτριῶν",
+      "right_context": "καὶ ὁ ἀλοῶν ⸂ἐπ’ ἐλπίδι τοῦ"
+    },
+    {
+      "ref": "Luke 17:7",
+      "form": "ἀροτριῶντα",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 7,
+      "left_context": "Τίς δὲ ἐξ ὑμῶν δοῦλον ἔχων",
+      "right_context": "ἢ ποιμαίνοντα, ὃς εἰσελθόντι ἐκ τοῦ"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφείλω",
+      "display": "debe",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀροτριάω",
+      "display": "arar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλοάω",
+      "display": "trillando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποιμαίνω",
+      "display": "pastoreando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:10",
+      "reason": "occurs near ἀλοάω, ἀροτριάω, ἐλπίς"
+    },
+    {
+      "ref": "Luke 17:7",
+      "reason": "occurs near δοῦλος, ἀροτριάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

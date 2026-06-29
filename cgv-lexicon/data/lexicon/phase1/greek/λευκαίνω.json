@@ -1,0 +1,118 @@
+{
+  "lemma": "λευκαίνω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐλεύκαναν",
+      "count": 1
+    },
+    {
+      "form": "λευκᾶναι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 7:14",
+      "form": "ἐλεύκαναν",
+      "morph": "V-A-A-I-3P",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 14,
+      "left_context": "καὶ ἔπλυναν τὰς στολὰς αὐτῶν καὶ",
+      "right_context": "⸀αὐτὰς ἐν τῷ αἵματι τοῦ ἀρνίου."
+    },
+    {
+      "ref": "Mark 9:3",
+      "form": "λευκᾶναι.",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 3,
+      "left_context": "ἐπὶ τῆς γῆς οὐ δύναται ⸀οὕτως",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλύνω",
+      "display": "lavaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στολή",
+      "display": "vestiduras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puede",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 9:3",
+      "negator": "οὐ",
+      "clause_text": "οἷα γναφεὺς ἐπὶ τῆς γῆς οὐ δύναται ⸀οὕτως λευκᾶναι."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 9:3",
+      "reason": "occurs near γῆ, δύναμαι"
+    },
+    {
+      "ref": "Revelation 7:14",
+      "reason": "occurs near αἷμα, πλύνω, στολή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

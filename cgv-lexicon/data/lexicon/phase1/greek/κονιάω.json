@@ -1,0 +1,159 @@
+{
+  "lemma": "κονιάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κεκονιαμένε·",
+      "count": 1
+    },
+    {
+      "form": "κεκονιαμένοις,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:3",
+      "form": "κεκονιαμένε·",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 3,
+      "left_context": "Τύπτειν σε μέλλει ὁ θεός, τοῖχε",
+      "right_context": "καὶ σὺ κάθῃ κρίνων με κατὰ"
+    },
+    {
+      "ref": "Matthew 23:27",
+      "form": "κεκονιαμένοις,",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 27,
+      "left_context": "καὶ Φαρισαῖοι ὑποκριταί, ὅτι ⸀παρομοιάζετε τάφοις",
+      "right_context": "οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι ἔσωθεν"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοῖχος",
+      "display": "muro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "juzgando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποκριτής",
+      "display": "hipócritas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρομοιάζω",
+      "display": "comparáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τάφος",
+      "display": "tumbas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξωθεν",
+      "display": "por·fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φαίνω",
+      "display": "son aparecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡραῖος",
+      "display": "hermosos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 23:3",
+      "reason": "occurs near θεός, κάθημαι, κρίνω"
+    },
+    {
+      "ref": "Matthew 23:27",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

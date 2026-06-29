@@ -1,0 +1,231 @@
+{
+  "lemma": "μαίνομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "μαίνεσθε;",
+      "count": 1
+    },
+    {
+      "form": "Μαίνῃ.",
+      "count": 1
+    },
+    {
+      "form": "Μαίνῃ,",
+      "count": 1
+    },
+    {
+      "form": "μαίνομαι,",
+      "count": 1
+    },
+    {
+      "form": "μαίνεται·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "middle": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 14:23",
+      "form": "μαίνεσθε;",
+      "morph": "V-P-M-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 23,
+      "left_context": "ἰδιῶται ἢ ἄπιστοι, οὐκ ἐροῦσιν ὅτι",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 12:15",
+      "form": "Μαίνῃ.",
+      "morph": "V-P-M-I-2S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "οἱ δὲ πρὸς αὐτὴν εἶπαν·",
+      "right_context": "ἡ δὲ διϊσχυρίζετο οὕτως ἔχειν. οἱ"
+    },
+    {
+      "ref": "Acts 26:24",
+      "form": "Μαίνῃ,",
+      "morph": "V-P-M-I-2S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 24,
+      "left_context": "ὁ Φῆστος μεγάλῃ τῇ φωνῇ ⸀φησιν·",
+      "right_context": "Παῦλε· τὰ πολλά σε γράμματα εἰς"
+    },
+    {
+      "ref": "Acts 26:25",
+      "form": "μαίνομαι,",
+      "morph": "V-P-M-I-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 25,
+      "left_context": "ὁ δὲ ⸀Παῦλος· Οὐ",
+      "right_context": "φησίν, κράτιστε Φῆστε, ἀλλὰ ἀληθείας καὶ"
+    },
+    {
+      "ref": "John 10:20",
+      "form": "μαίνεται·",
+      "morph": "V-P-M-I-3S",
+      "book": "John",
+      "chapter": 10,
+      "verse": 20,
+      "left_context": "πολλοὶ ἐξ αὐτῶν· Δαιμόνιον ἔχει καὶ",
+      "right_context": "τί αὐτοῦ ἀκούετε;"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "1 Corinthians": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Φῆστος",
+      "display": "Festo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φημί",
+      "display": "dice",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄπιστος",
+      "display": "incrédulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διϊσχυρίζομαι",
+      "display": "afirmaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράμμα",
+      "display": "letras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράτιστος",
+      "display": "excelentísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 14:23",
+      "negator": "οὐκ",
+      "clause_text": "εἰσέλθωσιν δὲ ἰδιῶται ἢ ἄπιστοι, οὐκ ἐροῦσιν ὅτι μαίνεσθε;"
+    },
+    {
+      "ref": "Acts 26:25",
+      "negator": "Οὐ",
+      "clause_text": "ὁ δὲ ⸀Παῦλος· Οὐ μαίνομαι, φησίν, κράτιστε Φῆστε, ἀλλὰ ἀληθείας καὶ σωφροσύνης ῥήματα"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 26:24",
+      "reason": "occurs near Παῦλος, Φῆστος, φημί"
+    },
+    {
+      "ref": "Acts 26:25",
+      "reason": "occurs near Παῦλος, Φῆστος, φημί"
+    },
+    {
+      "ref": "1 Corinthians 14:23",
+      "reason": "occurs near ἄπιστος, ἤ"
+    },
+    {
+      "ref": "John 10:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

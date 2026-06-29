@@ -1,0 +1,93 @@
+{
+  "lemma": "καταμανθάνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καταμάθετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 6:28",
+      "form": "καταμάθετε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 28,
+      "left_context": "καὶ περὶ ἐνδύματος τί μεριμνᾶτε;",
+      "right_context": "τὰ κρίνα τοῦ ἀγροῦ πῶς ⸂αὐξάνουσιν·"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔνδυμα",
+      "display": "de·vestido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεριμνάω",
+      "display": "preocuparse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνον",
+      "display": "lirios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγρός",
+      "display": "de·campo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 6:28",
+      "form": "καταμάθετε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ περὶ ἐνδύματος τί μεριμνᾶτε; καταμάθετε τὰ κρίνα τοῦ ἀγροῦ πῶς ⸂αὐξάνουσιν· οὐ κοπιῶσιν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 6:28",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

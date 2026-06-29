@@ -1,0 +1,428 @@
+{
+  "lemma": "ἀπάγω",
+  "language": "greek",
+  "total_occurrences": 15,
+  "forms": [
+    {
+      "form": "ἀπήγαγον",
+      "count": 6
+    },
+    {
+      "form": "ἀπάγουσα",
+      "count": 2
+    },
+    {
+      "form": "ἀπαγόμενοι.",
+      "count": 1
+    },
+    {
+      "form": "ἀπαχθῆναι,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἄπαγε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀπαγαγὼν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀπαγομένους",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀπήγαγον",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀπάγετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 5,
+      "infinitive": 1,
+      "imperative": 2,
+      "indicative": 7
+    },
+    "tenses": {
+      "present": 6,
+      "aorist": 9
+    },
+    "voices": {
+      "passive": 3,
+      "active": 12
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:2",
+      "form": "ἀπαγόμενοι.",
+      "morph": "V-P-P-P",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "εἴδωλα τὰ ἄφωνα ὡς ἂν ἤγεσθε",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 12:19",
+      "form": "ἀπαχθῆναι,",
+      "morph": "V-A-P-N",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 19,
+      "left_context": "μὴ εὑρὼν ἀνακρίνας τοὺς φύλακας ἐκέλευσεν",
+      "right_context": "καὶ κατελθὼν ἀπὸ τῆς Ἰουδαίας ⸀εἰς"
+    },
+    {
+      "ref": "Acts 23:17",
+      "form": "⸀ἄπαγε",
+      "morph": "V-P-A-D-2S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 17,
+      "left_context": "τῶν ἑκατονταρχῶν ἔφη· Τὸν νεανίαν τοῦτον",
+      "right_context": "πρὸς τὸν χιλίαρχον, ἔχει γὰρ ⸂ἀπαγγεῖλαί"
+    },
+    {
+      "ref": "Luke 13:15",
+      "form": "⸀ἀπαγαγὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 15,
+      "left_context": "τὸν ὄνον ἀπὸ τῆς φάτνης καὶ",
+      "right_context": "ποτίζει;"
+    },
+    {
+      "ref": "Luke 21:12",
+      "form": "⸀ἀπαγομένους",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "παραδιδόντες εἰς ⸀τὰς συναγωγὰς καὶ φυλακάς,",
+      "right_context": "ἐπὶ βασιλεῖς καὶ ἡγεμόνας ἕνεκεν τοῦ"
+    },
+    {
+      "ref": "Luke 22:66",
+      "form": "⸀ἀπήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 66,
+      "left_context": "λαοῦ, ἀρχιερεῖς ⸀τε καὶ γραμματεῖς, καὶ",
+      "right_context": "αὐτὸν εἰς τὸ συνέδριον αὐτῶν,"
+    },
+    {
+      "ref": "Luke 23:26",
+      "form": "ἀπήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 26,
+      "left_context": "Καὶ ὡς",
+      "right_context": "αὐτόν, ἐπιλαβόμενοι ⸂Σίμωνά τινα Κυρηναῖον ἐρχόμενον⸃"
+    },
+    {
+      "ref": "Mark 14:44",
+      "form": "⸀ἀπάγετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 44,
+      "left_context": "φιλήσω αὐτός ἐστιν· κρατήσατε αὐτὸν καὶ",
+      "right_context": "ἀσφαλῶς."
+    },
+    {
+      "ref": "Mark 14:53",
+      "form": "ἀπήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 53,
+      "left_context": "Καὶ",
+      "right_context": "τὸν Ἰησοῦν πρὸς τὸν ἀρχιερέα, καὶ"
+    },
+    {
+      "ref": "Mark 15:16",
+      "form": "ἀπήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 16,
+      "left_context": "Οἱ δὲ στρατιῶται",
+      "right_context": "αὐτὸν ἔσω τῆς αὐλῆς, ὅ ἐστιν"
+    },
+    {
+      "ref": "Matthew 7:13",
+      "form": "ἀπάγουσα",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 13,
+      "left_context": "πύλη⸃ καὶ εὐρύχωρος ἡ ὁδὸς ἡ",
+      "right_context": "εἰς τὴν ἀπώλειαν, καὶ πολλοί εἰσιν"
+    },
+    {
+      "ref": "Matthew 7:14",
+      "form": "ἀπάγουσα",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 14,
+      "left_context": "πύλη καὶ τεθλιμμένη ἡ ὁδὸς ἡ",
+      "right_context": "εἰς τὴν ζωήν, καὶ ὀλίγοι εἰσὶν"
+    },
+    {
+      "ref": "Matthew 26:57",
+      "form": "ἀπήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 57,
+      "left_context": "Οἱ δὲ κρατήσαντες τὸν Ἰησοῦν",
+      "right_context": "πρὸς Καϊάφαν τὸν ἀρχιερέα, ὅπου οἱ"
+    },
+    {
+      "ref": "Matthew 27:2",
+      "form": "ἀπήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 2,
+      "left_context": "καὶ δήσαντες αὐτὸν",
+      "right_context": "καὶ ⸀παρέδωκαν Πιλάτῳ τῷ ἡγεμόνι."
+    },
+    {
+      "ref": "Matthew 27:31",
+      "form": "ἀπήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 31,
+      "left_context": "ἐνέδυσαν αὐτὸν τὰ ἱμάτια αὐτοῦ καὶ",
+      "right_context": "αὐτὸν εἰς τὸ σταυρῶσαι."
+    }
+  ],
+  "books": {
+    "Matthew": 5,
+    "Luke": 4,
+    "Mark": 3,
+    "Acts": 2,
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγεμών",
+      "display": "gobernadores",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarrad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄφωνος",
+      "display": "mudos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγω",
+      "display": "eran llevado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνακρίνω",
+      "display": "interrogado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φύλαξ",
+      "display": "carceleros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "mandó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατέρχομαι",
+      "display": "descendido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαία",
+      "display": "de·Judea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑκατοντάρχης",
+      "display": "centurión·",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φημί",
+      "display": "decía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεανίας",
+      "display": "joven",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιλίαρχος",
+      "display": "tribuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνος",
+      "display": "asno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φάτνη",
+      "display": "de·pesebre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποτίζω",
+      "display": "dar·de·bebe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagogas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακή",
+      "display": "cárceles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "reyes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕνεκεν",
+      "display": "por·causa·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 23:17",
+      "form": "⸀ἄπαγε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Παῦλος ἕνα τῶν ἑκατονταρχῶν ἔφη· Τὸν νεανίαν τοῦτον ⸀ἄπαγε πρὸς τὸν χιλίαρχον, ἔχει γὰρ ⸂ἀπαγγεῖλαί τι⸃ αὐτῷ."
+    },
+    {
+      "ref": "Mark 14:44",
+      "form": "⸀ἀπάγετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Ὃν ἂν φιλήσω αὐτός ἐστιν· κρατήσατε αὐτὸν καὶ ⸀ἀπάγετε ἀσφαλῶς."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 14:44",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 23:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 26:57",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 27:2",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 27:31",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 7:13",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 7:14",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Luke 13:15",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

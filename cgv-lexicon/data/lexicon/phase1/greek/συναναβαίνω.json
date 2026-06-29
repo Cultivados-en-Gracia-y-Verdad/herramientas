@@ -1,0 +1,111 @@
+{
+  "lemma": "συναναβαίνω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συναναβᾶσιν",
+      "count": 1
+    },
+    {
+      "form": "συναναβᾶσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:31",
+      "form": "συναναβᾶσιν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 31,
+      "left_context": "ὃς ὤφθη ἐπὶ ἡμέρας πλείους τοῖς",
+      "right_context": "αὐτῷ ἀπὸ τῆς Γαλιλαίας εἰς Ἰερουσαλήμ,"
+    },
+    {
+      "ref": "Mark 15:41",
+      "form": "συναναβᾶσαι",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 41,
+      "left_context": "διηκόνουν αὐτῷ, καὶ ἄλλαι πολλαὶ αἱ",
+      "right_context": "αὐτῷ εἰς Ἱεροσόλυμα."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "muchas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "fue visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλιλαία",
+      "display": "de·Galilea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:31",
+      "reason": "occurs near Γαλιλαία, πολύς, ἡμέρα"
+    },
+    {
+      "ref": "Mark 15:41",
+      "reason": "occurs near πολύς, ἄλλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "παρίημι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρειμένας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:12",
+      "form": "παρειμένας",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "Διὸ τὰς",
+      "right_context": "χεῖρας καὶ τὰ παραλελυμένα γόνατα ἀνορθώσατε,"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλύομαι",
+      "display": "paralizarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γόνυ",
+      "display": "rodillas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:12",
+      "reason": "occurs near γόνυ, διό, παραλύομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,203 @@
+{
+  "lemma": "ἐμμένω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "⸀ἐμμένει",
+      "count": 1
+    },
+    {
+      "form": "ἐνέμειναν",
+      "count": 1
+    },
+    {
+      "form": "ἐμμένειν",
+      "count": 1
+    },
+    {
+      "form": "⸀Ἐνέμεινεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 3:10",
+      "form": "⸀ἐμμένει",
+      "morph": "V-P-A-I-3S",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "γὰρ ⸀ὅτι Ἐπικατάρατος πᾶς ὃς οὐκ",
+      "right_context": "πᾶσιν τοῖς γεγραμμένοις ἐν τῷ βιβλίῳ"
+    },
+    {
+      "ref": "Hebrews 8:9",
+      "form": "ἐνέμειναν",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 9,
+      "left_context": "ἐκ γῆς Αἰγύπτου, ὅτι αὐτοὶ οὐκ",
+      "right_context": "ἐν τῇ διαθήκῃ μου, κἀγὼ ἠμέλησα"
+    },
+    {
+      "ref": "Acts 14:22",
+      "form": "ἐμμένειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 22,
+      "left_context": "ἐπιστηρίζοντες τὰς ψυχὰς τῶν μαθητῶν, παρακαλοῦντες",
+      "right_context": "τῇ πίστει καὶ ὅτι διὰ πολλῶν"
+    },
+    {
+      "ref": "Acts 28:30",
+      "form": "⸀Ἐνέμεινεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 30,
+      "left_context": "",
+      "right_context": "⸀δὲ διετίαν ὅλην ἐν ἰδίῳ μισθώματι,"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Galatians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπικατάρατος",
+      "display": "maldito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escritos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Αἴγυπτος",
+      "display": "de·Egipto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διετία",
+      "display": "dos·años",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 3:10",
+      "negator": "οὐκ",
+      "clause_text": "εἰσίν, γέγραπται γὰρ ⸀ὅτι Ἐπικατάρατος πᾶς ὃς οὐκ ⸀ἐμμένει πᾶσιν τοῖς γεγραμμένοις ἐν τῷ βιβλίῳ τοῦ νόμου"
+    },
+    {
+      "ref": "Hebrews 8:9",
+      "negator": "οὐκ",
+      "clause_text": "ἐξαγαγεῖν αὐτοὺς ἐκ γῆς Αἰγύπτου, ὅτι αὐτοὶ οὐκ ἐνέμειναν ἐν τῇ διαθήκῃ μου, κἀγὼ ἠμέλησα αὐτῶν, λέγει"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 14:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 28:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 3:10",
+      "reason": "occurs near γράφω, ἐπικατάρατος"
+    },
+    {
+      "ref": "Hebrews 8:9",
+      "reason": "occurs near Αἴγυπτος, γῆ, διαθήκη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

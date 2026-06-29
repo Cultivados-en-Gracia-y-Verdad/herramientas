@@ -1,0 +1,273 @@
+{
+  "lemma": "στρώννυμι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἔστρωσαν",
+      "count": 2
+    },
+    {
+      "form": "στρῶσον",
+      "count": 1
+    },
+    {
+      "form": "ἐστρωμένον·",
+      "count": 1
+    },
+    {
+      "form": "ἐστρωμένον",
+      "count": 1
+    },
+    {
+      "form": "ἐστρώννυον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 2,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3,
+      "perfect": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 4,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:34",
+      "form": "στρῶσον",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 34,
+      "left_context": "ἰᾶταί σε Ἰησοῦς ⸀Χριστός· ἀνάστηθι καὶ",
+      "right_context": "σεαυτῷ· καὶ εὐθέως ἀνέστη."
+    },
+    {
+      "ref": "Luke 22:12",
+      "form": "ἐστρωμένον·",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 12,
+      "left_context": "κἀκεῖνος ὑμῖν δείξει ἀνάγαιον μέγα",
+      "right_context": "ἐκεῖ ἑτοιμάσατε."
+    },
+    {
+      "ref": "Mark 11:8",
+      "form": "ἔστρωσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 8,
+      "left_context": "⸂καὶ πολλοὶ⸃ τὰ ἱμάτια αὐτῶν",
+      "right_context": "εἰς τὴν ὁδόν, ἄλλοι δὲ στιβάδας"
+    },
+    {
+      "ref": "Mark 14:15",
+      "form": "ἐστρωμένον",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 15,
+      "left_context": "καὶ αὐτὸς ὑμῖν δείξει ἀνάγαιον μέγα",
+      "right_context": "ἕτοιμον· ⸀καὶ ἐκεῖ ἑτοιμάσατε ἡμῖν."
+    },
+    {
+      "ref": "Matthew 21:8",
+      "form": "ἔστρωσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 8,
+      "left_context": "ὁ δὲ πλεῖστος ὄχλος",
+      "right_context": "ἑαυτῶν τὰ ἱμάτια ἐν τῇ ὁδῷ,"
+    },
+    {
+      "ref": "Matthew 21:8",
+      "form": "ἐστρώννυον",
+      "morph": "V-I-A-I-3P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 8,
+      "left_context": "ἔκοπτον κλάδους ἀπὸ τῶν δένδρων καὶ",
+      "right_context": "ἐν τῇ ὁδῷ."
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Matthew": 2,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levanta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δείκνυμι",
+      "display": "mostrará",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγαιον",
+      "display": "aposento·alto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμάζω",
+      "display": "preparad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεαυτοῦ",
+      "display": "de·ti·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀκεῖνος",
+      "display": "y·aquel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτοιμος",
+      "display": "listo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλάδος",
+      "display": "ramas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δένδρον",
+      "display": "de·árboles",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 9:34",
+      "form": "στρῶσον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "Πέτρος· Αἰνέα, ἰᾶταί σε Ἰησοῦς ⸀Χριστός· ἀνάστηθι καὶ στρῶσον σεαυτῷ· καὶ εὐθέως ἀνέστη."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 9:34",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 11:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 14:15",
+      "reason": "occurs near δείκνυμι, μέγας, ἀνάγαιον"
+    },
+    {
+      "ref": "Matthew 21:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 22:12",
+      "reason": "occurs near δείκνυμι, μέγας, ἀνάγαιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

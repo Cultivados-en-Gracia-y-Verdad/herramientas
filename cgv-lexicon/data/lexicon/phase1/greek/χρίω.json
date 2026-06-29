@@ -1,0 +1,236 @@
+{
+  "lemma": "χρίω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἔχρισέν",
+      "count": 2
+    },
+    {
+      "form": "χρίσας",
+      "count": 1
+    },
+    {
+      "form": "ἔχρισας,",
+      "count": 1
+    },
+    {
+      "form": "ἔχρισεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 4
+    },
+    "tenses": {
+      "aorist": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 1:21",
+      "form": "χρίσας",
+      "morph": "V-A-A-P",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "ἡμᾶς σὺν ὑμῖν εἰς Χριστὸν καὶ",
+      "right_context": "ἡμᾶς θεός,"
+    },
+    {
+      "ref": "Hebrews 1:9",
+      "form": "ἔχρισέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "δικαιοσύνην καὶ ἐμίσησας ἀνομίαν· διὰ τοῦτο",
+      "right_context": "σε ὁ θεός, ὁ θεός σου,"
+    },
+    {
+      "ref": "Acts 4:27",
+      "form": "ἔχρισας,",
+      "morph": "V-A-A-I-2S",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 27,
+      "left_context": "τὸν ἅγιον παῖδά σου Ἰησοῦν, ὃν",
+      "right_context": "Ἡρῴδης τε καὶ Πόντιος Πιλᾶτος σὺν"
+    },
+    {
+      "ref": "Acts 10:38",
+      "form": "ἔχρισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 38,
+      "left_context": "Ἰησοῦν τὸν ἀπὸ Ναζαρέθ, ὡς",
+      "right_context": "αὐτὸν ὁ θεὸς πνεύματι ἁγίῳ καὶ"
+    },
+    {
+      "ref": "Luke 4:18",
+      "form": "ἔχρισέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 18,
+      "left_context": "Πνεῦμα κυρίου ἐπ’ ἐμέ, οὗ εἵνεκεν",
+      "right_context": "με εὐαγγελίσασθαι πτωχοῖς, ἀπέσταλκέν ⸀με κηρύξαι"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "2 Corinthians": 1,
+    "Hebrews": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισέω",
+      "display": "odiaste",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνομία",
+      "display": "iniquidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παῖς",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "Herodes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πόντιος",
+      "display": "Poncio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ναζαρέθ",
+      "display": "de·Nazaret",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἵνεκεν",
+      "display": "por·causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγελίζω",
+      "display": "evangelizar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτωχός",
+      "display": "pobres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "ha enviado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:38",
+      "reason": "occurs near θεός, ἅγιος, Ἰησοῦς"
+    },
+    {
+      "ref": "Acts 4:27",
+      "reason": "occurs near ἅγιος, Ἰησοῦς"
+    },
+    {
+      "ref": "2 Corinthians 1:21",
+      "reason": "occurs near Χριστός, θεός"
+    },
+    {
+      "ref": "Hebrews 1:9",
+      "reason": "occurs near θεός, μισέω"
+    },
+    {
+      "ref": "Luke 4:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

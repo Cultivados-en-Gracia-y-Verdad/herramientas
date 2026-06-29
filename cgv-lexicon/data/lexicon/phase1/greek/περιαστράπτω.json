@@ -1,0 +1,117 @@
+{
+  "lemma": "περιαστράπτω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "περιήστραψεν⸃",
+      "count": 1
+    },
+    {
+      "form": "περιαστράψαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:3",
+      "form": "περιήστραψεν⸃",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 3,
+      "left_context": "ἐγγίζειν τῇ Δαμασκῷ, ⸂ἐξαίφνης τε αὐτὸν",
+      "right_context": "φῶς ⸀ἐκ τοῦ οὐρανοῦ,"
+    },
+    {
+      "ref": "Acts 22:6",
+      "form": "περιαστράψαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 6,
+      "left_context": "περὶ μεσημβρίαν ἐξαίφνης ἐκ τοῦ οὐρανοῦ",
+      "right_context": "φῶς ἱκανὸν περὶ ἐμέ,"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐξαίφνης",
+      "display": "de·repente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φῶς",
+      "display": "luz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Δαμασκός",
+      "display": "Damasco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεσημβρία",
+      "display": "mediodía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficiente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:6",
+      "reason": "occurs near οὐρανός, φῶς, ἐξαίφνης"
+    },
+    {
+      "ref": "Acts 9:3",
+      "reason": "occurs near Δαμασκός, οὐρανός, τέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

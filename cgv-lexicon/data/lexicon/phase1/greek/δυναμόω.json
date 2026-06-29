@@ -1,0 +1,131 @@
+{
+  "lemma": "δυναμόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "δυναμούμενοι",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐδυναμώθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 1:11",
+      "form": "δυναμούμενοι",
+      "morph": "V-P-P-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ἐν πάσῃ δυνάμει",
+      "right_context": "κατὰ τὸ κράτος τῆς δόξης αὐτοῦ"
+    },
+    {
+      "ref": "Hebrews 11:34",
+      "form": "⸀ἐδυναμώθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 34,
+      "left_context": "ἔσβεσαν δύναμιν πυρός, ἔφυγον στόματα ⸀μαχαίρης,",
+      "right_context": "ἀπὸ ἀσθενείας, ἐγενήθησαν ἰσχυροὶ ἐν πολέμῳ,"
+    }
+  ],
+  "books": {
+    "Colossians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κράτος",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "de·gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φεύγω",
+      "display": "huieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "bocas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχαιρα",
+      "display": "de·espada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθένεια",
+      "display": "de·enfermedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχυρός",
+      "display": "fuertes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 1:11",
+      "reason": "occurs near δόξα, δύναμις, κράτος"
+    },
+    {
+      "ref": "Hebrews 11:34",
+      "reason": "occurs near δύναμις, πῦρ, φεύγω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

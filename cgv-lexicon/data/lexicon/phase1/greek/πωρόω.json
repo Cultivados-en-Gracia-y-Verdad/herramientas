@@ -1,0 +1,206 @@
+{
+  "lemma": "πωρόω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐπωρώθη",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπώρωσεν",
+      "count": 1
+    },
+    {
+      "form": "πεπωρωμένη.",
+      "count": 1
+    },
+    {
+      "form": "⸀πεπωρωμένην",
+      "count": 1
+    },
+    {
+      "form": "ἐπωρώθησαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 3,
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 4,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 3:14",
+      "form": "ἐπωρώθη",
+      "morph": "V-A-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "ἀλλὰ",
+      "right_context": "τὰ νοήματα αὐτῶν. ἄχρι γὰρ τῆς"
+    },
+    {
+      "ref": "John 12:40",
+      "form": "⸀ἐπώρωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 40,
+      "left_context": "Τετύφλωκεν αὐτῶν τοὺς ὀφθαλμοὺς καὶ",
+      "right_context": "αὐτῶν τὴν καρδίαν, ἵνα μὴ ἴδωσιν"
+    },
+    {
+      "ref": "Mark 6:52",
+      "form": "πεπωρωμένη.",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 52,
+      "left_context": "ἄρτοις, ⸂ἀλλ’ ἦν⸃ αὐτῶν ἡ καρδία",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 8:17",
+      "form": "⸀πεπωρωμένην",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 17,
+      "left_context": "οὐκ ἔχετε; οὔπω νοεῖτε οὐδὲ συνίετε;",
+      "right_context": "ἔχετε τὴν καρδίαν ὑμῶν;"
+    },
+    {
+      "ref": "Romans 11:7",
+      "form": "ἐπωρώθησαν,",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "δὲ ἐκλογὴ ἐπέτυχεν· οἱ δὲ λοιποὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "2 Corinthians": 1,
+    "John": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "νόημα",
+      "display": "pensamientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τυφλόω",
+      "display": "ha cegado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔπω",
+      "display": "aún·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοέω",
+      "display": "entendéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνίημι",
+      "display": "entendéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλογή",
+      "display": "elección",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτυγχάνω",
+      "display": "alcanzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 8:17",
+      "negator": "οὐδὲ",
+      "clause_text": "ὅτι ἄρτους οὐκ ἔχετε; οὔπω νοεῖτε οὐδὲ συνίετε; ⸀πεπωρωμένην ἔχετε τὴν καρδίαν ὑμῶν;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 6:52",
+      "reason": "occurs near καρδία"
+    },
+    {
+      "ref": "Mark 8:17",
+      "reason": "occurs near καρδία"
+    },
+    {
+      "ref": "2 Corinthians 3:14",
+      "reason": "occurs near νόημα, ἄχρι"
+    },
+    {
+      "ref": "John 12:40",
+      "reason": "occurs near καρδία, τυφλόω, ὀφθαλμός"
+    },
+    {
+      "ref": "Romans 11:7",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,142 @@
+{
+  "lemma": "ἐπιστηρίζω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπιστηρίζοντες",
+      "count": 1
+    },
+    {
+      "form": "ἐπεστήριξαν·",
+      "count": 1
+    },
+    {
+      "form": "ἐπιστηρίζων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 14:22",
+      "form": "ἐπιστηρίζοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 22,
+      "left_context": "",
+      "right_context": "τὰς ψυχὰς τῶν μαθητῶν, παρακαλοῦντες ἐμμένειν"
+    },
+    {
+      "ref": "Acts 15:32",
+      "form": "ἐπεστήριξαν·",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 32,
+      "left_context": "λόγου πολλοῦ παρεκάλεσαν τοὺς ἀδελφοὺς καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 15:41",
+      "form": "ἐπιστηρίζων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 41,
+      "left_context": "δὲ τὴν Συρίαν καὶ ⸀τὴν Κιλικίαν",
+      "right_context": "τὰς ἐκκλησίας."
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Συρία",
+      "display": "Siria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κιλικία",
+      "display": "Cilicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesias",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 14:22",
+      "reason": "occurs near μαθητής, παρακαλέω, ψυχή"
+    },
+    {
+      "ref": "Acts 15:32",
+      "reason": "occurs near παρακαλέω, πολύς, ἀδελφός"
+    },
+    {
+      "ref": "Acts 15:41",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

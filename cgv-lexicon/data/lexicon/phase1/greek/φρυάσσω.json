@@ -1,0 +1,98 @@
+{
+  "lemma": "φρυάσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐφρύαξαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 4:25",
+      "form": "ἐφρύαξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 25,
+      "left_context": "στόματος Δαυὶδ παιδός σου εἰπών· Ἱνατί",
+      "right_context": "ἔθνη καὶ λαοὶ ἐμελέτησαν κενά;"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Δαυίδ",
+      "display": "de·David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παῖς",
+      "display": "de·siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱνατί",
+      "display": "por·qué",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μελετάω",
+      "display": "meditaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κενός",
+      "display": "vacíos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 4:25",
+      "reason": "occurs near Δαυίδ, λαός, παῖς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

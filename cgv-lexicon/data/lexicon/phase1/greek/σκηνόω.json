@@ -1,0 +1,194 @@
+{
+  "lemma": "σκηνόω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "σκηνώσει",
+      "count": 2
+    },
+    {
+      "form": "σκηνοῦντες.",
+      "count": 1
+    },
+    {
+      "form": "σκηνοῦντας.",
+      "count": 1
+    },
+    {
+      "form": "ἐσκήνωσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "future": 2,
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 7:15",
+      "form": "σκηνώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "καὶ ὁ καθήμενος ἐπὶ ⸂τοῦ θρόνου⸃",
+      "right_context": "ἐπ’ αὐτούς."
+    },
+    {
+      "ref": "Revelation 12:12",
+      "form": "σκηνοῦντες.",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "⸀οἱ οὐρανοὶ καὶ οἱ ἐν αὐτοῖς",
+      "right_context": "οὐαὶ ⸂τὴν γῆν καὶ τὴν θάλασσαν⸃,"
+    },
+    {
+      "ref": "Revelation 13:6",
+      "form": "σκηνοῦντας.",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "σκηνὴν αὐτοῦ, τοὺς ἐν τῷ οὐρανῷ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 21:3",
+      "form": "σκηνώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 21,
+      "verse": 3,
+      "left_context": "τοῦ θεοῦ μετὰ τῶν ἀνθρώπων, καὶ",
+      "right_context": "μετ’ αὐτῶν, καὶ αὐτοὶ ⸀λαοὶ αὐτοῦ"
+    },
+    {
+      "ref": "John 1:14",
+      "form": "ἐσκήνωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "Καὶ ὁ λόγος σὰρξ ἐγένετο καὶ",
+      "right_context": "ἐν ἡμῖν, καὶ ἐθεασάμεθα τὴν δόξαν"
+    }
+  ],
+  "books": {
+    "Revelation": 4,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θρόνος",
+      "display": "de·trono",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐαί",
+      "display": "¡ay!",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεάομαι",
+      "display": "contemplamos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 12:12",
+      "reason": "occurs near γῆ, οὐαί, οὐρανός"
+    },
+    {
+      "ref": "Revelation 13:6",
+      "reason": "occurs near οὐρανός"
+    },
+    {
+      "ref": "Revelation 21:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 7:15",
+      "reason": "occurs near θρόνος, κάθημαι"
+    },
+    {
+      "ref": "John 1:14",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

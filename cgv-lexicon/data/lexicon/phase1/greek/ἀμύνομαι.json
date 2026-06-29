@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀμύνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἠμύνατο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:24",
+      "form": "ἠμύνατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 24,
+      "left_context": "καὶ ἰδών τινα ἀδικούμενον",
+      "right_context": "καὶ ἐποίησεν ἐκδίκησιν τῷ καταπονουμένῳ πατάξας"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικέω",
+      "display": "hacer·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδίκησις",
+      "display": "venganza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταπονέω",
+      "display": "afligido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 7:24",
+      "reason": "occurs near καταπονέω, ἀδικέω, ἐκδίκησις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

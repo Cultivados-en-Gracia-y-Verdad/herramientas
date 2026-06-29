@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀντιστρατεύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀντιστρατευόμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 7:23",
+      "form": "ἀντιστρατευόμενον",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 23,
+      "left_context": "ἕτερον νόμον ἐν τοῖς μέλεσίν μου",
+      "right_context": "τῷ νόμῳ τοῦ νοός μου καὶ"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέλος",
+      "display": "miembros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "de·mente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 7:23",
+      "reason": "occurs near μέλος, νοῦς, νόμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

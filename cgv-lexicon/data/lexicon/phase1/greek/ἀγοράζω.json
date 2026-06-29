@@ -1,0 +1,657 @@
+{
+  "lemma": "ἀγοράζω",
+  "language": "greek",
+  "total_occurrences": 30,
+  "forms": [
+    {
+      "form": "ἀγοράσαι",
+      "count": 3
+    },
+    {
+      "form": "ἀγοράζει",
+      "count": 2
+    },
+    {
+      "form": "ἀγοράσωμεν",
+      "count": 2
+    },
+    {
+      "form": "ἠγόρασα",
+      "count": 2
+    },
+    {
+      "form": "ἀγοράσωσιν",
+      "count": 2
+    },
+    {
+      "form": "ἀγοράζοντας",
+      "count": 2
+    },
+    {
+      "form": "ἠγόρασαν",
+      "count": 2
+    },
+    {
+      "form": "ἠγοράσθητε",
+      "count": 1
+    },
+    {
+      "form": "ἠγοράσθητε·",
+      "count": 1
+    },
+    {
+      "form": "ἀγοράζοντες",
+      "count": 1
+    },
+    {
+      "form": "ἀγοράσαντα",
+      "count": 1
+    },
+    {
+      "form": "ἠγόρασας",
+      "count": 1
+    },
+    {
+      "form": "ἠγορασμένοι",
+      "count": 1
+    },
+    {
+      "form": "ἠγοράσθησαν",
+      "count": 1
+    },
+    {
+      "form": "ἀγοράσωσιν.",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀγοράσωμεν",
+      "count": 1
+    },
+    {
+      "form": "Ἀγόρασον",
+      "count": 1
+    },
+    {
+      "form": "ἠγόραζον,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀγορασάτω",
+      "count": 1
+    },
+    {
+      "form": "ἀγοράσας",
+      "count": 1
+    },
+    {
+      "form": "ἠγόρασεν",
+      "count": 1
+    },
+    {
+      "form": "ἀγοράσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 12,
+      "participle": 6,
+      "infinitive": 3,
+      "subjunctive": 6,
+      "imperative": 3
+    },
+    "tenses": {
+      "aorist": 23,
+      "present": 5,
+      "perfect": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 4,
+      "active": 26
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 6:20",
+      "form": "ἠγοράσθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 20,
+      "left_context": "",
+      "right_context": "γὰρ τιμῆς· δοξάσατε δὴ τὸν θεὸν"
+    },
+    {
+      "ref": "1 Corinthians 7:23",
+      "form": "ἠγοράσθητε·",
+      "morph": "V-A-P-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 23,
+      "left_context": "τιμῆς",
+      "right_context": "μὴ γίνεσθε δοῦλοι ἀνθρώπων."
+    },
+    {
+      "ref": "1 Corinthians 7:30",
+      "form": "ἀγοράζοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 30,
+      "left_context": "χαίροντες ὡς μὴ χαίροντες, καὶ οἱ",
+      "right_context": "ὡς μὴ κατέχοντες,"
+    },
+    {
+      "ref": "2 Peter 2:1",
+      "form": "ἀγοράσαντα",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "οἵτινες παρεισάξουσιν αἱρέσεις ἀπωλείας, καὶ τὸν",
+      "right_context": "αὐτοὺς δεσπότην ἀρνούμενοι, ἐπάγοντες ἑαυτοῖς ταχινὴν"
+    },
+    {
+      "ref": "Revelation 3:18",
+      "form": "ἀγοράσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "συμβουλεύω σοι",
+      "right_context": "⸂παρ’ ἐμοῦ χρυσίον⸃ πεπυρωμένον ἐκ πυρὸς"
+    },
+    {
+      "ref": "Revelation 5:9",
+      "form": "ἠγόρασας",
+      "morph": "V-A-A-I-2S",
+      "book": "Revelation",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "τὰς σφραγῖδας αὐτοῦ, ὅτι ἐσφάγης καὶ",
+      "right_context": "τῷ ⸀θεῷ ἐν τῷ αἵματί σου"
+    },
+    {
+      "ref": "Revelation 13:17",
+      "form": "ἀγοράσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 13,
+      "verse": 17,
+      "left_context": "καὶ ἵνα μή τις ⸀δύνηται",
+      "right_context": "ἢ πωλῆσαι εἰ μὴ ὁ ἔχων"
+    },
+    {
+      "ref": "Revelation 14:3",
+      "form": "ἠγορασμένοι",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 3,
+      "left_context": "αἱ ἑκατὸν τεσσεράκοντα τέσσαρες χιλιάδες, οἱ",
+      "right_context": "ἀπὸ τῆς γῆς."
+    },
+    {
+      "ref": "Revelation 14:4",
+      "form": "ἠγοράσθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 4,
+      "left_context": "τῷ ἀρνίῳ ὅπου ἂν ⸀ὑπάγῃ· ⸁οὗτοι",
+      "right_context": "ἀπὸ τῶν ἀνθρώπων ἀπαρχὴ τῷ θεῷ"
+    },
+    {
+      "ref": "Revelation 18:11",
+      "form": "ἀγοράζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 11,
+      "left_context": "⸀αὐτήν, ὅτι τὸν γόμον αὐτῶν οὐδεὶς",
+      "right_context": "οὐκέτι,"
+    },
+    {
+      "ref": "John 4:8",
+      "form": "ἀγοράσωσιν.",
+      "morph": "V-A-A-S-3P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "ἀπεληλύθεισαν εἰς τὴν πόλιν, ἵνα τροφὰς",
+      "right_context": ""
+    },
+    {
+      "ref": "John 6:5",
+      "form": "⸀ἀγοράσωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "πρὸς αὐτὸν λέγει ⸀πρὸς Φίλιππον· Πόθεν",
+      "right_context": "ἄρτους ἵνα φάγωσιν οὗτοι;"
+    },
+    {
+      "ref": "John 13:29",
+      "form": "Ἀγόρασον",
+      "morph": "V-A-A-D-2S",
+      "book": "John",
+      "chapter": 13,
+      "verse": 29,
+      "left_context": "Ἰούδας, ὅτι λέγει αὐτῷ ⸀ὁ Ἰησοῦς·",
+      "right_context": "ὧν χρείαν ἔχομεν εἰς τὴν ἑορτήν,"
+    },
+    {
+      "ref": "Luke 9:13",
+      "form": "ἀγοράσωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 13,
+      "left_context": "ἰχθύες δύο, εἰ μήτι πορευθέντες ἡμεῖς",
+      "right_context": "εἰς πάντα τὸν λαὸν τοῦτον βρώματα."
+    },
+    {
+      "ref": "Luke 14:18",
+      "form": "ἠγόρασα",
+      "morph": "V-A-A-I-1S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 18,
+      "left_context": "παραιτεῖσθαι⸃. ὁ πρῶτος εἶπεν αὐτῷ· Ἀγρὸν",
+      "right_context": "καὶ ἔχω ἀνάγκην ⸀ἐξελθὼν ἰδεῖν αὐτόν·"
+    },
+    {
+      "ref": "Luke 14:19",
+      "form": "ἠγόρασα",
+      "morph": "V-A-A-I-1S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "καὶ ἕτερος εἶπεν· Ζεύγη βοῶν",
+      "right_context": "πέντε καὶ πορεύομαι δοκιμάσαι αὐτά· ἐρωτῶ"
+    },
+    {
+      "ref": "Luke 17:28",
+      "form": "ἠγόραζον,",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 28,
+      "left_context": "ἐν ταῖς ἡμέραις Λώτ· ἤσθιον, ἔπινον,",
+      "right_context": "ἐπώλουν, ἐφύτευον, ᾠκοδόμουν·"
+    },
+    {
+      "ref": "Luke 22:36",
+      "form": "⸀ἀγορασάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 36,
+      "left_context": "ἔχων ⸀πωλησάτω τὸ ἱμάτιον αὐτοῦ καὶ",
+      "right_context": "μάχαιραν."
+    },
+    {
+      "ref": "Mark 6:36",
+      "form": "ἀγοράσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 36,
+      "left_context": "εἰς τοὺς κύκλῳ ἀγροὺς καὶ κώμας",
+      "right_context": "ἑαυτοῖς ⸂τί φάγωσιν⸃."
+    },
+    {
+      "ref": "Mark 6:37",
+      "form": "ἀγοράσωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 37,
+      "left_context": "ὑμεῖς φαγεῖν. καὶ λέγουσιν αὐτῷ· Ἀπελθόντες",
+      "right_context": "δηναρίων διακοσίων ἄρτους καὶ ⸀δώσομεν αὐτοῖς"
+    },
+    {
+      "ref": "Mark 11:15",
+      "form": "ἀγοράζοντας",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "ἤρξατο ἐκβάλλειν τοὺς πωλοῦντας καὶ ⸀τοὺς",
+      "right_context": "ἐν τῷ ἱερῷ, καὶ τὰς τραπέζας"
+    },
+    {
+      "ref": "Mark 15:46",
+      "form": "ἀγοράσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 46,
+      "left_context": "καὶ",
+      "right_context": "⸀σινδόνα καθελὼν αὐτὸν ἐνείλησεν τῇ σινδόνι"
+    },
+    {
+      "ref": "Mark 16:1",
+      "form": "ἠγόρασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 1,
+      "left_context": "Μαρία ⸂ἡ τοῦ⸃ Ἰακώβου καὶ Σαλώμη",
+      "right_context": "ἀρώματα ἵνα ἐλθοῦσαι ἀλείψωσιν αὐτόν."
+    },
+    {
+      "ref": "Matthew 13:44",
+      "form": "ἀγοράζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 44,
+      "left_context": "καὶ ⸂πωλεῖ πάντα ὅσα ἔχει⸃ καὶ",
+      "right_context": "τὸν ἀγρὸν ἐκεῖνον."
+    },
+    {
+      "ref": "Matthew 13:46",
+      "form": "ἠγόρασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 46,
+      "left_context": "ἀπελθὼν πέπρακεν πάντα ὅσα εἶχεν καὶ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Matthew 14:15",
+      "form": "ἀγοράσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 15,
+      "left_context": "ὄχλους, ἵνα ἀπελθόντες εἰς τὰς κώμας",
+      "right_context": "ἑαυτοῖς βρώματα."
+    },
+    {
+      "ref": "Matthew 21:12",
+      "form": "ἀγοράζοντας",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "καὶ ἐξέβαλεν πάντας τοὺς πωλοῦντας καὶ",
+      "right_context": "ἐν τῷ ἱερῷ καὶ τὰς τραπέζας"
+    },
+    {
+      "ref": "Matthew 25:9",
+      "form": "ἀγοράσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 9,
+      "left_context": "⸀πορεύεσθε μᾶλλον πρὸς τοὺς πωλοῦντας καὶ",
+      "right_context": "ἑαυταῖς."
+    },
+    {
+      "ref": "Matthew 25:10",
+      "form": "ἀγοράσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 10,
+      "left_context": "ἀπερχομένων δὲ αὐτῶν",
+      "right_context": "ἦλθεν ὁ νυμφίος, καὶ αἱ ἕτοιμοι"
+    },
+    {
+      "ref": "Matthew 27:7",
+      "form": "ἠγόρασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 7,
+      "left_context": "συμβούλιον δὲ λαβόντες",
+      "right_context": "ἐξ αὐτῶν τὸν Ἀγρὸν τοῦ Κεραμέως"
+    }
+  ],
+  "books": {
+    "Matthew": 7,
+    "Revelation": 6,
+    "Luke": 5,
+    "Mark": 5,
+    "1 Corinthians": 3,
+    "John": 3,
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πωλέω",
+      "display": "vender",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "coman",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγρός",
+      "display": "campo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irses",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "de·honora",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "panes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "idos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldeas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulsar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venidas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δή",
+      "display": "DE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "gozando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατέχω",
+      "display": "reteniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρεισάγω",
+      "display": "introducir·secretamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἵρεσις",
+      "display": "sectas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπώλεια",
+      "display": "de·perdición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσπότης",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρνέομαι",
+      "display": "negando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπάγω",
+      "display": "traiendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 13:29",
+      "form": "Ἀγόρασον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "γλωσσόκομον ⸀εἶχεν Ἰούδας, ὅτι λέγει αὐτῷ ⸀ὁ Ἰησοῦς· Ἀγόρασον ὧν χρείαν ἔχομεν εἰς τὴν ἑορτήν, ἢ τοῖς"
+    },
+    {
+      "ref": "Luke 22:36",
+      "form": "⸀ἀγορασάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "ὁ μὴ ἔχων ⸀πωλησάτω τὸ ἱμάτιον αὐτοῦ καὶ ⸀ἀγορασάτω μάχαιραν."
+    },
+    {
+      "ref": "Matthew 25:9",
+      "form": "ἀγοράσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ ὑμῖν· ⸀πορεύεσθε μᾶλλον πρὸς τοὺς πωλοῦντας καὶ ἀγοράσατε ἑαυταῖς."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:23",
+      "negator": "μὴ",
+      "clause_text": "τιμῆς ἠγοράσθητε· μὴ γίνεσθε δοῦλοι ἀνθρώπων."
+    },
+    {
+      "ref": "1 Corinthians 7:30",
+      "negator": "μὴ",
+      "clause_text": "καὶ οἱ χαίροντες ὡς μὴ χαίροντες, καὶ οἱ ἀγοράζοντες ὡς μὴ κατέχοντες,"
+    },
+    {
+      "ref": "Revelation 13:17",
+      "negator": "μή",
+      "clause_text": "καὶ ἵνα μή τις ⸀δύνηται ἀγοράσαι ἢ πωλῆσαι εἰ μὴ ὁ ἔχων τὸ χάραγμα,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 25:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 22:36",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 13:29",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 13:44",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 13:46",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 14:15",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 21:12",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 25:10",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

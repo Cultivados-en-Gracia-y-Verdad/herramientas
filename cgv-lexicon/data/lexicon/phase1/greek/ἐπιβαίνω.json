@@ -1,0 +1,279 @@
+{
+  "lemma": "ἐπιβαίνω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἐπιβάντες",
+      "count": 2
+    },
+    {
+      "form": "ἐπέβην",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπιβαίνειν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιβὰς",
+      "count": 1
+    },
+    {
+      "form": "ἐπιβεβηκὼς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 4,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 4,
+      "present": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:18",
+      "form": "ἐπέβην",
+      "morph": "V-A-A-I-1S",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 18,
+      "left_context": "ἐπίστασθε ἀπὸ πρώτης ἡμέρας ἀφ’ ἧς",
+      "right_context": "εἰς τὴν Ἀσίαν πῶς μεθ’ ὑμῶν"
+    },
+    {
+      "ref": "Acts 21:2",
+      "form": "ἐπιβάντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 2,
+      "left_context": "καὶ εὑρόντες πλοῖον διαπερῶν εἰς Φοινίκην",
+      "right_context": "ἀνήχθημεν."
+    },
+    {
+      "ref": "Acts 21:4",
+      "form": "⸀ἐπιβαίνειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 4,
+      "left_context": "Παύλῳ ἔλεγον διὰ τοῦ πνεύματος μὴ",
+      "right_context": "εἰς ⸀Ἱεροσόλυμα."
+    },
+    {
+      "ref": "Acts 25:1",
+      "form": "ἐπιβὰς",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 1,
+      "left_context": "Φῆστος οὖν",
+      "right_context": "τῇ ἐπαρχείᾳ μετὰ τρεῖς ἡμέρας ἀνέβη"
+    },
+    {
+      "ref": "Acts 27:2",
+      "form": "ἐπιβάντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "δὲ πλοίῳ Ἀδραμυττηνῷ ⸀μέλλοντι πλεῖν ⸀εἰς"
+    },
+    {
+      "ref": "Matthew 21:5",
+      "form": "ἐπιβεβηκὼς",
+      "morph": "V-X-A-P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 5,
+      "left_context": "βασιλεύς σου ἔρχεταί σοι πραῢς καὶ",
+      "right_context": "ἐπὶ ὄνον καὶ ⸀ἐπὶ πῶλον υἱὸν"
+    }
+  ],
+  "books": {
+    "Acts": 5,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·día",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "de·primera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀσία",
+      "display": "Asia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαπεράω",
+      "display": "cruzando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φοινίκη",
+      "display": "Fenicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγω",
+      "display": "fueron subido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φῆστος",
+      "display": "Festo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαρχεία",
+      "display": "provincia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀδραμυττηνός",
+      "display": "Adramitena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλέω",
+      "display": "navegar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πραΰς",
+      "display": "manso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνος",
+      "display": "asno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶλος",
+      "display": "pollino",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 21:4",
+      "negator": "μὴ",
+      "clause_text": "οἵτινες τῷ Παύλῳ ἔλεγον διὰ τοῦ πνεύματος μὴ ⸀ἐπιβαίνειν εἰς ⸀Ἱεροσόλυμα."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:18",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:2",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:4",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 25:1",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 27:2",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Matthew 21:5",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

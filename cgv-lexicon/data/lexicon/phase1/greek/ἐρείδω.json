@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐρείδω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐρείσασα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:41",
+      "form": "ἐρείσασα",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 41,
+      "left_context": "τὴν ναῦν, καὶ ἡ μὲν πρῷρα",
+      "right_context": "ἔμεινεν ἀσάλευτος, ἡ δὲ πρύμνα ἐλύετο"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ναῦς",
+      "display": "barco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῷρα",
+      "display": "proa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μένω",
+      "display": "permaneció",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσάλευτος",
+      "display": "inmóvil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρύμνα",
+      "display": "popa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:41",
+      "reason": "occurs near μέν, μένω, ναῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,158 @@
+{
+  "lemma": "μεθύσκομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "μεθυσκόμενοι",
+      "count": 1
+    },
+    {
+      "form": "μεθύσκεσθε",
+      "count": 1
+    },
+    {
+      "form": "μεθύσκεσθαι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "imperative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 5:7",
+      "form": "μεθυσκόμενοι",
+      "morph": "V-P-P-P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "γὰρ καθεύδοντες νυκτὸς καθεύδουσιν, καὶ οἱ",
+      "right_context": "νυκτὸς μεθύουσιν·"
+    },
+    {
+      "ref": "Ephesians 5:18",
+      "form": "μεθύσκεσθε",
+      "morph": "V-P-P-D-2P",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 18,
+      "left_context": "καὶ μὴ",
+      "right_context": "οἴνῳ, ἐν ᾧ ἐστιν ἀσωτία, ἀλλὰ"
+    },
+    {
+      "ref": "Luke 12:45",
+      "form": "μεθύσκεσθαι,",
+      "morph": "V-P-P-N",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 45,
+      "left_context": "παιδίσκας, ἐσθίειν τε καὶ πίνειν καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1,
+    "Ephesians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καθεύδω",
+      "display": "dormiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μεθύω",
+      "display": "embriagarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσωτία",
+      "display": "disolución",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίνω",
+      "display": "beber",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Ephesians 5:18",
+      "form": "μεθύσκεσθε",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "καὶ μὴ μεθύσκεσθε οἴνῳ, ἐν ᾧ ἐστιν ἀσωτία, ἀλλὰ πληροῦσθε ἐν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Ephesians 5:18",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ μεθύσκεσθε οἴνῳ, ἐν ᾧ ἐστιν ἀσωτία, ἀλλὰ πληροῦσθε ἐν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 5:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Thessalonians 5:7",
+      "reason": "occurs near καθεύδω, μεθύω, νύξ"
+    },
+    {
+      "ref": "Luke 12:45",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

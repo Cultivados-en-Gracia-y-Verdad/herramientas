@@ -1,0 +1,150 @@
+{
+  "lemma": "συντρέχω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συντρεχόντων",
+      "count": 1
+    },
+    {
+      "form": "συνέδραμεν",
+      "count": 1
+    },
+    {
+      "form": "συνέδραμον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 4:4",
+      "form": "συντρεχόντων",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "ἐν ᾧ ξενίζονται μὴ",
+      "right_context": "ὑμῶν εἰς τὴν αὐτὴν τῆς ἀσωτίας"
+    },
+    {
+      "ref": "Acts 3:11",
+      "form": "συνέδραμεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "⸀αὐτοῦ τὸν Πέτρον καὶ ⸀τὸν Ἰωάννην",
+      "right_context": "⸂πᾶς ὁ λαὸς πρὸς αὐτοὺς⸃ ἐπὶ"
+    },
+    {
+      "ref": "Mark 6:33",
+      "form": "συνέδραμον",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 33,
+      "left_context": "καὶ πεζῇ ἀπὸ πασῶν τῶν πόλεων",
+      "right_context": "ἐκεῖ καὶ προῆλθον ⸀αὐτούς."
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ξενίζω",
+      "display": "son hospedado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεζῇ",
+      "display": "a·pie",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προέρχομαι",
+      "display": "adelantarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 4:4",
+      "negator": "μὴ",
+      "clause_text": "ἐν ᾧ ξενίζονται μὴ συντρεχόντων ὑμῶν εἰς τὴν αὐτὴν τῆς ἀσωτίας ἀνάχυσιν, βλασφημοῦντες·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 4:4",
+      "reason": "occurs near ξενίζω"
+    },
+    {
+      "ref": "Acts 3:11",
+      "reason": "occurs near Πέτρος, λαός, Ἰωάννης"
+    },
+    {
+      "ref": "Mark 6:33",
+      "reason": "occurs near πεζῇ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

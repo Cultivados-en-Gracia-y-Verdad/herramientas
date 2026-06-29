@@ -1,0 +1,76 @@
+{
+  "lemma": "μετεωρίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μετεωρίζεσθε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:29",
+      "form": "μετεωρίζεσθε,",
+      "morph": "V-P-M-D-2P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 29,
+      "left_context": "φάγητε ⸀καὶ τί πίητε, καὶ μὴ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίνω",
+      "display": "bebáis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 12:29",
+      "form": "μετεωρίζεσθε,",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "ζητεῖτε τί φάγητε ⸀καὶ τί πίητε, καὶ μὴ μετεωρίζεσθε,",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:29",
+      "negator": "μὴ",
+      "clause_text": "ζητεῖτε τί φάγητε ⸀καὶ τί πίητε, καὶ μὴ μετεωρίζεσθε,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:29",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

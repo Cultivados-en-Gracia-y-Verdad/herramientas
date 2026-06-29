@@ -1,0 +1,80 @@
+{
+  "lemma": "σμυρνίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐσμυρνισμένον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 15:23",
+      "form": "ἐσμυρνισμένον",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 23,
+      "left_context": "καὶ ἐδίδουν ⸀αὐτῷ",
+      "right_context": "οἶνον, ⸀ὃς δὲ οὐκ ἔλαβεν."
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δίδωμι",
+      "display": "daban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 15:23",
+      "negator": "οὐκ",
+      "clause_text": "καὶ ἐδίδουν ⸀αὐτῷ ἐσμυρνισμένον οἶνον, ⸀ὃς δὲ οὐκ ἔλαβεν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 15:23",
+      "reason": "occurs near δίδωμι, λαμβάνω, οἶνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

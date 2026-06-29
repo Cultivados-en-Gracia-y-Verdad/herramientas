@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐνειλέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐνείλησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 15:46",
+      "form": "ἐνείλησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 46,
+      "left_context": "καὶ ἀγοράσας ⸀σινδόνα καθελὼν αὐτὸν",
+      "right_context": "τῇ σινδόνι καὶ ⸀ἔθηκεν αὐτὸν ἐν"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σινδών",
+      "display": "lienzo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγοράζω",
+      "display": "comprado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαιρέω",
+      "display": "bajado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "puso",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 15:46",
+      "reason": "occurs near καθαιρέω, σινδών, τίθημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

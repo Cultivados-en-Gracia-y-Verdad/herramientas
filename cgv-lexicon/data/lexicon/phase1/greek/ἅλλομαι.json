@@ -1,0 +1,155 @@
+{
+  "lemma": "ἅλλομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἁλλόμενος",
+      "count": 1
+    },
+    {
+      "form": "⸀ἥλατο",
+      "count": 1
+    },
+    {
+      "form": "ἁλλομένου",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 3:8",
+      "form": "ἁλλόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "αὐτοῖς εἰς τὸ ἱερὸν περιπατῶν καὶ",
+      "right_context": "καὶ αἰνῶν τὸν θεόν."
+    },
+    {
+      "ref": "Acts 14:10",
+      "form": "⸀ἥλατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 10,
+      "left_context": "ἐπὶ τοὺς πόδας σου ⸀ὀρθός· καὶ",
+      "right_context": "καὶ περιεπάτει."
+    },
+    {
+      "ref": "John 4:14",
+      "form": "ἁλλομένου",
+      "morph": "V-P-M-P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "αὐτῷ γενήσεται ἐν αὐτῷ πηγὴ ὕδατος",
+      "right_context": "εἰς ζωὴν αἰώνιον."
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "περιπατέω",
+      "display": "andando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰνέω",
+      "display": "alabando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀρθός",
+      "display": "recto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πηγή",
+      "display": "fuente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "eterna",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 14:10",
+      "reason": "occurs near περιπατέω, πούς"
+    },
+    {
+      "ref": "Acts 3:8",
+      "reason": "occurs near αἰνέω, θεός, περιπατέω"
+    },
+    {
+      "ref": "John 4:14",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

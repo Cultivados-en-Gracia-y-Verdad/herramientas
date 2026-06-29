@@ -1,0 +1,88 @@
+{
+  "lemma": "διανέμω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διανεμηθῇ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 4:17",
+      "form": "διανεμηθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "ἀλλ’ ἵνα μὴ ἐπὶ πλεῖον",
+      "right_context": "εἰς τὸν λαόν, ⸀ἀπειλησώμεθα αὐτοῖς μηκέτι"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπειλέω",
+      "display": "amenazemos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 4:17",
+      "form": "διανεμηθῇ",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "ἀλλ’ ἵνα μὴ ἐπὶ πλεῖον διανεμηθῇ εἰς τὸν λαόν, ⸀ἀπειλησώμεθα αὐτοῖς μηκέτι λαλεῖν ἐπὶ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 4:17",
+      "negator": "μὴ",
+      "clause_text": "ἀλλ’ ἵνα μὴ ἐπὶ πλεῖον διανεμηθῇ εἰς τὸν λαόν, ⸀ἀπειλησώμεθα αὐτοῖς μηκέτι λαλεῖν ἐπὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 4:17",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

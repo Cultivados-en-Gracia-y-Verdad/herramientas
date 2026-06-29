@@ -1,0 +1,168 @@
+{
+  "lemma": "εὐκαιρέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "εὐκαιρήσῃ.",
+      "count": 1
+    },
+    {
+      "form": "ηὐκαίρουν",
+      "count": 1
+    },
+    {
+      "form": "εὐκαίρουν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:12",
+      "form": "εὐκαιρήσῃ.",
+      "morph": "V-A-A-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 12,
+      "left_context": "ἵνα νῦν ἔλθῃ, ἐλεύσεται δὲ ὅταν",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 17:21",
+      "form": "ηὐκαίρουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 21,
+      "left_context": "οἱ ἐπιδημοῦντες ξένοι εἰς οὐδὲν ἕτερον",
+      "right_context": "ἢ λέγειν τι ⸀ἢ ἀκούειν ⸀τι"
+    },
+    {
+      "ref": "Mark 6:31",
+      "form": "εὐκαίρουν.",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 31,
+      "left_context": "οἱ ὑπάγοντες πολλοί, καὶ οὐδὲ φαγεῖν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vena",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιδημέω",
+      "display": "residiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξένος",
+      "display": "extranjeros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "iendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comer",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 6:31",
+      "negator": "οὐδὲ",
+      "clause_text": "ἐρχόμενοι καὶ οἱ ὑπάγοντες πολλοί, καὶ οὐδὲ φαγεῖν εὐκαίρουν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 16:12",
+      "reason": "occurs near νῦν, ἔρχομαι, ὅταν"
+    },
+    {
+      "ref": "Acts 17:21",
+      "reason": "occurs near ἐπιδημέω, ἤ"
+    },
+    {
+      "ref": "Mark 6:31",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

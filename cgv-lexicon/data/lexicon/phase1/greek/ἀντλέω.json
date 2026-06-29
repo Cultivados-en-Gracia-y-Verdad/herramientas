@@ -1,0 +1,217 @@
+{
+  "lemma": "ἀντλέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "Ἀντλήσατε",
+      "count": 1
+    },
+    {
+      "form": "ἠντληκότες",
+      "count": 1
+    },
+    {
+      "form": "ἀντλῆσαι",
+      "count": 1
+    },
+    {
+      "form": "ἀντλεῖν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 1,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "perfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "John 2:8",
+      "form": "Ἀντλήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "John",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "καὶ λέγει αὐτοῖς·",
+      "right_context": "νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ· ⸂οἱ"
+    },
+    {
+      "ref": "John 2:9",
+      "form": "ἠντληκότες",
+      "morph": "V-X-A-P",
+      "book": "John",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "ἐστίν, οἱ δὲ διάκονοι ᾔδεισαν οἱ",
+      "right_context": "τὸ ὕδωρ, φωνεῖ τὸν νυμφίον ὁ"
+    },
+    {
+      "ref": "John 4:7",
+      "form": "ἀντλῆσαι",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "Ἔρχεται γυνὴ ἐκ τῆς Σαμαρείας",
+      "right_context": "ὕδωρ. λέγει αὐτῇ ὁ Ἰησοῦς· Δός"
+    },
+    {
+      "ref": "John 4:15",
+      "form": "ἀντλεῖν.",
+      "morph": "V-P-A-N",
+      "book": "John",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "ἵνα μὴ διψῶ μηδὲ ⸀διέρχωμαι ἐνθάδε",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "John": 4
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὕδωρ",
+      "display": "agua",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιτρίκλινος",
+      "display": "maestresala",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάκονος",
+      "display": "servidores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habían sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνέω",
+      "display": "llama",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυμφίος",
+      "display": "novio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαμάρεια",
+      "display": "de·Samaria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διψάω",
+      "display": "tener·sed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διέρχομαι",
+      "display": "pasara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνθάδε",
+      "display": "aquí",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 2:8",
+      "form": "Ἀντλήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ λέγει αὐτοῖς· Ἀντλήσατε νῦν καὶ φέρετε τῷ ἀρχιτρικλίνῳ· ⸂οἱ δὲ⸃ ἤνεγκαν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 4:15",
+      "negator": "μηδὲ",
+      "clause_text": "τὸ ὕδωρ, ἵνα μὴ διψῶ μηδὲ ⸀διέρχωμαι ἐνθάδε ἀντλεῖν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 2:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 2:9",
+      "reason": "occurs near διάκονος, ὕδωρ"
+    },
+    {
+      "ref": "John 4:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 4:7",
+      "reason": "occurs near ὕδωρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

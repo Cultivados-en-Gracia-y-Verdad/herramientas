@@ -1,0 +1,279 @@
+{
+  "lemma": "ἀνακλίνω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἀνακλιθήσονται",
+      "count": 2
+    },
+    {
+      "form": "ἀνέκλινεν",
+      "count": 1
+    },
+    {
+      "form": "ἀνακλινεῖ",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀνακλῖναι",
+      "count": 1
+    },
+    {
+      "form": "ἀνακλιθῆναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 3
+    },
+    "voices": {
+      "active": 3,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 2:7",
+      "form": "ἀνέκλινεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "τὸν πρωτότοκον, καὶ ἐσπαργάνωσεν αὐτὸν καὶ",
+      "right_context": "αὐτὸν ⸀ἐν φάτνῃ, διότι οὐκ ἦν"
+    },
+    {
+      "ref": "Luke 12:37",
+      "form": "ἀνακλινεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 37,
+      "left_context": "ἀμὴν λέγω ὑμῖν ὅτι περιζώσεται καὶ",
+      "right_context": "αὐτοὺς καὶ παρελθὼν διακονήσει αὐτοῖς."
+    },
+    {
+      "ref": "Luke 13:29",
+      "form": "ἀνακλιθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 29,
+      "left_context": "καὶ ⸀ἀπὸ βορρᾶ καὶ νότου καὶ",
+      "right_context": "ἐν τῇ βασιλείᾳ τοῦ θεοῦ."
+    },
+    {
+      "ref": "Mark 6:39",
+      "form": "⸀ἀνακλῖναι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 39,
+      "left_context": "καὶ ἐπέταξεν αὐτοῖς",
+      "right_context": "πάντας συμπόσια συμπόσια ἐπὶ τῷ χλωρῷ"
+    },
+    {
+      "ref": "Matthew 8:11",
+      "form": "ἀνακλιθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 11,
+      "left_context": "ἀπὸ ἀνατολῶν καὶ δυσμῶν ἥξουσιν καὶ",
+      "right_context": "μετὰ Ἀβραὰμ καὶ Ἰσαὰκ καὶ Ἰακὼβ"
+    },
+    {
+      "ref": "Matthew 14:19",
+      "form": "ἀνακλιθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "καὶ κελεύσας τοὺς ὄχλους",
+      "right_context": "ἐπὶ ⸂τοῦ χόρτου⸃, λαβὼν τοὺς πέντε"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Matthew": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συμπόσιον",
+      "display": "banquetes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρωτότοκος",
+      "display": "primogénito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπαργανόω",
+      "display": "envolvió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φάτνη",
+      "display": "pesebre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διότι",
+      "display": "porque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιζώννυμι",
+      "display": "ceñirá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρέρχομαι",
+      "display": "pasado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονέω",
+      "display": "servirá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βορρᾶς",
+      "display": "de·norte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νότος",
+      "display": "de·sur",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτάσσω",
+      "display": "mandó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνατολή",
+      "display": "de·orientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυσμή",
+      "display": "de·ocasos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥκω",
+      "display": "vendrán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "de·Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσαάκ",
+      "display": "de·Isaac",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "mandado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χόρτος",
+      "display": "de·hierba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:37",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 13:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 2:7",
+      "reason": "occurs near διότι, πρωτότοκος, σπαργανόω"
+    },
+    {
+      "ref": "Matthew 14:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 8:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 6:39",
+      "reason": "occurs near συμπόσιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "περιδέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "περιεδέδετο.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "pluperfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 11:44",
+      "form": "περιεδέδετο.",
+      "morph": "V-Y-P-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 44,
+      "left_context": "κειρίαις, καὶ ἡ ὄψις αὐτοῦ σουδαρίῳ",
+      "right_context": "λέγει ⸂αὐτοῖς ὁ Ἰησοῦς⸃· Λύσατε αὐτὸν"
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄψις",
+      "display": "vista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σουδάριον",
+      "display": "sudario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύω",
+      "display": "desatad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:44",
+      "reason": "occurs near λύω, σουδάριον, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

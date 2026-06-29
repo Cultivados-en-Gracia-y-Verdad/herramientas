@@ -1,0 +1,92 @@
+{
+  "lemma": "ἀντοφθαλμέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀντοφθαλμεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:15",
+      "form": "ἀντοφθαλμεῖν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 15,
+      "left_context": "δὲ τοῦ πλοίου καὶ μὴ δυναμένου",
+      "right_context": "τῷ ἀνέμῳ ἐπιδόντες ἐφερόμεθα."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλοῖον",
+      "display": "de·barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιδίδωμι",
+      "display": "entregados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "eran llevado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 27:15",
+      "negator": "μὴ",
+      "clause_text": "συναρπασθέντος δὲ τοῦ πλοίου καὶ μὴ δυναμένου ἀντοφθαλμεῖν τῷ ἀνέμῳ ἐπιδόντες ἐφερόμεθα."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:15",
+      "reason": "occurs near δύναμαι, πλοῖον, φέρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

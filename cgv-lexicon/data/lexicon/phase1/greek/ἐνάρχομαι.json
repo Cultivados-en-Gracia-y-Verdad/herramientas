@@ -1,0 +1,129 @@
+{
+  "lemma": "ἐνάρχομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐναρξάμενος",
+      "count": 1
+    },
+    {
+      "form": "ἐναρξάμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 1:6",
+      "form": "ἐναρξάμενος",
+      "morph": "V-A-M-P",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "πεποιθὼς αὐτὸ τοῦτο ὅτι ὁ",
+      "right_context": "ἐν ὑμῖν ἔργον ἀγαθὸν ἐπιτελέσει ἄχρι"
+    },
+    {
+      "ref": "Galatians 3:3",
+      "form": "ἐναρξάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "οὕτως ἀνόητοί ἐστε;",
+      "right_context": "πνεύματι νῦν σαρκὶ ἐπιτελεῖσθε;"
+    }
+  ],
+  "books": {
+    "Philippians": 1,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιτελέω",
+      "display": "cumplirá",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "persuadido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνόητος",
+      "display": "necios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 3:3",
+      "reason": "occurs near οὕτω(ς), ἐπιτελέω"
+    },
+    {
+      "ref": "Philippians 1:6",
+      "reason": "occurs near πείθω, ἀγαθός, ἐπιτελέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

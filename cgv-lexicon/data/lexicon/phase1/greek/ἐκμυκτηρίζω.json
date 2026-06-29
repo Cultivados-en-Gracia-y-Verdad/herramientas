@@ -1,0 +1,112 @@
+{
+  "lemma": "ἐκμυκτηρίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐξεμυκτήριζον",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 16:14",
+      "form": "ἐξεμυκτήριζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 14,
+      "left_context": "⸀πάντα οἱ Φαρισαῖοι φιλάργυροι ὑπάρχοντες, καὶ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Luke 23:35",
+      "form": "ἐξεμυκτήριζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 35,
+      "left_context": "καὶ εἱστήκει ὁ λαὸς θεωρῶν.",
+      "right_context": "δὲ καὶ οἱ ⸀ἄρχοντες λέγοντες· Ἄλλους"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλάργυρος",
+      "display": "avaros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "había puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "viendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχων",
+      "display": "gobernantes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:14",
+      "reason": "occurs near Φαρισαῖος, φιλάργυρος, ὑπάρχω"
+    },
+    {
+      "ref": "Luke 23:35",
+      "reason": "occurs near λαός, ἵστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

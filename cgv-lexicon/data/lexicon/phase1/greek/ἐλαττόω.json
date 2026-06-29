@@ -1,0 +1,141 @@
+{
+  "lemma": "ἐλαττόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἠλάττωσας",
+      "count": 1
+    },
+    {
+      "form": "ἠλαττωμένον",
+      "count": 1
+    },
+    {
+      "form": "ἐλαττοῦσθαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 2:7",
+      "form": "ἠλάττωσας",
+      "morph": "V-A-A-I-2S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "",
+      "right_context": "αὐτὸν βραχύ τι παρ’ ἀγγέλους, δόξῃ"
+    },
+    {
+      "ref": "Hebrews 2:9",
+      "form": "ἠλαττωμένον",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "τὸν δὲ βραχύ τι παρ’ ἀγγέλους",
+      "right_context": "βλέπομεν Ἰησοῦν διὰ τὸ πάθημα τοῦ"
+    },
+    {
+      "ref": "John 3:30",
+      "form": "ἐλαττοῦσθαι.",
+      "morph": "V-P-M-N",
+      "book": "John",
+      "chapter": 3,
+      "verse": 30,
+      "left_context": "ἐκεῖνον δεῖ αὐξάνειν, ἐμὲ δὲ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βραχύ",
+      "display": "poco",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángeles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάθημα",
+      "display": "padecimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐξάνω",
+      "display": "crecer",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 2:7",
+      "reason": "occurs near βραχύ, ἄγγελος"
+    },
+    {
+      "ref": "Hebrews 2:9",
+      "reason": "occurs near βλέπω, βραχύ, πάθημα"
+    },
+    {
+      "ref": "John 3:30",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

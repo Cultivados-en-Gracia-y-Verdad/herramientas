@@ -1,0 +1,98 @@
+{
+  "lemma": "ἀντιπαρέρχομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀντιπαρῆλθεν·",
+      "count": 1
+    },
+    {
+      "form": "ἀντιπαρῆλθεν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:31",
+      "form": "ἀντιπαρῆλθεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 31,
+      "left_context": "τῇ ὁδῷ ἐκείνῃ, καὶ ἰδὼν αὐτὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 10:32",
+      "form": "ἀντιπαρῆλθεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 32,
+      "left_context": "κατὰ τὸν τόπον ἐλθὼν καὶ ἰδὼν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:31",
+      "reason": "occurs near ὁδός, ὁράω"
+    },
+    {
+      "ref": "Luke 10:32",
+      "reason": "occurs near τόπος, ἔρχομαι, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

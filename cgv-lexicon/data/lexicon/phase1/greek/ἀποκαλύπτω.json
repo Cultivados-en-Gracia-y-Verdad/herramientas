@@ -1,0 +1,591 @@
+{
+  "lemma": "ἀποκαλύπτω",
+  "language": "greek",
+  "total_occurrences": 26,
+  "forms": [
+    {
+      "form": "ἀποκαλυφθῆναι",
+      "count": 3
+    },
+    {
+      "form": "ἀποκαλυφθῇ",
+      "count": 2
+    },
+    {
+      "form": "ἀπεκαλύφθη",
+      "count": 2
+    },
+    {
+      "form": "ἀπεκάλυψας",
+      "count": 2
+    },
+    {
+      "form": "ἀποκαλύψαι.",
+      "count": 2
+    },
+    {
+      "form": "ἀποκαλυφθήσεται,",
+      "count": 2
+    },
+    {
+      "form": "⸂ἀπεκάλυψεν",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλύπτεται,",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλύπτεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλυφθήσεται",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλύψει·",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλύψαι",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλυφθῆναι.",
+      "count": 1
+    },
+    {
+      "form": "ἀπεκαλύφθη;",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλυφθῶσιν",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλύπτεται.",
+      "count": 1
+    },
+    {
+      "form": "ἀπεκάλυψέν",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαλύπτεται",
+      "count": 1
+    },
+    {
+      "form": "Ἀποκαλύπτεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 15,
+      "subjunctive": 3,
+      "infinitive": 8
+    },
+    "tenses": {
+      "aorist": 17,
+      "present": 5,
+      "future": 4
+    },
+    "voices": {
+      "active": 8,
+      "passive": 18
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 2:10",
+      "form": "⸂ἀπεκάλυψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "ἡμῖν ⸀γὰρ",
+      "right_context": "ὁ θεὸς⸃ διὰ τοῦ ⸀πνεύματος, τὸ"
+    },
+    {
+      "ref": "1 Corinthians 3:13",
+      "form": "ἀποκαλύπτεται,",
+      "morph": "V-P-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "γὰρ ἡμέρα δηλώσει· ὅτι ἐν πυρὶ",
+      "right_context": "καὶ ἑκάστου τὸ ἔργον ὁποῖόν ἐστιν"
+    },
+    {
+      "ref": "1 Corinthians 14:30",
+      "form": "ἀποκαλυφθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 30,
+      "left_context": "ἐὰν δὲ ἄλλῳ",
+      "right_context": "καθημένῳ, ὁ πρῶτος σιγάτω."
+    },
+    {
+      "ref": "1 Peter 1:5",
+      "form": "ἀποκαλυφθῆναι",
+      "morph": "V-A-P-N",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "φρουρουμένους διὰ πίστεως εἰς σωτηρίαν ἑτοίμην",
+      "right_context": "ἐν καιρῷ ἐσχάτῳ."
+    },
+    {
+      "ref": "1 Peter 1:12",
+      "form": "ἀπεκαλύφθη",
+      "morph": "V-A-P-I-3S",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "οἷς",
+      "right_context": "ὅτι οὐχ ἑαυτοῖς ὑμῖν δὲ διηκόνουν"
+    },
+    {
+      "ref": "1 Peter 5:1",
+      "form": "ἀποκαλύπτεσθαι",
+      "morph": "V-P-P-N",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "Χριστοῦ παθημάτων, ὁ καὶ τῆς μελλούσης",
+      "right_context": "δόξης κοινωνός,"
+    },
+    {
+      "ref": "2 Thessalonians 2:3",
+      "form": "ἀποκαλυφθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "μὴ ἔλθῃ ἡ ἀποστασία πρῶτον καὶ",
+      "right_context": "ὁ ἄνθρωπος τῆς ⸀ἀνομίας, ὁ υἱὸς"
+    },
+    {
+      "ref": "2 Thessalonians 2:6",
+      "form": "ἀποκαλυφθῆναι",
+      "morph": "V-A-P-N",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "νῦν τὸ κατέχον οἴδατε, εἰς τὸ",
+      "right_context": "αὐτὸν ἐν τῷ ⸀ἑαυτοῦ καιρῷ·"
+    },
+    {
+      "ref": "2 Thessalonians 2:8",
+      "form": "ἀποκαλυφθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "καὶ τότε",
+      "right_context": "ὁ ἄνομος, ὃν ὁ κύριος ⸀Ἰησοῦς"
+    },
+    {
+      "ref": "Ephesians 3:5",
+      "form": "ἀπεκαλύφθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "τοῖς υἱοῖς τῶν ἀνθρώπων ὡς νῦν",
+      "right_context": "τοῖς ἁγίοις ἀποστόλοις αὐτοῦ καὶ προφήταις"
+    },
+    {
+      "ref": "Philippians 3:15",
+      "form": "ἀποκαλύψει·",
+      "morph": "V-F-A-I-3S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "φρονεῖτε, καὶ τοῦτο ὁ θεὸς ὑμῖν",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 1:16",
+      "form": "ἀποκαλύψαι",
+      "morph": "V-A-A-N",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "",
+      "right_context": "τὸν υἱὸν αὐτοῦ ἐν ἐμοὶ ἵνα"
+    },
+    {
+      "ref": "Galatians 3:23",
+      "form": "ἀποκαλυφθῆναι.",
+      "morph": "V-A-P-N",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 23,
+      "left_context": "ἐφρουρούμεθα ⸀συγκλειόμενοι εἰς τὴν μέλλουσαν πίστιν",
+      "right_context": ""
+    },
+    {
+      "ref": "John 12:38",
+      "form": "ἀπεκαλύφθη;",
+      "morph": "V-A-P-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 38,
+      "left_context": "ἡμῶν; καὶ ὁ βραχίων κυρίου τίνι",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 2:35",
+      "form": "ἀποκαλυφθῶσιν",
+      "morph": "V-A-P-S-3P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 35,
+      "left_context": "τὴν ψυχὴν διελεύσεται ῥομφαία, ὅπως ἂν",
+      "right_context": "ἐκ πολλῶν καρδιῶν διαλογισμοί."
+    },
+    {
+      "ref": "Luke 10:21",
+      "form": "ἀπεκάλυψας",
+      "morph": "V-A-A-I-2S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 21,
+      "left_context": "ταῦτα ἀπὸ σοφῶν καὶ συνετῶν, καὶ",
+      "right_context": "αὐτὰ νηπίοις· ναί, ὁ πατήρ, ὅτι"
+    },
+    {
+      "ref": "Luke 10:22",
+      "form": "ἀποκαλύψαι.",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "καὶ ᾧ ⸀ἐὰν βούληται ὁ υἱὸς",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 12:2",
+      "form": "ἀποκαλυφθήσεται,",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "οὐδὲν δὲ συγκεκαλυμμένον ἐστὶν ὃ οὐκ",
+      "right_context": "καὶ κρυπτὸν ὃ οὐ γνωσθήσεται."
+    },
+    {
+      "ref": "Luke 17:30",
+      "form": "ἀποκαλύπτεται.",
+      "morph": "V-P-P-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 30,
+      "left_context": "ᾗ ἡμέρᾳ ὁ υἱὸς τοῦ ἀνθρώπου",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 10:26",
+      "form": "ἀποκαλυφθήσεται,",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 26,
+      "left_context": "οὐδὲν γάρ ἐστιν κεκαλυμμένον ὃ οὐκ",
+      "right_context": "καὶ κρυπτὸν ὃ οὐ γνωσθήσεται."
+    },
+    {
+      "ref": "Matthew 11:25",
+      "form": "ἀπεκάλυψας",
+      "morph": "V-A-A-I-2S",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "ταῦτα ἀπὸ σοφῶν καὶ συνετῶν, καὶ",
+      "right_context": "αὐτὰ νηπίοις·"
+    },
+    {
+      "ref": "Matthew 11:27",
+      "form": "ἀποκαλύψαι.",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 27,
+      "left_context": "καὶ ᾧ ἐὰν βούληται ὁ υἱὸς",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 16:17",
+      "form": "ἀπεκάλυψέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 17,
+      "left_context": "Βαριωνᾶ, ὅτι σὰρξ καὶ αἷμα οὐκ",
+      "right_context": "σοι ἀλλ’ ὁ πατήρ μου ὁ"
+    },
+    {
+      "ref": "Romans 1:17",
+      "form": "ἀποκαλύπτεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 17,
+      "left_context": "δικαιοσύνη γὰρ θεοῦ ἐν αὐτῷ",
+      "right_context": "ἐκ πίστεως εἰς πίστιν, καθὼς γέγραπται·"
+    },
+    {
+      "ref": "Romans 1:18",
+      "form": "Ἀποκαλύπτεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "",
+      "right_context": "γὰρ ὀργὴ θεοῦ ἀπ’ οὐρανοῦ ἐπὶ"
+    },
+    {
+      "ref": "Romans 8:18",
+      "form": "ἀποκαλυφθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 18,
+      "left_context": "νῦν καιροῦ πρὸς τὴν μέλλουσαν δόξαν",
+      "right_context": "εἰς ἡμᾶς."
+    }
+  ],
+  "books": {
+    "Luke": 5,
+    "Matthew": 4,
+    "1 Corinthians": 3,
+    "1 Peter": 3,
+    "2 Thessalonians": 3,
+    "Romans": 3,
+    "Galatians": 2,
+    "Ephesians": 1,
+    "Philippians": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "υἱός",
+      "display": "hijos",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "de·gloria",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σοφός",
+      "display": "de·sabios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνετός",
+      "display": "de·entendidos,",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νήπιος",
+      "display": "niños",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queriera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρυπτός",
+      "display": "secreto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "será conocido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δηλόω",
+      "display": "declarará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "de·cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁποῖος",
+      "display": "cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 1:12",
+      "negator": "οὐχ",
+      "clause_text": "οἷς ἀπεκαλύφθη ὅτι οὐχ ἑαυτοῖς ὑμῖν δὲ διηκόνουν αὐτά, ἃ"
+    },
+    {
+      "ref": "Luke 12:2",
+      "negator": "οὐκ",
+      "clause_text": "οὐδὲν δὲ συγκεκαλυμμένον ἐστὶν ὃ οὐκ ἀποκαλυφθήσεται, καὶ κρυπτὸν ὃ οὐ γνωσθήσεται."
+    },
+    {
+      "ref": "Matthew 10:26",
+      "negator": "οὐκ",
+      "clause_text": "φοβηθῆτε αὐτούς· οὐδὲν γάρ ἐστιν κεκαλυμμένον ὃ οὐκ ἀποκαλυφθήσεται, καὶ κρυπτὸν ὃ οὐ γνωσθήσεται."
+    },
+    {
+      "ref": "Matthew 16:17",
+      "negator": "οὐκ",
+      "clause_text": "εἶ, Σίμων Βαριωνᾶ, ὅτι σὰρξ καὶ αἷμα οὐκ ἀπεκάλυψέν σοι ἀλλ’ ὁ πατήρ μου ὁ ἐν τοῖς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:21",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 10:22",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 12:2",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 17:30",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 2:35",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Matthew 10:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 11:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 11:27",
+      "reason": "occurs near υἱός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

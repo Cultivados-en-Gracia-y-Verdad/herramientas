@@ -1,0 +1,227 @@
+{
+  "lemma": "ἐπιγράφω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐπιγράψω",
+      "count": 2
+    },
+    {
+      "form": "ἐπιγεγραμμένα",
+      "count": 1
+    },
+    {
+      "form": "ἐπεγέγραπτο·",
+      "count": 1
+    },
+    {
+      "form": "ἐπιγεγραμμένη·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 3
+    },
+    "tenses": {
+      "perfect": 2,
+      "future": 2,
+      "pluperfect": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 21:12",
+      "form": "ἐπιγεγραμμένα",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "⸂τοῖς πυλῶσιν⸃ ἀγγέλους δώδεκα, καὶ ὀνόματα",
+      "right_context": "ἅ ⸀ἐστιν τῶν δώδεκα ⸀φυλῶν υἱῶν"
+    },
+    {
+      "ref": "Hebrews 8:10",
+      "form": "ἐπιγράψω",
+      "morph": "V-F-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 10,
+      "left_context": "διάνοιαν αὐτῶν, καὶ ἐπὶ καρδίας αὐτῶν",
+      "right_context": "αὐτούς, καὶ ἔσομαι αὐτοῖς εἰς θεόν"
+    },
+    {
+      "ref": "Hebrews 10:16",
+      "form": "ἐπιγράψω",
+      "morph": "V-F-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 16,
+      "left_context": "αὐτῶν, καὶ ἐπὶ ⸂τὴν διάνοιαν⸃ αὐτῶν",
+      "right_context": "αὐτούς,"
+    },
+    {
+      "ref": "Acts 17:23",
+      "form": "ἐπεγέγραπτο·",
+      "morph": "V-Y-P-I-3S",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 23,
+      "left_context": "ὑμῶν εὗρον καὶ βωμὸν ἐν ᾧ",
+      "right_context": "Ἀγνώστῳ θεῷ. ⸀ὃ οὖν ἀγνοοῦντες εὐσεβεῖτε,"
+    },
+    {
+      "ref": "Mark 15:26",
+      "form": "ἐπιγεγραμμένη·",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 26,
+      "left_context": "ἦν ἡ ἐπιγραφὴ τῆς αἰτίας αὐτοῦ",
+      "right_context": "Ὁ βασιλεὺς τῶν Ἰουδαίων."
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "Revelation": 1,
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δώδεκα",
+      "display": "doces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πυλών",
+      "display": "portales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλή",
+      "display": "de·tribus",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάνοια",
+      "display": "entendimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βωμός",
+      "display": "altar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγνωστος",
+      "display": "desconocido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγνοέω",
+      "display": "ignorando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγραφή",
+      "display": "inscripción;",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτία",
+      "display": "de·causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 8:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 17:23",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 15:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 21:12",
+      "reason": "occurs near δώδεκα, πυλών, φυλή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

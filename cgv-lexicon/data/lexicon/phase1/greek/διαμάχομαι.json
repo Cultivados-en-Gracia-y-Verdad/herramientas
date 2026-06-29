@@ -1,0 +1,86 @@
+{
+  "lemma": "διαμάχομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διεμάχοντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:9",
+      "form": "διεμάχοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 9,
+      "left_context": "τῶν γραμματέων⸃ τοῦ μέρους τῶν Φαρισαίων",
+      "right_context": "λέγοντες· Οὐδὲν κακὸν εὑρίσκομεν ἐν τῷ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γραμματεύς",
+      "display": "de·escribas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "de·parte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "de·Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακός",
+      "display": "malo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallamos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 23:9",
+      "reason": "occurs near Φαρισαῖος, γραμματεύς, εὑρίσκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,142 @@
+{
+  "lemma": "συναπάγομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συναπαχθέντες",
+      "count": 1
+    },
+    {
+      "form": "συναπαγόμενοι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 3:17",
+      "form": "συναπαχθέντες",
+      "morph": "V-A-P-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "ἵνα μὴ τῇ τῶν ἀθέσμων πλάνῃ",
+      "right_context": "ἐκπέσητε τοῦ ἰδίου στηριγμοῦ,"
+    },
+    {
+      "ref": "Romans 12:16",
+      "form": "συναπαγόμενοι.",
+      "morph": "V-P-P-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 16,
+      "left_context": "τὰ ὑψηλὰ φρονοῦντες ἀλλὰ τοῖς ταπεινοῖς",
+      "right_context": "μὴ γίνεσθε φρόνιμοι παρ’ ἑαυτοῖς."
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄθεσμος",
+      "display": "de·inicuos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλάνη",
+      "display": "engaño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπίπτω",
+      "display": "naufragéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "de·propio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στηριγμός",
+      "display": "de·fortaleza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑψηλός",
+      "display": "altos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρονέω",
+      "display": "pensando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταπεινός",
+      "display": "humildes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρόνιμος",
+      "display": "prudentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 12:16",
+      "negator": "μὴ",
+      "clause_text": "φρονοῦντες, μὴ τὰ ὑψηλὰ φρονοῦντες ἀλλὰ τοῖς ταπεινοῖς συναπαγόμενοι. μὴ γίνεσθε φρόνιμοι παρ’ ἑαυτοῖς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 3:17",
+      "reason": "occurs near πλάνη, στηριγμός, ἄθεσμος"
+    },
+    {
+      "ref": "Romans 12:16",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

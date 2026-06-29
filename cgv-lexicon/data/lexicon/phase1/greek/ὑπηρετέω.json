@@ -1,0 +1,149 @@
+{
+  "lemma": "ὑπηρετέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ὑπηρετήσας",
+      "count": 1
+    },
+    {
+      "form": "ὑπηρέτησαν",
+      "count": 1
+    },
+    {
+      "form": "⸀ὑπηρετεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:36",
+      "form": "ὑπηρετήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 36,
+      "left_context": "Δαυὶδ μὲν γὰρ ἰδίᾳ γενεᾷ",
+      "right_context": "τῇ τοῦ θεοῦ βουλῇ ἐκοιμήθη καὶ"
+    },
+    {
+      "ref": "Acts 20:34",
+      "form": "ὑπηρέτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 34,
+      "left_context": "μου καὶ τοῖς οὖσι μετ’ ἐμοῦ",
+      "right_context": "αἱ χεῖρες αὗται."
+    },
+    {
+      "ref": "Acts 24:23",
+      "form": "⸀ὑπηρετεῖν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 23,
+      "left_context": "καὶ μηδένα κωλύειν τῶν ἰδίων αὐτοῦ",
+      "right_context": "αὐτῷ."
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Δαυίδ",
+      "display": "David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γενεά",
+      "display": "generación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βουλή",
+      "display": "consejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοιμάομαι",
+      "display": "fue dormido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κωλύω",
+      "display": "impedir",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:36",
+      "reason": "occurs near Δαυίδ, γενεά, θεός"
+    },
+    {
+      "ref": "Acts 20:34",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 24:23",
+      "reason": "occurs near ἴδιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

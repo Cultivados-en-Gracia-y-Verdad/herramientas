@@ -1,0 +1,253 @@
+{
+  "lemma": "σημαίνω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "σημαίνων",
+      "count": 3
+    },
+    {
+      "form": "ἐσήμανεν",
+      "count": 2
+    },
+    {
+      "form": "σημᾶναι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "infinitive": 1,
+      "participle": 3
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 3
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 1:1",
+      "form": "ἐσήμανεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 1,
+      "verse": 1,
+      "left_context": "ἃ δεῖ γενέσθαι ἐν τάχει, καὶ",
+      "right_context": "ἀποστείλας διὰ τοῦ ἀγγέλου αὐτοῦ τῷ"
+    },
+    {
+      "ref": "Acts 11:28",
+      "form": "ἐσήμανεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 28,
+      "left_context": "δὲ εἷς ἐξ αὐτῶν ὀνόματι Ἅγαβος",
+      "right_context": "διὰ τοῦ πνεύματος λιμὸν ⸀μεγάλην μέλλειν"
+    },
+    {
+      "ref": "Acts 25:27",
+      "form": "σημᾶναι.",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 27,
+      "left_context": "μὴ καὶ τὰς κατ’ αὐτοῦ αἰτίας",
+      "right_context": ""
+    },
+    {
+      "ref": "John 12:33",
+      "form": "σημαίνων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 12,
+      "verse": 33,
+      "left_context": "τοῦτο δὲ ἔλεγεν",
+      "right_context": "ποίῳ θανάτῳ ἤμελλεν ἀποθνῄσκειν."
+    },
+    {
+      "ref": "John 18:32",
+      "form": "σημαίνων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 32,
+      "left_context": "λόγος τοῦ Ἰησοῦ πληρωθῇ ὃν εἶπεν",
+      "right_context": "ποίῳ θανάτῳ ἤμελλεν ἀποθνῄσκειν."
+    },
+    {
+      "ref": "John 21:19",
+      "form": "σημαίνων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 19,
+      "left_context": "τοῦτο δὲ εἶπεν",
+      "right_context": "ποίῳ θανάτῳ δοξάσει τὸν θεόν. καὶ"
+    }
+  ],
+  "books": {
+    "John": 3,
+    "Acts": 2,
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ποῖος",
+      "display": "cuál",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τάχος",
+      "display": "pronto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "de·ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἅγαβος",
+      "display": "Ágabo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λιμός",
+      "display": "hambre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτία",
+      "display": "causas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumpla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 12:33",
+      "reason": "occurs near θάνατος, μέλλω, ποῖος"
+    },
+    {
+      "ref": "John 18:32",
+      "reason": "occurs near θάνατος, μέλλω, ποῖος"
+    },
+    {
+      "ref": "John 21:19",
+      "reason": "occurs near θάνατος, ποῖος"
+    },
+    {
+      "ref": "Acts 11:28",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 25:27",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 1:1",
+      "reason": "occurs near δέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

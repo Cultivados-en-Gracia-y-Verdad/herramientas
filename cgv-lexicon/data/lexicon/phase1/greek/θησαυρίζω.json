@@ -1,0 +1,349 @@
+{
+  "lemma": "θησαυρίζω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "θησαυρίζων",
+      "count": 2
+    },
+    {
+      "form": "θησαυρίζετε",
+      "count": 2
+    },
+    {
+      "form": "θησαυρίζειν,",
+      "count": 1
+    },
+    {
+      "form": "τεθησαυρισμένοι",
+      "count": 1
+    },
+    {
+      "form": "θησαυρίζεις",
+      "count": 1
+    },
+    {
+      "form": "ἐθησαυρίσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "infinitive": 1,
+      "imperative": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 6,
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 7,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:2",
+      "form": "θησαυρίζων",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 2,
+      "left_context": "⸀σαββάτου ἕκαστος ὑμῶν παρ’ ἑαυτῷ τιθέτω",
+      "right_context": "ὅ τι ⸀ἐὰν εὐοδῶται, ἵνα μὴ"
+    },
+    {
+      "ref": "2 Corinthians 12:14",
+      "form": "θησαυρίζειν,",
+      "morph": "V-P-A-N",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "γὰρ ὀφείλει τὰ τέκνα τοῖς γονεῦσιν",
+      "right_context": "ἀλλὰ οἱ γονεῖς τοῖς τέκνοις."
+    },
+    {
+      "ref": "2 Peter 3:7",
+      "form": "τεθησαυρισμένοι",
+      "morph": "V-X-P-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "καὶ ἡ γῆ τῷ ⸀αὐτῷ λόγῳ",
+      "right_context": "εἰσὶν πυρὶ τηρούμενοι εἰς ἡμέραν κρίσεως"
+    },
+    {
+      "ref": "Luke 12:21",
+      "form": "θησαυρίζων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 21,
+      "left_context": "οὕτως ὁ",
+      "right_context": "⸀ἑαυτῷ καὶ μὴ εἰς θεὸν πλουτῶν."
+    },
+    {
+      "ref": "Matthew 6:19",
+      "form": "θησαυρίζετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 19,
+      "left_context": "Μὴ",
+      "right_context": "ὑμῖν θησαυροὺς ἐπὶ τῆς γῆς, ὅπου"
+    },
+    {
+      "ref": "Matthew 6:20",
+      "form": "θησαυρίζετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 20,
+      "left_context": "",
+      "right_context": "δὲ ὑμῖν θησαυροὺς ἐν οὐρανῷ, ὅπου"
+    },
+    {
+      "ref": "Romans 2:5",
+      "form": "θησαυρίζεις",
+      "morph": "V-P-A-I-2S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "τὴν σκληρότητά σου καὶ ἀμετανόητον καρδίαν",
+      "right_context": "σεαυτῷ ὀργὴν ἐν ἡμέρᾳ ὀργῆς καὶ"
+    },
+    {
+      "ref": "James 5:3",
+      "form": "ἐθησαυρίσατε",
+      "morph": "V-A-A-I-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "φάγεται τὰς σάρκας ὑμῶν· ὡς πῦρ",
+      "right_context": "ἐν ἐσχάταις ἡμέραις."
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "1 Corinthians": 1,
+    "2 Corinthians": 1,
+    "2 Peter": 1,
+    "Luke": 1,
+    "Romans": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γονεύς",
+      "display": "padreses",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θησαυρός",
+      "display": "tesoros",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀργή",
+      "display": "ira",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "pona",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐοδόομαι",
+      "display": "prosperara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφείλω",
+      "display": "debe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηρέω",
+      "display": "guardados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκληρότης",
+      "display": "dureza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμετανόητος",
+      "display": "impenitente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεαυτοῦ",
+      "display": "de·ti·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carnes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔσχατος",
+      "display": "últimas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 6:19",
+      "form": "θησαυρίζετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Μὴ θησαυρίζετε ὑμῖν θησαυροὺς ἐπὶ τῆς γῆς, ὅπου σὴς καὶ",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 6:20",
+      "form": "θησαυρίζετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "θησαυρίζετε δὲ ὑμῖν θησαυροὺς ἐν οὐρανῷ, ὅπου οὔτε σὴς"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:21",
+      "negator": "μὴ",
+      "clause_text": "οὕτως ὁ θησαυρίζων ⸀ἑαυτῷ καὶ μὴ εἰς θεὸν πλουτῶν."
+    },
+    {
+      "ref": "Matthew 6:19",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ θησαυρίζετε ὑμῖν θησαυροὺς ἐπὶ τῆς γῆς, ὅπου σὴς καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 6:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 6:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 16:2",
+      "reason": "occurs near ἑαυτοῦ"
+    },
+    {
+      "ref": "2 Corinthians 12:14",
+      "reason": "occurs near γονεύς, τέκνον"
+    },
+    {
+      "ref": "2 Peter 3:7",
+      "reason": "occurs near γῆ, ἡμέρα"
+    },
+    {
+      "ref": "James 5:3",
+      "reason": "occurs near ἡμέρα"
+    },
+    {
+      "ref": "Luke 12:21",
+      "reason": "occurs near ἑαυτοῦ"
+    },
+    {
+      "ref": "Romans 2:5",
+      "reason": "occurs near ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

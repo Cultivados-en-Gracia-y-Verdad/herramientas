@@ -1,0 +1,153 @@
+{
+  "lemma": "συναναμίγνυμι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συναναμίγνυσθαι",
+      "count": 2
+    },
+    {
+      "form": "⸀συναναμίγνυσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 3
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 5:9",
+      "form": "συναναμίγνυσθαι",
+      "morph": "V-P-M-N",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "Ἔγραψα ὑμῖν ἐν τῇ ἐπιστολῇ μὴ",
+      "right_context": "πόρνοις,"
+    },
+    {
+      "ref": "1 Corinthians 5:11",
+      "form": "συναναμίγνυσθαι",
+      "morph": "V-P-M-N",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "νῦν δὲ ἔγραψα ὑμῖν μὴ",
+      "right_context": "ἐάν τις ἀδελφὸς ὀνομαζόμενος ᾖ πόρνος"
+    },
+    {
+      "ref": "2 Thessalonians 3:14",
+      "form": "⸀συναναμίγνυσθαι",
+      "morph": "V-P-M-N",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "διὰ τῆς ἐπιστολῆς, τοῦτον σημειοῦσθε, ⸀μὴ",
+      "right_context": "αὐτῷ, ἵνα ἐντραπῇ·"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιστολή",
+      "display": "carta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πόρνος",
+      "display": "fornicarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escribí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνομάζω",
+      "display": "nombrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σημειόομαι",
+      "display": "señalad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντρέπω",
+      "display": "avergonzarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 5:9",
+      "negator": "μὴ",
+      "clause_text": "Ἔγραψα ὑμῖν ἐν τῇ ἐπιστολῇ μὴ συναναμίγνυσθαι πόρνοις,"
+    },
+    {
+      "ref": "1 Corinthians 5:11",
+      "negator": "μὴ",
+      "clause_text": "νῦν δὲ ἔγραψα ὑμῖν μὴ συναναμίγνυσθαι ἐάν τις ἀδελφὸς ὀνομαζόμενος ᾖ πόρνος ἢ πλεονέκτης"
+    },
+    {
+      "ref": "2 Thessalonians 3:14",
+      "negator": "⸀μὴ",
+      "clause_text": "λόγῳ ἡμῶν διὰ τῆς ἐπιστολῆς, τοῦτον σημειοῦσθε, ⸀μὴ ⸀συναναμίγνυσθαι αὐτῷ, ἵνα ἐντραπῇ·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 5:11",
+      "reason": "occurs near γράφω, νῦν, ἀδελφός"
+    },
+    {
+      "ref": "1 Corinthians 5:9",
+      "reason": "occurs near πόρνος, ἐπιστολή"
+    },
+    {
+      "ref": "2 Thessalonians 3:14",
+      "reason": "occurs near ἐπιστολή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

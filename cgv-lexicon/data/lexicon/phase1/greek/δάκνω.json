@@ -1,0 +1,80 @@
+{
+  "lemma": "δάκνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "δάκνετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 5:15",
+      "form": "δάκνετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 15,
+      "left_context": "εἰ δὲ ἀλλήλους",
+      "right_context": "καὶ κατεσθίετε, βλέπετε μὴ ὑπ’ ἀλλήλων"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατεσθίω",
+      "display": "devoráis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 5:15",
+      "negator": "μὴ",
+      "clause_text": "εἰ δὲ ἀλλήλους δάκνετε καὶ κατεσθίετε, βλέπετε μὴ ὑπ’ ἀλλήλων ἀναλωθῆτε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 5:15",
+      "reason": "occurs near βλέπω, κατεσθίω, ἀλλήλων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

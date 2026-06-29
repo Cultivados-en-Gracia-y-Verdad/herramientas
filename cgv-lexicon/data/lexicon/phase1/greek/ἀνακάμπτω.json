@@ -1,0 +1,193 @@
+{
+  "lemma": "ἀνακάμπτω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀνακάμψαι·",
+      "count": 1
+    },
+    {
+      "form": "ἀνακάμψω",
+      "count": 1
+    },
+    {
+      "form": "ἀνακάμψει.",
+      "count": 1
+    },
+    {
+      "form": "ἀνακάμψαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "future": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:15",
+      "form": "ἀνακάμψαι·",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "ἀφ’ ἧς ⸀ἐξέβησαν, εἶχον ἂν καιρὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 18:21",
+      "form": "ἀνακάμψω",
+      "morph": "V-F-A-I-1S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 21,
+      "left_context": "⸂ἀλλὰ ἀποταξάμενος καὶ⸃ ⸀εἰπών· ⸀Πάλιν",
+      "right_context": "πρὸς ὑμᾶς τοῦ θεοῦ θέλοντος ἀνήχθη"
+    },
+    {
+      "ref": "Luke 10:6",
+      "form": "ἀνακάμψει.",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 6,
+      "left_context": "ὑμῶν· εἰ δὲ μήγε, ἐφ’ ὑμᾶς",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 2:12",
+      "form": "ἀνακάμψαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "καὶ χρηματισθέντες κατ’ ὄναρ μὴ",
+      "right_context": "πρὸς Ἡρῴδην δι’ ἄλλης ὁδοῦ ἀνεχώρησαν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκβαίνω",
+      "display": "salieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποτάσσομαι",
+      "display": "despedirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήγε",
+      "display": "de·ninguna·manera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρηματίζω",
+      "display": "advertidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄναρ",
+      "display": "sueño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "Herodes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "de·otra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "de·camino",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 2:12",
+      "negator": "μὴ",
+      "clause_text": "καὶ χρηματισθέντες κατ’ ὄναρ μὴ ἀνακάμψαι πρὸς Ἡρῴδην δι’ ἄλλης ὁδοῦ ἀνεχώρησαν εἰς τὴν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:21",
+      "reason": "occurs near θεός, πάλιν, ἀποτάσσομαι"
+    },
+    {
+      "ref": "Hebrews 11:15",
+      "reason": "occurs near καιρός, ἐκβαίνω"
+    },
+    {
+      "ref": "Luke 10:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 2:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

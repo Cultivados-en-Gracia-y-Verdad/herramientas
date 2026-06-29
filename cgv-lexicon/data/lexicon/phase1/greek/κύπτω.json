@@ -1,0 +1,86 @@
+{
+  "lemma": "κύπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κύψας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 1:7",
+      "form": "κύψας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "ὀπίσω μου, οὗ οὐκ εἰμὶ ἱκανὸς",
+      "right_context": "λῦσαι τὸν ἱμάντα τῶν ὑποδημάτων αὐτοῦ·"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱκανός",
+      "display": "suficiente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύω",
+      "display": "desatar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάς",
+      "display": "correa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπόδημα",
+      "display": "de·sandalias",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 1:7",
+      "negator": "οὐκ",
+      "clause_text": "ἰσχυρότερός μου ὀπίσω μου, οὗ οὐκ εἰμὶ ἱκανὸς κύψας λῦσαι τὸν ἱμάντα τῶν ὑποδημάτων αὐτοῦ·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 1:7",
+      "reason": "occurs near λύω, ἱκανός, ἱμάς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

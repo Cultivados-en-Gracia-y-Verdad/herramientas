@@ -1,0 +1,164 @@
+{
+  "lemma": "περικαλύπτω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "περικεκαλυμμένην",
+      "count": 1
+    },
+    {
+      "form": "περικαλύψαντες",
+      "count": 1
+    },
+    {
+      "form": "περικαλύπτειν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 9:4",
+      "form": "περικεκαλυμμένην",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 4,
+      "left_context": "θυμιατήριον καὶ τὴν κιβωτὸν τῆς διαθήκης",
+      "right_context": "πάντοθεν χρυσίῳ, ἐν ᾗ στάμνος χρυσῆ"
+    },
+    {
+      "ref": "Luke 22:64",
+      "form": "περικαλύψαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 64,
+      "left_context": "καὶ",
+      "right_context": "⸂αὐτὸν ἐπηρώτων⸃ λέγοντες· Προφήτευσον, τίς ἐστιν"
+    },
+    {
+      "ref": "Mark 14:65",
+      "form": "περικαλύπτειν",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 65,
+      "left_context": "καὶ ἤρξαντό τινες ἐμπτύειν αὐτῷ καὶ",
+      "right_context": "⸂αὐτοῦ τὸ πρόσωπον⸃ καὶ κολαφίζειν αὐτὸν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κιβωτός",
+      "display": "arca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "de·pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοθεν",
+      "display": "de·todas·partes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρυσίον",
+      "display": "oro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στάμνος",
+      "display": "vasija",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπερωτάω",
+      "display": "preguntaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφητεύω",
+      "display": "profetiza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπτύω",
+      "display": "escupir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολαφίζω",
+      "display": "golpear",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 9:4",
+      "reason": "occurs near διαθήκη, κιβωτός, πάντοθεν"
+    },
+    {
+      "ref": "Luke 22:64",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 14:65",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

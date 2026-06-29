@@ -1,0 +1,118 @@
+{
+  "lemma": "ἀποχωρίζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀπεχωρίσθη",
+      "count": 1
+    },
+    {
+      "form": "ἀποχωρισθῆναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 6:14",
+      "form": "ἀπεχωρίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "καὶ ὁ οὐρανὸς",
+      "right_context": "ὡς βιβλίον ἑλισσόμενον, καὶ πᾶν ὄρος"
+    },
+    {
+      "ref": "Acts 15:39",
+      "form": "ἀποχωρισθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 39,
+      "left_context": "ἐγένετο ⸀δὲ παροξυσμὸς ὥστε",
+      "right_context": "αὐτοὺς ἀπ’ ἀλλήλων, τόν τε Βαρναβᾶν"
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βιβλίον",
+      "display": "libro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑλίσσω",
+      "display": "enrollado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παροξυσμός",
+      "display": "contención",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:39",
+      "reason": "occurs near παροξυσμός, ὥστε"
+    },
+    {
+      "ref": "Revelation 6:14",
+      "reason": "occurs near βιβλίον, οὐρανός, ἑλίσσω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

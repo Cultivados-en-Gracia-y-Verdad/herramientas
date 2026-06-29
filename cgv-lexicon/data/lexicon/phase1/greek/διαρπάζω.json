@@ -1,0 +1,129 @@
+{
+  "lemma": "διαρπάζω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀διαρπάσει.",
+      "count": 2
+    },
+    {
+      "form": "διαρπάσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "future": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 3:27",
+      "form": "διαρπάσαι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 27,
+      "left_context": "τοῦ ἰσχυροῦ εἰσελθὼν τὰ σκεύη⸃ αὐτοῦ",
+      "right_context": "ἐὰν μὴ πρῶτον τὸν ἰσχυρὸν δήσῃ,"
+    },
+    {
+      "ref": "Mark 3:27",
+      "form": "⸀διαρπάσει.",
+      "morph": "V-F-A-I-3S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 27,
+      "left_context": "δήσῃ, καὶ τότε τὴν οἰκίαν αὐτοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 12:29",
+      "form": "⸀διαρπάσει.",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 29,
+      "left_context": "ἰσχυρόν; καὶ τότε τὴν οἰκίαν αὐτοῦ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἰσχυρός",
+      "display": "de·fuerte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasijas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 3:27",
+      "negator": "μὴ",
+      "clause_text": "τὴν οἰκίαν τοῦ ἰσχυροῦ εἰσελθὼν τὰ σκεύη⸃ αὐτοῦ διαρπάσαι ἐὰν μὴ πρῶτον τὸν ἰσχυρὸν δήσῃ, καὶ τότε"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 3:27",
+      "reason": "occurs near εἰσέρχομαι, σκεῦος, ἰσχυρός"
+    },
+    {
+      "ref": "Matthew 12:29",
+      "reason": "occurs near οἰκία, τότε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

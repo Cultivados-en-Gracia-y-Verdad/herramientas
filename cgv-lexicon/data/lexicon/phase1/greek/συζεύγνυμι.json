@@ -1,0 +1,106 @@
+{
+  "lemma": "συζεύγνυμι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνέζευξεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 10:9",
+      "form": "συνέζευξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 9,
+      "left_context": "ὃ οὖν ὁ θεὸς",
+      "right_context": "ἄνθρωπος μὴ χωριζέτω."
+    },
+    {
+      "ref": "Matthew 19:6",
+      "form": "συνέζευξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 6,
+      "left_context": "σὰρξ μία. ὃ οὖν ὁ θεὸς",
+      "right_context": "ἄνθρωπος μὴ χωριζέτω."
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίζω",
+      "display": "separa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "una",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 10:9",
+      "negator": "μὴ",
+      "clause_text": "ὃ οὖν ὁ θεὸς συνέζευξεν ἄνθρωπος μὴ χωριζέτω."
+    },
+    {
+      "ref": "Matthew 19:6",
+      "negator": "μὴ",
+      "clause_text": "δύο ἀλλὰ σὰρξ μία. ὃ οὖν ὁ θεὸς συνέζευξεν ἄνθρωπος μὴ χωριζέτω."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:9",
+      "reason": "occurs near θεός, χωρίζω, ἄνθρωπος"
+    },
+    {
+      "ref": "Matthew 19:6",
+      "reason": "occurs near εἷς, θεός, χωρίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

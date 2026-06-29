@@ -1,0 +1,134 @@
+{
+  "lemma": "συντάσσω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀συνέταξεν",
+      "count": 1
+    },
+    {
+      "form": "συνέταξεν",
+      "count": 1
+    },
+    {
+      "form": "συνέταξέν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 21:6",
+      "form": "⸀συνέταξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 6,
+      "left_context": "δὲ οἱ μαθηταὶ καὶ ποιήσαντες καθὼς",
+      "right_context": "αὐτοῖς ὁ Ἰησοῦς"
+    },
+    {
+      "ref": "Matthew 26:19",
+      "form": "συνέταξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 19,
+      "left_context": "καὶ ἐποίησαν οἱ μαθηταὶ ὡς",
+      "right_context": "αὐτοῖς ὁ Ἰησοῦς, καὶ ἡτοίμασαν τὸ"
+    },
+    {
+      "ref": "Matthew 27:10",
+      "form": "συνέταξέν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 10,
+      "left_context": "εἰς τὸν ἀγρὸν τοῦ κεραμέως, καθὰ",
+      "right_context": "μοι κύριος."
+    }
+  ],
+  "books": {
+    "Matthew": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμάζω",
+      "display": "prepararon",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγρός",
+      "display": "campo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεραμεύς",
+      "display": "de·alfarero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθά",
+      "display": "como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 21:6",
+      "reason": "occurs near μαθητής, Ἰησοῦς"
+    },
+    {
+      "ref": "Matthew 26:19",
+      "reason": "occurs near μαθητής, ἑτοιμάζω, Ἰησοῦς"
+    },
+    {
+      "ref": "Matthew 27:10",
+      "reason": "occurs near κεραμεύς, ἀγρός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

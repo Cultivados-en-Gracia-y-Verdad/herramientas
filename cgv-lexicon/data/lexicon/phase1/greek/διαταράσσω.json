@@ -1,0 +1,74 @@
+{
+  "lemma": "διαταράσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διεταράχθη⸃",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:29",
+      "form": "διεταράχθη⸃",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 29,
+      "left_context": "ἡ δὲ ⸂ἐπὶ τῷ λόγῳ",
+      "right_context": "καὶ διελογίζετο ποταπὸς εἴη ὁ ἀσπασμὸς"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαλογίζομαι",
+      "display": "razonaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποταπός",
+      "display": "qué·clase",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:29",
+      "reason": "occurs near διαλογίζομαι, λόγος, ποταπός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

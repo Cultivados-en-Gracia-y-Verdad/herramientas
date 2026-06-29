@@ -1,0 +1,86 @@
+{
+  "lemma": "παγιδεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παγιδεύσωσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 22:15",
+      "form": "παγιδεύσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 15,
+      "left_context": "οἱ Φαρισαῖοι συμβούλιον ἔλαβον ὅπως αὐτὸν",
+      "right_context": "ἐν λόγῳ."
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμβούλιον",
+      "display": "consejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 22:15",
+      "reason": "occurs near Φαρισαῖος, λαμβάνω, λόγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

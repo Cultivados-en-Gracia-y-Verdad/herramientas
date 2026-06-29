@@ -1,0 +1,144 @@
+{
+  "lemma": "ψηφίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ψηφισάτω",
+      "count": 1
+    },
+    {
+      "form": "ψηφίζει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 13:18",
+      "form": "ψηφισάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "Revelation",
+      "chapter": 13,
+      "verse": 18,
+      "left_context": "ἡ σοφία ἐστίν· ὁ ἔχων νοῦν",
+      "right_context": "τὸν ἀριθμὸν τοῦ θηρίου, ἀριθμὸς γὰρ"
+    },
+    {
+      "ref": "Luke 14:28",
+      "form": "ψηφίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 28,
+      "left_context": "θέλων πύργον οἰκοδομῆσαι οὐχὶ πρῶτον καθίσας",
+      "right_context": "τὴν δαπάνην, εἰ ⸀ἔχει εἰς ἀπαρτισμόν;"
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀριθμός",
+      "display": "número",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σοφία",
+      "display": "sabiduría",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θηρίον",
+      "display": "de·bestia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πύργος",
+      "display": "torre,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edificar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίζω",
+      "display": "sentado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαπάνη",
+      "display": "gasto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Revelation 13:18",
+      "form": "ψηφισάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "ὧδε ἡ σοφία ἐστίν· ὁ ἔχων νοῦν ψηφισάτω τὸν ἀριθμὸν τοῦ θηρίου, ἀριθμὸς γὰρ ἀνθρώπου ἐστίν·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 13:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 14:28",
+      "reason": "occurs near πύργος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

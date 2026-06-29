@@ -1,0 +1,252 @@
+{
+  "lemma": "μεθίστημι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "μετέστησεν",
+      "count": 2
+    },
+    {
+      "form": "⸀μεθιστάναι,",
+      "count": 1
+    },
+    {
+      "form": "μεταστήσας",
+      "count": 1
+    },
+    {
+      "form": "μετασταθῶ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 2,
+      "participle": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 4,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:2",
+      "form": "⸀μεθιστάναι,",
+      "morph": "V-P-A-N",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "ἔχω πᾶσαν τὴν πίστιν ὥστε ὄρη",
+      "right_context": "ἀγάπην δὲ μὴ ἔχω, οὐθέν εἰμι."
+    },
+    {
+      "ref": "Colossians 1:13",
+      "form": "μετέστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ἐκ τῆς ἐξουσίας τοῦ σκότους καὶ",
+      "right_context": "εἰς τὴν βασιλείαν τοῦ υἱοῦ τῆς"
+    },
+    {
+      "ref": "Acts 13:22",
+      "form": "μεταστήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 22,
+      "left_context": "καὶ",
+      "right_context": "αὐτὸν ἤγειρεν ⸂τὸν Δαυὶδ αὐτοῖς⸃ εἰς"
+    },
+    {
+      "ref": "Acts 19:26",
+      "form": "μετέστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 26,
+      "left_context": "τῆς Ἀσίας ὁ Παῦλος οὗτος πείσας",
+      "right_context": "ἱκανὸν ὄχλον, λέγων ὅτι οὐκ εἰσὶν"
+    },
+    {
+      "ref": "Luke 16:4",
+      "form": "μετασταθῶ",
+      "morph": "V-A-P-S-1S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 4,
+      "left_context": "ἔγνων τί ποιήσω, ἵνα ὅταν",
+      "right_context": "⸀ἐκ τῆς οἰκονομίας δέξωνταί με εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "1 Corinthians": 1,
+    "Colossians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "montes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "de·autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκότος",
+      "display": "de·tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "de·hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαυίδ",
+      "display": "David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀσία",
+      "display": "de·Asia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "persuadido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficiente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκονομία",
+      "display": "de·administración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέχομαι",
+      "display": "reciban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 13:2",
+      "negator": "μὴ",
+      "clause_text": "⸄καὶ ἐὰν⸅ ἔχω πᾶσαν τὴν πίστιν ὥστε ὄρη ⸀μεθιστάναι, ἀγάπην δὲ μὴ ἔχω, οὐθέν εἰμι."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 19:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 13:2",
+      "reason": "occurs near πίστις, ἀγάπη, ὄρος"
+    },
+    {
+      "ref": "Colossians 1:13",
+      "reason": "occurs near ἐξουσία"
+    },
+    {
+      "ref": "Luke 16:4",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

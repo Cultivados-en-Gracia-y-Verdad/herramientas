@@ -1,0 +1,138 @@
+{
+  "lemma": "ἀποτελέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἀποτελῶ",
+      "count": 1
+    },
+    {
+      "form": "ἀποτελεσθεῖσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 13:32",
+      "form": "⸀ἀποτελῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 32,
+      "left_context": "ταύτῃ· Ἰδοὺ ἐκβάλλω δαιμόνια καὶ ἰάσεις",
+      "right_context": "σήμερον καὶ αὔριον, καὶ τῇ τρίτῃ"
+    },
+    {
+      "ref": "James 1:15",
+      "form": "ἀποτελεσθεῖσα",
+      "morph": "V-A-P-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "συλλαβοῦσα τίκτει ἁμαρτίαν, ἡ δὲ ἁμαρτία",
+      "right_context": "ἀποκύει θάνατον."
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴασις",
+      "display": "sanidades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὔριον",
+      "display": "mañana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίκτω",
+      "display": "dar·a·luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκυέω",
+      "display": "dar·a·luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:15",
+      "reason": "occurs near ἁμαρτία"
+    },
+    {
+      "ref": "Luke 13:32",
+      "reason": "occurs near δαιμόνιον, ἐκβάλλω, ἰδού"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

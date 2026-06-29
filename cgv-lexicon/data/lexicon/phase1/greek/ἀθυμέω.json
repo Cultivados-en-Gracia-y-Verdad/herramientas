@@ -1,0 +1,76 @@
+{
+  "lemma": "ἀθυμέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀθυμῶσιν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 3:21",
+      "form": "ἀθυμῶσιν.",
+      "morph": "V-P-A-S-3P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 21,
+      "left_context": "ἐρεθίζετε τὰ τέκνα ὑμῶν, ἵνα μὴ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 3:21",
+      "form": "ἀθυμῶσιν.",
+      "morph": "V-P-A-S-3P",
+      "clause_text": "πατέρες, μὴ ἐρεθίζετε τὰ τέκνα ὑμῶν, ἵνα μὴ ἀθυμῶσιν.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 3:21",
+      "negator": "μὴ",
+      "clause_text": "πατέρες, μὴ ἐρεθίζετε τὰ τέκνα ὑμῶν, ἵνα μὴ ἀθυμῶσιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 3:21",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

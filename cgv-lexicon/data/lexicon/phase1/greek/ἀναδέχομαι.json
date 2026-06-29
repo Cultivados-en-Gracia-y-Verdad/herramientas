@@ -1,0 +1,135 @@
+{
+  "lemma": "ἀναδέχομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀναδεξάμενος,",
+      "count": 1
+    },
+    {
+      "form": "ἀναδεξάμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:17",
+      "form": "ἀναδεξάμενος,",
+      "morph": "V-A-M-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "τὸν μονογενῆ προσέφερεν ὁ τὰς ἐπαγγελίας",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 28:7",
+      "form": "ἀναδεξάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 7,
+      "left_context": "πρώτῳ τῆς νήσου ὀνόματι Ποπλίῳ, ὃς",
+      "right_context": "ἡμᾶς ⸂τρεῖς ἡμέρας⸃ φιλοφρόνως ἐξένισεν."
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μονογενής",
+      "display": "unigénito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "ofrecía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "promesas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῆσος",
+      "display": "de·isla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πόπλιος",
+      "display": "Publio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλοφρόνως",
+      "display": "amablemente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξενίζω",
+      "display": "hospedó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 28:7",
+      "reason": "occurs near νῆσος, ὄνομα"
+    },
+    {
+      "ref": "Hebrews 11:17",
+      "reason": "occurs near μονογενής, προσφέρω, ἐπαγγελία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

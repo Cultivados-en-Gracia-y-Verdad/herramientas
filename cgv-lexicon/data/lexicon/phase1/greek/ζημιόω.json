@@ -1,0 +1,263 @@
+{
+  "lemma": "ζημιόω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ζημιωθήσεται,",
+      "count": 1
+    },
+    {
+      "form": "ζημιωθῆτε",
+      "count": 1
+    },
+    {
+      "form": "ἐζημιώθην,",
+      "count": 1
+    },
+    {
+      "form": "ζημιωθείς;",
+      "count": 1
+    },
+    {
+      "form": "ζημιωθῆναι⸃",
+      "count": 1
+    },
+    {
+      "form": "ζημιωθῇ;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "subjunctive": 2,
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 5
+    },
+    "voices": {
+      "passive": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 3:15",
+      "form": "ζημιωθήσεται,",
+      "morph": "V-F-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "εἴ τινος τὸ ἔργον κατακαήσεται,",
+      "right_context": "αὐτὸς δὲ σωθήσεται, οὕτως δὲ ὡς"
+    },
+    {
+      "ref": "2 Corinthians 7:9",
+      "form": "ζημιωθῆτε",
+      "morph": "V-A-P-S-2P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "γὰρ κατὰ θεόν, ἵνα ἐν μηδενὶ",
+      "right_context": "ἐξ ἡμῶν."
+    },
+    {
+      "ref": "Philippians 3:8",
+      "form": "ἐζημιώθην,",
+      "morph": "V-A-P-I-1S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "κυρίου μου δι’ ὃν τὰ πάντα",
+      "right_context": "καὶ ἡγοῦμαι ⸀σκύβαλα ἵνα Χριστὸν κερδήσω"
+    },
+    {
+      "ref": "Luke 9:25",
+      "form": "ζημιωθείς;",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 25,
+      "left_context": "κόσμον ὅλον ἑαυτὸν δὲ ἀπολέσας ἢ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 8:36",
+      "form": "ζημιωθῆναι⸃",
+      "morph": "V-A-P-N",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 36,
+      "left_context": "⸀ἄνθρωπον ⸂κερδῆσαι τὸν κόσμον ὅλον καὶ",
+      "right_context": "τὴν ψυχὴν αὐτοῦ;"
+    },
+    {
+      "ref": "Matthew 16:26",
+      "form": "ζημιωθῇ;",
+      "morph": "V-A-P-S-3S",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 26,
+      "left_context": "ὅλον κερδήσῃ τὴν δὲ ψυχὴν αὐτοῦ",
+      "right_context": "ἢ τί δώσει ἄνθρωπος ἀντάλλαγμα τῆς"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "2 Corinthians": 1,
+    "Philippians": 1,
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κερδαίνω",
+      "display": "ganar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατακαίω",
+      "display": "será quemado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "será salvado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγέομαι",
+      "display": "considero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκύβαλον",
+      "display": "basuras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντάλλαγμα",
+      "display": "rescate",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 3:15",
+      "reason": "occurs near ἔργον"
+    },
+    {
+      "ref": "2 Corinthians 7:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 9:25",
+      "reason": "occurs near ἤ, ὅλος"
+    },
+    {
+      "ref": "Mark 8:36",
+      "reason": "occurs near κερδαίνω, ψυχή, ὅλος"
+    },
+    {
+      "ref": "Matthew 16:26",
+      "reason": "occurs near κερδαίνω, ψυχή, ἤ"
+    },
+    {
+      "ref": "Philippians 3:8",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

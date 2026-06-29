@@ -1,0 +1,288 @@
+{
+  "lemma": "κλίνω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "κλίνῃ.",
+      "count": 2
+    },
+    {
+      "form": "ἔκλιναν",
+      "count": 1
+    },
+    {
+      "form": "κλίνας",
+      "count": 1
+    },
+    {
+      "form": "κλίνειν·",
+      "count": 1
+    },
+    {
+      "form": "κλινουσῶν",
+      "count": 1
+    },
+    {
+      "form": "κέκλικεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 2,
+      "infinitive": 1,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 4,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:34",
+      "form": "ἔκλιναν",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 34,
+      "left_context": "ἀσθενείας, ἐγενήθησαν ἰσχυροὶ ἐν πολέμῳ, παρεμβολὰς",
+      "right_context": "ἀλλοτρίων·"
+    },
+    {
+      "ref": "John 19:30",
+      "form": "κλίνας",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 30,
+      "left_context": "ὄξος ὁ Ἰησοῦς εἶπεν· Τετέλεσται, καὶ",
+      "right_context": "τὴν κεφαλὴν παρέδωκεν τὸ πνεῦμα."
+    },
+    {
+      "ref": "Luke 9:12",
+      "form": "κλίνειν·",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "Ἡ δὲ ἡμέρα ἤρξατο",
+      "right_context": "προσελθόντες δὲ οἱ δώδεκα εἶπαν αὐτῷ·"
+    },
+    {
+      "ref": "Luke 9:58",
+      "form": "κλίνῃ.",
+      "morph": "V-P-A-S-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 58,
+      "left_context": "ἀνθρώπου οὐκ ἔχει ποῦ τὴν κεφαλὴν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 24:5",
+      "form": "κλινουσῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 5,
+      "left_context": "ἐμφόβων δὲ γενομένων αὐτῶν καὶ",
+      "right_context": "⸂τὰ πρόσωπα⸃ εἰς τὴν γῆν εἶπαν"
+    },
+    {
+      "ref": "Luke 24:29",
+      "form": "κέκλικεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 29,
+      "left_context": "ἡμῶν, ὅτι πρὸς ἑσπέραν ἐστὶν καὶ",
+      "right_context": "⸀ἤδη ἡ ἡμέρα. καὶ εἰσῆλθεν τοῦ"
+    },
+    {
+      "ref": "Matthew 8:20",
+      "form": "κλίνῃ.",
+      "morph": "V-P-A-S-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 20,
+      "left_context": "ἀνθρώπου οὐκ ἔχει ποῦ τὴν κεφαλὴν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 4,
+    "Hebrews": 1,
+    "John": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κεφαλή",
+      "display": "cabeza",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποῦ",
+      "display": "dónde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχυρός",
+      "display": "fuertes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλεμος",
+      "display": "guerra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρεμβολή",
+      "display": "campamentos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλότριος",
+      "display": "de·ajenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελέω",
+      "display": "ha cumplido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δώδεκα",
+      "display": "doces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμφοβος",
+      "display": "de·aterradas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑσπέρα",
+      "display": "tarde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entró",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 24:29",
+      "reason": "occurs near ἡμέρα"
+    },
+    {
+      "ref": "Luke 24:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 9:12",
+      "reason": "occurs near ἡμέρα"
+    },
+    {
+      "ref": "Luke 9:58",
+      "reason": "occurs near κεφαλή, ποῦ"
+    },
+    {
+      "ref": "Hebrews 11:34",
+      "reason": "occurs near πόλεμος, ἰσχυρός"
+    },
+    {
+      "ref": "John 19:30",
+      "reason": "occurs near κεφαλή"
+    },
+    {
+      "ref": "Matthew 8:20",
+      "reason": "occurs near κεφαλή, ποῦ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

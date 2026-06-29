@@ -1,0 +1,253 @@
+{
+  "lemma": "ἐξηγέομαι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἐξηγησάμενος",
+      "count": 1
+    },
+    {
+      "form": "ἐξηγουμένων",
+      "count": 1
+    },
+    {
+      "form": "ἐξηγήσατο",
+      "count": 1
+    },
+    {
+      "form": "ἐξηγεῖτο",
+      "count": 1
+    },
+    {
+      "form": "ἐξηγήσατο.",
+      "count": 1
+    },
+    {
+      "form": "ἐξηγοῦντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 4
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "middle": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:8",
+      "form": "ἐξηγησάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 8,
+      "left_context": "καὶ",
+      "right_context": "⸂ἅπαντα αὐτοῖς⸃ ἀπέστειλεν αὐτοὺς εἰς τὴν"
+    },
+    {
+      "ref": "Acts 15:12",
+      "form": "ἐξηγουμένων",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 12,
+      "left_context": "πλῆθος, καὶ ἤκουον Βαρναβᾶ καὶ Παύλου",
+      "right_context": "ὅσα ἐποίησεν ὁ θεὸς σημεῖα καὶ"
+    },
+    {
+      "ref": "Acts 15:14",
+      "form": "ἐξηγήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 14,
+      "left_context": "Συμεὼν",
+      "right_context": "καθὼς πρῶτον ὁ θεὸς ἐπεσκέψατο λαβεῖν"
+    },
+    {
+      "ref": "Acts 21:19",
+      "form": "ἐξηγεῖτο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 19,
+      "left_context": "καὶ ἀσπασάμενος αὐτοὺς",
+      "right_context": "καθ’ ἓν ἕκαστον ὧν ἐποίησεν ὁ"
+    },
+    {
+      "ref": "John 1:18",
+      "form": "ἐξηγήσατο.",
+      "morph": "V-A-M-I-3S",
+      "book": "John",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "εἰς τὸν κόλπον τοῦ πατρὸς ἐκεῖνος",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 24:35",
+      "form": "ἐξηγοῦντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 35,
+      "left_context": "καὶ αὐτοὶ",
+      "right_context": "τὰ ἐν τῇ ὁδῷ καὶ ὡς"
+    }
+  ],
+  "books": {
+    "Acts": 4,
+    "John": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπας",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "envió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαρναβᾶς",
+      "display": "de·Bernabé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "de·Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σημεῖον",
+      "display": "señales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Συμεών",
+      "display": "Simeón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπισκέπτομαι",
+      "display": "visitó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσπάζομαι",
+      "display": "saludado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόλπος",
+      "display": "seno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "de·padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:8",
+      "reason": "occurs near ἀποστέλλω, ἅπας"
+    },
+    {
+      "ref": "Acts 15:12",
+      "reason": "occurs near Βαρναβᾶς, θεός, ἀκούω"
+    },
+    {
+      "ref": "Acts 15:14",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Acts 21:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 1:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:35",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

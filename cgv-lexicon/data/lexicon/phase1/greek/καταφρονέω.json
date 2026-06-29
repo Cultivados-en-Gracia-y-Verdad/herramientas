@@ -1,0 +1,405 @@
+{
+  "lemma": "καταφρονέω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "καταφρονήσει.",
+      "count": 2
+    },
+    {
+      "form": "καταφρονεῖτε,",
+      "count": 1
+    },
+    {
+      "form": "καταφρονείτω,",
+      "count": 1
+    },
+    {
+      "form": "καταφρονείτωσαν,",
+      "count": 1
+    },
+    {
+      "form": "καταφρονοῦντας.",
+      "count": 1
+    },
+    {
+      "form": "καταφρονήσας,",
+      "count": 1
+    },
+    {
+      "form": "καταφρονήσητε",
+      "count": 1
+    },
+    {
+      "form": "καταφρονεῖς,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "imperative": 2,
+      "participle": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 2,
+      "future": 2
+    },
+    "voices": {
+      "active": 9
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:22",
+      "form": "καταφρονεῖτε,",
+      "morph": "V-P-A-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 22,
+      "left_context": "πίνειν; ἢ τῆς ἐκκλησίας τοῦ θεοῦ",
+      "right_context": "καὶ καταισχύνετε τοὺς μὴ ἔχοντας; τί"
+    },
+    {
+      "ref": "1 Timothy 4:12",
+      "form": "καταφρονείτω,",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "μηδείς σου τῆς νεότητος",
+      "right_context": "ἀλλὰ τύπος γίνου τῶν πιστῶν ἐν"
+    },
+    {
+      "ref": "1 Timothy 6:2",
+      "form": "καταφρονείτωσαν,",
+      "morph": "V-P-A-D-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "οἱ δὲ πιστοὺς ἔχοντες δεσπότας μὴ",
+      "right_context": "ὅτι ἀδελφοί εἰσιν· ἀλλὰ μᾶλλον δουλευέτωσαν,"
+    },
+    {
+      "ref": "2 Peter 2:10",
+      "form": "καταφρονοῦντας.",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "ἐν ἐπιθυμίᾳ μιασμοῦ πορευομένους καὶ κυριότητος",
+      "right_context": "Τολμηταί, αὐθάδεις, δόξας οὐ τρέμουσιν, βλασφημοῦντες,"
+    },
+    {
+      "ref": "Hebrews 12:2",
+      "form": "καταφρονήσας,",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "προκειμένης αὐτῷ χαρᾶς ὑπέμεινεν σταυρὸν αἰσχύνης",
+      "right_context": "ἐν δεξιᾷ τε τοῦ θρόνου τοῦ"
+    },
+    {
+      "ref": "Luke 16:13",
+      "form": "καταφρονήσει.",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 13,
+      "left_context": "ἢ ἑνὸς ἀνθέξεται καὶ τοῦ ἑτέρου",
+      "right_context": "οὐ δύνασθε θεῷ δουλεύειν καὶ μαμωνᾷ."
+    },
+    {
+      "ref": "Matthew 6:24",
+      "form": "καταφρονήσει.",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 24,
+      "left_context": "ἢ ἑνὸς ἀνθέξεται καὶ τοῦ ἑτέρου",
+      "right_context": "οὐ δύνασθε θεῷ δουλεύειν καὶ μαμωνᾷ."
+    },
+    {
+      "ref": "Matthew 18:10",
+      "form": "καταφρονήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 10,
+      "left_context": "Ὁρᾶτε μὴ",
+      "right_context": "ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ"
+    },
+    {
+      "ref": "Romans 2:4",
+      "form": "καταφρονεῖς,",
+      "morph": "V-P-A-I-2S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "καὶ τῆς ἀνοχῆς καὶ τῆς μακροθυμίας",
+      "right_context": "ἀγνοῶν ὅτι τὸ χρηστὸν τοῦ θεοῦ"
+    }
+  ],
+  "books": {
+    "1 Timothy": 2,
+    "Matthew": 2,
+    "1 Corinthians": 1,
+    "2 Peter": 1,
+    "Hebrews": 1,
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·uno",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "de·fieles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντέχομαι",
+      "display": "aferrarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "de·otro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podéis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δουλεύω",
+      "display": "servir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "de·iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταισχύνω",
+      "display": "avergonzáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεότης",
+      "display": "de·juventud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τύπος",
+      "display": "marca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσπότης",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μιασμός",
+      "display": "de·corrupción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "iendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κυριότης",
+      "display": "de·señorío",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τολμητής",
+      "display": "atrevidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐθάδης",
+      "display": "arrogantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "glorias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρέμω",
+      "display": "temblan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρά",
+      "display": "de·gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομένω",
+      "display": "perseveró",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 4:12",
+      "form": "καταφρονείτω,",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "μηδείς σου τῆς νεότητος καταφρονείτω, ἀλλὰ τύπος γίνου τῶν πιστῶν ἐν λόγῳ, ἐν"
+    },
+    {
+      "ref": "1 Timothy 6:2",
+      "form": "καταφρονείτωσαν,",
+      "morph": "V-P-A-D-3P",
+      "clause_text": "οἱ δὲ πιστοὺς ἔχοντες δεσπότας μὴ καταφρονείτωσαν, ὅτι ἀδελφοί εἰσιν· ἀλλὰ μᾶλλον δουλευέτωσαν, ὅτι πιστοί",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 18:10",
+      "form": "καταφρονήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "Ὁρᾶτε μὴ καταφρονήσητε ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ ὑμῖν ὅτι",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 11:22",
+      "negator": "μὴ",
+      "clause_text": "ἐσθίειν καὶ πίνειν; ἢ τῆς ἐκκλησίας τοῦ θεοῦ καταφρονεῖτε, καὶ καταισχύνετε τοὺς μὴ ἔχοντας; τί ⸂εἴπω ὑμῖν⸃;"
+    },
+    {
+      "ref": "1 Timothy 6:2",
+      "negator": "μὴ",
+      "clause_text": "οἱ δὲ πιστοὺς ἔχοντες δεσπότας μὴ καταφρονείτωσαν, ὅτι ἀδελφοί εἰσιν· ἀλλὰ μᾶλλον δουλευέτωσαν, ὅτι πιστοί"
+    },
+    {
+      "ref": "2 Peter 2:10",
+      "negator": "οὐ",
+      "clause_text": "ὀπίσω σαρκὸς ἐν ἐπιθυμίᾳ μιασμοῦ πορευομένους καὶ κυριότητος καταφρονοῦντας. Τολμηταί, αὐθάδεις, δόξας οὐ τρέμουσιν, βλασφημοῦντες,"
+    },
+    {
+      "ref": "Luke 16:13",
+      "negator": "οὐ",
+      "clause_text": "ἕτερον ἀγαπήσει, ἢ ἑνὸς ἀνθέξεται καὶ τοῦ ἑτέρου καταφρονήσει. οὐ δύνασθε θεῷ δουλεύειν καὶ μαμωνᾷ."
+    },
+    {
+      "ref": "Matthew 6:24",
+      "negator": "οὐ",
+      "clause_text": "ἕτερον ἀγαπήσει, ἢ ἑνὸς ἀνθέξεται καὶ τοῦ ἑτέρου καταφρονήσει. οὐ δύνασθε θεῷ δουλεύειν καὶ μαμωνᾷ."
+    },
+    {
+      "ref": "Matthew 18:10",
+      "negator": "μὴ",
+      "clause_text": "Ὁρᾶτε μὴ καταφρονήσητε ἑνὸς τῶν μικρῶν τούτων, λέγω γὰρ ὑμῖν ὅτι"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 6:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 18:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 6:24",
+      "reason": "occurs near εἷς, θεός, ἀντέχομαι"
+    },
+    {
+      "ref": "1 Corinthians 11:22",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "2 Peter 2:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 16:13",
+      "reason": "occurs near εἷς, θεός, ἀντέχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

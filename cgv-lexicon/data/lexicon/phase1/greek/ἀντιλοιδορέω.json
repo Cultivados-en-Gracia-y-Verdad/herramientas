@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀντιλοιδορέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀντελοιδόρει,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:23",
+      "form": "ἀντελοιδόρει,",
+      "morph": "V-I-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "ὃς λοιδορούμενος οὐκ",
+      "right_context": "πάσχων οὐκ ἠπείλει, παρεδίδου δὲ τῷ"
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λοιδορέω",
+      "display": "insultado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padeciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπειλέω",
+      "display": "amenazaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregaba",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 2:23",
+      "negator": "οὐκ",
+      "clause_text": "ὃς λοιδορούμενος οὐκ ἀντελοιδόρει, πάσχων οὐκ ἠπείλει, παρεδίδου δὲ τῷ κρίνοντι δικαίως·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 2:23",
+      "reason": "occurs near λοιδορέω, πάσχω, παραδίδωμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

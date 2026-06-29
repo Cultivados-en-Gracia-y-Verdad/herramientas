@@ -1,0 +1,95 @@
+{
+  "lemma": "συστρέφω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συστρέψαντος",
+      "count": 1
+    },
+    {
+      "form": "⸀Συστρεφομένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 28:3",
+      "form": "συστρέψαντος",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "δὲ τοῦ Παύλου φρυγάνων ⸀τι πλῆθος"
+    },
+    {
+      "ref": "Matthew 17:22",
+      "form": "⸀Συστρεφομένων",
+      "morph": "V-P-P-P",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 22,
+      "left_context": "",
+      "right_context": "δὲ αὐτῶν ἐν τῇ Γαλιλαίᾳ εἶπεν"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "de·Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρύγανον",
+      "display": "de·leñas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλιλαία",
+      "display": "Galilea",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 28:3",
+      "reason": "occurs near Παῦλος, φρύγανον"
+    },
+    {
+      "ref": "Matthew 17:22",
+      "reason": "occurs near Γαλιλαία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

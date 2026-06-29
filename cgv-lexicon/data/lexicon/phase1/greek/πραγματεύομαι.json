@@ -1,0 +1,75 @@
+{
+  "lemma": "πραγματεύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀Πραγματεύσασθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 19:13",
+      "form": "⸀Πραγματεύσασθε",
+      "morph": "V-A-M-D-2P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 13,
+      "left_context": "δέκα μνᾶς καὶ εἶπεν πρὸς αὐτούς·",
+      "right_context": "⸂ἐν ᾧ⸃ ἔρχομαι."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μνᾶ",
+      "display": "minas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vengo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 19:13",
+      "form": "⸀Πραγματεύσασθε",
+      "morph": "V-A-M-D-2P",
+      "clause_text": "ἔδωκεν αὐτοῖς δέκα μνᾶς καὶ εἶπεν πρὸς αὐτούς· ⸀Πραγματεύσασθε ⸂ἐν ᾧ⸃ ἔρχομαι."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 19:13",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

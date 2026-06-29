@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐκλαλέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκλαλῆσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:22",
+      "form": "ἐκλαλῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 22,
+      "left_context": "χιλίαρχος ἀπέλυσε τὸν ⸀νεανίσκον παραγγείλας μηδενὶ",
+      "right_context": "ὅτι ταῦτα ἐνεφάνισας πρὸς ⸀ἐμέ."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀπολύω",
+      "display": "despedió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεανίσκος",
+      "display": "joven",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγγέλλω",
+      "display": "mandado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμφανίζω",
+      "display": "apareciste",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 23:22",
+      "reason": "occurs near νεανίσκος, παραγγέλλω, ἀπολύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀπάγχομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπήγξατο.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 27:5",
+      "form": "ἀπήγξατο.",
+      "morph": "V-A-M-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 5,
+      "left_context": "⸂εἰς τὸν ναὸν⸃ ἀνεχώρησεν, καὶ ἀπελθὼν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ναός",
+      "display": "templo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναχωρέω",
+      "display": "retirarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 27:5",
+      "reason": "occurs near ναός, ἀναχωρέω, ἀπέρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

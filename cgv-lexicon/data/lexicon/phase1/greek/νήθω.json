@@ -1,0 +1,110 @@
+{
+  "lemma": "νήθω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "νήθει·",
+      "count": 1
+    },
+    {
+      "form": "νήθουσιν⸃·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:27",
+      "form": "νήθει·",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 27,
+      "left_context": "κρίνα πῶς αὐξάνει· οὐ κοπιᾷ οὐδὲ",
+      "right_context": "λέγω δὲ ὑμῖν, οὐδὲ Σολομὼν ἐν"
+    },
+    {
+      "ref": "Matthew 6:28",
+      "form": "νήθουσιν⸃·",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 28,
+      "left_context": "ἀγροῦ πῶς ⸂αὐξάνουσιν· οὐ κοπιῶσιν οὐδὲ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αὐξάνω",
+      "display": "crece",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabaja",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Σολομών",
+      "display": "Salomón",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:27",
+      "negator": "οὐ",
+      "clause_text": "κατανοήσατε τὰ κρίνα πῶς αὐξάνει· οὐ κοπιᾷ οὐδὲ νήθει· λέγω δὲ ὑμῖν, οὐδὲ Σολομὼν ἐν πάσῃ τῇ"
+    },
+    {
+      "ref": "Matthew 6:28",
+      "negator": "οὐ",
+      "clause_text": "κρίνα τοῦ ἀγροῦ πῶς ⸂αὐξάνουσιν· οὐ κοπιῶσιν οὐδὲ νήθουσιν⸃·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:27",
+      "reason": "occurs near Σολομών, αὐξάνω, κοπιάω"
+    },
+    {
+      "ref": "Matthew 6:28",
+      "reason": "occurs near αὐξάνω, κοπιάω, πῶς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

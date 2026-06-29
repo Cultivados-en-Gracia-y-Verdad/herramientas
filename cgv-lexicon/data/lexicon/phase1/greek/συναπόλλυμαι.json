@@ -1,0 +1,98 @@
+{
+  "lemma": "συναπόλλυμαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συναπώλετο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:31",
+      "form": "συναπώλετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 31,
+      "left_context": "πίστει Ῥαὰβ ἡ πόρνη οὐ",
+      "right_context": "τοῖς ἀπειθήσασιν, δεξαμένη τοὺς κατασκόπους μετ’"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ῥαάβ",
+      "display": "Rahab",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόρνη",
+      "display": "ramera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπειθέω",
+      "display": "desobedecidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέχομαι",
+      "display": "recibida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάσκοπος",
+      "display": "espías",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 11:31",
+      "negator": "οὐ",
+      "clause_text": "πίστει Ῥαὰβ ἡ πόρνη οὐ συναπώλετο τοῖς ἀπειθήσασιν, δεξαμένη τοὺς κατασκόπους μετ’ εἰρήνης."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:31",
+      "reason": "occurs near δέχομαι, πίστις, πόρνη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

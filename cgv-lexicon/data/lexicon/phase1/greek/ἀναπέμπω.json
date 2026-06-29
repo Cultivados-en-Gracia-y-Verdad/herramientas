@@ -1,0 +1,199 @@
+{
+  "lemma": "ἀναπέμπω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἀνέπεμψεν",
+      "count": 2
+    },
+    {
+      "form": "ἀνέπεμψά",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀναπέμψω",
+      "count": 1
+    },
+    {
+      "form": "⸂ἀνέπεμψεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Philemon 1:12",
+      "form": "ἀνέπεμψά",
+      "morph": "V-A-A-I-1S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "ὃν",
+      "right_context": "⸂σοι αὐτόν, τοῦτ’ ἔστιν τὰ ἐμὰ"
+    },
+    {
+      "ref": "Acts 25:21",
+      "form": "⸀ἀναπέμψω",
+      "morph": "V-A-A-S-1S",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 21,
+      "left_context": "διάγνωσιν, ἐκέλευσα τηρεῖσθαι αὐτὸν ἕως οὗ",
+      "right_context": "αὐτὸν πρὸς Καίσαρα."
+    },
+    {
+      "ref": "Luke 23:7",
+      "form": "ἀνέπεμψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 7,
+      "left_context": "ὅτι ἐκ τῆς ἐξουσίας Ἡρῴδου ἐστὶν",
+      "right_context": "αὐτὸν πρὸς Ἡρῴδην, ὄντα καὶ αὐτὸν"
+    },
+    {
+      "ref": "Luke 23:11",
+      "form": "ἀνέπεμψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 11,
+      "left_context": "αὐτοῦ καὶ ἐμπαίξας ⸀περιβαλὼν ἐσθῆτα λαμπρὰν",
+      "right_context": "αὐτὸν τῷ Πιλάτῳ."
+    },
+    {
+      "ref": "Luke 23:15",
+      "form": "⸂ἀνέπεμψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 15,
+      "left_context": "ἀλλ’ οὐδὲ Ἡρῴδης,",
+      "right_context": "γὰρ αὐτὸν πρὸς ἡμᾶς⸃· καὶ ἰδοὺ"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Philemon": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "de·Herodes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "mandé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηρέω",
+      "display": "guardar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Καῖσαρ",
+      "display": "César",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "de·autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπαίζω",
+      "display": "burlado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιβάλλω",
+      "display": "vestido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθής",
+      "display": "vestido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμπρός",
+      "display": "resplandeciente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 23:15",
+      "negator": "οὐδὲ",
+      "clause_text": "ἀλλ’ οὐδὲ Ἡρῴδης, ⸂ἀνέπεμψεν γὰρ αὐτὸν πρὸς ἡμᾶς⸃· καὶ ἰδοὺ οὐδὲν ἄξιον"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 23:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 23:15",
+      "reason": "occurs near Ἡρῴδης"
+    },
+    {
+      "ref": "Luke 23:7",
+      "reason": "occurs near Ἡρῴδης"
+    },
+    {
+      "ref": "Acts 25:21",
+      "reason": "occurs near Καῖσαρ, κελεύω, τηρέω"
+    },
+    {
+      "ref": "Philemon 1:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

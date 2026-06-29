@@ -1,0 +1,176 @@
+{
+  "lemma": "ἀπόκειμαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀποκειμένην",
+      "count": 2
+    },
+    {
+      "form": "ἀπόκειταί",
+      "count": 1
+    },
+    {
+      "form": "ἀπόκειται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 4
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 4:8",
+      "form": "ἀπόκειταί",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "λοιπὸν",
+      "right_context": "μοι ὁ τῆς δικαιοσύνης στέφανος, ὃν"
+    },
+    {
+      "ref": "Colossians 1:5",
+      "form": "ἀποκειμένην",
+      "morph": "V-P-M-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "διὰ τὴν ἐλπίδα τὴν",
+      "right_context": "ὑμῖν ἐν τοῖς οὐρανοῖς, ἣν προηκούσατε"
+    },
+    {
+      "ref": "Hebrews 9:27",
+      "form": "ἀπόκειται",
+      "morph": "V-P-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 27,
+      "left_context": "καὶ καθ’ ὅσον",
+      "right_context": "τοῖς ἀνθρώποις ἅπαξ ἀποθανεῖν, μετὰ δὲ"
+    },
+    {
+      "ref": "Luke 19:20",
+      "form": "ἀποκειμένην",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 20,
+      "left_context": "ἰδοὺ ἡ μνᾶ σου ἣν εἶχον",
+      "right_context": "ἐν σουδαρίῳ·"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1,
+    "Colossians": 1,
+    "Hebrews": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λοιπός",
+      "display": "restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στέφανος",
+      "display": "corona",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μνᾶ",
+      "display": "mina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σουδάριον",
+      "display": "sudario",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 4:8",
+      "reason": "occurs near δικαιοσύνη, λοιπός, στέφανος"
+    },
+    {
+      "ref": "Colossians 1:5",
+      "reason": "occurs near οὐρανός, ἐλπίς"
+    },
+    {
+      "ref": "Hebrews 9:27",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 19:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "ἔνειμι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐνόντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 11:41",
+      "form": "ἐνόντα",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 41,
+      "left_context": "πλὴν τὰ",
+      "right_context": "δότε ἐλεημοσύνην, καὶ ἰδοὺ πάντα καθαρὰ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλήν",
+      "display": "excepto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεημοσύνη",
+      "display": "limosna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:41",
+      "reason": "occurs near δίδωμι, πλήν, ἐλεημοσύνη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

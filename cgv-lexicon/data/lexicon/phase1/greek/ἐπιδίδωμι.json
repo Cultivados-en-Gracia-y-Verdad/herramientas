@@ -1,0 +1,355 @@
+{
+  "lemma": "ἐπιδίδωμι",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "ἐπέδωκαν",
+      "count": 2
+    },
+    {
+      "form": "ἐπιδώσει",
+      "count": 2
+    },
+    {
+      "form": "ἐπιδόντες",
+      "count": 1
+    },
+    {
+      "form": "ἐπεδόθη",
+      "count": 1
+    },
+    {
+      "form": "ἐπιδώσει⸃;",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπιδώσει",
+      "count": 1
+    },
+    {
+      "form": "ἐπεδίδου",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 8,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 4,
+      "future": 4,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 8,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:30",
+      "form": "ἐπέδωκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 30,
+      "left_context": "εἰς Ἀντιόχειαν, καὶ συναγαγόντες τὸ πλῆθος",
+      "right_context": "τὴν ἐπιστολήν·"
+    },
+    {
+      "ref": "Acts 27:15",
+      "form": "ἐπιδόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 15,
+      "left_context": "καὶ μὴ δυναμένου ἀντοφθαλμεῖν τῷ ἀνέμῳ",
+      "right_context": "ἐφερόμεθα."
+    },
+    {
+      "ref": "Luke 4:17",
+      "form": "ἐπεδόθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "καὶ",
+      "right_context": "αὐτῷ βιβλίον ⸂τοῦ προφήτου Ἠσαΐου⸃ καὶ"
+    },
+    {
+      "ref": "Luke 11:11",
+      "form": "ἐπιδώσει⸃;",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 11,
+      "left_context": "ἰχθύν, ⸀καὶ ἀντὶ ἰχθύος ὄφιν ⸂αὐτῷ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 11:12",
+      "form": "⸀ἐπιδώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 12,
+      "left_context": "ἢ καὶ ⸀αἰτήσει ᾠόν,",
+      "right_context": "αὐτῷ σκορπίον;"
+    },
+    {
+      "ref": "Luke 24:30",
+      "form": "ἐπεδίδου",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 30,
+      "left_context": "λαβὼν τὸν ἄρτον εὐλόγησεν καὶ κλάσας",
+      "right_context": "αὐτοῖς·"
+    },
+    {
+      "ref": "Luke 24:42",
+      "form": "ἐπέδωκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 42,
+      "left_context": "οἱ δὲ",
+      "right_context": "αὐτῷ ἰχθύος ὀπτοῦ ⸀μέρος·"
+    },
+    {
+      "ref": "Matthew 7:9",
+      "form": "ἐπιδώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "ὁ υἱὸς αὐτοῦ ἄρτον— μὴ λίθον",
+      "right_context": "αὐτῷ;"
+    },
+    {
+      "ref": "Matthew 7:10",
+      "form": "ἐπιδώσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "⸀ἢ καὶ ⸂ἰχθὺν αἰτήσει⸃— μὴ ὄφιν",
+      "right_context": "αὐτῷ;"
+    }
+  ],
+  "books": {
+    "Luke": 5,
+    "Acts": 2,
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἰχθύς",
+      "display": "de·pez",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄφις",
+      "display": "serpiente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτέω",
+      "display": "pedirá",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀντιόχεια",
+      "display": "Antioquía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reunidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλῆθος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστολή",
+      "display": "carta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντοφθαλμέω",
+      "display": "hacer·frente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "eran llevado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βιβλίον",
+      "display": "libro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἠσαΐας",
+      "display": "de·Isaías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντί",
+      "display": "en·lugar·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ᾠόν",
+      "display": "huevo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκορπίος",
+      "display": "escorpión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογέω",
+      "display": "bendijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλάω",
+      "display": "partido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀπτός",
+      "display": "de·asado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "parte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 7:9",
+      "negator": "μὴ",
+      "clause_text": "ὃν ⸀αἰτήσει ὁ υἱὸς αὐτοῦ ἄρτον— μὴ λίθον ἐπιδώσει αὐτῷ;"
+    },
+    {
+      "ref": "Matthew 7:10",
+      "negator": "μὴ",
+      "clause_text": "⸀ἢ καὶ ⸂ἰχθὺν αἰτήσει⸃— μὴ ὄφιν ἐπιδώσει αὐτῷ;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:11",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 11:12",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 24:30",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 24:42",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 4:17",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Acts 15:30",
+      "reason": "occurs near Ἀντιόχεια"
+    },
+    {
+      "ref": "Acts 27:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 7:10",
+      "reason": "occurs near αἰτέω, ἰχθύς, ὄφις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

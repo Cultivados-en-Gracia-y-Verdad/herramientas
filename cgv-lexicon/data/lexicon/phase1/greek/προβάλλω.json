@@ -1,0 +1,130 @@
+{
+  "lemma": "προβάλλω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προβαλόντων",
+      "count": 1
+    },
+    {
+      "form": "προβάλωσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 19:33",
+      "form": "προβαλόντων",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 33,
+      "left_context": "ἐκ δὲ τοῦ ὄχλου ⸀συνεβίβασαν Ἀλέξανδρον",
+      "right_context": "αὐτὸν τῶν Ἰουδαίων, ὁ δὲ Ἀλέξανδρος"
+    },
+    {
+      "ref": "Luke 21:30",
+      "form": "προβάλωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 30,
+      "left_context": "ὅταν",
+      "right_context": "ἤδη, βλέποντες ἀφ’ ἑαυτῶν γινώσκετε ὅτι"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμβιβάζω",
+      "display": "unieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀλέξανδρος",
+      "display": "Alejandro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocéis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:33",
+      "reason": "occurs near συμβιβάζω, Ἀλέξανδρος, Ἰουδαῖος"
+    },
+    {
+      "ref": "Luke 21:30",
+      "reason": "occurs near ὅταν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

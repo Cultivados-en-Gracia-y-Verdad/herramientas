@@ -1,0 +1,74 @@
+{
+  "lemma": "κατοικίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀κατῴκισεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 4:5",
+      "form": "⸀κατῴκισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "James",
+      "chapter": 4,
+      "verse": 5,
+      "left_context": "Πρὸς φθόνον ἐπιποθεῖ τὸ πνεῦμα ὃ",
+      "right_context": "ἐν ἡμῖν;"
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φθόνος",
+      "display": "envidia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιποθέω",
+      "display": "anhela",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 4:5",
+      "reason": "occurs near πνεῦμα, φθόνος, ἐπιποθέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

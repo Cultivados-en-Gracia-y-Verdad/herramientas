@@ -1,0 +1,87 @@
+{
+  "lemma": "ἐκνήφω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκνήψατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 15:34",
+      "form": "ἐκνήψατε",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 34,
+      "left_context": "",
+      "right_context": "δικαίως καὶ μὴ ἁμαρτάνετε, ἀγνωσίαν γὰρ"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δικαίως",
+      "display": "justamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτάνω",
+      "display": "pecad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγνωσία",
+      "display": "ignorancia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 15:34",
+      "form": "ἐκνήψατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἐκνήψατε δικαίως καὶ μὴ ἁμαρτάνετε, ἀγνωσίαν γὰρ θεοῦ τινες"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 15:34",
+      "negator": "μὴ",
+      "clause_text": "ἐκνήψατε δικαίως καὶ μὴ ἁμαρτάνετε, ἀγνωσίαν γὰρ θεοῦ τινες"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 15:34",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

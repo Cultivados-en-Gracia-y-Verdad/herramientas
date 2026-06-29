@@ -1,0 +1,114 @@
+{
+  "lemma": "ψωμίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ψωμίσω",
+      "count": 1
+    },
+    {
+      "form": "ψώμιζε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:3",
+      "form": "ψωμίσω",
+      "morph": "V-A-A-S-1S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 3,
+      "left_context": "⸂καὶ ἐὰν⸃",
+      "right_context": "πάντα τὰ ὑπάρχοντά μου, ⸄καὶ ἐὰν⸃"
+    },
+    {
+      "ref": "Romans 12:20",
+      "form": "ψώμιζε",
+      "morph": "V-P-A-D-2S",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "⸂ἀλλὰ ἐὰν⸃ πεινᾷ ὁ ἐχθρός σου,",
+      "right_context": "αὐτόν· ἐὰν διψᾷ, πότιζε αὐτόν· τοῦτο"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεινάω",
+      "display": "tener·hambre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐχθρός",
+      "display": "enemigo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διψάω",
+      "display": "tener·sed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποτίζω",
+      "display": "dar·de·bebe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Romans 12:20",
+      "form": "ψώμιζε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "⸂ἀλλὰ ἐὰν⸃ πεινᾷ ὁ ἐχθρός σου, ψώμιζε αὐτόν· ἐὰν διψᾷ, πότιζε αὐτόν· τοῦτο γὰρ ποιῶν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 12:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 13:3",
+      "reason": "occurs near ὑπάρχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

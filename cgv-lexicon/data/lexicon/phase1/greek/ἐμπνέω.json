@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐμπνέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐμπνέων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:1",
+      "form": "ἐμπνέων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 1,
+      "left_context": "Ὁ δὲ Σαῦλος ἔτι",
+      "right_context": "ἀπειλῆς καὶ φόνου εἰς τοὺς μαθητὰς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Σαῦλος",
+      "display": "Saulo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπειλή",
+      "display": "de·amenaza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόνος",
+      "display": "de·asesinato,",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 9:1",
+      "reason": "occurs near Σαῦλος, φόνος, ἀπειλή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "ὀλοθρεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὀλοθρεύων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:28",
+      "form": "ὀλοθρεύων",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 28,
+      "left_context": "πρόσχυσιν τοῦ αἵματος, ἵνα μὴ ὁ",
+      "right_context": "τὰ πρωτότοκα θίγῃ αὐτῶν."
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αἷμα",
+      "display": "de·sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρωτότοκος",
+      "display": "primogénitos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θιγγάνω",
+      "display": "toce",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 11:28",
+      "negator": "μὴ",
+      "clause_text": "καὶ τὴν πρόσχυσιν τοῦ αἵματος, ἵνα μὴ ὁ ὀλοθρεύων τὰ πρωτότοκα θίγῃ αὐτῶν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:28",
+      "reason": "occurs near αἷμα, θιγγάνω, πρωτότοκος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

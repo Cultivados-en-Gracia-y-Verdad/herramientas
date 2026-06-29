@@ -1,0 +1,106 @@
+{
+  "lemma": "νυστάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀νυστάζει.",
+      "count": 1
+    },
+    {
+      "form": "ἐνύσταξαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:3",
+      "form": "⸀νυστάζει.",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "ἀργεῖ, καὶ ἡ ἀπώλεια αὐτῶν οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 25:5",
+      "form": "ἐνύσταξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 5,
+      "left_context": "χρονίζοντος δὲ τοῦ νυμφίου",
+      "right_context": "πᾶσαι καὶ ἐκάθευδον."
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀπώλεια",
+      "display": "perdición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρονίζω",
+      "display": "tardando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυμφίος",
+      "display": "de·novio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθεύδω",
+      "display": "dormían",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 2:3",
+      "negator": "οὐ",
+      "clause_text": "ἔκπαλαι οὐκ ἀργεῖ, καὶ ἡ ἀπώλεια αὐτῶν οὐ ⸀νυστάζει."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:3",
+      "reason": "occurs near ἀπώλεια"
+    },
+    {
+      "ref": "Matthew 25:5",
+      "reason": "occurs near καθεύδω, νυμφίος, χρονίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

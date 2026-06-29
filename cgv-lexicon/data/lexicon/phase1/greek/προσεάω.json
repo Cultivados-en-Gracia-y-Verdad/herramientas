@@ -1,0 +1,80 @@
+{
+  "lemma": "προσεάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προσεῶντος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:7",
+      "form": "προσεῶντος",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 7,
+      "left_context": "μόλις γενόμενοι κατὰ τὴν Κνίδον, μὴ",
+      "right_context": "ἡμᾶς τοῦ ἀνέμου, ὑπεπλεύσαμεν τὴν Κρήτην"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Κνίδος",
+      "display": "Cnido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποπλέω",
+      "display": "navegamos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 27:7",
+      "negator": "μὴ",
+      "clause_text": "βραδυπλοοῦντες καὶ μόλις γενόμενοι κατὰ τὴν Κνίδον, μὴ προσεῶντος ἡμᾶς τοῦ ἀνέμου, ὑπεπλεύσαμεν τὴν Κρήτην κατὰ Σαλμώνην,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:7",
+      "reason": "occurs near Κνίδος, ἄνεμος, ὑποπλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

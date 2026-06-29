@@ -1,0 +1,383 @@
+{
+  "lemma": "πιάζω",
+  "language": "greek",
+  "total_occurrences": 12,
+  "forms": [
+    {
+      "form": "πιάσαι",
+      "count": 2
+    },
+    {
+      "form": "πιάσας",
+      "count": 2
+    },
+    {
+      "form": "πιάσωσιν",
+      "count": 2
+    },
+    {
+      "form": "ἐπιάσθη",
+      "count": 1
+    },
+    {
+      "form": "πιάσαι,",
+      "count": 1
+    },
+    {
+      "form": "ἐπίασεν",
+      "count": 1
+    },
+    {
+      "form": "πιάσαι·",
+      "count": 1
+    },
+    {
+      "form": "ἐπίασαν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιάσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 4,
+      "indicative": 4,
+      "participle": 2,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "aorist": 12
+    },
+    "voices": {
+      "active": 11,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:32",
+      "form": "πιάσαι",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 32,
+      "left_context": "τοῦ βασιλέως ἐφρούρει τὴν ⸂πόλιν Δαμασκηνῶν⸃",
+      "right_context": "⸀με,"
+    },
+    {
+      "ref": "Revelation 19:20",
+      "form": "ἐπιάσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 20,
+      "left_context": "καὶ",
+      "right_context": "τὸ θηρίον καὶ ⸂μετ’ αὐτοῦ ὁ⸃"
+    },
+    {
+      "ref": "Acts 3:7",
+      "form": "πιάσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "καὶ",
+      "right_context": "αὐτὸν τῆς δεξιᾶς χειρὸς ἤγειρεν ⸀αὐτόν·"
+    },
+    {
+      "ref": "Acts 12:4",
+      "form": "πιάσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "ὃν καὶ",
+      "right_context": "ἔθετο εἰς φυλακήν, παραδοὺς τέσσαρσιν τετραδίοις"
+    },
+    {
+      "ref": "John 7:30",
+      "form": "πιάσαι,",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 7,
+      "verse": 30,
+      "left_context": "ἐζήτουν οὖν αὐτὸν",
+      "right_context": "καὶ οὐδεὶς ἐπέβαλεν ἐπ’ αὐτὸν τὴν"
+    },
+    {
+      "ref": "John 7:32",
+      "form": "πιάσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "John",
+      "chapter": 7,
+      "verse": 32,
+      "left_context": "ἀρχιερεῖς καὶ οἱ Φαρισαῖοι ὑπηρέτας⸃ ἵνα",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "John 7:44",
+      "form": "πιάσαι",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 7,
+      "verse": 44,
+      "left_context": "τινὲς δὲ ἤθελον ἐξ αὐτῶν",
+      "right_context": "αὐτόν, ἀλλ’ οὐδεὶς ⸀ἐπέβαλεν ἐπ’ αὐτὸν"
+    },
+    {
+      "ref": "John 8:20",
+      "form": "ἐπίασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 8,
+      "verse": 20,
+      "left_context": "διδάσκων ἐν τῷ ἱερῷ· καὶ οὐδεὶς",
+      "right_context": "αὐτόν, ὅτι οὔπω ἐληλύθει ἡ ὥρα"
+    },
+    {
+      "ref": "John 10:39",
+      "form": "πιάσαι·",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 10,
+      "verse": 39,
+      "left_context": "ἐζήτουν οὖν ⸂πάλιν αὐτὸν⸃",
+      "right_context": "καὶ ἐξῆλθεν ἐκ τῆς χειρὸς αὐτῶν."
+    },
+    {
+      "ref": "John 11:57",
+      "form": "πιάσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 57,
+      "left_context": "τις γνῷ ποῦ ἐστιν μηνύσῃ, ὅπως",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "John 21:3",
+      "form": "ἐπίασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 3,
+      "left_context": "⸀πλοῖον, καὶ ἐν ἐκείνῃ τῇ νυκτὶ",
+      "right_context": "οὐδέν."
+    },
+    {
+      "ref": "John 21:10",
+      "form": "ἐπιάσατε",
+      "morph": "V-A-A-I-2P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 10,
+      "left_context": "Ἰησοῦς· Ἐνέγκατε ἀπὸ τῶν ὀψαρίων ὧν",
+      "right_context": "νῦν."
+    }
+  ],
+  "books": {
+    "John": 8,
+    "Acts": 2,
+    "2 Corinthians": 1,
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscaban",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιβάλλω",
+      "display": "echó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "de·rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρουρέω",
+      "display": "guardaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαμασκηνός",
+      "display": "de·Damasceno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θηρίον",
+      "display": "bestia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "de·derecha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "puso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακή",
+      "display": "cárcel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέσσαρες",
+      "display": "cuatro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπηρέτης",
+      "display": "servidores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔπω",
+      "display": "aún·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "había venido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποῦ",
+      "display": "dónde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηνύω",
+      "display": "denuncie",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 10:39",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 11:57",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 21:10",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 21:3",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 7:30",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 7:32",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 7:44",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 8:20",
+      "reason": "frequent in John"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

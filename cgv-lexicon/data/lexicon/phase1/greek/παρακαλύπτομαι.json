@@ -1,0 +1,74 @@
+{
+  "lemma": "παρακαλύπτομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρακεκαλυμμένον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 9:45",
+      "form": "παρακεκαλυμμένον",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 45,
+      "left_context": "ἠγνόουν τὸ ῥῆμα τοῦτο, καὶ ἦν",
+      "right_context": "ἀπ’ αὐτῶν ἵνα μὴ αἴσθωνται αὐτό,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ῥῆμα",
+      "display": "dicho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσθάνομαι",
+      "display": "perciban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 9:45",
+      "negator": "μὴ",
+      "clause_text": "οἱ δὲ ἠγνόουν τὸ ῥῆμα τοῦτο, καὶ ἦν παρακεκαλυμμένον ἀπ’ αὐτῶν ἵνα μὴ αἴσθωνται αὐτό, καὶ ἐφοβοῦντο"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 9:45",
+      "reason": "occurs near αἰσθάνομαι, ῥῆμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

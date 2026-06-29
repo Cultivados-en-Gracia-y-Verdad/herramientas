@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐπαθροίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπαθροιζομένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 11:29",
+      "form": "ἐπαθροιζομένων",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 29,
+      "left_context": "Τῶν δὲ ὄχλων",
+      "right_context": "ἤρξατο λέγειν· Ἡ γενεὰ αὕτη ⸀γενεὰ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γενεά",
+      "display": "generación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:29",
+      "reason": "occurs near γενεά, ἄρχω, ὄχλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

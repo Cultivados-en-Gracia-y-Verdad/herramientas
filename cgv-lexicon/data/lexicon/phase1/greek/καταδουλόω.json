@@ -1,0 +1,100 @@
+{
+  "lemma": "καταδουλόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καταδουλοῖ,",
+      "count": 1
+    },
+    {
+      "form": "⸀καταδουλώσουσιν—",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:20",
+      "form": "καταδουλοῖ,",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 20,
+      "left_context": "ἀνέχεσθε γὰρ εἴ τις ὑμᾶς",
+      "right_context": "εἴ τις κατεσθίει, εἴ τις λαμβάνει,"
+    },
+    {
+      "ref": "Galatians 2:4",
+      "form": "⸀καταδουλώσουσιν—",
+      "morph": "V-F-A-I-3P",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "ἔχομεν ἐν Χριστῷ Ἰησοῦ, ἵνα ἡμᾶς",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνέχομαι",
+      "display": "soportáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατεσθίω",
+      "display": "devora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 11:20",
+      "reason": "occurs near κατεσθίω, ἀνέχομαι"
+    },
+    {
+      "ref": "Galatians 2:4",
+      "reason": "occurs near Χριστός, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

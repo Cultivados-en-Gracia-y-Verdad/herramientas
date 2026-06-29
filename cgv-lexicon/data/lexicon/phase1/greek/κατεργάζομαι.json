@@ -1,0 +1,535 @@
+{
+  "lemma": "κατεργάζομαι",
+  "language": "greek",
+  "total_occurrences": 22,
+  "forms": [
+    {
+      "form": "κατεργάζεται",
+      "count": 3
+    },
+    {
+      "form": "κατειργάσατο",
+      "count": 3
+    },
+    {
+      "form": "κατεργάζομαι",
+      "count": 3
+    },
+    {
+      "form": "κατεργάζεται,",
+      "count": 2
+    },
+    {
+      "form": "κατεργασάμενον",
+      "count": 1
+    },
+    {
+      "form": "⸀κατειργάσθαι,",
+      "count": 1
+    },
+    {
+      "form": "κατεργασάμενος",
+      "count": 1
+    },
+    {
+      "form": "κατεργάζεται.",
+      "count": 1
+    },
+    {
+      "form": "κατειργάσθη",
+      "count": 1
+    },
+    {
+      "form": "κατεργασάμενοι",
+      "count": 1
+    },
+    {
+      "form": "κατεργάζεσθε,",
+      "count": 1
+    },
+    {
+      "form": "κατεργαζόμενοι",
+      "count": 1
+    },
+    {
+      "form": "κατεργαζομένου",
+      "count": 1
+    },
+    {
+      "form": "κατεργαζομένη",
+      "count": 1
+    },
+    {
+      "form": "κατεργάζεσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 6,
+      "infinitive": 2,
+      "indicative": 13,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 7,
+      "perfect": 1,
+      "present": 14
+    },
+    "voices": {
+      "middle": 21,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 5:3",
+      "form": "κατεργασάμενον",
+      "morph": "V-A-M-P",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "κέκρικα ὡς παρὼν τὸν οὕτως τοῦτο",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Peter 4:3",
+      "form": "⸀κατειργάσθαι,",
+      "morph": "V-X-M-N",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "παρεληλυθὼς ⸀χρόνος τὸ ⸀βούλημα τῶν ἐθνῶν",
+      "right_context": "πεπορευμένους ἐν ἀσελγείαις, ἐπιθυμίαις, οἰνοφλυγίαις, κώμοις,"
+    },
+    {
+      "ref": "2 Corinthians 4:17",
+      "form": "κατεργάζεται",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "ὑπερβολὴν εἰς ὑπερβολὴν αἰώνιον βάρος δόξης",
+      "right_context": "ἡμῖν,"
+    },
+    {
+      "ref": "2 Corinthians 5:5",
+      "form": "κατεργασάμενος",
+      "morph": "V-A-M-P",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 5,
+      "left_context": "ὁ δὲ",
+      "right_context": "ἡμᾶς εἰς αὐτὸ τοῦτο θεός, ⸀ὁ"
+    },
+    {
+      "ref": "2 Corinthians 7:10",
+      "form": "κατεργάζεται.",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "ἡ δὲ τοῦ κόσμου λύπη θάνατον",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 7:11",
+      "form": "κατειργάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 11,
+      "left_context": "τοῦτο τὸ κατὰ θεὸν ⸀λυπηθῆναι πόσην",
+      "right_context": "ὑμῖν σπουδήν, ἀλλὰ ἀπολογίαν, ἀλλὰ ἀγανάκτησιν,"
+    },
+    {
+      "ref": "2 Corinthians 9:11",
+      "form": "κατεργάζεται",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 11,
+      "left_context": "παντὶ πλουτιζόμενοι εἰς πᾶσαν ἁπλότητα, ἥτις",
+      "right_context": "δι’ ἡμῶν εὐχαριστίαν τῷ θεῷ—"
+    },
+    {
+      "ref": "2 Corinthians 12:12",
+      "form": "κατειργάσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "τὰ μὲν σημεῖα τοῦ ἀποστόλου",
+      "right_context": "ἐν ὑμῖν ἐν πάσῃ ⸀ὑπομονῇ, σημείοις"
+    },
+    {
+      "ref": "Ephesians 6:13",
+      "form": "κατεργασάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "τῇ ἡμέρᾳ τῇ πονηρᾷ καὶ ἅπαντα",
+      "right_context": "στῆναι."
+    },
+    {
+      "ref": "Philippians 2:12",
+      "form": "κατεργάζεσθε,",
+      "morph": "V-P-M-D-2P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "φόβου καὶ τρόμου τὴν ἑαυτῶν σωτηρίαν",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 1:27",
+      "form": "κατεργαζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 27,
+      "left_context": "ἀλλήλους, ἄρσενες ἐν ἄρσεσιν τὴν ἀσχημοσύνην",
+      "right_context": "καὶ τὴν ἀντιμισθίαν ἣν ἔδει τῆς"
+    },
+    {
+      "ref": "Romans 2:9",
+      "form": "κατεργαζομένου",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "στενοχωρία, ἐπὶ πᾶσαν ψυχὴν ἀνθρώπου τοῦ",
+      "right_context": "τὸ κακόν, Ἰουδαίου τε πρῶτον καὶ"
+    },
+    {
+      "ref": "Romans 4:15",
+      "form": "κατεργάζεται,",
+      "morph": "V-P-M-I-3S",
+      "book": "Romans",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "ὁ γὰρ νόμος ὀργὴν",
+      "right_context": "οὗ ⸀δὲ οὐκ ἔστιν νόμος, οὐδὲ"
+    },
+    {
+      "ref": "Romans 5:3",
+      "form": "κατεργάζεται,",
+      "morph": "V-P-M-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "θλίψεσιν, εἰδότες ὅτι ἡ θλῖψις ὑπομονὴν",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 7:8",
+      "form": "κατειργάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 8,
+      "left_context": "λαβοῦσα ἡ ἁμαρτία διὰ τῆς ἐντολῆς",
+      "right_context": "ἐν ἐμοὶ πᾶσαν ἐπιθυμίαν, χωρὶς γὰρ"
+    },
+    {
+      "ref": "Romans 7:13",
+      "form": "κατεργαζομένη",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 13,
+      "left_context": "φανῇ ἁμαρτία διὰ τοῦ ἀγαθοῦ μοι",
+      "right_context": "θάνατον· ἵνα γένηται καθ’ ὑπερβολὴν ἁμαρτωλὸς"
+    },
+    {
+      "ref": "Romans 7:15",
+      "form": "κατεργάζομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "ὃ γὰρ",
+      "right_context": "οὐ γινώσκω· οὐ γὰρ ὃ θέλω"
+    },
+    {
+      "ref": "Romans 7:17",
+      "form": "κατεργάζομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 17,
+      "left_context": "νυνὶ δὲ οὐκέτι ἐγὼ",
+      "right_context": "αὐτὸ ἀλλὰ ἡ ⸀οἰκοῦσα ἐν ἐμοὶ"
+    },
+    {
+      "ref": "Romans 7:18",
+      "form": "κατεργάζεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 18,
+      "left_context": "γὰρ θέλειν παράκειταί μοι, τὸ δὲ",
+      "right_context": "τὸ καλὸν ⸀οὔ·"
+    },
+    {
+      "ref": "Romans 7:20",
+      "form": "κατεργάζομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 20,
+      "left_context": "οὐ ⸀θέλω τοῦτο ποιῶ, οὐκέτι ἐγὼ",
+      "right_context": "αὐτὸ ἀλλὰ ἡ οἰκοῦσα ἐν ἐμοὶ"
+    },
+    {
+      "ref": "Romans 15:18",
+      "form": "κατειργάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 18,
+      "left_context": "γὰρ τολμήσω ⸂τι λαλεῖν⸃ ὧν οὐ",
+      "right_context": "Χριστὸς δι’ ἐμοῦ εἰς ὑπακοὴν ἐθνῶν,"
+    },
+    {
+      "ref": "James 1:3",
+      "form": "κατεργάζεται",
+      "morph": "V-P-M-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "ὅτι τὸ δοκίμιον ὑμῶν τῆς πίστεως",
+      "right_context": "ὑπομονήν·"
+    }
+  ],
+  "books": {
+    "Romans": 11,
+    "2 Corinthians": 6,
+    "1 Corinthians": 1,
+    "1 Peter": 1,
+    "Ephesians": 1,
+    "Philippians": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομονή",
+      "display": "paciencia",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπερβολή",
+      "display": "exceso",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρσην",
+      "display": "varónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐκέτι",
+      "display": "ya·no",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκέω",
+      "display": "habitando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πάρειμι",
+      "display": "estar·presente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "idos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσέλγεια",
+      "display": "lascivias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰνοφλυγία",
+      "display": "embriagueces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "eterno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάρος",
+      "display": "peso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "de·gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "de·mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύπη",
+      "display": "tristeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λυπέω",
+      "display": "entristecer",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Philippians 2:12",
+      "form": "κατεργάζεσθε,",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "μου, μετὰ φόβου καὶ τρόμου τὴν ἑαυτῶν σωτηρίαν κατεργάζεσθε,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 4:15",
+      "negator": "οὐκ",
+      "clause_text": "ὁ γὰρ νόμος ὀργὴν κατεργάζεται, οὗ ⸀δὲ οὐκ ἔστιν νόμος, οὐδὲ παράβασις."
+    },
+    {
+      "ref": "Romans 7:15",
+      "negator": "οὐ",
+      "clause_text": "ὃ γὰρ κατεργάζομαι οὐ γινώσκω· οὐ γὰρ ὃ θέλω τοῦτο πράσσω,"
+    },
+    {
+      "ref": "Romans 15:18",
+      "negator": "οὐ",
+      "clause_text": "οὐ γὰρ τολμήσω ⸂τι λαλεῖν⸃ ὧν οὐ κατειργάσατο Χριστὸς δι’ ἐμοῦ εἰς ὑπακοὴν ἐθνῶν, λόγῳ καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 2:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 15:18",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 1:27",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 2:9",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 4:15",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 5:3",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 7:13",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 7:15",
+      "reason": "frequent in Romans"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

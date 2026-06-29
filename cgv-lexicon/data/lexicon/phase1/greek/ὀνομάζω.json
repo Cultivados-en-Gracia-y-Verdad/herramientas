@@ -1,0 +1,379 @@
+{
+  "lemma": "ὀνομάζω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "ὀνομαζόμενος",
+      "count": 1
+    },
+    {
+      "form": "ὀνομάζων",
+      "count": 1
+    },
+    {
+      "form": "ὀνομαζομένου",
+      "count": 1
+    },
+    {
+      "form": "ὀνομάζεται,",
+      "count": 1
+    },
+    {
+      "form": "ὀνομαζέσθω",
+      "count": 1
+    },
+    {
+      "form": "ὀνομάζειν",
+      "count": 1
+    },
+    {
+      "form": "ὠνόμασεν,",
+      "count": 1
+    },
+    {
+      "form": "ὠνόμασεν",
+      "count": 1
+    },
+    {
+      "form": "ὠνομάσθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 4,
+      "imperative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 6,
+      "aorist": 3
+    },
+    "voices": {
+      "passive": 5,
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 5:11",
+      "form": "ὀνομαζόμενος",
+      "morph": "V-P-P-P",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "ὑμῖν μὴ συναναμίγνυσθαι ἐάν τις ἀδελφὸς",
+      "right_context": "ᾖ πόρνος ἢ πλεονέκτης ἢ εἰδωλολάτρης"
+    },
+    {
+      "ref": "2 Timothy 2:19",
+      "form": "ὀνομάζων",
+      "morph": "V-P-A-P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "καί· Ἀποστήτω ἀπὸ ἀδικίας πᾶς ὁ",
+      "right_context": "τὸ ὄνομα κυρίου."
+    },
+    {
+      "ref": "Ephesians 1:21",
+      "form": "ὀνομαζομένου",
+      "morph": "V-P-P-P",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "δυνάμεως καὶ κυριότητος καὶ παντὸς ὀνόματος",
+      "right_context": "οὐ μόνον ἐν τῷ αἰῶνι τούτῳ"
+    },
+    {
+      "ref": "Ephesians 3:15",
+      "form": "ὀνομάζεται,",
+      "morph": "V-P-P-I-3S",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "πατριὰ ἐν οὐρανοῖς καὶ ἐπὶ γῆς",
+      "right_context": ""
+    },
+    {
+      "ref": "Ephesians 5:3",
+      "form": "ὀνομαζέσθω",
+      "morph": "V-P-P-D-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "καὶ ⸂ἀκαθαρσία πᾶσα⸃ ἢ πλεονεξία μηδὲ",
+      "right_context": "ἐν ὑμῖν, καθὼς πρέπει ἁγίοις,"
+    },
+    {
+      "ref": "Acts 19:13",
+      "form": "ὀνομάζειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 13,
+      "left_context": "τινες ⸀καὶ τῶν περιερχομένων Ἰουδαίων ἐξορκιστῶν",
+      "right_context": "ἐπὶ τοὺς ἔχοντας τὰ πνεύματα τὰ"
+    },
+    {
+      "ref": "Luke 6:13",
+      "form": "ὠνόμασεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "ἀπ’ αὐτῶν δώδεκα, οὓς καὶ ἀποστόλους",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 6:14",
+      "form": "ὠνόμασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "Σίμωνα ὃν καὶ",
+      "right_context": "Πέτρον καὶ Ἀνδρέαν τὸν ἀδελφὸν αὐτοῦ"
+    },
+    {
+      "ref": "Romans 15:20",
+      "form": "ὠνομάσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 20,
+      "left_context": "οὕτως δὲ ⸀φιλοτιμούμενον εὐαγγελίζεσθαι οὐχ ὅπου",
+      "right_context": "Χριστός, ἵνα μὴ ἐπ’ ἀλλότριον θεμέλιον"
+    }
+  ],
+  "books": {
+    "Ephesians": 3,
+    "Luke": 2,
+    "1 Corinthians": 1,
+    "2 Timothy": 1,
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συναναμίγνυμι",
+      "display": "juntarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόρνος",
+      "display": "fornicario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονέκτης",
+      "display": "avaro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίσταμαι",
+      "display": "apartarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικία",
+      "display": "de·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κυριότης",
+      "display": "de·señorío",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκαθαρσία",
+      "display": "inmundicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονεξία",
+      "display": "avaricia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρέπω",
+      "display": "convene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιέρχομαι",
+      "display": "recorriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξορκιστής",
+      "display": "de·exorcistas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δώδεκα",
+      "display": "doces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "apóstoles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Ephesians 5:3",
+      "form": "ὀνομαζέσθω",
+      "morph": "V-P-P-D-3S",
+      "clause_text": "Πορνεία δὲ καὶ ⸂ἀκαθαρσία πᾶσα⸃ ἢ πλεονεξία μηδὲ ὀνομαζέσθω ἐν ὑμῖν, καθὼς πρέπει ἁγίοις,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Ephesians 1:21",
+      "negator": "οὐ",
+      "clause_text": "ἐξουσίας καὶ δυνάμεως καὶ κυριότητος καὶ παντὸς ὀνόματος ὀνομαζομένου οὐ μόνον ἐν τῷ αἰῶνι τούτῳ ἀλλὰ καὶ"
+    },
+    {
+      "ref": "Ephesians 5:3",
+      "negator": "μηδὲ",
+      "clause_text": "Πορνεία δὲ καὶ ⸂ἀκαθαρσία πᾶσα⸃ ἢ πλεονεξία μηδὲ ὀνομαζέσθω ἐν ὑμῖν, καθὼς πρέπει ἁγίοις,"
+    },
+    {
+      "ref": "Romans 15:20",
+      "negator": "οὐχ",
+      "clause_text": "οὕτως δὲ ⸀φιλοτιμούμενον εὐαγγελίζεσθαι οὐχ ὅπου ὠνομάσθη Χριστός, ἵνα μὴ ἐπ’ ἀλλότριον θεμέλιον οἰκοδομῶ,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 5:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Ephesians 1:21",
+      "reason": "occurs near ὄνομα"
+    },
+    {
+      "ref": "Ephesians 3:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 6:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 6:14",
+      "reason": "occurs near ἀδελφός"
+    },
+    {
+      "ref": "1 Corinthians 5:11",
+      "reason": "occurs near πόρνος, συναναμίγνυμι, ἀδελφός"
+    },
+    {
+      "ref": "2 Timothy 2:19",
+      "reason": "occurs near ὄνομα"
+    },
+    {
+      "ref": "Acts 19:13",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "προσποιέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀προσεποιήσατο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 24:28",
+      "form": "⸀προσεποιήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 28,
+      "left_context": "τὴν κώμην οὗ ἐπορεύοντο, καὶ αὐτὸς",
+      "right_context": "⸀πορρώτερον πορεύεσθαι."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πορεύομαι",
+      "display": "ían",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὗ",
+      "display": "del·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορρώτερον",
+      "display": "más·lejos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 24:28",
+      "reason": "occurs near κώμη, οὗ, πορεύομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

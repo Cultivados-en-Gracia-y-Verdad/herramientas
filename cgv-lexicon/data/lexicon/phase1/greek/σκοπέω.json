@@ -1,0 +1,282 @@
+{
+  "lemma": "σκοπέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "σκοπούντων",
+      "count": 1
+    },
+    {
+      "form": "⸀σκοποῦντες,",
+      "count": 1
+    },
+    {
+      "form": "σκοπεῖτε",
+      "count": 1
+    },
+    {
+      "form": "σκοπῶν",
+      "count": 1
+    },
+    {
+      "form": "σκόπει",
+      "count": 1
+    },
+    {
+      "form": "σκοπεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "imperative": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 6
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:18",
+      "form": "σκοπούντων",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 18,
+      "left_context": "μὴ",
+      "right_context": "ἡμῶν τὰ βλεπόμενα ἀλλὰ τὰ μὴ"
+    },
+    {
+      "ref": "Philippians 2:4",
+      "form": "⸀σκοποῦντες,",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "μὴ τὰ ἑαυτῶν ⸀ἕκαστοι",
+      "right_context": "ἀλλὰ καὶ τὰ ἑτέρων ⸁ἕκαστοι."
+    },
+    {
+      "ref": "Philippians 3:17",
+      "form": "σκοπεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "Συμμιμηταί μου γίνεσθε, ἀδελφοί, καὶ",
+      "right_context": "τοὺς οὕτω περιπατοῦντας καθὼς ἔχετε τύπον"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "form": "σκοπῶν",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "καταρτίζετε τὸν τοιοῦτον ἐν πνεύματι πραΰτητος,",
+      "right_context": "σεαυτόν, μὴ καὶ σὺ πειρασθῇς."
+    },
+    {
+      "ref": "Luke 11:35",
+      "form": "σκόπει",
+      "morph": "V-P-A-D-2S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 35,
+      "left_context": "",
+      "right_context": "οὖν μὴ τὸ φῶς τὸ ἐν"
+    },
+    {
+      "ref": "Romans 16:17",
+      "form": "σκοπεῖν",
+      "morph": "V-P-A-N",
+      "book": "Romans",
+      "chapter": 16,
+      "verse": 17,
+      "left_context": "Παρακαλῶ δὲ ὑμᾶς, ἀδελφοί,",
+      "right_context": "τοὺς τὰς διχοστασίας καὶ τὰ σκάνδαλα"
+    }
+  ],
+  "books": {
+    "Philippians": 2,
+    "2 Corinthians": 1,
+    "Galatians": 1,
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἕκαστος",
+      "display": "cadas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "de·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμμιμητής",
+      "display": "copiadores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πραΰτης",
+      "display": "de·mansedumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεαυτοῦ",
+      "display": "de·ti·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειράζω",
+      "display": "tentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φῶς",
+      "display": "luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διχοστασία",
+      "display": "divisiónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Philippians 3:17",
+      "form": "σκοπεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Συμμιμηταί μου γίνεσθε, ἀδελφοί, καὶ σκοπεῖτε τοὺς οὕτω περιπατοῦντας καθὼς ἔχετε τύπον ἡμᾶς·"
+    },
+    {
+      "ref": "Luke 11:35",
+      "form": "σκόπει",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "σκόπει οὖν μὴ τὸ φῶς τὸ ἐν σοὶ σκότος"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:18",
+      "negator": "μὴ",
+      "clause_text": "μὴ σκοπούντων ἡμῶν τὰ βλεπόμενα ἀλλὰ τὰ μὴ βλεπόμενα, τὰ"
+    },
+    {
+      "ref": "Philippians 2:4",
+      "negator": "μὴ",
+      "clause_text": "μὴ τὰ ἑαυτῶν ⸀ἕκαστοι ⸀σκοποῦντες, ἀλλὰ καὶ τὰ ἑτέρων ⸁ἕκαστοι."
+    },
+    {
+      "ref": "Galatians 6:1",
+      "negator": "μὴ",
+      "clause_text": "οἱ πνευματικοὶ καταρτίζετε τὸν τοιοῦτον ἐν πνεύματι πραΰτητος, σκοπῶν σεαυτόν, μὴ καὶ σὺ πειρασθῇς."
+    },
+    {
+      "ref": "Luke 11:35",
+      "negator": "μὴ",
+      "clause_text": "σκόπει οὖν μὴ τὸ φῶς τὸ ἐν σοὶ σκότος"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 3:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 11:35",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Philippians 2:4",
+      "reason": "occurs near ἑαυτοῦ, ἕκαστος, ἕτερος"
+    },
+    {
+      "ref": "2 Corinthians 4:18",
+      "reason": "occurs near βλέπω"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 16:17",
+      "reason": "occurs near ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

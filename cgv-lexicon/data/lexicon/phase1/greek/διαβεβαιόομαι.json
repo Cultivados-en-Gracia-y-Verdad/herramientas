@@ -1,0 +1,112 @@
+{
+  "lemma": "διαβεβαιόομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διαβεβαιοῦνται.",
+      "count": 1
+    },
+    {
+      "form": "διαβεβαιοῦσθαι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 1:7",
+      "form": "διαβεβαιοῦνται.",
+      "morph": "V-P-M-I-3P",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "μήτε ἃ λέγουσιν μήτε περὶ τίνων",
+      "right_context": ""
+    },
+    {
+      "ref": "Titus 3:8",
+      "form": "διαβεβαιοῦσθαι,",
+      "morph": "V-P-M-N",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "λόγος, καὶ περὶ τούτων βούλομαί σε",
+      "right_context": "ἵνα φροντίζωσιν καλῶν ἔργων προΐστασθαι οἱ"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μήτε",
+      "display": "ni",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "quiero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φροντίζω",
+      "display": "ocuparse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "de·buenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προΐστημι",
+      "display": "presidir",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 1:7",
+      "reason": "occurs near μήτε"
+    },
+    {
+      "ref": "Titus 3:8",
+      "reason": "occurs near βούλομαι, καλός, φροντίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

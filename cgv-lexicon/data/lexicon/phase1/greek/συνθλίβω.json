@@ -1,0 +1,106 @@
+{
+  "lemma": "συνθλίβω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνέθλιβον",
+      "count": 1
+    },
+    {
+      "form": "συνθλίβοντά",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 5:24",
+      "form": "συνέθλιβον",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 24,
+      "left_context": "Καὶ ἠκολούθει αὐτῷ ὄχλος πολύς, καὶ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 5:31",
+      "form": "συνθλίβοντά",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 31,
+      "left_context": "οἱ μαθηταὶ αὐτοῦ· Βλέπεις τὸν ὄχλον",
+      "right_context": "σε, καὶ λέγεις· Τίς μου ἥψατο;"
+    }
+  ],
+  "books": {
+    "Mark": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκολουθέω",
+      "display": "seguía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 5:24",
+      "reason": "occurs near πολύς, ἀκολουθέω, ὄχλος"
+    },
+    {
+      "ref": "Mark 5:31",
+      "reason": "occurs near βλέπω, μαθητής, ὄχλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,92 @@
+{
+  "lemma": "ὀρθοτομέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὀρθοτομοῦντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:15",
+      "form": "ὀρθοτομοῦντα",
+      "morph": "V-P-A-P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "δόκιμον παραστῆσαι τῷ θεῷ, ἐργάτην ἀνεπαίσχυντον,",
+      "right_context": "τὸν λόγον τῆς ἀληθείας."
+    }
+  ],
+  "books": {
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρίστημι",
+      "display": "presentar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάτης",
+      "display": "obrero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνεπαίσχυντος",
+      "display": "sin·vergüenza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:15",
+      "reason": "occurs near θεός, λόγος, παρίστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

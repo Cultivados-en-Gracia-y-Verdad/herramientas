@@ -1,0 +1,124 @@
+{
+  "lemma": "θάλπω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "θάλπῃ",
+      "count": 1
+    },
+    {
+      "form": "θάλπει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:7",
+      "form": "θάλπῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "ἐν μέσῳ ὑμῶν, ὡς ⸀ἐὰν τροφὸς",
+      "right_context": "τὰ ἑαυτῆς τέκνα·"
+    },
+    {
+      "ref": "Ephesians 5:29",
+      "form": "θάλπει",
+      "morph": "V-P-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 29,
+      "left_context": "ἑαυτοῦ σάρκα ἐμίσησεν, ἀλλὰ ἐκτρέφει καὶ",
+      "right_context": "αὐτήν, καθὼς καὶ ὁ ⸀Χριστὸς τὴν"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τροφός",
+      "display": "nodriza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισέω",
+      "display": "odió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτρέφω",
+      "display": "cria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 2:7",
+      "reason": "occurs near μέσος, τέκνον, τροφός"
+    },
+    {
+      "ref": "Ephesians 5:29",
+      "reason": "occurs near σάρξ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

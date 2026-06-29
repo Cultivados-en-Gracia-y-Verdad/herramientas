@@ -1,0 +1,74 @@
+{
+  "lemma": "προσεργάζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προσηργάσατο⸃",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 19:16",
+      "form": "προσηργάσατο⸃",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 16,
+      "left_context": "λέγων· Κύριε, ἡ μνᾶ σου ⸂δέκα",
+      "right_context": "μνᾶς."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μνᾶ",
+      "display": "mina",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέκα",
+      "display": "diez",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 19:16",
+      "reason": "occurs near δέκα, κύριος, μνᾶ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

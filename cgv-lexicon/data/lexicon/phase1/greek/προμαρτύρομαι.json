@@ -1,0 +1,74 @@
+{
+  "lemma": "προμαρτύρομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προμαρτυρόμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:11",
+      "form": "προμαρτυρόμενον",
+      "morph": "V-P-M-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ἐδήλου τὸ ἐν αὐτοῖς πνεῦμα Χριστοῦ",
+      "right_context": "τὰ εἰς Χριστὸν παθήματα καὶ τὰς"
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάθημα",
+      "display": "padecimientos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 1:11",
+      "reason": "occurs near Χριστός, πάθημα, πνεῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

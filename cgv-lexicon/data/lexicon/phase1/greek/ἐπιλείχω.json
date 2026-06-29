@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐπιλείχω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐπέλειχον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 16:21",
+      "form": "⸀ἐπέλειχον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 21,
+      "left_context": "πλουσίου· ἀλλὰ καὶ οἱ κύνες ἐρχόμενοι",
+      "right_context": "τὰ ἕλκη αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύων",
+      "display": "perros,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "veniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕλκος",
+      "display": "llagas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:21",
+      "reason": "occurs near κύων, ἔρχομαι, ἕλκος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

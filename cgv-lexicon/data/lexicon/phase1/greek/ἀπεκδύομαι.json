@@ -1,0 +1,116 @@
+{
+  "lemma": "ἀπεκδύομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀπεκδυσάμενος",
+      "count": 1
+    },
+    {
+      "form": "ἀπεκδυσάμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:15",
+      "form": "ἀπεκδυσάμενος",
+      "morph": "V-A-M-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "",
+      "right_context": "τὰς ἀρχὰς καὶ τὰς ἐξουσίας ἐδειγμάτισεν"
+    },
+    {
+      "ref": "Colossians 3:9",
+      "form": "ἀπεκδυσάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "μὴ ψεύδεσθε εἰς ἀλλήλους·",
+      "right_context": "τὸν παλαιὸν ἄνθρωπον σὺν ταῖς πράξεσιν"
+    }
+  ],
+  "books": {
+    "Colossians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀρχή",
+      "display": "principios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψεύδομαι",
+      "display": "mented",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παλαιός",
+      "display": "viejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 3:9",
+      "negator": "μὴ",
+      "clause_text": "μὴ ψεύδεσθε εἰς ἀλλήλους· ἀπεκδυσάμενοι τὸν παλαιὸν ἄνθρωπον σὺν ταῖς πράξεσιν αὐτοῦ,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 2:15",
+      "reason": "occurs near ἀρχή, ἐξουσία"
+    },
+    {
+      "ref": "Colossians 3:9",
+      "reason": "occurs near παλαιός, ψεύδομαι, ἀλλήλων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

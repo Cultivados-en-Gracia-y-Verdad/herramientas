@@ -1,0 +1,250 @@
+{
+  "lemma": "ὑπερέχω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ὑπερέχοντι,",
+      "count": 1
+    },
+    {
+      "form": "ὑπερέχοντας",
+      "count": 1
+    },
+    {
+      "form": "ὑπερέχον",
+      "count": 1
+    },
+    {
+      "form": "ὑπερέχουσα",
+      "count": 1
+    },
+    {
+      "form": "ὑπερεχούσαις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 5
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:13",
+      "form": "ὑπερέχοντι,",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "διὰ τὸν κύριον· εἴτε βασιλεῖ ὡς",
+      "right_context": ""
+    },
+    {
+      "ref": "Philippians 2:3",
+      "form": "ὑπερέχοντας",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "κενοδοξίαν, ἀλλὰ τῇ ταπεινοφροσύνῃ ἀλλήλους ἡγούμενοι",
+      "right_context": "ἑαυτῶν,"
+    },
+    {
+      "ref": "Philippians 3:8",
+      "form": "ὑπερέχον",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "ἡγοῦμαι πάντα ζημίαν εἶναι διὰ τὸ",
+      "right_context": "τῆς γνώσεως Χριστοῦ Ἰησοῦ τοῦ κυρίου"
+    },
+    {
+      "ref": "Philippians 4:7",
+      "form": "ὑπερέχουσα",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "καὶ ἡ εἰρήνη τοῦ θεοῦ ἡ",
+      "right_context": "πάντα νοῦν φρουρήσει τὰς καρδίας ὑμῶν"
+    },
+    {
+      "ref": "Romans 13:1",
+      "form": "ὑπερεχούσαις",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 13,
+      "verse": 1,
+      "left_context": "Πᾶσα ψυχὴ ἐξουσίαις",
+      "right_context": "ὑποτασσέσθω, οὐ γὰρ ἔστιν ἐξουσία εἰ"
+    }
+  ],
+  "books": {
+    "Philippians": 3,
+    "1 Peter": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridades",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴτε",
+      "display": "sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταπεινοφροσύνη",
+      "display": "humildad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγέομαι",
+      "display": "considerando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζημία",
+      "display": "pérdida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνῶσις",
+      "display": "de·conocimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρουρέω",
+      "display": "guardará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποτάσσω",
+      "display": "someta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 13:1",
+      "negator": "οὐ",
+      "clause_text": "Πᾶσα ψυχὴ ἐξουσίαις ὑπερεχούσαις ὑποτασσέσθω, οὐ γὰρ ἔστιν ἐξουσία εἰ μὴ ὑπὸ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 2:3",
+      "reason": "occurs near ταπεινοφροσύνη"
+    },
+    {
+      "ref": "Philippians 3:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Philippians 4:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 2:13",
+      "reason": "occurs near βασιλεύς, εἴτε, κύριος"
+    },
+    {
+      "ref": "Romans 13:1",
+      "reason": "occurs near ἐξουσία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

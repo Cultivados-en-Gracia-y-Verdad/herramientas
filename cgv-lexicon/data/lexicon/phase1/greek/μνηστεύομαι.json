@@ -1,0 +1,166 @@
+{
+  "lemma": "μνηστεύομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀ἐμνηστευμένην",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐμνηστευμένῃ",
+      "count": 1
+    },
+    {
+      "form": "⸀μνηστευθείσης",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "perfect": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:27",
+      "form": "⸀ἐμνηστευμένην",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 27,
+      "left_context": "πρὸς παρθένον",
+      "right_context": "ἀνδρὶ ᾧ ὄνομα Ἰωσὴφ ἐξ οἴκου"
+    },
+    {
+      "ref": "Luke 2:5",
+      "form": "⸂ἐμνηστευμένῃ",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "ἀπογράψασθαι σὺν Μαριὰμ τῇ",
+      "right_context": "αὐτῷ⸃, οὔσῃ ἐγκύῳ."
+    },
+    {
+      "ref": "Matthew 1:18",
+      "form": "⸀μνηστευθείσης",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "⸀Ἰησοῦ χριστοῦ ἡ ⸀γένεσις οὕτως ἦν.",
+      "right_context": "τῆς μητρὸς αὐτοῦ Μαρίας τῷ Ἰωσήφ,"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρθένος",
+      "display": "virgen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωσήφ",
+      "display": "José",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπογράφω",
+      "display": "censar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαριάμ",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔγκυος",
+      "display": "embarazada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γένεσις",
+      "display": "nacimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήτηρ",
+      "display": "de·madre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαρία",
+      "display": "de·María",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:27",
+      "reason": "occurs near παρθένος, ἀνήρ, Ἰωσήφ"
+    },
+    {
+      "ref": "Luke 2:5",
+      "reason": "occurs near ἀπογράφω"
+    },
+    {
+      "ref": "Matthew 1:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

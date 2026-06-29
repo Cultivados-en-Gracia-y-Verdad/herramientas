@@ -1,0 +1,411 @@
+{
+  "lemma": "μακροθυμέω",
+  "language": "greek",
+  "total_occurrences": 10,
+  "forms": [
+    {
+      "form": "μακροθυμεῖ,",
+      "count": 1
+    },
+    {
+      "form": "μακροθυμεῖτε",
+      "count": 1
+    },
+    {
+      "form": "μακροθυμεῖ",
+      "count": 1
+    },
+    {
+      "form": "μακροθυμήσας",
+      "count": 1
+    },
+    {
+      "form": "⸀μακροθυμεῖ",
+      "count": 1
+    },
+    {
+      "form": "⸀Μακροθύμησον",
+      "count": 1
+    },
+    {
+      "form": "Μακροθύμησον",
+      "count": 1
+    },
+    {
+      "form": "Μακροθυμήσατε",
+      "count": 1
+    },
+    {
+      "form": "μακροθυμῶν",
+      "count": 1
+    },
+    {
+      "form": "μακροθυμήσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "imperative": 5,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 5
+    },
+    "voices": {
+      "active": 10
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:4",
+      "form": "μακροθυμεῖ,",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 4,
+      "left_context": "Ἡ ἀγάπη",
+      "right_context": "χρηστεύεται ἡ ἀγάπη, οὐ ζηλοῖ ⸂ἡ"
+    },
+    {
+      "ref": "1 Thessalonians 5:14",
+      "form": "μακροθυμεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "παραμυθεῖσθε τοὺς ὀλιγοψύχους, ἀντέχεσθε τῶν ἀσθενῶν,",
+      "right_context": "πρὸς πάντας."
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "form": "μακροθυμεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "ἐπαγγελίας, ὥς τινες βραδύτητα ἡγοῦνται, ἀλλὰ",
+      "right_context": "εἰς ⸀ὑμᾶς, μὴ βουλόμενός τινας ἀπολέσθαι"
+    },
+    {
+      "ref": "Hebrews 6:15",
+      "form": "μακροθυμήσας",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 15,
+      "left_context": "καὶ οὕτως",
+      "right_context": "ἐπέτυχεν τῆς ἐπαγγελίας."
+    },
+    {
+      "ref": "Luke 18:7",
+      "form": "⸀μακροθυμεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 7,
+      "left_context": "βοώντων ⸀αὐτῷ ἡμέρας καὶ νυκτός, καὶ",
+      "right_context": "ἐπ’ αὐτοῖς;"
+    },
+    {
+      "ref": "Matthew 18:26",
+      "form": "⸀Μακροθύμησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 26,
+      "left_context": "οὖν ὁ δοῦλος προσεκύνει αὐτῷ λέγων·",
+      "right_context": "ἐπ’ ⸀ἐμοί, καὶ πάντα ⸂ἀποδώσω σοι⸃."
+    },
+    {
+      "ref": "Matthew 18:29",
+      "form": "Μακροθύμησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 29,
+      "left_context": "ὁ σύνδουλος ⸀αὐτοῦ παρεκάλει αὐτὸν λέγων·",
+      "right_context": "ἐπ’ ⸀ἐμοί, καὶ ἀποδώσω σοι."
+    },
+    {
+      "ref": "James 5:7",
+      "form": "Μακροθυμήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "",
+      "right_context": "οὖν, ἀδελφοί, ἕως τῆς παρουσίας τοῦ"
+    },
+    {
+      "ref": "James 5:7",
+      "form": "μακροθυμῶν",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "ἐκδέχεται τὸν τίμιον καρπὸν τῆς γῆς,",
+      "right_context": "ἐπ’ ⸀αὐτῷ ἕως ⸀λάβῃ πρόϊμον καὶ"
+    },
+    {
+      "ref": "James 5:8",
+      "form": "μακροθυμήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "καὶ ὑμεῖς, στηρίξατε τὰς καρδίας ὑμῶν,"
+    }
+  ],
+  "books": {
+    "James": 3,
+    "Matthew": 2,
+    "1 Corinthians": 1,
+    "1 Thessalonians": 1,
+    "2 Peter": 1,
+    "Hebrews": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolveré",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χρηστεύομαι",
+      "display": "ser·benigno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζηλόω",
+      "display": "cela",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλιγόψυχος",
+      "display": "de·poco·ánimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντέχομαι",
+      "display": "aferrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενής",
+      "display": "de·débiles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βραδύτης",
+      "display": "tardanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγέομαι",
+      "display": "consideran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτυγχάνω",
+      "display": "alcanzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "de·promesa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσκυνέω",
+      "display": "postrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύνδουλος",
+      "display": "consirviente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρουσία",
+      "display": "de·venida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίμιος",
+      "display": "precioso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Thessalonians 5:14",
+      "form": "μακροθυμεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "τοὺς ἀτάκτους, παραμυθεῖσθε τοὺς ὀλιγοψύχους, ἀντέχεσθε τῶν ἀσθενῶν, μακροθυμεῖτε πρὸς πάντας."
+    },
+    {
+      "ref": "Matthew 18:26",
+      "form": "⸀Μακροθύμησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "πεσὼν οὖν ὁ δοῦλος προσεκύνει αὐτῷ λέγων· ⸀Μακροθύμησον ἐπ’ ⸀ἐμοί, καὶ πάντα ⸂ἀποδώσω σοι⸃."
+    },
+    {
+      "ref": "Matthew 18:29",
+      "form": "Μακροθύμησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "πεσὼν οὖν ὁ σύνδουλος ⸀αὐτοῦ παρεκάλει αὐτὸν λέγων· Μακροθύμησον ἐπ’ ⸀ἐμοί, καὶ ἀποδώσω σοι."
+    },
+    {
+      "ref": "James 5:7",
+      "form": "Μακροθυμήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Μακροθυμήσατε οὖν, ἀδελφοί, ἕως τῆς παρουσίας τοῦ κυρίου. ἰδοὺ"
+    },
+    {
+      "ref": "James 5:8",
+      "form": "μακροθυμήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "μακροθυμήσατε καὶ ὑμεῖς, στηρίξατε τὰς καρδίας ὑμῶν, ὅτι ἡ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 13:4",
+      "negator": "οὐ",
+      "clause_text": "Ἡ ἀγάπη μακροθυμεῖ, χρηστεύεται ἡ ἀγάπη, οὐ ζηλοῖ ⸂ἡ ἀγάπη⸃, οὐ"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "negator": "μὴ",
+      "clause_text": "⸀κύριος τῆς ἐπαγγελίας, ὥς τινες βραδύτητα ἡγοῦνται, ἀλλὰ μακροθυμεῖ εἰς ⸀ὑμᾶς, μὴ βουλόμενός τινας ἀπολέσθαι ἀλλὰ πάντας"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 5:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 18:26",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 18:29",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Thessalonians 5:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 13:4",
+      "reason": "occurs near ζηλόω, χρηστεύομαι, ἀγάπη"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 6:15",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

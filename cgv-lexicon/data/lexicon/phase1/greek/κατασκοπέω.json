@@ -1,0 +1,86 @@
+{
+  "lemma": "κατασκοπέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατασκοπῆσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 2:4",
+      "form": "κατασκοπῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "δὲ τοὺς παρεισάκτους ψευδαδέλφους, οἵτινες παρεισῆλθον",
+      "right_context": "τὴν ἐλευθερίαν ἡμῶν ἣν ἔχομεν ἐν"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρείσακτος",
+      "display": "introducidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδάδελφος",
+      "display": "falso·hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρεισέρχομαι",
+      "display": "entraron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλευθερία",
+      "display": "libertad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 2:4",
+      "reason": "occurs near παρείσακτος, παρεισέρχομαι, ψευδάδελφος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,105 @@
+{
+  "lemma": "ἁλίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἁλισθήσεται.",
+      "count": 1
+    },
+    {
+      "form": "ἁλισθήσεται;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 9:49",
+      "form": "⸀ἁλισθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 49,
+      "left_context": "Πᾶς γὰρ πυρὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 5:13",
+      "form": "ἁλισθήσεται;",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "δὲ τὸ ἅλας μωρανθῇ, ἐν τίνι",
+      "right_context": "εἰς οὐδὲν ἰσχύει ἔτι εἰ μὴ"
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλας",
+      "display": "sal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μωραίνω",
+      "display": "hacer·necio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "puede",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 9:49",
+      "reason": "occurs near πῦρ"
+    },
+    {
+      "ref": "Matthew 5:13",
+      "reason": "occurs near μωραίνω, ἅλας, ἔτι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

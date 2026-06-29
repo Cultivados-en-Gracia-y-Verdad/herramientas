@@ -1,0 +1,115 @@
+{
+  "lemma": "καταμαρτυρέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "καταμαρτυροῦσιν;",
+      "count": 3
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 14:60",
+      "form": "καταμαρτυροῦσιν;",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 60,
+      "left_context": "Οὐκ ἀποκρίνῃ οὐδέν; τί οὗτοί σου",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 26:62",
+      "form": "καταμαρτυροῦσιν;",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 62,
+      "left_context": "αὐτῷ· Οὐδὲν ἀποκρίνῃ; τί οὗτοί σου",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 27:13",
+      "form": "καταμαρτυροῦσιν;",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 13,
+      "left_context": "ὁ Πιλᾶτος· Οὐκ ἀκούεις πόσα σου",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "respondes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόσος",
+      "display": "cuánto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 27:13",
+      "negator": "Οὐκ",
+      "clause_text": "λέγει αὐτῷ ὁ Πιλᾶτος· Οὐκ ἀκούεις πόσα σου καταμαρτυροῦσιν;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 26:62",
+      "reason": "occurs near ἀποκρίνομαι"
+    },
+    {
+      "ref": "Matthew 27:13",
+      "reason": "occurs near Πιλᾶτος, πόσος, ἀκούω"
+    },
+    {
+      "ref": "Mark 14:60",
+      "reason": "occurs near ἀποκρίνομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

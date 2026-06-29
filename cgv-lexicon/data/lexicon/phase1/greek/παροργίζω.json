@@ -1,0 +1,121 @@
+{
+  "lemma": "παροργίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παροργίζετε",
+      "count": 1
+    },
+    {
+      "form": "παροργιῶ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 6:4",
+      "form": "παροργίζετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 4,
+      "left_context": "Καὶ οἱ πατέρες, μὴ",
+      "right_context": "τὰ τέκνα ὑμῶν, ἀλλὰ ἐκτρέφετε αὐτὰ"
+    },
+    {
+      "ref": "Romans 10:19",
+      "form": "παροργιῶ",
+      "morph": "V-F-A-I-1S",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "ἐπ’ οὐκ ἔθνει, ἐπ’ ἔθνει ἀσυνέτῳ",
+      "right_context": "ὑμᾶς."
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔθνος",
+      "display": "nación",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτρέφω",
+      "display": "criad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσύνετος",
+      "display": "insensato",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Ephesians 6:4",
+      "form": "παροργίζετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Καὶ οἱ πατέρες, μὴ παροργίζετε τὰ τέκνα ὑμῶν, ἀλλὰ ἐκτρέφετε αὐτὰ ἐν παιδείᾳ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Ephesians 6:4",
+      "negator": "μὴ",
+      "clause_text": "Καὶ οἱ πατέρες, μὴ παροργίζετε τὰ τέκνα ὑμῶν, ἀλλὰ ἐκτρέφετε αὐτὰ ἐν παιδείᾳ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 6:4",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 10:19",
+      "reason": "occurs near ἀσύνετος, ἔθνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

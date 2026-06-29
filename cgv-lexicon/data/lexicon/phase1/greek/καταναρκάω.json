@@ -1,0 +1,141 @@
+{
+  "lemma": "καταναρκάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "κατενάρκησα",
+      "count": 2
+    },
+    {
+      "form": "⸀καταναρκήσω·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:9",
+      "form": "κατενάρκησα",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 9,
+      "left_context": "παρὼν πρὸς ὑμᾶς καὶ ὑστερηθεὶς οὐ",
+      "right_context": "οὐθενός· τὸ γὰρ ὑστέρημά μου προσανεπλήρωσαν"
+    },
+    {
+      "ref": "2 Corinthians 12:13",
+      "form": "κατενάρκησα",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "εἰ μὴ ὅτι αὐτὸς ἐγὼ οὐ",
+      "right_context": "ὑμῶν; χαρίσασθέ μοι τὴν ἀδικίαν ταύτην."
+    },
+    {
+      "ref": "2 Corinthians 12:14",
+      "form": "⸀καταναρκήσω·",
+      "morph": "V-F-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "ἔχω ἐλθεῖν πρὸς ὑμᾶς, καὶ οὐ",
+      "right_context": "οὐ γὰρ ζητῶ τὰ ὑμῶν ἀλλὰ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑστερέω",
+      "display": "faltado;",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑστέρημα",
+      "display": "falta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρίζομαι",
+      "display": "perdonad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικία",
+      "display": "injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "busco",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 11:9",
+      "negator": "οὐ",
+      "clause_text": "καὶ παρὼν πρὸς ὑμᾶς καὶ ὑστερηθεὶς οὐ κατενάρκησα οὐθενός· τὸ γὰρ ὑστέρημά μου προσανεπλήρωσαν οἱ ἀδελφοὶ"
+    },
+    {
+      "ref": "2 Corinthians 12:13",
+      "negator": "οὐ",
+      "clause_text": "λοιπὰς ἐκκλησίας, εἰ μὴ ὅτι αὐτὸς ἐγὼ οὐ κατενάρκησα ὑμῶν; χαρίσασθέ μοι τὴν ἀδικίαν ταύτην."
+    },
+    {
+      "ref": "2 Corinthians 12:14",
+      "negator": "οὐ",
+      "clause_text": "⸀τοῦτο ἑτοίμως ἔχω ἐλθεῖν πρὸς ὑμᾶς, καὶ οὐ ⸀καταναρκήσω· οὐ γὰρ ζητῶ τὰ ὑμῶν ἀλλὰ ὑμᾶς, οὐ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 11:9",
+      "reason": "occurs near ὑστέρημα, ὑστερέω"
+    },
+    {
+      "ref": "2 Corinthians 12:13",
+      "reason": "occurs near χαρίζομαι, ἀδικία"
+    },
+    {
+      "ref": "2 Corinthians 12:14",
+      "reason": "occurs near ἔρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

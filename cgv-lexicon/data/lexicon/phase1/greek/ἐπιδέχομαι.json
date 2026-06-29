@@ -1,0 +1,112 @@
+{
+  "lemma": "ἐπιδέχομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπιδέχεται",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "3 John 1:9",
+      "form": "ἐπιδέχεται",
+      "morph": "V-P-M-I-3S",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "ἀλλ’ ὁ φιλοπρωτεύων αὐτῶν Διοτρέφης οὐκ",
+      "right_context": "ἡμᾶς."
+    },
+    {
+      "ref": "3 John 1:10",
+      "form": "ἐπιδέχεται",
+      "morph": "V-P-M-I-3S",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "μὴ ἀρκούμενος ἐπὶ τούτοις οὔτε αὐτὸς",
+      "right_context": "τοὺς ἀδελφοὺς καὶ τοὺς βουλομένους κωλύει"
+    }
+  ],
+  "books": {
+    "3 John": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φιλοπρωτεύω",
+      "display": "amar·ser·primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Διοτρέφης",
+      "display": "Diótrefes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρκέω",
+      "display": "bastado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔτε",
+      "display": "ni",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "3 John 1:9",
+      "negator": "οὐκ",
+      "clause_text": "τῇ ἐκκλησίᾳ· ἀλλ’ ὁ φιλοπρωτεύων αὐτῶν Διοτρέφης οὐκ ἐπιδέχεται ἡμᾶς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "3 John 1:10",
+      "reason": "occurs near οὔτε, ἀδελφός, ἀρκέω"
+    },
+    {
+      "ref": "3 John 1:9",
+      "reason": "occurs near Διοτρέφης, φιλοπρωτεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "στρεβλόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "στρεβλοῦσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 3:16",
+      "form": "στρεβλοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "τινα, ἃ οἱ ἀμαθεῖς καὶ ἀστήρικτοι",
+      "right_context": "ὡς καὶ τὰς λοιπὰς γραφὰς πρὸς"
+    }
+  ],
+  "books": {
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀμαθής",
+      "display": "ignorantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀστήρικτος",
+      "display": "inconstantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escrituras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 3:16",
+      "reason": "occurs near γραφή, λοιπός, ἀμαθής"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

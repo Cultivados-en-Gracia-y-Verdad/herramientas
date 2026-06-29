@@ -1,0 +1,92 @@
+{
+  "lemma": "θεατρίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "θεατριζόμενοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 10:33",
+      "form": "θεατριζόμενοι,",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 33,
+      "left_context": "τοῦτο μὲν ὀνειδισμοῖς τε καὶ θλίψεσιν",
+      "right_context": "τοῦτο δὲ κοινωνοὶ τῶν οὕτως ἀναστρεφομένων"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνειδισμός",
+      "display": "afrentas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "tribulaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοινωνός",
+      "display": "partícipes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:33",
+      "reason": "occurs near θλῖψις, κοινωνός, μέν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

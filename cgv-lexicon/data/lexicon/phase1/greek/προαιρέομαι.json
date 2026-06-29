@@ -1,0 +1,80 @@
+{
+  "lemma": "προαιρέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀προῄρηται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 9:7",
+      "form": "⸀προῄρηται",
+      "morph": "V-X-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 7,
+      "left_context": "ἕκαστος καθὼς",
+      "right_context": "τῇ καρδίᾳ, μὴ ἐκ λύπης ἢ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύπη",
+      "display": "de·tristeza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 9:7",
+      "negator": "μὴ",
+      "clause_text": "ἕκαστος καθὼς ⸀προῄρηται τῇ καρδίᾳ, μὴ ἐκ λύπης ἢ ἐξ ἀνάγκης·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 9:7",
+      "reason": "occurs near καρδία, λύπη, ἕκαστος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

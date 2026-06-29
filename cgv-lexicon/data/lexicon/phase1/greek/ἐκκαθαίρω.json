@@ -1,0 +1,107 @@
+{
+  "lemma": "ἐκκαθαίρω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐκκαθάρατε",
+      "count": 1
+    },
+    {
+      "form": "ἐκκαθάρῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 5:7",
+      "form": "ἐκκαθάρατε",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "",
+      "right_context": "τὴν παλαιὰν ζύμην, ἵνα ἦτε νέον"
+    },
+    {
+      "ref": "2 Timothy 2:21",
+      "form": "ἐκκαθάρῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "ἐὰν οὖν τις",
+      "right_context": "ἑαυτὸν ἀπὸ τούτων, ἔσται σκεῦος εἰς"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παλαιός",
+      "display": "vieja",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζύμη",
+      "display": "levadura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasija",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 5:7",
+      "form": "ἐκκαθάρατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἐκκαθάρατε τὴν παλαιὰν ζύμην, ἵνα ἦτε νέον φύραμα, καθώς"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 5:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 2:21",
+      "reason": "occurs near σκεῦος, ἑαυτοῦ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

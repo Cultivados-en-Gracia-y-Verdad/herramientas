@@ -1,0 +1,138 @@
+{
+  "lemma": "σωρεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "σεσωρευμένα",
+      "count": 1
+    },
+    {
+      "form": "σωρεύσεις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "future": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 3:6",
+      "form": "σεσωρευμένα",
+      "morph": "V-X-P-P",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "εἰς τὰς οἰκίας καὶ ⸀αἰχμαλωτίζοντες γυναικάρια",
+      "right_context": "ἁμαρτίαις, ἀγόμενα ἐπιθυμίαις ποικίλαις,"
+    },
+    {
+      "ref": "Romans 12:20",
+      "form": "σωρεύσεις",
+      "morph": "V-F-A-I-2S",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "αὐτόν· τοῦτο γὰρ ποιῶν ἄνθρακας πυρὸς",
+      "right_context": "ἐπὶ τὴν κεφαλὴν αὐτοῦ."
+    }
+  ],
+  "books": {
+    "2 Timothy": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἰκία",
+      "display": "casas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰχμαλωτίζω",
+      "display": "cautivando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυναικάριον",
+      "display": "mujercillas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγω",
+      "display": "llevados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποικίλος",
+      "display": "varias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθραξ",
+      "display": "carbónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabeza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 3:6",
+      "reason": "occurs near αἰχμαλωτίζω, γυναικάριον, οἰκία"
+    },
+    {
+      "ref": "Romans 12:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

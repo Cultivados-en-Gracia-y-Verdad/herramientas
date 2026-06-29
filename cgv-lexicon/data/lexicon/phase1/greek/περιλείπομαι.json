@@ -1,0 +1,106 @@
+{
+  "lemma": "περιλείπομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "περιλειπόμενοι",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 4:15",
+      "form": "περιλειπόμενοι",
+      "morph": "V-P-P-P",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "κυρίου, ὅτι ἡμεῖς οἱ ζῶντες οἱ",
+      "right_context": "εἰς τὴν παρουσίαν τοῦ κυρίου οὐ"
+    },
+    {
+      "ref": "1 Thessalonians 4:17",
+      "form": "περιλειπόμενοι",
+      "morph": "V-P-P-P",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "ἔπειτα ἡμεῖς οἱ ζῶντες οἱ",
+      "right_context": "ἅμα σὺν αὐτοῖς ἁρπαγησόμεθα ἐν νεφέλαις"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παρουσία",
+      "display": "venida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔπειτα",
+      "display": "después",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁρπάζω",
+      "display": "serán arrebatado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 4:15",
+      "reason": "occurs near ζάω, κύριος, παρουσία"
+    },
+    {
+      "ref": "1 Thessalonians 4:17",
+      "reason": "occurs near ζάω, ἅμα, ἔπειτα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

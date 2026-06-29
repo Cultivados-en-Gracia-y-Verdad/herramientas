@@ -1,0 +1,95 @@
+{
+  "lemma": "συναντιλαμβάνομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συναντιλάβηται.",
+      "count": 1
+    },
+    {
+      "form": "συναντιλαμβάνεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:40",
+      "form": "συναντιλάβηται.",
+      "morph": "V-A-M-S-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 40,
+      "left_context": "διακονεῖν; ⸀εἰπὲ οὖν αὐτῇ ἵνα μοι",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 8:26",
+      "form": "συναντιλαμβάνεται",
+      "morph": "V-P-M-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 26,
+      "left_context": "Ὡσαύτως δὲ καὶ τὸ πνεῦμα",
+      "right_context": "⸂τῇ ἀσθενείᾳ⸃ ἡμῶν· τὸ γὰρ τί"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὡσαύτως",
+      "display": "igualmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθένεια",
+      "display": "enfermedad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:40",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 8:26",
+      "reason": "occurs near πνεῦμα, ἀσθένεια, ὡσαύτως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

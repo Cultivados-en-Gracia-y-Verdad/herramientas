@@ -1,0 +1,94 @@
+{
+  "lemma": "προμεριμνάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προμεριμνᾶτε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 13:11",
+      "form": "προμεριμνᾶτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 11,
+      "left_context": "⸂καὶ ὅταν⸃ ⸀ἄγωσιν ὑμᾶς παραδιδόντες, μὴ",
+      "right_context": "τί ⸀λαλήσητε, ἀλλ’ ὃ ἐὰν δοθῇ"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγω",
+      "display": "llevaran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "habléis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 13:11",
+      "form": "προμεριμνᾶτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "⸂καὶ ὅταν⸃ ⸀ἄγωσιν ὑμᾶς παραδιδόντες, μὴ προμεριμνᾶτε τί ⸀λαλήσητε, ἀλλ’ ὃ ἐὰν δοθῇ ὑμῖν ἐν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 13:11",
+      "negator": "μὴ",
+      "clause_text": "⸂καὶ ὅταν⸃ ⸀ἄγωσιν ὑμᾶς παραδιδόντες, μὴ προμεριμνᾶτε τί ⸀λαλήσητε, ἀλλ’ ὃ ἐὰν δοθῇ ὑμῖν ἐν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 13:11",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

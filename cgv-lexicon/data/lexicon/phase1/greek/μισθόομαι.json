@@ -1,0 +1,123 @@
+{
+  "lemma": "μισθόομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μισθώσασθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐμισθώσατο.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 20:1",
+      "form": "μισθώσασθαι",
+      "morph": "V-A-M-N",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 1,
+      "left_context": "ἀνθρώπῳ οἰκοδεσπότῃ ὅστις ἐξῆλθεν ἅμα πρωῒ",
+      "right_context": "ἐργάτας εἰς τὸν ἀμπελῶνα αὐτοῦ."
+    },
+    {
+      "ref": "Matthew 20:7",
+      "form": "ἐμισθώσατο.",
+      "morph": "V-A-M-I-3S",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 7,
+      "left_context": "λέγουσιν αὐτῷ· Ὅτι οὐδεὶς ἡμᾶς",
+      "right_context": "λέγει αὐτοῖς· Ὑπάγετε καὶ ὑμεῖς εἰς"
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἰκοδεσπότης",
+      "display": "amo·de·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρωΐ",
+      "display": "mañana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάτης",
+      "display": "obreros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμπελών",
+      "display": "viña",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "ed",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 20:1",
+      "reason": "occurs near οἰκοδεσπότης, πρωΐ, ἅμα"
+    },
+    {
+      "ref": "Matthew 20:7",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

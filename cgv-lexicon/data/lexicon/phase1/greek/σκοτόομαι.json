@@ -1,0 +1,155 @@
+{
+  "lemma": "σκοτόομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀ἐσκοτώθη",
+      "count": 1
+    },
+    {
+      "form": "ἐσκοτωμένη,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐσκοτωμένοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 9:2",
+      "form": "⸀ἐσκοτώθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 9,
+      "verse": 2,
+      "left_context": "φρέατος ὡς καπνὸς καμίνου ⸀μεγάλης, καὶ",
+      "right_context": "ὁ ἥλιος καὶ ὁ ἀὴρ ἐκ"
+    },
+    {
+      "ref": "Revelation 16:10",
+      "form": "ἐσκοτωμένη,",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 16,
+      "verse": 10,
+      "left_context": "θηρίου· καὶ ἐγένετο ἡ βασιλεία αὐτοῦ",
+      "right_context": "καὶ ἐμασῶντο τὰς γλώσσας αὐτῶν ἐκ"
+    },
+    {
+      "ref": "Ephesians 4:18",
+      "form": "⸀ἐσκοτωμένοι",
+      "morph": "V-X-P-P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 18,
+      "left_context": "",
+      "right_context": "τῇ διανοίᾳ ὄντες, ἀπηλλοτριωμένοι τῆς ζωῆς"
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καπνός",
+      "display": "humo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάμινος",
+      "display": "de·horno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "de·grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "sol",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀήρ",
+      "display": "aire",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μασάομαι",
+      "display": "masticaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lenguas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάνοια",
+      "display": "entendimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαλλοτριόομαι",
+      "display": "ser·ajeno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 16:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 9:2",
+      "reason": "occurs near κάμινος, καπνός, μέγας"
+    },
+    {
+      "ref": "Ephesians 4:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

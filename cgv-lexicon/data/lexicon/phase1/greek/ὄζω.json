@@ -1,0 +1,86 @@
+{
+  "lemma": "ὄζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὄζει,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 11:39",
+      "form": "ὄζει,",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 39,
+      "left_context": "ἀδελφὴ τοῦ ⸀τετελευτηκότος Μάρθα· Κύριε, ἤδη",
+      "right_context": "τεταρταῖος γάρ ἐστιν."
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τελευτάω",
+      "display": "muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μάρθα",
+      "display": "Marta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεταρταῖος",
+      "display": "cuatro·días",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:39",
+      "reason": "occurs near Μάρθα, κύριος, τελευτάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

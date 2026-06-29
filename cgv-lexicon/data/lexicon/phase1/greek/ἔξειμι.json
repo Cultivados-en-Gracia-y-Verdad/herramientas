@@ -1,0 +1,185 @@
+{
+  "lemma": "ἔξειμι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "Ἐξιόντων",
+      "count": 1
+    },
+    {
+      "form": "ἐξῄεσαν.",
+      "count": 1
+    },
+    {
+      "form": "ἐξιέναι",
+      "count": 1
+    },
+    {
+      "form": "ἐξιέναι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1,
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 3,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:42",
+      "form": "Ἐξιόντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 42,
+      "left_context": "",
+      "right_context": "δὲ ⸀αὐτῶν ⸀παρεκάλουν εἰς τὸ μεταξὺ"
+    },
+    {
+      "ref": "Acts 17:15",
+      "form": "ἐξῄεσαν.",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 15,
+      "left_context": "ἵνα ὡς τάχιστα ἔλθωσιν πρὸς αὐτὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 20:7",
+      "form": "ἐξιέναι",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 7,
+      "left_context": "ἄρτον ὁ Παῦλος διελέγετο αὐτοῖς, μέλλων",
+      "right_context": "τῇ ἐπαύριον, παρέτεινέν τε τὸν λόγον"
+    },
+    {
+      "ref": "Acts 27:43",
+      "form": "ἐξιέναι,",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 43,
+      "left_context": "κολυμβᾶν ἀπορίψαντας πρώτους ἐπὶ τὴν γῆν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 4
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταχύς",
+      "display": "rápidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαλέγομαι",
+      "display": "discutía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαύριον",
+      "display": "al·día·siguiente,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρατείνω",
+      "display": "prolongaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπορίπτω",
+      "display": "arrojados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primeros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:42",
+      "reason": "occurs near παρακαλέω"
+    },
+    {
+      "ref": "Acts 17:15",
+      "reason": "occurs near ταχύς, ἔρχομαι"
+    },
+    {
+      "ref": "Acts 20:7",
+      "reason": "occurs near Παῦλος, διαλέγομαι"
+    },
+    {
+      "ref": "Acts 27:43",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

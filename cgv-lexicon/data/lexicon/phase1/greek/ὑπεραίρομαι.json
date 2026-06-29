@@ -1,0 +1,171 @@
+{
+  "lemma": "ὑπεραίρομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ὑπεραίρωμαι,",
+      "count": 1
+    },
+    {
+      "form": "ὑπεραίρωμαι⸃.",
+      "count": 1
+    },
+    {
+      "form": "ὑπεραιρόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "passive": 2,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 12:7",
+      "form": "ὑπεραίρωμαι,",
+      "morph": "V-P-P-S-1S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 7,
+      "left_context": "ὑπερβολῇ τῶν ἀποκαλύψεων. ⸀διὸ ἵνα μὴ",
+      "right_context": "ἐδόθη μοι σκόλοψ τῇ σαρκί, ἄγγελος"
+    },
+    {
+      "ref": "2 Corinthians 12:7",
+      "form": "ὑπεραίρωμαι⸃.",
+      "morph": "V-P-P-S-1S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 7,
+      "left_context": "⸀Σατανᾶ, ἵνα με κολαφίζῃ, ⸂ἵνα μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Thessalonians 2:4",
+      "form": "ὑπεραιρόμενος",
+      "morph": "V-P-M-P",
+      "book": "2 Thessalonians",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "ὁ ἀντικείμενος καὶ",
+      "right_context": "ἐπὶ πάντα λεγόμενον θεὸν ἢ σέβασμα,"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποκάλυψις",
+      "display": "de·revelaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "fue dado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκόλοψ",
+      "display": "aguijón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολαφίζω",
+      "display": "golpeara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντίκειμαι",
+      "display": "oponerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Corinthians 12:7",
+      "form": "ὑπεραίρωμαι,",
+      "morph": "V-P-P-S-1S",
+      "clause_text": "καὶ τῇ ὑπερβολῇ τῶν ἀποκαλύψεων. ⸀διὸ ἵνα μὴ ὑπεραίρωμαι, ἐδόθη μοι σκόλοψ τῇ σαρκί, ἄγγελος ⸀Σατανᾶ, ἵνα",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "2 Corinthians 12:7",
+      "form": "ὑπεραίρωμαι⸃.",
+      "morph": "V-P-P-S-1S",
+      "clause_text": "σαρκί, ἄγγελος ⸀Σατανᾶ, ἵνα με κολαφίζῃ, ⸂ἵνα μὴ ὑπεραίρωμαι⸃.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 12:7",
+      "negator": "μὴ",
+      "clause_text": "καὶ τῇ ὑπερβολῇ τῶν ἀποκαλύψεων. ⸀διὸ ἵνα μὴ ὑπεραίρωμαι, ἐδόθη μοι σκόλοψ τῇ σαρκί, ἄγγελος ⸀Σατανᾶ, ἵνα"
+    },
+    {
+      "ref": "2 Corinthians 12:7",
+      "negator": "μὴ",
+      "clause_text": "σαρκί, ἄγγελος ⸀Σατανᾶ, ἵνα με κολαφίζῃ, ⸂ἵνα μὴ ὑπεραίρωμαι⸃."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 12:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Thessalonians 2:4",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

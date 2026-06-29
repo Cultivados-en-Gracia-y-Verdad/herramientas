@@ -1,0 +1,161 @@
+{
+  "lemma": "προχειρίζομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "προκεχειρισμένον",
+      "count": 1
+    },
+    {
+      "form": "προεχειρίσατό",
+      "count": 1
+    },
+    {
+      "form": "προχειρίσασθαί",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 3:20",
+      "form": "προκεχειρισμένον",
+      "morph": "V-X-M-P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 20,
+      "left_context": "προσώπου τοῦ κυρίου καὶ ἀποστείλῃ τὸν",
+      "right_context": "ὑμῖν χριστὸν Ἰησοῦν,"
+    },
+    {
+      "ref": "Acts 22:14",
+      "form": "προεχειρίσατό",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 14,
+      "left_context": "εἶπεν· Ὁ θεὸς τῶν πατέρων ἡμῶν",
+      "right_context": "σε γνῶναι τὸ θέλημα αὐτοῦ καὶ"
+    },
+    {
+      "ref": "Acts 26:16",
+      "form": "προχειρίσασθαί",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 16,
+      "left_context": "σου· εἰς τοῦτο γὰρ ὤφθην σοι,",
+      "right_context": "σε ὑπηρέτην καὶ μάρτυρα ὧν τε"
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "envie",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "de·padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "fue visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπηρέτης",
+      "display": "servidor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάρτυς",
+      "display": "testigo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:14",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Acts 26:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 3:20",
+      "reason": "occurs near Χριστός, κύριος, ἀποστέλλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

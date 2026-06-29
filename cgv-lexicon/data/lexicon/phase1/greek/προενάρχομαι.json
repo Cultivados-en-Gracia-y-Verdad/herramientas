@@ -1,0 +1,110 @@
+{
+  "lemma": "προενάρχομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προενήρξατο",
+      "count": 1
+    },
+    {
+      "form": "προενήρξασθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 8:6",
+      "form": "προενήρξατο",
+      "morph": "V-A-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 6,
+      "left_context": "τὸ παρακαλέσαι ἡμᾶς Τίτον ἵνα καθὼς",
+      "right_context": "οὕτως καὶ ἐπιτελέσῃ εἰς ὑμᾶς καὶ"
+    },
+    {
+      "ref": "2 Corinthians 8:10",
+      "form": "προενήρξασθε",
+      "morph": "V-A-M-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 10,
+      "left_context": "τὸ ποιῆσαι ἀλλὰ καὶ τὸ θέλειν",
+      "right_context": "ἀπὸ πέρυσι·"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τίτος",
+      "display": "Tito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτελέω",
+      "display": "cumpla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέρυσι(ν)",
+      "display": "el·año·pasado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 8:10",
+      "reason": "occurs near θέλω"
+    },
+    {
+      "ref": "2 Corinthians 8:6",
+      "reason": "occurs near Τίτος, οὕτω(ς), παρακαλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

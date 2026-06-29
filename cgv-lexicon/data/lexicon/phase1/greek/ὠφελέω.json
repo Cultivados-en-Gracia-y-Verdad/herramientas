@@ -1,0 +1,461 @@
+{
+  "lemma": "ὠφελέω",
+  "language": "greek",
+  "total_occurrences": 15,
+  "forms": [
+    {
+      "form": "ὠφελεῖ",
+      "count": 3
+    },
+    {
+      "form": "ὠφεληθῇς,",
+      "count": 2
+    },
+    {
+      "form": "ὠφελοῦμαι.",
+      "count": 1
+    },
+    {
+      "form": "ὠφελήσω,",
+      "count": 1
+    },
+    {
+      "form": "ὠφελήσει.",
+      "count": 1
+    },
+    {
+      "form": "ὠφέλησεν",
+      "count": 1
+    },
+    {
+      "form": "ὠφελήθησαν",
+      "count": 1
+    },
+    {
+      "form": "ὠφελεῖτε",
+      "count": 1
+    },
+    {
+      "form": "ὠφελεῖται",
+      "count": 1
+    },
+    {
+      "form": "ὠφεληθεῖσα",
+      "count": 1
+    },
+    {
+      "form": "⸀ὠφελεῖ",
+      "count": 1
+    },
+    {
+      "form": "⸀ὠφεληθήσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 12,
+      "participle": 1,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "present": 7,
+      "future": 3,
+      "aorist": 5
+    },
+    "voices": {
+      "passive": 7,
+      "active": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:3",
+      "form": "ὠφελοῦμαι.",
+      "morph": "V-P-P-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 3,
+      "left_context": "⸀καυθήσομαι, ἀγάπην δὲ μὴ ἔχω, οὐδὲν",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 14:6",
+      "form": "ὠφελήσω,",
+      "morph": "V-F-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 6,
+      "left_context": "πρὸς ὑμᾶς γλώσσαις λαλῶν, τί ὑμᾶς",
+      "right_context": "ἐὰν μὴ ὑμῖν λαλήσω ἢ ἐν"
+    },
+    {
+      "ref": "Galatians 5:2",
+      "form": "ὠφελήσει.",
+      "morph": "V-F-A-I-3S",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "ὅτι ἐὰν περιτέμνησθε Χριστὸς ὑμᾶς οὐδὲν",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 4:2",
+      "form": "ὠφέλησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "ἐσμεν εὐηγγελισμένοι καθάπερ κἀκεῖνοι, ἀλλ’ οὐκ",
+      "right_context": "ὁ λόγος τῆς ἀκοῆς ἐκείνους, μὴ"
+    },
+    {
+      "ref": "Hebrews 13:9",
+      "form": "ὠφελήθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 9,
+      "left_context": "καρδίαν, οὐ βρώμασιν, ἐν οἷς οὐκ",
+      "right_context": "οἱ ⸀περιπατοῦντες."
+    },
+    {
+      "ref": "John 6:63",
+      "form": "ὠφελεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 6,
+      "verse": 63,
+      "left_context": "ἐστιν τὸ ζῳοποιοῦν, ἡ σὰρξ οὐκ",
+      "right_context": "οὐδέν· τὰ ῥήματα ἃ ἐγὼ ⸀λελάληκα"
+    },
+    {
+      "ref": "John 12:19",
+      "form": "ὠφελεῖτε",
+      "morph": "V-P-A-I-2P",
+      "book": "John",
+      "chapter": 12,
+      "verse": 19,
+      "left_context": "εἶπαν πρὸς ἑαυτούς· Θεωρεῖτε ὅτι οὐκ",
+      "right_context": "οὐδέν· ἴδε ὁ ⸀κόσμος ὀπίσω αὐτοῦ"
+    },
+    {
+      "ref": "Luke 9:25",
+      "form": "ὠφελεῖται",
+      "morph": "V-P-P-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 25,
+      "left_context": "τί γὰρ",
+      "right_context": "ἄνθρωπος κερδήσας τὸν κόσμον ὅλον ἑαυτὸν"
+    },
+    {
+      "ref": "Mark 5:26",
+      "form": "ὠφεληθεῖσα",
+      "morph": "V-A-P-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 26,
+      "left_context": "τὰ παρ’ αὐτῆς πάντα καὶ μηδὲν",
+      "right_context": "ἀλλὰ μᾶλλον εἰς τὸ χεῖρον ἐλθοῦσα,"
+    },
+    {
+      "ref": "Mark 7:11",
+      "form": "ὠφεληθῇς,",
+      "morph": "V-A-P-S-2S",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 11,
+      "left_context": "ἐστιν Δῶρον, ὃ ἐὰν ἐξ ἐμοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 8:36",
+      "form": "⸀ὠφελεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 36,
+      "left_context": "τί γὰρ",
+      "right_context": "⸀ἄνθρωπον ⸂κερδῆσαι τὸν κόσμον ὅλον καὶ"
+    },
+    {
+      "ref": "Matthew 15:5",
+      "form": "ὠφεληθῇς,",
+      "morph": "V-A-P-S-2S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 5,
+      "left_context": "μητρί· Δῶρον ὃ ἐὰν ἐξ ἐμοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 16:26",
+      "form": "⸀ὠφεληθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 26,
+      "left_context": "τί γὰρ",
+      "right_context": "ἄνθρωπος ἐὰν τὸν κόσμον ὅλον κερδήσῃ"
+    },
+    {
+      "ref": "Matthew 27:24",
+      "form": "ὠφελεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 24,
+      "left_context": "ἰδὼν δὲ ὁ Πιλᾶτος ὅτι οὐδὲν",
+      "right_context": "ἀλλὰ μᾶλλον θόρυβος γίνεται λαβὼν ὕδωρ"
+    },
+    {
+      "ref": "Romans 2:25",
+      "form": "ὠφελεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "Περιτομὴ μὲν γὰρ",
+      "right_context": "ἐὰν νόμον πράσσῃς· ἐὰν δὲ παραβάτης"
+    }
+  ],
+  "books": {
+    "Mark": 3,
+    "Matthew": 3,
+    "1 Corinthians": 2,
+    "Hebrews": 2,
+    "John": 2,
+    "Galatians": 1,
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κερδαίνω",
+      "display": "ganado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δῶρον",
+      "display": "don",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lenguas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιτέμνω",
+      "display": "circuncidarais",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγελίζω",
+      "display": "evangelizados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθάπερ",
+      "display": "así·como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀκεῖνος",
+      "display": "y·aquel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκοή",
+      "display": "de·oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βρῶμα",
+      "display": "comidas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζῳοποιέω",
+      "display": "dar·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dichos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "veis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδε",
+      "display": "mira",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 13:3",
+      "negator": "μὴ",
+      "clause_text": "μου, ἵνα ⸀καυθήσομαι, ἀγάπην δὲ μὴ ἔχω, οὐδὲν ὠφελοῦμαι."
+    },
+    {
+      "ref": "1 Corinthians 14:6",
+      "negator": "μὴ",
+      "clause_text": "ἐὰν ἔλθω πρὸς ὑμᾶς γλώσσαις λαλῶν, τί ὑμᾶς ὠφελήσω, ἐὰν μὴ ὑμῖν λαλήσω ἢ ἐν ἀποκαλύψει ἢ"
+    },
+    {
+      "ref": "Hebrews 4:2",
+      "negator": "οὐκ",
+      "clause_text": "καὶ γάρ ἐσμεν εὐηγγελισμένοι καθάπερ κἀκεῖνοι, ἀλλ’ οὐκ ὠφέλησεν ὁ λόγος τῆς ἀκοῆς ἐκείνους, μὴ ⸀συγκεκερασμένους τῇ"
+    },
+    {
+      "ref": "Hebrews 13:9",
+      "negator": "οὐκ",
+      "clause_text": "βεβαιοῦσθαι τὴν καρδίαν, οὐ βρώμασιν, ἐν οἷς οὐκ ὠφελήθησαν οἱ ⸀περιπατοῦντες."
+    },
+    {
+      "ref": "John 6:63",
+      "negator": "οὐκ",
+      "clause_text": "τὸ πνεῦμά ἐστιν τὸ ζῳοποιοῦν, ἡ σὰρξ οὐκ ὠφελεῖ οὐδέν· τὰ ῥήματα ἃ ἐγὼ ⸀λελάληκα ὑμῖν πνεῦμά"
+    },
+    {
+      "ref": "John 12:19",
+      "negator": "οὐκ",
+      "clause_text": "οὖν Φαρισαῖοι εἶπαν πρὸς ἑαυτούς· Θεωρεῖτε ὅτι οὐκ ὠφελεῖτε οὐδέν· ἴδε ὁ ⸀κόσμος ὀπίσω αὐτοῦ ἀπῆλθεν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 5:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 7:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 8:36",
+      "reason": "occurs near κερδαίνω, κόσμος, ἄνθρωπος"
+    },
+    {
+      "ref": "Matthew 15:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 16:26",
+      "reason": "occurs near κόσμος, ἄνθρωπος, ὅλος"
+    },
+    {
+      "ref": "Matthew 27:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 13:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 14:6",
+      "reason": "occurs near λαλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

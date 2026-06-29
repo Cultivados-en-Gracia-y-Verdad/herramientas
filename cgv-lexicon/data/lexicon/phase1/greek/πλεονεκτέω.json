@@ -1,0 +1,217 @@
+{
+  "lemma": "πλεονεκτέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "πλεονεκτεῖν",
+      "count": 1
+    },
+    {
+      "form": "πλεονεκτηθῶμεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπλεονεκτήσαμεν.",
+      "count": 1
+    },
+    {
+      "form": "ἐπλεονέκτησα",
+      "count": 1
+    },
+    {
+      "form": "ἐπλεονέκτησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "subjunctive": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 4,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 4:6",
+      "form": "πλεονεκτεῖν",
+      "morph": "V-P-A-N",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "τὸ μὴ ὑπερβαίνειν καὶ",
+      "right_context": "ἐν τῷ πράγματι τὸν ἀδελφὸν αὐτοῦ,"
+    },
+    {
+      "ref": "2 Corinthians 2:11",
+      "form": "πλεονεκτηθῶμεν",
+      "morph": "V-A-P-S-1P",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "ἵνα μὴ",
+      "right_context": "ὑπὸ τοῦ Σατανᾶ, οὐ γὰρ αὐτοῦ"
+    },
+    {
+      "ref": "2 Corinthians 7:2",
+      "form": "ἐπλεονεκτήσαμεν.",
+      "morph": "V-A-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 2,
+      "left_context": "ἡμᾶς· οὐδένα ἠδικήσαμεν, οὐδένα ἐφθείραμεν, οὐδένα",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 12:17",
+      "form": "ἐπλεονέκτησα",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 17,
+      "left_context": "ὧν ἀπέσταλκα πρὸς ὑμᾶς, δι’ αὐτοῦ",
+      "right_context": "ὑμᾶς;"
+    },
+    {
+      "ref": "2 Corinthians 12:18",
+      "form": "ἐπλεονέκτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 18,
+      "left_context": "Τίτον καὶ συναπέστειλα τὸν ἀδελφόν· μήτι",
+      "right_context": "ὑμᾶς Τίτος; οὐ τῷ αὐτῷ πνεύματι"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 4,
+    "1 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπερβαίνω",
+      "display": "sobrepasar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρᾶγμα",
+      "display": "cosa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σατανᾶς",
+      "display": "de·Satanás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικέω",
+      "display": "hacer·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθείρω",
+      "display": "corrompimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "he enviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναποστέλλω",
+      "display": "enviar·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήτι",
+      "display": "¿acaso?",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τίτος",
+      "display": "Tito",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Corinthians 2:11",
+      "form": "πλεονεκτηθῶμεν",
+      "morph": "V-A-P-S-1P",
+      "clause_text": "ἵνα μὴ πλεονεκτηθῶμεν ὑπὸ τοῦ Σατανᾶ, οὐ γὰρ αὐτοῦ τὰ νοήματα",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 4:6",
+      "negator": "μὴ",
+      "clause_text": "τὸ μὴ ὑπερβαίνειν καὶ πλεονεκτεῖν ἐν τῷ πράγματι τὸν ἀδελφὸν αὐτοῦ, διότι ἔκδικος"
+    },
+    {
+      "ref": "2 Corinthians 2:11",
+      "negator": "μὴ",
+      "clause_text": "ἵνα μὴ πλεονεκτηθῶμεν ὑπὸ τοῦ Σατανᾶ, οὐ γὰρ αὐτοῦ τὰ νοήματα"
+    },
+    {
+      "ref": "2 Corinthians 12:18",
+      "negator": "οὐ",
+      "clause_text": "παρεκάλεσα Τίτον καὶ συναπέστειλα τὸν ἀδελφόν· μήτι ἐπλεονέκτησεν ὑμᾶς Τίτος; οὐ τῷ αὐτῷ πνεύματι περιεπατήσαμεν; οὐ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 12:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 12:18",
+      "reason": "occurs near ἀδελφός"
+    },
+    {
+      "ref": "2 Corinthians 2:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 7:2",
+      "reason": "occurs near ἀδικέω"
+    },
+    {
+      "ref": "1 Thessalonians 4:6",
+      "reason": "occurs near πρᾶγμα, ἀδελφός, ὑπερβαίνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,86 @@
+{
+  "lemma": "ὀλολύζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὀλολύζοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 5:1",
+      "form": "ὀλολύζοντες",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "Ἄγε νῦν οἱ πλούσιοι, κλαύσατε",
+      "right_context": "ἐπὶ ταῖς ταλαιπωρίαις ὑμῶν ταῖς ἐπερχομέναις."
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄγω",
+      "display": "lleva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "ricos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "llorad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταλαιπωρία",
+      "display": "miserias",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:1",
+      "reason": "occurs near κλαίω, νῦν, πλούσιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

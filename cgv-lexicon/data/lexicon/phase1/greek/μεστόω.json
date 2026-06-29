@@ -1,0 +1,68 @@
+{
+  "lemma": "μεστόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μεμεστωμένοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:13",
+      "form": "μεμεστωμένοι",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "ἕτεροι δὲ ⸀διαχλευάζοντες ἔλεγον ὅτι Γλεύκους",
+      "right_context": "εἰσίν."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διαχλευάζω",
+      "display": "burlarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλεῦκος",
+      "display": "de·mosto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 2:13",
+      "reason": "occurs near γλεῦκος, διαχλευάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

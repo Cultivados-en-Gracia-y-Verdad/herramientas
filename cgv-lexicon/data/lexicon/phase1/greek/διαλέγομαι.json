@@ -1,0 +1,395 @@
+{
+  "lemma": "διαλέγομαι",
+  "language": "greek",
+  "total_occurrences": 13,
+  "forms": [
+    {
+      "form": "διελέγετο",
+      "count": 4
+    },
+    {
+      "form": "διαλεγόμενος",
+      "count": 2
+    },
+    {
+      "form": "διαλεγομένου",
+      "count": 2
+    },
+    {
+      "form": "διαλέγεται,",
+      "count": 1
+    },
+    {
+      "form": "διελέξατο",
+      "count": 1
+    },
+    {
+      "form": "⸀διελέξατο",
+      "count": 1
+    },
+    {
+      "form": "διαλεγόμενον",
+      "count": 1
+    },
+    {
+      "form": "διελέχθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 8,
+      "participle": 5
+    },
+    "tenses": {
+      "present": 6,
+      "aorist": 3,
+      "imperfect": 4
+    },
+    "voices": {
+      "middle": 12,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:5",
+      "form": "διαλέγεται,",
+      "morph": "V-P-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "τῆς παρακλήσεως, ἥτις ὑμῖν ὡς υἱοῖς",
+      "right_context": "Υἱέ μου, μὴ ὀλιγώρει παιδείας κυρίου,"
+    },
+    {
+      "ref": "Acts 17:2",
+      "form": "διελέξατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 2,
+      "left_context": "πρὸς αὐτοὺς καὶ ἐπὶ σάββατα τρία",
+      "right_context": "αὐτοῖς ἀπὸ τῶν γραφῶν,"
+    },
+    {
+      "ref": "Acts 17:17",
+      "form": "διελέγετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 17,
+      "left_context": "",
+      "right_context": "μὲν οὖν ἐν τῇ συναγωγῇ τοῖς"
+    },
+    {
+      "ref": "Acts 18:4",
+      "form": "διελέγετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 4,
+      "left_context": "",
+      "right_context": "δὲ ἐν τῇ συναγωγῇ κατὰ πᾶν"
+    },
+    {
+      "ref": "Acts 18:19",
+      "form": "⸀διελέξατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 19,
+      "left_context": "αὐτὸς δὲ εἰσελθὼν εἰς τὴν συναγωγὴν",
+      "right_context": "τοῖς Ἰουδαίοις."
+    },
+    {
+      "ref": "Acts 19:8",
+      "form": "διαλεγόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 8,
+      "left_context": "τὴν συναγωγὴν ἐπαρρησιάζετο ἐπὶ μῆνας τρεῖς",
+      "right_context": "καὶ ⸀πείθων περὶ τῆς βασιλείας τοῦ"
+    },
+    {
+      "ref": "Acts 19:9",
+      "form": "διαλεγόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 9,
+      "left_context": "αὐτῶν ἀφώρισεν τοὺς μαθητάς, καθ’ ἡμέραν",
+      "right_context": "ἐν τῇ σχολῇ ⸀Τυράννου."
+    },
+    {
+      "ref": "Acts 20:7",
+      "form": "διελέγετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 7,
+      "left_context": "συνηγμένων ⸀ἡμῶν κλάσαι ἄρτον ὁ Παῦλος",
+      "right_context": "αὐτοῖς, μέλλων ἐξιέναι τῇ ἐπαύριον, παρέτεινέν"
+    },
+    {
+      "ref": "Acts 20:9",
+      "form": "διαλεγομένου",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 9,
+      "left_context": "ἐπὶ τῆς θυρίδος, καταφερόμενος ὕπνῳ βαθεῖ",
+      "right_context": "τοῦ Παύλου ἐπὶ πλεῖον, κατενεχθεὶς ἀπὸ"
+    },
+    {
+      "ref": "Acts 24:12",
+      "form": "διαλεγόμενον",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 12,
+      "left_context": "τῷ ἱερῷ εὗρόν με πρός τινα",
+      "right_context": "ἢ ⸀ἐπίστασιν ποιοῦντα ὄχλου οὔτε ἐν"
+    },
+    {
+      "ref": "Acts 24:25",
+      "form": "διαλεγομένου",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 25,
+      "left_context": "",
+      "right_context": "δὲ αὐτοῦ περὶ δικαιοσύνης καὶ ἐγκρατείας"
+    },
+    {
+      "ref": "Jude 1:9",
+      "form": "διελέγετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "ὁ ἀρχάγγελος, ὅτε τῷ διαβόλῳ διακρινόμενος",
+      "right_context": "περὶ τοῦ Μωϋσέως σώματος, οὐκ ἐτόλμησεν"
+    },
+    {
+      "ref": "Mark 9:34",
+      "form": "διελέχθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 34,
+      "left_context": "οἱ δὲ ἐσιώπων, πρὸς ἀλλήλους γὰρ",
+      "right_context": "ἐν τῇ ὁδῷ τίς μείζων."
+    }
+  ],
+  "books": {
+    "Acts": 10,
+    "Hebrews": 1,
+    "Jude": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagoga",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καταφέρω",
+      "display": "llevado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "de·consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλιγωρέω",
+      "display": "menosprecia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδεία",
+      "display": "de·disciplina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "sábados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "de·escrituras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησιάζομαι",
+      "display": "hablar·con·denuedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήν",
+      "display": "ciertamentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "persuadiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "de·reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφορίζω",
+      "display": "separó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σχολή",
+      "display": "escuela",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τύραννος",
+      "display": "de·Tirano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλάω",
+      "display": "partir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 12:5",
+      "negator": "μὴ",
+      "clause_text": "καὶ ἐκλέλησθε τῆς παρακλήσεως, ἥτις ὑμῖν ὡς υἱοῖς διαλέγεται, Υἱέ μου, μὴ ὀλιγώρει παιδείας κυρίου, μηδὲ ἐκλύου"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:17",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 17:2",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 18:19",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 18:4",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 19:8",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 19:9",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 20:7",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 20:9",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,162 @@
+{
+  "lemma": "ὀδυνάομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ὀδυνώμενοι",
+      "count": 2
+    },
+    {
+      "form": "ὀδυνῶμαι",
+      "count": 1
+    },
+    {
+      "form": "ὀδυνᾶσαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 4
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:38",
+      "form": "ὀδυνώμενοι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 38,
+      "left_context": "",
+      "right_context": "μάλιστα ἐπὶ τῷ λόγῳ ᾧ εἰρήκει"
+    },
+    {
+      "ref": "Luke 2:48",
+      "form": "ὀδυνώμενοι",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 48,
+      "left_context": "ἰδοὺ ὁ πατήρ σου καὶ ἐγὼ",
+      "right_context": "⸀ἐζητοῦμέν σε."
+    },
+    {
+      "ref": "Luke 16:24",
+      "form": "ὀδυνῶμαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 24,
+      "left_context": "καὶ καταψύξῃ τὴν γλῶσσάν μου, ὅτι",
+      "right_context": "ἐν τῇ φλογὶ ταύτῃ."
+    },
+    {
+      "ref": "Luke 16:25",
+      "form": "ὀδυνᾶσαι.",
+      "morph": "V-P-M-I-2S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 25,
+      "left_context": "νῦν δὲ ὧδε παρακαλεῖται σὺ δὲ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μάλιστα",
+      "display": "especialmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscábamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταψύχω",
+      "display": "refresce",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lengua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φλόξ",
+      "display": "llama",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὧδε",
+      "display": "aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "es rogado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:24",
+      "reason": "occurs near καταψύχω"
+    },
+    {
+      "ref": "Luke 16:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 2:48",
+      "reason": "occurs near ζητέω, πατήρ"
+    },
+    {
+      "ref": "Acts 20:38",
+      "reason": "occurs near λόγος, μάλιστα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

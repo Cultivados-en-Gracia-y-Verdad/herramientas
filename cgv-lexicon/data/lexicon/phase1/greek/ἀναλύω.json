@@ -1,0 +1,130 @@
+{
+  "lemma": "ἀναλύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀναλῦσαι",
+      "count": 1
+    },
+    {
+      "form": "ἀναλύσῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 1:23",
+      "form": "ἀναλῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "δύο, τὴν ἐπιθυμίαν ἔχων εἰς τὸ",
+      "right_context": "καὶ σὺν Χριστῷ εἶναι, πολλῷ ⸀γὰρ"
+    },
+    {
+      "ref": "Luke 12:36",
+      "form": "ἀναλύσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 36,
+      "left_context": "ἀνθρώποις προσδεχομένοις τὸν κύριον ἑαυτῶν πότε",
+      "right_context": "ἐκ τῶν γάμων, ἵνα ἐλθόντος καὶ"
+    }
+  ],
+  "books": {
+    "Philippians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσδέχομαι",
+      "display": "esperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πότε",
+      "display": "cuándo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γάμος",
+      "display": "de·bodas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:36",
+      "reason": "occurs near κύριος, προσδέχομαι"
+    },
+    {
+      "ref": "Philippians 1:23",
+      "reason": "occurs near Χριστός, πολύς, ἐπιθυμία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

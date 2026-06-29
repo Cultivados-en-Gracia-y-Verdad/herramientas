@@ -1,0 +1,255 @@
+{
+  "lemma": "μεταδίδωμι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "μεταδοῦναι",
+      "count": 1
+    },
+    {
+      "form": "μεταδιδόναι",
+      "count": 1
+    },
+    {
+      "form": "μεταδότω",
+      "count": 1
+    },
+    {
+      "form": "μεταδῶ",
+      "count": 1
+    },
+    {
+      "form": "μεταδιδοὺς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "imperative": 1,
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 2
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:8",
+      "form": "μεταδοῦναι",
+      "morph": "V-A-A-N",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "οὕτως ὁμειρόμενοι ὑμῶν εὐδοκοῦμεν",
+      "right_context": "ὑμῖν οὐ μόνον τὸ εὐαγγέλιον τοῦ"
+    },
+    {
+      "ref": "Ephesians 4:28",
+      "form": "μεταδιδόναι",
+      "morph": "V-P-A-N",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 28,
+      "left_context": "ἰδίαις χερσὶν τὸ ἀγαθόν⸃, ἵνα ἔχῃ",
+      "right_context": "τῷ χρείαν ἔχοντι."
+    },
+    {
+      "ref": "Luke 3:11",
+      "form": "μεταδότω",
+      "morph": "V-A-A-D-3S",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "⸀ἔλεγεν αὐτοῖς· Ὁ ἔχων δύο χιτῶνας",
+      "right_context": "τῷ μὴ ἔχοντι, καὶ ὁ ἔχων"
+    },
+    {
+      "ref": "Romans 1:11",
+      "form": "μεταδῶ",
+      "morph": "V-A-A-S-1S",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ἐπιποθῶ γὰρ ἰδεῖν ὑμᾶς, ἵνα τι",
+      "right_context": "χάρισμα ὑμῖν πνευματικὸν εἰς τὸ στηριχθῆναι"
+    },
+    {
+      "ref": "Romans 12:8",
+      "form": "μεταδιδοὺς",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 8,
+      "left_context": "ὁ παρακαλῶν ἐν τῇ παρακλήσει, ὁ",
+      "right_context": "ἐν ἁπλότητι, ὁ προϊστάμενος ἐν σπουδῇ,"
+    }
+  ],
+  "books": {
+    "Romans": 2,
+    "1 Thessalonians": 1,
+    "Ephesians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμείρομαι",
+      "display": "anhelando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐδοκέω",
+      "display": "complacíamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρεία",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιτών",
+      "display": "túnicas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρισμα",
+      "display": "don",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνευματικός",
+      "display": "espiritual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁπλότης",
+      "display": "sencillez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προΐστημι",
+      "display": "presidiendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 3:11",
+      "form": "μεταδότω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "ἀποκριθεὶς δὲ ⸀ἔλεγεν αὐτοῖς· Ὁ ἔχων δύο χιτῶνας μεταδότω τῷ μὴ ἔχοντι, καὶ ὁ ἔχων βρώματα ὁμοίως"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 2:8",
+      "negator": "οὐ",
+      "clause_text": "οὕτως ὁμειρόμενοι ὑμῶν εὐδοκοῦμεν μεταδοῦναι ὑμῖν οὐ μόνον τὸ εὐαγγέλιον τοῦ θεοῦ ἀλλὰ"
+    },
+    {
+      "ref": "Luke 3:11",
+      "negator": "μὴ",
+      "clause_text": "ἀποκριθεὶς δὲ ⸀ἔλεγεν αὐτοῖς· Ὁ ἔχων δύο χιτῶνας μεταδότω τῷ μὴ ἔχοντι, καὶ ὁ ἔχων βρώματα ὁμοίως"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 3:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 12:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 1:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Thessalonians 2:8",
+      "reason": "occurs near εὐαγγέλιον, εὐδοκέω, μόνος"
+    },
+    {
+      "ref": "Ephesians 4:28",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

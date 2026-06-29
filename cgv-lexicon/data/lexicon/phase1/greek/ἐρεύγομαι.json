@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐρεύγομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐρεύξομαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 13:35",
+      "form": "ἐρεύξομαι",
+      "morph": "V-F-M-I-1S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 35,
+      "left_context": "Ἀνοίξω ἐν παραβολαῖς τὸ στόμα μου,",
+      "right_context": "κεκρυμμένα ἀπὸ ⸀καταβολῆς."
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παραβολή",
+      "display": "parábolas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "boca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρύπτω",
+      "display": "ocultados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβολή",
+      "display": "de·fundación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:35",
+      "reason": "occurs near καταβολή, κρύπτω, παραβολή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

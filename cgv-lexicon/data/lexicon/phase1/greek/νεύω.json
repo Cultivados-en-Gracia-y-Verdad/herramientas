@@ -1,0 +1,119 @@
+{
+  "lemma": "νεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "νεύσαντος",
+      "count": 1
+    },
+    {
+      "form": "νεύει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 24:10",
+      "form": "νεύσαντος",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 10,
+      "left_context": "Ἀπεκρίθη ⸀τε ὁ Παῦλος",
+      "right_context": "αὐτῷ τοῦ ἡγεμόνος λέγειν· Ἐκ πολλῶν"
+    },
+    {
+      "ref": "John 13:24",
+      "form": "νεύει",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 13,
+      "verse": 24,
+      "left_context": "",
+      "right_context": "οὖν τούτῳ Σίμων Πέτρος ⸂πυθέσθαι τίς"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "fue respondido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡγεμών",
+      "display": "de·gobernador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυνθάνομαι",
+      "display": "preguntar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 24:10",
+      "reason": "occurs near Παῦλος, τέ, ἀποκρίνομαι"
+    },
+    {
+      "ref": "John 13:24",
+      "reason": "occurs near Σίμων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

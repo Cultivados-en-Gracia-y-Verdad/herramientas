@@ -1,0 +1,142 @@
+{
+  "lemma": "καταγινώσκω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "καταγινώσκῃ",
+      "count": 2
+    },
+    {
+      "form": "κατεγνωσμένος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 3:20",
+      "form": "καταγινώσκῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "1 John",
+      "chapter": 3,
+      "verse": 20,
+      "left_context": "ὅτι ἐὰν",
+      "right_context": "ἡμῶν ἡ καρδία, ὅτι μείζων ἐστὶν"
+    },
+    {
+      "ref": "1 John 3:21",
+      "form": "καταγινώσκῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "1 John",
+      "chapter": 3,
+      "verse": 21,
+      "left_context": "ἀγαπητοί, ἐὰν ἡ καρδία ⸂μὴ",
+      "right_context": "ἡμῶν⸃, παρρησίαν ἔχομεν πρὸς τὸν θεόν,"
+    },
+    {
+      "ref": "Galatians 2:11",
+      "form": "κατεγνωσμένος",
+      "morph": "V-X-P-P",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "Ἀντιόχειαν, κατὰ πρόσωπον αὐτῷ ἀντέστην, ὅτι",
+      "right_context": "ἦν·"
+    }
+  ],
+  "books": {
+    "1 John": 2,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησία",
+      "display": "franqueza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνθίστημι",
+      "display": "resistí",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 John 3:21",
+      "form": "καταγινώσκῃ",
+      "morph": "V-P-A-S-3S",
+      "clause_text": "ἀγαπητοί, ἐὰν ἡ καρδία ⸂μὴ καταγινώσκῃ ἡμῶν⸃, παρρησίαν ἔχομεν πρὸς τὸν θεόν,",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 John 3:21",
+      "negator": "⸂μὴ",
+      "clause_text": "ἀγαπητοί, ἐὰν ἡ καρδία ⸂μὴ καταγινώσκῃ ἡμῶν⸃, παρρησίαν ἔχομεν πρὸς τὸν θεόν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 John 3:20",
+      "reason": "occurs near καρδία, μέγας"
+    },
+    {
+      "ref": "1 John 3:21",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Galatians 2:11",
+      "reason": "occurs near πρόσωπον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

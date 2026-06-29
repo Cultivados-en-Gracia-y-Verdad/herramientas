@@ -1,0 +1,149 @@
+{
+  "lemma": "ἀνέρχομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀνῆλθον",
+      "count": 2
+    },
+    {
+      "form": "ἀνῆλθεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 1:17",
+      "form": "ἀνῆλθον",
+      "morph": "V-A-A-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 17,
+      "left_context": "οὐδὲ",
+      "right_context": "εἰς Ἱεροσόλυμα πρὸς τοὺς πρὸ ἐμοῦ"
+    },
+    {
+      "ref": "Galatians 1:18",
+      "form": "ἀνῆλθον",
+      "morph": "V-A-A-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "Ἔπειτα μετὰ ⸂ἔτη τρία⸃",
+      "right_context": "εἰς Ἱεροσόλυμα ἱστορῆσαι ⸀Κηφᾶν, καὶ ἐπέμεινα"
+    },
+    {
+      "ref": "John 6:3",
+      "form": "ἀνῆλθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 6,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "δὲ εἰς τὸ ⸀ὄρος Ἰησοῦς, καὶ"
+    }
+  ],
+  "books": {
+    "Galatians": 2,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔπειτα",
+      "display": "después",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτος",
+      "display": "añoses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱστορέω",
+      "display": "visitar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κηφᾶς",
+      "display": "Cefas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 1:17",
+      "negator": "οὐδὲ",
+      "clause_text": "οὐδὲ ἀνῆλθον εἰς Ἱεροσόλυμα πρὸς τοὺς πρὸ ἐμοῦ ἀποστόλους, ἀλλὰ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 1:17",
+      "reason": "occurs near πρό, Ἱεροσόλυμα"
+    },
+    {
+      "ref": "Galatians 1:18",
+      "reason": "occurs near τρεῖς, ἔπειτα, ἔτος"
+    },
+    {
+      "ref": "John 6:3",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

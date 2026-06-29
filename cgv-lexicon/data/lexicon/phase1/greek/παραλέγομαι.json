@@ -1,0 +1,130 @@
+{
+  "lemma": "παραλέγομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παραλεγόμενοι",
+      "count": 1
+    },
+    {
+      "form": "παρελέγοντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:8",
+      "form": "παραλεγόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 8,
+      "left_context": "μόλις τε",
+      "right_context": "αὐτὴν ἤλθομεν εἰς τόπον τινὰ καλούμενον"
+    },
+    {
+      "ref": "Acts 27:13",
+      "form": "παρελέγοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 13,
+      "left_context": "δόξαντες τῆς προθέσεως κεκρατηκέναι ἄραντες ἆσσον",
+      "right_context": "τὴν Κρήτην."
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μόλις",
+      "display": "apenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόθεσις",
+      "display": "de·proposición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἴρω",
+      "display": "levantados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἆσσον",
+      "display": "más·cerca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κρήτη",
+      "display": "Creta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:13",
+      "reason": "occurs near πρόθεσις"
+    },
+    {
+      "ref": "Acts 27:8",
+      "reason": "occurs near μόλις, τέ, τόπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

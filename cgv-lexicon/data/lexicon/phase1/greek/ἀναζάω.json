@@ -1,0 +1,107 @@
+{
+  "lemma": "ἀναζάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνέζησεν,",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 15:24",
+      "form": "ἀνέζησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 24,
+      "left_context": "ὁ υἱός μου νεκρὸς ἦν καὶ",
+      "right_context": "⸂ἦν ἀπολωλὼς⸃ καὶ εὑρέθη. καὶ ἤρξαντο"
+    },
+    {
+      "ref": "Romans 7:9",
+      "form": "ἀνέζησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "ἐλθούσης δὲ τῆς ἐντολῆς ἡ ἁμαρτία",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "fue hallado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "de·mandamiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 15:24",
+      "reason": "occurs near εὑρίσκω, νεκρός, υἱός"
+    },
+    {
+      "ref": "Romans 7:9",
+      "reason": "occurs near ἐντολή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "κρυσταλλίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κρυσταλλίζοντι·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 21:11",
+      "form": "κρυσταλλίζοντι·",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 21,
+      "verse": 11,
+      "left_context": "ὅμοιος λίθῳ τιμιωτάτῳ, ὡς λίθῳ ἰάσπιδι",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τίμιος",
+      "display": "precioso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴασπις",
+      "display": "jaspe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 21:11",
+      "reason": "occurs near λίθος, τίμιος, ἴασπις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

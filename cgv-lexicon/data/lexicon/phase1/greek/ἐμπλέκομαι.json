@@ -1,0 +1,126 @@
+{
+  "lemma": "ἐμπλέκομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐμπλακέντες",
+      "count": 1
+    },
+    {
+      "form": "ἐμπλέκεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:20",
+      "form": "ἐμπλακέντες",
+      "morph": "V-A-P-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "σωτῆρος Ἰησοῦ Χριστοῦ τούτοις δὲ πάλιν",
+      "right_context": "ἡττῶνται, γέγονεν αὐτοῖς τὰ ἔσχατα χείρονα"
+    },
+    {
+      "ref": "2 Timothy 2:4",
+      "form": "ἐμπλέκεται",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "οὐδεὶς στρατευόμενος",
+      "right_context": "ταῖς τοῦ βίου πραγματείαις, ἵνα τῷ"
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡττάομαι",
+      "display": "ser·derrotado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔσχατος",
+      "display": "últimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατεύομαι",
+      "display": "servir·como·soldado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βίος",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πραγματεία",
+      "display": "negocios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:20",
+      "reason": "occurs near Χριστός, πάλιν, ἔσχατος"
+    },
+    {
+      "ref": "2 Timothy 2:4",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

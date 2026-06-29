@@ -1,0 +1,125 @@
+{
+  "lemma": "ἐνθυμέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐνθυμηθέντος",
+      "count": 1
+    },
+    {
+      "form": "ἐνθυμεῖσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 1:20",
+      "form": "ἐνθυμηθέντος",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "ταῦτα δὲ αὐτοῦ",
+      "right_context": "ἰδοὺ ἄγγελος κυρίου κατ’ ὄναρ ἐφάνη"
+    },
+    {
+      "ref": "Matthew 9:4",
+      "form": "ἐνθυμεῖσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 4,
+      "left_context": "Ἰησοῦς τὰς ἐνθυμήσεις αὐτῶν εἶπεν· ⸀Ἱνατί",
+      "right_context": "πονηρὰ ἐν ταῖς καρδίαις ὑμῶν;"
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄναρ",
+      "display": "sueño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνθύμησις",
+      "display": "pensamientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱνατί",
+      "display": "por·qué",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 1:20",
+      "reason": "occurs near κύριος, ἄγγελος, ἰδού"
+    },
+    {
+      "ref": "Matthew 9:4",
+      "reason": "occurs near ἐνθύμησις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

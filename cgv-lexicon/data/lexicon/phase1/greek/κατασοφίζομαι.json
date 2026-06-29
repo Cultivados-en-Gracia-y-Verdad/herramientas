@@ -1,0 +1,68 @@
+{
+  "lemma": "κατασοφίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατασοφισάμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:19",
+      "form": "κατασοφισάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 19,
+      "left_context": "οὗτος",
+      "right_context": "τὸ γένος ἡμῶν ἐκάκωσεν τοὺς ⸀πατέρας"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γένος",
+      "display": "clase",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακόω",
+      "display": "maltrató",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 7:19",
+      "reason": "occurs near γένος, κακόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

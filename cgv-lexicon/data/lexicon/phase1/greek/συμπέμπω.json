@@ -1,0 +1,76 @@
+{
+  "lemma": "συμπέμπω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνεπέμψαμεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 8:18",
+      "form": "συνεπέμψαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 18,
+      "left_context": "",
+      "right_context": "δὲ μετ’ αὐτοῦ τὸν ἀδελφὸν οὗ"
+    },
+    {
+      "ref": "2 Corinthians 8:22",
+      "form": "συνεπέμψαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 22,
+      "left_context": "",
+      "right_context": "δὲ αὐτοῖς τὸν ἀδελφὸν ἡμῶν ὃν"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 8:18",
+      "reason": "occurs near ἀδελφός"
+    },
+    {
+      "ref": "2 Corinthians 8:22",
+      "reason": "occurs near ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

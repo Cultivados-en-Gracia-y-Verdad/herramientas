@@ -1,0 +1,80 @@
+{
+  "lemma": "βρύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "βρύει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 3:11",
+      "form": "βρύει",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "ἡ πηγὴ ἐκ τῆς αὐτῆς ὀπῆς",
+      "right_context": "τὸ γλυκὺ καὶ τὸ πικρόν;"
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πηγή",
+      "display": "fuente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀπή",
+      "display": "de·hendidura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλυκύς",
+      "display": "dulce",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πικρός",
+      "display": "amargo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:11",
+      "reason": "occurs near γλυκύς, πηγή, πικρός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

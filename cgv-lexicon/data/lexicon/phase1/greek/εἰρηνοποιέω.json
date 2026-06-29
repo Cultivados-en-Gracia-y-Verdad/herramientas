@@ -1,0 +1,74 @@
+{
+  "lemma": "εἰρηνοποιέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εἰρηνοποιήσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 1:20",
+      "form": "εἰρηνοποιήσας",
+      "morph": "V-A-A-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "αὐτοῦ ἀποκαταλλάξαι τὰ πάντα εἰς αὐτόν,",
+      "right_context": "διὰ τοῦ αἵματος τοῦ σταυροῦ αὐτοῦ,"
+    }
+  ],
+  "books": {
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποκαταλλάσσω",
+      "display": "reconciliar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "de·sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρός",
+      "display": "de·cruz",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 1:20",
+      "reason": "occurs near αἷμα, σταυρός, ἀποκαταλλάσσω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

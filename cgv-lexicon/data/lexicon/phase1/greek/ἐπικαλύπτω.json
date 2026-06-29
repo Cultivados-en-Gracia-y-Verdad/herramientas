@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐπικαλύπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπεκαλύφθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 4:7",
+      "form": "ἐπεκαλύφθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "ὧν ἀφέθησαν αἱ ἀνομίαι καὶ ὧν",
+      "right_context": "αἱ ἁμαρτίαι,"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀφίημι",
+      "display": "fueron perdonado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνομία",
+      "display": "iniquidades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 4:7",
+      "reason": "occurs near ἀνομία, ἀφίημι, ἁμαρτία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

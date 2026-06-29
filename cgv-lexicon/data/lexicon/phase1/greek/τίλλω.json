@@ -1,0 +1,145 @@
+{
+  "lemma": "τίλλω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἔτιλλον",
+      "count": 1
+    },
+    {
+      "form": "τίλλοντες",
+      "count": 1
+    },
+    {
+      "form": "τίλλειν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "imperfect": 1,
+      "present": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:1",
+      "form": "ἔτιλλον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "⸀σαββάτῳ διαπορεύεσθαι αὐτὸν ⸀διὰ σπορίμων, καὶ",
+      "right_context": "οἱ μαθηταὶ αὐτοῦ ⸂καὶ ἤσθιον τοὺς"
+    },
+    {
+      "ref": "Mark 2:23",
+      "form": "τίλλοντες",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "⸂οἱ μαθηταὶ αὐτοῦ ἤρξαντο⸃ ὁδὸν ποιεῖν",
+      "right_context": "τοὺς στάχυας."
+    },
+    {
+      "ref": "Matthew 12:1",
+      "form": "τίλλειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "δὲ μαθηταὶ αὐτοῦ ἐπείνασαν καὶ ἤρξαντο",
+      "right_context": "στάχυας καὶ ἐσθίειν."
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comían",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzaron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στάχυς",
+      "display": "espigas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διαπορεύομαι",
+      "display": "pasar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπόριμος",
+      "display": "de·sembrados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεινάω",
+      "display": "tener·hambre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:1",
+      "reason": "occurs near διαπορεύομαι, μαθητής, ἐσθίω"
+    },
+    {
+      "ref": "Mark 2:23",
+      "reason": "occurs near μαθητής, στάχυς, ἄρχω"
+    },
+    {
+      "ref": "Matthew 12:1",
+      "reason": "occurs near μαθητής, στάχυς, ἄρχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

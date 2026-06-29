@@ -1,0 +1,80 @@
+{
+  "lemma": "καταδέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατέδησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:34",
+      "form": "κατέδησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 34,
+      "left_context": "καὶ προσελθὼν",
+      "right_context": "τὰ τραύματα αὐτοῦ ἐπιχέων ἔλαιον καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τραῦμα",
+      "display": "heridas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιχέω",
+      "display": "derramando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλαιον",
+      "display": "aceite",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:34",
+      "reason": "occurs near προσέρχομαι, τραῦμα, ἐπιχέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

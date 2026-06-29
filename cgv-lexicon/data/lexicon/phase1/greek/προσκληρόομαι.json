@@ -1,0 +1,74 @@
+{
+  "lemma": "προσκληρόομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προσεκληρώθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:4",
+      "form": "προσεκληρώθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 4,
+      "left_context": "καί τινες ἐξ αὐτῶν ἐπείσθησαν καὶ",
+      "right_context": "τῷ Παύλῳ καὶ τῷ Σιλᾷ, τῶν"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πείθω",
+      "display": "fueron persuadido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίλας",
+      "display": "Silas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:4",
+      "reason": "occurs near Παῦλος, Σίλας, πείθω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

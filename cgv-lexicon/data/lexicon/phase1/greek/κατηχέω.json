@@ -1,0 +1,297 @@
+{
+  "lemma": "κατηχέω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "κατηχούμενος",
+      "count": 2
+    },
+    {
+      "form": "κατηχήσω,",
+      "count": 1
+    },
+    {
+      "form": "κατηχοῦντι",
+      "count": 1
+    },
+    {
+      "form": "κατηχημένος",
+      "count": 1
+    },
+    {
+      "form": "κατηχήθησαν",
+      "count": 1
+    },
+    {
+      "form": "κατήχηνται",
+      "count": 1
+    },
+    {
+      "form": "κατηχήθης",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 4,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 3,
+      "perfect": 2
+    },
+    "voices": {
+      "active": 2,
+      "passive": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 14:19",
+      "form": "κατηχήσω,",
+      "morph": "V-A-A-S-1S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "νοΐ⸃ μου λαλῆσαι, ἵνα καὶ ἄλλους",
+      "right_context": "ἢ μυρίους λόγους ἐν γλώσσῃ."
+    },
+    {
+      "ref": "Galatians 6:6",
+      "form": "κατηχούμενος",
+      "morph": "V-P-P-P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "Κοινωνείτω δὲ ὁ",
+      "right_context": "τὸν λόγον τῷ κατηχοῦντι ἐν πᾶσιν"
+    },
+    {
+      "ref": "Galatians 6:6",
+      "form": "κατηχοῦντι",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "δὲ ὁ κατηχούμενος τὸν λόγον τῷ",
+      "right_context": "ἐν πᾶσιν ἀγαθοῖς."
+    },
+    {
+      "ref": "Acts 18:25",
+      "form": "κατηχημένος",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 25,
+      "left_context": "οὗτος ἦν",
+      "right_context": "τὴν ὁδὸν τοῦ κυρίου, καὶ ζέων"
+    },
+    {
+      "ref": "Acts 21:21",
+      "form": "κατηχήθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 21,
+      "left_context": "",
+      "right_context": "δὲ περὶ σοῦ ὅτι ἀποστασίαν διδάσκεις"
+    },
+    {
+      "ref": "Acts 21:24",
+      "form": "κατήχηνται",
+      "morph": "V-X-P-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 24,
+      "left_context": "κεφαλήν, καὶ ⸀γνώσονται πάντες ὅτι ὧν",
+      "right_context": "περὶ σοῦ οὐδέν ἐστιν, ἀλλὰ στοιχεῖς"
+    },
+    {
+      "ref": "Luke 1:4",
+      "form": "κατηχήθης",
+      "morph": "V-A-P-I-2S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "ἵνα ἐπιγνῷς περὶ ὧν",
+      "right_context": "λόγων τὴν ἀσφάλειαν."
+    },
+    {
+      "ref": "Romans 2:18",
+      "form": "κατηχούμενος",
+      "morph": "V-P-P-P",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "τὸ θέλημα καὶ δοκιμάζεις τὰ διαφέροντα",
+      "right_context": "ἐκ τοῦ νόμου,"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Galatians": 2,
+    "1 Corinthians": 1,
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "κατηχέω",
+      "display": "instruiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μύριοι",
+      "display": "diez·mil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lengua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοινωνέω",
+      "display": "comparta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "buenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστασία",
+      "display": "apostasía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocerán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconocas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσφάλεια",
+      "display": "certeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκιμάζω",
+      "display": "probas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαφέρω",
+      "display": "diferiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:25",
+      "reason": "occurs near κατηχέω"
+    },
+    {
+      "ref": "Acts 21:21",
+      "reason": "occurs near κατηχέω"
+    },
+    {
+      "ref": "Acts 21:24",
+      "reason": "occurs near κατηχέω"
+    },
+    {
+      "ref": "Galatians 6:6",
+      "reason": "occurs near κατηχέω, λόγος"
+    },
+    {
+      "ref": "1 Corinthians 14:19",
+      "reason": "occurs near κατηχέω, λαλέω, λόγος"
+    },
+    {
+      "ref": "Luke 1:4",
+      "reason": "occurs near κατηχέω, λόγος"
+    },
+    {
+      "ref": "Romans 2:18",
+      "reason": "occurs near κατηχέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

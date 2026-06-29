@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐγχρίω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐγχρῖσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 3:18",
+      "form": "⸀ἐγχρῖσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "αἰσχύνη τῆς γυμνότητός σου, καὶ κολλούριον",
+      "right_context": "τοὺς ὀφθαλμούς σου ἵνα βλέπῃς."
+    }
+  ],
+  "books": {
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυμνότης",
+      "display": "de·desnudez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολλούριον",
+      "display": "colirio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miraras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 3:18",
+      "reason": "occurs near βλέπω, γυμνότης, κολλούριον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,92 @@
+{
+  "lemma": "ὑπολείπω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑπελείφθην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 11:3",
+      "form": "ὑπελείφθην",
+      "morph": "V-A-P-I-1S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 3,
+      "left_context": "ἀπέκτειναν, ⸀τὰ θυσιαστήριά σου κατέσκαψαν, κἀγὼ",
+      "right_context": "μόνος, καὶ ζητοῦσιν τὴν ψυχήν μου."
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θυσιαστήριον",
+      "display": "altares",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατασκάπτω",
+      "display": "derribaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 11:3",
+      "reason": "occurs near ζητέω, θυσιαστήριον, κατασκάπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

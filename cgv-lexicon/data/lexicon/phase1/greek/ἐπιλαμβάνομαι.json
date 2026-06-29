@@ -1,0 +1,478 @@
+{
+  "lemma": "ἐπιλαμβάνομαι",
+  "language": "greek",
+  "total_occurrences": 19,
+  "forms": [
+    {
+      "form": "ἐπιλαβόμενος",
+      "count": 5
+    },
+    {
+      "form": "ἐπιλαβόμενοι",
+      "count": 4
+    },
+    {
+      "form": "ἐπιλάβωνται",
+      "count": 2
+    },
+    {
+      "form": "ἐπελάβετο",
+      "count": 2
+    },
+    {
+      "form": "ἐπιλαβοῦ",
+      "count": 1
+    },
+    {
+      "form": "ἐπιλαμβάνεται,",
+      "count": 1
+    },
+    {
+      "form": "ἐπιλαμβάνεται.",
+      "count": 1
+    },
+    {
+      "form": "ἐπιλαβομένου",
+      "count": 1
+    },
+    {
+      "form": "ἐπιλαβόμενοί",
+      "count": 1
+    },
+    {
+      "form": "ἐπιλαβέσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "subjunctive": 2,
+      "indicative": 4,
+      "participle": 11,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 17,
+      "present": 2
+    },
+    "voices": {
+      "middle": 19
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:12",
+      "form": "ἐπιλαβοῦ",
+      "morph": "V-A-M-D-2S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "ἀγωνίζου τὸν καλὸν ἀγῶνα τῆς πίστεως,",
+      "right_context": "τῆς αἰωνίου ζωῆς, εἰς ἣν ἐκλήθης"
+    },
+    {
+      "ref": "1 Timothy 6:19",
+      "form": "ἐπιλάβωνται",
+      "morph": "V-A-M-S-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 19,
+      "left_context": "θεμέλιον καλὸν εἰς τὸ μέλλον, ἵνα",
+      "right_context": "τῆς ⸀ὄντως ζωῆς."
+    },
+    {
+      "ref": "Hebrews 2:16",
+      "form": "ἐπιλαμβάνεται,",
+      "morph": "V-P-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "οὐ γὰρ δήπου ἀγγέλων",
+      "right_context": "ἀλλὰ σπέρματος Ἀβραὰμ ἐπιλαμβάνεται."
+    },
+    {
+      "ref": "Hebrews 2:16",
+      "form": "ἐπιλαμβάνεται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "δήπου ἀγγέλων ἐπιλαμβάνεται, ἀλλὰ σπέρματος Ἀβραὰμ",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 8:9",
+      "form": "ἐπιλαβομένου",
+      "morph": "V-A-M-P",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 9,
+      "left_context": "ἐποίησα τοῖς πατράσιν αὐτῶν ἐν ἡμέρᾳ",
+      "right_context": "μου τῆς χειρὸς αὐτῶν ἐξαγαγεῖν αὐτοὺς"
+    },
+    {
+      "ref": "Acts 9:27",
+      "form": "ἐπιλαβόμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 27,
+      "left_context": "Βαρναβᾶς δὲ",
+      "right_context": "αὐτὸν ἤγαγεν πρὸς τοὺς ἀποστόλους, καὶ"
+    },
+    {
+      "ref": "Acts 16:19",
+      "form": "ἐπιλαβόμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 19,
+      "left_context": "ἐξῆλθεν ἡ ἐλπὶς τῆς ἐργασίας αὐτῶν",
+      "right_context": "τὸν Παῦλον καὶ τὸν Σιλᾶν εἵλκυσαν"
+    },
+    {
+      "ref": "Acts 17:19",
+      "form": "ἐπιλαβόμενοί",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 19,
+      "left_context": "",
+      "right_context": "⸀τε αὐτοῦ ἐπὶ τὸν Ἄρειον Πάγον"
+    },
+    {
+      "ref": "Acts 18:17",
+      "form": "ἐπιλαβόμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 17,
+      "left_context": "",
+      "right_context": "δὲ ⸀πάντες Σωσθένην τὸν ἀρχισυνάγωγον ἔτυπτον"
+    },
+    {
+      "ref": "Acts 21:30",
+      "form": "ἐπιλαβόμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 30,
+      "left_context": "καὶ ἐγένετο συνδρομὴ τοῦ λαοῦ, καὶ",
+      "right_context": "τοῦ Παύλου εἷλκον αὐτὸν ἔξω τοῦ"
+    },
+    {
+      "ref": "Acts 21:33",
+      "form": "ἐπελάβετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 33,
+      "left_context": "⸂τότε ἐγγίσας⸃ ὁ χιλίαρχος",
+      "right_context": "αὐτοῦ καὶ ἐκέλευσε δεθῆναι ἁλύσεσι δυσί,"
+    },
+    {
+      "ref": "Acts 23:19",
+      "form": "ἐπιλαβόμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 19,
+      "left_context": "",
+      "right_context": "δὲ τῆς χειρὸς αὐτοῦ ὁ χιλίαρχος"
+    },
+    {
+      "ref": "Luke 9:47",
+      "form": "ἐπιλαβόμενος",
+      "morph": "V-A-M-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 47,
+      "left_context": "⸀εἰδὼς τὸν διαλογισμὸν τῆς καρδίας αὐτῶν",
+      "right_context": "⸀παιδίον ἔστησεν αὐτὸ παρ’ ἑαυτῷ,"
+    },
+    {
+      "ref": "Luke 14:4",
+      "form": "ἐπιλαβόμενος",
+      "morph": "V-A-M-P",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 4,
+      "left_context": "οἱ δὲ ἡσύχασαν. καὶ",
+      "right_context": "ἰάσατο αὐτὸν καὶ ἀπέλυσεν."
+    },
+    {
+      "ref": "Luke 20:20",
+      "form": "ἐπιλάβωνται",
+      "morph": "V-A-M-S-3P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 20,
+      "left_context": "ἐγκαθέτους ὑποκρινομένους ἑαυτοὺς δικαίους εἶναι, ἵνα",
+      "right_context": "αὐτοῦ λόγου, ⸀ὥστε παραδοῦναι αὐτὸν τῇ"
+    },
+    {
+      "ref": "Luke 20:26",
+      "form": "ἐπιλαβέσθαι",
+      "morph": "V-A-M-N",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 26,
+      "left_context": "καὶ οὐκ ἴσχυσαν",
+      "right_context": "⸀τοῦ ῥήματος ἐναντίον τοῦ λαοῦ, καὶ"
+    },
+    {
+      "ref": "Luke 23:26",
+      "form": "ἐπιλαβόμενοι",
+      "morph": "V-A-M-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 26,
+      "left_context": "Καὶ ὡς ἀπήγαγον αὐτόν,",
+      "right_context": "⸂Σίμωνά τινα Κυρηναῖον ἐρχόμενον⸃ ἀπ’ ἀγροῦ"
+    },
+    {
+      "ref": "Mark 8:23",
+      "form": "ἐπιλαβόμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "καὶ",
+      "right_context": "τῆς χειρὸς τοῦ τυφλοῦ ⸀ἐξήνεγκεν αὐτὸν"
+    },
+    {
+      "ref": "Matthew 14:31",
+      "form": "ἐπελάβετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 31,
+      "left_context": "δὲ ὁ Ἰησοῦς ἐκτείνας τὴν χεῖρα",
+      "right_context": "αὐτοῦ καὶ λέγει αὐτῷ· Ὀλιγόπιστε, εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 7,
+    "Luke": 5,
+    "Hebrews": 3,
+    "1 Timothy": 2,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "de·vida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "de·ángeles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σπέρμα",
+      "display": "de·semilla",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "de·Abraham",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιλαμβάνομαι",
+      "display": "ase",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "de·pueblo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγών",
+      "display": "lucha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "de·eterna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄντως",
+      "display": "verdaderamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δήπου",
+      "display": "ciertamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξάγω",
+      "display": "sacar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαρναβᾶς",
+      "display": "Bernabé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγω",
+      "display": "llevó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "apóstoles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργασία",
+      "display": "de·trabajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίλας",
+      "display": "Silas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 6:12",
+      "form": "ἐπιλαβοῦ",
+      "morph": "V-A-M-D-2S",
+      "clause_text": "ἀγωνίζου τὸν καλὸν ἀγῶνα τῆς πίστεως, ἐπιλαβοῦ τῆς αἰωνίου ζωῆς, εἰς ἣν ἐκλήθης καὶ ὡμολόγησας"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 2:16",
+      "negator": "οὐ",
+      "clause_text": "οὐ γὰρ δήπου ἀγγέλων ἐπιλαμβάνεται, ἀλλὰ σπέρματος Ἀβραὰμ ἐπιλαμβάνεται."
+    },
+    {
+      "ref": "Luke 20:26",
+      "negator": "οὐκ",
+      "clause_text": "καὶ οὐκ ἴσχυσαν ἐπιλαβέσθαι ⸀τοῦ ῥήματος ἐναντίον τοῦ λαοῦ, καὶ θαυμάσαντες ἐπὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 16:19",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 17:19",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 18:17",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:30",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:33",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:19",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 9:27",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,116 @@
+{
+  "lemma": "συναρμολογέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συναρμολογουμένη",
+      "count": 1
+    },
+    {
+      "form": "συναρμολογούμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 2:21",
+      "form": "συναρμολογουμένη",
+      "morph": "V-P-P-P",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "ἐν ᾧ ⸀πᾶσα οἰκοδομὴ",
+      "right_context": "αὔξει εἰς ναὸν ἅγιον ἐν κυρίῳ,"
+    },
+    {
+      "ref": "Ephesians 4:16",
+      "form": "συναρμολογούμενον",
+      "morph": "V-P-P-P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "ἐξ οὗ πᾶν τὸ σῶμα",
+      "right_context": "καὶ συμβιβαζόμενον διὰ πάσης ἁφῆς τῆς"
+    }
+  ],
+  "books": {
+    "Ephesians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἰκοδομή",
+      "display": "edificio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὔξω",
+      "display": "crece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναός",
+      "display": "templo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμβιβάζω",
+      "display": "unido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁφή",
+      "display": "de·coyuntura",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 2:21",
+      "reason": "occurs near αὔξω, ναός, οἰκοδομή"
+    },
+    {
+      "ref": "Ephesians 4:16",
+      "reason": "occurs near σῶμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

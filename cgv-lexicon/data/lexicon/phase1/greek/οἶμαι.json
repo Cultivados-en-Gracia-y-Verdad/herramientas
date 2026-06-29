@@ -1,0 +1,192 @@
+{
+  "lemma": "οἶμαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "οἰόμενοι",
+      "count": 1
+    },
+    {
+      "form": "οἶμαι",
+      "count": 1
+    },
+    {
+      "form": "οἰέσθω",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 1:17",
+      "form": "οἰόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 17,
+      "left_context": "⸂ἐριθείας τὸν Χριστὸν καταγγέλλουσιν, οὐχ ἁγνῶς,",
+      "right_context": "θλῖψιν ἐγείρειν τοῖς δεσμοῖς μου⸃."
+    },
+    {
+      "ref": "John 21:25",
+      "form": "οἶμαι",
+      "morph": "V-P-M-I-1S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 25,
+      "left_context": "ἐὰν γράφηται καθ’ ἕν, οὐδ’ αὐτὸν",
+      "right_context": "τὸν κόσμον ⸀χωρήσειν τὰ γραφόμενα ⸀βιβλία."
+    },
+    {
+      "ref": "James 1:7",
+      "form": "οἰέσθω",
+      "morph": "V-P-M-D-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "μὴ γὰρ",
+      "right_context": "ὁ ἄνθρωπος ἐκεῖνος ὅτι λήμψεταί τι"
+    }
+  ],
+  "books": {
+    "Philippians": 1,
+    "John": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γράφω",
+      "display": "escribiera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταγγέλλω",
+      "display": "anuncian",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁγνῶς",
+      "display": "puramente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "tribulación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσμός",
+      "display": "ataduras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρέω",
+      "display": "caber",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomará",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "James 1:7",
+      "form": "οἰέσθω",
+      "morph": "V-P-M-D-3S",
+      "clause_text": "μὴ γὰρ οἰέσθω ὁ ἄνθρωπος ἐκεῖνος ὅτι λήμψεταί τι παρὰ τοῦ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Philippians 1:17",
+      "negator": "οὐχ",
+      "clause_text": "δὲ ἐξ ⸂ἐριθείας τὸν Χριστὸν καταγγέλλουσιν, οὐχ ἁγνῶς, οἰόμενοι θλῖψιν ἐγείρειν τοῖς δεσμοῖς μου⸃."
+    },
+    {
+      "ref": "John 21:25",
+      "negator": "οὐδ’",
+      "clause_text": "Ἰησοῦς, ἅτινα ἐὰν γράφηται καθ’ ἕν, οὐδ’ αὐτὸν οἶμαι τὸν κόσμον ⸀χωρήσειν τὰ γραφόμενα ⸀βιβλία."
+    },
+    {
+      "ref": "James 1:7",
+      "negator": "μὴ",
+      "clause_text": "μὴ γὰρ οἰέσθω ὁ ἄνθρωπος ἐκεῖνος ὅτι λήμψεταί τι παρὰ τοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 21:25",
+      "reason": "occurs near γράφω"
+    },
+    {
+      "ref": "Philippians 1:17",
+      "reason": "occurs near Χριστός, θλῖψις, καταγγέλλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

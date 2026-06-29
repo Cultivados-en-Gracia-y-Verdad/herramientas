@@ -1,0 +1,191 @@
+{
+  "lemma": "βάπτω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "⸀βεβαμμένον",
+      "count": 1
+    },
+    {
+      "form": "⸀βάψω",
+      "count": 1
+    },
+    {
+      "form": "⸂βάψας",
+      "count": 1
+    },
+    {
+      "form": "βάψῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "future": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 19:13",
+      "form": "⸀βεβαμμένον",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 13,
+      "left_context": "καὶ περιβεβλημένος ἱμάτιον",
+      "right_context": "αἵματι, καὶ ⸀κέκληται τὸ ὄνομα αὐτοῦ"
+    },
+    {
+      "ref": "John 13:26",
+      "form": "⸀βάψω",
+      "morph": "V-F-A-I-1S",
+      "book": "John",
+      "chapter": 13,
+      "verse": 26,
+      "left_context": "ὁ Ἰησοῦς· Ἐκεῖνός ἐστιν ᾧ ἐγὼ",
+      "right_context": "τὸ ψωμίον ⸂καὶ δώσω αὐτῷ⸃· ⸂βάψας"
+    },
+    {
+      "ref": "John 13:26",
+      "form": "⸂βάψας",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 13,
+      "verse": 26,
+      "left_context": "⸀βάψω τὸ ψωμίον ⸂καὶ δώσω αὐτῷ⸃·",
+      "right_context": "οὖν⸃ τὸ ⸀ψωμίον δίδωσιν Ἰούδᾳ Σίμωνος"
+    },
+    {
+      "ref": "Luke 16:24",
+      "form": "βάψῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 24,
+      "left_context": "ἐλέησόν με καὶ πέμψον Λάζαρον ἵνα",
+      "right_context": "τὸ ἄκρον τοῦ δακτύλου αὐτοῦ ὕδατος"
+    }
+  ],
+  "books": {
+    "John": 2,
+    "Revelation": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ψωμίον",
+      "display": "bocado",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "daré",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "περιβάλλω",
+      "display": "vestido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "manto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "ha llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰούδας",
+      "display": "Judá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "envia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λάζαρος",
+      "display": "Lázaro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκρον",
+      "display": "extremo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δάκτυλος",
+      "display": "de·dedo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 13:26",
+      "reason": "occurs near δίδωμι, ψωμίον"
+    },
+    {
+      "ref": "Luke 16:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 19:13",
+      "reason": "occurs near αἷμα, περιβάλλω, ἱμάτιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

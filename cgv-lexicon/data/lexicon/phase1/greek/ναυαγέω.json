@@ -1,0 +1,123 @@
+{
+  "lemma": "ναυαγέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐναυάγησαν·",
+      "count": 1
+    },
+    {
+      "form": "ἐναυάγησα,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 1:19",
+      "form": "ἐναυάγησαν·",
+      "morph": "V-A-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "ἥν τινες ἀπωσάμενοι περὶ τὴν πίστιν",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 11:25",
+      "form": "ἐναυάγησα,",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "τρὶς ἐραβδίσθην, ἅπαξ ἐλιθάσθην, τρὶς",
+      "right_context": "νυχθήμερον ἐν τῷ βυθῷ πεποίηκα·"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τρίς",
+      "display": "tres·veces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπωθέομαι",
+      "display": "rechazados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥαβδίζω",
+      "display": "fue azotado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λιθάζω",
+      "display": "fue apedreado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυχθήμερον",
+      "display": "noche·y·día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βυθός",
+      "display": "profundidad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 1:19",
+      "reason": "occurs near πίστις, ἀπωθέομαι"
+    },
+    {
+      "ref": "2 Corinthians 11:25",
+      "reason": "occurs near τρίς, ἅπαξ, ῥαβδίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

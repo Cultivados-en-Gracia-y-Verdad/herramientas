@@ -1,0 +1,176 @@
+{
+  "lemma": "λυτρόομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐλυτρώθητε",
+      "count": 1
+    },
+    {
+      "form": "λυτροῦσθαι",
+      "count": 1
+    },
+    {
+      "form": "λυτρώσηται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:18",
+      "form": "ἐλυτρώθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "ὅτι οὐ φθαρτοῖς, ἀργυρίῳ ἢ χρυσίῳ,",
+      "right_context": "ἐκ τῆς ματαίας ὑμῶν ἀναστροφῆς πατροπαραδότου,"
+    },
+    {
+      "ref": "Luke 24:21",
+      "form": "λυτροῦσθαι",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 21,
+      "left_context": "ἠλπίζομεν ὅτι αὐτός ἐστιν ὁ μέλλων",
+      "right_context": "τὸν Ἰσραήλ· ἀλλά γε ⸀καὶ σὺν"
+    },
+    {
+      "ref": "Titus 2:14",
+      "form": "λυτρώσηται",
+      "morph": "V-A-M-S-3S",
+      "book": "Titus",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "ὃς ἔδωκεν ἑαυτὸν ὑπὲρ ἡμῶν ἵνα",
+      "right_context": "ἡμᾶς ἀπὸ πάσης ἀνομίας καὶ καθαρίσῃ"
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Luke": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φθαρτός",
+      "display": "corruptibles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργύριον",
+      "display": "plata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρυσίον",
+      "display": "oro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάταιος",
+      "display": "de·vana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναστροφή",
+      "display": "de·conducta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "Israel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γέ",
+      "display": "GE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνομία",
+      "display": "de·iniquidad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 1:18",
+      "reason": "occurs near μάταιος, φθαρτός, χρυσίον"
+    },
+    {
+      "ref": "Luke 24:21",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Titus 2:14",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

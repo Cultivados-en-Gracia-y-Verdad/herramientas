@@ -1,0 +1,199 @@
+{
+  "lemma": "περιέρχομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "περιερχόμεναι",
+      "count": 1
+    },
+    {
+      "form": "περιῆλθον",
+      "count": 1
+    },
+    {
+      "form": "περιερχομένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:13",
+      "form": "περιερχόμεναι",
+      "morph": "V-P-M-P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "ἅμα δὲ καὶ ἀργαὶ μανθάνουσιν,",
+      "right_context": "τὰς οἰκίας, οὐ μόνον δὲ ἀργαὶ"
+    },
+    {
+      "ref": "Hebrews 11:37",
+      "form": "περιῆλθον",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 37,
+      "left_context": "ἐλιθάσθησαν, ⸀ἐπρίσθησαν, ἐν φόνῳ ⸀μαχαίρης ἀπέθανον,",
+      "right_context": "ἐν μηλωταῖς, ἐν αἰγείοις δέρμασιν, ὑστερούμενοι,"
+    },
+    {
+      "ref": "Acts 19:13",
+      "form": "περιερχομένων",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 13,
+      "left_context": "ἐπεχείρησαν δέ τινες ⸀καὶ τῶν",
+      "right_context": "Ἰουδαίων ἐξορκιστῶν ὀνομάζειν ἐπὶ τοὺς ἔχοντας"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Hebrews": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργός",
+      "display": "ociosas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μανθάνω",
+      "display": "aprenden",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρίζω",
+      "display": "fueron aserrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόνος",
+      "display": "asesinato,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχαιρα",
+      "display": "de·espada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηλωτή",
+      "display": "pieles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἴγειος",
+      "display": "de·cabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέρμα",
+      "display": "pieles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιχειρέω",
+      "display": "intentaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξορκιστής",
+      "display": "de·exorcistas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνομάζω",
+      "display": "nombrar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 5:13",
+      "negator": "οὐ",
+      "clause_text": "ἅμα δὲ καὶ ἀργαὶ μανθάνουσιν, περιερχόμεναι τὰς οἰκίας, οὐ μόνον δὲ ἀργαὶ ἀλλὰ καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:13",
+      "reason": "occurs near μανθάνω, μόνος, οἰκία"
+    },
+    {
+      "ref": "Acts 19:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 11:37",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

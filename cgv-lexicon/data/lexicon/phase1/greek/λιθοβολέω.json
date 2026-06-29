@@ -1,0 +1,271 @@
+{
+  "lemma": "λιθοβολέω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "λιθοβολοῦσα",
+      "count": 2
+    },
+    {
+      "form": "λιθοβοληθήσεται·",
+      "count": 1
+    },
+    {
+      "form": "ἐλιθοβόλουν.",
+      "count": 1
+    },
+    {
+      "form": "ἐλιθοβόλουν",
+      "count": 1
+    },
+    {
+      "form": "λιθοβολῆσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐλιθοβόλησαν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "infinitive": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "future": 1,
+      "imperfect": 2,
+      "aorist": 2,
+      "present": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:20",
+      "form": "λιθοβοληθήσεται·",
+      "morph": "V-F-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "διαστελλόμενον· Κἂν θηρίον θίγῃ τοῦ ὄρους,",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 7:58",
+      "form": "ἐλιθοβόλουν.",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 58,
+      "left_context": "καὶ ἐκβαλόντες ἔξω τῆς πόλεως",
+      "right_context": "καὶ οἱ μάρτυρες ἀπέθεντο τὰ ἱμάτια"
+    },
+    {
+      "ref": "Acts 7:59",
+      "form": "ἐλιθοβόλουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 59,
+      "left_context": "καὶ",
+      "right_context": "τὸν Στέφανον ἐπικαλούμενον καὶ λέγοντα· Κύριε"
+    },
+    {
+      "ref": "Acts 14:5",
+      "form": "λιθοβολῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 5,
+      "left_context": "σὺν τοῖς ἄρχουσιν αὐτῶν ὑβρίσαι καὶ",
+      "right_context": "αὐτούς,"
+    },
+    {
+      "ref": "Luke 13:34",
+      "form": "λιθοβολοῦσα",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 34,
+      "left_context": "Ἰερουσαλήμ, ἡ ἀποκτείνουσα τοὺς προφήτας καὶ",
+      "right_context": "τοὺς ἀπεσταλμένους πρὸς αὐτήν— ποσάκις ἠθέλησα"
+    },
+    {
+      "ref": "Matthew 21:35",
+      "form": "ἐλιθοβόλησαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 35,
+      "left_context": "ἔδειραν, ὃν δὲ ἀπέκτειναν, ὃν δὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 23:37",
+      "form": "λιθοβολοῦσα",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 37,
+      "left_context": "Ἰερουσαλήμ, ἡ ⸀ἀποκτείνουσα τοὺς προφήτας καὶ",
+      "right_context": "τοὺς ἀπεσταλμένους πρὸς αὐτήν— ποσάκις ἠθέλησα"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Matthew": 2,
+    "Hebrews": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "matando",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "profetas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποσάκις",
+      "display": "cuántas·veces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κἄν",
+      "display": "y·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θηρίον",
+      "display": "bestia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θιγγάνω",
+      "display": "toce",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "de·monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulsados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάρτυς",
+      "display": "testigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποτίθημι",
+      "display": "pusieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Στέφανος",
+      "display": "Esteban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπικαλέω",
+      "display": "llamando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχων",
+      "display": "gobernantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑβρίζω",
+      "display": "ultrajar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 14:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 7:58",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 7:59",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 21:35",
+      "reason": "occurs near ἀποκτείνω"
+    },
+    {
+      "ref": "Matthew 23:37",
+      "reason": "occurs near ποσάκις, προφήτης, ἀποκτείνω"
+    },
+    {
+      "ref": "Hebrews 12:20",
+      "reason": "occurs near κἄν"
+    },
+    {
+      "ref": "Luke 13:34",
+      "reason": "occurs near ποσάκις, προφήτης, ἀποκτείνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

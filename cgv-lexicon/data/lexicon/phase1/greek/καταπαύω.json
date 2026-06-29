@@ -1,0 +1,196 @@
+{
+  "lemma": "καταπαύω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κατέπαυσεν",
+      "count": 2
+    },
+    {
+      "form": "κατέπαυσεν,",
+      "count": 1
+    },
+    {
+      "form": "κατέπαυσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 4:4",
+      "form": "κατέπαυσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "που περὶ τῆς ἑβδόμης οὕτως· Καὶ",
+      "right_context": "ὁ θεὸς ἐν τῇ ἡμέρᾳ τῇ"
+    },
+    {
+      "ref": "Hebrews 4:8",
+      "form": "κατέπαυσεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "εἰ γὰρ αὐτοὺς Ἰησοῦς",
+      "right_context": "οὐκ ἂν περὶ ἄλλης ἐλάλει μετὰ"
+    },
+    {
+      "ref": "Hebrews 4:10",
+      "form": "κατέπαυσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 10,
+      "left_context": "εἰς τὴν κατάπαυσιν αὐτοῦ καὶ αὐτὸς",
+      "right_context": "ἀπὸ τῶν ἔργων αὐτοῦ ὥσπερ ἀπὸ"
+    },
+    {
+      "ref": "Acts 14:18",
+      "form": "κατέπαυσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 18,
+      "left_context": "καὶ ταῦτα λέγοντες μόλις",
+      "right_context": "τοὺς ὄχλους τοῦ μὴ θύειν αὐτοῖς."
+    }
+  ],
+  "books": {
+    "Hebrews": 3,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἕβδομος",
+      "display": "de·séptima",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "de·otra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάπαυσις",
+      "display": "reposo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥσπερ",
+      "display": "como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόλις",
+      "display": "apenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θύω",
+      "display": "sacrificar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 4:8",
+      "negator": "οὐκ",
+      "clause_text": "εἰ γὰρ αὐτοὺς Ἰησοῦς κατέπαυσεν, οὐκ ἂν περὶ ἄλλης ἐλάλει μετὰ ταῦτα ἡμέρας."
+    },
+    {
+      "ref": "Acts 14:18",
+      "negator": "μὴ",
+      "clause_text": "καὶ ταῦτα λέγοντες μόλις κατέπαυσαν τοὺς ὄχλους τοῦ μὴ θύειν αὐτοῖς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 4:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 4:4",
+      "reason": "occurs near θεός, οὕτω(ς), ἕβδομος"
+    },
+    {
+      "ref": "Hebrews 4:8",
+      "reason": "occurs near Ἰησοῦς"
+    },
+    {
+      "ref": "Acts 14:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

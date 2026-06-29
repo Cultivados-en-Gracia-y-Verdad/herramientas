@@ -1,0 +1,300 @@
+{
+  "lemma": "φυσιόω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "φυσιοῦσθε",
+      "count": 1
+    },
+    {
+      "form": "ἐφυσιώθησάν",
+      "count": 1
+    },
+    {
+      "form": "πεφυσιωμένων",
+      "count": 1
+    },
+    {
+      "form": "πεφυσιωμένοι",
+      "count": 1
+    },
+    {
+      "form": "φυσιοῖ,",
+      "count": 1
+    },
+    {
+      "form": "φυσιοῦται,",
+      "count": 1
+    },
+    {
+      "form": "φυσιούμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 3
+    },
+    "tenses": {
+      "present": 4,
+      "aorist": 1,
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 6,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:6",
+      "form": "φυσιοῦσθε",
+      "morph": "V-P-P-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "ἵνα μὴ εἷς ὑπὲρ τοῦ ἑνὸς",
+      "right_context": "κατὰ τοῦ ἑτέρου."
+    },
+    {
+      "ref": "1 Corinthians 4:18",
+      "form": "ἐφυσιώθησάν",
+      "morph": "V-A-P-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 18,
+      "left_context": "μὴ ἐρχομένου δέ μου πρὸς ὑμᾶς",
+      "right_context": "τινες·"
+    },
+    {
+      "ref": "1 Corinthians 4:19",
+      "form": "πεφυσιωμένων",
+      "morph": "V-X-P-P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 19,
+      "left_context": "καὶ γνώσομαι οὐ τὸν λόγον τῶν",
+      "right_context": "ἀλλὰ τὴν δύναμιν,"
+    },
+    {
+      "ref": "1 Corinthians 5:2",
+      "form": "πεφυσιωμένοι",
+      "morph": "V-X-P-P",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "καὶ ὑμεῖς",
+      "right_context": "ἐστέ, καὶ οὐχὶ μᾶλλον ἐπενθήσατε, ἵνα"
+    },
+    {
+      "ref": "1 Corinthians 8:1",
+      "form": "φυσιοῖ,",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 8,
+      "verse": 1,
+      "left_context": "ὅτι πάντες γνῶσιν ἔχομεν. ἡ γνῶσις",
+      "right_context": "ἡ δὲ ἀγάπη οἰκοδομεῖ."
+    },
+    {
+      "ref": "1 Corinthians 13:4",
+      "form": "φυσιοῦται,",
+      "morph": "V-P-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 4,
+      "left_context": "ζηλοῖ ⸂ἡ ἀγάπη⸃, οὐ περπερεύεται, οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Colossians 2:18",
+      "form": "φυσιούμενος",
+      "morph": "V-P-P-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "τῶν ἀγγέλων, ⸀ἃ ἑόρακεν ἐμβατεύων, εἰκῇ",
+      "right_context": "ὑπὸ τοῦ νοὸς τῆς σαρκὸς αὐτοῦ,"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 6,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γνῶσις",
+      "display": "conocimiento",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "de·otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "veniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoceré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πενθέω",
+      "display": "lamentasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edifica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περπερεύομαι",
+      "display": "jactarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "de·ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ha visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμβατεύω",
+      "display": "entremeterse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰκῇ",
+      "display": "en·vano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "de·mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 4:19",
+      "negator": "οὐ",
+      "clause_text": "κύριος θελήσῃ, καὶ γνώσομαι οὐ τὸν λόγον τῶν πεφυσιωμένων ἀλλὰ τὴν δύναμιν,"
+    },
+    {
+      "ref": "1 Corinthians 13:4",
+      "negator": "οὐ",
+      "clause_text": "ἀγάπη, οὐ ζηλοῖ ⸂ἡ ἀγάπη⸃, οὐ περπερεύεται, οὐ φυσιοῦται,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 13:4",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 4:18",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 4:19",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 4:6",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 5:2",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 8:1",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "Colossians 2:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

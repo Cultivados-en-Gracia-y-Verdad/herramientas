@@ -1,0 +1,359 @@
+{
+  "lemma": "λιθάζω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "ἐλιθάσθην,",
+      "count": 1
+    },
+    {
+      "form": "ἐλιθάσθησαν,",
+      "count": 1
+    },
+    {
+      "form": "λιθασθῶσιν.",
+      "count": 1
+    },
+    {
+      "form": "λιθάσαντες",
+      "count": 1
+    },
+    {
+      "form": "λιθάσωσιν",
+      "count": 1
+    },
+    {
+      "form": "λιθάζετε⸃;",
+      "count": 1
+    },
+    {
+      "form": "λιθάζομέν",
+      "count": 1
+    },
+    {
+      "form": "λιθάσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "subjunctive": 2,
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 6,
+      "present": 2
+    },
+    "voices": {
+      "passive": 3,
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:25",
+      "form": "ἐλιθάσθην,",
+      "morph": "V-A-P-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "τρὶς ἐραβδίσθην, ἅπαξ",
+      "right_context": "τρὶς ἐναυάγησα, νυχθήμερον ἐν τῷ βυθῷ"
+    },
+    {
+      "ref": "Hebrews 11:37",
+      "form": "ἐλιθάσθησαν,",
+      "morph": "V-A-P-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 37,
+      "left_context": "",
+      "right_context": "⸀ἐπρίσθησαν, ἐν φόνῳ ⸀μαχαίρης ἀπέθανον, περιῆλθον"
+    },
+    {
+      "ref": "Acts 5:26",
+      "form": "λιθασθῶσιν.",
+      "morph": "V-A-P-S-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 26,
+      "left_context": "βίας, ἐφοβοῦντο γὰρ τὸν λαόν, ⸀μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 14:19",
+      "form": "λιθάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "Ἰουδαῖοι, καὶ πείσαντες τοὺς ὄχλους καὶ",
+      "right_context": "τὸν Παῦλον ἔσυρον ἔξω τῆς πόλεως,"
+    },
+    {
+      "ref": "John 10:31",
+      "form": "λιθάσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "John",
+      "chapter": 10,
+      "verse": 31,
+      "left_context": "⸀οὖν πάλιν λίθους οἱ Ἰουδαῖοι ἵνα",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "John 10:32",
+      "form": "λιθάζετε⸃;",
+      "morph": "V-P-A-I-2P",
+      "book": "John",
+      "chapter": 10,
+      "verse": 32,
+      "left_context": "⸀πατρός· διὰ ποῖον αὐτῶν ἔργον ⸂ἐμὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 10:33",
+      "form": "λιθάζομέν",
+      "morph": "V-P-A-I-1P",
+      "book": "John",
+      "chapter": 10,
+      "verse": 33,
+      "left_context": "οἱ ⸀Ἰουδαῖοι· Περὶ καλοῦ ἔργου οὐ",
+      "right_context": "σε ἀλλὰ περὶ βλασφημίας, καὶ ὅτι"
+    },
+    {
+      "ref": "John 11:8",
+      "form": "λιθάσαι",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 11,
+      "verse": 8,
+      "left_context": "οἱ μαθηταί· Ῥαββί, νῦν ἐζήτουν σε",
+      "right_context": "οἱ Ἰουδαῖοι, καὶ πάλιν ὑπάγεις ἐκεῖ;"
+    }
+  ],
+  "books": {
+    "John": 4,
+    "Acts": 2,
+    "2 Corinthians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τρίς",
+      "display": "tres·veces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥαβδίζω",
+      "display": "fue azotado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναυαγέω",
+      "display": "naufragé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυχθήμερον",
+      "display": "noche·y·día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρίζω",
+      "display": "fueron aserrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόνος",
+      "display": "asesinato,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχαιρα",
+      "display": "de·espada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "persuadidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύρω",
+      "display": "arrastraban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποῖος",
+      "display": "cuál",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "de·bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημία",
+      "display": "de·blasfemia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥαββί",
+      "display": "Rabbí",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 5:26",
+      "form": "λιθασθῶσιν.",
+      "morph": "V-A-P-S-3P",
+      "clause_text": "οὐ μετὰ βίας, ἐφοβοῦντο γὰρ τὸν λαόν, ⸀μὴ λιθασθῶσιν.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 5:26",
+      "negator": "⸀μὴ",
+      "clause_text": "οὐ μετὰ βίας, ἐφοβοῦντο γὰρ τὸν λαόν, ⸀μὴ λιθασθῶσιν."
+    },
+    {
+      "ref": "John 10:33",
+      "negator": "οὐ",
+      "clause_text": "ἀπεκρίθησαν αὐτῷ οἱ ⸀Ἰουδαῖοι· Περὶ καλοῦ ἔργου οὐ λιθάζομέν σε ἀλλὰ περὶ βλασφημίας, καὶ ὅτι σὺ ἄνθρωπος"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 10:31",
+      "reason": "occurs near πάλιν, Ἰουδαῖος"
+    },
+    {
+      "ref": "John 10:32",
+      "reason": "occurs near ἔργον"
+    },
+    {
+      "ref": "John 10:33",
+      "reason": "occurs near ἔργον, Ἰουδαῖος"
+    },
+    {
+      "ref": "John 11:8",
+      "reason": "occurs near πάλιν, Ἰουδαῖος"
+    },
+    {
+      "ref": "Acts 14:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 5:26",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 11:25",
+      "reason": "occurs near τρίς, ῥαβδίζω"
+    },
+    {
+      "ref": "Hebrews 11:37",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

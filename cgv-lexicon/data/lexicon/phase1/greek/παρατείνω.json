@@ -1,0 +1,98 @@
+{
+  "lemma": "παρατείνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρέτεινέν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:7",
+      "form": "παρέτεινέν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 7,
+      "left_context": "διελέγετο αὐτοῖς, μέλλων ἐξιέναι τῇ ἐπαύριον,",
+      "right_context": "τε τὸν λόγον μέχρι μεσονυκτίου."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξειμι",
+      "display": "salir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαύριον",
+      "display": "al·día·siguiente,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέχρι(ς)",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεσονύκτιον",
+      "display": "de·medianoche",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:7",
+      "reason": "occurs near λόγος, μέλλω, τέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

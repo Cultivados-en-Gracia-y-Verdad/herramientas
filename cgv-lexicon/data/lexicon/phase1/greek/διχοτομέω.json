@@ -1,0 +1,95 @@
+{
+  "lemma": "διχοτομέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διχοτομήσει",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:46",
+      "form": "διχοτομήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 46,
+      "left_context": "ἐν ὥρᾳ ᾗ οὐ γινώσκει, καὶ",
+      "right_context": "αὐτὸν καὶ τὸ μέρος αὐτοῦ μετὰ"
+    },
+    {
+      "ref": "Matthew 24:51",
+      "form": "διχοτομήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 51,
+      "left_context": "καὶ",
+      "right_context": "αὐτὸν καὶ τὸ μέρος αὐτοῦ μετὰ"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέρος",
+      "display": "parte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoce",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:46",
+      "negator": "οὐ",
+      "clause_text": "προσδοκᾷ καὶ ἐν ὥρᾳ ᾗ οὐ γινώσκει, καὶ διχοτομήσει αὐτὸν καὶ τὸ μέρος αὐτοῦ μετὰ τῶν ἀπίστων"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:46",
+      "reason": "occurs near γινώσκω, μέρος, ὥρα"
+    },
+    {
+      "ref": "Matthew 24:51",
+      "reason": "occurs near μέρος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

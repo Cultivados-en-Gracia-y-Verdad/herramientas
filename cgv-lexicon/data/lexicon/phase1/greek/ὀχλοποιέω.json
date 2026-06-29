@@ -1,0 +1,92 @@
+{
+  "lemma": "ὀχλοποιέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὀχλοποιήσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:5",
+      "form": "ὀχλοποιήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 5,
+      "left_context": "τῶν ἀγοραίων ⸂ἄνδρας τινὰς⸃ πονηροὺς καὶ",
+      "right_context": "ἐθορύβουν τὴν πόλιν, ⸂καὶ ἐπιστάντες⸃ τῇ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγοραῖος",
+      "display": "de·la·plaza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θορυβέω",
+      "display": "alborotaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:5",
+      "reason": "occurs near θορυβέω, πονηρός, πόλις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

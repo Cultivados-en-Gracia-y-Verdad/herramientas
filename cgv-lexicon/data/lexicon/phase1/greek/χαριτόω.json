@@ -1,0 +1,114 @@
+{
+  "lemma": "χαριτόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐχαρίτωσεν",
+      "count": 1
+    },
+    {
+      "form": "κεχαριτωμένη,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 1:6",
+      "form": "ἐχαρίτωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "ἔπαινον δόξης τῆς χάριτος αὐτοῦ ⸀ἧς",
+      "right_context": "ἡμᾶς ἐν τῷ ἠγαπημένῳ,"
+    },
+    {
+      "ref": "Luke 1:28",
+      "form": "κεχαριτωμένη,",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 28,
+      "left_context": "καὶ ⸀εἰσελθὼν πρὸς αὐτὴν εἶπεν· Χαῖρε,",
+      "right_context": "ὁ κύριος μετὰ ⸀σοῦ."
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δόξα",
+      "display": "de·gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "de·gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "display": "amado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "goza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 1:6",
+      "reason": "occurs near δόξα, χάρις, ἀγαπάω"
+    },
+    {
+      "ref": "Luke 1:28",
+      "reason": "occurs near εἰσέρχομαι, χαίρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

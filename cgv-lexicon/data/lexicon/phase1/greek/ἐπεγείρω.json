@@ -1,0 +1,118 @@
+{
+  "lemma": "ἐπεγείρω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπήγειραν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:50",
+      "form": "ἐπήγειραν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 50,
+      "left_context": "καὶ τοὺς πρώτους τῆς πόλεως καὶ",
+      "right_context": "διωγμὸν ἐπὶ τὸν Παῦλον ⸀καὶ Βαρναβᾶν,"
+    },
+    {
+      "ref": "Acts 14:2",
+      "form": "ἐπήγειραν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 2,
+      "left_context": "οἱ δὲ ⸀ἀπειθήσαντες Ἰουδαῖοι",
+      "right_context": "καὶ ἐκάκωσαν τὰς ψυχὰς τῶν ἐθνῶν"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πρῶτος",
+      "display": "primeros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διωγμός",
+      "display": "persecución",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπειθέω",
+      "display": "desobedecidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακόω",
+      "display": "maltrataron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:50",
+      "reason": "occurs near Παῦλος, διωγμός, πρῶτος"
+    },
+    {
+      "ref": "Acts 14:2",
+      "reason": "occurs near ἀπειθέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,137 @@
+{
+  "lemma": "σχολάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀σχολάσητε",
+      "count": 1
+    },
+    {
+      "form": "⸀σχολάζοντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:5",
+      "form": "⸀σχολάσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 5,
+      "left_context": "ἂν ἐκ συμφώνου πρὸς καιρὸν ἵνα",
+      "right_context": "⸀τῇ προσευχῇ καὶ πάλιν ἐπὶ τὸ"
+    },
+    {
+      "ref": "Matthew 12:44",
+      "form": "⸀σχολάζοντα",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 44,
+      "left_context": "ἐπιστρέψω⸃ ὅθεν ἐξῆλθον· καὶ ἐλθὸν ⸀εὑρίσκει",
+      "right_context": "σεσαρωμένον καὶ κεκοσμημένον."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σύμφωνος",
+      "display": "de·acuerdo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσευχή",
+      "display": "oración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅθεν",
+      "display": "de·donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "halla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σαρόω",
+      "display": "barrido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοσμέω",
+      "display": "adornado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 7:5",
+      "reason": "occurs near καιρός, πάλιν, προσευχή"
+    },
+    {
+      "ref": "Matthew 12:44",
+      "reason": "occurs near ὅθεν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

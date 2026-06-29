@@ -1,0 +1,435 @@
+{
+  "lemma": "ἁρπάζω",
+  "language": "greek",
+  "total_occurrences": 14,
+  "forms": [
+    {
+      "form": "ἁρπάζειν",
+      "count": 2
+    },
+    {
+      "form": "ἁρπάζει",
+      "count": 2
+    },
+    {
+      "form": "ἁρπαγησόμεθα",
+      "count": 1
+    },
+    {
+      "form": "ἁρπαγέντα",
+      "count": 1
+    },
+    {
+      "form": "ἡρπάγη",
+      "count": 1
+    },
+    {
+      "form": "ἡρπάσθη",
+      "count": 1
+    },
+    {
+      "form": "ἥρπασεν",
+      "count": 1
+    },
+    {
+      "form": "ἁρπάσαι",
+      "count": 1
+    },
+    {
+      "form": "ἁρπάσει",
+      "count": 1
+    },
+    {
+      "form": "ἁρπάζοντες,",
+      "count": 1
+    },
+    {
+      "form": "ἁρπάζουσιν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἁρπάσαι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 8,
+      "participle": 2,
+      "infinitive": 4
+    },
+    "tenses": {
+      "future": 2,
+      "aorist": 6,
+      "present": 6
+    },
+    "voices": {
+      "passive": 4,
+      "active": 10
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 4:17",
+      "form": "ἁρπαγησόμεθα",
+      "morph": "V-F-P-I-1P",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "ζῶντες οἱ περιλειπόμενοι ἅμα σὺν αὐτοῖς",
+      "right_context": "ἐν νεφέλαις εἰς ἀπάντησιν τοῦ κυρίου"
+    },
+    {
+      "ref": "2 Corinthians 12:2",
+      "form": "ἁρπαγέντα",
+      "morph": "V-A-P-P",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "σώματος οὐκ οἶδα, ὁ θεὸς οἶδεν—",
+      "right_context": "τὸν τοιοῦτον ἕως τρίτου οὐρανοῦ."
+    },
+    {
+      "ref": "2 Corinthians 12:4",
+      "form": "ἡρπάγη",
+      "morph": "V-A-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "ὅτι",
+      "right_context": "εἰς τὸν παράδεισον καὶ ἤκουσεν ἄρρητα"
+    },
+    {
+      "ref": "Revelation 12:5",
+      "form": "ἡρπάσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "τὰ ἔθνη ἐν ῥάβδῳ σιδηρᾷ· καὶ",
+      "right_context": "τὸ τέκνον αὐτῆς πρὸς τὸν θεὸν"
+    },
+    {
+      "ref": "Acts 8:39",
+      "form": "ἥρπασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 39,
+      "left_context": "ἀνέβησαν ἐκ τοῦ ὕδατος, πνεῦμα κυρίου",
+      "right_context": "τὸν Φίλιππον, καὶ οὐκ εἶδεν αὐτὸν"
+    },
+    {
+      "ref": "Acts 23:10",
+      "form": "ἁρπάσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 10,
+      "left_context": "ὑπ’ αὐτῶν ἐκέλευσεν τὸ στράτευμα ⸀καταβὰν",
+      "right_context": "αὐτὸν ἐκ μέσου αὐτῶν, ἄγειν ⸀τε"
+    },
+    {
+      "ref": "John 6:15",
+      "form": "ἁρπάζειν",
+      "morph": "V-P-A-N",
+      "book": "John",
+      "chapter": 6,
+      "verse": 15,
+      "left_context": "οὖν γνοὺς ὅτι μέλλουσιν ἔρχεσθαι καὶ",
+      "right_context": "αὐτὸν ἵνα ⸀ποιήσωσιν βασιλέα ἀνεχώρησεν ⸀πάλιν"
+    },
+    {
+      "ref": "John 10:12",
+      "form": "ἁρπάζει",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 10,
+      "verse": 12,
+      "left_context": "πρόβατα καὶ φεύγει— καὶ ὁ λύκος",
+      "right_context": "αὐτὰ καὶ ⸀σκορπίζει—"
+    },
+    {
+      "ref": "John 10:28",
+      "form": "ἁρπάσει",
+      "morph": "V-F-A-I-3S",
+      "book": "John",
+      "chapter": 10,
+      "verse": 28,
+      "left_context": "ἀπόλωνται εἰς τὸν αἰῶνα, καὶ οὐχ",
+      "right_context": "τις αὐτὰ ἐκ τῆς χειρός μου."
+    },
+    {
+      "ref": "John 10:29",
+      "form": "ἁρπάζειν",
+      "morph": "V-P-A-N",
+      "book": "John",
+      "chapter": 10,
+      "verse": 29,
+      "left_context": "⸂πάντων μεῖζων⸃ ἐστίν, καὶ οὐδεὶς δύναται",
+      "right_context": "ἐκ τῆς χειρὸς τοῦ ⸀πατρός."
+    },
+    {
+      "ref": "Jude 1:23",
+      "form": "ἁρπάζοντες,",
+      "morph": "V-P-A-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "οὓς δὲ σῴζετε ἐκ πυρὸς",
+      "right_context": "οὓς δὲ ἐλεᾶτε ἐν φόβῳ⸃, μισοῦντες"
+    },
+    {
+      "ref": "Matthew 11:12",
+      "form": "ἁρπάζουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 12,
+      "left_context": "βασιλεία τῶν οὐρανῶν βιάζεται, καὶ βιασταὶ",
+      "right_context": "αὐτήν."
+    },
+    {
+      "ref": "Matthew 12:29",
+      "form": "⸀ἁρπάσαι,",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 29,
+      "left_context": "τοῦ ἰσχυροῦ καὶ τὰ σκεύη αὐτοῦ",
+      "right_context": "ἐὰν μὴ πρῶτον δήσῃ τὸν ἰσχυρόν;"
+    },
+    {
+      "ref": "Matthew 13:19",
+      "form": "ἁρπάζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 19,
+      "left_context": "μὴ συνιέντος, ἔρχεται ὁ πονηρὸς καὶ",
+      "right_context": "τὸ ἐσπαρμένον ἐν τῇ καρδίᾳ αὐτοῦ·"
+    }
+  ],
+  "books": {
+    "John": 4,
+    "Matthew": 3,
+    "2 Corinthians": 2,
+    "Acts": 2,
+    "1 Thessalonians": 1,
+    "Revelation": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἶδα",
+      "display": "he sabido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιλείπομαι",
+      "display": "quedados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεφέλη",
+      "display": "nubes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπάντησις",
+      "display": "encuentro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρίτος",
+      "display": "de·tercero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράδεισος",
+      "display": "paraíso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥάβδος",
+      "display": "vara·",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σιδηροῦς",
+      "display": "de·hierro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φίλιππος",
+      "display": "Felipe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "mandó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στράτευμα",
+      "display": "ejército",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 8:39",
+      "negator": "οὐκ",
+      "clause_text": "ὅτε δὲ ἀνέβησαν ἐκ τοῦ ὕδατος, πνεῦμα κυρίου ἥρπασεν τὸν Φίλιππον, καὶ οὐκ εἶδεν αὐτὸν οὐκέτι ὁ"
+    },
+    {
+      "ref": "John 10:28",
+      "negator": "οὐχ",
+      "clause_text": "οὐ μὴ ἀπόλωνται εἰς τὸν αἰῶνα, καὶ οὐχ ἁρπάσει τις αὐτὰ ἐκ τῆς χειρός μου."
+    },
+    {
+      "ref": "Matthew 12:29",
+      "negator": "μὴ",
+      "clause_text": "τὴν οἰκίαν τοῦ ἰσχυροῦ καὶ τὰ σκεύη αὐτοῦ ⸀ἁρπάσαι, ἐὰν μὴ πρῶτον δήσῃ τὸν ἰσχυρόν; καὶ τότε"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 10:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 10:28",
+      "reason": "occurs near χείρ"
+    },
+    {
+      "ref": "John 10:29",
+      "reason": "occurs near χείρ"
+    },
+    {
+      "ref": "John 6:15",
+      "reason": "occurs near ἔρχομαι"
+    },
+    {
+      "ref": "Matthew 11:12",
+      "reason": "occurs near οὐρανός"
+    },
+    {
+      "ref": "Matthew 12:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 13:19",
+      "reason": "occurs near ἔρχομαι"
+    },
+    {
+      "ref": "2 Corinthians 12:2",
+      "reason": "occurs near οἶδα, οὐρανός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

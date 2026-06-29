@@ -1,0 +1,906 @@
+{
+  "lemma": "διώκω",
+  "language": "greek",
+  "total_occurrences": 45,
+  "forms": [
+    {
+      "form": "διώκων",
+      "count": 3
+    },
+    {
+      "form": "ἐδίωκον",
+      "count": 3
+    },
+    {
+      "form": "διώκεις;",
+      "count": 3
+    },
+    {
+      "form": "διωκόμενοι",
+      "count": 2
+    },
+    {
+      "form": "ἐδίωξα",
+      "count": 2
+    },
+    {
+      "form": "δίωκε",
+      "count": 2
+    },
+    {
+      "form": "διώκω",
+      "count": 2
+    },
+    {
+      "form": "ἐδίωξαν",
+      "count": 2
+    },
+    {
+      "form": "διώκεις·",
+      "count": 2
+    },
+    {
+      "form": "Διώκετε",
+      "count": 1
+    },
+    {
+      "form": "διωξάτω",
+      "count": 1
+    },
+    {
+      "form": "⸀διώκετε",
+      "count": 1
+    },
+    {
+      "form": "διωχθήσονται·",
+      "count": 1
+    },
+    {
+      "form": "ἐδίωξεν",
+      "count": 1
+    },
+    {
+      "form": "ἐδίωκε",
+      "count": 1
+    },
+    {
+      "form": "διώκομαι;",
+      "count": 1
+    },
+    {
+      "form": "διώκωνται·",
+      "count": 1
+    },
+    {
+      "form": "διώκετε",
+      "count": 1
+    },
+    {
+      "form": "διώκεις.",
+      "count": 1
+    },
+    {
+      "form": "ἐδίωξαν,",
+      "count": 1
+    },
+    {
+      "form": "διώξουσιν·",
+      "count": 1
+    },
+    {
+      "form": "⸀διώξουσιν,",
+      "count": 1
+    },
+    {
+      "form": "διώξητε.",
+      "count": 1
+    },
+    {
+      "form": "διώξουσιν,",
+      "count": 1
+    },
+    {
+      "form": "δεδιωγμένοι",
+      "count": 1
+    },
+    {
+      "form": "διώξωσιν",
+      "count": 1
+    },
+    {
+      "form": "διωκόντων",
+      "count": 1
+    },
+    {
+      "form": "διώκωσιν",
+      "count": 1
+    },
+    {
+      "form": "διώξετε",
+      "count": 1
+    },
+    {
+      "form": "διώκοντα",
+      "count": 1
+    },
+    {
+      "form": "διώκοντες.",
+      "count": 1
+    },
+    {
+      "form": "⸀διώκοντας,",
+      "count": 1
+    },
+    {
+      "form": "διώκωμεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 10,
+      "imperative": 6,
+      "indicative": 24,
+      "subjunctive": 5
+    },
+    "tenses": {
+      "present": 26,
+      "aorist": 9,
+      "future": 5,
+      "imperfect": 4,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 6,
+      "active": 39
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:12",
+      "form": "διωκόμενοι",
+      "morph": "V-P-P-P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "ἐργαζόμενοι ταῖς ἰδίαις χερσίν· λοιδορούμενοι εὐλογοῦμεν,",
+      "right_context": "ἀνεχόμεθα,"
+    },
+    {
+      "ref": "1 Corinthians 14:1",
+      "form": "Διώκετε",
+      "morph": "V-P-A-D-2P",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 1,
+      "left_context": "",
+      "right_context": "τὴν ἀγάπην, ζηλοῦτε δὲ τὰ πνευματικά,"
+    },
+    {
+      "ref": "1 Corinthians 15:9",
+      "form": "ἐδίωξα",
+      "morph": "V-A-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 9,
+      "left_context": "οὐκ εἰμὶ ἱκανὸς καλεῖσθαι ἀπόστολος, διότι",
+      "right_context": "τὴν ἐκκλησίαν τοῦ θεοῦ·"
+    },
+    {
+      "ref": "1 Peter 3:11",
+      "form": "διωξάτω",
+      "morph": "V-A-A-D-3S",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "καὶ ποιησάτω ἀγαθόν, ζητησάτω εἰρήνην καὶ",
+      "right_context": "αὐτήν·"
+    },
+    {
+      "ref": "1 Thessalonians 5:15",
+      "form": "⸀διώκετε",
+      "morph": "V-P-A-D-2P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 15,
+      "left_context": "τινι ἀποδῷ, ἀλλὰ πάντοτε τὸ ἀγαθὸν",
+      "right_context": "εἰς ἀλλήλους καὶ εἰς πάντας."
+    },
+    {
+      "ref": "1 Timothy 6:11",
+      "form": "δίωκε",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 11,
+      "left_context": "δέ, ὦ ἄνθρωπε ⸀θεοῦ, ταῦτα φεῦγε·",
+      "right_context": "δὲ δικαιοσύνην, εὐσέβειαν, πίστιν, ἀγάπην, ὑπομονήν,"
+    },
+    {
+      "ref": "2 Corinthians 4:9",
+      "form": "διωκόμενοι",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 9,
+      "left_context": "",
+      "right_context": "ἀλλ’ οὐκ ἐγκαταλειπόμενοι, καταβαλλόμενοι ἀλλ’ οὐκ"
+    },
+    {
+      "ref": "2 Timothy 2:22",
+      "form": "δίωκε",
+      "morph": "V-P-A-D-2S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "τὰς δὲ νεωτερικὰς ἐπιθυμίας φεῦγε,",
+      "right_context": "δὲ δικαιοσύνην, πίστιν, ἀγάπην, εἰρήνην μετὰ"
+    },
+    {
+      "ref": "2 Timothy 3:12",
+      "form": "διωχθήσονται·",
+      "morph": "V-F-P-I-3P",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "θέλοντες ⸂ζῆν εὐσεβῶς⸃ ἐν Χριστῷ Ἰησοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 12:13",
+      "form": "ἐδίωξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "δράκων ὅτι ἐβλήθη εἰς τὴν γῆν,",
+      "right_context": "τὴν γυναῖκα ἥτις ἔτεκεν τὸν ἄρσενα."
+    },
+    {
+      "ref": "Philippians 3:6",
+      "form": "διώκων",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "κατὰ ⸀ζῆλος",
+      "right_context": "τὴν ἐκκλησίαν, κατὰ δικαιοσύνην τὴν ἐν"
+    },
+    {
+      "ref": "Philippians 3:12",
+      "form": "διώκω",
+      "morph": "V-P-A-I-1S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "ὅτι ἤδη ἔλαβον ἢ ἤδη τετελείωμαι,",
+      "right_context": "δὲ εἰ καὶ καταλάβω, ἐφ’ ᾧ"
+    },
+    {
+      "ref": "Philippians 3:14",
+      "form": "διώκω",
+      "morph": "V-P-A-I-1S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "κατὰ σκοπὸν",
+      "right_context": "⸀εἰς τὸ βραβεῖον τῆς ἄνω κλήσεως"
+    },
+    {
+      "ref": "Galatians 1:13",
+      "form": "ἐδίωκον",
+      "morph": "V-I-A-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ἐν τῷ Ἰουδαϊσμῷ, ὅτι καθ’ ὑπερβολὴν",
+      "right_context": "τὴν ἐκκλησίαν τοῦ θεοῦ καὶ ἐπόρθουν"
+    },
+    {
+      "ref": "Galatians 1:23",
+      "form": "διώκων",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "μόνον δὲ ἀκούοντες ἦσαν ὅτι Ὁ",
+      "right_context": "ἡμᾶς ποτε νῦν εὐαγγελίζεται τὴν πίστιν"
+    },
+    {
+      "ref": "Galatians 4:29",
+      "form": "ἐδίωκε",
+      "morph": "V-I-A-I-3S",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 29,
+      "left_context": "ὥσπερ τότε ὁ κατὰ σάρκα γεννηθεὶς",
+      "right_context": "τὸν κατὰ πνεῦμα, οὕτως καὶ νῦν."
+    },
+    {
+      "ref": "Galatians 5:11",
+      "form": "διώκομαι;",
+      "morph": "V-P-P-I-1S",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "εἰ περιτομὴν ἔτι κηρύσσω, τί ἔτι",
+      "right_context": "ἄρα κατήργηται τὸ σκάνδαλον τοῦ σταυροῦ."
+    },
+    {
+      "ref": "Galatians 6:12",
+      "form": "διώκωνται·",
+      "morph": "V-P-P-S-3P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "⸀ἵνα τῷ σταυρῷ τοῦ ⸀Χριστοῦ ⸀μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 12:14",
+      "form": "διώκετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "Εἰρήνην",
+      "right_context": "μετὰ πάντων, καὶ τὸν ἁγιασμόν, οὗ"
+    },
+    {
+      "ref": "Acts 7:52",
+      "form": "ἐδίωξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 52,
+      "left_context": "τίνα τῶν προφητῶν οὐκ",
+      "right_context": "οἱ πατέρες ὑμῶν; καὶ ἀπέκτειναν τοὺς"
+    },
+    {
+      "ref": "Acts 9:4",
+      "form": "διώκεις;",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 4,
+      "left_context": "λέγουσαν αὐτῷ Σαοὺλ Σαούλ, τί με",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 9:5",
+      "form": "διώκεις·",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 5,
+      "left_context": "⸀δέ· Ἐγώ εἰμι Ἰησοῦς ὃν σὺ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 22:4",
+      "form": "ἐδίωξα",
+      "morph": "V-A-A-I-1S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 4,
+      "left_context": "ὃς ταύτην τὴν ὁδὸν",
+      "right_context": "ἄχρι θανάτου, δεσμεύων καὶ παραδιδοὺς εἰς"
+    },
+    {
+      "ref": "Acts 22:7",
+      "form": "διώκεις;",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 7,
+      "left_context": "λεγούσης μοι· Σαοὺλ Σαούλ, τί με",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 22:8",
+      "form": "διώκεις.",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 8,
+      "left_context": "εἰμι Ἰησοῦς ὁ Ναζωραῖος ὃν σὺ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 26:11",
+      "form": "ἐδίωκον",
+      "morph": "V-I-A-I-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 11,
+      "left_context": "ἠνάγκαζον βλασφημεῖν, περισσῶς τε ἐμμαινόμενος αὐτοῖς",
+      "right_context": "ἕως καὶ εἰς τὰς ἔξω πόλεις."
+    },
+    {
+      "ref": "Acts 26:14",
+      "form": "διώκεις;",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 14,
+      "left_context": "Ἑβραΐδι διαλέκτῳ· Σαοὺλ Σαούλ, τί με",
+      "right_context": "σκληρόν σοι πρὸς κέντρα λακτίζειν."
+    },
+    {
+      "ref": "Acts 26:15",
+      "form": "διώκεις·",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 15,
+      "left_context": "εἶπεν· Ἐγώ εἰμι Ἰησοῦς ὃν σὺ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 5:16",
+      "form": "ἐδίωκον",
+      "morph": "V-I-A-I-3P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "καὶ διὰ τοῦτο",
+      "right_context": "⸂οἱ Ἰουδαῖοι τὸν Ἰησοῦν⸃ ὅτι ταῦτα"
+    },
+    {
+      "ref": "John 15:20",
+      "form": "ἐδίωξαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 15,
+      "verse": 20,
+      "left_context": "μείζων τοῦ κυρίου αὐτοῦ· εἰ ἐμὲ",
+      "right_context": "καὶ ὑμᾶς διώξουσιν· εἰ τὸν λόγον"
+    },
+    {
+      "ref": "John 15:20",
+      "form": "διώξουσιν·",
+      "morph": "V-F-A-I-3P",
+      "book": "John",
+      "chapter": 15,
+      "verse": 20,
+      "left_context": "αὐτοῦ· εἰ ἐμὲ ἐδίωξαν, καὶ ὑμᾶς",
+      "right_context": "εἰ τὸν λόγον μου ἐτήρησαν, καὶ"
+    },
+    {
+      "ref": "Luke 11:49",
+      "form": "⸀διώξουσιν,",
+      "morph": "V-F-A-I-3P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 49,
+      "left_context": "ἀποστόλους, καὶ ἐξ αὐτῶν ἀποκτενοῦσιν καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 17:23",
+      "form": "διώξητε.",
+      "morph": "V-A-A-S-2P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 23,
+      "left_context": "⸂ἐκεῖ· Ἰδοὺ ὧδε⸃· μὴ ἀπέλθητε μηδὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 21:12",
+      "form": "διώξουσιν,",
+      "morph": "V-F-A-I-3P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 12,
+      "left_context": "ἐφ’ ὑμᾶς τὰς χεῖρας αὐτῶν καὶ",
+      "right_context": "παραδιδόντες εἰς ⸀τὰς συναγωγὰς καὶ φυλακάς,"
+    },
+    {
+      "ref": "Matthew 5:10",
+      "form": "δεδιωγμένοι",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "μακάριοι οἱ",
+      "right_context": "ἕνεκεν δικαιοσύνης, ὅτι αὐτῶν ἐστιν ἡ"
+    },
+    {
+      "ref": "Matthew 5:11",
+      "form": "διώξωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "μακάριοί ἐστε ὅταν ὀνειδίσωσιν ὑμᾶς καὶ",
+      "right_context": "καὶ εἴπωσιν πᾶν ⸀πονηρὸν καθ’ ὑμῶν"
+    },
+    {
+      "ref": "Matthew 5:12",
+      "form": "ἐδίωξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 12,
+      "left_context": "πολὺς ἐν τοῖς οὐρανοῖς· οὕτως γὰρ",
+      "right_context": "τοὺς προφήτας τοὺς πρὸ ὑμῶν."
+    },
+    {
+      "ref": "Matthew 5:44",
+      "form": "διωκόντων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 44,
+      "left_context": "ἐχθροὺς ⸀ὑμῶν καὶ προσεύχεσθε ὑπὲρ ⸀τῶν",
+      "right_context": "ὑμᾶς·"
+    },
+    {
+      "ref": "Matthew 10:23",
+      "form": "διώκωσιν",
+      "morph": "V-P-A-S-3P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 23,
+      "left_context": "ὅταν δὲ",
+      "right_context": "ὑμᾶς ἐν τῇ πόλει ταύτῃ, φεύγετε"
+    },
+    {
+      "ref": "Matthew 23:34",
+      "form": "διώξετε",
+      "morph": "V-F-A-I-2P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 34,
+      "left_context": "μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ",
+      "right_context": "ἀπὸ πόλεως εἰς πόλιν·"
+    },
+    {
+      "ref": "Romans 9:30",
+      "form": "διώκοντα",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 30,
+      "left_context": "οὖν ἐροῦμεν; ὅτι ἔθνη τὰ μὴ",
+      "right_context": "δικαιοσύνην κατέλαβεν δικαιοσύνην, δικαιοσύνην δὲ τὴν"
+    },
+    {
+      "ref": "Romans 9:31",
+      "form": "διώκων",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 31,
+      "left_context": "Ἰσραὴλ δὲ",
+      "right_context": "νόμον δικαιοσύνης εἰς ⸀νόμον οὐκ ἔφθασεν."
+    },
+    {
+      "ref": "Romans 12:13",
+      "form": "διώκοντες.",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "χρείαις τῶν ἁγίων κοινωνοῦντες, τὴν φιλοξενίαν",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 12:14",
+      "form": "⸀διώκοντας,",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "εὐλογεῖτε τοὺς",
+      "right_context": "εὐλογεῖτε καὶ μὴ καταρᾶσθε."
+    },
+    {
+      "ref": "Romans 14:19",
+      "form": "διώκωμεν",
+      "morph": "V-P-A-S-1P",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "ἄρα οὖν τὰ τῆς εἰρήνης",
+      "right_context": "καὶ τὰ τῆς οἰκοδομῆς τῆς εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 9,
+    "Matthew": 6,
+    "Galatians": 5,
+    "Romans": 5,
+    "1 Corinthians": 3,
+    "Philippians": 3,
+    "John": 3,
+    "Luke": 3,
+    "2 Timothy": 2,
+    "1 Peter": 1,
+    "1 Thessalonians": 1,
+    "1 Timothy": 1,
+    "2 Corinthians": 1,
+    "Revelation": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 8,
+      "window": 5
+    },
+    {
+      "lemma": "Σαούλ",
+      "display": "Saúl",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογέω",
+      "display": "bendecemos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φεύγω",
+      "display": "hue",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καταλαμβάνω",
+      "display": "comprenda",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρα",
+      "display": "por·tanto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profetas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "mataron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διώκω",
+      "display": "perseguirán",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagogas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 14:1",
+      "form": "Διώκετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Διώκετε τὴν ἀγάπην, ζηλοῦτε δὲ τὰ πνευματικά, μᾶλλον δὲ"
+    },
+    {
+      "ref": "1 Peter 3:11",
+      "form": "διωξάτω",
+      "morph": "V-A-A-D-3S",
+      "clause_text": "ἀπὸ κακοῦ καὶ ποιησάτω ἀγαθόν, ζητησάτω εἰρήνην καὶ διωξάτω αὐτήν·"
+    },
+    {
+      "ref": "1 Thessalonians 5:15",
+      "form": "⸀διώκετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "ἀντὶ κακοῦ τινι ἀποδῷ, ἀλλὰ πάντοτε τὸ ἀγαθὸν ⸀διώκετε εἰς ἀλλήλους καὶ εἰς πάντας."
+    },
+    {
+      "ref": "1 Timothy 6:11",
+      "form": "δίωκε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Σὺ δέ, ὦ ἄνθρωπε ⸀θεοῦ, ταῦτα φεῦγε· δίωκε δὲ δικαιοσύνην, εὐσέβειαν, πίστιν, ἀγάπην, ὑπομονήν, ⸀πραϋπαθίαν."
+    },
+    {
+      "ref": "2 Timothy 2:22",
+      "form": "δίωκε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "τὰς δὲ νεωτερικὰς ἐπιθυμίας φεῦγε, δίωκε δὲ δικαιοσύνην, πίστιν, ἀγάπην, εἰρήνην μετὰ τῶν ἐπικαλουμένων"
+    },
+    {
+      "ref": "Galatians 6:12",
+      "form": "διώκωνται·",
+      "morph": "V-P-P-S-3P",
+      "clause_text": "περιτέμνεσθαι, μόνον ⸀ἵνα τῷ σταυρῷ τοῦ ⸀Χριστοῦ ⸀μὴ διώκωνται·",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Hebrews 12:14",
+      "form": "διώκετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Εἰρήνην διώκετε μετὰ πάντων, καὶ τὸν ἁγιασμόν, οὗ χωρὶς οὐδεὶς"
+    },
+    {
+      "ref": "Luke 17:23",
+      "form": "διώξητε.",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "ὑμῖν· Ἰδοὺ ⸂ἐκεῖ· Ἰδοὺ ὧδε⸃· μὴ ἀπέλθητε μηδὲ διώξητε.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:9",
+      "negator": "οὐκ",
+      "clause_text": "διωκόμενοι ἀλλ’ οὐκ ἐγκαταλειπόμενοι, καταβαλλόμενοι ἀλλ’ οὐκ ἀπολλύμενοι,"
+    },
+    {
+      "ref": "Galatians 6:12",
+      "negator": "⸀μὴ",
+      "clause_text": "περιτέμνεσθαι, μόνον ⸀ἵνα τῷ σταυρῷ τοῦ ⸀Χριστοῦ ⸀μὴ διώκωνται·"
+    },
+    {
+      "ref": "Acts 7:52",
+      "negator": "οὐκ",
+      "clause_text": "τίνα τῶν προφητῶν οὐκ ἐδίωξαν οἱ πατέρες ὑμῶν; καὶ ἀπέκτειναν τοὺς προκαταγγείλαντας περὶ"
+    },
+    {
+      "ref": "Luke 17:23",
+      "negator": "μὴ",
+      "clause_text": "ὑμῖν· Ἰδοὺ ⸂ἐκεῖ· Ἰδοὺ ὧδε⸃· μὴ ἀπέλθητε μηδὲ διώξητε."
+    },
+    {
+      "ref": "Romans 9:30",
+      "negator": "μὴ",
+      "clause_text": "Τί οὖν ἐροῦμεν; ὅτι ἔθνη τὰ μὴ διώκοντα δικαιοσύνην κατέλαβεν δικαιοσύνην, δικαιοσύνην δὲ τὴν ἐκ πίστεως·"
+    },
+    {
+      "ref": "Romans 12:14",
+      "negator": "μὴ",
+      "clause_text": "εὐλογεῖτε τοὺς ⸀διώκοντας, εὐλογεῖτε καὶ μὴ καταρᾶσθε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 14:1",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 2:22",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Peter 3:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Thessalonians 5:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 6:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 12:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 22:4",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Matthew 10:23",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

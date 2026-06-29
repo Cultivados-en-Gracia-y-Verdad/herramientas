@@ -1,0 +1,74 @@
+{
+  "lemma": "πτύσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "πτύξας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 4:20",
+      "form": "πτύξας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 20,
+      "left_context": "καὶ",
+      "right_context": "τὸ βιβλίον ἀποδοὺς τῷ ὑπηρέτῃ ἐκάθισεν·"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βιβλίον",
+      "display": "libro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolvido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπηρέτης",
+      "display": "servidor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 4:20",
+      "reason": "occurs near βιβλίον, ἀποδίδωμι, ὑπηρέτης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

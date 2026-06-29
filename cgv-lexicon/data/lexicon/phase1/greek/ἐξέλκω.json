@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐξέλκω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξελκόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 1:14",
+      "form": "ἐξελκόμενος",
+      "morph": "V-P-P-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "δὲ πειράζεται ὑπὸ τῆς ἰδίας ἐπιθυμίας",
+      "right_context": "καὶ δελεαζόμενος·"
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πειράζω",
+      "display": "es tentado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "de·propia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "de·deseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δελεάζω",
+      "display": "seducido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:14",
+      "reason": "occurs near δελεάζω, πειράζω, ἐπιθυμία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

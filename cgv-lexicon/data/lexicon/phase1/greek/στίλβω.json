@@ -1,0 +1,86 @@
+{
+  "lemma": "στίλβω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "στίλβοντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 9:3",
+      "form": "στίλβοντα",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 3,
+      "left_context": "καὶ τὰ ἱμάτια αὐτοῦ ⸀ἐγένετο",
+      "right_context": "λευκὰ ⸀λίαν οἷα γναφεὺς ἐπὶ τῆς"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λευκός",
+      "display": "blancos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίαν",
+      "display": "muchísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἷος",
+      "display": "cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γναφεύς",
+      "display": "lavador",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 9:3",
+      "reason": "occurs near γναφεύς, λίαν, λευκός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

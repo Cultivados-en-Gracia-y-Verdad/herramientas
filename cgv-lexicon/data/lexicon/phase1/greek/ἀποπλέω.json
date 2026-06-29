@@ -1,0 +1,199 @@
+{
+  "lemma": "ἀποπλέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀπέπλευσαν",
+      "count": 2
+    },
+    {
+      "form": "ἀποπλεύσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἀποπλεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:4",
+      "form": "ἀπέπλευσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 4,
+      "left_context": "πνεύματος⸃ κατῆλθον ⸀εἰς Σελεύκειαν, ἐκεῖθέν ⸀τε",
+      "right_context": "⸁εἰς Κύπρον,"
+    },
+    {
+      "ref": "Acts 14:26",
+      "form": "ἀπέπλευσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 26,
+      "left_context": "κἀκεῖθεν",
+      "right_context": "εἰς Ἀντιόχειαν, ὅθεν ἦσαν παραδεδομένοι τῇ"
+    },
+    {
+      "ref": "Acts 20:15",
+      "form": "ἀποπλεύσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 15,
+      "left_context": "κἀκεῖθεν",
+      "right_context": "τῇ ἐπιούσῃ κατηντήσαμεν ⸀ἄντικρυς Χίου, τῇ"
+    },
+    {
+      "ref": "Acts 27:1",
+      "form": "ἀποπλεῖν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 1,
+      "left_context": "Ὡς δὲ ἐκρίθη τοῦ",
+      "right_context": "ἡμᾶς εἰς τὴν Ἰταλίαν, παρεδίδουν τόν"
+    }
+  ],
+  "books": {
+    "Acts": 4
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κἀκεῖθεν",
+      "display": "y·de·allí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κατέρχομαι",
+      "display": "descendieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σελεύκεια",
+      "display": "Seleucia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖθεν",
+      "display": "de·allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κύπρος",
+      "display": "Chipre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀντιόχεια",
+      "display": "Antioquía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅθεν",
+      "display": "de·donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔπειμι",
+      "display": "veniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταντάω",
+      "display": "llegamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄντικρυς",
+      "display": "enfrente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χίος",
+      "display": "de·Quíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "fue juzgado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰταλία",
+      "display": "Italia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:4",
+      "reason": "occurs near Σελεύκεια, κατέρχομαι, ἐκεῖθεν"
+    },
+    {
+      "ref": "Acts 14:26",
+      "reason": "occurs near κἀκεῖθεν, παραδίδωμι"
+    },
+    {
+      "ref": "Acts 20:15",
+      "reason": "occurs near κἀκεῖθεν"
+    },
+    {
+      "ref": "Acts 27:1",
+      "reason": "occurs near παραδίδωμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

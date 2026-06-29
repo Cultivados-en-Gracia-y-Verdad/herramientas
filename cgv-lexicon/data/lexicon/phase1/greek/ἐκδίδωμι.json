@@ -1,0 +1,189 @@
+{
+  "lemma": "ἐκδίδωμι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐξέδετο",
+      "count": 3
+    },
+    {
+      "form": "ἐκδώσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 1
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 20:9",
+      "form": "ἐξέδετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 9,
+      "left_context": "παραβολὴν ταύτην· ⸀Ἄνθρωπος ἐφύτευσεν ἀμπελῶνα, καὶ",
+      "right_context": "αὐτὸν γεωργοῖς, καὶ ἀπεδήμησεν χρόνους ἱκανούς."
+    },
+    {
+      "ref": "Mark 12:1",
+      "form": "ἐξέδετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "ὤρυξεν ὑπολήνιον καὶ ᾠκοδόμησεν πύργον, καὶ",
+      "right_context": "αὐτὸν γεωργοῖς, καὶ ἀπεδήμησεν."
+    },
+    {
+      "ref": "Matthew 21:33",
+      "form": "ἐξέδετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 33,
+      "left_context": "αὐτῷ ληνὸν καὶ ᾠκοδόμησεν πύργον, καὶ",
+      "right_context": "αὐτὸν γεωργοῖς, καὶ ἀπεδήμησεν."
+    },
+    {
+      "ref": "Matthew 21:41",
+      "form": "ἐκδώσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 41,
+      "left_context": "κακῶς ἀπολέσει αὐτούς, καὶ τὸν ἀμπελῶνα",
+      "right_context": "ἄλλοις γεωργοῖς, οἵτινες ἀποδώσουσιν αὐτῷ τοὺς"
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γεωργός",
+      "display": "labradores",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδημέω",
+      "display": "viajó",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμπελών",
+      "display": "viña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edificó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πύργος",
+      "display": "torre,",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυτεύω",
+      "display": "plantó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπολήνιον",
+      "display": "lagar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ληνός",
+      "display": "lagar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruirá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolverán",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 21:33",
+      "reason": "occurs near γεωργός, οἰκοδομέω, πύργος"
+    },
+    {
+      "ref": "Matthew 21:41",
+      "reason": "occurs near γεωργός, ἀμπελών"
+    },
+    {
+      "ref": "Luke 20:9",
+      "reason": "occurs near γεωργός, ἀμπελών, ἀποδημέω"
+    },
+    {
+      "ref": "Mark 12:1",
+      "reason": "occurs near γεωργός, οἰκοδομέω, πύργος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

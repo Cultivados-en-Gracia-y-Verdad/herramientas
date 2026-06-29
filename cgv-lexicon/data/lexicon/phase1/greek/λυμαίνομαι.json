@@ -1,0 +1,74 @@
+{
+  "lemma": "λυμαίνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐλυμαίνετο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 8:3",
+      "form": "ἐλυμαίνετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 3,
+      "left_context": "Σαῦλος δὲ",
+      "right_context": "τὴν ἐκκλησίαν κατὰ τοὺς οἴκους εἰσπορευόμενος,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Σαῦλος",
+      "display": "Saulo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 8:3",
+      "reason": "occurs near Σαῦλος, οἶκος, ἐκκλησία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

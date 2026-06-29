@@ -1,0 +1,94 @@
+{
+  "lemma": "ἐνταφιάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐνταφιάζειν.",
+      "count": 1
+    },
+    {
+      "form": "ἐνταφιάσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "John 19:40",
+      "form": "ἐνταφιάζειν.",
+      "morph": "V-P-A-N",
+      "book": "John",
+      "chapter": 19,
+      "verse": 40,
+      "left_context": "ἀρωμάτων, καθὼς ἔθος ἐστὶν τοῖς Ἰουδαίοις",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 26:12",
+      "form": "ἐνταφιάσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 12,
+      "left_context": "ἐπὶ τοῦ σώματός μου πρὸς τὸ",
+      "right_context": "με ἐποίησεν."
+    }
+  ],
+  "books": {
+    "John": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔθος",
+      "display": "costumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "de·cuerpo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 19:40",
+      "reason": "occurs near ἔθος, Ἰουδαῖος"
+    },
+    {
+      "ref": "Matthew 26:12",
+      "reason": "occurs near σῶμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

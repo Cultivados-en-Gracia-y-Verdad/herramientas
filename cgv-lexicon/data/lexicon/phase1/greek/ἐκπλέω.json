@@ -1,0 +1,160 @@
+{
+  "lemma": "ἐκπλέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐκπλεῦσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐξέπλει",
+      "count": 1
+    },
+    {
+      "form": "ἐξεπλεύσαμεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:39",
+      "form": "ἐκπλεῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 39,
+      "left_context": "τόν τε Βαρναβᾶν παραλαβόντα τὸν Μᾶρκον",
+      "right_context": "εἰς Κύπρον,"
+    },
+    {
+      "ref": "Acts 18:18",
+      "form": "ἐξέπλει",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 18,
+      "left_context": "προσμείνας ἡμέρας ἱκανὰς τοῖς ἀδελφοῖς ἀποταξάμενος",
+      "right_context": "εἰς τὴν Συρίαν, καὶ σὺν αὐτῷ"
+    },
+    {
+      "ref": "Acts 20:6",
+      "form": "ἐξεπλεύσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 6,
+      "left_context": "ἡμεῖς δὲ",
+      "right_context": "μετὰ τὰς ἡμέρας τῶν ἀζύμων ἀπὸ"
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαρναβᾶς",
+      "display": "Bernabé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μᾶρκος",
+      "display": "Marcos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κύπρος",
+      "display": "Chipre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποτάσσομαι",
+      "display": "despedirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Συρία",
+      "display": "Siria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄζυμος",
+      "display": "sin·levadura",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:39",
+      "reason": "occurs near Βαρναβᾶς, Μᾶρκος, παραλαμβάνω"
+    },
+    {
+      "ref": "Acts 18:18",
+      "reason": "occurs near ἡμέρα"
+    },
+    {
+      "ref": "Acts 20:6",
+      "reason": "occurs near ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

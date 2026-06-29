@@ -1,0 +1,260 @@
+{
+  "lemma": "γυμνάζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "γύμναζε",
+      "count": 1
+    },
+    {
+      "form": "γεγυμνασμένην",
+      "count": 1
+    },
+    {
+      "form": "γεγυμνασμένα",
+      "count": 1
+    },
+    {
+      "form": "γεγυμνασμένοις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 3
+    },
+    "tenses": {
+      "present": 1,
+      "perfect": 3
+    },
+    "voices": {
+      "active": 1,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 4:7",
+      "form": "γύμναζε",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "δὲ βεβήλους καὶ γραώδεις μύθους παραιτοῦ.",
+      "right_context": "δὲ σεαυτὸν πρὸς εὐσέβειαν·"
+    },
+    {
+      "ref": "2 Peter 2:14",
+      "form": "γεγυμνασμένην",
+      "morph": "V-X-P-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "⸀ἀκαταπαύστους ἁμαρτίας, δελεάζοντες ψυχὰς ἀστηρίκτους, καρδίαν",
+      "right_context": "πλεονεξίας ἔχοντες, κατάρας τέκνα,"
+    },
+    {
+      "ref": "Hebrews 5:14",
+      "form": "γεγυμνασμένα",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "τῶν διὰ τὴν ἕξιν τὰ αἰσθητήρια",
+      "right_context": "ἐχόντων πρὸς διάκρισιν καλοῦ τε καὶ"
+    },
+    {
+      "ref": "Hebrews 12:11",
+      "form": "γεγυμνασμένοις",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "δὲ καρπὸν εἰρηνικὸν τοῖς δι’ αὐτῆς",
+      "right_context": "ἀποδίδωσιν δικαιοσύνης."
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "1 Timothy": 1,
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βέβηλος",
+      "display": "profanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραώδης",
+      "display": "de·viejas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μῦθος",
+      "display": "mitos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραιτέομαι",
+      "display": "rechaza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεαυτοῦ",
+      "display": "de·ti·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐσέβεια",
+      "display": "piedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δελεάζω",
+      "display": "seduciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀστήρικτος",
+      "display": "inconstantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονεξία",
+      "display": "de·avaricia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάρα",
+      "display": "de·maldición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕξις",
+      "display": "hábito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσθητήριον",
+      "display": "discernimientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάκρισις",
+      "display": "discernimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "de·bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρηνικός",
+      "display": "pacífico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 4:7",
+      "form": "γύμναζε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "τοὺς δὲ βεβήλους καὶ γραώδεις μύθους παραιτοῦ. γύμναζε δὲ σεαυτὸν πρὸς εὐσέβειαν·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 12:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 5:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Peter 2:14",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

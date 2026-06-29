@@ -1,0 +1,80 @@
+{
+  "lemma": "παρεμβάλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀παρεμβαλοῦσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 19:43",
+      "form": "⸀παρεμβαλοῦσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 43,
+      "left_context": "ὅτι ἥξουσιν ἡμέραι ἐπὶ σὲ καὶ",
+      "right_context": "οἱ ἐχθροί σου χάρακά σοι καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἥκω",
+      "display": "vendrán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐχθρός",
+      "display": "enemigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάραξ",
+      "display": "empalizada",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 19:43",
+      "reason": "occurs near χάραξ, ἐχθρός, ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

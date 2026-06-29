@@ -1,0 +1,98 @@
+{
+  "lemma": "τύφομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "τυφόμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 12:20",
+      "form": "τυφόμενον",
+      "morph": "V-P-P-P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "κάλαμον συντετριμμένον οὐ κατεάξει καὶ λίνον",
+      "right_context": "οὐ σβέσει, ἕως ἂν ἐκβάλῃ εἰς"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συντρίβω",
+      "display": "quebrantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάγνυμι",
+      "display": "quebrará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίνον",
+      "display": "lino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σβέννυμι",
+      "display": "apagará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 12:20",
+      "negator": "οὐ",
+      "clause_text": "κάλαμον συντετριμμένον οὐ κατεάξει καὶ λίνον τυφόμενον οὐ σβέσει, ἕως ἂν ἐκβάλῃ εἰς νῖκος τὴν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 12:20",
+      "reason": "occurs near κατάγνυμι, λίνον, σβέννυμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

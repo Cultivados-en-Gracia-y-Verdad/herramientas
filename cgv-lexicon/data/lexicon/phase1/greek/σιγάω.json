@@ -1,0 +1,383 @@
+{
+  "lemma": "σιγάω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "σιγάτω",
+      "count": 1
+    },
+    {
+      "form": "σιγάτω.",
+      "count": 1
+    },
+    {
+      "form": "σιγάτωσαν,",
+      "count": 1
+    },
+    {
+      "form": "σιγᾶν",
+      "count": 1
+    },
+    {
+      "form": "Ἐσίγησεν",
+      "count": 1
+    },
+    {
+      "form": "σιγῆσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐσίγησαν",
+      "count": 1
+    },
+    {
+      "form": "⸀σιγήσῃ·",
+      "count": 1
+    },
+    {
+      "form": "ἐσίγησαν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 3,
+      "infinitive": 2,
+      "indicative": 3,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 4,
+      "aorist": 5
+    },
+    "voices": {
+      "active": 9
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 14:28",
+      "form": "σιγάτω",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 28,
+      "left_context": "ἐὰν δὲ μὴ ᾖ ⸀διερμηνευτής,",
+      "right_context": "ἐν ἐκκλησίᾳ, ἑαυτῷ δὲ λαλείτω καὶ"
+    },
+    {
+      "ref": "1 Corinthians 14:30",
+      "form": "σιγάτω.",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 30,
+      "left_context": "δὲ ἄλλῳ ἀποκαλυφθῇ καθημένῳ, ὁ πρῶτος",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 14:34",
+      "form": "σιγάτωσαν,",
+      "morph": "V-P-A-D-3P",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 34,
+      "left_context": "Αἱ ⸀γυναῖκες ἐν ταῖς ἐκκλησίαις",
+      "right_context": "οὐ γὰρ ⸀ἐπιτρέπεται αὐταῖς λαλεῖν· ἀλλὰ"
+    },
+    {
+      "ref": "Acts 12:17",
+      "form": "σιγᾶν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 17,
+      "left_context": "κατασείσας δὲ αὐτοῖς τῇ χειρὶ",
+      "right_context": "διηγήσατο αὐτοῖς πῶς ὁ κύριος αὐτὸν"
+    },
+    {
+      "ref": "Acts 15:12",
+      "form": "Ἐσίγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 12,
+      "left_context": "",
+      "right_context": "δὲ πᾶν τὸ πλῆθος, καὶ ἤκουον"
+    },
+    {
+      "ref": "Acts 15:13",
+      "form": "σιγῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 13,
+      "left_context": "μετὰ δὲ τὸ",
+      "right_context": "αὐτοὺς ἀπεκρίθη Ἰάκωβος λέγων· Ἄνδρες ἀδελφοί,"
+    },
+    {
+      "ref": "Luke 9:36",
+      "form": "ἐσίγησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 36,
+      "left_context": "φωνὴν ⸀εὑρέθη Ἰησοῦς μόνος. καὶ αὐτοὶ",
+      "right_context": "καὶ οὐδενὶ ἀπήγγειλαν ἐν ἐκείναις ταῖς"
+    },
+    {
+      "ref": "Luke 18:39",
+      "form": "⸀σιγήσῃ·",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 39,
+      "left_context": "καὶ οἱ προάγοντες ἐπετίμων αὐτῷ ἵνα",
+      "right_context": "αὐτὸς δὲ πολλῷ μᾶλλον ἔκραζεν· Υἱὲ"
+    },
+    {
+      "ref": "Luke 20:26",
+      "form": "ἐσίγησαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 26,
+      "left_context": "καὶ θαυμάσαντες ἐπὶ τῇ ἀποκρίσει αὐτοῦ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Corinthians": 3,
+    "Acts": 3,
+    "Luke": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "habla",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διερμηνευτής",
+      "display": "intérprete",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκαλύπτω",
+      "display": "revele",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτρέπω",
+      "display": "es permitido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατασείω",
+      "display": "incitado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διηγέομαι",
+      "display": "relató",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλῆθος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "fue respondido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰάκωβος",
+      "display": "Jacobo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "fue hallado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαγγέλλω",
+      "display": "anunciaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προάγω",
+      "display": "ir·delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτιμάω",
+      "display": "reprendían",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 14:28",
+      "form": "σιγάτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "ἐὰν δὲ μὴ ᾖ ⸀διερμηνευτής, σιγάτω ἐν ἐκκλησίᾳ, ἑαυτῷ δὲ λαλείτω καὶ τῷ θεῷ.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "1 Corinthians 14:30",
+      "form": "σιγάτω.",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "ἐὰν δὲ ἄλλῳ ἀποκαλυφθῇ καθημένῳ, ὁ πρῶτος σιγάτω."
+    },
+    {
+      "ref": "1 Corinthians 14:34",
+      "form": "σιγάτωσαν,",
+      "morph": "V-P-A-D-3P",
+      "clause_text": "Αἱ ⸀γυναῖκες ἐν ταῖς ἐκκλησίαις σιγάτωσαν, οὐ γὰρ ⸀ἐπιτρέπεται αὐταῖς λαλεῖν· ἀλλὰ ⸀ὑποτασσέσθωσαν, καθὼς"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 14:28",
+      "negator": "μὴ",
+      "clause_text": "ἐὰν δὲ μὴ ᾖ ⸀διερμηνευτής, σιγάτω ἐν ἐκκλησίᾳ, ἑαυτῷ δὲ λαλείτω καὶ τῷ θεῷ."
+    },
+    {
+      "ref": "1 Corinthians 14:34",
+      "negator": "οὐ",
+      "clause_text": "Αἱ ⸀γυναῖκες ἐν ταῖς ἐκκλησίαις σιγάτωσαν, οὐ γὰρ ⸀ἐπιτρέπεται αὐταῖς λαλεῖν· ἀλλὰ ⸀ὑποτασσέσθωσαν, καθὼς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 14:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 14:30",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 14:34",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 12:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 15:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 15:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 18:39",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 20:26",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

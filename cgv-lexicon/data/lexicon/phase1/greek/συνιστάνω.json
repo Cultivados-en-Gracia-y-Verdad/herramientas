@@ -1,0 +1,80 @@
+{
+  "lemma": "συνιστάνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀συνιστάνω.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 2:18",
+      "form": "⸀συνιστάνω.",
+      "morph": "V-P-A-I-1S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "κατέλυσα ταῦτα πάλιν οἰκοδομῶ, παραβάτην ἐμαυτὸν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edifico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβάτης",
+      "display": "transgresor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμαυτοῦ",
+      "display": "me",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 2:18",
+      "reason": "occurs near οἰκοδομέω, πάλιν, παραβάτης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

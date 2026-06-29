@@ -1,0 +1,98 @@
+{
+  "lemma": "αὐχέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "αὐχεῖ⸃.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 3:5",
+      "form": "αὐχεῖ⸃.",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "γλῶσσα μικρὸν μέλος ἐστὶν καὶ ⸂μεγάλα",
+      "right_context": "Ἰδοὺ ⸀ἡλίκον πῦρ ἡλίκην ὕλην ἀνάπτει·"
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡλίκος",
+      "display": "cuán·grande",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μικρός",
+      "display": "pequeño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλος",
+      "display": "miembro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grandes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕλη",
+      "display": "bosque",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:5",
+      "reason": "occurs near μέγας, μέλος, μικρός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

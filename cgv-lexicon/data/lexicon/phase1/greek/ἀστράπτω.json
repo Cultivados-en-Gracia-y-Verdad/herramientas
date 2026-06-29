@@ -1,0 +1,110 @@
+{
+  "lemma": "ἀστράπτω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀστράπτουσα",
+      "count": 1
+    },
+    {
+      "form": "ἀστραπτούσῃ⸃.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 17:24",
+      "form": "ἀστράπτουσα",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 24,
+      "left_context": "ὥσπερ γὰρ ἡ ⸀ἀστραπὴ",
+      "right_context": "ἐκ τῆς ⸂ὑπὸ τὸν⸃ οὐρανὸν εἰς"
+    },
+    {
+      "ref": "Luke 24:4",
+      "form": "ἀστραπτούσῃ⸃.",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 4,
+      "left_context": "ἄνδρες δύο ἐπέστησαν αὐταῖς ἐν ⸂ἐσθῆτι",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὥσπερ",
+      "display": "como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀστραπή",
+      "display": "relámpago",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθής",
+      "display": "vestido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 17:24",
+      "reason": "occurs near οὐρανός, ἀστραπή, ὥσπερ"
+    },
+    {
+      "ref": "Luke 24:4",
+      "reason": "occurs near δύο, ἐφίστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

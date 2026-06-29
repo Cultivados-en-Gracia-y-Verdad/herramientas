@@ -1,0 +1,174 @@
+{
+  "lemma": "διαβαίνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "διέβησαν",
+      "count": 1
+    },
+    {
+      "form": "Διαβὰς",
+      "count": 1
+    },
+    {
+      "form": "διαβῆναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:29",
+      "form": "διέβησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 29,
+      "left_context": "Πίστει",
+      "right_context": "τὴν Ἐρυθρὰν Θάλασσαν ὡς διὰ ξηρᾶς"
+    },
+    {
+      "ref": "Acts 16:9",
+      "form": "Διαβὰς",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 9,
+      "left_context": "ἑστὼς ⸀καὶ παρακαλῶν αὐτὸν καὶ λέγων·",
+      "right_context": "εἰς Μακεδονίαν βοήθησον ἡμῖν."
+    },
+    {
+      "ref": "Luke 16:26",
+      "form": "διαβῆναι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 26,
+      "left_context": "χάσμα μέγα ἐστήρικται, ὅπως οἱ θέλοντες",
+      "right_context": "ἔνθεν πρὸς ὑμᾶς μὴ δύνωνται, ⸀μηδὲ"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρυθρός",
+      "display": "roja",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μακεδονία",
+      "display": "Macedonia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοηθέω",
+      "display": "ayuda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στηρίζω",
+      "display": "ha fortalecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔνθεν",
+      "display": "de·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podieran",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 16:26",
+      "negator": "μὴ",
+      "clause_text": "καὶ ὑμῶν χάσμα μέγα ἐστήρικται, ὅπως οἱ θέλοντες διαβῆναι ἔνθεν πρὸς ὑμᾶς μὴ δύνωνται, ⸀μηδὲ ἐκεῖθεν πρὸς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:9",
+      "reason": "occurs near Μακεδονία, παρακαλέω"
+    },
+    {
+      "ref": "Hebrews 11:29",
+      "reason": "occurs near θάλασσα, πίστις, ἐρυθρός"
+    },
+    {
+      "ref": "Luke 16:26",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

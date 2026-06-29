@@ -1,0 +1,100 @@
+{
+  "lemma": "ἐνεδρεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐνεδρεύουσιν",
+      "count": 1
+    },
+    {
+      "form": "ἐνεδρεύοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:21",
+      "form": "ἐνεδρεύουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 21,
+      "left_context": "σὺ οὖν μὴ πεισθῇς αὐτοῖς,",
+      "right_context": "γὰρ αὐτὸν ἐξ αὐτῶν ἄνδρες πλείους"
+    },
+    {
+      "ref": "Luke 11:54",
+      "form": "ἐνεδρεύοντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 54,
+      "left_context": "",
+      "right_context": "⸀αὐτὸν θηρεῦσαί τι ἐκ τοῦ στόματος"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πείθω",
+      "display": "persuadas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θηρεύω",
+      "display": "cazar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 23:21",
+      "negator": "μὴ",
+      "clause_text": "σὺ οὖν μὴ πεισθῇς αὐτοῖς, ἐνεδρεύουσιν γὰρ αὐτὸν ἐξ αὐτῶν ἄνδρες πλείους τεσσεράκοντα, οἵτινες"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 23:21",
+      "reason": "occurs near πείθω, ἀνήρ"
+    },
+    {
+      "ref": "Luke 11:54",
+      "reason": "occurs near θηρεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

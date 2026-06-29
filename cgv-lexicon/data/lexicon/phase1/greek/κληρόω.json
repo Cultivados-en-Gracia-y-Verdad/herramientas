@@ -1,0 +1,68 @@
+{
+  "lemma": "κληρόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκληρώθημεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 1:11",
+      "form": "ἐκληρώθημεν",
+      "morph": "V-A-P-I-1P",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ἐν ᾧ καὶ",
+      "right_context": "προορισθέντες κατὰ πρόθεσιν τοῦ τὰ πάντα"
+    }
+  ],
+  "books": {
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προορίζω",
+      "display": "predestinados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόθεσις",
+      "display": "proposición",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 1:11",
+      "reason": "occurs near προορίζω, πρόθεσις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

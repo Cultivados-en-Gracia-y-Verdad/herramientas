@@ -1,0 +1,92 @@
+{
+  "lemma": "καταμένω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καταμένοντες,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 1:13",
+      "form": "καταμένοντες,",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "⸂εἰς τὸ ὑπερῷον ἀνέβησαν⸃ οὗ ἦσαν",
+      "right_context": "ὅ τε Πέτρος καὶ ⸂Ἰωάννης καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπερῷον",
+      "display": "aposento·alto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὗ",
+      "display": "del·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 1:13",
+      "reason": "occurs near Πέτρος, οὗ, τέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

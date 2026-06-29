@@ -1,0 +1,223 @@
+{
+  "lemma": "μάχομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "μάχεσθαι,",
+      "count": 1
+    },
+    {
+      "form": "μαχομένοις",
+      "count": 1
+    },
+    {
+      "form": "Ἐμάχοντο",
+      "count": 1
+    },
+    {
+      "form": "μάχεσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 3,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:24",
+      "form": "μάχεσθαι,",
+      "morph": "V-P-M-N",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 24,
+      "left_context": "δοῦλον δὲ κυρίου οὐ δεῖ",
+      "right_context": "ἀλλὰ ἤπιον εἶναι πρὸς πάντας, διδακτικόν,"
+    },
+    {
+      "ref": "Acts 7:26",
+      "form": "μαχομένοις",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 26,
+      "left_context": "τῇ τε ἐπιούσῃ ἡμέρᾳ ὤφθη αὐτοῖς",
+      "right_context": "καὶ ⸀συνήλλασσεν αὐτοὺς εἰς εἰρήνην εἰπών·"
+    },
+    {
+      "ref": "John 6:52",
+      "form": "Ἐμάχοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 52,
+      "left_context": "",
+      "right_context": "οὖν πρὸς ἀλλήλους οἱ Ἰουδαῖοι λέγοντες·"
+    },
+    {
+      "ref": "James 4:2",
+      "form": "μάχεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "καὶ ζηλοῦτε, καὶ οὐ δύνασθε ἐπιτυχεῖν·",
+      "right_context": "καὶ πολεμεῖτε. οὐκ ἔχετε διὰ τὸ"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1,
+    "Acts": 1,
+    "John": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤπιος",
+      "display": "tierno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔπειμι",
+      "display": "veniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "fue visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναλλάσσω",
+      "display": "reconciliaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζηλόω",
+      "display": "celáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτυγχάνω",
+      "display": "alcanzar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολεμέω",
+      "display": "peleáis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Timothy 2:24",
+      "negator": "οὐ",
+      "clause_text": "δοῦλον δὲ κυρίου οὐ δεῖ μάχεσθαι, ἀλλὰ ἤπιον εἶναι πρὸς πάντας, διδακτικόν, ἀνεξίκακον,"
+    },
+    {
+      "ref": "James 4:2",
+      "negator": "οὐ",
+      "clause_text": "ἔχετε· φονεύετε καὶ ζηλοῦτε, καὶ οὐ δύνασθε ἐπιτυχεῖν· μάχεσθε καὶ πολεμεῖτε. οὐκ ἔχετε διὰ τὸ μὴ αἰτεῖσθαι"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:24",
+      "reason": "occurs near δέω, δοῦλος, κύριος"
+    },
+    {
+      "ref": "Acts 7:26",
+      "reason": "occurs near τέ"
+    },
+    {
+      "ref": "James 4:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 6:52",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

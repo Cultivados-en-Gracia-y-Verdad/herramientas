@@ -1,0 +1,88 @@
+{
+  "lemma": "διαφεύγω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διαφύγῃ·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:42",
+      "form": "διαφύγῃ·",
+      "morph": "V-A-A-S-3S",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 42,
+      "left_context": "τοὺς δεσμώτας ἀποκτείνωσιν, μή τις ἐκκολυμβήσας",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δεσμώτης",
+      "display": "prisioneros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "maten",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκολυμβάω",
+      "display": "nadado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 27:42",
+      "form": "διαφύγῃ·",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἐγένετο ἵνα τοὺς δεσμώτας ἀποκτείνωσιν, μή τις ἐκκολυμβήσας διαφύγῃ·",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 27:42",
+      "negator": "μή",
+      "clause_text": "ἐγένετο ἵνα τοὺς δεσμώτας ἀποκτείνωσιν, μή τις ἐκκολυμβήσας διαφύγῃ·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:42",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,521 @@
+{
+  "lemma": "βασιλεύω",
+  "language": "greek",
+  "total_occurrences": 21,
+  "forms": [
+    {
+      "form": "ἐβασίλευσεν",
+      "count": 4
+    },
+    {
+      "form": "βασιλεύσουσιν",
+      "count": 3
+    },
+    {
+      "form": "βασιλεύσει",
+      "count": 2
+    },
+    {
+      "form": "βασιλεῦσαι",
+      "count": 2
+    },
+    {
+      "form": "ἐβασιλεύσατε·",
+      "count": 1
+    },
+    {
+      "form": "ἐβασιλεύσατε,",
+      "count": 1
+    },
+    {
+      "form": "βασιλεύειν",
+      "count": 1
+    },
+    {
+      "form": "βασιλευόντων",
+      "count": 1
+    },
+    {
+      "form": "⸀βασιλεύουσιν",
+      "count": 1
+    },
+    {
+      "form": "ἐβασίλευσας.",
+      "count": 1
+    },
+    {
+      "form": "ἐβασίλευσαν",
+      "count": 1
+    },
+    {
+      "form": "⸀βασιλεύει",
+      "count": 1
+    },
+    {
+      "form": "βασιλεύσῃ",
+      "count": 1
+    },
+    {
+      "form": "βασιλευέτω",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 15,
+      "infinitive": 3,
+      "participle": 1,
+      "subjunctive": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 11,
+      "present": 4,
+      "future": 6
+    },
+    "voices": {
+      "active": 21
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:8",
+      "form": "ἐβασιλεύσατε·",
+      "morph": "V-A-A-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "κεκορεσμένοι ἐστέ, ἤδη ἐπλουτήσατε, χωρὶς ἡμῶν",
+      "right_context": "καὶ ὄφελόν γε ἐβασιλεύσατε, ἵνα καὶ"
+    },
+    {
+      "ref": "1 Corinthians 4:8",
+      "form": "ἐβασιλεύσατε,",
+      "morph": "V-A-A-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "χωρὶς ἡμῶν ἐβασιλεύσατε· καὶ ὄφελόν γε",
+      "right_context": "ἵνα καὶ ἡμεῖς ὑμῖν συμβασιλεύσωμεν."
+    },
+    {
+      "ref": "1 Corinthians 15:25",
+      "form": "βασιλεύειν",
+      "morph": "V-P-A-N",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 25,
+      "left_context": "δεῖ γὰρ αὐτὸν",
+      "right_context": "ἄχρι ⸀οὗ θῇ πάντας τοὺς ἐχθροὺς"
+    },
+    {
+      "ref": "1 Timothy 6:15",
+      "form": "βασιλευόντων",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 15,
+      "left_context": "καὶ μόνος δυνάστης, ὁ βασιλεὺς τῶν",
+      "right_context": "καὶ κύριος τῶν κυριευόντων,"
+    },
+    {
+      "ref": "Revelation 5:10",
+      "form": "⸀βασιλεύουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Revelation",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "θεῷ ἡμῶν ⸀βασιλείαν καὶ ἱερεῖς, καὶ",
+      "right_context": "ἐπὶ τῆς γῆς."
+    },
+    {
+      "ref": "Revelation 11:15",
+      "form": "βασιλεύσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "ἡμῶν καὶ τοῦ χριστοῦ αὐτοῦ, καὶ",
+      "right_context": "εἰς τοὺς αἰῶνας τῶν αἰώνων."
+    },
+    {
+      "ref": "Revelation 11:17",
+      "form": "ἐβασίλευσας.",
+      "morph": "V-A-A-I-2S",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "τὴν δύναμίν σου τὴν μεγάλην καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 19:6",
+      "form": "ἐβασίλευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 6,
+      "left_context": "φωνὴν βροντῶν ἰσχυρῶν, ⸀λεγόντων· Ἁλληλουϊά, ὅτι",
+      "right_context": "κύριος, ὁ ⸀θεός, ὁ παντοκράτωρ."
+    },
+    {
+      "ref": "Revelation 20:4",
+      "form": "ἐβασίλευσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Revelation",
+      "chapter": 20,
+      "verse": 4,
+      "left_context": "τὴν χεῖρα αὐτῶν· καὶ ἔζησαν καὶ",
+      "right_context": "μετὰ τοῦ χριστοῦ ⸀χίλια ἔτη."
+    },
+    {
+      "ref": "Revelation 20:6",
+      "form": "βασιλεύσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Revelation",
+      "chapter": 20,
+      "verse": 6,
+      "left_context": "τοῦ θεοῦ καὶ τοῦ χριστοῦ, καὶ",
+      "right_context": "μετ’ αὐτοῦ ⸀χίλια ἔτη."
+    },
+    {
+      "ref": "Revelation 22:5",
+      "form": "βασιλεύσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Revelation",
+      "chapter": 22,
+      "verse": 5,
+      "left_context": "ὁ θεὸς φωτίσει ⸀ἐπ’ αὐτούς, καὶ",
+      "right_context": "εἰς τοὺς αἰῶνας τῶν αἰώνων."
+    },
+    {
+      "ref": "Luke 1:33",
+      "form": "βασιλεύσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 33,
+      "left_context": "καὶ",
+      "right_context": "ἐπὶ τὸν οἶκον Ἰακὼβ εἰς τοὺς"
+    },
+    {
+      "ref": "Luke 19:14",
+      "form": "βασιλεῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 14,
+      "left_context": "ὀπίσω αὐτοῦ λέγοντες· Οὐ θέλομεν τοῦτον",
+      "right_context": "ἐφ’ ἡμᾶς."
+    },
+    {
+      "ref": "Luke 19:27",
+      "form": "βασιλεῦσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 27,
+      "left_context": "μου ⸀τούτους τοὺς μὴ θελήσαντάς με",
+      "right_context": "ἐπ’ αὐτοὺς ἀγάγετε ὧδε καὶ κατασφάξατε"
+    },
+    {
+      "ref": "Matthew 2:22",
+      "form": "⸀βασιλεύει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "ἀκούσας δὲ ὅτι Ἀρχέλαος",
+      "right_context": "τῆς Ἰουδαίας ἀντὶ ⸂τοῦ πατρὸς αὐτοῦ"
+    },
+    {
+      "ref": "Romans 5:14",
+      "form": "ἐβασίλευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "ἀλλὰ",
+      "right_context": "ὁ θάνατος ἀπὸ Ἀδὰμ μέχρι Μωϋσέως"
+    },
+    {
+      "ref": "Romans 5:17",
+      "form": "ἐβασίλευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 17,
+      "left_context": "τῷ τοῦ ἑνὸς παραπτώματι ὁ θάνατος",
+      "right_context": "διὰ τοῦ ἑνός, πολλῷ μᾶλλον οἱ"
+    },
+    {
+      "ref": "Romans 5:17",
+      "form": "βασιλεύσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 17,
+      "left_context": "δωρεᾶς τῆς δικαιοσύνης λαμβάνοντες ἐν ζωῇ",
+      "right_context": "διὰ τοῦ ἑνὸς Ἰησοῦ Χριστοῦ."
+    },
+    {
+      "ref": "Romans 5:21",
+      "form": "ἐβασίλευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "ἵνα ὥσπερ",
+      "right_context": "ἡ ἁμαρτία ἐν τῷ θανάτῳ, οὕτως"
+    },
+    {
+      "ref": "Romans 5:21",
+      "form": "βασιλεύσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "τῷ θανάτῳ, οὕτως καὶ ἡ χάρις",
+      "right_context": "διὰ δικαιοσύνης εἰς ζωὴν αἰώνιον διὰ"
+    },
+    {
+      "ref": "Romans 6:12",
+      "form": "βασιλευέτω",
+      "morph": "V-P-A-D-3S",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "Μὴ οὖν",
+      "right_context": "ἡ ἁμαρτία ἐν τῷ θνητῷ ὑμῶν"
+    }
+  ],
+  "books": {
+    "Revelation": 7,
+    "Romans": 6,
+    "1 Corinthians": 3,
+    "Luke": 3,
+    "1 Timothy": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "siglos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·uno",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄφελον",
+      "display": "ojalá",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γέ",
+      "display": "GE",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύω",
+      "display": "reinasteis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χίλιοι",
+      "display": "miles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτος",
+      "display": "añoses",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queremos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "vida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλουτέω",
+      "display": "enriquecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμβασιλεύω",
+      "display": "reinar·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "pona",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυνάστης",
+      "display": "potentado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Romans 6:12",
+      "form": "βασιλευέτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "Μὴ οὖν βασιλευέτω ἡ ἁμαρτία ἐν τῷ θνητῷ ὑμῶν σώματι εἰς",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 19:14",
+      "negator": "Οὐ",
+      "clause_text": "ἀπέστειλαν πρεσβείαν ὀπίσω αὐτοῦ λέγοντες· Οὐ θέλομεν τοῦτον βασιλεῦσαι ἐφ’ ἡμᾶς."
+    },
+    {
+      "ref": "Luke 19:27",
+      "negator": "μὴ",
+      "clause_text": "τοὺς ἐχθρούς μου ⸀τούτους τοὺς μὴ θελήσαντάς με βασιλεῦσαι ἐπ’ αὐτοὺς ἀγάγετε ὧδε καὶ κατασφάξατε ⸀αὐτοὺς ἔμπροσθέν"
+    },
+    {
+      "ref": "Romans 6:12",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ οὖν βασιλευέτω ἡ ἁμαρτία ἐν τῷ θνητῷ ὑμῶν σώματι εἰς"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 6:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 11:15",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 11:17",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 19:6",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 20:4",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 20:6",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 22:5",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 5:10",
+      "reason": "frequent in Revelation"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

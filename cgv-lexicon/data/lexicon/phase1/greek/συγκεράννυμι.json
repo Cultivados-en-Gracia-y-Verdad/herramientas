@@ -1,0 +1,138 @@
+{
+  "lemma": "συγκεράννυμι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνεκέρασεν",
+      "count": 1
+    },
+    {
+      "form": "⸀συγκεκερασμένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:24",
+      "form": "συνεκέρασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 24,
+      "left_context": "οὐ χρείαν ⸀ἔχει. ἀλλὰ ὁ θεὸς",
+      "right_context": "τὸ σῶμα, τῷ ⸀ὑστεροῦντι περισσοτέραν δοὺς"
+    },
+    {
+      "ref": "Hebrews 4:2",
+      "form": "⸀συγκεκερασμένους",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "ὁ λόγος τῆς ἀκοῆς ἐκείνους, μὴ",
+      "right_context": "τῇ πίστει τοῖς ἀκούσασιν."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χρεία",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑστερέω",
+      "display": "faltando;",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περισσότερος",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκοή",
+      "display": "de·oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 4:2",
+      "negator": "μὴ",
+      "clause_text": "οὐκ ὠφέλησεν ὁ λόγος τῆς ἀκοῆς ἐκείνους, μὴ ⸀συγκεκερασμένους τῇ πίστει τοῖς ἀκούσασιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 12:24",
+      "reason": "occurs near θεός, περισσότερος, σῶμα"
+    },
+    {
+      "ref": "Hebrews 4:2",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

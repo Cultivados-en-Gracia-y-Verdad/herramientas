@@ -1,0 +1,77 @@
+{
+  "lemma": "λικμάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "λικμήσει",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 20:18",
+      "form": "λικμήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 18,
+      "left_context": "συνθλασθήσεται· ἐφ’ ὃν δ’ ἂν πέσῃ,",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Matthew 21:44",
+      "form": "λικμήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 44,
+      "left_context": "συνθλασθήσεται· ἐφ’ ὃν δ’ ἂν πέσῃ",
+      "right_context": "αὐτόν.⸃"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίπτω",
+      "display": "caa",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 20:18",
+      "reason": "occurs near πίπτω"
+    },
+    {
+      "ref": "Matthew 21:44",
+      "reason": "occurs near πίπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

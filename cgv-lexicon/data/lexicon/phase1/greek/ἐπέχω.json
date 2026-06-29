@@ -1,0 +1,244 @@
+{
+  "lemma": "ἐπέχω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἔπεχε",
+      "count": 1
+    },
+    {
+      "form": "ἐπέχοντες,",
+      "count": 1
+    },
+    {
+      "form": "ἐπεῖχεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπέσχεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπέχων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 3,
+      "imperfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 4:16",
+      "form": "ἔπεχε",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "",
+      "right_context": "σεαυτῷ καὶ τῇ διδασκαλίᾳ· ἐπίμενε αὐτοῖς·"
+    },
+    {
+      "ref": "Philippians 2:16",
+      "form": "ἐπέχοντες,",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "λόγον ζωῆς",
+      "right_context": "εἰς καύχημα ἐμοὶ εἰς ἡμέραν Χριστοῦ,"
+    },
+    {
+      "ref": "Acts 3:5",
+      "form": "ἐπεῖχεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "ὁ δὲ",
+      "right_context": "αὐτοῖς προσδοκῶν τι παρ’ αὐτῶν λαβεῖν."
+    },
+    {
+      "ref": "Acts 19:22",
+      "form": "ἐπέσχεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 22,
+      "left_context": "διακονούντων αὐτῷ, Τιμόθεον καὶ Ἔραστον, αὐτὸς",
+      "right_context": "χρόνον εἰς τὴν Ἀσίαν."
+    },
+    {
+      "ref": "Luke 14:7",
+      "form": "ἐπέχων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 7,
+      "left_context": "Ἔλεγεν δὲ πρὸς τοὺς κεκλημένους παραβολήν,",
+      "right_context": "πῶς τὰς πρωτοκλισίας ἐξελέγοντο, λέγων πρὸς"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "1 Timothy": 1,
+    "Philippians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σεαυτοῦ",
+      "display": "de·ti·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδασκαλία",
+      "display": "doctrina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιμένω",
+      "display": "persevera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καύχημα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσδοκάω",
+      "display": "esperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τιμόθεος",
+      "display": "Timoteo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἔραστος",
+      "display": "Erasto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀσία",
+      "display": "Asia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβολή",
+      "display": "parábola",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρωτοκλισία",
+      "display": "primer·lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλέγομαι",
+      "display": "escogían",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 4:16",
+      "form": "ἔπεχε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ἔπεχε σεαυτῷ καὶ τῇ διδασκαλίᾳ· ἐπίμενε αὐτοῖς· τοῦτο γὰρ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 19:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 3:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 14:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Philippians 2:16",
+      "reason": "occurs near ζωή, λόγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

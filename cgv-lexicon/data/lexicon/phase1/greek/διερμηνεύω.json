@@ -1,0 +1,280 @@
+{
+  "lemma": "διερμηνεύω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "διερμηνεύουσιν;",
+      "count": 1
+    },
+    {
+      "form": "⸀διερμηνεύῃ,",
+      "count": 1
+    },
+    {
+      "form": "διερμηνεύῃ.",
+      "count": 1
+    },
+    {
+      "form": "διερμηνευέτω·",
+      "count": 1
+    },
+    {
+      "form": "διερμηνευομένη",
+      "count": 1
+    },
+    {
+      "form": "⸀διερμήνευσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "subjunctive": 2,
+      "imperative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 5,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:30",
+      "form": "διερμηνεύουσιν;",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 30,
+      "left_context": "μὴ πάντες γλώσσαις λαλοῦσιν; μὴ πάντες",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 14:5",
+      "form": "⸀διερμηνεύῃ,",
+      "morph": "V-P-A-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 5,
+      "left_context": "ὁ λαλῶν γλώσσαις, ἐκτὸς εἰ μὴ",
+      "right_context": "ἵνα ἡ ἐκκλησία οἰκοδομὴν λάβῃ."
+    },
+    {
+      "ref": "1 Corinthians 14:13",
+      "form": "διερμηνεύῃ.",
+      "morph": "V-P-A-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 13,
+      "left_context": "⸀Διὸ ὁ λαλῶν γλώσσῃ προσευχέσθω ἵνα",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 14:27",
+      "form": "διερμηνευέτω·",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 27,
+      "left_context": "τρεῖς, καὶ ἀνὰ μέρος, καὶ εἷς",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 9:36",
+      "form": "διερμηνευομένη",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 36,
+      "left_context": "τις ἦν μαθήτρια ὀνόματι Ταβιθά, ἣ",
+      "right_context": "λέγεται Δορκάς· αὕτη ἦν πλήρης ⸂ἔργων"
+    },
+    {
+      "ref": "Luke 24:27",
+      "form": "⸀διερμήνευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 27,
+      "left_context": "Μωϋσέως καὶ ἀπὸ πάντων τῶν προφητῶν",
+      "right_context": "αὐτοῖς ἐν πάσαις ταῖς γραφαῖς τὰ"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 4,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γλῶσσα",
+      "display": "lenguas",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablan",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτός",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομή",
+      "display": "edificio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tome",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "ora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνά",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "parte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθήτρια",
+      "display": "discípula",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ταβιθά",
+      "display": "Tabita",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δορκάς",
+      "display": "Dorcas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλήρης",
+      "display": "llena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profetas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escrituras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 14:5",
+      "form": "⸀διερμηνεύῃ,",
+      "morph": "V-P-A-S-3S",
+      "clause_text": "προφητεύων ἢ ὁ λαλῶν γλώσσαις, ἐκτὸς εἰ μὴ ⸀διερμηνεύῃ, ἵνα ἡ ἐκκλησία οἰκοδομὴν λάβῃ.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "1 Corinthians 14:27",
+      "form": "διερμηνευέτω·",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "τὸ πλεῖστον τρεῖς, καὶ ἀνὰ μέρος, καὶ εἷς διερμηνευέτω·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 12:30",
+      "negator": "μὴ",
+      "clause_text": "ἔχουσιν ἰαμάτων; μὴ πάντες γλώσσαις λαλοῦσιν; μὴ πάντες διερμηνεύουσιν;"
+    },
+    {
+      "ref": "1 Corinthians 14:5",
+      "negator": "μὴ",
+      "clause_text": "προφητεύων ἢ ὁ λαλῶν γλώσσαις, ἐκτὸς εἰ μὴ ⸀διερμηνεύῃ, ἵνα ἡ ἐκκλησία οἰκοδομὴν λάβῃ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 14:27",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 12:30",
+      "reason": "occurs near γλῶσσα, λαλέω"
+    },
+    {
+      "ref": "1 Corinthians 14:13",
+      "reason": "occurs near γλῶσσα, λαλέω"
+    },
+    {
+      "ref": "1 Corinthians 14:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 9:36",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:27",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

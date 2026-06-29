@@ -1,0 +1,68 @@
+{
+  "lemma": "κατανεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατένευσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 5:7",
+      "form": "κατένευσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "καὶ",
+      "right_context": "τοῖς ⸀μετόχοις ἐν τῷ ἑτέρῳ πλοίῳ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέτοχος",
+      "display": "partícipes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 5:7",
+      "reason": "occurs near μέτοχος, ἕτερος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

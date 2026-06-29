@@ -1,0 +1,213 @@
+{
+  "lemma": "εὐοδόομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "εὐοδῶται,",
+      "count": 1
+    },
+    {
+      "form": "εὐοδοῦσθαι",
+      "count": 1
+    },
+    {
+      "form": "εὐοδοῦταί",
+      "count": 1
+    },
+    {
+      "form": "εὐοδωθήσομαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 3,
+      "future": 1
+    },
+    "voices": {
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:2",
+      "form": "εὐοδῶται,",
+      "morph": "V-P-P-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 2,
+      "left_context": "ἑαυτῷ τιθέτω θησαυρίζων ὅ τι ⸀ἐὰν",
+      "right_context": "ἵνα μὴ ὅταν ἔλθω τότε λογεῖαι"
+    },
+    {
+      "ref": "3 John 1:2",
+      "form": "εὐοδοῦσθαι",
+      "morph": "V-P-P-N",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "Ἀγαπητέ, περὶ πάντων εὔχομαί σε",
+      "right_context": "καὶ ὑγιαίνειν, καθὼς εὐοδοῦταί σου ἡ"
+    },
+    {
+      "ref": "3 John 1:2",
+      "form": "εὐοδοῦταί",
+      "morph": "V-P-P-I-3S",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "εὔχομαί σε εὐοδοῦσθαι καὶ ὑγιαίνειν, καθὼς",
+      "right_context": "σου ἡ ψυχή."
+    },
+    {
+      "ref": "Romans 1:10",
+      "form": "εὐοδωθήσομαι",
+      "morph": "V-F-P-I-1S",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "μου, δεόμενος εἴ πως ἤδη ποτὲ",
+      "right_context": "ἐν τῷ θελήματι τοῦ θεοῦ ἐλθεῖν"
+    }
+  ],
+  "books": {
+    "3 John": 2,
+    "1 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑγιαίνω",
+      "display": "estar·sano",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐοδόομαι",
+      "display": "es prosperado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "pona",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θησαυρίζω",
+      "display": "atesorando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὔχομαι",
+      "display": "oro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "atando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποτέ",
+      "display": "alguna·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 16:2",
+      "negator": "μὴ",
+      "clause_text": "ὑμῶν παρ’ ἑαυτῷ τιθέτω θησαυρίζων ὅ τι ⸀ἐὰν εὐοδῶται, ἵνα μὴ ὅταν ἔλθω τότε λογεῖαι γίνωνται."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "3 John 1:2",
+      "reason": "occurs near εὐοδόομαι, ὑγιαίνω"
+    },
+    {
+      "ref": "1 Corinthians 16:2",
+      "reason": "occurs near εὐοδόομαι, θησαυρίζω, τίθημι"
+    },
+    {
+      "ref": "Romans 1:10",
+      "reason": "occurs near εὐοδόομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

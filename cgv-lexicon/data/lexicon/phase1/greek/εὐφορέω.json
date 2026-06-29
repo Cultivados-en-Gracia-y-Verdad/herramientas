@@ -1,0 +1,74 @@
+{
+  "lemma": "εὐφορέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εὐφόρησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:16",
+      "form": "εὐφόρησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 16,
+      "left_context": "πρὸς αὐτοὺς λέγων· Ἀνθρώπου τινὸς πλουσίου",
+      "right_context": "ἡ χώρα."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "de·rico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "región",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:16",
+      "reason": "occurs near πλούσιος, χώρα, ἄνθρωπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

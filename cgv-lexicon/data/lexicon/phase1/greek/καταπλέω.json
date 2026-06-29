@@ -1,0 +1,68 @@
+{
+  "lemma": "καταπλέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατέπλευσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:26",
+      "form": "κατέπλευσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 26,
+      "left_context": "Καὶ",
+      "right_context": "εἰς τὴν χώραν τῶν ⸀Γερασηνῶν, ἥτις"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χώρα",
+      "display": "región",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γερασηνός",
+      "display": "de·Geraseno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:26",
+      "reason": "occurs near Γερασηνός, χώρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

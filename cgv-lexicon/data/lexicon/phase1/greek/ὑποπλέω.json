@@ -1,0 +1,112 @@
+{
+  "lemma": "ὑποπλέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ὑπεπλεύσαμεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:4",
+      "form": "ὑπεπλεύσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 4,
+      "left_context": "κἀκεῖθεν ἀναχθέντες",
+      "right_context": "τὴν Κύπρον διὰ τὸ τοὺς ἀνέμους"
+    },
+    {
+      "ref": "Acts 27:7",
+      "form": "ὑπεπλεύσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 7,
+      "left_context": "Κνίδον, μὴ προσεῶντος ἡμᾶς τοῦ ἀνέμου,",
+      "right_context": "τὴν Κρήτην κατὰ Σαλμώνην,"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κἀκεῖθεν",
+      "display": "y·de·allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγω",
+      "display": "subidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κύπρος",
+      "display": "Chipre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεάω",
+      "display": "permitiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κρήτη",
+      "display": "Creta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαλμώνη",
+      "display": "Salmone",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:4",
+      "reason": "occurs near Κύπρος, κἀκεῖθεν, ἀνάγω"
+    },
+    {
+      "ref": "Acts 27:7",
+      "reason": "occurs near προσεάω, ἄνεμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

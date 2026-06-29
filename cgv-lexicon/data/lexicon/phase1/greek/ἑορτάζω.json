@@ -1,0 +1,80 @@
+{
+  "lemma": "ἑορτάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἑορτάζωμεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 5:8",
+      "form": "ἑορτάζωμεν,",
+      "morph": "V-P-A-S-1P",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "ὥστε",
+      "right_context": "μὴ ἐν ζύμῃ παλαιᾷ μηδὲ ἐν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζύμη",
+      "display": "levadura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παλαιός",
+      "display": "vieja",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 5:8",
+      "negator": "μὴ",
+      "clause_text": "ὥστε ἑορτάζωμεν, μὴ ἐν ζύμῃ παλαιᾷ μηδὲ ἐν ζύμῃ κακίας"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 5:8",
+      "reason": "occurs near ζύμη, παλαιός, ὥστε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

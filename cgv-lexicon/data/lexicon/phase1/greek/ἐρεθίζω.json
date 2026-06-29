@@ -1,0 +1,121 @@
+{
+  "lemma": "ἐρεθίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἠρέθισε",
+      "count": 1
+    },
+    {
+      "form": "ἐρεθίζετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 9:2",
+      "form": "ἠρέθισε",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 2,
+      "left_context": "ἀπὸ πέρυσι, καὶ ⸀τὸ ὑμῶν ζῆλος",
+      "right_context": "τοὺς πλείονας."
+    },
+    {
+      "ref": "Colossians 3:21",
+      "form": "ἐρεθίζετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 21,
+      "left_context": "οἱ πατέρες, μὴ",
+      "right_context": "τὰ τέκνα ὑμῶν, ἵνα μὴ ἀθυμῶσιν."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πέρυσι(ν)",
+      "display": "el·año·pasado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζῆλος",
+      "display": "celo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 3:21",
+      "form": "ἐρεθίζετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "οἱ πατέρες, μὴ ἐρεθίζετε τὰ τέκνα ὑμῶν, ἵνα μὴ ἀθυμῶσιν.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 3:21",
+      "negator": "μὴ",
+      "clause_text": "οἱ πατέρες, μὴ ἐρεθίζετε τὰ τέκνα ὑμῶν, ἵνα μὴ ἀθυμῶσιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 3:21",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 9:2",
+      "reason": "occurs near ζῆλος, πέρυσι(ν), πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

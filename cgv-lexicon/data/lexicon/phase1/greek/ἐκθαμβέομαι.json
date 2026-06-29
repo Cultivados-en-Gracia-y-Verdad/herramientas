@@ -1,0 +1,211 @@
+{
+  "lemma": "ἐκθαμβέομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐξεθαμβήθησαν⸃,",
+      "count": 1
+    },
+    {
+      "form": "ἐκθαμβεῖσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐξεθαμβήθησαν.",
+      "count": 1
+    },
+    {
+      "form": "ἐκθαμβεῖσθε·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "infinitive": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 2
+    },
+    "voices": {
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 9:15",
+      "form": "ἐξεθαμβήθησαν⸃,",
+      "morph": "V-A-P-I-3P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 15,
+      "left_context": "⸀εὐθὺς πᾶς ὁ ὄχλος ⸂ἰδόντες αὐτὸν",
+      "right_context": "καὶ προστρέχοντες ἠσπάζοντο αὐτόν."
+    },
+    {
+      "ref": "Mark 14:33",
+      "form": "ἐκθαμβεῖσθαι",
+      "morph": "V-P-P-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 33,
+      "left_context": "καὶ⸃ Ἰωάννην μετ’ ⸀αὐτοῦ, καὶ ἤρξατο",
+      "right_context": "καὶ ἀδημονεῖν,"
+    },
+    {
+      "ref": "Mark 16:5",
+      "form": "ἐξεθαμβήθησαν.",
+      "morph": "V-A-P-I-3P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 5,
+      "left_context": "τοῖς δεξιοῖς περιβεβλημένον στολὴν λευκήν, καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 16:6",
+      "form": "ἐκθαμβεῖσθε·",
+      "morph": "V-P-P-D-2P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 6,
+      "left_context": "ὁ δὲ λέγει αὐταῖς· Μὴ",
+      "right_context": "Ἰησοῦν ζητεῖτε τὸν Ναζαρηνὸν τὸν ἐσταυρωμένον·"
+    }
+  ],
+  "books": {
+    "Mark": 4
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προστρέχω",
+      "display": "corriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσπάζομαι",
+      "display": "saludaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδημονέω",
+      "display": "angustiarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "derechos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιβάλλω",
+      "display": "vestido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στολή",
+      "display": "vestidura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λευκός",
+      "display": "blanca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ναζαρηνός",
+      "display": "Nazareno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 16:6",
+      "form": "ἐκθαμβεῖσθε·",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "ὁ δὲ λέγει αὐταῖς· Μὴ ἐκθαμβεῖσθε· Ἰησοῦν ζητεῖτε τὸν Ναζαρηνὸν τὸν ἐσταυρωμένον· ἠγέρθη, οὐκ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 16:6",
+      "negator": "Μὴ",
+      "clause_text": "ὁ δὲ λέγει αὐταῖς· Μὴ ἐκθαμβεῖσθε· Ἰησοῦν ζητεῖτε τὸν Ναζαρηνὸν τὸν ἐσταυρωμένον· ἠγέρθη, οὐκ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 16:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 14:33",
+      "reason": "occurs near Ἰωάννης"
+    },
+    {
+      "ref": "Mark 16:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 9:15",
+      "reason": "occurs near προστρέχω, ἀσπάζομαι, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

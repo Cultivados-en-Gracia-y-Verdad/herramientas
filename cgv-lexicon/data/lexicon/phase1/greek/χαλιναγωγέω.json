@@ -1,0 +1,148 @@
+{
+  "lemma": "χαλιναγωγέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "χαλιναγωγῶν",
+      "count": 1
+    },
+    {
+      "form": "χαλιναγωγῆσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "James 1:26",
+      "form": "χαλιναγωγῶν",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 26,
+      "left_context": "Εἴ τις δοκεῖ θρησκὸς ⸀εἶναι μὴ",
+      "right_context": "γλῶσσαν ⸀αὐτοῦ ἀλλὰ ἀπατῶν καρδίαν ⸀αὐτοῦ,"
+    },
+    {
+      "ref": "James 3:2",
+      "form": "χαλιναγωγῆσαι",
+      "morph": "V-A-A-N",
+      "book": "James",
+      "chapter": 3,
+      "verse": 2,
+      "left_context": "οὐ πταίει, οὗτος τέλειος ἀνήρ, δυνατὸς",
+      "right_context": "καὶ ὅλον τὸ σῶμα."
+    }
+  ],
+  "books": {
+    "James": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δοκέω",
+      "display": "parece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θρησκός",
+      "display": "religioso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lengua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπατάω",
+      "display": "engañando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πταίω",
+      "display": "tropeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέλειος",
+      "display": "perfecto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderoso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "James 1:26",
+      "negator": "μὴ",
+      "clause_text": "Εἴ τις δοκεῖ θρησκὸς ⸀εἶναι μὴ χαλιναγωγῶν γλῶσσαν ⸀αὐτοῦ ἀλλὰ ἀπατῶν καρδίαν ⸀αὐτοῦ, τούτου μάταιος"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:26",
+      "reason": "occurs near γλῶσσα, δοκέω, θρησκός"
+    },
+    {
+      "ref": "James 3:2",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,343 @@
+{
+  "lemma": "ἐξαιρέω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "ἔξελε",
+      "count": 2
+    },
+    {
+      "form": "ἐξέληται",
+      "count": 1
+    },
+    {
+      "form": "ἐξείλατο",
+      "count": 1
+    },
+    {
+      "form": "ἐξελέσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐξείλατό",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐξειλάμην,",
+      "count": 1
+    },
+    {
+      "form": "ἐξαιρούμενός",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 3,
+      "infinitive": 1,
+      "participle": 1,
+      "imperative": 2
+    },
+    "tenses": {
+      "aorist": 7,
+      "present": 1
+    },
+    "voices": {
+      "middle": 6,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 1:4",
+      "form": "ἐξέληται",
+      "morph": "V-A-M-S-3S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "ἑαυτὸν ⸀ὑπὲρ τῶν ἁμαρτιῶν ἡμῶν ὅπως",
+      "right_context": "ἡμᾶς ἐκ τοῦ ⸂αἰῶνος τοῦ ἐνεστῶτος⸃"
+    },
+    {
+      "ref": "Acts 7:10",
+      "form": "ἐξείλατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "καὶ",
+      "right_context": "αὐτὸν ἐκ πασῶν τῶν θλίψεων αὐτοῦ,"
+    },
+    {
+      "ref": "Acts 7:34",
+      "form": "ἐξελέσθαι",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 34,
+      "left_context": "τοῦ στεναγμοῦ ⸀αὐτοῦ ἤκουσα, καὶ κατέβην",
+      "right_context": "αὐτούς· καὶ νῦν δεῦρο ⸀ἀποστείλω σε"
+    },
+    {
+      "ref": "Acts 12:11",
+      "form": "ἐξείλατό",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "⸀ὁ κύριος τὸν ἄγγελον αὐτοῦ καὶ",
+      "right_context": "με ἐκ χειρὸς Ἡρῴδου καὶ πάσης"
+    },
+    {
+      "ref": "Acts 23:27",
+      "form": "⸀ἐξειλάμην,",
+      "morph": "V-A-M-I-1S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 27,
+      "left_context": "ὑπ’ αὐτῶν ἐπιστὰς σὺν τῷ στρατεύματι",
+      "right_context": "μαθὼν ὅτι Ῥωμαῖός ἐστιν,"
+    },
+    {
+      "ref": "Acts 26:17",
+      "form": "ἐξαιρούμενός",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 17,
+      "left_context": "",
+      "right_context": "σε ἐκ τοῦ λαοῦ καὶ ⸀ἐκ"
+    },
+    {
+      "ref": "Matthew 5:29",
+      "form": "ἔξελε",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 29,
+      "left_context": "ὀφθαλμός σου ὁ δεξιὸς σκανδαλίζει σε,",
+      "right_context": "αὐτὸν καὶ βάλε ἀπὸ σοῦ, συμφέρει"
+    },
+    {
+      "ref": "Matthew 18:9",
+      "form": "ἔξελε",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 9,
+      "left_context": "εἰ ὁ ὀφθαλμός σου σκανδαλίζει σε,",
+      "right_context": "αὐτὸν καὶ βάλε ἀπὸ σοῦ· καλόν"
+    }
+  ],
+  "books": {
+    "Acts": 5,
+    "Matthew": 2,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σκανδαλίζω",
+      "display": "hacer·tropeza",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arroja",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "de·siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "de·tribulaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στεναγμός",
+      "display": "de·gemido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "bajé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεῦρο",
+      "display": "ven",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "envie",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῴδης",
+      "display": "de·Herodes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στράτευμα",
+      "display": "ejército",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μανθάνω",
+      "display": "aprendido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ῥωμαῖος",
+      "display": "Romano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "de·pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "derecho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 5:29",
+      "form": "ἔξελε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "δὲ ὁ ὀφθαλμός σου ὁ δεξιὸς σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ, συμφέρει γάρ σοι"
+    },
+    {
+      "ref": "Matthew 18:9",
+      "form": "ἔξελε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "καὶ εἰ ὁ ὀφθαλμός σου σκανδαλίζει σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ σοῦ· καλόν σοί ἐστιν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 18:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 5:29",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 12:11",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:27",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 26:17",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 7:10",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 7:34",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Galatians 1:4",
+      "reason": "occurs near ἁμαρτία, ὅπως, ὑπέρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

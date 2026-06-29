@@ -1,0 +1,86 @@
+{
+  "lemma": "ὑπέχω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑπέχουσαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:7",
+      "form": "ὑπέχουσαι.",
+      "morph": "V-P-A-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "ἑτέρας, πρόκεινται δεῖγμα πυρὸς αἰωνίου δίκην",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πρόκειμαι",
+      "display": "estar·delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεῖγμα",
+      "display": "ejemplo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "de·eterno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Jude 1:7",
+      "reason": "occurs near αἰώνιος, δίκη, δεῖγμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

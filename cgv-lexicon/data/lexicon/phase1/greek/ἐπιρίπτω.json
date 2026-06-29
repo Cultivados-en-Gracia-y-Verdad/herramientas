@@ -1,0 +1,95 @@
+{
+  "lemma": "ἐπιρίπτω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπιρίψαντες",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 5:7",
+      "form": "ἐπιρίψαντες",
+      "morph": "V-A-A-P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "πᾶσαν τὴν μέριμναν ὑμῶν",
+      "right_context": "ἐπ’ αὐτόν, ὅτι αὐτῷ μέλει περὶ"
+    },
+    {
+      "ref": "Luke 19:35",
+      "form": "ἐπιρίψαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 35,
+      "left_context": "ἤγαγον αὐτὸν πρὸς τὸν Ἰησοῦν, καὶ",
+      "right_context": "⸀αὐτῶν τὰ ἱμάτια ἐπὶ τὸν πῶλον"
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέριμνα",
+      "display": "preocupación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλει",
+      "display": "importa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 5:7",
+      "reason": "occurs near μέλει, μέριμνα"
+    },
+    {
+      "ref": "Luke 19:35",
+      "reason": "occurs near ἱμάτιον, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

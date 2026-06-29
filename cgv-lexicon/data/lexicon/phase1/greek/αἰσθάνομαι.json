@@ -1,0 +1,88 @@
+{
+  "lemma": "αἰσθάνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "αἴσθωνται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 9:45",
+      "form": "αἴσθωνται",
+      "morph": "V-A-M-S-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 45,
+      "left_context": "ἦν παρακεκαλυμμένον ἀπ’ αὐτῶν ἵνα μὴ",
+      "right_context": "αὐτό, καὶ ἐφοβοῦντο ἐρωτῆσαι αὐτὸν περὶ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρακαλύπτομαι",
+      "display": "cubrirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρωτάω",
+      "display": "preguntar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 9:45",
+      "form": "αἴσθωνται",
+      "morph": "V-A-M-S-3P",
+      "clause_text": "τοῦτο, καὶ ἦν παρακεκαλυμμένον ἀπ’ αὐτῶν ἵνα μὴ αἴσθωνται αὐτό, καὶ ἐφοβοῦντο ἐρωτῆσαι αὐτὸν περὶ τοῦ ῥήματος",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 9:45",
+      "negator": "μὴ",
+      "clause_text": "τοῦτο, καὶ ἦν παρακεκαλυμμένον ἀπ’ αὐτῶν ἵνα μὴ αἴσθωνται αὐτό, καὶ ἐφοβοῦντο ἐρωτῆσαι αὐτὸν περὶ τοῦ ῥήματος"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 9:45",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

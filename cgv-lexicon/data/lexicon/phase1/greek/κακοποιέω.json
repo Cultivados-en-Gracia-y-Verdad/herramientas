@@ -1,0 +1,189 @@
+{
+  "lemma": "κακοποιέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κακοποιῆσαι,",
+      "count": 2
+    },
+    {
+      "form": "κακοποιοῦντας.",
+      "count": 1
+    },
+    {
+      "form": "κακοποιῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:17",
+      "form": "κακοποιοῦντας.",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "τὸ θέλημα τοῦ θεοῦ, πάσχειν ἢ",
+      "right_context": ""
+    },
+    {
+      "ref": "3 John 1:11",
+      "form": "κακοποιῶν",
+      "morph": "V-P-A-P",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ἀγαθοποιῶν ἐκ τοῦ θεοῦ ἐστιν· ὁ",
+      "right_context": "οὐχ ἑώρακεν τὸν θεόν."
+    },
+    {
+      "ref": "Luke 6:9",
+      "form": "κακοποιῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "⸀εἰ ἔξεστιν ⸂τῷ σαββάτῳ⸃ ἀγαθοποιῆσαι ἢ",
+      "right_context": "ψυχὴν σῶσαι ἢ ⸀ἀπολέσαι;"
+    },
+    {
+      "ref": "Mark 3:4",
+      "form": "κακοποιῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "αὐτοῖς· Ἔξεστιν τοῖς σάββασιν ⸀ἀγαθοποιῆσαι ἢ",
+      "right_context": "ψυχὴν σῶσαι ἢ ἀποκτεῖναι; οἱ δὲ"
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "3 John": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξεστι(ν)",
+      "display": "es·lícito",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "sábado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθοποιέω",
+      "display": "hacer·bien",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "salvar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padecer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ha visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "matar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "3 John 1:11",
+      "negator": "οὐχ",
+      "clause_text": "ἀγαθόν. ὁ ἀγαθοποιῶν ἐκ τοῦ θεοῦ ἐστιν· ὁ κακοποιῶν οὐχ ἑώρακεν τὸν θεόν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 3:17",
+      "reason": "occurs near θεός, ἤ"
+    },
+    {
+      "ref": "3 John 1:11",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Luke 6:9",
+      "reason": "occurs near σάββατον, ἀγαθοποιέω, ἔξεστι(ν)"
+    },
+    {
+      "ref": "Mark 3:4",
+      "reason": "occurs near σάββατον, ἀγαθοποιέω, ἔξεστι(ν)"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

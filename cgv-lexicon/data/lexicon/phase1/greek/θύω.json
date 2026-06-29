@@ -1,0 +1,465 @@
+{
+  "lemma": "θύω",
+  "language": "greek",
+  "total_occurrences": 14,
+  "forms": [
+    {
+      "form": "θῦσον",
+      "count": 2
+    },
+    {
+      "form": "ἐτύθη",
+      "count": 1
+    },
+    {
+      "form": "⸀θύουσιν,",
+      "count": 1
+    },
+    {
+      "form": "θύουσιν⸃,",
+      "count": 1
+    },
+    {
+      "form": "θύειν.",
+      "count": 1
+    },
+    {
+      "form": "θύειν",
+      "count": 1
+    },
+    {
+      "form": "θύσῃ",
+      "count": 1
+    },
+    {
+      "form": "θύσατε,",
+      "count": 1
+    },
+    {
+      "form": "ἔθυσεν",
+      "count": 1
+    },
+    {
+      "form": "ἔθυσας",
+      "count": 1
+    },
+    {
+      "form": "θύεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἔθυον,",
+      "count": 1
+    },
+    {
+      "form": "τεθυμένα,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 6,
+      "imperative": 3,
+      "infinitive": 3,
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 7,
+      "present": 5,
+      "imperfect": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 11
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 5:7",
+      "form": "ἐτύθη",
+      "morph": "V-A-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "ἄζυμοι. καὶ γὰρ τὸ πάσχα ⸀ἡμῶν",
+      "right_context": "Χριστός·"
+    },
+    {
+      "ref": "1 Corinthians 10:20",
+      "form": "⸀θύουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 20,
+      "left_context": "ἀλλ’ ὅτι ἃ",
+      "right_context": "δαιμονίοις ⸂καὶ οὐ θεῷ θύουσιν⸃, οὐ"
+    },
+    {
+      "ref": "1 Corinthians 10:20",
+      "form": "θύουσιν⸃,",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 20,
+      "left_context": "ἃ ⸀θύουσιν, δαιμονίοις ⸂καὶ οὐ θεῷ",
+      "right_context": "οὐ θέλω δὲ ὑμᾶς κοινωνοὺς τῶν"
+    },
+    {
+      "ref": "Acts 10:13",
+      "form": "θῦσον",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 13,
+      "left_context": "ἐγένετο φωνὴ πρὸς αὐτόν· Ἀναστάς, Πέτρε,",
+      "right_context": "καὶ φάγε."
+    },
+    {
+      "ref": "Acts 11:7",
+      "form": "θῦσον",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "⸀καὶ φωνῆς λεγούσης μοι· Ἀναστάς, Πέτρε,",
+      "right_context": "καὶ φάγε."
+    },
+    {
+      "ref": "Acts 14:13",
+      "form": "θύειν.",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 13,
+      "left_context": "πυλῶνας ἐνέγκας σὺν τοῖς ὄχλοις ἤθελεν",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 14:18",
+      "form": "θύειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 18,
+      "left_context": "μόλις κατέπαυσαν τοὺς ὄχλους τοῦ μὴ",
+      "right_context": "αὐτοῖς."
+    },
+    {
+      "ref": "John 10:10",
+      "form": "θύσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 10,
+      "verse": 10,
+      "left_context": "ἔρχεται εἰ μὴ ἵνα κλέψῃ καὶ",
+      "right_context": "καὶ ἀπολέσῃ· ἐγὼ ἦλθον ἵνα ζωὴν"
+    },
+    {
+      "ref": "Luke 15:23",
+      "form": "θύσατε,",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 23,
+      "left_context": "καὶ ⸀φέρετε τὸν μόσχον τὸν σιτευτόν,",
+      "right_context": "καὶ φαγόντες εὐφρανθῶμεν,"
+    },
+    {
+      "ref": "Luke 15:27",
+      "form": "ἔθυσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 27,
+      "left_context": "ὅτι Ὁ ἀδελφός σου ἥκει, καὶ",
+      "right_context": "ὁ πατήρ σου τὸν μόσχον τὸν"
+    },
+    {
+      "ref": "Luke 15:30",
+      "form": "ἔθυσας",
+      "morph": "V-A-A-I-2S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 30,
+      "left_context": "σου τὸν βίον ⸀μετὰ πορνῶν ἦλθεν,",
+      "right_context": "αὐτῷ τὸν ⸂σιτευτὸν μόσχον⸃."
+    },
+    {
+      "ref": "Luke 22:7",
+      "form": "θύεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 7,
+      "left_context": "ἡ ἡμέρα τῶν ἀζύμων, ⸀ᾗ ἔδει",
+      "right_context": "τὸ πάσχα·"
+    },
+    {
+      "ref": "Mark 14:12",
+      "form": "ἔθυον,",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 12,
+      "left_context": "ἡμέρᾳ τῶν ἀζύμων, ὅτε τὸ πάσχα",
+      "right_context": "λέγουσιν αὐτῷ οἱ μαθηταὶ αὐτοῦ· Ποῦ"
+    },
+    {
+      "ref": "Matthew 22:4",
+      "form": "τεθυμένα,",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 4,
+      "left_context": "οἱ ταῦροί μου καὶ τὰ σιτιστὰ",
+      "right_context": "καὶ πάντα ἕτοιμα· δεῦτε εἰς τοὺς"
+    }
+  ],
+  "books": {
+    "Acts": 4,
+    "Luke": 4,
+    "1 Corinthians": 3,
+    "John": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάσχα",
+      "display": "pascua",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "come",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μόσχος",
+      "display": "becerro",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θύω",
+      "display": "sacrifican",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiero",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitudes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vine",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σιτευτός",
+      "display": "engordado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄζυμος",
+      "display": "sin·levadura",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοινωνός",
+      "display": "partícipes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταπαύω",
+      "display": "cesaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτω",
+      "display": "robe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destrua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐφραίνω",
+      "display": "regocijarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥκω",
+      "display": "viene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βίος",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 10:13",
+      "form": "θῦσον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "καὶ ἐγένετο φωνὴ πρὸς αὐτόν· Ἀναστάς, Πέτρε, θῦσον καὶ φάγε."
+    },
+    {
+      "ref": "Acts 11:7",
+      "form": "θῦσον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ἤκουσα δὲ ⸀καὶ φωνῆς λεγούσης μοι· Ἀναστάς, Πέτρε, θῦσον καὶ φάγε."
+    },
+    {
+      "ref": "Luke 15:23",
+      "form": "θύσατε,",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ ⸀φέρετε τὸν μόσχον τὸν σιτευτόν, θύσατε, καὶ φαγόντες εὐφρανθῶμεν,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 10:20",
+      "negator": "οὐ",
+      "clause_text": "ἀλλ’ ὅτι ἃ ⸀θύουσιν, δαιμονίοις ⸂καὶ οὐ θεῷ θύουσιν⸃, οὐ θέλω δὲ"
+    },
+    {
+      "ref": "1 Corinthians 10:20",
+      "negator": "οὐ",
+      "clause_text": "ἀλλ’ ὅτι ἃ ⸀θύουσιν, δαιμονίοις ⸂καὶ οὐ θεῷ θύουσιν⸃, οὐ θέλω δὲ ὑμᾶς κοινωνοὺς τῶν δαιμονίων γίνεσθαι."
+    },
+    {
+      "ref": "Acts 14:18",
+      "negator": "μὴ",
+      "clause_text": "ταῦτα λέγοντες μόλις κατέπαυσαν τοὺς ὄχλους τοῦ μὴ θύειν αὐτοῖς."
+    },
+    {
+      "ref": "John 10:10",
+      "negator": "μὴ",
+      "clause_text": "κλέπτης οὐκ ἔρχεται εἰ μὴ ἵνα κλέψῃ καὶ θύσῃ καὶ ἀπολέσῃ· ἐγὼ ἦλθον ἵνα ζωὴν ἔχωσιν καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 11:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 15:23",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 14:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 14:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 15:27",
+      "reason": "occurs near μόσχος"
+    },
+    {
+      "ref": "Luke 15:30",
+      "reason": "occurs near μόσχος"
+    },
+    {
+      "ref": "Luke 22:7",
+      "reason": "occurs near πάσχα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

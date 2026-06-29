@@ -1,0 +1,140 @@
+{
+  "lemma": "ζῳογονέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀ζῳογονοῦντος",
+      "count": 1
+    },
+    {
+      "form": "ζῳογονεῖσθαι.",
+      "count": 1
+    },
+    {
+      "form": "ζῳογονήσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:13",
+      "form": "⸀ζῳογονοῦντος",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "παραγγέλλω σοι ἐνώπιον τοῦ θεοῦ τοῦ",
+      "right_context": "τὰ πάντα καὶ Χριστοῦ Ἰησοῦ τοῦ"
+    },
+    {
+      "ref": "Acts 7:19",
+      "form": "ζῳογονεῖσθαι.",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 19,
+      "left_context": "βρέφη ἔκθετα⸃ αὐτῶν εἰς τὸ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 17:33",
+      "form": "ζῳογονήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 33,
+      "left_context": "ἀπολέσει αὐτήν, ⸂ὃς δ’ ἂν⸃ ⸀ἀπολέσῃ",
+      "right_context": "αὐτήν."
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔκθετος",
+      "display": "abandonados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destrua",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 7:19",
+      "negator": "μὴ",
+      "clause_text": "ποιεῖν ⸂τὰ βρέφη ἔκθετα⸃ αὐτῶν εἰς τὸ μὴ ζῳογονεῖσθαι."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:13",
+      "reason": "occurs near Χριστός, θεός, ἐνώπιον"
+    },
+    {
+      "ref": "Acts 7:19",
+      "reason": "occurs near ἔκθετος"
+    },
+    {
+      "ref": "Luke 17:33",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

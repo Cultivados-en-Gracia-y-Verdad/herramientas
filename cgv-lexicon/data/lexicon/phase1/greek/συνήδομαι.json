@@ -1,0 +1,68 @@
+{
+  "lemma": "συνήδομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνήδομαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 7:22",
+      "form": "συνήδομαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 22,
+      "left_context": "",
+      "right_context": "γὰρ τῷ νόμῳ τοῦ θεοῦ κατὰ"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 7:22",
+      "reason": "occurs near θεός, νόμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

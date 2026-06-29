@@ -1,0 +1,659 @@
+{
+  "lemma": "ἐλπίζω",
+  "language": "greek",
+  "total_occurrences": 31,
+  "forms": [
+    {
+      "form": "ἐλπίζω",
+      "count": 9
+    },
+    {
+      "form": "ἐλπίζων",
+      "count": 2
+    },
+    {
+      "form": "ἠλπίκαμεν",
+      "count": 2
+    },
+    {
+      "form": "ἐλπιοῦσιν.",
+      "count": 2
+    },
+    {
+      "form": "ἐλπίζει,",
+      "count": 1
+    },
+    {
+      "form": "ἠλπικότες",
+      "count": 1
+    },
+    {
+      "form": "ἐλπίσατε",
+      "count": 1
+    },
+    {
+      "form": "ἐλπίζουσαι",
+      "count": 1
+    },
+    {
+      "form": "ἤλπικεν",
+      "count": 1
+    },
+    {
+      "form": "ἠλπικέναι",
+      "count": 1
+    },
+    {
+      "form": "ἠλπίσαμεν",
+      "count": 1
+    },
+    {
+      "form": "Ἐλπίζω",
+      "count": 1
+    },
+    {
+      "form": "ἐλπιζομένων",
+      "count": 1
+    },
+    {
+      "form": "ἐλπίζει",
+      "count": 1
+    },
+    {
+      "form": "ἠλπίκατε.",
+      "count": 1
+    },
+    {
+      "form": "ἐλπίζετε",
+      "count": 1
+    },
+    {
+      "form": "ἤλπιζέν",
+      "count": 1
+    },
+    {
+      "form": "ἠλπίζομεν",
+      "count": 1
+    },
+    {
+      "form": "ἐλπίζει;",
+      "count": 1
+    },
+    {
+      "form": "ἐλπίζομεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 24,
+      "participle": 5,
+      "imperative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 19,
+      "perfect": 6,
+      "aorist": 2,
+      "imperfect": 2,
+      "future": 2
+    },
+    "voices": {
+      "active": 30,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:7",
+      "form": "ἐλπίζει,",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "πάντα στέγει, πάντα πιστεύει, πάντα",
+      "right_context": "πάντα ὑπομένει."
+    },
+    {
+      "ref": "1 Corinthians 15:19",
+      "form": "ἠλπικότες",
+      "morph": "V-X-A-P",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 19,
+      "left_context": "ἐν τῇ ζωῇ ταύτῃ ⸂ἐν Χριστῷ",
+      "right_context": "ἐσμὲν⸃ μόνον, ἐλεεινότεροι πάντων ἀνθρώπων ἐσμέν."
+    },
+    {
+      "ref": "1 Corinthians 16:7",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 7,
+      "left_context": "γὰρ ὑμᾶς ἄρτι ἐν παρόδῳ ἰδεῖν,",
+      "right_context": "⸀γὰρ χρόνον τινὰ ἐπιμεῖναι πρὸς ὑμᾶς,"
+    },
+    {
+      "ref": "1 Peter 1:13",
+      "form": "ἐλπίσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες τελείως,",
+      "right_context": "ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν"
+    },
+    {
+      "ref": "1 Peter 3:5",
+      "form": "ἐλπίζουσαι",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "ποτε καὶ αἱ ἅγιαι γυναῖκες αἱ",
+      "right_context": "⸀εἰς θεὸν ἐκόσμουν ἑαυτάς, ὑποτασσόμεναι τοῖς"
+    },
+    {
+      "ref": "1 Timothy 3:14",
+      "form": "ἐλπίζων",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "Ταῦτά σοι γράφω,",
+      "right_context": "ἐλθεῖν πρὸς σὲ ⸂ἐν τάχει⸃,"
+    },
+    {
+      "ref": "1 Timothy 4:10",
+      "form": "ἠλπίκαμεν",
+      "morph": "V-X-A-I-1P",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 10,
+      "left_context": "τοῦτο ⸀γὰρ κοπιῶμεν καὶ ⸀ὀνειδιζόμεθα, ὅτι",
+      "right_context": "ἐπὶ θεῷ ζῶντι, ὅς ἐστιν σωτὴρ"
+    },
+    {
+      "ref": "1 Timothy 5:5",
+      "form": "ἤλπικεν",
+      "morph": "V-X-A-I-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 5,
+      "left_context": "ἡ δὲ ὄντως χήρα καὶ μεμονωμένη",
+      "right_context": "ἐπὶ ⸀θεὸν καὶ προσμένει ταῖς δεήσεσιν"
+    },
+    {
+      "ref": "1 Timothy 6:17",
+      "form": "ἠλπικέναι",
+      "morph": "V-X-A-N",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "νῦν αἰῶνι παράγγελλε μὴ ὑψηλοφρονεῖν μηδὲ",
+      "right_context": "ἐπὶ πλούτου ἀδηλότητι, ἀλλ’ ⸀ἐπὶ ⸀θεῷ"
+    },
+    {
+      "ref": "2 Corinthians 1:10",
+      "form": "ἠλπίκαμεν",
+      "morph": "V-X-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "ἐρρύσατο ἡμᾶς καὶ ⸀ῥύσεται, εἰς ὃν",
+      "right_context": "ὅτι καὶ ἔτι ῥύσεται,"
+    },
+    {
+      "ref": "2 Corinthians 1:13",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ἢ ἃ ἀναγινώσκετε ἢ καὶ ἐπιγινώσκετε,",
+      "right_context": "δὲ ⸀ὅτι ἕως τέλους ἐπιγνώσεσθε,"
+    },
+    {
+      "ref": "2 Corinthians 5:11",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "κυρίου ἀνθρώπους πείθομεν, θεῷ δὲ πεφανερώμεθα·",
+      "right_context": "δὲ καὶ ἐν ταῖς συνειδήσεσιν ὑμῶν"
+    },
+    {
+      "ref": "2 Corinthians 8:5",
+      "form": "ἠλπίσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 5,
+      "left_context": "καὶ οὐ καθὼς",
+      "right_context": "ἀλλ’ ἑαυτοὺς ἔδωκαν πρῶτον τῷ κυρίῳ"
+    },
+    {
+      "ref": "2 Corinthians 13:6",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "δὲ ὅτι γνώσεσθε ὅτι ἡμεῖς οὐκ"
+    },
+    {
+      "ref": "2 John 1:12",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "2 John",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "ἐβουλήθην διὰ χάρτου καὶ μέλανος, ἀλλὰ",
+      "right_context": "⸀γενέσθαι πρὸς ὑμᾶς καὶ στόμα πρὸς"
+    },
+    {
+      "ref": "3 John 1:14",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "",
+      "right_context": "δὲ εὐθέως ⸂σε ἰδεῖν⸃, καὶ στόμα"
+    },
+    {
+      "ref": "Philemon 1:22",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "ἅμα δὲ καὶ ἑτοίμαζέ μοι ξενίαν,",
+      "right_context": "γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν"
+    },
+    {
+      "ref": "Philippians 2:19",
+      "form": "Ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "",
+      "right_context": "δὲ ἐν κυρίῳ Ἰησοῦ Τιμόθεον ταχέως"
+    },
+    {
+      "ref": "Philippians 2:23",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "τοῦτον μὲν οὖν",
+      "right_context": "πέμψαι ὡς ἂν ἀφίδω τὰ περὶ"
+    },
+    {
+      "ref": "Hebrews 11:1",
+      "form": "ἐλπιζομένων",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 1,
+      "left_context": "Ἔστιν δὲ πίστις",
+      "right_context": "ὑπόστασις, πραγμάτων ἔλεγχος οὐ βλεπομένων·"
+    },
+    {
+      "ref": "Acts 24:26",
+      "form": "ἐλπίζων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 26,
+      "left_context": "ἅμα καὶ",
+      "right_context": "ὅτι χρήματα δοθήσεται αὐτῷ ὑπὸ τοῦ"
+    },
+    {
+      "ref": "Acts 26:7",
+      "form": "ἐλπίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 7,
+      "left_context": "ἐν ἐκτενείᾳ νύκτα καὶ ἡμέραν λατρεῦον",
+      "right_context": "καταντῆσαι· περὶ ἧς ἐλπίδος ἐγκαλοῦμαι ⸂ὑπὸ"
+    },
+    {
+      "ref": "John 5:45",
+      "form": "ἠλπίκατε.",
+      "morph": "V-X-A-I-2P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 45,
+      "left_context": "κατηγορῶν ὑμῶν Μωϋσῆς, εἰς ὃν ὑμεῖς",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 6:34",
+      "form": "ἐλπίζετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 34,
+      "left_context": "καὶ ἐὰν ⸀δανίσητε παρ’ ὧν",
+      "right_context": "⸀λαβεῖν, ποία ὑμῖν χάρις ἐστίν; ⸀καὶ"
+    },
+    {
+      "ref": "Luke 23:8",
+      "form": "ἤλπιζέν",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 8,
+      "left_context": "διὰ τὸ ⸀ἀκούειν περὶ αὐτοῦ, καὶ",
+      "right_context": "τι σημεῖον ἰδεῖν ὑπ’ αὐτοῦ γινόμενον."
+    },
+    {
+      "ref": "Luke 24:21",
+      "form": "ἠλπίζομεν",
+      "morph": "V-I-A-I-1P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 21,
+      "left_context": "ἡμεῖς δὲ",
+      "right_context": "ὅτι αὐτός ἐστιν ὁ μέλλων λυτροῦσθαι"
+    },
+    {
+      "ref": "Matthew 12:21",
+      "form": "ἐλπιοῦσιν.",
+      "morph": "V-F-A-I-3P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 21,
+      "left_context": "καὶ τῷ ὀνόματι αὐτοῦ ἔθνη",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 8:24",
+      "form": "ἐλπίζει;",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 24,
+      "left_context": "ἔστιν ἐλπίς, ὃ γὰρ βλέπει ⸀τίς",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 8:25",
+      "form": "ἐλπίζομεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 25,
+      "left_context": "εἰ δὲ ὃ οὐ βλέπομεν",
+      "right_context": "δι’ ὑπομονῆς ἀπεκδεχόμεθα."
+    },
+    {
+      "ref": "Romans 15:12",
+      "form": "ἐλπιοῦσιν.",
+      "morph": "V-F-A-I-3P",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 12,
+      "left_context": "ἀνιστάμενος ἄρχειν ἐθνῶν· ἐπ’ αὐτῷ ἔθνη",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 15:24",
+      "form": "ἐλπίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 24,
+      "left_context": "ὡς ⸀ἂν πορεύωμαι εἰς τὴν ⸀Σπανίαν,",
+      "right_context": "γὰρ διαπορευόμενος θεάσασθαι ὑμᾶς καὶ ὑφ’"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 5,
+    "1 Timothy": 4,
+    "Romans": 4,
+    "1 Corinthians": 3,
+    "Luke": 3,
+    "1 Peter": 2,
+    "Philippians": 2,
+    "Acts": 2,
+    "2 John": 1,
+    "3 John": 1,
+    "Philemon": 1,
+    "Hebrews": 1,
+    "John": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ver",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirados",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥύομαι",
+      "display": "librará",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconocéis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dieron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "de·esperanza",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στέγω",
+      "display": "soporta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "cree",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομένω",
+      "display": "persevera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεεινός",
+      "display": "miserables",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτι",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάροδος",
+      "display": "paso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιμένω",
+      "display": "perseverar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάνοια",
+      "display": "de·entendimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νήφω",
+      "display": "velando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελείως",
+      "display": "completamente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 1:13",
+      "form": "ἐλπίσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἀναζωσάμενοι τὰς ὀσφύας τῆς διανοίας ὑμῶν, νήφοντες τελείως, ἐλπίσατε ἐπὶ τὴν φερομένην ὑμῖν χάριν ἐν ἀποκαλύψει Ἰησοῦ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 6:17",
+      "negator": "μὴ",
+      "clause_text": "ἐν τῷ νῦν αἰῶνι παράγγελλε μὴ ὑψηλοφρονεῖν μηδὲ ἠλπικέναι ἐπὶ πλούτου ἀδηλότητι, ἀλλ’ ⸀ἐπὶ ⸀θεῷ τῷ παρέχοντι"
+    },
+    {
+      "ref": "2 Corinthians 8:5",
+      "negator": "οὐ",
+      "clause_text": "καὶ οὐ καθὼς ἠλπίσαμεν ἀλλ’ ἑαυτοὺς ἔδωκαν πρῶτον τῷ κυρίῳ καὶ ἡμῖν"
+    },
+    {
+      "ref": "Hebrews 11:1",
+      "negator": "οὐ",
+      "clause_text": "Ἔστιν δὲ πίστις ἐλπιζομένων ὑπόστασις, πραγμάτων ἔλεγχος οὐ βλεπομένων·"
+    },
+    {
+      "ref": "Romans 8:25",
+      "negator": "οὐ",
+      "clause_text": "εἰ δὲ ὃ οὐ βλέπομεν ἐλπίζομεν, δι’ ὑπομονῆς ἀπεκδεχόμεθα."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 1:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 13:6",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 1:10",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 1:13",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 5:11",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 8:5",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "1 Timothy 3:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Timothy 4:10",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

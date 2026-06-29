@@ -1,0 +1,113 @@
+{
+  "lemma": "διαγινώσκω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διαγινώσκειν",
+      "count": 1
+    },
+    {
+      "form": "διαγνώσομαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:15",
+      "form": "διαγινώσκειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 15,
+      "left_context": "⸂καταγάγῃ αὐτὸν εἰς⸃ ὑμᾶς ὡς μέλλοντας",
+      "right_context": "ἀκριβέστερον τὰ περὶ αὐτοῦ· ἡμεῖς δὲ"
+    },
+    {
+      "ref": "Acts 24:22",
+      "form": "διαγνώσομαι",
+      "morph": "V-F-M-I-1S",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 22,
+      "left_context": "⸀εἴπας· Ὅταν Λυσίας ὁ χιλίαρχος καταβῇ",
+      "right_context": "τὰ καθ’ ὑμᾶς·"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκριβέστερον",
+      "display": "más·exactamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λυσίας",
+      "display": "Lisias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιλίαρχος",
+      "display": "tribuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "baje",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 23:15",
+      "reason": "occurs near μέλλω, ἀκριβέστερον"
+    },
+    {
+      "ref": "Acts 24:22",
+      "reason": "occurs near Λυσίας, χιλίαρχος, ὅταν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,129 @@
+{
+  "lemma": "συνευωχέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνευωχούμενοι",
+      "count": 1
+    },
+    {
+      "form": "συνευωχούμενοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:13",
+      "form": "συνευωχούμενοι",
+      "morph": "V-P-M-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "μῶμοι ἐντρυφῶντες ἐν ταῖς ⸀ἀπάταις αὐτῶν",
+      "right_context": "ὑμῖν,"
+    },
+    {
+      "ref": "Jude 1:12",
+      "form": "συνευωχούμενοι,",
+      "morph": "V-P-M-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "⸀οἱ ἐν ταῖς ἀγάπαις ὑμῶν σπιλάδες",
+      "right_context": "ἀφόβως ἑαυτοὺς ποιμαίνοντες, νεφέλαι ἄνυδροι ὑπὸ"
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐντρυφάω",
+      "display": "deleitarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπάτη",
+      "display": "engaños",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπιλάς",
+      "display": "manchas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφόβως",
+      "display": "sin·temor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποιμαίνω",
+      "display": "pastoreando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεφέλη",
+      "display": "nubes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνυδρος",
+      "display": "sin·agua",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:13",
+      "reason": "occurs near ἀπάτη, ἐντρυφάω"
+    },
+    {
+      "ref": "Jude 1:12",
+      "reason": "occurs near σπιλάς, ἀγάπη, ἀφόβως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

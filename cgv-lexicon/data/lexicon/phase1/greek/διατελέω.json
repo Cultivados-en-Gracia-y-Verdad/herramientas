@@ -1,0 +1,92 @@
+{
+  "lemma": "διατελέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διατελεῖτε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:33",
+      "form": "διατελεῖτε,",
+      "morph": "V-P-A-I-2P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 33,
+      "left_context": "λέγων· Τεσσαρεσκαιδεκάτην σήμερον ἡμέραν προσδοκῶντες ἄσιτοι",
+      "right_context": "μηθὲν προσλαβόμενοι·"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τεσσαρεσκαιδέκατος",
+      "display": "decimocuarta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσδοκάω",
+      "display": "esperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄσιτος",
+      "display": "sin·comer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσλαμβάνομαι",
+      "display": "tomados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:33",
+      "reason": "occurs near προσδοκάω, σήμερον, τεσσαρεσκαιδέκατος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

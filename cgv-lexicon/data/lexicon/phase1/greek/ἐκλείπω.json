@@ -1,0 +1,199 @@
+{
+  "lemma": "ἐκλείπω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐκλείψουσιν.",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐκλίπῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐκλίπῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐκλιπόντος⸃,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "subjunctive": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 1:12",
+      "form": "ἐκλείψουσιν.",
+      "morph": "V-F-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "εἶ, καὶ τὰ ἔτη σου οὐκ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 16:9",
+      "form": "⸀ἐκλίπῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 9,
+      "left_context": "τοῦ μαμωνᾶ τῆς ἀδικίας, ἵνα ὅταν",
+      "right_context": "δέξωνται ὑμᾶς εἰς τὰς αἰωνίους σκηνάς."
+    },
+    {
+      "ref": "Luke 22:32",
+      "form": "ἐκλίπῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 32,
+      "left_context": "δὲ ἐδεήθην περὶ σοῦ ἵνα μὴ",
+      "right_context": "ἡ πίστις σου· καὶ σύ ποτε"
+    },
+    {
+      "ref": "Luke 23:45",
+      "form": "ἐκλιπόντος⸃,",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 45,
+      "left_context": "⸂τοῦ ἡλίου",
+      "right_context": "ἐσχίσθη ⸀δὲ τὸ καταπέτασμα τοῦ ναοῦ"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔτος",
+      "display": "añoses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαμωνᾶς",
+      "display": "de·mamón.",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικία",
+      "display": "de·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέχομαι",
+      "display": "reciban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "eternas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "fue atado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "de·sol",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σχίζω",
+      "display": "fue rasgado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταπέτασμα",
+      "display": "velo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 22:32",
+      "form": "ἐκλίπῃ",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἐγὼ δὲ ἐδεήθην περὶ σοῦ ἵνα μὴ ἐκλίπῃ ἡ πίστις σου· καὶ σύ ποτε ἐπιστρέψας ⸀στήρισον",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 1:12",
+      "negator": "οὐκ",
+      "clause_text": "ὁ αὐτὸς εἶ, καὶ τὰ ἔτη σου οὐκ ἐκλείψουσιν."
+    },
+    {
+      "ref": "Luke 22:32",
+      "negator": "μὴ",
+      "clause_text": "ἐγὼ δὲ ἐδεήθην περὶ σοῦ ἵνα μὴ ἐκλίπῃ ἡ πίστις σου· καὶ σύ ποτε ἐπιστρέψας ⸀στήρισον"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:9",
+      "reason": "occurs near δέχομαι, μαμωνᾶς, ἀδικία"
+    },
+    {
+      "ref": "Luke 22:32",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 23:45",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 1:12",
+      "reason": "occurs near ἔτος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

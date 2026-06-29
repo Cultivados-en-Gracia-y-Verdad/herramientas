@@ -1,0 +1,107 @@
+{
+  "lemma": "ἀνταποκρίνομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἀνταποκριθῆναι",
+      "count": 1
+    },
+    {
+      "form": "ἀνταποκρινόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 14:6",
+      "form": "⸀ἀνταποκριθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 6,
+      "left_context": "καὶ οὐκ ἴσχυσαν",
+      "right_context": "πρὸς ταῦτα."
+    },
+    {
+      "ref": "Romans 9:20",
+      "form": "ἀνταποκρινόμενος",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 20,
+      "left_context": "ἄνθρωπε, μενοῦνγε⸃ σὺ τίς εἶ ὁ",
+      "right_context": "τῷ θεῷ; μὴ ἐρεῖ τὸ πλάσμα"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἰσχύω",
+      "display": "pudieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μενοῦνγε",
+      "display": "más·bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 14:6",
+      "negator": "οὐκ",
+      "clause_text": "καὶ οὐκ ἴσχυσαν ⸀ἀνταποκριθῆναι πρὸς ταῦτα."
+    },
+    {
+      "ref": "Romans 9:20",
+      "negator": "μὴ",
+      "clause_text": "⸂ὦ ἄνθρωπε, μενοῦνγε⸃ σὺ τίς εἶ ὁ ἀνταποκρινόμενος τῷ θεῷ; μὴ ἐρεῖ τὸ πλάσμα τῷ πλάσαντι"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 14:6",
+      "reason": "occurs near ἰσχύω"
+    },
+    {
+      "ref": "Romans 9:20",
+      "reason": "occurs near θεός, μενοῦνγε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

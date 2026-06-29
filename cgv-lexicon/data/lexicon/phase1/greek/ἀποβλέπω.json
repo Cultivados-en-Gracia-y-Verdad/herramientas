@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀποβλέπω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπέβλεπεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:26",
+      "form": "ἀπέβλεπεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 26,
+      "left_context": "Αἰγύπτου θησαυρῶν τὸν ὀνειδισμὸν τοῦ Χριστοῦ,",
+      "right_context": "γὰρ εἰς τὴν μισθαποδοσίαν."
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θησαυρός",
+      "display": "de·tesoros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνειδισμός",
+      "display": "afrenta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθαποδοσία",
+      "display": "recompensa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:26",
+      "reason": "occurs near Χριστός, θησαυρός, μισθαποδοσία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

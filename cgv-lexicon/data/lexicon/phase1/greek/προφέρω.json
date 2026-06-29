@@ -1,0 +1,96 @@
+{
+  "lemma": "προφέρω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προφέρει",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:45",
+      "form": "προφέρει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 45,
+      "left_context": "τοῦ ἀγαθοῦ θησαυροῦ τῆς καρδίας ⸀αὐτοῦ",
+      "right_context": "τὸ ἀγαθόν, καὶ ὁ ⸀πονηρὸς ἐκ"
+    },
+    {
+      "ref": "Luke 6:45",
+      "form": "προφέρει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 45,
+      "left_context": "καὶ ὁ ⸀πονηρὸς ἐκ τοῦ ⸀πονηροῦ",
+      "right_context": "τὸ πονηρόν· ἐκ γὰρ ⸀περισσεύματος καρδίας"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πονηρός",
+      "display": "malvado",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "de·bueno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θησαυρός",
+      "display": "de·tesoro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "de·corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περίσσευμα",
+      "display": "de·abundancia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:45",
+      "reason": "occurs near θησαυρός, καρδία, πονηρός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,129 @@
+{
+  "lemma": "ζέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ζέων",
+      "count": 1
+    },
+    {
+      "form": "ζέοντες,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 18:25",
+      "form": "ζέων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 25,
+      "left_context": "κατηχημένος τὴν ὁδὸν τοῦ κυρίου, καὶ",
+      "right_context": "τῷ πνεύματι ἐλάλει καὶ ἐδίδασκεν ἀκριβῶς"
+    },
+    {
+      "ref": "Romans 12:11",
+      "form": "ζέοντες,",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "τῇ σπουδῇ μὴ ὀκνηροί, τῷ πνεύματι",
+      "right_context": "τῷ κυρίῳ δουλεύοντες,"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπουδή",
+      "display": "diligencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀκνηρός",
+      "display": "perezosos,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δουλεύω",
+      "display": "serviendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 12:11",
+      "negator": "μὴ",
+      "clause_text": "τῇ σπουδῇ μὴ ὀκνηροί, τῷ πνεύματι ζέοντες, τῷ κυρίῳ δουλεύοντες,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:25",
+      "reason": "occurs near διδάσκω, κύριος, λαλέω"
+    },
+    {
+      "ref": "Romans 12:11",
+      "reason": "occurs near κύριος, πνεῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

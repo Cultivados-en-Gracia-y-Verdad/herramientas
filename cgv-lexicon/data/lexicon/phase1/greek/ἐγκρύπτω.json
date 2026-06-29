@@ -1,0 +1,104 @@
+{
+  "lemma": "ἐγκρύπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐνέκρυψεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 13:33",
+      "form": "⸀ἐνέκρυψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 33,
+      "left_context": "τῶν οὐρανῶν ζύμῃ, ἣν λαβοῦσα γυνὴ",
+      "right_context": "εἰς ἀλεύρου σάτα τρία ἕως οὗ"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζύμη",
+      "display": "levadura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλευρον",
+      "display": "de·harina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάτον",
+      "display": "satas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:33",
+      "reason": "occurs near γυνή, ζύμη, λαμβάνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

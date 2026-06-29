@@ -1,0 +1,236 @@
+{
+  "lemma": "σείω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "σειομένη,",
+      "count": 1
+    },
+    {
+      "form": "⸀σείσω",
+      "count": 1
+    },
+    {
+      "form": "ἐσείσθη",
+      "count": 1
+    },
+    {
+      "form": "ἐσείσθη,",
+      "count": 1
+    },
+    {
+      "form": "ἐσείσθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 1,
+      "future": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "passive": 4,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 6:13",
+      "form": "σειομένη,",
+      "morph": "V-P-P-P",
+      "book": "Revelation",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "τοὺς ὀλύνθους αὐτῆς ὑπὸ ἀνέμου μεγάλου",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 12:26",
+      "form": "⸀σείσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 26,
+      "left_context": "δὲ ἐπήγγελται λέγων· Ἔτι ἅπαξ ἐγὼ",
+      "right_context": "οὐ μόνον τὴν γῆν ἀλλὰ καὶ"
+    },
+    {
+      "ref": "Matthew 21:10",
+      "form": "ἐσείσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 10,
+      "left_context": "καὶ εἰσελθόντος αὐτοῦ εἰς Ἱεροσόλυμα",
+      "right_context": "πᾶσα ἡ πόλις λέγουσα· Τίς ἐστιν"
+    },
+    {
+      "ref": "Matthew 27:51",
+      "form": "ἐσείσθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 51,
+      "left_context": "κάτω εἰς δύο⸃, καὶ ἡ γῆ",
+      "right_context": "καὶ αἱ πέτραι ἐσχίσθησαν,"
+    },
+    {
+      "ref": "Matthew 28:4",
+      "form": "ἐσείσθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 4,
+      "left_context": "ἀπὸ δὲ τοῦ φόβου αὐτοῦ",
+      "right_context": "οἱ τηροῦντες καὶ ἐγενήθησαν ⸀ὡς νεκροί."
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Revelation": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄλυνθος",
+      "display": "molinos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "de·grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγέλλομαι",
+      "display": "ha prometido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέτρα",
+      "display": "rocas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σχίζω",
+      "display": "fueron rasgado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόβος",
+      "display": "de·temor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηρέω",
+      "display": "guardando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 12:26",
+      "negator": "οὐ",
+      "clause_text": "τότε, νῦν δὲ ἐπήγγελται λέγων· Ἔτι ἅπαξ ἐγὼ ⸀σείσω οὐ μόνον τὴν γῆν ἀλλὰ καὶ τὸν οὐρανόν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 21:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 27:51",
+      "reason": "occurs near γῆ"
+    },
+    {
+      "ref": "Matthew 28:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:26",
+      "reason": "occurs near γῆ, ἐπαγγέλλομαι"
+    },
+    {
+      "ref": "Revelation 6:13",
+      "reason": "occurs near μέγας, ἄνεμος, ὄλυνθος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

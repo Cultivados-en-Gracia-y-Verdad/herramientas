@@ -1,0 +1,512 @@
+{
+  "lemma": "στρέφω",
+  "language": "greek",
+  "total_occurrences": 21,
+  "forms": [
+    {
+      "form": "στραφεὶς",
+      "count": 9
+    },
+    {
+      "form": "στρέφειν",
+      "count": 1
+    },
+    {
+      "form": "ἐστράφησαν",
+      "count": 1
+    },
+    {
+      "form": "ἔστρεψεν",
+      "count": 1
+    },
+    {
+      "form": "στρεφόμεθα",
+      "count": 1
+    },
+    {
+      "form": "⸀στραφῶσιν,",
+      "count": 1
+    },
+    {
+      "form": "ἐστράφη",
+      "count": 1
+    },
+    {
+      "form": "στραφεῖσα",
+      "count": 1
+    },
+    {
+      "form": "στρέψον",
+      "count": 1
+    },
+    {
+      "form": "στραφέντες",
+      "count": 1
+    },
+    {
+      "form": "⸀στραφεὶς",
+      "count": 1
+    },
+    {
+      "form": "στραφῆτε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἔστρεψεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 5,
+      "participle": 12,
+      "subjunctive": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 19
+    },
+    "voices": {
+      "active": 4,
+      "passive": 17
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 11:6",
+      "form": "στρέφειν",
+      "morph": "V-P-A-N",
+      "book": "Revelation",
+      "chapter": 11,
+      "verse": 6,
+      "left_context": "καὶ ἐξουσίαν ἔχουσιν ἐπὶ τῶν ὑδάτων",
+      "right_context": "αὐτὰ εἰς αἷμα καὶ πατάξαι τὴν"
+    },
+    {
+      "ref": "Acts 7:39",
+      "form": "ἐστράφησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 39,
+      "left_context": "οἱ πατέρες ἡμῶν, ἀλλὰ ἀπώσαντο καὶ",
+      "right_context": "⸂ἐν ταῖς καρδίαις⸃ αὐτῶν εἰς Αἴγυπτον,"
+    },
+    {
+      "ref": "Acts 7:42",
+      "form": "ἔστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 42,
+      "left_context": "",
+      "right_context": "δὲ ὁ θεὸς καὶ παρέδωκεν αὐτοὺς"
+    },
+    {
+      "ref": "Acts 13:46",
+      "form": "στρεφόμεθα",
+      "morph": "V-P-P-I-1P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 46,
+      "left_context": "κρίνετε ἑαυτοὺς τῆς αἰωνίου ζωῆς, ἰδοὺ",
+      "right_context": "εἰς τὰ ἔθνη·"
+    },
+    {
+      "ref": "John 1:38",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "John",
+      "chapter": 1,
+      "verse": 38,
+      "left_context": "",
+      "right_context": "δὲ ὁ Ἰησοῦς καὶ θεασάμενος αὐτοὺς"
+    },
+    {
+      "ref": "John 12:40",
+      "form": "⸀στραφῶσιν,",
+      "morph": "V-A-P-S-3P",
+      "book": "John",
+      "chapter": 12,
+      "verse": 40,
+      "left_context": "ὀφθαλμοῖς καὶ νοήσωσιν τῇ καρδίᾳ καὶ",
+      "right_context": "καὶ ⸀ἰάσομαι αὐτούς."
+    },
+    {
+      "ref": "John 20:14",
+      "form": "ἐστράφη",
+      "morph": "V-A-P-I-3S",
+      "book": "John",
+      "chapter": 20,
+      "verse": 14,
+      "left_context": "⸀ταῦτα εἰποῦσα",
+      "right_context": "εἰς τὰ ὀπίσω, καὶ θεωρεῖ τὸν"
+    },
+    {
+      "ref": "John 20:16",
+      "form": "στραφεῖσα",
+      "morph": "V-A-P-P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 16,
+      "left_context": "λέγει ⸀αὐτῇ Ἰησοῦς· ⸀Μαριάμ.",
+      "right_context": "ἐκείνη λέγει αὐτῷ ⸀Ἑβραϊστί· Ραββουνι (ὃ"
+    },
+    {
+      "ref": "Luke 7:9",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "ταῦτα ὁ Ἰησοῦς ἐθαύμασεν αὐτόν, καὶ",
+      "right_context": "τῷ ἀκολουθοῦντι αὐτῷ ὄχλῳ εἶπεν· Λέγω"
+    },
+    {
+      "ref": "Luke 7:44",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 44,
+      "left_context": "καὶ",
+      "right_context": "πρὸς τὴν γυναῖκα τῷ Σίμωνι ἔφη·"
+    },
+    {
+      "ref": "Luke 9:55",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 55,
+      "left_context": "",
+      "right_context": "δὲ ἐπετίμησεν ⸀αὐτοῖς."
+    },
+    {
+      "ref": "Luke 10:23",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 23,
+      "left_context": "Καὶ",
+      "right_context": "πρὸς τοὺς μαθητὰς κατ’ ἰδίαν εἶπεν·"
+    },
+    {
+      "ref": "Luke 14:25",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 25,
+      "left_context": "Συνεπορεύοντο δὲ αὐτῷ ὄχλοι πολλοί, καὶ",
+      "right_context": "εἶπεν πρὸς αὐτούς·"
+    },
+    {
+      "ref": "Luke 22:61",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 61,
+      "left_context": "καὶ",
+      "right_context": "ὁ κύριος ἐνέβλεψεν τῷ Πέτρῳ, καὶ"
+    },
+    {
+      "ref": "Luke 23:28",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 28,
+      "left_context": "",
+      "right_context": "δὲ πρὸς αὐτὰς ⸀ὁ Ἰησοῦς εἶπεν·"
+    },
+    {
+      "ref": "Matthew 5:39",
+      "form": "στρέψον",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 39,
+      "left_context": "σε ⸀ῥαπίζει ⸀εἰς τὴν δεξιὰν ⸀σιαγόνα,",
+      "right_context": "αὐτῷ καὶ τὴν ἄλλην·"
+    },
+    {
+      "ref": "Matthew 7:6",
+      "form": "στραφέντες",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "αὐτοὺς ἐν τοῖς ποσὶν αὐτῶν καὶ",
+      "right_context": "ῥήξωσιν ὑμᾶς."
+    },
+    {
+      "ref": "Matthew 9:22",
+      "form": "⸀στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "ὁ δὲ Ἰησοῦς",
+      "right_context": "καὶ ἰδὼν αὐτὴν εἶπεν· Θάρσει, θύγατερ·"
+    },
+    {
+      "ref": "Matthew 16:23",
+      "form": "στραφεὶς",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 23,
+      "left_context": "ὁ δὲ",
+      "right_context": "εἶπεν τῷ Πέτρῳ· Ὕπαγε ὀπίσω μου,"
+    },
+    {
+      "ref": "Matthew 18:3",
+      "form": "στραφῆτε",
+      "morph": "V-A-P-S-2P",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 3,
+      "left_context": "εἶπεν· Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ",
+      "right_context": "καὶ γένησθε ὡς τὰ παιδία, οὐ"
+    },
+    {
+      "ref": "Matthew 27:3",
+      "form": "⸀ἔστρεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 3,
+      "left_context": "ὁ ⸀παραδιδοὺς αὐτὸν ὅτι κατεκρίθη μεταμεληθεὶς",
+      "right_context": "τὰ τριάκοντα ἀργύρια τοῖς ἀρχιερεῦσιν ⸀καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 7,
+    "Matthew": 6,
+    "John": 4,
+    "Acts": 3,
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀπίσω",
+      "display": "detrás",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·aguas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατάσσω",
+      "display": "herir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπωθέομαι",
+      "display": "rechazaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "de·eterna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεάομαι",
+      "display": "contemplado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοέω",
+      "display": "entendan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰάομαι",
+      "display": "sanaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "ve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαριάμ",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἑβραϊστί",
+      "display": "en·hebreo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ραββουνι",
+      "display": "rabbuni",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 5:39",
+      "form": "στρέψον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ἀλλ’ ὅστις σε ⸀ῥαπίζει ⸀εἰς τὴν δεξιὰν ⸀σιαγόνα, στρέψον αὐτῷ καὶ τὴν ἄλλην·"
+    },
+    {
+      "ref": "Matthew 18:3",
+      "form": "στραφῆτε",
+      "morph": "V-A-P-S-2P",
+      "clause_text": "καὶ εἶπεν· Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ στραφῆτε καὶ γένησθε ὡς τὰ παιδία, οὐ μὴ εἰσέλθητε",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 18:3",
+      "negator": "μὴ",
+      "clause_text": "καὶ εἶπεν· Ἀμὴν λέγω ὑμῖν, ἐὰν μὴ στραφῆτε καὶ γένησθε ὡς τὰ παιδία, οὐ μὴ εἰσέλθητε"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 5:39",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 10:23",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 14:25",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 22:61",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 23:28",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 7:44",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 7:9",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 9:55",
+      "reason": "frequent in Luke"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

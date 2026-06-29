@@ -1,0 +1,467 @@
+{
+  "lemma": "νομίζω",
+  "language": "greek",
+  "total_occurrences": 15,
+  "forms": [
+    {
+      "form": "νομίσητε",
+      "count": 2
+    },
+    {
+      "form": "νομίζω",
+      "count": 1
+    },
+    {
+      "form": "νομίζει",
+      "count": 1
+    },
+    {
+      "form": "νομιζόντων",
+      "count": 1
+    },
+    {
+      "form": "ἐνόμιζεν",
+      "count": 1
+    },
+    {
+      "form": "ἐνόμισας",
+      "count": 1
+    },
+    {
+      "form": "⸀νομίζοντες",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐνομίζομεν",
+      "count": 1
+    },
+    {
+      "form": "νομίζων",
+      "count": 1
+    },
+    {
+      "form": "νομίζειν",
+      "count": 1
+    },
+    {
+      "form": "ἐνόμιζον",
+      "count": 1
+    },
+    {
+      "form": "νομίσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἐνομίζετο⸃,",
+      "count": 1
+    },
+    {
+      "form": "ἐνόμισαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 8,
+      "participle": 4,
+      "infinitive": 1,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "present": 6,
+      "imperfect": 4,
+      "aorist": 5
+    },
+    "voices": {
+      "active": 14,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:26",
+      "form": "νομίζω",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 26,
+      "left_context": "",
+      "right_context": "οὖν τοῦτο καλὸν ὑπάρχειν διὰ τὴν"
+    },
+    {
+      "ref": "1 Corinthians 7:36",
+      "form": "νομίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 36,
+      "left_context": "τις ἀσχημονεῖν ἐπὶ τὴν παρθένον αὐτοῦ",
+      "right_context": "ἐὰν ᾖ ὑπέρακμος, καὶ οὕτως ὀφείλει"
+    },
+    {
+      "ref": "1 Timothy 6:5",
+      "form": "νομιζόντων",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "τὸν νοῦν καὶ ἀπεστερημένων τῆς ἀληθείας,",
+      "right_context": "πορισμὸν εἶναι τὴν ⸀εὐσέβειαν."
+    },
+    {
+      "ref": "Acts 7:25",
+      "form": "ἐνόμιζεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 25,
+      "left_context": "",
+      "right_context": "δὲ συνιέναι τοὺς ⸀ἀδελφοὺς ὅτι ὁ"
+    },
+    {
+      "ref": "Acts 8:20",
+      "form": "ἐνόμισας",
+      "morph": "V-A-A-I-2S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 20,
+      "left_context": "ἀπώλειαν ὅτι τὴν δωρεὰν τοῦ θεοῦ",
+      "right_context": "διὰ χρημάτων κτᾶσθαι."
+    },
+    {
+      "ref": "Acts 14:19",
+      "form": "⸀νομίζοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "τὸν Παῦλον ἔσυρον ἔξω τῆς πόλεως,",
+      "right_context": "αὐτὸν τεθνηκέναι."
+    },
+    {
+      "ref": "Acts 16:13",
+      "form": "⸂ἐνομίζομεν",
+      "morph": "V-I-A-I-1P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 13,
+      "left_context": "ἔξω τῆς ⸀πύλης παρὰ ποταμὸν οὗ",
+      "right_context": "προσευχὴν⸃ εἶναι, καὶ καθίσαντες ἐλαλοῦμεν ταῖς"
+    },
+    {
+      "ref": "Acts 16:27",
+      "form": "νομίζων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 27,
+      "left_context": "σπασάμενος ⸀τὴν μάχαιραν ἤμελλεν ἑαυτὸν ἀναιρεῖν,",
+      "right_context": "ἐκπεφευγέναι τοὺς δεσμίους."
+    },
+    {
+      "ref": "Acts 17:29",
+      "form": "νομίζειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 29,
+      "left_context": "οὖν ὑπάρχοντες τοῦ θεοῦ οὐκ ὀφείλομεν",
+      "right_context": "χρυσῷ ἢ ἀργύρῳ ἢ λίθῳ, χαράγματι"
+    },
+    {
+      "ref": "Acts 21:29",
+      "form": "ἐνόμιζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 29,
+      "left_context": "ἐν τῇ πόλει σὺν αὐτῷ, ὃν",
+      "right_context": "ὅτι εἰς τὸ ἱερὸν εἰσήγαγεν ὁ"
+    },
+    {
+      "ref": "Luke 2:44",
+      "form": "νομίσαντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 44,
+      "left_context": "",
+      "right_context": "δὲ αὐτὸν ⸂εἶναι ἐν τῇ συνοδίᾳ⸃"
+    },
+    {
+      "ref": "Luke 3:23",
+      "form": "ἐνομίζετο⸃,",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 23,
+      "left_context": "ὡσεὶ ἐτῶν τριάκοντα⸃, ὢν ⸂υἱός, ὡς",
+      "right_context": "Ἰωσὴφ τοῦ Ἠλὶ"
+    },
+    {
+      "ref": "Matthew 5:17",
+      "form": "νομίσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 17,
+      "left_context": "Μὴ",
+      "right_context": "ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ"
+    },
+    {
+      "ref": "Matthew 10:34",
+      "form": "νομίσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 34,
+      "left_context": "Μὴ",
+      "right_context": "ὅτι ἦλθον βαλεῖν εἰρήνην ἐπὶ τὴν"
+    },
+    {
+      "ref": "Matthew 20:10",
+      "form": "ἐνόμισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 10,
+      "left_context": "⸂καὶ ἐλθόντες⸃ οἱ πρῶτοι",
+      "right_context": "ὅτι ⸀πλεῖον λήμψονται· καὶ ἔλαβον ⸂τὸ"
+    }
+  ],
+  "books": {
+    "Acts": 7,
+    "Matthew": 3,
+    "1 Corinthians": 2,
+    "Luke": 2,
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vine",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomarán",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσχημονέω",
+      "display": "comportarse·indecentemente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρθένος",
+      "display": "virgen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρακμος",
+      "display": "pasada·la·edad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστερέω",
+      "display": "defraudados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορισμός",
+      "display": "ganancia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐσέβεια",
+      "display": "piedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνίημι",
+      "display": "entender",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δωρεά",
+      "display": "don",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρῆμα",
+      "display": "de·dineros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κτάομαι",
+      "display": "adquirir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύρω",
+      "display": "arrastraban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνῄσκω",
+      "display": "morir",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 5:17",
+      "form": "νομίσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "Μὴ νομίσητε ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας·",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 10:34",
+      "form": "νομίσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "Μὴ νομίσητε ὅτι ἦλθον βαλεῖν εἰρήνην ἐπὶ τὴν γῆν· οὐκ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 17:29",
+      "negator": "οὐκ",
+      "clause_text": "γένος οὖν ὑπάρχοντες τοῦ θεοῦ οὐκ ὀφείλομεν νομίζειν χρυσῷ ἢ ἀργύρῳ ἢ λίθῳ, χαράγματι τέχνης καὶ"
+    },
+    {
+      "ref": "Matthew 5:17",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ νομίσητε ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας·"
+    },
+    {
+      "ref": "Matthew 10:34",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ νομίσητε ὅτι ἦλθον βαλεῖν εἰρήνην ἐπὶ τὴν γῆν· οὐκ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 14:19",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:13",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:27",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 17:29",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:29",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 7:25",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 8:20",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Matthew 10:34",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

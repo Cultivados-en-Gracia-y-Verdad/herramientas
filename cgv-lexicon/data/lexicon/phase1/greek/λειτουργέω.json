@@ -1,0 +1,150 @@
+{
+  "lemma": "λειτουργέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "λειτουργῶν",
+      "count": 1
+    },
+    {
+      "form": "λειτουργούντων",
+      "count": 1
+    },
+    {
+      "form": "λειτουργῆσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 10:11",
+      "form": "λειτουργῶν",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 11,
+      "left_context": "πᾶς μὲν ἱερεὺς ἕστηκεν καθ’ ἡμέραν",
+      "right_context": "καὶ τὰς αὐτὰς πολλάκις προσφέρων θυσίας,"
+    },
+    {
+      "ref": "Acts 13:2",
+      "form": "λειτουργούντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "δὲ αὐτῶν τῷ κυρίῳ καὶ νηστευόντων"
+    },
+    {
+      "ref": "Romans 15:27",
+      "form": "λειτουργῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 27,
+      "left_context": "ἔθνη, ὀφείλουσιν καὶ ἐν τοῖς σαρκικοῖς",
+      "right_context": "αὐτοῖς."
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερεύς",
+      "display": "sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "ha puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολλάκις",
+      "display": "muchas·veces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "ofreciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφείλω",
+      "display": "deben",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σαρκικός",
+      "display": "carnales",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 10:11",
+      "reason": "occurs near μέν, πολλάκις, ἡμέρα"
+    },
+    {
+      "ref": "Romans 15:27",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

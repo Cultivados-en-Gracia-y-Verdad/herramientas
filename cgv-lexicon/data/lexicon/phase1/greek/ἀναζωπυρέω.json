@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀναζωπυρέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀναζωπυρεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 1:6",
+      "form": "ἀναζωπυρεῖν",
+      "morph": "V-P-A-N",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "δι’ ἣν αἰτίαν ἀναμιμνῄσκω σε",
+      "right_context": "τὸ χάρισμα τοῦ θεοῦ, ὅ ἐστιν"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αἰτία",
+      "display": "causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναμιμνῄσκω",
+      "display": "recordo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρισμα",
+      "display": "don",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 1:6",
+      "reason": "occurs near αἰτία, θεός, χάρισμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

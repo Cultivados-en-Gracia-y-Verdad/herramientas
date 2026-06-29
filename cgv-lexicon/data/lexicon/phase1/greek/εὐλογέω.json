@@ -1,0 +1,758 @@
+{
+  "lemma": "εὐλογέω",
+  "language": "greek",
+  "total_occurrences": 41,
+  "forms": [
+    {
+      "form": "εὐλόγησεν",
+      "count": 8
+    },
+    {
+      "form": "Εὐλογημένος",
+      "count": 5
+    },
+    {
+      "form": "εὐλογήσας",
+      "count": 4
+    },
+    {
+      "form": "εὐλογεῖτε",
+      "count": 3
+    },
+    {
+      "form": "εὐλογοῦμεν,",
+      "count": 2
+    },
+    {
+      "form": "εὐλογῶν",
+      "count": 2
+    },
+    {
+      "form": "εὐλογημένος",
+      "count": 2
+    },
+    {
+      "form": "Εὐλογημένη",
+      "count": 2
+    },
+    {
+      "form": "⸀εὐλογῇς",
+      "count": 1
+    },
+    {
+      "form": "⸀εὐλογοῦντες,",
+      "count": 1
+    },
+    {
+      "form": "εὐλογοῦνται",
+      "count": 1
+    },
+    {
+      "form": "εὐλογήσω",
+      "count": 1
+    },
+    {
+      "form": "εὐλόγηκεν.",
+      "count": 1
+    },
+    {
+      "form": "εὐλογεῖται.",
+      "count": 1
+    },
+    {
+      "form": "εὐλόγησεν,",
+      "count": 1
+    },
+    {
+      "form": "εὐλογοῦντα",
+      "count": 1
+    },
+    {
+      "form": "εὐλογεῖν",
+      "count": 1
+    },
+    {
+      "form": "⸀εὐλογοῦντες",
+      "count": 1
+    },
+    {
+      "form": "εὐλογημένοι",
+      "count": 1
+    },
+    {
+      "form": "⸀εὐλογήσας",
+      "count": 1
+    },
+    {
+      "form": "εὐλογοῦμεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 16,
+      "subjunctive": 1,
+      "participle": 20,
+      "imperative": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 15,
+      "aorist": 14,
+      "future": 1,
+      "perfect": 11
+    },
+    "voices": {
+      "active": 29,
+      "passive": 12
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:12",
+      "form": "εὐλογοῦμεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "κοπιῶμεν ἐργαζόμενοι ταῖς ἰδίαις χερσίν· λοιδορούμενοι",
+      "right_context": "διωκόμενοι ἀνεχόμεθα,"
+    },
+    {
+      "ref": "1 Corinthians 10:16",
+      "form": "εὐλογοῦμεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 16,
+      "left_context": "τὸ ποτήριον τῆς εὐλογίας ὃ",
+      "right_context": "οὐχὶ κοινωνία ⸂ἐστὶν τοῦ αἵματος τοῦ"
+    },
+    {
+      "ref": "1 Corinthians 14:16",
+      "form": "⸀εὐλογῇς",
+      "morph": "V-P-A-S-2S",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 16,
+      "left_context": "ἐπεὶ ἐὰν",
+      "right_context": "⸀πνεύματι, ὁ ἀναπληρῶν τὸν τόπον τοῦ"
+    },
+    {
+      "ref": "1 Peter 3:9",
+      "form": "⸀εὐλογοῦντες,",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "ἢ λοιδορίαν ἀντὶ λοιδορίας τοὐναντίον δὲ",
+      "right_context": "ὅτι εἰς τοῦτο ἐκλήθητε ἵνα εὐλογίαν"
+    },
+    {
+      "ref": "Ephesians 1:3",
+      "form": "εὐλογήσας",
+      "morph": "V-A-A-P",
+      "book": "Ephesians",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ, ὁ",
+      "right_context": "ἡμᾶς ἐν πάσῃ εὐλογίᾳ πνευματικῇ ἐν"
+    },
+    {
+      "ref": "Galatians 3:9",
+      "form": "εὐλογοῦνται",
+      "morph": "V-P-P-I-3P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "ὥστε οἱ ἐκ πίστεως",
+      "right_context": "σὺν τῷ πιστῷ Ἀβραάμ."
+    },
+    {
+      "ref": "Hebrews 6:14",
+      "form": "εὐλογῶν",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "λέγων· ⸀Εἰ μὴν",
+      "right_context": "εὐλογήσω σε καὶ πληθύνων πληθυνῶ σε·"
+    },
+    {
+      "ref": "Hebrews 6:14",
+      "form": "εὐλογήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "λέγων· ⸀Εἰ μὴν εὐλογῶν",
+      "right_context": "σε καὶ πληθύνων πληθυνῶ σε·"
+    },
+    {
+      "ref": "Hebrews 7:1",
+      "form": "εὐλογήσας",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 1,
+      "left_context": "ἀπὸ τῆς κοπῆς τῶν βασιλέων καὶ",
+      "right_context": "αὐτόν,"
+    },
+    {
+      "ref": "Hebrews 7:6",
+      "form": "εὐλόγηκεν.",
+      "morph": "V-X-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "⸀Ἀβραάμ, καὶ τὸν ἔχοντα τὰς ἐπαγγελίας",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 7:7",
+      "form": "εὐλογεῖται.",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 7,
+      "left_context": "ἀντιλογίας τὸ ἔλαττον ὑπὸ τοῦ κρείττονος",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 11:20",
+      "form": "εὐλόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 20,
+      "left_context": "Πίστει ⸀καὶ περὶ μελλόντων",
+      "right_context": "Ἰσαὰκ τὸν Ἰακὼβ καὶ τὸν Ἠσαῦ."
+    },
+    {
+      "ref": "Hebrews 11:21",
+      "form": "εὐλόγησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 21,
+      "left_context": "Ἰακὼβ ἀποθνῄσκων ἕκαστον τῶν υἱῶν Ἰωσὴφ",
+      "right_context": "καὶ προσεκύνησεν ἐπὶ τὸ ἄκρον τῆς"
+    },
+    {
+      "ref": "Acts 3:26",
+      "form": "εὐλογοῦντα",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 26,
+      "left_context": "θεὸς⸃ τὸν παῖδα ⸀αὐτοῦ ἀπέστειλεν αὐτὸν",
+      "right_context": "ὑμᾶς ἐν τῷ ἀποστρέφειν ἕκαστον ἀπὸ"
+    },
+    {
+      "ref": "John 12:13",
+      "form": "εὐλογημένος",
+      "morph": "V-X-P-P",
+      "book": "John",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "εἰς ὑπάντησιν αὐτῷ, καὶ ⸀ἐκραύγαζον· Ὡσαννά,",
+      "right_context": "ὁ ἐρχόμενος ἐν ὀνόματι κυρίου, ⸂καὶ"
+    },
+    {
+      "ref": "Luke 1:42",
+      "form": "Εὐλογημένη",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 42,
+      "left_context": "καὶ ἀνεφώνησεν ⸀κραυγῇ μεγάλῃ καὶ εἶπεν·",
+      "right_context": "σὺ ἐν γυναιξίν, καὶ εὐλογημένος ὁ"
+    },
+    {
+      "ref": "Luke 1:42",
+      "form": "εὐλογημένος",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 42,
+      "left_context": "εἶπεν· Εὐλογημένη σὺ ἐν γυναιξίν, καὶ",
+      "right_context": "ὁ καρπὸς τῆς κοιλίας σου."
+    },
+    {
+      "ref": "Luke 1:64",
+      "form": "εὐλογῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 64,
+      "left_context": "καὶ ἡ γλῶσσα αὐτοῦ, καὶ ἐλάλει",
+      "right_context": "τὸν θεόν."
+    },
+    {
+      "ref": "Luke 2:28",
+      "form": "εὐλόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 28,
+      "left_context": "ἐδέξατο αὐτὸ εἰς τὰς ⸀ἀγκάλας καὶ",
+      "right_context": "τὸν θεὸν καὶ εἶπεν·"
+    },
+    {
+      "ref": "Luke 2:34",
+      "form": "εὐλόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 34,
+      "left_context": "καὶ",
+      "right_context": "αὐτοὺς Συμεὼν καὶ εἶπεν πρὸς Μαριὰμ"
+    },
+    {
+      "ref": "Luke 6:28",
+      "form": "εὐλογεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 28,
+      "left_context": "",
+      "right_context": "τοὺς καταρωμένους ⸀ὑμᾶς, προσεύχεσθε ⸀περὶ τῶν"
+    },
+    {
+      "ref": "Luke 9:16",
+      "form": "εὐλόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 16,
+      "left_context": "δύο ἰχθύας ἀναβλέψας εἰς τὸν οὐρανὸν",
+      "right_context": "αὐτοὺς καὶ κατέκλασεν καὶ ἐδίδου τοῖς"
+    },
+    {
+      "ref": "Luke 13:35",
+      "form": "Εὐλογημένος",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 35,
+      "left_context": "⸂ἴδητέ με⸃ ἕως ⸂ἥξει ὅτε⸃ εἴπητε·",
+      "right_context": "ὁ ἐρχόμενος ἐν ὀνόματι κυρίου."
+    },
+    {
+      "ref": "Luke 19:38",
+      "form": "Εὐλογημένος",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 38,
+      "left_context": "λέγοντες·",
+      "right_context": "ὁ ἐρχόμενος ⸀βασιλεὺς ἐν ὀνόματι κυρίου·"
+    },
+    {
+      "ref": "Luke 24:30",
+      "form": "εὐλόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 30,
+      "left_context": "αὐτὸν μετ’ αὐτῶν λαβὼν τὸν ἄρτον",
+      "right_context": "καὶ κλάσας ἐπεδίδου αὐτοῖς·"
+    },
+    {
+      "ref": "Luke 24:50",
+      "form": "εὐλόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 50,
+      "left_context": "Βηθανίαν, καὶ ἐπάρας τὰς χεῖρας αὐτοῦ",
+      "right_context": "αὐτούς."
+    },
+    {
+      "ref": "Luke 24:51",
+      "form": "εὐλογεῖν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 51,
+      "left_context": "καὶ ἐγένετο ἐν τῷ",
+      "right_context": "αὐτὸν αὐτοὺς διέστη ἀπ’ αὐτῶν ⸂[καὶ"
+    },
+    {
+      "ref": "Luke 24:53",
+      "form": "⸀εὐλογοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 53,
+      "left_context": "ἦσαν διὰ παντὸς ἐν τῷ ἱερῷ",
+      "right_context": "τὸν ⸀θεόν."
+    },
+    {
+      "ref": "Mark 6:41",
+      "form": "εὐλόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 41,
+      "left_context": "δύο ἰχθύας ἀναβλέψας εἰς τὸν οὐρανὸν",
+      "right_context": "καὶ κατέκλασεν τοὺς ἄρτους καὶ ἐδίδου"
+    },
+    {
+      "ref": "Mark 8:7",
+      "form": "εὐλογήσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 7,
+      "left_context": "καὶ εἶχον ἰχθύδια ὀλίγα· καὶ",
+      "right_context": "⸀αὐτὰ εἶπεν ⸂καὶ ταῦτα παρατιθέναι⸃."
+    },
+    {
+      "ref": "Mark 11:9",
+      "form": "Εὐλογημένος",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 9,
+      "left_context": "προάγοντες καὶ οἱ ἀκολουθοῦντες ⸀ἔκραζον· Ὡσαννά·",
+      "right_context": "ὁ ἐρχόμενος ἐν ὀνόματι κυρίου·"
+    },
+    {
+      "ref": "Mark 11:10",
+      "form": "Εὐλογημένη",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 10,
+      "left_context": "",
+      "right_context": "ἡ ἐρχομένη ⸀βασιλεία τοῦ πατρὸς ἡμῶν"
+    },
+    {
+      "ref": "Mark 14:22",
+      "form": "εὐλογήσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 22,
+      "left_context": "Καὶ ἐσθιόντων αὐτῶν ⸀λαβὼν ἄρτον",
+      "right_context": "ἔκλασεν καὶ ἔδωκεν αὐτοῖς καὶ εἶπεν·"
+    },
+    {
+      "ref": "Matthew 14:19",
+      "form": "εὐλόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "δύο ἰχθύας, ἀναβλέψας εἰς τὸν οὐρανὸν",
+      "right_context": "καὶ κλάσας ἔδωκεν τοῖς μαθηταῖς τοὺς"
+    },
+    {
+      "ref": "Matthew 21:9",
+      "form": "Εὐλογημένος",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 9,
+      "left_context": "ἔκραζον λέγοντες· Ὡσαννὰ τῷ υἱῷ Δαυίδ·",
+      "right_context": "ὁ ἐρχόμενος ἐν ὀνόματι κυρίου· Ὡσαννὰ"
+    },
+    {
+      "ref": "Matthew 23:39",
+      "form": "Εὐλογημένος",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 39,
+      "left_context": "ἴδητε ἀπ’ ἄρτι ἕως ἂν εἴπητε·",
+      "right_context": "ὁ ἐρχόμενος ἐν ὀνόματι κυρίου."
+    },
+    {
+      "ref": "Matthew 25:34",
+      "form": "εὐλογημένοι",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 34,
+      "left_context": "τοῖς ἐκ δεξιῶν αὐτοῦ· Δεῦτε, οἱ",
+      "right_context": "τοῦ πατρός μου, κληρονομήσατε τὴν ἡτοιμασμένην"
+    },
+    {
+      "ref": "Matthew 26:26",
+      "form": "⸀εὐλογήσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 26,
+      "left_context": "αὐτῶν λαβὼν ὁ Ἰησοῦς ⸀ἄρτον καὶ",
+      "right_context": "ἔκλασεν καὶ ⸂δοὺς τοῖς μαθηταῖς⸃ εἶπεν·"
+    },
+    {
+      "ref": "Romans 12:14",
+      "form": "εὐλογεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "",
+      "right_context": "τοὺς ⸀διώκοντας, εὐλογεῖτε καὶ μὴ καταρᾶσθε."
+    },
+    {
+      "ref": "Romans 12:14",
+      "form": "εὐλογεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "εὐλογεῖτε τοὺς ⸀διώκοντας,",
+      "right_context": "καὶ μὴ καταρᾶσθε."
+    },
+    {
+      "ref": "James 3:9",
+      "form": "εὐλογοῦμεν",
+      "morph": "V-P-A-I-1P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "ἐν αὐτῇ",
+      "right_context": "τὸν ⸀κύριον καὶ πατέρα, καὶ ἐν"
+    }
+  ],
+  "books": {
+    "Luke": 13,
+    "Hebrews": 7,
+    "Mark": 5,
+    "Matthew": 5,
+    "1 Corinthians": 3,
+    "Romans": 2,
+    "1 Peter": 1,
+    "Ephesians": 1,
+    "Galatians": 1,
+    "Acts": 1,
+    "John": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "veniendo",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογέω",
+      "display": "bendeciré",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "πληθύνω",
+      "display": "multiplicando",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "daba",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "κλάω",
+      "display": "partido",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "διώκω",
+      "display": "perseguidos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσαννά",
+      "display": "hosanna",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἰχθύς",
+      "display": "peces",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβλέπω",
+      "display": "visto",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "de·padre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογία",
+      "display": "de·bendición",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λοιδορία",
+      "display": "insulto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μήν",
+      "display": "ciertamente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "de·reyes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "de·hijos",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 6:28",
+      "form": "εὐλογεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "εὐλογεῖτε τοὺς καταρωμένους ⸀ὑμᾶς, προσεύχεσθε ⸀περὶ τῶν ἐπηρεαζόντων ὑμᾶς."
+    },
+    {
+      "ref": "Romans 12:14",
+      "form": "εὐλογεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "εὐλογεῖτε τοὺς ⸀διώκοντας, εὐλογεῖτε καὶ μὴ καταρᾶσθε."
+    },
+    {
+      "ref": "Romans 12:14",
+      "form": "εὐλογεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "εὐλογεῖτε τοὺς ⸀διώκοντας, εὐλογεῖτε καὶ μὴ καταρᾶσθε."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 12:14",
+      "negator": "μὴ",
+      "clause_text": "εὐλογεῖτε τοὺς ⸀διώκοντας, εὐλογεῖτε καὶ μὴ καταρᾶσθε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 12:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 13:35",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 19:38",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 1:42",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 1:64",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 24:30",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 24:50",
+      "reason": "frequent in Luke"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

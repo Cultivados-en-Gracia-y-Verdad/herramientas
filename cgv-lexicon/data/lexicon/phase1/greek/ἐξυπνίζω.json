@@ -1,0 +1,68 @@
+{
+  "lemma": "ἐξυπνίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξυπνίσω",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 11:11",
+      "form": "ἐξυπνίσω",
+      "morph": "V-A-A-S-1S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 11,
+      "left_context": "φίλος ἡμῶν κεκοίμηται, ἀλλὰ πορεύομαι ἵνα",
+      "right_context": "αὐτόν."
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κοιμάομαι",
+      "display": "ha dormido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "voy",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:11",
+      "reason": "occurs near κοιμάομαι, πορεύομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

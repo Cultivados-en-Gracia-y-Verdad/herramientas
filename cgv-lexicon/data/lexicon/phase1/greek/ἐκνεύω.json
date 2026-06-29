@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐκνεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξένευσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 5:13",
+      "form": "ἐξένευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "ᾔδει τίς ἐστιν, ὁ γὰρ Ἰησοῦς",
+      "right_context": "ὄχλου ὄντος ἐν τῷ τόπῳ."
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 5:13",
+      "reason": "occurs near τόπος, Ἰησοῦς, ὄχλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

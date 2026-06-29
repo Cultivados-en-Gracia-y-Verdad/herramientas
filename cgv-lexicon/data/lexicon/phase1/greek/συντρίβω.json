@@ -1,0 +1,336 @@
+{
+  "lemma": "συντρίβω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "⸀συντρίβεται,",
+      "count": 1
+    },
+    {
+      "form": "συντριβήσεται",
+      "count": 1
+    },
+    {
+      "form": "συντρῖβον",
+      "count": 1
+    },
+    {
+      "form": "συντετρῖφθαι,",
+      "count": 1
+    },
+    {
+      "form": "⸀συντρίψασα",
+      "count": 1
+    },
+    {
+      "form": "συντετριμμένον",
+      "count": 1
+    },
+    {
+      "form": "συντρίψει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "future": 2,
+      "perfect": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 4,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 2:27",
+      "form": "⸀συντρίβεται,",
+      "morph": "V-P-P-I-3S",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 27,
+      "left_context": "σιδηρᾷ ὡς τὰ σκεύη τὰ κεραμικὰ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 19:36",
+      "form": "συντριβήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "John",
+      "chapter": 19,
+      "verse": 36,
+      "left_context": "ἵνα ἡ γραφὴ πληρωθῇ· Ὀστοῦν οὐ",
+      "right_context": "⸀αὐτοῦ."
+    },
+    {
+      "ref": "Luke 9:39",
+      "form": "συντρῖβον",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 39,
+      "left_context": "ἀφροῦ καὶ ⸀μόγις ἀποχωρεῖ ἀπ’ αὐτοῦ",
+      "right_context": "αὐτόν·"
+    },
+    {
+      "ref": "Mark 5:4",
+      "form": "συντετρῖφθαι,",
+      "morph": "V-X-P-N",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "αὐτοῦ τὰς ἁλύσεις καὶ τὰς πέδας",
+      "right_context": "καὶ οὐδεὶς ⸂ἴσχυεν αὐτὸν⸃ δαμάσαι·"
+    },
+    {
+      "ref": "Mark 14:3",
+      "form": "⸀συντρίψασα",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 3,
+      "left_context": "ἔχουσα ἀλάβαστρον μύρου νάρδου πιστικῆς πολυτελοῦς·",
+      "right_context": "⸀τὴν ἀλάβαστρον κατέχεεν ⸀αὐτοῦ τῆς κεφαλῆς."
+    },
+    {
+      "ref": "Matthew 12:20",
+      "form": "συντετριμμένον",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "κάλαμον",
+      "right_context": "οὐ κατεάξει καὶ λίνον τυφόμενον οὐ"
+    },
+    {
+      "ref": "Romans 16:20",
+      "form": "συντρίψει",
+      "morph": "V-F-A-I-3S",
+      "book": "Romans",
+      "chapter": 16,
+      "verse": 20,
+      "left_context": "ὁ δὲ θεὸς τῆς εἰρήνης",
+      "right_context": "τὸν Σατανᾶν ὑπὸ τοὺς πόδας ὑμῶν"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Revelation": 1,
+    "John": 1,
+    "Luke": 1,
+    "Matthew": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀλάβαστρος",
+      "display": "alabastro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasijas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεραμικός",
+      "display": "de·barro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escritura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumpla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀστέον",
+      "display": "hueso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόγις",
+      "display": "difícilmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποχωρέω",
+      "display": "apartarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλυσις",
+      "display": "cadenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέδη",
+      "display": "grilletes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "podía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαμάζω",
+      "display": "domar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μύρον",
+      "display": "de·perfume",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νάρδος",
+      "display": "de·nardo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστικός",
+      "display": "de·pura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολυτελής",
+      "display": "de·costosa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταχέω",
+      "display": "derramó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάλαμος",
+      "display": "caña",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάγνυμι",
+      "display": "quebrará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίνον",
+      "display": "lino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τύφομαι",
+      "display": "humeante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "de·paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σατανᾶς",
+      "display": "Satanás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 19:36",
+      "negator": "οὐ",
+      "clause_text": "γὰρ ταῦτα ἵνα ἡ γραφὴ πληρωθῇ· Ὀστοῦν οὐ συντριβήσεται ⸀αὐτοῦ."
+    },
+    {
+      "ref": "Matthew 12:20",
+      "negator": "οὐ",
+      "clause_text": "κάλαμον συντετριμμένον οὐ κατεάξει καὶ λίνον τυφόμενον οὐ σβέσει, ἕως"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 14:3",
+      "reason": "occurs near ἀλάβαστρος"
+    },
+    {
+      "ref": "Mark 5:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 19:36",
+      "reason": "occurs near γραφή, πληρόω"
+    },
+    {
+      "ref": "Luke 9:39",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 12:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 2:27",
+      "reason": "occurs near κεραμικός, σκεῦος"
+    },
+    {
+      "ref": "Romans 16:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

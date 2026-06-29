@@ -1,0 +1,80 @@
+{
+  "lemma": "εὐπροσωπέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εὐπροσωπῆσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 6:12",
+      "form": "εὐπροσωπῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "ὅσοι θέλουσιν",
+      "right_context": "ἐν σαρκί, οὗτοι ἀναγκάζουσιν ὑμᾶς περιτέμνεσθαι,"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quieren",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναγκάζω",
+      "display": "obligan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 6:12",
+      "reason": "occurs near θέλω, σάρξ, ἀναγκάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

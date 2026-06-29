@@ -1,0 +1,397 @@
+{
+  "lemma": "πληθύνω",
+  "language": "greek",
+  "total_occurrences": 12,
+  "forms": [
+    {
+      "form": "πληθυνθείη.",
+      "count": 2
+    },
+    {
+      "form": "⸀πληθυνεῖ",
+      "count": 1
+    },
+    {
+      "form": "πληθυνθείη",
+      "count": 1
+    },
+    {
+      "form": "πληθύνων",
+      "count": 1
+    },
+    {
+      "form": "πληθυνῶ",
+      "count": 1
+    },
+    {
+      "form": "πληθυνόντων",
+      "count": 1
+    },
+    {
+      "form": "ἐπληθύνετο",
+      "count": 1
+    },
+    {
+      "form": "ἐπληθύνθη",
+      "count": 1
+    },
+    {
+      "form": "ἐπληθύνετο⸃.",
+      "count": 1
+    },
+    {
+      "form": "ἐπληθύνετο.",
+      "count": 1
+    },
+    {
+      "form": "πληθυνθῆναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "optative": 3,
+      "indicative": 6,
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "future": 2,
+      "present": 2,
+      "imperfect": 3
+    },
+    "voices": {
+      "passive": 8,
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:2",
+      "form": "πληθυνθείη.",
+      "morph": "V-A-P-O-3S",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "Ἰησοῦ Χριστοῦ· χάρις ὑμῖν καὶ εἰρήνη",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 9:10",
+      "form": "⸀πληθυνεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "καὶ ἄρτον εἰς βρῶσιν ⸀χορηγήσει καὶ",
+      "right_context": "τὸν σπόρον ὑμῶν καὶ ⸀αὐξήσει τὰ"
+    },
+    {
+      "ref": "2 Peter 1:2",
+      "form": "πληθυνθείη",
+      "morph": "V-A-P-O-3S",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "χάρις ὑμῖν καὶ εἰρήνη",
+      "right_context": "ἐν ἐπιγνώσει τοῦ θεοῦ καὶ Ἰησοῦ"
+    },
+    {
+      "ref": "Hebrews 6:14",
+      "form": "πληθύνων",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "⸀Εἰ μὴν εὐλογῶν εὐλογήσω σε καὶ",
+      "right_context": "πληθυνῶ σε·"
+    },
+    {
+      "ref": "Hebrews 6:14",
+      "form": "πληθυνῶ",
+      "morph": "V-F-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "μὴν εὐλογῶν εὐλογήσω σε καὶ πληθύνων",
+      "right_context": "σε·"
+    },
+    {
+      "ref": "Acts 6:1",
+      "form": "πληθυνόντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "Ἐν δὲ ταῖς ἡμέραις ταύταις",
+      "right_context": "τῶν μαθητῶν ἐγένετο γογγυσμὸς τῶν Ἑλληνιστῶν"
+    },
+    {
+      "ref": "Acts 6:7",
+      "form": "ἐπληθύνετο",
+      "morph": "V-I-P-I-3S",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "ὁ λόγος τοῦ θεοῦ ηὔξανεν, καὶ",
+      "right_context": "ὁ ἀριθμὸς τῶν μαθητῶν ἐν Ἰερουσαλὴμ"
+    },
+    {
+      "ref": "Acts 7:17",
+      "form": "ἐπληθύνθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 17,
+      "left_context": "τῷ Ἀβραάμ, ηὔξησεν ὁ λαὸς καὶ",
+      "right_context": "ἐν Αἰγύπτῳ,"
+    },
+    {
+      "ref": "Acts 9:31",
+      "form": "ἐπληθύνετο⸃.",
+      "morph": "V-I-P-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 31,
+      "left_context": "καὶ τῇ παρακλήσει τοῦ ἁγίου πνεύματος",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 12:24",
+      "form": "ἐπληθύνετο.",
+      "morph": "V-I-P-I-3S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 24,
+      "left_context": "δὲ λόγος τοῦ ⸀θεοῦ ηὔξανεν καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Jude 1:2",
+      "form": "πληθυνθείη.",
+      "morph": "V-A-P-O-3S",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "ἔλεος ὑμῖν καὶ εἰρήνη καὶ ἀγάπη",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 24:12",
+      "form": "πληθυνθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 12,
+      "left_context": "καὶ διὰ τὸ",
+      "right_context": "τὴν ἀνομίαν ψυγήσεται ἡ ἀγάπη τῶν"
+    }
+  ],
+  "books": {
+    "Acts": 5,
+    "Hebrews": 2,
+    "1 Peter": 1,
+    "2 Corinthians": 1,
+    "2 Peter": 1,
+    "Jude": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αὐξάνω",
+      "display": "crecerá",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογέω",
+      "display": "bendeciendo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πληθύνω",
+      "display": "multiplicaré",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βρῶσις",
+      "display": "herrumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χορηγέω",
+      "display": "proveerá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπόρος",
+      "display": "semilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίγνωσις",
+      "display": "conocimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήν",
+      "display": "ciertamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γογγυσμός",
+      "display": "murmuración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀριθμός",
+      "display": "número",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Αἴγυπτος",
+      "display": "Egipto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:24",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 6:1",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 6:7",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 7:17",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 9:31",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Hebrews 6:14",
+      "reason": "occurs near εὐλογέω"
+    },
+    {
+      "ref": "1 Peter 1:2",
+      "reason": "occurs near εἰρήνη, χάρις"
+    },
+    {
+      "ref": "2 Corinthians 9:10",
+      "reason": "occurs near αὐξάνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

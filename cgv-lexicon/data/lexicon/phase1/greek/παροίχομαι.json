@@ -1,0 +1,74 @@
+{
+  "lemma": "παροίχομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρῳχημέναις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 14:16",
+      "form": "παρῳχημέναις",
+      "morph": "V-X-M-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 16,
+      "left_context": "ὃς ἐν ταῖς",
+      "right_context": "γενεαῖς εἴασεν πάντα τὰ ἔθνη πορεύεσθαι"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γενεά",
+      "display": "generaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐάω",
+      "display": "dejó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 14:16",
+      "reason": "occurs near γενεά, ἐάω, ἔθνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

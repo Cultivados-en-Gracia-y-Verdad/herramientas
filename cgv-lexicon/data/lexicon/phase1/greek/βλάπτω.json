@@ -1,0 +1,126 @@
+{
+  "lemma": "βλάπτω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "βλάψαν",
+      "count": 1
+    },
+    {
+      "form": "βλάψῃ,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 4:35",
+      "form": "βλάψαν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 35,
+      "left_context": "⸀τὸ μέσον ἐξῆλθεν ἀπ’ αὐτοῦ μηδὲν",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 16:18",
+      "form": "βλάψῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "θανάσιμόν τι πίωσιν οὐ μὴ αὐτοὺς",
+      "right_context": "ἐπὶ ἀρρώστους χεῖρας ἐπιθήσουσιν καὶ καλῶς"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίνω",
+      "display": "beban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρρωστος",
+      "display": "enfermos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτίθημι",
+      "display": "pondrán",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 16:18",
+      "form": "βλάψῃ,",
+      "morph": "V-A-A-S-3S",
+      "clause_text": "ἀροῦσιν κἂν θανάσιμόν τι πίωσιν οὐ μὴ αὐτοὺς βλάψῃ, ἐπὶ ἀρρώστους χεῖρας ἐπιθήσουσιν καὶ καλῶς ἕξουσιν.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 16:18",
+      "negator": "οὐ",
+      "clause_text": "ἀροῦσιν κἂν θανάσιμόν τι πίωσιν οὐ μὴ αὐτοὺς βλάψῃ, ἐπὶ ἀρρώστους χεῖρας ἐπιθήσουσιν καὶ καλῶς ἕξουσιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 4:35",
+      "reason": "occurs near μέσος, ἐξέρχομαι"
+    },
+    {
+      "ref": "Mark 16:18",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

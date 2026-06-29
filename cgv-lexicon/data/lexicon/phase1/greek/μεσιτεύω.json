@@ -1,0 +1,74 @@
+{
+  "lemma": "μεσιτεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐμεσίτευσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 6:17",
+      "form": "ἐμεσίτευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "ἐπαγγελίας τὸ ἀμετάθετον τῆς βουλῆς αὐτοῦ",
+      "right_context": "ὅρκῳ,"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀμετάθετος",
+      "display": "inmutable",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βουλή",
+      "display": "de·consejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅρκος",
+      "display": "juramento",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 6:17",
+      "reason": "occurs near βουλή, ἀμετάθετος, ὅρκος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

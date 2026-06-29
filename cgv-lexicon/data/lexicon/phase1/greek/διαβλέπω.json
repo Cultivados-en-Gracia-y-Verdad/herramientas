@@ -1,0 +1,139 @@
+{
+  "lemma": "διαβλέπω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "διαβλέψεις",
+      "count": 2
+    },
+    {
+      "form": "⸂διέβλεψεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "future": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:42",
+      "form": "διαβλέψεις",
+      "morph": "V-F-A-I-2S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 42,
+      "left_context": "ἐκ τοῦ ὀφθαλμοῦ σοῦ, καὶ τότε",
+      "right_context": "⸂τὸ κάρφος τὸ ἐν τῷ ὀφθαλμῷ"
+    },
+    {
+      "ref": "Mark 8:25",
+      "form": "⸂διέβλεψεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 25,
+      "left_context": "χεῖρας ἐπὶ τοὺς ὀφθαλμοὺς αὐτοῦ, καὶ",
+      "right_context": "καὶ ἀπεκατέστη καὶ ἐνέβλεπεν⸃ τηλαυγῶς ⸀ἅπαντα."
+    },
+    {
+      "ref": "Matthew 7:5",
+      "form": "διαβλέψεις",
+      "morph": "V-F-A-I-2S",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 5,
+      "left_context": "ὀφθαλμοῦ σοῦ τὴν δοκόν⸃, καὶ τότε",
+      "right_context": "ἐκβαλεῖν τὸ κάρφος ἐκ τοῦ ὀφθαλμοῦ"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "de·ojo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάρφος",
+      "display": "paja",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκαθίστημι",
+      "display": "restauró",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμβλέπω",
+      "display": "miraba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηλαυγῶς",
+      "display": "claramente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκός",
+      "display": "viga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulsar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:42",
+      "reason": "occurs near κάρφος, τότε, ὀφθαλμός"
+    },
+    {
+      "ref": "Mark 8:25",
+      "reason": "occurs near ἀποκαθίστημι, ἐμβλέπω, ὀφθαλμός"
+    },
+    {
+      "ref": "Matthew 7:5",
+      "reason": "occurs near κάρφος, τότε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

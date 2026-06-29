@@ -1,0 +1,138 @@
+{
+  "lemma": "κατασκάπτω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀κατεσκαμμένα",
+      "count": 1
+    },
+    {
+      "form": "κατέσκαψαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:16",
+      "form": "⸀κατεσκαμμένα",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 16,
+      "left_context": "σκηνὴν Δαυὶδ τὴν πεπτωκυῖαν καὶ τὰ",
+      "right_context": "αὐτῆς ἀνοικοδομήσω καὶ ἀνορθώσω αὐτήν,"
+    },
+    {
+      "ref": "Romans 11:3",
+      "form": "κατέσκαψαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 3,
+      "left_context": "προφήτας σου ἀπέκτειναν, ⸀τὰ θυσιαστήριά σου",
+      "right_context": "κἀγὼ ὑπελείφθην μόνος, καὶ ζητοῦσιν τὴν"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Δαυίδ",
+      "display": "de·David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "caida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνοικοδομέω",
+      "display": "reedificaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνορθόω",
+      "display": "enderezaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "mataron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυσιαστήριον",
+      "display": "altares",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπολείπω",
+      "display": "fue dejado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:16",
+      "reason": "occurs near Δαυίδ, πίπτω, ἀνοικοδομέω"
+    },
+    {
+      "ref": "Romans 11:3",
+      "reason": "occurs near ἀποκτείνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

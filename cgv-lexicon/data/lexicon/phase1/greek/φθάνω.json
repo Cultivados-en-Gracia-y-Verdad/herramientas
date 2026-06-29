@@ -1,0 +1,301 @@
+{
+  "lemma": "φθάνω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἔφθασεν",
+      "count": 3
+    },
+    {
+      "form": "φθάσωμεν",
+      "count": 1
+    },
+    {
+      "form": "ἐφθάσαμεν",
+      "count": 1
+    },
+    {
+      "form": "ἐφθάσαμεν,",
+      "count": 1
+    },
+    {
+      "form": "ἔφθασεν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 6,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 7
+    },
+    "voices": {
+      "active": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:16",
+      "form": "ἔφθασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "τὸ ἀναπληρῶσαι αὐτῶν τὰς ἁμαρτίας πάντοτε.",
+      "right_context": "δὲ ἐπ’ αὐτοὺς ἡ ⸀ὀργὴ εἰς"
+    },
+    {
+      "ref": "1 Thessalonians 4:15",
+      "form": "φθάσωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "τὴν παρουσίαν τοῦ κυρίου οὐ μὴ",
+      "right_context": "τοὺς κοιμηθέντας·"
+    },
+    {
+      "ref": "2 Corinthians 10:14",
+      "form": "ἐφθάσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 14,
+      "left_context": "ὑπερεκτείνομεν ἑαυτούς, ἄχρι γὰρ καὶ ὑμῶν",
+      "right_context": "ἐν τῷ εὐαγγελίῳ τοῦ Χριστοῦ—"
+    },
+    {
+      "ref": "Philippians 3:16",
+      "form": "ἐφθάσαμεν,",
+      "morph": "V-A-A-I-1P",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "πλὴν εἰς ὃ",
+      "right_context": "τῷ αὐτῷ ⸀στοιχεῖν."
+    },
+    {
+      "ref": "Luke 11:20",
+      "form": "ἔφθασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 20,
+      "left_context": "δακτύλῳ ⸀θεοῦ ἐκβάλλω τὰ δαιμόνια, ἄρα",
+      "right_context": "ἐφ’ ὑμᾶς ἡ βασιλεία τοῦ θεοῦ."
+    },
+    {
+      "ref": "Matthew 12:28",
+      "form": "ἔφθασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 28,
+      "left_context": "θεοῦ ἐγὼ ἐκβάλλω τὰ δαιμόνια, ἄρα",
+      "right_context": "ἐφ’ ὑμᾶς ἡ βασιλεία τοῦ θεοῦ."
+    },
+    {
+      "ref": "Romans 9:31",
+      "form": "ἔφθασεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 31,
+      "left_context": "διώκων νόμον δικαιοσύνης εἰς ⸀νόμον οὐκ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 2,
+    "2 Corinthians": 1,
+    "Philippians": 1,
+    "Luke": 1,
+    "Matthew": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκβάλλω",
+      "display": "expulso",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρα",
+      "display": "por·tanto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναπληρόω",
+      "display": "cumplir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοτε",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀργή",
+      "display": "ira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρουσία",
+      "display": "venida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοιμάομαι",
+      "display": "dormidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλήν",
+      "display": "excepto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στοιχέω",
+      "display": "andar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Thessalonians 4:15",
+      "form": "φθάσωμεν",
+      "morph": "V-A-A-S-1P",
+      "clause_text": "περιλειπόμενοι εἰς τὴν παρουσίαν τοῦ κυρίου οὐ μὴ φθάσωμεν τοὺς κοιμηθέντας·",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 4:15",
+      "negator": "οὐ",
+      "clause_text": "περιλειπόμενοι εἰς τὴν παρουσίαν τοῦ κυρίου οὐ μὴ φθάσωμεν τοὺς κοιμηθέντας·"
+    },
+    {
+      "ref": "Romans 9:31",
+      "negator": "οὐκ",
+      "clause_text": "Ἰσραὴλ δὲ διώκων νόμον δικαιοσύνης εἰς ⸀νόμον οὐκ ἔφθασεν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 2:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Thessalonians 4:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 10:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 11:20",
+      "reason": "occurs near βασιλεία, δαιμόνιον, ἄρα"
+    },
+    {
+      "ref": "Matthew 12:28",
+      "reason": "occurs near βασιλεία, δαιμόνιον, ἄρα"
+    },
+    {
+      "ref": "Philippians 3:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 9:31",
+      "reason": "occurs near νόμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

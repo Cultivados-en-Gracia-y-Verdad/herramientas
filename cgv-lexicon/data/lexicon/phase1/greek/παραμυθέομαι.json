@@ -1,0 +1,195 @@
+{
+  "lemma": "παραμυθέομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "παραμυθούμενοι",
+      "count": 2
+    },
+    {
+      "form": "παραμυθεῖσθε",
+      "count": 1
+    },
+    {
+      "form": "παραμυθήσωνται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "imperative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:12",
+      "form": "παραμυθούμενοι",
+      "morph": "V-P-M-P",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "παρακαλοῦντες ὑμᾶς καὶ",
+      "right_context": "καὶ μαρτυρόμενοι, εἰς τὸ ⸀περιπατεῖν ὑμᾶς"
+    },
+    {
+      "ref": "1 Thessalonians 5:14",
+      "form": "παραμυθεῖσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "δὲ ὑμᾶς, ἀδελφοί, νουθετεῖτε τοὺς ἀτάκτους,",
+      "right_context": "τοὺς ὀλιγοψύχους, ἀντέχεσθε τῶν ἀσθενῶν, μακροθυμεῖτε"
+    },
+    {
+      "ref": "John 11:19",
+      "form": "παραμυθήσωνται",
+      "morph": "V-A-M-S-3P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 19,
+      "left_context": "πρὸς ⸀τὴν Μάρθαν καὶ ⸀Μαριὰμ ἵνα",
+      "right_context": "αὐτὰς περὶ τοῦ ⸀ἀδελφοῦ."
+    },
+    {
+      "ref": "John 11:31",
+      "form": "παραμυθούμενοι",
+      "morph": "V-P-M-P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 31,
+      "left_context": "μετ’ αὐτῆς ἐν τῇ οἰκίᾳ καὶ",
+      "right_context": "αὐτήν, ἰδόντες τὴν ⸀Μαριὰμ ὅτι ταχέως"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 2,
+    "John": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Μαριάμ",
+      "display": "María",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτύρομαι",
+      "display": "testificando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νουθετέω",
+      "display": "amonestad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄτακτος",
+      "display": "indisciplinados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλιγόψυχος",
+      "display": "de·poco·ánimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντέχομαι",
+      "display": "aferrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενής",
+      "display": "de·débiles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μάρθα",
+      "display": "Marta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Thessalonians 5:14",
+      "form": "παραμυθεῖσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "παρακαλοῦμεν δὲ ὑμᾶς, ἀδελφοί, νουθετεῖτε τοὺς ἀτάκτους, παραμυθεῖσθε τοὺς ὀλιγοψύχους, ἀντέχεσθε τῶν ἀσθενῶν, μακροθυμεῖτε πρὸς πάντας."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 5:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Thessalonians 2:12",
+      "reason": "occurs near μαρτύρομαι, παρακαλέω, περιπατέω"
+    },
+    {
+      "ref": "John 11:19",
+      "reason": "occurs near Μαριάμ, ἀδελφός"
+    },
+    {
+      "ref": "John 11:31",
+      "reason": "occurs near Μαριάμ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

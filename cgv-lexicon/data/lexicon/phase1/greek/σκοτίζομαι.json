@@ -1,0 +1,214 @@
+{
+  "lemma": "σκοτίζομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "σκοτισθήσεται,",
+      "count": 2
+    },
+    {
+      "form": "σκοτισθῇ",
+      "count": 1
+    },
+    {
+      "form": "ἐσκοτίσθη",
+      "count": 1
+    },
+    {
+      "form": "σκοτισθήτωσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 3,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 2
+    },
+    "voices": {
+      "passive": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 8:12",
+      "form": "σκοτισθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Revelation",
+      "chapter": 8,
+      "verse": 12,
+      "left_context": "καὶ τὸ τρίτον τῶν ἀστέρων, ἵνα",
+      "right_context": "τὸ τρίτον αὐτῶν καὶ ⸂ἡ ἡμέρα"
+    },
+    {
+      "ref": "Mark 13:24",
+      "form": "σκοτισθήσεται,",
+      "morph": "V-F-P-I-3S",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 24,
+      "left_context": "μετὰ τὴν θλῖψιν ἐκείνην ὁ ἥλιος",
+      "right_context": "καὶ ἡ σελήνη οὐ δώσει τὸ"
+    },
+    {
+      "ref": "Matthew 24:29",
+      "form": "σκοτισθήσεται,",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 29,
+      "left_context": "θλῖψιν τῶν ἡμερῶν ἐκείνων ὁ ἥλιος",
+      "right_context": "καὶ ἡ σελήνη οὐ δώσει τὸ"
+    },
+    {
+      "ref": "Romans 1:21",
+      "form": "ἐσκοτίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "ἐματαιώθησαν ἐν τοῖς διαλογισμοῖς αὐτῶν καὶ",
+      "right_context": "ἡ ἀσύνετος αὐτῶν καρδία·"
+    },
+    {
+      "ref": "Romans 11:10",
+      "form": "σκοτισθήτωσαν",
+      "morph": "V-A-P-D-3P",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 10,
+      "left_context": "",
+      "right_context": "οἱ ὀφθαλμοὶ αὐτῶν τοῦ μὴ βλέπειν,"
+    }
+  ],
+  "books": {
+    "Romans": 2,
+    "Revelation": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τρίτος",
+      "display": "tercero",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "sol",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σελήνη",
+      "display": "luna",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dará",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀστήρ",
+      "display": "de·estrellas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "tribulación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαλογισμός",
+      "display": "razonamientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσύνετος",
+      "display": "insensata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Romans 11:10",
+      "form": "σκοτισθήτωσαν",
+      "morph": "V-A-P-D-3P",
+      "clause_text": "σκοτισθήτωσαν οἱ ὀφθαλμοὶ αὐτῶν τοῦ μὴ βλέπειν, καὶ τὸν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 13:24",
+      "negator": "οὐ",
+      "clause_text": "ταῖς ἡμέραις μετὰ τὴν θλῖψιν ἐκείνην ὁ ἥλιος σκοτισθήσεται, καὶ ἡ σελήνη οὐ δώσει τὸ φέγγος αὐτῆς,"
+    },
+    {
+      "ref": "Matthew 24:29",
+      "negator": "οὐ",
+      "clause_text": "μετὰ τὴν θλῖψιν τῶν ἡμερῶν ἐκείνων ὁ ἥλιος σκοτισθήσεται, καὶ ἡ σελήνη οὐ δώσει τὸ φέγγος αὐτῆς,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 11:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 1:21",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 13:24",
+      "reason": "occurs near δίδωμι, σελήνη, ἥλιος"
+    },
+    {
+      "ref": "Matthew 24:29",
+      "reason": "occurs near δίδωμι, σελήνη, ἥλιος"
+    },
+    {
+      "ref": "Revelation 8:12",
+      "reason": "occurs near τρίτος, ἀστήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

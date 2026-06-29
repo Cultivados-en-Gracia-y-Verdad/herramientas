@@ -1,0 +1,86 @@
+{
+  "lemma": "αὐθεντέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "αὐθεντεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 2:12",
+      "form": "αὐθεντεῖν",
+      "morph": "V-P-A-N",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "⸂διδάσκειν δὲ γυναικὶ⸃ οὐκ ἐπιτρέπω, οὐδὲ",
+      "right_context": "ἀνδρός, ἀλλ’ εἶναι ἐν ἡσυχίᾳ."
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτρέπω",
+      "display": "permito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "de·varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡσυχία",
+      "display": "quietud",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 2:12",
+      "negator": "οὐκ",
+      "clause_text": "⸂διδάσκειν δὲ γυναικὶ⸃ οὐκ ἐπιτρέπω, οὐδὲ αὐθεντεῖν ἀνδρός, ἀλλ’ εἶναι ἐν ἡσυχίᾳ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 2:12",
+      "reason": "occurs near γυνή, ἀνήρ, ἐπιτρέπω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,197 @@
+{
+  "lemma": "δελεάζω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "δελεάζοντες",
+      "count": 1
+    },
+    {
+      "form": "δελεάζουσιν",
+      "count": 1
+    },
+    {
+      "form": "δελεαζόμενος·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:14",
+      "form": "δελεάζοντες",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "ἔχοντες μεστοὺς μοιχαλίδος καὶ ⸀ἀκαταπαύστους ἁμαρτίας,",
+      "right_context": "ψυχὰς ἀστηρίκτους, καρδίαν γεγυμνασμένην πλεονεξίας ἔχοντες,"
+    },
+    {
+      "ref": "2 Peter 2:18",
+      "form": "δελεάζουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "ὑπέρογκα γὰρ ματαιότητος φθεγγόμενοι",
+      "right_context": "ἐν ἐπιθυμίαις σαρκὸς ἀσελγείαις τοὺς ⸀ὀλίγως"
+    },
+    {
+      "ref": "James 1:14",
+      "form": "δελεαζόμενος·",
+      "morph": "V-P-P-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "ὑπὸ τῆς ἰδίας ἐπιθυμίας ἐξελκόμενος καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Peter": 2,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μεστός",
+      "display": "llenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μοιχαλίς",
+      "display": "de·adúltera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκατάπαυστος",
+      "display": "sin·cesar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀστήρικτος",
+      "display": "inconstantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυμνάζω",
+      "display": "ejercitada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονεξία",
+      "display": "de·avaricia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρογκος",
+      "display": "jactanciosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ματαιότης",
+      "display": "de·vanidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθέγγομαι",
+      "display": "hablando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσέλγεια",
+      "display": "lascivias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "de·propia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέλκω",
+      "display": "arrastrado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:14",
+      "reason": "occurs near μεστός, μοιχαλίς, ἀκατάπαυστος"
+    },
+    {
+      "ref": "2 Peter 2:18",
+      "reason": "occurs near ἐπιθυμία"
+    },
+    {
+      "ref": "James 1:14",
+      "reason": "occurs near ἐπιθυμία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

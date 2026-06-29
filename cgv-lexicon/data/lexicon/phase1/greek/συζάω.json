@@ -1,0 +1,120 @@
+{
+  "lemma": "συζάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συζῆν.",
+      "count": 1
+    },
+    {
+      "form": "συζήσομεν·",
+      "count": 1
+    },
+    {
+      "form": "συζήσομεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "future": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 7:3",
+      "form": "συζῆν.",
+      "morph": "V-P-A-N",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 3,
+      "left_context": "ἡμῶν ἐστε εἰς τὸ συναποθανεῖν καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Timothy 2:11",
+      "form": "συζήσομεν·",
+      "morph": "V-F-A-I-1P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "ὁ λόγος· εἰ γὰρ συναπεθάνομεν, καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 6:8",
+      "form": "συζήσομεν",
+      "morph": "V-F-A-I-1P",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "ἀπεθάνομεν σὺν Χριστῷ, πιστεύομεν ὅτι καὶ",
+      "right_context": "αὐτῷ·"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "2 Timothy": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συναποθνῄσκω",
+      "display": "morir·con",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creemos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 7:3",
+      "reason": "occurs near συναποθνῄσκω"
+    },
+    {
+      "ref": "2 Timothy 2:11",
+      "reason": "occurs near λόγος, συναποθνῄσκω"
+    },
+    {
+      "ref": "Romans 6:8",
+      "reason": "occurs near Χριστός, πιστεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

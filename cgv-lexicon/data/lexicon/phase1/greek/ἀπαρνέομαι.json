@@ -1,0 +1,384 @@
+{
+  "lemma": "ἀπαρνέομαι",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "ἀπαρνήσῃ",
+      "count": 4
+    },
+    {
+      "form": "ἀπαρνησάσθω",
+      "count": 2
+    },
+    {
+      "form": "⸀ἀπαρνήσομαι.",
+      "count": 2
+    },
+    {
+      "form": "ἀπαρνηθήσεται",
+      "count": 1
+    },
+    {
+      "form": "ἀπαρνήσῃ⸃.",
+      "count": 1
+    },
+    {
+      "form": "ἀπαρνήσῃ⸃,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 8,
+      "subjunctive": 1,
+      "imperative": 2
+    },
+    "tenses": {
+      "future": 8,
+      "aorist": 3
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 10
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:9",
+      "form": "ἀπαρνηθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 9,
+      "left_context": "δὲ ἀρνησάμενός με ἐνώπιον τῶν ἀνθρώπων",
+      "right_context": "ἐνώπιον τῶν ἀγγέλων τοῦ θεοῦ."
+    },
+    {
+      "ref": "Luke 22:34",
+      "form": "ἀπαρνήσῃ",
+      "morph": "V-A-M-S-2S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 34,
+      "left_context": "⸀φωνήσει σήμερον ἀλέκτωρ ⸀ἕως τρίς ⸂με",
+      "right_context": "εἰδέναι⸃."
+    },
+    {
+      "ref": "Luke 22:61",
+      "form": "ἀπαρνήσῃ",
+      "morph": "V-F-M-I-2S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 61,
+      "left_context": "αὐτῷ ὅτι Πρὶν ἀλέκτορα φωνῆσαι ⸀σήμερον",
+      "right_context": "με τρίς."
+    },
+    {
+      "ref": "Mark 8:34",
+      "form": "ἀπαρνησάσθω",
+      "morph": "V-A-M-D-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 34,
+      "left_context": "⸂Εἴ τις⸃ θέλει ὀπίσω μου ⸀ἐλθεῖν,",
+      "right_context": "ἑαυτὸν καὶ ἀράτω τὸν σταυρὸν αὐτοῦ"
+    },
+    {
+      "ref": "Mark 14:30",
+      "form": "ἀπαρνήσῃ⸃.",
+      "morph": "V-F-M-I-2S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 30,
+      "left_context": "ἢ δὶς ἀλέκτορα φωνῆσαι τρίς ⸂με",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 14:31",
+      "form": "⸀ἀπαρνήσομαι.",
+      "morph": "V-F-M-I-1S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 31,
+      "left_context": "με⸃ συναποθανεῖν σοι, οὐ μή σε",
+      "right_context": "ὡσαύτως δὲ καὶ πάντες ἔλεγον."
+    },
+    {
+      "ref": "Mark 14:72",
+      "form": "ἀπαρνήσῃ⸃,",
+      "morph": "V-F-M-I-2S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 72,
+      "left_context": "Πρὶν ἀλέκτορα ⸂φωνῆσαι δὶς τρίς με",
+      "right_context": "καὶ ἐπιβαλὼν ἔκλαιεν."
+    },
+    {
+      "ref": "Matthew 16:24",
+      "form": "ἀπαρνησάσθω",
+      "morph": "V-A-M-D-3S",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 24,
+      "left_context": "Εἴ τις θέλει ὀπίσω μου ἐλθεῖν,",
+      "right_context": "ἑαυτὸν καὶ ἀράτω τὸν σταυρὸν αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 26:34",
+      "form": "ἀπαρνήσῃ",
+      "morph": "V-F-M-I-2S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 34,
+      "left_context": "τῇ νυκτὶ πρὶν ἀλέκτορα φωνῆσαι τρὶς",
+      "right_context": "με."
+    },
+    {
+      "ref": "Matthew 26:35",
+      "form": "⸀ἀπαρνήσομαι.",
+      "morph": "V-F-M-I-1S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 35,
+      "left_context": "σὺν σοὶ ἀποθανεῖν, οὐ μή σε",
+      "right_context": "⸀ὁμοίως καὶ πάντες οἱ μαθηταὶ εἶπαν."
+    },
+    {
+      "ref": "Matthew 26:75",
+      "form": "ἀπαρνήσῃ",
+      "morph": "V-F-M-I-2S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 75,
+      "left_context": "⸀εἰρηκότος ὅτι Πρὶν ἀλέκτορα φωνῆσαι τρὶς",
+      "right_context": "με, καὶ ἐξελθὼν ἔξω ἔκλαυσεν πικρῶς."
+    }
+  ],
+  "books": {
+    "Mark": 4,
+    "Matthew": 4,
+    "Luke": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀλέκτωρ",
+      "display": "gallo",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "τρίς",
+      "display": "tres·veces",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "φωνέω",
+      "display": "llamar",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "πρίν",
+      "display": "antes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiere",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀπίσω",
+      "display": "detrás",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αἴρω",
+      "display": "levanta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρός",
+      "display": "cruz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίς",
+      "display": "dos·veces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "lloraba",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρνέομαι",
+      "display": "negado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "de·ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "saber",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναποθνῄσκω",
+      "display": "morir·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσαύτως",
+      "display": "igualmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιβάλλω",
+      "display": "echado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morir",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 8:34",
+      "form": "ἀπαρνησάσθω",
+      "morph": "V-A-M-D-3S",
+      "clause_text": "εἶπεν αὐτοῖς· ⸂Εἴ τις⸃ θέλει ὀπίσω μου ⸀ἐλθεῖν, ἀπαρνησάσθω ἑαυτὸν καὶ ἀράτω τὸν σταυρὸν αὐτοῦ καὶ ἀκολουθείτω"
+    },
+    {
+      "ref": "Matthew 16:24",
+      "form": "ἀπαρνησάσθω",
+      "morph": "V-A-M-D-3S",
+      "clause_text": "μαθηταῖς αὐτοῦ· Εἴ τις θέλει ὀπίσω μου ἐλθεῖν, ἀπαρνησάσθω ἑαυτὸν καὶ ἀράτω τὸν σταυρὸν αὐτοῦ καὶ ἀκολουθείτω"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 14:31",
+      "negator": "οὐ",
+      "clause_text": "Ἐὰν ⸂δέῃ με⸃ συναποθανεῖν σοι, οὐ μή σε ⸀ἀπαρνήσομαι. ὡσαύτως δὲ καὶ πάντες ἔλεγον."
+    },
+    {
+      "ref": "Matthew 26:35",
+      "negator": "οὐ",
+      "clause_text": "δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ⸀ἀπαρνήσομαι. ⸀ὁμοίως καὶ πάντες οἱ μαθηταὶ εἶπαν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 8:34",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 16:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 14:30",
+      "reason": "occurs near τρίς, φωνέω, ἀλέκτωρ"
+    },
+    {
+      "ref": "Mark 14:31",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 14:72",
+      "reason": "occurs near τρίς, φωνέω, ἀλέκτωρ"
+    },
+    {
+      "ref": "Matthew 26:34",
+      "reason": "occurs near πρίν, τρίς, φωνέω"
+    },
+    {
+      "ref": "Matthew 26:35",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 26:75",
+      "reason": "occurs near πρίν, τρίς, φωνέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

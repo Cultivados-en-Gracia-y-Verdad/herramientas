@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀπελπίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπελπίζοντες·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:35",
+      "form": "ἀπελπίζοντες·",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 35,
+      "left_context": "ὑμῶν καὶ ἀγαθοποιεῖτε καὶ δανίζετε μηδὲν",
+      "right_context": "καὶ ἔσται ὁ μισθὸς ὑμῶν πολύς,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγαθοποιέω",
+      "display": "hacer·bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δανείζω",
+      "display": "prestad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθός",
+      "display": "salario",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:35",
+      "reason": "occurs near δανείζω, μισθός, ἀγαθοποιέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

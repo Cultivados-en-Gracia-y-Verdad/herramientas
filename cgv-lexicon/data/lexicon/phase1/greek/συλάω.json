@@ -1,0 +1,80 @@
+{
+  "lemma": "συλάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐσύλησα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:8",
+      "form": "ἐσύλησα",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 8,
+      "left_context": "ἄλλας ἐκκλησίας",
+      "right_context": "λαβὼν ὀψώνιον πρὸς τὴν ὑμῶν διακονίαν,"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄλλος",
+      "display": "otras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψώνιον",
+      "display": "salario",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 11:8",
+      "reason": "occurs near λαμβάνω, ἄλλος, ἐκκλησία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

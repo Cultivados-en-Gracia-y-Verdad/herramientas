@@ -1,0 +1,126 @@
+{
+  "lemma": "ἀποπλανάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀπεπλανήθησαν",
+      "count": 1
+    },
+    {
+      "form": "ἀποπλανᾶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:10",
+      "form": "ἀπεπλανήθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "ἐστιν ἡ φιλαργυρία, ἧς τινες ὀρεγόμενοι",
+      "right_context": "ἀπὸ τῆς πίστεως καὶ ἑαυτοὺς περιέπειραν"
+    },
+    {
+      "ref": "Mark 13:22",
+      "form": "ἀποπλανᾶν",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 22,
+      "left_context": "δώσουσιν σημεῖα καὶ τέρατα πρὸς τὸ",
+      "right_context": "εἰ ⸀δυνατὸν τοὺς ἐκλεκτούς·"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φιλαργυρία",
+      "display": "amor·al·dinero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀρέγομαι",
+      "display": "anhelando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σημεῖον",
+      "display": "señales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέρας",
+      "display": "prodigios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderoso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλεκτός",
+      "display": "elegidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:10",
+      "reason": "occurs near πίστις, φιλαργυρία, ἑαυτοῦ"
+    },
+    {
+      "ref": "Mark 13:22",
+      "reason": "occurs near σημεῖον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

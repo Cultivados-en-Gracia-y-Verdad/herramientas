@@ -1,0 +1,112 @@
+{
+  "lemma": "συνεισέρχομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνεισῆλθεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "John 6:22",
+      "form": "συνεισῆλθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 6,
+      "verse": 22,
+      "left_context": "εἰ μὴ ⸀ἕν, καὶ ὅτι οὐ",
+      "right_context": "τοῖς μαθηταῖς αὐτοῦ ὁ Ἰησοῦς εἰς"
+    },
+    {
+      "ref": "John 18:15",
+      "form": "συνεισῆλθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 18,
+      "verse": 15,
+      "left_context": "ἐκεῖνος ἦν γνωστὸς τῷ ἀρχιερεῖ καὶ",
+      "right_context": "τῷ Ἰησοῦ εἰς τὴν αὐλὴν τοῦ"
+    }
+  ],
+  "books": {
+    "John": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνωστός",
+      "display": "conocido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐλή",
+      "display": "patio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 6:22",
+      "negator": "οὐ",
+      "clause_text": "ἦν ἐκεῖ εἰ μὴ ⸀ἕν, καὶ ὅτι οὐ συνεισῆλθεν τοῖς μαθηταῖς αὐτοῦ ὁ Ἰησοῦς εἰς τὸ ⸀πλοῖον"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 18:15",
+      "reason": "occurs near γνωστός, ἀρχιερεύς, Ἰησοῦς"
+    },
+    {
+      "ref": "John 6:22",
+      "reason": "occurs near εἷς, μαθητής, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

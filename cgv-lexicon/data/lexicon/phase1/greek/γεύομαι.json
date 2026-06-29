@@ -1,0 +1,488 @@
+{
+  "lemma": "γεύομαι",
+  "language": "greek",
+  "total_occurrences": 15,
+  "forms": [
+    {
+      "form": "γεύσωνται",
+      "count": 3
+    },
+    {
+      "form": "γεύσηται",
+      "count": 2
+    },
+    {
+      "form": "γευσαμένους",
+      "count": 2
+    },
+    {
+      "form": "γευσάμενος",
+      "count": 2
+    },
+    {
+      "form": "ἐγεύσασθε",
+      "count": 1
+    },
+    {
+      "form": "γεύσῃ",
+      "count": 1
+    },
+    {
+      "form": "γεύσασθαι·",
+      "count": 1
+    },
+    {
+      "form": "γεύσασθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐγεύσατο",
+      "count": 1
+    },
+    {
+      "form": "γεύσεταί",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "subjunctive": 6,
+      "participle": 4,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 14,
+      "future": 1
+    },
+    "voices": {
+      "middle": 15
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:3",
+      "form": "ἐγεύσασθε",
+      "morph": "V-A-M-I-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "⸀εἰ",
+      "right_context": "ὅτι χρηστὸς ὁ κύριος."
+    },
+    {
+      "ref": "Colossians 2:21",
+      "form": "γεύσῃ",
+      "morph": "V-A-M-S-2S",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "Μὴ ἅψῃ μηδὲ",
+      "right_context": "μηδὲ θίγῃς,"
+    },
+    {
+      "ref": "Hebrews 2:9",
+      "form": "γεύσηται",
+      "morph": "V-A-M-S-3S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "ἐστεφανωμένον, ὅπως ⸀χωρὶς θεοῦ ὑπὲρ παντὸς",
+      "right_context": "θανάτου."
+    },
+    {
+      "ref": "Hebrews 6:4",
+      "form": "γευσαμένους",
+      "morph": "V-A-M-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 4,
+      "left_context": "Ἀδύνατον γὰρ τοὺς ἅπαξ φωτισθέντας",
+      "right_context": "τε τῆς δωρεᾶς τῆς ἐπουρανίου καὶ"
+    },
+    {
+      "ref": "Hebrews 6:5",
+      "form": "γευσαμένους",
+      "morph": "V-A-M-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "καὶ καλὸν",
+      "right_context": "θεοῦ ῥῆμα δυνάμεις τε μέλλοντος αἰῶνος,"
+    },
+    {
+      "ref": "Acts 10:10",
+      "form": "γεύσασθαι·",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 10,
+      "left_context": "ἐγένετο δὲ πρόσπεινος καὶ ἤθελεν",
+      "right_context": "παρασκευαζόντων δὲ ⸀αὐτῶν ⸀ἐγένετο ἐπ’ αὐτὸν"
+    },
+    {
+      "ref": "Acts 20:11",
+      "form": "γευσάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 11,
+      "left_context": "δὲ καὶ κλάσας ⸀τὸν ἄρτον καὶ",
+      "right_context": "ἐφ’ ἱκανόν τε ὁμιλήσας ἄχρι αὐγῆς,"
+    },
+    {
+      "ref": "Acts 23:14",
+      "form": "γεύσασθαι",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 14,
+      "left_context": "πρεσβυτέροις εἶπαν· Ἀναθέματι ἀνεθεματίσαμεν ἑαυτοὺς μηδενὸς",
+      "right_context": "ἕως οὗ ἀποκτείνωμεν τὸν Παῦλον."
+    },
+    {
+      "ref": "John 2:9",
+      "form": "ἐγεύσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "John",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "ὡς δὲ",
+      "right_context": "ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον,"
+    },
+    {
+      "ref": "John 8:52",
+      "form": "γεύσηται",
+      "morph": "V-A-M-S-3S",
+      "book": "John",
+      "chapter": 8,
+      "verse": 52,
+      "left_context": "τὸν λόγον μου τηρήσῃ, οὐ μὴ",
+      "right_context": "θανάτου εἰς τὸν αἰῶνα·"
+    },
+    {
+      "ref": "Luke 9:27",
+      "form": "γεύσωνται",
+      "morph": "V-A-M-S-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 27,
+      "left_context": "τῶν ⸀αὐτοῦ ⸀ἑστηκότων οἳ οὐ μὴ",
+      "right_context": "θανάτου ἕως ἂν ἴδωσιν τὴν βασιλείαν"
+    },
+    {
+      "ref": "Luke 14:24",
+      "form": "γεύσεταί",
+      "morph": "V-F-M-I-3S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 24,
+      "left_context": "οὐδεὶς τῶν ἀνδρῶν ἐκείνων τῶν κεκλημένων",
+      "right_context": "μου τοῦ ⸀δείπνου."
+    },
+    {
+      "ref": "Mark 9:1",
+      "form": "γεύσωνται",
+      "morph": "V-A-M-S-3P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 1,
+      "left_context": "⸂τῶν ὧδε⸃ ἑστηκότων οἵτινες οὐ μὴ",
+      "right_context": "θανάτου ἕως ἂν ἴδωσιν τὴν βασιλείαν"
+    },
+    {
+      "ref": "Matthew 16:28",
+      "form": "γεύσωνται",
+      "morph": "V-A-M-S-3P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 28,
+      "left_context": "⸂τῶν ὧδε ἑστώτων⸃ οἵτινες οὐ μὴ",
+      "right_context": "θανάτου ἕως ἂν ἴδωσιν τὸν υἱὸν"
+    },
+    {
+      "ref": "Matthew 27:34",
+      "form": "γευσάμενος",
+      "morph": "V-A-M-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 34,
+      "left_context": "πιεῖν ⸀οἶνον μετὰ χολῆς μεμιγμένον· καὶ",
+      "right_context": "οὐκ ⸀ἠθέλησεν πιεῖν."
+    }
+  ],
+  "books": {
+    "Hebrews": 3,
+    "Acts": 3,
+    "John": 2,
+    "Luke": 2,
+    "Matthew": 2,
+    "1 Peter": 1,
+    "Colossians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "puestos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "van",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quería",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὧδε",
+      "display": "aquí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χρηστός",
+      "display": "benigno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπτω",
+      "display": "toces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θιγγάνω",
+      "display": "toces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδύνατος",
+      "display": "imposible",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωτίζω",
+      "display": "iluminados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δωρεά",
+      "display": "de·don",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπουράνιος",
+      "display": "de·celestial",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dicho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poderes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 2:21",
+      "form": "γεύσῃ",
+      "morph": "V-A-M-S-2S",
+      "clause_text": "Μὴ ἅψῃ μηδὲ γεύσῃ μηδὲ θίγῃς,",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "John 8:52",
+      "form": "γεύσηται",
+      "morph": "V-A-M-S-3S",
+      "clause_text": "Ἐάν τις τὸν λόγον μου τηρήσῃ, οὐ μὴ γεύσηται θανάτου εἰς τὸν αἰῶνα·",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 9:27",
+      "form": "γεύσωνται",
+      "morph": "V-A-M-S-3P",
+      "clause_text": "εἰσίν τινες τῶν ⸀αὐτοῦ ⸀ἑστηκότων οἳ οὐ μὴ γεύσωνται θανάτου ἕως ἂν ἴδωσιν τὴν βασιλείαν τοῦ θεοῦ.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 9:1",
+      "form": "γεύσωνται",
+      "morph": "V-A-M-S-3P",
+      "clause_text": "εἰσίν τινες ⸂τῶν ὧδε⸃ ἑστηκότων οἵτινες οὐ μὴ γεύσωνται θανάτου ἕως ἂν ἴδωσιν τὴν βασιλείαν τοῦ θεοῦ",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 16:28",
+      "form": "γεύσωνται",
+      "morph": "V-A-M-S-3P",
+      "clause_text": "εἰσίν τινες ⸂τῶν ὧδε ἑστώτων⸃ οἵτινες οὐ μὴ γεύσωνται θανάτου ἕως ἂν ἴδωσιν τὸν υἱὸν τοῦ ἀνθρώπου",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 2:21",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ ἅψῃ μηδὲ γεύσῃ μηδὲ θίγῃς,"
+    },
+    {
+      "ref": "John 8:52",
+      "negator": "οὐ",
+      "clause_text": "Ἐάν τις τὸν λόγον μου τηρήσῃ, οὐ μὴ γεύσηται θανάτου εἰς τὸν αἰῶνα·"
+    },
+    {
+      "ref": "Luke 9:27",
+      "negator": "οὐ",
+      "clause_text": "εἰσίν τινες τῶν ⸀αὐτοῦ ⸀ἑστηκότων οἳ οὐ μὴ γεύσωνται θανάτου ἕως ἂν ἴδωσιν τὴν βασιλείαν τοῦ θεοῦ."
+    },
+    {
+      "ref": "Mark 9:1",
+      "negator": "οὐ",
+      "clause_text": "εἰσίν τινες ⸂τῶν ὧδε⸃ ἑστηκότων οἵτινες οὐ μὴ γεύσωνται θανάτου ἕως ἂν ἴδωσιν τὴν βασιλείαν τοῦ θεοῦ"
+    },
+    {
+      "ref": "Matthew 16:28",
+      "negator": "οὐ",
+      "clause_text": "εἰσίν τινες ⸂τῶν ὧδε ἑστώτων⸃ οἵτινες οὐ μὴ γεύσωνται θανάτου ἕως ἂν ἴδωσιν τὸν υἱὸν τοῦ ἀνθρώπου"
+    },
+    {
+      "ref": "Matthew 27:34",
+      "negator": "οὐκ",
+      "clause_text": "ἔδωκαν αὐτῷ πιεῖν ⸀οἶνον μετὰ χολῆς μεμιγμένον· καὶ γευσάμενος οὐκ ⸀ἠθέλησεν πιεῖν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 20:11",
+      "reason": "occurs near τέ"
+    },
+    {
+      "ref": "Acts 23:14",
+      "reason": "occurs near ἕως"
+    },
+    {
+      "ref": "Hebrews 2:9",
+      "reason": "occurs near θάνατος"
+    },
+    {
+      "ref": "Hebrews 6:4",
+      "reason": "occurs near τέ"
+    },
+    {
+      "ref": "Hebrews 6:5",
+      "reason": "occurs near τέ"
+    },
+    {
+      "ref": "John 2:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 8:52",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

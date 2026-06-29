@@ -1,0 +1,74 @@
+{
+  "lemma": "μαστίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μαστίζειν;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 22:25",
+      "form": "μαστίζειν;",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 25,
+      "left_context": "ἄνθρωπον Ῥωμαῖον καὶ ἀκατάκριτον ἔξεστιν ὑμῖν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ῥωμαῖος",
+      "display": "Romano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκατάκριτος",
+      "display": "sin·condena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξεστι(ν)",
+      "display": "es·lícito",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:25",
+      "reason": "occurs near ἀκατάκριτος, ἔξεστι(ν), Ῥωμαῖος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

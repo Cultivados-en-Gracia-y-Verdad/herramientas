@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀναβιβάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀναβιβάσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 13:48",
+      "form": "ἀναβιβάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 48,
+      "left_context": "ἣν ὅτε ἐπληρώθη",
+      "right_context": "ἐπὶ τὸν αἰγιαλὸν καὶ καθίσαντες συνέλεξαν"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "fue cumplido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰγιαλός",
+      "display": "orilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίζω",
+      "display": "sentados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:48",
+      "reason": "occurs near αἰγιαλός, καθίζω, πληρόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

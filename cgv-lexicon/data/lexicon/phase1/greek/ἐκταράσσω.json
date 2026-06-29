@@ -1,0 +1,86 @@
+{
+  "lemma": "ἐκταράσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκταράσσουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:20",
+      "form": "ἐκταράσσουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 20,
+      "left_context": "τοῖς στρατηγοῖς εἶπαν· Οὗτοι οἱ ἄνθρωποι",
+      "right_context": "ἡμῶν τὴν πόλιν Ἰουδαῖοι ὑπάρχοντες,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "στρατηγός",
+      "display": "comandantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:20",
+      "reason": "occurs near πόλις, στρατηγός, ἄνθρωπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,163 @@
+{
+  "lemma": "συνακολουθέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀συνακολουθοῦσαι",
+      "count": 1
+    },
+    {
+      "form": "συνακολουθῆσαι",
+      "count": 1
+    },
+    {
+      "form": "⸀συνηκολούθει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 23:49",
+      "form": "⸀συνακολουθοῦσαι",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 49,
+      "left_context": "γνωστοὶ ⸀αὐτῷ ⸀μακρόθεν, καὶ γυναῖκες αἱ",
+      "right_context": "αὐτῷ ἀπὸ τῆς Γαλιλαίας, ὁρῶσαι ταῦτα."
+    },
+    {
+      "ref": "Mark 5:37",
+      "form": "συνακολουθῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 37,
+      "left_context": "καὶ οὐκ ἀφῆκεν οὐδένα ⸂μετ’ αὐτοῦ⸃",
+      "right_context": "εἰ μὴ ⸀τὸν Πέτρον καὶ Ἰάκωβον"
+    },
+    {
+      "ref": "Mark 14:51",
+      "form": "⸀συνηκολούθει",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 51,
+      "left_context": "Καὶ ⸂νεανίσκος τις⸃",
+      "right_context": "αὐτῷ περιβεβλημένος σινδόνα ἐπὶ γυμνοῦ, καὶ"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μακρόθεν",
+      "display": "de·lejos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλιλαία",
+      "display": "de·Galilea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "viendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdonó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεανίσκος",
+      "display": "joven",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιβάλλω",
+      "display": "vestido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σινδών",
+      "display": "lienzo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυμνός",
+      "display": "de·desnudo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 5:37",
+      "negator": "μὴ",
+      "clause_text": "καὶ οὐκ ἀφῆκεν οὐδένα ⸂μετ’ αὐτοῦ⸃ συνακολουθῆσαι εἰ μὴ ⸀τὸν Πέτρον καὶ Ἰάκωβον καὶ Ἰωάννην"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 14:51",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 5:37",
+      "reason": "occurs near ἀφίημι"
+    },
+    {
+      "ref": "Luke 23:49",
+      "reason": "occurs near Γαλιλαία, γυνή, μακρόθεν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

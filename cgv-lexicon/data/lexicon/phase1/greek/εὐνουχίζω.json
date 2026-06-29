@@ -1,0 +1,107 @@
+{
+  "lemma": "εὐνουχίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "εὐνουχίσθησαν",
+      "count": 1
+    },
+    {
+      "form": "εὐνούχισαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 19:12",
+      "form": "εὐνουχίσθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 12,
+      "left_context": "ἐγεννήθησαν οὕτως, καὶ εἰσὶν εὐνοῦχοι οἵτινες",
+      "right_context": "ὑπὸ τῶν ἀνθρώπων, καὶ εἰσὶν εὐνοῦχοι"
+    },
+    {
+      "ref": "Matthew 19:12",
+      "form": "εὐνούχισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 12,
+      "left_context": "τῶν ἀνθρώπων, καὶ εἰσὶν εὐνοῦχοι οἵτινες",
+      "right_context": "ἑαυτοὺς διὰ τὴν βασιλείαν τῶν οὐρανῶν."
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εὐνοῦχος",
+      "display": "eunucos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 19:12",
+      "reason": "occurs near εὐνοῦχος, οὕτω(ς), ἄνθρωπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

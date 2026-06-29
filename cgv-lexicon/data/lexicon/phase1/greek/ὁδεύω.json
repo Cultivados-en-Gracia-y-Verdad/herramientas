@@ -1,0 +1,74 @@
+{
+  "lemma": "ὁδεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὁδεύων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:33",
+      "form": "ὁδεύων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 33,
+      "left_context": "Σαμαρίτης δέ τις",
+      "right_context": "ἦλθεν κατ’ αὐτὸν καὶ ⸀ἰδὼν ἐσπλαγχνίσθη,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Σαμαρίτης",
+      "display": "Samaritano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:33",
+      "reason": "occurs near Σαμαρίτης, ἔρχομαι, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

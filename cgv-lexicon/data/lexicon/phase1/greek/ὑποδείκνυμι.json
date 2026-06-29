@@ -1,0 +1,209 @@
+{
+  "lemma": "ὑποδείκνυμι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ὑποδείξω",
+      "count": 3
+    },
+    {
+      "form": "ὑπέδειξεν",
+      "count": 2
+    },
+    {
+      "form": "ὑπέδειξα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 6
+    },
+    "tenses": {
+      "future": 3,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:16",
+      "form": "ὑποδείξω",
+      "morph": "V-F-A-I-1S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 16,
+      "left_context": "ἐγὼ γὰρ",
+      "right_context": "αὐτῷ ὅσα δεῖ αὐτὸν ὑπὲρ τοῦ"
+    },
+    {
+      "ref": "Acts 20:35",
+      "form": "ὑπέδειξα",
+      "morph": "V-A-A-I-1S",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 35,
+      "left_context": "πάντα",
+      "right_context": "ὑμῖν ὅτι οὕτως κοπιῶντας δεῖ ἀντιλαμβάνεσθαι"
+    },
+    {
+      "ref": "Luke 3:7",
+      "form": "ὑπέδειξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "βαπτισθῆναι ὑπ’ αὐτοῦ· Γεννήματα ἐχιδνῶν, τίς",
+      "right_context": "ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς;"
+    },
+    {
+      "ref": "Luke 6:47",
+      "form": "ὑποδείξω",
+      "morph": "V-F-A-I-1S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 47,
+      "left_context": "μου τῶν λόγων καὶ ποιῶν αὐτούς,",
+      "right_context": "ὑμῖν τίνι ἐστὶν ὅμοιος·"
+    },
+    {
+      "ref": "Luke 12:5",
+      "form": "ὑποδείξω",
+      "morph": "V-F-A-I-1S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "",
+      "right_context": "δὲ ὑμῖν τίνα φοβηθῆτε· φοβήθητε τὸν"
+    },
+    {
+      "ref": "Matthew 3:7",
+      "form": "ὑπέδειξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "⸀αὐτοῦ εἶπεν αὐτοῖς· Γεννήματα ἐχιδνῶν, τίς",
+      "right_context": "ὑμῖν φυγεῖν ἀπὸ τῆς μελλούσης ὀργῆς;"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Acts": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γέννημα",
+      "display": "descendencias",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔχιδνα",
+      "display": "de·víboras",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φεύγω",
+      "display": "huir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temáis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabajando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "de·palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅμοιος",
+      "display": "semejante",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 3:7",
+      "reason": "occurs near γέννημα, μέλλω, φεύγω"
+    },
+    {
+      "ref": "Luke 6:47",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 20:35",
+      "reason": "occurs near δέω"
+    },
+    {
+      "ref": "Acts 9:16",
+      "reason": "occurs near δέω"
+    },
+    {
+      "ref": "Matthew 3:7",
+      "reason": "occurs near γέννημα, μέλλω, φεύγω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

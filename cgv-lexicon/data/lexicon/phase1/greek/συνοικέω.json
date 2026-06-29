@@ -1,0 +1,86 @@
+{
+  "lemma": "συνοικέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνοικοῦντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:7",
+      "form": "συνοικοῦντες",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "Οἱ ἄνδρες ὁμοίως",
+      "right_context": "κατὰ γνῶσιν, ὡς ἀσθενεστέρῳ σκεύει τῷ"
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμοίως",
+      "display": "igualmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνῶσις",
+      "display": "conocimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενής",
+      "display": "débil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasija",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 3:7",
+      "reason": "occurs near γνῶσις, σκεῦος, ἀνήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

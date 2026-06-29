@@ -1,0 +1,155 @@
+{
+  "lemma": "ἀποφεύγω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀποφυγόντες",
+      "count": 2
+    },
+    {
+      "form": "⸀ἀποφεύγοντας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:4",
+      "form": "ἀποφυγόντες",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "διὰ τούτων γένησθε θείας κοινωνοὶ φύσεως,",
+      "right_context": "τῆς ἐν ⸀τῷ κόσμῳ ἐν ἐπιθυμίᾳ"
+    },
+    {
+      "ref": "2 Peter 2:18",
+      "form": "⸀ἀποφεύγοντας",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "ἐν ἐπιθυμίαις σαρκὸς ἀσελγείαις τοὺς ⸀ὀλίγως",
+      "right_context": "τοὺς ἐν πλάνῃ ἀναστρεφομένους,"
+    },
+    {
+      "ref": "2 Peter 2:20",
+      "form": "ἀποφυγόντες",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "εἰ γὰρ",
+      "right_context": "τὰ μιάσματα τοῦ κόσμου ἐν ἐπιγνώσει"
+    }
+  ],
+  "books": {
+    "2 Peter": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεῖος",
+      "display": "de·divina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοινωνός",
+      "display": "partícipes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φύσις",
+      "display": "de·naturaleza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσέλγεια",
+      "display": "lascivias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγως",
+      "display": "poco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλάνη",
+      "display": "engaño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναστρέφω",
+      "display": "conducirses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μίασμα",
+      "display": "corrupciónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:4",
+      "reason": "occurs near θεῖος, κοινωνός, κόσμος"
+    },
+    {
+      "ref": "2 Peter 2:18",
+      "reason": "occurs near ἐπιθυμία"
+    },
+    {
+      "ref": "2 Peter 2:20",
+      "reason": "occurs near κόσμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

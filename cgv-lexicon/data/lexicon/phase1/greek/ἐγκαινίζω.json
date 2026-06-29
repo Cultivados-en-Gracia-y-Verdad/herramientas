@@ -1,0 +1,112 @@
+{
+  "lemma": "ἐγκαινίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐγκεκαίνισται·",
+      "count": 1
+    },
+    {
+      "form": "ἐνεκαίνισεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 9:18",
+      "form": "ἐγκεκαίνισται·",
+      "morph": "V-X-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "ὅθεν οὐδὲ ἡ πρώτη χωρὶς αἵματος",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 10:20",
+      "form": "ἐνεκαίνισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 20,
+      "left_context": "ἣν",
+      "right_context": "ἡμῖν ὁδὸν πρόσφατον καὶ ζῶσαν διὰ"
+    }
+  ],
+  "books": {
+    "Hebrews": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πρῶτος",
+      "display": "primera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "de·sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσφατος",
+      "display": "nueva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:20",
+      "reason": "occurs near πρόσφατος, ὁδός"
+    },
+    {
+      "ref": "Hebrews 9:18",
+      "reason": "occurs near αἷμα, πρῶτος, χωρίς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

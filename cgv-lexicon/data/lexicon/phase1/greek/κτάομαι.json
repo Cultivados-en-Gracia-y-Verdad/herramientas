@@ -1,0 +1,341 @@
+{
+  "lemma": "κτάομαι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "κτᾶσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐκτήσατο",
+      "count": 1
+    },
+    {
+      "form": "κτᾶσθαι.",
+      "count": 1
+    },
+    {
+      "form": "ἐκτησάμην.",
+      "count": 1
+    },
+    {
+      "form": "κτῶμαι.",
+      "count": 1
+    },
+    {
+      "form": "⸀κτήσασθε",
+      "count": 1
+    },
+    {
+      "form": "κτήσησθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 3,
+      "imperative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 4
+    },
+    "voices": {
+      "middle": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 4:4",
+      "form": "κτᾶσθαι",
+      "morph": "V-P-M-N",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "εἰδέναι ἕκαστον ὑμῶν τὸ ἑαυτοῦ σκεῦος",
+      "right_context": "ἐν ἁγιασμῷ καὶ τιμῇ,"
+    },
+    {
+      "ref": "Acts 1:18",
+      "form": "ἐκτήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "Οὗτος μὲν οὖν",
+      "right_context": "χωρίον ἐκ μισθοῦ τῆς ἀδικίας, καὶ"
+    },
+    {
+      "ref": "Acts 8:20",
+      "form": "κτᾶσθαι.",
+      "morph": "V-P-M-N",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 20,
+      "left_context": "δωρεὰν τοῦ θεοῦ ἐνόμισας διὰ χρημάτων",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 22:28",
+      "form": "ἐκτησάμην.",
+      "morph": "V-A-M-I-1S",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 28,
+      "left_context": "Ἐγὼ πολλοῦ κεφαλαίου τὴν πολιτείαν ταύτην",
+      "right_context": "ὁ δὲ Παῦλος ἔφη· Ἐγὼ δὲ"
+    },
+    {
+      "ref": "Luke 18:12",
+      "form": "κτῶμαι.",
+      "morph": "V-P-M-I-1S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 12,
+      "left_context": "δὶς τοῦ σαββάτου, ⸀ἀποδεκατῶ πάντα ὅσα",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 21:19",
+      "form": "⸀κτήσασθε",
+      "morph": "V-A-M-D-2P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 19,
+      "left_context": "ἐν τῇ ὑπομονῇ ὑμῶν",
+      "right_context": "τὰς ψυχὰς ὑμῶν."
+    },
+    {
+      "ref": "Matthew 10:9",
+      "form": "κτήσησθε",
+      "morph": "V-A-M-S-2P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 9,
+      "left_context": "μὴ",
+      "right_context": "χρυσὸν μηδὲ ἄργυρον μηδὲ χαλκὸν εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Luke": 2,
+    "1 Thessalonians": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasija",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁγιασμός",
+      "display": "santificación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "honora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίον",
+      "display": "campo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθός",
+      "display": "de·salario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικία",
+      "display": "de·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νομίζω",
+      "display": "pensaste",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρῆμα",
+      "display": "de·dineros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφάλαιον",
+      "display": "de·suma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολιτεία",
+      "display": "ciudadanía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φημί",
+      "display": "decía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "de·sábado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδεκατόω",
+      "display": "diezmo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομονή",
+      "display": "paciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρυσός",
+      "display": "oro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄργυρος",
+      "display": "plata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαλκός",
+      "display": "cobre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 21:19",
+      "form": "⸀κτήσασθε",
+      "morph": "V-A-M-D-2P",
+      "clause_text": "ἐν τῇ ὑπομονῇ ὑμῶν ⸀κτήσασθε τὰς ψυχὰς ὑμῶν."
+    },
+    {
+      "ref": "Matthew 10:9",
+      "form": "κτήσησθε",
+      "morph": "V-A-M-S-2P",
+      "clause_text": "μὴ κτήσησθε χρυσὸν μηδὲ ἄργυρον μηδὲ χαλκὸν εἰς τὰς ζώνας",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 10:9",
+      "negator": "μὴ",
+      "clause_text": "μὴ κτήσησθε χρυσὸν μηδὲ ἄργυρον μηδὲ χαλκὸν εἰς τὰς ζώνας"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 1:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 22:28",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 8:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 18:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Thessalonians 4:4",
+      "reason": "occurs near σκεῦος, τιμή, ἁγιασμός"
+    },
+    {
+      "ref": "Matthew 10:9",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,68 @@
+{
+  "lemma": "ἀνανήφω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀνανήψωσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:26",
+      "form": "ἀνανήψωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 26,
+      "left_context": "καὶ",
+      "right_context": "ἐκ τῆς τοῦ διαβόλου παγίδος, ἐζωγρημένοι"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διάβολος",
+      "display": "de·diablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παγίς",
+      "display": "de·trampa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:26",
+      "reason": "occurs near διάβολος, παγίς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

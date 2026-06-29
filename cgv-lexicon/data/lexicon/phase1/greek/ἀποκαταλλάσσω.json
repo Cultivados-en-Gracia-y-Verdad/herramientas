@@ -1,0 +1,132 @@
+{
+  "lemma": "ἀποκαταλλάσσω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀποκαταλλάξαι",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀποκατηλλάγητε",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαταλλάξῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 1:20",
+      "form": "ἀποκαταλλάξαι",
+      "morph": "V-A-A-N",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "καὶ δι’ αὐτοῦ",
+      "right_context": "τὰ πάντα εἰς αὐτόν, εἰρηνοποιήσας διὰ"
+    },
+    {
+      "ref": "Colossians 1:22",
+      "form": "⸀ἀποκατηλλάγητε",
+      "morph": "V-A-P-I-2P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "νυνὶ δὲ",
+      "right_context": "ἐν τῷ σώματι τῆς σαρκὸς αὐτοῦ"
+    },
+    {
+      "ref": "Ephesians 2:16",
+      "form": "ἀποκαταλλάξῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "καὶ",
+      "right_context": "τοὺς ἀμφοτέρους ἐν ἑνὶ σώματι τῷ"
+    }
+  ],
+  "books": {
+    "Colossians": 2,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρηνοποιέω",
+      "display": "hacer·paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυνί",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμφότεροι",
+      "display": "amboses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 1:20",
+      "reason": "occurs near εἰρηνοποιέω"
+    },
+    {
+      "ref": "Colossians 1:22",
+      "reason": "occurs near νυνί, σάρξ, σῶμα"
+    },
+    {
+      "ref": "Ephesians 2:16",
+      "reason": "occurs near σῶμα, ἀμφότεροι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

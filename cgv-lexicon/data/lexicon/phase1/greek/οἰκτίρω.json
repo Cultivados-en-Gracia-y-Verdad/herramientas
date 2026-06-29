@@ -1,0 +1,84 @@
+{
+  "lemma": "οἰκτίρω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "οἰκτιρήσω",
+      "count": 1
+    },
+    {
+      "form": "οἰκτίρω.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "future": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 9:15",
+      "form": "οἰκτιρήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 15,
+      "left_context": "λέγει· Ἐλεήσω ὃν ἂν ἐλεῶ, καὶ",
+      "right_context": "ὃν ἂν οἰκτίρω."
+    },
+    {
+      "ref": "Romans 9:15",
+      "form": "οἰκτίρω.",
+      "morph": "V-P-A-S-1S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 15,
+      "left_context": "ἂν ἐλεῶ, καὶ οἰκτιρήσω ὃν ἂν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Romans": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐλεάω",
+      "display": "tener·misericordia",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκτίρω",
+      "display": "tener·misericordia",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 9:15",
+      "reason": "occurs near οἰκτίρω, ἐλεάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

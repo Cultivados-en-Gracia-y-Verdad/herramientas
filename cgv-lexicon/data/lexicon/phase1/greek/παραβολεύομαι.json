@@ -1,0 +1,98 @@
+{
+  "lemma": "παραβολεύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀παραβολευσάμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 2:30",
+      "form": "⸀παραβολευσάμενος",
+      "morph": "V-A-M-P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 30,
+      "left_context": "τὸ ἔργον ⸀Χριστοῦ μέχρι θανάτου ἤγγισεν,",
+      "right_context": "τῇ ψυχῇ ἵνα ἀναπληρώσῃ τὸ ὑμῶν"
+    }
+  ],
+  "books": {
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέχρι(ς)",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγίζω",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναπληρόω",
+      "display": "cumpla",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 2:30",
+      "reason": "occurs near Χριστός, θάνατος, μέχρι(ς)"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,137 @@
+{
+  "lemma": "συμμαρτυρέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συμμαρτυρούσης",
+      "count": 2
+    },
+    {
+      "form": "συμμαρτυρεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 2:15",
+      "form": "συμμαρτυρούσης",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "νόμου γραπτὸν ἐν ταῖς καρδίαις αὐτῶν,",
+      "right_context": "αὐτῶν τῆς συνειδήσεως καὶ μεταξὺ ἀλλήλων"
+    },
+    {
+      "ref": "Romans 8:16",
+      "form": "συμμαρτυρεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 16,
+      "left_context": "αὐτὸ τὸ πνεῦμα",
+      "right_context": "τῷ πνεύματι ἡμῶν ὅτι ἐσμὲν τέκνα"
+    },
+    {
+      "ref": "Romans 9:1",
+      "form": "συμμαρτυρούσης",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 1,
+      "left_context": "Ἀλήθειαν λέγω ἐν Χριστῷ, οὐ ψεύδομαι,",
+      "right_context": "μοι τῆς συνειδήσεώς μου ἐν πνεύματι"
+    }
+  ],
+  "books": {
+    "Romans": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συνείδησις",
+      "display": "de·conciencia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γραπτός",
+      "display": "escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεταξύ",
+      "display": "entre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψεύδομαι",
+      "display": "mento",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 9:1",
+      "negator": "οὐ",
+      "clause_text": "Ἀλήθειαν λέγω ἐν Χριστῷ, οὐ ψεύδομαι, συμμαρτυρούσης μοι τῆς συνειδήσεώς μου ἐν πνεύματι ἁγίῳ,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 2:15",
+      "reason": "occurs near γραπτός, καρδία, μεταξύ"
+    },
+    {
+      "ref": "Romans 8:16",
+      "reason": "occurs near πνεῦμα"
+    },
+    {
+      "ref": "Romans 9:1",
+      "reason": "occurs near συνείδησις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

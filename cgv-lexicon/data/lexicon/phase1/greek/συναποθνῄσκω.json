@@ -1,0 +1,145 @@
+{
+  "lemma": "συναποθνῄσκω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συναποθανεῖν",
+      "count": 2
+    },
+    {
+      "form": "συναπεθάνομεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 7:3",
+      "form": "συναποθανεῖν",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 3,
+      "left_context": "ταῖς καρδίαις ἡμῶν ἐστε εἰς τὸ",
+      "right_context": "καὶ συζῆν."
+    },
+    {
+      "ref": "2 Timothy 2:11",
+      "form": "συναπεθάνομεν,",
+      "morph": "V-A-A-I-1P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "πιστὸς ὁ λόγος· εἰ γὰρ",
+      "right_context": "καὶ συζήσομεν·"
+    },
+    {
+      "ref": "Mark 14:31",
+      "form": "συναποθανεῖν",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 31,
+      "left_context": "δὲ ⸂ἐκπερισσῶς ἐλάλει⸃· Ἐὰν ⸂δέῃ με⸃",
+      "right_context": "σοι, οὐ μή σε ⸀ἀπαρνήσομαι. ὡσαύτως"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "2 Timothy": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συζάω",
+      "display": "vivir·con",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "fiel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπερισσῶς",
+      "display": "sobremanera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "atara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαρνέομαι",
+      "display": "negaré",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 14:31",
+      "negator": "οὐ",
+      "clause_text": "ὁ δὲ ⸂ἐκπερισσῶς ἐλάλει⸃· Ἐὰν ⸂δέῃ με⸃ συναποθανεῖν σοι, οὐ μή σε ⸀ἀπαρνήσομαι. ὡσαύτως δὲ καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 7:3",
+      "reason": "occurs near καρδία, συζάω"
+    },
+    {
+      "ref": "2 Timothy 2:11",
+      "reason": "occurs near λόγος, πιστός, συζάω"
+    },
+    {
+      "ref": "Mark 14:31",
+      "reason": "occurs near ἐκπερισσῶς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,173 @@
+{
+  "lemma": "καυματίζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "καυματίσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐκαυματίσθησαν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐκαυματίσθη",
+      "count": 1
+    },
+    {
+      "form": "ἐκαυματίσθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "active": 1,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 16:8",
+      "form": "καυματίσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 16,
+      "verse": 8,
+      "left_context": "ἐπὶ τὸν ἥλιον· καὶ ἐδόθη αὐτῷ",
+      "right_context": "⸂τοὺς ἀνθρώπους ἐν πυρί⸃."
+    },
+    {
+      "ref": "Revelation 16:9",
+      "form": "ἐκαυματίσθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Revelation",
+      "chapter": 16,
+      "verse": 9,
+      "left_context": "καὶ",
+      "right_context": "οἱ ἄνθρωποι καῦμα μέγα· καὶ ⸀ἐβλασφήμησαν"
+    },
+    {
+      "ref": "Mark 4:6",
+      "form": "⸀ἐκαυματίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "⸂καὶ ὅτε ἀνέτειλεν ὁ ἥλιος⸃",
+      "right_context": "καὶ διὰ τὸ μὴ ἔχειν ῥίζαν"
+    },
+    {
+      "ref": "Matthew 13:6",
+      "form": "ἐκαυματίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "ἡλίου δὲ ἀνατείλαντος",
+      "right_context": "καὶ διὰ τὸ μὴ ἔχειν ῥίζαν"
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἥλιος",
+      "display": "sol",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνατέλλω",
+      "display": "salió",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "fue dado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καῦμα",
+      "display": "calor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 4:6",
+      "negator": "μὴ",
+      "clause_text": "⸂καὶ ὅτε ἀνέτειλεν ὁ ἥλιος⸃ ⸀ἐκαυματίσθη καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη."
+    },
+    {
+      "ref": "Matthew 13:6",
+      "negator": "μὴ",
+      "clause_text": "ἡλίου δὲ ἀνατείλαντος ἐκαυματίσθη καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 16:8",
+      "reason": "occurs near δίδωμι, πῦρ, ἄνθρωπος"
+    },
+    {
+      "ref": "Revelation 16:9",
+      "reason": "occurs near ἄνθρωπος"
+    },
+    {
+      "ref": "Mark 4:6",
+      "reason": "occurs near ἀνατέλλω, ἥλιος"
+    },
+    {
+      "ref": "Matthew 13:6",
+      "reason": "occurs near ἀνατέλλω, ἥλιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

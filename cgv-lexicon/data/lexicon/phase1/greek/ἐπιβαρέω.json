@@ -1,0 +1,140 @@
+{
+  "lemma": "ἐπιβαρέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπιβαρῆσαί",
+      "count": 2
+    },
+    {
+      "form": "ἐπιβαρῶ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:9",
+      "form": "ἐπιβαρῆσαί",
+      "morph": "V-A-A-N",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "καὶ ἡμέρας ἐργαζόμενοι πρὸς τὸ μὴ",
+      "right_context": "τινα ὑμῶν ἐκηρύξαμεν εἰς ὑμᾶς τὸ"
+    },
+    {
+      "ref": "2 Corinthians 2:5",
+      "form": "ἐπιβαρῶ",
+      "morph": "V-P-A-S-1S",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "λελύπηκεν, ἀλλὰ ἀπὸ μέρους ἵνα μὴ",
+      "right_context": "πάντας ὑμᾶς."
+    },
+    {
+      "ref": "2 Thessalonians 3:8",
+      "form": "ἐπιβαρῆσαί",
+      "morph": "V-A-A-N",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "καὶ ἡμέρας⸃ ἐργαζόμενοι πρὸς τὸ μὴ",
+      "right_context": "τινα ὑμῶν·"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1,
+    "2 Corinthians": 1,
+    "2 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·día",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάζομαι",
+      "display": "trabajando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κηρύσσω",
+      "display": "proclamamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "de·parte",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Corinthians 2:5",
+      "form": "ἐπιβαρῶ",
+      "morph": "V-P-A-S-1S",
+      "clause_text": "οὐκ ἐμὲ λελύπηκεν, ἀλλὰ ἀπὸ μέρους ἵνα μὴ ἐπιβαρῶ πάντας ὑμᾶς.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 2:9",
+      "negator": "μὴ",
+      "clause_text": "μόχθον· ⸀νυκτὸς καὶ ἡμέρας ἐργαζόμενοι πρὸς τὸ μὴ ἐπιβαρῆσαί τινα ὑμῶν ἐκηρύξαμεν εἰς ὑμᾶς τὸ εὐαγγέλιον τοῦ"
+    },
+    {
+      "ref": "2 Corinthians 2:5",
+      "negator": "μὴ",
+      "clause_text": "οὐκ ἐμὲ λελύπηκεν, ἀλλὰ ἀπὸ μέρους ἵνα μὴ ἐπιβαρῶ πάντας ὑμᾶς."
+    },
+    {
+      "ref": "2 Thessalonians 3:8",
+      "negator": "μὴ",
+      "clause_text": "μόχθῳ ⸂νυκτὸς καὶ ἡμέρας⸃ ἐργαζόμενοι πρὸς τὸ μὴ ἐπιβαρῆσαί τινα ὑμῶν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 2:9",
+      "reason": "occurs near κηρύσσω, ἐργάζομαι, ἡμέρα"
+    },
+    {
+      "ref": "2 Corinthians 2:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Thessalonians 3:8",
+      "reason": "occurs near ἐργάζομαι, ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

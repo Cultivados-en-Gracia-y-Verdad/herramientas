@@ -1,0 +1,86 @@
+{
+  "lemma": "συστοιχέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συστοιχεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 4:25",
+      "form": "συστοιχεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 25,
+      "left_context": "Σινᾶ ὄρος ἐστὶν ἐν τῇ Ἀραβίᾳ,",
+      "right_context": "δὲ τῇ νῦν Ἰερουσαλήμ, δουλεύει ⸀γὰρ"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄρος",
+      "display": "monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀραβία",
+      "display": "Arabia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δουλεύω",
+      "display": "serve",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 4:25",
+      "reason": "occurs near δουλεύω, νῦν, Ἀραβία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

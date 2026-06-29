@@ -1,0 +1,129 @@
+{
+  "lemma": "παρεισέρχομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παρεισῆλθον",
+      "count": 1
+    },
+    {
+      "form": "παρεισῆλθεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 2:4",
+      "form": "παρεισῆλθον",
+      "morph": "V-A-A-I-3P",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "διὰ δὲ τοὺς παρεισάκτους ψευδαδέλφους, οἵτινες",
+      "right_context": "κατασκοπῆσαι τὴν ἐλευθερίαν ἡμῶν ἣν ἔχομεν"
+    },
+    {
+      "ref": "Romans 5:20",
+      "form": "παρεισῆλθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "νόμος δὲ",
+      "right_context": "ἵνα πλεονάσῃ τὸ παράπτωμα· οὗ δὲ"
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρείσακτος",
+      "display": "introducidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδάδελφος",
+      "display": "falso·hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατασκοπέω",
+      "display": "espiar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλευθερία",
+      "display": "libertad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονάζω",
+      "display": "abunde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράπτωμα",
+      "display": "ofensa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὗ",
+      "display": "del·cual",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 2:4",
+      "reason": "occurs near κατασκοπέω, παρείσακτος, ψευδάδελφος"
+    },
+    {
+      "ref": "Romans 5:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

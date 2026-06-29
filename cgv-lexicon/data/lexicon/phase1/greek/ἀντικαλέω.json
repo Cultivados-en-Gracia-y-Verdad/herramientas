@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀντικαλέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸂ἀντικαλέσωσίν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 14:12",
+      "form": "⸂ἀντικαλέσωσίν",
+      "morph": "V-A-A-S-3P",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 12,
+      "left_context": "μηδὲ γείτονας πλουσίους, μήποτε καὶ αὐτοὶ",
+      "right_context": "σε⸃ καὶ γένηται ⸂ἀνταπόδομά σοι⸃."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γείτων",
+      "display": "vecinos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "ricos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνταπόδομα",
+      "display": "recompensa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 14:12",
+      "reason": "occurs near γείτων, μήποτε, πλούσιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

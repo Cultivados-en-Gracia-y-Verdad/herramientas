@@ -1,0 +1,200 @@
+{
+  "lemma": "ἀγρυπνέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀγρυπνοῦντες",
+      "count": 1
+    },
+    {
+      "form": "ἀγρυπνοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "ἀγρυπνεῖτε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀγρυπνεῖτε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1,
+      "imperative": 2
+    },
+    "tenses": {
+      "present": 4
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 6:18",
+      "form": "ἀγρυπνοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "καιρῷ ἐν πνεύματι, καὶ εἰς ⸀αὐτὸ",
+      "right_context": "ἐν πάσῃ προσκαρτερήσει καὶ δεήσει περὶ"
+    },
+    {
+      "ref": "Hebrews 13:17",
+      "form": "ἀγρυπνοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 17,
+      "left_context": "ἡγουμένοις ὑμῶν καὶ ὑπείκετε, αὐτοὶ γὰρ",
+      "right_context": "ὑπὲρ τῶν ψυχῶν ὑμῶν ὡς λόγον"
+    },
+    {
+      "ref": "Luke 21:36",
+      "form": "ἀγρυπνεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 36,
+      "left_context": "",
+      "right_context": "⸀δὲ ἐν παντὶ καιρῷ δεόμενοι ἵνα"
+    },
+    {
+      "ref": "Mark 13:33",
+      "form": "⸀ἀγρυπνεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 33,
+      "left_context": "βλέπετε",
+      "right_context": "οὐκ οἴδατε γὰρ πότε ὁ καιρός"
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Hebrews": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσκαρτέρησις",
+      "display": "perseverancia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέησις",
+      "display": "súplica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπείκω",
+      "display": "ceded",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "de·almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέομαι",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habéis sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πότε",
+      "display": "cuándo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 21:36",
+      "form": "ἀγρυπνεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "ἀγρυπνεῖτε ⸀δὲ ἐν παντὶ καιρῷ δεόμενοι ἵνα ⸀κατισχύσητε ἐκφυγεῖν"
+    },
+    {
+      "ref": "Mark 13:33",
+      "form": "⸀ἀγρυπνεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "βλέπετε ⸀ἀγρυπνεῖτε, οὐκ οἴδατε γὰρ πότε ὁ καιρός ἐστιν·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 13:33",
+      "negator": "οὐκ",
+      "clause_text": "βλέπετε ⸀ἀγρυπνεῖτε, οὐκ οἴδατε γὰρ πότε ὁ καιρός ἐστιν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:36",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 13:33",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Ephesians 6:18",
+      "reason": "occurs near δέησις, πνεῦμα, προσκαρτέρησις"
+    },
+    {
+      "ref": "Hebrews 13:17",
+      "reason": "occurs near ὑπέρ, ὑπείκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

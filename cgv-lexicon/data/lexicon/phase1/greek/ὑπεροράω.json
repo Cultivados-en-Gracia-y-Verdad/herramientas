@@ -1,0 +1,92 @@
+{
+  "lemma": "ὑπεροράω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑπεριδὼν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:30",
+      "form": "ὑπεριδὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 30,
+      "left_context": "τοὺς μὲν οὖν χρόνους τῆς ἀγνοίας",
+      "right_context": "ὁ θεὸς τὰ νῦν ⸀παραγγέλλει τοῖς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγνοια",
+      "display": "de·ignorancia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγγέλλω",
+      "display": "manda",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:30",
+      "reason": "occurs near θεός, μέν, νῦν"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

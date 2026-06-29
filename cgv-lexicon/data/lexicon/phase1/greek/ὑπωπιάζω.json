@@ -1,0 +1,106 @@
+{
+  "lemma": "ὑπωπιάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ὑπωπιάζω",
+      "count": 1
+    },
+    {
+      "form": "ὑπωπιάζῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:27",
+      "form": "ὑπωπιάζω",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 27,
+      "left_context": "ἀλλὰ",
+      "right_context": "μου τὸ σῶμα καὶ δουλαγωγῶ, μή"
+    },
+    {
+      "ref": "Luke 18:5",
+      "form": "ὑπωπιάζῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 5,
+      "left_context": "αὐτήν ἵνα μὴ εἰς τέλος ἐρχομένη",
+      "right_context": "με."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δουλαγωγέω",
+      "display": "esclavizo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέλος",
+      "display": "fin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "veniendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 18:5",
+      "negator": "μὴ",
+      "clause_text": "ταύτην ἐκδικήσω αὐτήν ἵνα μὴ εἰς τέλος ἐρχομένη ὑπωπιάζῃ με."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:27",
+      "reason": "occurs near δουλαγωγέω, σῶμα"
+    },
+    {
+      "ref": "Luke 18:5",
+      "reason": "occurs near τέλος, ἔρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

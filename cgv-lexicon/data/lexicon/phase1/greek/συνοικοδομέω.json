@@ -1,0 +1,68 @@
+{
+  "lemma": "συνοικοδομέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνοικοδομεῖσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 2:22",
+      "form": "συνοικοδομεῖσθε",
+      "morph": "V-P-P-I-2P",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "ἐν ᾧ καὶ ὑμεῖς",
+      "right_context": "εἰς κατοικητήριον τοῦ θεοῦ ἐν πνεύματι."
+    }
+  ],
+  "books": {
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κατοικητήριον",
+      "display": "morada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 2:22",
+      "reason": "occurs near θεός, κατοικητήριον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

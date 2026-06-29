@@ -1,0 +1,113 @@
+{
+  "lemma": "δύνω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "Δύνοντος",
+      "count": 1
+    },
+    {
+      "form": "⸀ἔδυ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 4:40",
+      "form": "Δύνοντος",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 40,
+      "left_context": "",
+      "right_context": "δὲ τοῦ ἡλίου ⸀ἅπαντες ὅσοι εἶχον"
+    },
+    {
+      "ref": "Mark 1:32",
+      "form": "⸀ἔδυ",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 32,
+      "left_context": "Ὀψίας δὲ γενομένης, ὅτε",
+      "right_context": "ὁ ἥλιος, ἔφερον πρὸς αὐτὸν πάντας"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἥλιος",
+      "display": "de·sol",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπας",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψία",
+      "display": "de·tarde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevaban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 4:40",
+      "reason": "occurs near ἅπας, ἥλιος, ὅσος"
+    },
+    {
+      "ref": "Mark 1:32",
+      "reason": "occurs near ἥλιος, ὀψία, ὅτε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

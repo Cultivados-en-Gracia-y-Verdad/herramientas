@@ -1,0 +1,80 @@
+{
+  "lemma": "κατακόπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατακόπτων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 5:5",
+      "form": "κατακόπτων",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 5,
+      "left_context": "ἐν τοῖς ὄρεσιν⸃ ἦν κράζων καὶ",
+      "right_context": "ἑαυτὸν λίθοις."
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄρος",
+      "display": "montes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράζω",
+      "display": "clamando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 5:5",
+      "reason": "occurs near κράζω, λίθος, ἑαυτοῦ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

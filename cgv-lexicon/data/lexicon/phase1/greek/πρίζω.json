@@ -1,0 +1,86 @@
+{
+  "lemma": "πρίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐπρίσθησαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:37",
+      "form": "⸀ἐπρίσθησαν,",
+      "morph": "V-A-P-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 37,
+      "left_context": "ἐλιθάσθησαν,",
+      "right_context": "ἐν φόνῳ ⸀μαχαίρης ἀπέθανον, περιῆλθον ἐν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λιθάζω",
+      "display": "fueron apedreado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόνος",
+      "display": "asesinato,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχαιρα",
+      "display": "de·espada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιέρχομαι",
+      "display": "recorrieron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:37",
+      "reason": "occurs near λιθάζω, μάχαιρα, περιέρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

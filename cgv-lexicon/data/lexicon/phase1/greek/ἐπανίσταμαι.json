@@ -1,0 +1,101 @@
+{
+  "lemma": "ἐπανίσταμαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπαναστήσονται",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 13:12",
+      "form": "ἐπαναστήσονται",
+      "morph": "V-F-M-I-3P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 12,
+      "left_context": "εἰς θάνατον καὶ πατὴρ τέκνον, καὶ",
+      "right_context": "τέκνα ἐπὶ γονεῖς καὶ θανατώσουσιν αὐτούς·"
+    },
+    {
+      "ref": "Matthew 10:21",
+      "form": "ἐπαναστήσονται",
+      "morph": "V-F-M-I-3P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 21,
+      "left_context": "εἰς θάνατον καὶ πατὴρ τέκνον, καὶ",
+      "right_context": "τέκνα ἐπὶ γονεῖς καὶ θανατώσουσιν αὐτούς."
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέκνον",
+      "display": "hijo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γονεύς",
+      "display": "padreses",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θανατόω",
+      "display": "matarán",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 13:12",
+      "reason": "occurs near γονεύς, θάνατος, θανατόω"
+    },
+    {
+      "ref": "Matthew 10:21",
+      "reason": "occurs near γονεύς, θάνατος, θανατόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,86 @@
+{
+  "lemma": "συναποστέλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συναπέστειλα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 12:18",
+      "form": "συναπέστειλα",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 18,
+      "left_context": "παρεκάλεσα Τίτον καὶ",
+      "right_context": "τὸν ἀδελφόν· μήτι ἐπλεονέκτησεν ὑμᾶς Τίτος;"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τίτος",
+      "display": "Tito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήτι",
+      "display": "¿acaso?",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονεκτέω",
+      "display": "aprovecharse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 12:18",
+      "reason": "occurs near Τίτος, μήτι, παρακαλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

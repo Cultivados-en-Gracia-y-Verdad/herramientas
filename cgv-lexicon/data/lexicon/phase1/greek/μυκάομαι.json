@@ -1,0 +1,98 @@
+{
+  "lemma": "μυκάομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μυκᾶται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 10:3",
+      "form": "μυκᾶται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Revelation",
+      "chapter": 10,
+      "verse": 3,
+      "left_context": "καὶ ἔκραξεν φωνῇ μεγάλῃ ὥσπερ λέων",
+      "right_context": "καὶ ὅτε ἔκραξεν, ἐλάλησαν αἱ ἑπτὰ"
+    }
+  ],
+  "books": {
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κράζω",
+      "display": "clamó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥσπερ",
+      "display": "como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λέων",
+      "display": "león",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablaron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 10:3",
+      "reason": "occurs near κράζω, λέων, μέγας"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

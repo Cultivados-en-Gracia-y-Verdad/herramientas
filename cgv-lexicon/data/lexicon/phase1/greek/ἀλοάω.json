@@ -1,0 +1,170 @@
+{
+  "lemma": "ἀλοάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀλοῶντα.",
+      "count": 1
+    },
+    {
+      "form": "ἀλοῶν",
+      "count": 1
+    },
+    {
+      "form": "ἀλοῶντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:9",
+      "form": "ἀλοῶντα.",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 9,
+      "left_context": "Μωϋσέως νόμῳ γέγραπται· Οὐ ⸀κημώσεις βοῦν",
+      "right_context": "μὴ τῶν βοῶν μέλει τῷ θεῷ,"
+    },
+    {
+      "ref": "1 Corinthians 9:10",
+      "form": "ἀλοῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "ἐλπίδι⸃ ὁ ἀροτριῶν ἀροτριᾶν, καὶ ὁ",
+      "right_context": "⸂ἐπ’ ἐλπίδι τοῦ μετέχειν⸃."
+    },
+    {
+      "ref": "1 Timothy 5:18",
+      "form": "ἀλοῶντα",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 18,
+      "left_context": "λέγει γὰρ ἡ γραφή· Βοῦν",
+      "right_context": "οὐ φιμώσεις, καί· Ἄξιος ὁ ἐργάτης"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βοῦς",
+      "display": "buey",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀροτριάω",
+      "display": "arando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κημόω",
+      "display": "poner·bozal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλει",
+      "display": "importa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετέχω",
+      "display": "participar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escritura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιμόω",
+      "display": "callarás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄξιος",
+      "display": "digno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 9:9",
+      "negator": "Οὐ",
+      "clause_text": "γὰρ τῷ Μωϋσέως νόμῳ γέγραπται· Οὐ ⸀κημώσεις βοῦν ἀλοῶντα. μὴ τῶν βοῶν μέλει τῷ θεῷ,"
+    },
+    {
+      "ref": "1 Timothy 5:18",
+      "negator": "οὐ",
+      "clause_text": "λέγει γὰρ ἡ γραφή· Βοῦν ἀλοῶντα οὐ φιμώσεις, καί· Ἄξιος ὁ ἐργάτης τοῦ μισθοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:10",
+      "reason": "occurs near ἀροτριάω"
+    },
+    {
+      "ref": "1 Corinthians 9:9",
+      "reason": "occurs near βοῦς, γράφω, κημόω"
+    },
+    {
+      "ref": "1 Timothy 5:18",
+      "reason": "occurs near βοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,135 @@
+{
+  "lemma": "ἀνακαλύπτω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνακαλυπτόμενον,",
+      "count": 1
+    },
+    {
+      "form": "ἀνακεκαλυμμένῳ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 3:14",
+      "form": "ἀνακαλυπτόμενον,",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "ἀναγνώσει τῆς παλαιᾶς διαθήκης μένει μὴ",
+      "right_context": "⸀ὅτι ἐν Χριστῷ καταργεῖται,"
+    },
+    {
+      "ref": "2 Corinthians 3:18",
+      "form": "ἀνακεκαλυμμένῳ",
+      "morph": "V-X-P-P",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "ἡμεῖς δὲ πάντες",
+      "right_context": "προσώπῳ τὴν δόξαν κυρίου κατοπτριζόμενοι τὴν"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παλαιός",
+      "display": "de·vieja",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "de·pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μένω",
+      "display": "permanece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταργέω",
+      "display": "es anulado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατοπτρίζομαι",
+      "display": "mirarses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 3:14",
+      "negator": "μὴ",
+      "clause_text": "ἐπὶ τῇ ἀναγνώσει τῆς παλαιᾶς διαθήκης μένει μὴ ἀνακαλυπτόμενον, ⸀ὅτι ἐν Χριστῷ καταργεῖται,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 3:14",
+      "reason": "occurs near Χριστός, διαθήκη, καταργέω"
+    },
+    {
+      "ref": "2 Corinthians 3:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

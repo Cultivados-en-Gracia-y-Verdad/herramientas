@@ -1,0 +1,118 @@
+{
+  "lemma": "καυσόομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καυσούμενα",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 3:10",
+      "form": "καυσούμενα",
+      "morph": "V-P-P-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "οἱ οὐρανοὶ ῥοιζηδὸν παρελεύσονται, στοιχεῖα δὲ",
+      "right_context": "⸀λυθήσεται, καὶ γῆ καὶ τὰ ἐν"
+    },
+    {
+      "ref": "2 Peter 3:12",
+      "form": "καυσούμενα",
+      "morph": "V-P-P-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "ἣν οὐρανοὶ πυρούμενοι λυθήσονται καὶ στοιχεῖα",
+      "right_context": "τήκεται·"
+    }
+  ],
+  "books": {
+    "2 Peter": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στοιχεῖον",
+      "display": "elementos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λύω",
+      "display": "será desatado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥοιζηδόν",
+      "display": "con·estruendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρέρχομαι",
+      "display": "pasarán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυρόομαι",
+      "display": "ardidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τήκομαι",
+      "display": "derretirse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 3:10",
+      "reason": "occurs near λύω, οὐρανός, παρέρχομαι"
+    },
+    {
+      "ref": "2 Peter 3:12",
+      "reason": "occurs near λύω, οὐρανός, στοιχεῖον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

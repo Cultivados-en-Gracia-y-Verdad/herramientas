@@ -1,0 +1,560 @@
+{
+  "lemma": "καταλείπω",
+  "language": "greek",
+  "total_occurrences": 23,
+  "forms": [
+    {
+      "form": "καταλιπὼν",
+      "count": 5
+    },
+    {
+      "form": "καταλείψει",
+      "count": 3
+    },
+    {
+      "form": "κατέλιπεν",
+      "count": 2
+    },
+    {
+      "form": "καταλειφθῆναι",
+      "count": 1
+    },
+    {
+      "form": "⸀καταλιπόντες",
+      "count": 1
+    },
+    {
+      "form": "καταλειπομένης",
+      "count": 1
+    },
+    {
+      "form": "καταλείψαντας",
+      "count": 1
+    },
+    {
+      "form": "καταλιπόντες",
+      "count": 1
+    },
+    {
+      "form": "κατέλιπε",
+      "count": 1
+    },
+    {
+      "form": "καταλελειμμένος",
+      "count": 1
+    },
+    {
+      "form": "⸀κατέλειπεν",
+      "count": 1
+    },
+    {
+      "form": "καταλείπει",
+      "count": 1
+    },
+    {
+      "form": "κατέλιπον",
+      "count": 1
+    },
+    {
+      "form": "καταλίπῃ",
+      "count": 1
+    },
+    {
+      "form": "καταλιπὼν⸃",
+      "count": 1
+    },
+    {
+      "form": "Κατέλιπον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 11,
+      "indicative": 10,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 17,
+      "future": 3,
+      "present": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 20
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 3:1",
+      "form": "καταλειφθῆναι",
+      "morph": "V-A-P-N",
+      "book": "1 Thessalonians",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "Διὸ μηκέτι στέγοντες εὐδοκήσαμεν",
+      "right_context": "ἐν Ἀθήναις μόνοι,"
+    },
+    {
+      "ref": "2 Peter 2:15",
+      "form": "⸀καταλιπόντες",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "",
+      "right_context": "εὐθεῖαν ὁδὸν ἐπλανήθησαν, ἐξακολουθήσαντες τῇ ὁδῷ"
+    },
+    {
+      "ref": "Ephesians 5:31",
+      "form": "καταλείψει",
+      "morph": "V-F-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 31,
+      "left_context": "ἀντὶ τούτου",
+      "right_context": "ἄνθρωπος ⸀τὸν ⸀πατέρα καὶ ⸀τὴν μητέρα"
+    },
+    {
+      "ref": "Hebrews 4:1",
+      "form": "καταλειπομένης",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "Φοβηθῶμεν οὖν μήποτε",
+      "right_context": "ἐπαγγελίας εἰσελθεῖν εἰς τὴν κατάπαυσιν αὐτοῦ"
+    },
+    {
+      "ref": "Hebrews 11:27",
+      "form": "κατέλιπεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 27,
+      "left_context": "πίστει",
+      "right_context": "Αἴγυπτον, μὴ φοβηθεὶς τὸν θυμὸν τοῦ"
+    },
+    {
+      "ref": "Acts 6:2",
+      "form": "καταλείψαντας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "μαθητῶν εἶπαν· Οὐκ ἀρεστόν ἐστιν ἡμᾶς",
+      "right_context": "τὸν λόγον τοῦ θεοῦ διακονεῖν τραπέζαις·"
+    },
+    {
+      "ref": "Acts 18:19",
+      "form": "κατέλιπεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 19,
+      "left_context": "⸀κατήντησαν δὲ εἰς Ἔφεσον, κἀκείνους",
+      "right_context": "αὐτοῦ, αὐτὸς δὲ εἰσελθὼν εἰς τὴν"
+    },
+    {
+      "ref": "Acts 21:3",
+      "form": "καταλιπόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 3,
+      "left_context": "⸀ἀναφάναντες δὲ τὴν Κύπρον καὶ",
+      "right_context": "αὐτὴν εὐώνυμον ἐπλέομεν εἰς Συρίαν, καὶ"
+    },
+    {
+      "ref": "Acts 24:27",
+      "form": "κατέλιπε",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 27,
+      "left_context": "⸀χάριτα καταθέσθαι τοῖς Ἰουδαίοις ὁ Φῆλιξ",
+      "right_context": "τὸν Παῦλον δεδεμένον."
+    },
+    {
+      "ref": "Acts 25:14",
+      "form": "καταλελειμμένος",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 14,
+      "left_context": "τὸν Παῦλον λέγων· Ἀνήρ τίς ἐστιν",
+      "right_context": "ὑπὸ Φήλικος δέσμιος,"
+    },
+    {
+      "ref": "Luke 5:28",
+      "form": "καταλιπὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 28,
+      "left_context": "καὶ",
+      "right_context": "⸀πάντα ἀναστὰς ⸀ἠκολούθει αὐτῷ."
+    },
+    {
+      "ref": "Luke 10:40",
+      "form": "⸀κατέλειπεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 40,
+      "left_context": "ὅτι ἡ ἀδελφή μου μόνην με",
+      "right_context": "διακονεῖν; ⸀εἰπὲ οὖν αὐτῇ ἵνα μοι"
+    },
+    {
+      "ref": "Luke 15:4",
+      "form": "καταλείπει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 4,
+      "left_context": "καὶ ⸀ἀπολέσας ⸂ἐξ αὐτῶν ἓν⸃ οὐ",
+      "right_context": "τὰ ἐνενήκοντα ἐννέα ἐν τῇ ἐρήμῳ"
+    },
+    {
+      "ref": "Luke 20:31",
+      "form": "κατέλιπον",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 31,
+      "left_context": "ὡσαύτως δὲ καὶ οἱ ἑπτὰ οὐ",
+      "right_context": "τέκνα καὶ ἀπέθανον·"
+    },
+    {
+      "ref": "Mark 10:7",
+      "form": "καταλείψει",
+      "morph": "V-F-A-I-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 7,
+      "left_context": "ἕνεκεν τούτου",
+      "right_context": "ἄνθρωπος τὸν πατέρα αὐτοῦ καὶ τὴν"
+    },
+    {
+      "ref": "Mark 12:19",
+      "form": "καταλίπῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 19,
+      "left_context": "ὅτι ἐάν τινος ἀδελφὸς ἀποθάνῃ καὶ",
+      "right_context": "γυναῖκα καὶ ⸂μὴ ἀφῇ τέκνον⸃, ἵνα"
+    },
+    {
+      "ref": "Mark 12:21",
+      "form": "καταλιπὼν⸃",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 21,
+      "left_context": "δεύτερος ἔλαβεν αὐτήν, καὶ ἀπέθανεν ⸂μὴ",
+      "right_context": "σπέρμα, καὶ ὁ τρίτος ὡσαύτως·"
+    },
+    {
+      "ref": "Mark 14:52",
+      "form": "καταλιπὼν",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 52,
+      "left_context": "ὁ δὲ",
+      "right_context": "τὴν σινδόνα γυμνὸς ⸀ἔφυγεν."
+    },
+    {
+      "ref": "Matthew 4:13",
+      "form": "καταλιπὼν",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "καὶ",
+      "right_context": "τὴν Ναζαρὰ ἐλθὼν κατῴκησεν εἰς Καφαρναοὺμ"
+    },
+    {
+      "ref": "Matthew 16:4",
+      "form": "καταλιπὼν",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 4,
+      "left_context": "εἰ μὴ τὸ σημεῖον ⸀Ἰωνᾶ. καὶ",
+      "right_context": "αὐτοὺς ἀπῆλθεν."
+    },
+    {
+      "ref": "Matthew 19:5",
+      "form": "καταλείψει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 5,
+      "left_context": "καὶ εἶπεν· ⸀Ἕνεκα τούτου",
+      "right_context": "ἄνθρωπος τὸν πατέρα καὶ τὴν μητέρα"
+    },
+    {
+      "ref": "Matthew 21:17",
+      "form": "καταλιπὼν",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 17,
+      "left_context": "καὶ",
+      "right_context": "αὐτοὺς ἐξῆλθεν ἔξω τῆς πόλεως εἰς"
+    },
+    {
+      "ref": "Romans 11:4",
+      "form": "Κατέλιπον",
+      "morph": "V-A-A-I-1S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 4,
+      "left_context": "ἀλλὰ τί λέγει αὐτῷ ὁ χρηματισμός;",
+      "right_context": "ἐμαυτῷ ἑπτακισχιλίους ἄνδρας, οἵτινες οὐκ ἔκαμψαν"
+    }
+  ],
+  "books": {
+    "Acts": 5,
+    "Luke": 4,
+    "Mark": 4,
+    "Matthew": 4,
+    "Hebrews": 2,
+    "1 Thessalonians": 1,
+    "2 Peter": 1,
+    "Ephesians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morieron",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temamos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διακονέω",
+      "display": "servir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Φῆλιξ",
+      "display": "Félix",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στέγω",
+      "display": "soportando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐδοκέω",
+      "display": "complacimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀθῆναι",
+      "display": "Atenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλανάω",
+      "display": "fueron extraviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξακολουθέω",
+      "display": "seguidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντί",
+      "display": "en·lugar·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήποτε",
+      "display": "no·sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "de·promesa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάπαυσις",
+      "display": "reposo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 11:27",
+      "negator": "μὴ",
+      "clause_text": "πίστει κατέλιπεν Αἴγυπτον, μὴ φοβηθεὶς τὸν θυμὸν τοῦ βασιλέως, τὸν"
+    },
+    {
+      "ref": "Acts 6:2",
+      "negator": "Οὐκ",
+      "clause_text": "πλῆθος τῶν μαθητῶν εἶπαν· Οὐκ ἀρεστόν ἐστιν ἡμᾶς καταλείψαντας τὸν λόγον τοῦ θεοῦ διακονεῖν τραπέζαις·"
+    },
+    {
+      "ref": "Luke 15:4",
+      "negator": "οὐ",
+      "clause_text": "ἑκατὸν πρόβατα καὶ ⸀ἀπολέσας ⸂ἐξ αὐτῶν ἓν⸃ οὐ καταλείπει τὰ ἐνενήκοντα ἐννέα ἐν τῇ ἐρήμῳ καὶ πορεύεται"
+    },
+    {
+      "ref": "Luke 20:31",
+      "negator": "οὐ",
+      "clause_text": "ἔλαβεν ⸀αὐτήν, ὡσαύτως δὲ καὶ οἱ ἑπτὰ οὐ κατέλιπον τέκνα καὶ ἀπέθανον·"
+    },
+    {
+      "ref": "Mark 12:19",
+      "negator": "⸂μὴ",
+      "clause_text": "ἔγραψεν ἡμῖν ὅτι ἐάν τινος ἀδελφὸς ἀποθάνῃ καὶ καταλίπῃ γυναῖκα καὶ ⸂μὴ ἀφῇ τέκνον⸃, ἵνα λάβῃ ὁ"
+    },
+    {
+      "ref": "Mark 12:21",
+      "negator": "⸂μὴ",
+      "clause_text": "καὶ ὁ δεύτερος ἔλαβεν αὐτήν, καὶ ἀπέθανεν ⸂μὴ καταλιπὼν⸃ σπέρμα, καὶ ὁ τρίτος ὡσαύτως·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:19",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:3",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 24:27",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 25:14",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 6:2",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Luke 10:40",
+      "reason": "occurs near μόνος"
+    },
+    {
+      "ref": "Luke 15:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 20:31",
+      "reason": "occurs near ἀποθνῄσκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

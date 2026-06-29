@@ -1,0 +1,130 @@
+{
+  "lemma": "παροξύνομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παροξύνεται,",
+      "count": 1
+    },
+    {
+      "form": "παρωξύνετο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:5",
+      "form": "παροξύνεται,",
+      "morph": "V-P-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 5,
+      "left_context": "ἀσχημονεῖ, οὐ ζητεῖ τὰ ἑαυτῆς, οὐ",
+      "right_context": "οὐ λογίζεται τὸ κακόν,"
+    },
+    {
+      "ref": "Acts 17:16",
+      "form": "παρωξύνετο",
+      "morph": "V-I-P-I-3S",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 16,
+      "left_context": "ταῖς Ἀθήναις ἐκδεχομένου αὐτοὺς τοῦ Παύλου,",
+      "right_context": "τὸ πνεῦμα αὐτοῦ ἐν αὐτῷ ⸀θεωροῦντος"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ζητέω",
+      "display": "busca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λογίζομαι",
+      "display": "considera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακός",
+      "display": "malo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀθῆναι",
+      "display": "Atenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδέχομαι",
+      "display": "esperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "de·Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 13:5",
+      "negator": "οὐ",
+      "clause_text": "οὐκ ἀσχημονεῖ, οὐ ζητεῖ τὰ ἑαυτῆς, οὐ παροξύνεται, οὐ λογίζεται τὸ κακόν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 13:5",
+      "reason": "occurs near ζητέω, κακός, λογίζομαι"
+    },
+    {
+      "ref": "Acts 17:16",
+      "reason": "occurs near Ἀθῆναι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

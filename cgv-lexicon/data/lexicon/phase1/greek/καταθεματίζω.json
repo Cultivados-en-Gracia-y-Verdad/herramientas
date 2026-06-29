@@ -1,0 +1,86 @@
+{
+  "lemma": "καταθεματίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καταθεματίζειν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 26:74",
+      "form": "καταθεματίζειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 74,
+      "left_context": "τότε ἤρξατο",
+      "right_context": "καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀμνύω",
+      "display": "jurar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "he sabido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 26:74",
+      "negator": "Οὐκ",
+      "clause_text": "τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 26:74",
+      "reason": "occurs near οἶδα, τότε, ἄρχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

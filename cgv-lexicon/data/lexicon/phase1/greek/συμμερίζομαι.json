@@ -1,0 +1,68 @@
+{
+  "lemma": "συμμερίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συμμερίζονται;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:13",
+      "form": "συμμερίζονται;",
+      "morph": "V-P-M-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 13,
+      "left_context": "οἱ τῷ θυσιαστηρίῳ ⸀παρεδρεύοντες τῷ θυσιαστηρίῳ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θυσιαστήριον",
+      "display": "altar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παρεδρεύω",
+      "display": "estar·presente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:13",
+      "reason": "occurs near θυσιαστήριον, παρεδρεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

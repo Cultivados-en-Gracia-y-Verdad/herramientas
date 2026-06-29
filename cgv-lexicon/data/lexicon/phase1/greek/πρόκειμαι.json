@@ -1,0 +1,277 @@
+{
+  "lemma": "πρόκειμαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "προκειμένης",
+      "count": 2
+    },
+    {
+      "form": "πρόκειται,",
+      "count": 1
+    },
+    {
+      "form": "προκείμενον",
+      "count": 1
+    },
+    {
+      "form": "πρόκεινται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 3
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "middle": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 8:12",
+      "form": "πρόκειται,",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 12,
+      "left_context": "εἰ γὰρ ἡ προθυμία",
+      "right_context": "καθὸ ἐὰν ⸀ἔχῃ εὐπρόσδεκτος, οὐ καθὸ"
+    },
+    {
+      "ref": "Hebrews 6:18",
+      "form": "προκειμένης",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "παράκλησιν ἔχωμεν οἱ καταφυγόντες κρατῆσαι τῆς",
+      "right_context": "ἐλπίδος·"
+    },
+    {
+      "ref": "Hebrews 12:1",
+      "form": "προκείμενον",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "εὐπερίστατον ἁμαρτίαν, δι’ ὑπομονῆς τρέχωμεν τὸν",
+      "right_context": "ἡμῖν ἀγῶνα,"
+    },
+    {
+      "ref": "Hebrews 12:2",
+      "form": "προκειμένης",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "καὶ τελειωτὴν Ἰησοῦν, ὃς ἀντὶ τῆς",
+      "right_context": "αὐτῷ χαρᾶς ὑπέμεινεν σταυρὸν αἰσχύνης καταφρονήσας,"
+    },
+    {
+      "ref": "Jude 1:7",
+      "form": "πρόκεινται",
+      "morph": "V-P-M-I-3P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "ἐκπορνεύσασαι καὶ ἀπελθοῦσαι ὀπίσω σαρκὸς ἑτέρας,",
+      "right_context": "δεῖγμα πυρὸς αἰωνίου δίκην ὑπέχουσαι."
+    }
+  ],
+  "books": {
+    "Hebrews": 3,
+    "2 Corinthians": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προθυμία",
+      "display": "disposición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθό",
+      "display": "según",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐπρόσδεκτος",
+      "display": "aceptable",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταφεύγω",
+      "display": "huidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "de·esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομονή",
+      "display": "de·paciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρέχω",
+      "display": "corriéramos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγών",
+      "display": "lucha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελειωτής",
+      "display": "perfeccionador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντί",
+      "display": "en·lugar·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρά",
+      "display": "de·gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομένω",
+      "display": "perseveró",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρός",
+      "display": "cruz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχύνη",
+      "display": "de·vergüenza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀπίσω",
+      "display": "detrás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "de·otra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεῖγμα",
+      "display": "ejemplo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "de·eterno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 6:18",
+      "reason": "occurs near καταφεύγω, κρατέω"
+    },
+    {
+      "ref": "2 Corinthians 8:12",
+      "reason": "occurs near εὐπρόσδεκτος, καθό, προθυμία"
+    },
+    {
+      "ref": "Jude 1:7",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

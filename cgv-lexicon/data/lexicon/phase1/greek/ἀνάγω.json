@@ -1,0 +1,524 @@
+{
+  "lemma": "ἀνάγω",
+  "language": "greek",
+  "total_occurrences": 23,
+  "forms": [
+    {
+      "form": "ἀνήγαγον",
+      "count": 3
+    },
+    {
+      "form": "ἀναγαγὼν",
+      "count": 2
+    },
+    {
+      "form": "Ἀναχθέντες",
+      "count": 2
+    },
+    {
+      "form": "ἀνήχθη",
+      "count": 2
+    },
+    {
+      "form": "ἀνάγεσθαι",
+      "count": 2
+    },
+    {
+      "form": "ἀνήχθημεν",
+      "count": 2
+    },
+    {
+      "form": "ἀναχθῆναι",
+      "count": 2
+    },
+    {
+      "form": "ἀναγαγεῖν",
+      "count": 1
+    },
+    {
+      "form": "ἀναγαγών",
+      "count": 1
+    },
+    {
+      "form": "ἀνήχθημεν.",
+      "count": 1
+    },
+    {
+      "form": "ἀναχθέντες",
+      "count": 1
+    },
+    {
+      "form": "ἀναγομένοις",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀνήχθημεν",
+      "count": 1
+    },
+    {
+      "form": "ἀνήχθησαν.",
+      "count": 1
+    },
+    {
+      "form": "ἀναγαγεῖν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 7,
+      "indicative": 10,
+      "infinitive": 6
+    },
+    "tenses": {
+      "aorist": 20,
+      "present": 3
+    },
+    "voices": {
+      "active": 8,
+      "passive": 15
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 13:20",
+      "form": "ἀναγαγὼν",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 20,
+      "left_context": "Ὁ δὲ θεὸς τῆς εἰρήνης, ὁ",
+      "right_context": "ἐκ νεκρῶν τὸν ποιμένα τῶν προβάτων"
+    },
+    {
+      "ref": "Acts 7:41",
+      "form": "ἀνήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 41,
+      "left_context": "ἐμοσχοποίησαν ἐν ταῖς ἡμέραις ἐκείναις καὶ",
+      "right_context": "θυσίαν τῷ εἰδώλῳ, καὶ εὐφραίνοντο ἐν"
+    },
+    {
+      "ref": "Acts 9:39",
+      "form": "ἀνήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 39,
+      "left_context": "δὲ Πέτρος συνῆλθεν αὐτοῖς· ὃν παραγενόμενον",
+      "right_context": "εἰς τὸ ὑπερῷον, καὶ παρέστησαν αὐτῷ"
+    },
+    {
+      "ref": "Acts 12:4",
+      "form": "ἀναγαγεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 4,
+      "left_context": "φυλάσσειν αὐτόν, βουλόμενος μετὰ τὸ πάσχα",
+      "right_context": "αὐτὸν τῷ λαῷ."
+    },
+    {
+      "ref": "Acts 13:13",
+      "form": "Ἀναχθέντες",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "δὲ ἀπὸ τῆς Πάφου οἱ ⸀περὶ"
+    },
+    {
+      "ref": "Acts 16:11",
+      "form": "Ἀναχθέντες",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 11,
+      "left_context": "",
+      "right_context": "⸀οὖν ⸀ἀπὸ Τρῳάδος εὐθυδρομήσαμεν εἰς Σαμοθρᾴκην,"
+    },
+    {
+      "ref": "Acts 16:34",
+      "form": "ἀναγαγών",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 34,
+      "left_context": "",
+      "right_context": "τε αὐτοὺς εἰς τὸν ⸀οἶκον παρέθηκεν"
+    },
+    {
+      "ref": "Acts 18:21",
+      "form": "ἀνήχθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 21,
+      "left_context": "ἀνακάμψω πρὸς ὑμᾶς τοῦ θεοῦ θέλοντος",
+      "right_context": "ἀπὸ τῆς Ἐφέσου,"
+    },
+    {
+      "ref": "Acts 20:3",
+      "form": "ἀνάγεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 3,
+      "left_context": "⸂ἐπιβουλῆς αὐτῷ⸃ ὑπὸ τῶν Ἰουδαίων μέλλοντι",
+      "right_context": "εἰς τὴν Συρίαν ἐγένετο ⸀γνώμης τοῦ"
+    },
+    {
+      "ref": "Acts 20:13",
+      "form": "ἀνήχθημεν",
+      "morph": "V-A-P-I-1P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 13,
+      "left_context": "Ἡμεῖς δὲ ⸀προελθόντες ⸀ἐπὶ τὸ πλοῖον",
+      "right_context": "ἐπὶ τὴν Ἆσσον, ἐκεῖθεν μέλλοντες ἀναλαμβάνειν"
+    },
+    {
+      "ref": "Acts 21:1",
+      "form": "ἀναχθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 1,
+      "left_context": "Ὡς δὲ ἐγένετο",
+      "right_context": "ἡμᾶς ἀποσπασθέντας ἀπ’ αὐτῶν, εὐθυδρομήσαντες ἤλθομεν"
+    },
+    {
+      "ref": "Acts 21:2",
+      "form": "ἀνήχθημεν.",
+      "morph": "V-A-P-I-1P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 2,
+      "left_context": "εὑρόντες πλοῖον διαπερῶν εἰς Φοινίκην ἐπιβάντες",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 27:2",
+      "form": "ἀνήχθημεν",
+      "morph": "V-A-P-I-1P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 2,
+      "left_context": "⸀εἰς τοὺς κατὰ τὴν Ἀσίαν τόπους",
+      "right_context": "ὄντος σὺν ἡμῖν Ἀριστάρχου Μακεδόνος Θεσσαλονικέως·"
+    },
+    {
+      "ref": "Acts 27:4",
+      "form": "ἀναχθέντες",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 4,
+      "left_context": "κἀκεῖθεν",
+      "right_context": "ὑπεπλεύσαμεν τὴν Κύπρον διὰ τὸ τοὺς"
+    },
+    {
+      "ref": "Acts 27:12",
+      "form": "ἀναχθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 12,
+      "left_context": "πρὸς παραχειμασίαν οἱ πλείονες ἔθεντο βουλὴν",
+      "right_context": "⸀ἐκεῖθεν, εἴ πως δύναιντο καταντήσαντες εἰς"
+    },
+    {
+      "ref": "Acts 27:21",
+      "form": "ἀνάγεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 21,
+      "left_context": "μέν, ὦ ἄνδρες, πειθαρχήσαντάς μοι μὴ",
+      "right_context": "ἀπὸ τῆς Κρήτης κερδῆσαί τε τὴν"
+    },
+    {
+      "ref": "Acts 28:10",
+      "form": "ἀναγομένοις",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 10,
+      "left_context": "καὶ πολλαῖς τιμαῖς ἐτίμησαν ἡμᾶς καὶ",
+      "right_context": "ἐπέθεντο τὰ πρὸς ⸂τὰς χρείας⸃."
+    },
+    {
+      "ref": "Acts 28:11",
+      "form": "⸀ἀνήχθημεν",
+      "morph": "V-A-P-I-1P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 11,
+      "left_context": "Μετὰ δὲ τρεῖς μῆνας",
+      "right_context": "ἐν πλοίῳ παρακεχειμακότι ἐν τῇ νήσῳ"
+    },
+    {
+      "ref": "Luke 2:22",
+      "form": "ἀνήγαγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "καθαρισμοῦ αὐτῶν κατὰ τὸν νόμον Μωϋσέως,",
+      "right_context": "αὐτὸν εἰς Ἱεροσόλυμα παραστῆσαι τῷ κυρίῳ,"
+    },
+    {
+      "ref": "Luke 4:5",
+      "form": "ἀναγαγὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 5,
+      "left_context": "Καὶ",
+      "right_context": "⸀αὐτὸν ἔδειξεν αὐτῷ πάσας τὰς βασιλείας"
+    },
+    {
+      "ref": "Luke 8:22",
+      "form": "ἀνήχθησαν.",
+      "morph": "V-A-P-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 22,
+      "left_context": "εἰς τὸ πέραν τῆς λίμνης, καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 4:1",
+      "form": "ἀνήχθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "Τότε ὁ Ἰησοῦς",
+      "right_context": "εἰς τὴν ἔρημον ὑπὸ τοῦ πνεύματος,"
+    },
+    {
+      "ref": "Romans 10:7",
+      "form": "ἀναγαγεῖν.",
+      "morph": "V-A-A-N",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 7,
+      "left_context": "ἄβυσσον; τοῦτ’ ἔστιν Χριστὸν ἐκ νεκρῶν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 17,
+    "Luke": 3,
+    "Hebrews": 1,
+    "Matthew": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "de·muertos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παρίστημι",
+      "display": "presentaron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθυδρομέω",
+      "display": "navegar·directamente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖθεν",
+      "display": "de·allí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "de·paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποιμήν",
+      "display": "pastor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυσία",
+      "display": "sacrificio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴδωλον",
+      "display": "ídolo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐφραίνω",
+      "display": "regocijarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέρχομαι",
+      "display": "reunirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγίνομαι",
+      "display": "venido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπερῷον",
+      "display": "aposento·alto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχα",
+      "display": "pascua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πάφος",
+      "display": "de·Pafos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τρῳάς",
+      "display": "de·Troas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 27:21",
+      "negator": "μὴ",
+      "clause_text": "εἶπεν· Ἔδει μέν, ὦ ἄνδρες, πειθαρχήσαντάς μοι μὴ ἀνάγεσθαι ἀπὸ τῆς Κρήτης κερδῆσαί τε τὴν ὕβριν ταύτην"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:4",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 13:13",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:11",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:34",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 18:21",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 20:13",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 20:3",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:1",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

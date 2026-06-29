@@ -1,0 +1,80 @@
+{
+  "lemma": "προκηρύσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προκηρύξαντος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:24",
+      "form": "προκηρύξαντος",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 24,
+      "left_context": "",
+      "right_context": "Ἰωάννου πρὸ προσώπου τῆς εἰσόδου αὐτοῦ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰωάννης",
+      "display": "de·Juan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "de·rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴσοδος",
+      "display": "de·entrada",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:24",
+      "reason": "occurs near εἴσοδος, πρό, πρόσωπον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

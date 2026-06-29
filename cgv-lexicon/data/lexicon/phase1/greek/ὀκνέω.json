@@ -1,0 +1,94 @@
+{
+  "lemma": "ὀκνέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ὀκνήσῃς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:38",
+      "form": "⸀ὀκνήσῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 38,
+      "left_context": "⸂δύο ἄνδρας⸃ πρὸς αὐτὸν παρακαλοῦντες· Μὴ",
+      "right_context": "διελθεῖν ἕως ⸀ἡμῶν·"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διέρχομαι",
+      "display": "pasar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 9:38",
+      "form": "⸀ὀκνήσῃς",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "αὐτῇ ἀπέστειλαν ⸂δύο ἄνδρας⸃ πρὸς αὐτὸν παρακαλοῦντες· Μὴ ⸀ὀκνήσῃς διελθεῖν ἕως ⸀ἡμῶν·",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 9:38",
+      "negator": "Μὴ",
+      "clause_text": "αὐτῇ ἀπέστειλαν ⸂δύο ἄνδρας⸃ πρὸς αὐτὸν παρακαλοῦντες· Μὴ ⸀ὀκνήσῃς διελθεῖν ἕως ⸀ἡμῶν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 9:38",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

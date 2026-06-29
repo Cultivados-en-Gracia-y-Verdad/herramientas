@@ -1,0 +1,221 @@
+{
+  "lemma": "καταδικάζω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "καταδικάζετε,",
+      "count": 1
+    },
+    {
+      "form": "καταδικασθῆτε.",
+      "count": 1
+    },
+    {
+      "form": "κατεδικάσατε",
+      "count": 1
+    },
+    {
+      "form": "καταδικασθήσῃ.",
+      "count": 1
+    },
+    {
+      "form": "κατεδικάσατε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "subjunctive": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 3,
+      "future": 1
+    },
+    "voices": {
+      "active": 3,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:37",
+      "form": "καταδικάζετε,",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 37,
+      "left_context": "καὶ οὐ μὴ κριθῆτε· ⸀καὶ μὴ",
+      "right_context": "καὶ οὐ μὴ καταδικασθῆτε. ἀπολύετε, καὶ"
+    },
+    {
+      "ref": "Luke 6:37",
+      "form": "καταδικασθῆτε.",
+      "morph": "V-A-P-S-2P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 37,
+      "left_context": "⸀καὶ μὴ καταδικάζετε, καὶ οὐ μὴ",
+      "right_context": "ἀπολύετε, καὶ ἀπολυθήσεσθε·"
+    },
+    {
+      "ref": "Matthew 12:7",
+      "form": "κατεδικάσατε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 7,
+      "left_context": "θέλω καὶ οὐ θυσίαν, οὐκ ἂν",
+      "right_context": "τοὺς ἀναιτίους."
+    },
+    {
+      "ref": "Matthew 12:37",
+      "form": "καταδικασθήσῃ.",
+      "morph": "V-F-P-I-2S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 37,
+      "left_context": "δικαιωθήσῃ, καὶ ἐκ τῶν λόγων σου",
+      "right_context": ""
+    },
+    {
+      "ref": "James 5:6",
+      "form": "κατεδικάσατε,",
+      "morph": "V-A-A-I-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "ἐφονεύσατε τὸν δίκαιον. οὐκ ἀντιτάσσεται ὑμῖν;"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Matthew": 2,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀπολύω",
+      "display": "despeded",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "καταδικάζω",
+      "display": "condenéis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "juzgéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυσία",
+      "display": "sacrificio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναίτιος",
+      "display": "inocentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "de·palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φονεύω",
+      "display": "asesinasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκαιος",
+      "display": "justo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντιτάσσομαι",
+      "display": "oponerse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 6:37",
+      "form": "καταδικάζετε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "μὴ κρίνετε, καὶ οὐ μὴ κριθῆτε· ⸀καὶ μὴ καταδικάζετε, καὶ οὐ μὴ καταδικασθῆτε. ἀπολύετε, καὶ ἀπολυθήσεσθε·",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 6:37",
+      "form": "καταδικασθῆτε.",
+      "morph": "V-A-P-S-2P",
+      "clause_text": "μὴ κριθῆτε· ⸀καὶ μὴ καταδικάζετε, καὶ οὐ μὴ καταδικασθῆτε. ἀπολύετε, καὶ ἀπολυθήσεσθε·",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 6:37",
+      "negator": "μὴ",
+      "clause_text": "μὴ κρίνετε, καὶ οὐ μὴ κριθῆτε· ⸀καὶ μὴ καταδικάζετε, καὶ οὐ μὴ καταδικασθῆτε. ἀπολύετε, καὶ ἀπολυθήσεσθε·"
+    },
+    {
+      "ref": "Luke 6:37",
+      "negator": "οὐ",
+      "clause_text": "μὴ κριθῆτε· ⸀καὶ μὴ καταδικάζετε, καὶ οὐ μὴ καταδικασθῆτε. ἀπολύετε, καὶ ἀπολυθήσεσθε·"
+    },
+    {
+      "ref": "Matthew 12:7",
+      "negator": "οὐ",
+      "clause_text": "ἐστιν· Ἔλεος θέλω καὶ οὐ θυσίαν, οὐκ ἂν κατεδικάσατε τοὺς ἀναιτίους."
+    },
+    {
+      "ref": "James 5:6",
+      "negator": "οὐκ",
+      "clause_text": "κατεδικάσατε, ἐφονεύσατε τὸν δίκαιον. οὐκ ἀντιτάσσεται ὑμῖν;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:37",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 12:37",
+      "reason": "occurs near καταδικάζω"
+    },
+    {
+      "ref": "Matthew 12:7",
+      "reason": "occurs near θυσία, καταδικάζω, ἀναίτιος"
+    },
+    {
+      "ref": "James 5:6",
+      "reason": "occurs near καταδικάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

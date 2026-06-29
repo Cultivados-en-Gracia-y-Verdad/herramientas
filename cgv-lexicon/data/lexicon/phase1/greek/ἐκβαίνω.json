@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐκβαίνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐξέβησαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:15",
+      "form": "⸀ἐξέβησαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "εἰ μὲν ἐκείνης ⸀μνημονεύουσιν ἀφ’ ἧς",
+      "right_context": "εἶχον ἂν καιρὸν ἀνακάμψαι·"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μνημονεύω",
+      "display": "recordan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνακάμπτω",
+      "display": "regresar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:15",
+      "reason": "occurs near καιρός, μέν, μνημονεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

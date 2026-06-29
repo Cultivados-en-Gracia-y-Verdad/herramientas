@@ -1,0 +1,113 @@
+{
+  "lemma": "ἀνάπτω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνήφθη;",
+      "count": 1
+    },
+    {
+      "form": "ἀνάπτει·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:49",
+      "form": "ἀνήφθη;",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 49,
+      "left_context": "γῆν, καὶ τί θέλω εἰ ἤδη",
+      "right_context": ""
+    },
+    {
+      "ref": "James 3:5",
+      "form": "ἀνάπτει·",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "αὐχεῖ⸃. Ἰδοὺ ⸀ἡλίκον πῦρ ἡλίκην ὕλην",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡλίκος",
+      "display": "cuán·grande",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕλη",
+      "display": "bosque",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:5",
+      "reason": "occurs near πῦρ, ἡλίκος, ἰδού"
+    },
+    {
+      "ref": "Luke 12:49",
+      "reason": "occurs near θέλω, ἤδη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,112 @@
+{
+  "lemma": "ἐξανατέλλω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐξανέτειλεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 4:5",
+      "form": "ἐξανέτειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 5,
+      "left_context": "οὐκ εἶχεν γῆν πολλήν, καὶ ⸀εὐθὺς",
+      "right_context": "διὰ τὸ μὴ ἔχειν βάθος γῆς·"
+    },
+    {
+      "ref": "Matthew 13:5",
+      "form": "ἐξανέτειλεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 5,
+      "left_context": "οὐκ εἶχεν γῆν πολλήν, καὶ εὐθέως",
+      "right_context": "διὰ τὸ μὴ ἔχειν βάθος γῆς,"
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucha",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βάθος",
+      "display": "profundidad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 4:5",
+      "negator": "μὴ",
+      "clause_text": "πετρῶδες ⸀ὅπου οὐκ εἶχεν γῆν πολλήν, καὶ ⸀εὐθὺς ἐξανέτειλεν διὰ τὸ μὴ ἔχειν βάθος γῆς·"
+    },
+    {
+      "ref": "Matthew 13:5",
+      "negator": "μὴ",
+      "clause_text": "πετρώδη ὅπου οὐκ εἶχεν γῆν πολλήν, καὶ εὐθέως ἐξανέτειλεν διὰ τὸ μὴ ἔχειν βάθος γῆς,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 4:5",
+      "reason": "occurs near βάθος, γῆ, εὐθύς"
+    },
+    {
+      "ref": "Matthew 13:5",
+      "reason": "occurs near βάθος, γῆ, εὐθέως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

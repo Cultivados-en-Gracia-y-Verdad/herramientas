@@ -1,0 +1,292 @@
+{
+  "lemma": "συμβάλλω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "συνέβαλλον",
+      "count": 2
+    },
+    {
+      "form": "συνεβάλετο",
+      "count": 1
+    },
+    {
+      "form": "⸀συνέβαλλεν",
+      "count": 1
+    },
+    {
+      "form": "συμβάλλουσα",
+      "count": 1
+    },
+    {
+      "form": "συμβαλεῖν⸃",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "imperfect": 3,
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 5,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 4:15",
+      "form": "συνέβαλλον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "δὲ αὐτοὺς ἔξω τοῦ συνεδρίου ἀπελθεῖν",
+      "right_context": "πρὸς ἀλλήλους"
+    },
+    {
+      "ref": "Acts 17:18",
+      "form": "συνέβαλλον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 18,
+      "left_context": "καὶ τῶν Ἐπικουρείων ⸀καὶ Στοϊκῶν φιλοσόφων",
+      "right_context": "αὐτῷ, καί τινες ἔλεγον· Τί ἂν"
+    },
+    {
+      "ref": "Acts 18:27",
+      "form": "συνεβάλετο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 27,
+      "left_context": "τοῖς μαθηταῖς ἀποδέξασθαι αὐτόν· ὃς παραγενόμενος",
+      "right_context": "πολὺ τοῖς πεπιστευκόσιν διὰ τῆς χάριτος·"
+    },
+    {
+      "ref": "Acts 20:14",
+      "form": "⸀συνέβαλλεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 14,
+      "left_context": "ὡς δὲ",
+      "right_context": "ἡμῖν εἰς τὴν Ἆσσον, ἀναλαβόντες αὐτὸν"
+    },
+    {
+      "ref": "Luke 2:19",
+      "form": "συμβάλλουσα",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "⸀Μαρία πάντα συνετήρει τὰ ῥήματα ταῦτα",
+      "right_context": "ἐν τῇ καρδίᾳ αὐτῆς."
+    },
+    {
+      "ref": "Luke 14:31",
+      "form": "συμβαλεῖν⸃",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 31,
+      "left_context": "ἢ τίς βασιλεὺς πορευόμενος ⸂ἑτέρῳ βασιλεῖ",
+      "right_context": "εἰς πόλεμον οὐχὶ καθίσας πρῶτον ⸀βουλεύσεται"
+    }
+  ],
+  "books": {
+    "Acts": 4,
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέδριον",
+      "display": "de·sanedrín",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἐπικούρειος",
+      "display": "de·Epicúreo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Στοϊκός",
+      "display": "de·Estoico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλόσοφος",
+      "display": "de·filósofos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδέχομαι",
+      "display": "recibir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγίνομαι",
+      "display": "venido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἆσσος",
+      "display": "Aso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναλαμβάνω",
+      "display": "recibidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συντηρέω",
+      "display": "conservaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dichos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "iendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλεμος",
+      "display": "guerra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίζω",
+      "display": "sentado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 18:27",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 20:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 4:15",
+      "reason": "occurs near συνέδριον, ἀλλήλων, ἀπέρχομαι"
+    },
+    {
+      "ref": "Luke 14:31",
+      "reason": "occurs near βασιλεύς"
+    },
+    {
+      "ref": "Luke 2:19",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

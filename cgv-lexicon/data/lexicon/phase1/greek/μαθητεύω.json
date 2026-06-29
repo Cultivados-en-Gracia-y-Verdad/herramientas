@@ -1,0 +1,211 @@
+{
+  "lemma": "μαθητεύω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "μαθητεύσαντες",
+      "count": 1
+    },
+    {
+      "form": "μαθητευθεὶς",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐμαθητεύθη",
+      "count": 1
+    },
+    {
+      "form": "μαθητεύσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "active": 2,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 14:21",
+      "form": "μαθητεύσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 21,
+      "left_context": "Εὐαγγελισάμενοί τε τὴν πόλιν ἐκείνην καὶ",
+      "right_context": "ἱκανοὺς ὑπέστρεψαν εἰς τὴν Λύστραν καὶ"
+    },
+    {
+      "ref": "Matthew 13:52",
+      "form": "μαθητευθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 52,
+      "left_context": "εἶπεν αὐτοῖς· Διὰ τοῦτο πᾶς γραμματεὺς",
+      "right_context": "⸂τῇ βασιλείᾳ⸃ τῶν οὐρανῶν ὅμοιός ἐστιν"
+    },
+    {
+      "ref": "Matthew 27:57",
+      "form": "⸀ἐμαθητεύθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 57,
+      "left_context": "Ἁριμαθαίας, τοὔνομα Ἰωσήφ, ὃς καὶ αὐτὸς",
+      "right_context": "τῷ Ἰησοῦ·"
+    },
+    {
+      "ref": "Matthew 28:19",
+      "form": "μαθητεύσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 19,
+      "left_context": "πορευθέντες ⸀οὖν",
+      "right_context": "πάντα τὰ ἔθνη, ⸀βαπτίζοντες αὐτοὺς εἰς"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποστρέφω",
+      "display": "volvieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λύστρα",
+      "display": "Listra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραμματεύς",
+      "display": "escriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅμοιος",
+      "display": "semejante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοὔνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωσήφ",
+      "display": "José",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "idos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαπτίζω",
+      "display": "bautizando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 28:19",
+      "form": "μαθητεύσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "πορευθέντες ⸀οὖν μαθητεύσατε πάντα τὰ ἔθνη, ⸀βαπτίζοντες αὐτοὺς εἰς τὸ ὄνομα"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 28:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 13:52",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 27:57",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 14:21",
+      "reason": "occurs near Λύστρα, πόλις, τέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,106 @@
+{
+  "lemma": "ἐπιδημέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπιδημοῦντες",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:10",
+      "form": "ἐπιδημοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "Λιβύης τῆς κατὰ Κυρήνην, καὶ οἱ",
+      "right_context": "Ῥωμαῖοι,"
+    },
+    {
+      "ref": "Acts 17:21",
+      "form": "ἐπιδημοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 21,
+      "left_context": "Ἀθηναῖοι δὲ πάντες καὶ οἱ",
+      "right_context": "ξένοι εἰς οὐδὲν ἕτερον ηὐκαίρουν ἢ"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Κυρήνη",
+      "display": "Cirene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ῥωμαῖος",
+      "display": "Romano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀθηναῖος",
+      "display": "Ateniense",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξένος",
+      "display": "extranjeros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐκαιρέω",
+      "display": "tener·oportunidad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:21",
+      "reason": "occurs near ξένος, Ἀθηναῖος, ἕτερος"
+    },
+    {
+      "ref": "Acts 2:10",
+      "reason": "occurs near Κυρήνη, Ῥωμαῖος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

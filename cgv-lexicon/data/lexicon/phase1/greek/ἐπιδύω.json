@@ -1,0 +1,88 @@
+{
+  "lemma": "ἐπιδύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιδυέτω",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 4:26",
+      "form": "ἐπιδυέτω",
+      "morph": "V-P-A-D-3S",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 26,
+      "left_context": "καὶ μὴ ἁμαρτάνετε· ὁ ἥλιος μὴ",
+      "right_context": "⸀ἐπὶ παροργισμῷ ὑμῶν,"
+    }
+  ],
+  "books": {
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἁμαρτάνω",
+      "display": "pecad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "sol",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παροργισμός",
+      "display": "ira",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Ephesians 4:26",
+      "form": "ἐπιδυέτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "ὀργίζεσθε καὶ μὴ ἁμαρτάνετε· ὁ ἥλιος μὴ ἐπιδυέτω ⸀ἐπὶ παροργισμῷ ὑμῶν,",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Ephesians 4:26",
+      "negator": "μὴ",
+      "clause_text": "ὀργίζεσθε καὶ μὴ ἁμαρτάνετε· ὁ ἥλιος μὴ ἐπιδυέτω ⸀ἐπὶ παροργισμῷ ὑμῶν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 4:26",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,271 @@
+{
+  "lemma": "συγχέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "συνεχύθη,",
+      "count": 1
+    },
+    {
+      "form": "⸀συνέχυννεν",
+      "count": 1
+    },
+    {
+      "form": "συγκεχυμένη,",
+      "count": 1
+    },
+    {
+      "form": "συνέχεον",
+      "count": 1
+    },
+    {
+      "form": "⸀συγχύννεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "imperfect": 2,
+      "perfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:6",
+      "form": "συνεχύθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "φωνῆς ταύτης συνῆλθε τὸ πλῆθος καὶ",
+      "right_context": "ὅτι ⸀ἤκουον εἷς ἕκαστος τῇ ἰδίᾳ"
+    },
+    {
+      "ref": "Acts 9:22",
+      "form": "⸀συνέχυννεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "Σαῦλος δὲ μᾶλλον ἐνεδυναμοῦτο καὶ",
+      "right_context": "⸀τοὺς Ἰουδαίους τοὺς κατοικοῦντας ἐν Δαμασκῷ,"
+    },
+    {
+      "ref": "Acts 19:32",
+      "form": "συγκεχυμένη,",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 32,
+      "left_context": "τι ἔκραζον, ἦν γὰρ ἡ ἐκκλησία",
+      "right_context": "καὶ οἱ πλείους οὐκ ᾔδεισαν τίνος"
+    },
+    {
+      "ref": "Acts 21:27",
+      "form": "συνέχεον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 27,
+      "left_context": "Ἰουδαῖοι θεασάμενοι αὐτὸν ἐν τῷ ἱερῷ",
+      "right_context": "πάντα τὸν ὄχλον καὶ ἐπέβαλον ⸂ἐπ’"
+    },
+    {
+      "ref": "Acts 21:31",
+      "form": "⸀συγχύννεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 31,
+      "left_context": "τῷ χιλιάρχῳ τῆς σπείρης ὅτι ὅλη",
+      "right_context": "Ἰερουσαλήμ,"
+    }
+  ],
+  "books": {
+    "Acts": 5
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συνέρχομαι",
+      "display": "reunirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλῆθος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαῦλος",
+      "display": "Saulo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδυναμόω",
+      "display": "era fortalecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατοικέω",
+      "display": "habitando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράζω",
+      "display": "clamaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habían sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεάομαι",
+      "display": "contemplados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιβάλλω",
+      "display": "echaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιλίαρχος",
+      "display": "tribuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπεῖρα",
+      "display": "de·cohorte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 19:32",
+      "negator": "οὐκ",
+      "clause_text": "οὖν ἄλλο τι ἔκραζον, ἦν γὰρ ἡ ἐκκλησία συγκεχυμένη, καὶ οἱ πλείους οὐκ ᾔδεισαν τίνος ἕνεκα συνεληλύθεισαν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:32",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:27",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:31",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 2:6",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 9:22",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

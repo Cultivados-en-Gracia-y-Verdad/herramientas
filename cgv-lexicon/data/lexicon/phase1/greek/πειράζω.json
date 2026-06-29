@@ -1,0 +1,747 @@
+{
+  "lemma": "πειράζω",
+  "language": "greek",
+  "total_occurrences": 37,
+  "forms": [
+    {
+      "form": "πειράζοντες",
+      "count": 5
+    },
+    {
+      "form": "πειράζων",
+      "count": 4
+    },
+    {
+      "form": "πειραζόμενος",
+      "count": 3
+    },
+    {
+      "form": "πειρασθῆναι",
+      "count": 2
+    },
+    {
+      "form": "ἐπείρασεν",
+      "count": 2
+    },
+    {
+      "form": "πειράζετε",
+      "count": 2
+    },
+    {
+      "form": "πειράσαι",
+      "count": 2
+    },
+    {
+      "form": "πειράζῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐπείρασαν,",
+      "count": 1
+    },
+    {
+      "form": "ἐπείρασας",
+      "count": 1
+    },
+    {
+      "form": "πειρασθῆτε,",
+      "count": 1
+    },
+    {
+      "form": "πειρασθῇς.",
+      "count": 1
+    },
+    {
+      "form": "πειρασθείς,",
+      "count": 1
+    },
+    {
+      "form": "πειραζομένοις",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπείρασαν",
+      "count": 1
+    },
+    {
+      "form": "⸀πεπειρασμένον",
+      "count": 1
+    },
+    {
+      "form": "πειραζόμενος,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπείραζεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπείραζον",
+      "count": 1
+    },
+    {
+      "form": "πειράζετε;",
+      "count": 1
+    },
+    {
+      "form": "πειράζετε,",
+      "count": 1
+    },
+    {
+      "form": "πειράζομαι·",
+      "count": 1
+    },
+    {
+      "form": "πειράζει",
+      "count": 1
+    },
+    {
+      "form": "πειράζεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 3,
+      "indicative": 13,
+      "infinitive": 4,
+      "participle": 16,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 22,
+      "aorist": 12,
+      "perfect": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 24,
+      "passive": 13
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:5",
+      "form": "πειράζῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 5,
+      "left_context": "ἐπὶ τὸ αὐτὸ ⸀ἦτε, ἵνα μὴ",
+      "right_context": "ὑμᾶς ὁ Σατανᾶς διὰ τὴν ἀκρασίαν"
+    },
+    {
+      "ref": "1 Corinthians 10:9",
+      "form": "ἐπείρασαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 9,
+      "left_context": "ἐκπειράζωμεν τὸν ⸀Χριστόν, ⸀καθώς τινες αὐτῶν",
+      "right_context": "καὶ ὑπὸ τῶν ὄφεων ⸀ἀπώλλυντο."
+    },
+    {
+      "ref": "1 Corinthians 10:13",
+      "form": "πειρασθῆναι",
+      "morph": "V-A-P-N",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 13,
+      "left_context": "ὁ θεός, ὃς οὐκ ἐάσει ὑμᾶς",
+      "right_context": "ὑπὲρ ὃ δύνασθε, ἀλλὰ ποιήσει σὺν"
+    },
+    {
+      "ref": "1 Thessalonians 3:5",
+      "form": "ἐπείρασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Thessalonians",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "γνῶναι τὴν πίστιν ὑμῶν, μή πως",
+      "right_context": "ὑμᾶς ὁ πειράζων καὶ εἰς κενὸν"
+    },
+    {
+      "ref": "1 Thessalonians 3:5",
+      "form": "πειράζων",
+      "morph": "V-P-A-P",
+      "book": "1 Thessalonians",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "ὑμῶν, μή πως ἐπείρασεν ὑμᾶς ὁ",
+      "right_context": "καὶ εἰς κενὸν γένηται ὁ κόπος"
+    },
+    {
+      "ref": "2 Corinthians 13:5",
+      "form": "πειράζετε",
+      "morph": "V-P-A-D-2P",
+      "book": "2 Corinthians",
+      "chapter": 13,
+      "verse": 5,
+      "left_context": "Ἑαυτοὺς",
+      "right_context": "εἰ ἐστὲ ἐν τῇ πίστει, ἑαυτοὺς"
+    },
+    {
+      "ref": "Revelation 2:2",
+      "form": "ἐπείρασας",
+      "morph": "V-A-A-I-2S",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "ὅτι οὐ δύνῃ βαστάσαι κακούς, καὶ",
+      "right_context": "τοὺς λέγοντας ἑαυτοὺς ⸀ἀποστόλους, καὶ οὐκ"
+    },
+    {
+      "ref": "Revelation 2:10",
+      "form": "πειρασθῆτε,",
+      "morph": "V-A-P-S-2P",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "διάβολος ἐξ ὑμῶν εἰς φυλακὴν ἵνα",
+      "right_context": "καὶ ⸀ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου"
+    },
+    {
+      "ref": "Revelation 3:10",
+      "form": "πειράσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "μελλούσης ἔρχεσθαι ἐπὶ τῆς οἰκουμένης ὅλης,",
+      "right_context": "τοὺς κατοικοῦντας ἐπὶ τῆς γῆς."
+    },
+    {
+      "ref": "Galatians 6:1",
+      "form": "πειρασθῇς.",
+      "morph": "V-A-P-S-2S",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "πραΰτητος, σκοπῶν σεαυτόν, μὴ καὶ σὺ",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 2:18",
+      "form": "πειρασθείς,",
+      "morph": "V-A-P-P",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "ἐν ᾧ γὰρ πέπονθεν αὐτὸς",
+      "right_context": "δύναται τοῖς πειραζομένοις βοηθῆσαι."
+    },
+    {
+      "ref": "Hebrews 2:18",
+      "form": "πειραζομένοις",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "γὰρ πέπονθεν αὐτὸς πειρασθείς, δύναται τοῖς",
+      "right_context": "βοηθῆσαι."
+    },
+    {
+      "ref": "Hebrews 3:9",
+      "form": "⸀ἐπείρασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "οὗ",
+      "right_context": "οἱ πατέρες ὑμῶν ⸂ἐν δοκιμασίᾳ⸃ καὶ"
+    },
+    {
+      "ref": "Hebrews 4:15",
+      "form": "⸀πεπειρασμένον",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "μὴ δυνάμενον συμπαθῆσαι ταῖς ἀσθενείαις ἡμῶν,",
+      "right_context": "δὲ κατὰ πάντα καθ’ ὁμοιότητα χωρὶς"
+    },
+    {
+      "ref": "Hebrews 11:17",
+      "form": "πειραζόμενος,",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "Πίστει προσενήνοχεν Ἀβραὰμ τὸν Ἰσαὰκ",
+      "right_context": "καὶ τὸν μονογενῆ προσέφερεν ὁ τὰς"
+    },
+    {
+      "ref": "Acts 5:9",
+      "form": "πειράσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "πρὸς αὐτήν· Τί ὅτι συνεφωνήθη ὑμῖν",
+      "right_context": "τὸ πνεῦμα κυρίου; ἰδοὺ οἱ πόδες"
+    },
+    {
+      "ref": "Acts 9:26",
+      "form": "⸀ἐπείραζεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 26,
+      "left_context": "Παραγενόμενος δὲ ⸀εἰς Ἰερουσαλὴμ",
+      "right_context": "κολλᾶσθαι τοῖς μαθηταῖς· καὶ πάντες ἐφοβοῦντο"
+    },
+    {
+      "ref": "Acts 15:10",
+      "form": "πειράζετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 10,
+      "left_context": "νῦν οὖν τί",
+      "right_context": "τὸν θεόν, ἐπιθεῖναι ζυγὸν ἐπὶ τὸν"
+    },
+    {
+      "ref": "Acts 16:7",
+      "form": "ἐπείραζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 7,
+      "left_context": "ἐλθόντες ⸀δὲ κατὰ τὴν Μυσίαν",
+      "right_context": "⸀εἰς τὴν Βιθυνίαν ⸀πορευθῆναι καὶ οὐκ"
+    },
+    {
+      "ref": "Acts 24:6",
+      "form": "ἐπείρασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 6,
+      "left_context": "ὃς καὶ τὸ ἱερὸν",
+      "right_context": "βεβηλῶσαι, ὃν καὶ ⸀ἐκρατήσαμεν,"
+    },
+    {
+      "ref": "John 6:6",
+      "form": "πειράζων",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "τοῦτο δὲ ἔλεγεν",
+      "right_context": "αὐτόν, αὐτὸς γὰρ ᾔδει τί ἔμελλεν"
+    },
+    {
+      "ref": "Luke 4:2",
+      "form": "πειραζόμενος",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "ἡμέρας τεσσεράκοντα",
+      "right_context": "ὑπὸ τοῦ διαβόλου. καὶ οὐκ ἔφαγεν"
+    },
+    {
+      "ref": "Luke 11:16",
+      "form": "πειράζοντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 16,
+      "left_context": "ἕτεροι δὲ",
+      "right_context": "σημεῖον ⸂ἐξ οὐρανοῦ ἐζήτουν παρ’ αὐτοῦ⸃."
+    },
+    {
+      "ref": "Mark 1:13",
+      "form": "πειραζόμενος",
+      "morph": "V-P-P-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "⸀ἦν ἐν τῇ ἐρήμῳ ⸂τεσσεράκοντα ἡμέρας⸃",
+      "right_context": "ὑπὸ τοῦ Σατανᾶ, καὶ ἦν μετὰ"
+    },
+    {
+      "ref": "Mark 8:11",
+      "form": "πειράζοντες",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 11,
+      "left_context": "παρ’ αὐτοῦ σημεῖον ἀπὸ τοῦ οὐρανοῦ,",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 10:2",
+      "form": "πειράζοντες",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 2,
+      "left_context": "αὐτὸν εἰ ἔξεστιν ἀνδρὶ γυναῖκα ἀπολῦσαι,",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 12:15",
+      "form": "πειράζετε;",
+      "morph": "V-P-A-I-2P",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "τὴν ὑπόκρισιν εἶπεν αὐτοῖς· Τί με",
+      "right_context": "φέρετέ μοι δηνάριον ἵνα ἴδω."
+    },
+    {
+      "ref": "Matthew 4:1",
+      "form": "πειρασθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "εἰς τὴν ἔρημον ὑπὸ τοῦ πνεύματος,",
+      "right_context": "ὑπὸ τοῦ διαβόλου."
+    },
+    {
+      "ref": "Matthew 4:3",
+      "form": "πειράζων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "καὶ προσελθὼν ⸂ὁ",
+      "right_context": "εἶπεν αὐτῷ⸃· Εἰ υἱὸς εἶ τοῦ"
+    },
+    {
+      "ref": "Matthew 16:1",
+      "form": "πειράζοντες",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 1,
+      "left_context": "Καὶ προσελθόντες οἱ Φαρισαῖοι καὶ Σαδδουκαῖοι",
+      "right_context": "ἐπηρώτησαν αὐτὸν σημεῖον ἐκ τοῦ οὐρανοῦ"
+    },
+    {
+      "ref": "Matthew 19:3",
+      "form": "πειράζοντες",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 3,
+      "left_context": "Καὶ προσῆλθον ⸀αὐτῷ Φαρισαῖοι",
+      "right_context": "αὐτὸν καὶ ⸀λέγοντες· Εἰ ἔξεστιν ⸀ἀνθρώπῳ"
+    },
+    {
+      "ref": "Matthew 22:18",
+      "form": "πειράζετε,",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 18,
+      "left_context": "τὴν πονηρίαν αὐτῶν εἶπεν· Τί με",
+      "right_context": "ὑποκριταί;"
+    },
+    {
+      "ref": "Matthew 22:35",
+      "form": "πειράζων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 35,
+      "left_context": "καὶ ἐπηρώτησεν εἷς ἐξ αὐτῶν νομικὸς",
+      "right_context": "⸀αὐτόν·"
+    },
+    {
+      "ref": "James 1:13",
+      "form": "πειραζόμενος",
+      "morph": "V-P-P-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "μηδεὶς",
+      "right_context": "λεγέτω ὅτι Ἀπὸ θεοῦ πειράζομαι· ὁ"
+    },
+    {
+      "ref": "James 1:13",
+      "form": "πειράζομαι·",
+      "morph": "V-P-P-I-1S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "μηδεὶς πειραζόμενος λεγέτω ὅτι Ἀπὸ θεοῦ",
+      "right_context": "ὁ γὰρ θεὸς ἀπείραστός ἐστιν κακῶν,"
+    },
+    {
+      "ref": "James 1:13",
+      "form": "πειράζει",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ὁ γὰρ θεὸς ἀπείραστός ἐστιν κακῶν,",
+      "right_context": "δὲ αὐτὸς οὐδένα."
+    },
+    {
+      "ref": "James 1:14",
+      "form": "πειράζεται",
+      "morph": "V-P-P-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "ἕκαστος δὲ",
+      "right_context": "ὑπὸ τῆς ἰδίας ἐπιθυμίας ἐξελκόμενος καὶ"
+    }
+  ],
+  "books": {
+    "Matthew": 6,
+    "Hebrews": 5,
+    "Acts": 5,
+    "Mark": 4,
+    "James": 4,
+    "1 Corinthians": 3,
+    "Revelation": 3,
+    "1 Thessalonians": 2,
+    "Luke": 2,
+    "2 Corinthians": 1,
+    "Galatians": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "πειράζω",
+      "display": "tentando",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podéis",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·días",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "σημεῖον",
+      "display": "señal",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Σατανᾶς",
+      "display": "Satanás",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κακός",
+      "display": "malos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "ha padecido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βοηθέω",
+      "display": "ayudar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "ha ofrecido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τεσσεράκοντα",
+      "display": "cuarentas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διάβολος",
+      "display": "de·diablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξεστι(ν)",
+      "display": "es·lícito",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπερωτάω",
+      "display": "preguntaron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπείραστος",
+      "display": "no·tentable",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 7:5",
+      "form": "πειράζῃ",
+      "morph": "V-P-A-S-3S",
+      "clause_text": "καὶ πάλιν ἐπὶ τὸ αὐτὸ ⸀ἦτε, ἵνα μὴ πειράζῃ ὑμᾶς ὁ Σατανᾶς διὰ τὴν ἀκρασίαν ὑμῶν.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "2 Corinthians 13:5",
+      "form": "πειράζετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Ἑαυτοὺς πειράζετε εἰ ἐστὲ ἐν τῇ πίστει, ἑαυτοὺς δοκιμάζετε· ἢ"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "form": "πειρασθῇς.",
+      "morph": "V-A-P-S-2S",
+      "clause_text": "ἐν πνεύματι πραΰτητος, σκοπῶν σεαυτόν, μὴ καὶ σὺ πειρασθῇς.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:5",
+      "negator": "μὴ",
+      "clause_text": "καὶ πάλιν ἐπὶ τὸ αὐτὸ ⸀ἦτε, ἵνα μὴ πειράζῃ ὑμᾶς ὁ Σατανᾶς διὰ τὴν ἀκρασίαν ὑμῶν."
+    },
+    {
+      "ref": "1 Corinthians 10:13",
+      "negator": "οὐκ",
+      "clause_text": "πιστὸς δὲ ὁ θεός, ὃς οὐκ ἐάσει ὑμᾶς πειρασθῆναι ὑπὲρ ὃ δύνασθε, ἀλλὰ ποιήσει σὺν τῷ πειρασμῷ"
+    },
+    {
+      "ref": "1 Thessalonians 3:5",
+      "negator": "μή",
+      "clause_text": "εἰς τὸ γνῶναι τὴν πίστιν ὑμῶν, μή πως ἐπείρασεν ὑμᾶς ὁ πειράζων καὶ εἰς κενὸν γένηται ὁ"
+    },
+    {
+      "ref": "Galatians 6:1",
+      "negator": "μὴ",
+      "clause_text": "ἐν πνεύματι πραΰτητος, σκοπῶν σεαυτόν, μὴ καὶ σὺ πειρασθῇς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 13:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 16:1",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 19:3",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 22:18",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 22:35",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 4:1",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 4:3",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Acts 15:10",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

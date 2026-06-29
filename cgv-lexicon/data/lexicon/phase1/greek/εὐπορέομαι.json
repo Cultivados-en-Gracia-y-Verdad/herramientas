@@ -1,0 +1,74 @@
+{
+  "lemma": "εὐπορέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εὐπορεῖτό",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 11:29",
+      "form": "εὐπορεῖτό",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 29,
+      "left_context": "τῶν δὲ μαθητῶν καθὼς",
+      "right_context": "τις ὥρισαν ἕκαστος αὐτῶν εἰς διακονίαν"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁρίζω",
+      "display": "determinaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 11:29",
+      "reason": "occurs near μαθητής, ἕκαστος, ὁρίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

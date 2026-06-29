@@ -1,0 +1,173 @@
+{
+  "lemma": "τυφόομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "τυφωθεὶς",
+      "count": 1
+    },
+    {
+      "form": "τετύφωται,",
+      "count": 1
+    },
+    {
+      "form": "τετυφωμένοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 3:6",
+      "form": "τυφωθεὶς",
+      "morph": "V-A-P-P",
+      "book": "1 Timothy",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "μὴ νεόφυτον, ἵνα μὴ",
+      "right_context": "εἰς κρίμα ἐμπέσῃ τοῦ διαβόλου."
+    },
+    {
+      "ref": "1 Timothy 6:4",
+      "form": "τετύφωται,",
+      "morph": "V-X-P-I-3S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 4,
+      "left_context": "",
+      "right_context": "μηδὲν ἐπιστάμενος, ἀλλὰ νοσῶν περὶ ζητήσεις"
+    },
+    {
+      "ref": "2 Timothy 3:4",
+      "form": "τετυφωμένοι,",
+      "morph": "V-X-P-P",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "προδόται, προπετεῖς,",
+      "right_context": "φιλήδονοι μᾶλλον ἢ φιλόθεοι,"
+    }
+  ],
+  "books": {
+    "1 Timothy": 2,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νεόφυτος",
+      "display": "neófito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίμα",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπίπτω",
+      "display": "caa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάβολος",
+      "display": "de·diablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίσταμαι",
+      "display": "sabiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοσέω",
+      "display": "estar·enfermo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προδότης",
+      "display": "traidores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προπετής",
+      "display": "precipitados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλήδονος",
+      "display": "amador·de·los·placeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλόθεος",
+      "display": "amador·de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 3:6",
+      "negator": "μὴ",
+      "clause_text": "μὴ νεόφυτον, ἵνα μὴ τυφωθεὶς εἰς κρίμα ἐμπέσῃ τοῦ διαβόλου."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 3:6",
+      "reason": "occurs near διάβολος, κρίμα, νεόφυτος"
+    },
+    {
+      "ref": "1 Timothy 6:4",
+      "reason": "occurs near ἐπίσταμαι"
+    },
+    {
+      "ref": "2 Timothy 3:4",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

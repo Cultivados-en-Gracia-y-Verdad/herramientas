@@ -1,0 +1,155 @@
+{
+  "lemma": "δειπνέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "δειπνῆσαι,",
+      "count": 2
+    },
+    {
+      "form": "δειπνήσω",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:25",
+      "form": "δειπνῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "ὡσαύτως καὶ τὸ ποτήριον μετὰ τὸ",
+      "right_context": "λέγων· Τοῦτο τὸ ποτήριον ἡ καινὴ"
+    },
+    {
+      "ref": "Revelation 3:20",
+      "form": "δειπνήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 20,
+      "left_context": "θύραν, ⸀καὶ εἰσελεύσομαι πρὸς αὐτὸν καὶ",
+      "right_context": "μετ’ αὐτοῦ καὶ αὐτὸς μετ’ ἐμοῦ."
+    },
+    {
+      "ref": "Luke 17:8",
+      "form": "δειπνήσω",
+      "morph": "V-A-A-S-1S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 8,
+      "left_context": "ἀλλ’ οὐχὶ ἐρεῖ αὐτῷ· Ἑτοίμασον τί",
+      "right_context": "καὶ περιζωσάμενος διακόνει μοι ἕως φάγω"
+    },
+    {
+      "ref": "Luke 22:20",
+      "form": "δειπνῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 20,
+      "left_context": "⸄καὶ τὸ ποτήριον ὡσαύτως⸅ μετὰ τὸ",
+      "right_context": "λέγων· Τοῦτο τὸ ποτήριον ἡ καινὴ"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "1 Corinthians": 1,
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ποτήριον",
+      "display": "copa",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entraré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμάζω",
+      "display": "prepara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιζώννυμι",
+      "display": "ceñido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονέω",
+      "display": "serve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσαύτως",
+      "display": "igualmente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 17:8",
+      "reason": "occurs near οὐχί, περιζώννυμι, ἑτοιμάζω"
+    },
+    {
+      "ref": "Luke 22:20",
+      "reason": "occurs near ποτήριον"
+    },
+    {
+      "ref": "1 Corinthians 11:25",
+      "reason": "occurs near ποτήριον"
+    },
+    {
+      "ref": "Revelation 3:20",
+      "reason": "occurs near εἰσέρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

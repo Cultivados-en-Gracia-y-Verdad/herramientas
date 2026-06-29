@@ -1,0 +1,107 @@
+{
+  "lemma": "ἐπιλύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπιλυθήσεται.",
+      "count": 1
+    },
+    {
+      "form": "ἐπέλυεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 19:39",
+      "form": "ἐπιλυθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 39,
+      "left_context": "⸀περαιτέρω ἐπιζητεῖτε, ἐν τῇ ἐννόμῳ ἐκκλησίᾳ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 4:34",
+      "form": "ἐπέλυεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 34,
+      "left_context": "κατ’ ἰδίαν δὲ τοῖς ⸂ἰδίοις μαθηταῖς⸃",
+      "right_context": "πάντα."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἴδιος",
+      "display": "propia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιζητέω",
+      "display": "buscáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔννομος",
+      "display": "bajo·la·ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:39",
+      "reason": "occurs near ἐκκλησία, ἐπιζητέω, ἔννομος"
+    },
+    {
+      "ref": "Mark 4:34",
+      "reason": "occurs near μαθητής, ἴδιος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

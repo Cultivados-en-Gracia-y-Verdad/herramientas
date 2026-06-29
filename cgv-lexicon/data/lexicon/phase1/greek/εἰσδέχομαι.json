@@ -1,0 +1,80 @@
+{
+  "lemma": "εἰσδέχομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εἰσδέξομαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 6:17",
+      "form": "εἰσδέξομαι",
+      "morph": "V-F-M-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "κύριος, καὶ ἀκαθάρτου μὴ ἅπτεσθε· κἀγὼ",
+      "right_context": "ὑμᾶς·"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀκάθαρτος",
+      "display": "de·inmundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπτω",
+      "display": "tocad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 6:17",
+      "negator": "μὴ",
+      "clause_text": "ἀφορίσθητε, λέγει κύριος, καὶ ἀκαθάρτου μὴ ἅπτεσθε· κἀγὼ εἰσδέξομαι ὑμᾶς·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 6:17",
+      "reason": "occurs near κἀγώ, ἀκάθαρτος, ἅπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

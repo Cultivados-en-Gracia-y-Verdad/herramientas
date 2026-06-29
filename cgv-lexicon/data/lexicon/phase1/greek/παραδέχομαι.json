@@ -1,0 +1,310 @@
+{
+  "lemma": "παραδέχομαι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "παραδέχου,",
+      "count": 1
+    },
+    {
+      "form": "παραδέχεται.",
+      "count": 1
+    },
+    {
+      "form": "⸀παρεδέχθησαν",
+      "count": 1
+    },
+    {
+      "form": "παραδέχεσθαι",
+      "count": 1
+    },
+    {
+      "form": "παραδέξονταί",
+      "count": 1
+    },
+    {
+      "form": "παραδέχονται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 4,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 4,
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "middle": 5,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:19",
+      "form": "παραδέχου,",
+      "morph": "V-P-M-D-2S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 19,
+      "left_context": "κατὰ πρεσβυτέρου κατηγορίαν μὴ",
+      "right_context": "ἐκτὸς εἰ μὴ ἐπὶ δύο ἢ"
+    },
+    {
+      "ref": "Hebrews 12:6",
+      "form": "παραδέχεται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 6,
+      "left_context": "παιδεύει, μαστιγοῖ δὲ πάντα υἱὸν ὃν",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 15:4",
+      "form": "⸀παρεδέχθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 4,
+      "left_context": "παραγενόμενοι δὲ εἰς ⸀Ἱεροσόλυμα",
+      "right_context": "⸀ἀπὸ τῆς ἐκκλησίας καὶ τῶν ἀποστόλων"
+    },
+    {
+      "ref": "Acts 16:21",
+      "form": "παραδέχεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 21,
+      "left_context": "καταγγέλλουσιν ἔθη ἃ οὐκ ἔξεστιν ἡμῖν",
+      "right_context": "οὐδὲ ποιεῖν Ῥωμαίοις οὖσιν."
+    },
+    {
+      "ref": "Acts 22:18",
+      "form": "παραδέξονταί",
+      "morph": "V-F-M-I-3P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 18,
+      "left_context": "ἐν τάχει ἐξ Ἰερουσαλήμ, διότι οὐ",
+      "right_context": "⸀σου μαρτυρίαν περὶ ἐμοῦ."
+    },
+    {
+      "ref": "Mark 4:20",
+      "form": "παραδέχονται",
+      "morph": "V-P-M-I-3P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 20,
+      "left_context": "σπαρέντες, οἵτινες ἀκούουσιν τὸν λόγον καὶ",
+      "right_context": "καὶ καρποφοροῦσιν ⸂ἓν τριάκοντα καὶ ἓν"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "1 Timothy": 1,
+    "Hebrews": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πρεσβύτερος",
+      "display": "de·anciano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατηγορία",
+      "display": "acusación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτός",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "de·dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαστιγόω",
+      "display": "azota",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγίνομαι",
+      "display": "venidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "de·iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθος",
+      "display": "costumbres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξεστι(ν)",
+      "display": "es·lícito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ῥωμαῖος",
+      "display": "Romano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τάχος",
+      "display": "pronto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "de·Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διότι",
+      "display": "porque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρία",
+      "display": "testimonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρποφορέω",
+      "display": "dar·fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τριάκοντα",
+      "display": "treintas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 5:19",
+      "form": "παραδέχου,",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "κατὰ πρεσβυτέρου κατηγορίαν μὴ παραδέχου, ἐκτὸς εἰ μὴ ἐπὶ δύο ἢ τριῶν μαρτύρων·",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 5:19",
+      "negator": "μὴ",
+      "clause_text": "κατὰ πρεσβυτέρου κατηγορίαν μὴ παραδέχου, ἐκτὸς εἰ μὴ ἐπὶ δύο ἢ τριῶν μαρτύρων·"
+    },
+    {
+      "ref": "Acts 16:21",
+      "negator": "οὐκ",
+      "clause_text": "καὶ καταγγέλλουσιν ἔθη ἃ οὐκ ἔξεστιν ἡμῖν παραδέχεσθαι οὐδὲ ποιεῖν Ῥωμαίοις οὖσιν."
+    },
+    {
+      "ref": "Acts 22:18",
+      "negator": "οὐ",
+      "clause_text": "καὶ ἔξελθε ἐν τάχει ἐξ Ἰερουσαλήμ, διότι οὐ παραδέξονταί ⸀σου μαρτυρίαν περὶ ἐμοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 15:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 16:21",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 22:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:6",
+      "reason": "occurs near μαστιγόω"
+    },
+    {
+      "ref": "Mark 4:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

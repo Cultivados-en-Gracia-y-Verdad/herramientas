@@ -1,0 +1,68 @@
+{
+  "lemma": "ἐμφυσάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐνεφύσησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 20:22",
+      "form": "ἐνεφύσησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 20,
+      "verse": 22,
+      "left_context": "καὶ τοῦτο εἰπὼν",
+      "right_context": "καὶ λέγει αὐτοῖς· Λάβετε πνεῦμα ἅγιον·"
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 20:22",
+      "reason": "occurs near λαμβάνω, πνεῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

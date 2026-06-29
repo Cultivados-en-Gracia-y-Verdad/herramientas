@@ -1,0 +1,163 @@
+{
+  "lemma": "θρηνέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "⸀ἐθρηνήσαμεν",
+      "count": 2
+    },
+    {
+      "form": "θρηνήσετε",
+      "count": 1
+    },
+    {
+      "form": "ἐθρήνουν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "John 16:20",
+      "form": "θρηνήσετε",
+      "morph": "V-F-A-I-2P",
+      "book": "John",
+      "chapter": 16,
+      "verse": 20,
+      "left_context": "ἀμὴν λέγω ὑμῖν ὅτι κλαύσετε καὶ",
+      "right_context": "ὑμεῖς, ὁ δὲ κόσμος χαρήσεται· ⸀ὑμεῖς"
+    },
+    {
+      "ref": "Luke 7:32",
+      "form": "⸀ἐθρηνήσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 32,
+      "left_context": "λέγει⸃· Ηὐλήσαμεν ὑμῖν καὶ οὐκ ὠρχήσασθε·",
+      "right_context": "καὶ οὐκ ἐκλαύσατε·"
+    },
+    {
+      "ref": "Luke 23:27",
+      "form": "ἐθρήνουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 27,
+      "left_context": "λαοῦ καὶ γυναικῶν ⸀αἳ ἐκόπτοντο καὶ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Matthew 11:17",
+      "form": "⸀ἐθρηνήσαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "⸀λέγουσιν· Ηὐλήσαμεν ὑμῖν καὶ οὐκ ὠρχήσασθε·",
+      "right_context": "καὶ οὐκ ἐκόψασθε·"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "John": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κλαίω",
+      "display": "lloraréis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αὐλέω",
+      "display": "tocar·flauta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀρχέομαι",
+      "display": "danzasteis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόπτω",
+      "display": "cortaban",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "será gozado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "de·mujeres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 7:32",
+      "negator": "οὐκ",
+      "clause_text": "ἀλλήλοις, ⸂ἃ λέγει⸃· Ηὐλήσαμεν ὑμῖν καὶ οὐκ ὠρχήσασθε· ⸀ἐθρηνήσαμεν καὶ οὐκ ἐκλαύσατε·"
+    },
+    {
+      "ref": "Matthew 11:17",
+      "negator": "οὐκ",
+      "clause_text": "⸀λέγουσιν· Ηὐλήσαμεν ὑμῖν καὶ οὐκ ὠρχήσασθε· ⸀ἐθρηνήσαμεν καὶ οὐκ ἐκόψασθε·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 23:27",
+      "reason": "occurs near κόπτω"
+    },
+    {
+      "ref": "Luke 7:32",
+      "reason": "occurs near αὐλέω, κλαίω, ὀρχέομαι"
+    },
+    {
+      "ref": "John 16:20",
+      "reason": "occurs near κλαίω, κόσμος"
+    },
+    {
+      "ref": "Matthew 11:17",
+      "reason": "occurs near αὐλέω, κόπτω, ὀρχέομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

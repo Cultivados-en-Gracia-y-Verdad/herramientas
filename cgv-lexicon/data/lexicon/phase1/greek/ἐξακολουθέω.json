@@ -1,0 +1,162 @@
+{
+  "lemma": "ἐξακολουθέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐξακολουθήσαντες",
+      "count": 2
+    },
+    {
+      "form": "ἐξακολουθήσουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:16",
+      "form": "ἐξακολουθήσαντες",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "Οὐ γὰρ σεσοφισμένοις μύθοις",
+      "right_context": "ἐγνωρίσαμεν ὑμῖν τὴν τοῦ κυρίου ἡμῶν"
+    },
+    {
+      "ref": "2 Peter 2:2",
+      "form": "ἐξακολουθήσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "καὶ πολλοὶ",
+      "right_context": "αὐτῶν ταῖς ἀσελγείαις, δι’ οὓς ἡ"
+    },
+    {
+      "ref": "2 Peter 2:15",
+      "form": "ἐξακολουθήσαντες",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "⸀καταλιπόντες εὐθεῖαν ὁδὸν ἐπλανήθησαν,",
+      "right_context": "τῇ ὁδῷ τοῦ Βαλαὰμ τοῦ ⸀Βοσὸρ"
+    }
+  ],
+  "books": {
+    "2 Peter": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σοφίζω",
+      "display": "hacer·sabio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μῦθος",
+      "display": "mitos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνωρίζω",
+      "display": "dar·a·conocimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσέλγεια",
+      "display": "lascivias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταλείπω",
+      "display": "dejados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλανάω",
+      "display": "fueron extraviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαλαάμ",
+      "display": "de·Balaam",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 1:16",
+      "negator": "Οὐ",
+      "clause_text": "Οὐ γὰρ σεσοφισμένοις μύθοις ἐξακολουθήσαντες ἐγνωρίσαμεν ὑμῖν τὴν τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:16",
+      "reason": "occurs near γνωρίζω, κύριος, μῦθος"
+    },
+    {
+      "ref": "2 Peter 2:15",
+      "reason": "occurs near ὁδός"
+    },
+    {
+      "ref": "2 Peter 2:2",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

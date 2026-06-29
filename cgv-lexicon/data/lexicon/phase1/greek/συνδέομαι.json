@@ -1,0 +1,74 @@
+{
+  "lemma": "συνδέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνδεδεμένοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 13:3",
+      "form": "συνδεδεμένοι,",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 3,
+      "left_context": "μιμνῄσκεσθε τῶν δεσμίων ὡς",
+      "right_context": "τῶν κακουχουμένων ὡς καὶ αὐτοὶ ὄντες"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μιμνῄσκομαι",
+      "display": "recordad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέσμιος",
+      "display": "de·prisioneros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακουχέομαι",
+      "display": "sufridos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 13:3",
+      "reason": "occurs near δέσμιος, κακουχέομαι, μιμνῄσκομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

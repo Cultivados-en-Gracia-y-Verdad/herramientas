@@ -1,0 +1,256 @@
+{
+  "lemma": "συλλαλέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "συνελάλουν",
+      "count": 2
+    },
+    {
+      "form": "συλλαλήσας",
+      "count": 1
+    },
+    {
+      "form": "συνελάλησεν",
+      "count": 1
+    },
+    {
+      "form": "συλλαλοῦντες",
+      "count": 1
+    },
+    {
+      "form": "⸂συλλαλοῦντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "imperfect": 2,
+      "present": 2
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 25:12",
+      "form": "συλλαλήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 12,
+      "left_context": "τότε ὁ Φῆστος",
+      "right_context": "μετὰ τοῦ συμβουλίου ἀπεκρίθη· Καίσαρα ἐπικέκλησαι,"
+    },
+    {
+      "ref": "Luke 4:36",
+      "form": "συνελάλουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 36,
+      "left_context": "καὶ ἐγένετο θάμβος ἐπὶ πάντας, καὶ",
+      "right_context": "πρὸς ἀλλήλους λέγοντες· Τίς ὁ λόγος"
+    },
+    {
+      "ref": "Luke 9:30",
+      "form": "συνελάλουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 30,
+      "left_context": "καὶ ἰδοὺ ἄνδρες δύο",
+      "right_context": "αὐτῷ, οἵτινες ἦσαν Μωϋσῆς καὶ Ἠλίας,"
+    },
+    {
+      "ref": "Luke 22:4",
+      "form": "συνελάλησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 4,
+      "left_context": "καὶ ἀπελθὼν",
+      "right_context": "τοῖς ἀρχιερεῦσιν καὶ στρατηγοῖς τὸ πῶς"
+    },
+    {
+      "ref": "Mark 9:4",
+      "form": "συλλαλοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 4,
+      "left_context": "αὐτοῖς Ἠλίας σὺν Μωϋσεῖ, καὶ ἦσαν",
+      "right_context": "τῷ Ἰησοῦ."
+    },
+    {
+      "ref": "Matthew 17:3",
+      "form": "⸂συλλαλοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 3,
+      "left_context": "ἰδοὺ ⸀ὤφθη αὐτοῖς Μωϋσῆς καὶ Ἠλίας",
+      "right_context": "μετ’ αὐτοῦ⸃."
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Acts": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἠλίας",
+      "display": "Elías",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φῆστος",
+      "display": "Festo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμβούλιον",
+      "display": "de·consejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "fue respondido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Καῖσαρ",
+      "display": "César",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάμβος",
+      "display": "asombro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατηγός",
+      "display": "comandantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "fue visto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 22:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 4:36",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 9:30",
+      "reason": "occurs near Μωϋσῆς"
+    },
+    {
+      "ref": "Acts 25:12",
+      "reason": "occurs near Φῆστος, συμβούλιον, τότε"
+    },
+    {
+      "ref": "Mark 9:4",
+      "reason": "occurs near Μωϋσῆς, Ἠλίας"
+    },
+    {
+      "ref": "Matthew 17:3",
+      "reason": "occurs near Μωϋσῆς, Ἠλίας"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

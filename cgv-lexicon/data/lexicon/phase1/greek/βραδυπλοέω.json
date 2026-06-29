@@ -1,0 +1,74 @@
+{
+  "lemma": "βραδυπλοέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "βραδυπλοοῦντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:7",
+      "form": "βραδυπλοοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 7,
+      "left_context": "ἐν ἱκαναῖς δὲ ἡμέραις",
+      "right_context": "καὶ μόλις γενόμενοι κατὰ τὴν Κνίδον,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱκανός",
+      "display": "suficientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόλις",
+      "display": "apenas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:7",
+      "reason": "occurs near μόλις, ἡμέρα, ἱκανός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

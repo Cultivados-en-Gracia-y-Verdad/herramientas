@@ -1,0 +1,105 @@
+{
+  "lemma": "πυρέσσω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "πυρέσσουσα,",
+      "count": 1
+    },
+    {
+      "form": "πυρέσσουσαν·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 1:30",
+      "form": "πυρέσσουσα,",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 30,
+      "left_context": "ἡ δὲ πενθερὰ Σίμωνος κατέκειτο",
+      "right_context": "καὶ ⸀εὐθὺς λέγουσιν αὐτῷ περὶ αὐτῆς."
+    },
+    {
+      "ref": "Matthew 8:14",
+      "form": "πυρέσσουσαν·",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 14,
+      "left_context": "εἶδεν τὴν πενθερὰν αὐτοῦ βεβλημένην καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πενθερά",
+      "display": "suegra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "de·Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάκειμαι",
+      "display": "reclinarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojada",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 1:30",
+      "reason": "occurs near Σίμων, εὐθύς, κατάκειμαι"
+    },
+    {
+      "ref": "Matthew 8:14",
+      "reason": "occurs near βάλλω, πενθερά"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

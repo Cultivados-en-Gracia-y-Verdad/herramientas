@@ -1,0 +1,126 @@
+{
+  "lemma": "παρακούω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀παρακούσας",
+      "count": 1
+    },
+    {
+      "form": "παρακούσῃ",
+      "count": 1
+    },
+    {
+      "form": "παρακούσῃ,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 5:36",
+      "form": "⸀παρακούσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 36,
+      "left_context": "ὁ δὲ Ἰησοῦς",
+      "right_context": "τὸν λόγον λαλούμενον λέγει τῷ ἀρχισυναγώγῳ·"
+    },
+    {
+      "ref": "Matthew 18:17",
+      "form": "παρακούσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 17,
+      "left_context": "ἐὰν δὲ",
+      "right_context": "αὐτῶν, εἰπὸν τῇ ἐκκλησίᾳ· ἐὰν δὲ"
+    },
+    {
+      "ref": "Matthew 18:17",
+      "form": "παρακούσῃ,",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 17,
+      "left_context": "ἐκκλησίᾳ· ἐὰν δὲ καὶ τῆς ἐκκλησίας",
+      "right_context": "ἔστω σοι ὥσπερ ὁ ἐθνικὸς καὶ"
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥσπερ",
+      "display": "como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐθνικός",
+      "display": "gentil",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 18:17",
+      "reason": "occurs near ἐκκλησία"
+    },
+    {
+      "ref": "Mark 5:36",
+      "reason": "occurs near λαλέω, λόγος, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

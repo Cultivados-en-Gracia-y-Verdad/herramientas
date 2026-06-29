@@ -1,0 +1,101 @@
+{
+  "lemma": "ἀδυνατέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀδυνατήσει",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:37",
+      "form": "ἀδυνατήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 37,
+      "left_context": "ὅτι οὐκ",
+      "right_context": "παρὰ ⸂τοῦ θεοῦ⸃ πᾶν ῥῆμα."
+    },
+    {
+      "ref": "Matthew 17:20",
+      "form": "ἀδυνατήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 20,
+      "left_context": "ἔνθεν⸃ ἐκεῖ, καὶ μεταβήσεται, καὶ οὐδὲν",
+      "right_context": "⸀ὑμῖν."
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dicho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεταβαίνω",
+      "display": "pasará",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 1:37",
+      "negator": "οὐκ",
+      "clause_text": "ὅτι οὐκ ἀδυνατήσει παρὰ ⸂τοῦ θεοῦ⸃ πᾶν ῥῆμα."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:37",
+      "reason": "occurs near θεός, ῥῆμα"
+    },
+    {
+      "ref": "Matthew 17:20",
+      "reason": "occurs near μεταβαίνω, ἐκεῖ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

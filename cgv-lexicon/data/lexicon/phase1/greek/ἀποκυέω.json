@@ -1,0 +1,111 @@
+{
+  "lemma": "ἀποκυέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀποκύει",
+      "count": 1
+    },
+    {
+      "form": "ἀπεκύησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "James 1:15",
+      "form": "ἀποκύει",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "τίκτει ἁμαρτίαν, ἡ δὲ ἁμαρτία ἀποτελεσθεῖσα",
+      "right_context": "θάνατον."
+    },
+    {
+      "ref": "James 1:18",
+      "form": "ἀπεκύησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "βουληθεὶς",
+      "right_context": "ἡμᾶς λόγῳ ἀληθείας, εἰς τὸ εἶναι"
+    }
+  ],
+  "books": {
+    "James": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποτελέω",
+      "display": "cumplida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "querido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:15",
+      "reason": "occurs near θάνατος, ἀποτελέω, ἁμαρτία"
+    },
+    {
+      "ref": "James 1:18",
+      "reason": "occurs near βούλομαι, λόγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

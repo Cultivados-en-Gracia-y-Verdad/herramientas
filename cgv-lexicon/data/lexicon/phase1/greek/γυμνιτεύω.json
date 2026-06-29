@@ -1,0 +1,80 @@
+{
+  "lemma": "γυμνιτεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "γυμνιτεύομεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:11",
+      "form": "γυμνιτεύομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "ὥρας καὶ πεινῶμεν καὶ διψῶμεν καὶ",
+      "right_context": "καὶ κολαφιζόμεθα καὶ ἀστατοῦμεν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πεινάω",
+      "display": "tener·hambre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διψάω",
+      "display": "tener·sed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολαφίζω",
+      "display": "son golpeado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀστατέω",
+      "display": "andar·sin·rumbo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 4:11",
+      "reason": "occurs near διψάω, κολαφίζω, πεινάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

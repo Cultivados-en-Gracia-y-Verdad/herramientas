@@ -1,0 +1,500 @@
+{
+  "lemma": "παρέχω",
+  "language": "greek",
+  "total_occurrences": 16,
+  "forms": [
+    {
+      "form": "παρέχουσι",
+      "count": 1
+    },
+    {
+      "form": "παρέχοντι",
+      "count": 1
+    },
+    {
+      "form": "παρέχεσθε,",
+      "count": 1
+    },
+    {
+      "form": "παρεχέτω,",
+      "count": 1
+    },
+    {
+      "form": "παρεῖχεν",
+      "count": 1
+    },
+    {
+      "form": "παρασχὼν",
+      "count": 1
+    },
+    {
+      "form": "παρείχετο",
+      "count": 1
+    },
+    {
+      "form": "παρέσχον",
+      "count": 1
+    },
+    {
+      "form": "παρεῖχον",
+      "count": 1
+    },
+    {
+      "form": "πάρεχε",
+      "count": 1
+    },
+    {
+      "form": "⸀παρέξῃ",
+      "count": 1
+    },
+    {
+      "form": "πάρεχε·",
+      "count": 1
+    },
+    {
+      "form": "παρέχειν",
+      "count": 1
+    },
+    {
+      "form": "παρέχετε;",
+      "count": 1
+    },
+    {
+      "form": "παρέχετε",
+      "count": 1
+    },
+    {
+      "form": "παρεχόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 8,
+      "participle": 3,
+      "imperative": 4,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 10,
+      "imperfect": 3,
+      "aorist": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 12,
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 1:4",
+      "form": "παρέχουσι",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "μύθοις καὶ γενεαλογίαις ἀπεράντοις, αἵτινες ⸀ἐκζητήσεις",
+      "right_context": "μᾶλλον ἢ οἰκονομίαν θεοῦ τὴν ἐν"
+    },
+    {
+      "ref": "1 Timothy 6:17",
+      "form": "παρέχοντι",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "πλούτου ἀδηλότητι, ἀλλ’ ⸀ἐπὶ ⸀θεῷ τῷ",
+      "right_context": "ἡμῖν πάντα πλουσίως εἰς ἀπόλαυσιν,"
+    },
+    {
+      "ref": "Colossians 4:1",
+      "form": "παρέχεσθε,",
+      "morph": "V-P-M-D-2P",
+      "book": "Colossians",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "δίκαιον καὶ τὴν ἰσότητα τοῖς δούλοις",
+      "right_context": "εἰδότες ὅτι καὶ ὑμεῖς ἔχετε κύριον"
+    },
+    {
+      "ref": "Galatians 6:17",
+      "form": "παρεχέτω,",
+      "morph": "V-P-A-D-3S",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "Τοῦ λοιποῦ κόπους μοι μηδεὶς",
+      "right_context": "ἐγὼ γὰρ τὰ στίγματα ⸀τοῦ Ἰησοῦ"
+    },
+    {
+      "ref": "Acts 16:16",
+      "form": "παρεῖχεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 16,
+      "left_context": "⸀πύθωνα ⸀ὑπαντῆσαι ἡμῖν, ἥτις ἐργασίαν πολλὴν",
+      "right_context": "τοῖς κυρίοις αὐτῆς μαντευομένη·"
+    },
+    {
+      "ref": "Acts 17:31",
+      "form": "παρασχὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 31,
+      "left_context": "δικαιοσύνῃ ἐν ἀνδρὶ ᾧ ὥρισεν, πίστιν",
+      "right_context": "πᾶσιν ἀναστήσας αὐτὸν ἐκ νεκρῶν."
+    },
+    {
+      "ref": "Acts 19:24",
+      "form": "παρείχετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 24,
+      "left_context": "ὀνόματι, ἀργυροκόπος, ποιῶν ναοὺς ἀργυροῦς Ἀρτέμιδος",
+      "right_context": "τοῖς τεχνίταις ⸂οὐκ ὀλίγην ἐργασίαν⸃,"
+    },
+    {
+      "ref": "Acts 22:2",
+      "form": "παρέσχον",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 2,
+      "left_context": "τῇ Ἑβραΐδι διαλέκτῳ προσεφώνει αὐτοῖς μᾶλλον",
+      "right_context": "ἡσυχίαν. καὶ φησίν·"
+    },
+    {
+      "ref": "Acts 28:2",
+      "form": "παρεῖχον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 2,
+      "left_context": "οἵ ⸀τε βάρβαροι",
+      "right_context": "οὐ τὴν τυχοῦσαν φιλανθρωπίαν ἡμῖν, ⸀ἅψαντες"
+    },
+    {
+      "ref": "Luke 6:29",
+      "form": "πάρεχε",
+      "morph": "V-P-A-D-2S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 29,
+      "left_context": "τῷ τύπτοντί σε ἐπὶ τὴν σιαγόνα",
+      "right_context": "καὶ τὴν ἄλλην, καὶ ἀπὸ τοῦ"
+    },
+    {
+      "ref": "Luke 7:4",
+      "form": "⸀παρέξῃ",
+      "morph": "V-F-M-I-2S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 4,
+      "left_context": "σπουδαίως λέγοντες ὅτι Ἄξιός ἐστιν ᾧ",
+      "right_context": "τοῦτο,"
+    },
+    {
+      "ref": "Luke 11:7",
+      "form": "πάρεχε·",
+      "morph": "V-P-A-D-2S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "ἔσωθεν ἀποκριθεὶς εἴπῃ· Μή μοι κόπους",
+      "right_context": "ἤδη ἡ θύρα κέκλεισται, καὶ τὰ"
+    },
+    {
+      "ref": "Luke 18:5",
+      "form": "παρέχειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 5,
+      "left_context": "διά γε τὸ",
+      "right_context": "μοι κόπον τὴν χήραν ταύτην ἐκδικήσω"
+    },
+    {
+      "ref": "Mark 14:6",
+      "form": "παρέχετε;",
+      "morph": "V-P-A-I-2P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 6,
+      "left_context": "εἶπεν· Ἄφετε αὐτήν· τί αὐτῇ κόπους",
+      "right_context": "καλὸν ἔργον ἠργάσατο ἐν ἐμοί·"
+    },
+    {
+      "ref": "Matthew 26:10",
+      "form": "παρέχετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 10,
+      "left_context": "ὁ Ἰησοῦς εἶπεν αὐτοῖς· Τί κόπους",
+      "right_context": "τῇ γυναικί; ἔργον γὰρ καλὸν ἠργάσατο"
+    },
+    {
+      "ref": "Titus 2:7",
+      "form": "παρεχόμενος",
+      "morph": "V-P-M-P",
+      "book": "Titus",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "περὶ πάντα σεαυτὸν",
+      "right_context": "τύπον καλῶν ἔργων, ἐν τῇ διδασκαλίᾳ"
+    }
+  ],
+  "books": {
+    "Acts": 5,
+    "Luke": 4,
+    "1 Timothy": 2,
+    "Colossians": 1,
+    "Galatians": 1,
+    "Mark": 1,
+    "Matthew": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κόπος",
+      "display": "trabajos",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργασία",
+      "display": "trabajo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γενεαλογία",
+      "display": "genealogías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέραντος",
+      "display": "interminables",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκζήτησις",
+      "display": "controversias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκονομία",
+      "display": "administración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδηλότης",
+      "display": "incertidumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλουσίως",
+      "display": "ricamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλαυσις",
+      "display": "disfrute",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσότης",
+      "display": "igualdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "sabidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "de·restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στίγμα",
+      "display": "marcas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπαντάω",
+      "display": "salir·al·encuentro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαντεύομαι",
+      "display": "adivinando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 4:1",
+      "form": "παρέχεσθε,",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "κύριοι, τὸ δίκαιον καὶ τὴν ἰσότητα τοῖς δούλοις παρέχεσθε, εἰδότες ὅτι καὶ ὑμεῖς ἔχετε κύριον ἐν ⸀οὐρανῷ."
+    },
+    {
+      "ref": "Galatians 6:17",
+      "form": "παρεχέτω,",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "Τοῦ λοιποῦ κόπους μοι μηδεὶς παρεχέτω, ἐγὼ γὰρ τὰ στίγματα ⸀τοῦ Ἰησοῦ ἐν τῷ"
+    },
+    {
+      "ref": "Luke 6:29",
+      "form": "πάρεχε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "τῷ τύπτοντί σε ἐπὶ τὴν σιαγόνα πάρεχε καὶ τὴν ἄλλην, καὶ ἀπὸ τοῦ αἴροντός σου"
+    },
+    {
+      "ref": "Luke 11:7",
+      "form": "πάρεχε·",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "κἀκεῖνος ἔσωθεν ἀποκριθεὶς εἴπῃ· Μή μοι κόπους πάρεχε· ἤδη ἡ θύρα κέκλεισται, καὶ τὰ παιδία μου",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 19:24",
+      "negator": "⸂οὐκ",
+      "clause_text": "γάρ τις ὀνόματι, ἀργυροκόπος, ποιῶν ναοὺς ἀργυροῦς Ἀρτέμιδος παρείχετο τοῖς τεχνίταις ⸂οὐκ ὀλίγην ἐργασίαν⸃,"
+    },
+    {
+      "ref": "Acts 28:2",
+      "negator": "οὐ",
+      "clause_text": "οἵ ⸀τε βάρβαροι παρεῖχον οὐ τὴν τυχοῦσαν φιλανθρωπίαν ἡμῖν, ⸀ἅψαντες γὰρ πυρὰν"
+    },
+    {
+      "ref": "Luke 11:7",
+      "negator": "Μή",
+      "clause_text": "κἀκεῖνος ἔσωθεν ἀποκριθεὶς εἴπῃ· Μή μοι κόπους πάρεχε· ἤδη ἡ θύρα κέκλεισται, καὶ τὰ παιδία μου"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 6:29",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Colossians 4:1",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Galatians 6:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 16:16",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "1 Timothy 1:4",
+      "reason": "occurs near μᾶλλον, ὅστις"
+    },
+    {
+      "ref": "Mark 14:6",
+      "reason": "occurs near καλός, κόπος, ἔργον"
+    },
+    {
+      "ref": "Matthew 26:10",
+      "reason": "occurs near καλός, κόπος, ἔργον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

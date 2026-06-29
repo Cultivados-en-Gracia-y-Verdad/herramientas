@@ -1,0 +1,68 @@
+{
+  "lemma": "συναναπαύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συναναπαύσωμαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 15:32",
+      "form": "συναναπαύσωμαι",
+      "morph": "V-A-M-S-1S",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 32,
+      "left_context": "⸀ἐλθὼν πρὸς ὑμᾶς διὰ θελήματος ⸀θεοῦ",
+      "right_context": "ὑμῖν."
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θέλημα",
+      "display": "de·voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 15:32",
+      "reason": "occurs near θέλημα, θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

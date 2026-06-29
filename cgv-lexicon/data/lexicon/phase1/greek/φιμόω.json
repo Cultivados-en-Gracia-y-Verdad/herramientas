@@ -1,0 +1,339 @@
+{
+  "lemma": "φιμόω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "Φιμώθητι",
+      "count": 2
+    },
+    {
+      "form": "φιμοῦν",
+      "count": 1
+    },
+    {
+      "form": "φιμώσεις,",
+      "count": 1
+    },
+    {
+      "form": "πεφίμωσο.",
+      "count": 1
+    },
+    {
+      "form": "ἐφιμώθη.",
+      "count": 1
+    },
+    {
+      "form": "ἐφίμωσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 3,
+      "imperative": 3
+    },
+    "tenses": {
+      "present": 1,
+      "future": 1,
+      "aorist": 4,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 3,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:15",
+      "form": "φιμοῦν",
+      "morph": "V-P-A-N",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "ἐστὶν τὸ θέλημα τοῦ θεοῦ, ἀγαθοποιοῦντας",
+      "right_context": "τὴν τῶν ἀφρόνων ἀνθρώπων ἀγνωσίαν)·"
+    },
+    {
+      "ref": "1 Timothy 5:18",
+      "form": "φιμώσεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 18,
+      "left_context": "γὰρ ἡ γραφή· Βοῦν ἀλοῶντα οὐ",
+      "right_context": "καί· Ἄξιος ὁ ἐργάτης τοῦ μισθοῦ"
+    },
+    {
+      "ref": "Luke 4:35",
+      "form": "Φιμώθητι",
+      "morph": "V-A-P-D-2S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 35,
+      "left_context": "καὶ ἐπετίμησεν αὐτῷ ὁ Ἰησοῦς λέγων·",
+      "right_context": "καὶ ἔξελθε ⸀ἀπ’ αὐτοῦ. καὶ ῥίψαν"
+    },
+    {
+      "ref": "Mark 1:25",
+      "form": "Φιμώθητι",
+      "morph": "V-A-P-D-2S",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 25,
+      "left_context": "καὶ ἐπετίμησεν αὐτῷ ὁ Ἰησοῦς λέγων·",
+      "right_context": "καὶ ἔξελθε ἐξ αὐτοῦ."
+    },
+    {
+      "ref": "Mark 4:39",
+      "form": "πεφίμωσο.",
+      "morph": "V-X-P-D-2S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 39,
+      "left_context": "ἀνέμῳ καὶ εἶπεν τῇ θαλάσσῃ· Σιώπα,",
+      "right_context": "καὶ ἐκόπασεν ὁ ἄνεμος, καὶ ἐγένετο"
+    },
+    {
+      "ref": "Matthew 22:12",
+      "form": "ἐφιμώθη.",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 12,
+      "left_context": "μὴ ἔχων ἔνδυμα γάμου; ὁ δὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 22:34",
+      "form": "ἐφίμωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 34,
+      "left_context": "Οἱ δὲ Φαρισαῖοι ἀκούσαντες ὅτι",
+      "right_context": "τοὺς Σαδδουκαίους συνήχθησαν ἐπὶ τὸ αὐτό."
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Matthew": 2,
+    "1 Peter": 1,
+    "1 Timothy": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιτιμάω",
+      "display": "reprendió",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "sale",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθοποιέω",
+      "display": "hacer·bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄφρων",
+      "display": "de·necios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγνωσία",
+      "display": "ignorancia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escritura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοῦς",
+      "display": "buey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλοάω",
+      "display": "trillando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄξιος",
+      "display": "digno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάτης",
+      "display": "obrero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σιωπάω",
+      "display": "calla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπάζω",
+      "display": "calmarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔνδυμα",
+      "display": "vestido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γάμος",
+      "display": "de·boda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαδδουκαῖος",
+      "display": "Saduceo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "fueron reunido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 4:35",
+      "form": "Φιμώθητι",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "καὶ ἐπετίμησεν αὐτῷ ὁ Ἰησοῦς λέγων· Φιμώθητι καὶ ἔξελθε ⸀ἀπ’ αὐτοῦ. καὶ ῥίψαν αὐτὸν τὸ"
+    },
+    {
+      "ref": "Mark 1:25",
+      "form": "Φιμώθητι",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "καὶ ἐπετίμησεν αὐτῷ ὁ Ἰησοῦς λέγων· Φιμώθητι καὶ ἔξελθε ἐξ αὐτοῦ."
+    },
+    {
+      "ref": "Mark 4:39",
+      "form": "πεφίμωσο.",
+      "morph": "V-X-P-D-2S",
+      "clause_text": "ἐπετίμησεν τῷ ἀνέμῳ καὶ εἶπεν τῇ θαλάσσῃ· Σιώπα, πεφίμωσο. καὶ ἐκόπασεν ὁ ἄνεμος, καὶ ἐγένετο γαλήνη μεγάλη."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 5:18",
+      "negator": "οὐ",
+      "clause_text": "λέγει γὰρ ἡ γραφή· Βοῦν ἀλοῶντα οὐ φιμώσεις, καί· Ἄξιος ὁ ἐργάτης τοῦ μισθοῦ αὐτοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 1:25",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 4:39",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 4:35",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 22:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 22:34",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 2:15",
+      "reason": "occurs near θέλημα, θεός"
+    },
+    {
+      "ref": "1 Timothy 5:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

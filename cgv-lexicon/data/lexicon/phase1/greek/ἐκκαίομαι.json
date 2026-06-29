@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐκκαίομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξεκαύθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 1:27",
+      "form": "ἐξεκαύθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 27,
+      "left_context": "ἀφέντες τὴν φυσικὴν χρῆσιν τῆς θηλείας",
+      "right_context": "ἐν τῇ ὀρέξει αὐτῶν εἰς ἀλλήλους,"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φυσικός",
+      "display": "natural",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρῆσις",
+      "display": "uso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θῆλυς",
+      "display": "de·hembra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρεξις",
+      "display": "deseo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 1:27",
+      "reason": "occurs near θῆλυς, φυσικός, χρῆσις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

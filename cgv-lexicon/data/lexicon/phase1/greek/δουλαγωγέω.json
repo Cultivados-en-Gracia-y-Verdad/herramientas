@@ -1,0 +1,92 @@
+{
+  "lemma": "δουλαγωγέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "δουλαγωγῶ,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:27",
+      "form": "δουλαγωγῶ,",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 27,
+      "left_context": "ἀλλὰ ὑπωπιάζω μου τὸ σῶμα καὶ",
+      "right_context": "μή πως ἄλλοις κηρύξας αὐτὸς ἀδόκιμος"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπωπιάζω",
+      "display": "golpeo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κηρύσσω",
+      "display": "proclamado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 9:27",
+      "negator": "μή",
+      "clause_text": "ἀλλὰ ὑπωπιάζω μου τὸ σῶμα καὶ δουλαγωγῶ, μή πως ἄλλοις κηρύξας αὐτὸς ἀδόκιμος γένωμαι."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:27",
+      "reason": "occurs near κηρύσσω, πώς, σῶμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

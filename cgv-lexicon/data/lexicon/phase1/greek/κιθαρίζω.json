@@ -1,0 +1,118 @@
+{
+  "lemma": "κιθαρίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κιθαριζόμενον;",
+      "count": 1
+    },
+    {
+      "form": "κιθαριζόντων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 14:7",
+      "form": "κιθαριζόμενον;",
+      "morph": "V-P-P-P",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 7,
+      "left_context": "πῶς γνωσθήσεται τὸ αὐλούμενον ἢ τὸ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 14:2",
+      "form": "κιθαριζόντων",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 2,
+      "left_context": "ἡ φωνὴ ἣν ἤκουσα ὡς κιθαρῳδῶν",
+      "right_context": "ἐν ταῖς κιθάραις αὐτῶν."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γινώσκω",
+      "display": "será conocido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐλέω",
+      "display": "tocar·flauta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κιθαρῳδός",
+      "display": "tañedor·de·arpa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κιθάρα",
+      "display": "cítaras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 14:7",
+      "reason": "occurs near αὐλέω, γινώσκω, ἤ"
+    },
+    {
+      "ref": "Revelation 14:2",
+      "reason": "occurs near φωνή, ἀκούω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

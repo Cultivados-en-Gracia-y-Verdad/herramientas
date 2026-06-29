@@ -1,0 +1,83 @@
+{
+  "lemma": "κατεξουσιάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κατεξουσιάζουσιν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 10:42",
+      "form": "κατεξουσιάζουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 42,
+      "left_context": "κατακυριεύουσιν αὐτῶν καὶ οἱ μεγάλοι αὐτῶν",
+      "right_context": "αὐτῶν."
+    },
+    {
+      "ref": "Matthew 20:25",
+      "form": "κατεξουσιάζουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 25,
+      "left_context": "ἐθνῶν κατακυριεύουσιν αὐτῶν καὶ οἱ μεγάλοι",
+      "right_context": "αὐτῶν."
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέγας",
+      "display": "grandes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κατακυριεύω",
+      "display": "señorean",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:42",
+      "reason": "occurs near μέγας"
+    },
+    {
+      "ref": "Matthew 20:25",
+      "reason": "occurs near κατακυριεύω, μέγας"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

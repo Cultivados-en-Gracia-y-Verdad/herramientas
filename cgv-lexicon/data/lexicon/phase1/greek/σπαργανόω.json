@@ -1,0 +1,125 @@
+{
+  "lemma": "σπαργανόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐσπαργάνωσεν",
+      "count": 1
+    },
+    {
+      "form": "ἐσπαργανωμένον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 2:7",
+      "form": "ἐσπαργάνωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "τὸν υἱὸν αὐτῆς τὸν πρωτότοκον, καὶ",
+      "right_context": "αὐτὸν καὶ ἀνέκλινεν αὐτὸν ⸀ἐν φάτνῃ,"
+    },
+    {
+      "ref": "Luke 2:12",
+      "form": "ἐσπαργανωμένον",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "τοῦτο ὑμῖν ⸀τὸ σημεῖον, εὑρήσετε βρέφος",
+      "right_context": "⸀καὶ κείμενον ἐν φάτνῃ."
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρωτότοκος",
+      "display": "primogénito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνακλίνω",
+      "display": "reclinó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σημεῖον",
+      "display": "señal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaréis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βρέφος",
+      "display": "bebé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεῖμαι",
+      "display": "yaciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φάτνη",
+      "display": "pesebre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 2:12",
+      "reason": "occurs near εὑρίσκω, σημεῖον"
+    },
+    {
+      "ref": "Luke 2:7",
+      "reason": "occurs near πρωτότοκος, υἱός, ἀνακλίνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

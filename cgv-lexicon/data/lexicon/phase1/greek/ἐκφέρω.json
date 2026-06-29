@@ -1,0 +1,350 @@
+{
+  "lemma": "ἐκφέρω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "ἐξενέγκαντες",
+      "count": 2
+    },
+    {
+      "form": "ἐξενεγκεῖν",
+      "count": 1
+    },
+    {
+      "form": "ἐκφέρουσα",
+      "count": 1
+    },
+    {
+      "form": "ἐξοίσουσίν",
+      "count": 1
+    },
+    {
+      "form": "ἐκφέρειν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐξενέγκατε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐξήνεγκεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "participle": 3,
+      "indicative": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:7",
+      "form": "ἐξενεγκεῖν",
+      "morph": "V-A-A-N",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "εἰσηνέγκαμεν εἰς τὸν κόσμον, ⸀ὅτι οὐδὲ",
+      "right_context": "τι δυνάμεθα·"
+    },
+    {
+      "ref": "Hebrews 6:8",
+      "form": "ἐκφέρουσα",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "δὲ ἀκάνθας καὶ τριβόλους ἀδόκιμος καὶ"
+    },
+    {
+      "ref": "Acts 5:6",
+      "form": "ἐξενέγκαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "δὲ οἱ νεώτεροι συνέστειλαν αὐτὸν καὶ",
+      "right_context": "ἔθαψαν."
+    },
+    {
+      "ref": "Acts 5:9",
+      "form": "ἐξοίσουσίν",
+      "morph": "V-F-A-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "ἄνδρα σου ἐπὶ τῇ θύρᾳ καὶ",
+      "right_context": "σε."
+    },
+    {
+      "ref": "Acts 5:10",
+      "form": "ἐξενέγκαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "οἱ νεανίσκοι εὗρον αὐτὴν νεκράν, καὶ",
+      "right_context": "ἔθαψαν πρὸς τὸν ἄνδρα αὐτῆς."
+    },
+    {
+      "ref": "Acts 5:15",
+      "form": "ἐκφέρειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 15,
+      "left_context": "ὥστε ⸂καὶ εἰς⸃ τὰς πλατείας",
+      "right_context": "τοὺς ἀσθενεῖς καὶ τιθέναι ἐπὶ ⸀κλιναρίων"
+    },
+    {
+      "ref": "Luke 15:22",
+      "form": "⸀ἐξενέγκατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 22,
+      "left_context": "πατὴρ πρὸς τοὺς δούλους αὐτοῦ· ⸀Ταχὺ",
+      "right_context": "στολὴν τὴν πρώτην καὶ ἐνδύσατε αὐτόν,"
+    },
+    {
+      "ref": "Mark 8:23",
+      "form": "⸀ἐξήνεγκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "καὶ ἐπιλαβόμενος τῆς χειρὸς τοῦ τυφλοῦ",
+      "right_context": "αὐτὸν ἔξω τῆς κώμης, καὶ πτύσας"
+    }
+  ],
+  "books": {
+    "Acts": 4,
+    "1 Timothy": 1,
+    "Hebrews": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θάπτω",
+      "display": "enterraron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podemos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκανθα",
+      "display": "espinas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρίβολος",
+      "display": "abrojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδόκιμος",
+      "display": "reprobada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συστέλλω",
+      "display": "retiraron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θύρα",
+      "display": "puerta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεανίσκος",
+      "display": "jovenes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "muerta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλατεῖα",
+      "display": "anchas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενής",
+      "display": "débiles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "poner",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταχύς",
+      "display": "rápido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στολή",
+      "display": "vestidura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδύω",
+      "display": "vested",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιλαμβάνομαι",
+      "display": "asido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τυφλός",
+      "display": "de·ciego",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 15:22",
+      "form": "⸀ἐξενέγκατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "δὲ ὁ πατὴρ πρὸς τοὺς δούλους αὐτοῦ· ⸀Ταχὺ ⸀ἐξενέγκατε στολὴν τὴν πρώτην καὶ ἐνδύσατε αὐτόν, καὶ δότε"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 6:7",
+      "negator": "οὐδὲ",
+      "clause_text": "οὐδὲν γὰρ εἰσηνέγκαμεν εἰς τὸν κόσμον, ⸀ὅτι οὐδὲ ἐξενεγκεῖν τι δυνάμεθα·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 15:22",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 5:10",
+      "reason": "occurs near θάπτω"
+    },
+    {
+      "ref": "Acts 5:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 5:6",
+      "reason": "occurs near θάπτω"
+    },
+    {
+      "ref": "Acts 5:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Timothy 6:7",
+      "reason": "occurs near δύναμαι, κόσμος"
+    },
+    {
+      "ref": "Hebrews 6:8",
+      "reason": "occurs near τρίβολος, ἄκανθα"
+    },
+    {
+      "ref": "Mark 8:23",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

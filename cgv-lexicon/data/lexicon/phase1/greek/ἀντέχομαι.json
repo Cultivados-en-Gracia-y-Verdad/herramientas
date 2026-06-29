@@ -1,0 +1,191 @@
+{
+  "lemma": "ἀντέχομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀνθέξεται",
+      "count": 2
+    },
+    {
+      "form": "ἀντέχεσθε",
+      "count": 1
+    },
+    {
+      "form": "ἀντεχόμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2,
+      "future": 2
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 5:14",
+      "form": "ἀντέχεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "νουθετεῖτε τοὺς ἀτάκτους, παραμυθεῖσθε τοὺς ὀλιγοψύχους,",
+      "right_context": "τῶν ἀσθενῶν, μακροθυμεῖτε πρὸς πάντας."
+    },
+    {
+      "ref": "Luke 16:13",
+      "form": "ἀνθέξεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 13,
+      "left_context": "καὶ τὸν ἕτερον ἀγαπήσει, ἢ ἑνὸς",
+      "right_context": "καὶ τοῦ ἑτέρου καταφρονήσει. οὐ δύνασθε"
+    },
+    {
+      "ref": "Matthew 6:24",
+      "form": "ἀνθέξεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 24,
+      "left_context": "καὶ τὸν ἕτερον ἀγαπήσει, ἢ ἑνὸς",
+      "right_context": "καὶ τοῦ ἑτέρου καταφρονήσει. οὐ δύνασθε"
+    },
+    {
+      "ref": "Titus 1:9",
+      "form": "ἀντεχόμενον",
+      "morph": "V-P-M-P",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "",
+      "right_context": "τοῦ κατὰ τὴν διδαχὴν πιστοῦ λόγου,"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1,
+    "Luke": 1,
+    "Matthew": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἕτερος",
+      "display": "otro",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "display": "amará",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καταφρονέω",
+      "display": "menospreciará",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄτακτος",
+      "display": "indisciplinados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραμυθέομαι",
+      "display": "consolad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλιγόψυχος",
+      "display": "de·poco·ánimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενής",
+      "display": "de·débiles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μακροθυμέω",
+      "display": "ser·paciente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδαχή",
+      "display": "enseñanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "de·fiel",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Thessalonians 5:14",
+      "form": "ἀντέχεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "ὑμᾶς, ἀδελφοί, νουθετεῖτε τοὺς ἀτάκτους, παραμυθεῖσθε τοὺς ὀλιγοψύχους, ἀντέχεσθε τῶν ἀσθενῶν, μακροθυμεῖτε πρὸς πάντας."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 5:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 16:13",
+      "reason": "occurs near εἷς, καταφρονέω, ἀγαπάω"
+    },
+    {
+      "ref": "Matthew 6:24",
+      "reason": "occurs near εἷς, καταφρονέω, ἀγαπάω"
+    },
+    {
+      "ref": "Titus 1:9",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

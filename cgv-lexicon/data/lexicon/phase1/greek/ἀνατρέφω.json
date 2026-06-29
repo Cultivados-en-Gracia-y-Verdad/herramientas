@@ -1,0 +1,173 @@
+{
+  "lemma": "ἀνατρέφω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀνετράφη",
+      "count": 1
+    },
+    {
+      "form": "ἀνεθρέψατο",
+      "count": 1
+    },
+    {
+      "form": "ἀνατεθραμμένος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 2,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:20",
+      "form": "ἀνετράφη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 20,
+      "left_context": "καὶ ἦν ἀστεῖος τῷ θεῷ· ὃς",
+      "right_context": "μῆνας τρεῖς ἐν τῷ οἴκῳ τοῦ"
+    },
+    {
+      "ref": "Acts 7:21",
+      "form": "ἀνεθρέψατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 21,
+      "left_context": "ἀνείλατο αὐτὸν⸃ ἡ θυγάτηρ Φαραὼ καὶ",
+      "right_context": "αὐτὸν ἑαυτῇ εἰς υἱόν."
+    },
+    {
+      "ref": "Acts 22:3",
+      "form": "ἀνατεθραμμένος",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 3,
+      "left_context": "Ἰουδαῖος, γεγεννημένος ἐν Ταρσῷ τῆς Κιλικίας,",
+      "right_context": "δὲ ἐν τῇ πόλει ταύτῃ παρὰ"
+    }
+  ],
+  "books": {
+    "Acts": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀστεῖος",
+      "display": "hermoso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήν",
+      "display": "ciertamentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυγάτηρ",
+      "display": "hija",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαραώ",
+      "display": "de·Faraón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεννάω",
+      "display": "engendrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ταρσός",
+      "display": "Tarso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κιλικία",
+      "display": "de·Cilicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 7:20",
+      "reason": "occurs near θεός, μήν, οἶκος"
+    },
+    {
+      "ref": "Acts 7:21",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

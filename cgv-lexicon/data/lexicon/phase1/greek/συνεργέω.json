@@ -1,0 +1,236 @@
+{
+  "lemma": "συνεργέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "συνεργοῦντι",
+      "count": 1
+    },
+    {
+      "form": "Συνεργοῦντες",
+      "count": 1
+    },
+    {
+      "form": "συνεργοῦντος",
+      "count": 1
+    },
+    {
+      "form": "⸀συνεργεῖ",
+      "count": 1
+    },
+    {
+      "form": "συνήργει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 4,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 16:16",
+      "form": "συνεργοῦντι",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 16,
+      "left_context": "ὑποτάσσησθε τοῖς τοιούτοις καὶ παντὶ τῷ",
+      "right_context": "καὶ κοπιῶντι."
+    },
+    {
+      "ref": "2 Corinthians 6:1",
+      "form": "Συνεργοῦντες",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "",
+      "right_context": "δὲ καὶ παρακαλοῦμεν μὴ εἰς κενὸν"
+    },
+    {
+      "ref": "Mark 16:20",
+      "form": "συνεργοῦντος",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 20,
+      "left_context": "δὲ ἐξελθόντες ἐκήρυξαν πανταχοῦ, τοῦ κυρίου",
+      "right_context": "καὶ τὸν λόγον βεβαιοῦντος διὰ τῶν"
+    },
+    {
+      "ref": "Romans 8:28",
+      "form": "⸀συνεργεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 28,
+      "left_context": "ὅτι τοῖς ἀγαπῶσι τὸν θεὸν πάντα",
+      "right_context": "εἰς ἀγαθόν, τοῖς κατὰ πρόθεσιν κλητοῖς"
+    },
+    {
+      "ref": "James 2:22",
+      "form": "συνήργει",
+      "morph": "V-I-A-I-3S",
+      "book": "James",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "βλέπεις ὅτι ἡ πίστις",
+      "right_context": "τοῖς ἔργοις αὐτοῦ καὶ ἐκ τῶν"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "2 Corinthians": 1,
+    "Mark": 1,
+    "Romans": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabajando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κηρύσσω",
+      "display": "proclamaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πανταχοῦ",
+      "display": "por·todas·partes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βεβαιόω",
+      "display": "confirmando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "display": "amando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόθεσις",
+      "display": "proposición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 6:1",
+      "negator": "μὴ",
+      "clause_text": "Συνεργοῦντες δὲ καὶ παρακαλοῦμεν μὴ εἰς κενὸν τὴν χάριν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 16:16",
+      "reason": "occurs near κοπιάω, τοιοῦτος"
+    },
+    {
+      "ref": "2 Corinthians 6:1",
+      "reason": "occurs near παρακαλέω"
+    },
+    {
+      "ref": "James 2:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 16:20",
+      "reason": "occurs near κηρύσσω, ἐξέρχομαι"
+    },
+    {
+      "ref": "Romans 8:28",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,113 @@
+{
+  "lemma": "ἱματίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἱματισμένον",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:35",
+      "form": "ἱματισμένον",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 35,
+      "left_context": "ἄνθρωπον ἀφ’ οὗ τὰ δαιμόνια ⸀ἐξῆλθεν",
+      "right_context": "καὶ σωφρονοῦντα παρὰ τοὺς πόδας τοῦ"
+    },
+    {
+      "ref": "Mark 5:15",
+      "form": "ἱματισμένον",
+      "morph": "V-X-P-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 15,
+      "left_context": "Ἰησοῦν, καὶ θεωροῦσιν τὸν δαιμονιζόμενον ⸀καθήμενον",
+      "right_context": "καὶ σωφρονοῦντα, τὸν ἐσχηκότα τὸν ⸀λεγιῶνα,"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σωφρονέω",
+      "display": "estar·en·su·juicio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "ven",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμονίζομαι",
+      "display": "estar·endemoniado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:35",
+      "reason": "occurs near δαιμόνιον, πούς, σωφρονέω"
+    },
+    {
+      "ref": "Mark 5:15",
+      "reason": "occurs near θεωρέω, σωφρονέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

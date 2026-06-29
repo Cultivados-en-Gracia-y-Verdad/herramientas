@@ -1,0 +1,105 @@
+{
+  "lemma": "ἀνακαθίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνεκάθισεν.",
+      "count": 1
+    },
+    {
+      "form": "ἀνεκάθισεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:40",
+      "form": "ἀνεκάθισεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 40,
+      "left_context": "ὀφθαλμοὺς αὐτῆς, καὶ ἰδοῦσα τὸν Πέτρον",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 7:15",
+      "form": "ἀνεκάθισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "καὶ",
+      "right_context": "ὁ νεκρὸς καὶ ἤρξατο λαλεῖν, καὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὁράω",
+      "display": "vista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "muerto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 9:40",
+      "reason": "occurs near Πέτρος, ὁράω"
+    },
+    {
+      "ref": "Luke 7:15",
+      "reason": "occurs near λαλέω, νεκρός, ἄρχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

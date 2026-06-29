@@ -1,0 +1,74 @@
+{
+  "lemma": "ὑπερφρονέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑπερφρονεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 12:3",
+      "form": "ὑπερφρονεῖν",
+      "morph": "V-P-A-N",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 3,
+      "left_context": "παντὶ τῷ ὄντι ἐν ὑμῖν μὴ",
+      "right_context": "παρ’ ὃ δεῖ φρονεῖν, ἀλλὰ φρονεῖν"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρονέω",
+      "display": "pensar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 12:3",
+      "negator": "μὴ",
+      "clause_text": "δοθείσης μοι παντὶ τῷ ὄντι ἐν ὑμῖν μὴ ὑπερφρονεῖν παρ’ ὃ δεῖ φρονεῖν, ἀλλὰ φρονεῖν εἰς τὸ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 12:3",
+      "reason": "occurs near δέω, φρονέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

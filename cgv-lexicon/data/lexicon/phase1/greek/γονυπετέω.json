@@ -1,0 +1,202 @@
+{
+  "lemma": "γονυπετέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "⸀γονυπετῶν",
+      "count": 1
+    },
+    {
+      "form": "γονυπετήσας",
+      "count": 1
+    },
+    {
+      "form": "γονυπετῶν",
+      "count": 1
+    },
+    {
+      "form": "γονυπετήσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 1:40",
+      "form": "⸀γονυπετῶν",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 40,
+      "left_context": "πρὸς αὐτὸν λεπρὸς παρακαλῶν αὐτὸν καὶ",
+      "right_context": "λέγων αὐτῷ ὅτι Ἐὰν θέλῃς δύνασαί"
+    },
+    {
+      "ref": "Mark 10:17",
+      "form": "γονυπετήσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 17,
+      "left_context": "αὐτοῦ εἰς ὁδὸν προσδραμὼν εἷς καὶ",
+      "right_context": "αὐτὸν ἐπηρώτα αὐτόν· Διδάσκαλε ἀγαθέ, τί"
+    },
+    {
+      "ref": "Matthew 17:14",
+      "form": "γονυπετῶν",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 14,
+      "left_context": "πρὸς τὸν ὄχλον προσῆλθεν αὐτῷ ἄνθρωπος",
+      "right_context": "αὐτὸν"
+    },
+    {
+      "ref": "Matthew 27:29",
+      "form": "γονυπετήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 29,
+      "left_context": "κάλαμον ⸂ἐν τῇ δεξιᾷ⸃ αὐτοῦ, καὶ",
+      "right_context": "ἔμπροσθεν αὐτοῦ ⸀ἐνέπαιξαν αὐτῷ λέγοντες· Χαῖρε,"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λεπρός",
+      "display": "leproso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querieras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προστρέχω",
+      "display": "corrido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπερωτάω",
+      "display": "preguntaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "derecha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμπροσθεν",
+      "display": "delante·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπαίζω",
+      "display": "burlaron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:17",
+      "reason": "occurs near προστρέχω, ὁδός"
+    },
+    {
+      "ref": "Mark 1:40",
+      "reason": "occurs near θέλω, λεπρός, παρακαλέω"
+    },
+    {
+      "ref": "Matthew 17:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 27:29",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

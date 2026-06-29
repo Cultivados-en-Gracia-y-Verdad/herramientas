@@ -1,0 +1,211 @@
+{
+  "lemma": "ἀσφαλίζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "⸂ἠσφαλίσατο",
+      "count": 1
+    },
+    {
+      "form": "ἀσφαλισθῆναι",
+      "count": 1
+    },
+    {
+      "form": "ἀσφαλίσασθε",
+      "count": 1
+    },
+    {
+      "form": "ἠσφαλίσαντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "infinitive": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "middle": 3,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:24",
+      "form": "⸂ἠσφαλίσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 24,
+      "left_context": "τὴν ἐσωτέραν φυλακὴν καὶ τοὺς πόδας",
+      "right_context": "αὐτῶν⸃ εἰς τὸ ξύλον."
+    },
+    {
+      "ref": "Matthew 27:64",
+      "form": "ἀσφαλισθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 64,
+      "left_context": "κέλευσον οὖν",
+      "right_context": "τὸν τάφον ἕως τῆς τρίτης ἡμέρας,"
+    },
+    {
+      "ref": "Matthew 27:65",
+      "form": "ἀσφαλίσασθε",
+      "morph": "V-A-M-D-2P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 65,
+      "left_context": "αὐτοῖς ὁ Πιλᾶτος· Ἔχετε κουστωδίαν· ὑπάγετε",
+      "right_context": "ὡς οἴδατε."
+    },
+    {
+      "ref": "Matthew 27:66",
+      "form": "ἠσφαλίσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 66,
+      "left_context": "οἱ δὲ πορευθέντες",
+      "right_context": "τὸν τάφον σφραγίσαντες τὸν λίθον μετὰ"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τάφος",
+      "display": "tumba",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσώτερος",
+      "display": "interiora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακή",
+      "display": "cárcel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξύλον",
+      "display": "madero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "manda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρίτος",
+      "display": "de·tercera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κουστωδία",
+      "display": "guardia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "ed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habéis sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "idos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σφραγίζω",
+      "display": "sellados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 27:65",
+      "form": "ἀσφαλίσασθε",
+      "morph": "V-A-M-D-2P",
+      "clause_text": "⸀ἔφη αὐτοῖς ὁ Πιλᾶτος· Ἔχετε κουστωδίαν· ὑπάγετε ἀσφαλίσασθε ὡς οἴδατε."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 27:65",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 27:64",
+      "reason": "occurs near τάφος"
+    },
+    {
+      "ref": "Matthew 27:66",
+      "reason": "occurs near τάφος"
+    },
+    {
+      "ref": "Acts 16:24",
+      "reason": "occurs near ξύλον, πούς, φυλακή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

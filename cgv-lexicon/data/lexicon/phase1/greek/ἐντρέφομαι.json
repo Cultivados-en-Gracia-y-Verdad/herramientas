@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐντρέφομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐντρεφόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 4:6",
+      "form": "ἐντρεφόμενος",
+      "morph": "V-P-P-P",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "ἀδελφοῖς καλὸς ἔσῃ διάκονος ⸂Χριστοῦ Ἰησοῦ⸃,",
+      "right_context": "τοῖς λόγοις τῆς πίστεως καὶ τῆς"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάκονος",
+      "display": "servidor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:6",
+      "reason": "occurs near Χριστός, διάκονος, καλός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

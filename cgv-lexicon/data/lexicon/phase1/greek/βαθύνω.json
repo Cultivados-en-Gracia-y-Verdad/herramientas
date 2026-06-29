@@ -1,0 +1,86 @@
+{
+  "lemma": "βαθύνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐβάθυνεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:48",
+      "form": "ἐβάθυνεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 48,
+      "left_context": "ἀνθρώπῳ οἰκοδομοῦντι οἰκίαν ὃς ἔσκαψεν καὶ",
+      "right_context": "καὶ ἔθηκεν θεμέλιον ἐπὶ τὴν πέτραν·"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἰκοδομέω",
+      "display": "edificando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκάπτω",
+      "display": "cavó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "puso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεμέλιος",
+      "display": "fundamento",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:48",
+      "reason": "occurs near θεμέλιος, οἰκία, οἰκοδομέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

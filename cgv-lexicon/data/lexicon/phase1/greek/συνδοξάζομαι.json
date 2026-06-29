@@ -1,0 +1,74 @@
+{
+  "lemma": "συνδοξάζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνδοξασθῶμεν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 8:17",
+      "form": "συνδοξασθῶμεν.",
+      "morph": "V-A-P-S-1P",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 17,
+      "left_context": "δὲ Χριστοῦ, εἴπερ συμπάσχομεν ἵνα καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴπερ",
+      "display": "si·es·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμπάσχω",
+      "display": "padecer·con",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 8:17",
+      "reason": "occurs near Χριστός, εἴπερ, συμπάσχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

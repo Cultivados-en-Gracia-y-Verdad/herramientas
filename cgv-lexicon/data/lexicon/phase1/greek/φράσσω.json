@@ -1,0 +1,175 @@
+{
+  "lemma": "φράσσω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "φραγήσεται",
+      "count": 1
+    },
+    {
+      "form": "ἔφραξαν",
+      "count": 1
+    },
+    {
+      "form": "φραγῇ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:10",
+      "form": "φραγήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 10,
+      "left_context": "ἐμοὶ ὅτι ἡ καύχησις αὕτη οὐ",
+      "right_context": "εἰς ἐμὲ ἐν τοῖς κλίμασι τῆς"
+    },
+    {
+      "ref": "Hebrews 11:33",
+      "form": "ἔφραξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 33,
+      "left_context": "κατηγωνίσαντο βασιλείας, εἰργάσαντο δικαιοσύνην, ἐπέτυχον ἐπαγγελιῶν,",
+      "right_context": "στόματα λεόντων,"
+    },
+    {
+      "ref": "Romans 3:19",
+      "form": "φραγῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 19,
+      "left_context": "τῷ νόμῳ λαλεῖ, ἵνα πᾶν στόμα",
+      "right_context": "καὶ ὑπόδικος γένηται πᾶς ὁ κόσμος"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Hebrews": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "στόμα",
+      "display": "bocas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καύχησις",
+      "display": "jactancia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλίμα",
+      "display": "regiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reinos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάζομαι",
+      "display": "trabajaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτυγχάνω",
+      "display": "alcanzaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "de·promesas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λέων",
+      "display": "de·leónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "habla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπόδικος",
+      "display": "culpable",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 11:10",
+      "negator": "οὐ",
+      "clause_text": "Χριστοῦ ἐν ἐμοὶ ὅτι ἡ καύχησις αὕτη οὐ φραγήσεται εἰς ἐμὲ ἐν τοῖς κλίμασι τῆς Ἀχαΐας."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 11:10",
+      "reason": "occurs near καύχησις, κλίμα"
+    },
+    {
+      "ref": "Hebrews 11:33",
+      "reason": "occurs near βασιλεία, στόμα, ἐργάζομαι"
+    },
+    {
+      "ref": "Romans 3:19",
+      "reason": "occurs near στόμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

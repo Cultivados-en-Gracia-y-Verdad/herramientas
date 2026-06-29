@@ -1,0 +1,594 @@
+{
+  "lemma": "ὁμολογέω",
+  "language": "greek",
+  "total_occurrences": 26,
+  "forms": [
+    {
+      "form": "ὁμολογήσω",
+      "count": 3
+    },
+    {
+      "form": "ὡμολόγησεν",
+      "count": 3
+    },
+    {
+      "form": "ὁμολογεῖ",
+      "count": 2
+    },
+    {
+      "form": "ὁμολογήσῃ",
+      "count": 2
+    },
+    {
+      "form": "ὁμολογοῦσιν",
+      "count": 2
+    },
+    {
+      "form": "ὁμολογήσει",
+      "count": 2
+    },
+    {
+      "form": "ὁμολογῶμεν",
+      "count": 1
+    },
+    {
+      "form": "ὁμολογῶν",
+      "count": 1
+    },
+    {
+      "form": "ὡμολόγησας",
+      "count": 1
+    },
+    {
+      "form": "ὁμολογοῦντες",
+      "count": 1
+    },
+    {
+      "form": "ὁμολογήσαντες",
+      "count": 1
+    },
+    {
+      "form": "ὁμολογούντων",
+      "count": 1
+    },
+    {
+      "form": "⸀ὡμολόγησεν",
+      "count": 1
+    },
+    {
+      "form": "ὁμολογῶ",
+      "count": 1
+    },
+    {
+      "form": "ὡμολόγουν",
+      "count": 1
+    },
+    {
+      "form": "⸀ὁμολογήσῃ",
+      "count": 1
+    },
+    {
+      "form": "⸀ὁμολογήσῃς",
+      "count": 1
+    },
+    {
+      "form": "ὁμολογεῖται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 5,
+      "participle": 4,
+      "indicative": 17
+    },
+    "tenses": {
+      "present": 10,
+      "aorist": 10,
+      "future": 5,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 25,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 1:9",
+      "form": "ὁμολογῶμεν",
+      "morph": "V-P-A-S-1P",
+      "book": "1 John",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "ἐὰν",
+      "right_context": "τὰς ἁμαρτίας ἡμῶν, πιστός ἐστιν καὶ"
+    },
+    {
+      "ref": "1 John 2:23",
+      "form": "ὁμολογῶν",
+      "morph": "V-P-A-P",
+      "book": "1 John",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "υἱὸν οὐδὲ τὸν πατέρα ἔχει· ⸂ὁ",
+      "right_context": "τὸν υἱὸν καὶ τὸν πατέρα ἔχει⸃."
+    },
+    {
+      "ref": "1 John 4:2",
+      "form": "ὁμολογεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 John",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "πνεῦμα τοῦ θεοῦ· πᾶν πνεῦμα ὃ",
+      "right_context": "Ἰησοῦν Χριστὸν ἐν σαρκὶ ἐληλυθότα ἐκ"
+    },
+    {
+      "ref": "1 John 4:3",
+      "form": "ὁμολογεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 John",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "καὶ πᾶν πνεῦμα ὃ μὴ",
+      "right_context": "⸀τὸν ⸀Ἰησοῦν ἐκ τοῦ θεοῦ οὐκ"
+    },
+    {
+      "ref": "1 John 4:15",
+      "form": "ὁμολογήσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "1 John",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "ὃς ⸀ἐὰν",
+      "right_context": "ὅτι ⸀Ἰησοῦς ἐστιν ὁ υἱὸς τοῦ"
+    },
+    {
+      "ref": "1 Timothy 6:12",
+      "form": "ὡμολόγησας",
+      "morph": "V-A-A-I-2S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "αἰωνίου ζωῆς, εἰς ἣν ἐκλήθης καὶ",
+      "right_context": "τὴν καλὴν ὁμολογίαν ἐνώπιον πολλῶν μαρτύρων."
+    },
+    {
+      "ref": "2 John 1:7",
+      "form": "ὁμολογοῦντες",
+      "morph": "V-P-A-P",
+      "book": "2 John",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "⸀ἐξῆλθον εἰς τὸν κόσμον, οἱ μὴ",
+      "right_context": "Ἰησοῦν Χριστὸν ἐρχόμενον ἐν σαρκί· οὗτός"
+    },
+    {
+      "ref": "Revelation 3:5",
+      "form": "ὁμολογήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "ἐκ τῆς βίβλου τῆς ζωῆς, καὶ",
+      "right_context": "τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ πατρός"
+    },
+    {
+      "ref": "Hebrews 11:13",
+      "form": "ὁμολογήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 13,
+      "left_context": "πόρρωθεν αὐτὰς ἰδόντες καὶ ἀσπασάμενοι, καὶ",
+      "right_context": "ὅτι ξένοι καὶ παρεπίδημοί εἰσιν ἐπὶ"
+    },
+    {
+      "ref": "Hebrews 13:15",
+      "form": "ὁμολογούντων",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 15,
+      "left_context": "τῷ θεῷ, τοῦτ’ ἔστιν καρπὸν χειλέων",
+      "right_context": "τῷ ὀνόματι αὐτοῦ."
+    },
+    {
+      "ref": "Acts 7:17",
+      "form": "⸀ὡμολόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 17,
+      "left_context": "ἤγγιζεν ὁ χρόνος τῆς ἐπαγγελίας ἧς",
+      "right_context": "ὁ θεὸς τῷ Ἀβραάμ, ηὔξησεν ὁ"
+    },
+    {
+      "ref": "Acts 23:8",
+      "form": "ὁμολογοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 8,
+      "left_context": "⸀μήτε ἄγγελον μήτε πνεῦμα, Φαρισαῖοι δὲ",
+      "right_context": "τὰ ἀμφότερα."
+    },
+    {
+      "ref": "Acts 24:14",
+      "form": "ὁμολογῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 14,
+      "left_context": "",
+      "right_context": "δὲ τοῦτό σοι ὅτι κατὰ τὴν"
+    },
+    {
+      "ref": "John 1:20",
+      "form": "ὡμολόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "καὶ",
+      "right_context": "καὶ οὐκ ἠρνήσατο, καὶ ὡμολόγησεν ὅτι"
+    },
+    {
+      "ref": "John 1:20",
+      "form": "ὡμολόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "καὶ ὡμολόγησεν καὶ οὐκ ἠρνήσατο, καὶ",
+      "right_context": "ὅτι ⸂Ἐγὼ οὐκ εἰμὶ⸃ ὁ χριστός."
+    },
+    {
+      "ref": "John 9:22",
+      "form": "ὁμολογήσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "οἱ Ἰουδαῖοι ἵνα ἐάν τις αὐτὸν",
+      "right_context": "χριστόν, ἀποσυνάγωγος γένηται."
+    },
+    {
+      "ref": "John 12:42",
+      "form": "ὡμολόγουν",
+      "morph": "V-I-A-I-3P",
+      "book": "John",
+      "chapter": 12,
+      "verse": 42,
+      "left_context": "αὐτόν, ἀλλὰ διὰ τοὺς Φαρισαίους οὐχ",
+      "right_context": "ἵνα μὴ ἀποσυνάγωγοι γένωνται,"
+    },
+    {
+      "ref": "Luke 12:8",
+      "form": "⸀ὁμολογήσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 8,
+      "left_context": "Λέγω δὲ ὑμῖν, πᾶς ὃς ἂν",
+      "right_context": "ἐν ἐμοὶ ἔμπροσθεν τῶν ἀνθρώπων, καὶ"
+    },
+    {
+      "ref": "Luke 12:8",
+      "form": "ὁμολογήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 8,
+      "left_context": "ἀνθρώπων, καὶ ὁ υἱὸς τοῦ ἀνθρώπου",
+      "right_context": "ἐν αὐτῷ ἔμπροσθεν τῶν ἀγγέλων τοῦ"
+    },
+    {
+      "ref": "Matthew 7:23",
+      "form": "ὁμολογήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Matthew",
+      "chapter": 7,
+      "verse": 23,
+      "left_context": "καὶ τότε",
+      "right_context": "αὐτοῖς ὅτι Οὐδέποτε ἔγνων ὑμᾶς· ἀποχωρεῖτε"
+    },
+    {
+      "ref": "Matthew 10:32",
+      "form": "ὁμολογήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 32,
+      "left_context": "Πᾶς οὖν ὅστις",
+      "right_context": "ἐν ἐμοὶ ἔμπροσθεν τῶν ἀνθρώπων, ὁμολογήσω"
+    },
+    {
+      "ref": "Matthew 10:32",
+      "form": "ὁμολογήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 32,
+      "left_context": "ὁμολογήσει ἐν ἐμοὶ ἔμπροσθεν τῶν ἀνθρώπων,",
+      "right_context": "κἀγὼ ἐν αὐτῷ ἔμπροσθεν τοῦ πατρός"
+    },
+    {
+      "ref": "Matthew 14:7",
+      "form": "ὡμολόγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 7,
+      "left_context": "ὅθεν μετὰ ὅρκου",
+      "right_context": "αὐτῇ δοῦναι ὃ ⸀ἐὰν αἰτήσηται."
+    },
+    {
+      "ref": "Romans 10:9",
+      "form": "⸀ὁμολογήσῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 9,
+      "left_context": "ὅτι ἐὰν",
+      "right_context": "ἐν τῷ στόματί ⸀σου κύριον Ἰησοῦν,"
+    },
+    {
+      "ref": "Romans 10:10",
+      "form": "ὁμολογεῖται",
+      "morph": "V-P-P-I-3S",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 10,
+      "left_context": "γὰρ πιστεύεται εἰς δικαιοσύνην, στόματι δὲ",
+      "right_context": "εἰς σωτηρίαν·"
+    },
+    {
+      "ref": "Titus 1:16",
+      "form": "ὁμολογοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "θεὸν",
+      "right_context": "εἰδέναι, τοῖς δὲ ἔργοις ἀρνοῦνται, βδελυκτοὶ"
+    }
+  ],
+  "books": {
+    "1 John": 5,
+    "John": 4,
+    "Matthew": 4,
+    "Acts": 3,
+    "Hebrews": 2,
+    "Luke": 2,
+    "Romans": 2,
+    "1 Timothy": 1,
+    "2 John": 1,
+    "Revelation": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμπροσθεν",
+      "display": "delante·de",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρνέομαι",
+      "display": "negó",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "de·vida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμολογέω",
+      "display": "confesó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποσυνάγωγος",
+      "display": "expulsado·de·la·sinagoga",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "boca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "fiel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "fue llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "buena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμολογία",
+      "display": "confesión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 John 4:3",
+      "negator": "μὴ",
+      "clause_text": "καὶ πᾶν πνεῦμα ὃ μὴ ὁμολογεῖ ⸀τὸν ⸀Ἰησοῦν ἐκ τοῦ θεοῦ οὐκ ἔστιν· καὶ"
+    },
+    {
+      "ref": "2 John 1:7",
+      "negator": "μὴ",
+      "clause_text": "πολλοὶ πλάνοι ⸀ἐξῆλθον εἰς τὸν κόσμον, οἱ μὴ ὁμολογοῦντες Ἰησοῦν Χριστὸν ἐρχόμενον ἐν σαρκί· οὗτός ἐστιν ὁ"
+    },
+    {
+      "ref": "John 1:20",
+      "negator": "οὐκ",
+      "clause_text": "καὶ ὡμολόγησεν καὶ οὐκ ἠρνήσατο, καὶ ὡμολόγησεν ὅτι ⸂Ἐγὼ οὐκ"
+    },
+    {
+      "ref": "John 1:20",
+      "negator": "οὐκ",
+      "clause_text": "καὶ ὡμολόγησεν καὶ οὐκ ἠρνήσατο, καὶ ὡμολόγησεν ὅτι ⸂Ἐγὼ οὐκ εἰμὶ⸃ ὁ χριστός."
+    },
+    {
+      "ref": "John 12:42",
+      "negator": "οὐχ",
+      "clause_text": "ἐπίστευσαν εἰς αὐτόν, ἀλλὰ διὰ τοὺς Φαρισαίους οὐχ ὡμολόγουν ἵνα μὴ ἀποσυνάγωγοι γένωνται,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 John 1:9",
+      "reason": "frequent in 1 John"
+    },
+    {
+      "ref": "1 John 2:23",
+      "reason": "frequent in 1 John"
+    },
+    {
+      "ref": "1 John 4:15",
+      "reason": "frequent in 1 John"
+    },
+    {
+      "ref": "1 John 4:2",
+      "reason": "frequent in 1 John"
+    },
+    {
+      "ref": "1 John 4:3",
+      "reason": "frequent in 1 John"
+    },
+    {
+      "ref": "John 12:42",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 1:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 9:22",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

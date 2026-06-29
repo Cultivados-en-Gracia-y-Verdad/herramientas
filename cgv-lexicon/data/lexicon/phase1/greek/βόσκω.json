@@ -1,0 +1,305 @@
+{
+  "lemma": "βόσκω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "βόσκοντες",
+      "count": 3
+    },
+    {
+      "form": "Βόσκε",
+      "count": 2
+    },
+    {
+      "form": "⸀βοσκομένη",
+      "count": 1
+    },
+    {
+      "form": "βόσκειν",
+      "count": 1
+    },
+    {
+      "form": "βοσκομένη·",
+      "count": 1
+    },
+    {
+      "form": "βοσκομένη.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "participle": 6,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 9
+    },
+    "voices": {
+      "active": 6,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "John 21:15",
+      "form": "Βόσκε",
+      "morph": "V-P-A-D-2S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 15,
+      "left_context": "οἶδας ὅτι φιλῶ σε. λέγει αὐτῷ·",
+      "right_context": "τὰ ἀρνία μου."
+    },
+    {
+      "ref": "John 21:17",
+      "form": "Βόσκε",
+      "morph": "V-P-A-D-2S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 17,
+      "left_context": "φιλῶ σε. λέγει αὐτῷ ⸀ὁ Ἰησοῦς·",
+      "right_context": "τὰ ⸀πρόβατά μου."
+    },
+    {
+      "ref": "Luke 8:32",
+      "form": "⸀βοσκομένη",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "Ἦν δὲ ἐκεῖ ἀγέλη χοίρων ἱκανῶν",
+      "right_context": "ἐν τῷ ὄρει· καὶ ⸀παρεκάλεσαν αὐτὸν"
+    },
+    {
+      "ref": "Luke 8:34",
+      "form": "βόσκοντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 34,
+      "left_context": "Ἰδόντες δὲ οἱ",
+      "right_context": "τὸ ⸀γεγονὸς ἔφυγον καὶ ἀπήγγειλαν εἰς"
+    },
+    {
+      "ref": "Luke 15:15",
+      "form": "βόσκειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 15,
+      "left_context": "ἔπεμψεν αὐτὸν εἰς τοὺς ἀγροὺς αὐτοῦ",
+      "right_context": "χοίρους·"
+    },
+    {
+      "ref": "Mark 5:11",
+      "form": "βοσκομένη·",
+      "morph": "V-P-P-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "πρὸς τῷ ὄρει ἀγέλη χοίρων μεγάλη",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 5:14",
+      "form": "βόσκοντες",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "⸂Καὶ οἱ⸃",
+      "right_context": "⸀αὐτοὺς ἔφυγον καὶ ⸀ἀπήγγειλαν εἰς τὴν"
+    },
+    {
+      "ref": "Matthew 8:30",
+      "form": "βοσκομένη.",
+      "morph": "V-P-P-P",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 30,
+      "left_context": "μακρὰν ἀπ’ αὐτῶν ἀγέλη χοίρων πολλῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 8:33",
+      "form": "βόσκοντες",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 33,
+      "left_context": "οἱ δὲ",
+      "right_context": "ἔφυγον, καὶ ἀπελθόντες εἰς τὴν πόλιν"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "John": 2,
+    "Mark": 2,
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χοῖρος",
+      "display": "de·cerdos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγέλη",
+      "display": "manada",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "φεύγω",
+      "display": "huieron",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "monte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπαγγέλλω",
+      "display": "anunciaron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φιλέω",
+      "display": "amo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρνίον",
+      "display": "corderos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόβατον",
+      "display": "ovejas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "de·suficientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγρός",
+      "display": "campos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 21:15",
+      "form": "Βόσκε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "κύριε, σὺ οἶδας ὅτι φιλῶ σε. λέγει αὐτῷ· Βόσκε τὰ ἀρνία μου."
+    },
+    {
+      "ref": "John 21:17",
+      "form": "Βόσκε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "γινώσκεις ὅτι φιλῶ σε. λέγει αὐτῷ ⸀ὁ Ἰησοῦς· Βόσκε τὰ ⸀πρόβατά μου."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 21:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 21:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 15:15",
+      "reason": "occurs near χοῖρος"
+    },
+    {
+      "ref": "Luke 8:32",
+      "reason": "occurs near χοῖρος, ἀγέλη, ὄρος"
+    },
+    {
+      "ref": "Luke 8:34",
+      "reason": "occurs near φεύγω, ἀπαγγέλλω"
+    },
+    {
+      "ref": "Mark 5:11",
+      "reason": "occurs near χοῖρος, ἀγέλη, ὄρος"
+    },
+    {
+      "ref": "Mark 5:14",
+      "reason": "occurs near φεύγω, ἀπαγγέλλω"
+    },
+    {
+      "ref": "Matthew 8:30",
+      "reason": "occurs near χοῖρος, ἀγέλη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

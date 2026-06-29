@@ -1,0 +1,626 @@
+{
+  "lemma": "λυπέω",
+  "language": "greek",
+  "total_occurrences": 26,
+  "forms": [
+    {
+      "form": "λελύπηκεν,",
+      "count": 2
+    },
+    {
+      "form": "λυπούμενοι",
+      "count": 2
+    },
+    {
+      "form": "ἐλυπήθητε",
+      "count": 2
+    },
+    {
+      "form": "λυπούμενος,",
+      "count": 2
+    },
+    {
+      "form": "λυπεῖσθαι",
+      "count": 2
+    },
+    {
+      "form": "ἐλυπήθησαν",
+      "count": 2
+    },
+    {
+      "form": "λυπηθέντες",
+      "count": 1
+    },
+    {
+      "form": "λυπῆσθε",
+      "count": 1
+    },
+    {
+      "form": "λυπῶ",
+      "count": 1
+    },
+    {
+      "form": "λυπούμενος",
+      "count": 1
+    },
+    {
+      "form": "λυπηθῆτε,",
+      "count": 1
+    },
+    {
+      "form": "ἐλύπησα",
+      "count": 1
+    },
+    {
+      "form": "ἐλύπησεν",
+      "count": 1
+    },
+    {
+      "form": "ἐλυπήθητε,",
+      "count": 1
+    },
+    {
+      "form": "⸀λυπηθῆναι",
+      "count": 1
+    },
+    {
+      "form": "λυπεῖτε",
+      "count": 1
+    },
+    {
+      "form": "λυπηθήσεσθε,",
+      "count": 1
+    },
+    {
+      "form": "ἐλυπήθη",
+      "count": 1
+    },
+    {
+      "form": "⸂λυπηθεὶς",
+      "count": 1
+    },
+    {
+      "form": "λυπεῖται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 7,
+      "subjunctive": 2,
+      "indicative": 13,
+      "infinitive": 3,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 12,
+      "present": 11,
+      "perfect": 2,
+      "future": 1
+    },
+    "voices": {
+      "passive": 20,
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:6",
+      "form": "λυπηθέντες",
+      "morph": "V-A-P-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "ᾧ ἀγαλλιᾶσθε, ὀλίγον ἄρτι εἰ ⸀δέον",
+      "right_context": "ἐν ποικίλοις πειρασμοῖς,"
+    },
+    {
+      "ref": "1 Thessalonians 4:13",
+      "form": "λυπῆσθε",
+      "morph": "V-P-P-S-2P",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "ἀδελφοί, περὶ τῶν ⸀κοιμωμένων, ἵνα μὴ",
+      "right_context": "καθὼς καὶ οἱ λοιποὶ οἱ μὴ"
+    },
+    {
+      "ref": "2 Corinthians 2:2",
+      "form": "λυπῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "εἰ γὰρ ἐγὼ",
+      "right_context": "ὑμᾶς, καὶ ⸀τίς ὁ εὐφραίνων με"
+    },
+    {
+      "ref": "2 Corinthians 2:2",
+      "form": "λυπούμενος",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "ὁ εὐφραίνων με εἰ μὴ ὁ",
+      "right_context": "ἐξ ἐμοῦ;"
+    },
+    {
+      "ref": "2 Corinthians 2:4",
+      "form": "λυπηθῆτε,",
+      "morph": "V-A-P-S-2P",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "ὑμῖν διὰ πολλῶν δακρύων, οὐχ ἵνα",
+      "right_context": "ἀλλὰ τὴν ἀγάπην ἵνα γνῶτε ἣν"
+    },
+    {
+      "ref": "2 Corinthians 2:5",
+      "form": "λελύπηκεν,",
+      "morph": "V-X-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "Εἰ δέ τις",
+      "right_context": "οὐκ ἐμὲ λελύπηκεν, ἀλλὰ ἀπὸ μέρους"
+    },
+    {
+      "ref": "2 Corinthians 2:5",
+      "form": "λελύπηκεν,",
+      "morph": "V-X-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "Εἰ δέ τις λελύπηκεν, οὐκ ἐμὲ",
+      "right_context": "ἀλλὰ ἀπὸ μέρους ἵνα μὴ ἐπιβαρῶ"
+    },
+    {
+      "ref": "2 Corinthians 6:10",
+      "form": "λυπούμενοι",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "ὡς",
+      "right_context": "ἀεὶ δὲ χαίροντες, ὡς πτωχοὶ πολλοὺς"
+    },
+    {
+      "ref": "2 Corinthians 7:8",
+      "form": "ἐλύπησα",
+      "morph": "V-A-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 8,
+      "left_context": "ὅτι εἰ καὶ",
+      "right_context": "ὑμᾶς ἐν τῇ ἐπιστολῇ, οὐ μεταμέλομαι·"
+    },
+    {
+      "ref": "2 Corinthians 7:8",
+      "form": "ἐλύπησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 8,
+      "left_context": "ἐπιστολὴ ἐκείνη εἰ καὶ πρὸς ὥραν",
+      "right_context": "ὑμᾶς),"
+    },
+    {
+      "ref": "2 Corinthians 7:9",
+      "form": "ἐλυπήθητε,",
+      "morph": "V-A-P-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "νῦν χαίρω, οὐχ ὅτι",
+      "right_context": "ἀλλ’ ὅτι ἐλυπήθητε εἰς μετάνοιαν, ἐλυπήθητε"
+    },
+    {
+      "ref": "2 Corinthians 7:9",
+      "form": "ἐλυπήθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "χαίρω, οὐχ ὅτι ἐλυπήθητε, ἀλλ’ ὅτι",
+      "right_context": "εἰς μετάνοιαν, ἐλυπήθητε γὰρ κατὰ θεόν,"
+    },
+    {
+      "ref": "2 Corinthians 7:9",
+      "form": "ἐλυπήθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "ἐλυπήθητε, ἀλλ’ ὅτι ἐλυπήθητε εἰς μετάνοιαν,",
+      "right_context": "γὰρ κατὰ θεόν, ἵνα ἐν μηδενὶ"
+    },
+    {
+      "ref": "2 Corinthians 7:11",
+      "form": "⸀λυπηθῆναι",
+      "morph": "V-A-P-N",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 11,
+      "left_context": "γὰρ αὐτὸ τοῦτο τὸ κατὰ θεὸν",
+      "right_context": "πόσην κατειργάσατο ὑμῖν σπουδήν, ἀλλὰ ἀπολογίαν,"
+    },
+    {
+      "ref": "Ephesians 4:30",
+      "form": "λυπεῖτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 30,
+      "left_context": "καὶ μὴ",
+      "right_context": "τὸ πνεῦμα τὸ ἅγιον τοῦ θεοῦ,"
+    },
+    {
+      "ref": "John 16:20",
+      "form": "λυπηθήσεσθε,",
+      "morph": "V-F-P-I-2P",
+      "book": "John",
+      "chapter": 16,
+      "verse": 20,
+      "left_context": "ὑμεῖς, ὁ δὲ κόσμος χαρήσεται· ⸀ὑμεῖς",
+      "right_context": "ἀλλ’ ἡ λύπη ὑμῶν εἰς χαρὰν"
+    },
+    {
+      "ref": "John 21:17",
+      "form": "ἐλυπήθη",
+      "morph": "V-A-P-I-3S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 17,
+      "left_context": "τὸ τρίτον· Σίμων ⸀Ἰωάννου, φιλεῖς με;",
+      "right_context": "ὁ Πέτρος ὅτι εἶπεν αὐτῷ τὸ"
+    },
+    {
+      "ref": "Mark 10:22",
+      "form": "λυπούμενος,",
+      "morph": "V-P-P-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "δὲ στυγνάσας ἐπὶ τῷ λόγῳ ἀπῆλθεν",
+      "right_context": "ἦν γὰρ ἔχων κτήματα πολλά."
+    },
+    {
+      "ref": "Mark 14:19",
+      "form": "λυπεῖσθαι",
+      "morph": "V-P-P-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "⸀ἤρξαντο",
+      "right_context": "καὶ λέγειν αὐτῷ εἷς κατὰ εἷς·"
+    },
+    {
+      "ref": "Matthew 14:9",
+      "form": "⸂λυπηθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 9,
+      "left_context": "καὶ",
+      "right_context": "ὁ βασιλεὺς διὰ⸃ τοὺς ὅρκους καὶ"
+    },
+    {
+      "ref": "Matthew 17:23",
+      "form": "ἐλυπήθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 23,
+      "left_context": "καὶ τῇ τρίτῃ ἡμέρᾳ ἐγερθήσεται. καὶ",
+      "right_context": "σφόδρα."
+    },
+    {
+      "ref": "Matthew 18:31",
+      "form": "ἐλυπήθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 31,
+      "left_context": "⸀οὖν οἱ σύνδουλοι αὐτοῦ τὰ γενόμενα",
+      "right_context": "σφόδρα, καὶ ἐλθόντες διεσάφησαν τῷ κυρίῳ"
+    },
+    {
+      "ref": "Matthew 19:22",
+      "form": "λυπούμενος,",
+      "morph": "V-P-P-P",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 22,
+      "left_context": "δὲ ὁ νεανίσκος τὸν ⸀λόγον ἀπῆλθεν",
+      "right_context": "ἦν γὰρ ἔχων κτήματα πολλά."
+    },
+    {
+      "ref": "Matthew 26:22",
+      "form": "λυπούμενοι",
+      "morph": "V-P-P-P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 22,
+      "left_context": "καὶ",
+      "right_context": "σφόδρα ἤρξαντο λέγειν αὐτῷ ⸂εἷς ἕκαστος⸃·"
+    },
+    {
+      "ref": "Matthew 26:37",
+      "form": "λυπεῖσθαι",
+      "morph": "V-P-P-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 37,
+      "left_context": "καὶ τοὺς δύο υἱοὺς Ζεβεδαίου ἤρξατο",
+      "right_context": "καὶ ἀδημονεῖν."
+    },
+    {
+      "ref": "Romans 14:15",
+      "form": "λυπεῖται,",
+      "morph": "V-P-P-I-3S",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 15,
+      "left_context": "⸀γὰρ διὰ βρῶμα ὁ ἀδελφός σου",
+      "right_context": "οὐκέτι κατὰ ἀγάπην περιπατεῖς. μὴ τῷ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 12,
+    "Matthew": 6,
+    "John": 2,
+    "Mark": 2,
+    "1 Peter": 1,
+    "1 Thessalonians": 1,
+    "Ephesians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λυπέω",
+      "display": "ha entristecido",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "gozando",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μετάνοια",
+      "display": "metanoia",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzaron",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "σφόδρα",
+      "display": "mucho",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εὐφραίνω",
+      "display": "regocijarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τρίτος",
+      "display": "tercero",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κτῆμα",
+      "display": "posesiónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαλλιάω",
+      "display": "regocijarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγος",
+      "display": "poco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτι",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "atando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποικίλος",
+      "display": "varios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειρασμός",
+      "display": "tentaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοιμάομαι",
+      "display": "dormiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δάκρυον",
+      "display": "de·lágrimas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "de·parte",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Thessalonians 4:13",
+      "form": "λυπῆσθε",
+      "morph": "V-P-P-S-2P",
+      "clause_text": "ὑμᾶς ἀγνοεῖν, ἀδελφοί, περὶ τῶν ⸀κοιμωμένων, ἵνα μὴ λυπῆσθε καθὼς καὶ οἱ λοιποὶ οἱ μὴ ἔχοντες ἐλπίδα.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Ephesians 4:30",
+      "form": "λυπεῖτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "καὶ μὴ λυπεῖτε τὸ πνεῦμα τὸ ἅγιον τοῦ θεοῦ, ἐν ᾧ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 4:13",
+      "negator": "μὴ",
+      "clause_text": "ὑμᾶς ἀγνοεῖν, ἀδελφοί, περὶ τῶν ⸀κοιμωμένων, ἵνα μὴ λυπῆσθε καθὼς καὶ οἱ λοιποὶ οἱ μὴ ἔχοντες ἐλπίδα."
+    },
+    {
+      "ref": "2 Corinthians 2:2",
+      "negator": "μὴ",
+      "clause_text": "καὶ ⸀τίς ὁ εὐφραίνων με εἰ μὴ ὁ λυπούμενος ἐξ ἐμοῦ;"
+    },
+    {
+      "ref": "2 Corinthians 2:4",
+      "negator": "οὐχ",
+      "clause_text": "καρδίας ἔγραψα ὑμῖν διὰ πολλῶν δακρύων, οὐχ ἵνα λυπηθῆτε, ἀλλὰ τὴν ἀγάπην ἵνα γνῶτε ἣν ἔχω περισσοτέρως"
+    },
+    {
+      "ref": "2 Corinthians 2:5",
+      "negator": "οὐκ",
+      "clause_text": "Εἰ δέ τις λελύπηκεν, οὐκ ἐμὲ λελύπηκεν, ἀλλὰ ἀπὸ μέρους ἵνα μὴ"
+    },
+    {
+      "ref": "2 Corinthians 2:5",
+      "negator": "οὐκ",
+      "clause_text": "Εἰ δέ τις λελύπηκεν, οὐκ ἐμὲ λελύπηκεν, ἀλλὰ ἀπὸ μέρους ἵνα μὴ ἐπιβαρῶ πάντας ὑμᾶς."
+    },
+    {
+      "ref": "2 Corinthians 7:9",
+      "negator": "οὐχ",
+      "clause_text": "νῦν χαίρω, οὐχ ὅτι ἐλυπήθητε, ἀλλ’ ὅτι ἐλυπήθητε εἰς μετάνοιαν, ἐλυπήθητε γὰρ κατὰ"
+    },
+    {
+      "ref": "Ephesians 4:30",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ λυπεῖτε τὸ πνεῦμα τὸ ἅγιον τοῦ θεοῦ, ἐν ᾧ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 4:30",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 2:2",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 2:4",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 2:5",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 6:10",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 7:11",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 7:8",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 7:9",
+      "reason": "frequent in 2 Corinthians"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

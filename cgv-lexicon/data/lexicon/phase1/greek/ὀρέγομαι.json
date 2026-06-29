@@ -1,0 +1,166 @@
+{
+  "lemma": "ὀρέγομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ὀρέγεται,",
+      "count": 1
+    },
+    {
+      "form": "ὀρεγόμενοι",
+      "count": 1
+    },
+    {
+      "form": "ὀρέγονται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 3:1",
+      "form": "ὀρέγεται,",
+      "morph": "V-P-M-I-3S",
+      "book": "1 Timothy",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "Πιστὸς ὁ λόγος· εἴ τις ἐπισκοπῆς",
+      "right_context": "καλοῦ ἔργου ἐπιθυμεῖ."
+    },
+    {
+      "ref": "1 Timothy 6:10",
+      "form": "ὀρεγόμενοι",
+      "morph": "V-P-M-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "κακῶν ἐστιν ἡ φιλαργυρία, ἧς τινες",
+      "right_context": "ἀπεπλανήθησαν ἀπὸ τῆς πίστεως καὶ ἑαυτοὺς"
+    },
+    {
+      "ref": "Hebrews 11:16",
+      "form": "ὀρέγονται,",
+      "morph": "V-P-M-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 16,
+      "left_context": "νῦν δὲ κρείττονος",
+      "right_context": "τοῦτ’ ἔστιν ἐπουρανίου. διὸ οὐκ ἐπαισχύνεται"
+    }
+  ],
+  "books": {
+    "1 Timothy": 2,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπισκοπή",
+      "display": "de·visitación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "de·bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμέω",
+      "display": "desea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλαργυρία",
+      "display": "amor·al·dinero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποπλανάω",
+      "display": "fueron engañado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρείττων",
+      "display": "de·mejora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπουράνιος",
+      "display": "de·celestial",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 3:1",
+      "reason": "occurs near καλός, λόγος, ἐπιθυμέω"
+    },
+    {
+      "ref": "1 Timothy 6:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 11:16",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

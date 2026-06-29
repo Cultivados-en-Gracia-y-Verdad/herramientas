@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀργέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀργεῖ,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:3",
+      "form": "ἀργεῖ,",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "ἐμπορεύσονται· οἷς τὸ κρίμα ἔκπαλαι οὐκ",
+      "right_context": "καὶ ἡ ἀπώλεια αὐτῶν οὐ ⸀νυστάζει."
+    }
+  ],
+  "books": {
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κρίμα",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔκπαλαι",
+      "display": "desde·hace·tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπώλεια",
+      "display": "perdición",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 2:3",
+      "negator": "οὐκ",
+      "clause_text": "λόγοις ὑμᾶς ἐμπορεύσονται· οἷς τὸ κρίμα ἔκπαλαι οὐκ ἀργεῖ, καὶ ἡ ἀπώλεια αὐτῶν οὐ ⸀νυστάζει."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:3",
+      "reason": "occurs near κρίμα, ἀπώλεια, ἔκπαλαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

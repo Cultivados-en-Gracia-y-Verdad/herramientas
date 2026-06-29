@@ -1,0 +1,86 @@
+{
+  "lemma": "συγχράομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συγχρῶνται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 4:9",
+      "form": "συγχρῶνται",
+      "morph": "V-P-M-I-3P",
+      "book": "John",
+      "chapter": 4,
+      "verse": 9,
+      "left_context": "αἰτεῖς ⸂γυναικὸς Σαμαρίτιδος οὔσης⸃; οὐ γὰρ",
+      "right_context": "Ἰουδαῖοι Σαμαρίταις."
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυνή",
+      "display": "de·mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαμαρῖτις",
+      "display": "de·Samaritana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαμαρίτης",
+      "display": "Samaritano",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 4:9",
+      "negator": "οὐ",
+      "clause_text": "ἐμοῦ πεῖν αἰτεῖς ⸂γυναικὸς Σαμαρίτιδος οὔσης⸃; οὐ γὰρ συγχρῶνται Ἰουδαῖοι Σαμαρίταις."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 4:9",
+      "reason": "occurs near Σαμαρίτης, Σαμαρῖτις, γυνή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

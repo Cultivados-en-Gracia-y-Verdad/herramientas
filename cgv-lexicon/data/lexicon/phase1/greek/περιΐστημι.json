@@ -1,0 +1,221 @@
+{
+  "lemma": "περιΐστημι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "περιΐστασο·",
+      "count": 1
+    },
+    {
+      "form": "περιέστησαν",
+      "count": 1
+    },
+    {
+      "form": "περιεστῶτα",
+      "count": 1
+    },
+    {
+      "form": "περιΐστασο,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "middle": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:16",
+      "form": "περιΐστασο·",
+      "morph": "V-P-M-D-2S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "τὰς δὲ βεβήλους κενοφωνίας",
+      "right_context": "ἐπὶ πλεῖον γὰρ προκόψουσιν ἀσεβείας,"
+    },
+    {
+      "ref": "Acts 25:7",
+      "form": "περιέστησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 7,
+      "left_context": "παραγενομένου δὲ αὐτοῦ",
+      "right_context": "⸀αὐτὸν οἱ ἀπὸ Ἱεροσολύμων καταβεβηκότες Ἰουδαῖοι,"
+    },
+    {
+      "ref": "John 11:42",
+      "form": "περιεστῶτα",
+      "morph": "V-X-A-P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 42,
+      "left_context": "ἀκούεις· ἀλλὰ διὰ τὸν ὄχλον τὸν",
+      "right_context": "εἶπον, ἵνα πιστεύσωσιν ὅτι σύ με"
+    },
+    {
+      "ref": "Titus 3:9",
+      "form": "περιΐστασο,",
+      "morph": "V-P-M-D-2S",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "γενεαλογίας καὶ ⸀ἔρεις καὶ μάχας νομικὰς",
+      "right_context": "εἰσὶν γὰρ ἀνωφελεῖς καὶ μάταιοι."
+    }
+  ],
+  "books": {
+    "2 Timothy": 1,
+    "Acts": 1,
+    "John": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βέβηλος",
+      "display": "profanas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κενοφωνία",
+      "display": "vana·palabrería",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προκόπτω",
+      "display": "progresarán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσέβεια",
+      "display": "de·impiedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγίνομαι",
+      "display": "venido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "de·Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "bajados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "crean",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρις",
+      "display": "contiendas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχη",
+      "display": "peleas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νομικός",
+      "display": "intérprete·de·la·ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνωφελής",
+      "display": "inútiles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάταιος",
+      "display": "vanas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Timothy 2:16",
+      "form": "περιΐστασο·",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "τὰς δὲ βεβήλους κενοφωνίας περιΐστασο· ἐπὶ πλεῖον γὰρ προκόψουσιν ἀσεβείας,"
+    },
+    {
+      "ref": "Titus 3:9",
+      "form": "περιΐστασο,",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "ζητήσεις καὶ γενεαλογίας καὶ ⸀ἔρεις καὶ μάχας νομικὰς περιΐστασο, εἰσὶν γὰρ ἀνωφελεῖς καὶ μάταιοι."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Titus 3:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 25:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 11:42",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

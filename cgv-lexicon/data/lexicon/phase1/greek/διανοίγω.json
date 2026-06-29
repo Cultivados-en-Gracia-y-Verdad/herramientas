@@ -1,0 +1,343 @@
+{
+  "lemma": "διανοίγω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "διήνοιξεν",
+      "count": 2
+    },
+    {
+      "form": "⸀διηνοιγμένους",
+      "count": 1
+    },
+    {
+      "form": "διανοίγων",
+      "count": 1
+    },
+    {
+      "form": "διανοῖγον",
+      "count": 1
+    },
+    {
+      "form": "διηνοίχθησαν",
+      "count": 1
+    },
+    {
+      "form": "διήνοιγεν",
+      "count": 1
+    },
+    {
+      "form": "Διανοίχθητι·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 4,
+      "imperative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 4,
+      "present": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:56",
+      "form": "⸀διηνοιγμένους",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 56,
+      "left_context": "καὶ εἶπεν· Ἰδοὺ θεωρῶ τοὺς οὐρανοὺς",
+      "right_context": "καὶ τὸν υἱὸν τοῦ ἀνθρώπου ἐκ"
+    },
+    {
+      "ref": "Acts 16:14",
+      "form": "διήνοιξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 14,
+      "left_context": "τὸν θεόν, ἤκουεν, ἧς ὁ κύριος",
+      "right_context": "τὴν καρδίαν προσέχειν τοῖς λαλουμένοις ὑπὸ"
+    },
+    {
+      "ref": "Acts 17:3",
+      "form": "διανοίγων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "καὶ παρατιθέμενος ὅτι τὸν χριστὸν ἔδει"
+    },
+    {
+      "ref": "Luke 2:23",
+      "form": "διανοῖγον",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "ἐν νόμῳ κυρίου ὅτι Πᾶν ἄρσεν",
+      "right_context": "μήτραν ἅγιον τῷ κυρίῳ κληθήσεται,"
+    },
+    {
+      "ref": "Luke 24:31",
+      "form": "διηνοίχθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 31,
+      "left_context": "αὐτῶν δὲ",
+      "right_context": "οἱ ὀφθαλμοὶ καὶ ἐπέγνωσαν αὐτόν· καὶ"
+    },
+    {
+      "ref": "Luke 24:32",
+      "form": "διήνοιγεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 32,
+      "left_context": "ἐλάλει ἡμῖν ἐν τῇ ὁδῷ, ⸀ὡς",
+      "right_context": "ἡμῖν τὰς γραφάς;"
+    },
+    {
+      "ref": "Luke 24:45",
+      "form": "διήνοιξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 45,
+      "left_context": "τότε",
+      "right_context": "αὐτῶν τὸν νοῦν τοῦ συνιέναι τὰς"
+    },
+    {
+      "ref": "Mark 7:34",
+      "form": "Διανοίχθητι·",
+      "morph": "V-A-P-D-2S",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 34,
+      "left_context": "καὶ λέγει αὐτῷ· Εφφαθα, ὅ ἐστιν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 4,
+    "Acts": 3,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "veo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέχω",
+      "display": "prestar·atención",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρατίθημι",
+      "display": "poniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρσην",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήτρα",
+      "display": "vientre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "será llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconocieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escrituras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "mente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνίημι",
+      "display": "entender",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 7:34",
+      "form": "Διανοίχθητι·",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "οὐρανὸν ἐστέναξεν, καὶ λέγει αὐτῷ· Εφφαθα, ὅ ἐστιν Διανοίχθητι·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 7:34",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 24:31",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:32",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:45",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 2:23",
+      "reason": "occurs near κύριος"
+    },
+    {
+      "ref": "Acts 16:14",
+      "reason": "occurs near κύριος"
+    },
+    {
+      "ref": "Acts 17:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 7:56",
+      "reason": "occurs near θεωρέω, οὐρανός, υἱός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

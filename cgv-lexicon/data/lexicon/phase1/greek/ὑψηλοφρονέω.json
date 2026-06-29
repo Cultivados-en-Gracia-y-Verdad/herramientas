@@ -1,0 +1,98 @@
+{
+  "lemma": "ὑψηλοφρονέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑψηλοφρονεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:17",
+      "form": "ὑψηλοφρονεῖν",
+      "morph": "V-P-A-N",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "ἐν τῷ νῦν αἰῶνι παράγγελλε μὴ",
+      "right_context": "μηδὲ ἠλπικέναι ἐπὶ πλούτου ἀδηλότητι, ἀλλ’"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγγέλλω",
+      "display": "manda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίζω",
+      "display": "esperar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῦτος",
+      "display": "de·riqueza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδηλότης",
+      "display": "incertidumbre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 6:17",
+      "negator": "μὴ",
+      "clause_text": "Τοῖς πλουσίοις ἐν τῷ νῦν αἰῶνι παράγγελλε μὴ ὑψηλοφρονεῖν μηδὲ ἠλπικέναι ἐπὶ πλούτου ἀδηλότητι, ἀλλ’ ⸀ἐπὶ ⸀θεῷ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:17",
+      "reason": "occurs near αἰών, νῦν, παραγγέλλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

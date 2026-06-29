@@ -1,0 +1,93 @@
+{
+  "lemma": "καταλέγω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καταλεγέσθω",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:9",
+      "form": "καταλεγέσθω",
+      "morph": "V-P-P-D-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "Χήρα",
+      "right_context": "μὴ ἔλαττον ἐτῶν ἑξήκοντα γεγονυῖα, ἑνὸς"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χήρα",
+      "display": "viuda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλάσσων",
+      "display": "menor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτος",
+      "display": "de·añoses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑξήκοντα",
+      "display": "de·sesentas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 5:9",
+      "form": "καταλεγέσθω",
+      "morph": "V-P-P-D-3S",
+      "clause_text": "Χήρα καταλεγέσθω μὴ ἔλαττον ἐτῶν ἑξήκοντα γεγονυῖα, ἑνὸς ἀνδρὸς γυνή,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 5:9",
+      "negator": "μὴ",
+      "clause_text": "Χήρα καταλεγέσθω μὴ ἔλαττον ἐτῶν ἑξήκοντα γεγονυῖα, ἑνὸς ἀνδρὸς γυνή,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:9",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

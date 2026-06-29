@@ -1,0 +1,74 @@
+{
+  "lemma": "συμφύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συμφυεῖσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:7",
+      "form": "συμφυεῖσαι",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 7,
+      "left_context": "ἔπεσεν ἐν μέσῳ τῶν ἀκανθῶν, καὶ",
+      "right_context": "αἱ ἄκανθαι ἀπέπνιξαν αὐτό."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄκανθα",
+      "display": "de·espinas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποπνίγω",
+      "display": "ahogaron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:7",
+      "reason": "occurs near μέσος, ἀποπνίγω, ἄκανθα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

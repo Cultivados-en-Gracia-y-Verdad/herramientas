@@ -1,0 +1,176 @@
+{
+  "lemma": "νεκρόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "Νεκρώσατε",
+      "count": 1
+    },
+    {
+      "form": "νενεκρωμένου,",
+      "count": 1
+    },
+    {
+      "form": "νενεκρωμένον,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 3:5",
+      "form": "Νεκρώσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "",
+      "right_context": "οὖν τὰ ⸀μέλη τὰ ἐπὶ τῆς"
+    },
+    {
+      "ref": "Hebrews 11:12",
+      "form": "νενεκρωμένου,",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 12,
+      "left_context": "καὶ ἀφ’ ἑνὸς ἐγεννήθησαν, καὶ ταῦτα",
+      "right_context": "καθὼς τὰ ἄστρα τοῦ οὐρανοῦ τῷ"
+    },
+    {
+      "ref": "Romans 4:19",
+      "form": "νενεκρωμένον,",
+      "morph": "V-X-P-P",
+      "book": "Romans",
+      "chapter": 4,
+      "verse": 19,
+      "left_context": "τῇ ⸀πίστει κατενόησεν τὸ ἑαυτοῦ ⸀σῶμα",
+      "right_context": "ἑκατονταετής που ὑπάρχων, καὶ τὴν νέκρωσιν"
+    }
+  ],
+  "books": {
+    "Colossians": 1,
+    "Hebrews": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέλος",
+      "display": "miembros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεννάω",
+      "display": "fueron engendrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄστρον",
+      "display": "estrellas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατανοέω",
+      "display": "consideró",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑκατονταετής",
+      "display": "cien·años",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πού",
+      "display": "dónde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 3:5",
+      "form": "Νεκρώσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Νεκρώσατε οὖν τὰ ⸀μέλη τὰ ἐπὶ τῆς γῆς, πορνείαν,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 3:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 11:12",
+      "reason": "occurs near γεννάω, εἷς, οὐρανός"
+    },
+    {
+      "ref": "Romans 4:19",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,275 @@
+{
+  "lemma": "ἐκζητέω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἐξεζήτησαν",
+      "count": 1
+    },
+    {
+      "form": "ἐκζητοῦσιν",
+      "count": 1
+    },
+    {
+      "form": "ἐκζητήσας",
+      "count": 1
+    },
+    {
+      "form": "ἐκζητήσωσιν",
+      "count": 1
+    },
+    {
+      "form": "ἐκζητηθῇ",
+      "count": 1
+    },
+    {
+      "form": "ἐκζητηθήσεται",
+      "count": 1
+    },
+    {
+      "form": "ἐκζητῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 3,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "aorist": 4,
+      "present": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 5,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:10",
+      "form": "ἐξεζήτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "Περὶ ἧς σωτηρίας",
+      "right_context": "καὶ ἐξηραύνησαν προφῆται οἱ περὶ τῆς"
+    },
+    {
+      "ref": "Hebrews 11:6",
+      "form": "ἐκζητοῦσιν",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 6,
+      "left_context": "τῷ θεῷ ὅτι ἔστιν καὶ τοῖς",
+      "right_context": "αὐτὸν μισθαποδότης γίνεται."
+    },
+    {
+      "ref": "Hebrews 12:17",
+      "form": "ἐκζητήσας",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 17,
+      "left_context": "τόπον οὐχ εὗρεν, καίπερ μετὰ δακρύων",
+      "right_context": "αὐτήν."
+    },
+    {
+      "ref": "Acts 15:17",
+      "form": "ἐκζητήσωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 17,
+      "left_context": "ὅπως ἂν",
+      "right_context": "οἱ κατάλοιποι τῶν ἀνθρώπων τὸν κύριον,"
+    },
+    {
+      "ref": "Luke 11:50",
+      "form": "ἐκζητηθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 50,
+      "left_context": "ἵνα",
+      "right_context": "τὸ αἷμα πάντων τῶν προφητῶν τὸ"
+    },
+    {
+      "ref": "Luke 11:51",
+      "form": "ἐκζητηθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 51,
+      "left_context": "καὶ τοῦ οἴκου· ναί, λέγω ὑμῖν,",
+      "right_context": "ἀπὸ τῆς γενεᾶς ταύτης."
+    },
+    {
+      "ref": "Romans 3:11",
+      "form": "ἐκζητῶν",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "ἔστιν ⸀ὁ συνίων, οὐκ ἔστιν ⸁ὁ",
+      "right_context": "τὸν θεόν·"
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "Luke": 2,
+    "1 Peter": 1,
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προφήτης",
+      "display": "profetas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "de·salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξεραυνάω",
+      "display": "investigaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθαποδότης",
+      "display": "galardonador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "halló",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καίπερ",
+      "display": "aunque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δάκρυον",
+      "display": "de·lágrimas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάλοιπος",
+      "display": "remanentes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "de·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναί",
+      "display": "sí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γενεά",
+      "display": "de·generación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνίημι",
+      "display": "entendiendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 3:11",
+      "negator": "οὐκ",
+      "clause_text": "οὐκ ἔστιν ⸀ὁ συνίων, οὐκ ἔστιν ⸁ὁ ἐκζητῶν τὸν θεόν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:6",
+      "reason": "occurs near θεός, μισθαποδότης"
+    },
+    {
+      "ref": "Hebrews 12:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 11:50",
+      "reason": "occurs near προφήτης"
+    },
+    {
+      "ref": "Luke 11:51",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 1:10",
+      "reason": "occurs near προφήτης, σωτηρία, ἐξεραυνάω"
+    },
+    {
+      "ref": "Acts 15:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 3:11",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

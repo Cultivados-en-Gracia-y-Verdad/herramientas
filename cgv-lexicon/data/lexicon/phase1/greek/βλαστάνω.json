@@ -1,0 +1,202 @@
+{
+  "lemma": "βλαστάνω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐβλάστησεν",
+      "count": 2
+    },
+    {
+      "form": "βλαστήσασα",
+      "count": 1
+    },
+    {
+      "form": "⸀βλαστᾷ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "subjunctive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 9:4",
+      "form": "βλαστήσασα",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 4,
+      "left_context": "μάννα καὶ ἡ ῥάβδος Ἀαρὼν ἡ",
+      "right_context": "καὶ αἱ πλάκες τῆς διαθήκης,"
+    },
+    {
+      "ref": "Mark 4:27",
+      "form": "⸀βλαστᾷ",
+      "morph": "V-P-A-S-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 27,
+      "left_context": "νύκτα καὶ ἡμέραν, καὶ ὁ σπόρος",
+      "right_context": "καὶ μηκύνηται ὡς οὐκ οἶδεν αὐτός."
+    },
+    {
+      "ref": "Matthew 13:26",
+      "form": "ἐβλάστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 26,
+      "left_context": "ὅτε δὲ",
+      "right_context": "ὁ χόρτος καὶ καρπὸν ἐποίησεν, τότε"
+    },
+    {
+      "ref": "James 5:18",
+      "form": "ἐβλάστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "James",
+      "chapter": 5,
+      "verse": 18,
+      "left_context": "οὐρανὸς ⸂ὑετὸν ἔδωκεν⸃ καὶ ἡ γῆ",
+      "right_context": "τὸν καρπὸν αὐτῆς."
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Mark": 1,
+    "Matthew": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥάβδος",
+      "display": "vara·",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀαρών",
+      "display": "de·Aarón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλάξ",
+      "display": "tablas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "de·pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπόρος",
+      "display": "semilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηκύνομαι",
+      "display": "alargarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "ha sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χόρτος",
+      "display": "hierba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑετός",
+      "display": "lluvia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 4:27",
+      "negator": "οὐκ",
+      "clause_text": "καὶ ἐγείρηται νύκτα καὶ ἡμέραν, καὶ ὁ σπόρος ⸀βλαστᾷ καὶ μηκύνηται ὡς οὐκ οἶδεν αὐτός."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 9:4",
+      "reason": "occurs near διαθήκη, πλάξ, Ἀαρών"
+    },
+    {
+      "ref": "James 5:18",
+      "reason": "occurs near καρπός"
+    },
+    {
+      "ref": "Mark 4:27",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 13:26",
+      "reason": "occurs near καρπός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

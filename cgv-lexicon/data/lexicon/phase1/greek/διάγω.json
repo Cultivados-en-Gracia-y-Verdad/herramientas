@@ -1,0 +1,142 @@
+{
+  "lemma": "διάγω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διάγωμεν",
+      "count": 1
+    },
+    {
+      "form": "διάγοντες,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 2:2",
+      "form": "διάγωμεν",
+      "morph": "V-P-A-S-1P",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "ὄντων, ἵνα ἤρεμον καὶ ἡσύχιον βίον",
+      "right_context": "ἐν πάσῃ εὐσεβείᾳ καὶ σεμνότητι."
+    },
+    {
+      "ref": "Titus 3:3",
+      "form": "διάγοντες,",
+      "morph": "V-P-A-P",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "ἡδοναῖς ποικίλαις, ἐν κακίᾳ καὶ φθόνῳ",
+      "right_context": "στυγητοί, μισοῦντες ἀλλήλους."
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤρεμος",
+      "display": "tranquilo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡσύχιος",
+      "display": "quieto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βίος",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐσέβεια",
+      "display": "piedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεμνότης",
+      "display": "dignidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποικίλος",
+      "display": "varias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακία",
+      "display": "malicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθόνος",
+      "display": "envidia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στυγητός",
+      "display": "odiosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισέω",
+      "display": "odiando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 2:2",
+      "reason": "occurs near βίος, εὐσέβεια, σεμνότης"
+    },
+    {
+      "ref": "Titus 3:3",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

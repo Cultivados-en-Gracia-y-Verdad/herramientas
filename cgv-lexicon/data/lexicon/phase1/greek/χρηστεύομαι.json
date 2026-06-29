@@ -1,0 +1,80 @@
+{
+  "lemma": "χρηστεύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "χρηστεύεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:4",
+      "form": "χρηστεύεται",
+      "morph": "V-P-M-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 4,
+      "left_context": "Ἡ ἀγάπη μακροθυμεῖ,",
+      "right_context": "ἡ ἀγάπη, οὐ ζηλοῖ ⸂ἡ ἀγάπη⸃,"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μακροθυμέω",
+      "display": "ser·paciente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζηλόω",
+      "display": "cela",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 13:4",
+      "negator": "οὐ",
+      "clause_text": "Ἡ ἀγάπη μακροθυμεῖ, χρηστεύεται ἡ ἀγάπη, οὐ ζηλοῖ ⸂ἡ ἀγάπη⸃, οὐ περπερεύεται,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 13:4",
+      "reason": "occurs near ζηλόω, μακροθυμέω, ἀγάπη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,753 @@
+{
+  "lemma": "διέρχομαι",
+  "language": "greek",
+  "total_occurrences": 41,
+  "forms": [
+    {
+      "form": "διελθόντες",
+      "count": 4
+    },
+    {
+      "form": "διήρχετο",
+      "count": 4
+    },
+    {
+      "form": "διελθεῖν",
+      "count": 3
+    },
+    {
+      "form": "διῆλθον",
+      "count": 3
+    },
+    {
+      "form": "διερχόμενος",
+      "count": 3
+    },
+    {
+      "form": "διελθὼν",
+      "count": 3
+    },
+    {
+      "form": "Διέλθωμεν",
+      "count": 3
+    },
+    {
+      "form": "διῆλθεν",
+      "count": 2
+    },
+    {
+      "form": "διήρχοντο",
+      "count": 2
+    },
+    {
+      "form": "διέρχεται",
+      "count": 2
+    },
+    {
+      "form": "διῆλθον,",
+      "count": 1
+    },
+    {
+      "form": "διέλθω,",
+      "count": 1
+    },
+    {
+      "form": "διέρχομαι,",
+      "count": 1
+    },
+    {
+      "form": "διεληλυθότα",
+      "count": 1
+    },
+    {
+      "form": "διερχόμενον",
+      "count": 1
+    },
+    {
+      "form": "⸀Διῆλθον",
+      "count": 1
+    },
+    {
+      "form": "διελθόντα",
+      "count": 1
+    },
+    {
+      "form": "διέρχεσθαι",
+      "count": 1
+    },
+    {
+      "form": "⸀διέρχωμαι",
+      "count": 1
+    },
+    {
+      "form": "διελεύσεται",
+      "count": 1
+    },
+    {
+      "form": "διέρχεσθαι.",
+      "count": 1
+    },
+    {
+      "form": "⸀διελθεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 17,
+      "subjunctive": 5,
+      "infinitive": 6,
+      "participle": 13
+    },
+    "tenses": {
+      "aorist": 23,
+      "present": 10,
+      "perfect": 1,
+      "imperfect": 6,
+      "future": 1
+    },
+    "voices": {
+      "active": 24,
+      "middle": 17
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:1",
+      "form": "διῆλθον,",
+      "morph": "V-A-A-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 1,
+      "left_context": "ἦσαν καὶ πάντες διὰ τῆς θαλάσσης",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 16:5",
+      "form": "διέλθω,",
+      "morph": "V-A-A-S-1S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 5,
+      "left_context": "Ἐλεύσομαι δὲ πρὸς ὑμᾶς ὅταν Μακεδονίαν",
+      "right_context": "Μακεδονίαν γὰρ διέρχομαι,"
+    },
+    {
+      "ref": "1 Corinthians 16:5",
+      "form": "διέρχομαι,",
+      "morph": "V-P-M-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 5,
+      "left_context": "ὑμᾶς ὅταν Μακεδονίαν διέλθω, Μακεδονίαν γὰρ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 1:16",
+      "form": "διελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "καὶ δι’ ὑμῶν",
+      "right_context": "εἰς Μακεδονίαν, καὶ πάλιν ἀπὸ Μακεδονίας"
+    },
+    {
+      "ref": "Hebrews 4:14",
+      "form": "διεληλυθότα",
+      "morph": "V-X-A-P",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "Ἔχοντες οὖν ἀρχιερέα μέγαν",
+      "right_context": "τοὺς οὐρανούς, Ἰησοῦν τὸν υἱὸν τοῦ"
+    },
+    {
+      "ref": "Acts 8:4",
+      "form": "διῆλθον",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 4,
+      "left_context": "Οἱ μὲν οὖν διασπαρέντες",
+      "right_context": "εὐαγγελιζόμενοι τὸν λόγον."
+    },
+    {
+      "ref": "Acts 8:40",
+      "form": "διερχόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 40,
+      "left_context": "Φίλιππος δὲ εὑρέθη εἰς Ἄζωτον, καὶ",
+      "right_context": "εὐηγγελίζετο τὰς πόλεις πάσας ἕως τοῦ"
+    },
+    {
+      "ref": "Acts 9:32",
+      "form": "διερχόμενον",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 32,
+      "left_context": "Ἐγένετο δὲ Πέτρον",
+      "right_context": "διὰ πάντων κατελθεῖν καὶ πρὸς τοὺς"
+    },
+    {
+      "ref": "Acts 9:38",
+      "form": "διελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 38,
+      "left_context": "ἄνδρας⸃ πρὸς αὐτὸν παρακαλοῦντες· Μὴ ⸀ὀκνήσῃς",
+      "right_context": "ἕως ⸀ἡμῶν·"
+    },
+    {
+      "ref": "Acts 10:38",
+      "form": "διῆλθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 38,
+      "left_context": "θεὸς πνεύματι ἁγίῳ καὶ δυνάμει, ὃς",
+      "right_context": "εὐεργετῶν καὶ ἰώμενος πάντας τοὺς καταδυναστευομένους"
+    },
+    {
+      "ref": "Acts 11:19",
+      "form": "διῆλθον",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 19,
+      "left_context": "τῆς θλίψεως τῆς γενομένης ἐπὶ Στεφάνῳ",
+      "right_context": "ἕως Φοινίκης καὶ Κύπρου καὶ Ἀντιοχείας"
+    },
+    {
+      "ref": "Acts 12:10",
+      "form": "διελθόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 10,
+      "left_context": "",
+      "right_context": "δὲ πρώτην φυλακὴν καὶ δευτέραν ἦλθαν"
+    },
+    {
+      "ref": "Acts 13:6",
+      "form": "διελθόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "δὲ ⸀ὅλην τὴν νῆσον ἄχρι Πάφου"
+    },
+    {
+      "ref": "Acts 13:14",
+      "form": "διελθόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 14,
+      "left_context": "αὐτοὶ δὲ",
+      "right_context": "ἀπὸ τῆς Πέργης παρεγένοντο εἰς Ἀντιόχειαν"
+    },
+    {
+      "ref": "Acts 14:24",
+      "form": "διελθόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 24,
+      "left_context": "καὶ",
+      "right_context": "τὴν Πισιδίαν ἦλθον εἰς ⸀τὴν Παμφυλίαν,"
+    },
+    {
+      "ref": "Acts 15:3",
+      "form": "διήρχοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 3,
+      "left_context": "μὲν οὖν προπεμφθέντες ὑπὸ τῆς ἐκκλησίας",
+      "right_context": "τήν ⸀τε Φοινίκην καὶ Σαμάρειαν ἐκδιηγούμενοι"
+    },
+    {
+      "ref": "Acts 15:41",
+      "form": "διήρχετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 41,
+      "left_context": "",
+      "right_context": "δὲ τὴν Συρίαν καὶ ⸀τὴν Κιλικίαν"
+    },
+    {
+      "ref": "Acts 16:6",
+      "form": "⸀Διῆλθον",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 6,
+      "left_context": "",
+      "right_context": "δὲ τὴν Φρυγίαν ⸀καὶ Γαλατικὴν χώραν,"
+    },
+    {
+      "ref": "Acts 17:23",
+      "form": "διερχόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 23,
+      "left_context": "",
+      "right_context": "γὰρ καὶ ἀναθεωρῶν τὰ σεβάσματα ὑμῶν"
+    },
+    {
+      "ref": "Acts 18:23",
+      "form": "διερχόμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 23,
+      "left_context": "καὶ ποιήσας χρόνον τινὰ ἐξῆλθεν,",
+      "right_context": "καθεξῆς τὴν Γαλατικὴν χώραν καὶ Φρυγίαν,"
+    },
+    {
+      "ref": "Acts 18:27",
+      "form": "διελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 27,
+      "left_context": "βουλομένου δὲ αὐτοῦ",
+      "right_context": "εἰς τὴν Ἀχαΐαν προτρεψάμενοι οἱ ἀδελφοὶ"
+    },
+    {
+      "ref": "Acts 19:1",
+      "form": "διελθόντα",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 1,
+      "left_context": "τὸν Ἀπολλῶ εἶναι ἐν Κορίνθῳ Παῦλον",
+      "right_context": "τὰ ἀνωτερικὰ μέρη ⸀ἐλθεῖν εἰς Ἔφεσον"
+    },
+    {
+      "ref": "Acts 19:21",
+      "form": "διελθὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 21,
+      "left_context": "ἔθετο ὁ Παῦλος ἐν τῷ πνεύματι",
+      "right_context": "τὴν Μακεδονίαν καὶ Ἀχαΐαν πορεύεσθαι εἰς"
+    },
+    {
+      "ref": "Acts 20:2",
+      "form": "διελθὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "δὲ τὰ μέρη ἐκεῖνα καὶ παρακαλέσας"
+    },
+    {
+      "ref": "Acts 20:25",
+      "form": "διῆλθον",
+      "morph": "V-A-A-I-1S",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 25,
+      "left_context": "πρόσωπόν μου ὑμεῖς πάντες ἐν οἷς",
+      "right_context": "κηρύσσων τὴν ⸀βασιλείαν."
+    },
+    {
+      "ref": "John 4:4",
+      "form": "διέρχεσθαι",
+      "morph": "V-P-M-N",
+      "book": "John",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "ἔδει δὲ αὐτὸν",
+      "right_context": "διὰ τῆς Σαμαρείας."
+    },
+    {
+      "ref": "John 4:15",
+      "form": "⸀διέρχωμαι",
+      "morph": "V-P-M-S-1S",
+      "book": "John",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "τὸ ὕδωρ, ἵνα μὴ διψῶ μηδὲ",
+      "right_context": "ἐνθάδε ἀντλεῖν."
+    },
+    {
+      "ref": "Luke 2:15",
+      "form": "Διέλθωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "ἄγγελοι, ⸀οἱ ποιμένες ⸀ἐλάλουν πρὸς ἀλλήλους·",
+      "right_context": "δὴ ἕως Βηθλέεμ καὶ ἴδωμεν τὸ"
+    },
+    {
+      "ref": "Luke 2:35",
+      "form": "διελεύσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 35,
+      "left_context": "καὶ σοῦ ⸀δὲ αὐτῆς τὴν ψυχὴν",
+      "right_context": "ῥομφαία, ὅπως ἂν ἀποκαλυφθῶσιν ἐκ πολλῶν"
+    },
+    {
+      "ref": "Luke 4:30",
+      "form": "διελθὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 30,
+      "left_context": "αὐτὸς δὲ",
+      "right_context": "διὰ μέσου αὐτῶν ἐπορεύετο."
+    },
+    {
+      "ref": "Luke 5:15",
+      "form": "διήρχετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 15,
+      "left_context": "",
+      "right_context": "δὲ μᾶλλον ὁ λόγος περὶ αὐτοῦ,"
+    },
+    {
+      "ref": "Luke 8:22",
+      "form": "Διέλθωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 22,
+      "left_context": "μαθηταὶ αὐτοῦ, καὶ εἶπεν πρὸς αὐτούς·",
+      "right_context": "εἰς τὸ πέραν τῆς λίμνης, καὶ"
+    },
+    {
+      "ref": "Luke 9:6",
+      "form": "διήρχοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 6,
+      "left_context": "ἐξερχόμενοι δὲ",
+      "right_context": "κατὰ τὰς κώμας εὐαγγελιζόμενοι καὶ θεραπεύοντες"
+    },
+    {
+      "ref": "Luke 11:24",
+      "form": "διέρχεται",
+      "morph": "V-P-M-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 24,
+      "left_context": "ἀκάθαρτον πνεῦμα ἐξέλθῃ ἀπὸ τοῦ ἀνθρώπου,",
+      "right_context": "δι’ ἀνύδρων τόπων ζητοῦν ἀνάπαυσιν, καὶ"
+    },
+    {
+      "ref": "Luke 17:11",
+      "form": "διήρχετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 11,
+      "left_context": "τῷ ⸀πορεύεσθαι εἰς Ἰερουσαλὴμ καὶ αὐτὸς",
+      "right_context": "διὰ ⸀μέσον Σαμαρείας καὶ Γαλιλαίας."
+    },
+    {
+      "ref": "Luke 19:1",
+      "form": "διήρχετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 1,
+      "left_context": "Καὶ εἰσελθὼν",
+      "right_context": "τὴν Ἰεριχώ."
+    },
+    {
+      "ref": "Luke 19:4",
+      "form": "διέρχεσθαι.",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 4,
+      "left_context": "ἵνα ἴδῃ αὐτόν, ὅτι ἐκείνης ἤμελλεν",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 4:35",
+      "form": "Διέλθωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 35,
+      "left_context": "ἐν ἐκείνῃ τῇ ἡμέρᾳ ὀψίας γενομένης·",
+      "right_context": "εἰς τὸ πέραν."
+    },
+    {
+      "ref": "Mark 10:25",
+      "form": "⸀διελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 25,
+      "left_context": "κάμηλον διὰ ⸂τῆς τρυμαλιᾶς τῆς⸃ ῥαφίδος",
+      "right_context": "ἢ πλούσιον εἰς τὴν βασιλείαν τοῦ"
+    },
+    {
+      "ref": "Matthew 12:43",
+      "form": "διέρχεται",
+      "morph": "V-P-M-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 43,
+      "left_context": "ἀκάθαρτον πνεῦμα ἐξέλθῃ ἀπὸ τοῦ ἀνθρώπου,",
+      "right_context": "δι’ ἀνύδρων τόπων ζητοῦν ἀνάπαυσιν, καὶ"
+    },
+    {
+      "ref": "Romans 5:12",
+      "form": "διῆλθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 12,
+      "left_context": "οὕτως εἰς πάντας ἀνθρώπους ὁ θάνατος",
+      "right_context": "ἐφ’ ᾧ πάντες ἥμαρτον—"
+    }
+  ],
+  "books": {
+    "Acts": 20,
+    "Luke": 10,
+    "1 Corinthians": 3,
+    "John": 2,
+    "Mark": 2,
+    "2 Corinthians": 1,
+    "Hebrews": 1,
+    "Matthew": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Μακεδονία",
+      "display": "Macedonia",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγελίζω",
+      "display": "evangelizando",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Σαμάρεια",
+      "display": "Samaria",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "ir",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διέρχομαι",
+      "display": "paso",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Φοινίκη",
+      "display": "de·Fenicia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλατικός",
+      "display": "Gálata",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀχαΐα",
+      "display": "Acaya",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέρος",
+      "display": "partes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vamos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "de·medio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πέραν",
+      "display": "al·otro·lado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνυδρος",
+      "display": "sin·agua",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "de·lugares",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάπαυσις",
+      "display": "descanso",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 4:15",
+      "form": "⸀διέρχωμαι",
+      "morph": "V-P-M-S-1S",
+      "clause_text": "μοι τοῦτο τὸ ὕδωρ, ἵνα μὴ διψῶ μηδὲ ⸀διέρχωμαι ἐνθάδε ἀντλεῖν.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 9:38",
+      "negator": "Μὴ",
+      "clause_text": "ἀπέστειλαν ⸂δύο ἄνδρας⸃ πρὸς αὐτὸν παρακαλοῦντες· Μὴ ⸀ὀκνήσῃς διελθεῖν ἕως ⸀ἡμῶν·"
+    },
+    {
+      "ref": "John 4:15",
+      "negator": "μὴ",
+      "clause_text": "μοι τοῦτο τὸ ὕδωρ, ἵνα μὴ διψῶ μηδὲ ⸀διέρχωμαι ἐνθάδε ἀντλεῖν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:38",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 11:19",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 12:10",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 13:14",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 13:6",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 14:24",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 15:3",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 15:41",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

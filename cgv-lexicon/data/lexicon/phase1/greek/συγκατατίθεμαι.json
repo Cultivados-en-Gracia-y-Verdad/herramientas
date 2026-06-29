@@ -1,0 +1,74 @@
+{
+  "lemma": "συγκατατίθεμαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συγκατατεθειμένος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 23:51",
+      "form": "συγκατατεθειμένος",
+      "morph": "V-X-M-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 51,
+      "left_context": "οὗτος οὐκ ἦν",
+      "right_context": "τῇ βουλῇ καὶ τῇ πράξει αὐτῶν—"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βουλή",
+      "display": "consejo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρᾶξις",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 23:51",
+      "negator": "οὐκ",
+      "clause_text": "οὗτος οὐκ ἦν συγκατατεθειμένος τῇ βουλῇ καὶ τῇ πράξει αὐτῶν— ἀπὸ Ἁριμαθαίας"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 23:51",
+      "reason": "occurs near βουλή, πρᾶξις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

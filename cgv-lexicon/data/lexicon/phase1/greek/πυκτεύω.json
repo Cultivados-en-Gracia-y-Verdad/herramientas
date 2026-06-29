@@ -1,0 +1,92 @@
+{
+  "lemma": "πυκτεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "πυκτεύω",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:26",
+      "form": "πυκτεύω",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 26,
+      "left_context": "οὕτως τρέχω ὡς οὐκ ἀδήλως, οὕτως",
+      "right_context": "ὡς οὐκ ἀέρα δέρων·"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τρέχω",
+      "display": "corro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδήλως",
+      "display": "inciertamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀήρ",
+      "display": "aire",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέρω",
+      "display": "golpeando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 9:26",
+      "negator": "οὐκ",
+      "clause_text": "ἐγὼ τοίνυν οὕτως τρέχω ὡς οὐκ ἀδήλως, οὕτως πυκτεύω ὡς οὐκ ἀέρα δέρων·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:26",
+      "reason": "occurs near δέρω, οὕτω(ς), τρέχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

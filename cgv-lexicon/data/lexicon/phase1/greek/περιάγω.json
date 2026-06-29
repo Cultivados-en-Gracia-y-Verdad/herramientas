@@ -1,0 +1,276 @@
+{
+  "lemma": "περιάγω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "περιῆγεν",
+      "count": 3
+    },
+    {
+      "form": "περιάγειν,",
+      "count": 1
+    },
+    {
+      "form": "περιάγων",
+      "count": 1
+    },
+    {
+      "form": "περιάγετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 1,
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 3,
+      "imperfect": 3
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:5",
+      "form": "περιάγειν,",
+      "morph": "V-P-A-N",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 5,
+      "left_context": "μὴ οὐκ ἔχομεν ἐξουσίαν ἀδελφὴν γυναῖκα",
+      "right_context": "ὡς καὶ οἱ λοιποὶ ἀπόστολοι καὶ"
+    },
+    {
+      "ref": "Acts 13:11",
+      "form": "περιάγων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 11,
+      "left_context": "ἐπ’ αὐτὸν ἀχλὺς καὶ σκότος, καὶ",
+      "right_context": "ἐζήτει χειραγωγούς."
+    },
+    {
+      "ref": "Mark 6:6",
+      "form": "περιῆγεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "⸀ἐθαύμαζεν διὰ τὴν ἀπιστίαν αὐτῶν. Καὶ",
+      "right_context": "τὰς κώμας κύκλῳ διδάσκων."
+    },
+    {
+      "ref": "Matthew 4:23",
+      "form": "περιῆγεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 23,
+      "left_context": "Καὶ",
+      "right_context": "⸂ἐν ὅλῃ τῇ Γαλιλαίᾳ⸃, διδάσκων ἐν"
+    },
+    {
+      "ref": "Matthew 9:35",
+      "form": "περιῆγεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 35,
+      "left_context": "Καὶ",
+      "right_context": "ὁ Ἰησοῦς τὰς πόλεις πάσας καὶ"
+    },
+    {
+      "ref": "Matthew 23:15",
+      "form": "περιάγετε",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 15,
+      "left_context": "ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι",
+      "right_context": "τὴν θάλασσαν καὶ τὴν ξηρὰν ποιῆσαι"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "1 Corinthians": 1,
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφή",
+      "display": "hermana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "apóstoles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀχλύς",
+      "display": "tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκότος",
+      "display": "tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χειραγωγός",
+      "display": "guías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπιστία",
+      "display": "incredulidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldeas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύκλῳ",
+      "display": "alrededor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλιλαία",
+      "display": "Galilea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραμματεύς",
+      "display": "escribas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποκριτής",
+      "display": "hipócritas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξηρός",
+      "display": "seca",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 23:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 4:23",
+      "reason": "occurs near διδάσκω"
+    },
+    {
+      "ref": "Matthew 9:35",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 9:5",
+      "reason": "occurs near γυνή, λοιπός, ἀδελφή"
+    },
+    {
+      "ref": "Acts 13:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 6:6",
+      "reason": "occurs near διδάσκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

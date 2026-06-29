@@ -1,0 +1,130 @@
+{
+  "lemma": "δειγματίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐδειγμάτισεν",
+      "count": 1
+    },
+    {
+      "form": "⸀δειγματίσαι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:15",
+      "form": "ἐδειγμάτισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "ἀπεκδυσάμενος τὰς ἀρχὰς καὶ τὰς ἐξουσίας",
+      "right_context": "ἐν παρρησίᾳ, θριαμβεύσας αὐτοὺς ἐν αὐτῷ."
+    },
+    {
+      "ref": "Matthew 1:19",
+      "form": "⸀δειγματίσαι,",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "δίκαιος ὢν καὶ μὴ θέλων αὐτὴν",
+      "right_context": "ἐβουλήθη λάθρᾳ ἀπολῦσαι αὐτήν."
+    }
+  ],
+  "books": {
+    "Colossians": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀρχή",
+      "display": "principios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησία",
+      "display": "franqueza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θριαμβεύω",
+      "display": "triunfado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "fue querido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λάθρᾳ",
+      "display": "secretamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολύω",
+      "display": "despedir",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 1:19",
+      "negator": "μὴ",
+      "clause_text": "ἀνὴρ αὐτῆς, δίκαιος ὢν καὶ μὴ θέλων αὐτὴν ⸀δειγματίσαι, ἐβουλήθη λάθρᾳ ἀπολῦσαι αὐτήν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 2:15",
+      "reason": "occurs near θριαμβεύω, παρρησία, ἀρχή"
+    },
+    {
+      "ref": "Matthew 1:19",
+      "reason": "occurs near θέλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

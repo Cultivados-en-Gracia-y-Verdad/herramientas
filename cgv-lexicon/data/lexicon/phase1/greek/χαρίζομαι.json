@@ -1,0 +1,566 @@
+{
+  "lemma": "χαρίζομαι",
+  "language": "greek",
+  "total_occurrences": 23,
+  "forms": [
+    {
+      "form": "ἐχαρίσατο",
+      "count": 3
+    },
+    {
+      "form": "κεχάρισμαι,",
+      "count": 2
+    },
+    {
+      "form": "χαριζόμενοι",
+      "count": 2
+    },
+    {
+      "form": "ἐχαρίσατο.",
+      "count": 2
+    },
+    {
+      "form": "χαρισθέντα",
+      "count": 1
+    },
+    {
+      "form": "χαρίσασθαι",
+      "count": 1
+    },
+    {
+      "form": "χαρίζεσθε,",
+      "count": 1
+    },
+    {
+      "form": "χαρίσασθέ",
+      "count": 1
+    },
+    {
+      "form": "χαρισάμενος",
+      "count": 1
+    },
+    {
+      "form": "χαρισθήσομαι",
+      "count": 1
+    },
+    {
+      "form": "ἐχαρίσθη",
+      "count": 1
+    },
+    {
+      "form": "κεχάρισται",
+      "count": 1
+    },
+    {
+      "form": "χαρισθῆναι",
+      "count": 1
+    },
+    {
+      "form": "χαρίσασθαι·",
+      "count": 1
+    },
+    {
+      "form": "χαρίζεσθαί",
+      "count": 1
+    },
+    {
+      "form": "κεχάρισταί",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐχαρίσατο",
+      "count": 1
+    },
+    {
+      "form": "χαρίσεται;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "infinitive": 4,
+      "indicative": 14,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 13,
+      "present": 4,
+      "perfect": 4,
+      "future": 2
+    },
+    "voices": {
+      "passive": 4,
+      "middle": 19
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 2:12",
+      "form": "χαρισθέντα",
+      "morph": "V-A-P-P",
+      "book": "1 Corinthians",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "ἵνα εἰδῶμεν τὰ ὑπὸ τοῦ θεοῦ",
+      "right_context": "ἡμῖν·"
+    },
+    {
+      "ref": "2 Corinthians 2:7",
+      "form": "χαρίσασθαι",
+      "morph": "V-A-M-N",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "ὥστε τοὐναντίον ⸀μᾶλλον ὑμᾶς",
+      "right_context": "καὶ παρακαλέσαι, μή πως τῇ περισσοτέρᾳ"
+    },
+    {
+      "ref": "2 Corinthians 2:10",
+      "form": "χαρίζεσθε,",
+      "morph": "V-P-M-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "ᾧ δέ τι",
+      "right_context": "κἀγώ· καὶ γὰρ ἐγὼ ⸂ὃ κεχάρισμαι,"
+    },
+    {
+      "ref": "2 Corinthians 2:10",
+      "form": "κεχάρισμαι,",
+      "morph": "V-X-M-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "χαρίζεσθε, κἀγώ· καὶ γὰρ ἐγὼ ⸂ὃ",
+      "right_context": "εἴ τι⸃ κεχάρισμαι, δι’ ὑμᾶς ἐν"
+    },
+    {
+      "ref": "2 Corinthians 2:10",
+      "form": "κεχάρισμαι,",
+      "morph": "V-X-M-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "γὰρ ἐγὼ ⸂ὃ κεχάρισμαι, εἴ τι⸃",
+      "right_context": "δι’ ὑμᾶς ἐν προσώπῳ Χριστοῦ,"
+    },
+    {
+      "ref": "2 Corinthians 12:13",
+      "form": "χαρίσασθέ",
+      "morph": "V-A-M-D-2P",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "ὅτι αὐτὸς ἐγὼ οὐ κατενάρκησα ὑμῶν;",
+      "right_context": "μοι τὴν ἀδικίαν ταύτην."
+    },
+    {
+      "ref": "Colossians 2:13",
+      "form": "χαρισάμενος",
+      "morph": "V-A-M-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "σαρκὸς ὑμῶν, συνεζωοποίησεν ὑμᾶς σὺν αὐτῷ·",
+      "right_context": "ἡμῖν πάντα τὰ παραπτώματα,"
+    },
+    {
+      "ref": "Colossians 3:13",
+      "form": "χαριζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "ἀνεχόμενοι ἀλλήλων καὶ",
+      "right_context": "ἑαυτοῖς ἐάν τις πρός τινα ἔχῃ"
+    },
+    {
+      "ref": "Colossians 3:13",
+      "form": "ἐχαρίσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "ἔχῃ μομφήν· καθὼς καὶ ὁ ⸀κύριος",
+      "right_context": "ὑμῖν οὕτως καὶ ὑμεῖς·"
+    },
+    {
+      "ref": "Ephesians 4:32",
+      "form": "χαριζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 32,
+      "left_context": "⸀γίνεσθε εἰς ἀλλήλους χρηστοί, εὔσπλαγχνοι,",
+      "right_context": "ἑαυτοῖς καθὼς καὶ ὁ θεὸς ἐν"
+    },
+    {
+      "ref": "Ephesians 4:32",
+      "form": "ἐχαρίσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 32,
+      "left_context": "καθὼς καὶ ὁ θεὸς ἐν Χριστῷ",
+      "right_context": "⸀ὑμῖν."
+    },
+    {
+      "ref": "Philemon 1:22",
+      "form": "χαρισθήσομαι",
+      "morph": "V-F-P-I-1S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "γὰρ ὅτι διὰ τῶν προσευχῶν ὑμῶν",
+      "right_context": "ὑμῖν."
+    },
+    {
+      "ref": "Philippians 1:29",
+      "form": "ἐχαρίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 29,
+      "left_context": "ὅτι ὑμῖν",
+      "right_context": "τὸ ὑπὲρ Χριστοῦ, οὐ μόνον τὸ"
+    },
+    {
+      "ref": "Philippians 2:9",
+      "form": "ἐχαρίσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "καὶ ὁ θεὸς αὐτὸν ὑπερύψωσεν, καὶ",
+      "right_context": "αὐτῷ ⸀τὸ ὄνομα τὸ ὑπὲρ πᾶν"
+    },
+    {
+      "ref": "Galatians 3:18",
+      "form": "κεχάρισται",
+      "morph": "V-X-M-I-3S",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "ἐπαγγελίας· τῷ δὲ Ἀβραὰμ δι’ ἐπαγγελίας",
+      "right_context": "ὁ θεός."
+    },
+    {
+      "ref": "Acts 3:14",
+      "form": "χαρισθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "δίκαιον ἠρνήσασθε καὶ ᾐτήσασθε ἄνδρα φονέα",
+      "right_context": "ὑμῖν,"
+    },
+    {
+      "ref": "Acts 25:11",
+      "form": "χαρίσασθαι·",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 11,
+      "left_context": "κατηγοροῦσίν μου, οὐδείς με δύναται αὐτοῖς",
+      "right_context": "Καίσαρα ἐπικαλοῦμαι."
+    },
+    {
+      "ref": "Acts 25:16",
+      "form": "χαρίζεσθαί",
+      "morph": "V-P-M-N",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 16,
+      "left_context": "ἀπεκρίθην ὅτι οὐκ ἔστιν ἔθος Ῥωμαίοις",
+      "right_context": "τινα ⸀ἄνθρωπον πρὶν ἢ ὁ κατηγορούμενος"
+    },
+    {
+      "ref": "Acts 27:24",
+      "form": "κεχάρισταί",
+      "morph": "V-X-M-I-3S",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 24,
+      "left_context": "Καίσαρί σε δεῖ παραστῆναι, καὶ ἰδοὺ",
+      "right_context": "σοι ὁ θεὸς πάντας τοὺς πλέοντας"
+    },
+    {
+      "ref": "Luke 7:21",
+      "form": "⸀ἐχαρίσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 21,
+      "left_context": "καὶ πνευμάτων πονηρῶν, καὶ τυφλοῖς πολλοῖς",
+      "right_context": "βλέπειν."
+    },
+    {
+      "ref": "Luke 7:42",
+      "form": "ἐχαρίσατο.",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 42,
+      "left_context": "μὴ ⸀ἐχόντων αὐτῶν ἀποδοῦναι ἀμφοτέροις",
+      "right_context": "τίς οὖν ⸀αὐτῶν πλεῖον ⸂ἀγαπήσει αὐτόν⸃;"
+    },
+    {
+      "ref": "Luke 7:43",
+      "form": "ἐχαρίσατο.",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 43,
+      "left_context": "εἶπεν· Ὑπολαμβάνω ὅτι ᾧ τὸ πλεῖον",
+      "right_context": "ὁ δὲ εἶπεν αὐτῷ· Ὀρθῶς ἔκρινας."
+    },
+    {
+      "ref": "Romans 8:32",
+      "form": "χαρίσεται;",
+      "morph": "V-F-M-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "καὶ σὺν αὐτῷ τὰ πάντα ἡμῖν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Corinthians": 5,
+    "Acts": 4,
+    "Colossians": 3,
+    "Luke": 3,
+    "Ephesians": 2,
+    "Philippians": 2,
+    "1 Corinthians": 1,
+    "Philemon": 1,
+    "Galatians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χαρίζομαι",
+      "display": "he perdonado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "sabamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοὐναντίον",
+      "display": "al·contrario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταναρκάω",
+      "display": "ser·carga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικία",
+      "display": "injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συζωοποιέω",
+      "display": "dar·vida·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράπτωμα",
+      "display": "ofensas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνέχομαι",
+      "display": "soportando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μομφή",
+      "display": "queja",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρηστός",
+      "display": "benignos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὔσπλαγχνος",
+      "display": "misericordiosos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Corinthians 12:13",
+      "form": "χαρίσασθέ",
+      "morph": "V-A-M-D-2P",
+      "clause_text": "εἰ μὴ ὅτι αὐτὸς ἐγὼ οὐ κατενάρκησα ὑμῶν; χαρίσασθέ μοι τὴν ἀδικίαν ταύτην."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 2:7",
+      "negator": "μή",
+      "clause_text": "ὥστε τοὐναντίον ⸀μᾶλλον ὑμᾶς χαρίσασθαι καὶ παρακαλέσαι, μή πως τῇ περισσοτέρᾳ λύπῃ καταποθῇ"
+    },
+    {
+      "ref": "2 Corinthians 12:13",
+      "negator": "οὐ",
+      "clause_text": "εἰ μὴ ὅτι αὐτὸς ἐγὼ οὐ κατενάρκησα ὑμῶν; χαρίσασθέ μοι τὴν ἀδικίαν ταύτην."
+    },
+    {
+      "ref": "Philippians 1:29",
+      "negator": "οὐ",
+      "clause_text": "ὅτι ὑμῖν ἐχαρίσθη τὸ ὑπὲρ Χριστοῦ, οὐ μόνον τὸ εἰς αὐτὸν"
+    },
+    {
+      "ref": "Acts 25:16",
+      "negator": "οὐκ",
+      "clause_text": "πρὸς οὓς ἀπεκρίθην ὅτι οὐκ ἔστιν ἔθος Ῥωμαίοις χαρίζεσθαί τινα ⸀ἄνθρωπον πρὶν ἢ ὁ κατηγορούμενος κατὰ πρόσωπον"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 12:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 2:10",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "2 Corinthians 2:7",
+      "reason": "frequent in 2 Corinthians"
+    },
+    {
+      "ref": "Acts 25:11",
+      "reason": "occurs near χαρίζομαι"
+    },
+    {
+      "ref": "Acts 25:16",
+      "reason": "occurs near χαρίζομαι"
+    },
+    {
+      "ref": "Acts 27:24",
+      "reason": "occurs near θεός, χαρίζομαι"
+    },
+    {
+      "ref": "Acts 3:14",
+      "reason": "occurs near χαρίζομαι"
+    },
+    {
+      "ref": "Colossians 2:13",
+      "reason": "occurs near χαρίζομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

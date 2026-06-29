@@ -1,0 +1,791 @@
+{
+  "lemma": "πάσχω",
+  "language": "greek",
+  "total_occurrences": 42,
+  "forms": [
+    {
+      "form": "παθεῖν",
+      "count": 10
+    },
+    {
+      "form": "ἔπαθεν",
+      "count": 3
+    },
+    {
+      "form": "πάσχων",
+      "count": 2
+    },
+    {
+      "form": "πάσχοντες",
+      "count": 2
+    },
+    {
+      "form": "πάσχειν",
+      "count": 2
+    },
+    {
+      "form": "ἐπάθετε",
+      "count": 2
+    },
+    {
+      "form": "πάσχει",
+      "count": 1
+    },
+    {
+      "form": "πάσχοιτε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἔπαθεν,",
+      "count": 1
+    },
+    {
+      "form": "⸀παθόντος",
+      "count": 1
+    },
+    {
+      "form": "⸀παθὼν",
+      "count": 1
+    },
+    {
+      "form": "πασχέτω",
+      "count": 1
+    },
+    {
+      "form": "παθόντας",
+      "count": 1
+    },
+    {
+      "form": "πάσχομεν,",
+      "count": 1
+    },
+    {
+      "form": "πάσχετε,",
+      "count": 1
+    },
+    {
+      "form": "πάσχω,",
+      "count": 1
+    },
+    {
+      "form": "⸀πάσχειν.",
+      "count": 1
+    },
+    {
+      "form": "πάσχειν),",
+      "count": 1
+    },
+    {
+      "form": "πέπονθεν",
+      "count": 1
+    },
+    {
+      "form": "ἔπαθεν.",
+      "count": 1
+    },
+    {
+      "form": "παθεῖν.",
+      "count": 1
+    },
+    {
+      "form": "πεπόνθασιν;",
+      "count": 1
+    },
+    {
+      "form": "παθεῖν·",
+      "count": 1
+    },
+    {
+      "form": "παθοῦσα",
+      "count": 1
+    },
+    {
+      "form": "πάθῃ",
+      "count": 1
+    },
+    {
+      "form": "⸀πάσχει,",
+      "count": 1
+    },
+    {
+      "form": "ἔπαθον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 15,
+      "participle": 8,
+      "optative": 1,
+      "infinitive": 16,
+      "imperative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 15,
+      "aorist": 25,
+      "perfect": 2
+    },
+    "voices": {
+      "active": 42
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:26",
+      "form": "πάσχει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 26,
+      "left_context": "καὶ ⸀εἴτε",
+      "right_context": "ἓν μέλος, συμπάσχει πάντα τὰ μέλη·"
+    },
+    {
+      "ref": "1 Peter 2:19",
+      "form": "πάσχων",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "διὰ συνείδησιν θεοῦ ὑποφέρει τις λύπας",
+      "right_context": "ἀδίκως·"
+    },
+    {
+      "ref": "1 Peter 2:20",
+      "form": "πάσχοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "κολαφιζόμενοι ὑπομενεῖτε; ἀλλ’ εἰ ἀγαθοποιοῦντες καὶ",
+      "right_context": "ὑπομενεῖτε, τοῦτο χάρις παρὰ θεῷ."
+    },
+    {
+      "ref": "1 Peter 2:21",
+      "form": "ἔπαθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "τοῦτο γὰρ ἐκλήθητε, ὅτι καὶ Χριστὸς",
+      "right_context": "ὑπὲρ ⸀ὑμῶν, ὑμῖν ὑπολιμπάνων ὑπογραμμὸν ἵνα"
+    },
+    {
+      "ref": "1 Peter 2:23",
+      "form": "πάσχων",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "ὃς λοιδορούμενος οὐκ ἀντελοιδόρει,",
+      "right_context": "οὐκ ἠπείλει, παρεδίδου δὲ τῷ κρίνοντι"
+    },
+    {
+      "ref": "1 Peter 3:14",
+      "form": "πάσχοιτε",
+      "morph": "V-P-A-O-2P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "ἀλλ’ εἰ καὶ",
+      "right_context": "διὰ δικαιοσύνην, μακάριοι. τὸν δὲ φόβον"
+    },
+    {
+      "ref": "1 Peter 3:17",
+      "form": "πάσχειν",
+      "morph": "V-P-A-N",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "εἰ θέλοι τὸ θέλημα τοῦ θεοῦ,",
+      "right_context": "ἢ κακοποιοῦντας."
+    },
+    {
+      "ref": "1 Peter 3:18",
+      "form": "⸀ἔπαθεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "ὅτι καὶ Χριστὸς ἅπαξ περὶ ἁμαρτιῶν",
+      "right_context": "δίκαιος ὑπὲρ ἀδίκων, ἵνα ⸀ὑμᾶς προσαγάγῃ"
+    },
+    {
+      "ref": "1 Peter 4:1",
+      "form": "⸀παθόντος",
+      "morph": "V-A-A-P",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "Χριστοῦ οὖν",
+      "right_context": "σαρκὶ καὶ ὑμεῖς τὴν αὐτὴν ἔννοιαν"
+    },
+    {
+      "ref": "1 Peter 4:1",
+      "form": "⸀παθὼν",
+      "morph": "V-A-A-P",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "τὴν αὐτὴν ἔννοιαν ὁπλίσασθε, ὅτι ὁ",
+      "right_context": "σαρκὶ πέπαυται ⸀ἁμαρτίας,"
+    },
+    {
+      "ref": "1 Peter 4:15",
+      "form": "πασχέτω",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "μὴ γάρ τις ὑμῶν",
+      "right_context": "ὡς φονεὺς ἢ κλέπτης ἢ κακοποιὸς"
+    },
+    {
+      "ref": "1 Peter 4:19",
+      "form": "πάσχοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 19,
+      "left_context": "ὥστε καὶ οἱ",
+      "right_context": "κατὰ τὸ θέλημα τοῦ ⸀θεοῦ πιστῷ"
+    },
+    {
+      "ref": "1 Peter 5:10",
+      "form": "παθόντας",
+      "morph": "V-A-A-P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "αἰώνιον αὐτοῦ δόξαν ἐν ⸀Χριστῷ, ὀλίγον",
+      "right_context": "αὐτὸς ⸀καταρτίσει, στηρίξει, σθενώσει, ⸀θεμελιώσει."
+    },
+    {
+      "ref": "1 Thessalonians 2:14",
+      "form": "ἐπάθετε",
+      "morph": "V-A-A-I-2P",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "ἐν Χριστῷ Ἰησοῦ, ὅτι τὰ αὐτὰ",
+      "right_context": "καὶ ὑμεῖς ὑπὸ τῶν ἰδίων συμφυλετῶν"
+    },
+    {
+      "ref": "2 Corinthians 1:6",
+      "form": "πάσχομεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "τῶν αὐτῶν παθημάτων ὧν καὶ ἡμεῖς",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Thessalonians 1:5",
+      "form": "πάσχετε,",
+      "morph": "V-P-A-I-2P",
+      "book": "2 Thessalonians",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "βασιλείας τοῦ θεοῦ, ὑπὲρ ἧς καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Timothy 1:12",
+      "form": "πάσχω,",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "δι’ ἣν αἰτίαν καὶ ταῦτα",
+      "right_context": "ἀλλ’ οὐκ ἐπαισχύνομαι, οἶδα γὰρ ᾧ"
+    },
+    {
+      "ref": "Revelation 2:10",
+      "form": "⸀πάσχειν.",
+      "morph": "V-P-A-N",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "⸀μηδὲν φοβοῦ ἃ μέλλεις",
+      "right_context": "⸀ἰδοὺ μέλλει ⸀βάλλειν ὁ διάβολος ἐξ"
+    },
+    {
+      "ref": "Philippians 1:29",
+      "form": "πάσχειν),",
+      "morph": "V-P-A-N",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 29,
+      "left_context": "πιστεύειν ἀλλὰ καὶ τὸ ὑπὲρ αὐτοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 3:4",
+      "form": "ἐπάθετε",
+      "morph": "V-A-A-I-2P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "τοσαῦτα",
+      "right_context": "εἰκῇ; εἴ γε καὶ εἰκῇ."
+    },
+    {
+      "ref": "Hebrews 2:18",
+      "form": "πέπονθεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "ἐν ᾧ γὰρ",
+      "right_context": "αὐτὸς πειρασθείς, δύναται τοῖς πειραζομένοις βοηθῆσαι."
+    },
+    {
+      "ref": "Hebrews 5:8",
+      "form": "ἔπαθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "καίπερ ὢν υἱός, ἔμαθεν ἀφ’ ὧν",
+      "right_context": "τὴν ὑπακοήν,"
+    },
+    {
+      "ref": "Hebrews 9:26",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 26,
+      "left_context": "ἐπεὶ ἔδει αὐτὸν πολλάκις",
+      "right_context": "ἀπὸ καταβολῆς κόσμου· ⸀νυνὶ δὲ ἅπαξ"
+    },
+    {
+      "ref": "Hebrews 13:12",
+      "form": "ἔπαθεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 12,
+      "left_context": "αἵματος τὸν λαόν, ἔξω τῆς πύλης",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 1:3",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "καὶ παρέστησεν ἑαυτὸν ζῶντα μετὰ τὸ",
+      "right_context": "αὐτὸν ἐν πολλοῖς τεκμηρίοις, δι’ ἡμερῶν"
+    },
+    {
+      "ref": "Acts 3:18",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "προκατήγγειλεν διὰ στόματος πάντων τῶν ⸀προφητῶν",
+      "right_context": "τὸν χριστὸν ⸀αὐτοῦ ἐπλήρωσεν οὕτως."
+    },
+    {
+      "ref": "Acts 9:16",
+      "form": "παθεῖν.",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 16,
+      "left_context": "δεῖ αὐτὸν ὑπὲρ τοῦ ὀνόματός μου",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 17:3",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 3,
+      "left_context": "καὶ παρατιθέμενος ὅτι τὸν χριστὸν ἔδει",
+      "right_context": "καὶ ἀναστῆναι ἐκ νεκρῶν, καὶ ὅτι"
+    },
+    {
+      "ref": "Acts 28:5",
+      "form": "ἔπαθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 5,
+      "left_context": "ἀποτινάξας τὸ θηρίον εἰς τὸ πῦρ",
+      "right_context": "οὐδὲν κακόν·"
+    },
+    {
+      "ref": "Luke 9:22",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "Δεῖ τὸν υἱὸν τοῦ ἀνθρώπου πολλὰ",
+      "right_context": "καὶ ἀποδοκιμασθῆναι ἀπὸ τῶν πρεσβυτέρων καὶ"
+    },
+    {
+      "ref": "Luke 13:2",
+      "form": "πεπόνθασιν;",
+      "morph": "V-X-A-I-3P",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "πάντας τοὺς Γαλιλαίους ἐγένοντο, ὅτι ⸀ταῦτα",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 17:25",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 25,
+      "left_context": "πρῶτον δὲ δεῖ αὐτὸν πολλὰ",
+      "right_context": "καὶ ἀποδοκιμασθῆναι ἀπὸ τῆς γενεᾶς ταύτης."
+    },
+    {
+      "ref": "Luke 22:15",
+      "form": "παθεῖν·",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 15,
+      "left_context": "φαγεῖν μεθ’ ὑμῶν πρὸ τοῦ με",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 24:26",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 26,
+      "left_context": "οὐχὶ ταῦτα ἔδει",
+      "right_context": "τὸν χριστὸν καὶ εἰσελθεῖν εἰς τὴν"
+    },
+    {
+      "ref": "Luke 24:46",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 46,
+      "left_context": "καὶ εἶπεν αὐτοῖς ὅτι οὕτως ⸀γέγραπται",
+      "right_context": "τὸν χριστὸν καὶ ἀναστῆναι ἐκ νεκρῶν"
+    },
+    {
+      "ref": "Mark 5:26",
+      "form": "παθοῦσα",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 26,
+      "left_context": "καὶ πολλὰ",
+      "right_context": "ὑπὸ πολλῶν ἰατρῶν καὶ δαπανήσασα τὰ"
+    },
+    {
+      "ref": "Mark 8:31",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 31,
+      "left_context": "δεῖ τὸν υἱὸν τοῦ ἀνθρώπου πολλὰ",
+      "right_context": "καὶ ἀποδοκιμασθῆναι ⸀ὑπὸ τῶν πρεσβυτέρων καὶ"
+    },
+    {
+      "ref": "Mark 9:12",
+      "form": "πάθῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "τὸν υἱὸν τοῦ ἀνθρώπου ἵνα πολλὰ",
+      "right_context": "καὶ ⸀ἐξουδενηθῇ;"
+    },
+    {
+      "ref": "Matthew 16:21",
+      "form": "παθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 21,
+      "left_context": "αὐτὸν ⸂εἰς Ἱεροσόλυμα ἀπελθεῖν⸃ καὶ πολλὰ",
+      "right_context": "ἀπὸ τῶν πρεσβυτέρων καὶ ἀρχιερέων καὶ"
+    },
+    {
+      "ref": "Matthew 17:12",
+      "form": "πάσχειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 12,
+      "left_context": "καὶ ὁ υἱὸς τοῦ ἀνθρώπου μέλλει",
+      "right_context": "ὑπ’ αὐτῶν."
+    },
+    {
+      "ref": "Matthew 17:15",
+      "form": "⸀πάσχει,",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 15,
+      "left_context": "τὸν υἱόν, ὅτι σεληνιάζεται καὶ κακῶς",
+      "right_context": "πολλάκις γὰρ πίπτει εἰς τὸ πῦρ"
+    },
+    {
+      "ref": "Matthew 27:19",
+      "form": "ἔπαθον",
+      "morph": "V-A-A-I-1S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 19,
+      "left_context": "καὶ τῷ δικαίῳ ἐκείνῳ, πολλὰ γὰρ",
+      "right_context": "σήμερον κατ’ ὄναρ δι’ αὐτόν."
+    }
+  ],
+  "books": {
+    "1 Peter": 12,
+    "Luke": 6,
+    "Acts": 5,
+    "Hebrews": 4,
+    "Matthew": 4,
+    "Mark": 3,
+    "1 Corinthians": 1,
+    "1 Thessalonians": 1,
+    "2 Corinthians": 1,
+    "2 Thessalonians": 1,
+    "2 Timothy": 1,
+    "Revelation": 1,
+    "Philippians": 1,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 9,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 9,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ataba",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombre",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδοκιμάζω",
+      "display": "rechazar",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πρεσβύτερος",
+      "display": "de·ancianos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομένω",
+      "display": "perseveraréis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλημα",
+      "display": "voluntad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίκαιος",
+      "display": "justo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἰκῇ",
+      "display": "en·vano",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πειράζω",
+      "display": "tentado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολλάκις",
+      "display": "muchas·veces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἴτε",
+      "display": "sea·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλος",
+      "display": "miembro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμπάσχω",
+      "display": "padecer·con",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 4:15",
+      "form": "πασχέτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "μὴ γάρ τις ὑμῶν πασχέτω ὡς φονεὺς ἢ κλέπτης ἢ κακοποιὸς ἢ ὡς"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 2:23",
+      "negator": "οὐκ",
+      "clause_text": "ὃς λοιδορούμενος οὐκ ἀντελοιδόρει, πάσχων οὐκ ἠπείλει, παρεδίδου δὲ τῷ κρίνοντι δικαίως·"
+    },
+    {
+      "ref": "1 Peter 4:15",
+      "negator": "μὴ",
+      "clause_text": "μὴ γάρ τις ὑμῶν πασχέτω ὡς φονεὺς ἢ κλέπτης ἢ κακοποιὸς ἢ ὡς"
+    },
+    {
+      "ref": "2 Timothy 1:12",
+      "negator": "οὐκ",
+      "clause_text": "δι’ ἣν αἰτίαν καὶ ταῦτα πάσχω, ἀλλ’ οὐκ ἐπαισχύνομαι, οἶδα γὰρ ᾧ πεπίστευκα, καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 4:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Peter 2:19",
+      "reason": "frequent in 1 Peter"
+    },
+    {
+      "ref": "1 Peter 2:20",
+      "reason": "frequent in 1 Peter"
+    },
+    {
+      "ref": "1 Peter 2:21",
+      "reason": "frequent in 1 Peter"
+    },
+    {
+      "ref": "1 Peter 2:23",
+      "reason": "frequent in 1 Peter"
+    },
+    {
+      "ref": "1 Peter 3:14",
+      "reason": "frequent in 1 Peter"
+    },
+    {
+      "ref": "1 Peter 3:17",
+      "reason": "frequent in 1 Peter"
+    },
+    {
+      "ref": "1 Peter 3:18",
+      "reason": "frequent in 1 Peter"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

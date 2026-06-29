@@ -1,0 +1,126 @@
+{
+  "lemma": "ἐνυπνιάζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐνυπνιασθήσονται·",
+      "count": 1
+    },
+    {
+      "form": "ἐνυπνιαζόμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:17",
+      "form": "ἐνυπνιασθήσονται·",
+      "morph": "V-F-P-I-3P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "ὄψονται, καὶ οἱ πρεσβύτεροι ὑμῶν ⸀ἐνυπνίοις",
+      "right_context": ""
+    },
+    {
+      "ref": "Jude 1:8",
+      "form": "ἐνυπνιαζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "Ὁμοίως μέντοι καὶ οὗτοι",
+      "right_context": "σάρκα μὲν μιαίνουσιν, κυριότητα δὲ ἀθετοῦσιν,"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πρεσβύτερος",
+      "display": "ancianos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνύπνιον",
+      "display": "sueños",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμοίως",
+      "display": "igualmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέντοι",
+      "display": "sin·embargo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μιαίνω",
+      "display": "contaminan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κυριότης",
+      "display": "señorío",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 2:17",
+      "reason": "occurs near πρεσβύτερος, ἐνύπνιον"
+    },
+    {
+      "ref": "Jude 1:8",
+      "reason": "occurs near μέντοι, σάρξ, ὁμοίως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

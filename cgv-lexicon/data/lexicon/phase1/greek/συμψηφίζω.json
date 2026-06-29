@@ -1,0 +1,86 @@
+{
+  "lemma": "συμψηφίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνεψήφισαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 19:19",
+      "form": "συνεψήφισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 19,
+      "left_context": "τὰς βίβλους κατέκαιον ἐνώπιον πάντων· καὶ",
+      "right_context": "τὰς τιμὰς αὐτῶν καὶ εὗρον ἀργυρίου"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βίβλος",
+      "display": "libros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατακαίω",
+      "display": "quemaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "honoras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 19:19",
+      "reason": "occurs near βίβλος, εὑρίσκω, κατακαίω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

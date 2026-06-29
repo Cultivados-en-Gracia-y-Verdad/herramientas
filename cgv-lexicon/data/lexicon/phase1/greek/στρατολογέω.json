@@ -1,0 +1,74 @@
+{
+  "lemma": "στρατολογέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "στρατολογήσαντι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:4",
+      "form": "στρατολογήσαντι",
+      "morph": "V-A-A-P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "ταῖς τοῦ βίου πραγματείαις, ἵνα τῷ",
+      "right_context": "ἀρέσῃ·"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βίος",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πραγματεία",
+      "display": "negocios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρέσκω",
+      "display": "agrade",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:4",
+      "reason": "occurs near βίος, πραγματεία, ἀρέσκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

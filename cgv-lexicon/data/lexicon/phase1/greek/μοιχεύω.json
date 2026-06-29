@@ -1,0 +1,491 @@
+{
+  "lemma": "μοιχεύω",
+  "language": "greek",
+  "total_occurrences": 14,
+  "forms": [
+    {
+      "form": "μοιχεύσεις,",
+      "count": 2
+    },
+    {
+      "form": "μοιχεύοντας",
+      "count": 1
+    },
+    {
+      "form": "μοιχεύει,",
+      "count": 1
+    },
+    {
+      "form": "μοιχεύει.",
+      "count": 1
+    },
+    {
+      "form": "μοιχεύσῃς,",
+      "count": 1
+    },
+    {
+      "form": "μοιχεύσῃς⸃,",
+      "count": 1
+    },
+    {
+      "form": "μοιχεύσεις.",
+      "count": 1
+    },
+    {
+      "form": "ἐμοίχευσεν",
+      "count": 1
+    },
+    {
+      "form": "⸀μοιχευθῆναι,",
+      "count": 1
+    },
+    {
+      "form": "μοιχεύειν",
+      "count": 1
+    },
+    {
+      "form": "μοιχεύεις;",
+      "count": 1
+    },
+    {
+      "form": "⸀μοιχεύσῃς",
+      "count": 1
+    },
+    {
+      "form": "⸂μοιχεύεις",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 8,
+      "subjunctive": 3,
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 6,
+      "aorist": 5,
+      "future": 3
+    },
+    "voices": {
+      "active": 13,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 2:22",
+      "form": "μοιχεύοντας",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "βάλλω αὐτὴν εἰς κλίνην, καὶ τοὺς",
+      "right_context": "μετ’ αὐτῆς εἰς θλῖψιν μεγάλην, ἐὰν"
+    },
+    {
+      "ref": "Luke 16:18",
+      "form": "μοιχεύει,",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "τὴν γυναῖκα αὐτοῦ καὶ γαμῶν ἑτέραν",
+      "right_context": "⸀καὶ ὁ ἀπολελυμένην ἀπὸ ἀνδρὸς γαμῶν"
+    },
+    {
+      "ref": "Luke 16:18",
+      "form": "μοιχεύει.",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "⸀καὶ ὁ ἀπολελυμένην ἀπὸ ἀνδρὸς γαμῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 18:20",
+      "form": "μοιχεύσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 20,
+      "left_context": "τὰς ἐντολὰς οἶδας· Μὴ",
+      "right_context": "Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς,"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "μοιχεύσῃς⸃,",
+      "morph": "V-A-A-S-2S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "τὰς ἐντολὰς οἶδας· Μὴ ⸂φονεύσῃς, Μὴ",
+      "right_context": "Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς,"
+    },
+    {
+      "ref": "Matthew 5:27",
+      "form": "μοιχεύσεις.",
+      "morph": "V-F-A-I-2S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 27,
+      "left_context": "Ἠκούσατε ὅτι ἐρρέθη· Οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 5:28",
+      "form": "ἐμοίχευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 28,
+      "left_context": "γυναῖκα πρὸς τὸ ἐπιθυμῆσαι αὐτὴν ἤδη",
+      "right_context": "αὐτὴν ἐν τῇ καρδίᾳ αὐτοῦ."
+    },
+    {
+      "ref": "Matthew 5:32",
+      "form": "⸀μοιχευθῆναι,",
+      "morph": "V-A-P-N",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 32,
+      "left_context": "αὐτοῦ παρεκτὸς λόγου πορνείας ποιεῖ αὐτὴν",
+      "right_context": "καὶ ὃς ἐὰν ἀπολελυμένην γαμήσῃ μοιχᾶται."
+    },
+    {
+      "ref": "Matthew 19:18",
+      "form": "μοιχεύσεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 18,
+      "left_context": "Ἰησοῦς ⸀εἶπεν· Τὸ Οὐ φονεύσεις, Οὐ",
+      "right_context": "Οὐ κλέψεις, Οὐ ψευδομαρτυρήσεις,"
+    },
+    {
+      "ref": "Romans 2:22",
+      "form": "μοιχεύειν",
+      "morph": "V-P-A-N",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "ὁ λέγων μὴ",
+      "right_context": "μοιχεύεις; ὁ βδελυσσόμενος τὰ εἴδωλα ἱεροσυλεῖς;"
+    },
+    {
+      "ref": "Romans 2:22",
+      "form": "μοιχεύεις;",
+      "morph": "V-P-A-I-2S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "ὁ λέγων μὴ μοιχεύειν",
+      "right_context": "ὁ βδελυσσόμενος τὰ εἴδωλα ἱεροσυλεῖς;"
+    },
+    {
+      "ref": "Romans 13:9",
+      "form": "μοιχεύσεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "Romans",
+      "chapter": 13,
+      "verse": 9,
+      "left_context": "τὸ γάρ· Οὐ",
+      "right_context": "Οὐ φονεύσεις, Οὐ κλέψεις, Οὐκ ἐπιθυμήσεις,"
+    },
+    {
+      "ref": "James 2:11",
+      "form": "⸀μοιχεύσῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "James",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "ὁ γὰρ εἰπών Μὴ",
+      "right_context": "εἶπεν καί Μὴ ⸀φονεύσῃς· εἰ δὲ"
+    },
+    {
+      "ref": "James 2:11",
+      "form": "⸂μοιχεύεις",
+      "morph": "V-P-A-I-2S",
+      "book": "James",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "καί Μὴ ⸀φονεύσῃς· εἰ δὲ οὐ",
+      "right_context": "φονεύεις⸃ δέ, γέγονας παραβάτης νόμου."
+    }
+  ],
+  "books": {
+    "Matthew": 4,
+    "Luke": 3,
+    "Romans": 3,
+    "James": 2,
+    "Revelation": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φονεύω",
+      "display": "asesines",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτω",
+      "display": "robes",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολύω",
+      "display": "despedida",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "de·varón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντολή",
+      "display": "mandamientos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "has sabido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδομαρτυρέω",
+      "display": "dar·falso·testimonio,",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μοιχεύω",
+      "display": "adulteras",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βδελύσσομαι",
+      "display": "abominando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἴδωλον",
+      "display": "ídolos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλίνη",
+      "display": "lecho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "tribulación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμέω",
+      "display": "desear",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρεκτός",
+      "display": "excepto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "de·palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορνεία",
+      "display": "de·fornicación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱεροσυλέω",
+      "display": "profanas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβάτης",
+      "display": "transgresor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 18:20",
+      "form": "μοιχεύσῃς,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "μοιχεύσῃς⸃,",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "James 2:11",
+      "form": "⸀μοιχεύσῃς",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "ὁ γὰρ εἰπών Μὴ ⸀μοιχεύσῃς εἶπεν καί Μὴ ⸀φονεύσῃς· εἰ δὲ οὐ ⸂μοιχεύεις",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 18:20",
+      "negator": "Μὴ",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν"
+    },
+    {
+      "ref": "Mark 10:19",
+      "negator": "Μὴ",
+      "clause_text": "τὰς ἐντολὰς οἶδας· Μὴ ⸂φονεύσῃς, Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν"
+    },
+    {
+      "ref": "Matthew 5:27",
+      "negator": "Οὐ",
+      "clause_text": "Ἠκούσατε ὅτι ἐρρέθη· Οὐ μοιχεύσεις."
+    },
+    {
+      "ref": "Matthew 19:18",
+      "negator": "Οὐ",
+      "clause_text": "ὁ δὲ Ἰησοῦς ⸀εἶπεν· Τὸ Οὐ φονεύσεις, Οὐ μοιχεύσεις, Οὐ κλέψεις, Οὐ ψευδομαρτυρήσεις,"
+    },
+    {
+      "ref": "Romans 2:22",
+      "negator": "μὴ",
+      "clause_text": "ὁ λέγων μὴ μοιχεύειν μοιχεύεις; ὁ βδελυσσόμενος τὰ εἴδωλα ἱεροσυλεῖς;"
+    },
+    {
+      "ref": "Romans 2:22",
+      "negator": "μὴ",
+      "clause_text": "ὁ λέγων μὴ μοιχεύειν μοιχεύεις; ὁ βδελυσσόμενος τὰ εἴδωλα ἱεροσυλεῖς;"
+    },
+    {
+      "ref": "Romans 13:9",
+      "negator": "Οὐ",
+      "clause_text": "τὸ γάρ· Οὐ μοιχεύσεις, Οὐ φονεύσεις, Οὐ κλέψεις, Οὐκ ἐπιθυμήσεις, καὶ εἴ"
+    },
+    {
+      "ref": "James 2:11",
+      "negator": "Μὴ",
+      "clause_text": "ὁ γὰρ εἰπών Μὴ ⸀μοιχεύσῃς εἶπεν καί Μὴ ⸀φονεύσῃς· εἰ δὲ οὐ ⸂μοιχεύεις"
+    },
+    {
+      "ref": "James 2:11",
+      "negator": "οὐ",
+      "clause_text": "⸀μοιχεύσῃς εἶπεν καί Μὴ ⸀φονεύσῃς· εἰ δὲ οὐ ⸂μοιχεύεις φονεύεις⸃ δέ, γέγονας παραβάτης νόμου."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 19:18",
+      "reason": "occurs near κλέπτω, φονεύω"
+    },
+    {
+      "ref": "Matthew 5:27",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 5:28",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 5:32",
+      "reason": "occurs near γαμέω, ἀπολύω"
+    },
+    {
+      "ref": "Luke 16:18",
+      "reason": "occurs near γαμέω, ἀνήρ, ἀπολύω"
+    },
+    {
+      "ref": "Luke 18:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 13:9",
+      "reason": "occurs near κλέπτω, φονεύω"
+    },
+    {
+      "ref": "Romans 2:22",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

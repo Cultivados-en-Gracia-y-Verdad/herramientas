@@ -1,0 +1,285 @@
+{
+  "lemma": "ἐκδικέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἐκδικῆσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐκδικεῖς",
+      "count": 1
+    },
+    {
+      "form": "ἐξεδίκησεν",
+      "count": 1
+    },
+    {
+      "form": "Ἐκδίκησόν",
+      "count": 1
+    },
+    {
+      "form": "ἐκδικήσω",
+      "count": 1
+    },
+    {
+      "form": "ἐκδικοῦντες,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 3,
+      "imperative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 10:6",
+      "form": "ἐκδικῆσαι",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 6,
+      "left_context": "καὶ ἐν ἑτοίμῳ ἔχοντες",
+      "right_context": "πᾶσαν παρακοήν, ὅταν πληρωθῇ ὑμῶν ἡ"
+    },
+    {
+      "ref": "Revelation 6:10",
+      "form": "ἐκδικεῖς",
+      "morph": "V-P-A-I-2S",
+      "book": "Revelation",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "ἅγιος καὶ ἀληθινός, οὐ κρίνεις καὶ",
+      "right_context": "τὸ αἷμα ἡμῶν ἐκ τῶν κατοικούντων"
+    },
+    {
+      "ref": "Revelation 19:2",
+      "form": "ἐξεδίκησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 2,
+      "left_context": "γῆν ἐν τῇ πορνείᾳ αὐτῆς, καὶ",
+      "right_context": "τὸ αἷμα τῶν δούλων αὐτοῦ ἐκ"
+    },
+    {
+      "ref": "Luke 18:3",
+      "form": "Ἐκδίκησόν",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 3,
+      "left_context": "ἐκείνῃ καὶ ἤρχετο πρὸς αὐτὸν λέγουσα·",
+      "right_context": "με ἀπὸ τοῦ ἀντιδίκου μου."
+    },
+    {
+      "ref": "Luke 18:5",
+      "form": "ἐκδικήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 5,
+      "left_context": "παρέχειν μοι κόπον τὴν χήραν ταύτην",
+      "right_context": "αὐτήν ἵνα μὴ εἰς τέλος ἐρχομένη"
+    },
+    {
+      "ref": "Romans 12:19",
+      "form": "ἐκδικοῦντες,",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 19,
+      "left_context": "μὴ ἑαυτοὺς",
+      "right_context": "ἀγαπητοί, ἀλλὰ δότε τόπον τῇ ὀργῇ,"
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "Luke": 2,
+    "2 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτοιμος",
+      "display": "listo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακοή",
+      "display": "desobediencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumpla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀληθινός",
+      "display": "verdadero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "juzgas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορνεία",
+      "display": "fornicación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "de·siervos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντίδικος",
+      "display": "de·adversario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόπος",
+      "display": "trabajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χήρα",
+      "display": "viuda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέλος",
+      "display": "fin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 18:3",
+      "form": "Ἐκδίκησόν",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "τῇ πόλει ἐκείνῃ καὶ ἤρχετο πρὸς αὐτὸν λέγουσα· Ἐκδίκησόν με ἀπὸ τοῦ ἀντιδίκου μου."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Revelation 6:10",
+      "negator": "οὐ",
+      "clause_text": "δεσπότης ὁ ἅγιος καὶ ἀληθινός, οὐ κρίνεις καὶ ἐκδικεῖς τὸ αἷμα ἡμῶν ἐκ τῶν κατοικούντων ἐπὶ τῆς"
+    },
+    {
+      "ref": "Luke 18:5",
+      "negator": "μὴ",
+      "clause_text": "γε τὸ παρέχειν μοι κόπον τὴν χήραν ταύτην ἐκδικήσω αὐτήν ἵνα μὴ εἰς τέλος ἐρχομένη ὑπωπιάζῃ με."
+    },
+    {
+      "ref": "Romans 12:19",
+      "negator": "μὴ",
+      "clause_text": "μὴ ἑαυτοὺς ἐκδικοῦντες, ἀγαπητοί, ἀλλὰ δότε τόπον τῇ ὀργῇ, γέγραπται γάρ·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 18:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 18:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Revelation 19:2",
+      "reason": "occurs near αἷμα"
+    },
+    {
+      "ref": "Revelation 6:10",
+      "reason": "occurs near αἷμα"
+    },
+    {
+      "ref": "2 Corinthians 10:6",
+      "reason": "occurs near παρακοή, πληρόω, ἕτοιμος"
+    },
+    {
+      "ref": "Romans 12:19",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

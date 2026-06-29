@@ -1,0 +1,74 @@
+{
+  "lemma": "μαντεύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μαντευομένη·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:16",
+      "form": "μαντευομένη·",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 16,
+      "left_context": "ἐργασίαν πολλὴν παρεῖχεν τοῖς κυρίοις αὐτῆς",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "mucha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρέχω",
+      "display": "proveía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:16",
+      "reason": "occurs near κύριος, παρέχω, πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

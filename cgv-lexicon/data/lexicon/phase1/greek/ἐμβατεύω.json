@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐμβατεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐμβατεύων,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:18",
+      "form": "ἐμβατεύων,",
+      "morph": "V-P-A-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 18,
+      "left_context": "καὶ θρησκείᾳ τῶν ἀγγέλων, ⸀ἃ ἑόρακεν",
+      "right_context": "εἰκῇ φυσιούμενος ὑπὸ τοῦ νοὸς τῆς"
+    }
+  ],
+  "books": {
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θρησκεία",
+      "display": "religión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "de·ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ha visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰκῇ",
+      "display": "en·vano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυσιόω",
+      "display": "envanecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοῦς",
+      "display": "de·mente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 2:18",
+      "reason": "occurs near εἰκῇ, θρησκεία, φυσιόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

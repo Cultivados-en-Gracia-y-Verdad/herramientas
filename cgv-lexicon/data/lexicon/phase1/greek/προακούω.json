@@ -1,0 +1,74 @@
+{
+  "lemma": "προακούω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προηκούσατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 1:5",
+      "form": "προηκούσατε",
+      "morph": "V-A-A-I-2P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "ἀποκειμένην ὑμῖν ἐν τοῖς οὐρανοῖς, ἣν",
+      "right_context": "ἐν τῷ λόγῳ τῆς ἀληθείας τοῦ"
+    }
+  ],
+  "books": {
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "de·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 1:5",
+      "reason": "occurs near λόγος, οὐρανός, ἀλήθεια"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

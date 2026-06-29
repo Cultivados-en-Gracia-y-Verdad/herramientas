@@ -1,0 +1,101 @@
+{
+  "lemma": "ζωγρέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐζωγρημένοι",
+      "count": 1
+    },
+    {
+      "form": "ζωγρῶν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:26",
+      "form": "ἐζωγρημένοι",
+      "morph": "V-X-P-P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 26,
+      "left_context": "ἀνανήψωσιν ἐκ τῆς τοῦ διαβόλου παγίδος,",
+      "right_context": "ὑπ’ αὐτοῦ εἰς τὸ ἐκείνου θέλημα."
+    },
+    {
+      "ref": "Luke 5:10",
+      "form": "ζωγρῶν.",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "φοβοῦ· ἀπὸ τοῦ νῦν ἀνθρώπους ἔσῃ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Timothy": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διάβολος",
+      "display": "de·diablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παγίς",
+      "display": "de·trampa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:26",
+      "reason": "occurs near διάβολος, παγίς"
+    },
+    {
+      "ref": "Luke 5:10",
+      "reason": "occurs near νῦν, ἄνθρωπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,169 @@
+{
+  "lemma": "ἀποβαίνω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀποβήσεται",
+      "count": 1
+    },
+    {
+      "form": "ἀπέβησαν",
+      "count": 1
+    },
+    {
+      "form": "ἀποβάντες⸃",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀποβήσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 1:19",
+      "form": "ἀποβήσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "οἶδα γὰρ ὅτι τοῦτό μοι",
+      "right_context": "εἰς σωτηρίαν διὰ τῆς ὑμῶν δεήσεως"
+    },
+    {
+      "ref": "John 21:9",
+      "form": "ἀπέβησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 9,
+      "left_context": "Ὡς οὖν",
+      "right_context": "εἰς τὴν γῆν βλέπουσιν ἀνθρακιὰν κειμένην"
+    },
+    {
+      "ref": "Luke 5:2",
+      "form": "ἀποβάντες⸃",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "λίμνην, οἱ δὲ ἁλιεῖς ⸂ἀπ’ αὐτῶν",
+      "right_context": "⸀ἔπλυνον τὰ δίκτυα."
+    },
+    {
+      "ref": "Luke 21:13",
+      "form": "⸀ἀποβήσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "ὑμῖν εἰς μαρτύριον."
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Philippians": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἶδα",
+      "display": "he sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνθρακιά",
+      "display": "brasas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁλιεύς",
+      "display": "pescadores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλύνω",
+      "display": "lavaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκτυον",
+      "display": "redes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτύριον",
+      "display": "testimonio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 5:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 21:9",
+      "reason": "occurs near βλέπω, γῆ, ἀνθρακιά"
+    },
+    {
+      "ref": "Philippians 1:19",
+      "reason": "occurs near οἶδα, σωτηρία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

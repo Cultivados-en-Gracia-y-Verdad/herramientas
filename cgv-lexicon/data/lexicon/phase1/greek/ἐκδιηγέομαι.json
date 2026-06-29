@@ -1,0 +1,117 @@
+{
+  "lemma": "ἐκδιηγέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐκδιηγῆται",
+      "count": 1
+    },
+    {
+      "form": "ἐκδιηγούμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:41",
+      "form": "ἐκδιηγῆται",
+      "morph": "V-P-M-S-3S",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 41,
+      "left_context": "ὃ οὐ μὴ πιστεύσητε ἐάν τις",
+      "right_context": "ὑμῖν."
+    },
+    {
+      "ref": "Acts 15:3",
+      "form": "ἐκδιηγούμενοι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 3,
+      "left_context": "διήρχοντο τήν ⸀τε Φοινίκην καὶ Σαμάρειαν",
+      "right_context": "τὴν ἐπιστροφὴν τῶν ἐθνῶν, καὶ ἐποίουν"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πιστεύω",
+      "display": "creáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φοινίκη",
+      "display": "Fenicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαμάρεια",
+      "display": "Samaria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστροφή",
+      "display": "conversión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 13:41",
+      "negator": "μὴ",
+      "clause_text": "ὑμῶν, ⸀ἔργον ὃ οὐ μὴ πιστεύσητε ἐάν τις ἐκδιηγῆται ὑμῖν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:41",
+      "reason": "occurs near πιστεύω"
+    },
+    {
+      "ref": "Acts 15:3",
+      "reason": "occurs near Σαμάρεια, Φοινίκη, τέ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

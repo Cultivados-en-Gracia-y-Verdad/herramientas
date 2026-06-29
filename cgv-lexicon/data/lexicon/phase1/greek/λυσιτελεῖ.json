@@ -1,0 +1,74 @@
+{
+  "lemma": "λυσιτελεῖ",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "λυσιτελεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 17:2",
+      "form": "λυσιτελεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "αὐτῷ εἰ ⸂λίθος μυλικὸς⸃ περίκειται περὶ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μυλικός",
+      "display": "de·molino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περίκειμαι",
+      "display": "estar·vestido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 17:2",
+      "reason": "occurs near λίθος, μυλικός, περίκειμαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,117 @@
+{
+  "lemma": "ἐξωθέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐξῶσεν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐξῶσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:45",
+      "form": "ἐξῶσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 45,
+      "left_context": "ἐν τῇ κατασχέσει τῶν ἐθνῶν ὧν",
+      "right_context": "ὁ θεὸς ἀπὸ προσώπου τῶν πατέρων"
+    },
+    {
+      "ref": "Acts 27:39",
+      "form": "⸀ἐξῶσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 39,
+      "left_context": "αἰγιαλὸν εἰς ὃν ⸀ἐβουλεύοντο εἰ ⸀δύναιντο",
+      "right_context": "τὸ πλοῖον."
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κατάσχεσις",
+      "display": "posesión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "de·rostro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βουλεύομαι",
+      "display": "decidían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podieran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:39",
+      "reason": "occurs near βουλεύομαι"
+    },
+    {
+      "ref": "Acts 7:45",
+      "reason": "occurs near θεός, κατάσχεσις, πρόσωπον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,209 @@
+{
+  "lemma": "ἀμελέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀμελήσαντες",
+      "count": 2
+    },
+    {
+      "form": "ἀμέλει",
+      "count": 1
+    },
+    {
+      "form": "ἠμέλησα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 4:14",
+      "form": "ἀμέλει",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "μὴ",
+      "right_context": "τοῦ ἐν σοὶ χαρίσματος, ὃ ἐδόθη"
+    },
+    {
+      "ref": "Hebrews 2:3",
+      "form": "ἀμελήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "πῶς ἡμεῖς ἐκφευξόμεθα τηλικαύτης",
+      "right_context": "σωτηρίας, ἥτις, ἀρχὴν λαβοῦσα λαλεῖσθαι διὰ"
+    },
+    {
+      "ref": "Hebrews 8:9",
+      "form": "ἠμέλησα",
+      "morph": "V-A-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 9,
+      "left_context": "ἐνέμειναν ἐν τῇ διαθήκῃ μου, κἀγὼ",
+      "right_context": "αὐτῶν, λέγει κύριος."
+    },
+    {
+      "ref": "Matthew 22:5",
+      "form": "ἀμελήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 5,
+      "left_context": "οἱ δὲ",
+      "right_context": "ἀπῆλθον, ⸀ὃς μὲν εἰς τὸν ἴδιον"
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "1 Timothy": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χάρισμα",
+      "display": "de·don",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκφεύγω",
+      "display": "escaparemos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηλικοῦτος",
+      "display": "tan·grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "de·salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχή",
+      "display": "principio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 4:14",
+      "form": "ἀμέλει",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "μὴ ἀμέλει τοῦ ἐν σοὶ χαρίσματος, ὃ ἐδόθη σοι διὰ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 4:14",
+      "negator": "μὴ",
+      "clause_text": "μὴ ἀμέλει τοῦ ἐν σοὶ χαρίσματος, ὃ ἐδόθη σοι διὰ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 2:3",
+      "reason": "occurs near πῶς, σωτηρία, τηλικοῦτος"
+    },
+    {
+      "ref": "Hebrews 8:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 22:5",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

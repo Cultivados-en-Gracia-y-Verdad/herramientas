@@ -1,0 +1,148 @@
+{
+  "lemma": "ἀπαντάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἀπήντησαν",
+      "count": 1
+    },
+    {
+      "form": "ἀπαντήσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 17:12",
+      "form": "⸀ἀπήντησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 12,
+      "left_context": "καὶ εἰσερχομένου αὐτοῦ εἴς τινα κώμην",
+      "right_context": "δέκα λεπροὶ ἄνδρες, οἳ ⸀ἔστησαν πόρρωθεν,"
+    },
+    {
+      "ref": "Mark 14:13",
+      "form": "ἀπαντήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 13,
+      "left_context": "αὐτοῖς· Ὑπάγετε εἰς τὴν πόλιν, καὶ",
+      "right_context": "ὑμῖν ἄνθρωπος κεράμιον ὕδατος βαστάζων· ἀκολουθήσατε"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέκα",
+      "display": "diez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λεπρός",
+      "display": "leprosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "pusieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "ed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεράμιον",
+      "display": "cántaro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαστάζω",
+      "display": "llevando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 17:12",
+      "reason": "occurs near δέκα, εἰσέρχομαι, κώμη"
+    },
+    {
+      "ref": "Mark 14:13",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

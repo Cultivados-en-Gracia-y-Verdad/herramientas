@@ -1,0 +1,249 @@
+{
+  "lemma": "διαρρήγνυμι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "διαρρήξαντες",
+      "count": 1
+    },
+    {
+      "form": "⸀διερρήσσετο",
+      "count": 1
+    },
+    {
+      "form": "διαρρήσσων",
+      "count": 1
+    },
+    {
+      "form": "διαρρήξας",
+      "count": 1
+    },
+    {
+      "form": "διέρρηξεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 3,
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 4,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 14:14",
+      "form": "διαρρήξαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 14,
+      "left_context": "δὲ οἱ ἀπόστολοι Βαρναβᾶς καὶ Παῦλος,",
+      "right_context": "τὰ ἱμάτια ⸀αὐτῶν ⸀ἐξεπήδησαν εἰς τὸν"
+    },
+    {
+      "ref": "Luke 5:6",
+      "form": "⸀διερρήσσετο",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "τοῦτο ποιήσαντες συνέκλεισαν πλῆθος ἰχθύων πολύ,",
+      "right_context": "δὲ ⸂τὰ δίκτυα⸃ αὐτῶν."
+    },
+    {
+      "ref": "Luke 8:29",
+      "form": "διαρρήσσων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 29,
+      "left_context": "⸀ἐδεσμεύετο ἁλύσεσιν καὶ πέδαις φυλασσόμενος, καὶ",
+      "right_context": "τὰ δεσμὰ ἠλαύνετο ⸀ὑπὸ τοῦ ⸀δαιμονίου"
+    },
+    {
+      "ref": "Mark 14:63",
+      "form": "διαρρήξας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 63,
+      "left_context": "ὁ δὲ ἀρχιερεὺς",
+      "right_context": "τοὺς χιτῶνας αὐτοῦ λέγει· Τί ἔτι"
+    },
+    {
+      "ref": "Matthew 26:65",
+      "form": "διέρρηξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 65,
+      "left_context": "τότε ὁ ἀρχιερεὺς",
+      "right_context": "τὰ ἱμάτια αὐτοῦ ⸀λέγων· Ἐβλασφήμησεν· τί"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Acts": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "apóstoles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαρναβᾶς",
+      "display": "Bernabé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπηδάω",
+      "display": "saltaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγκλείω",
+      "display": "encerraron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλῆθος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰχθύς",
+      "display": "de·peces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκτυον",
+      "display": "redes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλυσις",
+      "display": "cadenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέδη",
+      "display": "grilletes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guardado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσμόν",
+      "display": "cadenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλαύνω",
+      "display": "era navegado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιτών",
+      "display": "túnicas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημέω",
+      "display": "blasfemó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 5:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 8:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 14:14",
+      "reason": "occurs near Βαρναβᾶς, Παῦλος, ἀπόστολος"
+    },
+    {
+      "ref": "Mark 14:63",
+      "reason": "occurs near ἀρχιερεύς"
+    },
+    {
+      "ref": "Matthew 26:65",
+      "reason": "occurs near ἀρχιερεύς, ἱμάτιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

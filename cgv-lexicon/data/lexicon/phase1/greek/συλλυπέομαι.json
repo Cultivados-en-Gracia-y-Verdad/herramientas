@@ -1,0 +1,80 @@
+{
+  "lemma": "συλλυπέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συλλυπούμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 3:5",
+      "form": "συλλυπούμενος",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "καὶ περιβλεψάμενος αὐτοὺς μετ’ ὀργῆς,",
+      "right_context": "ἐπὶ τῇ πωρώσει τῆς καρδίας αὐτῶν,"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "περιβλέπομαι",
+      "display": "mirar·alrededor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀργή",
+      "display": "de·ira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώρωσις",
+      "display": "endurecimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "de·corazón",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 3:5",
+      "reason": "occurs near καρδία, περιβλέπομαι, πώρωσις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

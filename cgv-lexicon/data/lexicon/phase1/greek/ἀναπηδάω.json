@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀναπηδάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἀναπηδήσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 10:50",
+      "form": "⸀ἀναπηδήσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 50,
+      "left_context": "ὁ δὲ ἀποβαλὼν τὸ ἱμάτιον αὐτοῦ",
+      "right_context": "ἦλθεν πρὸς τὸν Ἰησοῦν."
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποβάλλω",
+      "display": "arrojado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "manto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:50",
+      "reason": "occurs near ἀποβάλλω, ἔρχομαι, ἱμάτιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

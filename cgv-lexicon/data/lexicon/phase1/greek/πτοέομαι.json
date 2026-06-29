@@ -1,0 +1,131 @@
+{
+  "lemma": "πτοέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "πτοηθῆτε·",
+      "count": 1
+    },
+    {
+      "form": "πτοηθέντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 21:9",
+      "form": "πτοηθῆτε·",
+      "morph": "V-A-P-S-2P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 9,
+      "left_context": "δὲ ἀκούσητε πολέμους καὶ ἀκαταστασίας, μὴ",
+      "right_context": "δεῖ γὰρ ταῦτα γενέσθαι πρῶτον, ἀλλ’"
+    },
+    {
+      "ref": "Luke 24:37",
+      "form": "πτοηθέντες",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 37,
+      "left_context": "",
+      "right_context": "δὲ καὶ ἔμφοβοι γενόμενοι ἐδόκουν πνεῦμα"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλεμος",
+      "display": "guerras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκαταστασία",
+      "display": "confusiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμφοβος",
+      "display": "aterrados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "parecían",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 21:9",
+      "form": "πτοηθῆτε·",
+      "morph": "V-A-P-S-2P",
+      "clause_text": "ὅταν δὲ ἀκούσητε πολέμους καὶ ἀκαταστασίας, μὴ πτοηθῆτε· δεῖ γὰρ ταῦτα γενέσθαι πρῶτον, ἀλλ’ οὐκ εὐθέως",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 21:9",
+      "negator": "μὴ",
+      "clause_text": "ὅταν δὲ ἀκούσητε πολέμους καὶ ἀκαταστασίας, μὴ πτοηθῆτε· δεῖ γὰρ ταῦτα γενέσθαι πρῶτον, ἀλλ’ οὐκ εὐθέως"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 24:37",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

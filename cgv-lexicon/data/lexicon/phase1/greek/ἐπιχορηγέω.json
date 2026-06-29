@@ -1,0 +1,235 @@
+{
+  "lemma": "ἐπιχορηγέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐπιχορηγῶν",
+      "count": 2
+    },
+    {
+      "form": "ἐπιχορηγήσατε",
+      "count": 1
+    },
+    {
+      "form": "ἐπιχορηγηθήσεται",
+      "count": 1
+    },
+    {
+      "form": "ἐπιχορηγούμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 3,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 9:10",
+      "form": "ἐπιχορηγῶν",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "ὁ δὲ",
+      "right_context": "⸀σπόρον τῷ σπείροντι καὶ ἄρτον εἰς"
+    },
+    {
+      "ref": "2 Peter 1:5",
+      "form": "ἐπιχορηγήσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "αὐτὸ τοῦτο δὲ σπουδὴν πᾶσαν παρεισενέγκαντες",
+      "right_context": "ἐν τῇ πίστει ὑμῶν τὴν ἀρετήν,"
+    },
+    {
+      "ref": "2 Peter 1:11",
+      "form": "ἐπιχορηγηθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "οὕτως γὰρ πλουσίως",
+      "right_context": "ὑμῖν ἡ εἴσοδος εἰς τὴν αἰώνιον"
+    },
+    {
+      "ref": "Colossians 2:19",
+      "form": "ἐπιχορηγούμενον",
+      "morph": "V-P-P-P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "σῶμα διὰ τῶν ἁφῶν καὶ συνδέσμων",
+      "right_context": "καὶ συμβιβαζόμενον αὔξει τὴν αὔξησιν τοῦ"
+    },
+    {
+      "ref": "Galatians 3:5",
+      "form": "ἐπιχορηγῶν",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "ὁ οὖν",
+      "right_context": "ὑμῖν τὸ πνεῦμα καὶ ἐνεργῶν δυνάμεις"
+    }
+  ],
+  "books": {
+    "2 Peter": 2,
+    "2 Corinthians": 1,
+    "Colossians": 1,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σπόρος",
+      "display": "semilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπείρω",
+      "display": "sembrando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπουδή",
+      "display": "diligencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρεισφέρω",
+      "display": "añadidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλουσίως",
+      "display": "ricamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴσοδος",
+      "display": "entrada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁφή",
+      "display": "de·coyunturas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύνδεσμος",
+      "display": "de·lazos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμβιβάζω",
+      "display": "unido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὔξω",
+      "display": "crece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὔξησις",
+      "display": "crecimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνεργέω",
+      "display": "actuando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Peter 1:5",
+      "form": "ἐπιχορηγήσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ αὐτὸ τοῦτο δὲ σπουδὴν πᾶσαν παρεισενέγκαντες ἐπιχορηγήσατε ἐν τῇ πίστει ὑμῶν τὴν ἀρετήν, ἐν δὲ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Peter 1:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 9:10",
+      "reason": "occurs near σπείρω, σπόρος, ἄρτος"
+    },
+    {
+      "ref": "Colossians 2:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 3:5",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,124 @@
+{
+  "lemma": "προσρήγνυμι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προσέρηξεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:48",
+      "form": "προσέρηξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 48,
+      "left_context": "ἐπὶ τὴν πέτραν· πλημμύρης δὲ γενομένης",
+      "right_context": "ὁ ποταμὸς τῇ οἰκίᾳ ἐκείνῃ, καὶ"
+    },
+    {
+      "ref": "Luke 6:49",
+      "form": "προσέρηξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 49,
+      "left_context": "ἐπὶ τὴν γῆν χωρὶς θεμελίου, ᾗ",
+      "right_context": "ὁ ποταμός, καὶ ⸂εὐθὺς συνέπεσεν⸃, καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ποταμός",
+      "display": "río",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πέτρα",
+      "display": "roca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλήμμυρα",
+      "display": "de·inundación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεμέλιος",
+      "display": "de·fundamento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμπίπτω",
+      "display": "cayó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:48",
+      "reason": "occurs near οἰκία, πέτρα, πλήμμυρα"
+    },
+    {
+      "ref": "Luke 6:49",
+      "reason": "occurs near γῆ, ποταμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

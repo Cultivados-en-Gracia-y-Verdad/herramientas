@@ -1,0 +1,100 @@
+{
+  "lemma": "διαγογγύζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διεγόγγυζον",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 15:2",
+      "form": "διεγόγγυζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 2,
+      "left_context": "καὶ",
+      "right_context": "οἵ ⸀τε Φαρισαῖοι καὶ οἱ γραμματεῖς"
+    },
+    {
+      "ref": "Luke 19:7",
+      "form": "διεγόγγυζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 7,
+      "left_context": "καὶ ἰδόντες πάντες",
+      "right_context": "λέγοντες ὅτι Παρὰ ἁμαρτωλῷ ἀνδρὶ εἰσῆλθεν"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτωλός",
+      "display": "pecador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 15:2",
+      "reason": "occurs near Φαρισαῖος, τέ"
+    },
+    {
+      "ref": "Luke 19:7",
+      "reason": "occurs near ἀνήρ, ἁμαρτωλός, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

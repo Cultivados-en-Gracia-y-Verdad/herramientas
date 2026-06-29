@@ -1,0 +1,92 @@
+{
+  "lemma": "φροντίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "φροντίζωσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Titus 3:8",
+      "form": "φροντίζωσιν",
+      "morph": "V-P-A-S-3P",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "περὶ τούτων βούλομαί σε διαβεβαιοῦσθαι, ἵνα",
+      "right_context": "καλῶν ἔργων προΐστασθαι οἱ πεπιστευκότες θεῷ."
+    }
+  ],
+  "books": {
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βούλομαι",
+      "display": "quiero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαβεβαιόομαι",
+      "display": "afirmar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "de·buenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προΐστημι",
+      "display": "presidir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Titus 3:8",
+      "reason": "occurs near βούλομαι, διαβεβαιόομαι, καλός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

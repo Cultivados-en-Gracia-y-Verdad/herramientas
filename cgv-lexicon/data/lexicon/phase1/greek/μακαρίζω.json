@@ -1,0 +1,112 @@
+{
+  "lemma": "μακαρίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μακαριοῦσίν",
+      "count": 1
+    },
+    {
+      "form": "μακαρίζομεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:48",
+      "form": "μακαριοῦσίν",
+      "morph": "V-F-A-I-3P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 48,
+      "left_context": "αὐτοῦ, ἰδοὺ γὰρ ἀπὸ τοῦ νῦν",
+      "right_context": "με πᾶσαι αἱ γενεαί·"
+    },
+    {
+      "ref": "James 5:11",
+      "form": "μακαρίζομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "ἰδοὺ",
+      "right_context": "τοὺς ⸀ὑπομείναντας· τὴν ὑπομονὴν Ἰὼβ ἠκούσατε,"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γενεά",
+      "display": "generaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομένω",
+      "display": "perseverados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπομονή",
+      "display": "paciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰώβ",
+      "display": "de·Job",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:11",
+      "reason": "occurs near ἰδού, ὑπομένω, ὑπομονή"
+    },
+    {
+      "ref": "Luke 1:48",
+      "reason": "occurs near γενεά, νῦν, ἰδού"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

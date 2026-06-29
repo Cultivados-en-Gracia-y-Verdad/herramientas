@@ -1,0 +1,172 @@
+{
+  "lemma": "τρέμω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "τρέμουσιν,",
+      "count": 1
+    },
+    {
+      "form": "τρέμουσα",
+      "count": 1
+    },
+    {
+      "form": "τρέμουσα,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:10",
+      "form": "τρέμουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "κυριότητος καταφρονοῦντας. Τολμηταί, αὐθάδεις, δόξας οὐ",
+      "right_context": "βλασφημοῦντες,"
+    },
+    {
+      "ref": "Luke 8:47",
+      "form": "τρέμουσα",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 47,
+      "left_context": "δὲ ἡ γυνὴ ὅτι οὐκ ἔλαθεν",
+      "right_context": "ἦλθεν καὶ προσπεσοῦσα αὐτῷ δι’ ἣν"
+    },
+    {
+      "ref": "Mark 5:33",
+      "form": "τρέμουσα,",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 33,
+      "left_context": "ἡ δὲ γυνὴ φοβηθεῖσα καὶ",
+      "right_context": "εἰδυῖα ὃ γέγονεν ⸀αὐτῇ, ἦλθεν καὶ"
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καταφρονέω",
+      "display": "menospreciando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τολμητής",
+      "display": "atrevidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐθάδης",
+      "display": "arrogantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "glorias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλασφημέω",
+      "display": "blasfemando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λανθάνω",
+      "display": "ocultarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσπίπτω",
+      "display": "caida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "sabida",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 2:10",
+      "negator": "οὐ",
+      "clause_text": "πορευομένους καὶ κυριότητος καταφρονοῦντας. Τολμηταί, αὐθάδεις, δόξας οὐ τρέμουσιν, βλασφημοῦντες,"
+    },
+    {
+      "ref": "Luke 8:47",
+      "negator": "οὐκ",
+      "clause_text": "ἰδοῦσα δὲ ἡ γυνὴ ὅτι οὐκ ἔλαθεν τρέμουσα ἦλθεν καὶ προσπεσοῦσα αὐτῷ δι’ ἣν αἰτίαν ἥψατο"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:10",
+      "reason": "occurs near αὐθάδης, καταφρονέω, τολμητής"
+    },
+    {
+      "ref": "Luke 8:47",
+      "reason": "occurs near γυνή, ἔρχομαι"
+    },
+    {
+      "ref": "Mark 5:33",
+      "reason": "occurs near γυνή, ἔρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

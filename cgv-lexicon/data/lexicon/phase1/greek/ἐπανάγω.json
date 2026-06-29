@@ -1,0 +1,169 @@
+{
+  "lemma": "ἐπανάγω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπαναγαγεῖν",
+      "count": 1
+    },
+    {
+      "form": "Ἐπανάγαγε",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπανάγων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "imperative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 5:3",
+      "form": "ἐπαναγαγεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "Σίμωνος, ἠρώτησεν αὐτὸν ἀπὸ τῆς γῆς",
+      "right_context": "ὀλίγον, ⸂καθίσας δὲ ἐκ τοῦ πλοίου"
+    },
+    {
+      "ref": "Luke 5:4",
+      "form": "Ἐπανάγαγε",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "ἐπαύσατο λαλῶν, εἶπεν πρὸς τὸν Σίμωνα·",
+      "right_context": "εἰς τὸ βάθος καὶ χαλάσατε τὰ"
+    },
+    {
+      "ref": "Matthew 21:18",
+      "form": "⸀ἐπανάγων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 18,
+      "left_context": "⸀Πρωῒ δὲ",
+      "right_context": "εἰς τὴν πόλιν ἐπείνασεν."
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐρωτάω",
+      "display": "preguntó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγος",
+      "display": "poco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίζω",
+      "display": "sentado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάθος",
+      "display": "profundidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαλάω",
+      "display": "bajad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρωΐ",
+      "display": "mañana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεινάω",
+      "display": "tener·hambre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 5:4",
+      "form": "Ἐπανάγαγε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ὡς δὲ ἐπαύσατο λαλῶν, εἶπεν πρὸς τὸν Σίμωνα· Ἐπανάγαγε εἰς τὸ βάθος καὶ χαλάσατε τὰ δίκτυα ὑμῶν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 5:4",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 5:3",
+      "reason": "occurs near γῆ, καθίζω, ἐρωτάω"
+    },
+    {
+      "ref": "Matthew 21:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

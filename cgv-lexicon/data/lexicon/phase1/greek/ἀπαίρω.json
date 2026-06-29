@@ -1,0 +1,116 @@
+{
+  "lemma": "ἀπαίρω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀπαρθῇ",
+      "count": 3
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 5:35",
+      "form": "ἀπαρθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 35,
+      "left_context": "ἐλεύσονται δὲ ἡμέραι, καὶ ὅταν",
+      "right_context": "ἀπ’ αὐτῶν ὁ νυμφίος τότε νηστεύσουσιν"
+    },
+    {
+      "ref": "Mark 2:20",
+      "form": "ἀπαρθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "ἐλεύσονται δὲ ἡμέραι ὅταν",
+      "right_context": "ἀπ’ αὐτῶν ὁ νυμφίος, καὶ τότε"
+    },
+    {
+      "ref": "Matthew 9:15",
+      "form": "ἀπαρθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 15,
+      "left_context": "ὁ νυμφίος; ἐλεύσονται δὲ ἡμέραι ὅταν",
+      "right_context": "ἀπ’ αὐτῶν ὁ νυμφίος, καὶ τότε"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νυμφίος",
+      "display": "novio",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vendrán",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 5:35",
+      "reason": "occurs near νυμφίος, τότε, ἔρχομαι"
+    },
+    {
+      "ref": "Mark 2:20",
+      "reason": "occurs near νυμφίος, ἔρχομαι, ἡμέρα"
+    },
+    {
+      "ref": "Matthew 9:15",
+      "reason": "occurs near νυμφίος, ἔρχομαι, ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

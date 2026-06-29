@@ -1,0 +1,110 @@
+{
+  "lemma": "ἐγκρατεύομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐγκρατεύονται,",
+      "count": 1
+    },
+    {
+      "form": "ἐγκρατεύεται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:9",
+      "form": "ἐγκρατεύονται,",
+      "morph": "V-P-M-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "εἰ δὲ οὐκ",
+      "right_context": "γαμησάτωσαν, κρεῖττον γάρ ἐστιν ⸀γαμῆσαι ἢ"
+    },
+    {
+      "ref": "1 Corinthians 9:25",
+      "form": "ἐγκρατεύεται,",
+      "morph": "V-P-M-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 25,
+      "left_context": "πᾶς δὲ ὁ ἀγωνιζόμενος πάντα",
+      "right_context": "ἐκεῖνοι μὲν οὖν ἵνα φθαρτὸν στέφανον"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρείττων",
+      "display": "mejor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγωνίζομαι",
+      "display": "luchando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθαρτός",
+      "display": "corruptible",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:9",
+      "negator": "οὐκ",
+      "clause_text": "εἰ δὲ οὐκ ἐγκρατεύονται, γαμησάτωσαν, κρεῖττον γάρ ἐστιν ⸀γαμῆσαι ἢ πυροῦσθαι."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 7:9",
+      "reason": "occurs near γαμέω, κρείττων"
+    },
+    {
+      "ref": "1 Corinthians 9:25",
+      "reason": "occurs near μέν, φθαρτός, ἀγωνίζομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

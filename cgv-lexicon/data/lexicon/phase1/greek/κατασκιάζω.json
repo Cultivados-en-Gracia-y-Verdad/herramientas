@@ -1,0 +1,80 @@
+{
+  "lemma": "κατασκιάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατασκιάζοντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 9:5",
+      "form": "κατασκιάζοντα",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 5,
+      "left_context": "ὑπεράνω δὲ αὐτῆς Χερουβὶν δόξης",
+      "right_context": "τὸ ἱλαστήριον· περὶ ὧν οὐκ ἔστιν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπεράνω",
+      "display": "por·encima",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χεροῦβ",
+      "display": "Querubín",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "de·gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱλαστήριον",
+      "display": "propiciatorio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 9:5",
+      "reason": "occurs near Χεροῦβ, δόξα, ἱλαστήριον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

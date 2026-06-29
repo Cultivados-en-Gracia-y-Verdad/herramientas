@@ -1,0 +1,100 @@
+{
+  "lemma": "κομάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κομᾷ,",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:14",
+      "form": "κομᾷ,",
+      "morph": "V-P-A-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 14,
+      "left_context": "διδάσκει ὑμᾶς ὅτι ἀνὴρ μὲν ἐὰν",
+      "right_context": "ἀτιμία αὐτῷ ἐστιν,"
+    },
+    {
+      "ref": "1 Corinthians 11:15",
+      "form": "κομᾷ,",
+      "morph": "V-P-A-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "γυνὴ δὲ ἐὰν",
+      "right_context": "δόξα αὐτῇ ἐστιν; ὅτι ἡ κόμη"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀτιμία",
+      "display": "deshonra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 11:14",
+      "reason": "occurs near μέν, ἀνήρ, ἀτιμία"
+    },
+    {
+      "ref": "1 Corinthians 11:15",
+      "reason": "occurs near γυνή, δόξα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

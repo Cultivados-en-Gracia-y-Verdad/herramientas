@@ -1,0 +1,316 @@
+{
+  "lemma": "μεταλαμβάνω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "μεταλαβεῖν",
+      "count": 2
+    },
+    {
+      "form": "μεταλαμβάνειν.",
+      "count": 1
+    },
+    {
+      "form": "μεταλαμβάνει",
+      "count": 1
+    },
+    {
+      "form": "μετελάμβανον",
+      "count": 1
+    },
+    {
+      "form": "μεταλαβὼν",
+      "count": 1
+    },
+    {
+      "form": "⸀μεταλαβεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 4,
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 4,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:6",
+      "form": "μεταλαμβάνειν.",
+      "morph": "V-P-A-N",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "κοπιῶντα γεωργὸν δεῖ πρῶτον τῶν καρπῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 6:7",
+      "form": "μεταλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "εὔθετον ἐκείνοις δι’ οὓς καὶ γεωργεῖται,",
+      "right_context": "εὐλογίας ἀπὸ τοῦ θεοῦ·"
+    },
+    {
+      "ref": "Hebrews 12:10",
+      "form": "μεταλαβεῖν",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 10,
+      "left_context": "δὲ ἐπὶ τὸ συμφέρον εἰς τὸ",
+      "right_context": "τῆς ἁγιότητος αὐτοῦ."
+    },
+    {
+      "ref": "Acts 2:46",
+      "form": "μετελάμβανον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 46,
+      "left_context": "ἱερῷ, κλῶντές τε κατ’ οἶκον ἄρτον,",
+      "right_context": "τροφῆς ἐν ἀγαλλιάσει καὶ ἀφελότητι καρδίας,"
+    },
+    {
+      "ref": "Acts 24:25",
+      "form": "μεταλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 25,
+      "left_context": "Τὸ νῦν ἔχον πορεύου, καιρὸν δὲ",
+      "right_context": "μετακαλέσομαί σε·"
+    },
+    {
+      "ref": "Acts 27:33",
+      "form": "μεταλαβεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 33,
+      "left_context": "ἤμελλεν⸃ γίνεσθαι παρεκάλει ὁ Παῦλος ἅπαντας",
+      "right_context": "τροφῆς λέγων· Τεσσαρεσκαιδεκάτην σήμερον ἡμέραν προσδοκῶντες"
+    },
+    {
+      "ref": "Acts 27:34",
+      "form": "⸀μεταλαβεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 34,
+      "left_context": "διὸ παρακαλῶ ὑμᾶς",
+      "right_context": "τροφῆς, τοῦτο γὰρ πρὸς τῆς ὑμετέρας"
+    }
+  ],
+  "books": {
+    "Acts": 4,
+    "Hebrews": 2,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τροφή",
+      "display": "de·alimento",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogaba",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γεωργός",
+      "display": "labrador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "de·frutos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεωργέω",
+      "display": "es cultivado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογία",
+      "display": "de·bendición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμφέρω",
+      "display": "conveniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁγιότης",
+      "display": "de·santidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλάω",
+      "display": "partiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαλλίασις",
+      "display": "gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφελότης",
+      "display": "sencillez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "e",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετακαλέομαι",
+      "display": "mandar·llamaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπας",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεσσαρεσκαιδέκατος",
+      "display": "decimocuarta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 24:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 27:33",
+      "reason": "occurs near παρακαλέω, τροφή"
+    },
+    {
+      "ref": "Acts 27:34",
+      "reason": "occurs near παρακαλέω, τροφή"
+    },
+    {
+      "ref": "Acts 2:46",
+      "reason": "occurs near τροφή"
+    },
+    {
+      "ref": "Hebrews 12:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 6:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Timothy 2:6",
+      "reason": "occurs near γεωργός, δέω, πρῶτος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

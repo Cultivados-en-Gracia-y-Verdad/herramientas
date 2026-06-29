@@ -1,0 +1,249 @@
+{
+  "lemma": "συνευδοκέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "συνευδοκεῖ",
+      "count": 2
+    },
+    {
+      "form": "συνευδοκῶν",
+      "count": 2
+    },
+    {
+      "form": "συνευδοκεῖτε",
+      "count": 1
+    },
+    {
+      "form": "συνευδοκοῦσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 6
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:12",
+      "form": "συνευδοκεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 12,
+      "left_context": "ἀδελφὸς γυναῖκα ἔχει ἄπιστον, καὶ αὕτη",
+      "right_context": "οἰκεῖν μετ’ αὐτοῦ, μὴ ἀφιέτω αὐτήν·"
+    },
+    {
+      "ref": "1 Corinthians 7:13",
+      "form": "συνευδοκεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 13,
+      "left_context": "τις⸃ ἔχει ἄνδρα ἄπιστον, καὶ ⸀οὗτος",
+      "right_context": "οἰκεῖν μετ’ αὐτῆς, μὴ ἀφιέτω ⸂τὸν"
+    },
+    {
+      "ref": "Acts 8:1",
+      "form": "συνευδοκῶν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 1,
+      "left_context": "Σαῦλος δὲ ἦν",
+      "right_context": "τῇ ἀναιρέσει αὐτοῦ. Ἐγένετο δὲ ἐν"
+    },
+    {
+      "ref": "Acts 22:20",
+      "form": "συνευδοκῶν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 20,
+      "left_context": "σου, καὶ αὐτὸς ἤμην ἐφεστὼς καὶ",
+      "right_context": "⸀καὶ φυλάσσων τὰ ἱμάτια τῶν ἀναιρούντων"
+    },
+    {
+      "ref": "Luke 11:48",
+      "form": "συνευδοκεῖτε",
+      "morph": "V-P-A-I-2P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 48,
+      "left_context": "ἄρα ⸂μάρτυρές ἐστε⸃ καὶ",
+      "right_context": "τοῖς ἔργοις τῶν πατέρων ὑμῶν, ὅτι"
+    },
+    {
+      "ref": "Romans 1:32",
+      "form": "συνευδοκοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 32,
+      "left_context": "οὐ μόνον αὐτὰ ποιοῦσιν ἀλλὰ καὶ",
+      "right_context": "τοῖς πράσσουσιν."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "Acts": 2,
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄπιστος",
+      "display": "incrédula",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκέω",
+      "display": "habitar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdona",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαῦλος",
+      "display": "Saulo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναίρεσις",
+      "display": "muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guardando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρα",
+      "display": "por·tanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάρτυς",
+      "display": "testigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "de·padres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πράσσω",
+      "display": "haciendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:12",
+      "negator": "μὴ",
+      "clause_text": "εἴ τις ἀδελφὸς γυναῖκα ἔχει ἄπιστον, καὶ αὕτη συνευδοκεῖ οἰκεῖν μετ’ αὐτοῦ, μὴ ἀφιέτω αὐτήν·"
+    },
+    {
+      "ref": "1 Corinthians 7:13",
+      "negator": "μὴ",
+      "clause_text": "γυνὴ ⸂εἴ τις⸃ ἔχει ἄνδρα ἄπιστον, καὶ ⸀οὗτος συνευδοκεῖ οἰκεῖν μετ’ αὐτῆς, μὴ ἀφιέτω ⸂τὸν ἄνδρα⸃."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 7:12",
+      "reason": "occurs near γυνή, οἰκέω, ἀφίημι"
+    },
+    {
+      "ref": "1 Corinthians 7:13",
+      "reason": "occurs near οἰκέω, ἀνήρ, ἀφίημι"
+    },
+    {
+      "ref": "Acts 22:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 8:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 11:48",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 1:32",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,120 @@
+{
+  "lemma": "ἀποτινάσσω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀποτινάξας",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀποτινάσσετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 28:5",
+      "form": "ἀποτινάξας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 5,
+      "left_context": "ὁ μὲν οὖν",
+      "right_context": "τὸ θηρίον εἰς τὸ πῦρ ἔπαθεν"
+    },
+    {
+      "ref": "Luke 9:5",
+      "form": "⸀ἀποτινάσσετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 5,
+      "left_context": "τὸν κονιορτὸν ἀπὸ τῶν ποδῶν ὑμῶν",
+      "right_context": "εἰς μαρτύριον ἐπ’ αὐτούς."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θηρίον",
+      "display": "bestia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κονιορτός",
+      "display": "polvo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "de·pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτύριον",
+      "display": "testimonio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 9:5",
+      "form": "⸀ἀποτινάσσετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "πόλεως ⸀ἐκείνης τὸν κονιορτὸν ἀπὸ τῶν ποδῶν ὑμῶν ⸀ἀποτινάσσετε εἰς μαρτύριον ἐπ’ αὐτούς."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 9:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 28:5",
+      "reason": "occurs near θηρίον, μέν, πῦρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

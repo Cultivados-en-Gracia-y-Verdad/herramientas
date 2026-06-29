@@ -1,0 +1,201 @@
+{
+  "lemma": "δαμάζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "δαμάσαι·",
+      "count": 1
+    },
+    {
+      "form": "δαμάζεται",
+      "count": 1
+    },
+    {
+      "form": "δεδάμασται",
+      "count": 1
+    },
+    {
+      "form": "⸂δαμάσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 5:4",
+      "form": "δαμάσαι·",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "πέδας συντετρῖφθαι, καὶ οὐδεὶς ⸂ἴσχυεν αὐτὸν⸃",
+      "right_context": ""
+    },
+    {
+      "ref": "James 3:7",
+      "form": "δαμάζεται",
+      "morph": "V-P-P-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "καὶ πετεινῶν ἑρπετῶν τε καὶ ἐναλίων",
+      "right_context": "καὶ δεδάμασται τῇ φύσει τῇ ἀνθρωπίνῃ·"
+    },
+    {
+      "ref": "James 3:7",
+      "form": "δεδάμασται",
+      "morph": "V-X-P-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "ἑρπετῶν τε καὶ ἐναλίων δαμάζεται καὶ",
+      "right_context": "τῇ φύσει τῇ ἀνθρωπίνῃ·"
+    },
+    {
+      "ref": "James 3:8",
+      "form": "⸂δαμάσαι",
+      "morph": "V-A-A-N",
+      "book": "James",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "τὴν δὲ γλῶσσαν οὐδεὶς",
+      "right_context": "δύναται ἀνθρώπων⸃· ⸀ἀκατάστατον κακόν, μεστὴ ἰοῦ"
+    }
+  ],
+  "books": {
+    "James": 3,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνάλιον",
+      "display": "de·mares",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δαμάζω",
+      "display": "ha domado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φύσις",
+      "display": "naturaleza",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συντρίβω",
+      "display": "quebrantar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "podía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πετεινόν",
+      "display": "de·aves",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑρπετόν",
+      "display": "de·reptiles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνθρώπινος",
+      "display": "humana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lengua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puede",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκατάστατος",
+      "display": "inconstante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακός",
+      "display": "malo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεστός",
+      "display": "llena",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:7",
+      "reason": "occurs near δαμάζω, τέ, φύσις"
+    },
+    {
+      "ref": "James 3:8",
+      "reason": "occurs near δαμάζω"
+    },
+    {
+      "ref": "Mark 5:4",
+      "reason": "occurs near δαμάζω, συντρίβω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀνταναπληρόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀνταναπληρῶ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 1:24",
+      "form": "ἀνταναπληρῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "ἐν τοῖς παθήμασιν ὑπὲρ ὑμῶν, καὶ",
+      "right_context": "τὰ ὑστερήματα τῶν θλίψεων τοῦ Χριστοῦ"
+    }
+  ],
+  "books": {
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάθημα",
+      "display": "padecimientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑστέρημα",
+      "display": "faltas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "de·tribulaciónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 1:24",
+      "reason": "occurs near θλῖψις, πάθημα, ὑπέρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

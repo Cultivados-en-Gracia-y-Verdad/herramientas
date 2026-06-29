@@ -1,0 +1,68 @@
+{
+  "lemma": "μαραίνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μαρανθήσεται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 1:11",
+      "form": "μαρανθήσεται.",
+      "morph": "V-F-P-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ὁ πλούσιος ἐν ταῖς πορείαις αὐτοῦ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλούσιος",
+      "display": "rico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεία",
+      "display": "caminos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:11",
+      "reason": "occurs near πλούσιος, πορεία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

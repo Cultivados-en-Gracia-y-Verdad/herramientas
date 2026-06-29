@@ -1,0 +1,123 @@
+{
+  "lemma": "συμπαθέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συμπαθῆσαι",
+      "count": 1
+    },
+    {
+      "form": "συνεπαθήσατε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 4:15",
+      "form": "συμπαθῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "οὐ γὰρ ἔχομεν ἀρχιερέα μὴ δυνάμενον",
+      "right_context": "ταῖς ἀσθενείαις ἡμῶν, ⸀πεπειρασμένον δὲ κατὰ"
+    },
+    {
+      "ref": "Hebrews 10:34",
+      "form": "συνεπαθήσατε,",
+      "morph": "V-A-A-I-2P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 34,
+      "left_context": "καὶ γὰρ τοῖς ⸀δεσμίοις",
+      "right_context": "καὶ τὴν ἁρπαγὴν τῶν ὑπαρχόντων ὑμῶν"
+    }
+  ],
+  "books": {
+    "Hebrews": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθένεια",
+      "display": "enfermedades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειράζω",
+      "display": "tentado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέσμιος",
+      "display": "prisioneros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁρπαγή",
+      "display": "rapiña",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 4:15",
+      "negator": "μὴ",
+      "clause_text": "οὐ γὰρ ἔχομεν ἀρχιερέα μὴ δυνάμενον συμπαθῆσαι ταῖς ἀσθενείαις ἡμῶν, ⸀πεπειρασμένον δὲ κατὰ πάντα καθ’"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:34",
+      "reason": "occurs near δέσμιος"
+    },
+    {
+      "ref": "Hebrews 4:15",
+      "reason": "occurs near δύναμαι, πειράζω, ἀρχιερεύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

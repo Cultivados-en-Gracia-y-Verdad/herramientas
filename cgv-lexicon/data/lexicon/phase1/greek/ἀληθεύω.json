@@ -1,0 +1,99 @@
+{
+  "lemma": "ἀληθεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀληθεύοντες",
+      "count": 1
+    },
+    {
+      "form": "ἀληθεύων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 4:15",
+      "form": "ἀληθεύοντες",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "",
+      "right_context": "δὲ ἐν ἀγάπῃ αὐξήσωμεν εἰς αὐτὸν"
+    },
+    {
+      "ref": "Galatians 4:16",
+      "form": "ἀληθεύων",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "ὥστε ἐχθρὸς ὑμῶν γέγονα",
+      "right_context": "ὑμῖν;"
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐξάνω",
+      "display": "crecamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐχθρός",
+      "display": "enemigo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 4:15",
+      "reason": "occurs near αὐξάνω, ἀγάπη"
+    },
+    {
+      "ref": "Galatians 4:16",
+      "reason": "occurs near ἐχθρός, ὥστε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

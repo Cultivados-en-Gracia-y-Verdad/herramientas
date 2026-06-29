@@ -1,0 +1,125 @@
+{
+  "lemma": "ὑπερπερισσεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ὑπερπερισσεύομαι",
+      "count": 1
+    },
+    {
+      "form": "ὑπερεπερίσσευσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 7:4",
+      "form": "ὑπερπερισσεύομαι",
+      "morph": "V-P-P-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 4,
+      "left_context": "καύχησις ὑπὲρ ὑμῶν· πεπλήρωμαι τῇ παρακλήσει,",
+      "right_context": "τῇ χαρᾷ ἐπὶ πάσῃ τῇ θλίψει"
+    },
+    {
+      "ref": "Romans 5:20",
+      "form": "ὑπερεπερίσσευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "παράπτωμα· οὗ δὲ ἐπλεόνασεν ἡ ἁμαρτία,",
+      "right_context": "ἡ χάρις,"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "he cumplido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρά",
+      "display": "gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὗ",
+      "display": "del·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονάζω",
+      "display": "abundó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 7:4",
+      "reason": "occurs near παράκλησις, πληρόω, χαρά"
+    },
+    {
+      "ref": "Romans 5:20",
+      "reason": "occurs near οὗ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

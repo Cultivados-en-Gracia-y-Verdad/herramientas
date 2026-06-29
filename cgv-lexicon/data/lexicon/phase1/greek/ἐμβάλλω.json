@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐμβάλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐμβαλεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:5",
+      "form": "ἐμβαλεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "τὸν μετὰ τὸ ἀποκτεῖναι ⸂ἔχοντα ἐξουσίαν⸃",
+      "right_context": "εἰς τὴν γέενναν· ναί, λέγω ὑμῖν,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "matar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γέεννα",
+      "display": "gehenna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναί",
+      "display": "sí",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:5",
+      "reason": "occurs near γέεννα, ναί, ἀποκτείνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

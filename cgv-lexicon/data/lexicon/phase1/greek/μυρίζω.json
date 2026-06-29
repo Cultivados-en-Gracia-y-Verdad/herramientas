@@ -1,0 +1,68 @@
+{
+  "lemma": "μυρίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μυρίσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 14:8",
+      "form": "μυρίσαι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 8,
+      "left_context": "ὃ ⸀ἔσχεν ἐποίησεν, προέλαβεν",
+      "right_context": "⸂τὸ σῶμά μου⸃ εἰς τὸν ἐνταφιασμόν."
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προλαμβάνω",
+      "display": "anticiparse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 14:8",
+      "reason": "occurs near προλαμβάνω, σῶμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

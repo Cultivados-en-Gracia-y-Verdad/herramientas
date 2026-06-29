@@ -1,0 +1,304 @@
+{
+  "lemma": "ἀγωνίζομαι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἀγωνιζόμενος",
+      "count": 3
+    },
+    {
+      "form": "ἀγωνίζου",
+      "count": 1
+    },
+    {
+      "form": "ἠγώνισμαι,",
+      "count": 1
+    },
+    {
+      "form": "ἠγωνίζοντο",
+      "count": 1
+    },
+    {
+      "form": "Ἀγωνίζεσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "imperative": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 5,
+      "perfect": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:25",
+      "form": "ἀγωνιζόμενος",
+      "morph": "V-P-M-P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 25,
+      "left_context": "πᾶς δὲ ὁ",
+      "right_context": "πάντα ἐγκρατεύεται, ἐκεῖνοι μὲν οὖν ἵνα"
+    },
+    {
+      "ref": "1 Timothy 6:12",
+      "form": "ἀγωνίζου",
+      "morph": "V-P-M-D-2S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "",
+      "right_context": "τὸν καλὸν ἀγῶνα τῆς πίστεως, ἐπιλαβοῦ"
+    },
+    {
+      "ref": "2 Timothy 4:7",
+      "form": "ἠγώνισμαι,",
+      "morph": "V-X-M-I-1S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "τὸν ⸂καλὸν ἀγῶνα⸃",
+      "right_context": "τὸν δρόμον τετέλεκα, τὴν πίστιν τετήρηκα·"
+    },
+    {
+      "ref": "Colossians 1:29",
+      "form": "ἀγωνιζόμενος",
+      "morph": "V-P-M-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 29,
+      "left_context": "εἰς ὃ καὶ κοπιῶ",
+      "right_context": "κατὰ τὴν ἐνέργειαν αὐτοῦ τὴν ἐνεργουμένην"
+    },
+    {
+      "ref": "Colossians 4:12",
+      "form": "ἀγωνιζόμενος",
+      "morph": "V-P-M-P",
+      "book": "Colossians",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "ὁ ἐξ ὑμῶν, δοῦλος ⸀Χριστοῦ, πάντοτε",
+      "right_context": "ὑπὲρ ὑμῶν ἐν ταῖς προσευχαῖς, ἵνα"
+    },
+    {
+      "ref": "John 18:36",
+      "form": "ἠγωνίζοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 36,
+      "left_context": "ἡ ἐμή, οἱ ὑπηρέται ⸂οἱ ἐμοὶ",
+      "right_context": "ἄν⸃, ἵνα μὴ παραδοθῶ τοῖς Ἰουδαίοις·"
+    },
+    {
+      "ref": "Luke 13:24",
+      "form": "Ἀγωνίζεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 24,
+      "left_context": "",
+      "right_context": "εἰσελθεῖν διὰ τῆς στενῆς ⸀θύρας, ὅτι"
+    }
+  ],
+  "books": {
+    "Colossians": 2,
+    "1 Corinthians": 1,
+    "1 Timothy": 1,
+    "2 Timothy": 1,
+    "John": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγών",
+      "display": "lucha",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμός",
+      "display": "mi",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκρατεύομαι",
+      "display": "tener·dominio·propio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δρόμος",
+      "display": "carrera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελέω",
+      "display": "he cumplido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνέργεια",
+      "display": "operación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοτε",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσευχή",
+      "display": "oraciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπηρέτης",
+      "display": "servidores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entrege",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στενός",
+      "display": "de·estrecha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θύρα",
+      "display": "de·puerta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 6:12",
+      "form": "ἀγωνίζου",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "ἀγωνίζου τὸν καλὸν ἀγῶνα τῆς πίστεως, ἐπιλαβοῦ τῆς αἰωνίου"
+    },
+    {
+      "ref": "Luke 13:24",
+      "form": "Ἀγωνίζεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "Ἀγωνίζεσθε εἰσελθεῖν διὰ τῆς στενῆς ⸀θύρας, ὅτι πολλοί, λέγω"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 18:36",
+      "negator": "μὴ",
+      "clause_text": "ἡ βασιλεία ἡ ἐμή, οἱ ὑπηρέται ⸂οἱ ἐμοὶ ἠγωνίζοντο ἄν⸃, ἵνα μὴ παραδοθῶ τοῖς Ἰουδαίοις· νῦν δὲ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 13:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Colossians 1:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Colossians 4:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 9:25",
+      "reason": "occurs near ἐγκρατεύομαι"
+    },
+    {
+      "ref": "2 Timothy 4:7",
+      "reason": "occurs near καλός, πίστις, ἀγών"
+    },
+    {
+      "ref": "John 18:36",
+      "reason": "occurs near ἐμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

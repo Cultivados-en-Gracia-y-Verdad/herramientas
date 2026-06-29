@@ -1,0 +1,149 @@
+{
+  "lemma": "πνίγω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπνίγοντο",
+      "count": 1
+    },
+    {
+      "form": "⸀ἔπνιξαν",
+      "count": 1
+    },
+    {
+      "form": "ἔπνιγεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "imperfect": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 5:13",
+      "form": "ἐπνίγοντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "εἰς τὴν θάλασσαν, ⸀ὡς δισχίλιοι, καὶ",
+      "right_context": "ἐν τῇ θαλάσσῃ."
+    },
+    {
+      "ref": "Matthew 13:7",
+      "form": "⸀ἔπνιξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ",
+      "right_context": "αὐτά."
+    },
+    {
+      "ref": "Matthew 18:28",
+      "form": "ἔπνιγεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 28,
+      "left_context": "αὐτῷ ἑκατὸν δηνάρια, καὶ κρατήσας αὐτὸν",
+      "right_context": "λέγων· ⸀Ἀπόδος εἴ τι ὀφείλεις."
+    }
+  ],
+  "books": {
+    "Matthew": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δισχίλιοι",
+      "display": "dos·mil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκανθα",
+      "display": "espinas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑκατόν",
+      "display": "cienes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δηνάριον",
+      "display": "denarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφείλω",
+      "display": "debes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 13:7",
+      "reason": "occurs near ἀναβαίνω, ἄκανθα"
+    },
+    {
+      "ref": "Matthew 18:28",
+      "reason": "occurs near ἑκατόν"
+    },
+    {
+      "ref": "Mark 5:13",
+      "reason": "occurs near δισχίλιοι, θάλασσα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

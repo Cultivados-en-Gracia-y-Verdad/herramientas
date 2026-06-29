@@ -1,0 +1,165 @@
+{
+  "lemma": "ἀπατάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἠπατήθη,",
+      "count": 1
+    },
+    {
+      "form": "ἀπατάτω",
+      "count": 1
+    },
+    {
+      "form": "ἀπατῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "imperative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 2:14",
+      "form": "ἠπατήθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "καὶ Ἀδὰμ οὐκ",
+      "right_context": "ἡ δὲ γυνὴ ⸀ἐξαπατηθεῖσα ἐν παραβάσει"
+    },
+    {
+      "ref": "Ephesians 5:6",
+      "form": "ἀπατάτω",
+      "morph": "V-P-A-D-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "Μηδεὶς ὑμᾶς",
+      "right_context": "κενοῖς λόγοις, διὰ ταῦτα γὰρ ἔρχεται"
+    },
+    {
+      "ref": "James 1:26",
+      "form": "ἀπατῶν",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 26,
+      "left_context": "⸀εἶναι μὴ χαλιναγωγῶν γλῶσσαν ⸀αὐτοῦ ἀλλὰ",
+      "right_context": "καρδίαν ⸀αὐτοῦ, τούτου μάταιος ἡ θρησκεία."
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Ephesians": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἀδάμ",
+      "display": "Adán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξαπατάω",
+      "display": "engañada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κενός",
+      "display": "vacíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαλιναγωγέω",
+      "display": "refrenando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lengua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάταιος",
+      "display": "vana",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Ephesians 5:6",
+      "form": "ἀπατάτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "Μηδεὶς ὑμᾶς ἀπατάτω κενοῖς λόγοις, διὰ ταῦτα γὰρ ἔρχεται ἡ ὀργὴ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 2:14",
+      "negator": "οὐκ",
+      "clause_text": "καὶ Ἀδὰμ οὐκ ἠπατήθη, ἡ δὲ γυνὴ ⸀ἐξαπατηθεῖσα ἐν παραβάσει γέγονεν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 5:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 2:14",
+      "reason": "occurs near γυνή, Ἀδάμ, ἐξαπατάω"
+    },
+    {
+      "ref": "James 1:26",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

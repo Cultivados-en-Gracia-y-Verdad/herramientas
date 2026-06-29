@@ -1,0 +1,215 @@
+{
+  "lemma": "δαπανάω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "δαπανήσω",
+      "count": 1
+    },
+    {
+      "form": "δαπάνησον",
+      "count": 1
+    },
+    {
+      "form": "δαπανήσαντος",
+      "count": 1
+    },
+    {
+      "form": "δαπανήσασα",
+      "count": 1
+    },
+    {
+      "form": "δαπανήσητε.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "imperative": 1,
+      "participle": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 12:15",
+      "form": "δαπανήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "ἐγὼ δὲ ἥδιστα",
+      "right_context": "καὶ ἐκδαπανηθήσομαι ὑπὲρ τῶν ψυχῶν ὑμῶν."
+    },
+    {
+      "ref": "Acts 21:24",
+      "form": "δαπάνησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 24,
+      "left_context": "τούτους παραλαβὼν ἁγνίσθητι σὺν αὐτοῖς καὶ",
+      "right_context": "ἐπ’ αὐτοῖς ἵνα ⸀ξυρήσονται τὴν κεφαλήν,"
+    },
+    {
+      "ref": "Luke 15:14",
+      "form": "δαπανήσαντος",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 14,
+      "left_context": "",
+      "right_context": "δὲ αὐτοῦ πάντα ἐγένετο λιμὸς ⸀ἰσχυρὰ"
+    },
+    {
+      "ref": "Mark 5:26",
+      "form": "δαπανήσασα",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 26,
+      "left_context": "πολλὰ παθοῦσα ὑπὸ πολλῶν ἰατρῶν καὶ",
+      "right_context": "τὰ παρ’ αὐτῆς πάντα καὶ μηδὲν"
+    },
+    {
+      "ref": "James 4:3",
+      "form": "δαπανήσητε.",
+      "morph": "V-A-A-S-2P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "αἰτεῖσθε, ἵνα ἐν ταῖς ἡδοναῖς ὑμῶν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Acts": 1,
+    "Luke": 1,
+    "Mark": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἥδιστα",
+      "display": "con·mucho·gusto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδαπανάομαι",
+      "display": "será gastado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "de·almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁγνίζω",
+      "display": "purifica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξυράομαι",
+      "display": "afeitarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λιμός",
+      "display": "hambre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padecida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰατρός",
+      "display": "de·médicos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡδονή",
+      "display": "placeres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 21:24",
+      "form": "δαπάνησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "τούτους παραλαβὼν ἁγνίσθητι σὺν αὐτοῖς καὶ δαπάνησον ἐπ’ αὐτοῖς ἵνα ⸀ξυρήσονται τὴν κεφαλήν, καὶ ⸀γνώσονται"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 12:15",
+      "reason": "occurs near ψυχή, ἐκδαπανάομαι, ἥδιστα"
+    },
+    {
+      "ref": "James 4:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 15:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 5:26",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

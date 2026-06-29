@@ -1,0 +1,297 @@
+{
+  "lemma": "πρέπω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "πρέπει",
+      "count": 3
+    },
+    {
+      "form": "πρέπον",
+      "count": 2
+    },
+    {
+      "form": "Ἔπρεπεν",
+      "count": 1
+    },
+    {
+      "form": "ἔπρεπεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 5
+    },
+    "tenses": {
+      "present": 5,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:13",
+      "form": "πρέπον",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 13,
+      "left_context": "ἐν ὑμῖν αὐτοῖς κρίνατε·",
+      "right_context": "ἐστὶν γυναῖκα ἀκατακάλυπτον τῷ θεῷ προσεύχεσθαι;"
+    },
+    {
+      "ref": "1 Timothy 2:10",
+      "form": "πρέπει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "ἀλλ’ ὃ",
+      "right_context": "γυναιξὶν ἐπαγγελλομέναις θεοσέβειαν, δι’ ἔργων ἀγαθῶν."
+    },
+    {
+      "ref": "Ephesians 5:3",
+      "form": "πρέπει",
+      "morph": "V-P-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "πλεονεξία μηδὲ ὀνομαζέσθω ἐν ὑμῖν, καθὼς",
+      "right_context": "ἁγίοις,"
+    },
+    {
+      "ref": "Hebrews 2:10",
+      "form": "Ἔπρεπεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "",
+      "right_context": "γὰρ αὐτῷ, δι’ ὃν τὰ πάντα"
+    },
+    {
+      "ref": "Hebrews 7:26",
+      "form": "ἔπρεπεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 26,
+      "left_context": "Τοιοῦτος γὰρ ἡμῖν ⸀καὶ",
+      "right_context": "ἀρχιερεύς, ὅσιος, ἄκακος, ἀμίαντος, κεχωρισμένος ἀπὸ"
+    },
+    {
+      "ref": "Matthew 3:15",
+      "form": "πρέπον",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "⸂πρὸς αὐτόν⸃· Ἄφες ἄρτι, οὕτως γὰρ",
+      "right_context": "ἐστὶν ἡμῖν πληρῶσαι πᾶσαν δικαιοσύνην. τότε"
+    },
+    {
+      "ref": "Titus 2:1",
+      "form": "πρέπει",
+      "morph": "V-P-A-I-3S",
+      "book": "Titus",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "Σὺ δὲ λάλει ἃ",
+      "right_context": "τῇ ὑγιαινούσῃ διδασκαλίᾳ."
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "1 Corinthians": 1,
+    "1 Timothy": 1,
+    "Ephesians": 1,
+    "Matthew": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "juzgad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκατακάλυπτος",
+      "display": "descubierta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγέλλομαι",
+      "display": "prometiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεοσέβεια",
+      "display": "piedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνομάζω",
+      "display": "nombra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκακος",
+      "display": "inocente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμίαντος",
+      "display": "sin·mancha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίζω",
+      "display": "separado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdona",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτι",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumplir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "habla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑγιαίνω",
+      "display": "estar·sano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδασκαλία",
+      "display": "doctrina",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 2:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 7:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 11:13",
+      "reason": "occurs near γυνή, θεός, κρίνω"
+    },
+    {
+      "ref": "1 Timothy 2:10",
+      "reason": "occurs near γυνή, ἐπαγγέλλομαι"
+    },
+    {
+      "ref": "Ephesians 5:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 3:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Titus 2:1",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

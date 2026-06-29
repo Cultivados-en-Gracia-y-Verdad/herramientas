@@ -1,0 +1,591 @@
+{
+  "lemma": "ὀμνύω",
+  "language": "greek",
+  "total_occurrences": 26,
+  "forms": [
+    {
+      "form": "ὤμοσεν",
+      "count": 5
+    },
+    {
+      "form": "ὀμόσῃ",
+      "count": 4
+    },
+    {
+      "form": "ὀμόσας",
+      "count": 3
+    },
+    {
+      "form": "ὀμνύει",
+      "count": 3
+    },
+    {
+      "form": "ὤμοσα",
+      "count": 2
+    },
+    {
+      "form": "⸀ὤμοσεν",
+      "count": 1
+    },
+    {
+      "form": "ὀμόσαι,",
+      "count": 1
+    },
+    {
+      "form": "ὀμνύουσιν,",
+      "count": 1
+    },
+    {
+      "form": "Ὤμοσεν",
+      "count": 1
+    },
+    {
+      "form": "ὀμνύναι",
+      "count": 1
+    },
+    {
+      "form": "ὀμόσαι",
+      "count": 1
+    },
+    {
+      "form": "ὀμόσῃς,",
+      "count": 1
+    },
+    {
+      "form": "ὀμνύειν",
+      "count": 1
+    },
+    {
+      "form": "ὀμνύετε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 13,
+      "infinitive": 4,
+      "subjunctive": 5,
+      "participle": 3,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 19,
+      "present": 7
+    },
+    "voices": {
+      "active": 26
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 10:6",
+      "form": "⸀ὤμοσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 10,
+      "verse": 6,
+      "left_context": "καὶ",
+      "right_context": "τῷ ζῶντι εἰς τοὺς αἰῶνας τῶν"
+    },
+    {
+      "ref": "Hebrews 3:11",
+      "form": "ὤμοσα",
+      "morph": "V-A-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 11,
+      "left_context": "ὡς",
+      "right_context": "ἐν τῇ ὀργῇ μου· Εἰ εἰσελεύσονται"
+    },
+    {
+      "ref": "Hebrews 3:18",
+      "form": "ὤμοσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "τίσιν δὲ",
+      "right_context": "μὴ εἰσελεύσεσθαι εἰς τὴν κατάπαυσιν αὐτοῦ"
+    },
+    {
+      "ref": "Hebrews 4:3",
+      "form": "ὤμοσα",
+      "morph": "V-A-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "κατάπαυσιν οἱ πιστεύσαντες, καθὼς εἴρηκεν· Ὡς",
+      "right_context": "ἐν τῇ ὀργῇ μου, Εἰ εἰσελεύσονται"
+    },
+    {
+      "ref": "Hebrews 6:13",
+      "form": "ὀμόσαι,",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "θεός, ἐπεὶ κατ’ οὐδενὸς εἶχεν μείζονος",
+      "right_context": "ὤμοσεν καθ’ ἑαυτοῦ,"
+    },
+    {
+      "ref": "Hebrews 6:13",
+      "form": "ὤμοσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "ἐπεὶ κατ’ οὐδενὸς εἶχεν μείζονος ὀμόσαι,",
+      "right_context": "καθ’ ἑαυτοῦ,"
+    },
+    {
+      "ref": "Hebrews 6:16",
+      "form": "ὀμνύουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 16,
+      "left_context": "⸀ἄνθρωποι γὰρ κατὰ τοῦ μείζονος",
+      "right_context": "καὶ πάσης αὐτοῖς ἀντιλογίας πέρας εἰς"
+    },
+    {
+      "ref": "Hebrews 7:21",
+      "form": "Ὤμοσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 21,
+      "left_context": "ὁρκωμοσίας διὰ τοῦ λέγοντος πρὸς αὐτόν·",
+      "right_context": "κύριος, καὶ οὐ μεταμεληθήσεται, Σὺ ἱερεὺς"
+    },
+    {
+      "ref": "Acts 2:30",
+      "form": "ὤμοσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 30,
+      "left_context": "οὖν ὑπάρχων, καὶ εἰδὼς ὅτι ὅρκῳ",
+      "right_context": "αὐτῷ ὁ θεὸς ἐκ καρποῦ τῆς"
+    },
+    {
+      "ref": "Luke 1:73",
+      "form": "ὤμοσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 73,
+      "left_context": "ὅρκον ὃν",
+      "right_context": "πρὸς Ἀβραὰμ τὸν πατέρα ἡμῶν, τοῦ"
+    },
+    {
+      "ref": "Mark 6:23",
+      "form": "ὤμοσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 23,
+      "left_context": "καὶ",
+      "right_context": "⸀αὐτῇ· ⸂Ὅ τι⸃ ἐάν με αἰτήσῃς"
+    },
+    {
+      "ref": "Mark 14:71",
+      "form": "ὀμνύναι",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 71,
+      "left_context": "ὁ δὲ ἤρξατο ἀναθεματίζειν καὶ",
+      "right_context": "ὅτι Οὐκ οἶδα τὸν ἄνθρωπον τοῦτον"
+    },
+    {
+      "ref": "Matthew 5:34",
+      "form": "ὀμόσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 34,
+      "left_context": "ἐγὼ δὲ λέγω ὑμῖν μὴ",
+      "right_context": "ὅλως· μήτε ἐν τῷ οὐρανῷ, ὅτι"
+    },
+    {
+      "ref": "Matthew 5:36",
+      "form": "ὀμόσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 36,
+      "left_context": "μήτε ἐν τῇ κεφαλῇ σου",
+      "right_context": "ὅτι οὐ δύνασαι μίαν τρίχα λευκὴν"
+    },
+    {
+      "ref": "Matthew 23:16",
+      "form": "ὀμόσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 16,
+      "left_context": "ὁδηγοὶ τυφλοὶ οἱ λέγοντες· Ὃς ἂν",
+      "right_context": "ἐν τῷ ναῷ, οὐδέν ἐστιν, ὃς"
+    },
+    {
+      "ref": "Matthew 23:16",
+      "form": "ὀμόσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 16,
+      "left_context": "ναῷ, οὐδέν ἐστιν, ὃς δ’ ἂν",
+      "right_context": "ἐν τῷ χρυσῷ τοῦ ναοῦ ὀφείλει."
+    },
+    {
+      "ref": "Matthew 23:18",
+      "form": "ὀμόσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 18,
+      "left_context": "καί· Ὃς ⸀ἂν",
+      "right_context": "ἐν τῷ θυσιαστηρίῳ, οὐδέν ἐστιν, ὃς"
+    },
+    {
+      "ref": "Matthew 23:18",
+      "form": "ὀμόσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 18,
+      "left_context": "θυσιαστηρίῳ, οὐδέν ἐστιν, ὃς δ’ ἂν",
+      "right_context": "ἐν τῷ δώρῳ τῷ ἐπάνω αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 23:20",
+      "form": "ὀμόσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 20,
+      "left_context": "ὁ οὖν",
+      "right_context": "ἐν τῷ θυσιαστηρίῳ ὀμνύει ἐν αὐτῷ"
+    },
+    {
+      "ref": "Matthew 23:20",
+      "form": "ὀμνύει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 20,
+      "left_context": "ὁ οὖν ὀμόσας ἐν τῷ θυσιαστηρίῳ",
+      "right_context": "ἐν αὐτῷ καὶ ἐν πᾶσι τοῖς"
+    },
+    {
+      "ref": "Matthew 23:21",
+      "form": "ὀμόσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 21,
+      "left_context": "καὶ ὁ",
+      "right_context": "ἐν τῷ ναῷ ὀμνύει ἐν αὐτῷ"
+    },
+    {
+      "ref": "Matthew 23:21",
+      "form": "ὀμνύει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 21,
+      "left_context": "καὶ ὁ ὀμόσας ἐν τῷ ναῷ",
+      "right_context": "ἐν αὐτῷ καὶ ἐν τῷ ⸀κατοικοῦντι"
+    },
+    {
+      "ref": "Matthew 23:22",
+      "form": "ὀμόσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 22,
+      "left_context": "καὶ ὁ",
+      "right_context": "ἐν τῷ οὐρανῷ ὀμνύει ἐν τῷ"
+    },
+    {
+      "ref": "Matthew 23:22",
+      "form": "ὀμνύει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 22,
+      "left_context": "καὶ ὁ ὀμόσας ἐν τῷ οὐρανῷ",
+      "right_context": "ἐν τῷ θρόνῳ τοῦ θεοῦ καὶ"
+    },
+    {
+      "ref": "Matthew 26:74",
+      "form": "ὀμνύειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 74,
+      "left_context": "τότε ἤρξατο καταθεματίζειν καὶ",
+      "right_context": "ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. καὶ"
+    },
+    {
+      "ref": "James 5:12",
+      "form": "ὀμνύετε,",
+      "morph": "V-P-A-D-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 12,
+      "left_context": "Πρὸ πάντων δέ, ἀδελφοί μου, μὴ",
+      "right_context": "μήτε τὸν οὐρανὸν μήτε τὴν γῆν"
+    }
+  ],
+  "books": {
+    "Matthew": 13,
+    "Hebrews": 7,
+    "Mark": 2,
+    "Revelation": 1,
+    "Acts": 1,
+    "Luke": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀμνύω",
+      "display": "juró",
+      "count": 8,
+      "window": 5
+    },
+    {
+      "lemma": "μήτε",
+      "display": "ni",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ναός",
+      "display": "templo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "de·grande",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θυσιαστήριον",
+      "display": "altar",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὀργή",
+      "display": "ira",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅρκος",
+      "display": "juramento",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "he sabido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "siglos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάπαυσις",
+      "display": "reposo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπεί",
+      "display": "puesto·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντιλογία",
+      "display": "de·contradicción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέρας",
+      "display": "confines",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεταμέλομαι",
+      "display": "arrepentirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "James 5:12",
+      "form": "ὀμνύετε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Πρὸ πάντων δέ, ἀδελφοί μου, μὴ ὀμνύετε, μήτε τὸν οὐρανὸν μήτε τὴν γῆν μήτε ἄλλον",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 3:18",
+      "negator": "μὴ",
+      "clause_text": "τίσιν δὲ ὤμοσεν μὴ εἰσελεύσεσθαι εἰς τὴν κατάπαυσιν αὐτοῦ εἰ μὴ"
+    },
+    {
+      "ref": "Hebrews 7:21",
+      "negator": "οὐ",
+      "clause_text": "δὲ μετὰ ὁρκωμοσίας διὰ τοῦ λέγοντος πρὸς αὐτόν· Ὤμοσεν κύριος, καὶ οὐ μεταμεληθήσεται, Σὺ ἱερεὺς εἰς τὸν"
+    },
+    {
+      "ref": "Mark 14:71",
+      "negator": "Οὐκ",
+      "clause_text": "ὁ δὲ ἤρξατο ἀναθεματίζειν καὶ ὀμνύναι ὅτι Οὐκ οἶδα τὸν ἄνθρωπον τοῦτον ὃν λέγετε."
+    },
+    {
+      "ref": "Matthew 5:34",
+      "negator": "μὴ",
+      "clause_text": "ἐγὼ δὲ λέγω ὑμῖν μὴ ὀμόσαι ὅλως· μήτε ἐν τῷ οὐρανῷ, ὅτι θρόνος ἐστὶν"
+    },
+    {
+      "ref": "Matthew 5:36",
+      "negator": "οὐ",
+      "clause_text": "μήτε ἐν τῇ κεφαλῇ σου ὀμόσῃς, ὅτι οὐ δύνασαι μίαν τρίχα λευκὴν ⸂ποιῆσαι ἢ"
+    },
+    {
+      "ref": "Matthew 26:74",
+      "negator": "Οὐκ",
+      "clause_text": "τότε ἤρξατο καταθεματίζειν καὶ ὀμνύειν ὅτι Οὐκ οἶδα τὸν ἄνθρωπον. καὶ ⸀εὐθέως ἀλέκτωρ"
+    },
+    {
+      "ref": "James 5:12",
+      "negator": "μὴ",
+      "clause_text": "Πρὸ πάντων δέ, ἀδελφοί μου, μὴ ὀμνύετε, μήτε τὸν οὐρανὸν μήτε τὴν γῆν μήτε ἄλλον"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:12",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 23:16",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 23:18",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 23:20",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 23:21",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 23:22",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 26:74",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 5:34",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

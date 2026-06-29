@@ -1,0 +1,128 @@
+{
+  "lemma": "πλέκω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "πλέξαντες",
+      "count": 3
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "John 19:2",
+      "form": "πλέξαντες",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 2,
+      "left_context": "καὶ οἱ στρατιῶται",
+      "right_context": "στέφανον ἐξ ἀκανθῶν ἐπέθηκαν αὐτοῦ τῇ"
+    },
+    {
+      "ref": "Mark 15:17",
+      "form": "πλέξαντες",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 17,
+      "left_context": "⸀ἐνδιδύσκουσιν αὐτὸν πορφύραν καὶ περιτιθέασιν αὐτῷ",
+      "right_context": "ἀκάνθινον στέφανον·"
+    },
+    {
+      "ref": "Matthew 27:29",
+      "form": "πλέξαντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 29,
+      "left_context": "καὶ",
+      "right_context": "στέφανον ἐξ ἀκανθῶν ἐπέθηκαν ἐπὶ ⸂τῆς"
+    }
+  ],
+  "books": {
+    "John": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "στέφανος",
+      "display": "corona",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκανθα",
+      "display": "de·espinas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτίθημι",
+      "display": "pusieron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στρατιώτης",
+      "display": "soldados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορφύρα",
+      "display": "púrpura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιτίθημι",
+      "display": "ponen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκάνθινος",
+      "display": "de·espinas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 19:2",
+      "reason": "occurs near στέφανος, στρατιώτης, ἄκανθα"
+    },
+    {
+      "ref": "Mark 15:17",
+      "reason": "occurs near πορφύρα, στέφανος"
+    },
+    {
+      "ref": "Matthew 27:29",
+      "reason": "occurs near στέφανος, ἄκανθα, ἐπιτίθημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

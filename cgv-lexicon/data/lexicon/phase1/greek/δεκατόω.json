@@ -1,0 +1,111 @@
+{
+  "lemma": "δεκατόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "δεδεκάτωκεν",
+      "count": 1
+    },
+    {
+      "form": "δεδεκάτωται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 7:6",
+      "form": "δεδεκάτωκεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "ὁ δὲ μὴ γενεαλογούμενος ἐξ αὐτῶν",
+      "right_context": "⸀Ἀβραάμ, καὶ τὸν ἔχοντα τὰς ἐπαγγελίας"
+    },
+    {
+      "ref": "Hebrews 7:9",
+      "form": "δεδεκάτωται,",
+      "morph": "V-X-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "Ἀβραὰμ καὶ Λευὶ ὁ δεκάτας λαμβάνων",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Hebrews": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γενεαλογέομαι",
+      "display": "registrar·genealogía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λευί",
+      "display": "Leví",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεκάτη",
+      "display": "décimas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 7:6",
+      "negator": "μὴ",
+      "clause_text": "ὁ δὲ μὴ γενεαλογούμενος ἐξ αὐτῶν δεδεκάτωκεν ⸀Ἀβραάμ, καὶ τὸν ἔχοντα τὰς ἐπαγγελίας εὐλόγηκεν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 7:6",
+      "reason": "occurs near γενεαλογέομαι, Ἀβραάμ"
+    },
+    {
+      "ref": "Hebrews 7:9",
+      "reason": "occurs near Λευί, δεκάτη, λαμβάνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

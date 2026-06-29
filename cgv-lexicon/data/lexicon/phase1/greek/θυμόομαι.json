@@ -1,0 +1,86 @@
+{
+  "lemma": "θυμόομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐθυμώθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 2:16",
+      "form": "ἐθυμώθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "ἰδὼν ὅτι ἐνεπαίχθη ὑπὸ τῶν μάγων",
+      "right_context": "λίαν, καὶ ἀποστείλας ἀνεῖλεν πάντας τοὺς"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐμπαίζω",
+      "display": "fue burlado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάγος",
+      "display": "de·magos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίαν",
+      "display": "muchísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναιρέω",
+      "display": "mató",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 2:16",
+      "reason": "occurs near λίαν, μάγος, ἀναιρέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

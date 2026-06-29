@@ -1,0 +1,111 @@
+{
+  "lemma": "ἐπαιτέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπαιτεῖν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπαιτῶν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 16:3",
+      "form": "ἐπαιτεῖν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 3,
+      "left_context": "οἰκονομίαν ἀπ’ ἐμοῦ; σκάπτειν οὐκ ἰσχύω,",
+      "right_context": "αἰσχύνομαι·"
+    },
+    {
+      "ref": "Luke 18:35",
+      "form": "⸀ἐπαιτῶν.",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 35,
+      "left_context": "τυφλός τις ἐκάθητο παρὰ τὴν ὁδὸν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σκάπτω",
+      "display": "cavar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "puedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰσχύνομαι",
+      "display": "avergonzarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 16:3",
+      "negator": "οὐκ",
+      "clause_text": "ἀφαιρεῖται τὴν οἰκονομίαν ἀπ’ ἐμοῦ; σκάπτειν οὐκ ἰσχύω, ἐπαιτεῖν αἰσχύνομαι·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:3",
+      "reason": "occurs near αἰσχύνομαι, σκάπτω, ἰσχύω"
+    },
+    {
+      "ref": "Luke 18:35",
+      "reason": "occurs near κάθημαι, ὁδός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

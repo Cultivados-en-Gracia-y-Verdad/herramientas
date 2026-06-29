@@ -1,0 +1,141 @@
+{
+  "lemma": "προπορεύομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προπορεύσονται",
+      "count": 1
+    },
+    {
+      "form": "προπορεύσῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:40",
+      "form": "προπορεύσονται",
+      "morph": "V-F-M-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 40,
+      "left_context": "τῷ Ἀαρών· Ποίησον ἡμῖν θεοὺς οἳ",
+      "right_context": "ἡμῶν· ὁ γὰρ Μωϋσῆς οὗτος, ὃς"
+    },
+    {
+      "ref": "Luke 1:76",
+      "form": "προπορεύσῃ",
+      "morph": "V-F-M-I-2S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 76,
+      "left_context": "σὺ ⸀δέ, παιδίον, προφήτης Ὑψίστου κληθήσῃ,",
+      "right_context": "γὰρ ⸀ἐνώπιον κυρίου ἑτοιμάσαι ὁδοὺς αὐτοῦ,"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἀαρών",
+      "display": "Aarón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδίον",
+      "display": "niño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "profeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕψιστος",
+      "display": "de·Altísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "será llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμάζω",
+      "display": "preparar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "caminos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 7:40",
+      "reason": "occurs near Μωϋσῆς, θεός, Ἀαρών"
+    },
+    {
+      "ref": "Luke 1:76",
+      "reason": "occurs near παιδίον, προφήτης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

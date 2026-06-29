@@ -1,0 +1,111 @@
+{
+  "lemma": "ἐνδοξάζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐνδοξασθῆναι",
+      "count": 1
+    },
+    {
+      "form": "ἐνδοξασθῇ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 1:10",
+      "form": "ἐνδοξασθῆναι",
+      "morph": "V-A-P-N",
+      "book": "2 Thessalonians",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "ὅταν ἔλθῃ",
+      "right_context": "ἐν τοῖς ἁγίοις αὐτοῦ καὶ θαυμασθῆναι"
+    },
+    {
+      "ref": "2 Thessalonians 1:12",
+      "form": "ἐνδοξασθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "2 Thessalonians",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "ὅπως",
+      "right_context": "τὸ ὄνομα τοῦ κυρίου ἡμῶν Ἰησοῦ"
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Thessalonians 1:10",
+      "reason": "occurs near ἅγιος, ἔρχομαι, ὅταν"
+    },
+    {
+      "ref": "2 Thessalonians 1:12",
+      "reason": "occurs near ὄνομα, ὅπως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

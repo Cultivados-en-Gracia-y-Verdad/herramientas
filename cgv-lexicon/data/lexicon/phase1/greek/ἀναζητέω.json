@@ -1,0 +1,163 @@
+{
+  "lemma": "ἀναζητέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀναζητῆσαι",
+      "count": 1
+    },
+    {
+      "form": "ἀνεζήτουν",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀναζητοῦντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 11:25",
+      "form": "ἀναζητῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "ἐξῆλθεν δὲ εἰς ⸀Ταρσὸν",
+      "right_context": "Σαῦλον,"
+    },
+    {
+      "ref": "Luke 2:44",
+      "form": "ἀνεζήτουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 44,
+      "left_context": "τῇ συνοδίᾳ⸃ ἦλθον ἡμέρας ὁδὸν καὶ",
+      "right_context": "αὐτὸν ἐν τοῖς συγγενεῦσιν ⸀καὶ τοῖς"
+    },
+    {
+      "ref": "Luke 2:45",
+      "form": "⸀ἀναζητοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 45,
+      "left_context": "καὶ μὴ ⸀εὑρόντες ὑπέστρεψαν εἰς Ἰερουσαλὴμ",
+      "right_context": "αὐτόν."
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ταρσός",
+      "display": "Tarso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαῦλος",
+      "display": "Saulo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνοδία",
+      "display": "compañía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "de·día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγγενής",
+      "display": "parientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποστρέφω",
+      "display": "volvieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 2:44",
+      "reason": "occurs near συνοδία, ἔρχομαι"
+    },
+    {
+      "ref": "Luke 2:45",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 11:25",
+      "reason": "occurs near Σαῦλος, Ταρσός, ἐξέρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

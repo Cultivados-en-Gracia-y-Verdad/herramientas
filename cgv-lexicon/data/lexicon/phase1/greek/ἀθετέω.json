@@ -1,0 +1,467 @@
+{
+  "lemma": "ἀθετέω",
+  "language": "greek",
+  "total_occurrences": 16,
+  "forms": [
+    {
+      "form": "ἀθετῶν",
+      "count": 4
+    },
+    {
+      "form": "ἀθετεῖ",
+      "count": 3
+    },
+    {
+      "form": "ἀθετήσω.",
+      "count": 1
+    },
+    {
+      "form": "ἠθέτησαν·",
+      "count": 1
+    },
+    {
+      "form": "ἀθετῶ",
+      "count": 1
+    },
+    {
+      "form": "ἀθετήσας",
+      "count": 1
+    },
+    {
+      "form": "ἀθετοῦσιν,",
+      "count": 1
+    },
+    {
+      "form": "ἠθέτησαν",
+      "count": 1
+    },
+    {
+      "form": "ἀθετεῖ·",
+      "count": 1
+    },
+    {
+      "form": "⸂ἀθετῆσαι",
+      "count": 1
+    },
+    {
+      "form": "ἀθετεῖτε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 10,
+      "participle": 5,
+      "infinitive": 1
+    },
+    "tenses": {
+      "future": 1,
+      "present": 11,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 16
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 1:19",
+      "form": "ἀθετήσω.",
+      "morph": "V-F-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 1,
+      "verse": 19,
+      "left_context": "σοφῶν, καὶ τὴν σύνεσιν τῶν συνετῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Thessalonians 4:8",
+      "form": "ἀθετῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "τοιγαροῦν ὁ",
+      "right_context": "οὐκ ἄνθρωπον ἀθετεῖ ἀλλὰ τὸν θεὸν"
+    },
+    {
+      "ref": "1 Thessalonians 4:8",
+      "form": "ἀθετεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "τοιγαροῦν ὁ ἀθετῶν οὐκ ἄνθρωπον",
+      "right_context": "ἀλλὰ τὸν θεὸν τὸν ⸀καὶ ⸀διδόντα"
+    },
+    {
+      "ref": "1 Timothy 5:12",
+      "form": "ἠθέτησαν·",
+      "morph": "V-A-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 12,
+      "left_context": "ἔχουσαι κρίμα ὅτι τὴν πρώτην πίστιν",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 2:21",
+      "form": "ἀθετῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "οὐκ",
+      "right_context": "τὴν χάριν τοῦ θεοῦ· εἰ γὰρ"
+    },
+    {
+      "ref": "Galatians 3:15",
+      "form": "ἀθετεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "λέγω· ὅμως ἀνθρώπου κεκυρωμένην διαθήκην οὐδεὶς",
+      "right_context": "ἢ ἐπιδιατάσσεται."
+    },
+    {
+      "ref": "Hebrews 10:28",
+      "form": "ἀθετήσας",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 28,
+      "left_context": "",
+      "right_context": "τις νόμον Μωϋσέως χωρὶς οἰκτιρμῶν ἐπὶ"
+    },
+    {
+      "ref": "John 12:48",
+      "form": "ἀθετῶν",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 12,
+      "verse": 48,
+      "left_context": "ὁ",
+      "right_context": "ἐμὲ καὶ μὴ λαμβάνων τὰ ῥήματά"
+    },
+    {
+      "ref": "Jude 1:8",
+      "form": "ἀθετοῦσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "ἐνυπνιαζόμενοι σάρκα μὲν μιαίνουσιν, κυριότητα δὲ",
+      "right_context": "δόξας δὲ βλασφημοῦσιν."
+    },
+    {
+      "ref": "Luke 7:30",
+      "form": "ἠθέτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 30,
+      "left_context": "οἱ νομικοὶ τὴν βουλὴν τοῦ θεοῦ",
+      "right_context": "εἰς ἑαυτούς, μὴ βαπτισθέντες ὑπ’ αὐτοῦ.)"
+    },
+    {
+      "ref": "Luke 10:16",
+      "form": "ἀθετῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 16,
+      "left_context": "ἀκούων ὑμῶν ἐμοῦ ἀκούει, καὶ ὁ",
+      "right_context": "ὑμᾶς ἐμὲ ἀθετεῖ· ὁ δὲ ἐμὲ"
+    },
+    {
+      "ref": "Luke 10:16",
+      "form": "ἀθετεῖ·",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 16,
+      "left_context": "ἀκούει, καὶ ὁ ἀθετῶν ὑμᾶς ἐμὲ",
+      "right_context": "ὁ δὲ ἐμὲ ἀθετῶν ἀθετεῖ τὸν"
+    },
+    {
+      "ref": "Luke 10:16",
+      "form": "ἀθετῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 16,
+      "left_context": "ὑμᾶς ἐμὲ ἀθετεῖ· ὁ δὲ ἐμὲ",
+      "right_context": "ἀθετεῖ τὸν ἀποστείλαντά με."
+    },
+    {
+      "ref": "Luke 10:16",
+      "form": "ἀθετεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 16,
+      "left_context": "ἐμὲ ἀθετεῖ· ὁ δὲ ἐμὲ ἀθετῶν",
+      "right_context": "τὸν ἀποστείλαντά με."
+    },
+    {
+      "ref": "Mark 6:26",
+      "form": "⸂ἀθετῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 26,
+      "left_context": "ὅρκους καὶ τοὺς ⸀ἀνακειμένους οὐκ ἠθέλησεν",
+      "right_context": "αὐτήν⸃·"
+    },
+    {
+      "ref": "Mark 7:9",
+      "form": "ἀθετεῖτε",
+      "morph": "V-P-A-I-2P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "Καὶ ἔλεγεν αὐτοῖς· Καλῶς",
+      "right_context": "τὴν ἐντολὴν τοῦ θεοῦ, ἵνα τὴν"
+    }
+  ],
+  "books": {
+    "Luke": 5,
+    "1 Thessalonians": 2,
+    "Galatians": 2,
+    "Mark": 2,
+    "1 Corinthians": 1,
+    "1 Timothy": 1,
+    "Hebrews": 1,
+    "John": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀθετέω",
+      "display": "invalida",
+      "count": 10,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τοιγαροῦν",
+      "display": "por·tanto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σύνεσις",
+      "display": "entendimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνετός",
+      "display": "de·entendidos,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίμα",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅμως",
+      "display": "sin·embargo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κυρόω",
+      "display": "confirmada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιδιατάσσομαι",
+      "display": "añade",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "de·Moisés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκτιρμός",
+      "display": "de·misericordias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μιαίνω",
+      "display": "contaminan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κυριότης",
+      "display": "señorío",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 4:8",
+      "negator": "οὐκ",
+      "clause_text": "τοιγαροῦν ὁ ἀθετῶν οὐκ ἄνθρωπον ἀθετεῖ ἀλλὰ τὸν θεὸν τὸν ⸀καὶ"
+    },
+    {
+      "ref": "1 Thessalonians 4:8",
+      "negator": "οὐκ",
+      "clause_text": "τοιγαροῦν ὁ ἀθετῶν οὐκ ἄνθρωπον ἀθετεῖ ἀλλὰ τὸν θεὸν τὸν ⸀καὶ ⸀διδόντα τὸ πνεῦμα"
+    },
+    {
+      "ref": "Galatians 2:21",
+      "negator": "οὐκ",
+      "clause_text": "οὐκ ἀθετῶ τὴν χάριν τοῦ θεοῦ· εἰ γὰρ διὰ νόμου"
+    },
+    {
+      "ref": "John 12:48",
+      "negator": "μὴ",
+      "clause_text": "ὁ ἀθετῶν ἐμὲ καὶ μὴ λαμβάνων τὰ ῥήματά μου ἔχει"
+    },
+    {
+      "ref": "Luke 7:30",
+      "negator": "μὴ",
+      "clause_text": "Φαρισαῖοι καὶ οἱ νομικοὶ τὴν βουλὴν τοῦ θεοῦ ἠθέτησαν εἰς ἑαυτούς, μὴ βαπτισθέντες ὑπ’ αὐτοῦ.)"
+    },
+    {
+      "ref": "Mark 6:26",
+      "negator": "οὐκ",
+      "clause_text": "διὰ τοὺς ὅρκους καὶ τοὺς ⸀ἀνακειμένους οὐκ ἠθέλησεν ⸂ἀθετῆσαι αὐτήν⸃·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:16",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 7:30",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "1 Thessalonians 4:8",
+      "reason": "occurs near τοιγαροῦν, ἀθετέω, ἄνθρωπος"
+    },
+    {
+      "ref": "Galatians 2:21",
+      "reason": "occurs near θεός, ἀθετέω"
+    },
+    {
+      "ref": "Galatians 3:15",
+      "reason": "occurs near ἀθετέω, ἄνθρωπος"
+    },
+    {
+      "ref": "Mark 6:26",
+      "reason": "occurs near ἀθετέω"
+    },
+    {
+      "ref": "1 Corinthians 1:19",
+      "reason": "occurs near ἀθετέω"
+    },
+    {
+      "ref": "1 Timothy 5:12",
+      "reason": "occurs near ἀθετέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

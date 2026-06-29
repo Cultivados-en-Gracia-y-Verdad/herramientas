@@ -1,0 +1,177 @@
+{
+  "lemma": "ἐνέχω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐνέχεσθε.",
+      "count": 1
+    },
+    {
+      "form": "ἐνέχειν",
+      "count": 1
+    },
+    {
+      "form": "ἐνεῖχεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 5:1",
+      "form": "ἐνέχεσθε.",
+      "morph": "V-P-P-D-2P",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "οὖν⸃ καὶ μὴ πάλιν ζυγῷ δουλείας",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 11:53",
+      "form": "ἐνέχειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 53,
+      "left_context": "οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι δεινῶς",
+      "right_context": "καὶ ἀποστοματίζειν αὐτὸν περὶ πλειόνων,"
+    },
+    {
+      "ref": "Mark 6:19",
+      "form": "ἐνεῖχεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 19,
+      "left_context": "ἡ δὲ Ἡρῳδιὰς",
+      "right_context": "αὐτῷ καὶ ἤθελεν αὐτὸν ἀποκτεῖναι, καὶ"
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζυγός",
+      "display": "yugo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δουλεία",
+      "display": "de·esclavitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραμματεύς",
+      "display": "escribas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεινῶς",
+      "display": "gravemente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστοματίζω",
+      "display": "acosar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἡρῳδιάς",
+      "display": "Herodías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quería",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "matar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Galatians 5:1",
+      "form": "ἐνέχεσθε.",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "ἠλευθέρωσεν· στήκετε οὖν⸃ καὶ μὴ πάλιν ζυγῷ δουλείας ἐνέχεσθε."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 5:1",
+      "negator": "μὴ",
+      "clause_text": "ἠλευθέρωσεν· στήκετε οὖν⸃ καὶ μὴ πάλιν ζυγῷ δουλείας ἐνέχεσθε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 5:1",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 11:53",
+      "reason": "occurs near Φαρισαῖος, γραμματεύς"
+    },
+    {
+      "ref": "Mark 6:19",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

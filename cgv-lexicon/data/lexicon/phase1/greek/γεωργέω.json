@@ -1,0 +1,80 @@
+{
+  "lemma": "γεωργέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "γεωργεῖται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 6:7",
+      "form": "γεωργεῖται,",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "βοτάνην εὔθετον ἐκείνοις δι’ οὓς καὶ",
+      "right_context": "μεταλαμβάνει εὐλογίας ἀπὸ τοῦ θεοῦ·"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εὔθετος",
+      "display": "apta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεταλαμβάνω",
+      "display": "participa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογία",
+      "display": "de·bendición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 6:7",
+      "reason": "occurs near εὐλογία, εὔθετος, θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

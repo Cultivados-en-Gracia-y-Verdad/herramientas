@@ -1,0 +1,168 @@
+{
+  "lemma": "ἀνήκω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀνῆκεν",
+      "count": 1
+    },
+    {
+      "form": "ἀνῆκεν⸃,",
+      "count": 1
+    },
+    {
+      "form": "ἀνῆκον,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "imperfect": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 3:18",
+      "form": "ἀνῆκεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "Αἱ γυναῖκες, ὑποτάσσεσθε ⸀τοῖς ἀνδράσιν, ὡς",
+      "right_context": "ἐν κυρίῳ."
+    },
+    {
+      "ref": "Ephesians 5:4",
+      "form": "ἀνῆκεν⸃,",
+      "morph": "V-I-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "καὶ μωρολογία ἢ εὐτραπελία, ⸂ἃ οὐκ",
+      "right_context": "ἀλλὰ μᾶλλον εὐχαριστία."
+    },
+    {
+      "ref": "Philemon 1:8",
+      "form": "ἀνῆκον,",
+      "morph": "V-P-A-P",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "Χριστῷ παρρησίαν ἔχων ἐπιτάσσειν σοι τὸ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Colossians": 1,
+    "Ephesians": 1,
+    "Philemon": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυνή",
+      "display": "mujeres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποτάσσω",
+      "display": "someted",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μωρολογία",
+      "display": "necedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐτραπελία",
+      "display": "bromas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐχαριστία",
+      "display": "acción·de·gracias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησία",
+      "display": "franqueza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτάσσω",
+      "display": "mandar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Ephesians 5:4",
+      "negator": "οὐκ",
+      "clause_text": "καὶ αἰσχρότης καὶ μωρολογία ἢ εὐτραπελία, ⸂ἃ οὐκ ἀνῆκεν⸃, ἀλλὰ μᾶλλον εὐχαριστία."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 3:18",
+      "reason": "occurs near γυνή, κύριος, ἀνήρ"
+    },
+    {
+      "ref": "Ephesians 5:4",
+      "reason": "occurs near μωρολογία"
+    },
+    {
+      "ref": "Philemon 1:8",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

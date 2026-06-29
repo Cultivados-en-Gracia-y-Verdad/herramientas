@@ -1,0 +1,677 @@
+{
+  "lemma": "σκανδαλίζω",
+  "language": "greek",
+  "total_occurrences": 30,
+  "forms": [
+    {
+      "form": "σκανδαλίζει",
+      "count": 5
+    },
+    {
+      "form": "σκανδαλίσῃ",
+      "count": 3
+    },
+    {
+      "form": "σκανδαλίζεται",
+      "count": 2
+    },
+    {
+      "form": "σκανδαλισθῇ",
+      "count": 2
+    },
+    {
+      "form": "ἐσκανδαλίζοντο",
+      "count": 2
+    },
+    {
+      "form": "σκανδαλίζῃ",
+      "count": 2
+    },
+    {
+      "form": "σκανδαλισθήσονται",
+      "count": 2
+    },
+    {
+      "form": "σκανδαλίσω.",
+      "count": 1
+    },
+    {
+      "form": "σκανδαλίζει;",
+      "count": 1
+    },
+    {
+      "form": "σκανδαλισθῆτε.",
+      "count": 1
+    },
+    {
+      "form": "σκανδαλίζονται.",
+      "count": 1
+    },
+    {
+      "form": "⸀σκανδαλίζῃ",
+      "count": 1
+    },
+    {
+      "form": "⸀σκανδαλισθήσεσθε,",
+      "count": 1
+    },
+    {
+      "form": "σκανδαλισθήσονται,",
+      "count": 1
+    },
+    {
+      "form": "σκανδαλίζεται.",
+      "count": 1
+    },
+    {
+      "form": "ἐσκανδαλίσθησαν;",
+      "count": 1
+    },
+    {
+      "form": "σκανδαλίσωμεν",
+      "count": 1
+    },
+    {
+      "form": "σκανδαλισθήσεσθε",
+      "count": 1
+    },
+    {
+      "form": "σκανδαλισθήσομαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 19,
+      "subjunctive": 11
+    },
+    "tenses": {
+      "present": 13,
+      "aorist": 9,
+      "imperfect": 2,
+      "future": 6
+    },
+    "voices": {
+      "active": 14,
+      "passive": 16
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 8:13",
+      "form": "σκανδαλίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "διόπερ εἰ βρῶμα",
+      "right_context": "τὸν ἀδελφόν μου, οὐ μὴ φάγω"
+    },
+    {
+      "ref": "1 Corinthians 8:13",
+      "form": "σκανδαλίσω.",
+      "morph": "V-A-A-S-1S",
+      "book": "1 Corinthians",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "αἰῶνα, ἵνα μὴ τὸν ἀδελφόν μου",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 11:29",
+      "form": "σκανδαλίζεται",
+      "morph": "V-P-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 29,
+      "left_context": "τίς ἀσθενεῖ, καὶ οὐκ ἀσθενῶ; τίς",
+      "right_context": "καὶ οὐκ ἐγὼ πυροῦμαι;"
+    },
+    {
+      "ref": "John 6:61",
+      "form": "σκανδαλίζει;",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 6,
+      "verse": 61,
+      "left_context": "μαθηταὶ αὐτοῦ εἶπεν αὐτοῖς· Τοῦτο ὑμᾶς",
+      "right_context": ""
+    },
+    {
+      "ref": "John 16:1",
+      "form": "σκανδαλισθῆτε.",
+      "morph": "V-A-P-S-2P",
+      "book": "John",
+      "chapter": 16,
+      "verse": 1,
+      "left_context": "Ταῦτα λελάληκα ὑμῖν ἵνα μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 7:23",
+      "form": "σκανδαλισθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 23,
+      "left_context": "καὶ μακάριός ἐστιν ὃς ἐὰν μὴ",
+      "right_context": "ἐν ἐμοί."
+    },
+    {
+      "ref": "Luke 17:2",
+      "form": "σκανδαλίσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 2,
+      "left_context": "ἔρριπται εἰς τὴν θάλασσαν ἢ ἵνα",
+      "right_context": "⸂τῶν μικρῶν τούτων ἕνα⸃."
+    },
+    {
+      "ref": "Mark 4:17",
+      "form": "σκανδαλίζονται.",
+      "morph": "V-P-P-I-3P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "ἢ διωγμοῦ διὰ τὸν λόγον ⸀εὐθὺς",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 6:3",
+      "form": "ἐσκανδαλίζοντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 3,
+      "left_context": "ἀδελφαὶ αὐτοῦ ὧδε πρὸς ἡμᾶς; καὶ",
+      "right_context": "ἐν αὐτῷ."
+    },
+    {
+      "ref": "Mark 9:42",
+      "form": "σκανδαλίσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 42,
+      "left_context": "Καὶ ὃς ⸀ἂν",
+      "right_context": "ἕνα τῶν μικρῶν ⸀τούτων τῶν πιστευόντων"
+    },
+    {
+      "ref": "Mark 9:43",
+      "form": "⸀σκανδαλίζῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 43,
+      "left_context": "Καὶ ἐὰν",
+      "right_context": "σε ἡ χείρ σου, ἀπόκοψον αὐτήν·"
+    },
+    {
+      "ref": "Mark 9:45",
+      "form": "σκανδαλίζῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 45,
+      "left_context": "καὶ ἐὰν ὁ πούς σου",
+      "right_context": "σε, ἀπόκοψον αὐτόν· καλόν ἐστίν ⸀σε"
+    },
+    {
+      "ref": "Mark 9:47",
+      "form": "σκανδαλίζῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 47,
+      "left_context": "καὶ ἐὰν ὁ ὀφθαλμός σου",
+      "right_context": "σε, ἔκβαλε αὐτόν· καλόν ⸀σέ ἐστιν"
+    },
+    {
+      "ref": "Mark 14:27",
+      "form": "⸀σκανδαλισθήσεσθε,",
+      "morph": "V-F-P-I-2P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 27,
+      "left_context": "λέγει αὐτοῖς ὁ Ἰησοῦς ὅτι Πάντες",
+      "right_context": "ὅτι γέγραπται· Πατάξω τὸν ποιμένα, καὶ"
+    },
+    {
+      "ref": "Mark 14:29",
+      "form": "σκανδαλισθήσονται,",
+      "morph": "V-F-P-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 29,
+      "left_context": "Πέτρος ἔφη αὐτῷ· ⸂Εἰ καὶ⸃ πάντες",
+      "right_context": "ἀλλ’ οὐκ ἐγώ."
+    },
+    {
+      "ref": "Matthew 5:29",
+      "form": "σκανδαλίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 29,
+      "left_context": "δὲ ὁ ὀφθαλμός σου ὁ δεξιὸς",
+      "right_context": "σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ"
+    },
+    {
+      "ref": "Matthew 5:30",
+      "form": "σκανδαλίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 30,
+      "left_context": "καὶ εἰ ἡ δεξιά σου χεὶρ",
+      "right_context": "σε, ἔκκοψον αὐτὴν καὶ βάλε ἀπὸ"
+    },
+    {
+      "ref": "Matthew 11:6",
+      "form": "σκανδαλισθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 6,
+      "left_context": "καὶ μακάριός ἐστιν ὃς ⸀ἐὰν μὴ",
+      "right_context": "ἐν ἐμοί."
+    },
+    {
+      "ref": "Matthew 13:21",
+      "form": "σκανδαλίζεται.",
+      "morph": "V-P-P-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 21,
+      "left_context": "ἢ διωγμοῦ διὰ τὸν λόγον εὐθὺς",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 13:57",
+      "form": "ἐσκανδαλίζοντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 57,
+      "left_context": "καὶ",
+      "right_context": "ἐν αὐτῷ. ὁ δὲ Ἰησοῦς εἶπεν"
+    },
+    {
+      "ref": "Matthew 15:12",
+      "form": "ἐσκανδαλίσθησαν;",
+      "morph": "V-A-P-I-3P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 12,
+      "left_context": "ὅτι οἱ Φαρισαῖοι ἀκούσαντες τὸν λόγον",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 17:27",
+      "form": "σκανδαλίσωμεν",
+      "morph": "V-A-A-S-1P",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 27,
+      "left_context": "ἵνα δὲ μὴ",
+      "right_context": "αὐτούς, πορευθεὶς ⸀εἰς θάλασσαν βάλε ἄγκιστρον"
+    },
+    {
+      "ref": "Matthew 18:6",
+      "form": "σκανδαλίσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 6,
+      "left_context": "Ὃς δ’ ἂν",
+      "right_context": "ἕνα τῶν μικρῶν τούτων τῶν πιστευόντων"
+    },
+    {
+      "ref": "Matthew 18:8",
+      "form": "σκανδαλίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 8,
+      "left_context": "χείρ σου ἢ ὁ πούς σου",
+      "right_context": "σε, ἔκκοψον ⸀αὐτὸν καὶ βάλε ἀπὸ"
+    },
+    {
+      "ref": "Matthew 18:9",
+      "form": "σκανδαλίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 9,
+      "left_context": "καὶ εἰ ὁ ὀφθαλμός σου",
+      "right_context": "σε, ἔξελε αὐτὸν καὶ βάλε ἀπὸ"
+    },
+    {
+      "ref": "Matthew 24:10",
+      "form": "σκανδαλισθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 10,
+      "left_context": "καὶ τότε",
+      "right_context": "πολλοὶ καὶ ἀλλήλους παραδώσουσιν καὶ μισήσουσιν"
+    },
+    {
+      "ref": "Matthew 26:31",
+      "form": "σκανδαλισθήσεσθε",
+      "morph": "V-F-P-I-2P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 31,
+      "left_context": "λέγει αὐτοῖς ὁ Ἰησοῦς· Πάντες ὑμεῖς",
+      "right_context": "ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ,"
+    },
+    {
+      "ref": "Matthew 26:33",
+      "form": "σκανδαλισθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 33,
+      "left_context": "ὁ Πέτρος εἶπεν αὐτῷ· Εἰ πάντες",
+      "right_context": "ἐν σοί, ⸀ἐγὼ οὐδέποτε σκανδαλισθήσομαι."
+    },
+    {
+      "ref": "Matthew 26:33",
+      "form": "σκανδαλισθήσομαι.",
+      "morph": "V-F-P-I-1S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 33,
+      "left_context": "πάντες σκανδαλισθήσονται ἐν σοί, ⸀ἐγὼ οὐδέποτε",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 14:21",
+      "form": "σκανδαλίζεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 21,
+      "left_context": "ᾧ ὁ ἀδελφός σου προσκόπτει ⸂ἢ",
+      "right_context": "ἢ ἀσθενεῖ⸃·"
+    }
+  ],
+  "books": {
+    "Matthew": 14,
+    "Mark": 8,
+    "1 Corinthians": 2,
+    "John": 2,
+    "Luke": 2,
+    "2 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βάλλω",
+      "display": "arroja",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενέω",
+      "display": "estar·enfermo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μικρός",
+      "display": "de·pequeños",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μακάριος",
+      "display": "bienaventurado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διωγμός",
+      "display": "de·persecución",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκόπτω",
+      "display": "corta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pie",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δεξιός",
+      "display": "derecho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξαιρέω",
+      "display": "arranca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκόπτω",
+      "display": "corta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὐδέποτε",
+      "display": "nunca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σκανδαλίζω",
+      "display": "será hacer·tropezado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διόπερ",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βρῶμα",
+      "display": "comida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυρόομαι",
+      "display": "es ardido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 16:1",
+      "form": "σκανδαλισθῆτε.",
+      "morph": "V-A-P-S-2P",
+      "clause_text": "Ταῦτα λελάληκα ὑμῖν ἵνα μὴ σκανδαλισθῆτε.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 7:23",
+      "form": "σκανδαλισθῇ",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "καὶ μακάριός ἐστιν ὃς ἐὰν μὴ σκανδαλισθῇ ἐν ἐμοί.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 11:6",
+      "form": "σκανδαλισθῇ",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "καὶ μακάριός ἐστιν ὃς ⸀ἐὰν μὴ σκανδαλισθῇ ἐν ἐμοί.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 17:27",
+      "form": "σκανδαλίσωμεν",
+      "morph": "V-A-A-S-1P",
+      "clause_text": "ἵνα δὲ μὴ σκανδαλίσωμεν αὐτούς, πορευθεὶς ⸀εἰς θάλασσαν βάλε ἄγκιστρον καὶ τὸν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 8:13",
+      "negator": "οὐ",
+      "clause_text": "διόπερ εἰ βρῶμα σκανδαλίζει τὸν ἀδελφόν μου, οὐ μὴ φάγω κρέα εἰς"
+    },
+    {
+      "ref": "1 Corinthians 8:13",
+      "negator": "μὴ",
+      "clause_text": "εἰς τὸν αἰῶνα, ἵνα μὴ τὸν ἀδελφόν μου σκανδαλίσω."
+    },
+    {
+      "ref": "2 Corinthians 11:29",
+      "negator": "οὐκ",
+      "clause_text": "τίς ἀσθενεῖ, καὶ οὐκ ἀσθενῶ; τίς σκανδαλίζεται καὶ οὐκ ἐγὼ πυροῦμαι;"
+    },
+    {
+      "ref": "John 16:1",
+      "negator": "μὴ",
+      "clause_text": "Ταῦτα λελάληκα ὑμῖν ἵνα μὴ σκανδαλισθῆτε."
+    },
+    {
+      "ref": "Luke 7:23",
+      "negator": "μὴ",
+      "clause_text": "καὶ μακάριός ἐστιν ὃς ἐὰν μὴ σκανδαλισθῇ ἐν ἐμοί."
+    },
+    {
+      "ref": "Mark 14:29",
+      "negator": "οὐκ",
+      "clause_text": "ὁ δὲ Πέτρος ἔφη αὐτῷ· ⸂Εἰ καὶ⸃ πάντες σκανδαλισθήσονται, ἀλλ’ οὐκ ἐγώ."
+    },
+    {
+      "ref": "Matthew 11:6",
+      "negator": "μὴ",
+      "clause_text": "καὶ μακάριός ἐστιν ὃς ⸀ἐὰν μὴ σκανδαλισθῇ ἐν ἐμοί."
+    },
+    {
+      "ref": "Matthew 17:27",
+      "negator": "μὴ",
+      "clause_text": "ἵνα δὲ μὴ σκανδαλίσωμεν αὐτούς, πορευθεὶς ⸀εἰς θάλασσαν βάλε ἄγκιστρον καὶ τὸν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 11:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 13:21",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 13:57",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 15:12",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 17:27",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 18:6",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 18:8",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 18:9",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

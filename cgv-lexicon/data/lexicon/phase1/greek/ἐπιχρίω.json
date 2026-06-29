@@ -1,0 +1,98 @@
+{
+  "lemma": "ἐπιχρίω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἐπέχρισεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπέχρισέν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "John 9:6",
+      "form": "⸀ἐπέχρισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 9,
+      "verse": 6,
+      "left_context": "ἐποίησεν πηλὸν ἐκ τοῦ πτύσματος, καὶ",
+      "right_context": "⸀αὐτοῦ τὸν πηλὸν ἐπὶ τοὺς ⸀ὀφθαλμούς,"
+    },
+    {
+      "ref": "John 9:11",
+      "form": "ἐπέχρισέν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 9,
+      "verse": 11,
+      "left_context": "ὁ⸃ λεγόμενος Ἰησοῦς πηλὸν ἐποίησεν καὶ",
+      "right_context": "μου τοὺς ὀφθαλμοὺς καὶ εἶπέν μοι"
+    }
+  ],
+  "books": {
+    "John": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πηλός",
+      "display": "barro",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πτύσμα",
+      "display": "de·saliva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 9:11",
+      "reason": "occurs near πηλός, Ἰησοῦς, ὀφθαλμός"
+    },
+    {
+      "ref": "John 9:6",
+      "reason": "occurs near πηλός, πτύσμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

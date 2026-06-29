@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀνατάσσομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀνατάξασθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:1",
+      "form": "ἀνατάξασθαι",
+      "morph": "V-A-M-N",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 1,
+      "left_context": "Ἐπειδήπερ πολλοὶ ἐπεχείρησαν",
+      "right_context": "διήγησιν περὶ τῶν πεπληροφορημένων ἐν ἡμῖν"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπειδήπερ",
+      "display": "puesto·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιχειρέω",
+      "display": "intentaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διήγησις",
+      "display": "relato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληροφορέω",
+      "display": "cumplidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:1",
+      "reason": "occurs near διήγησις, πληροφορέω, πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

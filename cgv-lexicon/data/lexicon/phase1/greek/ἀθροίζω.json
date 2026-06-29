@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀθροίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἠθροισμένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 24:33",
+      "form": "⸀ἠθροισμένους",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 33,
+      "left_context": "ὥρᾳ ὑπέστρεψαν εἰς Ἰερουσαλήμ, καὶ εὗρον",
+      "right_context": "τοὺς ἕνδεκα καὶ τοὺς σὺν αὐτοῖς,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑποστρέφω",
+      "display": "volvieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕνδεκα",
+      "display": "onces",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 24:33",
+      "reason": "occurs near εὑρίσκω, ἕνδεκα, Ἰερουσαλήμ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "λακάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐλάκησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 1:18",
+      "form": "ἐλάκησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 18,
+      "left_context": "μισθοῦ τῆς ἀδικίας, καὶ πρηνὴς γενόμενος",
+      "right_context": "μέσος, καὶ ἐξεχύθη πάντα τὰ σπλάγχνα"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδικία",
+      "display": "de·injusticia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρηνής",
+      "display": "boca·abajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκχέω",
+      "display": "fue derramado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 1:18",
+      "reason": "occurs near μέσος, πρηνής, ἀδικία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,201 @@
+{
+  "lemma": "παλαιόω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "παλαιωθήσονται,",
+      "count": 1
+    },
+    {
+      "form": "πεπαλαίωκεν",
+      "count": 1
+    },
+    {
+      "form": "παλαιούμενον",
+      "count": 1
+    },
+    {
+      "form": "παλαιούμενα,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "future": 1,
+      "perfect": 1,
+      "present": 2
+    },
+    "voices": {
+      "passive": 3,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 1:11",
+      "form": "παλαιωθήσονται,",
+      "morph": "V-F-P-I-3P",
+      "book": "Hebrews",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "δὲ διαμένεις· καὶ πάντες ὡς ἱμάτιον",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 8:13",
+      "form": "πεπαλαίωκεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "ἐν τῷ λέγειν Καινὴν",
+      "right_context": "τὴν πρώτην, τὸ δὲ παλαιούμενον καὶ"
+    },
+    {
+      "ref": "Hebrews 8:13",
+      "form": "παλαιούμενον",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "Καινὴν πεπαλαίωκεν τὴν πρώτην, τὸ δὲ",
+      "right_context": "καὶ γηράσκον ἐγγὺς ἀφανισμοῦ."
+    },
+    {
+      "ref": "Luke 12:33",
+      "form": "παλαιούμενα,",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 33,
+      "left_context": "δότε ἐλεημοσύνην· ποιήσατε ἑαυτοῖς βαλλάντια μὴ",
+      "right_context": "θησαυρὸν ἀνέκλειπτον ἐν τοῖς οὐρανοῖς, ὅπου"
+    }
+  ],
+  "books": {
+    "Hebrews": 3,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πρῶτος",
+      "display": "primera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παλαιόω",
+      "display": "envejecido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διαμένω",
+      "display": "permaneces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "manto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καινός",
+      "display": "nueva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γηράσκω",
+      "display": "envejeciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγύς",
+      "display": "cerca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφανισμός",
+      "display": "de·destrucción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεημοσύνη",
+      "display": "limosna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαλλάντιον",
+      "display": "bolsas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θησαυρός",
+      "display": "tesoro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνέκλειπτος",
+      "display": "inagotable",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:33",
+      "negator": "μὴ",
+      "clause_text": "ὑμῶν καὶ δότε ἐλεημοσύνην· ποιήσατε ἑαυτοῖς βαλλάντια μὴ παλαιούμενα, θησαυρὸν ἀνέκλειπτον ἐν τοῖς οὐρανοῖς, ὅπου κλέπτης οὐκ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 1:11",
+      "reason": "occurs near διαμένω, παλαιόω, ἱμάτιον"
+    },
+    {
+      "ref": "Hebrews 8:13",
+      "reason": "occurs near καινός, παλαιόω, πρῶτος"
+    },
+    {
+      "ref": "Luke 12:33",
+      "reason": "occurs near παλαιόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

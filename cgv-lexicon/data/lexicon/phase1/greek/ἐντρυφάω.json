@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐντρυφάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐντρυφῶντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:13",
+      "form": "ἐντρυφῶντες",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "ἐν ἡμέρᾳ τρυφήν, σπίλοι καὶ μῶμοι",
+      "right_context": "ἐν ταῖς ⸀ἀπάταις αὐτῶν συνευωχούμενοι ὑμῖν,"
+    }
+  ],
+  "books": {
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρυφή",
+      "display": "deleite",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπίλος",
+      "display": "manchas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μῶμος",
+      "display": "manchas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπάτη",
+      "display": "engaños",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνευωχέομαι",
+      "display": "banquetear·juntos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:13",
+      "reason": "occurs near μῶμος, σπίλος, τρυφή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,86 @@
+{
+  "lemma": "συναλλάσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀συνήλλασσεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 7:26",
+      "form": "⸀συνήλλασσεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 26,
+      "left_context": "ἐπιούσῃ ἡμέρᾳ ὤφθη αὐτοῖς μαχομένοις καὶ",
+      "right_context": "αὐτοὺς εἰς εἰρήνην εἰπών· Ἄνδρες, ἀδελφοί"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "fue visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχομαι",
+      "display": "peleando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 7:26",
+      "reason": "occurs near εἰρήνη, μάχομαι, ἀνήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

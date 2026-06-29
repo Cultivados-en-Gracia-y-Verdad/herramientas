@@ -1,0 +1,110 @@
+{
+  "lemma": "προσανατίθημι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προσανεθέμην",
+      "count": 1
+    },
+    {
+      "form": "προσανέθεντο,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 1:16",
+      "form": "προσανεθέμην",
+      "morph": "V-A-M-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "αὐτὸν ἐν τοῖς ἔθνεσιν, εὐθέως οὐ",
+      "right_context": "σαρκὶ καὶ αἵματι,"
+    },
+    {
+      "ref": "Galatians 2:6",
+      "form": "προσανέθεντο,",
+      "morph": "V-A-M-I-3P",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "λαμβάνει— ἐμοὶ γὰρ οἱ δοκοῦντες οὐδὲν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Galatians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "pareciendo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 1:16",
+      "negator": "οὐ",
+      "clause_text": "ἵνα εὐαγγελίζωμαι αὐτὸν ἐν τοῖς ἔθνεσιν, εὐθέως οὐ προσανεθέμην σαρκὶ καὶ αἵματι,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 1:16",
+      "reason": "occurs near αἷμα, εὐθέως, σάρξ"
+    },
+    {
+      "ref": "Galatians 2:6",
+      "reason": "occurs near δοκέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

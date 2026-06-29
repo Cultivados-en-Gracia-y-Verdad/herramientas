@@ -1,0 +1,169 @@
+{
+  "lemma": "φύω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "φυὲν",
+      "count": 2
+    },
+    {
+      "form": "φύουσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:15",
+      "form": "φύουσα",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "θεοῦ, μή τις ῥίζα πικρίας ἄνω",
+      "right_context": "ἐνοχλῇ καὶ ⸂δι’ αὐτῆς⸃ μιανθῶσιν ⸀πολλοί,"
+    },
+    {
+      "ref": "Luke 8:6",
+      "form": "φυὲν",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 6,
+      "left_context": "ἕτερον ⸀κατέπεσεν ἐπὶ τὴν πέτραν, καὶ",
+      "right_context": "ἐξηράνθη διὰ τὸ μὴ ἔχειν ἰκμάδα."
+    },
+    {
+      "ref": "Luke 8:8",
+      "form": "φυὲν",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 8,
+      "left_context": "εἰς τὴν γῆν τὴν ἀγαθήν, καὶ",
+      "right_context": "ἐποίησεν καρπὸν ἑκατονταπλασίονα. ταῦτα λέγων ἐφώνει·"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ῥίζα",
+      "display": "raíz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πικρία",
+      "display": "de·amargura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνω",
+      "display": "arriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνοχλέω",
+      "display": "molestara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μιαίνω",
+      "display": "contaminen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταπίπτω",
+      "display": "cayó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέτρα",
+      "display": "roca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξηραίνω",
+      "display": "fue secado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "buena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑκατονταπλασίων",
+      "display": "cien·veces",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 8:6",
+      "negator": "μὴ",
+      "clause_text": "καὶ ἕτερον ⸀κατέπεσεν ἐπὶ τὴν πέτραν, καὶ φυὲν ἐξηράνθη διὰ τὸ μὴ ἔχειν ἰκμάδα."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 8:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:15",
+      "reason": "occurs near μιαίνω, πικρία, ἄνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

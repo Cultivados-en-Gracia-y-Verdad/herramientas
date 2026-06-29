@@ -1,0 +1,80 @@
+{
+  "lemma": "ὀνίνημι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὀναίμην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "optative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philemon 1:20",
+      "form": "ὀναίμην",
+      "morph": "V-A-M-O-1S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "ναί, ἀδελφέ, ἐγώ σου",
+      "right_context": "ἐν κυρίῳ· ἀνάπαυσόν μου τὰ σπλάγχνα"
+    }
+  ],
+  "books": {
+    "Philemon": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ναί",
+      "display": "sí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναπαύω",
+      "display": "descansa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philemon 1:20",
+      "reason": "occurs near κύριος, ναί, ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

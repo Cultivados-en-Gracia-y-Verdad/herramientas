@@ -1,0 +1,124 @@
+{
+  "lemma": "βδελύσσομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐβδελυγμένοις",
+      "count": 1
+    },
+    {
+      "form": "βδελυσσόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "perfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 21:8",
+      "form": "ἐβδελυγμένοις",
+      "morph": "V-X-M-P",
+      "book": "Revelation",
+      "chapter": 21,
+      "verse": 8,
+      "left_context": "τοῖς δὲ δειλοῖς καὶ ⸀ἀπίστοις καὶ",
+      "right_context": "καὶ φονεῦσι καὶ πόρνοις καὶ φαρμάκοις"
+    },
+    {
+      "ref": "Romans 2:22",
+      "form": "βδελυσσόμενος",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "ὁ λέγων μὴ μοιχεύειν μοιχεύεις; ὁ",
+      "right_context": "τὰ εἴδωλα ἱεροσυλεῖς;"
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μοιχεύω",
+      "display": "adulterar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δειλός",
+      "display": "cobardes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄπιστος",
+      "display": "incrédulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φονεύς",
+      "display": "asesinos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόρνος",
+      "display": "fornicarios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴδωλον",
+      "display": "ídolos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱεροσυλέω",
+      "display": "profanas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 2:22",
+      "negator": "μὴ",
+      "clause_text": "ὁ λέγων μὴ μοιχεύειν μοιχεύεις; ὁ βδελυσσόμενος τὰ εἴδωλα ἱεροσυλεῖς;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 21:8",
+      "reason": "occurs near δειλός, πόρνος, φονεύς"
+    },
+    {
+      "ref": "Romans 2:22",
+      "reason": "occurs near μοιχεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,180 @@
+{
+  "lemma": "φιλοτιμέομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "φιλοτιμεῖσθαι",
+      "count": 1
+    },
+    {
+      "form": "φιλοτιμούμεθα,",
+      "count": 1
+    },
+    {
+      "form": "⸀φιλοτιμούμενον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 4:11",
+      "form": "φιλοτιμεῖσθαι",
+      "morph": "V-P-M-N",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "καὶ",
+      "right_context": "ἡσυχάζειν καὶ πράσσειν τὰ ἴδια καὶ"
+    },
+    {
+      "ref": "2 Corinthians 5:9",
+      "form": "φιλοτιμούμεθα,",
+      "morph": "V-P-M-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "διὸ καὶ",
+      "right_context": "εἴτε ἐνδημοῦντες εἴτε ἐκδημοῦντες, εὐάρεστοι αὐτῷ"
+    },
+    {
+      "ref": "Romans 15:20",
+      "form": "⸀φιλοτιμούμενον",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 20,
+      "left_context": "οὕτως δὲ",
+      "right_context": "εὐαγγελίζεσθαι οὐχ ὅπου ὠνομάσθη Χριστός, ἵνα"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1,
+    "2 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἴτε",
+      "display": "sea·que",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἡσυχάζω",
+      "display": "callar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πράσσω",
+      "display": "hacer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδημέω",
+      "display": "estar·en·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδημέω",
+      "display": "estar·ausente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐάρεστος",
+      "display": "agradables",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγελίζω",
+      "display": "evangelizar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνομάζω",
+      "display": "fue nombrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 15:20",
+      "negator": "οὐχ",
+      "clause_text": "οὕτως δὲ ⸀φιλοτιμούμενον εὐαγγελίζεσθαι οὐχ ὅπου ὠνομάσθη Χριστός, ἵνα μὴ ἐπ’"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 4:11",
+      "reason": "occurs near πράσσω, ἡσυχάζω, ἴδιος"
+    },
+    {
+      "ref": "2 Corinthians 5:9",
+      "reason": "occurs near διό, εἴτε"
+    },
+    {
+      "ref": "Romans 15:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,610 @@
+{
+  "lemma": "δουλεύω",
+  "language": "greek",
+  "total_occurrences": 26,
+  "forms": [
+    {
+      "form": "δουλεύειν",
+      "count": 5
+    },
+    {
+      "form": "δουλεύοντες,",
+      "count": 2
+    },
+    {
+      "form": "δουλεύων",
+      "count": 2
+    },
+    {
+      "form": "δουλεύω",
+      "count": 2
+    },
+    {
+      "form": "δουλεύειν·",
+      "count": 2
+    },
+    {
+      "form": "δουλευέτωσαν,",
+      "count": 1
+    },
+    {
+      "form": "δουλεύετε·",
+      "count": 1
+    },
+    {
+      "form": "ἐδούλευσεν",
+      "count": 1
+    },
+    {
+      "form": "δεδουλωμένοι·",
+      "count": 1
+    },
+    {
+      "form": "ἐδουλεύσατε",
+      "count": 1
+    },
+    {
+      "form": "⸀δουλεύειν",
+      "count": 1
+    },
+    {
+      "form": "δουλεύει",
+      "count": 1
+    },
+    {
+      "form": "δουλεύετε",
+      "count": 1
+    },
+    {
+      "form": "⸀δουλεύσουσιν",
+      "count": 1
+    },
+    {
+      "form": "δεδουλεύκαμεν",
+      "count": 1
+    },
+    {
+      "form": "δουλεύσει",
+      "count": 1
+    },
+    {
+      "form": "δουλεύουσιν",
+      "count": 1
+    },
+    {
+      "form": "δουλεύοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 8,
+      "imperative": 3,
+      "participle": 6,
+      "indicative": 9
+    },
+    "tenses": {
+      "present": 20,
+      "aorist": 2,
+      "perfect": 2,
+      "future": 2
+    },
+    "voices": {
+      "active": 25,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 1:9",
+      "form": "δουλεύειν",
+      "morph": "V-P-A-N",
+      "book": "1 Thessalonians",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "πρὸς τὸν θεὸν ἀπὸ τῶν εἰδώλων",
+      "right_context": "θεῷ ζῶντι καὶ ἀληθινῷ,"
+    },
+    {
+      "ref": "1 Timothy 6:2",
+      "form": "δουλευέτωσαν,",
+      "morph": "V-P-A-D-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "καταφρονείτωσαν, ὅτι ἀδελφοί εἰσιν· ἀλλὰ μᾶλλον",
+      "right_context": "ὅτι πιστοί εἰσιν καὶ ἀγαπητοὶ οἱ"
+    },
+    {
+      "ref": "Colossians 3:24",
+      "form": "δουλεύετε·",
+      "morph": "V-P-A-D-2P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 24,
+      "left_context": "ἀνταπόδοσιν τῆς κληρονομίας· ⸀τῷ κυρίῳ Χριστῷ",
+      "right_context": ""
+    },
+    {
+      "ref": "Ephesians 6:7",
+      "form": "δουλεύοντες,",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "μετ’ εὐνοίας",
+      "right_context": "ὡς τῷ κυρίῳ καὶ οὐκ ἀνθρώποις,"
+    },
+    {
+      "ref": "Philippians 2:22",
+      "form": "ἐδούλευσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "ὅτι ὡς πατρὶ τέκνον σὺν ἐμοὶ",
+      "right_context": "εἰς τὸ εὐαγγέλιον."
+    },
+    {
+      "ref": "Galatians 4:3",
+      "form": "δεδουλωμένοι·",
+      "morph": "V-X-P-P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "ὑπὸ τὰ στοιχεῖα τοῦ κόσμου ⸀ἤμεθα",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 4:8",
+      "form": "ἐδουλεύσατε",
+      "morph": "V-A-A-I-2P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "Ἀλλὰ τότε μὲν οὐκ εἰδότες θεὸν",
+      "right_context": "τοῖς ⸂φύσει μὴ⸃ οὖσι θεοῖς·"
+    },
+    {
+      "ref": "Galatians 4:9",
+      "form": "⸀δουλεύειν",
+      "morph": "V-P-A-N",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 9,
+      "left_context": "καὶ πτωχὰ στοιχεῖα, οἷς πάλιν ἄνωθεν",
+      "right_context": "θέλετε;"
+    },
+    {
+      "ref": "Galatians 4:25",
+      "form": "δουλεύει",
+      "morph": "V-P-A-I-3S",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 25,
+      "left_context": "Ἀραβίᾳ, συστοιχεῖ δὲ τῇ νῦν Ἰερουσαλήμ,",
+      "right_context": "⸀γὰρ μετὰ τῶν τέκνων αὐτῆς·"
+    },
+    {
+      "ref": "Galatians 5:13",
+      "form": "δουλεύετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "τῇ σαρκί, ἀλλὰ διὰ τῆς ἀγάπης",
+      "right_context": "ἀλλήλοις·"
+    },
+    {
+      "ref": "Acts 7:7",
+      "form": "⸀δουλεύσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 7,
+      "left_context": "καὶ τὸ ἔθνος ᾧ ⸀ἐὰν",
+      "right_context": "κρινῶ ἐγώ, ⸂ὁ θεὸς εἶπεν⸃, καὶ"
+    },
+    {
+      "ref": "Acts 20:19",
+      "form": "δουλεύων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 19,
+      "left_context": "",
+      "right_context": "τῷ κυρίῳ μετὰ πάσης ταπεινοφροσύνης ⸀καὶ"
+    },
+    {
+      "ref": "John 8:33",
+      "form": "δεδουλεύκαμεν",
+      "morph": "V-X-A-I-1P",
+      "book": "John",
+      "chapter": 8,
+      "verse": 33,
+      "left_context": "αὐτόν⸃· Σπέρμα Ἀβραάμ ἐσμεν καὶ οὐδενὶ",
+      "right_context": "πώποτε· πῶς σὺ λέγεις ὅτι Ἐλεύθεροι"
+    },
+    {
+      "ref": "Luke 15:29",
+      "form": "δουλεύω",
+      "morph": "V-P-A-I-1S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 29,
+      "left_context": "τῷ πατρὶ ⸀αὐτοῦ· Ἰδοὺ τοσαῦτα ἔτη",
+      "right_context": "σοι καὶ οὐδέποτε ἐντολήν σου παρῆλθον,"
+    },
+    {
+      "ref": "Luke 16:13",
+      "form": "δουλεύειν·",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 13,
+      "left_context": "οὐδεὶς οἰκέτης δύναται δυσὶ κυρίοις",
+      "right_context": "ἢ γὰρ τὸν ἕνα μισήσει καὶ"
+    },
+    {
+      "ref": "Luke 16:13",
+      "form": "δουλεύειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 13,
+      "left_context": "τοῦ ἑτέρου καταφρονήσει. οὐ δύνασθε θεῷ",
+      "right_context": "καὶ μαμωνᾷ."
+    },
+    {
+      "ref": "Matthew 6:24",
+      "form": "δουλεύειν·",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 24,
+      "left_context": "Οὐδεὶς δύναται δυσὶ κυρίοις",
+      "right_context": "ἢ γὰρ τὸν ἕνα μισήσει καὶ"
+    },
+    {
+      "ref": "Matthew 6:24",
+      "form": "δουλεύειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 24,
+      "left_context": "τοῦ ἑτέρου καταφρονήσει. οὐ δύνασθε θεῷ",
+      "right_context": "καὶ μαμωνᾷ."
+    },
+    {
+      "ref": "Romans 6:6",
+      "form": "δουλεύειν",
+      "morph": "V-P-A-N",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "τὸ σῶμα τῆς ἁμαρτίας, τοῦ μηκέτι",
+      "right_context": "ἡμᾶς τῇ ἁμαρτίᾳ,"
+    },
+    {
+      "ref": "Romans 7:6",
+      "form": "δουλεύειν",
+      "morph": "V-P-A-N",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "νόμου, ἀποθανόντες ἐν ᾧ κατειχόμεθα, ὥστε",
+      "right_context": "ἡμᾶς ἐν καινότητι πνεύματος καὶ οὐ"
+    },
+    {
+      "ref": "Romans 7:25",
+      "form": "δουλεύω",
+      "morph": "V-P-A-I-1S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 25,
+      "left_context": "οὖν αὐτὸς ἐγὼ τῷ μὲν νοῒ",
+      "right_context": "νόμῳ θεοῦ, τῇ δὲ σαρκὶ νόμῳ"
+    },
+    {
+      "ref": "Romans 9:12",
+      "form": "δουλεύσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "καλοῦντος, ἐρρέθη αὐτῇ ὅτι Ὁ μείζων",
+      "right_context": "τῷ ἐλάσσονι·"
+    },
+    {
+      "ref": "Romans 12:11",
+      "form": "δουλεύοντες,",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "ὀκνηροί, τῷ πνεύματι ζέοντες, τῷ κυρίῳ",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 14:18",
+      "form": "δουλεύων",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 18,
+      "left_context": "ὁ γὰρ ἐν ⸀τούτῳ",
+      "right_context": "τῷ Χριστῷ εὐάρεστος τῷ θεῷ καὶ"
+    },
+    {
+      "ref": "Romans 16:18",
+      "form": "δουλεύουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Romans",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "τοιοῦτοι τῷ κυρίῳ ⸀ἡμῶν Χριστῷ οὐ",
+      "right_context": "ἀλλὰ τῇ ἑαυτῶν κοιλίᾳ, καὶ διὰ"
+    },
+    {
+      "ref": "Titus 3:3",
+      "form": "δουλεύοντες",
+      "morph": "V-P-A-P",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "ποτε καὶ ἡμεῖς ἀνόητοι, ἀπειθεῖς, πλανώμενοι,",
+      "right_context": "ἐπιθυμίαις καὶ ἡδοναῖς ποικίλαις, ἐν κακίᾳ"
+    }
+  ],
+  "books": {
+    "Romans": 7,
+    "Galatians": 5,
+    "Luke": 3,
+    "Acts": 2,
+    "Matthew": 2,
+    "1 Thessalonians": 1,
+    "1 Timothy": 1,
+    "Colossians": 1,
+    "Ephesians": 1,
+    "Philippians": 1,
+    "John": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 9,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puede",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στοιχεῖον",
+      "display": "elementos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μισέω",
+      "display": "odiará",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "de·otro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καταφρονέω",
+      "display": "menospreciará",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μαμωνᾶς",
+      "display": "mamón.",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἴδωλον",
+      "display": "de·ídolos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀληθινός",
+      "display": "verdadero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "fieles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 6:2",
+      "form": "δουλευέτωσαν,",
+      "morph": "V-P-A-D-3P",
+      "clause_text": "δεσπότας μὴ καταφρονείτωσαν, ὅτι ἀδελφοί εἰσιν· ἀλλὰ μᾶλλον δουλευέτωσαν, ὅτι πιστοί εἰσιν καὶ ἀγαπητοὶ οἱ τῆς εὐεργεσίας"
+    },
+    {
+      "ref": "Colossians 3:24",
+      "form": "δουλεύετε·",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "⸀ἀπολήμψεσθε τὴν ἀνταπόδοσιν τῆς κληρονομίας· ⸀τῷ κυρίῳ Χριστῷ δουλεύετε·"
+    },
+    {
+      "ref": "Galatians 5:13",
+      "form": "δουλεύετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "εἰς ἀφορμὴν τῇ σαρκί, ἀλλὰ διὰ τῆς ἀγάπης δουλεύετε ἀλλήλοις·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 4:8",
+      "negator": "οὐκ",
+      "clause_text": "Ἀλλὰ τότε μὲν οὐκ εἰδότες θεὸν ἐδουλεύσατε τοῖς ⸂φύσει μὴ⸃ οὖσι θεοῖς·"
+    },
+    {
+      "ref": "Luke 16:13",
+      "negator": "οὐ",
+      "clause_text": "ἀνθέξεται καὶ τοῦ ἑτέρου καταφρονήσει. οὐ δύνασθε θεῷ δουλεύειν καὶ μαμωνᾷ."
+    },
+    {
+      "ref": "Matthew 6:24",
+      "negator": "οὐ",
+      "clause_text": "ἀνθέξεται καὶ τοῦ ἑτέρου καταφρονήσει. οὐ δύνασθε θεῷ δουλεύειν καὶ μαμωνᾷ."
+    },
+    {
+      "ref": "Romans 16:18",
+      "negator": "οὐ",
+      "clause_text": "οἱ γὰρ τοιοῦτοι τῷ κυρίῳ ⸀ἡμῶν Χριστῷ οὐ δουλεύουσιν ἀλλὰ τῇ ἑαυτῶν κοιλίᾳ, καὶ διὰ τῆς χρηστολογίας"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 5:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 6:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Colossians 3:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 12:11",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Romans 14:18",
+      "reason": "frequent in Romans"
+    },
+    {
+      "ref": "Luke 15:29",
+      "reason": "occurs near πατήρ"
+    },
+    {
+      "ref": "Acts 20:19",
+      "reason": "occurs near κύριος"
+    },
+    {
+      "ref": "Matthew 6:24",
+      "reason": "occurs near δύναμαι, κύριος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

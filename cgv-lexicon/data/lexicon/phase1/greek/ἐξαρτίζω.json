@@ -1,0 +1,120 @@
+{
+  "lemma": "ἐξαρτίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐξηρτισμένος.",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐξαρτίσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 3:17",
+      "form": "ἐξηρτισμένος.",
+      "morph": "V-X-P-P",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "θεοῦ ἄνθρωπος, πρὸς πᾶν ἔργον ἀγαθὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 21:5",
+      "form": "⸂ἐξαρτίσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 5,
+      "left_context": "ὅτε δὲ ἐγένετο",
+      "right_context": "ἡμᾶς⸃ τὰς ἡμέρας, ἐξελθόντες ἐπορευόμεθα προπεμπόντων"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "íamos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 3:17",
+      "reason": "occurs near ἀγαθός, ἄνθρωπος, ἔργον"
+    },
+    {
+      "ref": "Acts 21:5",
+      "reason": "occurs near ἡμέρα, ὅτε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

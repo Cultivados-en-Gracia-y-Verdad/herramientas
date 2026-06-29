@@ -1,0 +1,240 @@
+{
+  "lemma": "ἀποδημέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἀπεδήμησεν.",
+      "count": 3
+    },
+    {
+      "form": "ἀπεδήμησεν",
+      "count": 2
+    },
+    {
+      "form": "ἀποδημῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 1
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 15:13",
+      "form": "ἀπεδήμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 13,
+      "left_context": "ἡμέρας συναγαγὼν ⸀πάντα ὁ νεώτερος υἱὸς",
+      "right_context": "εἰς χώραν μακράν, καὶ ἐκεῖ διεσκόρπισεν"
+    },
+    {
+      "ref": "Luke 20:9",
+      "form": "ἀπεδήμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 9,
+      "left_context": "ἀμπελῶνα, καὶ ἐξέδετο αὐτὸν γεωργοῖς, καὶ",
+      "right_context": "χρόνους ἱκανούς."
+    },
+    {
+      "ref": "Mark 12:1",
+      "form": "ἀπεδήμησεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "πύργον, καὶ ἐξέδετο αὐτὸν γεωργοῖς, καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 21:33",
+      "form": "ἀπεδήμησεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 33,
+      "left_context": "πύργον, καὶ ἐξέδετο αὐτὸν γεωργοῖς, καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 25:14",
+      "form": "ἀποδημῶν",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 14,
+      "left_context": "Ὥσπερ γὰρ ἄνθρωπος",
+      "right_context": "ἐκάλεσεν τοὺς ἰδίους δούλους καὶ παρέδωκεν"
+    },
+    {
+      "ref": "Matthew 25:15",
+      "form": "ἀπεδήμησεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 15,
+      "left_context": "ἑκάστῳ κατὰ τὴν ἰδίαν δύναμιν, καὶ",
+      "right_context": "εὐθέως"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Luke": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκδίδωμι",
+      "display": "entregó",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γεωργός",
+      "display": "labradores",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reunido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "región",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μακρός",
+      "display": "lejos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥσπερ",
+      "display": "como",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 21:33",
+      "reason": "occurs near γεωργός, ἐκδίδωμι"
+    },
+    {
+      "ref": "Matthew 25:14",
+      "reason": "occurs near ἴδιος"
+    },
+    {
+      "ref": "Matthew 25:15",
+      "reason": "occurs near ἴδιος"
+    },
+    {
+      "ref": "Luke 15:13",
+      "reason": "occurs near νέος, συνάγω"
+    },
+    {
+      "ref": "Luke 20:9",
+      "reason": "occurs near γεωργός, ἐκδίδωμι"
+    },
+    {
+      "ref": "Mark 12:1",
+      "reason": "occurs near γεωργός, ἐκδίδωμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

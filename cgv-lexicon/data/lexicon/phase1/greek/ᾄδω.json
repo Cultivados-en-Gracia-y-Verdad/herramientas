@@ -1,0 +1,185 @@
+{
+  "lemma": "ᾄδω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ᾄδουσιν",
+      "count": 3
+    },
+    {
+      "form": "ᾄδοντες",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 5:9",
+      "form": "ᾄδουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Revelation",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "καὶ",
+      "right_context": "ᾠδὴν καινὴν λέγοντες· Ἄξιος εἶ λαβεῖν"
+    },
+    {
+      "ref": "Revelation 14:3",
+      "form": "ᾄδουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 3,
+      "left_context": "καὶ",
+      "right_context": "⸀ὡς ᾠδὴν καινὴν ἐνώπιον τοῦ θρόνου"
+    },
+    {
+      "ref": "Revelation 15:3",
+      "form": "ᾄδουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Revelation",
+      "chapter": 15,
+      "verse": 3,
+      "left_context": "καὶ",
+      "right_context": "τὴν ᾠδὴν Μωϋσέως τοῦ δούλου τοῦ"
+    },
+    {
+      "ref": "Colossians 3:16",
+      "form": "ᾄδοντες",
+      "morph": "V-P-A-P",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "⸀ψαλμοῖς, ⸀ὕμνοις, ᾠδαῖς πνευματικαῖς ⸀ἐν χάριτι,",
+      "right_context": "ἐν ⸂ταῖς καρδίαις⸃ ὑμῶν τῷ ⸀θεῷ·"
+    },
+    {
+      "ref": "Ephesians 5:19",
+      "form": "ᾄδοντες",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 19,
+      "left_context": "ψαλμοῖς καὶ ὕμνοις καὶ ᾠδαῖς πνευματικαῖς,",
+      "right_context": "καὶ ⸀ψάλλοντες τῇ καρδίᾳ ὑμῶν τῷ"
+    }
+  ],
+  "books": {
+    "Revelation": 3,
+    "Colossians": 1,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ᾠδή",
+      "display": "cántico",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "καινός",
+      "display": "nueva",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὕμνος",
+      "display": "himnos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνευματικός",
+      "display": "espirituales",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄξιος",
+      "display": "digno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "de·Moisés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "de·siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψάλλω",
+      "display": "cantando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 14:3",
+      "reason": "occurs near καινός, ᾠδή"
+    },
+    {
+      "ref": "Revelation 15:3",
+      "reason": "occurs near ᾠδή"
+    },
+    {
+      "ref": "Revelation 5:9",
+      "reason": "occurs near καινός, ᾠδή"
+    },
+    {
+      "ref": "Colossians 3:16",
+      "reason": "occurs near καρδία, πνευματικός, ὕμνος"
+    },
+    {
+      "ref": "Ephesians 5:19",
+      "reason": "occurs near καρδία, πνευματικός, ὕμνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

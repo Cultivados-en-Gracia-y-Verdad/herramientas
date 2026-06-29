@@ -1,0 +1,130 @@
+{
+  "lemma": "ἐκτρέφω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐκτρέφει",
+      "count": 1
+    },
+    {
+      "form": "ἐκτρέφετε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 5:29",
+      "form": "ἐκτρέφει",
+      "morph": "V-P-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 5,
+      "verse": 29,
+      "left_context": "ποτε τὴν ἑαυτοῦ σάρκα ἐμίσησεν, ἀλλὰ",
+      "right_context": "καὶ θάλπει αὐτήν, καθὼς καὶ ὁ"
+    },
+    {
+      "ref": "Ephesians 6:4",
+      "form": "ἐκτρέφετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 4,
+      "left_context": "μὴ παροργίζετε τὰ τέκνα ὑμῶν, ἀλλὰ",
+      "right_context": "αὐτὰ ἐν παιδείᾳ καὶ νουθεσίᾳ κυρίου."
+    }
+  ],
+  "books": {
+    "Ephesians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισέω",
+      "display": "odió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλπω",
+      "display": "cuida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παροργίζω",
+      "display": "provocar·a·ira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδεία",
+      "display": "disciplina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νουθεσία",
+      "display": "amonestación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Ephesians 6:4",
+      "form": "ἐκτρέφετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "οἱ πατέρες, μὴ παροργίζετε τὰ τέκνα ὑμῶν, ἀλλὰ ἐκτρέφετε αὐτὰ ἐν παιδείᾳ καὶ νουθεσίᾳ κυρίου."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 6:4",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Ephesians 5:29",
+      "reason": "occurs near θάλπω, μισέω, σάρξ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

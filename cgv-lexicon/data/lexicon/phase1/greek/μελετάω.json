@@ -1,0 +1,114 @@
+{
+  "lemma": "μελετάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μελέτα,",
+      "count": 1
+    },
+    {
+      "form": "ἐμελέτησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 4:15",
+      "form": "μελέτα,",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "ταῦτα",
+      "right_context": "ἐν τούτοις ἴσθι, ἵνα σου ἡ"
+    },
+    {
+      "ref": "Acts 4:25",
+      "form": "ἐμελέτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 25,
+      "left_context": "εἰπών· Ἱνατί ἐφρύαξαν ἔθνη καὶ λαοὶ",
+      "right_context": "κενά;"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱνατί",
+      "display": "por·qué",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρυάσσω",
+      "display": "enfurecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κενός",
+      "display": "vacíos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 4:15",
+      "form": "μελέτα,",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ταῦτα μελέτα, ἐν τούτοις ἴσθι, ἵνα σου ἡ προκοπὴ φανερὰ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 4:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 4:25",
+      "reason": "occurs near κενός, λαός, φρυάσσω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

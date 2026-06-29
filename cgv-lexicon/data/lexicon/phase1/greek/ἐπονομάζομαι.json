@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐπονομάζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπονομάζῃ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 2:17",
+      "form": "ἐπονομάζῃ",
+      "morph": "V-P-M-I-2S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "⸂Εἰ δὲ⸃ σὺ Ἰουδαῖος",
+      "right_context": "καὶ ἐπαναπαύῃ ⸀νόμῳ καὶ καυχᾶσαι ἐν"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judío",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαναπαύομαι",
+      "display": "reposas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καυχάομαι",
+      "display": "gloriarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 2:17",
+      "reason": "occurs near καυχάομαι, νόμος, ἐπαναπαύομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

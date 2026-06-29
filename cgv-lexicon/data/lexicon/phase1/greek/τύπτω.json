@@ -1,0 +1,390 @@
+{
+  "lemma": "τύπτω",
+  "language": "greek",
+  "total_occurrences": 13,
+  "forms": [
+    {
+      "form": "ἔτυπτον",
+      "count": 3
+    },
+    {
+      "form": "τύπτειν",
+      "count": 3
+    },
+    {
+      "form": "τύπτοντες",
+      "count": 2
+    },
+    {
+      "form": "Τύπτειν",
+      "count": 1
+    },
+    {
+      "form": "τύπτεσθαι;",
+      "count": 1
+    },
+    {
+      "form": "τύπτοντί",
+      "count": 1
+    },
+    {
+      "form": "⸀ἔτυπτε",
+      "count": 1
+    },
+    {
+      "form": "⸀τύπτοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "indicative": 4,
+      "infinitive": 5
+    },
+    "tenses": {
+      "present": 9,
+      "imperfect": 4
+    },
+    "voices": {
+      "active": 12,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 8:12",
+      "form": "τύπτοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 8,
+      "verse": 12,
+      "left_context": "δὲ ἁμαρτάνοντες εἰς τοὺς ἀδελφοὺς καὶ",
+      "right_context": "αὐτῶν τὴν συνείδησιν ἀσθενοῦσαν εἰς Χριστὸν"
+    },
+    {
+      "ref": "Acts 18:17",
+      "form": "ἔτυπτον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 17,
+      "left_context": "ἐπιλαβόμενοι δὲ ⸀πάντες Σωσθένην τὸν ἀρχισυνάγωγον",
+      "right_context": "ἔμπροσθεν τοῦ βήματος· καὶ οὐδὲν τούτων"
+    },
+    {
+      "ref": "Acts 21:32",
+      "form": "τύπτοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 32,
+      "left_context": "τὸν χιλίαρχον καὶ τοὺς στρατιώτας ἐπαύσαντο",
+      "right_context": "τὸν Παῦλον."
+    },
+    {
+      "ref": "Acts 23:2",
+      "form": "τύπτειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 2,
+      "left_context": "ἀρχιερεὺς Ἁνανίας ἐπέταξεν τοῖς παρεστῶσιν αὐτῷ",
+      "right_context": "αὐτοῦ τὸ στόμα."
+    },
+    {
+      "ref": "Acts 23:3",
+      "form": "Τύπτειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 3,
+      "left_context": "τότε ὁ Παῦλος πρὸς αὐτὸν εἶπεν·",
+      "right_context": "σε μέλλει ὁ θεός, τοῖχε κεκονιαμένε·"
+    },
+    {
+      "ref": "Acts 23:3",
+      "form": "τύπτεσθαι;",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 3,
+      "left_context": "τὸν νόμον, καὶ παρανομῶν κελεύεις με",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 6:29",
+      "form": "τύπτοντί",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 29,
+      "left_context": "τῷ",
+      "right_context": "σε ἐπὶ τὴν σιαγόνα πάρεχε καὶ"
+    },
+    {
+      "ref": "Luke 12:45",
+      "form": "τύπτειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 45,
+      "left_context": "ὁ κύριός μου ἔρχεσθαι, καὶ ἄρξηται",
+      "right_context": "τοὺς παῖδας καὶ τὰς παιδίσκας, ἐσθίειν"
+    },
+    {
+      "ref": "Luke 18:13",
+      "form": "⸀ἔτυπτε",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 13,
+      "left_context": "ὀφθαλμοὺς ⸂ἐπᾶραι εἰς τὸν οὐρανόν⸃, ἀλλ’",
+      "right_context": "τὸ στῆθος ⸀αὐτοῦ λέγων· Ὁ θεός,"
+    },
+    {
+      "ref": "Luke 23:48",
+      "form": "⸀τύπτοντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 48,
+      "left_context": "τὴν θεωρίαν ταύτην, ⸀θεωρήσαντες τὰ γενόμενα,",
+      "right_context": "τὰ στήθη ὑπέστρεφον."
+    },
+    {
+      "ref": "Mark 15:19",
+      "form": "ἔτυπτον",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 19,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῦ τὴν κεφαλὴν καλάμῳ καὶ ἐνέπτυον"
+    },
+    {
+      "ref": "Matthew 24:49",
+      "form": "τύπτειν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 49,
+      "left_context": "καὶ ἄρξηται",
+      "right_context": "τοὺς συνδούλους ⸂αὐτοῦ, ἐσθίῃ δὲ καὶ"
+    },
+    {
+      "ref": "Matthew 27:30",
+      "form": "ἔτυπτον",
+      "morph": "V-I-A-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 30,
+      "left_context": "εἰς αὐτὸν ἔλαβον τὸν κάλαμον καὶ",
+      "right_context": "εἰς τὴν κεφαλὴν αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Acts": 5,
+    "Luke": 4,
+    "Matthew": 2,
+    "1 Corinthians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenze",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στῆθος",
+      "display": "pecho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabeza",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάλαμος",
+      "display": "caña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτάνω",
+      "display": "pecando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνείδησις",
+      "display": "conciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενέω",
+      "display": "estar·enfermo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σωσθένης",
+      "display": "Sóstenes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχισυνάγωγος",
+      "display": "jefe·de·sinagoga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμπροσθεν",
+      "display": "delante·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βῆμα",
+      "display": "de·tribunal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιλίαρχος",
+      "display": "tribuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατιώτης",
+      "display": "soldados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παύω",
+      "display": "cesaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἁνανίας",
+      "display": "Ananías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτάσσω",
+      "display": "mandó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρίστημι",
+      "display": "presentados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "boca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοῖχος",
+      "display": "muro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρανομέω",
+      "display": "violar·la·ley",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:17",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 21:32",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:2",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:3",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Luke 12:45",
+      "reason": "occurs near ἄρχω"
+    },
+    {
+      "ref": "Luke 18:13",
+      "reason": "occurs near στῆθος"
+    },
+    {
+      "ref": "Luke 23:48",
+      "reason": "occurs near στῆθος"
+    },
+    {
+      "ref": "Luke 6:29",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

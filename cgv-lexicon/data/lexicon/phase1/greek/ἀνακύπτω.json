@@ -1,0 +1,124 @@
+{
+  "lemma": "ἀνακύπτω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνακύψαι",
+      "count": 1
+    },
+    {
+      "form": "ἀνακύψατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 13:11",
+      "form": "ἀνακύψαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 11,
+      "left_context": "καὶ ἦν συγκύπτουσα καὶ μὴ δυναμένη",
+      "right_context": "εἰς τὸ παντελές."
+    },
+    {
+      "ref": "Luke 21:28",
+      "form": "ἀνακύψατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 28,
+      "left_context": "ἀρχομένων δὲ τούτων γίνεσθαι",
+      "right_context": "καὶ ἐπάρατε τὰς κεφαλὰς ὑμῶν, διότι"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συγκύπτω",
+      "display": "encorvarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παντελής",
+      "display": "completo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαίρω",
+      "display": "alzad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabezas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 21:28",
+      "form": "ἀνακύψατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἀρχομένων δὲ τούτων γίνεσθαι ἀνακύψατε καὶ ἐπάρατε τὰς κεφαλὰς ὑμῶν, διότι ἐγγίζει ἡ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 13:11",
+      "negator": "μὴ",
+      "clause_text": "ἔτη ⸀δεκαοκτώ, καὶ ἦν συγκύπτουσα καὶ μὴ δυναμένη ἀνακύψαι εἰς τὸ παντελές."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 13:11",
+      "reason": "occurs near δύναμαι, παντελής, συγκύπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

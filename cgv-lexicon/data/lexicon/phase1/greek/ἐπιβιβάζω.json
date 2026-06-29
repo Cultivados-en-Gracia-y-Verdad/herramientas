@@ -1,0 +1,172 @@
+{
+  "lemma": "ἐπιβιβάζω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπιβιβάσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἐπιβιβάσας",
+      "count": 1
+    },
+    {
+      "form": "ἐπεβίβασαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:24",
+      "form": "ἐπιβιβάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 24,
+      "left_context": "κτήνη τε παραστῆσαι ἵνα",
+      "right_context": "τὸν Παῦλον διασώσωσι πρὸς Φήλικα τὸν"
+    },
+    {
+      "ref": "Luke 10:34",
+      "form": "ἐπιβιβάσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 34,
+      "left_context": "τραύματα αὐτοῦ ἐπιχέων ἔλαιον καὶ οἶνον,",
+      "right_context": "δὲ αὐτὸν ἐπὶ τὸ ἴδιον κτῆνος"
+    },
+    {
+      "ref": "Luke 19:35",
+      "form": "ἐπεβίβασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 35,
+      "left_context": "⸀αὐτῶν τὰ ἱμάτια ἐπὶ τὸν πῶλον",
+      "right_context": "τὸν Ἰησοῦν·"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κτῆνος",
+      "display": "bestias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρίστημι",
+      "display": "presentar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διασῴζω",
+      "display": "sanen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φῆλιξ",
+      "display": "Félix",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιχέω",
+      "display": "derramando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλαιον",
+      "display": "aceite",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶλος",
+      "display": "pollino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:34",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 19:35",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 23:24",
+      "reason": "occurs near Παῦλος, διασῴζω, κτῆνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

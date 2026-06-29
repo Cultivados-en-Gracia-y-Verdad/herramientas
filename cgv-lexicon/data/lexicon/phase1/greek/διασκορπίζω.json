@@ -1,0 +1,362 @@
+{
+  "lemma": "διασκορπίζω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "διεσκόρπισεν",
+      "count": 2
+    },
+    {
+      "form": "διεσκορπίσθησαν.",
+      "count": 1
+    },
+    {
+      "form": "διεσκορπισμένα",
+      "count": 1
+    },
+    {
+      "form": "διασκορπίζων",
+      "count": 1
+    },
+    {
+      "form": "διασκορπισθήσονται⸃.",
+      "count": 1
+    },
+    {
+      "form": "διεσκόρπισας·",
+      "count": 1
+    },
+    {
+      "form": "διεσκόρπισα;",
+      "count": 1
+    },
+    {
+      "form": "⸀διασκορπισθήσονται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 7,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 5,
+      "perfect": 1,
+      "present": 1,
+      "future": 2
+    },
+    "voices": {
+      "passive": 4,
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:37",
+      "form": "διεσκορπίσθησαν.",
+      "morph": "V-A-P-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 37,
+      "left_context": "ἀπώλετο καὶ πάντες ὅσοι ἐπείθοντο αὐτῷ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 11:52",
+      "form": "διεσκορπισμένα",
+      "morph": "V-X-P-P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 52,
+      "left_context": "καὶ τὰ τέκνα τοῦ θεοῦ τὰ",
+      "right_context": "συναγάγῃ εἰς ἕν."
+    },
+    {
+      "ref": "Luke 1:51",
+      "form": "διεσκόρπισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 51,
+      "left_context": "Ἐποίησεν κράτος ἐν βραχίονι αὐτοῦ,",
+      "right_context": "ὑπερηφάνους διανοίᾳ καρδίας αὐτῶν·"
+    },
+    {
+      "ref": "Luke 15:13",
+      "form": "διεσκόρπισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 13,
+      "left_context": "ἀπεδήμησεν εἰς χώραν μακράν, καὶ ἐκεῖ",
+      "right_context": "τὴν οὐσίαν αὐτοῦ ζῶν ἀσώτως."
+    },
+    {
+      "ref": "Luke 16:1",
+      "form": "διασκορπίζων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 1,
+      "left_context": "οἰκονόμον, καὶ οὗτος διεβλήθη αὐτῷ ὡς",
+      "right_context": "τὰ ὑπάρχοντα αὐτοῦ."
+    },
+    {
+      "ref": "Mark 14:27",
+      "form": "διασκορπισθήσονται⸃.",
+      "morph": "V-F-P-I-3P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 27,
+      "left_context": "Πατάξω τὸν ποιμένα, καὶ ⸂τὰ πρόβατα",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 25:24",
+      "form": "διεσκόρπισας·",
+      "morph": "V-A-A-I-2S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 24,
+      "left_context": "οὐκ ἔσπειρας καὶ συνάγων ὅθεν οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 25:26",
+      "form": "διεσκόρπισα;",
+      "morph": "V-A-A-I-1S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 26,
+      "left_context": "οὐκ ἔσπειρα καὶ συνάγω ὅθεν οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 26:31",
+      "form": "⸀διασκορπισθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 31,
+      "left_context": "γέγραπται γάρ· Πατάξω τὸν ποιμένα, καὶ",
+      "right_context": "τὰ πρόβατα τῆς ποίμνης·"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Matthew": 3,
+    "Acts": 1,
+    "John": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συνάγω",
+      "display": "reuna",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ποιμήν",
+      "display": "pastor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρόβατον",
+      "display": "ovejas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σπείρω",
+      "display": "sembraste",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅθεν",
+      "display": "de·donde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "eran persuadido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράτος",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βραχίων",
+      "display": "brazo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπερήφανος",
+      "display": "soberbios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάνοια",
+      "display": "entendimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "de·corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "región",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μακρός",
+      "display": "lejos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐσία",
+      "display": "hacienda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "viviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσώτως",
+      "display": "pródigamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαβάλλω",
+      "display": "fue acusado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατάσσω",
+      "display": "heriré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποίμνη",
+      "display": "de·rebaño",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 25:24",
+      "negator": "οὐ",
+      "clause_text": "θερίζων ὅπου οὐκ ἔσπειρας καὶ συνάγων ὅθεν οὐ διεσκόρπισας·"
+    },
+    {
+      "ref": "Matthew 25:26",
+      "negator": "οὐ",
+      "clause_text": "θερίζω ὅπου οὐκ ἔσπειρα καὶ συνάγω ὅθεν οὐ διεσκόρπισα;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 15:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 16:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 1:51",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 25:24",
+      "reason": "occurs near σπείρω, συνάγω, ὅθεν"
+    },
+    {
+      "ref": "Matthew 25:26",
+      "reason": "occurs near σπείρω, συνάγω, ὅθεν"
+    },
+    {
+      "ref": "Matthew 26:31",
+      "reason": "occurs near ποιμήν, πρόβατον"
+    },
+    {
+      "ref": "Acts 5:37",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 11:52",
+      "reason": "occurs near συνάγω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

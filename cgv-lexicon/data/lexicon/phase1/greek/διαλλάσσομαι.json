@@ -1,0 +1,93 @@
+{
+  "lemma": "διαλλάσσομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διαλλάγηθι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 5:24",
+      "form": "διαλλάγηθι",
+      "morph": "V-A-P-D-2S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 24,
+      "left_context": "ἔμπροσθεν τοῦ θυσιαστηρίου καὶ ὕπαγε πρῶτον",
+      "right_context": "τῷ ἀδελφῷ σου, καὶ τότε ἐλθὼν"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θυσιαστήριον",
+      "display": "de·altar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "e",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 5:24",
+      "form": "διαλλάγηθι",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "δῶρόν σου ἔμπροσθεν τοῦ θυσιαστηρίου καὶ ὕπαγε πρῶτον διαλλάγηθι τῷ ἀδελφῷ σου, καὶ τότε ἐλθὼν πρόσφερε τὸ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 5:24",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,167 @@
+{
+  "lemma": "δωρέομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "δεδωρημένης",
+      "count": 1
+    },
+    {
+      "form": "δεδώρηται,",
+      "count": 1
+    },
+    {
+      "form": "ἐδωρήσατο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "perfect": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:3",
+      "form": "δεδωρημένης",
+      "morph": "V-X-M-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "αὐτοῦ τὰ πρὸς ζωὴν καὶ εὐσέβειαν",
+      "right_context": "διὰ τῆς ἐπιγνώσεως τοῦ καλέσαντος ἡμᾶς"
+    },
+    {
+      "ref": "2 Peter 1:4",
+      "form": "δεδώρηται,",
+      "morph": "V-X-M-I-3S",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "τὰ ⸂τίμια καὶ μέγιστα ἡμῖν⸃ ἐπαγγέλματα",
+      "right_context": "ἵνα διὰ τούτων γένησθε θείας κοινωνοὶ"
+    },
+    {
+      "ref": "Mark 15:45",
+      "form": "ἐδωρήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 45,
+      "left_context": "καὶ γνοὺς ἀπὸ τοῦ κεντυρίωνος",
+      "right_context": "τὸ ⸀πτῶμα τῷ Ἰωσήφ."
+    }
+  ],
+  "books": {
+    "2 Peter": 2,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ζωή",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐσέβεια",
+      "display": "piedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίγνωσις",
+      "display": "de·conocimiento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίμιος",
+      "display": "preciosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγιστος",
+      "display": "grandísimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπάγγελμα",
+      "display": "promesas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεῖος",
+      "display": "de·divina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεντυρίων",
+      "display": "de·centurión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτῶμα",
+      "display": "cadáver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωσήφ",
+      "display": "José",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:3",
+      "reason": "occurs near εὐσέβεια, ζωή, καλέω"
+    },
+    {
+      "ref": "2 Peter 1:4",
+      "reason": "occurs near τίμιος"
+    },
+    {
+      "ref": "Mark 15:45",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

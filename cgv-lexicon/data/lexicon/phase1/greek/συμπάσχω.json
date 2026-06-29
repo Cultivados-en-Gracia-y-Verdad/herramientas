@@ -1,0 +1,135 @@
+{
+  "lemma": "συμπάσχω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συμπάσχει",
+      "count": 1
+    },
+    {
+      "form": "συμπάσχομεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:26",
+      "form": "συμπάσχει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 26,
+      "left_context": "καὶ ⸀εἴτε πάσχει ἓν μέλος,",
+      "right_context": "πάντα τὰ μέλη· εἴτε δοξάζεται ⸀μέλος,"
+    },
+    {
+      "ref": "Romans 8:17",
+      "form": "συμπάσχομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 17,
+      "left_context": "μὲν θεοῦ, συγκληρονόμοι δὲ Χριστοῦ, εἴπερ",
+      "right_context": "ἵνα καὶ συνδοξασθῶμεν."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἴτε",
+      "display": "sea·que",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέλος",
+      "display": "miembro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "es glorificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγκληρονόμος",
+      "display": "coherederos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴπερ",
+      "display": "si·es·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνδοξάζομαι",
+      "display": "glorificarse·con",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 12:26",
+      "reason": "occurs near δοξάζω, εἴτε, εἷς"
+    },
+    {
+      "ref": "Romans 8:17",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

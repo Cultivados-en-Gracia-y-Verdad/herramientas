@@ -1,0 +1,109 @@
+{
+  "lemma": "ἐξανίστημι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐξαναστήσῃ",
+      "count": 2
+    },
+    {
+      "form": "ἐξανέστησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:5",
+      "form": "ἐξανέστησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 5,
+      "left_context": "",
+      "right_context": "δέ τινες τῶν ἀπὸ τῆς αἱρέσεως"
+    },
+    {
+      "ref": "Luke 20:28",
+      "form": "ἐξαναστήσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 28,
+      "left_context": "ὁ ἀδελφὸς αὐτοῦ τὴν γυναῖκα καὶ",
+      "right_context": "σπέρμα τῷ ἀδελφῷ αὐτοῦ."
+    },
+    {
+      "ref": "Mark 12:19",
+      "form": "ἐξαναστήσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 19,
+      "left_context": "ὁ ἀδελφὸς αὐτοῦ τὴν ⸀γυναῖκα καὶ",
+      "right_context": "σπέρμα τῷ ἀδελφῷ αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σπέρμα",
+      "display": "semilla",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 20:28",
+      "reason": "occurs near γυνή, σπέρμα, ἀδελφός"
+    },
+    {
+      "ref": "Mark 12:19",
+      "reason": "occurs near γυνή, σπέρμα, ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

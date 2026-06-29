@@ -1,0 +1,741 @@
+{
+  "lemma": "ἐπιτίθημι",
+  "language": "greek",
+  "total_occurrences": 39,
+  "forms": [
+    {
+      "form": "ἐπέθηκαν",
+      "count": 6
+    },
+    {
+      "form": "ἐπιθεὶς",
+      "count": 5
+    },
+    {
+      "form": "ἐπιθῇ",
+      "count": 3
+    },
+    {
+      "form": "ἐπιθέντες",
+      "count": 3
+    },
+    {
+      "form": "ἐπέθηκεν",
+      "count": 3
+    },
+    {
+      "form": "ἐπιθέντος",
+      "count": 2
+    },
+    {
+      "form": "ἐπιτίθει,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπιθήσει",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπετίθεσαν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιθῶ",
+      "count": 1
+    },
+    {
+      "form": "ἐπιθέντα",
+      "count": 1
+    },
+    {
+      "form": "ἐπιθεῖναι",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτίθεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐπιθήσεταί",
+      "count": 1
+    },
+    {
+      "form": "ἐπέθεντο",
+      "count": 1
+    },
+    {
+      "form": "ἐπέθηκέν",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐπιτιθεὶς",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτίθησιν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιθῇς",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπέθηκεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιθήσουσιν",
+      "count": 1
+    },
+    {
+      "form": "ἐπίθες",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτιθέασιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "subjunctive": 5,
+      "indicative": 18,
+      "participle": 12,
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 30,
+      "future": 3,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 36,
+      "passive": 1,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:22",
+      "form": "ἐπιτίθει,",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 22,
+      "left_context": "χεῖρας ταχέως μηδενὶ",
+      "right_context": "μηδὲ κοινώνει ἁμαρτίαις ἀλλοτρίαις· σεαυτὸν ἁγνὸν"
+    },
+    {
+      "ref": "Revelation 22:18",
+      "form": "ἐπιθῇ",
+      "morph": "V-A-A-S-3S",
+      "book": "Revelation",
+      "chapter": 22,
+      "verse": 18,
+      "left_context": "προφητείας τοῦ βιβλίου τούτου· ἐάν τις",
+      "right_context": "ἐπ’ αὐτά, ⸀ἐπιθήσει ὁ θεὸς ἐπ’"
+    },
+    {
+      "ref": "Revelation 22:18",
+      "form": "⸀ἐπιθήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 22,
+      "verse": 18,
+      "left_context": "τούτου· ἐάν τις ἐπιθῇ ἐπ’ αὐτά,",
+      "right_context": "ὁ θεὸς ἐπ’ αὐτὸν τὰς πληγὰς"
+    },
+    {
+      "ref": "Acts 6:6",
+      "form": "ἐπέθηκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "ἔστησαν ἐνώπιον τῶν ἀποστόλων, καὶ προσευξάμενοι",
+      "right_context": "αὐτοῖς τὰς χεῖρας."
+    },
+    {
+      "ref": "Acts 8:17",
+      "form": "⸀ἐπετίθεσαν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 17,
+      "left_context": "τότε",
+      "right_context": "τὰς χεῖρας ἐπ’ αὐτούς, καὶ ἐλάμβανον"
+    },
+    {
+      "ref": "Acts 8:19",
+      "form": "ἐπιθῶ",
+      "morph": "V-A-A-S-1S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 19,
+      "left_context": "τὴν ἐξουσίαν ταύτην ἵνα ᾧ ἐὰν",
+      "right_context": "τὰς χεῖρας λαμβάνῃ πνεῦμα ἅγιον."
+    },
+    {
+      "ref": "Acts 9:12",
+      "form": "ἐπιθέντα",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "ἐν ὁράματι Ἁνανίαν ὀνόματι⸃ εἰσελθόντα καὶ",
+      "right_context": "αὐτῷ ⸀χεῖρας ὅπως ἀναβλέψῃ."
+    },
+    {
+      "ref": "Acts 9:17",
+      "form": "ἐπιθεὶς",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 17,
+      "left_context": "καὶ εἰσῆλθεν εἰς τὴν οἰκίαν, καὶ",
+      "right_context": "ἐπ’ αὐτὸν τὰς χεῖρας εἶπεν· Σαοὺλ"
+    },
+    {
+      "ref": "Acts 13:3",
+      "form": "ἐπιθέντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 3,
+      "left_context": "τότε νηστεύσαντες καὶ προσευξάμενοι καὶ",
+      "right_context": "τὰς χεῖρας αὐτοῖς ἀπέλυσαν."
+    },
+    {
+      "ref": "Acts 15:10",
+      "form": "ἐπιθεῖναι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 10,
+      "left_context": "νῦν οὖν τί πειράζετε τὸν θεόν,",
+      "right_context": "ζυγὸν ἐπὶ τὸν τράχηλον τῶν μαθητῶν"
+    },
+    {
+      "ref": "Acts 15:28",
+      "form": "ἐπιτίθεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 28,
+      "left_context": "τῷ ἁγίῳ⸃ καὶ ἡμῖν μηδὲν πλέον",
+      "right_context": "ὑμῖν βάρος πλὴν ⸂τούτων τῶν ἐπάναγκες⸃,"
+    },
+    {
+      "ref": "Acts 16:23",
+      "form": "ἐπιθέντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 23,
+      "left_context": "πολλάς ⸀τε",
+      "right_context": "αὐτοῖς πληγὰς ἔβαλον εἰς φυλακήν, παραγγείλαντες"
+    },
+    {
+      "ref": "Acts 18:10",
+      "form": "ἐπιθήσεταί",
+      "morph": "V-F-M-I-3S",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 10,
+      "left_context": "ἐγώ εἰμι μετὰ σοῦ καὶ οὐδεὶς",
+      "right_context": "σοι τοῦ κακῶσαί σε, διότι λαός"
+    },
+    {
+      "ref": "Acts 19:6",
+      "form": "ἐπιθέντος",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 6,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῖς τοῦ ⸀Παύλου χεῖρας ἦλθε τὸ"
+    },
+    {
+      "ref": "Acts 28:3",
+      "form": "ἐπιθέντος",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 3,
+      "left_context": "τοῦ Παύλου φρυγάνων ⸀τι πλῆθος καὶ",
+      "right_context": "ἐπὶ τὴν πυράν, ἔχιδνα ⸀ἀπὸ τῆς"
+    },
+    {
+      "ref": "Acts 28:8",
+      "form": "ἐπιθεὶς",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 8,
+      "left_context": "ὃν ὁ Παῦλος εἰσελθὼν καὶ προσευξάμενος",
+      "right_context": "τὰς χεῖρας αὐτῷ ἰάσατο αὐτόν."
+    },
+    {
+      "ref": "Acts 28:10",
+      "form": "ἐπέθεντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 10,
+      "left_context": "πολλαῖς τιμαῖς ἐτίμησαν ἡμᾶς καὶ ἀναγομένοις",
+      "right_context": "τὰ πρὸς ⸂τὰς χρείας⸃."
+    },
+    {
+      "ref": "John 9:15",
+      "form": "ἐπέθηκέν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 9,
+      "verse": 15,
+      "left_context": "ἀνέβλεψεν. ὁ δὲ εἶπεν αὐτοῖς· Πηλὸν",
+      "right_context": "μου ἐπὶ τοὺς ὀφθαλμούς, καὶ ἐνιψάμην,"
+    },
+    {
+      "ref": "John 19:2",
+      "form": "ἐπέθηκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 2,
+      "left_context": "οἱ στρατιῶται πλέξαντες στέφανον ἐξ ἀκανθῶν",
+      "right_context": "αὐτοῦ τῇ κεφαλῇ, καὶ ἱμάτιον πορφυροῦν"
+    },
+    {
+      "ref": "Luke 4:40",
+      "form": "⸂ἐπιτιθεὶς",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 40,
+      "left_context": "δὲ ἑνὶ ἑκάστῳ αὐτῶν τὰς χεῖρας",
+      "right_context": "ἐθεράπευεν⸃ αὐτούς."
+    },
+    {
+      "ref": "Luke 10:30",
+      "form": "ἐπιθέντες",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 30,
+      "left_context": "οἳ καὶ ἐκδύσαντες αὐτὸν καὶ πληγὰς",
+      "right_context": "ἀπῆλθον ἀφέντες ⸀ἡμιθανῆ."
+    },
+    {
+      "ref": "Luke 13:13",
+      "form": "ἐπέθηκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 13,
+      "left_context": "καὶ",
+      "right_context": "αὐτῇ τὰς χεῖρας· καὶ παραχρῆμα ἀνωρθώθη,"
+    },
+    {
+      "ref": "Luke 15:5",
+      "form": "ἐπιτίθησιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 5,
+      "left_context": "καὶ εὑρὼν",
+      "right_context": "ἐπὶ τοὺς ὤμους ⸀αὐτοῦ χαίρων,"
+    },
+    {
+      "ref": "Luke 23:26",
+      "form": "ἐπέθηκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 26,
+      "left_context": "⸂Σίμωνά τινα Κυρηναῖον ἐρχόμενον⸃ ἀπ’ ἀγροῦ",
+      "right_context": "αὐτῷ τὸν σταυρὸν φέρειν ὄπισθεν τοῦ"
+    },
+    {
+      "ref": "Mark 3:16",
+      "form": "ἐπέθηκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "καὶ ⸂ἐποίησεν τοὺς δώδεκα, καὶ⸃",
+      "right_context": "⸂ὄνομα τῷ Σίμωνι⸃ Πέτρον,"
+    },
+    {
+      "ref": "Mark 3:17",
+      "form": "ἐπέθηκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "Ἰωάννην τὸν ἀδελφὸν τοῦ Ἰακώβου (καὶ",
+      "right_context": "αὐτοῖς ⸀ὀνόματα Βοανηργές, ὅ ἐστιν Υἱοὶ"
+    },
+    {
+      "ref": "Mark 5:23",
+      "form": "ἐπιθῇς",
+      "morph": "V-A-A-S-2S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 23,
+      "left_context": "θυγάτριόν μου ἐσχάτως ἔχει, ἵνα ἐλθὼν",
+      "right_context": "⸂τὰς χεῖρας αὐτῇ⸃ ⸀ἵνα σωθῇ καὶ"
+    },
+    {
+      "ref": "Mark 6:5",
+      "form": "ἐπιθεὶς",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 5,
+      "left_context": "οὐδεμίαν δύναμιν⸃, εἰ μὴ ὀλίγοις ἀρρώστοις",
+      "right_context": "τὰς χεῖρας ἐθεράπευσεν·"
+    },
+    {
+      "ref": "Mark 7:32",
+      "form": "ἐπιθῇ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 32,
+      "left_context": "⸀καὶ ⸀μογιλάλον, καὶ παρακαλοῦσιν αὐτὸν ἵνα",
+      "right_context": "αὐτῷ τὴν χεῖρα."
+    },
+    {
+      "ref": "Mark 8:23",
+      "form": "ἐπιθεὶς",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "καὶ πτύσας εἰς τὰ ὄμματα αὐτοῦ,",
+      "right_context": "τὰς χεῖρας αὐτῷ, ἐπηρώτα αὐτόν· Εἴ"
+    },
+    {
+      "ref": "Mark 8:25",
+      "form": "⸀ἐπέθηκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 25,
+      "left_context": "εἶτα πάλιν",
+      "right_context": "τὰς χεῖρας ἐπὶ τοὺς ὀφθαλμοὺς αὐτοῦ,"
+    },
+    {
+      "ref": "Mark 16:18",
+      "form": "ἐπιθήσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Mark",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "μὴ αὐτοὺς βλάψῃ, ἐπὶ ἀρρώστους χεῖρας",
+      "right_context": "καὶ καλῶς ἕξουσιν."
+    },
+    {
+      "ref": "Matthew 9:18",
+      "form": "ἐπίθες",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "θυγάτηρ μου ἄρτι ἐτελεύτησεν· ἀλλὰ ἐλθὼν",
+      "right_context": "τὴν χεῖρά σου ἐπ’ αὐτήν, καὶ"
+    },
+    {
+      "ref": "Matthew 19:13",
+      "form": "ἐπιθῇ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 13,
+      "left_context": "⸀προσηνέχθησαν αὐτῷ παιδία ἵνα τὰς χεῖρας",
+      "right_context": "αὐτοῖς καὶ προσεύξηται· οἱ δὲ μαθηταὶ"
+    },
+    {
+      "ref": "Matthew 19:15",
+      "form": "ἐπιθεὶς",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 15,
+      "left_context": "καὶ",
+      "right_context": "⸂τὰς χεῖρας αὐτοῖς⸃ ἐπορεύθη ἐκεῖθεν."
+    },
+    {
+      "ref": "Matthew 21:7",
+      "form": "ἐπέθηκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 7,
+      "left_context": "τὴν ὄνον καὶ τὸν πῶλον, καὶ",
+      "right_context": "⸀ἐπ’ αὐτῶν τὰ ⸀ἱμάτια, καὶ ἐπεκάθισεν"
+    },
+    {
+      "ref": "Matthew 23:4",
+      "form": "ἐπιτιθέασιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 4,
+      "left_context": "δεσμεύουσιν ⸀δὲ φορτία ⸀βαρέα καὶ",
+      "right_context": "ἐπὶ τοὺς ὤμους τῶν ἀνθρώπων, ⸂αὐτοὶ"
+    },
+    {
+      "ref": "Matthew 27:29",
+      "form": "ἐπέθηκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 29,
+      "left_context": "καὶ πλέξαντες στέφανον ἐξ ἀκανθῶν",
+      "right_context": "ἐπὶ ⸂τῆς κεφαλῆς⸃ αὐτοῦ καὶ κάλαμον"
+    },
+    {
+      "ref": "Matthew 27:37",
+      "form": "ἐπέθηκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 37,
+      "left_context": "καὶ",
+      "right_context": "ἐπάνω τῆς κεφαλῆς αὐτοῦ τὴν αἰτίαν"
+    }
+  ],
+  "books": {
+    "Acts": 14,
+    "Mark": 8,
+    "Matthew": 7,
+    "Luke": 5,
+    "Revelation": 2,
+    "John": 2,
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 20,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orados",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vino",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "de·Pablo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabeza",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτίθημι",
+      "display": "pondrá",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πληγή",
+      "display": "heridas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλέκω",
+      "display": "trenzados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στέφανος",
+      "display": "corona",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκανθα",
+      "display": "de·espinas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "manto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεραπεύω",
+      "display": "sanaba",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὦμος",
+      "display": "hombros",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρρωστος",
+      "display": "enfermos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ταχέως",
+      "display": "rápidamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοινωνέω",
+      "display": "comparte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλότριος",
+      "display": "ajenas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 5:22",
+      "form": "ἐπιτίθει,",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "χεῖρας ταχέως μηδενὶ ἐπιτίθει, μηδὲ κοινώνει ἁμαρτίαις ἀλλοτρίαις· σεαυτὸν ἁγνὸν τήρει."
+    },
+    {
+      "ref": "Matthew 9:18",
+      "form": "ἐπίθες",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ὅτι Ἡ θυγάτηρ μου ἄρτι ἐτελεύτησεν· ἀλλὰ ἐλθὼν ἐπίθες τὴν χεῖρά σου ἐπ’ αὐτήν, καὶ ζήσεται."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 5:22",
+      "negator": "μηδὲ",
+      "clause_text": "χεῖρας ταχέως μηδενὶ ἐπιτίθει, μηδὲ κοινώνει ἁμαρτίαις ἀλλοτρίαις· σεαυτὸν ἁγνὸν τήρει."
+    },
+    {
+      "ref": "Mark 6:5",
+      "negator": "μὴ",
+      "clause_text": "ἐκεῖ ⸂ποιῆσαι οὐδεμίαν δύναμιν⸃, εἰ μὴ ὀλίγοις ἀρρώστοις ἐπιθεὶς τὰς χεῖρας ἐθεράπευσεν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 9:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 5:22",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 13:3",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 15:10",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 15:28",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:23",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 18:10",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 19:6",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

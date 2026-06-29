@@ -1,0 +1,100 @@
+{
+  "lemma": "ἐπανέρχομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπανέρχεσθαί",
+      "count": 1
+    },
+    {
+      "form": "ἐπανελθεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:35",
+      "form": "ἐπανέρχεσθαί",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 35,
+      "left_context": "τι ἂν προσδαπανήσῃς ἐγὼ ἐν τῷ",
+      "right_context": "με ἀποδώσω σοι."
+    },
+    {
+      "ref": "Luke 19:15",
+      "form": "ἐπανελθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 15,
+      "left_context": "καὶ ἐγένετο ἐν τῷ",
+      "right_context": "αὐτὸν λαβόντα τὴν βασιλείαν καὶ εἶπεν"
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προσδαπανάω",
+      "display": "gastes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolveré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:35",
+      "reason": "occurs near προσδαπανάω, ἀποδίδωμι"
+    },
+    {
+      "ref": "Luke 19:15",
+      "reason": "occurs near βασιλεία, λαμβάνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

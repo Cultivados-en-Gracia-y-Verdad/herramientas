@@ -1,0 +1,393 @@
+{
+  "lemma": "ποιμαίνω",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "ποιμανεῖ",
+      "count": 3
+    },
+    {
+      "form": "ποιμαίνειν",
+      "count": 2
+    },
+    {
+      "form": "ποιμαίνει",
+      "count": 1
+    },
+    {
+      "form": "ποιμάνατε",
+      "count": 1
+    },
+    {
+      "form": "⸀ποιμανεῖ",
+      "count": 1
+    },
+    {
+      "form": "Ποίμαινε",
+      "count": 1
+    },
+    {
+      "form": "ποιμαίνοντες,",
+      "count": 1
+    },
+    {
+      "form": "ποιμαίνοντα,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "imperative": 2,
+      "infinitive": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 6,
+      "aorist": 1,
+      "future": 4
+    },
+    "voices": {
+      "active": 11
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:7",
+      "form": "ποιμαίνει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 7,
+      "left_context": "⸂τὸν καρπὸν⸃ αὐτοῦ οὐκ ἐσθίει; ⸀τίς",
+      "right_context": "ποίμνην καὶ ἐκ τοῦ γάλακτος τῆς"
+    },
+    {
+      "ref": "1 Peter 5:2",
+      "form": "ποιμάνατε",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "τὸ ἐν ὑμῖν ποίμνιον τοῦ θεοῦ,"
+    },
+    {
+      "ref": "Revelation 2:27",
+      "form": "ποιμανεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 2,
+      "verse": 27,
+      "left_context": "καὶ",
+      "right_context": "αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ ὡς τὰ"
+    },
+    {
+      "ref": "Revelation 7:17",
+      "form": "⸀ποιμανεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 17,
+      "left_context": "ἀρνίον τὸ ἀνὰ μέσον τοῦ θρόνου",
+      "right_context": "αὐτούς, καὶ ⸀ὁδηγήσει αὐτοὺς ἐπὶ ζωῆς"
+    },
+    {
+      "ref": "Revelation 12:5",
+      "form": "ποιμαίνειν",
+      "morph": "V-P-A-N",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "καὶ ἔτεκεν υἱόν, ⸀ἄρσεν, ὃς μέλλει",
+      "right_context": "πάντα τὰ ἔθνη ἐν ῥάβδῳ σιδηρᾷ·"
+    },
+    {
+      "ref": "Revelation 19:15",
+      "form": "ποιμανεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "Revelation",
+      "chapter": 19,
+      "verse": 15,
+      "left_context": "αὐτῇ πατάξῃ τὰ ἔθνη, καὶ αὐτὸς",
+      "right_context": "αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ· καὶ αὐτὸς"
+    },
+    {
+      "ref": "Acts 20:28",
+      "form": "ποιμαίνειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 28,
+      "left_context": "τὸ πνεῦμα τὸ ἅγιον ἔθετο ἐπισκόπους,",
+      "right_context": "τὴν ἐκκλησίαν τοῦ ⸀θεοῦ, ἣν περιεποιήσατο"
+    },
+    {
+      "ref": "John 21:16",
+      "form": "Ποίμαινε",
+      "morph": "V-P-A-D-2S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 16,
+      "left_context": "οἶδας ὅτι φιλῶ σε. λέγει αὐτῷ·",
+      "right_context": "τὰ πρόβατά μου."
+    },
+    {
+      "ref": "Jude 1:12",
+      "form": "ποιμαίνοντες,",
+      "morph": "V-P-A-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "ἀγάπαις ὑμῶν σπιλάδες συνευωχούμενοι, ἀφόβως ἑαυτοὺς",
+      "right_context": "νεφέλαι ἄνυδροι ὑπὸ ἀνέμων παραφερόμεναι, δένδρα"
+    },
+    {
+      "ref": "Luke 17:7",
+      "form": "ποιμαίνοντα,",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 7,
+      "left_context": "ἐξ ὑμῶν δοῦλον ἔχων ἀροτριῶντα ἢ",
+      "right_context": "ὃς εἰσελθόντι ἐκ τοῦ ἀγροῦ ἐρεῖ"
+    },
+    {
+      "ref": "Matthew 2:6",
+      "form": "ποιμανεῖ",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "ἐκ σοῦ γὰρ ἐξελεύσεται ἡγούμενος, ὅστις",
+      "right_context": "τὸν λαόν μου τὸν Ἰσραήλ."
+    }
+  ],
+  "books": {
+    "Revelation": 4,
+    "1 Corinthians": 1,
+    "1 Peter": 1,
+    "Acts": 1,
+    "John": 1,
+    "Jude": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ῥάβδος",
+      "display": "vara·",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "σιδηροῦς",
+      "display": "de·hierro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "come",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποίμνη",
+      "display": "rebaño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γάλα",
+      "display": "de·leche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποίμνιον",
+      "display": "rebaño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνά",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θρόνος",
+      "display": "de·trono",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδηγέω",
+      "display": "guiará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίκτω",
+      "display": "dar·a·luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρσην",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατάσσω",
+      "display": "hera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "puso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίσκοπος",
+      "display": "obispos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιλέω",
+      "display": "amo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόβατον",
+      "display": "ovejas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 5:2",
+      "form": "ποιμάνατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ποιμάνατε τὸ ἐν ὑμῖν ποίμνιον τοῦ θεοῦ, ⸀ἐπισκοποῦντες μὴ"
+    },
+    {
+      "ref": "John 21:16",
+      "form": "Ποίμαινε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "κύριε, σὺ οἶδας ὅτι φιλῶ σε. λέγει αὐτῷ· Ποίμαινε τὰ πρόβατά μου."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 9:7",
+      "negator": "οὐκ",
+      "clause_text": "ἀμπελῶνα καὶ ⸂τὸν καρπὸν⸃ αὐτοῦ οὐκ ἐσθίει; ⸀τίς ποιμαίνει ποίμνην καὶ ἐκ τοῦ γάλακτος τῆς ποίμνης οὐκ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 5:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 21:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 12:5",
+      "reason": "occurs near ἔθνος, ῥάβδος"
+    },
+    {
+      "ref": "Revelation 19:15",
+      "reason": "occurs near σιδηροῦς, ἔθνος, ῥάβδος"
+    },
+    {
+      "ref": "Revelation 2:27",
+      "reason": "occurs near σιδηροῦς, ῥάβδος"
+    },
+    {
+      "ref": "Revelation 7:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 9:7",
+      "reason": "occurs near καρπός, ἐσθίω"
+    },
+    {
+      "ref": "Acts 20:28",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

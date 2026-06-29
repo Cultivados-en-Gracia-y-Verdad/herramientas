@@ -1,0 +1,86 @@
+{
+  "lemma": "ἐπιγαμβρεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιγαμβρεύσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 22:24",
+      "form": "ἐπιγαμβρεύσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 24,
+      "left_context": "Ἐάν τις ἀποθάνῃ μὴ ἔχων τέκνα,",
+      "right_context": "ὁ ἀδελφὸς αὐτοῦ τὴν γυναῖκα αὐτοῦ"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "mora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 22:24",
+      "negator": "μὴ",
+      "clause_text": "Μωϋσῆς εἶπεν· Ἐάν τις ἀποθάνῃ μὴ ἔχων τέκνα, ἐπιγαμβρεύσει ὁ ἀδελφὸς αὐτοῦ τὴν γυναῖκα αὐτοῦ καὶ ἀναστήσει"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 22:24",
+      "reason": "occurs near γυνή, τέκνον, ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

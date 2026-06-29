@@ -1,0 +1,130 @@
+{
+  "lemma": "καταφεύγω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καταφυγόντες",
+      "count": 1
+    },
+    {
+      "form": "κατέφυγον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 6:18",
+      "form": "καταφυγόντες",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "ψεύσασθαι ⸀θεόν, ἰσχυρὰν παράκλησιν ἔχωμεν οἱ",
+      "right_context": "κρατῆσαι τῆς προκειμένης ἐλπίδος·"
+    },
+    {
+      "ref": "Acts 14:6",
+      "form": "κατέφυγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 6,
+      "left_context": "συνιδόντες",
+      "right_context": "εἰς τὰς πόλεις τῆς Λυκαονίας Λύστραν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχυρός",
+      "display": "fuerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράκλησις",
+      "display": "consolación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόκειμαι",
+      "display": "estar·delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "de·esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνοράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λυκαονία",
+      "display": "de·Licaonia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 14:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 6:18",
+      "reason": "occurs near θεός, κρατέω, παράκλησις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

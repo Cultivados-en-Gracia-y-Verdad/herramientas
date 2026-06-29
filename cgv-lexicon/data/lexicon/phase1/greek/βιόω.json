@@ -1,0 +1,80 @@
+{
+  "lemma": "βιόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "βιῶσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 4:2",
+      "form": "βιῶσαι",
+      "morph": "V-A-A-N",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "θελήματι θεοῦ τὸν ἐπίλοιπον ἐν σαρκὶ",
+      "right_context": "χρόνον."
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίλοιπος",
+      "display": "restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 4:2",
+      "reason": "occurs near θεός, σάρξ, χρόνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

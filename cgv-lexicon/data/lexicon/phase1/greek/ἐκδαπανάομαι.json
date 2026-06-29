@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐκδαπανάομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκδαπανηθήσομαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 12:15",
+      "form": "ἐκδαπανηθήσομαι",
+      "morph": "V-F-P-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 12,
+      "verse": 15,
+      "left_context": "ἐγὼ δὲ ἥδιστα δαπανήσω καὶ",
+      "right_context": "ὑπὲρ τῶν ψυχῶν ὑμῶν. ⸀εἰ περισσοτέρως"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἥδιστα",
+      "display": "con·mucho·gusto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαπανάω",
+      "display": "gastaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "de·almas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 12:15",
+      "reason": "occurs near δαπανάω, ψυχή, ἥδιστα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

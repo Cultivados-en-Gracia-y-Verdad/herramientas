@@ -1,0 +1,137 @@
+{
+  "lemma": "βυθίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "βυθίζουσι",
+      "count": 1
+    },
+    {
+      "form": "βυθίζεσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:9",
+      "form": "βυθίζουσι",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "ἐπιθυμίας πολλὰς ἀνοήτους καὶ βλαβεράς, αἵτινες",
+      "right_context": "τοὺς ἀνθρώπους εἰς ὄλεθρον καὶ ἀπώλειαν·"
+    },
+    {
+      "ref": "Luke 5:7",
+      "form": "βυθίζεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "καὶ ἔπλησαν ἀμφότερα τὰ πλοῖα ὥστε",
+      "right_context": "αὐτά."
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "muchas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνόητος",
+      "display": "necias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλαβερός",
+      "display": "dañinas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄλεθρος",
+      "display": "destrucción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίμπλημι",
+      "display": "llenaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμφότεροι",
+      "display": "amboses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barcas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:9",
+      "reason": "occurs near βλαβερός, πολύς, ἀνόητος"
+    },
+    {
+      "ref": "Luke 5:7",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

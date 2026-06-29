@@ -1,0 +1,92 @@
+{
+  "lemma": "ὑποτρέχω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑποδραμόντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:16",
+      "form": "ὑποδραμόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 16,
+      "left_context": "νησίον δέ τι",
+      "right_context": "καλούμενον ⸀Καῦδα ⸂ἰσχύσαμεν μόλις⸃ περικρατεῖς γενέσθαι"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νησίον",
+      "display": "islote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Καῦδα",
+      "display": "Cauda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "pudimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόλις",
+      "display": "apenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περικρατής",
+      "display": "fuertes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:16",
+      "reason": "occurs near Καῦδα, καλέω, μόλις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

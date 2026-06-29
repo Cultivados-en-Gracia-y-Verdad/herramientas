@@ -1,0 +1,80 @@
+{
+  "lemma": "συμπίπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνέπεσεν⸃,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:49",
+      "form": "συνέπεσεν⸃,",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 49,
+      "left_context": "ᾗ προσέρηξεν ὁ ποταμός, καὶ ⸂εὐθὺς",
+      "right_context": "καὶ ἐγένετο τὸ ῥῆγμα τῆς οἰκίας"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προσρήγνυμι",
+      "display": "rompió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποταμός",
+      "display": "río",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆγμα",
+      "display": "grieta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:49",
+      "reason": "occurs near εὐθύς, ποταμός, προσρήγνυμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

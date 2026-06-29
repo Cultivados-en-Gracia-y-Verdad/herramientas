@@ -1,0 +1,327 @@
+{
+  "lemma": "ἐπίκειμαι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἐπίκειται·",
+      "count": 1
+    },
+    {
+      "form": "ἐπικείμενα.",
+      "count": 1
+    },
+    {
+      "form": "ἐπικειμένου,",
+      "count": 1
+    },
+    {
+      "form": "ἐπέκειτο",
+      "count": 1
+    },
+    {
+      "form": "ἐπικείμενον",
+      "count": 1
+    },
+    {
+      "form": "ἐπικεῖσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἐπέκειντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 5,
+      "imperfect": 2
+    },
+    "voices": {
+      "middle": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:16",
+      "form": "ἐπίκειται·",
+      "morph": "V-P-M-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 16,
+      "left_context": "ἔστιν μοι καύχημα, ἀνάγκη γάρ μοι",
+      "right_context": "οὐαὶ ⸀γάρ μοί ἐστιν ἐὰν μὴ"
+    },
+    {
+      "ref": "Hebrews 9:10",
+      "form": "ἐπικείμενα.",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "βαπτισμοῖς, ⸀δικαιώματα σαρκὸς μέχρι καιροῦ διορθώσεως",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 27:20",
+      "form": "ἐπικειμένου,",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 20,
+      "left_context": "πλείονας ἡμέρας, χειμῶνός τε οὐκ ὀλίγου",
+      "right_context": "λοιπὸν περιῃρεῖτο ⸂ἐλπὶς πᾶσα⸃ τοῦ σῴζεσθαι"
+    },
+    {
+      "ref": "John 11:38",
+      "form": "ἐπέκειτο",
+      "morph": "V-I-M-I-3S",
+      "book": "John",
+      "chapter": 11,
+      "verse": 38,
+      "left_context": "μνημεῖον· ἦν δὲ σπήλαιον, καὶ λίθος",
+      "right_context": "ἐπ’ αὐτῷ."
+    },
+    {
+      "ref": "John 21:9",
+      "form": "ἐπικείμενον",
+      "morph": "V-P-M-P",
+      "book": "John",
+      "chapter": 21,
+      "verse": 9,
+      "left_context": "γῆν βλέπουσιν ἀνθρακιὰν κειμένην καὶ ὀψάριον",
+      "right_context": "καὶ ἄρτον."
+    },
+    {
+      "ref": "Luke 5:1",
+      "form": "ἐπικεῖσθαι",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "Ἐγένετο δὲ ἐν τῷ τὸν ὄχλον",
+      "right_context": "αὐτῷ ⸀καὶ ἀκούειν τὸν λόγον τοῦ"
+    },
+    {
+      "ref": "Luke 23:23",
+      "form": "ἐπέκειντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 23,
+      "left_context": "οἱ δὲ",
+      "right_context": "φωναῖς μεγάλαις αἰτούμενοι αὐτὸν σταυρωθῆναι, καὶ"
+    }
+  ],
+  "books": {
+    "John": 2,
+    "Luke": 2,
+    "1 Corinthians": 1,
+    "Hebrews": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καύχημα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγκη",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐαί",
+      "display": "¡ay!",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαίωμα",
+      "display": "ordenanzas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέχρι(ς)",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "de·tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διόρθωσις",
+      "display": "de·reforma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χειμών",
+      "display": "de·invierno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγος",
+      "display": "de·poco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιαιρέω",
+      "display": "era quitado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπήλαιον",
+      "display": "cueva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνθρακιά",
+      "display": "brasas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεῖμαι",
+      "display": "yaciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψάριον",
+      "display": "pescado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "pan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 27:20",
+      "negator": "οὐκ",
+      "clause_text": "ἐπιφαινόντων ἐπὶ πλείονας ἡμέρας, χειμῶνός τε οὐκ ὀλίγου ἐπικειμένου, λοιπὸν περιῃρεῖτο ⸂ἐλπὶς πᾶσα⸃ τοῦ σῴζεσθαι ἡμᾶς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 11:38",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 21:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 23:23",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 5:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 9:16",
+      "reason": "occurs near καύχημα, οὐαί, ἀνάγκη"
+    },
+    {
+      "ref": "Acts 27:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 9:10",
+      "reason": "occurs near δικαίωμα, σάρξ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

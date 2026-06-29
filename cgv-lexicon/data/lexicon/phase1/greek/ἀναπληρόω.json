@@ -1,0 +1,294 @@
+{
+  "lemma": "ἀναπληρόω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἀναπληρῶν",
+      "count": 1
+    },
+    {
+      "form": "ἀνεπλήρωσαν,",
+      "count": 1
+    },
+    {
+      "form": "ἀναπληρῶσαι",
+      "count": 1
+    },
+    {
+      "form": "ἀναπληρώσῃ",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀναπληρώσετε",
+      "count": 1
+    },
+    {
+      "form": "ἀναπληροῦται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 3,
+      "infinitive": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 3,
+      "future": 1
+    },
+    "voices": {
+      "active": 5,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 14:16",
+      "form": "ἀναπληρῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 16,
+      "left_context": "ἐπεὶ ἐὰν ⸀εὐλογῇς ⸀πνεύματι, ὁ",
+      "right_context": "τὸν τόπον τοῦ ἰδιώτου πῶς ἐρεῖ"
+    },
+    {
+      "ref": "1 Corinthians 16:17",
+      "form": "ἀνεπλήρωσαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 16,
+      "verse": 17,
+      "left_context": "Ἀχαϊκοῦ, ὅτι τὸ ⸀ὑμέτερον ὑστέρημα οὗτοι",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Thessalonians 2:16",
+      "form": "ἀναπληρῶσαι",
+      "morph": "V-A-A-N",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "ἔθνεσιν λαλῆσαι ἵνα σωθῶσιν, εἰς τὸ",
+      "right_context": "αὐτῶν τὰς ἁμαρτίας πάντοτε. ἔφθασεν δὲ"
+    },
+    {
+      "ref": "Philippians 2:30",
+      "form": "ἀναπληρώσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 30,
+      "left_context": "θανάτου ἤγγισεν, ⸀παραβολευσάμενος τῇ ψυχῇ ἵνα",
+      "right_context": "τὸ ὑμῶν ὑστέρημα τῆς πρός με"
+    },
+    {
+      "ref": "Galatians 6:2",
+      "form": "⸀ἀναπληρώσετε",
+      "morph": "V-F-A-I-2P",
+      "book": "Galatians",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "ἀλλήλων τὰ βάρη βαστάζετε, καὶ οὕτως",
+      "right_context": "τὸν νόμον τοῦ Χριστοῦ."
+    },
+    {
+      "ref": "Matthew 13:14",
+      "form": "ἀναπληροῦται",
+      "morph": "V-P-P-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 14,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῖς ἡ προφητεία Ἠσαΐου ἡ λέγουσα·"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "1 Thessalonians": 1,
+    "Philippians": 1,
+    "Galatians": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑστέρημα",
+      "display": "falta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπεί",
+      "display": "puesto·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογέω",
+      "display": "bendecieras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδιώτης",
+      "display": "de·ignorante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑμέτερος",
+      "display": "vuestro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "salven",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάντοτε",
+      "display": "siempre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φθάνω",
+      "display": "llegó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγίζω",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβολεύομαι",
+      "display": "arriesgarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάρος",
+      "display": "pesos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαστάζω",
+      "display": "llevad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφητεία",
+      "display": "profecía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἠσαΐας",
+      "display": "de·Isaías",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 14:16",
+      "reason": "occurs near εὐλογέω, πνεῦμα, τόπος"
+    },
+    {
+      "ref": "1 Corinthians 16:17",
+      "reason": "occurs near ὑστέρημα"
+    },
+    {
+      "ref": "1 Thessalonians 2:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 6:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 13:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Philippians 2:30",
+      "reason": "occurs near ὑστέρημα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

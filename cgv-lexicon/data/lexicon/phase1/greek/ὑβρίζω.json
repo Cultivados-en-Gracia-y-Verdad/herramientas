@@ -1,0 +1,226 @@
+{
+  "lemma": "ὑβρίζω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ὑβρισθέντες",
+      "count": 1
+    },
+    {
+      "form": "ὑβρίσαι",
+      "count": 1
+    },
+    {
+      "form": "ὑβρίζεις.",
+      "count": 1
+    },
+    {
+      "form": "ὑβρισθήσεται",
+      "count": 1
+    },
+    {
+      "form": "ὕβρισαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:2",
+      "form": "ὑβρισθέντες",
+      "morph": "V-A-P-P",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "ἀλλὰ προπαθόντες καὶ",
+      "right_context": "καθὼς οἴδατε ἐν Φιλίπποις ἐπαρρησιασάμεθα ἐν"
+    },
+    {
+      "ref": "Acts 14:5",
+      "form": "ὑβρίσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 5,
+      "left_context": "καὶ Ἰουδαίων σὺν τοῖς ἄρχουσιν αὐτῶν",
+      "right_context": "καὶ λιθοβολῆσαι αὐτούς,"
+    },
+    {
+      "ref": "Luke 11:45",
+      "form": "ὑβρίζεις.",
+      "morph": "V-P-A-I-2S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 45,
+      "left_context": "αὐτῷ· Διδάσκαλε, ταῦτα λέγων καὶ ἡμᾶς",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 18:32",
+      "form": "ὑβρισθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 32,
+      "left_context": "γὰρ τοῖς ἔθνεσιν καὶ ἐμπαιχθήσεται καὶ",
+      "right_context": "καὶ ἐμπτυσθήσεται,"
+    },
+    {
+      "ref": "Matthew 22:6",
+      "form": "ὕβρισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 6,
+      "left_context": "δὲ λοιποὶ κρατήσαντες τοὺς δούλους αὐτοῦ",
+      "right_context": "καὶ ἀπέκτειναν."
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "1 Thessalonians": 1,
+    "Acts": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προπάσχω",
+      "display": "padecer·antes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habéis sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φίλιπποι",
+      "display": "Filipos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρρησιάζομαι",
+      "display": "hablar·con·denuedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχων",
+      "display": "gobernantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λιθοβολέω",
+      "display": "apedrear",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπαίζω",
+      "display": "será burlado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπτύω",
+      "display": "será escupido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρατέω",
+      "display": "agarrados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκτείνω",
+      "display": "mataron",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:45",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 18:32",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Thessalonians 2:2",
+      "reason": "occurs near Φίλιπποι, οἶδα, παρρησιάζομαι"
+    },
+    {
+      "ref": "Acts 14:5",
+      "reason": "occurs near Ἰουδαῖος"
+    },
+    {
+      "ref": "Matthew 22:6",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

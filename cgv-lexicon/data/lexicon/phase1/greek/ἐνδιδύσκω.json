@@ -1,0 +1,107 @@
+{
+  "lemma": "ἐνδιδύσκω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐνεδιδύσκετο",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐνδιδύσκουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "middle": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 16:19",
+      "form": "ἐνεδιδύσκετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 19,
+      "left_context": "Ἄνθρωπος δέ τις ἦν πλούσιος, καὶ",
+      "right_context": "πορφύραν καὶ βύσσον εὐφραινόμενος καθ’ ἡμέραν"
+    },
+    {
+      "ref": "Mark 15:17",
+      "form": "⸀ἐνδιδύσκουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 17,
+      "left_context": "καὶ",
+      "right_context": "αὐτὸν πορφύραν καὶ περιτιθέασιν αὐτῷ πλέξαντες"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πορφύρα",
+      "display": "púrpura",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "rico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βύσσος",
+      "display": "lino·fino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐφραίνω",
+      "display": "regocijarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιτίθημι",
+      "display": "ponen",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:19",
+      "reason": "occurs near βύσσος, εὐφραίνω, πλούσιος"
+    },
+    {
+      "ref": "Mark 15:17",
+      "reason": "occurs near περιτίθημι, πορφύρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

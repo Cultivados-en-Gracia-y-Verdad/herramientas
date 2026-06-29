@@ -1,0 +1,129 @@
+{
+  "lemma": "ἐποπτεύω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἐποπτεύοντες",
+      "count": 1
+    },
+    {
+      "form": "ἐποπτεύσαντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:12",
+      "form": "⸀ἐποπτεύοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "ὡς κακοποιῶν, ἐκ τῶν καλῶν ἔργων",
+      "right_context": "δοξάσωσι τὸν θεὸν ἐν ἡμέρᾳ ἐπισκοπῆς."
+    },
+    {
+      "ref": "1 Peter 3:2",
+      "form": "ἐποπτεύσαντες",
+      "morph": "V-A-A-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "τὴν ἐν φόβῳ ἁγνὴν ἀναστροφὴν ὑμῶν."
+    }
+  ],
+  "books": {
+    "1 Peter": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κακοποιός",
+      "display": "de·malhechores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "de·buenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φόβος",
+      "display": "temor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁγνός",
+      "display": "pura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναστροφή",
+      "display": "conducta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 2:12",
+      "reason": "occurs near δοξάζω, θεός, κακοποιός"
+    },
+    {
+      "ref": "1 Peter 3:2",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,206 @@
+{
+  "lemma": "προγράφω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "προέγραψα",
+      "count": 1
+    },
+    {
+      "form": "⸀προεγράφη",
+      "count": 1
+    },
+    {
+      "form": "προγεγραμμένοι",
+      "count": 1
+    },
+    {
+      "form": "προεγράφη,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 3:3",
+      "form": "προέγραψα",
+      "morph": "V-A-A-I-1S",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "ἀποκάλυψιν ⸀ἐγνωρίσθη μοι τὸ μυστήριον, καθὼς",
+      "right_context": "ἐν ὀλίγῳ,"
+    },
+    {
+      "ref": "Galatians 3:1",
+      "form": "⸀προεγράφη",
+      "morph": "V-A-P-I-3S",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "⸀ἐβάσκανεν, οἷς κατ’ ὀφθαλμοὺς Ἰησοῦς Χριστὸς",
+      "right_context": "ἐσταυρωμένος;"
+    },
+    {
+      "ref": "Jude 1:4",
+      "form": "προγεγραμμένοι",
+      "morph": "V-X-P-P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "παρεισέδυσαν γάρ τινες ἄνθρωποι, οἱ πάλαι",
+      "right_context": "εἰς τοῦτο τὸ κρίμα, ἀσεβεῖς, τὴν"
+    },
+    {
+      "ref": "Romans 15:4",
+      "form": "προεγράφη,",
+      "morph": "V-A-P-I-3S",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 4,
+      "left_context": "ὅσα γὰρ",
+      "right_context": "⸀εἰς τὴν ἡμετέραν διδασκαλίαν ⸀ἐγράφη, ἵνα"
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Galatians": 1,
+    "Jude": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γνωρίζω",
+      "display": "fue dar·a·conocido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μυστήριον",
+      "display": "misterio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγος",
+      "display": "poco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρόω",
+      "display": "crucificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλαι",
+      "display": "hace·tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίμα",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσεβής",
+      "display": "impíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέτερος",
+      "display": "nuestra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδασκαλία",
+      "display": "doctrina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "fue escrito",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Ephesians 3:3",
+      "reason": "occurs near γνωρίζω, μυστήριον, ὀλίγος"
+    },
+    {
+      "ref": "Galatians 3:1",
+      "reason": "occurs near Ἰησοῦς, ὀφθαλμός"
+    },
+    {
+      "ref": "Jude 1:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 15:4",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

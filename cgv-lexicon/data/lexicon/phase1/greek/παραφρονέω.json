@@ -1,0 +1,86 @@
+{
+  "lemma": "παραφρονέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παραφρονῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:23",
+      "form": "παραφρονῶν",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 23,
+      "left_context": "διάκονοι Χριστοῦ εἰσιν;",
+      "right_context": "λαλῶ, ὑπὲρ ἐγώ· ἐν κόποις περισσοτέρως,"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διάκονος",
+      "display": "servidores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόπος",
+      "display": "trabajos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 11:23",
+      "reason": "occurs near Χριστός, διάκονος, κόπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

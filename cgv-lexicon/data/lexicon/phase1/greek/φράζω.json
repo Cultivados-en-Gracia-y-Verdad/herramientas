@@ -1,0 +1,75 @@
+{
+  "lemma": "φράζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "Φράσον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 15:15",
+      "form": "Φράσον",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 15,
+      "left_context": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ·",
+      "right_context": "ἡμῖν τὴν παραβολὴν ⸀ταύτην."
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβολή",
+      "display": "parábola",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 15:15",
+      "form": "Φράσον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "Ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ· Φράσον ἡμῖν τὴν παραβολὴν ⸀ταύτην."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 15:15",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

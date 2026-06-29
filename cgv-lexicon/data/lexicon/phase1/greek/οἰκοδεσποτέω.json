@@ -1,0 +1,98 @@
+{
+  "lemma": "οἰκοδεσποτέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "οἰκοδεσποτεῖν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:14",
+      "form": "οἰκοδεσποτεῖν,",
+      "morph": "V-P-A-N",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 14,
+      "left_context": "βούλομαι οὖν νεωτέρας γαμεῖν, τεκνογονεῖν,",
+      "right_context": "μηδεμίαν ἀφορμὴν διδόναι τῷ ἀντικειμένῳ λοιδορίας"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βούλομαι",
+      "display": "quiero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέος",
+      "display": "nuevas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεκνογονέω",
+      "display": "tener·hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφορμή",
+      "display": "ocasión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντίκειμαι",
+      "display": "oponerse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:14",
+      "reason": "occurs near βούλομαι, γαμέω, νέος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,187 @@
+{
+  "lemma": "παραζηλόω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "παραζηλώσω",
+      "count": 2
+    },
+    {
+      "form": "παραζηλοῦμεν",
+      "count": 1
+    },
+    {
+      "form": "παραζηλῶσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "future": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:22",
+      "form": "παραζηλοῦμεν",
+      "morph": "V-P-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "ἢ",
+      "right_context": "τὸν κύριον; μὴ ἰσχυρότεροι αὐτοῦ ἐσμεν;"
+    },
+    {
+      "ref": "Romans 10:19",
+      "form": "παραζηλώσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "οὐκ ἔγνω⸃; πρῶτος Μωϋσῆς λέγει· Ἐγὼ",
+      "right_context": "ὑμᾶς ἐπ’ οὐκ ἔθνει, ἐπ’ ἔθνει"
+    },
+    {
+      "ref": "Romans 11:11",
+      "form": "παραζηλῶσαι",
+      "morph": "V-A-A-N",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 11,
+      "left_context": "ἡ σωτηρία τοῖς ἔθνεσιν, εἰς τὸ",
+      "right_context": "αὐτούς."
+    },
+    {
+      "ref": "Romans 11:14",
+      "form": "παραζηλώσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 14,
+      "left_context": "εἴ πως",
+      "right_context": "μου τὴν σάρκα καὶ σώσω τινὰς"
+    }
+  ],
+  "books": {
+    "Romans": 3,
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔθνος",
+      "display": "nación",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχυρός",
+      "display": "fuertes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoció",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "salvaré",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 10:22",
+      "negator": "μὴ",
+      "clause_text": "ἢ παραζηλοῦμεν τὸν κύριον; μὴ ἰσχυρότεροι αὐτοῦ ἐσμεν;"
+    },
+    {
+      "ref": "Romans 10:19",
+      "negator": "οὐκ",
+      "clause_text": "μὴ ⸂Ἰσραὴλ οὐκ ἔγνω⸃; πρῶτος Μωϋσῆς λέγει· Ἐγὼ παραζηλώσω ὑμᾶς ἐπ’ οὐκ ἔθνει, ἐπ’ ἔθνει ἀσυνέτῳ παροργιῶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 10:19",
+      "reason": "occurs near γινώσκω, ἔθνος"
+    },
+    {
+      "ref": "Romans 11:11",
+      "reason": "occurs near ἔθνος"
+    },
+    {
+      "ref": "Romans 11:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 10:22",
+      "reason": "occurs near κύριος, ἤ, ἰσχυρός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐπιχέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιχέων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 10:34",
+      "form": "ἐπιχέων",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 34,
+      "left_context": "καὶ προσελθὼν κατέδησεν τὰ τραύματα αὐτοῦ",
+      "right_context": "ἔλαιον καὶ οἶνον, ἐπιβιβάσας δὲ αὐτὸν"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταδέω",
+      "display": "ató",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τραῦμα",
+      "display": "heridas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔλαιον",
+      "display": "aceite",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιβιβάζω",
+      "display": "montado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:34",
+      "reason": "occurs near καταδέω, οἶνος, προσέρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

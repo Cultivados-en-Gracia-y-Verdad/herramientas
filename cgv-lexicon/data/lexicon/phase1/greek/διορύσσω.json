@@ -1,0 +1,186 @@
+{
+  "lemma": "διορύσσω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "διορύσσουσιν",
+      "count": 2
+    },
+    {
+      "form": "⸀διορυχθῆναι",
+      "count": 1
+    },
+    {
+      "form": "διορυχθῆναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 2
+    },
+    "voices": {
+      "passive": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 12:39",
+      "form": "⸀διορυχθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 39,
+      "left_context": "ὁ κλέπτης ἔρχεται, ⸂οὐκ ἂν⸃ ἀφῆκεν",
+      "right_context": "τὸν οἶκον αὐτοῦ."
+    },
+    {
+      "ref": "Matthew 6:19",
+      "form": "διορύσσουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 19,
+      "left_context": "καὶ βρῶσις ἀφανίζει, καὶ ὅπου κλέπται",
+      "right_context": "καὶ κλέπτουσιν·"
+    },
+    {
+      "ref": "Matthew 6:20",
+      "form": "διορύσσουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 20,
+      "left_context": "βρῶσις ἀφανίζει, καὶ ὅπου κλέπται οὐ",
+      "right_context": "οὐδὲ κλέπτουσιν·"
+    },
+    {
+      "ref": "Matthew 24:43",
+      "form": "διορυχθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 43,
+      "left_context": "ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασεν",
+      "right_context": "τὴν οἰκίαν αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κλέπτης",
+      "display": "ladrón",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφανίζω",
+      "display": "desfigura",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτω",
+      "display": "roban",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdonó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βρῶσις",
+      "display": "herrumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐάω",
+      "display": "dejó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:39",
+      "negator": "⸂οὐκ",
+      "clause_text": "ποίᾳ ὥρᾳ ὁ κλέπτης ἔρχεται, ⸂οὐκ ἂν⸃ ἀφῆκεν ⸀διορυχθῆναι τὸν οἶκον αὐτοῦ."
+    },
+    {
+      "ref": "Matthew 6:20",
+      "negator": "οὐ",
+      "clause_text": "σὴς οὔτε βρῶσις ἀφανίζει, καὶ ὅπου κλέπται οὐ διορύσσουσιν οὐδὲ κλέπτουσιν·"
+    },
+    {
+      "ref": "Matthew 24:43",
+      "negator": "οὐκ",
+      "clause_text": "κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασεν διορυχθῆναι τὴν οἰκίαν αὐτοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 24:43",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 6:19",
+      "reason": "occurs near κλέπτης, κλέπτω, ἀφανίζω"
+    },
+    {
+      "ref": "Matthew 6:20",
+      "reason": "occurs near κλέπτης, κλέπτω, ἀφανίζω"
+    },
+    {
+      "ref": "Luke 12:39",
+      "reason": "occurs near κλέπτης, ἔρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

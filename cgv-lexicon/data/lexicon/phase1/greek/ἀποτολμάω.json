@@ -1,0 +1,68 @@
+{
+  "lemma": "ἀποτολμάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀποτολμᾷ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 10:20",
+      "form": "ἀποτολμᾷ",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 20,
+      "left_context": "Ἠσαΐας δὲ",
+      "right_context": "καὶ λέγει· Εὑρέθην ⸀ἐν τοῖς ἐμὲ"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἠσαΐας",
+      "display": "Isaías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "fue hallado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 10:20",
+      "reason": "occurs near εὑρίσκω, Ἠσαΐας"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

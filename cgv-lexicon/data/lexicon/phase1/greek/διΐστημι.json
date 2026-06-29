@@ -1,0 +1,166 @@
+{
+  "lemma": "διΐστημι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "διαστήσαντες",
+      "count": 1
+    },
+    {
+      "form": "διαστάσης",
+      "count": 1
+    },
+    {
+      "form": "διέστη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:28",
+      "form": "διαστήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 28,
+      "left_context": "βολίσαντες εὗρον ὀργυιὰς εἴκοσι, βραχὺ δὲ",
+      "right_context": "καὶ πάλιν βολίσαντες εὗρον ὀργυιὰς δεκαπέντε·"
+    },
+    {
+      "ref": "Luke 22:59",
+      "form": "διαστάσης",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 59,
+      "left_context": "καὶ",
+      "right_context": "ὡσεὶ ὥρας μιᾶς ἄλλος τις διϊσχυρίζετο"
+    },
+    {
+      "ref": "Luke 24:51",
+      "form": "διέστη",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 51,
+      "left_context": "ἐγένετο ἐν τῷ εὐλογεῖν αὐτὸν αὐτοὺς",
+      "right_context": "ἀπ’ αὐτῶν ⸂[καὶ ἀνεφέρετο εἰς τὸν"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀργυιά",
+      "display": "brazas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἴκοσι(ν)",
+      "display": "veintes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βραχύς",
+      "display": "corto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βολίζω",
+      "display": "sondeados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσεί",
+      "display": "como·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "de·hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·una",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογέω",
+      "display": "bendecir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναφέρω",
+      "display": "era llevado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 22:59",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:51",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 27:28",
+      "reason": "occurs near βραχύς, εἴκοσι(ν), εὑρίσκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

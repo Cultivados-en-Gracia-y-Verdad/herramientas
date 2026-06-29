@@ -1,0 +1,114 @@
+{
+  "lemma": "ἱλάσκομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἱλάσκεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἱλάσθητί",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 2:17",
+      "form": "ἱλάσκεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "τὰ πρὸς τὸν θεόν, εἰς τὸ",
+      "right_context": "τὰς ἁμαρτίας τοῦ λαοῦ·"
+    },
+    {
+      "ref": "Luke 18:13",
+      "form": "ἱλάσθητί",
+      "morph": "V-A-P-D-2S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 13,
+      "left_context": "τὸ στῆθος ⸀αὐτοῦ λέγων· Ὁ θεός,",
+      "right_context": "μοι τῷ ἁμαρτωλῷ."
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "de·pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στῆθος",
+      "display": "pecho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτωλός",
+      "display": "pecador",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 18:13",
+      "form": "ἱλάσθητί",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "ἀλλ’ ⸀ἔτυπτε τὸ στῆθος ⸀αὐτοῦ λέγων· Ὁ θεός, ἱλάσθητί μοι τῷ ἁμαρτωλῷ."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 18:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 2:17",
+      "reason": "occurs near θεός, λαός, ἁμαρτία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

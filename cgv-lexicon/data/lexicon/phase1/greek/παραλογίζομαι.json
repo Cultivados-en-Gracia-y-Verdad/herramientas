@@ -1,0 +1,112 @@
+{
+  "lemma": "παραλογίζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "παραλογίζηται",
+      "count": 1
+    },
+    {
+      "form": "παραλογιζόμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:4",
+      "form": "παραλογίζηται",
+      "morph": "V-P-M-S-3S",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "⸀τοῦτο λέγω ἵνα ⸀μηδεὶς ὑμᾶς",
+      "right_context": "ἐν πιθανολογίᾳ."
+    },
+    {
+      "ref": "James 1:22",
+      "form": "παραλογιζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "James",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "ποιηταὶ λόγου καὶ μὴ ⸂ἀκροαταὶ μόνον⸃",
+      "right_context": "ἑαυτούς."
+    }
+  ],
+  "books": {
+    "Colossians": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πιθανολογία",
+      "display": "persuasión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "de·palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκροατής",
+      "display": "oídores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "James 1:22",
+      "negator": "μὴ",
+      "clause_text": "Γίνεσθε δὲ ποιηταὶ λόγου καὶ μὴ ⸂ἀκροαταὶ μόνον⸃ παραλογιζόμενοι ἑαυτούς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 2:4",
+      "reason": "occurs near πιθανολογία"
+    },
+    {
+      "ref": "James 1:22",
+      "reason": "occurs near λόγος, μόνος, ἀκροατής"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

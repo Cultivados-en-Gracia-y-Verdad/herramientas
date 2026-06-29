@@ -1,0 +1,99 @@
+{
+  "lemma": "ἀποπνίγω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀπέπνιξαν",
+      "count": 1
+    },
+    {
+      "form": "ἀπεπνίγη.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:7",
+      "form": "ἀπέπνιξαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 7,
+      "left_context": "τῶν ἀκανθῶν, καὶ συμφυεῖσαι αἱ ἄκανθαι",
+      "right_context": "αὐτό."
+    },
+    {
+      "ref": "Luke 8:33",
+      "form": "ἀπεπνίγη.",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 33,
+      "left_context": "τοῦ κρημνοῦ εἰς τὴν λίμνην καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄκανθα",
+      "display": "de·espinas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συμφύομαι",
+      "display": "crecer·juntos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρημνός",
+      "display": "de·precipicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίμνη",
+      "display": "lago",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:33",
+      "reason": "occurs near κρημνός, λίμνη"
+    },
+    {
+      "ref": "Luke 8:7",
+      "reason": "occurs near συμφύομαι, ἄκανθα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

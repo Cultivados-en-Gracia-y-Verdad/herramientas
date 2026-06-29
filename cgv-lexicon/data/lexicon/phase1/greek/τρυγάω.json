@@ -1,0 +1,156 @@
+{
+  "lemma": "τρυγάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "τρύγησον",
+      "count": 1
+    },
+    {
+      "form": "ἐτρύγησεν",
+      "count": 1
+    },
+    {
+      "form": "τρυγῶσιν⸃.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 14:18",
+      "form": "τρύγησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 18,
+      "left_context": "σου τὸ δρέπανον τὸ ὀξὺ καὶ",
+      "right_context": "τοὺς βότρυας τῆς ἀμπέλου τῆς γῆς,"
+    },
+    {
+      "ref": "Revelation 14:19",
+      "form": "ἐτρύγησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 19,
+      "left_context": "δρέπανον αὐτοῦ εἰς τὴν γῆν, καὶ",
+      "right_context": "τὴν ἄμπελον τῆς γῆς, καὶ ἔβαλεν"
+    },
+    {
+      "ref": "Luke 6:44",
+      "form": "τρυγῶσιν⸃.",
+      "morph": "V-P-A-I-3P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 44,
+      "left_context": "συλλέγουσιν σῦκα, οὐδὲ ἐκ βάτου ⸂σταφυλὴν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄμπελος",
+      "display": "de·vid",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δρέπανον",
+      "display": "hoz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀξύς",
+      "display": "agudo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βότρυς",
+      "display": "racimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῦκον",
+      "display": "higos;",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάτος",
+      "display": "de·zarza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σταφυλή",
+      "display": "uva",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Revelation 14:18",
+      "form": "τρύγησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "λέγων· Πέμψον σου τὸ δρέπανον τὸ ὀξὺ καὶ τρύγησον τοὺς βότρυας τῆς ἀμπέλου τῆς γῆς, ὅτι ἤκμασαν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 6:44",
+      "negator": "οὐδὲ",
+      "clause_text": "ἐξ ἀκανθῶν συλλέγουσιν σῦκα, οὐδὲ ἐκ βάτου ⸂σταφυλὴν τρυγῶσιν⸃."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 14:18",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Revelation 14:19",
+      "reason": "occurs near γῆ, ἄμπελος"
+    },
+    {
+      "ref": "Luke 6:44",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,676 @@
+{
+  "lemma": "ἀναγινώσκω",
+  "language": "greek",
+  "total_occurrences": 32,
+  "forms": [
+    {
+      "form": "ἀνέγνωτε",
+      "count": 9
+    },
+    {
+      "form": "ἀναγινώσκων",
+      "count": 3
+    },
+    {
+      "form": "ἀνεγίνωσκεν",
+      "count": 2
+    },
+    {
+      "form": "ἀναγινώσκεις;",
+      "count": 2
+    },
+    {
+      "form": "ἀναγνωσθῆναι",
+      "count": 1
+    },
+    {
+      "form": "ἀναγινώσκετε",
+      "count": 1
+    },
+    {
+      "form": "ἀναγινωσκομένη",
+      "count": 1
+    },
+    {
+      "form": "ἀναγινώσκηται⸃",
+      "count": 1
+    },
+    {
+      "form": "ἀναγνωσθῇ",
+      "count": 1
+    },
+    {
+      "form": "ἀναγνωσθῇ,",
+      "count": 1
+    },
+    {
+      "form": "ἀναγνῶτε.",
+      "count": 1
+    },
+    {
+      "form": "ἀναγινώσκοντες",
+      "count": 1
+    },
+    {
+      "form": "ἀναγινώσκοντος",
+      "count": 1
+    },
+    {
+      "form": "ἀναγινωσκομένας",
+      "count": 1
+    },
+    {
+      "form": "ἀναγινωσκόμενος.",
+      "count": 1
+    },
+    {
+      "form": "ἀναγνόντες",
+      "count": 1
+    },
+    {
+      "form": "ἀναγνοὺς",
+      "count": 1
+    },
+    {
+      "form": "ἀνέγνωσαν",
+      "count": 1
+    },
+    {
+      "form": "ἀναγνῶναι.",
+      "count": 1
+    },
+    {
+      "form": "ἀνέγνωτε·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 16,
+      "participle": 10,
+      "subjunctive": 4
+    },
+    "tenses": {
+      "aorist": 18,
+      "present": 12,
+      "imperfect": 2
+    },
+    "voices": {
+      "passive": 7,
+      "active": 25
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 5:27",
+      "form": "ἀναγνωσθῆναι",
+      "morph": "V-A-P-N",
+      "book": "1 Thessalonians",
+      "chapter": 5,
+      "verse": 27,
+      "left_context": "⸀ἐνορκίζω ὑμᾶς τὸν κύριον",
+      "right_context": "τὴν ἐπιστολὴν πᾶσιν ⸀τοῖς ἀδελφοῖς."
+    },
+    {
+      "ref": "2 Corinthians 1:13",
+      "form": "ἀναγινώσκετε",
+      "morph": "V-P-A-I-2P",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 13,
+      "left_context": "ἄλλα γράφομεν ὑμῖν ἀλλ’ ἢ ἃ",
+      "right_context": "ἢ καὶ ἐπιγινώσκετε, ἐλπίζω δὲ ⸀ὅτι"
+    },
+    {
+      "ref": "2 Corinthians 3:2",
+      "form": "ἀναγινωσκομένη",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 2,
+      "left_context": "ἐν ταῖς καρδίαις ἡμῶν, γινωσκομένη καὶ",
+      "right_context": "ὑπὸ πάντων ἀνθρώπων·"
+    },
+    {
+      "ref": "2 Corinthians 3:15",
+      "form": "ἀναγινώσκηται⸃",
+      "morph": "V-P-P-S-3S",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "ἀλλ’ ἕως σήμερον ἡνίκα ⸂ἂν",
+      "right_context": "Μωϋσῆς κάλυμμα ἐπὶ τὴν καρδίαν αὐτῶν"
+    },
+    {
+      "ref": "Revelation 1:3",
+      "form": "ἀναγινώσκων",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "μακάριος ὁ",
+      "right_context": "καὶ οἱ ἀκούοντες τοὺς λόγους τῆς"
+    },
+    {
+      "ref": "Colossians 4:16",
+      "form": "ἀναγνωσθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Colossians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "καὶ ὅταν",
+      "right_context": "παρ’ ὑμῖν ἡ ἐπιστολή, ποιήσατε ἵνα"
+    },
+    {
+      "ref": "Colossians 4:16",
+      "form": "ἀναγνωσθῇ,",
+      "morph": "V-A-P-S-3S",
+      "book": "Colossians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "ἵνα καὶ ἐν τῇ ⸀Λαοδικέων ἐκκλησίᾳ",
+      "right_context": "καὶ τὴν ἐκ Λαοδικείας ἵνα καὶ"
+    },
+    {
+      "ref": "Colossians 4:16",
+      "form": "ἀναγνῶτε.",
+      "morph": "V-A-A-S-2P",
+      "book": "Colossians",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "τὴν ἐκ Λαοδικείας ἵνα καὶ ὑμεῖς",
+      "right_context": ""
+    },
+    {
+      "ref": "Ephesians 3:4",
+      "form": "ἀναγινώσκοντες",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "πρὸς ὃ δύνασθε",
+      "right_context": "νοῆσαι τὴν σύνεσίν μου ἐν τῷ"
+    },
+    {
+      "ref": "Acts 8:28",
+      "form": "ἀνεγίνωσκεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 28,
+      "left_context": "καθήμενος ἐπὶ τοῦ ἅρματος αὐτοῦ καὶ",
+      "right_context": "τὸν προφήτην Ἠσαΐαν."
+    },
+    {
+      "ref": "Acts 8:30",
+      "form": "ἀναγινώσκοντος",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 30,
+      "left_context": "προσδραμὼν δὲ ὁ Φίλιππος ἤκουσεν αὐτοῦ",
+      "right_context": "⸂Ἠσαΐαν τὸν προφήτην⸃ καὶ εἶπεν· Ἆρά"
+    },
+    {
+      "ref": "Acts 8:30",
+      "form": "ἀναγινώσκεις;",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 30,
+      "left_context": "καὶ εἶπεν· Ἆρά γε γινώσκεις ἃ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 8:32",
+      "form": "ἀνεγίνωσκεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "ἡ δὲ περιοχὴ τῆς γραφῆς ἣν",
+      "right_context": "ἦν αὕτη· Ὡς πρόβατον ἐπὶ σφαγὴν"
+    },
+    {
+      "ref": "Acts 13:27",
+      "form": "ἀναγινωσκομένας",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 27,
+      "left_context": "τῶν προφητῶν τὰς κατὰ πᾶν σάββατον",
+      "right_context": "κρίναντες ἐπλήρωσαν,"
+    },
+    {
+      "ref": "Acts 15:21",
+      "form": "ἀναγινωσκόμενος.",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 21,
+      "left_context": "ἐν ταῖς συναγωγαῖς κατὰ πᾶν σάββατον",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 15:31",
+      "form": "ἀναγνόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 31,
+      "left_context": "",
+      "right_context": "δὲ ἐχάρησαν ἐπὶ τῇ παρακλήσει."
+    },
+    {
+      "ref": "Acts 23:34",
+      "form": "ἀναγνοὺς",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 34,
+      "left_context": "",
+      "right_context": "⸀δὲ καὶ ἐπερωτήσας ἐκ ποίας ⸀ἐπαρχείας"
+    },
+    {
+      "ref": "John 19:20",
+      "form": "ἀνέγνωσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 20,
+      "left_context": "τοῦτον οὖν τὸν τίτλον πολλοὶ",
+      "right_context": "τῶν Ἰουδαίων, ὅτι ἐγγὺς ἦν ὁ"
+    },
+    {
+      "ref": "Luke 4:16",
+      "form": "ἀναγνῶναι.",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "σαββάτων εἰς τὴν συναγωγήν, καὶ ἀνέστη",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 6:3",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 3,
+      "left_context": "αὐτοὺς εἶπεν ὁ Ἰησοῦς· Οὐδὲ τοῦτο",
+      "right_context": "ὃ ἐποίησεν Δαυὶδ ⸀ὁπότε ἐπείνασεν αὐτὸς"
+    },
+    {
+      "ref": "Luke 10:26",
+      "form": "ἀναγινώσκεις;",
+      "morph": "V-P-A-I-2S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 26,
+      "left_context": "Ἐν τῷ νόμῳ τί γέγραπται; πῶς",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 2:25",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "καὶ ⸀λέγει αὐτοῖς· Οὐδέποτε",
+      "right_context": "τί ἐποίησεν Δαυὶδ ὅτε χρείαν ἔσχεν"
+    },
+    {
+      "ref": "Mark 12:10",
+      "form": "ἀνέγνωτε·",
+      "morph": "V-A-A-I-2P",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 10,
+      "left_context": "οὐδὲ τὴν γραφὴν ταύτην",
+      "right_context": "Λίθον ὃν ἀπεδοκίμασαν οἱ οἰκοδομοῦντες, οὗτος"
+    },
+    {
+      "ref": "Mark 12:26",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 26,
+      "left_context": "δὲ τῶν νεκρῶν ὅτι ἐγείρονται οὐκ",
+      "right_context": "ἐν τῇ βίβλῳ Μωϋσέως ἐπὶ τοῦ"
+    },
+    {
+      "ref": "Mark 13:14",
+      "form": "ἀναγινώσκων",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 14,
+      "left_context": "ἐρημώσεως ⸀ἑστηκότα ὅπου οὐ δεῖ, ὁ",
+      "right_context": "νοείτω, τότε οἱ ἐν τῇ Ἰουδαίᾳ"
+    },
+    {
+      "ref": "Matthew 12:3",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 3,
+      "left_context": "ὁ δὲ εἶπεν αὐτοῖς· Οὐκ",
+      "right_context": "τί ἐποίησεν Δαυὶδ ὅτε ⸀ἐπείνασεν καὶ"
+    },
+    {
+      "ref": "Matthew 12:5",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 5,
+      "left_context": "ἢ οὐκ",
+      "right_context": "ἐν τῷ νόμῳ ὅτι τοῖς σάββασιν"
+    },
+    {
+      "ref": "Matthew 19:4",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 4,
+      "left_context": "ὁ δὲ ἀποκριθεὶς ⸀εἶπεν· Οὐκ",
+      "right_context": "ὅτι ὁ ⸀κτίσας ἀπ’ ἀρχῆς ἄρσεν"
+    },
+    {
+      "ref": "Matthew 21:16",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 16,
+      "left_context": "δὲ Ἰησοῦς λέγει αὐτοῖς· Ναί. οὐδέποτε",
+      "right_context": "ὅτι Ἐκ στόματος νηπίων καὶ θηλαζόντων"
+    },
+    {
+      "ref": "Matthew 21:42",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 42,
+      "left_context": "Λέγει αὐτοῖς ὁ Ἰησοῦς· Οὐδέποτε",
+      "right_context": "ἐν ταῖς γραφαῖς· Λίθον ὃν ἀπεδοκίμασαν"
+    },
+    {
+      "ref": "Matthew 22:31",
+      "form": "ἀνέγνωτε",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 31,
+      "left_context": "δὲ τῆς ἀναστάσεως τῶν νεκρῶν οὐκ",
+      "right_context": "τὸ ῥηθὲν ὑμῖν ὑπὸ τοῦ θεοῦ"
+    },
+    {
+      "ref": "Matthew 24:15",
+      "form": "ἀναγινώσκων",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 15,
+      "left_context": "προφήτου ⸀ἑστὸς ἐν τόπῳ ἁγίῳ, ὁ",
+      "right_context": "νοείτω,"
+    }
+  ],
+  "books": {
+    "Acts": 8,
+    "Matthew": 7,
+    "Mark": 4,
+    "2 Corinthians": 3,
+    "Colossians": 3,
+    "Luke": 3,
+    "1 Thessalonians": 1,
+    "Revelation": 1,
+    "Ephesians": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "νοέω",
+      "display": "entender",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "profeta",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "de·escritura",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Δαυίδ",
+      "display": "David",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὐδέποτε",
+      "display": "nunca",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστολή",
+      "display": "carta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escribemos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocida",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Λαοδίκεια",
+      "display": "de·Laodicea",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἠσαΐας",
+      "display": "Isaías",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "sábado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagogas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πεινάω",
+      "display": "tener·hambre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "de·muertos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "puesto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνορκίζω",
+      "display": "conjuro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 6:3",
+      "negator": "Οὐδὲ",
+      "clause_text": "ἀποκριθεὶς πρὸς αὐτοὺς εἶπεν ὁ Ἰησοῦς· Οὐδὲ τοῦτο ἀνέγνωτε ὃ ἐποίησεν Δαυὶδ ⸀ὁπότε ἐπείνασεν αὐτὸς καὶ οἱ"
+    },
+    {
+      "ref": "Mark 12:10",
+      "negator": "οὐδὲ",
+      "clause_text": "οὐδὲ τὴν γραφὴν ταύτην ἀνέγνωτε· Λίθον ὃν ἀπεδοκίμασαν οἱ οἰκοδομοῦντες, οὗτος ἐγενήθη εἰς"
+    },
+    {
+      "ref": "Mark 12:26",
+      "negator": "οὐκ",
+      "clause_text": "περὶ δὲ τῶν νεκρῶν ὅτι ἐγείρονται οὐκ ἀνέγνωτε ἐν τῇ βίβλῳ Μωϋσέως ἐπὶ τοῦ βάτου ⸀πῶς"
+    },
+    {
+      "ref": "Mark 13:14",
+      "negator": "οὐ",
+      "clause_text": "βδέλυγμα τῆς ἐρημώσεως ⸀ἑστηκότα ὅπου οὐ δεῖ, ὁ ἀναγινώσκων νοείτω, τότε οἱ ἐν τῇ Ἰουδαίᾳ φευγέτωσαν εἰς"
+    },
+    {
+      "ref": "Matthew 12:3",
+      "negator": "Οὐκ",
+      "clause_text": "ὁ δὲ εἶπεν αὐτοῖς· Οὐκ ἀνέγνωτε τί ἐποίησεν Δαυὶδ ὅτε ⸀ἐπείνασεν καὶ οἱ μετ’"
+    },
+    {
+      "ref": "Matthew 12:5",
+      "negator": "οὐκ",
+      "clause_text": "ἢ οὐκ ἀνέγνωτε ἐν τῷ νόμῳ ὅτι τοῖς σάββασιν οἱ ἱερεῖς"
+    },
+    {
+      "ref": "Matthew 19:4",
+      "negator": "Οὐκ",
+      "clause_text": "ὁ δὲ ἀποκριθεὶς ⸀εἶπεν· Οὐκ ἀνέγνωτε ὅτι ὁ ⸀κτίσας ἀπ’ ἀρχῆς ἄρσεν καὶ θῆλυ"
+    },
+    {
+      "ref": "Matthew 22:31",
+      "negator": "οὐκ",
+      "clause_text": "περὶ δὲ τῆς ἀναστάσεως τῶν νεκρῶν οὐκ ἀνέγνωτε τὸ ῥηθὲν ὑμῖν ὑπὸ τοῦ θεοῦ λέγοντος·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:27",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 15:21",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 15:31",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:34",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 8:28",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 8:30",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 8:32",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Matthew 12:3",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

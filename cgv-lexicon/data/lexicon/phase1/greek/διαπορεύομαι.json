@@ -1,0 +1,217 @@
+{
+  "lemma": "διαπορεύομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "διεπορεύοντο",
+      "count": 1
+    },
+    {
+      "form": "διαπορεύεσθαι",
+      "count": 1
+    },
+    {
+      "form": "διεπορεύετο",
+      "count": 1
+    },
+    {
+      "form": "διαπορευομένου",
+      "count": 1
+    },
+    {
+      "form": "διαπορευόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "infinitive": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "imperfect": 2,
+      "present": 3
+    },
+    "voices": {
+      "middle": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:4",
+      "form": "διεπορεύοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 4,
+      "left_context": "ὡς δὲ",
+      "right_context": "τὰς πόλεις, ⸀παρεδίδοσαν αὐτοῖς φυλάσσειν τὰ"
+    },
+    {
+      "ref": "Luke 6:1",
+      "form": "διαπορεύεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "Ἐγένετο δὲ ἐν ⸀σαββάτῳ",
+      "right_context": "αὐτὸν ⸀διὰ σπορίμων, καὶ ἔτιλλον οἱ"
+    },
+    {
+      "ref": "Luke 13:22",
+      "form": "διεπορεύετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 22,
+      "left_context": "Καὶ",
+      "right_context": "κατὰ πόλεις καὶ κώμας διδάσκων καὶ"
+    },
+    {
+      "ref": "Luke 18:36",
+      "form": "διαπορευομένου",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 36,
+      "left_context": "ἀκούσας δὲ ὄχλου",
+      "right_context": "ἐπυνθάνετο ⸀τί εἴη τοῦτο·"
+    },
+    {
+      "ref": "Romans 15:24",
+      "form": "διαπορευόμενος",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 15,
+      "verse": 24,
+      "left_context": "πορεύωμαι εἰς τὴν ⸀Σπανίαν, ἐλπίζω γὰρ",
+      "right_context": "θεάσασθαι ὑμᾶς καὶ ὑφ’ ὑμῶν προπεμφθῆναι"
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πόλις",
+      "display": "ciudades",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guardar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "sábado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπόριμος",
+      "display": "de·sembrados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίλλω",
+      "display": "arrancaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κώμη",
+      "display": "aldeas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυνθάνομαι",
+      "display": "preguntaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σπανία",
+      "display": "España",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίζω",
+      "display": "espero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεάομαι",
+      "display": "contemplar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 13:22",
+      "reason": "occurs near πόλις"
+    },
+    {
+      "ref": "Luke 18:36",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 6:1",
+      "reason": "occurs near σάββατον, σπόριμος"
+    },
+    {
+      "ref": "Acts 16:4",
+      "reason": "occurs near παραδίδωμι, πόλις, φυλάσσω"
+    },
+    {
+      "ref": "Romans 15:24",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

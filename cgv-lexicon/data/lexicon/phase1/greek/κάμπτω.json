@@ -1,0 +1,205 @@
+{
+  "lemma": "κάμπτω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κάμπτω",
+      "count": 1
+    },
+    {
+      "form": "κάμψῃ",
+      "count": 1
+    },
+    {
+      "form": "ἔκαμψαν",
+      "count": 1
+    },
+    {
+      "form": "κάμψει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2,
+      "future": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 3:14",
+      "form": "κάμπτω",
+      "morph": "V-P-A-I-1S",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "Τούτου χάριν",
+      "right_context": "τὰ γόνατά μου πρὸς τὸν ⸀πατέρα,"
+    },
+    {
+      "ref": "Philippians 2:10",
+      "form": "κάμψῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "ἐν τῷ ὀνόματι Ἰησοῦ πᾶν γόνυ",
+      "right_context": "ἐπουρανίων καὶ ἐπιγείων καὶ καταχθονίων,"
+    },
+    {
+      "ref": "Romans 11:4",
+      "form": "ἔκαμψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 4,
+      "left_context": "Κατέλιπον ἐμαυτῷ ἑπτακισχιλίους ἄνδρας, οἵτινες οὐκ",
+      "right_context": "γόνυ τῇ Βάαλ."
+    },
+    {
+      "ref": "Romans 14:11",
+      "form": "κάμψει",
+      "morph": "V-F-A-I-3S",
+      "book": "Romans",
+      "chapter": 14,
+      "verse": 11,
+      "left_context": "Ζῶ ἐγώ, λέγει κύριος, ὅτι ἐμοὶ",
+      "right_context": "πᾶν γόνυ, καὶ ⸂πᾶσα γλῶσσα ἐξομολογήσεται⸃"
+    }
+  ],
+  "books": {
+    "Romans": 2,
+    "Ephesians": 1,
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γόνυ",
+      "display": "rodillas",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "χάριν",
+      "display": "por·causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπουράνιος",
+      "display": "de·celestiales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίγειος",
+      "display": "de·terrenales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταχθόνιος",
+      "display": "de·subterráneos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμαυτοῦ",
+      "display": "me",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑπτακισχίλιοι",
+      "display": "siete·mil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βάαλ",
+      "display": "de·Baal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lengua",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 11:4",
+      "negator": "οὐκ",
+      "clause_text": "ὁ χρηματισμός; Κατέλιπον ἐμαυτῷ ἑπτακισχιλίους ἄνδρας, οἵτινες οὐκ ἔκαμψαν γόνυ τῇ Βάαλ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 11:4",
+      "reason": "occurs near γόνυ"
+    },
+    {
+      "ref": "Romans 14:11",
+      "reason": "occurs near γόνυ"
+    },
+    {
+      "ref": "Ephesians 3:14",
+      "reason": "occurs near γόνυ, χάριν"
+    },
+    {
+      "ref": "Philippians 2:10",
+      "reason": "occurs near γόνυ, ἐπουράνιος, Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

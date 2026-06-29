@@ -1,0 +1,123 @@
+{
+  "lemma": "ἐμπορεύομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐμπορεύσονται·",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐμπορευσόμεθα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:3",
+      "form": "ἐμπορεύσονται·",
+      "morph": "V-F-M-I-3P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "καὶ ἐν πλεονεξίᾳ πλαστοῖς λόγοις ὑμᾶς",
+      "right_context": "οἷς τὸ κρίμα ἔκπαλαι οὐκ ἀργεῖ,"
+    },
+    {
+      "ref": "James 4:13",
+      "form": "⸀ἐμπορευσόμεθα",
+      "morph": "V-F-M-I-1P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "πόλιν καὶ ⸀ποιήσομεν ἐκεῖ ⸀ἐνιαυτὸν καὶ",
+      "right_context": "καὶ ⸀κερδήσομεν·"
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλεονεξία",
+      "display": "avaricia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλαστός",
+      "display": "falsos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίμα",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔκπαλαι",
+      "display": "desde·hace·tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνιαυτός",
+      "display": "año",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κερδαίνω",
+      "display": "ganaremos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:3",
+      "reason": "occurs near κρίμα, λόγος, πλαστός"
+    },
+    {
+      "ref": "James 4:13",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

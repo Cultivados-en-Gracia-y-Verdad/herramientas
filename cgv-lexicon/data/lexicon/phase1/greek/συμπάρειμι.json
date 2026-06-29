@@ -1,0 +1,80 @@
+{
+  "lemma": "συμπάρειμι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συμπαρόντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 25:24",
+      "form": "συμπαρόντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 24,
+      "left_context": "Φῆστος· Ἀγρίππα βασιλεῦ καὶ πάντες οἱ",
+      "right_context": "ἡμῖν ἄνδρες, θεωρεῖτε τοῦτον περὶ οὗ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἀγρίππας",
+      "display": "Agripa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεωρέω",
+      "display": "veis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 25:24",
+      "reason": "occurs near βασιλεύς, θεωρέω, ἀνήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

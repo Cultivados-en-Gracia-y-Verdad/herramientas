@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀποστοματίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀποστοματίζειν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 11:53",
+      "form": "ἀποστοματίζειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 53,
+      "left_context": "καὶ οἱ Φαρισαῖοι δεινῶς ἐνέχειν καὶ",
+      "right_context": "αὐτὸν περὶ πλειόνων,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεινῶς",
+      "display": "gravemente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνέχω",
+      "display": "tener",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:53",
+      "reason": "occurs near Φαρισαῖος, δεινῶς, πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

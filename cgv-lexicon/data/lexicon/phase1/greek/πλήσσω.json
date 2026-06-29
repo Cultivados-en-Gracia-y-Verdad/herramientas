@@ -1,0 +1,86 @@
+{
+  "lemma": "πλήσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπλήγη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 8:12",
+      "form": "ἐπλήγη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 8,
+      "verse": 12,
+      "left_context": "Καὶ ὁ τέταρτος ἄγγελος ἐσάλπισεν· καὶ",
+      "right_context": "τὸ τρίτον τοῦ ἡλίου καὶ τὸ"
+    }
+  ],
+  "books": {
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέταρτος",
+      "display": "cuarto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σαλπίζω",
+      "display": "tocar·trompeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρίτος",
+      "display": "tercero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "de·sol",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 8:12",
+      "reason": "occurs near σαλπίζω, τέταρτος, τρίτος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

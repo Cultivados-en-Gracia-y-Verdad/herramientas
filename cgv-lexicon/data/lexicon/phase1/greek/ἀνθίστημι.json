@@ -1,0 +1,448 @@
+{
+  "lemma": "ἀνθίστημι",
+  "language": "greek",
+  "total_occurrences": 14,
+  "forms": [
+    {
+      "form": "ἀντιστῆναι",
+      "count": 3
+    },
+    {
+      "form": "ἀντίστητε",
+      "count": 2
+    },
+    {
+      "form": "ἀντέστησαν",
+      "count": 1
+    },
+    {
+      "form": "ἀνθίστανται",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀντέστη",
+      "count": 1
+    },
+    {
+      "form": "ἀντέστην,",
+      "count": 1
+    },
+    {
+      "form": "ἀνθίστατο",
+      "count": 1
+    },
+    {
+      "form": "⸂ἀντιστῆναι",
+      "count": 1
+    },
+    {
+      "form": "ἀνθέστηκεν;",
+      "count": 1
+    },
+    {
+      "form": "ἀνθέστηκεν,",
+      "count": 1
+    },
+    {
+      "form": "ἀνθεστηκότες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2,
+      "indicative": 7,
+      "infinitive": 4,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 9,
+      "present": 1,
+      "imperfect": 1,
+      "perfect": 3
+    },
+    "voices": {
+      "active": 12,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 5:9",
+      "form": "ἀντίστητε",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "ᾧ",
+      "right_context": "στερεοὶ τῇ πίστει, εἰδότες τὰ αὐτὰ"
+    },
+    {
+      "ref": "2 Timothy 3:8",
+      "form": "ἀντέστησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "ὃν τρόπον δὲ Ἰάννης καὶ Ἰαμβρῆς",
+      "right_context": "Μωϋσεῖ, οὕτως καὶ οὗτοι ἀνθίστανται τῇ"
+    },
+    {
+      "ref": "2 Timothy 3:8",
+      "form": "ἀνθίστανται",
+      "morph": "V-P-M-I-3P",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "Ἰαμβρῆς ἀντέστησαν Μωϋσεῖ, οὕτως καὶ οὗτοι",
+      "right_context": "τῇ ἀληθείᾳ, ἄνθρωποι κατεφθαρμένοι τὸν νοῦν,"
+    },
+    {
+      "ref": "2 Timothy 4:15",
+      "form": "⸀ἀντέστη",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "ὃν καὶ σὺ φυλάσσου, λίαν γὰρ",
+      "right_context": "τοῖς ἡμετέροις λόγοις."
+    },
+    {
+      "ref": "Ephesians 6:13",
+      "form": "ἀντιστῆναι",
+      "morph": "V-A-A-N",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "τὴν πανοπλίαν τοῦ θεοῦ, ἵνα δυνηθῆτε",
+      "right_context": "ἐν τῇ ἡμέρᾳ τῇ πονηρᾷ καὶ"
+    },
+    {
+      "ref": "Galatians 2:11",
+      "form": "ἀντέστην,",
+      "morph": "V-A-A-I-1S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "⸀Κηφᾶς εἰς Ἀντιόχειαν, κατὰ πρόσωπον αὐτῷ",
+      "right_context": "ὅτι κατεγνωσμένος ἦν·"
+    },
+    {
+      "ref": "Acts 6:10",
+      "form": "ἀντιστῆναι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "καὶ οὐκ ἴσχυον",
+      "right_context": "τῇ σοφίᾳ καὶ τῷ πνεύματι ᾧ"
+    },
+    {
+      "ref": "Acts 13:8",
+      "form": "ἀνθίστατο",
+      "morph": "V-I-M-I-3S",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "δὲ αὐτοῖς Ἐλύμας ὁ μάγος, οὕτως"
+    },
+    {
+      "ref": "Luke 21:15",
+      "form": "⸂ἀντιστῆναι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 15,
+      "left_context": "στόμα καὶ σοφίαν ᾗ οὐ δυνήσονται",
+      "right_context": "ἢ ἀντειπεῖν⸃ ⸀ἅπαντες οἱ ἀντικείμενοι ὑμῖν."
+    },
+    {
+      "ref": "Matthew 5:39",
+      "form": "ἀντιστῆναι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 39,
+      "left_context": "ἐγὼ δὲ λέγω ὑμῖν μὴ",
+      "right_context": "τῷ πονηρῷ· ἀλλ’ ὅστις σε ⸀ῥαπίζει"
+    },
+    {
+      "ref": "Romans 9:19",
+      "form": "ἀνθέστηκεν;",
+      "morph": "V-X-A-I-3S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 19,
+      "left_context": "μέμφεται; τῷ γὰρ βουλήματι αὐτοῦ τίς",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 13:2",
+      "form": "ἀνθέστηκεν,",
+      "morph": "V-X-A-I-3S",
+      "book": "Romans",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "τῇ ἐξουσίᾳ τῇ τοῦ θεοῦ διαταγῇ",
+      "right_context": "οἱ δὲ ἀνθεστηκότες ἑαυτοῖς κρίμα λήμψονται."
+    },
+    {
+      "ref": "Romans 13:2",
+      "form": "ἀνθεστηκότες",
+      "morph": "V-X-A-P",
+      "book": "Romans",
+      "chapter": 13,
+      "verse": 2,
+      "left_context": "τοῦ θεοῦ διαταγῇ ἀνθέστηκεν, οἱ δὲ",
+      "right_context": "ἑαυτοῖς κρίμα λήμψονται."
+    },
+    {
+      "ref": "James 4:7",
+      "form": "ἀντίστητε",
+      "morph": "V-A-A-D-2P",
+      "book": "James",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "ὑποτάγητε οὖν τῷ θεῷ·",
+      "right_context": "δὲ τῷ διαβόλῳ, καὶ φεύξεται ἀφ’"
+    }
+  ],
+  "books": {
+    "2 Timothy": 3,
+    "Romans": 3,
+    "Acts": 2,
+    "1 Peter": 1,
+    "Ephesians": 1,
+    "Galatians": 1,
+    "Luke": 1,
+    "Matthew": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνθίστημι",
+      "display": "resisten",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "Μωϋσῆς",
+      "display": "Moisés",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podáis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvada",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σοφία",
+      "display": "sabiduría",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διαταγή",
+      "display": "orden",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κρίμα",
+      "display": "juicio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στερεός",
+      "display": "firmes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "sabidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρόπος",
+      "display": "modo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰάννης",
+      "display": "Janes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰαμβρῆς",
+      "display": "Jambres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταφθείρω",
+      "display": "corrompidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guarda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίαν",
+      "display": "muchísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέτερος",
+      "display": "nuestros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πανοπλία",
+      "display": "armadura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 5:9",
+      "form": "ἀντίστητε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ᾧ ἀντίστητε στερεοὶ τῇ πίστει, εἰδότες τὰ αὐτὰ τῶν παθημάτων"
+    },
+    {
+      "ref": "James 4:7",
+      "form": "ἀντίστητε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ὑποτάγητε οὖν τῷ θεῷ· ἀντίστητε δὲ τῷ διαβόλῳ, καὶ φεύξεται ἀφ’ ὑμῶν·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 6:10",
+      "negator": "οὐκ",
+      "clause_text": "καὶ οὐκ ἴσχυον ἀντιστῆναι τῇ σοφίᾳ καὶ τῷ πνεύματι ᾧ ἐλάλει."
+    },
+    {
+      "ref": "Luke 21:15",
+      "negator": "οὐ",
+      "clause_text": "δώσω ὑμῖν στόμα καὶ σοφίαν ᾗ οὐ δυνήσονται ⸂ἀντιστῆναι ἢ ἀντειπεῖν⸃ ⸀ἅπαντες οἱ ἀντικείμενοι ὑμῖν."
+    },
+    {
+      "ref": "Matthew 5:39",
+      "negator": "μὴ",
+      "clause_text": "ἐγὼ δὲ λέγω ὑμῖν μὴ ἀντιστῆναι τῷ πονηρῷ· ἀλλ’ ὅστις σε ⸀ῥαπίζει ⸀εἰς τὴν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 5:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 4:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 3:8",
+      "reason": "occurs near Μωϋσῆς, οὕτω(ς), ἀνθίστημι"
+    },
+    {
+      "ref": "2 Timothy 4:15",
+      "reason": "occurs near ἀνθίστημι"
+    },
+    {
+      "ref": "Romans 13:2",
+      "reason": "occurs near θεός, ἀνθίστημι"
+    },
+    {
+      "ref": "Acts 13:8",
+      "reason": "occurs near ἀνθίστημι"
+    },
+    {
+      "ref": "Ephesians 6:13",
+      "reason": "occurs near δύναμαι, θεός, ἀνθίστημι"
+    },
+    {
+      "ref": "Galatians 2:11",
+      "reason": "occurs near ἀνθίστημι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

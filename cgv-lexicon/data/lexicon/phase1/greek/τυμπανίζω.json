@@ -1,0 +1,86 @@
+{
+  "lemma": "τυμπανίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐτυμπανίσθησαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:35",
+      "form": "ἐτυμπανίσθησαν,",
+      "morph": "V-A-P-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 35,
+      "left_context": "ἀναστάσεως τοὺς νεκροὺς αὐτῶν· ἄλλοι δὲ",
+      "right_context": "οὐ προσδεξάμενοι τὴν ἀπολύτρωσιν, ἵνα κρείττονος"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νεκρός",
+      "display": "muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσδέχομαι",
+      "display": "esperados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολύτρωσις",
+      "display": "redención",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 11:35",
+      "negator": "οὐ",
+      "clause_text": "γυναῖκες ἐξ ἀναστάσεως τοὺς νεκροὺς αὐτῶν· ἄλλοι δὲ ἐτυμπανίσθησαν, οὐ προσδεξάμενοι τὴν ἀπολύτρωσιν, ἵνα κρείττονος ἀναστάσεως τύχωσιν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:35",
+      "reason": "occurs near νεκρός, προσδέχομαι, ἀπολύτρωσις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,158 @@
+{
+  "lemma": "ἀριθμέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἀριθμῆσαι",
+      "count": 1
+    },
+    {
+      "form": "ἠρίθμηνται·",
+      "count": 1
+    },
+    {
+      "form": "ἠριθμημέναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 7:9",
+      "form": "ἀριθμῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 9,
+      "left_context": "εἶδον, καὶ ἰδοὺ ὄχλος πολύς, ὃν",
+      "right_context": "⸀αὐτὸν οὐδεὶς ἐδύνατο, ἐκ παντὸς ἔθνους"
+    },
+    {
+      "ref": "Luke 12:7",
+      "form": "ἠρίθμηνται·",
+      "morph": "V-X-P-I-3P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 7,
+      "left_context": "αἱ τρίχες τῆς κεφαλῆς ὑμῶν πᾶσαι",
+      "right_context": "⸀μὴ φοβεῖσθε· πολλῶν στρουθίων διαφέρετε."
+    },
+    {
+      "ref": "Matthew 10:30",
+      "form": "ἠριθμημέναι",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 30,
+      "left_context": "καὶ αἱ τρίχες τῆς κεφαλῆς πᾶσαι",
+      "right_context": "εἰσίν."
+    }
+  ],
+  "books": {
+    "Revelation": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θρίξ",
+      "display": "cabellos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "de·cabeza",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρουθίον",
+      "display": "de·gorriónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαφέρω",
+      "display": "diferéis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:7",
+      "negator": "⸀μὴ",
+      "clause_text": "ἀλλὰ καὶ αἱ τρίχες τῆς κεφαλῆς ὑμῶν πᾶσαι ἠρίθμηνται· ⸀μὴ φοβεῖσθε· πολλῶν στρουθίων διαφέρετε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:7",
+      "reason": "occurs near θρίξ, κεφαλή, πολύς"
+    },
+    {
+      "ref": "Matthew 10:30",
+      "reason": "occurs near θρίξ, κεφαλή"
+    },
+    {
+      "ref": "Revelation 7:9",
+      "reason": "occurs near πολύς, ἰδού, ὄχλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

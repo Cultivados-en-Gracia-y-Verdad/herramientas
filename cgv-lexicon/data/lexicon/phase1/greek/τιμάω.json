@@ -1,0 +1,594 @@
+{
+  "lemma": "τιμάω",
+  "language": "greek",
+  "total_occurrences": 21,
+  "forms": [
+    {
+      "form": "Τίμα",
+      "count": 5
+    },
+    {
+      "form": "τίμα",
+      "count": 2
+    },
+    {
+      "form": "τιμῶσι",
+      "count": 2
+    },
+    {
+      "form": "τιμᾷ,",
+      "count": 2
+    },
+    {
+      "form": "τιμήσατε,",
+      "count": 1
+    },
+    {
+      "form": "τιμᾶτε.",
+      "count": 1
+    },
+    {
+      "form": "ἐτίμησαν",
+      "count": 1
+    },
+    {
+      "form": "τιμῶν",
+      "count": 1
+    },
+    {
+      "form": "τιμᾷ",
+      "count": 1
+    },
+    {
+      "form": "τιμῶ",
+      "count": 1
+    },
+    {
+      "form": "τιμήσει",
+      "count": 1
+    },
+    {
+      "form": "⸀τιμήσει",
+      "count": 1
+    },
+    {
+      "form": "τετιμημένου",
+      "count": 1
+    },
+    {
+      "form": "ἐτιμήσαντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 9,
+      "indicative": 9,
+      "subjunctive": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 15,
+      "future": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 19,
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:17",
+      "form": "τιμήσατε,",
+      "morph": "V-A-A-D-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "πάντας",
+      "right_context": "τὴν ἀδελφότητα ⸀ἀγαπᾶτε, τὸν θεὸν φοβεῖσθε,"
+    },
+    {
+      "ref": "1 Peter 2:17",
+      "form": "τιμᾶτε.",
+      "morph": "V-P-A-D-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "⸀ἀγαπᾶτε, τὸν θεὸν φοβεῖσθε, τὸν βασιλέα",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Timothy 5:3",
+      "form": "τίμα",
+      "morph": "V-P-A-D-2S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "Χήρας",
+      "right_context": "τὰς ὄντως χήρας."
+    },
+    {
+      "ref": "Ephesians 6:2",
+      "form": "τίμα",
+      "morph": "V-P-A-D-2S",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "τὸν πατέρα σου καὶ τὴν μητέρα,"
+    },
+    {
+      "ref": "Acts 28:10",
+      "form": "ἐτίμησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 10,
+      "left_context": "οἳ καὶ πολλαῖς τιμαῖς",
+      "right_context": "ἡμᾶς καὶ ἀναγομένοις ἐπέθεντο τὰ πρὸς"
+    },
+    {
+      "ref": "John 5:23",
+      "form": "τιμῶσι",
+      "morph": "V-P-A-S-3P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 23,
+      "left_context": "ἵνα πάντες",
+      "right_context": "τὸν υἱὸν καθὼς τιμῶσι τὸν πατέρα."
+    },
+    {
+      "ref": "John 5:23",
+      "form": "τιμῶσι",
+      "morph": "V-P-A-I-3P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 23,
+      "left_context": "ἵνα πάντες τιμῶσι τὸν υἱὸν καθὼς",
+      "right_context": "τὸν πατέρα. ὁ μὴ τιμῶν τὸν"
+    },
+    {
+      "ref": "John 5:23",
+      "form": "τιμῶν",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 23,
+      "left_context": "καθὼς τιμῶσι τὸν πατέρα. ὁ μὴ",
+      "right_context": "τὸν υἱὸν οὐ τιμᾷ τὸν πατέρα"
+    },
+    {
+      "ref": "John 5:23",
+      "form": "τιμᾷ",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 5,
+      "verse": 23,
+      "left_context": "ὁ μὴ τιμῶν τὸν υἱὸν οὐ",
+      "right_context": "τὸν πατέρα τὸν πέμψαντα αὐτόν."
+    },
+    {
+      "ref": "John 8:49",
+      "form": "τιμῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "John",
+      "chapter": 8,
+      "verse": 49,
+      "left_context": "Ἰησοῦς· Ἐγὼ δαιμόνιον οὐκ ἔχω, ἀλλὰ",
+      "right_context": "τὸν πατέρα μου, καὶ ὑμεῖς ἀτιμάζετέ"
+    },
+    {
+      "ref": "John 12:26",
+      "form": "τιμήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 26,
+      "left_context": "ἐμὸς ἔσται· ⸀ἐάν τις ἐμοὶ διακονῇ",
+      "right_context": "αὐτὸν ὁ πατήρ."
+    },
+    {
+      "ref": "Luke 18:20",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 20,
+      "left_context": "Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς,",
+      "right_context": "τὸν πατέρα σου καὶ τὴν ⸀μητέρα."
+    },
+    {
+      "ref": "Mark 7:6",
+      "form": "τιμᾷ,",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 6,
+      "left_context": "Οὗτος ὁ λαὸς τοῖς χείλεσίν με",
+      "right_context": "ἡ δὲ καρδία αὐτῶν πόρρω ἀπέχει"
+    },
+    {
+      "ref": "Mark 7:10",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "Μωϋσῆς γὰρ εἶπεν·",
+      "right_context": "τὸν πατέρα σου καὶ τὴν μητέρα"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς,",
+      "right_context": "τὸν πατέρα σου καὶ τὴν μητέρα."
+    },
+    {
+      "ref": "Matthew 15:4",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 4,
+      "left_context": "ὁ γὰρ θεὸς ⸀εἶπεν·",
+      "right_context": "τὸν πατέρα καὶ τὴν μητέρα, καί·"
+    },
+    {
+      "ref": "Matthew 15:6",
+      "form": "⸀τιμήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 6,
+      "left_context": "⸀οὐ μὴ",
+      "right_context": "τὸν πατέρα ⸀αὐτοῦ· καὶ ἠκυρώσατε ⸂τὸν"
+    },
+    {
+      "ref": "Matthew 15:8",
+      "form": "τιμᾷ,",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 8,
+      "left_context": "⸂Ὁ λαὸς οὗτος⸃ τοῖς χείλεσίν με",
+      "right_context": "ἡ δὲ καρδία αὐτῶν πόρρω ἀπέχει"
+    },
+    {
+      "ref": "Matthew 19:19",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 19,
+      "left_context": "",
+      "right_context": "τὸν πατέρα καὶ τὴν μητέρα, καὶ"
+    },
+    {
+      "ref": "Matthew 27:9",
+      "form": "τετιμημένου",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 9,
+      "left_context": "τὰ τριάκοντα ἀργύρια, τὴν τιμὴν τοῦ",
+      "right_context": "ὃν ἐτιμήσαντο ἀπὸ υἱῶν Ἰσραήλ,"
+    },
+    {
+      "ref": "Matthew 27:9",
+      "form": "ἐτιμήσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 9,
+      "left_context": "ἀργύρια, τὴν τιμὴν τοῦ τετιμημένου ὃν",
+      "right_context": "ἀπὸ υἱῶν Ἰσραήλ,"
+    }
+  ],
+  "books": {
+    "John": 6,
+    "Matthew": 6,
+    "Mark": 3,
+    "1 Peter": 2,
+    "1 Timothy": 1,
+    "Ephesians": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 12,
+      "window": 5
+    },
+    {
+      "lemma": "τιμάω",
+      "display": "honran",
+      "count": 8,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 6,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "honoras",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χήρα",
+      "display": "viudas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλέπτω",
+      "display": "robes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδομαρτυρέω",
+      "display": "dar·falso·testimonio,",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χεῖλος",
+      "display": "labios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πόρρω",
+      "display": "lejos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μήτηρ",
+      "display": "madre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "de·Israel",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφότης",
+      "display": "hermandad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπάω",
+      "display": "amad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄντως",
+      "display": "verdaderamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάγω",
+      "display": "subidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτίθημι",
+      "display": "pusieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "enviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "demonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονέω",
+      "display": "serviera",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Peter 2:17",
+      "form": "τιμήσατε,",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "πάντας τιμήσατε, τὴν ἀδελφότητα ⸀ἀγαπᾶτε, τὸν θεὸν φοβεῖσθε, τὸν βασιλέα"
+    },
+    {
+      "ref": "1 Peter 2:17",
+      "form": "τιμᾶτε.",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "τὴν ἀδελφότητα ⸀ἀγαπᾶτε, τὸν θεὸν φοβεῖσθε, τὸν βασιλέα τιμᾶτε."
+    },
+    {
+      "ref": "1 Timothy 5:3",
+      "form": "τίμα",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Χήρας τίμα τὰς ὄντως χήρας."
+    },
+    {
+      "ref": "Ephesians 6:2",
+      "form": "τίμα",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "τίμα τὸν πατέρα σου καὶ τὴν μητέρα, ἥτις ἐστὶν"
+    },
+    {
+      "ref": "Luke 18:20",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν ⸀μητέρα.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Mark 7:10",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Μωϋσῆς γὰρ εἶπεν· Τίμα τὸν πατέρα σου καὶ τὴν μητέρα σου, καί·"
+    },
+    {
+      "ref": "Mark 10:19",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν μητέρα.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 15:4",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "ὁ γὰρ θεὸς ⸀εἶπεν· Τίμα τὸν πατέρα καὶ τὴν μητέρα, καί· Ὁ κακολογῶν"
+    },
+    {
+      "ref": "Matthew 19:19",
+      "form": "Τίμα",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "Τίμα τὸν πατέρα καὶ τὴν μητέρα, καὶ Ἀγαπήσεις τὸν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 5:23",
+      "negator": "μὴ",
+      "clause_text": "ἵνα πάντες τιμῶσι τὸν υἱὸν καθὼς τιμῶσι τὸν πατέρα. ὁ μὴ τιμῶν τὸν υἱὸν οὐ"
+    },
+    {
+      "ref": "John 5:23",
+      "negator": "μὴ",
+      "clause_text": "τὸν υἱὸν καθὼς τιμῶσι τὸν πατέρα. ὁ μὴ τιμῶν τὸν υἱὸν οὐ τιμᾷ τὸν πατέρα τὸν πέμψαντα"
+    },
+    {
+      "ref": "John 5:23",
+      "negator": "οὐ",
+      "clause_text": "τὸν πατέρα. ὁ μὴ τιμῶν τὸν υἱὸν οὐ τιμᾷ τὸν πατέρα τὸν πέμψαντα αὐτόν."
+    },
+    {
+      "ref": "John 8:49",
+      "negator": "οὐκ",
+      "clause_text": "ἀπεκρίθη Ἰησοῦς· Ἐγὼ δαιμόνιον οὐκ ἔχω, ἀλλὰ τιμῶ τὸν πατέρα μου, καὶ ὑμεῖς ἀτιμάζετέ με."
+    },
+    {
+      "ref": "Luke 18:20",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ μοιχεύσῃς, Μὴ φονεύσῃς, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν ⸀μητέρα."
+    },
+    {
+      "ref": "Mark 10:19",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ μοιχεύσῃς⸃, Μὴ κλέψῃς, Μὴ ψευδομαρτυρήσῃς, Μὴ ἀποστερήσῃς, Τίμα τὸν πατέρα σου καὶ τὴν μητέρα."
+    },
+    {
+      "ref": "Matthew 15:6",
+      "negator": "⸀οὐ",
+      "clause_text": "⸀οὐ μὴ ⸀τιμήσει τὸν πατέρα ⸀αὐτοῦ· καὶ ἠκυρώσατε ⸂τὸν λόγον⸃ τοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 15:4",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 19:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 10:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 7:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Peter 2:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 5:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Ephesians 6:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 18:20",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

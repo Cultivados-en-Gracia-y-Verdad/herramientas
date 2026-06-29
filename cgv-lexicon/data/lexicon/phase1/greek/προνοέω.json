@@ -1,0 +1,179 @@
+{
+  "lemma": "προνοέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀προνοεῖ,",
+      "count": 1
+    },
+    {
+      "form": "⸂προνοοῦμεν",
+      "count": 1
+    },
+    {
+      "form": "προνοούμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 2,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 5:8",
+      "form": "⸀προνοεῖ,",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "τῶν ἰδίων καὶ ⸀μάλιστα οἰκείων οὐ",
+      "right_context": "τὴν πίστιν ἤρνηται καὶ ἔστιν ἀπίστου"
+    },
+    {
+      "ref": "2 Corinthians 8:21",
+      "form": "⸂προνοοῦμεν",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 21,
+      "left_context": "",
+      "right_context": "γὰρ⸃ καλὰ οὐ μόνον ἐνώπιον κυρίου"
+    },
+    {
+      "ref": "Romans 12:17",
+      "form": "προνοούμενοι",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 17,
+      "left_context": "μηδενὶ κακὸν ἀντὶ κακοῦ ἀποδιδόντες·",
+      "right_context": "καλὰ ἐνώπιον πάντων ἀνθρώπων·"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "2 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καλός",
+      "display": "buenos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κακός",
+      "display": "malo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "de·propios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάλιστα",
+      "display": "especialmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκεῖος",
+      "display": "de·casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρνέομαι",
+      "display": "ha negado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντί",
+      "display": "en·lugar·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolviendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 5:8",
+      "negator": "οὐ",
+      "clause_text": "δέ τις τῶν ἰδίων καὶ ⸀μάλιστα οἰκείων οὐ ⸀προνοεῖ, τὴν πίστιν ἤρνηται καὶ ἔστιν ἀπίστου χείρων."
+    },
+    {
+      "ref": "2 Corinthians 8:21",
+      "negator": "οὐ",
+      "clause_text": "⸂προνοοῦμεν γὰρ⸃ καλὰ οὐ μόνον ἐνώπιον κυρίου ἀλλὰ καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 5:8",
+      "reason": "occurs near μάλιστα, ἴδιος"
+    },
+    {
+      "ref": "2 Corinthians 8:21",
+      "reason": "occurs near καλός, ἐνώπιον"
+    },
+    {
+      "ref": "Romans 12:17",
+      "reason": "occurs near κακός, καλός, ἐνώπιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,151 @@
+{
+  "lemma": "ὑποδέομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ὑποδησάμενοι",
+      "count": 1
+    },
+    {
+      "form": "ὑπόδησαι",
+      "count": 1
+    },
+    {
+      "form": "ὑποδεδεμένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 6:15",
+      "form": "ὑποδησάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 15,
+      "left_context": "καὶ",
+      "right_context": "τοὺς πόδας ἐν ἑτοιμασίᾳ τοῦ εὐαγγελίου"
+    },
+    {
+      "ref": "Acts 12:8",
+      "form": "ὑπόδησαι",
+      "morph": "V-A-M-D-2S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 8,
+      "left_context": "ὁ ἄγγελος πρὸς αὐτόν· ⸀Ζῶσαι καὶ",
+      "right_context": "τὰ σανδάλιά σου· ἐποίησεν δὲ οὕτως."
+    },
+    {
+      "ref": "Mark 6:9",
+      "form": "ὑποδεδεμένους",
+      "morph": "V-X-M-P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "ἀλλὰ",
+      "right_context": "σανδάλια, καὶ μὴ ⸀ἐνδύσησθε δύο χιτῶνας."
+    }
+  ],
+  "books": {
+    "Ephesians": 1,
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σανδάλιον",
+      "display": "sandalias",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμασία",
+      "display": "preparación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζώννυμι",
+      "display": "ceñe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδύω",
+      "display": "vestáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 12:8",
+      "form": "ὑπόδησαι",
+      "morph": "V-A-M-D-2S",
+      "clause_text": "εἶπεν ⸀δὲ ὁ ἄγγελος πρὸς αὐτόν· ⸀Ζῶσαι καὶ ὑπόδησαι τὰ σανδάλιά σου· ἐποίησεν δὲ οὕτως. καὶ λέγει"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 6:9",
+      "negator": "μὴ",
+      "clause_text": "ἀλλὰ ὑποδεδεμένους σανδάλια, καὶ μὴ ⸀ἐνδύσησθε δύο χιτῶνας."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Ephesians 6:15",
+      "reason": "occurs near πούς, ἑτοιμασία"
+    },
+    {
+      "ref": "Mark 6:9",
+      "reason": "occurs near σανδάλιον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

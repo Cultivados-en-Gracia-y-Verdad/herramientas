@@ -1,0 +1,80 @@
+{
+  "lemma": "ἑτεροζυγέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἑτεροζυγοῦντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 6:14",
+      "form": "ἑτεροζυγοῦντες",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 14,
+      "left_context": "Μὴ γίνεσθε",
+      "right_context": "ἀπίστοις· τίς γὰρ μετοχὴ δικαιοσύνῃ καὶ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄπιστος",
+      "display": "incrédulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετοχή",
+      "display": "participación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 6:14",
+      "negator": "Μὴ",
+      "clause_text": "Μὴ γίνεσθε ἑτεροζυγοῦντες ἀπίστοις· τίς γὰρ μετοχὴ δικαιοσύνῃ καὶ ἀνομίᾳ, ⸂ἢ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 6:14",
+      "reason": "occurs near δικαιοσύνη, μετοχή, ἄπιστος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

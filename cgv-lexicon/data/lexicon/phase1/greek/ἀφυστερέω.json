@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀφυστερέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἀφυστερημένος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 5:4",
+      "form": "⸀ἀφυστερημένος",
+      "morph": "V-X-P-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "τῶν ἀμησάντων τὰς χώρας ὑμῶν ὁ",
+      "right_context": "ἀφ’ ὑμῶν κράζει, καὶ αἱ βοαὶ"
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀμάω",
+      "display": "segados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χώρα",
+      "display": "regiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράζω",
+      "display": "clama",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:4",
+      "reason": "occurs near κράζω, χώρα, ἀμάω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

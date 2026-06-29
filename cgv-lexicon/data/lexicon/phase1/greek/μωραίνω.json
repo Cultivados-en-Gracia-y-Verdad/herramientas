@@ -1,0 +1,177 @@
+{
+  "lemma": "μωραίνω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "μωρανθῇ,",
+      "count": 2
+    },
+    {
+      "form": "ἐμώρανεν",
+      "count": 1
+    },
+    {
+      "form": "ἐμωράνθησαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "aorist": 4
+    },
+    "voices": {
+      "active": 1,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 1:20",
+      "form": "ἐμώρανεν",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "ποῦ συζητητὴς τοῦ αἰῶνος τούτου; οὐχὶ",
+      "right_context": "ὁ θεὸς τὴν σοφίαν τοῦ ⸀κόσμου;"
+    },
+    {
+      "ref": "Luke 14:34",
+      "form": "μωρανθῇ,",
+      "morph": "V-A-P-S-3S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 34,
+      "left_context": "ἅλας· ἐὰν δὲ ⸀καὶ τὸ ἅλας",
+      "right_context": "ἐν τίνι ἀρτυθήσεται;"
+    },
+    {
+      "ref": "Matthew 5:13",
+      "form": "μωρανθῇ,",
+      "morph": "V-A-P-S-3S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "τῆς γῆς· ἐὰν δὲ τὸ ἅλας",
+      "right_context": "ἐν τίνι ἁλισθήσεται; εἰς οὐδὲν ἰσχύει"
+    },
+    {
+      "ref": "Romans 1:22",
+      "form": "ἐμωράνθησαν,",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 22,
+      "left_context": "φάσκοντες εἶναι σοφοὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Luke": 1,
+    "Matthew": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἅλας",
+      "display": "sal",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συζητητής",
+      "display": "disputador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "de·siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σοφία",
+      "display": "sabiduría",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρτύω",
+      "display": "será sazonado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁλίζω",
+      "display": "será salado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φάσκω",
+      "display": "afirmando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σοφός",
+      "display": "sabios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 1:20",
+      "reason": "occurs near αἰών, θεός, οὐχί"
+    },
+    {
+      "ref": "Luke 14:34",
+      "reason": "occurs near ἅλας"
+    },
+    {
+      "ref": "Matthew 5:13",
+      "reason": "occurs near ἅλας"
+    },
+    {
+      "ref": "Romans 1:22",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "νοσέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "νοσῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:4",
+      "form": "νοσῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 4,
+      "left_context": "τετύφωται, μηδὲν ἐπιστάμενος, ἀλλὰ",
+      "right_context": "περὶ ζητήσεις καὶ λογομαχίας, ἐξ ὧν"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τυφόομαι",
+      "display": "envanecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπίσταμαι",
+      "display": "sabiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζήτησις",
+      "display": "discusiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λογομαχία",
+      "display": "contienda·de·palabras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 6:4",
+      "reason": "occurs near ζήτησις, λογομαχία, τυφόομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

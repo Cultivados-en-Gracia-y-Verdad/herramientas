@@ -1,0 +1,172 @@
+{
+  "lemma": "ὠδίνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ὠδίνουσα",
+      "count": 1
+    },
+    {
+      "form": "ὠδίνω",
+      "count": 1
+    },
+    {
+      "form": "ὠδίνουσα·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 12:2",
+      "form": "ὠδίνουσα",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "καὶ ἐν γαστρὶ ἔχουσα· ⸂καὶ κράζει⸃",
+      "right_context": "καὶ βασανιζομένη τεκεῖν."
+    },
+    {
+      "ref": "Galatians 4:19",
+      "form": "ὠδίνω",
+      "morph": "V-P-A-I-1S",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 19,
+      "left_context": "⸀τέκνα μου, οὓς πάλιν",
+      "right_context": "⸀μέχρις οὗ μορφωθῇ Χριστὸς ἐν ὑμῖν·"
+    },
+    {
+      "ref": "Galatians 4:27",
+      "form": "ὠδίνουσα·",
+      "morph": "V-P-A-P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 27,
+      "left_context": "τίκτουσα, ῥῆξον καὶ βόησον, ἡ οὐκ",
+      "right_context": "ὅτι πολλὰ τὰ τέκνα τῆς ἐρήμου"
+    }
+  ],
+  "books": {
+    "Galatians": 2,
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γαστήρ",
+      "display": "vientre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράζω",
+      "display": "clama",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασανίζω",
+      "display": "atormentada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίκτω",
+      "display": "dar·a·luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέχρι(ς)",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μορφόω",
+      "display": "forme",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥήγνυμι",
+      "display": "rasga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοάω",
+      "display": "clama",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 4:27",
+      "negator": "οὐκ",
+      "clause_text": "ἡ οὐ τίκτουσα, ῥῆξον καὶ βόησον, ἡ οὐκ ὠδίνουσα· ὅτι πολλὰ τὰ τέκνα τῆς ἐρήμου μᾶλλον ἢ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 4:19",
+      "reason": "occurs near τέκνον"
+    },
+    {
+      "ref": "Galatians 4:27",
+      "reason": "occurs near τέκνον"
+    },
+    {
+      "ref": "Revelation 12:2",
+      "reason": "occurs near βασανίζω, γαστήρ, κράζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

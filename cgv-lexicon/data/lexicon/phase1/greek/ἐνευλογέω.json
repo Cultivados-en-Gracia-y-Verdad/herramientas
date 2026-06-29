@@ -1,0 +1,117 @@
+{
+  "lemma": "ἐνευλογέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "Ἐνευλογηθήσονται",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐνευλογηθήσονται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "future": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 3:8",
+      "form": "Ἐνευλογηθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "ὁ θεὸς προευηγγελίσατο τῷ Ἀβραὰμ ὅτι",
+      "right_context": "ἐν σοὶ πάντα τὰ ἔθνη."
+    },
+    {
+      "ref": "Acts 3:25",
+      "form": "⸀ἐνευλογηθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 25,
+      "left_context": "Ἀβραάμ Καὶ ἐν τῷ σπέρματί σου",
+      "right_context": "πᾶσαι αἱ πατριαὶ τῆς γῆς."
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προευαγγελίζομαι",
+      "display": "anunciar·antes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπέρμα",
+      "display": "semilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατριά",
+      "display": "linajes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 3:25",
+      "reason": "occurs near σπέρμα"
+    },
+    {
+      "ref": "Galatians 3:8",
+      "reason": "occurs near θεός, προευαγγελίζομαι, Ἀβραάμ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

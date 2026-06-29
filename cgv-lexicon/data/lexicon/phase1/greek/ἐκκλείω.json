@@ -1,0 +1,131 @@
+{
+  "lemma": "ἐκκλείω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐκκλεῖσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐξεκλείσθη.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 4:17",
+      "form": "ἐκκλεῖσαι",
+      "morph": "V-A-A-N",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "ζηλοῦσιν ὑμᾶς οὐ καλῶς, ἀλλὰ",
+      "right_context": "ὑμᾶς θέλουσιν, ἵνα αὐτοὺς ζηλοῦτε."
+    },
+    {
+      "ref": "Romans 3:27",
+      "form": "ἐξεκλείσθη.",
+      "morph": "V-A-P-I-3S",
+      "book": "Romans",
+      "chapter": 3,
+      "verse": 27,
+      "left_context": "Ποῦ οὖν ἡ καύχησις;",
+      "right_context": "διὰ ποίου νόμου; τῶν ἔργων; οὐχί,"
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ζηλόω",
+      "display": "celan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καλῶς",
+      "display": "bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quieren",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποῦ",
+      "display": "dónde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καύχησις",
+      "display": "jactancia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποῖος",
+      "display": "cuál",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "de·ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 4:17",
+      "negator": "οὐ",
+      "clause_text": "ζηλοῦσιν ὑμᾶς οὐ καλῶς, ἀλλὰ ἐκκλεῖσαι ὑμᾶς θέλουσιν, ἵνα αὐτοὺς ζηλοῦτε."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 4:17",
+      "reason": "occurs near ζηλόω, θέλω, καλῶς"
+    },
+    {
+      "ref": "Romans 3:27",
+      "reason": "occurs near καύχησις, ποῦ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

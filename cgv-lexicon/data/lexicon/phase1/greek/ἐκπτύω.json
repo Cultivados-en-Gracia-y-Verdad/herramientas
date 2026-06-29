@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐκπτύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξεπτύσατε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 4:14",
+      "form": "ἐξεπτύσατε,",
+      "morph": "V-A-A-I-2P",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "τῇ σαρκί μου οὐκ ἐξουθενήσατε οὐδὲ",
+      "right_context": "ἀλλὰ ὡς ἄγγελον θεοῦ ἐδέξασθέ με,"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουθενέω",
+      "display": "despreciasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέχομαι",
+      "display": "recibisteis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 4:14",
+      "negator": "οὐκ",
+      "clause_text": "⸀ὑμῶν ἐν τῇ σαρκί μου οὐκ ἐξουθενήσατε οὐδὲ ἐξεπτύσατε, ἀλλὰ ὡς ἄγγελον θεοῦ ἐδέξασθέ με, ὡς Χριστὸν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 4:14",
+      "reason": "occurs near δέχομαι, θεός, σάρξ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

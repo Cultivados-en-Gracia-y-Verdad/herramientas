@@ -1,0 +1,235 @@
+{
+  "lemma": "περιβλέπομαι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "περιβλεψάμενος",
+      "count": 5
+    },
+    {
+      "form": "περιεβλέπετο",
+      "count": 1
+    },
+    {
+      "form": "περιβλεψάμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 6,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 6,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:10",
+      "form": "περιβλεψάμενος",
+      "morph": "V-A-M-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "καὶ",
+      "right_context": "πάντας αὐτοὺς εἶπεν αὐτῷ· Ἔκτεινον τὴν"
+    },
+    {
+      "ref": "Mark 3:5",
+      "form": "περιβλεψάμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "καὶ",
+      "right_context": "αὐτοὺς μετ’ ὀργῆς, συλλυπούμενος ἐπὶ τῇ"
+    },
+    {
+      "ref": "Mark 3:34",
+      "form": "περιβλεψάμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 34,
+      "left_context": "καὶ",
+      "right_context": "⸂τοὺς περὶ αὐτὸν κύκλῳ⸃ καθημένους λέγει·"
+    },
+    {
+      "ref": "Mark 5:32",
+      "form": "περιεβλέπετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 32,
+      "left_context": "καὶ",
+      "right_context": "ἰδεῖν τὴν τοῦτο ποιήσασαν."
+    },
+    {
+      "ref": "Mark 9:8",
+      "form": "περιβλεψάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 8,
+      "left_context": "καὶ ἐξάπινα",
+      "right_context": "οὐκέτι οὐδένα εἶδον ⸂ἀλλὰ τὸν Ἰησοῦν"
+    },
+    {
+      "ref": "Mark 10:23",
+      "form": "περιβλεψάμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 23,
+      "left_context": "Καὶ",
+      "right_context": "ὁ Ἰησοῦς λέγει τοῖς μαθηταῖς αὐτοῦ·"
+    },
+    {
+      "ref": "Mark 11:11",
+      "form": "περιβλεψάμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 11,
+      "left_context": "εἰς ⸀Ἱεροσόλυμα εἰς τὸ ἱερόν· καὶ",
+      "right_context": "πάντα ⸀ὀψὲ ἤδη οὔσης τῆς ὥρας"
+    }
+  ],
+  "books": {
+    "Mark": 6,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὁράω",
+      "display": "ver",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτείνω",
+      "display": "extende",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀργή",
+      "display": "de·ira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συλλυπέομαι",
+      "display": "entristecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύκλῳ",
+      "display": "alrededor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξάπινα",
+      "display": "de·repente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀψέ",
+      "display": "tarde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:23",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 11:11",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 3:34",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 3:5",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 5:32",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 9:8",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Luke 6:10",
+      "reason": "occurs near ἐκτείνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

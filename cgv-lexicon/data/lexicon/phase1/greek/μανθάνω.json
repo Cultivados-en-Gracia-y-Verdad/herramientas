@@ -1,0 +1,623 @@
+{
+  "lemma": "μανθάνω",
+  "language": "greek",
+  "total_occurrences": 25,
+  "forms": [
+    {
+      "form": "ἐμάθετε",
+      "count": 4
+    },
+    {
+      "form": "μάθετε",
+      "count": 4
+    },
+    {
+      "form": "μανθανέτωσαν",
+      "count": 2
+    },
+    {
+      "form": "μαθεῖν",
+      "count": 2
+    },
+    {
+      "form": "μαθὼν",
+      "count": 2
+    },
+    {
+      "form": "μάθητε",
+      "count": 1
+    },
+    {
+      "form": "μανθάνωσιν",
+      "count": 1
+    },
+    {
+      "form": "⸀μαθεῖν",
+      "count": 1
+    },
+    {
+      "form": "μανθανέτω",
+      "count": 1
+    },
+    {
+      "form": "μανθάνουσιν,",
+      "count": 1
+    },
+    {
+      "form": "μανθάνοντα",
+      "count": 1
+    },
+    {
+      "form": "ἔμαθες",
+      "count": 1
+    },
+    {
+      "form": "ἔμαθες,",
+      "count": 1
+    },
+    {
+      "form": "ἔμαθον",
+      "count": 1
+    },
+    {
+      "form": "ἔμαθεν",
+      "count": 1
+    },
+    {
+      "form": "μεμαθηκώς;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "infinitive": 3,
+      "imperative": 7,
+      "indicative": 9,
+      "participle": 4
+    },
+    "tenses": {
+      "aorist": 18,
+      "present": 6,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 25
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:6",
+      "form": "μάθητε",
+      "morph": "V-A-A-S-2P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "⸀Ἀπολλῶν δι’ ὑμᾶς, ἵνα ἐν ἡμῖν",
+      "right_context": "τό· Μὴ ὑπὲρ ⸀ἃ ⸀γέγραπται, ἵνα"
+    },
+    {
+      "ref": "1 Corinthians 14:31",
+      "form": "μανθάνωσιν",
+      "morph": "V-P-A-S-3P",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 31,
+      "left_context": "καθ’ ἕνα πάντες προφητεύειν, ἵνα πάντες",
+      "right_context": "καὶ πάντες παρακαλῶνται"
+    },
+    {
+      "ref": "1 Corinthians 14:35",
+      "form": "⸀μαθεῖν",
+      "morph": "V-A-A-N",
+      "book": "1 Corinthians",
+      "chapter": 14,
+      "verse": 35,
+      "left_context": "εἰ δέ τι",
+      "right_context": "θέλουσιν, ἐν οἴκῳ τοὺς ἰδίους ἄνδρας"
+    },
+    {
+      "ref": "1 Timothy 2:11",
+      "form": "μανθανέτω",
+      "morph": "V-P-A-D-3S",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 11,
+      "left_context": "γυνὴ ἐν ἡσυχίᾳ",
+      "right_context": "ἐν πάσῃ ὑποταγῇ·"
+    },
+    {
+      "ref": "1 Timothy 5:4",
+      "form": "μανθανέτωσαν",
+      "morph": "V-P-A-D-3P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "τις χήρα τέκνα ἢ ἔκγονα ἔχει,",
+      "right_context": "πρῶτον τὸν ἴδιον οἶκον εὐσεβεῖν καὶ"
+    },
+    {
+      "ref": "1 Timothy 5:13",
+      "form": "μανθάνουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Timothy",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "ἅμα δὲ καὶ ἀργαὶ",
+      "right_context": "περιερχόμεναι τὰς οἰκίας, οὐ μόνον δὲ"
+    },
+    {
+      "ref": "2 Timothy 3:7",
+      "form": "μανθάνοντα",
+      "morph": "V-P-A-P",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "πάντοτε",
+      "right_context": "καὶ μηδέποτε εἰς ἐπίγνωσιν ἀληθείας ἐλθεῖν"
+    },
+    {
+      "ref": "2 Timothy 3:14",
+      "form": "ἔμαθες",
+      "morph": "V-A-A-I-2S",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "σὺ δὲ μένε ἐν οἷς",
+      "right_context": "καὶ ἐπιστώθης, εἰδὼς παρὰ ⸀τίνων ἔμαθες,"
+    },
+    {
+      "ref": "2 Timothy 3:14",
+      "form": "ἔμαθες,",
+      "morph": "V-A-A-I-2S",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "ἔμαθες καὶ ἐπιστώθης, εἰδὼς παρὰ ⸀τίνων",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 14:3",
+      "form": "μαθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 3,
+      "left_context": "καὶ τῶν πρεσβυτέρων· καὶ οὐδεὶς ἐδύνατο",
+      "right_context": "τὴν ᾠδὴν εἰ μὴ αἱ ἑκατὸν"
+    },
+    {
+      "ref": "Colossians 1:7",
+      "form": "ἐμάθετε",
+      "morph": "V-A-A-I-2P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "⸀καθὼς",
+      "right_context": "ἀπὸ Ἐπαφρᾶ τοῦ ἀγαπητοῦ συνδούλου ἡμῶν,"
+    },
+    {
+      "ref": "Ephesians 4:20",
+      "form": "ἐμάθετε",
+      "morph": "V-A-A-I-2P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 20,
+      "left_context": "ὑμεῖς δὲ οὐχ οὕτως",
+      "right_context": "τὸν Χριστόν,"
+    },
+    {
+      "ref": "Philippians 4:9",
+      "form": "ἐμάθετε",
+      "morph": "V-A-A-I-2P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 9,
+      "left_context": "ἃ καὶ",
+      "right_context": "καὶ παρελάβετε καὶ ἠκούσατε καὶ εἴδετε"
+    },
+    {
+      "ref": "Philippians 4:11",
+      "form": "ἔμαθον",
+      "morph": "V-A-A-I-1S",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 11,
+      "left_context": "ὅτι καθ’ ὑστέρησιν λέγω, ἐγὼ γὰρ",
+      "right_context": "ἐν οἷς εἰμι αὐτάρκης εἶναι·"
+    },
+    {
+      "ref": "Galatians 3:2",
+      "form": "μαθεῖν",
+      "morph": "V-A-A-N",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 2,
+      "left_context": "τοῦτο μόνον θέλω",
+      "right_context": "ἀφ’ ὑμῶν, ἐξ ἔργων νόμου τὸ"
+    },
+    {
+      "ref": "Hebrews 5:8",
+      "form": "ἔμαθεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "καίπερ ὢν υἱός,",
+      "right_context": "ἀφ’ ὧν ἔπαθεν τὴν ὑπακοήν,"
+    },
+    {
+      "ref": "Acts 23:27",
+      "form": "μαθὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 27,
+      "left_context": "αὐτῶν ἐπιστὰς σὺν τῷ στρατεύματι ⸀ἐξειλάμην,",
+      "right_context": "ὅτι Ῥωμαῖός ἐστιν,"
+    },
+    {
+      "ref": "John 6:45",
+      "form": "μαθὼν",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 45,
+      "left_context": "ὁ ⸀ἀκούσας παρὰ τοῦ πατρὸς καὶ",
+      "right_context": "ἔρχεται πρὸς ⸀ἐμέ."
+    },
+    {
+      "ref": "John 7:15",
+      "form": "μεμαθηκώς;",
+      "morph": "V-X-A-P",
+      "book": "John",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "λέγοντες· Πῶς οὗτος γράμματα οἶδεν μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 13:28",
+      "form": "μάθετε",
+      "morph": "V-A-A-D-2P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 28,
+      "left_context": "Ἀπὸ δὲ τῆς συκῆς",
+      "right_context": "τὴν παραβολήν· ὅταν ⸂ἤδη ὁ κλάδος"
+    },
+    {
+      "ref": "Matthew 9:13",
+      "form": "μάθετε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 13,
+      "left_context": "πορευθέντες δὲ",
+      "right_context": "τί ἐστιν· Ἔλεος θέλω καὶ οὐ"
+    },
+    {
+      "ref": "Matthew 11:29",
+      "form": "μάθετε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 29,
+      "left_context": "τὸν ζυγόν μου ἐφ’ ὑμᾶς καὶ",
+      "right_context": "ἀπ’ ἐμοῦ, ὅτι πραΰς εἰμι καὶ"
+    },
+    {
+      "ref": "Matthew 24:32",
+      "form": "μάθετε",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 32,
+      "left_context": "Ἀπὸ δὲ τῆς συκῆς",
+      "right_context": "τὴν παραβολήν· ὅταν ἤδη ὁ κλάδος"
+    },
+    {
+      "ref": "Romans 16:17",
+      "form": "ἐμάθετε",
+      "morph": "V-A-A-I-2P",
+      "book": "Romans",
+      "chapter": 16,
+      "verse": 17,
+      "left_context": "σκάνδαλα παρὰ τὴν διδαχὴν ἣν ὑμεῖς",
+      "right_context": "ποιοῦντας, καὶ ⸀ἐκκλίνετε ἀπ’ αὐτῶν·"
+    },
+    {
+      "ref": "Titus 3:14",
+      "form": "μανθανέτωσαν",
+      "morph": "V-P-A-D-3P",
+      "book": "Titus",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "",
+      "right_context": "δὲ καὶ οἱ ἡμέτεροι καλῶν ἔργων"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 3,
+    "1 Timothy": 3,
+    "2 Timothy": 3,
+    "Matthew": 3,
+    "Philippians": 2,
+    "John": 2,
+    "Revelation": 1,
+    "Colossians": 1,
+    "Ephesians": 1,
+    "Galatians": 1,
+    "Hebrews": 1,
+    "Acts": 1,
+    "Mark": 1,
+    "Romans": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θέλω",
+      "display": "quieren",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μόνος",
+      "display": "solo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πιστόομαι",
+      "display": "fue confirmado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συκῆ",
+      "display": "de·higuera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παραβολή",
+      "display": "parábola",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προφητεύω",
+      "display": "profetizar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogaran",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡσυχία",
+      "display": "quietud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποταγή",
+      "display": "sujeción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χήρα",
+      "display": "viuda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔκγονον",
+      "display": "descendientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτον",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐσεβέω",
+      "display": "ser·piadoso",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Timothy 2:11",
+      "form": "μανθανέτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "γυνὴ ἐν ἡσυχίᾳ μανθανέτω ἐν πάσῃ ὑποταγῇ·"
+    },
+    {
+      "ref": "1 Timothy 5:4",
+      "form": "μανθανέτωσαν",
+      "morph": "V-P-A-D-3P",
+      "clause_text": "εἰ δέ τις χήρα τέκνα ἢ ἔκγονα ἔχει, μανθανέτωσαν πρῶτον τὸν ἴδιον οἶκον εὐσεβεῖν καὶ ἀμοιβὰς ἀποδιδόναι"
+    },
+    {
+      "ref": "Mark 13:28",
+      "form": "μάθετε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Ἀπὸ δὲ τῆς συκῆς μάθετε τὴν παραβολήν· ὅταν ⸂ἤδη ὁ κλάδος αὐτῆς⸃ ἁπαλὸς"
+    },
+    {
+      "ref": "Matthew 9:13",
+      "form": "μάθετε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "πορευθέντες δὲ μάθετε τί ἐστιν· Ἔλεος θέλω καὶ οὐ θυσίαν· οὐ"
+    },
+    {
+      "ref": "Matthew 11:29",
+      "form": "μάθετε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἄρατε τὸν ζυγόν μου ἐφ’ ὑμᾶς καὶ μάθετε ἀπ’ ἐμοῦ, ὅτι πραΰς εἰμι καὶ ταπεινὸς τῇ"
+    },
+    {
+      "ref": "Matthew 24:32",
+      "form": "μάθετε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "Ἀπὸ δὲ τῆς συκῆς μάθετε τὴν παραβολήν· ὅταν ἤδη ὁ κλάδος αὐτῆς γένηται"
+    },
+    {
+      "ref": "Titus 3:14",
+      "form": "μανθανέτωσαν",
+      "morph": "V-P-A-D-3P",
+      "clause_text": "μανθανέτωσαν δὲ καὶ οἱ ἡμέτεροι καλῶν ἔργων προΐστασθαι εἰς"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 4:6",
+      "negator": "Μὴ",
+      "clause_text": "ἐμαυτὸν καὶ ⸀Ἀπολλῶν δι’ ὑμᾶς, ἵνα ἐν ἡμῖν μάθητε τό· Μὴ ὑπὲρ ⸀ἃ ⸀γέγραπται, ἵνα μὴ εἷς"
+    },
+    {
+      "ref": "1 Timothy 5:13",
+      "negator": "οὐ",
+      "clause_text": "ἅμα δὲ καὶ ἀργαὶ μανθάνουσιν, περιερχόμεναι τὰς οἰκίας, οὐ μόνον δὲ ἀργαὶ ἀλλὰ"
+    },
+    {
+      "ref": "Revelation 14:3",
+      "negator": "μὴ",
+      "clause_text": "τεσσάρων ζῴων καὶ τῶν πρεσβυτέρων· καὶ οὐδεὶς ἐδύνατο μαθεῖν τὴν ᾠδὴν εἰ μὴ αἱ ἑκατὸν τεσσεράκοντα τέσσαρες"
+    },
+    {
+      "ref": "Ephesians 4:20",
+      "negator": "οὐχ",
+      "clause_text": "ὑμεῖς δὲ οὐχ οὕτως ἐμάθετε τὸν Χριστόν,"
+    },
+    {
+      "ref": "John 7:15",
+      "negator": "μὴ",
+      "clause_text": "οἱ Ἰουδαῖοι λέγοντες· Πῶς οὗτος γράμματα οἶδεν μὴ μεμαθηκώς;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 2:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 5:4",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 11:29",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 24:32",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 9:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 13:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Titus 3:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 14:31",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,130 @@
+{
+  "lemma": "ἐκπέμπω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐκπεμφθέντες",
+      "count": 1
+    },
+    {
+      "form": "ἐξέπεμψαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:4",
+      "form": "ἐκπεμφθέντες",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 4,
+      "left_context": "⸀Αὐτοὶ μὲν οὖν",
+      "right_context": "ὑπὸ τοῦ ⸂ἁγίου πνεύματος⸃ κατῆλθον ⸀εἰς"
+    },
+    {
+      "ref": "Acts 17:10",
+      "form": "ἐξέπεμψαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 10,
+      "left_context": "Οἱ δὲ ἀδελφοὶ εὐθέως ⸀διὰ νυκτὸς",
+      "right_context": "τόν τε Παῦλον καὶ τὸν Σιλᾶν"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατέρχομαι",
+      "display": "descendieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:4",
+      "reason": "occurs near κατέρχομαι, μέν, πνεῦμα"
+    },
+    {
+      "ref": "Acts 17:10",
+      "reason": "occurs near ἀδελφός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

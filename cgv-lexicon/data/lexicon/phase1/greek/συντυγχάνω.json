@@ -1,0 +1,80 @@
+{
+  "lemma": "συντυγχάνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συντυχεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:19",
+      "form": "συντυχεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 19,
+      "left_context": "οἱ ἀδελφοὶ αὐτοῦ, καὶ οὐκ ἠδύναντο",
+      "right_context": "αὐτῷ διὰ τὸν ὄχλον."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 8:19",
+      "negator": "οὐκ",
+      "clause_text": "μήτηρ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ οὐκ ἠδύναντο συντυχεῖν αὐτῷ διὰ τὸν ὄχλον."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:19",
+      "reason": "occurs near δύναμαι, ἀδελφός, ὄχλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

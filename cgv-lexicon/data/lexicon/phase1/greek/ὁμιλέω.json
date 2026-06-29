@@ -1,0 +1,187 @@
+{
+  "lemma": "ὁμιλέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ὁμιλήσας",
+      "count": 1
+    },
+    {
+      "form": "ὡμίλει",
+      "count": 1
+    },
+    {
+      "form": "ὡμίλουν",
+      "count": 1
+    },
+    {
+      "form": "ὁμιλεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "imperfect": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:11",
+      "form": "ὁμιλήσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 11,
+      "left_context": "ἄρτον καὶ γευσάμενος ἐφ’ ἱκανόν τε",
+      "right_context": "ἄχρι αὐγῆς, οὕτως ἐξῆλθεν."
+    },
+    {
+      "ref": "Acts 24:26",
+      "form": "ὡμίλει",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 24,
+      "verse": 26,
+      "left_context": "⸀Παύλου· διὸ καὶ πυκνότερον αὐτὸν μεταπεμπόμενος",
+      "right_context": "αὐτῷ."
+    },
+    {
+      "ref": "Luke 24:14",
+      "form": "ὡμίλουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 14,
+      "left_context": "καὶ αὐτοὶ",
+      "right_context": "πρὸς ἀλλήλους περὶ πάντων τῶν συμβεβηκότων"
+    },
+    {
+      "ref": "Luke 24:15",
+      "form": "ὁμιλεῖν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 15,
+      "left_context": "καὶ ἐγένετο ἐν τῷ",
+      "right_context": "αὐτοὺς καὶ συζητεῖν καὶ ⸀αὐτὸς Ἰησοῦς"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Luke": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γεύομαι",
+      "display": "probado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱκανός",
+      "display": "suficiente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐγή",
+      "display": "de·amanecer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυκνός",
+      "display": "frecuente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεταπέμπομαι",
+      "display": "mandar·llamar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συζητέω",
+      "display": "discutir",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:11",
+      "reason": "occurs near αὐγή, γεύομαι, τέ"
+    },
+    {
+      "ref": "Acts 24:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:15",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

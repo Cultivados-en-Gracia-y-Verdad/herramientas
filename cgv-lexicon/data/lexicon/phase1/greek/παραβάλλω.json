@@ -1,0 +1,80 @@
+{
+  "lemma": "παραβάλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρεβάλομεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:15",
+      "form": "παρεβάλομεν",
+      "morph": "V-A-A-I-1P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 15,
+      "left_context": "κατηντήσαμεν ⸀ἄντικρυς Χίου, τῇ δὲ ἑτέρᾳ",
+      "right_context": "εἰς ⸀Σάμον, τῇ ⸀δὲ ἐχομένῃ ἤλθομεν"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄντικρυς",
+      "display": "enfrente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χίος",
+      "display": "de·Quíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σάμος",
+      "display": "Samos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:15",
+      "reason": "occurs near Σάμος, Χίος, ἄντικρυς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

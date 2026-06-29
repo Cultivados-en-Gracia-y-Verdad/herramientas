@@ -1,0 +1,80 @@
+{
+  "lemma": "μηκύνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μηκύνηται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 4:27",
+      "form": "μηκύνηται",
+      "morph": "V-P-M-S-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 27,
+      "left_context": "ἡμέραν, καὶ ὁ σπόρος ⸀βλαστᾷ καὶ",
+      "right_context": "ὡς οὐκ οἶδεν αὐτός."
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σπόρος",
+      "display": "semilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλαστάνω",
+      "display": "brotara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "ha sabido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 4:27",
+      "negator": "οὐκ",
+      "clause_text": "νύκτα καὶ ἡμέραν, καὶ ὁ σπόρος ⸀βλαστᾷ καὶ μηκύνηται ὡς οὐκ οἶδεν αὐτός."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 4:27",
+      "reason": "occurs near βλαστάνω, οἶδα, σπόρος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

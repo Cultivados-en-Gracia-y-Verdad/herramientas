@@ -1,0 +1,123 @@
+{
+  "lemma": "μετάγω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μετάγομεν.",
+      "count": 1
+    },
+    {
+      "form": "μετάγεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 3:3",
+      "form": "μετάγομεν.",
+      "morph": "V-P-A-I-1P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "ἡμῖν, καὶ ὅλον τὸ σῶμα αὐτῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "James 3:4",
+      "form": "μετάγεται",
+      "morph": "V-P-P-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "ὄντα καὶ ὑπὸ ⸂ἀνέμων σκληρῶν⸃ ἐλαυνόμενα,",
+      "right_context": "ὑπὸ ἐλαχίστου πηδαλίου ὅπου ⸂ἡ ὁρμὴ"
+    }
+  ],
+  "books": {
+    "James": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·vientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκληρός",
+      "display": "de·duros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλαύνω",
+      "display": "navegados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλάχιστος",
+      "display": "de·mínimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πηδάλιον",
+      "display": "de·timón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:3",
+      "reason": "occurs near σῶμα, ὅλος"
+    },
+    {
+      "ref": "James 3:4",
+      "reason": "occurs near σκληρός, ἄνεμος, ἐλαύνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

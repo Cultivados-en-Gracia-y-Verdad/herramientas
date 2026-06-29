@@ -1,0 +1,132 @@
+{
+  "lemma": "σοφίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "σεσοφισμένοις",
+      "count": 1
+    },
+    {
+      "form": "σοφίσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:16",
+      "form": "σεσοφισμένοις",
+      "morph": "V-X-P-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 16,
+      "left_context": "Οὐ γὰρ",
+      "right_context": "μύθοις ἐξακολουθήσαντες ἐγνωρίσαμεν ὑμῖν τὴν τοῦ"
+    },
+    {
+      "ref": "2 Timothy 3:15",
+      "form": "σοφίσαι",
+      "morph": "V-A-A-N",
+      "book": "2 Timothy",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "⸀ἱερὰ γράμματα οἶδας, τὰ δυνάμενά σε",
+      "right_context": "εἰς σωτηρίαν διὰ πίστεως τῆς ἐν"
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μῦθος",
+      "display": "mitos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξακολουθέω",
+      "display": "seguidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνωρίζω",
+      "display": "dar·a·conocimos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράμμα",
+      "display": "letras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "has sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 1:16",
+      "negator": "Οὐ",
+      "clause_text": "Οὐ γὰρ σεσοφισμένοις μύθοις ἐξακολουθήσαντες ἐγνωρίσαμεν ὑμῖν τὴν τοῦ κυρίου ἡμῶν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 1:16",
+      "reason": "occurs near γνωρίζω, μῦθος, ἐξακολουθέω"
+    },
+    {
+      "ref": "2 Timothy 3:15",
+      "reason": "occurs near γράμμα, οἶδα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

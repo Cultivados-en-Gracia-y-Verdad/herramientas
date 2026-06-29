@@ -1,0 +1,111 @@
+{
+  "lemma": "βιάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "βιάζεται.",
+      "count": 1
+    },
+    {
+      "form": "βιάζεται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 16:16",
+      "form": "βιάζεται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 16,
+      "left_context": "θεοῦ εὐαγγελίζεται καὶ πᾶς εἰς αὐτὴν",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 11:12",
+      "form": "βιάζεται,",
+      "morph": "V-P-M-I-3S",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 12,
+      "left_context": "ἕως ἄρτι ἡ βασιλεία τῶν οὐρανῶν",
+      "right_context": "καὶ βιασταὶ ἁρπάζουσιν αὐτήν."
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εὐαγγελίζω",
+      "display": "es evangelizado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτι",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βιαστής",
+      "display": "violentos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁρπάζω",
+      "display": "arrebatan",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 16:16",
+      "reason": "occurs near εὐαγγελίζω"
+    },
+    {
+      "ref": "Matthew 11:12",
+      "reason": "occurs near βασιλεία, βιαστής, οὐρανός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

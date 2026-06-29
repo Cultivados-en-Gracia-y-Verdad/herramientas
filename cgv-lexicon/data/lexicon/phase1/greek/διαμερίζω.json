@@ -1,0 +1,393 @@
+{
+  "lemma": "διαμερίζω",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "διαμεριζόμεναι",
+      "count": 1
+    },
+    {
+      "form": "διεμέριζον",
+      "count": 1
+    },
+    {
+      "form": "Διεμερίσαντο",
+      "count": 1
+    },
+    {
+      "form": "διαμερισθεῖσα",
+      "count": 1
+    },
+    {
+      "form": "διεμερίσθη,",
+      "count": 1
+    },
+    {
+      "form": "διαμεμερισμένοι,",
+      "count": 1
+    },
+    {
+      "form": "⸀διαμερισθήσονται",
+      "count": 1
+    },
+    {
+      "form": "διαμερίσατε",
+      "count": 1
+    },
+    {
+      "form": "διαμεριζόμενοι",
+      "count": 1
+    },
+    {
+      "form": "διαμερίζονται",
+      "count": 1
+    },
+    {
+      "form": "διεμερίσαντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "indicative": 6,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 3,
+      "imperfect": 1,
+      "aorist": 5,
+      "perfect": 1,
+      "future": 1
+    },
+    "voices": {
+      "middle": 5,
+      "active": 2,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:3",
+      "form": "διαμεριζόμεναι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "καὶ ὤφθησαν αὐτοῖς",
+      "right_context": "γλῶσσαι ὡσεὶ πυρός, ⸂καὶ ἐκάθισεν⸃ ἐφ’"
+    },
+    {
+      "ref": "Acts 2:45",
+      "form": "διεμέριζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 45,
+      "left_context": "κτήματα καὶ τὰς ὑπάρξεις ἐπίπρασκον καὶ",
+      "right_context": "αὐτὰ πᾶσιν καθότι ἄν τις χρείαν"
+    },
+    {
+      "ref": "John 19:24",
+      "form": "Διεμερίσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 24,
+      "left_context": "ἵνα ἡ γραφὴ πληρωθῇ ⸂ἡ λέγουσα⸃·",
+      "right_context": "τὰ ἱμάτιά μου ἑαυτοῖς καὶ ἐπὶ"
+    },
+    {
+      "ref": "Luke 11:17",
+      "form": "διαμερισθεῖσα",
+      "morph": "V-A-P-P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "εἶπεν αὐτοῖς· Πᾶσα βασιλεία ἐφ’ ἑαυτὴν",
+      "right_context": "ἐρημοῦται, καὶ οἶκος ἐπὶ οἶκον πίπτει."
+    },
+    {
+      "ref": "Luke 11:18",
+      "form": "διεμερίσθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 18,
+      "left_context": "δὲ καὶ ὁ Σατανᾶς ἐφ’ ἑαυτὸν",
+      "right_context": "πῶς σταθήσεται ἡ βασιλεία αὐτοῦ; ὅτι"
+    },
+    {
+      "ref": "Luke 12:52",
+      "form": "διαμεμερισμένοι,",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 52,
+      "left_context": "τοῦ νῦν πέντε ἐν ⸂ἑνὶ οἴκῳ⸃",
+      "right_context": "τρεῖς ἐπὶ δυσὶν καὶ δύο ἐπὶ"
+    },
+    {
+      "ref": "Luke 12:53",
+      "form": "⸀διαμερισθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 53,
+      "left_context": "",
+      "right_context": "πατὴρ ἐπὶ υἱῷ καὶ υἱὸς ἐπὶ"
+    },
+    {
+      "ref": "Luke 22:17",
+      "form": "διαμερίσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 17,
+      "left_context": "ποτήριον εὐχαριστήσας εἶπεν· Λάβετε τοῦτο καὶ",
+      "right_context": "⸂εἰς ἑαυτούς⸃·"
+    },
+    {
+      "ref": "Luke 23:34",
+      "form": "διαμεριζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 34,
+      "left_context": "αὐτοῖς, οὐ γὰρ οἴδασιν τί ποιοῦσιν.⸃",
+      "right_context": "δὲ τὰ ἱμάτια αὐτοῦ ἔβαλον ⸀κλήρους."
+    },
+    {
+      "ref": "Mark 15:24",
+      "form": "διαμερίζονται",
+      "morph": "V-P-M-I-3P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 24,
+      "left_context": "καὶ ⸂σταυροῦσιν αὐτὸν καὶ⸃",
+      "right_context": "τὰ ἱμάτια αὐτοῦ, βάλλοντες κλῆρον ἐπ’"
+    },
+    {
+      "ref": "Matthew 27:35",
+      "form": "διεμερίσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 35,
+      "left_context": "σταυρώσαντες δὲ αὐτὸν",
+      "right_context": "τὰ ἱμάτια αὐτοῦ βάλλοντες κλῆρον,"
+    }
+  ],
+  "books": {
+    "Luke": 6,
+    "Acts": 2,
+    "John": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojaron",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρόω",
+      "display": "crucifican",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλῆρος",
+      "display": "suerte,",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "fueron visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lenguas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὡσεί",
+      "display": "como·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίζω",
+      "display": "sentó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕπαρξις",
+      "display": "posesiónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιπράσκω",
+      "display": "vendían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθότι",
+      "display": "según",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escritura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumpla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρημόομαι",
+      "display": "desolarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σατανᾶς",
+      "display": "Satanás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "será puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέντε",
+      "display": "cinco",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 22:17",
+      "form": "διαμερίσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ δεξάμενος ποτήριον εὐχαριστήσας εἶπεν· Λάβετε τοῦτο καὶ διαμερίσατε ⸂εἰς ἑαυτούς⸃·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 22:17",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 11:17",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 11:18",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 12:52",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 12:53",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 23:34",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Acts 2:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 2:45",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

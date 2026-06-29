@@ -1,0 +1,80 @@
+{
+  "lemma": "χλευάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐχλεύαζον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:32",
+      "form": "ἐχλεύαζον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 32,
+      "left_context": "Ἀκούσαντες δὲ ἀνάστασιν νεκρῶν οἱ μὲν",
+      "right_context": "οἱ δὲ εἶπαν Ἀκουσόμεθά σου ⸂περὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνάστασις",
+      "display": "resurrección",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "de·muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:32",
+      "reason": "occurs near μέν, νεκρός, ἀκούω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

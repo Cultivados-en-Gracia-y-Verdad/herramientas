@@ -1,0 +1,408 @@
+{
+  "lemma": "ἐάω",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "εἴασεν",
+      "count": 3
+    },
+    {
+      "form": "εἴων",
+      "count": 2
+    },
+    {
+      "form": "ἐάσει",
+      "count": 1
+    },
+    {
+      "form": "ἐάσαντες",
+      "count": 1
+    },
+    {
+      "form": "εἴασαν",
+      "count": 1
+    },
+    {
+      "form": "εἴασεν.",
+      "count": 1
+    },
+    {
+      "form": "εἴα",
+      "count": 1
+    },
+    {
+      "form": "Ἐᾶτε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 9,
+      "participle": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 6,
+      "imperfect": 3,
+      "present": 1
+    },
+    "voices": {
+      "active": 11
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 10:13",
+      "form": "ἐάσει",
+      "morph": "V-F-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 10,
+      "verse": 13,
+      "left_context": "πιστὸς δὲ ὁ θεός, ὃς οὐκ",
+      "right_context": "ὑμᾶς πειρασθῆναι ὑπὲρ ὃ δύνασθε, ἀλλὰ"
+    },
+    {
+      "ref": "Acts 14:16",
+      "form": "εἴασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 16,
+      "left_context": "ὃς ἐν ταῖς παρῳχημέναις γενεαῖς",
+      "right_context": "πάντα τὰ ἔθνη πορεύεσθαι ταῖς ὁδοῖς"
+    },
+    {
+      "ref": "Acts 16:7",
+      "form": "εἴασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 7,
+      "left_context": "⸀εἰς τὴν Βιθυνίαν ⸀πορευθῆναι καὶ οὐκ",
+      "right_context": "αὐτοὺς τὸ πνεῦμα ⸀Ἰησοῦ·"
+    },
+    {
+      "ref": "Acts 19:30",
+      "form": "εἴων",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 30,
+      "left_context": "βουλομένου εἰσελθεῖν εἰς τὸν δῆμον οὐκ",
+      "right_context": "αὐτὸν οἱ μαθηταί·"
+    },
+    {
+      "ref": "Acts 23:32",
+      "form": "ἐάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 32,
+      "left_context": "τῇ δὲ ἐπαύριον",
+      "right_context": "τοὺς ἱππεῖς ⸀ἀπέρχεσθαι σὺν αὐτῷ ὑπέστρεψαν"
+    },
+    {
+      "ref": "Acts 27:32",
+      "form": "εἴασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 32,
+      "left_context": "στρατιῶται⸃ τὰ σχοινία τῆς σκάφης καὶ",
+      "right_context": "αὐτὴν ἐκπεσεῖν."
+    },
+    {
+      "ref": "Acts 27:40",
+      "form": "εἴων",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 40,
+      "left_context": "καὶ τὰς ἀγκύρας περιελόντες",
+      "right_context": "εἰς τὴν θάλασσαν, ἅμα ἀνέντες τὰς"
+    },
+    {
+      "ref": "Acts 28:4",
+      "form": "εἴασεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 4,
+      "left_context": "τῆς θαλάσσης ἡ δίκη ζῆν οὐκ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 4:41",
+      "form": "εἴα",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 41,
+      "left_context": "υἱὸς τοῦ θεοῦ. καὶ ἐπιτιμῶν οὐκ",
+      "right_context": "αὐτὰ λαλεῖν, ὅτι ᾔδεισαν τὸν χριστὸν"
+    },
+    {
+      "ref": "Luke 22:51",
+      "form": "Ἐᾶτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 51,
+      "left_context": "ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν·",
+      "right_context": "ἕως τούτου· καὶ ἁψάμενος τοῦ ⸀ὠτίου"
+    },
+    {
+      "ref": "Matthew 24:43",
+      "form": "εἴασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 43,
+      "left_context": "ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν",
+      "right_context": "διορυχθῆναι τὴν οἰκίαν αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Acts": 7,
+    "Luke": 2,
+    "1 Corinthians": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "ir",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πειράζω",
+      "display": "tentar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παροίχομαι",
+      "display": "pasadas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γενεά",
+      "display": "generaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βιθυνία",
+      "display": "Bitinia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δῆμος",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαύριον",
+      "display": "al·día·siguiente,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱππεύς",
+      "display": "jinetes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σχοινίον",
+      "display": "cuerdas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκάφη",
+      "display": "de·bote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπίπτω",
+      "display": "naufragar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγκυρα",
+      "display": "anclas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιαιρέω",
+      "display": "quitados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίημι",
+      "display": "soltados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 22:51",
+      "form": "Ἐᾶτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν· Ἐᾶτε ἕως τούτου· καὶ ἁψάμενος τοῦ ⸀ὠτίου ἰάσατο αὐτόν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 10:13",
+      "negator": "οὐκ",
+      "clause_text": "μὴ ἀνθρώπινος· πιστὸς δὲ ὁ θεός, ὃς οὐκ ἐάσει ὑμᾶς πειρασθῆναι ὑπὲρ ὃ δύνασθε, ἀλλὰ ποιήσει σὺν"
+    },
+    {
+      "ref": "Acts 16:7",
+      "negator": "οὐκ",
+      "clause_text": "Μυσίαν ἐπείραζον ⸀εἰς τὴν Βιθυνίαν ⸀πορευθῆναι καὶ οὐκ εἴασεν αὐτοὺς τὸ πνεῦμα ⸀Ἰησοῦ·"
+    },
+    {
+      "ref": "Acts 19:30",
+      "negator": "οὐκ",
+      "clause_text": "⸂Παύλου δὲ⸃ βουλομένου εἰσελθεῖν εἰς τὸν δῆμον οὐκ εἴων αὐτὸν οἱ μαθηταί·"
+    },
+    {
+      "ref": "Acts 28:4",
+      "negator": "οὐκ",
+      "clause_text": "διασωθέντα ἐκ τῆς θαλάσσης ἡ δίκη ζῆν οὐκ εἴασεν."
+    },
+    {
+      "ref": "Luke 4:41",
+      "negator": "οὐκ",
+      "clause_text": "⸀εἶ ὁ υἱὸς τοῦ θεοῦ. καὶ ἐπιτιμῶν οὐκ εἴα αὐτὰ λαλεῖν, ὅτι ᾔδεισαν τὸν χριστὸν αὐτὸν εἶναι."
+    },
+    {
+      "ref": "Matthew 24:43",
+      "negator": "οὐκ",
+      "clause_text": "ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασεν διορυχθῆναι τὴν οἰκίαν αὐτοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 22:51",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 14:16",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 16:7",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 19:30",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 23:32",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 27:32",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 27:40",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 28:4",
+      "reason": "frequent in Acts"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,86 @@
+{
+  "lemma": "ἠχέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἠχῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:1",
+      "form": "ἠχῶν",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 1,
+      "left_context": "ἀγάπην δὲ μὴ ἔχω, γέγονα χαλκὸς",
+      "right_context": "ἢ κύμβαλον ἀλαλάζον."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χαλκός",
+      "display": "cobre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύμβαλον",
+      "display": "címbalo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλαλάζω",
+      "display": "gritando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 13:1",
+      "negator": "μὴ",
+      "clause_text": "τῶν ἀγγέλων, ἀγάπην δὲ μὴ ἔχω, γέγονα χαλκὸς ἠχῶν ἢ κύμβαλον ἀλαλάζον."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 13:1",
+      "reason": "occurs near κύμβαλον, χαλκός, ἀλαλάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

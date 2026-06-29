@@ -1,0 +1,150 @@
+{
+  "lemma": "ἀπειλέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἠπείλει,",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀπειλησώμεθα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "imperfect": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:23",
+      "form": "ἠπείλει,",
+      "morph": "V-I-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "ὃς λοιδορούμενος οὐκ ἀντελοιδόρει, πάσχων οὐκ",
+      "right_context": "παρεδίδου δὲ τῷ κρίνοντι δικαίως·"
+    },
+    {
+      "ref": "Acts 4:17",
+      "form": "⸀ἀπειλησώμεθα",
+      "morph": "V-A-M-S-1P",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "ἐπὶ πλεῖον διανεμηθῇ εἰς τὸν λαόν,",
+      "right_context": "αὐτοῖς μηκέτι λαλεῖν ἐπὶ τῷ ὀνόματι"
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λοιδορέω",
+      "display": "insultado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντιλοιδορέω",
+      "display": "responder·con·insulto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padeciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίνω",
+      "display": "juzgando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαίως",
+      "display": "justamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διανέμω",
+      "display": "reparta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 2:23",
+      "negator": "οὐκ",
+      "clause_text": "ὃς λοιδορούμενος οὐκ ἀντελοιδόρει, πάσχων οὐκ ἠπείλει, παρεδίδου δὲ τῷ κρίνοντι δικαίως·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 2:23",
+      "reason": "occurs near κρίνω, λοιδορέω, πάσχω"
+    },
+    {
+      "ref": "Acts 4:17",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

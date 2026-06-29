@@ -1,0 +1,86 @@
+{
+  "lemma": "ἐπιράπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιράπτει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 2:21",
+      "form": "ἐπιράπτει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "⸀Οὐδεὶς ἐπίβλημα ῥάκους ἀγνάφου",
+      "right_context": "ἐπὶ ⸂ἱμάτιον παλαιόν⸃· εἰ δὲ μή,"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπίβλημα",
+      "display": "remiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥάκος",
+      "display": "de·trapo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγναφος",
+      "display": "de·nuevo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "manto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παλαιός",
+      "display": "viejo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 2:21",
+      "reason": "occurs near παλαιός, ἄγναφος, ἐπίβλημα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

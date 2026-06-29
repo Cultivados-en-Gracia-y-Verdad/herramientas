@@ -1,0 +1,168 @@
+{
+  "lemma": "εὐθυμέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "εὐθυμεῖν,",
+      "count": 1
+    },
+    {
+      "form": "εὐθυμεῖτε,",
+      "count": 1
+    },
+    {
+      "form": "εὐθυμεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:22",
+      "form": "εὐθυμεῖν,",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 22,
+      "left_context": "καὶ τὰ νῦν παραινῶ ὑμᾶς",
+      "right_context": "ἀποβολὴ γὰρ ψυχῆς οὐδεμία ἔσται ἐξ"
+    },
+    {
+      "ref": "Acts 27:25",
+      "form": "εὐθυμεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 25,
+      "left_context": "διὸ",
+      "right_context": "ἄνδρες· πιστεύω γὰρ τῷ θεῷ ὅτι"
+    },
+    {
+      "ref": "James 5:13",
+      "form": "εὐθυμεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "Κακοπαθεῖ τις ἐν ὑμῖν; προσευχέσθω·",
+      "right_context": "τις; ψαλλέτω."
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "νῦν",
+      "display": "ahora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραινέω",
+      "display": "exhorto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποβολή",
+      "display": "pérdida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "de·alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακοπαθέω",
+      "display": "padece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "ora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψάλλω",
+      "display": "canta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 27:25",
+      "form": "εὐθυμεῖτε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "διὸ εὐθυμεῖτε, ἄνδρες· πιστεύω γὰρ τῷ θεῷ ὅτι οὕτως ἔσται"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:25",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 27:22",
+      "reason": "occurs near νῦν, παραινέω, ψυχή"
+    },
+    {
+      "ref": "James 5:13",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,117 @@
+{
+  "lemma": "καταπονέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "καταπονούμενον",
+      "count": 1
+    },
+    {
+      "form": "καταπονουμένῳ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:7",
+      "form": "καταπονούμενον",
+      "morph": "V-P-P-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "καὶ δίκαιον Λὼτ",
+      "right_context": "ὑπὸ τῆς τῶν ἀθέσμων ἐν ἀσελγείᾳ"
+    },
+    {
+      "ref": "Acts 7:24",
+      "form": "καταπονουμένῳ",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 24,
+      "left_context": "ἀδικούμενον ἠμύνατο καὶ ἐποίησεν ἐκδίκησιν τῷ",
+      "right_context": "πατάξας τὸν Αἰγύπτιον."
+    }
+  ],
+  "books": {
+    "2 Peter": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δίκαιος",
+      "display": "justo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Λώτ",
+      "display": "Lot",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄθεσμος",
+      "display": "de·inicuos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμύνομαι",
+      "display": "defendió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκδίκησις",
+      "display": "venganza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατάσσω",
+      "display": "herido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Αἰγύπτιος",
+      "display": "Egipcio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:7",
+      "reason": "occurs near Λώτ, δίκαιος, ἄθεσμος"
+    },
+    {
+      "ref": "Acts 7:24",
+      "reason": "occurs near ἀμύνομαι, ἐκδίκησις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

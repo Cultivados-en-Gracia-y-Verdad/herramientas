@@ -1,0 +1,450 @@
+{
+  "lemma": "ἐκτείνω",
+  "language": "greek",
+  "total_occurrences": 16,
+  "forms": [
+    {
+      "form": "ἐκτείνας",
+      "count": 6
+    },
+    {
+      "form": "Ἔκτεινον",
+      "count": 2
+    },
+    {
+      "form": "ἐξέτεινεν,",
+      "count": 2
+    },
+    {
+      "form": "ἐκτείνειν",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐκτείνας",
+      "count": 1
+    },
+    {
+      "form": "ἐκτείνειν,",
+      "count": 1
+    },
+    {
+      "form": "ἐκτενεῖς",
+      "count": 1
+    },
+    {
+      "form": "ἐξετείνατε",
+      "count": 1
+    },
+    {
+      "form": "Ἔκτεινόν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "participle": 7,
+      "indicative": 4,
+      "imperative": 3
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 13,
+      "future": 1
+    },
+    "voices": {
+      "active": 16
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 4:30",
+      "form": "ἐκτείνειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 4,
+      "verse": 30,
+      "left_context": "ἐν τῷ τὴν χεῖρά ⸀σου",
+      "right_context": "σε εἰς ἴασιν καὶ σημεῖα καὶ"
+    },
+    {
+      "ref": "Acts 26:1",
+      "form": "⸂ἐκτείνας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 1,
+      "left_context": "⸀ὑπὲρ σεαυτοῦ λέγειν. τότε ὁ Παῦλος",
+      "right_context": "τὴν χεῖρα ἀπελογεῖτο⸃·"
+    },
+    {
+      "ref": "Acts 27:30",
+      "form": "ἐκτείνειν,",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 30,
+      "left_context": "προφάσει ὡς ἐκ πρῴρης ⸂ἀγκύρας μελλόντων⸃",
+      "right_context": ""
+    },
+    {
+      "ref": "John 21:18",
+      "form": "ἐκτενεῖς",
+      "morph": "V-F-A-I-2S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 18,
+      "left_context": "περιεπάτεις ὅπου ἤθελες· ὅταν δὲ γηράσῃς,",
+      "right_context": "τὰς χεῖράς σου, καὶ ἄλλος ⸂σε"
+    },
+    {
+      "ref": "Luke 5:13",
+      "form": "ἐκτείνας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "καὶ",
+      "right_context": "τὴν χεῖρα ἥψατο αὐτοῦ ⸀εἰπών· Θέλω,"
+    },
+    {
+      "ref": "Luke 6:10",
+      "form": "Ἔκτεινον",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "καὶ περιβλεψάμενος πάντας αὐτοὺς εἶπεν αὐτῷ·",
+      "right_context": "τὴν χεῖρά σου· ὁ δὲ ἐποίησεν,"
+    },
+    {
+      "ref": "Luke 22:53",
+      "form": "ἐξετείνατε",
+      "morph": "V-A-A-I-2P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 53,
+      "left_context": "μεθ’ ὑμῶν ἐν τῷ ἱερῷ οὐκ",
+      "right_context": "τὰς χεῖρας ἐπ’ ἐμέ· ἀλλ’ αὕτη"
+    },
+    {
+      "ref": "Mark 1:41",
+      "form": "ἐκτείνας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 41,
+      "left_context": "⸀καὶ ⸀ὀργισθεὶς",
+      "right_context": "τὴν χεῖρα ⸂αὐτοῦ ἥψατο⸃ καὶ λέγει"
+    },
+    {
+      "ref": "Mark 3:5",
+      "form": "Ἔκτεινον",
+      "morph": "V-A-A-D-2S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "τῆς καρδίας αὐτῶν, λέγει τῷ ἀνθρώπῳ·",
+      "right_context": "τὴν ⸀χεῖρα· καὶ ἐξέτεινεν, καὶ ἀπεκατεστάθη"
+    },
+    {
+      "ref": "Mark 3:5",
+      "form": "ἐξέτεινεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "τῷ ἀνθρώπῳ· Ἔκτεινον τὴν ⸀χεῖρα· καὶ",
+      "right_context": "καὶ ἀπεκατεστάθη ἡ χεὶρ ⸀αὐτοῦ."
+    },
+    {
+      "ref": "Matthew 8:3",
+      "form": "ἐκτείνας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 3,
+      "left_context": "καὶ",
+      "right_context": "τὴν χεῖρα ἥψατο ⸀αὐτοῦ λέγων· Θέλω,"
+    },
+    {
+      "ref": "Matthew 12:13",
+      "form": "Ἔκτεινόν",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "τότε λέγει τῷ ἀνθρώπῳ·",
+      "right_context": "⸂σου τὴν χεῖρα⸃· καὶ ἐξέτεινεν, καὶ"
+    },
+    {
+      "ref": "Matthew 12:13",
+      "form": "ἐξέτεινεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "ἀνθρώπῳ· Ἔκτεινόν ⸂σου τὴν χεῖρα⸃· καὶ",
+      "right_context": "καὶ ἀπεκατεστάθη ὑγιὴς ὡς ἡ ἄλλη."
+    },
+    {
+      "ref": "Matthew 12:49",
+      "form": "ἐκτείνας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 49,
+      "left_context": "καὶ",
+      "right_context": "τὴν χεῖρα αὐτοῦ ἐπὶ τοὺς μαθητὰς"
+    },
+    {
+      "ref": "Matthew 14:31",
+      "form": "ἐκτείνας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 31,
+      "left_context": "εὐθέως δὲ ὁ Ἰησοῦς",
+      "right_context": "τὴν χεῖρα ἐπελάβετο αὐτοῦ καὶ λέγει"
+    },
+    {
+      "ref": "Matthew 26:51",
+      "form": "ἐκτείνας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 51,
+      "left_context": "καὶ ἰδοὺ εἷς τῶν μετὰ Ἰησοῦ",
+      "right_context": "τὴν χεῖρα ἀπέσπασεν τὴν μάχαιραν αὐτοῦ"
+    }
+  ],
+  "books": {
+    "Matthew": 6,
+    "Acts": 3,
+    "Luke": 3,
+    "Mark": 3,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 16,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτείνω",
+      "display": "extendió",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπτω",
+      "display": "tocó",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκαθίστημι",
+      "display": "fue restaurado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἴασις",
+      "display": "sanidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σημεῖον",
+      "display": "señales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σεαυτοῦ",
+      "display": "de·ti·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπολογέομαι",
+      "display": "defenderse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῷρα",
+      "display": "de·proa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγκυρα",
+      "display": "anclas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γηράσκω",
+      "display": "envejecas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιβλέπομαι",
+      "display": "mirar·alrededor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀργίζομαι",
+      "display": "enojarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "de·corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑγιής",
+      "display": "sana",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 6:10",
+      "form": "Ἔκτεινον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "καὶ περιβλεψάμενος πάντας αὐτοὺς εἶπεν αὐτῷ· Ἔκτεινον τὴν χεῖρά σου· ὁ δὲ ἐποίησεν, καὶ ἀπεκατεστάθη"
+    },
+    {
+      "ref": "Mark 3:5",
+      "form": "Ἔκτεινον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "τῇ πωρώσει τῆς καρδίας αὐτῶν, λέγει τῷ ἀνθρώπῳ· Ἔκτεινον τὴν ⸀χεῖρα· καὶ ἐξέτεινεν, καὶ ἀπεκατεστάθη ἡ χεὶρ"
+    },
+    {
+      "ref": "Matthew 12:13",
+      "form": "Ἔκτεινόν",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "τότε λέγει τῷ ἀνθρώπῳ· Ἔκτεινόν ⸂σου τὴν χεῖρα⸃· καὶ ἐξέτεινεν, καὶ ἀπεκατεστάθη ὑγιὴς"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 22:53",
+      "negator": "οὐκ",
+      "clause_text": "ὄντος μου μεθ’ ὑμῶν ἐν τῷ ἱερῷ οὐκ ἐξετείνατε τὰς χεῖρας ἐπ’ ἐμέ· ἀλλ’ αὕτη ⸂ἐστὶν ὑμῶν⸃"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 12:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 6:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 3:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 12:49",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 14:31",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 26:51",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 8:3",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Acts 26:1",
+      "reason": "occurs near τότε, χείρ, ἐκτείνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

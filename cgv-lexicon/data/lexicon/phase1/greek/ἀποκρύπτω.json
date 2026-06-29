@@ -1,0 +1,182 @@
+{
+  "lemma": "ἀποκρύπτω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀποκεκρυμμένην,",
+      "count": 1
+    },
+    {
+      "form": "ἀποκεκρυμμένον",
+      "count": 1
+    },
+    {
+      "form": "ἀποκεκρυμμένου",
+      "count": 1
+    },
+    {
+      "form": "ἀπέκρυψας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 3,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 2:7",
+      "form": "ἀποκεκρυμμένην,",
+      "morph": "V-X-P-P",
+      "book": "1 Corinthians",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "λαλοῦμεν ⸂θεοῦ σοφίαν⸃ ἐν μυστηρίῳ, τὴν",
+      "right_context": "ἣν προώρισεν ὁ θεὸς πρὸ τῶν"
+    },
+    {
+      "ref": "Colossians 1:26",
+      "form": "ἀποκεκρυμμένον",
+      "morph": "V-X-P-P",
+      "book": "Colossians",
+      "chapter": 1,
+      "verse": 26,
+      "left_context": "τὸ μυστήριον τὸ",
+      "right_context": "ἀπὸ τῶν αἰώνων καὶ ἀπὸ τῶν"
+    },
+    {
+      "ref": "Ephesians 3:9",
+      "form": "ἀποκεκρυμμένου",
+      "morph": "V-X-P-P",
+      "book": "Ephesians",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "τίς ἡ οἰκονομία τοῦ μυστηρίου τοῦ",
+      "right_context": "ἀπὸ τῶν αἰώνων ἐν τῷ θεῷ"
+    },
+    {
+      "ref": "Luke 10:21",
+      "form": "ἀπέκρυψας",
+      "morph": "V-A-A-I-2S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 21,
+      "left_context": "τοῦ οὐρανοῦ καὶ τῆς γῆς, ὅτι",
+      "right_context": "ταῦτα ἀπὸ σοφῶν καὶ συνετῶν, καὶ"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Colossians": 1,
+    "Ephesians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μυστήριον",
+      "display": "misterio",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "de·siglos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σοφία",
+      "display": "sabiduría",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προορίζω",
+      "display": "predestinó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκονομία",
+      "display": "administración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σοφός",
+      "display": "de·sabios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνετός",
+      "display": "de·entendidos,",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 2:7",
+      "reason": "occurs near θεός, μυστήριον, προορίζω"
+    },
+    {
+      "ref": "Colossians 1:26",
+      "reason": "occurs near αἰών, μυστήριον"
+    },
+    {
+      "ref": "Ephesians 3:9",
+      "reason": "occurs near αἰών, μυστήριον"
+    },
+    {
+      "ref": "Luke 10:21",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

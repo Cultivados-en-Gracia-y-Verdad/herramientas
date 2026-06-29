@@ -1,0 +1,330 @@
+{
+  "lemma": "καλύπτω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "κεκαλυμμένον",
+      "count": 2
+    },
+    {
+      "form": "⸀καλύπτει",
+      "count": 1
+    },
+    {
+      "form": "κεκαλυμμένον,",
+      "count": 1
+    },
+    {
+      "form": "καλύπτει",
+      "count": 1
+    },
+    {
+      "form": "Καλύψατε",
+      "count": 1
+    },
+    {
+      "form": "καλύπτεσθαι",
+      "count": 1
+    },
+    {
+      "form": "καλύψει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 3,
+      "imperative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 3,
+      "perfect": 3,
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 4,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 4:8",
+      "form": "⸀καλύπτει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "ἑαυτοὺς ἀγάπην ἐκτενῆ ἔχοντες, ὅτι ἀγάπη",
+      "right_context": "πλῆθος ἁμαρτιῶν·"
+    },
+    {
+      "ref": "2 Corinthians 4:3",
+      "form": "κεκαλυμμένον",
+      "morph": "V-X-P-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "εἰ δὲ καὶ ἔστιν",
+      "right_context": "τὸ εὐαγγέλιον ἡμῶν, ἐν τοῖς ἀπολλυμένοις"
+    },
+    {
+      "ref": "2 Corinthians 4:3",
+      "form": "κεκαλυμμένον,",
+      "morph": "V-X-P-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "εὐαγγέλιον ἡμῶν, ἐν τοῖς ἀπολλυμένοις ἐστὶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 8:16",
+      "form": "καλύπτει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 16,
+      "left_context": "Οὐδεὶς δὲ λύχνον ἅψας",
+      "right_context": "αὐτὸν σκεύει ἢ ὑποκάτω κλίνης τίθησιν,"
+    },
+    {
+      "ref": "Luke 23:30",
+      "form": "Καλύψατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 30,
+      "left_context": "Πέσετε ἐφ’ ἡμᾶς, καὶ τοῖς βουνοῖς·",
+      "right_context": "ἡμᾶς·"
+    },
+    {
+      "ref": "Matthew 8:24",
+      "form": "καλύπτεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 24,
+      "left_context": "ἐν τῇ θαλάσσῃ, ὥστε τὸ πλοῖον",
+      "right_context": "ὑπὸ τῶν κυμάτων, αὐτὸς δὲ ἐκάθευδεν."
+    },
+    {
+      "ref": "Matthew 10:26",
+      "form": "κεκαλυμμένον",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 26,
+      "left_context": "οὖν φοβηθῆτε αὐτούς· οὐδὲν γάρ ἐστιν",
+      "right_context": "ὃ οὐκ ἀποκαλυφθήσεται, καὶ κρυπτὸν ὃ"
+    },
+    {
+      "ref": "James 5:20",
+      "form": "καλύψει",
+      "morph": "V-F-A-I-3S",
+      "book": "James",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "σώσει ψυχὴν ⸀αὐτοῦ ἐκ θανάτου καὶ",
+      "right_context": "πλῆθος ἁμαρτιῶν."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "Luke": 2,
+    "Matthew": 2,
+    "1 Peter": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλῆθος",
+      "display": "multitud",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτενής",
+      "display": "ferviente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύχνος",
+      "display": "lámpara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπτω",
+      "display": "tocado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasija",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποκάτω",
+      "display": "debajo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλίνη",
+      "display": "de·lecho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βουνός",
+      "display": "colinas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κῦμα",
+      "display": "de·olas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκαλύπτω",
+      "display": "será revelado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρυπτός",
+      "display": "secreto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 23:30",
+      "form": "Καλύψατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "τοῖς ὄρεσιν· Πέσετε ἐφ’ ἡμᾶς, καὶ τοῖς βουνοῖς· Καλύψατε ἡμᾶς·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 10:26",
+      "negator": "οὐκ",
+      "clause_text": "Μὴ οὖν φοβηθῆτε αὐτούς· οὐδὲν γάρ ἐστιν κεκαλυμμένον ὃ οὐκ ἀποκαλυφθήσεται, καὶ κρυπτὸν ὃ οὐ γνωσθήσεται."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 23:30",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 4:3",
+      "reason": "occurs near εὐαγγέλιον"
+    },
+    {
+      "ref": "Luke 8:16",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 10:26",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 8:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 4:8",
+      "reason": "occurs near πλῆθος, ἀγάπη, ἁμαρτία"
+    },
+    {
+      "ref": "James 5:20",
+      "reason": "occurs near πλῆθος, ἁμαρτία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

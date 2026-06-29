@@ -1,0 +1,117 @@
+{
+  "lemma": "διαχειρίζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διεχειρίσασθε",
+      "count": 1
+    },
+    {
+      "form": "διαχειρίσασθαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:30",
+      "form": "διεχειρίσασθε",
+      "morph": "V-A-M-I-2P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 30,
+      "left_context": "πατέρων ἡμῶν ἤγειρεν Ἰησοῦν, ὃν ὑμεῖς",
+      "right_context": "κρεμάσαντες ἐπὶ ξύλου·"
+    },
+    {
+      "ref": "Acts 26:21",
+      "form": "διαχειρίσασθαι.",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 21,
+      "left_context": "Ἰουδαῖοι⸃ ⸀συλλαβόμενοι ἐν τῷ ἱερῷ ἐπειρῶντο",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρεμάννυμι",
+      "display": "colgados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξύλον",
+      "display": "de·madero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συλλαμβάνω",
+      "display": "prendidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειράω",
+      "display": "intentaban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:21",
+      "reason": "occurs near συλλαμβάνω"
+    },
+    {
+      "ref": "Acts 5:30",
+      "reason": "occurs near κρεμάννυμι, ξύλον, ἐγείρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

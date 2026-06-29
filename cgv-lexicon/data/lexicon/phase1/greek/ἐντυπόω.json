@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐντυπόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐντετυπωμένη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 3:7",
+      "form": "⸀ἐντετυπωμένη",
+      "morph": "V-X-P-P",
+      "book": "2 Corinthians",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "ἡ διακονία τοῦ θανάτου ἐν ⸀γράμμασιν",
+      "right_context": "λίθοις ἐγενήθη ἐν δόξῃ, ὥστε μὴ"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διακονία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράμμα",
+      "display": "letras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 3:7",
+      "reason": "occurs near γράμμα, διακονία, δόξα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,104 @@
+{
+  "lemma": "ὀχλέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὀχλουμένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:16",
+      "form": "ὀχλουμένους",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "πέριξ ⸀πόλεων Ἰερουσαλήμ, φέροντες ἀσθενεῖς καὶ",
+      "right_context": "ὑπὸ πνευμάτων ἀκαθάρτων, οἵτινες ἐθεραπεύοντο ἅπαντες."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πόλις",
+      "display": "de·ciudades",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "de·Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "llevando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενής",
+      "display": "débiles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκάθαρτος",
+      "display": "de·inmundos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεραπεύω",
+      "display": "eran sanado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 5:16",
+      "reason": "occurs near πνεῦμα, πόλις, φέρω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

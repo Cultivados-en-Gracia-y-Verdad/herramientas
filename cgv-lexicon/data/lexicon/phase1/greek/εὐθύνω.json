@@ -1,0 +1,138 @@
+{
+  "lemma": "εὐθύνω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "Εὐθύνατε",
+      "count": 1
+    },
+    {
+      "form": "εὐθύνοντος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "John 1:23",
+      "form": "Εὐθύνατε",
+      "morph": "V-A-A-D-2P",
+      "book": "John",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "Ἐγὼ φωνὴ βοῶντος ἐν τῇ ἐρήμῳ·",
+      "right_context": "τὴν ὁδὸν κυρίου, καθὼς εἶπεν Ἠσαΐας"
+    },
+    {
+      "ref": "James 3:4",
+      "form": "εὐθύνοντος",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "ἐλαχίστου πηδαλίου ὅπου ⸂ἡ ὁρμὴ τοῦ",
+      "right_context": "βούλεται⸃·"
+    }
+  ],
+  "books": {
+    "John": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βοάω",
+      "display": "clamando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρημος",
+      "display": "desierta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πηδάλιον",
+      "display": "de·timón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁρμή",
+      "display": "impulso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "quiere",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 1:23",
+      "form": "Εὐθύνατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἔφη· Ἐγὼ φωνὴ βοῶντος ἐν τῇ ἐρήμῳ· Εὐθύνατε τὴν ὁδὸν κυρίου, καθὼς εἶπεν Ἠσαΐας ὁ προφήτης."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 1:23",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 3:4",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

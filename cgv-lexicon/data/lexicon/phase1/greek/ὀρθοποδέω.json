@@ -1,0 +1,86 @@
+{
+  "lemma": "ὀρθοποδέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὀρθοποδοῦσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 2:14",
+      "form": "ὀρθοποδοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "ἀλλ’ ὅτε εἶδον ὅτι οὐκ",
+      "right_context": "πρὸς τὴν ἀλήθειαν τοῦ εὐαγγελίου, εἶπον"
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅτε",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vi",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλήθεια",
+      "display": "verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "de·evangelio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Galatians 2:14",
+      "negator": "οὐκ",
+      "clause_text": "ἀλλ’ ὅτε εἶδον ὅτι οὐκ ὀρθοποδοῦσιν πρὸς τὴν ἀλήθειαν τοῦ εὐαγγελίου, εἶπον τῷ ⸀Κηφᾷ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 2:14",
+      "reason": "occurs near εὐαγγέλιον, ἀλήθεια, ὁράω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "σύμφημι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "σύμφημι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 7:16",
+      "form": "σύμφημι",
+      "morph": "V-P-A-I-1S",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 16,
+      "left_context": "δὲ ὃ οὐ θέλω τοῦτο ποιῶ,",
+      "right_context": "τῷ νόμῳ ὅτι καλός."
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θέλω",
+      "display": "quiero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 7:16",
+      "negator": "οὐ",
+      "clause_text": "εἰ δὲ ὃ οὐ θέλω τοῦτο ποιῶ, σύμφημι τῷ νόμῳ ὅτι καλός."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 7:16",
+      "reason": "occurs near θέλω, καλός, νόμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,130 @@
+{
+  "lemma": "ἔοικα",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἔοικεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "perfect": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "James 1:6",
+      "form": "ἔοικεν",
+      "morph": "V-X-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "πίστει, μηδὲν διακρινόμενος, ὁ γὰρ διακρινόμενος",
+      "right_context": "κλύδωνι θαλάσσης ἀνεμιζομένῳ καὶ ῥιπιζομένῳ·"
+    },
+    {
+      "ref": "James 1:23",
+      "form": "ἔοικεν",
+      "morph": "V-X-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "λόγου ἐστὶν καὶ οὐ ποιητής, οὗτος",
+      "right_context": "ἀνδρὶ κατανοοῦντι τὸ πρόσωπον τῆς γενέσεως"
+    }
+  ],
+  "books": {
+    "James": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διακρίνω",
+      "display": "discerniendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλύδων",
+      "display": "oleaje",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "de·mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνεμίζομαι",
+      "display": "ser·agitado·por·el·viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥιπίζομαι",
+      "display": "ser·empujado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποιητής",
+      "display": "poeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατανοέω",
+      "display": "considerando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "rostro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "James 1:23",
+      "negator": "οὐ",
+      "clause_text": "τις ἀκροατὴς λόγου ἐστὶν καὶ οὐ ποιητής, οὗτος ἔοικεν ἀνδρὶ κατανοοῦντι τὸ πρόσωπον τῆς γενέσεως αὐτοῦ ἐν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 1:23",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "James 1:6",
+      "reason": "occurs near διακρίνω, θάλασσα, κλύδων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

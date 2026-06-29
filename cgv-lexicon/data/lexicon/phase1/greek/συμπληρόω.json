@@ -1,0 +1,127 @@
+{
+  "lemma": "συμπληρόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συμπληροῦσθαι",
+      "count": 2
+    },
+    {
+      "form": "συνεπληροῦντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 2:1",
+      "form": "συμπληροῦσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "Καὶ ἐν τῷ",
+      "right_context": "τὴν ἡμέραν τῆς πεντηκοστῆς ἦσαν ⸂πάντες"
+    },
+    {
+      "ref": "Luke 8:23",
+      "form": "συνεπληροῦντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "λαῖλαψ ἀνέμου εἰς τὴν λίμνην, καὶ",
+      "right_context": "καὶ ἐκινδύνευον."
+    },
+    {
+      "ref": "Luke 9:51",
+      "form": "συμπληροῦσθαι",
+      "morph": "V-P-P-N",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 51,
+      "left_context": "Ἐγένετο δὲ ἐν τῷ",
+      "right_context": "τὰς ἡμέρας τῆς ἀναλήμψεως αὐτοῦ καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πεντηκοστή",
+      "display": "de·Pentecostés",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίμνη",
+      "display": "lago",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κινδυνεύω",
+      "display": "peligro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάλημψις",
+      "display": "de·ascensión",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:23",
+      "reason": "occurs near κινδυνεύω, λίμνη, ἄνεμος"
+    },
+    {
+      "ref": "Luke 9:51",
+      "reason": "occurs near ἡμέρα"
+    },
+    {
+      "ref": "Acts 2:1",
+      "reason": "occurs near πεντηκοστή, ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

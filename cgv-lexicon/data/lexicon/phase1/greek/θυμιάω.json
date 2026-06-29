@@ -1,0 +1,86 @@
+{
+  "lemma": "θυμιάω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "θυμιᾶσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:9",
+      "form": "θυμιᾶσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "τὸ ἔθος τῆς ἱερατείας ἔλαχε τοῦ",
+      "right_context": "εἰσελθὼν εἰς τὸν ναὸν τοῦ κυρίου,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔθος",
+      "display": "costumbre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερατεία",
+      "display": "de·sacerdocio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαγχάνω",
+      "display": "echar·suertes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναός",
+      "display": "templo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 1:9",
+      "reason": "occurs near εἰσέρχομαι, λαγχάνω, ναός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

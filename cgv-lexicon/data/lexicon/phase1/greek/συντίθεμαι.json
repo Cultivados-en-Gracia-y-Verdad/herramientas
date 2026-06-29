@@ -1,0 +1,145 @@
+{
+  "lemma": "συντίθεμαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συνέθεντο",
+      "count": 2
+    },
+    {
+      "form": "συνετέθειντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "pluperfect": 1
+    },
+    "voices": {
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:20",
+      "form": "συνέθεντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 20,
+      "left_context": "εἶπεν δὲ ὅτι Οἱ Ἰουδαῖοι",
+      "right_context": "τοῦ ἐρωτῆσαί σε ὅπως αὔριον ⸂τὸν"
+    },
+    {
+      "ref": "John 9:22",
+      "form": "συνετέθειντο",
+      "morph": "V-Y-M-I-3P",
+      "book": "John",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "ὅτι ἐφοβοῦντο τοὺς Ἰουδαίους, ἤδη γὰρ",
+      "right_context": "οἱ Ἰουδαῖοι ἵνα ἐάν τις αὐτὸν"
+    },
+    {
+      "ref": "Luke 22:5",
+      "form": "συνέθεντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 5,
+      "left_context": "καὶ ἐχάρησαν καὶ",
+      "right_context": "αὐτῷ ἀργύριον δοῦναι."
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "John": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρωτάω",
+      "display": "preguntar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὔριον",
+      "display": "mañana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "fueron gozado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργύριον",
+      "display": "plata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 23:20",
+      "reason": "occurs near αὔριον, ἐρωτάω, Ἰουδαῖος"
+    },
+    {
+      "ref": "John 9:22",
+      "reason": "occurs near φοβέομαι, Ἰουδαῖος"
+    },
+    {
+      "ref": "Luke 22:5",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

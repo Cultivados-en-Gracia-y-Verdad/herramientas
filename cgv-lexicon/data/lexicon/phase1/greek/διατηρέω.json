@@ -1,0 +1,125 @@
+{
+  "lemma": "διατηρέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διατηροῦντες",
+      "count": 1
+    },
+    {
+      "form": "διετήρει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 15:29",
+      "form": "διατηροῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 29,
+      "left_context": "καὶ ⸀πνικτῶν καὶ πορνείας· ἐξ ὧν",
+      "right_context": "ἑαυτοὺς εὖ πράξετε. ἔρρωσθε."
+    },
+    {
+      "ref": "Luke 2:51",
+      "form": "διετήρει",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 51,
+      "left_context": "ὑποτασσόμενος αὐτοῖς. καὶ ἡ μήτηρ αὐτοῦ",
+      "right_context": "πάντα τὰ ῥήματα ⸀ταῦτα ἐν τῇ"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πνικτός",
+      "display": "de·estrangulados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορνεία",
+      "display": "de·fornicación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὖ",
+      "display": "bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πράσσω",
+      "display": "haréis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥώννυμαι",
+      "display": "fortalecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μήτηρ",
+      "display": "madre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dichos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 15:29",
+      "reason": "occurs near εὖ, πνικτός, πορνεία"
+    },
+    {
+      "ref": "Luke 2:51",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,113 @@
+{
+  "lemma": "πλάσσω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐπλάσθη,",
+      "count": 1
+    },
+    {
+      "form": "πλάσαντι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 2:13",
+      "form": "ἐπλάσθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "1 Timothy",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "Ἀδὰμ γὰρ πρῶτος",
+      "right_context": "εἶτα Εὕα·"
+    },
+    {
+      "ref": "Romans 9:20",
+      "form": "πλάσαντι",
+      "morph": "V-A-A-P",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 20,
+      "left_context": "θεῷ; μὴ ἐρεῖ τὸ πλάσμα τῷ",
+      "right_context": "Τί με ἐποίησας οὕτως;"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἀδάμ",
+      "display": "Adán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἶτα",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Εὕα",
+      "display": "Eva",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλάσμα",
+      "display": "vasija",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 2:13",
+      "reason": "occurs near Εὕα, εἶτα, πρῶτος"
+    },
+    {
+      "ref": "Romans 9:20",
+      "reason": "occurs near πλάσμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

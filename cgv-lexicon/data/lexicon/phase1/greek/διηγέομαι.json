@@ -1,0 +1,337 @@
+{
+  "lemma": "διηγέομαι",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "διηγήσατο",
+      "count": 2
+    },
+    {
+      "form": "διηγούμενον",
+      "count": 1
+    },
+    {
+      "form": "διηγήσεται;",
+      "count": 1
+    },
+    {
+      "form": "διηγοῦ",
+      "count": 1
+    },
+    {
+      "form": "διηγήσαντο",
+      "count": 1
+    },
+    {
+      "form": "διηγήσαντο⸃",
+      "count": 1
+    },
+    {
+      "form": "διηγήσωνται⸃,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 5,
+      "imperative": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "future": 1,
+      "aorist": 5
+    },
+    "voices": {
+      "middle": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:32",
+      "form": "διηγούμενον",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 32,
+      "left_context": "τί ἔτι λέγω; ἐπιλείψει ⸂με γὰρ⸃",
+      "right_context": "ὁ χρόνος περὶ Γεδεών, Βαράκ, ⸀Σαμψών,"
+    },
+    {
+      "ref": "Acts 8:33",
+      "form": "διηγήσεται;",
+      "morph": "V-F-M-I-3S",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 33,
+      "left_context": "αὐτοῦ ἤρθη· ⸀τὴν γενεὰν αὐτοῦ τίς",
+      "right_context": "ὅτι αἴρεται ἀπὸ τῆς γῆς ἡ"
+    },
+    {
+      "ref": "Acts 9:27",
+      "form": "διηγήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 27,
+      "left_context": "αὐτὸν ἤγαγεν πρὸς τοὺς ἀποστόλους, καὶ",
+      "right_context": "αὐτοῖς πῶς ἐν τῇ ὁδῷ εἶδεν"
+    },
+    {
+      "ref": "Acts 12:17",
+      "form": "διηγήσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 17,
+      "left_context": "κατασείσας δὲ αὐτοῖς τῇ χειρὶ σιγᾶν",
+      "right_context": "αὐτοῖς πῶς ὁ κύριος αὐτὸν ἐξήγαγεν"
+    },
+    {
+      "ref": "Luke 8:39",
+      "form": "διηγοῦ",
+      "morph": "V-P-M-D-2S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 39,
+      "left_context": "Ὑπόστρεφε εἰς τὸν οἶκόν σου, καὶ",
+      "right_context": "ὅσα ⸂σοι ἐποίησεν⸃ ὁ θεός. καὶ"
+    },
+    {
+      "ref": "Luke 9:10",
+      "form": "διηγήσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "Καὶ ὑποστρέψαντες οἱ ἀπόστολοι",
+      "right_context": "αὐτῷ ὅσα ἐποίησαν. καὶ παραλαβὼν αὐτοὺς"
+    },
+    {
+      "ref": "Mark 5:16",
+      "form": "διηγήσαντο⸃",
+      "morph": "V-A-M-I-3P",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "⸂καὶ",
+      "right_context": "αὐτοῖς οἱ ἰδόντες πῶς ἐγένετο τῷ"
+    },
+    {
+      "ref": "Mark 9:9",
+      "form": "διηγήσωνται⸃,",
+      "morph": "V-A-M-S-3P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 9,
+      "left_context": "διεστείλατο αὐτοῖς ἵνα μηδενὶ ⸂ἃ εἶδον",
+      "right_context": "εἰ μὴ ὅταν ὁ υἱὸς τοῦ"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Luke": 2,
+    "Mark": 2,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "αἴρω",
+      "display": "fue levantado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "apóstoles",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιλείπω",
+      "display": "faltará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γεδεών",
+      "display": "de·Gedeón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαράκ",
+      "display": "de·Barac",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γενεά",
+      "display": "generación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγω",
+      "display": "llevó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σιγάω",
+      "display": "callar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑποστρέφω",
+      "display": "vueltos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 8:39",
+      "form": "διηγοῦ",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "Ὑπόστρεφε εἰς τὸν οἶκόν σου, καὶ διηγοῦ ὅσα ⸂σοι ἐποίησεν⸃ ὁ θεός. καὶ ἀπῆλθεν καθ’"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 9:9",
+      "negator": "μὴ",
+      "clause_text": "τοῦ ὄρους διεστείλατο αὐτοῖς ἵνα μηδενὶ ⸂ἃ εἶδον διηγήσωνται⸃, εἰ μὴ ὅταν ὁ υἱὸς τοῦ ἀνθρώπου ἐκ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:39",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 12:17",
+      "reason": "occurs near πῶς"
+    },
+    {
+      "ref": "Acts 8:33",
+      "reason": "occurs near αἴρω"
+    },
+    {
+      "ref": "Acts 9:27",
+      "reason": "occurs near πῶς, ἀπόστολος"
+    },
+    {
+      "ref": "Luke 9:10",
+      "reason": "occurs near ἀπόστολος, ὅσος"
+    },
+    {
+      "ref": "Mark 5:16",
+      "reason": "occurs near πῶς, ὁράω"
+    },
+    {
+      "ref": "Mark 9:9",
+      "reason": "occurs near ὁράω"
+    },
+    {
+      "ref": "Hebrews 11:32",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

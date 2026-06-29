@@ -1,0 +1,95 @@
+{
+  "lemma": "ἀλήθω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀλήθουσαι",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 17:35",
+      "form": "ἀλήθουσαι",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 35,
+      "left_context": "⸂ἔσονται δύο⸃",
+      "right_context": "ἐπὶ τὸ αὐτό, ⸀ἡ μία παραλημφθήσεται"
+    },
+    {
+      "ref": "Matthew 24:41",
+      "form": "ἀλήθουσαι",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 41,
+      "left_context": "δύο",
+      "right_context": "ἐν τῷ ⸀μύλῳ, μία παραλαμβάνεται καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δύο",
+      "display": "dos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "una",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μύλος",
+      "display": "molino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλαμβάνω",
+      "display": "es tomado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 17:35",
+      "reason": "occurs near δύο, εἷς"
+    },
+    {
+      "ref": "Matthew 24:41",
+      "reason": "occurs near δύο, εἷς, μύλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

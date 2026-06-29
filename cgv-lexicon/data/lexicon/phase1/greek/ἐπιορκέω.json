@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐπιορκέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιορκήσεις,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 5:33",
+      "form": "ἐπιορκήσεις,",
+      "morph": "V-F-A-I-2S",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 33,
+      "left_context": "ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις· Οὐκ",
+      "right_context": "ἀποδώσεις δὲ τῷ κυρίῳ τοὺς ὅρκους"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀρχαῖος",
+      "display": "antiguos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδίδωμι",
+      "display": "devolverás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 5:33",
+      "negator": "Οὐκ",
+      "clause_text": "Πάλιν ἠκούσατε ὅτι ἐρρέθη τοῖς ἀρχαίοις· Οὐκ ἐπιορκήσεις, ἀποδώσεις δὲ τῷ κυρίῳ τοὺς ὅρκους σου."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 5:33",
+      "reason": "occurs near κύριος, ἀποδίδωμι, ἀρχαῖος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

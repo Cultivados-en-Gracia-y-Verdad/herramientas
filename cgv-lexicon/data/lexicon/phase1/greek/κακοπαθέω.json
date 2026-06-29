@@ -1,0 +1,156 @@
+{
+  "lemma": "κακοπαθέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "κακοπαθῶ",
+      "count": 1
+    },
+    {
+      "form": "κακοπάθησον,",
+      "count": 1
+    },
+    {
+      "form": "Κακοπαθεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:9",
+      "form": "κακοπαθῶ",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 9,
+      "left_context": "ἐν ᾧ",
+      "right_context": "μέχρι δεσμῶν ὡς κακοῦργος. ἀλλὰ ὁ"
+    },
+    {
+      "ref": "2 Timothy 4:5",
+      "form": "κακοπάθησον,",
+      "morph": "V-A-A-D-2S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 5,
+      "left_context": "σὺ δὲ νῆφε ἐν πᾶσιν,",
+      "right_context": "ἔργον ποίησον εὐαγγελιστοῦ, τὴν διακονίαν σου"
+    },
+    {
+      "ref": "James 5:13",
+      "form": "Κακοπαθεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "",
+      "right_context": "τις ἐν ὑμῖν; προσευχέσθω· εὐθυμεῖ τις;"
+    }
+  ],
+  "books": {
+    "2 Timothy": 2,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέχρι(ς)",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσμός",
+      "display": "de·ataduras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακοῦργος",
+      "display": "malhechor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νήφω",
+      "display": "vela",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγελιστής",
+      "display": "de·evangelista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "ora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθυμέω",
+      "display": "tener·buen·ánimo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Timothy 4:5",
+      "form": "κακοπάθησον,",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "σὺ δὲ νῆφε ἐν πᾶσιν, κακοπάθησον, ἔργον ποίησον εὐαγγελιστοῦ, τὴν διακονίαν σου πληροφόρησον."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 4:5",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 2:9",
+      "reason": "occurs near δεσμός, κακοῦργος, μέχρι(ς)"
+    },
+    {
+      "ref": "James 5:13",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

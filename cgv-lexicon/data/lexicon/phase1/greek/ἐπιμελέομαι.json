@@ -1,0 +1,150 @@
+{
+  "lemma": "ἐπιμελέομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπιμελήσεται;)",
+      "count": 1
+    },
+    {
+      "form": "ἐπεμελήθη",
+      "count": 1
+    },
+    {
+      "form": "Ἐπιμελήθητι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 3:5",
+      "form": "ἐπιμελήσεται;)",
+      "morph": "V-F-P-I-3S",
+      "book": "1 Timothy",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "προστῆναι οὐκ οἶδεν, πῶς ἐκκλησίας θεοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 10:34",
+      "form": "ἐπεμελήθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 34,
+      "left_context": "κτῆνος ἤγαγεν αὐτὸν εἰς πανδοχεῖον καὶ",
+      "right_context": "αὐτοῦ."
+    },
+    {
+      "ref": "Luke 10:35",
+      "form": "Ἐπιμελήθητι",
+      "morph": "V-A-P-D-2S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 35,
+      "left_context": "δηνάρια ἔδωκεν⸃ τῷ πανδοχεῖ καὶ ⸀εἶπεν·",
+      "right_context": "αὐτοῦ, καὶ ὅ τι ἂν προσδαπανήσῃς"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "1 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἶδα",
+      "display": "ha sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "de·iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγω",
+      "display": "llevó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πανδοχεῖον",
+      "display": "mesón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πανδοχεύς",
+      "display": "mesonero",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 10:35",
+      "form": "Ἐπιμελήθητι",
+      "morph": "V-A-P-D-2S",
+      "clause_text": "ἐκβαλὼν ⸂δύο δηνάρια ἔδωκεν⸃ τῷ πανδοχεῖ καὶ ⸀εἶπεν· Ἐπιμελήθητι αὐτοῦ, καὶ ὅ τι ἂν προσδαπανήσῃς ἐγὼ ἐν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:35",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 10:34",
+      "reason": "occurs near ἄγω"
+    },
+    {
+      "ref": "1 Timothy 3:5",
+      "reason": "occurs near θεός, οἶδα, πῶς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

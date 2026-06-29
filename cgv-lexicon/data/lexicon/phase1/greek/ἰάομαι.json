@@ -1,0 +1,590 @@
+{
+  "lemma": "ἰάομαι",
+  "language": "greek",
+  "total_occurrences": 26,
+  "forms": [
+    {
+      "form": "ἰάσατο",
+      "count": 4
+    },
+    {
+      "form": "ἰάθη",
+      "count": 3
+    },
+    {
+      "form": "ἰάσομαι",
+      "count": 2
+    },
+    {
+      "form": "ἰᾶσθαι",
+      "count": 2
+    },
+    {
+      "form": "ἰάθητε.",
+      "count": 1
+    },
+    {
+      "form": "ἰαθῇ",
+      "count": 1
+    },
+    {
+      "form": "ἰᾶταί",
+      "count": 1
+    },
+    {
+      "form": "ἰώμενος",
+      "count": 1
+    },
+    {
+      "form": "ἰάσηται",
+      "count": 1
+    },
+    {
+      "form": "ἰαθεὶς",
+      "count": 1
+    },
+    {
+      "form": "⸀ἰάσομαι",
+      "count": 1
+    },
+    {
+      "form": "ἰαθῆναι",
+      "count": 1
+    },
+    {
+      "form": "ἰᾶτο",
+      "count": 1
+    },
+    {
+      "form": "⸀ἰαθήτω",
+      "count": 1
+    },
+    {
+      "form": "ἰᾶτο.",
+      "count": 1
+    },
+    {
+      "form": "ἰάθη,",
+      "count": 1
+    },
+    {
+      "form": "ἴαται",
+      "count": 1
+    },
+    {
+      "form": "ἰαθήσεται",
+      "count": 1
+    },
+    {
+      "form": "ἰαθῆτε.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 17,
+      "subjunctive": 3,
+      "participle": 2,
+      "infinitive": 3,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 15,
+      "present": 4,
+      "future": 4,
+      "imperfect": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 12,
+      "middle": 14
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:24",
+      "form": "ἰάθητε.",
+      "morph": "V-A-P-I-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 24,
+      "left_context": "τῇ δικαιοσύνῃ ζήσωμεν· οὗ τῷ ⸀μώλωπι",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 12:13",
+      "form": "ἰαθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "ὑμῶν, ἵνα μὴ τὸ χωλὸν ἐκτραπῇ,",
+      "right_context": "δὲ μᾶλλον."
+    },
+    {
+      "ref": "Acts 9:34",
+      "form": "ἰᾶταί",
+      "morph": "V-P-M-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 34,
+      "left_context": "καὶ εἶπεν αὐτῷ ὁ Πέτρος· Αἰνέα,",
+      "right_context": "σε Ἰησοῦς ⸀Χριστός· ἀνάστηθι καὶ στρῶσον"
+    },
+    {
+      "ref": "Acts 10:38",
+      "form": "ἰώμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 38,
+      "left_context": "καὶ δυνάμει, ὃς διῆλθεν εὐεργετῶν καὶ",
+      "right_context": "πάντας τοὺς καταδυναστευομένους ὑπὸ τοῦ διαβόλου,"
+    },
+    {
+      "ref": "Acts 28:8",
+      "form": "ἰάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 8,
+      "left_context": "καὶ προσευξάμενος ἐπιθεὶς τὰς χεῖρας αὐτῷ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Acts 28:27",
+      "form": "ἰάσομαι",
+      "morph": "V-F-M-I-1S",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 27,
+      "left_context": "τῇ καρδίᾳ συνῶσιν καὶ ἐπιστρέψωσιν, καὶ",
+      "right_context": "αὐτούς."
+    },
+    {
+      "ref": "John 4:47",
+      "form": "ἰάσηται",
+      "morph": "V-A-M-S-3S",
+      "book": "John",
+      "chapter": 4,
+      "verse": 47,
+      "left_context": "αὐτὸν καὶ ⸀ἠρώτα ἵνα καταβῇ καὶ",
+      "right_context": "αὐτοῦ τὸν υἱόν, ἤμελλεν γὰρ ἀποθνῄσκειν."
+    },
+    {
+      "ref": "John 5:13",
+      "form": "ἰαθεὶς",
+      "morph": "V-A-P-P",
+      "book": "John",
+      "chapter": 5,
+      "verse": 13,
+      "left_context": "ὁ δὲ",
+      "right_context": "οὐκ ᾔδει τίς ἐστιν, ὁ γὰρ"
+    },
+    {
+      "ref": "John 12:40",
+      "form": "⸀ἰάσομαι",
+      "morph": "V-F-M-I-1S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 40,
+      "left_context": "νοήσωσιν τῇ καρδίᾳ καὶ ⸀στραφῶσιν, καὶ",
+      "right_context": "αὐτούς."
+    },
+    {
+      "ref": "Luke 5:17",
+      "form": "ἰᾶσθαι",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 17,
+      "left_context": "καὶ δύναμις κυρίου ἦν εἰς τὸ",
+      "right_context": "⸀αὐτόν."
+    },
+    {
+      "ref": "Luke 6:18",
+      "form": "ἰαθῆναι",
+      "morph": "V-A-P-N",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "οἳ ἦλθον ἀκοῦσαι αὐτοῦ καὶ",
+      "right_context": "ἀπὸ τῶν νόσων αὐτῶν· καὶ οἱ"
+    },
+    {
+      "ref": "Luke 6:19",
+      "form": "ἰᾶτο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 19,
+      "left_context": "ὅτι δύναμις παρ’ αὐτοῦ ἐξήρχετο καὶ",
+      "right_context": "πάντας."
+    },
+    {
+      "ref": "Luke 7:7",
+      "form": "⸀ἰαθήτω",
+      "morph": "V-A-P-D-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 7,
+      "left_context": "σὲ ἐλθεῖν· ἀλλὰ εἰπὲ λόγῳ, καὶ",
+      "right_context": "ὁ παῖς μου·"
+    },
+    {
+      "ref": "Luke 8:47",
+      "form": "ἰάθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 47,
+      "left_context": "ἐνώπιον παντὸς τοῦ λαοῦ καὶ ὡς",
+      "right_context": "παραχρῆμα."
+    },
+    {
+      "ref": "Luke 9:2",
+      "form": "ἰᾶσθαι",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 2,
+      "left_context": "κηρύσσειν τὴν βασιλείαν τοῦ θεοῦ καὶ",
+      "right_context": "⸂τοὺς ἀσθενεῖς⸃,"
+    },
+    {
+      "ref": "Luke 9:11",
+      "form": "ἰᾶτο.",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 11,
+      "left_context": "θεοῦ, καὶ τοὺς χρείαν ἔχοντας θεραπείας",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 9:42",
+      "form": "ἰάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 42,
+      "left_context": "Ἰησοῦς τῷ πνεύματι τῷ ἀκαθάρτῳ, καὶ",
+      "right_context": "τὸν παῖδα καὶ ἀπέδωκεν αὐτὸν τῷ"
+    },
+    {
+      "ref": "Luke 14:4",
+      "form": "ἰάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 4,
+      "left_context": "οἱ δὲ ἡσύχασαν. καὶ ἐπιλαβόμενος",
+      "right_context": "αὐτὸν καὶ ἀπέλυσεν."
+    },
+    {
+      "ref": "Luke 17:15",
+      "form": "ἰάθη,",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 15,
+      "left_context": "εἷς δὲ ἐξ αὐτῶν, ἰδὼν ὅτι",
+      "right_context": "ὑπέστρεψεν μετὰ φωνῆς μεγάλης δοξάζων τὸν"
+    },
+    {
+      "ref": "Luke 22:51",
+      "form": "ἰάσατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 51,
+      "left_context": "ἕως τούτου· καὶ ἁψάμενος τοῦ ⸀ὠτίου",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 5:29",
+      "form": "ἴαται",
+      "morph": "V-X-P-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 29,
+      "left_context": "αὐτῆς, καὶ ἔγνω τῷ σώματι ὅτι",
+      "right_context": "ἀπὸ τῆς μάστιγος."
+    },
+    {
+      "ref": "Matthew 8:8",
+      "form": "ἰαθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 8,
+      "left_context": "εἰσέλθῃς· ἀλλὰ μόνον εἰπὲ λόγῳ, καὶ",
+      "right_context": "ὁ παῖς μου·"
+    },
+    {
+      "ref": "Matthew 8:13",
+      "form": "ἰάθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "Ὕπαγε, ⸀ὡς ἐπίστευσας γενηθήτω σοι· καὶ",
+      "right_context": "ὁ ⸀παῖς ἐν τῇ ὥρᾳ ἐκείνῃ."
+    },
+    {
+      "ref": "Matthew 13:15",
+      "form": "ἰάσομαι",
+      "morph": "V-F-M-I-1S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 15,
+      "left_context": "τῇ καρδίᾳ συνῶσιν καὶ ἐπιστρέψωσιν, καὶ",
+      "right_context": "αὐτούς."
+    },
+    {
+      "ref": "Matthew 15:28",
+      "form": "ἰάθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 28,
+      "left_context": "πίστις· γενηθήτω σοι ὡς θέλεις. καὶ",
+      "right_context": "ἡ θυγάτηρ αὐτῆς ἀπὸ τῆς ὥρας"
+    },
+    {
+      "ref": "James 5:16",
+      "form": "ἰαθῆτε.",
+      "morph": "V-A-P-S-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "ἁμαρτίας⸃ καὶ ⸀εὔχεσθε ὑπὲρ ἀλλήλων, ὅπως",
+      "right_context": "πολὺ ἰσχύει δέησις δικαίου ἐνεργουμένη."
+    }
+  ],
+  "books": {
+    "Luke": 11,
+    "Acts": 4,
+    "Matthew": 4,
+    "John": 3,
+    "1 Peter": 1,
+    "Hebrews": 1,
+    "Mark": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παῖς",
+      "display": "siervo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "συνίημι",
+      "display": "entendan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιστρέφω",
+      "display": "volvan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vinieron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "vivamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μώλωψ",
+      "display": "herida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωλός",
+      "display": "cojo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτρέπομαι",
+      "display": "desviarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Αἰνέας",
+      "display": "Eneas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levanta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διέρχομαι",
+      "display": "pasó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐεργετέω",
+      "display": "hacer·bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταδυναστεύω",
+      "display": "oprimidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτίθημι",
+      "display": "puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρωτάω",
+      "display": "preguntaba",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 7:7",
+      "form": "⸀ἰαθήτω",
+      "morph": "V-A-P-D-3S",
+      "clause_text": "ἠξίωσα πρὸς σὲ ἐλθεῖν· ἀλλὰ εἰπὲ λόγῳ, καὶ ⸀ἰαθήτω ὁ παῖς μου·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 12:13",
+      "negator": "μὴ",
+      "clause_text": "τοῖς ποσὶν ὑμῶν, ἵνα μὴ τὸ χωλὸν ἐκτραπῇ, ἰαθῇ δὲ μᾶλλον."
+    },
+    {
+      "ref": "John 5:13",
+      "negator": "οὐκ",
+      "clause_text": "ὁ δὲ ἰαθεὶς οὐκ ᾔδει τίς ἐστιν, ὁ γὰρ Ἰησοῦς ἐξένευσεν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 7:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 14:4",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 17:15",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 22:51",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 5:17",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 6:18",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 6:19",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 8:47",
+      "reason": "frequent in Luke"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

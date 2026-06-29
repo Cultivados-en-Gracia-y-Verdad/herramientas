@@ -1,0 +1,206 @@
+{
+  "lemma": "κυκλόω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κυκλωθέντα",
+      "count": 1
+    },
+    {
+      "form": "κυκλωσάντων",
+      "count": 1
+    },
+    {
+      "form": "ἐκύκλωσαν",
+      "count": 1
+    },
+    {
+      "form": "κυκλουμένην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:30",
+      "form": "κυκλωθέντα",
+      "morph": "V-A-P-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 30,
+      "left_context": "πίστει τὰ τείχη Ἰεριχὼ ⸀ἔπεσαν",
+      "right_context": "ἐπὶ ἑπτὰ ἡμέρας."
+    },
+    {
+      "ref": "Acts 14:20",
+      "form": "κυκλωσάντων",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 14,
+      "verse": 20,
+      "left_context": "",
+      "right_context": "δὲ ⸂τῶν μαθητῶν αὐτὸν⸃ ἀναστὰς εἰσῆλθεν"
+    },
+    {
+      "ref": "John 10:24",
+      "form": "ἐκύκλωσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 10,
+      "verse": 24,
+      "left_context": "",
+      "right_context": "οὖν αὐτὸν οἱ Ἰουδαῖοι καὶ ἔλεγον"
+    },
+    {
+      "ref": "Luke 21:20",
+      "form": "κυκλουμένην",
+      "morph": "V-P-P-P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 20,
+      "left_context": "Ὅταν δὲ ἴδητε",
+      "right_context": "ὑπὸ ⸀στρατοπέδων Ἰερουσαλήμ, τότε γνῶτε ὅτι"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1,
+    "John": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεῖχος",
+      "display": "muros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰεριχώ",
+      "display": "de·Jericó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "cayeron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑπτά",
+      "display": "siete",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "de·discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "váis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατόπεδον",
+      "display": "de·campamentos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conoced",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 14:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 11:30",
+      "reason": "occurs near πίπτω, πίστις, τεῖχος"
+    },
+    {
+      "ref": "John 10:24",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 21:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

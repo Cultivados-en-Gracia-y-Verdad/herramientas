@@ -1,0 +1,186 @@
+{
+  "lemma": "ἑρμηνεύω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἑρμηνεύεται",
+      "count": 2
+    },
+    {
+      "form": "ἑρμηνευόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 7:2",
+      "form": "ἑρμηνευόμενος",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 2,
+      "left_context": "ἀπὸ πάντων ἐμέρισεν Ἀβραάμ, πρῶτον μὲν",
+      "right_context": "βασιλεὺς δικαιοσύνης ἔπειτα δὲ καὶ βασιλεὺς"
+    },
+    {
+      "ref": "John 1:42",
+      "form": "ἑρμηνεύεται",
+      "morph": "V-P-P-I-3S",
+      "book": "John",
+      "chapter": 1,
+      "verse": 42,
+      "left_context": "υἱὸς ⸀Ἰωάννου, σὺ κληθήσῃ Κηφᾶς (ὃ",
+      "right_context": "Πέτρος)."
+    },
+    {
+      "ref": "John 9:7",
+      "form": "ἑρμηνεύεται",
+      "morph": "V-P-P-I-3S",
+      "book": "John",
+      "chapter": 9,
+      "verse": 7,
+      "left_context": "εἰς τὴν κολυμβήθραν τοῦ Σιλωάμ (ὃ",
+      "right_context": "Ἀπεσταλμένος). ἀπῆλθεν οὖν καὶ ἐνίψατο, καὶ"
+    }
+  ],
+  "books": {
+    "John": 2,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μερίζω",
+      "display": "dividió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀβραάμ",
+      "display": "Abraham",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύς",
+      "display": "rey",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔπειτα",
+      "display": "después",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "de·Juan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "será llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κηφᾶς",
+      "display": "Cefas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολυμβήθρα",
+      "display": "estanque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σιλωάμ",
+      "display": "de·Siloé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νίπτω",
+      "display": "lavó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 1:42",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 9:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 7:2",
+      "reason": "occurs near βασιλεύς, μέν, μερίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

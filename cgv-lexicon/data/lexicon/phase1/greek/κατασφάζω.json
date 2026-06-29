@@ -1,0 +1,81 @@
+{
+  "lemma": "κατασφάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατασφάξατε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 19:27",
+      "form": "κατασφάξατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 27,
+      "left_context": "βασιλεῦσαι ἐπ’ αὐτοὺς ἀγάγετε ὧδε καὶ",
+      "right_context": "⸀αὐτοὺς ἔμπροσθέν μου."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄγω",
+      "display": "llevad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὧδε",
+      "display": "aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμπροσθεν",
+      "display": "delante·de",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 19:27",
+      "form": "κατασφάξατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "θελήσαντάς με βασιλεῦσαι ἐπ’ αὐτοὺς ἀγάγετε ὧδε καὶ κατασφάξατε ⸀αὐτοὺς ἔμπροσθέν μου."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 19:27",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,215 @@
+{
+  "lemma": "ψηλαφάω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐψηλάφησαν,",
+      "count": 1
+    },
+    {
+      "form": "⸀ψηλαφωμένῳ",
+      "count": 1
+    },
+    {
+      "form": "ψηλαφήσειαν",
+      "count": 1
+    },
+    {
+      "form": "ψηλαφήσατέ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1,
+      "optative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1
+    },
+    "voices": {
+      "active": 3,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 1:1",
+      "form": "ἐψηλάφησαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "1 John",
+      "chapter": 1,
+      "verse": 1,
+      "left_context": "ὃ ἐθεασάμεθα καὶ αἱ χεῖρες ἡμῶν",
+      "right_context": "περὶ τοῦ λόγου τῆς ζωῆς—"
+    },
+    {
+      "ref": "Hebrews 12:18",
+      "form": "⸀ψηλαφωμένῳ",
+      "morph": "V-P-P-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 18,
+      "left_context": "Οὐ γὰρ προσεληλύθατε",
+      "right_context": "καὶ κεκαυμένῳ πυρὶ καὶ γνόφῳ καὶ"
+    },
+    {
+      "ref": "Acts 17:27",
+      "form": "ψηλαφήσειαν",
+      "morph": "V-A-A-O-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 27,
+      "left_context": "ζητεῖν τὸν ⸀θεὸν εἰ ἄρα γε",
+      "right_context": "αὐτὸν καὶ εὕροιεν, καί γε οὐ"
+    },
+    {
+      "ref": "Luke 24:39",
+      "form": "ψηλαφήσατέ",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 39,
+      "left_context": "πόδας μου ὅτι ⸂ἐγώ εἰμι αὐτός⸃·",
+      "right_context": "με καὶ ἴδετε, ὅτι πνεῦμα σάρκα"
+    }
+  ],
+  "books": {
+    "1 John": 1,
+    "Hebrews": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γέ",
+      "display": "GE",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεάομαι",
+      "display": "contemplamos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "de·palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "de·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καίω",
+      "display": "quemado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνόφος",
+      "display": "oscuridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρα",
+      "display": "por·tanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ved",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 24:39",
+      "form": "ψηλαφήσατέ",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ τοὺς πόδας μου ὅτι ⸂ἐγώ εἰμι αὐτός⸃· ψηλαφήσατέ με καὶ ἴδετε, ὅτι πνεῦμα σάρκα καὶ ὀστέα"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 12:18",
+      "negator": "Οὐ",
+      "clause_text": "Οὐ γὰρ προσεληλύθατε ⸀ψηλαφωμένῳ καὶ κεκαυμένῳ πυρὶ καὶ γνόφῳ καὶ ⸀ζόφῳ καὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 24:39",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 John 1:1",
+      "reason": "occurs near ζωή, θεάομαι, λόγος"
+    },
+    {
+      "ref": "Acts 17:27",
+      "reason": "occurs near γέ"
+    },
+    {
+      "ref": "Hebrews 12:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

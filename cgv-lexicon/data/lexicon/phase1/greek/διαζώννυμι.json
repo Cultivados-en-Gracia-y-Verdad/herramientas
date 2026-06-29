@@ -1,0 +1,149 @@
+{
+  "lemma": "διαζώννυμι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "διέζωσεν",
+      "count": 1
+    },
+    {
+      "form": "διεζωσμένος.",
+      "count": 1
+    },
+    {
+      "form": "διεζώσατο,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "John 13:4",
+      "form": "διέζωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 13,
+      "verse": 4,
+      "left_context": "τίθησιν τὰ ἱμάτια καὶ λαβὼν λέντιον",
+      "right_context": "ἑαυτόν·"
+    },
+    {
+      "ref": "John 13:5",
+      "form": "διεζωσμένος.",
+      "morph": "V-X-M-P",
+      "book": "John",
+      "chapter": 13,
+      "verse": 5,
+      "left_context": "καὶ ἐκμάσσειν τῷ λεντίῳ ᾧ ἦν",
+      "right_context": ""
+    },
+    {
+      "ref": "John 21:7",
+      "form": "διεζώσατο,",
+      "morph": "V-A-M-I-3S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 7,
+      "left_context": "ὅτι ὁ κύριός ἐστιν, τὸν ἐπενδύτην",
+      "right_context": "ἦν γὰρ γυμνός, καὶ ἔβαλεν ἑαυτὸν"
+    }
+  ],
+  "books": {
+    "John": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λέντιον",
+      "display": "toalla",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκμάσσω",
+      "display": "secar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπενδύτης",
+      "display": "túnica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυμνός",
+      "display": "desnudo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 13:4",
+      "reason": "occurs near λέντιον, λαμβάνω, ἑαυτοῦ"
+    },
+    {
+      "ref": "John 13:5",
+      "reason": "occurs near λέντιον, ἐκμάσσω"
+    },
+    {
+      "ref": "John 21:7",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

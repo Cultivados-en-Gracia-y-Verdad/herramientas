@@ -1,0 +1,111 @@
+{
+  "lemma": "ἀνετάζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνετάζεσθαι",
+      "count": 1
+    },
+    {
+      "form": "ἀνετάζειν·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 22:24",
+      "form": "ἀνετάζεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 24,
+      "left_context": "αὐτὸν⸃ εἰς τὴν παρεμβολήν, ⸀εἴπας μάστιξιν",
+      "right_context": "αὐτὸν ἵνα ἐπιγνῷ δι’ ἣν αἰτίαν"
+    },
+    {
+      "ref": "Acts 22:29",
+      "form": "ἀνετάζειν·",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 29,
+      "left_context": "ἀπέστησαν ἀπ’ αὐτοῦ οἱ μέλλοντες αὐτὸν",
+      "right_context": "καὶ ὁ χιλίαρχος δὲ ἐφοβήθη ἐπιγνοὺς"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρεμβολή",
+      "display": "campamento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάστιξ",
+      "display": "azotes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιγινώσκω",
+      "display": "reconoca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιλίαρχος",
+      "display": "tribuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "fue temido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:24",
+      "reason": "occurs near μάστιξ, παρεμβολή, ἐπιγινώσκω"
+    },
+    {
+      "ref": "Acts 22:29",
+      "reason": "occurs near μέλλω, χιλίαρχος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

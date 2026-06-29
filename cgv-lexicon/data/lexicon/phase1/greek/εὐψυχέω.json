@@ -1,0 +1,80 @@
+{
+  "lemma": "εὐψυχέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εὐψυχῶ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 2:19",
+      "form": "εὐψυχῶ",
+      "morph": "V-P-A-S-1S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "Τιμόθεον ταχέως πέμψαι ὑμῖν, ἵνα κἀγὼ",
+      "right_context": "γνοὺς τὰ περὶ ὑμῶν."
+    }
+  ],
+  "books": {
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ταχέως",
+      "display": "rápidamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "enviar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 2:19",
+      "reason": "occurs near γινώσκω, κἀγώ, πέμπω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

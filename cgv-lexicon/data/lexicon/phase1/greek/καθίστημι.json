@@ -1,0 +1,496 @@
+{
+  "lemma": "καθίστημι",
+  "language": "greek",
+  "total_occurrences": 21,
+  "forms": [
+    {
+      "form": "κατέστησεν",
+      "count": 5
+    },
+    {
+      "form": "καταστήσει",
+      "count": 3
+    },
+    {
+      "form": "καθίστησιν",
+      "count": 2
+    },
+    {
+      "form": "καθίσταται",
+      "count": 2
+    },
+    {
+      "form": "καταστήσω·",
+      "count": 2
+    },
+    {
+      "form": "καθίσταται·",
+      "count": 1
+    },
+    {
+      "form": "⸀καταστήσομεν",
+      "count": 1
+    },
+    {
+      "form": "⸀καθιστάνοντες",
+      "count": 1
+    },
+    {
+      "form": "κατεστάθησαν",
+      "count": 1
+    },
+    {
+      "form": "κατασταθήσονται",
+      "count": 1
+    },
+    {
+      "form": "καθίσταται.",
+      "count": 1
+    },
+    {
+      "form": "καταστήσῃς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 19,
+      "participle": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 7,
+      "future": 7,
+      "aorist": 7
+    },
+    "voices": {
+      "active": 15,
+      "passive": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:8",
+      "form": "καθίστησιν",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "καὶ πλεονάζοντα οὐκ ἀργοὺς οὐδὲ ἀκάρπους",
+      "right_context": "εἰς τὴν τοῦ κυρίου ἡμῶν Ἰησοῦ"
+    },
+    {
+      "ref": "Hebrews 5:1",
+      "form": "καθίσταται",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 5,
+      "verse": 1,
+      "left_context": "ἀρχιερεὺς ἐξ ἀνθρώπων λαμβανόμενος ὑπὲρ ἀνθρώπων",
+      "right_context": "τὰ πρὸς τὸν θεόν, ἵνα προσφέρῃ"
+    },
+    {
+      "ref": "Hebrews 7:28",
+      "form": "καθίστησιν",
+      "morph": "V-P-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 28,
+      "left_context": "ὁ νόμος γὰρ ἀνθρώπους",
+      "right_context": "ἀρχιερεῖς ἔχοντας ἀσθένειαν, ὁ λόγος δὲ"
+    },
+    {
+      "ref": "Hebrews 8:3",
+      "form": "καθίσταται·",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 3,
+      "left_context": "τὸ προσφέρειν δῶρά τε καὶ θυσίας",
+      "right_context": "ὅθεν ἀναγκαῖον ἔχειν τι καὶ τοῦτον"
+    },
+    {
+      "ref": "Acts 6:3",
+      "form": "⸀καταστήσομεν",
+      "morph": "V-F-A-I-1P",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 3,
+      "left_context": "ἑπτὰ πλήρεις ⸀πνεύματος καὶ σοφίας, οὓς",
+      "right_context": "ἐπὶ τῆς χρείας ταύτης·"
+    },
+    {
+      "ref": "Acts 7:10",
+      "form": "κατέστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "σοφίαν ἐναντίον Φαραὼ βασιλέως Αἰγύπτου, καὶ",
+      "right_context": "αὐτὸν ἡγούμενον ἐπ’ Αἴγυπτον ⸀καὶ ὅλον"
+    },
+    {
+      "ref": "Acts 7:27",
+      "form": "κατέστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 27,
+      "left_context": "πλησίον ἀπώσατο αὐτὸν εἰπών· Τίς σε",
+      "right_context": "ἄρχοντα καὶ δικαστὴν ἐφ’ ⸀ἡμῶν;"
+    },
+    {
+      "ref": "Acts 7:35",
+      "form": "κατέστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 35,
+      "left_context": "Μωϋσῆν, ὃν ἠρνήσαντο εἰπόντες· Τίς σε",
+      "right_context": "ἄρχοντα καὶ δικαστήν, τοῦτον ὁ θεὸς"
+    },
+    {
+      "ref": "Acts 17:15",
+      "form": "⸀καθιστάνοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 15,
+      "left_context": "οἱ δὲ",
+      "right_context": "τὸν Παῦλον ⸀ἤγαγον ἕως Ἀθηνῶν, καὶ"
+    },
+    {
+      "ref": "Luke 12:14",
+      "form": "κατέστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 14,
+      "left_context": "δὲ εἶπεν αὐτῷ· Ἄνθρωπε, τίς με",
+      "right_context": "⸀κριτὴν ἢ μεριστὴν ἐφ’ ὑμᾶς;"
+    },
+    {
+      "ref": "Luke 12:42",
+      "form": "καταστήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 42,
+      "left_context": "ὁ πιστὸς οἰκονόμος, ⸀ὁ φρόνιμος, ὃν",
+      "right_context": "ὁ κύριος ἐπὶ τῆς θεραπείας αὐτοῦ"
+    },
+    {
+      "ref": "Luke 12:44",
+      "form": "καταστήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 44,
+      "left_context": "ὅτι ἐπὶ πᾶσιν τοῖς ὑπάρχουσιν αὐτοῦ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Matthew 24:45",
+      "form": "κατέστησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 45,
+      "left_context": "ὁ πιστὸς δοῦλος καὶ φρόνιμος ὃν",
+      "right_context": "ὁ ⸀κύριος ἐπὶ τῆς ⸀οἰκετείας αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 24:47",
+      "form": "καταστήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 47,
+      "left_context": "ὅτι ἐπὶ πᾶσιν τοῖς ὑπάρχουσιν αὐτοῦ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Matthew 25:21",
+      "form": "καταστήσω·",
+      "morph": "V-F-A-I-1S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 21,
+      "left_context": "ὀλίγα ἦς πιστός, ἐπὶ πολλῶν σε",
+      "right_context": "εἴσελθε εἰς τὴν χαρὰν τοῦ κυρίου"
+    },
+    {
+      "ref": "Matthew 25:23",
+      "form": "καταστήσω·",
+      "morph": "V-F-A-I-1S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 23,
+      "left_context": "ὀλίγα ἦς πιστός, ἐπὶ πολλῶν σε",
+      "right_context": "εἴσελθε εἰς τὴν χαρὰν τοῦ κυρίου"
+    },
+    {
+      "ref": "Romans 5:19",
+      "form": "κατεστάθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 19,
+      "left_context": "τῆς παρακοῆς τοῦ ἑνὸς ἀνθρώπου ἁμαρτωλοὶ",
+      "right_context": "οἱ πολλοί, οὕτως καὶ διὰ τῆς"
+    },
+    {
+      "ref": "Romans 5:19",
+      "form": "κατασταθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 19,
+      "left_context": "διὰ τῆς ὑπακοῆς τοῦ ἑνὸς δίκαιοι",
+      "right_context": "οἱ πολλοί."
+    },
+    {
+      "ref": "James 3:6",
+      "form": "καθίσταται",
+      "morph": "V-P-P-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "ὁ κόσμος τῆς ⸀ἀδικίας ἡ γλῶσσα",
+      "right_context": "ἐν τοῖς μέλεσιν ἡμῶν, ἡ σπιλοῦσα"
+    },
+    {
+      "ref": "James 4:4",
+      "form": "καθίσταται.",
+      "morph": "V-P-P-I-3S",
+      "book": "James",
+      "chapter": 4,
+      "verse": 4,
+      "left_context": "εἶναι τοῦ κόσμου, ἐχθρὸς τοῦ θεοῦ",
+      "right_context": ""
+    },
+    {
+      "ref": "Titus 1:5",
+      "form": "καταστήσῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "Κρήτῃ ἵνα τὰ λείποντα ἐπιδιορθώσῃ, καὶ",
+      "right_context": "κατὰ πόλιν πρεσβυτέρους, ὡς ἐγώ σοι"
+    }
+  ],
+  "books": {
+    "Acts": 5,
+    "Matthew": 4,
+    "Hebrews": 3,
+    "Luke": 3,
+    "Romans": 2,
+    "James": 2,
+    "2 Peter": 1,
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "de·hombres",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "πιστός",
+      "display": "fiel",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Αἴγυπτος",
+      "display": "de·Egipto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχων",
+      "display": "gobernante",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δικαστής",
+      "display": "juez",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φρόνιμος",
+      "display": "prudente",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χαρά",
+      "display": "gozo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·uno",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονάζω",
+      "display": "abundando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργός",
+      "display": "ociosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκαρπος",
+      "display": "sin·fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθένεια",
+      "display": "enfermedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "ofrecer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δῶρον",
+      "display": "dones",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 1:8",
+      "negator": "οὐκ",
+      "clause_text": "ὑμῖν ὑπάρχοντα καὶ πλεονάζοντα οὐκ ἀργοὺς οὐδὲ ἀκάρπους καθίστησιν εἰς τὴν τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ ἐπίγνωσιν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:15",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 6:3",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 7:10",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 7:27",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Acts 7:35",
+      "reason": "frequent in Acts"
+    },
+    {
+      "ref": "Matthew 24:45",
+      "reason": "occurs near κύριος, πιστός"
+    },
+    {
+      "ref": "Matthew 24:47",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 25:21",
+      "reason": "occurs near πιστός, πολύς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

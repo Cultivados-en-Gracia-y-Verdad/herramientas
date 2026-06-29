@@ -1,0 +1,106 @@
+{
+  "lemma": "περιέχω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "περιέχει",
+      "count": 1
+    },
+    {
+      "form": "περιέσχεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:6",
+      "form": "περιέχει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "διότι",
+      "right_context": "⸀ἐν γραφῇ· Ἰδοὺ τίθημι ἐν Σιὼν"
+    },
+    {
+      "ref": "Luke 5:9",
+      "form": "περιέσχεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "θάμβος γὰρ",
+      "right_context": "αὐτὸν καὶ πάντας τοὺς σὺν αὐτῷ"
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διότι",
+      "display": "porque",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "escritura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "pongo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάμβος",
+      "display": "asombro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 2:6",
+      "reason": "occurs near γραφή, διότι, τίθημι"
+    },
+    {
+      "ref": "Luke 5:9",
+      "reason": "occurs near θάμβος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,174 @@
+{
+  "lemma": "εὐαρεστέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "εὐαρεστηκέναι",
+      "count": 1
+    },
+    {
+      "form": "εὐαρεστῆσαι,",
+      "count": 1
+    },
+    {
+      "form": "εὐαρεστεῖται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:5",
+      "form": "εὐαρεστηκέναι",
+      "morph": "V-X-A-N",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 5,
+      "left_context": "θεός· πρὸ γὰρ τῆς ⸀μεταθέσεως μεμαρτύρηται",
+      "right_context": "τῷ θεῷ,"
+    },
+    {
+      "ref": "Hebrews 11:6",
+      "form": "εὐαρεστῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 6,
+      "left_context": "χωρὶς δὲ πίστεως ἀδύνατον",
+      "right_context": "πιστεῦσαι γὰρ δεῖ τὸν προσερχόμενον τῷ"
+    },
+    {
+      "ref": "Hebrews 13:16",
+      "form": "εὐαρεστεῖται",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 16,
+      "left_context": "κοινωνίας μὴ ἐπιλανθάνεσθε, τοιαύταις γὰρ θυσίαις",
+      "right_context": "ὁ θεός."
+    }
+  ],
+  "books": {
+    "Hebrews": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετάθεσις",
+      "display": "de·cambio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρέω",
+      "display": "ha testificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδύνατος",
+      "display": "imposible",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιλανθάνομαι",
+      "display": "olvidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυσία",
+      "display": "sacrificios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:5",
+      "reason": "occurs near θεός, μαρτυρέω, μετάθεσις"
+    },
+    {
+      "ref": "Hebrews 11:6",
+      "reason": "occurs near χωρίς"
+    },
+    {
+      "ref": "Hebrews 13:16",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

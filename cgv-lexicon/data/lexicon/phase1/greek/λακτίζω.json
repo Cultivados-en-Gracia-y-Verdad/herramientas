@@ -1,0 +1,74 @@
+{
+  "lemma": "λακτίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "λακτίζειν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 26:14",
+      "form": "λακτίζειν.",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 14,
+      "left_context": "με διώκεις; σκληρόν σοι πρὸς κέντρα",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διώκω",
+      "display": "persegues",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκληρός",
+      "display": "duro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κέντρον",
+      "display": "aguijónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:14",
+      "reason": "occurs near διώκω, κέντρον, σκληρός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

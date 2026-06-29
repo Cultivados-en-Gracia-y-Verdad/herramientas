@@ -1,0 +1,86 @@
+{
+  "lemma": "προβλέπομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προβλεψαμένου,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:40",
+      "form": "προβλεψαμένου,",
+      "morph": "V-A-M-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 40,
+      "left_context": "τοῦ θεοῦ περὶ ἡμῶν κρεῖττόν τι",
+      "right_context": "ἵνα μὴ χωρὶς ἡμῶν τελειωθῶσιν."
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρείττων",
+      "display": "mejor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τελειόω",
+      "display": "perfeccionen",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 11:40",
+      "negator": "μὴ",
+      "clause_text": "τοῦ θεοῦ περὶ ἡμῶν κρεῖττόν τι προβλεψαμένου, ἵνα μὴ χωρὶς ἡμῶν τελειωθῶσιν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:40",
+      "reason": "occurs near θεός, κρείττων, τελειόω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

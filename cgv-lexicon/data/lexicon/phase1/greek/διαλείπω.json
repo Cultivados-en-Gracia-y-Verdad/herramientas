@@ -1,0 +1,80 @@
+{
+  "lemma": "διαλείπω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διέλιπεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 7:45",
+      "form": "διέλιπεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 45,
+      "left_context": "αὕτη δὲ ἀφ’ ἧς εἰσῆλθον οὐ",
+      "right_context": "καταφιλοῦσά μου τοὺς πόδας."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταφιλέω",
+      "display": "besando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 7:45",
+      "negator": "οὐ",
+      "clause_text": "οὐκ ἔδωκας· αὕτη δὲ ἀφ’ ἧς εἰσῆλθον οὐ διέλιπεν καταφιλοῦσά μου τοὺς πόδας."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 7:45",
+      "reason": "occurs near εἰσέρχομαι, καταφιλέω, πούς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,113 @@
+{
+  "lemma": "ἀναδείκνυμι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀνάδειξον",
+      "count": 1
+    },
+    {
+      "form": "ἀνέδειξεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 1:24",
+      "form": "ἀνάδειξον",
+      "morph": "V-A-A-D-2S",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "προσευξάμενοι εἶπαν Σὺ κύριε καρδιογνῶστα πάντων,",
+      "right_context": "ὃν ἐξελέξω, ἐκ τούτων τῶν δύο"
+    },
+    {
+      "ref": "Luke 10:1",
+      "form": "ἀνέδειξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 1,
+      "left_context": "Μετὰ δὲ ταῦτα",
+      "right_context": "ὁ κύριος ⸀καὶ ἑτέρους ἑβδομήκοντα ⸀δύο"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδιογνώστης",
+      "display": "conocedor·del·corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλέγομαι",
+      "display": "escogiste",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑβδομήκοντα",
+      "display": "setentas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 1:24",
+      "form": "ἀνάδειξον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "καὶ προσευξάμενοι εἶπαν Σὺ κύριε καρδιογνῶστα πάντων, ἀνάδειξον ὃν ἐξελέξω, ἐκ τούτων τῶν δύο ἕνα,"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 1:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 10:1",
+      "reason": "occurs near κύριος, ἑβδομήκοντα, ἕτερος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,111 @@
+{
+  "lemma": "συγκάθημαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συγκαθήμενοι",
+      "count": 1
+    },
+    {
+      "form": "συγκαθήμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 26:30",
+      "form": "συγκαθήμενοι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 30,
+      "left_context": "ἡγεμὼν ἥ τε Βερνίκη καὶ οἱ",
+      "right_context": "αὐτοῖς,"
+    },
+    {
+      "ref": "Mark 14:54",
+      "form": "συγκαθήμενος",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 54,
+      "left_context": "τὴν αὐλὴν τοῦ ἀρχιερέως καὶ ἦν",
+      "right_context": "μετὰ τῶν ὑπηρετῶν καὶ θερμαινόμενος πρὸς"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βερνίκη",
+      "display": "Berenice",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐλή",
+      "display": "patio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπηρέτης",
+      "display": "de·servidores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θερμαίνομαι",
+      "display": "calentarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 26:30",
+      "reason": "occurs near Βερνίκη, τέ"
+    },
+    {
+      "ref": "Mark 14:54",
+      "reason": "occurs near αὐλή, ἀρχιερεύς, ὑπηρέτης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,92 @@
+{
+  "lemma": "λογομαχέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "λογομαχεῖν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 2:14",
+      "form": "λογομαχεῖν,",
+      "morph": "V-P-A-N",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "ὑπομίμνῃσκε, διαμαρτυρόμενος ἐνώπιον τοῦ ⸀κυρίου, μὴ",
+      "right_context": "⸀ἐπ’ οὐδὲν χρήσιμον, ἐπὶ καταστροφῇ τῶν"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διαμαρτύρομαι",
+      "display": "testificando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρήσιμον",
+      "display": "útil",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταστροφή",
+      "display": "ruina",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Timothy 2:14",
+      "negator": "μὴ",
+      "clause_text": "Ταῦτα ὑπομίμνῃσκε, διαμαρτυρόμενος ἐνώπιον τοῦ ⸀κυρίου, μὴ λογομαχεῖν, ⸀ἐπ’ οὐδὲν χρήσιμον, ἐπὶ καταστροφῇ τῶν ἀκουόντων."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:14",
+      "reason": "occurs near διαμαρτύρομαι, καταστροφή, κύριος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

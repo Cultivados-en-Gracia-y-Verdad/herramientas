@@ -1,0 +1,400 @@
+{
+  "lemma": "πλουτέω",
+  "language": "greek",
+  "total_occurrences": 12,
+  "forms": [
+    {
+      "form": "πλουτεῖν",
+      "count": 2
+    },
+    {
+      "form": "ἐπλουτήσατε,",
+      "count": 1
+    },
+    {
+      "form": "πλουτήσητε.",
+      "count": 1
+    },
+    {
+      "form": "πεπλούτηκα",
+      "count": 1
+    },
+    {
+      "form": "πλουτήσῃς,",
+      "count": 1
+    },
+    {
+      "form": "ἐπλούτησαν.",
+      "count": 1
+    },
+    {
+      "form": "πλουτήσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἐπλούτησαν",
+      "count": 1
+    },
+    {
+      "form": "πλουτοῦντας",
+      "count": 1
+    },
+    {
+      "form": "πλουτῶν.",
+      "count": 1
+    },
+    {
+      "form": "πλουτῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "infinitive": 2,
+      "subjunctive": 2,
+      "participle": 4
+    },
+    "tenses": {
+      "aorist": 6,
+      "present": 5,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 12
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:8",
+      "form": "ἐπλουτήσατε,",
+      "morph": "V-A-A-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "Ἤδη κεκορεσμένοι ἐστέ, ἤδη",
+      "right_context": "χωρὶς ἡμῶν ἐβασιλεύσατε· καὶ ὄφελόν γε"
+    },
+    {
+      "ref": "1 Timothy 6:9",
+      "form": "πλουτεῖν",
+      "morph": "V-P-A-N",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "οἱ δὲ βουλόμενοι",
+      "right_context": "ἐμπίπτουσιν εἰς πειρασμὸν καὶ παγίδα καὶ"
+    },
+    {
+      "ref": "1 Timothy 6:18",
+      "form": "πλουτεῖν",
+      "morph": "V-P-A-N",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 18,
+      "left_context": "ἀγαθοεργεῖν,",
+      "right_context": "ἐν ἔργοις καλοῖς, εὐμεταδότους εἶναι, κοινωνικούς,"
+    },
+    {
+      "ref": "2 Corinthians 8:9",
+      "form": "πλουτήσητε.",
+      "morph": "V-A-A-S-2P",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 9,
+      "left_context": "ὤν, ἵνα ὑμεῖς τῇ ἐκείνου πτωχείᾳ",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 3:17",
+      "form": "πεπλούτηκα",
+      "morph": "V-X-A-I-1S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 17,
+      "left_context": "ὅτι λέγεις ⸀ὅτι Πλούσιός εἰμι καὶ",
+      "right_context": "καὶ ⸀οὐδὲν χρείαν ἔχω, καὶ οὐκ"
+    },
+    {
+      "ref": "Revelation 3:18",
+      "form": "πλουτήσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Revelation",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "ἐμοῦ χρυσίον⸃ πεπυρωμένον ἐκ πυρὸς ἵνα",
+      "right_context": "καὶ ἱμάτια λευκὰ ἵνα περιβάλῃ καὶ"
+    },
+    {
+      "ref": "Revelation 18:3",
+      "form": "ἐπλούτησαν.",
+      "morph": "V-A-A-I-3P",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 3,
+      "left_context": "ἐκ τῆς δυνάμεως τοῦ στρήνους αὐτῆς",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 18:15",
+      "form": "πλουτήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 15,
+      "left_context": "οἱ ἔμποροι τούτων, οἱ",
+      "right_context": "ἀπ’ αὐτῆς, ἀπὸ μακρόθεν στήσονται διὰ"
+    },
+    {
+      "ref": "Revelation 18:19",
+      "form": "ἐπλούτησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Revelation",
+      "chapter": 18,
+      "verse": 19,
+      "left_context": "ἡ πόλις ἡ μεγάλη, ἐν ᾗ",
+      "right_context": "πάντες οἱ ἔχοντες τὰ πλοῖα ἐν"
+    },
+    {
+      "ref": "Luke 1:53",
+      "form": "πλουτοῦντας",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 53,
+      "left_context": "πεινῶντας ἐνέπλησεν ἀγαθῶν καὶ",
+      "right_context": "ἐξαπέστειλεν κενούς."
+    },
+    {
+      "ref": "Luke 12:21",
+      "form": "πλουτῶν.",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 21,
+      "left_context": "θησαυρίζων ⸀ἑαυτῷ καὶ μὴ εἰς θεὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 10:12",
+      "form": "πλουτῶν",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 10,
+      "verse": 12,
+      "left_context": "Ἕλληνος, ὁ γὰρ αὐτὸς κύριος πάντων,",
+      "right_context": "εἰς πάντας τοὺς ἐπικαλουμένους αὐτόν·"
+    }
+  ],
+  "books": {
+    "Revelation": 5,
+    "1 Timothy": 2,
+    "Luke": 2,
+    "1 Corinthians": 1,
+    "2 Corinthians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κορέννυμι",
+      "display": "saciados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίς",
+      "display": "sin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεύω",
+      "display": "reinasteis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄφελον",
+      "display": "ojalá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπίπτω",
+      "display": "caen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πειρασμός",
+      "display": "tentación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παγίς",
+      "display": "trampa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθοεργέω",
+      "display": "hacer·bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "buenos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐμετάδοτος",
+      "display": "generosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτωχεία",
+      "display": "pobreza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "rico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρεία",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρυσίον",
+      "display": "oro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυρόομαι",
+      "display": "ardido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λευκός",
+      "display": "blancos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιβάλλω",
+      "display": "vestas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "de·poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρῆνος",
+      "display": "de·lujo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμπορος",
+      "display": "mercaderes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:21",
+      "negator": "μὴ",
+      "clause_text": "οὕτως ὁ θησαυρίζων ⸀ἑαυτῷ καὶ μὴ εἰς θεὸν πλουτῶν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 18:15",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 18:19",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 18:3",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 3:17",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "Revelation 3:18",
+      "reason": "frequent in Revelation"
+    },
+    {
+      "ref": "1 Timothy 6:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Timothy 6:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 12:21",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

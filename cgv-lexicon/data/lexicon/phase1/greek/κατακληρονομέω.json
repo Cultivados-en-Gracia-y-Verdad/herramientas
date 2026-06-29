@@ -1,0 +1,80 @@
+{
+  "lemma": "κατακληρονομέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀κατεκληρονόμησεν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:19",
+      "form": "⸀κατεκληρονόμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 19,
+      "left_context": "καθελὼν ἔθνη ἑπτὰ ἐν γῇ Χανάαν",
+      "right_context": "τὴν γῆν αὐτῶν"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γῆ",
+      "display": "tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑπτά",
+      "display": "siete",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χανάαν",
+      "display": "de·Canaán",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:19",
+      "reason": "occurs near Χανάαν, γῆ, ἑπτά"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

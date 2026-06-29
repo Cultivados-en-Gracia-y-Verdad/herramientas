@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀποστυγέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀποστυγοῦντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 12:9",
+      "form": "ἀποστυγοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 9,
+      "left_context": "Ἡ ἀγάπη ἀνυπόκριτος.",
+      "right_context": "τὸ πονηρόν, κολλώμενοι τῷ ἀγαθῷ·"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνυπόκριτος",
+      "display": "sin·hipocresía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολλάομαι",
+      "display": "unirses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 12:9",
+      "reason": "occurs near κολλάομαι, πονηρός, ἀγάπη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

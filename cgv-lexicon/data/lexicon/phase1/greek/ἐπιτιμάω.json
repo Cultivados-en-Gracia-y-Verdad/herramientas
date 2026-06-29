@@ -1,0 +1,612 @@
+{
+  "lemma": "ἐπιτιμάω",
+  "language": "greek",
+  "total_occurrences": 29,
+  "forms": [
+    {
+      "form": "ἐπετίμησεν",
+      "count": 14
+    },
+    {
+      "form": "ἐπιτίμησον",
+      "count": 2
+    },
+    {
+      "form": "ἐπετίμων",
+      "count": 2
+    },
+    {
+      "form": "ἐπιτιμᾶν",
+      "count": 2
+    },
+    {
+      "form": "ἐπιτίμησον,",
+      "count": 1
+    },
+    {
+      "form": "Ἐπιτιμήσαι",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτιμῶν",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτιμήσας",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐπετίμων",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐπιτιμῶν",
+      "count": 1
+    },
+    {
+      "form": "ἐπετίμα",
+      "count": 1
+    },
+    {
+      "form": "⸂ἐπετίμησαν",
+      "count": 1
+    },
+    {
+      "form": "ἐπετίμησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 3,
+      "optative": 1,
+      "indicative": 20,
+      "participle": 3,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 21,
+      "present": 4,
+      "imperfect": 4
+    },
+    "voices": {
+      "active": 29
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 4:2",
+      "form": "ἐπιτίμησον,",
+      "morph": "V-A-A-D-2S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "τὸν λόγον, ἐπίστηθι εὐκαίρως ἀκαίρως, ἔλεγξον,",
+      "right_context": "παρακάλεσον, ἐν πάσῃ μακροθυμίᾳ καὶ διδαχῇ."
+    },
+    {
+      "ref": "Jude 1:9",
+      "form": "Ἐπιτιμήσαι",
+      "morph": "V-A-A-O-3S",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "ἐτόλμησεν κρίσιν ἐπενεγκεῖν βλασφημίας, ἀλλὰ εἶπεν·",
+      "right_context": "σοι κύριος."
+    },
+    {
+      "ref": "Luke 4:35",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 35,
+      "left_context": "καὶ",
+      "right_context": "αὐτῷ ὁ Ἰησοῦς λέγων· Φιμώθητι καὶ"
+    },
+    {
+      "ref": "Luke 4:39",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 39,
+      "left_context": "καὶ ἐπιστὰς ἐπάνω αὐτῆς",
+      "right_context": "τῷ πυρετῷ, καὶ ἀφῆκεν αὐτήν· παραχρῆμα"
+    },
+    {
+      "ref": "Luke 4:41",
+      "form": "ἐπιτιμῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 41,
+      "left_context": "⸀εἶ ὁ υἱὸς τοῦ θεοῦ. καὶ",
+      "right_context": "οὐκ εἴα αὐτὰ λαλεῖν, ὅτι ᾔδεισαν"
+    },
+    {
+      "ref": "Luke 8:24",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 24,
+      "left_context": "Ἐπιστάτα ἐπιστάτα, ἀπολλύμεθα· ὁ δὲ ⸀διεγερθεὶς",
+      "right_context": "τῷ ἀνέμῳ καὶ τῷ κλύδωνι τοῦ"
+    },
+    {
+      "ref": "Luke 9:21",
+      "form": "ἐπιτιμήσας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 21,
+      "left_context": "Ὁ δὲ",
+      "right_context": "αὐτοῖς παρήγγειλεν μηδενὶ ⸀λέγειν τοῦτο,"
+    },
+    {
+      "ref": "Luke 9:42",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 42,
+      "left_context": "ἔρρηξεν αὐτὸν τὸ δαιμόνιον καὶ συνεσπάραξεν·",
+      "right_context": "δὲ ὁ Ἰησοῦς τῷ πνεύματι τῷ"
+    },
+    {
+      "ref": "Luke 9:55",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 55,
+      "left_context": "στραφεὶς δὲ",
+      "right_context": "⸀αὐτοῖς."
+    },
+    {
+      "ref": "Luke 17:3",
+      "form": "ἐπιτίμησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 3,
+      "left_context": "ἑαυτοῖς. ἐὰν ⸀ἁμάρτῃ ὁ ἀδελφός σου",
+      "right_context": "αὐτῷ, καὶ ἐὰν μετανοήσῃ ἄφες αὐτῷ·"
+    },
+    {
+      "ref": "Luke 18:15",
+      "form": "⸀ἐπετίμων",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 15,
+      "left_context": "αὐτῶν ἅπτηται· ἰδόντες δὲ οἱ μαθηταὶ",
+      "right_context": "αὐτοῖς."
+    },
+    {
+      "ref": "Luke 18:39",
+      "form": "ἐπετίμων",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 39,
+      "left_context": "καὶ οἱ προάγοντες",
+      "right_context": "αὐτῷ ἵνα ⸀σιγήσῃ· αὐτὸς δὲ πολλῷ"
+    },
+    {
+      "ref": "Luke 19:39",
+      "form": "ἐπιτίμησον",
+      "morph": "V-A-A-D-2S",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 39,
+      "left_context": "τοῦ ὄχλου εἶπαν πρὸς αὐτόν· Διδάσκαλε,",
+      "right_context": "τοῖς μαθηταῖς σου."
+    },
+    {
+      "ref": "Luke 23:40",
+      "form": "⸂ἐπιτιμῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 40,
+      "left_context": "ἀποκριθεὶς δὲ ὁ ἕτερος",
+      "right_context": "αὐτῷ ἔφη⸃· Οὐδὲ φοβῇ σὺ τὸν"
+    },
+    {
+      "ref": "Mark 1:25",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 25,
+      "left_context": "καὶ",
+      "right_context": "αὐτῷ ὁ Ἰησοῦς λέγων· Φιμώθητι καὶ"
+    },
+    {
+      "ref": "Mark 3:12",
+      "form": "ἐπετίμα",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "καὶ πολλὰ",
+      "right_context": "αὐτοῖς ἵνα μὴ ⸂αὐτὸν φανερὸν⸃ ⸀ποιήσωσιν."
+    },
+    {
+      "ref": "Mark 4:39",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 39,
+      "left_context": "καὶ διεγερθεὶς",
+      "right_context": "τῷ ἀνέμῳ καὶ εἶπεν τῇ θαλάσσῃ·"
+    },
+    {
+      "ref": "Mark 8:30",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 30,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῖς ἵνα μηδενὶ λέγωσιν περὶ αὐτοῦ."
+    },
+    {
+      "ref": "Mark 8:32",
+      "form": "ἐπιτιμᾶν",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 32,
+      "left_context": "καὶ προσλαβόμενος ⸂ὁ Πέτρος αὐτὸν⸃ ἤρξατο",
+      "right_context": "αὐτῷ."
+    },
+    {
+      "ref": "Mark 8:33",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 33,
+      "left_context": "ἐπιστραφεὶς καὶ ἰδὼν τοὺς μαθητὰς αὐτοῦ",
+      "right_context": "⸀Πέτρῳ ⸂καὶ λέγει⸃· Ὕπαγε ὀπίσω μου,"
+    },
+    {
+      "ref": "Mark 9:25",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 25,
+      "left_context": "δὲ ὁ Ἰησοῦς ὅτι ἐπισυντρέχει ὄχλος",
+      "right_context": "τῷ πνεύματι τῷ ἀκαθάρτῳ λέγων αὐτῷ·"
+    },
+    {
+      "ref": "Mark 10:13",
+      "form": "⸂ἐπετίμησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 13,
+      "left_context": "ἵνα ⸂αὐτῶν ἅψηται⸃· οἱ δὲ μαθηταὶ",
+      "right_context": "αὐτοῖς⸃."
+    },
+    {
+      "ref": "Mark 10:48",
+      "form": "ἐπετίμων",
+      "morph": "V-I-A-I-3P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 48,
+      "left_context": "καὶ",
+      "right_context": "αὐτῷ πολλοὶ ἵνα σιωπήσῃ· ὁ δὲ"
+    },
+    {
+      "ref": "Matthew 8:26",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 26,
+      "left_context": "Τί δειλοί ἐστε, ὀλιγόπιστοι; τότε ἐγερθεὶς",
+      "right_context": "τοῖς ἀνέμοις καὶ τῇ θαλάσσῃ, καὶ"
+    },
+    {
+      "ref": "Matthew 12:16",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 16,
+      "left_context": "καὶ",
+      "right_context": "αὐτοῖς ἵνα μὴ φανερὸν αὐτὸν ποιήσωσιν,"
+    },
+    {
+      "ref": "Matthew 16:22",
+      "form": "ἐπιτιμᾶν",
+      "morph": "V-P-A-N",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 22,
+      "left_context": "καὶ προσλαβόμενος αὐτὸν ὁ Πέτρος ἤρξατο",
+      "right_context": "αὐτῷ λέγων· Ἵλεώς σοι, κύριε· οὐ"
+    },
+    {
+      "ref": "Matthew 17:18",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 18,
+      "left_context": "καὶ",
+      "right_context": "αὐτῷ ὁ Ἰησοῦς, καὶ ἐξῆλθεν ἀπ’"
+    },
+    {
+      "ref": "Matthew 19:13",
+      "form": "ἐπετίμησαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 13,
+      "left_context": "αὐτοῖς καὶ προσεύξηται· οἱ δὲ μαθηταὶ",
+      "right_context": "αὐτοῖς."
+    },
+    {
+      "ref": "Matthew 20:31",
+      "form": "ἐπετίμησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 31,
+      "left_context": "ὁ δὲ ὄχλος",
+      "right_context": "αὐτοῖς ἵνα σιωπήσωσιν· οἱ δὲ μεῖζον"
+    }
+  ],
+  "books": {
+    "Luke": 12,
+    "Mark": 9,
+    "Matthew": 6,
+    "2 Timothy": 1,
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "viento",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "de·multitud",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐφίστημι",
+      "display": "presentarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φιμόω",
+      "display": "calla",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "perdonó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διεγείρω",
+      "display": "despertado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπτω",
+      "display": "tocara",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φανερός",
+      "display": "manifiesto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προσλαμβάνομαι",
+      "display": "tomado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σιωπάω",
+      "display": "calle",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐκαίρως",
+      "display": "a·tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκαίρως",
+      "display": "a·tiempo·y·fuera·de·tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλέγχω",
+      "display": "reprende",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "roga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μακροθυμία",
+      "display": "paciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίσις",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Timothy 4:2",
+      "form": "ἐπιτίμησον,",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "κήρυξον τὸν λόγον, ἐπίστηθι εὐκαίρως ἀκαίρως, ἔλεγξον, ἐπιτίμησον, παρακάλεσον, ἐν πάσῃ μακροθυμίᾳ καὶ διδαχῇ."
+    },
+    {
+      "ref": "Luke 17:3",
+      "form": "ἐπιτίμησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "προσέχετε ἑαυτοῖς. ἐὰν ⸀ἁμάρτῃ ὁ ἀδελφός σου ἐπιτίμησον αὐτῷ, καὶ ἐὰν μετανοήσῃ ἄφες αὐτῷ·"
+    },
+    {
+      "ref": "Luke 19:39",
+      "form": "ἐπιτίμησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "Φαρισαίων ἀπὸ τοῦ ὄχλου εἶπαν πρὸς αὐτόν· Διδάσκαλε, ἐπιτίμησον τοῖς μαθηταῖς σου."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 4:41",
+      "negator": "οὐκ",
+      "clause_text": "ὅτι Σὺ ⸀εἶ ὁ υἱὸς τοῦ θεοῦ. καὶ ἐπιτιμῶν οὐκ εἴα αὐτὰ λαλεῖν, ὅτι ᾔδεισαν τὸν χριστὸν"
+    },
+    {
+      "ref": "Luke 23:40",
+      "negator": "Οὐδὲ",
+      "clause_text": "ἀποκριθεὶς δὲ ὁ ἕτερος ⸂ἐπιτιμῶν αὐτῷ ἔφη⸃· Οὐδὲ φοβῇ σὺ τὸν θεόν, ὅτι"
+    },
+    {
+      "ref": "Mark 3:12",
+      "negator": "μὴ",
+      "clause_text": "καὶ πολλὰ ἐπετίμα αὐτοῖς ἵνα μὴ ⸂αὐτὸν φανερὸν⸃ ⸀ποιήσωσιν."
+    },
+    {
+      "ref": "Matthew 12:16",
+      "negator": "μὴ",
+      "clause_text": "καὶ ἐπετίμησεν αὐτοῖς ἵνα μὴ φανερὸν αὐτὸν ποιήσωσιν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 17:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 19:39",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 4:2",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 18:15",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 18:39",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 23:40",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 4:35",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 4:39",
+      "reason": "frequent in Luke"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,236 @@
+{
+  "lemma": "μετασχηματίζω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "μετεσχημάτισα",
+      "count": 1
+    },
+    {
+      "form": "μετασχηματιζόμενοι",
+      "count": 1
+    },
+    {
+      "form": "μετασχηματίζεται",
+      "count": 1
+    },
+    {
+      "form": "μετασχηματίζονται",
+      "count": 1
+    },
+    {
+      "form": "μετασχηματίσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 3,
+      "future": 1
+    },
+    "voices": {
+      "active": 2,
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 4:6",
+      "form": "μετεσχημάτισα",
+      "morph": "V-A-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "Ταῦτα δέ, ἀδελφοί,",
+      "right_context": "εἰς ἐμαυτὸν καὶ ⸀Ἀπολλῶν δι’ ὑμᾶς,"
+    },
+    {
+      "ref": "2 Corinthians 11:13",
+      "form": "μετασχηματιζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 13,
+      "left_context": "οἱ γὰρ τοιοῦτοι ψευδαπόστολοι, ἐργάται δόλιοι,",
+      "right_context": "εἰς ἀποστόλους Χριστοῦ·"
+    },
+    {
+      "ref": "2 Corinthians 11:14",
+      "form": "μετασχηματίζεται",
+      "morph": "V-P-M-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 14,
+      "left_context": "οὐ ⸀θαῦμα, αὐτὸς γὰρ ὁ Σατανᾶς",
+      "right_context": "εἰς ἄγγελον φωτός·"
+    },
+    {
+      "ref": "2 Corinthians 11:15",
+      "form": "μετασχηματίζονται",
+      "morph": "V-P-M-I-3P",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 15,
+      "left_context": "οὖν εἰ καὶ οἱ διάκονοι αὐτοῦ",
+      "right_context": "ὡς διάκονοι δικαιοσύνης, ὧν τὸ τέλος"
+    },
+    {
+      "ref": "Philippians 3:21",
+      "form": "μετασχηματίσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Philippians",
+      "chapter": 3,
+      "verse": 21,
+      "left_context": "ὃς",
+      "right_context": "τὸ σῶμα τῆς ταπεινώσεως ⸀ἡμῶν σύμμορφον"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 3,
+    "1 Corinthians": 1,
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διάκονος",
+      "display": "servidores",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμαυτοῦ",
+      "display": "me",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀπολλῶς",
+      "display": "Apolos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιοῦτος",
+      "display": "tal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψευδαπόστολος",
+      "display": "falso·apóstol",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάτης",
+      "display": "obreros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόλιος",
+      "display": "engañosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόστολος",
+      "display": "apóstoles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θαῦμα",
+      "display": "milagro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σατανᾶς",
+      "display": "Satanás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φῶς",
+      "display": "de·luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταπείνωσις",
+      "display": "de·humillación",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 11:13",
+      "reason": "occurs near τοιοῦτος"
+    },
+    {
+      "ref": "2 Corinthians 11:14",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 11:15",
+      "reason": "occurs near διάκονος"
+    },
+    {
+      "ref": "1 Corinthians 4:6",
+      "reason": "occurs near ἀδελφός, Ἀπολλῶς, ἐμαυτοῦ"
+    },
+    {
+      "ref": "Philippians 3:21",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

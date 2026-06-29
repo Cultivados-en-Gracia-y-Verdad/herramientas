@@ -1,0 +1,86 @@
+{
+  "lemma": "ἐπικέλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἐπέκειλαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:41",
+      "form": "⸀ἐπέκειλαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 41,
+      "left_context": "περιπεσόντες δὲ εἰς τόπον διθάλασσον",
+      "right_context": "τὴν ναῦν, καὶ ἡ μὲν πρῷρα"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "περιπίπτω",
+      "display": "caidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διθάλασσος",
+      "display": "donde·se·unen·dos·mares",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναῦς",
+      "display": "barco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:41",
+      "reason": "occurs near διθάλασσος, μέν, ναῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "διασείω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "διασείσητε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 3:14",
+      "form": "διασείσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "καὶ ἡμεῖς⸃; καὶ εἶπεν ⸀αὐτοῖς· Μηδένα",
+      "right_context": "μηδὲ συκοφαντήσητε, καὶ ἀρκεῖσθε τοῖς ὀψωνίοις"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "συκοφαντέω",
+      "display": "extorsionéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρκέω",
+      "display": "bastad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 3:14",
+      "negator": "μηδὲ",
+      "clause_text": "⸂Τί ποιήσωμεν καὶ ἡμεῖς⸃; καὶ εἶπεν ⸀αὐτοῖς· Μηδένα διασείσητε μηδὲ συκοφαντήσητε, καὶ ἀρκεῖσθε τοῖς ὀψωνίοις ὑμῶν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 3:14",
+      "reason": "occurs near συκοφαντέω, ἀρκέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

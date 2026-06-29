@@ -1,0 +1,74 @@
+{
+  "lemma": "χειμάζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "χειμαζομένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 27:18",
+      "form": "χειμαζομένων",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 18,
+      "left_context": "σφοδρῶς δὲ",
+      "right_context": "ἡμῶν τῇ ἑξῆς ἐκβολὴν ἐποιοῦντο,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "σφοδρῶς",
+      "display": "violentamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑξῆς",
+      "display": "después",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκβολή",
+      "display": "descarga",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 27:18",
+      "reason": "occurs near σφοδρῶς, ἐκβολή, ἑξῆς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

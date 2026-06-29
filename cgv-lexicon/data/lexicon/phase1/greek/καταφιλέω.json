@@ -1,0 +1,222 @@
+{
+  "lemma": "καταφιλέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "κατεφίλησεν",
+      "count": 3
+    },
+    {
+      "form": "κατεφίλουν",
+      "count": 1
+    },
+    {
+      "form": "κατεφίλει",
+      "count": 1
+    },
+    {
+      "form": "καταφιλοῦσά",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "participle": 1
+    },
+    "tenses": {
+      "imperfect": 2,
+      "present": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:37",
+      "form": "κατεφίλουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 37,
+      "left_context": "ἐπιπεσόντες ἐπὶ τὸν τράχηλον τοῦ Παύλου",
+      "right_context": "αὐτόν,"
+    },
+    {
+      "ref": "Luke 7:38",
+      "form": "κατεφίλει",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 38,
+      "left_context": "θριξὶν τῆς κεφαλῆς αὐτῆς ἐξέμασσεν, καὶ",
+      "right_context": "τοὺς πόδας αὐτοῦ καὶ ἤλειφεν τῷ"
+    },
+    {
+      "ref": "Luke 7:45",
+      "form": "καταφιλοῦσά",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 45,
+      "left_context": "δὲ ἀφ’ ἧς εἰσῆλθον οὐ διέλιπεν",
+      "right_context": "μου τοὺς πόδας."
+    },
+    {
+      "ref": "Luke 15:20",
+      "form": "κατεφίλησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 20,
+      "left_context": "ἐπέπεσεν ἐπὶ τὸν τράχηλον αὐτοῦ καὶ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Mark 14:45",
+      "form": "κατεφίλησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 45,
+      "left_context": "⸀εὐθὺς προσελθὼν αὐτῷ λέγει· ⸀Ῥαββί, καὶ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Matthew 26:49",
+      "form": "κατεφίλησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 49,
+      "left_context": "τῷ Ἰησοῦ εἶπεν· Χαῖρε, ῥαββί· καὶ",
+      "right_context": "αὐτόν."
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Acts": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τράχηλος",
+      "display": "cuello",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πούς",
+      "display": "pies",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ῥαββί",
+      "display": "Rabbí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "de·Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "de·cabeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκμάσσω",
+      "display": "secaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλείφω",
+      "display": "ungía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαλείπω",
+      "display": "cesó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "goza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 7:45",
+      "negator": "οὐ",
+      "clause_text": "ἔδωκας· αὕτη δὲ ἀφ’ ἧς εἰσῆλθον οὐ διέλιπεν καταφιλοῦσά μου τοὺς πόδας."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 15:20",
+      "reason": "occurs near τράχηλος"
+    },
+    {
+      "ref": "Luke 7:38",
+      "reason": "occurs near κεφαλή, πούς"
+    },
+    {
+      "ref": "Luke 7:45",
+      "reason": "occurs near πούς"
+    },
+    {
+      "ref": "Acts 20:37",
+      "reason": "occurs near Παῦλος, τράχηλος"
+    },
+    {
+      "ref": "Mark 14:45",
+      "reason": "occurs near ῥαββί"
+    },
+    {
+      "ref": "Matthew 26:49",
+      "reason": "occurs near ῥαββί"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

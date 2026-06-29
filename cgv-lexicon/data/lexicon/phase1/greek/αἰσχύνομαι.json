@@ -1,0 +1,235 @@
+{
+  "lemma": "αἰσχύνομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "αἰσχυνθήσομαι,",
+      "count": 2
+    },
+    {
+      "form": "αἰσχυνθῶμεν",
+      "count": 1
+    },
+    {
+      "form": "αἰσχυνέσθω,",
+      "count": 1
+    },
+    {
+      "form": "αἰσχύνομαι·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "imperative": 1,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 2,
+      "future": 2
+    },
+    "voices": {
+      "passive": 3,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 2:28",
+      "form": "αἰσχυνθῶμεν",
+      "morph": "V-A-P-S-1P",
+      "book": "1 John",
+      "chapter": 2,
+      "verse": 28,
+      "left_context": "⸀ἐὰν φανερωθῇ ⸀σχῶμεν παρρησίαν καὶ μὴ",
+      "right_context": "ἀπ’ αὐτοῦ ἐν τῇ παρουσίᾳ αὐτοῦ."
+    },
+    {
+      "ref": "1 Peter 4:16",
+      "form": "αἰσχυνέσθω,",
+      "morph": "V-P-M-D-3S",
+      "book": "1 Peter",
+      "chapter": 4,
+      "verse": 16,
+      "left_context": "εἰ δὲ ὡς Χριστιανός, μὴ",
+      "right_context": "δοξαζέτω δὲ τὸν θεὸν ἐν τῷ"
+    },
+    {
+      "ref": "2 Corinthians 10:8",
+      "form": "αἰσχυνθήσομαι,",
+      "morph": "V-F-P-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 10,
+      "verse": 8,
+      "left_context": "καὶ οὐκ εἰς καθαίρεσιν ὑμῶν, οὐκ",
+      "right_context": ""
+    },
+    {
+      "ref": "Philippians 1:20",
+      "form": "αἰσχυνθήσομαι,",
+      "morph": "V-F-P-I-1S",
+      "book": "Philippians",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "καὶ ἐλπίδα μου ὅτι ἐν οὐδενὶ",
+      "right_context": "ἀλλ’ ἐν πάσῃ παρρησίᾳ ὡς πάντοτε"
+    },
+    {
+      "ref": "Luke 16:3",
+      "form": "αἰσχύνομαι·",
+      "morph": "V-P-M-I-1S",
+      "book": "Luke",
+      "chapter": 16,
+      "verse": 3,
+      "left_context": "ἀπ’ ἐμοῦ; σκάπτειν οὐκ ἰσχύω, ἐπαιτεῖν",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "1 John": 1,
+    "1 Peter": 1,
+    "2 Corinthians": 1,
+    "Philippians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "παρρησία",
+      "display": "franqueza",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φανερόω",
+      "display": "manifeste",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρουσία",
+      "display": "venida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστιανός",
+      "display": "Cristiano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorifica",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαίρεσις",
+      "display": "destrucción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "esperanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκάπτω",
+      "display": "cavar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "puedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαιτέω",
+      "display": "mendigar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 John 2:28",
+      "form": "αἰσχυνθῶμεν",
+      "morph": "V-A-P-S-1P",
+      "clause_text": "αὐτῷ, ἵνα ⸀ἐὰν φανερωθῇ ⸀σχῶμεν παρρησίαν καὶ μὴ αἰσχυνθῶμεν ἀπ’ αὐτοῦ ἐν τῇ παρουσίᾳ αὐτοῦ.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "1 Peter 4:16",
+      "form": "αἰσχυνέσθω,",
+      "morph": "V-P-M-D-3S",
+      "clause_text": "εἰ δὲ ὡς Χριστιανός, μὴ αἰσχυνέσθω, δοξαζέτω δὲ τὸν θεὸν ἐν τῷ ⸀ὀνόματι τούτῳ.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 John 2:28",
+      "negator": "μὴ",
+      "clause_text": "αὐτῷ, ἵνα ⸀ἐὰν φανερωθῇ ⸀σχῶμεν παρρησίαν καὶ μὴ αἰσχυνθῶμεν ἀπ’ αὐτοῦ ἐν τῇ παρουσίᾳ αὐτοῦ."
+    },
+    {
+      "ref": "1 Peter 4:16",
+      "negator": "μὴ",
+      "clause_text": "εἰ δὲ ὡς Χριστιανός, μὴ αἰσχυνέσθω, δοξαζέτω δὲ τὸν θεὸν ἐν τῷ ⸀ὀνόματι τούτῳ."
+    },
+    {
+      "ref": "2 Corinthians 10:8",
+      "negator": "οὐκ",
+      "clause_text": "εἰς οἰκοδομὴν καὶ οὐκ εἰς καθαίρεσιν ὑμῶν, οὐκ αἰσχυνθήσομαι,"
+    },
+    {
+      "ref": "Luke 16:3",
+      "negator": "οὐκ",
+      "clause_text": "τὴν οἰκονομίαν ἀπ’ ἐμοῦ; σκάπτειν οὐκ ἰσχύω, ἐπαιτεῖν αἰσχύνομαι·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 4:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 John 2:28",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 10:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 16:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Philippians 1:20",
+      "reason": "occurs near παρρησία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

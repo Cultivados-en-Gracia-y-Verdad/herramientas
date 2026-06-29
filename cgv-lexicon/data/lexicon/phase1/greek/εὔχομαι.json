@@ -1,0 +1,293 @@
+{
+  "lemma": "εὔχομαι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "⸀εὐχόμεθα",
+      "count": 1
+    },
+    {
+      "form": "εὐχόμεθα,",
+      "count": 1
+    },
+    {
+      "form": "εὔχομαί",
+      "count": 1
+    },
+    {
+      "form": "Εὐξαίμην",
+      "count": 1
+    },
+    {
+      "form": "ηὔχοντο",
+      "count": 1
+    },
+    {
+      "form": "ηὐχόμην",
+      "count": 1
+    },
+    {
+      "form": "⸀εὔχεσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "optative": 1,
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 4,
+      "aorist": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "middle": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 13:7",
+      "form": "⸀εὐχόμεθα",
+      "morph": "V-P-M-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "",
+      "right_context": "δὲ πρὸς τὸν θεὸν μὴ ποιῆσαι"
+    },
+    {
+      "ref": "2 Corinthians 13:9",
+      "form": "εὐχόμεθα,",
+      "morph": "V-P-M-I-1P",
+      "book": "2 Corinthians",
+      "chapter": 13,
+      "verse": 9,
+      "left_context": "ὑμεῖς δὲ δυνατοὶ ἦτε· ⸀τοῦτο καὶ",
+      "right_context": "τὴν ὑμῶν κατάρτισιν."
+    },
+    {
+      "ref": "3 John 1:2",
+      "form": "εὔχομαί",
+      "morph": "V-P-M-I-1S",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "Ἀγαπητέ, περὶ πάντων",
+      "right_context": "σε εὐοδοῦσθαι καὶ ὑγιαίνειν, καθὼς εὐοδοῦταί"
+    },
+    {
+      "ref": "Acts 26:29",
+      "form": "Εὐξαίμην",
+      "morph": "V-A-M-O-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 29,
+      "left_context": "ὁ δὲ ⸀Παῦλος·",
+      "right_context": "ἂν τῷ θεῷ καὶ ἐν ὀλίγῳ"
+    },
+    {
+      "ref": "Acts 27:29",
+      "form": "ηὔχοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 29,
+      "left_context": "ἐκπέσωμεν ἐκ πρύμνης ῥίψαντες ἀγκύρας τέσσαρας",
+      "right_context": "ἡμέραν γενέσθαι."
+    },
+    {
+      "ref": "Romans 9:3",
+      "form": "ηὐχόμην",
+      "morph": "V-I-M-I-1S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "γὰρ ⸂ἀνάθεμα εἶναι αὐτὸς ἐγὼ⸃ ἀπὸ"
+    },
+    {
+      "ref": "James 5:16",
+      "form": "⸀εὔχεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 16,
+      "left_context": "ἐξομολογεῖσθε ⸀οὖν ἀλλήλοις ⸂τὰς ἁμαρτίας⸃ καὶ",
+      "right_context": "ὑπὲρ ἀλλήλων, ὅπως ἰαθῆτε. πολὺ ἰσχύει"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "Acts": 2,
+    "3 John": 1,
+    "Romans": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάρτισις",
+      "display": "restauración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐοδόομαι",
+      "display": "prosperar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑγιαίνω",
+      "display": "estar·sano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρύμνα",
+      "display": "de·popa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥίπτω",
+      "display": "arrojados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγκυρα",
+      "display": "anclas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέσσαρες",
+      "display": "cuatro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάθεμα",
+      "display": "anatema",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰάομαι",
+      "display": "sanéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "James 5:16",
+      "form": "⸀εὔχεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "ἐξομολογεῖσθε ⸀οὖν ἀλλήλοις ⸂τὰς ἁμαρτίας⸃ καὶ ⸀εὔχεσθε ὑπὲρ ἀλλήλων, ὅπως ἰαθῆτε. πολὺ ἰσχύει δέησις δικαίου"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 5:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 13:7",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "2 Corinthians 13:9",
+      "reason": "occurs near δυνατός, κατάρτισις"
+    },
+    {
+      "ref": "Acts 26:29",
+      "reason": "occurs near θεός"
+    },
+    {
+      "ref": "Acts 27:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "3 John 1:2",
+      "reason": "occurs near ἀγαπητός"
+    },
+    {
+      "ref": "Romans 9:3",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

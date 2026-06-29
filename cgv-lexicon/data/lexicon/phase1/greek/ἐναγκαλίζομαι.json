@@ -1,0 +1,94 @@
+{
+  "lemma": "ἐναγκαλίζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐναγκαλισάμενος",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 9:36",
+      "form": "ἐναγκαλισάμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 36,
+      "left_context": "ἔστησεν αὐτὸ ἐν μέσῳ αὐτῶν καὶ",
+      "right_context": "αὐτὸ εἶπεν αὐτοῖς·"
+    },
+    {
+      "ref": "Mark 10:16",
+      "form": "ἐναγκαλισάμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 16,
+      "left_context": "καὶ",
+      "right_context": "αὐτὰ ⸂κατευλόγει τιθεὶς τὰς χεῖρας ἐπ’"
+    }
+  ],
+  "books": {
+    "Mark": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατευλογέω",
+      "display": "bendecía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "poniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:16",
+      "reason": "occurs near κατευλογέω, τίθημι, χείρ"
+    },
+    {
+      "ref": "Mark 9:36",
+      "reason": "occurs near μέσος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

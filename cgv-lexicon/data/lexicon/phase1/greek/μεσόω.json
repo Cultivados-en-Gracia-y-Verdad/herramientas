@@ -1,0 +1,86 @@
+{
+  "lemma": "μεσόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μεσούσης",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "John 7:14",
+      "form": "μεσούσης",
+      "morph": "V-P-A-P",
+      "book": "John",
+      "chapter": 7,
+      "verse": 14,
+      "left_context": "Ἤδη δὲ τῆς ἑορτῆς",
+      "right_context": "⸀ἀνέβη Ἰησοῦς εἰς τὸ ἱερὸν καὶ"
+    }
+  ],
+  "books": {
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑορτή",
+      "display": "de·fiesta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 7:14",
+      "reason": "occurs near ἀναβαίνω, ἑορτή, ἤδη"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

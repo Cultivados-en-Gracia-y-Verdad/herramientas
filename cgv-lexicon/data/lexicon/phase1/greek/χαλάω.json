@@ -1,0 +1,325 @@
+{
+  "lemma": "χαλάω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "χαλάσαντες",
+      "count": 2
+    },
+    {
+      "form": "ἐχαλάσθην",
+      "count": 1
+    },
+    {
+      "form": "χαλασάντων",
+      "count": 1
+    },
+    {
+      "form": "χαλάσατε",
+      "count": 1
+    },
+    {
+      "form": "χαλάσω",
+      "count": 1
+    },
+    {
+      "form": "χαλῶσι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 3,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "future": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:33",
+      "form": "ἐχαλάσθην",
+      "morph": "V-A-P-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 33,
+      "left_context": "καὶ διὰ θυρίδος ἐν σαργάνῃ",
+      "right_context": "διὰ τοῦ τείχους καὶ ἐξέφυγον τὰς"
+    },
+    {
+      "ref": "Acts 9:25",
+      "form": "χαλάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 25,
+      "left_context": "νυκτὸς ⸂διὰ τοῦ τείχους καθῆκαν αὐτὸν⸃",
+      "right_context": "ἐν σπυρίδι."
+    },
+    {
+      "ref": "Acts 27:17",
+      "form": "χαλάσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 17,
+      "left_context": "τε μὴ εἰς τὴν Σύρτιν ἐκπέσωσιν,",
+      "right_context": "τὸ σκεῦος, οὕτως ἐφέροντο."
+    },
+    {
+      "ref": "Acts 27:30",
+      "form": "χαλασάντων",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 30,
+      "left_context": "ζητούντων φυγεῖν ἐκ τοῦ πλοίου καὶ",
+      "right_context": "τὴν σκάφην εἰς τὴν θάλασσαν προφάσει"
+    },
+    {
+      "ref": "Luke 5:4",
+      "form": "χαλάσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "Σίμωνα· Ἐπανάγαγε εἰς τὸ βάθος καὶ",
+      "right_context": "τὰ δίκτυα ὑμῶν εἰς ἄγραν."
+    },
+    {
+      "ref": "Luke 5:5",
+      "form": "χαλάσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 5,
+      "left_context": "ἐλάβομεν, ἐπὶ δὲ τῷ ῥήματί σου",
+      "right_context": "⸂τὰ δίκτυα⸃."
+    },
+    {
+      "ref": "Mark 2:4",
+      "form": "χαλῶσι",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "τὴν στέγην ὅπου ἦν, καὶ ἐξορύξαντες",
+      "right_context": "τὸν κράβαττον ⸀ὅπου ὁ παραλυτικὸς κατέκειτο."
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Luke": 2,
+    "2 Corinthians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τεῖχος",
+      "display": "de·muro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίκτυον",
+      "display": "redes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θυρίς",
+      "display": "de·ventana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σαργάνη",
+      "display": "canasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκφεύγω",
+      "display": "escapé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίημι",
+      "display": "bajaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπυρίς",
+      "display": "espuerta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σύρτις",
+      "display": "Sirtis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπίπτω",
+      "display": "naufragen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκεῦος",
+      "display": "vasija",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φέρω",
+      "display": "eran llevado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φεύγω",
+      "display": "huir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "de·barca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκάφη",
+      "display": "bote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπανάγω",
+      "display": "volve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάθος",
+      "display": "profundidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγρα",
+      "display": "pesca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dicho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στέγη",
+      "display": "techo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξορύσσω",
+      "display": "excavados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράβαττος",
+      "display": "camilla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλυτικός",
+      "display": "paralítico",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 5:4",
+      "form": "χαλάσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "πρὸς τὸν Σίμωνα· Ἐπανάγαγε εἰς τὸ βάθος καὶ χαλάσατε τὰ δίκτυα ὑμῶν εἰς ἄγραν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 5:4",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 27:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 27:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 9:25",
+      "reason": "occurs near τεῖχος"
+    },
+    {
+      "ref": "Luke 5:5",
+      "reason": "occurs near δίκτυον"
+    },
+    {
+      "ref": "2 Corinthians 11:33",
+      "reason": "occurs near θυρίς, σαργάνη, τεῖχος"
+    },
+    {
+      "ref": "Mark 2:4",
+      "reason": "occurs near ὅπου"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

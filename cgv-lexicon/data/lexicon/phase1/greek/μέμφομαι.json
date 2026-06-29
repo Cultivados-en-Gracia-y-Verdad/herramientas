@@ -1,0 +1,100 @@
+{
+  "lemma": "μέμφομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μεμφόμενος",
+      "count": 1
+    },
+    {
+      "form": "μέμφεται;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 8:8",
+      "form": "μεμφόμενος",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 8,
+      "left_context": "",
+      "right_context": "γὰρ ⸀αὐτοὺς λέγει· Ἰδοὺ ἡμέραι ἔρχονται,"
+    },
+    {
+      "ref": "Romans 9:19",
+      "form": "μέμφεται;",
+      "morph": "V-P-M-I-3S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 19,
+      "left_context": "Ἐρεῖς ⸂μοι οὖν⸃· Τί ⸀οὖν ἔτι",
+      "right_context": "τῷ γὰρ βουλήματι αὐτοῦ τίς ἀνθέστηκεν;"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 8:8",
+      "reason": "occurs near ἡμέρα, ἰδού"
+    },
+    {
+      "ref": "Romans 9:19",
+      "reason": "occurs near βούλημα, ἔτι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

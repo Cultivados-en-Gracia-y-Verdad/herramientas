@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀφυπνόω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀφύπνωσεν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:23",
+      "form": "ἀφύπνωσεν.",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 23,
+      "left_context": "πλεόντων δὲ αὐτῶν",
+      "right_context": "καὶ κατέβη λαῖλαψ ἀνέμου εἰς τὴν"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πλέω",
+      "display": "navegando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "bajó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαῖλαψ",
+      "display": "tempestad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "de·viento",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:23",
+      "reason": "occurs near καταβαίνω, λαῖλαψ, πλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

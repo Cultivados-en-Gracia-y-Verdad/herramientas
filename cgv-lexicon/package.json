@@ -6,7 +6,8 @@
   "description": "ROOTS Lexicon Engine — observation layer + gloss lookup for CGV",
   "scripts": {
     "build:lexicon": "python3 scripts/build_lexicon.py",
-    "build:lexicon-phase1": "python3 scripts/build_phase1_greek.py"
+    "build:lexicon-phase1": "python3 scripts/build_phase1_greek.py",
+    "serve:lexicon": "node viewer/server.mjs"
   },
   "exports": {
     ".": "./src/index.ts"

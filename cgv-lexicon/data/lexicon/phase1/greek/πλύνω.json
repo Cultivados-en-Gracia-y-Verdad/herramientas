@@ -1,0 +1,144 @@
+{
+  "lemma": "πλύνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἔπλυναν",
+      "count": 1
+    },
+    {
+      "form": "⸂πλύνοντες",
+      "count": 1
+    },
+    {
+      "form": "⸀ἔπλυνον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 7:14",
+      "form": "ἔπλυναν",
+      "morph": "V-A-A-I-3P",
+      "book": "Revelation",
+      "chapter": 7,
+      "verse": 14,
+      "left_context": "ἐκ τῆς θλίψεως τῆς μεγάλης, καὶ",
+      "right_context": "τὰς στολὰς αὐτῶν καὶ ἐλεύκαναν ⸀αὐτὰς"
+    },
+    {
+      "ref": "Revelation 22:14",
+      "form": "⸂πλύνοντες",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 22,
+      "verse": 14,
+      "left_context": "Μακάριοι οἱ",
+      "right_context": "τὰς στολὰς αὐτῶν⸃, ἵνα ἔσται ἡ"
+    },
+    {
+      "ref": "Luke 5:2",
+      "form": "⸀ἔπλυνον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "οἱ δὲ ἁλιεῖς ⸂ἀπ’ αὐτῶν ἀποβάντες⸃",
+      "right_context": "τὰ δίκτυα."
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "στολή",
+      "display": "vestiduras",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θλῖψις",
+      "display": "de·tribulación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "de·grande",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λευκαίνω",
+      "display": "blanquearon",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μακάριος",
+      "display": "bienaventurados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁλιεύς",
+      "display": "pescadores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποβαίνω",
+      "display": "sucedidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκτυον",
+      "display": "redes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 22:14",
+      "reason": "occurs near μακάριος, στολή"
+    },
+    {
+      "ref": "Revelation 7:14",
+      "reason": "occurs near θλῖψις, λευκαίνω, μέγας"
+    },
+    {
+      "ref": "Luke 5:2",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

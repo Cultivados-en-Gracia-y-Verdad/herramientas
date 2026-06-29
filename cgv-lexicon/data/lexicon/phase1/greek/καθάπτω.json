@@ -1,0 +1,80 @@
+{
+  "lemma": "καθάπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καθῆψε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 28:3",
+      "form": "καθῆψε",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 3,
+      "left_context": "πυράν, ἔχιδνα ⸀ἀπὸ τῆς θέρμης ⸀ἐξελθοῦσα",
+      "right_context": "τῆς χειρὸς αὐτοῦ."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔχιδνα",
+      "display": "víbora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέρμη",
+      "display": "de·calora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "de·mana",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 28:3",
+      "reason": "occurs near θέρμη, χείρ, ἐξέρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

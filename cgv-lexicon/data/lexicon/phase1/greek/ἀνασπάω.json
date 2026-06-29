@@ -1,0 +1,137 @@
+{
+  "lemma": "ἀνασπάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸂ἀνεσπάσθη",
+      "count": 1
+    },
+    {
+      "form": "ἀνασπάσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 11:10",
+      "form": "⸂ἀνεσπάσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 11,
+      "verse": 10,
+      "left_context": "τοῦτο δὲ ἐγένετο ἐπὶ τρίς, καὶ",
+      "right_context": "πάλιν⸃ ἅπαντα εἰς τὸν οὐρανόν."
+    },
+    {
+      "ref": "Luke 14:5",
+      "form": "ἀνασπάσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 5,
+      "left_context": "εἰς φρέαρ ⸀πεσεῖται, καὶ οὐκ εὐθέως",
+      "right_context": "αὐτὸν ⸀ἐν ἡμέρᾳ τοῦ σαββάτου;"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τρίς",
+      "display": "tres·veces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπας",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρέαρ",
+      "display": "pozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "caerá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "de·sábado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 14:5",
+      "negator": "οὐκ",
+      "clause_text": "ἢ βοῦς εἰς φρέαρ ⸀πεσεῖται, καὶ οὐκ εὐθέως ἀνασπάσει αὐτὸν ⸀ἐν ἡμέρᾳ τοῦ σαββάτου;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 11:10",
+      "reason": "occurs near οὐρανός, πάλιν, τρίς"
+    },
+    {
+      "ref": "Luke 14:5",
+      "reason": "occurs near φρέαρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

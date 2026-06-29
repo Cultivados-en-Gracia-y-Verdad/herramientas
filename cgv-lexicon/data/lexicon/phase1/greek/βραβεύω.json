@@ -1,0 +1,81 @@
+{
+  "lemma": "βραβεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "βραβευέτω",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 3:15",
+      "form": "βραβευέτω",
+      "morph": "V-P-A-D-3S",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "καὶ ἡ εἰρήνη τοῦ ⸀Χριστοῦ",
+      "right_context": "ἐν ταῖς καρδίαις ὑμῶν, εἰς ἣν"
+    }
+  ],
+  "books": {
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 3:15",
+      "form": "βραβευέτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "καὶ ἡ εἰρήνη τοῦ ⸀Χριστοῦ βραβευέτω ἐν ταῖς καρδίαις ὑμῶν, εἰς ἣν καὶ ἐκλήθητε"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 3:15",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

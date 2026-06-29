@@ -1,0 +1,400 @@
+{
+  "lemma": "τελευτάω",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "ἐτελεύτησεν",
+      "count": 2
+    },
+    {
+      "form": "τελευτάτω·",
+      "count": 2
+    },
+    {
+      "form": "τελευτῶν",
+      "count": 1
+    },
+    {
+      "form": "⸀τετελευτηκότος",
+      "count": 1
+    },
+    {
+      "form": "τελευτᾶν,",
+      "count": 1
+    },
+    {
+      "form": "τελευτᾷ",
+      "count": 1
+    },
+    {
+      "form": "Τελευτήσαντος",
+      "count": 1
+    },
+    {
+      "form": "ἐτελεύτησεν·",
+      "count": 1
+    },
+    {
+      "form": "ἐτελεύτησεν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 5,
+      "infinitive": 1,
+      "imperative": 2
+    },
+    "tenses": {
+      "present": 5,
+      "aorist": 5,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 11
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:22",
+      "form": "τελευτῶν",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 22,
+      "left_context": "πίστει Ἰωσὴφ",
+      "right_context": "περὶ τῆς ἐξόδου τῶν υἱῶν Ἰσραὴλ"
+    },
+    {
+      "ref": "Acts 2:29",
+      "form": "ἐτελεύτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 29,
+      "left_context": "περὶ τοῦ πατριάρχου Δαυίδ, ὅτι καὶ",
+      "right_context": "καὶ ἐτάφη, καὶ τὸ μνῆμα αὐτοῦ"
+    },
+    {
+      "ref": "Acts 7:15",
+      "form": "ἐτελεύτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "⸂καὶ κατέβη⸃ Ἰακὼβ εἰς Αἴγυπτον. καὶ",
+      "right_context": "αὐτὸς καὶ οἱ πατέρες ἡμῶν,"
+    },
+    {
+      "ref": "John 11:39",
+      "form": "⸀τετελευτηκότος",
+      "morph": "V-X-A-P",
+      "book": "John",
+      "chapter": 11,
+      "verse": 39,
+      "left_context": "λίθον. λέγει αὐτῷ ἡ ἀδελφὴ τοῦ",
+      "right_context": "Μάρθα· Κύριε, ἤδη ὄζει, τεταρταῖος γάρ"
+    },
+    {
+      "ref": "Luke 7:2",
+      "form": "τελευτᾶν,",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 2,
+      "left_context": "δέ τινος δοῦλος κακῶς ἔχων ἤμελλεν",
+      "right_context": "ὃς ἦν αὐτῷ ἔντιμος."
+    },
+    {
+      "ref": "Mark 7:10",
+      "form": "τελευτάτω·",
+      "morph": "V-P-A-D-3S",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "Ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 9:48",
+      "form": "τελευτᾷ",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 48,
+      "left_context": "ὅπου ὁ σκώληξ αὐτῶν οὐ",
+      "right_context": "καὶ τὸ πῦρ οὐ σβέννυται."
+    },
+    {
+      "ref": "Matthew 2:19",
+      "form": "Τελευτήσαντος",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "",
+      "right_context": "δὲ τοῦ Ἡρῴδου ἰδοὺ ἄγγελος κυρίου"
+    },
+    {
+      "ref": "Matthew 9:18",
+      "form": "ἐτελεύτησεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "λέγων ὅτι Ἡ θυγάτηρ μου ἄρτι",
+      "right_context": "ἀλλὰ ἐλθὼν ἐπίθες τὴν χεῖρά σου"
+    },
+    {
+      "ref": "Matthew 15:4",
+      "form": "τελευτάτω·",
+      "morph": "V-P-A-D-3S",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 4,
+      "left_context": "Ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 22:25",
+      "form": "ἐτελεύτησεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 25,
+      "left_context": "ἑπτὰ ἀδελφοί· καὶ ὁ πρῶτος ⸀γήμας",
+      "right_context": "καὶ μὴ ἔχων σπέρμα ἀφῆκεν τὴν"
+    }
+  ],
+  "books": {
+    "Matthew": 4,
+    "Acts": 2,
+    "Mark": 2,
+    "Hebrews": 1,
+    "John": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πατήρ",
+      "display": "padres",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "κακολογέω",
+      "display": "maldeciendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μήτηρ",
+      "display": "madre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "muerte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωσήφ",
+      "display": "José",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξοδος",
+      "display": "de·salida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "de·hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατριάρχης",
+      "display": "de·patriarca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαυίδ",
+      "display": "de·David",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάπτω",
+      "display": "fue enterrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μνῆμα",
+      "display": "sepulcro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "bajó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰακώβ",
+      "display": "Jacob",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Αἴγυπτος",
+      "display": "Egipto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφή",
+      "display": "hermana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μάρθα",
+      "display": "Marta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄζω",
+      "display": "ole",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τεταρταῖος",
+      "display": "cuatro·días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακῶς",
+      "display": "mal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Mark 7:10",
+      "form": "τελευτάτω·",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "σου, καί· Ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ τελευτάτω·"
+    },
+    {
+      "ref": "Matthew 15:4",
+      "form": "τελευτάτω·",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "μητέρα, καί· Ὁ κακολογῶν πατέρα ἢ μητέρα θανάτῳ τελευτάτω·"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 9:48",
+      "negator": "οὐ",
+      "clause_text": "ὅπου ὁ σκώληξ αὐτῶν οὐ τελευτᾷ καὶ τὸ πῦρ οὐ σβέννυται."
+    },
+    {
+      "ref": "Matthew 22:25",
+      "negator": "μὴ",
+      "clause_text": "παρ’ ἡμῖν ἑπτὰ ἀδελφοί· καὶ ὁ πρῶτος ⸀γήμας ἐτελεύτησεν, καὶ μὴ ἔχων σπέρμα ἀφῆκεν τὴν γυναῖκα αὐτοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 15:4",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 7:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 22:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 2:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 9:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 2:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 7:15",
+      "reason": "occurs near πατήρ"
+    },
+    {
+      "ref": "Mark 9:48",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "ἱεροσυλέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἱεροσυλεῖς;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 2:22",
+      "form": "ἱεροσυλεῖς;",
+      "morph": "V-P-A-I-2S",
+      "book": "Romans",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "μοιχεύειν μοιχεύεις; ὁ βδελυσσόμενος τὰ εἴδωλα",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μοιχεύω",
+      "display": "adulteras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βδελύσσομαι",
+      "display": "abominando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἴδωλον",
+      "display": "ídolos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 2:22",
+      "reason": "occurs near βδελύσσομαι, εἴδωλον, μοιχεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

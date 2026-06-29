@@ -1,0 +1,68 @@
+{
+  "lemma": "πεζεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "πεζεύειν.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:13",
+      "form": "πεζεύειν.",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 13,
+      "left_context": "οὕτως γὰρ ⸂διατεταγμένος ἦν⸃ μέλλων αὐτὸς",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διατάσσω",
+      "display": "ordenado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:13",
+      "reason": "occurs near διατάσσω, μέλλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

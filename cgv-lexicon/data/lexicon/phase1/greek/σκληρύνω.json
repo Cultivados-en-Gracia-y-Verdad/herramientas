@@ -1,0 +1,260 @@
+{
+  "lemma": "σκληρύνω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "σκληρύνητε",
+      "count": 3
+    },
+    {
+      "form": "σκληρυνθῇ",
+      "count": 1
+    },
+    {
+      "form": "ἐσκληρύνοντο",
+      "count": 1
+    },
+    {
+      "form": "σκληρύνει.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 4,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 4,
+      "imperfect": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 4,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 3:8",
+      "form": "σκληρύνητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "μὴ",
+      "right_context": "τὰς καρδίας ὑμῶν ὡς ἐν τῷ"
+    },
+    {
+      "ref": "Hebrews 3:13",
+      "form": "σκληρυνθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 13,
+      "left_context": "οὗ τὸ Σήμερον καλεῖται, ἵνα μὴ",
+      "right_context": "⸂τις ἐξ ὑμῶν⸃ ἀπάτῃ τῆς ἁμαρτίας·"
+    },
+    {
+      "ref": "Hebrews 3:15",
+      "form": "σκληρύνητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "ἐὰν τῆς φωνῆς αὐτοῦ ἀκούσητε, Μὴ",
+      "right_context": "τὰς καρδίας ὑμῶν ὡς ἐν τῷ"
+    },
+    {
+      "ref": "Hebrews 4:7",
+      "form": "σκληρύνητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Hebrews",
+      "chapter": 4,
+      "verse": 7,
+      "left_context": "ἐὰν τῆς φωνῆς αὐτοῦ ἀκούσητε, μὴ",
+      "right_context": "τὰς καρδίας ὑμῶν·"
+    },
+    {
+      "ref": "Acts 19:9",
+      "form": "ἐσκληρύνοντο",
+      "morph": "V-I-P-I-3P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 9,
+      "left_context": "ὡς δέ τινες",
+      "right_context": "καὶ ἠπείθουν κακολογοῦντες τὴν ὁδὸν ἐνώπιον"
+    },
+    {
+      "ref": "Romans 9:18",
+      "form": "σκληρύνει.",
+      "morph": "V-P-A-I-3S",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "ὃν θέλει ἐλεεῖ, ὃν δὲ θέλει",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Hebrews": 4,
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "de·voz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiere",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σήμερον",
+      "display": "hoy",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "es llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπάτη",
+      "display": "engaño",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπειθέω",
+      "display": "desobedecían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακολογέω",
+      "display": "maldeciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεάω",
+      "display": "tener·misericordia",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Hebrews 3:8",
+      "form": "σκληρύνητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "μὴ σκληρύνητε τὰς καρδίας ὑμῶν ὡς ἐν τῷ παραπικρασμῷ, κατὰ",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Hebrews 3:13",
+      "form": "σκληρυνθῇ",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "ἡμέραν, ἄχρις οὗ τὸ Σήμερον καλεῖται, ἵνα μὴ σκληρυνθῇ ⸂τις ἐξ ὑμῶν⸃ ἀπάτῃ τῆς ἁμαρτίας·",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Hebrews 3:15",
+      "form": "σκληρύνητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "λέγεσθαι· Σήμερον ἐὰν τῆς φωνῆς αὐτοῦ ἀκούσητε, Μὴ σκληρύνητε τὰς καρδίας ὑμῶν ὡς ἐν τῷ παραπικρασμῷ.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Hebrews 4:7",
+      "form": "σκληρύνητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "⸀προείρηται, Σήμερον ἐὰν τῆς φωνῆς αὐτοῦ ἀκούσητε, μὴ σκληρύνητε τὰς καρδίας ὑμῶν·",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 3:8",
+      "negator": "μὴ",
+      "clause_text": "μὴ σκληρύνητε τὰς καρδίας ὑμῶν ὡς ἐν τῷ παραπικρασμῷ, κατὰ"
+    },
+    {
+      "ref": "Hebrews 3:13",
+      "negator": "μὴ",
+      "clause_text": "ἡμέραν, ἄχρις οὗ τὸ Σήμερον καλεῖται, ἵνα μὴ σκληρυνθῇ ⸂τις ἐξ ὑμῶν⸃ ἀπάτῃ τῆς ἁμαρτίας·"
+    },
+    {
+      "ref": "Hebrews 3:15",
+      "negator": "Μὴ",
+      "clause_text": "λέγεσθαι· Σήμερον ἐὰν τῆς φωνῆς αὐτοῦ ἀκούσητε, Μὴ σκληρύνητε τὰς καρδίας ὑμῶν ὡς ἐν τῷ παραπικρασμῷ."
+    },
+    {
+      "ref": "Hebrews 4:7",
+      "negator": "μὴ",
+      "clause_text": "⸀προείρηται, Σήμερον ἐὰν τῆς φωνῆς αὐτοῦ ἀκούσητε, μὴ σκληρύνητε τὰς καρδίας ὑμῶν·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 3:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 3:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 3:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 4:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Acts 19:9",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 9:18",
+      "reason": "occurs near θέλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

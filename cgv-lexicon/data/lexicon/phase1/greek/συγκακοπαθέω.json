@@ -1,0 +1,135 @@
+{
+  "lemma": "συγκακοπαθέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συγκακοπάθησον",
+      "count": 1
+    },
+    {
+      "form": "⸀συγκακοπάθησον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "imperative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 1:8",
+      "form": "συγκακοπάθησον",
+      "morph": "V-A-A-D-2S",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "μηδὲ ἐμὲ τὸν δέσμιον αὐτοῦ, ἀλλὰ",
+      "right_context": "τῷ εὐαγγελίῳ κατὰ δύναμιν θεοῦ,"
+    },
+    {
+      "ref": "2 Timothy 2:3",
+      "form": "⸀συγκακοπάθησον",
+      "morph": "V-A-A-D-2S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "ὡς καλὸς στρατιώτης ⸂Χριστοῦ Ἰησοῦ⸃."
+    }
+  ],
+  "books": {
+    "2 Timothy": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δέσμιος",
+      "display": "prisionero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρατιώτης",
+      "display": "soldado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Timothy 1:8",
+      "form": "συγκακοπάθησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "κυρίου ἡμῶν μηδὲ ἐμὲ τὸν δέσμιον αὐτοῦ, ἀλλὰ συγκακοπάθησον τῷ εὐαγγελίῳ κατὰ δύναμιν θεοῦ,"
+    },
+    {
+      "ref": "2 Timothy 2:3",
+      "form": "⸀συγκακοπάθησον",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "⸀συγκακοπάθησον ὡς καλὸς στρατιώτης ⸂Χριστοῦ Ἰησοῦ⸃."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 1:8",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 2:3",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

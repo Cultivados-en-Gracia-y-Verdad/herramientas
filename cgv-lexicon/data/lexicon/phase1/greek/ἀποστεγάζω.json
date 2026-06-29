@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀποστεγάζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπεστέγασαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 2:4",
+      "form": "ἀπεστέγασαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 4,
+      "left_context": "δυνάμενοι ⸀προσενέγκαι αὐτῷ διὰ τὸν ὄχλον",
+      "right_context": "τὴν στέγην ὅπου ἦν, καὶ ἐξορύξαντες"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προσφέρω",
+      "display": "ofrecer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στέγη",
+      "display": "techo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 2:4",
+      "reason": "occurs near προσφέρω, στέγη, ὄχλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

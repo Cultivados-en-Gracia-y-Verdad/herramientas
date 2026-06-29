@@ -1,0 +1,74 @@
+{
+  "lemma": "εὐνοέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "εὐνοῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 5:25",
+      "form": "εὐνοῶν",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 5,
+      "verse": 25,
+      "left_context": "ἴσθι",
+      "right_context": "τῷ ἀντιδίκῳ σου ταχὺ ἕως ὅτου"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀντίδικος",
+      "display": "adversario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταχύς",
+      "display": "rápido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 5:25",
+      "reason": "occurs near ταχύς, ἀντίδικος, ἕως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

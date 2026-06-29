@@ -1,0 +1,120 @@
+{
+  "lemma": "μεταστρέφω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "μεταστρέψαι",
+      "count": 1
+    },
+    {
+      "form": "μεταστραφήσεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 1:7",
+      "form": "μεταστρέψαι",
+      "morph": "V-A-A-N",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 7,
+      "left_context": "εἰσιν οἱ ταράσσοντες ὑμᾶς καὶ θέλοντες",
+      "right_context": "τὸ εὐαγγέλιον τοῦ Χριστοῦ."
+    },
+    {
+      "ref": "Acts 2:20",
+      "form": "μεταστραφήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Acts",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "ὁ ἥλιος",
+      "right_context": "εἰς σκότος καὶ ἡ σελήνη εἰς"
+    }
+  ],
+  "books": {
+    "Galatians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ταράσσω",
+      "display": "turbando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγέλιον",
+      "display": "evangelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἥλιος",
+      "display": "sol",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκότος",
+      "display": "tinieblas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σελήνη",
+      "display": "luna",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 2:20",
+      "reason": "occurs near ἥλιος"
+    },
+    {
+      "ref": "Galatians 1:7",
+      "reason": "occurs near Χριστός, εὐαγγέλιον, θέλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

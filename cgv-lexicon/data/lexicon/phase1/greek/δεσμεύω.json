@@ -1,0 +1,187 @@
+{
+  "lemma": "δεσμεύω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "δεσμεύων",
+      "count": 1
+    },
+    {
+      "form": "⸀ἐδεσμεύετο",
+      "count": 1
+    },
+    {
+      "form": "δεσμεύουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 2,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 22:4",
+      "form": "δεσμεύων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 4,
+      "left_context": "ταύτην τὴν ὁδὸν ἐδίωξα ἄχρι θανάτου,",
+      "right_context": "καὶ παραδιδοὺς εἰς φυλακὰς ἄνδρας τε"
+    },
+    {
+      "ref": "Luke 8:29",
+      "form": "⸀ἐδεσμεύετο",
+      "morph": "V-I-P-I-3S",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 29,
+      "left_context": "πολλοῖς γὰρ χρόνοις συνηρπάκει αὐτόν, καὶ",
+      "right_context": "ἁλύσεσιν καὶ πέδαις φυλασσόμενος, καὶ διαρρήσσων"
+    },
+    {
+      "ref": "Matthew 23:4",
+      "form": "δεσμεύουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 4,
+      "left_context": "",
+      "right_context": "⸀δὲ φορτία ⸀βαρέα καὶ ἐπιτιθέασιν ἐπὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διώκω",
+      "display": "perseguí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄχρι",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακή",
+      "display": "cárceles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναρπάζω",
+      "display": "había arrebatado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλυσις",
+      "display": "cadenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέδη",
+      "display": "grilletes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guardado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φορτίον",
+      "display": "cargas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαρύς",
+      "display": "pesados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτίθημι",
+      "display": "ponen",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:4",
+      "reason": "occurs near διώκω, θάνατος, παραδίδωμι"
+    },
+    {
+      "ref": "Luke 8:29",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 23:4",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

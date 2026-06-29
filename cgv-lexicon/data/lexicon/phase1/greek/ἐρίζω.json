@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐρίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐρίσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 12:19",
+      "form": "ἐρίσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 19,
+      "left_context": "οὐκ",
+      "right_context": "οὐδὲ κραυγάσει, οὐδὲ ἀκούσει τις ἐν"
+    }
+  ],
+  "books": {
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κραυγάζω",
+      "display": "gritará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 12:19",
+      "negator": "οὐκ",
+      "clause_text": "οὐκ ἐρίσει οὐδὲ κραυγάσει, οὐδὲ ἀκούσει τις ἐν ταῖς πλατείαις"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 12:19",
+      "reason": "occurs near κραυγάζω, ἀκούω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

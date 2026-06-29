@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐπιστομίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιστομίζειν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Titus 1:11",
+      "form": "ἐπιστομίζειν,",
+      "morph": "V-P-A-N",
+      "book": "Titus",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "οὓς δεῖ",
+      "right_context": "οἵτινες ὅλους οἴκους ἀνατρέπουσιν διδάσκοντες ἃ"
+    }
+  ],
+  "books": {
+    "Titus": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνατρέπω",
+      "display": "trastornan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Titus 1:11",
+      "reason": "occurs near δέω, οἶκος, ἀνατρέπω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

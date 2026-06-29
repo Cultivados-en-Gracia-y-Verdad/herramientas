@@ -1,0 +1,182 @@
+{
+  "lemma": "ἐξουσιάζω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐξουσιάζει",
+      "count": 2
+    },
+    {
+      "form": "ἐξουσιασθήσομαι",
+      "count": 1
+    },
+    {
+      "form": "ἐξουσιάζοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 1,
+      "present": 3
+    },
+    "voices": {
+      "passive": 1,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 6:12",
+      "form": "ἐξουσιασθήσομαι",
+      "morph": "V-F-P-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 6,
+      "verse": 12,
+      "left_context": "πάντα μοι ἔξεστιν· ἀλλ’ οὐκ ἐγὼ",
+      "right_context": "ὑπό τινος."
+    },
+    {
+      "ref": "1 Corinthians 7:4",
+      "form": "ἐξουσιάζει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 4,
+      "left_context": "ἡ γυνὴ τοῦ ἰδίου σώματος οὐκ",
+      "right_context": "ἀλλὰ ὁ ἀνήρ· ὁμοίως δὲ καὶ"
+    },
+    {
+      "ref": "1 Corinthians 7:4",
+      "form": "ἐξουσιάζει",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 4,
+      "left_context": "ὁ ἀνὴρ τοῦ ἰδίου σώματος οὐκ",
+      "right_context": "ἀλλὰ ἡ γυνή."
+    },
+    {
+      "ref": "Luke 22:25",
+      "form": "ἐξουσιάζοντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 22,
+      "verse": 25,
+      "left_context": "τῶν ἐθνῶν κυριεύουσιν αὐτῶν καὶ οἱ",
+      "right_context": "αὐτῶν εὐεργέται καλοῦνται."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 3,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "de·propio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "de·cuerpo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξεστι(ν)",
+      "display": "es·lícito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁμοίως",
+      "display": "igualmente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κυριεύω",
+      "display": "señorean",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐεργέτης",
+      "display": "bienhechores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "son llamado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 6:12",
+      "negator": "οὐκ",
+      "clause_text": "πάντα συμφέρει. πάντα μοι ἔξεστιν· ἀλλ’ οὐκ ἐγὼ ἐξουσιασθήσομαι ὑπό τινος."
+    },
+    {
+      "ref": "1 Corinthians 7:4",
+      "negator": "οὐκ",
+      "clause_text": "ἡ γυνὴ τοῦ ἰδίου σώματος οὐκ ἐξουσιάζει ἀλλὰ ὁ ἀνήρ· ὁμοίως δὲ καὶ ὁ ἀνὴρ"
+    },
+    {
+      "ref": "1 Corinthians 7:4",
+      "negator": "οὐκ",
+      "clause_text": "δὲ καὶ ὁ ἀνὴρ τοῦ ἰδίου σώματος οὐκ ἐξουσιάζει ἀλλὰ ἡ γυνή."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 6:12",
+      "reason": "occurs near ἔξεστι(ν)"
+    },
+    {
+      "ref": "1 Corinthians 7:4",
+      "reason": "occurs near γυνή, σῶμα, ἀνήρ"
+    },
+    {
+      "ref": "Luke 22:25",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

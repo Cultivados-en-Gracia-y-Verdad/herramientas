@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐπισωρεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπισωρεύσουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Timothy 4:3",
+      "form": "ἐπισωρεύσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 3,
+      "left_context": "ἀλλὰ κατὰ τὰς ⸂ἰδίας ἐπιθυμίας⸃ ἑαυτοῖς",
+      "right_context": "διδασκάλους κνηθόμενοι τὴν ἀκοήν,"
+    }
+  ],
+  "books": {
+    "2 Timothy": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἴδιος",
+      "display": "propias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμία",
+      "display": "deseos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκαλος",
+      "display": "maestros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κνήθομαι",
+      "display": "cosquilleados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκοή",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 4:3",
+      "reason": "occurs near διδάσκαλος, κνήθομαι, ἐπιθυμία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

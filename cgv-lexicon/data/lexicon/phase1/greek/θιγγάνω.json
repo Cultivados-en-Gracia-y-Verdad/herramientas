@@ -1,0 +1,149 @@
+{
+  "lemma": "θιγγάνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "θίγῃ",
+      "count": 2
+    },
+    {
+      "form": "θίγῃς,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:21",
+      "form": "θίγῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "Μὴ ἅψῃ μηδὲ γεύσῃ μηδὲ",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 11:28",
+      "form": "θίγῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 28,
+      "left_context": "ἵνα μὴ ὁ ὀλοθρεύων τὰ πρωτότοκα",
+      "right_context": "αὐτῶν."
+    },
+    {
+      "ref": "Hebrews 12:20",
+      "form": "θίγῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "ἔφερον γὰρ τὸ διαστελλόμενον· Κἂν θηρίον",
+      "right_context": "τοῦ ὄρους, λιθοβοληθήσεται·"
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "Colossians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἅπτω",
+      "display": "toces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεύομαι",
+      "display": "probes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλοθρεύω",
+      "display": "destruiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρωτότοκος",
+      "display": "primogénitos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαστέλλομαι",
+      "display": "mandado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἄν",
+      "display": "y·si",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θηρίον",
+      "display": "bestia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "de·monte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λιθοβολέω",
+      "display": "será apedreado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 2:21",
+      "negator": "μηδὲ",
+      "clause_text": "Μὴ ἅψῃ μηδὲ γεύσῃ μηδὲ θίγῃς,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:28",
+      "reason": "occurs near πρωτότοκος, ὀλοθρεύω"
+    },
+    {
+      "ref": "Hebrews 12:20",
+      "reason": "occurs near διαστέλλομαι"
+    },
+    {
+      "ref": "Colossians 2:21",
+      "reason": "occurs near γεύομαι, ἅπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,68 @@
+{
+  "lemma": "γαμίσκω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀γαμίσκονται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 20:34",
+      "form": "⸀γαμίσκονται,",
+      "morph": "V-P-P-I-3P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 34,
+      "left_context": "υἱοὶ τοῦ αἰῶνος τούτου γαμοῦσιν καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αἰών",
+      "display": "de·siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 20:34",
+      "reason": "occurs near αἰών, γαμέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

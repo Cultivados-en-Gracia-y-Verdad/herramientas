@@ -1,0 +1,333 @@
+{
+  "lemma": "περιτίθημι",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "περιέθηκεν",
+      "count": 2
+    },
+    {
+      "form": "περιτίθεμεν,",
+      "count": 1
+    },
+    {
+      "form": "περιθέντες",
+      "count": 1
+    },
+    {
+      "form": "περιτιθέασιν",
+      "count": 1
+    },
+    {
+      "form": "⸀περιθεὶς",
+      "count": 1
+    },
+    {
+      "form": "περιέθηκαν",
+      "count": 1
+    },
+    {
+      "form": "περιθεὶς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 5,
+      "participle": 3
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 6
+    },
+    "voices": {
+      "active": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 12:23",
+      "form": "περιτίθεμεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 23,
+      "left_context": "εἶναι τοῦ σώματος, τούτοις τιμὴν περισσοτέραν",
+      "right_context": "καὶ τὰ ἀσχήμονα ἡμῶν εὐσχημοσύνην περισσοτέραν"
+    },
+    {
+      "ref": "John 19:29",
+      "form": "περιθέντες",
+      "morph": "V-A-A-P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 29,
+      "left_context": "⸂σπόγγον οὖν μεστὸν τοῦ⸃ ὄξους ⸀ὑσσώπῳ",
+      "right_context": "προσήνεγκαν αὐτοῦ τῷ στόματι."
+    },
+    {
+      "ref": "Mark 12:1",
+      "form": "περιέθηκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "παραβολαῖς ⸀λαλεῖν· Ἀμπελῶνα ⸂ἄνθρωπος ἐφύτευσεν⸃, καὶ",
+      "right_context": "φραγμὸν καὶ ὤρυξεν ὑπολήνιον καὶ ᾠκοδόμησεν"
+    },
+    {
+      "ref": "Mark 15:17",
+      "form": "περιτιθέασιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 17,
+      "left_context": "καὶ ⸀ἐνδιδύσκουσιν αὐτὸν πορφύραν καὶ",
+      "right_context": "αὐτῷ πλέξαντες ἀκάνθινον στέφανον·"
+    },
+    {
+      "ref": "Mark 15:36",
+      "form": "⸀περιθεὶς",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 36,
+      "left_context": "δέ ⸂τις καὶ⸃ γεμίσας σπόγγον ὄξους",
+      "right_context": "καλάμῳ ἐπότιζεν αὐτόν, λέγων· Ἄφετε ἴδωμεν"
+    },
+    {
+      "ref": "Matthew 21:33",
+      "form": "περιέθηκεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 33,
+      "left_context": "ὅστις ἐφύτευσεν ἀμπελῶνα καὶ φραγμὸν αὐτῷ",
+      "right_context": "καὶ ὤρυξεν ἐν αὐτῷ ληνὸν καὶ"
+    },
+    {
+      "ref": "Matthew 27:28",
+      "form": "περιέθηκαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 28,
+      "left_context": "καὶ ἐκδύσαντες αὐτὸν ⸂χλαμύδα κοκκίνην",
+      "right_context": "αὐτῷ⸃,"
+    },
+    {
+      "ref": "Matthew 27:48",
+      "form": "περιθεὶς",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 48,
+      "left_context": "λαβὼν σπόγγον πλήσας τε ὄξους καὶ",
+      "right_context": "καλάμῳ ἐπότιζεν αὐτόν."
+    }
+  ],
+  "books": {
+    "Mark": 3,
+    "Matthew": 3,
+    "1 Corinthians": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὄξος",
+      "display": "de·vinagre",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμπελών",
+      "display": "viña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φυτεύω",
+      "display": "plantó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φραγμός",
+      "display": "cerca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀρύσσω",
+      "display": "cavó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σπόγγος",
+      "display": "esponja",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάλαμος",
+      "display": "caña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποτίζω",
+      "display": "dar·de·bebía",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "de·cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "honora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περισσότερος",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσχήμων",
+      "display": "indecorosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐσχημοσύνη",
+      "display": "decoro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεστός",
+      "display": "lleno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕσσωπος",
+      "display": "hisopo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσφέρω",
+      "display": "ofrecieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "boca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπολήνιον",
+      "display": "lagar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνδιδύσκω",
+      "display": "vesten",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορφύρα",
+      "display": "púrpura",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλέκω",
+      "display": "trenzados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκάνθινος",
+      "display": "de·espinas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στέφανος",
+      "display": "corona",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 12:1",
+      "reason": "occurs near φραγμός, φυτεύω, ἀμπελών"
+    },
+    {
+      "ref": "Mark 15:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 15:36",
+      "reason": "occurs near ὄξος"
+    },
+    {
+      "ref": "Matthew 21:33",
+      "reason": "occurs near φραγμός, φυτεύω, ἀμπελών"
+    },
+    {
+      "ref": "Matthew 27:28",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 27:48",
+      "reason": "occurs near ὄξος"
+    },
+    {
+      "ref": "1 Corinthians 12:23",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 19:29",
+      "reason": "occurs near ὄξος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

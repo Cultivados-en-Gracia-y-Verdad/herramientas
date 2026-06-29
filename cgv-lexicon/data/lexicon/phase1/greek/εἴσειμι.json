@@ -1,0 +1,211 @@
+{
+  "lemma": "εἴσειμι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "εἰσῄει",
+      "count": 2
+    },
+    {
+      "form": "εἰσίασιν",
+      "count": 1
+    },
+    {
+      "form": "εἰσιέναι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 2,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 9:6",
+      "form": "εἰσίασιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 6,
+      "left_context": "μὲν τὴν πρώτην σκηνὴν διὰ παντὸς",
+      "right_context": "οἱ ἱερεῖς τὰς λατρείας ἐπιτελοῦντες,"
+    },
+    {
+      "ref": "Acts 3:3",
+      "form": "εἰσιέναι",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "ὃς ἰδὼν Πέτρον καὶ Ἰωάννην μέλλοντας",
+      "right_context": "εἰς τὸ ἱερὸν ἠρώτα ἐλεημοσύνην ⸀λαβεῖν."
+    },
+    {
+      "ref": "Acts 21:18",
+      "form": "εἰσῄει",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 18,
+      "left_context": "τῇ δὲ ἐπιούσῃ",
+      "right_context": "ὁ Παῦλος σὺν ἡμῖν πρὸς Ἰάκωβον,"
+    },
+    {
+      "ref": "Acts 21:26",
+      "form": "εἰσῄει",
+      "morph": "V-I-A-I-3S",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 26,
+      "left_context": "τῇ ἐχομένῃ ἡμέρᾳ σὺν αὐτοῖς ἁγνισθεὶς",
+      "right_context": "εἰς τὸ ἱερόν, διαγγέλλων τὴν ἐκπλήρωσιν"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἱερός",
+      "display": "sagrado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκηνή",
+      "display": "tienda,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερεύς",
+      "display": "sacerdotes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λατρεία",
+      "display": "cultos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτελέω",
+      "display": "cumpliendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐρωτάω",
+      "display": "preguntaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεημοσύνη",
+      "display": "limosna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔπειμι",
+      "display": "veniendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁγνίζω",
+      "display": "purificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαγγέλλω",
+      "display": "anunciando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 21:26",
+      "reason": "occurs near ἱερός"
+    },
+    {
+      "ref": "Acts 3:3",
+      "reason": "occurs near ἱερός"
+    },
+    {
+      "ref": "Hebrews 9:6",
+      "reason": "occurs near λατρεία, πρῶτος, σκηνή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,239 @@
+{
+  "lemma": "θερμαίνομαι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "θερμαινόμενος.",
+      "count": 2
+    },
+    {
+      "form": "ἐθερμαίνοντο·",
+      "count": 1
+    },
+    {
+      "form": "θερμαινόμενος",
+      "count": 1
+    },
+    {
+      "form": "θερμαινόμενον",
+      "count": 1
+    },
+    {
+      "form": "θερμαίνεσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 4,
+      "imperative": 1
+    },
+    "tenses": {
+      "imperfect": 1,
+      "present": 5
+    },
+    "voices": {
+      "middle": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "John 18:18",
+      "form": "ἐθερμαίνοντο·",
+      "morph": "V-I-M-I-3P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 18,
+      "left_context": "ἀνθρακιὰν πεποιηκότες, ὅτι ψῦχος ἦν, καὶ",
+      "right_context": "ἦν δὲ ⸂καὶ ὁ Πέτρος μετ’"
+    },
+    {
+      "ref": "John 18:18",
+      "form": "θερμαινόμενος.",
+      "morph": "V-P-M-P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 18,
+      "left_context": "ὁ Πέτρος μετ’ αὐτῶν⸃ ἑστὼς καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 18:25",
+      "form": "θερμαινόμενος.",
+      "morph": "V-P-M-P",
+      "book": "John",
+      "chapter": 18,
+      "verse": 25,
+      "left_context": "Ἦν δὲ Σίμων Πέτρος ἑστὼς καὶ",
+      "right_context": "εἶπον οὖν αὐτῷ· Μὴ καὶ σὺ"
+    },
+    {
+      "ref": "Mark 14:54",
+      "form": "θερμαινόμενος",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 54,
+      "left_context": "ἦν συγκαθήμενος μετὰ τῶν ὑπηρετῶν καὶ",
+      "right_context": "πρὸς τὸ φῶς."
+    },
+    {
+      "ref": "Mark 14:67",
+      "form": "θερμαινόμενον",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 67,
+      "left_context": "καὶ ἰδοῦσα τὸν Πέτρον",
+      "right_context": "ἐμβλέψασα αὐτῷ λέγει· Καὶ σὺ μετὰ"
+    },
+    {
+      "ref": "James 2:16",
+      "form": "θερμαίνεσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "James",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "αὐτοῖς ἐξ ὑμῶν· Ὑπάγετε ἐν εἰρήνῃ,",
+      "right_context": "καὶ χορτάζεσθε, μὴ δῶτε δὲ αὐτοῖς"
+    }
+  ],
+  "books": {
+    "John": 3,
+    "Mark": 2,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "puesto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψῦχος",
+      "display": "frío",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγκάθημαι",
+      "display": "sentarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπηρέτης",
+      "display": "de·servidores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φῶς",
+      "display": "luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμβλέπω",
+      "display": "mirada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "ed",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰρήνη",
+      "display": "paz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χορτάζω",
+      "display": "saciad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "déis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "James 2:16",
+      "form": "θερμαίνεσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "δέ τις αὐτοῖς ἐξ ὑμῶν· Ὑπάγετε ἐν εἰρήνῃ, θερμαίνεσθε καὶ χορτάζεσθε, μὴ δῶτε δὲ αὐτοῖς τὰ ἐπιτήδεια"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 18:25",
+      "negator": "Μὴ",
+      "clause_text": "Ἦν δὲ Σίμων Πέτρος ἑστὼς καὶ θερμαινόμενος. εἶπον οὖν αὐτῷ· Μὴ καὶ σὺ ἐκ τῶν"
+    },
+    {
+      "ref": "James 2:16",
+      "negator": "μὴ",
+      "clause_text": "δέ τις αὐτοῖς ἐξ ὑμῶν· Ὑπάγετε ἐν εἰρήνῃ, θερμαίνεσθε καὶ χορτάζεσθε, μὴ δῶτε δὲ αὐτοῖς τὰ ἐπιτήδεια"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 2:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 18:18",
+      "reason": "occurs near Πέτρος, ψῦχος"
+    },
+    {
+      "ref": "John 18:25",
+      "reason": "occurs near Πέτρος, Σίμων, ἵστημι"
+    },
+    {
+      "ref": "Mark 14:54",
+      "reason": "occurs near συγκάθημαι"
+    },
+    {
+      "ref": "Mark 14:67",
+      "reason": "occurs near Πέτρος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,159 @@
+{
+  "lemma": "ζυμόω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἐζυμώθη",
+      "count": 2
+    },
+    {
+      "form": "ζυμοῖ;",
+      "count": 1
+    },
+    {
+      "form": "ζυμοῖ.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 5:6",
+      "form": "ζυμοῖ;",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "ὅτι μικρὰ ζύμη ὅλον τὸ φύραμα",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 5:9",
+      "form": "ζυμοῖ.",
+      "morph": "V-P-A-I-3S",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 9,
+      "left_context": "μικρὰ ζύμη ὅλον τὸ φύραμα",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 13:21",
+      "form": "ἐζυμώθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 21,
+      "left_context": "εἰς ἀλεύρου σάτα τρία ἕως οὗ",
+      "right_context": "ὅλον."
+    },
+    {
+      "ref": "Matthew 13:33",
+      "form": "ἐζυμώθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 13,
+      "verse": 33,
+      "left_context": "εἰς ἀλεύρου σάτα τρία ἕως οὗ",
+      "right_context": "ὅλον."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 1,
+    "Galatians": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "μικρός",
+      "display": "pequeña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζύμη",
+      "display": "levadura",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φύραμα",
+      "display": "masa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλευρον",
+      "display": "de·harina",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάτον",
+      "display": "satas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 5:6",
+      "reason": "occurs near ζύμη, μικρός, φύραμα"
+    },
+    {
+      "ref": "Galatians 5:9",
+      "reason": "occurs near ζύμη, μικρός, φύραμα"
+    },
+    {
+      "ref": "Luke 13:21",
+      "reason": "occurs near ἄλευρον, ὅλος"
+    },
+    {
+      "ref": "Matthew 13:33",
+      "reason": "occurs near ἄλευρον, ὅλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

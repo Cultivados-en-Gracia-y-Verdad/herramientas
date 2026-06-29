@@ -1,0 +1,80 @@
+{
+  "lemma": "τρίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "τρίζει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 9:18",
+      "form": "τρίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "καταλάβῃ ῥήσσει αὐτόν, καὶ ἀφρίζει καὶ",
+      "right_context": "τοὺς ⸀ὀδόντας καὶ ξηραίνεται· καὶ εἶπα"
+    }
+  ],
+  "books": {
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ῥήγνυμι",
+      "display": "rasga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφρίζω",
+      "display": "echar·espuma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀδούς",
+      "display": "dientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξηραίνω",
+      "display": "es secado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 9:18",
+      "reason": "occurs near ξηραίνω, ἀφρίζω, ὀδούς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,200 @@
+{
+  "lemma": "ὑποδέχομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ὑπεδέξατο",
+      "count": 2
+    },
+    {
+      "form": "ὑποδέδεκται",
+      "count": 1
+    },
+    {
+      "form": "ὑποδεξαμένη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 17:7",
+      "form": "ὑποδέδεκται",
+      "morph": "V-X-M-I-3S",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 7,
+      "left_context": "οὓς",
+      "right_context": "Ἰάσων· καὶ οὗτοι πάντες ἀπέναντι τῶν"
+    },
+    {
+      "ref": "Luke 10:38",
+      "form": "ὑπεδέξατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 38,
+      "left_context": "τινά· γυνὴ δέ τις ὀνόματι Μάρθα",
+      "right_context": "⸀αὐτὸν."
+    },
+    {
+      "ref": "Luke 19:6",
+      "form": "ὑπεδέξατο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 6,
+      "left_context": "καὶ σπεύσας κατέβη, καὶ",
+      "right_context": "αὐτὸν χαίρων."
+    },
+    {
+      "ref": "James 2:25",
+      "form": "ὑποδεξαμένη",
+      "morph": "V-A-M-P",
+      "book": "James",
+      "chapter": 2,
+      "verse": 25,
+      "left_context": "ἡ πόρνη οὐκ ἐξ ἔργων ἐδικαιώθη,",
+      "right_context": "τοὺς ἀγγέλους καὶ ἑτέρᾳ ὁδῷ ἐκβαλοῦσα;"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Acts": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰάσων",
+      "display": "Jason",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέναντι",
+      "display": "en·frente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μάρθα",
+      "display": "Marta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπεύδω",
+      "display": "apresurarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταβαίνω",
+      "display": "bajó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "gozando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόρνη",
+      "display": "ramera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "de·obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιόω",
+      "display": "fue justificado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángeles",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "James 2:25",
+      "negator": "οὐκ",
+      "clause_text": "καὶ Ῥαὰβ ἡ πόρνη οὐκ ἐξ ἔργων ἐδικαιώθη, ὑποδεξαμένη τοὺς ἀγγέλους καὶ ἑτέρᾳ ὁδῷ ἐκβαλοῦσα;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 10:38",
+      "reason": "occurs near Μάρθα, γυνή, ὄνομα"
+    },
+    {
+      "ref": "Luke 19:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 17:7",
+      "reason": "occurs near ἀπέναντι, Ἰάσων"
+    },
+    {
+      "ref": "James 2:25",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

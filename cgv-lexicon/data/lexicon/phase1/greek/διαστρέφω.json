@@ -1,0 +1,323 @@
+{
+  "lemma": "διαστρέφω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "διεστραμμένη,",
+      "count": 2
+    },
+    {
+      "form": "διεστραμμένης,",
+      "count": 1
+    },
+    {
+      "form": "διαστρέψαι",
+      "count": 1
+    },
+    {
+      "form": "διαστρέφων",
+      "count": 1
+    },
+    {
+      "form": "διεστραμμένα",
+      "count": 1
+    },
+    {
+      "form": "διαστρέφοντα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 6,
+      "infinitive": 1
+    },
+    "tenses": {
+      "perfect": 4,
+      "aorist": 1,
+      "present": 2
+    },
+    "voices": {
+      "passive": 4,
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 2:15",
+      "form": "διεστραμμένης,",
+      "morph": "V-X-P-P",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "θεοῦ ⸂ἄμωμα μέσον⸃ γενεᾶς σκολιᾶς καὶ",
+      "right_context": "ἐν οἷς φαίνεσθε ὡς φωστῆρες ἐν"
+    },
+    {
+      "ref": "Acts 13:8",
+      "form": "διαστρέψαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 8,
+      "left_context": "γὰρ μεθερμηνεύεται τὸ ὄνομα αὐτοῦ, ζητῶν",
+      "right_context": "τὸν ἀνθύπατον ἀπὸ τῆς πίστεως."
+    },
+    {
+      "ref": "Acts 13:10",
+      "form": "διαστρέφων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 10,
+      "left_context": "διαβόλου, ἐχθρὲ πάσης δικαιοσύνης, οὐ παύσῃ",
+      "right_context": "τὰς ⸀ὁδοὺς κυρίου τὰς εὐθείας;"
+    },
+    {
+      "ref": "Acts 20:30",
+      "form": "διεστραμμένα",
+      "morph": "V-X-P-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 30,
+      "left_context": "ἐξ ὑμῶν αὐτῶν ἀναστήσονται ἄνδρες λαλοῦντες",
+      "right_context": "τοῦ ἀποσπᾶν τοὺς μαθητὰς ὀπίσω ⸀ἑαυτῶν·"
+    },
+    {
+      "ref": "Luke 9:41",
+      "form": "διεστραμμένη,",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 41,
+      "left_context": "Ἰησοῦς εἶπεν· Ὦ γενεὰ ἄπιστος καὶ",
+      "right_context": "ἕως πότε ἔσομαι πρὸς ὑμᾶς καὶ"
+    },
+    {
+      "ref": "Luke 23:2",
+      "form": "διαστρέφοντα",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 2,
+      "left_context": "δὲ κατηγορεῖν αὐτοῦ λέγοντες· Τοῦτον εὕραμεν",
+      "right_context": "τὸ ἔθνος ⸀ἡμῶν καὶ κωλύοντα ⸂φόρους"
+    },
+    {
+      "ref": "Matthew 17:17",
+      "form": "διεστραμμένη,",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 17,
+      "left_context": "Ἰησοῦς εἶπεν· Ὦ γενεὰ ἄπιστος καὶ",
+      "right_context": "ἕως πότε ⸂μεθ’ ὑμῶν ἔσομαι⸃; ἕως"
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Luke": 2,
+    "Philippians": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "γενεά",
+      "display": "de·generación",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὦ",
+      "display": "oh",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄπιστος",
+      "display": "incrédula",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πότε",
+      "display": "cuándo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄμωμος",
+      "display": "sin·mancha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκολιός",
+      "display": "de·torcida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φαίνω",
+      "display": "aparecéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωστήρ",
+      "display": "luminares",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεθερμηνεύω",
+      "display": "es interpretado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνθύπατος",
+      "display": "procónsul",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐχθρός",
+      "display": "enemigo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "de·justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παύω",
+      "display": "cesarás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "caminos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐθύς",
+      "display": "en·seguida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantarán",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαλέω",
+      "display": "hablando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποσπάω",
+      "display": "arrancar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 13:10",
+      "negator": "οὐ",
+      "clause_text": "ῥᾳδιουργίας, υἱὲ διαβόλου, ἐχθρὲ πάσης δικαιοσύνης, οὐ παύσῃ διαστρέφων τὰς ⸀ὁδοὺς κυρίου τὰς εὐθείας;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 13:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 20:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 23:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 9:41",
+      "reason": "occurs near γενεά, πότε, ἄπιστος"
+    },
+    {
+      "ref": "Matthew 17:17",
+      "reason": "occurs near γενεά, πότε, ἄπιστος"
+    },
+    {
+      "ref": "Philippians 2:15",
+      "reason": "occurs near γενεά"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

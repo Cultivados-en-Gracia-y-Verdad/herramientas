@@ -1,0 +1,86 @@
+{
+  "lemma": "ἀναπτύσσω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "⸀ἀναπτύξας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 4:17",
+      "form": "⸀ἀναπτύξας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "αὐτῷ βιβλίον ⸂τοῦ προφήτου Ἠσαΐου⸃ καὶ",
+      "right_context": "τὸ βιβλίον εὗρεν τὸν τόπον οὗ"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βιβλίον",
+      "display": "libro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προφήτης",
+      "display": "de·profeta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἠσαΐας",
+      "display": "de·Isaías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "halló",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τόπος",
+      "display": "lugar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 4:17",
+      "reason": "occurs near βιβλίον, εὑρίσκω, προφήτης"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

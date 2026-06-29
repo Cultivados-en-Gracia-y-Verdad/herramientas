@@ -1,0 +1,68 @@
+{
+  "lemma": "μυέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "μεμύημαι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 4:12",
+      "form": "μεμύημαι,",
+      "morph": "V-X-P-I-1S",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 12,
+      "left_context": "περισσεύειν· ἐν παντὶ καὶ ἐν πᾶσιν",
+      "right_context": "καὶ χορτάζεσθαι καὶ πεινᾶν, καὶ περισσεύειν"
+    }
+  ],
+  "books": {
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χορτάζω",
+      "display": "saciar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πεινάω",
+      "display": "tener·hambre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Philippians 4:12",
+      "reason": "occurs near πεινάω, χορτάζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

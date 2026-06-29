@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐπιλείπω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιλείψει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "future": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 11:32",
+      "form": "ἐπιλείψει",
+      "morph": "V-F-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 32,
+      "left_context": "Καὶ τί ἔτι λέγω;",
+      "right_context": "⸂με γὰρ⸃ διηγούμενον ὁ χρόνος περὶ"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔτι",
+      "display": "aún",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διηγέομαι",
+      "display": "relatando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:32",
+      "reason": "occurs near διηγέομαι, χρόνος, ἔτι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

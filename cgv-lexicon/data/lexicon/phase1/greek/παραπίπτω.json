@@ -1,0 +1,80 @@
+{
+  "lemma": "παραπίπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παραπεσόντας,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 6:6",
+      "form": "παραπεσόντας,",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 6,
+      "left_context": "καὶ",
+      "right_context": "πάλιν ἀνακαινίζειν εἰς μετάνοιαν, ἀνασταυροῦντας ἑαυτοῖς"
+    }
+  ],
+  "books": {
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνακαινίζω",
+      "display": "renovar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μετάνοια",
+      "display": "metanoia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνασταυρόω",
+      "display": "crucificar·de·nuevo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 6:6",
+      "reason": "occurs near μετάνοια, πάλιν, ἀνακαινίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,107 @@
+{
+  "lemma": "ἀφοράω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀφίδω",
+      "count": 1
+    },
+    {
+      "form": "ἀφορῶντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Philippians 2:23",
+      "form": "ἀφίδω",
+      "morph": "V-A-A-S-1S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "μὲν οὖν ἐλπίζω πέμψαι ὡς ἂν",
+      "right_context": "τὰ περὶ ἐμὲ ἐξαυτῆς·"
+    },
+    {
+      "ref": "Hebrews 12:2",
+      "form": "ἀφορῶντες",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "εἰς τὸν τῆς πίστεως ἀρχηγὸν καὶ"
+    }
+  ],
+  "books": {
+    "Philippians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐλπίζω",
+      "display": "espero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "enviar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξαυτῆς",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχηγός",
+      "display": "autor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:2",
+      "reason": "occurs near πίστις, ἀρχηγός"
+    },
+    {
+      "ref": "Philippians 2:23",
+      "reason": "occurs near πέμπω, ἐλπίζω, ἐξαυτῆς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

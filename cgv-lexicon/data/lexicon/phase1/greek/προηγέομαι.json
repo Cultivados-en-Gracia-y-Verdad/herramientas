@@ -1,0 +1,74 @@
+{
+  "lemma": "προηγέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προηγούμενοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 12:10",
+      "form": "προηγούμενοι,",
+      "morph": "V-P-M-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 10,
+      "left_context": "εἰς ἀλλήλους φιλόστοργοι, τῇ τιμῇ ἀλλήλους",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φιλόστοργος",
+      "display": "afectuosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "honora",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 12:10",
+      "reason": "occurs near τιμή, φιλόστοργος, ἀλλήλων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

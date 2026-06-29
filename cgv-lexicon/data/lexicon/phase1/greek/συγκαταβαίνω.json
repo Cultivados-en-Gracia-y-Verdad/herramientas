@@ -1,0 +1,68 @@
+{
+  "lemma": "συγκαταβαίνω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συγκαταβάντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 25:5",
+      "form": "συγκαταβάντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 5,
+      "left_context": "Οἱ οὖν ⸂ἐν ὑμῖν, φησίν, δυνατοὶ⸃",
+      "right_context": "εἴ τί ἐστιν ἐν τῷ ἀνδρὶ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "φημί",
+      "display": "dice",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderosos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 25:5",
+      "reason": "occurs near δυνατός, φημί"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,80 @@
+{
+  "lemma": "κατακλύζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "κατακλυσθεὶς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 3:6",
+      "form": "κατακλυσθεὶς",
+      "morph": "V-A-P-P",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "δι’ ὧν ὁ τότε κόσμος ὕδατι",
+      "right_context": "ἀπώλετο·"
+    }
+  ],
+  "books": {
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπόλλυμι",
+      "display": "destruió",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 3:6",
+      "reason": "occurs near κόσμος, τότε, ἀπόλλυμι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

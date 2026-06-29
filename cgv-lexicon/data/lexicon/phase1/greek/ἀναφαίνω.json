@@ -1,0 +1,108 @@
+{
+  "lemma": "ἀναφαίνω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "⸀ἀναφάναντες",
+      "count": 1
+    },
+    {
+      "form": "ἀναφαίνεσθαι·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 21:3",
+      "form": "⸀ἀναφάναντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 3,
+      "left_context": "",
+      "right_context": "δὲ τὴν Κύπρον καὶ καταλιπόντες αὐτὴν"
+    },
+    {
+      "ref": "Luke 19:11",
+      "form": "ἀναφαίνεσθαι·",
+      "morph": "V-P-P-N",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 11,
+      "left_context": "παραχρῆμα μέλλει ἡ βασιλεία τοῦ θεοῦ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Κύπρος",
+      "display": "Chipre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταλείπω",
+      "display": "dejados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:3",
+      "reason": "occurs near Κύπρος, καταλείπω"
+    },
+    {
+      "ref": "Luke 19:11",
+      "reason": "occurs near βασιλεία, θεός, μέλλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,212 @@
+{
+  "lemma": "μιμέομαι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "μιμεῖσθαι",
+      "count": 2
+    },
+    {
+      "form": "μιμοῦ",
+      "count": 1
+    },
+    {
+      "form": "μιμεῖσθε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 2,
+      "imperative": 2
+    },
+    "tenses": {
+      "present": 4
+    },
+    "voices": {
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Thessalonians 3:7",
+      "form": "μιμεῖσθαι",
+      "morph": "V-P-M-N",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "αὐτοὶ γὰρ οἴδατε πῶς δεῖ",
+      "right_context": "ἡμᾶς, ὅτι οὐκ ἠτακτήσαμεν ἐν ὑμῖν"
+    },
+    {
+      "ref": "2 Thessalonians 3:9",
+      "form": "μιμεῖσθαι",
+      "morph": "V-P-M-N",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "ἑαυτοὺς τύπον δῶμεν ὑμῖν εἰς τὸ",
+      "right_context": "ἡμᾶς."
+    },
+    {
+      "ref": "3 John 1:11",
+      "form": "μιμοῦ",
+      "morph": "V-P-M-D-2S",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "Ἀγαπητέ, μὴ",
+      "right_context": "τὸ κακὸν ἀλλὰ τὸ ἀγαθόν. ὁ"
+    },
+    {
+      "ref": "Hebrews 13:7",
+      "form": "μιμεῖσθε",
+      "morph": "V-P-M-D-2P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "ὧν ἀναθεωροῦντες τὴν ἔκβασιν τῆς ἀναστροφῆς",
+      "right_context": "τὴν πίστιν."
+    }
+  ],
+  "books": {
+    "2 Thessalonians": 2,
+    "3 John": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἶδα",
+      "display": "habéis sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀτακτέω",
+      "display": "andar·desordenadamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τύπος",
+      "display": "marca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "demos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαπητός",
+      "display": "amado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακός",
+      "display": "malo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναθεωρέω",
+      "display": "contemplando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔκβασις",
+      "display": "salida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναστροφή",
+      "display": "de·conducta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "3 John 1:11",
+      "form": "μιμοῦ",
+      "morph": "V-P-M-D-2S",
+      "clause_text": "Ἀγαπητέ, μὴ μιμοῦ τὸ κακὸν ἀλλὰ τὸ ἀγαθόν. ὁ ἀγαθοποιῶν ἐκ",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Hebrews 13:7",
+      "form": "μιμεῖσθε",
+      "morph": "V-P-M-D-2P",
+      "clause_text": "τοῦ θεοῦ, ὧν ἀναθεωροῦντες τὴν ἔκβασιν τῆς ἀναστροφῆς μιμεῖσθε τὴν πίστιν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Thessalonians 3:7",
+      "negator": "οὐκ",
+      "clause_text": "αὐτοὶ γὰρ οἴδατε πῶς δεῖ μιμεῖσθαι ἡμᾶς, ὅτι οὐκ ἠτακτήσαμεν ἐν ὑμῖν"
+    },
+    {
+      "ref": "3 John 1:11",
+      "negator": "μὴ",
+      "clause_text": "Ἀγαπητέ, μὴ μιμοῦ τὸ κακὸν ἀλλὰ τὸ ἀγαθόν. ὁ ἀγαθοποιῶν ἐκ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "3 John 1:11",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Hebrews 13:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Thessalonians 3:7",
+      "reason": "occurs near δέω, οἶδα, πῶς"
+    },
+    {
+      "ref": "2 Thessalonians 3:9",
+      "reason": "occurs near τύπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

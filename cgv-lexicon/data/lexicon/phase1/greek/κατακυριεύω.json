@@ -1,0 +1,195 @@
+{
+  "lemma": "κατακυριεύω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "κατακυριεύουσιν",
+      "count": 2
+    },
+    {
+      "form": "κατακυριεύοντες",
+      "count": 1
+    },
+    {
+      "form": "⸂κατακυριεύσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 2
+    },
+    "tenses": {
+      "present": 3,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 5:3",
+      "form": "κατακυριεύοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 3,
+      "left_context": "μηδ’ ὡς",
+      "right_context": "τῶν κλήρων ἀλλὰ τύποι γινόμενοι τοῦ"
+    },
+    {
+      "ref": "Acts 19:16",
+      "form": "⸂κατακυριεύσας",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 19,
+      "verse": 16,
+      "left_context": "ᾧ ἦν τὸ πνεῦμα τὸ πονηρὸν",
+      "right_context": "ἀμφοτέρων⸃ ἴσχυσεν κατ’ αὐτῶν, ὥστε γυμνοὺς"
+    },
+    {
+      "ref": "Mark 10:42",
+      "form": "κατακυριεύουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 42,
+      "left_context": "ὅτι οἱ δοκοῦντες ἄρχειν τῶν ἐθνῶν",
+      "right_context": "αὐτῶν καὶ οἱ μεγάλοι αὐτῶν κατεξουσιάζουσιν"
+    },
+    {
+      "ref": "Matthew 20:25",
+      "form": "κατακυριεύουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 25,
+      "left_context": "Οἴδατε ὅτι οἱ ἄρχοντες τῶν ἐθνῶν",
+      "right_context": "αὐτῶν καὶ οἱ μεγάλοι κατεξουσιάζουσιν αὐτῶν."
+    }
+  ],
+  "books": {
+    "1 Peter": 1,
+    "Acts": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔθνος",
+      "display": "de·naciónes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grandes",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κλῆρος",
+      "display": "de·suertes,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τύπος",
+      "display": "marcas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "malvado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμφότεροι",
+      "display": "de·amboses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "pudo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "pareciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχων",
+      "display": "gobernantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατεξουσιάζω",
+      "display": "ejercer·autoridad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Peter 5:3",
+      "negator": "μηδ’",
+      "clause_text": "μηδ’ ὡς κατακυριεύοντες τῶν κλήρων ἀλλὰ τύποι γινόμενοι τοῦ ποιμνίου·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 5:3",
+      "reason": "occurs near κλῆρος, τύπος"
+    },
+    {
+      "ref": "Acts 19:16",
+      "reason": "occurs near πνεῦμα"
+    },
+    {
+      "ref": "Mark 10:42",
+      "reason": "occurs near μέγας, ἔθνος"
+    },
+    {
+      "ref": "Matthew 20:25",
+      "reason": "occurs near μέγας, ἔθνος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

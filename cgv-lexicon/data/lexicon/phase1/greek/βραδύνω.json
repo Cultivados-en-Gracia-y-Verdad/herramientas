@@ -1,0 +1,112 @@
+{
+  "lemma": "βραδύνω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "βραδύνω,",
+      "count": 1
+    },
+    {
+      "form": "βραδύνει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 3:15",
+      "form": "βραδύνω,",
+      "morph": "V-P-A-S-1S",
+      "book": "1 Timothy",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "ἐὰν δὲ",
+      "right_context": "ἵνα εἰδῇς πῶς δεῖ ἐν οἴκῳ"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "form": "βραδύνει",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Peter",
+      "chapter": 3,
+      "verse": 9,
+      "left_context": "οὐ",
+      "right_context": "⸀κύριος τῆς ἐπαγγελίας, ὥς τινες βραδύτητα"
+    }
+  ],
+  "books": {
+    "1 Timothy": 1,
+    "2 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἶδα",
+      "display": "sabas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "ata",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "de·promesa",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 3:9",
+      "negator": "οὐ",
+      "clause_text": "οὐ βραδύνει ⸀κύριος τῆς ἐπαγγελίας, ὥς τινες βραδύτητα ἡγοῦνται, ἀλλὰ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 3:15",
+      "reason": "occurs near δέω, οἶδα, πῶς"
+    },
+    {
+      "ref": "2 Peter 3:9",
+      "reason": "occurs near κύριος, ἐπαγγελία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

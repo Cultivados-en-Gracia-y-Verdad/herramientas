@@ -1,0 +1,189 @@
+{
+  "lemma": "χρονίζω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "Χρονίζει",
+      "count": 2
+    },
+    {
+      "form": "χρονίσει·",
+      "count": 1
+    },
+    {
+      "form": "χρονίζειν",
+      "count": 1
+    },
+    {
+      "form": "χρονίζοντος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "future": 1,
+      "present": 4
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 10:37",
+      "form": "χρονίσει·",
+      "morph": "V-F-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 37,
+      "left_context": "ὅσον, ὁ ἐρχόμενος ἥξει καὶ οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 1:21",
+      "form": "χρονίζειν",
+      "morph": "V-P-A-N",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 21,
+      "left_context": "τὸν Ζαχαρίαν, καὶ ἐθαύμαζον ἐν τῷ",
+      "right_context": "⸂ἐν τῷ ναῷ αὐτόν⸃."
+    },
+    {
+      "ref": "Luke 12:45",
+      "form": "Χρονίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 45,
+      "left_context": "δοῦλος ἐκεῖνος ἐν τῇ καρδίᾳ αὐτοῦ·",
+      "right_context": "ὁ κύριός μου ἔρχεσθαι, καὶ ἄρξηται"
+    },
+    {
+      "ref": "Matthew 24:48",
+      "form": "Χρονίζει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 48,
+      "left_context": "δοῦλος ἐκεῖνος ἐν τῇ καρδίᾳ αὐτοῦ·",
+      "right_context": "⸂μου ὁ κύριος⸃,"
+    },
+    {
+      "ref": "Matthew 25:5",
+      "form": "χρονίζοντος",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 5,
+      "left_context": "",
+      "right_context": "δὲ τοῦ νυμφίου ἐνύσταξαν πᾶσαι καὶ"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Matthew": 2,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρχομαι",
+      "display": "veniendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἥκω",
+      "display": "vendrá",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ζαχαρίας",
+      "display": "Zacarías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θαυμάζω",
+      "display": "asombraban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναός",
+      "display": "templo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυμφίος",
+      "display": "de·novio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυστάζω",
+      "display": "cabecearon",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 10:37",
+      "negator": "οὐ",
+      "clause_text": "μικρὸν ὅσον ὅσον, ὁ ἐρχόμενος ἥξει καὶ οὐ χρονίσει·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 12:45",
+      "reason": "occurs near καρδία, κύριος, ἔρχομαι"
+    },
+    {
+      "ref": "Luke 1:21",
+      "reason": "occurs near Ζαχαρίας"
+    },
+    {
+      "ref": "Matthew 24:48",
+      "reason": "occurs near καρδία, κύριος"
+    },
+    {
+      "ref": "Matthew 25:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 10:37",
+      "reason": "occurs near ἔρχομαι, ἥκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

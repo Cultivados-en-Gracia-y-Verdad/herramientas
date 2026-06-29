@@ -1,0 +1,362 @@
+{
+  "lemma": "πλεονάζω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "πλεονάζοντα",
+      "count": 2
+    },
+    {
+      "form": "πλεονάσαι",
+      "count": 1
+    },
+    {
+      "form": "πλεονάσασα",
+      "count": 1
+    },
+    {
+      "form": "ἐπλεόνασεν,",
+      "count": 1
+    },
+    {
+      "form": "πλεονάζει",
+      "count": 1
+    },
+    {
+      "form": "πλεονάσῃ",
+      "count": 1
+    },
+    {
+      "form": "ἐπλεόνασεν",
+      "count": 1
+    },
+    {
+      "form": "πλεονάσῃ;",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "optative": 1,
+      "participle": 3,
+      "indicative": 3,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "aorist": 6,
+      "present": 3
+    },
+    "voices": {
+      "active": 9
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 3:12",
+      "form": "πλεονάσαι",
+      "morph": "V-A-A-O-3S",
+      "book": "1 Thessalonians",
+      "chapter": 3,
+      "verse": 12,
+      "left_context": "ὑμᾶς δὲ ὁ κύριος",
+      "right_context": "καὶ περισσεύσαι τῇ ἀγάπῃ εἰς ἀλλήλους"
+    },
+    {
+      "ref": "2 Corinthians 4:15",
+      "form": "πλεονάσασα",
+      "morph": "V-A-A-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 15,
+      "left_context": "πάντα δι’ ὑμᾶς, ἵνα ἡ χάρις",
+      "right_context": "διὰ τῶν πλειόνων τὴν εὐχαριστίαν περισσεύσῃ"
+    },
+    {
+      "ref": "2 Corinthians 8:15",
+      "form": "ἐπλεόνασεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 8,
+      "verse": 15,
+      "left_context": "καθὼς γέγραπται· Ὁ τὸ πολὺ οὐκ",
+      "right_context": "καὶ ὁ τὸ ὀλίγον οὐκ ἠλαττόνησεν."
+    },
+    {
+      "ref": "2 Peter 1:8",
+      "form": "πλεονάζοντα",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "ταῦτα γὰρ ὑμῖν ὑπάρχοντα καὶ",
+      "right_context": "οὐκ ἀργοὺς οὐδὲ ἀκάρπους καθίστησιν εἰς"
+    },
+    {
+      "ref": "2 Thessalonians 1:3",
+      "form": "πλεονάζει",
+      "morph": "V-P-A-I-3S",
+      "book": "2 Thessalonians",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "ὅτι ὑπεραυξάνει ἡ πίστις ὑμῶν καὶ",
+      "right_context": "ἡ ἀγάπη ἑνὸς ἑκάστου πάντων ὑμῶν"
+    },
+    {
+      "ref": "Philippians 4:17",
+      "form": "πλεονάζοντα",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "δόμα, ἀλλὰ ἐπιζητῶ τὸν καρπὸν τὸν",
+      "right_context": "εἰς λόγον ὑμῶν."
+    },
+    {
+      "ref": "Romans 5:20",
+      "form": "πλεονάσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "νόμος δὲ παρεισῆλθεν ἵνα",
+      "right_context": "τὸ παράπτωμα· οὗ δὲ ἐπλεόνασεν ἡ"
+    },
+    {
+      "ref": "Romans 5:20",
+      "form": "ἐπλεόνασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 5,
+      "verse": 20,
+      "left_context": "ἵνα πλεονάσῃ τὸ παράπτωμα· οὗ δὲ",
+      "right_context": "ἡ ἁμαρτία, ὑπερεπερίσσευσεν ἡ χάρις,"
+    },
+    {
+      "ref": "Romans 6:1",
+      "form": "πλεονάσῃ;",
+      "morph": "V-A-A-S-3S",
+      "book": "Romans",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "⸀ἐπιμένωμεν τῇ ἁμαρτίᾳ, ἵνα ἡ χάρις",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Romans": 3,
+    "2 Corinthians": 2,
+    "1 Thessalonians": 1,
+    "2 Peter": 1,
+    "2 Thessalonians": 1,
+    "Philippians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παράπτωμα",
+      "display": "ofensa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὗ",
+      "display": "del·cual",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλεονάζω",
+      "display": "abundó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περισσεύω",
+      "display": "abunde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐχαριστία",
+      "display": "acción·de·gracias",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγος",
+      "display": "poco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάρχω",
+      "display": "existiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργός",
+      "display": "ociosos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκαρπος",
+      "display": "sin·fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθίστημι",
+      "display": "establece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπεραυξάνω",
+      "display": "crecer·sobremanera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "de·uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "de·cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιζητέω",
+      "display": "busco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρπός",
+      "display": "fruto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρεισέρχομαι",
+      "display": "entró",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 8:15",
+      "negator": "οὐκ",
+      "clause_text": "καθὼς γέγραπται· Ὁ τὸ πολὺ οὐκ ἐπλεόνασεν, καὶ ὁ τὸ ὀλίγον οὐκ ἠλαττόνησεν."
+    },
+    {
+      "ref": "2 Peter 1:8",
+      "negator": "οὐκ",
+      "clause_text": "ταῦτα γὰρ ὑμῖν ὑπάρχοντα καὶ πλεονάζοντα οὐκ ἀργοὺς οὐδὲ ἀκάρπους καθίστησιν εἰς τὴν τοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 5:20",
+      "reason": "occurs near οὗ, παράπτωμα"
+    },
+    {
+      "ref": "Romans 6:1",
+      "reason": "occurs near χάρις"
+    },
+    {
+      "ref": "2 Corinthians 4:15",
+      "reason": "occurs near πολύς, χάρις"
+    },
+    {
+      "ref": "2 Corinthians 8:15",
+      "reason": "occurs near πολύς"
+    },
+    {
+      "ref": "1 Thessalonians 3:12",
+      "reason": "occurs near ἀγάπη"
+    },
+    {
+      "ref": "2 Peter 1:8",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Thessalonians 1:3",
+      "reason": "occurs near ἀγάπη"
+    },
+    {
+      "ref": "Philippians 4:17",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

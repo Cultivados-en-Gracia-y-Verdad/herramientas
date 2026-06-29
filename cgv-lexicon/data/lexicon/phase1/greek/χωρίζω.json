@@ -1,0 +1,464 @@
+{
+  "lemma": "χωρίζω",
+  "language": "greek",
+  "total_occurrences": 13,
+  "forms": [
+    {
+      "form": "χωριζέτω.",
+      "count": 2
+    },
+    {
+      "form": "χωρισθῆναι—",
+      "count": 1
+    },
+    {
+      "form": "χωρισθῇ,",
+      "count": 1
+    },
+    {
+      "form": "χωρίζεται,",
+      "count": 1
+    },
+    {
+      "form": "χωριζέσθω·",
+      "count": 1
+    },
+    {
+      "form": "ἐχωρίσθη",
+      "count": 1
+    },
+    {
+      "form": "κεχωρισμένος",
+      "count": 1
+    },
+    {
+      "form": "χωρίζεσθαι,",
+      "count": 1
+    },
+    {
+      "form": "⸀χωρισθεὶς",
+      "count": 1
+    },
+    {
+      "form": "χωρίζεσθαι",
+      "count": 1
+    },
+    {
+      "form": "χωρίσει",
+      "count": 1
+    },
+    {
+      "form": "χωρίσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 4,
+      "subjunctive": 1,
+      "indicative": 3,
+      "imperative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 6,
+      "perfect": 1,
+      "future": 1
+    },
+    "voices": {
+      "passive": 9,
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:10",
+      "form": "χωρισθῆναι—",
+      "morph": "V-A-P-N",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 10,
+      "left_context": "ὁ κύριος, γυναῖκα ἀπὸ ἀνδρὸς μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 7:11",
+      "form": "χωρισθῇ,",
+      "morph": "V-A-P-S-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 11,
+      "left_context": "ἐὰν δὲ καὶ",
+      "right_context": "μενέτω ἄγαμος ἢ τῷ ἀνδρὶ καταλλαγήτω—"
+    },
+    {
+      "ref": "1 Corinthians 7:15",
+      "form": "χωρίζεται,",
+      "morph": "V-P-P-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "εἰ δὲ ὁ ἄπιστος",
+      "right_context": "χωριζέσθω· οὐ δεδούλωται ὁ ἀδελφὸς ἢ"
+    },
+    {
+      "ref": "1 Corinthians 7:15",
+      "form": "χωριζέσθω·",
+      "morph": "V-P-P-D-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 15,
+      "left_context": "εἰ δὲ ὁ ἄπιστος χωρίζεται,",
+      "right_context": "οὐ δεδούλωται ὁ ἀδελφὸς ἢ ἡ"
+    },
+    {
+      "ref": "Philemon 1:15",
+      "form": "ἐχωρίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Philemon",
+      "chapter": 1,
+      "verse": 15,
+      "left_context": "τάχα γὰρ διὰ τοῦτο",
+      "right_context": "πρὸς ὥραν ἵνα αἰώνιον αὐτὸν ἀπέχῃς,"
+    },
+    {
+      "ref": "Hebrews 7:26",
+      "form": "κεχωρισμένος",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 26,
+      "left_context": "⸀καὶ ἔπρεπεν ἀρχιερεύς, ὅσιος, ἄκακος, ἀμίαντος,",
+      "right_context": "ἀπὸ τῶν ἁμαρτωλῶν, καὶ ὑψηλότερος τῶν"
+    },
+    {
+      "ref": "Acts 1:4",
+      "form": "χωρίζεσθαι,",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "συναλιζόμενος παρήγγειλεν αὐτοῖς ἀπὸ Ἱεροσολύμων μὴ",
+      "right_context": "ἀλλὰ περιμένειν τὴν ἐπαγγελίαν τοῦ πατρὸς"
+    },
+    {
+      "ref": "Acts 18:1",
+      "form": "⸀χωρισθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 1,
+      "left_context": "⸀Μετὰ ταῦτα",
+      "right_context": "ἐκ τῶν Ἀθηνῶν ἦλθεν εἰς Κόρινθον."
+    },
+    {
+      "ref": "Acts 18:2",
+      "form": "χωρίζεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 2,
+      "left_context": "γυναῖκα αὐτοῦ διὰ τὸ ⸀διατεταχέναι Κλαύδιον",
+      "right_context": "πάντας τοὺς Ἰουδαίους ⸀ἀπὸ τῆς Ῥώμης,"
+    },
+    {
+      "ref": "Mark 10:9",
+      "form": "χωριζέτω.",
+      "morph": "V-P-A-D-3S",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 9,
+      "left_context": "οὖν ὁ θεὸς συνέζευξεν ἄνθρωπος μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 19:6",
+      "form": "χωριζέτω.",
+      "morph": "V-P-A-D-3S",
+      "book": "Matthew",
+      "chapter": 19,
+      "verse": 6,
+      "left_context": "οὖν ὁ θεὸς συνέζευξεν ἄνθρωπος μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Romans 8:35",
+      "form": "χωρίσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 35,
+      "left_context": "τίς ἡμᾶς",
+      "right_context": "ἀπὸ τῆς ἀγάπης τοῦ Χριστοῦ; θλῖψις"
+    },
+    {
+      "ref": "Romans 8:39",
+      "form": "χωρίσαι",
+      "morph": "V-A-A-N",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 39,
+      "left_context": "οὔτε τις κτίσις ἑτέρα δυνήσεται ἡμᾶς",
+      "right_context": "ἀπὸ τῆς ἀγάπης τοῦ θεοῦ τῆς"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 4,
+    "Acts": 3,
+    "Romans": 2,
+    "Philemon": 1,
+    "Hebrews": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "de·varón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄπιστος",
+      "display": "incrédulo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χωρίζω",
+      "display": "separa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δουλόω",
+      "display": "ha esclavizado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermano",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συζεύγνυμι",
+      "display": "unió",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "de·amor",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μένω",
+      "display": "permaneca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγαμος",
+      "display": "soltero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τάχα",
+      "display": "quizás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰώνιος",
+      "display": "eterno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρέπω",
+      "display": "convenía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄκακος",
+      "display": "inocente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμίαντος",
+      "display": "sin·mancha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτωλός",
+      "display": "de·pecadores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑψηλός",
+      "display": "alto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγγέλλω",
+      "display": "mandó",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 7:15",
+      "form": "χωριζέσθω·",
+      "morph": "V-P-P-D-3S",
+      "clause_text": "εἰ δὲ ὁ ἄπιστος χωρίζεται, χωριζέσθω· οὐ δεδούλωται ὁ ἀδελφὸς ἢ ἡ ἀδελφὴ ἐν"
+    },
+    {
+      "ref": "Mark 10:9",
+      "form": "χωριζέτω.",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "ὃ οὖν ὁ θεὸς συνέζευξεν ἄνθρωπος μὴ χωριζέτω.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 19:6",
+      "form": "χωριζέτω.",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "μία. ὃ οὖν ὁ θεὸς συνέζευξεν ἄνθρωπος μὴ χωριζέτω.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 7:10",
+      "negator": "μὴ",
+      "clause_text": "ἐγὼ ἀλλὰ ὁ κύριος, γυναῖκα ἀπὸ ἀνδρὸς μὴ χωρισθῆναι—"
+    },
+    {
+      "ref": "1 Corinthians 7:15",
+      "negator": "οὐ",
+      "clause_text": "εἰ δὲ ὁ ἄπιστος χωρίζεται, χωριζέσθω· οὐ δεδούλωται ὁ ἀδελφὸς ἢ ἡ ἀδελφὴ"
+    },
+    {
+      "ref": "1 Corinthians 7:15",
+      "negator": "οὐ",
+      "clause_text": "εἰ δὲ ὁ ἄπιστος χωρίζεται, χωριζέσθω· οὐ δεδούλωται ὁ ἀδελφὸς ἢ ἡ ἀδελφὴ ἐν"
+    },
+    {
+      "ref": "Acts 1:4",
+      "negator": "μὴ",
+      "clause_text": "καὶ συναλιζόμενος παρήγγειλεν αὐτοῖς ἀπὸ Ἱεροσολύμων μὴ χωρίζεσθαι, ἀλλὰ περιμένειν τὴν ἐπαγγελίαν τοῦ πατρὸς ἣν ἠκούσατέ"
+    },
+    {
+      "ref": "Mark 10:9",
+      "negator": "μὴ",
+      "clause_text": "ὃ οὖν ὁ θεὸς συνέζευξεν ἄνθρωπος μὴ χωριζέτω."
+    },
+    {
+      "ref": "Matthew 19:6",
+      "negator": "μὴ",
+      "clause_text": "μία. ὃ οὖν ὁ θεὸς συνέζευξεν ἄνθρωπος μὴ χωριζέτω."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 7:15",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 10:9",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 19:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 7:10",
+      "reason": "occurs near χωρίζω, ἀνήρ"
+    },
+    {
+      "ref": "1 Corinthians 7:11",
+      "reason": "occurs near χωρίζω, ἀνήρ, ἤ"
+    },
+    {
+      "ref": "Acts 18:1",
+      "reason": "occurs near χωρίζω"
+    },
+    {
+      "ref": "Romans 8:35",
+      "reason": "occurs near χωρίζω"
+    },
+    {
+      "ref": "Hebrews 7:26",
+      "reason": "occurs near χωρίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

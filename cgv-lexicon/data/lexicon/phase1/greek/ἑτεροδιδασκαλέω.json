@@ -1,0 +1,116 @@
+{
+  "lemma": "ἑτεροδιδασκαλέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἑτεροδιδασκαλεῖν",
+      "count": 1
+    },
+    {
+      "form": "ἑτεροδιδασκαλεῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 1:3",
+      "form": "ἑτεροδιδασκαλεῖν",
+      "morph": "V-P-A-N",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "εἰς Μακεδονίαν, ἵνα παραγγείλῃς τισὶν μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Timothy 6:3",
+      "form": "ἑτεροδιδασκαλεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 3,
+      "left_context": "εἴ τις",
+      "right_context": "καὶ μὴ προσέρχεται ὑγιαίνουσι λόγοις, τοῖς"
+    }
+  ],
+  "books": {
+    "1 Timothy": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Μακεδονία",
+      "display": "Macedonia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραγγέλλω",
+      "display": "mandes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑγιαίνω",
+      "display": "estar·sano",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabras",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Timothy 1:3",
+      "negator": "μὴ",
+      "clause_text": "Ἐφέσῳ, πορευόμενος εἰς Μακεδονίαν, ἵνα παραγγείλῃς τισὶν μὴ ἑτεροδιδασκαλεῖν"
+    },
+    {
+      "ref": "1 Timothy 6:3",
+      "negator": "μὴ",
+      "clause_text": "εἴ τις ἑτεροδιδασκαλεῖ καὶ μὴ προσέρχεται ὑγιαίνουσι λόγοις, τοῖς τοῦ κυρίου"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Timothy 1:3",
+      "reason": "occurs near Μακεδονία, παραγγέλλω"
+    },
+    {
+      "ref": "1 Timothy 6:3",
+      "reason": "occurs near λόγος, προσέρχομαι, ὑγιαίνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

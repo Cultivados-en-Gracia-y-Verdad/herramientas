@@ -1,0 +1,230 @@
+{
+  "lemma": "πταίω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "πταίσητέ",
+      "count": 1
+    },
+    {
+      "form": "ἔπταισαν",
+      "count": 1
+    },
+    {
+      "form": "πταίσῃ⸃",
+      "count": 1
+    },
+    {
+      "form": "πταίομεν",
+      "count": 1
+    },
+    {
+      "form": "πταίει,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 2,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 2
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 1:10",
+      "form": "πταίσητέ",
+      "morph": "V-A-A-S-2P",
+      "book": "2 Peter",
+      "chapter": 1,
+      "verse": 10,
+      "left_context": "ποιεῖσθαι· ταῦτα γὰρ ποιοῦντες οὐ μὴ",
+      "right_context": "ποτε·"
+    },
+    {
+      "ref": "Romans 11:11",
+      "form": "ἔπταισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 11,
+      "left_context": "Λέγω οὖν, μὴ",
+      "right_context": "ἵνα πέσωσιν; μὴ γένοιτο· ἀλλὰ τῷ"
+    },
+    {
+      "ref": "James 2:10",
+      "form": "πταίσῃ⸃",
+      "morph": "V-A-A-S-3S",
+      "book": "James",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "ὅστις γὰρ ὅλον τὸν νόμον ⸂τηρήσῃ,",
+      "right_context": "δὲ ἐν ἑνί, γέγονεν πάντων ἔνοχος."
+    },
+    {
+      "ref": "James 3:2",
+      "form": "πταίομεν",
+      "morph": "V-P-A-I-1P",
+      "book": "James",
+      "chapter": 3,
+      "verse": 2,
+      "left_context": "πολλὰ γὰρ",
+      "right_context": "ἅπαντες. εἴ τις ἐν λόγῳ οὐ"
+    },
+    {
+      "ref": "James 3:2",
+      "form": "πταίει,",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 2,
+      "left_context": "ἅπαντες. εἴ τις ἐν λόγῳ οὐ",
+      "right_context": "οὗτος τέλειος ἀνήρ, δυνατὸς χαλιναγωγῆσαι καὶ"
+    }
+  ],
+  "books": {
+    "James": 3,
+    "2 Peter": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποτέ",
+      "display": "alguna·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "caan",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηρέω",
+      "display": "guarde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπας",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέλειος",
+      "display": "perfecto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δυνατός",
+      "display": "poderoso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαλιναγωγέω",
+      "display": "refrenar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Peter 1:10",
+      "form": "πταίσητέ",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "καὶ ἐκλογὴν ποιεῖσθαι· ταῦτα γὰρ ποιοῦντες οὐ μὴ πταίσητέ ποτε·",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Peter 1:10",
+      "negator": "οὐ",
+      "clause_text": "καὶ ἐκλογὴν ποιεῖσθαι· ταῦτα γὰρ ποιοῦντες οὐ μὴ πταίσητέ ποτε·"
+    },
+    {
+      "ref": "Romans 11:11",
+      "negator": "μὴ",
+      "clause_text": "Λέγω οὖν, μὴ ἔπταισαν ἵνα πέσωσιν; μὴ γένοιτο· ἀλλὰ τῷ αὐτῶν παραπτώματι"
+    },
+    {
+      "ref": "James 3:2",
+      "negator": "οὐ",
+      "clause_text": "γὰρ πταίομεν ἅπαντες. εἴ τις ἐν λόγῳ οὐ πταίει, οὗτος τέλειος ἀνήρ, δυνατὸς χαλιναγωγῆσαι καὶ ὅλον τὸ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 2:10",
+      "reason": "occurs near νόμος, ὅλος"
+    },
+    {
+      "ref": "James 3:2",
+      "reason": "occurs near λόγος"
+    },
+    {
+      "ref": "2 Peter 1:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Romans 11:11",
+      "reason": "occurs near πίπτω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

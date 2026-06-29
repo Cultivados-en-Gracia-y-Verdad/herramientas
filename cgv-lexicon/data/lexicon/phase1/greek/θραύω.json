@@ -1,0 +1,80 @@
+{
+  "lemma": "θραύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "τεθραυσμένους",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 4:18",
+      "form": "τεθραυσμένους",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 18,
+      "left_context": "αἰχμαλώτοις ἄφεσιν καὶ τυφλοῖς ἀνάβλεψιν, ἀποστεῖλαι",
+      "right_context": "ἐν ἀφέσει,"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄφεσις",
+      "display": "perdón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τυφλός",
+      "display": "ciegos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνάβλεψις",
+      "display": "recobrar·la·vista",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποστέλλω",
+      "display": "enviar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 4:18",
+      "reason": "occurs near τυφλός, ἀνάβλεψις, ἀποστέλλω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,197 @@
+{
+  "lemma": "συμπαραλαμβάνω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "συμπαραλαβὼν",
+      "count": 1
+    },
+    {
+      "form": "⸀συμπαραλαβόντες",
+      "count": 1
+    },
+    {
+      "form": "συμπαραλαβεῖν",
+      "count": 1
+    },
+    {
+      "form": "⸀συμπαραλαμβάνειν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 2
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 1
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 2:1",
+      "form": "συμπαραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "πάλιν ἀνέβην εἰς Ἱεροσόλυμα μετὰ Βαρναβᾶ",
+      "right_context": "καὶ Τίτον·"
+    },
+    {
+      "ref": "Acts 12:25",
+      "form": "⸀συμπαραλαβόντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 12,
+      "verse": 25,
+      "left_context": "ὑπέστρεψαν, ⸀εἰς Ἰερουσαλὴμ πληρώσαντες τὴν διακονίαν,",
+      "right_context": "Ἰωάννην τὸν ἐπικληθέντα Μᾶρκον."
+    },
+    {
+      "ref": "Acts 15:37",
+      "form": "συμπαραλαβεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 37,
+      "left_context": "Βαρναβᾶς δὲ ⸀ἐβούλετο",
+      "right_context": "⸀καὶ τὸν Ἰωάννην τὸν καλούμενον Μᾶρκον·"
+    },
+    {
+      "ref": "Acts 15:38",
+      "form": "⸀συμπαραλαμβάνειν",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 38,
+      "left_context": "συνελθόντα αὐτοῖς εἰς τὸ ἔργον, μὴ",
+      "right_context": "τοῦτον."
+    }
+  ],
+  "books": {
+    "Acts": 3,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Βαρναβᾶς",
+      "display": "de·Bernabé",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰωάννης",
+      "display": "Juan",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἱεροσόλυμα",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Τίτος",
+      "display": "Tito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰερουσαλήμ",
+      "display": "Jerusalén",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληρόω",
+      "display": "cumplidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακονία",
+      "display": "servicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπικαλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μᾶρκος",
+      "display": "Marcos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "quería",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλέω",
+      "display": "llamado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔργον",
+      "display": "obra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 15:38",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ συνελθόντα αὐτοῖς εἰς τὸ ἔργον, μὴ ⸀συμπαραλαμβάνειν τοῦτον."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 12:25",
+      "reason": "occurs near Ἰωάννης"
+    },
+    {
+      "ref": "Acts 15:37",
+      "reason": "occurs near Βαρναβᾶς, Ἰωάννης"
+    },
+    {
+      "ref": "Acts 15:38",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 2:1",
+      "reason": "occurs near Βαρναβᾶς, Τίτος, ἀναβαίνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

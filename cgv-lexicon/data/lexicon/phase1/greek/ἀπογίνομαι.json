@@ -1,0 +1,80 @@
+{
+  "lemma": "ἀπογίνομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπογενόμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 2:24",
+      "form": "ἀπογενόμενοι",
+      "morph": "V-A-M-P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 24,
+      "left_context": "ἐπὶ τὸ ξύλον, ἵνα ταῖς ἁμαρτίαις",
+      "right_context": "τῇ δικαιοσύνῃ ζήσωμεν· οὗ τῷ ⸀μώλωπι"
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ξύλον",
+      "display": "madero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "pecados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "vivamos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 2:24",
+      "reason": "occurs near δικαιοσύνη, ζάω, ξύλον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

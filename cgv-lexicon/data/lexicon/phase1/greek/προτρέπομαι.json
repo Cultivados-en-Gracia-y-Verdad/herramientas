@@ -1,0 +1,86 @@
+{
+  "lemma": "προτρέπομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "προτρεψάμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 18:27",
+      "form": "προτρεψάμενοι",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 27,
+      "left_context": "δὲ αὐτοῦ διελθεῖν εἰς τὴν Ἀχαΐαν",
+      "right_context": "οἱ ἀδελφοὶ ἔγραψαν τοῖς μαθηταῖς ἀποδέξασθαι"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διέρχομαι",
+      "display": "pasar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀχαΐα",
+      "display": "Acaya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escribieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:27",
+      "reason": "occurs near γράφω, διέρχομαι, μαθητής"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

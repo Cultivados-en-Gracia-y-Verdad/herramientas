@@ -1,0 +1,178 @@
+{
+  "lemma": "ὑμνέω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ὑμνήσαντες",
+      "count": 2
+    },
+    {
+      "form": "ὑμνήσω",
+      "count": 1
+    },
+    {
+      "form": "ὕμνουν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 2
+    },
+    "tenses": {
+      "future": 1,
+      "imperfect": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 2:12",
+      "form": "ὑμνήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "Hebrews",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "τοῖς ἀδελφοῖς μου, ἐν μέσῳ ἐκκλησίας",
+      "right_context": "σε·"
+    },
+    {
+      "ref": "Acts 16:25",
+      "form": "ὕμνουν",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 25,
+      "left_context": "τὸ μεσονύκτιον Παῦλος καὶ Σιλᾶς προσευχόμενοι",
+      "right_context": "τὸν θεόν, ἐπηκροῶντο δὲ αὐτῶν οἱ"
+    },
+    {
+      "ref": "Mark 14:26",
+      "form": "ὑμνήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 26,
+      "left_context": "Καὶ",
+      "right_context": "ἐξῆλθον εἰς τὸ Ὄρος τῶν Ἐλαιῶν."
+    },
+    {
+      "ref": "Matthew 26:30",
+      "form": "ὑμνήσαντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 30,
+      "left_context": "καὶ",
+      "right_context": "ἐξῆλθον εἰς τὸ Ὄρος τῶν Ἐλαιῶν."
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salieron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄρος",
+      "display": "monte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέσος",
+      "display": "medio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "de·iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μεσονύκτιον",
+      "display": "medianoche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σιλᾶς",
+      "display": "Silas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσεύχομαι",
+      "display": "orando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπακροάομαι",
+      "display": "escuchaban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 2:12",
+      "reason": "occurs near μέσος, ἀδελφός, ἐκκλησία"
+    },
+    {
+      "ref": "Mark 14:26",
+      "reason": "occurs near ἐξέρχομαι, ὄρος"
+    },
+    {
+      "ref": "Matthew 26:30",
+      "reason": "occurs near ἐξέρχομαι, ὄρος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

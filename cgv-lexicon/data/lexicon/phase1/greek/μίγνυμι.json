@@ -1,0 +1,217 @@
+{
+  "lemma": "μίγνυμι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "μεμιγμένα",
+      "count": 1
+    },
+    {
+      "form": "μεμιγμένην",
+      "count": 1
+    },
+    {
+      "form": "ἔμιξεν",
+      "count": 1
+    },
+    {
+      "form": "μεμιγμένον·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 3,
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 3,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 8:7",
+      "form": "μεμιγμένα",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 8,
+      "verse": 7,
+      "left_context": "ἐσάλπισεν· καὶ ἐγένετο χάλαζα καὶ πῦρ",
+      "right_context": "ἐν αἵματι, καὶ ἐβλήθη εἰς τὴν"
+    },
+    {
+      "ref": "Revelation 15:2",
+      "form": "μεμιγμένην",
+      "morph": "V-X-P-P",
+      "book": "Revelation",
+      "chapter": 15,
+      "verse": 2,
+      "left_context": "Καὶ εἶδον ὡς θάλασσαν ὑαλίνην",
+      "right_context": "πυρί, καὶ τοὺς νικῶντας ἐκ τοῦ"
+    },
+    {
+      "ref": "Luke 13:1",
+      "form": "ἔμιξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 1,
+      "left_context": "τῶν Γαλιλαίων ὧν τὸ αἷμα Πιλᾶτος",
+      "right_context": "μετὰ τῶν θυσιῶν αὐτῶν."
+    },
+    {
+      "ref": "Matthew 27:34",
+      "form": "μεμιγμένον·",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 34,
+      "left_context": "ἔδωκαν αὐτῷ πιεῖν ⸀οἶνον μετὰ χολῆς",
+      "right_context": "καὶ γευσάμενος οὐκ ⸀ἠθέλησεν πιεῖν."
+    }
+  ],
+  "books": {
+    "Revelation": 2,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πῦρ",
+      "display": "fuego",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πίνω",
+      "display": "beber",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "χάλαζα",
+      "display": "granizo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "fue arrojado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vi",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑάλινος",
+      "display": "de·vidrio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νικάω",
+      "display": "venciendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλιλαῖος",
+      "display": "de·Galileo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυσία",
+      "display": "de·sacrificios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶνος",
+      "display": "vino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χολή",
+      "display": "de·hiel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεύομαι",
+      "display": "probado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiso",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 27:34",
+      "negator": "οὐκ",
+      "clause_text": "ἔδωκαν αὐτῷ πιεῖν ⸀οἶνον μετὰ χολῆς μεμιγμένον· καὶ γευσάμενος οὐκ ⸀ἠθέλησεν πιεῖν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 15:2",
+      "reason": "occurs near πῦρ"
+    },
+    {
+      "ref": "Revelation 8:7",
+      "reason": "occurs near αἷμα, βάλλω, πῦρ"
+    },
+    {
+      "ref": "Luke 13:1",
+      "reason": "occurs near αἷμα"
+    },
+    {
+      "ref": "Matthew 27:34",
+      "reason": "occurs near πίνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

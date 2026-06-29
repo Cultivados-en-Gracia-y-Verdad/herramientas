@@ -1,0 +1,184 @@
+{
+  "lemma": "ἀνίημι",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "ἀνιέντες",
+      "count": 1
+    },
+    {
+      "form": "ἀνῶ",
+      "count": 1
+    },
+    {
+      "form": "ἀνέθη.",
+      "count": 1
+    },
+    {
+      "form": "ἀνέντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "subjunctive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Ephesians 6:9",
+      "form": "ἀνιέντες",
+      "morph": "V-P-A-P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "κύριοι, τὰ αὐτὰ ποιεῖτε πρὸς αὐτούς,",
+      "right_context": "τὴν ἀπειλήν, εἰδότες ὅτι καὶ ⸂αὐτῶν"
+    },
+    {
+      "ref": "Hebrews 13:5",
+      "form": "ἀνῶ",
+      "morph": "V-A-A-S-1S",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 5,
+      "left_context": "αὐτὸς γὰρ εἴρηκεν· Οὐ μή σε",
+      "right_context": "οὐδ’ οὐ μή σε ⸀ἐγκαταλίπω·"
+    },
+    {
+      "ref": "Acts 16:26",
+      "form": "ἀνέθη.",
+      "morph": "V-A-P-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 26,
+      "left_context": "θύραι πᾶσαι, καὶ πάντων τὰ δεσμὰ",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 27:40",
+      "form": "ἀνέντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 27,
+      "verse": 40,
+      "left_context": "περιελόντες εἴων εἰς τὴν θάλασσαν, ἅμα",
+      "right_context": "τὰς ζευκτηρίας τῶν πηδαλίων, καὶ ἐπάραντες"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "Ephesians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀπειλή",
+      "display": "amenaza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "sabidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκαταλείπω",
+      "display": "abandone",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσμόν",
+      "display": "cadenas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐάω",
+      "display": "dejaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅμα",
+      "display": "juntamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζευκτηρία",
+      "display": "cables",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πηδάλιον",
+      "display": "de·timónes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Hebrews 13:5",
+      "form": "ἀνῶ",
+      "morph": "V-A-A-S-1S",
+      "clause_text": "τοῖς παροῦσιν· αὐτὸς γὰρ εἴρηκεν· Οὐ μή σε ἀνῶ οὐδ’ οὐ μή σε ⸀ἐγκαταλίπω·",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 13:5",
+      "negator": "Οὐ",
+      "clause_text": "τοῖς παροῦσιν· αὐτὸς γὰρ εἴρηκεν· Οὐ μή σε ἀνῶ οὐδ’ οὐ μή σε ⸀ἐγκαταλίπω·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:26",
+      "reason": "occurs near δεσμόν"
+    },
+    {
+      "ref": "Acts 27:40",
+      "reason": "occurs near ἐάω"
+    },
+    {
+      "ref": "Ephesians 6:9",
+      "reason": "occurs near οἶδα, ἀπειλή"
+    },
+    {
+      "ref": "Hebrews 13:5",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

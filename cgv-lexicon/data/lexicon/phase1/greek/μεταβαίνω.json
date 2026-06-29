@@ -1,0 +1,418 @@
+{
+  "lemma": "μεταβαίνω",
+  "language": "greek",
+  "total_occurrences": 12,
+  "forms": [
+    {
+      "form": "μεταβὰς",
+      "count": 3
+    },
+    {
+      "form": "μεταβῇ",
+      "count": 2
+    },
+    {
+      "form": "μεταβεβήκαμεν",
+      "count": 1
+    },
+    {
+      "form": "μεταβέβηκεν",
+      "count": 1
+    },
+    {
+      "form": "Μετάβηθι",
+      "count": 1
+    },
+    {
+      "form": "μεταβαίνετε",
+      "count": 1
+    },
+    {
+      "form": "μετέβη",
+      "count": 1
+    },
+    {
+      "form": "⸂Μετάβα",
+      "count": 1
+    },
+    {
+      "form": "μεταβήσεται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 3,
+      "imperative": 3,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "perfect": 2,
+      "aorist": 8,
+      "present": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 11,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 John 3:14",
+      "form": "μεταβεβήκαμεν",
+      "morph": "V-X-A-I-1P",
+      "book": "1 John",
+      "chapter": 3,
+      "verse": 14,
+      "left_context": "ἡμεῖς οἴδαμεν ὅτι",
+      "right_context": "ἐκ τοῦ θανάτου εἰς τὴν ζωήν,"
+    },
+    {
+      "ref": "Acts 18:7",
+      "form": "μεταβὰς",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 7,
+      "left_context": "καὶ",
+      "right_context": "ἐκεῖθεν ⸀εἰσῆλθεν εἰς οἰκίαν τινὸς ὀνόματι"
+    },
+    {
+      "ref": "John 5:24",
+      "form": "μεταβέβηκεν",
+      "morph": "V-X-A-I-3S",
+      "book": "John",
+      "chapter": 5,
+      "verse": 24,
+      "left_context": "καὶ εἰς κρίσιν οὐκ ἔρχεται ἀλλὰ",
+      "right_context": "ἐκ τοῦ θανάτου εἰς τὴν ζωήν."
+    },
+    {
+      "ref": "John 7:3",
+      "form": "Μετάβηθι",
+      "morph": "V-A-A-D-2S",
+      "book": "John",
+      "chapter": 7,
+      "verse": 3,
+      "left_context": "οὖν πρὸς αὐτὸν οἱ ἀδελφοὶ αὐτοῦ·",
+      "right_context": "ἐντεῦθεν καὶ ὕπαγε εἰς τὴν Ἰουδαίαν,"
+    },
+    {
+      "ref": "John 13:1",
+      "form": "μεταβῇ",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 13,
+      "verse": 1,
+      "left_context": "ὅτι ⸀ἦλθεν αὐτοῦ ἡ ὥρα ἵνα",
+      "right_context": "ἐκ τοῦ κόσμου τούτου πρὸς τὸν"
+    },
+    {
+      "ref": "Luke 10:7",
+      "form": "μεταβαίνετε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 7,
+      "left_context": "ὁ ἐργάτης τοῦ μισθοῦ ⸀αὐτοῦ. μὴ",
+      "right_context": "ἐξ οἰκίας εἰς οἰκίαν."
+    },
+    {
+      "ref": "Matthew 8:34",
+      "form": "μεταβῇ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 8,
+      "verse": 34,
+      "left_context": "Ἰησοῦ, καὶ ἰδόντες αὐτὸν παρεκάλεσαν ὅπως",
+      "right_context": "ἀπὸ τῶν ὁρίων αὐτῶν."
+    },
+    {
+      "ref": "Matthew 11:1",
+      "form": "μετέβη",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 1,
+      "left_context": "Ἰησοῦς διατάσσων τοῖς δώδεκα μαθηταῖς αὐτοῦ,",
+      "right_context": "ἐκεῖθεν τοῦ διδάσκειν καὶ κηρύσσειν ἐν"
+    },
+    {
+      "ref": "Matthew 12:9",
+      "form": "μεταβὰς",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 9,
+      "left_context": "Καὶ",
+      "right_context": "ἐκεῖθεν ἦλθεν εἰς τὴν συναγωγὴν αὐτῶν·"
+    },
+    {
+      "ref": "Matthew 15:29",
+      "form": "μεταβὰς",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 15,
+      "verse": 29,
+      "left_context": "Καὶ",
+      "right_context": "ἐκεῖθεν ὁ Ἰησοῦς ἦλθεν παρὰ τὴν"
+    },
+    {
+      "ref": "Matthew 17:20",
+      "form": "⸂Μετάβα",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 20,
+      "left_context": "κόκκον σινάπεως, ἐρεῖτε τῷ ὄρει τούτῳ·",
+      "right_context": "ἔνθεν⸃ ἐκεῖ, καὶ μεταβήσεται, καὶ οὐδὲν"
+    },
+    {
+      "ref": "Matthew 17:20",
+      "form": "μεταβήσεται,",
+      "morph": "V-F-M-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 20,
+      "left_context": "ὄρει τούτῳ· ⸂Μετάβα ἔνθεν⸃ ἐκεῖ, καὶ",
+      "right_context": "καὶ οὐδὲν ἀδυνατήσει ⸀ὑμῖν."
+    }
+  ],
+  "books": {
+    "Matthew": 6,
+    "John": 3,
+    "1 John": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκεῖθεν",
+      "display": "de·allí",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "viene",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θάνατος",
+      "display": "de·muerte",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔνθεν",
+      "display": "de·aquí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μεταβαίνω",
+      "display": "pasará",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "hemos sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entró",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κρίσις",
+      "display": "juicio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐντεῦθεν",
+      "display": "de·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπάγω",
+      "display": "e",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "de·mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάτης",
+      "display": "obrero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθός",
+      "display": "de·salario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅριον",
+      "display": "de·límites",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διατάσσω",
+      "display": "ordenando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δώδεκα",
+      "display": "doces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδάσκω",
+      "display": "enseñar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 7:3",
+      "form": "Μετάβηθι",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "εἶπον οὖν πρὸς αὐτὸν οἱ ἀδελφοὶ αὐτοῦ· Μετάβηθι ἐντεῦθεν καὶ ὕπαγε εἰς τὴν Ἰουδαίαν, ἵνα καὶ"
+    },
+    {
+      "ref": "Luke 10:7",
+      "form": "μεταβαίνετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "ἄξιος γὰρ ὁ ἐργάτης τοῦ μισθοῦ ⸀αὐτοῦ. μὴ μεταβαίνετε ἐξ οἰκίας εἰς οἰκίαν.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 17:20",
+      "form": "⸂Μετάβα",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "πίστιν ὡς κόκκον σινάπεως, ἐρεῖτε τῷ ὄρει τούτῳ· ⸂Μετάβα ἔνθεν⸃ ἐκεῖ, καὶ μεταβήσεται, καὶ οὐδὲν ἀδυνατήσει ⸀ὑμῖν."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 5:24",
+      "negator": "οὐκ",
+      "clause_text": "ζωὴν αἰώνιον, καὶ εἰς κρίσιν οὐκ ἔρχεται ἀλλὰ μεταβέβηκεν ἐκ τοῦ θανάτου εἰς τὴν ζωήν."
+    },
+    {
+      "ref": "Luke 10:7",
+      "negator": "μὴ",
+      "clause_text": "ἄξιος γὰρ ὁ ἐργάτης τοῦ μισθοῦ ⸀αὐτοῦ. μὴ μεταβαίνετε ἐξ οἰκίας εἰς οἰκίαν."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 17:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 7:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 10:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 11:1",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 12:9",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 15:29",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 8:34",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "John 13:1",
+      "reason": "occurs near ἔρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

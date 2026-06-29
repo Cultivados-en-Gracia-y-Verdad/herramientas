@@ -1,0 +1,523 @@
+{
+  "lemma": "τρέχω",
+  "language": "greek",
+  "total_occurrences": 20,
+  "forms": [
+    {
+      "form": "δραμὼν",
+      "count": 3
+    },
+    {
+      "form": "τρέχω",
+      "count": 2
+    },
+    {
+      "form": "ἔδραμον",
+      "count": 2
+    },
+    {
+      "form": "ἔδραμεν",
+      "count": 2
+    },
+    {
+      "form": "τρέχοντες",
+      "count": 1
+    },
+    {
+      "form": "τρέχουσιν,",
+      "count": 1
+    },
+    {
+      "form": "τρέχετε",
+      "count": 1
+    },
+    {
+      "form": "τρέχῃ",
+      "count": 1
+    },
+    {
+      "form": "τρεχόντων",
+      "count": 1
+    },
+    {
+      "form": "ἔδραμον.",
+      "count": 1
+    },
+    {
+      "form": "Ἐτρέχετε",
+      "count": 1
+    },
+    {
+      "form": "τρέχωμεν",
+      "count": 1
+    },
+    {
+      "form": "τρέχει",
+      "count": 1
+    },
+    {
+      "form": "ἔτρεχον",
+      "count": 1
+    },
+    {
+      "form": "τρέχοντος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 6,
+      "indicative": 10,
+      "imperative": 1,
+      "subjunctive": 3
+    },
+    "tenses": {
+      "present": 10,
+      "aorist": 8,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 20
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 9:24",
+      "form": "τρέχοντες",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 24,
+      "left_context": "Οὐκ οἴδατε ὅτι οἱ ἐν σταδίῳ",
+      "right_context": "πάντες μὲν τρέχουσιν, εἷς δὲ λαμβάνει"
+    },
+    {
+      "ref": "1 Corinthians 9:24",
+      "form": "τρέχουσιν,",
+      "morph": "V-P-A-I-3P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 24,
+      "left_context": "οἱ ἐν σταδίῳ τρέχοντες πάντες μὲν",
+      "right_context": "εἷς δὲ λαμβάνει τὸ βραβεῖον; οὕτως"
+    },
+    {
+      "ref": "1 Corinthians 9:24",
+      "form": "τρέχετε",
+      "morph": "V-P-A-D-2P",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 24,
+      "left_context": "εἷς δὲ λαμβάνει τὸ βραβεῖον; οὕτως",
+      "right_context": "ἵνα καταλάβητε."
+    },
+    {
+      "ref": "1 Corinthians 9:26",
+      "form": "τρέχω",
+      "morph": "V-P-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 9,
+      "verse": 26,
+      "left_context": "ἐγὼ τοίνυν οὕτως",
+      "right_context": "ὡς οὐκ ἀδήλως, οὕτως πυκτεύω ὡς"
+    },
+    {
+      "ref": "2 Thessalonians 3:1",
+      "form": "τρέχῃ",
+      "morph": "V-P-A-S-3S",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 1,
+      "left_context": "ἡμῶν, ἵνα ὁ λόγος τοῦ κυρίου",
+      "right_context": "καὶ δοξάζηται καθὼς καὶ πρὸς ὑμᾶς,"
+    },
+    {
+      "ref": "Revelation 9:9",
+      "form": "τρεχόντων",
+      "morph": "V-P-A-P",
+      "book": "Revelation",
+      "chapter": 9,
+      "verse": 9,
+      "left_context": "αὐτῶν ὡς φωνὴ ἁρμάτων ἵππων πολλῶν",
+      "right_context": "εἰς πόλεμον·"
+    },
+    {
+      "ref": "Philippians 2:16",
+      "form": "ἔδραμον",
+      "morph": "V-A-A-I-1S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 16,
+      "left_context": "ἡμέραν Χριστοῦ, ὅτι οὐκ εἰς κενὸν",
+      "right_context": "οὐδὲ εἰς κενὸν ἐκοπίασα."
+    },
+    {
+      "ref": "Galatians 2:2",
+      "form": "τρέχω",
+      "morph": "V-P-A-S-1S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "τοῖς δοκοῦσιν, μή πως εἰς κενὸν",
+      "right_context": "ἢ ἔδραμον."
+    },
+    {
+      "ref": "Galatians 2:2",
+      "form": "ἔδραμον.",
+      "morph": "V-A-A-I-1S",
+      "book": "Galatians",
+      "chapter": 2,
+      "verse": 2,
+      "left_context": "μή πως εἰς κενὸν τρέχω ἢ",
+      "right_context": ""
+    },
+    {
+      "ref": "Galatians 5:7",
+      "form": "Ἐτρέχετε",
+      "morph": "V-I-A-I-2P",
+      "book": "Galatians",
+      "chapter": 5,
+      "verse": 7,
+      "left_context": "",
+      "right_context": "καλῶς· τίς ὑμᾶς ἐνέκοψεν ⸀τῇ ἀληθείᾳ"
+    },
+    {
+      "ref": "Hebrews 12:1",
+      "form": "τρέχωμεν",
+      "morph": "V-P-A-S-1P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "καὶ τὴν εὐπερίστατον ἁμαρτίαν, δι’ ὑπομονῆς",
+      "right_context": "τὸν προκείμενον ἡμῖν ἀγῶνα,"
+    },
+    {
+      "ref": "John 20:2",
+      "form": "τρέχει",
+      "morph": "V-P-A-I-3S",
+      "book": "John",
+      "chapter": 20,
+      "verse": 2,
+      "left_context": "",
+      "right_context": "οὖν καὶ ἔρχεται πρὸς Σίμωνα Πέτρον"
+    },
+    {
+      "ref": "John 20:4",
+      "form": "ἔτρεχον",
+      "morph": "V-I-A-I-3P",
+      "book": "John",
+      "chapter": 20,
+      "verse": 4,
+      "left_context": "",
+      "right_context": "δὲ οἱ δύο ὁμοῦ· καὶ ὁ"
+    },
+    {
+      "ref": "Luke 15:20",
+      "form": "δραμὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 20,
+      "left_context": "ὁ πατὴρ αὐτοῦ καὶ ἐσπλαγχνίσθη καὶ",
+      "right_context": "ἐπέπεσεν ἐπὶ τὸν τράχηλον αὐτοῦ καὶ"
+    },
+    {
+      "ref": "Luke 24:12",
+      "form": "ἔδραμεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 12,
+      "left_context": "⸂Ὁ δὲ Πέτρος ἀναστὰς",
+      "right_context": "ἐπὶ τὸ μνημεῖον· καὶ παρακύψας βλέπει"
+    },
+    {
+      "ref": "Mark 5:6",
+      "form": "ἔδραμεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 6,
+      "left_context": "⸂καὶ ἰδὼν⸃ τὸν Ἰησοῦν ἀπὸ μακρόθεν",
+      "right_context": "καὶ προσεκύνησεν ⸀αὐτόν,"
+    },
+    {
+      "ref": "Mark 15:36",
+      "form": "δραμὼν",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 36,
+      "left_context": "",
+      "right_context": "δέ ⸂τις καὶ⸃ γεμίσας σπόγγον ὄξους"
+    },
+    {
+      "ref": "Matthew 27:48",
+      "form": "δραμὼν",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 48,
+      "left_context": "καὶ εὐθέως",
+      "right_context": "εἷς ἐξ αὐτῶν καὶ λαβὼν σπόγγον"
+    },
+    {
+      "ref": "Matthew 28:8",
+      "form": "ἔδραμον",
+      "morph": "V-A-A-I-3P",
+      "book": "Matthew",
+      "chapter": 28,
+      "verse": 8,
+      "left_context": "μνημείου μετὰ φόβου καὶ χαρᾶς μεγάλης",
+      "right_context": "ἀπαγγεῖλαι τοῖς μαθηταῖς αὐτοῦ."
+    },
+    {
+      "ref": "Romans 9:16",
+      "form": "τρέχοντος",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 9,
+      "verse": 16,
+      "left_context": "οὖν οὐ τοῦ θέλοντος οὐδὲ τοῦ",
+      "right_context": "ἀλλὰ τοῦ ἐλεῶντος θεοῦ."
+    }
+  ],
+  "books": {
+    "1 Corinthians": 4,
+    "Galatians": 3,
+    "John": 2,
+    "Luke": 2,
+    "Mark": 2,
+    "Matthew": 2,
+    "2 Thessalonians": 1,
+    "Revelation": 1,
+    "Philippians": 1,
+    "Hebrews": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τρέχω",
+      "display": "corren",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "κενός",
+      "display": "vacío",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "toma",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "στάδιον",
+      "display": "estadio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βραβεῖον",
+      "display": "premio",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πώς",
+      "display": "cómo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οἶδα",
+      "display": "habéis sabido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταλαμβάνω",
+      "display": "comprendáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοίνυν",
+      "display": "por·tanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδήλως",
+      "display": "inciertamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πυκτεύω",
+      "display": "boxeo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοξάζω",
+      "display": "glorificara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅρμα",
+      "display": "de·carros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵππος",
+      "display": "de·caballos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "de·muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλεμος",
+      "display": "guerra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοπιάω",
+      "display": "trabajé",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "1 Corinthians 9:24",
+      "form": "τρέχετε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "μὲν τρέχουσιν, εἷς δὲ λαμβάνει τὸ βραβεῖον; οὕτως τρέχετε ἵνα καταλάβητε."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 9:26",
+      "negator": "οὐκ",
+      "clause_text": "ἐγὼ τοίνυν οὕτως τρέχω ὡς οὐκ ἀδήλως, οὕτως πυκτεύω ὡς οὐκ ἀέρα"
+    },
+    {
+      "ref": "Philippians 2:16",
+      "negator": "οὐκ",
+      "clause_text": "ἐμοὶ εἰς ἡμέραν Χριστοῦ, ὅτι οὐκ εἰς κενὸν ἔδραμον οὐδὲ εἰς κενὸν ἐκοπίασα."
+    },
+    {
+      "ref": "Galatians 2:2",
+      "negator": "μή",
+      "clause_text": "ἰδίαν δὲ τοῖς δοκοῦσιν, μή πως εἰς κενὸν τρέχω ἢ ἔδραμον."
+    },
+    {
+      "ref": "Romans 9:16",
+      "negator": "οὐδὲ",
+      "clause_text": "ἄρα οὖν οὐ τοῦ θέλοντος οὐδὲ τοῦ τρέχοντος ἀλλὰ τοῦ ἐλεῶντος θεοῦ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 9:24",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 9:26",
+      "reason": "occurs near οὕτω(ς), τρέχω"
+    },
+    {
+      "ref": "Galatians 2:2",
+      "reason": "occurs near κενός, τρέχω"
+    },
+    {
+      "ref": "Galatians 5:7",
+      "reason": "occurs near τρέχω"
+    },
+    {
+      "ref": "John 20:2",
+      "reason": "occurs near τρέχω"
+    },
+    {
+      "ref": "John 20:4",
+      "reason": "occurs near τρέχω"
+    },
+    {
+      "ref": "Luke 15:20",
+      "reason": "occurs near τρέχω"
+    },
+    {
+      "ref": "Mark 15:36",
+      "reason": "occurs near τρέχω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

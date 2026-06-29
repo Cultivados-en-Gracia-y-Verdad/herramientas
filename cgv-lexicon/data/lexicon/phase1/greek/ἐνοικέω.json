@@ -1,0 +1,232 @@
+{
+  "lemma": "ἐνοικέω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "Ἐνοικήσω",
+      "count": 1
+    },
+    {
+      "form": "ἐνῴκησεν",
+      "count": 1
+    },
+    {
+      "form": "ἐνοικοῦντος",
+      "count": 1
+    },
+    {
+      "form": "ἐνοικείτω",
+      "count": 1
+    },
+    {
+      "form": "ἐνοικοῦν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "participle": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "future": 1,
+      "aorist": 1,
+      "present": 3
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 6:16",
+      "form": "Ἐνοικήσω",
+      "morph": "V-F-A-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 16,
+      "left_context": "ζῶντος· καθὼς εἶπεν ὁ θεὸς ὅτι",
+      "right_context": "ἐν αὐτοῖς καὶ ἐμπεριπατήσω, καὶ ἔσομαι"
+    },
+    {
+      "ref": "2 Timothy 1:5",
+      "form": "ἐνῴκησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "τῆς ἐν σοὶ ἀνυποκρίτου πίστεως, ἥτις",
+      "right_context": "πρῶτον ἐν τῇ μάμμῃ σου Λωΐδι"
+    },
+    {
+      "ref": "2 Timothy 1:14",
+      "form": "ἐνοικοῦντος",
+      "morph": "V-P-A-P",
+      "book": "2 Timothy",
+      "chapter": 1,
+      "verse": 14,
+      "left_context": "παραθήκην φύλαξον διὰ πνεύματος ἁγίου τοῦ",
+      "right_context": "ἐν ἡμῖν."
+    },
+    {
+      "ref": "Colossians 3:16",
+      "form": "ἐνοικείτω",
+      "morph": "V-P-A-D-3S",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 16,
+      "left_context": "ὁ λόγος τοῦ Χριστοῦ",
+      "right_context": "ἐν ὑμῖν πλουσίως ἐν πάσῃ σοφίᾳ·"
+    },
+    {
+      "ref": "Romans 8:11",
+      "form": "ἐνοικοῦν",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 11,
+      "left_context": "τὰ θνητὰ σώματα ὑμῶν διὰ ⸂τὸ",
+      "right_context": "αὐτοῦ πνεῦμα⸃ ἐν ὑμῖν."
+    }
+  ],
+  "books": {
+    "2 Timothy": 2,
+    "2 Corinthians": 1,
+    "Colossians": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πνεῦμα",
+      "display": "de·espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμπεριπατέω",
+      "display": "andar·entre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνυπόκριτος",
+      "display": "sin·hipocresía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάμμη",
+      "display": "abuela",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guarda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "de·santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλουσίως",
+      "display": "ricamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θνητός",
+      "display": "mortales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Colossians 3:16",
+      "form": "ἐνοικείτω",
+      "morph": "V-P-A-D-3S",
+      "clause_text": "ὁ λόγος τοῦ Χριστοῦ ἐνοικείτω ἐν ὑμῖν πλουσίως ἐν πάσῃ σοφίᾳ· διδάσκοντες καὶ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 3:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 1:14",
+      "reason": "occurs near πνεῦμα"
+    },
+    {
+      "ref": "2 Timothy 1:5",
+      "reason": "occurs near πίστις, ἀνυπόκριτος"
+    },
+    {
+      "ref": "2 Corinthians 6:16",
+      "reason": "occurs near θεός, ἐμπεριπατέω"
+    },
+    {
+      "ref": "Romans 8:11",
+      "reason": "occurs near πνεῦμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

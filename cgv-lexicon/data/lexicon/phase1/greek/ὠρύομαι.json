@@ -1,0 +1,92 @@
+{
+  "lemma": "ὠρύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὠρυόμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 5:8",
+      "form": "ὠρυόμενος",
+      "morph": "V-P-M-P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 8,
+      "left_context": "ὁ ἀντίδικος ὑμῶν διάβολος ὡς λέων",
+      "right_context": "περιπατεῖ ζητῶν ⸀τινα ⸀καταπιεῖν·"
+    }
+  ],
+  "books": {
+    "1 Peter": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀντίδικος",
+      "display": "adversario",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διάβολος",
+      "display": "diablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λέων",
+      "display": "león",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "anda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταπίνω",
+      "display": "tragar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Peter 5:8",
+      "reason": "occurs near διάβολος, ζητέω, λέων"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

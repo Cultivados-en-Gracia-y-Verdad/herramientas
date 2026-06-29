@@ -1,0 +1,136 @@
+{
+  "lemma": "προσλαλέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προσλαλοῦντες",
+      "count": 1
+    },
+    {
+      "form": "προσλαλῆσαι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 13:43",
+      "form": "προσλαλοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 13,
+      "verse": 43,
+      "left_context": "τῷ Παύλῳ καὶ τῷ Βαρναβᾷ, οἵτινες",
+      "right_context": "⸀αὐτοῖς ἔπειθον· αὐτοὺς ⸀προσμένειν τῇ χάριτι"
+    },
+    {
+      "ref": "Acts 28:20",
+      "form": "προσλαλῆσαι,",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 20,
+      "left_context": "τὴν αἰτίαν παρεκάλεσα ὑμᾶς ἰδεῖν καὶ",
+      "right_context": "ἕνεκεν γὰρ τῆς ἐλπίδος τοῦ Ἰσραὴλ"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Βαρναβᾶς",
+      "display": "Bernabé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πείθω",
+      "display": "persuadían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσμένω",
+      "display": "permanecer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτία",
+      "display": "causa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "ver",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕνεκεν",
+      "display": "por·causa·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίς",
+      "display": "de·esperanza",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 13:43",
+      "reason": "occurs near Βαρναβᾶς, Παῦλος, πείθω"
+    },
+    {
+      "ref": "Acts 28:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

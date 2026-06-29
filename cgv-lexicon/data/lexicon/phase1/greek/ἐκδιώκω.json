@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐκδιώκω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐκδιωξάντων,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:15",
+      "form": "ἐκδιωξάντων,",
+      "morph": "V-A-A-P",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 15,
+      "left_context": "Ἰησοῦν καὶ ⸀τοὺς προφήτας καὶ ἡμᾶς",
+      "right_context": "καὶ θεῷ μὴ ἀρεσκόντων, καὶ πᾶσιν"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "προφήτης",
+      "display": "profetas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρέσκω",
+      "display": "agradando",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Thessalonians 2:15",
+      "negator": "μὴ",
+      "clause_text": "κύριον ἀποκτεινάντων Ἰησοῦν καὶ ⸀τοὺς προφήτας καὶ ἡμᾶς ἐκδιωξάντων, καὶ θεῷ μὴ ἀρεσκόντων, καὶ πᾶσιν ἀνθρώποις ἐναντίων,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 2:15",
+      "reason": "occurs near θεός, προφήτης, ἀρέσκω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

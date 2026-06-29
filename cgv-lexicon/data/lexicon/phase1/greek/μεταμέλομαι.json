@@ -1,0 +1,277 @@
+{
+  "lemma": "μεταμέλομαι",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "μεταμέλομαι·",
+      "count": 1
+    },
+    {
+      "form": "μετεμελόμην",
+      "count": 1
+    },
+    {
+      "form": "μεταμεληθήσεται,",
+      "count": 1
+    },
+    {
+      "form": "μεταμεληθεὶς⸃",
+      "count": 1
+    },
+    {
+      "form": "μετεμελήθητε",
+      "count": 1
+    },
+    {
+      "form": "μεταμεληθεὶς",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 1,
+      "imperfect": 1,
+      "future": 1,
+      "aorist": 3
+    },
+    "voices": {
+      "middle": 2,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 7:8",
+      "form": "μεταμέλομαι·",
+      "morph": "V-P-M-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 8,
+      "left_context": "ἐλύπησα ὑμᾶς ἐν τῇ ἐπιστολῇ, οὐ",
+      "right_context": "εἰ καὶ μετεμελόμην (⸀βλέπω ὅτι ἡ"
+    },
+    {
+      "ref": "2 Corinthians 7:8",
+      "form": "μετεμελόμην",
+      "morph": "V-I-M-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 7,
+      "verse": 8,
+      "left_context": "τῇ ἐπιστολῇ, οὐ μεταμέλομαι· εἰ καὶ",
+      "right_context": "(⸀βλέπω ὅτι ἡ ἐπιστολὴ ἐκείνη εἰ"
+    },
+    {
+      "ref": "Hebrews 7:21",
+      "form": "μεταμεληθήσεται,",
+      "morph": "V-F-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 7,
+      "verse": 21,
+      "left_context": "πρὸς αὐτόν· Ὤμοσεν κύριος, καὶ οὐ",
+      "right_context": "Σὺ ἱερεὺς εἰς τὸν ⸀αἰῶνα),"
+    },
+    {
+      "ref": "Matthew 21:29",
+      "form": "μεταμεληθεὶς⸃",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 29,
+      "left_context": "ἀποκριθεὶς εἶπεν· ⸂Οὐ θέλω· ὕστερον δὲ",
+      "right_context": "ἀπῆλθεν."
+    },
+    {
+      "ref": "Matthew 21:32",
+      "form": "μετεμελήθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 32,
+      "left_context": "ἐπίστευσαν αὐτῷ· ὑμεῖς δὲ ἰδόντες ⸀οὐδὲ",
+      "right_context": "ὕστερον τοῦ πιστεῦσαι αὐτῷ."
+    },
+    {
+      "ref": "Matthew 27:3",
+      "form": "μεταμεληθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 3,
+      "left_context": "Ἰούδας ὁ ⸀παραδιδοὺς αὐτὸν ὅτι κατεκρίθη",
+      "right_context": "⸀ἔστρεψεν τὰ τριάκοντα ἀργύρια τοῖς ἀρχιερεῦσιν"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "2 Corinthians": 2,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπιστολή",
+      "display": "carta",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "μεταμέλομαι",
+      "display": "arrepentirse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὕστερος",
+      "display": "posterior",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὀμνύω",
+      "display": "juró",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερεύς",
+      "display": "sacerdote",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰών",
+      "display": "siglo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "quiero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπέρχομαι",
+      "display": "irse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "creer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατακρίνω",
+      "display": "fue condenado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στρέφω",
+      "display": "volvió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τριάκοντα",
+      "display": "treintas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀργύριον",
+      "display": "platas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 7:8",
+      "negator": "οὐ",
+      "clause_text": "εἰ καὶ ἐλύπησα ὑμᾶς ἐν τῇ ἐπιστολῇ, οὐ μεταμέλομαι· εἰ καὶ μετεμελόμην (⸀βλέπω ὅτι ἡ ἐπιστολὴ ἐκείνη"
+    },
+    {
+      "ref": "2 Corinthians 7:8",
+      "negator": "οὐ",
+      "clause_text": "ὑμᾶς ἐν τῇ ἐπιστολῇ, οὐ μεταμέλομαι· εἰ καὶ μετεμελόμην (⸀βλέπω ὅτι ἡ ἐπιστολὴ ἐκείνη εἰ καὶ πρὸς"
+    },
+    {
+      "ref": "Hebrews 7:21",
+      "negator": "οὐ",
+      "clause_text": "τοῦ λέγοντος πρὸς αὐτόν· Ὤμοσεν κύριος, καὶ οὐ μεταμεληθήσεται, Σὺ ἱερεὺς εἰς τὸν ⸀αἰῶνα),"
+    },
+    {
+      "ref": "Matthew 21:29",
+      "negator": "⸂Οὐ",
+      "clause_text": "ὁ δὲ ἀποκριθεὶς εἶπεν· ⸂Οὐ θέλω· ὕστερον δὲ μεταμεληθεὶς⸃ ἀπῆλθεν."
+    },
+    {
+      "ref": "Matthew 21:32",
+      "negator": "⸀οὐδὲ",
+      "clause_text": "αἱ πόρναι ἐπίστευσαν αὐτῷ· ὑμεῖς δὲ ἰδόντες ⸀οὐδὲ μετεμελήθητε ὕστερον τοῦ πιστεῦσαι αὐτῷ."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 21:29",
+      "reason": "occurs near μεταμέλομαι, ὕστερος"
+    },
+    {
+      "ref": "Matthew 21:32",
+      "reason": "occurs near μεταμέλομαι, ὕστερος"
+    },
+    {
+      "ref": "Matthew 27:3",
+      "reason": "occurs near μεταμέλομαι"
+    },
+    {
+      "ref": "2 Corinthians 7:8",
+      "reason": "occurs near βλέπω, μεταμέλομαι, ἐπιστολή"
+    },
+    {
+      "ref": "Hebrews 7:21",
+      "reason": "occurs near μεταμέλομαι, ὀμνύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,156 @@
+{
+  "lemma": "σκιρτάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐσκίρτησεν",
+      "count": 2
+    },
+    {
+      "form": "σκιρτήσατε,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:41",
+      "form": "ἐσκίρτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 41,
+      "left_context": "⸂τὸν ἀσπασμὸν τῆς Μαρίας ἡ Ἐλισάβετ⸃,",
+      "right_context": "τὸ βρέφος ἐν τῇ κοιλίᾳ αὐτῆς,"
+    },
+    {
+      "ref": "Luke 1:44",
+      "form": "ἐσκίρτησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 44,
+      "left_context": "ἀσπασμοῦ σου εἰς τὰ ὦτά μου,",
+      "right_context": "⸂ἐν ἀγαλλιάσει τὸ βρέφος⸃ ἐν τῇ"
+    },
+    {
+      "ref": "Luke 6:23",
+      "form": "σκιρτήσατε,",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 23,
+      "left_context": "χάρητε ἐν ἐκείνῃ τῇ ἡμέρᾳ καὶ",
+      "right_context": "ἰδοὺ γὰρ ὁ μισθὸς ὑμῶν πολὺς"
+    }
+  ],
+  "books": {
+    "Luke": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βρέφος",
+      "display": "bebé",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσπασμός",
+      "display": "saludo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Μαρία",
+      "display": "de·María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἐλισάβετ",
+      "display": "Elisabet",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοιλία",
+      "display": "vientre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὖς",
+      "display": "oídos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαλλίασις",
+      "display": "gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μισθός",
+      "display": "salario",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 6:23",
+      "form": "σκιρτήσατε,",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "χάρητε ἐν ἐκείνῃ τῇ ἡμέρᾳ καὶ σκιρτήσατε, ἰδοὺ γὰρ ὁ μισθὸς ὑμῶν πολὺς ἐν τῷ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:23",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 1:41",
+      "reason": "occurs near Μαρία, βρέφος, κοιλία"
+    },
+    {
+      "ref": "Luke 1:44",
+      "reason": "occurs near βρέφος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

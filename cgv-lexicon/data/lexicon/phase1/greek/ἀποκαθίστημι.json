@@ -1,0 +1,302 @@
+{
+  "lemma": "ἀποκαθίστημι",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "ἀπεκατεστάθη",
+      "count": 3
+    },
+    {
+      "form": "ἀποκατασταθῶ",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαθιστάνεις",
+      "count": 1
+    },
+    {
+      "form": "ἀπεκατέστη",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀποκαθιστάνει",
+      "count": 1
+    },
+    {
+      "form": "ἀποκαταστήσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 7
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 2,
+      "future": 1
+    },
+    "voices": {
+      "passive": 4,
+      "active": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 13:19",
+      "form": "ἀποκατασταθῶ",
+      "morph": "V-A-P-S-1S",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 19,
+      "left_context": "δὲ παρακαλῶ τοῦτο ποιῆσαι ἵνα τάχιον",
+      "right_context": "ὑμῖν."
+    },
+    {
+      "ref": "Acts 1:6",
+      "form": "ἀποκαθιστάνεις",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 1,
+      "verse": 6,
+      "left_context": "Κύριε, εἰ ἐν τῷ χρόνῳ τούτῳ",
+      "right_context": "τὴν βασιλείαν τῷ Ἰσραήλ;"
+    },
+    {
+      "ref": "Luke 6:10",
+      "form": "ἀπεκατεστάθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "χεῖρά σου· ὁ δὲ ἐποίησεν, καὶ",
+      "right_context": "ἡ χεὶρ ⸀αὐτοῦ."
+    },
+    {
+      "ref": "Mark 3:5",
+      "form": "ἀπεκατεστάθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Mark",
+      "chapter": 3,
+      "verse": 5,
+      "left_context": "Ἔκτεινον τὴν ⸀χεῖρα· καὶ ἐξέτεινεν, καὶ",
+      "right_context": "ἡ χεὶρ ⸀αὐτοῦ."
+    },
+    {
+      "ref": "Mark 8:25",
+      "form": "ἀπεκατέστη",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 25,
+      "left_context": "τοὺς ὀφθαλμοὺς αὐτοῦ, καὶ ⸂διέβλεψεν καὶ",
+      "right_context": "καὶ ἐνέβλεπεν⸃ τηλαυγῶς ⸀ἅπαντα."
+    },
+    {
+      "ref": "Mark 9:12",
+      "form": "⸀ἀποκαθιστάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 12,
+      "left_context": "⸀ἔφη αὐτοῖς· Ἠλίας μὲν ἐλθὼν πρῶτον",
+      "right_context": "πάντα, καὶ πῶς γέγραπται ἐπὶ τὸν"
+    },
+    {
+      "ref": "Matthew 12:13",
+      "form": "ἀπεκατεστάθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "⸂σου τὴν χεῖρα⸃· καὶ ἐξέτεινεν, καὶ",
+      "right_context": "ὑγιὴς ὡς ἡ ἄλλη."
+    },
+    {
+      "ref": "Matthew 17:11",
+      "form": "ἀποκαταστήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 11,
+      "left_context": "ἀποκριθεὶς ⸀εἶπεν· Ἠλίας μὲν ⸀ἔρχεται καὶ",
+      "right_context": "πάντα·"
+    }
+  ],
+  "books": {
+    "Mark": 3,
+    "Matthew": 2,
+    "Hebrews": 1,
+    "Acts": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "χείρ",
+      "display": "mana",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτείνω",
+      "display": "extendió",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἠλίας",
+      "display": "Elías",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τάχιον",
+      "display": "más·rápido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρόνος",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "Israel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαβλέπω",
+      "display": "ver·claramente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμβλέπω",
+      "display": "miraba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τηλαυγῶς",
+      "display": "claramente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπας",
+      "display": "todos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primero",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑγιής",
+      "display": "sana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄλλος",
+      "display": "otra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 3:5",
+      "reason": "occurs near χείρ, ἐκτείνω"
+    },
+    {
+      "ref": "Mark 8:25",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 9:12",
+      "reason": "occurs near μέν, ἔρχομαι, Ἠλίας"
+    },
+    {
+      "ref": "Matthew 12:13",
+      "reason": "occurs near χείρ, ἐκτείνω"
+    },
+    {
+      "ref": "Matthew 17:11",
+      "reason": "occurs near μέν, ἔρχομαι, Ἠλίας"
+    },
+    {
+      "ref": "Acts 1:6",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 13:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 6:10",
+      "reason": "occurs near χείρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

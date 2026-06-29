@@ -1,0 +1,146 @@
+{
+  "lemma": "πλατύνω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "πεπλάτυνται·",
+      "count": 1
+    },
+    {
+      "form": "πλατύνθητε",
+      "count": 1
+    },
+    {
+      "form": "πλατύνουσι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 6:11",
+      "form": "πεπλάτυνται·",
+      "morph": "V-X-P-I-3S",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 11,
+      "left_context": "πρὸς ὑμᾶς, Κορίνθιοι, ἡ καρδία ἡμῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "2 Corinthians 6:13",
+      "form": "πλατύνθητε",
+      "morph": "V-A-P-D-2P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "δὲ αὐτὴν ἀντιμισθίαν, ὡς τέκνοις λέγω,",
+      "right_context": "καὶ ὑμεῖς."
+    },
+    {
+      "ref": "Matthew 23:5",
+      "form": "πλατύνουσι",
+      "morph": "V-P-A-I-3P",
+      "book": "Matthew",
+      "chapter": 23,
+      "verse": 5,
+      "left_context": "ποιοῦσιν πρὸς τὸ θεαθῆναι τοῖς ἀνθρώποις·",
+      "right_context": "⸀γὰρ τὰ φυλακτήρια αὐτῶν καὶ μεγαλύνουσι"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Κορίνθιος",
+      "display": "Corintio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντιμισθία",
+      "display": "retribución",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεάομαι",
+      "display": "contemplar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακτήριον",
+      "display": "filacterias",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Corinthians 6:13",
+      "form": "πλατύνθητε",
+      "morph": "V-A-P-D-2P",
+      "clause_text": "τὴν δὲ αὐτὴν ἀντιμισθίαν, ὡς τέκνοις λέγω, πλατύνθητε καὶ ὑμεῖς."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 6:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Corinthians 6:11",
+      "reason": "occurs near Κορίνθιος, καρδία"
+    },
+    {
+      "ref": "Matthew 23:5",
+      "reason": "occurs near θεάομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

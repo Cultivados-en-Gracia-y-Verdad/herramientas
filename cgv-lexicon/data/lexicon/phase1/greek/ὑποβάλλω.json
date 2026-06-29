@@ -1,0 +1,74 @@
+{
+  "lemma": "ὑποβάλλω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὑπέβαλον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 6:11",
+      "form": "ὑπέβαλον",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 6,
+      "verse": 11,
+      "left_context": "τότε",
+      "right_context": "ἄνδρας λέγοντας ὅτι Ἀκηκόαμεν αὐτοῦ λαλοῦντος"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 6:11",
+      "reason": "occurs near τότε, ἀκούω, ἀνήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

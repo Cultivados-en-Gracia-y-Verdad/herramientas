@@ -1,0 +1,229 @@
+{
+  "lemma": "καταφέρω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "καταφερόμενος",
+      "count": 1
+    },
+    {
+      "form": "κατενεχθεὶς",
+      "count": 1
+    },
+    {
+      "form": "⸀καταφέροντες",
+      "count": 1
+    },
+    {
+      "form": "κατήνεγκα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 2
+    },
+    "voices": {
+      "passive": 2,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:9",
+      "form": "καταφερόμενος",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 9,
+      "left_context": "νεανίας ὀνόματι Εὔτυχος ἐπὶ τῆς θυρίδος,",
+      "right_context": "ὕπνῳ βαθεῖ διαλεγομένου τοῦ Παύλου ἐπὶ"
+    },
+    {
+      "ref": "Acts 20:9",
+      "form": "κατενεχθεὶς",
+      "morph": "V-A-P-P",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 9,
+      "left_context": "βαθεῖ διαλεγομένου τοῦ Παύλου ἐπὶ πλεῖον,",
+      "right_context": "ἀπὸ τοῦ ὕπνου ἔπεσεν ἀπὸ τοῦ"
+    },
+    {
+      "ref": "Acts 25:7",
+      "form": "⸀καταφέροντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 7,
+      "left_context": "καταβεβηκότες Ἰουδαῖοι, πολλὰ καὶ βαρέα αἰτιώματα",
+      "right_context": "ἃ οὐκ ἴσχυον ἀποδεῖξαι,"
+    },
+    {
+      "ref": "Acts 26:10",
+      "form": "κατήνεγκα",
+      "morph": "V-A-A-I-1S",
+      "book": "Acts",
+      "chapter": 26,
+      "verse": 10,
+      "left_context": "ἀρχιερέων ἐξουσίαν λαβών, ἀναιρουμένων τε αὐτῶν",
+      "right_context": "ψῆφον,"
+    }
+  ],
+  "books": {
+    "Acts": 4
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὕπνος",
+      "display": "sueño",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διαλέγομαι",
+      "display": "discutiendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "de·Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucho",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Εὔτυχος",
+      "display": "Eutico",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυρίς",
+      "display": "de·ventana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαθύς",
+      "display": "profundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίπτω",
+      "display": "cayó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαρύς",
+      "display": "pesados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτίωμα",
+      "display": "acusaciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "podían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποδείκνυμι",
+      "display": "demostrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξουσία",
+      "display": "autoridad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαμβάνω",
+      "display": "tomado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναιρέω",
+      "display": "matados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψῆφος",
+      "display": "voto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 25:7",
+      "negator": "οὐκ",
+      "clause_text": "ἀπὸ Ἱεροσολύμων καταβεβηκότες Ἰουδαῖοι, πολλὰ καὶ βαρέα αἰτιώματα ⸀καταφέροντες ἃ οὐκ ἴσχυον ἀποδεῖξαι,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:9",
+      "reason": "occurs near Παῦλος, διαλέγομαι, ὄνομα"
+    },
+    {
+      "ref": "Acts 25:7",
+      "reason": "occurs near πολύς"
+    },
+    {
+      "ref": "Acts 26:10",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,239 @@
+{
+  "lemma": "περίκειμαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "περίκειται",
+      "count": 3
+    },
+    {
+      "form": "περικείμενον",
+      "count": 1
+    },
+    {
+      "form": "περίκειμαι.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 1
+    },
+    "tenses": {
+      "present": 5
+    },
+    "voices": {
+      "passive": 2,
+      "middle": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 5:2",
+      "form": "περίκειται",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 5,
+      "verse": 2,
+      "left_context": "ἀγνοοῦσι καὶ πλανωμένοις ἐπεὶ καὶ αὐτὸς",
+      "right_context": "ἀσθένειαν,"
+    },
+    {
+      "ref": "Hebrews 12:1",
+      "form": "περικείμενον",
+      "morph": "V-P-M-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 1,
+      "left_context": "Τοιγαροῦν καὶ ἡμεῖς, τοσοῦτον ἔχοντες",
+      "right_context": "ἡμῖν νέφος μαρτύρων, ὄγκον ἀποθέμενοι πάντα"
+    },
+    {
+      "ref": "Acts 28:20",
+      "form": "περίκειμαι.",
+      "morph": "V-P-P-I-1S",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 20,
+      "left_context": "ἐλπίδος τοῦ Ἰσραὴλ τὴν ἅλυσιν ταύτην",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 17:2",
+      "form": "περίκειται",
+      "morph": "V-P-M-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 2,
+      "left_context": "λυσιτελεῖ αὐτῷ εἰ ⸂λίθος μυλικὸς⸃",
+      "right_context": "περὶ τὸν τράχηλον αὐτοῦ καὶ ἔρριπται"
+    },
+    {
+      "ref": "Mark 9:42",
+      "form": "περίκειται",
+      "morph": "V-P-M-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 42,
+      "left_context": "ἐμέ⸃, καλόν ἐστιν αὐτῷ μᾶλλον εἰ",
+      "right_context": "⸂μύλος ὀνικὸς⸃ περὶ τὸν τράχηλον αὐτοῦ"
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "Acts": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τράχηλος",
+      "display": "cuello",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλανάω",
+      "display": "extraviados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπεί",
+      "display": "puesto·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθένεια",
+      "display": "enfermedad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοιγαροῦν",
+      "display": "por·tanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τοσοῦτος",
+      "display": "tanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νέφος",
+      "display": "nube",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάρτυς",
+      "display": "de·testigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄγκος",
+      "display": "peso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποτίθημι",
+      "display": "puestos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "de·Israel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅλυσις",
+      "display": "cadena",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λυσιτελεῖ",
+      "display": "conviene",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μυλικός",
+      "display": "de·molino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μύλος",
+      "display": "molino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀνικός",
+      "display": "de·asno",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:1",
+      "reason": "occurs near τοιγαροῦν"
+    },
+    {
+      "ref": "Hebrews 5:2",
+      "reason": "occurs near πλανάω, ἀσθένεια, ἐπεί"
+    },
+    {
+      "ref": "Acts 28:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 17:2",
+      "reason": "occurs near τράχηλος"
+    },
+    {
+      "ref": "Mark 9:42",
+      "reason": "occurs near τράχηλος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

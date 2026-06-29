@@ -1,0 +1,448 @@
+{
+  "lemma": "ποτίζω",
+  "language": "greek",
+  "total_occurrences": 15,
+  "forms": [
+    {
+      "form": "ποτίσῃ",
+      "count": 2
+    },
+    {
+      "form": "ἐπότιζεν",
+      "count": 2
+    },
+    {
+      "form": "ἐποτίσατέ",
+      "count": 2
+    },
+    {
+      "form": "ἐπότισα,",
+      "count": 1
+    },
+    {
+      "form": "ἐπότισεν,",
+      "count": 1
+    },
+    {
+      "form": "ποτίζων,",
+      "count": 1
+    },
+    {
+      "form": "ποτίζων",
+      "count": 1
+    },
+    {
+      "form": "ἐποτίσθημεν.",
+      "count": 1
+    },
+    {
+      "form": "πεπότικεν",
+      "count": 1
+    },
+    {
+      "form": "ποτίζει;",
+      "count": 1
+    },
+    {
+      "form": "ἐποτίσαμεν;",
+      "count": 1
+    },
+    {
+      "form": "πότιζε",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 10,
+      "participle": 2,
+      "subjunctive": 2,
+      "imperative": 1
+    },
+    "tenses": {
+      "aorist": 8,
+      "present": 4,
+      "perfect": 1,
+      "imperfect": 2
+    },
+    "voices": {
+      "active": 14,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 3:2",
+      "form": "ἐπότισα,",
+      "morph": "V-A-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 2,
+      "left_context": "γάλα ὑμᾶς",
+      "right_context": "⸀οὐ βρῶμα, οὔπω γὰρ ἐδύνασθε. ἀλλ’"
+    },
+    {
+      "ref": "1 Corinthians 3:6",
+      "form": "ἐπότισεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "ἐγὼ ἐφύτευσα, Ἀπολλῶς",
+      "right_context": "ἀλλὰ ὁ θεὸς ηὔξανεν·"
+    },
+    {
+      "ref": "1 Corinthians 3:7",
+      "form": "ποτίζων,",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 7,
+      "left_context": "ὁ φυτεύων ἐστίν τι οὔτε ὁ",
+      "right_context": "ἀλλ’ ὁ αὐξάνων θεός."
+    },
+    {
+      "ref": "1 Corinthians 3:8",
+      "form": "ποτίζων",
+      "morph": "V-P-A-P",
+      "book": "1 Corinthians",
+      "chapter": 3,
+      "verse": 8,
+      "left_context": "ὁ φυτεύων δὲ καὶ ὁ",
+      "right_context": "ἕν εἰσιν, ἕκαστος δὲ τὸν ἴδιον"
+    },
+    {
+      "ref": "1 Corinthians 12:13",
+      "form": "ἐποτίσθημεν.",
+      "morph": "V-A-P-I-1P",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 13,
+      "left_context": "εἴτε ἐλεύθεροι, καὶ ⸀πάντες ἓν πνεῦμα",
+      "right_context": ""
+    },
+    {
+      "ref": "Revelation 14:8",
+      "form": "πεπότικεν",
+      "morph": "V-X-A-I-3S",
+      "book": "Revelation",
+      "chapter": 14,
+      "verse": 8,
+      "left_context": "οἴνου τοῦ θυμοῦ τῆς πορνείας αὐτῆς",
+      "right_context": "πάντα τὰ ἔθνη."
+    },
+    {
+      "ref": "Luke 13:15",
+      "form": "ποτίζει;",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 13,
+      "verse": 15,
+      "left_context": "ὄνον ἀπὸ τῆς φάτνης καὶ ⸀ἀπαγαγὼν",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 9:41",
+      "form": "ποτίσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 41,
+      "left_context": "Ὃς γὰρ ἂν",
+      "right_context": "ὑμᾶς ποτήριον ὕδατος ἐν ⸀ὀνόματι ὅτι"
+    },
+    {
+      "ref": "Mark 15:36",
+      "form": "ἐπότιζεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 36,
+      "left_context": "καὶ⸃ γεμίσας σπόγγον ὄξους ⸀περιθεὶς καλάμῳ",
+      "right_context": "αὐτόν, λέγων· Ἄφετε ἴδωμεν εἰ ἔρχεται"
+    },
+    {
+      "ref": "Matthew 10:42",
+      "form": "ποτίσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 42,
+      "left_context": "καὶ ὃς ⸀ἂν",
+      "right_context": "ἕνα τῶν μικρῶν τούτων ποτήριον ψυχροῦ"
+    },
+    {
+      "ref": "Matthew 25:35",
+      "form": "ἐποτίσατέ",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 35,
+      "left_context": "καὶ ἐδώκατέ μοι φαγεῖν, ἐδίψησα καὶ",
+      "right_context": "με, ξένος ἤμην καὶ συνηγάγετέ με,"
+    },
+    {
+      "ref": "Matthew 25:37",
+      "form": "ἐποτίσαμεν;",
+      "morph": "V-A-A-I-1P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 37,
+      "left_context": "πεινῶντα καὶ ἐθρέψαμεν, ἢ διψῶντα καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 25:42",
+      "form": "ἐποτίσατέ",
+      "morph": "V-A-A-I-2P",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 42,
+      "left_context": "ἐδώκατέ μοι φαγεῖν, ⸀ἐδίψησα καὶ οὐκ",
+      "right_context": "με,"
+    },
+    {
+      "ref": "Matthew 27:48",
+      "form": "ἐπότιζεν",
+      "morph": "V-I-A-I-3S",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 48,
+      "left_context": "πλήσας τε ὄξους καὶ περιθεὶς καλάμῳ",
+      "right_context": "αὐτόν."
+    },
+    {
+      "ref": "Romans 12:20",
+      "form": "πότιζε",
+      "morph": "V-P-A-D-2S",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 20,
+      "left_context": "ἐχθρός σου, ψώμιζε αὐτόν· ἐὰν διψᾷ,",
+      "right_context": "αὐτόν· τοῦτο γὰρ ποιῶν ἄνθρακας πυρὸς"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 5,
+    "Matthew": 5,
+    "Mark": 2,
+    "Revelation": 1,
+    "Luke": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "διψάω",
+      "display": "tener·sed",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "φυτεύω",
+      "display": "planté",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "αὐξάνω",
+      "display": "crecía",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ποτήριον",
+      "display": "copa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄξος",
+      "display": "de·vinagre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "περιτίθημι",
+      "display": "puesto",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κάλαμος",
+      "display": "caña",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comer",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γάλα",
+      "display": "leche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βρῶμα",
+      "display": "comida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔπω",
+      "display": "aún·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podíais",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀπολλῶς",
+      "display": "Apolos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔτε",
+      "display": "ni",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεύθερος",
+      "display": "libres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θυμός",
+      "display": "de·ira",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορνεία",
+      "display": "de·fornicación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔθνος",
+      "display": "naciónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φάτνη",
+      "display": "de·pesebre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπάγω",
+      "display": "llevado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·agua",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Romans 12:20",
+      "form": "πότιζε",
+      "morph": "V-P-A-D-2S",
+      "clause_text": "πεινᾷ ὁ ἐχθρός σου, ψώμιζε αὐτόν· ἐὰν διψᾷ, πότιζε αὐτόν· τοῦτο γὰρ ποιῶν ἄνθρακας πυρὸς σωρεύσεις ἐπὶ"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "1 Corinthians 3:2",
+      "negator": "⸀οὐ",
+      "clause_text": "γάλα ὑμᾶς ἐπότισα, ⸀οὐ βρῶμα, οὔπω γὰρ ἐδύνασθε. ἀλλ’ ⸀οὐδὲ ἔτι"
+    },
+    {
+      "ref": "Matthew 25:42",
+      "negator": "οὐκ",
+      "clause_text": "καὶ οὐκ ἐδώκατέ μοι φαγεῖν, ⸀ἐδίψησα καὶ οὐκ ἐποτίσατέ με,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 12:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Corinthians 12:13",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 3:2",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 3:6",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 3:7",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "1 Corinthians 3:8",
+      "reason": "frequent in 1 Corinthians"
+    },
+    {
+      "ref": "Matthew 10:42",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 25:35",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

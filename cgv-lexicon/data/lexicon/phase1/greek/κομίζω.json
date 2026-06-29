@@ -1,0 +1,382 @@
+{
+  "lemma": "κομίζω",
+  "language": "greek",
+  "total_occurrences": 10,
+  "forms": [
+    {
+      "form": "κομιζόμενοι",
+      "count": 1
+    },
+    {
+      "form": "κομιεῖσθε",
+      "count": 1
+    },
+    {
+      "form": "κομίσηται",
+      "count": 1
+    },
+    {
+      "form": "κομίσεται",
+      "count": 1
+    },
+    {
+      "form": "⸀κομίσεται",
+      "count": 1
+    },
+    {
+      "form": "κομίσησθε",
+      "count": 1
+    },
+    {
+      "form": "ἐκομίσατο.",
+      "count": 1
+    },
+    {
+      "form": "ἐκομίσαντο",
+      "count": 1
+    },
+    {
+      "form": "κομίσασα",
+      "count": 1
+    },
+    {
+      "form": "ἐκομισάμην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 6,
+      "subjunctive": 2
+    },
+    "tenses": {
+      "present": 1,
+      "future": 3,
+      "aorist": 6
+    },
+    "voices": {
+      "middle": 9,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 1:9",
+      "form": "κομιζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "1 Peter",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "",
+      "right_context": "τὸ τέλος τῆς πίστεως ⸀ὑμῶν σωτηρίαν"
+    },
+    {
+      "ref": "1 Peter 5:4",
+      "form": "κομιεῖσθε",
+      "morph": "V-F-M-I-2P",
+      "book": "1 Peter",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "καὶ φανερωθέντος τοῦ ἀρχιποίμενος",
+      "right_context": "τὸν ἀμαράντινον τῆς δόξης στέφανον."
+    },
+    {
+      "ref": "2 Corinthians 5:10",
+      "form": "κομίσηται",
+      "morph": "V-A-M-S-3S",
+      "book": "2 Corinthians",
+      "chapter": 5,
+      "verse": 10,
+      "left_context": "ἔμπροσθεν τοῦ βήματος τοῦ Χριστοῦ, ἵνα",
+      "right_context": "ἕκαστος τὰ διὰ τοῦ σώματος πρὸς"
+    },
+    {
+      "ref": "Colossians 3:25",
+      "form": "κομίσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Colossians",
+      "chapter": 3,
+      "verse": 25,
+      "left_context": "ὁ ⸀γὰρ ἀδικῶν",
+      "right_context": "ὃ ἠδίκησεν, καὶ οὐκ ἔστιν προσωπολημψία."
+    },
+    {
+      "ref": "Ephesians 6:8",
+      "form": "⸀κομίσεται",
+      "morph": "V-F-M-I-3S",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 8,
+      "left_context": "⸂ἕκαστος, ὃ ἂν⸃ ποιήσῃ ἀγαθόν, τοῦτο",
+      "right_context": "⸀παρὰ κυρίου, εἴτε δοῦλος εἴτε ἐλεύθερος."
+    },
+    {
+      "ref": "Hebrews 10:36",
+      "form": "κομίσησθε",
+      "morph": "V-A-M-S-2P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 36,
+      "left_context": "ἵνα τὸ θέλημα τοῦ θεοῦ ποιήσαντες",
+      "right_context": "τὴν ἐπαγγελίαν·"
+    },
+    {
+      "ref": "Hebrews 11:19",
+      "form": "ἐκομίσατο.",
+      "morph": "V-A-M-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 19,
+      "left_context": "θεός· ὅθεν αὐτὸν καὶ ἐν παραβολῇ",
+      "right_context": ""
+    },
+    {
+      "ref": "Hebrews 11:39",
+      "form": "ἐκομίσαντο",
+      "morph": "V-A-M-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 39,
+      "left_context": "πάντες μαρτυρηθέντες διὰ τῆς πίστεως οὐκ",
+      "right_context": "τὴν ἐπαγγελίαν,"
+    },
+    {
+      "ref": "Luke 7:37",
+      "form": "κομίσασα",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 37,
+      "left_context": "⸀κατάκειται ἐν τῇ οἰκίᾳ τοῦ Φαρισαίου,",
+      "right_context": "ἀλάβαστρον μύρου"
+    },
+    {
+      "ref": "Matthew 25:27",
+      "form": "ἐκομισάμην",
+      "morph": "V-A-M-I-1S",
+      "book": "Matthew",
+      "chapter": 25,
+      "verse": 27,
+      "left_context": "μου τοῖς τραπεζίταις, καὶ ἐλθὼν ἐγὼ",
+      "right_context": "ἂν τὸ ἐμὸν σὺν τόκῳ."
+    }
+  ],
+  "books": {
+    "Hebrews": 3,
+    "1 Peter": 2,
+    "2 Corinthians": 1,
+    "Colossians": 1,
+    "Ephesians": 1,
+    "Luke": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδικέω",
+      "display": "hacer·injusticia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἴτε",
+      "display": "sea·que",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "promesa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέλος",
+      "display": "fin",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φανερόω",
+      "display": "manifestado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχιποίμην",
+      "display": "príncipe·de·los·pastores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμαράντινος",
+      "display": "inmarcesible",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "de·gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στέφανος",
+      "display": "corona",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βῆμα",
+      "display": "de·tribunal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "de·Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕκαστος",
+      "display": "cada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "de·cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλημα",
+      "display": "voluntad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅθεν",
+      "display": "de·donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβολή",
+      "display": "parábola",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρέω",
+      "display": "testificados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "de·Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλάβαστρον",
+      "display": "alabastro",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Colossians 3:25",
+      "negator": "οὐκ",
+      "clause_text": "ὁ ⸀γὰρ ἀδικῶν κομίσεται ὃ ἠδίκησεν, καὶ οὐκ ἔστιν προσωπολημψία."
+    },
+    {
+      "ref": "Hebrews 11:39",
+      "negator": "οὐκ",
+      "clause_text": "⸀καὶ πάντες μαρτυρηθέντες διὰ τῆς πίστεως οὐκ ἐκομίσαντο τὴν ἐπαγγελίαν,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:36",
+      "reason": "occurs near ἐπαγγελία"
+    },
+    {
+      "ref": "Hebrews 11:19",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 11:39",
+      "reason": "occurs near πίστις, ἐπαγγελία"
+    },
+    {
+      "ref": "1 Peter 1:9",
+      "reason": "occurs near πίστις, τέλος"
+    },
+    {
+      "ref": "1 Peter 5:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Corinthians 5:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Colossians 3:25",
+      "reason": "occurs near ἀδικέω"
+    },
+    {
+      "ref": "Ephesians 6:8",
+      "reason": "occurs near εἴτε"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

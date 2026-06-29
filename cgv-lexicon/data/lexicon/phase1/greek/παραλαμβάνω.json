@@ -1,0 +1,852 @@
+{
+  "lemma": "παραλαμβάνω",
+  "language": "greek",
+  "total_occurrences": 49,
+  "forms": [
+    {
+      "form": "παραλαβὼν",
+      "count": 9
+    },
+    {
+      "form": "παραλαμβάνει",
+      "count": 8
+    },
+    {
+      "form": "παρέλαβον",
+      "count": 3
+    },
+    {
+      "form": "παρελάβετε",
+      "count": 3
+    },
+    {
+      "form": "παράλαβε",
+      "count": 3
+    },
+    {
+      "form": "παρελάβετε,",
+      "count": 2
+    },
+    {
+      "form": "παραλαβόντες",
+      "count": 2
+    },
+    {
+      "form": "παραλημφθήσεται",
+      "count": 2
+    },
+    {
+      "form": "παρέλαβεν",
+      "count": 2
+    },
+    {
+      "form": "παρέλαβε",
+      "count": 2
+    },
+    {
+      "form": "παραλαμβάνεται",
+      "count": 2
+    },
+    {
+      "form": "παρέλαβον,",
+      "count": 1
+    },
+    {
+      "form": "⸀παρελάβοσαν",
+      "count": 1
+    },
+    {
+      "form": "παρέλαβες",
+      "count": 1
+    },
+    {
+      "form": "παραλαμβάνοντες",
+      "count": 1
+    },
+    {
+      "form": "παραλαβόντα",
+      "count": 1
+    },
+    {
+      "form": "παρέλαβον.",
+      "count": 1
+    },
+    {
+      "form": "παραλήμψομαι",
+      "count": 1
+    },
+    {
+      "form": "Παρέλαβον",
+      "count": 1
+    },
+    {
+      "form": "Παραλαβὼν",
+      "count": 1
+    },
+    {
+      "form": "παραλαμβάνουσιν",
+      "count": 1
+    },
+    {
+      "form": "παραλαβεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 31,
+      "participle": 14,
+      "infinitive": 1,
+      "imperative": 3
+    },
+    "tenses": {
+      "aorist": 34,
+      "present": 12,
+      "future": 3
+    },
+    "voices": {
+      "active": 44,
+      "middle": 1,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:23",
+      "form": "παρέλαβον",
+      "morph": "V-A-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 23,
+      "left_context": "Ἐγὼ γὰρ",
+      "right_context": "ἀπὸ τοῦ κυρίου, ὃ καὶ παρέδωκα"
+    },
+    {
+      "ref": "1 Corinthians 15:1",
+      "form": "παρελάβετε,",
+      "morph": "V-A-A-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 1,
+      "left_context": "εὐαγγέλιον ὃ εὐηγγελισάμην ὑμῖν, ὃ καὶ",
+      "right_context": "ἐν ᾧ καὶ ἑστήκατε,"
+    },
+    {
+      "ref": "1 Corinthians 15:3",
+      "form": "παρέλαβον,",
+      "morph": "V-A-A-I-1S",
+      "book": "1 Corinthians",
+      "chapter": 15,
+      "verse": 3,
+      "left_context": "γὰρ ὑμῖν ἐν πρώτοις, ὃ καὶ",
+      "right_context": "ὅτι Χριστὸς ἀπέθανεν ὑπὲρ τῶν ἁμαρτιῶν"
+    },
+    {
+      "ref": "1 Thessalonians 2:13",
+      "form": "παραλαβόντες",
+      "morph": "V-A-A-P",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "ἡμεῖς εὐχαριστοῦμεν τῷ θεῷ ἀδιαλείπτως, ὅτι",
+      "right_context": "λόγον ἀκοῆς παρ’ ἡμῶν τοῦ θεοῦ"
+    },
+    {
+      "ref": "1 Thessalonians 4:1",
+      "form": "παρελάβετε",
+      "morph": "V-A-A-I-2P",
+      "book": "1 Thessalonians",
+      "chapter": 4,
+      "verse": 1,
+      "left_context": "παρακαλοῦμεν ἐν κυρίῳ Ἰησοῦ, ⸀ἵνα καθὼς",
+      "right_context": "παρ’ ἡμῶν τὸ πῶς δεῖ ὑμᾶς"
+    },
+    {
+      "ref": "2 Thessalonians 3:6",
+      "form": "⸀παρελάβοσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "2 Thessalonians",
+      "chapter": 3,
+      "verse": 6,
+      "left_context": "καὶ μὴ κατὰ τὴν παράδοσιν ἣν",
+      "right_context": "παρ’ ἡμῶν."
+    },
+    {
+      "ref": "Colossians 2:6",
+      "form": "παρελάβετε",
+      "morph": "V-A-A-I-2P",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "Ὡς οὖν",
+      "right_context": "τὸν Χριστὸν Ἰησοῦν τὸν κύριον, ἐν"
+    },
+    {
+      "ref": "Colossians 4:17",
+      "form": "παρέλαβες",
+      "morph": "V-A-A-I-2S",
+      "book": "Colossians",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "εἴπατε Ἀρχίππῳ· Βλέπε τὴν διακονίαν ἣν",
+      "right_context": "ἐν κυρίῳ, ἵνα αὐτὴν πληροῖς."
+    },
+    {
+      "ref": "Philippians 4:9",
+      "form": "παρελάβετε",
+      "morph": "V-A-A-I-2P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 9,
+      "left_context": "ἃ καὶ ἐμάθετε καὶ",
+      "right_context": "καὶ ἠκούσατε καὶ εἴδετε ἐν ἐμοί,"
+    },
+    {
+      "ref": "Galatians 1:9",
+      "form": "παρελάβετε,",
+      "morph": "V-A-A-I-2P",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "εἴ τις ὑμᾶς εὐαγγελίζεται παρ’ ὃ",
+      "right_context": "ἀνάθεμα ἔστω."
+    },
+    {
+      "ref": "Galatians 1:12",
+      "form": "παρέλαβον",
+      "morph": "V-A-A-I-1S",
+      "book": "Galatians",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "οὐδὲ γὰρ ἐγὼ παρὰ ἀνθρώπου",
+      "right_context": "αὐτό, ⸀οὔτε ἐδιδάχθην, ἀλλὰ δι’ ἀποκαλύψεως"
+    },
+    {
+      "ref": "Hebrews 12:28",
+      "form": "παραλαμβάνοντες",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 28,
+      "left_context": "διὸ βασιλείαν ἀσάλευτον",
+      "right_context": "ἔχωμεν χάριν, δι’ ἧς ⸀λατρεύωμεν εὐαρέστως"
+    },
+    {
+      "ref": "Acts 15:39",
+      "form": "παραλαβόντα",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 15,
+      "verse": 39,
+      "left_context": "αὐτοὺς ἀπ’ ἀλλήλων, τόν τε Βαρναβᾶν",
+      "right_context": "τὸν Μᾶρκον ἐκπλεῦσαι εἰς Κύπρον,"
+    },
+    {
+      "ref": "Acts 16:33",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 33,
+      "left_context": "καὶ",
+      "right_context": "αὐτοὺς ἐν ἐκείνῃ τῇ ὥρᾳ τῆς"
+    },
+    {
+      "ref": "Acts 21:24",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 24,
+      "left_context": "τούτους",
+      "right_context": "ἁγνίσθητι σὺν αὐτοῖς καὶ δαπάνησον ἐπ’"
+    },
+    {
+      "ref": "Acts 21:26",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 26,
+      "left_context": "τότε ὁ Παῦλος",
+      "right_context": "τοὺς ἄνδρας τῇ ἐχομένῃ ἡμέρᾳ σὺν"
+    },
+    {
+      "ref": "Acts 21:32",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 32,
+      "left_context": "ὃς ἐξαυτῆς",
+      "right_context": "στρατιώτας καὶ ἑκατοντάρχας κατέδραμεν ἐπ’ αὐτούς,"
+    },
+    {
+      "ref": "Acts 23:18",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 18,
+      "left_context": "ὁ μὲν οὖν",
+      "right_context": "αὐτὸν ἤγαγεν πρὸς τὸν χιλίαρχον καὶ"
+    },
+    {
+      "ref": "John 1:11",
+      "form": "παρέλαβον.",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 1,
+      "verse": 11,
+      "left_context": "ἦλθεν, καὶ οἱ ἴδιοι αὐτὸν οὐ",
+      "right_context": ""
+    },
+    {
+      "ref": "John 14:3",
+      "form": "παραλήμψομαι",
+      "morph": "V-F-M-I-1S",
+      "book": "John",
+      "chapter": 14,
+      "verse": 3,
+      "left_context": "ἑτοιμάσω ⸂τόπον ὑμῖν⸃, πάλιν ἔρχομαι καὶ",
+      "right_context": "ὑμᾶς πρὸς ἐμαυτόν, ἵνα ὅπου εἰμὶ"
+    },
+    {
+      "ref": "John 19:16",
+      "form": "Παρέλαβον",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 19,
+      "verse": 16,
+      "left_context": "οὖν παρέδωκεν αὐτὸν αὐτοῖς ἵνα σταυρωθῇ.",
+      "right_context": "⸀οὖν τὸν ⸀Ἰησοῦν·"
+    },
+    {
+      "ref": "Luke 9:10",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 10,
+      "left_context": "ἀπόστολοι διηγήσαντο αὐτῷ ὅσα ἐποίησαν. καὶ",
+      "right_context": "αὐτοὺς ὑπεχώρησεν κατ’ ἰδίαν εἰς ⸂πόλιν"
+    },
+    {
+      "ref": "Luke 9:28",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 28,
+      "left_context": "λόγους τούτους ὡσεὶ ἡμέραι ὀκτὼ ⸀καὶ",
+      "right_context": "Πέτρον καὶ Ἰωάννην καὶ Ἰάκωβον ἀνέβη"
+    },
+    {
+      "ref": "Luke 11:26",
+      "form": "παραλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 26,
+      "left_context": "τότε πορεύεται καὶ",
+      "right_context": "⸂ἕτερα πνεύματα πονηρότερα ἑαυτοῦ ἑπτά⸃, καὶ"
+    },
+    {
+      "ref": "Luke 17:34",
+      "form": "παραλημφθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 34,
+      "left_context": "δύο ἐπὶ κλίνης μιᾶς, ⸀ὁ εἷς",
+      "right_context": "καὶ ὁ ἕτερος ἀφεθήσεται·"
+    },
+    {
+      "ref": "Luke 17:35",
+      "form": "παραλημφθήσεται",
+      "morph": "V-F-P-I-3S",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 35,
+      "left_context": "ἀλήθουσαι ἐπὶ τὸ αὐτό, ⸀ἡ μία",
+      "right_context": "⸂ἡ δὲ⸃ ἑτέρα ⸀ἀφεθήσεται."
+    },
+    {
+      "ref": "Luke 18:31",
+      "form": "Παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 18,
+      "verse": 31,
+      "left_context": "",
+      "right_context": "δὲ τοὺς δώδεκα εἶπεν πρὸς αὐτούς·"
+    },
+    {
+      "ref": "Mark 4:36",
+      "form": "παραλαμβάνουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 36,
+      "left_context": "καὶ ἀφέντες τὸν ὄχλον",
+      "right_context": "αὐτὸν ὡς ἦν ἐν τῷ πλοίῳ,"
+    },
+    {
+      "ref": "Mark 5:40",
+      "form": "παραλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 40,
+      "left_context": "κατεγέλων αὐτοῦ. ⸀αὐτὸς δὲ ἐκβαλὼν πάντας",
+      "right_context": "τὸν πατέρα τοῦ παιδίου καὶ τὴν"
+    },
+    {
+      "ref": "Mark 7:4",
+      "form": "παρέλαβον",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 7,
+      "verse": 4,
+      "left_context": "ἐσθίουσιν, καὶ ἄλλα πολλά ἐστιν ἃ",
+      "right_context": "κρατεῖν, βαπτισμοὺς ποτηρίων καὶ ξεστῶν καὶ"
+    },
+    {
+      "ref": "Mark 9:2",
+      "form": "παραλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 2,
+      "left_context": "Καὶ μετὰ ἡμέρας ἓξ",
+      "right_context": "ὁ Ἰησοῦς τὸν Πέτρον καὶ τὸν"
+    },
+    {
+      "ref": "Mark 10:32",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 32,
+      "left_context": "ἐθαμβοῦντο, ⸂οἱ δὲ⸃ ἀκολουθοῦντες ἐφοβοῦντο. καὶ",
+      "right_context": "πάλιν τοὺς δώδεκα ἤρξατο αὐτοῖς λέγειν"
+    },
+    {
+      "ref": "Mark 14:33",
+      "form": "παραλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 33,
+      "left_context": "καὶ",
+      "right_context": "τὸν Πέτρον καὶ ⸂Ἰάκωβον καὶ⸃ Ἰωάννην"
+    },
+    {
+      "ref": "Matthew 1:20",
+      "form": "παραλαβεῖν",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "λέγων· Ἰωσὴφ υἱὸς Δαυίδ, μὴ φοβηθῇς",
+      "right_context": "⸀Μαρίαν τὴν γυναῖκά σου, τὸ γὰρ"
+    },
+    {
+      "ref": "Matthew 1:24",
+      "form": "παρέλαβεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 1,
+      "verse": 24,
+      "left_context": "προσέταξεν αὐτῷ ὁ ἄγγελος κυρίου καὶ",
+      "right_context": "τὴν γυναῖκα αὐτοῦ·"
+    },
+    {
+      "ref": "Matthew 2:13",
+      "form": "παράλαβε",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "κατ’ ὄναρ⸃ τῷ Ἰωσὴφ λέγων· Ἐγερθεὶς",
+      "right_context": "τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 2:14",
+      "form": "παρέλαβε",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 14,
+      "left_context": "ὁ δὲ ἐγερθεὶς",
+      "right_context": "τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 2:20",
+      "form": "παράλαβε",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "λέγων· Ἐγερθεὶς",
+      "right_context": "τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 2:21",
+      "form": "παρέλαβε",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 2,
+      "verse": 21,
+      "left_context": "ὁ δὲ ἐγερθεὶς",
+      "right_context": "τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 4:5",
+      "form": "παραλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 5,
+      "left_context": "Τότε",
+      "right_context": "αὐτὸν ὁ διάβολος εἰς τὴν ἁγίαν"
+    },
+    {
+      "ref": "Matthew 4:8",
+      "form": "παραλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "Πάλιν",
+      "right_context": "αὐτὸν ὁ διάβολος εἰς ὄρος ὑψηλὸν"
+    },
+    {
+      "ref": "Matthew 12:45",
+      "form": "παραλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 45,
+      "left_context": "τότε πορεύεται καὶ",
+      "right_context": "μεθ’ ἑαυτοῦ ἑπτὰ ἕτερα πνεύματα πονηρότερα"
+    },
+    {
+      "ref": "Matthew 17:1",
+      "form": "παραλαμβάνει",
+      "morph": "V-P-A-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 1,
+      "left_context": "Καὶ μεθ’ ἡμέρας ἓξ",
+      "right_context": "ὁ Ἰησοῦς τὸν Πέτρον καὶ Ἰάκωβον"
+    },
+    {
+      "ref": "Matthew 18:16",
+      "form": "παράλαβε",
+      "morph": "V-A-A-D-2S",
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 16,
+      "left_context": "ἐὰν δὲ μὴ ἀκούσῃ,",
+      "right_context": "μετὰ σοῦ ἔτι ἕνα ἢ δύο,"
+    },
+    {
+      "ref": "Matthew 20:17",
+      "form": "παρέλαβεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 20,
+      "verse": 17,
+      "left_context": "⸂Καὶ ἀναβαίνων ὁ⸃ Ἰησοῦς εἰς Ἱεροσόλυμα",
+      "right_context": "τοὺς δώδεκα ⸀μαθητὰς κατ’ ἰδίαν, ⸂καὶ"
+    },
+    {
+      "ref": "Matthew 24:40",
+      "form": "παραλαμβάνεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 40,
+      "left_context": "⸂δύο ἔσονται⸃ ἐν τῷ ἀγρῷ, ⸀εἷς",
+      "right_context": "καὶ ⸁εἷς ἀφίεται·"
+    },
+    {
+      "ref": "Matthew 24:41",
+      "form": "παραλαμβάνεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 41,
+      "left_context": "δύο ἀλήθουσαι ἐν τῷ ⸀μύλῳ, μία",
+      "right_context": "καὶ μία ἀφίεται."
+    },
+    {
+      "ref": "Matthew 26:37",
+      "form": "παραλαβὼν",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 37,
+      "left_context": "καὶ",
+      "right_context": "τὸν Πέτρον καὶ τοὺς δύο υἱοὺς"
+    },
+    {
+      "ref": "Matthew 27:27",
+      "form": "παραλαβόντες",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 27,
+      "left_context": "Τότε οἱ στρατιῶται τοῦ ἡγεμόνος",
+      "right_context": "τὸν Ἰησοῦν εἰς τὸ πραιτώριον συνήγαγον"
+    }
+  ],
+  "books": {
+    "Matthew": 16,
+    "Acts": 6,
+    "Luke": 6,
+    "Mark": 6,
+    "1 Corinthians": 3,
+    "John": 3,
+    "1 Thessalonians": 2,
+    "Colossians": 2,
+    "Galatians": 2,
+    "2 Thessalonians": 1,
+    "Philippians": 1,
+    "Hebrews": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εἷς",
+      "display": "de·una",
+      "count": 8,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "τότε",
+      "display": "entonces",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφίημι",
+      "display": "será perdonado",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "παιδίον",
+      "display": "de·niño",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "día",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἕτερος",
+      "display": "otros",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantado",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "μήτηρ",
+      "display": "madre",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἴδιος",
+      "display": "propios",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πάλιν",
+      "display": "otra·vez",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "δώδεκα",
+      "display": "doces",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "εὐαγγελίζω",
+      "display": "evangelizé",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στρατιώτης",
+      "display": "soldados",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰάκωβος",
+      "display": "Jacobo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "va",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἑπτά",
+      "display": "siete",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἕξ",
+      "display": "seis",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temían",
+      "count": 2,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Matthew 2:13",
+      "form": "παράλαβε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "κυρίου ⸂φαίνεται κατ’ ὄναρ⸃ τῷ Ἰωσὴφ λέγων· Ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ φεῦγε"
+    },
+    {
+      "ref": "Matthew 2:20",
+      "form": "παράλαβε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "λέγων· Ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ πορεύου"
+    },
+    {
+      "ref": "Matthew 18:16",
+      "form": "παράλαβε",
+      "morph": "V-A-A-D-2S",
+      "clause_text": "ἐὰν δὲ μὴ ἀκούσῃ, παράλαβε μετὰ σοῦ ἔτι ἕνα ἢ δύο, ἵνα ἐπὶ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 1:11",
+      "negator": "οὐ",
+      "clause_text": "τὰ ἴδια ἦλθεν, καὶ οἱ ἴδιοι αὐτὸν οὐ παρέλαβον."
+    },
+    {
+      "ref": "Matthew 1:20",
+      "negator": "μὴ",
+      "clause_text": "ἐφάνη αὐτῷ λέγων· Ἰωσὴφ υἱὸς Δαυίδ, μὴ φοβηθῇς παραλαβεῖν ⸀Μαρίαν τὴν γυναῖκά σου, τὸ γὰρ ἐν αὐτῇ"
+    },
+    {
+      "ref": "Matthew 18:16",
+      "negator": "μὴ",
+      "clause_text": "ἐὰν δὲ μὴ ἀκούσῃ, παράλαβε μετὰ σοῦ ἔτι ἕνα ἢ δύο, ἵνα ἐπὶ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 18:16",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 2:13",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 2:20",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 12:45",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 17:1",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 1:20",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 1:24",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 20:17",
+      "reason": "frequent in Matthew"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

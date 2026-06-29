@@ -1,0 +1,86 @@
+{
+  "lemma": "πιέζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "πεπιεσμένον",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:38",
+      "form": "πεπιεσμένον",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 38,
+      "left_context": "δίδοτε, καὶ δοθήσεται ὑμῖν· μέτρον καλὸν",
+      "right_context": "⸀σεσαλευμένον ὑπερεκχυννόμενον δώσουσιν εἰς τὸν κόλπον"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "δίδωμι",
+      "display": "será dado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέτρον",
+      "display": "medida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλός",
+      "display": "bueno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σαλεύω",
+      "display": "sacudido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπερεκχύννομαι",
+      "display": "derramarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:38",
+      "reason": "occurs near δίδωμι, καλός, μέτρον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

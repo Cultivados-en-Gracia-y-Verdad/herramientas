@@ -1,0 +1,139 @@
+{
+  "lemma": "διασπάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "διασπασθῇ",
+      "count": 1
+    },
+    {
+      "form": "διεσπάσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 23:10",
+      "form": "διασπασθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Acts",
+      "chapter": 23,
+      "verse": 10,
+      "left_context": "⸀γινομένης στάσεως ⸀φοβηθεὶς ὁ χιλίαρχος μὴ",
+      "right_context": "ὁ Παῦλος ὑπ’ αὐτῶν ἐκέλευσεν τὸ"
+    },
+    {
+      "ref": "Mark 5:4",
+      "form": "διεσπάσθαι",
+      "morph": "V-X-P-N",
+      "book": "Mark",
+      "chapter": 5,
+      "verse": 4,
+      "left_context": "πολλάκις πέδαις καὶ ἁλύσεσι δεδέσθαι καὶ",
+      "right_context": "ὑπ’ αὐτοῦ τὰς ἁλύσεις καὶ τὰς"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἅλυσις",
+      "display": "cadenas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "στάσις",
+      "display": "de·sedición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φοβέομαι",
+      "display": "temido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιλίαρχος",
+      "display": "tribuno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "mandó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέδη",
+      "display": "grilletes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέω",
+      "display": "atar",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Acts 23:10",
+      "form": "διασπασθῇ",
+      "morph": "V-A-P-S-3S",
+      "clause_text": "πολλῆς δὲ ⸀γινομένης στάσεως ⸀φοβηθεὶς ὁ χιλίαρχος μὴ διασπασθῇ ὁ Παῦλος ὑπ’ αὐτῶν ἐκέλευσεν τὸ στράτευμα ⸀καταβὰν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 23:10",
+      "negator": "μὴ",
+      "clause_text": "πολλῆς δὲ ⸀γινομένης στάσεως ⸀φοβηθεὶς ὁ χιλίαρχος μὴ διασπασθῇ ὁ Παῦλος ὑπ’ αὐτῶν ἐκέλευσεν τὸ στράτευμα ⸀καταβὰν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 23:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Mark 5:4",
+      "reason": "occurs near ἅλυσις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

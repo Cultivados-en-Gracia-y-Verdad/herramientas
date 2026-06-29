@@ -1,0 +1,68 @@
+{
+  "lemma": "ἀποπίπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπέπεσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:18",
+      "form": "ἀπέπεσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 18,
+      "left_context": "καὶ εὐθέως",
+      "right_context": "⸂αὐτοῦ ἀπὸ τῶν ὀφθαλμῶν⸃ ⸀ὡς λεπίδες,"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "εὐθέως",
+      "display": "inmediatamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "de·ojos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 9:18",
+      "reason": "occurs near εὐθέως, ὀφθαλμός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

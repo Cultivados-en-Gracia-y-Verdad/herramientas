@@ -1,0 +1,459 @@
+{
+  "lemma": "ὑπομένω",
+  "language": "greek",
+  "total_occurrences": 17,
+  "forms": [
+    {
+      "form": "ὑπομείνας",
+      "count": 3
+    },
+    {
+      "form": "ὑπέμεινεν",
+      "count": 2
+    },
+    {
+      "form": "ὑπομένει.",
+      "count": 1
+    },
+    {
+      "form": "ὑπομενεῖτε;",
+      "count": 1
+    },
+    {
+      "form": "ὑπομενεῖτε,",
+      "count": 1
+    },
+    {
+      "form": "ὑπομένω",
+      "count": 1
+    },
+    {
+      "form": "ὑπομένομεν,",
+      "count": 1
+    },
+    {
+      "form": "ὑπεμείνατε",
+      "count": 1
+    },
+    {
+      "form": "ὑπομεμενηκότα",
+      "count": 1
+    },
+    {
+      "form": "ὑπομένετε·",
+      "count": 1
+    },
+    {
+      "form": "⸂ὑπέμεινάν",
+      "count": 1
+    },
+    {
+      "form": "ὑπομένοντες,",
+      "count": 1
+    },
+    {
+      "form": "ὑπομένει",
+      "count": 1
+    },
+    {
+      "form": "⸀ὑπομείναντας·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 11,
+      "participle": 6
+    },
+    "tenses": {
+      "present": 6,
+      "future": 2,
+      "aorist": 8,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 17
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 13:7",
+      "form": "ὑπομένει.",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "στέγει, πάντα πιστεύει, πάντα ἐλπίζει, πάντα",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Peter 2:20",
+      "form": "ὑπομενεῖτε;",
+      "morph": "V-F-A-I-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "γὰρ κλέος εἰ ἁμαρτάνοντες καὶ κολαφιζόμενοι",
+      "right_context": "ἀλλ’ εἰ ἀγαθοποιοῦντες καὶ πάσχοντες ὑπομενεῖτε,"
+    },
+    {
+      "ref": "1 Peter 2:20",
+      "form": "ὑπομενεῖτε,",
+      "morph": "V-F-A-I-2P",
+      "book": "1 Peter",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "ὑπομενεῖτε; ἀλλ’ εἰ ἀγαθοποιοῦντες καὶ πάσχοντες",
+      "right_context": "τοῦτο χάρις παρὰ θεῷ."
+    },
+    {
+      "ref": "2 Timothy 2:10",
+      "form": "ὑπομένω",
+      "morph": "V-P-A-I-1S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 10,
+      "left_context": "διὰ τοῦτο πάντα",
+      "right_context": "διὰ τοὺς ἐκλεκτούς, ἵνα καὶ αὐτοὶ"
+    },
+    {
+      "ref": "2 Timothy 2:12",
+      "form": "ὑπομένομεν,",
+      "morph": "V-P-A-I-1P",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 12,
+      "left_context": "εἰ",
+      "right_context": "καὶ συμβασιλεύσομεν· εἰ ⸀ἀρνησόμεθα, κἀκεῖνος ἀρνήσεται"
+    },
+    {
+      "ref": "Hebrews 10:32",
+      "form": "ὑπεμείνατε",
+      "morph": "V-A-A-I-2P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 32,
+      "left_context": "ἡμέρας, ἐν αἷς φωτισθέντες πολλὴν ἄθλησιν",
+      "right_context": "παθημάτων,"
+    },
+    {
+      "ref": "Hebrews 12:2",
+      "form": "ὑπέμεινεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 2,
+      "left_context": "ὃς ἀντὶ τῆς προκειμένης αὐτῷ χαρᾶς",
+      "right_context": "σταυρὸν αἰσχύνης καταφρονήσας, ἐν δεξιᾷ τε"
+    },
+    {
+      "ref": "Hebrews 12:3",
+      "form": "ὑπομεμενηκότα",
+      "morph": "V-X-A-P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 3,
+      "left_context": "Ἀναλογίσασθε γὰρ τὸν τοιαύτην",
+      "right_context": "ὑπὸ τῶν ἁμαρτωλῶν εἰς ⸀ἑαυτοὺς ἀντιλογίαν,"
+    },
+    {
+      "ref": "Hebrews 12:7",
+      "form": "ὑπομένετε·",
+      "morph": "V-P-A-I-2P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 7,
+      "left_context": "εἰς παιδείαν",
+      "right_context": "ὡς υἱοῖς ὑμῖν προσφέρεται ὁ θεός·"
+    },
+    {
+      "ref": "Acts 17:14",
+      "form": "⸂ὑπέμεινάν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 14,
+      "left_context": "ἀδελφοὶ πορεύεσθαι ⸀ἕως ἐπὶ τὴν θάλασσαν·",
+      "right_context": "τε⸃ ὅ τε Σιλᾶς καὶ ὁ"
+    },
+    {
+      "ref": "Luke 2:43",
+      "form": "ὑπέμεινεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 43,
+      "left_context": "τὰς ἡμέρας, ἐν τῷ ὑποστρέφειν αὐτοὺς",
+      "right_context": "Ἰησοῦς ὁ παῖς ἐν Ἰερουσαλήμ, καὶ"
+    },
+    {
+      "ref": "Mark 13:13",
+      "form": "ὑπομείνας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 13,
+      "left_context": "διὰ τὸ ὄνομά μου. ὁ δὲ",
+      "right_context": "εἰς τέλος οὗτος σωθήσεται."
+    },
+    {
+      "ref": "Matthew 10:22",
+      "form": "ὑπομείνας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "διὰ τὸ ὄνομά μου· ὁ δὲ",
+      "right_context": "εἰς τέλος οὗτος σωθήσεται."
+    },
+    {
+      "ref": "Matthew 24:13",
+      "form": "ὑπομείνας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 13,
+      "left_context": "ὁ δὲ",
+      "right_context": "εἰς τέλος οὗτος σωθήσεται."
+    },
+    {
+      "ref": "Romans 12:12",
+      "form": "ὑπομένοντες,",
+      "morph": "V-P-A-P",
+      "book": "Romans",
+      "chapter": 12,
+      "verse": 12,
+      "left_context": "τῇ ἐλπίδι χαίροντες, τῇ θλίψει",
+      "right_context": "τῇ προσευχῇ προσκαρτεροῦντες,"
+    },
+    {
+      "ref": "James 1:12",
+      "form": "ὑπομένει",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "Μακάριος ἀνὴρ ὃς",
+      "right_context": "πειρασμόν, ὅτι δόκιμος γενόμενος λήμψεται τὸν"
+    },
+    {
+      "ref": "James 5:11",
+      "form": "⸀ὑπομείναντας·",
+      "morph": "V-A-A-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 11,
+      "left_context": "ἰδοὺ μακαρίζομεν τοὺς",
+      "right_context": "τὴν ὑπομονὴν Ἰὼβ ἠκούσατε, καὶ τὸ"
+    }
+  ],
+  "books": {
+    "Hebrews": 4,
+    "1 Peter": 2,
+    "2 Timothy": 2,
+    "Matthew": 2,
+    "James": 2,
+    "1 Corinthians": 1,
+    "Acts": 1,
+    "Luke": 1,
+    "Mark": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τέλος",
+      "display": "fin",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "será salvado",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγαθοποιέω",
+      "display": "hacer·bien",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padeciendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὄνομα",
+      "display": "nombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πιστεύω",
+      "display": "cree",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλπίζω",
+      "display": "espera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλέος",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτάνω",
+      "display": "pecando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κολαφίζω",
+      "display": "golpeados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλεκτός",
+      "display": "elegidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμβασιλεύω",
+      "display": "reinar·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρνέομαι",
+      "display": "negaremos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀκεῖνος",
+      "display": "y·aquel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωτίζω",
+      "display": "iluminados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "mucha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄθλησις",
+      "display": "lucha",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάθημα",
+      "display": "de·padecimientos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντί",
+      "display": "en·lugar·de",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρόκειμαι",
+      "display": "estar·delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρά",
+      "display": "de·gozo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρός",
+      "display": "cruz",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 10:32",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:2",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:3",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 12:7",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Peter 2:20",
+      "reason": "occurs near πάσχω, ἀγαθοποιέω"
+    },
+    {
+      "ref": "2 Timothy 2:10",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Timothy 2:12",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "James 1:12",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

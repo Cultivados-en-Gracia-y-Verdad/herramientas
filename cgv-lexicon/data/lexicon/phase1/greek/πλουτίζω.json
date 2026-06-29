@@ -1,0 +1,138 @@
+{
+  "lemma": "πλουτίζω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπλουτίσθητε",
+      "count": 1
+    },
+    {
+      "form": "πλουτίζοντες,",
+      "count": 1
+    },
+    {
+      "form": "πλουτιζόμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 2
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 1:5",
+      "form": "ἐπλουτίσθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "1 Corinthians",
+      "chapter": 1,
+      "verse": 5,
+      "left_context": "ὅτι ἐν παντὶ",
+      "right_context": "ἐν αὐτῷ, ἐν παντὶ λόγῳ καὶ"
+    },
+    {
+      "ref": "2 Corinthians 6:10",
+      "form": "πλουτίζοντες,",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "δὲ χαίροντες, ὡς πτωχοὶ πολλοὺς δὲ",
+      "right_context": "ὡς μηδὲν ἔχοντες καὶ πάντα κατέχοντες."
+    },
+    {
+      "ref": "2 Corinthians 9:11",
+      "form": "πλουτιζόμενοι",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 9,
+      "verse": 11,
+      "left_context": "ἐν παντὶ",
+      "right_context": "εἰς πᾶσαν ἁπλότητα, ἥτις κατεργάζεται δι’"
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2,
+    "1 Corinthians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαίρω",
+      "display": "gozando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πτωχός",
+      "display": "pobres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁπλότης",
+      "display": "sencillez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατεργάζομαι",
+      "display": "produce",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 6:10",
+      "reason": "occurs near πολύς, πτωχός, χαίρω"
+    },
+    {
+      "ref": "2 Corinthians 9:11",
+      "reason": "occurs near ἁπλότης"
+    },
+    {
+      "ref": "1 Corinthians 1:5",
+      "reason": "occurs near λόγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

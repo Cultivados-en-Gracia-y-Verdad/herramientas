@@ -1,0 +1,310 @@
+{
+  "lemma": "συγκαλέω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "συγκαλεσάμενος",
+      "count": 2
+    },
+    {
+      "form": "συνεκάλεσαν",
+      "count": 1
+    },
+    {
+      "form": "συγκαλέσασθαι",
+      "count": 1
+    },
+    {
+      "form": "Συγκαλεσάμενος",
+      "count": 1
+    },
+    {
+      "form": "συγκαλεῖ",
+      "count": 1
+    },
+    {
+      "form": "⸀συγκαλεῖ",
+      "count": 1
+    },
+    {
+      "form": "συγκαλοῦσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 3,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 3
+    },
+    "voices": {
+      "active": 4,
+      "middle": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 5:21",
+      "form": "συνεκάλεσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "ὁ ἀρχιερεὺς καὶ οἱ σὺν αὐτῷ",
+      "right_context": "τὸ συνέδριον καὶ πᾶσαν τὴν γερουσίαν"
+    },
+    {
+      "ref": "Acts 10:24",
+      "form": "συγκαλεσάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 24,
+      "left_context": "ὁ δὲ Κορνήλιος ἦν προσδοκῶν αὐτοὺς",
+      "right_context": "τοὺς συγγενεῖς αὐτοῦ καὶ τοὺς ἀναγκαίους"
+    },
+    {
+      "ref": "Acts 28:17",
+      "form": "συγκαλέσασθαι",
+      "morph": "V-A-M-N",
+      "book": "Acts",
+      "chapter": 28,
+      "verse": 17,
+      "left_context": "Ἐγένετο δὲ μετὰ ἡμέρας τρεῖς",
+      "right_context": "⸀αὐτὸν τοὺς ὄντας τῶν Ἰουδαίων πρώτους·"
+    },
+    {
+      "ref": "Luke 9:1",
+      "form": "Συγκαλεσάμενος",
+      "morph": "V-A-M-P",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 1,
+      "left_context": "",
+      "right_context": "δὲ τοὺς δώδεκα ἔδωκεν αὐτοῖς δύναμιν"
+    },
+    {
+      "ref": "Luke 15:6",
+      "form": "συγκαλεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 6,
+      "left_context": "καὶ ἐλθὼν εἰς τὸν οἶκον",
+      "right_context": "τοὺς φίλους καὶ τοὺς γείτονας, λέγων"
+    },
+    {
+      "ref": "Luke 15:9",
+      "form": "⸀συγκαλεῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 9,
+      "left_context": "καὶ εὑροῦσα",
+      "right_context": "τὰς φίλας ⸀καὶ γείτονας λέγουσα· Συγχάρητέ"
+    },
+    {
+      "ref": "Luke 23:13",
+      "form": "συγκαλεσάμενος",
+      "morph": "V-A-M-P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 13,
+      "left_context": "Πιλᾶτος δὲ",
+      "right_context": "τοὺς ἀρχιερεῖς καὶ τοὺς ἄρχοντας καὶ"
+    },
+    {
+      "ref": "Mark 15:16",
+      "form": "συγκαλοῦσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 16,
+      "left_context": "τῆς αὐλῆς, ὅ ἐστιν πραιτώριον, καὶ",
+      "right_context": "ὅλην τὴν σπεῖραν."
+    }
+  ],
+  "books": {
+    "Luke": 4,
+    "Acts": 3,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀρχιερεύς",
+      "display": "sumo·sacerdote",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φίλος",
+      "display": "amigos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γείτων",
+      "display": "vecinos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "συνέδριον",
+      "display": "sanedrín",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Κορνήλιος",
+      "display": "Cornelio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσδοκάω",
+      "display": "esperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγγενής",
+      "display": "parientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρεῖς",
+      "display": "tres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "de·judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δώδεκα",
+      "display": "doces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Πιλᾶτος",
+      "display": "Pilato",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχων",
+      "display": "gobernantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αὐλή",
+      "display": "de·patio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πραιτώριον",
+      "display": "pretorio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅλος",
+      "display": "toda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπεῖρα",
+      "display": "cohorte",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 15:6",
+      "reason": "occurs near γείτων, φίλος"
+    },
+    {
+      "ref": "Luke 15:9",
+      "reason": "occurs near γείτων, φίλος"
+    },
+    {
+      "ref": "Luke 23:13",
+      "reason": "occurs near ἀρχιερεύς"
+    },
+    {
+      "ref": "Luke 9:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 10:24",
+      "reason": "occurs near Κορνήλιος"
+    },
+    {
+      "ref": "Acts 28:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 5:21",
+      "reason": "occurs near συνέδριον, ἀρχιερεύς"
+    },
+    {
+      "ref": "Mark 15:16",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

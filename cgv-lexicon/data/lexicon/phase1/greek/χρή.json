@@ -1,0 +1,92 @@
+{
+  "lemma": "χρή",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "χρή,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "James 3:10",
+      "form": "χρή,",
+      "morph": "V-P-A-I-3S",
+      "book": "James",
+      "chapter": 3,
+      "verse": 10,
+      "left_context": "στόματος ἐξέρχεται εὐλογία καὶ κατάρα. οὐ",
+      "right_context": "ἀδελφοί μου, ταῦτα οὕτως γίνεσθαι."
+    }
+  ],
+  "books": {
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "sale",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογία",
+      "display": "bendición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατάρα",
+      "display": "maldición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "James 3:10",
+      "negator": "οὐ",
+      "clause_text": "τοῦ αὐτοῦ στόματος ἐξέρχεται εὐλογία καὶ κατάρα. οὐ χρή, ἀδελφοί μου, ταῦτα οὕτως γίνεσθαι."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "James 3:10",
+      "reason": "occurs near εὐλογία, κατάρα, οὕτω(ς)"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

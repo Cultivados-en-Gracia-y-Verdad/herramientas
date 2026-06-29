@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐπιπορεύομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιπορευομένων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 8:4",
+      "form": "ἐπιπορευομένων",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 4,
+      "left_context": "ὄχλου πολλοῦ καὶ τῶν κατὰ πόλιν",
+      "right_context": "πρὸς αὐτὸν εἶπεν διὰ παραβολῆς·"
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πολύς",
+      "display": "de·mucho",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραβολή",
+      "display": "de·parábola",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 8:4",
+      "reason": "occurs near παραβολή, πολύς, πόλις"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

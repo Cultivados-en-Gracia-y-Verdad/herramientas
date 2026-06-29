@@ -1,0 +1,200 @@
+{
+  "lemma": "παραπορεύομαι",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "παραπορευόμενοι",
+      "count": 2
+    },
+    {
+      "form": "παραπορεύεσθαι⸃",
+      "count": 1
+    },
+    {
+      "form": "⸀παρεπορεύοντο",
+      "count": 1
+    },
+    {
+      "form": "⸂παραπορευόμενοι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "indicative": 1,
+      "participle": 3
+    },
+    "tenses": {
+      "present": 4,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 2:23",
+      "form": "παραπορεύεσθαι⸃",
+      "morph": "V-P-M-N",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 23,
+      "left_context": "Καὶ ἐγένετο ⸂αὐτὸν ἐν τοῖς σάββασιν",
+      "right_context": "διὰ τῶν σπορίμων, καὶ ⸂οἱ μαθηταὶ"
+    },
+    {
+      "ref": "Mark 9:30",
+      "form": "⸀παρεπορεύοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 30,
+      "left_context": "Κἀκεῖθεν ἐξελθόντες",
+      "right_context": "διὰ τῆς Γαλιλαίας, καὶ οὐκ ἤθελεν"
+    },
+    {
+      "ref": "Mark 11:20",
+      "form": "⸂παραπορευόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 20,
+      "left_context": "Καὶ",
+      "right_context": "πρωῒ⸃ εἶδον τὴν συκῆν ἐξηραμμένην ἐκ"
+    },
+    {
+      "ref": "Mark 15:29",
+      "form": "παραπορευόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 29,
+      "left_context": "Καὶ οἱ",
+      "right_context": "ἐβλασφήμουν αὐτὸν κινοῦντες τὰς κεφαλὰς αὐτῶν"
+    },
+    {
+      "ref": "Matthew 27:39",
+      "form": "παραπορευόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 39,
+      "left_context": "οἱ δὲ",
+      "right_context": "ἐβλασφήμουν αὐτὸν κινοῦντες τὰς κεφαλὰς αὐτῶν"
+    }
+  ],
+  "books": {
+    "Mark": 4,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βλασφημέω",
+      "display": "blasfemaban",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κινέω",
+      "display": "moviendo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabezas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σάββατον",
+      "display": "sábados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπόριμος",
+      "display": "de·sembrados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀκεῖθεν",
+      "display": "y·de·allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Γαλιλαία",
+      "display": "de·Galilea",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρωΐ",
+      "display": "mañana",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συκῆ",
+      "display": "higuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξηραίνω",
+      "display": "secada",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 11:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 15:29",
+      "reason": "occurs near βλασφημέω, κεφαλή, κινέω"
+    },
+    {
+      "ref": "Mark 2:23",
+      "reason": "occurs near σάββατον, σπόριμος"
+    },
+    {
+      "ref": "Mark 9:30",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 27:39",
+      "reason": "occurs near βλασφημέω, κεφαλή, κινέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

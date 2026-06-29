@@ -1,0 +1,123 @@
+{
+  "lemma": "χειραγωγέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "χειραγωγοῦντες",
+      "count": 1
+    },
+    {
+      "form": "χειραγωγούμενος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:8",
+      "form": "χειραγωγοῦντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 8,
+      "left_context": "⸀δὲ τῶν ὀφθαλμῶν αὐτοῦ ⸀οὐδὲν ἔβλεπεν·",
+      "right_context": "δὲ αὐτὸν εἰσήγαγον εἰς Δαμασκόν."
+    },
+    {
+      "ref": "Acts 22:11",
+      "form": "χειραγωγούμενος",
+      "morph": "V-P-P-P",
+      "book": "Acts",
+      "chapter": 22,
+      "verse": 11,
+      "left_context": "ἀπὸ τῆς δόξης τοῦ φωτὸς ἐκείνου,",
+      "right_context": "ὑπὸ τῶν συνόντων μοι ἦλθον εἰς"
+    }
+  ],
+  "books": {
+    "Acts": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὀφθαλμός",
+      "display": "de·ojos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miraba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσάγω",
+      "display": "introducieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Δαμασκός",
+      "display": "Damasco",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "de·gloria",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φῶς",
+      "display": "de·luz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σύνειμι",
+      "display": "estar·con",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔρχομαι",
+      "display": "vine",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 22:11",
+      "reason": "occurs near δόξα"
+    },
+    {
+      "ref": "Acts 9:8",
+      "reason": "occurs near Δαμασκός, βλέπω, εἰσάγω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

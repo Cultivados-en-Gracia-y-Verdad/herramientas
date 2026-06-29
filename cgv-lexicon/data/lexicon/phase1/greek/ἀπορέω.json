@@ -1,0 +1,229 @@
+{
+  "lemma": "ἀπορέω",
+  "language": "greek",
+  "total_occurrences": 6,
+  "forms": [
+    {
+      "form": "ἀπορούμενοι",
+      "count": 2
+    },
+    {
+      "form": "ἀποροῦμαι",
+      "count": 1
+    },
+    {
+      "form": "ἀπορούμενος",
+      "count": 1
+    },
+    {
+      "form": "⸀ἀπορεῖσθαι",
+      "count": 1
+    },
+    {
+      "form": "⸀ἠπόρει,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3,
+      "indicative": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 5,
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 5,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:8",
+      "form": "ἀπορούμενοι",
+      "morph": "V-P-M-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "ἐν παντὶ θλιβόμενοι ἀλλ’ οὐ στενοχωρούμενοι,",
+      "right_context": "ἀλλ’ οὐκ ἐξαπορούμενοι,"
+    },
+    {
+      "ref": "Galatians 4:20",
+      "form": "ἀποροῦμαι",
+      "morph": "V-P-M-I-1S",
+      "book": "Galatians",
+      "chapter": 4,
+      "verse": 20,
+      "left_context": "καὶ ἀλλάξαι τὴν φωνήν μου, ὅτι",
+      "right_context": "ἐν ὑμῖν."
+    },
+    {
+      "ref": "Acts 25:20",
+      "form": "ἀπορούμενος",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 25,
+      "verse": 20,
+      "left_context": "",
+      "right_context": "δὲ ἐγὼ τὴν περὶ ⸀τούτων ζήτησιν"
+    },
+    {
+      "ref": "John 13:22",
+      "form": "ἀπορούμενοι",
+      "morph": "V-P-M-P",
+      "book": "John",
+      "chapter": 13,
+      "verse": 22,
+      "left_context": "⸀ἔβλεπον εἰς ἀλλήλους οἱ μαθηταὶ",
+      "right_context": "περὶ τίνος λέγει."
+    },
+    {
+      "ref": "Luke 24:4",
+      "form": "⸀ἀπορεῖσθαι",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 24,
+      "verse": 4,
+      "left_context": "καὶ ἐγένετο ἐν τῷ",
+      "right_context": "αὐτὰς περὶ τούτου καὶ ἰδοὺ ἄνδρες"
+    },
+    {
+      "ref": "Mark 6:20",
+      "form": "⸀ἠπόρει,",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 20,
+      "left_context": "συνετήρει αὐτόν, καὶ ἀκούσας αὐτοῦ πολλὰ",
+      "right_context": "καὶ ἡδέως αὐτοῦ ἤκουεν."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Galatians": 1,
+    "Acts": 1,
+    "John": 1,
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θλίβω",
+      "display": "afligidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στενοχωρέομαι",
+      "display": "angustiarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξαπορέομαι",
+      "display": "desesperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλάσσω",
+      "display": "cambiar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "miraban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰδού",
+      "display": "he·aquí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡδέως",
+      "display": "gustosamente",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:8",
+      "negator": "οὐ",
+      "clause_text": "ἐν παντὶ θλιβόμενοι ἀλλ’ οὐ στενοχωρούμενοι, ἀπορούμενοι ἀλλ’ οὐκ ἐξαπορούμενοι,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:8",
+      "reason": "occurs near θλίβω, στενοχωρέομαι, ἐξαπορέομαι"
+    },
+    {
+      "ref": "Acts 25:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Galatians 4:20",
+      "reason": "occurs near ἀλλάσσω"
+    },
+    {
+      "ref": "John 13:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 24:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 6:20",
+      "reason": "occurs near ἀκούω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

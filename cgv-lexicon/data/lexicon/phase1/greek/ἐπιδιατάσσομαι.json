@@ -1,0 +1,80 @@
+{
+  "lemma": "ἐπιδιατάσσομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπιδιατάσσεται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Galatians 3:15",
+      "form": "ἐπιδιατάσσεται.",
+      "morph": "V-P-M-I-3S",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "ἀνθρώπου κεκυρωμένην διαθήκην οὐδεὶς ἀθετεῖ ἢ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κυρόω",
+      "display": "confirmada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀθετέω",
+      "display": "invalida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Galatians 3:15",
+      "reason": "occurs near διαθήκη, κυρόω, ἀθετέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

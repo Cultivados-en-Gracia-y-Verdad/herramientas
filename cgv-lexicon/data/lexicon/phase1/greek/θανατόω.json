@@ -1,0 +1,384 @@
+{
+  "lemma": "θανατόω",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "θανατώσουσιν",
+      "count": 3
+    },
+    {
+      "form": "θανατῶσαι",
+      "count": 2
+    },
+    {
+      "form": "θανατωθεὶς",
+      "count": 1
+    },
+    {
+      "form": "θανατούμενοι,",
+      "count": 1
+    },
+    {
+      "form": "θανατώσωσιν⸃,",
+      "count": 1
+    },
+    {
+      "form": "ἐθανατώθητε",
+      "count": 1
+    },
+    {
+      "form": "θανατοῦτε,",
+      "count": 1
+    },
+    {
+      "form": "θανατούμεθα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 6,
+      "infinitive": 2,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 3,
+      "future": 3
+    },
+    "voices": {
+      "passive": 4,
+      "active": 7
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:18",
+      "form": "θανατωθεὶς",
+      "morph": "V-A-P-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 18,
+      "left_context": "ἀδίκων, ἵνα ⸀ὑμᾶς προσαγάγῃ τῷ θεῷ,",
+      "right_context": "μὲν σαρκὶ ζῳοποιηθεὶς δὲ πνεύματι·"
+    },
+    {
+      "ref": "2 Corinthians 6:9",
+      "form": "θανατούμενοι,",
+      "morph": "V-P-P-P",
+      "book": "2 Corinthians",
+      "chapter": 6,
+      "verse": 9,
+      "left_context": "ἰδοὺ ζῶμεν, ὡς παιδευόμενοι καὶ μὴ",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 21:16",
+      "form": "θανατώσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 16,
+      "left_context": "⸂ἀδελφῶν καὶ συγγενῶν καὶ φίλων⸃, καὶ",
+      "right_context": "ἐξ ὑμῶν,"
+    },
+    {
+      "ref": "Mark 13:12",
+      "form": "θανατώσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 12,
+      "left_context": "καὶ ἐπαναστήσονται τέκνα ἐπὶ γονεῖς καὶ",
+      "right_context": "αὐτούς·"
+    },
+    {
+      "ref": "Mark 14:55",
+      "form": "θανατῶσαι",
+      "morph": "V-A-A-N",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 55,
+      "left_context": "κατὰ τοῦ Ἰησοῦ μαρτυρίαν εἰς τὸ",
+      "right_context": "αὐτόν, καὶ οὐχ ηὕρισκον·"
+    },
+    {
+      "ref": "Matthew 10:21",
+      "form": "θανατώσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 21,
+      "left_context": "καὶ ἐπαναστήσονται τέκνα ἐπὶ γονεῖς καὶ",
+      "right_context": "αὐτούς."
+    },
+    {
+      "ref": "Matthew 26:59",
+      "form": "θανατώσωσιν⸃,",
+      "morph": "V-A-A-S-3P",
+      "book": "Matthew",
+      "chapter": 26,
+      "verse": 59,
+      "left_context": "ψευδομαρτυρίαν κατὰ τοῦ Ἰησοῦ ὅπως ⸂αὐτὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 27:1",
+      "form": "θανατῶσαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 1,
+      "left_context": "τοῦ λαοῦ κατὰ τοῦ Ἰησοῦ ὥστε",
+      "right_context": "αὐτόν·"
+    },
+    {
+      "ref": "Romans 7:4",
+      "form": "ἐθανατώθητε",
+      "morph": "V-A-P-I-2P",
+      "book": "Romans",
+      "chapter": 7,
+      "verse": 4,
+      "left_context": "Ὥστε, ἀδελφοί μου, καὶ ὑμεῖς",
+      "right_context": "τῷ νόμῳ διὰ τοῦ σώματος τοῦ"
+    },
+    {
+      "ref": "Romans 8:13",
+      "form": "θανατοῦτε,",
+      "morph": "V-P-A-I-2P",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "δὲ πνεύματι τὰς πράξεις τοῦ σώματος",
+      "right_context": "ζήσεσθε."
+    },
+    {
+      "ref": "Romans 8:36",
+      "form": "θανατούμεθα",
+      "morph": "V-P-P-I-1P",
+      "book": "Romans",
+      "chapter": 8,
+      "verse": 36,
+      "left_context": "καθὼς γέγραπται ὅτι Ἕνεκεν σοῦ",
+      "right_context": "ὅλην τὴν ἡμέραν, ἐλογίσθημεν ὡς πρόβατα"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Romans": 3,
+    "Mark": 2,
+    "1 Peter": 1,
+    "2 Corinthians": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "vivemos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπανίσταμαι",
+      "display": "levantarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γονεύς",
+      "display": "padreses",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "de·cuerpo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "προσάγω",
+      "display": "lleve",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζῳοποιέω",
+      "display": "dar·vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παιδεύω",
+      "display": "disciplinados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγγενής",
+      "display": "de·parientes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φίλος",
+      "display": "de·amigos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαρτυρία",
+      "display": "testimonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "de·pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμος",
+      "display": "ley",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πρᾶξις",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "ha escrito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕνεκεν",
+      "display": "por·causa·de",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 6:9",
+      "negator": "μὴ",
+      "clause_text": "ἀποθνῄσκοντες καὶ ἰδοὺ ζῶμεν, ὡς παιδευόμενοι καὶ μὴ θανατούμενοι,"
+    },
+    {
+      "ref": "Mark 14:55",
+      "negator": "οὐχ",
+      "clause_text": "συνέδριον ἐζήτουν κατὰ τοῦ Ἰησοῦ μαρτυρίαν εἰς τὸ θανατῶσαι αὐτόν, καὶ οὐχ ηὕρισκον·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 10:21",
+      "reason": "occurs near τέκνον, ἐπανίσταμαι"
+    },
+    {
+      "ref": "Matthew 26:59",
+      "reason": "occurs near Ἰησοῦς"
+    },
+    {
+      "ref": "Matthew 27:1",
+      "reason": "occurs near Ἰησοῦς"
+    },
+    {
+      "ref": "Romans 7:4",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 8:13",
+      "reason": "occurs near ζάω, πνεῦμα"
+    },
+    {
+      "ref": "Romans 8:36",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 13:12",
+      "reason": "occurs near τέκνον, ἐπανίσταμαι"
+    },
+    {
+      "ref": "Mark 14:55",
+      "reason": "occurs near Ἰησοῦς"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

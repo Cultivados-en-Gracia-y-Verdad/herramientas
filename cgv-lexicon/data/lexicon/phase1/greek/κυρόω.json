@@ -1,0 +1,132 @@
+{
+  "lemma": "κυρόω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κυρῶσαι",
+      "count": 1
+    },
+    {
+      "form": "κεκυρωμένην",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "perfect": 1
+    },
+    "voices": {
+      "active": 1,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 2:8",
+      "form": "κυρῶσαι",
+      "morph": "V-A-A-N",
+      "book": "2 Corinthians",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "διὸ παρακαλῶ ὑμᾶς",
+      "right_context": "εἰς αὐτὸν ἀγάπην·"
+    },
+    {
+      "ref": "Galatians 3:15",
+      "form": "κεκυρωμένην",
+      "morph": "V-X-P-P",
+      "book": "Galatians",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "Ἀδελφοί, κατὰ ἄνθρωπον λέγω· ὅμως ἀνθρώπου",
+      "right_context": "διαθήκην οὐδεὶς ἀθετεῖ ἢ ἐπιδιατάσσεται."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Galatians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "διό",
+      "display": "por·lo·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγάπη",
+      "display": "amor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅμως",
+      "display": "sin·embargo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαθήκη",
+      "display": "pacto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀθετέω",
+      "display": "invalida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιδιατάσσομαι",
+      "display": "añade",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 2:8",
+      "reason": "occurs near διό, παρακαλέω, ἀγάπη"
+    },
+    {
+      "ref": "Galatians 3:15",
+      "reason": "occurs near ἄνθρωπος, ὅμως"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

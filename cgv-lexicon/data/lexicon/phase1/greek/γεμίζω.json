@@ -1,0 +1,354 @@
+{
+  "lemma": "γεμίζω",
+  "language": "greek",
+  "total_occurrences": 9,
+  "forms": [
+    {
+      "form": "ἐγέμισαν",
+      "count": 2
+    },
+    {
+      "form": "ἐγέμισεν",
+      "count": 1
+    },
+    {
+      "form": "ἐγεμίσθη",
+      "count": 1
+    },
+    {
+      "form": "Γεμίσατε",
+      "count": 1
+    },
+    {
+      "form": "γεμισθῇ",
+      "count": 1
+    },
+    {
+      "form": "⸂γεμίσαι",
+      "count": 1
+    },
+    {
+      "form": "γεμίζεσθαι",
+      "count": 1
+    },
+    {
+      "form": "γεμίσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "imperative": 1,
+      "subjunctive": 1,
+      "infinitive": 2,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 8,
+      "present": 1
+    },
+    "voices": {
+      "active": 6,
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 8:5",
+      "form": "ἐγέμισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Revelation",
+      "chapter": 8,
+      "verse": 5,
+      "left_context": "εἴληφεν ὁ ἄγγελος τὸν λιβανωτόν, καὶ",
+      "right_context": "αὐτὸν ἐκ τοῦ πυρὸς τοῦ θυσιαστηρίου,"
+    },
+    {
+      "ref": "Revelation 15:8",
+      "form": "ἐγεμίσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Revelation",
+      "chapter": 15,
+      "verse": 8,
+      "left_context": "καὶ",
+      "right_context": "ὁ ναὸς καπνοῦ ἐκ τῆς δόξης"
+    },
+    {
+      "ref": "John 2:7",
+      "form": "Γεμίσατε",
+      "morph": "V-A-A-D-2P",
+      "book": "John",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "λέγει αὐτοῖς ὁ Ἰησοῦς·",
+      "right_context": "τὰς ὑδρίας ὕδατος· καὶ ἐγέμισαν αὐτὰς"
+    },
+    {
+      "ref": "John 2:7",
+      "form": "ἐγέμισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 2,
+      "verse": 7,
+      "left_context": "Ἰησοῦς· Γεμίσατε τὰς ὑδρίας ὕδατος· καὶ",
+      "right_context": "αὐτὰς ἕως ἄνω."
+    },
+    {
+      "ref": "John 6:13",
+      "form": "ἐγέμισαν",
+      "morph": "V-A-A-I-3P",
+      "book": "John",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "συνήγαγον οὖν, καὶ",
+      "right_context": "δώδεκα κοφίνους κλασμάτων ἐκ τῶν πέντε"
+    },
+    {
+      "ref": "Luke 14:23",
+      "form": "γεμισθῇ",
+      "morph": "V-A-P-S-3S",
+      "book": "Luke",
+      "chapter": 14,
+      "verse": 23,
+      "left_context": "καὶ φραγμοὺς καὶ ἀνάγκασον εἰσελθεῖν, ἵνα",
+      "right_context": "⸂μου ὁ οἶκος⸃·"
+    },
+    {
+      "ref": "Luke 15:16",
+      "form": "⸂γεμίσαι",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 16,
+      "left_context": "καὶ ἐπεθύμει",
+      "right_context": "τὴν κοιλίαν αὐτοῦ ἀπὸ⸃ τῶν κερατίων"
+    },
+    {
+      "ref": "Mark 4:37",
+      "form": "γεμίζεσθαι",
+      "morph": "V-P-P-N",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 37,
+      "left_context": "ἐπέβαλλεν εἰς τὸ πλοῖον, ὥστε ⸂ἤδη",
+      "right_context": "τὸ πλοῖον⸃."
+    },
+    {
+      "ref": "Mark 15:36",
+      "form": "γεμίσας",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 36,
+      "left_context": "δραμὼν δέ ⸂τις καὶ⸃",
+      "right_context": "σπόγγον ὄξους ⸀περιθεὶς καλάμῳ ἐπότιζεν αὐτόν,"
+    }
+  ],
+  "books": {
+    "John": 3,
+    "Revelation": 2,
+    "Luke": 2,
+    "Mark": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑδρία",
+      "display": "tinajas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "de·agua",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γεμίζω",
+      "display": "llenaron",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγγελος",
+      "display": "ángel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λιβανωτός",
+      "display": "incienso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πῦρ",
+      "display": "de·fuego",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναός",
+      "display": "templo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καπνός",
+      "display": "de·humo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἕως",
+      "display": "hasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνω",
+      "display": "arriba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνάγω",
+      "display": "reunieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δώδεκα",
+      "display": "doces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόφινος",
+      "display": "canastas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλάσμα",
+      "display": "de·pedazos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φραγμός",
+      "display": "cercas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναγκάζω",
+      "display": "obliga",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἰσέρχομαι",
+      "display": "entrar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἶκος",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιθυμέω",
+      "display": "deseaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κοιλία",
+      "display": "vientre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤδη",
+      "display": "ya",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τρέχω",
+      "display": "corrido",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "John 2:7",
+      "form": "Γεμίσατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "λέγει αὐτοῖς ὁ Ἰησοῦς· Γεμίσατε τὰς ὑδρίας ὕδατος· καὶ ἐγέμισαν αὐτὰς ἕως ἄνω."
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 2:7",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "John 6:13",
+      "reason": "occurs near γεμίζω"
+    },
+    {
+      "ref": "Luke 14:23",
+      "reason": "occurs near γεμίζω"
+    },
+    {
+      "ref": "Luke 15:16",
+      "reason": "occurs near γεμίζω"
+    },
+    {
+      "ref": "Mark 15:36",
+      "reason": "occurs near γεμίζω"
+    },
+    {
+      "ref": "Mark 4:37",
+      "reason": "occurs near γεμίζω, πλοῖον"
+    },
+    {
+      "ref": "Revelation 15:8",
+      "reason": "occurs near γεμίζω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

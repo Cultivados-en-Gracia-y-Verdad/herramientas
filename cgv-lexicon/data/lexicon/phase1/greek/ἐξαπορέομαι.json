@@ -1,0 +1,131 @@
+{
+  "lemma": "ἐξαπορέομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐξαπορηθῆναι",
+      "count": 1
+    },
+    {
+      "form": "ἐξαπορούμενοι,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 1:8",
+      "form": "ἐξαπορηθῆναι",
+      "morph": "V-A-P-N",
+      "book": "2 Corinthians",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "καθ’ ὑπερβολὴν ⸂ὑπὲρ δύναμιν ἐβαρήθημεν⸃, ὥστε",
+      "right_context": "ἡμᾶς καὶ τοῦ ζῆν·"
+    },
+    {
+      "ref": "2 Corinthians 4:8",
+      "form": "ἐξαπορούμενοι,",
+      "morph": "V-P-M-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 8,
+      "left_context": "ἀλλ’ οὐ στενοχωρούμενοι, ἀπορούμενοι ἀλλ’ οὐκ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Corinthians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ὑπερβολή",
+      "display": "exceso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαρέω",
+      "display": "fueron pesado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥστε",
+      "display": "de·modo·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζάω",
+      "display": "vivir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στενοχωρέομαι",
+      "display": "angustiarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπορέω",
+      "display": "perplejos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "2 Corinthians 4:8",
+      "negator": "οὐκ",
+      "clause_text": "παντὶ θλιβόμενοι ἀλλ’ οὐ στενοχωρούμενοι, ἀπορούμενοι ἀλλ’ οὐκ ἐξαπορούμενοι,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 1:8",
+      "reason": "occurs near βαρέω, δύναμις, ὑπέρ"
+    },
+    {
+      "ref": "2 Corinthians 4:8",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

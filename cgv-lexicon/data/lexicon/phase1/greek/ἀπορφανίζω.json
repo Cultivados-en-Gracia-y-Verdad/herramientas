@@ -1,0 +1,74 @@
+{
+  "lemma": "ἀπορφανίζω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἀπορφανισθέντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 2:17",
+      "form": "ἀπορφανισθέντες",
+      "morph": "V-A-P-P",
+      "book": "1 Thessalonians",
+      "chapter": 2,
+      "verse": 17,
+      "left_context": "Ἡμεῖς δέ, ἀδελφοί,",
+      "right_context": "ἀφ’ ὑμῶν πρὸς καιρὸν ὥρας, προσώπῳ"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀδελφός",
+      "display": "hermanos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "de·hora",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 2:17",
+      "reason": "occurs near καιρός, ἀδελφός, ὥρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

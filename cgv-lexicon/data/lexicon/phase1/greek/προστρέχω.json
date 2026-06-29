@@ -1,0 +1,156 @@
+{
+  "lemma": "προστρέχω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "προσδραμὼν",
+      "count": 2
+    },
+    {
+      "form": "προστρέχοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 3
+    },
+    "tenses": {
+      "aorist": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 8:30",
+      "form": "προσδραμὼν",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 8,
+      "verse": 30,
+      "left_context": "",
+      "right_context": "δὲ ὁ Φίλιππος ἤκουσεν αὐτοῦ ἀναγινώσκοντος"
+    },
+    {
+      "ref": "Mark 9:15",
+      "form": "προστρέχοντες",
+      "morph": "V-P-A-P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 15,
+      "left_context": "ὁ ὄχλος ⸂ἰδόντες αὐτὸν ἐξεθαμβήθησαν⸃, καὶ",
+      "right_context": "ἠσπάζοντο αὐτόν."
+    },
+    {
+      "ref": "Mark 10:17",
+      "form": "προσδραμὼν",
+      "morph": "V-A-A-P",
+      "book": "Mark",
+      "chapter": 10,
+      "verse": 17,
+      "left_context": "Καὶ ἐκπορευομένου αὐτοῦ εἰς ὁδὸν",
+      "right_context": "εἷς καὶ γονυπετήσας αὐτὸν ἐπηρώτα αὐτόν·"
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Φίλιππος",
+      "display": "Felipe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκθαμβέομαι",
+      "display": "asombrarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσπάζομαι",
+      "display": "saludaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκπορεύομαι",
+      "display": "saliendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γονυπετέω",
+      "display": "arrodillarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπερωτάω",
+      "display": "preguntaba",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 10:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Mark 9:15",
+      "reason": "occurs near ἐκθαμβέομαι, ὁράω, ὄχλος"
+    },
+    {
+      "ref": "Acts 8:30",
+      "reason": "occurs near Φίλιππος, ἀκούω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

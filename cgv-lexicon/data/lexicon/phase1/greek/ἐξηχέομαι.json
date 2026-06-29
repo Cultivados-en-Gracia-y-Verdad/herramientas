@@ -1,0 +1,68 @@
+{
+  "lemma": "ἐξηχέομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξήχηται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Thessalonians 1:8",
+      "form": "ἐξήχηται",
+      "morph": "V-X-P-I-3S",
+      "book": "1 Thessalonians",
+      "chapter": 1,
+      "verse": 8,
+      "left_context": "ἀφ’ ὑμῶν γὰρ",
+      "right_context": "ὁ λόγος τοῦ κυρίου οὐ μόνον"
+    }
+  ],
+  "books": {
+    "1 Thessalonians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Thessalonians 1:8",
+      "reason": "occurs near κύριος, λόγος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

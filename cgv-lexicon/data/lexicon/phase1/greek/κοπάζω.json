@@ -1,0 +1,133 @@
+{
+  "lemma": "κοπάζω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐκόπασεν",
+      "count": 3
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 4:39",
+      "form": "ἐκόπασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 4,
+      "verse": 39,
+      "left_context": "εἶπεν τῇ θαλάσσῃ· Σιώπα, πεφίμωσο. καὶ",
+      "right_context": "ὁ ἄνεμος, καὶ ἐγένετο γαλήνη μεγάλη."
+    },
+    {
+      "ref": "Mark 6:51",
+      "form": "ἐκόπασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 51,
+      "left_context": "πρὸς αὐτοὺς εἰς τὸ πλοῖον, καὶ",
+      "right_context": "ὁ ἄνεμος. καὶ λίαν ⸂ἐκ περισσοῦ⸃"
+    },
+    {
+      "ref": "Matthew 14:32",
+      "form": "ἐκόπασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Matthew",
+      "chapter": 14,
+      "verse": 32,
+      "left_context": "καὶ ⸀ἀναβάντων αὐτῶν εἰς τὸ πλοῖον",
+      "right_context": "ὁ ἄνεμος."
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνεμος",
+      "display": "viento",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πλοῖον",
+      "display": "barca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θάλασσα",
+      "display": "mar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σιωπάω",
+      "display": "calla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φιμόω",
+      "display": "calla",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γαλήνη",
+      "display": "calma",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λίαν",
+      "display": "muchísimo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subidos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 4:39",
+      "reason": "occurs near θάλασσα, σιωπάω, φιμόω"
+    },
+    {
+      "ref": "Mark 6:51",
+      "reason": "occurs near πλοῖον, ἄνεμος"
+    },
+    {
+      "ref": "Matthew 14:32",
+      "reason": "occurs near πλοῖον, ἄνεμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

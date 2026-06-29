@@ -1,0 +1,146 @@
+{
+  "lemma": "κολοβόω",
+  "language": "greek",
+  "total_occurrences": 4,
+  "forms": [
+    {
+      "form": "⸂ἐκολόβωσεν",
+      "count": 1
+    },
+    {
+      "form": "ἐκολόβωσεν",
+      "count": 1
+    },
+    {
+      "form": "ἐκολοβώθησαν",
+      "count": 1
+    },
+    {
+      "form": "κολοβωθήσονται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4
+    },
+    "tenses": {
+      "aorist": 3,
+      "future": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 13:20",
+      "form": "⸂ἐκολόβωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 20,
+      "left_context": "καὶ εἰ μὴ",
+      "right_context": "κύριος⸃ τὰς ἡμέρας, οὐκ ἂν ἐσώθη"
+    },
+    {
+      "ref": "Mark 13:20",
+      "form": "ἐκολόβωσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 13,
+      "verse": 20,
+      "left_context": "ἀλλὰ διὰ τοὺς ἐκλεκτοὺς οὓς ἐξελέξατο",
+      "right_context": "τὰς ἡμέρας."
+    },
+    {
+      "ref": "Matthew 24:22",
+      "form": "ἐκολοβώθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 22,
+      "left_context": "καὶ εἰ μὴ",
+      "right_context": "αἱ ἡμέραι ἐκεῖναι, οὐκ ἂν ἐσώθη"
+    },
+    {
+      "ref": "Matthew 24:22",
+      "form": "κολοβωθήσονται",
+      "morph": "V-F-P-I-3P",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 22,
+      "left_context": "πᾶσα σάρξ· διὰ δὲ τοὺς ἐκλεκτοὺς",
+      "right_context": "αἱ ἡμέραι ἐκεῖναι."
+    }
+  ],
+  "books": {
+    "Mark": 2,
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλεκτός",
+      "display": "elegidos",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλέγομαι",
+      "display": "escogió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "carne",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 13:20",
+      "negator": "μὴ",
+      "clause_text": "καὶ εἰ μὴ ⸂ἐκολόβωσεν κύριος⸃ τὰς ἡμέρας, οὐκ ἂν ἐσώθη πᾶσα σάρξ."
+    },
+    {
+      "ref": "Matthew 24:22",
+      "negator": "μὴ",
+      "clause_text": "καὶ εἰ μὴ ἐκολοβώθησαν αἱ ἡμέραι ἐκεῖναι, οὐκ ἂν ἐσώθη πᾶσα σάρξ·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 13:20",
+      "reason": "occurs near κύριος, ἡμέρα"
+    },
+    {
+      "ref": "Matthew 24:22",
+      "reason": "occurs near ἡμέρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

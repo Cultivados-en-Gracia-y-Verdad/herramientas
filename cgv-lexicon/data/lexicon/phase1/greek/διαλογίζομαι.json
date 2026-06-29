@@ -1,0 +1,427 @@
+{
+  "lemma": "διαλογίζομαι",
+  "language": "greek",
+  "total_occurrences": 16,
+  "forms": [
+    {
+      "form": "διαλογίζεσθε",
+      "count": 4
+    },
+    {
+      "form": "διελογίζοντο",
+      "count": 4
+    },
+    {
+      "form": "διελογίζετο",
+      "count": 2
+    },
+    {
+      "form": "διαλογιζομένων",
+      "count": 1
+    },
+    {
+      "form": "διαλογίζεσθαι",
+      "count": 1
+    },
+    {
+      "form": "διαλογιζόμενοι",
+      "count": 1
+    },
+    {
+      "form": "διαλογίζονται",
+      "count": 1
+    },
+    {
+      "form": "διελογίζεσθε;",
+      "count": 1
+    },
+    {
+      "form": "⸀διελογίζοντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 13,
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "imperfect": 8,
+      "present": 8
+    },
+    "voices": {
+      "middle": 16
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 1:29",
+      "form": "διελογίζετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 29,
+      "left_context": "δὲ ⸂ἐπὶ τῷ λόγῳ διεταράχθη⸃ καὶ",
+      "right_context": "ποταπὸς εἴη ὁ ἀσπασμὸς οὗτος."
+    },
+    {
+      "ref": "Luke 3:15",
+      "form": "διαλογιζομένων",
+      "morph": "V-P-M-P",
+      "book": "Luke",
+      "chapter": 3,
+      "verse": 15,
+      "left_context": "Προσδοκῶντος δὲ τοῦ λαοῦ καὶ",
+      "right_context": "πάντων ἐν ταῖς καρδίαις αὐτῶν περὶ"
+    },
+    {
+      "ref": "Luke 5:21",
+      "form": "διαλογίζεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 21,
+      "left_context": "καὶ ἤρξαντο",
+      "right_context": "οἱ γραμματεῖς καὶ οἱ Φαρισαῖοι λέγοντες·"
+    },
+    {
+      "ref": "Luke 5:22",
+      "form": "διαλογίζεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 22,
+      "left_context": "αὐτῶν ἀποκριθεὶς εἶπεν πρὸς αὐτούς· Τί",
+      "right_context": "ἐν ταῖς καρδίαις ὑμῶν;"
+    },
+    {
+      "ref": "Luke 12:17",
+      "form": "διελογίζετο",
+      "morph": "V-I-M-I-3S",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 17,
+      "left_context": "καὶ",
+      "right_context": "ἐν ⸀ἑαυτῷ λέγων· Τί ποιήσω, ὅτι"
+    },
+    {
+      "ref": "Luke 20:14",
+      "form": "διελογίζοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Luke",
+      "chapter": 20,
+      "verse": 14,
+      "left_context": "ἰδόντες δὲ αὐτὸν οἱ γεωργοὶ",
+      "right_context": "πρὸς ⸀ἀλλήλους λέγοντες· Οὗτός ἐστιν ὁ"
+    },
+    {
+      "ref": "Mark 2:6",
+      "form": "διαλογιζόμενοι",
+      "morph": "V-P-M-P",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "τινες τῶν γραμματέων ἐκεῖ καθήμενοι καὶ",
+      "right_context": "ἐν ταῖς καρδίαις αὐτῶν·"
+    },
+    {
+      "ref": "Mark 2:8",
+      "form": "διαλογίζονται",
+      "morph": "V-P-M-I-3P",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "Ἰησοῦς τῷ πνεύματι αὐτοῦ ὅτι ⸀οὕτως",
+      "right_context": "ἐν ἑαυτοῖς ⸀λέγει αὐτοῖς· Τί ταῦτα"
+    },
+    {
+      "ref": "Mark 2:8",
+      "form": "διαλογίζεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "Mark",
+      "chapter": 2,
+      "verse": 8,
+      "left_context": "ἐν ἑαυτοῖς ⸀λέγει αὐτοῖς· Τί ταῦτα",
+      "right_context": "ἐν ταῖς καρδίαις ὑμῶν;"
+    },
+    {
+      "ref": "Mark 8:16",
+      "form": "διελογίζοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 16,
+      "left_context": "καὶ",
+      "right_context": "πρὸς ⸀ἀλλήλους ὅτι ἄρτους οὐκ ⸀ἔχουσιν."
+    },
+    {
+      "ref": "Mark 8:17",
+      "form": "διαλογίζεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "Mark",
+      "chapter": 8,
+      "verse": 17,
+      "left_context": "καὶ ⸀γνοὺς λέγει αὐτοῖς· Τί",
+      "right_context": "ὅτι ἄρτους οὐκ ἔχετε; οὔπω νοεῖτε"
+    },
+    {
+      "ref": "Mark 9:33",
+      "form": "διελογίζεσθε;",
+      "morph": "V-I-M-I-2P",
+      "book": "Mark",
+      "chapter": 9,
+      "verse": 33,
+      "left_context": "ἐπηρώτα αὐτούς· Τί ἐν τῇ ⸀ὁδῷ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 11:31",
+      "form": "⸀διελογίζοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Mark",
+      "chapter": 11,
+      "verse": 31,
+      "left_context": "καὶ",
+      "right_context": "πρὸς ἑαυτοὺς λέγοντες· ⸂Τί εἴπωμεν;⸃ ἐὰν"
+    },
+    {
+      "ref": "Matthew 16:7",
+      "form": "διελογίζοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 7,
+      "left_context": "οἱ δὲ",
+      "right_context": "ἐν ἑαυτοῖς λέγοντες ὅτι Ἄρτους οὐκ"
+    },
+    {
+      "ref": "Matthew 16:8",
+      "form": "διαλογίζεσθε",
+      "morph": "V-P-M-I-2P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 8,
+      "left_context": "γνοὺς δὲ ὁ Ἰησοῦς ⸀εἶπεν· Τί",
+      "right_context": "ἐν ἑαυτοῖς, ὀλιγόπιστοι, ὅτι ἄρτους οὐκ"
+    },
+    {
+      "ref": "Matthew 21:25",
+      "form": "διελογίζοντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Matthew",
+      "chapter": 21,
+      "verse": 25,
+      "left_context": "οὐρανοῦ ἢ ἐξ ἀνθρώπων; οἱ δὲ",
+      "right_context": "⸀ἐν ἑαυτοῖς λέγοντες· Ἐὰν εἴπωμεν· Ἐξ"
+    }
+  ],
+  "books": {
+    "Mark": 7,
+    "Luke": 6,
+    "Matthew": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 7,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "panes",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "γραμματεύς",
+      "display": "escribas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διαταράσσω",
+      "display": "fue turbado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποταπός",
+      "display": "qué·clase",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσπασμός",
+      "display": "saludo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσδοκάω",
+      "display": "esperando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "de·pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρχω",
+      "display": "comenzaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Φαρισαῖος",
+      "display": "Fariseo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποκρίνομαι",
+      "display": "respondido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "vistos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γεωργός",
+      "display": "labradores",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκεῖ",
+      "display": "allí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κάθημαι",
+      "display": "sentarses",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὔπω",
+      "display": "aún·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλιγόπιστος",
+      "display": "poca·fe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Mark 8:17",
+      "negator": "οὐκ",
+      "clause_text": "καὶ ⸀γνοὺς λέγει αὐτοῖς· Τί διαλογίζεσθε ὅτι ἄρτους οὐκ ἔχετε; οὔπω νοεῖτε οὐδὲ συνίετε;"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 11:31",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 2:6",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 2:8",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 8:16",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 8:17",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Mark 9:33",
+      "reason": "frequent in Mark"
+    },
+    {
+      "ref": "Luke 12:17",
+      "reason": "frequent in Luke"
+    },
+    {
+      "ref": "Luke 1:29",
+      "reason": "frequent in Luke"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

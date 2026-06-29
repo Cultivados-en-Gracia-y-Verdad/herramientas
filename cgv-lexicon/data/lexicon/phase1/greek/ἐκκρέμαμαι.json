@@ -1,0 +1,74 @@
+{
+  "lemma": "ἐκκρέμαμαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐξεκρέματο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 19:48",
+      "form": "ἐξεκρέματο",
+      "morph": "V-A-M-I-3S",
+      "book": "Luke",
+      "chapter": 19,
+      "verse": 48,
+      "left_context": "τί ποιήσωσιν, ὁ λαὸς γὰρ ἅπας",
+      "right_context": "αὐτοῦ ἀκούων."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπας",
+      "display": "todo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 19:48",
+      "reason": "occurs near λαός, ἀκούω, ἅπας"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

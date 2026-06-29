@@ -1,0 +1,126 @@
+{
+  "lemma": "ῥαβδίζω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἐραβδίσθην,",
+      "count": 1
+    },
+    {
+      "form": "ῥαβδίζειν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "passive": 1,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 11:25",
+      "form": "ἐραβδίσθην,",
+      "morph": "V-A-P-I-1S",
+      "book": "2 Corinthians",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "τρὶς",
+      "right_context": "ἅπαξ ἐλιθάσθην, τρὶς ἐναυάγησα, νυχθήμερον ἐν"
+    },
+    {
+      "ref": "Acts 16:22",
+      "form": "ῥαβδίζειν,",
+      "morph": "V-P-A-N",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 22,
+      "left_context": "στρατηγοὶ περιρήξαντες αὐτῶν τὰ ἱμάτια ἐκέλευον",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "τρίς",
+      "display": "tres·veces",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λιθάζω",
+      "display": "fue apedreado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ναυαγέω",
+      "display": "naufragé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νυχθήμερον",
+      "display": "noche·y·día",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιρήγνυμι",
+      "display": "rasgados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κελεύω",
+      "display": "mandaban",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 11:25",
+      "reason": "occurs near λιθάζω, ναυαγέω, νυχθήμερον"
+    },
+    {
+      "ref": "Acts 16:22",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

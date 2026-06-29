@@ -1,0 +1,371 @@
+{
+  "lemma": "κατασκευάζω",
+  "language": "greek",
+  "total_occurrences": 11,
+  "forms": [
+    {
+      "form": "κατασκευάσει",
+      "count": 3
+    },
+    {
+      "form": "κατασκευάσας",
+      "count": 2
+    },
+    {
+      "form": "κατασκευαζομένης",
+      "count": 1
+    },
+    {
+      "form": "κατασκευάζεται",
+      "count": 1
+    },
+    {
+      "form": "κατεσκευάσθη",
+      "count": 1
+    },
+    {
+      "form": "κατεσκευασμένων,",
+      "count": 1
+    },
+    {
+      "form": "κατεσκεύασεν",
+      "count": 1
+    },
+    {
+      "form": "κατεσκευασμένον.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 5,
+      "indicative": 6
+    },
+    "tenses": {
+      "present": 2,
+      "aorist": 4,
+      "perfect": 2,
+      "future": 3
+    },
+    "voices": {
+      "passive": 5,
+      "active": 6
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Peter 3:20",
+      "form": "κατασκευαζομένης",
+      "morph": "V-P-P-P",
+      "book": "1 Peter",
+      "chapter": 3,
+      "verse": 20,
+      "left_context": "τοῦ θεοῦ μακροθυμία ἐν ἡμέραις Νῶε",
+      "right_context": "κιβωτοῦ εἰς ἣν ⸀ὀλίγοι, τοῦτ’ ἔστιν"
+    },
+    {
+      "ref": "Hebrews 3:3",
+      "form": "κατασκευάσας",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 3,
+      "left_context": "πλείονα τιμὴν ἔχει τοῦ οἴκου ὁ",
+      "right_context": "αὐτόν·"
+    },
+    {
+      "ref": "Hebrews 3:4",
+      "form": "κατασκευάζεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "πᾶς γὰρ οἶκος",
+      "right_context": "ὑπό τινος, ὁ ⸀δὲ πάντα κατασκευάσας"
+    },
+    {
+      "ref": "Hebrews 3:4",
+      "form": "κατασκευάσας",
+      "morph": "V-A-A-P",
+      "book": "Hebrews",
+      "chapter": 3,
+      "verse": 4,
+      "left_context": "κατασκευάζεται ὑπό τινος, ὁ ⸀δὲ πάντα",
+      "right_context": "θεός."
+    },
+    {
+      "ref": "Hebrews 9:2",
+      "form": "κατεσκευάσθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 2,
+      "left_context": "σκηνὴ γὰρ",
+      "right_context": "ἡ πρώτη ἐν ᾗ ἥ τε"
+    },
+    {
+      "ref": "Hebrews 9:6",
+      "form": "κατεσκευασμένων,",
+      "morph": "V-X-P-P",
+      "book": "Hebrews",
+      "chapter": 9,
+      "verse": 6,
+      "left_context": "Τούτων δὲ οὕτως",
+      "right_context": "εἰς μὲν τὴν πρώτην σκηνὴν διὰ"
+    },
+    {
+      "ref": "Hebrews 11:7",
+      "form": "κατεσκεύασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "Νῶε περὶ τῶν μηδέπω βλεπομένων εὐλαβηθεὶς",
+      "right_context": "κιβωτὸν εἰς σωτηρίαν τοῦ οἴκου αὐτοῦ,"
+    },
+    {
+      "ref": "Luke 1:17",
+      "form": "κατεσκευασμένον.",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 1,
+      "verse": 17,
+      "left_context": "ἐν φρονήσει δικαίων, ἑτοιμάσαι κυρίῳ λαὸν",
+      "right_context": ""
+    },
+    {
+      "ref": "Luke 7:27",
+      "form": "κατασκευάσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Luke",
+      "chapter": 7,
+      "verse": 27,
+      "left_context": "ἄγγελόν μου πρὸ προσώπου σου, ὃς",
+      "right_context": "τὴν ὁδόν σου ἔμπροσθέν σου."
+    },
+    {
+      "ref": "Mark 1:2",
+      "form": "κατασκευάσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 2,
+      "left_context": "ἄγγελόν μου πρὸ προσώπου σου, ὃς",
+      "right_context": "τὴν ὁδόν ⸀σου·"
+    },
+    {
+      "ref": "Matthew 11:10",
+      "form": "κατασκευάσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 11,
+      "verse": 10,
+      "left_context": "ἄγγελόν μου πρὸ προσώπου σου, ὃς",
+      "right_context": "τὴν ὁδόν σου ἔμπροσθέν σου."
+    }
+  ],
+  "books": {
+    "Hebrews": 6,
+    "Luke": 2,
+    "1 Peter": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οἶκος",
+      "display": "de·casa",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πρό",
+      "display": "antes·de",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "πρόσωπον",
+      "display": "de·rostro",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ὁδός",
+      "display": "camino",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κιβωτός",
+      "display": "de·arca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "σκηνή",
+      "display": "tienda,",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πρῶτος",
+      "display": "primera",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἔμπροσθεν",
+      "display": "delante·de",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μακροθυμία",
+      "display": "paciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Νῶε",
+      "display": "de·Noé",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀλίγος",
+      "display": "pocos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τιμή",
+      "display": "honora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηδέπω",
+      "display": "todavía·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βλέπω",
+      "display": "mirados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλαβέομαι",
+      "display": "temido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σωτηρία",
+      "display": "salvación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φρόνησις",
+      "display": "prudencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκαιος",
+      "display": "de·justos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑτοιμάζω",
+      "display": "preparar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "pueblo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:7",
+      "reason": "frequent in Hebrews"
+    },
+    {
+      "ref": "Hebrews 3:3",
+      "reason": "frequent in Hebrews"
+    },
+    {
+      "ref": "Hebrews 3:4",
+      "reason": "frequent in Hebrews"
+    },
+    {
+      "ref": "Hebrews 9:2",
+      "reason": "frequent in Hebrews"
+    },
+    {
+      "ref": "Hebrews 9:6",
+      "reason": "frequent in Hebrews"
+    },
+    {
+      "ref": "Luke 1:17",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 7:27",
+      "reason": "occurs near πρό, πρόσωπον, ὁδός"
+    },
+    {
+      "ref": "1 Peter 3:20",
+      "reason": "occurs near θεός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,289 @@
+{
+  "lemma": "ἐνδυναμόω",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἐνδυναμώσαντί",
+      "count": 1
+    },
+    {
+      "form": "ἐνδυναμοῦ",
+      "count": 1
+    },
+    {
+      "form": "ἐνεδυνάμωσέν",
+      "count": 1
+    },
+    {
+      "form": "ἐνδυναμοῦσθε",
+      "count": 1
+    },
+    {
+      "form": "ἐνδυναμοῦντί",
+      "count": 1
+    },
+    {
+      "form": "ἐνεδυναμοῦτο",
+      "count": 1
+    },
+    {
+      "form": "ἐνεδυναμώθη",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "imperative": 2,
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3,
+      "present": 3,
+      "imperfect": 1
+    },
+    "voices": {
+      "active": 3,
+      "passive": 4
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 1:12",
+      "form": "ἐνδυναμώσαντί",
+      "morph": "V-A-A-P",
+      "book": "1 Timothy",
+      "chapter": 1,
+      "verse": 12,
+      "left_context": "⸀Χάριν ἔχω τῷ",
+      "right_context": "με Χριστῷ Ἰησοῦ τῷ κυρίῳ ἡμῶν,"
+    },
+    {
+      "ref": "2 Timothy 2:1",
+      "form": "ἐνδυναμοῦ",
+      "morph": "V-P-P-D-2S",
+      "book": "2 Timothy",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "Σὺ οὖν, τέκνον μου,",
+      "right_context": "ἐν τῇ χάριτι τῇ ἐν Χριστῷ"
+    },
+    {
+      "ref": "2 Timothy 4:17",
+      "form": "ἐνεδυνάμωσέν",
+      "morph": "V-A-A-I-3S",
+      "book": "2 Timothy",
+      "chapter": 4,
+      "verse": 17,
+      "left_context": "ὁ δὲ κύριός μοι παρέστη καὶ",
+      "right_context": "με, ἵνα δι’ ἐμοῦ τὸ κήρυγμα"
+    },
+    {
+      "ref": "Ephesians 6:10",
+      "form": "ἐνδυναμοῦσθε",
+      "morph": "V-P-P-D-2P",
+      "book": "Ephesians",
+      "chapter": 6,
+      "verse": 10,
+      "left_context": "⸂Τοῦ λοιποῦ⸃",
+      "right_context": "ἐν κυρίῳ καὶ ἐν τῷ κράτει"
+    },
+    {
+      "ref": "Philippians 4:13",
+      "form": "ἐνδυναμοῦντί",
+      "morph": "V-P-A-P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 13,
+      "left_context": "πάντα ἰσχύω ἐν τῷ",
+      "right_context": "⸀με."
+    },
+    {
+      "ref": "Acts 9:22",
+      "form": "ἐνεδυναμοῦτο",
+      "morph": "V-I-P-I-3S",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 22,
+      "left_context": "Σαῦλος δὲ μᾶλλον",
+      "right_context": "καὶ ⸀συνέχυννεν ⸀τοὺς Ἰουδαίους τοὺς κατοικοῦντας"
+    },
+    {
+      "ref": "Romans 4:20",
+      "form": "ἐνεδυναμώθη",
+      "morph": "V-A-P-I-3S",
+      "book": "Romans",
+      "chapter": 4,
+      "verse": 20,
+      "left_context": "θεοῦ οὐ διεκρίθη τῇ ἀπιστίᾳ ἀλλὰ",
+      "right_context": "τῇ πίστει, δοὺς δόξαν τῷ θεῷ"
+    }
+  ],
+  "books": {
+    "2 Timothy": 2,
+    "1 Timothy": 1,
+    "Ephesians": 1,
+    "Philippians": 1,
+    "Acts": 1,
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέκνον",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρίστημι",
+      "display": "presentó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "de·restante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "puedo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Σαῦλος",
+      "display": "Saulo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μᾶλλον",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συγχέω",
+      "display": "confundía",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακρίνω",
+      "display": "fue discernido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπιστία",
+      "display": "incredulidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "dado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δόξα",
+      "display": "gloria",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "2 Timothy 2:1",
+      "form": "ἐνδυναμοῦ",
+      "morph": "V-P-P-D-2S",
+      "clause_text": "Σὺ οὖν, τέκνον μου, ἐνδυναμοῦ ἐν τῇ χάριτι τῇ ἐν Χριστῷ Ἰησοῦ,"
+    },
+    {
+      "ref": "Ephesians 6:10",
+      "form": "ἐνδυναμοῦσθε",
+      "morph": "V-P-P-D-2P",
+      "clause_text": "⸂Τοῦ λοιποῦ⸃ ἐνδυναμοῦσθε ἐν κυρίῳ καὶ ἐν τῷ κράτει τῆς ἰσχύος"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Timothy 2:1",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Ephesians 6:10",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "2 Timothy 4:17",
+      "reason": "occurs near κύριος"
+    },
+    {
+      "ref": "1 Timothy 1:12",
+      "reason": "occurs near Χριστός, κύριος, χάρις"
+    },
+    {
+      "ref": "Acts 9:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Philippians 4:13",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Romans 4:20",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

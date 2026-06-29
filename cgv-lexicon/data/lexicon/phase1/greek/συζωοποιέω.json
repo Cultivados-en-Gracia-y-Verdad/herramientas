@@ -1,0 +1,119 @@
+{
+  "lemma": "συζωοποιέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "συνεζωοποίησεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Colossians 2:13",
+      "form": "συνεζωοποίησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Colossians",
+      "chapter": 2,
+      "verse": 13,
+      "left_context": "καὶ τῇ ἀκροβυστίᾳ τῆς σαρκὸς ὑμῶν,",
+      "right_context": "ὑμᾶς σὺν αὐτῷ· χαρισάμενος ἡμῖν πάντα"
+    },
+    {
+      "ref": "Ephesians 2:5",
+      "form": "συνεζωοποίησεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Ephesians",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "καὶ ὄντας ἡμᾶς νεκροὺς τοῖς παραπτώμασιν",
+      "right_context": "τῷ Χριστῷ— χάριτί ἐστε σεσῳσμένοι—"
+    }
+  ],
+  "books": {
+    "Colossians": 1,
+    "Ephesians": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀκροβυστία",
+      "display": "incircuncisión",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σάρξ",
+      "display": "de·carne",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χαρίζομαι",
+      "display": "perdonado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νεκρός",
+      "display": "muertos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παράπτωμα",
+      "display": "ofensas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Χριστός",
+      "display": "Cristo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χάρις",
+      "display": "gracia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "salvados",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Colossians 2:13",
+      "reason": "occurs near σάρξ, χαρίζομαι, ἀκροβυστία"
+    },
+    {
+      "ref": "Ephesians 2:5",
+      "reason": "occurs near νεκρός, παράπτωμα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

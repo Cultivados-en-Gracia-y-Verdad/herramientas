@@ -1,0 +1,68 @@
+{
+  "lemma": "παρεισδύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "παρεισέδυσαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:4",
+      "form": "παρεισέδυσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 4,
+      "left_context": "",
+      "right_context": "γάρ τινες ἄνθρωποι, οἱ πάλαι προγεγραμμένοι"
+    }
+  ],
+  "books": {
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάλαι",
+      "display": "hace·tiempo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Jude 1:4",
+      "reason": "occurs near πάλαι, ἄνθρωπος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,145 @@
+{
+  "lemma": "κάμνω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κάμητε",
+      "count": 1
+    },
+    {
+      "form": "κάμνοντα,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 12:3",
+      "form": "κάμητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Hebrews",
+      "chapter": 12,
+      "verse": 3,
+      "left_context": "ἁμαρτωλῶν εἰς ⸀ἑαυτοὺς ἀντιλογίαν, ἵνα μὴ",
+      "right_context": "ταῖς ψυχαῖς ὑμῶν ἐκλυόμενοι."
+    },
+    {
+      "ref": "James 5:15",
+      "form": "κάμνοντα,",
+      "morph": "V-P-A-P",
+      "book": "James",
+      "chapter": 5,
+      "verse": 15,
+      "left_context": "ἡ εὐχὴ τῆς πίστεως σώσει τὸν",
+      "right_context": "καὶ ἐγερεῖ αὐτὸν ὁ κύριος· κἂν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀντιλογία",
+      "display": "contradicción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "almas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλύομαι",
+      "display": "desmayados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὐχή",
+      "display": "voto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῴζω",
+      "display": "salvará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγείρω",
+      "display": "levantará",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Hebrews 12:3",
+      "form": "κάμητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "ὑπὸ τῶν ἁμαρτωλῶν εἰς ⸀ἑαυτοὺς ἀντιλογίαν, ἵνα μὴ κάμητε ταῖς ψυχαῖς ὑμῶν ἐκλυόμενοι.",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Hebrews 12:3",
+      "negator": "μὴ",
+      "clause_text": "ὑπὸ τῶν ἁμαρτωλῶν εἰς ⸀ἑαυτοὺς ἀντιλογίαν, ἵνα μὴ κάμητε ταῖς ψυχαῖς ὑμῶν ἐκλυόμενοι."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 12:3",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "James 5:15",
+      "reason": "occurs near εὐχή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

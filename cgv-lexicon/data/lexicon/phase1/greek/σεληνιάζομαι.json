@@ -1,0 +1,135 @@
+{
+  "lemma": "σεληνιάζομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "σεληνιαζομένους",
+      "count": 1
+    },
+    {
+      "form": "σεληνιάζεται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Matthew 4:24",
+      "form": "σεληνιαζομένους",
+      "morph": "V-P-M-P",
+      "book": "Matthew",
+      "chapter": 4,
+      "verse": 24,
+      "left_context": "νόσοις καὶ βασάνοις ⸀συνεχομένους, δαιμονιζομένους καὶ",
+      "right_context": "καὶ παραλυτικούς, καὶ ἐθεράπευσεν αὐτούς."
+    },
+    {
+      "ref": "Matthew 17:15",
+      "form": "σεληνιάζεται",
+      "morph": "V-P-M-I-3S",
+      "book": "Matthew",
+      "chapter": 17,
+      "verse": 15,
+      "left_context": "Κύριε, ἐλέησόν μου τὸν υἱόν, ὅτι",
+      "right_context": "καὶ κακῶς ⸀πάσχει, πολλάκις γὰρ πίπτει"
+    }
+  ],
+  "books": {
+    "Matthew": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βάσανος",
+      "display": "tormentos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνέχω",
+      "display": "oprimidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμονίζομαι",
+      "display": "estar·endemoniado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλυτικός",
+      "display": "paralíticos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεραπεύω",
+      "display": "sanó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐλεάω",
+      "display": "tener·misericordia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "υἱός",
+      "display": "hijo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακῶς",
+      "display": "mal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πάσχω",
+      "display": "padece",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολλάκις",
+      "display": "muchas·veces",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 17:15",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 4:24",
+      "reason": "occurs near βάσανος, δαιμονίζομαι, θεραπεύω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

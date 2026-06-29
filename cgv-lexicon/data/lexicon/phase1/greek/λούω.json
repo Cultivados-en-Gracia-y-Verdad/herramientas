@@ -1,0 +1,272 @@
+{
+  "lemma": "λούω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "λουσαμένη",
+      "count": 1
+    },
+    {
+      "form": "λελουσμένοι",
+      "count": 1
+    },
+    {
+      "form": "λούσαντες",
+      "count": 1
+    },
+    {
+      "form": "ἔλουσεν",
+      "count": 1
+    },
+    {
+      "form": "λελουμένος",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 4,
+      "indicative": 1
+    },
+    "tenses": {
+      "aorist": 3,
+      "perfect": 2
+    },
+    "voices": {
+      "middle": 3,
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:22",
+      "form": "λουσαμένη",
+      "morph": "V-A-M-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 22,
+      "left_context": "ἐπὶ τὸ ἴδιον ἐξέραμα, καί· Ὗς",
+      "right_context": "εἰς ⸀κυλισμὸν βορβόρου."
+    },
+    {
+      "ref": "Hebrews 10:22",
+      "form": "λελουσμένοι",
+      "morph": "V-X-M-P",
+      "book": "Hebrews",
+      "chapter": 10,
+      "verse": 22,
+      "left_context": "τὰς καρδίας ἀπὸ συνειδήσεως πονηρᾶς καὶ",
+      "right_context": "τὸ σῶμα ὕδατι καθαρῷ·"
+    },
+    {
+      "ref": "Acts 9:37",
+      "form": "λούσαντες",
+      "morph": "V-A-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 37,
+      "left_context": "ταῖς ἡμέραις ἐκείναις ἀσθενήσασαν αὐτὴν ἀποθανεῖν·",
+      "right_context": "δὲ ⸂ἔθηκαν αὐτὴν⸃ ἐν ὑπερῴῳ."
+    },
+    {
+      "ref": "Acts 16:33",
+      "form": "ἔλουσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 33,
+      "left_context": "ἐν ἐκείνῃ τῇ ὥρᾳ τῆς νυκτὸς",
+      "right_context": "ἀπὸ τῶν πληγῶν, καὶ ἐβαπτίσθη αὐτὸς"
+    },
+    {
+      "ref": "John 13:10",
+      "form": "λελουμένος",
+      "morph": "V-X-M-P",
+      "book": "John",
+      "chapter": 13,
+      "verse": 10,
+      "left_context": "λέγει αὐτῷ ⸀ὁ Ἰησοῦς· Ὁ",
+      "right_context": "⸂οὐκ ἔχει χρείαν⸃ ⸂εἰ μὴ⸃ τοὺς"
+    }
+  ],
+  "books": {
+    "Acts": 2,
+    "2 Peter": 1,
+    "Hebrews": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἴδιος",
+      "display": "propio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέραμα",
+      "display": "vómito",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὗς",
+      "display": "cerdo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κυλισμός",
+      "display": "revolcarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βόρβορος",
+      "display": "de·lodo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συνείδησις",
+      "display": "de·conciencia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πονηρός",
+      "display": "de·malvada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὕδωρ",
+      "display": "agua",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καθαρός",
+      "display": "limpio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἡμέρα",
+      "display": "días",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσθενέω",
+      "display": "estar·enfermo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀποθνῄσκω",
+      "display": "morir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "pusieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπερῷον",
+      "display": "aposento·alto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὥρα",
+      "display": "hora",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νύξ",
+      "display": "de·noche",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πληγή",
+      "display": "de·heridas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βαπτίζω",
+      "display": "fue bautizado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χρεία",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "John 13:10",
+      "negator": "⸂οὐκ",
+      "clause_text": "λέγει αὐτῷ ⸀ὁ Ἰησοῦς· Ὁ λελουμένος ⸂οὐκ ἔχει χρείαν⸃ ⸂εἰ μὴ⸃ τοὺς πόδας νίψασθαι,"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:33",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 9:37",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "2 Peter 2:22",
+      "reason": "occurs near βόρβορος, κυλισμός, ἐξέραμα"
+    },
+    {
+      "ref": "Hebrews 10:22",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "John 13:10",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

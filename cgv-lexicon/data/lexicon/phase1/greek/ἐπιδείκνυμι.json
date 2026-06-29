@@ -1,0 +1,326 @@
+{
+  "lemma": "ἐπιδείκνυμι",
+  "language": "greek",
+  "total_occurrences": 7,
+  "forms": [
+    {
+      "form": "ἐπιδεῖξαι",
+      "count": 3
+    },
+    {
+      "form": "ἐπιδεικνύμεναι",
+      "count": 1
+    },
+    {
+      "form": "ἐπιδεικνὺς",
+      "count": 1
+    },
+    {
+      "form": "ἐπιδείξατε",
+      "count": 1
+    },
+    {
+      "form": "ἐπιδείξατέ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 3,
+      "participle": 2,
+      "imperative": 2
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 2
+    },
+    "voices": {
+      "active": 6,
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 6:17",
+      "form": "ἐπιδεῖξαι",
+      "morph": "V-A-A-N",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 17,
+      "left_context": "ἐν ᾧ περισσότερον βουλόμενος ὁ θεὸς",
+      "right_context": "τοῖς κληρονόμοις τῆς ἐπαγγελίας τὸ ἀμετάθετον"
+    },
+    {
+      "ref": "Acts 9:39",
+      "form": "ἐπιδεικνύμεναι",
+      "morph": "V-P-M-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 39,
+      "left_context": "αὐτῷ πᾶσαι αἱ χῆραι κλαίουσαι καὶ",
+      "right_context": "χιτῶνας καὶ ἱμάτια ὅσα ἐποίει μετ’"
+    },
+    {
+      "ref": "Acts 18:28",
+      "form": "ἐπιδεικνὺς",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 28,
+      "left_context": "εὐτόνως γὰρ τοῖς Ἰουδαίοις διακατηλέγχετο δημοσίᾳ",
+      "right_context": "διὰ τῶν γραφῶν εἶναι τὸν χριστὸν"
+    },
+    {
+      "ref": "Luke 17:14",
+      "form": "ἐπιδείξατε",
+      "morph": "V-A-A-D-2P",
+      "book": "Luke",
+      "chapter": 17,
+      "verse": 14,
+      "left_context": "καὶ ἰδὼν εἶπεν αὐτοῖς· Πορευθέντες",
+      "right_context": "ἑαυτοὺς τοῖς ἱερεῦσιν. καὶ ἐγένετο ἐν"
+    },
+    {
+      "ref": "Matthew 16:1",
+      "form": "ἐπιδεῖξαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 1,
+      "left_context": "ἐπηρώτησαν αὐτὸν σημεῖον ἐκ τοῦ οὐρανοῦ",
+      "right_context": "αὐτοῖς."
+    },
+    {
+      "ref": "Matthew 22:19",
+      "form": "ἐπιδείξατέ",
+      "morph": "V-A-A-D-2P",
+      "book": "Matthew",
+      "chapter": 22,
+      "verse": 19,
+      "left_context": "",
+      "right_context": "μοι τὸ νόμισμα τοῦ κήνσου. οἱ"
+    },
+    {
+      "ref": "Matthew 24:1",
+      "form": "ἐπιδεῖξαι",
+      "morph": "V-A-A-N",
+      "book": "Matthew",
+      "chapter": 24,
+      "verse": 1,
+      "left_context": "ἐπορεύετο⸃, καὶ προσῆλθον οἱ μαθηταὶ αὐτοῦ",
+      "right_context": "αὐτῷ τὰς οἰκοδομὰς τοῦ ἱεροῦ·"
+    }
+  ],
+  "books": {
+    "Matthew": 3,
+    "Acts": 2,
+    "Hebrews": 1,
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "περισσότερος",
+      "display": "más",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queriendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κληρονόμος",
+      "display": "heredero·",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "de·promesa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χήρα",
+      "display": "viudas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "llorando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χιτών",
+      "display": "túnicas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱμάτιον",
+      "display": "mantos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅσος",
+      "display": "cuanto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰουδαῖος",
+      "display": "judíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διακατελέγχομαι",
+      "display": "refutaba",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δημόσιος",
+      "display": "pública",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γραφή",
+      "display": "de·escrituras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πορεύομαι",
+      "display": "idos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερεύς",
+      "display": "sacerdotes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σημεῖον",
+      "display": "señal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐρανός",
+      "display": "de·cielo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νόμισμα",
+      "display": "moneda",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κῆνσος",
+      "display": "de·censo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσέρχομαι",
+      "display": "acercarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκοδομή",
+      "display": "edificios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 17:14",
+      "form": "ἐπιδείξατε",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "καὶ ἰδὼν εἶπεν αὐτοῖς· Πορευθέντες ἐπιδείξατε ἑαυτοὺς τοῖς ἱερεῦσιν. καὶ ἐγένετο ἐν τῷ ὑπάγειν"
+    },
+    {
+      "ref": "Matthew 22:19",
+      "form": "ἐπιδείξατέ",
+      "morph": "V-A-A-D-2P",
+      "clause_text": "ἐπιδείξατέ μοι τὸ νόμισμα τοῦ κήνσου. οἱ δὲ προσήνεγκαν"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 22:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 17:14",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 16:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Matthew 24:1",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 18:28",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 9:39",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 6:17",
+      "reason": "occurs near βούλομαι, θεός, κληρονόμος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

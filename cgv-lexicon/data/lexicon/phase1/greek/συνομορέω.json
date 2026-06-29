@@ -1,0 +1,74 @@
+{
+  "lemma": "συνομορέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνομοροῦσα",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 18:7",
+      "form": "συνομοροῦσα",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 18,
+      "verse": 7,
+      "left_context": "τὸν θεόν, οὗ ἡ οἰκία ἦν",
+      "right_context": "τῇ συναγωγῇ."
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "θεός",
+      "display": "Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagoga",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 18:7",
+      "reason": "occurs near θεός, οἰκία, συναγωγή"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

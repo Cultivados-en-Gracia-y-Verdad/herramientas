@@ -1,0 +1,264 @@
+{
+  "lemma": "ἐπιτυγχάνω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἐπέτυχεν",
+      "count": 1
+    },
+    {
+      "form": "ἐπέτυχον",
+      "count": 1
+    },
+    {
+      "form": "ἐπέτυχεν,",
+      "count": 1
+    },
+    {
+      "form": "ἐπέτυχεν·",
+      "count": 1
+    },
+    {
+      "form": "ἐπιτυχεῖν·",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 6:15",
+      "form": "ἐπέτυχεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Hebrews",
+      "chapter": 6,
+      "verse": 15,
+      "left_context": "καὶ οὕτως μακροθυμήσας",
+      "right_context": "τῆς ἐπαγγελίας."
+    },
+    {
+      "ref": "Hebrews 11:33",
+      "form": "ἐπέτυχον",
+      "morph": "V-A-A-I-3P",
+      "book": "Hebrews",
+      "chapter": 11,
+      "verse": 33,
+      "left_context": "διὰ πίστεως κατηγωνίσαντο βασιλείας, εἰργάσαντο δικαιοσύνην,",
+      "right_context": "ἐπαγγελιῶν, ἔφραξαν στόματα λεόντων,"
+    },
+    {
+      "ref": "Romans 11:7",
+      "form": "ἐπέτυχεν,",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "οὖν; ὃ ἐπιζητεῖ Ἰσραήλ, τοῦτο οὐκ",
+      "right_context": "ἡ δὲ ἐκλογὴ ἐπέτυχεν· οἱ δὲ"
+    },
+    {
+      "ref": "Romans 11:7",
+      "form": "ἐπέτυχεν·",
+      "morph": "V-A-A-I-3S",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 7,
+      "left_context": "τοῦτο οὐκ ἐπέτυχεν, ἡ δὲ ἐκλογὴ",
+      "right_context": "οἱ δὲ λοιποὶ ἐπωρώθησαν,"
+    },
+    {
+      "ref": "James 4:2",
+      "form": "ἐπιτυχεῖν·",
+      "morph": "V-A-A-N",
+      "book": "James",
+      "chapter": 4,
+      "verse": 2,
+      "left_context": "φονεύετε καὶ ζηλοῦτε, καὶ οὐ δύνασθε",
+      "right_context": "μάχεσθε καὶ πολεμεῖτε. οὐκ ἔχετε διὰ"
+    }
+  ],
+  "books": {
+    "Hebrews": 2,
+    "Romans": 2,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπαγγελία",
+      "display": "de·promesa",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκλογή",
+      "display": "elección",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιτυγχάνω",
+      "display": "alcanzó",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "οὕτω(ς)",
+      "display": "así",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μακροθυμέω",
+      "display": "ser·paciente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "de·fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καταγωνίζομαι",
+      "display": "lucharon",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βασιλεία",
+      "display": "reinos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐργάζομαι",
+      "display": "trabajaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δικαιοσύνη",
+      "display": "justicia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φράσσω",
+      "display": "cerraron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στόμα",
+      "display": "bocas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λέων",
+      "display": "de·leónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιζητέω",
+      "display": "busca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰσραήλ",
+      "display": "Israel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λοιπός",
+      "display": "restantes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πωρόω",
+      "display": "fueron endurecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζηλόω",
+      "display": "celáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "podéis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχομαι",
+      "display": "peleáis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολεμέω",
+      "display": "peleáis",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Romans 11:7",
+      "negator": "οὐκ",
+      "clause_text": "τί οὖν; ὃ ἐπιζητεῖ Ἰσραήλ, τοῦτο οὐκ ἐπέτυχεν, ἡ δὲ ἐκλογὴ ἐπέτυχεν· οἱ δὲ λοιποὶ ἐπωρώθησαν,"
+    },
+    {
+      "ref": "James 4:2",
+      "negator": "οὐ",
+      "clause_text": "οὐκ ἔχετε· φονεύετε καὶ ζηλοῦτε, καὶ οὐ δύνασθε ἐπιτυχεῖν· μάχεσθε καὶ πολεμεῖτε. οὐκ ἔχετε διὰ τὸ μὴ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 11:33",
+      "reason": "occurs near ἐπαγγελία, ἐπιτυγχάνω"
+    },
+    {
+      "ref": "Hebrews 6:15",
+      "reason": "occurs near μακροθυμέω, οὕτω(ς), ἐπαγγελία"
+    },
+    {
+      "ref": "Romans 11:7",
+      "reason": "occurs near ἐκλογή, ἐπιτυγχάνω"
+    },
+    {
+      "ref": "James 4:2",
+      "reason": "occurs near ἐπιτυγχάνω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

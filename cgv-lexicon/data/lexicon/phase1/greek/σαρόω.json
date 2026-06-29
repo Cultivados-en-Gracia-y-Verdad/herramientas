@@ -1,0 +1,164 @@
+{
+  "lemma": "σαρόω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "σεσαρωμένον",
+      "count": 2
+    },
+    {
+      "form": "σαροῖ",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 2,
+      "present": 1
+    },
+    "voices": {
+      "passive": 2,
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 11:25",
+      "form": "σεσαρωμένον",
+      "morph": "V-X-P-P",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 25,
+      "left_context": "καὶ ἐλθὸν ⸀εὑρίσκει",
+      "right_context": "καὶ κεκοσμημένον."
+    },
+    {
+      "ref": "Luke 15:8",
+      "form": "σαροῖ",
+      "morph": "V-P-A-I-3S",
+      "book": "Luke",
+      "chapter": 15,
+      "verse": 8,
+      "left_context": "δραχμὴν μίαν, οὐχὶ ἅπτει λύχνον καὶ",
+      "right_context": "τὴν οἰκίαν καὶ ζητεῖ ἐπιμελῶς ἕως"
+    },
+    {
+      "ref": "Matthew 12:44",
+      "form": "σεσαρωμένον",
+      "morph": "V-X-P-P",
+      "book": "Matthew",
+      "chapter": 12,
+      "verse": 44,
+      "left_context": "ὅθεν ἐξῆλθον· καὶ ἐλθὸν ⸀εὑρίσκει ⸀σχολάζοντα",
+      "right_context": "καὶ κεκοσμημένον."
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἔρχομαι",
+      "display": "venido",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "halla",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κοσμέω",
+      "display": "adornado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "una",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐχί",
+      "display": "no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπτω",
+      "display": "toca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λύχνος",
+      "display": "lámpara",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οἰκία",
+      "display": "casa",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "busca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιμελῶς",
+      "display": "cuidadosamente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐξέρχομαι",
+      "display": "salí",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σχολάζω",
+      "display": "desocupado",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:25",
+      "reason": "occurs near εὑρίσκω, κοσμέω, ἔρχομαι"
+    },
+    {
+      "ref": "Luke 15:8",
+      "reason": "occurs near εἷς, οὐχί"
+    },
+    {
+      "ref": "Matthew 12:44",
+      "reason": "occurs near εὑρίσκω, κοσμέω, ἔρχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

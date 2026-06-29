@@ -1,0 +1,146 @@
+{
+  "lemma": "ξυράομαι",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐξυρημένῃ.",
+      "count": 1
+    },
+    {
+      "form": "ξυρᾶσθαι,",
+      "count": 1
+    },
+    {
+      "form": "⸀ξυρήσονται",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "infinitive": 1,
+      "indicative": 1
+    },
+    "tenses": {
+      "perfect": 1,
+      "aorist": 1,
+      "future": 1
+    },
+    "voices": {
+      "passive": 1,
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 11:5",
+      "form": "ἐξυρημένῃ.",
+      "morph": "V-X-P-P",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 5,
+      "left_context": "γάρ ἐστιν καὶ τὸ αὐτὸ τῇ",
+      "right_context": ""
+    },
+    {
+      "ref": "1 Corinthians 11:6",
+      "form": "ξυρᾶσθαι,",
+      "morph": "V-A-M-N",
+      "book": "1 Corinthians",
+      "chapter": 11,
+      "verse": 6,
+      "left_context": "δὲ αἰσχρὸν γυναικὶ τὸ κείρασθαι ἢ",
+      "right_context": "κατακαλυπτέσθω."
+    },
+    {
+      "ref": "Acts 21:24",
+      "form": "⸀ξυρήσονται",
+      "morph": "V-F-M-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 24,
+      "left_context": "αὐτοῖς καὶ δαπάνησον ἐπ’ αὐτοῖς ἵνα",
+      "right_context": "τὴν κεφαλήν, καὶ ⸀γνώσονται πάντες ὅτι"
+    }
+  ],
+  "books": {
+    "1 Corinthians": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "αἰσχρός",
+      "display": "vergonzoso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γυνή",
+      "display": "mujer",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κείρω",
+      "display": "rapar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατακαλύπτομαι",
+      "display": "cubrirse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δαπανάω",
+      "display": "gasta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κεφαλή",
+      "display": "cabeza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γινώσκω",
+      "display": "conocerán",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "1 Corinthians 11:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "1 Corinthians 11:6",
+      "reason": "occurs near αἰσχρός, γυνή, κατακαλύπτομαι"
+    },
+    {
+      "ref": "Acts 21:24",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

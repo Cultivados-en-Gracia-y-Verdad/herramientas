@@ -1,0 +1,74 @@
+{
+  "lemma": "συνθρύπτω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνθρύπτοντές",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 21:13",
+      "form": "συνθρύπτοντές",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 13,
+      "left_context": "ὁ Παῦλος· Τί ποιεῖτε κλαίοντες καὶ",
+      "right_context": "μου τὴν καρδίαν; ἐγὼ γὰρ οὐ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλαίω",
+      "display": "llorando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καρδία",
+      "display": "corazón",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 21:13",
+      "reason": "occurs near Παῦλος, καρδία, κλαίω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

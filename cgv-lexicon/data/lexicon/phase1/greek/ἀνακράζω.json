@@ -1,0 +1,204 @@
+{
+  "lemma": "ἀνακράζω",
+  "language": "greek",
+  "total_occurrences": 5,
+  "forms": [
+    {
+      "form": "ἀνέκραξεν",
+      "count": 2
+    },
+    {
+      "form": "ἀνακράξας",
+      "count": 1
+    },
+    {
+      "form": "⸀Ἀνέκραγον",
+      "count": 1
+    },
+    {
+      "form": "ἀνέκραξαν,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 4,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 5
+    },
+    "voices": {
+      "active": 5
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 4:33",
+      "form": "ἀνέκραξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 4,
+      "verse": 33,
+      "left_context": "ἄνθρωπος ἔχων πνεῦμα δαιμονίου ἀκαθάρτου, καὶ",
+      "right_context": "φωνῇ μεγάλῃ·"
+    },
+    {
+      "ref": "Luke 8:28",
+      "form": "ἀνακράξας",
+      "morph": "V-A-A-P",
+      "book": "Luke",
+      "chapter": 8,
+      "verse": 28,
+      "left_context": "ἰδὼν δὲ τὸν ⸀Ἰησοῦν",
+      "right_context": "προσέπεσεν αὐτῷ καὶ φωνῇ μεγάλῃ εἶπεν·"
+    },
+    {
+      "ref": "Luke 23:18",
+      "form": "⸀Ἀνέκραγον",
+      "morph": "V-A-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 18,
+      "left_context": "",
+      "right_context": "δὲ παμπληθεὶ λέγοντες· Αἶρε τοῦτον, ἀπόλυσον"
+    },
+    {
+      "ref": "Mark 1:23",
+      "form": "ἀνέκραξεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 1,
+      "verse": 23,
+      "left_context": "αὐτῶν ἄνθρωπος ἐν πνεύματι ἀκαθάρτῳ καὶ",
+      "right_context": ""
+    },
+    {
+      "ref": "Mark 6:49",
+      "form": "ἀνέκραξαν,",
+      "morph": "V-A-A-I-3P",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 49,
+      "left_context": "περιπατοῦντα⸃ ἔδοξαν ⸂ὅτι φάντασμά ἐστιν⸃ καὶ",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 3,
+    "Mark": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκάθαρτος",
+      "display": "de·inmundo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voz",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δαιμόνιον",
+      "display": "de·demonio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὁράω",
+      "display": "visto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσπίπτω",
+      "display": "cayó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παμπληθεί",
+      "display": "en·gran·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἴρω",
+      "display": "levanta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνθρωπος",
+      "display": "hombre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοκέω",
+      "display": "parecieron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φάντασμα",
+      "display": "fantasma",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 23:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 4:33",
+      "reason": "occurs near δαιμόνιον, μέγας, πνεῦμα"
+    },
+    {
+      "ref": "Luke 8:28",
+      "reason": "occurs near μέγας, φωνή"
+    },
+    {
+      "ref": "Mark 1:23",
+      "reason": "occurs near πνεῦμα, ἀκάθαρτος"
+    },
+    {
+      "ref": "Mark 6:49",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

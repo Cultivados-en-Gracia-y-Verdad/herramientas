@@ -1,0 +1,158 @@
+{
+  "lemma": "συντηρέω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "συνετήρει",
+      "count": 2
+    },
+    {
+      "form": "συντηροῦνται.",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "imperfect": 2,
+      "present": 1
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 2:19",
+      "form": "συνετήρει",
+      "morph": "V-I-A-I-3S",
+      "book": "Luke",
+      "chapter": 2,
+      "verse": 19,
+      "left_context": "ἡ δὲ ⸀Μαρία πάντα",
+      "right_context": "τὰ ῥήματα ταῦτα συμβάλλουσα ἐν τῇ"
+    },
+    {
+      "ref": "Mark 6:20",
+      "form": "συνετήρει",
+      "morph": "V-I-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 20,
+      "left_context": "αὐτὸν ἄνδρα δίκαιον καὶ ἅγιον, καὶ",
+      "right_context": "αὐτόν, καὶ ἀκούσας αὐτοῦ πολλὰ ⸀ἠπόρει,"
+    },
+    {
+      "ref": "Matthew 9:17",
+      "form": "συντηροῦνται.",
+      "morph": "V-P-P-I-3P",
+      "book": "Matthew",
+      "chapter": 9,
+      "verse": 17,
+      "left_context": "νέον εἰς ἀσκοὺς καινούς, καὶ ἀμφότεροι",
+      "right_context": ""
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Μαρία",
+      "display": "María",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥῆμα",
+      "display": "dichos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συμβάλλω",
+      "display": "considerando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνήρ",
+      "display": "varón",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκαιος",
+      "display": "justo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσκός",
+      "display": "odres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καινός",
+      "display": "nuevos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμφότεροι",
+      "display": "amboses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 2:19",
+      "reason": "occurs near Μαρία, συμβάλλω, ῥῆμα"
+    },
+    {
+      "ref": "Mark 6:20",
+      "reason": "occurs near δίκαιος, ἀνήρ"
+    },
+    {
+      "ref": "Matthew 9:17",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

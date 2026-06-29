@@ -1,0 +1,74 @@
+{
+  "lemma": "ψώχω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ψώχοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 6:1",
+      "form": "ψώχοντες",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 6,
+      "verse": 1,
+      "left_context": "μαθηταὶ αὐτοῦ ⸂καὶ ἤσθιον τοὺς στάχυας⸃",
+      "right_context": "ταῖς χερσίν."
+    }
+  ],
+  "books": {
+    "Luke": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐσθίω",
+      "display": "comían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "στάχυς",
+      "display": "espigas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 6:1",
+      "reason": "occurs near στάχυς, χείρ, ἐσθίω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

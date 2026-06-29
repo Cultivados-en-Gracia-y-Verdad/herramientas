@@ -1,0 +1,107 @@
+{
+  "lemma": "κατακλάω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "κατέκλασεν",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 9:16",
+      "form": "κατέκλασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Luke",
+      "chapter": 9,
+      "verse": 16,
+      "left_context": "εἰς τὸν οὐρανὸν εὐλόγησεν αὐτοὺς καὶ",
+      "right_context": "καὶ ἐδίδου τοῖς μαθηταῖς ⸀παραθεῖναι τῷ"
+    },
+    {
+      "ref": "Mark 6:41",
+      "form": "κατέκλασεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 41,
+      "left_context": "ἀναβλέψας εἰς τὸν οὐρανὸν εὐλόγησεν καὶ",
+      "right_context": "τοὺς ἄρτους καὶ ἐδίδου τοῖς μαθηταῖς"
+    }
+  ],
+  "books": {
+    "Luke": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "οὐρανός",
+      "display": "cielo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "εὐλογέω",
+      "display": "bendijo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "δίδωμι",
+      "display": "daba",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μαθητής",
+      "display": "discípulos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρατίθημι",
+      "display": "poner",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄρτος",
+      "display": "panes",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 9:16",
+      "reason": "occurs near δίδωμι, εὐλογέω, μαθητής"
+    },
+    {
+      "ref": "Mark 6:41",
+      "reason": "occurs near δίδωμι, εὐλογέω, οὐρανός"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

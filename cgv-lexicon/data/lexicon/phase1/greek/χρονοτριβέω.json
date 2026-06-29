@@ -1,0 +1,86 @@
+{
+  "lemma": "χρονοτριβέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "χρονοτριβῆσαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 20:16",
+      "form": "χρονοτριβῆσαι",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 20,
+      "verse": 16,
+      "left_context": "τὴν Ἔφεσον, ὅπως μὴ γένηται αὐτῷ",
+      "right_context": "ἐν τῇ Ἀσίᾳ, ἔσπευδεν γὰρ εἰ"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἔφεσος",
+      "display": "Éfeso",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπως",
+      "display": "para·que",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Ἀσία",
+      "display": "Asia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σπεύδω",
+      "display": "apresurarse",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Acts 20:16",
+      "negator": "μὴ",
+      "clause_text": "Παῦλος παραπλεῦσαι τὴν Ἔφεσον, ὅπως μὴ γένηται αὐτῷ χρονοτριβῆσαι ἐν τῇ Ἀσίᾳ, ἔσπευδεν γὰρ εἰ δυνατὸν ⸀εἴη"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 20:16",
+      "reason": "occurs near σπεύδω, Ἀσία, Ἔφεσος"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

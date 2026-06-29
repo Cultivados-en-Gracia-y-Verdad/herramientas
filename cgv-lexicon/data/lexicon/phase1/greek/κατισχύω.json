@@ -1,0 +1,168 @@
+{
+  "lemma": "κατισχύω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "⸀κατισχύσητε",
+      "count": 1
+    },
+    {
+      "form": "κατίσχυον",
+      "count": 1
+    },
+    {
+      "form": "κατισχύσουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "subjunctive": 1,
+      "indicative": 2
+    },
+    "tenses": {
+      "aorist": 1,
+      "imperfect": 1,
+      "future": 1
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Luke 21:36",
+      "form": "⸀κατισχύσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Luke",
+      "chapter": 21,
+      "verse": 36,
+      "left_context": "⸀δὲ ἐν παντὶ καιρῷ δεόμενοι ἵνα",
+      "right_context": "ἐκφυγεῖν ⸀ταῦτα πάντα τὰ μέλλοντα γίνεσθαι,"
+    },
+    {
+      "ref": "Luke 23:23",
+      "form": "κατίσχυον",
+      "morph": "V-I-A-I-3P",
+      "book": "Luke",
+      "chapter": 23,
+      "verse": 23,
+      "left_context": "φωναῖς μεγάλαις αἰτούμενοι αὐτὸν σταυρωθῆναι, καὶ",
+      "right_context": "αἱ φωναὶ ⸀αὐτῶν."
+    },
+    {
+      "ref": "Matthew 16:18",
+      "form": "κατισχύσουσιν",
+      "morph": "V-F-A-I-3P",
+      "book": "Matthew",
+      "chapter": 16,
+      "verse": 18,
+      "left_context": "τὴν ἐκκλησίαν, καὶ πύλαι ᾅδου οὐ",
+      "right_context": "αὐτῆς·"
+    }
+  ],
+  "books": {
+    "Luke": 2,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "καιρός",
+      "display": "tiempo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δέομαι",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκφεύγω",
+      "display": "escapar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grandes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἰτέω",
+      "display": "pediendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σταυρόω",
+      "display": "crucificar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φωνή",
+      "display": "voces",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πύλη",
+      "display": "portónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ᾅδης",
+      "display": "de·hades",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Matthew 16:18",
+      "negator": "οὐ",
+      "clause_text": "οἰκοδομήσω μου τὴν ἐκκλησίαν, καὶ πύλαι ᾅδου οὐ κατισχύσουσιν αὐτῆς·"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 21:36",
+      "reason": "occurs near δέομαι, καιρός, μέλλω"
+    },
+    {
+      "ref": "Luke 23:23",
+      "reason": "occurs near μέγας"
+    },
+    {
+      "ref": "Matthew 16:18",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

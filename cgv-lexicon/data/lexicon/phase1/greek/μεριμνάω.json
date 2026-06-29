@@ -1,0 +1,542 @@
+{
+  "lemma": "μεριμνάω",
+  "language": "greek",
+  "total_occurrences": 19,
+  "forms": [
+    {
+      "form": "μεριμνᾷ",
+      "count": 4
+    },
+    {
+      "form": "μεριμνήσητε",
+      "count": 3
+    },
+    {
+      "form": "μεριμνᾶτε",
+      "count": 2
+    },
+    {
+      "form": "μεριμνῶν",
+      "count": 2
+    },
+    {
+      "form": "μεριμνᾶτε;",
+      "count": 2
+    },
+    {
+      "form": "μεριμνῶσι",
+      "count": 1
+    },
+    {
+      "form": "μεριμνήσει,",
+      "count": 1
+    },
+    {
+      "form": "μεριμνᾶτε,",
+      "count": 1
+    },
+    {
+      "form": "μεριμνᾷς",
+      "count": 1
+    },
+    {
+      "form": "⸀μεριμνήσητε",
+      "count": 1
+    },
+    {
+      "form": "μεριμνήσει",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 9,
+      "subjunctive": 5,
+      "imperative": 3,
+      "participle": 2
+    },
+    "tenses": {
+      "present": 13,
+      "future": 2,
+      "aorist": 4
+    },
+    "voices": {
+      "active": 19
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Corinthians 7:32",
+      "form": "μεριμνᾷ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 32,
+      "left_context": "δὲ ὑμᾶς ἀμερίμνους εἶναι. ὁ ἄγαμος",
+      "right_context": "τὰ τοῦ κυρίου, πῶς ⸀ἀρέσῃ τῷ"
+    },
+    {
+      "ref": "1 Corinthians 7:33",
+      "form": "μεριμνᾷ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 33,
+      "left_context": "ὁ δὲ γαμήσας",
+      "right_context": "τὰ τοῦ κόσμου, πῶς ⸀ἀρέσῃ τῇ"
+    },
+    {
+      "ref": "1 Corinthians 7:34",
+      "form": "μεριμνᾷ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 34,
+      "left_context": "γυνὴ ⸂ἡ ἄγαμος⸃ καὶ ἡ ⸀παρθένος",
+      "right_context": "τὰ τοῦ κυρίου, ἵνα ᾖ ἁγία"
+    },
+    {
+      "ref": "1 Corinthians 7:34",
+      "form": "μεριμνᾷ",
+      "morph": "V-P-A-I-3S",
+      "book": "1 Corinthians",
+      "chapter": 7,
+      "verse": 34,
+      "left_context": "καὶ ⸁τῷ πνεύματι· ἡ δὲ γαμήσασα",
+      "right_context": "τὰ τοῦ κόσμου, πῶς ⸀ἀρέσῃ τῷ"
+    },
+    {
+      "ref": "1 Corinthians 12:25",
+      "form": "μεριμνῶσι",
+      "morph": "V-P-A-S-3P",
+      "book": "1 Corinthians",
+      "chapter": 12,
+      "verse": 25,
+      "left_context": "σώματι, ἀλλὰ τὸ αὐτὸ ὑπὲρ ἀλλήλων",
+      "right_context": "τὰ μέλη."
+    },
+    {
+      "ref": "Philippians 2:20",
+      "form": "μεριμνήσει,",
+      "morph": "V-F-A-I-3S",
+      "book": "Philippians",
+      "chapter": 2,
+      "verse": 20,
+      "left_context": "ἰσόψυχον ὅστις γνησίως τὰ περὶ ὑμῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Philippians 4:6",
+      "form": "μεριμνᾶτε,",
+      "morph": "V-P-A-D-2P",
+      "book": "Philippians",
+      "chapter": 4,
+      "verse": 6,
+      "left_context": "μηδὲν",
+      "right_context": "ἀλλ’ ἐν παντὶ τῇ προσευχῇ καὶ"
+    },
+    {
+      "ref": "Luke 10:41",
+      "form": "μεριμνᾷς",
+      "morph": "V-P-A-I-2S",
+      "book": "Luke",
+      "chapter": 10,
+      "verse": 41,
+      "left_context": "εἶπεν αὐτῇ ὁ ⸀κύριος· Μάρθα Μάρθα,",
+      "right_context": "καὶ ⸀θορυβάζῃ περὶ πολλά,"
+    },
+    {
+      "ref": "Luke 12:11",
+      "form": "⸀μεριμνήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "τὰς ἀρχὰς καὶ τὰς ἐξουσίας, μὴ",
+      "right_context": "πῶς ⸂ἢ τί⸃ ἀπολογήσησθε ἢ τί"
+    },
+    {
+      "ref": "Luke 12:22",
+      "form": "μεριμνᾶτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 22,
+      "left_context": "αὐτοῦ· Διὰ τοῦτο ⸂λέγω ὑμῖν⸃, μὴ",
+      "right_context": "τῇ ⸀ψυχῇ τί φάγητε, μηδὲ τῷ"
+    },
+    {
+      "ref": "Luke 12:25",
+      "form": "μεριμνῶν",
+      "morph": "V-P-A-P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 25,
+      "left_context": "τίς δὲ ἐξ ὑμῶν",
+      "right_context": "δύναται ⸂ἐπὶ τὴν ἡλικίαν αὐτοῦ προσθεῖναι⸃"
+    },
+    {
+      "ref": "Luke 12:26",
+      "form": "μεριμνᾶτε;",
+      "morph": "V-P-A-I-2P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 26,
+      "left_context": "ἐλάχιστον δύνασθε, τί περὶ τῶν λοιπῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Matthew 6:25",
+      "form": "μεριμνᾶτε",
+      "morph": "V-P-A-D-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 25,
+      "left_context": "Διὰ τοῦτο λέγω ὑμῖν· μὴ",
+      "right_context": "τῇ ψυχῇ ὑμῶν τί ⸀φάγητε, μηδὲ"
+    },
+    {
+      "ref": "Matthew 6:27",
+      "form": "μεριμνῶν",
+      "morph": "V-P-A-P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 27,
+      "left_context": "τίς δὲ ἐξ ὑμῶν",
+      "right_context": "δύναται προσθεῖναι ἐπὶ τὴν ἡλικίαν αὐτοῦ"
+    },
+    {
+      "ref": "Matthew 6:28",
+      "form": "μεριμνᾶτε;",
+      "morph": "V-P-A-I-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 28,
+      "left_context": "καὶ περὶ ἐνδύματος τί",
+      "right_context": "καταμάθετε τὰ κρίνα τοῦ ἀγροῦ πῶς"
+    },
+    {
+      "ref": "Matthew 6:31",
+      "form": "μεριμνήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 31,
+      "left_context": "μὴ οὖν",
+      "right_context": "λέγοντες· Τί φάγωμεν; ἤ· Τί πίωμεν;"
+    },
+    {
+      "ref": "Matthew 6:34",
+      "form": "μεριμνήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 34,
+      "left_context": "μὴ οὖν",
+      "right_context": "εἰς τὴν αὔριον, ἡ γὰρ αὔριον"
+    },
+    {
+      "ref": "Matthew 6:34",
+      "form": "μεριμνήσει",
+      "morph": "V-F-A-I-3S",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 34,
+      "left_context": "εἰς τὴν αὔριον, ἡ γὰρ αὔριον",
+      "right_context": "⸀αὑτῆς· ἀρκετὸν τῇ ἡμέρᾳ ἡ κακία"
+    },
+    {
+      "ref": "Matthew 10:19",
+      "form": "μεριμνήσητε",
+      "morph": "V-A-A-S-2P",
+      "book": "Matthew",
+      "chapter": 10,
+      "verse": 19,
+      "left_context": "ὅταν δὲ ⸀παραδῶσιν ὑμᾶς, μὴ",
+      "right_context": "πῶς ἢ τί λαλήσητε· δοθήσεται γὰρ"
+    }
+  ],
+  "books": {
+    "Matthew": 7,
+    "1 Corinthians": 5,
+    "Luke": 5,
+    "Philippians": 2
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πῶς",
+      "display": "cómo",
+      "count": 5,
+      "window": 5
+    },
+    {
+      "lemma": "ἤ",
+      "display": "o",
+      "count": 4,
+      "window": 5
+    },
+    {
+      "lemma": "κύριος",
+      "display": "de·Señor",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρέσκω",
+      "display": "agrade",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἐσθίω",
+      "display": "comáis",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμαι",
+      "display": "puede",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "αὔριον",
+      "display": "mañana",
+      "count": 3,
+      "window": 5
+    },
+    {
+      "lemma": "ἄγαμος",
+      "display": "soltero",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γαμέω",
+      "display": "casarse",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "de·mundo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Μάρθα",
+      "display": "Marta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ψυχή",
+      "display": "alma",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἡλικία",
+      "display": "estatura",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀμέριμνος",
+      "display": "sin·preocupación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρθένος",
+      "display": "virgen",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πνεῦμα",
+      "display": "espíritu",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑπέρ",
+      "display": "por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀλλήλων",
+      "display": "unos·a·otros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλος",
+      "display": "miembros",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅστις",
+      "display": "el·cual",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γνησίως",
+      "display": "sinceramente",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "προσευχή",
+      "display": "oración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θορυβάζω",
+      "display": "es alborotado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πολύς",
+      "display": "muchos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρχή",
+      "display": "principios",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Philippians 4:6",
+      "form": "μεριμνᾶτε,",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "μηδὲν μεριμνᾶτε, ἀλλ’ ἐν παντὶ τῇ προσευχῇ καὶ τῇ δεήσει"
+    },
+    {
+      "ref": "Luke 12:11",
+      "form": "⸀μεριμνήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "συναγωγὰς καὶ τὰς ἀρχὰς καὶ τὰς ἐξουσίας, μὴ ⸀μεριμνήσητε πῶς ⸂ἢ τί⸃ ἀπολογήσησθε ἢ τί εἴπητε·",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 12:22",
+      "form": "μεριμνᾶτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "τοὺς μαθητὰς αὐτοῦ· Διὰ τοῦτο ⸂λέγω ὑμῖν⸃, μὴ μεριμνᾶτε τῇ ⸀ψυχῇ τί φάγητε, μηδὲ τῷ ⸀σώματι τί",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 6:25",
+      "form": "μεριμνᾶτε",
+      "morph": "V-P-A-D-2P",
+      "clause_text": "Διὰ τοῦτο λέγω ὑμῖν· μὴ μεριμνᾶτε τῇ ψυχῇ ὑμῶν τί ⸀φάγητε, μηδὲ τῷ σώματι",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 6:31",
+      "form": "μεριμνήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "μὴ οὖν μεριμνήσητε λέγοντες· Τί φάγωμεν; ἤ· Τί πίωμεν; ἤ· Τί",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 6:34",
+      "form": "μεριμνήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "μὴ οὖν μεριμνήσητε εἰς τὴν αὔριον, ἡ γὰρ αὔριον μεριμνήσει ⸀αὑτῆς·",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 10:19",
+      "form": "μεριμνήσητε",
+      "morph": "V-A-A-S-2P",
+      "clause_text": "ὅταν δὲ ⸀παραδῶσιν ὑμᾶς, μὴ μεριμνήσητε πῶς ἢ τί λαλήσητε· δοθήσεται γὰρ ὑμῖν ἐν",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 12:11",
+      "negator": "μὴ",
+      "clause_text": "συναγωγὰς καὶ τὰς ἀρχὰς καὶ τὰς ἐξουσίας, μὴ ⸀μεριμνήσητε πῶς ⸂ἢ τί⸃ ἀπολογήσησθε ἢ τί εἴπητε·"
+    },
+    {
+      "ref": "Luke 12:22",
+      "negator": "μὴ",
+      "clause_text": "τοὺς μαθητὰς αὐτοῦ· Διὰ τοῦτο ⸂λέγω ὑμῖν⸃, μὴ μεριμνᾶτε τῇ ⸀ψυχῇ τί φάγητε, μηδὲ τῷ ⸀σώματι τί"
+    },
+    {
+      "ref": "Matthew 6:25",
+      "negator": "μὴ",
+      "clause_text": "Διὰ τοῦτο λέγω ὑμῖν· μὴ μεριμνᾶτε τῇ ψυχῇ ὑμῶν τί ⸀φάγητε, μηδὲ τῷ σώματι"
+    },
+    {
+      "ref": "Matthew 6:31",
+      "negator": "μὴ",
+      "clause_text": "μὴ οὖν μεριμνήσητε λέγοντες· Τί φάγωμεν; ἤ· Τί πίωμεν; ἤ· Τί"
+    },
+    {
+      "ref": "Matthew 6:34",
+      "negator": "μὴ",
+      "clause_text": "μὴ οὖν μεριμνήσητε εἰς τὴν αὔριον, ἡ γὰρ αὔριον μεριμνήσει ⸀αὑτῆς·"
+    },
+    {
+      "ref": "Matthew 10:19",
+      "negator": "μὴ",
+      "clause_text": "ὅταν δὲ ⸀παραδῶσιν ὑμᾶς, μὴ μεριμνήσητε πῶς ἢ τί λαλήσητε· δοθήσεται γὰρ ὑμῖν ἐν"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Matthew 6:25",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 12:22",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Philippians 4:6",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 10:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 6:27",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 6:28",
+      "reason": "frequent in Matthew"
+    },
+    {
+      "ref": "Matthew 6:31",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Matthew 6:34",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

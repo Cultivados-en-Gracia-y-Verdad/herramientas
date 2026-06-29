@@ -1,0 +1,168 @@
+{
+  "lemma": "περιφέρω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "περιφέροντες,",
+      "count": 1
+    },
+    {
+      "form": "περιφερόμενοι",
+      "count": 1
+    },
+    {
+      "form": "περιφέρειν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 3
+    },
+    "voices": {
+      "active": 2,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Corinthians 4:10",
+      "form": "περιφέροντες,",
+      "morph": "V-P-A-P",
+      "book": "2 Corinthians",
+      "chapter": 4,
+      "verse": 10,
+      "left_context": "νέκρωσιν ⸀τοῦ Ἰησοῦ ἐν τῷ σώματι",
+      "right_context": "ἵνα καὶ ἡ ζωὴ τοῦ Ἰησοῦ"
+    },
+    {
+      "ref": "Ephesians 4:14",
+      "form": "περιφερόμενοι",
+      "morph": "V-P-P-P",
+      "book": "Ephesians",
+      "chapter": 4,
+      "verse": 14,
+      "left_context": "ἵνα μηκέτι ὦμεν νήπιοι, κλυδωνιζόμενοι καὶ",
+      "right_context": "παντὶ ἀνέμῳ τῆς διδασκαλίας ἐν τῇ"
+    },
+    {
+      "ref": "Mark 6:55",
+      "form": "περιφέρειν",
+      "morph": "V-P-A-N",
+      "book": "Mark",
+      "chapter": 6,
+      "verse": 55,
+      "left_context": "ἐπὶ τοῖς κραβάττοις τοὺς κακῶς ἔχοντας",
+      "right_context": "ὅπου ἤκουον ⸀ὅτι ἐστίν."
+    }
+  ],
+  "books": {
+    "2 Corinthians": 1,
+    "Ephesians": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Ἰησοῦς",
+      "display": "de·Jesús",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σῶμα",
+      "display": "cuerpo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζωή",
+      "display": "vida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μηκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νήπιος",
+      "display": "niños",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κλυδωνίζομαι",
+      "display": "ser·llevado·de·un·lado·a·otro",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἄνεμος",
+      "display": "viento",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδασκαλία",
+      "display": "de·doctrina",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κράβαττος",
+      "display": "camillas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κακῶς",
+      "display": "mal",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oír",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Corinthians 4:10",
+      "reason": "occurs near ζωή, σῶμα, Ἰησοῦς"
+    },
+    {
+      "ref": "Ephesians 4:14",
+      "reason": "occurs near μηκέτι, νήπιος"
+    },
+    {
+      "ref": "Mark 6:55",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

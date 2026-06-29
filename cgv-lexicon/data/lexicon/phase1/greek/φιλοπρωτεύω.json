@@ -1,0 +1,80 @@
+{
+  "lemma": "φιλοπρωτεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "φιλοπρωτεύων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "3 John 1:9",
+      "form": "φιλοπρωτεύων",
+      "morph": "V-P-A-P",
+      "book": "3 John",
+      "chapter": 1,
+      "verse": 9,
+      "left_context": "Ἔγραψά ⸀τι τῇ ἐκκλησίᾳ· ἀλλ’ ὁ",
+      "right_context": "αὐτῶν Διοτρέφης οὐκ ἐπιδέχεται ἡμᾶς."
+    }
+  ],
+  "books": {
+    "3 John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐκκλησία",
+      "display": "iglesia",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "Διοτρέφης",
+      "display": "Diótrefes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιδέχομαι",
+      "display": "recibe",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "3 John 1:9",
+      "negator": "οὐκ",
+      "clause_text": "Ἔγραψά ⸀τι τῇ ἐκκλησίᾳ· ἀλλ’ ὁ φιλοπρωτεύων αὐτῶν Διοτρέφης οὐκ ἐπιδέχεται ἡμᾶς."
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "3 John 1:9",
+      "reason": "occurs near Διοτρέφης, ἐκκλησία, ἐπιδέχομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,74 @@
+{
+  "lemma": "ὁδοιπορέω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ὁδοιπορούντων",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 10:9",
+      "form": "ὁδοιπορούντων",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 10,
+      "verse": 9,
+      "left_context": "Τῇ δὲ ἐπαύριον",
+      "right_context": "ἐκείνων καὶ τῇ πόλει ἐγγιζόντων ἀνέβη"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἐπαύριον",
+      "display": "al·día·siguiente,",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πόλις",
+      "display": "ciudad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγίζω",
+      "display": "acercarses",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 10:9",
+      "reason": "occurs near πόλις, ἐγγίζω, ἐπαύριον"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

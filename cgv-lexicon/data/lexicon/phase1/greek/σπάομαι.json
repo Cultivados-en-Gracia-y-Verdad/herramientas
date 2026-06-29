@@ -1,0 +1,137 @@
+{
+  "lemma": "σπάομαι",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "σπασάμενος",
+      "count": 2
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "middle": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:27",
+      "form": "σπασάμενος",
+      "morph": "V-A-M-P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 27,
+      "left_context": "ἰδὼν ἀνεῳγμένας τὰς θύρας τῆς φυλακῆς",
+      "right_context": "⸀τὴν μάχαιραν ἤμελλεν ἑαυτὸν ἀναιρεῖν, νομίζων"
+    },
+    {
+      "ref": "Mark 14:47",
+      "form": "σπασάμενος",
+      "morph": "V-A-M-P",
+      "book": "Mark",
+      "chapter": 14,
+      "verse": 47,
+      "left_context": "εἷς δέ ⸀τις τῶν παρεστηκότων",
+      "right_context": "τὴν μάχαιραν ἔπαισεν τὸν δοῦλον τοῦ"
+    }
+  ],
+  "books": {
+    "Acts": 1,
+    "Mark": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "μάχαιρα",
+      "display": "espada",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνοίγω",
+      "display": "abiertas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θύρα",
+      "display": "puertas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλακή",
+      "display": "de·cárcel",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέλλω",
+      "display": "estar·por",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναιρέω",
+      "display": "matar",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εἷς",
+      "display": "uno",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρίστημι",
+      "display": "presentados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παίω",
+      "display": "golpeó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δοῦλος",
+      "display": "siervo",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 16:27",
+      "reason": "occurs near θύρα, μάχαιρα, μέλλω"
+    },
+    {
+      "ref": "Mark 14:47",
+      "reason": "occurs near μάχαιρα"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

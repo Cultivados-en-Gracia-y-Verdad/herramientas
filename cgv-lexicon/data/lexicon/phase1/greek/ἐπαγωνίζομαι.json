@@ -1,0 +1,92 @@
+{
+  "lemma": "ἐπαγωνίζομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐπαγωνίζεσθαι",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Jude 1:3",
+      "form": "ἐπαγωνίζεσθαι",
+      "morph": "V-P-M-N",
+      "book": "Jude",
+      "chapter": 1,
+      "verse": 3,
+      "left_context": "σωτηρίας ἀνάγκην ἔσχον γράψαι ὑμῖν παρακαλῶν",
+      "right_context": "τῇ ἅπαξ παραδοθείσῃ τοῖς ἁγίοις πίστει."
+    }
+  ],
+  "books": {
+    "Jude": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνάγκη",
+      "display": "necesidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γράφω",
+      "display": "escribir",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παρακαλέω",
+      "display": "rogando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅπαξ",
+      "display": "una·vez",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραδίδωμι",
+      "display": "entregada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἅγιος",
+      "display": "santos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Jude 1:3",
+      "reason": "occurs near γράφω, παραδίδωμι, παρακαλέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,98 @@
+{
+  "lemma": "καθοράω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "καθορᾶται,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 1:20",
+      "form": "καθορᾶται,",
+      "morph": "V-P-P-I-3S",
+      "book": "Romans",
+      "chapter": 1,
+      "verse": 20,
+      "left_context": "ἀπὸ κτίσεως κόσμου τοῖς ποιήμασιν νοούμενα",
+      "right_context": "ἥ τε ἀΐδιος αὐτοῦ δύναμις καὶ"
+    }
+  ],
+  "books": {
+    "Romans": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κτίσις",
+      "display": "de·creación",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "de·mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποίημα",
+      "display": "obras",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "νοέω",
+      "display": "entendidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τέ",
+      "display": "TE",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀΐδιος",
+      "display": "eterna",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δύναμις",
+      "display": "poder",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 1:20",
+      "reason": "occurs near κτίσις, κόσμος, νοέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

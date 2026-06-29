@@ -1,0 +1,74 @@
+{
+  "lemma": "μασάομαι",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "ἐμασῶντο",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1
+    },
+    "tenses": {
+      "imperfect": 1
+    },
+    "voices": {
+      "middle": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Revelation 16:10",
+      "form": "ἐμασῶντο",
+      "morph": "V-I-M-I-3P",
+      "book": "Revelation",
+      "chapter": 16,
+      "verse": 10,
+      "left_context": "ἐγένετο ἡ βασιλεία αὐτοῦ ἐσκοτωμένη, καὶ",
+      "right_context": "τὰς γλώσσας αὐτῶν ἐκ τοῦ πόνου,"
+    }
+  ],
+  "books": {
+    "Revelation": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "βασιλεία",
+      "display": "reino",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σκοτόομαι",
+      "display": "oscurecerse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "γλῶσσα",
+      "display": "lenguas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Revelation 16:10",
+      "reason": "occurs near βασιλεία, γλῶσσα, σκοτόομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

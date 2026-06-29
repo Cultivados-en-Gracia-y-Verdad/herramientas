@@ -1,0 +1,179 @@
+{
+  "lemma": "ἐπάγω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐπάγοντες",
+      "count": 1
+    },
+    {
+      "form": "ἐπάξας,",
+      "count": 1
+    },
+    {
+      "form": "ἐπαγαγεῖν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2,
+      "infinitive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 2
+    },
+    "voices": {
+      "active": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "2 Peter 2:1",
+      "form": "ἐπάγοντες",
+      "morph": "V-P-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 1,
+      "left_context": "καὶ τὸν ἀγοράσαντα αὐτοὺς δεσπότην ἀρνούμενοι,",
+      "right_context": "ἑαυτοῖς ταχινὴν ἀπώλειαν·"
+    },
+    {
+      "ref": "2 Peter 2:5",
+      "form": "ἐπάξας,",
+      "morph": "V-A-A-P",
+      "book": "2 Peter",
+      "chapter": 2,
+      "verse": 5,
+      "left_context": "δικαιοσύνης κήρυκα ἐφύλαξεν, κατακλυσμὸν κόσμῳ ἀσεβῶν",
+      "right_context": ""
+    },
+    {
+      "ref": "Acts 5:28",
+      "form": "ἐπαγαγεῖν",
+      "morph": "V-A-A-N",
+      "book": "Acts",
+      "chapter": 5,
+      "verse": 28,
+      "left_context": "Ἰερουσαλὴμ τῆς διδαχῆς ὑμῶν, καὶ βούλεσθε",
+      "right_context": "ἐφ’ ἡμᾶς τὸ αἷμα τοῦ ἀνθρώπου"
+    }
+  ],
+  "books": {
+    "2 Peter": 2,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀγοράζω",
+      "display": "comprado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δεσπότης",
+      "display": "Señor",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀρνέομαι",
+      "display": "negando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἑαυτοῦ",
+      "display": "de·sí·mismo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ταχινός",
+      "display": "pronta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπώλεια",
+      "display": "perdición",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κῆρυξ",
+      "display": "predicador",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "φυλάσσω",
+      "display": "guardó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κατακλυσμός",
+      "display": "diluvio",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀσεβής",
+      "display": "de·impíos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διδαχή",
+      "display": "de·enseñanza",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queréis",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "2 Peter 2:1",
+      "reason": "occurs near δεσπότης, ταχινός, ἀγοράζω"
+    },
+    {
+      "ref": "2 Peter 2:5",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Acts 5:28",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

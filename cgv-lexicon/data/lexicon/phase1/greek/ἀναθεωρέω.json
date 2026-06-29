@@ -1,0 +1,123 @@
+{
+  "lemma": "ἀναθεωρέω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "ἀναθεωροῦντες",
+      "count": 1
+    },
+    {
+      "form": "ἀναθεωρῶν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 2
+    },
+    "tenses": {
+      "present": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 13:7",
+      "form": "ἀναθεωροῦντες",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 7,
+      "left_context": "ὑμῖν τὸν λόγον τοῦ θεοῦ, ὧν",
+      "right_context": "τὴν ἔκβασιν τῆς ἀναστροφῆς μιμεῖσθε τὴν"
+    },
+    {
+      "ref": "Acts 17:23",
+      "form": "ἀναθεωρῶν",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 23,
+      "left_context": "διερχόμενος γὰρ καὶ",
+      "right_context": "τὰ σεβάσματα ὑμῶν εὗρον καὶ βωμὸν"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λόγος",
+      "display": "palabra",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θεός",
+      "display": "de·Dios",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔκβασις",
+      "display": "salida",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναστροφή",
+      "display": "de·conducta",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μιμέομαι",
+      "display": "imitad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "διέρχομαι",
+      "display": "pasando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "σέβασμα",
+      "display": "objeto·de·adoración",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallé",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 17:23",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 13:7",
+      "reason": "occurs near θεός, λόγος, μιμέομαι"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

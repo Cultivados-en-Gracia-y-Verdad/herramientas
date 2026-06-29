@@ -1,0 +1,335 @@
+{
+  "lemma": "ἕλκω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "εἵλκυσεν",
+      "count": 2
+    },
+    {
+      "form": "εἵλκυσαν",
+      "count": 1
+    },
+    {
+      "form": "εἷλκον",
+      "count": 1
+    },
+    {
+      "form": "ἑλκύσῃ",
+      "count": 1
+    },
+    {
+      "form": "ἑλκύσω",
+      "count": 1
+    },
+    {
+      "form": "ἑλκύσαι",
+      "count": 1
+    },
+    {
+      "form": "ἕλκουσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 6,
+      "subjunctive": 1,
+      "infinitive": 1
+    },
+    "tenses": {
+      "aorist": 5,
+      "imperfect": 1,
+      "future": 1,
+      "present": 1
+    },
+    "voices": {
+      "active": 8
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 16:19",
+      "form": "εἵλκυσαν",
+      "morph": "V-A-A-I-3P",
+      "book": "Acts",
+      "chapter": 16,
+      "verse": 19,
+      "left_context": "ἐπιλαβόμενοι τὸν Παῦλον καὶ τὸν Σιλᾶν",
+      "right_context": "εἰς τὴν ἀγορὰν ἐπὶ τοὺς ἄρχοντας,"
+    },
+    {
+      "ref": "Acts 21:30",
+      "form": "εἷλκον",
+      "morph": "V-I-A-I-3P",
+      "book": "Acts",
+      "chapter": 21,
+      "verse": 30,
+      "left_context": "τοῦ λαοῦ, καὶ ἐπιλαβόμενοι τοῦ Παύλου",
+      "right_context": "αὐτὸν ἔξω τοῦ ἱεροῦ, καὶ εὐθέως"
+    },
+    {
+      "ref": "John 6:44",
+      "form": "ἑλκύσῃ",
+      "morph": "V-A-A-S-3S",
+      "book": "John",
+      "chapter": 6,
+      "verse": 44,
+      "left_context": "μὴ ὁ πατὴρ ὁ πέμψας με",
+      "right_context": "αὐτόν, κἀγὼ ἀναστήσω αὐτὸν ἐν τῇ"
+    },
+    {
+      "ref": "John 12:32",
+      "form": "ἑλκύσω",
+      "morph": "V-F-A-I-1S",
+      "book": "John",
+      "chapter": 12,
+      "verse": 32,
+      "left_context": "⸀ἐὰν ὑψωθῶ ἐκ τῆς γῆς, πάντας",
+      "right_context": "πρὸς ἐμαυτόν."
+    },
+    {
+      "ref": "John 18:10",
+      "form": "εἵλκυσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 18,
+      "verse": 10,
+      "left_context": "Σίμων οὖν Πέτρος ἔχων μάχαιραν",
+      "right_context": "αὐτὴν καὶ ἔπαισεν τὸν τοῦ ἀρχιερέως"
+    },
+    {
+      "ref": "John 21:6",
+      "form": "ἑλκύσαι",
+      "morph": "V-A-A-N",
+      "book": "John",
+      "chapter": 21,
+      "verse": 6,
+      "left_context": "εὑρήσετε. ἔβαλον οὖν, καὶ οὐκέτι αὐτὸ",
+      "right_context": "⸀ἴσχυον ἀπὸ τοῦ πλήθους τῶν ἰχθύων."
+    },
+    {
+      "ref": "John 21:11",
+      "form": "εἵλκυσεν",
+      "morph": "V-A-A-I-3S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 11,
+      "left_context": "ἀνέβη ⸀οὖν Σίμων Πέτρος καὶ",
+      "right_context": "τὸ δίκτυον ⸂εἰς τὴν γῆν⸃ μεστὸν"
+    },
+    {
+      "ref": "James 2:6",
+      "form": "ἕλκουσιν",
+      "morph": "V-P-A-I-3P",
+      "book": "James",
+      "chapter": 2,
+      "verse": 6,
+      "left_context": "οἱ πλούσιοι καταδυναστεύουσιν ὑμῶν, καὶ αὐτοὶ",
+      "right_context": "ὑμᾶς εἰς κριτήρια;"
+    }
+  ],
+  "books": {
+    "John": 5,
+    "Acts": 2,
+    "James": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "Παῦλος",
+      "display": "Pablo",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "γῆ",
+      "display": "de·tierra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Σίμων",
+      "display": "Simón",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Πέτρος",
+      "display": "Pedro",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "Σίλας",
+      "display": "Silas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγορά",
+      "display": "mercado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "λαός",
+      "display": "de·pueblo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐπιλαμβάνομαι",
+      "display": "asidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἔξω",
+      "display": "fuera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἱερός",
+      "display": "de·sagrado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πατήρ",
+      "display": "padre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πέμπω",
+      "display": "enviado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "κἀγώ",
+      "display": "y·yo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀνίστημι",
+      "display": "levantaré",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὑψόω",
+      "display": "exalte",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐμαυτοῦ",
+      "display": "me",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μάχαιρα",
+      "display": "espada",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παίω",
+      "display": "golpeó",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βάλλω",
+      "display": "arrojaron",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "οὐκέτι",
+      "display": "ya·no",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἰσχύω",
+      "display": "podían",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλῆθος",
+      "display": "de·multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subió",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "δίκτυον",
+      "display": "red",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πλούσιος",
+      "display": "ricos",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "John 12:32",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 18:10",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 21:11",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 21:6",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "John 6:44",
+      "reason": "frequent in John"
+    },
+    {
+      "ref": "Acts 16:19",
+      "reason": "occurs near Παῦλος, Σίλας"
+    },
+    {
+      "ref": "Acts 21:30",
+      "reason": "occurs near Παῦλος"
+    },
+    {
+      "ref": "James 2:6",
+      "reason": "typical occurrence"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,137 @@
+{
+  "lemma": "γηράσκω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "γηράσκον",
+      "count": 1
+    },
+    {
+      "form": "γηράσῃς,",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1,
+      "subjunctive": 1
+    },
+    "tenses": {
+      "present": 1,
+      "aorist": 1
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Hebrews 8:13",
+      "form": "γηράσκον",
+      "morph": "V-P-A-P",
+      "book": "Hebrews",
+      "chapter": 8,
+      "verse": 13,
+      "left_context": "τὴν πρώτην, τὸ δὲ παλαιούμενον καὶ",
+      "right_context": "ἐγγὺς ἀφανισμοῦ."
+    },
+    {
+      "ref": "John 21:18",
+      "form": "γηράσῃς,",
+      "morph": "V-A-A-S-2S",
+      "book": "John",
+      "chapter": 21,
+      "verse": 18,
+      "left_context": "καὶ περιεπάτεις ὅπου ἤθελες· ὅταν δὲ",
+      "right_context": "ἐκτενεῖς τὰς χεῖράς σου, καὶ ἄλλος"
+    }
+  ],
+  "books": {
+    "Hebrews": 1,
+    "John": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πρῶτος",
+      "display": "primera",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παλαιόω",
+      "display": "envejecido",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγγύς",
+      "display": "cerca",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀφανισμός",
+      "display": "de·destrucción",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "περιπατέω",
+      "display": "andabas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅπου",
+      "display": "donde",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "θέλω",
+      "display": "querías",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐκτείνω",
+      "display": "extenderás",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "χείρ",
+      "display": "manas",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Hebrews 8:13",
+      "reason": "occurs near παλαιόω, πρῶτος, ἀφανισμός"
+    },
+    {
+      "ref": "John 21:18",
+      "reason": "occurs near περιπατέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

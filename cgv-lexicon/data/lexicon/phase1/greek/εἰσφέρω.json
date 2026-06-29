@@ -1,0 +1,344 @@
+{
+  "lemma": "εἰσφέρω",
+  "language": "greek",
+  "total_occurrences": 8,
+  "forms": [
+    {
+      "form": "εἰσενέγκῃς",
+      "count": 2
+    },
+    {
+      "form": "εἰσηνέγκαμεν",
+      "count": 1
+    },
+    {
+      "form": "εἰσφέρεται",
+      "count": 1
+    },
+    {
+      "form": "εἰσφέρεις",
+      "count": 1
+    },
+    {
+      "form": "εἰσενεγκεῖν",
+      "count": 1
+    },
+    {
+      "form": "εἰσενέγκωσιν",
+      "count": 1
+    },
+    {
+      "form": "⸀εἰσφέρωσιν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3,
+      "infinitive": 1,
+      "subjunctive": 4
+    },
+    "tenses": {
+      "aorist": 5,
+      "present": 3
+    },
+    "voices": {
+      "active": 7,
+      "passive": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "1 Timothy 6:7",
+      "form": "εἰσηνέγκαμεν",
+      "morph": "V-A-A-I-1P",
+      "book": "1 Timothy",
+      "chapter": 6,
+      "verse": 7,
+      "left_context": "οὐδὲν γὰρ",
+      "right_context": "εἰς τὸν κόσμον, ⸀ὅτι οὐδὲ ἐξενεγκεῖν"
+    },
+    {
+      "ref": "Hebrews 13:11",
+      "form": "εἰσφέρεται",
+      "morph": "V-P-P-I-3S",
+      "book": "Hebrews",
+      "chapter": 13,
+      "verse": 11,
+      "left_context": "ὧν γὰρ",
+      "right_context": "ζῴων τὸ αἷμα περὶ ἁμαρτίας εἰς"
+    },
+    {
+      "ref": "Acts 17:20",
+      "form": "εἰσφέρεις",
+      "morph": "V-P-A-I-2S",
+      "book": "Acts",
+      "chapter": 17,
+      "verse": 20,
+      "left_context": "ξενίζοντα γάρ τινα",
+      "right_context": "εἰς τὰς ἀκοὰς ἡμῶν· βουλόμεθα οὖν"
+    },
+    {
+      "ref": "Luke 5:18",
+      "form": "εἰσενεγκεῖν",
+      "morph": "V-A-A-N",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 18,
+      "left_context": "ὃς ἦν παραλελυμένος, καὶ ἐζήτουν αὐτὸν",
+      "right_context": "καὶ ⸀θεῖναι ἐνώπιον αὐτοῦ."
+    },
+    {
+      "ref": "Luke 5:19",
+      "form": "εἰσενέγκωσιν",
+      "morph": "V-A-A-S-3P",
+      "book": "Luke",
+      "chapter": 5,
+      "verse": 19,
+      "left_context": "καὶ μὴ εὑρόντες ποίας",
+      "right_context": "αὐτὸν διὰ τὸν ὄχλον ἀναβάντες ἐπὶ"
+    },
+    {
+      "ref": "Luke 11:4",
+      "form": "εἰσενέγκῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "Luke",
+      "chapter": 11,
+      "verse": 4,
+      "left_context": "ἀφίομεν παντὶ ὀφείλοντι ἡμῖν· καὶ μὴ",
+      "right_context": "ἡμᾶς εἰς ⸀πειρασμόν."
+    },
+    {
+      "ref": "Luke 12:11",
+      "form": "⸀εἰσφέρωσιν",
+      "morph": "V-P-A-S-3P",
+      "book": "Luke",
+      "chapter": 12,
+      "verse": 11,
+      "left_context": "ὅταν δὲ",
+      "right_context": "ὑμᾶς ἐπὶ τὰς συναγωγὰς καὶ τὰς"
+    },
+    {
+      "ref": "Matthew 6:13",
+      "form": "εἰσενέγκῃς",
+      "morph": "V-A-A-S-2S",
+      "book": "Matthew",
+      "chapter": 6,
+      "verse": 13,
+      "left_context": "καὶ μὴ",
+      "right_context": "ἡμᾶς εἰς πειρασμόν, ἀλλὰ ῥῦσαι ἡμᾶς"
+    }
+  ],
+  "books": {
+    "Luke": 4,
+    "1 Timothy": 1,
+    "Hebrews": 1,
+    "Acts": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "πειρασμός",
+      "display": "tentación",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "κόσμος",
+      "display": "mundo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζῷον",
+      "display": "de·animales",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "αἷμα",
+      "display": "sangre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἁμαρτία",
+      "display": "de·pecado",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ξενίζω",
+      "display": "hospedando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκοή",
+      "display": "oíres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "βούλομαι",
+      "display": "queremos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "παραλύομαι",
+      "display": "paralizarse",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ζητέω",
+      "display": "buscaban",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "τίθημι",
+      "display": "poner",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνώπιον",
+      "display": "delante",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "εὑρίσκω",
+      "display": "hallados",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ποῖος",
+      "display": "cuál",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὄχλος",
+      "display": "multitud",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀναβαίνω",
+      "display": "subidos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὀφείλω",
+      "display": "debiendo",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ὅταν",
+      "display": "cuando",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "συναγωγή",
+      "display": "sinagogas",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ῥύομαι",
+      "display": "libra",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [
+    {
+      "ref": "Luke 5:19",
+      "form": "εἰσενέγκωσιν",
+      "morph": "V-A-A-S-3P",
+      "clause_text": "καὶ μὴ εὑρόντες ποίας εἰσενέγκωσιν αὐτὸν διὰ τὸν ὄχλον ἀναβάντες ἐπὶ τὸ δῶμα",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Luke 11:4",
+      "form": "εἰσενέγκῃς",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "γὰρ αὐτοὶ ἀφίομεν παντὶ ὀφείλοντι ἡμῖν· καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς ⸀πειρασμόν.",
+      "kind": "prohibition"
+    },
+    {
+      "ref": "Matthew 6:13",
+      "form": "εἰσενέγκῃς",
+      "morph": "V-A-A-S-2S",
+      "clause_text": "καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς πειρασμόν, ἀλλὰ ῥῦσαι ἡμᾶς ἀπὸ τοῦ",
+      "kind": "prohibition"
+    }
+  ],
+  "questions": [],
+  "negated_uses": [
+    {
+      "ref": "Luke 5:19",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ εὑρόντες ποίας εἰσενέγκωσιν αὐτὸν διὰ τὸν ὄχλον ἀναβάντες ἐπὶ τὸ δῶμα"
+    },
+    {
+      "ref": "Luke 11:4",
+      "negator": "μὴ",
+      "clause_text": "γὰρ αὐτοὶ ἀφίομεν παντὶ ὀφείλοντι ἡμῖν· καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς ⸀πειρασμόν."
+    },
+    {
+      "ref": "Matthew 6:13",
+      "negator": "μὴ",
+      "clause_text": "καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς πειρασμόν, ἀλλὰ ῥῦσαι ἡμᾶς ἀπὸ τοῦ"
+    }
+  ],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Luke 11:4",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "Luke 12:11",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 5:18",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Luke 5:19",
+      "reason": "imperative or prohibition use"
+    },
+    {
+      "ref": "1 Timothy 6:7",
+      "reason": "occurs near κόσμος"
+    },
+    {
+      "ref": "Acts 17:20",
+      "reason": "typical occurrence"
+    },
+    {
+      "ref": "Hebrews 13:11",
+      "reason": "occurs near αἷμα, ζῷον, ἁμαρτία"
+    },
+    {
+      "ref": "Matthew 6:13",
+      "reason": "imperative or prohibition use"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

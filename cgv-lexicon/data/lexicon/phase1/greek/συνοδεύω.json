@@ -1,0 +1,86 @@
+{
+  "lemma": "συνοδεύω",
+  "language": "greek",
+  "total_occurrences": 1,
+  "forms": [
+    {
+      "form": "συνοδεύοντες",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "participle": 1
+    },
+    "tenses": {
+      "present": 1
+    },
+    "voices": {
+      "active": 1
+    }
+  },
+  "references": [
+    {
+      "ref": "Acts 9:7",
+      "form": "συνοδεύοντες",
+      "morph": "V-P-A-P",
+      "book": "Acts",
+      "chapter": 9,
+      "verse": 7,
+      "left_context": "οἱ δὲ ἄνδρες οἱ",
+      "right_context": "αὐτῷ εἱστήκεισαν ἐνεοί, ἀκούοντες μὲν τῆς"
+    }
+  ],
+  "books": {
+    "Acts": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "ἀνήρ",
+      "display": "varónes",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "habían puesto",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἐνέος",
+      "display": "mudos",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀκούω",
+      "display": "oíres",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "μέν",
+      "display": "a·la·verdad",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Acts 9:7",
+      "reason": "occurs near μέν, ἀκούω, ἀνήρ"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,106 @@
+{
+  "lemma": "προσκυλίω",
+  "language": "greek",
+  "total_occurrences": 2,
+  "forms": [
+    {
+      "form": "προσεκύλισεν",
+      "count": 1
+    },
+    {
+      "form": "προσκυλίσας",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 1,
+      "participle": 1
+    },
+    "tenses": {
+      "aorist": 2
+    },
+    "voices": {
+      "active": 2
+    }
+  },
+  "references": [
+    {
+      "ref": "Mark 15:46",
+      "form": "προσεκύλισεν",
+      "morph": "V-A-A-I-3S",
+      "book": "Mark",
+      "chapter": 15,
+      "verse": 46,
+      "left_context": "ὃ ἦν λελατομημένον ἐκ πέτρας, καὶ",
+      "right_context": "λίθον ἐπὶ τὴν θύραν τοῦ μνημείου."
+    },
+    {
+      "ref": "Matthew 27:60",
+      "form": "προσκυλίσας",
+      "morph": "V-A-A-P",
+      "book": "Matthew",
+      "chapter": 27,
+      "verse": 60,
+      "left_context": "ὃ ἐλατόμησεν ἐν τῇ πέτρᾳ, καὶ",
+      "right_context": "λίθον μέγαν τῇ θύρᾳ τοῦ μνημείου"
+    }
+  ],
+  "books": {
+    "Mark": 1,
+    "Matthew": 1
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "λατομέω",
+      "display": "tallado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "πέτρα",
+      "display": "de·roca",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "λίθος",
+      "display": "piedra",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "θύρα",
+      "display": "puerta",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "μέγας",
+      "display": "grande",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Mark 15:46",
+      "reason": "occurs near θύρα, λίθος, λατομέω"
+    },
+    {
+      "ref": "Matthew 27:60",
+      "reason": "occurs near θύρα, λίθος, λατομέω"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}

@@ -1,0 +1,130 @@
+{
+  "lemma": "ἐκκλάω",
+  "language": "greek",
+  "total_occurrences": 3,
+  "forms": [
+    {
+      "form": "ἐξεκλάσθησαν,",
+      "count": 2
+    },
+    {
+      "form": "Ἐξεκλάσθησαν",
+      "count": 1
+    }
+  ],
+  "morphology_summary": {
+    "part_of_speech": "verb",
+    "moods": {
+      "indicative": 3
+    },
+    "tenses": {
+      "aorist": 3
+    },
+    "voices": {
+      "passive": 3
+    }
+  },
+  "references": [
+    {
+      "ref": "Romans 11:17",
+      "form": "ἐξεκλάσθησαν,",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 17,
+      "left_context": "Εἰ δέ τινες τῶν κλάδων",
+      "right_context": "σὺ δὲ ἀγριέλαιος ὢν ἐνεκεντρίσθης ἐν"
+    },
+    {
+      "ref": "Romans 11:19",
+      "form": "Ἐξεκλάσθησαν",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 19,
+      "left_context": "ἐρεῖς οὖν·",
+      "right_context": "κλάδοι ἵνα ἐγὼ ἐγκεντρισθῶ."
+    },
+    {
+      "ref": "Romans 11:20",
+      "form": "ἐξεκλάσθησαν,",
+      "morph": "V-A-P-I-3P",
+      "book": "Romans",
+      "chapter": 11,
+      "verse": 20,
+      "left_context": "καλῶς· τῇ ἀπιστίᾳ",
+      "right_context": "σὺ δὲ τῇ πίστει ἕστηκας. μὴ"
+    }
+  ],
+  "books": {
+    "Romans": 3
+  },
+  "subjects": [],
+  "objects": [],
+  "common_constructions": [],
+  "collocations": [
+    {
+      "lemma": "κλάδος",
+      "display": "de·ramas",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἐγκεντρίζω",
+      "display": "fue injertado",
+      "count": 2,
+      "window": 5
+    },
+    {
+      "lemma": "ἀγριέλαιος",
+      "display": "olivo·silvestre",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "καλῶς",
+      "display": "bien",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἀπιστία",
+      "display": "incredulidad",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "πίστις",
+      "display": "fe",
+      "count": 1,
+      "window": 5
+    },
+    {
+      "lemma": "ἵστημι",
+      "display": "has puesto",
+      "count": 1,
+      "window": 5
+    }
+  ],
+  "commands": [],
+  "questions": [],
+  "negated_uses": [],
+  "clause_roles": [],
+  "discourse_contexts": [],
+  "representative_passages": [
+    {
+      "ref": "Romans 11:17",
+      "reason": "occurs near κλάδος, ἀγριέλαιος, ἐγκεντρίζω"
+    },
+    {
+      "ref": "Romans 11:19",
+      "reason": "occurs near κλάδος, ἐγκεντρίζω"
+    },
+    {
+      "ref": "Romans 11:20",
+      "reason": "occurs near καλῶς, ἀπιστία"
+    }
+  ],
+  "definition_phase2": null,
+  "definition_status": "not_started"
+}
