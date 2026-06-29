@@ -8,6 +8,7 @@ import subprocess
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from grc_conj_es import inflect_verb_from_lemma, is_finite_verb_morph, is_infinitive_verb_morph, load_eimi_by_morph
 from grc_inflect_es import inflect_from_lemma, inflect_genitive_mark, is_nominal_morph, load_spanish_gender
 
 def load(path: Path):
@@ -180,6 +181,11 @@ def apply_rules(book: str, tokens_path: Path, rules_dir: Path, overrides_path: P
                 new_es = lemma_defaults[lemma]
             elif lemma in lemma_lexicon:
                 new_es = lemma_lexicon[lemma]
+
+        if new_es is None and (is_finite_verb_morph(morph) or is_infinitive_verb_morph(morph)):
+            base = lemma_lexicon.get(lemma) or lemma_defaults.get(lemma)
+            if base and not str(base).startswith("__FILL_"):
+                new_es = inflect_verb_from_lemma(lemma, str(base), morph)
 
         if new_es is None and is_nominal_morph(morph):
             base = lemma_lexicon.get(lemma) or lemma_defaults.get(lemma)

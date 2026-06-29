@@ -17,8 +17,8 @@ import {
 } from "../lib/codemirror-search-highlight";
 import { cgvBlankHighlightExtension } from "../lib/codemirror-underline-blank";
 import { bibleReferenceClickHandlers } from "../lib/codemirror-h3-click";
-import { codemirrorManualMode } from "../lib/codemirror-manual-mode";
-import { bodyStartInContent, CGV_BULLET_LINE_PREFIX } from "../lib/markdown-html";
+import { codemirrorManualMode, setManualImageBasePath } from "../lib/codemirror-manual-mode";
+import { bodyStartInContent, CGV_BULLET_LINE_PREFIX, stripMarkdownBlockPrefix } from "../lib/markdown-html";
 import { useBible } from "../lib/bible-context";
 import { formatScriptureLine, type ResolveBibleReferenceResult } from "../lib/bible-client";
 import type { OutlineNavigateRequest } from "../lib/outline-bridge";
@@ -37,6 +37,7 @@ interface SharedDocumentEditorProps {
   reloadKey: string;
   mode: SharedEditorMode;
   writingMode?: boolean;
+  filePath?: string | null;
   onToggleMode: () => void;
 }
 
@@ -45,7 +46,7 @@ const LARGE_MARKDOWN_CHARS = 80_000;
 const editorTheme = EditorView.theme({
   "&": {
     height: "100%",
-    fontSize: "calc(17px * var(--cgv-type-scale))",
+    fontSize: "calc(19px * var(--cgv-type-scale))",
     backgroundColor: "var(--cm-bg)",
     color: "var(--text)"
   },
@@ -89,7 +90,7 @@ const markdownHighlightStyle = HighlightStyle.define([
 
 function applyHeading(view: EditorView, level: 1 | 2 | 3 | 4 | 5 | 6) {
   const line = view.state.doc.lineAt(view.state.selection.main.from);
-  const text = line.text.replace(/^#{1,6}\s*/, "").replace(/^-\s+/, "");
+  const text = stripMarkdownBlockPrefix(line.text);
   const prefix = `${"#".repeat(level)} `;
   view.dispatch({
     changes: { from: line.from, to: line.to, insert: prefix + text },
@@ -100,7 +101,7 @@ function applyHeading(view: EditorView, level: 1 | 2 | 3 | 4 | 5 | 6) {
 
 function applyBullet(view: EditorView) {
   const line = view.state.doc.lineAt(view.state.selection.main.from);
-  const text = line.text.replace(/^#{1,6}\s*/, "").replace(/^-\s+/, "");
+  const text = stripMarkdownBlockPrefix(line.text);
   view.dispatch({
     changes: { from: line.from, to: line.to, insert: CGV_BULLET_LINE_PREFIX + text },
     selection: { anchor: line.from + CGV_BULLET_LINE_PREFIX.length }
@@ -157,14 +158,55 @@ function insertManualH5Line(view: EditorView, mode: SharedEditorMode): boolean {
 
 function wrapSelection(view: EditorView, before: string, after = before) {
   const range = view.state.selection.main;
+  if (range.empty) return;
+
   const selected = view.state.sliceDoc(range.from, range.to);
-  view.dispatch({
-    changes: { from: range.from, to: range.to, insert: before + selected + after },
-    selection: selected
-      ? { anchor: range.from + before.length, head: range.to + before.length }
-      : { anchor: range.from + before.length }
+  const beforeFrom = range.from - before.length;
+  const afterTo = range.to + after.length;
+  const hasOuterWrap =
+    beforeFrom >= 0 &&
+    afterTo <= view.state.doc.length &&
+    view.state.sliceDoc(beforeFrom, range.from) === before &&
+    view.state.sliceDoc(range.to, afterTo) === after;
+
+  if (hasOuterWrap) {
+    preserveScrollDuring(view, () => {
+      view.dispatch({
+        changes: [
+          { from: range.to, to: afterTo, insert: "" },
+          { from: beforeFrom, to: range.from, insert: "" }
+        ],
+        selection: {
+          anchor: beforeFrom,
+          head: range.to - before.length
+        },
+        scrollIntoView: false
+      });
+    });
+    return;
+  }
+
+  if (selected.startsWith(before) && selected.endsWith(after) && selected.length >= before.length + after.length) {
+    const inner = selected.slice(before.length, selected.length - after.length);
+    preserveScrollDuring(view, () => {
+      view.dispatch({
+        changes: { from: range.from, to: range.to, insert: inner },
+        selection: { anchor: range.from, head: range.from + inner.length },
+        scrollIntoView: false
+      });
+    });
+    return;
+  }
+
+  preserveScrollDuring(view, () => {
+    view.dispatch({
+      changes: { from: range.from, to: range.to, insert: before + selected + after },
+      selection: selected
+        ? { anchor: range.from + before.length, head: range.to + before.length }
+        : { anchor: range.from + before.length },
+      scrollIntoView: false
+    });
   });
-  view.focus();
 }
 
 function insertBlock(view: EditorView, text: string) {
@@ -172,6 +214,16 @@ function insertBlock(view: EditorView, text: string) {
   const insert = `${line.to === line.from ? "" : "\n"}${text}\n`;
   view.dispatch({ changes: { from: line.to, insert }, selection: { anchor: line.to + insert.length } });
   view.focus();
+}
+
+function preserveScrollDuring(view: EditorView, run: () => void) {
+  const scrollTop = view.scrollDOM.scrollTop;
+  const scrollLeft = view.scrollDOM.scrollLeft;
+  run();
+  requestAnimationFrame(() => {
+    view.scrollDOM.scrollTop = scrollTop;
+    view.scrollDOM.scrollLeft = scrollLeft;
+  });
 }
 
 function blockStyleAtSelection(state: EditorState): string {
@@ -182,6 +234,18 @@ function blockStyleAtSelection(state: EditorState): string {
   if (heading) return `h${heading[1].length}`;
   if (/^-\s+/.test(line)) return "list";
   return "paragraph";
+}
+
+function headingPositionByOrdinal(state: EditorState, level: 1 | 2 | 3, ordinal: number): number | null {
+  let count = 0;
+  for (let number = 1; number <= state.doc.lines; number += 1) {
+    const line = state.doc.line(number);
+    const match = line.text.match(/^(#{1,3})\s+/);
+    if (!match || match[1].length !== level) continue;
+    count += 1;
+    if (count === ordinal) return line.from + match[0].length;
+  }
+  return null;
 }
 
 function SharedToolbar({
@@ -245,6 +309,7 @@ export function SharedDocumentEditor({
   reloadKey,
   mode,
   writingMode = false,
+  filePath = null,
   onToggleMode
 }: SharedDocumentEditorProps) {
   const hostRef = useRef<HTMLDivElement>(null);
@@ -282,6 +347,10 @@ export function SharedDocumentEditor({
   valueRef.current = value;
   modeRef.current = mode;
   onToggleModeRef.current = onToggleMode;
+
+  useEffect(() => {
+    setManualImageBasePath(filePath);
+  }, [filePath]);
 
   const closeBiblePopup = () => {
     biblePopupRequestId.current += 1;
@@ -346,6 +415,22 @@ export function SharedDocumentEditor({
     const viewSwitchKeymap = Prec.highest(
       keymap.of([
         {
+          key: "Mod-b",
+          preventDefault: true,
+          run: view => {
+            wrapSelection(view, "**");
+            return true;
+          }
+        },
+        {
+          key: "Mod-i",
+          preventDefault: true,
+          run: view => {
+            wrapSelection(view, "*");
+            return true;
+          }
+        },
+        {
           key: "Enter",
           preventDefault: true,
           run: view => insertManualH5Line(view, modeRef.current)
@@ -400,15 +485,16 @@ export function SharedDocumentEditor({
     const view = viewRef.current;
     if (!view) return;
     const useSyntaxHighlight = valueRef.current.length <= LARGE_MARKDOWN_CHARS;
-    view.dispatch({
-      effects: [
-        modeCompartment.current.reconfigure(mode === "manual" ? codemirrorManualMode : []),
-        syntaxCompartment.current.reconfigure(
-          mode !== "manual" && useSyntaxHighlight ? [syntaxHighlighting(markdownHighlightStyle)] : []
-        )
-      ]
+    preserveScrollDuring(view, () => {
+      view.dispatch({
+        effects: [
+          modeCompartment.current.reconfigure(mode === "manual" ? codemirrorManualMode : []),
+          syntaxCompartment.current.reconfigure(
+            mode !== "manual" && useSyntaxHighlight ? [syntaxHighlighting(markdownHighlightStyle)] : []
+          )
+        ]
+      });
     });
-    requestAnimationFrame(() => view.focus());
   }, [mode]);
 
   useEffect(() => {
@@ -425,7 +511,7 @@ export function SharedDocumentEditor({
     if (!fileChanged && current === value) return;
     const selection = view.state.selection.main;
     syncingFromProps.current = true;
-    try {
+    const syncEditorValue = () => {
       view.dispatch({
         changes: { from: 0, to: current.length, insert: value },
         selection: fileChanged
@@ -435,6 +521,13 @@ export function SharedDocumentEditor({
               head: Math.min(selection.head, value.length)
             }
       });
+    };
+    try {
+      if (fileChanged) {
+        syncEditorValue();
+      } else {
+        preserveScrollDuring(view, syncEditorValue);
+      }
       valueRef.current = value;
     } finally {
       syncingFromProps.current = false;
@@ -499,8 +592,14 @@ export function SharedDocumentEditor({
       const view = viewRef.current;
       if (!view) return;
       const detail = (event as CustomEvent<OutlineNavigateRequest>).detail;
-      const pos = Math.min(view.state.doc.length, bodyStartInContent(view.state.doc.toString()) + detail.bodyOffset);
-      view.dispatch({ selection: { anchor: pos }, effects: EditorView.scrollIntoView(pos, { y: "center" }) });
+      const directPos = headingPositionByOrdinal(view.state, detail.level, detail.ordinal);
+      const fallbackPos = Math.min(view.state.doc.length, bodyStartInContent(view.state.doc.toString()) + detail.bodyOffset);
+      const pos = directPos ?? fallbackPos;
+      view.dispatch({
+        selection: { anchor: pos, head: pos },
+        effects: EditorView.scrollIntoView(pos, { y: "center" }),
+        scrollIntoView: false
+      });
       view.focus();
     };
     window.addEventListener("cgv-outline-navigate", handler);

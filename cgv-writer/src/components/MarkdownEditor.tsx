@@ -35,7 +35,13 @@ import { setViewHandoff, takeViewHandoff } from "../lib/manual-sync";
 import { replaceAllInText } from "../lib/text-search";
 import { reportSearchResult, type SearchRequest } from "../lib/search-bridge";
 import { type OutlineNavigateRequest } from "../lib/outline-bridge";
-import { joinYamlBody, splitYamlBody, bodyStartInContent, CGV_BULLET_LINE_PREFIX } from "../lib/markdown-html";
+import {
+  joinYamlBody,
+  splitYamlBody,
+  bodyStartInContent,
+  CGV_BULLET_LINE_PREFIX,
+  stripMarkdownBlockPrefix
+} from "../lib/markdown-html";
 import { cgvBlankHighlightExtension } from "../lib/codemirror-underline-blank";
 
 /** Full-doc Lezer highlighting is costly on long manuals. */
@@ -170,7 +176,7 @@ function restoreMarkdownPlace(view: EditorView, value: string, place: SavedEdito
 function applyMarkdownHeading(view: EditorView, level: 1 | 2 | 3 | 4 | 5 | 6) {
   const { from } = view.state.selection.main;
   const line = view.state.doc.lineAt(from);
-  const text = line.text.replace(/^#+\s*/, "").replace(/^-\s+/, "");
+  const text = stripMarkdownBlockPrefix(line.text);
   const prefix = "#".repeat(level) + " ";
   view.dispatch({
     changes: { from: line.from, to: line.to, insert: prefix + text },
@@ -181,7 +187,7 @@ function applyMarkdownHeading(view: EditorView, level: 1 | 2 | 3 | 4 | 5 | 6) {
 function applyMarkdownBullet(view: EditorView) {
   const { from } = view.state.selection.main;
   const line = view.state.doc.lineAt(from);
-  const text = line.text.replace(/^#+\s*/, "").replace(/^-\s+/, "");
+  const text = stripMarkdownBlockPrefix(line.text);
   const prefix = CGV_BULLET_LINE_PREFIX;
   view.dispatch({
     changes: { from: line.from, to: line.to, insert: prefix + text },

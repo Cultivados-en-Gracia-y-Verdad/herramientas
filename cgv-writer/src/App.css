@@ -232,23 +232,12 @@ button.primary:hover {
   color: var(--text);
 }
 
-.app.writing-mode {
-  background: var(--surface);
-}
-
 .app.writing-mode .workspace {
   grid-template-columns: 1fr;
-  min-height: 100%;
 }
 
 .app.writing-mode .editor-pane {
   border-right: none;
-  background: var(--surface);
-}
-
-.app.writing-mode .editor-pane-layer.active {
-  flex: 1;
-  min-height: 0;
 }
 
 .status-bar {

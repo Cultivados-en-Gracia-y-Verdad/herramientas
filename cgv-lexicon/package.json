@@ -1,0 +1,10 @@
+{
+  "name": "cgv-lexicon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Greek and Hebrew lemma lexicon for CGV (gloss + Strong's lookup)",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

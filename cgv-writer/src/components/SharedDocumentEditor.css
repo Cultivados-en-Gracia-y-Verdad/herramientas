@@ -41,7 +41,7 @@
   color: var(--manual-text);
   box-shadow: var(--manual-page-shadow);
   font-family: "Georgia", "Times New Roman", serif;
-  font-size: calc(16pt * var(--cgv-type-scale));
+  font-size: calc(18pt * var(--cgv-type-scale));
   line-height: 1.58;
   user-select: text;
   -webkit-user-select: text;
@@ -70,14 +70,15 @@
 
 /* Collapse markdown syntax in the DOM but keep chars for selection/clipboard. */
 .cm-cgv-manual-mode .cm-cgv-manual-hidden {
-  display: inline-block;
-  width: 0;
-  overflow: hidden;
-  font-size: 0;
-  line-height: 0;
-  letter-spacing: 0;
-  color: transparent;
-  vertical-align: baseline;
+  display: inline-block !important;
+  width: 0 !important;
+  max-width: 0 !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  letter-spacing: 0 !important;
+  color: transparent !important;
+  vertical-align: baseline !important;
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-yaml {
@@ -105,6 +106,7 @@
   font-size: 1.62em;
   font-weight: 600;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-h2 {
@@ -120,7 +122,7 @@
   padding-top: 0.9em;
   color: var(--cgv-heading-h3);
   font-family: var(--font);
-  font-size: 1.12em;
+  font-size: 0.98em;
   font-weight: 600;
   cursor: text;
   text-decoration: underline dotted;
@@ -151,13 +153,43 @@
   background: color-mix(in srgb, var(--accent) 5%, transparent);
 }
 
-.cm-cgv-manual-mode .cm-cgv-manual-scripture,
+.cm-cgv-manual-mode .cm-cgv-manual-code-fence {
+  height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  padding: 0;
+  font-size: 0;
+  line-height: 1px;
+  visibility: hidden;
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-code {
+  padding-left: var(--cgv-indent-h5);
+  color: var(--manual-text);
+  font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.45;
+  white-space: pre;
+}
+
 .cm-cgv-manual-mode .cm-cgv-manual-h4 {
   padding-top: 0;
   padding-bottom: 0.15em;
-  padding-left: 1.5rem;
+  padding-left: var(--cgv-indent-h4);
   color: var(--cgv-scripture-color);
-  font-size: calc(12pt * var(--cgv-type-scale));
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: var(--cgv-weight-body, 300);
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-scripture {
+  padding-top: 0;
+  padding-bottom: 0.15em;
+  padding-left: 0;
+  color: var(--cgv-scripture-color);
+  font-size: 0.9em;
   font-style: italic;
   font-weight: var(--cgv-weight-body, 300);
 }
@@ -195,9 +227,9 @@
   line-height: 1.5;
 }
 
-.cm-cgv-manual-mode .cm-cgv-manual-h5 *:not(.cm-cgv-manual-scripture-text),
-.cm-cgv-manual-mode .cm-cgv-manual-h6 *:not(.cm-cgv-manual-scripture-text),
-.cm-cgv-manual-mode .cm-cgv-manual-bullet *:not(.cm-cgv-manual-scripture-text) {
+.cm-cgv-manual-mode .cm-cgv-manual-h5 *:not(.cm-cgv-manual-scripture-text):not(.cm-cgv-manual-hidden):not(.cm-cgv-manual-bold):not(.cm-cgv-manual-italic):not(.cm-cgv-manual-underline),
+.cm-cgv-manual-mode .cm-cgv-manual-h6 *:not(.cm-cgv-manual-scripture-text):not(.cm-cgv-manual-hidden):not(.cm-cgv-manual-bold):not(.cm-cgv-manual-italic):not(.cm-cgv-manual-underline),
+.cm-cgv-manual-mode .cm-cgv-manual-bullet *:not(.cm-cgv-manual-scripture-text):not(.cm-cgv-manual-hidden):not(.cm-cgv-manual-bold):not(.cm-cgv-manual-italic):not(.cm-cgv-manual-underline) {
   color: inherit !important;
   font-family: inherit !important;
   font-size: inherit !important;
@@ -205,35 +237,66 @@
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-h5 {
-  padding-left: 1.5rem;
+  padding-left: var(--cgv-indent-h5);
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-h6 {
-  padding-left: 3rem;
+  padding-left: var(--cgv-indent-h6);
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-bullet {
-  padding-left: 4.5rem;
+  padding-left: var(--cgv-indent-bullets);
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-bullet::after {
   content: "•";
   position: absolute;
-  left: -1rem;
+  left: calc(var(--cgv-indent-bullets) - 1.4rem);
   color: var(--accent);
   pointer-events: none;
   user-select: none;
 }
 
+.cm-cgv-manual-mode .cm-cgv-manual-bullet-continuation::after {
+  content: none;
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-image-source {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.cm-cgv-manual-image {
+  margin: 0.7em 0 0.9em var(--cgv-indent-h5);
+  max-width: min(100%, 680px);
+}
+
+.cm-cgv-manual-image img {
+  display: block;
+  max-width: 100%;
+  max-height: 420px;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.cm-cgv-manual-image figcaption {
+  margin-top: 0.35em;
+  color: var(--muted);
+  font-family: var(--font);
+  font-size: 0.72em;
+  font-style: normal;
+}
+
 .cm-cgv-manual-mode .cm-cgv-manual-definition {
-  padding: 0.35em 0 0.35em 1.5rem;
+  padding: 0.35em 0 0.35em var(--cgv-indent-h5);
   border-left: 3px solid var(--accent);
   background: color-mix(in srgb, var(--accent) 7%, transparent);
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-quiz {
   padding: 0.35em 0.65em;
-  padding-left: calc(1.5rem + 0.65em);
+  padding-left: calc(var(--cgv-indent-h5) + 0.65em);
   border: 1px solid var(--warn);
   border-radius: 6px;
   color: var(--warn);
@@ -259,7 +322,35 @@
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-italic {
+  font-style: italic !important;
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-h5 .cm-cgv-manual-hidden,
+.cm-cgv-manual-mode .cm-cgv-manual-h6 .cm-cgv-manual-hidden,
+.cm-cgv-manual-mode .cm-cgv-manual-bullet .cm-cgv-manual-hidden {
+  display: inline-block !important;
+  width: 0 !important;
+  max-width: 0 !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-h5 .cm-cgv-manual-bold,
+.cm-cgv-manual-mode .cm-cgv-manual-h6 .cm-cgv-manual-bold,
+.cm-cgv-manual-mode .cm-cgv-manual-bullet .cm-cgv-manual-bold {
+  font-weight: 700 !important;
+}
+
+.cm-cgv-manual-mode .cm-cgv-manual-h5 .cm-cgv-manual-italic,
+.cm-cgv-manual-mode .cm-cgv-manual-h6 .cm-cgv-manual-italic,
+.cm-cgv-manual-mode .cm-cgv-manual-bullet .cm-cgv-manual-italic {
+  font-style: italic !important;
 }
 
 .cm-cgv-manual-mode .cm-cgv-manual-scripture-text {
@@ -314,7 +405,7 @@
 
 .cm-cgv-manual-mode .cm-cgv-manual-table-source-first .cm-cgv-manual-table {
   color: var(--manual-text);
-  font-size: calc(16pt * var(--cgv-type-scale));
+  font-size: calc(18pt * var(--cgv-type-scale));
   line-height: 1.45;
 }
 

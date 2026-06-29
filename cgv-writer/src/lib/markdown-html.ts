@@ -74,6 +74,22 @@ function stripEmptyHtmlComments(text: string): string {
   return String(text || "").replace(/<!--\s*-->/g, "");
 }
 
+export function repairHeadingPrefixDamage(md: string): string {
+  return String(md || "")
+    .split("\n")
+    .map(line => {
+      let next = line.replace(/^\s{1,3}(#{1,6}\s+)/, "$1");
+      next = next.replace(/^-+\s+(#{1,6}\s+)/, "$1");
+      next = next.replace(/^((?:#\s+){1,5}#)\s+/, match => {
+        const count = match.match(/#/g)?.length ?? 0;
+        return count > 0 ? `${"#".repeat(Math.min(6, count))} ` : match;
+      });
+      next = next.replace(/^(#{2,6})\s+(#{1,6})\s+/, "$1 ");
+      return next;
+    })
+    .join("\n");
+}
+
 /** Restore CGV markdown hidden inside non-quiz HTML comments (e.g. `<!-- ###### Sino: -->`). */
 export function restoreStrayMarkdownComments(md: string): string {
   const placeholders: string[] = [];
@@ -101,6 +117,13 @@ export const CGV_BULLET_LINE_PREFIX = "-   ";
 
 export function formatCgvBulletLine(text: string): string {
   return `${CGV_BULLET_LINE_PREFIX}${text.trim()}`;
+}
+
+export function stripMarkdownBlockPrefix(text: string): string {
+  return String(text || "")
+    .replace(/^\s{1,3}(#{1,6}\s+)/, "$1")
+    .replace(/^-\s+/, "")
+    .replace(/^#{1,6}\s*/, "");
 }
 
 export function isCgvBulletLine(line: string): boolean {
@@ -275,6 +298,7 @@ export function sanitizeCgvMarkdown(md: string): string {
 
   while (prev !== result) {
     prev = result;
+    result = repairHeadingPrefixDamage(result);
     result = result.replace(/\\+\[\^(\d+)\s*\\+\]/g, "[^$1]");
     result = result.replace(/__([^_\n]+?)__/g, "$1");
     result = result.replace(/^\*«([\s\S]+?)»\*$/gm, "$1");

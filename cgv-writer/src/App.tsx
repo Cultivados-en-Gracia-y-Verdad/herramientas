@@ -18,7 +18,7 @@ import {
   saveManualFile,
   takeOpenedManualPaths
 } from "./lib/files";
-import { splitYamlBody, joinYamlBody } from "./lib/markdown-html";
+import { repairHeadingPrefixDamage, splitYamlBody, joinYamlBody } from "./lib/markdown-html";
 import { clearEditorPlaces } from "./lib/editor-position-bridge";
 import {
   ANALYSIS_DEBOUNCE_MS,
@@ -58,6 +58,7 @@ export default function App() {
   const [welcomeOverlay, setWelcomeOverlay] = useState<"startup" | null>("startup");
   const [saving, setSaving] = useState(false);
   const dirtyRef = useRef(false);
+  const editorPaneRef = useRef<HTMLElement | null>(null);
   const quitInProgressRef = useRef(false);
   const openRequestRef = useRef(0);
   const externalOpenSeenRef = useRef(false);
@@ -73,8 +74,16 @@ export default function App() {
   }, [theme]);
 
   const setWritingModeEnabled = useCallback((enabled: boolean) => {
+    const scroller = editorPaneRef.current?.querySelector<HTMLElement>(".cm-scroller");
+    const scrollTop = scroller?.scrollTop ?? 0;
+    const scrollLeft = scroller?.scrollLeft ?? 0;
     setWritingMode(enabled);
     saveWritingModePreference(enabled);
+    requestAnimationFrame(() => {
+      if (!scroller) return;
+      scroller.scrollTop = scrollTop;
+      scroller.scrollLeft = scrollLeft;
+    });
   }, []);
 
   const toggleWritingMode = useCallback(() => {
@@ -86,13 +95,14 @@ export default function App() {
   }, []);
 
   const applyContent = useCallback((text: string) => {
-    const split = splitYamlBody(text);
+    const repaired = repairHeadingPrefixDamage(text);
+    const split = splitYamlBody(repaired);
     setFrontMatter(split.frontMatter);
     setBody(split.body);
-    setContent(text);
+    setContent(repaired);
     setDocumentSession(session => session + 1);
     clearEditorPlaces();
-    if (text.trim()) {
+    if (repaired.trim()) {
       setWelcomeOverlay(null);
     }
   }, []);
@@ -244,8 +254,8 @@ export default function App() {
 
     try {
       const exported = await resolveLiveContent();
-      const split = splitYamlBody(exported);
-      const toSave = exported;
+      const toSave = repairHeadingPrefixDamage(exported);
+      const split = splitYamlBody(toSave);
       setFrontMatter(split.frontMatter);
       setBody(split.body);
       setContent(toSave);
@@ -274,7 +284,7 @@ export default function App() {
 
     try {
       const exported = await resolveLiveContent();
-      const duplicated = await duplicateManualFile(filePath, exported);
+      const duplicated = await duplicateManualFile(filePath, repairHeadingPrefixDamage(exported));
       if (!duplicated) {
         setStatus("Duplicado cancelado");
         return;
@@ -741,7 +751,7 @@ export default function App() {
             <span className="focus-mode-badge-hint">⌘/ cambiar · Escape salir</span>
           </div>
         )}
-        <section className="editor-pane">
+        <section className="editor-pane" ref={editorPaneRef}>
           {(viewMode === "manual" || viewMode === "markdown") && (
             <SearchReplaceBar
               visible={searchOpen}
@@ -771,6 +781,7 @@ export default function App() {
               reloadKey={`${documentSession}:${filePath ?? "untitled"}`}
               mode={viewMode}
               writingMode={focusWriting}
+              filePath={filePath}
               onToggleMode={() => void cycleViewMode()}
             />
           </div>
