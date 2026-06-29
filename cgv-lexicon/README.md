@@ -20,12 +20,18 @@ npm run build:lexicon-phase1
 
 Sources: `MNA/datasets/interlinear/NT/*.tokens.jsonl` (SBLGNT / MorphGNT).
 
-Viewer:
+Viewer (requires the dev server — do not open `index.html` directly):
 
 ```bash
+npm run build:lexicon-phase1   # once, for Greek observations
+npm run build:lexicon          # once, for Hebrew gloss index
 npm run serve:lexicon
+# → http://localhost:4177/lexicon
+# → http://localhost:4177/lexicon/greek
 # → http://localhost:4177/lexicon/greek/ἀγαπάω
 ```
+
+Browse by starting letter on `/lexicon/greek` and `/lexicon/hebrew`. If the page is blank or data fails to load, confirm the server is running and Phase 1 data was built.
 
 ---
 
