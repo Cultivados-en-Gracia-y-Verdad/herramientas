@@ -1,0 +1,35 @@
+{
+  "id": "string",
+  "strongs": "string",
+  "language": "greek | hebrew",
+  "lemma": "string",
+  "transliteration": "string",
+  "partOfSpeech": "string",
+  "status": "draft | review | approved | published",
+
+  "preferredRenderings": ["string"],
+  "alternativeRenderings": ["string"],
+
+  "coreIdea": "string",
+  "translationNotes": "string",
+  "translationWarnings": ["string"],
+
+  "observations": ["string"],
+  "contexts": ["string"],
+
+  "family": ["string"],
+  "related": ["string"],
+
+  "examples": [
+    {
+      "reference": "string",
+      "note": "string"
+    }
+  ],
+
+  "metadata": {
+    "created": "YYYY-MM-DD",
+    "updated": "YYYY-MM-DD",
+    "version": 1
+  }
+}

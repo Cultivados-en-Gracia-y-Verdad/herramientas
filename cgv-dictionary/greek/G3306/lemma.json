@@ -1,0 +1,77 @@
+{
+"id": "grc.meno",
+"strongs": "G3306",
+"language": "greek",
+"lemma": "μένω",
+"transliteration": "meno",
+"partOfSpeech": "verb",
+"status": "draft",
+
+"preferredRenderings": [
+"permanecer"
+],
+
+"alternativeRenderings": [
+"quedarse",
+"continuar",
+"seguir"
+],
+
+"coreIdea": "Permanecer, quedarse o continuar en un lugar, relación, condición o estado.",
+
+"translationNotes": "LBF debe preservar la consistencia de μένω siempre que el español lo permita. Cuando el autor repite μένω dentro de un mismo discurso, la traducción normalmente debería repetir el mismo verbo o una forma claramente relacionada. No se debe variar la traducción meramente por estilo si la repetición parece formar parte del argumento o del énfasis del texto.",
+
+"translationWarnings": [
+"No convertir μένω automáticamente en una explicación teológica.",
+"No variar la traducción solo para evitar repetición.",
+"Preservar la repetición cuando el autor la usa de forma visible.",
+"Distinguir entre permanecer en un lugar, continuar en una condición, y permanecer en una relación."
+],
+
+"observations": [
+"El verbo puede referirse a permanecer físicamente en un lugar.",
+"También puede referirse a continuar en una condición o estado.",
+"En algunos contextos expresa permanencia relacional.",
+"En los escritos de Juan, la repetición de μένω parece tener peso discursivo y debe observarse con cuidado."
+],
+"contexts": [
+  "permanencia física en un lugar",
+  "continuidad en una condición o estado",
+  "permanencia relacional",
+  "continuidad discursiva por repetición"
+],
+"family": [
+"G1265",
+"G1696",
+"G1961",
+"G3887",
+"G4357",
+"G5278"
+],
+
+"related": [
+"G3611",
+"G2730"
+],
+
+"examples": [
+{
+"reference": "Juan 15:4",
+"note": "Ejemplo importante de repetición relacional: permanecer en Cristo / Cristo en el discípulo."
+},
+{
+"reference": "Juan 1:32",
+"note": "Ejemplo de permanecer sobre alguien."
+},
+{
+"reference": "Hechos 27:31",
+"note": "Ejemplo de quedarse físicamente en un lugar."
+}
+],
+
+"metadata": {
+"created": "2026-06-29",
+"updated": "2026-06-29",
+"version": 1
+}
+}
