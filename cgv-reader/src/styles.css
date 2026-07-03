@@ -1043,9 +1043,35 @@ textarea {
   box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.35);
 }
 
+.clause-word--anchor {
+  outline: 1px dashed #c9a227;
+  outline-offset: 2px;
+}
+
 .clause-word--belonging {
   background: #cfe5e7;
   box-shadow: 0 0 0 1px #6b929d;
+}
+
+.clause-verse-text--dragging {
+  user-select: none;
+  cursor: crosshair;
+}
+
+.clause-panel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.clause-clear {
+  border: 1px solid #ded5c7;
+  border-radius: 6px;
+  padding: 0.45rem 0.9rem;
+  background: #fff;
+  font: inherit;
+  cursor: pointer;
 }
 
 .clause-word--saved {

@@ -3,6 +3,7 @@ import { access, readFile, readdir } from "node:fs/promises";
 import { constants } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadTranslationIndexes, resolveHistoricalRenderings } from "./translationIndexes.js";
 
 const rootDir = resolve(fileURLToPath(new URL("../..", import.meta.url)));
 const fallbackCgvDataPath = "../cgv-data";
@@ -292,8 +293,10 @@ export async function getGreekOccurrencesByStrongs(strongs) {
   const occurrences = [];
   const verseRows = new Map();
   const candidateRows = [];
+  const verseOccurrenceCounts = new Map();
   const projectLiteralIndex = await readProjectLiteralIndex();
   const bleInterlinearIndex = await readBleInterlinearIndex();
+  const translationIndexes = await loadTranslationIndexes(cgvDataDir);
 
   for (const file of files) {
     const content = await readFile(join(morphDir, file), "utf8");
@@ -312,8 +315,16 @@ export async function getGreekOccurrencesByStrongs(strongs) {
   }
 
   for (const { file, row } of candidateRows) {
-
       const referenceParts = verseIdToReferenceParts(row.verseId);
+      const occurrenceIndex = verseOccurrenceCounts.get(row.verseId) ?? 0;
+      verseOccurrenceCounts.set(row.verseId, occurrenceIndex + 1);
+      const historical = resolveHistoricalRenderings(translationIndexes, {
+        book: referenceParts.book,
+        chapter: referenceParts.chapter,
+        verse: referenceParts.verse,
+        strongs: normalizedStrongs,
+        occurrenceIndex
+      });
       const literalKey = [
         referenceParts.bookSlug,
         referenceParts.chapter,
@@ -341,7 +352,11 @@ export async function getGreekOccurrencesByStrongs(strongs) {
         translations: {
           ...defaultTranslations(),
           projectLiteral: takeIndexedRendering(projectLiteralIndex, literalKey),
-          ble: takeIndexedRendering(bleInterlinearIndex, bleKey)
+          ble: takeIndexedRendering(bleInterlinearIndex, bleKey),
+          rv1862: historical.rv1862,
+          rv1909: historical.rv1909,
+          spnbes: historical.spnbes,
+          spnvbl: historical.spnvbl
         },
         source: {
           morphology: `morphology/MorphGNT/${file}`,
