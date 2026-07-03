@@ -1,0 +1,33 @@
+{
+  "letter": "א",
+  "name": "aleph",
+  "ahrc_names": ["Al", "El"],
+  "pictograph": "ox head",
+  "meanings": ["power", "authority", "strength"],
+  "sound": "ah, eh",
+  "sources": {
+    "ahlb": "https://www.ancient-hebrew.org/ahlb/aleph.html",
+    "alphabet": "https://www.ancient-hebrew.org/ancient-alphabet/aleph.htm"
+  },
+  "notes": "Parent root אל (el): ox head + shepherd staff → strong authority. אב (av): strength of the house → father.",
+  "sample_parent_roots": [
+    {
+      "root": "אב",
+      "gloss": "father",
+      "strongs": "H1",
+      "summary": "Tent pole / household support; aleph (strength) + beyt (house)."
+    },
+    {
+      "root": "אל",
+      "gloss": "mighty one / to",
+      "strongs": "H410, H413",
+      "summary": "Ox in the yoke; aleph (strength) + lamed (staff/authority)."
+    },
+    {
+      "root": "אם",
+      "gloss": "mother",
+      "strongs": "H517",
+      "summary": "Strong liquid (glue); aleph (strength) + mem (water)."
+    }
+  ]
+}

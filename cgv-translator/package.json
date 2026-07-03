@@ -1,0 +1,10 @@
+{
+  "name": "cgv-translator",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CGV Translator investigation view prototype",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

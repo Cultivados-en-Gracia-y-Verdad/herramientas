@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGV Translator</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="translation-view" class="translation-view" aria-label="Translation view">
+        <article class="translation-page">
+          <header class="translation-header">
+            <p class="eyebrow">Translation View</p>
+            <h1>Titus 1:1</h1>
+            <dl class="translation-meta" aria-label="Translation context">
+              <div>
+                <dt>Project</dt>
+                <dd>La Biblia Fiel</dd>
+              </div>
+              <div>
+                <dt>Book</dt>
+                <dd>Titus</dd>
+              </div>
+              <div>
+                <dt>Reference</dt>
+                <dd>Titus 1:1</dd>
+              </div>
+            </dl>
+          </header>
+
+          <section class="translation-document">
+            <p class="scripture-label">Greek clause</p>
+            <p class="greek-clause">
+              Παῦλος
+              <button id="doulos-trigger" class="greek-word-trigger" type="button">δοῦλος</button>
+              θεοῦ
+            </p>
+
+            <p class="scripture-label">Working Spanish translation</p>
+            <p class="spanish-line">Pablo <span>________</span> de Dios</p>
+
+            <aside id="decision-panel" class="decision-panel" hidden>
+              <p class="decision-title">Translation decision</p>
+              <dl>
+                <div>
+                  <dt>Lemma</dt>
+                  <dd>G1401 — δοῦλος</dd>
+                </div>
+                <div>
+                  <dt>Policy</dt>
+                  <dd>none</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Investigation required</dd>
+                </div>
+              </dl>
+              <button id="open-investigation" class="primary-action" type="button">Open Investigation</button>
+            </aside>
+          </section>
+        </article>
+      </section>
+
+      <aside class="sidebar" aria-label="Investigations" hidden>
+        <button id="investigation-toggle" class="investigation-toggle" type="button" aria-expanded="false">
+          Investigations
+        </button>
+        <div id="investigation-list" class="investigation-list"></div>
+      </aside>
+
+      <section id="investigation-view" class="workspace" aria-label="Investigation view" hidden>
+        <header class="workspace-header">
+          <div class="title-block">
+            <p class="eyebrow">Investigation View</p>
+            <h2 id="investigation-title">INV-0001</h2>
+            <dl class="investigation-meta" aria-label="Investigation metadata">
+              <div>
+                <dt>Primary subject</dt>
+                <dd id="meta-primary-subject">-</dd>
+              </div>
+              <div>
+                <dt>Origin</dt>
+                <dd id="meta-origin-reference">-</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd id="meta-current-status">-</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="header-actions">
+            <button id="save-button" class="save-button" type="button">Save</button>
+            <p id="save-status" class="save-status">Saved</p>
+          </div>
+        </header>
+
+        <section class="document-stage">
+          <div class="document-tools">
+            <nav id="tabs" class="tabs" aria-label="Investigation files"></nav>
+            <div class="support-actions">
+              <button id="gather-evidence" class="secondary-action" type="button">Gather...</button>
+              <button id="back-to-translation" class="secondary-action" type="button">Return to Translation</button>
+            </div>
+          </div>
+
+          <p id="prototype-message" class="prototype-message" role="status" aria-live="polite"></p>
+
+          <section id="evidence-files" class="evidence-files" aria-label="Available evidence files" hidden></section>
+
+          <section class="editor-layout">
+            <textarea id="editor" spellcheck="false" aria-label="Markdown editor"></textarea>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <div id="gather-modal" class="modal-backdrop" hidden>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="gather-title">
+        <div class="modal-header">
+          <p class="eyebrow">Evidence Gathering</p>
+          <h2 id="gather-title">Gather...</h2>
+        </div>
+
+        <fieldset class="gather-options">
+          <legend>Evidence type</legend>
+          <label>
+            <input type="radio" name="gather-type" value="occurrences" checked />
+            Occurrences
+          </label>
+          <label>
+            <input type="radio" name="gather-type" value="morphology" disabled />
+            Morphology
+          </label>
+          <label>
+            <input type="radio" name="gather-type" value="historical-renderings" disabled />
+            Historical Renderings
+          </label>
+          <label>
+            <input type="radio" name="gather-type" value="related-lemmas" disabled />
+            Related Lemmas
+          </label>
+        </fieldset>
+
+        <p id="gather-message" class="modal-message" role="status" aria-live="polite"></p>
+
+        <div id="replace-actions" class="replace-actions" hidden>
+          <p>occurrences.md already exists.</p>
+          <button id="replace-evidence" class="primary-action" type="button">Replace</button>
+          <button id="cancel-replace" class="secondary-action" type="button">Cancel</button>
+        </div>
+
+        <div class="modal-actions">
+          <button id="cancel-gather" class="secondary-action" type="button">Cancel</button>
+          <button id="run-gather" class="primary-action" type="button">Generate</button>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

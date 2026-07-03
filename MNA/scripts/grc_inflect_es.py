@@ -158,8 +158,11 @@ def effective_gender(lemma: str, base_gloss: str, morph: str) -> str | None:
 
 
 def pluralize(word: str) -> str:
+    base = word
     if word.endswith(("á", "é", "í", "ó", "ú")):
-        return word + "s"
+        base = word[:-1] + {"á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u"}[word[-1]]
+    if base.endswith(("a", "e", "i", "o", "u")):
+        return base + "s"
     if word.endswith(("a", "e", "i", "o", "u")):
         return word + "s"
     if word.endswith("z"):
@@ -332,6 +335,16 @@ def has_genitive_article_before(prev_row: dict | None) -> bool:
     return morph_case(morph) == "G"
 
 
+def prev_carries_de_mark(prev_row: dict | None) -> bool:
+    if not prev_row:
+        return False
+    lemma = str(prev_row.get("lemma", ""))
+    if lemma in {"ἀπό", "ἐκ", "ἐξ", "παρά", "ὑπό", "διά", "κατά", "μετά", "πρό", "ἀντί", "περί"}:
+        return True
+    es = str(prev_row.get("es", "")).strip().lower()
+    return es == "de" or es.startswith("de·") or es in {"del", "de·la", "de·los", "de·las", "de·lo"} or es.endswith("·de")
+
+
 def strip_genitive_mark(gloss: str) -> str:
     core, punct = split_punct(gloss)
     if core.lower().startswith("de·"):
@@ -353,7 +366,7 @@ def apply_genitive_case(gloss: str, morph: str, prev_row: dict | None = None) ->
         return None
 
     has_de = core.lower().startswith("de·") or core.lower().startswith("de ")
-    if has_genitive_article_before(prev_row):
+    if has_genitive_article_before(prev_row) or prev_carries_de_mark(prev_row):
         if has_de:
             stripped = strip_genitive_mark(gloss)
             return stripped if stripped != gloss else None

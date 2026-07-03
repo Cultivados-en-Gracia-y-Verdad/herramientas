@@ -1,0 +1,62 @@
+{
+  "name": "Ancient Hebrew Research Center (AHRC)",
+  "author": "Jeff A. Benner",
+  "site": "https://www.ancient-hebrew.org",
+  "license_note": "Reference only. Content © Jeff A. Benner / AHRC. Link to live pages; do not republish full lexicon text in this repo.",
+  "use_in_project": "Investigative reference for OT translation: pictographic letters, parent roots, concrete/function-oriented Hebrew thought.",
+  "entries": [
+    {
+      "id": "introduction",
+      "title": "What Is Ancient Hebrew? Language, Culture, and Thought",
+      "url": "https://www.ancient-hebrew.org/introduction.htm",
+      "topics": ["alphabet", "culture", "concrete-thought", "function", "translation"]
+    },
+    {
+      "id": "ahlb-index",
+      "title": "Ancient Hebrew Lexicon by Letter (AHLB)",
+      "url": "https://www.ancient-hebrew.org/ahlb/index.html",
+      "topics": ["lexicon", "parent-roots", "strongs"]
+    },
+    {
+      "id": "ahlb-aleph",
+      "title": "AHLB — Aleph",
+      "url": "https://www.ancient-hebrew.org/ahlb/aleph.html",
+      "letter": "א",
+      "ahrc_slug": "aleph",
+      "topics": ["parent-roots", "lexicon"]
+    },
+    {
+      "id": "alphabet-aleph",
+      "title": "Ancient Hebrew Alphabet — Aleph",
+      "url": "https://www.ancient-hebrew.org/ancient-alphabet/aleph.htm",
+      "letter": "א",
+      "ahrc_slug": "aleph",
+      "topics": ["pictograph", "letter-history"]
+    }
+  ],
+  "ahlb_letter_pages": {
+    "aleph": "https://www.ancient-hebrew.org/ahlb/aleph.html",
+    "beyt": "https://www.ancient-hebrew.org/ahlb/beyt.html",
+    "gimel": "https://www.ancient-hebrew.org/ahlb/gimel.html",
+    "dalet": "https://www.ancient-hebrew.org/ahlb/dalet.html",
+    "hey": "https://www.ancient-hebrew.org/ahlb/hey.html",
+    "vav": "https://www.ancient-hebrew.org/ahlb/vav.html",
+    "zayin": "https://www.ancient-hebrew.org/ahlb/zayin.html",
+    "hhet": "https://www.ancient-hebrew.org/ahlb/hhet.html",
+    "tet": "https://www.ancient-hebrew.org/ahlb/tet.html",
+    "yud": "https://www.ancient-hebrew.org/ahlb/yud.html",
+    "kaph": "https://www.ancient-hebrew.org/ahlb/kaph.html",
+    "lamed": "https://www.ancient-hebrew.org/ahlb/lamed.html",
+    "mem": "https://www.ancient-hebrew.org/ahlb/mem.html",
+    "nun": "https://www.ancient-hebrew.org/ahlb/nun.html",
+    "samehh": "https://www.ancient-hebrew.org/ahlb/samehh.html",
+    "ayin": "https://www.ancient-hebrew.org/ahlb/ayin.html",
+    "pey": "https://www.ancient-hebrew.org/ahlb/pey.html",
+    "tsade": "https://www.ancient-hebrew.org/ahlb/tsade.html",
+    "quph": "https://www.ancient-hebrew.org/ahlb/quph.html",
+    "resh": "https://www.ancient-hebrew.org/ahlb/resh.html",
+    "shin": "https://www.ancient-hebrew.org/ahlb/shin.html",
+    "tav": "https://www.ancient-hebrew.org/ahlb/tav.html",
+    "ghayin": "https://www.ancient-hebrew.org/ahlb/ghayin.html"
+  }
+}

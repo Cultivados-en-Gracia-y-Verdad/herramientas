@@ -1,0 +1,11 @@
+{
+  "name": "herramientas",
+  "private": true,
+  "type": "module",
+  "description": "CGV tooling monorepo",
+  "scripts": {
+    "dictionary:validate": "node cgv-dictionary/scripts/validate-dictionary.js",
+    "dictionary:extract": "node cgv-dictionary/scripts/extract-lemma-occurrences.js",
+    "dictionary:analyze": "node cgv-dictionary/scripts/analyze-lemma-occurrences.js"
+  }
+}

@@ -110,6 +110,16 @@ IRREGULAR_PRESENT: dict[str, tuple[str, str, str, str, str, str]] = {
     "ver": ("veo", "ves", "ve", "vemos", "veis", "ven"),
     "hacer": ("hago", "haces", "hace", "hacemos", "hacéis", "hacen"),
     "caber": ("quepo", "cabes", "cabe", "cabemos", "cabéis", "caben"),
+    "convenir": ("convengo", "convenes", "conviene", "convenimos", "convenís", "convienen"),
+    "rogar": ("ruego", "ruegas", "ruega", "rogamos", "rogáis", "ruegan"),
+    "negar": ("niego", "niegas", "niega", "negamos", "negáis", "niegan"),
+    "confesar": ("confieso", "confiesas", "confiesa", "confesamos", "confesáis", "confiesan"),
+    "recordar": ("recuerdo", "recuerdas", "recuerda", "recordamos", "recordáis", "recuerdan"),
+}
+
+IRREGULAR_IMPERATIVE: dict[str, dict[tuple[str, str], str]] = {
+    "rogar": {("2", "S"): "ruega"},
+    "recordar": {("2", "S"): "recuerda"},
 }
 
 IRREGULAR_FUTURE: dict[str, tuple[str, str, str, str, str, str]] = {
@@ -246,6 +256,9 @@ def _lookup_form(
         return (form + punct) if form else None
 
     if mood in ("D", "M"):
+        irr = IRREGULAR_IMPERATIVE.get(core, {}).get((person, number))
+        if irr:
+            return irr + punct
         form = _regular_imperative(core, person, number)
         return (form + punct) if form else None
 
