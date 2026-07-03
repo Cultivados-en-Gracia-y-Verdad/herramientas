@@ -17,6 +17,7 @@ TOKENS_DIR = TOKENS_DIR_NT  # default
 OUTPUT_DIR = Path(__file__).resolve().parents[1] / "output"
 
 from testament_books import NT_BOOKS, OT_BOOKS  # noqa: E402
+from ble_gloss_text import fix_gloss_text, gloss_to_text  # noqa: E402
 
 
 def token_index(token: dict) -> int:
@@ -31,10 +32,6 @@ def display_book(slug: str) -> str:
     if slug and slug[0].isdigit():
         return slug
     return slug[:1].upper() + slug[1:]
-
-
-def gloss_to_text(es: str) -> str:
-    return es.replace("·", " ").strip()
 
 
 def load_tokens(path: Path) -> list[dict]:
@@ -62,7 +59,7 @@ def tokens_to_verses(tokens: list[dict]) -> list[tuple[int, int, str]]:
 
     for token in tokens:
         key = (int(token["ch"]), int(token["vs"]))
-        by_verse[key].append((token_index(token), str(token.get("es", ""))))
+        by_verse[key].append((token_index(token), fix_gloss_text(str(token.get("es", "")))))
 
     verses: list[tuple[int, int, str]] = []
     unresolved = 0

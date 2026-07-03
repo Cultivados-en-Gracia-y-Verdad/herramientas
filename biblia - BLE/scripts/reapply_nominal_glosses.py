@@ -11,7 +11,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "MNA" / "scripts"))
 
-from grc_inflect_es import inflect_from_lemma, is_nominal_morph, load_spanish_gender  # noqa: E402
+from grc_inflect_es import (  # noqa: E402
+    effective_gender,
+    inflect_from_lemma,
+    inflect_word,
+    is_nominal_morph,
+    load_spanish_gender,
+    morph_number,
+    split_punct,
+)
 
 TOKENS_DIR = ROOT / "MNA" / "datasets" / "interlinear" / "NT"
 RULES_DIR = ROOT / "MNA" / "datasets" / "rules"
@@ -53,6 +61,14 @@ def reapply_file(path: Path) -> int:
         if not base:
             continue
         new_es = inflect_from_lemma(lemma, base, morph)
+        if not new_es:
+            core, punct = split_punct(base)
+            number = morph_number(morph)
+            gender = effective_gender(lemma, base, morph)
+            if number and gender:
+                inflected = inflect_word(core, gender, number)
+                if inflected:
+                    new_es = inflected + punct
         if new_es and row.get("es") != new_es:
             row["es"] = new_es
             changed += 1

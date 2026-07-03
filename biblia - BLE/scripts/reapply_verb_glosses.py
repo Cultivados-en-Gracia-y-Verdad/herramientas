@@ -9,7 +9,11 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+SCRIPTS_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPTS_DIR))
 sys.path.insert(0, str(ROOT / "MNA" / "scripts"))
+
+from ble_gloss_text import is_dei_surface  # noqa: E402
 
 from grc_conj_es import (  # noqa: E402
     inflect_verb_from_lemma,
@@ -55,6 +59,8 @@ def reapply_file(path: Path) -> int:
         if is_participle_morph(morph):
             continue
         if not (is_finite_verb_morph(morph) or is_infinitive_verb_morph(morph)):
+            continue
+        if is_dei_surface(str(row.get("surface", ""))):
             continue
         lemma = str(row.get("lemma", ""))
         base = base_gloss(lemma)
