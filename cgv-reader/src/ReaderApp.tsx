@@ -644,9 +644,9 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
       return [
         ...withoutSelected,
         {
-        id: makeLocalId("command-group"),
-        recipient: draftRecipient,
-        tokenIds: draftGroupTokenIds
+          id: makeLocalId("command-group"),
+          recipient: draftRecipient,
+          tokenIds: draftGroupTokenIds
         }
       ];
     });
