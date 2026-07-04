@@ -45,6 +45,13 @@ const rv1862DuplicateBooks = {
 
 let cachedIndexes = null;
 
+function emptyUsfxIndexes() {
+  return {
+    strongIndex: new Map(),
+    verseTextIndex: new Map()
+  };
+}
+
 function normalizeHeader(line) {
   return line.trim().replace(/\^+/g, "").replace(/\.$/, "").toUpperCase();
 }
@@ -73,7 +80,12 @@ function buildUsfxIndexes(content) {
   for (let index = 0; index < bcvMatches.length; index += 1) {
     const match = bcvMatches[index];
     const next = bcvMatches[index + 1];
-    const segment = content.slice(match.index, next?.index ?? content.length);
+    const start = content.lastIndexOf("<v", match.index);
+    const nextStart = next ? content.lastIndexOf("<v", next.index) : -1;
+    const segment = content.slice(
+      start === -1 ? match.index : start,
+      nextStart === -1 ? content.length : nextStart
+    );
     const bcv = match[1];
     verseTextIndex.set(bcv, stripUsfxVerseText(segment));
 
@@ -240,6 +252,16 @@ function parseRv1909VerseIndex(content, defaultBook = "04") {
   for (const rawLine of content.replace(/\r\n/g, "\n").split("\n")) {
     const trimmed = rawLine.trim();
     if (!trimmed) continue;
+    const normalized = normalizeHeader(trimmed);
+
+    if (normalized === "A LOS ROMANOS") {
+      flushVerse();
+      currentBook = "06";
+      currentChapter = 0;
+      currentVerse = 0;
+      currentText = "";
+      continue;
+    }
 
     const chapterMatch = trimmed.match(/^Capitulo\s+(\d+)\.?/i);
     if (chapterMatch) {
@@ -310,20 +332,24 @@ function lookupRvRendering(index, book, chapter, verse, strongs, occurrenceIndex
   return matches[occurrenceIndex]?.[0] ?? matches[0][0] ?? "";
 }
 
+function lookupRvVerse(index, book, chapter, verse) {
+  return index.get(`${book}|${chapter}|${verse}`) || "";
+}
+
 export async function loadTranslationIndexes(cgvDataDir) {
   if (cachedIndexes) return cachedIndexes;
 
   const [spnbesRaw, spnvblRaw, rv1862Raw, rv1909Raw] = await Promise.all([
-    readFile(join(cgvDataDir, "bibles/SPNBES/spa-bes.usfx.xml"), "utf8"),
-    readFile(join(cgvDataDir, "bibles/SPNVBL/spa-vbl.usfx.xml"), "utf8"),
-    readFile(join(cgvDataDir, "bibles/RV1862/7va6210.txt"), "utf8"),
+    readFile(join(cgvDataDir, "bibles/SPNBES/spa-bes.usfx.xml"), "utf8").catch(() => ""),
+    readFile(join(cgvDataDir, "bibles/SPNVBL/spa-vbl.usfx.xml"), "utf8").catch(() => ""),
+    readFile(join(cgvDataDir, "bibles/RV1862/7va6210.txt"), "utf8").catch(() => ""),
     readFile(join(cgvDataDir, "bibles/RV1909/7va0910.txt"), "utf8").catch(() => "")
   ]);
 
   cachedIndexes = {
-    spnbes: buildUsfxIndexes(spnbesRaw),
-    spnvbl: buildUsfxIndexes(spnvblRaw),
-    rv1862: parseRv1862VerseIndex(rv1862Raw),
+    spnbes: spnbesRaw ? buildUsfxIndexes(spnbesRaw) : emptyUsfxIndexes(),
+    spnvbl: spnvblRaw ? buildUsfxIndexes(spnvblRaw) : emptyUsfxIndexes(),
+    rv1862: rv1862Raw ? parseRv1862VerseIndex(rv1862Raw) : new Map(),
     rv1909: rv1909Raw ? parseRv1909VerseIndex(rv1909Raw, "04") : new Map()
   };
 
@@ -339,16 +365,18 @@ export function resolveHistoricalRenderings(indexes, {
 }) {
   const bcv = referenceToBcv(book, chapter, verse);
   return {
-    rv1862: lookupRvRendering(indexes.rv1862, book, chapter, verse, strongs, occurrenceIndex),
-    rv1909: lookupRvRendering(indexes.rv1909, book, chapter, verse, strongs, occurrenceIndex),
-    spnbes: lookupUsfxRendering(
+    rv1862: lookupRvVerse(indexes.rv1862, book, chapter, verse)
+      || lookupRvRendering(indexes.rv1862, book, chapter, verse, strongs, occurrenceIndex),
+    rv1909: lookupRvVerse(indexes.rv1909, book, chapter, verse)
+      || lookupRvRendering(indexes.rv1909, book, chapter, verse, strongs, occurrenceIndex),
+    spnbes: indexes.spnbes.verseTextIndex.get(bcv) || lookupUsfxRendering(
       indexes.spnbes.strongIndex,
       indexes.spnbes.verseTextIndex,
       bcv,
       strongs,
       occurrenceIndex
     ),
-    spnvbl: lookupUsfxRendering(
+    spnvbl: indexes.spnvbl.verseTextIndex.get(bcv) || lookupUsfxRendering(
       indexes.spnvbl.strongIndex,
       indexes.spnvbl.verseTextIndex,
       bcv,

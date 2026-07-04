@@ -43,6 +43,7 @@ const popupFields = [
 const builtInThemes = window.CGV_STYLE_THEMES || [];
 let availableBibleVersions = ["NBLA"];
 let availableBackgrounds = [];
+let bibleStatus = null;
 
 let settings = {
   language: "es",
@@ -308,6 +309,36 @@ function renderBibleVersionSelect() {
   });
 
   select.value = settings.bibleVersion || "NBLA";
+  renderBibleStatus();
+}
+
+function renderBibleStatus() {
+  const status = document.getElementById("bibleStatusText");
+  const button = document.getElementById("installBibleButton");
+  if (!status || !button) return;
+
+  if (!bibleStatus) {
+    status.textContent = "";
+    button.disabled = true;
+    return;
+  }
+
+  const version = normalizeBibleVersion(document.getElementById("bibleVersionSelect")?.value || settings.bibleVersion);
+  const isSelectedStatus = normalizeBibleVersion(bibleStatus.version) === version;
+
+  if (isSelectedStatus && bibleStatus.loaded) {
+    status.textContent = t("bibleInstalled", {
+      version,
+      books: bibleStatus.books,
+      references: bibleStatus.references
+    });
+  } else if (availableBibleVersions.includes(version)) {
+    status.textContent = t("bibleAvailableToInstall", { version });
+  } else {
+    status.textContent = t("bibleNotFound", { version });
+  }
+
+  button.disabled = !availableBibleVersions.includes(version);
 }
 
 function renderBlankBackgroundSelect() {
@@ -440,10 +471,11 @@ function saveCurrentAsTheme() {
 }
 
 async function loadSettings() {
-  const [settingsResponse, bibleVersionsResponse, backgroundsResponse] = await Promise.all([
+  const [settingsResponse, bibleVersionsResponse, backgroundsResponse, bibleStatusResponse] = await Promise.all([
     fetch("/style-settings"),
     fetch("/bible/versions").catch(() => null),
-    fetch("/backgrounds").catch(() => null)
+    fetch("/backgrounds").catch(() => null),
+    fetch("/bible/status").catch(() => null)
   ]);
 
   if (bibleVersionsResponse?.ok) {
@@ -455,6 +487,10 @@ async function loadSettings() {
 
   if (backgroundsResponse?.ok) {
     availableBackgrounds = await backgroundsResponse.json();
+  }
+
+  if (bibleStatusResponse?.ok) {
+    bibleStatus = await bibleStatusResponse.json();
   }
 
   settings = normalizeSettings(await settingsResponse.json());
@@ -481,13 +517,42 @@ async function saveSettings() {
   status.textContent = `${t("saved")} ${new Date().toLocaleTimeString()}`;
 }
 
+async function installSelectedBible() {
+  const status = document.getElementById("statusText");
+  const version = normalizeBibleVersion(document.getElementById("bibleVersionSelect")?.value || settings.bibleVersion);
+
+  status.textContent = t("installingBible", { version });
+  const response = await fetch("/bible/install", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ version })
+  });
+
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    status.textContent = result.error || t("couldNotInstallBible", { version });
+    return;
+  }
+
+  bibleStatus = result;
+  availableBibleVersions = Array.from(new Set([version, ...availableBibleVersions])).sort((a, b) => a.localeCompare(b));
+  settings.bibleVersion = version;
+  renderBibleVersionSelect();
+  status.textContent = t("bibleInstallComplete", { version });
+}
+
 document.getElementById("saveButton").addEventListener("click", saveSettings);
 document.getElementById("applyThemeButton").addEventListener("click", applySelectedTheme);
 document.getElementById("saveThemeButton").addEventListener("click", saveCurrentAsTheme);
+document.getElementById("installBibleButton").addEventListener("click", installSelectedBible);
 document.getElementById("languageSelect").addEventListener("change", event => {
   settings = collectSettings();
   window.CGVI18N.setLanguage(event.target.value);
   renderSettings();
+});
+document.getElementById("bibleVersionSelect").addEventListener("change", () => {
+  settings = collectSettings();
+  renderBibleStatus();
 });
 window.addEventListener("hashchange", scrollToRequestedSection);
 loadSettings();

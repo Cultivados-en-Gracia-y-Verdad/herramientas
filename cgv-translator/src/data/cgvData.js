@@ -144,9 +144,9 @@ function verseIdToReferenceParts(verseId) {
   };
 }
 
-function formatMorphGntVerse(rows) {
+function formatMorphGntVerse(rows, targetRow = null) {
   return rows
-    .map(row => row.surfaceWithPunctuation)
+    .map(row => row === targetRow ? `**${row.surfaceWithPunctuation}**` : row.surfaceWithPunctuation)
     .join(" ")
     .replace(/\s+([,.;·:!?])/gu, "$1")
     .replace(/\s+([)\]])/gu, "$1")
@@ -175,15 +175,21 @@ async function findFirstExistingDir(paths) {
   return "";
 }
 
-async function readProjectLiteralIndex() {
+async function readProjectLiteralEvidence() {
   const interlinearDir = await findFirstExistingDir([
     join(cgvDataDir, "datasets", "interlinear", "NT"),
     resolve(rootDir, "../MNA/datasets/interlinear/NT")
   ]);
 
-  if (!interlinearDir) return new Map();
+  if (!interlinearDir) {
+    return {
+      tokenIndex: new Map(),
+      verseIndex: new Map()
+    };
+  }
 
-  const literalIndex = new Map();
+  const tokenIndex = new Map();
+  const verseRows = new Map();
   const files = (await readdir(interlinearDir).catch(() => []))
     .filter(file => file.endsWith(".tokens.jsonl"));
 
@@ -202,21 +208,50 @@ async function readProjectLiteralIndex() {
       if (!row.book || !row.ch || !row.vs || !row.lemma) continue;
 
       const key = `${row.book}|${row.ch}|${row.vs}|${row.lemma}|${normalizeComparableText(row.surface)}`;
-      if (!literalIndex.has(key)) {
-        literalIndex.set(key, []);
+      if (!tokenIndex.has(key)) {
+        tokenIndex.set(key, []);
       }
-      literalIndex.get(key).push(row.es || "");
+      tokenIndex.get(key).push(row.es || "");
+
+      const verseKey = `${row.book}|${row.ch}|${row.vs}`;
+      if (!verseRows.has(verseKey)) {
+        verseRows.set(verseKey, []);
+      }
+      verseRows.get(verseKey).push(row.es || "");
     }
   }
 
-  return literalIndex;
+  const verseIndex = new Map();
+  for (const [key, values] of verseRows) {
+    verseIndex.set(key, values.filter(Boolean).join(" ").replace(/\s+/gu, " ").trim());
+  }
+
+  return { tokenIndex, verseIndex };
 }
 
-async function readBleInterlinearIndex() {
+async function readBleEvidence() {
   const bleInterlinearDir = join(optionalBleOutputDir, "interlinear", "NT");
-  if (!(await fileExists(bleInterlinearDir))) return new Map();
+  const tokenIndex = new Map();
+  const verseIndex = new Map();
 
-  const bleIndex = new Map();
+  const bleFiles = (await readdir(optionalBleOutputDir).catch(() => []))
+    .filter(file => file.endsWith(".ble.md"));
+
+  for (const file of bleFiles) {
+    const book = file.replace(/\.ble\.md$/u, "");
+    const content = await readFile(join(optionalBleOutputDir, file), "utf8").catch(() => "");
+    for (const line of content.replace(/\r\n/g, "\n").split("\n")) {
+      const match = line.match(/^(.+?)\s+(\d+):(\d+)\s+(.+)$/u);
+      if (!match) continue;
+      const [, , chapter, verse, text] = match;
+      verseIndex.set(`${book}|${Number(chapter)}|${Number(verse)}`, text.trim());
+    }
+  }
+
+  if (!(await fileExists(bleInterlinearDir))) {
+    return { tokenIndex, verseIndex };
+  }
+
   const files = (await readdir(bleInterlinearDir).catch(() => []))
     .filter(file => file.endsWith(".interlinear.txt"));
 
@@ -232,15 +267,15 @@ async function readBleInterlinearIndex() {
       for (const token of tokens.matchAll(tokenPattern)) {
         const [, surface, lemma, strongs, morphology, rendering] = token;
         const key = `${book}|${Number(chapter)}|${Number(verse)}|${lemma}|${strongs}|${morphology}|${normalizeComparableText(surface)}`;
-        if (!bleIndex.has(key)) {
-          bleIndex.set(key, []);
+        if (!tokenIndex.has(key)) {
+          tokenIndex.set(key, []);
         }
-        bleIndex.get(key).push(rendering || "");
+        tokenIndex.get(key).push(rendering || "");
       }
     }
   }
 
-  return bleIndex;
+  return { tokenIndex, verseIndex };
 }
 
 function takeIndexedRendering(index, key) {
@@ -294,8 +329,8 @@ export async function getGreekOccurrencesByStrongs(strongs) {
   const verseRows = new Map();
   const candidateRows = [];
   const verseOccurrenceCounts = new Map();
-  const projectLiteralIndex = await readProjectLiteralIndex();
-  const bleInterlinearIndex = await readBleInterlinearIndex();
+  const projectLiteralEvidence = await readProjectLiteralEvidence();
+  const bleEvidence = await readBleEvidence();
   const translationIndexes = await loadTranslationIndexes(cgvDataDir);
 
   for (const file of files) {
@@ -332,6 +367,11 @@ export async function getGreekOccurrencesByStrongs(strongs) {
         row.lemma,
         normalizeComparableText(row.surfaceForm)
       ].join("|");
+      const verseKey = [
+        referenceParts.bookSlug,
+        referenceParts.chapter,
+        referenceParts.verse
+      ].join("|");
       const bleKey = [
         referenceParts.bookSlug,
         referenceParts.chapter,
@@ -348,11 +388,13 @@ export async function getGreekOccurrencesByStrongs(strongs) {
         lemma: row.lemma,
         strongs: normalizedStrongs,
         morphology: formatRmac(row.partOfSpeech, row.parsing),
-        greekText: formatMorphGntVerse(verseRows.get(row.verseId) || []),
+        greekText: formatMorphGntVerse(verseRows.get(row.verseId) || [], row),
         translations: {
           ...defaultTranslations(),
-          projectLiteral: takeIndexedRendering(projectLiteralIndex, literalKey),
-          ble: takeIndexedRendering(bleInterlinearIndex, bleKey),
+          projectLiteral: projectLiteralEvidence.verseIndex.get(verseKey)
+            || takeIndexedRendering(projectLiteralEvidence.tokenIndex, literalKey),
+          ble: bleEvidence.verseIndex.get(verseKey)
+            || takeIndexedRendering(bleEvidence.tokenIndex, bleKey),
           rv1862: historical.rv1862,
           rv1909: historical.rv1909,
           spnbes: historical.spnbes,

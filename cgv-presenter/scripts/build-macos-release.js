@@ -6,7 +6,7 @@ const root = path.resolve(__dirname, '..');
 const { version } = require('../package.json');
 
 const appBundle = path.join(root, 'out', 'CGV Presenter-darwin-arm64', 'CGV Presenter.app');
-const installerScript = path.join(__dirname, 'Install CGV Presenter.applescript');
+const installerScript = path.join(__dirname, 'Install CGV Presenter.js');
 const installerApp = path.join(root, 'out', 'make', 'Install CGV Presenter.app');
 const readmeSource = path.join(__dirname, 'macos-release-readme.txt');
 const stagingDir = path.join(root, 'out', 'make', `CGV-Presenter-macOS-arm64-${version}`);
@@ -29,7 +29,7 @@ fs.rmSync(installerApp, { recursive: true, force: true });
 fs.rmSync(stagingDir, { recursive: true, force: true });
 fs.mkdirSync(stagingDir, { recursive: true });
 
-run(`osacompile -o ${quote(installerApp)} ${quote(installerScript)}`);
+run(`osacompile -l JavaScript -o ${quote(installerApp)} ${quote(installerScript)}`);
 run(`codesign --force --deep --sign - ${quote(installerApp)}`);
 
 run(`ditto ${quote(appBundle)} ${quote(path.join(stagingDir, 'CGV Presenter.app'))}`);

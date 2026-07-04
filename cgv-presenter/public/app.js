@@ -281,8 +281,12 @@ function applySlideLayoutClass(element) {
   const hasOnlyCoverImage =
     clone.querySelectorAll("img").length === 1 &&
     !clone.querySelector("h1, h2, h3, h4, h5, h6, ul, ol, blockquote, .definition, .synthesis-box, .bible-ref, .manual-title, .manual-subtitle");
+  const hasH1Title = !!clone.querySelector("h1, .manual-title");
+  const hasH2Title = !hasH1Title && !!clone.querySelector("h2, .manual-subtitle");
 
   element.classList.toggle("title-slide", hasOnlyTitleContent);
+  element.classList.toggle("h1-title-slide", hasOnlyTitleContent && hasH1Title);
+  element.classList.toggle("h2-title-slide", hasOnlyTitleContent && hasH2Title);
   element.classList.toggle("cover-slide", hasOnlyCoverImage);
 }
 
@@ -473,13 +477,17 @@ function getProjectorBaseSize(element) {
 
   const textLength = clone.textContent.trim().length;
   const blockCount = clone.querySelectorAll("p, li, blockquote, h1, h2, h3, h4, h5, h6").length;
-  const hasMajorHeading = !!clone.querySelector("h1, h2");
+  const hasH1 = !!clone.querySelector("h1, .manual-title");
+  const hasH2 = !hasH1 && !!clone.querySelector("h2, .manual-subtitle");
+  const hasMajorHeading = hasH1 || hasH2;
 
-  const modeBoost = projectorMode === "extended" ? 10 : 0;
+  const modeBoost = projectorMode === "extended" ? 4 : 0;
 
-  if (hasMajorHeading && textLength < 90 && blockCount <= 2) return 78 + modeBoost;
-  if (hasMajorHeading && textLength < 180 && blockCount <= 3) return 69 + modeBoost;
-  return 60 + modeBoost;
+  if (hasH1 && textLength < 90 && blockCount <= 2) return 70 + modeBoost;
+  if (hasH1 && textLength < 180 && blockCount <= 3) return 64 + modeBoost;
+  if (hasH2 && textLength < 120 && blockCount <= 2) return 58 + modeBoost;
+  if (hasMajorHeading && textLength < 180 && blockCount <= 3) return 56 + modeBoost;
+  return 54 + modeBoost;
 }
 
 const TABLET_SURFACE_W = 1920;
@@ -507,7 +515,7 @@ function fitProjectorSlide(slideEl) {
       maxHeight: slideEl.clientHeight,
       maxWidth: slideEl.clientWidth,
       densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
-      sizeBoost: projectorMode === "extended" ? 14 : 0
+      sizeBoost: projectorMode === "extended" ? 6 : 0
     });
     return;
   }
@@ -521,7 +529,7 @@ function fitProjectorSlide(slideEl) {
     maxHeight: viewport.height - 160,
     maxWidth: Math.min(slideEl.clientWidth || viewport.width * 0.78, viewport.width - 140),
     densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
-    sizeBoost: projectorMode === "extended" ? 14 : 0
+    sizeBoost: projectorMode === "extended" ? 6 : 0
   });
 }
 

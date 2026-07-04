@@ -40,11 +40,11 @@ textarea {
   z-index: 5;
   border: 1px solid var(--reader-border);
   border-radius: 999px;
-  padding: 0.42rem 0.68rem;
+  padding: 0.5rem 0.78rem;
   background: rgba(255, 253, 250, 0.82);
   color: var(--reader-soft);
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   cursor: pointer;
 }
 
@@ -75,7 +75,7 @@ textarea {
   margin: 0;
   color: var(--reader-soft);
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: 1.12rem;
   letter-spacing: 0;
 }
 
@@ -94,7 +94,7 @@ textarea {
 
 .reader-chapter {
   display: grid;
-  grid-template-columns: minmax(56px, 0.22fr) minmax(0, 720px) minmax(150px, 0.34fr);
+  grid-template-columns: minmax(64px, 0.22fr) minmax(0, 780px) minmax(170px, 0.34fr);
   column-gap: clamp(18px, 4vw, 56px);
 }
 
@@ -114,7 +114,7 @@ textarea {
 .reader-line {
   display: grid;
   grid-column: 2 / 4;
-  grid-template-columns: minmax(0, 720px) minmax(150px, 0.34fr);
+  grid-template-columns: minmax(0, 780px) minmax(170px, 0.34fr);
   column-gap: clamp(18px, 4vw, 56px);
   position: relative;
   padding: 0.18rem 0;
@@ -127,7 +127,7 @@ textarea {
 .reader-verse {
   grid-column: 1;
   margin: 0 0 0.92rem;
-  font-size: clamp(1.52rem, 2.1vw, 2rem);
+  font-size: clamp(1.78rem, 2.55vw, 2.32rem);
   font-weight: 400;
   line-height: 1.72;
   letter-spacing: 0;
@@ -138,7 +138,7 @@ textarea {
   margin-right: 0.36rem;
   color: var(--reader-soft);
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   line-height: 0;
   vertical-align: super;
 }
@@ -147,8 +147,8 @@ textarea {
   position: absolute;
   left: -2.3rem;
   top: 0.66rem;
-  width: 1.45rem;
-  height: 1.45rem;
+  width: 1.65rem;
+  height: 1.65rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -191,7 +191,7 @@ textarea {
   background: transparent;
   color: var(--reader-note-text);
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   line-height: 1.45;
   text-align: left;
   cursor: pointer;
@@ -224,7 +224,7 @@ textarea {
   margin: 0 0 0.72rem;
   color: var(--reader-soft);
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
 }
 
 .reader-note-panel textarea {
@@ -237,7 +237,7 @@ textarea {
   background: #fffdfa;
   color: var(--reader-text);
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: 1.12rem;
   line-height: 1.55;
 }
 
@@ -260,7 +260,7 @@ textarea {
   background: transparent;
   color: var(--reader-note-text);
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  font-size: 0.92rem;
+  font-size: 1.02rem;
   cursor: pointer;
 }
 
@@ -306,13 +306,13 @@ textarea {
 .result-label {
   margin: 0 0 0.22rem;
   color: #756e64;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   letter-spacing: 0;
 }
 
 .o-header h1 {
   margin: 0;
-  font-size: clamp(1.4rem, 2.4vw, 2.15rem);
+  font-size: clamp(1.65rem, 2.8vw, 2.45rem);
   font-weight: 600;
   letter-spacing: 0;
 }
@@ -323,7 +323,7 @@ textarea {
   justify-content: flex-end;
   gap: 0.45rem;
   color: #756e64;
-  font-size: 0.85rem;
+  font-size: 0.98rem;
 }
 
 .o-header-meta span,
@@ -348,7 +348,7 @@ textarea {
 
 .o-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(250px, 340px);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
   gap: clamp(1rem, 2vw, 1.6rem);
   align-items: start;
   max-width: 1240px;
@@ -386,7 +386,7 @@ textarea {
   background: transparent;
   color: #756e64;
   font: inherit;
-  font-size: 1rem;
+  font-size: 1.08rem;
   cursor: pointer;
 }
 
@@ -441,6 +441,7 @@ textarea {
   padding: 0.22rem 0;
   background: transparent;
   color: #756e64;
+  font-size: 1.05rem;
   cursor: pointer;
 }
 
@@ -539,7 +540,7 @@ textarea {
 
 .token-surface {
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: clamp(1.34rem, 2vw, 1.72rem);
+  font-size: clamp(1.56rem, 2.35vw, 1.98rem);
   line-height: 1.04;
   white-space: nowrap;
 }
@@ -547,7 +548,7 @@ textarea {
 .token-morph {
   color: #756e64;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 0.58rem;
+  font-size: 0.68rem;
   line-height: 1;
   opacity: 0.68;
   white-space: nowrap;
@@ -588,7 +589,7 @@ textarea {
 .spanish-verse p {
   margin: 0;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: clamp(1.28rem, 1.8vw, 1.55rem);
+  font-size: clamp(1.48rem, 2.1vw, 1.78rem);
   line-height: 1.68;
 }
 
@@ -642,7 +643,7 @@ textarea {
 
 .result-card h2 {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.28rem;
   font-weight: 600;
 }
 
@@ -655,7 +656,7 @@ textarea {
 .terminology-note {
   margin: 0.7rem 0 0;
   color: #756e64;
-  font-size: 0.96rem;
+  font-size: 1.05rem;
   line-height: 1.45;
 }
 
@@ -676,7 +677,7 @@ textarea {
   padding: 0.32rem 0.52rem;
   background: #f5f2eb;
   color: #756e64;
-  font-size: 0.86rem;
+  font-size: 0.98rem;
   cursor: pointer;
 }
 
@@ -744,7 +745,7 @@ textarea {
   align-items: center;
   gap: 0.42rem;
   color: #22201c;
-  font-size: 0.94rem;
+  font-size: 1.04rem;
 }
 
 .recipient-actions {
@@ -792,7 +793,7 @@ textarea {
 .person-number-reference p {
   margin: 0;
   color: #756e64;
-  font-size: 0.98rem;
+  font-size: 1.06rem;
   line-height: 1.42;
 }
 
@@ -805,7 +806,7 @@ textarea {
 .person-number-reference span {
   color: #22201c;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   white-space: nowrap;
 }
 
@@ -823,20 +824,20 @@ textarea {
   background: #f5f2eb;
   color: #22201c;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 1.08rem;
+  font-size: 1.18rem;
 }
 
 .spanish-result {
   margin: 0.85rem 0 0;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 1.12rem;
+  font-size: 1.25rem;
   line-height: 1.62;
 }
 
 .result-placeholder {
   margin: 0.7rem 0 0;
   color: #756e64;
-  font-size: 0.96rem;
+  font-size: 1.05rem;
   line-height: 1.45;
 }
 
@@ -849,7 +850,7 @@ textarea {
 .result-count {
   margin: 0.3rem 0 0;
   color: #756e64;
-  font-size: 0.96rem;
+  font-size: 1.05rem;
 }
 
 .marked-heading button {
@@ -885,7 +886,7 @@ textarea {
   padding: 0.24rem 0.5rem;
   background: #e4eadc;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 1rem;
+  font-size: 1.12rem;
 }
 
 @media (max-width: 920px) {
@@ -957,6 +958,7 @@ textarea {
   }
 
   .reader-verse {
+    padding-right: 2.1rem;
     font-size: clamp(1.34rem, 6vw, 1.62rem);
     line-height: 1.68;
   }
@@ -979,54 +981,95 @@ textarea {
 }
 
 .clause-builder {
-  max-width: 52rem;
+  max-width: 82rem;
   margin: 0 auto;
-  padding: 1.5rem 1.25rem 3rem;
+  padding: 1.5rem clamp(1.25rem, 4vw, 2rem) 8rem;
   color: #23201b;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
 }
 
 .clause-builder-header h1 {
   margin: 0.2rem 0 0.4rem;
-  font-size: 2rem;
+  font-size: clamp(4rem, 11vw, 7rem);
   font-weight: 400;
+  line-height: 0.92;
 }
 
-.clause-builder-scope,
-.clause-builder-hint {
+.clause-builder-scope {
   margin: 0.2rem 0;
   color: #756e64;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+}
+
+.clause-workspace {
+  margin-top: clamp(2.5rem, 7vw, 5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 23rem);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.clause-view-switch {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+  border: 1px solid #ded5c7;
+  border-radius: 8px;
+  padding: 0.22rem;
+  background: rgba(250, 247, 240, 0.68);
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+}
+
+.clause-view-option {
+  border: 0;
+  border-radius: 6px;
+  padding: 0.42rem 0.7rem;
+  background: transparent;
+  color: #756e64;
+  font: inherit;
+  cursor: pointer;
+}
+
+.clause-view-option:hover,
+.clause-view-option:focus-visible,
+.clause-view-option--active {
+  background: #fffdf8;
+  color: #23201b;
+  outline: none;
+}
+
+.clause-view-option:disabled {
+  cursor: default;
+  opacity: 0.45;
 }
 
 .clause-builder-body {
-  margin-top: 1.5rem;
   display: grid;
-  gap: 1rem;
+  gap: 1.35rem;
 }
 
 .clause-verse {
   display: grid;
-  grid-template-columns: 2rem minmax(0, 1fr);
-  gap: 0.5rem;
+  grid-template-columns: 2.8rem minmax(0, 1fr);
+  gap: 0.8rem;
 }
 
 .clause-verse-label {
   margin: 0.2rem 0 0;
   color: #b8ac99;
-  font-size: 1.1rem;
+  font-size: 1.35rem;
 }
 
 .clause-verse-text {
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.65;
+  font-size: clamp(1.55rem, 2.4vw, 2rem);
+  line-height: 1.74;
 }
 
 .clause-word {
   border: 0;
   border-radius: 3px;
-  padding: 0 0.1rem;
+  padding: 0 0.03rem;
   background: transparent;
   color: inherit;
   font: inherit;
@@ -1034,35 +1077,19 @@ textarea {
 }
 
 .clause-word--verb {
-  border-bottom: 2px solid #c9a227;
-  background: rgba(243, 212, 140, 0.25);
-}
-
-.clause-word--active-verb {
-  background: #f3d48c;
-  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.35);
-}
-
-.clause-word--anchor {
-  outline: 1px dashed #c9a227;
-  outline-offset: 2px;
+  border-bottom: 2px solid rgba(181, 137, 29, 0.42);
 }
 
 .clause-word--belonging {
-  background: #cfe5e7;
-  box-shadow: 0 0 0 1px #6b929d;
-}
-
-.clause-verse-text--dragging {
-  user-select: none;
-  cursor: crosshair;
+  background: rgba(133, 184, 190, 0.48);
+  box-shadow: 0 0 0 1px rgba(77, 127, 139, 0.7);
 }
 
 .clause-panel-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0;
 }
 
 .clause-clear {
@@ -1075,48 +1102,71 @@ textarea {
 }
 
 .clause-word--saved {
-  background: rgba(207, 229, 231, 0.45);
+  background: rgba(207, 229, 231, 0.14);
+}
+
+.clause-word--verb-saved {
+  border-bottom-color: rgba(107, 146, 157, 0.55);
+  background: rgba(207, 229, 231, 0.14);
+}
+
+.clause-word--active-verb {
+  border-bottom-color: #c9a227;
+  background: #f3d48c;
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.35);
+}
+
+.clause-word--overlap {
+  text-decoration: underline dotted #9a7750 2px;
+  text-underline-offset: 0.18em;
 }
 
 .clause-word:disabled {
   cursor: default;
-  opacity: 0.85;
+  opacity: 1;
 }
 
-.clause-builder-panel {
-  margin-top: 2rem;
-  padding: 1rem;
+.clause-selection-panel {
+  position: fixed;
+  right: clamp(1rem, 4vw, 2rem);
+  bottom: clamp(1rem, 4vw, 2rem);
+  left: clamp(1rem, 4vw, 2rem);
+  z-index: 5;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.55rem 1rem;
+  align-items: center;
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: 0.85rem 1rem;
   border: 1px solid #ded5c7;
   border-radius: 8px;
-  background: #faf7f0;
-}
-
-.clause-builder-panel h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.clause-builder-panel h2 + h2 {
-  margin-top: 1.2rem;
+  background: rgba(250, 247, 240, 0.97);
+  box-shadow: 0 16px 36px rgba(73, 58, 35, 0.12);
+  backdrop-filter: blur(8px);
 }
 
 .clause-active-verb {
-  margin: 0 0 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.55rem;
+  align-items: baseline;
+  margin: 0;
   font-size: 1.1rem;
-}
-
-.clause-panel-label {
-  margin: 0 0 0.3rem;
-  color: #756e64;
-  font-size: 0.9rem;
 }
 
 .clause-belonging-list,
 .clause-empty,
-.clause-saved {
-  margin: 0 0 0.8rem;
-  font-size: 0.95rem;
+.clause-overlap-note {
+  grid-column: 1;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.clause-active-verb span,
+.clause-empty,
+.clause-overlap-note {
+  color: #756e64;
 }
 
 .clause-save {
@@ -1128,20 +1178,230 @@ textarea {
   cursor: pointer;
 }
 
-.clause-saved-list {
-  margin: 0;
-  padding-left: 1.2rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
+.clause-output {
+  position: sticky;
+  top: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  padding-right: 0.25rem;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
 }
 
-.clause-saved-verb {
-  border: 0;
-  padding: 0;
-  background: none;
-  color: #4a6a72;
-  font: inherit;
+.clause-output-section {
+  border-top: 1px solid #ded5c7;
+  padding-top: 0.85rem;
+}
+
+.clause-output-section h2 {
+  margin: 0 0 0.8rem;
+  color: #5f584e;
+  font-size: 1rem;
   font-weight: 600;
-  text-decoration: underline;
+}
+
+.clause-register-list,
+.clause-chain {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.clause-register-item {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 0.55rem 0.6rem;
+  background: transparent;
+  color: #23201b;
+  font: inherit;
+  text-align: left;
   cursor: pointer;
+}
+
+.clause-register-item:hover,
+.clause-register-item:focus-visible,
+.clause-register-item--active {
+  border-color: #ded5c7;
+  background: rgba(250, 247, 240, 0.78);
+  outline: none;
+}
+
+.clause-output-meta {
+  display: block;
+  color: #82796d;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.clause-register-span {
+  display: block;
+  margin-top: 0.18rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.clause-register-span--empty,
+.clause-output-empty {
+  color: #aaa092;
+}
+
+.clause-chain-line,
+.clause-output-empty {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
+.clause-chain-line > span:last-child {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.38;
+}
+
+.clause-only-view {
+  max-width: 54rem;
+  margin-top: clamp(2.5rem, 7vw, 5rem);
+}
+
+.clause-only-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #ded5c7;
+  padding-bottom: 1rem;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+}
+
+.clause-only-header h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.clause-only-header p {
+  margin: 0.22rem 0 0;
+  color: #756e64;
+  font-size: 0.96rem;
+}
+
+.clause-only-list {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 1rem;
+}
+
+.clause-only-item {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(222, 213, 199, 0.72);
+  padding: 0.35rem 0 0.85rem;
+  background: transparent;
+  color: #23201b;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.clause-only-item:hover,
+.clause-only-item:focus-visible {
+  color: #11100e;
+  outline: none;
+}
+
+.clause-only-item--dependent {
+  padding-left: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.clause-only-meta {
+  display: block;
+  margin: 0 0 0.22rem;
+  color: #82796d;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+.clause-only-text {
+  display: block;
+  margin: 0;
+  font-size: clamp(1.45rem, 2.1vw, 1.85rem);
+  line-height: 1.42;
+}
+
+.clause-line-token--finite {
+  border-bottom: 2px solid rgba(181, 137, 29, 0.72);
+  background: rgba(243, 212, 140, 0.26);
+}
+
+.clause-line-token--dependent {
+  background: rgba(127, 168, 151, 0.28);
+  box-shadow: inset 0 -2px rgba(82, 121, 105, 0.45);
+}
+
+.clause-dependent-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  color: #5f584e;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.clause-dependent-toggle input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #6b929d;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .clause-builder {
+    max-width: 58rem;
+  }
+
+  .clause-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .clause-output {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .clause-builder {
+    padding-bottom: 9rem;
+  }
+
+  .clause-verse {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: 0.55rem;
+  }
+
+  .clause-only-header {
+    display: block;
+  }
+
+  .clause-only-header .clause-clear {
+    margin-top: 0.85rem;
+  }
+
+  .clause-selection-panel {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    grid-template-columns: 1fr;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 8px 8px 0 0;
+  }
 }

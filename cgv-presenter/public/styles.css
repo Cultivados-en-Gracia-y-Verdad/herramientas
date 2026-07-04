@@ -33,7 +33,9 @@ body {
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --cgv-scripture-display-color: #f1d286;
+  --cgv-scripture-display-color: #e8d7b0;
+  --cgv-h1-title-background: #14532d;
+  --cgv-h1-title-border: #5eead4;
 }
 
 button,
@@ -50,7 +52,9 @@ textarea {
     var(--view-background, #f4f4f4);
   color: #111827;
   padding: 24px;
-  --cgv-scripture-display-color: #8a5f13;
+  --cgv-scripture-display-color: #755c2a;
+  --cgv-h1-title-background: #dff7ed;
+  --cgv-h1-title-border: #0f766e;
 }
 
 .topbar {
@@ -190,15 +194,23 @@ textarea {
 
 .slide h1,
 .projector-slide h1 {
+  display: inline-block;
+  max-width: min(100%, 18em);
+  border: 0.08em solid color-mix(in srgb, var(--cgv-h1-title-border, #5eead4) 72%, transparent);
+  border-radius: 0.18em;
+  background: var(--cgv-h1-title-background, #14532d);
+  box-shadow: 0 0.28em 0.9em rgba(0, 0, 0, 0.22);
+  color: var(--style-h1-color, #f8fafc);
   font-size: var(--style-h1-size, 1.5em);
   font-weight: 700;
+  padding: 0.42em 0.68em;
   text-transform: uppercase;
 }
 
 .slide h2,
 .projector-slide h2 {
   color: var(--style-h2-color, #184e77);
-  font-size: var(--style-h2-size, 1.24em);
+  font-size: var(--style-h2-size, 1.08em);
   font-weight: 500;
 }
 
@@ -217,7 +229,7 @@ textarea {
 .projector-slide h3 {
   margin-left: var(--style-h3-indent, 0);
   color: var(--style-h3-color, #075985);
-  font-size: calc(var(--style-h3-size, 1em) * 1.02);
+  font-size: calc(var(--style-h3-size, 1em) * 0.9);
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -232,7 +244,7 @@ textarea {
 .audience-slide blockquote,
 .audience-slide blockquote p {
   margin-left: var(--style-scripture-indent, 0);
-  color: var(--cgv-scripture-display-color, #f1d286);
+  color: var(--cgv-scripture-display-color, #e8d7b0);
   font-size: calc(var(--style-scripture-size, 0.98em) * 1.02);
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
@@ -259,7 +271,7 @@ textarea {
 .projector-slide h4,
 .audience-slide h4 {
   margin-left: var(--style-h4-indent, 1em);
-  color: var(--cgv-scripture-display-color, #f1d286);
+  color: var(--cgv-scripture-display-color, #e8d7b0);
   font-size: calc(var(--style-scripture-size, 0.98em) * 1.03);
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
@@ -344,7 +356,7 @@ textarea {
   font-style: italic;
   font-weight: 400;
   line-height: var(--style-scripture-line-height, 1.42);
-  color: var(--cgv-scripture-display-color, #f1d286);
+  color: var(--cgv-scripture-display-color, #e8d7b0);
   letter-spacing: 0.01em;
   word-spacing: 0.03em;
 }
@@ -378,17 +390,24 @@ textarea {
 }
 
 .manual-title {
+  display: inline-block;
+  max-width: min(100%, 18em);
+  border: 0.08em solid color-mix(in srgb, var(--cgv-h1-title-border, #5eead4) 72%, transparent);
+  border-radius: 0.18em;
+  background: var(--cgv-h1-title-background, #14532d);
+  box-shadow: 0 0.28em 0.9em rgba(0, 0, 0, 0.22);
   color: var(--style-h1-color, #ffffff);
   font-size: var(--style-h1-size, 1.5em);
   font-weight: 700;
   line-height: 0.95;
   margin: 0 auto 0.16em;
+  padding: 0.42em 0.68em;
   text-transform: uppercase;
 }
 
 .manual-subtitle {
   color: var(--style-h2-color, #dff3ff);
-  font-size: var(--style-h2-size, 1.24em);
+  font-size: var(--style-h2-size, 1.08em);
   font-style: italic;
   font-weight: 500;
   line-height: 1.12;
@@ -398,6 +417,22 @@ textarea {
 .next em::before,
 .next em::after {
   content: "";
+}
+
+.section-context {
+  align-self: stretch;
+  width: min(100%, 22em);
+  margin: 0 0 0.56em;
+  border-left: 0.22em solid var(--style-h2-color, #8bd3ff);
+  color: color-mix(in srgb, var(--style-h2-color, #dbeafe) 84%, #ffffff 16%);
+  font-size: 0.42em;
+  font-style: normal;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  line-height: 1.18;
+  padding: 0.12em 0 0.16em 0.52em;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .definition {
@@ -982,6 +1017,27 @@ button {
   margin: auto 0;
 }
 
+.projector-slide.title-slide.h1-title-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - clamp(104px, 13vh, 152px));
+  width: min(86vw, 1480px);
+  max-width: min(86vw, 1480px);
+  margin: 0;
+  text-align: center;
+}
+
+.projector-slide.title-slide.h2-title-slide {
+  margin: 0;
+  text-align: center;
+}
+
+.projector-slide.title-slide.h2-title-slide h2,
+.projector-slide.title-slide.h2-title-slide .manual-subtitle {
+  margin-top: 0;
+}
+
 .projector-slide.song-output {
   display: grid;
   align-content: center;
@@ -1096,12 +1152,12 @@ button {
 
 .projector-slide h2 {
   color: var(--style-h2-color, #dff3ff);
-  font-size: var(--style-h2-size, 1.42em);
+  font-size: var(--style-h2-size, 1.12em);
 }
 
 .projector-slide h3 {
   color: var(--style-h3-color, #38bdf8);
-  font-size: calc(var(--style-h3-size, 1em) * 1.02);
+  font-size: calc(var(--style-h3-size, 1em) * 0.9);
 }
 
 .projector-slide h3 + p,
@@ -1109,7 +1165,7 @@ button {
 .projector-slide blockquote,
 .projector-slide blockquote p,
 .projector-slide em {
-  color: var(--cgv-scripture-display-color, #f1d286);
+  color: var(--cgv-scripture-display-color, #e8d7b0);
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.36);
 }
 
@@ -1118,7 +1174,7 @@ button {
 .audience-slide blockquote,
 .audience-slide blockquote p,
 .audience-slide em {
-  color: var(--cgv-scripture-display-color, #f1d286);
+  color: var(--cgv-scripture-display-color, #e8d7b0);
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.28);
 }
 
@@ -1175,7 +1231,7 @@ button {
 .presenter .slide blockquote,
 .presenter .slide blockquote p,
 .presenter .slide em {
-  color: var(--cgv-scripture-display-color, #8a5f13);
+  color: var(--cgv-scripture-display-color, #755c2a);
   text-shadow: none;
 }
 
@@ -1183,7 +1239,7 @@ button {
 .presenter .slide h4,
 .presenter .slide blockquote {
   padding-left: 0.5em;
-  border-left: 0.08em solid color-mix(in srgb, var(--cgv-scripture-display-color, #8a5f13) 42%, transparent);
+  border-left: 0.08em solid color-mix(in srgb, var(--cgv-scripture-display-color, #755c2a) 42%, transparent);
 }
 
 .projector-slide .synthesis-box {
@@ -1371,7 +1427,7 @@ button {
     max(24px, env(safe-area-inset-left));
   touch-action: manipulation;
   -webkit-text-size-adjust: 100%;
-  --cgv-scripture-display-color: #f1d286;
+  --cgv-scripture-display-color: #e8d7b0;
 }
 
 .audience-stage {
@@ -1488,8 +1544,15 @@ button {
 }
 
 .audience-slide.title-slide {
-  margin-top: calc((100vh - 340px) / 2);
   text-align: center;
+}
+
+.audience-slide.title-slide.h1-title-slide {
+  margin-top: calc((100vh - 340px) / 2);
+}
+
+.audience-slide.title-slide.h2-title-slide {
+  margin-top: 0;
 }
 
 .audience-slide p {

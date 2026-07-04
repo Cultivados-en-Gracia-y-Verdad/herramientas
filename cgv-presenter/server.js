@@ -91,6 +91,7 @@ const defaultSongRepository = {
 };
 const synthesisMarker = "::roots-synthesis::";
 const h4IntroMarker = "::roots-h4-intro::";
+const sectionContextMarker = "::roots-section-context::";
 
 app.use(express.json({ limit: "30mb" }));
 app.use(
@@ -1151,6 +1152,10 @@ function getBibleFileExtension(version = getBibleVersion()) {
   return `.${normalizeBibleVersion(version).toLowerCase()}.md`;
 }
 
+function getCgvDataBibleRoot() {
+  return path.resolve(__dirname, "..", "..", "cgv-data", "bibles");
+}
+
 function serverText(key) {
   const language = getAppLanguage();
   const translations = {
@@ -1304,9 +1309,7 @@ function buildBibleBookAliases(book) {
 function loadBibleReferences() {
   const version = getBibleVersion();
   const fileExtension = getBibleFileExtension(version);
-  const bibleDir = getBibleSearchPaths()
-    .filter(Boolean)
-    .find(candidate => getBibleFileCount(candidate) > 0);
+  const bibleDir = getActiveBibleDir(version);
 
   if (!bibleDir) {
     bibleReferences = {};
@@ -1376,6 +1379,7 @@ function getBibleSearchRoots() {
 
   return Array.from(new Set([
     path.join(getLibraryRootDir(), "bibles"),
+    getCgvDataBibleRoot(),
     process.resourcesPath ? path.join(process.resourcesPath, "bibles") : "",
     process.resourcesPath ? path.join(process.resourcesPath, "app.asar.unpacked", "bibles") : "",
     process.execPath ? path.join(path.dirname(process.execPath), "resources", "bibles") : "",
@@ -1387,10 +1391,32 @@ function getBibleSearchRoots() {
   ].filter(Boolean)));
 }
 
+function getBibleVersionDirectories(root, version = getBibleVersion()) {
+  const normalizedVersion = normalizeBibleVersion(version);
+  const baseDir = path.join(root, normalizedVersion);
+  const directories = [baseDir];
+
+  try {
+    if (!fs.existsSync(baseDir)) return directories;
+
+    fs.readdirSync(baseDir, { withFileTypes: true })
+      .filter(entry => entry.isDirectory() && !entry.name.startsWith("."))
+      .forEach(entry => {
+        directories.push(path.join(baseDir, entry.name));
+      });
+  } catch {
+    // Some packaged paths cannot be read directly on every platform.
+  }
+
+  return directories;
+}
+
 function getBibleSearchPaths(version = getBibleVersion()) {
   return Array.from(new Set([
-    getUserBibleDir(version),
-    ...getBibleSearchRoots().map(root => path.join(root, version)),
+    ...getBibleVersionDirectories(path.join(getLibraryRootDir(), "bibles"), version),
+    ...getBibleSearchRoots()
+      .filter(root => root !== path.join(getLibraryRootDir(), "bibles"))
+      .flatMap(root => getBibleVersionDirectories(root, version)),
     version === "NBLA" ? legacyNblaDir : ""
   ].filter(Boolean)));
 }
@@ -1405,6 +1431,14 @@ function getBibleFileCount(candidate, version = getBibleVersion()) {
   }
 }
 
+function getActiveBibleDir(version = getBibleVersion(), options = {}) {
+  const userDir = getUserBibleDir(version);
+
+  return getBibleSearchPaths(version)
+    .filter(candidate => options.includeUser !== false || candidate !== userDir)
+    .find(candidate => getBibleFileCount(candidate, version) > 0) || "";
+}
+
 function getAvailableBibleVersions() {
   const versions = new Set();
 
@@ -1416,8 +1450,10 @@ function getAvailableBibleVersions() {
         .filter(entry => entry.isDirectory())
         .forEach(entry => {
           const version = normalizeBibleVersion(entry.name);
-          const candidate = path.join(root, entry.name);
-          if (getBibleFileCount(candidate, version) > 0) versions.add(version);
+          if (getBibleVersionDirectories(root, version)
+            .some(candidate => getBibleFileCount(candidate, version) > 0)) {
+            versions.add(version);
+          }
         });
     } catch {
       // Some packaged paths cannot be read directly on every platform.
@@ -1431,6 +1467,10 @@ function getAvailableBibleVersions() {
 
 function getBibleStatus() {
   const version = getBibleVersion();
+  const activeDir = getActiveBibleDir(version);
+  const installSourceDir = getActiveBibleDir(version, { includeUser: false });
+  const userDir = getUserBibleDir(version);
+
   return {
     version,
     availableVersions: getAvailableBibleVersions(),
@@ -1438,6 +1478,9 @@ function getBibleStatus() {
     books: bibleBookNames.length,
     references: Object.keys(bibleReferences).length,
     sampleBooks: bibleBookNames.slice(0, 8),
+    activeDir,
+    userDir,
+    canInstall: Boolean(installSourceDir),
     searchPaths: getBibleSearchPaths().map(candidate => ({
       path: candidate,
       exists: fs.existsSync(candidate),
@@ -1639,6 +1682,15 @@ function getMarkdownHeadingLevel(line) {
 }
 
 function renderLine(line) {
+  if (String(line || "").startsWith(sectionContextMarker)) {
+    const context = JSON.parse(String(line).slice(sectionContextMarker.length));
+    return `
+      <div class="section-context level-${Number(context.level) || 2}">
+        ${enrichBibleReferences(renderMarkdownInline(context.text).trim())}
+      </div>
+    `.trim();
+  }
+
   const manualTitle = parseManualTitleBlock(line);
   if (manualTitle) {
     return `
@@ -1937,14 +1989,7 @@ function seedStarterBible() {
 
   if (hasUserBible) return;
 
-  const sourceDir = firstExistingDirectory([
-    process.resourcesPath ? path.join(process.resourcesPath, "bibles", version) : "",
-    process.resourcesPath ? path.join(process.resourcesPath, "app.asar.unpacked", "bibles", version) : "",
-    process.execPath ? path.join(path.dirname(process.execPath), "resources", "bibles", version) : "",
-    path.join(__dirname, "bibles", version),
-    path.join(process.cwd(), "bibles", version),
-    version === "NBLA" ? legacyNblaDir : ""
-  ]);
+  const sourceDir = getActiveBibleDir(version, { includeUser: false });
 
   if (!sourceDir) return;
   copyDirectoryFiltered(sourceDir, targetDir, {
@@ -2690,13 +2735,45 @@ function getFirstH4(lines) {
   return line.split("\n")[0] || null;
 }
 
-function applyStickyH4(slidesToProcess) {
+function getFirstHeadingLine(lines, level) {
+  const prefix = `${"#".repeat(level)} `;
+  return lines.find(item => item.startsWith(prefix)) || null;
+}
+
+function hasSynthesisSlide(lines) {
+  return lines.some(line => String(line || "").startsWith(synthesisMarker));
+}
+
+function buildSectionContextLine(line) {
+  return `${sectionContextMarker}${JSON.stringify({
+    level: getMarkdownHeadingLevel(line),
+    text: line.replace(/^#{1,6}\s+/, "").trim()
+  })}`;
+}
+
+function applyStickyHeadings(slidesToProcess) {
   let stickyH4 = null;
+  let stickyH2 = null;
 
   return slidesToProcess.map(slide => {
     const firstHeadingLevel = getFirstHeadingLevel(slide.lines);
+    const slideH1 = getFirstHeadingLine(slide.lines, 1);
+    const slideH2 = getFirstHeadingLine(slide.lines, 2);
     const slideH4 = getFirstH4(slide.lines);
-    const sticky = firstHeadingLevel && firstHeadingLevel > 4 ? stickyH4 : null;
+    const isSynthesisSlide = hasSynthesisSlide(slide.lines);
+    const sticky = [];
+
+    if (isSynthesisSlide) {
+      stickyH2 = null;
+    }
+
+    if (!isSynthesisSlide && stickyH2 && (!firstHeadingLevel || firstHeadingLevel > 2)) {
+      sticky.push(stickyH2);
+    }
+
+    if (firstHeadingLevel && firstHeadingLevel > 4 && stickyH4) {
+      sticky.push(stickyH4);
+    }
 
     if (slideH4) {
       stickyH4 = slideH4;
@@ -2704,9 +2781,15 @@ function applyStickyH4(slidesToProcess) {
       stickyH4 = null;
     }
 
+    if (isSynthesisSlide || slideH1) {
+      stickyH2 = null;
+    } else if (slideH2) {
+      stickyH2 = buildSectionContextLine(slideH2);
+    }
+
     return {
       ...slide,
-      stickyLines: sticky ? [sticky] : []
+      stickyLines: sticky
     };
   });
 }
@@ -3528,7 +3611,7 @@ function loadSlides() {
 
   presentationMeta = parsedDocument.meta;
 
-  const parsedSlides = applyStickyH4(parsedDocument.body
+  const parsedSlides = applyStickyHeadings(parsedDocument.body
     .split(/\n\s*\n/)
     .map(block =>
       block
@@ -3746,6 +3829,33 @@ app.get("/bible/versions", (req, res) => {
     selected: getBibleVersion(),
     versions: getAvailableBibleVersions()
   });
+});
+
+app.post("/bible/install", (req, res) => {
+  const version = normalizeBibleVersion(req.body?.version || getBibleVersion());
+  const sourceDir = getActiveBibleDir(version, { includeUser: false });
+  const targetDir = getUserBibleDir(version);
+
+  if (!sourceDir) {
+    res.status(404).json({ error: `No ${version} Bible files were found to install.` });
+    return;
+  }
+
+  try {
+    copyDirectoryFiltered(sourceDir, targetDir, {
+      excludeFiles: new Set([".DS_Store"]),
+      skipExisting: false
+    });
+
+    saveStyleSettings({
+      ...loadStyleSettings(),
+      bibleVersion: version
+    });
+    loadBibleReferences();
+    res.json(getBibleStatus());
+  } catch (error) {
+    res.status(500).json({ error: error.message || "Could not install Bible files." });
+  }
 });
 
 app.get("/bible/test", (req, res) => {

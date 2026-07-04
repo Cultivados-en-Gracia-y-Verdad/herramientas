@@ -1,9 +1,14 @@
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
+const fs = require('fs');
 const path = require('path');
 
 const macEntitlements = path.resolve(__dirname, 'build', 'entitlements.mac.plist');
 const appIcon = path.resolve(__dirname, 'assets', 'cgv-app-icon');
+const cgvDataBibles = path.resolve(__dirname, '..', '..', 'cgv-data', 'bibles');
+const bundledBibles = fs.existsSync(cgvDataBibles)
+  ? cgvDataBibles
+  : path.resolve(__dirname, 'bibles');
 
 module.exports = {
   packagerConfig: {
@@ -20,7 +25,7 @@ module.exports = {
       }),
     },
     extraResource: [
-      path.resolve(__dirname, 'bibles'),
+      bundledBibles,
       path.resolve(__dirname, 'courses', 'Romanos'),
       path.resolve(__dirname, 'songs'),
     ],

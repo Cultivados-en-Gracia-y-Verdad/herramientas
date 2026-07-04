@@ -1,6 +1,7 @@
 import { parseNblaContent } from "cgv-bible";
 import type { BibleVerse } from "cgv-bible";
 import titusNbla from "../../../cgv-data/bibles/NBLA/tito.nbla.md?raw";
+import titusMorph from "../../../cgv-data/morphology/MorphGNT/77-Tit-morphgnt.txt?raw";
 import titusAlignment from "../../MNA/datasets/interlinear/NT/tito.tokens.jsonl?raw";
 
 export interface SpanishWord {
@@ -10,8 +11,10 @@ export interface SpanishWord {
   index: number;
   text: string;
   finiteVerbId: string | null;
+  dependentIntroducerId: string | null;
   greekSurface?: string;
   greekMorph?: string;
+  dependentGreekSurface?: string;
   startChar: number;
   endChar: number;
 }
@@ -42,10 +45,13 @@ export interface ClauseAssignment {
 export type ClauseAssignments = Record<string, ClauseAssignment>;
 
 const WORD_PATTERN = /[\wáéíóúüñÁÉÍÓÚÜÑ]+|[^\s\wáéíóúüñÁÉÍÓÚÜÑ]+/gu;
-export const CLAUSE_STORAGE_KEY = "the-reader:spanish-clause-builder:titus:v1";
+const FINITE_MARKS_KEY = "o-prototype:titus:finite-verb-marks";
+const DEPENDENT_INTRODUCER_MARKS_KEY = "roots:titus:brick3:dependentThoughtIntroducers";
+export const CLAUSE_STORAGE_KEY = "the-reader:spanish-clause-builder:titus:v3";
 const LEGACY_CLAUSE_STORAGE_KEY = "the-reader:clause-builder:titus:1:1-4:v2";
 
 const FINITE_ANCHOR_OVERRIDES: Record<string, { text: string; occurrence?: number }> = {
+  "1:5:10": { text: "pusieras" },
   "1:5:12": { text: "designaras" },
   "1:10:1": { text: "hay" },
   "1:11:7": { text: "están", occurrence: 1 },
@@ -87,6 +93,54 @@ function spanishHintParts(value: string): string[] {
     .filter(Boolean);
 }
 
+function readMarkedAlignmentIds(storageKey: string): Set<string> {
+  let markedGreekIds: string[];
+
+  try {
+    const stored = window.localStorage.getItem(storageKey);
+    if (!stored) return new Set();
+    const parsed = JSON.parse(stored);
+    markedGreekIds = Array.isArray(parsed) ? parsed.filter((id): id is string => typeof id === "string") : [];
+  } catch {
+    return new Set();
+  }
+
+  if (!markedGreekIds.length) return new Set();
+
+  const markedGreekIdSet = new Set(markedGreekIds);
+  const alignmentIds = new Set<string>();
+  const verseTokenCounts = new Map<string, number>();
+
+  titusMorph
+    .replace(/\r\n/g, "\n")
+    .split("\n")
+    .forEach((line, index) => {
+      const match = line.trim().match(/^(\d{6})\s+/);
+      if (!match) return;
+
+      const reference = match[1];
+      const chapter = Number(reference.slice(2, 4));
+      const verse = Number(reference.slice(4, 6));
+      const verseKey = `${chapter}:${verse}`;
+      const token = (verseTokenCounts.get(verseKey) ?? 0) + 1;
+      verseTokenCounts.set(verseKey, token);
+
+      if (markedGreekIdSet.has(`${reference}-${index}`)) {
+        alignmentIds.add(finiteAlignmentId(chapter, verse, token));
+      }
+    });
+
+  return alignmentIds;
+}
+
+function readFiniteMarkedAlignmentIds(): Set<string> {
+  return readMarkedAlignmentIds(FINITE_MARKS_KEY);
+}
+
+function readDependentIntroducerMarkedAlignmentIds(): Set<string> {
+  return readMarkedAlignmentIds(DEPENDENT_INTRODUCER_MARKS_KEY);
+}
+
 function tokenizeVerse(verse: BibleVerse): SpanishWord[] {
   const words: SpanishWord[] = [];
   let index = 0;
@@ -102,6 +156,7 @@ function tokenizeVerse(verse: BibleVerse): SpanishWord[] {
       index,
       text: piece,
       finiteVerbId: null,
+      dependentIntroducerId: null,
       startChar: match.index,
       endChar: match.index + piece.length
     });
@@ -146,6 +201,40 @@ function parseFiniteAlignments(): FiniteAlignment[] {
     }));
 }
 
+function parseTokenAlignments(): FiniteAlignment[] {
+  return titusAlignment
+    .replace(/\r\n/g, "\n")
+    .split("\n")
+    .map(line => {
+      try {
+        return JSON.parse(line);
+      } catch {
+        return null;
+      }
+    })
+    .filter((row): row is Record<string, unknown> => Boolean(row))
+    .filter(row => {
+      return (
+        row.book === "tito" &&
+        typeof row.ch === "number" &&
+        typeof row.vs === "number" &&
+        typeof row.tok === "number" &&
+        typeof row.surface === "string" &&
+        typeof row.morph === "string" &&
+        typeof row.es === "string"
+      );
+    })
+    .map(row => ({
+      id: finiteAlignmentId(row.ch as number, row.vs as number, row.tok as number),
+      chapter: row.ch as number,
+      verse: row.vs as number,
+      token: row.tok as number,
+      greekSurface: row.surface as string,
+      greekMorph: row.morph as string,
+      spanishHint: row.es as string
+    }));
+}
+
 function findAnchorIndex(
   alignment: FiniteAlignment,
   words: SpanishWord[],
@@ -160,6 +249,7 @@ function findAnchorIndex(
 
   const parts = spanishHintParts(alignment.spanishHint);
   for (const part of parts) {
+    if (part.length < 4) continue;
     const exact = words.find(word => word.index >= cursor && normalize(word.text) === part);
     if (exact) return exact.index;
   }
@@ -169,12 +259,36 @@ function findAnchorIndex(
     const soft = words.find(word => {
       if (word.index < cursor) return false;
       const text = normalize(word.text);
+      if (text.length < 4) return false;
       return text.startsWith(part.slice(0, 4)) || part.startsWith(text.slice(0, 4));
     });
     if (soft) return soft.index;
   }
 
   return -1;
+}
+
+function findHintSpanIndexes(alignment: FiniteAlignment, words: SpanishWord[]): number[] {
+  const parts = spanishHintParts(alignment.spanishHint).filter(part => part.length >= 2);
+  if (!parts.length) return [];
+
+  for (let start = 0; start <= words.length - parts.length; start += 1) {
+    const indexes: number[] = [];
+    let matches = true;
+
+    for (let offset = 0; offset < parts.length; offset += 1) {
+      if (normalize(words[start + offset].text) !== parts[offset]) {
+        matches = false;
+        break;
+      }
+      indexes.push(words[start + offset].index);
+    }
+
+    if (matches) return indexes;
+  }
+
+  const anchorIndex = findAnchorIndex(alignment, words, 0);
+  return anchorIndex >= 0 ? [anchorIndex] : [];
 }
 
 export function loadTitusClauseVerses(): SpanishClauseVerse[] {
@@ -188,8 +302,12 @@ export function loadTitusClauseVerses(): SpanishClauseVerse[] {
 
   const verseByKey = new Map(verses.map(verse => [`${verse.chapter}:${verse.verse}`, verse]));
   const cursors = new Map<string, number>();
+  const markedFiniteAlignmentIds = readFiniteMarkedAlignmentIds();
+  const markedDependentIntroducerAlignmentIds = readDependentIntroducerMarkedAlignmentIds();
 
   for (const alignment of parseFiniteAlignments()) {
+    if (!markedFiniteAlignmentIds.has(alignment.id)) continue;
+
     const key = `${alignment.chapter}:${alignment.verse}`;
     const verse = verseByKey.get(key);
     if (!verse) continue;
@@ -200,6 +318,21 @@ export function loadTitusClauseVerses(): SpanishClauseVerse[] {
     anchor.greekSurface = alignment.greekSurface;
     anchor.greekMorph = alignment.greekMorph;
     cursors.set(key, anchor.index + 1);
+  }
+
+  for (const alignment of parseTokenAlignments()) {
+    if (!markedDependentIntroducerAlignmentIds.has(alignment.id)) continue;
+
+    const key = `${alignment.chapter}:${alignment.verse}`;
+    const verse = verseByKey.get(key);
+    if (!verse) continue;
+
+    for (const index of findHintSpanIndexes(alignment, verse.words)) {
+      const word = verse.words[index];
+      if (!word) continue;
+      word.dependentIntroducerId = alignment.id;
+      word.dependentGreekSurface = alignment.greekSurface;
+    }
   }
 
   return verses;

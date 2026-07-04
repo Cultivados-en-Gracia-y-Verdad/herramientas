@@ -31,6 +31,7 @@ const metaOriginReference = document.querySelector("#meta-origin-reference");
 const metaCurrentStatus = document.querySelector("#meta-current-status");
 const tabBar = document.querySelector("#tabs");
 const editor = document.querySelector("#editor");
+const evidenceViewer = document.querySelector("#evidence-viewer");
 const saveStatus = document.querySelector("#save-status");
 const saveButton = document.querySelector("#save-button");
 const gatherEvidence = document.querySelector("#gather-evidence");
@@ -122,6 +123,99 @@ function renderTabs() {
   }
 }
 
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function renderInlineMarkdown(value) {
+  const escaped = escapeHtml(value);
+  return escaped.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+}
+
+function appendMarkdownParagraph(parent, line) {
+  const fieldMatch = line.match(/^([^:]+):\s*(.*)$/u);
+  const paragraph = document.createElement("p");
+
+  if (fieldMatch) {
+    paragraph.className = "evidence-line";
+    const label = document.createElement("strong");
+    label.textContent = `${fieldMatch[1]}:`;
+    paragraph.append(label, " ");
+    const value = document.createElement("span");
+    value.innerHTML = renderInlineMarkdown(fieldMatch[2]);
+    paragraph.append(value);
+  } else {
+    paragraph.innerHTML = renderInlineMarkdown(line);
+  }
+
+  parent.append(paragraph);
+}
+
+function renderEvidenceMarkdown(markdown) {
+  const fragment = document.createDocumentFragment();
+  const stack = [fragment];
+
+  const currentParent = () => stack[stack.length - 1];
+
+  for (const rawLine of markdown.replace(/\r\n/g, "\n").split("\n")) {
+    const line = rawLine.trim();
+    if (!line) continue;
+
+    if (line === "<details>") {
+      const details = document.createElement("details");
+      details.className = "usage-block";
+      currentParent().append(details);
+      stack.push(details);
+      continue;
+    }
+
+    if (line === "</details>") {
+      if (stack.length > 1) stack.pop();
+      continue;
+    }
+
+    const summaryMatch = line.match(/^<summary>(.*)<\/summary>$/u);
+    if (summaryMatch) {
+      const summary = document.createElement("summary");
+      summary.textContent = summaryMatch[1];
+      currentParent().append(summary);
+      continue;
+    }
+
+    const headingMatch = line.match(/^(#{1,6})\s+(.+)$/u);
+    if (headingMatch) {
+      const level = Math.min(headingMatch[1].length, 4);
+      const heading = document.createElement(`h${level}`);
+      heading.textContent = headingMatch[2];
+      currentParent().append(heading);
+      continue;
+    }
+
+    if (line === "---") {
+      currentParent().append(document.createElement("hr"));
+      continue;
+    }
+
+    appendMarkdownParagraph(currentParent(), line.replace(/\s{2}$/u, ""));
+  }
+
+  evidenceViewer.replaceChildren(fragment);
+}
+
+function showEditor() {
+  editor.hidden = false;
+  evidenceViewer.hidden = true;
+}
+
+function showEvidenceViewer() {
+  editor.hidden = true;
+  evidenceViewer.hidden = false;
+}
+
 async function saveCurrent() {
   if (state.evidenceFile || !state.dirty || state.saving) return;
   state.saving = true;
@@ -175,6 +269,7 @@ async function openTab(tab) {
 }
 
 async function loadCurrentFile() {
+  showEditor();
   editor.disabled = true;
   editor.readOnly = false;
   saveButton.disabled = false;
@@ -204,9 +299,11 @@ async function openEvidenceFile(fileName) {
   );
   state.evidenceFile = fileName;
   editor.value = content;
+  renderEvidenceMarkdown(content);
   state.dirty = false;
+  showEvidenceViewer();
   editor.disabled = false;
-  editor.focus();
+  evidenceViewer.focus();
   prototypeMessage.textContent = `Viewing ${fileName}.`;
 }
 
@@ -370,10 +467,23 @@ window.addEventListener("beforeunload", event => {
   event.preventDefault();
 });
 
-await loadInvestigations();
-renderTabs();
-if (window.location.hash === "#investigation/INV-0001") {
-  await openInvestigation("INV-0001");
-} else {
+async function openInitialRoute() {
+  if (window.location.hash.startsWith("#investigation/")) {
+    await openInvestigation("INV-0001");
+    return;
+  }
+
   showTranslationView();
 }
+
+window.addEventListener("hashchange", () => {
+  if (window.location.hash.startsWith("#investigation/")) {
+    void openInvestigation("INV-0001").catch(error => {
+      prototypeMessage.textContent = error.message || "Investigation load error.";
+    });
+  }
+});
+
+await loadInvestigations();
+renderTabs();
+await openInitialRoute();

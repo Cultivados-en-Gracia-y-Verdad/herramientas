@@ -392,9 +392,12 @@ h2 {
 }
 
 .document-stage {
+  height: 100%;
   min-height: 0;
-  overflow: auto;
-  padding: 0.55rem max(1.15rem, calc((100vw - 880px) / 2)) 3rem;
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+  overflow: hidden;
+  padding: 0.55rem max(1.15rem, calc((100vw - 880px) / 2)) 1rem;
 }
 
 .document-tools {
@@ -439,24 +442,96 @@ h2 {
 
 .editor-layout {
   width: min(880px, 100%);
-  min-height: calc(100vh - 7.6rem);
+  height: min(52rem, calc(100vh - 14rem));
+  min-height: min(34rem, calc(100vh - 14rem));
   margin: 0.45rem auto 0;
 }
 
 #editor {
   width: 100%;
-  height: calc(100vh - 10rem);
-  min-height: 34rem;
-  resize: vertical;
+  height: 100%;
+  min-height: 0;
+  resize: none;
   border: 0;
   border-radius: 3px;
-  padding: clamp(1.4rem, 4vw, 3.2rem);
+  padding: clamp(0.9rem, 2vw, 1.35rem);
   background: var(--paper);
   color: var(--text);
   box-shadow: 0 18px 70px rgba(61, 47, 28, 0.08);
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-size: 1.22rem;
-  line-height: 1.82;
+  line-height: 1.35;
+}
+
+.evidence-viewer {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border: 0;
+  border-radius: 3px;
+  padding: clamp(0.85rem, 2vw, 1.25rem);
+  background: var(--paper);
+  color: var(--text);
+  box-shadow: 0 18px 70px rgba(61, 47, 28, 0.08);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.evidence-viewer:focus {
+  outline: 2px solid rgba(95, 111, 82, 0.18);
+}
+
+.evidence-viewer h1 {
+  margin: 0 0 0.55rem;
+  font-size: 1.55rem;
+}
+
+.evidence-viewer h2 {
+  margin: 1rem 0 0.45rem;
+  font-size: 1.18rem;
+}
+
+.evidence-viewer h4 {
+  margin: 0.85rem 0 0.35rem;
+  color: var(--muted);
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.evidence-viewer p {
+  margin: 0.18rem 0;
+}
+
+.evidence-line strong {
+  color: var(--muted);
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.86rem;
+}
+
+.usage-block {
+  border-top: 1px solid var(--border);
+  padding: 0.18rem 0;
+}
+
+.usage-block summary {
+  padding: 0.42rem 0.2rem;
+  color: var(--text);
+  cursor: pointer;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.usage-block summary:hover,
+.usage-block summary:focus-visible {
+  background: var(--accent-soft);
+  outline: none;
+}
+
+.usage-block[open] {
+  padding-bottom: 0.8rem;
 }
 
 #editor:focus {
@@ -586,7 +661,7 @@ h2 {
   }
 
   #editor {
-    height: calc(100vh - 13rem);
-    min-height: 28rem;
+    height: 100%;
+    min-height: 0;
   }
 }

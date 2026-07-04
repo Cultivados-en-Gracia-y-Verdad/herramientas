@@ -17,10 +17,7 @@ else
 fi
 
 echo "Installing CGV Presenter..."
-xattr -cr "$SOURCE_APP"
-codesign --force --deep --sign - "$SOURCE_APP"
 rm -rf "$TARGET"
 cp -R "$SOURCE_APP" "$TARGET"
 xattr -cr "$TARGET"
-codesign --force --deep --sign - "$TARGET"
 open "$TARGET"

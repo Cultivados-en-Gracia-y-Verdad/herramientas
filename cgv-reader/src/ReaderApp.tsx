@@ -508,6 +508,17 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
     return assigned;
   }, [commandRecipientGroups]);
 
+  const displayedCommandTokens = useMemo(() => {
+    if (recipientLens === "All Commands") return commandTokens;
+
+    const visibleIds = new Set<string>();
+    for (const group of commandRecipientGroups) {
+      if (group.recipient !== recipientLens) continue;
+      group.tokenIds.forEach(tokenId => visibleIds.add(tokenId));
+    }
+    return commandTokens.filter(token => visibleIds.has(token.id));
+  }, [commandRecipientGroups, commandTokens, recipientLens]);
+
   const groupedTokenIds = useMemo(() => {
     const grouped = new Set<string>();
     for (const group of commandRecipientGroups) {
@@ -621,14 +632,24 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
 
   const saveCommandRecipientGroup = useCallback(() => {
     if (!draftGroupTokenIds.length) return;
-    setCommandRecipientGroups(current => [
-      ...current,
-      {
+    const selectedIds = new Set(draftGroupTokenIds);
+    setCommandRecipientGroups(current => {
+      const withoutSelected = current
+        .map(group => ({
+          ...group,
+          tokenIds: group.tokenIds.filter(tokenId => !selectedIds.has(tokenId))
+        }))
+        .filter(group => group.tokenIds.length);
+
+      return [
+        ...withoutSelected,
+        {
         id: makeLocalId("command-group"),
         recipient: draftRecipient,
         tokenIds: draftGroupTokenIds
-      }
-    ]);
+        }
+      ];
+    });
     setDraftGroupTokenIds([]);
     setRecipientLens(draftRecipient);
   }, [draftGroupTokenIds, draftRecipient]);
@@ -868,20 +889,24 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
                 ))}
               </div>
               <div className="command-jump-list" aria-label="Command verbs">
-                {commandTokens.map(token => (
-                  <button
-                    type="button"
-                    className={
-                      allAssignedCommandTokenIds.has(token.id)
-                        ? "command-jump command-jump--assigned"
-                        : "command-jump"
-                    }
-                    key={token.id}
-                    onClick={() => focusCommandToken(token)}
-                  >
-                    {stripCriticalMarks(token.surface)}
-                  </button>
-                ))}
+                {displayedCommandTokens.length ? (
+                  displayedCommandTokens.map(token => (
+                    <button
+                      type="button"
+                      className={
+                        allAssignedCommandTokenIds.has(token.id)
+                          ? "command-jump command-jump--assigned"
+                          : "command-jump"
+                      }
+                      key={token.id}
+                      onClick={() => focusCommandToken(token)}
+                    >
+                      {stripCriticalMarks(token.surface)}
+                    </button>
+                  ))
+                ) : (
+                  <p className="result-placeholder">No commands assigned here yet.</p>
+                )}
               </div>
             </section>
           )}
