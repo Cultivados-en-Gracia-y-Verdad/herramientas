@@ -31,6 +31,14 @@ const prototypeStrongMappings = {
   G1401: {
     lemma: "δοῦλος",
     subject: "G1401 δοῦλος"
+  },
+  G652: {
+    lemma: "ἀπόστολος",
+    subject: "G652 ἀπόστολος"
+  },
+  G4102: {
+    lemma: "πίστις",
+    subject: "G4102 πίστις"
   }
 };
 
@@ -145,8 +153,9 @@ function verseIdToReferenceParts(verseId) {
 }
 
 function formatMorphGntVerse(rows, targetRow = null) {
+  const targetRows = Array.isArray(targetRow) ? new Set(targetRow) : new Set(targetRow ? [targetRow] : []);
   return rows
-    .map(row => row === targetRow ? `**${row.surfaceWithPunctuation}**` : row.surfaceWithPunctuation)
+    .map(row => targetRows.has(row) ? `**${row.surfaceWithPunctuation}**` : row.surfaceWithPunctuation)
     .join(" ")
     .replace(/\s+([,.;·:!?])/gu, "$1")
     .replace(/\s+([)\]])/gu, "$1")
@@ -156,6 +165,35 @@ function formatMorphGntVerse(rows, targetRow = null) {
 
 function formatRmac(partOfSpeech, parsing) {
   return `${partOfSpeech}${String(parsing || "").replace(/^-+/u, "").replace(/-+$/u, "")}`;
+}
+
+function extractCaseCode(parsing) {
+  return String(parsing || "").replace(/-/gu, "").match(/[NGDAV]/u)?.[0] || "";
+}
+
+function caseDescription(caseCode) {
+  return {
+    N: "Nominative",
+    G: "Genitive",
+    D: "Dative",
+    A: "Accusative",
+    V: "Vocative"
+  }[caseCode] || "";
+}
+
+function pad3(value) {
+  return String(value).padStart(3, "0");
+}
+
+function morphBookToBibleBook(book) {
+  const value = Number(book);
+  return Number.isFinite(value) ? String(value + 39).padStart(2, "0") : "";
+}
+
+function sourceTokenId(referenceParts, tokenPosition) {
+  const bibleBook = morphBookToBibleBook(referenceParts.book);
+  if (!bibleBook || !tokenPosition) return "";
+  return `${bibleBook}${pad3(referenceParts.chapter)}${pad3(referenceParts.verse)}${pad3(tokenPosition)}`;
 }
 
 function normalizeComparableText(value) {
@@ -230,23 +268,32 @@ async function readProjectLiteralEvidence() {
 }
 
 async function readBleEvidence() {
-  const bleInterlinearDir = join(optionalBleOutputDir, "interlinear", "NT");
   const tokenIndex = new Map();
   const verseIndex = new Map();
 
-  const bleFiles = (await readdir(optionalBleOutputDir).catch(() => []))
-    .filter(file => file.endsWith(".ble.md"));
+  for (const bleDir of [
+    join(cgvDataDir, "bibles", "BLE"),
+    optionalBleOutputDir
+  ]) {
+    const bleFiles = (await readdir(bleDir).catch(() => []))
+      .filter(file => file.endsWith(".ble.md"));
 
-  for (const file of bleFiles) {
-    const book = file.replace(/\.ble\.md$/u, "");
-    const content = await readFile(join(optionalBleOutputDir, file), "utf8").catch(() => "");
-    for (const line of content.replace(/\r\n/g, "\n").split("\n")) {
-      const match = line.match(/^(.+?)\s+(\d+):(\d+)\s+(.+)$/u);
-      if (!match) continue;
-      const [, , chapter, verse, text] = match;
-      verseIndex.set(`${book}|${Number(chapter)}|${Number(verse)}`, text.trim());
+    for (const file of bleFiles) {
+      const book = file.replace(/\.ble\.md$/u, "");
+      const content = await readFile(join(bleDir, file), "utf8").catch(() => "");
+      for (const line of content.replace(/\r\n/g, "\n").split("\n")) {
+        const match = line.match(/^(.+?)\s+(\d+):(\d+)\s+(.+)$/u);
+        if (!match) continue;
+        const [, , chapter, verse, text] = match;
+        const key = `${book}|${Number(chapter)}|${Number(verse)}`;
+        if (!verseIndex.has(key)) {
+          verseIndex.set(key, text.trim());
+        }
+      }
     }
   }
+
+  const bleInterlinearDir = join(optionalBleOutputDir, "interlinear", "NT");
 
   if (!(await fileExists(bleInterlinearDir))) {
     return { tokenIndex, verseIndex };
@@ -276,6 +323,48 @@ async function readBleEvidence() {
   }
 
   return { tokenIndex, verseIndex };
+}
+
+async function readMorphGntRows() {
+  const morphDir = await findFirstExistingDir([
+    join(cgvDataDir, "morphology", "MorphGNT"),
+    join(cgvDataDir, "SOURCES", "MorphGNT"),
+    resolve(rootDir, "../MNA/SOURCES/MorphGNT")
+  ]);
+
+  if (!morphDir) {
+    throw missingGreekDataError(`Checked cgv-data path: ${cgvDataDir}`);
+  }
+
+  const files = (await readdir(morphDir))
+    .filter(file => file.endsWith("-morphgnt.txt"))
+    .sort();
+
+  if (files.length === 0) {
+    throw missingGreekDataError(`Checked MorphGNT directory: ${morphDir}`);
+  }
+
+  const verseRows = new Map();
+  const rows = [];
+
+  for (const file of files) {
+    const content = await readFile(join(morphDir, file), "utf8");
+    for (const line of content.replace(/\r\n/g, "\n").split("\n")) {
+      const row = parseMorphLine(line);
+      if (!row) continue;
+
+      if (!verseRows.has(row.verseId)) {
+        verseRows.set(row.verseId, []);
+      }
+      const verseRowList = verseRows.get(row.verseId);
+      row.file = file;
+      row.tokenPosition = verseRowList.length + 1;
+      rows.push(row);
+      verseRowList.push(row);
+    }
+  }
+
+  return { rows, verseRows };
 }
 
 function takeIndexedRendering(index, key) {
@@ -384,6 +473,10 @@ export async function getGreekOccurrencesByStrongs(strongs) {
 
       occurrences.push({
         reference: referenceParts.reference,
+        book: referenceParts.book,
+        bookName: bookNames[referenceParts.book] || `Book ${referenceParts.book}`,
+        chapter: referenceParts.chapter,
+        verse: referenceParts.verse,
         surfaceForm: row.surfaceForm,
         lemma: row.lemma,
         strongs: normalizedStrongs,
@@ -416,6 +509,146 @@ export async function getGreekOccurrencesByStrongs(strongs) {
     strongs: normalizedStrongs,
     lemma: mapping.lemma,
     subject: mapping.subject,
+    source: "cgv-data MorphGNT SBLGNT",
+    cgvDataPath: cgvDataDir,
+    occurrences
+  };
+}
+
+export async function getGreekConstructionEvidence({
+  strongs,
+  lemma,
+  surface,
+  reference,
+  rmac,
+  prepositionLemma,
+  prepositionSurface,
+  caseCode
+}) {
+  const normalizedStrongs = String(strongs || "").trim().toUpperCase();
+  const targetLemma = String(lemma || prototypeStrongMappings[normalizedStrongs]?.lemma || "").trim();
+  const targetSurface = String(surface || "").trim();
+  const targetCase = String(caseCode || "A").trim().toUpperCase();
+  const prepLemma = String(prepositionLemma || "κατά").trim();
+  const prepSurface = String(prepositionSurface || "κατὰ").trim();
+  const selectedReference = String(reference || "").trim();
+  const selectedRmac = String(rmac || "").trim();
+
+  if (!targetLemma) {
+    throw missingGreekDataError(`No lemma supplied for construction evidence.`);
+  }
+
+  const { verseRows } = await readMorphGntRows();
+  const projectLiteralEvidence = await readProjectLiteralEvidence();
+  const bleEvidence = await readBleEvidence();
+  const translationIndexes = await loadTranslationIndexes(cgvDataDir);
+  const occurrenceCounts = new Map();
+  const occurrences = [];
+
+  for (const [verseId, rows] of verseRows.entries()) {
+    rows.forEach((row, index) => {
+      const previous = rows[index - 1];
+      const matchesConstruction = previous
+        && previous.lemma === prepLemma
+        && row.lemma === targetLemma
+        && extractCaseCode(row.parsing) === targetCase;
+
+      if (!matchesConstruction) return;
+
+      const referenceParts = verseIdToReferenceParts(verseId);
+      const previousSourceTokenId = sourceTokenId(referenceParts, previous.tokenPosition);
+      const selectedSourceTokenId = sourceTokenId(referenceParts, row.tokenPosition);
+      const occurrenceIndex = occurrenceCounts.get(verseId) ?? 0;
+      occurrenceCounts.set(verseId, occurrenceIndex + 1);
+      const historical = resolveHistoricalRenderings(translationIndexes, {
+        book: referenceParts.book,
+        chapter: referenceParts.chapter,
+        verse: referenceParts.verse,
+        strongs: normalizedStrongs,
+        occurrenceIndex,
+        sourceTokenIds: [previousSourceTokenId, selectedSourceTokenId].filter(Boolean)
+      });
+      const literalKey = [
+        referenceParts.bookSlug,
+        referenceParts.chapter,
+        referenceParts.verse,
+        row.lemma,
+        normalizeComparableText(row.surfaceForm)
+      ].join("|");
+      const verseKey = [
+        referenceParts.bookSlug,
+        referenceParts.chapter,
+        referenceParts.verse
+      ].join("|");
+      const bleKey = [
+        referenceParts.bookSlug,
+        referenceParts.chapter,
+        referenceParts.verse,
+        row.lemma,
+        normalizedStrongs,
+        formatRmac(row.partOfSpeech, row.parsing),
+        normalizeComparableText(row.surfaceForm)
+      ].join("|");
+
+      occurrences.push({
+        reference: referenceParts.reference,
+        book: referenceParts.book,
+        bookName: bookNames[referenceParts.book] || `Book ${referenceParts.book}`,
+        chapter: referenceParts.chapter,
+        verse: referenceParts.verse,
+        constructionText: `${previous.surfaceForm} ${row.surfaceForm}`,
+        constructionPattern: `${previous.lemma} + ${row.lemma} + ${caseDescription(extractCaseCode(row.parsing)).toLowerCase() || extractCaseCode(row.parsing)}`,
+        greekText: formatMorphGntVerse(rows, [previous, row]),
+        surfaceForm: row.surfaceForm,
+        lemma: row.lemma,
+        strongs: normalizedStrongs,
+        morphology: formatRmac(row.partOfSpeech, row.parsing),
+        caseCode: extractCaseCode(row.parsing),
+        caseDescription: caseDescription(extractCaseCode(row.parsing)),
+        preposition: {
+          surfaceForm: previous.surfaceForm,
+          lemma: previous.lemma,
+          morphology: formatRmac(previous.partOfSpeech, previous.parsing)
+        },
+        sourceTokenIds: [previousSourceTokenId, selectedSourceTokenId].filter(Boolean),
+        translations: {
+          ...defaultTranslations(),
+          projectLiteral: projectLiteralEvidence.verseIndex.get(verseKey)
+            || takeIndexedRendering(projectLiteralEvidence.tokenIndex, literalKey),
+          ble: bleEvidence.verseIndex.get(verseKey)
+            || takeIndexedRendering(bleEvidence.tokenIndex, bleKey),
+          rv1862: historical.rv1862,
+          rv1909: historical.rv1909,
+          spnbes: historical.spnbes,
+          spnvbl: historical.spnvbl
+        },
+        source: {
+          morphology: `morphology/MorphGNT/${row.file}`,
+          greekText: `morphology/MorphGNT/${row.file}`,
+          sourceNt: "SBLGNT"
+        }
+      });
+    });
+  }
+
+  return {
+    investigationReference: selectedReference,
+    selectedToken: targetSurface,
+    selectedRmac,
+    construction: `${prepSurface} ${targetSurface || targetLemma}`,
+    searchPattern: `${prepSurface} + ${targetLemma} + ${caseDescription(targetCase).toLowerCase() || targetCase}`,
+    matchBasis: "same preposition + same lemma + same case",
+    preposition: {
+      surfaceForm: prepSurface,
+      lemma: prepLemma
+    },
+    target: {
+      surfaceForm: targetSurface,
+      lemma: targetLemma,
+      strongs: normalizedStrongs,
+      caseCode: targetCase,
+      caseDescription: caseDescription(targetCase)
+    },
     source: "cgv-data MorphGNT SBLGNT",
     cgvDataPath: cgvDataDir,
     occurrences

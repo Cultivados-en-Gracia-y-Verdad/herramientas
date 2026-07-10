@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 
 const bookUsfxCodes = {
@@ -336,21 +336,177 @@ function lookupRvVerse(index, book, chapter, verse) {
   return index.get(`${book}|${chapter}|${verse}`) || "";
 }
 
+function bibleBookToMorphBook(book) {
+  const value = Number(book);
+  if (!Number.isFinite(value) || value < 40) return "";
+  return String(value - 39).padStart(2, "0");
+}
+
+function stripLeadingVerseNumber(text) {
+  return String(text || "").trim().replace(/^\d+\s*/u, "");
+}
+
+function tokenizeVerseText(text) {
+  const normalized = stripLeadingVerseNumber(text);
+  const matches = [...normalized.matchAll(/[\p{L}\p{N}]+(?:[’'][\p{L}\p{N}]+)?|[.,;:!?¿¡()[\]—-]/gu)];
+  return matches.map((match, index) => ({
+    position: index + 1,
+    text: match[0]
+  }));
+}
+
+function formatTokenSpan(tokens) {
+  return tokens
+    .map(token => token.text)
+    .join(" ")
+    .replace(/\s+([.,;:!?()[\]—-])/gu, "$1")
+    .replace(/([¿¡])\s+/gu, "$1")
+    .trim();
+}
+
+function parseMarkdownVerseIndex(content) {
+  const verseTextIndex = new Map();
+  const tokenIndex = new Map();
+  const normalized = content.replace(/\r\n/g, "\n");
+  const headingPattern = /^##\s+.+?\s+(\d+):(\d+)\s+\(id:\s*100(\d{2})(\d{3})(\d{3})\)$/gmu;
+  const headings = [...normalized.matchAll(headingPattern)];
+
+  for (let index = 0; index < headings.length; index += 1) {
+    const match = headings[index];
+    const next = headings[index + 1];
+    const [, chapterText, verseText, bibleBook, chapterFromId, verseFromId] = match;
+    const block = normalized.slice(match.index + match[0].length, next?.index ?? normalized.length);
+    const verseLine = block
+      .split("\n")
+      .map(line => line.trim())
+      .find(line => line && !line.startsWith("#") && !line.startsWith("-"));
+    if (!verseLine) continue;
+
+    const morphBook = bibleBookToMorphBook(bibleBook);
+    if (!morphBook) continue;
+
+    const chapter = Number(chapterFromId || chapterText);
+    const verse = Number(verseFromId || verseText);
+    const verseKey = `${morphBook}|${chapter}|${verse}`;
+    const fullVerseKey = `${bibleBook}${chapterFromId}${verseFromId}`;
+    const cleanText = stripLeadingVerseNumber(verseLine);
+    verseTextIndex.set(verseKey, cleanText);
+    tokenIndex.set(fullVerseKey, tokenizeVerseText(verseLine));
+  }
+
+  return { verseTextIndex, tokenIndex };
+}
+
+function mergeMarkdownVerseIndexes(indexes) {
+  const merged = {
+    verseTextIndex: new Map(),
+    tokenIndex: new Map()
+  };
+
+  for (const index of indexes) {
+    for (const [key, value] of index.verseTextIndex) {
+      merged.verseTextIndex.set(key, value);
+    }
+    for (const [key, value] of index.tokenIndex) {
+      merged.tokenIndex.set(key, value);
+    }
+  }
+
+  return merged;
+}
+
+function parseAlignmentIndex(contents, targetTokenIndex) {
+  const sourceToTargets = new Map();
+
+  for (const content of contents) {
+    let data;
+    try {
+      data = JSON.parse(content);
+    } catch {
+      continue;
+    }
+
+    for (const record of data.records || []) {
+      const sourceIds = (record.source || [])
+        .map(value => String(value).match(/^n?(\d+)\|/u)?.[1])
+        .filter(Boolean);
+      const targetIds = (record.target || [])
+        .map(value => String(value).match(/^(\d+)\|/u)?.[1])
+        .filter(Boolean);
+
+      for (const sourceId of sourceIds) {
+        if (!sourceToTargets.has(sourceId)) sourceToTargets.set(sourceId, []);
+        sourceToTargets.get(sourceId).push(...targetIds);
+      }
+    }
+  }
+
+  return { sourceToTargets, targetTokenIndex };
+}
+
+function lookupAlignedSpan(alignmentIndex, sourceTokenIds = []) {
+  if (!alignmentIndex || !sourceTokenIds.length) return "";
+  const targetIds = sourceTokenIds.flatMap(id => {
+    const normalizedId = String(id).replace(/^n/u, "");
+    return alignmentIndex.sourceToTargets.get(normalizedId) || alignmentIndex.sourceToTargets.get(String(id)) || [];
+  });
+  if (!targetIds.length) return "";
+
+  const verseIds = [...new Set(targetIds.map(id => id.slice(0, 8)))];
+  if (verseIds.length !== 1) return "";
+
+  const positions = targetIds
+    .map(id => Number(id.slice(8, 11)))
+    .filter(Number.isFinite);
+  if (!positions.length) return "";
+
+  const min = Math.min(...positions);
+  const max = Math.max(...positions);
+  const tokens = alignmentIndex.targetTokenIndex.get(verseIds[0]) || [];
+  return formatTokenSpan(tokens.filter(token => token.position >= min && token.position <= max));
+}
+
+export function resolveAlignedSpan(indexes, sourceTokenIds = []) {
+  return lookupAlignedSpan(indexes?.rv1909Alignment, sourceTokenIds);
+}
+
 export async function loadTranslationIndexes(cgvDataDir) {
   if (cachedIndexes) return cachedIndexes;
 
-  const [spnbesRaw, spnvblRaw, rv1862Raw, rv1909Raw] = await Promise.all([
+  const [spnbesRaw, spnvblRaw, rv1862Raw, legacyRv1909Raw] = await Promise.all([
     readFile(join(cgvDataDir, "bibles/SPNBES/spa-bes.usfx.xml"), "utf8").catch(() => ""),
     readFile(join(cgvDataDir, "bibles/SPNVBL/spa-vbl.usfx.xml"), "utf8").catch(() => ""),
     readFile(join(cgvDataDir, "bibles/RV1862/7va6210.txt"), "utf8").catch(() => ""),
     readFile(join(cgvDataDir, "bibles/RV1909/7va0910.txt"), "utf8").catch(() => "")
   ]);
+  const rv1909MdDir = join(cgvDataDir, "bibles/RV1909/md");
+  const rv1909AlignmentDir = join(cgvDataDir, "bibles/RV1909/alignments");
+  const [rv1909MdFiles, rv1909AlignmentFiles] = await Promise.all([
+    readdir(rv1909MdDir).catch(() => []),
+    readdir(rv1909AlignmentDir).catch(() => [])
+  ]);
+  const rv1909MarkdownIndexes = await Promise.all(
+    rv1909MdFiles
+      .filter(file => file.endsWith(".content.md"))
+      .map(async file => parseMarkdownVerseIndex(
+        await readFile(join(rv1909MdDir, file), "utf8").catch(() => "")
+      ))
+  );
+  const rv1909Markdown = mergeMarkdownVerseIndexes(rv1909MarkdownIndexes);
+  const rv1909AlignmentContents = await Promise.all(
+    rv1909AlignmentFiles
+      .filter(file => file.endsWith(".alignment.json"))
+      .map(file => readFile(join(rv1909AlignmentDir, file), "utf8").catch(() => ""))
+  );
 
   cachedIndexes = {
     spnbes: spnbesRaw ? buildUsfxIndexes(spnbesRaw) : emptyUsfxIndexes(),
     spnvbl: spnvblRaw ? buildUsfxIndexes(spnvblRaw) : emptyUsfxIndexes(),
     rv1862: rv1862Raw ? parseRv1862VerseIndex(rv1862Raw) : new Map(),
-    rv1909: rv1909Raw ? parseRv1909VerseIndex(rv1909Raw, "04") : new Map()
+    rv1909: rv1909Markdown.verseTextIndex.size
+      ? rv1909Markdown.verseTextIndex
+      : (legacyRv1909Raw ? parseRv1909VerseIndex(legacyRv1909Raw, "04") : new Map()),
+    rv1909Alignment: parseAlignmentIndex(rv1909AlignmentContents, rv1909Markdown.tokenIndex)
   };
 
   return cachedIndexes;
@@ -361,13 +517,15 @@ export function resolveHistoricalRenderings(indexes, {
   chapter,
   verse,
   strongs,
-  occurrenceIndex
+  occurrenceIndex,
+  sourceTokenIds = []
 }) {
   const bcv = referenceToBcv(book, chapter, verse);
   return {
     rv1862: lookupRvVerse(indexes.rv1862, book, chapter, verse)
       || lookupRvRendering(indexes.rv1862, book, chapter, verse, strongs, occurrenceIndex),
-    rv1909: lookupRvVerse(indexes.rv1909, book, chapter, verse)
+    rv1909: lookupAlignedSpan(indexes.rv1909Alignment, sourceTokenIds)
+      || lookupRvVerse(indexes.rv1909, book, chapter, verse)
       || lookupRvRendering(indexes.rv1909, book, chapter, verse, strongs, occurrenceIndex),
     spnbes: indexes.spnbes.verseTextIndex.get(bcv) || lookupUsfxRendering(
       indexes.spnbes.strongIndex,

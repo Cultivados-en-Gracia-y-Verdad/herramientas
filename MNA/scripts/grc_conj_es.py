@@ -8,6 +8,7 @@ from pathlib import Path
 from grc_inflect_es import (
     INVARIANT_GLOSS_PREFIXES,
     inflect_past_participle,
+    is_participle_morph,
     split_punct,
 )
 
@@ -120,6 +121,10 @@ IRREGULAR_PRESENT: dict[str, tuple[str, str, str, str, str, str]] = {
 IRREGULAR_IMPERATIVE: dict[str, dict[tuple[str, str], str]] = {
     "rogar": {("2", "S"): "ruega"},
     "recordar": {("2", "S"): "recuerda"},
+}
+
+IRREGULAR_SUBJUNCTIVE: dict[str, tuple[str, str, str, str, str, str]] = {
+    "llegar": ("llegue", "llegues", "llegue", "lleguemos", "lleguéis", "lleguen"),
 }
 
 IRREGULAR_FUTURE: dict[str, tuple[str, str, str, str, str, str]] = {
@@ -249,6 +254,8 @@ def _lookup_form(
     core, punct = split_punct(inf.lower())
 
     if mood in ("S", "O"):
+        if core in IRREGULAR_SUBJUNCTIVE:
+            return IRREGULAR_SUBJUNCTIVE[core][idx] + punct
         if tense in ("A", "X"):
             form = _regular_present_subjunctive(core, idx)
         else:
@@ -342,9 +349,41 @@ def conjugate_infinitive(inf: str, morph: str) -> str | None:
     return core + punct
 
 
+def inflect_ginomai(morph: str) -> str | None:
+    """Conjugate γίνομαι as llegar + a·ser instead of mangling llegar·a·ser."""
+    if is_infinitive_verb_morph(morph):
+        return "llegar·a·ser"
+    if is_participle_morph(morph):
+        tense = morph[3] if len(morph) > 3 else "P"
+        if tense == "P":
+            return "llegando a·ser"
+        return "llegado a·ser"
+    if not is_finite_verb_morph(morph):
+        return None
+    parsed = parse_verb_morph(morph)
+    if not parsed:
+        return None
+    person = parsed["person"] or "3"
+    number = parsed["number"] or "S"
+    tense = parsed["tense"] or "P"
+    mood = parsed["mood"] or "I"
+    voice = parsed["voice"] or "M"
+    if voice == "P" and mood == "I" and tense in ("A", "X", "Y"):
+        voice = "M"
+    llegar_form = _lookup_form("llegar", tense, mood, person, number, voice)
+    if not llegar_form and voice != "A":
+        llegar_form = _lookup_form("llegar", tense, mood, person, number, "A")
+    if not llegar_form:
+        return None
+    core, punct = split_punct(llegar_form)
+    return f"{core} a·ser{punct}"
+
+
 def inflect_verb_gloss(gloss: str, morph: str, lemma: str = "") -> str | None:
     if gloss.startswith(INVARIANT_GLOSS_PREFIXES) or gloss in ("", "?"):
         return None
+    if lemma == "γίνομαι":
+        return inflect_ginomai(morph)
     if lemma == "εἰμί" and morph in EIMI_BY_MORPH:
         return EIMI_BY_MORPH[morph]
     if is_infinitive_verb_morph(morph):
@@ -355,6 +394,8 @@ def inflect_verb_gloss(gloss: str, morph: str, lemma: str = "") -> str | None:
 
 
 def inflect_verb_from_lemma(lemma: str, base_gloss: str, morph: str) -> str | None:
+    if lemma == "γίνομαι":
+        return inflect_ginomai(morph)
     if lemma == "εἰμί" and morph in EIMI_BY_MORPH:
         return EIMI_BY_MORPH[morph]
     return inflect_verb_gloss(base_gloss, morph, lemma)

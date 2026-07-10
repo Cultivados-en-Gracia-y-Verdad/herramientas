@@ -1,6 +1,5 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { BibleVerse } from "cgv-bible";
-import { dependentThoughtIntroducers } from "./o-brick-config";
 import SpanishClauseBuilder from "./SpanishClauseBuilder";
 import { loadTitus } from "./reader-data";
 import { loadTitusData, type GreekToken, type GreekVerse } from "./o-data";
@@ -23,8 +22,9 @@ type ParticipationMode =
   | "finite"
   | "mood-commands"
   | "mood-statements"
-  | "command-recipients"
-  | "dependent-thoughts";
+  | "mood-subjunctive"
+  | "mood-optative"
+  | "command-recipients";
 type StatementLens = "All finite verbs" | "Statements only" | "Commands only";
 
 interface CommandRecipientGroup {
@@ -37,8 +37,9 @@ const NOTES_KEY = "the-reader:titus:notes";
 const MARKS_KEY = "o-prototype:titus:finite-verb-marks";
 const COMMAND_MARKS_KEY = "roots:titus:brick2:mood:imperativeCandidates";
 const STATEMENT_MARKS_KEY = "roots:titus:brick2c:mood:statementCandidates";
+const SUBJUNCTIVE_MARKS_KEY = "roots:titus:brick3:mood:subjunctiveCandidates";
+const OPTATIVE_MARKS_KEY = "roots:titus:brick3c:mood:optativeCandidates";
 const COMMAND_RECIPIENTS_KEY = "roots:titus:brick2b:commandRecipients";
-const DEPENDENT_THOUGHT_MARKS_KEY = "roots:titus:brick3:dependentThoughtIntroducers";
 const STATEMENT_LENSES: StatementLens[] = ["All finite verbs", "Statements only", "Commands only"];
 const RECIPIENTS = [
   "Titus",
@@ -51,13 +52,6 @@ const RECIPIENTS = [
   "Everyone",
   "Other"
 ];
-const DEPENDENT_THOUGHT_CANDIDATES = new Map(
-  dependentThoughtIntroducers.map(candidate => [
-    candidate.surface,
-    candidate.tokenIds ? new Set(candidate.tokenIds) : null
-  ])
-);
-
 function readViewFromHash(): ViewMode {
   if (window.location.hash === "#o") return "o";
   if (window.location.hash === "#clause") return "clause";
@@ -146,10 +140,13 @@ function tokenLabel(token: GreekToken): string {
   return `${tokenText(token)} ${token.rmac}`;
 }
 
-function isDependentThoughtCandidate(token: GreekToken): boolean {
-  const configuredTokenIds = DEPENDENT_THOUGHT_CANDIDATES.get(tokenText(token));
-  if (configuredTokenIds === undefined) return false;
-  return configuredTokenIds === null || configuredTokenIds.has(token.id);
+function isFiniteMoodParticipation(participation: ParticipationMode): boolean {
+  return (
+    participation === "mood-commands" ||
+    participation === "mood-statements" ||
+    participation === "mood-subjunctive" ||
+    participation === "mood-optative"
+  );
 }
 
 function personNumberMeaning(rmac: string): string | null {
@@ -408,8 +405,11 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
   const [statementMarkedIds, setStatementMarkedIds] = useState<Set<string>>(
     () => new Set(readMarks(STATEMENT_MARKS_KEY))
   );
-  const [dependentThoughtMarkedIds, setDependentThoughtMarkedIds] = useState<Set<string>>(
-    () => new Set(readMarks(DEPENDENT_THOUGHT_MARKS_KEY))
+  const [subjunctiveMarkedIds, setSubjunctiveMarkedIds] = useState<Set<string>>(
+    () => new Set(readMarks(SUBJUNCTIVE_MARKS_KEY))
+  );
+  const [optativeMarkedIds, setOptativeMarkedIds] = useState<Set<string>>(
+    () => new Set(readMarks(OPTATIVE_MARKS_KEY))
   );
   const [commandRecipientGroups, setCommandRecipientGroups] = useState<CommandRecipientGroup[]>(
     readCommandRecipientGroups
@@ -446,11 +446,12 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
   }, [statementMarkedIds]);
 
   useEffect(() => {
-    window.localStorage.setItem(
-      DEPENDENT_THOUGHT_MARKS_KEY,
-      JSON.stringify(Array.from(dependentThoughtMarkedIds))
-    );
-  }, [dependentThoughtMarkedIds]);
+    window.localStorage.setItem(SUBJUNCTIVE_MARKS_KEY, JSON.stringify(Array.from(subjunctiveMarkedIds)));
+  }, [subjunctiveMarkedIds]);
+
+  useEffect(() => {
+    window.localStorage.setItem(OPTATIVE_MARKS_KEY, JSON.stringify(Array.from(optativeMarkedIds)));
+  }, [optativeMarkedIds]);
 
   useEffect(() => {
     window.localStorage.setItem(COMMAND_RECIPIENTS_KEY, JSON.stringify(commandRecipientGroups));
@@ -468,9 +469,11 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
       ? finiteMarkedIds
       : participation === "mood-statements"
         ? statementMarkedIds
-        : participation === "dependent-thoughts"
-          ? dependentThoughtMarkedIds
-        : commandMarkedIds;
+        : participation === "mood-subjunctive"
+          ? subjunctiveMarkedIds
+          : participation === "mood-optative"
+            ? optativeMarkedIds
+            : commandMarkedIds;
   const activeLabel =
     participation === "finite"
       ? "Finite verbs"
@@ -478,9 +481,11 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
         ? "Commands"
         : participation === "mood-statements"
           ? "Statements"
-          : participation === "dependent-thoughts"
-            ? "Dependent thought introducers"
-            : "Command groups";
+          : participation === "mood-subjunctive"
+            ? "Subjunctive"
+            : participation === "mood-optative"
+              ? "Optative"
+              : "Command groups";
 
   const commandTokens = useMemo(() => {
     const ordered: GreekToken[] = [];
@@ -582,13 +587,13 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
 
     if (participation === "finite") {
       setFiniteMarkedIds(updateMarks);
-    } else if (participation === "dependent-thoughts") {
-      if (isDependentThoughtCandidate(token)) {
-        setDependentThoughtMarkedIds(updateMarks);
-      }
     } else if (finiteMarkedIds.has(token.id)) {
       if (participation === "mood-statements") {
         setStatementMarkedIds(updateMarks);
+      } else if (participation === "mood-subjunctive") {
+        setSubjunctiveMarkedIds(updateMarks);
+      } else if (participation === "mood-optative") {
+        setOptativeMarkedIds(updateMarks);
       } else {
         setCommandMarkedIds(updateMarks);
       }
@@ -618,8 +623,10 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
     } else if (participation === "mood-statements") {
       setStatementMarkedIds(new Set());
       setStatementLens("All finite verbs");
-    } else if (participation === "dependent-thoughts") {
-      setDependentThoughtMarkedIds(new Set());
+    } else if (participation === "mood-subjunctive") {
+      setSubjunctiveMarkedIds(new Set());
+    } else if (participation === "mood-optative") {
+      setOptativeMarkedIds(new Set());
     } else {
       if (draftGroupTokenIds.length) {
         setDraftGroupTokenIds([]);
@@ -687,11 +694,24 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
         ].filter(Boolean).join(" ");
       }
 
-      if (participation === "dependent-thoughts") {
-        if (!isDependentThoughtCandidate(token)) return "";
+      if (participation === "mood-subjunctive") {
+        if (!finiteMarkedIds.has(token.id)) return "";
         return [
-          "greek-token--dependent-candidate",
-          dependentThoughtMarkedIds.has(token.id) ? "greek-token--dependent-marked" : ""
+          "greek-token--finite-candidate",
+          commandMarkedIds.has(token.id) ? "greek-token--command-marked" : "",
+          statementMarkedIds.has(token.id) ? "greek-token--statement-marked" : "",
+          subjunctiveMarkedIds.has(token.id) ? "greek-token--subjunctive-marked" : ""
+        ].filter(Boolean).join(" ");
+      }
+
+      if (participation === "mood-optative") {
+        if (!finiteMarkedIds.has(token.id)) return "";
+        return [
+          "greek-token--finite-candidate",
+          commandMarkedIds.has(token.id) ? "greek-token--command-marked" : "",
+          statementMarkedIds.has(token.id) ? "greek-token--statement-marked" : "",
+          subjunctiveMarkedIds.has(token.id) ? "greek-token--subjunctive-marked" : "",
+          optativeMarkedIds.has(token.id) ? "greek-token--optative-marked" : ""
         ].filter(Boolean).join(" ");
       }
 
@@ -703,12 +723,13 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
     [
       commandMarkedIds,
       draftGroupTokenIds,
-      dependentThoughtMarkedIds,
       finiteMarkedIds,
       groupedTokenIds,
+      optativeMarkedIds,
       participation,
       statementLens,
-      statementMarkedIds
+      statementMarkedIds,
+      subjunctiveMarkedIds
     ]
   );
 
@@ -780,12 +801,24 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
             <button
               type="button"
               className={`participation-option${
-                participation === "dependent-thoughts" ? " participation-option--active" : ""
+                participation === "mood-subjunctive" ? " participation-option--active" : ""
               }`}
-              onClick={() => setParticipation("dependent-thoughts")}
-              aria-pressed={participation === "dependent-thoughts"}
+              disabled={!finiteMarkedIds.size}
+              onClick={() => setParticipation("mood-subjunctive")}
+              aria-pressed={participation === "mood-subjunctive"}
             >
-              Brick 3 — Dependent Thoughts
+              Brick 3 — Subjunctive
+            </button>
+            <button
+              type="button"
+              className={`participation-option${
+                participation === "mood-optative" ? " participation-option--active" : ""
+              }`}
+              disabled={!finiteMarkedIds.size}
+              onClick={() => setParticipation("mood-optative")}
+              aria-pressed={participation === "mood-optative"}
+            >
+              Brick 3C — Optative
             </button>
           </div>
 
@@ -813,10 +846,8 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
                       {verse.tokens.map(token => (
                         <GreekTokenButton
                           disabled={
-                            ((participation === "mood-commands" || participation === "mood-statements") &&
-                              !finiteMarkedIds.has(token.id)) ||
-                            (participation === "command-recipients" && !commandMarkedIds.has(token.id)) ||
-                            (participation === "dependent-thoughts" && !isDependentThoughtCandidate(token))
+                            (isFiniteMoodParticipation(participation) && !finiteMarkedIds.has(token.id)) ||
+                            (participation === "command-recipients" && !commandMarkedIds.has(token.id))
                           }
                           key={token.id}
                           isPressed={activeMarkedIds.has(token.id)}
@@ -911,16 +942,25 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
             </section>
           )}
 
-          {participation === "dependent-thoughts" && (
+          {participation === "mood-subjunctive" && (
             <section className="result-card participation-card">
               <p className="result-label">Current Participation</p>
-              <h2>Brick 3 — Dependent Thoughts</h2>
-              <p className="participation-note">Find the words that begin a dependent thought.</p>
-              <div className="connector-reference" aria-label="Candidate words">
-                {dependentThoughtIntroducers.map(candidate => (
-                  <span key={candidate.surface}>{candidate.surface}</span>
-                ))}
-              </div>
+              <h2>Brick 3 — Subjunctive</h2>
+              <p className="participation-note">Find the finite verbs that are subjunctive.</p>
+              {subjunctiveMarkedIds.size > 0 && (
+                <p className="terminology-note">Term: subjunctive mood</p>
+              )}
+            </section>
+          )}
+
+          {participation === "mood-optative" && (
+            <section className="result-card participation-card">
+              <p className="result-label">Current Participation</p>
+              <h2>Brick 3C — Optative</h2>
+              <p className="participation-note">Find the finite verbs that are optative.</p>
+              {optativeMarkedIds.size > 0 && (
+                <p className="terminology-note">Term: optative mood</p>
+              )}
             </section>
           )}
 
@@ -1020,9 +1060,15 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
                     {tokenText(token)}
                   </span>
                 ))
-              ) : participation === "dependent-thoughts" && selectedTokens.length ? (
+              ) : participation === "mood-subjunctive" && selectedTokens.length ? (
                 selectedTokens.map(token => (
-                  <span className="marked-token dependent-token" key={token.id}>
+                  <span className="marked-token subjunctive-token" key={token.id}>
+                    {tokenText(token)}
+                  </span>
+                ))
+              ) : participation === "mood-optative" && selectedTokens.length ? (
+                selectedTokens.map(token => (
+                  <span className="marked-token optative-token" key={token.id}>
                     {tokenText(token)}
                   </span>
                 ))
@@ -1042,8 +1088,10 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
                       ? "No commands marked yet."
                     : participation === "mood-statements"
                       ? "No statements marked yet."
-                      : participation === "dependent-thoughts"
-                        ? "No dependent thought introducers marked yet."
+                      : participation === "mood-subjunctive"
+                        ? "No subjunctives marked yet."
+                      : participation === "mood-optative"
+                        ? "No optatives marked yet."
                         : "No recipients assigned yet."}
                 </p>
               )}

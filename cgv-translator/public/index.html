@@ -12,7 +12,7 @@
         <article class="translation-page">
           <header class="translation-header">
             <p class="eyebrow">Translation View</p>
-            <h1>Titus 1:1</h1>
+            <h1 id="translation-reference-title">Titus 1:1</h1>
             <dl class="translation-meta" aria-label="Translation context">
               <div>
                 <dt>Project</dt>
@@ -24,23 +24,48 @@
               </div>
               <div>
                 <dt>Reference</dt>
-                <dd>Titus 1:1</dd>
+                <dd id="translation-reference-meta">Titus 1:1</dd>
               </div>
             </dl>
           </header>
 
           <section class="translation-document">
-            <p class="scripture-label">Greek clause</p>
-            <p class="greek-clause">
-              Παῦλος
-              <button id="doulos-trigger" class="greek-word-trigger" type="button">δοῦλος</button>
-              θεοῦ
-            </p>
+            <section id="phrase-interlinear" class="phrase-interlinear" aria-label="Phrase interlinear"></section>
 
             <p class="scripture-label">Working Spanish translation</p>
-            <p class="spanish-line">Pablo <span>________</span> de Dios</p>
+            <p id="suggestion-source-label" class="suggestion-source-label">Draft based on RV1909</p>
+            <textarea
+              id="translation-editor"
+              class="spanish-line"
+              rows="3"
+              aria-label="Working Spanish translation"
+            >Pablo siervo de Dios apóstol de Jesucristo</textarea>
+            <p id="phrase-save-status" class="phrase-save-status" data-state="saved">Saved</p>
 
-            <aside id="decision-panel" class="decision-panel" hidden>
+            <div class="translation-support">
+              <section class="draft-references" aria-label="Draft references">
+                <article>
+                  <p class="scripture-label">RV1909</p>
+                  <p id="rv1909-reference-text">—</p>
+                </article>
+                <article>
+                  <p class="scripture-label">BLE mechanical</p>
+                  <p id="ble-reference-text">—</p>
+                </article>
+              </section>
+
+              <section class="verse-preview" aria-label="Verse preview">
+                <p class="scripture-label">Verse Preview</p>
+                <p id="verse-preview-text">Pablo siervo de Dios</p>
+              </section>
+
+              <div class="phrase-actions" aria-label="Phrase navigation">
+                <button id="previous-phrase" class="secondary-action" type="button">Previous Phrase</button>
+                <button id="next-phrase" class="primary-action" type="button">Next Phrase</button>
+              </div>
+            </div>
+
+            <aside id="decision-panel" class="decision-panel" aria-label="Greek word investigation" hidden>
               <p class="decision-title">Translation decision</p>
               <dl>
                 <div>
@@ -49,11 +74,11 @@
                 </div>
                 <div>
                   <dt>Policy</dt>
-                  <dd>none</dd>
+                  <dd id="decision-panel-policy">none</dd>
                 </div>
                 <div>
                   <dt>Status</dt>
-                  <dd>Investigation required</dd>
+                  <dd id="decision-panel-status">Investigation required</dd>
                 </div>
               </dl>
               <button id="open-investigation" class="primary-action" type="button">Open Investigation</button>
@@ -111,6 +136,57 @@
           <section class="editor-layout">
             <textarea id="editor" spellcheck="false" aria-label="Markdown editor"></textarea>
             <article id="evidence-viewer" class="evidence-viewer" aria-label="Evidence viewer" tabindex="-1" hidden></article>
+            <section id="decision-editor" class="decision-editor" aria-label="Decision editor" hidden>
+              <div class="decision-grid">
+                <label>
+                  Status
+                  <select id="decision-status">
+                    <option>Draft</option>
+                    <option>Under Review</option>
+                    <option disabled>Approved</option>
+                    <option disabled>Superseded</option>
+                  </select>
+                </label>
+                <label>
+                  Version
+                  <input id="decision-version" type="text" readonly />
+                </label>
+                <label>
+                  Effective Date
+                  <input id="decision-effective-date" type="date" />
+                </label>
+                <label>
+                  Lemma
+                  <input id="decision-lemma" type="text" readonly />
+                </label>
+                <label>
+                  Strong's
+                  <input id="decision-strongs" type="text" readonly />
+                </label>
+                <label>
+                  Confidence
+                  <select id="decision-confidence">
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="decision-rendering-field">
+                Preferred Rendering
+                <input id="decision-rendering" type="text" autocomplete="off" />
+              </label>
+
+              <label class="decision-reason-field">
+                Reason
+                <textarea id="decision-reason" spellcheck="false"></textarea>
+              </label>
+
+              <div class="decision-actions">
+                <button id="approve-decision" class="primary-action" type="button">Approve</button>
+              </div>
+            </section>
           </section>
         </section>
       </section>
@@ -126,27 +202,23 @@
         <fieldset class="gather-options">
           <legend>Evidence type</legend>
           <label>
+            <input type="radio" name="gather-type" value="occurrence" />
+            This Occurrence
+          </label>
+          <label>
             <input type="radio" name="gather-type" value="occurrences" checked />
-            Occurrences
+            This Lemma
           </label>
           <label>
-            <input type="radio" name="gather-type" value="morphology" disabled />
-            Morphology
-          </label>
-          <label>
-            <input type="radio" name="gather-type" value="historical-renderings" disabled />
-            Historical Renderings
-          </label>
-          <label>
-            <input type="radio" name="gather-type" value="related-lemmas" disabled />
-            Related Lemmas
+            <input type="radio" name="gather-type" value="construction" />
+            This Construction
           </label>
         </fieldset>
 
         <p id="gather-message" class="modal-message" role="status" aria-live="polite"></p>
 
         <div id="replace-actions" class="replace-actions" hidden>
-          <p>occurrences.md already exists.</p>
+          <p id="replace-message">Evidence already exists.</p>
           <button id="replace-evidence" class="primary-action" type="button">Replace</button>
           <button id="cancel-replace" class="secondary-action" type="button">Cancel</button>
         </div>

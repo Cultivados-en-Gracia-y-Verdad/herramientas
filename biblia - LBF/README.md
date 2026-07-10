@@ -300,3 +300,20 @@ Where Scripture is difficult, the translation should remain difficult.
 Above all,
 
 **let the Scriptures speak for themselves.**
+
+## Textual Basis
+
+LBF is translated from the **Scrivener 1894 Textus Receptus**.
+
+Translator may use the following as objective reference resources:
+
+- BLE (mechanical translation of SBLGNT)
+- SBLGNT
+- MorphGNT
+- Historical Spanish translations
+- Lexicons
+- Other objective linguistic resources
+
+These resources assist translation but do not determine the text of LBF.
+
+Where Scrivener 1894 differs from SBLGNT, the translator evaluates the TR reading directly.

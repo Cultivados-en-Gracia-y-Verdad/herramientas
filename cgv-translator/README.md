@@ -23,3 +23,12 @@ http://127.0.0.1:1424/
 ```
 
 The prototype reads and writes plain Markdown files in `investigations/`. During this stage, those Markdown files remain the source of truth.
+Investigation Stop Rule
+
+Begin an investigation only when the translation decision cannot be made responsibly from existing project policy.
+
+If an existing policy already answers the question, apply the policy and continue translating.
+
+Investigations exist to establish policy.
+
+Not to repeatedly justify established policy.

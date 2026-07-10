@@ -35,7 +35,9 @@ body {
 }
 
 button,
-textarea {
+textarea,
+input,
+select {
   font: inherit;
 }
 
@@ -47,33 +49,38 @@ textarea {
 .translation-view {
   height: 100%;
   overflow: auto;
-  padding: clamp(1.2rem, 4vw, 3rem);
+  padding: clamp(0.65rem, 1.6vw, 1.2rem);
 }
 
 .translation-page {
-  width: min(860px, 100%);
+  width: min(1180px, 100%);
   margin: 0 auto;
 }
 
 .translation-header {
-  margin: 0 0 clamp(2.2rem, 6vw, 4rem);
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 0.65rem;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 1rem;
+  padding-bottom: 0.45rem;
 }
 
 .translation-header h1 {
   margin: 0;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: clamp(3rem, 8vw, 5.6rem);
-  font-weight: 400;
-  line-height: 0.95;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  font-weight: 500;
+  line-height: 1;
 }
 
 .translation-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem 1.4rem;
-  margin: 1rem 0 0;
+  justify-content: flex-end;
+  gap: 0.35rem 1rem;
+  margin: 0;
 }
 
 .translation-meta div {
@@ -96,21 +103,168 @@ textarea {
 .translation-document {
   position: relative;
   border-radius: 4px;
-  padding: clamp(1.6rem, 5vw, 3.2rem);
+  padding: clamp(1rem, 2vw, 1.45rem);
   background: var(--paper);
-  box-shadow: 0 18px 70px rgba(61, 47, 28, 0.08);
+  box-shadow: 0 10px 34px rgba(61, 47, 28, 0.07);
 }
 
 .scripture-label {
   margin: 0 0 0.6rem;
 }
 
-.greek-clause,
 .spanish-line {
-  margin: 0 0 2rem;
+  margin: 0 0 0.85rem;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: clamp(2rem, 4.8vw, 3.5rem);
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
   line-height: 1.2;
+}
+
+.phrase-interlinear {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.15rem;
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.interlinear-token {
+  min-width: 5.2rem;
+}
+
+.interlinear-greek {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: clamp(1.45rem, 2.3vw, 2rem);
+  line-height: 1.12;
+}
+
+.interlinear-ble {
+  margin-top: 0.22rem;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.interlinear-rmac {
+  margin-top: 0.18rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.spanish-line {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 4.4rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.1rem 0;
+  background: transparent;
+  color: var(--text);
+  resize: vertical;
+}
+
+.spanish-line:focus {
+  border-color: rgba(95, 111, 82, 0.28);
+  outline: 2px solid rgba(95, 111, 82, 0.16);
+}
+
+.suggestion-source-label {
+  margin: -0.2rem 0 0.45rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.phrase-save-status {
+  margin: -0.45rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.phrase-save-status[data-state="dirty"] {
+  color: #8a5f28;
+}
+
+.phrase-save-status[data-state="saving"] {
+  color: var(--muted);
+}
+
+.phrase-save-status[data-state="error"] {
+  color: #9a3d35;
+}
+
+.translation-support {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.95fr);
+  grid-template-areas:
+    "refs preview"
+    "refs actions";
+  gap: 0.75rem 0.9rem;
+  align-items: start;
+}
+
+.draft-references {
+  grid-area: refs;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.draft-references article {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.65rem 0.75rem;
+  background: var(--panel-soft);
+}
+
+.draft-references p:last-child {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.12rem;
+  line-height: 1.34;
+}
+
+.verse-preview {
+  grid-area: preview;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.65rem 0.75rem;
+  background: rgba(255, 253, 248, 0.68);
+}
+
+.verse-preview p:last-child {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.1rem, 1.45vw, 1.35rem);
+  line-height: 1.38;
+}
+
+.phrase-actions {
+  grid-area: actions;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.55rem;
+  margin: 0;
+}
+
+.phrase-actions button:disabled {
+  border-color: var(--border);
+  background: var(--panel-soft);
+  color: var(--muted);
+  cursor: default;
+}
+
+.greek-phrase {
+  border-radius: 4px;
+  padding: 0.02em 0.06em;
+}
+
+.greek-phrase.active {
+  background: var(--accent-soft);
 }
 
 .greek-word-trigger {
@@ -123,22 +277,42 @@ textarea {
   cursor: pointer;
 }
 
+.greek-word-trigger.provisional {
+  border-bottom-style: dotted;
+}
+
+.greek-word-trigger.approved {
+  border-bottom-color: transparent;
+}
+
 .greek-word-trigger:hover,
 .greek-word-trigger:focus-visible {
   background: var(--accent-soft);
   outline: none;
 }
 
-.spanish-line span {
-  color: var(--muted);
-}
-
 .decision-panel {
+  position: fixed;
+  z-index: 20;
   width: min(360px, 100%);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1rem;
   background: #faf7f0;
+  box-shadow: 0 18px 48px rgba(65, 55, 40, 0.18);
+}
+
+.decision-panel::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  background: #faf7f0;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .decision-title {
@@ -478,6 +652,76 @@ h2 {
   line-height: 1.35;
 }
 
+.decision-editor {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border: 0;
+  border-radius: 3px;
+  padding: clamp(0.9rem, 2vw, 1.35rem);
+  background: var(--paper);
+  color: var(--text);
+  box-shadow: 0 18px 70px rgba(61, 47, 28, 0.08);
+  font-size: 1.12rem;
+}
+
+.decision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.decision-editor label {
+  display: grid;
+  gap: 0.3rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.decision-editor input,
+.decision-editor select,
+.decision-editor textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.58rem 0.65rem;
+  background: #fffefb;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.decision-editor input[readonly],
+.decision-editor select:disabled {
+  background: var(--panel-soft);
+  color: var(--muted);
+}
+
+.decision-rendering-field,
+.decision-reason-field {
+  margin-top: 0.9rem;
+}
+
+.decision-reason-field textarea {
+  min-height: 20rem;
+  resize: vertical;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.18rem;
+  line-height: 1.38;
+}
+
+.decision-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.85rem;
+}
+
+@media (max-width: 780px) {
+  .decision-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .evidence-viewer:focus {
   outline: 2px solid rgba(95, 111, 82, 0.18);
 }
@@ -502,6 +746,33 @@ h2 {
 
 .evidence-viewer p {
   margin: 0.18rem 0;
+}
+
+.evidence-viewer table {
+  width: 100%;
+  margin: 0.45rem 0 0.95rem;
+  border-collapse: collapse;
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.evidence-viewer th,
+.evidence-viewer td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.32rem 0.42rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.evidence-viewer th {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.evidence-viewer th:last-child,
+.evidence-viewer td:last-child {
+  text-align: right;
 }
 
 .evidence-line strong {
@@ -624,6 +895,31 @@ h2 {
 }
 
 @media (max-width: 760px) {
+  .translation-header {
+    display: block;
+  }
+
+  .translation-meta {
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .translation-support {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "refs"
+      "preview"
+      "actions";
+  }
+
+  .draft-references {
+    grid-template-columns: 1fr;
+  }
+
+  .phrase-actions {
+    justify-content: flex-start;
+  }
+
   .app-shell {
     display: block;
   }

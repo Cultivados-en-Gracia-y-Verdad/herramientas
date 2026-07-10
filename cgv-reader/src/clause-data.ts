@@ -40,15 +40,40 @@ interface FiniteAlignment {
 export interface ClauseAssignment {
   finiteVerbId: string;
   selectedSpan: string[];
+  greekStartTokenId?: string;
+  greekEndTokenId?: string;
 }
 
 export type ClauseAssignments = Record<string, ClauseAssignment>;
+
+export interface ClauseBeginningToken {
+  id: string;
+  greek: string;
+  ble: string;
+}
+
+export interface GreekClauseRange {
+  greekStartTokenId: string;
+  greekEndTokenId: string;
+}
 
 const WORD_PATTERN = /[\wáéíóúüñÁÉÍÓÚÜÑ]+|[^\s\wáéíóúüñÁÉÍÓÚÜÑ]+/gu;
 const FINITE_MARKS_KEY = "o-prototype:titus:finite-verb-marks";
 const DEPENDENT_INTRODUCER_MARKS_KEY = "roots:titus:brick3:dependentThoughtIntroducers";
 export const CLAUSE_STORAGE_KEY = "the-reader:spanish-clause-builder:titus:v3";
 const LEGACY_CLAUSE_STORAGE_KEY = "the-reader:clause-builder:titus:1:1-4:v2";
+const DEPENDENT_INTRODUCER_SURFACES = new Set([
+  "ἵνα",
+  "ὅτι",
+  "εἰ",
+  "ἐάν",
+  "ὅταν",
+  "ἐπειδή",
+  "ἐπεί",
+  "καθώς",
+  "ὡς",
+  "πρίν"
+]);
 
 const FINITE_ANCHOR_OVERRIDES: Record<string, { text: string; occurrence?: number }> = {
   "1:5:10": { text: "pusieras" },
@@ -77,12 +102,22 @@ function finiteAlignmentId(chapter: number, verse: number, token: number): strin
   return `${chapter}:${verse}:${token}`;
 }
 
+function parseAlignmentId(id: string): { chapter: number; verse: number; token: number } | null {
+  const [chapter, verse, token] = id.split(":").map(Number);
+  if (!Number.isFinite(chapter) || !Number.isFinite(verse) || !Number.isFinite(token)) return null;
+  return { chapter, verse, token };
+}
+
 function normalize(value: string): string {
   return value
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^\p{L}\p{N}]/gu, "");
+}
+
+function stripGreekPunctuation(value: string): string {
+  return value.replace(/[⸀⸁⸂⸃,.;·]/g, "");
 }
 
 function spanishHintParts(value: string): string[] {
@@ -93,7 +128,7 @@ function spanishHintParts(value: string): string[] {
     .filter(Boolean);
 }
 
-function readMarkedAlignmentIds(storageKey: string): Set<string> {
+export function readMarkedAlignmentIds(storageKey: string): Set<string> {
   let markedGreekIds: string[];
 
   try {
@@ -322,6 +357,7 @@ export function loadTitusClauseVerses(): SpanishClauseVerse[] {
 
   for (const alignment of parseTokenAlignments()) {
     if (!markedDependentIntroducerAlignmentIds.has(alignment.id)) continue;
+    if (!DEPENDENT_INTRODUCER_SURFACES.has(stripGreekPunctuation(alignment.greekSurface))) continue;
 
     const key = `${alignment.chapter}:${alignment.verse}`;
     const verse = verseByKey.get(key);
@@ -371,6 +407,65 @@ export function formatClauseSpan(
   return selected.map(word => word.text).join(" ");
 }
 
+export function getClauseBeginningTokens(
+  range: GreekClauseRange | null
+): ClauseBeginningToken[] {
+  if (!range) return [];
+  const start = parseAlignmentId(range.greekStartTokenId);
+  const end = parseAlignmentId(range.greekEndTokenId);
+  if (!start || !end || start.chapter !== end.chapter || start.verse !== end.verse) return [];
+
+  const low = Math.min(start.token, end.token);
+  const high = Math.max(start.token, end.token);
+
+  return parseTokenAlignments()
+    .filter(alignment => alignment.chapter === start.chapter && alignment.verse === start.verse)
+    .filter(alignment => alignment.token >= low && alignment.token <= high)
+    .map(alignment => ({
+      id: alignment.id,
+      greek: stripGreekPunctuation(alignment.greekSurface),
+      ble: alignment.spanishHint.replace(/·/g, " ")
+    }))
+    .slice(0, 12);
+}
+
+export function deriveGreekClauseRange(
+  selectedSpan: string[],
+  verseWords: SpanishWord[],
+  finiteVerbId: string
+): GreekClauseRange | null {
+  const selectedIds = new Set(selectedSpan);
+  const finiteVerbPosition = parseAlignmentId(finiteVerbId);
+  const firstWord = verseWords.find(word => selectedIds.has(word.id));
+  if (!firstWord || !finiteVerbPosition) return null;
+
+  const verseTokens = parseTokenAlignments()
+    .filter(alignment => alignment.chapter === firstWord.chapter && alignment.verse === firstWord.verse)
+    .sort((a, b) => a.token - b.token);
+  const finiteToken = verseTokens.find(alignment => alignment.id === finiteVerbId);
+  if (!finiteToken) return null;
+
+  const selectedTokenIds = verseTokens
+    .filter(alignment => {
+      if (alignment.id === finiteVerbId) return true;
+      const indexes = findHintSpanIndexes(alignment, verseWords);
+      return indexes.some(index => selectedIds.has(wordId(alignment.chapter, alignment.verse, index)));
+    })
+    .map(alignment => alignment.token);
+
+  const previousBoundaryTokens = verseTokens
+    .filter(alignment => alignment.token < finiteToken.token)
+    .filter(alignment => /[,.;·]/.test(alignment.greekSurface) || /^V-[123]/.test(alignment.greekMorph));
+  const previousBoundaryToken = previousBoundaryTokens[previousBoundaryTokens.length - 1];
+  const startToken = Math.max((previousBoundaryToken?.token ?? 0) + 1, 1);
+  const endToken = Math.max(...selectedTokenIds, finiteVerbPosition.token);
+
+  return {
+    greekStartTokenId: finiteAlignmentId(firstWord.chapter, firstWord.verse, startToken),
+    greekEndTokenId: finiteAlignmentId(firstWord.chapter, firstWord.verse, endToken)
+  };
+}
+
 function legacySpanToIds(value: unknown): string[] {
   if (!value || typeof value !== "object") return [];
   const span = value as { chapter?: unknown; verse?: unknown; startIndex?: unknown; endIndex?: unknown };
@@ -406,13 +501,20 @@ function parseStoredClauseAssignments(stored: string | null): ClauseAssignments 
         continue;
       }
       if (!value || typeof value !== "object") continue;
-      const record = value as { finiteVerbId?: unknown; selectedSpan?: unknown };
+      const record = value as {
+        finiteVerbId?: unknown;
+        selectedSpan?: unknown;
+        greekStartTokenId?: unknown;
+        greekEndTokenId?: unknown;
+      };
       if (Array.isArray(record.selectedSpan)) {
         const selectedSpan = record.selectedSpan.filter((id): id is string => typeof id === "string");
         if (selectedSpan.length) {
           out[finiteVerbId] = {
             finiteVerbId: typeof record.finiteVerbId === "string" ? record.finiteVerbId : finiteVerbId,
-            selectedSpan
+            selectedSpan,
+            ...(typeof record.greekStartTokenId === "string" ? { greekStartTokenId: record.greekStartTokenId } : {}),
+            ...(typeof record.greekEndTokenId === "string" ? { greekEndTokenId: record.greekEndTokenId } : {})
           };
         }
         continue;

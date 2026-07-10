@@ -66,3 +66,23 @@ Generated occurrence evidence from cgv-data for G1401 δοῦλος.
 ## 2026-07-04
 
 Generated occurrence evidence from cgv-data for G1401 δοῦλος.
+
+## 2026-07-06
+
+Generated Lemma Profile v0.1 occurrence evidence for G1401 δοῦλος from cgv-data.
+
+## 2026-07-06
+
+Created decision 1.0 for G1401 δοῦλος.
+
+## 2026-07-07
+
+Generated Lemma Profile v0.1 occurrence evidence for G1401 δοῦλος from cgv-data.
+
+## 2026-07-07
+
+Approved decision 1.0 for G1401 δοῦλος.
+
+## 2026-07-09
+
+Generated occurrence evidence for G1401 δοῦλος from cgv-data.
