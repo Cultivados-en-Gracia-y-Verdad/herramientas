@@ -20,7 +20,7 @@ function resolveCgvDataDir() {
 }
 
 const cgvDataDir = resolveCgvDataDir();
-const optionalBleOutputDir = resolve(rootDir, "../biblia - BLE/output");
+const optionalBleOutputDir = resolve(rootDir, "../Biblia-BLE/output");
 
 const expectedGreekData = [
   "morphology/MorphGNT/*-morphgnt.txt",

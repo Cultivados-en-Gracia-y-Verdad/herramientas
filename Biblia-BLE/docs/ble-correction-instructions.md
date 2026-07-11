@@ -3,7 +3,7 @@
 See the full rules in the project brief. Pipeline fixes glosses in MNA tokens, not hand-edited `.ble.md`.
 
 ```bash
-cd "biblia - BLE"
+cd "Biblia-BLE"
 python3 scripts/reapply_surface_glosses.py --all   # δεῖ → debe, etc.
 python3 scripts/reapply_case_glosses.py --all      # de• genitives, fix double de
 python3 scripts/reapply_verb_glosses.py --all
