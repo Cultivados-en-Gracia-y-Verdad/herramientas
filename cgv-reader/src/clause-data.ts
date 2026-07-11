@@ -1,8 +1,47 @@
-import { parseNblaContent } from "cgv-bible";
 import type { BibleVerse } from "cgv-bible";
-import titusNbla from "../../../cgv-data/bibles/NBLA/tito.nbla.md?raw";
 import titusMorph from "../../../cgv-data/morphology/MorphGNT/77-Tit-morphgnt.txt?raw";
 import titusAlignment from "../../MNA/datasets/interlinear/NT/tito.tokens.jsonl?raw";
+import titusRv1909 from "../../../cgv-data/bibles/RV1909/md/56.content.md?raw";
+import {
+  crossReferenceVerseTokens,
+  findWordIndexBySurface,
+  loadRv1909AlignmentByVerse,
+  resolveRv1909WordIndexes
+} from "./rv1909-alignment";
+
+// The Clause Builder pipeline (Brick 1-3, clause spans, observations) reads
+// RV1909 — a manually-verified word-level Greek alignment exists for it, so
+// finite-verb/particle anchoring is a lookup, not a guess. NBLA remains the
+// text for the main Reader (see reader-data.ts / ReaderApp.tsx), which is
+// untouched by this module.
+function parseRv1909Content(content: string): BibleVerse[] {
+  const verses: BibleVerse[] = [];
+  const lines = content.replace(/\r\n/g, "\n").split("\n");
+  let pendingChapter: number | null = null;
+  let pendingVerse: number | null = null;
+
+  for (const line of lines) {
+    const header = line.match(/^#+\s*Tito\s+(\d+):(\d+)/i);
+    if (header) {
+      pendingChapter = Number(header[1]);
+      pendingVerse = Number(header[2]);
+      continue;
+    }
+
+    if (pendingChapter === null || pendingVerse === null) continue;
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+
+    const text = trimmed.replace(/^\d+/, "").trim();
+    if (text) {
+      verses.push({ book: "Tito", chapter: pendingChapter, verse: pendingVerse, text });
+    }
+    pendingChapter = null;
+    pendingVerse = null;
+  }
+
+  return verses;
+}
 
 export interface SpanishWord {
   id: string;
@@ -79,25 +118,6 @@ const DEPENDENT_INTRODUCER_SURFACES = new Set([
   "πρίν"
 ]);
 
-const FINITE_ANCHOR_OVERRIDES: Record<string, { text: string; occurrence?: number }> = {
-  "1:5:10": { text: "pusieras" },
-  "1:5:12": { text: "designaras" },
-  "1:10:1": { text: "hay" },
-  "1:11:7": { text: "están", occurrence: 1 },
-  "1:11:11": { text: "deben" },
-  "1:15:13": { text: "están" },
-  "2:1:3": { text: "enseña" },
-  "2:6:4": { text: "exhorta" },
-  "2:14:13": { text: "PURIFICAR" },
-  "2:15:4": { text: "exhorta" },
-  "2:15:12": { text: "menosprecie" },
-  "3:4:8": { text: "manifestó" },
-  "3:5:8": { text: "hubiéramos" },
-  "3:7:7": { text: "fuéramos" },
-  "3:8:19": { text: "es" },
-  "3:14:15": { text: "estén" }
-};
-
 function wordId(chapter: number, verse: number, index: number): string {
   return `${chapter}:${verse}:${index}`;
 }
@@ -112,24 +132,8 @@ function parseAlignmentId(id: string): { chapter: number; verse: number; token: 
   return { chapter, verse, token };
 }
 
-function normalize(value: string): string {
-  return value
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^\p{L}\p{N}]/gu, "");
-}
-
 function stripGreekPunctuation(value: string): string {
   return value.replace(/[⸀⸁⸂⸃,.;·]/g, "");
-}
-
-function spanishHintParts(value: string): string[] {
-  return value
-    .replace(/·/g, " ")
-    .split(/\s+/)
-    .map(normalize)
-    .filter(Boolean);
 }
 
 export function readMarkedAlignmentIds(storageKey: string): Set<string> {
@@ -276,64 +280,118 @@ function parseTokenAlignments(): FiniteAlignment[] {
     }));
 }
 
-function findAnchorIndex(
-  alignment: FiniteAlignment,
-  words: SpanishWord[],
-  cursor: number
-): number {
-  const override = FINITE_ANCHOR_OVERRIDES[alignment.id];
-  if (override) {
-    const wanted = normalize(override.text);
-    const matches = words.filter(word => normalize(word.text) === wanted);
-    return matches[(override.occurrence ?? 0)]?.index ?? -1;
+/**
+ * Verses whose Greek text has no finite verb at all (e.g. Titus 1:1's long
+ * verbless run of appositions) — computed from the Greek morphology directly,
+ * independent of whether Brick 1 marking has reached that verse yet. These
+ * are deliberately out of scope for the skeleton pass (spec: "Do not invent
+ * a category for them now... leave them alone"); this only identifies them
+ * so the app can show them as visibly excluded rather than silently absent.
+ */
+export function getVersesWithoutFiniteVerb(): Set<string> {
+  const hasFiniteVerb = new Set<string>();
+  const allVerses = new Set<string>();
+
+  for (const alignment of parseTokenAlignments()) {
+    const key = `${alignment.chapter}:${alignment.verse}`;
+    allVerses.add(key);
+    if (/^V-[123]/.test(alignment.greekMorph)) hasFiniteVerb.add(key);
   }
 
-  const parts = spanishHintParts(alignment.spanishHint);
-  for (const part of parts) {
-    if (part.length < 4) continue;
-    const exact = words.find(word => word.index >= cursor && normalize(word.text) === part);
-    if (exact) return exact.index;
+  const verbless = new Set<string>();
+  for (const key of allVerses) {
+    if (!hasFiniteVerb.has(key)) verbless.add(key);
   }
-
-  for (const part of parts) {
-    if (part.length < 4) continue;
-    const soft = words.find(word => {
-      if (word.index < cursor) return false;
-      const text = normalize(word.text);
-      if (text.length < 4) return false;
-      return text.startsWith(part.slice(0, 4)) || part.startsWith(text.slice(0, 4));
-    });
-    if (soft) return soft.index;
-  }
-
-  return -1;
+  return verbless;
 }
 
-function findHintSpanIndexes(alignment: FiniteAlignment, words: SpanishWord[]): number[] {
-  const parts = spanishHintParts(alignment.spanishHint).filter(part => part.length >= 2);
-  if (!parts.length) return [];
+/**
+ * Builds a Greek-token-number -> RV1909-word-index map for one verse, by
+ * chaining the app's own Greek tokens through Mission Mutual's verified
+ * alignment to RV1909's target text, then locating that text in the verse's
+ * own tokenized word array. Replaces the old fuzzy-matching anchor logic
+ * entirely — every step here is either a direct lookup or an exact match.
+ */
 
-  for (let start = 0; start <= words.length - parts.length; start += 1) {
-    const indexes: number[] = [];
-    let matches = true;
+// Genuine gaps in Mission Mutual's alignment — these tokens have no record
+// at all (confirmed by direct inspection, not a matching failure). Unlike
+// the old NBLA overrides (16 cases, born from a systematic gloss vs.
+// translation mismatch), this is a handful of honest omissions, each
+// verified against RV1909's actual text. Only applied when no record exists.
+const RV1909_ALIGNMENT_GAPS: Record<string, string> = {
+  "1:5:3": "dejé", // ἀπέλιπόν — absent from Mission Mutual's source list for 1:5
+  "1:9:10": "pueda", // ᾖ (part of δυνατὸς ᾖ, "may be able") — RV1909 renders as "pueda"
+  "2:1:5": "conviene" // πρέπει — RV1909: "lo que conviene á la sana doctrina"
+};
 
-    for (let offset = 0; offset < parts.length; offset += 1) {
-      if (normalize(words[start + offset].text) !== parts[offset]) {
-        matches = false;
-        break;
-      }
-      indexes.push(words[start + offset].index);
+// Cases where Mission Mutual DOES have a record, but it points at a word
+// that's technically linked but useless as a finite-verb anchor. Always
+// applied, overriding the alignment's own target for that token. Found by a
+// full-book scan for finite verbs whose target resolves to a Spanish clitic
+// pronoun or function word — a recurring pattern for Greek passive/deponent
+// or reflexive-sense verbs, where Mission Mutual links to the particle
+// carrying the reflexive/passive sense rather than the verb form itself.
+const RV1909_ANCHOR_CORRECTIONS: Record<string, string> = {
+  // ἐστιν ("is") — aligned to "que"; RV1909 actually renders this clause
+  // with "fuere" ("El que fuere sin crimen...").
+  "1:6:3": "fuere",
+  // Ἐπεφάνη ("appeared/was manifested," passive) — aligned to "se," the
+  // reflexive-passive particle in "se manifestó," not the verb itself.
+  "2:11:1": "manifestó",
+  // ἔδωκεν ("he gave") — Mission Mutual aligns this to "se," the reflexive
+  // pronoun in "se dió á sí mismo" ("gave himself"), not the verb form
+  // itself. Defensible as a semantic pairing, useless for marking the
+  // clause's finite verb — "dió" is what a student needs to click.
+  "2:14:2": "dió"
+};
+
+function buildVerseTokenWordMap(
+  chapter: number,
+  verse: number,
+  words: SpanishWord[]
+): Map<number, number> {
+  const currentTokens = parseTokenAlignments()
+    .filter(alignment => alignment.chapter === chapter && alignment.verse === verse)
+    .sort((a, b) => a.token - b.token)
+    .map(alignment => ({ token: alignment.token, surface: alignment.greekSurface }));
+
+  const records = loadRv1909AlignmentByVerse().get(`${chapter}:${verse}`) ?? [];
+  const crossReference = crossReferenceVerseTokens(currentTokens, records);
+
+  for (const { token } of currentTokens) {
+    const key = `${chapter}:${verse}:${token}`;
+    if (RV1909_ANCHOR_CORRECTIONS[key]) {
+      crossReference.set(token, RV1909_ANCHOR_CORRECTIONS[key]);
+    } else if (!crossReference.has(token) && RV1909_ALIGNMENT_GAPS[key]) {
+      crossReference.set(token, RV1909_ALIGNMENT_GAPS[key]);
     }
-
-    if (matches) return indexes;
   }
 
-  const anchorIndex = findAnchorIndex(alignment, words, 0);
-  return anchorIndex >= 0 ? [anchorIndex] : [];
+  const resolved = resolveRv1909WordIndexes(
+    currentTokens.map(token => token.token),
+    crossReference,
+    words
+  );
+
+  // A gap-fill/correction may point at a word another token already
+  // legitimately holds (e.g. δυνατὸς ᾖ, "may be able," collapsing into
+  // RV1909's one word "pueda") — that's not a conflict, it's two Greek words
+  // sharing one Spanish word. Only reached when the normal exclusive
+  // resolution left an overridden token unplaced.
+  for (const { token } of currentTokens) {
+    if (resolved.has(token)) continue;
+    const key = `${chapter}:${verse}:${token}`;
+    const override = RV1909_ANCHOR_CORRECTIONS[key] ?? RV1909_ALIGNMENT_GAPS[key];
+    if (!override) continue;
+    const index = findWordIndexBySurface(words, override);
+    if (index !== null) resolved.set(token, index);
+  }
+
+  return resolved;
 }
 
 export function loadTitusClauseVerses(): SpanishClauseVerse[] {
-  const verses = parseNblaContent(titusNbla).map(verse => ({
+  const verses = parseRv1909Content(titusRv1909).map(verse => ({
     chapter: verse.chapter,
     verse: verse.verse,
     label: `Tito ${verse.chapter}:${verse.verse}`,
@@ -342,9 +400,18 @@ export function loadTitusClauseVerses(): SpanishClauseVerse[] {
   }));
 
   const verseByKey = new Map(verses.map(verse => [`${verse.chapter}:${verse.verse}`, verse]));
-  const cursors = new Map<string, number>();
   const markedFiniteAlignmentIds = readFiniteMarkedAlignmentIds();
   const markedDependentIntroducerAlignmentIds = readDependentIntroducerMarkedAlignmentIds();
+  const tokenWordMapCache = new Map<string, Map<number, number>>();
+
+  function getTokenWordMap(chapter: number, verse: number, words: SpanishWord[]): Map<number, number> {
+    const key = `${chapter}:${verse}`;
+    const cached = tokenWordMapCache.get(key);
+    if (cached) return cached;
+    const map = buildVerseTokenWordMap(chapter, verse, words);
+    tokenWordMapCache.set(key, map);
+    return map;
+  }
 
   for (const alignment of parseFiniteAlignments()) {
     if (!markedFiniteAlignmentIds.has(alignment.id)) continue;
@@ -352,14 +419,13 @@ export function loadTitusClauseVerses(): SpanishClauseVerse[] {
     const key = `${alignment.chapter}:${alignment.verse}`;
     const verse = verseByKey.get(key);
     if (!verse) continue;
-    const anchorIndex = findAnchorIndex(alignment, verse.words, cursors.get(key) ?? 0);
-    if (anchorIndex < 0) continue;
-    const anchor = verse.words[anchorIndex];
+    const wordIndex = getTokenWordMap(alignment.chapter, alignment.verse, verse.words).get(alignment.token);
+    if (wordIndex === undefined) continue;
+    const anchor = verse.words[wordIndex];
     anchor.finiteVerbId = alignment.id;
     anchor.greekSurface = alignment.greekSurface;
     anchor.greekMorph = alignment.greekMorph;
     anchor.greekLemma = alignment.greekLemma;
-    cursors.set(key, anchor.index + 1);
   }
 
   for (const alignment of parseTokenAlignments()) {
@@ -370,12 +436,12 @@ export function loadTitusClauseVerses(): SpanishClauseVerse[] {
     const verse = verseByKey.get(key);
     if (!verse) continue;
 
-    for (const index of findHintSpanIndexes(alignment, verse.words)) {
-      const word = verse.words[index];
-      if (!word) continue;
-      word.dependentIntroducerId = alignment.id;
-      word.dependentGreekSurface = alignment.greekSurface;
-    }
+    const wordIndex = getTokenWordMap(alignment.chapter, alignment.verse, verse.words).get(alignment.token);
+    if (wordIndex === undefined) continue;
+    const word = verse.words[wordIndex];
+    if (!word) continue;
+    word.dependentIntroducerId = alignment.id;
+    word.dependentGreekSurface = alignment.greekSurface;
   }
 
   return verses;
@@ -454,11 +520,13 @@ export function deriveGreekClauseRange(
   const finiteToken = verseTokens.find(alignment => alignment.id === finiteVerbId);
   if (!finiteToken) return null;
 
+  const tokenWordMap = buildVerseTokenWordMap(firstWord.chapter, firstWord.verse, verseWords);
   const selectedTokenIds = verseTokens
     .filter(alignment => {
       if (alignment.id === finiteVerbId) return true;
-      const indexes = findHintSpanIndexes(alignment, verseWords);
-      return indexes.some(index => selectedIds.has(wordId(alignment.chapter, alignment.verse, index)));
+      const wordIndex = tokenWordMap.get(alignment.token);
+      if (wordIndex === undefined) return false;
+      return selectedIds.has(wordId(alignment.chapter, alignment.verse, wordIndex));
     })
     .map(alignment => alignment.token);
 

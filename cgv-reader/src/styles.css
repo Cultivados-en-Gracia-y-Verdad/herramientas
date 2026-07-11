@@ -55,6 +55,42 @@ textarea {
   outline: none;
 }
 
+.progress-controls {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 5;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.progress-btn {
+  border: 1px solid var(--reader-border);
+  border-radius: 999px;
+  padding: 0.5rem 0.78rem;
+  background: rgba(255, 253, 250, 0.82);
+  color: var(--reader-soft);
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.progress-btn:hover,
+.progress-btn:focus-visible {
+  background: var(--reader-note-bg);
+  color: var(--reader-text);
+  outline: none;
+}
+
+.progress-btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.progress-file-input {
+  display: none;
+}
+
 .reader-shell {
   min-height: 100vh;
   padding: 7vh clamp(18px, 5vw, 72px) 18vh;
@@ -998,7 +1034,7 @@ textarea {
 .clause-builder {
   max-width: 82rem;
   margin: 0 auto;
-  padding: 1.5rem clamp(1.25rem, 4vw, 2rem) 8rem;
+  padding: 4rem clamp(1.25rem, 4vw, 2rem) 8rem;
   color: #23201b;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
 }
@@ -1107,7 +1143,8 @@ textarea {
   margin: 0;
 }
 
-.clause-clear {
+.clause-clear,
+.clause-print-btn {
   border: 1px solid #ded5c7;
   border-radius: 6px;
   padding: 0.45rem 0.9rem;
@@ -1958,6 +1995,7 @@ textarea {
 
 .clause-outline-section,
 .clause-parked-section,
+.clause-verbless-section,
 .clause-telos-section {
   margin-top: 1.4rem;
   padding-top: 1rem;
@@ -1966,6 +2004,7 @@ textarea {
 
 .clause-outline-section h3,
 .clause-parked-section h3,
+.clause-verbless-section h3,
 .clause-telos-section h3 {
   margin: 0 0 0.5rem;
   color: #756e64;
@@ -1984,19 +2023,27 @@ textarea {
 }
 
 .clause-outline-item,
-.clause-parked-item {
+.clause-parked-item,
+.clause-verbless-item {
   margin: 0 0 0.5rem;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-size: 0.95rem;
   line-height: 1.4;
 }
 
+.clause-verbless-item {
+  font-style: italic;
+  color: #756e64;
+}
+
 .clause-outline-item span,
-.clause-parked-item span {
+.clause-parked-item span,
+.clause-verbless-item span {
   display: block;
   color: #82796d;
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
   font-size: 0.78rem;
+  font-style: normal;
 }
 
 .clause-telos-item {
@@ -2098,5 +2145,48 @@ textarea {
     border-bottom: 0;
     border-left: 0;
     border-radius: 8px 8px 0 0;
+  }
+}
+
+/* Printed skeleton: JSON is a backup format, not something anyone reads —
+   this is the readable, paper (or PDF) version of the actual result. Only
+   the Skeleton / Outline / Telos panel prints; every interactive control and
+   the raw clause-editing list are hidden. */
+@media print {
+  .progress-controls,
+  .prototype-link,
+  .clause-view-switch,
+  .clause-only-main,
+  .clause-dependent-toggle,
+  .clause-clear,
+  .clause-print-btn {
+    display: none !important;
+  }
+
+  .clause-builder {
+    padding: 0.5in 0.4in;
+    max-width: none;
+  }
+
+  .clause-only-workspace {
+    display: block;
+    margin-top: 0.6rem;
+  }
+
+  .clause-skeleton-panel {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .clause-tree-node-wrap,
+  .clause-outline-item,
+  .clause-parked-item,
+  .clause-verbless-item,
+  .clause-telos-item {
+    break-inside: avoid;
+  }
+
+  .clause-tree-children {
+    break-inside: avoid-page;
   }
 }

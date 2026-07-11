@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useMemo, useState, type MouseEvent } from "react";
+import ProgressControls from "./ProgressControls";
 import {
   deriveGreekClauseRange,
   formatClauseSpan,
   getClauseBeginningTokens,
+  getVersesWithoutFiniteVerb,
   loadTitusClauseVerses,
   readClauseAssignments,
   readMarkedAlignmentIds,
@@ -249,9 +251,9 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
   const reviewClauseRows = useMemo(
     () => savedClauseRows.filter(row => {
       const finiteVerbId = row.finiteVerb.finiteVerbId;
-      return Boolean(finiteVerbId && statementCommandVerbIds.has(finiteVerbId));
+      return Boolean(finiteVerbId && moodReviewedVerbIds.has(finiteVerbId));
     }),
-    [savedClauseRows, statementCommandVerbIds]
+    [savedClauseRows, moodReviewedVerbIds]
   );
 
   useEffect(() => {
@@ -346,6 +348,18 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
   const skeleton = useMemo(() => deriveSkeleton(clauseSpanInfos, observations), [clauseSpanInfos, observations]);
   const outline = useMemo(() => deriveOutline(clauseSpanInfos, observations), [clauseSpanInfos, observations]);
   const telos = useMemo(() => deriveTelos(clauseSpanInfos, observations), [clauseSpanInfos, observations]);
+
+  // A different layer entirely from the skeleton: verses with no finite verb
+  // at all (Titus 1:1's long verbless run) never enter Brick 1, so they'd
+  // otherwise be silently absent everywhere. Shown, not solved — per spec,
+  // deciding their grammatical role now would force the structure to fit a
+  // premature decision.
+  const verblessVerses = useMemo(() => {
+    const verbless = getVersesWithoutFiniteVerb();
+    return verses
+      .filter(verse => verbless.has(`${verse.chapter}:${verse.verse}`))
+      .map(verse => ({ reference: `Tito ${verse.chapter}:${verse.verse}`, text: verse.text }));
+  }, [verses]);
 
   const clauseSignalInputs = useMemo<ClauseSignalInput[]>(
     () =>
@@ -659,11 +673,12 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
       <button type="button" className="prototype-link" onClick={onBack}>
         Reader
       </button>
+      <ProgressControls />
 
       <header className="clause-builder-header">
         <p className="reader-kicker">Prototype</p>
         <h1>Tito</h1>
-        <p className="clause-builder-scope">Titus · NBLA</p>
+        <p className="clause-builder-scope">Titus · RV1909</p>
       </header>
 
       <div className="clause-view-switch" aria-label="Clause workspace view">
@@ -785,7 +800,7 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
           <div className="clause-only-header">
             <div>
               <h2 id="clause-only-heading">Clause Workspace</h2>
-              <p>{reviewedCount} of {reviewClauseRows.length} statement/command clauses reviewed</p>
+              <p>{reviewedCount} of {reviewClauseRows.length} mood-tagged clauses reviewed</p>
             </div>
             <label className="clause-dependent-toggle">
               <input
@@ -795,6 +810,9 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
               />
               <span>Show attached clauses</span>
             </label>
+            <button type="button" className="clause-print-btn" onClick={() => window.print()}>
+              Print skeleton
+            </button>
             <button type="button" className="clause-clear" onClick={() => setView("passage")}>
               Back to Passage
             </button>
@@ -805,7 +823,7 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
             {activeBeginningRow ? (
               <section className="clause-review-panel" aria-label="Clause observation">
                 <div className="clause-review-progress">
-                  <span>{reviewedCount} of {reviewClauseRows.length} statement/command clauses reviewed</span>
+                  <span>{reviewedCount} of {reviewClauseRows.length} mood-tagged clauses reviewed</span>
                 </div>
 
                 <article className="clause-active-card">
@@ -1048,7 +1066,7 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
                 </section>
               </section>
             ) : (
-              <p className="clause-output-empty">No statement or command clauses ready for review.</p>
+              <p className="clause-output-empty">No mood-tagged clauses ready for review.</p>
             )}
 
             {workspaceClauseRows.length ? (
@@ -1075,7 +1093,7 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
                 })}
               </div>
             ) : (
-              <p className="clause-output-empty">No visible statement or command clauses.</p>
+              <p className="clause-output-empty">No visible mood-tagged clauses.</p>
             )}
           </div>
 
@@ -1125,6 +1143,23 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
                   <p className="clause-parked-item" key={parked.finiteVerbId}>
                     <span>{parked.reference}</span>
                     {parked.spanText}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+
+            {verblessVerses.length ? (
+              <div className="clause-verbless-section">
+                <h3>No finite verb — set aside for the detailed pass</h3>
+                <p className="clause-section-note">
+                  These verses have no finite verb in the Greek at all, so Brick 1 never reaches them and they're not
+                  part of the skeleton pass. Nothing to decide about them now — shown here only so they're visible,
+                  not silently missing.
+                </p>
+                {verblessVerses.map(verse => (
+                  <p className="clause-verbless-item" key={verse.reference}>
+                    <span>{verse.reference}</span>
+                    {verse.text}
                   </p>
                 ))}
               </div>

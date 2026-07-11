@@ -1,6 +1,7 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { BibleVerse } from "cgv-bible";
 import SpanishClauseBuilder from "./SpanishClauseBuilder";
+import ProgressControls from "./ProgressControls";
 import { loadTitus } from "./reader-data";
 import { loadTitusData, type GreekToken, type GreekVerse } from "./o-data";
 
@@ -313,6 +314,7 @@ function ReaderView({ onOpenO, onOpenClause }: { onOpenO: () => void; onOpenClau
       <button type="button" className="prototype-link clause-link" onClick={onOpenClause}>
         Clause Builder
       </button>
+      <ProgressControls />
       <article className="reader-page" aria-label="The Reader">
         <header className="reader-header">
           <p className="reader-kicker">The Reader</p>

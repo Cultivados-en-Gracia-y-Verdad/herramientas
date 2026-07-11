@@ -86,6 +86,22 @@ function nearestPrecedingClauseId(
   return ordered[index - 1].finiteVerbId;
 }
 
+// The Greek clause-boundary heuristic sometimes leaves a stray word or two from
+// the *previous* clause's own trailing material (e.g. an object pronoun) at the
+// front of this one's token range — a preposition-phrase complement that never
+// got its own boundary marker. Particles and relative pronouns are themselves
+// always clause-initial in Greek, so scanning a short window rather than
+// requiring position 0 tolerates that leak without reaching into a different,
+// deeper clause.
+const LEADING_WINDOW = 4;
+
+function findLeadingToken(
+  tokens: ClauseBeginningToken[],
+  predicate: (token: ClauseBeginningToken) => boolean
+): ClauseBeginningToken | undefined {
+  return tokens.slice(0, LEADING_WINDOW).find(predicate);
+}
+
 /**
  * Detects a Greek-grounded proposal for what a clause is doing, mirroring the
  * spec's three questions. The evidence is always the Greek morphology/lemma of
@@ -97,45 +113,45 @@ export function detectClauseSignal(
   clause: ClauseSignalInput,
   allClauses: ClauseSignalInput[]
 ): ClauseSignal {
-  const first = clause.beginningTokens[0];
-
-  if (first && first.morph.startsWith(RELATIVE_PRONOUN_PREFIX)) {
+  const relative = findLeadingToken(clause.beginningTokens, token => token.morph.startsWith(RELATIVE_PRONOUN_PREFIX));
+  if (relative) {
     return {
       kind: "confident",
       choice: "describes",
       reason:
-        `Opens with “${first.greek}” (${first.lemma}) — that's a relative pronoun, and a clause that ` +
+        `Opens with “${relative.greek}” (${relative.lemma}) — that's a relative pronoun, and a clause that ` +
         `opens with one is what makes it a relative clause. It should be describing a noun nearby; select it in the text below.`
     };
   }
 
-  if (first) {
-    const lemma = stripAccentless(first.lemma);
-    const frameType = FRAME_PARTICLES[lemma];
-    if (frameType) {
-      const target = nearestPrecedingClauseId(clause, allClauses);
-      if (target) {
-        return {
-          kind: "confident",
-          choice: "frame",
-          frameType,
-          target,
-          reason:
-            `Opens with “${first.greek}” (${lemma}) — that maps straight to a ${frameType} clause, ` +
-            `the same particle table a Greek grammar would use (ἵνα/ὅπως → purpose, γάρ/διότι → reason, and so on).`
-        };
-      }
-    }
-
-    const ambiguous = AMBIGUOUS_PARTICLES[lemma];
-    if (ambiguous) {
+  const frameToken = findLeadingToken(clause.beginningTokens, token => Boolean(FRAME_PARTICLES[stripAccentless(token.lemma)]));
+  if (frameToken) {
+    const frameLemma = stripAccentless(frameToken.lemma);
+    const frameType = FRAME_PARTICLES[frameLemma];
+    const target = nearestPrecedingClauseId(clause, allClauses);
+    if (target) {
       return {
-        kind: "uncertain",
+        kind: "confident",
+        choice: "frame",
+        frameType,
+        target,
         reason:
-          `Opens with “${first.greek}” (${lemma}) — ${ambiguous}. That's a genuine judgment call, not something to guess at; ` +
-          `it turns on which verb governs it, which is exactly what this question is asking you to work out.`
+          `Opens with “${frameToken.greek}” (${frameLemma}) — that maps straight to a ${frameType} clause, ` +
+          `the same particle table a Greek grammar would use (ἵνα/ὅπως → purpose, γάρ/διότι → reason, and so on).`
       };
     }
+  }
+
+  const ambiguousToken = findLeadingToken(clause.beginningTokens, token => Boolean(AMBIGUOUS_PARTICLES[stripAccentless(token.lemma)]));
+  if (ambiguousToken) {
+    const ambiguousLemma = stripAccentless(ambiguousToken.lemma);
+    return {
+      kind: "uncertain",
+      reason:
+        `Opens with “${ambiguousToken.greek}” (${ambiguousLemma}) — ${AMBIGUOUS_PARTICLES[ambiguousLemma]}. ` +
+        `That's a genuine judgment call, not something to guess at; it turns on which verb governs it, ` +
+        `which is exactly what this question is asking you to work out.`
+    };
   }
 
   return {
