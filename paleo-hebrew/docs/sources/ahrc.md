@@ -25,7 +25,7 @@ Machine-readable catalog: `data/sources/ahrc.json`.
 |-----------|------|
 | OSHB / MNA OT tokens | Square Hebrew + morphology per word |
 | `cgv-lexicon` | Lemma observations and gloss lookup |
-| `biblia - LBF` | OT translation target |
+| `Biblia-LBF` | OT translation target |
 | `paleo-hebrew` scripts | Square → Paleo display (`data/letter-map.json`) |
 
 ## Working notes

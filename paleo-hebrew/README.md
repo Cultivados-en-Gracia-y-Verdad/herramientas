@@ -15,7 +15,7 @@ OSHB / MNA OT tokens
         ↓
 letter meaning + parent-root study (AHRC, cgv-lexicon)
         ↓
-gloss / translation hypotheses → biblia - LBF
+gloss / translation hypotheses → Biblia-LBF
         ↓
 optional Paleo display (square_to_paleo.py)
 ```
@@ -78,7 +78,7 @@ See [docs/sources/ahrc.md](docs/sources/ahrc.md) for full catalog and methodolog
 | Project | Role |
 |---------|------|
 | `MNA/` | OT interlinear tokens |
-| `biblia - LBF/` | OT translation (La Biblia Fiel) |
+| `Biblia-LBF/` | OT translation (La Biblia Fiel) |
 | `cgv-lexicon/` | Lemma lookup |
 | `cgv-data/` | Published assets |
 
