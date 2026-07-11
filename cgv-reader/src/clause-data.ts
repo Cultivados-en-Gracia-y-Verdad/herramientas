@@ -14,6 +14,7 @@ export interface SpanishWord {
   dependentIntroducerId: string | null;
   greekSurface?: string;
   greekMorph?: string;
+  greekLemma?: string;
   dependentGreekSurface?: string;
   startChar: number;
   endChar: number;
@@ -34,6 +35,7 @@ interface FiniteAlignment {
   token: number;
   greekSurface: string;
   greekMorph: string;
+  greekLemma: string;
   spanishHint: string;
 }
 
@@ -50,6 +52,8 @@ export interface ClauseBeginningToken {
   id: string;
   greek: string;
   ble: string;
+  lemma: string;
+  morph: string;
 }
 
 export interface GreekClauseRange {
@@ -232,6 +236,7 @@ function parseFiniteAlignments(): FiniteAlignment[] {
       token: row.tok as number,
       greekSurface: row.surface as string,
       greekMorph: row.morph as string,
+      greekLemma: typeof row.lemma === "string" ? row.lemma : "",
       spanishHint: row.es as string
     }));
 }
@@ -266,6 +271,7 @@ function parseTokenAlignments(): FiniteAlignment[] {
       token: row.tok as number,
       greekSurface: row.surface as string,
       greekMorph: row.morph as string,
+      greekLemma: typeof row.lemma === "string" ? row.lemma : "",
       spanishHint: row.es as string
     }));
 }
@@ -352,6 +358,7 @@ export function loadTitusClauseVerses(): SpanishClauseVerse[] {
     anchor.finiteVerbId = alignment.id;
     anchor.greekSurface = alignment.greekSurface;
     anchor.greekMorph = alignment.greekMorph;
+    anchor.greekLemma = alignment.greekLemma;
     cursors.set(key, anchor.index + 1);
   }
 
@@ -424,6 +431,8 @@ export function getClauseBeginningTokens(
     .map(alignment => ({
       id: alignment.id,
       greek: stripGreekPunctuation(alignment.greekSurface),
+      lemma: alignment.greekLemma,
+      morph: alignment.greekMorph,
       ble: alignment.spanishHint.replace(/·/g, " ")
     }))
     .slice(0, 12);

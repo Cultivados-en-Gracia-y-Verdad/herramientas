@@ -14,10 +14,18 @@ import {
   type GreekClauseRange,
   type SpanishWord
 } from "./clause-data";
+import {
+  detectClauseSignal,
+  isLikelyContentParent,
+  FRAME_PARTICLES,
+  type ClauseSignal,
+  type ClauseSignalInput,
+  type FrameType
+} from "./clause-signals";
+import { deriveOutline, deriveSkeleton, deriveTelos, type ClauseSpanInfo, type SkeletonNode } from "./clause-tree";
 
 type ClauseView = "passage" | "clauses";
 type ObservationAnswer = "yes" | "no" | "unsure";
-type ObservationStep = 1 | 2 | 3;
 type ClauseReviewState = "Unreviewed" | "Reviewed" | "Attached" | "Not sure";
 
 interface ClauseObservation {
@@ -27,6 +35,7 @@ interface ClauseObservation {
   expressedParentClauseId?: string;
   tellsWhenOrIf?: ObservationAnswer;
   whenIfParentClauseId?: string;
+  frameType?: FrameType;
 }
 
 type ClauseObservations = Record<string, ClauseObservation>;
@@ -44,6 +53,8 @@ interface ClauseOutputRow {
 const CLAUSE_OBSERVATIONS_KEY = "the-reader:spanish-clause-builder:titus:statement-command-review:v1";
 const COMMAND_MARKS_KEY = "roots:titus:brick2:mood:imperativeCandidates";
 const STATEMENT_MARKS_KEY = "roots:titus:brick2c:mood:statementCandidates";
+const SUBJUNCTIVE_MARKS_KEY = "roots:titus:brick3:mood:subjunctiveCandidates";
+const OPTATIVE_MARKS_KEY = "roots:titus:brick3c:mood:optativeCandidates";
 
 function readClauseObservations(): ClauseObservations {
   try {
@@ -61,7 +72,9 @@ function readClauseObservations(): ClauseObservations {
         expressedParentClauseId?: unknown;
         tellsWhenOrIf?: unknown;
         whenIfParentClauseId?: unknown;
+        frameType?: unknown;
       };
+      const validFrameTypes = new Set(["time", "reason", "condition", "purpose"]);
       observations[finiteVerbId] = {
         ...(record.describesNoun === "yes" || record.describesNoun === "no" || record.describesNoun === "unsure"
           ? { describesNoun: record.describesNoun }
@@ -80,6 +93,9 @@ function readClauseObservations(): ClauseObservations {
           : {}),
         ...(typeof record.whenIfParentClauseId === "string"
           ? { whenIfParentClauseId: record.whenIfParentClauseId }
+          : {}),
+        ...(typeof record.frameType === "string" && validFrameTypes.has(record.frameType)
+          ? { frameType: record.frameType as FrameType }
           : {})
       };
     }
@@ -91,6 +107,10 @@ function readClauseObservations(): ClauseObservations {
 
 function writeClauseObservations(observations: ClauseObservations): void {
   window.localStorage.setItem(CLAUSE_OBSERVATIONS_KEY, JSON.stringify(observations));
+}
+
+function capitalize(value: string): string {
+  return value.charAt(0).toUpperCase() + value.slice(1);
 }
 
 export default function SpanishClauseBuilder({ onBack }: { onBack: () => void }) {
@@ -109,10 +129,15 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
     [verses]
   );
 
-  const statementCommandVerbIds = useMemo(() => {
+  // Skeleton/outline/telos need every mood-tagged finite clause, not just
+  // statement/command — purpose clauses (ἵνα) are subjunctive, and telos is
+  // unreachable if subjunctive clauses never enter the review workspace.
+  const moodReviewedVerbIds = useMemo(() => {
     const ids = new Set<string>();
     readMarkedAlignmentIds(COMMAND_MARKS_KEY).forEach(id => ids.add(id));
     readMarkedAlignmentIds(STATEMENT_MARKS_KEY).forEach(id => ids.add(id));
+    readMarkedAlignmentIds(SUBJUNCTIVE_MARKS_KEY).forEach(id => ids.add(id));
+    readMarkedAlignmentIds(OPTATIVE_MARKS_KEY).forEach(id => ids.add(id));
     return ids;
   }, []);
 
@@ -141,7 +166,7 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
   const [activeBeginningVerbId, setActiveBeginningVerbId] = useState<string | null>(null);
   const [observations, setObservations] = useState<ClauseObservations>(readClauseObservations);
   const [nounAnchorId, setNounAnchorId] = useState<string | null>(null);
-  const [observationStep, setObservationStep] = useState<ObservationStep>(1);
+  const [forceChoices, setForceChoices] = useState(false);
   const [showGreekBeginning, setShowGreekBeginning] = useState(false);
 
   const activeVerb = useMemo(
@@ -304,6 +329,55 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
       : reviewClauseRows.filter(row => row.finiteVerb.finiteVerbId !== activeBeginningRow.finiteVerb.finiteVerbId);
   }, [activeBeginningRow, reviewClauseRows]);
 
+  const clauseSpanInfos = useMemo<ClauseSpanInfo[]>(
+    () =>
+      reviewClauseRows
+        .filter(row => row.finiteVerb.finiteVerbId)
+        .map(row => ({
+          finiteVerbId: row.finiteVerb.finiteVerbId as string,
+          reference: row.reference,
+          spanText: row.spanText,
+          wordIds: row.selectedWords.map(word => word.id),
+          order: row.finiteVerb.chapter * 100000 + row.finiteVerb.verse * 1000 + row.finiteVerb.index
+        })),
+    [reviewClauseRows]
+  );
+
+  const skeleton = useMemo(() => deriveSkeleton(clauseSpanInfos, observations), [clauseSpanInfos, observations]);
+  const outline = useMemo(() => deriveOutline(clauseSpanInfos, observations), [clauseSpanInfos, observations]);
+  const telos = useMemo(() => deriveTelos(clauseSpanInfos, observations), [clauseSpanInfos, observations]);
+
+  const clauseSignalInputs = useMemo<ClauseSignalInput[]>(
+    () =>
+      reviewClauseRows.map(row => ({
+        finiteVerbId: row.finiteVerb.finiteVerbId ?? "",
+        chapter: row.finiteVerb.chapter,
+        verse: row.finiteVerb.verse,
+        finiteVerbLemma: row.finiteVerb.greekLemma,
+        beginningTokens: row.beginningTokens
+      })),
+    [reviewClauseRows]
+  );
+
+  const activeSignal = useMemo<ClauseSignal | null>(() => {
+    const finiteVerbId = activeBeginningRow?.finiteVerb.finiteVerbId;
+    if (!finiteVerbId) return null;
+    const input = clauseSignalInputs.find(candidate => candidate.finiteVerbId === finiteVerbId);
+    if (!input) return null;
+    return detectClauseSignal(input, clauseSignalInputs);
+  }, [activeBeginningRow, clauseSignalInputs]);
+
+  const activeFrameType = useMemo<FrameType | undefined>(() => {
+    const first = activeBeginningRow?.beginningTokens[0];
+    if (!first) return undefined;
+    return FRAME_PARTICLES[first.lemma.trim()];
+  }, [activeBeginningRow]);
+
+  const isActiveClauseRoot =
+    activeObservation.describesNoun === "no" &&
+    activeObservation.isWhatWasExpressed === "no" &&
+    activeObservation.tellsWhenOrIf === "no";
+
   const activeObservationContextVerses = useMemo(() => {
     if (!activeBeginningRow) return [];
     return verses.filter(verse => {
@@ -330,7 +404,7 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
   }, [activeBeginningVerbId, getClauseReviewState, reviewClauseRows, view]);
 
   useEffect(() => {
-    setObservationStep(1);
+    setForceChoices(false);
     setShowGreekBeginning(false);
     setNounAnchorId(null);
   }, [activeBeginningVerbId]);
@@ -452,37 +526,49 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
     setActiveBeginningVerbId(nextOpenRow?.finiteVerb.finiteVerbId ?? null);
   }, [activeBeginningRow, getClauseReviewState, reviewClauseRows]);
 
-  const completeObservationStep = useCallback(() => {
-    if (observationStep === 1) {
-      setObservationStep(2);
-    } else if (observationStep === 2) {
-      setObservationStep(3);
-    } else {
-      moveToNextClause();
-    }
-  }, [moveToNextClause, observationStep]);
+  // Single-choice classification: pick one shape, first-yes-wins, no separate
+  // question for the other two. Choosing "describes"/"content"/"frame" only sets
+  // that field to "yes" — the other two stay unset, which is what lets the tree
+  // treat a clause as resolved via any one relation rather than requiring all
+  // three answered like the old fixed-order flow did.
+  const chooseRoot = useCallback(() => {
+    updateActiveObservation({ describesNoun: "no", isWhatWasExpressed: "no", tellsWhenOrIf: "no" });
+    moveToNextClause();
+  }, [moveToNextClause, updateActiveObservation]);
 
-  const answerDescribesNoun = useCallback(
-    (answer: ObservationAnswer) => {
-      updateActiveObservation({
-        describesNoun: answer,
-        ...(answer === "yes" ? {} : { describedNounSpan: [] })
-      });
-      if (answer !== "yes") setNounAnchorId(null);
-      if (answer !== "yes") completeObservationStep();
-    },
-    [completeObservationStep, updateActiveObservation]
-  );
+  const chooseDescribes = useCallback(() => {
+    setForceChoices(false);
+    updateActiveObservation({ describesNoun: "yes" });
+  }, [updateActiveObservation]);
 
-  const answerWhatWasExpressed = useCallback(
-    (answer: ObservationAnswer) => {
-      updateActiveObservation({
-        isWhatWasExpressed: answer,
-        ...(answer === "yes" ? {} : { expressedParentClauseId: "" })
-      });
-      if (answer !== "yes") completeObservationStep();
+  const chooseContent = useCallback(() => {
+    setForceChoices(false);
+    updateActiveObservation({ isWhatWasExpressed: "yes" });
+  }, [updateActiveObservation]);
+
+  const chooseFrame = useCallback(() => {
+    setForceChoices(false);
+    updateActiveObservation({ tellsWhenOrIf: "yes" });
+  }, [updateActiveObservation]);
+
+  const acceptSignal = useCallback(
+    (signal: ClauseSignal) => {
+      if (signal.kind !== "confident") return;
+      if (signal.choice === "describes") {
+        updateActiveObservation({ describesNoun: "yes" });
+      } else if (signal.choice === "content") {
+        updateActiveObservation({ isWhatWasExpressed: "yes", expressedParentClauseId: signal.target });
+        moveToNextClause();
+      } else if (signal.choice === "frame") {
+        updateActiveObservation({
+          tellsWhenOrIf: "yes",
+          whenIfParentClauseId: signal.target,
+          frameType: signal.frameType
+        });
+        moveToNextClause();
+      }
     },
-    [completeObservationStep, updateActiveObservation]
+    [moveToNextClause, updateActiveObservation]
   );
 
   const selectExpressedParent = useCallback(
@@ -492,22 +578,11 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
     [updateActiveObservation]
   );
 
-  const answerWhenOrIf = useCallback(
-    (answer: ObservationAnswer) => {
-      updateActiveObservation({
-        tellsWhenOrIf: answer,
-        ...(answer === "yes" ? {} : { whenIfParentClauseId: "" })
-      });
-      if (answer !== "yes") completeObservationStep();
-    },
-    [completeObservationStep, updateActiveObservation]
-  );
-
   const selectWhenIfParent = useCallback(
     (parentClauseId: string) => {
-      updateActiveObservation({ whenIfParentClauseId: parentClauseId });
+      updateActiveObservation({ whenIfParentClauseId: parentClauseId, frameType: activeFrameType ?? "reason" });
     },
-    [updateActiveObservation]
+    [activeFrameType, updateActiveObservation]
   );
 
   const selectNounWord = useCallback(
@@ -541,6 +616,43 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
       );
     });
   }, []);
+
+  const renderSkeletonNode = useCallback(
+    (node: SkeletonNode) => {
+      const tagLabel =
+        node.relation === "describes"
+          ? "Relative clause"
+          : node.relation === "content"
+            ? "Content clause"
+            : node.relation === "frame"
+              ? `${capitalize(node.frameType ?? "reason")} clause`
+              : node.relation === null
+                ? "Not yet classified"
+                : null;
+      return (
+        <div className="clause-tree-node-wrap" key={node.finiteVerbId}>
+          <button
+            type="button"
+            className={[
+              "clause-tree-node",
+              node.relation === null ? "clause-tree-node--placeholder" : "",
+              node.finiteVerbId === activeBeginningVerbId ? "clause-tree-node--active" : ""
+            ]
+              .filter(Boolean)
+              .join(" ")}
+            onClick={() => setActiveBeginningVerbId(node.finiteVerbId)}
+          >
+            {tagLabel ? <span className="clause-tree-tag">{tagLabel}</span> : null}
+            <span className="clause-tree-text">{node.spanText || node.reference}</span>
+          </button>
+          {node.children.length ? (
+            <div className="clause-tree-children">{node.children.map(renderSkeletonNode)}</div>
+          ) : null}
+        </div>
+      );
+    },
+    [activeBeginningVerbId]
+  );
 
   return (
     <main className="clause-builder">
@@ -689,10 +801,10 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
           </div>
 
           <div className="clause-only-workspace">
+          <div className="clause-only-main">
             {activeBeginningRow ? (
               <section className="clause-review-panel" aria-label="Clause observation">
                 <div className="clause-review-progress">
-                  <span>Observation {observationStep} of 3</span>
                   <span>{reviewedCount} of {reviewClauseRows.length} statement/command clauses reviewed</span>
                 </div>
 
@@ -739,7 +851,7 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
                       <span className="clause-noun-verse-label">{verse.verse}</span>
                       <span>
                         {verse.words.map((word, position) => {
-                          const canSelectNoun = observationStep === 1 && activeObservation.describesNoun === "yes";
+                          const canSelectNoun = activeObservation.describesNoun === "yes";
                           const isSelected = Boolean(activeObservation.describedNounSpan?.includes(word.id));
                           return (
                             <span key={word.id}>
@@ -766,141 +878,173 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
                 </div>
 
                 <section className="clause-observation" aria-label="Current observation">
-                  {observationStep === 1 ? (
-                    <>
-                      <p className="clause-observation-question">Does this clause describe a noun?</p>
-                      <div className="clause-observation-options">
-                        {[
-                          ["yes", "Yes"],
-                          ["no", "No"],
-                          ["unsure", "Not sure"]
-                        ].map(([value, label]) => (
+                  {activeObservation.describesNoun === "yes" ? (
+                    <div className="clause-noun-picker">
+                      <p className="clause-observation-term">Relative clause</p>
+                      <p>Select the noun this clause describes, in the text above.</p>
+                      {describedNounText ? <p className="clause-noun-selection">{describedNounText}</p> : null}
+                      <div className="clause-step-actions">
+                        <button
+                          type="button"
+                          className="clause-step-save"
+                          disabled={!activeObservation.describedNounSpan?.length}
+                          onClick={moveToNextClause}
+                        >
+                          Save
+                        </button>
+                        <button
+                          type="button"
+                          className="clause-reconsider"
+                          onClick={() => {
+                            setNounAnchorId(null);
+                            updateActiveObservation({ describesNoun: undefined, describedNounSpan: [] });
+                          }}
+                        >
+                          Not this — reconsider
+                        </button>
+                      </div>
+                    </div>
+                  ) : activeObservation.isWhatWasExpressed === "yes" ? (
+                    <div className="clause-parent-picker">
+                      <p className="clause-observation-term">Content clause</p>
+                      <p>Select the clause this is the content of.</p>
+                      <div className="clause-parent-list">
+                        {nearbyParentClauseRows.map(row => (
                           <button
                             type="button"
-                            className={activeObservation.describesNoun === value ? "clause-observation-option clause-observation-option--active" : "clause-observation-option"}
-                            key={value}
-                            onClick={() => answerDescribesNoun(value as ObservationAnswer)}
+                            className={[
+                              "clause-parent-option",
+                              activeObservation.expressedParentClauseId === row.finiteVerb.finiteVerbId
+                                ? "clause-parent-option--selected"
+                                : "",
+                              isLikelyContentParent({ finiteVerbLemma: row.finiteVerb.greekLemma })
+                                ? "clause-parent-option--likely"
+                                : ""
+                            ]
+                              .filter(Boolean)
+                              .join(" ")}
+                            key={row.finiteVerb.finiteVerbId}
+                            onClick={() => row.finiteVerb.finiteVerbId && selectExpressedParent(row.finiteVerb.finiteVerbId)}
                           >
-                            {label}
+                            <span>{row.reference}</span>
+                            {row.spanText}
                           </button>
                         ))}
                       </div>
-                      {activeObservation.describesNoun === "yes" ? (
-                        <div className="clause-noun-picker">
-                          <p>Select the noun this clause describes.</p>
-                          {describedNounText ? <p className="clause-noun-selection">{describedNounText}</p> : null}
-                          <button
-                            type="button"
-                            className="clause-step-save"
-                            disabled={!activeObservation.describedNounSpan?.length}
-                            onClick={completeObservationStep}
-                          >
-                            Save
-                          </button>
-                        </div>
-                      ) : null}
-                    </>
-                  ) : null}
-
-                  {observationStep === 2 ? (
-                    <>
-                      <p className="clause-observation-question">
-                        Is this what someone said, thought, wanted, taught, commanded, or reminded?
+                      <div className="clause-step-actions">
+                        <button
+                          type="button"
+                          className="clause-step-save"
+                          disabled={!activeObservation.expressedParentClauseId}
+                          onClick={moveToNextClause}
+                        >
+                          Save
+                        </button>
+                        <button
+                          type="button"
+                          className="clause-reconsider"
+                          onClick={() => updateActiveObservation({ isWhatWasExpressed: undefined, expressedParentClauseId: "" })}
+                        >
+                          Not this — reconsider
+                        </button>
+                      </div>
+                    </div>
+                  ) : activeObservation.tellsWhenOrIf === "yes" ? (
+                    <div className="clause-parent-picker">
+                      <p className="clause-observation-term">
+                        {activeObservation.frameType ? `${capitalize(activeObservation.frameType)} clause` : "Adverbial clause"}
                       </p>
-                      <div className="clause-observation-options">
-                        {[
-                          ["yes", "Yes"],
-                          ["no", "No"],
-                          ["unsure", "Not sure"]
-                        ].map(([value, label]) => (
+                      <p>Select the clause this explains — its time, reason, condition, or purpose.</p>
+                      <div className="clause-parent-list">
+                        {nearbyParentClauseRows.map(row => (
                           <button
                             type="button"
-                            className={activeObservation.isWhatWasExpressed === value ? "clause-observation-option clause-observation-option--active" : "clause-observation-option"}
-                            key={value}
-                            onClick={() => answerWhatWasExpressed(value as ObservationAnswer)}
+                            className={activeObservation.whenIfParentClauseId === row.finiteVerb.finiteVerbId ? "clause-parent-option clause-parent-option--selected" : "clause-parent-option"}
+                            key={row.finiteVerb.finiteVerbId}
+                            onClick={() => row.finiteVerb.finiteVerbId && selectWhenIfParent(row.finiteVerb.finiteVerbId)}
                           >
-                            {label}
+                            <span>{row.reference}</span>
+                            {row.spanText}
                           </button>
                         ))}
                       </div>
-                      {activeObservation.isWhatWasExpressed === "yes" ? (
-                        <div className="clause-parent-picker">
-                          <p>Select the clause this belongs to.</p>
-                          <div className="clause-parent-list">
-                            {nearbyParentClauseRows.map(row => (
-                              <button
-                                type="button"
-                                className={activeObservation.expressedParentClauseId === row.finiteVerb.finiteVerbId ? "clause-parent-option clause-parent-option--selected" : "clause-parent-option"}
-                                key={row.finiteVerb.finiteVerbId}
-                                onClick={() => row.finiteVerb.finiteVerbId && selectExpressedParent(row.finiteVerb.finiteVerbId)}
-                              >
-                                <span>{row.reference}</span>
-                                {row.spanText}
-                              </button>
-                            ))}
-                          </div>
-                          <button
-                            type="button"
-                            className="clause-step-save"
-                            disabled={!activeObservation.expressedParentClauseId}
-                            onClick={completeObservationStep}
-                          >
-                            Save
-                          </button>
-                        </div>
-                      ) : null}
-                    </>
-                  ) : null}
-
-                  {observationStep === 3 ? (
+                      <div className="clause-step-actions">
+                        <button
+                          type="button"
+                          className="clause-step-save"
+                          disabled={!activeObservation.whenIfParentClauseId}
+                          onClick={moveToNextClause}
+                        >
+                          Save
+                        </button>
+                        <button
+                          type="button"
+                          className="clause-reconsider"
+                          onClick={() => updateActiveObservation({ tellsWhenOrIf: undefined, whenIfParentClauseId: "", frameType: undefined })}
+                        >
+                          Not this — reconsider
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
                     <>
-                      <p className="clause-observation-question">
-                        Does this clause tell us when something happens or if something happens?
-                      </p>
-                      <div className="clause-observation-options">
-                        {[
-                          ["yes", "Yes"],
-                          ["no", "No"],
-                          ["unsure", "Not sure"]
-                        ].map(([value, label]) => (
-                          <button
-                            type="button"
-                            className={activeObservation.tellsWhenOrIf === value ? "clause-observation-option clause-observation-option--active" : "clause-observation-option"}
-                            key={value}
-                            onClick={() => answerWhenOrIf(value as ObservationAnswer)}
-                          >
-                            {label}
-                          </button>
-                        ))}
-                      </div>
-                      {activeObservation.tellsWhenOrIf === "yes" ? (
-                        <div className="clause-parent-picker">
-                          <p>Select the clause this belongs to.</p>
-                          <div className="clause-parent-list">
-                            {nearbyParentClauseRows.map(row => (
-                              <button
-                                type="button"
-                                className={activeObservation.whenIfParentClauseId === row.finiteVerb.finiteVerbId ? "clause-parent-option clause-parent-option--selected" : "clause-parent-option"}
-                                key={row.finiteVerb.finiteVerbId}
-                                onClick={() => row.finiteVerb.finiteVerbId && selectWhenIfParent(row.finiteVerb.finiteVerbId)}
-                              >
-                                <span>{row.reference}</span>
-                                {row.spanText}
-                              </button>
-                            ))}
-                          </div>
-                          <button
-                            type="button"
-                            className="clause-step-save"
-                            disabled={!activeObservation.whenIfParentClauseId}
-                            onClick={completeObservationStep}
-                          >
-                            Save
-                          </button>
-                        </div>
+                      {isActiveClauseRoot ? (
+                        <p className="clause-tutor-note">Currently: stands on its own (independent clause).</p>
                       ) : null}
+
+                      {!forceChoices && !isActiveClauseRoot && activeSignal && activeSignal.kind === "confident" ? (
+                        <div className="clause-proposal">
+                          <p className="clause-proposal-label">
+                            {activeSignal.choice === "describes"
+                              ? "Relative clause"
+                              : activeSignal.choice === "content"
+                                ? "Content clause"
+                                : `${capitalize(activeSignal.frameType)} clause`}
+                          </p>
+                          <p className="clause-proposal-reason">{activeSignal.reason}</p>
+                          <div className="clause-step-actions">
+                            <button type="button" className="clause-step-save" onClick={() => acceptSignal(activeSignal)}>
+                              Yes, that's it
+                            </button>
+                            <button type="button" className="clause-reconsider" onClick={() => setForceChoices(true)}>
+                              Not quite — show me the options
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        <>
+                          {!forceChoices && !isActiveClauseRoot && activeSignal?.kind === "uncertain" ? (
+                            <p className="clause-uncertain-note">{activeSignal.reason}</p>
+                          ) : null}
+                          {!forceChoices && !isActiveClauseRoot && activeSignal?.kind === "none" ? (
+                            <p className="clause-tutor-note">{activeSignal.reason}</p>
+                          ) : null}
+                          {forceChoices ? (
+                            <p className="clause-tutor-note">No problem — pick the shape that actually fits.</p>
+                          ) : null}
+
+                          <div className="clause-choice-grid">
+                            <button type="button" className="clause-choice-btn" onClick={chooseDescribes}>
+                              <span className="clause-choice-term">Relative clause</span>
+                              Describes something nearby
+                            </button>
+                            <button type="button" className="clause-choice-btn" onClick={chooseContent}>
+                              <span className="clause-choice-term">Content clause</span>
+                              Reports what was said or thought
+                            </button>
+                            <button type="button" className="clause-choice-btn" onClick={chooseFrame}>
+                              <span className="clause-choice-term">Adverbial clause</span>
+                              Gives a when, why, if, or so-that
+                            </button>
+                            <button type="button" className="clause-choice-btn" onClick={chooseRoot}>
+                              <span className="clause-choice-term">Independent clause</span>
+                              Stands on its own
+                            </button>
+                          </div>
+                        </>
+                      )}
                     </>
-                  ) : null}
+                  )}
                 </section>
               </section>
             ) : (
@@ -934,6 +1078,75 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
               <p className="clause-output-empty">No visible statement or command clauses.</p>
             )}
           </div>
+
+          <aside className="clause-skeleton-panel" aria-label="Skeleton">
+            <div className="clause-skeleton-header">
+              <h2>Skeleton</h2>
+              {skeleton.roots.length ? (
+                <span className="clause-skeleton-count">
+                  {skeleton.roots.length} root{skeleton.roots.length === 1 ? "" : "s"}
+                </span>
+              ) : null}
+            </div>
+
+            {skeleton.roots.length ? (
+              <div className="clause-tree">{skeleton.roots.map(renderSkeletonNode)}</div>
+            ) : (
+              <p className="clause-output-empty">
+                Nothing placed yet. Classify a clause as Independent, or as content/frame pointing at one, and it
+                shows up here.
+              </p>
+            )}
+
+            {outline.length ? (
+              <div className="clause-outline-section">
+                <h3>Outline</h3>
+                <p className="clause-section-note">
+                  Just the root clauses, book order — everything indented stripped out of the skeleton above.
+                </p>
+                {outline.map(clause => (
+                  <p className="clause-outline-item" key={clause.finiteVerbId}>
+                    <span>{clause.reference}</span>
+                    {clause.spanText}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+
+            {skeleton.parked.length ? (
+              <div className="clause-parked-section">
+                <h3>Not yet placed in the skeleton</h3>
+                <p className="clause-section-note">
+                  These describe a noun that isn't inside any indexed clause yet — often material like Tito 1:1 that
+                  has no finite verb of its own. Nothing to do here now; they get connected during closer clause-level
+                  work later, once the skeleton around them is settled.
+                </p>
+                {skeleton.parked.map(parked => (
+                  <p className="clause-parked-item" key={parked.finiteVerbId}>
+                    <span>{parked.reference}</span>
+                    {parked.spanText}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+
+            {telos ? (
+              <div className="clause-telos-section">
+                <h3>Candidate telos</h3>
+                <p className="clause-telos-item">{telos.purposeClause.spanText}</p>
+                {telos.lastOutlineClause ? (
+                  <>
+                    <p className="clause-telos-vs">compare with the outline's last point</p>
+                    <p className="clause-telos-item clause-telos-item--outline">{telos.lastOutlineClause.spanText}</p>
+                  </>
+                ) : null}
+                <p className="clause-telos-note">
+                  Does this look like the book's stated purpose? That's your call, not something the software concludes.
+                </p>
+              </div>
+            ) : null}
+          </aside>
+        </div>
         </section>
       )}
 
