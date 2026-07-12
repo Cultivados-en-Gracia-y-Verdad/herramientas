@@ -6,6 +6,7 @@
   "scripts": {
     "dictionary:validate": "node cgv-dictionary/scripts/validate-dictionary.js",
     "dictionary:extract": "node cgv-dictionary/scripts/extract-lemma-occurrences.js",
-    "dictionary:analyze": "node cgv-dictionary/scripts/analyze-lemma-occurrences.js"
+    "dictionary:analyze": "node cgv-dictionary/scripts/analyze-lemma-occurrences.js",
+    "translator:start": "npm --prefix cgv-translator start"
   }
 }

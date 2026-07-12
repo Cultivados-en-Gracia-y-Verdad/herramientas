@@ -41,10 +41,7 @@ export interface SkeletonNode {
   children: SkeletonNode[];
 }
 
-export interface ParkedClause {
-  finiteVerbId: string;
-  reference: string;
-  spanText: string;
+export interface ParkedClause extends SkeletonNode {
   describedNounSpan: string[];
 }
 
@@ -175,12 +172,14 @@ export function deriveSkeleton(
     .sort(byOrder)
     .map(c => buildNode(c.finiteVerbId));
 
+  // A parked clause can still be someone else's parent (e.g. a content/frame
+  // clause correctly pointing at it) — buildNode already pulls children from
+  // childrenMap regardless of the node's own relation, so reusing it here
+  // means those children stay visible instead of silently disappearing.
   const parked: ParkedClause[] = clauses
     .filter(clause => resolvedById.get(clause.finiteVerbId)?.parked)
     .map(clause => ({
-      finiteVerbId: clause.finiteVerbId,
-      reference: clause.reference,
-      spanText: clause.spanText,
+      ...buildNode(clause.finiteVerbId),
       describedNounSpan: resolvedById.get(clause.finiteVerbId)?.describedNounSpan ?? []
     }));
 

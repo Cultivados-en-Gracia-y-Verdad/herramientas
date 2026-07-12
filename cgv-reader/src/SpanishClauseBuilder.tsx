@@ -1140,10 +1140,15 @@ export default function SpanishClauseBuilder({ onBack }: { onBack: () => void })
                   work later, once the skeleton around them is settled.
                 </p>
                 {skeleton.parked.map(parked => (
-                  <p className="clause-parked-item" key={parked.finiteVerbId}>
-                    <span>{parked.reference}</span>
-                    {parked.spanText}
-                  </p>
+                  <div className="clause-parked-item" key={parked.finiteVerbId}>
+                    <p>
+                      <span>{parked.reference}</span>
+                      {parked.spanText}
+                    </p>
+                    {parked.children.length ? (
+                      <div className="clause-tree-children">{parked.children.map(renderSkeletonNode)}</div>
+                    ) : null}
+                  </div>
                 ))}
               </div>
             ) : null}

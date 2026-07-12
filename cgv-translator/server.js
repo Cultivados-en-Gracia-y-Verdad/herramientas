@@ -12,6 +12,19 @@ const translationsDir = join(rootDir, "translations");
 const translationDocumentFile = join(translationsDir, "titus-1-1.md");
 const translationPhraseFile = join(translationsDir, "titus-phrases.json");
 const port = Number(process.env.PORT || 1424);
+const bibliaBleOutputDir = join(rootDir, "..", "Biblia-BLE", "output");
+const mnaMorphgntDir = join(rootDir, "..", "MNA", "SOURCES", "MorphGNT");
+
+async function readFirstExistingFile(candidates) {
+  for (const candidate of candidates) {
+    try {
+      return await readFile(candidate, "utf8");
+    } catch {
+      // Try the next candidate path.
+    }
+  }
+  return "";
+}
 
 const tabs = [
   { id: "README", file: "README.md" },
@@ -189,8 +202,15 @@ async function loadTitusTranslationUnits() {
   const cgvDataDir = getCgvDataPath();
   const translationIndexes = await loadTranslationIndexes(cgvDataDir);
   const [bleContent, morphContent] = await Promise.all([
-    readFile(join(cgvDataDir, "bibles/BLE/tito.ble.md"), "utf8").catch(() => ""),
-    readFile(join(cgvDataDir, "morphology/MorphGNT/77-Tit-morphgnt.txt"), "utf8").catch(() => "")
+    readFirstExistingFile([
+      join(cgvDataDir, "bibles/BLE/tito.ble.md"),
+      join(bibliaBleOutputDir, "tito.ble.md")
+    ]),
+    readFirstExistingFile([
+      join(cgvDataDir, "morphology/MorphGNT/77-Tit-morphgnt.txt"),
+      join(cgvDataDir, "SOURCES/MorphGNT/77-Tit-morphgnt.txt"),
+      join(mnaMorphgntDir, "77-Tit-morphgnt.txt")
+    ])
   ]);
   const greekByReference = new Map();
 
@@ -247,7 +267,7 @@ async function enrichTranslationPhraseRecords(phrases) {
       tokenRows,
       rv1909Text: phrase.rv1909Text || rv1909TokenText || unit.rv1909Text || "",
       bleText: phrase.bleText || bleTokenText || unit.bleText || "",
-      suggestionSource: phrase.suggestionSource || (unit.rv1909Text ? "rv1909" : (unit.bleText ? "ble" : "blank"))
+      suggestionSource: phrase.suggestionSource || (phrase.spanish?.trim() ? "lbf-approved" : "blank")
     };
   });
 }

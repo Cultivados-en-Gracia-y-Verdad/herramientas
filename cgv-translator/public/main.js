@@ -19,6 +19,7 @@ const state = {
   decision: null,
   translationReturn: null,
   translationLoadedFromDisk: false,
+  translationDirty: false,
   translationSaveTimer: null,
   translationSaving: false,
   dirty: false,
@@ -77,7 +78,7 @@ const replaceMessage = document.querySelector("#replace-message");
 const replaceEvidence = document.querySelector("#replace-evidence");
 const cancelReplace = document.querySelector("#cancel-replace");
 
-let translationPhrases = [
+const defaultTranslationPhrases = [
   {
     reference: "Titus 1:1",
     greek: [
@@ -93,8 +94,8 @@ let translationPhrases = [
     sourceTokenIds: ["n56001001001", "n56001001002", "n56001001003"],
     rv1909Text: "PABLO, siervo de Dios",
     bleText: "Pablo siervo de Dios",
-    workingText: "PABLO, siervo de Dios",
-    suggestionSource: "rv1909"
+    workingText: "",
+    suggestionSource: "blank"
   },
   {
     reference: "Titus 1:1",
@@ -112,8 +113,8 @@ let translationPhrases = [
     sourceTokenIds: ["n56001001004", "n56001001005", "n56001001006", "n56001001007"],
     rv1909Text: "y apóstol de Jesucristo",
     bleText: "apóstol de Jesucristo",
-    workingText: "y apóstol de Jesucristo",
-    suggestionSource: "rv1909",
+    workingText: "",
+    suggestionSource: "blank",
     provisional: true
   },
   {
@@ -132,8 +133,8 @@ let translationPhrases = [
     sourceTokenIds: ["n56001001008", "n56001001009", "n56001001010", "n56001001011"],
     rv1909Text: "según la fe de los escogidos de Dios",
     bleText: "según fe elegidos de Dios",
-    workingText: "según la fe de los escogidos de Dios",
-    suggestionSource: "rv1909",
+    workingText: "",
+    suggestionSource: "blank",
     provisional: true
   },
   {
@@ -151,8 +152,8 @@ let translationPhrases = [
     sourceTokenIds: ["n56001001012", "n56001001013", "n56001001014"],
     rv1909Text: "y el conocimiento de la verdad",
     bleText: "y conocimiento verdad",
-    workingText: "y el conocimiento de la verdad",
-    suggestionSource: "rv1909",
+    workingText: "",
+    suggestionSource: "blank",
     provisional: true
   },
   {
@@ -170,11 +171,12 @@ let translationPhrases = [
     sourceTokenIds: ["n56001001015", "n56001001016", "n56001001017"],
     rv1909Text: "que es según la piedad",
     bleText: "de la según piedad",
-    workingText: "que es según la piedad",
-    suggestionSource: "rv1909",
+    workingText: "",
+    suggestionSource: "blank",
     provisional: true
   }
 ];
+let translationPhrases = structuredClone(defaultTranslationPhrases);
 const phraseSeparator = " ";
 let translationUnits = [];
 let translationUnitsLoaded = false;
@@ -235,7 +237,7 @@ function currentPhrase() {
 }
 
 function defaultTranslationDocument() {
-  return translationPhrases.map(phrase => phrase.savedText || "").filter(Boolean).join(phraseSeparator);
+  return translationPhrases.map(phrase => phraseDisplayText(phrase)).filter(Boolean).join(phraseSeparator);
 }
 
 function phraseGreekText(phrase) {
@@ -247,18 +249,42 @@ function setPhraseSaveStatus(text, stateName = "saved") {
   phraseSaveStatus.dataset.state = stateName;
 }
 
+function phraseDisplayText(phrase) {
+  return String(phrase.workingText ?? phrase.savedText ?? "").trim();
+}
+
+function isTranslationDirty() {
+  syncTranslationDocumentFromEditor();
+  return translationPhrases.some(phrase =>
+    String(phrase.workingText || "").trim() !== String(phrase.savedText || "").trim()
+  );
+}
+
+function markTranslationDirty() {
+  state.translationDirty = true;
+  setPhraseSaveStatus("Unsaved changes", "dirty");
+}
+
 function serializePhraseRecords() {
-  return translationPhrases.map((phrase, index) => ({
-    reference: phrase.reference,
-    phraseIndex: index,
-    greek: phraseGreekText(phrase),
-    spanish: phrase.savedText || "",
-    sourceTokenIds: phrase.sourceTokenIds || [],
-    tokenRows: phrase.tokenRows || [],
-    rv1909Text: phrase.rv1909Text || "",
-    bleText: phrase.bleText || "",
-    suggestionSource: phrase.suggestionSource || ""
-  }));
+  syncTranslationDocumentFromEditor();
+  return translationPhrases.map((phrase, index) => {
+    const canonical = defaultTranslationPhrases[index];
+    const sourceTokenIds = canonical?.sourceTokenIds?.length
+      ? canonical.sourceTokenIds
+      : (phrase.sourceTokenIds || []);
+
+    return {
+      reference: phrase.reference,
+      phraseIndex: index,
+      greek: phraseGreekText(canonical || phrase),
+      spanish: phraseDisplayText(phrase),
+      sourceTokenIds,
+      tokenRows: phrase.tokenRows || [],
+      rv1909Text: phrase.rv1909Text || canonical?.rv1909Text || "",
+      bleText: phrase.bleText || canonical?.bleText || "",
+      suggestionSource: phrase.suggestionSource || ""
+    };
+  });
 }
 
 function makePhraseFromRecord(record) {
@@ -278,27 +304,82 @@ function makePhraseFromRecord(record) {
     rv1909Text,
     bleText,
     savedText,
-    workingText: savedText || rv1909Text || bleText,
-    suggestionSource: savedText ? "saved" : (rv1909Text ? "rv1909" : (bleText ? "ble" : "blank")),
+    workingText: savedText,
+    suggestionSource: savedText ? "lbf-approved" : "blank",
     provisional: true
   };
 }
 
-function suggestionTextForPhrase(phrase) {
-  return phrase.rv1909Text || phrase.bleText || "";
+function phraseRecordKey(record) {
+  return `${record.reference || ""}|${Number(record.phraseIndex)}`;
+}
+
+function canonicalPhraseRecordKey(phrase, index) {
+  return `${phrase.reference || ""}|${index}`;
+}
+
+function mergeSavedRecord(base, record, { preserveStructure = false } = {}) {
+  if (!record) {
+    return structuredClone(base);
+  }
+
+  const savedText = String(record.spanish || "");
+  const rv1909Text = String(record.rv1909Text || base.rv1909Text || "");
+  const bleText = String(record.bleText || base.bleText || "");
+
+  if (preserveStructure) {
+    return {
+      ...structuredClone(base),
+      sourceTokenIds: Array.isArray(record.sourceTokenIds) && record.sourceTokenIds.length
+        ? record.sourceTokenIds
+        : (base.sourceTokenIds || []),
+      tokenRows: Array.isArray(record.tokenRows) && record.tokenRows.length
+        ? record.tokenRows
+        : (base.tokenRows || []),
+      rv1909Text: rv1909Text || base.rv1909Text,
+      bleText: bleText || base.bleText,
+      savedText,
+      workingText: savedText,
+      suggestionSource: savedText ? "lbf-approved" : "blank"
+    };
+  }
+
+  return {
+    ...structuredClone(base),
+    reference: record.reference || base.reference || "Titus 1:1",
+    sourceTokenIds: Array.isArray(record.sourceTokenIds) && record.sourceTokenIds.length
+      ? record.sourceTokenIds
+      : (base.sourceTokenIds || []),
+    tokenRows: Array.isArray(record.tokenRows) && record.tokenRows.length
+      ? record.tokenRows
+      : (base.tokenRows || []),
+    rv1909Text,
+    bleText,
+    savedText,
+    workingText: savedText,
+    suggestionSource: savedText ? "lbf-approved" : "blank"
+  };
+}
+
+function resetTranslationPhrases() {
+  translationPhrases = structuredClone(defaultTranslationPhrases);
 }
 
 function suggestionSourceForPhrase(phrase) {
   if (phrase.approvedDecision) return "Approved LBF decision";
   if (phrase.workingText && phrase.suggestionSource === "saved") return "Saved LBF phrase";
-  if (phrase.suggestionSource === "ble") return "Fallback from BLE";
-  if (phrase.suggestionSource === "blank") return "Blank";
-  return phrase.rv1909Text ? "Draft from RV1909" : (phrase.bleText ? "Fallback from BLE" : "Blank");
+  if (phrase.workingText && phrase.suggestionSource === "lbf-approved") return "Approved LBF phrase";
+  return "Fresh LBF translation";
+}
+
+async function loadAllTranslationUnits() {
+  const { units } = await api("/api/translation/units").catch(() => ({ units: [] }));
+  return units;
 }
 
 async function loadContinuationUnits() {
   if (translationUnitsLoaded) return translationUnits;
-  const { units } = await api("/api/translation/units").catch(() => ({ units: [] }));
+  const units = await loadAllTranslationUnits();
   translationUnits = units.filter(unit => unit.reference !== "Titus 1:1");
   translationUnitsLoaded = true;
   return translationUnits;
@@ -320,8 +401,8 @@ function makePhraseFromUnit(unit) {
     rv1909Text,
     bleText,
     savedText: "",
-    workingText: rv1909Text || bleText || "",
-    suggestionSource: rv1909Text ? "rv1909" : (bleText ? "ble" : "blank"),
+    workingText: "",
+    suggestionSource: "blank",
     provisional: true
   };
 }
@@ -333,6 +414,11 @@ function hasMoreTranslationUnits() {
 }
 
 async function appendNextTranslationUnit() {
+  const canonicalCount = defaultTranslationPhrases.length;
+  if (translationPhrases.length < canonicalCount) {
+    return false;
+  }
+
   const units = await loadContinuationUnits();
   const queuedReferences = new Set(translationPhrases.map(phrase => phrase.reference));
   const unit = units.find(item => !queuedReferences.has(item.reference));
@@ -344,7 +430,7 @@ async function appendNextTranslationUnit() {
 }
 
 async function enrichPhraseReferencesFromUnits() {
-  const units = await loadContinuationUnits();
+  const units = await loadAllTranslationUnits();
   const unitsByReference = new Map(units.map(unit => [unit.reference, unit]));
   translationPhrases = translationPhrases.map(phrase => {
     const unit = unitsByReference.get(phrase.reference);
@@ -360,10 +446,8 @@ async function enrichPhraseReferencesFromUnits() {
         : (unit.tokenRows || []).filter(row => (phrase.sourceTokenIds || unit.sourceTokenIds || []).includes(row.sourceTokenId)),
       rv1909Text,
       bleText,
-      workingText: phrase.workingText || rv1909Text || bleText || "",
-      suggestionSource: phrase.workingText
-        ? (phrase.suggestionSource || "saved")
-        : (rv1909Text ? "rv1909" : (bleText ? "ble" : "blank"))
+      workingText: phrase.workingText || "",
+      suggestionSource: phrase.workingText ? (phrase.suggestionSource || "lbf-approved") : "blank"
     };
   });
 }
@@ -400,14 +484,7 @@ function replacePhraseText(index, text) {
 }
 
 function scheduleTranslationSave() {
-  window.clearTimeout(state.translationSaveTimer);
-  setPhraseSaveStatus("Unsaved changes", "dirty");
-  state.translationSaveTimer = window.setTimeout(() => {
-    void saveTranslationDocument().catch(error => {
-      setPhraseSaveStatus("Save error", "error");
-      prototypeMessage.textContent = error.message || "Translation save error.";
-    });
-  }, 450);
+  markTranslationDirty();
 }
 
 async function saveTranslationDocument() {
@@ -415,7 +492,7 @@ async function saveTranslationDocument() {
   const phrase = currentPhrase();
   const previousSavedText = phrase.savedText || "";
   phrase.savedText = phrase.workingText;
-  phrase.suggestionSource = "saved";
+  phrase.suggestionSource = phrase.workingText.trim() ? "lbf-approved" : "blank";
   setPhraseSaveStatus("Saving...", "saving");
   state.translationSaving = true;
   try {
@@ -426,6 +503,10 @@ async function saveTranslationDocument() {
         phrases: serializePhraseRecords()
       })
     });
+    translationPhrases.forEach(item => {
+      item.savedText = item.workingText;
+    });
+    state.translationDirty = false;
     setPhraseSaveStatus("Saved", "saved");
     renderVersePreview();
   } catch (error) {
@@ -439,51 +520,43 @@ async function saveTranslationDocument() {
 
 async function flushTranslationSave() {
   window.clearTimeout(state.translationSaveTimer);
-  if (state.view === "translation") {
-    await saveTranslationDocument();
+  if (state.view !== "translation") return;
+  if (!isTranslationDirty()) {
+    state.translationDirty = false;
+    setPhraseSaveStatus("Saved", "saved");
+    return;
   }
+  await saveTranslationDocument();
 }
 
 async function loadTranslationDocument() {
   const { content, phrases } = await api("/api/translation/current").catch(() => ({ content: "", phrases: [] }));
   if (Array.isArray(phrases) && phrases.length) {
-    phrases
+    const savedByKey = new Map(
+      phrases.map(record => [phraseRecordKey(record), record])
+    );
+
+    const mergedCanonical = defaultTranslationPhrases.map((base, index) => {
+      const saved = savedByKey.get(canonicalPhraseRecordKey(base, index));
+      return mergeSavedRecord(base, saved, { preserveStructure: true });
+    });
+
+    const canonicalKeys = new Set(
+      defaultTranslationPhrases.map((phrase, index) => canonicalPhraseRecordKey(phrase, index))
+    );
+    const extraPhrases = phrases
+      .filter(record => !canonicalKeys.has(phraseRecordKey(record)))
       .sort((a, b) => Number(a.phraseIndex || 0) - Number(b.phraseIndex || 0))
-      .forEach(record => {
-        const index = Number(record.phraseIndex);
-        if (!Number.isInteger(index) || index < 0) return;
-        if (!translationPhrases[index]) {
-          translationPhrases[index] = makePhraseFromRecord(record);
-        }
-        const savedText = String(record.spanish || "");
-        const rv1909Text = String(record.rv1909Text || translationPhrases[index].rv1909Text || "");
-        const bleText = String(record.bleText || translationPhrases[index].bleText || "");
-        translationPhrases[index] = {
-          ...translationPhrases[index],
-          sourceTokenIds: Array.isArray(record.sourceTokenIds) && record.sourceTokenIds.length
-            ? record.sourceTokenIds
-            : (translationPhrases[index].sourceTokenIds || []),
-          tokenRows: Array.isArray(record.tokenRows) && record.tokenRows.length
-            ? record.tokenRows
-            : (translationPhrases[index].tokenRows || []),
-          rv1909Text,
-          bleText,
-          savedText,
-          workingText: savedText || rv1909Text || bleText || "",
-          suggestionSource: savedText
-            ? "saved"
-            : (rv1909Text ? "rv1909" : (bleText ? "ble" : "blank"))
-        };
-      });
+      .map(record => mergeSavedRecord(makePhraseFromRecord(record), record));
+
+    translationPhrases = [...mergedCanonical, ...extraPhrases];
+    state.translationDirty = false;
     state.translationLoadedFromDisk = true;
     return;
   }
 
-  const saved = String(content || "").trim();
-  if (!saved) return;
-  translationPhrases[0].workingText = saved;
-  translationPhrases[0].savedText = saved;
-  translationPhrases[0].suggestionSource = "saved";
+  resetTranslationPhrases();
+  state.translationDirty = false;
   state.translationLoadedFromDisk = true;
 }
 
@@ -538,10 +611,7 @@ function renderVersePreview() {
   const reference = currentPhrase().reference || "Titus 1:1";
   const parts = translationPhrases
     .filter(phrase => phrase.reference === reference)
-    .map(phrase => {
-      const saved = String(phrase.savedText || "").trim();
-      return saved || "[incomplete]";
-    });
+    .map(phrase => phraseDisplayText(phrase) || "[incomplete]");
   versePreviewText.textContent = parts.length ? parts.join(phraseSeparator) : "—";
 }
 
@@ -561,7 +631,9 @@ function renderTranslationPhrase({ focus = false, cursorPosition = null } = {}) 
     translationEditor.value = phrase.workingText;
   }
   renderVersePreview();
-  setPhraseSaveStatus(phrase.savedText ? "Saved" : "Unsaved changes", phrase.savedText ? "saved" : "dirty");
+  const dirty = (phrase.workingText || "") !== (phrase.savedText || "");
+  state.translationDirty = dirty;
+  setPhraseSaveStatus(dirty ? "Unsaved changes" : "Saved", dirty ? "dirty" : "saved");
   previousPhrase.disabled = state.phraseIndex === 0;
   nextPhrase.disabled = state.phraseIndex === translationPhrases.length - 1 && !hasMoreTranslationUnits();
   nextPhrase.textContent = nextPhrase.disabled ? "End of Available Text" : "Next Phrase";
@@ -678,10 +750,7 @@ function applyDecisionToTranslation(decision) {
 
   const decisionPhrase = translationPhrases.find(phrase => phrase.decisionStrong === decision.strongs);
   if (decisionPhrase && !alreadyApplied) {
-    const phraseIndex = translationPhrases.indexOf(decisionPhrase);
     decisionPhrase.approvedDecision = true;
-    decisionPhrase.suggestionSource = "approved";
-    replacePhraseText(phraseIndex, `${decisionPhrase.prefix}${decision.preferredRendering}${decisionPhrase.suffix}`);
   }
 }
 
@@ -709,13 +778,6 @@ async function loadApprovedDecisions({ applyToText = !state.translationLoadedFro
     }
   }
 
-  if (!currentPhrase().workingText) {
-    const suggestion = suggestionTextForPhrase(currentPhrase());
-    currentPhrase().workingText = suggestion || buildTranslationLine();
-    currentPhrase().suggestionSource = currentPhrase().rv1909Text
-      ? "rv1909"
-      : (currentPhrase().bleText ? "ble" : "blank");
-  }
   renderTranslationPhrase();
   return decisions.find(decision => decision.strongs === currentPhrase().decisionStrong) || null;
 }
@@ -1259,7 +1321,7 @@ editor.addEventListener("input", () => {
 translationEditor.addEventListener("input", () => {
   syncTranslationDocumentFromEditor();
   renderVersePreview();
-  scheduleTranslationSave();
+  markTranslationDirty();
 });
 
 [
