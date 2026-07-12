@@ -1,6 +1,6 @@
 # CGV Presenter — TODO
 
-Backlog for the `roots-presenter` app. Current release: **1.1.15**.
+Backlog for the `cgv-presenter` app. Current release: **1.1.16**.
 
 ## Distribution
 

@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Package version to build (must match roots-presenter/package.json)
+        description: Package version to build (must match cgv-presenter/package.json)
         required: true
-        default: 1.1.13
+        default: 1.1.16
   push:
     tags:
       - 'CGV-Presenter-v*'
@@ -16,7 +16,7 @@ jobs:
     runs-on: macos-latest
     defaults:
       run:
-        working-directory: roots-presenter
+        working-directory: cgv-presenter
     steps:
       - uses: actions/checkout@v4
 
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: roots-presenter/package-lock.json
+          cache-dependency-path: cgv-presenter/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -36,14 +36,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cgv-presenter-macos-arm64
-          path: roots-presenter/out/make/zip/darwin/arm64/*.zip
+          path: cgv-presenter/out/make/zip/darwin/arm64/*.zip
           if-no-files-found: error
 
   build-windows:
     runs-on: windows-latest
     defaults:
       run:
-        working-directory: roots-presenter
+        working-directory: cgv-presenter
     steps:
       - uses: actions/checkout@v4
 
@@ -51,7 +51,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: roots-presenter/package-lock.json
+          cache-dependency-path: cgv-presenter/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -63,5 +63,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cgv-presenter-windows-x64
-          path: roots-presenter/out/make/squirrel.windows/x64/*.exe
+          path: cgv-presenter/out/make/squirrel.windows/x64/*.exe
           if-no-files-found: error
