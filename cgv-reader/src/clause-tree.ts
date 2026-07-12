@@ -251,15 +251,27 @@ export function deriveOutline(
  * Telos = the first purpose clause, in book order, shown next to the outline's
  * last root clause. The software never declares a match — just places the two
  * next to each other and leaves the judgment to the student.
+ *
+ * "Purpose clause" here means one attached directly to a root (independent)
+ * clause — the book's actual stated aim. A purpose clause nested under a
+ * description clause, or under another purpose clause, is a sub-purpose of
+ * some dependent thought, not a telos candidate, even though it still carries
+ * frameType "purpose".
  */
 export function deriveTelos(
   clauses: ClauseSpanInfo[],
   observations: Record<string, ClauseObservationLike>
 ): TelosCandidate | null {
+  const byId = new Map(clauses.map(clause => [clause.finiteVerbId, clause]));
+
   const purposeClauses = clauses
     .filter(clause => {
       const resolved = resolveClause(clause, observations[clause.finiteVerbId], clauses);
-      return resolved.relation === "frame" && resolved.frameType === "purpose";
+      if (resolved.relation !== "frame" || resolved.frameType !== "purpose") return false;
+      const parentClause = resolved.parentClauseId ? byId.get(resolved.parentClauseId) : undefined;
+      if (!parentClause) return false;
+      const parentResolved = resolveClause(parentClause, observations[parentClause.finiteVerbId], clauses);
+      return parentResolved.relation === "root";
     })
     .sort(byOrder);
 

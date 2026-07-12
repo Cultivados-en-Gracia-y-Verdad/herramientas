@@ -661,18 +661,39 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
       }
       return next;
     };
+    const discardMark = (current: Set<string>) => {
+      if (!current.has(token.id)) return current;
+      const next = new Set(current);
+      next.delete(token.id);
+      return next;
+    };
 
     if (participation === "finite") {
       setFiniteMarkedIds(updateMarks);
     } else if (finiteMarkedIds.has(token.id)) {
+      // A finite verb has exactly one mood — marking it here must clear any
+      // mark left over from the other three mood bricks, or a verb could
+      // silently sit in two moods at once with nothing in the UI showing it.
       if (participation === "mood-statements") {
         setStatementMarkedIds(updateMarks);
+        setSubjunctiveMarkedIds(discardMark);
+        setOptativeMarkedIds(discardMark);
+        setCommandMarkedIds(discardMark);
       } else if (participation === "mood-subjunctive") {
         setSubjunctiveMarkedIds(updateMarks);
+        setStatementMarkedIds(discardMark);
+        setOptativeMarkedIds(discardMark);
+        setCommandMarkedIds(discardMark);
       } else if (participation === "mood-optative") {
         setOptativeMarkedIds(updateMarks);
+        setStatementMarkedIds(discardMark);
+        setSubjunctiveMarkedIds(discardMark);
+        setCommandMarkedIds(discardMark);
       } else {
         setCommandMarkedIds(updateMarks);
+        setStatementMarkedIds(discardMark);
+        setSubjunctiveMarkedIds(discardMark);
+        setOptativeMarkedIds(discardMark);
       }
     }
   }, [finiteMarkedIds, participation]);
