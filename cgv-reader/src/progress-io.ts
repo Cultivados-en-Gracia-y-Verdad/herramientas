@@ -47,6 +47,13 @@ export function buildProgressBundle(): ProgressBundle {
   return { schema: 1, book: "titus", exportedAt: new Date().toISOString(), data };
 }
 
+// Browsers give JS no API to write to an arbitrary folder — the `download`
+// attribute only accepts a path relative to the browser's configured
+// Downloads directory (and only Chromium browsers honor the subfolder; others
+// fall back to the flat filename). This is a stand-in until a real
+// preferences menu lets the student point exports wherever they want.
+const EXPORT_SUBFOLDER = "cgv-reader";
+
 export function downloadProgressFile(): void {
   const bundle = buildProgressBundle();
   const json = JSON.stringify(bundle, null, 2);
@@ -54,7 +61,7 @@ export function downloadProgressFile(): void {
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement("a");
   anchor.href = url;
-  anchor.download = `titus-progress-${bundle.exportedAt.slice(0, 10)}.json`;
+  anchor.download = `${EXPORT_SUBFOLDER}/titus-progress-${bundle.exportedAt.slice(0, 10)}.json`;
   document.body.appendChild(anchor);
   anchor.click();
   document.body.removeChild(anchor);
