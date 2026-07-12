@@ -320,6 +320,7 @@ export function getVersesWithoutFiniteVerb(): Set<string> {
 // verified against RV1909's actual text. Only applied when no record exists.
 const RV1909_ALIGNMENT_GAPS: Record<string, string> = {
   "1:5:3": "dejé", // ἀπέλιπόν — absent from Mission Mutual's source list for 1:5
+  "1:7:1": "es", // δεῖ — absent from Mission Mutual's source list for 1:7; RV1909 renders as "es menester"
   "1:9:10": "pueda", // ᾖ (part of δυνατὸς ᾖ, "may be able") — RV1909 renders as "pueda"
   "2:1:5": "conviene" // πρέπει — RV1909: "lo que conviene á la sana doctrina"
 };

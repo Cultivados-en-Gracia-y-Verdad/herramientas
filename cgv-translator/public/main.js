@@ -60,6 +60,10 @@ const suggestionSourceLabel = document.querySelector("#suggestion-source-label")
 const phraseSaveStatus = document.querySelector("#phrase-save-status");
 const rv1909ReferenceText = document.querySelector("#rv1909-reference-text");
 const bleReferenceText = document.querySelector("#ble-reference-text");
+const aiProposalText = document.querySelector("#ai-proposal-text");
+const aiProposalMeta = document.querySelector("#ai-proposal-meta");
+const proposeAiButton = document.querySelector("#propose-ai");
+const acceptAiButton = document.querySelector("#accept-ai");
 const versePreviewText = document.querySelector("#verse-preview-text");
 const previousPhrase = document.querySelector("#previous-phrase");
 const nextPhrase = document.querySelector("#next-phrase");
@@ -180,6 +184,9 @@ let translationPhrases = structuredClone(defaultTranslationPhrases);
 const phraseSeparator = " ";
 let translationUnits = [];
 let translationUnitsLoaded = false;
+const aiProposalCache = new Map();
+let aiSuggestRequestId = 0;
+let aiAvailability = { available: false, message: "Checking AI…" };
 
 const greekKeyByStrong = {
   G1401: "doulos",
@@ -241,7 +248,10 @@ function defaultTranslationDocument() {
 }
 
 function phraseGreekText(phrase) {
-  return phrase.greek.map(token => token.text).join(" ");
+  if (Array.isArray(phrase?.greek)) {
+    return phrase.greek.map(token => token.text).join(" ");
+  }
+  return String(phrase?.greek || "").trim();
 }
 
 function setPhraseSaveStatus(text, stateName = "saved") {
@@ -374,12 +384,18 @@ function suggestionSourceForPhrase(phrase) {
 
 async function loadAllTranslationUnits() {
   const { units } = await api("/api/translation/units").catch(() => ({ units: [] }));
-  return units;
+  return Array.isArray(units) ? units : [];
 }
 
-async function loadContinuationUnits() {
-  if (translationUnitsLoaded) return translationUnits;
+async function loadContinuationUnits({ force = false } = {}) {
+  if (translationUnitsLoaded && !force) return translationUnits;
   const units = await loadAllTranslationUnits();
+  // Never permanently cache an empty failed load — retry next time.
+  if (!units.length) {
+    translationUnits = [];
+    translationUnitsLoaded = false;
+    return translationUnits;
+  }
   translationUnits = units.filter(unit => unit.reference !== "Titus 1:1");
   translationUnitsLoaded = true;
   return translationUnits;
@@ -420,13 +436,137 @@ async function appendNextTranslationUnit() {
   }
 
   const units = await loadContinuationUnits();
+  if (!units.length) {
+    await loadContinuationUnits({ force: true });
+  }
   const queuedReferences = new Set(translationPhrases.map(phrase => phrase.reference));
-  const unit = units.find(item => !queuedReferences.has(item.reference));
+  const unit = (translationUnits.length ? translationUnits : units)
+    .find(item => !queuedReferences.has(item.reference));
   if (!unit) return false;
 
   const phrase = makePhraseFromUnit(unit);
   translationPhrases = [...translationPhrases, phrase];
   return true;
+}
+
+function currentPhraseKey(phrase = currentPhrase(), index = state.phraseIndex) {
+  return `${phrase?.reference || ""}|${index}`;
+}
+
+function setAiProposalUi({ text = "—", meta = "—", canAccept = false, busy = false } = {}) {
+  aiProposalText.textContent = text || "—";
+  aiProposalMeta.textContent = meta || "—";
+  proposeAiButton.disabled = busy;
+  proposeAiButton.textContent = busy ? "Proposing…" : "Propose";
+  acceptAiButton.disabled = busy || !canAccept || !String(text || "").trim() || text === "—";
+}
+
+function priorLbfForSuggestion(phrase = currentPhrase()) {
+  return translationPhrases
+    .filter(item => item !== phrase && phraseDisplayText(item))
+    .slice(-6)
+    .map(item => ({
+      reference: item.reference,
+      spanish: phraseDisplayText(item)
+    }));
+}
+
+async function loadAiAvailability() {
+  aiAvailability = await api("/api/translation/suggest").catch(() => ({
+    available: false,
+    message: "AI suggestion unavailable"
+  }));
+  return aiAvailability;
+}
+
+async function requestAiProposal({ force = false } = {}) {
+  const phrase = currentPhrase();
+  const cacheKey = currentPhraseKey(phrase);
+  const requestId = ++aiSuggestRequestId;
+
+  if (!force && aiProposalCache.has(cacheKey)) {
+    const cached = aiProposalCache.get(cacheKey);
+    phrase.aiProposal = cached.proposal;
+    setAiProposalUi({
+      text: cached.proposal,
+      meta: `${cached.provider}/${cached.model}`,
+      canAccept: true
+    });
+    return cached;
+  }
+
+  if (!aiAvailability.available) {
+    setAiProposalUi({
+      text: "Configure an AI key to propose Spanish for this phrase.",
+      meta: aiAvailability.message || "AI not configured",
+      canAccept: false
+    });
+    return null;
+  }
+
+  setAiProposalUi({
+    text: phrase.aiProposal || "Proposing Spanish…",
+    meta: `${aiAvailability.provider}/${aiAvailability.model}`,
+    canAccept: Boolean(phrase.aiProposal),
+    busy: true
+  });
+
+  try {
+    const result = await api("/api/translation/suggest", {
+      method: "POST",
+      body: JSON.stringify({
+        reference: phrase.reference,
+        greek: phraseGreekText(phrase),
+        tokenRows: phrase.tokenRows || [],
+        rv1909Text: phrase.rv1909Text || "",
+        bleText: phrase.bleText || "",
+        priorLbf: priorLbfForSuggestion(phrase)
+      })
+    });
+
+    if (requestId !== aiSuggestRequestId || currentPhraseKey() !== cacheKey) {
+      return result;
+    }
+
+    aiProposalCache.set(cacheKey, result);
+    phrase.aiProposal = result.proposal;
+    setAiProposalUi({
+      text: result.proposal,
+      meta: `${result.provider}/${result.model}`,
+      canAccept: true
+    });
+    return result;
+  } catch (error) {
+    if (requestId !== aiSuggestRequestId || currentPhraseKey() !== cacheKey) {
+      return null;
+    }
+    setAiProposalUi({
+      text: error.message || "AI suggestion failed",
+      meta: error.code || "error",
+      canAccept: false
+    });
+    return null;
+  }
+}
+
+function acceptAiProposal() {
+  const phrase = currentPhrase();
+  const proposal = String(phrase.aiProposal || aiProposalText.textContent || "").trim();
+  if (!proposal || proposal === "—" || proposal.startsWith("Configure an AI key")) return;
+
+  phrase.workingText = proposal;
+  phrase.suggestionSource = "ai-proposed";
+  translationEditor.value = proposal;
+  markTranslationDirty();
+  renderVersePreview();
+  suggestionSourceLabel.textContent = "AI proposal (edit before saving)";
+  translationEditor.focus();
+  placeTranslationCursor(proposal.length);
+}
+
+function firstIncompletePhraseIndex() {
+  const index = translationPhrases.findIndex(phrase => !phraseDisplayText(phrase));
+  return index >= 0 ? index : Math.max(0, translationPhrases.length - 1);
 }
 
 async function enrichPhraseReferencesFromUnits() {
@@ -438,14 +578,15 @@ async function enrichPhraseReferencesFromUnits() {
 
     const rv1909Text = phrase.rv1909Text || unit.rv1909Text || "";
     const bleText = phrase.bleText || unit.bleText || "";
+    const sourceTokenIds = phrase.sourceTokenIds?.length ? phrase.sourceTokenIds : (unit.sourceTokenIds || []);
+    const tokenIdSet = new Set(sourceTokenIds);
+    const unitTokenRows = (unit.tokenRows || []).filter(row => tokenIdSet.has(row.sourceTokenId));
     return {
       ...phrase,
-      sourceTokenIds: phrase.sourceTokenIds?.length ? phrase.sourceTokenIds : (unit.sourceTokenIds || []),
-      tokenRows: phrase.tokenRows?.length
-        ? phrase.tokenRows
-        : (unit.tokenRows || []).filter(row => (phrase.sourceTokenIds || unit.sourceTokenIds || []).includes(row.sourceTokenId)),
+      sourceTokenIds,
+      tokenRows: unitTokenRows.length ? unitTokenRows : (phrase.tokenRows || []),
       rv1909Text,
-      bleText,
+      bleText: unit.bleText || bleText,
       workingText: phrase.workingText || "",
       suggestionSource: phrase.workingText ? (phrase.suggestionSource || "lbf-approved") : "blank"
     };
@@ -627,6 +768,35 @@ function renderTranslationPhrase({ focus = false, cursorPosition = null } = {}) 
   suggestionSourceLabel.textContent = suggestionSourceForPhrase(phrase);
   rv1909ReferenceText.textContent = phrase.rv1909Text || "—";
   bleReferenceText.textContent = phrase.bleText || "—";
+  const cachedProposal = aiProposalCache.get(currentPhraseKey(phrase));
+  if (cachedProposal?.proposal) {
+    phrase.aiProposal = cachedProposal.proposal;
+    setAiProposalUi({
+      text: cachedProposal.proposal,
+      meta: `${cachedProposal.provider}/${cachedProposal.model}`,
+      canAccept: true
+    });
+  } else if (phrase.aiProposal) {
+    setAiProposalUi({
+      text: phrase.aiProposal,
+      meta: "cached",
+      canAccept: true
+    });
+  } else if (aiAvailability.available) {
+    setAiProposalUi({
+      text: "Proposing Spanish…",
+      meta: `${aiAvailability.provider}/${aiAvailability.model}`,
+      canAccept: false,
+      busy: true
+    });
+    void requestAiProposal();
+  } else {
+    setAiProposalUi({
+      text: "Configure an AI key to propose Spanish for this phrase.",
+      meta: aiAvailability.message || "AI not configured",
+      canAccept: false
+    });
+  }
   if (translationEditor.value !== phrase.workingText) {
     translationEditor.value = phrase.workingText;
   }
@@ -1052,9 +1222,16 @@ async function movePhrase(direction) {
   }
   let nextIndex = state.phraseIndex + direction;
   if (direction > 0 && nextIndex >= translationPhrases.length) {
-    const appended = await appendNextTranslationUnit();
+    let appended = await appendNextTranslationUnit();
+    if (!appended) {
+      await loadContinuationUnits({ force: true });
+      appended = await appendNextTranslationUnit();
+    }
     if (!appended) {
       renderTranslationPhrase();
+      prototypeMessage.textContent = hasMoreTranslationUnits()
+        ? "Could not load the next verse."
+        : "End of available Titus text.";
       return;
     }
     nextIndex = state.phraseIndex + direction;
@@ -1067,6 +1244,7 @@ async function movePhrase(direction) {
     selectionStart: 0,
     selectionEnd: 0
   };
+  prototypeMessage.textContent = "";
   renderTranslationPhrase();
   translationEditor.focus();
   placeTranslationCursor(getPhraseEnd());
@@ -1398,6 +1576,16 @@ nextPhrase.addEventListener("click", () => {
   void movePhrase(1);
 });
 
+proposeAiButton.addEventListener("click", () => {
+  void requestAiProposal({ force: true }).catch(error => {
+    prototypeMessage.textContent = error.message || "AI suggestion error.";
+  });
+});
+
+acceptAiButton.addEventListener("click", () => {
+  acceptAiProposal();
+});
+
 runGather.addEventListener("click", () => {
   void runEvidenceGather().catch(() => {});
 });
@@ -1478,7 +1666,12 @@ window.addEventListener("hashchange", () => {
 await loadInvestigations();
 renderTabs();
 await loadTranslationDocument();
-await enrichPhraseReferencesFromUnits();
+await Promise.all([
+  enrichPhraseReferencesFromUnits(),
+  loadContinuationUnits(),
+  loadAiAvailability()
+]);
+state.phraseIndex = firstIncompletePhraseIndex();
 renderTranslationPhrase();
 await loadApprovedDecisions({ applyToText: !state.translationLoadedFromDisk });
 await openInitialRoute();

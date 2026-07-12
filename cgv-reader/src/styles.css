@@ -442,6 +442,13 @@ textarea {
   box-shadow: 0 1px 5px rgba(59, 47, 31, 0.08);
 }
 
+.brick-check {
+  display: inline-block;
+  margin-left: 0.4em;
+  color: #3f7d4a;
+  font-weight: 700;
+}
+
 .greek-chapter {
   display: grid;
   grid-template-columns: 3rem minmax(0, 1fr);

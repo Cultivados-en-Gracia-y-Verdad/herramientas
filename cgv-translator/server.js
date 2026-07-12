@@ -4,8 +4,10 @@ import { basename, extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
 import { getCgvDataPath, getGreekConstructionEvidence, getGreekOccurrencesByStrongs } from "./src/data/cgvData.js";
 import { loadTranslationIndexes, resolveAlignedSpan } from "./src/data/translationIndexes.js";
+import { describeAiAvailability, loadTranslatorEnv, suggestPhraseTranslation } from "./src/ai/suggestPhrase.js";
 
 const rootDir = fileURLToPath(new URL(".", import.meta.url));
+await loadTranslatorEnv(rootDir);
 const publicDir = join(rootDir, "public");
 const investigationsDir = join(rootDir, "investigations");
 const translationsDir = join(rootDir, "translations");
@@ -14,6 +16,10 @@ const translationPhraseFile = join(translationsDir, "titus-phrases.json");
 const port = Number(process.env.PORT || 1424);
 const bibliaBleOutputDir = join(rootDir, "..", "Biblia-BLE", "output");
 const mnaMorphgntDir = join(rootDir, "..", "MNA", "SOURCES", "MorphGNT");
+const mnaInterlinearDir = join(rootDir, "..", "MNA", "datasets", "interlinear", "NT");
+const bleGlossBulletMarks = new Set(["de", "a", "en", "por", "para", "con", "sin", "que", "medio", "causa"]);
+const bleGlossSplits = { del: ["de"], al: ["a", "el"] };
+let bleTokenGlossIndexPromise = null;
 
 async function readFirstExistingFile(candidates) {
   for (const candidate of candidates) {
@@ -181,10 +187,64 @@ function splitReferenceTokens(text) {
     .filter(Boolean);
 }
 
-function buildTokenRows(rows, chapter, verse, bleText, translationIndexes) {
+function bleGlossToText(es) {
+  const core = String(es || "").trim();
+  if (!core || core === "?") return "";
+  if (!core.includes("·")) return core;
+
+  const parts = [];
+  for (const raw of core.split("·")) {
+    const part = raw.trim();
+    if (!part) continue;
+    parts.push(...(bleGlossSplits[part.toLowerCase()] || [part]));
+  }
+
+  let out = "";
+  for (const part of parts) {
+    if (bleGlossBulletMarks.has(part.toLowerCase())) {
+      out += `${part}•`;
+    } else {
+      if (out && !out.endsWith("•")) out += " ";
+      out += part;
+    }
+  }
+  return out;
+}
+
+async function loadBleTokenGlossIndex(book = "tito") {
+  if (bleTokenGlossIndexPromise) return bleTokenGlossIndexPromise;
+
+  bleTokenGlossIndexPromise = (async () => {
+    const index = new Map();
+    const content = await readFirstExistingFile([
+      join(mnaInterlinearDir, `${book}.tokens.jsonl`),
+      join(getCgvDataPath(), "datasets", "interlinear", "NT", `${book}.tokens.jsonl`)
+    ]);
+    if (!content) return index;
+
+    for (const line of content.replace(/\r\n/g, "\n").split("\n")) {
+      if (!line.trim()) continue;
+      let row;
+      try {
+        row = JSON.parse(line);
+      } catch {
+        continue;
+      }
+      if (!row?.ch || !row?.vs || !row?.tok) continue;
+      index.set(`${Number(row.ch)}|${Number(row.vs)}|${Number(row.tok)}`, bleGlossToText(row.es || ""));
+    }
+    return index;
+  })();
+
+  return bleTokenGlossIndexPromise;
+}
+
+function buildTokenRows(rows, chapter, verse, bleText, translationIndexes, bleGlossIndex = null) {
   const bleTokens = splitReferenceTokens(bleText);
   return rows.map((row, index) => {
     const sourceTokenId = titusSourceTokenId(chapter, verse, index + 1);
+    const glossKey = `${Number(chapter)}|${Number(verse)}|${index + 1}`;
+    const bleFromJsonl = bleGlossIndex?.get(glossKey) || "";
     return {
       sourceTokenId,
       greek: row.surfaceForm,
@@ -192,7 +252,7 @@ function buildTokenRows(rows, chapter, verse, bleText, translationIndexes) {
       strongs: knownStrongForLemma(row.lemma),
       rmac: formatRmac(row.partOfSpeech, row.parsing),
       morphology: describeMorphologySpanish(row.partOfSpeech, row.parsing),
-      ble: bleTokens[index] || "",
+      ble: bleFromJsonl || bleTokens[index] || "",
       rv1909: resolveAlignedSpan(translationIndexes, [sourceTokenId])
     };
   });
@@ -200,8 +260,9 @@ function buildTokenRows(rows, chapter, verse, bleText, translationIndexes) {
 
 async function loadTitusTranslationUnits() {
   const cgvDataDir = getCgvDataPath();
-  const translationIndexes = await loadTranslationIndexes(cgvDataDir);
-  const [bleContent, morphContent] = await Promise.all([
+  const [translationIndexes, bleGlossIndex, bleContent, morphContent] = await Promise.all([
+    loadTranslationIndexes(cgvDataDir),
+    loadBleTokenGlossIndex("tito"),
     readFirstExistingFile([
       join(cgvDataDir, "bibles/BLE/tito.ble.md"),
       join(bibliaBleOutputDir, "tito.ble.md")
@@ -235,14 +296,23 @@ async function loadTitusTranslationUnits() {
       const greekRows = greekByReference.get(reference) || [];
       const sourceTokenIds = greekRows
         .map((_, index) => titusSourceTokenId(Number(chapter), Number(verse), index + 1));
+      const tokenRows = buildTokenRows(
+        greekRows,
+        Number(chapter),
+        Number(verse),
+        bleText.trim(),
+        translationIndexes,
+        bleGlossIndex
+      );
+      const alignedBleText = tokenRows.map(row => row.ble).filter(Boolean).join(" ");
       return {
         reference,
         greekText: formatGreekVerse(greekRows),
         sourceTokenIds,
-        tokenRows: buildTokenRows(greekRows, Number(chapter), Number(verse), bleText.trim(), translationIndexes),
+        tokenRows,
         rv1909Text: translationIndexes.rv1909.get(`17|${Number(chapter)}|${Number(verse)}`)
           || resolveAlignedSpan(translationIndexes, sourceTokenIds),
-        bleText: bleText.trim()
+        bleText: alignedBleText || bleText.trim()
       };
     })
     .filter(Boolean);
@@ -785,9 +855,64 @@ async function handleTranslation(request, response) {
   sendJson(response, 405, { error: "Method not allowed" });
 }
 
+async function handleTranslationSuggest(request, response) {
+  if (request.method === "GET") {
+    sendJson(response, 200, describeAiAvailability());
+    return;
+  }
+
+  if (request.method !== "POST") {
+    sendJson(response, 405, { error: "Method not allowed" });
+    return;
+  }
+
+  const body = await readJsonBody(request);
+  const reference = typeof body.reference === "string" ? body.reference.trim() : "";
+  const greek = typeof body.greek === "string" ? body.greek.trim() : "";
+  const rv1909Text = typeof body.rv1909Text === "string" ? body.rv1909Text : "";
+  const bleText = typeof body.bleText === "string" ? body.bleText : "";
+  const tokenRows = Array.isArray(body.tokenRows) ? body.tokenRows : [];
+  const priorLbf = Array.isArray(body.priorLbf)
+    ? body.priorLbf
+      .filter(item => item && typeof item.spanish === "string" && item.spanish.trim())
+      .map(item => ({
+        reference: String(item.reference || ""),
+        spanish: String(item.spanish || "").trim()
+      }))
+    : [];
+
+  if (!reference || (!greek && !tokenRows.length)) {
+    sendJson(response, 400, { error: "reference and greek/tokenRows are required" });
+    return;
+  }
+
+  try {
+    const result = await suggestPhraseTranslation({
+      reference,
+      greek: greek || tokenRows.map(row => row.greek).filter(Boolean).join(" "),
+      tokenRows,
+      rv1909Text,
+      bleText,
+      priorLbf
+    });
+    sendJson(response, 200, result);
+  } catch (error) {
+    const status = error?.code === "AI_NOT_CONFIGURED" ? 503 : 502;
+    sendJson(response, status, {
+      error: error.message || "AI suggestion failed",
+      code: error.code || "AI_SUGGEST_FAILED"
+    });
+  }
+}
+
 async function handleApi(request, response, url) {
   if (url.pathname === "/api/translation/current") {
     await handleTranslation(request, response);
+    return;
+  }
+
+  if (url.pathname === "/api/translation/suggest") {
+    await handleTranslationSuggest(request, response);
     return;
   }
 

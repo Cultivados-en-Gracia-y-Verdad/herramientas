@@ -146,15 +146,66 @@ export function deriveSkeleton(
     if (!resolvedById.has(parentId) && byId.has(parentId)) topLevelIds.add(parentId);
   }
 
-  function buildNode(id: string): SkeletonNode {
+  // Two (or more) clauses can point at each other as parent — e.g. a "describes"
+  // answer and a "frame" answer that each name the other as their owner. Neither
+  // is ever a root and neither is "parked" (each found a valid-looking owner),
+  // so without this pass the whole cycle — and anything hanging off it — would
+  // never be reached from topLevelIds and would silently vanish from the output.
+  const reached = new Set<string>();
+  function markReached(id: string): void {
+    if (reached.has(id)) return;
+    reached.add(id);
+    for (const childId of childrenMap.get(id) ?? []) markReached(childId);
+  }
+  for (const id of topLevelIds) markReached(id);
+  // Parked clauses already expose their own children via the `parked` array
+  // below (buildNode pulls from childrenMap regardless of parked status), so
+  // anything hanging off a parked clause is already accounted for and must
+  // not also be treated as "unreached" here.
+  for (const [id, resolved] of resolvedById) {
+    if (resolved.parked) markReached(id);
+  }
+
+  const unreachedSet = new Set(
+    clauses
+      .map(c => c.finiteVerbId)
+      .filter(id => resolvedById.has(id) && !reached.has(id))
+  );
+
+  const groupVisited = new Set<string>();
+  for (const start of unreachedSet) {
+    if (groupVisited.has(start)) continue;
+    const stack = [start];
+    const component: string[] = [];
+    while (stack.length) {
+      const current = stack.pop();
+      if (!current || groupVisited.has(current)) continue;
+      groupVisited.add(current);
+      component.push(current);
+      const parentId = resolvedById.get(current)?.parentClauseId;
+      if (parentId && unreachedSet.has(parentId) && !groupVisited.has(parentId)) stack.push(parentId);
+      for (const childId of childrenMap.get(current) ?? []) {
+        if (unreachedSet.has(childId) && !groupVisited.has(childId)) stack.push(childId);
+      }
+    }
+    const rootOfComponent = component
+      .map(id => byId.get(id))
+      .filter((c): c is ClauseSpanInfo => Boolean(c))
+      .sort(byOrder)[0];
+    if (rootOfComponent) topLevelIds.add(rootOfComponent.finiteVerbId);
+  }
+
+  function buildNode(id: string, ancestors: Set<string>): SkeletonNode {
     const clause = byId.get(id);
     if (!clause) throw new Error(`Unknown clause id in skeleton: ${id}`);
     const resolved = resolvedById.get(id);
+    const nextAncestors = new Set(ancestors).add(id);
     const kids = (childrenMap.get(id) ?? [])
+      .filter(childId => !ancestors.has(childId)) // breaks cycles instead of recursing forever
       .map(childId => byId.get(childId))
       .filter((c): c is ClauseSpanInfo => Boolean(c))
       .sort(byOrder)
-      .map(c => buildNode(c.finiteVerbId));
+      .map(c => buildNode(c.finiteVerbId, nextAncestors));
 
     return {
       finiteVerbId: id,
@@ -170,7 +221,7 @@ export function deriveSkeleton(
     .map(id => byId.get(id))
     .filter((c): c is ClauseSpanInfo => Boolean(c))
     .sort(byOrder)
-    .map(c => buildNode(c.finiteVerbId));
+    .map(c => buildNode(c.finiteVerbId, new Set()));
 
   // A parked clause can still be someone else's parent (e.g. a content/frame
   // clause correctly pointing at it) — buildNode already pulls children from
@@ -179,7 +230,7 @@ export function deriveSkeleton(
   const parked: ParkedClause[] = clauses
     .filter(clause => resolvedById.get(clause.finiteVerbId)?.parked)
     .map(clause => ({
-      ...buildNode(clause.finiteVerbId),
+      ...buildNode(clause.finiteVerbId, new Set()),
       describedNounSpan: resolvedById.get(clause.finiteVerbId)?.describedNounSpan ?? []
     }));
 

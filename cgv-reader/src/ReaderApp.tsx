@@ -133,6 +133,42 @@ function stripCriticalMarks(value: string): string {
   return value.replace(/[⸀⸁⸂⸃,.;·]/g, "");
 }
 
+type VerbMood = "indicative" | "subjunctive" | "imperative" | "optative";
+
+// MorphGNT's finite-verb window: "V-" + person(1/2/3) + tense + voice + mood + ....
+// A finite verb always carries a person digit here — infinitives and participles don't.
+function moodFromSourceMorph(sourceMorph: string): VerbMood | null {
+  if (!/^V-[123]/.test(sourceMorph)) return null;
+  switch (sourceMorph[5]) {
+    case "I":
+      return "indicative";
+    case "S":
+      return "subjunctive";
+    case "D":
+    case "M":
+      return "imperative";
+    case "O":
+      return "optative";
+    default:
+      return null;
+  }
+}
+
+function setsMatch(a: Set<string>, b: Set<string>): boolean {
+  if (a.size !== b.size) return false;
+  for (const id of a) {
+    if (!b.has(id)) return false;
+  }
+  return true;
+}
+
+// A brick only "confirms" once there's something real to confirm against — an
+// empty ground truth (e.g. Titus has no optative verbs at all) would otherwise
+// trivially match an untouched, empty student set and show a checkmark nobody earned.
+function brickConfirmed(marked: Set<string>, groundTruth: Set<string>): boolean {
+  return groundTruth.size > 0 && setsMatch(marked, groundTruth);
+}
+
 function tokenText(token: GreekToken): string {
   return stripCriticalMarks(token.surface);
 }
@@ -166,6 +202,15 @@ function personNumberMeaning(rmac: string): string | null {
 
   const code = `${person}${number}`;
   return `${code} means ${meanings[code]}`;
+}
+
+function BrickCheck({ confirmed }: { confirmed: boolean }) {
+  if (!confirmed) return null;
+  return (
+    <span className="brick-check" aria-label="Confirmed against the source text">
+      ✓
+    </span>
+  );
 }
 
 interface GreekTokenButtonProps {
@@ -434,6 +479,36 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
   const [activeVerse, setActiveVerse] = useState<GreekVerse | null>(
     () => data.greek[0]?.[1][0] ?? null
   );
+
+  // Ground truth, derived purely from the Greek morphology already loaded —
+  // never shown directly, only used to silently confirm a brick once the
+  // student's own marks exactly match it. See moodFromSourceMorph/brickConfirmed.
+  const groundTruth = useMemo(() => {
+    const finiteIds = new Set<string>();
+    const byMood: Record<VerbMood, Set<string>> = {
+      indicative: new Set(),
+      subjunctive: new Set(),
+      imperative: new Set(),
+      optative: new Set()
+    };
+    for (const [, verses] of data.greek) {
+      for (const verse of verses) {
+        for (const token of verse.tokens) {
+          const mood = moodFromSourceMorph(token.sourceMorph);
+          if (!mood) continue;
+          finiteIds.add(token.id);
+          byMood[mood].add(token.id);
+        }
+      }
+    }
+    return { finiteIds, byMood };
+  }, [data.greek]);
+
+  const brick1Confirmed = brickConfirmed(finiteMarkedIds, groundTruth.finiteIds);
+  const brick2Confirmed = brickConfirmed(commandMarkedIds, groundTruth.byMood.imperative);
+  const brick2cConfirmed = brickConfirmed(statementMarkedIds, groundTruth.byMood.indicative);
+  const brick3Confirmed = brickConfirmed(subjunctiveMarkedIds, groundTruth.byMood.subjunctive);
+  const brick3cConfirmed = brickConfirmed(optativeMarkedIds, groundTruth.byMood.optative);
 
   useEffect(() => {
     window.localStorage.setItem(MARKS_KEY, JSON.stringify(Array.from(finiteMarkedIds)));
@@ -767,6 +842,7 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
               aria-pressed={participation === "finite"}
             >
               Brick 1 — Finite Verbs
+              <BrickCheck confirmed={brick1Confirmed} />
             </button>
             <button
               type="button"
@@ -777,6 +853,7 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
               aria-pressed={participation === "mood-commands"}
             >
               Brick 2 — Commands
+              <BrickCheck confirmed={brick2Confirmed} />
             </button>
             <button
               type="button"
@@ -788,6 +865,7 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
               aria-pressed={participation === "mood-statements"}
             >
               Brick 2C — Statements
+              <BrickCheck confirmed={brick2cConfirmed} />
             </button>
             <button
               type="button"
@@ -810,6 +888,7 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
               aria-pressed={participation === "mood-subjunctive"}
             >
               Brick 3 — Subjunctive
+              <BrickCheck confirmed={brick3Confirmed} />
             </button>
             <button
               type="button"
@@ -821,6 +900,7 @@ function OPrototype({ onBackToReader }: { onBackToReader: () => void }) {
               aria-pressed={participation === "mood-optative"}
             >
               Brick 3C — Optative
+              <BrickCheck confirmed={brick3cConfirmed} />
             </button>
           </div>
 
