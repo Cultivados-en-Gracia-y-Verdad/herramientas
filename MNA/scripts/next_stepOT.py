@@ -62,22 +62,6 @@ def apply_rules(book: str, tokens_path: Path, rules_dir: Path, overrides_path: P
             new_es = lemma_defaults[lemma]
         elif lemma in lemma_lexicon:
             new_es = lemma_lexicon[lemma]
-        elif lemma == "ὁ" and morph in article_by_morph:
-            new_es = article_by_morph[morph]
-        elif lemma == "αὐτός" and morph in autos_by_morph:
-            new_es = autos_by_morph[morph]
-        elif lemma == "σύ" and morph in su_by_morph:
-            new_es = su_by_morph[morph]
-        elif lemma == "ἐγώ" and morph in ego_by_morph:
-            new_es = ego_by_morph[morph]
-        elif lemma == "οὗτος" and morph in houtos_by_morph:
-            new_es = houtos_by_morph[morph]
-        elif lemma == "τίς" and morph in tis_by_morph:
-            new_es = tis_by_morph[morph]
-        elif lemma == "ὅς" and morph in hos_by_morph:
-            new_es = hos_by_morph[morph]
-        elif lemma == "εἰμί" and morph in eimi_by_morph:
-            new_es = eimi_by_morph[morph]
 
         if new_es is not None and new_es != "?":
             r["es"] = new_es
@@ -136,21 +120,16 @@ def main():
     for n, lemma in top:
         print(f"{n}\t{lemma}")
 
-    # If any big function/pronoun lemmas still exist, show morph breakdown automatically
-    watch = ["ὁ","αὐτός","σύ","ἐγώ","οὗτος","τίς","ὅς","εἰμί"]
-    top_lemmas = {lemma for _, lemma in top}
-    for lemma in watch:
-        if lemma in top_lemmas:
-            t, br = morph_breakdown(book, out, lemma, limit=25)
-            print(f"\nMORPH BREAKDOWN: lemma {lemma!r} (unfilled={t})")
-            for n, m in br:
-                print(f"{n}\t{m}")
-
     # Hint
     if total == 0:
         print("\nNEXT ACTION: Done — book has 0 remaining '?'.")
     else:
-        print("\nNEXT ACTION: If a MORPH BREAKDOWN is shown above, patch the corresponding grc_*_by_morph.json; otherwise add the TOP lemmas to grc_lemma_lexicon.json and rerun this command.")
+        print(
+            "\nNEXT ACTION: "
+            "python3 MNA/scripts/ot_lemma_batch.py "
+            f"--book {book} --apply-auto --all-remaining-auto --commit"
+            "  (or --propose / --apply-json for manual/AI glosses)"
+        )
 
 if __name__ == "__main__":
     main()

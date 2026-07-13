@@ -16,18 +16,24 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "ahrc" / "strongs.jsonl"
 
 PARENT_ROOT_RE = re.compile(
-    r"\(([א-ת]{1,4})\)\s*\*\*Action:\*\*|\(([א-ת]{1,4})\)\s*\*\*Object:\*\*"
+    r"\(([א-ת]{1,4})\)\s*(?:\*\*)?Action:(?:\*\*)?"
+    r"|\(([א-ת]{1,4})\)\s*(?:\*\*)?Object:(?:\*\*)?"
 )
+# Current AHRC pages use plain "Translation:" labels (older scrapes used **markdown**).
 ROW_RE = re.compile(
     r"\(\s*(?:masc\.|fem\.|common),?\s*"
-    r"([^/|]+?)\s*/\s*([^)|]+?)\)\s*"
-    r"\*\*Translation:\*\*\s*([^*]+?)"
-    r"(?:\s*\*\*Definition:\*\*\s*([^*]+?))?"
-    r"(?:\s*\*\*Relationship to Root:\*\*\s*([^*]+?))?"
-    r"(?:\s*\*\*KJV Translations:\*\*\s*([^*]+?))?"
-    r"\s*\*\*Strong's Hebrew #:\*\*\s*([hH.\d,\s]+?)(?:\s*\*\*|$)",
+    r"([^/|)+]+?)"
+    r"(?:\s*/\s*([^)|]+?))?"
+    r"\)\s*"
+    r"(?:\*\*)?Translation:(?:\*\*)?\s*([^*]+?)"
+    r"(?:\s*(?:\*\*)?Definition:(?:\*\*)?\s*([^*]+?))?"
+    r"(?:\s*(?:\*\*)?Relationship to Root:(?:\*\*)?\s*([^*]+?))?"
+    r"(?:\s*(?:\*\*)?KJV Translations:(?:\*\*)?\s*([^*]+?))?"
+    r"\s*(?:\*\*)?Strong's Hebrew #:(?:\*\*)?\s*"
+    r"([^\(]+?)(?=\s*\(|\s*$)",
     re.I,
 )
+
 
 
 def strip_html(text: str) -> str:
@@ -61,7 +67,7 @@ def parse_ahlb_html(html: str, *, source_slug: str) -> list[dict]:
         start = max(0, m.start() - 200)
         chunk = text[start : m.start()]
         for label in ("Action:", "Object:", "Abstract:", "Definition:"):
-            lm = re.search(rf"\*\*{label}\*\*\s*([^*|]+)", chunk)
+            lm = re.search(rf"(?:\*\*)?{re.escape(label)}(?:\*\*)?\s*([^*|(]+)", chunk)
             if lm:
                 parent_roots.setdefault(root, lm.group(1).strip())
                 break
@@ -69,19 +75,31 @@ def parse_ahlb_html(html: str, *, source_slug: str) -> list[dict]:
     entries: list[dict] = []
     seen: set[str] = set()
 
-    for chunk in text.split("|"):
-        if "Strong's Hebrew #:" not in chunk:
-            continue
-        m = ROW_RE.search(chunk)
-        if not m:
-            continue
-
+    # Prefer whole-page scan; pipe-splitting was for older markdown tables.
+    for m in ROW_RE.finditer(text):
         hebrew = m.group(1).strip()
-        translit = m.group(2).strip()
+        translit = (m.group(2) or "").strip()
         translation = m.group(3).strip().replace(".", " ").strip()
+        # Stop field bleed into following labels.
+        translation = re.split(
+            r"\s+(?:Definition|Relationship to Root|KJV Translations|Strong's Hebrew)\b",
+            translation,
+            maxsplit=1,
+        )[0].strip()
         definition = (m.group(4) or "").strip()
+        definition = re.split(
+            r"\s+(?:Relationship to Root|KJV Translations|Strong's Hebrew)\b",
+            definition,
+            maxsplit=1,
+        )[0].strip()
         relationship = (m.group(5) or "").strip()
+        relationship = re.split(
+            r"\s+(?:KJV Translations|Strong's Hebrew)\b",
+            relationship,
+            maxsplit=1,
+        )[0].strip()
         kjv = (m.group(6) or "").strip()
+        kjv = re.split(r"\s+Strong's Hebrew\b", kjv, maxsplit=1)[0].strip()
         strongs_raw = m.group(7).strip()
 
         parent_root = hebrew[:2] if hebrew else ""

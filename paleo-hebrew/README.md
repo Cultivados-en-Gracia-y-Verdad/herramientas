@@ -39,10 +39,10 @@ Build indexes once, then compare any Strong's number:
 ```bash
 cd paleo-hebrew
 
-# import AHRC AHLB page (saved HTML or live URL)
-python3 scripts/parse_ahlb_html.py --url https://www.ancient-hebrew.org/ahlb/aleph.html --merge
+# import all AHLB letter pages (AHRC concrete senses)
+python3 scripts/import_all_ahlb.py
 
-# index MNA OT tokens by Strong's (Torah books so far)
+# index MNA OT tokens by Strong's
 python3 scripts/build_ot_lemma_index.py
 python3 scripts/build_lemma_compare.py
 
@@ -53,6 +53,18 @@ python3 scripts/compare_lemma.py --list --book genesis --linked-only
 ```
 
 Output: `data/index/lemma-compare.jsonl` (MNA occurrences + CGV gloss + AHRC entry per H-number).
+
+### Feed into MNA OT lemma batches
+
+`MNA/scripts/ot_lemma_batch.py` reads paleo/AHRC evidence when proposing Spanish glosses:
+
+```bash
+# from repo root
+python3 MNA/scripts/ot_lemma_batch.py --book 1reyes --propose
+python3 MNA/scripts/ot_lemma_batch.py --book 1reyes --apply-auto --commit
+```
+
+AHRC English headwords are mapped to BLE Spanish bases via `scripts/ahrc_gloss_es.py` (investigative input — still review proper names and contested senses).
 
 ## Quick start
 
@@ -87,6 +99,7 @@ See [docs/sources/ahrc.md](docs/sources/ahrc.md) for full catalog and methodolog
 - [x] Letter map + square ↔ paleo scripts
 - [x] AHRC source catalog
 - [x] Aleph letter notes + sample parent roots
-- [ ] Remaining 21 AHLB letter pages
-- [ ] Crosswalk AHRC Strong's → MNA lemmas
+- [x] Full AHLB letter import (`import_all_ahlb.py`) → ~5.5k Strong's entries
+- [x] Crosswalk AHRC Strong's → MNA OT lemma batches (`ahrc_gloss_es.py` + `MNA/scripts/ot_lemma_batch.py`)
+- [ ] Remaining per-letter study notes beyond Aleph
 - [ ] OT verse investigation templates
