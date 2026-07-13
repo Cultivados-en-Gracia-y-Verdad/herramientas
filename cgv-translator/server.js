@@ -857,7 +857,7 @@ async function handleTranslation(request, response) {
 
 async function handleTranslationSuggest(request, response) {
   if (request.method === "GET") {
-    sendJson(response, 200, describeAiAvailability());
+    sendJson(response, 200, await describeAiAvailability());
     return;
   }
 
@@ -897,7 +897,9 @@ async function handleTranslationSuggest(request, response) {
     });
     sendJson(response, 200, result);
   } catch (error) {
-    const status = error?.code === "AI_NOT_CONFIGURED" ? 503 : 502;
+    const status = error?.code === "AI_NOT_CONFIGURED" || error?.code === "OLLAMA_UNREACHABLE"
+      ? 503
+      : 502;
     sendJson(response, status, {
       error: error.message || "AI suggestion failed",
       code: error.code || "AI_SUGGEST_FAILED"

@@ -242,6 +242,16 @@ select {
   font-size: 0.92rem;
 }
 
+.ai-proposal-analysis {
+  margin: 0.55rem 0 0;
+  padding: 0.55rem 0.65rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
 .ai-proposal-actions {
   display: flex;
   flex-wrap: wrap;

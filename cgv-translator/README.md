@@ -22,6 +22,25 @@ Then open:
 http://127.0.0.1:1424/
 ```
 
+### AI phrase suggestions (Ollama)
+
+With no cloud API keys, the prototype uses local [Ollama](https://ollama.com) by default.
+
+```sh
+# Install Ollama, then:
+ollama pull llama3.2
+```
+
+Optional overrides go in `.env` (see `.env.example`). You can also set `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` instead.
+
+AI translation discipline lives in editable rules:
+
+```text
+src/ai/lbf-translation-rules.md
+```
+
+Proposals must reason from lemma → morphology → context before Spanish. Approved investigation decisions are injected as lemma policy.
+
 The prototype reads and writes plain Markdown files in `investigations/`. During this stage, those Markdown files remain the source of truth.
 Investigation Stop Rule
 

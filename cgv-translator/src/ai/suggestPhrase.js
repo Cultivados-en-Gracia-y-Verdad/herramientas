@@ -1,10 +1,20 @@
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const DEFAULT_OPENAI_MODEL = process.env.CGV_TRANSLATOR_OPENAI_MODEL || "gpt-4.1-mini";
 const DEFAULT_ANTHROPIC_MODEL = process.env.CGV_TRANSLATOR_ANTHROPIC_MODEL || "claude-sonnet-4-5";
+const DEFAULT_OLLAMA_MODEL = process.env.CGV_TRANSLATOR_OLLAMA_MODEL || "llama3.2";
+const DEFAULT_OLLAMA_BASE_URL = "http://127.0.0.1:11434";
+
+const SYSTEM_PROMPT = `You are a pipeline assistant for La Biblia Fiel (LBF).
+You are not the final translator.
+Work only from Greek lemma, morphology, and context — never start from RV1909 or BLE.
+Return valid JSON only matching the requested schema.`;
+
+let translatorRootDir = "";
 
 export async function loadTranslatorEnv(rootDir) {
+  translatorRootDir = rootDir;
   const envPath = join(rootDir, ".env");
   const content = await readFile(envPath, "utf8").catch(() => "");
   if (!content) return;
@@ -27,9 +37,43 @@ export async function loadTranslatorEnv(rootDir) {
   }
 }
 
+function resolveOllamaBaseUrl() {
+  const raw = process.env.CGV_TRANSLATOR_OLLAMA_BASE_URL
+    || process.env.OLLAMA_HOST
+    || DEFAULT_OLLAMA_BASE_URL;
+  return String(raw).replace(/\/$/, "");
+}
+
 function getAiConfig() {
+  const forced = String(process.env.CGV_TRANSLATOR_PROVIDER || "").trim().toLowerCase();
   const anthropicKey = process.env.ANTHROPIC_API_KEY || process.env.CGV_ANTHROPIC_API_KEY || "";
   const openaiKey = process.env.OPENAI_API_KEY || process.env.CGV_OPENAI_API_KEY || "";
+  const ollamaBaseUrl = resolveOllamaBaseUrl();
+  const ollamaModel = process.env.CGV_TRANSLATOR_OLLAMA_MODEL || DEFAULT_OLLAMA_MODEL;
+
+  if (forced === "ollama") {
+    return { provider: "ollama", baseUrl: ollamaBaseUrl, model: ollamaModel };
+  }
+  if (forced === "anthropic") {
+    if (!anthropicKey) return null;
+    return {
+      provider: "anthropic",
+      apiKey: anthropicKey,
+      model: process.env.CGV_TRANSLATOR_ANTHROPIC_MODEL || DEFAULT_ANTHROPIC_MODEL
+    };
+  }
+  if (forced === "openai") {
+    if (!openaiKey) return null;
+    return {
+      provider: "openai",
+      apiKey: openaiKey,
+      model: process.env.CGV_TRANSLATOR_OPENAI_MODEL || DEFAULT_OPENAI_MODEL
+    };
+  }
+
+  if (!anthropicKey && !openaiKey) {
+    return { provider: "ollama", baseUrl: ollamaBaseUrl, model: ollamaModel };
+  }
 
   if (anthropicKey) {
     return {
@@ -39,31 +83,133 @@ function getAiConfig() {
     };
   }
 
-  if (openaiKey) {
-    return {
-      provider: "openai",
-      apiKey: openaiKey,
-      model: process.env.CGV_TRANSLATOR_OPENAI_MODEL || DEFAULT_OPENAI_MODEL
-    };
-  }
-
-  return null;
+  return {
+    provider: "openai",
+    apiKey: openaiKey,
+    model: process.env.CGV_TRANSLATOR_OPENAI_MODEL || DEFAULT_OPENAI_MODEL
+  };
 }
 
-function formatTokenRows(tokenRows = []) {
+async function loadTranslationRules() {
+  if (!translatorRootDir) return "";
+  const rulesPath = join(translatorRootDir, "src", "ai", "lbf-translation-rules.md");
+  return readFile(rulesPath, "utf8").catch(() => "");
+}
+
+function parseDecisionVersions(markdown) {
+  const sections = String(markdown || "").split(/^## Version\s+/m).slice(1);
+  return sections.map(section => {
+    const lines = section.replace(/\r\n/g, "\n").split("\n");
+    const fields = {};
+    for (const line of lines) {
+      const match = line.match(/^([^:]+):\s*(.*)$/);
+      if (!match) continue;
+      fields[match[1].trim().toLowerCase()] = match[2].trim();
+    }
+    const reasonMatch = section.match(/### Reason\s*\n([\s\S]*?)(?=\n### |\n## |$)/);
+    return {
+      status: fields.status || "",
+      lemma: fields.lemma || "",
+      strongs: fields["strong's"] || fields.strongs || "",
+      preferredRendering: fields["preferred rendering"] || "",
+      confidence: fields.confidence || "",
+      reason: reasonMatch ? reasonMatch[1].trim() : ""
+    };
+  });
+}
+
+async function loadApprovedLemmaPolicies() {
+  if (!translatorRootDir) return [];
+  const investigationsDir = join(translatorRootDir, "investigations");
+  const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
+  const policies = [];
+
+  for (const entry of entries) {
+    if (!entry.isDirectory() || !/^INV-\d{4}$/.test(entry.name)) continue;
+    const markdown = await readFile(join(investigationsDir, entry.name, "decision.md"), "utf8").catch(() => "");
+    const approved = parseDecisionVersions(markdown)
+      .filter(item => /^approved$/i.test(item.status) && item.lemma && item.preferredRendering)
+      .at(-1);
+    if (!approved) continue;
+    policies.push({
+      investigationId: entry.name,
+      lemma: approved.lemma,
+      strongs: approved.strongs,
+      preferredRendering: approved.preferredRendering,
+      confidence: approved.confidence,
+      reason: approved.reason
+    });
+  }
+
+  return policies;
+}
+
+function policiesForTokens(tokenRows = [], policies = []) {
+  const byLemma = new Map(policies.map(item => [item.lemma, item]));
+  const byStrongs = new Map(
+    policies.filter(item => item.strongs).map(item => [item.strongs.toUpperCase(), item])
+  );
+  const matched = [];
+  const missing = [];
+
+  for (const row of tokenRows) {
+    const lemma = row.lemma || "";
+    const strongs = String(row.strongs || "").toUpperCase();
+    if (!lemma && !strongs) continue;
+    // Skip light function words from "missing policy" noise when no Strong's.
+    const isLight = !strongs && /^(δέ|δὲ|καί|καὶ|ὁ|ἡ|τό|τοῦ|τῆς|τῷ|τῇ|τὸν|τήν|τά|οὐ|μή)$/u.test(lemma);
+    const policy = (strongs && byStrongs.get(strongs)) || (lemma && byLemma.get(lemma));
+    if (policy) {
+      if (!matched.some(item => item.lemma === policy.lemma && item.strongs === policy.strongs)) {
+        matched.push(policy);
+      }
+    } else if (!isLight) {
+      missing.push({
+        greek: row.greek || "",
+        lemma: lemma || "—",
+        strongs: strongs || "—"
+      });
+    }
+  }
+
+  return { matched, missing };
+}
+
+function formatGreekTokenBlock(tokenRows = []) {
+  if (!tokenRows.length) return "(no token rows — use the Greek phrase only)";
   return tokenRows
     .map((row, index) => {
-      const parts = [
-        `${index + 1}.`,
-        row.greek || "—",
-        `lemma=${row.lemma || "—"}`,
-        `morph=${row.rmac || row.morphology || "—"}`,
-        `ble=${row.ble || "—"}`
+      const lines = [
+        `${index + 1}. surface: ${row.greek || "—"}`,
+        `   lemma: ${row.lemma || "—"}`,
+        `   strongs: ${row.strongs || "—"}`,
+        `   morph code: ${row.rmac || row.morphology || "—"}`,
+        `   morph note: ${row.morphology || "—"}`
       ];
-      if (row.rv1909) parts.push(`rv1909=${row.rv1909}`);
-      return parts.join(" | ");
+      return lines.join("\n");
     })
     .join("\n");
+}
+
+function formatPolicies(matched = [], missing = []) {
+  const matchedBlock = matched.length
+    ? matched
+      .map(item => {
+        const bits = [
+          `- ${item.strongs || "—"} ${item.lemma}: prefer "${item.preferredRendering}"`,
+          item.confidence ? `(confidence: ${item.confidence})` : "",
+          item.investigationId ? `[${item.investigationId}]` : ""
+        ].filter(Boolean);
+        return bits.join(" ");
+      })
+      .join("\n")
+    : "- (none matched for this phrase)";
+
+  const missingBlock = missing.length
+    ? missing.map(item => `- ${item.strongs} ${item.lemma} (${item.greek})`).join("\n")
+    : "- (none flagged)";
+
+  return { matchedBlock, missingBlock };
 }
 
 function buildPrompt({
@@ -72,38 +218,137 @@ function buildPrompt({
   tokenRows,
   rv1909Text,
   bleText,
-  priorLbf = []
+  priorLbf = [],
+  rulesMarkdown,
+  matchedPolicies,
+  missingPolicies
 }) {
   const priorBlock = priorLbf.length
     ? priorLbf.map(item => `- ${item.reference}: ${item.spanish}`).join("\n")
     : "(none yet)";
+  const { matchedBlock, missingBlock } = formatPolicies(matchedPolicies, missingPolicies);
 
-  return `You assist La Biblia Fiel (LBF), a fresh Spanish Bible translation.
+  return `${rulesMarkdown || "Follow LBF Greek-first translation discipline."}
 
-Rules:
-- Translate from the Greek phrase itself.
-- Be simple, precise, and contemporary Spanish.
-- Preserve meaning, grammar, and open tensions in the source.
-- Do not add words absent from the Greek (for example do not insert "misericordia" if ἔλεος is not present).
-- Do not copy RV1909 wording. RV1909 is consultative only.
-- BLE is a mechanical gloss diagnostic, not polished Spanish.
-- Prefer natural phrase flow over word-for-word stiffness.
-- Divine possessives may use capitalized Su/Sus when clearly referring to God.
-- Return ONLY the Spanish proposal for this phrase. No quotes, no commentary, no alternatives.
+---
+
+TASK
+Propose Spanish for ONE phrase. Complete the gates in order before writing proposedSpanish.
 
 Reference: ${reference}
-Greek phrase: ${greek || "—"}
+Greek phrase (source of truth): ${greek || "—"}
 
-Token rows:
-${formatTokenRows(tokenRows) || "(none)"}
+GATE 1 — Lemma (Greek tokens only; no Spanish translations from RV1909/BLE here)
+${formatGreekTokenBlock(tokenRows)}
 
-BLE mechanical (diagnostic): ${bleText || "—"}
-RV1909 (consultative only): ${rv1909Text || "—"}
+Approved project lemma policies (authoritative when present):
+${matchedBlock}
 
-Already approved LBF nearby:
+Lemmas without approved policy (do not invent policy; flag if uncertain):
+${missingBlock}
+
+GATE 2 — Morphology
+Use each morph code / morph note above. Grammar may constrain Spanish form and relationships. Morphology does not redefine lemma meaning.
+
+GATE 3 — Immediate context
+Read the Greek phrase as a unit: connectors, case relationships, and clause role.
+
+GATE 4 — Nearby LBF context (style consistency only; does not override Greek)
 ${priorBlock}
 
-Spanish proposal:`;
+GATE 5 — Consult last (do NOT copy; do NOT start here)
+RV1909 (consultative): ${rv1909Text || "—"}
+BLE mechanical (diagnostic only): ${bleText || "—"}
+
+SYNTHESIS
+Write proposedSpanish from Gates 1–4.
+Preserve every significant Greek token's contribution (including particles when Spanish can carry them).
+Do not merge separate Greek words into traditional compounds just because RV1909 does.
+If proposedSpanish would match RV1909 word-for-word, re-check the Greek and keep the match only if Greek independently requires those words.
+Return JSON only.`;
+}
+
+function extractJsonObject(text) {
+  const raw = String(text || "").trim();
+  if (!raw) return null;
+  try {
+    return JSON.parse(raw);
+  } catch {
+    // continue
+  }
+  const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/i);
+  if (fenced) {
+    try {
+      return JSON.parse(fenced[1].trim());
+    } catch {
+      // continue
+    }
+  }
+  const start = raw.indexOf("{");
+  const end = raw.lastIndexOf("}");
+  if (start >= 0 && end > start) {
+    try {
+      return JSON.parse(raw.slice(start, end + 1));
+    } catch {
+      return null;
+    }
+  }
+  return null;
+}
+
+function cleanProposal(text) {
+  return String(text || "")
+    .trim()
+    .replace(/^["«“]|["»”]$/gu, "")
+    .replace(/^Spanish proposal:\s*/iu, "")
+    .replace(/^proposedSpanish\s*:\s*/iu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function normalizeSuggestionPayload(rawText, { matchedPolicies, missingPolicies }) {
+  const parsed = extractJsonObject(rawText);
+  if (parsed && typeof parsed === "object") {
+    const proposal = cleanProposal(
+      parsed.proposedSpanish
+      || parsed.spanish
+      || parsed.proposal
+      || ""
+    );
+    const flags = Array.isArray(parsed.flags)
+      ? parsed.flags.map(item => String(item)).filter(Boolean)
+      : [];
+    if (missingPolicies.length && !flags.some(flag => /policy|lemma/i.test(flag))) {
+      flags.push(
+        `No approved lemma policy for: ${missingPolicies.map(item => item.lemma).join(", ")}`
+      );
+    }
+    return {
+      proposal,
+      analysis: {
+        lemma: String(parsed.lemma || "").trim(),
+        morphology: String(parsed.morphology || parsed.morph || "").trim(),
+        context: String(parsed.context || "").trim(),
+        flags
+      },
+      matchedPolicies,
+      missingPolicies
+    };
+  }
+
+  return {
+    proposal: cleanProposal(rawText),
+    analysis: {
+      lemma: "",
+      morphology: "",
+      context: "",
+      flags: missingPolicies.length
+        ? [`No approved lemma policy for: ${missingPolicies.map(item => item.lemma).join(", ")}`]
+        : ["Model did not return structured gate analysis."]
+    },
+    matchedPolicies,
+    missingPolicies
+  };
 }
 
 async function callOpenAi({ apiKey, model, prompt }) {
@@ -116,11 +361,9 @@ async function callOpenAi({ apiKey, model, prompt }) {
     body: JSON.stringify({
       model,
       temperature: 0.2,
+      response_format: { type: "json_object" },
       messages: [
-        {
-          role: "system",
-          content: "You propose faithful contemporary Spanish for La Biblia Fiel. Output only the Spanish phrase."
-        },
+        { role: "system", content: SYSTEM_PROMPT },
         { role: "user", content: prompt }
       ]
     })
@@ -148,8 +391,9 @@ async function callAnthropic({ apiKey, model, prompt }) {
     },
     body: JSON.stringify({
       model,
-      max_tokens: 300,
+      max_tokens: 700,
       temperature: 0.2,
+      system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: prompt }]
     })
   });
@@ -170,47 +414,139 @@ async function callAnthropic({ apiKey, model, prompt }) {
   return text;
 }
 
-function cleanProposal(text) {
-  return String(text || "")
-    .trim()
-    .replace(/^["«“]|["»”]$/gu, "")
-    .replace(/^Spanish proposal:\s*/iu, "")
-    .replace(/\s+/gu, " ")
-    .trim();
+async function callOllama({ baseUrl, model, prompt }) {
+  let response;
+  try {
+    response = await fetch(`${baseUrl}/api/chat`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model,
+        stream: false,
+        format: "json",
+        options: { temperature: 0.2 },
+        messages: [
+          { role: "system", content: SYSTEM_PROMPT },
+          { role: "user", content: prompt }
+        ]
+      })
+    });
+  } catch (error) {
+    const wrapped = new Error(
+      `Ollama is not reachable at ${baseUrl}. Install from https://ollama.com, then run: ollama pull ${model}`
+    );
+    wrapped.code = "OLLAMA_UNREACHABLE";
+    wrapped.cause = error;
+    throw wrapped;
+  }
+
+  const body = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    const detail = body?.error || `Ollama request failed (${response.status})`;
+    const error = new Error(String(detail));
+    if (/not found|pull/i.test(String(detail))) {
+      error.code = "OLLAMA_MODEL_MISSING";
+      error.message = `${detail}. Run: ollama pull ${model}`;
+    }
+    throw error;
+  }
+
+  const text = body?.message?.content;
+  if (!text || !String(text).trim()) {
+    throw new Error("Ollama returned an empty suggestion.");
+  }
+  return String(text).trim();
 }
 
-export function describeAiAvailability() {
+async function probeOllama(baseUrl) {
+  try {
+    const response = await fetch(`${baseUrl}/api/tags`, {
+      method: "GET",
+      signal: AbortSignal.timeout(1500)
+    });
+    return response.ok;
+  } catch {
+    return false;
+  }
+}
+
+export async function describeAiAvailability() {
   const config = getAiConfig();
   if (!config) {
     return {
       available: false,
-      message: "Set ANTHROPIC_API_KEY or OPENAI_API_KEY in cgv-translator/.env"
+      message:
+        "Set CGV_TRANSLATOR_PROVIDER=ollama, or add ANTHROPIC_API_KEY / OPENAI_API_KEY in cgv-translator/.env"
     };
   }
+
+  if (config.provider === "ollama") {
+    const reachable = await probeOllama(config.baseUrl);
+    if (!reachable) {
+      return {
+        available: false,
+        provider: "ollama",
+        model: config.model,
+        message:
+          `Ollama not running at ${config.baseUrl}. Install from https://ollama.com, then: ollama pull ${config.model}`
+      };
+    }
+  }
+
   return {
     available: true,
     provider: config.provider,
-    model: config.model
+    model: config.model,
+    ...(config.provider === "ollama" ? { baseUrl: config.baseUrl } : {})
   };
+}
+
+async function callProvider(config, prompt) {
+  if (config.provider === "ollama") {
+    return callOllama({ baseUrl: config.baseUrl, model: config.model, prompt });
+  }
+  if (config.provider === "anthropic") {
+    return callAnthropic({ apiKey: config.apiKey, model: config.model, prompt });
+  }
+  return callOpenAi({ apiKey: config.apiKey, model: config.model, prompt });
 }
 
 export async function suggestPhraseTranslation(input) {
   const config = getAiConfig();
   if (!config) {
     const error = new Error(
-      "No AI API key configured. Add ANTHROPIC_API_KEY or OPENAI_API_KEY to cgv-translator/.env"
+      "No AI provider configured. Use Ollama (default) or set ANTHROPIC_API_KEY / OPENAI_API_KEY in .env"
     );
     error.code = "AI_NOT_CONFIGURED";
     throw error;
   }
 
-  const prompt = buildPrompt(input);
-  const raw = config.provider === "anthropic"
-    ? await callAnthropic({ apiKey: config.apiKey, model: config.model, prompt })
-    : await callOpenAi({ apiKey: config.apiKey, model: config.model, prompt });
+  const [rulesMarkdown, policies] = await Promise.all([
+    loadTranslationRules(),
+    loadApprovedLemmaPolicies()
+  ]);
+  const { matched, missing } = policiesForTokens(input.tokenRows || [], policies);
+  const prompt = buildPrompt({
+    ...input,
+    rulesMarkdown,
+    matchedPolicies: matched,
+    missingPolicies: missing
+  });
+  const raw = await callProvider(config, prompt);
+  const normalized = normalizeSuggestionPayload(raw, {
+    matchedPolicies: matched,
+    missingPolicies: missing
+  });
+
+  if (!normalized.proposal) {
+    throw new Error("AI returned no Spanish proposal.");
+  }
 
   return {
-    proposal: cleanProposal(raw),
+    proposal: normalized.proposal,
+    analysis: normalized.analysis,
+    matchedPolicies: matched,
+    missingPolicies: missing,
     provider: config.provider,
     model: config.model,
     suggestionSource: "ai-proposed"

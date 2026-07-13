@@ -62,6 +62,7 @@ const rv1909ReferenceText = document.querySelector("#rv1909-reference-text");
 const bleReferenceText = document.querySelector("#ble-reference-text");
 const aiProposalText = document.querySelector("#ai-proposal-text");
 const aiProposalMeta = document.querySelector("#ai-proposal-meta");
+const aiProposalAnalysis = document.querySelector("#ai-proposal-analysis");
 const proposeAiButton = document.querySelector("#propose-ai");
 const acceptAiButton = document.querySelector("#accept-ai");
 const versePreviewText = document.querySelector("#verse-preview-text");
@@ -453,12 +454,40 @@ function currentPhraseKey(phrase = currentPhrase(), index = state.phraseIndex) {
   return `${phrase?.reference || ""}|${index}`;
 }
 
-function setAiProposalUi({ text = "—", meta = "—", canAccept = false, busy = false } = {}) {
+function setAiProposalUi({
+  text = "—",
+  meta = "—",
+  analysis = null,
+  canAccept = false,
+  busy = false
+} = {}) {
   aiProposalText.textContent = text || "—";
   aiProposalMeta.textContent = meta || "—";
+  renderAiAnalysis(analysis);
   proposeAiButton.disabled = busy;
   proposeAiButton.textContent = busy ? "Proposing…" : "Propose";
   acceptAiButton.disabled = busy || !canAccept || !String(text || "").trim() || text === "—";
+}
+
+function renderAiAnalysis(analysis) {
+  if (!aiProposalAnalysis) return;
+  const lemma = analysis?.lemma?.trim() || "";
+  const morphology = analysis?.morphology?.trim() || "";
+  const context = analysis?.context?.trim() || "";
+  const flags = Array.isArray(analysis?.flags) ? analysis.flags.filter(Boolean) : [];
+  if (!lemma && !morphology && !context && !flags.length) {
+    aiProposalAnalysis.hidden = true;
+    aiProposalAnalysis.textContent = "";
+    return;
+  }
+
+  const parts = [];
+  if (lemma) parts.push(`Lemma: ${lemma}`);
+  if (morphology) parts.push(`Morphology: ${morphology}`);
+  if (context) parts.push(`Context: ${context}`);
+  for (const flag of flags) parts.push(`Flag: ${flag}`);
+  aiProposalAnalysis.hidden = false;
+  aiProposalAnalysis.textContent = parts.join("\n");
 }
 
 function priorLbfForSuggestion(phrase = currentPhrase()) {
@@ -487,9 +516,11 @@ async function requestAiProposal({ force = false } = {}) {
   if (!force && aiProposalCache.has(cacheKey)) {
     const cached = aiProposalCache.get(cacheKey);
     phrase.aiProposal = cached.proposal;
+    phrase.aiAnalysis = cached.analysis || null;
     setAiProposalUi({
       text: cached.proposal,
       meta: `${cached.provider}/${cached.model}`,
+      analysis: cached.analysis || null,
       canAccept: true
     });
     return cached;
@@ -497,7 +528,7 @@ async function requestAiProposal({ force = false } = {}) {
 
   if (!aiAvailability.available) {
     setAiProposalUi({
-      text: "Configure an AI key to propose Spanish for this phrase.",
+      text: "Start Ollama (or configure a cloud AI key) to propose Spanish for this phrase.",
       meta: aiAvailability.message || "AI not configured",
       canAccept: false
     });
@@ -507,6 +538,7 @@ async function requestAiProposal({ force = false } = {}) {
   setAiProposalUi({
     text: phrase.aiProposal || "Proposing Spanish…",
     meta: `${aiAvailability.provider}/${aiAvailability.model}`,
+    analysis: phrase.aiAnalysis || null,
     canAccept: Boolean(phrase.aiProposal),
     busy: true
   });
@@ -530,9 +562,11 @@ async function requestAiProposal({ force = false } = {}) {
 
     aiProposalCache.set(cacheKey, result);
     phrase.aiProposal = result.proposal;
+    phrase.aiAnalysis = result.analysis || null;
     setAiProposalUi({
       text: result.proposal,
       meta: `${result.provider}/${result.model}`,
+      analysis: result.analysis || null,
       canAccept: true
     });
     return result;
@@ -552,7 +586,7 @@ async function requestAiProposal({ force = false } = {}) {
 function acceptAiProposal() {
   const phrase = currentPhrase();
   const proposal = String(phrase.aiProposal || aiProposalText.textContent || "").trim();
-  if (!proposal || proposal === "—" || proposal.startsWith("Configure an AI key")) return;
+  if (!proposal || proposal === "—" || proposal.startsWith("Start Ollama") || proposal.startsWith("Configure an AI key")) return;
 
   phrase.workingText = proposal;
   phrase.suggestionSource = "ai-proposed";
@@ -771,15 +805,18 @@ function renderTranslationPhrase({ focus = false, cursorPosition = null } = {}) 
   const cachedProposal = aiProposalCache.get(currentPhraseKey(phrase));
   if (cachedProposal?.proposal) {
     phrase.aiProposal = cachedProposal.proposal;
+    phrase.aiAnalysis = cachedProposal.analysis || null;
     setAiProposalUi({
       text: cachedProposal.proposal,
       meta: `${cachedProposal.provider}/${cachedProposal.model}`,
+      analysis: cachedProposal.analysis || null,
       canAccept: true
     });
   } else if (phrase.aiProposal) {
     setAiProposalUi({
       text: phrase.aiProposal,
       meta: "cached",
+      analysis: phrase.aiAnalysis || null,
       canAccept: true
     });
   } else if (aiAvailability.available) {
@@ -792,7 +829,7 @@ function renderTranslationPhrase({ focus = false, cursorPosition = null } = {}) 
     void requestAiProposal();
   } else {
     setAiProposalUi({
-      text: "Configure an AI key to propose Spanish for this phrase.",
+      text: "Start Ollama (or configure a cloud AI key) to propose Spanish for this phrase.",
       meta: aiAvailability.message || "AI not configured",
       canAccept: false
     });
