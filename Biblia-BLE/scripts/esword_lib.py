@@ -79,14 +79,17 @@ ESWORD_BOOK_ID: dict[str, int] = {
     "apocalipsis": 66,
 }
 
-# Public study module — traditional interlinear, NOT the official BLE Bible text.
-MODULE_TITLE = "BLE Interlinear (estudio)"
-MODULE_ABBREV = "BLEi"
-MODULE_BASENAME = "BLE-Interlinear"
+# Public study module — traditional interlinear with Strong's/morph links.
+# The "+" suffix follows e-Sword convention (KJV+, NAS95+, OGNT+, …).
+# NOT the official assembled BLE Bible text.
+MODULE_TITLE = "BLE+ Interlinear (estudio)"
+MODULE_ABBREV = "BLE+"
+MODULE_BASENAME = "BLE+"
 MODULE_INFO = (
-    "<p><b>BLE Interlinear</b> — interlinear de estudio (hebreo/griego + glosa española).</p>"
-    "<p>No es la Biblia Literal en Español (BLE) oficial. "
-    "Cada versículo muestra el texto original con su glosa literal debajo.</p>"
+    "<p><b>BLE+</b> — interlinear de estudio (hebreo/griego + Strong's + morfología + glosa española).</p>"
+    "<p>Usa etiquetas nativas de e-Sword: <num>Strong's</num>, <tvm>morfología</tvm>.</p>"
+    "<p><b>No es la Biblia Literal en Español (BLE) oficial.</b> "
+    "Esa publicación queda para más adelante.</p>"
     "<p>Generado desde MNA/BLE (Cultivados en Gracia y Verdad).</p>"
 )
 

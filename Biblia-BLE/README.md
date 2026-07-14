@@ -73,10 +73,10 @@ python3 -m http.server 8765
 #   python3 scripts/export_interlinear.py --all --testament ot
 #   python3 scripts/build_reader_catalog.py
 
-# e-Sword INTERLINEAR study modules (not official BLE text)
+# e-Sword BLE+ interlinear study modules (+ Strong's/morph links) (not official BLE text)
 python3 scripts/ble_to_esword.py
-# → output/esword/BLE-Interlinear.bblx  (Windows)
-# → output/esword/BLE-Interlinear.bbli  (e-Sword X / macOS, iOS, Android)
+# → output/esword/BLE+.bblx  (Windows)
+# → output/esword/BLE+.bbli  (e-Sword X / macOS, iOS, Android)
 # Each verse = original + Spanish gloss (+ Strong's) in columns.
 # Optional: --testament ot|nt
 

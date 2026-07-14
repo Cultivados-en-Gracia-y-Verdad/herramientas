@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
-"""Build e-Sword interlinear study modules from BLE interlinear exports.
+"""Build e-Sword BLE+ interlinear study modules from interlinear exports.
 
-This is NOT the official BLE Bible text. Each verse is HTML with original
-surface + Spanish gloss (+ Strong's) in traditional interlinear columns.
+Uses native e-Sword HTML tags (not plain text, not href URLs):
+  <grk>/<heb>  original language
+  <num>G####</num> / <num>H####</num>  clickable Strong's
+  <tvm>…</tvm>  clickable morphology (Robinson / OSHB as stored)
+  <red>…</red>  Spanish gloss
+
+This is NOT the official assembled BLE Bible text.
 """
 
 from __future__ import annotations
@@ -53,25 +58,67 @@ def looks_hebrew(surface: str) -> bool:
     return any("\u0590" <= ch <= "\u05FF" for ch in surface)
 
 
-def format_token_plain(tok: dict[str, str], *, show_strongs: bool = True) -> str:
-    """Compact traditional interlinear unit: surface/gloss[Strong's]."""
-    surface = tok["surface"]
-    gloss = tok["es"]
-    strongs = tok["strongs"]
-    if show_strongs and strongs:
-        return f"{surface}/{gloss}[{strongs}]"
-    return f"{surface}/{gloss}"
+def normalize_strongs(raw: str) -> str:
+    """Ensure Strong's display like G3361 / H7225 for <num> tags."""
+    s = (raw or "").strip().upper().replace(" ", "")
+    if not s:
+        return ""
+    if s.startswith(("G", "H")) and s[1:].isdigit():
+        return s
+    if s.isdigit():
+        # Ambiguous bare digits: leave as-is (caller should supply G/H).
+        return s
+    # e.g. "1254 A" already stripped; keep leading letter if present.
+    m = re.match(r"^([GH]?)(\d+)", s)
+    if m:
+        prefix, digits = m.group(1), m.group(2)
+        return f"{prefix}{digits}" if prefix else digits
+    return s
 
 
-def format_verse_text(tokens: list[dict[str, str]], *, show_strongs: bool = True) -> str:
-    return " ".join(format_token_plain(t, show_strongs=show_strongs) for t in tokens)
+def normalize_morph(raw: str) -> str:
+    """Pass morph through for <tvm>; only strip OSHB language H- prefix."""
+    m = (raw or "").strip()
+    if not m:
+        return ""
+    parts = []
+    for comp in m.split("/"):
+        # OSHB language prefix is H before a morph class letter (V/N/R/…).
+        # Do NOT strip bare A… (ADV, A-NSM, Aramaic A…).
+        if re.match(r"^H(?=[VNRPTECDAKSFMW])", comp):
+            parts.append(comp[1:])
+        else:
+            parts.append(comp)
+    return "/".join(parts)
+
+
+def format_token_html(tok: dict[str, str]) -> str:
+    """One token in OGNT+-style inline interlinear with working Strong's/morph."""
+    surface = escape_html(tok["surface"])
+    gloss = escape_html(tok["es"])
+    strongs = normalize_strongs(tok["strongs"])
+    morph = escape_html(normalize_morph(tok["morph"]))
+
+    lang_tag = "heb" if looks_hebrew(tok["surface"]) else "grk"
+    parts = [f"<{lang_tag}>{surface}</{lang_tag}>"]
+    if strongs:
+        parts.append(f"<num>{escape_html(strongs)}</num>")
+    if morph:
+        parts.append("<sup>|</sup>")
+        parts.append(f"<tvm>{morph}</tvm>")
+    if gloss:
+        parts.append("<sup>|</sup>")
+        parts.append(f"<red>{gloss}</red>")
+    return "".join(parts)
+
+
+def format_verse_html(tokens: list[dict[str, str]]) -> str:
+    return " ".join(format_token_html(t) for t in tokens)
 
 
 def load_verses_from_interlinear(
     il_dir: Path,
     books: list[str],
-    *,
-    show_strongs: bool = True,
 ) -> list[tuple[int, int, int, str]]:
     rows: list[tuple[int, int, int, str]] = []
     for slug in books:
@@ -97,7 +144,7 @@ def load_verses_from_interlinear(
                 tokens = parse_tokens(body)
                 if not tokens:
                     continue
-                text = format_verse_text(tokens, show_strongs=show_strongs)
+                text = format_verse_html(tokens)
                 rows.append((book_id, int(ch_s), int(vs_s), text))
     rows.sort(key=lambda item: (item[0], item[1], item[2]))
     return rows
@@ -105,7 +152,7 @@ def load_verses_from_interlinear(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Export BLE interlinear study modules for e-Sword (not official BLE)."
+        description="Export BLE+ interlinear study modules for e-Sword (not official BLE)."
     )
     parser.add_argument(
         "--interlinear-dir",
@@ -132,11 +179,6 @@ def main() -> int:
         default="both",
         help="which testament(s) to include (default: both)",
     )
-    parser.add_argument(
-        "--no-strongs",
-        action="store_true",
-        help="omit Strong's numbers from each column",
-    )
     args = parser.parse_args()
 
     if args.book:
@@ -148,11 +190,7 @@ def main() -> int:
     else:
         books = list(OT_BOOKS) + list(NT_BOOKS)
 
-    verses = load_verses_from_interlinear(
-        args.interlinear_dir,
-        books,
-        show_strongs=not args.no_strongs,
-    )
+    verses = load_verses_from_interlinear(args.interlinear_dir, books)
     if not verses:
         print("error: no verses loaded", file=sys.stderr)
         return 1
@@ -170,8 +208,8 @@ def main() -> int:
             WINDOWS_SPEC,
             include_ot=include_ot,
             include_nt=include_nt,
-            strong=not args.no_strongs,
-            html=False,
+            strong=True,
+            html=True,
         )
         outputs.append(dest)
     if args.platform in ("mac", "both"):
@@ -182,19 +220,24 @@ def main() -> int:
             MAC_SPEC,
             include_ot=include_ot,
             include_nt=include_nt,
-            strong=not args.no_strongs,
-            html=False,
+            strong=True,
+            html=True,
         )
         outputs.append(dest)
 
-    # Remove old official-looking BLE.* modules if present.
-    for old in (
-        args.output_dir / "BLE.bblx",
-        args.output_dir / "BLE.bbli",
+    # Remove superseded module filenames.
+    for old_name in (
+        "BLE.bblx",
+        "BLE.bbli",
+        "BLE-Interlinear.bblx",
+        "BLE-Interlinear.bbli",
+        "BLEi.bblx",
+        "BLEi.bbli",
     ):
+        old = args.output_dir / old_name
         if old.exists():
             old.unlink()
-            print(f"removed {old} (was assembled BLE text)")
+            print(f"removed {old}")
 
     book_count = len(book_ids)
     for dest in outputs:
@@ -202,7 +245,7 @@ def main() -> int:
     print(f"  books: {book_count}")
     print(f"  verses: {len(verses)}")
     print(f"  OT: {include_ot}  NT: {include_nt}")
-    print(f"  kind: interlinear study (not official BLE)")
+    print(f"  kind: BLE+ interlinear (native <num>/<tvm> links)")
     print(f"  generated: {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}")
     print()
     if args.platform in ("windows", "both"):
