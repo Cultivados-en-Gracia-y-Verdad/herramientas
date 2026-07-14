@@ -10,46 +10,37 @@ The human translator remains responsible for every approved phrase.
 3. Morphology
 4. Immediate phrase context, then book context
 5. RV1909 — consultative only, never the starting point
-6. BLE — mechanical diagnostic only, never polished Spanish
+6. BLE — mechanical diagnostic only, not polished Spanish
+
+## Goal
+
+Produce contemporary Spanish that a translator can usually accept via **Use draft**,
+while remaining accountable to Greek grammar.
 
 ## AI may
 
-- Reason from each Greek token: surface form, lemma, Strong's, morphology
-- Apply approved project lemma renderings when present
-- Explain how morphology constrains Spanish grammar
-- Note connectors and clause role in the phrase
-- Propose one contemporary Spanish phrase after that reasoning
-- Compare against RV1909 only after the Greek-constrained reading is set
+- Propose one modern Spanish phrase under the gate constraints
+- Use natural Spanish articles/flow when the Greek sense is preserved
+- Summarize mechanical gate evidence
+- Consult RV1909 for style comparison after the Greek reading is set
 
 ## AI may not
 
 - Start from RV1909, BLE, memory, or tradition
-- Copy RV1909 wording unless the Greek independently requires the same words
-- Invent lemma policy when no project decision exists — flag uncertainty instead
-- Add words absent from the Greek
-- Soften, strengthen, explain away, or theologize beyond the text
-- Smooth open tensions or ambiguities the Greek leaves open
+- Violate number, case, or dependency (e.g. never turn ἐκλεκτῶν into "fe elegida")
+- Invent lemma policy
+- Add subjects, copulas, or theology absent from this phrase
+- Soften, strengthen, or explain away open tensions in the text
 - Save output without human approval
 
 ## Style
 
 - Simple, precise, contemporary Spanish
-- Prefer natural phrase flow over stiff word-for-word calques
-- If the text repeats, Spanish may repeat when good Spanish allows
-- Divine possessives may use capitalized Su/Sus when clearly referring to God
-- Keep distinct Greek tokens distinct in Spanish when good Spanish allows (do not merge Ἰησοῦ + Χριστοῦ into one traditional compound unless project policy says so)
-- Account for particles/connectors (δέ, καί, etc.); omit only when Spanish truly cannot carry them, and note that in context/flags
+- Natural phrase flow over stiff calques
+- Keep distinct Greek tokens distinct when good Spanish allows
+- Genitive dependents normally use "de …"
+- Plural stays plural; singular stays singular
 
 ## Output contract
 
-Return JSON only (no markdown fencing) with this shape:
-
-```json
-{
-  "lemma": "one short Spanish note on lemma choices for each significant word",
-  "morphology": "one short Spanish note on how parsing constrains the rendering",
-  "context": "one short Spanish note on clause role / connectors / nearby sense",
-  "proposedSpanish": "the Spanish phrase only",
-  "flags": ["optional short warnings, e.g. missing lemma policy"]
-}
-```
+Return JSON only with gateSummaries, proposedSpanish, rationale, and flags.

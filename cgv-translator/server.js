@@ -4,7 +4,10 @@ import { basename, extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
 import { getCgvDataPath, getGreekConstructionEvidence, getGreekOccurrencesByStrongs } from "./src/data/cgvData.js";
 import { loadTranslationIndexes, resolveAlignedSpan } from "./src/data/translationIndexes.js";
-import { describeAiAvailability, loadTranslatorEnv, suggestPhraseTranslation } from "./src/ai/suggestPhrase.js";
+import { describeAiAvailability, loadTranslatorEnv } from "./src/ai/suggestPhrase.js";
+import { analyzePhraseGates } from "./src/pipeline/analyzeGates.js";
+import { assistPhraseGates } from "./src/pipeline/assistGates.js";
+import { createInvestigationFromLemma } from "./src/investigations/createInvestigation.js";
 
 const rootDir = fileURLToPath(new URL(".", import.meta.url));
 await loadTranslatorEnv(rootDir);
@@ -119,22 +122,53 @@ function formatRmac(partOfSpeech, parsing) {
   return `${partOfSpeech}${String(parsing || "").replace(/^-+/u, "").replace(/-+$/u, "")}`;
 }
 
+function parseVerbMorph(parsing = "") {
+  const raw = String(parsing || "").replace(/-/gu, "");
+  if (!raw) return null;
+
+  // MorphGNT finite verbs appear as either:
+  //   1API-S--  → person + tense + voice + mood + number
+  //   AAI-3S--  → tense + voice + mood + person + number
+  if (/^[123][PIFARL]/u.test(raw)) {
+    return {
+      person: raw[0],
+      tense: raw[1],
+      voice: raw[2],
+      mood: raw[3],
+      number: raw[4] || ""
+    };
+  }
+  if (/^[PIFARL][AMPEONQX]/u.test(raw)) {
+    return {
+      tense: raw[0],
+      voice: raw[1],
+      mood: raw[2],
+      person: raw[3] || "",
+      number: raw[4] || ""
+    };
+  }
+  return null;
+}
+
 function describeMorphologySpanish(partOfSpeech, parsing) {
   const compact = String(parsing || "").replace(/-/gu, "");
   const caseNames = { N: "nominativo", G: "genitivo", D: "dativo", A: "acusativo", V: "vocativo" };
   const numberNames = { S: "singular", P: "plural" };
   const genderNames = { M: "masculino", F: "femenino", N: "neutro" };
   const tenseNames = { P: "presente", I: "imperfecto", F: "futuro", A: "aoristo", R: "perfecto", L: "pluscuamperfecto" };
-  const voiceNames = { A: "activo", M: "medio", P: "pasivo" };
-  const moodNames = { I: "indicativo", S: "subjuntivo", O: "optativo", M: "imperativo", N: "infinitivo", P: "participio" };
+  const voiceNames = { A: "activo", M: "medio", P: "pasivo", E: "medio/pasivo", D: "medio", O: "pasivo", N: "medio/pasivo" };
+  const moodNames = { I: "indicativo", S: "subjuntivo", O: "optativo", M: "imperativo", N: "infinitivo", P: "participio", D: "imperativo" };
 
-  if (partOfSpeech === "V-") {
-    const person = compact.match(/[123]/u)?.[0];
-    const tense = tenseNames[compact[1]] || tenseNames[compact[0]];
-    const voice = voiceNames[compact[2]] || voiceNames[compact[1]];
-    const mood = moodNames[compact[3]] || moodNames[compact[2]];
-    const number = numberNames[compact.match(/[SP]/u)?.[0]];
-    return [tense, voice, mood, person ? `${person}.ª persona` : "", number].filter(Boolean).join(", ") || "—";
+  if (partOfSpeech === "V-" || String(partOfSpeech).startsWith("V")) {
+    const verb = parseVerbMorph(parsing);
+    if (!verb) return "—";
+    return [
+      tenseNames[verb.tense],
+      voiceNames[verb.voice],
+      moodNames[verb.mood],
+      verb.person ? `${verb.person}.ª persona` : "",
+      numberNames[verb.number]
+    ].filter(Boolean).join(", ") || "—";
   }
 
   const caseCode = compact.match(/[NGDAV]/u)?.[0];
@@ -319,7 +353,10 @@ async function loadTitusTranslationUnits() {
 }
 
 async function enrichTranslationPhraseRecords(phrases) {
-  const units = await loadTitusTranslationUnits().catch(() => []);
+  const [units, translationIndexes] = await Promise.all([
+    loadTitusTranslationUnits().catch(() => []),
+    loadTranslationIndexes(getCgvDataPath()).catch(() => null)
+  ]);
   const unitsByReference = new Map(units.map(unit => [unit.reference, unit]));
   return phrases.map(phrase => {
     const unit = unitsByReference.get(phrase.reference);
@@ -329,14 +366,20 @@ async function enrichTranslationPhraseRecords(phrases) {
       : (knownPhraseTokenIds.get(`${phrase.reference}|${phrase.phraseIndex}`) || unit.sourceTokenIds || []);
     const tokenIdSet = new Set(tokenIds);
     const tokenRows = (unit.tokenRows || []).filter(row => tokenIdSet.has(row.sourceTokenId));
+    const greekFromTokens = tokenRows.map(row => row.greek).filter(Boolean).join(" ");
     const rv1909TokenText = tokenRows.map(row => row.rv1909).filter(Boolean).join(" ");
     const bleTokenText = tokenRows.map(row => row.ble).filter(Boolean).join(" ");
+    const alignedRv1909 = translationIndexes
+      ? resolveAlignedSpan(translationIndexes, tokenIds)
+      : "";
     return {
       ...phrase,
+      greek: greekFromTokens || phrase.greek || "",
       sourceTokenIds: tokenIds,
       tokenRows,
-      rv1909Text: phrase.rv1909Text || rv1909TokenText || unit.rv1909Text || "",
-      bleText: phrase.bleText || bleTokenText || unit.bleText || "",
+      // Always prefer phrase-scoped spans derived from this phrase's tokens.
+      rv1909Text: alignedRv1909 || rv1909TokenText || phrase.rv1909Text || "",
+      bleText: bleTokenText || phrase.bleText || "",
       suggestionSource: phrase.suggestionSource || (phrase.spanish?.trim() ? "lbf-approved" : "blank")
     };
   });
@@ -388,8 +431,8 @@ function parseDecisionVersions(markdown) {
       status: readField("Status") || "Draft",
       version: readField("Version") || match[1].trim(),
       effectiveDate: readField("Effective Date"),
-      lemma: readField("Lemma") || decisionDefaults.lemma,
-      strongs: readField("Strong's") || decisionDefaults.strongs,
+      lemma: readField("Lemma"),
+      strongs: readField("Strong's"),
       preferredRendering: readField("Preferred Rendering"),
       confidence: readField("Confidence") || "Medium",
       reason
@@ -855,17 +898,7 @@ async function handleTranslation(request, response) {
   sendJson(response, 405, { error: "Method not allowed" });
 }
 
-async function handleTranslationSuggest(request, response) {
-  if (request.method === "GET") {
-    sendJson(response, 200, await describeAiAvailability());
-    return;
-  }
-
-  if (request.method !== "POST") {
-    sendJson(response, 405, { error: "Method not allowed" });
-    return;
-  }
-
+async function readPhrasePipelineBody(request) {
   const body = await readJsonBody(request);
   const reference = typeof body.reference === "string" ? body.reference.trim() : "";
   const greek = typeof body.greek === "string" ? body.greek.trim() : "";
@@ -881,28 +914,88 @@ async function handleTranslationSuggest(request, response) {
       }))
     : [];
 
-  if (!reference || (!greek && !tokenRows.length)) {
+  return {
+    reference,
+    greek: greek || tokenRows.map(row => row.greek).filter(Boolean).join(" "),
+    rv1909Text,
+    bleText,
+    tokenRows,
+    priorLbf
+  };
+}
+
+async function handleTranslationAi(request, response) {
+  if (request.method === "GET") {
+    sendJson(response, 200, await describeAiAvailability());
+    return;
+  }
+  sendJson(response, 405, { error: "Method not allowed" });
+}
+
+async function handleTranslationGates(request, response) {
+  if (request.method !== "POST") {
+    sendJson(response, 405, { error: "Method not allowed" });
+    return;
+  }
+
+  const payload = await readPhrasePipelineBody(request);
+  if (!payload.reference || (!payload.greek && !payload.tokenRows.length)) {
     sendJson(response, 400, { error: "reference and greek/tokenRows are required" });
     return;
   }
 
   try {
-    const result = await suggestPhraseTranslation({
-      reference,
-      greek: greek || tokenRows.map(row => row.greek).filter(Boolean).join(" "),
-      tokenRows,
-      rv1909Text,
-      bleText,
-      priorLbf
+    const analysis = await analyzePhraseGates({
+      rootDir,
+      reference: payload.reference,
+      greek: payload.greek,
+      tokenRows: payload.tokenRows,
+      rv1909Text: payload.rv1909Text,
+      priorLbf: payload.priorLbf
     });
-    sendJson(response, 200, result);
+    sendJson(response, 200, analysis);
+  } catch (error) {
+    sendJson(response, 500, {
+      error: error.message || "Gate analysis failed",
+      code: "GATE_ANALYSIS_FAILED"
+    });
+  }
+}
+
+async function handleTranslationGatesAssist(request, response) {
+  if (request.method !== "POST") {
+    sendJson(response, 405, { error: "Method not allowed" });
+    return;
+  }
+
+  const payload = await readPhrasePipelineBody(request);
+  if (!payload.reference || (!payload.greek && !payload.tokenRows.length)) {
+    sendJson(response, 400, { error: "reference and greek/tokenRows are required" });
+    return;
+  }
+
+  try {
+    const analysis = await analyzePhraseGates({
+      rootDir,
+      reference: payload.reference,
+      greek: payload.greek,
+      tokenRows: payload.tokenRows,
+      rv1909Text: payload.rv1909Text,
+      priorLbf: payload.priorLbf
+    });
+    const assist = await assistPhraseGates({
+      rootDir,
+      analysis,
+      rv1909Text: payload.rv1909Text
+    });
+    sendJson(response, 200, { analysis, assist });
   } catch (error) {
     const status = error?.code === "AI_NOT_CONFIGURED" || error?.code === "OLLAMA_UNREACHABLE"
       ? 503
       : 502;
     sendJson(response, status, {
-      error: error.message || "AI suggestion failed",
-      code: error.code || "AI_SUGGEST_FAILED"
+      error: error.message || "Gate assist failed",
+      code: error.code || "GATE_ASSIST_FAILED"
     });
   }
 }
@@ -913,8 +1006,24 @@ async function handleApi(request, response, url) {
     return;
   }
 
+  if (url.pathname === "/api/translation/ai") {
+    await handleTranslationAi(request, response);
+    return;
+  }
+
+  // Compatibility: availability only (single-shot suggest removed).
   if (url.pathname === "/api/translation/suggest") {
-    await handleTranslationSuggest(request, response);
+    await handleTranslationAi(request, response);
+    return;
+  }
+
+  if (url.pathname === "/api/translation/gates/assist") {
+    await handleTranslationGatesAssist(request, response);
+    return;
+  }
+
+  if (url.pathname === "/api/translation/gates") {
+    await handleTranslationGates(request, response);
     return;
   }
 
@@ -924,13 +1033,29 @@ async function handleApi(request, response, url) {
     return;
   }
 
-  if (request.method === "GET" && url.pathname === "/api/investigations") {
-    const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
-    const investigations = entries
-      .filter(entry => entry.isDirectory() && /^INV-\d{4}$/.test(entry.name))
-      .map(entry => entry.name)
-      .sort();
-    sendJson(response, 200, { investigations });
+  if (url.pathname === "/api/investigations") {
+    if (request.method === "GET") {
+      const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
+      const investigations = entries
+        .filter(entry => entry.isDirectory() && /^INV-\d{4}$/.test(entry.name))
+        .map(entry => entry.name)
+        .sort();
+      sendJson(response, 200, { investigations });
+      return;
+    }
+
+    if (request.method === "POST") {
+      try {
+        const body = await readJsonBody(request);
+        const result = await createInvestigationFromLemma(rootDir, body);
+        sendJson(response, result.created ? 201 : 200, result);
+      } catch (error) {
+        sendJson(response, 400, { error: error.message || "Could not create investigation" });
+      }
+      return;
+    }
+
+    sendJson(response, 405, { error: "Method not allowed" });
     return;
   }
 
@@ -1005,32 +1130,70 @@ async function handleApi(request, response, url) {
       return;
     }
 
-    const strongs = normalizeDecisionValue(body.strongs) || "G1401";
+    const decisionContent = await readFile(join(investigationDir, "decision.md"), "utf8").catch(() => "");
+    const decision = parseDecisionVersions(decisionContent).at(-1) || {};
+    const meta = await readInvestigationMeta(id, investigationDir);
+    const primary = String(meta.primarySubject || "");
+    const primaryStrongs = (primary.match(/\bG\d+\b/) || [])[0] || "";
+    const primaryLemma = primary.replace(/^G\d+\s*[—-]\s*/u, "").trim();
+
+    const strongs = normalizeDecisionValue(body.strongs)
+      || normalizeDecisionValue(decision.strongs)
+      || primaryStrongs;
+    const lemma = normalizeDecisionValue(body.lemma)
+      || normalizeDecisionValue(decision.lemma)
+      || primaryLemma;
+    const reference = normalizeDecisionValue(body.reference)
+      || normalizeDecisionValue(meta.originReference)
+      || "Titus 1:1";
+    const surface = normalizeDecisionValue(body.surface);
+
+    if (!strongs && !lemma) {
+      sendJson(response, 400, {
+        error: "Investigation is missing Strong's and lemma. Set them in Decision before gathering evidence."
+      });
+      return;
+    }
+
     const generatedAt = new Date().toISOString();
     let evidence = "";
     let historyEntry = "";
 
-    if (body.type === "construction") {
-      const report = await getGreekConstructionEvidence({
-        strongs,
-        lemma: body.lemma,
-        surface: body.surface,
-        reference: body.reference,
-        rmac: body.rmac,
-        prepositionLemma: body.prepositionLemma,
-        prepositionSurface: body.prepositionSurface,
-        caseCode: body.caseCode
+    try {
+      if (body.type === "construction") {
+        const report = await getGreekConstructionEvidence({
+          strongs,
+          lemma,
+          surface,
+          reference,
+          rmac: body.rmac,
+          prepositionLemma: body.prepositionLemma,
+          prepositionSurface: body.prepositionSurface,
+          caseCode: body.caseCode
+        });
+        evidence = formatConstructionEvidence(report, generatedAt, id);
+        historyEntry = `Generated Construction Evidence v0.1 for ${report.construction} from cgv-data.`;
+      } else {
+        const report = await getGreekOccurrencesByStrongs(strongs, { lemma });
+        evidence = body.type === "occurrence"
+          ? formatSingleOccurrenceEvidence(report, generatedAt, {
+            ...body,
+            reference,
+            surface,
+            lemma,
+            strongs: report.strongs || strongs
+          })
+          : formatOccurrenceEvidence(report, generatedAt);
+        historyEntry = body.type === "occurrence"
+          ? `Generated occurrence evidence for ${report.strongs || strongs} ${report.lemma} from cgv-data.`
+          : `Generated Lemma Profile v0.1 occurrence evidence for ${report.strongs || strongs} ${report.lemma} from cgv-data.`;
+      }
+    } catch (error) {
+      sendJson(response, 400, {
+        code: error.code || "GATHER_FAILED",
+        error: error instanceof Error ? error.message : String(error)
       });
-      evidence = formatConstructionEvidence(report, generatedAt, id);
-      historyEntry = `Generated Construction Evidence v0.1 for ${report.construction} from cgv-data.`;
-    } else {
-      const report = await getGreekOccurrencesByStrongs(strongs);
-      evidence = body.type === "occurrence"
-        ? formatSingleOccurrenceEvidence(report, generatedAt, body)
-        : formatOccurrenceEvidence(report, generatedAt);
-      historyEntry = body.type === "occurrence"
-        ? `Generated occurrence evidence for ${strongs} ${report.lemma} from cgv-data.`
-        : `Generated Lemma Profile v0.1 occurrence evidence for ${strongs} ${report.lemma} from cgv-data.`;
+      return;
     }
 
     await mkdir(evidenceDir, { recursive: true });
@@ -1040,7 +1203,8 @@ async function handleApi(request, response, url) {
     sendJson(response, 200, {
       generated: true,
       replaced: exists,
-      file: { name: basename(filePath), path: `evidence/${fileName}` }
+      file: { name: basename(filePath), path: `evidence/${fileName}` },
+      subject: { strongs, lemma, reference }
     });
     return;
   }

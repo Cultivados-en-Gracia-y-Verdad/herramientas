@@ -31,3 +31,43 @@ Generated Construction Evidence v0.1 for κατὰ πίστιν from cgv-data.
 ## 2026-07-09
 
 Generated Construction Evidence v0.1 for κατὰ πίστιν from cgv-data.
+
+## 2026-07-13
+
+Approved decision 1.0 for G4102 πίστις.
+
+## 2026-07-13
+
+Revised decision for G4102 πίστις; created version 2.0.
+
+## 2026-07-13
+
+Superseded decision 1.0 for G4102 πίστις.
+
+## 2026-07-13
+
+Approved decision 2.0 for G4102 πίστις.
+
+## 2026-07-13
+
+Generated Lemma Profile v0.1 occurrence evidence for G4102 πίστις from cgv-data.
+
+## 2026-07-13
+
+Generated occurrence evidence for G1401 δοῦλος from cgv-data.
+
+## 2026-07-13
+
+Generated Lemma Profile v0.1 occurrence evidence for G4102 πίστις from cgv-data.
+
+## 2026-07-13
+
+Generated occurrence evidence for G4102 πίστις from cgv-data.
+
+## 2026-07-13
+
+Generated occurrence evidence for G4102 πίστις from cgv-data.
+
+## 2026-07-13
+
+Generated Lemma Profile v0.1 occurrence evidence for G4102 πίστις from cgv-data.

@@ -11,8 +11,10 @@
       <section id="translation-view" class="translation-view" aria-label="Translation view">
         <article class="translation-page">
           <header class="translation-header">
-            <p class="eyebrow">Translation View</p>
-            <h1 id="translation-reference-title">Titus 1:1</h1>
+            <div class="translation-title-block">
+              <p class="eyebrow">Translation View</p>
+              <h1 id="translation-reference-title">Titus 1:1</h1>
+            </div>
             <dl class="translation-meta" aria-label="Translation context">
               <div>
                 <dt>Project</dt>
@@ -27,6 +29,9 @@
                 <dd id="translation-reference-meta">Titus 1:1</dd>
               </div>
             </dl>
+            <div class="translation-header-actions">
+              <button id="open-investigations-menu" class="secondary-action" type="button">Investigations</button>
+            </div>
           </header>
 
           <section class="translation-document">
@@ -44,19 +49,41 @@
             <p id="phrase-save-status" class="phrase-save-status" data-state="saved">Saved</p>
 
             <div class="translation-support">
-              <section class="draft-references" aria-label="Translation references">
-                <article class="ai-proposal-card">
+              <section class="pipeline-panel" aria-label="Translation pipeline">
+                <div class="reference-heading">
+                  <p class="scripture-label">Gate Status</p>
+                  <p id="pipeline-meta" class="ai-proposal-meta">Analyze this phrase to begin</p>
+                </div>
+                <ol id="gate-status-list" class="gate-status-list">
+                  <li data-gate="lemma"><span class="gate-mark" data-status="idle">○</span><span class="gate-label">Lemma</span><span class="gate-detail">—</span></li>
+                  <li data-gate="morphology"><span class="gate-mark" data-status="idle">○</span><span class="gate-label">Morphology</span><span class="gate-detail">—</span></li>
+                  <li data-gate="immediateContext"><span class="gate-mark" data-status="idle">○</span><span class="gate-label">Immediate context</span><span class="gate-detail">—</span></li>
+                  <li data-gate="generalContext"><span class="gate-mark" data-status="idle">○</span><span class="gate-label">General context</span><span class="gate-detail">—</span></li>
+                  <li data-gate="rv1909Review"><span class="gate-mark" data-status="idle">○</span><span class="gate-label">RV1909 review</span><span class="gate-detail">—</span></li>
+                </ol>
+                <p id="pipeline-block-note" class="pipeline-block-note" hidden></p>
+                <div id="grammar-slots" class="grammar-slots" hidden></div>
+                <div class="ai-proposal-actions">
+                  <button id="analyze-gates" class="secondary-action" type="button">Analyze phrase</button>
+                  <button id="assist-gates" class="secondary-action" type="button" disabled>Propose Spanish</button>
+                  <button id="open-gate-investigation" class="secondary-action" type="button" hidden>Open investigation</button>
+                </div>
+
+                <article class="constrained-draft-card">
                   <div class="reference-heading">
-                    <p class="scripture-label">AI proposal</p>
-                    <p id="ai-proposal-meta" class="ai-proposal-meta">—</p>
+                    <p class="scripture-label">Grammar-locked draft</p>
+                    <p id="draft-meta" class="ai-proposal-meta">Available after gates are ready</p>
                   </div>
-                  <p id="ai-proposal-text">Propose Spanish for this phrase…</p>
-                  <div id="ai-proposal-analysis" class="ai-proposal-analysis" hidden></div>
+                  <p id="draft-template" class="draft-template" hidden></p>
+                  <p id="constrained-draft-text">Run Analyze, then Propose Spanish for a grammar-checked modern draft.</p>
+                  <ul id="draft-rationale" class="draft-rationale" hidden></ul>
                   <div class="ai-proposal-actions">
-                    <button id="propose-ai" class="secondary-action" type="button">Propose</button>
-                    <button id="accept-ai" class="primary-action" type="button" disabled>Use suggestion</button>
+                    <button id="accept-draft" class="primary-action" type="button" disabled>Use draft</button>
                   </div>
                 </article>
+              </section>
+
+              <section class="draft-references" aria-label="Translation references">
                 <article>
                   <p class="scripture-label">RV1909</p>
                   <p id="rv1909-reference-text">—</p>
@@ -83,7 +110,7 @@
               <dl>
                 <div>
                   <dt>Lemma</dt>
-                  <dd>G1401 — δοῦλος</dd>
+                  <dd id="decision-panel-lemma">G1401 — δοῦλος</dd>
                 </div>
                 <div>
                   <dt>Policy</dt>
@@ -103,6 +130,9 @@
       <aside class="sidebar" aria-label="Investigations" hidden>
         <button id="investigation-toggle" class="investigation-toggle" type="button" aria-expanded="false">
           Investigations
+        </button>
+        <button id="new-investigation" class="secondary-action new-investigation-button" type="button">
+          New investigation…
         </button>
         <div id="investigation-list" class="investigation-list"></div>
       </aside>
@@ -204,6 +234,31 @@
         </section>
       </section>
     </main>
+
+    <div id="new-investigation-modal" class="modal-backdrop" hidden>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="new-investigation-title">
+        <div class="modal-header">
+          <p class="eyebrow">Case Study</p>
+          <h2 id="new-investigation-title">New investigation</h2>
+        </div>
+
+        <label class="field-label" for="new-inv-lemma">Lemma</label>
+        <input id="new-inv-lemma" type="text" autocomplete="off" placeholder="πίστις" />
+
+        <label class="field-label" for="new-inv-strongs">Strong's (optional)</label>
+        <input id="new-inv-strongs" type="text" autocomplete="off" placeholder="G4102" />
+
+        <label class="field-label" for="new-inv-reference">Origin reference</label>
+        <input id="new-inv-reference" type="text" autocomplete="off" placeholder="Titus 1:1" />
+
+        <p id="new-investigation-message" class="modal-message" role="status" aria-live="polite"></p>
+
+        <div class="modal-actions">
+          <button id="cancel-new-investigation" class="secondary-action" type="button">Cancel</button>
+          <button id="create-new-investigation" class="primary-action" type="button">Create</button>
+        </div>
+      </section>
+    </div>
 
     <div id="gather-modal" class="modal-backdrop" hidden>
       <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="gather-title">

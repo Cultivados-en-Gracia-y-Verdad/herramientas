@@ -33,13 +33,21 @@ ollama pull llama3.2
 
 Optional overrides go in `.env` (see `.env.example`). You can also set `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` instead.
 
-AI translation discipline lives in editable rules:
+### Translation pipeline (per-gate)
+
+1. **Analyze phrase** — mechanical Gates 1–5 + grammar skeleton
+2. **Propose Spanish** — AI (default `qwen2.5:7b`) drafts modern Spanish under those constraints
+3. **Use draft** — copies into working Spanish for human edit/approval
+
+Grammar checks still reject illegal readings (e.g. “fe elegida”). If AI fails checks, the mechanical skeleton is shown instead.
+
+Default local model: `qwen2.5:7b` (set in `.env`). `llama3.2` is too weak for this task.
+
+AI translation discipline lives in:
 
 ```text
 src/ai/lbf-translation-rules.md
 ```
-
-Proposals must reason from lemma → morphology → context before Spanish. Approved investigation decisions are injected as lemma policy.
 
 The prototype reads and writes plain Markdown files in `investigations/`. During this stage, those Markdown files remain the source of truth.
 Investigation Stop Rule

@@ -14,7 +14,7 @@ const state = {
   investigation: "INV-0001",
   tab: tabs[0],
   phraseIndex: 0,
-  selectedGreekKey: "doulos",
+  selectedGreekKey: "G1401",
   evidenceFile: null,
   decision: null,
   translationReturn: null,
@@ -31,11 +31,20 @@ const investigationView = document.querySelector("#investigation-view");
 const sidebar = document.querySelector(".sidebar");
 const phraseInterlinear = document.querySelector("#phrase-interlinear");
 const decisionPanel = document.querySelector("#decision-panel");
+const decisionPanelLemma = document.querySelector("#decision-panel-lemma");
 const decisionPanelPolicy = document.querySelector("#decision-panel-policy");
 const decisionPanelStatus = document.querySelector("#decision-panel-status");
 const openInvestigationButton = document.querySelector("#open-investigation");
 const investigationList = document.querySelector("#investigation-list");
 const investigationToggle = document.querySelector("#investigation-toggle");
+const newInvestigationButton = document.querySelector("#new-investigation");
+const newInvestigationModal = document.querySelector("#new-investigation-modal");
+const newInvLemma = document.querySelector("#new-inv-lemma");
+const newInvStrongs = document.querySelector("#new-inv-strongs");
+const newInvReference = document.querySelector("#new-inv-reference");
+const newInvestigationMessage = document.querySelector("#new-investigation-message");
+const createNewInvestigationButton = document.querySelector("#create-new-investigation");
+const cancelNewInvestigationButton = document.querySelector("#cancel-new-investigation");
 const title = document.querySelector("#investigation-title");
 const metaPrimarySubject = document.querySelector("#meta-primary-subject");
 const metaOriginReference = document.querySelector("#meta-origin-reference");
@@ -60,11 +69,19 @@ const suggestionSourceLabel = document.querySelector("#suggestion-source-label")
 const phraseSaveStatus = document.querySelector("#phrase-save-status");
 const rv1909ReferenceText = document.querySelector("#rv1909-reference-text");
 const bleReferenceText = document.querySelector("#ble-reference-text");
-const aiProposalText = document.querySelector("#ai-proposal-text");
-const aiProposalMeta = document.querySelector("#ai-proposal-meta");
-const aiProposalAnalysis = document.querySelector("#ai-proposal-analysis");
-const proposeAiButton = document.querySelector("#propose-ai");
-const acceptAiButton = document.querySelector("#accept-ai");
+const pipelineMeta = document.querySelector("#pipeline-meta");
+const gateStatusList = document.querySelector("#gate-status-list");
+const pipelineBlockNote = document.querySelector("#pipeline-block-note");
+const grammarSlots = document.querySelector("#grammar-slots");
+const analyzeGatesButton = document.querySelector("#analyze-gates");
+const assistGatesButton = document.querySelector("#assist-gates");
+const openGateInvestigationButton = document.querySelector("#open-gate-investigation");
+const openInvestigationsMenuButton = document.querySelector("#open-investigations-menu");
+const constrainedDraftText = document.querySelector("#constrained-draft-text");
+const draftTemplate = document.querySelector("#draft-template");
+const draftMeta = document.querySelector("#draft-meta");
+const draftRationale = document.querySelector("#draft-rationale");
+const acceptDraftButton = document.querySelector("#accept-draft");
 const versePreviewText = document.querySelector("#verse-preview-text");
 const previousPhrase = document.querySelector("#previous-phrase");
 const nextPhrase = document.querySelector("#next-phrase");
@@ -185,18 +202,18 @@ let translationPhrases = structuredClone(defaultTranslationPhrases);
 const phraseSeparator = " ";
 let translationUnits = [];
 let translationUnitsLoaded = false;
-const aiProposalCache = new Map();
-let aiSuggestRequestId = 0;
+const pipelineCache = new Map();
+let pipelineRequestId = 0;
 let aiAvailability = { available: false, message: "Checking AI…" };
 
 const greekKeyByStrong = {
-  G1401: "doulos",
-  G652: "apostolos",
-  G4102: "pistis"
+  G1401: "G1401",
+  G652: "G652",
+  G4102: "G4102"
 };
 
 const greekWordInfo = {
-  doulos: {
+  G1401: {
     lemma: "δοῦλος",
     strongs: "G1401",
     investigationId: "INV-0001",
@@ -206,7 +223,7 @@ const greekWordInfo = {
     reference: "Titus 1:1",
     surface: "δοῦλος"
   },
-  apostolos: {
+  G652: {
     lemma: "ἀπόστολος",
     strongs: "G652",
     investigationId: "INV-0002",
@@ -216,7 +233,7 @@ const greekWordInfo = {
     reference: "Titus 1:1",
     surface: "ἀπόστολος"
   },
-  pistis: {
+  G4102: {
     lemma: "πίστις",
     strongs: "G4102",
     investigationId: "INV-0003",
@@ -237,7 +254,69 @@ const greekWordInfo = {
 function selectedGreekInfo() {
   return greekWordInfo[state.selectedGreekKey]
     || Object.values(greekWordInfo).find(info => info.investigationId === state.investigation)
-    || greekWordInfo.doulos;
+    || greekWordInfo.G1401;
+}
+
+function greekWordKey({ strongs = "", lemma = "", surface = "" } = {}) {
+  const normalizedStrongs = String(strongs || "").trim().toUpperCase();
+  if (normalizedStrongs) return normalizedStrongs;
+  if (lemma) return `lemma:${lemma}`;
+  if (surface) return `surface:${surface}`;
+  return "";
+}
+
+function linkInvestigationToWordInfo({ lemma = "", strongs = "", investigationId = "", approved = false, rendering = "", source = "" } = {}) {
+  const key = greekWordKey({ strongs, lemma });
+  if (!key) return null;
+  const existing = greekWordInfo[key] || {};
+  greekWordInfo[key] = {
+    ...existing,
+    lemma: lemma || existing.lemma || "",
+    strongs: String(strongs || existing.strongs || "").toUpperCase(),
+    investigationId: investigationId || existing.investigationId || "",
+    approved: approved || existing.approved || false,
+    rendering: rendering || existing.rendering || "",
+    source: source || existing.source || "BLE",
+    reference: existing.reference || currentPhrase()?.reference || "Titus 1:1",
+    surface: existing.surface || lemma || ""
+  };
+  if (greekWordInfo[key].strongs) {
+    greekKeyByStrong[greekWordInfo[key].strongs] = key;
+  }
+  return key;
+}
+
+function registerTokenAsGreekWord(token = {}) {
+  const lemma = token.lemma || token.greek || "";
+  const strongs = String(token.strongs || "").trim().toUpperCase();
+  const key = greekWordKey({ strongs, lemma, surface: token.greek });
+  if (!key) return "";
+
+  const existing = greekWordInfo[key]
+    || Object.values(greekWordInfo).find(info =>
+      (strongs && info.strongs === strongs)
+      || (lemma && info.lemma === lemma)
+      || (token.greek && info.surface === token.greek)
+    )
+    || {};
+
+  greekWordInfo[key] = {
+    ...existing,
+    lemma: lemma || existing.lemma || "",
+    strongs: strongs || existing.strongs || "",
+    investigationId: existing.investigationId || "",
+    approved: existing.approved || false,
+    rendering: existing.rendering || token.ble || "",
+    source: existing.source || "BLE",
+    reference: currentPhrase()?.reference || existing.reference || "Titus 1:1",
+    surface: token.greek || existing.surface || lemma,
+    rmac: token.rmac || existing.rmac || "",
+    construction: existing.construction
+  };
+  if (greekWordInfo[key].strongs) {
+    greekKeyByStrong[greekWordInfo[key].strongs] = key;
+  }
+  return key;
 }
 
 function currentPhrase() {
@@ -249,10 +328,25 @@ function defaultTranslationDocument() {
 }
 
 function phraseGreekText(phrase) {
+  const fromTokens = (phrase?.tokenRows || []).map(row => row.greek).filter(Boolean).join(" ");
+  if (fromTokens) return fromTokens;
   if (Array.isArray(phrase?.greek)) {
     return phrase.greek.map(token => token.text).join(" ");
   }
   return String(phrase?.greek || "").trim();
+}
+
+function phraseBleText(phrase) {
+  const fromTokens = (phrase?.tokenRows || []).map(row => row.ble).filter(Boolean).join(" ");
+  return fromTokens || String(phrase?.bleText || "").trim();
+}
+
+function phraseRv1909Text(phrase) {
+  // Prefer phrase-aligned RV1909 span (keeps articles/punctuation).
+  // Per-token rv1909 fragments are for interlinear only and are not faithful spans.
+  const aligned = String(phrase?.rv1909Text || "").trim();
+  if (aligned) return aligned;
+  return (phrase?.tokenRows || []).map(row => row.rv1909).filter(Boolean).join(" ");
 }
 
 function setPhraseSaveStatus(text, stateName = "saved") {
@@ -291,8 +385,8 @@ function serializePhraseRecords() {
       spanish: phraseDisplayText(phrase),
       sourceTokenIds,
       tokenRows: phrase.tokenRows || [],
-      rv1909Text: phrase.rv1909Text || canonical?.rv1909Text || "",
-      bleText: phrase.bleText || canonical?.bleText || "",
+      rv1909Text: phraseRv1909Text(phrase) || phrase.rv1909Text || canonical?.rv1909Text || "",
+      bleText: phraseBleText(phrase) || phrase.bleText || canonical?.bleText || "",
       suggestionSource: phrase.suggestionSource || ""
     };
   });
@@ -380,6 +474,9 @@ function suggestionSourceForPhrase(phrase) {
   if (phrase.approvedDecision) return "Approved LBF decision";
   if (phrase.workingText && phrase.suggestionSource === "saved") return "Saved LBF phrase";
   if (phrase.workingText && phrase.suggestionSource === "lbf-approved") return "Approved LBF phrase";
+  if (phrase.workingText && phrase.suggestionSource === "ai-proposed") {
+    return "Constrained AI draft (edit before saving)";
+  }
   return "Fresh LBF translation";
 }
 
@@ -454,40 +551,31 @@ function currentPhraseKey(phrase = currentPhrase(), index = state.phraseIndex) {
   return `${phrase?.reference || ""}|${index}`;
 }
 
-function setAiProposalUi({
-  text = "—",
-  meta = "—",
-  analysis = null,
-  canAccept = false,
-  busy = false
-} = {}) {
-  aiProposalText.textContent = text || "—";
-  aiProposalMeta.textContent = meta || "—";
-  renderAiAnalysis(analysis);
-  proposeAiButton.disabled = busy;
-  proposeAiButton.textContent = busy ? "Proposing…" : "Propose";
-  acceptAiButton.disabled = busy || !canAccept || !String(text || "").trim() || text === "—";
-}
+const GATE_ORDER = [
+  "lemma",
+  "morphology",
+  "immediateContext",
+  "generalContext",
+  "rv1909Review"
+];
 
-function renderAiAnalysis(analysis) {
-  if (!aiProposalAnalysis) return;
-  const lemma = analysis?.lemma?.trim() || "";
-  const morphology = analysis?.morphology?.trim() || "";
-  const context = analysis?.context?.trim() || "";
-  const flags = Array.isArray(analysis?.flags) ? analysis.flags.filter(Boolean) : [];
-  if (!lemma && !morphology && !context && !flags.length) {
-    aiProposalAnalysis.hidden = true;
-    aiProposalAnalysis.textContent = "";
-    return;
-  }
+const GATE_MARK = {
+  idle: "○",
+  busy: "…",
+  resolved: "✓",
+  consulted: "✓",
+  blocked: "✕"
+};
 
-  const parts = [];
-  if (lemma) parts.push(`Lemma: ${lemma}`);
-  if (morphology) parts.push(`Morphology: ${morphology}`);
-  if (context) parts.push(`Context: ${context}`);
-  for (const flag of flags) parts.push(`Flag: ${flag}`);
-  aiProposalAnalysis.hidden = false;
-  aiProposalAnalysis.textContent = parts.join("\n");
+function phrasePipelinePayload(phrase = currentPhrase()) {
+  return {
+    reference: phrase.reference,
+    greek: phraseGreekText(phrase),
+    tokenRows: phrase.tokenRows || [],
+    rv1909Text: phraseRv1909Text(phrase),
+    bleText: phraseBleText(phrase),
+    priorLbf: priorLbfForSuggestion(phrase)
+  };
 }
 
 function priorLbfForSuggestion(phrase = currentPhrase()) {
@@ -500,100 +588,314 @@ function priorLbfForSuggestion(phrase = currentPhrase()) {
     }));
 }
 
+function resetPipelineUi() {
+  pipelineMeta.textContent = "Analyze this phrase to begin";
+  pipelineBlockNote.hidden = true;
+  pipelineBlockNote.textContent = "";
+  openGateInvestigationButton.hidden = true;
+  openGateInvestigationButton.dataset.investigationId = "";
+  assistGatesButton.disabled = true;
+  assistGatesButton.textContent = "Propose Spanish";
+  analyzeGatesButton.disabled = false;
+  analyzeGatesButton.textContent = "Analyze phrase";
+  constrainedDraftText.textContent = "Run Analyze, then Propose Spanish for a grammar-checked modern draft.";
+  draftMeta.textContent = "Available after gates are ready";
+  acceptDraftButton.disabled = true;
+  draftRationale.hidden = true;
+  draftRationale.innerHTML = "";
+  if (draftTemplate) {
+    draftTemplate.hidden = true;
+    draftTemplate.textContent = "";
+  }
+  if (grammarSlots) {
+    grammarSlots.hidden = true;
+    grammarSlots.innerHTML = "";
+  }
+  for (const id of GATE_ORDER) {
+    setGateRow(id, { status: "idle", detail: "—" });
+  }
+}
+
+function renderGrammarSlots(slots = []) {
+  if (!grammarSlots) return;
+  const visible = (slots || []).filter(slot => !slot.omit);
+  if (!visible.length) {
+    grammarSlots.hidden = true;
+    grammarSlots.innerHTML = "";
+    return;
+  }
+  grammarSlots.hidden = false;
+  grammarSlots.innerHTML = visible.map(slot => {
+    const relation = slot.relation === "de"
+      ? `de${slot.number === "plural" ? " los" : ""}`
+      : (slot.role === "preposition" ? "prep" : "—");
+    return `<div class="grammar-slot">
+      <span class="grammar-slot-greek">${escapeHtml(slot.greek || "—")}</span>
+      <span class="grammar-slot-morph">${escapeHtml(slot.morph || "—")}</span>
+      <span class="grammar-slot-fill">${escapeHtml(relation)} → <strong>${escapeHtml(slot.value || "—")}</strong></span>
+    </div>`;
+  }).join("");
+}
+
+function setGateRow(gateId, { status = "idle", detail = "—" } = {}) {
+  const row = gateStatusList?.querySelector(`[data-gate="${gateId}"]`);
+  if (!row) return;
+  const mark = row.querySelector(".gate-mark");
+  const detailEl = row.querySelector(".gate-detail");
+  if (mark) {
+    mark.dataset.status = status;
+    mark.textContent = GATE_MARK[status] || GATE_MARK.idle;
+  }
+  if (detailEl) detailEl.textContent = detail || "—";
+}
+
+function renderGateAnalysis(analysis, assist = null) {
+  if (!analysis?.gates) {
+    resetPipelineUi();
+    return;
+  }
+
+  const summaries = assist?.gateSummaries || {};
+  for (const id of GATE_ORDER) {
+    const gate = analysis.gates[id];
+    if (!gate) {
+      setGateRow(id, { status: "idle", detail: "—" });
+      continue;
+    }
+    const aiNote = summaries[id];
+    const detail = [gate.summary, aiNote].filter(Boolean).join(" — ");
+    setGateRow(id, { status: gate.status || "idle", detail });
+  }
+
+  const blocked = analysis.pipelineStatus === "blocked";
+  pipelineMeta.textContent = blocked
+    ? "Pipeline blocked at Gate 1 (lemma policy)"
+    : analysis.readyForSynthesis
+      ? "Gates ready for constrained draft"
+      : "Gate analysis incomplete";
+
+  if (blocked) {
+    pipelineBlockNote.hidden = false;
+    pipelineBlockNote.textContent = assist?.blockedNote
+      || `No approved lemma policy for ${analysis.constraints?.blockedLemma || "this lemma"}. Open an investigation before drafting.`;
+    const invId = analysis.constraints?.investigationId
+      || analysis.gates?.lemma?.investigationId
+      || "";
+    openGateInvestigationButton.hidden = false;
+    openGateInvestigationButton.dataset.investigationId = invId;
+    openGateInvestigationButton.dataset.blockedLemma = analysis.constraints?.blockedLemmaForm
+      || analysis.gates?.lemma?.blockedLemmaForm
+      || "";
+    openGateInvestigationButton.dataset.blockedStrongs = analysis.constraints?.blockedStrongs
+      || analysis.gates?.lemma?.blockedStrongs
+      || "";
+    openGateInvestigationButton.textContent = invId
+      ? `Open ${invId}`
+      : "Start investigation";
+  } else {
+    pipelineBlockNote.hidden = true;
+    pipelineBlockNote.textContent = "";
+    openGateInvestigationButton.hidden = true;
+  }
+
+  assistGatesButton.disabled = false;
+  const slots = assist?.slots || analysis.mechanicalDraft?.slots || [];
+  renderGrammarSlots(slots);
+  if (draftTemplate) {
+    const template = assist?.template || analysis.mechanicalDraft?.template || "";
+    draftTemplate.hidden = !template;
+    draftTemplate.textContent = template ? `Template: ${template}` : "";
+  }
+
+  if (assist?.proposedSpanish) {
+    constrainedDraftText.textContent = assist.proposedSpanish;
+    const sourceLabel = assist.draftSource === "mechanical-fallback"
+      ? `mechanical fallback (${assist.provider}/${assist.model})`
+      : `AI draft · ${assist.provider}/${assist.model}`;
+    draftMeta.textContent = sourceLabel;
+    acceptDraftButton.disabled = false;
+    const rationale = Array.isArray(assist.rationale) ? assist.rationale : [];
+    const flags = Array.isArray(assist.flags) ? assist.flags : [];
+    const notes = [
+      ...flags.map(flag => `Flag: ${flag}`),
+      ...rationale
+    ];
+    if (notes.length) {
+      draftRationale.hidden = false;
+      draftRationale.innerHTML = notes.map(note => `<li>${escapeHtml(note)}</li>`).join("");
+    } else {
+      draftRationale.hidden = true;
+      draftRationale.innerHTML = "";
+    }
+  } else if (blocked) {
+    constrainedDraftText.textContent = "Draft withheld until Gate 1 is resolved.";
+    draftMeta.textContent = "Blocked";
+    acceptDraftButton.disabled = true;
+    draftRationale.hidden = true;
+  } else if (analysis.mechanicalDraft?.proposedSpanish) {
+    constrainedDraftText.textContent = analysis.mechanicalDraft.proposedSpanish;
+    draftMeta.textContent = "grammar skeleton (run Propose Spanish for fluent draft)";
+    acceptDraftButton.disabled = false;
+    const notes = analysis.mechanicalDraft.notes || [];
+    if (notes.length) {
+      draftRationale.hidden = false;
+      draftRationale.innerHTML = notes.map(note => `<li>${escapeHtml(note)}</li>`).join("");
+    } else {
+      draftRationale.hidden = true;
+    }
+  } else {
+    constrainedDraftText.textContent = "Gates analyzed. Draft appears when Gate 1 is clear.";
+    draftMeta.textContent = aiAvailability.available
+      ? `${aiAvailability.provider}/${aiAvailability.model}`
+      : (aiAvailability.message || "AI unavailable");
+    acceptDraftButton.disabled = true;
+    draftRationale.hidden = true;
+  }
+}
+
+function applyPipelineCache(phrase = currentPhrase()) {
+  const cached = pipelineCache.get(currentPhraseKey(phrase));
+  if (!cached) {
+    phrase.pipelineAnalysis = null;
+    phrase.pipelineAssist = null;
+    phrase.constrainedDraft = "";
+    resetPipelineUi();
+    return null;
+  }
+  phrase.pipelineAnalysis = cached.analysis || null;
+  phrase.pipelineAssist = cached.assist || null;
+  phrase.constrainedDraft = cached.assist?.proposedSpanish
+    || cached.analysis?.mechanicalDraft?.proposedSpanish
+    || "";
+  renderGateAnalysis(cached.analysis, cached.assist || null);
+  return cached;
+}
+
 async function loadAiAvailability() {
-  aiAvailability = await api("/api/translation/suggest").catch(() => ({
+  aiAvailability = await api("/api/translation/ai").catch(() => ({
     available: false,
-    message: "AI suggestion unavailable"
+    message: "AI assist unavailable"
   }));
   return aiAvailability;
 }
 
-async function requestAiProposal({ force = false } = {}) {
+async function analyzeCurrentPhrase({ force = false } = {}) {
   const phrase = currentPhrase();
   const cacheKey = currentPhraseKey(phrase);
-  const requestId = ++aiSuggestRequestId;
+  const requestId = ++pipelineRequestId;
 
-  if (!force && aiProposalCache.has(cacheKey)) {
-    const cached = aiProposalCache.get(cacheKey);
-    phrase.aiProposal = cached.proposal;
-    phrase.aiAnalysis = cached.analysis || null;
-    setAiProposalUi({
-      text: cached.proposal,
-      meta: `${cached.provider}/${cached.model}`,
-      analysis: cached.analysis || null,
-      canAccept: true
-    });
-    return cached;
+  if (!force && pipelineCache.has(cacheKey) && pipelineCache.get(cacheKey).analysis) {
+    return applyPipelineCache(phrase);
   }
 
-  if (!aiAvailability.available) {
-    setAiProposalUi({
-      text: "Start Ollama (or configure a cloud AI key) to propose Spanish for this phrase.",
-      meta: aiAvailability.message || "AI not configured",
-      canAccept: false
-    });
-    return null;
+  analyzeGatesButton.disabled = true;
+  analyzeGatesButton.textContent = "Analyzing…";
+  assistGatesButton.disabled = true;
+  for (const id of GATE_ORDER) {
+    setGateRow(id, { status: "busy", detail: "Analyzing…" });
   }
-
-  setAiProposalUi({
-    text: phrase.aiProposal || "Proposing Spanish…",
-    meta: `${aiAvailability.provider}/${aiAvailability.model}`,
-    analysis: phrase.aiAnalysis || null,
-    canAccept: Boolean(phrase.aiProposal),
-    busy: true
-  });
+  pipelineMeta.textContent = "Running mechanical gates…";
 
   try {
-    const result = await api("/api/translation/suggest", {
+    const analysis = await api("/api/translation/gates", {
       method: "POST",
-      body: JSON.stringify({
-        reference: phrase.reference,
-        greek: phraseGreekText(phrase),
-        tokenRows: phrase.tokenRows || [],
-        rv1909Text: phrase.rv1909Text || "",
-        bleText: phrase.bleText || "",
-        priorLbf: priorLbfForSuggestion(phrase)
-      })
+      body: JSON.stringify(phrasePipelinePayload(phrase))
     });
 
-    if (requestId !== aiSuggestRequestId || currentPhraseKey() !== cacheKey) {
-      return result;
+    if (requestId !== pipelineRequestId || currentPhraseKey() !== cacheKey) {
+      return analysis;
     }
 
-    aiProposalCache.set(cacheKey, result);
-    phrase.aiProposal = result.proposal;
-    phrase.aiAnalysis = result.analysis || null;
-    setAiProposalUi({
-      text: result.proposal,
-      meta: `${result.provider}/${result.model}`,
-      analysis: result.analysis || null,
-      canAccept: true
-    });
-    return result;
+    const previous = pipelineCache.get(cacheKey) || {};
+    const next = { ...previous, analysis, assist: null };
+    pipelineCache.set(cacheKey, next);
+    phrase.pipelineAnalysis = analysis;
+    phrase.pipelineAssist = null;
+    phrase.constrainedDraft = analysis.mechanicalDraft?.proposedSpanish || "";
+    renderGateAnalysis(analysis, null);
+    return next;
   } catch (error) {
-    if (requestId !== aiSuggestRequestId || currentPhraseKey() !== cacheKey) {
-      return null;
-    }
-    setAiProposalUi({
-      text: error.message || "AI suggestion failed",
-      meta: error.code || "error",
-      canAccept: false
-    });
+    if (requestId !== pipelineRequestId || currentPhraseKey() !== cacheKey) return null;
+    resetPipelineUi();
+    pipelineMeta.textContent = error.message || "Gate analysis failed";
+    prototypeMessage.textContent = error.message || "Gate analysis failed";
     return null;
+  } finally {
+    if (requestId === pipelineRequestId) {
+      analyzeGatesButton.disabled = false;
+      analyzeGatesButton.textContent = "Analyze phrase";
+    }
   }
 }
 
-function acceptAiProposal() {
+async function assistCurrentPhrase() {
   const phrase = currentPhrase();
-  const proposal = String(phrase.aiProposal || aiProposalText.textContent || "").trim();
-  if (!proposal || proposal === "—" || proposal.startsWith("Start Ollama") || proposal.startsWith("Configure an AI key")) return;
+  const cacheKey = currentPhraseKey(phrase);
+  const requestId = ++pipelineRequestId;
+
+  if (!aiAvailability.available) {
+    draftMeta.textContent = aiAvailability.message || "AI unavailable";
+    constrainedDraftText.textContent = "Start Ollama to assist under gate constraints.";
+    return null;
+  }
+
+  assistGatesButton.disabled = true;
+  assistGatesButton.textContent = "Proposing…";
+  analyzeGatesButton.disabled = true;
+  draftMeta.textContent = `${aiAvailability.provider}/${aiAvailability.model}`;
+  constrainedDraftText.textContent = "Proposing modern Spanish under Greek grammar constraints…";
+  acceptDraftButton.disabled = true;
+
+  try {
+    const result = await api("/api/translation/gates/assist", {
+      method: "POST",
+      body: JSON.stringify(phrasePipelinePayload(phrase))
+    });
+
+    if (requestId !== pipelineRequestId || currentPhraseKey() !== cacheKey) {
+      return result;
+    }
+
+    pipelineCache.set(cacheKey, result);
+    phrase.pipelineAnalysis = result.analysis;
+    phrase.pipelineAssist = result.assist;
+    phrase.constrainedDraft = result.assist?.proposedSpanish
+      || result.analysis?.mechanicalDraft?.proposedSpanish
+      || "";
+    renderGateAnalysis(result.analysis, result.assist);
+    return result;
+  } catch (error) {
+    if (requestId !== pipelineRequestId || currentPhraseKey() !== cacheKey) return null;
+    constrainedDraftText.textContent = error.message || "AI proposal failed";
+    draftMeta.textContent = error.code || "error";
+    acceptDraftButton.disabled = Boolean(phrase.pipelineAnalysis?.mechanicalDraft?.proposedSpanish);
+    if (phrase.pipelineAnalysis?.mechanicalDraft?.proposedSpanish) {
+      renderGateAnalysis(phrase.pipelineAnalysis, null);
+    }
+    prototypeMessage.textContent = error.message || "AI proposal failed";
+    return null;
+  } finally {
+    if (requestId === pipelineRequestId) {
+      analyzeGatesButton.disabled = false;
+      assistGatesButton.disabled = false;
+      assistGatesButton.textContent = "Propose Spanish";
+    }
+  }
+}
+
+function acceptConstrainedDraft() {
+  const phrase = currentPhrase();
+  const proposal = String(phrase.constrainedDraft || constrainedDraftText.textContent || "").trim();
+  if (!proposal || proposal === "—" || /^(Run Analyze|Gates analyzed|Draft withheld|Start Ollama|Summarizing)/.test(proposal)) {
+    return;
+  }
 
   phrase.workingText = proposal;
   phrase.suggestionSource = "ai-proposed";
   translationEditor.value = proposal;
   markTranslationDirty();
   renderVersePreview();
-  suggestionSourceLabel.textContent = "AI proposal (edit before saving)";
+  suggestionSourceLabel.textContent = "Constrained AI draft (edit before saving)";
   translationEditor.focus();
   placeTranslationCursor(proposal.length);
 }
@@ -610,17 +912,28 @@ async function enrichPhraseReferencesFromUnits() {
     const unit = unitsByReference.get(phrase.reference);
     if (!unit) return phrase;
 
-    const rv1909Text = phrase.rv1909Text || unit.rv1909Text || "";
-    const bleText = phrase.bleText || unit.bleText || "";
-    const sourceTokenIds = phrase.sourceTokenIds?.length ? phrase.sourceTokenIds : (unit.sourceTokenIds || []);
+    const sourceTokenIds = phrase.sourceTokenIds?.length
+      ? phrase.sourceTokenIds
+      : (unit.sourceTokenIds || []);
     const tokenIdSet = new Set(sourceTokenIds);
     const unitTokenRows = (unit.tokenRows || []).filter(row => tokenIdSet.has(row.sourceTokenId));
+    const tokenRows = unitTokenRows.length ? unitTokenRows : (phrase.tokenRows || []);
+    const greekFromTokens = tokenRows.map(row => row.greek).filter(Boolean).join(" ");
+    const bleFromTokens = tokenRows.map(row => row.ble).filter(Boolean).join(" ");
+    // Do not rebuild RV1909 from token fragments — that drops articles/punctuation.
+    // Keep the phrase-aligned span from disk/API enrich.
+
     return {
       ...phrase,
+      greek: greekFromTokens
+        ? (Array.isArray(phrase.greek)
+          ? tokenRows.map(row => ({ text: row.greek, ...(phrase.greek.find?.(t => t.text === row.greek) || {}) }))
+          : greekFromTokens)
+        : phrase.greek,
       sourceTokenIds,
-      tokenRows: unitTokenRows.length ? unitTokenRows : (phrase.tokenRows || []),
-      rv1909Text,
-      bleText: unit.bleText || bleText,
+      tokenRows,
+      rv1909Text: phrase.rv1909Text || "",
+      bleText: bleFromTokens || phrase.bleText || "",
       workingText: phrase.workingText || "",
       suggestionSource: phrase.workingText ? (phrase.suggestionSource || "lbf-approved") : "blank"
     };
@@ -751,9 +1064,9 @@ function renderPhraseInterlinear() {
 
     const greekLine = document.createElement("div");
     greekLine.className = "interlinear-greek";
-    const tokenInfo = Object.entries(greekWordInfo).find(([, info]) => info.surface === token.greek);
-    if (tokenInfo) {
-      const [key, info] = tokenInfo;
+    const key = registerTokenAsGreekWord(token);
+    if (key) {
+      const info = greekWordInfo[key];
       const button = document.createElement("button");
       button.type = "button";
       button.className = `greek-word-trigger ${info.approved ? "approved" : "provisional"}`;
@@ -800,40 +1113,9 @@ function renderTranslationPhrase({ focus = false, cursorPosition = null } = {}) 
   translationReferenceTitle.textContent = `${reference} · Phrase ${phraseNumber || state.phraseIndex + 1}`;
   translationReferenceMeta.textContent = reference;
   suggestionSourceLabel.textContent = suggestionSourceForPhrase(phrase);
-  rv1909ReferenceText.textContent = phrase.rv1909Text || "—";
-  bleReferenceText.textContent = phrase.bleText || "—";
-  const cachedProposal = aiProposalCache.get(currentPhraseKey(phrase));
-  if (cachedProposal?.proposal) {
-    phrase.aiProposal = cachedProposal.proposal;
-    phrase.aiAnalysis = cachedProposal.analysis || null;
-    setAiProposalUi({
-      text: cachedProposal.proposal,
-      meta: `${cachedProposal.provider}/${cachedProposal.model}`,
-      analysis: cachedProposal.analysis || null,
-      canAccept: true
-    });
-  } else if (phrase.aiProposal) {
-    setAiProposalUi({
-      text: phrase.aiProposal,
-      meta: "cached",
-      analysis: phrase.aiAnalysis || null,
-      canAccept: true
-    });
-  } else if (aiAvailability.available) {
-    setAiProposalUi({
-      text: "Proposing Spanish…",
-      meta: `${aiAvailability.provider}/${aiAvailability.model}`,
-      canAccept: false,
-      busy: true
-    });
-    void requestAiProposal();
-  } else {
-    setAiProposalUi({
-      text: "Start Ollama (or configure a cloud AI key) to propose Spanish for this phrase.",
-      meta: aiAvailability.message || "AI not configured",
-      canAccept: false
-    });
-  }
+  rv1909ReferenceText.textContent = phraseRv1909Text(phrase) || "—";
+  bleReferenceText.textContent = phraseBleText(phrase) || "—";
+  applyPipelineCache(phrase);
   if (translationEditor.value !== phrase.workingText) {
     translationEditor.value = phrase.workingText;
   }
@@ -870,7 +1152,7 @@ function showTranslationView({ focusTranslation = false, cursorPosition = null }
   state.view = "translation";
   translationView.hidden = false;
   investigationView.hidden = true;
-  sidebar.hidden = true;
+  sidebar.hidden = false;
   setInvestigationListOpen(false);
   window.history.pushState(null, "", window.location.pathname);
   if (state.translationReturn?.phraseIndex != null) {
@@ -930,19 +1212,34 @@ function showGreekDecisionPanel(key, anchor) {
 
   state.selectedGreekKey = key;
   decisionPanel.hidden = false;
-  decisionPanel.querySelector("dd").textContent = `${info.strongs} — ${info.lemma}`;
+  decisionPanelLemma.textContent = [info.strongs, info.lemma].filter(Boolean).join(" — ") || info.lemma || "—";
   decisionPanelPolicy.textContent = info.approved
     ? info.rendering
     : `${info.rendering || "—"} (${info.source || "unresolved"})`;
-  decisionPanelStatus.textContent = info.approved ? "Approved decision" : "Provisional";
-  openInvestigationButton.textContent = info.approved ? "View Decision" : "Open Investigation";
+  if (info.investigationId) {
+    decisionPanelStatus.textContent = info.approved
+      ? `Approved · ${info.investigationId}`
+      : `Open · ${info.investigationId}`;
+    openInvestigationButton.textContent = info.approved ? "View Decision" : "Open Investigation";
+  } else {
+    decisionPanelStatus.textContent = "No investigation yet";
+    openInvestigationButton.textContent = "Start Investigation";
+  }
   positionDecisionPanel(anchor);
 }
 
 function applyDecisionToTranslation(decision) {
   if (decision?.status !== "Approved" || !decision.preferredRendering) return;
 
-  const greekKey = greekKeyByStrong[decision.strongs];
+  const greekKey = greekKeyByStrong[decision.strongs]
+    || linkInvestigationToWordInfo({
+      lemma: decision.lemma,
+      strongs: decision.strongs,
+      investigationId: decision.investigationId || "",
+      approved: true,
+      rendering: decision.preferredRendering,
+      source: `Decision ${decision.version}`
+    });
   const alreadyApplied = greekKey
     && greekWordInfo[greekKey]?.approved
     && greekWordInfo[greekKey]?.source === `Decision ${decision.version}`;
@@ -967,20 +1264,23 @@ async function loadApprovedDecisions({ applyToText = !state.translationLoadedFro
 
   for (const id of investigations) {
     const { decision } = await api(`/api/investigations/${id}/decision`).catch(() => ({ decision: null }));
+    if (!decision) continue;
+
+    linkInvestigationToWordInfo({
+      lemma: decision.lemma,
+      strongs: decision.strongs,
+      investigationId: id,
+      approved: decision.status === "Approved" && Boolean(decision.preferredRendering),
+      rendering: decision.preferredRendering || "",
+      source: decision.status === "Approved"
+        ? `Decision ${decision.version}`
+        : decision.status || "Draft"
+    });
+
     if (decision?.status === "Approved" && decision.preferredRendering) {
-      decisions.push(decision);
+      decisions.push({ ...decision, investigationId: id });
       if (applyToText) {
-        applyDecisionToTranslation(decision);
-      } else {
-        const greekKey = greekKeyByStrong[decision.strongs];
-        if (greekKey && greekWordInfo[greekKey]) {
-          greekWordInfo[greekKey] = {
-            ...greekWordInfo[greekKey],
-            approved: true,
-            rendering: decision.preferredRendering,
-            source: `Decision ${decision.version}`
-          };
-        }
+        applyDecisionToTranslation({ ...decision, investigationId: id });
       }
     }
   }
@@ -999,6 +1299,7 @@ async function api(path, options = {}) {
     const error = new Error(body.error || `Request failed: ${response.status}`);
     error.code = body.code;
     error.status = response.status;
+    error.fileName = body.fileName;
     throw error;
   }
   return response.json();
@@ -1053,7 +1354,7 @@ function escapeHtml(value) {
 
 function renderInlineMarkdown(value) {
   const escaped = escapeHtml(value);
-  return escaped.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  return escaped.replace(/\*\*([^*]+)\*\*/gu, "<mark class=\"witness-focus\">$1</mark>");
 }
 
 function appendMarkdownParagraph(parent, line) {
@@ -1206,8 +1507,8 @@ function fillDecisionForm(decision) {
   decisionStatus.value = decision.status || "Draft";
   decisionVersion.value = decision.version || "1.0";
   decisionEffectiveDate.value = decision.effectiveDate || "";
-  decisionLemma.value = decision.lemma || "δοῦλος";
-  decisionStrongs.value = decision.strongs || "G1401";
+  decisionLemma.value = decision.lemma || "";
+  decisionStrongs.value = decision.strongs || "";
   decisionRendering.value = decision.preferredRendering || "";
   decisionConfidence.value = decision.confidence || "Medium";
   decisionReason.value = decision.reason || "";
@@ -1441,11 +1742,43 @@ async function renderEvidenceFiles() {
   evidenceFiles.hidden = false;
 }
 
-function openGatherModal() {
-  const activeInfo = Object.entries(greekWordInfo).find(([, info]) => info.investigationId === state.investigation);
-  if (activeInfo) {
-    state.selectedGreekKey = activeInfo[0];
+async function syncGatherSubjectFromInvestigation() {
+  const { decision } = await api(`/api/investigations/${state.investigation}/decision`).catch(() => ({ decision: null }));
+  const meta = await api(`/api/investigations/${state.investigation}`).then(payload => payload.meta).catch(() => null);
+  const primary = String(meta?.primarySubject || "");
+  const primaryStrongs = (primary.match(/\bG\d+\b/) || [])[0] || "";
+  const primaryLemma = primary.replace(/^G\d+\s*[—-]\s*/u, "").trim();
+
+  const lemma = decision?.lemma || primaryLemma || decisionLemma?.value || "";
+  const strongs = decision?.strongs || primaryStrongs || decisionStrongs?.value || "";
+  const key = linkInvestigationToWordInfo({
+    lemma,
+    strongs,
+    investigationId: state.investigation,
+    approved: decision?.status === "Approved",
+    rendering: decision?.preferredRendering || "",
+    source: decision?.status || "Investigation"
+  });
+
+  if (key) {
+    state.selectedGreekKey = key;
+    greekWordInfo[key] = {
+      ...greekWordInfo[key],
+      reference: meta?.originReference || greekWordInfo[key].reference || "Titus 1:1",
+      surface: greekWordInfo[key].surface || lemma
+    };
   }
+
+  return greekWordInfo[key] || selectedGreekInfo();
+}
+
+async function openGatherModal() {
+  try {
+    await syncGatherSubjectFromInvestigation();
+  } catch (error) {
+    gatherMessage.textContent = error.message || "Could not load investigation subject.";
+  }
+
   const info = selectedGreekInfo();
   const constructionInput = document.querySelector("input[name='gather-type'][value='construction']");
   if (constructionInput) {
@@ -1454,9 +1787,11 @@ function openGatherModal() {
       document.querySelector("input[name='gather-type'][value='occurrences']").checked = true;
     }
   }
-  gatherMessage.textContent = "";
+  gatherMessage.textContent = info.lemma || info.strongs
+    ? `Subject: ${[info.strongs, info.lemma].filter(Boolean).join(" — ")}`
+    : "Set lemma/Strong's in Decision before gathering.";
   replaceActions.hidden = true;
-  runGather.disabled = false;
+  runGather.disabled = !(info.lemma || info.strongs);
   gatherModal.hidden = false;
   runGather.focus();
 }
@@ -1472,10 +1807,10 @@ function buildGatherPayload(type, replace) {
   return {
     type,
     replace,
-    reference: info.reference || "Titus 1:1",
+    reference: info.reference || metaOriginReference?.textContent || "Titus 1:1",
     surface: info.surface || "",
-    lemma: info.lemma || "",
-    strongs: info.strongs || "",
+    lemma: info.lemma || decisionLemma?.value?.trim() || "",
+    strongs: info.strongs || decisionStrongs?.value?.trim() || "",
     rmac: info.rmac || "",
     prepositionSurface: info.construction?.prepositionSurface || "",
     prepositionLemma: info.construction?.prepositionLemma || "",
@@ -1501,14 +1836,20 @@ async function runEvidenceGather({ replace = false } = {}) {
   replaceEvidence.disabled = true;
 
   try {
-    await api(`/api/investigations/${state.investigation}/gather`, {
+    await syncGatherSubjectFromInvestigation();
+    const result = await api(`/api/investigations/${state.investigation}/gather`, {
       method: "POST",
       body: JSON.stringify(buildGatherPayload(type, replace))
     });
     prototypeMessage.textContent = "Evidence gathered.";
     closeGatherModal();
+    const evidenceTab = tabs.find(tab => tab.file === "evidence.md") || tabs[0];
+    state.tab = evidenceTab;
+    renderTabs();
     await renderEvidenceFiles();
-    if (state.tab.file === "history.md") {
+    if (result?.file?.name) {
+      await openEvidenceFile(result.file.name);
+    } else if (state.tab.file === "history.md") {
       await loadCurrentFile();
     }
   } catch (error) {
@@ -1572,14 +1913,104 @@ phraseInterlinear.addEventListener("click", event => {
   }
 });
 
+async function createInvestigationFromLemma(payload = {}) {
+  const lemma = String(payload.lemma || "").trim();
+  if (!lemma) {
+    throw new Error("Lemma is required to start an investigation.");
+  }
+
+  const result = await api("/api/investigations", {
+    method: "POST",
+    body: JSON.stringify({
+      lemma,
+      strongs: payload.strongs || "",
+      reference: payload.reference || currentPhrase()?.reference || "Titus 1:1",
+      clause: payload.clause || phraseGreekText(currentPhrase()),
+      surface: payload.surface || "",
+      ble: payload.ble || payload.rendering || ""
+    })
+  });
+
+  const key = linkInvestigationToWordInfo({
+    lemma: result.lemma || lemma,
+    strongs: result.strongs || payload.strongs || "",
+    investigationId: result.id,
+    approved: false,
+    rendering: payload.ble || payload.rendering || "",
+    source: result.existing ? "Existing investigation" : "New investigation"
+  });
+  if (key) state.selectedGreekKey = key;
+
+  await loadInvestigations();
+  hideGreekDecisionPanel();
+  await openInvestigation(result.id);
+  prototypeMessage.textContent = result.created
+    ? `Created ${result.id} for ${result.lemma || lemma}.`
+    : `Opened existing ${result.id} for ${result.lemma || lemma}.`;
+  return result;
+}
+
+function openNewInvestigationModal(seed = {}) {
+  if (!newInvestigationModal) return;
+  const info = greekWordInfo[state.selectedGreekKey];
+  newInvLemma.value = seed.lemma || info?.lemma || "";
+  newInvStrongs.value = seed.strongs || info?.strongs || "";
+  newInvReference.value = seed.reference || info?.reference || currentPhrase()?.reference || "Titus 1:1";
+  newInvestigationMessage.textContent = "";
+  newInvestigationModal.hidden = false;
+  newInvLemma.focus();
+  newInvLemma.select();
+}
+
+function closeNewInvestigationModal() {
+  if (!newInvestigationModal) return;
+  newInvestigationModal.hidden = true;
+  newInvestigationMessage.textContent = "";
+}
+
+async function submitNewInvestigationModal() {
+  const lemma = newInvLemma.value.trim();
+  if (!lemma) {
+    newInvestigationMessage.textContent = "Lemma is required.";
+    newInvLemma.focus();
+    return;
+  }
+  createNewInvestigationButton.disabled = true;
+  try {
+    await createInvestigationFromLemma({
+      lemma,
+      strongs: newInvStrongs.value.trim(),
+      reference: newInvReference.value.trim() || currentPhrase()?.reference || "Titus 1:1",
+      clause: phraseGreekText(currentPhrase()),
+      surface: lemma,
+      ble: ""
+    });
+    closeNewInvestigationModal();
+  } finally {
+    createNewInvestigationButton.disabled = false;
+  }
+}
+
 openInvestigationButton.addEventListener("click", () => {
   const info = greekWordInfo[state.selectedGreekKey];
-  if (info?.investigationId) {
+  if (!info) {
+    prototypeMessage.textContent = "Select a Greek word first.";
+    return;
+  }
+  if (info.investigationId) {
     void openInvestigation(info.investigationId);
     return;
   }
-
-  prototypeMessage.textContent = "No investigation has been created for this word yet.";
+  void createInvestigationFromLemma({
+    lemma: info.lemma,
+    strongs: info.strongs,
+    reference: info.reference || currentPhrase()?.reference,
+    clause: phraseGreekText(currentPhrase()),
+    surface: info.surface,
+    ble: info.rendering
+  }).catch(error => {
+    prototypeMessage.textContent = error.message || "Could not create investigation.";
+  });
 });
 
 document.addEventListener("click", event => {
@@ -1593,6 +2024,26 @@ window.addEventListener("resize", hideGreekDecisionPanel);
 
 investigationToggle.addEventListener("click", () => {
   setInvestigationListOpen(!document.body.classList.contains("investigations-open"));
+});
+
+newInvestigationButton?.addEventListener("click", () => {
+  openNewInvestigationModal();
+});
+
+cancelNewInvestigationButton?.addEventListener("click", () => {
+  closeNewInvestigationModal();
+});
+
+createNewInvestigationButton?.addEventListener("click", () => {
+  void submitNewInvestigationModal().catch(error => {
+    if (newInvestigationMessage) {
+      newInvestigationMessage.textContent = error.message || "Could not create investigation.";
+    }
+  });
+});
+
+newInvestigationModal?.addEventListener("click", event => {
+  if (event.target === newInvestigationModal) closeNewInvestigationModal();
 });
 
 gatherEvidence.addEventListener("click", () => {
@@ -1613,14 +2064,50 @@ nextPhrase.addEventListener("click", () => {
   void movePhrase(1);
 });
 
-proposeAiButton.addEventListener("click", () => {
-  void requestAiProposal({ force: true }).catch(error => {
-    prototypeMessage.textContent = error.message || "AI suggestion error.";
+analyzeGatesButton.addEventListener("click", () => {
+  void analyzeCurrentPhrase({ force: true }).catch(error => {
+    prototypeMessage.textContent = error.message || "Gate analysis error.";
   });
 });
 
-acceptAiButton.addEventListener("click", () => {
-  acceptAiProposal();
+assistGatesButton.addEventListener("click", () => {
+  void assistCurrentPhrase().catch(error => {
+    prototypeMessage.textContent = error.message || "AI assist error.";
+  });
+});
+
+acceptDraftButton.addEventListener("click", () => {
+  acceptConstrainedDraft();
+});
+
+openGateInvestigationButton.addEventListener("click", () => {
+  const id = openGateInvestigationButton.dataset.investigationId;
+  if (id) {
+    void openInvestigation(id);
+    return;
+  }
+  const lemma = openGateInvestigationButton.dataset.blockedLemma || "";
+  const strongs = openGateInvestigationButton.dataset.blockedStrongs || "";
+  if (!lemma && !strongs) {
+    void openInvestigation(state.investigation || "INV-0003");
+    return;
+  }
+  void createInvestigationFromLemma({
+    lemma: lemma || strongs,
+    strongs,
+    reference: currentPhrase()?.reference,
+    clause: phraseGreekText(currentPhrase()),
+    surface: lemma,
+    ble: ""
+  }).catch(error => {
+    prototypeMessage.textContent = error.message || "Could not create investigation.";
+  });
+});
+
+openInvestigationsMenuButton?.addEventListener("click", async () => {
+  await loadInvestigations();
+  setInvestigationListOpen(true);
+  sidebar.hidden = false;
 });
 
 runGather.addEventListener("click", () => {
@@ -1646,6 +2133,11 @@ gatherModal.addEventListener("click", event => {
 });
 
 window.addEventListener("keydown", event => {
+  if (event.key === "Escape" && newInvestigationModal && !newInvestigationModal.hidden) {
+    closeNewInvestigationModal();
+    return;
+  }
+
   if (event.key === "Escape" && !gatherModal.hidden) {
     closeGatherModal();
     return;
@@ -1685,6 +2177,7 @@ async function openInitialRoute() {
   }
 
   showTranslationView();
+  sidebar.hidden = false;
 }
 
 function readInvestigationIdFromHash() {

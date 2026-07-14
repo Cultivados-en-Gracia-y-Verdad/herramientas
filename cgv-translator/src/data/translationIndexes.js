@@ -32,7 +32,9 @@ const bookUsfxCodes = {
 };
 
 const strongsSearchPatterns = {
-  G1401: /\b(siervos?|esclavos?|mozos?|criados?|sirvientes?)\b/giu
+  G1401: /\b(siervos?|esclavos?|mozos?|criados?|sirvientes?)\b/giu,
+  G652: /\b(ap[oó]stol(?:es)?)\b/giu,
+  G4102: /\b(fe|fidelidad)\b/giu
 };
 
 const rv1862DuplicateBooks = {
@@ -512,6 +514,48 @@ export async function loadTranslationIndexes(cgvDataDir) {
   return cachedIndexes;
 }
 
+function escapeRegExp(value = "") {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+}
+
+export function normalizeFocusToken(value = "") {
+  return String(value || "")
+    .replace(/\*\*/gu, "")
+    .replace(/[•·]/gu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+/**
+ * Bold the investigated Spanish rendering(s) inside a witness verse.
+ */
+export function highlightWitnessText(text = "", focusWords = [], strongs = "") {
+  let result = String(text || "");
+  if (!result || result === "—") return result;
+
+  const terms = [...new Set(
+    (Array.isArray(focusWords) ? focusWords : [focusWords])
+      .map(normalizeFocusToken)
+      .filter(term => term && term.length > 1)
+  )].sort((left, right) => right.length - left.length);
+
+  for (const term of terms) {
+    const pattern = escapeRegExp(term).replace(/\\ /gu, "\\s+");
+    const re = new RegExp(`(?<!\\*\\*)(${pattern})(?!\\*\\*)`, "iu");
+    result = result.replace(re, "**$1**");
+  }
+
+  // Fallback: Strong's Spanish gloss pattern (covers RV when USFX focus is missing).
+  const strongsKey = String(strongs || "").trim().toUpperCase();
+  const glossPattern = strongsSearchPatterns[strongsKey];
+  if (glossPattern && !/\*\*[^*]+\*\*/u.test(result)) {
+    const flags = glossPattern.flags.includes("g") ? glossPattern.flags : `${glossPattern.flags}g`;
+    result = result.replace(new RegExp(glossPattern.source, flags), "**$1**");
+  }
+
+  return result;
+}
+
 export function resolveHistoricalRenderings(indexes, {
   book,
   chapter,
@@ -521,25 +565,41 @@ export function resolveHistoricalRenderings(indexes, {
   sourceTokenIds = []
 }) {
   const bcv = referenceToBcv(book, chapter, verse);
+  const spnbesFocus = lookupUsfxRendering(
+    indexes.spnbes.strongIndex,
+    indexes.spnbes.verseTextIndex,
+    bcv,
+    strongs,
+    occurrenceIndex
+  );
+  const spnvblFocus = lookupUsfxRendering(
+    indexes.spnvbl.strongIndex,
+    indexes.spnvbl.verseTextIndex,
+    bcv,
+    strongs,
+    occurrenceIndex
+  );
+  const rv1862Focus = lookupRvRendering(indexes.rv1862, book, chapter, verse, strongs, occurrenceIndex);
+  const rv1909Focus = lookupRvRendering(indexes.rv1909, book, chapter, verse, strongs, occurrenceIndex);
+
+  const rv1862 = lookupRvVerse(indexes.rv1862, book, chapter, verse) || rv1862Focus;
+  const rv1909 = lookupAlignedSpan(indexes.rv1909Alignment, sourceTokenIds)
+    || lookupRvVerse(indexes.rv1909, book, chapter, verse)
+    || rv1909Focus;
+  const spnbes = indexes.spnbes.verseTextIndex.get(bcv) || spnbesFocus;
+  const spnvbl = indexes.spnvbl.verseTextIndex.get(bcv) || spnvblFocus;
+
+  const focusWords = [...new Set(
+    [spnbesFocus, spnvblFocus, rv1862Focus, rv1909Focus]
+      .map(normalizeFocusToken)
+      .filter(Boolean)
+  )];
+
   return {
-    rv1862: lookupRvVerse(indexes.rv1862, book, chapter, verse)
-      || lookupRvRendering(indexes.rv1862, book, chapter, verse, strongs, occurrenceIndex),
-    rv1909: lookupAlignedSpan(indexes.rv1909Alignment, sourceTokenIds)
-      || lookupRvVerse(indexes.rv1909, book, chapter, verse)
-      || lookupRvRendering(indexes.rv1909, book, chapter, verse, strongs, occurrenceIndex),
-    spnbes: indexes.spnbes.verseTextIndex.get(bcv) || lookupUsfxRendering(
-      indexes.spnbes.strongIndex,
-      indexes.spnbes.verseTextIndex,
-      bcv,
-      strongs,
-      occurrenceIndex
-    ),
-    spnvbl: indexes.spnvbl.verseTextIndex.get(bcv) || lookupUsfxRendering(
-      indexes.spnvbl.strongIndex,
-      indexes.spnvbl.verseTextIndex,
-      bcv,
-      strongs,
-      occurrenceIndex
-    )
+    rv1862,
+    rv1909,
+    spnbes,
+    spnvbl,
+    focusWords
   };
 }

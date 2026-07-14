@@ -3,7 +3,7 @@ import { access, readFile, readdir } from "node:fs/promises";
 import { constants } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadTranslationIndexes, resolveHistoricalRenderings } from "./translationIndexes.js";
+import { loadTranslationIndexes, resolveHistoricalRenderings, highlightWitnessText, normalizeFocusToken } from "./translationIndexes.js";
 
 const rootDir = resolve(fileURLToPath(new URL("../..", import.meta.url)));
 const fallbackCgvDataPath = "../cgv-data";
@@ -41,6 +41,96 @@ const prototypeStrongMappings = {
     subject: "G4102 πίστις"
   }
 };
+
+let lemmaStrongsIndexPromise = null;
+
+async function loadLemmaStrongsIndexes() {
+  if (!lemmaStrongsIndexPromise) {
+    lemmaStrongsIndexPromise = (async () => {
+      const candidates = [
+        resolve(rootDir, "../MNA/datasets/rules/grc_lemma_strongs.json"),
+        join(cgvDataDir, "dictionaries", "grc_lemma_strongs.json"),
+        join(cgvDataDir, "lexicons", "grc_lemma_strongs.json")
+      ];
+      for (const path of candidates) {
+        const raw = await readFile(path, "utf8").catch(() => "");
+        if (!raw) continue;
+        try {
+          const data = JSON.parse(raw);
+          const lemmaToStrongs = new Map();
+          const strongsToLemma = new Map();
+          for (const [lemma, strongs] of Object.entries(data || {})) {
+            const normalized = String(strongs || "").trim().toUpperCase();
+            if (!lemma || !/^G\d+$/.test(normalized)) continue;
+            lemmaToStrongs.set(lemma, normalized);
+            if (!strongsToLemma.has(normalized)) {
+              strongsToLemma.set(normalized, lemma);
+            }
+          }
+          return { lemmaToStrongs, strongsToLemma, path };
+        } catch {
+          // try next candidate
+        }
+      }
+      return { lemmaToStrongs: new Map(), strongsToLemma: new Map(), path: "" };
+    })();
+  }
+  return lemmaStrongsIndexPromise;
+}
+
+function normalizeStrongsId(value = "") {
+  const raw = String(value || "").trim().toUpperCase();
+  if (!raw || raw === "—") return "";
+  if (/^G\d+$/.test(raw)) return raw;
+  if (/^\d+$/.test(raw)) return `G${raw}`;
+  return raw;
+}
+
+/**
+ * Resolve Strong's + lemma for occurrence gathering.
+ * Accepts either a known Strong's, a lemma hint, or both.
+ */
+export async function resolveGreekLemmaSubject({ strongs = "", lemma = "" } = {}) {
+  const normalizedStrongs = normalizeStrongsId(strongs);
+  const lemmaHint = String(lemma || "").trim();
+
+  if (normalizedStrongs && prototypeStrongMappings[normalizedStrongs]) {
+    const mapping = prototypeStrongMappings[normalizedStrongs];
+    return {
+      strongs: normalizedStrongs,
+      lemma: mapping.lemma,
+      subject: mapping.subject
+    };
+  }
+
+  const indexes = await loadLemmaStrongsIndexes();
+
+  if (normalizedStrongs) {
+    const mappedLemma = indexes.strongsToLemma.get(normalizedStrongs) || lemmaHint;
+    if (mappedLemma) {
+      return {
+        strongs: normalizedStrongs,
+        lemma: mappedLemma,
+        subject: `${normalizedStrongs} ${mappedLemma}`
+      };
+    }
+  }
+
+  if (lemmaHint) {
+    const mappedStrongs = indexes.lemmaToStrongs.get(lemmaHint) || normalizedStrongs;
+    if (mappedStrongs || lemmaHint) {
+      return {
+        strongs: mappedStrongs || "",
+        lemma: lemmaHint,
+        subject: [mappedStrongs, lemmaHint].filter(Boolean).join(" ")
+      };
+    }
+  }
+
+  throw missingGreekDataError(
+    `No Strong's/lemma mapping for ${normalizedStrongs || "blank Strong's"} ${lemmaHint || ""}`.trim()
+  );
+}
 
 const bookNames = {
   "01": "Matthew",
@@ -373,6 +463,37 @@ function takeIndexedRendering(index, key) {
   return values.shift() || "";
 }
 
+function peekIndexedRendering(index, key) {
+  const values = index.get(key);
+  if (!values || values.length === 0) return "";
+  return values[0] || "";
+}
+
+function buildHighlightedTranslations({
+  historical,
+  projectLiteralVerse,
+  projectLiteralToken,
+  bleVerse,
+  bleToken,
+  strongs = ""
+}) {
+  const focusWords = [
+    ...(historical.focusWords || []),
+    normalizeFocusToken(projectLiteralToken),
+    normalizeFocusToken(bleToken)
+  ].filter(Boolean);
+
+  return {
+    ...defaultTranslations(),
+    projectLiteral: highlightWitnessText(projectLiteralVerse || projectLiteralToken || "", focusWords, strongs),
+    ble: highlightWitnessText(bleVerse || bleToken || "", focusWords, strongs),
+    rv1862: highlightWitnessText(historical.rv1862 || "", focusWords, strongs),
+    rv1909: highlightWitnessText(historical.rv1909 || "", focusWords, strongs),
+    spnbes: highlightWitnessText(historical.spnbes || "", focusWords, strongs),
+    spnvbl: highlightWitnessText(historical.spnvbl || "", focusWords, strongs)
+  };
+}
+
 function defaultTranslations() {
   return {
     projectLiteral: "",
@@ -388,13 +509,12 @@ export function getCgvDataPath() {
   return cgvDataDir;
 }
 
-export async function getGreekOccurrencesByStrongs(strongs) {
-  const normalizedStrongs = String(strongs || "").trim().toUpperCase();
-  const mapping = prototypeStrongMappings[normalizedStrongs];
-
-  if (!mapping) {
-    throw missingGreekDataError(`No prototype mapping exists for ${normalizedStrongs || "blank Strong's value"}.`);
-  }
+export async function getGreekOccurrencesByStrongs(strongs, options = {}) {
+  const mapping = await resolveGreekLemmaSubject({
+    strongs,
+    lemma: options.lemma || ""
+  });
+  const normalizedStrongs = mapping.strongs || normalizeStrongsId(strongs);
 
   const morphDir = await findFirstExistingDir([
     join(cgvDataDir, "morphology", "MorphGNT"),
@@ -471,6 +591,11 @@ export async function getGreekOccurrencesByStrongs(strongs) {
         normalizeComparableText(row.surfaceForm)
       ].join("|");
 
+      const literalToken = peekIndexedRendering(projectLiteralEvidence.tokenIndex, literalKey);
+      const bleToken = peekIndexedRendering(bleEvidence.tokenIndex, bleKey);
+      const literalVerse = projectLiteralEvidence.verseIndex.get(verseKey) || "";
+      const bleVerse = bleEvidence.verseIndex.get(verseKey) || "";
+
       occurrences.push({
         reference: referenceParts.reference,
         book: referenceParts.book,
@@ -482,17 +607,14 @@ export async function getGreekOccurrencesByStrongs(strongs) {
         strongs: normalizedStrongs,
         morphology: formatRmac(row.partOfSpeech, row.parsing),
         greekText: formatMorphGntVerse(verseRows.get(row.verseId) || [], row),
-        translations: {
-          ...defaultTranslations(),
-          projectLiteral: projectLiteralEvidence.verseIndex.get(verseKey)
-            || takeIndexedRendering(projectLiteralEvidence.tokenIndex, literalKey),
-          ble: bleEvidence.verseIndex.get(verseKey)
-            || takeIndexedRendering(bleEvidence.tokenIndex, bleKey),
-          rv1862: historical.rv1862,
-          rv1909: historical.rv1909,
-          spnbes: historical.spnbes,
-          spnvbl: historical.spnvbl
-        },
+        translations: buildHighlightedTranslations({
+          historical,
+          projectLiteralVerse: literalVerse,
+          projectLiteralToken: literalToken,
+          bleVerse,
+          bleToken,
+          strongs: normalizedStrongs
+        }),
         source: {
           morphology: `morphology/MorphGNT/${file}`,
           greekText: `morphology/MorphGNT/${file}`,
@@ -502,7 +624,7 @@ export async function getGreekOccurrencesByStrongs(strongs) {
   }
 
   if (occurrences.length === 0) {
-    throw missingGreekDataError(`Found MorphGNT files, but no rows for ${normalizedStrongs} ${mapping.lemma}.`);
+    throw missingGreekDataError(`Found MorphGNT files, but no rows for ${mapping.subject}.`);
   }
 
   return {
@@ -525,8 +647,9 @@ export async function getGreekConstructionEvidence({
   prepositionSurface,
   caseCode
 }) {
-  const normalizedStrongs = String(strongs || "").trim().toUpperCase();
-  const targetLemma = String(lemma || prototypeStrongMappings[normalizedStrongs]?.lemma || "").trim();
+  const mapping = await resolveGreekLemmaSubject({ strongs, lemma });
+  const normalizedStrongs = mapping.strongs;
+  const targetLemma = mapping.lemma;
   const targetSurface = String(surface || "").trim();
   const targetCase = String(caseCode || "A").trim().toUpperCase();
   const prepLemma = String(prepositionLemma || "κατά").trim();
@@ -611,17 +734,14 @@ export async function getGreekConstructionEvidence({
           morphology: formatRmac(previous.partOfSpeech, previous.parsing)
         },
         sourceTokenIds: [previousSourceTokenId, selectedSourceTokenId].filter(Boolean),
-        translations: {
-          ...defaultTranslations(),
-          projectLiteral: projectLiteralEvidence.verseIndex.get(verseKey)
-            || takeIndexedRendering(projectLiteralEvidence.tokenIndex, literalKey),
-          ble: bleEvidence.verseIndex.get(verseKey)
-            || takeIndexedRendering(bleEvidence.tokenIndex, bleKey),
-          rv1862: historical.rv1862,
-          rv1909: historical.rv1909,
-          spnbes: historical.spnbes,
-          spnvbl: historical.spnvbl
-        },
+        translations: buildHighlightedTranslations({
+          historical,
+          projectLiteralVerse: projectLiteralEvidence.verseIndex.get(verseKey) || "",
+          projectLiteralToken: peekIndexedRendering(projectLiteralEvidence.tokenIndex, literalKey),
+          bleVerse: bleEvidence.verseIndex.get(verseKey) || "",
+          bleToken: peekIndexedRendering(bleEvidence.tokenIndex, bleKey),
+          strongs: normalizedStrongs
+        }),
         source: {
           morphology: `morphology/MorphGNT/${row.file}`,
           greekText: `morphology/MorphGNT/${row.file}`,
