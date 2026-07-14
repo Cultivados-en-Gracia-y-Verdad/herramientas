@@ -1,3 +1,6 @@
 # e-Sword binaries live on GitHub Releases
 output/esword/*.bblx
 output/esword/*.bbli
+
+# Cached Strong's Greek source for lexicon rebuild
+reader/.cache/

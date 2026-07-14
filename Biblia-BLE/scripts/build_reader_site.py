@@ -48,6 +48,7 @@ def build_site(dest: Path, *, clean: bool = True) -> dict[str, int]:
         "styles.css",
         "catalog.json",
         "search-index.json",
+        "strongs.json",
     ):
         src = reader_src / name
         if not src.is_file():

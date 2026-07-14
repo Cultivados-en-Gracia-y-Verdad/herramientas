@@ -23,6 +23,11 @@ const els = {
   detailStrongs: document.getElementById("detailStrongs"),
   detailLemma: document.getElementById("detailLemma"),
   detailMorph: document.getElementById("detailMorph"),
+  detailLex: document.getElementById("detailLex"),
+  detailLexEs: document.getElementById("detailLexEs"),
+  detailLexXlit: document.getElementById("detailLexXlit"),
+  detailLexDef: document.getElementById("detailLexDef"),
+  detailLexUsage: document.getElementById("detailLexUsage"),
   searchForm: document.getElementById("searchForm"),
   searchInput: document.getElementById("searchInput"),
   searchScope: document.getElementById("searchScope"),
@@ -46,6 +51,8 @@ let bookAliases = []; // longest-first: {alias, t, slug}
 let activeTokenEl = null;
 let searchIndex = null;
 let searchIndexPromise = null;
+let strongsLex = null;
+let strongsLexPromise = null;
 let pendingHighlight = null;
 let pendingVerse = null;
 let suppressHashPush = false;
@@ -141,6 +148,73 @@ function metaLines(token) {
   return lines;
 }
 
+function normalizeStrongsKey(code) {
+  const raw = String(code || "").trim().toUpperCase().replace(/\s+/g, "");
+  if (!raw) return "";
+  if (/^[HG]\d+[A-Z]?$/.test(raw)) return raw;
+  if (/^\d+[A-Z]?$/.test(raw)) return raw;
+  return raw;
+}
+
+function lookupStrongs(code) {
+  if (!strongsLex) return null;
+  const key = normalizeStrongsKey(code);
+  if (!key) return null;
+  if (strongsLex[key]) return strongsLex[key];
+  // H1004A → try H1004
+  const m = /^([HG]\d+)([A-Z])$/.exec(key);
+  if (m && strongsLex[m[1]]) return strongsLex[m[1]];
+  return null;
+}
+
+async function ensureStrongsLex() {
+  if (strongsLex) return strongsLex;
+  if (strongsLexPromise) return strongsLexPromise;
+  strongsLexPromise = (async () => {
+    const res = await fetch("strongs.json");
+    if (!res.ok) throw new Error(`strongs.json HTTP ${res.status}`);
+    const data = await res.json();
+    strongsLex = data.entries || data;
+    return strongsLex;
+  })();
+  try {
+    return await strongsLexPromise;
+  } catch (err) {
+    strongsLexPromise = null;
+    throw err;
+  }
+}
+
+function setHidden(el, hidden) {
+  el.hidden = Boolean(hidden);
+}
+
+function renderLexEntry(entry) {
+  if (!entry) {
+    setHidden(els.detailLex, true);
+    els.detailLexDef.textContent = "";
+    els.detailLexEs.textContent = "";
+    els.detailLexXlit.textContent = "";
+    els.detailLexUsage.textContent = "";
+    return;
+  }
+  setHidden(els.detailLex, false);
+
+  const es = entry.es || "";
+  setHidden(els.detailLexEs, !es);
+  els.detailLexEs.textContent = es;
+
+  const xlit = entry.xlit || entry.pron || "";
+  setHidden(els.detailLexXlit, !xlit);
+  els.detailLexXlit.textContent = xlit;
+
+  els.detailLexDef.textContent = entry.def || "Sin definición disponible.";
+
+  const usage = entry.usage || "";
+  setHidden(els.detailLexUsage, !usage);
+  els.detailLexUsage.textContent = usage;
+}
+
 function openDetail(token, tokenEl) {
   if (activeTokenEl) activeTokenEl.classList.remove("active");
   activeTokenEl = tokenEl;
@@ -151,12 +225,44 @@ function openDetail(token, tokenEl) {
   els.detailStrongs.textContent = token.strongs || "—";
   els.detailLemma.textContent = token.lemma || "—";
   els.detailMorph.textContent = token.morph || "—";
+
+  const cached = lookupStrongs(token.strongs);
+  if (cached) {
+    renderLexEntry(cached);
+    return;
+  }
+  if (!token.strongs) {
+    renderLexEntry(null);
+    return;
+  }
+
+  // Show panel while lexicon loads (lazy, once).
+  setHidden(els.detailLex, false);
+  setHidden(els.detailLexEs, true);
+  setHidden(els.detailLexXlit, true);
+  setHidden(els.detailLexUsage, true);
+  els.detailLexDef.textContent = "Cargando definición…";
+
+  const requested = token.strongs;
+  ensureStrongsLex()
+    .then(() => {
+      // Ignore stale loads if user clicked another word.
+      if (els.detailStrongs.textContent !== (requested || "—")) return;
+      renderLexEntry(lookupStrongs(requested));
+    })
+    .catch(() => {
+      if (els.detailStrongs.textContent !== (requested || "—")) return;
+      renderLexEntry(null);
+      setHidden(els.detailLex, false);
+      els.detailLexDef.textContent = "No se pudo cargar el léxico Strong's.";
+    });
 }
 
 function closeDetail() {
   els.detail.hidden = true;
   if (activeTokenEl) activeTokenEl.classList.remove("active");
   activeTokenEl = null;
+  renderLexEntry(null);
 }
 
 function normalizeText(s) {
