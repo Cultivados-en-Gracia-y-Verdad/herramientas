@@ -14,6 +14,7 @@ let controllerState = {
 let songs = [];
 let backgrounds = [];
 let selectedSongId = null;
+let previewStep = 0;
 let editingSongId = null;
 let selectedLibrary = "all";
 const ROOT_SONG_LIBRARY_KEY = "__root__";
@@ -213,12 +214,92 @@ function clearLive() {
   socket.emit("controller-clear");
 }
 
+function isControllerFullscreen() {
+  return !!(
+    document.fullscreenElement ||
+    document.webkitFullscreenElement ||
+    document.body.classList.contains("controller-fullscreen")
+  );
+}
+
+function syncFullscreenButton() {
+  const button = byId("fullscreenButton");
+  if (!button) return;
+  const active = isControllerFullscreen();
+  const label = active ? t("exitFullscreen") : t("fullscreen");
+  button.setAttribute("aria-label", label);
+  button.setAttribute("title", label);
+  button.classList.toggle("active", active);
+}
+
+function syncToolbarInset() {
+  const toolbar = document.querySelector(".live-toolbar");
+  if (!toolbar) return;
+  const height = Math.ceil(toolbar.getBoundingClientRect().height || 92);
+  document.documentElement.style.setProperty("--controller-toolbar-height", `${height}px`);
+}
+
+function setControllerFullscreenClass(active) {
+  document.body.classList.toggle("controller-fullscreen", active);
+  syncFullscreenButton();
+  syncToolbarInset();
+  const previewCard = document.querySelector(".preview-card");
+  if (previewCard) previewCard.scrollTop = 0;
+  const thumbs = byId("songThumbnails");
+  if (thumbs) thumbs.scrollLeft = 0;
+  requestAnimationFrame(() => {
+    syncToolbarInset();
+    const preview = byId("controllerPreview");
+    if (preview?.classList.contains("song-output") && !preview.classList.contains("blank-output")) {
+      fitPreviewSongText(preview);
+    }
+  });
+}
+
+async function enterControllerFullscreen() {
+  const target = document.documentElement;
+  try {
+    if (target.requestFullscreen) {
+      await target.requestFullscreen();
+    } else if (target.webkitRequestFullscreen) {
+      target.webkitRequestFullscreen();
+    }
+  } catch {
+    // iOS Safari often blocks native fullscreen outside installed PWAs.
+  }
+  setControllerFullscreenClass(true);
+}
+
+async function exitControllerFullscreen() {
+  try {
+    if (document.exitFullscreen && document.fullscreenElement) {
+      await document.exitFullscreen();
+    } else if (document.webkitExitFullscreen && document.webkitFullscreenElement) {
+      document.webkitExitFullscreen();
+    }
+  } catch {
+    // Keep CSS fallback below.
+  }
+  setControllerFullscreenClass(false);
+}
+
+async function toggleControllerFullscreen() {
+  if (isControllerFullscreen()) {
+    await exitControllerFullscreen();
+  } else {
+    await enterControllerFullscreen();
+  }
+}
+
 function blankLive() {
   socket.emit("controller-blank", {
     background: byId("backgroundColor").value,
     backgroundMedia: byId("backgroundMedia").value.trim(),
     textColor: byId("textColor").value,
-    accentColor: byId("accentColor").value
+    accentColor: byId("accentColor").value,
+    // Use the background just chosen in the controller (digit key / gallery tap),
+    // not a separate settings default that would ignore that choice.
+    useConfiguredBlankMedia: false
   });
 }
 
@@ -311,6 +392,15 @@ function isEditingText(event) {
   return tagName === "input" || tagName === "textarea" || tagName === "select" || event.target?.isContentEditable;
 }
 
+function isSongSearchTarget(event) {
+  return event.target?.id === "songSearch";
+}
+
+/** True when shortcuts should stay out of the way (song editor, GitHub form, etc.). Search is exempt so Esc/Enter still drive the stage. */
+function shouldIgnorePresentationShortcut(event) {
+  return isEditingText(event) && !isSongSearchTarget(event);
+}
+
 async function saveCurrentSong() {
   const title = byId("songTitle").value.trim() || t("untitledSong");
   const lyrics = byId("songLyrics").value.trim();
@@ -395,15 +485,13 @@ function renderSongList() {
 }
 
 function getVisibleSongs() {
-  const query = byId("songSearch").value.trim().toLowerCase();
+  const query = byId("songSearch").value;
   const librarySongs = selectedLibrary === "all"
     ? songs
     : songs.filter(song => getSongLibraryKey(song) === selectedLibrary);
 
-  return query
-    ? librarySongs.filter(song =>
-        `${song.file}\n${song.title}\n${song.lyrics}`.toLowerCase().includes(query)
-      )
+  return query.trim()
+    ? librarySongs.filter(song => songMatchesQuery(song, query))
     : librarySongs;
 }
 
@@ -484,15 +572,19 @@ function renderSongBackgroundSelect(selectedUrl = byId("songBackgroundMedia")?.v
   select.value = selectedUrl;
 }
 
-function selectBackground(url) {
+function selectBackground(url, { goBlank = false } = {}) {
   byId("backgroundMedia").value = url || "";
   renderBackgroundGallery();
   renderPreview();
+  if (goBlank) {
+    blankLive();
+    return;
+  }
   applyStyle();
 }
 
 function getBackgroundShortcutIndex(event) {
-  if (isEditingText(event)) return -1;
+  if (shouldIgnorePresentationShortcut(event)) return -1;
   if (event.altKey || event.ctrlKey || event.metaKey) return -1;
 
   const digitMatch = event.code?.match(/^(?:Digit|Numpad)(\d)$/);
@@ -516,50 +608,130 @@ function renderPreview() {
   const preview = byId("controllerPreview");
   const status = byId("liveStatus");
   const selectedSong = getSelectedSong();
-  const media = controllerState.active
+  const isLive = !!controllerState.active;
+  const showBlank = isLive && !!controllerState.blank;
+  const media = isLive
     ? controllerState.backgroundMedia || ""
     : selectedSong?.backgroundMedia || byId("backgroundMedia").value.trim();
-  const previewSections = controllerState.active
-    && !controllerState.blank
+  const previewSections = isLive && !showBlank
     ? controllerState.sections || []
     : selectedSong
       ? parseSections(selectedSong.lyrics)
       : [];
-  const activeIndex = controllerState.active ? controllerState.step : 0;
-  const activeSection = previewSections[activeIndex] || [];
 
-  preview.style.setProperty("--preview-background", byId("backgroundColor").value);
-  preview.style.setProperty("--preview-color", byId("textColor").value);
-  preview.style.setProperty("--preview-accent", byId("accentColor").value);
-  preview.style.setProperty("--preview-media", media && !isVideoMedia(media)
-    ? `url("${media.replace(/"/g, '\\"')}")`
-    : "none");
-  preview.classList.toggle("has-media", !!media && !isVideoMedia(media));
-  preview.classList.toggle("teaching-mode", !controllerState.active);
-  preview.innerHTML = controllerState.active
-    ? controllerState.blank
-      ? `<div class="teaching-mode-preview"><strong>${t("blankScreenPreview")}</strong><span>${t("projectorBlank")}</span></div>`
-      : `
-      ${media && isVideoMedia(media) ? `<video class="preview-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
-      <div class="preview-lines">
-        ${activeSection.map(line => `<div>${escapeHtml(line)}</div>`).join("")}
-      </div>
-    `
-    : `
+  if (previewStep >= previewSections.length) {
+    previewStep = Math.max(0, previewSections.length - 1);
+  }
+
+  const activeIndex = isLive ? controllerState.step : previewStep;
+  const activeSection = previewSections[activeIndex] || [];
+  const title = isLive
+    ? controllerState.title || ""
+    : selectedSong?.title || "";
+  const showSongStage = showBlank || previewSections.length > 0;
+  const background = isLive
+    ? controllerState.background || byId("backgroundColor").value
+    : byId("backgroundColor").value;
+  const textColor = isLive
+    ? controllerState.textColor || byId("textColor").value
+    : byId("textColor").value;
+  const accentColor = isLive
+    ? controllerState.accentColor || byId("accentColor").value
+    : byId("accentColor").value;
+
+  preview.style.setProperty("--song-background", background);
+  preview.style.setProperty("--song-color", textColor);
+  preview.style.setProperty("--song-accent", accentColor);
+  preview.classList.toggle("has-media", !!media && !isVideoMedia(media) && !showBlank);
+  preview.classList.toggle("has-video", !!media && isVideoMedia(media) && !showBlank);
+  preview.classList.toggle("blank-output", showBlank);
+  preview.classList.toggle("teaching-mode", !showSongStage);
+  preview.classList.toggle("song-output", showSongStage);
+
+  if (!showSongStage) {
+    preview.innerHTML = `
       <div class="teaching-mode-preview">
         <strong>${t("teachingMode")}</strong>
         <span>${t("teacherHasProjector")}</span>
       </div>
     `;
+  } else if (showBlank) {
+    preview.innerHTML = `
+      ${media && !isVideoMedia(media) ? `<div class="song-background-image" style="background-image: url('${escapeHtml(media).replace(/'/g, "&#39;")}')"></div>` : ""}
+      ${media && isVideoMedia(media) ? `<video class="song-background-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
+    `;
+  } else {
+    preview.innerHTML = `
+      ${media && !isVideoMedia(media) ? `<div class="song-background-image" style="background-image: url('${escapeHtml(media).replace(/'/g, "&#39;")}')"></div>` : ""}
+      ${media && isVideoMedia(media) ? `<video class="song-background-video" src="${escapeHtml(media)}" autoplay muted loop playsinline></video>` : ""}
+      ${title ? `<div class="song-output-title">${escapeHtml(title)}</div>` : ""}
+      <div class="song-output-inner">
+        <div class="song-output-lines">
+          ${activeSection.map(line => `<div class="song-output-line">${escapeHtml(line)}</div>`).join("")}
+        </div>
+      </div>
+    `;
+    fitPreviewSongText(preview);
+  }
 
   renderThumbnails(previewSections, activeIndex, controllerState.sectionLabels || selectedSong?.sectionLabels || []);
 
-  status.textContent = controllerState.active
-    ? controllerState.blank
+  status.textContent = isLive
+    ? showBlank
       ? t("projectorBlankScreen")
       : t("projectorSong", { title: controllerState.title, current: controllerState.step + 1, total: controllerState.sections.length })
     : t("projectorTeachingMode");
-  status.classList.toggle("active", controllerState.active);
+  status.classList.toggle("active", isLive);
+}
+
+/** Same fit rules as projector fitSongOutputText, scaled to the 16:9 preview box. */
+function fitPreviewSongText(element) {
+  if (!element) return;
+
+  const lines = element.querySelector(".song-output-lines");
+  if (!lines) return;
+
+  element.classList.remove("song-allow-wrap");
+
+  const width = element.clientWidth;
+  const height = element.clientHeight;
+  if (width < 2 || height < 2) {
+    requestAnimationFrame(() => fitPreviewSongText(element));
+    return;
+  }
+
+  const scale = width / 1920;
+  const baseSize = Math.max(28, 168 * scale);
+  const hardMinSize = Math.max(18, 58 * scale);
+  const maxWidth = Math.max(40, width * 0.84);
+  const maxHeight = Math.max(40, height * 0.78);
+  const step = Math.max(0.5, 2 * scale);
+  let size = baseSize;
+
+  element.style.setProperty("--fit-size", `${size}px`);
+
+  requestAnimationFrame(() => {
+    const isOverflowing = () => {
+      const widestLine = [...element.querySelectorAll(".song-output-line")]
+        .reduce((widest, line) => Math.max(widest, line.scrollWidth, line.getBoundingClientRect().width), 0);
+
+      return (
+        widestLine > maxWidth ||
+        lines.scrollWidth > maxWidth ||
+        lines.scrollHeight > maxHeight ||
+        lines.getBoundingClientRect().height > maxHeight
+      );
+    };
+
+    while (size > hardMinSize && isOverflowing()) {
+      size -= step;
+      element.style.setProperty("--fit-size", `${size}px`);
+    }
+
+    if (isOverflowing()) {
+      element.classList.add("song-allow-wrap");
+    }
+  });
 }
 
 function renderThumbnails(sections, activeIndex, labels = []) {
@@ -572,7 +744,7 @@ function renderThumbnails(sections, activeIndex, labels = []) {
   }
 
   thumbnailHost.innerHTML = sections.map((section, index) => {
-    const active = controllerState.active && index === activeIndex ? " active" : "";
+    const active = index === activeIndex ? " active" : "";
     const firstLine = section[0] || `${t("screen")} ${index + 1}`;
     const label = labels[index] || `${t("screen")} ${index + 1}`;
     return `
@@ -582,6 +754,19 @@ function renderThumbnails(sections, activeIndex, labels = []) {
       </button>
     `;
   }).join("");
+
+  const activeThumbnail = thumbnailHost.querySelector(".song-thumbnail.active");
+  if (activeThumbnail) {
+    const hostLeft = thumbnailHost.scrollLeft;
+    const hostRight = hostLeft + thumbnailHost.clientWidth;
+    const thumbLeft = activeThumbnail.offsetLeft;
+    const thumbRight = thumbLeft + activeThumbnail.offsetWidth;
+    if (thumbLeft < hostLeft) {
+      thumbnailHost.scrollLeft = thumbLeft - 8;
+    } else if (thumbRight > hostRight) {
+      thumbnailHost.scrollLeft = thumbRight - thumbnailHost.clientWidth + 8;
+    }
+  }
 }
 
 function hydrateColorsFromState() {
@@ -611,9 +796,18 @@ byId("songList").addEventListener("click", event => {
     return;
   }
 
+  // Device stand-in for Enter: tap the already-selected song again to go live.
+  if (songId === selectedSongId) {
+    byId("songSearch")?.blur();
+    sendLive();
+    return;
+  }
+
   selectedSongId = songId;
+  previewStep = 0;
   renderSongList();
   renderPreview();
+  byId("songSearch")?.blur();
 });
 
 byId("songList").addEventListener("dblclick", event => {
@@ -621,17 +815,25 @@ byId("songList").addEventListener("dblclick", event => {
   if (!songItem || event.target.closest(".song-edit")) return;
 
   selectedSongId = songItem.dataset.songId;
+  previewStep = 0;
   renderSongList();
   renderPreview();
+  byId("songSearch")?.blur();
   sendLive();
 });
 
 byId("songThumbnails").addEventListener("click", event => {
   const thumbnail = event.target.closest("[data-screen-index]");
-  if (!thumbnail || !controllerState.active) return;
+  if (!thumbnail) return;
 
   const targetIndex = Number(thumbnail.dataset.screenIndex);
   if (!Number.isInteger(targetIndex)) return;
+
+  if (!controllerState.active) {
+    previewStep = targetIndex;
+    renderPreview();
+    return;
+  }
 
   const currentIndex = controllerState.step;
   if (targetIndex === currentIndex) return;
@@ -680,14 +882,18 @@ byId("songBackgroundFile").addEventListener("change", async event => {
 byId("goLiveButton").addEventListener("click", sendLive);
 byId("clearButton").addEventListener("click", clearLive);
 byId("blankButton").addEventListener("click", blankLive);
+byId("fullscreenButton").addEventListener("click", toggleControllerFullscreen);
 byId("nextButton").addEventListener("click", nextSection);
 byId("previousButton").addEventListener("click", previousSection);
 byId("applyStyleButton").addEventListener("click", applyStyle);
 byId("songSearch").addEventListener("input", renderSongList);
 byId("songLibraryFilter").addEventListener("change", event => {
   selectedLibrary = event.target.value || "all";
-  byId("songSearch").value = "";
-  selectedSongId = getVisibleSongs()[0]?.id || null;
+  const visibleSongs = getVisibleSongs();
+  if (!visibleSongs.some(song => song.id === selectedSongId)) {
+    selectedSongId = visibleSongs[0]?.id || null;
+    previewStep = 0;
+  }
   renderSongList();
   renderPreview();
 });
@@ -698,7 +904,8 @@ byId("toggleBackgroundButton").addEventListener("click", () => {
 byId("backgroundGallery").addEventListener("click", event => {
   const choice = event.target.closest("[data-background-url]");
   if (!choice) return;
-  selectBackground(choice.dataset.backgroundUrl || "");
+  // Device stand-in for digit + Esc: one tap selects the background and blanks live.
+  selectBackground(choice.dataset.backgroundUrl || "", { goBlank: true });
 });
 byId("clearBackgroundButton").addEventListener("click", () => selectBackground(""));
 byId("backgroundColor").addEventListener("input", renderPreview);
@@ -708,11 +915,19 @@ byId("downloadSongsToggle").addEventListener("click", toggleGithubSongForm);
 byId("downloadSongsForm").addEventListener("submit", downloadSongsFromGithub);
 
 window.addEventListener("keydown", event => {
-  if (isEditingText(event)) return;
+  // Song search stays focused for typing, but Esc/Enter must still control the stage.
+  if (shouldIgnorePresentationShortcut(event)) return;
   if (selectBackgroundFromShortcut(event)) return;
+
+  const inSongSearch = isSongSearchTarget(event);
 
   if (event.key === "Escape") {
     event.preventDefault();
+    if (inSongSearch && byId("songSearch").value) {
+      byId("songSearch").value = "";
+      renderSongList();
+      return;
+    }
     blankLive();
     return;
   }
@@ -722,6 +937,9 @@ window.addEventListener("keydown", event => {
     sendLive();
     return;
   }
+
+  // Leave arrow/space behavior to the search caret/typing while filtering.
+  if (inSongSearch) return;
 
   if (event.key === "ArrowRight" || event.key === " ") {
     event.preventDefault();
@@ -742,3 +960,26 @@ window.CGVI18N.loadLanguage().then(() => {
   loadSongs();
   loadBackgrounds();
 });
+
+const previewStage = document.querySelector(".preview-stage");
+if (previewStage && typeof ResizeObserver !== "undefined") {
+  let resizeFitTimer = 0;
+  new ResizeObserver(() => {
+    window.clearTimeout(resizeFitTimer);
+    resizeFitTimer = window.setTimeout(() => {
+      const preview = byId("controllerPreview");
+      if (preview?.classList.contains("song-output") && !preview.classList.contains("blank-output")) {
+        fitPreviewSongText(preview);
+      }
+    }, 50);
+  }).observe(previewStage);
+}
+
+document.addEventListener("fullscreenchange", () => {
+  setControllerFullscreenClass(!!document.fullscreenElement);
+});
+document.addEventListener("webkitfullscreenchange", () => {
+  setControllerFullscreenClass(!!document.webkitFullscreenElement);
+});
+window.addEventListener("resize", syncToolbarInset);
+syncToolbarInset();

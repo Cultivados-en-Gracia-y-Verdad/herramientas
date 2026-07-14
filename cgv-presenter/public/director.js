@@ -194,9 +194,9 @@ function showSongListScreen() {
 
 function renderSongList() {
   const list = byId("songList");
-  const query = byId("songSearch").value.trim().toLowerCase();
-  const visibleSongs = query
-    ? songs.filter(song => `${song.file}\n${song.title}\n${song.lyrics}`.toLowerCase().includes(query))
+  const query = byId("songSearch").value;
+  const visibleSongs = query.trim()
+    ? songs.filter(song => songMatchesQuery(song, query))
     : songs;
 
   let previousLibrary = "";

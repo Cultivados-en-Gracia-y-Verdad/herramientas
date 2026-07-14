@@ -3193,7 +3193,8 @@ function listFilesRecursive(root, matcher) {
 }
 
 function loadSongLibrary() {
-  const songsByIdentity = new Map();
+  // Key by relative file path so numbered/folder copies with the same title all remain searchable.
+  const songsByFile = new Map();
   const songsDir = getSongsDir();
 
   [...bundledSongRoots, songsDir].forEach(root => {
@@ -3207,29 +3208,15 @@ function loadSongLibrary() {
           file.absolutePath,
           file.relativePath
         );
-        const identity = normalizeSongIdentity(song);
 
         if (song.sections.length) {
-          songsByIdentity.set(identity, song);
+          songsByFile.set(file.relativePath, song);
         }
       });
   });
 
-  return [...songsByIdentity.values()]
+  return [...songsByFile.values()]
     .sort((a, b) => a.file.localeCompare(b.file, undefined, { numeric: true }));
-}
-
-function normalizeSongIdentity(song) {
-  const label = song.title || path.basename(song.file || "", path.extname(song.file || ""));
-
-  return label
-    .trim()
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/^\d+[\s._-]+/, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 }
 
 function loadBackgroundLibrary() {

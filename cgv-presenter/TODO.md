@@ -25,7 +25,9 @@ Backlog for the `cgv-presenter` app. Current release: **1.1.16**.
 
 ## Controller & songs
 
-- [ ] **Song library UX** — Library filter fixed in 1.1.14; review edge cases (nested folders, empty libraries, search + filter together).
+- [x] **Song search** — Accent-insensitive match (`senor` → señor), keep numbered/folder copies (no title-only dedupe), keep search query when changing library filter.
+- [x] **Device / Esc+Enter** — Esc (blank) and Enter (send live) work even while song search is focused; selecting a song blurs search so arrows work. On phones: tap song twice = Enter; tap a background = digit+Esc; Blank/Send Live stay fixed at the bottom.
+- [ ] **Song library UX** — Review remaining edge cases (nested folders, empty libraries).
 - [ ] **Song repository config** — Allow per-library defaults or clearer UI when multiple GitHub song folders are in use.
 
 ## Bible references
