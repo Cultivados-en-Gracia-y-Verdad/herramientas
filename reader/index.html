@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BLE Interlinear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Noto+Serif+Hebrew:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        <p class="brand-name">BLE</p>
+        <p class="brand-sub">Interlinear · palabra por palabra</p>
+      </div>
+      <nav class="nav" aria-label="Navegación">
+        <label class="field">
+          <span>Testamento</span>
+          <select id="testament"></select>
+        </label>
+        <label class="field">
+          <span>Libro</span>
+          <select id="book"></select>
+        </label>
+        <label class="field">
+          <span>Capítulo</span>
+          <select id="chapter"></select>
+        </label>
+        <div class="nav-buttons">
+          <button type="button" id="prev" aria-label="Capítulo anterior">←</button>
+          <button type="button" id="next" aria-label="Capítulo siguiente">→</button>
+        </div>
+      </nav>
+      <form class="search" id="searchForm" role="search">
+        <label class="field search-query">
+          <span>Buscar</span>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder='en principio · "los cielos" · HVqp3ms · H430'
+            autocomplete="off"
+            enterkeyhint="search"
+          />
+        </label>
+        <label class="field">
+          <span>Ámbito</span>
+          <select id="searchScope">
+            <option value="book">Libro actual</option>
+            <option value="testament">Testamento</option>
+            <option value="all" selected>Toda la Biblia</option>
+          </select>
+        </label>
+        <button type="submit" class="search-btn" id="searchBtn">Buscar</button>
+        <button type="button" class="search-btn secondary" id="searchClear" hidden>Limpiar</button>
+      </form>
+      <div class="toggles">
+        <label class="check"><input type="checkbox" id="searchEs" checked /> Español</label>
+        <label class="check"><input type="checkbox" id="searchStrongs" checked /> Strong's</label>
+        <label class="check"><input type="checkbox" id="searchMorph" /> Morph</label>
+        <label class="check"><input type="checkbox" id="searchSurface" /> Original</label>
+        <span class="toggle-sep" aria-hidden="true"></span>
+        <label class="check"><input type="checkbox" id="showMorph" /> Morph</label>
+        <label class="check"><input type="checkbox" id="showStrongs" checked /> Strong's</label>
+        <label class="check"><input type="checkbox" id="showLemma" /> Lemma</label>
+      </div>
+    </header>
+
+    <section id="searchPanel" class="search-panel" hidden>
+      <div class="search-panel-head">
+        <h2 id="searchHeading">Resultados</h2>
+        <button type="button" class="text-btn" id="searchClose">Volver al capítulo</button>
+      </div>
+      <p id="searchMeta" class="search-meta"></p>
+      <div id="searchResults" class="search-results"></div>
+    </section>
+
+    <main class="main" id="readerMain">
+      <h1 id="heading">Cargando…</h1>
+      <p id="status" class="status" hidden></p>
+      <div id="verses" class="verses"></div>
+    </main>
+
+    <aside id="detail" class="detail" hidden>
+      <button type="button" class="detail-close" id="detailClose" aria-label="Cerrar">×</button>
+      <p class="detail-surface" id="detailSurface"></p>
+      <p class="detail-es" id="detailEs"></p>
+      <dl class="detail-meta">
+        <div><dt>Strong's</dt><dd id="detailStrongs"></dd></div>
+        <div><dt>Lemma</dt><dd id="detailLemma"></dd></div>
+        <div><dt>Morph</dt><dd id="detailMorph"></dd></div>
+      </dl>
+    </aside>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
