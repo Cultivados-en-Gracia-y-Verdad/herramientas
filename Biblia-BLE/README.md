@@ -60,6 +60,8 @@ python3 scripts/tokens_to_interlinear_txt.py mateo       # compact .interlinear.
 python3 scripts/build_reader_catalog.py   # catalog.json + search-index.json
 python3 -m http.server 8765
 # → http://localhost:8765/reader/
+# Public: https://www.discipuladocgv.org/ble/reader/
+# e-Sword: https://www.discipuladocgv.org/ble/descargas/  (also GitHub release ble-1.0)
 # Search: español phrases ("los cielos"), Strong's, morphology (HVqp3ms), original text
 # Scope: current book, testament, or whole Bible
 # Refs: "1 Reyes 8:27", "2 Juan"
