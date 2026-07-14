@@ -7,8 +7,49 @@ from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
 
-# Standard Protestant e-Sword book numbers (Matthew = 40 … Revelation = 66).
+
+# Standard Protestant e-Sword book numbers (Genesis = 1 … Malachi = 39,
+# Matthew = 40 … Revelation = 66).
 ESWORD_BOOK_ID: dict[str, int] = {
+    "genesis": 1,
+    "exodo": 2,
+    "levitico": 3,
+    "numeros": 4,
+    "deuteronomio": 5,
+    "josue": 6,
+    "jueces": 7,
+    "rut": 8,
+    "1samuel": 9,
+    "2samuel": 10,
+    "1reyes": 11,
+    "2reyes": 12,
+    "1cronicas": 13,
+    "2cronicas": 14,
+    "esdras": 15,
+    "nehemias": 16,
+    "ester": 17,
+    "job": 18,
+    "salmos": 19,
+    "proverbios": 20,
+    "eclesiastes": 21,
+    "cantares": 22,
+    "isaias": 23,
+    "jeremias": 24,
+    "lamentaciones": 25,
+    "ezequiel": 26,
+    "daniel": 27,
+    "oseas": 28,
+    "joel": 29,
+    "amos": 30,
+    "abdias": 31,
+    "jonas": 32,
+    "miqueas": 33,
+    "nahum": 34,
+    "habacuc": 35,
+    "sofonias": 36,
+    "hageo": 37,
+    "zacarias": 38,
+    "malaquias": 39,
     "mateo": 40,
     "marcos": 41,
     "lucas": 42,
@@ -38,12 +79,13 @@ ESWORD_BOOK_ID: dict[str, int] = {
     "apocalipsis": 66,
 }
 
-MODULE_TITLE = "Biblia Literal en Español (Nuevo Testamento)"
+MODULE_TITLE = "Biblia Literal en Español"
 MODULE_ABBREV = "BLE"
 MODULE_INFO = (
     "<p><b>BLE</b> — Biblia Literal en Español.</p>"
-    "<p>Traducción formal palabra por palabra del Nuevo Testamento griego. "
-    "Generado desde MNA/BLE.</p>"
+    "<p>Traducción formal palabra por palabra del hebreo y el griego. "
+    "Interlinear de estudio; no es una paráfrasis fluida.</p>"
+    "<p>Generado desde MNA/BLE (Cultivados en Gracia y Verdad).</p>"
 )
 
 
@@ -124,17 +166,23 @@ def escape_html(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def details_row(spec: EswordModuleSpec) -> tuple:
+def details_row(
+    spec: EswordModuleSpec,
+    *,
+    include_ot: bool,
+    include_nt: bool,
+) -> tuple:
+    # RTL off: BLE Scripture column is Spanish gloss text, not Hebrew script.
     if spec.platform is EswordPlatform.WINDOWS:
         return (
             MODULE_TITLE,
             MODULE_ABBREV,
             MODULE_INFO,
-            4,
+            5,
             "DEFAULT",
             0,
-            0,
-            1,
+            1 if include_ot else 0,
+            1 if include_nt else 0,
             0,
             0,
         )
@@ -142,9 +190,9 @@ def details_row(spec: EswordModuleSpec) -> tuple:
         MODULE_TITLE,
         MODULE_ABBREV,
         MODULE_INFO,
-        4,
-        0,
-        1,
+        5,
+        1 if include_ot else 0,
+        1 if include_nt else 0,
         0,
         0,
         0,
@@ -155,6 +203,9 @@ def write_module(
     dest: Path,
     verses: list[tuple[int, int, int, str]],
     spec: EswordModuleSpec,
+    *,
+    include_ot: bool = True,
+    include_nt: bool = True,
 ) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     if dest.exists():
@@ -164,7 +215,10 @@ def write_module(
     try:
         cur = conn.cursor()
         cur.execute(spec.details_sql)
-        cur.execute(spec.details_insert_sql, details_row(spec))
+        cur.execute(
+            spec.details_insert_sql,
+            details_row(spec, include_ot=include_ot, include_nt=include_nt),
+        )
         cur.execute(BIBLE_SQL)
         cur.executemany(
             "INSERT INTO Bible (Book, Chapter, Verse, Scripture) VALUES (?, ?, ?, ?)",
@@ -188,5 +242,14 @@ def read_bible_rows(path: Path) -> list[tuple[int, int, int, str]]:
 
 def convert_bblx_to_bbli(source: Path, dest: Path) -> int:
     verses = read_bible_rows(source)
-    write_module(dest, verses, MAC_SPEC)
+    book_ids = {b for b, _, _, _ in verses}
+    include_ot = any(b <= 39 for b in book_ids)
+    include_nt = any(b >= 40 for b in book_ids)
+    write_module(
+        dest,
+        verses,
+        MAC_SPEC,
+        include_ot=include_ot,
+        include_nt=include_nt,
+    )
     return len(verses)

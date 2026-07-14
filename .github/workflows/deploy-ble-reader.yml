@@ -1,0 +1,60 @@
+# Deploy BLE interlinear reader to GitHub Pages.
+name: Deploy BLE reader
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "Biblia-BLE/reader/**"
+      - "Biblia-BLE/output/interlinear/**"
+      - "Biblia-BLE/scripts/build_reader_catalog.py"
+      - "Biblia-BLE/scripts/build_reader_site.py"
+      - "Biblia-BLE/scripts/tokens_to_interlinear_txt.py"
+      - "Biblia-BLE/scripts/export_interlinear.py"
+      - ".github/workflows/deploy-ble-reader.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-ble-reader
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Export interlinear + catalog
+        working-directory: Biblia-BLE
+        run: |
+          python3 scripts/tokens_to_interlinear_txt.py --all --testament ot
+          python3 scripts/tokens_to_interlinear_txt.py --all --testament nt
+          python3 scripts/build_reader_catalog.py
+          python3 scripts/build_reader_site.py --dest site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: Biblia-BLE/site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

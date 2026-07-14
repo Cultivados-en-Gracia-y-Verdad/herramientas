@@ -4,6 +4,12 @@ import json
 from collections import Counter, defaultdict
 import argparse
 import subprocess
+import sys
+
+# Allow importing sibling helpers when run as a script
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from hbo_enrich_gloss import enrich_gloss  # noqa: E402
+
 
 def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
@@ -20,7 +26,14 @@ def read_jsonl(path: Path):
             raise SystemExit(f"{path}:{i}: invalid JSON: {e}")
     return rows
 
-def apply_rules(book: str, tokens_path: Path, rules_dir: Path, overrides_path: Path | None):
+def apply_rules(
+    book: str,
+    tokens_path: Path,
+    rules_dir: Path,
+    overrides_path: Path | None,
+    *,
+    force: bool = False,
+):
     lemma_defaults   = load(rules_dir / "hbo_lemma_defaults.json")
     lemma_lexicon    = load(rules_dir / "hbo_lemma_lexicon.json")
 
@@ -33,6 +46,7 @@ def apply_rules(book: str, tokens_path: Path, rules_dir: Path, overrides_path: P
 
     changed = 0
     out = []
+    prev_es_for_book: str | None = None
 
     for r in rows:
         if r.get("book") != book:
@@ -50,10 +64,17 @@ def apply_rules(book: str, tokens_path: Path, rules_dir: Path, overrides_path: P
             if es != new_es:
                 r["es"] = new_es
                 changed += 1
+            prev_es_for_book = str(r.get("es", ""))
             out.append(r)
             continue
 
-        if es != "?":
+        # Default fill only unresolved glosses; --force re-applies lexicon to every token.
+        if es != "?" and not force:
+            enriched = enrich_gloss(es, morph, lemma=lemma, prev_es=prev_es_for_book)
+            if enriched != es:
+                r["es"] = enriched
+                changed += 1
+            prev_es_for_book = str(r.get("es", ""))
             out.append(r)
             continue
 
@@ -63,10 +84,15 @@ def apply_rules(book: str, tokens_path: Path, rules_dir: Path, overrides_path: P
         elif lemma in lemma_lexicon:
             new_es = lemma_lexicon[lemma]
 
-        if new_es is not None and new_es != "?":
+        if new_es is None or new_es == "?":
+            new_es = es
+
+        new_es = enrich_gloss(new_es, morph, lemma=lemma, prev_es=prev_es_for_book)
+        if new_es != "?" and new_es != es:
             r["es"] = new_es
             changed += 1
 
+        prev_es_for_book = str(r.get("es", ""))
         out.append(r)
 
     tokens_path.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in out) + "\n", encoding="utf-8")
@@ -96,22 +122,61 @@ def morph_breakdown(book: str, rows, lemma: str, limit: int = 20):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--book", required=True, help="e.g. lucas")
+    ap.add_argument("--book", help="e.g. genesis (required unless --all)")
     ap.add_argument("--top", type=int, default=30)
     ap.add_argument("--tokens", default="", help="override tokens jsonl path")
     ap.add_argument("--rules-dir", default="MNA/datasets/rules")
     ap.add_argument("--overrides", default="", help="override overrides jsonl path")
+    ap.add_argument(
+        "--force",
+        action="store_true",
+        help="re-apply lexicon/defaults to tokens even when es is already set",
+    )
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="process every OT book under MNA/datasets/interlinear/OT/",
+    )
     args = ap.parse_args()
 
-    book = args.book
-    tokens_path = Path(args.tokens) if args.tokens else Path(f"MNA/datasets/interlinear/OT/{book}.tokens.jsonl")
+    if not args.all and not args.book:
+        ap.error("provide --book or --all")
+    if args.all and args.tokens:
+        ap.error("--tokens cannot be combined with --all")
+
     rules_dir = Path(args.rules_dir)
-    overrides_path = Path(args.overrides) if args.overrides else Path(f"MNA/datasets/interlinear/OT/_overrides/{book}.overrides.jsonl")
+    ot_dir = Path("MNA/datasets/interlinear/OT")
 
-    changed, out = apply_rules(book, tokens_path, rules_dir, overrides_path)
-    print("UPDATED TOKENS:", changed)
+    if args.all:
+        books = sorted(p.name.replace(".tokens.jsonl", "") for p in ot_dir.glob("*.tokens.jsonl"))
+        if not books:
+            raise SystemExit(f"no OT token files in {ot_dir}")
+    else:
+        books = [args.book]
 
-    total, rem_by_ch, top = audit(book, out, args.top)
+    total_changed = 0
+    last_out = []
+    for book in books:
+        tokens_path = Path(args.tokens) if args.tokens else ot_dir / f"{book}.tokens.jsonl"
+        overrides_path = (
+            Path(args.overrides)
+            if args.overrides
+            else ot_dir / "_overrides" / f"{book}.overrides.jsonl"
+        )
+        changed, last_out = apply_rules(
+            book, tokens_path, rules_dir, overrides_path, force=args.force
+        )
+        total_changed += changed
+        print(f"{book}: UPDATED TOKENS: {changed}")
+
+    if args.all:
+        print("TOTAL UPDATED TOKENS:", total_changed)
+        return
+
+    book = books[0]
+    print("UPDATED TOKENS:", total_changed)
+
+    total, rem_by_ch, top = audit(book, last_out, args.top)
     print("TOTAL remaining '?':", total)
     for ch in sorted(rem_by_ch):
         print(f"CH {ch:02d}: remaining '?' = {rem_by_ch[ch]}")
@@ -120,7 +185,6 @@ def main():
     for n, lemma in top:
         print(f"{n}\t{lemma}")
 
-    # Hint
     if total == 0:
         print("\nNEXT ACTION: Done — book has 0 remaining '?'.")
     else:

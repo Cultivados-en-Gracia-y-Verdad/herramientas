@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export Greek NT interlinear (markdown tables + compact .txt)."""
+"""Export BLE interlinear (markdown tables + compact .txt) for NT or OT."""
 
 from __future__ import annotations
 
@@ -13,9 +13,17 @@ ROOT = SCRIPTS.parent
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Export NT interlinear reader + txt files.")
-    parser.add_argument("book", nargs="?", help="book slug (e.g. mateo)")
-    parser.add_argument("--all", action="store_true", help="export all 27 NT books")
+    parser = argparse.ArgumentParser(
+        description="Export interlinear reader + txt files (NT or OT)."
+    )
+    parser.add_argument("book", nargs="?", help="book slug (e.g. mateo, genesis)")
+    parser.add_argument("--all", action="store_true", help="export all books for testament")
+    parser.add_argument(
+        "--testament",
+        choices=("nt", "ot"),
+        default="nt",
+        help="which testament (default: nt)",
+    )
     parser.add_argument(
         "--format",
         choices=("reader", "txt", "both"),
@@ -30,7 +38,7 @@ def main() -> int:
     parser.add_argument(
         "--to-mna",
         action="store_true",
-        help="also write compact .txt into MNA/datasets/interlinear/NT/",
+        help="also write compact .txt into MNA/datasets/interlinear/{NT|OT}/",
     )
     args, extra = parser.parse_known_args()
 
@@ -38,14 +46,25 @@ def main() -> int:
     if not book_args:
         parser.error("provide a book slug or --all")
 
+    testament_args = ["--testament", args.testament]
     cmds: list[list[str]] = []
     if args.format in ("reader", "both"):
-        cmd = [sys.executable, str(SCRIPTS / "tokens_to_reader.py"), *book_args]
+        cmd = [
+            sys.executable,
+            str(SCRIPTS / "tokens_to_reader.py"),
+            *book_args,
+            *testament_args,
+        ]
         if args.single_file:
             cmd.append("--single-file")
         cmds.append(cmd)
     if args.format in ("txt", "both"):
-        cmd = [sys.executable, str(SCRIPTS / "tokens_to_interlinear_txt.py"), *book_args]
+        cmd = [
+            sys.executable,
+            str(SCRIPTS / "tokens_to_interlinear_txt.py"),
+            *book_args,
+            *testament_args,
+        ]
         if args.to_mna:
             cmd.append("--to-mna")
         cmds.append(cmd)

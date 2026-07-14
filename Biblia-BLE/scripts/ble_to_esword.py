@@ -17,7 +17,7 @@ from esword_lib import (  # noqa: E402
     WINDOWS_SPEC,
     write_module,
 )
-from tokens_to_ble import NT_BOOKS  # noqa: E402
+from testament_books import NT_BOOKS, OT_BOOKS  # noqa: E402
 from validate_ble import parse_verses  # noqa: E402
 
 DEFAULT_INPUT = SCRIPT_DIR.parent / "output"
@@ -43,7 +43,7 @@ def load_verses_from_ble_dir(input_dir: Path, books: list[str]) -> list[tuple[in
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Export BLE NT verses to e-Sword modules."
+        description="Export BLE verses to e-Sword modules (Windows .bblx, Mac .bbli)."
     )
     parser.add_argument(
         "--input-dir",
@@ -64,30 +64,48 @@ def main() -> int:
         help="target e-Sword platform (default: both)",
     )
     parser.add_argument("--book", help="single book slug only")
-    parser.add_argument("--all", action="store_true", help="all 27 NT books (default)")
+    parser.add_argument(
+        "--testament",
+        choices=("ot", "nt", "both"),
+        default="both",
+        help="which testament(s) to include (default: both)",
+    )
     args = parser.parse_args()
 
-    books = [args.book] if args.book else NT_BOOKS
+    if args.book:
+        books = [args.book]
+    elif args.testament == "ot":
+        books = list(OT_BOOKS)
+    elif args.testament == "nt":
+        books = list(NT_BOOKS)
+    else:
+        books = list(OT_BOOKS) + list(NT_BOOKS)
+
     verses = load_verses_from_ble_dir(args.input_dir, books)
     if not verses:
         print("error: no verses loaded", file=sys.stderr)
         return 1
 
+    book_ids = {b for b, _, _, _ in verses}
+    include_ot = any(b <= 39 for b in book_ids)
+    include_nt = any(b >= 40 for b in book_ids)
+
     outputs: list[Path] = []
     if args.platform in ("windows", "both"):
         dest = args.output_dir / f"BLE{WINDOWS_SPEC.extension}"
-        write_module(dest, verses, WINDOWS_SPEC)
+        write_module(dest, verses, WINDOWS_SPEC, include_ot=include_ot, include_nt=include_nt)
         outputs.append(dest)
     if args.platform in ("mac", "both"):
         dest = args.output_dir / f"BLE{MAC_SPEC.extension}"
-        write_module(dest, verses, MAC_SPEC)
+        write_module(dest, verses, MAC_SPEC, include_ot=include_ot, include_nt=include_nt)
         outputs.append(dest)
 
-    book_count = len({book for book, _, _, _ in verses})
+    book_count = len(book_ids)
     for dest in outputs:
         print(f"wrote {dest}")
     print(f"  books: {book_count}")
     print(f"  verses: {len(verses)}")
+    print(f"  OT: {include_ot}  NT: {include_nt}")
     print(f"  generated: {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}")
     print()
     if args.platform in ("windows", "both"):

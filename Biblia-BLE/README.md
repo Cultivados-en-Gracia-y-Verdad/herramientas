@@ -35,29 +35,54 @@ Install in a CGV library as `bibles/BLE/` for Writer and Presenter.
 ## How it is made
 
 1. **Greek (NT)** — MorphGNT → `MNA/datasets/interlinear/NT/{book}.tokens.jsonl`
-2. **Glosses** — each token has an `es` field (Spanish literal gloss); edited via MNA rules and patches
-3. **Assembly** — `scripts/tokens_to_ble.py` joins glosses into verses (the BLE text)
+2. **Hebrew (OT)** — Open Scriptures / MNA OT tokens → `MNA/datasets/interlinear/OT/{book}.tokens.jsonl`
+3. **Glosses** — each token has an `es` field (Spanish literal gloss); edited via MNA rules and patches
+4. **Assembly** — `scripts/tokens_to_ble.py` joins glosses into verses (the BLE text)
 
 ```bash
-cd ble
-python3 scripts/tokens_to_ble.py mateo   # one book
-python3 scripts/tokens_to_ble.py --all   # full NT
+cd Biblia-BLE
+python3 scripts/tokens_to_ble.py mateo                 # one NT book
+python3 scripts/tokens_to_ble.py --all                 # full NT
+python3 scripts/tokens_to_ble.py genesis --testament ot
+python3 scripts/tokens_to_ble.py --all --testament ot  # full OT
 python3 scripts/validate_ble.py output/mateo.ble.md
 
 # Interlinear reader (QA / gloss editing)
 python3 scripts/export_interlinear.py mateo --chapter 1
 python3 scripts/export_interlinear.py mateo --single-file
 python3 scripts/export_interlinear.py --all              # full NT (reader + compact txt)
+python3 scripts/export_interlinear.py genesis --testament ot --chapter 1
+python3 scripts/export_interlinear.py --all --testament ot   # full OT
 python3 scripts/tokens_to_reader.py mateo --chapter 1    # markdown tables only
 python3 scripts/tokens_to_interlinear_txt.py mateo       # compact .interlinear.txt only
 
-# e-Sword Bible modules (NT only)
+# Browser interlinear reader (needs a local HTTP server — not file://)
+python3 scripts/build_reader_catalog.py   # catalog.json + search-index.json
+python3 -m http.server 8765
+# → http://localhost:8765/reader/
+# Search: español phrases ("los cielos"), Strong's, morphology (HVqp3ms), original text
+# Scope: current book, testament, or whole Bible
+# Refs: "1 Reyes 8:27", "2 Juan"
+# OT glosses: lexicon base + morph enrichment (suffixes, plurals, finite verbs)
+# Refresh OT tokens after lexicon/conjugation changes:
+#   python3 ../MNA/scripts/next_stepOT.py --all --force
+#   python3 scripts/tokens_to_ble.py --all --testament ot
+#   python3 scripts/export_interlinear.py --all --testament ot
+#   python3 scripts/build_reader_catalog.py
+
+# e-Sword Bible modules (full Bible: OT + NT)
 python3 scripts/ble_to_esword.py
 # → output/esword/BLE.bblx  (Windows)
 # → output/esword/BLE.bbli  (e-Sword X / macOS, iOS, Android)
+# Optional: --testament ot|nt
 
 # Convert an existing .bblx to .bbli
 python3 scripts/bblx_to_bbli.py output/esword/BLE.bblx
+
+# Static web bundle (reader + interlinear txt)
+python3 scripts/build_reader_site.py
+# → site/reader/ + site/output/interlinear/
+# Public deploy: GitHub Actions workflow deploy-ble-reader.yml → GitHub Pages
 ```
 
 Canonical rule: if a verse cannot be rebuilt from tokens by the producer script, it is not official BLE text. Gloss corrections go in MNA token data, not by hand-editing `.ble.md`.
@@ -67,7 +92,7 @@ Canonical rule: if a verse cannot be rebuilt from tokens by the producer script,
 | Testament | Status |
 |-----------|--------|
 | **NT** | 27 books · ~137k tokens · glosses complete · interlinear export ready |
-| **OT** | not yet — `genesis.tokens.jsonl` only in MNA |
+| **OT** | 39 books · ~307k tokens · draft BLE in `output/` — gloss quality still needs review |
 
 ## Interlinear first, or literal Bible first?
 

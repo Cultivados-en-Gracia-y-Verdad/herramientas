@@ -298,7 +298,7 @@ def next_batch_number(book_label: str) -> int:
     return (max(nums) + 1) if nums else 1
 
 
-def run_next_step(book: str, top: int) -> int:
+def run_next_step(book: str, top: int, *, force: bool = False) -> int:
     cmd = [
         sys.executable,
         str(NEXT_STEP),
@@ -313,6 +313,8 @@ def run_next_step(book: str, top: int) -> int:
         "--overrides",
         str(DEFAULT_OT / "_overrides" / f"{book}.overrides.jsonl"),
     ]
+    if force:
+        cmd.append("--force")
     print("RUN:", " ".join(cmd))
     return subprocess.call(cmd, cwd=REPO_ROOT)
 

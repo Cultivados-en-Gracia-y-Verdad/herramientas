@@ -100,8 +100,24 @@ def parse_component(comp: str) -> Dict[str, Any]:
 
 		return part
 
-	# Other POS: keep only pos for now
-	return part
+		# Pronominal / other suffixes: Sp3ms, Sp1cs, Sd, …
+		if pos == "S":
+			part["pos"] = "S"
+			if rest[:1] == "p" and len(rest) >= 4:
+				part["stype"] = "p"
+				tail = rest[1:]
+				if tail[0].isdigit():
+					part["person"] = int(tail[0])
+					if len(tail) >= 2 and tail[1] in ("m", "f", "c"):
+						part["gender"] = tail[1]
+					if len(tail) >= 3 and tail[2] in ("s", "p", "d"):
+						part["number"] = tail[2]
+			elif rest:
+				part["stype"] = rest[0]
+			return part
+
+		# Other POS: keep only pos for now
+		return part
 
 
 def parse_morph(morph_raw: str) -> Dict[str, Any]:
