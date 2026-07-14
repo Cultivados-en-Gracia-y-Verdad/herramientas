@@ -79,12 +79,14 @@ ESWORD_BOOK_ID: dict[str, int] = {
     "apocalipsis": 66,
 }
 
-MODULE_TITLE = "Biblia Literal en Español"
-MODULE_ABBREV = "BLE"
+# Public study module — traditional interlinear, NOT the official BLE Bible text.
+MODULE_TITLE = "BLE Interlinear (estudio)"
+MODULE_ABBREV = "BLEi"
+MODULE_BASENAME = "BLE-Interlinear"
 MODULE_INFO = (
-    "<p><b>BLE</b> — Biblia Literal en Español.</p>"
-    "<p>Traducción formal palabra por palabra del hebreo y el griego. "
-    "Interlinear de estudio; no es una paráfrasis fluida.</p>"
+    "<p><b>BLE Interlinear</b> — interlinear de estudio (hebreo/griego + glosa española).</p>"
+    "<p>No es la Biblia Literal en Español (BLE) oficial. "
+    "Cada versículo muestra el texto original con su glosa literal debajo.</p>"
     "<p>Generado desde MNA/BLE (Cultivados en Gracia y Verdad).</p>"
 )
 
@@ -127,7 +129,6 @@ WINDOWS_SPEC = EswordModuleSpec(
     """,
 )
 
-# e-Sword X / iOS / Android schema (from installed .bbli modules on macOS).
 MAC_SPEC = EswordModuleSpec(
     platform=EswordPlatform.MAC,
     extension=".bbli",
@@ -171,30 +172,31 @@ def details_row(
     *,
     include_ot: bool,
     include_nt: bool,
+    strong: bool = True,
 ) -> tuple:
-    # RTL off: BLE Scripture column is Spanish gloss text, not Hebrew script.
+    # Module-level RTL stays off: verses mix Hebrew RTL columns with Spanish/Greek LTR.
     if spec.platform is EswordPlatform.WINDOWS:
         return (
             MODULE_TITLE,
             MODULE_ABBREV,
             MODULE_INFO,
-            5,
+            6,
             "DEFAULT",
             0,
             1 if include_ot else 0,
             1 if include_nt else 0,
             0,
-            0,
+            1 if strong else 0,
         )
     return (
         MODULE_TITLE,
         MODULE_ABBREV,
         MODULE_INFO,
-        5,
+        6,
         1 if include_ot else 0,
         1 if include_nt else 0,
         0,
-        0,
+        1 if strong else 0,
         0,
     )
 
@@ -206,6 +208,8 @@ def write_module(
     *,
     include_ot: bool = True,
     include_nt: bool = True,
+    strong: bool = True,
+    html: bool = True,
 ) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     if dest.exists():
@@ -217,12 +221,21 @@ def write_module(
         cur.execute(spec.details_sql)
         cur.execute(
             spec.details_insert_sql,
-            details_row(spec, include_ot=include_ot, include_nt=include_nt),
+            details_row(
+                spec,
+                include_ot=include_ot,
+                include_nt=include_nt,
+                strong=strong,
+            ),
         )
         cur.execute(BIBLE_SQL)
+        rows = []
+        for book, ch, vs, text in verses:
+            scripture = text if html else escape_html(text)
+            rows.append((book, ch, vs, scripture))
         cur.executemany(
             "INSERT INTO Bible (Book, Chapter, Verse, Scripture) VALUES (?, ?, ?, ?)",
-            [(book, ch, vs, escape_html(text)) for book, ch, vs, text in verses],
+            rows,
         )
         cur.execute("CREATE INDEX BookChapterVerseIndex ON Bible (Book, Chapter, Verse)")
         conn.commit()
@@ -245,11 +258,13 @@ def convert_bblx_to_bbli(source: Path, dest: Path) -> int:
     book_ids = {b for b, _, _, _ in verses}
     include_ot = any(b <= 39 for b in book_ids)
     include_nt = any(b >= 40 for b in book_ids)
+    # Preserve HTML already stored in Scripture.
     write_module(
         dest,
         verses,
         MAC_SPEC,
         include_ot=include_ot,
         include_nt=include_nt,
+        html=True,
     )
     return len(verses)

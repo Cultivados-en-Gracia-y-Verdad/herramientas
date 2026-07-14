@@ -61,7 +61,8 @@ python3 scripts/build_reader_catalog.py   # catalog.json + search-index.json
 python3 -m http.server 8765
 # → http://localhost:8765/reader/
 # Public: https://www.discipuladocgv.org/ble/reader/
-# e-Sword: https://www.discipuladocgv.org/ble/descargas/  (also GitHub release ble-1.0)
+# e-Sword interlinear: https://www.discipuladocgv.org/ble/descargas/
+#   (GitHub release ble-1.0 — study modules, not official BLE)
 # Search: español phrases ("los cielos"), Strong's, morphology (HVqp3ms), original text
 # Scope: current book, testament, or whole Bible
 # Refs: "1 Reyes 8:27", "2 Juan"
@@ -72,14 +73,12 @@ python3 -m http.server 8765
 #   python3 scripts/export_interlinear.py --all --testament ot
 #   python3 scripts/build_reader_catalog.py
 
-# e-Sword Bible modules (full Bible: OT + NT)
+# e-Sword INTERLINEAR study modules (not official BLE text)
 python3 scripts/ble_to_esword.py
-# → output/esword/BLE.bblx  (Windows)
-# → output/esword/BLE.bbli  (e-Sword X / macOS, iOS, Android)
+# → output/esword/BLE-Interlinear.bblx  (Windows)
+# → output/esword/BLE-Interlinear.bbli  (e-Sword X / macOS, iOS, Android)
+# Each verse = original + Spanish gloss (+ Strong's) in columns.
 # Optional: --testament ot|nt
-
-# Convert an existing .bblx to .bbli
-python3 scripts/bblx_to_bbli.py output/esword/BLE.bblx
 
 # Static web bundle (reader + interlinear txt)
 python3 scripts/build_reader_site.py
