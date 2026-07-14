@@ -67,6 +67,14 @@ function buildTranslatePrompt({ analysis, rulesMarkdown, rv1909Text }) {
     )
     .join("\n");
 
+  const verseWindow = gates.generalContext?.verseWindow || [];
+  const discourseLines = [
+    ...(gates.generalContext?.notes || []).map(n => `- ${n}`),
+    ...verseWindow.map(v =>
+      `- [${v.role}] ${v.reference}: ${v.greek}${v.rv1909 ? ` ‖ RV1909: ${v.rv1909}` : ""}`
+    )
+  ].join("\n");
+
   return `${rulesMarkdown}
 
 ---
@@ -84,14 +92,18 @@ ${morphLines || "(none)"}
 LEMMA POLICY:
 ${lemmaLines || "(none)"}
 
-SYNTAX NOTES:
+SYNTAX NOTES (immediate phrase):
 ${(gates.immediateContext?.structure?.notes || []).map(n => `- ${n}`).join("\n") || "(none)"}
+
+GENERAL CONTEXT (verse → paragraph → book — clarify among morph-valid options only):
+${discourseLines || "(none)"}
+Scope: ${(gates.generalContext?.scope || []).join(" · ") || "—"}
 
 Grammar skeleton (structure hint, not final style):
 Template: ${mechanicalDraft?.template || "—"}
 Mechanical: ${mechanicalDraft?.proposedSpanish || "—"}
 
-RV1909 (consultative style only — do not copy archaic wording; do not start from it):
+RV1909 for THIS phrase (consultative style only — do not copy archaic wording; do not start from it):
 ${rv1909Text || "—"}
 RV1909 flags: ${(gates.rv1909Review?.flags || []).map(f => f.note).join(" | ") || "none"}
 
@@ -102,22 +114,26 @@ Rules:
 4. Possessive genitives: αὐτοῦ/ἡμῶν → su/nuestro before the noun (su palabra, nuestro Salvador), not "de él/de nosotros".
 5. τοῦ σωτῆρος ἡμῶν θεοῦ ≈ "de Dios nuestro Salvador" or "de nuestro Salvador Dios", not "Salvador de nosotros, Dios".
 6. ἰδίοις with καιροῖς = "tiempos propios / sus tiempos", NEVER "tiempos escogidos".
-7. Use contemporary Spanish that flows naturally.
-8. Do not add subjects/copulas/theology absent from this phrase.
-9. Articles and smooth phrasing are allowed when Spanish requires them and Greek sense remains.
-10. If readyForSynthesis=${readyForSynthesis} is false, set proposedSpanish to null.
-11. Return JSON only:
+7. Prefer readings that fit the verse/paragraph discourse above when multiple morph-valid options exist.
+8. Use contemporary Spanish that flows naturally (never RV1909 spelling like "á").
+9. Do not add subjects/copulas/theology absent from this phrase.
+10. Articles and smooth phrasing are allowed when Spanish requires them and Greek sense remains.
+11. Soft δέ: do not force "y"; "pero tú…" is fine when addressing resumes the discourse.
+12. ἰδίοις ἀνδράσιν (household) → "sus propios maridos", not "varones".
+13. Translate ONLY this phrase span — do not pull wording from the next Greek phrase or later RV1909 clauses.
+14. If readyForSynthesis=${readyForSynthesis} is false, set proposedSpanish to null.
+15. Return JSON only:
 
 {
   "gateSummaries": {
     "lemma": "one sentence",
     "morphology": "one sentence",
     "immediateContext": "one sentence",
-    "generalContext": "one sentence",
+    "generalContext": "one sentence citing verse/paragraph",
     "rv1909Review": "one sentence"
   },
   "proposedSpanish": "modern faithful Spanish phrase",
-  "rationale": ["short bullets citing Greek constraints"],
+  "rationale": ["short bullets citing Greek + discourse constraints"],
   "flags": [],
   "blockedNote": null
 }`;
@@ -164,6 +180,77 @@ function validateDraftAgainstGates(draft, analysis) {
 
   if (/\btiempos escogidos\b/i.test(text)) {
     flags.push("Rejected: ἰδίοις means 'own/proper', not 'escogidos'.");
+  }
+
+  // RV1909 orthography bleed (preposition/article "á")
+  if (/(?:^|\s)á(?:\s|$)/u.test(text) || /\sá[aeiouáéíóú]/iu.test(text)) {
+    flags.push("Rejected: archaic RV1909 orthography (á); use contemporary Spanish (a, de, etc.).");
+  }
+
+  if (/\bvarones\b/i.test(text) && /ἀνήρ|ἀνδρ/u.test(JSON.stringify(analysis?.gates?.morphology?.constraints || []))) {
+    // Household context: ἰδίοις ἀνδράσιν → maridos, not generic 'varones'
+    const hasIdiois = (analysis?.gates?.morphology?.constraints || []).some(item =>
+      /ἴδιος|ἰδίοις|ἰδίους/u.test(item.greek || "") || /ἴδιος/.test(item.lemma || "")
+    );
+    if (hasIdiois) {
+      flags.push("Rejected: ἰδίοις ἀνδράσιν in household context → 'sus propios maridos', not 'varones'.");
+    }
+  }
+
+  // Servant fidelity: πίστις + ἐνδείκνυμι / δοῦλος discourse → not bare "fe"
+  const constraints = analysis?.gates?.morphology?.constraints || [];
+  const hasPistis = constraints.some(item => (item.lemma || "") === "πίστις");
+  const hasEndeiknumi = constraints.some(item => /ἐνδείκνυμ/.test(item.lemma || ""));
+  if (hasPistis && hasEndeiknumi && /\bfe\b/i.test(text) && !/\b(fidelidad|lealtad)\b/i.test(text)) {
+    flags.push("Rejected: πίστιν … ἐνδεικνυμένους in servant context → fidelidad/lealtad, not 'fe'.");
+  }
+
+  const greek = String(analysis?.greek || "");
+  if (/^Ταῦτα\b/u.test(greek) && /\bEste\b/.test(text)) {
+    flags.push("Rejected: Ταῦτα is neuter plural → 'Estas cosas'/'Esto', not 'Este'.");
+  }
+  if (/παρακάλει/u.test(greek) && /\bruega\b/i.test(text)) {
+    flags.push("Rejected: παρακάλει (pastoral) → 'exhorta', not 'ruega'.");
+  }
+  if (/Πιστὸς\s+ὁ\s+λόγος/u.test(greek) && !/\b(fiel|fiable)\b/i.test(text)) {
+    flags.push("Rejected: Πιστὸς ὁ λόγος → 'Fiel es la palabra' / 'Palabra fiel'.");
+  }
+  if (/Πιστὸς\s+ὁ\s+λόγος/u.test(greek) && /\bfiest/i.test(text)) {
+    flags.push("Rejected: hallucinated 'fiesta' for Πιστὸς ὁ λόγος.");
+  }
+  if (/φιλανθρωπία/u.test(greek) && /\bhumanidad\b/i.test(text) && !/\bamor\b/i.test(text)) {
+    flags.push("Rejected: φιλανθρωπία → 'amor a los hombres', not bare 'humanidad'.");
+  }
+  if (/Ἰησοῦ\s+Χριστοῦ/u.test(greek) && /\bJesús\b/i.test(text) && !/\bCristo\b/i.test(text)) {
+    flags.push("Rejected: Greek has Ἰησοῦ Χριστοῦ — keep Jesucristo / Jesús Cristo.");
+  }
+  // Spillover: if this phrase is a short imperative clause, reject long multi-clause dumps
+  const tokenCount = (analysis?.gates?.morphology?.constraints || []).length;
+  if (tokenCount > 0 && tokenCount <= 6 && (text.match(/,/g) || []).length >= 3 && /\b(Nicópolis|Artemas|Tíquico)\b/i.test(text)) {
+    const hasOnlyTravelSetup = /Ὅταν\s+πέμψω/u.test(greek);
+    const hasComeImperative = /σπούδασον\s+ἐλθεῖν/u.test(greek);
+    if (hasOnlyTravelSetup && /\bvenir\b/i.test(text) && /\bNicópolis\b/i.test(text)) {
+      flags.push("Rejected: phrase spillover — travel setup must not include 'venir a Nicópolis' from the next span.");
+    }
+    if (hasComeImperative && /\bArtemas\b/i.test(text)) {
+      flags.push("Rejected: phrase spillover — 'venir' span must not include Artemas/Tíquico from the previous span.");
+    }
+  }
+  if (/μανθανέτωσαν/.test(greek) && /προΐστασθαι/.test(greek) && !/ἄκαρποι/u.test(greek)) {
+    if (/\b(sin fruto|inútiles)\b/i.test(text)) {
+      flags.push("Rejected: phrase spillover — do not pull ἵνα μὴ ὦσιν ἄκαρποι into the μανθανέτωσαν span.");
+    }
+  }
+  if (/Ἀσπάζοντα[ίι]\s+σε/u.test(greek) && !/\bte\b/i.test(text)) {
+    flags.push("Rejected: Ἀσπάζονταί σε requires object 'te'.");
+  }
+  if (/ἡ\s+χάρις\s+μετὰ\s+πάντων\s+ὑμῶν/u.test(greek) && !/\btodos\b/i.test(text)) {
+    flags.push("Rejected: ἡ χάρις μετὰ πάντων ὑμῶν must keep 'todos'.");
+  }
+  if (/καλῶν\s+ἔργων\s+προΐστασθαι/u.test(greek)
+    && !/\b(dedic|ocup|gobern)/i.test(text)
+    && /\baprend/i.test(text)) {
+    flags.push("Rejected: καλῶν ἔργων προΐστασθαι → dedicarse/ocuparse en buenas obras, not only 'aprender de'.");
   }
 
   return { ok: flags.length === 0, flags };

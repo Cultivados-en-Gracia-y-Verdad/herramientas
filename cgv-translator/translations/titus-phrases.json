@@ -43,7 +43,13 @@
         "ble": "de•Dios",
         "rv1909": "Dios"
       }
-    ]
+    ],
+    "approval": {
+      "status": "approved",
+      "approvedAt": "2026-07-14T16:33:56Z",
+      "approvedBy": "translator",
+      "notes": "one-by-one review"
+    }
   },
   {
     "reference": "Titus 1:1",
@@ -100,7 +106,13 @@
         "ble": "de•Cristo",
         "rv1909": ""
       }
-    ]
+    ],
+    "approval": {
+      "status": "approved",
+      "approvedAt": "2026-07-14T16:37:31Z",
+      "approvedBy": "translator",
+      "notes": "one-by-one review"
+    }
   },
   {
     "reference": "Titus 1:1",
@@ -2105,6 +2117,173 @@
         "morphology": "—",
         "ble": "por•causa•",
         "rv1909": "por"
+      }
+    ]
+  },
+  {
+    "reference": "Titus 1:12",
+    "phraseIndex": 15,
+    "greek": "εἶπέν τις ἐξ αὐτῶν ἴδιος αὐτῶν προφήτης Κρῆτες ἀεὶ ψεῦσται κακὰ θηρία γαστέρες ἀργαί",
+    "spanish": "",
+    "sourceTokenIds": [
+      "n56001012001",
+      "n56001012002",
+      "n56001012003",
+      "n56001012004",
+      "n56001012005",
+      "n56001012006",
+      "n56001012007",
+      "n56001012008",
+      "n56001012009",
+      "n56001012010",
+      "n56001012011",
+      "n56001012012",
+      "n56001012013",
+      "n56001012014"
+    ],
+    "rv1909Text": "Dijo uno de ellos, propio profeta de ellos: Los Cretenses, siempre mentirosos, malas bestias, vientres perezosos",
+    "bleText": "dijo alguien de de•ellos propio de•ellos profeta Cretenses siempre mentirosos malos bestias vientres ociosas",
+    "suggestionSource": "blank",
+    "tokenRows": [
+      {
+        "sourceTokenId": "n56001012001",
+        "greek": "εἶπέν",
+        "lemma": "λέγω",
+        "strongs": "",
+        "rmac": "V-3AAI-S",
+        "morphology": "aoristo, activo, indicativo, 3.ª persona, singular",
+        "ble": "dijo",
+        "rv1909": "Dijo"
+      },
+      {
+        "sourceTokenId": "n56001012002",
+        "greek": "τις",
+        "lemma": "τις",
+        "strongs": "",
+        "rmac": "RINSM",
+        "morphology": "nominativo singular neutro",
+        "ble": "alguien",
+        "rv1909": "uno"
+      },
+      {
+        "sourceTokenId": "n56001012003",
+        "greek": "ἐξ",
+        "lemma": "ἐκ",
+        "strongs": "",
+        "rmac": "P-",
+        "morphology": "—",
+        "ble": "de",
+        "rv1909": "de"
+      },
+      {
+        "sourceTokenId": "n56001012004",
+        "greek": "αὐτῶν",
+        "lemma": "αὐτός",
+        "strongs": "",
+        "rmac": "RPGPM",
+        "morphology": "genitivo plural masculino",
+        "ble": "de•ellos",
+        "rv1909": "ellos"
+      },
+      {
+        "sourceTokenId": "n56001012005",
+        "greek": "ἴδιος",
+        "lemma": "ἴδιος",
+        "strongs": "",
+        "rmac": "A-NSM",
+        "morphology": "nominativo singular neutro",
+        "ble": "propio",
+        "rv1909": "propio"
+      },
+      {
+        "sourceTokenId": "n56001012006",
+        "greek": "αὐτῶν",
+        "lemma": "αὐτός",
+        "strongs": "",
+        "rmac": "RPGPM",
+        "morphology": "genitivo plural masculino",
+        "ble": "de•ellos",
+        "rv1909": "ellos"
+      },
+      {
+        "sourceTokenId": "n56001012007",
+        "greek": "προφήτης",
+        "lemma": "προφήτης",
+        "strongs": "",
+        "rmac": "N-NSM",
+        "morphology": "nominativo singular neutro",
+        "ble": "profeta",
+        "rv1909": "profeta"
+      },
+      {
+        "sourceTokenId": "n56001012008",
+        "greek": "Κρῆτες",
+        "lemma": "Κρής",
+        "strongs": "",
+        "rmac": "N-NPM",
+        "morphology": "nominativo plural neutro",
+        "ble": "Cretenses",
+        "rv1909": "Cretenses"
+      },
+      {
+        "sourceTokenId": "n56001012009",
+        "greek": "ἀεὶ",
+        "lemma": "ἀεί",
+        "strongs": "",
+        "rmac": "D-",
+        "morphology": "—",
+        "ble": "siempre",
+        "rv1909": "siempre"
+      },
+      {
+        "sourceTokenId": "n56001012010",
+        "greek": "ψεῦσται",
+        "lemma": "ψεύστης",
+        "strongs": "",
+        "rmac": "N-NPM",
+        "morphology": "nominativo plural neutro",
+        "ble": "mentirosos",
+        "rv1909": "mentirosos"
+      },
+      {
+        "sourceTokenId": "n56001012011",
+        "greek": "κακὰ",
+        "lemma": "κακός",
+        "strongs": "",
+        "rmac": "A-NPN",
+        "morphology": "nominativo plural neutro",
+        "ble": "malos",
+        "rv1909": "malas"
+      },
+      {
+        "sourceTokenId": "n56001012012",
+        "greek": "θηρία",
+        "lemma": "θηρίον",
+        "strongs": "",
+        "rmac": "N-NPN",
+        "morphology": "nominativo plural neutro",
+        "ble": "bestias",
+        "rv1909": "bestias"
+      },
+      {
+        "sourceTokenId": "n56001012013",
+        "greek": "γαστέρες",
+        "lemma": "γαστήρ",
+        "strongs": "",
+        "rmac": "N-NPF",
+        "morphology": "nominativo plural neutro",
+        "ble": "vientres",
+        "rv1909": "vientres"
+      },
+      {
+        "sourceTokenId": "n56001012014",
+        "greek": "ἀργαί",
+        "lemma": "ἀργός",
+        "strongs": "",
+        "rmac": "A-NPF",
+        "morphology": "nominativo plural neutro",
+        "ble": "ociosas",
+        "rv1909": "perezosos"
       }
     ]
   }

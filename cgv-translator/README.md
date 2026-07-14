@@ -28,18 +28,26 @@ With no cloud API keys, the prototype uses local [Ollama](https://ollama.com) by
 
 ```sh
 # Install Ollama, then:
-ollama pull llama3.2
+ollama pull qwen2.5:7b
 ```
 
 Optional overrides go in `.env` (see `.env.example`). You can also set `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` instead.
 
 ### Translation pipeline (per-gate)
 
-1. **Analyze phrase** — mechanical Gates 1–5 + grammar skeleton
-2. **Propose Spanish** — AI (default `qwen2.5:7b`) drafts modern Spanish under those constraints
+1. **Analyze phrase** — mechanical Gates 1–5 + grammar skeleton (Gate 4 loads verse ±2 + local LBF)
+2. **Propose Spanish** — AI drafts modern Spanish under those constraints
 3. **Use draft** — copies into working Spanish for human edit/approval
 
-Grammar checks still reject illegal readings (e.g. “fe elegida”). If AI fails checks, the mechanical skeleton is shown instead.
+Grammar checks reject illegal readings and RV1909 orthography bleed. If AI fails checks, the mechanical skeleton is shown instead.
+
+### Batch review loop (b)
+
+```sh
+node scripts/batch_lbf_propose.mjs --limit 8 --start "Titus 2:1"
+```
+
+Then human-review `translations/review-log.jsonl`, edit/approve phrases in `titus-phrases.json`, and encode recurring misses in `src/ai/lbf-translation-rules.md` + `assistGates.js` validators.
 
 Default local model: `qwen2.5:7b` (set in `.env`). `llama3.2` is too weak for this task.
 

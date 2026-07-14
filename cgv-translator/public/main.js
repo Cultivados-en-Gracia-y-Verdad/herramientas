@@ -579,9 +579,20 @@ function phrasePipelinePayload(phrase = currentPhrase()) {
 }
 
 function priorLbfForSuggestion(phrase = currentPhrase()) {
-  return translationPhrases
-    .filter(item => item !== phrase && phraseDisplayText(item))
-    .slice(-6)
+  // Prefer same-chapter approved/working phrases so Gate 4 sees local discourse.
+  const currentRef = String(phrase?.reference || "");
+  const chapterKey = currentRef.replace(/:\d+\s*$/u, ""); // "Titus 1"
+  const sameChapter = translationPhrases.filter(item =>
+    item !== phrase
+    && phraseDisplayText(item)
+    && String(item.reference || "").replace(/:\d+\s*$/u, "") === chapterKey
+  );
+  const pool = sameChapter.length
+    ? sameChapter
+    : translationPhrases.filter(item => item !== phrase && phraseDisplayText(item));
+
+  return pool
+    .slice(-12)
     .map(item => ({
       reference: item.reference,
       spanish: phraseDisplayText(item)
@@ -663,7 +674,13 @@ function renderGateAnalysis(analysis, assist = null) {
       continue;
     }
     const aiNote = summaries[id];
-    const detail = [gate.summary, aiNote].filter(Boolean).join(" — ");
+    let detail = [gate.summary, aiNote].filter(Boolean).join(" — ");
+    if (id === "generalContext" && Array.isArray(gate.notes) && gate.notes.length) {
+      const firstUseful = gate.notes.find(n => /Verse Greek|Same-verse|Local paragraph|Lemma «/u.test(n));
+      if (firstUseful && !detail.includes(firstUseful.slice(0, 40))) {
+        detail = [detail, firstUseful].filter(Boolean).join(" · ");
+      }
+    }
     setGateRow(id, { status: gate.status || "idle", detail });
   }
 

@@ -5,7 +5,8 @@ const LIGHT_LEMMAS = new Set([
   "δέ", "δὲ", "καί", "καὶ", "ὁ", "ἡ", "τό", "τοῦ", "τῆς", "τῷ", "τῇ",
   "τόν", "τὸν", "τήν", "τὴν", "τά", "τὰ", "οἱ", "αἱ", "τούς", "τοὺς",
   "τάς", "τὰς", "τῶν", "οὐ", "μή", "μὴ", "τε", "γάρ", "γὰρ", "οὖν",
-  "μέν", "μὲν", "ἀλλά", "ἀλλὰ", "ὡς", "ὅτι"
+  "μέν", "μὲν", "ἀλλά", "ἀλλὰ", "ὡς", "ὅτι", "ἵνα", "εἰ", "ἐάν", "ἐὰν",
+  "σύ", "σύ", "σε", "σοι", "σου", "ὑμεῖς", "ὑμᾶς", "ὑμῖν", "ὑμῶν"
 ]);
 
 const CASE_MAP = {
@@ -246,23 +247,43 @@ function analyzeLemmaGate(tokenRows, policies, openInvestigations = []) {
     const significant = isSignificantLemma(row);
     const policy = findPolicy(row, policies);
     const openInv = findOpenInvestigation(row, openInvestigations);
+    const openIsDraft = openInv && !/^approved$/i.test(openInv.status || "");
+
+    let status = "not-applicable";
+    let allowedRenderings = [];
+    let policySource = null;
+
+    if (significant) {
+      if (policy) {
+        status = "resolved";
+        allowedRenderings = [policy.preferredRendering].filter(Boolean);
+        policySource = `investigation/${policy.investigationId}`;
+      } else if (openIsDraft) {
+        // Investigation stop rule: pause when a live investigation is unresolved.
+        status = "blocked";
+      } else if (row.strongs) {
+        // Known Strong's but no INV yet → provisional (BLE gloss may fill later).
+        // Do not hard-block drafting; open INV only when the sense is contested.
+        status = "provisional";
+        const ble = String(row.ble || "").replaceAll("•", " ").trim();
+        if (ble && ble !== "?") allowedRenderings = [ble];
+        policySource = "provisional/ble-or-open";
+      } else {
+        status = "unreviewed";
+      }
+    }
+
     const token = {
       sourceTokenId: row.sourceTokenId || "",
       greek: row.greek || "",
       lemma: row.lemma || "",
       strongs: row.strongs || "",
       significant,
-      allowedRenderings: policy ? [policy.preferredRendering] : [],
-      policySource: policy ? `investigation/${policy.investigationId}` : null,
+      allowedRenderings,
+      policySource,
       investigationId: policy?.investigationId || openInv?.investigationId || null,
-      confidence: policy?.confidence || null,
-      status: !significant
-        ? "not-applicable"
-        : policy
-          ? "resolved"
-          : row.strongs
-            ? "blocked"
-            : "unreviewed"
+      confidence: policy?.confidence || (status === "provisional" ? "Low" : null),
+      status
     };
     tokens.push(token);
     if (token.status === "blocked") {
@@ -276,7 +297,7 @@ function analyzeLemmaGate(tokenRows, policies, openInvestigations = []) {
       id: "lemma",
       name: "Lemma",
       status: "blocked",
-      summary: `Blocked: no approved lemma policy for ${first.strongs || "—"} ${first.lemma}`.trim(),
+      summary: `Blocked: open investigation for ${first.strongs || "—"} ${first.lemma}`.trim(),
       blockedLemma: `${first.strongs || ""} ${first.lemma}`.trim(),
       blockedStrongs: first.strongs || "",
       blockedLemmaForm: first.lemma || "",
@@ -285,6 +306,7 @@ function analyzeLemmaGate(tokenRows, policies, openInvestigations = []) {
     };
   }
 
+  const provisional = tokens.filter(item => item.status === "provisional");
   const unreviewed = tokens.filter(item => item.status === "unreviewed");
   const resolvedCount = tokens.filter(item => item.status === "resolved").length;
   return {
@@ -294,9 +316,12 @@ function analyzeLemmaGate(tokenRows, policies, openInvestigations = []) {
     summary: [
       resolvedCount
         ? `Resolved ${resolvedCount} lemma polic${resolvedCount === 1 ? "y" : "ies"} from approved investigations.`
-        : "No Strong's-linked lemmas required policy in this phrase.",
+        : "No approved investigation policies required in this phrase.",
+      provisional.length
+        ? `${provisional.length} provisional lemma(s) (Strong's known, no INV yet): ${provisional.map(t => t.lemma).join(", ")}.`
+        : null,
       unreviewed.length
-        ? `${unreviewed.length} content lemma(s) lack Strong's/policy (flagged, not hard-blocked): ${unreviewed.map(t => t.lemma).join(", ")}.`
+        ? `${unreviewed.length} content lemma(s) lack Strong's (flagged): ${unreviewed.map(t => t.lemma).join(", ")}.`
         : null
     ].filter(Boolean).join(" "),
     tokens
@@ -447,25 +472,303 @@ function analyzeImmediateContextGate(tokenRows, greek) {
   };
 }
 
-function analyzeGeneralContextGate(reference, priorLbf = []) {
-  const nearby = priorLbf.slice(-4);
-  const notes = [
-    reference ? `Current reference: ${reference}` : null,
-    nearby.length
-      ? `Nearby approved LBF: ${nearby.map(item => `${item.reference} → ${item.spanish}`).join("; ")}`
-      : "No nearby approved LBF phrases yet."
-  ].filter(Boolean);
+function parseReferenceParts(reference = "") {
+  const match = String(reference || "").trim().match(/^(.+?)\s+(\d+):(\d+)\s*$/u);
+  if (!match) return null;
+  return {
+    bookLabel: match[1].trim(),
+    chapter: Number(match[2]),
+    verse: Number(match[3])
+  };
+}
+
+function bookIdFromLabel(label = "") {
+  const key = String(label || "").trim().toLowerCase();
+  const map = {
+    titus: "titus",
+    tito: "titus",
+    matthew: "matthew",
+    mateo: "matthew",
+    mark: "mark",
+    marcos: "mark",
+    luke: "luke",
+    lucas: "luke",
+    john: "john",
+    juan: "john",
+    acts: "acts",
+    hechos: "acts",
+    romans: "romans",
+    romanos: "romans"
+  };
+  return map[key] || key.replace(/\s+/g, "");
+}
+
+const discourseUnitCache = new Map();
+
+async function loadBookDiscourse(rootDir, bookId) {
+  let unitsPromise = discourseUnitCache.get(bookId);
+  if (!unitsPromise) {
+    unitsPromise = (async () => {
+      try {
+        const { loadNtBookUnits } = await import("../data/morphLoader.js");
+        const loaded = await loadNtBookUnits(rootDir, bookId);
+        return loaded.units || [];
+      } catch {
+        return [];
+      }
+    })();
+    discourseUnitCache.set(bookId, unitsPromise);
+  }
+
+  // Always re-read phrases so newly approved LBF appears in Gate 4 mid-batch.
+  const phraseCandidates = [
+    join(rootDir, "translations", `${bookId}-phrases.json`),
+    join(rootDir, "translations", "titus-phrases.json")
+  ];
+  let phrases = [];
+  for (const path of phraseCandidates) {
+    const raw = await readFile(path, "utf8").catch(() => "");
+    if (!raw) continue;
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        phrases = parsed;
+        break;
+      }
+    } catch {
+      // try next
+    }
+  }
+
+  const units = await unitsPromise;
+  return { units, phrases };
+}
+
+function isApprovedPhrase(phrase = {}) {
+  const status = phrase?.approval?.status || phrase?.suggestionSource || "";
+  return status === "approved" || status === "lbf-approved";
+}
+
+function significantLemmasFromRows(tokenRows = []) {
+  return [...new Set(
+    tokenRows
+      .filter(row => isSignificantLemma(row))
+      .map(row => row.lemma)
+      .filter(Boolean)
+  )];
+}
+
+async function analyzeGeneralContextGate({
+  rootDir,
+  reference,
+  greek = "",
+  tokenRows = [],
+  priorLbf = []
+}) {
+  const parts = parseReferenceParts(reference);
+  const notes = [];
+  const scope = [];
+  const verseWindow = [];
+  const sameVerseLbf = [];
+  const chapterLbf = [];
+  const lemmaEchoes = [];
+
+  if (!parts) {
+    const nearby = priorLbf.slice(-6);
+    return {
+      id: "generalContext",
+      name: "General context",
+      status: "resolved",
+      summary: nearby.length
+        ? `Nearby LBF only (no parseable reference): ${nearby.map(i => i.reference).join(", ")}`
+        : "No discourse context available.",
+      scope: [reference].filter(Boolean),
+      notes: nearby.length
+        ? nearby.map(item => `${item.reference} → ${item.spanish}`)
+        : ["No nearby approved LBF phrases yet."],
+      verseWindow: [],
+      remainingOptions: []
+    };
+  }
+
+  const bookId = bookIdFromLabel(parts.bookLabel);
+  scope.push(`${parts.bookLabel} ${parts.chapter}:${parts.verse}`);
+  scope.push(`${parts.bookLabel} ${parts.chapter}:${Math.max(1, parts.verse - 2)}-${parts.verse + 2}`);
+  scope.push(parts.bookLabel);
+
+  const { units, phrases } = await loadBookDiscourse(rootDir, bookId);
+  const unitByRef = new Map(units.map(unit => [unit.reference, unit]));
+
+  // Immediate verse + ±2 neighbors (Greek / BLE / RV1909).
+  // At chapter starts, also pull the previous chapter's closing verses.
+  const neighborRefs = [];
+  for (let vs = parts.verse - 2; vs <= parts.verse + 2; vs += 1) {
+    if (vs >= 1) {
+      neighborRefs.push({
+        chapter: parts.chapter,
+        verse: vs,
+        role: vs === parts.verse ? "current" : vs < parts.verse ? "before" : "after"
+      });
+    }
+  }
+  if (parts.verse <= 2 && parts.chapter > 1) {
+    const prevChapter = parts.chapter - 1;
+    const prevUnits = units
+      .filter(unit => Number(unit.chapter) === prevChapter)
+      .sort((a, b) => Number(a.verse) - Number(b.verse));
+    for (const unit of prevUnits.slice(-2)) {
+      neighborRefs.unshift({
+        chapter: prevChapter,
+        verse: Number(unit.verse),
+        role: "before"
+      });
+    }
+  }
+
+  const seenRefs = new Set();
+  for (const nb of neighborRefs) {
+    const ref = `${parts.bookLabel} ${nb.chapter}:${nb.verse}`;
+    if (seenRefs.has(ref)) continue;
+    seenRefs.add(ref);
+    const unit = unitByRef.get(ref);
+    if (!unit) continue;
+    verseWindow.push({
+      reference: ref,
+      role: nb.role,
+      greek: unit.greekText || "",
+      ble: unit.bleText || "",
+      rv1909: unit.rv1909Text || ""
+    });
+  }
+
+  const currentUnit = unitByRef.get(`${parts.bookLabel} ${parts.chapter}:${parts.verse}`);
+  if (currentUnit?.greekText) {
+    notes.push(`Verse Greek (${parts.chapter}:${parts.verse}): ${currentUnit.greekText}`);
+  }
+  if (greek && currentUnit?.greekText && greek !== currentUnit.greekText) {
+    notes.push(`Current phrase is a span within the verse (not the whole verse).`);
+  }
+
+  // Approved LBF in same verse / chapter
+  for (const phrase of phrases) {
+    const spanish = String(phrase.spanish || "").trim();
+    if (!spanish || !isApprovedPhrase(phrase)) continue;
+    const pref = parseReferenceParts(phrase.reference);
+    if (!pref || pref.chapter !== parts.chapter) continue;
+    const entry = { reference: phrase.reference, spanish, phraseIndex: phrase.phraseIndex };
+    if (pref.verse === parts.verse) sameVerseLbf.push(entry);
+    chapterLbf.push(entry);
+  }
+
+  // Also merge client-sent prior LBF (working session may be ahead of disk)
+  for (const item of priorLbf) {
+    const spanish = String(item.spanish || "").trim();
+    if (!spanish) continue;
+    const pref = parseReferenceParts(item.reference);
+    if (!pref || pref.chapter !== parts.chapter) continue;
+    const exists = chapterLbf.some(row => row.reference === item.reference && row.spanish === spanish);
+    if (!exists) {
+      chapterLbf.push({ reference: item.reference, spanish });
+      if (pref.verse === parts.verse) sameVerseLbf.push({ reference: item.reference, spanish });
+    }
+  }
+
+  if (sameVerseLbf.length) {
+    notes.push(
+      `Same-verse approved LBF: ${sameVerseLbf.map(i => i.spanish).join(" | ")}`
+    );
+  } else {
+    notes.push("No other approved LBF phrases yet in this verse.");
+  }
+
+  const nearbyChapter = chapterLbf
+    .filter(item => {
+      const pref = parseReferenceParts(item.reference);
+      return pref && Math.abs(pref.verse - parts.verse) <= 2;
+    })
+    .slice(0, 8);
+
+  // Cross-chapter discourse: when opening a chapter, include approved LBF from prior chapter end.
+  if (parts.verse <= 2 && parts.chapter > 1) {
+    const prevChapter = parts.chapter - 1;
+    const prevMax = units
+      .filter(unit => Number(unit.chapter) === prevChapter)
+      .reduce((max, unit) => Math.max(max, Number(unit.verse) || 0), 0);
+    const priorTail = phrases
+      .filter(phrase => {
+        const spanish = String(phrase.spanish || "").trim();
+        if (!spanish || !isApprovedPhrase(phrase)) return false;
+        const pref = parseReferenceParts(phrase.reference);
+        return pref
+          && pref.chapter === prevChapter
+          && pref.verse >= Math.max(1, prevMax - 1);
+      })
+      .map(phrase => ({
+        reference: phrase.reference,
+        spanish: String(phrase.spanish || "").trim()
+      }));
+    if (priorTail.length) {
+      nearbyChapter.unshift(...priorTail.slice(0, 6));
+      notes.push(
+        `Prior-chapter close (${prevChapter}): ${priorTail.map(i => `${i.reference} → ${i.spanish}`).join("; ")}`
+      );
+    }
+  }
+  if (nearbyChapter.length) {
+    notes.push(
+      `Local paragraph LBF (±2 verses): ${nearbyChapter.map(i => `${i.reference} → ${i.spanish}`).join("; ")}`
+    );
+  }
+
+  for (const neighbor of verseWindow.filter(v => v.role !== "current")) {
+    notes.push(
+      `${neighbor.role === "before" ? "Prev" : "Next"} ${neighbor.reference}: ${neighbor.greek}`
+    );
+  }
+
+  // Lemma echoes in the window (disambiguation hints)
+  const focusLemmas = significantLemmasFromRows(tokenRows);
+  if (focusLemmas.length && verseWindow.length) {
+    for (const lemma of focusLemmas.slice(0, 8)) {
+      const hits = [];
+      for (const neighbor of verseWindow) {
+        if (neighbor.role === "current") continue;
+        const unit = unitByRef.get(neighbor.reference);
+        const rows = unit?.tokenRows || [];
+        if (rows.some(row => row.lemma === lemma)) {
+          hits.push(neighbor.reference);
+        }
+      }
+      if (hits.length) {
+        lemmaEchoes.push({ lemma, references: hits });
+        notes.push(`Lemma «${lemma}» also appears in ${hits.join(", ")} — keep rendering consistent unless morphology/context require change.`);
+      }
+    }
+  }
+
+  notes.push(
+    "Use verse/paragraph context only to choose among grammatically valid options. Do not import theology or rewrite lemmas."
+  );
+
+  const summary = sameVerseLbf.length || nearbyChapter.length || verseWindow.length > 1
+    ? `Discourse loaded: verse ${parts.chapter}:${parts.verse}, ±2 neighbors, ${chapterLbf.length} chapter LBF phrase(s).`
+    : `Limited discourse for ${reference}; proceed from Gates 1–3.`;
 
   return {
     id: "generalContext",
     name: "General context",
     status: "resolved",
-    summary: notes[1] || notes[0] || "Book/verse context pending richer discourse data.",
-    scope: [reference].filter(Boolean),
+    summary,
+    scope,
     notes,
+    verseWindow,
+    sameVerseLbf,
+    chapterLbf: chapterLbf.slice(0, 20),
+    lemmaEchoes,
     remainingOptions: []
   };
 }
+
 
 function analyzeRv1909Gate(greek, tokenRows, rv1909Text) {
   const flags = [];
@@ -911,7 +1214,13 @@ export async function analyzePhraseGates({
   const lemma = analyzeLemmaGate(tokenRows, approved, openInvestigations);
   const morphology = analyzeMorphologyGate(tokenRows, lemma);
   const immediateContext = analyzeImmediateContextGate(tokenRows, greek);
-  const generalContext = analyzeGeneralContextGate(reference, priorLbf);
+  const generalContext = await analyzeGeneralContextGate({
+    rootDir,
+    reference,
+    greek,
+    tokenRows,
+    priorLbf
+  });
   const rv1909Review = analyzeRv1909Gate(greek, tokenRows, rv1909Text);
 
   const gates = {
