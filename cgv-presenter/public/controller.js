@@ -442,7 +442,7 @@ function isSongSearchTarget(event) {
   return event.target?.id === "songSearch";
 }
 
-/** True when shortcuts should stay out of the way (song editor, GitHub form, etc.). Search is exempt so Esc/Enter still drive the stage. */
+/** True when shortcuts should stay out of the way (song editor, GitHub form, etc.). Search is exempt so Esc can still blank when the query is empty. */
 function shouldIgnorePresentationShortcut(event) {
   return isEditingText(event) && !isSongSearchTarget(event);
 }
@@ -667,6 +667,8 @@ function selectBackgroundByIndex(index, { goBlank = false } = {}) {
 
 function getBackgroundShortcutIndex(event) {
   if (shouldIgnorePresentationShortcut(event)) return -1;
+  // Numbers must type into song search (e.g. "002"), not switch backgrounds.
+  if (isSongSearchTarget(event)) return -1;
   if (event.altKey || event.ctrlKey || event.metaKey) return -1;
 
   const digitMatch = event.code?.match(/^(?:Digit|Numpad)(\d)$/);
@@ -762,7 +764,7 @@ function renderPreview() {
   status.classList.toggle("active", isLive);
 }
 
-/** Fit lyrics to the preview box. On desktop use more of the stage; phones stay conservative. */
+/** Fit lyrics to the preview content box so they can stay truly centered. */
 function fitPreviewSongText(element) {
   if (!element) return;
 
@@ -771,8 +773,9 @@ function fitPreviewSongText(element) {
 
   element.classList.remove("song-allow-wrap");
 
-  const width = element.clientWidth;
-  const height = element.clientHeight;
+  const bounds = element.querySelector(".song-output-inner") || element;
+  const width = bounds.clientWidth;
+  const height = bounds.clientHeight;
   if (width < 2 || height < 2) {
     requestAnimationFrame(() => fitPreviewSongText(element));
     return;
@@ -780,10 +783,11 @@ function fitPreviewSongText(element) {
 
   const isDesktop = window.matchMedia("(min-width: 901px)").matches;
   const scale = width / 1920;
-  const baseSize = Math.max(isDesktop ? 36 : 28, (isDesktop ? 200 : 168) * scale);
-  const hardMinSize = Math.max(18, 58 * scale);
-  const maxWidth = Math.max(40, width * (isDesktop ? 0.9 : 0.84));
-  const maxHeight = Math.max(40, height * (isDesktop ? 0.9 : 0.78));
+  const baseSize = Math.max(isDesktop ? 32 : 28, (isDesktop ? 176 : 168) * scale);
+  const hardMinSize = Math.max(16, 52 * scale);
+  // Stay inside the padded content box — oversized text overflows and looks top/side biased.
+  const maxWidth = Math.max(40, width * (isDesktop ? 0.92 : 0.88));
+  const maxHeight = Math.max(40, height * (isDesktop ? 0.82 : 0.78));
   const step = Math.max(0.5, 2 * scale);
   let size = baseSize;
 
@@ -1005,7 +1009,7 @@ byId("downloadSongsToggle").addEventListener("click", toggleGithubSongForm);
 byId("downloadSongsForm").addEventListener("submit", downloadSongsFromGithub);
 
 window.addEventListener("keydown", event => {
-  // Song search stays focused for typing, but Esc/Enter must still control the stage.
+  // Song search stays focused for typing; Esc still drives the stage when search is empty.
   if (shouldIgnorePresentationShortcut(event)) return;
   if (selectBackgroundFromShortcut(event)) return;
 
@@ -1022,7 +1026,9 @@ window.addEventListener("keydown", event => {
     return;
   }
 
+  // Enter in search must not Send Live — leave the field for filtering/selection.
   if (event.key === "Enter") {
+    if (inSongSearch) return;
     event.preventDefault();
     sendLive();
     return;
