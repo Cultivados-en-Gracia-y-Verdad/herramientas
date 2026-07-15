@@ -1,6 +1,6 @@
 # CGV Presenter — TODO
 
-Backlog for the `cgv-presenter` app. Current release: **1.1.16**.
+Backlog for the `cgv-presenter` app. Current release: **1.1.17**.
 
 ## Distribution
 
@@ -16,6 +16,7 @@ Backlog for the `cgv-presenter` app. Current release: **1.1.16**.
 
 - [ ] **Projector drawing alignment** — Viewport sync improved in 1.1.x; verify stroke position on projector vs tablet across fullscreen, extended display, and different aspect ratios.
 - [ ] **S Pen side button** — Automatic detection was disabled as unreliable; revisit a stable toggle for eraser mode if needed on target devices.
+- [ ] **Stage view design** — Deferred; refine from real use rather than a redesign pass now.
 
 ## Courses & content
 
@@ -27,12 +28,19 @@ Backlog for the `cgv-presenter` app. Current release: **1.1.16**.
 
 - [x] **Song search** — Accent-insensitive match (`senor` → señor), keep numbered/folder copies (no title-only dedupe), keep search query when changing library filter.
 - [x] **Device / Esc+Enter** — Esc (blank) and Enter (send live) work even while song search is focused; selecting a song blurs search so arrows work. On phones: tap song twice = Enter; tap a background = digit+Esc; Blank/Send Live stay fixed at the bottom.
+- [x] **Phone controller UX** — Fullscreen, 16:9 preview, title-only screen chips, 0–9 live backgrounds, default blank, teaching-mode preview, return-to-teaching cleanup.
+- [x] **Backgrounds on key press** — Keys/buttons 1–9 and 0 switch live backgrounds without blanking lyrics (accepted as-is).
+- [x] **Director on devices** — Preview text stays in-bounds; song search matches controller (accents + library filter); one-verse popups sync across views.
+- [x] **Director session lag** — Avoid full font re-fit every step (binary search + reuse prior size); skip fit when content unchanged; defer song catalog load; share state payloads across non-audience sockets.
+- [x] **Startup layout preference** — Settings → Startup: Presenter+projector, Controller+projector, or Projector only (output on second display when available).
+- [x] **Controller desktop preview** — Windowed and fullscreen preview fill correctly without crushing verse thumbnails; phones unchanged.
 - [ ] **Song library UX** — Review remaining edge cases (nested folders, empty libraries).
 - [ ] **Song repository config** — Allow per-library defaults or clearer UI when multiple GitHub song folders are in use.
 
 ## Bible references
 
-- [ ] **Popup markup** — Inline verse leak fixed in 1.1.14 (`bible-popup-verse`); spot-check director, stage, and projector views for any remaining layout quirks on long passages.
+- [x] **One-verse popups** — Show a single verse at a time with ‹ › controls; sync by `verseIndex` across presenter, director, projector, and audience (replaces fragile scroll sync).
+- [ ] **Popup markup** — Spot-check director, stage, and projector views for remaining layout quirks on long single verses.
 
 ## Docs & process
 

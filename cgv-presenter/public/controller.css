@@ -88,7 +88,7 @@ textarea {
 .controller-shell {
   display: grid;
   grid-template-columns: minmax(320px, 0.95fr) minmax(420px, 1.25fr);
-  grid-template-rows: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) auto;
   gap: 14px;
   height: calc(100vh - 60px);
   min-height: 0;
@@ -104,6 +104,11 @@ textarea {
 .controller-panel {
   grid-column: 2;
   grid-row: 1;
+}
+
+.live-toolbar {
+  grid-column: 1 / -1;
+  grid-row: 2;
 }
 
 .song-library,
@@ -380,7 +385,7 @@ textarea {
 
 .controller-panel {
   display: grid;
-  grid-template-rows: auto auto minmax(220px, 1fr);
+  grid-template-rows: auto minmax(220px, 1fr) auto;
   gap: 10px;
   align-content: stretch;
   min-height: 0;
@@ -522,9 +527,9 @@ textarea {
 }
 
 .preview-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  display: grid;
+  grid-template-rows: auto minmax(160px, 1fr) 96px;
+  gap: 8px;
   min-height: 0;
   overflow: hidden;
 }
@@ -534,8 +539,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  flex: 0 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .preview-heading h2 {
@@ -544,10 +548,9 @@ textarea {
 
 .preview-stage {
   position: relative;
-  flex: 1 1 auto;
   width: 100%;
-  min-height: 200px;
-  aspect-ratio: 16 / 9;
+  min-height: 160px;
+  height: 100%;
   overflow: hidden;
   border-radius: 6px;
   background: #0f172a;
@@ -575,6 +578,12 @@ textarea {
 .controller-preview.song-output {
   /* ~7% of stage height and ~5% of width, expressed via width (cqw) */
   padding: 3.9cqw 5cqw;
+}
+
+@media (min-width: 901px) {
+  .controller-preview.song-output {
+    padding: 2.4cqw 4cqw;
+  }
 }
 
 .controller-preview.blank-output {
@@ -800,10 +809,11 @@ input[type="color"] {
 
 .song-thumbnails {
   display: flex;
-  flex: 0 0 auto;
   gap: 8px;
-  margin-top: 10px;
-  padding: 2px 2px 6px;
+  height: 100%;
+  min-height: 0;
+  margin-top: 0;
+  padding: 0;
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
@@ -815,12 +825,39 @@ input[type="color"] {
   flex: 1 1 auto;
 }
 
+.background-quick-keys {
+  display: none;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.background-key {
+  min-height: 36px;
+  padding: 0;
+  border-radius: 7px;
+  background: #e5e7eb;
+  color: #111827;
+  font-weight: 700;
+}
+
+.background-key.selected {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.background-key:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
 .song-thumbnail {
   display: grid;
   gap: 4px;
   flex: 0 0 148px;
   width: 148px;
-  min-height: 78px;
+  height: 100%;
+  min-height: 0;
+  align-content: start;
   background: #f3f4f6;
   color: #111827;
   border: 2px solid transparent;
@@ -858,45 +895,134 @@ input[type="color"] {
   -webkit-line-clamp: 2;
 }
 
-@media (max-width: 900px) {
-  body {
-    overflow: auto;
-    padding-bottom: calc(78px + env(safe-area-inset-bottom, 0px));
-  }
-
+/* Desktop: preview fills remaining height; verse strip stays readable. Phones unchanged below. */
+@media (min-width: 901px) {
   .controller-shell {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .song-find-row {
-    grid-template-columns: 1fr;
-  }
-
-  .song-list,
-  .controller-panel {
-    overflow: visible;
+    grid-template-columns: minmax(300px, 0.78fr) minmax(520px, 1.45fr);
   }
 
   .controller-panel {
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+  }
+
+  /* Pin rows so a hidden Background Style panel does not collapse Preview into the auto track. */
+  .controller-panel > .background-controls {
+    grid-row: 1;
+  }
+
+  .controller-panel > .preview-card {
+    grid-row: 2;
+    min-height: 0;
+  }
+
+  .controller-panel > .background-quick-keys {
+    grid-row: 3;
+  }
+
+  .preview-card {
+    height: 100%;
+    min-height: 0;
+    grid-template-rows: auto minmax(200px, 1fr) 128px;
   }
 
   .preview-stage {
     min-height: 200px;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    aspect-ratio: auto;
+    margin-inline: 0;
   }
 
-  /* Always-reachable Blank / Send Live on phones (no Esc / Return keys). */
+  .song-thumbnails {
+    height: 128px;
+    max-height: 128px;
+    min-height: 128px;
+  }
+
+  .background-controls[open] {
+    max-height: 24vh;
+  }
+}
+
+/* Desktop fullscreen: large preview, but keep verse cards usable. */
+@media (min-width: 901px) {
+  body.controller-fullscreen .controller-shell {
+    grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.55fr);
+  }
+
+  /* Fullscreen panel is 2 rows; remount Preview onto the flexible first track. */
+  body.controller-fullscreen .controller-panel > .preview-card {
+    grid-row: 1;
+  }
+
+  body.controller-fullscreen .controller-panel > .background-quick-keys {
+    grid-row: 2;
+  }
+
+  body.controller-fullscreen .preview-card {
+    grid-template-rows: minmax(180px, 1fr) 140px;
+  }
+
+  body.controller-fullscreen .preview-stage {
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    height: 100% !important;
+    width: 100%;
+    min-height: 180px;
+  }
+
+  body.controller-fullscreen .song-thumbnails {
+    height: 140px;
+    max-height: 140px;
+    min-height: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow: hidden;
+    height: 100dvh;
+  }
+
+  .controller-topbar {
+    padding: 8px 12px;
+  }
+
+  .controller-shell {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(240px, 0.58fr) minmax(0, 0.42fr) auto;
+    height: calc(100dvh - 56px);
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .song-library {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .controller-panel {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 0;
+    overflow: hidden;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+
   .live-toolbar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 40;
-    border-radius: 0;
+    grid-column: 1;
+    grid-row: 3;
+    position: static;
+    border-radius: 8px;
     gap: 6px;
-    padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
-    box-shadow: 0 -6px 24px rgba(15, 23, 42, 0.16);
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .song-find-row {
+    grid-template-columns: 1fr;
   }
 
   .live-toolbar .toolbar-spacer {
@@ -911,14 +1037,53 @@ input[type="color"] {
   .action-btn kbd {
     display: none;
   }
+
+  /* Phone: hide style editor; use 0–9 keys instead. */
+  #backgroundControls,
+  #toggleBackgroundButton {
+    display: none !important;
+  }
+
+  .background-quick-keys {
+    display: grid;
+  }
+
+  .preview-card {
+    grid-template-rows: auto minmax(100px, 1fr) 40px;
+  }
+
+  .preview-stage {
+    min-height: 100px;
+  }
+
+  .song-thumbnails.title-only,
+  .song-thumbnails {
+    align-items: stretch;
+  }
+
+  .song-thumbnail {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 4.75rem;
+    height: 100%;
+    padding: 0 10px;
+    place-content: center;
+  }
+
+  .song-thumbnail span {
+    display: none;
+  }
+
+  .song-thumbnail b {
+    font-size: 0.72em;
+    white-space: nowrap;
+  }
 }
 
-/* Device fullscreen: songs | preview+thumbs, with clear space above the fixed toolbar. */
+/* Fullscreen / device mode: same in-flow grid, no fixed toolbar overlay. */
 body.controller-fullscreen {
-  --controller-toolbar-height: 92px;
   height: 100dvh;
   overflow: hidden;
-  padding-bottom: 0;
   background: #0f172a;
 }
 
@@ -935,20 +1100,20 @@ body.controller-fullscreen .song-library-heading-row .song-actions {
 }
 
 body.controller-fullscreen .controller-shell {
-  grid-template-columns: minmax(240px, 0.85fr) minmax(300px, 1.35fr);
-  grid-template-rows: minmax(0, 1fr);
-  height: calc(100dvh - var(--controller-toolbar-height));
-  max-height: calc(100dvh - var(--controller-toolbar-height));
+  grid-template-columns: minmax(220px, 0.9fr) minmax(280px, 1.3fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  height: 100dvh;
+  max-height: 100dvh;
   padding: 8px;
   gap: 8px;
   overflow: hidden;
 }
 
 body.controller-fullscreen .song-library {
+  grid-column: 1;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  max-height: 100%;
   min-height: 0;
   overflow: hidden;
   background: #111827;
@@ -966,10 +1131,6 @@ body.controller-fullscreen .song-library-heading {
   color: #7dd3fc;
 }
 
-body.controller-fullscreen .song-find-row {
-  flex: 0 0 auto;
-}
-
 body.controller-fullscreen .song-list {
   flex: 1 1 auto;
   min-height: 0;
@@ -978,40 +1139,83 @@ body.controller-fullscreen .song-list {
 
 body.controller-fullscreen .song-item {
   background: #1e293b;
-  color: #e2e8f0;
+  border-color: #334155;
+  color: #f1f5f9;
+}
+
+body.controller-fullscreen .song-item .song-select {
+  color: #f8fafc;
+}
+
+body.controller-fullscreen .song-item .song-select strong span {
+  color: #7dd3fc;
+}
+
+body.controller-fullscreen .song-item .song-select span {
+  color: #cbd5e1;
+}
+
+body.controller-fullscreen .song-item .song-edit {
+  background: #334155;
+  color: #f8fafc;
 }
 
 body.controller-fullscreen .song-item.selected {
   background: #ffffff;
+  border-color: #38bdf8;
   color: #0f172a;
 }
 
-body.controller-fullscreen .controller-panel {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  max-height: 100%;
-  min-height: 0;
-  overflow: hidden;
-  background: transparent;
-  gap: 8px;
+body.controller-fullscreen .song-item.selected .song-select {
+  color: #0f172a;
 }
 
-/* Keep toolbar fixed; do not let it eat panel layout space. */
-body.controller-fullscreen .controller-panel > .live-toolbar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 40;
-  flex: none;
-  width: auto;
-  height: auto;
-  margin: 0;
-  border-radius: 0;
+body.controller-fullscreen .song-item.selected .song-select strong span {
+  color: #075985;
+}
+
+body.controller-fullscreen .song-item.selected .song-select span {
+  color: #4b5563;
+}
+
+body.controller-fullscreen .song-item.selected .song-edit {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+body.controller-fullscreen .controller-panel {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-height: 0;
+  overflow: hidden;
+  height: 100%;
+  background: transparent;
+}
+
+body.controller-fullscreen .controller-panel > .preview-card {
+  grid-row: 1;
+  min-height: 0;
+}
+
+body.controller-fullscreen .controller-panel > .background-quick-keys {
+  grid-row: 2;
+}
+
+/* Keep background picker available via toolbar; don't steal preview height. */
+body.controller-fullscreen .background-controls {
+  display: none !important;
+}
+
+body.controller-fullscreen .live-toolbar {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  position: static;
+  border-radius: 8px;
   background: #111827;
   color: #f9fafb;
-  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: none;
   padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
 }
 
@@ -1028,30 +1232,12 @@ body.controller-fullscreen #fullscreenButton {
   outline: 2px solid #38bdf8;
 }
 
-body.controller-fullscreen .background-controls {
-  flex: 0 0 auto;
-  max-height: 30vh;
-  overflow: auto;
-  background: #111827;
-  color: #e5e7eb;
-  box-shadow: none;
-}
-
-body.controller-fullscreen .background-controls:not([open]) {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-body.controller-fullscreen .background-controls summary {
-  color: #7dd3fc;
-}
-
 body.controller-fullscreen .preview-card {
-  flex: 1 1 auto;
   min-height: 0;
+  height: 100%;
   display: grid;
-  grid-template-rows: minmax(0, 1fr) 100px;
-  gap: 8px;
+  grid-template-rows: minmax(180px, 1fr) 140px;
+  gap: 10px;
   overflow: hidden;
   background: #111827;
   box-shadow: none;
@@ -1061,27 +1247,22 @@ body.controller-fullscreen .preview-card {
 body.controller-fullscreen .preview-stage {
   position: relative;
   width: 100%;
-  min-height: 0;
+  min-height: 180px;
   height: 100%;
   max-height: none;
   aspect-ratio: auto;
+  margin-inline: 0;
   overflow: hidden;
 }
 
 body.controller-fullscreen .song-thumbnails {
-  height: 100px;
-  min-height: 100px;
-  max-height: 100px;
-  margin-top: 0;
-  padding: 0;
-  align-items: stretch;
+  height: 140px;
+  max-height: 140px;
+  min-height: 140px;
+  align-self: end;
 }
 
 body.controller-fullscreen .song-thumbnail {
-  flex: 0 0 150px;
-  width: 150px;
-  min-height: 0;
-  height: 100%;
   background: #1f2937;
   color: #f9fafb;
   border-color: transparent;
@@ -1100,27 +1281,65 @@ body.controller-fullscreen .song-thumbnail span {
   color: #e5e7eb;
 }
 
+body.controller-fullscreen .background-key {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+body.controller-fullscreen .background-key.selected {
+  background: #0284c7;
+  color: #ffffff;
+}
+
 @media (max-width: 900px) {
   body.controller-fullscreen .controller-shell {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(140px, 0.34fr) minmax(0, 0.66fr);
+    grid-template-rows: minmax(240px, 0.56fr) minmax(0, 0.44fr) auto;
+    height: 100dvh;
   }
 
   body.controller-fullscreen .song-library {
+    grid-column: 1;
     grid-row: 1;
   }
 
   body.controller-fullscreen .controller-panel {
+    grid-column: 1;
     grid-row: 2;
+    grid-template-rows: minmax(0, 1fr) auto;
+  }
+
+  body.controller-fullscreen .live-toolbar {
+    grid-column: 1;
+    grid-row: 3;
   }
 
   body.controller-fullscreen .preview-card {
-    grid-template-rows: minmax(0, 1fr) 92px;
+    grid-template-rows: minmax(0, 1fr) 40px;
+  }
+
+  body.controller-fullscreen .preview-stage {
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    height: 100% !important;
   }
 
   body.controller-fullscreen .song-thumbnails {
-    height: 92px;
-    min-height: 92px;
-    max-height: 92px;
+    height: 40px;
+    max-height: 40px;
+    min-height: 40px;
+  }
+
+  body.controller-fullscreen .background-quick-keys {
+    display: grid;
+  }
+
+  body.controller-fullscreen #backgroundControls,
+  body.controller-fullscreen #toggleBackgroundButton {
+    display: none !important;
+  }
+
+  body.controller-fullscreen .song-thumbnail {
+    background: #1f2937;
   }
 }

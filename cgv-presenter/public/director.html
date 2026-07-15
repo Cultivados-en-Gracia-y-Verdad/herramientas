@@ -45,7 +45,10 @@
         </div>
         <button id="closeSongsButton" type="button" class="ghost" data-i18n="close">Close</button>
       </div>
-      <input id="songSearch" type="search" placeholder="Search song number, title, or lyric..." data-i18n-placeholder="searchSongNumberTitleLyric">
+      <div class="song-drawer-search">
+        <input id="songSearch" type="search" placeholder="Search song number, title, or lyric..." data-i18n-placeholder="searchSongNumberTitleLyric" autocomplete="off" autocorrect="off" spellcheck="false">
+        <select id="songLibraryFilter" data-i18n-title="songLibrary" aria-label="Song library"></select>
+      </div>
       <button id="showSongListButton" type="button" data-i18n="showSongListScreen">Show Song List Screen</button>
       <div id="songList" class="song-list"></div>
     </aside>
@@ -58,8 +61,8 @@
   </main>
 
   <script src="/socket.io/socket.io.js"></script>
-  <script src="i18n.js"></script>
-  <script src="song-utils.js"></script>
-  <script src="director.js"></script>
+  <script src="i18n.js?v=lag1"></script>
+  <script src="song-utils.js?v=lag1"></script>
+  <script src="director.js?v=lag1"></script>
 </body>
 </html>

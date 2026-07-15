@@ -211,11 +211,25 @@ function sendLive() {
 }
 
 function clearLive() {
+  controllerState = {
+    ...controllerState,
+    active: false,
+    blank: false,
+    title: "",
+    sections: [],
+    chordSections: [],
+    sectionLabels: [],
+    step: 0
+  };
+  renderPreview();
   socket.emit("controller-clear");
 }
 
+/** "off" | "native" | "css" — prevents native exit events from wiping CSS-only fullscreen on phones. */
+let controllerFullscreenMode = "off";
+
 function isControllerFullscreen() {
-  return !!(
+  return controllerFullscreenMode !== "off" || !!(
     document.fullscreenElement ||
     document.webkitFullscreenElement ||
     document.body.classList.contains("controller-fullscreen")
@@ -232,23 +246,15 @@ function syncFullscreenButton() {
   button.classList.toggle("active", active);
 }
 
-function syncToolbarInset() {
-  const toolbar = document.querySelector(".live-toolbar");
-  if (!toolbar) return;
-  const height = Math.ceil(toolbar.getBoundingClientRect().height || 92);
-  document.documentElement.style.setProperty("--controller-toolbar-height", `${height}px`);
-}
-
 function setControllerFullscreenClass(active) {
   document.body.classList.toggle("controller-fullscreen", active);
+  if (!active) controllerFullscreenMode = "off";
   syncFullscreenButton();
-  syncToolbarInset();
   const previewCard = document.querySelector(".preview-card");
   if (previewCard) previewCard.scrollTop = 0;
   const thumbs = byId("songThumbnails");
   if (thumbs) thumbs.scrollLeft = 0;
   requestAnimationFrame(() => {
-    syncToolbarInset();
     const preview = byId("controllerPreview");
     if (preview?.classList.contains("song-output") && !preview.classList.contains("blank-output")) {
       fitPreviewSongText(preview);
@@ -256,17 +262,54 @@ function setControllerFullscreenClass(active) {
   });
 }
 
-async function enterControllerFullscreen() {
-  const target = document.documentElement;
-  try {
-    if (target.requestFullscreen) {
+async function requestNativeFullscreen(target) {
+  if (!target) return false;
+
+  if (typeof target.requestFullscreen === "function") {
+    try {
+      await target.requestFullscreen({ navigationUI: "hide" });
+    } catch {
       await target.requestFullscreen();
-    } else if (target.webkitRequestFullscreen) {
-      target.webkitRequestFullscreen();
     }
-  } catch {
-    // iOS Safari often blocks native fullscreen outside installed PWAs.
+    return !!(document.fullscreenElement || document.webkitFullscreenElement);
   }
+
+  if (typeof target.webkitRequestFullscreen === "function") {
+    target.webkitRequestFullscreen();
+    return !!document.webkitFullscreenElement;
+  }
+
+  if (typeof target.webkitRequestFullScreen === "function") {
+    target.webkitRequestFullScreen();
+    return !!document.webkitFullscreenElement;
+  }
+
+  if (typeof target.msRequestFullscreen === "function") {
+    target.msRequestFullscreen();
+    return !!document.msFullscreenElement;
+  }
+
+  return false;
+}
+
+async function enterControllerFullscreen() {
+  let native = false;
+
+  try {
+    native = await requestNativeFullscreen(document.documentElement);
+  } catch {
+    native = false;
+  }
+
+  if (!native) {
+    try {
+      native = await requestNativeFullscreen(document.body);
+    } catch {
+      native = false;
+    }
+  }
+
+  controllerFullscreenMode = native ? "native" : "css";
   setControllerFullscreenClass(true);
 }
 
@@ -276,10 +319,14 @@ async function exitControllerFullscreen() {
       await document.exitFullscreen();
     } else if (document.webkitExitFullscreen && document.webkitFullscreenElement) {
       document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen && document.msFullscreenElement) {
+      document.msExitFullscreen();
     }
   } catch {
-    // Keep CSS fallback below.
+    // Keep CSS fallback exit below.
   }
+
+  controllerFullscreenMode = "off";
   setControllerFullscreenClass(false);
 }
 
@@ -291,15 +338,14 @@ async function toggleControllerFullscreen() {
   }
 }
 
-function blankLive() {
+function blankLive({ useDefaultBackground = true } = {}) {
   socket.emit("controller-blank", {
     background: byId("backgroundColor").value,
-    backgroundMedia: byId("backgroundMedia").value.trim(),
+    // Default blank uses Settings → blank background image, not the last gallery pick.
+    backgroundMedia: useDefaultBackground ? "" : byId("backgroundMedia").value.trim(),
     textColor: byId("textColor").value,
     accentColor: byId("accentColor").value,
-    // Use the background just chosen in the controller (digit key / gallery tap),
-    // not a separate settings default that would ignore that choice.
-    useConfiguredBlankMedia: false
+    useConfiguredBlankMedia: useDefaultBackground
   });
 }
 
@@ -531,6 +577,7 @@ function renderBackgroundGallery() {
         ${t("addBackgrounds")}
       </div>
     `;
+    renderBackgroundQuickKeys();
     return;
   }
 
@@ -549,6 +596,34 @@ function renderBackgroundGallery() {
       </button>
     `;
   }).join("");
+
+  renderBackgroundQuickKeys();
+}
+
+function renderBackgroundQuickKeys() {
+  const host = byId("backgroundQuickKeys");
+  if (!host) return;
+
+  const selectedUrl = byId("backgroundMedia").value.trim();
+  const slots = Array.from({ length: 10 }, (_, index) => {
+    const background = backgrounds[index] || null;
+    const key = index === 9 ? "0" : String(index + 1);
+    const selected = background && background.url === selectedUrl ? " selected" : "";
+    const disabled = background ? "" : " disabled";
+    const label = background?.name || key;
+    return `
+      <button
+        type="button"
+        class="background-key${selected}"
+        data-background-index="${index}"
+        ${disabled}
+        title="${escapeHtml(label)}"
+        aria-label="${escapeHtml(label)}"
+      >${key}</button>
+    `;
+  });
+
+  host.innerHTML = slots.join("");
 }
 
 function renderSongBackgroundSelect(selectedUrl = byId("songBackgroundMedia")?.value || "") {
@@ -577,10 +652,17 @@ function selectBackground(url, { goBlank = false } = {}) {
   renderBackgroundGallery();
   renderPreview();
   if (goBlank) {
-    blankLive();
+    blankLive({ useDefaultBackground: false });
     return;
   }
   applyStyle();
+}
+
+function selectBackgroundByIndex(index, { goBlank = false } = {}) {
+  const background = backgrounds[index];
+  if (!background) return false;
+  selectBackground(background.url, { goBlank });
+  return true;
 }
 
 function getBackgroundShortcutIndex(event) {
@@ -596,11 +678,9 @@ function getBackgroundShortcutIndex(event) {
 
 function selectBackgroundFromShortcut(event) {
   const index = getBackgroundShortcutIndex(event);
-  const background = index >= 0 ? backgrounds[index] : null;
-  if (!background) return false;
-
+  if (index < 0) return false;
+  if (!selectBackgroundByIndex(index)) return false;
   event.preventDefault();
-  selectBackground(background.url);
   return true;
 }
 
@@ -610,25 +690,23 @@ function renderPreview() {
   const selectedSong = getSelectedSong();
   const isLive = !!controllerState.active;
   const showBlank = isLive && !!controllerState.blank;
+  const liveMedia = controllerState.backgroundMedia || "";
   const media = isLive
-    ? controllerState.backgroundMedia || ""
-    : selectedSong?.backgroundMedia || byId("backgroundMedia").value.trim();
-  const previewSections = isLive && !showBlank
-    ? controllerState.sections || []
-    : selectedSong
-      ? parseSections(selectedSong.lyrics)
-      : [];
+    ? liveMedia
+    : "";
+  // Preview mirrors the projector: teaching when not live, otherwise the live song/blank.
+  const liveSections = isLive && !showBlank ? controllerState.sections || [] : [];
+  const selectedSections = selectedSong ? parseSections(selectedSong.lyrics) : [];
+  const thumbnailSections = isLive && !showBlank ? liveSections : selectedSections;
 
-  if (previewStep >= previewSections.length) {
-    previewStep = Math.max(0, previewSections.length - 1);
+  if (previewStep >= thumbnailSections.length) {
+    previewStep = Math.max(0, thumbnailSections.length - 1);
   }
 
   const activeIndex = isLive ? controllerState.step : previewStep;
-  const activeSection = previewSections[activeIndex] || [];
-  const title = isLive
-    ? controllerState.title || ""
-    : selectedSong?.title || "";
-  const showSongStage = showBlank || previewSections.length > 0;
+  const activeSection = liveSections[activeIndex] || [];
+  const title = isLive ? controllerState.title || "" : "";
+  const showSongStage = isLive && (showBlank || liveSections.length > 0);
   const background = isLive
     ? controllerState.background || byId("backgroundColor").value
     : byId("backgroundColor").value;
@@ -645,10 +723,10 @@ function renderPreview() {
   preview.classList.toggle("has-media", !!media && !isVideoMedia(media) && !showBlank);
   preview.classList.toggle("has-video", !!media && isVideoMedia(media) && !showBlank);
   preview.classList.toggle("blank-output", showBlank);
-  preview.classList.toggle("teaching-mode", !showSongStage);
+  preview.classList.toggle("teaching-mode", !isLive);
   preview.classList.toggle("song-output", showSongStage);
 
-  if (!showSongStage) {
+  if (!isLive) {
     preview.innerHTML = `
       <div class="teaching-mode-preview">
         <strong>${t("teachingMode")}</strong>
@@ -674,7 +752,7 @@ function renderPreview() {
     fitPreviewSongText(preview);
   }
 
-  renderThumbnails(previewSections, activeIndex, controllerState.sectionLabels || selectedSong?.sectionLabels || []);
+  renderThumbnails(thumbnailSections, activeIndex, controllerState.sectionLabels || selectedSong?.sectionLabels || []);
 
   status.textContent = isLive
     ? showBlank
@@ -684,7 +762,7 @@ function renderPreview() {
   status.classList.toggle("active", isLive);
 }
 
-/** Same fit rules as projector fitSongOutputText, scaled to the 16:9 preview box. */
+/** Fit lyrics to the preview box. On desktop use more of the stage; phones stay conservative. */
 function fitPreviewSongText(element) {
   if (!element) return;
 
@@ -700,11 +778,12 @@ function fitPreviewSongText(element) {
     return;
   }
 
+  const isDesktop = window.matchMedia("(min-width: 901px)").matches;
   const scale = width / 1920;
-  const baseSize = Math.max(28, 168 * scale);
+  const baseSize = Math.max(isDesktop ? 36 : 28, (isDesktop ? 200 : 168) * scale);
   const hardMinSize = Math.max(18, 58 * scale);
-  const maxWidth = Math.max(40, width * 0.84);
-  const maxHeight = Math.max(40, height * 0.78);
+  const maxWidth = Math.max(40, width * (isDesktop ? 0.9 : 0.84));
+  const maxHeight = Math.max(40, height * (isDesktop ? 0.9 : 0.78));
   const step = Math.max(0.5, 2 * scale);
   let size = baseSize;
 
@@ -743,14 +822,17 @@ function renderThumbnails(sections, activeIndex, labels = []) {
     return;
   }
 
+  const titleOnly = window.matchMedia("(max-width: 900px)").matches;
+  thumbnailHost.classList.toggle("title-only", titleOnly);
+
   thumbnailHost.innerHTML = sections.map((section, index) => {
     const active = index === activeIndex ? " active" : "";
     const firstLine = section[0] || `${t("screen")} ${index + 1}`;
     const label = labels[index] || `${t("screen")} ${index + 1}`;
     return `
-      <button type="button" class="song-thumbnail${active}" data-screen-index="${index}">
+      <button type="button" class="song-thumbnail${active}" data-screen-index="${index}" title="${escapeHtml(firstLine)}">
         <b>${escapeHtml(label)}</b>
-        <span>${escapeHtml(firstLine)}</span>
+        ${titleOnly ? "" : `<span>${escapeHtml(firstLine)}</span>`}
       </button>
     `;
   }).join("");
@@ -907,6 +989,14 @@ byId("backgroundGallery").addEventListener("click", event => {
   // Device stand-in for digit + Esc: one tap selects the background and blanks live.
   selectBackground(choice.dataset.backgroundUrl || "", { goBlank: true });
 });
+byId("backgroundQuickKeys").addEventListener("click", event => {
+  const key = event.target.closest("[data-background-index]");
+  if (!key || key.disabled) return;
+  const index = Number(key.dataset.backgroundIndex);
+  if (!Number.isInteger(index)) return;
+  // Change background under the current song/blank — never replace lyrics with blank.
+  selectBackgroundByIndex(index, { goBlank: false });
+});
 byId("clearBackgroundButton").addEventListener("click", () => selectBackground(""));
 byId("backgroundColor").addEventListener("input", renderPreview);
 byId("textColor").addEventListener("input", renderPreview);
@@ -976,10 +1066,37 @@ if (previewStage && typeof ResizeObserver !== "undefined") {
 }
 
 document.addEventListener("fullscreenchange", () => {
-  setControllerFullscreenClass(!!document.fullscreenElement);
+  if (document.fullscreenElement) {
+    controllerFullscreenMode = "native";
+    setControllerFullscreenClass(true);
+    return;
+  }
+  // Ignore native "exit" events when we are in CSS-only fullscreen (common on phones).
+  if (controllerFullscreenMode === "native") {
+    controllerFullscreenMode = "off";
+    setControllerFullscreenClass(false);
+  }
 });
 document.addEventListener("webkitfullscreenchange", () => {
-  setControllerFullscreenClass(!!document.webkitFullscreenElement);
+  if (document.webkitFullscreenElement) {
+    controllerFullscreenMode = "native";
+    setControllerFullscreenClass(true);
+    return;
+  }
+  if (controllerFullscreenMode === "native") {
+    controllerFullscreenMode = "off";
+    setControllerFullscreenClass(false);
+  }
 });
-window.addEventListener("resize", syncToolbarInset);
-syncToolbarInset();
+
+const compactThumbnailQuery = window.matchMedia("(max-width: 900px)");
+const refreshThumbnailsForViewport = () => {
+  const preview = byId("controllerPreview");
+  if (!preview) return;
+  renderPreview();
+};
+if (compactThumbnailQuery.addEventListener) {
+  compactThumbnailQuery.addEventListener("change", refreshThumbnailsForViewport);
+} else if (compactThumbnailQuery.addListener) {
+  compactThumbnailQuery.addListener(refreshThumbnailsForViewport);
+}

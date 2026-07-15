@@ -29,8 +29,6 @@ let participant = null;
 let activeQuizKey = null;
 let popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
 let completedQuizIds = new Set();
-let suppressPopupScrollSync = false;
-let lastPopupScrollSentAt = 0;
 
 const storedParticipantId = localStorage.getItem("rootsParticipantId")
   || (window.crypto?.randomUUID
@@ -164,9 +162,9 @@ function render() {
       return;
     }
 
-    projectorSlide.innerHTML = html;
-    projectorSlide.classList.remove("song-output");
+    projectorSlide.classList.remove("song-output", "blank-output", "song-has-media", "song-has-video", "title-slide");
     projectorSlide.removeAttribute("style");
+    projectorSlide.innerHTML = html;
     applySlideLayoutClass(projectorSlide);
     if (!isTablet) {
       renderProjectorQuiz();
@@ -351,44 +349,74 @@ function getPopupVerseBlocks(popup) {
   return Array.from(popup?.querySelectorAll(":scope > .bible-popup-verse") || []);
 }
 
-function getPopupVerseIndex(popup) {
+function applyPopupVerseVisibility(popup, verseIndex = 0) {
+  if (!popup) return 0;
+
   const blocks = getPopupVerseBlocks(popup);
   if (!blocks.length) return 0;
 
-  let activeIndex = 0;
-  let bestDistance = Infinity;
+  const boundedIndex = Math.min(blocks.length - 1, Math.max(0, Number(verseIndex) || 0));
 
   blocks.forEach((block, index) => {
-    const distance = Math.abs(block.offsetTop - popup.scrollTop);
-    if (distance < bestDistance) {
-      bestDistance = distance;
-      activeIndex = index;
-    }
+    const isActive = index === boundedIndex;
+    block.classList.toggle("is-active", isActive);
+    block.hidden = !isActive;
+    if (isActive) block.setAttribute("data-active", "true");
+    else block.removeAttribute("data-active");
   });
 
-  return activeIndex;
+  const current = popup.querySelector("[data-popup-verse-current]");
+  if (current) current.textContent = String(boundedIndex + 1);
+
+  popup.querySelectorAll("[data-popup-verse]").forEach(button => {
+    const delta = Number(button.dataset.popupVerse);
+    const disabled = (delta < 0 && boundedIndex <= 0) || (delta > 0 && boundedIndex >= blocks.length - 1);
+    button.disabled = disabled;
+  });
+
+  const nav = popup.querySelector(".bible-popup-nav");
+  if (nav) nav.hidden = blocks.length <= 1;
+
+  return boundedIndex;
 }
 
-function scrollPopupToVerseIndex(popup, verseIndex = 0, fallbackRatio = 0) {
-  if (!popup) return;
+function emitPopupVerseIndex(verseIndex) {
+  const boundedIndex = Math.max(0, Number(verseIndex) || 0);
+  popupState = {
+    ...popupState,
+    scrollRatio: 0,
+    verseIndex: boundedIndex
+  };
+  socket.emit("set-popup-verse", boundedIndex);
+}
 
+function stepPopupVerse(direction) {
+  if (!popupState.reference) return;
+
+  const openPopup = document.querySelector(".bible-ref.open .bible-popup");
+  const overlay = document.getElementById("sharedPopupOverlay");
+  const popup = openPopup || (overlay?.classList.contains("open") ? overlay : null);
   const blocks = getPopupVerseBlocks(popup);
-  const maxScroll = Math.max(0, popup.scrollHeight - popup.clientHeight);
-  let nextScrollTop = maxScroll * (fallbackRatio || 0);
+  let total = blocks.length;
 
-  if (blocks.length) {
-    const boundedIndex = Math.min(blocks.length - 1, Math.max(0, Number(verseIndex) || 0));
-    nextScrollTop = blocks[boundedIndex].offsetTop;
+  if (!total) {
+    const ref = Array.from(document.querySelectorAll(".bible-ref"))
+      .find(el => el.dataset.reference === popupState.reference);
+    total = Number(ref?.dataset.verseCount) || 1;
   }
 
-  popup.scrollTop = Math.min(maxScroll, Math.max(0, nextScrollTop));
+  const currentIndex = popupState.verseIndex || 0;
+  const nextIndex = Math.min(total - 1, Math.max(0, currentIndex + direction));
+  if (nextIndex === currentIndex) return;
+
+  applyPopupVerseVisibility(popup, nextIndex);
+  emitPopupVerseIndex(nextIndex);
 }
 
 function applySharedPopupState() {
   const activeReference = popupState.reference;
   let activePopup = null;
 
-  ensurePresenterPopupControls();
   renderSharedPopupOverlay();
 
   document.querySelectorAll(".bible-ref.open").forEach(reference => {
@@ -409,14 +437,7 @@ function applySharedPopupState() {
   });
 
   if (!activePopup) return;
-
-  requestAnimationFrame(() => {
-    suppressPopupScrollSync = true;
-    scrollPopupToVerseIndex(activePopup, popupState.verseIndex, popupState.scrollRatio);
-    requestAnimationFrame(() => {
-      suppressPopupScrollSync = false;
-    });
-  });
+  applyPopupVerseVisibility(activePopup, popupState.verseIndex);
 }
 
 function renderSharedPopupOverlay() {
@@ -435,40 +456,9 @@ function renderSharedPopupOverlay() {
   if (!sourcePopup) return;
 
   overlay.innerHTML = sourcePopup.innerHTML;
-
-  requestAnimationFrame(() => {
-    scrollPopupToVerseIndex(overlay, popupState.verseIndex, popupState.scrollRatio);
-  });
-}
-
-function ensurePresenterPopupControls() {
-  if (!isPresenter) return;
-
-  document.querySelectorAll(".bible-ref").forEach(reference => {
-    if (reference.querySelector(".popup-controls")) return;
-
-    const controls = document.createElement("span");
-    controls.className = "popup-controls";
-    controls.innerHTML = `
-      <button class="popup-scroll-button" type="button" data-popup-scroll="-1">Up</button>
-      <button class="popup-scroll-button" type="button" data-popup-scroll="1">Down</button>
-    `;
-    reference.appendChild(controls);
-  });
-}
-
-function syncPopupScrollFromElement(popup, force = false) {
-  if (!isPresenter || suppressPopupScrollSync || !popup) return;
-
-  const now = Date.now();
-  if (!force && now - lastPopupScrollSentAt < 80) return;
-
-  const maxScroll = Math.max(0, popup.scrollHeight - popup.clientHeight);
-  const scrollRatio = maxScroll ? popup.scrollTop / maxScroll : 0;
-  const verseIndex = getPopupVerseIndex(popup);
-
-  lastPopupScrollSentAt = now;
-  socket.emit("set-popup-scroll", { scrollRatio, verseIndex });
+  // Projector/audience follow the shared verse index; navigation stays on presenter/director.
+  overlay.querySelector(".bible-popup-nav")?.remove();
+  applyPopupVerseVisibility(overlay, popupState.verseIndex);
 }
 
 function getProjectorBaseSize(element) {
@@ -548,24 +538,6 @@ function applyTabletPreviewScale() {
     viewport.clientHeight / TABLET_SURFACE_H
   );
   root.style.transform = `scale(${scale})`;
-}
-
-function scrollActivePresenterPopup(direction) {
-  const popup = document.querySelector(".bible-ref.open .bible-popup");
-  if (!popup) return;
-
-  const blocks = getPopupVerseBlocks(popup);
-  if (blocks.length) {
-    const nextIndex = Math.min(
-      blocks.length - 1,
-      Math.max(0, getPopupVerseIndex(popup) + direction)
-    );
-    scrollPopupToVerseIndex(popup, nextIndex);
-  } else {
-    popup.scrollTop += direction * Math.max(80, popup.clientHeight * 0.65);
-  }
-
-  syncPopupScrollFromElement(popup, true);
 }
 
 function fitSlideText(element, options = {}) {
@@ -1064,15 +1036,18 @@ function toggleAudienceQr() {
 }
 
 document.addEventListener("click", event => {
-  const scrollButton = event.target.closest("[data-popup-scroll]");
-  if (isPresenter && scrollButton) {
+  const verseButton = event.target.closest("[data-popup-verse]");
+  if (isPresenter && verseButton) {
     event.preventDefault();
     event.stopPropagation();
-    scrollActivePresenterPopup(Number(scrollButton.dataset.popupScroll));
+    stepPopupVerse(Number(verseButton.dataset.popupVerse));
     return;
   }
 
   const reference = event.target.closest(".bible-ref");
+  if (isPresenter && event.target.closest(".bible-popup")) {
+    return;
+  }
 
   if (isPresenter && reference) {
     event.preventDefault();
@@ -1112,21 +1087,13 @@ document.addEventListener("click", event => {
     }
   });
   reference.classList.toggle("open");
+  if (reference.classList.contains("open")) {
+    applyPopupVerseVisibility(reference.querySelector(".bible-popup"), 0);
+  }
 });
 
-document.addEventListener("scroll", event => {
-  if (!isPresenter || suppressPopupScrollSync) return;
-
-  const popup = event.target.closest?.(".bible-popup");
-  if (!popup) return;
-
-  const reference = popup.closest(".bible-ref");
-  if (!reference?.classList.contains("open")) return;
-
-  const now = Date.now();
-  if (now - lastPopupScrollSentAt < 80) return;
-  syncPopupScrollFromElement(popup);
-}, true);
+document.getElementById("presenterSectionSelect")?.addEventListener("change", jumpToPresenterSection);
+document.getElementById("audienceQrToggle")?.addEventListener("click", toggleAudienceQr);
 
 if (isAudience) {
   renderJoinForm();
@@ -1142,9 +1109,6 @@ if (isAudience) {
   });
 }
 
-document.getElementById("presenterSectionSelect")?.addEventListener("change", jumpToPresenterSection);
-document.getElementById("audienceQrToggle")?.addEventListener("click", toggleAudienceQr);
-
 window.addEventListener("resize", () => {
   render();
   applyTabletPreviewScale();
@@ -1153,6 +1117,25 @@ window.addEventListener("resize", () => {
 if (isPresenter || (isProjector && !isTablet)) {
   window.addEventListener("keydown", e => {
     if (e.target.matches("input, textarea, select")) return;
+
+    if (isPresenter && popupState.reference) {
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        stepPopupVerse(1);
+        return;
+      }
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        stepPopupVerse(-1);
+        return;
+      }
+      if (e.key === "Escape") {
+        e.preventDefault();
+        socket.emit("set-popup-reference", null);
+        return;
+      }
+    }
+
     if (e.key === "ArrowRight" || e.key === " ") next();
     if (e.key === "ArrowLeft") prev();
     if (isProjector && e.key === "Escape") {

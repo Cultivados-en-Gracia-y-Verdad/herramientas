@@ -31,6 +31,7 @@ let settingsWindow;
 let courseDownloadWindow;
 let songLibraryWindow;
 let presentationMode = "extended";
+let startupMode = "presenter";
 let switchingMode = false;
 let headingMenuItems = [];
 let quizMenuItems = [];
@@ -97,6 +98,7 @@ const MAIN_TRANSLATIONS = {
     teachingMarkdownCouldNotLoad: "No se pudo cargar el archivo markdown seleccionado.",
     styleSettings: "Configuración de estilo",
     languageSettings: "Idioma",
+    startupSettings: "Inicio",
     style: "Estilo",
     downloadCourses: "Descargar cursos",
     downloadSongs: "Descargar canciones de GitHub",
@@ -128,6 +130,8 @@ const MAIN_TRANSLATIONS = {
     quiz: "Quiz",
     settings: "Configuración",
     view: "Vista",
+    openPresenter: "Abrir presentador",
+    openProjector: "Abrir proyector",
     openController: "Abrir control",
     showConnectionQr: "Mostrar QR de conexión",
     showAudienceQrOnMainScreen: "Mostrar QR de audiencia en pantalla principal",
@@ -199,6 +203,7 @@ MAIN_TRANSLATIONS.en = {
   teachingMarkdownCouldNotLoad: "The selected markdown file could not be loaded.",
   styleSettings: "Style Settings",
   languageSettings: "Language",
+  startupSettings: "Startup",
   style: "Style",
   downloadCourses: "Download Courses",
   downloadSongs: "Download Songs from GitHub",
@@ -230,6 +235,8 @@ MAIN_TRANSLATIONS.en = {
   quiz: "Quiz",
   settings: "Settings",
   view: "View",
+  openPresenter: "Open Presenter",
+  openProjector: "Open Projector",
   openController: "Open Controller",
   showConnectionQr: "Show Connection QR",
   showAudienceQrOnMainScreen: "Show Audience QR on Main Screen",
@@ -249,12 +256,20 @@ function mti(key, params = {}) {
   return mt(key).replace(/\{(\w+)\}/g, (_match, name) => params[name] ?? "");
 }
 
+function normalizeStartupMode(value) {
+  // Legacy "presenter-only" maps to projector-only.
+  if (value === "presenter-only") return "projector";
+  return ["presenter", "controller", "projector"].includes(value) ? value : "presenter";
+}
+
 async function refreshAppLanguage() {
   try {
     const settings = await getLocalJson("/style-settings");
     appLanguage = ["es", "en"].includes(settings.language) ? settings.language : "es";
+    startupMode = normalizeStartupMode(settings.startupMode);
   } catch {
     appLanguage = "es";
+    startupMode = "presenter";
   }
 }
 
@@ -949,6 +964,10 @@ function openLanguageSettings() {
   openSettingsSection("language");
 }
 
+function openStartupSettings() {
+  openSettingsSection("startup");
+}
+
 function openStyleSettings() {
   openSettingsSection("style");
 }
@@ -1024,6 +1043,32 @@ function openControllerWindow() {
   controllerWindow.loadURL(`${APP_URL}/controller.html`);
   controllerWindow.on("closed", () => {
     controllerWindow = null;
+  });
+}
+
+function openPresenterWindow() {
+  if (presenterWindow && !presenterWindow.isDestroyed()) {
+    presenterWindow.focus();
+    return;
+  }
+
+  createPresenterWindow();
+  presenterWindow?.focus();
+}
+
+function openProjectorWindow() {
+  if (projectorWindow && !projectorWindow.isDestroyed()) {
+    projectorWindow.focus();
+    return;
+  }
+
+  const secondaryDisplay = getSecondaryDisplay();
+  createProjectorWindow({
+    frame: !secondaryDisplay,
+    fullscreen: !!secondaryDisplay,
+    mode: presentationMode === "mirrored" ? "mirrored" : "extended",
+    preferSecondary: !!secondaryDisplay,
+    showInactive: false
   });
 }
 
@@ -1230,6 +1275,10 @@ function createMenu() {
           click: openLanguageSettings
         },
         {
+          label: `${mt("startupSettings")}...`,
+          click: openStartupSettings
+        },
+        {
           label: `${mt("style")}...`,
           accelerator: "CmdOrCtrl+,",
           click: openStyleSettings
@@ -1244,6 +1293,16 @@ function createMenu() {
     {
       label: mt("view"),
       submenu: [
+        {
+          label: mt("openPresenter"),
+          accelerator: "CmdOrCtrl+Shift+P",
+          click: openPresenterWindow
+        },
+        {
+          label: mt("openProjector"),
+          accelerator: "CmdOrCtrl+Shift+O",
+          click: openProjectorWindow
+        },
         {
           label: mt("openController"),
           accelerator: "CmdOrCtrl+Shift+C",
@@ -1582,6 +1641,39 @@ function createPresentationWindows() {
   createExtendedWindows();
 }
 
+function openProjectorOnSecondaryIfAvailable(options = {}) {
+  const secondaryDisplay = getSecondaryDisplay();
+  if (!secondaryDisplay) return false;
+
+  createProjectorWindow({
+    frame: false,
+    fullscreen: true,
+    mode: options.mode || (presentationMode === "mirrored" ? "mirrored" : "extended"),
+    preferSecondary: true,
+    showInactive: options.showInactive !== false
+  });
+  return true;
+}
+
+function applyStartupWindows() {
+  if (startupMode === "projector") {
+    // Projector only: fine on one monitor; uses second screen when present.
+    openProjectorWindow();
+    return;
+  }
+
+  if (startupMode === "controller") {
+    openControllerWindow();
+    // Output belongs on the second display when available.
+    openProjectorOnSecondaryIfAvailable({ showInactive: true });
+    return;
+  }
+
+  // Presenter + projector: control on primary, output on second screen when available.
+  // With one monitor, fall back to side-by-side windows.
+  createPresentationWindows();
+}
+
 function recreatePresentationWindows() {
   switchingMode = true;
   closeWindow(projectorWindow);
@@ -1597,7 +1689,7 @@ function recreatePresentationWindows() {
 async function createWindows() {
   await refreshAppLanguage();
   createMenu();
-  createPresentationWindows();
+  applyStartupWindows();
   setTimeout(refreshHeadingMenu, 500);
   setTimeout(refreshQuizMenu, 600);
   setTimeout(showFirstRunSetup, 900);

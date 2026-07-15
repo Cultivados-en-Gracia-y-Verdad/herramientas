@@ -509,6 +509,8 @@ textarea {
   left: 50%;
   bottom: calc(100% + 12px);
   z-index: 20;
+  display: grid;
+  gap: 14px;
   width: min(560px, 80vw);
   max-height: 45vh;
   overflow: auto;
@@ -537,11 +539,52 @@ textarea {
 }
 
 .bible-popup-verse {
+  display: none;
+}
+
+.bible-popup-verse.is-active,
+.bible-popup-verse[data-active="true"] {
   display: block;
 }
 
-.bible-popup-verse + .bible-popup-verse {
-  margin-top: 12px;
+.bible-popup-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.bible-popup-nav[hidden] {
+  display: none !important;
+}
+
+.bible-popup-nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 999px;
+  background: rgba(0,0,0,0.35);
+  color: inherit;
+  font-size: 1.55rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.bible-popup-nav-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.bible-popup-position {
+  min-width: 4.5rem;
+  text-align: center;
+  font-size: 0.72em;
+  opacity: 0.85;
+  letter-spacing: 0.02em;
 }
 
 .bible-ref.open .bible-popup {
@@ -587,6 +630,12 @@ textarea {
   font-size: var(--popup-text-size, 22px);
 }
 
+.presenter .slide .bible-popup-nav-button {
+  background: rgba(17, 17, 17, 0.9);
+  border-color: rgba(255,255,255,0.3);
+  color: #fff;
+}
+
 .shared-popup-overlay {
   position: fixed;
   left: 50%;
@@ -616,22 +665,25 @@ textarea {
 }
 
 .shared-popup-overlay.open {
+  display: grid;
+  gap: 14px;
+}
+
+.shared-popup-overlay .bible-popup-verse {
+  display: none;
+}
+
+.shared-popup-overlay .bible-popup-verse.is-active,
+.shared-popup-overlay .bible-popup-verse[data-active="true"] {
   display: block;
 }
 
-.shared-popup-overlay div + div {
-  margin-top: 18px;
-}
-
-.projector .shared-popup-overlay div {
+.projector .shared-popup-overlay .bible-popup-verse.is-active,
+.projector .shared-popup-overlay .bible-popup-verse[data-active="true"] {
   background: var(--popup-verse-background, rgba(255,255,255,0.72));
   border-left: 6px solid var(--popup-accent, #075985);
   border-radius: 6px;
   padding: 12px 16px;
-}
-
-.projector .shared-popup-overlay div + div {
-  margin-top: 14px;
 }
 
 .projector .shared-popup-overlay strong {
@@ -645,26 +697,9 @@ textarea {
   font-size: var(--popup-text-size, 28px);
 }
 
-.popup-controls {
-  display: none;
-}
-
-.presenter .slide .bible-ref.open .popup-controls {
-  position: fixed;
-  left: 50%;
-  top: calc(50% + min(23vh, 200px) + 12px);
-  z-index: 30;
-  display: flex;
-  gap: 10px;
-  transform: translateX(-50%);
-}
-
+.popup-controls,
 .popup-scroll-button {
-  background: #111;
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.25);
-  font-size: 18px;
-  padding: 8px 14px;
+  display: none !important;
 }
 
 .next {

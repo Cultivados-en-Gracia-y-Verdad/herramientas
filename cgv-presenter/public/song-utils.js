@@ -5,12 +5,18 @@ function normalizeForSearch(value) {
     .toLowerCase();
 }
 
+function getSongSearchHaystack(song) {
+  if (!song || typeof song !== "object") return "";
+  if (typeof song._searchHaystack === "string") return song._searchHaystack;
+
+  song._searchHaystack = normalizeForSearch(
+    `${song.file || ""}\n${song.title || ""}\n${song.lyrics || ""}\n${song.chordLyrics || ""}`
+  );
+  return song._searchHaystack;
+}
+
 function songMatchesQuery(song, query) {
   const normalizedQuery = normalizeForSearch(query).trim();
   if (!normalizedQuery) return true;
-
-  const haystack = normalizeForSearch(
-    `${song.file || ""}\n${song.title || ""}\n${song.lyrics || ""}`
-  );
-  return haystack.includes(normalizedQuery);
+  return getSongSearchHaystack(song).includes(normalizedQuery);
 }

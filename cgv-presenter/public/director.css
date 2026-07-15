@@ -49,8 +49,12 @@ body.song-mode {
 .director-view {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
-  min-height: 100vh;
-  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100vh;
+  max-height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
   padding:
     env(safe-area-inset-top)
     env(safe-area-inset-right)
@@ -109,6 +113,8 @@ body.song-mode {
   align-content: start;
   gap: 0.35em;
   min-height: 0;
+  height: 100%;
+  max-height: 100%;
   overflow: hidden;
   padding: clamp(1.15rem, 3vw, 3rem);
   font-size: var(--director-fit-size, 58px);
@@ -125,6 +131,12 @@ body.song-mode {
   font-size: var(--director-fit-size, 72px);
   font-weight: 600;
   line-height: 1.12;
+}
+
+.director-content.song-mode > div {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .director-content h1,
@@ -236,17 +248,61 @@ body.song-mode {
   font-weight: 400;
   line-height: 1.34;
   text-align: left;
+  gap: 0.85rem;
 }
 
 .director-content .bible-ref.open .bible-popup {
   display: grid;
-  gap: 0.8rem;
 }
 
 .director-content .bible-popup-verse {
+  display: none;
   padding: 0.75rem;
   border-radius: 8px;
   background: rgba(125, 211, 252, 0.08);
+}
+
+.director-content .bible-popup-verse.is-active,
+.director-content .bible-popup-verse[data-active="true"] {
+  display: block;
+}
+
+.director-content .bible-popup-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.director-content .bible-popup-nav[hidden] {
+  display: none !important;
+}
+
+.director-content .bible-popup-nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  border-radius: 999px;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.director-content .bible-popup-nav-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.director-content .bible-popup-position {
+  min-width: 4.5rem;
+  text-align: center;
+  font-size: 0.85em;
+  color: #334155;
 }
 
 .song-drawer {
@@ -292,7 +348,13 @@ body.song-mode {
   color: var(--director-muted);
 }
 
-.song-drawer input {
+.song-drawer-search {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.song-drawer input,
+.song-drawer select {
   width: 100%;
   border: 1px solid var(--director-line);
   border-radius: 9px;
@@ -301,6 +363,10 @@ body.song-mode {
   font: inherit;
   font-size: 1.05rem;
   padding: 0.85rem 0.95rem;
+}
+
+.song-drawer select {
+  min-height: 3rem;
 }
 
 .song-list {
@@ -473,15 +539,33 @@ button.ghost {
 @media (max-width: 720px) {
   .director-header,
   .director-controls {
-    padding: 0.75rem;
+    padding: 0.65rem 0.7rem;
   }
 
   .director-content {
-    padding: 1rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .director-header {
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+
+  .director-header-actions {
+    width: 100%;
+    justify-content: stretch;
+    gap: 0.3rem;
+  }
+
+  .director-header-actions .ghost {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0.45rem 0.35rem;
+    font-size: 0.72rem;
   }
 
   .director-header strong {
-    max-width: 58vw;
+    max-width: 100%;
     font-size: 1.05rem;
   }
 
@@ -499,10 +583,6 @@ button.ghost {
   button.ghost {
     min-height: 2.4rem;
     font-size: 0.8rem;
-  }
-
-  .director-header-actions {
-    gap: 0.35rem;
   }
 
   .director-position {

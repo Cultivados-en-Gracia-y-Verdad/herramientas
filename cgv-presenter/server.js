@@ -1537,14 +1537,23 @@ function buildBibleReferenceMarkup(displayReference, book, chapter, startVerse, 
 function buildBibleReferencePopup(displayReference, verses) {
   const normalizedDisplay = escapeHtml(displayReference);
   const popupTitle = escapeHtml(displayReference);
+  const verseCount = verses.length;
   const popupText = verses
-    .map(reference => {
+    .map((reference, index) => {
       const verseReference = `${reference.book} ${reference.chapter}:${reference.verse}`;
-      return `<span class="bible-popup-verse"><strong>${escapeHtml(verseReference)}</strong> ${escapeHtml(reference.text)}</span>`;
+      return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(verseReference)}</strong> ${escapeHtml(reference.text)}</span>`;
     })
     .join("");
 
-  return `<span class="bible-ref" tabindex="0" role="button" data-reference="${popupTitle}">${normalizedDisplay}<span class="bible-popup">${popupText}</span></span>`;
+  const nav = verseCount > 1
+    ? `<span class="bible-popup-nav">
+        <button type="button" class="bible-popup-nav-button" data-popup-verse="-1" aria-label="Previous verse">‹</button>
+        <span class="bible-popup-position"><span data-popup-verse-current>1</span> / ${verseCount}</span>
+        <button type="button" class="bible-popup-nav-button" data-popup-verse="1" aria-label="Next verse">›</button>
+      </span>`
+    : "";
+
+  return `<span class="bible-ref" tabindex="0" role="button" data-reference="${popupTitle}" data-verse-count="${verseCount}">${normalizedDisplay}<span class="bible-popup">${popupText}${nav}</span></span>`;
 }
 
 function parseReferenceParts(book, referenceList) {
@@ -3500,6 +3509,10 @@ function setControllerBlank(payload = {}) {
 function clearControllerOutput() {
   controllerState.active = false;
   controllerState.blank = false;
+  controllerState.title = "";
+  controllerState.sections = [];
+  controllerState.chordSections = [];
+  controllerState.sectionLabels = [];
   controllerState.step = 0;
 }
 
@@ -3712,8 +3725,18 @@ function buildPayload(participantId = null) {
 }
 
 function sendState() {
+  // Build one shared payload for projector/director/controller/etc.
+  // Audience sockets with a participant id still get a personalized quiz result.
+  let sharedPayload = null;
+
   for (const socket of io.sockets.sockets.values()) {
-    socket.emit("state", buildPayload(socket.participantId));
+    if (socket.participantId) {
+      socket.emit("state", buildPayload(socket.participantId));
+      continue;
+    }
+
+    if (!sharedPayload) sharedPayload = buildPayload(null);
+    socket.emit("state", sharedPayload);
   }
 }
 
@@ -4018,6 +4041,7 @@ app.post("/controller/style", (req, res) => {
 
 app.post("/controller/clear", (req, res) => {
   clearControllerOutput();
+  notifyPresentationStepChanged();
   sendState();
   res.json(publicControllerState());
 });
@@ -4085,21 +4109,38 @@ io.on("connection", socket => {
     sendState();
   });
 
+  socket.on("set-popup-verse", verseIndex => {
+    if (!popupState.reference) return;
+
+    const parsedVerseIndex = Number(verseIndex);
+    if (!Number.isInteger(parsedVerseIndex) || parsedVerseIndex < 0) return;
+
+    popupState.verseIndex = parsedVerseIndex;
+    popupState.scrollRatio = 0;
+
+    io.emit("popup-scroll", {
+      reference: popupState.reference,
+      scrollRatio: popupState.scrollRatio,
+      verseIndex: popupState.verseIndex
+    });
+  });
+
   socket.on("set-popup-scroll", scrollState => {
     if (!popupState.reference) return;
 
-    const parsedRatio = typeof scrollState === "object" && scrollState !== null
-      ? Number(scrollState.scrollRatio)
-      : Number(scrollState);
-    if (Number.isNaN(parsedRatio)) return;
-
-    popupState.scrollRatio = Math.min(1, Math.max(0, parsedRatio));
     const parsedVerseIndex = typeof scrollState === "object" && scrollState !== null
       ? Number(scrollState.verseIndex)
       : NaN;
 
     if (Number.isInteger(parsedVerseIndex) && parsedVerseIndex >= 0) {
       popupState.verseIndex = parsedVerseIndex;
+      popupState.scrollRatio = 0;
+    } else {
+      const parsedRatio = typeof scrollState === "object" && scrollState !== null
+        ? Number(scrollState.scrollRatio)
+        : Number(scrollState);
+      if (Number.isNaN(parsedRatio)) return;
+      popupState.scrollRatio = Math.min(1, Math.max(0, parsedRatio));
     }
 
     io.emit("popup-scroll", {
@@ -4158,6 +4199,7 @@ io.on("connection", socket => {
 
   socket.on("controller-clear", () => {
     clearControllerOutput();
+    notifyPresentationStepChanged();
     sendState();
   });
 

@@ -3,7 +3,38 @@ const socket = io({ transports: ["websocket", "polling"] });
 let latestState = {};
 let songs = [];
 let selectedSongId = null;
+let selectedLibrary = "all";
+const ROOT_SONG_LIBRARY_KEY = "__root__";
 let swipeStart = null;
+
+// Accent-fold search must work even if song-utils.js failed to load (stale cache / old build).
+if (typeof normalizeForSearch !== "function") {
+  window.normalizeForSearch = function normalizeForSearch(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+  };
+}
+
+if (typeof getSongSearchHaystack !== "function") {
+  window.getSongSearchHaystack = function getSongSearchHaystack(song) {
+    if (!song || typeof song !== "object") return "";
+    if (typeof song._searchHaystack === "string") return song._searchHaystack;
+    song._searchHaystack = normalizeForSearch(
+      `${song.file || ""}\n${song.title || ""}\n${song.lyrics || ""}\n${song.chordLyrics || ""}`
+    );
+    return song._searchHaystack;
+  };
+}
+
+if (typeof songMatchesQuery !== "function") {
+  window.songMatchesQuery = function songMatchesQuery(song, query) {
+    const normalizedQuery = normalizeForSearch(query).trim();
+    if (!normalizedQuery) return true;
+    return getSongSearchHaystack(song).includes(normalizedQuery);
+  };
+}
 
 function byId(id) {
   return document.getElementById(id);
@@ -133,13 +164,36 @@ async function post(path) {
   await fetch(path, { method: "POST" });
 }
 
-async function loadSongs() {
+async function loadSongs({ renderList = false } = {}) {
   const response = await fetch("/songs");
   songs = response.ok ? await response.json() : [];
+  // Keep search haystacks lazy — precomputing ~700 full lyric strings freezes phones.
+  renderSongLibraryFilter();
   if (!selectedSongId || !songs.some(song => song.id === selectedSongId)) {
     selectedSongId = songs[0]?.id || null;
   }
-  renderSongList();
+  if (renderList || byId("songDrawer")?.classList.contains("open")) {
+    if (selectedSongId && !getVisibleSongs().some(song => song.id === selectedSongId)) {
+      selectedSongId = getVisibleSongs()[0]?.id || songs[0]?.id || null;
+    }
+    renderSongList();
+  }
+}
+
+let songsLoadPromise = null;
+
+function ensureSongsLoaded() {
+  if (songs.length) return Promise.resolve(songs);
+  if (!songsLoadPromise) {
+    songsLoadPromise = loadSongs()
+      .catch(() => {
+        songs = [];
+      })
+      .finally(() => {
+        songsLoadPromise = null;
+      });
+  }
+  return songsLoadPromise;
 }
 
 function getSelectedSong() {
@@ -151,9 +205,62 @@ function getSongLibraryName(song) {
   return parts.length > 1 ? parts.slice(0, -1).join(" / ") : t("songs");
 }
 
+function getSongLibraryKey(song) {
+  const parts = String(song?.file || "").split("/").filter(Boolean);
+  return parts.length > 1 ? parts.slice(0, -1).join("/").toLowerCase() : ROOT_SONG_LIBRARY_KEY;
+}
+
+function getSongLibraries() {
+  const libraries = new Map();
+  songs.forEach(song => {
+    libraries.set(getSongLibraryKey(song), getSongLibraryName(song));
+  });
+
+  return [...libraries.entries()]
+    .sort(([, a], [, b]) => a.localeCompare(b, undefined, { numeric: true }))
+    .map(([key, name]) => ({ key, name }));
+}
+
 function getSongNumber(song, fallbackIndex = 0) {
   const fileName = String(song?.file || "").split("/").pop() || "";
   return fileName.match(/^[A-Za-z]*(\d+)/)?.[1] || String(fallbackIndex + 1).padStart(3, "0");
+}
+
+function getVisibleSongs() {
+  const query = byId("songSearch")?.value || "";
+  const librarySongs = selectedLibrary === "all"
+    ? songs
+    : songs.filter(song => getSongLibraryKey(song) === selectedLibrary);
+
+  return query.trim()
+    ? librarySongs.filter(song => songMatchesQuery(song, query))
+    : librarySongs;
+}
+
+function renderSongLibraryFilter() {
+  const select = byId("songLibraryFilter");
+  if (!select) return;
+
+  const libraries = getSongLibraries();
+  const previousValue = selectedLibrary;
+  select.replaceChildren();
+
+  const allOption = document.createElement("option");
+  allOption.value = "all";
+  allOption.textContent = t("allSongLibraries");
+  select.appendChild(allOption);
+
+  libraries.forEach(library => {
+    const option = document.createElement("option");
+    option.value = library.key;
+    option.textContent = library.name;
+    select.appendChild(option);
+  });
+
+  selectedLibrary = previousValue === "all" || libraries.some(library => library.key === previousValue)
+    ? previousValue
+    : "all";
+  select.value = selectedLibrary;
 }
 
 function getSongPayload(song = getSelectedSong()) {
@@ -194,16 +301,14 @@ function showSongListScreen() {
 
 function renderSongList() {
   const list = byId("songList");
-  const query = byId("songSearch").value;
-  const visibleSongs = query.trim()
-    ? songs.filter(song => songMatchesQuery(song, query))
-    : songs;
+  const visibleSongs = getVisibleSongs();
 
   let previousLibrary = "";
   list.innerHTML = visibleSongs.length
     ? visibleSongs.map((song, index) => {
         const libraryName = getSongLibraryName(song);
-        const libraryHeader = libraryName !== previousLibrary
+        const showLibraryHeader = selectedLibrary === "all" && libraryName !== previousLibrary;
+        const libraryHeader = showLibraryHeader
           ? `<div class="song-library-heading">${escapeHtml(libraryName)}</div>`
           : "";
         previousLibrary = libraryName;
@@ -216,13 +321,14 @@ function renderSongList() {
           </button>
         `;
       }).join("")
-    : `<div class="empty compact">${t("noSongsFound")}</div>`;
+    : `<div class="empty compact">${songs.length ? t("noSongsMatch") : t("noSongsFound")}</div>`;
 }
 
 let cachedSectionHeadingsKey = null;
 let lastDirectorContentHtml = "";
 let lastDirectorContentMode = null;
 let lastDirectorPopupReference = undefined;
+let lastDirectorPopupVerseIndex = undefined;
 let directorFitFrame = 0;
 
 function getSectionHeadingsKey(headings = []) {
@@ -265,7 +371,10 @@ function renderSectionList(headings = latestState.headings || []) {
 
 function openSongDrawer() {
   byId("songDrawer").classList.add("open");
-  byId("songSearch").focus();
+  ensureSongsLoaded().then(() => {
+    renderSongList();
+    byId("songSearch")?.focus();
+  });
 }
 
 function closeSongDrawer() {
@@ -312,33 +421,36 @@ function getDirectorSizing(isSongMode) {
   const height = window.innerHeight || document.documentElement.clientHeight || 0;
   const hasFinePointer = window.matchMedia?.("(pointer: fine)")?.matches;
   const isDesktop = hasFinePointer && width >= 900 && height >= 560;
-  const isCompact = width <= 720 || height <= 520;
+  const isCompact = width <= 900 || height <= 560;
 
   if (isDesktop) {
     return isSongMode
-      ? { max: 52, min: 26 }
-      : { max: 38, min: 22 };
+      ? { max: 52, min: 22 }
+      : { max: 38, min: 18 };
   }
 
   if (isCompact) {
     return isSongMode
-      ? { max: 64, min: 34 }
-      : { max: 50, min: 32 };
+      ? { max: 56, min: 18 }
+      : { max: 42, min: 16 };
   }
 
   return isSongMode
-    ? { max: 68, min: 36 }
-    : { max: 52, min: 32 };
+    ? { max: 68, min: 24 }
+    : { max: 52, min: 20 };
 }
 
 let lastFitContext = { slide: -1, step: -1, songMode: false, size: null };
+let directorFitRetry = false;
 
 function scheduleDirectorFit() {
-  if (directorFitFrame) return;
+  if (directorFitFrame) cancelAnimationFrame(directorFitFrame);
 
   directorFitFrame = requestAnimationFrame(() => {
-    directorFitFrame = 0;
-    fitDirectorText();
+    directorFitFrame = requestAnimationFrame(() => {
+      directorFitFrame = 0;
+      fitDirectorText();
+    });
   });
 }
 
@@ -349,25 +461,64 @@ function fitDirectorText() {
   const isSongMode = content.classList.contains("song-mode");
   const sizing = getDirectorSizing(isSongMode);
   const minSize = sizing.min;
-  const sameSlide = !isSongMode && lastFitContext.slide === Number(latestState.slide);
+  const maxSize = sizing.max;
+
+  // If the content box has no measurable height yet, try again once next frame.
+  if (content.clientHeight < 32 || content.clientWidth < 32) {
+    if (!directorFitRetry) {
+      directorFitRetry = true;
+      scheduleDirectorFit();
+    }
+    return;
+  }
+  directorFitRetry = false;
+
+  const sameSlide = lastFitContext.songMode === isSongMode
+    && lastFitContext.slide === Number(latestState.slide);
   const stepIncreased = sameSlide && Number(latestState.step) > lastFitContext.step;
-  let size = stepIncreased && lastFitContext.size ? lastFitContext.size : sizing.max;
+  // Growing the same slide: start from the previous size (content only got larger).
+  // New slide / mode: start from the max and binary-search down.
+  let high = stepIncreased && lastFitContext.size
+    ? lastFitContext.size
+    : maxSize;
+  high = Math.min(maxSize, Math.max(minSize, high));
 
-  content.style.setProperty("--director-fit-size", `${size}px`);
+  const overflows = () => (
+    content.scrollHeight > content.clientHeight + 1 ||
+    content.scrollWidth > content.clientWidth + 1
+  );
 
-  while (
-    size > minSize &&
-    (content.scrollHeight > content.clientHeight || content.scrollWidth > content.clientWidth)
-  ) {
-    size -= 2;
-    content.style.setProperty("--director-fit-size", `${size}px`);
+  content.style.setProperty("--director-fit-size", `${high}px`);
+  if (!overflows()) {
+    lastFitContext = {
+      slide: Number(latestState.slide),
+      step: Number(latestState.step),
+      songMode: isSongMode,
+      size: high
+    };
+    return;
   }
 
+  let best = minSize;
+  let low = minSize;
+  let top = high - 1;
+  while (low <= top) {
+    const mid = (low + top) >> 1;
+    content.style.setProperty("--director-fit-size", `${mid}px`);
+    if (overflows()) {
+      top = mid - 1;
+    } else {
+      best = mid;
+      low = mid + 1;
+    }
+  }
+
+  content.style.setProperty("--director-fit-size", `${best}px`);
   lastFitContext = {
     slide: Number(latestState.slide),
     step: Number(latestState.step),
     songMode: isSongMode,
-    size
+    size: best
   };
 }
 
@@ -407,9 +558,20 @@ function renderDirector(state = {}) {
   const contentChanged = contentHtml !== lastDirectorContentHtml || isSongMode !== lastDirectorContentMode;
 
   if (contentChanged) {
+    const previousFit = lastFitContext;
     content.innerHTML = contentHtml;
     lastDirectorContentHtml = contentHtml;
     lastDirectorContentMode = isSongMode;
+
+    const sameSlide = previousFit.songMode === isSongMode
+      && previousFit.slide === Number(state.slide);
+    const stepIncreased = sameSlide && Number(state.step) > previousFit.step;
+    // Keep prior size when revealing more lines on the same slide so fit can
+    // shrink from there instead of restarting from the maximum every step.
+    lastFitContext = stepIncreased && previousFit.size
+      ? previousFit
+      : { slide: -1, step: -1, songMode: isSongMode, size: null };
+
     scheduleDirectorFit();
   }
 
@@ -467,7 +629,21 @@ function endSwipe(event) {
 }
 
 socket.on("state", renderDirector);
-socket.on("songs-updated", loadSongs);
+socket.on("songs-updated", () => {
+  songs = [];
+  ensureSongsLoaded().then(() => {
+    if (byId("songDrawer")?.classList.contains("open")) renderSongList();
+  });
+});
+socket.on("popup-scroll", data => {
+  latestState.popupState = {
+    ...(latestState.popupState || {}),
+    reference: data.reference ?? latestState.popupState?.reference ?? null,
+    scrollRatio: typeof data.scrollRatio === "number" ? data.scrollRatio : latestState.popupState?.scrollRatio || 0,
+    verseIndex: Number.isInteger(data.verseIndex) ? data.verseIndex : latestState.popupState?.verseIndex || 0
+  };
+  applyDirectorPopupState(true);
+});
 
 byId("nextButton").addEventListener("click", goNext);
 byId("previousButton").addEventListener("click", goPrevious);
@@ -479,6 +655,13 @@ byId("songsButton").addEventListener("click", openSongDrawer);
 byId("closeSongsButton").addEventListener("click", closeSongDrawer);
 byId("showSongListButton").addEventListener("click", showSongListScreen);
 byId("songSearch").addEventListener("input", renderSongList);
+byId("songLibraryFilter")?.addEventListener("change", event => {
+  selectedLibrary = event.target.value || "all";
+  if (selectedSongId && !getVisibleSongs().some(song => song.id === selectedSongId)) {
+    selectedSongId = getVisibleSongs()[0]?.id || null;
+  }
+  renderSongList();
+});
 byId("songList").addEventListener("click", event => {
   const choice = event.target.closest("[data-song-id]");
   if (!choice) return;
@@ -492,20 +675,98 @@ byId("sectionList").addEventListener("click", event => {
   jumpToCourseSlide(section.dataset.slideIndex);
 });
 
+function getDirectorPopupVerseBlocks(popup) {
+  return Array.from(popup?.querySelectorAll(":scope > .bible-popup-verse") || []);
+}
+
+function applyDirectorPopupVerseVisibility(popup, verseIndex = 0) {
+  if (!popup) return 0;
+
+  const blocks = getDirectorPopupVerseBlocks(popup);
+  if (!blocks.length) return 0;
+
+  const boundedIndex = Math.min(blocks.length - 1, Math.max(0, Number(verseIndex) || 0));
+
+  blocks.forEach((block, index) => {
+    const isActive = index === boundedIndex;
+    block.classList.toggle("is-active", isActive);
+    block.hidden = !isActive;
+    if (isActive) block.setAttribute("data-active", "true");
+    else block.removeAttribute("data-active");
+  });
+
+  const current = popup.querySelector("[data-popup-verse-current]");
+  if (current) current.textContent = String(boundedIndex + 1);
+
+  popup.querySelectorAll("[data-popup-verse]").forEach(button => {
+    const delta = Number(button.dataset.popupVerse);
+    const disabled = (delta < 0 && boundedIndex <= 0) || (delta > 0 && boundedIndex >= blocks.length - 1);
+    button.disabled = disabled;
+  });
+
+  const nav = popup.querySelector(".bible-popup-nav");
+  if (nav) nav.hidden = blocks.length <= 1;
+
+  return boundedIndex;
+}
+
+function stepDirectorPopupVerse(direction) {
+  const reference = latestState.popupState?.reference;
+  if (!reference) return;
+
+  const popup = document.querySelector(".bible-ref.open .bible-popup");
+  const blocks = getDirectorPopupVerseBlocks(popup);
+  const total = blocks.length || Number(
+    document.querySelector(`.bible-ref.open`)?.dataset.verseCount
+  ) || 1;
+  const currentIndex = latestState.popupState?.verseIndex || 0;
+  const nextIndex = Math.min(total - 1, Math.max(0, currentIndex + direction));
+  if (nextIndex === currentIndex) return;
+
+  applyDirectorPopupVerseVisibility(popup, nextIndex);
+  latestState.popupState = {
+    ...(latestState.popupState || {}),
+    verseIndex: nextIndex,
+    scrollRatio: 0
+  };
+  lastDirectorPopupVerseIndex = nextIndex;
+  socket.emit("set-popup-verse", nextIndex);
+}
+
 function applyDirectorPopupState(force = false) {
   const activeReference = latestState.popupState?.reference;
-  if (!force && activeReference === lastDirectorPopupReference) return;
+  const verseIndex = latestState.popupState?.verseIndex || 0;
+  if (
+    !force &&
+    activeReference === lastDirectorPopupReference &&
+    verseIndex === lastDirectorPopupVerseIndex
+  ) {
+    return;
+  }
 
   lastDirectorPopupReference = activeReference;
+  lastDirectorPopupVerseIndex = verseIndex;
   document.querySelectorAll(".bible-ref.open").forEach(reference => reference.classList.remove("open"));
   if (!activeReference) return;
 
   document.querySelectorAll(".bible-ref").forEach(reference => {
-    reference.classList.toggle("open", reference.dataset.reference === activeReference);
+    const isActive = reference.dataset.reference === activeReference;
+    reference.classList.toggle("open", isActive);
+    if (isActive) {
+      applyDirectorPopupVerseVisibility(reference.querySelector(".bible-popup"), verseIndex);
+    }
   });
 }
 
 document.addEventListener("click", event => {
+  const verseButton = event.target.closest("[data-popup-verse]");
+  if (verseButton) {
+    event.preventDefault();
+    event.stopPropagation();
+    stepDirectorPopupVerse(Number(verseButton.dataset.popupVerse));
+    return;
+  }
+
   const reference = event.target.closest(".bible-ref");
   const popup = event.target.closest(".bible-popup");
 
@@ -527,9 +788,36 @@ document.addEventListener("click", event => {
 document.addEventListener("touchstart", beginSwipe, { passive: true });
 document.addEventListener("touchend", endSwipe, { passive: true });
 
-window.addEventListener("resize", fitDirectorText);
+window.addEventListener("resize", () => {
+  lastFitContext = { slide: -1, step: -1, songMode: false, size: null };
+  directorFitRetry = false;
+  scheduleDirectorFit();
+});
+window.addEventListener("orientationchange", () => {
+  lastFitContext = { slide: -1, step: -1, songMode: false, size: null };
+  directorFitRetry = false;
+  scheduleDirectorFit();
+});
 window.addEventListener("keydown", event => {
   if (event.target.matches("input, textarea, select")) return;
+
+  if (latestState.popupState?.reference) {
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      stepDirectorPopupVerse(1);
+      return;
+    }
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      stepDirectorPopupVerse(-1);
+      return;
+    }
+    if (event.key === "Escape") {
+      event.preventDefault();
+      socket.emit("set-popup-reference", null);
+      return;
+    }
+  }
 
   if (event.key === "ArrowRight" || event.key === " " || event.key === "Enter") {
     event.preventDefault();
@@ -551,5 +839,9 @@ window.addEventListener("keydown", event => {
 
 window.CGVI18N.loadLanguage().then(() => {
   renderDirector();
-  loadSongs();
+  // Defer song catalog until idle / drawer open so long sessions stay responsive.
+  const schedule = window.requestIdleCallback || (cb => setTimeout(cb, 2500));
+  schedule(() => {
+    ensureSongsLoaded();
+  });
 });

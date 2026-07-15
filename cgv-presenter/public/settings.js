@@ -49,6 +49,7 @@ let settings = {
   language: "es",
   bibleVersion: "NBLA",
   blankBackgroundMedia: "",
+  startupMode: "presenter",
   theme: "",
   styles: { main: {}, presenter: {}, audience: {} },
   customThemes: []
@@ -83,18 +84,25 @@ function normalizeBibleVersion(value) {
     .toUpperCase() || "NBLA";
 }
 
+function normalizeStartupMode(value) {
+  if (value === "presenter-only") return "projector";
+  return ["presenter", "controller", "projector"].includes(value) ? value : "presenter";
+}
+
 function normalizeSettings(rawSettings) {
   const styles = rawSettings.styles || {};
   const customThemes = getCustomThemes(rawSettings);
   const language = ["es", "en"].includes(rawSettings.language) ? rawSettings.language : "es";
   const bibleVersion = normalizeBibleVersion(rawSettings.bibleVersion);
   const blankBackgroundMedia = String(rawSettings.blankBackgroundMedia || "");
+  const startupMode = normalizeStartupMode(rawSettings.startupMode);
 
   if (styles.main || styles.presenter || styles.audience) {
     return {
       language,
       bibleVersion,
       blankBackgroundMedia,
+      startupMode,
       theme: rawSettings.theme || "",
       customThemes,
       styles: {
@@ -109,6 +117,7 @@ function normalizeSettings(rawSettings) {
     language,
     bibleVersion,
     blankBackgroundMedia,
+    startupMode,
     theme: rawSettings.theme || "",
     customThemes,
     styles: {
@@ -241,6 +250,7 @@ function renderSettings() {
   form.dataset.settingsSection = "style";
   renderLanguageSelect();
   renderBibleVersionSelect();
+  renderStartupModeSelect();
   renderBlankBackgroundSelect();
   renderThemeSelect();
 
@@ -275,7 +285,9 @@ function scrollToRequestedSection() {
   const requested = window.location.hash.replace(/^#/, "") || "style";
   const target = requested === "language"
     ? document.getElementById("language-settings")
-    : document.getElementById("style-settings");
+    : requested === "startup"
+      ? document.getElementById("startup-settings")
+      : document.getElementById("style-settings");
 
   if (!target) return;
 
@@ -290,6 +302,12 @@ function renderLanguageSelect() {
 
   select.value = settings.language || "es";
   document.documentElement.lang = settings.language || "es";
+}
+
+function renderStartupModeSelect() {
+  const select = document.getElementById("startupModeSelect");
+  if (!select) return;
+  select.value = normalizeStartupMode(settings.startupMode);
 }
 
 function renderBibleVersionSelect() {
@@ -385,6 +403,7 @@ function collectSettings() {
     language: document.getElementById("languageSelect")?.value || settings.language || "es",
     bibleVersion: document.getElementById("bibleVersionSelect")?.value || settings.bibleVersion || "NBLA",
     blankBackgroundMedia: document.getElementById("blankBackgroundSelect")?.value || "",
+    startupMode: normalizeStartupMode(document.getElementById("startupModeSelect")?.value || settings.startupMode),
     theme: document.getElementById("themeSelect")?.value || settings.theme || "",
     customThemes: getCustomThemes(),
     styles: { main: {}, presenter: {}, audience: {} }
@@ -419,6 +438,7 @@ function applySelectedTheme() {
     language: settings.language || "es",
     bibleVersion: settings.bibleVersion || "NBLA",
     blankBackgroundMedia: settings.blankBackgroundMedia || "",
+    startupMode: settings.startupMode || "presenter",
     customThemes: currentCustomThemes
   });
   renderSettings();
@@ -453,6 +473,7 @@ function saveCurrentAsTheme() {
       language: current.language || "es",
       bibleVersion: current.bibleVersion || "NBLA",
       blankBackgroundMedia: current.blankBackgroundMedia || "",
+      startupMode: current.startupMode || "presenter",
       theme: id,
       styles: clone(current.styles)
     }

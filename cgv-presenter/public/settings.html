@@ -43,6 +43,26 @@
     </div>
   </section>
 
+  <section id="startup-settings" class="settings-panel language-panel" data-settings-section="startup">
+    <div>
+      <h2 data-i18n="startup">Startup</h2>
+      <p data-i18n="startupHelp">Choose which windows open when CGV Presenter launches. Takes effect the next time you open the app.</p>
+    </div>
+    <div class="language-controls">
+      <label>
+        <span data-i18n="startupMode">Startup layout</span>
+        <select id="startupModeSelect">
+          <option value="presenter" data-i18n="startupPresenter">Presenter + projector</option>
+          <option value="controller" data-i18n="startupController">Controller + projector</option>
+          <option value="projector" data-i18n="startupProjector">Projector only</option>
+        </select>
+      </label>
+      <p data-i18n="startupPresenterHelp">Presenter + projector: teaching controls on the main screen; projector goes to the second display when available.</p>
+      <p data-i18n="startupControllerHelp">Controller + projector: song controls on the main screen; projector goes to the second display when available.</p>
+      <p data-i18n="startupProjectorHelp">Projector only: just the output window — fine on a single monitor.</p>
+    </div>
+  </section>
+
   <section id="style-settings" class="theme-panel" data-settings-section="style">
     <div class="theme-panel-copy">
       <h2 data-i18n="themes">Themes</h2>
