@@ -184,9 +184,68 @@ export async function buildTokenRows({
   return out;
 }
 
+/**
+ * Prefer Scrivener 1894 TR spine when present (LBF textual basis).
+ * MorphGNT/SBLGNT remains fallback helper only.
+ */
+async function loadTrSpineUnits(rootDir, book) {
+  const spinePath = join(rootDir, "translations", "tr-spine", book.id, `${book.id}-tr-spine.json`);
+  const raw = await readFirstExistingFile([spinePath]);
+  if (!raw) return null;
+  let spine;
+  try {
+    spine = JSON.parse(raw);
+  } catch {
+    return null;
+  }
+  const bookCode = book.bookCode || book.number;
+  const units = [];
+  for (const verse of Object.values(spine.verses || {})) {
+    const chapter = Number(verse.ch);
+    const vs = Number(verse.vs);
+    const reference = `${book.label} ${chapter}:${vs}`;
+    const tokenRows = (verse.tokens || []).map(tok => {
+      const robinson = tok.robinson || "";
+      const rmacFromPos = tok.pos
+        ? `${tok.pos}${String(tok.parsing || "").replace(/^-+/u, "").replace(/-+$/u, "")}`
+        : "";
+      return {
+        sourceTokenId: tok.sourceTokenId || sourceTokenId(bookCode, chapter, vs, tok.trIndex),
+        greek: tok.greek || "",
+        lemma: tok.lemma || "",
+        strongs: tok.strongs || "",
+        rmac: robinson || rmacFromPos,
+        morphology: tok.align === "tr_only" && !robinson ? "TR-only (morph pending)" : "",
+        ble: "",
+        rv1909: "",
+        align: tok.align || ""
+      };
+    });
+    const sourceTokenIds = tokenRows.map(row => row.sourceTokenId);
+    units.push({
+      bookId: book.id,
+      reference,
+      chapter,
+      verse: vs,
+      greekText: (verse.trText || tokenRows.map(r => r.greek).join(" ")).trim(),
+      sourceTokenIds,
+      tokenRows,
+      rv1909Text: "",
+      bleText: "",
+      textualBasis: spine.textualBasis || "Scrivener 1894 TR"
+    });
+  }
+  units.sort((a, b) => a.chapter - b.chapter || a.verse - b.verse);
+  return { book, units, textualBasis: spine.textualBasis || "Scrivener 1894 TR" };
+}
+
 export async function loadNtBookUnits(rootDir, bookId = "titus") {
   const book = findBook(bookId) || findBook("titus");
   if (!book) throw new Error(`Unknown book: ${bookId}`);
+
+  const trLoaded = await loadTrSpineUnits(rootDir, book);
+  if (trLoaded) return trLoaded;
+
   const bookCode = book.bookCode || book.number;
   const cgvDataDir = getCgvDataPath();
   const morphDir = join(rootDir, "..", "MNA", "SOURCES", "MorphGNT");
@@ -217,7 +276,36 @@ export async function loadNtBookUnits(rootDir, bookId = "titus") {
     greekByReference.get(reference).push(row);
   }
 
-  const bleLabel = book.bleSlug === "tito" ? "Tito" : book.label;
+  const bleLabelBySlug = {
+    mateo: "Mateo",
+    marcos: "Marcos",
+    lucas: "Lucas",
+    juan: "Juan",
+    hechos: "Hechos",
+    romanos: "Romanos",
+    "1corintios": "1Corintios",
+    "2corintios": "2Corintios",
+    galatas: "Galatas",
+    efesios: "Efesios",
+    filipenses: "Filipenses",
+    colosenses: "Colosenses",
+    "1tesalonicenses": "1Tesalonicenses",
+    "2tesalonicenses": "2Tesalonicenses",
+    "1timoteo": "1Timoteo",
+    "2timoteo": "2Timoteo",
+    tito: "Tito",
+    filemon: "Filemon",
+    hebreos: "Hebreos",
+    santiago: "Santiago",
+    "1pedro": "1Pedro",
+    "2pedro": "2Pedro",
+    "1juan": "1Juan",
+    "2juan": "2Juan",
+    "3juan": "3Juan",
+    judas: "Judas",
+    apocalipsis: "Apocalipsis"
+  };
+  const bleLabel = bleLabelBySlug[book.bleSlug] || book.label;
   // BLE files use Spanish book names; try both patterns.
   const bleLines = bleContent.replace(/\r\n/g, "\n").split("\n");
   const units = [];
@@ -228,7 +316,7 @@ export async function loadNtBookUnits(rootDir, bookId = "titus") {
     const chapter = Number(m[2]);
     const verse = Number(m[3]);
     const bleLine = bleLines.find(line =>
-      new RegExp(`^(?:Tito|${book.label}|${bleLabel})\\s+${chapter}:${verse}\\s+`, "u").test(line)
+      new RegExp(`^(?:Tito|Filemon|1[Pp]edro|2[Pp]edro|1[Jj]uan|${book.label}|${bleLabel})\\s+${chapter}:${verse}\\s+`, "u").test(line)
     );
     const bleText = bleLine ? bleLine.replace(/^[^\d]+\d+:\d+\s+/u, "").trim() : "";
     const tokenRows = await buildTokenRows({

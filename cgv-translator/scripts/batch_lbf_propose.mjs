@@ -52,7 +52,12 @@ function enrichPhrase(phrase) {
 
 function isDraft(p) {
   const st = p?.approval?.status || "";
-  return st !== "approved" && p?.suggestionSource !== "lbf-approved";
+  const source = p?.suggestionSource || "";
+  // Do not overwrite human/preliminary seeds that already have Spanish.
+  if (String(p?.spanish || "").trim() && (source === "lbf-preliminary" || source === "lbf-approved" || st === "preliminary" || st === "approved")) {
+    return false;
+  }
+  return st !== "approved" && source !== "lbf-approved" && source !== "lbf-preliminary";
 }
 
 const startIdx = phrases.findIndex(p => p.reference === startRef);

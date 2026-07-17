@@ -1,0 +1,5974 @@
+{
+  "bookId": "titus",
+  "textualBasis": "Scrivener 1894 TR",
+  "schemaVersion": 1,
+  "notes": "Reverse interlinear: Spanish unit → TR sourceTokenIds. Phrases 0–11 are hand-seeded; others are auto zip for scaffolding.",
+  "stats": {
+    "phrases": 94,
+    "hand": 22,
+    "auto": 72
+  },
+  "links": [
+    {
+      "phraseIndex": 0,
+      "reference": "Titus 1:1",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "0:0",
+          "surface": "Pablo",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56001001001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:1",
+          "surface": "siervo",
+          "charStart": 7,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n56001001002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "0:2",
+          "surface": "de Dios",
+          "charStart": 14,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56001001003"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 1,
+      "reference": "Titus 1:1",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "1:0",
+          "surface": "apóstol",
+          "charStart": 0,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56001001004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "1:1",
+          "surface": "de Cristo",
+          "charStart": 8,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56001001007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "1:2",
+          "surface": "Jesús",
+          "charStart": 18,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56001001006"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 2,
+      "reference": "Titus 1:1",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "2:0",
+          "surface": "según",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56001001008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:1",
+          "surface": "la fe",
+          "charStart": 6,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56001001009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:2",
+          "surface": "de los elegidos",
+          "charStart": 12,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56001001010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "2:3",
+          "surface": "de Dios",
+          "charStart": 28,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n56001001011"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 3,
+      "reference": "Titus 1:1",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "3:0",
+          "surface": "y",
+          "charStart": 0,
+          "charEnd": 1,
+          "sourceTokenIds": [
+            "n56001001012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:1",
+          "surface": "el conocimiento",
+          "charStart": 2,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56001001013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "3:2",
+          "surface": "de la verdad",
+          "charStart": 18,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n56001001014"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 4,
+      "reference": "Titus 1:1",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "4:0",
+          "surface": "de acuerdo con",
+          "charStart": 0,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56001001016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "4:1",
+          "surface": "la piedad",
+          "charStart": 15,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56001001015",
+            "n56001001017"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 5,
+      "reference": "Titus 1:2",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "5:0",
+          "surface": "para",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56001002001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:1",
+          "surface": "la esperanza",
+          "charStart": 5,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56001002002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:2",
+          "surface": "de la vida",
+          "charStart": 18,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56001002003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "5:3",
+          "surface": "eterna",
+          "charStart": 29,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n56001002004"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 6,
+      "reference": "Titus 1:2",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "6:0",
+          "surface": "la cual",
+          "charStart": 0,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56001002005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:1",
+          "surface": "prometió",
+          "charStart": 8,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56001002006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:2",
+          "surface": "el Dios",
+          "charStart": 17,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56001002007",
+            "n56001002009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "6:3",
+          "surface": "sin mentira",
+          "charStart": 33,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n56001002008"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 7,
+      "reference": "Titus 1:2",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "7:0",
+          "surface": "antes",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56001002010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:1",
+          "surface": "de los tiempos",
+          "charStart": 6,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n56001002011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "7:2",
+          "surface": "eternos",
+          "charStart": 21,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56001002012"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 8,
+      "reference": "Titus 1:3",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "8:0",
+          "surface": "y",
+          "charStart": 0,
+          "charEnd": 1,
+          "sourceTokenIds": [
+            "n56001003002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:1",
+          "surface": "manifestó",
+          "charStart": 21,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n56001003001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:2",
+          "surface": "propio",
+          "charStart": 7,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n56001003004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:3",
+          "surface": "tiempo",
+          "charStart": 14,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n56001003003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:4",
+          "surface": "Su palabra",
+          "charStart": 31,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n56001003006",
+            "n56001003007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "8:5",
+          "surface": "la predicación",
+          "charStart": 46,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "n56001003009"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 9,
+      "reference": "Titus 1:3",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "9:0",
+          "surface": "la cual",
+          "charStart": 0,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56001003010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:1",
+          "surface": "me",
+          "charStart": 8,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56001003012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:2",
+          "surface": "fue confiada",
+          "charStart": 11,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56001003011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:3",
+          "surface": "según",
+          "charStart": 24,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n56001003013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:4",
+          "surface": "el mandato",
+          "charStart": 30,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "n56001003014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:5",
+          "surface": "Salvador",
+          "charStart": 57,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "n56001003016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:6",
+          "surface": "nuestro",
+          "charStart": 49,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n56001003017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "9:7",
+          "surface": "Dios",
+          "charStart": 44,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n56001003018"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 10,
+      "reference": "Titus 1:4",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "10:0",
+          "surface": "Tito",
+          "charStart": 2,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56001004001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:1",
+          "surface": "hijo",
+          "charStart": 8,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56001004003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:2",
+          "surface": "genuino",
+          "charStart": 13,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n56001004002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:3",
+          "surface": "según",
+          "charStart": 21,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56001004004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:4",
+          "surface": "la fe",
+          "charStart": 27,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56001004006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:5",
+          "surface": "común",
+          "charStart": 33,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56001004005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "10:6",
+          "surface": "gracia",
+          "charStart": 40,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n56001004007"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 11,
+      "reference": "Titus 1:4",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "11:0",
+          "surface": "misericordia y paz",
+          "charStart": 0,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56001004008",
+            "n56001004009"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:1",
+          "surface": "de Dios",
+          "charStart": 19,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56001004010",
+            "n56001004011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:2",
+          "surface": "Padre",
+          "charStart": 27,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56001004012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:3",
+          "surface": "y",
+          "charStart": 13,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56001004013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:4",
+          "surface": "del Señor",
+          "charStart": 35,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n56001004014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:5",
+          "surface": "Jesús",
+          "charStart": 45,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n56001004015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:6",
+          "surface": "Cristo",
+          "charStart": 51,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "n56001004016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "11:7",
+          "surface": "nuestro Salvador",
+          "charStart": 58,
+          "charEnd": 74,
+          "sourceTokenIds": [
+            "n56001004017",
+            "n56001004018",
+            "n56001004019"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 12,
+      "reference": "Titus 1:5",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "12:0",
+          "surface": "Por esta razón",
+          "charStart": 0,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56001005001",
+            "n56001005002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:1",
+          "surface": "te",
+          "charStart": 15,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56001005004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:2",
+          "surface": "dejé",
+          "charStart": 18,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n56001005003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:3",
+          "surface": "en",
+          "charStart": 23,
+          "charEnd": 25,
+          "sourceTokenIds": [
+            "n56001005005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "12:4",
+          "surface": "Creta",
+          "charStart": 26,
+          "charEnd": 31,
+          "sourceTokenIds": [
+            "n56001005006"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 13,
+      "reference": "Titus 1:5",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "13:0",
+          "surface": "para que",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56001005007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:1",
+          "surface": "corrigieras",
+          "charStart": 9,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n56001005010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "13:2",
+          "surface": "lo que falta",
+          "charStart": 21,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n56001005008",
+            "n56001005009"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 14,
+      "reference": "Titus 1:5",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "14:0",
+          "surface": "y",
+          "charStart": 0,
+          "charEnd": 1,
+          "sourceTokenIds": [
+            "n56001005011"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:1",
+          "surface": "pusieras",
+          "charStart": 2,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56001005012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:2",
+          "surface": "ancianos",
+          "charStart": 11,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56001005015"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:3",
+          "surface": "en cada ciudad",
+          "charStart": 20,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "n56001005013",
+            "n56001005014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:4",
+          "surface": "como",
+          "charStart": 36,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "n56001005016"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:5",
+          "surface": "yo",
+          "charStart": 41,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "n56001005017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:6",
+          "surface": "te",
+          "charStart": 44,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n56001005018"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "14:7",
+          "surface": "ordené",
+          "charStart": 47,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n56001005019"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 15,
+      "reference": "Titus 1:6",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "15:0",
+          "surface": "si",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "n56001006001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:1",
+          "surface": "alguien",
+          "charStart": 3,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56001006002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:2",
+          "surface": "es",
+          "charStart": 11,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n56001006003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:3",
+          "surface": "irreprochable",
+          "charStart": 14,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56001006004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:4",
+          "surface": "marido de una sola mujer",
+          "charStart": 29,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n56001006005",
+            "n56001006006",
+            "n56001006007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "15:5",
+          "surface": "con hijos",
+          "charStart": 55,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n56001006008"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 16,
+      "reference": "Titus 1:6",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "16:0",
+          "surface": "fieles",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56001006009",
+            "n56001006010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:1",
+          "surface": "que no estén bajo acusación",
+          "charStart": 8,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n56001006011",
+            "n56001006012",
+            "n56001006013"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:2",
+          "surface": "de disolución",
+          "charStart": 36,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n56001006014"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "16:3",
+          "surface": "o de ser insubordinados",
+          "charStart": 50,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "n56001006015",
+            "n56001006016"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 17,
+      "reference": "Titus 1:7",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "17:0",
+          "surface": "Porque",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56001007002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:1",
+          "surface": "es necesario",
+          "charStart": 7,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56001007001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:2",
+          "surface": "que el obispo sea irreprochable",
+          "charStart": 20,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "n56001007003",
+            "n56001007004",
+            "n56001007005",
+            "n56001007006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:3",
+          "surface": "como",
+          "charStart": 52,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n56001007007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "17:4",
+          "surface": "mayordomo de Dios",
+          "charStart": 57,
+          "charEnd": 74,
+          "sourceTokenIds": [
+            "n56001007008",
+            "n56001007009"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 18,
+      "reference": "Titus 1:7",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "18:0",
+          "surface": "no",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "n56001007010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:1",
+          "surface": "soberbio",
+          "charStart": 3,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56001007011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:2",
+          "surface": "no",
+          "charStart": 13,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n56001007012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:3",
+          "surface": "iracundo",
+          "charStart": 16,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56001007013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:4",
+          "surface": "no",
+          "charStart": 26,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56001007014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:5",
+          "surface": "bebedor",
+          "charStart": 29,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56001007015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:6",
+          "surface": "no",
+          "charStart": 38,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "n56001007016"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:7",
+          "surface": "violento",
+          "charStart": 41,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n56001007017"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:8",
+          "surface": "no",
+          "charStart": 51,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n56001007018"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "18:9",
+          "surface": "codicioso",
+          "charStart": 54,
+          "charEnd": 63,
+          "sourceTokenIds": [
+            "n56001007019"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 19,
+      "reference": "Titus 1:8",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "19:0",
+          "surface": "sino",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56001008001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:1",
+          "surface": "hospitalario",
+          "charStart": 5,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56001008002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:2",
+          "surface": "amante de lo bueno",
+          "charStart": 19,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n56001008003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:3",
+          "surface": "prudente",
+          "charStart": 39,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n56001008004"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:4",
+          "surface": "justo",
+          "charStart": 49,
+          "charEnd": 54,
+          "sourceTokenIds": [
+            "n56001008005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:5",
+          "surface": "santo",
+          "charStart": 56,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n56001008006"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "19:6",
+          "surface": "dueño de sí",
+          "charStart": 63,
+          "charEnd": 74,
+          "sourceTokenIds": [
+            "n56001008007"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 20,
+      "reference": "Titus 1:9",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "20:0",
+          "surface": "reteniendo",
+          "charStart": 0,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56001009001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:1",
+          "surface": "la palabra fiel",
+          "charStart": 11,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56001009006",
+            "n56001009007"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:2",
+          "surface": "conforme a",
+          "charStart": 27,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n56001009003"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "20:3",
+          "surface": "la enseñanza",
+          "charStart": 38,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n56001009004",
+            "n56001009005"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 21,
+      "reference": "Titus 1:9",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "21:0",
+          "surface": "para que",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56001009008"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "21:1",
+          "surface": "sea poderoso",
+          "charStart": 9,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56001009009",
+            "n56001009010"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "21:2",
+          "surface": "tanto para exhortar",
+          "charStart": 22,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n56001009011",
+            "n56001009012"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "21:3",
+          "surface": "con la sana doctrina",
+          "charStart": 42,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "n56001009013",
+            "n56001009014",
+            "n56001009015",
+            "n56001009016",
+            "n56001009017"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "21:4",
+          "surface": "como para reprender",
+          "charStart": 63,
+          "charEnd": 82,
+          "sourceTokenIds": [
+            "n56001009018",
+            "n56001009021"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "21:5",
+          "surface": "a los que contradicen",
+          "charStart": 83,
+          "charEnd": 104,
+          "sourceTokenIds": [
+            "n56001009019",
+            "n56001009020"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 22,
+      "reference": "Titus 1:10",
+      "status": "seeded-hand",
+      "units": [
+        {
+          "unitId": "22:0",
+          "surface": "Porque",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56001010002"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "22:1",
+          "surface": "hay",
+          "charStart": 7,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56001010001"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "22:2",
+          "surface": "muchos e insubordinados",
+          "charStart": 11,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "n56001010003",
+            "n56001010004",
+            "n56001010005"
+          ],
+          "method": "hand"
+        },
+        {
+          "unitId": "22:3",
+          "surface": "vanos habladores y",
+          "charStart": 36,
+          "charEnd": 54,
+          "sourceTokenIds": [
+            "n56001010006",
+            "n56001010007"
+          ],
+          "method": "hand"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 23,
+      "reference": "Titus 1:10",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "23:0",
+          "surface": "engañadores",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56001010008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "23:1",
+          "surface": "sobre",
+          "charStart": 13,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56001010009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "23:2",
+          "surface": "todo",
+          "charStart": 19,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56001010011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "23:3",
+          "surface": "circuncisión",
+          "charStart": 34,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n56001010012"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 24,
+      "reference": "Titus 1:11",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "24:0",
+          "surface": "quienes",
+          "charStart": 2,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56001011001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "24:1",
+          "surface": "es",
+          "charStart": 10,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56001011002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "24:2",
+          "surface": "necesario",
+          "charStart": 13,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n56001011003"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 25,
+      "reference": "Titus 1:11",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "25:0",
+          "surface": "trastornan",
+          "charStart": 4,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56001011004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "25:1",
+          "surface": "casas",
+          "charStart": 15,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n56001011006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "25:2",
+          "surface": "enteras",
+          "charStart": 21,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56001011007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 26,
+      "reference": "Titus 1:11",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "26:0",
+          "surface": "enseñando",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56001011008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "26:1",
+          "surface": "no",
+          "charStart": 17,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56001011009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "26:2",
+          "surface": "conviene",
+          "charStart": 20,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56001011010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "26:3",
+          "surface": "causa",
+          "charStart": 33,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56001011012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "26:4",
+          "surface": "ganancia",
+          "charStart": 42,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n56001011013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "26:5",
+          "surface": "vergonzosa",
+          "charStart": 51,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n56001011014"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 27,
+      "reference": "Titus 1:12",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "27:0",
+          "surface": "Dijo",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56001012001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "27:1",
+          "surface": "uno",
+          "charStart": 5,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56001012003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "27:2",
+          "surface": "ellos",
+          "charStart": 12,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56001012004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "27:3",
+          "surface": "propio",
+          "charStart": 22,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56001012005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "27:4",
+          "surface": "profeta",
+          "charStart": 29,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56001012007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 28,
+      "reference": "Titus 1:12",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "28:0",
+          "surface": "cretenses",
+          "charStart": 5,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56001012008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "28:1",
+          "surface": "son",
+          "charStart": 15,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56001012009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "28:2",
+          "surface": "siempre",
+          "charStart": 19,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56001012010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "28:3",
+          "surface": "mentirosos",
+          "charStart": 27,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n56001012011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "28:4",
+          "surface": "malas",
+          "charStart": 39,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n56001012012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "28:5",
+          "surface": "bestias",
+          "charStart": 45,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n56001012013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "28:6",
+          "surface": "vientres",
+          "charStart": 54,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "n56001012014"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 29,
+      "reference": "Titus 1:13",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "29:0",
+          "surface": "Este",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56001013001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "29:1",
+          "surface": "testimonio",
+          "charStart": 5,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n56001013002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "29:2",
+          "surface": "es",
+          "charStart": 16,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56001013004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "29:3",
+          "surface": "verdadero",
+          "charStart": 19,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56001013005"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 30,
+      "reference": "Titus 1:13",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "30:0",
+          "surface": "esta",
+          "charStart": 4,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56001013006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "30:1",
+          "surface": "razón",
+          "charStart": 9,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56001013008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "30:2",
+          "surface": "repréndelos",
+          "charStart": 15,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56001013010"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 31,
+      "reference": "Titus 1:13",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "31:0",
+          "surface": "severamente",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56001013011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "31:1",
+          "surface": "sean",
+          "charStart": 22,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56001013013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "31:2",
+          "surface": "sanos",
+          "charStart": 27,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56001013014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "31:3",
+          "surface": "fe",
+          "charStart": 39,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n56001013016"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 32,
+      "reference": "Titus 1:14",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "32:0",
+          "surface": "no",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "n56001014001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:1",
+          "surface": "prestando",
+          "charStart": 3,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56001014002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:2",
+          "surface": "atención",
+          "charStart": 13,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56001014003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:3",
+          "surface": "mitos",
+          "charStart": 24,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n56001014004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:4",
+          "surface": "judíos",
+          "charStart": 30,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56001014005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:5",
+          "surface": "mandamientos",
+          "charStart": 41,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n56001014006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:6",
+          "surface": "hombres",
+          "charStart": 57,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n56001014007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:7",
+          "surface": "se",
+          "charStart": 69,
+          "charEnd": 71,
+          "sourceTokenIds": [
+            "n56001014008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:8",
+          "surface": "apartan",
+          "charStart": 72,
+          "charEnd": 79,
+          "sourceTokenIds": [
+            "n56001014009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "32:9",
+          "surface": "verdad",
+          "charStart": 86,
+          "charEnd": 92,
+          "sourceTokenIds": [
+            "n56001014010"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 33,
+      "reference": "Titus 1:15",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "33:0",
+          "surface": "Todas",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56001015001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "33:1",
+          "surface": "cosas",
+          "charStart": 10,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n56001015003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "33:2",
+          "surface": "son",
+          "charStart": 16,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56001015004"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 34,
+      "reference": "Titus 1:15",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "34:0",
+          "surface": "puros",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56001015005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "34:1",
+          "surface": "pero",
+          "charStart": 7,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56001015006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "34:2",
+          "surface": "contaminados",
+          "charStart": 21,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n56001015007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "34:3",
+          "surface": "incrédulos",
+          "charStart": 36,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n56001015008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "34:4",
+          "surface": "nada",
+          "charStart": 47,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "n56001015010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "34:5",
+          "surface": "es",
+          "charStart": 52,
+          "charEnd": 54,
+          "sourceTokenIds": [
+            "n56001015011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "34:6",
+          "surface": "puro",
+          "charStart": 55,
+          "charEnd": 59,
+          "sourceTokenIds": [
+            "n56001015012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "34:7",
+          "surface": "sino",
+          "charStart": 61,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "n56001015013"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 35,
+      "reference": "Titus 1:15",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "35:0",
+          "surface": "tanto",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56001015014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "35:1",
+          "surface": "mente",
+          "charStart": 9,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56001015015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "35:2",
+          "surface": "como",
+          "charStart": 15,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56001015017"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "35:3",
+          "surface": "conciencia",
+          "charStart": 23,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n56001015018"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "35:4",
+          "surface": "están",
+          "charStart": 34,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "n56001015020"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "35:5",
+          "surface": "contaminadas",
+          "charStart": 40,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n56001015021"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 36,
+      "reference": "Titus 1:16",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "36:0",
+          "surface": "Profesan",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56001016001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "36:1",
+          "surface": "conocer",
+          "charStart": 9,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56001016002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "36:2",
+          "surface": "Dios",
+          "charStart": 19,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56001016003"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 37,
+      "reference": "Titus 1:16",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "37:0",
+          "surface": "pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56001016004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "37:1",
+          "surface": "obras",
+          "charStart": 13,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56001016006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "37:2",
+          "surface": "niegan",
+          "charStart": 22,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56001016007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 38,
+      "reference": "Titus 1:16",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "38:0",
+          "surface": "siendo",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56001016008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "38:1",
+          "surface": "abominables",
+          "charStart": 7,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56001016010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "38:2",
+          "surface": "inobedientes",
+          "charStart": 21,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n56001016011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "38:3",
+          "surface": "reprobados",
+          "charStart": 36,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n56001016012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "38:4",
+          "surface": "toda",
+          "charStart": 52,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n56001016014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "38:5",
+          "surface": "buena",
+          "charStart": 57,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "n56001016016"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "38:6",
+          "surface": "obra",
+          "charStart": 63,
+          "charEnd": 67,
+          "sourceTokenIds": [
+            "n56001016017"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 39,
+      "reference": "Titus 2:1",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "39:0",
+          "surface": "Pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56002001001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "39:1",
+          "surface": "tú",
+          "charStart": 5,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56002001002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "39:2",
+          "surface": "habla",
+          "charStart": 8,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n56002001004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "39:3",
+          "surface": "conviene",
+          "charStart": 21,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n56002001005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "39:4",
+          "surface": "sana",
+          "charStart": 35,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "n56002001007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "39:5",
+          "surface": "doctrina",
+          "charStart": 40,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n56002001008"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 40,
+      "reference": "Titus 2:2",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "40:0",
+          "surface": "ancianos",
+          "charStart": 8,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56002002001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "40:1",
+          "surface": "sean",
+          "charStart": 17,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56002002002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "40:2",
+          "surface": "sobrios",
+          "charStart": 22,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n56002002003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "40:3",
+          "surface": "dignos",
+          "charStart": 31,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n56002002004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "40:4",
+          "surface": "prudentes",
+          "charStart": 39,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n56002002005"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 41,
+      "reference": "Titus 2:2",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "41:0",
+          "surface": "sanos",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56002002006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "41:1",
+          "surface": "fe",
+          "charStart": 12,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56002002008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "41:2",
+          "surface": "amor",
+          "charStart": 22,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56002002010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "41:3",
+          "surface": "paciencia",
+          "charStart": 34,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "n56002002012"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 42,
+      "reference": "Titus 2:3",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "42:0",
+          "surface": "ancianas",
+          "charStart": 4,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56002003001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "42:1",
+          "surface": "igualmente",
+          "charStart": 13,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56002003002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "42:2",
+          "surface": "conducta",
+          "charStart": 28,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56002003004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "42:3",
+          "surface": "reverentes",
+          "charStart": 37,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n56002003005"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 43,
+      "reference": "Titus 2:3",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "43:0",
+          "surface": "no",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "n56002003006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "43:1",
+          "surface": "calumniadoras",
+          "charStart": 3,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56002003007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "43:2",
+          "surface": "ni",
+          "charStart": 18,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n56002003008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "43:3",
+          "surface": "esclavizadas",
+          "charStart": 21,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n56002003009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "43:4",
+          "surface": "mucho",
+          "charStart": 36,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n56002003010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "43:5",
+          "surface": "vino",
+          "charStart": 42,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n56002003011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "43:6",
+          "surface": "maestras",
+          "charStart": 48,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n56002003012"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 44,
+      "reference": "Titus 2:4",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "44:0",
+          "surface": "instruyan",
+          "charStart": 9,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56002004001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "44:1",
+          "surface": "jóvenes",
+          "charStart": 25,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56002004002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "44:2",
+          "surface": "ser",
+          "charStart": 35,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56002004003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "44:3",
+          "surface": "amantes",
+          "charStart": 39,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n56002004004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "44:4",
+          "surface": "maridos",
+          "charStart": 54,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n56002004005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "44:5",
+          "surface": "amantes",
+          "charStart": 63,
+          "charEnd": 70,
+          "sourceTokenIds": [
+            "n56002004006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "44:6",
+          "surface": "hijos",
+          "charStart": 78,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "n56002004007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 45,
+      "reference": "Titus 2:5",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "45:0",
+          "surface": "prudentes",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56002005001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "45:1",
+          "surface": "puras",
+          "charStart": 11,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56002005002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "45:2",
+          "surface": "trabajadoras",
+          "charStart": 18,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n56002005003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "45:3",
+          "surface": "hogar",
+          "charStart": 35,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "n56002005004"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 46,
+      "reference": "Titus 2:5",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "46:0",
+          "surface": "sometidas",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56002005005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "46:1",
+          "surface": "propios",
+          "charStart": 16,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56002005007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "46:2",
+          "surface": "maridos",
+          "charStart": 24,
+          "charEnd": 31,
+          "sourceTokenIds": [
+            "n56002005008"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 47,
+      "reference": "Titus 2:5",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "47:0",
+          "surface": "palabra",
+          "charStart": 12,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56002005009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "47:1",
+          "surface": "Dios",
+          "charStart": 23,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56002005011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "47:2",
+          "surface": "no",
+          "charStart": 28,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n56002005012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "47:3",
+          "surface": "sea",
+          "charStart": 31,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "n56002005013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "47:4",
+          "surface": "blasfemada",
+          "charStart": 35,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "n56002005015"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 48,
+      "reference": "Titus 2:6",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "48:0",
+          "surface": "Exhorta",
+          "charStart": 0,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56002006001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "48:1",
+          "surface": "igualmente",
+          "charStart": 8,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56002006002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "48:2",
+          "surface": "jóvenes",
+          "charStart": 25,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56002006003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "48:3",
+          "surface": "ser",
+          "charStart": 35,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56002006004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "48:4",
+          "surface": "prudentes",
+          "charStart": 39,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n56002006005"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 49,
+      "reference": "Titus 2:7",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "49:0",
+          "surface": "mostrándote",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56002007001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "49:1",
+          "surface": "todo",
+          "charStart": 15,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56002007002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "49:2",
+          "surface": "como",
+          "charStart": 20,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56002007003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "49:3",
+          "surface": "ejemplo",
+          "charStart": 25,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56002007005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "49:4",
+          "surface": "buenas",
+          "charStart": 36,
+          "charEnd": 42,
+          "sourceTokenIds": [
+            "n56002007006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "49:5",
+          "surface": "obras",
+          "charStart": 43,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n56002007007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 50,
+      "reference": "Titus 2:7",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "50:0",
+          "surface": "enseñanza",
+          "charStart": 6,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n56002007008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "50:1",
+          "surface": "integridad",
+          "charStart": 17,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56002007010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "50:2",
+          "surface": "dignidad",
+          "charStart": 29,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n56002007012"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 51,
+      "reference": "Titus 2:8",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "51:0",
+          "surface": "palabra",
+          "charStart": 0,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56002008001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "51:1",
+          "surface": "sana",
+          "charStart": 8,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56002008002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "51:2",
+          "surface": "irreprensible",
+          "charStart": 14,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56002008003"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 52,
+      "reference": "Titus 2:8",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "52:0",
+          "surface": "parte",
+          "charStart": 18,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56002008004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:1",
+          "surface": "contraria",
+          "charStart": 24,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n56002008005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:2",
+          "surface": "se",
+          "charStart": 34,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56002008006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:3",
+          "surface": "avergüence",
+          "charStart": 37,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n56002008007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:4",
+          "surface": "no",
+          "charStart": 49,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "n56002008008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:5",
+          "surface": "teniendo",
+          "charStart": 52,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "n56002008010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:6",
+          "surface": "nada",
+          "charStart": 61,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "n56002008011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:7",
+          "surface": "malo",
+          "charStart": 66,
+          "charEnd": 70,
+          "sourceTokenIds": [
+            "n56002008012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:8",
+          "surface": "decir",
+          "charStart": 75,
+          "charEnd": 80,
+          "sourceTokenIds": [
+            "n56002008013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "52:9",
+          "surface": "vosotros",
+          "charStart": 84,
+          "charEnd": 92,
+          "sourceTokenIds": [
+            "n56002008014"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 53,
+      "reference": "Titus 2:9",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "53:0",
+          "surface": "siervos",
+          "charStart": 6,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n56002009001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "53:1",
+          "surface": "someterse",
+          "charStart": 15,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56002009002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "53:2",
+          "surface": "propios",
+          "charStart": 31,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56002009003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "53:3",
+          "surface": "amos",
+          "charStart": 39,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "n56002009004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "53:4",
+          "surface": "todo",
+          "charStart": 47,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "n56002009005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "53:5",
+          "surface": "ser",
+          "charStart": 53,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n56002009007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "53:6",
+          "surface": "agradables",
+          "charStart": 57,
+          "charEnd": 67,
+          "sourceTokenIds": [
+            "n56002009008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "53:7",
+          "surface": "no",
+          "charStart": 69,
+          "charEnd": 71,
+          "sourceTokenIds": [
+            "n56002009009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "53:8",
+          "surface": "contradiciendo",
+          "charStart": 72,
+          "charEnd": 86,
+          "sourceTokenIds": [
+            "n56002009010"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 54,
+      "reference": "Titus 2:10",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "54:0",
+          "surface": "no",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "n56002010001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "54:1",
+          "surface": "apropiándose",
+          "charStart": 3,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n56002010002"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 55,
+      "reference": "Titus 2:10",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "55:0",
+          "surface": "sino",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56002010003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "55:1",
+          "surface": "demostrando",
+          "charStart": 5,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56002010004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "55:2",
+          "surface": "toda",
+          "charStart": 17,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56002010005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "55:3",
+          "surface": "buena",
+          "charStart": 22,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56002010006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "55:4",
+          "surface": "fidelidad",
+          "charStart": 28,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n56002010007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 56,
+      "reference": "Titus 2:10",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "56:0",
+          "surface": "todo",
+          "charStart": 12,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56002010008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "56:1",
+          "surface": "adornen",
+          "charStart": 17,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56002010010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "56:2",
+          "surface": "doctrina",
+          "charStart": 28,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56002010012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "56:3",
+          "surface": "Dios",
+          "charStart": 40,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n56002010013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "56:4",
+          "surface": "nuestro",
+          "charStart": 45,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n56002010015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "56:5",
+          "surface": "Salvador",
+          "charStart": 53,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n56002010017"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 57,
+      "reference": "Titus 2:11",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "57:0",
+          "surface": "Porque",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56002011001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "57:1",
+          "surface": "se",
+          "charStart": 7,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56002011002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "57:2",
+          "surface": "ha",
+          "charStart": 10,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56002011003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "57:3",
+          "surface": "manifestado",
+          "charStart": 13,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56002011004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "57:4",
+          "surface": "gracia",
+          "charStart": 28,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "n56002011005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "57:5",
+          "surface": "Dios",
+          "charStart": 38,
+          "charEnd": 42,
+          "sourceTokenIds": [
+            "n56002011006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "57:6",
+          "surface": "salvadora",
+          "charStart": 44,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n56002011008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "57:7",
+          "surface": "todos",
+          "charStart": 59,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n56002011009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "57:8",
+          "surface": "hombres",
+          "charStart": 69,
+          "charEnd": 76,
+          "sourceTokenIds": [
+            "n56002011010"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 58,
+      "reference": "Titus 2:12",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "58:0",
+          "surface": "disciplinándonos",
+          "charStart": 0,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56002012001"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 59,
+      "reference": "Titus 2:12",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "59:0",
+          "surface": "habiendo",
+          "charStart": 10,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56002012003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:1",
+          "surface": "renunciado",
+          "charStart": 19,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n56002012005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:2",
+          "surface": "impiedad",
+          "charStart": 35,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "n56002012006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:3",
+          "surface": "deseos",
+          "charStart": 52,
+          "charEnd": 58,
+          "sourceTokenIds": [
+            "n56002012008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:4",
+          "surface": "mundanos",
+          "charStart": 59,
+          "charEnd": 67,
+          "sourceTokenIds": [
+            "n56002012010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:5",
+          "surface": "vivamos",
+          "charStart": 69,
+          "charEnd": 76,
+          "sourceTokenIds": [
+            "n56002012011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:6",
+          "surface": "prudentemente",
+          "charStart": 77,
+          "charEnd": 90,
+          "sourceTokenIds": [
+            "n56002012013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:7",
+          "surface": "justamente",
+          "charStart": 92,
+          "charEnd": 102,
+          "sourceTokenIds": [
+            "n56002012015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:8",
+          "surface": "piadosamente",
+          "charStart": 105,
+          "charEnd": 117,
+          "sourceTokenIds": [
+            "n56002012017"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:9",
+          "surface": "presente",
+          "charStart": 124,
+          "charEnd": 132,
+          "sourceTokenIds": [
+            "n56002012018"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "59:10",
+          "surface": "siglo",
+          "charStart": 133,
+          "charEnd": 138,
+          "sourceTokenIds": [
+            "n56002012020"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 60,
+      "reference": "Titus 2:13",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "60:0",
+          "surface": "aguardando",
+          "charStart": 0,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56002013001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:1",
+          "surface": "esperanza",
+          "charStart": 14,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56002013003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:2",
+          "surface": "bienaventurada",
+          "charStart": 24,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56002013004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:3",
+          "surface": "manifestación",
+          "charStart": 44,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "n56002013005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:4",
+          "surface": "gloria",
+          "charStart": 64,
+          "charEnd": 70,
+          "sourceTokenIds": [
+            "n56002013007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:5",
+          "surface": "gran",
+          "charStart": 75,
+          "charEnd": 79,
+          "sourceTokenIds": [
+            "n56002013009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:6",
+          "surface": "Dios",
+          "charStart": 80,
+          "charEnd": 84,
+          "sourceTokenIds": [
+            "n56002013010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:7",
+          "surface": "Salvador",
+          "charStart": 87,
+          "charEnd": 95,
+          "sourceTokenIds": [
+            "n56002013011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:8",
+          "surface": "nuestro",
+          "charStart": 96,
+          "charEnd": 103,
+          "sourceTokenIds": [
+            "n56002013013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:9",
+          "surface": "Jesús",
+          "charStart": 105,
+          "charEnd": 110,
+          "sourceTokenIds": [
+            "n56002013015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "60:10",
+          "surface": "Cristo",
+          "charStart": 111,
+          "charEnd": 117,
+          "sourceTokenIds": [
+            "n56002013016"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 61,
+      "reference": "Titus 2:14",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "61:0",
+          "surface": "quien",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56002014001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:1",
+          "surface": "se",
+          "charStart": 6,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56002014002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:2",
+          "surface": "dio",
+          "charStart": 9,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56002014003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:3",
+          "surface": "sí",
+          "charStart": 15,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56002014005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:4",
+          "surface": "mismo",
+          "charStart": 18,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56002014006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:5",
+          "surface": "nosotros",
+          "charStart": 28,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56002014007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:6",
+          "surface": "redimirnos",
+          "charStart": 42,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n56002014009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:7",
+          "surface": "toda",
+          "charStart": 56,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "n56002014010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:8",
+          "surface": "iniquidad",
+          "charStart": 61,
+          "charEnd": 70,
+          "sourceTokenIds": [
+            "n56002014011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:9",
+          "surface": "purificar",
+          "charStart": 73,
+          "charEnd": 82,
+          "sourceTokenIds": [
+            "n56002014012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:10",
+          "surface": "sí",
+          "charStart": 88,
+          "charEnd": 90,
+          "sourceTokenIds": [
+            "n56002014013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:11",
+          "surface": "pueblo",
+          "charStart": 94,
+          "charEnd": 100,
+          "sourceTokenIds": [
+            "n56002014015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "61:12",
+          "surface": "propio",
+          "charStart": 101,
+          "charEnd": 107,
+          "sourceTokenIds": [
+            "n56002014016"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 62,
+      "reference": "Titus 2:14",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "62:0",
+          "surface": "celoso",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56002014017"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "62:1",
+          "surface": "buenas",
+          "charStart": 10,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56002014018"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "62:2",
+          "surface": "obras",
+          "charStart": 17,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n56002014019"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 63,
+      "reference": "Titus 2:15",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "63:0",
+          "surface": "Estas",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56002015001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "63:1",
+          "surface": "cosas",
+          "charStart": 6,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56002015002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "63:2",
+          "surface": "habla",
+          "charStart": 12,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56002015004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "63:3",
+          "surface": "exhorta",
+          "charStart": 21,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56002015005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "63:4",
+          "surface": "reprende",
+          "charStart": 32,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "n56002015006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "63:5",
+          "surface": "toda",
+          "charStart": 45,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n56002015008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "63:6",
+          "surface": "autoridad",
+          "charStart": 50,
+          "charEnd": 59,
+          "sourceTokenIds": [
+            "n56002015009"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 64,
+      "reference": "Titus 2:15",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "64:0",
+          "surface": "nadie",
+          "charStart": 4,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56002015010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "64:1",
+          "surface": "te",
+          "charStart": 10,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56002015011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "64:2",
+          "surface": "menosprecie",
+          "charStart": 13,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56002015012"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 65,
+      "reference": "Titus 3:1",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "65:0",
+          "surface": "Recuérdales",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56003001001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "65:1",
+          "surface": "se",
+          "charStart": 16,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56003001002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "65:2",
+          "surface": "sometan",
+          "charStart": 19,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56003001003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "65:3",
+          "surface": "gobernantes",
+          "charStart": 33,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n56003001005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "65:4",
+          "surface": "autoridades",
+          "charStart": 53,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n56003001006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "65:5",
+          "surface": "obedezcan",
+          "charStart": 70,
+          "charEnd": 79,
+          "sourceTokenIds": [
+            "n56003001007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 66,
+      "reference": "Titus 3:1",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "66:0",
+          "surface": "estar",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56003001008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "66:1",
+          "surface": "listos",
+          "charStart": 6,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56003001009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "66:2",
+          "surface": "toda",
+          "charStart": 18,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n56003001010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "66:3",
+          "surface": "buena",
+          "charStart": 23,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n56003001012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "66:4",
+          "surface": "obra",
+          "charStart": 29,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n56003001013"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 67,
+      "reference": "Titus 3:2",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "67:0",
+          "surface": "nadie",
+          "charStart": 2,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56003002001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "67:1",
+          "surface": "blasfemar",
+          "charStart": 8,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56003002002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "67:2",
+          "surface": "ser",
+          "charStart": 19,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n56003002003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "67:3",
+          "surface": "no",
+          "charStart": 23,
+          "charEnd": 25,
+          "sourceTokenIds": [
+            "n56003002004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "67:4",
+          "surface": "contenciosos",
+          "charStart": 26,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56003002005"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 68,
+      "reference": "Titus 3:2",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "68:0",
+          "surface": "mostrando",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56003002006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "68:1",
+          "surface": "toda",
+          "charStart": 10,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56003002007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "68:2",
+          "surface": "mansedumbre",
+          "charStart": 15,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n56003002008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "68:3",
+          "surface": "hacia",
+          "charStart": 27,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56003002009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "68:4",
+          "surface": "todos",
+          "charStart": 33,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56003002010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "68:5",
+          "surface": "hombres",
+          "charStart": 43,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n56003002011"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 69,
+      "reference": "Titus 3:3",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "69:0",
+          "surface": "Porque",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56003003001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "69:1",
+          "surface": "también",
+          "charStart": 7,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56003003002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "69:2",
+          "surface": "nosotros",
+          "charStart": 15,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56003003003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "69:3",
+          "surface": "éramos",
+          "charStart": 24,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n56003003004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "69:4",
+          "surface": "otro",
+          "charStart": 34,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56003003005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "69:5",
+          "surface": "tiempo",
+          "charStart": 39,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "n56003003006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "69:6",
+          "surface": "necios",
+          "charStart": 46,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n56003003007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "69:7",
+          "surface": "desobedientes",
+          "charStart": 54,
+          "charEnd": 67,
+          "sourceTokenIds": [
+            "n56003003008"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 70,
+      "reference": "Titus 3:3",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "70:0",
+          "surface": "esclavizados",
+          "charStart": 0,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56003003009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "70:1",
+          "surface": "deseos",
+          "charStart": 15,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56003003010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "70:2",
+          "surface": "placeres",
+          "charStart": 24,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56003003012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "70:3",
+          "surface": "diversos",
+          "charStart": 33,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n56003003013"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 71,
+      "reference": "Titus 3:3",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "71:0",
+          "surface": "viviendo",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56003003014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "71:1",
+          "surface": "malicia",
+          "charStart": 12,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56003003015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "71:2",
+          "surface": "envidia",
+          "charStart": 22,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n56003003017"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "71:3",
+          "surface": "odiosos",
+          "charStart": 31,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56003003018"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "71:4",
+          "surface": "odiándonos",
+          "charStart": 40,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n56003003020"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "71:5",
+          "surface": "otros",
+          "charStart": 58,
+          "charEnd": 63,
+          "sourceTokenIds": [
+            "n56003003021"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 72,
+      "reference": "Titus 3:4",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "72:0",
+          "surface": "Pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56003004001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:1",
+          "surface": "cuando",
+          "charStart": 5,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56003004002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:2",
+          "surface": "se",
+          "charStart": 12,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56003004003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:3",
+          "surface": "manifestó",
+          "charStart": 15,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56003004005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:4",
+          "surface": "bondad",
+          "charStart": 28,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "n56003004006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:5",
+          "surface": "amor",
+          "charStart": 40,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n56003004007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:6",
+          "surface": "hombres",
+          "charStart": 51,
+          "charEnd": 58,
+          "sourceTokenIds": [
+            "n56003004008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:7",
+          "surface": "Dios",
+          "charStart": 62,
+          "charEnd": 66,
+          "sourceTokenIds": [
+            "n56003004010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:8",
+          "surface": "nuestro",
+          "charStart": 67,
+          "charEnd": 74,
+          "sourceTokenIds": [
+            "n56003004011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "72:9",
+          "surface": "Salvador",
+          "charStart": 75,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "n56003004012"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 73,
+      "reference": "Titus 3:5",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "73:0",
+          "surface": "no",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "n56003005001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:1",
+          "surface": "obras",
+          "charStart": 7,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56003005002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:2",
+          "surface": "justicia",
+          "charStart": 16,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n56003005004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:3",
+          "surface": "nosotros",
+          "charStart": 29,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n56003005005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:4",
+          "surface": "hicimos",
+          "charStart": 38,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "n56003005007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:5",
+          "surface": "sino",
+          "charStart": 47,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "n56003005008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:6",
+          "surface": "según",
+          "charStart": 52,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "n56003005010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:7",
+          "surface": "misericordia",
+          "charStart": 61,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "n56003005011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:8",
+          "surface": "nos",
+          "charStart": 75,
+          "charEnd": 78,
+          "sourceTokenIds": [
+            "n56003005013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:9",
+          "surface": "salvó",
+          "charStart": 79,
+          "charEnd": 84,
+          "sourceTokenIds": [
+            "n56003005014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:10",
+          "surface": "mediante",
+          "charStart": 85,
+          "charEnd": 93,
+          "sourceTokenIds": [
+            "n56003005016"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:11",
+          "surface": "lavamiento",
+          "charStart": 97,
+          "charEnd": 107,
+          "sourceTokenIds": [
+            "n56003005017"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:12",
+          "surface": "regeneración",
+          "charStart": 114,
+          "charEnd": 126,
+          "sourceTokenIds": [
+            "n56003005019"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:13",
+          "surface": "renovación",
+          "charStart": 132,
+          "charEnd": 142,
+          "sourceTokenIds": [
+            "n56003005020"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:14",
+          "surface": "Espíritu",
+          "charStart": 147,
+          "charEnd": 155,
+          "sourceTokenIds": [
+            "n56003005022"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "73:15",
+          "surface": "Santo",
+          "charStart": 156,
+          "charEnd": 161,
+          "sourceTokenIds": [
+            "n56003005023"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 74,
+      "reference": "Titus 3:6",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "74:0",
+          "surface": "cual",
+          "charStart": 3,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56003006001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:1",
+          "surface": "derramó",
+          "charStart": 8,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n56003006002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:2",
+          "surface": "sobre",
+          "charStart": 16,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56003006003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:3",
+          "surface": "nosotros",
+          "charStart": 22,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n56003006004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:4",
+          "surface": "abundantemente",
+          "charStart": 31,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "n56003006005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:5",
+          "surface": "medio",
+          "charStart": 50,
+          "charEnd": 55,
+          "sourceTokenIds": [
+            "n56003006007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:6",
+          "surface": "Jesús",
+          "charStart": 59,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n56003006008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:7",
+          "surface": "Cristo",
+          "charStart": 65,
+          "charEnd": 71,
+          "sourceTokenIds": [
+            "n56003006009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:8",
+          "surface": "nuestro",
+          "charStart": 72,
+          "charEnd": 79,
+          "sourceTokenIds": [
+            "n56003006010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "74:9",
+          "surface": "Salvador",
+          "charStart": 80,
+          "charEnd": 88,
+          "sourceTokenIds": [
+            "n56003006011"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 75,
+      "reference": "Titus 3:7",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "75:0",
+          "surface": "justificados",
+          "charStart": 10,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n56003007001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:1",
+          "surface": "gracia",
+          "charStart": 30,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56003007002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:2",
+          "surface": "aquel",
+          "charStart": 40,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "n56003007003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:3",
+          "surface": "llegáramos",
+          "charStart": 47,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "n56003007004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:4",
+          "surface": "ser",
+          "charStart": 60,
+          "charEnd": 63,
+          "sourceTokenIds": [
+            "n56003007005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:5",
+          "surface": "herederos",
+          "charStart": 64,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "n56003007007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:6",
+          "surface": "según",
+          "charStart": 74,
+          "charEnd": 79,
+          "sourceTokenIds": [
+            "n56003007008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:7",
+          "surface": "esperanza",
+          "charStart": 83,
+          "charEnd": 92,
+          "sourceTokenIds": [
+            "n56003007009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:8",
+          "surface": "vida",
+          "charStart": 99,
+          "charEnd": 103,
+          "sourceTokenIds": [
+            "n56003007010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "75:9",
+          "surface": "eterna",
+          "charStart": 104,
+          "charEnd": 110,
+          "sourceTokenIds": [
+            "n56003007011"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 76,
+      "reference": "Titus 3:8",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "76:0",
+          "surface": "Fiel",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56003008001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "76:1",
+          "surface": "es",
+          "charStart": 5,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56003008002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "76:2",
+          "surface": "palabra",
+          "charStart": 11,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56003008003"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 77,
+      "reference": "Titus 3:8",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "77:0",
+          "surface": "acerca",
+          "charStart": 2,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56003008004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "77:1",
+          "surface": "estas",
+          "charStart": 12,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56003008005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "77:2",
+          "surface": "cosas",
+          "charStart": 18,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56003008006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "77:3",
+          "surface": "quiero",
+          "charStart": 24,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n56003008007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "77:4",
+          "surface": "te",
+          "charStart": 35,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n56003008008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "77:5",
+          "surface": "afirmes",
+          "charStart": 38,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "n56003008009"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 78,
+      "reference": "Titus 3:8",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "78:0",
+          "surface": "han",
+          "charStart": 17,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n56003008010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "78:1",
+          "surface": "creído",
+          "charStart": 21,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56003008011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "78:2",
+          "surface": "Dios",
+          "charStart": 31,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n56003008012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "78:3",
+          "surface": "se",
+          "charStart": 36,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56003008014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "78:4",
+          "surface": "dediquen",
+          "charStart": 39,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n56003008015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "78:5",
+          "surface": "buenas",
+          "charStart": 50,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n56003008016"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "78:6",
+          "surface": "obras",
+          "charStart": 57,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "n56003008018"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 79,
+      "reference": "Titus 3:8",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "79:0",
+          "surface": "Estas",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n56003008019"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "79:1",
+          "surface": "cosas",
+          "charStart": 6,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56003008020"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "79:2",
+          "surface": "son",
+          "charStart": 12,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n56003008022"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "79:3",
+          "surface": "buenas",
+          "charStart": 16,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n56003008024"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "79:4",
+          "surface": "provechosas",
+          "charStart": 25,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n56003008025"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "79:5",
+          "surface": "hombres",
+          "charStart": 46,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n56003008026"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 80,
+      "reference": "Titus 3:9",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "80:0",
+          "surface": "Pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n56003009001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "80:1",
+          "surface": "evita",
+          "charStart": 5,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56003009002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "80:2",
+          "surface": "necias",
+          "charStart": 15,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56003009003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "80:3",
+          "surface": "controversias",
+          "charStart": 22,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n56003009005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "80:4",
+          "surface": "genealogías",
+          "charStart": 37,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n56003009006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "80:5",
+          "surface": "contiendas",
+          "charStart": 50,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "n56003009007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "80:6",
+          "surface": "peleas",
+          "charStart": 63,
+          "charEnd": 69,
+          "sourceTokenIds": [
+            "n56003009009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "80:7",
+          "surface": "acerca",
+          "charStart": 70,
+          "charEnd": 76,
+          "sourceTokenIds": [
+            "n56003009010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "80:8",
+          "surface": "ley",
+          "charStart": 83,
+          "charEnd": 86,
+          "sourceTokenIds": [
+            "n56003009011"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 81,
+      "reference": "Titus 3:9",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "81:0",
+          "surface": "porque",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56003009012"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "81:1",
+          "surface": "son",
+          "charStart": 7,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56003009013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "81:2",
+          "surface": "inútiles",
+          "charStart": 11,
+          "charEnd": 19,
+          "sourceTokenIds": [
+            "n56003009015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "81:3",
+          "surface": "vanas",
+          "charStart": 22,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56003009016"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 82,
+      "reference": "Titus 3:10",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "82:0",
+          "surface": "hombre",
+          "charStart": 3,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56003010001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "82:1",
+          "surface": "sectario",
+          "charStart": 10,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56003010002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "82:2",
+          "surface": "después",
+          "charStart": 20,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56003010004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "82:3",
+          "surface": "segunda",
+          "charStart": 37,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n56003010005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "82:4",
+          "surface": "amonestación",
+          "charStart": 45,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "n56003010007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "82:5",
+          "surface": "recházalo",
+          "charStart": 59,
+          "charEnd": 68,
+          "sourceTokenIds": [
+            "n56003010008"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 83,
+      "reference": "Titus 3:11",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "83:0",
+          "surface": "sabiendo",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n56003011001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "83:1",
+          "surface": "tal",
+          "charStart": 13,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56003011002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "83:2",
+          "surface": "está",
+          "charStart": 17,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n56003011004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "83:3",
+          "surface": "pervertido",
+          "charStart": 22,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n56003011005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "83:4",
+          "surface": "peca",
+          "charStart": 35,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "n56003011006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "83:5",
+          "surface": "siendo",
+          "charStart": 41,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n56003011008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "83:6",
+          "surface": "autocondenado",
+          "charStart": 48,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n56003011009"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 84,
+      "reference": "Titus 3:12",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "84:0",
+          "surface": "Cuando",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56003012001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "84:1",
+          "surface": "envíe",
+          "charStart": 7,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n56003012003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "84:2",
+          "surface": "Artemas",
+          "charStart": 15,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n56003012004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "84:3",
+          "surface": "ti",
+          "charStart": 25,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n56003012005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "84:4",
+          "surface": "Tíquico",
+          "charStart": 33,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "n56003012007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 85,
+      "reference": "Titus 3:12",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "85:0",
+          "surface": "apresúrate",
+          "charStart": 0,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56003012008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "85:1",
+          "surface": "venir",
+          "charStart": 13,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56003012010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "85:2",
+          "surface": "mí",
+          "charStart": 21,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56003012011"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "85:3",
+          "surface": "Nicópolis",
+          "charStart": 26,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n56003012013"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 86,
+      "reference": "Titus 3:12",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "86:0",
+          "surface": "porque",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56003012014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "86:1",
+          "surface": "allí",
+          "charStart": 7,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56003012015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "86:2",
+          "surface": "he",
+          "charStart": 12,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n56003012016"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "86:3",
+          "surface": "decidido",
+          "charStart": 15,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56003012017"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 87,
+      "reference": "Titus 3:13",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "87:0",
+          "surface": "Zenas",
+          "charStart": 2,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n56003013001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "87:1",
+          "surface": "jurista",
+          "charStart": 11,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56003013003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "87:2",
+          "surface": "Apolos",
+          "charStart": 23,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n56003013004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "87:3",
+          "surface": "envíalos",
+          "charStart": 31,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "n56003013005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "87:4",
+          "surface": "diligentemente",
+          "charStart": 40,
+          "charEnd": 54,
+          "sourceTokenIds": [
+            "n56003013007"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 88,
+      "reference": "Titus 3:13",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "88:0",
+          "surface": "nada",
+          "charStart": 9,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n56003013008"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "88:1",
+          "surface": "les",
+          "charStart": 14,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n56003013010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "88:2",
+          "surface": "falte",
+          "charStart": 18,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56003013011"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 89,
+      "reference": "Titus 3:14",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "89:0",
+          "surface": "aprendan",
+          "charStart": 2,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56003014001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "89:1",
+          "surface": "también",
+          "charStart": 11,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n56003014003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "89:2",
+          "surface": "nuestros",
+          "charStart": 23,
+          "charEnd": 31,
+          "sourceTokenIds": [
+            "n56003014004"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "89:3",
+          "surface": "dedicarse",
+          "charStart": 34,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "n56003014006"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "89:4",
+          "surface": "buenas",
+          "charStart": 46,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n56003014007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "89:5",
+          "surface": "obras",
+          "charStart": 53,
+          "charEnd": 58,
+          "sourceTokenIds": [
+            "n56003014009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "89:6",
+          "surface": "necesidades",
+          "charStart": 68,
+          "charEnd": 79,
+          "sourceTokenIds": [
+            "n56003014010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "89:7",
+          "surface": "urgentes",
+          "charStart": 80,
+          "charEnd": 88,
+          "sourceTokenIds": [
+            "n56003014012"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 90,
+      "reference": "Titus 3:14",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "90:0",
+          "surface": "no",
+          "charStart": 9,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n56003014013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "90:1",
+          "surface": "sean",
+          "charStart": 12,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56003014015"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "90:2",
+          "surface": "infructuosos",
+          "charStart": 17,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n56003014016"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 91,
+      "reference": "Titus 3:15",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "91:0",
+          "surface": "Te",
+          "charStart": 0,
+          "charEnd": 2,
+          "sourceTokenIds": [
+            "n56003015001"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "91:1",
+          "surface": "saludan",
+          "charStart": 3,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n56003015002"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "91:2",
+          "surface": "todos",
+          "charStart": 11,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n56003015003"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "91:3",
+          "surface": "están",
+          "charStart": 25,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n56003015005"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "91:4",
+          "surface": "conmigo",
+          "charStart": 31,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n56003015006"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 92,
+      "reference": "Titus 3:15",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "92:0",
+          "surface": "Saluda",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n56003015007"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "92:1",
+          "surface": "nos",
+          "charStart": 17,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n56003015009"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "92:2",
+          "surface": "aman",
+          "charStart": 21,
+          "charEnd": 25,
+          "sourceTokenIds": [
+            "n56003015010"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "92:3",
+          "surface": "fe",
+          "charStart": 32,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "n56003015012"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 93,
+      "reference": "Titus 3:15",
+      "status": "seeded-auto",
+      "units": [
+        {
+          "unitId": "93:0",
+          "surface": "gracia",
+          "charStart": 3,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n56003015013"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "93:1",
+          "surface": "sea",
+          "charStart": 10,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n56003015014"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "93:2",
+          "surface": "todos",
+          "charStart": 18,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n56003015016"
+          ],
+          "method": "auto-zip"
+        },
+        {
+          "unitId": "93:3",
+          "surface": "ustedes",
+          "charStart": 24,
+          "charEnd": 31,
+          "sourceTokenIds": [
+            "n56003015017"
+          ],
+          "method": "auto-zip"
+        }
+      ]
+    }
+  ]
+}

@@ -22,7 +22,12 @@
               </div>
               <div>
                 <dt>Book</dt>
-                <dd>Titus</dd>
+                <dd>
+                  <label class="visually-hidden" for="book-select">Book</label>
+                  <select id="book-select" class="book-select" aria-label="Translation book">
+                    <option value="titus">Titus</option>
+                  </select>
+                </dd>
               </div>
               <div>
                 <dt>Reference</dt>
@@ -46,6 +51,9 @@
               aria-label="Working Spanish translation"
               placeholder="Translate this phrase from the source text…"
             ></textarea>
+            <p class="scripture-label reverse-links-label">Reverse interlinear</p>
+            <div id="spanish-units" class="spanish-units" aria-label="Spanish units linked to Greek"></div>
+            <p id="reverse-links-meta" class="reverse-links-meta" hidden></p>
             <p id="phrase-save-status" class="phrase-save-status" data-state="saved">Saved</p>
 
             <div class="translation-support">
@@ -100,8 +108,8 @@
               </section>
 
               <div class="phrase-actions" aria-label="Phrase navigation">
-                <button id="previous-phrase" class="secondary-action" type="button">Previous Phrase</button>
-                <button id="next-phrase" class="primary-action" type="button">Next Phrase</button>
+                <button id="previous-phrase" class="secondary-action" type="button" title="Previous phrase (Control+, or ⌘⇧←)">Previous Phrase <kbd>⌃</kbd>+<kbd>,</kbd></button>
+                <button id="next-phrase" class="primary-action" type="button" title="Next phrase (Control+. or ⌘⇧→)">Next Phrase <kbd>⌃</kbd>+<kbd>.</kbd></button>
               </div>
             </div>
 

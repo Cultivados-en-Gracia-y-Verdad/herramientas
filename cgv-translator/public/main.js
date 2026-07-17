@@ -9,8 +9,14 @@ const tabs = [
   { id: "History", file: "history.md" }
 ];
 
+function bookIdFromLocation() {
+  const params = new URLSearchParams(window.location.search);
+  return (params.get("book") || "titus").trim().toLowerCase() || "titus";
+}
+
 const state = {
   view: "translation",
+  bookId: bookIdFromLocation(),
   investigation: "INV-0001",
   tab: tabs[0],
   phraseIndex: 0,
@@ -22,6 +28,9 @@ const state = {
   translationDirty: false,
   translationSaveTimer: null,
   translationSaving: false,
+  reverseLinksByPhrase: new Map(),
+  reverseLinksMeta: null,
+  activeReverseUnitId: null,
   dirty: false,
   saving: false
 };
@@ -63,6 +72,8 @@ const decisionConfidence = document.querySelector("#decision-confidence");
 const decisionReason = document.querySelector("#decision-reason");
 const approveDecision = document.querySelector("#approve-decision");
 const translationEditor = document.querySelector("#translation-editor");
+const spanishUnits = document.querySelector("#spanish-units");
+const reverseLinksMeta = document.querySelector("#reverse-links-meta");
 const translationReferenceTitle = document.querySelector("#translation-reference-title");
 const translationReferenceMeta = document.querySelector("#translation-reference-meta");
 const suggestionSourceLabel = document.querySelector("#suggestion-source-label");
@@ -85,6 +96,7 @@ const acceptDraftButton = document.querySelector("#accept-draft");
 const versePreviewText = document.querySelector("#verse-preview-text");
 const previousPhrase = document.querySelector("#previous-phrase");
 const nextPhrase = document.querySelector("#next-phrase");
+const bookSelect = document.querySelector("#book-select");
 const saveStatus = document.querySelector("#save-status");
 const saveButton = document.querySelector("#save-button");
 const gatherEvidence = document.querySelector("#gather-evidence");
@@ -392,6 +404,13 @@ function serializePhraseRecords() {
   });
 }
 
+function suggestionSourceFromRecord(record, savedText) {
+  const source = String(record?.suggestionSource || "").trim();
+  if (source) return source;
+  if (!savedText) return "blank";
+  return "lbf-preliminary";
+}
+
 function makePhraseFromRecord(record) {
   const rv1909Text = String(record.rv1909Text || "");
   const bleText = String(record.bleText || "");
@@ -410,7 +429,7 @@ function makePhraseFromRecord(record) {
     bleText,
     savedText,
     workingText: savedText,
-    suggestionSource: savedText ? "lbf-approved" : "blank",
+    suggestionSource: suggestionSourceFromRecord(record, savedText),
     provisional: true
   };
 }
@@ -445,7 +464,7 @@ function mergeSavedRecord(base, record, { preserveStructure = false } = {}) {
       bleText: bleText || base.bleText,
       savedText,
       workingText: savedText,
-      suggestionSource: savedText ? "lbf-approved" : "blank"
+      suggestionSource: suggestionSourceFromRecord(record, savedText)
     };
   }
 
@@ -462,7 +481,7 @@ function mergeSavedRecord(base, record, { preserveStructure = false } = {}) {
     bleText,
     savedText,
     workingText: savedText,
-    suggestionSource: savedText ? "lbf-approved" : "blank"
+    suggestionSource: suggestionSourceFromRecord(record, savedText)
   };
 }
 
@@ -473,6 +492,9 @@ function resetTranslationPhrases() {
 function suggestionSourceForPhrase(phrase) {
   if (phrase.approvedDecision) return "Approved LBF decision";
   if (phrase.workingText && phrase.suggestionSource === "saved") return "Saved LBF phrase";
+  if (phrase.workingText && phrase.suggestionSource === "lbf-preliminary") {
+    return "Preliminary LBF draft — edit and save";
+  }
   if (phrase.workingText && phrase.suggestionSource === "lbf-approved") return "Approved LBF phrase";
   if (phrase.workingText && phrase.suggestionSource === "ai-proposed") {
     return "Constrained AI draft (edit before saving)";
@@ -481,7 +503,7 @@ function suggestionSourceForPhrase(phrase) {
 }
 
 async function loadAllTranslationUnits() {
-  const { units } = await api("/api/translation/units").catch(() => ({ units: [] }));
+  const { units } = await api(translationApiPath("/api/translation/units")).catch(() => ({ units: [] }));
   return Array.isArray(units) ? units : [];
 }
 
@@ -522,7 +544,9 @@ function makePhraseFromUnit(unit) {
 }
 
 function hasMoreTranslationUnits() {
-  if (!translationUnitsLoaded) return true;
+  // Prefer the saved phrase list from disk. Do not append blank whole-verse
+  // units when we already have phrase-level rows for every available unit.
+  if (!translationUnitsLoaded) return translationPhrases.length <= defaultTranslationPhrases.length;
   const queuedReferences = new Set(translationPhrases.map(phrase => phrase.reference));
   return translationUnits.some(unit => !queuedReferences.has(unit.reference));
 }
@@ -530,6 +554,11 @@ function hasMoreTranslationUnits() {
 async function appendNextTranslationUnit() {
   const canonicalCount = defaultTranslationPhrases.length;
   if (translationPhrases.length < canonicalCount) {
+    return false;
+  }
+
+  // Never invent blank continuation phrases when disk already gave us a full book seed.
+  if (translationPhrases.length > canonicalCount && !hasMoreTranslationUnits()) {
     return false;
   }
 
@@ -919,7 +948,8 @@ function acceptConstrainedDraft() {
 
 function firstIncompletePhraseIndex() {
   const index = translationPhrases.findIndex(phrase => !phraseDisplayText(phrase));
-  return index >= 0 ? index : Math.max(0, translationPhrases.length - 1);
+  // If every phrase already has preliminary Spanish, start at the beginning.
+  return index >= 0 ? index : 0;
 }
 
 async function enrichPhraseReferencesFromUnits() {
@@ -952,7 +982,9 @@ async function enrichPhraseReferencesFromUnits() {
       rv1909Text: phrase.rv1909Text || "",
       bleText: bleFromTokens || phrase.bleText || "",
       workingText: phrase.workingText || "",
-      suggestionSource: phrase.workingText ? (phrase.suggestionSource || "lbf-approved") : "blank"
+      suggestionSource: phrase.workingText
+        ? (phrase.suggestionSource || "lbf-preliminary")
+        : "blank"
     };
   });
 }
@@ -1001,9 +1033,10 @@ async function saveTranslationDocument() {
   setPhraseSaveStatus("Saving...", "saving");
   state.translationSaving = true;
   try {
-    await api("/api/translation/current", {
+    await api(translationApiPath("/api/translation/current"), {
       method: "PUT",
       body: JSON.stringify({
+        book: state.bookId,
         content: buildTranslationDocument(),
         phrases: serializePhraseRecords()
       })
@@ -1034,9 +1067,168 @@ async function flushTranslationSave() {
   await saveTranslationDocument();
 }
 
+function translationApiPath(path) {
+  const url = new URL(path, window.location.origin);
+  url.searchParams.set("book", state.bookId || "titus");
+  return `${url.pathname}?${url.searchParams.toString()}`;
+}
+
+async function loadAvailableBooks() {
+  const { books = [], active } = await api("/api/translation/books").catch(() => ({ books: [], active: "titus" }));
+  if (!bookSelect) return;
+  const seeded = books.filter(book => book.hasPhrases);
+  const options = seeded.length ? seeded : [{ id: "titus", label: "Titus", hasPhrases: true }];
+  bookSelect.replaceChildren();
+  for (const book of options) {
+    const option = document.createElement("option");
+    option.value = book.id;
+    option.textContent = book.label;
+    bookSelect.append(option);
+  }
+  if (!options.some(book => book.id === state.bookId)) {
+    state.bookId = active || options[0].id;
+  }
+  bookSelect.value = state.bookId;
+}
+
+async function loadReverseLinks() {
+  state.activeReverseUnitId = null;
+  state.reverseLinksByPhrase = new Map();
+  state.reverseLinksMeta = null;
+  try {
+    const doc = await api(translationApiPath("/api/translation/reverse-links"));
+    const links = Array.isArray(doc?.links) ? doc.links : [];
+    state.reverseLinksMeta = {
+      textualBasis: doc?.textualBasis || "",
+      stats: doc?.stats || {}
+    };
+    for (const entry of links) {
+      state.reverseLinksByPhrase.set(Number(entry.phraseIndex), entry);
+    }
+  } catch {
+    state.reverseLinksByPhrase = new Map();
+  }
+}
+
+function currentReverseLinkEntry() {
+  const phrase = currentPhrase();
+  const idx = Number(phrase?.phraseIndex);
+  if (Number.isInteger(idx) && state.reverseLinksByPhrase.has(idx)) {
+    return state.reverseLinksByPhrase.get(idx);
+  }
+  // Fallback: position in list (seed files use phraseIndex)
+  return state.reverseLinksByPhrase.get(state.phraseIndex) || null;
+}
+
+function clearGreekLinkHighlights() {
+  phraseInterlinear.querySelectorAll(".interlinear-token.is-linked").forEach(node => {
+    node.classList.remove("is-linked");
+  });
+}
+
+function highlightGreekTokenIds(tokenIds = []) {
+  clearGreekLinkHighlights();
+  const wanted = new Set((tokenIds || []).map(String));
+  if (!wanted.size) return;
+  phraseInterlinear.querySelectorAll(".interlinear-token[data-source-token-id]").forEach(node => {
+    if (wanted.has(node.dataset.sourceTokenId)) {
+      node.classList.add("is-linked");
+    }
+  });
+}
+
+function renderSpanishUnits() {
+  if (!spanishUnits) return;
+  spanishUnits.replaceChildren();
+  const entry = currentReverseLinkEntry();
+  const units = Array.isArray(entry?.units) ? entry.units : [];
+
+  if (reverseLinksMeta) {
+    if (!units.length) {
+      reverseLinksMeta.hidden = false;
+      reverseLinksMeta.textContent = state.bookId === "titus"
+        ? "No reverse links for this phrase yet."
+        : "Reverse interlinear available for Tito TR spine first.";
+    } else {
+      const status = entry?.status || "seeded";
+      reverseLinksMeta.hidden = false;
+      if (status === "seeded-hand") {
+        reverseLinksMeta.textContent = "Hand-seeded links — click a Spanish unit to highlight Greek.";
+      } else if (status === "seeded-ai") {
+        reverseLinksMeta.textContent = "AI-seeded (lemma+morph) — click to highlight; confirm before trusting.";
+      } else if (status === "seeded-ai-invalid" || status === "seeded-ai-error") {
+        reverseLinksMeta.textContent = "AI seed needs repair — do not trust these links yet.";
+      } else {
+        reverseLinksMeta.textContent = "Auto-zip links — weak; prefer AI/hand review.";
+      }
+    }
+  }
+
+  if (!units.length) {
+    const empty = document.createElement("span");
+    empty.className = "reverse-links-meta";
+    empty.textContent = "—";
+    spanishUnits.append(empty);
+    clearGreekLinkHighlights();
+    return;
+  }
+
+  units.forEach(unit => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "spanish-unit";
+    if (entry?.status === "seeded-auto" || entry?.status === "seeded-ai-invalid") {
+      button.classList.add("is-auto");
+    }
+    if (state.activeReverseUnitId && state.activeReverseUnitId === unit.unitId) {
+      button.classList.add("is-active");
+    }
+    button.dataset.unitId = unit.unitId || "";
+    button.dataset.tokenIds = JSON.stringify(unit.sourceTokenIds || []);
+    button.textContent = unit.surface || "—";
+    button.title = (unit.sourceTokenIds || []).join(", ");
+    spanishUnits.append(button);
+  });
+
+  if (state.activeReverseUnitId) {
+    const active = units.find(unit => unit.unitId === state.activeReverseUnitId);
+    if (active) highlightGreekTokenIds(active.sourceTokenIds);
+    else {
+      state.activeReverseUnitId = null;
+      clearGreekLinkHighlights();
+    }
+  } else {
+    clearGreekLinkHighlights();
+  }
+}
+
 async function loadTranslationDocument() {
-  const { content, phrases } = await api("/api/translation/current").catch(() => ({ content: "", phrases: [] }));
+  const { content, phrases, book, label } = await api(translationApiPath("/api/translation/current")).catch(() => ({ content: "", phrases: [] }));
+  if (book) state.bookId = book;
+  if (bookSelect && label) {
+    const existing = [...bookSelect.options].some(option => option.value === state.bookId);
+    if (!existing) {
+      const option = document.createElement("option");
+      option.value = state.bookId;
+      option.textContent = label;
+      bookSelect.append(option);
+    }
+    bookSelect.value = state.bookId;
+  }
+  await loadReverseLinks();
   if (Array.isArray(phrases) && phrases.length) {
+    // When disk has a full phrase-level seed, trust that list order/content.
+    // This keeps preliminary Spanish in the textarea instead of blank verse stubs.
+    const sorted = [...phrases].sort(
+      (a, b) => Number(a.phraseIndex || 0) - Number(b.phraseIndex || 0)
+    );
+    if (sorted.length >= defaultTranslationPhrases.length) {
+      translationPhrases = sorted.map(record => makePhraseFromRecord(record));
+      state.translationDirty = false;
+      state.translationLoadedFromDisk = true;
+      return;
+    }
+
     const savedByKey = new Map(
       phrases.map(record => [phraseRecordKey(record), record])
     );
@@ -1078,6 +1270,9 @@ function renderPhraseInterlinear() {
   rows.forEach(token => {
     const item = document.createElement("div");
     item.className = "interlinear-token";
+    if (token.sourceTokenId) {
+      item.dataset.sourceTokenId = token.sourceTokenId;
+    }
 
     const greekLine = document.createElement("div");
     greekLine.className = "interlinear-greek";
@@ -1088,6 +1283,7 @@ function renderPhraseInterlinear() {
       button.type = "button";
       button.className = `greek-word-trigger ${info.approved ? "approved" : "provisional"}`;
       button.dataset.greekKey = key;
+      if (token.sourceTokenId) button.dataset.sourceTokenId = token.sourceTokenId;
       button.textContent = token.greek;
       greekLine.append(button);
     } else {
@@ -1096,7 +1292,7 @@ function renderPhraseInterlinear() {
 
     const bleLine = document.createElement("div");
     bleLine.className = "interlinear-ble";
-    bleLine.textContent = token.ble || "—";
+    bleLine.textContent = token.ble || token.strongs || "—";
 
     const rmacLine = document.createElement("div");
     rmacLine.className = "interlinear-rmac";
@@ -1121,7 +1317,9 @@ function renderVersePreview() {
 }
 
 function renderTranslationPhrase({ focus = false, cursorPosition = null } = {}) {
+  state.activeReverseUnitId = null;
   renderPhraseInterlinear();
+  renderSpanishUnits();
   const phrase = currentPhrase();
   const reference = phrase.reference || "Titus 1:1";
   const phraseNumber = translationPhrases
@@ -1930,6 +2128,30 @@ phraseInterlinear.addEventListener("click", event => {
   }
 });
 
+spanishUnits?.addEventListener("click", event => {
+  const target = event.target;
+  if (!(target instanceof HTMLElement) || !target.classList.contains("spanish-unit")) return;
+  event.stopPropagation();
+  const unitId = target.dataset.unitId || "";
+  let tokenIds = [];
+  try {
+    tokenIds = JSON.parse(target.dataset.tokenIds || "[]");
+  } catch {
+    tokenIds = [];
+  }
+  if (state.activeReverseUnitId === unitId) {
+    state.activeReverseUnitId = null;
+    clearGreekLinkHighlights();
+    spanishUnits.querySelectorAll(".spanish-unit.is-active").forEach(node => node.classList.remove("is-active"));
+    return;
+  }
+  state.activeReverseUnitId = unitId;
+  spanishUnits.querySelectorAll(".spanish-unit").forEach(node => {
+    node.classList.toggle("is-active", node.dataset.unitId === unitId);
+  });
+  highlightGreekTokenIds(tokenIds);
+});
+
 async function createInvestigationFromLemma(payload = {}) {
   const lemma = String(payload.lemma || "").trim();
   if (!lemma) {
@@ -2149,6 +2371,37 @@ gatherModal.addEventListener("click", event => {
   }
 });
 
+function isEditableKeyTarget(target) {
+  if (!(target instanceof HTMLElement)) return false;
+  if (target.isContentEditable) return true;
+  const tag = target.tagName;
+  return tag === "TEXTAREA" || tag === "INPUT" || tag === "SELECT";
+}
+
+function phraseNavDirection(event) {
+  if (state.view !== "translation") return 0;
+  const code = event.code;
+  const key = event.key;
+  const mod = event.metaKey || event.ctrlKey;
+
+  // Reliable on Mac (works in textarea; capture handler runs first):
+  // Control+, / Control+.  and  ⌘⇧← / ⌘⇧→
+  if (event.ctrlKey && !event.metaKey && !event.altKey && !event.shiftKey) {
+    if (key === "," || code === "Comma") return -1;
+    if (key === "." || code === "Period") return 1;
+  }
+  if (event.metaKey && event.shiftKey && !event.altKey && !event.ctrlKey) {
+    if (code === "ArrowLeft" || key === "ArrowLeft") return -1;
+    if (code === "ArrowRight" || key === "ArrowRight") return 1;
+  }
+  // When not typing in an input: plain arrows, or k/j (prev/next)
+  if (!mod && !event.altKey && !event.shiftKey && !isEditableKeyTarget(event.target)) {
+    if (code === "ArrowLeft" || key === "ArrowLeft" || key === "k" || key === "K") return -1;
+    if (code === "ArrowRight" || key === "ArrowRight" || key === "j" || key === "J") return 1;
+  }
+  return 0;
+}
+
 window.addEventListener("keydown", event => {
   if (event.key === "Escape" && newInvestigationModal && !newInvestigationModal.hidden) {
     closeNewInvestigationModal();
@@ -2168,8 +2421,18 @@ window.addEventListener("keydown", event => {
     } else {
       void saveCurrent();
     }
+    return;
   }
-});
+}, true);
+
+// Capture phase so Mac textarea word-jump / browser shortcuts don't swallow nav.
+window.addEventListener("keydown", event => {
+  const direction = phraseNavDirection(event);
+  if (!direction) return;
+  event.preventDefault();
+  event.stopPropagation();
+  void movePhrase(direction);
+}, true);
 
 window.addEventListener("beforeunload", event => {
   if (state.view === "translation") {
@@ -2212,6 +2475,7 @@ window.addEventListener("hashchange", () => {
 
 await loadInvestigations();
 renderTabs();
+await loadAvailableBooks();
 await loadTranslationDocument();
 await Promise.all([
   enrichPhraseReferencesFromUnits(),
@@ -2222,3 +2486,28 @@ state.phraseIndex = firstIncompletePhraseIndex();
 renderTranslationPhrase();
 await loadApprovedDecisions({ applyToText: !state.translationLoadedFromDisk });
 await openInitialRoute();
+
+bookSelect?.addEventListener("change", async () => {
+  if (isTranslationDirty()) {
+    try {
+      await flushTranslationSave();
+    } catch (error) {
+      prototypeMessage.textContent = error.message || "Translation save error.";
+      bookSelect.value = state.bookId;
+      return;
+    }
+  }
+  state.bookId = bookSelect.value;
+  const url = new URL(window.location.href);
+  url.searchParams.set("book", state.bookId);
+  window.history.replaceState(null, "", `${url.pathname}?${url.searchParams.toString()}`);
+  state.phraseIndex = 0;
+  state.translationLoadedFromDisk = false;
+  translationUnitsLoaded = false;
+  translationUnits = [];
+  await loadTranslationDocument();
+  await enrichPhraseReferencesFromUnits();
+  await loadContinuationUnits({ force: true });
+  state.phraseIndex = firstIncompletePhraseIndex();
+  renderTranslationPhrase();
+});

@@ -8,15 +8,53 @@ import { describeAiAvailability, loadTranslatorEnv } from "./src/ai/suggestPhras
 import { analyzePhraseGates } from "./src/pipeline/analyzeGates.js";
 import { assistPhraseGates } from "./src/pipeline/assistGates.js";
 import { createInvestigationFromLemma } from "./src/investigations/createInvestigation.js";
+import { findBook, NT_BOOKS } from "./src/data/bookCatalog.js";
+import { loadNtBookUnits } from "./src/data/morphLoader.js";
 
 const rootDir = fileURLToPath(new URL(".", import.meta.url));
 await loadTranslatorEnv(rootDir);
 const publicDir = join(rootDir, "public");
 const investigationsDir = join(rootDir, "investigations");
 const translationsDir = join(rootDir, "translations");
-const translationDocumentFile = join(translationsDir, "titus-1-1.md");
-const translationPhraseFile = join(translationsDir, "titus-phrases.json");
 const port = Number(process.env.PORT || 1424);
+
+function resolveBook(bookId) {
+  return findBook(bookId) || findBook("titus");
+}
+
+function bookIdFromRequest(url, body = null) {
+  return resolveBook(
+    url.searchParams.get("book")
+    || body?.book
+    || process.env.CGV_TRANSLATOR_BOOK
+    || "titus"
+  ).id;
+}
+
+function translationPathsForBook(bookId) {
+  const book = resolveBook(bookId);
+  // Prefer TR-remapped phrases when the TR spine pilot exists for this book.
+  const trPhraseFile = join(translationsDir, "tr-spine", book.id, `${book.id}-phrases-tr.json`);
+  const defaultPhraseFile = join(translationsDir, `${book.id}-phrases.json`);
+  const reverseLinksFile = join(translationsDir, "tr-spine", book.id, `${book.id}-reverse-links.json`);
+  return {
+    book,
+    phraseFile: trPhraseFile,
+    defaultPhraseFile,
+    documentFile: join(translationsDir, `${book.bleSlug}.md`),
+    reverseLinksFile
+  };
+}
+
+async function resolvePhraseFile(bookId) {
+  const { book, phraseFile, defaultPhraseFile, documentFile } = translationPathsForBook(bookId);
+  try {
+    await stat(phraseFile);
+    return { book, phraseFile, documentFile, textualBasis: "Scrivener 1894 TR" };
+  } catch {
+    return { book, phraseFile: defaultPhraseFile, documentFile, textualBasis: "MorphGNT/SBLGNT (fallback)" };
+  }
+}
 const bibliaBleOutputDir = join(rootDir, "..", "Biblia-BLE", "output");
 const mnaMorphgntDir = join(rootDir, "..", "MNA", "SOURCES", "MorphGNT");
 const mnaInterlinearDir = join(rootDir, "..", "MNA", "datasets", "interlinear", "NT");
@@ -79,10 +117,79 @@ function normalizeTranslationPhrases(value) {
       sourceTokenIds: Array.isArray(item.sourceTokenIds) ? item.sourceTokenIds.map(String) : [],
       rv1909Text: typeof item.rv1909Text === "string" ? item.rv1909Text : "",
       bleText: typeof item.bleText === "string" ? item.bleText : "",
-      suggestionSource: typeof item.suggestionSource === "string" ? item.suggestionSource : ""
+      suggestionSource: typeof item.suggestionSource === "string" ? item.suggestionSource : "",
+      approval: item && typeof item.approval === "object" && item.approval ? item.approval : undefined
     }))
     .filter(item => item.phraseIndex >= 0)
     .sort((a, b) => a.phraseIndex - b.phraseIndex);
+}
+
+function phraseIndexKey(phrase) {
+  return Number(phrase.phraseIndex);
+}
+
+async function readExistingTranslationPhrases(phraseFile) {
+  const phraseContent = await readFile(phraseFile, "utf8").catch(() => "");
+  if (!phraseContent) return [];
+  try {
+    return normalizeTranslationPhrases(JSON.parse(phraseContent));
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Merge client saves into disk so a stale browser tab cannot:
+ * - shrink the phrase list
+ * - wipe non-empty preliminary Spanish with blanks
+ *
+ * Phrase identity is phraseIndex (book-wide), not reference alone.
+ */
+function mergeTranslationPhraseSaves(incoming, existing) {
+  const existingByIndex = new Map(existing.map(item => [phraseIndexKey(item), item]));
+  const seen = new Set();
+  const merged = [];
+
+  for (const item of incoming) {
+    const key = phraseIndexKey(item);
+    if (!Number.isInteger(key) || key < 0 || seen.has(key)) continue;
+    seen.add(key);
+    const prev = existingByIndex.get(key);
+    if (!prev) {
+      // Do not let a stale tab invent sparse blank rows beyond the seed.
+      if (!String(item.spanish || "").trim() && existing.length) continue;
+      merged.push(item);
+      continue;
+    }
+
+    const incomingSpanish = String(item.spanish || "").trim();
+    const previousSpanish = String(prev.spanish || "").trim();
+    const spanish = incomingSpanish || previousSpanish;
+    const suggestionSource = incomingSpanish
+      ? (item.suggestionSource || prev.suggestionSource || "")
+      : (prev.suggestionSource || item.suggestionSource || "");
+
+    merged.push({
+      ...prev,
+      phraseIndex: key,
+      // Keep seed identity stable; client may only revise Spanish (+ source label).
+      reference: prev.reference,
+      greek: prev.greek || item.greek || "",
+      sourceTokenIds: prev.sourceTokenIds?.length ? prev.sourceTokenIds : item.sourceTokenIds,
+      rv1909Text: item.rv1909Text || prev.rv1909Text || "",
+      bleText: item.bleText || prev.bleText || "",
+      spanish,
+      suggestionSource,
+      approval: item.approval || prev.approval
+    });
+  }
+
+  for (const prev of existing) {
+    const key = phraseIndexKey(prev);
+    if (!seen.has(key)) merged.push(prev);
+  }
+
+  return merged.sort((a, b) => a.phraseIndex - b.phraseIndex);
 }
 
 function safeInvestigationPath(id) {
@@ -352,11 +459,12 @@ async function loadTitusTranslationUnits() {
     .filter(Boolean);
 }
 
-async function enrichTranslationPhraseRecords(phrases) {
-  const [units, translationIndexes] = await Promise.all([
-    loadTitusTranslationUnits().catch(() => []),
+async function enrichTranslationPhraseRecords(phrases, bookId = "titus") {
+  const [loaded, translationIndexes] = await Promise.all([
+    loadNtBookUnits(rootDir, bookId).catch(() => ({ units: [] })),
     loadTranslationIndexes(getCgvDataPath()).catch(() => null)
   ]);
+  const units = loaded.units || loaded || [];
   const unitsByReference = new Map(units.map(unit => [unit.reference, unit]));
   return phrases.map(phrase => {
     const unit = unitsByReference.get(phrase.reference);
@@ -365,7 +473,11 @@ async function enrichTranslationPhraseRecords(phrases) {
       ? phrase.sourceTokenIds
       : (knownPhraseTokenIds.get(`${phrase.reference}|${phrase.phraseIndex}`) || unit.sourceTokenIds || []);
     const tokenIdSet = new Set(tokenIds);
-    const tokenRows = (unit.tokenRows || []).filter(row => tokenIdSet.has(row.sourceTokenId));
+    let tokenRows = (unit.tokenRows || []).filter(row => tokenIdSet.has(row.sourceTokenId));
+    // Keep TR phrase rows when enrichment filter misses (partial remap / TR-only tokens).
+    if (!tokenRows.length && Array.isArray(phrase.tokenRows) && phrase.tokenRows.length) {
+      tokenRows = phrase.tokenRows;
+    }
     const greekFromTokens = tokenRows.map(row => row.greek).filter(Boolean).join(" ");
     const rv1909TokenText = tokenRows.map(row => row.rv1909).filter(Boolean).join(" ");
     const bleTokenText = tokenRows.map(row => row.ble).filter(Boolean).join(" ");
@@ -380,7 +492,8 @@ async function enrichTranslationPhraseRecords(phrases) {
       // Always prefer phrase-scoped spans derived from this phrase's tokens.
       rv1909Text: alignedRv1909 || rv1909TokenText || phrase.rv1909Text || "",
       bleText: bleTokenText || phrase.bleText || "",
-      suggestionSource: phrase.suggestionSource || (phrase.spanish?.trim() ? "lbf-approved" : "blank")
+      suggestionSource: phrase.suggestionSource || (phrase.spanish?.trim() ? "lbf-preliminary" : "blank"),
+      textualBasis: phrase.textualBasis || unit.textualBasis || ""
     };
   });
 }
@@ -865,11 +978,13 @@ async function sendEvidenceMarkdown(response, id, fileName) {
   send(response, 200, content, "text/markdown; charset=utf-8");
 }
 
-async function handleTranslation(request, response) {
+async function handleTranslation(request, response, url) {
   if (request.method === "GET") {
+    const bookId = bookIdFromRequest(url);
+    const { book, phraseFile, documentFile, textualBasis } = await resolvePhraseFile(bookId);
     const [content, phraseContent] = await Promise.all([
-      readFile(translationDocumentFile, "utf8").catch(() => ""),
-      readFile(translationPhraseFile, "utf8").catch(() => "")
+      readFile(documentFile, "utf8").catch(() => ""),
+      readFile(phraseFile, "utf8").catch(() => "")
     ]);
     let phrases = [];
     if (phraseContent) {
@@ -879,19 +994,38 @@ async function handleTranslation(request, response) {
         phrases = [];
       }
     }
-    phrases = await enrichTranslationPhraseRecords(phrases);
-    sendJson(response, 200, { reference: "Titus 1:1", content, phrases });
+    phrases = await enrichTranslationPhraseRecords(phrases, bookId);
+    sendJson(response, 200, {
+      book: book.id,
+      label: book.label,
+      bleSlug: book.bleSlug,
+      textualBasis,
+      reference: phrases[0]?.reference || `${book.label} 1:1`,
+      content,
+      phrases
+    });
     return;
   }
 
   if (request.method === "PUT" || request.method === "POST") {
     const body = await readJsonBody(request);
+    const bookId = bookIdFromRequest(url, body);
+    const { book, phraseFile, documentFile, textualBasis } = await resolvePhraseFile(bookId);
     const content = typeof body.content === "string" ? body.content : "";
-    const phrases = await enrichTranslationPhraseRecords(normalizeTranslationPhrases(body.phrases));
+    const incoming = normalizeTranslationPhrases(body.phrases);
+    const existing = await readExistingTranslationPhrases(phraseFile);
+    const merged = mergeTranslationPhraseSaves(incoming, existing);
+    const phrases = await enrichTranslationPhraseRecords(merged, bookId);
     await mkdir(translationsDir, { recursive: true });
-    await writeFile(translationDocumentFile, content.endsWith("\n") ? content : `${content}\n`, "utf8");
-    await writeFile(translationPhraseFile, `${JSON.stringify(phrases, null, 2)}\n`, "utf8");
-    sendJson(response, 200, { saved: true, reference: "Titus 1:1" });
+    await writeFile(documentFile, content.endsWith("\n") ? content : `${content}\n`, "utf8");
+    await writeFile(phraseFile, `${JSON.stringify(phrases, null, 2)}\n`, "utf8");
+    sendJson(response, 200, {
+      saved: true,
+      book: book.id,
+      textualBasis,
+      reference: phrases[0]?.reference || `${book.label} 1:1`,
+      phraseCount: phrases.length
+    });
     return;
   }
 
@@ -1002,7 +1136,39 @@ async function handleTranslationGatesAssist(request, response) {
 
 async function handleApi(request, response, url) {
   if (url.pathname === "/api/translation/current") {
-    await handleTranslation(request, response);
+    await handleTranslation(request, response, url);
+    return;
+  }
+
+  if (request.method === "GET" && url.pathname === "/api/translation/books") {
+    const books = NT_BOOKS.map(book => ({
+      id: book.id,
+      label: book.label,
+      bleSlug: book.bleSlug,
+      hasPhrases: false
+    }));
+    await Promise.all(books.map(async book => {
+      const candidates = [
+        join(translationsDir, "tr-spine", book.id, `${book.id}-phrases-tr.json`),
+        join(translationsDir, `${book.id}-phrases.json`)
+      ];
+      for (const candidate of candidates) {
+        try {
+          await stat(candidate);
+          book.hasPhrases = true;
+          book.textualBasis = candidate.includes("tr-spine")
+            ? "Scrivener 1894 TR"
+            : "MorphGNT/SBLGNT (fallback)";
+          break;
+        } catch {
+          // try next
+        }
+      }
+    }));
+    sendJson(response, 200, {
+      books,
+      active: bookIdFromRequest(url)
+    });
     return;
   }
 
@@ -1028,8 +1194,35 @@ async function handleApi(request, response, url) {
   }
 
   if (request.method === "GET" && url.pathname === "/api/translation/units") {
-    const units = await loadTitusTranslationUnits();
-    sendJson(response, 200, { book: "Titus", units });
+    const bookId = bookIdFromRequest(url);
+    const book = resolveBook(bookId);
+    const loaded = await loadNtBookUnits(rootDir, bookId);
+    sendJson(response, 200, { book: book.label, bookId: book.id, units: loaded.units || [] });
+    return;
+  }
+
+  if (request.method === "GET" && url.pathname === "/api/translation/reverse-links") {
+    const bookId = bookIdFromRequest(url);
+    const { book, reverseLinksFile } = translationPathsForBook(bookId);
+    try {
+      const raw = await readFile(reverseLinksFile, "utf8");
+      const doc = JSON.parse(raw);
+      sendJson(response, 200, {
+        bookId: book.id,
+        textualBasis: doc.textualBasis || "Scrivener 1894 TR",
+        schemaVersion: doc.schemaVersion || 1,
+        stats: doc.stats || {},
+        links: Array.isArray(doc.links) ? doc.links : []
+      });
+    } catch {
+      sendJson(response, 200, {
+        bookId: book.id,
+        textualBasis: "",
+        schemaVersion: 1,
+        stats: {},
+        links: []
+      });
+    }
     return;
   }
 
