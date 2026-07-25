@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build e-Sword BLE+ interlinear study modules from interlinear exports.
 
-Uses native e-Sword HTML tags (not plain text, not href URLs):
+Windows (.bblx): Version=2 RTF fragments (Biblioteca Hispana / iNA27 style).
+Mac/mobile (.bbli): native e-Sword HTML tags:
   <grk>/<heb>  original language
   <num>G####</num> / <num>H####</num>  clickable Strong's
   <tvm>…</tvm>  clickable morphology (Robinson / OSHB as stored)
@@ -27,6 +28,7 @@ from esword_lib import (  # noqa: E402
     MODULE_BASENAME,
     WINDOWS_SPEC,
     escape_html,
+    escape_rtf,
     write_module,
 )
 from testament_books import NT_BOOKS, OT_BOOKS  # noqa: E402
@@ -93,7 +95,7 @@ def normalize_morph(raw: str) -> str:
 
 
 def format_token_html(tok: dict[str, str]) -> str:
-    """One token in OGNT+-style inline interlinear with working Strong's/morph."""
+    """One token in OGNT+-style inline interlinear with working Strong's/morph (Mac .bbli)."""
     surface = escape_html(tok["surface"])
     gloss = escape_html(tok["es"])
     strongs = normalize_strongs(tok["strongs"])
@@ -112,15 +114,44 @@ def format_token_html(tok: dict[str, str]) -> str:
     return "".join(parts)
 
 
+def format_token_rtf(tok: dict[str, str]) -> str:
+    """One token as Windows e-Sword Version=2 RTF (iNA27-style Spanish interlinear)."""
+    surface = escape_rtf(tok["surface"])
+    gloss = escape_rtf(tok["es"])
+    strongs = normalize_strongs(tok["strongs"])
+    morph = normalize_morph(tok["morph"])
+    font = r"\f2 " if looks_hebrew(tok["surface"]) else r"\f1 "
+
+    parts: list[str] = [f"{{{font}{surface}}}"]
+    if strongs or morph:
+        label = strongs
+        if strongs and morph:
+            label = f"{strongs}:{morph}"
+        elif morph:
+            label = morph
+        parts.append(rf"{{\f0\cf11\super {escape_rtf(label)}}}")
+    if gloss:
+        parts.append(rf"{{\f0\cf2 {gloss}}}")
+    return " ".join(parts)
+
+
 def format_verse_html(tokens: list[dict[str, str]]) -> str:
     return " ".join(format_token_html(t) for t in tokens)
+
+
+def format_verse_rtf(tokens: list[dict[str, str]]) -> str:
+    # Leading space matches Biblioteca Hispana interlinear verse fragments.
+    body = " ".join(format_token_rtf(t) for t in tokens)
+    return f" {body}" if body else ""
 
 
 def load_verses_from_interlinear(
     il_dir: Path,
     books: list[str],
-) -> list[tuple[int, int, int, str]]:
-    rows: list[tuple[int, int, int, str]] = []
+) -> tuple[list[tuple[int, int, int, str]], list[tuple[int, int, int, str]]]:
+    """Return (html_rows, rtf_rows) from the same interlinear parse."""
+    html_rows: list[tuple[int, int, int, str]] = []
+    rtf_rows: list[tuple[int, int, int, str]] = []
     for slug in books:
         book_id = ESWORD_BOOK_ID.get(slug)
         if not book_id:
@@ -144,10 +175,12 @@ def load_verses_from_interlinear(
                 tokens = parse_tokens(body)
                 if not tokens:
                     continue
-                text = format_verse_html(tokens)
-                rows.append((book_id, int(ch_s), int(vs_s), text))
-    rows.sort(key=lambda item: (item[0], item[1], item[2]))
-    return rows
+                key = (book_id, int(ch_s), int(vs_s))
+                html_rows.append((*key, format_verse_html(tokens)))
+                rtf_rows.append((*key, format_verse_rtf(tokens)))
+    html_rows.sort(key=lambda item: (item[0], item[1], item[2]))
+    rtf_rows.sort(key=lambda item: (item[0], item[1], item[2]))
+    return html_rows, rtf_rows
 
 
 def main() -> int:
@@ -190,12 +223,12 @@ def main() -> int:
     else:
         books = list(OT_BOOKS) + list(NT_BOOKS)
 
-    verses = load_verses_from_interlinear(args.interlinear_dir, books)
-    if not verses:
+    verses_html, verses_rtf = load_verses_from_interlinear(args.interlinear_dir, books)
+    if not verses_html:
         print("error: no verses loaded", file=sys.stderr)
         return 1
 
-    book_ids = {b for b, _, _, _ in verses}
+    book_ids = {b for b, _, _, _ in verses_html}
     include_ot = any(b <= 39 for b in book_ids)
     include_nt = any(b >= 40 for b in book_ids)
 
@@ -204,19 +237,19 @@ def main() -> int:
         dest = args.output_dir / f"{MODULE_BASENAME}{WINDOWS_SPEC.extension}"
         write_module(
             dest,
-            verses,
+            verses_rtf,
             WINDOWS_SPEC,
             include_ot=include_ot,
             include_nt=include_nt,
             strong=True,
-            html=True,
+            html=True,  # already formatted; do not escape
         )
         outputs.append(dest)
     if args.platform in ("mac", "both"):
         dest = args.output_dir / f"{MODULE_BASENAME}{MAC_SPEC.extension}"
         write_module(
             dest,
-            verses,
+            verses_html,
             MAC_SPEC,
             include_ot=include_ot,
             include_nt=include_nt,
@@ -243,13 +276,14 @@ def main() -> int:
     for dest in outputs:
         print(f"wrote {dest}")
     print(f"  books: {book_count}")
-    print(f"  verses: {len(verses)}")
+    print(f"  verses: {len(verses_html)}")
     print(f"  OT: {include_ot}  NT: {include_nt}")
-    print(f"  kind: BLE+ interlinear (native <num>/<tvm> links)")
+    print(f"  kind: BLE+ interlinear (Windows RTF Version=2 / Mac HTML)")
     print(f"  generated: {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}")
     print()
     if args.platform in ("windows", "both"):
         print(f"Windows e-Sword: copy {MODULE_BASENAME}.bblx to Documents\\e-Sword\\")
+        print("  (RTF interlinear like iNA27+/RV1960+ — not raw HTML tags)")
     if args.platform in ("mac", "both"):
         print(f"e-Sword X (macOS): File → Resources → Import… → {MODULE_BASENAME}.bbli")
     return 0

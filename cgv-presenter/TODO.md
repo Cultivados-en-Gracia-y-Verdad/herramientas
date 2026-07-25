@@ -1,6 +1,6 @@
 # CGV Presenter — TODO
 
-Backlog for the `cgv-presenter` app. Current release: **1.1.17**.
+Backlog for the `cgv-presenter` app. Current release: **1.2.0**.
 
 ## Distribution
 

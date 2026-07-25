@@ -1,7 +1,7 @@
 {
   "name": "cgv-presenter",
   "productName": "CGV Presenter",
-  "version": "1.1.17",
+  "version": "1.2.0",
   "description": "Offline-first presentation and training delivery app for Cultivados en Gracia y Verdad courses.",
   "author": "Cultivados en Gracia y Verdad",
   "homepage": "https://github.com/Cultivados-en-Gracia-y-Verdad/herramientas/releases",
@@ -25,6 +25,12 @@
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^5.2.8",
+    "@fontsource/ibm-plex-serif": "^5.3.0",
+    "@fontsource/instrument-sans": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "@fontsource/literata": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@fontsource/syne": "^5.3.0",
     "compression": "^1.8.1",
     "electron-squirrel-startup": "^1.0.1",
     "express": "^5.2.1",

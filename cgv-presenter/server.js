@@ -8,6 +8,11 @@ const fs = require("fs");
 const path = require("path");
 const { marked } = require("marked");
 const QRCode = require("qrcode");
+const {
+  ensureGreekUsageIndex,
+  lookupGreekUsage,
+  bibleBookCandidates
+} = require("./greekUsage");
 
 const app = express();
 app.use(compression());
@@ -67,7 +72,7 @@ const appStatePath = path.join(runtimeDataDir, "app-state.json");
 const libraryMarkerFileName = ".cgv-presenter-library.json";
 const LEGACY_H6_INDENTS = new Set(["3.55em", "3.8em", "4.5em", "5.75em"]);
 const LEGACY_BULLET_INDENTS = new Set(["5.1em", "5.6em", "6.25em", "8em"]);
-const LEGACY_FLAT_SCRIPTURE_COLORS = new Set(["#111827", "#1f2937", "#374151", "inherit"]);
+const LEGACY_FLAT_SCRIPTURE_COLORS = new Set(["#111827", "#1f2937", "#374151", "#e8edf4", "#fff0a8", "#8b6f16", "inherit"]);
 const DEFAULT_H6_INDENT = "7em";
 const DEFAULT_BULLET_INDENT = "9.5em";
 seedStarterContent();
@@ -92,11 +97,33 @@ const defaultSongRepository = {
 const synthesisMarker = "::roots-synthesis::";
 const h4IntroMarker = "::roots-h4-intro::";
 const sectionContextMarker = "::roots-section-context::";
+const phraseCueMarker = "::roots-phrase-cue::";
+const crossReferenceMarker = "::roots-cross-references::";
 
 app.use(express.json({ limit: "30mb" }));
 app.use(
   "/fonts/ibm-plex-sans",
   express.static(path.join(__dirname, "node_modules", "@fontsource", "ibm-plex-sans", "files"))
+);
+app.use(
+  "/fonts/instrument-sans",
+  express.static(path.join(__dirname, "node_modules", "@fontsource", "instrument-sans", "files"))
+);
+app.use(
+  "/fonts/instrument-serif",
+  express.static(path.join(__dirname, "node_modules", "@fontsource", "instrument-serif", "files"))
+);
+app.use(
+  "/fonts/syne",
+  express.static(path.join(__dirname, "node_modules", "@fontsource", "syne", "files"))
+);
+app.use(
+  "/fonts/space-grotesk",
+  express.static(path.join(__dirname, "node_modules", "@fontsource", "space-grotesk", "files"))
+);
+app.use(
+  "/fonts/ibm-plex-serif",
+  express.static(path.join(__dirname, "node_modules", "@fontsource", "ibm-plex-serif", "files"))
 );
 app.get("/style-settings.css", (req, res) => {
   res.setHeader("Content-Type", "text/css; charset=utf-8");
@@ -193,6 +220,7 @@ let bibleReferences = {};
 let bibleChapterVerseCounts = {};
 let bibleBookNames = [];
 let bibleBookPatterns = [];
+let footnoteDefinitions = new Map();
 let state = {
   slide: 0,
   step: 0
@@ -214,7 +242,8 @@ let quizError = null;
 let popupState = {
   reference: null,
   scrollRatio: 0,
-  verseIndex: 0
+  verseIndex: 0,
+  verseCount: 0
 };
 
 let audienceQrVisible = false;
@@ -519,12 +548,45 @@ courseMarkdownRenderer.image = function image(token) {
   return `<img src="${escapeHtml(href)}" alt="${escapeHtml(alt)}"${title}>`;
 };
 
+courseMarkdownRenderer.blockquote = function blockquote(token) {
+  const className = isScriptureBlockquote(token)
+    ? ' class="scripture-quote"'
+    : ' class="teaching-comment"';
+
+  return `<blockquote${className}>\n${this.parser.parse(token.tokens)}</blockquote>\n`;
+};
+
+courseMarkdownRenderer.heading = function heading(token) {
+  const depth = Math.min(Math.max(Number(token.depth) || 1, 1), 6);
+  // Editorial Architecture:
+  // H1–H3 = Layer 2 navigation cues; H4 = Layer 1 inspired independent clause.
+  const className = depth === 1
+    ? ' class="major-nav"'
+    : depth === 2
+      ? ' class="development-nav"'
+      : depth === 3
+        ? ' class="section-nav reference-title"'
+        : depth === 4
+          ? ' class="independent-clause scripture-heading"'
+          : "";
+
+  return `<h${depth}${className}>${this.parser.parseInline(token.tokens)}</h${depth}>\n`;
+};
+
 function renderMarkdown(value) {
   return marked.parse(value, { renderer: courseMarkdownRenderer });
 }
 
 function renderMarkdownInline(value) {
   return marked.parseInline(value, { renderer: courseMarkdownRenderer });
+}
+
+function isScriptureBlockquote(token) {
+  const text = String(token?.text || "")
+    .replace(/<[^>]*>/g, "")
+    .trim();
+
+  return /^(?:\*\*)?«/.test(text);
 }
 
 function uniqueExistingDirectories(directories) {
@@ -1208,6 +1270,9 @@ function buildStyleSettingsCss() {
     const synthesis = styles.synthesis || {};
     const popup = styles.popup || {};
     const definition = styles.definition || {};
+    const surface = styles.surface || {};
+    const comment = styles.comment || {};
+    const title = styles.title || {};
 
     lines.push(`${selector} {`);
 
@@ -1224,6 +1289,45 @@ function buildStyleSettingsCss() {
       if (style.indent) lines.push(`  --style-${key}-indent: ${cssValue(style.indent, "0")};`);
       if (style.lineHeight) lines.push(`  --style-${key}-line-height: ${cssValue(style.lineHeight, "1.35")};`);
     });
+
+    const scriptureColor = styles.scripture?.color || styles.h4?.color;
+    if (scriptureColor) {
+      lines.push(`  --cgv-scripture-display-color: ${cssValue(scriptureColor, scope === "presenter" ? "#8a5f13" : "#f1d286")};`);
+    }
+
+    if (comment.color) {
+      lines.push(`  --cgv-comment-color: ${cssValue(comment.color, scope === "presenter" ? "#374151" : "#ffffff")};`);
+    }
+    if (title.background) {
+      lines.push(`  --cgv-h1-title-background: ${cssValue(title.background, "#14532d")};`);
+    }
+    if (title.border) {
+      lines.push(`  --cgv-h1-title-border: ${cssValue(title.border, "#5eead4")};`);
+    }
+    if (surface.tint) {
+      lines.push(`  --cgv-surface-tint: ${cssValue(surface.tint, "#8d6b4d")};`);
+    }
+    if (surface.shadow) {
+      lines.push(`  --cgv-surface-shadow: ${cssValue(surface.shadow, "#1e1711")};`);
+    }
+    if (surface.grain) {
+      lines.push(`  --cgv-surface-grain: ${cssValue(surface.grain, "#6d5542")};`);
+    }
+    const artwork = surface.artwork === "cover"
+      ? rewriteCourseAssetUrl(presentationMeta.cover || "")
+      : String(surface.artwork || "");
+    if (/^\/course-assets\/[\w./%-]+$/i.test(artwork)) {
+      lines.push(`  --cgv-surface-artwork: url("${artwork}");`);
+    }
+    if (surface.folio || surface.header) {
+      lines.push("  --cgv-editorial-header: 1;");
+    }
+    if (surface.folio) {
+      lines.push("  --cgv-folio-marker: 1;");
+    }
+    if (surface.rule) {
+      lines.push(`  --cgv-folio-rule: ${cssValue(surface.rule, "transparent")};`);
+    }
 
     if (synthesis.background) {
       lines.push(`  --synthesis-background: ${cssValue(synthesis.background, "#f5f2e8")};`);
@@ -1368,6 +1472,7 @@ function loadBibleReferences() {
     .sort((a, b) => b.length - a.length);
 
   console.log(`Loaded ${bibleBookNames.length} ${version} Bible books from ${bibleDir}`);
+  ensureGreekUsageIndex(__dirname);
 }
 
 function getBibleSearchRoots() {
@@ -1534,9 +1639,16 @@ function buildBibleReferenceMarkup(displayReference, book, chapter, startVerse, 
   return buildBibleReferencePopup(displayReference, verses);
 }
 
+function normalizeBibleReferenceKey(value) {
+  return String(value || "")
+    .replace(/[–—]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function buildBibleReferencePopup(displayReference, verses) {
   const normalizedDisplay = escapeHtml(displayReference);
-  const popupTitle = escapeHtml(displayReference);
+  const popupTitle = escapeHtml(normalizeBibleReferenceKey(displayReference));
   const verseCount = verses.length;
   const popupText = verses
     .map((reference, index) => {
@@ -1685,6 +1797,154 @@ function enrichBibleReferences(markdownLine) {
     .join("");
 }
 
+function isFootnoteDefinitionLine(line) {
+  return /^\[\^[^\]]+\]:/.test(String(line || "").trim());
+}
+
+function collectFootnoteDefinitions(body) {
+  const map = new Map();
+
+  String(body || "").split("\n").forEach(line => {
+    const match = String(line).match(/^\[\^([^\]]+)\]:\s*(.*)$/);
+    if (!match) return;
+
+    const id = match[1].trim();
+    if (!id || map.has(id)) return;
+    map.set(id, match[2].trim());
+  });
+
+  return map;
+}
+
+function getFootnoteDefinition(id) {
+  if (footnoteDefinitions.has(id)) return footnoteDefinitions.get(id);
+
+  const lower = String(id || "").toLowerCase();
+  for (const [key, value] of footnoteDefinitions.entries()) {
+    if (String(key).toLowerCase() === lower) return value;
+  }
+
+  return undefined;
+}
+
+function buildFootnoteMarkup(id, labelText, options = {}) {
+  const { paren = false, rawLabelHtml = null } = options;
+  const note = getFootnoteDefinition(id);
+  const noteHtml = note !== undefined
+    ? enrichBibleReferences(renderMarkdownInline(note).trim())
+    : "<em>Nota no definida</em>";
+  const referenceKey = escapeHtml(`footnote:${id}`);
+
+  let labelHtml = "";
+  if (rawLabelHtml) {
+    labelHtml = rawLabelHtml;
+  } else if (labelText != null && String(labelText).length) {
+    labelHtml = paren ? `(${escapeHtml(labelText)})` : escapeHtml(labelText);
+  } else {
+    labelHtml = `<sup class="footnote-marker">${escapeHtml(id)}</sup>`;
+  }
+
+  return `<span class="bible-ref footnote-ref" tabindex="0" role="button" data-reference="${referenceKey}" data-footnote-id="${escapeHtml(id)}" data-verse-count="1">${labelHtml}<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><strong>${escapeHtml(id)}</strong> ${noteHtml}</span></span></span>`;
+}
+
+function enrichFootnotes(value) {
+  let html = String(value || "");
+
+  // *Infinitivo*[^inf] / <em>…</em>[^inf] → whole emphasized term is clickable
+  html = html.replace(
+    /<(em|strong|u|i|span)(\s[^>]*)?>([^<]+)<\/\1>\s*\[\^([^\]]+)\]/gi,
+    (match, tag, attrs = "", label, id) => buildFootnoteMarkup(id, null, {
+      rawLabelHtml: `<${tag}${attrs || ""}>${label}</${tag}>`
+    })
+  );
+
+  // (καὶ)[^kai] → parenthetical label
+  // Infinitivo[^inf] → preceding word/term is the clickable label
+  // [^1] → superscript marker
+  const pattern = /(?:\(([^)\n]+)\)|（([^）\n]+)）|([\p{L}\p{M}0-9]+(?:[-'ʼ’][\p{L}\p{M}0-9]+)*))?\[\^([^\]]+)\]/gu;
+
+  const enrichText = text => text.replace(pattern, (match, labelWest, labelFull, labelWord, id) => {
+    if (labelWest != null || labelFull != null) {
+      return buildFootnoteMarkup(id, labelWest ?? labelFull, { paren: true });
+    }
+    if (labelWord != null) {
+      return buildFootnoteMarkup(id, labelWord, { paren: false });
+    }
+    return buildFootnoteMarkup(id, null);
+  });
+
+  return html
+    .split(/(<[^>]+>)/g)
+    .map(part => part.startsWith("<") && part.endsWith(">") ? part : enrichText(part))
+    .join("");
+}
+
+function lookupSpanishVerseForGreek(bookCode, chapter, verse) {
+  for (const bookName of bibleBookCandidates(bookCode)) {
+    const key = `${normalizeReferenceText(bookName)}.${chapter}.${verse}`;
+    const hit = bibleReferences[key];
+    if (hit?.text) return hit.text;
+  }
+  return "";
+}
+
+function buildGreekUsageMarkup(surface) {
+  const usage = lookupGreekUsage(surface, {
+    presenterRootDir: __dirname,
+    lookupVerseText: lookupSpanishVerseForGreek
+  });
+  if (!usage) return null;
+
+  const referenceKey = escapeHtml(`greek:${usage.surface}`);
+  const labelHtml = `(${escapeHtml(usage.surface)})`;
+  const meta = [usage.lemma, usage.morphology].filter(Boolean).join(" · ");
+
+  const popupText = usage.occurrences.map((occurrence, index) => {
+    const spanish = occurrence.spanish
+      ? escapeHtml(occurrence.spanish)
+      : `<em>${escapeHtml(occurrence.surfaceForm)}</em>`;
+    const formNote = occurrence.surfaceForm && occurrence.surfaceForm !== usage.surface
+      ? ` <span class="greek-usage-form">(${escapeHtml(occurrence.surfaceForm)})</span>`
+      : "";
+    return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(occurrence.reference)}</strong>${formNote} ${spanish}</span>`;
+  }).join("");
+
+  const nav = usage.occurrences.length > 1
+    ? `<span class="bible-popup-nav">
+        <button type="button" class="bible-popup-nav-button" data-popup-verse="-1" aria-label="Previous verse">‹</button>
+        <span class="bible-popup-position"><span data-popup-verse-current>1</span> / ${usage.occurrences.length}</span>
+        <button type="button" class="bible-popup-nav-button" data-popup-verse="1" aria-label="Next verse">›</button>
+      </span>`
+    : "";
+
+  const header = `<span class="greek-usage-header"><strong>${escapeHtml(usage.surface)}</strong> ${escapeHtml(meta)} · ${usage.count} uso${usage.count === 1 ? "" : "s"}</span>`;
+
+  return `<span class="bible-ref greek-ref" tabindex="0" role="button" data-reference="${referenceKey}" data-verse-count="${usage.occurrences.length}">${labelHtml}<span class="bible-popup">${header}${popupText}${nav}</span></span>`;
+}
+
+function enrichGreekParentheticals(value) {
+  const html = String(value || "");
+  const pattern = /\(([\p{Script=Greek}][\p{Script=Greek}\p{M}'ʼ’*·]*)\)(?!\[\^)/gu;
+
+  const enrichText = text => text.replace(pattern, (match, surface) => {
+    const markup = buildGreekUsageMarkup(surface);
+    return markup || match;
+  });
+
+  return html
+    .split(/(<[^>]+>)/g)
+    .map(part => part.startsWith("<") && part.endsWith(">") ? part : enrichText(part))
+    .join("");
+}
+
+function enrichPresentationMarkup(value) {
+  return enrichBibleReferences(
+    enrichGreekParentheticals(
+      enrichFootnotes(String(value || ""))
+    )
+  );
+}
+
 function getMarkdownHeadingLevel(line) {
   const match = String(line || "").match(/^(#{1,6})\s+/);
   return match ? match[1].length : 0;
@@ -1693,9 +1953,18 @@ function getMarkdownHeadingLevel(line) {
 function renderLine(line) {
   if (String(line || "").startsWith(sectionContextMarker)) {
     const context = JSON.parse(String(line).slice(sectionContextMarker.length));
+    const contextText = String(context.text || "").trim();
+    const level = Number(context.level) || 2;
+    const bookMatch = level === 2 ? contextText.match(/^(?:[1-3]\s+)?[\p{L}]+/u) : null;
+    const bookMark = bookMatch ? bookMatch[0].slice(0, 1).toUpperCase() : "";
+    const bookHtml = bookMark
+      ? `<span class="section-context-book" aria-hidden="true">${escapeHtml(bookMark)}</span>`
+      : "";
+
     return `
-      <div class="section-context level-${Number(context.level) || 2}">
-        ${enrichBibleReferences(renderMarkdownInline(context.text).trim())}
+      <div class="section-context level-${level}">
+        ${bookHtml}
+        <span class="section-context-text">${enrichPresentationMarkup(renderMarkdownInline(contextText).trim())}</span>
       </div>
     `.trim();
   }
@@ -1704,7 +1973,7 @@ function renderLine(line) {
   if (manualTitle) {
     return `
       <div class="manual-${manualTitle.type}">
-        ${enrichBibleReferences(renderMarkdownInline(manualTitle.text).trim())}
+        ${enrichPresentationMarkup(renderMarkdownInline(manualTitle.text).trim())}
       </div>
     `.trim();
   }
@@ -1757,9 +2026,9 @@ function renderLine(line) {
 
   if (line.startsWith(synthesisMarker)) {
     const synthesis = JSON.parse(line.slice(synthesisMarker.length));
-    const title = enrichBibleReferences(renderMarkdownInline(synthesis.title)).trim();
+    const title = enrichPresentationMarkup(renderMarkdownInline(synthesis.title)).trim();
     const points = synthesis.points
-      .map(point => `<li>${enrichBibleReferences(renderMarkdownInline(point)).trim()}</li>`)
+      .map(point => `<li>${enrichPresentationMarkup(renderMarkdownInline(point)).trim()}</li>`)
       .join("");
 
     return {
@@ -1778,9 +2047,45 @@ function renderLine(line) {
 
     return {
       h4Intro: true,
-      html: renderMarkdown(enrichBibleReferences(intro.full)).trim(),
-      h4OnlyHtml: renderMarkdown(enrichBibleReferences(intro.h4)).trim()
+      html: enrichPresentationMarkup(renderMarkdown(intro.full)).trim(),
+      h4OnlyHtml: enrichPresentationMarkup(renderMarkdown(intro.h4)).trim()
     };
+  }
+
+  if (line.startsWith(phraseCueMarker)) {
+    const cue = JSON.parse(line.slice(phraseCueMarker.length));
+    const cueType = cue.type === "dependent" ? "dependent" : "phrase";
+
+    return `
+      <div class="marker-cue marker-${cueType} phrase-cue phrase-cue-${cueType === "dependent" ? "minus" : "plus"}">
+        ${enrichPresentationMarkup(renderMarkdownInline(cue.text).trim())}
+      </div>
+    `.trim();
+  }
+
+  if (line.startsWith(crossReferenceMarker)) {
+    const references = JSON.parse(line.slice(crossReferenceMarker.length));
+    return renderCrossReferences(references);
+  }
+
+  if (isImageBlockquoteLine(line)) {
+    return enrichPresentationMarkup(renderMarkdown(unwrapBlockquotePrefix(line))).trim();
+  }
+
+  if (isStandaloneScriptureLine(line)) {
+    return `
+      <p class="scripture-line">
+        ${enrichPresentationMarkup(renderMarkdownInline(stripWrappingAsterisks(line)).trim())}
+      </p>
+    `.trim();
+  }
+
+  if (isGrammarNoteLine(line)) {
+    return `
+      <p class="marker-grammar grammar-note">
+        ${enrichPresentationMarkup(renderMarkdownInline(normalizeCommentGlosses(line.replace(/^\*\s+/, ""))).trim())}
+      </p>
+    `.trim();
   }
 
   const definitionMatch = line.match(/^(.+?)\n:\s+(.+)$/s);
@@ -1788,16 +2093,17 @@ function renderLine(line) {
   if (definitionMatch) {
     return `
       <div class="definition">
-        <div class="definition-term">${enrichBibleReferences(renderMarkdownInline(definitionMatch[1])).trim()}</div>
-        <div class="definition-text">${enrichBibleReferences(renderMarkdownInline(definitionMatch[2])).trim()}</div>
+        <div class="definition-term">${enrichPresentationMarkup(renderMarkdownInline(definitionMatch[1])).trim()}</div>
+        <div class="definition-text">${enrichPresentationMarkup(renderMarkdownInline(definitionMatch[2])).trim()}</div>
       </div>
     `.trim();
   }
 
+  const source = normalizeCommentGlosses(line);
   const headingLevel = getMarkdownHeadingLevel(line);
   const html = headingLevel > 0 && headingLevel <= 2
-    ? renderMarkdown(line).trim()
-    : enrichBibleReferences(renderMarkdown(line)).trim();
+    ? renderMarkdown(source).trim()
+    : enrichPresentationMarkup(renderMarkdown(source)).trim();
 
   if (line.startsWith("- ")) {
     return html.replace("<ul>", '<ul class="comment-bullets">');
@@ -2608,6 +2914,105 @@ function parseSlide(lines) {
   return { lines: groupRevealLines(displayLines), quiz };
 }
 
+function isPhraseCueLine(line) {
+  // + phrases/words, - dependent clauses (italic-wrapped to avoid plain list bullets)
+  return /^\+\s+\S/.test(String(line || "")) ||
+    /^-\s+\*[^\s*][\s\S]*\*\s*$/.test(String(line || ""));
+}
+
+function isStandaloneScriptureLine(line) {
+  // Tito verse lines are italic-wrapped with no space after the opening "*".
+  // Grammar notes use "* " (markdown list markers) and must not match here.
+  return /^\*[^\s*][\s\S]*\*\s*$/.test(String(line || ""));
+}
+
+function isGrammarNoteLine(line) {
+  // * grammar, definitions, observations
+  return /^\*\s+\S/.test(String(line || ""));
+}
+
+function parseCrossReferenceLine(line) {
+  const match = String(line || "").match(
+    /^\*\s+XRef\s*\(([^)]+)\)\s*:\s*[—-]\s*([^—]+?)\s*[—-]\s*(.+?)\s*$/i
+  );
+
+  if (!match) return null;
+
+  return {
+    term: match[1].trim(),
+    reference: match[2].trim(),
+    note: match[3].trim()
+  };
+}
+
+function renderCrossReferences(references) {
+  const items = Array.isArray(references) ? references : [];
+
+  return `
+    <p class="xref-note">
+      ${items.map(reference => {
+        const note = enrichPresentationMarkup(
+          renderMarkdownInline(normalizeCommentGlosses(reference.note)).trim()
+        );
+
+        return `
+          <span class="xref-reference" tabindex="0" role="button" aria-expanded="false" aria-label="XRef ${escapeHtml(reference.term)}: ${escapeHtml(reference.reference)}" data-xref-term="${escapeHtml(reference.term)}">
+            ${escapeHtml(reference.reference)}
+            <span class="xref-popup" role="note" hidden>${note}</span>
+          </span>
+        `.trim();
+      }).join('<span class="xref-separator" aria-hidden="true"> · </span>')}
+    </p>
+  `.trim();
+}
+
+function normalizeCommentGlosses(text) {
+  // Authors flag a defined term inside a comment with *"term" — an intentional
+  // word-study marker that is often written with unbalanced emphasis. Convert it
+  // into a lexeme span so the marker reads as a defined term instead of leaving a
+  // stray asterisk in the rendered comment.
+  return String(text || "").replace(/\*"([^"\n]+)"\*?/g, '<span class="lexeme">"$1"</span>');
+}
+
+function unwrapBlockquotePrefix(line) {
+  return String(line || "").replace(/^(?:>\s?)+/, "").trim();
+}
+
+function isImageBlockquoteLine(line) {
+  return /^>\s*!\[/.test(String(line || ""));
+}
+
+function stripWrappingAsterisks(line) {
+  return String(line || "").replace(/^\*/, "").replace(/\*\s*$/, "").trim();
+}
+
+function buildPhraseCueLine(line) {
+  const match = String(line || "").match(/^([+-])\s+([\s\S]+?)\s*$/);
+  const type = match?.[1] === "-" ? "dependent" : "phrase";
+  const text = match?.[2]?.trim() || "";
+
+  return `${phraseCueMarker}${JSON.stringify({ type, text })}`;
+}
+
+function getFirstPhraseCue(lines) {
+  return lines.find(item => String(item || "").startsWith(phraseCueMarker)) || null;
+}
+
+function getPhraseCueType(line) {
+  if (!String(line || "").startsWith(phraseCueMarker)) return null;
+
+  try {
+    const cue = JSON.parse(line.slice(phraseCueMarker.length));
+    return cue.type === "dependent" ? "dependent" : "phrase";
+  } catch {
+    return null;
+  }
+}
+
+function getFirstCueOfType(lines, type) {
+  return lines.find(item => getPhraseCueType(item) === type) || null;
+}
+
 function groupRevealLines(lines) {
   const revealLines = [];
 
@@ -2629,6 +3034,24 @@ function groupRevealLines(lines) {
       }
 
       revealLines.push(group.join("\n"));
+      continue;
+    }
+
+    if (isPhraseCueLine(line)) {
+      revealLines.push(buildPhraseCueLine(line));
+      continue;
+    }
+
+    const crossReference = parseCrossReferenceLine(line);
+    if (crossReference) {
+      const references = [crossReference];
+
+      while (parseCrossReferenceLine(lines[index + 1])) {
+        index++;
+        references.push(parseCrossReferenceLine(lines[index]));
+      }
+
+      revealLines.push(`${crossReferenceMarker}${JSON.stringify(references)}`);
       continue;
     }
 
@@ -2706,6 +3129,11 @@ function buildSynthesisReveals(lines) {
     .map(cleanBlockquoteLine)
     .filter(line => line.startsWith("- "))
     .map(line => line.slice(2).trim());
+
+  return buildSynthesisRevealsFromParts(title, points);
+}
+
+function buildSynthesisRevealsFromParts(title, points) {
   const id = `synthesis-${normalizeReferenceText(title)}`;
 
   if (!points.length) {
@@ -2719,6 +3147,59 @@ function buildSynthesisReveals(lines) {
       points: points.slice(0, index + 1)
     })}`
   );
+}
+
+function isSynthesisHeadingBlock(block) {
+  if (!Array.isArray(block) || block.length !== 1) return false;
+  return /^#{1,6}\s+En S[ií]ntesis\s*$/i.test(block[0]);
+}
+
+function isMarkdownHeadingBlock(block) {
+  return Array.isArray(block) && block.some(line => /^#{1,6}\s/.test(line));
+}
+
+function cleanSynthesisHeading(line) {
+  return String(line || "").replace(/^#{1,6}\s+/, "").trim();
+}
+
+function getSynthesisPointFromBlock(block) {
+  if (!Array.isArray(block) || !block.length) return "";
+
+  return block
+    .map((line, index) => {
+      if (index === 0) return line.replace(/^\*\s+/, "").trim();
+      return line.trim();
+    })
+    .filter(Boolean)
+    .join(" ");
+}
+
+function normalizeSynthesisBlocks(blocks) {
+  const normalized = [];
+
+  for (let index = 0; index < blocks.length; index++) {
+    const block = blocks[index];
+
+    if (!isSynthesisHeadingBlock(block)) {
+      normalized.push(block);
+      continue;
+    }
+
+    const title = cleanSynthesisHeading(block[0]);
+    const points = [];
+    let cursor = index + 1;
+
+    while (cursor < blocks.length && !isMarkdownHeadingBlock(blocks[cursor])) {
+      const point = getSynthesisPointFromBlock(blocks[cursor]);
+      if (point) points.push(point);
+      cursor++;
+    }
+
+    normalized.push(buildSynthesisRevealsFromParts(title, points));
+    index = cursor - 1;
+  }
+
+  return normalized;
 }
 
 function getFirstHeadingLevel(lines) {
@@ -2753,6 +3234,10 @@ function hasSynthesisSlide(lines) {
   return lines.some(line => String(line || "").startsWith(synthesisMarker));
 }
 
+function isSynthesisHeadingLine(line) {
+  return /^#{1,6}\s+En S[ií]ntesis\s*$/i.test(String(line || "").trim());
+}
+
 function buildSectionContextLine(line) {
   return `${sectionContextMarker}${JSON.stringify({
     level: getMarkdownHeadingLevel(line),
@@ -2763,37 +3248,81 @@ function buildSectionContextLine(line) {
 function applyStickyHeadings(slidesToProcess) {
   let stickyH4 = null;
   let stickyH2 = null;
+  let stickyH3 = null;
+  let stickyDependent = null;
+  let stickyPhrase = null;
 
   return slidesToProcess.map(slide => {
     const firstHeadingLevel = getFirstHeadingLevel(slide.lines);
     const slideH1 = getFirstHeadingLine(slide.lines, 1);
     const slideH2 = getFirstHeadingLine(slide.lines, 2);
+    const slideH3Raw = getFirstHeadingLine(slide.lines, 3);
+    const slideH3 = slideH3Raw && !isSynthesisHeadingLine(slideH3Raw) ? slideH3Raw : null;
     const slideH4 = getFirstH4(slide.lines);
+    const slideDependent = getFirstCueOfType(slide.lines, "dependent");
+    const slidePhrase = getFirstCueOfType(slide.lines, "phrase");
     const isSynthesisSlide = hasSynthesisSlide(slide.lines);
     const sticky = [];
+    const canStickClauseContext =
+      !isSynthesisSlide &&
+      (!firstHeadingLevel || firstHeadingLevel > 4);
 
-    if (isSynthesisSlide) {
+    // Editorial nav clears: En Síntesis, H1, H2 clear the stack below them.
+    if (isSynthesisSlide || slideH1) {
       stickyH2 = null;
+      stickyH3 = null;
+      stickyH4 = null;
+      stickyDependent = null;
+      stickyPhrase = null;
     }
 
+    // H2 stays in the top corner through H3/H4 content until H1 / H2 / En Síntesis.
     if (!isSynthesisSlide && stickyH2 && (!firstHeadingLevel || firstHeadingLevel > 2)) {
       sticky.push(stickyH2);
     }
 
-    if (firstHeadingLevel && firstHeadingLevel > 4 && stickyH4) {
+    // H3 stays underneath H2 until next H3 / H2 / H1 / En Síntesis.
+    if (!isSynthesisSlide && stickyH3 && (!firstHeadingLevel || firstHeadingLevel > 3)) {
+      sticky.push(stickyH3);
+    }
+
+    // Nest stack: independent → dependent → phrase (commentary/observations never sticky)
+    if (canStickClauseContext && !slideH4 && stickyH4) {
       sticky.push(stickyH4);
+    }
+
+    if (canStickClauseContext && !slideDependent && stickyDependent) {
+      sticky.push(stickyDependent);
+    }
+
+    if (canStickClauseContext && !slidePhrase && stickyPhrase) {
+      sticky.push(stickyPhrase);
     }
 
     if (slideH4) {
       stickyH4 = slideH4;
+      stickyDependent = null;
+      stickyPhrase = null;
     } else if (firstHeadingLevel && firstHeadingLevel < 4) {
       stickyH4 = null;
+      stickyDependent = null;
+      stickyPhrase = null;
     }
 
-    if (isSynthesisSlide || slideH1) {
-      stickyH2 = null;
-    } else if (slideH2) {
+    if (slideDependent) {
+      stickyDependent = slideDependent;
+      stickyPhrase = null;
+    }
+
+    if (slidePhrase) {
+      stickyPhrase = slidePhrase;
+    }
+
+    if (slideH2) {
       stickyH2 = buildSectionContextLine(slideH2);
+      stickyH3 = null;
+    } else if (slideH3) {
+      stickyH3 = buildSectionContextLine(slideH3);
     }
 
     return {
@@ -2830,8 +3359,78 @@ function clearPopup() {
   popupState = {
     reference: null,
     scrollRatio: 0,
-    verseIndex: 0
+    verseIndex: 0,
+    verseCount: 0
   };
+}
+
+function findPopupVerseCount(reference) {
+  const key = normalizeBibleReferenceKey(reference);
+  if (!key) return 0;
+
+  const escapedKey = escapeRegExp(key);
+
+  for (let index = 0; index < slides.length; index += 1) {
+    const rendered = renderSlideAt(index);
+    const html = [
+      ...(rendered.sticky || []),
+      ...(rendered.lines || [])
+    ].map(item => (typeof item === "string" ? item : item?.html || "")).join("\n");
+
+    const match = html.match(
+      new RegExp(
+        `data-reference="${escapedKey}"[^>]*data-verse-count="(\\d+)"` +
+          `|` +
+          `data-verse-count="(\\d+)"[^>]*data-reference="${escapedKey}"`,
+        "i"
+      )
+    );
+
+    if (match) {
+      return Number(match[1] || match[2]) || 0;
+    }
+  }
+
+  return 0;
+}
+
+function emitPopupScroll() {
+  io.emit("popup-scroll", {
+    reference: popupState.reference,
+    scrollRatio: popupState.scrollRatio,
+    verseIndex: popupState.verseIndex,
+    verseCount: popupState.verseCount
+  });
+}
+
+function advanceOpenPopupVerse(direction) {
+  if (!popupState.reference) return false;
+
+  const total = Math.max(1, Number(popupState.verseCount) || findPopupVerseCount(popupState.reference) || 1);
+  popupState.verseCount = total;
+  const currentIndex = Number(popupState.verseIndex) || 0;
+
+  if (direction > 0) {
+    if (currentIndex < total - 1) {
+      popupState.verseIndex = currentIndex + 1;
+      popupState.scrollRatio = 0;
+      emitPopupScroll();
+      return true;
+    }
+
+    clearPopup();
+    return true;
+  }
+
+  if (currentIndex > 0) {
+    popupState.verseIndex = currentIndex - 1;
+    popupState.scrollRatio = 0;
+    emitPopupScroll();
+    return true;
+  }
+
+  clearPopup();
+  return true;
 }
 
 function startNewSession() {
@@ -3610,16 +4209,20 @@ function loadSlides() {
   const parsedDocument = parseFrontMatter(md);
 
   presentationMeta = parsedDocument.meta;
+  footnoteDefinitions = collectFootnoteDefinitions(parsedDocument.body);
 
-  const parsedSlides = applyStickyHeadings(parsedDocument.body
+  const slideBlocks = parsedDocument.body
     .split(/\n\s*\n/)
     .map(block =>
       block
         .split("\n")
         .map(line => line.trim())
         .filter(Boolean)
+        .filter(line => !isFootnoteDefinitionLine(line))
     )
-    .filter(slide => slide.length > 0)
+    .filter(slide => slide.length > 0);
+
+  const parsedSlides = applyStickyHeadings(normalizeSynthesisBlocks(slideBlocks)
     .map(parseSlide));
 
   slides = [
@@ -3717,7 +4320,8 @@ function buildPayload(participantId = null) {
     popupState: {
       reference: popupState.reference,
       scrollRatio: popupState.scrollRatio,
-      verseIndex: popupState.verseIndex
+      verseIndex: popupState.verseIndex,
+      verseCount: popupState.verseCount
     },
     audienceQrVisible,
     controllerState: publicControllerState()
@@ -3875,7 +4479,7 @@ app.get("/bible/test", (req, res) => {
 
   res.json({
     text,
-    html: enrichBibleReferences(text),
+    html: enrichPresentationMarkup(text),
     status: getBibleStatus()
   });
 });
@@ -3927,12 +4531,42 @@ app.post("/jump/:slide", (req, res) => {
 });
 
 app.post("/control/next", (req, res) => {
+  if (popupState.reference) {
+    advanceOpenPopupVerse(1);
+    sendState();
+    res.json({
+      slide: state.slide,
+      step: state.step,
+      popupState: {
+        reference: popupState.reference,
+        verseIndex: popupState.verseIndex,
+        verseCount: popupState.verseCount
+      }
+    });
+    return;
+  }
+
   goToNextSlideStep();
   sendState();
   res.json({ slide: state.slide, step: state.step });
 });
 
 app.post("/control/prev", (req, res) => {
+  if (popupState.reference) {
+    advanceOpenPopupVerse(-1);
+    sendState();
+    res.json({
+      slide: state.slide,
+      step: state.step,
+      popupState: {
+        reference: popupState.reference,
+        verseIndex: popupState.verseIndex,
+        verseCount: popupState.verseCount
+      }
+    });
+    return;
+  }
+
   goToPreviousSlideStep();
   sendState();
   res.json({ slide: state.slide, step: state.step });
@@ -4102,10 +4736,13 @@ io.on("connection", socket => {
   socket.on("set-popup-reference", reference => {
     returnToTeachingMode();
     popupState.reference = typeof reference === "string" && reference.trim()
-      ? reference.trim()
+      ? normalizeBibleReferenceKey(reference)
       : null;
     popupState.scrollRatio = 0;
     popupState.verseIndex = 0;
+    popupState.verseCount = popupState.reference
+      ? findPopupVerseCount(popupState.reference)
+      : 0;
     sendState();
   });
 
@@ -4115,14 +4752,14 @@ io.on("connection", socket => {
     const parsedVerseIndex = Number(verseIndex);
     if (!Number.isInteger(parsedVerseIndex) || parsedVerseIndex < 0) return;
 
-    popupState.verseIndex = parsedVerseIndex;
-    popupState.scrollRatio = 0;
+    if (!popupState.verseCount) {
+      popupState.verseCount = findPopupVerseCount(popupState.reference);
+    }
 
-    io.emit("popup-scroll", {
-      reference: popupState.reference,
-      scrollRatio: popupState.scrollRatio,
-      verseIndex: popupState.verseIndex
-    });
+    const maxIndex = Math.max(0, (popupState.verseCount || 1) - 1);
+    popupState.verseIndex = Math.min(maxIndex, parsedVerseIndex);
+    popupState.scrollRatio = 0;
+    emitPopupScroll();
   });
 
   socket.on("set-popup-scroll", scrollState => {
@@ -4133,7 +4770,11 @@ io.on("connection", socket => {
       : NaN;
 
     if (Number.isInteger(parsedVerseIndex) && parsedVerseIndex >= 0) {
-      popupState.verseIndex = parsedVerseIndex;
+      if (!popupState.verseCount) {
+        popupState.verseCount = findPopupVerseCount(popupState.reference);
+      }
+      const maxIndex = Math.max(0, (popupState.verseCount || 1) - 1);
+      popupState.verseIndex = Math.min(maxIndex, parsedVerseIndex);
       popupState.scrollRatio = 0;
     } else {
       const parsedRatio = typeof scrollState === "object" && scrollState !== null
@@ -4143,11 +4784,7 @@ io.on("connection", socket => {
       popupState.scrollRatio = Math.min(1, Math.max(0, parsedRatio));
     }
 
-    io.emit("popup-scroll", {
-      reference: popupState.reference,
-      scrollRatio: popupState.scrollRatio,
-      verseIndex: popupState.verseIndex
-    });
+    emitPopupScroll();
   });
 
   socket.on("set-audience-qr-visible", visible => {

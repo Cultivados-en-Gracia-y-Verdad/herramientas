@@ -1,0 +1,3595 @@
+{
+  "bookId": "jude",
+  "textualBasis": "Scrivener 1894 TR",
+  "schemaVersion": 1,
+  "notes": {
+    "seed": "Reverse interlinear: Spanish unit → TR sourceTokenIds. Full-book manual realign 2026-07-24 after auto-zip slide audit.",
+    "jude1_3": "Manual realign 2026-07-24: auto-zip had slid tokens (πᾶσαν→Amados, etc.).",
+    "tr_only": "1:12 ὑμῖν; 1:14 ἁγίαις; 1:20 ἐποικοδομοῦντες/ἑαυτοὺς; 1:23 σώζετε…ἁρπάζοντες included in reverse links (Morph skips TR-only).",
+    "morph_only_gaps": "Some MorphGNT tokens have no TR sourceTokenId (e.g. 1:25 διὰ Ἰησοῦ Χριστοῦ… / πρὸ παντὸς τοῦ αἰῶνος); Spanish rides on nearest TR."
+  },
+  "stats": {
+    "phrases": 51,
+    "hand": 51,
+    "auto": 0,
+    "units": 308
+  },
+  "links": [
+    {
+      "phraseIndex": 0,
+      "reference": "Jude 1:1",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "0:0",
+          "surface": "Judas",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n65001001001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "0:1",
+          "surface": "siervo",
+          "charStart": 7,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n65001001004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "0:2",
+          "surface": "de Jesús",
+          "charStart": 14,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n65001001002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "0:3",
+          "surface": "Cristo",
+          "charStart": 23,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n65001001003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "0:4",
+          "surface": "y hermano",
+          "charStart": 30,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "n65001001005",
+            "n65001001006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "0:5",
+          "surface": "de Jacobo",
+          "charStart": 40,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n65001001007"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 1,
+      "reference": "Jude 1:1",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "1:0",
+          "surface": "a los llamados",
+          "charStart": 0,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n65001001008",
+            "n65001001017"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "1:1",
+          "surface": "amados",
+          "charStart": 16,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n65001001012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "1:2",
+          "surface": "en Dios",
+          "charStart": 23,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n65001001009",
+            "n65001001010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "1:3",
+          "surface": "Padre",
+          "charStart": 31,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n65001001011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "1:4",
+          "surface": "y guardados",
+          "charStart": 37,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n65001001013",
+            "n65001001016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "1:5",
+          "surface": "para Jesús",
+          "charStart": 49,
+          "charEnd": 59,
+          "sourceTokenIds": [
+            "n65001001014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "1:6",
+          "surface": "Cristo",
+          "charStart": 60,
+          "charEnd": 66,
+          "sourceTokenIds": [
+            "n65001001015"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 2,
+      "reference": "Jude 1:2",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "2:0",
+          "surface": "Misericordia",
+          "charStart": 0,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n65001002001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "2:1",
+          "surface": "paz",
+          "charStart": 14,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n65001002003",
+            "n65001002004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "2:2",
+          "surface": "y amor",
+          "charStart": 18,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n65001002005",
+            "n65001002006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "2:3",
+          "surface": "les sean multiplicados",
+          "charStart": 25,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n65001002002",
+            "n65001002007"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 3,
+      "reference": "Jude 1:3",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "3:0",
+          "surface": "Amados",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n65001003001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "3:1",
+          "surface": "poniéndome",
+          "charStart": 8,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n65001003004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "3:2",
+          "surface": "toda",
+          "charStart": 19,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n65001003002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "3:3",
+          "surface": "diligencia",
+          "charStart": 24,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "n65001003003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "3:4",
+          "surface": "en escribirles",
+          "charStart": 35,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n65001003005",
+            "n65001003006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "3:5",
+          "surface": "acerca",
+          "charStart": 50,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n65001003007"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "3:6",
+          "surface": "de nuestra",
+          "charStart": 57,
+          "charEnd": 67,
+          "sourceTokenIds": [
+            "n65001003008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "3:7",
+          "surface": "común",
+          "charStart": 68,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "n65001003009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "3:8",
+          "surface": "salvación",
+          "charStart": 74,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "n65001003010"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 4,
+      "reference": "Jude 1:3",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "4:0",
+          "surface": "me vi",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n65001003012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "4:1",
+          "surface": "en la necesidad",
+          "charStart": 6,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n65001003011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "4:2",
+          "surface": "de escribirles",
+          "charStart": 22,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n65001003013",
+            "n65001003014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "4:3",
+          "surface": "exhortándolos",
+          "charStart": 37,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n65001003015"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "4:4",
+          "surface": "a contender",
+          "charStart": 51,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "n65001003016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "4:5",
+          "surface": "por la fe",
+          "charStart": 63,
+          "charEnd": 72,
+          "sourceTokenIds": [
+            "n65001003017",
+            "n65001003022"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "4:6",
+          "surface": "que una vez",
+          "charStart": 73,
+          "charEnd": 84,
+          "sourceTokenIds": [
+            "n65001003018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "4:7",
+          "surface": "fue entregada",
+          "charStart": 85,
+          "charEnd": 98,
+          "sourceTokenIds": [
+            "n65001003019"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "4:8",
+          "surface": "a los santos",
+          "charStart": 99,
+          "charEnd": 111,
+          "sourceTokenIds": [
+            "n65001003020",
+            "n65001003021"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 5,
+      "reference": "Jude 1:4",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "5:0",
+          "surface": "Porque",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n65001004002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "5:1",
+          "surface": "se han infiltrado",
+          "charStart": 7,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n65001004001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "5:2",
+          "surface": "algunos",
+          "charStart": 25,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n65001004003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "5:3",
+          "surface": "hombres",
+          "charStart": 33,
+          "charEnd": 40,
+          "sourceTokenIds": [
+            "n65001004004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "5:4",
+          "surface": "los cuales",
+          "charStart": 42,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n65001004005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "5:5",
+          "surface": "desde antiguo",
+          "charStart": 53,
+          "charEnd": 66,
+          "sourceTokenIds": [
+            "n65001004006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "5:6",
+          "surface": "estaban marcados",
+          "charStart": 67,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "n65001004007"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "5:7",
+          "surface": "para esta condenación",
+          "charStart": 84,
+          "charEnd": 105,
+          "sourceTokenIds": [
+            "n65001004008",
+            "n65001004009",
+            "n65001004010",
+            "n65001004011"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 6,
+      "reference": "Jude 1:4",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "6:0",
+          "surface": "impíos",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n65001004012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "6:1",
+          "surface": "que convierten",
+          "charStart": 8,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n65001004018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "6:2",
+          "surface": "en lascivia",
+          "charStart": 23,
+          "charEnd": 34,
+          "sourceTokenIds": [
+            "n65001004019",
+            "n65001004020"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "6:3",
+          "surface": "la gracia",
+          "charStart": 35,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n65001004013",
+            "n65001004017"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "6:4",
+          "surface": "de nuestro Dios",
+          "charStart": 45,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "n65001004014",
+            "n65001004015",
+            "n65001004016"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 7,
+      "reference": "Jude 1:4",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "7:0",
+          "surface": "y niegan",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n65001004021",
+            "n65001004031"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "7:1",
+          "surface": "a nuestro",
+          "charStart": 9,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n65001004022",
+            "n65001004028"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "7:2",
+          "surface": "único",
+          "charStart": 19,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n65001004023"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "7:3",
+          "surface": "Dueño",
+          "charStart": 25,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n65001004024"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "7:4",
+          "surface": "y Señor",
+          "charStart": 31,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n65001004026",
+            "n65001004027"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "7:5",
+          "surface": "Jesús",
+          "charStart": 40,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "n65001004029"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "7:6",
+          "surface": "Cristo",
+          "charStart": 46,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n65001004030"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 8,
+      "reference": "Jude 1:5",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "8:0",
+          "surface": "Quiero",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n65001005004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "8:1",
+          "surface": "pues",
+          "charStart": 8,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n65001005002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "8:2",
+          "surface": "recordarles",
+          "charStart": 14,
+          "charEnd": 25,
+          "sourceTokenIds": [
+            "n65001005001",
+            "n65001005003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "8:3",
+          "surface": "aunque ustedes",
+          "charStart": 27,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n65001005006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "8:4",
+          "surface": "ya lo saben",
+          "charStart": 42,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n65001005005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "8:5",
+          "surface": "todo",
+          "charStart": 54,
+          "charEnd": 58,
+          "sourceTokenIds": [
+            "n65001005008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "8:6",
+          "surface": "de una vez",
+          "charStart": 59,
+          "charEnd": 69,
+          "sourceTokenIds": [
+            "n65001005007"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 9,
+      "reference": "Jude 1:5",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "9:0",
+          "surface": "que Jesús",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001005009",
+            "n65001005010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "9:1",
+          "surface": "habiendo salvado",
+          "charStart": 11,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n65001005016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "9:2",
+          "surface": "al pueblo",
+          "charStart": 28,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n65001005012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "9:3",
+          "surface": "de la tierra",
+          "charStart": 38,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n65001005013",
+            "n65001005014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "9:4",
+          "surface": "de Egipto",
+          "charStart": 51,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "n65001005015"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "9:5",
+          "surface": "después",
+          "charStart": 62,
+          "charEnd": 69,
+          "sourceTokenIds": [
+            "n65001005017",
+            "n65001005018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "9:6",
+          "surface": "destruyó",
+          "charStart": 70,
+          "charEnd": 78,
+          "sourceTokenIds": [
+            "n65001005022"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "9:7",
+          "surface": "a los que no creyeron",
+          "charStart": 79,
+          "charEnd": 100,
+          "sourceTokenIds": [
+            "n65001005019",
+            "n65001005020",
+            "n65001005021"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 10,
+      "reference": "Jude 1:6",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "10:0",
+          "surface": "y a los ángeles",
+          "charStart": 0,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n65001006001",
+            "n65001006002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "10:1",
+          "surface": "que no guardaron",
+          "charStart": 16,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n65001006003",
+            "n65001006004",
+            "n65001006005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "10:2",
+          "surface": "su propio dominio",
+          "charStart": 33,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n65001006006",
+            "n65001006007",
+            "n65001006008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "10:3",
+          "surface": "sino",
+          "charStart": 52,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n65001006009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "10:4",
+          "surface": "que abandonaron",
+          "charStart": 57,
+          "charEnd": 72,
+          "sourceTokenIds": [
+            "n65001006010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "10:5",
+          "surface": "su propia morada",
+          "charStart": 73,
+          "charEnd": 89,
+          "sourceTokenIds": [
+            "n65001006011",
+            "n65001006012",
+            "n65001006013"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 11,
+      "reference": "Jude 1:6",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "11:0",
+          "surface": "los ha guardado",
+          "charStart": 0,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n65001006022"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "11:1",
+          "surface": "bajo tinieblas",
+          "charStart": 16,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n65001006020",
+            "n65001006021"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "11:2",
+          "surface": "en cadenas",
+          "charStart": 31,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n65001006018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "11:3",
+          "surface": "eternas",
+          "charStart": 42,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n65001006019"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "11:4",
+          "surface": "para el juicio",
+          "charStart": 50,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n65001006014",
+            "n65001006015"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "11:5",
+          "surface": "del gran día",
+          "charStart": 65,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "n65001006016",
+            "n65001006017"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 12,
+      "reference": "Jude 1:7",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "12:0",
+          "surface": "como",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n65001007001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "12:1",
+          "surface": "Sodoma",
+          "charStart": 5,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n65001007002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "12:2",
+          "surface": "y Gomorra",
+          "charStart": 12,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n65001007003",
+            "n65001007004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "12:3",
+          "surface": "y las ciudades",
+          "charStart": 22,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n65001007005",
+            "n65001007006",
+            "n65001007009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "12:4",
+          "surface": "de alrededor",
+          "charStart": 37,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n65001007007",
+            "n65001007008"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 13,
+      "reference": "Jude 1:7",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "13:0",
+          "surface": "las cuales",
+          "charStart": 0,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n65001007010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "13:1",
+          "surface": "de la misma manera",
+          "charStart": 11,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n65001007011",
+            "n65001007013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "13:2",
+          "surface": "que aquellos",
+          "charStart": 30,
+          "charEnd": 42,
+          "sourceTokenIds": [
+            "n65001007012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "13:3",
+          "surface": "se entregaron a la fornicación",
+          "charStart": 43,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "n65001007014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "13:4",
+          "surface": "y fueron",
+          "charStart": 74,
+          "charEnd": 82,
+          "sourceTokenIds": [
+            "n65001007015",
+            "n65001007016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "13:5",
+          "surface": "tras",
+          "charStart": 83,
+          "charEnd": 87,
+          "sourceTokenIds": [
+            "n65001007017"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "13:6",
+          "surface": "carne",
+          "charStart": 88,
+          "charEnd": 93,
+          "sourceTokenIds": [
+            "n65001007018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "13:7",
+          "surface": "extraña",
+          "charStart": 94,
+          "charEnd": 101,
+          "sourceTokenIds": [
+            "n65001007019"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 14,
+      "reference": "Jude 1:7",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "14:0",
+          "surface": "están puestas",
+          "charStart": 0,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n65001007020"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "14:1",
+          "surface": "como ejemplo",
+          "charStart": 14,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n65001007021"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "14:2",
+          "surface": "sufriendo",
+          "charStart": 28,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n65001007025"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "14:3",
+          "surface": "el castigo",
+          "charStart": 38,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n65001007024"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "14:4",
+          "surface": "de fuego",
+          "charStart": 49,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "n65001007022"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "14:5",
+          "surface": "eterno",
+          "charStart": 58,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n65001007023"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 15,
+      "reference": "Jude 1:8",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "15:0",
+          "surface": "De la misma manera",
+          "charStart": 0,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n65001008001",
+            "n65001008002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "15:1",
+          "surface": "también",
+          "charStart": 19,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n65001008003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "15:2",
+          "surface": "estos",
+          "charStart": 27,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n65001008004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "15:3",
+          "surface": "soñando",
+          "charStart": 34,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n65001008005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "15:4",
+          "surface": "mancillan",
+          "charStart": 43,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n65001008007",
+            "n65001008008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "15:5",
+          "surface": "la carne",
+          "charStart": 53,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n65001008006"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 16,
+      "reference": "Jude 1:8",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "16:0",
+          "surface": "rechazan",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n65001008010",
+            "n65001008011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "16:1",
+          "surface": "la autoridad",
+          "charStart": 9,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n65001008009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "16:2",
+          "surface": "y blasfeman",
+          "charStart": 22,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n65001008013",
+            "n65001008014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "16:3",
+          "surface": "de las glorias",
+          "charStart": 34,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n65001008012"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 17,
+      "reference": "Jude 1:9",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "17:0",
+          "surface": "Pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n65001009001",
+            "n65001009002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:1",
+          "surface": "cuando",
+          "charStart": 5,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n65001009006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:2",
+          "surface": "Miguel",
+          "charStart": 12,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n65001009003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:3",
+          "surface": "el arcángel",
+          "charStart": 19,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n65001009004",
+            "n65001009005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:4",
+          "surface": "disputando",
+          "charStart": 32,
+          "charEnd": 42,
+          "sourceTokenIds": [
+            "n65001009009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:5",
+          "surface": "con el diablo",
+          "charStart": 43,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n65001009007",
+            "n65001009008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:6",
+          "surface": "discutía",
+          "charStart": 58,
+          "charEnd": 66,
+          "sourceTokenIds": [
+            "n65001009010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:7",
+          "surface": "acerca",
+          "charStart": 67,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "n65001009011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:8",
+          "surface": "del cuerpo",
+          "charStart": 74,
+          "charEnd": 84,
+          "sourceTokenIds": [
+            "n65001009012",
+            "n65001009014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "17:9",
+          "surface": "de Moisés",
+          "charStart": 85,
+          "charEnd": 94,
+          "sourceTokenIds": [
+            "n65001009013"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 18,
+      "reference": "Jude 1:9",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "18:0",
+          "surface": "no se atrevió",
+          "charStart": 0,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n65001009015",
+            "n65001009016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "18:1",
+          "surface": "a pronunciar",
+          "charStart": 14,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n65001009018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "18:2",
+          "surface": "juicio",
+          "charStart": 27,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n65001009017"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "18:3",
+          "surface": "de blasfemia",
+          "charStart": 34,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n65001009019"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "18:4",
+          "surface": "sino",
+          "charStart": 48,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n65001009020"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "18:5",
+          "surface": "que dijo",
+          "charStart": 53,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n65001009021"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 19,
+      "reference": "Jude 1:9",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "19:0",
+          "surface": "El Señor",
+          "charStart": 1,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001009024"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "19:1",
+          "surface": "te",
+          "charStart": 10,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n65001009023"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "19:2",
+          "surface": "reprenda",
+          "charStart": 13,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n65001009022"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 20,
+      "reference": "Jude 1:10",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "20:0",
+          "surface": "Pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n65001010002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "20:1",
+          "surface": "estos",
+          "charStart": 5,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n65001010001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "20:2",
+          "surface": "blasfeman",
+          "charStart": 11,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n65001010007"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "20:3",
+          "surface": "de lo que no conocen",
+          "charStart": 21,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n65001010003",
+            "n65001010004",
+            "n65001010005",
+            "n65001010006"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 21,
+      "reference": "Jude 1:10",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "21:0",
+          "surface": "y en lo que por naturaleza",
+          "charStart": 0,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n65001010008",
+            "n65001010009",
+            "n65001010010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "21:1",
+          "surface": "como",
+          "charStart": 28,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n65001010011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "21:2",
+          "surface": "animales",
+          "charStart": 33,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n65001010014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "21:3",
+          "surface": "irracionales",
+          "charStart": 42,
+          "charEnd": 54,
+          "sourceTokenIds": [
+            "n65001010012",
+            "n65001010013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "21:4",
+          "surface": "sí entienden",
+          "charStart": 56,
+          "charEnd": 68,
+          "sourceTokenIds": [
+            "n65001010015"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "21:5",
+          "surface": "en eso",
+          "charStart": 70,
+          "charEnd": 76,
+          "sourceTokenIds": [
+            "n65001010016",
+            "n65001010017"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "21:6",
+          "surface": "se corrompen",
+          "charStart": 77,
+          "charEnd": 89,
+          "sourceTokenIds": [
+            "n65001010018"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 22,
+      "reference": "Jude 1:11",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "22:0",
+          "surface": "Ay",
+          "charStart": 1,
+          "charEnd": 3,
+          "sourceTokenIds": [
+            "n65001011001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "22:1",
+          "surface": "de ellos",
+          "charStart": 4,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n65001011002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "22:2",
+          "surface": "porque",
+          "charStart": 15,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n65001011003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "22:3",
+          "surface": "han seguido",
+          "charStart": 22,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n65001011008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "22:4",
+          "surface": "el camino",
+          "charStart": 34,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "n65001011004",
+            "n65001011005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "22:5",
+          "surface": "de Caín",
+          "charStart": 44,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "n65001011006",
+            "n65001011007"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 23,
+      "reference": "Jude 1:11",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "23:0",
+          "surface": "y por la paga",
+          "charStart": 0,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n65001011009",
+            "n65001011014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "23:1",
+          "surface": "se han lanzado",
+          "charStart": 14,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n65001011015"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "23:2",
+          "surface": "al error",
+          "charStart": 29,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n65001011010",
+            "n65001011011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "23:3",
+          "surface": "de Balaam",
+          "charStart": 38,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n65001011012",
+            "n65001011013"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 24,
+      "reference": "Jude 1:11",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "24:0",
+          "surface": "y en la rebelión",
+          "charStart": 0,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n65001011016",
+            "n65001011017",
+            "n65001011018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "24:1",
+          "surface": "de Coré",
+          "charStart": 17,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n65001011019",
+            "n65001011020"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "24:2",
+          "surface": "perecieron",
+          "charStart": 25,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n65001011021"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 25,
+      "reference": "Jude 1:12",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "25:0",
+          "surface": "Estos",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n65001012001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "25:1",
+          "surface": "son",
+          "charStart": 6,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001012002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "25:2",
+          "surface": "escollos",
+          "charStart": 10,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n65001012007"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "25:3",
+          "surface": "en sus ágapes",
+          "charStart": 19,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n65001012003",
+            "n65001012004",
+            "n65001012005",
+            "n65001012006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "25:4",
+          "surface": "banqueteando",
+          "charStart": 34,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n65001012008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "25:5",
+          "surface": "con ustedes",
+          "charStart": 47,
+          "charEnd": 58,
+          "sourceTokenIds": [
+            "n65001012009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "25:6",
+          "surface": "sin temor",
+          "charStart": 59,
+          "charEnd": 68,
+          "sourceTokenIds": [
+            "n65001012010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "25:7",
+          "surface": "apacentándose",
+          "charStart": 70,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "n65001012012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "25:8",
+          "surface": "a sí mismos",
+          "charStart": 84,
+          "charEnd": 95,
+          "sourceTokenIds": [
+            "n65001012011"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 26,
+      "reference": "Jude 1:12",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "26:0",
+          "surface": "nubes",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n65001012013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "26:1",
+          "surface": "sin agua",
+          "charStart": 6,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n65001012014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "26:2",
+          "surface": "llevadas",
+          "charStart": 15,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n65001012017"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "26:3",
+          "surface": "por los vientos",
+          "charStart": 24,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "n65001012015",
+            "n65001012016"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 27,
+      "reference": "Jude 1:12",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "27:0",
+          "surface": "árboles",
+          "charStart": 0,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n65001012018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "27:1",
+          "surface": "de otoño",
+          "charStart": 8,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n65001012019"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "27:2",
+          "surface": "sin fruto",
+          "charStart": 17,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n65001012020"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "27:3",
+          "surface": "dos veces",
+          "charStart": 28,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n65001012021"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "27:4",
+          "surface": "muertos",
+          "charStart": 38,
+          "charEnd": 45,
+          "sourceTokenIds": [
+            "n65001012022"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "27:5",
+          "surface": "desarraigados",
+          "charStart": 47,
+          "charEnd": 60,
+          "sourceTokenIds": [
+            "n65001012023"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 28,
+      "reference": "Jude 1:13",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "28:0",
+          "surface": "olas",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n65001013001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "28:1",
+          "surface": "bravías",
+          "charStart": 5,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n65001013002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "28:2",
+          "surface": "del mar",
+          "charStart": 13,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n65001013003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "28:3",
+          "surface": "que espuman",
+          "charStart": 21,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n65001013004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "28:4",
+          "surface": "sus propias",
+          "charStart": 33,
+          "charEnd": 44,
+          "sourceTokenIds": [
+            "n65001013005",
+            "n65001013006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "28:5",
+          "surface": "vergüenzas",
+          "charStart": 45,
+          "charEnd": 55,
+          "sourceTokenIds": [
+            "n65001013007"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 29,
+      "reference": "Jude 1:13",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "29:0",
+          "surface": "estrellas",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001013008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "29:1",
+          "surface": "errantes",
+          "charStart": 10,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n65001013009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "29:2",
+          "surface": "para las cuales",
+          "charStart": 20,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n65001013010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "29:3",
+          "surface": "la oscuridad",
+          "charStart": 36,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n65001013011",
+            "n65001013012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "29:4",
+          "surface": "de las tinieblas",
+          "charStart": 49,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "n65001013013",
+            "n65001013014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "29:5",
+          "surface": "está reservada",
+          "charStart": 66,
+          "charEnd": 80,
+          "sourceTokenIds": [
+            "n65001013018"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "29:6",
+          "surface": "para siempre",
+          "charStart": 81,
+          "charEnd": 93,
+          "sourceTokenIds": [
+            "n65001013015",
+            "n65001013017"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 30,
+      "reference": "Jude 1:14",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "30:0",
+          "surface": "De estos",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n65001014002",
+            "n65001014004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "30:1",
+          "surface": "también",
+          "charStart": 9,
+          "charEnd": 16,
+          "sourceTokenIds": [
+            "n65001014003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "30:2",
+          "surface": "profetizó",
+          "charStart": 17,
+          "charEnd": 26,
+          "sourceTokenIds": [
+            "n65001014001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "30:3",
+          "surface": "Enoc",
+          "charStart": 27,
+          "charEnd": 31,
+          "sourceTokenIds": [
+            "n65001014008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "30:4",
+          "surface": "el séptimo",
+          "charStart": 33,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "n65001014005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "30:5",
+          "surface": "desde",
+          "charStart": 44,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n65001014006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "30:6",
+          "surface": "Adán",
+          "charStart": 50,
+          "charEnd": 54,
+          "sourceTokenIds": [
+            "n65001014007"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "30:7",
+          "surface": "diciendo",
+          "charStart": 56,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n65001014009"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 31,
+      "reference": "Jude 1:14",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "31:0",
+          "surface": "He aquí",
+          "charStart": 1,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n65001014010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "31:1",
+          "surface": "el Señor",
+          "charStart": 10,
+          "charEnd": 18,
+          "sourceTokenIds": [
+            "n65001014012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "31:2",
+          "surface": "vino",
+          "charStart": 19,
+          "charEnd": 23,
+          "sourceTokenIds": [
+            "n65001014011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "31:3",
+          "surface": "con sus santas miríadas",
+          "charStart": 24,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n65001014013",
+            "n65001014014",
+            "n65001014015",
+            "n65001014016"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 32,
+      "reference": "Jude 1:15",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "32:0",
+          "surface": "para hacer",
+          "charStart": 0,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n65001015001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "32:1",
+          "surface": "juicio",
+          "charStart": 11,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n65001015002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "32:2",
+          "surface": "contra todos",
+          "charStart": 18,
+          "charEnd": 30,
+          "sourceTokenIds": [
+            "n65001015003",
+            "n65001015004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "32:3",
+          "surface": "y convencer",
+          "charStart": 31,
+          "charEnd": 42,
+          "sourceTokenIds": [
+            "n65001015005",
+            "n65001015006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "32:4",
+          "surface": "a todos",
+          "charStart": 43,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n65001015007"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "32:5",
+          "surface": "los impíos",
+          "charStart": 51,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n65001015008",
+            "n65001015009"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 33,
+      "reference": "Jude 1:15",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "33:0",
+          "surface": "acerca",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n65001015011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "33:1",
+          "surface": "de todas",
+          "charStart": 7,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n65001015012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "33:2",
+          "surface": "las obras",
+          "charStart": 16,
+          "charEnd": 25,
+          "sourceTokenIds": [
+            "n65001015013",
+            "n65001015014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "33:3",
+          "surface": "de impiedad",
+          "charStart": 26,
+          "charEnd": 37,
+          "sourceTokenIds": [
+            "n65001015015",
+            "n65001015016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "33:4",
+          "surface": "que hicieron",
+          "charStart": 38,
+          "charEnd": 50,
+          "sourceTokenIds": [
+            "n65001015017",
+            "n65001015018"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 34,
+      "reference": "Jude 1:15",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "34:0",
+          "surface": "y acerca",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n65001015019",
+            "n65001015020"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "34:1",
+          "surface": "de todas",
+          "charStart": 9,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n65001015021"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "34:2",
+          "surface": "las cosas",
+          "charStart": 18,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n65001015022"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "34:3",
+          "surface": "duras",
+          "charStart": 28,
+          "charEnd": 33,
+          "sourceTokenIds": [
+            "n65001015023"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "34:4",
+          "surface": "que los pecadores",
+          "charStart": 34,
+          "charEnd": 51,
+          "sourceTokenIds": [
+            "n65001015024",
+            "n65001015028"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "34:5",
+          "surface": "impíos",
+          "charStart": 52,
+          "charEnd": 58,
+          "sourceTokenIds": [
+            "n65001015029"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "34:6",
+          "surface": "hablaron",
+          "charStart": 59,
+          "charEnd": 67,
+          "sourceTokenIds": [
+            "n65001015025"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "34:7",
+          "surface": "contra él",
+          "charStart": 68,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "n65001015026",
+            "n65001015027"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 35,
+      "reference": "Jude 1:16",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "35:0",
+          "surface": "Estos",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n65001016001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "35:1",
+          "surface": "son",
+          "charStart": 6,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001016002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "35:2",
+          "surface": "murmuradores",
+          "charStart": 10,
+          "charEnd": 22,
+          "sourceTokenIds": [
+            "n65001016003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "35:3",
+          "surface": "quejumbrosos",
+          "charStart": 24,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n65001016004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "35:4",
+          "surface": "que andan",
+          "charStart": 38,
+          "charEnd": 47,
+          "sourceTokenIds": [
+            "n65001016009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "35:5",
+          "surface": "según",
+          "charStart": 48,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n65001016005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "35:6",
+          "surface": "sus deseos",
+          "charStart": 54,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n65001016006",
+            "n65001016007",
+            "n65001016008"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 36,
+      "reference": "Jude 1:16",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "36:0",
+          "surface": "y su boca",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001016010",
+            "n65001016011",
+            "n65001016012",
+            "n65001016013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "36:1",
+          "surface": "habla",
+          "charStart": 10,
+          "charEnd": 15,
+          "sourceTokenIds": [
+            "n65001016014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "36:2",
+          "surface": "cosas arrogantes",
+          "charStart": 16,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n65001016015"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "36:3",
+          "surface": "admirando",
+          "charStart": 34,
+          "charEnd": 43,
+          "sourceTokenIds": [
+            "n65001016016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "36:4",
+          "surface": "personas",
+          "charStart": 44,
+          "charEnd": 52,
+          "sourceTokenIds": [
+            "n65001016017"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "36:5",
+          "surface": "por causa",
+          "charStart": 53,
+          "charEnd": 62,
+          "sourceTokenIds": [
+            "n65001016019"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "36:6",
+          "surface": "del provecho",
+          "charStart": 63,
+          "charEnd": 75,
+          "sourceTokenIds": [
+            "n65001016018"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 37,
+      "reference": "Jude 1:17",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "37:0",
+          "surface": "Pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n65001017002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:1",
+          "surface": "ustedes",
+          "charStart": 5,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n65001017001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:2",
+          "surface": "amados",
+          "charStart": 14,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n65001017003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:3",
+          "surface": "acuérdense",
+          "charStart": 22,
+          "charEnd": 32,
+          "sourceTokenIds": [
+            "n65001017004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:4",
+          "surface": "de las palabras",
+          "charStart": 33,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n65001017005",
+            "n65001017006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:5",
+          "surface": "predichas",
+          "charStart": 49,
+          "charEnd": 58,
+          "sourceTokenIds": [
+            "n65001017007",
+            "n65001017008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:6",
+          "surface": "por los apóstoles",
+          "charStart": 59,
+          "charEnd": 76,
+          "sourceTokenIds": [
+            "n65001017009",
+            "n65001017010",
+            "n65001017011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:7",
+          "surface": "de nuestro",
+          "charStart": 77,
+          "charEnd": 87,
+          "sourceTokenIds": [
+            "n65001017012",
+            "n65001017014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:8",
+          "surface": "Señor",
+          "charStart": 88,
+          "charEnd": 93,
+          "sourceTokenIds": [
+            "n65001017013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:9",
+          "surface": "Jesús",
+          "charStart": 94,
+          "charEnd": 99,
+          "sourceTokenIds": [
+            "n65001017015"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "37:10",
+          "surface": "Cristo",
+          "charStart": 100,
+          "charEnd": 106,
+          "sourceTokenIds": [
+            "n65001017016"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 38,
+      "reference": "Jude 1:18",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "38:0",
+          "surface": "que les",
+          "charStart": 0,
+          "charEnd": 7,
+          "sourceTokenIds": [
+            "n65001018001",
+            "n65001018003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:1",
+          "surface": "decían",
+          "charStart": 8,
+          "charEnd": 14,
+          "sourceTokenIds": [
+            "n65001018002",
+            "n65001018004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:2",
+          "surface": "En el último tiempo",
+          "charStart": 17,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n65001018005",
+            "n65001018006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:3",
+          "surface": "habrá",
+          "charStart": 37,
+          "charEnd": 42,
+          "sourceTokenIds": [
+            "n65001018008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:4",
+          "surface": "burladores",
+          "charStart": 43,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n65001018009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:5",
+          "surface": "que andarán",
+          "charStart": 54,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "n65001018014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:6",
+          "surface": "según",
+          "charStart": 66,
+          "charEnd": 71,
+          "sourceTokenIds": [
+            "n65001018010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:7",
+          "surface": "sus propios",
+          "charStart": 72,
+          "charEnd": 83,
+          "sourceTokenIds": [
+            "n65001018011",
+            "n65001018012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:8",
+          "surface": "deseos",
+          "charStart": 84,
+          "charEnd": 90,
+          "sourceTokenIds": [
+            "n65001018013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "38:9",
+          "surface": "de impiedades",
+          "charStart": 91,
+          "charEnd": 104,
+          "sourceTokenIds": [
+            "n65001018015",
+            "n65001018016"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 39,
+      "reference": "Jude 1:19",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "39:0",
+          "surface": "Estos",
+          "charStart": 0,
+          "charEnd": 5,
+          "sourceTokenIds": [
+            "n65001019001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "39:1",
+          "surface": "son",
+          "charStart": 6,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001019002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "39:2",
+          "surface": "los que causan",
+          "charStart": 10,
+          "charEnd": 24,
+          "sourceTokenIds": [
+            "n65001019003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "39:3",
+          "surface": "divisiones",
+          "charStart": 25,
+          "charEnd": 35,
+          "sourceTokenIds": [
+            "n65001019004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "39:4",
+          "surface": "sensuales",
+          "charStart": 37,
+          "charEnd": 46,
+          "sourceTokenIds": [
+            "n65001019006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "39:5",
+          "surface": "que no tienen",
+          "charStart": 48,
+          "charEnd": 61,
+          "sourceTokenIds": [
+            "n65001019008",
+            "n65001019009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "39:6",
+          "surface": "el Espíritu",
+          "charStart": 62,
+          "charEnd": 73,
+          "sourceTokenIds": [
+            "n65001019007"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 40,
+      "reference": "Jude 1:20",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "40:0",
+          "surface": "Pero",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n65001020002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "40:1",
+          "surface": "ustedes",
+          "charStart": 5,
+          "charEnd": 12,
+          "sourceTokenIds": [
+            "n65001020001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "40:2",
+          "surface": "amados",
+          "charStart": 14,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n65001020003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "40:3",
+          "surface": "edificándose sobre su santísima fe",
+          "charStart": 22,
+          "charEnd": 56,
+          "sourceTokenIds": [
+            "n65001020008",
+            "n65001020009",
+            "n65001020004",
+            "n65001020005",
+            "n65001020006",
+            "n65001020007"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 41,
+      "reference": "Jude 1:20",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "41:0",
+          "surface": "orando",
+          "charStart": 0,
+          "charEnd": 6,
+          "sourceTokenIds": [
+            "n65001020013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "41:1",
+          "surface": "en el Espíritu",
+          "charStart": 7,
+          "charEnd": 21,
+          "sourceTokenIds": [
+            "n65001020010",
+            "n65001020011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "41:2",
+          "surface": "Santo",
+          "charStart": 22,
+          "charEnd": 27,
+          "sourceTokenIds": [
+            "n65001020012"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 42,
+      "reference": "Jude 1:21",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "42:0",
+          "surface": "guárdense",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001021001",
+            "n65001021005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "42:1",
+          "surface": "en el amor",
+          "charStart": 10,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n65001021002",
+            "n65001021003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "42:2",
+          "surface": "de Dios",
+          "charStart": 21,
+          "charEnd": 28,
+          "sourceTokenIds": [
+            "n65001021004"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 43,
+      "reference": "Jude 1:21",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "43:0",
+          "surface": "esperando",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001021006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "43:1",
+          "surface": "la misericordia",
+          "charStart": 10,
+          "charEnd": 25,
+          "sourceTokenIds": [
+            "n65001021007",
+            "n65001021008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "43:2",
+          "surface": "de nuestro",
+          "charStart": 26,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n65001021009",
+            "n65001021011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "43:3",
+          "surface": "Señor",
+          "charStart": 37,
+          "charEnd": 42,
+          "sourceTokenIds": [
+            "n65001021010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "43:4",
+          "surface": "Jesús",
+          "charStart": 43,
+          "charEnd": 48,
+          "sourceTokenIds": [
+            "n65001021012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "43:5",
+          "surface": "Cristo",
+          "charStart": 49,
+          "charEnd": 55,
+          "sourceTokenIds": [
+            "n65001021013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "43:6",
+          "surface": "para vida",
+          "charStart": 56,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "n65001021014",
+            "n65001021015"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "43:7",
+          "surface": "eterna",
+          "charStart": 66,
+          "charEnd": 72,
+          "sourceTokenIds": [
+            "n65001021016"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 44,
+      "reference": "Jude 1:22",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "44:0",
+          "surface": "Y a los que dudan",
+          "charStart": 0,
+          "charEnd": 17,
+          "sourceTokenIds": [
+            "n65001022001",
+            "n65001022002",
+            "n65001022005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "44:1",
+          "surface": "tengan misericordia",
+          "charStart": 19,
+          "charEnd": 38,
+          "sourceTokenIds": [
+            "n65001022003",
+            "n65001022004"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 45,
+      "reference": "Jude 1:23",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "45:0",
+          "surface": "a otros sálvenlos arrebatándolos del fuego",
+          "charStart": 0,
+          "charEnd": 42,
+          "sourceTokenIds": [
+            "n65001023001",
+            "n65001023002",
+            "n65001023005",
+            "n65001023006",
+            "n65001023007",
+            "n65001023008",
+            "n65001023009"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 46,
+      "reference": "Jude 1:23",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "46:0",
+          "surface": "y a otros",
+          "charStart": 0,
+          "charEnd": 9,
+          "sourceTokenIds": [
+            "n65001023011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "46:1",
+          "surface": "tengan misericordia con temor",
+          "charStart": 10,
+          "charEnd": 39,
+          "sourceTokenIds": [
+            "n65001023003",
+            "n65001023004"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "46:2",
+          "surface": "aborreciendo",
+          "charStart": 41,
+          "charEnd": 53,
+          "sourceTokenIds": [
+            "n65001023010"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "46:3",
+          "surface": "aun",
+          "charStart": 54,
+          "charEnd": 57,
+          "sourceTokenIds": [
+            "n65001023012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "46:4",
+          "surface": "la ropa",
+          "charStart": 58,
+          "charEnd": 65,
+          "sourceTokenIds": [
+            "n65001023017"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "46:5",
+          "surface": "contaminada",
+          "charStart": 66,
+          "charEnd": 77,
+          "sourceTokenIds": [
+            "n65001023016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "46:6",
+          "surface": "por la carne",
+          "charStart": 78,
+          "charEnd": 90,
+          "sourceTokenIds": [
+            "n65001023013",
+            "n65001023014",
+            "n65001023015"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 47,
+      "reference": "Jude 1:24",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "47:0",
+          "surface": "Y al que es",
+          "charStart": 0,
+          "charEnd": 11,
+          "sourceTokenIds": [
+            "n65001024001",
+            "n65001024002"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:1",
+          "surface": "poderoso",
+          "charStart": 12,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n65001024003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:2",
+          "surface": "para guardarlos",
+          "charStart": 21,
+          "charEnd": 36,
+          "sourceTokenIds": [
+            "n65001024004",
+            "n65001024005"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:3",
+          "surface": "sin tropiezo",
+          "charStart": 37,
+          "charEnd": 49,
+          "sourceTokenIds": [
+            "n65001024006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:4",
+          "surface": "y presentarlos",
+          "charStart": 50,
+          "charEnd": 64,
+          "sourceTokenIds": [
+            "n65001024007",
+            "n65001024008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:5",
+          "surface": "delante",
+          "charStart": 65,
+          "charEnd": 72,
+          "sourceTokenIds": [
+            "n65001024009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:6",
+          "surface": "de su gloria",
+          "charStart": 73,
+          "charEnd": 85,
+          "sourceTokenIds": [
+            "n65001024010",
+            "n65001024011",
+            "n65001024012"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:7",
+          "surface": "sin tacha",
+          "charStart": 86,
+          "charEnd": 95,
+          "sourceTokenIds": [
+            "n65001024013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:8",
+          "surface": "con gran",
+          "charStart": 96,
+          "charEnd": 104,
+          "sourceTokenIds": [
+            "n65001024014"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "47:9",
+          "surface": "alegría",
+          "charStart": 105,
+          "charEnd": 112,
+          "sourceTokenIds": [
+            "n65001024015"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 48,
+      "reference": "Jude 1:25",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "48:0",
+          "surface": "al único",
+          "charStart": 0,
+          "charEnd": 8,
+          "sourceTokenIds": [
+            "n65001025001"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "48:1",
+          "surface": "Dios",
+          "charStart": 9,
+          "charEnd": 13,
+          "sourceTokenIds": [
+            "n65001025003"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "48:2",
+          "surface": "nuestro Salvador, por medio de Jesús Cristo nuestro Señor",
+          "charStart": 15,
+          "charEnd": 72,
+          "sourceTokenIds": [
+            "n65001025004",
+            "n65001025005"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 49,
+      "reference": "Jude 1:25",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "49:0",
+          "surface": "sea gloria",
+          "charStart": 0,
+          "charEnd": 10,
+          "sourceTokenIds": [
+            "n65001025006"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "49:1",
+          "surface": "majestad",
+          "charStart": 12,
+          "charEnd": 20,
+          "sourceTokenIds": [
+            "n65001025007",
+            "n65001025008"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "49:2",
+          "surface": "dominio",
+          "charStart": 22,
+          "charEnd": 29,
+          "sourceTokenIds": [
+            "n65001025009"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "49:3",
+          "surface": "y autoridad",
+          "charStart": 30,
+          "charEnd": 41,
+          "sourceTokenIds": [
+            "n65001025010",
+            "n65001025011"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "49:4",
+          "surface": "antes de todo el siglo, y ahora",
+          "charStart": 43,
+          "charEnd": 74,
+          "sourceTokenIds": [
+            "n65001025012",
+            "n65001025013"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "49:5",
+          "surface": "y por todos",
+          "charStart": 76,
+          "charEnd": 87,
+          "sourceTokenIds": [
+            "n65001025014",
+            "n65001025015",
+            "n65001025016"
+          ],
+          "method": "manual-realign"
+        },
+        {
+          "unitId": "49:6",
+          "surface": "los siglos",
+          "charStart": 88,
+          "charEnd": 98,
+          "sourceTokenIds": [
+            "n65001025017",
+            "n65001025018"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    },
+    {
+      "phraseIndex": 50,
+      "reference": "Jude 1:25",
+      "status": "manual",
+      "units": [
+        {
+          "unitId": "50:0",
+          "surface": "Amén",
+          "charStart": 0,
+          "charEnd": 4,
+          "sourceTokenIds": [
+            "n65001025019"
+          ],
+          "method": "manual-realign"
+        }
+      ]
+    }
+  ]
+}

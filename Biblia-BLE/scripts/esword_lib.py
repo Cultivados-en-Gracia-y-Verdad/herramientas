@@ -7,6 +7,12 @@ from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
 
+# Windows .bblx (Spanish e-Sword ecosystem): Version=2 means RTF Scripture,
+# matching working modules such as RV1960+ / iNA27+.
+# Mac/mobile .bbli: HTML Scripture (Version=4).
+WINDOWS_CONTENT_VERSION = 2
+MAC_CONTENT_VERSION = 4
+
 
 # Standard Protestant e-Sword book numbers (Genesis = 1 … Malachi = 39,
 # Matthew = 40 … Revelation = 66).
@@ -85,13 +91,49 @@ ESWORD_BOOK_ID: dict[str, int] = {
 MODULE_TITLE = "BLE+ Interlinear (estudio)"
 MODULE_ABBREV = "BLE+"
 MODULE_BASENAME = "BLE+"
-MODULE_INFO = (
+MODULE_INFO_HTML = (
     "<p><b>BLE+</b> — interlinear de estudio (hebreo/griego + Strong's + morfología + glosa española).</p>"
     "<p>Usa etiquetas nativas de e-Sword: <num>Strong's</num>, <tvm>morfología</tvm>.</p>"
     "<p><b>No es la Biblia Literal en Español (BLE) oficial.</b> "
     "Esa publicación queda para más adelante.</p>"
     "<p>Generado desde MNA/BLE (Cultivados en Gracia y Verdad).</p>"
 )
+
+# RTF cover/description for Windows .bblx (Version=2). Font/color tables mirror
+# Spanish Biblioteca Hispana interlinears so verse fragments can use \f0/\f1/\cf*.
+MODULE_INFO_RTF = (
+    r"{\rtf1\ansi\ansicpg1252\deff0"
+    r"{\fonttbl"
+    r"{\f0\froman\fcharset0 Times New Roman;}"
+    r"{\f1\froman\fcharset161 Greek;}"
+    r"{\f2\froman\fcharset177 Hebrew;}"
+    r"}"
+    r"{\colortbl ;"
+    r"\red0\green0\blue0;"
+    r"\red0\green0\blue255;"
+    r"\red0\green255\blue255;"
+    r"\red0\green255\blue0;"
+    r"\red255\green0\blue255;"
+    r"\red255\green0\blue0;"
+    r"\red255\green255\blue0;"
+    r"\red255\green255\blue255;"
+    r"\red0\green0\blue128;"
+    r"\red0\green128\blue128;"
+    r"\red0\green128\blue0;"
+    r"\red128\green0\blue128;"
+    r"\red128\green0\blue0;"
+    r"\red128\green128\blue0;"
+    r"\red128\green128\blue128;"
+    r"\red192\green192\blue192;"
+    r"}"
+    r"\viewkind4\uc1\pard\qc\f0\fs28\b BLE+\b0\par"
+    r"\fs20 Interlinear de estudio (hebreo/griego + Strong's + morfolog\'eda + glosa espa\'f1ola)\par"
+    r"\pard\fs18 No es la Biblia Literal en Espa\'f1ol (BLE) oficial.\par"
+    r"Generado desde MNA/BLE (Cultivados en Gracia y Verdad).\par}"
+)
+
+# Back-compat alias used by older call sites.
+MODULE_INFO = MODULE_INFO_HTML
 
 
 class EswordPlatform(str, Enum):
@@ -114,7 +156,7 @@ WINDOWS_SPEC = EswordModuleSpec(
         CREATE TABLE Details (
             Description NVARCHAR(250),
             Abbreviation NVARCHAR(50),
-            Information TEXT,
+            Comments TEXT,
             Version INT,
             Font NVARCHAR(50),
             RightToLeft BOOL,
@@ -126,7 +168,7 @@ WINDOWS_SPEC = EswordModuleSpec(
     """,
     details_insert_sql="""
         INSERT INTO Details (
-            Description, Abbreviation, Information, Version, Font,
+            Description, Abbreviation, Comments, Version, Font,
             RightToLeft, OT, NT, Apocrypha, Strong
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """,
@@ -170,6 +212,25 @@ def escape_html(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+def escape_rtf(text: str) -> str:
+    """Encode text for e-Sword Version=2 RTF verse fragments (Unicode-safe)."""
+    parts: list[str] = []
+    for ch in text:
+        code = ord(ch)
+        if ch in ("\\", "{", "}"):
+            parts.append("\\" + ch)
+        elif code < 128:
+            parts.append(ch)
+        elif code <= 0xFF:
+            parts.append(f"\\'{code:02x}")
+        elif code <= 0xFFFF:
+            signed = code if code <= 32767 else code - 65536
+            parts.append(f"\\u{signed}?")
+        else:
+            parts.append("?")
+    return "".join(parts)
+
+
 def details_row(
     spec: EswordModuleSpec,
     *,
@@ -182,8 +243,8 @@ def details_row(
         return (
             MODULE_TITLE,
             MODULE_ABBREV,
-            MODULE_INFO,
-            6,
+            MODULE_INFO_RTF,
+            WINDOWS_CONTENT_VERSION,
             "DEFAULT",
             0,
             1 if include_ot else 0,
@@ -194,8 +255,8 @@ def details_row(
     return (
         MODULE_TITLE,
         MODULE_ABBREV,
-        MODULE_INFO,
-        6,
+        MODULE_INFO_HTML,
+        MAC_CONTENT_VERSION,
         1 if include_ot else 0,
         1 if include_nt else 0,
         0,
@@ -234,6 +295,7 @@ def write_module(
         cur.execute(BIBLE_SQL)
         rows = []
         for book, ch, vs, text in verses:
+            # Callers pass already-formatted HTML or RTF; only escape when plain.
             scripture = text if html else escape_html(text)
             rows.append((book, ch, vs, scripture))
         cur.executemany(
@@ -257,11 +319,20 @@ def read_bible_rows(path: Path) -> list[tuple[int, int, int, str]]:
 
 
 def convert_bblx_to_bbli(source: Path, dest: Path) -> int:
+    """Copy Scripture rows into a Mac .bbli shell.
+
+    Only valid when the source .bblx already stores HTML (legacy). Newer
+    Windows BLE+ modules store RTF — rebuild with ble_to_esword.py --platform mac.
+    """
     verses = read_bible_rows(source)
+    if verses and ("\\cf" in verses[0][3] or "\\f1" in verses[0][3]):
+        raise ValueError(
+            f"{source.name} looks like RTF (Windows Version=2). "
+            "Rebuild the Mac module with: python3 scripts/ble_to_esword.py --platform mac"
+        )
     book_ids = {b for b, _, _, _ in verses}
     include_ot = any(b <= 39 for b in book_ids)
     include_nt = any(b >= 40 for b in book_ids)
-    # Preserve HTML already stored in Scripture.
     write_module(
         dest,
         verses,

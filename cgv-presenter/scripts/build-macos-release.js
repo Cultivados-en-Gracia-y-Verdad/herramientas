@@ -37,6 +37,6 @@ run(`ditto ${quote(installerApp)} ${quote(path.join(stagingDir, 'Install CGV Pre
 fs.copyFileSync(readmeSource, path.join(stagingDir, 'README - Start Here.txt'));
 
 fs.rmSync(releaseZip, { force: true });
-run(`cd ${quote(stagingDir)} && zip -r -X ${quote(releaseZip)} .`);
+run(`ditto -c -k --sequesterRsrc --zlibCompressionLevel 9 ${quote(stagingDir)} ${quote(releaseZip)}`);
 
 console.log(`Created ${releaseZip}`);

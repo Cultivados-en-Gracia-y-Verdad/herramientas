@@ -49,15 +49,16 @@ LBF’s Greek authority is **Scrivener 1894 TR**. When a book has a TR spine und
 - `{bookId}-phrases-tr.json` for phrase Spanish / token ids
 - `{bookId}-tr-spine.json` for Greek verse tokens (not MorphGNT/SBLGNT)
 
-Titus is the pilot. Other books still fall back to MorphGNT until their TR spine exists.
+Titus and Jude have TR spines. Other books still fall back to MorphGNT until theirs exist.
 
-Rebuild Titus from Robinson-parsed UTR:
+Rebuild from Robinson-parsed UTR:
 
 ```sh
 python3 scripts/build_tr_spine_titus.py
+python3 scripts/build_tr_spine_jude.py
 ```
 
-Source: `Biblia-LBF/source/greek/TR1894/robinson-parsed/TIT.UTR`
+Sources: `Biblia-LBF/source/greek/TR1894/robinson-parsed/{TIT,JUDE}.UTR`
 
 ### Reverse interlinear (Titus pilot)
 

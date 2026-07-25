@@ -75,10 +75,9 @@ python3 -m http.server 8765
 
 # e-Sword BLE+ interlinear study modules (+ Strong's/morph links) (not official BLE text)
 python3 scripts/ble_to_esword.py
-# → output/esword/BLE+.bblx  (Windows)
-# → output/esword/BLE+.bbli  (e-Sword X / macOS, iOS, Android)
-# Each verse = original + Spanish gloss (+ Strong's) in columns.
-# Optional: --testament ot|nt
+# → output/esword/BLE+.bblx  (Windows: RTF Version=2, like iNA27+/RV1960+)
+# → output/esword/BLE+.bbli  (e-Sword X / macOS, iOS, Android: HTML tags)
+# Optional: --testament ot|nt  |  --platform windows|mac|both
 
 # Static web bundle (reader + interlinear txt)
 python3 scripts/build_reader_site.py

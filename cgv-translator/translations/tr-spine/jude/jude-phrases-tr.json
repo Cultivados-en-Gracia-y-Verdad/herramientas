@@ -1,0 +1,6356 @@
+[
+  {
+    "reference": "Jude 1:1",
+    "phraseIndex": 0,
+    "greek": "Ἰούδας Ἰησοῦ Χριστοῦ δοῦλος ἀδελφὸς δὲ Ἰακώβου",
+    "spanish": "Judas, siervo de Jesús Cristo y hermano de Jacobo,",
+    "sourceTokenIds": [
+      "n65001001001",
+      "n65001001002",
+      "n65001001003",
+      "n65001001004",
+      "n65001001005",
+      "n65001001006",
+      "n65001001007"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001001001",
+        "greek": "Ἰούδας",
+        "lemma": "Ἰούδας",
+        "strongs": "G2455",
+        "rmac": "N-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001002",
+        "greek": "Ἰησοῦ",
+        "lemma": "Ἰησοῦς",
+        "strongs": "G2424",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001003",
+        "greek": "Χριστοῦ",
+        "lemma": "Χριστός",
+        "strongs": "G5547",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001004",
+        "greek": "δοῦλος",
+        "lemma": "δοῦλος",
+        "strongs": "G1401",
+        "rmac": "N-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001005",
+        "greek": "ἀδελφὸς",
+        "lemma": "ἀδελφός",
+        "strongs": "G80",
+        "rmac": "N-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001006",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001007",
+        "greek": "Ἰακώβου",
+        "lemma": "Ἰάκωβος",
+        "strongs": "G2385",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:1",
+    "phraseIndex": 1,
+    "greek": "τοῖς ἐν Θεῷ πατρὶ ἠγίασμένοις καὶ Ἰησοῦ Χριστῷ τετηρημένοις κλητοῖς",
+    "spanish": "a los llamados, amados en Dios Padre y guardados para Jesús Cristo:",
+    "sourceTokenIds": [
+      "n65001001008",
+      "n65001001009",
+      "n65001001010",
+      "n65001001011",
+      "n65001001012",
+      "n65001001013",
+      "n65001001014",
+      "n65001001015",
+      "n65001001016",
+      "n65001001017"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001001008",
+        "greek": "τοῖς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001009",
+        "greek": "ἐν",
+        "lemma": "ἐν",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001010",
+        "greek": "Θεῷ",
+        "lemma": "θεός",
+        "strongs": "G2316",
+        "rmac": "N-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001011",
+        "greek": "πατρὶ",
+        "lemma": "πατήρ",
+        "strongs": "G3962",
+        "rmac": "N-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001012",
+        "greek": "ἠγίασμένοις",
+        "lemma": "ἀγαπάω",
+        "strongs": "G37",
+        "rmac": "V-RPP-DPM",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001013",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001014",
+        "greek": "Ἰησοῦ",
+        "lemma": "Ἰησοῦς",
+        "strongs": "G2424",
+        "rmac": "N-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001015",
+        "greek": "Χριστῷ",
+        "lemma": "Χριστός",
+        "strongs": "G5547",
+        "rmac": "N-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001016",
+        "greek": "τετηρημένοις",
+        "lemma": "τηρέω",
+        "strongs": "G5083",
+        "rmac": "V-RPP-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001001017",
+        "greek": "κλητοῖς",
+        "lemma": "κλητός",
+        "strongs": "G2822",
+        "rmac": "A-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:2",
+    "phraseIndex": 2,
+    "greek": "ἔλεος ὑμῖν καὶ εἰρήνη καὶ ἀγάπη πληθυνθείη",
+    "spanish": "Misericordia, paz y amor les sean multiplicados.",
+    "sourceTokenIds": [
+      "n65001002001",
+      "n65001002002",
+      "n65001002003",
+      "n65001002004",
+      "n65001002005",
+      "n65001002006",
+      "n65001002007"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001002001",
+        "greek": "ἔλεος",
+        "lemma": "ἔλεος",
+        "strongs": "G1656",
+        "rmac": "N-NSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001002002",
+        "greek": "ὑμῖν",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2DP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001002003",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001002004",
+        "greek": "εἰρήνη",
+        "lemma": "εἰρήνη",
+        "strongs": "G1515",
+        "rmac": "N-NSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001002005",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001002006",
+        "greek": "ἀγάπη",
+        "lemma": "ἀγάπη",
+        "strongs": "G26",
+        "rmac": "N-NSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001002007",
+        "greek": "πληθυνθείη",
+        "lemma": "πληθύνω",
+        "strongs": "G4129",
+        "rmac": "V-APO-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:3",
+    "phraseIndex": 3,
+    "greek": "Ἀγαπητοί πᾶσαν σπουδὴν ποιούμενος γράφειν ὑμῖν περὶ τῆς κοινῆς σωτηρίας",
+    "spanish": "Amados, poniéndome toda diligencia en escribirles acerca de nuestra común salvación,",
+    "sourceTokenIds": [
+      "n65001003001",
+      "n65001003002",
+      "n65001003003",
+      "n65001003004",
+      "n65001003005",
+      "n65001003006",
+      "n65001003007",
+      "n65001003008",
+      "n65001003009",
+      "n65001003010"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001003001",
+        "greek": "Ἀγαπητοί",
+        "lemma": "ἀγαπητός",
+        "strongs": "G27",
+        "rmac": "A-VPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003002",
+        "greek": "πᾶσαν",
+        "lemma": "πᾶς",
+        "strongs": "G3956",
+        "rmac": "A-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003003",
+        "greek": "σπουδὴν",
+        "lemma": "σπουδή",
+        "strongs": "G4710",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003004",
+        "greek": "ποιούμενος",
+        "lemma": "ποιέω",
+        "strongs": "G4160",
+        "rmac": "V-PMP-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003005",
+        "greek": "γράφειν",
+        "lemma": "γράφω",
+        "strongs": "G1125",
+        "rmac": "V-PAN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003006",
+        "greek": "ὑμῖν",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2DP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003007",
+        "greek": "περὶ",
+        "lemma": "περί",
+        "strongs": "G4012",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003008",
+        "greek": "τῆς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003009",
+        "greek": "κοινῆς",
+        "lemma": "κοινός",
+        "strongs": "G2839",
+        "rmac": "A-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003010",
+        "greek": "σωτηρίας",
+        "lemma": "σωτηρία",
+        "strongs": "G4991",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:3",
+    "phraseIndex": 4,
+    "greek": "ἀνάγκην ἔσχον γράψαι ὑμῖν παρακαλῶν ἐπαγωνίζεσθαι τῇ ἅπαξ παραδοθείσῃ τοῖς ἁγίοις πίστει",
+    "spanish": "me vi en la necesidad de escribirles exhortándolos a contender por la fe que una vez fue entregada a los santos.",
+    "sourceTokenIds": [
+      "n65001003011",
+      "n65001003012",
+      "n65001003013",
+      "n65001003014",
+      "n65001003015",
+      "n65001003016",
+      "n65001003017",
+      "n65001003018",
+      "n65001003019",
+      "n65001003020",
+      "n65001003021",
+      "n65001003022"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001003011",
+        "greek": "ἀνάγκην",
+        "lemma": "ἀνάγκη",
+        "strongs": "G318",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003012",
+        "greek": "ἔσχον",
+        "lemma": "ἔχω",
+        "strongs": "G2192",
+        "rmac": "V-2AAI-1S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003013",
+        "greek": "γράψαι",
+        "lemma": "γράφω",
+        "strongs": "G1125",
+        "rmac": "V-AAN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003014",
+        "greek": "ὑμῖν",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2DP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003015",
+        "greek": "παρακαλῶν",
+        "lemma": "παρακαλέω",
+        "strongs": "G3870",
+        "rmac": "V-PAP-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003016",
+        "greek": "ἐπαγωνίζεσθαι",
+        "lemma": "ἐπαγωνίζομαι",
+        "strongs": "G1864",
+        "rmac": "V-PNN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003017",
+        "greek": "τῇ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003018",
+        "greek": "ἅπαξ",
+        "lemma": "ἅπαξ",
+        "strongs": "G530",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003019",
+        "greek": "παραδοθείσῃ",
+        "lemma": "παραδίδωμι",
+        "strongs": "G3860",
+        "rmac": "V-APP-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003020",
+        "greek": "τοῖς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003021",
+        "greek": "ἁγίοις",
+        "lemma": "ἅγιος",
+        "strongs": "G40",
+        "rmac": "A-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001003022",
+        "greek": "πίστει",
+        "lemma": "πίστις",
+        "strongs": "G4102",
+        "rmac": "N-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:4",
+    "phraseIndex": 5,
+    "greek": "παρεισέδυσαν γάρ τινες ἄνθρωποι οἱ πάλαι προγεγραμμένοι εἰς τοῦτο τὸ κρίμα",
+    "spanish": "Porque se han infiltrado algunos hombres, los cuales desde antiguo estaban marcados para esta condenación,",
+    "sourceTokenIds": [
+      "n65001004001",
+      "n65001004002",
+      "n65001004003",
+      "n65001004004",
+      "n65001004005",
+      "n65001004006",
+      "n65001004007",
+      "n65001004008",
+      "n65001004009",
+      "n65001004010",
+      "n65001004011"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001004001",
+        "greek": "παρεισέδυσαν",
+        "lemma": "παρεισδύω",
+        "strongs": "G3921",
+        "rmac": "V-AAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004002",
+        "greek": "γάρ",
+        "lemma": "γάρ",
+        "strongs": "G1063",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004003",
+        "greek": "τινες",
+        "lemma": "τις",
+        "strongs": "G5100",
+        "rmac": "X-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004004",
+        "greek": "ἄνθρωποι",
+        "lemma": "ἄνθρωπος",
+        "strongs": "G444",
+        "rmac": "N-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004005",
+        "greek": "οἱ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004006",
+        "greek": "πάλαι",
+        "lemma": "πάλαι",
+        "strongs": "G3819",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004007",
+        "greek": "προγεγραμμένοι",
+        "lemma": "προγράφω",
+        "strongs": "G4270",
+        "rmac": "V-RPP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004008",
+        "greek": "εἰς",
+        "lemma": "εἰς",
+        "strongs": "G1519",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004009",
+        "greek": "τοῦτο",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004010",
+        "greek": "τὸ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004011",
+        "greek": "κρίμα",
+        "lemma": "κρίμα",
+        "strongs": "G2917",
+        "rmac": "N-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:4",
+    "phraseIndex": 6,
+    "greek": "ἀσεβεῖς τὴν τοῦ Θεοῦ ἡμῶν χάριν μετατιθέντες εἰς ἀσέλγειαν",
+    "spanish": "impíos, que convierten en lascivia la gracia de nuestro Dios",
+    "sourceTokenIds": [
+      "n65001004012",
+      "n65001004013",
+      "n65001004014",
+      "n65001004015",
+      "n65001004016",
+      "n65001004017",
+      "n65001004018",
+      "n65001004019",
+      "n65001004020"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001004012",
+        "greek": "ἀσεβεῖς",
+        "lemma": "ἀσεβής",
+        "strongs": "G765",
+        "rmac": "A-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004013",
+        "greek": "τὴν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004014",
+        "greek": "τοῦ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004015",
+        "greek": "Θεοῦ",
+        "lemma": "θεός",
+        "strongs": "G2316",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004016",
+        "greek": "ἡμῶν",
+        "lemma": "ἐγώ",
+        "strongs": "G1473",
+        "rmac": "P-1GP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004017",
+        "greek": "χάριν",
+        "lemma": "χάρις",
+        "strongs": "G5485",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004018",
+        "greek": "μετατιθέντες",
+        "lemma": "μετατίθημι",
+        "strongs": "G3346",
+        "rmac": "V-PAP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004019",
+        "greek": "εἰς",
+        "lemma": "εἰς",
+        "strongs": "G1519",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004020",
+        "greek": "ἀσέλγειαν",
+        "lemma": "ἀσέλγεια",
+        "strongs": "G766",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:4",
+    "phraseIndex": 7,
+    "greek": "καὶ τὸν μόνον δεσπότην καὶ Κύριον ἡμῶν Ἰησοῦν Χριστὸν ἀρνούμενοι",
+    "spanish": "y niegan a nuestro único Dueño y Señor, Jesús Cristo.",
+    "sourceTokenIds": [
+      "n65001004021",
+      "n65001004022",
+      "n65001004023",
+      "n65001004024",
+      "n65001004026",
+      "n65001004027",
+      "n65001004028",
+      "n65001004029",
+      "n65001004030",
+      "n65001004031"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001004021",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004022",
+        "greek": "τὸν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004023",
+        "greek": "μόνον",
+        "lemma": "μόνος",
+        "strongs": "G3441",
+        "rmac": "A-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004024",
+        "greek": "δεσπότην",
+        "lemma": "δεσπότης",
+        "strongs": "G1203",
+        "rmac": "N-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004026",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004027",
+        "greek": "Κύριον",
+        "lemma": "κύριος",
+        "strongs": "G2962",
+        "rmac": "N-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004028",
+        "greek": "ἡμῶν",
+        "lemma": "ἐγώ",
+        "strongs": "G1473",
+        "rmac": "P-1GP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004029",
+        "greek": "Ἰησοῦν",
+        "lemma": "Ἰησοῦς",
+        "strongs": "G2424",
+        "rmac": "N-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004030",
+        "greek": "Χριστὸν",
+        "lemma": "Χριστός",
+        "strongs": "G5547",
+        "rmac": "N-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001004031",
+        "greek": "ἀρνούμενοι",
+        "lemma": "ἀρνέομαι",
+        "strongs": "G720",
+        "rmac": "V-PNP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:5",
+    "phraseIndex": 8,
+    "greek": "Ὑπομνῆσαι δὲ ὑμᾶς βούλομαι εἰδότας ὑμᾶς ἅπαξ τοῦτο",
+    "spanish": "Quiero, pues, recordarles, aunque ustedes ya lo saben todo de una vez,",
+    "sourceTokenIds": [
+      "n65001005001",
+      "n65001005002",
+      "n65001005003",
+      "n65001005004",
+      "n65001005005",
+      "n65001005006",
+      "n65001005007",
+      "n65001005008"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001005001",
+        "greek": "Ὑπομνῆσαι",
+        "lemma": "ὑπομιμνῄσκω",
+        "strongs": "G5279",
+        "rmac": "V-AAN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005002",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005003",
+        "greek": "ὑμᾶς",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2AP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005004",
+        "greek": "βούλομαι",
+        "lemma": "βούλομαι",
+        "strongs": "G1014",
+        "rmac": "V-PNI-1S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005005",
+        "greek": "εἰδότας",
+        "lemma": "ὁράω",
+        "strongs": "G1492",
+        "rmac": "V-RAP-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005006",
+        "greek": "ὑμᾶς",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2AP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005007",
+        "greek": "ἅπαξ",
+        "lemma": "ἅπαξ",
+        "strongs": "G530",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005008",
+        "greek": "τοῦτο",
+        "lemma": "πᾶς",
+        "strongs": "G3778",
+        "rmac": "D-ASN",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:5",
+    "phraseIndex": 9,
+    "greek": "ὅτι ο λαὸν ἐκ γῆς Αἰγύπτου σώσας τὸ δεύτερον τοὺς μὴ πιστεύσαντας ἀπώλεσεν",
+    "spanish": "que Jesús, habiendo salvado al pueblo de la tierra de Egipto, después destruyó a los que no creyeron;",
+    "sourceTokenIds": [
+      "n65001005009",
+      "n65001005010",
+      "n65001005012",
+      "n65001005013",
+      "n65001005014",
+      "n65001005015",
+      "n65001005016",
+      "n65001005017",
+      "n65001005018",
+      "n65001005019",
+      "n65001005020",
+      "n65001005021",
+      "n65001005022"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001005009",
+        "greek": "ὅτι",
+        "lemma": "ὅτι",
+        "strongs": "G3754",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005010",
+        "greek": "ο",
+        "lemma": "Ἰησοῦς",
+        "strongs": "G3588",
+        "rmac": "T-NSM",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005012",
+        "greek": "λαὸν",
+        "lemma": "λαός",
+        "strongs": "G2992",
+        "rmac": "N-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005013",
+        "greek": "ἐκ",
+        "lemma": "ἐκ",
+        "strongs": "G1537",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005014",
+        "greek": "γῆς",
+        "lemma": "γῆ",
+        "strongs": "G1093",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005015",
+        "greek": "Αἰγύπτου",
+        "lemma": "Αἴγυπτος",
+        "strongs": "G125",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005016",
+        "greek": "σώσας",
+        "lemma": "σῴζω",
+        "strongs": "G4982",
+        "rmac": "V-AAP-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005017",
+        "greek": "τὸ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005018",
+        "greek": "δεύτερον",
+        "lemma": "δεύτερος",
+        "strongs": "G1208",
+        "rmac": "A-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005019",
+        "greek": "τοὺς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005020",
+        "greek": "μὴ",
+        "lemma": "μή",
+        "strongs": "G3361",
+        "rmac": "PRT-N",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005021",
+        "greek": "πιστεύσαντας",
+        "lemma": "πιστεύω",
+        "strongs": "G4100",
+        "rmac": "V-AAP-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001005022",
+        "greek": "ἀπώλεσεν",
+        "lemma": "ἀπόλλυμι",
+        "strongs": "G622",
+        "rmac": "V-AAI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:6",
+    "phraseIndex": 10,
+    "greek": "ἀγγέλους τε τοὺς μὴ τηρήσαντας τὴν ἑαυτῶν ἀρχὴν ἀλλὰ ἀπολιπόντας τὸ ἴδιον οἰκητήριον",
+    "spanish": "y a los ángeles que no guardaron su propio dominio, sino que abandonaron su propia morada,",
+    "sourceTokenIds": [
+      "n65001006001",
+      "n65001006002",
+      "n65001006003",
+      "n65001006004",
+      "n65001006005",
+      "n65001006006",
+      "n65001006007",
+      "n65001006008",
+      "n65001006009",
+      "n65001006010",
+      "n65001006011",
+      "n65001006012",
+      "n65001006013"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001006001",
+        "greek": "ἀγγέλους",
+        "lemma": "ἄγγελος",
+        "strongs": "G32",
+        "rmac": "N-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006002",
+        "greek": "τε",
+        "lemma": "τέ",
+        "strongs": "G5037",
+        "rmac": "PRT",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006003",
+        "greek": "τοὺς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006004",
+        "greek": "μὴ",
+        "lemma": "μή",
+        "strongs": "G3361",
+        "rmac": "PRT-N",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006005",
+        "greek": "τηρήσαντας",
+        "lemma": "τηρέω",
+        "strongs": "G5083",
+        "rmac": "V-AAP-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006006",
+        "greek": "τὴν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006007",
+        "greek": "ἑαυτῶν",
+        "lemma": "ἑαυτοῦ",
+        "strongs": "G1438",
+        "rmac": "F-3GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006008",
+        "greek": "ἀρχὴν",
+        "lemma": "ἀρχή",
+        "strongs": "G746",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006009",
+        "greek": "ἀλλὰ",
+        "lemma": "ἀλλά",
+        "strongs": "G235",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006010",
+        "greek": "ἀπολιπόντας",
+        "lemma": "ἀπολείπω",
+        "strongs": "G620",
+        "rmac": "V-2AAP-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006011",
+        "greek": "τὸ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006012",
+        "greek": "ἴδιον",
+        "lemma": "ἴδιος",
+        "strongs": "G2398",
+        "rmac": "A-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006013",
+        "greek": "οἰκητήριον",
+        "lemma": "οἰκητήριον",
+        "strongs": "G3613",
+        "rmac": "N-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:6",
+    "phraseIndex": 11,
+    "greek": "εἰς κρίσιν μεγάλης ἡμέρας δεσμοῖς ἀϊδίοις ὑπὸ ζόφον τετήρηκεν",
+    "spanish": "los ha guardado bajo tinieblas en cadenas eternas para el juicio del gran día;",
+    "sourceTokenIds": [
+      "n65001006014",
+      "n65001006015",
+      "n65001006016",
+      "n65001006017",
+      "n65001006018",
+      "n65001006019",
+      "n65001006020",
+      "n65001006021",
+      "n65001006022"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001006014",
+        "greek": "εἰς",
+        "lemma": "εἰς",
+        "strongs": "G1519",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006015",
+        "greek": "κρίσιν",
+        "lemma": "κρίσις",
+        "strongs": "G2920",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006016",
+        "greek": "μεγάλης",
+        "lemma": "μέγας",
+        "strongs": "G3173",
+        "rmac": "A-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006017",
+        "greek": "ἡμέρας",
+        "lemma": "ἡμέρα",
+        "strongs": "G2250",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006018",
+        "greek": "δεσμοῖς",
+        "lemma": "δεσμός",
+        "strongs": "G1199",
+        "rmac": "N-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006019",
+        "greek": "ἀϊδίοις",
+        "lemma": "ἀΐδιος",
+        "strongs": "G126",
+        "rmac": "A-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006020",
+        "greek": "ὑπὸ",
+        "lemma": "ὑπό",
+        "strongs": "G5259",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006021",
+        "greek": "ζόφον",
+        "lemma": "ζόφος",
+        "strongs": "G2217",
+        "rmac": "N-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001006022",
+        "greek": "τετήρηκεν",
+        "lemma": "τηρέω",
+        "strongs": "G5083",
+        "rmac": "V-RAI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:7",
+    "phraseIndex": 12,
+    "greek": "ὡς Σόδομα καὶ Γόμορρα καὶ αἱ περὶ αὐτὰς πόλεις",
+    "spanish": "como Sodoma y Gomorra y las ciudades de alrededor,",
+    "sourceTokenIds": [
+      "n65001007001",
+      "n65001007002",
+      "n65001007003",
+      "n65001007004",
+      "n65001007005",
+      "n65001007006",
+      "n65001007007",
+      "n65001007008",
+      "n65001007009"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001007001",
+        "greek": "ὡς",
+        "lemma": "ὡς",
+        "strongs": "G5613",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007002",
+        "greek": "Σόδομα",
+        "lemma": "Σόδομα",
+        "strongs": "G4670",
+        "rmac": "N-NSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007003",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007004",
+        "greek": "Γόμορρα",
+        "lemma": "Γόμορρα",
+        "strongs": "G1116",
+        "rmac": "N-NSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007005",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007006",
+        "greek": "αἱ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-NPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007007",
+        "greek": "περὶ",
+        "lemma": "περί",
+        "strongs": "G4012",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007008",
+        "greek": "αὐτὰς",
+        "lemma": "αὐτός",
+        "strongs": "G846",
+        "rmac": "P-APF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007009",
+        "greek": "πόλεις",
+        "lemma": "πόλις",
+        "strongs": "G4172",
+        "rmac": "N-NPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:7",
+    "phraseIndex": 13,
+    "greek": "τὸν ὅμοιον τούτοις ἐκπορνεύσασαι καὶ ἀπελθοῦσαι ὀπίσω σαρκὸς ἑτέρας",
+    "spanish": "las cuales de la misma manera que aquellos se entregaron a la fornicación y fueron tras carne extraña,",
+    "sourceTokenIds": [
+      "n65001007010",
+      "n65001007011",
+      "n65001007012",
+      "n65001007014",
+      "n65001007015",
+      "n65001007016",
+      "n65001007017",
+      "n65001007018",
+      "n65001007019"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001007010",
+        "greek": "τὸν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007011",
+        "greek": "ὅμοιον",
+        "lemma": "ὅμοιος",
+        "strongs": "G3664",
+        "rmac": "A-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007012",
+        "greek": "τούτοις",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007014",
+        "greek": "ἐκπορνεύσασαι",
+        "lemma": "ἐκπορνεύω",
+        "strongs": "G1608",
+        "rmac": "V-AAP-NPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007015",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007016",
+        "greek": "ἀπελθοῦσαι",
+        "lemma": "ἀπέρχομαι",
+        "strongs": "G565",
+        "rmac": "V-2AAP-NPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007017",
+        "greek": "ὀπίσω",
+        "lemma": "ὀπίσω",
+        "strongs": "G3694",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007018",
+        "greek": "σαρκὸς",
+        "lemma": "σάρξ",
+        "strongs": "G4561",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007019",
+        "greek": "ἑτέρας",
+        "lemma": "ἕτερος",
+        "strongs": "G2087",
+        "rmac": "A-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:7",
+    "phraseIndex": 14,
+    "greek": "πρόκεινται δεῖγμα πυρὸς αἰωνίου δίκην ὑπέχουσαι",
+    "spanish": "están puestas como ejemplo, sufriendo el castigo de fuego eterno.",
+    "sourceTokenIds": [
+      "n65001007020",
+      "n65001007021",
+      "n65001007022",
+      "n65001007023",
+      "n65001007024",
+      "n65001007025"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001007020",
+        "greek": "πρόκεινται",
+        "lemma": "πρόκειμαι",
+        "strongs": "G4295",
+        "rmac": "V-PNI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007021",
+        "greek": "δεῖγμα",
+        "lemma": "δεῖγμα",
+        "strongs": "G1164",
+        "rmac": "N-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007022",
+        "greek": "πυρὸς",
+        "lemma": "πῦρ",
+        "strongs": "G4442",
+        "rmac": "N-GSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007023",
+        "greek": "αἰωνίου",
+        "lemma": "αἰώνιος",
+        "strongs": "G166",
+        "rmac": "A-GSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007024",
+        "greek": "δίκην",
+        "lemma": "δίκη",
+        "strongs": "G1349",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001007025",
+        "greek": "ὑπέχουσαι",
+        "lemma": "ὑπέχω",
+        "strongs": "G5254",
+        "rmac": "V-PAP-NPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:8",
+    "phraseIndex": 15,
+    "greek": "ὁμοίως μέντοι καὶ οὗτοι ἐνυπνιαζόμενοι σάρκα μὲν μιαινουσιν",
+    "spanish": "De la misma manera también estos, soñando, mancillan la carne,",
+    "sourceTokenIds": [
+      "n65001008001",
+      "n65001008002",
+      "n65001008003",
+      "n65001008004",
+      "n65001008005",
+      "n65001008006",
+      "n65001008007",
+      "n65001008008"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001008001",
+        "greek": "ὁμοίως",
+        "lemma": "ὁμοίως",
+        "strongs": "G3668",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008002",
+        "greek": "μέντοι",
+        "lemma": "μέντοι",
+        "strongs": "G3305",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008003",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008004",
+        "greek": "οὗτοι",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008005",
+        "greek": "ἐνυπνιαζόμενοι",
+        "lemma": "ἐνυπνιάζομαι",
+        "strongs": "G1797",
+        "rmac": "V-PNP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008006",
+        "greek": "σάρκα",
+        "lemma": "σάρξ",
+        "strongs": "G4561",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008007",
+        "greek": "μὲν",
+        "lemma": "μέν",
+        "strongs": "G3303",
+        "rmac": "PRT",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008008",
+        "greek": "μιαινουσιν",
+        "lemma": "μιαίνω",
+        "strongs": "G3392",
+        "rmac": "V-PAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:8",
+    "phraseIndex": 16,
+    "greek": "κυριότητα δὲ αθετουσιν δόξας δὲ βλασφημοῦσιν",
+    "spanish": "rechazan la autoridad y blasfeman de las glorias.",
+    "sourceTokenIds": [
+      "n65001008009",
+      "n65001008010",
+      "n65001008011",
+      "n65001008012",
+      "n65001008013",
+      "n65001008014"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001008009",
+        "greek": "κυριότητα",
+        "lemma": "κυριότης",
+        "strongs": "G2963",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008010",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008011",
+        "greek": "αθετουσιν",
+        "lemma": "ἀθετέω",
+        "strongs": "G114",
+        "rmac": "V-PAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008012",
+        "greek": "δόξας",
+        "lemma": "δόξα",
+        "strongs": "G1391",
+        "rmac": "N-APF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008013",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001008014",
+        "greek": "βλασφημοῦσιν",
+        "lemma": "βλασφημέω",
+        "strongs": "G987",
+        "rmac": "V-PAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:9",
+    "phraseIndex": 17,
+    "greek": "ὁ δὲ Μιχαὴλ ο ἀρχάγγελος ὅτε τῷ διαβόλῳ διακρινόμενος διελέγετο περὶ τοῦ Μωσέως σώματος",
+    "spanish": "Pero cuando Miguel el arcángel, disputando con el diablo, discutía acerca del cuerpo de Moisés,",
+    "sourceTokenIds": [
+      "n65001009001",
+      "n65001009002",
+      "n65001009003",
+      "n65001009004",
+      "n65001009005",
+      "n65001009006",
+      "n65001009007",
+      "n65001009008",
+      "n65001009009",
+      "n65001009010",
+      "n65001009011",
+      "n65001009012",
+      "n65001009013",
+      "n65001009014"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001009001",
+        "greek": "ὁ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009002",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009003",
+        "greek": "Μιχαὴλ",
+        "lemma": "Μιχαήλ",
+        "strongs": "G3413",
+        "rmac": "N-PRI",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009004",
+        "greek": "ο",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009005",
+        "greek": "ἀρχάγγελος",
+        "lemma": "ἀρχάγγελος",
+        "strongs": "G743",
+        "rmac": "N-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009006",
+        "greek": "ὅτε",
+        "lemma": "ὅτε",
+        "strongs": "G3753",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009007",
+        "greek": "τῷ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009008",
+        "greek": "διαβόλῳ",
+        "lemma": "διάβολος",
+        "strongs": "G1228",
+        "rmac": "A-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009009",
+        "greek": "διακρινόμενος",
+        "lemma": "διακρίνω",
+        "strongs": "G1252",
+        "rmac": "V-PMP-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009010",
+        "greek": "διελέγετο",
+        "lemma": "διαλέγομαι",
+        "strongs": "G1256",
+        "rmac": "V-INI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009011",
+        "greek": "περὶ",
+        "lemma": "περί",
+        "strongs": "G4012",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009012",
+        "greek": "τοῦ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009013",
+        "greek": "Μωσέως",
+        "lemma": "Μωϋσῆς",
+        "strongs": "G3475",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009014",
+        "greek": "σώματος",
+        "lemma": "σῶμα",
+        "strongs": "G4983",
+        "rmac": "N-GSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:9",
+    "phraseIndex": 18,
+    "greek": "οὐκ ετολμησεν κρίσιν ἐπενεγκεῖν βλασφημίας ἀλλ’ εἶπεν",
+    "spanish": "no se atrevió a pronunciar juicio de blasfemia, sino que dijo:",
+    "sourceTokenIds": [
+      "n65001009015",
+      "n65001009016",
+      "n65001009017",
+      "n65001009018",
+      "n65001009019",
+      "n65001009020",
+      "n65001009021"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001009015",
+        "greek": "οὐκ",
+        "lemma": "οὐ",
+        "strongs": "G3756",
+        "rmac": "PRT-N",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009016",
+        "greek": "ετολμησεν",
+        "lemma": "τολμάω",
+        "strongs": "G5111",
+        "rmac": "V-AAI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009017",
+        "greek": "κρίσιν",
+        "lemma": "κρίσις",
+        "strongs": "G2920",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009018",
+        "greek": "ἐπενεγκεῖν",
+        "lemma": "ἐπιφέρω",
+        "strongs": "G2018",
+        "rmac": "V-2AAN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009019",
+        "greek": "βλασφημίας",
+        "lemma": "βλασφημία",
+        "strongs": "G988",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009020",
+        "greek": "ἀλλ’",
+        "lemma": "ἀλλά",
+        "strongs": "G235",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009021",
+        "greek": "εἶπεν",
+        "lemma": "λέγω",
+        "strongs": "G3004",
+        "rmac": "V-2AAI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:9",
+    "phraseIndex": 19,
+    "greek": "Ἐπιτιμήσαι σοι Κύριος",
+    "spanish": "«El Señor te reprenda».",
+    "sourceTokenIds": [
+      "n65001009022",
+      "n65001009023",
+      "n65001009024"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001009022",
+        "greek": "Ἐπιτιμήσαι",
+        "lemma": "ἐπιτιμάω",
+        "strongs": "G2008",
+        "rmac": "V-AAO-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009023",
+        "greek": "σοι",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2DS",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001009024",
+        "greek": "Κύριος",
+        "lemma": "κύριος",
+        "strongs": "G2962",
+        "rmac": "N-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:10",
+    "phraseIndex": 20,
+    "greek": "οὗτοι δὲ ὅσα μὲν οὐκ οιδασιν βλασφημοῦσιν",
+    "spanish": "Pero estos blasfeman de lo que no conocen,",
+    "sourceTokenIds": [
+      "n65001010001",
+      "n65001010002",
+      "n65001010003",
+      "n65001010004",
+      "n65001010005",
+      "n65001010006",
+      "n65001010007"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001010001",
+        "greek": "οὗτοι",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010002",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010003",
+        "greek": "ὅσα",
+        "lemma": "ὅσος",
+        "strongs": "G3745",
+        "rmac": "K-APN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010004",
+        "greek": "μὲν",
+        "lemma": "μέν",
+        "strongs": "G3303",
+        "rmac": "PRT",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010005",
+        "greek": "οὐκ",
+        "lemma": "οὐ",
+        "strongs": "G3756",
+        "rmac": "PRT-N",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010006",
+        "greek": "οιδασιν",
+        "lemma": "οἶδα",
+        "strongs": "G1492",
+        "rmac": "V-RAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010007",
+        "greek": "βλασφημοῦσιν",
+        "lemma": "βλασφημέω",
+        "strongs": "G987",
+        "rmac": "V-PAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:10",
+    "phraseIndex": 21,
+    "greek": "ὅσα δὲ φυσικῶς ὡς τὰ ἄλογα ζῶα ἐπίστανται ἐν τούτοις φθείρονται",
+    "spanish": "y en lo que por naturaleza, como animales irracionales, sí entienden, en eso se corrompen.",
+    "sourceTokenIds": [
+      "n65001010008",
+      "n65001010009",
+      "n65001010010",
+      "n65001010011",
+      "n65001010012",
+      "n65001010013",
+      "n65001010014",
+      "n65001010015",
+      "n65001010016",
+      "n65001010017",
+      "n65001010018"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001010008",
+        "greek": "ὅσα",
+        "lemma": "ὅσος",
+        "strongs": "G3745",
+        "rmac": "K-APN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010009",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010010",
+        "greek": "φυσικῶς",
+        "lemma": "φυσικῶς",
+        "strongs": "G5447",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010011",
+        "greek": "ὡς",
+        "lemma": "ὡς",
+        "strongs": "G5613",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010012",
+        "greek": "τὰ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010013",
+        "greek": "ἄλογα",
+        "lemma": "ἄλογος",
+        "strongs": "G249",
+        "rmac": "A-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010014",
+        "greek": "ζῶα",
+        "lemma": "ζῷον",
+        "strongs": "G2226",
+        "rmac": "N-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010015",
+        "greek": "ἐπίστανται",
+        "lemma": "ἐπίσταμαι",
+        "strongs": "G1987",
+        "rmac": "V-PNI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010016",
+        "greek": "ἐν",
+        "lemma": "ἐν",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010017",
+        "greek": "τούτοις",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-DPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001010018",
+        "greek": "φθείρονται",
+        "lemma": "φθείρω",
+        "strongs": "G5351",
+        "rmac": "V-PPI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:11",
+    "phraseIndex": 22,
+    "greek": "οὐαὶ αὐτοῖς ὅτι τῇ ὁδῷ τοῦ Κάϊν ἐπορεύθησαν",
+    "spanish": "¡Ay de ellos!, porque han seguido el camino de Caín,",
+    "sourceTokenIds": [
+      "n65001011001",
+      "n65001011002",
+      "n65001011003",
+      "n65001011004",
+      "n65001011005",
+      "n65001011006",
+      "n65001011007",
+      "n65001011008"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001011001",
+        "greek": "οὐαὶ",
+        "lemma": "οὐαί",
+        "strongs": "G3759",
+        "rmac": "INJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011002",
+        "greek": "αὐτοῖς",
+        "lemma": "αὐτός",
+        "strongs": "G846",
+        "rmac": "P-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011003",
+        "greek": "ὅτι",
+        "lemma": "ὅτι",
+        "strongs": "G3754",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011004",
+        "greek": "τῇ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011005",
+        "greek": "ὁδῷ",
+        "lemma": "ὁδός",
+        "strongs": "G3598",
+        "rmac": "N-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011006",
+        "greek": "τοῦ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011007",
+        "greek": "Κάϊν",
+        "lemma": "Κάϊν",
+        "strongs": "G2535",
+        "rmac": "N-PRI",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011008",
+        "greek": "ἐπορεύθησαν",
+        "lemma": "πορεύομαι",
+        "strongs": "G4198",
+        "rmac": "V-AOI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:11",
+    "phraseIndex": 23,
+    "greek": "καὶ τῇ πλάνῃ τοῦ Βαλαὰμ μισθοῦ ἐξεχύθησαν",
+    "spanish": "y por la paga se han lanzado al error de Balaam,",
+    "sourceTokenIds": [
+      "n65001011009",
+      "n65001011010",
+      "n65001011011",
+      "n65001011012",
+      "n65001011013",
+      "n65001011014",
+      "n65001011015"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001011009",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011010",
+        "greek": "τῇ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011011",
+        "greek": "πλάνῃ",
+        "lemma": "πλάνη",
+        "strongs": "G4106",
+        "rmac": "N-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011012",
+        "greek": "τοῦ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011013",
+        "greek": "Βαλαὰμ",
+        "lemma": "Βαλαάμ",
+        "strongs": "G903",
+        "rmac": "N-PRI",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011014",
+        "greek": "μισθοῦ",
+        "lemma": "μισθός",
+        "strongs": "G3408",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011015",
+        "greek": "ἐξεχύθησαν",
+        "lemma": "ἐκχέω",
+        "strongs": "G1632",
+        "rmac": "V-API-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:11",
+    "phraseIndex": 24,
+    "greek": "καὶ τῇ ἀντιλογίᾳ τοῦ Κόρε ἀπώλοντο",
+    "spanish": "y en la rebelión de Coré perecieron.",
+    "sourceTokenIds": [
+      "n65001011016",
+      "n65001011017",
+      "n65001011018",
+      "n65001011019",
+      "n65001011020",
+      "n65001011021"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001011016",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011017",
+        "greek": "τῇ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011018",
+        "greek": "ἀντιλογίᾳ",
+        "lemma": "ἀντιλογία",
+        "strongs": "G485",
+        "rmac": "N-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011019",
+        "greek": "τοῦ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011020",
+        "greek": "Κόρε",
+        "lemma": "Κόρε",
+        "strongs": "G2879",
+        "rmac": "N-PRI",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001011021",
+        "greek": "ἀπώλοντο",
+        "lemma": "ἀπόλλυμι",
+        "strongs": "G622",
+        "rmac": "V-2AMI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:12",
+    "phraseIndex": 25,
+    "greek": "οὗτοί εἰσιν ἐν ταῖς ἀγάπαις ὑμῶν σπιλάδες συνευωχούμενοι ἀφόβως ἑαυτοὺς ποιμαίνοντες",
+    "spanish": "Estos son escollos en sus ágapes, banqueteando con ustedes sin temor, apacentándose a sí mismos;",
+    "sourceTokenIds": [
+      "n65001012001",
+      "n65001012002",
+      "n65001012003",
+      "n65001012004",
+      "n65001012005",
+      "n65001012006",
+      "n65001012007",
+      "n65001012008",
+      "n65001012010",
+      "n65001012011",
+      "n65001012012"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001012001",
+        "greek": "οὗτοί",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012002",
+        "greek": "εἰσιν",
+        "lemma": "εἰμί",
+        "strongs": "G1510",
+        "rmac": "V-PAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012003",
+        "greek": "ἐν",
+        "lemma": "ἐν",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012004",
+        "greek": "ταῖς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012005",
+        "greek": "ἀγάπαις",
+        "lemma": "ἀγάπη",
+        "strongs": "G26",
+        "rmac": "N-DPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012006",
+        "greek": "ὑμῶν",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2GP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012007",
+        "greek": "σπιλάδες",
+        "lemma": "σπιλάς",
+        "strongs": "G4694",
+        "rmac": "N-NPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012008",
+        "greek": "συνευωχούμενοι",
+        "lemma": "συνευωχέομαι",
+        "strongs": "G4910",
+        "rmac": "V-PNP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012010",
+        "greek": "ἀφόβως",
+        "lemma": "ἀφόβως",
+        "strongs": "G870",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012011",
+        "greek": "ἑαυτοὺς",
+        "lemma": "ἑαυτοῦ",
+        "strongs": "G1438",
+        "rmac": "F-3APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012012",
+        "greek": "ποιμαίνοντες",
+        "lemma": "ποιμαίνω",
+        "strongs": "G4165",
+        "rmac": "V-PAP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:12",
+    "phraseIndex": 26,
+    "greek": "νεφέλαι ἄνυδροι ὑπὸ ἀνέμων περιφερόμεναι",
+    "spanish": "nubes sin agua llevadas por los vientos;",
+    "sourceTokenIds": [
+      "n65001012013",
+      "n65001012014",
+      "n65001012015",
+      "n65001012016",
+      "n65001012017"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001012013",
+        "greek": "νεφέλαι",
+        "lemma": "νεφέλη",
+        "strongs": "G3507",
+        "rmac": "N-NPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012014",
+        "greek": "ἄνυδροι",
+        "lemma": "ἄνυδρος",
+        "strongs": "G504",
+        "rmac": "A-NPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012015",
+        "greek": "ὑπὸ",
+        "lemma": "ὑπό",
+        "strongs": "G5259",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012016",
+        "greek": "ἀνέμων",
+        "lemma": "ἄνεμος",
+        "strongs": "G417",
+        "rmac": "N-GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012017",
+        "greek": "περιφερόμεναι",
+        "lemma": "παραφέρω",
+        "strongs": "G4064",
+        "rmac": "V-PPP-NPF",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:12",
+    "phraseIndex": 27,
+    "greek": "δένδρα φθινοπωρινὰ ἄκαρπα δὶς ἀποθανόντα ἐκριζωθέντα",
+    "spanish": "árboles de otoño sin fruto, dos veces muertos, desarraigados;",
+    "sourceTokenIds": [
+      "n65001012018",
+      "n65001012019",
+      "n65001012020",
+      "n65001012021",
+      "n65001012022",
+      "n65001012023"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001012018",
+        "greek": "δένδρα",
+        "lemma": "δένδρον",
+        "strongs": "G1186",
+        "rmac": "N-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012019",
+        "greek": "φθινοπωρινὰ",
+        "lemma": "φθινοπωρινός",
+        "strongs": "G5352",
+        "rmac": "A-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012020",
+        "greek": "ἄκαρπα",
+        "lemma": "ἄκαρπος",
+        "strongs": "G175",
+        "rmac": "A-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012021",
+        "greek": "δὶς",
+        "lemma": "δίς",
+        "strongs": "G1364",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012022",
+        "greek": "ἀποθανόντα",
+        "lemma": "ἀποθνῄσκω",
+        "strongs": "G599",
+        "rmac": "V-2AAP-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001012023",
+        "greek": "ἐκριζωθέντα",
+        "lemma": "ἐκριζόω",
+        "strongs": "G1610",
+        "rmac": "V-APP-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:13",
+    "phraseIndex": 28,
+    "greek": "κύματα ἄγρια θαλάσσης ἐπαφρίζοντα τὰς ἑαυτῶν αἰσχύνας",
+    "spanish": "olas bravías del mar que espuman sus propias vergüenzas;",
+    "sourceTokenIds": [
+      "n65001013001",
+      "n65001013002",
+      "n65001013003",
+      "n65001013004",
+      "n65001013005",
+      "n65001013006",
+      "n65001013007"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001013001",
+        "greek": "κύματα",
+        "lemma": "κῦμα",
+        "strongs": "G2949",
+        "rmac": "N-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013002",
+        "greek": "ἄγρια",
+        "lemma": "ἄγριος",
+        "strongs": "G66",
+        "rmac": "A-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013003",
+        "greek": "θαλάσσης",
+        "lemma": "θάλασσα",
+        "strongs": "G2281",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013004",
+        "greek": "ἐπαφρίζοντα",
+        "lemma": "ἐπαφρίζω",
+        "strongs": "G1890",
+        "rmac": "V-PAP-NPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013005",
+        "greek": "τὰς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-APF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013006",
+        "greek": "ἑαυτῶν",
+        "lemma": "ἑαυτοῦ",
+        "strongs": "G1438",
+        "rmac": "F-3GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013007",
+        "greek": "αἰσχύνας",
+        "lemma": "αἰσχύνη",
+        "strongs": "G152",
+        "rmac": "N-APF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:13",
+    "phraseIndex": 29,
+    "greek": "ἀστέρες πλανῆται οἷς ο ζόφος τοῦ σκότους εἰς αἰῶνα τετήρηται",
+    "spanish": "estrellas errantes, para las cuales la oscuridad de las tinieblas está reservada para siempre.",
+    "sourceTokenIds": [
+      "n65001013008",
+      "n65001013009",
+      "n65001013010",
+      "n65001013011",
+      "n65001013012",
+      "n65001013013",
+      "n65001013014",
+      "n65001013015",
+      "n65001013017",
+      "n65001013018"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001013008",
+        "greek": "ἀστέρες",
+        "lemma": "ἀστήρ",
+        "strongs": "G792",
+        "rmac": "N-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013009",
+        "greek": "πλανῆται",
+        "lemma": "πλανήτης",
+        "strongs": "G4107",
+        "rmac": "N-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013010",
+        "greek": "οἷς",
+        "lemma": "ὅς",
+        "strongs": "G3739",
+        "rmac": "R-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013011",
+        "greek": "ο",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013012",
+        "greek": "ζόφος",
+        "lemma": "ζόφος",
+        "strongs": "G2217",
+        "rmac": "N-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013013",
+        "greek": "τοῦ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013014",
+        "greek": "σκότους",
+        "lemma": "σκότος",
+        "strongs": "G4655",
+        "rmac": "N-GSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013015",
+        "greek": "εἰς",
+        "lemma": "εἰς",
+        "strongs": "G1519",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013017",
+        "greek": "αἰῶνα",
+        "lemma": "αἰών",
+        "strongs": "G165",
+        "rmac": "N-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001013018",
+        "greek": "τετήρηται",
+        "lemma": "τηρέω",
+        "strongs": "G5083",
+        "rmac": "V-RPI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:14",
+    "phraseIndex": 30,
+    "greek": "προεφητευσεν δὲ καὶ τούτοις ἕβδομος ἀπὸ Ἀδὰμ Ἑνὼχ λέγων",
+    "spanish": "De estos también profetizó Enoc, el séptimo desde Adán, diciendo:",
+    "sourceTokenIds": [
+      "n65001014001",
+      "n65001014002",
+      "n65001014003",
+      "n65001014004",
+      "n65001014005",
+      "n65001014006",
+      "n65001014007",
+      "n65001014008",
+      "n65001014009"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001014001",
+        "greek": "προεφητευσεν",
+        "lemma": "προφητεύω",
+        "strongs": "G4395",
+        "rmac": "V-AAI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014002",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014003",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014004",
+        "greek": "τούτοις",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-DPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014005",
+        "greek": "ἕβδομος",
+        "lemma": "ἕβδομος",
+        "strongs": "G1442",
+        "rmac": "A-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014006",
+        "greek": "ἀπὸ",
+        "lemma": "ἀπό",
+        "strongs": "G575",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014007",
+        "greek": "Ἀδὰμ",
+        "lemma": "Ἀδάμ",
+        "strongs": "G76",
+        "rmac": "N-PRI",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014008",
+        "greek": "Ἑνὼχ",
+        "lemma": "Ἑνώχ",
+        "strongs": "G1802",
+        "rmac": "N-PRI",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014009",
+        "greek": "λέγων",
+        "lemma": "λέγω",
+        "strongs": "G3004",
+        "rmac": "V-PAP-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:14",
+    "phraseIndex": 31,
+    "greek": "Ἰδοὺ ηλθεν Κύριος ἐν μυριάσιν αὐτοῦ",
+    "spanish": "«He aquí, el Señor vino con sus santas miríadas,",
+    "sourceTokenIds": [
+      "n65001014010",
+      "n65001014011",
+      "n65001014012",
+      "n65001014013",
+      "n65001014014",
+      "n65001014016"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001014010",
+        "greek": "Ἰδοὺ",
+        "lemma": "ἰδού",
+        "strongs": "G3708",
+        "rmac": "V-2AMM-2S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014011",
+        "greek": "ηλθεν",
+        "lemma": "ἔρχομαι",
+        "strongs": "G2064",
+        "rmac": "V-2AAI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014012",
+        "greek": "Κύριος",
+        "lemma": "κύριος",
+        "strongs": "G2962",
+        "rmac": "N-NSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014013",
+        "greek": "ἐν",
+        "lemma": "ἐν",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014014",
+        "greek": "μυριάσιν",
+        "lemma": "μυριάς",
+        "strongs": "G3461",
+        "rmac": "N-DPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001014016",
+        "greek": "αὐτοῦ",
+        "lemma": "αὐτός",
+        "strongs": "G846",
+        "rmac": "P-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:15",
+    "phraseIndex": 32,
+    "greek": "ποιῆσαι κρίσιν κατὰ πάντων καὶ ἐξἐλέγξαι πάντας τοὺς ἀσεβεῖς",
+    "spanish": "para hacer juicio contra todos y convencer a todos los impíos",
+    "sourceTokenIds": [
+      "n65001015001",
+      "n65001015002",
+      "n65001015003",
+      "n65001015004",
+      "n65001015005",
+      "n65001015006",
+      "n65001015007",
+      "n65001015008",
+      "n65001015009"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001015001",
+        "greek": "ποιῆσαι",
+        "lemma": "ποιέω",
+        "strongs": "G4160",
+        "rmac": "V-AAN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015002",
+        "greek": "κρίσιν",
+        "lemma": "κρίσις",
+        "strongs": "G2920",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015003",
+        "greek": "κατὰ",
+        "lemma": "κατά",
+        "strongs": "G2596",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015004",
+        "greek": "πάντων",
+        "lemma": "πᾶς",
+        "strongs": "G3956",
+        "rmac": "A-GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015005",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015006",
+        "greek": "ἐξἐλέγξαι",
+        "lemma": "ἐλέγχω",
+        "strongs": "G1827",
+        "rmac": "V-AAN",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015007",
+        "greek": "πάντας",
+        "lemma": "πᾶς",
+        "strongs": "G3956",
+        "rmac": "A-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015008",
+        "greek": "τοὺς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015009",
+        "greek": "ἀσεβεῖς",
+        "lemma": "ἀσεβής",
+        "strongs": "G765",
+        "rmac": "A-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:15",
+    "phraseIndex": 33,
+    "greek": "περὶ πάντων τῶν ἔργων ἀσεβείας αὐτῶν ὧν ἠσέβησαν",
+    "spanish": "acerca de todas las obras de impiedad que hicieron,",
+    "sourceTokenIds": [
+      "n65001015011",
+      "n65001015012",
+      "n65001015013",
+      "n65001015014",
+      "n65001015015",
+      "n65001015016",
+      "n65001015017",
+      "n65001015018"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001015011",
+        "greek": "περὶ",
+        "lemma": "περί",
+        "strongs": "G4012",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015012",
+        "greek": "πάντων",
+        "lemma": "πᾶς",
+        "strongs": "G3956",
+        "rmac": "A-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015013",
+        "greek": "τῶν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015014",
+        "greek": "ἔργων",
+        "lemma": "ἔργον",
+        "strongs": "G2041",
+        "rmac": "N-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015015",
+        "greek": "ἀσεβείας",
+        "lemma": "ἀσέβεια",
+        "strongs": "G763",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015016",
+        "greek": "αὐτῶν",
+        "lemma": "αὐτός",
+        "strongs": "G846",
+        "rmac": "P-GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015017",
+        "greek": "ὧν",
+        "lemma": "ὅς",
+        "strongs": "G3739",
+        "rmac": "R-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015018",
+        "greek": "ἠσέβησαν",
+        "lemma": "ἀσεβέω",
+        "strongs": "G764",
+        "rmac": "V-AAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:15",
+    "phraseIndex": 34,
+    "greek": "καὶ περὶ πάντων τῶν σκληρῶν ὧν ἐλάλησαν κατ’ αὐτοῦ ἁμαρτωλοὶ ἀσεβεῖς",
+    "spanish": "y acerca de todas las cosas duras que los pecadores impíos hablaron contra él».",
+    "sourceTokenIds": [
+      "n65001015019",
+      "n65001015020",
+      "n65001015021",
+      "n65001015022",
+      "n65001015023",
+      "n65001015024",
+      "n65001015025",
+      "n65001015026",
+      "n65001015027",
+      "n65001015028",
+      "n65001015029"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001015019",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015020",
+        "greek": "περὶ",
+        "lemma": "περί",
+        "strongs": "G4012",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015021",
+        "greek": "πάντων",
+        "lemma": "πᾶς",
+        "strongs": "G3956",
+        "rmac": "A-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015022",
+        "greek": "τῶν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015023",
+        "greek": "σκληρῶν",
+        "lemma": "σκληρός",
+        "strongs": "G4642",
+        "rmac": "A-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015024",
+        "greek": "ὧν",
+        "lemma": "ὅς",
+        "strongs": "G3739",
+        "rmac": "R-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015025",
+        "greek": "ἐλάλησαν",
+        "lemma": "λαλέω",
+        "strongs": "G2980",
+        "rmac": "V-AAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015026",
+        "greek": "κατ’",
+        "lemma": "κατά",
+        "strongs": "G2596",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015027",
+        "greek": "αὐτοῦ",
+        "lemma": "αὐτός",
+        "strongs": "G846",
+        "rmac": "P-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015028",
+        "greek": "ἁμαρτωλοὶ",
+        "lemma": "ἁμαρτωλός",
+        "strongs": "G268",
+        "rmac": "A-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001015029",
+        "greek": "ἀσεβεῖς",
+        "lemma": "ἀσεβής",
+        "strongs": "G765",
+        "rmac": "A-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:16",
+    "phraseIndex": 35,
+    "greek": "οὗτοί εισιν γογγυσταί μεμψίμοιροι κατὰ τὰς ἐπιθυμίας αὐτῶν πορευόμενοι",
+    "spanish": "Estos son murmuradores, quejumbrosos, que andan según sus deseos,",
+    "sourceTokenIds": [
+      "n65001016001",
+      "n65001016002",
+      "n65001016003",
+      "n65001016004",
+      "n65001016005",
+      "n65001016006",
+      "n65001016007",
+      "n65001016008",
+      "n65001016009"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001016001",
+        "greek": "οὗτοί",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016002",
+        "greek": "εισιν",
+        "lemma": "εἰμί",
+        "strongs": "G1510",
+        "rmac": "V-PAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016003",
+        "greek": "γογγυσταί",
+        "lemma": "γογγυστής",
+        "strongs": "G1113",
+        "rmac": "N-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016004",
+        "greek": "μεμψίμοιροι",
+        "lemma": "μεμψίμοιρος",
+        "strongs": "G3202",
+        "rmac": "A-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016005",
+        "greek": "κατὰ",
+        "lemma": "κατά",
+        "strongs": "G2596",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016006",
+        "greek": "τὰς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-APF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016007",
+        "greek": "ἐπιθυμίας",
+        "lemma": "ἐπιθυμία",
+        "strongs": "G1939",
+        "rmac": "N-APF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016008",
+        "greek": "αὐτῶν",
+        "lemma": "αὐτός",
+        "strongs": "G846",
+        "rmac": "P-GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016009",
+        "greek": "πορευόμενοι",
+        "lemma": "πορεύομαι",
+        "strongs": "G4198",
+        "rmac": "V-PNP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:16",
+    "phraseIndex": 36,
+    "greek": "καὶ τὸ στόμα αὐτῶν λαλεῖ ὑπέρογκα θαυμάζοντες πρόσωπα ὠφελείας χάριν",
+    "spanish": "y su boca habla cosas arrogantes, admirando personas por causa del provecho.",
+    "sourceTokenIds": [
+      "n65001016010",
+      "n65001016011",
+      "n65001016012",
+      "n65001016013",
+      "n65001016014",
+      "n65001016015",
+      "n65001016016",
+      "n65001016017",
+      "n65001016018",
+      "n65001016019"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001016010",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016011",
+        "greek": "τὸ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-NSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016012",
+        "greek": "στόμα",
+        "lemma": "στόμα",
+        "strongs": "G4750",
+        "rmac": "N-NSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016013",
+        "greek": "αὐτῶν",
+        "lemma": "αὐτός",
+        "strongs": "G846",
+        "rmac": "P-GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016014",
+        "greek": "λαλεῖ",
+        "lemma": "λαλέω",
+        "strongs": "G2980",
+        "rmac": "V-PAI-3S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016015",
+        "greek": "ὑπέρογκα",
+        "lemma": "ὑπέρογκος",
+        "strongs": "G5246",
+        "rmac": "A-APN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016016",
+        "greek": "θαυμάζοντες",
+        "lemma": "θαυμάζω",
+        "strongs": "G2296",
+        "rmac": "V-PAP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016017",
+        "greek": "πρόσωπα",
+        "lemma": "πρόσωπον",
+        "strongs": "G4383",
+        "rmac": "N-APN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016018",
+        "greek": "ὠφελείας",
+        "lemma": "ὠφέλεια",
+        "strongs": "G5622",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001016019",
+        "greek": "χάριν",
+        "lemma": "χάριν",
+        "strongs": "G5484",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:17",
+    "phraseIndex": 37,
+    "greek": "Ὑμεῖς δέ ἀγαπητοί μνήσθητε τῶν ῥημάτων τῶν προειρημένων ὑπὸ τῶν ἀποστόλων τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ",
+    "spanish": "Pero ustedes, amados, acuérdense de las palabras predichas por los apóstoles de nuestro Señor Jesús Cristo,",
+    "sourceTokenIds": [
+      "n65001017001",
+      "n65001017002",
+      "n65001017003",
+      "n65001017004",
+      "n65001017005",
+      "n65001017006",
+      "n65001017007",
+      "n65001017008",
+      "n65001017009",
+      "n65001017010",
+      "n65001017011",
+      "n65001017012",
+      "n65001017013",
+      "n65001017014",
+      "n65001017015",
+      "n65001017016"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001017001",
+        "greek": "Ὑμεῖς",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2NP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017002",
+        "greek": "δέ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017003",
+        "greek": "ἀγαπητοί",
+        "lemma": "ἀγαπητός",
+        "strongs": "G27",
+        "rmac": "A-VPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017004",
+        "greek": "μνήσθητε",
+        "lemma": "μιμνῄσκομαι",
+        "strongs": "G3403",
+        "rmac": "V-APM-2P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017005",
+        "greek": "τῶν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017006",
+        "greek": "ῥημάτων",
+        "lemma": "ῥῆμα",
+        "strongs": "G4487",
+        "rmac": "N-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017007",
+        "greek": "τῶν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017008",
+        "greek": "προειρημένων",
+        "lemma": "προλέγω",
+        "strongs": "G4302",
+        "rmac": "V-RPP-GPN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017009",
+        "greek": "ὑπὸ",
+        "lemma": "ὑπό",
+        "strongs": "G5259",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017010",
+        "greek": "τῶν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017011",
+        "greek": "ἀποστόλων",
+        "lemma": "ἀπόστολος",
+        "strongs": "G652",
+        "rmac": "N-GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017012",
+        "greek": "τοῦ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017013",
+        "greek": "Κυρίου",
+        "lemma": "κύριος",
+        "strongs": "G2962",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017014",
+        "greek": "ἡμῶν",
+        "lemma": "ἐγώ",
+        "strongs": "G1473",
+        "rmac": "P-1GP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017015",
+        "greek": "Ἰησοῦ",
+        "lemma": "Ἰησοῦς",
+        "strongs": "G2424",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001017016",
+        "greek": "Χριστοῦ",
+        "lemma": "Χριστός",
+        "strongs": "G5547",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:18",
+    "phraseIndex": 38,
+    "greek": "ὅτι ἔλεγον ὑμῖν ὅτι ἐν ἐσχάτῳ ἔσονται ἐμπαῖκται κατὰ τὰς ἑαυτῶν ἐπιθυμίας πορευόμενοι τῶν ἀσεβειῶν",
+    "spanish": "que les decían: «En el último tiempo habrá burladores que andarán según sus propios deseos de impiedades».",
+    "sourceTokenIds": [
+      "n65001018001",
+      "n65001018002",
+      "n65001018003",
+      "n65001018004",
+      "n65001018005",
+      "n65001018006",
+      "n65001018008",
+      "n65001018009",
+      "n65001018010",
+      "n65001018011",
+      "n65001018012",
+      "n65001018013",
+      "n65001018014",
+      "n65001018015",
+      "n65001018016"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001018001",
+        "greek": "ὅτι",
+        "lemma": "ὅτι",
+        "strongs": "G3754",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018002",
+        "greek": "ἔλεγον",
+        "lemma": "λέγω",
+        "strongs": "G3004",
+        "rmac": "V-IAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018003",
+        "greek": "ὑμῖν",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2DP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018004",
+        "greek": "ὅτι",
+        "lemma": "ἐπί",
+        "strongs": "G3754",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018005",
+        "greek": "ἐν",
+        "lemma": "ἔσχατος",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018006",
+        "greek": "ἐσχάτῳ",
+        "lemma": "χρόνος",
+        "strongs": "G2078",
+        "rmac": "A-DSM-S",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018008",
+        "greek": "ἔσονται",
+        "lemma": "εἰμί",
+        "strongs": "G1510",
+        "rmac": "V-FDI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018009",
+        "greek": "ἐμπαῖκται",
+        "lemma": "ἐμπαίκτης",
+        "strongs": "G1703",
+        "rmac": "N-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018010",
+        "greek": "κατὰ",
+        "lemma": "κατά",
+        "strongs": "G2596",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018011",
+        "greek": "τὰς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-APF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018012",
+        "greek": "ἑαυτῶν",
+        "lemma": "ἑαυτοῦ",
+        "strongs": "G1438",
+        "rmac": "F-3GPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018013",
+        "greek": "ἐπιθυμίας",
+        "lemma": "ἐπιθυμία",
+        "strongs": "G1939",
+        "rmac": "N-APF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018014",
+        "greek": "πορευόμενοι",
+        "lemma": "πορεύομαι",
+        "strongs": "G4198",
+        "rmac": "V-PNP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018015",
+        "greek": "τῶν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001018016",
+        "greek": "ἀσεβειῶν",
+        "lemma": "ἀσέβεια",
+        "strongs": "G763",
+        "rmac": "N-GPF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:19",
+    "phraseIndex": 39,
+    "greek": "οὗτοί εἰσιν οἱ ἀποδιορίζοντες ψυχικοί Πνεῦμα μὴ ἔχοντες",
+    "spanish": "Estos son los que causan divisiones, sensuales, que no tienen el Espíritu.",
+    "sourceTokenIds": [
+      "n65001019001",
+      "n65001019002",
+      "n65001019003",
+      "n65001019004",
+      "n65001019006",
+      "n65001019007",
+      "n65001019008",
+      "n65001019009"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001019001",
+        "greek": "οὗτοί",
+        "lemma": "οὗτος",
+        "strongs": "G3778",
+        "rmac": "D-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001019002",
+        "greek": "εἰσιν",
+        "lemma": "εἰμί",
+        "strongs": "G1510",
+        "rmac": "V-PAI-3P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001019003",
+        "greek": "οἱ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001019004",
+        "greek": "ἀποδιορίζοντες",
+        "lemma": "ἀποδιορίζω",
+        "strongs": "G592",
+        "rmac": "V-PAP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001019006",
+        "greek": "ψυχικοί",
+        "lemma": "ψυχικός",
+        "strongs": "G5591",
+        "rmac": "A-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001019007",
+        "greek": "Πνεῦμα",
+        "lemma": "πνεῦμα",
+        "strongs": "G4151",
+        "rmac": "N-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001019008",
+        "greek": "μὴ",
+        "lemma": "μή",
+        "strongs": "G3361",
+        "rmac": "PRT-N",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001019009",
+        "greek": "ἔχοντες",
+        "lemma": "ἔχω",
+        "strongs": "G2192",
+        "rmac": "V-PAP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:20",
+    "phraseIndex": 40,
+    "greek": "ὑμεῖς δέ ἀγαπητοί τῇ ἁγιωτάτῃ ὑμῶν πίστει",
+    "spanish": "Pero ustedes, amados, edificándose sobre su santísima fe,",
+    "sourceTokenIds": [
+      "n65001020001",
+      "n65001020002",
+      "n65001020003",
+      "n65001020004",
+      "n65001020005",
+      "n65001020006",
+      "n65001020007"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001020001",
+        "greek": "ὑμεῖς",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2NP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020002",
+        "greek": "δέ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020003",
+        "greek": "ἀγαπητοί",
+        "lemma": "ἀγαπητός",
+        "strongs": "G27",
+        "rmac": "A-VPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020004",
+        "greek": "τῇ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020005",
+        "greek": "ἁγιωτάτῃ",
+        "lemma": "ἅγιος",
+        "strongs": "G40",
+        "rmac": "A-DSF-S",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020006",
+        "greek": "ὑμῶν",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2GP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020007",
+        "greek": "πίστει",
+        "lemma": "πίστις",
+        "strongs": "G4102",
+        "rmac": "N-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:20",
+    "phraseIndex": 41,
+    "greek": "ἐν Πνεύματι Ἁγίω προσευχόμενοι",
+    "spanish": "orando en el Espíritu Santo,",
+    "sourceTokenIds": [
+      "n65001020010",
+      "n65001020011",
+      "n65001020012",
+      "n65001020013"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001020010",
+        "greek": "ἐν",
+        "lemma": "ἐν",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020011",
+        "greek": "Πνεύματι",
+        "lemma": "πνεῦμα",
+        "strongs": "G4151",
+        "rmac": "N-DSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020012",
+        "greek": "Ἁγίω",
+        "lemma": "ἅγιος",
+        "strongs": "G40",
+        "rmac": "A-DSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001020013",
+        "greek": "προσευχόμενοι",
+        "lemma": "προσεύχομαι",
+        "strongs": "G4336",
+        "rmac": "V-PNP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:21",
+    "phraseIndex": 42,
+    "greek": "ἑαυτοὺς ἐν ἀγάπῃ Θεοῦ τηρήσατε",
+    "spanish": "guárdense en el amor de Dios,",
+    "sourceTokenIds": [
+      "n65001021001",
+      "n65001021002",
+      "n65001021003",
+      "n65001021004",
+      "n65001021005"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001021001",
+        "greek": "ἑαυτοὺς",
+        "lemma": "ἑαυτοῦ",
+        "strongs": "G1438",
+        "rmac": "F-2APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021002",
+        "greek": "ἐν",
+        "lemma": "ἐν",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021003",
+        "greek": "ἀγάπῃ",
+        "lemma": "ἀγάπη",
+        "strongs": "G26",
+        "rmac": "N-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021004",
+        "greek": "Θεοῦ",
+        "lemma": "θεός",
+        "strongs": "G2316",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021005",
+        "greek": "τηρήσατε",
+        "lemma": "τηρέω",
+        "strongs": "G5083",
+        "rmac": "V-AAM-2P",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:21",
+    "phraseIndex": 43,
+    "greek": "προσδεχόμενοι τὸ ἔλεος τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ εἰς ζωὴν αἰώνιον",
+    "spanish": "esperando la misericordia de nuestro Señor Jesús Cristo para vida eterna.",
+    "sourceTokenIds": [
+      "n65001021006",
+      "n65001021007",
+      "n65001021008",
+      "n65001021009",
+      "n65001021010",
+      "n65001021011",
+      "n65001021012",
+      "n65001021013",
+      "n65001021014",
+      "n65001021015",
+      "n65001021016"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001021006",
+        "greek": "προσδεχόμενοι",
+        "lemma": "προσδέχομαι",
+        "strongs": "G4327",
+        "rmac": "V-PNP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021007",
+        "greek": "τὸ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021008",
+        "greek": "ἔλεος",
+        "lemma": "ἔλεος",
+        "strongs": "G1656",
+        "rmac": "N-ASN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021009",
+        "greek": "τοῦ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021010",
+        "greek": "Κυρίου",
+        "lemma": "κύριος",
+        "strongs": "G2962",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021011",
+        "greek": "ἡμῶν",
+        "lemma": "ἐγώ",
+        "strongs": "G1473",
+        "rmac": "P-1GP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021012",
+        "greek": "Ἰησοῦ",
+        "lemma": "Ἰησοῦς",
+        "strongs": "G2424",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021013",
+        "greek": "Χριστοῦ",
+        "lemma": "Χριστός",
+        "strongs": "G5547",
+        "rmac": "N-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021014",
+        "greek": "εἰς",
+        "lemma": "εἰς",
+        "strongs": "G1519",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021015",
+        "greek": "ζωὴν",
+        "lemma": "ζωή",
+        "strongs": "G2222",
+        "rmac": "N-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001021016",
+        "greek": "αἰώνιον",
+        "lemma": "αἰώνιος",
+        "strongs": "G166",
+        "rmac": "A-ASF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:22",
+    "phraseIndex": 44,
+    "greek": "καὶ οὓς μὲν ἐλεεῖτε διακρινομένοι",
+    "spanish": "Y a los que dudan, tengan misericordia;",
+    "sourceTokenIds": [
+      "n65001022001",
+      "n65001022002",
+      "n65001022003",
+      "n65001022004",
+      "n65001022005"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001022001",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001022002",
+        "greek": "οὓς",
+        "lemma": "ὅς",
+        "strongs": "G3739",
+        "rmac": "R-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001022003",
+        "greek": "μὲν",
+        "lemma": "μέν",
+        "strongs": "G3303",
+        "rmac": "PRT",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001022004",
+        "greek": "ἐλεεῖτε",
+        "lemma": "ἐλεάω",
+        "strongs": "G1653",
+        "rmac": "V-PAM-2P",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001022005",
+        "greek": "διακρινομένοι",
+        "lemma": "διακρίνω",
+        "strongs": "G1252",
+        "rmac": "V-PMP-NPM",
+        "morphology": "",
+        "align": "substitute",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:23",
+    "phraseIndex": 45,
+    "greek": "οὓς δὲ",
+    "spanish": "a otros sálvenlos arrebatándolos del fuego;",
+    "sourceTokenIds": [
+      "n65001023001",
+      "n65001023002"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001023001",
+        "greek": "οὓς",
+        "lemma": "ὅς",
+        "strongs": "G3739",
+        "rmac": "R-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023002",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:23",
+    "phraseIndex": 46,
+    "greek": "ἐν φόβῳ μισοῦντες καὶ τὸν ἀπὸ τῆς σαρκὸς ἐσπιλωμένον χιτῶνα",
+    "spanish": "y a otros tengan misericordia con temor, aborreciendo aun la ropa contaminada por la carne.",
+    "sourceTokenIds": [
+      "n65001023003",
+      "n65001023004",
+      "n65001023010",
+      "n65001023011",
+      "n65001023012",
+      "n65001023013",
+      "n65001023014",
+      "n65001023015",
+      "n65001023016",
+      "n65001023017"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001023003",
+        "greek": "ἐν",
+        "lemma": "ἐν",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023004",
+        "greek": "φόβῳ",
+        "lemma": "φόβος",
+        "strongs": "G5401",
+        "rmac": "N-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023010",
+        "greek": "μισοῦντες",
+        "lemma": "μισέω",
+        "strongs": "G3404",
+        "rmac": "V-PAP-NPM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023011",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023012",
+        "greek": "τὸν",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023013",
+        "greek": "ἀπὸ",
+        "lemma": "ἀπό",
+        "strongs": "G575",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023014",
+        "greek": "τῆς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023015",
+        "greek": "σαρκὸς",
+        "lemma": "σάρξ",
+        "strongs": "G4561",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023016",
+        "greek": "ἐσπιλωμένον",
+        "lemma": "σπιλόω",
+        "strongs": "G4695",
+        "rmac": "V-RPP-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001023017",
+        "greek": "χιτῶνα",
+        "lemma": "χιτών",
+        "strongs": "G5509",
+        "rmac": "N-ASM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:24",
+    "phraseIndex": 47,
+    "greek": "Τῷ δὲ δυναμένῳ φυλάξαι ὑμᾶς ἀπταίστους καὶ στῆσαι κατενώπιον τῆς δόξης αὐτοῦ ἀμώμους ἐν ἀγαλλιάσει",
+    "spanish": "Y al que es poderoso para guardarlos sin tropiezo y presentarlos delante de su gloria sin tacha con gran alegría,",
+    "sourceTokenIds": [
+      "n65001024001",
+      "n65001024002",
+      "n65001024003",
+      "n65001024004",
+      "n65001024005",
+      "n65001024006",
+      "n65001024007",
+      "n65001024008",
+      "n65001024009",
+      "n65001024010",
+      "n65001024011",
+      "n65001024012",
+      "n65001024013",
+      "n65001024014",
+      "n65001024015"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001024001",
+        "greek": "Τῷ",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024002",
+        "greek": "δὲ",
+        "lemma": "δέ",
+        "strongs": "G1161",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024003",
+        "greek": "δυναμένῳ",
+        "lemma": "δύναμαι",
+        "strongs": "G1410",
+        "rmac": "V-PNP-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024004",
+        "greek": "φυλάξαι",
+        "lemma": "φυλάσσω",
+        "strongs": "G5442",
+        "rmac": "V-AAN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024005",
+        "greek": "ὑμᾶς",
+        "lemma": "σύ",
+        "strongs": "G4771",
+        "rmac": "P-2AP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024006",
+        "greek": "ἀπταίστους",
+        "lemma": "ἄπταιστος",
+        "strongs": "G679",
+        "rmac": "A-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024007",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024008",
+        "greek": "στῆσαι",
+        "lemma": "ἵστημι",
+        "strongs": "G2476",
+        "rmac": "V-AAN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024009",
+        "greek": "κατενώπιον",
+        "lemma": "κατενώπιον",
+        "strongs": "G2714",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024010",
+        "greek": "τῆς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024011",
+        "greek": "δόξης",
+        "lemma": "δόξα",
+        "strongs": "G1391",
+        "rmac": "N-GSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024012",
+        "greek": "αὐτοῦ",
+        "lemma": "αὐτός",
+        "strongs": "G846",
+        "rmac": "P-GSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024013",
+        "greek": "ἀμώμους",
+        "lemma": "ἄμωμος",
+        "strongs": "G299",
+        "rmac": "A-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024014",
+        "greek": "ἐν",
+        "lemma": "ἐν",
+        "strongs": "G1722",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001024015",
+        "greek": "ἀγαλλιάσει",
+        "lemma": "ἀγαλλίασις",
+        "strongs": "G20",
+        "rmac": "N-DSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:25",
+    "phraseIndex": 48,
+    "greek": "μόνῳ Θεῷ σωτῆρι ἡμῶν",
+    "spanish": "al único Dios, nuestro Salvador, por medio de Jesús Cristo nuestro Señor,",
+    "sourceTokenIds": [
+      "n65001025001",
+      "n65001025003",
+      "n65001025004",
+      "n65001025005"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001025001",
+        "greek": "μόνῳ",
+        "lemma": "μόνος",
+        "strongs": "G3441",
+        "rmac": "A-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025003",
+        "greek": "Θεῷ",
+        "lemma": "θεός",
+        "strongs": "G2316",
+        "rmac": "N-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025004",
+        "greek": "σωτῆρι",
+        "lemma": "σωτήρ",
+        "strongs": "G4990",
+        "rmac": "N-DSM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025005",
+        "greek": "ἡμῶν",
+        "lemma": "ἐγώ",
+        "strongs": "G1473",
+        "rmac": "P-1GP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:25",
+    "phraseIndex": 49,
+    "greek": "δόξα μεγαλωσύνη κράτος καὶ ἐξουσία καὶ νῦν καὶ εἰς πάντας τοὺς αἰῶνας",
+    "spanish": "sea gloria, majestad, dominio y autoridad, antes de todo el siglo, y ahora, y por todos los siglos.",
+    "sourceTokenIds": [
+      "n65001025006",
+      "n65001025008",
+      "n65001025009",
+      "n65001025010",
+      "n65001025011",
+      "n65001025012",
+      "n65001025013",
+      "n65001025014",
+      "n65001025015",
+      "n65001025016",
+      "n65001025017",
+      "n65001025018"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001025006",
+        "greek": "δόξα",
+        "lemma": "δόξα",
+        "strongs": "G1391",
+        "rmac": "N-NSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025008",
+        "greek": "μεγαλωσύνη",
+        "lemma": "μεγαλωσύνη",
+        "strongs": "G3172",
+        "rmac": "N-NSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025009",
+        "greek": "κράτος",
+        "lemma": "κράτος",
+        "strongs": "G2904",
+        "rmac": "N-NSN",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025010",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025011",
+        "greek": "ἐξουσία",
+        "lemma": "ἐξουσία",
+        "strongs": "G1849",
+        "rmac": "N-NSF",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025012",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025013",
+        "greek": "νῦν",
+        "lemma": "νῦν",
+        "strongs": "G3568",
+        "rmac": "ADV",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025014",
+        "greek": "καὶ",
+        "lemma": "καί",
+        "strongs": "G2532",
+        "rmac": "CONJ",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025015",
+        "greek": "εἰς",
+        "lemma": "εἰς",
+        "strongs": "G1519",
+        "rmac": "PREP",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025016",
+        "greek": "πάντας",
+        "lemma": "πᾶς",
+        "strongs": "G3956",
+        "rmac": "A-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025017",
+        "greek": "τοὺς",
+        "lemma": "ὁ",
+        "strongs": "G3588",
+        "rmac": "T-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      },
+      {
+        "sourceTokenId": "n65001025018",
+        "greek": "αἰῶνας",
+        "lemma": "αἰών",
+        "strongs": "G165",
+        "rmac": "N-APM",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "partial",
+    "textualBasis": "Scrivener 1894 TR"
+  },
+  {
+    "reference": "Jude 1:25",
+    "phraseIndex": 50,
+    "greek": "ἀμήν",
+    "spanish": "Amén.",
+    "sourceTokenIds": [
+      "n65001025019"
+    ],
+    "tokenRows": [
+      {
+        "sourceTokenId": "n65001025019",
+        "greek": "ἀμήν",
+        "lemma": "ἀμήν",
+        "strongs": "G281",
+        "rmac": "HEB",
+        "morphology": "",
+        "align": "match",
+        "ble": "",
+        "rv1909": ""
+      }
+    ],
+    "rv1909Text": "",
+    "bleText": "",
+    "suggestionSource": "lbf-preliminary",
+    "approval": {
+      "status": "preliminary",
+      "approvedAt": "",
+      "approvedBy": "lbf-rebuild"
+    },
+    "gates": null,
+    "aiProposal": null,
+    "trAlignStatus": "mapped",
+    "textualBasis": "Scrivener 1894 TR"
+  }
+]

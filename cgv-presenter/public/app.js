@@ -27,7 +27,7 @@ let audienceQrVisible = false;
 let appLanguage = "es";
 let participant = null;
 let activeQuizKey = null;
-let popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
+let popupState = { reference: null, scrollRatio: 0, verseIndex: 0, verseCount: 0 };
 let completedQuizIds = new Set();
 
 const storedParticipantId = localStorage.getItem("rootsParticipantId")
@@ -49,7 +49,7 @@ socket.on("state", data => {
   step = data.step || 0;
   quizState = data.quizState || { active: false, quizId: null, quiz: null, counts: {} };
   controllerState = data.controllerState || { active: false, title: "", sections: [], step: 0 };
-  popupState = data.popupState || { reference: null, scrollRatio: 0, verseIndex: 0 };
+  popupState = data.popupState || { reference: null, scrollRatio: 0, verseIndex: 0, verseCount: 0 };
   audienceQrVisible = !!data.audienceQrVisible;
 
   const nextQuizKey = quizState.active ? quizState.quizId : null;
@@ -91,7 +91,8 @@ socket.on("popup-scroll", data => {
   popupState = {
     reference: data.reference ?? popupState.reference,
     scrollRatio: typeof data.scrollRatio === "number" ? data.scrollRatio : popupState.scrollRatio,
-    verseIndex: Number.isInteger(data.verseIndex) ? data.verseIndex : popupState.verseIndex
+    verseIndex: Number.isInteger(Number(data.verseIndex)) ? Number(data.verseIndex) : popupState.verseIndex,
+    verseCount: Number.isInteger(Number(data.verseCount)) ? Number(data.verseCount) : popupState.verseCount
   };
   applySharedPopupState();
 });
@@ -130,13 +131,16 @@ function render() {
 
   if (isPresenter) {
     const currentEl = document.getElementById("current");
-    currentEl.innerHTML = html;
+    currentEl.innerHTML = extractEditorialFolio(currentEl, html);
 
     const nextSlide = normalizeRenderedSlide(renderedSlides[slide + 1]);
     const nextEl = document.getElementById("next");
-    nextEl.innerHTML = nextSlide.lines.length
+    const nextHtml = nextSlide.lines.length
       ? renderEntries([...nextSlide.sticky, ...nextSlide.lines])
       : `<em>${t("noNextSlide")}</em>`;
+    nextEl.innerHTML = nextSlide.lines.length
+      ? extractEditorialFolio(nextEl, nextHtml)
+      : nextHtml;
 
     renderPresenterQuiz();
     renderSessionStatus();
@@ -164,7 +168,7 @@ function render() {
 
     projectorSlide.classList.remove("song-output", "blank-output", "song-has-media", "song-has-video", "title-slide");
     projectorSlide.removeAttribute("style");
-    projectorSlide.innerHTML = html;
+    projectorSlide.innerHTML = extractEditorialFolio(projectorSlide, html);
     applySlideLayoutClass(projectorSlide);
     if (!isTablet) {
       renderProjectorQuiz();
@@ -177,7 +181,7 @@ function render() {
 
   if (isAudience) {
     const audienceSlide = document.getElementById("audienceSlide");
-    audienceSlide.innerHTML = html;
+    audienceSlide.innerHTML = extractEditorialFolio(audienceSlide, html);
     applySlideLayoutClass(audienceSlide);
     renderAudienceQuiz();
     if (!audienceSlide.classList.contains("cover-slide")) {
@@ -190,6 +194,39 @@ function render() {
     }
     applySharedPopupState();
   }
+}
+
+function extractEditorialFolio(slideElement, html) {
+  const parent = slideElement.parentElement;
+  const existingHeader = parent?.querySelector(".editorial-folio-header");
+
+  if (!parent) {
+    existingHeader?.remove();
+    return html;
+  }
+
+  const template = document.createElement("template");
+  template.innerHTML = html;
+  const contexts = [...template.content.querySelectorAll(".section-context")];
+
+  if (!contexts.length) {
+    existingHeader?.remove();
+    return html;
+  }
+
+  const header = existingHeader || document.createElement("header");
+  header.className = "editorial-folio-header";
+  header.innerHTML = "";
+  const stack = document.createElement("div");
+  stack.className = "editorial-nav-stack";
+  contexts.forEach(context => stack.append(context));
+  header.append(stack);
+
+  if (!existingHeader) {
+    parent.insertBefore(header, slideElement);
+  }
+
+  return template.innerHTML;
 }
 
 function renderAudienceQrToggle() {
@@ -315,6 +352,167 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+function getZoomableSlideImage(target) {
+  const image = target?.closest?.(".slide img, .projector-slide img, .audience-slide img");
+  if (!image || image.closest(".bible-popup, .quiz-cue, .audience-qr-overlay")) return null;
+  return image;
+}
+
+const imageZoomState = {
+  scale: 1,
+  x: 0,
+  y: 0,
+  panning: false,
+  startX: 0,
+  startY: 0,
+  originX: 0,
+  originY: 0
+};
+
+function ensureImageZoomOverlay() {
+  let overlay = document.getElementById("imageZoomOverlay");
+  if (overlay) return overlay;
+
+  overlay = document.createElement("div");
+  overlay.id = "imageZoomOverlay";
+  overlay.className = "image-zoom-overlay";
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-modal", "true");
+  overlay.innerHTML = `
+    <button class="image-zoom-close" type="button" aria-label="Close image">×</button>
+    <div class="image-zoom-toolbar" aria-label="Image zoom controls">
+      <button class="image-zoom-control" type="button" data-image-zoom-action="out" aria-label="Zoom out">−</button>
+      <button class="image-zoom-control" type="button" data-image-zoom-action="reset" aria-label="Reset image">100%</button>
+      <button class="image-zoom-control" type="button" data-image-zoom-action="in" aria-label="Zoom in">+</button>
+    </div>
+    <div class="image-zoom-stage">
+      <img class="image-zoom-image" alt="">
+    </div>
+    <div class="image-zoom-caption"></div>
+  `;
+  document.body.appendChild(overlay);
+
+  overlay.addEventListener("click", event => {
+    if (event.target === overlay || event.target.closest(".image-zoom-close")) {
+      closeImageZoom();
+    }
+  });
+
+  overlay.querySelector(".image-zoom-toolbar")?.addEventListener("click", event => {
+    const action = event.target.closest("[data-image-zoom-action]")?.dataset.imageZoomAction;
+    if (!action) return;
+    event.preventDefault();
+    event.stopPropagation();
+
+    if (action === "in") setImageZoomScale(imageZoomState.scale + 0.25);
+    if (action === "out") setImageZoomScale(imageZoomState.scale - 0.25);
+    if (action === "reset") resetImageZoom();
+  });
+
+  const stage = overlay.querySelector(".image-zoom-stage");
+  const zoomImage = overlay.querySelector(".image-zoom-image");
+
+  stage?.addEventListener("wheel", event => {
+    event.preventDefault();
+    const direction = event.deltaY > 0 ? -0.18 : 0.18;
+    setImageZoomScale(imageZoomState.scale + direction);
+  }, { passive: false });
+
+  zoomImage?.addEventListener("pointerdown", event => {
+    if (imageZoomState.scale <= 1) return;
+    event.preventDefault();
+    zoomImage.setPointerCapture?.(event.pointerId);
+    imageZoomState.panning = true;
+    imageZoomState.startX = event.clientX;
+    imageZoomState.startY = event.clientY;
+    imageZoomState.originX = imageZoomState.x;
+    imageZoomState.originY = imageZoomState.y;
+    overlay.classList.add("panning");
+  });
+
+  zoomImage?.addEventListener("pointermove", event => {
+    if (!imageZoomState.panning) return;
+    imageZoomState.x = imageZoomState.originX + event.clientX - imageZoomState.startX;
+    imageZoomState.y = imageZoomState.originY + event.clientY - imageZoomState.startY;
+    applyImageZoomTransform();
+  });
+
+  zoomImage?.addEventListener("pointerup", event => {
+    zoomImage.releasePointerCapture?.(event.pointerId);
+    imageZoomState.panning = false;
+    overlay.classList.remove("panning");
+  });
+
+  zoomImage?.addEventListener("pointercancel", event => {
+    zoomImage.releasePointerCapture?.(event.pointerId);
+    imageZoomState.panning = false;
+    overlay.classList.remove("panning");
+  });
+
+  return overlay;
+}
+
+function applyImageZoomTransform() {
+  const overlay = document.getElementById("imageZoomOverlay");
+  const zoomImage = overlay?.querySelector(".image-zoom-image");
+  const scale = Math.max(1, Math.min(4, imageZoomState.scale));
+  imageZoomState.scale = scale;
+
+  if (scale <= 1) {
+    imageZoomState.x = 0;
+    imageZoomState.y = 0;
+  }
+
+  if (zoomImage) {
+    zoomImage.style.transform = `translate(${imageZoomState.x}px, ${imageZoomState.y}px) scale(${scale})`;
+  }
+
+  overlay?.classList.toggle("zoomed", scale > 1);
+  const resetButton = overlay?.querySelector('[data-image-zoom-action="reset"]');
+  if (resetButton) resetButton.textContent = `${Math.round(scale * 100)}%`;
+}
+
+function setImageZoomScale(scale) {
+  imageZoomState.scale = Math.max(1, Math.min(4, scale));
+  applyImageZoomTransform();
+}
+
+function resetImageZoom() {
+  imageZoomState.scale = 1;
+  imageZoomState.x = 0;
+  imageZoomState.y = 0;
+  imageZoomState.panning = false;
+  applyImageZoomTransform();
+}
+
+function openImageZoom(image) {
+  if (!image?.currentSrc && !image?.src) return;
+
+  const overlay = ensureImageZoomOverlay();
+  const zoomImage = overlay.querySelector(".image-zoom-image");
+  const caption = overlay.querySelector(".image-zoom-caption");
+  const alt = image.getAttribute("alt") || "";
+
+  zoomImage.src = image.currentSrc || image.src;
+  zoomImage.alt = alt;
+  caption.textContent = alt;
+  caption.hidden = !alt.trim();
+  resetImageZoom();
+  overlay.classList.add("open");
+  document.body.classList.add("image-zoom-open");
+}
+
+function closeImageZoom() {
+  const overlay = document.getElementById("imageZoomOverlay");
+  if (!overlay?.classList.contains("open")) return false;
+
+  overlay.classList.remove("open");
+  overlay.classList.remove("panning", "zoomed");
+  document.body.classList.remove("image-zoom-open");
+  resetImageZoom();
+  return true;
+}
+
 function isVideoMedia(value) {
   return /\.(mp4|webm|ogg|mov)(?:[?#].*)?$/i.test(String(value || "").trim());
 }
@@ -390,27 +588,70 @@ function emitPopupVerseIndex(verseIndex) {
   socket.emit("set-popup-verse", boundedIndex);
 }
 
-function stepPopupVerse(direction) {
-  if (!popupState.reference) return;
+function normalizePopupReferenceKey(value) {
+  return String(value || "")
+    .replace(/[–—]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
+function referencesMatch(left, right) {
+  return normalizePopupReferenceKey(left) === normalizePopupReferenceKey(right);
+}
+
+function getActivePopupVerseTotal() {
   const openPopup = document.querySelector(".bible-ref.open .bible-popup");
   const overlay = document.getElementById("sharedPopupOverlay");
   const popup = openPopup || (overlay?.classList.contains("open") ? overlay : null);
   const blocks = getPopupVerseBlocks(popup);
-  let total = blocks.length;
+  if (blocks.length) return { popup, total: blocks.length };
 
-  if (!total) {
-    const ref = Array.from(document.querySelectorAll(".bible-ref"))
-      .find(el => el.dataset.reference === popupState.reference);
-    total = Number(ref?.dataset.verseCount) || 1;
-  }
+  const ref = Array.from(document.querySelectorAll(".bible-ref"))
+    .find(el => referencesMatch(el.dataset.reference, popupState.reference));
+  return {
+    popup,
+    total: Number(ref?.dataset.verseCount) || blocks.length || 1
+  };
+}
 
+function stepPopupVerse(direction) {
+  if (!popupState.reference) return false;
+
+  const { popup, total } = getActivePopupVerseTotal();
   const currentIndex = popupState.verseIndex || 0;
   const nextIndex = Math.min(total - 1, Math.max(0, currentIndex + direction));
-  if (nextIndex === currentIndex) return;
+  if (nextIndex === currentIndex) return false;
 
   applyPopupVerseVisibility(popup, nextIndex);
   emitPopupVerseIndex(nextIndex);
+  return true;
+}
+
+function advancePopupOrSlide(direction = 1) {
+  if (!popupState.reference) {
+    if (direction >= 0) next();
+    else prev();
+    return;
+  }
+
+  const { total } = getActivePopupVerseTotal();
+  const currentIndex = popupState.verseIndex || 0;
+
+  if (direction > 0) {
+    if (currentIndex < total - 1) {
+      stepPopupVerse(1);
+      return;
+    }
+    socket.emit("set-popup-reference", null);
+    return;
+  }
+
+  if (currentIndex > 0) {
+    stepPopupVerse(-1);
+    return;
+  }
+
+  socket.emit("set-popup-reference", null);
 }
 
 function applySharedPopupState() {
@@ -430,14 +671,12 @@ function applySharedPopupState() {
   if (!activeReference) return;
 
   document.querySelectorAll(".bible-ref").forEach(reference => {
-    if (reference.dataset.reference === activeReference) {
+    if (referencesMatch(reference.dataset.reference, activeReference)) {
       reference.classList.add("open");
       activePopup = reference.querySelector(".bible-popup");
+      applyPopupVerseVisibility(activePopup, popupState.verseIndex);
     }
   });
-
-  if (!activePopup) return;
-  applyPopupVerseVisibility(activePopup, popupState.verseIndex);
 }
 
 function renderSharedPopupOverlay() {
@@ -450,14 +689,17 @@ function renderSharedPopupOverlay() {
   if (!popupState.reference) return;
 
   const sourcePopup = Array.from(document.querySelectorAll(".bible-ref"))
-    .find(reference => reference.dataset.reference === popupState.reference)
+    .find(reference => referencesMatch(reference.dataset.reference, popupState.reference))
     ?.querySelector(".bible-popup");
 
   if (!sourcePopup) return;
 
   overlay.innerHTML = sourcePopup.innerHTML;
-  // Projector/audience follow the shared verse index; navigation stays on presenter/director.
-  overlay.querySelector(".bible-popup-nav")?.remove();
+  // A mirrored projector is the only output view that can control the shared
+  // popup. Extended projector and audience views remain read-only followers.
+  if (!(isProjector && projectorMode === "mirrored")) {
+    overlay.querySelector(".bible-popup-nav")?.remove();
+  }
   applyPopupVerseVisibility(overlay, popupState.verseIndex);
 }
 
@@ -923,10 +1165,18 @@ function renderAudienceQuiz() {
 }
 
 function next() {
+  if ((isPresenter || (isProjector && projectorMode === "mirrored")) && popupState.reference) {
+    advancePopupOrSlide(1);
+    return;
+  }
   socket.emit("next");
 }
 
 function prev() {
+  if ((isPresenter || (isProjector && projectorMode === "mirrored")) && popupState.reference) {
+    advancePopupOrSlide(-1);
+    return;
+  }
   socket.emit("prev");
 }
 
@@ -1036,8 +1286,37 @@ function toggleAudienceQr() {
 }
 
 document.addEventListener("click", event => {
+  const zoomImage = getZoomableSlideImage(event.target);
+  if (zoomImage) {
+    event.preventDefault();
+    event.stopPropagation();
+    openImageZoom(zoomImage);
+    return;
+  }
+
+  const crossReference = event.target.closest(".xref-reference");
+  if (crossReference) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    document.querySelectorAll(".xref-reference.open").forEach(openReference => {
+      if (openReference !== crossReference) {
+        openReference.classList.remove("open");
+        openReference.setAttribute("aria-expanded", "false");
+        openReference.querySelector(".xref-popup")?.setAttribute("hidden", "");
+      }
+    });
+
+    const isOpen = crossReference.classList.toggle("open");
+    crossReference.setAttribute("aria-expanded", String(isOpen));
+    const popup = crossReference.querySelector(".xref-popup");
+    popup?.toggleAttribute("hidden", !isOpen);
+    if (isOpen) positionXrefPopup(crossReference, popup);
+    return;
+  }
+
   const verseButton = event.target.closest("[data-popup-verse]");
-  if (isPresenter && verseButton) {
+  if ((isPresenter || (isProjector && projectorMode === "mirrored")) && verseButton) {
     event.preventDefault();
     event.stopPropagation();
     stepPopupVerse(Number(verseButton.dataset.popupVerse));
@@ -1051,13 +1330,31 @@ document.addEventListener("click", event => {
 
   if (isPresenter && reference) {
     event.preventDefault();
-    socket.emit("set-popup-reference", reference.dataset.reference || null);
+    const nextReference = reference.dataset.reference || null;
+    if (
+      popupState.reference &&
+      referencesMatch(popupState.reference, nextReference)
+    ) {
+      const { total } = getActivePopupVerseTotal();
+      if ((popupState.verseIndex || 0) < total - 1) {
+        stepPopupVerse(1);
+      } else {
+        socket.emit("set-popup-reference", null);
+      }
+      return;
+    }
+    socket.emit("set-popup-reference", nextReference);
     return;
   }
 
   if ((isProjector || isAudience) && reference && document.getElementById("sharedPopupOverlay")) {
     event.preventDefault();
     const nextReference = reference.dataset.reference || null;
+    if (isProjector && projectorMode === "mirrored") {
+      socket.emit("set-popup-reference", popupState.reference === nextReference ? null : nextReference);
+      return;
+    }
+
     popupState = {
       reference: popupState.reference === nextReference ? null : nextReference,
       scrollRatio: 0,
@@ -1092,6 +1389,24 @@ document.addEventListener("click", event => {
   }
 });
 
+function positionXrefPopup(reference, popup) {
+  if (!popup) return;
+
+  popup.style.left = "0px";
+  const padding = 20;
+  const bounds = popup.getBoundingClientRect();
+  let offset = 0;
+
+  if (bounds.right > window.innerWidth - padding) {
+    offset -= bounds.right - (window.innerWidth - padding);
+  }
+  if (bounds.left + offset < padding) {
+    offset += padding - (bounds.left + offset);
+  }
+
+  popup.style.left = `${Math.round(offset)}px`;
+}
+
 document.getElementById("presenterSectionSelect")?.addEventListener("change", jumpToPresenterSection);
 document.getElementById("audienceQrToggle")?.addEventListener("click", toggleAudienceQr);
 
@@ -1114,19 +1429,31 @@ window.addEventListener("resize", () => {
   applyTabletPreviewScale();
 });
 
+window.addEventListener("keydown", e => {
+  if (e.key === "Escape" && closeImageZoom()) {
+    e.preventDefault();
+  }
+});
+
 if (isPresenter || (isProjector && !isTablet)) {
   window.addEventListener("keydown", e => {
     if (e.target.matches("input, textarea, select")) return;
 
-    if (isPresenter && popupState.reference) {
-      if (e.key === "ArrowRight") {
+    if (e.key === "Escape" && closeImageZoom()) {
+      e.preventDefault();
+      return;
+    }
+
+    const canControlPopup = isPresenter || (isProjector && projectorMode === "mirrored");
+    if (canControlPopup && popupState.reference) {
+      if (e.key === "ArrowRight" || e.key === " ") {
         e.preventDefault();
-        stepPopupVerse(1);
+        advancePopupOrSlide(1);
         return;
       }
       if (e.key === "ArrowLeft") {
         e.preventDefault();
-        stepPopupVerse(-1);
+        advancePopupOrSlide(-1);
         return;
       }
       if (e.key === "Escape") {
