@@ -600,3 +600,29 @@ button.ghost {
     font-size: 1.2rem;
   }
 }
+
+.reveal-entry {
+  display: contents;
+}
+
+.reveal-enter {
+  animation: cgv-reveal-enter 200ms ease-out;
+}
+
+@keyframes cgv-reveal-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.3em);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-enter {
+    animation: none;
+  }
+}

@@ -17,7 +17,7 @@ Morph/Strong’s: Maurice A. Robinson. MorphGNT used only for lemma fill + phras
 - Surfaces from beta: 169
 - Lemmas filled from MorphGNT: 2109
 - Phrases remapped: 185
-- Phrase issues: 14
+- Phrase issues: 0
 
 ## Verses with TR ≠ MorphGNT (token-level ops)
 
@@ -569,45 +569,4 @@ Ops:
 
 ## Phrase remap issues
 
-- phrase 3 1 John 1:3: morph positions not in TR alignment [6]
-  - ES: lo que hemos visto y oído les anunciamos también a ustedes, para que ustedes también tengan comunión con nosotros;
-  - GR(old): ὃ ἑωράκαμεν καὶ ἀκηκόαμεν ἀπαγγέλλομεν καὶ ὑμῖν ἵνα καὶ ὑμεῖς κοινωνίαν ἔχητε μεθ’ ἡμῶν
-- phrase 6 1 John 1:5: morph positions not in TR alignment [2]
-  - ES: Y este es el mensaje que hemos oído de él y les anunciamos:
-  - GR(old): Καὶ ἔστιν αὕτη ἡ ἀγγελία ἣν ἀκηκόαμεν ἀπ’ αὐτοῦ καὶ ἀναγγέλλομεν ὑμῖν
-- phrase 19 1 John 2:4: morph positions not in TR alignment [3]
-  - ES: El que dice: «Lo he conocido», y no guarda sus mandamientos, es mentiroso;
-  - GR(old): ὁ λέγων ὅτι Ἔγνωκα αὐτὸν καὶ τὰς ἐντολὰς αὐτοῦ μὴ τηρῶν ψεύστης ἐστίν
-- phrase 34 1 John 2:14: morph positions not in TR alignment [1, 2, 3, 4, 5, 6, 7]
-  - ES: Les he escrito a ustedes, niñitos, porque han conocido al Padre.
-  - GR(old): ἔγραψα ὑμῖν παιδία ὅτι ἐγνώκατε τὸν πατέρα
-- phrase 47 1 John 2:19: morph positions not in TR alignment [13]
-  - ES: porque si hubieran sido de nosotros, habrían permanecido con nosotros;
-  - GR(old): εἰ γὰρ ἐξ ἡμῶν ἦσαν μεμενήκεισαν ἂν μεθ’ ἡμῶν
-- phrase 60 1 John 2:27: morph positions not in TR alignment [9]
-  - ES: Y en cuanto a ustedes, la unción que recibieron de él permanece en ustedes,
-  - GR(old): καὶ ὑμεῖς τὸ χρῖσμα ὃ ἐλάβετε ἀπ’ αὐτοῦ μένει ἐν ὑμῖν
-- phrase 66 1 John 3:1: morph positions not in TR alignment [12, 13]
-  - ES: Miren qué clase de amor nos ha dado el Padre: que seamos llamados hijos de Dios; y lo somos.
-  - GR(old): ἴδετε ποταπὴν ἀγάπην δέδωκεν ἡμῖν ὁ πατὴρ ἵνα τέκνα θεοῦ κληθῶμεν καὶ ἐσμέν
-- phrase 98 1 John 3:18: morph positions not in TR alignment [6, 9]
-  - ES: Hijitos, no amemos de palabra ni de lengua, sino con hechos y en verdad.
-  - GR(old): Τεκνία μὴ ἀγαπῶμεν λόγῳ μηδὲ τῇ γλώσσῃ ἀλλὰ ἐν ἔργῳ καὶ ἀληθείᾳ
-- phrase 130 1 John 4:12: morph positions not in TR alignment [17, 18]
-  - ES: Si nos amamos unos a otros, Dios permanece en nosotros y su amor ha sido perfeccionado en nosotros.
-  - GR(old): ἐὰν ἀγαπῶμεν ἀλλήλους ὁ θεὸς ἐν ἡμῖν μένει καὶ ἡ ἀγάπη αὐτοῦ ἐν ἡμῖν τετελειωμένη ἐστιν
-- phrase 136 1 John 4:16: morph positions not in TR alignment [33]
-  - ES: Dios es amor; y el que permanece en el amor permanece en Dios, y Dios permanece en él.
-  - GR(old): Ὁ θεὸς ἀγάπη ἐστίν καὶ ὁ μένων ἐν τῇ ἀγάπῃ ἐν τῷ θεῷ μένει καὶ ὁ θεὸς ἐν αὐτῷ μένει
-- phrase 153 1 John 5:5: morph positions not in TR alignment [2]
-  - ES: ¿Y quién es el que vence al mundo, sino el que cree que Jesús es el Hijo de Dios?
-  - GR(old): τίς δέ ἐστιν ὁ νικῶν τὸν κόσμον εἰ μὴ ὁ πιστεύων ὅτι Ἰησοῦς ἐστιν ὁ υἱὸς τοῦ θεοῦ
-- phrase 155 1 John 5:6: morph positions not in TR alignment [21]
-  - ES: No mediante el agua solamente, sino mediante el agua y la sangre.
-  - GR(old): οὐκ ἐν τῷ ὕδατι μόνον ἀλλ’ ἐν τῷ ὕδατι καὶ ἐν τῷ αἵματι
-- phrase 164 1 John 5:11: morph positions not in TR alignment [12]
-  - ES: Y este es el testimonio: que Dios nos dio vida eterna,
-  - GR(old): καὶ αὕτη ἐστὶν ἡ μαρτυρία ὅτι ζωὴν αἰώνιον ἔδωκεν ὁ θεὸς ἡμῖν
-- phrase 167 1 John 5:13: morph positions not in TR alignment [4, 5, 6, 7, 8, 9]
-  - ES: Estas cosas les he escrito para que sepan que tienen vida eterna, ustedes que creen en el nombre del Hijo de Dios.
-  - GR(old): Ταῦτα ἔγραψα ὑμῖν ἵνα εἰδῆτε ὅτι ζωὴν ἔχετε αἰώνιον τοῖς πιστεύουσιν εἰς τὸ ὄνομα τοῦ υἱοῦ τοῦ θεοῦ
+_None._

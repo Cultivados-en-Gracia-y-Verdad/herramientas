@@ -11,7 +11,8 @@ const QRCode = require("qrcode");
 const {
   ensureGreekUsageIndex,
   lookupGreekUsage,
-  bibleBookCandidates
+  bibleBookCandidates,
+  describeGreekForm
 } = require("./greekUsage");
 
 const app = express();
@@ -98,6 +99,8 @@ const synthesisMarker = "::roots-synthesis::";
 const h4IntroMarker = "::roots-h4-intro::";
 const sectionContextMarker = "::roots-section-context::";
 const phraseCueMarker = "::roots-phrase-cue::";
+const phraseUnitMarker = "::roots-phrase-unit::";
+const revealBatchMarker = "::roots-reveal-batch::";
 const crossReferenceMarker = "::roots-cross-references::";
 
 app.use(express.json({ limit: "30mb" }));
@@ -1798,14 +1801,61 @@ function enrichBibleReferences(markdownLine) {
 }
 
 function isFootnoteDefinitionLine(line) {
-  return /^\[\^[^\]]+\]:/.test(String(line || "").trim());
+  return /^\s*\[\^[^\]]+\]:/.test(String(line || ""));
+}
+
+// Built-in pedagogical notes for common manual markers. Document `[^id]:`
+// definitions always win; these fill gaps when an appendix is missing or not
+// yet pasted into an imported draft.
+const DEFAULT_FOOTNOTE_DEFINITIONS = new Map(Object.entries({
+  kai: "**καί**. Une esta cláusula con la anterior. Solo suma: añade otra idea a la misma línea. No da razón ni contraste.",
+  de: "**δέ**. Continúa el desarrollo. A veces solo avanza («y…»); a veces marca un leve contraste («pero…»). Sigue conectada a lo anterior.",
+  gar: "**γάρ**. Introduce la razón — el «por qué» de lo que se acaba de decir. No es propósito («para que…»).",
+  dioti: "**διότι**. Introduce la razón, como γάρ: el fundamento de la frase anterior.",
+  alla: "**ἀλλά**. Introduce un contraste: lo que sigue se aparta de la dirección anterior («pero» / «sino»).",
+  oun: "**οὖν**. Introduce la conclusión: «entonces» / «por eso» — el siguiente paso lógico.",
+  e: "**ἤ**. Une alternativas («o»).",
+  hina: "**ἵνα**. Introduce el propósito — el «para qué» de la acción gobernante.",
+  ei: "**εἰ**. Introduce una condición: lo que sigue depende de que se cumpla esa condición.",
+  hoti: "**ὅτι**. Puede introducir el contenido (lo que se dice, se sabe o se piensa) o la razón (el «por qué»), según el contexto.",
+  hos: "**ὡς**. Marca el momento o la manera relacionada con la frase anterior — a menudo el «cuándo» o el «como».",
+  hote: "**ὅτε**. Marca el momento — el «cuándo».",
+  conn: "Conector relacional. Une esta cláusula con lo anterior.",
+  part: "**Participio**. Forma verbal que no actúa como el verbo principal. Añade acción o detalle ligado a un nombre o a la afirmación cercana (a menudo se parece a «-ando / -iendo» o a un adjetivo hecho de un verbo).",
+  inf: "**Infinitivo**. Nombra una acción sin ser el verbo principal. Completa el «qué» de un verbo cercano (debe, pide, quiere, puede…).",
+  rel: "**Cláusula relativa**. No es el verbo principal de la sección; cuelga de un nombre (o persona o cosa) ya mencionado y añade detalle sobre ese anfitrión."
+}));
+
+// Manual shorthand → canonical grammar-note ids.
+const FOOTNOTE_ID_ALIASES = {
+  p: "part",
+  i: "inf"
+};
+
+// Morphology / clause-form notes attached after a Greek paren should not steal
+// the Greek click target: (ἀναγεννήσας)[^P] → usages + participle note.
+const GRAMMAR_FORM_FOOTNOTE_IDS = new Set([
+  "p", "part", "i", "inf", "rel", "conn"
+]);
+
+function resolveFootnoteId(id) {
+  const lower = String(id || "").trim().toLowerCase();
+  return FOOTNOTE_ID_ALIASES[lower] || lower;
+}
+
+function isGreekParentheticalLabel(value) {
+  return /^[\p{Script=Greek}][\p{Script=Greek}\p{M}'ʼ’*·]*$/u.test(String(value || "").trim());
+}
+
+function isGrammarFormFootnoteId(id) {
+  return GRAMMAR_FORM_FOOTNOTE_IDS.has(String(id || "").trim().toLowerCase());
 }
 
 function collectFootnoteDefinitions(body) {
   const map = new Map();
 
   String(body || "").split("\n").forEach(line => {
-    const match = String(line).match(/^\[\^([^\]]+)\]:\s*(.*)$/);
+    const match = String(line).match(/^\s*\[\^([^\]]+)\]:\s*(.*)$/);
     if (!match) return;
 
     const id = match[1].trim();
@@ -1817,11 +1867,20 @@ function collectFootnoteDefinitions(body) {
 }
 
 function getFootnoteDefinition(id) {
-  if (footnoteDefinitions.has(id)) return footnoteDefinitions.get(id);
+  const resolved = resolveFootnoteId(id);
+  const candidates = [...new Set([String(id || "").trim(), resolved].filter(Boolean))];
 
-  const lower = String(id || "").toLowerCase();
-  for (const [key, value] of footnoteDefinitions.entries()) {
-    if (String(key).toLowerCase() === lower) return value;
+  for (const candidate of candidates) {
+    if (footnoteDefinitions.has(candidate)) return footnoteDefinitions.get(candidate);
+
+    const lower = candidate.toLowerCase();
+    for (const [key, value] of footnoteDefinitions.entries()) {
+      if (String(key).toLowerCase() === lower) return value;
+    }
+
+    if (DEFAULT_FOOTNOTE_DEFINITIONS.has(lower)) {
+      return DEFAULT_FOOTNOTE_DEFINITIONS.get(lower);
+    }
   }
 
   return undefined;
@@ -1858,14 +1917,19 @@ function enrichFootnotes(value) {
     })
   );
 
-  // (καὶ)[^kai] → parenthetical label
+  // (καὶ)[^kai] → parenthetical label (connector pedagogy)
+  // (ἀναγεννήσας)[^P] → keep Greek for usage popup; [^P] is grammar note only
   // Infinitivo[^inf] → preceding word/term is the clickable label
   // [^1] → superscript marker
   const pattern = /(?:\(([^)\n]+)\)|（([^）\n]+)）|([\p{L}\p{M}0-9]+(?:[-'ʼ’][\p{L}\p{M}0-9]+)*))?\[\^([^\]]+)\]/gu;
 
   const enrichText = text => text.replace(pattern, (match, labelWest, labelFull, labelWord, id) => {
     if (labelWest != null || labelFull != null) {
-      return buildFootnoteMarkup(id, labelWest ?? labelFull, { paren: true });
+      const label = labelWest ?? labelFull;
+      if (isGreekParentheticalLabel(label) && isGrammarFormFootnoteId(id)) {
+        return `(${label})${buildFootnoteMarkup(id, null)}`;
+      }
+      return buildFootnoteMarkup(id, label, { paren: true });
     }
     if (labelWord != null) {
       return buildFootnoteMarkup(id, labelWord, { paren: false });
@@ -1900,9 +1964,8 @@ function buildGreekUsageMarkup(surface) {
   const meta = [usage.lemma, usage.morphology].filter(Boolean).join(" · ");
 
   const popupText = usage.occurrences.map((occurrence, index) => {
-    const spanish = occurrence.spanish
-      ? escapeHtml(occurrence.spanish)
-      : `<em>${escapeHtml(occurrence.surfaceForm)}</em>`;
+    const spanish = occurrence.spanishHtml
+      || (occurrence.spanish ? escapeHtml(occurrence.spanish) : `<em>${escapeHtml(occurrence.surfaceForm)}</em>`);
     const formNote = occurrence.surfaceForm && occurrence.surfaceForm !== usage.surface
       ? ` <span class="greek-usage-form">(${escapeHtml(occurrence.surfaceForm)})</span>`
       : "";
@@ -1917,7 +1980,11 @@ function buildGreekUsageMarkup(surface) {
       </span>`
     : "";
 
-  const header = `<span class="greek-usage-header"><strong>${escapeHtml(usage.surface)}</strong> ${escapeHtml(meta)} · ${usage.count} uso${usage.count === 1 ? "" : "s"}</span>`;
+  const spanishLabel = String(usage.spanishLabel || "").trim();
+  const titleHtml = spanishLabel
+    ? `<strong class="greek-usage-spanish">${escapeHtml(spanishLabel)}</strong> <span class="greek-usage-greek">${escapeHtml(usage.surface)}</span>`
+    : `<strong>${escapeHtml(usage.surface)}</strong>`;
+  const header = `<span class="greek-usage-header">${titleHtml} ${escapeHtml(meta)} · ${usage.count} uso${usage.count === 1 ? "" : "s"}</span>`;
 
   return `<span class="bible-ref greek-ref" tabindex="0" role="button" data-reference="${referenceKey}" data-verse-count="${usage.occurrences.length}">${labelHtml}<span class="bible-popup">${header}${popupText}${nav}</span></span>`;
 }
@@ -1927,13 +1994,33 @@ function enrichGreekParentheticals(value) {
   const pattern = /\(([\p{Script=Greek}][\p{Script=Greek}\p{M}'ʼ’*·]*)\)(?!\[\^)/gu;
 
   const enrichText = text => text.replace(pattern, (match, surface) => {
-    const markup = buildGreekUsageMarkup(surface);
-    return markup || match;
+    const info = describeGreekForm(surface, __dirname);
+
+    // Prefer pedagogical connector footnotes over MorphGNT usage dumps.
+    if (info.footnoteId && getFootnoteDefinition(info.footnoteId) !== undefined) {
+      return buildFootnoteMarkup(info.footnoteId, surface, { paren: true });
+    }
+
+    // Bare connectors without a note stay plain text (author should add [^kai], etc.).
+    if (info.isConnector) {
+      return match;
+    }
+
+    return buildGreekUsageMarkup(surface) || match;
   });
 
+  // Do not re-process Greek already wrapped by footnote/usage anchors.
+  let anchorDepth = 0;
   return html
     .split(/(<[^>]+>)/g)
-    .map(part => part.startsWith("<") && part.endsWith(">") ? part : enrichText(part))
+    .map(part => {
+      if (part.startsWith("<") && part.endsWith(">")) {
+        if (/^<span\b[^>]*\bbible-ref\b/i.test(part)) anchorDepth += 1;
+        else if (/^<\/span>/i.test(part) && anchorDepth > 0) anchorDepth -= 1;
+        return part;
+      }
+      return anchorDepth > 0 ? part : enrichText(part);
+    })
     .join("");
 }
 
@@ -2049,6 +2136,31 @@ function renderLine(line) {
       h4Intro: true,
       html: enrichPresentationMarkup(renderMarkdown(intro.full)).trim(),
       h4OnlyHtml: enrichPresentationMarkup(renderMarkdown(intro.h4)).trim()
+    };
+  }
+
+  if (line.startsWith(revealBatchMarker)) {
+    const items = JSON.parse(line.slice(revealBatchMarker.length));
+    return {
+      batch: (Array.isArray(items) ? items : []).map(item => renderLine(item))
+    };
+  }
+
+  if (line.startsWith(phraseUnitMarker)) {
+    const unit = JSON.parse(line.slice(phraseUnitMarker.length));
+    const cueType = unit.type === "dependent" ? "dependent" : "phrase";
+    const phraseHtml = `
+      <div class="marker-cue marker-${cueType} phrase-cue phrase-cue-${cueType === "dependent" ? "minus" : "plus"}">
+        ${enrichPresentationMarkup(renderMarkdownInline(unit.text).trim())}
+      </div>
+    `.trim();
+    const commentsHtml = (Array.isArray(unit.comments) ? unit.comments : [])
+      .map(comment => enrichPresentationMarkup(renderMarkdown(comment)).trim())
+      .join("");
+
+    return {
+      replaceGroup: unit.id,
+      html: `${phraseHtml}${commentsHtml}`
     };
   }
 
@@ -2994,15 +3106,74 @@ function buildPhraseCueLine(line) {
   return `${phraseCueMarker}${JSON.stringify({ type, text })}`;
 }
 
+function parsePhraseCueSource(line) {
+  const match = String(line || "").match(/^([+-])\s+([\s\S]+?)\s*$/);
+  if (!match) return null;
+  return {
+    type: match[1] === "-" ? "dependent" : "phrase",
+    text: match[2].trim()
+  };
+}
+
+function isTeachingCommentLine(line) {
+  const value = String(line || "");
+  if (!/^>\s?/.test(value)) return false;
+  if (isImageBlockquoteLine(value)) return false;
+  if (/^>\s*En S[ií]ntesis/i.test(value)) return false;
+  return true;
+}
+
+function buildPhraseUnitLine(unit) {
+  return `${phraseUnitMarker}${JSON.stringify(unit)}`;
+}
+
+function buildPhraseUnitReveals(unit, { clearPreviousUnit = null } = {}) {
+  const comments = Array.isArray(unit.comments) ? unit.comments : [];
+  let firstStep = buildPhraseUnitLine({ ...unit, comments: [] });
+
+  // Same advance: drop the previous phrase's comment and introduce this phrase.
+  if (clearPreviousUnit) {
+    firstStep = `${revealBatchMarker}${JSON.stringify([
+      buildPhraseUnitLine({ ...clearPreviousUnit, comments: [] }),
+      firstStep
+    ])}`;
+  }
+
+  const steps = [firstStep];
+
+  for (let index = 0; index < comments.length; index++) {
+    steps.push(buildPhraseUnitLine({
+      ...unit,
+      comments: comments.slice(0, index + 1)
+    }));
+  }
+
+  return steps;
+}
+
 function getFirstPhraseCue(lines) {
-  return lines.find(item => String(item || "").startsWith(phraseCueMarker)) || null;
+  return lines.find(item => {
+    const value = String(item || "");
+    return value.startsWith(phraseCueMarker) || value.startsWith(phraseUnitMarker);
+  }) || null;
 }
 
 function getPhraseCueType(line) {
-  if (!String(line || "").startsWith(phraseCueMarker)) return null;
+  const value = String(line || "");
+
+  if (value.startsWith(phraseUnitMarker)) {
+    try {
+      const unit = JSON.parse(value.slice(phraseUnitMarker.length));
+      return unit.type === "dependent" ? "dependent" : "phrase";
+    } catch {
+      return null;
+    }
+  }
+
+  if (!value.startsWith(phraseCueMarker)) return null;
 
   try {
-    const cue = JSON.parse(line.slice(phraseCueMarker.length));
+    const cue = JSON.parse(value.slice(phraseCueMarker.length));
     return cue.type === "dependent" ? "dependent" : "phrase";
   } catch {
     return null;
@@ -3015,6 +3186,8 @@ function getFirstCueOfType(lines, type) {
 
 function groupRevealLines(lines) {
   const revealLines = [];
+  let phraseUnitCounter = 0;
+  let previousPhraseUnit = null;
 
   for (let index = 0; index < lines.length; index++) {
     const line = lines[index];
@@ -3034,12 +3207,37 @@ function groupRevealLines(lines) {
       }
 
       revealLines.push(group.join("\n"));
+      previousPhraseUnit = null;
       continue;
     }
 
     if (isPhraseCueLine(line)) {
-      revealLines.push(buildPhraseCueLine(line));
+      const cue = parsePhraseCueSource(line);
+      const comments = [];
+
+      while (isTeachingCommentLine(lines[index + 1])) {
+        index++;
+        comments.push(lines[index]);
+      }
+
+      phraseUnitCounter += 1;
+      const unit = {
+        id: `phrase-unit-${phraseUnitCounter}`,
+        type: cue?.type || "phrase",
+        text: cue?.text || "",
+        comments
+      };
+      const clearPreviousUnit = previousPhraseUnit && previousPhraseUnit.comments.length
+        ? previousPhraseUnit
+        : null;
+
+      revealLines.push(...buildPhraseUnitReveals(unit, { clearPreviousUnit }));
+      previousPhraseUnit = unit;
       continue;
+    }
+
+    if (String(line || "").trim()) {
+      previousPhraseUnit = null;
     }
 
     const crossReference = parseCrossReferenceLine(line);
@@ -4218,7 +4416,16 @@ function loadSlides() {
         .split("\n")
         .map(line => line.trim())
         .filter(Boolean)
-        .filter(line => !isFootnoteDefinitionLine(line))
+        // Keep appendix footnote definitions visible as definition cards;
+        // popups still resolve from footnoteDefinitions collected above.
+        .map(line => {
+          const match = line.match(/^\[\^([^\]]+)\]:\s*(.*)$/);
+          if (!match) return line;
+          const id = match[1].trim();
+          const note = match[2].trim();
+          return note ? `${id}\n: ${note}` : "";
+        })
+        .filter(Boolean)
     )
     .filter(slide => slide.length > 0);
 

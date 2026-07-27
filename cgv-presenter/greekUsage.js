@@ -64,11 +64,44 @@ const BOOK_ALIASES_ES = {
   "27": ["Apocalipsis", "Ap"]
 };
 
+const BOOK_SLUGS = {
+  "01": "mateo",
+  "02": "marcos",
+  "03": "lucas",
+  "04": "juan",
+  "05": "hechos",
+  "06": "romanos",
+  "07": "1corintios",
+  "08": "2corintios",
+  "09": "galatas",
+  "10": "efesios",
+  "11": "filipenses",
+  "12": "colosenses",
+  "13": "1tesalonicenses",
+  "14": "2tesalonicenses",
+  "15": "1timoteo",
+  "16": "2timoteo",
+  "17": "tito",
+  "18": "filemon",
+  "19": "hebreos",
+  "20": "santiago",
+  "21": "1pedro",
+  "22": "2pedro",
+  "23": "1juan",
+  "24": "2juan",
+  "25": "3juan",
+  "26": "judas",
+  "27": "apocalipsis"
+};
+
 let indexState = {
   loaded: false,
   morphDir: "",
+  bleDir: "",
   surfaceToLemma: new Map(),
-  lemmaRows: new Map()
+  lemmaRows: new Map(),
+  bleGlossByVerseForm: new Map(),
+  bleGlossByVerseLemma: new Map()
 };
 
 function firstExistingDirectory(candidates) {
@@ -98,6 +131,18 @@ function resolveMorphGntDir(presenterRootDir) {
   ]);
 }
 
+function resolveBleInterlinearDir(presenterRootDir) {
+  const configured = process.env.CGV_DATA_PATH
+    ? path.join(process.env.CGV_DATA_PATH, "bibles", "BLE", "interlinear", "NT")
+    : "";
+
+  return firstExistingDirectory([
+    configured,
+    path.join(presenterRootDir, "..", "Biblia-BLE", "output", "interlinear", "NT"),
+    path.join(presenterRootDir, "..", "..", "cgv-data", "bibles", "BLE", "interlinear", "NT")
+  ]);
+}
+
 function normalizeGreek(value) {
   return String(value || "")
     .normalize("NFC")
@@ -105,6 +150,292 @@ function normalizeGreek(value) {
     .replace(/^[,.;:!?·«»"'“”]+|[,.;:!?·«»"'“”]+$/gu, "")
     .trim()
     .toLocaleLowerCase("el");
+}
+
+function normalizeSpanish(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/gu, "")
+    .toLowerCase()
+    .replace(/[•·]/gu, "")
+    .trim();
+}
+
+function escapeRegExp(value) {
+  return String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function cleanBleGloss(gloss) {
+  return String(gloss || "")
+    .replace(/[•·]/gu, " ")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function spanishStem(word) {
+  const normalized = normalizeSpanish(word);
+  if (normalized.length <= 3) return normalized;
+
+  let stem = normalized
+    .replace(/(amientos|imientos|aciones|uciones|idades|mente)$/u, "")
+    // Longer participle / gerund endings first (ido before o).
+    .replace(/(andose|endose|ándose|iéndose|ando|iendo|ados|adas|idos|idas|ado|ada|ido|ida)$/u, "")
+    .replace(/(aron|ieron|abas|aban|amos|emos|imos|aste|iste|io|ia|ias|ian)$/u, "");
+
+  const clipped = stem.replace(/(ar|er|ir|os|as|es|an|en|o|a|e)$/u, "");
+  if (clipped.length >= 3) stem = clipped;
+  return stem;
+}
+
+function conjugateSpanishInfinitive(infinitive) {
+  const n = normalizeSpanish(infinitive);
+  if (!/[aei]r$/u.test(n) || n.length < 4) return [n];
+
+  const root = n.slice(0, -2);
+  const theme = n.slice(-2, -1);
+  const forms = new Set([n, root]);
+
+  if (theme === "a") {
+    [
+      `${root}a`, `${root}as`, `${root}an`, `${root}amos`,
+      `${root}o`, `${root}e`, `${root}es`, `${root}en`, `${root}emos`,
+      `${root}ando`, `${root}ado`, `${root}ada`, `${root}ados`, `${root}adas`,
+      `${root}aba`, `${root}abas`, `${root}aban`,
+      `${root}o`, `${root}aste`, `${root}aron`,
+      `${n}e`, `${n}as`, `${n}a`, `${n}an`, `${n}emos`
+    ].forEach(form => forms.add(form));
+  } else {
+    [
+      `${root}e`, `${root}es`, `${root}en`, `${root}emos`,
+      `${root}o`, `${root}a`, `${root}as`, `${root}an`, `${root}amos`,
+      `${root}iendo`, `${root}ido`, `${root}ida`, `${root}idos`, `${root}idas`,
+      `${root}ia`, `${root}ias`, `${root}ian`,
+      `${root}io`, `${root}iste`, `${root}ieron`,
+      `${n}e`, `${n}as`, `${n}a`, `${n}an`, `${n}emos`
+    ].forEach(form => forms.add(form));
+  }
+
+  return [...forms];
+}
+
+// Function words that appear in BLE glosses ("de herencia") must never highlight alone.
+const SPANISH_STOPWORDS = new Set([
+  "a", "al", "de", "del", "el", "la", "lo", "los", "las", "un", "una", "uno", "unos", "unas",
+  "y", "e", "o", "u", "en", "con", "por", "para", "sin", "sobre", "entre", "como", "que",
+  "se", "su", "sus", "mi", "mis", "tu", "tus", "le", "les", "me", "te", "nos", "os",
+  "es", "son", "ser", "esta", "este", "esto", "estos", "estas", "hay"
+]);
+
+// BLE mechanical gloss → common NBLA/RV phrasing when the verse paraphrases.
+const GLOSS_PHRASE_MAP = {
+  regenerado: ["nacer de nuevo", "nacido de nuevo", "nacidos de nuevo", "hecho nacer de nuevo", "ha hecho nacer", "han nacido de nuevo", "han nacido"],
+  regenerados: ["nacer de nuevo", "nacido de nuevo", "nacidos de nuevo", "han nacido de nuevo", "han nacido"],
+  viviendo: ["viva", "vivo", "vivos", "vivas", "vive", "viven", "viviendo"],
+  mucho: ["mucho", "mucha", "muchos", "muchas", "muy", "gran", "grande", "grandes"],
+  muchos: ["mucho", "mucha", "muchos", "muchas", "muy", "gran", "grande", "grandes"],
+  inmarcesible: ["no se marchitará", "marchitará", "marchita", "inmarcesible"],
+  herencia: ["herencia", "heredad", "heredero", "herederos"],
+  tentacion: ["tentación", "tentaciones", "prueba", "pruebas"],
+  tentaciones: ["tentación", "tentaciones", "prueba", "pruebas"],
+  entristecido: ["entristecido", "entristecidos", "triste", "tristes", "tristeza", "afligido", "afligidos", "afligidas"],
+  entristecidos: ["entristecido", "entristecidos", "triste", "tristes", "tristeza", "afligido", "afligidos", "afligidas"],
+  entristecer: ["entristecer", "triste", "tristes", "tristeza", "afligido", "afligidos", "afligidas"],
+  incorruptible: ["incorruptible", "incorruptibles", "inmortal", "inmortales"],
+  probar: ["probar", "prueba", "probado", "verificar", "verifiquen", "designado", "designados", "depravada", "reprobado"]
+};
+
+// Related infinitives to conjugate when BLE gloss is a different lemma than NBLA uses.
+const GLOSS_RELATED_VERBS = {
+  probar: ["probar", "examinar", "aprobar", "comprobar", "verificar", "designar"],
+  regenerado: ["regenerar", "nacer"],
+  regenerados: ["regenerar", "nacer"],
+  amar: ["amar"],
+  entristecido: ["entristecer", "afligir"],
+  entristecidos: ["entristecer", "afligir"],
+  entristecer: ["entristecer", "afligir"],
+  tentacion: ["tentar", "probar"],
+  tentaciones: ["tentar", "probar"],
+  inmarcesible: ["marchitar"],
+  herencia: ["heredar"],
+  incorruptible: []
+};
+
+const GLOSS_PREFIX_MAP = {
+  probar: ["prob", "examin", "aprob", "aprueb", "comprob", "acrisol", "verific", "design", "depravad", "reprob"],
+  mucho: ["much", "muy", "gran"],
+  muchos: ["much", "muy", "gran"],
+  amar: ["am"],
+  regenerado: ["renac"],
+  regenerados: ["renac"],
+  tentacion: ["tentacion", "tentac", "prueb"],
+  tentaciones: ["tentacion", "tentac", "prueb"],
+  entristecido: ["entristec", "aflig", "trist"],
+  entristecidos: ["entristec", "aflig", "trist"],
+  entristecer: ["entristec", "aflig", "trist"],
+  herencia: ["herenc", "hered"],
+  inmarcesible: ["marchit", "inmarces"],
+  incorruptible: ["incorrupt", "inmortal"]
+};
+
+function glossCandidates(gloss) {
+  const cleaned = cleanBleGloss(gloss);
+  if (!cleaned) return [];
+
+  const parts = cleaned.split(/\s+/u).filter(Boolean);
+  const candidates = new Set([cleaned]);
+
+  for (const part of parts) {
+    const normalized = normalizeSpanish(part);
+    if (!normalized || SPANISH_STOPWORDS.has(normalized)) continue;
+    // Prefer singular/lemma-like keys for map lookups (tentaciones → tentacion).
+    const keys = [...new Set([
+      normalized,
+      normalized.replace(/ciones$/u, "cion"),
+      normalized.replace(/es$/u, ""),
+      normalized.replace(/s$/u, "")
+    ])].filter(key => key && key.length >= 3 && !SPANISH_STOPWORDS.has(key));
+
+    for (const key of keys) {
+      candidates.add(key);
+      conjugateSpanishInfinitive(key).forEach(form => candidates.add(form));
+
+      const relatedVerbs = GLOSS_RELATED_VERBS[key] || [];
+      relatedVerbs.forEach(verb => {
+        conjugateSpanishInfinitive(verb).forEach(form => candidates.add(form));
+      });
+
+      const stem = spanishStem(key);
+      if (stem && stem.length >= 3) candidates.add(stem);
+
+      const phrases = GLOSS_PHRASE_MAP[key] || [];
+      phrases.forEach(phrase => candidates.add(phrase));
+
+      const prefixes = GLOSS_PREFIX_MAP[key] || [];
+      prefixes.forEach(prefix => candidates.add(prefix));
+    }
+  }
+
+  return [...candidates]
+    .map(term => String(term || "").trim())
+    .filter(term => {
+      if (!term || term.length < 3) return false;
+      const normalized = normalizeSpanish(term);
+      if (!normalized || SPANISH_STOPWORDS.has(normalized)) return false;
+      // Keep multi-word phrases even if a stopword is inside.
+      if (/\s/u.test(term)) return term.length >= 5;
+      return true;
+    })
+    .sort((left, right) => right.length - left.length);
+}
+
+function wrapHighlight(source, start, length) {
+  return (
+    escapeHtmlPlain(source.slice(0, start))
+    + `<mark class="greek-usage-hit">${escapeHtmlPlain(source.slice(start, start + length))}</mark>`
+    + escapeHtmlPlain(source.slice(start + length))
+  );
+}
+
+function highlightSpanishInVerse(text, glosses = []) {
+  const source = String(text || "");
+  if (!source) return "";
+
+  const terms = [...new Set(
+    (Array.isArray(glosses) ? glosses : [glosses])
+      .flatMap(gloss => glossCandidates(gloss))
+      .filter(term => term && term.length > 1)
+  )].sort((left, right) => right.length - left.length);
+
+  // 1) Exact word or multi-word phrase (case-insensitive).
+  for (const term of terms) {
+    if (term.length < 3) continue;
+    const pattern = new RegExp(`(?<![\\p{L}])(${escapeRegExp(term)})(?![\\p{L}])`, "iu");
+    const match = source.match(pattern);
+    if (!match) continue;
+    return wrapHighlight(source, match.index ?? 0, match[1].length);
+  }
+
+  // 2) Prefix / conjugation-aware word match inside the verse.
+  const words = source.match(/[\p{L}]+(?:['’-][\p{L}]+)*/gu) || [];
+  const prefixes = terms
+    .map(term => normalizeSpanish(term))
+    .filter(term => term.length >= 3 && !SPANISH_STOPWORDS.has(term) && !/\s/u.test(term))
+    .sort((left, right) => right.length - left.length);
+
+  for (const word of words) {
+    const normalizedWord = normalizeSpanish(word);
+    const wordStem = spanishStem(word);
+    const hit = prefixes.some(prefix => {
+      if (normalizedWord === prefix) return true;
+      // Word clearly begins with the gloss/prefix (examin→examínese, comprob→comprobado)
+      if (prefix.length >= 3 && normalizedWord.startsWith(prefix)) return true;
+      // Short verb roots: am- → amen / aman / amará / AMARÁS
+      if (prefix.length === 2 && normalizedWord.startsWith(prefix) && normalizedWord.length >= 3) {
+        return true;
+      }
+      // Strict stem equality only (avoid comprado≈comprob false friends)
+      if (wordStem.length >= 4 && prefix.length >= 4 && wordStem === prefix) return true;
+      return false;
+    });
+    if (!hit) continue;
+    const index = source.indexOf(word);
+    if (index < 0) continue;
+    return wrapHighlight(source, index, word.length);
+  }
+
+  return escapeHtmlPlain(source);
+}
+
+function escapeHtmlPlain(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function loadBleGlossIndex(presenterRootDir) {
+  const bleDir = resolveBleInterlinearDir(presenterRootDir);
+  indexState.bleDir = bleDir;
+  if (!bleDir) return;
+
+  const tokenPattern = /([^<\s]+)<([^|>]+)\|([^|>]+)\|([^|>]+)\|([^>]+)>/gu;
+  const files = fs.readdirSync(bleDir)
+    .filter(name => name.endsWith(".interlinear.txt"))
+    .sort();
+
+  for (const file of files) {
+    const content = fs.readFileSync(path.join(bleDir, file), "utf8");
+    for (const line of content.replace(/\r\n/g, "\n").split("\n")) {
+      const match = line.match(/^([a-z0-9]+)\s+(\d+):(\d+)\t(.+)$/u);
+      if (!match) continue;
+      const [, book, chapter, verse, tokens] = match;
+      for (const token of tokens.matchAll(tokenPattern)) {
+        const [, surface, lemma, , , gloss] = token;
+        const cleaned = cleanBleGloss(gloss);
+        if (!cleaned || cleaned === "?") continue;
+        const formKey = `${book}|${Number(chapter)}|${Number(verse)}|${normalizeGreek(surface)}`;
+        const lemmaKey = `${book}|${Number(chapter)}|${Number(verse)}|${normalizeGreek(lemma)}`;
+        if (!indexState.bleGlossByVerseForm.has(formKey)) {
+          indexState.bleGlossByVerseForm.set(formKey, cleaned);
+        }
+        if (!indexState.bleGlossByVerseLemma.has(lemmaKey)) {
+          indexState.bleGlossByVerseLemma.set(lemmaKey, cleaned);
+        }
+      }
+    }
+  }
+}
+
+function lookupBleGloss(bookCode, chapter, verse, surfaceForm, lemma) {
+  const book = BOOK_SLUGS[bookCode];
+  if (!book) return "";
+  const formKey = `${book}|${Number(chapter)}|${Number(verse)}|${normalizeGreek(surfaceForm)}`;
+  if (indexState.bleGlossByVerseForm.has(formKey)) {
+    return indexState.bleGlossByVerseForm.get(formKey);
+  }
+  const lemmaKey = `${book}|${Number(chapter)}|${Number(verse)}|${normalizeGreek(lemma)}`;
+  return indexState.bleGlossByVerseLemma.get(lemmaKey) || "";
 }
 
 function parseMorphLine(line) {
@@ -144,6 +475,7 @@ function ensureGreekUsageIndex(presenterRootDir) {
   const morphDir = resolveMorphGntDir(presenterRootDir);
   indexState.morphDir = morphDir;
   indexState.loaded = true;
+  loadBleGlossIndex(presenterRootDir);
 
   if (!morphDir) {
     console.warn("Greek usage index: MorphGNT not found. Parenthetical Greek popups disabled.");
@@ -189,6 +521,7 @@ function ensureGreekUsageIndex(presenterRootDir) {
 
   console.log(
     `Greek usage index ready: ${indexState.surfaceToLemma.size} forms, ${indexState.lemmaRows.size} lemmas from ${morphDir}`
+    + (indexState.bleDir ? `; BLE glosses from ${indexState.bleDir}` : "")
   );
   return indexState;
 }
@@ -259,12 +592,15 @@ function lookupGreekUsage(surface, options = {}) {
     const spanish = typeof options.lookupVerseText === "function"
       ? options.lookupVerseText(ref.book, ref.chapter, ref.verse) || ""
       : "";
+    const gloss = lookupBleGloss(ref.book, ref.chapter, ref.verse, row.surfaceForm, lemma);
 
     occurrences.push({
       ...ref,
       surfaceForm: row.surfaceForm,
       morphology: row.morphology,
-      spanish
+      gloss,
+      spanish,
+      spanishHtml: highlightSpanishInVerse(spanish, [gloss, cleanBleGloss(gloss).split(/\s+/u).pop()].filter(Boolean))
     });
 
     if (occurrences.length >= MAX_POPUP_VERSES) break;
@@ -276,13 +612,106 @@ function lookupGreekUsage(surface, options = {}) {
     surface: String(surface || "").trim(),
     lemma,
     morphology: morphology || occurrences[0].morphology || "",
+    spanishLabel: pickGreekDisplaySpanish(occurrences, surface),
     count: occurrences.length,
     occurrences
   };
 }
 
+function pickGreekDisplaySpanish(occurrences = [], surface = "") {
+  const surfaceKey = normalizeGreek(surface);
+  const ordered = [
+    ...occurrences.filter(item => normalizeGreek(item.surfaceForm) === surfaceKey),
+    ...occurrences
+  ];
+
+  for (const item of ordered) {
+    const mark = String(item.spanishHtml || "").match(/<mark[^>]*>([\s\S]*?)<\/mark>/iu);
+    if (!mark) continue;
+    const text = mark[1].replace(/<[^>]+>/gu, "").trim();
+    if (text) return text;
+  }
+
+  for (const item of ordered) {
+    const cleaned = cleanBleGloss(item.gloss);
+    if (!cleaned) continue;
+    // Drop leading function words from mechanical BLE glosses ("de herencia").
+    const trimmed = cleaned.replace(/^(de|del|la|el|los|las|un|una)\s+/iu, "").trim();
+    return trimmed || cleaned;
+  }
+
+  return "";
+}
+
 function bibleBookCandidates(bookCode) {
   return BOOK_ALIASES_ES[bookCode] || (BOOK_NAMES_ES[bookCode] ? [BOOK_NAMES_ES[bookCode]] : []);
+}
+
+// Function words / discourse connectors: pedagogical footnotes, not usage dumps.
+const CONNECTOR_LEMMAS = new Set([
+  "καί", "δέ", "γάρ", "οὖν", "ἀλλά", "ἀλλά", "μέν", "τε",
+  "ὅτι", "ἵνα", "εἰ", "ἐάν", "ὡς", "ὥστε", "διό", "ἄρα",
+  "γε", "δή", "περ", "τοίνυν", "ἐπεί", "ἐπειδή",
+  "μή", "οὐ", "οὐκ", "οὐχ", "οὐχί", "μηδέ", "μήτε", "οὔτε",
+  "ἤ", "ἢ", "καίτοι", "καίπερ"
+].map(normalizeGreek));
+
+const FOOTNOTE_ID_BY_LEMMA = Object.fromEntries(
+  Object.entries({
+    καί: "kai",
+    δέ: "de",
+    γάρ: "gar",
+    οὖν: "oun",
+    ἀλλά: "alla",
+    μέν: "men",
+    τε: "te",
+    ὅτι: "hoti",
+    ἵνα: "hina",
+    εἰ: "ei",
+    ἐάν: "ean",
+    ὡς: "hos",
+    ὥστε: "hoste",
+    διό: "dio",
+    ἄρα: "ara",
+    μή: "me",
+    οὐ: "ou",
+    οὐκ: "ou",
+    οὐχ: "ou",
+    ἤ: "e",
+    ἢ: "e"
+  }).map(([lemma, id]) => [normalizeGreek(lemma), id])
+);
+
+function describeGreekForm(surface, presenterRootDir = __dirname) {
+  ensureGreekUsageIndex(presenterRootDir);
+  const surfaceKey = normalizeGreek(surface);
+  if (!surfaceKey) {
+    return { surface: "", lemma: "", morphology: "", footnoteId: "", isConnector: false };
+  }
+
+  const lemmas = indexState.surfaceToLemma.get(surfaceKey);
+  const lemma = chooseLemma(surfaceKey, lemmas) || "";
+  const lemmaKey = normalizeGreek(lemma);
+  const rows = indexState.lemmaRows.get(lemma) || [];
+  const exact = rows.find(row =>
+    normalizeGreek(row.surfaceForm) === surfaceKey
+    || normalizeGreek(row.normalizedForm) === surfaceKey
+  );
+  const morphology = exact?.morphology || rows[0]?.morphology || "";
+  const footnoteId = FOOTNOTE_ID_BY_LEMMA[lemmaKey]
+    || FOOTNOTE_ID_BY_LEMMA[surfaceKey]
+    || "";
+  const isConnector = CONNECTOR_LEMMAS.has(lemmaKey)
+    || CONNECTOR_LEMMAS.has(surfaceKey)
+    || String(morphology).startsWith("C-");
+
+  return {
+    surface: String(surface || "").trim(),
+    lemma,
+    morphology,
+    footnoteId,
+    isConnector
+  };
 }
 
 module.exports = {
@@ -290,5 +719,7 @@ module.exports = {
   lookupGreekUsage,
   bibleBookCandidates,
   normalizeGreek,
+  highlightSpanishInVerse,
+  describeGreekForm,
   BOOK_NAMES_ES
 };

@@ -554,7 +554,142 @@ def main() -> None:
                 morph_to_tr[(ch, vs, t["morphIndex"])] = t["trIndex"]
 
     # Manual TR walks for MorphGNT↔TR word-order / article gaps (phraseIndex → TR positions + ES)
-    HAND_TR_FIXES = {}
+    HAND_TR_FIXES = {
+        # Collateral: TR places παιδία…πατέρα at end of 2:13 (not Morph’s 2:14).
+        33: {
+            "trPositions": list(range(1, 23)),
+            "spanish": (
+                "Les escribo a ustedes, padres, porque han conocido al que es "
+                "desde el principio. Les escribo a ustedes, jóvenes, porque han "
+                "vencido al maligno. Les escribo a ustedes, niñitos, porque han "
+                "conocido al Padre."
+            ),
+            "note": "TR adds γράφω ὑμῖν παιδία ὅτι ἐγνώκατε τὸν πατέρα at 2:13",
+        },
+        3: {
+            "trPositions": list(range(1, 14)),
+            "spanish": (
+                "lo que hemos visto y oído les anunciamos a ustedes, "
+                "para que ustedes también tengan comunión con nosotros;"
+            ),
+            "note": "TR omits Morph καὶ after ἀπαγγέλλομεν",
+        },
+        5: {
+            "trPositions": list(range(1, 11)),
+            "spanish": "Y estas cosas les escribimos para que su gozo sea completo.",
+            "note": "TR ὑμῖν / ὑμῶν (not Morph ἡμεῖς / ἡμῶν)",
+        },
+        6: {
+            "trPositions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "spanish": "Y este es el mensaje que hemos oído de él y les anunciamos:",
+            "note": "TR ἔστιν is tr_only (Morph index gap)",
+        },
+        10: {
+            "trPositions": list(range(13, 30)),
+            "spanish": (
+                "tenemos comunión unos con otros, y la sangre de Jesús Cristo, "
+                "su Hijo, nos limpia de todo pecado."
+            ),
+            "note": "TR includes Χριστοῦ after Ἰησοῦ (Morph omits)",
+        },
+        19: {
+            "trPositions": list(range(1, 13)),
+            "spanish": (
+                "El que dice: «Lo he conocido», y no guarda sus mandamientos, "
+                "es mentiroso;"
+            ),
+            "note": "TR omits Morph ὅτι before Ἔγνωκα",
+        },
+        34: {
+            "trPositions": [],
+            "spanish": "",
+            "note": (
+                "TR omits Morph 2:14 παιδία clause; content is TR-only at 2:13 "
+                "(phrase 33). Empty phrase kept for index stability."
+            ),
+        },
+        47: {
+            "trPositions": [9, 10, 11, 12, 13, 14, 15, 16, 17],
+            "spanish": (
+                "porque si hubieran sido de nosotros, "
+                "habrían permanecido con nosotros;"
+            ),
+            "note": "TR ἦσαν is tr_only between γὰρ and ἐξ",
+        },
+        60: {
+            "trPositions": list(range(1, 12)),
+            "spanish": (
+                "Y en cuanto a ustedes, la unción que recibieron de él "
+                "permanece en ustedes,"
+            ),
+            "note": "TR order ἐν ὑμῖν μένει (μένει is tr_only after ὑμῖν)",
+        },
+        66: {
+            "trPositions": list(range(1, 12)),
+            "spanish": (
+                "Miren qué clase de amor nos ha dado el Padre: "
+                "que seamos llamados hijos de Dios."
+            ),
+            "note": "TR omits Morph καὶ ἐσμέν",
+        },
+        98: {
+            "trPositions": list(range(1, 12)),
+            "spanish": (
+                "Hijitos míos, no amemos de palabra ni de lengua, "
+                "sino con hechos y verdad."
+            ),
+            "note": "TR has μου; omits τῇ and ἐν before ἔργῳ",
+        },
+        130: {
+            "trPositions": list(range(5, 21)),
+            "spanish": (
+                "Si nos amamos unos a otros, Dios permanece en nosotros "
+                "y su amor ha sido perfeccionado en nosotros."
+            ),
+            "note": "TR places ἐν ἡμῖν after τετελειωμένη ἐστιν (tr_only)",
+        },
+        136: {
+            "trPositions": list(range(14, 33)),
+            "spanish": (
+                "Dios es amor; y el que permanece en el amor permanece en Dios, "
+                "y Dios en él."
+            ),
+            "note": "TR ends at ἐν αὐτῷ (omits Morph final μένει)",
+        },
+        153: {
+            "trPositions": list(range(1, 18)),
+            "spanish": (
+                "¿Quién es el que vence al mundo, sino el que cree "
+                "que Jesús es el Hijo de Dios?"
+            ),
+            "note": "TR omits Morph δέ after τίς",
+        },
+        155: {
+            "trPositions": list(range(12, 24)),
+            "spanish": (
+                "No mediante el agua solamente, "
+                "sino mediante el agua y la sangre."
+            ),
+            "note": "TR has καὶ τῷ αἵματι (no Morph ἐν before τῷ αἵματι)",
+        },
+        164: {
+            "trPositions": list(range(1, 13)),
+            "spanish": "Y este es el testimonio: que Dios nos dio vida eterna,",
+            "note": "TR ἡμῖν is tr_only before ὁ Θεός",
+        },
+        167: {
+            "trPositions": list(range(1, 29)),
+            "spanish": (
+                "Estas cosas les he escrito a ustedes que creen en el nombre "
+                "del Hijo de Dios, para que sepan que tienen vida eterna, "
+                "y para que sigan creyendo en el nombre del Hijo de Dios."
+            ),
+            "note": (
+                "TR order: believers first, then ἵνα εἰδῆτε… and second "
+                "ἵνα πιστεύητε… (present subjunctive → sigan creyendo)"
+            ),
+        },
+    }
 
     phrases = json.loads(PHRASES.read_text(encoding="utf-8"))
     remapped = []
@@ -631,7 +766,8 @@ def main() -> None:
 
         rp = dict(p)
         rp["sourceTokenIds"] = new_ids
-        rp["greek"] = tr_greek or p.get("greek", "")
+        # Hand walks may intentionally be empty (TR omits Morph clause).
+        rp["greek"] = tr_greek if hand else (tr_greek or p.get("greek", ""))
         rp["spanish"] = spanish
         rp["tokenRows"] = token_rows
         rp["trAlignStatus"] = status

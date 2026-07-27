@@ -16,7 +16,7 @@ from urllib.parse import parse_qs, urlparse
 
 ROOT = Path(__file__).resolve().parent
 EXPORTER = ROOT / "md_to_pdf.py"
-DEFAULT_PATH = "/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/17.Tito/manual.md"
+DEFAULT_PATH = "/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/25.1Pedro/slides/manual.md"
 BUNDLED_PYTHON = Path(
     "/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3"
 )
@@ -56,7 +56,7 @@ def page_html(status: dict | None = None, form: dict | None = None) -> bytes:
         "label_location": "lower-quarter",
         "logo_location": "bottom-right",
         "logo_background": "70%",
-        "body_size": "12.2",
+        "body_size": "12.8",
         "variant": "both",
     }
     if form:

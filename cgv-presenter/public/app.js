@@ -29,6 +29,9 @@ let participant = null;
 let activeQuizKey = null;
 let popupState = { reference: null, scrollRatio: 0, verseIndex: 0, verseCount: 0 };
 let completedQuizIds = new Set();
+let revealAnimState = { slide: -1, step: -1, signatures: new Map() };
+// Per-slide fit sizes from full look-ahead content (avoids shrink-flicker while revealing).
+const slideFitSizeCache = new Map();
 
 const storedParticipantId = localStorage.getItem("rootsParticipantId")
   || (window.crypto?.randomUUID
@@ -104,6 +107,7 @@ function syncRenderedSlides(data = {}) {
 
     if (!renderedSlides.length || renderedSlides.length !== slideCount) {
       renderedSlides = Array.from({ length: slideCount }, () => ({ sticky: [], lines: [] }));
+      slideFitSizeCache.clear();
     }
 
     const currentSlide = Number(windowData.slide) || 0;
@@ -124,30 +128,105 @@ function syncRenderedSlides(data = {}) {
   slideCount = Number(data.slideCount) || renderedSlides.length;
 }
 
+function flattenRevealEntries(entries = []) {
+  return entries.flatMap(entry => (
+    Array.isArray(entry?.batch) ? entry.batch : [entry]
+  ));
+}
+
+function applyRevealEntrance(container) {
+  if (!container) return;
+
+  const entries = [...container.querySelectorAll(":scope > .reveal-entry")];
+  const nextSignatures = new Map(
+    entries.map(entry => [entry.dataset.revealKey || "", entry.innerHTML])
+  );
+  const samePosition = revealAnimState.slide === slide && revealAnimState.step === step;
+  // Skip the initial paint so opening a deck doesn't animate the whole slide.
+  const shouldAnimate = revealAnimState.slide >= 0
+    && !samePosition
+    && (revealAnimState.slide !== slide || revealAnimState.step !== step);
+
+  if (shouldAnimate) {
+    entries.forEach(entry => {
+      if (entry.classList.contains("reveal-sticky")) return;
+
+      const key = entry.dataset.revealKey || "";
+      const previousHtml = revealAnimState.signatures.get(key);
+      const markEnter = nodes => {
+        nodes.forEach(node => node.classList.add("reveal-enter"));
+      };
+
+      if (previousHtml === undefined) {
+        // Wrapper uses display:contents — animate the real content nodes.
+        const targets = [...entry.children];
+        markEnter(targets.length ? targets : [entry]);
+        return;
+      }
+
+      // Content cleared/shrunk (e.g. comment hidden) — no enter animation.
+      if (entry.innerHTML.length < previousHtml.length) return;
+
+      if (entry.innerHTML !== previousHtml) {
+        const comments = [...entry.querySelectorAll(".teaching-comment")];
+        if (comments.length) {
+          markEnter([comments[comments.length - 1]]);
+        } else {
+          const targets = [...entry.children];
+          markEnter(targets.length ? targets : [entry]);
+        }
+      }
+    });
+  }
+
+  revealAnimState = { slide, step, signatures: nextSignatures };
+}
+
 function render() {
   const currentSlide = normalizeRenderedSlide(renderedSlides[slide]);
-  const visible = currentSlide.lines.slice(0, step + 1);
-  const html = renderEntries([...currentSlide.sticky, ...visible]);
+  const stickyEntries = flattenRevealEntries(currentSlide.sticky);
+  const visible = flattenRevealEntries(currentSlide.lines.slice(0, step + 1));
+  const html = renderEntries([...stickyEntries, ...visible], {
+    stickyCount: stickyEntries.length
+  });
 
   if (isPresenter) {
     const currentEl = document.getElementById("current");
     currentEl.innerHTML = extractEditorialFolio(currentEl, html);
+    syncFolioClearance(currentEl);
+    applyRevealEntrance(currentEl);
 
     const nextSlide = normalizeRenderedSlide(renderedSlides[slide + 1]);
     const nextEl = document.getElementById("next");
+    const nextSticky = flattenRevealEntries(nextSlide.sticky);
     const nextHtml = nextSlide.lines.length
-      ? renderEntries([...nextSlide.sticky, ...nextSlide.lines])
+      ? renderEntries([
+          ...nextSticky,
+          ...flattenRevealEntries(nextSlide.lines)
+        ], { stickyCount: nextSticky.length })
       : `<em>${t("noNextSlide")}</em>`;
-    nextEl.innerHTML = nextSlide.lines.length
-      ? extractEditorialFolio(nextEl, nextHtml)
-      : nextHtml;
+    if (nextSlide.lines.length) {
+      nextEl.innerHTML = extractEditorialFolio(nextEl, nextHtml);
+      syncFolioClearance(nextEl);
+    } else {
+      nextEl.innerHTML = nextHtml;
+      nextEl.style.removeProperty("--folio-clearance");
+    }
 
     renderPresenterQuiz();
     renderSessionStatus();
     renderPresenterSectionSelect();
     renderAudienceQrToggle();
-    fitSlideText(currentEl, { baseSize: 52, minSize: 22 });
-    fitSlideText(nextEl, { baseSize: 36, minSize: 18 });
+    fitSlideText(currentEl, {
+      baseSize: 52,
+      minSize: 22,
+      lookaheadSlideIndex: slide
+    });
+    fitSlideText(nextEl, {
+      baseSize: 36,
+      minSize: 18,
+      lookaheadSlideIndex: slide + 1
+    });
     applySharedPopupState();
   }
 
@@ -170,11 +249,13 @@ function render() {
     projectorSlide.removeAttribute("style");
     projectorSlide.innerHTML = extractEditorialFolio(projectorSlide, html);
     applySlideLayoutClass(projectorSlide);
+    syncFolioClearance(projectorSlide);
+    applyRevealEntrance(projectorSlide);
     if (!isTablet) {
       renderProjectorQuiz();
       renderAudienceQrOverlay();
     }
-    fitProjectorSlide(projectorSlide);
+    fitProjectorSlide(projectorSlide, slide);
     applySharedPopupState();
     if (isTablet) applyTabletPreviewScale();
   }
@@ -183,17 +264,37 @@ function render() {
     const audienceSlide = document.getElementById("audienceSlide");
     audienceSlide.innerHTML = extractEditorialFolio(audienceSlide, html);
     applySlideLayoutClass(audienceSlide);
+    syncFolioClearance(audienceSlide);
+    applyRevealEntrance(audienceSlide);
     renderAudienceQuiz();
     if (!audienceSlide.classList.contains("cover-slide")) {
       fitSlideText(audienceSlide, {
         baseSize: 48,
         minSize: 22,
         maxHeight: Math.max(220, window.innerHeight * 0.48),
-        maxWidth: audienceSlide.clientWidth
+        maxWidth: audienceSlide.clientWidth,
+        lookaheadSlideIndex: slide
       });
     }
     applySharedPopupState();
   }
+}
+
+function syncFolioClearance(slideElement) {
+  if (!slideElement) return;
+
+  const parent = slideElement.parentElement;
+  const header = parent?.querySelector(".editorial-folio-header");
+  if (!header) {
+    slideElement.style.removeProperty("--folio-clearance");
+    return;
+  }
+
+  const headerRect = header.getBoundingClientRect();
+  const slideRect = slideElement.getBoundingClientRect();
+  const gap = 14;
+  const clearance = Math.max(0, Math.ceil(headerRect.bottom - slideRect.top + gap));
+  slideElement.style.setProperty("--folio-clearance", `${clearance}px`);
 }
 
 function extractEditorialFolio(slideElement, html) {
@@ -202,6 +303,7 @@ function extractEditorialFolio(slideElement, html) {
 
   if (!parent) {
     existingHeader?.remove();
+    slideElement?.style?.removeProperty("--folio-clearance");
     return html;
   }
 
@@ -211,6 +313,7 @@ function extractEditorialFolio(slideElement, html) {
 
   if (!contexts.length) {
     existingHeader?.remove();
+    slideElement.style.removeProperty("--folio-clearance");
     return html;
   }
 
@@ -517,7 +620,7 @@ function isVideoMedia(value) {
   return /\.(mp4|webm|ogg|mov)(?:[?#].*)?$/i.test(String(value || "").trim());
 }
 
-function renderEntries(entries) {
+function renderEntries(entries, { stickyCount = 0 } = {}) {
   const rendered = [];
   const replaceIndexes = {};
   const lastEntryIndex = entries.length - 1;
@@ -527,9 +630,12 @@ function renderEntries(entries) {
       ? entry.h4OnlyHtml
       : getEntryHtml(entry);
     const replaceGroup = typeof entry === "string" ? null : entry?.replaceGroup;
+    const key = replaceGroup || `entry-${index}`;
+    const wrapped = `<div class="reveal-entry${index < stickyCount ? " reveal-sticky" : ""}" data-reveal-key="${escapeHtml(key)}">${html}</div>`;
 
     if (replaceGroup && replaceIndexes[replaceGroup] !== undefined) {
-      rendered[replaceIndexes[replaceGroup]] = html;
+      const slot = replaceIndexes[replaceGroup];
+      rendered[slot] = `<div class="reveal-entry${slot < stickyCount ? " reveal-sticky" : ""}" data-reveal-key="${escapeHtml(key)}">${html}</div>`;
       return;
     }
 
@@ -537,7 +643,7 @@ function renderEntries(entries) {
       replaceIndexes[replaceGroup] = rendered.length;
     }
 
-    rendered.push(html);
+    rendered.push(wrapped);
   });
 
   return rendered.join("");
@@ -695,9 +801,9 @@ function renderSharedPopupOverlay() {
   if (!sourcePopup) return;
 
   overlay.innerHTML = sourcePopup.innerHTML;
-  // A mirrored projector is the only output view that can control the shared
-  // popup. Extended projector and audience views remain read-only followers.
-  if (!(isProjector && projectorMode === "mirrored")) {
+  // Keep verse navigation on the projector so multi-verse popups can be stepped
+  // from the output screen. Audience remains a read-only follower.
+  if (isAudience) {
     overlay.querySelector(".bible-popup-nav")?.remove();
   }
   applyPopupVerseVisibility(overlay, popupState.verseIndex);
@@ -736,18 +842,22 @@ function getProjectorLayoutSize() {
   };
 }
 
-function fitProjectorSlide(slideEl) {
+function fitProjectorSlide(slideEl, slideIndex = slide) {
   if (!slideEl || slideEl.classList.contains("cover-slide")) return;
+
+  const lookaheadHtml = buildSlideHtmlAtStep(slideIndex, null);
+  const baseSize = getProjectorBaseSizeFromHtml(lookaheadHtml || slideEl.innerHTML);
 
   if (isTablet) {
     fitSlideText(slideEl, {
-      baseSize: getProjectorBaseSize(slideEl),
+      baseSize,
       minSize: projectorMode === "extended" ? 44 : 36,
       hardMinSize: 28,
       maxHeight: slideEl.clientHeight,
       maxWidth: slideEl.clientWidth,
       densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
-      sizeBoost: projectorMode === "extended" ? 6 : 0
+      sizeBoost: projectorMode === "extended" ? 6 : 0,
+      lookaheadSlideIndex: slideIndex
     });
     return;
   }
@@ -755,13 +865,14 @@ function fitProjectorSlide(slideEl) {
   const viewport = getProjectorLayoutSize();
 
   fitSlideText(slideEl, {
-    baseSize: getProjectorBaseSize(slideEl),
+    baseSize,
     minSize: projectorMode === "extended" ? 44 : 36,
     hardMinSize: 28,
     maxHeight: viewport.height - 160,
     maxWidth: Math.min(slideEl.clientWidth || viewport.width * 0.78, viewport.width - 140),
     densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
-    sizeBoost: projectorMode === "extended" ? 6 : 0
+    sizeBoost: projectorMode === "extended" ? 6 : 0,
+    lookaheadSlideIndex: slideIndex
   });
 }
 
@@ -782,6 +893,118 @@ function applyTabletPreviewScale() {
   root.style.transform = `scale(${scale})`;
 }
 
+function buildSlideHtmlAtStep(slideIndex, stepIndex = null) {
+  if (!Number.isInteger(slideIndex) || slideIndex < 0) return "";
+  const slideData = normalizeRenderedSlide(renderedSlides[slideIndex]);
+  if (!slideData.lines?.length && !slideData.sticky?.length) return "";
+
+  const stickyEntries = flattenRevealEntries(slideData.sticky);
+  const lineEntries = flattenRevealEntries(slideData.lines);
+  const visibleLines = stepIndex == null
+    ? lineEntries
+    : lineEntries.slice(0, Math.max(0, stepIndex) + 1);
+
+  return renderEntries([...stickyEntries, ...visibleLines], {
+    stickyCount: stickyEntries.length
+  });
+}
+
+function getSlideFitCacheKey(slideIndex, element, options = {}) {
+  const width = Math.round(options.maxWidth || element.clientWidth || window.innerWidth);
+  const height = Math.round(options.maxHeight || element.clientHeight || window.innerHeight);
+  const role = isPresenter ? "presenter" : (isProjector ? `projector-${projectorMode}` : "audience");
+  return `${role}|${slideIndex}|${width}x${height}|${options.baseSize || 0}|${options.minSize || 0}`;
+}
+
+function measureFitSizeForHtml(referenceElement, html, options = {}) {
+  if (!referenceElement) return options.minSize || 18;
+
+  const baseSize = options.baseSize || 46;
+  const minSize = options.minSize || 18;
+  const hardMinSize = options.hardMinSize || minSize;
+  const maxHeight = options.maxHeight || referenceElement.clientHeight || 350;
+  const maxWidth = options.maxWidth || referenceElement.clientWidth || window.innerWidth;
+  const probeWidth = Math.max(1, referenceElement.clientWidth || maxWidth);
+
+  // Guard: if the live slide isn't laid out yet, don't cache a bogus tiny size.
+  if (probeWidth < 32 || maxHeight < 32) {
+    return null;
+  }
+
+  const host = referenceElement.parentElement || document.body;
+  const probe = referenceElement.cloneNode(false);
+  probe.className = referenceElement.className;
+  probe.removeAttribute("id");
+  probe.innerHTML = html;
+  probe.setAttribute("aria-hidden", "true");
+  Object.assign(probe.style, {
+    position: "absolute",
+    left: "-100000px",
+    top: "0",
+    // Width matches the slide; height stays auto so we can compare content
+    // scrollHeight against maxHeight. A fixed probe height made offsetHeight
+    // always "overflow", which collapsed fit-size to the minimum.
+    width: `${probeWidth}px`,
+    height: "auto",
+    maxHeight: "none",
+    overflow: "visible",
+    visibility: "hidden",
+    pointerEvents: "none",
+    zIndex: "-1"
+  });
+  host.appendChild(probe);
+
+  const densityPenalty = getSlideDensityPenalty(probe) * (options.densityFactor ?? 1);
+  let size = Math.max(minSize, baseSize + (options.sizeBoost || 0) - densityPenalty);
+  probe.style.setProperty("--fit-size", `${size}px`);
+
+  while (
+    size > hardMinSize
+    && (probe.scrollHeight > maxHeight || probe.scrollWidth > maxWidth)
+  ) {
+    size -= 2;
+    if (size < hardMinSize) size = hardMinSize;
+    probe.style.setProperty("--fit-size", `${size}px`);
+  }
+
+  probe.remove();
+  return size;
+}
+
+function getLookaheadFitSize(slideIndex, element, options = {}) {
+  if (!element || !Number.isInteger(slideIndex) || slideIndex < 0) return null;
+
+  const cacheKey = getSlideFitCacheKey(slideIndex, element, options);
+  if (slideFitSizeCache.has(cacheKey)) {
+    return slideFitSizeCache.get(cacheKey);
+  }
+
+  const slideData = normalizeRenderedSlide(renderedSlides[slideIndex]);
+  const lineCount = flattenRevealEntries(slideData.lines).length;
+  if (!lineCount && !slideData.sticky?.length) return null;
+
+  // Use the tightest size required by any reveal step so early steps don't
+  // start large and then shrink when more text appears.
+  let tightest = null;
+  for (let stepIndex = 0; stepIndex < Math.max(1, lineCount); stepIndex += 1) {
+    const html = buildSlideHtmlAtStep(slideIndex, stepIndex);
+    if (!html) continue;
+    const size = measureFitSizeForHtml(element, html, options);
+    if (size == null) return null;
+    tightest = tightest == null ? size : Math.min(tightest, size);
+  }
+
+  if (tightest == null) return null;
+  slideFitSizeCache.set(cacheKey, tightest);
+  return tightest;
+}
+
+function getProjectorBaseSizeFromHtml(html) {
+  const probe = document.createElement("div");
+  probe.innerHTML = html || "";
+  return getProjectorBaseSize(probe);
+}
+
 function fitSlideText(element, options = {}) {
   if (!element) return;
 
@@ -790,6 +1013,22 @@ function fitSlideText(element, options = {}) {
   const hardMinSize = options.hardMinSize || minSize;
   const maxHeight = options.maxHeight || element.clientHeight || 350;
   const maxWidth = options.maxWidth || element.clientWidth || window.innerWidth;
+  const lookaheadIndex = Number.isInteger(options.lookaheadSlideIndex)
+    ? options.lookaheadSlideIndex
+    : null;
+
+  if (lookaheadIndex != null) {
+    const lookaheadSize = getLookaheadFitSize(lookaheadIndex, element, {
+      ...options,
+      maxHeight,
+      maxWidth
+    });
+    if (lookaheadSize != null) {
+      element.style.setProperty("--fit-size", `${lookaheadSize}px`);
+      return;
+    }
+  }
+
   const densityPenalty = getSlideDensityPenalty(element) * (options.densityFactor ?? 1);
   let size = Math.max(minSize, baseSize + (options.sizeBoost || 0) - densityPenalty);
 
@@ -1316,10 +1555,15 @@ document.addEventListener("click", event => {
   }
 
   const verseButton = event.target.closest("[data-popup-verse]");
-  if ((isPresenter || (isProjector && projectorMode === "mirrored")) && verseButton) {
+  if ((isPresenter || isProjector) && verseButton) {
     event.preventDefault();
     event.stopPropagation();
     stepPopupVerse(Number(verseButton.dataset.popupVerse));
+    return;
+  }
+
+  // Clicks inside the projector/audience popup overlay should not dismiss it.
+  if ((isProjector || isAudience) && event.target.closest("#sharedPopupOverlay")) {
     return;
   }
 
@@ -1350,7 +1594,7 @@ document.addEventListener("click", event => {
   if ((isProjector || isAudience) && reference && document.getElementById("sharedPopupOverlay")) {
     event.preventDefault();
     const nextReference = reference.dataset.reference || null;
-    if (isProjector && projectorMode === "mirrored") {
+    if (isProjector) {
       socket.emit("set-popup-reference", popupState.reference === nextReference ? null : nextReference);
       return;
     }
@@ -1365,8 +1609,7 @@ document.addEventListener("click", event => {
   }
 
   if (isProjector && popupState.reference) {
-    popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
-    renderSharedPopupOverlay();
+    socket.emit("set-popup-reference", null);
     return;
   }
 
@@ -1425,6 +1668,7 @@ if (isAudience) {
 }
 
 window.addEventListener("resize", () => {
+  slideFitSizeCache.clear();
   render();
   applyTabletPreviewScale();
 });
@@ -1444,7 +1688,7 @@ if (isPresenter || (isProjector && !isTablet)) {
       return;
     }
 
-    const canControlPopup = isPresenter || (isProjector && projectorMode === "mirrored");
+    const canControlPopup = isPresenter || isProjector;
     if (canControlPopup && popupState.reference) {
       if (e.key === "ArrowRight" || e.key === " ") {
         e.preventDefault();
@@ -1466,8 +1710,7 @@ if (isPresenter || (isProjector && !isTablet)) {
     if (e.key === "ArrowRight" || e.key === " ") next();
     if (e.key === "ArrowLeft") prev();
     if (isProjector && e.key === "Escape") {
-      popupState = { reference: null, scrollRatio: 0, verseIndex: 0 };
-      renderSharedPopupOverlay();
+      socket.emit("set-popup-reference", null);
     }
   });
 }

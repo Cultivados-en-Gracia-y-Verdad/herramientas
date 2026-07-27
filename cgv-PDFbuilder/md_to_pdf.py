@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export plain Markdown study notes to a polished PDF manual."""
+"""Export CGV study-manual Markdown (new outline format) to letter-sized PDFs."""
 
 from __future__ import annotations
 
@@ -26,13 +26,16 @@ VERSE_HEADING_RE = re.compile(r"^[1-3]?\s?[A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÜÑ
 LIST_RE = re.compile(r"^(?P<indent>\s*)(?P<marker>[-*+])\s+(?P<text>.+)$")
 NUMBERED_LIST_RE = re.compile(r"^(?P<indent>\s*)(?P<marker>\d+[.)])\s+(?P<text>.+)$")
 IMAGE_RE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<path>[^)]+)\)$")
-SCRIPTURE_QUOTE_PAIRS = {
-    "“": "”",
-    "«": "»",
-}
+FOOTNOTE_DEF_RE = re.compile(r"^\[\^(?P<id>[^\]]+)\]:\s*(?P<text>.+)$")
+FOOTNOTE_CITE_RE = re.compile(r"\[\^(?P<id>[^\]]+)\]")
+ACTOR_TRIPLE_RE = re.compile(r"→")
+ACTORS_LINE_RE = re.compile(r"^Actores\b", re.IGNORECASE)
+TONO_LINE_RE = re.compile(r"^Tono\b", re.IGNORECASE)
 FRONT_MATTER_RE = re.compile(r"\A---\s*\n(?P<body>.*?)\n---\s*(?:\n|\Z)", re.DOTALL)
 DEFAULT_LOGO_PATH = Path(__file__).resolve().parent / "assets" / "cgv-logo.png"
-DEFAULT_MANUAL_PATH = Path("/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/17.Tito/manual.md")
+DEFAULT_MANUAL_PATH = Path(
+    "/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/25.1Pedro/slides/manual.md"
+)
 COVER_LABEL_LOCATIONS = {
     "top-center": (0.5, 0.94),
     "center": (0.5, 0.5),
@@ -46,24 +49,31 @@ LOGO_LOCATIONS = {
     "top-left": (0.12, 0.91),
 }
 FONT_DIRS = [
-    Path("/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype"),
     Path("/System/Library/Fonts/Supplemental"),
     Path("/Library/Fonts"),
+    Path("/System/Library/Fonts"),
+    Path("/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype"),
 ]
+IOWAN_TTC = Path("/System/Library/Fonts/Supplemental/Iowan Old Style.ttc")
+
+# 2 spaces in source = one outline depth step. Wide enough to read as a tree.
+INDENT_STEP = 0.30 * inch
+INDENT_BASE = 0.06 * inch
 
 
 @dataclass(frozen=True)
 class Theme:
     page_width: float = letter[0]
     page_height: float = letter[1]
-    margin_x: float = 0.72 * inch
-    margin_top: float = 0.66 * inch
-    margin_bottom: float = 0.74 * inch
-    body_size: float = 12.2
-    leading: float = 16.3
-    footer_size: float = 8.8
+    margin_x: float = 0.80 * inch
+    margin_top: float = 0.72 * inch
+    margin_bottom: float = 0.82 * inch
+    body_size: float = 12.8
+    leading: float = 19.0
+    footer_size: float = 8.4
     title: str = "Manual"
     subtitle: str = ""
+    telos: str = ""
     version: str = ""
     footer_left: str = ""
     footer_center: str = "www.discipuladocgv.org"
@@ -90,7 +100,6 @@ class PageNumberCanvas:
 
     def __init__(self, theme: Theme):
         self.theme = theme
-        self.pages = []
 
     def __call__(self, canvas, doc):
         font_regular, _, _, _ = register_fonts()
@@ -137,7 +146,7 @@ class PageNumberCanvas:
         self.draw_logo_badge(canvas)
 
     def draw_inside_title_page(self, canvas) -> None:
-        font_regular, font_bold, _, _ = register_fonts()
+        font_regular, font_bold, font_italic, _ = register_fonts()
         page_width = self.theme.page_width
         page_height = self.theme.page_height
 
@@ -193,6 +202,20 @@ class PageNumberCanvas:
             canvas.setFont(font_regular, 14)
             canvas.setFillColor(colors.HexColor("#444444"))
             canvas.drawCentredString(page_width / 2, current_y - 0.08 * inch, f"Versión {self.theme.version}")
+            current_y -= 0.42 * inch
+
+        if self.theme.telos:
+            telos_style = ParagraphStyle(
+                "InsideTitlePageTelos",
+                fontName=font_italic,
+                fontSize=11.5,
+                leading=15.5,
+                alignment=TA_CENTER,
+                textColor=colors.HexColor("#3a342c"),
+            )
+            telos = Paragraph(escape_inline(self.theme.telos), telos_style)
+            _, telos_height = telos.wrap(text_width, 1.6 * inch)
+            telos.drawOn(canvas, text_x, current_y - telos_height)
 
         if self.theme.manual_type:
             canvas.setFillColor(colors.HexColor("#080808"))
@@ -279,31 +302,42 @@ def first_existing_font(names: list[str]) -> str | None:
 
 
 def register_fonts() -> tuple[str, str, str, str]:
-    regular = first_existing_font(["STIXGeneral.otf", "STIXTwoText.ttf", "Georgia.ttf", "DejaVuSerif.ttf"])
-    bold = first_existing_font(["STIXGeneralBol.otf", "Georgia Bold.ttf", "DejaVuSerif-Bold.ttf"])
-    italic = first_existing_font(["STIXGeneralItalic.otf", "STIXTwoText-Italic.ttf", "Georgia Italic.ttf", "DejaVuSerif-Italic.ttf"])
-    bold_italic = first_existing_font(["STIXGeneralBolIta.otf", "Georgia Bold Italic.ttf", "DejaVuSerif-BoldItalic.ttf"])
+    """Prefer Iowan Old Style (CGV reader face), then Georgia, then DejaVu."""
+    if IOWAN_TTC.exists():
+        pdfmetrics.registerFont(TTFont("CGVSerif", os.fspath(IOWAN_TTC), subfontIndex=0))
+        pdfmetrics.registerFont(TTFont("CGVSerif-Bold", os.fspath(IOWAN_TTC), subfontIndex=1))
+        pdfmetrics.registerFont(TTFont("CGVSerif-Italic", os.fspath(IOWAN_TTC), subfontIndex=2))
+        pdfmetrics.registerFont(TTFont("CGVSerif-BoldItalic", os.fspath(IOWAN_TTC), subfontIndex=3))
+    else:
+        regular = first_existing_font(["Georgia.ttf", "DejaVuSerif.ttf"])
+        bold = first_existing_font(["Georgia Bold.ttf", "DejaVuSerif-Bold.ttf"])
+        italic = first_existing_font(["Georgia Italic.ttf", "DejaVuSerif-Italic.ttf"])
+        bold_italic = first_existing_font(["Georgia Bold Italic.ttf", "DejaVuSerif-BoldItalic.ttf"])
+        if not regular:
+            return ("Helvetica", "Helvetica-Bold", "Helvetica-Oblique", "Helvetica-BoldOblique")
+        pdfmetrics.registerFont(TTFont("CGVSerif", regular))
+        pdfmetrics.registerFont(TTFont("CGVSerif-Bold", bold or regular))
+        pdfmetrics.registerFont(TTFont("CGVSerif-Italic", italic or regular))
+        pdfmetrics.registerFont(TTFont("CGVSerif-BoldItalic", bold_italic or bold or italic or regular))
 
-    if not regular:
-        return ("Helvetica", "Helvetica-Bold", "Helvetica-Oblique", "Helvetica-BoldOblique")
-
-    pdfmetrics.registerFont(TTFont("CGVSans", regular))
-    pdfmetrics.registerFont(TTFont("CGVSans-Bold", bold or regular))
-    pdfmetrics.registerFont(TTFont("CGVSans-Italic", italic or regular))
-    pdfmetrics.registerFont(TTFont("CGVSans-BoldItalic", bold_italic or bold or italic or regular))
     pdfmetrics.registerFontFamily(
-        "CGVSans",
-        normal="CGVSans",
-        bold="CGVSans-Bold",
-        italic="CGVSans-Italic",
-        boldItalic="CGVSans-BoldItalic",
+        "CGVSerif",
+        normal="CGVSerif",
+        bold="CGVSerif-Bold",
+        italic="CGVSerif-Italic",
+        boldItalic="CGVSerif-BoldItalic",
     )
-    return ("CGVSans", "CGVSans-Bold", "CGVSans-Italic", "CGVSans-BoldItalic")
+    return ("CGVSerif", "CGVSerif-Bold", "CGVSerif-Italic", "CGVSerif-BoldItalic")
 
 
 def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
-    font_regular, font_bold, font_italic, _ = register_fonts()
+    font_regular, font_bold, font_italic, font_bold_italic = register_fonts()
     sample = getSampleStyleSheet()
+    ink = colors.HexColor("#1a1713")
+    muted = colors.HexColor("#6a635a")
+    soft = colors.HexColor("#857c70")
+    accent = colors.HexColor("#3a555c")
+
     base = ParagraphStyle(
         "ManualBody",
         parent=sample["BodyText"],
@@ -311,8 +345,9 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
         fontSize=theme.body_size,
         leading=theme.leading,
         alignment=TA_LEFT,
-        spaceBefore=2,
-        spaceAfter=5,
+        textColor=ink,
+        spaceBefore=3,
+        spaceAfter=7,
     )
 
     return {
@@ -334,78 +369,163 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             alignment=TA_CENTER,
             spaceAfter=2.8 * inch,
         ),
+        # H1 — major movement
         "h1": ParagraphStyle(
             "Heading1",
             parent=base,
             fontName=font_bold,
-            fontSize=18.5,
-            leading=23,
+            fontSize=14.5,
+            leading=19,
             alignment=TA_CENTER,
-            spaceBefore=16,
-            spaceAfter=9,
+            spaceBefore=22,
+            spaceAfter=12,
             keepWithNext=True,
         ),
+        # H2 — development navigation: top and small
         "h2": ParagraphStyle(
             "Heading2",
             parent=base,
             fontName=font_bold,
-            fontSize=16,
-            leading=20,
+            fontSize=11.2,
+            leading=14.5,
             alignment=TA_CENTER,
-            spaceBefore=13,
-            spaceAfter=7,
+            textColor=muted,
+            spaceBefore=18,
+            spaceAfter=8,
             keepWithNext=True,
         ),
+        # H3 — section context title
         "h3": ParagraphStyle(
             "Heading3",
             parent=base,
             fontName=font_bold,
-            fontSize=14,
-            leading=18,
-            spaceBefore=12,
-            spaceAfter=6,
+            fontSize=13.0,
+            leading=17.5,
+            spaceBefore=18,
+            spaceAfter=9,
             keepWithNext=True,
         ),
+        "h3_sintesis": ParagraphStyle(
+            "Heading3Sintesis",
+            parent=base,
+            fontName=font_bold,
+            fontSize=12.2,
+            leading=16,
+            textColor=accent,
+            spaceBefore=20,
+            spaceAfter=9,
+            keepWithNext=True,
+        ),
+        # H4 — independent clause (Scripture root)
         "h4": ParagraphStyle(
             "Heading4",
             parent=base,
-            fontName=font_bold,
-            fontSize=13.2,
-            leading=17,
-            spaceBefore=10,
-            spaceAfter=5,
+            fontName=font_bold_italic,
+            fontSize=theme.body_size + 0.8,
+            leading=theme.leading + 1.5,
+            spaceBefore=14,
+            spaceAfter=8,
             keepWithNext=True,
         ),
         "h5": ParagraphStyle(
             "Heading5",
             parent=base,
             fontName=font_bold,
-            fontSize=12.8,
-            leading=16.8,
-            spaceBefore=8,
-            spaceAfter=4,
+            fontSize=12.2,
+            leading=16,
+            spaceBefore=10,
+            spaceAfter=5,
             keepWithNext=True,
         ),
         "h6": ParagraphStyle(
             "Heading6",
             parent=base,
             fontName=font_bold,
-            fontSize=12.4,
-            leading=16.4,
-            spaceBefore=7,
-            spaceAfter=3,
+            fontSize=11.8,
+            leading=15.5,
+            spaceBefore=8,
+            spaceAfter=4,
             keepWithNext=True,
         ),
         "body": base,
-        "verse": ParagraphStyle(
-            "Verse",
+        "writer": ParagraphStyle(
+            "WriterComment",
             parent=base,
             fontName=font_regular,
-            fontSize=theme.body_size + 0.3,
-            leading=theme.leading + 1,
-            leftIndent=0.18 * inch,
-            rightIndent=0.18 * inch,
-            spaceBefore=8,
+            fontSize=theme.body_size - 0.2,
+            leading=theme.leading,
+            textColor=colors.HexColor("#2a2620"),
+            spaceBefore=3,
+            spaceAfter=8,
+        ),
+        "scripture_phrase": ParagraphStyle(
+            "ScripturePhrase",
+            parent=base,
+            fontName=font_italic,
+            fontSize=theme.body_size + 0.2,
+            leading=theme.leading + 0.4,
+            spaceBefore=4,
+            spaceAfter=3,
+        ),
+        "dependent_clause": ParagraphStyle(
+            "DependentClause",
+            parent=base,
+            fontName=font_italic,
+            fontSize=theme.body_size + 0.2,
+            leading=theme.leading + 0.4,
+            spaceBefore=6,
+            spaceAfter=4,
+        ),
+        "mechanical": ParagraphStyle(
+            "MechanicalNote",
+            parent=base,
+            fontName=font_regular,
+            fontSize=theme.body_size - 1.6,
+            leading=theme.leading - 2.2,
+            textColor=soft,
+            spaceBefore=2,
+            spaceAfter=3,
+        ),
+        "actor_triple": ParagraphStyle(
+            "ActorTriple",
+            parent=base,
+            fontName=font_bold,
+            fontSize=theme.body_size - 0.2,
+            leading=theme.leading - 0.2,
+            textColor=accent,
+            spaceBefore=6,
+            spaceAfter=3,
+        ),
+        "actors_line": ParagraphStyle(
+            "ActorsLine",
+            parent=base,
+            fontName=font_regular,
+            fontSize=theme.body_size - 1.8,
+            leading=theme.leading - 2.4,
+            textColor=muted,
+            spaceBefore=3,
+            spaceAfter=8,
+        ),
+        "footnote_def": ParagraphStyle(
+            "FootnoteDef",
+            parent=base,
+            fontName=font_regular,
+            fontSize=theme.body_size - 1.8,
+            leading=theme.leading - 2.4,
+            leftIndent=0.22 * inch,
+            firstLineIndent=-0.22 * inch,
+            textColor=colors.HexColor("#2e2a24"),
+            spaceBefore=3,
+            spaceAfter=4,
+        ),
+        "sintesis_body": ParagraphStyle(
+            "SintesisBody",
+            parent=base,
+            fontName=font_regular,
+            fontSize=theme.body_size,
+            leading=theme.leading + 0.8,
+            textColor=colors.HexColor("#2a2620"),
+            spaceBefore=3,
             spaceAfter=8,
         ),
         "bullet": ParagraphStyle(
@@ -413,45 +533,10 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             parent=base,
             leftIndent=0,
             firstLineIndent=0,
-            spaceBefore=1,
-            spaceAfter=2,
-        ),
-        "human_observation": ParagraphStyle(
-            "HumanObservationText",
-            parent=base,
-            fontName=font_italic,
-            leftIndent=0,
-            firstLineIndent=0,
-            spaceBefore=1,
-            spaceAfter=2,
+            spaceBefore=2,
+            spaceAfter=3,
         ),
     }
-
-
-LIST_ROLE_STYLES = {
-    "-": {
-        "name": "Clause",
-        "left": 0.28 * inch,
-        "first": 0,
-        "space_before": 5,
-        "space_after": 4,
-    },
-    "*": {
-        "name": "MechanicalObservation",
-        "left": 0.62 * inch,
-        "first": 0,
-        "space_before": 1,
-        "space_after": 3,
-    },
-    "+": {
-        "name": "HumanObservation",
-        "left": 0.62 * inch,
-        "first": 0,
-        "space_before": 1,
-        "space_after": 3,
-        "font_style": "italic",
-    },
-}
 
 
 def escape_inline(text: str) -> str:
@@ -462,6 +547,11 @@ def escape_inline(text: str) -> str:
     text = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"<i>\1</i>", text)
     text = re.sub(r"(?<!_)_([^_\n]+)_(?!_)", r"<i>\1</i>", text)
     return text
+
+
+def footnote_cite_html(footnote_id: str) -> str:
+    label = html.escape(footnote_id, quote=False)
+    return f"<super><font size='7' color='#5c564e'>{label}</font></super>"
 
 
 def answer_tag_html(match: re.Match[str], variant: str) -> str:
@@ -490,18 +580,42 @@ def restore_protected(text: str, replacements: dict[str, str]) -> str:
     return text
 
 
-def format_inline(text: str, variant: str = "teacher") -> str:
-    stripped = text.strip()
-    protected, replacements = protect_answer_tags(stripped, variant)
-    if len(stripped) >= 2:
-        closing = SCRIPTURE_QUOTE_PAIRS.get(protected[0])
-        if closing and protected.endswith(closing):
-            inner = protected[1:-1].strip()
-            return restore_protected(f"« <i>{escape_inline(inner)}</i> »", replacements)
-    italic_match = re.fullmatch(r"\*([^*]+)\*", protected)
-    if italic_match:
-        return restore_protected(f"« <i>{escape_inline(italic_match.group(1))}</i> »", replacements)
-    return restore_protected(escape_inline(protected), replacements)
+def strip_outer_italics(text: str) -> str:
+    """Outline Scripture is already italic via style; unwrap a single outer *…*."""
+    match = re.fullmatch(r"\*(.+)\*", text.strip(), flags=re.DOTALL)
+    if match and match.group(1).count("*") == 0:
+        return match.group(1).strip()
+    return text.strip()
+
+
+def protect_footnote_cites(text: str) -> tuple[str, dict[str, str]]:
+    replacements: dict[str, str] = {}
+
+    def replace(match: re.Match[str]) -> str:
+        key = f"@@FOOTNOTE{len(replacements)}@@"
+        replacements[key] = footnote_cite_html(match.group("id"))
+        return key
+
+    return FOOTNOTE_CITE_RE.sub(replace, text), replacements
+
+
+def normalize_outline_symbols(text: str) -> str:
+    """Map arrows Iowan lacks to glyphs the book face actually has."""
+    text = text.replace("→", " › ")
+    text = re.sub(r"↳\s*", "· ", text)
+    return re.sub(r" {2,}", " ", text)
+
+
+def format_inline(text: str, variant: str = "teacher", *, scripture_style: bool = False) -> str:
+    """Format inline Markdown. Scripture stays italic-only — never wrapped in «…»."""
+    stripped = normalize_outline_symbols(text.strip())
+    if scripture_style:
+        stripped = strip_outer_italics(stripped)
+    protected, answer_replacements = protect_answer_tags(stripped, variant)
+    protected, footnote_replacements = protect_footnote_cites(protected)
+    rendered = escape_inline(protected)
+    rendered = restore_protected(rendered, answer_replacements)
+    return restore_protected(rendered, footnote_replacements)
 
 
 def parse_front_matter(markdown: str) -> tuple[dict[str, str], str]:
@@ -520,12 +634,21 @@ def parse_front_matter(markdown: str) -> tuple[dict[str, str], str]:
 
 
 def resolve_asset_path(value: str, source_path: Path) -> str:
+    """Resolve a cover/logo path next to the Markdown file, then parent folders."""
     if not value:
         return ""
     path = Path(value).expanduser()
-    if not path.is_absolute():
-        path = source_path.parent / path
-    return os.fspath(path.resolve())
+    if path.is_absolute():
+        return os.fspath(path.resolve()) if path.exists() else os.fspath(path)
+
+    candidates = [
+        source_path.parent / path,
+        source_path.parent.parent / path,
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return os.fspath(candidate.resolve())
+    return os.fspath((source_path.parent / path).resolve())
 
 
 def resolve_markdown_image_path(value: str, source_path: Path | None) -> Path:
@@ -550,20 +673,8 @@ def parse_opacity(value: str | float | None, default: float = 0.70) -> float:
         return default
 
 
-def make_paragraph(text: str, style: ParagraphStyle, variant: str = "teacher") -> Paragraph:
-    return Paragraph(format_inline(text, variant), style)
-
-
-def scripture_line_text(text: str) -> str | None:
-    match = re.fullmatch(r"\*([^*]+)\*", text.strip())
-    if not match:
-        return None
-    return match.group(1).strip()
-
-
-def make_scripture_paragraph(text: str, style: ParagraphStyle, variant: str) -> Paragraph:
-    protected, replacements = protect_answer_tags(text.strip(), variant)
-    return Paragraph(restore_protected(f"« <i>{escape_inline(protected)}</i> »", replacements), style)
+def make_paragraph(text: str, style: ParagraphStyle, variant: str = "teacher", *, scripture_style: bool = False) -> Paragraph:
+    return Paragraph(format_inline(text, variant, scripture_style=scripture_style), style)
 
 
 def make_markdown_image(image_path: Path, max_width: float, max_height: float = 3.35 * inch) -> Image:
@@ -601,57 +712,97 @@ def append_markdown_image(
     story.append(Spacer(1, 8))
 
 
-def flush_paragraph(lines: list[str], story: list[Flowable], styles: dict[str, ParagraphStyle], variant: str) -> None:
-    if not lines:
-        return
-    text = " ".join(line.strip() for line in lines if line.strip())
-    if not text:
-        lines.clear()
-        return
-    style = styles["verse"] if text.startswith(("“", "«")) and text.endswith(("”", "»")) else styles["body"]
-    story.append(make_paragraph(text, style, variant))
-    lines.clear()
+def outline_left(indent_levels: int, base: float = INDENT_BASE) -> float:
+    return base + max(0, indent_levels) * INDENT_STEP
 
 
-def flush_context_paragraph(
-    lines: list[str],
+GREEK_RE = re.compile(r"[\u0370-\u03FF\u1F00-\u1FFF]")
+HANGER_RE = re.compile(r"^↳")
+
+
+def classify_outline_line(marker: str, text: str) -> str:
+    """Role from content first — manuals sometimes overload `-` across roles."""
+    clean = text.strip()
+    if ACTORS_LINE_RE.match(clean) or TONO_LINE_RE.match(clean):
+        return "actors_line"
+    if ACTOR_TRIPLE_RE.search(clean):
+        return "actor_triple"
+    if HANGER_RE.match(clean) or clean.startswith("↳"):
+        return "mechanical"
+    if FOOTNOTE_CITE_RE.search(clean) and (GREEK_RE.search(clean) or len(clean) < 90):
+        return "mechanical"
+    if marker == "*":
+        return "mechanical"
+    if marker == "+":
+        return "scripture_phrase"
+    # `-` Scripture outline (phrase or dependent clause)
+    if clean.startswith("*") or re.fullmatch(r"\*.+\*", clean, flags=re.DOTALL):
+        return "dependent_clause" if marker == "-" else "scripture_phrase"
+    if marker == "-":
+        return "dependent_clause"
+    return "mechanical"
+
+
+def append_outline_item(
+    indent: int,
+    marker: str,
+    text: str,
     story: list[Flowable],
     styles: dict[str, ParagraphStyle],
-    context: LayoutContext,
     variant: str,
-) -> None:
-    if not lines:
-        return
-    text = " ".join(line.strip() for line in lines if line.strip())
-    if not text:
-        lines.clear()
-        return
+) -> LayoutContext:
+    kind = classify_outline_line(marker, text)
+    left = outline_left(indent)
 
-    if context.paragraph_parent == "scripture":
-        story.append(make_scripture_paragraph(text, styles["verse"], variant))
-        lines.clear()
-        return
+    if kind in {"scripture_phrase", "dependent_clause"}:
+        parent = styles[kind]
+        style = ParagraphStyle(
+            f"{kind}{indent}",
+            parent=parent,
+            leftIndent=left,
+        )
+        story.append(make_paragraph(text, style, variant, scripture_style=True))
+        return LayoutContext(left, "scripture")
 
-    if text.startswith(("“", "«")) and text.endswith(("”", "»")):
-        parent = styles["verse"]
-    elif context.paragraph_parent == "human_observation":
-        parent = styles["human_observation"]
-    else:
-        parent = styles["body"]
+    if kind == "actor_triple":
+        style = ParagraphStyle(
+            f"ActorTriple{indent}",
+            parent=styles["actor_triple"],
+            leftIndent=left,
+        )
+        story.append(make_paragraph(text, style, variant, scripture_style=True))
+        return LayoutContext(left, "actor_triple")
 
+    if kind == "actors_line":
+        style = ParagraphStyle(
+            f"ActorsLine{indent}",
+            parent=styles["actors_line"],
+            leftIndent=left,
+        )
+        story.append(make_paragraph(text, style, variant))
+        return LayoutContext(left, "actors_line")
+
+    if kind == "mechanical":
+        style = ParagraphStyle(
+            f"Mechanical{indent}",
+            parent=styles["mechanical"],
+            leftIndent=left + 0.04 * inch,
+        )
+        story.append(make_paragraph(text, style, variant))
+        return LayoutContext(left, "mechanical")
+
+    # Numbered lists (rare in manuals)
     style = ParagraphStyle(
-        f"ContextParagraph{context.paragraph_parent}{int(context.paragraph_left)}",
-        parent=parent,
-        leftIndent=context.paragraph_left,
-        firstLineIndent=0,
-        spaceBefore=1,
-        spaceAfter=3,
+        f"Numbered{indent}",
+        parent=styles["bullet"],
+        leftIndent=left,
+        firstLineIndent=-0.16 * inch,
     )
-    story.append(make_paragraph(text, style, variant))
-    lines.clear()
+    story.append(Paragraph(format_inline(text, variant), style))
+    return LayoutContext(left, "body")
 
 
-def append_list(
+def append_list_group(
     items: list[tuple[int, str, str]],
     story: list[Flowable],
     styles: dict[str, ParagraphStyle],
@@ -660,36 +811,76 @@ def append_list(
     if not items:
         return None
 
-    counters: dict[int, int] = {}
-    last_context: LayoutContext | None = None
-    for indent, marker, text in items:
-        ordered = marker[0].isdigit()
-        role = LIST_ROLE_STYLES.get(marker, {})
-        left_indent = role.get("left", 0.22 * inch) + min(indent, 5) * 0.18 * inch
-        parent_key = "human_observation" if marker == "+" else "bullet"
-        style = ParagraphStyle(
-            f"{role.get('name', 'ListItem')}{indent}",
-            parent=styles[parent_key],
-            leftIndent=left_indent,
-            firstLineIndent=role.get("first", -0.16 * inch if ordered else 0),
-            spaceBefore=role.get("space_before", 1),
-            spaceAfter=role.get("space_after", 2),
-        )
-        if ordered:
-            counters[indent] = counters.get(indent, 0) + 1
-            prefix = f"{counters[indent]}.&nbsp;&nbsp;"
+    # Keep a noun-host `+` with its immediate nested `*` hangers on one page when possible.
+    blocks: list[list[tuple[int, str, str]]] = []
+    current: list[tuple[int, str, str]] = []
+    for item in items:
+        indent, marker, _ = item
+        if not current:
+            current = [item]
+            continue
+        prev_indent, prev_marker, _ = current[0]
+        if prev_marker == "+" and marker == "*" and indent > prev_indent and len(current) < 6:
+            current.append(item)
         else:
-            prefix = ""
-        content = format_inline(text, variant)
-        story.append(
-            Paragraph(
-                f"{prefix}{content}",
-                style,
-            )
-        )
-        last_context = LayoutContext(left_indent, "human_observation" if marker == "+" else "body")
-    story.append(Spacer(1, 4))
+            blocks.append(current)
+            current = [item]
+    if current:
+        blocks.append(current)
+
+    last_context: LayoutContext | None = None
+    for block in blocks:
+        flowables: list[Flowable] = []
+        for indent, marker, text in block:
+            last_context = append_outline_item(indent, marker, text, flowables, styles, variant)
+        if len(flowables) > 1:
+            story.append(KeepTogether(flowables))
+        else:
+            story.extend(flowables)
     return last_context
+
+
+def flush_paragraph(
+    lines: list[str],
+    story: list[Flowable],
+    styles: dict[str, ParagraphStyle],
+    context: LayoutContext,
+    variant: str,
+    *,
+    in_sintesis: bool = False,
+) -> None:
+    if not lines:
+        return
+    text = " ".join(line.strip() for line in lines if line.strip())
+    if not text:
+        lines.clear()
+        return
+
+    if in_sintesis:
+        parent = styles["sintesis_body"]
+    elif context.paragraph_parent in {"scripture", "actor_triple"}:
+        parent = styles["writer"]
+    else:
+        parent = styles["body"]
+
+    style = ParagraphStyle(
+        f"ContextPara{context.paragraph_parent}{int(context.paragraph_left)}{int(in_sintesis)}",
+        parent=parent,
+        leftIndent=context.paragraph_left if context.paragraph_parent != "body" else 0,
+        firstLineIndent=0,
+        spaceBefore=2,
+        spaceAfter=7,
+    )
+    story.append(make_paragraph(text, style, variant))
+    lines.clear()
+
+
+def heading_style_key(level: int, text: str) -> str:
+    if level == 3 and text.strip().lower() == "en síntesis":
+        return "h3_sintesis"
+    if level == 4:
+        return "h4"
+    return f"h{min(level, 6)}"
 
 
 def parse_markdown(
@@ -702,15 +893,19 @@ def parse_markdown(
     paragraph_lines: list[str] = []
     list_items: list[tuple[int, str, str]] = []
     context = LayoutContext()
-    expecting_h3_scripture = False
+    in_sintesis = False
+    pending_blank = False
 
-    def flush_all() -> None:
+    def flush_lists() -> None:
         nonlocal context
-        flush_context_paragraph(paragraph_lines, story, styles, context, variant)
-        list_context = append_list(list_items, story, styles, variant)
+        list_context = append_list_group(list_items, story, styles, variant)
         if list_context:
             context = list_context
         list_items.clear()
+
+    def flush_all() -> None:
+        flush_paragraph(paragraph_lines, story, styles, context, variant, in_sintesis=in_sintesis)
+        flush_lists()
 
     for raw in markdown.splitlines():
         line = raw.rstrip()
@@ -718,8 +913,13 @@ def parse_markdown(
 
         if not stripped:
             flush_all()
-            story.append(Spacer(1, 3))
+            # Blank lines are slide breaks in the source; give the page a little air.
+            if not pending_blank:
+                story.append(Spacer(1, 9))
+                pending_blank = True
             continue
+
+        pending_blank = False
 
         if stripped.startswith("\\begin{") or stripped.startswith("\\end{"):
             flush_all()
@@ -735,74 +935,88 @@ def parse_markdown(
             story.append(PageBreak())
             continue
 
+        footnote_def = FOOTNOTE_DEF_RE.match(stripped)
+        if footnote_def:
+            flush_all()
+            fid = footnote_def.group("id")
+            body = footnote_def.group("text")
+            label = html.escape(fid, quote=False)
+            content = format_inline(body, variant)
+            story.append(
+                Paragraph(
+                    f"<b><font color='#3a555c'>{label}</font></b>&nbsp;&nbsp;{content}",
+                    styles["footnote_def"],
+                )
+            )
+            context = LayoutContext()
+            continue
+
         image_match = IMAGE_RE.match(stripped)
         if image_match:
-            expecting_h3_scripture = False
             flush_all()
             append_markdown_image(image_match, story, styles, source_path, variant)
             continue
 
         list_match = LIST_RE.match(line) or NUMBERED_LIST_RE.match(line)
         if list_match:
-            expecting_h3_scripture = False
-            flush_context_paragraph(paragraph_lines, story, styles, context, variant)
-            indent = len(list_match.group("indent").replace("\t", "    ")) // 2
-            marker = list_match.group("marker")
-            list_items.append((indent, marker, list_match.group("text")))
+            in_sintesis = False
+            flush_paragraph(paragraph_lines, story, styles, context, variant, in_sintesis=False)
+            indent_spaces = len(list_match.group("indent").replace("\t", "    "))
+            indent = indent_spaces // 2
+            list_items.append((indent, list_match.group("marker"), list_match.group("text")))
             continue
 
-        scripture_text = scripture_line_text(stripped)
-        if scripture_text and (expecting_h3_scripture or context.paragraph_parent == "scripture"):
-            append_list(list_items, story, styles, variant)
-            list_items.clear()
-            context = LayoutContext(styles["verse"].leftIndent, "scripture")
-            paragraph_lines.append(scripture_text)
-            expecting_h3_scripture = False
+        # Writer comments: honor source indent so nested `>` tracks the outline tree.
+        writer_match = re.match(r"^(?P<indent>\s*)>\s?(?P<text>.*)$", line)
+        if writer_match:
+            flush_all()
+            quote = writer_match.group("text").strip()
+            image_match = IMAGE_RE.match(quote)
+            indent_spaces = len(writer_match.group("indent").replace("\t", "    "))
+            indent = indent_spaces // 2
+            if indent_spaces > 0:
+                left = outline_left(indent)
+            elif context.paragraph_parent in {"scripture", "actor_triple", "mechanical"}:
+                left = context.paragraph_left
+            else:
+                left = INDENT_BASE
+            if image_match:
+                append_markdown_image(image_match, story, styles, source_path, variant, left)
+                continue
+            quote_style = ParagraphStyle(
+                f"Writer{int(left * 100)}",
+                parent=styles["writer"],
+                leftIndent=left,
+                spaceBefore=3,
+                spaceAfter=8,
+            )
+            story.append(make_paragraph(quote, quote_style, variant))
+            context = LayoutContext(left, "writer")
             continue
 
         flush_all()
 
         if stripped.startswith("#"):
-            expecting_h3_scripture = False
             level = len(stripped) - len(stripped.lstrip("#"))
             text = stripped[level:].strip()
             if text:
-                style = styles.get(f"h{min(level, 6)}", styles["h6"])
-                heading = make_paragraph(text, style, variant)
+                key = heading_style_key(level, text)
+                style = styles.get(key, styles["h6"])
+                is_scripture_heading = level == 4
+                heading = make_paragraph(text, style, variant, scripture_style=is_scripture_heading)
                 if level <= 2 and story:
-                    story.append(Spacer(1, 4))
+                    story.append(Spacer(1, 8))
                 story.append(heading)
                 context = LayoutContext()
-                expecting_h3_scripture = level == 3
-            continue
-
-        if stripped.startswith(">"):
-            expecting_h3_scripture = False
-            quote = stripped.lstrip(">").strip()
-            image_match = IMAGE_RE.match(quote)
-            if image_match:
-                flush_all()
-                append_markdown_image(image_match, story, styles, source_path, variant, context.paragraph_left)
-                continue
-            parent_key = "human_observation" if context.paragraph_parent == "human_observation" else "body"
-            quote_style = ParagraphStyle(
-                f"ContextQuote{context.paragraph_parent}{int(context.paragraph_left)}",
-                parent=styles[parent_key],
-                leftIndent=context.paragraph_left,
-                firstLineIndent=0,
-                spaceBefore=2,
-                spaceAfter=4,
-            )
-            story.append(make_paragraph(quote, quote_style, variant))
+                in_sintesis = key == "h3_sintesis"
             continue
 
         if VERSE_HEADING_RE.match(stripped):
-            expecting_h3_scripture = False
             story.append(KeepTogether([make_paragraph(stripped, styles["h4"], variant)]))
             context = LayoutContext()
+            in_sintesis = False
             continue
 
-        expecting_h3_scripture = False
         paragraph_lines.append(stripped)
 
     flush_all()
@@ -885,7 +1099,7 @@ def build_pdf(markdown_path: Path, output_path: Path, theme: Theme, no_cover: bo
 
 
 def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Export a plain Markdown file to a letter-sized PDF manual.")
+    parser = argparse.ArgumentParser(description="Export a CGV Markdown manual to letter-sized PDF.")
     parser.add_argument("input", type=Path, nargs="?", help="Markdown source file")
     parser.add_argument("-o", "--output", type=Path, help="PDF output path")
     parser.add_argument("--title", help="Cover title and PDF title")
@@ -907,7 +1121,7 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
         help="Cover logo badge white background opacity from 0 to 1",
     )
     parser.add_argument("--single", choices=["student", "teacher"], help="Export only one version")
-    parser.add_argument("--body-size", type=float, default=12.2, help="Main text size in points")
+    parser.add_argument("--body-size", type=float, default=12.8, help="Main text size in points")
     parser.add_argument("--no-cover", action="store_true", help="Start the PDF directly from the Markdown content")
     return parser.parse_args(argv)
 
@@ -948,9 +1162,10 @@ def main(argv: Iterable[str] | None = None) -> int:
 
         theme = Theme(
             body_size=args.body_size,
-            leading=args.body_size * 1.34,
+            leading=args.body_size * 1.48,
             title=args.title or metadata.get("title") or book or "Manual",
             subtitle=args.subtitle if args.subtitle is not None else metadata.get("subtitle", ""),
+            telos=metadata.get("telos", ""),
             version=version,
             footer_left=footer_left,
             footer_center=args.footer_center,

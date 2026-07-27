@@ -115,18 +115,28 @@ function getEntryHtml(entry) {
   return typeof entry === "string" ? entry : entry?.html || "";
 }
 
-function renderEntries(entries = []) {
+function flattenRevealEntries(entries = []) {
+  return entries.flatMap(entry => (
+    Array.isArray(entry?.batch) ? entry.batch : [entry]
+  ));
+}
+
+function renderEntries(entries = [], { stickyCount = 0 } = {}) {
   const rendered = [];
   const replaceIndexes = {};
+  const flatEntries = flattenRevealEntries(entries);
 
-  entries.forEach((entry, index) => {
-    const html = entry?.h4Intro && index < entries.length - 1
+  flatEntries.forEach((entry, index) => {
+    const html = entry?.h4Intro && index < flatEntries.length - 1
       ? entry.h4OnlyHtml
       : getEntryHtml(entry);
     const replaceGroup = typeof entry === "string" ? null : entry?.replaceGroup;
+    const key = replaceGroup || `entry-${index}`;
+    const wrapped = `<div class="reveal-entry${index < stickyCount ? " reveal-sticky" : ""}" data-reveal-key="${escapeHtml(key)}">${html}</div>`;
 
     if (replaceGroup && replaceIndexes[replaceGroup] !== undefined) {
-      rendered[replaceIndexes[replaceGroup]] = html;
+      const slot = replaceIndexes[replaceGroup];
+      rendered[slot] = `<div class="reveal-entry${slot < stickyCount ? " reveal-sticky" : ""}" data-reveal-key="${escapeHtml(key)}">${html}</div>`;
       return;
     }
 
@@ -134,7 +144,7 @@ function renderEntries(entries = []) {
       replaceIndexes[replaceGroup] = rendered.length;
     }
 
-    rendered.push(html);
+    rendered.push(wrapped);
   });
 
   return rendered.join("");
@@ -145,12 +155,13 @@ function getVisibleTeachingHtml(state = {}) {
   const renderedSlide = windowData?.current
     || state.renderedSlides?.[state.slide]
     || { sticky: [], lines: [] };
+  const stickyEntries = flattenRevealEntries(renderedSlide.sticky || []);
   const visible = [
-    ...(renderedSlide.sticky || []),
-    ...(renderedSlide.lines || []).slice(0, (Number(state.step) || 0) + 1)
+    ...stickyEntries,
+    ...flattenRevealEntries((renderedSlide.lines || []).slice(0, (Number(state.step) || 0) + 1))
   ];
 
-  return renderEntries(visible);
+  return renderEntries(visible, { stickyCount: stickyEntries.length });
 }
 
 function getSongHtml(controllerState = {}) {
@@ -442,6 +453,7 @@ function getDirectorSizing(isSongMode) {
 
 let lastFitContext = { slide: -1, step: -1, songMode: false, size: null };
 let directorFitRetry = false;
+const directorSlideFitCache = new Map();
 
 function scheduleDirectorFit() {
   if (directorFitFrame) cancelAnimationFrame(directorFitFrame);
@@ -452,6 +464,83 @@ function scheduleDirectorFit() {
       fitDirectorText();
     });
   });
+}
+
+function measureDirectorFitSize(content, html, minSize, maxSize) {
+  const host = content.parentElement || document.body;
+  const probe = content.cloneNode(false);
+  probe.className = content.className;
+  probe.removeAttribute("id");
+  probe.innerHTML = html;
+  probe.setAttribute("aria-hidden", "true");
+  const maxWidth = Math.max(1, content.clientWidth);
+  const maxHeight = Math.max(1, content.clientHeight);
+  Object.assign(probe.style, {
+    position: "absolute",
+    left: "-100000px",
+    top: "0",
+    width: `${maxWidth}px`,
+    height: "auto",
+    maxHeight: "none",
+    overflow: "visible",
+    visibility: "hidden",
+    pointerEvents: "none",
+    zIndex: "-1"
+  });
+  host.appendChild(probe);
+
+  const overflows = () => (
+    probe.scrollHeight > maxHeight + 1
+    || probe.scrollWidth > maxWidth + 1
+  );
+
+  let best = minSize;
+  let low = minSize;
+  let top = maxSize;
+  while (low <= top) {
+    const mid = (low + top) >> 1;
+    probe.style.setProperty("--director-fit-size", `${mid}px`);
+    if (overflows()) {
+      top = mid - 1;
+    } else {
+      best = mid;
+      low = mid + 1;
+    }
+  }
+
+  probe.remove();
+  return best;
+}
+
+function getDirectorLookaheadFitSize(content, state, minSize, maxSize) {
+  const slideIndex = Number(state.slide) || 0;
+  const cacheKey = `${slideIndex}|${content.clientWidth}x${content.clientHeight}|${minSize}-${maxSize}`;
+  if (directorSlideFitCache.has(cacheKey)) {
+    return directorSlideFitCache.get(cacheKey);
+  }
+
+  const windowData = state.renderedSlideWindow;
+  const renderedSlide = windowData?.current
+    || state.renderedSlides?.[slideIndex]
+    || { sticky: [], lines: [] };
+  const stickyEntries = flattenRevealEntries(renderedSlide.sticky || []);
+  const lineEntries = flattenRevealEntries(renderedSlide.lines || []);
+  if (!lineEntries.length && !stickyEntries.length) return null;
+
+  let tightest = null;
+  for (let stepIndex = 0; stepIndex < Math.max(1, lineEntries.length); stepIndex += 1) {
+    const html = renderEntries([
+      ...stickyEntries,
+      ...lineEntries.slice(0, stepIndex + 1)
+    ], { stickyCount: stickyEntries.length });
+    if (!html) continue;
+    const size = measureDirectorFitSize(content, html, minSize, maxSize);
+    tightest = tightest == null ? size : Math.min(tightest, size);
+  }
+
+  if (tightest == null) return null;
+  directorSlideFitCache.set(cacheKey, tightest);
+  return tightest;
 }
 
 function fitDirectorText() {
@@ -472,6 +561,20 @@ function fitDirectorText() {
     return;
   }
   directorFitRetry = false;
+
+  if (!isSongMode) {
+    const lookahead = getDirectorLookaheadFitSize(content, latestState, minSize, maxSize);
+    if (lookahead != null) {
+      content.style.setProperty("--director-fit-size", `${lookahead}px`);
+      lastFitContext = {
+        slide: Number(latestState.slide),
+        step: Number(latestState.step),
+        songMode: false,
+        size: lookahead
+      };
+      return;
+    }
+  }
 
   const sameSlide = lastFitContext.songMode === isSongMode
     && lastFitContext.slide === Number(latestState.slide);
@@ -558,20 +661,9 @@ function renderDirector(state = {}) {
   const contentChanged = contentHtml !== lastDirectorContentHtml || isSongMode !== lastDirectorContentMode;
 
   if (contentChanged) {
-    const previousFit = lastFitContext;
     content.innerHTML = contentHtml;
     lastDirectorContentHtml = contentHtml;
     lastDirectorContentMode = isSongMode;
-
-    const sameSlide = previousFit.songMode === isSongMode
-      && previousFit.slide === Number(state.slide);
-    const stepIncreased = sameSlide && Number(state.step) > previousFit.step;
-    // Keep prior size when revealing more lines on the same slide so fit can
-    // shrink from there instead of restarting from the maximum every step.
-    lastFitContext = stepIncreased && previousFit.size
-      ? previousFit
-      : { slide: -1, step: -1, songMode: isSongMode, size: null };
-
     scheduleDirectorFit();
   }
 
