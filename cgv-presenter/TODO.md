@@ -1,6 +1,6 @@
 # CGV Presenter — TODO
 
-Backlog for the `cgv-presenter` app. Current release: **1.2.0**.
+Backlog for the `cgv-presenter` app. Current release: **1.2.1**.
 
 ## Distribution
 
@@ -47,7 +47,9 @@ Backlog for the `cgv-presenter` app. Current release: **1.2.0**.
 - [ ] **App README** — Add a short `README.md` (dev setup, `npm start`, `npm run make:mac`, release tag format `CGV-Presenter-v*`.
 - [ ] **Release checklist** — Document: bump version → commit → tag → push → CI → verify both assets on GitHub release.
 
-## Done (1.1.15)
+## Done (1.2.1)
+
+- [x] Projector text fit uses the current reveal step only (not lookahead across the whole blank-line slide)
 
 - [x] Import teaching markdown for one-off speaking engagements
 - [x] Course cover image uses full slide area (`cover-slide`)

@@ -5445,7 +5445,7 @@
     {
       "phraseIndex": 74,
       "reference": "1 John 3:7",
-      "status": "seeded-hand",
+      "status": "seeded-hand-fixed-3-7",
       "units": [
         {
           "unitId": "74:0",
@@ -5474,9 +5474,7 @@
           "charEnd": 29,
           "sourceTokenIds": [
             "n62003007003",
-            "n62003007004",
-            "n62003007005",
-            "n62003007006"
+            "n62003007004"
           ],
           "method": "hand"
         },
@@ -5486,8 +5484,8 @@
           "charStart": 31,
           "charEnd": 46,
           "sourceTokenIds": [
-            "n62003007007",
-            "n62003007008"
+            "n62003007005",
+            "n62003007006"
           ],
           "method": "hand"
         },
@@ -5497,7 +5495,8 @@
           "charStart": 47,
           "charEnd": 58,
           "sourceTokenIds": [
-            "n62003007009"
+            "n62003007007",
+            "n62003007008"
           ],
           "method": "hand"
         },
@@ -5507,9 +5506,8 @@
           "charStart": 59,
           "charEnd": 67,
           "sourceTokenIds": [
-            "n62003007010",
-            "n62003007011",
-            "n62003007012"
+            "n62003007009",
+            "n62003007010"
           ],
           "method": "hand"
         },
@@ -5519,7 +5517,7 @@
           "charStart": 69,
           "charEnd": 72,
           "sourceTokenIds": [
-            "n62003007013"
+            "n62003007011"
           ],
           "method": "hand"
         },
@@ -5529,6 +5527,8 @@
           "charStart": 73,
           "charEnd": 89,
           "sourceTokenIds": [
+            "n62003007012",
+            "n62003007013",
             "n62003007014"
           ],
           "method": "hand"

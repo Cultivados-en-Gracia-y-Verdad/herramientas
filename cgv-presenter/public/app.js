@@ -30,8 +30,6 @@ let activeQuizKey = null;
 let popupState = { reference: null, scrollRatio: 0, verseIndex: 0, verseCount: 0 };
 let completedQuizIds = new Set();
 let revealAnimState = { slide: -1, step: -1, signatures: new Map() };
-// Per-slide fit sizes from full look-ahead content (avoids shrink-flicker while revealing).
-const slideFitSizeCache = new Map();
 
 const storedParticipantId = localStorage.getItem("rootsParticipantId")
   || (window.crypto?.randomUUID
@@ -107,7 +105,6 @@ function syncRenderedSlides(data = {}) {
 
     if (!renderedSlides.length || renderedSlides.length !== slideCount) {
       renderedSlides = Array.from({ length: slideCount }, () => ({ sticky: [], lines: [] }));
-      slideFitSizeCache.clear();
     }
 
     const currentSlide = Number(windowData.slide) || 0;
@@ -219,13 +216,11 @@ function render() {
     renderAudienceQrToggle();
     fitSlideText(currentEl, {
       baseSize: 52,
-      minSize: 22,
-      lookaheadSlideIndex: slide
+      minSize: 22
     });
     fitSlideText(nextEl, {
       baseSize: 36,
-      minSize: 18,
-      lookaheadSlideIndex: slide + 1
+      minSize: 18
     });
     applySharedPopupState();
   }
@@ -272,8 +267,7 @@ function render() {
         baseSize: 48,
         minSize: 22,
         maxHeight: Math.max(220, window.innerHeight * 0.48),
-        maxWidth: audienceSlide.clientWidth,
-        lookaheadSlideIndex: slide
+        maxWidth: audienceSlide.clientWidth
       });
     }
     applySharedPopupState();
@@ -845,8 +839,11 @@ function getProjectorLayoutSize() {
 function fitProjectorSlide(slideEl, slideIndex = slide) {
   if (!slideEl || slideEl.classList.contains("cover-slide")) return;
 
-  const lookaheadHtml = buildSlideHtmlAtStep(slideIndex, null);
-  const baseSize = getProjectorBaseSizeFromHtml(lookaheadHtml || slideEl.innerHTML);
+  // Size to what is on screen now (current reveal step), not every line that
+  // shares the same blank-line markdown block.
+  const visibleStep = slideIndex === slide ? step : null;
+  const visibleHtml = buildSlideHtmlAtStep(slideIndex, visibleStep);
+  const baseSize = getProjectorBaseSizeFromHtml(visibleHtml || slideEl.innerHTML);
 
   if (isTablet) {
     fitSlideText(slideEl, {
@@ -856,8 +853,7 @@ function fitProjectorSlide(slideEl, slideIndex = slide) {
       maxHeight: slideEl.clientHeight,
       maxWidth: slideEl.clientWidth,
       densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
-      sizeBoost: projectorMode === "extended" ? 6 : 0,
-      lookaheadSlideIndex: slideIndex
+      sizeBoost: projectorMode === "extended" ? 6 : 0
     });
     return;
   }
@@ -871,8 +867,7 @@ function fitProjectorSlide(slideEl, slideIndex = slide) {
     maxHeight: viewport.height - 160,
     maxWidth: Math.min(slideEl.clientWidth || viewport.width * 0.78, viewport.width - 140),
     densityFactor: projectorMode === "extended" ? 0.12 : 0.25,
-    sizeBoost: projectorMode === "extended" ? 6 : 0,
-    lookaheadSlideIndex: slideIndex
+    sizeBoost: projectorMode === "extended" ? 6 : 0
   });
 }
 
@@ -909,99 +904,11 @@ function buildSlideHtmlAtStep(slideIndex, stepIndex = null) {
   });
 }
 
-function getSlideFitCacheKey(slideIndex, element, options = {}) {
-  const width = Math.round(options.maxWidth || element.clientWidth || window.innerWidth);
-  const height = Math.round(options.maxHeight || element.clientHeight || window.innerHeight);
-  const role = isPresenter ? "presenter" : (isProjector ? `projector-${projectorMode}` : "audience");
-  return `${role}|${slideIndex}|${width}x${height}|${options.baseSize || 0}|${options.minSize || 0}`;
-}
-
-function measureFitSizeForHtml(referenceElement, html, options = {}) {
-  if (!referenceElement) return options.minSize || 18;
-
-  const baseSize = options.baseSize || 46;
-  const minSize = options.minSize || 18;
-  const hardMinSize = options.hardMinSize || minSize;
-  const maxHeight = options.maxHeight || referenceElement.clientHeight || 350;
-  const maxWidth = options.maxWidth || referenceElement.clientWidth || window.innerWidth;
-  const probeWidth = Math.max(1, referenceElement.clientWidth || maxWidth);
-
-  // Guard: if the live slide isn't laid out yet, don't cache a bogus tiny size.
-  if (probeWidth < 32 || maxHeight < 32) {
-    return null;
-  }
-
-  const host = referenceElement.parentElement || document.body;
-  const probe = referenceElement.cloneNode(false);
-  probe.className = referenceElement.className;
-  probe.removeAttribute("id");
-  probe.innerHTML = html;
-  probe.setAttribute("aria-hidden", "true");
-  Object.assign(probe.style, {
-    position: "absolute",
-    left: "-100000px",
-    top: "0",
-    // Width matches the slide; height stays auto so we can compare content
-    // scrollHeight against maxHeight. A fixed probe height made offsetHeight
-    // always "overflow", which collapsed fit-size to the minimum.
-    width: `${probeWidth}px`,
-    height: "auto",
-    maxHeight: "none",
-    overflow: "visible",
-    visibility: "hidden",
-    pointerEvents: "none",
-    zIndex: "-1"
-  });
-  host.appendChild(probe);
-
-  const densityPenalty = getSlideDensityPenalty(probe) * (options.densityFactor ?? 1);
-  let size = Math.max(minSize, baseSize + (options.sizeBoost || 0) - densityPenalty);
-  probe.style.setProperty("--fit-size", `${size}px`);
-
-  while (
-    size > hardMinSize
-    && (probe.scrollHeight > maxHeight || probe.scrollWidth > maxWidth)
-  ) {
-    size -= 2;
-    if (size < hardMinSize) size = hardMinSize;
-    probe.style.setProperty("--fit-size", `${size}px`);
-  }
-
-  probe.remove();
-  return size;
-}
-
-function getLookaheadFitSize(slideIndex, element, options = {}) {
-  if (!element || !Number.isInteger(slideIndex) || slideIndex < 0) return null;
-
-  const cacheKey = getSlideFitCacheKey(slideIndex, element, options);
-  if (slideFitSizeCache.has(cacheKey)) {
-    return slideFitSizeCache.get(cacheKey);
-  }
-
-  const slideData = normalizeRenderedSlide(renderedSlides[slideIndex]);
-  const lineCount = flattenRevealEntries(slideData.lines).length;
-  if (!lineCount && !slideData.sticky?.length) return null;
-
-  // Use the tightest size required by any reveal step so early steps don't
-  // start large and then shrink when more text appears.
-  let tightest = null;
-  for (let stepIndex = 0; stepIndex < Math.max(1, lineCount); stepIndex += 1) {
-    const html = buildSlideHtmlAtStep(slideIndex, stepIndex);
-    if (!html) continue;
-    const size = measureFitSizeForHtml(element, html, options);
-    if (size == null) return null;
-    tightest = tightest == null ? size : Math.min(tightest, size);
-  }
-
-  if (tightest == null) return null;
-  slideFitSizeCache.set(cacheKey, tightest);
-  return tightest;
-}
-
 function getProjectorBaseSizeFromHtml(html) {
   const probe = document.createElement("div");
   probe.innerHTML = html || "";
+  // Folio H2/H3 live outside the fitted slide — don't let them inflate density.
+  probe.querySelectorAll(".section-context").forEach(node => node.remove());
   return getProjectorBaseSize(probe);
 }
 
@@ -1013,22 +920,9 @@ function fitSlideText(element, options = {}) {
   const hardMinSize = options.hardMinSize || minSize;
   const maxHeight = options.maxHeight || element.clientHeight || 350;
   const maxWidth = options.maxWidth || element.clientWidth || window.innerWidth;
-  const lookaheadIndex = Number.isInteger(options.lookaheadSlideIndex)
-    ? options.lookaheadSlideIndex
-    : null;
 
-  if (lookaheadIndex != null) {
-    const lookaheadSize = getLookaheadFitSize(lookaheadIndex, element, {
-      ...options,
-      maxHeight,
-      maxWidth
-    });
-    if (lookaheadSize != null) {
-      element.style.setProperty("--fit-size", `${lookaheadSize}px`);
-      return;
-    }
-  }
-
+  // Fit whatever is currently rendered. Reveal steps / replaceGroups already
+  // determine on-screen lines; do not size against unrevealed siblings.
   const densityPenalty = getSlideDensityPenalty(element) * (options.densityFactor ?? 1);
   let size = Math.max(minSize, baseSize + (options.sizeBoost || 0) - densityPenalty);
 
@@ -1668,7 +1562,6 @@ if (isAudience) {
 }
 
 window.addEventListener("resize", () => {
-  slideFitSizeCache.clear();
   render();
   applyTabletPreviewScale();
 });
