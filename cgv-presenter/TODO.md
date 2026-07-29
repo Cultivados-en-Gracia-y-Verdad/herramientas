@@ -36,6 +36,8 @@ Backlog for the `cgv-presenter` app. Current release: **1.2.1**.
 - [x] **Controller desktop preview** — Windowed and fullscreen preview fill correctly without crushing verse thumbnails; phones unchanged.
 - [ ] **Song library UX** — Review remaining edge cases (nested folders, empty libraries).
 - [ ] **Song repository config** — Allow per-library defaults or clearer UI when multiple GitHub song folders are in use.
+- [ ] **Song background contrast** — Darken the overlay/filter on song backgrounds so lyrics stay readable.
+- [ ] **Teaching titles in songs** — Course/teaching titles are leaking onto the song output; clear or hide them when switching to songs.
 
 ## Bible references
 
