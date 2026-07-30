@@ -348,6 +348,13 @@ function syncFolioClearance(slideElement) {
     return;
   }
 
+  // Presenter folio is in normal flow above the card — don't pad the slide for it.
+  const headerPosition = getComputedStyle(header).position;
+  if (headerPosition === "static" || headerPosition === "relative") {
+    slideElement.style.removeProperty("--folio-clearance");
+    return;
+  }
+
   const headerRect = header.getBoundingClientRect();
   const slideRect = slideElement.getBoundingClientRect();
   const gap = 14;
