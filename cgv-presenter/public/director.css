@@ -605,6 +605,37 @@ button.ghost {
   display: contents;
 }
 
+.markdown-animation {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  margin: 0.35em 0;
+  font-family: inherit;
+  line-height: 1.35;
+}
+
+.markdown-animation-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2em;
+}
+
+.markdown-animation-item {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.markdown-animation-arrow {
+  opacity: 0.72;
+  font-weight: 400;
+  user-select: none;
+}
+
+.markdown-animation-vertical .markdown-animation-arrow {
+  margin-left: 0.35em;
+  line-height: 1;
+}
+
 .reveal-enter {
   animation: cgv-reveal-enter 200ms ease-out;
 }

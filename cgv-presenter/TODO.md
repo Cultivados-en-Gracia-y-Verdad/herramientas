@@ -1,6 +1,6 @@
 # CGV Presenter — TODO
 
-Backlog for the `cgv-presenter` app. Current release: **1.2.1**.
+Backlog for the `cgv-presenter` app. Current release: **1.2.2**.
 
 ## Distribution
 
@@ -14,6 +14,7 @@ Backlog for the `cgv-presenter` app. Current release: **1.2.1**.
 
 ## Presentation
 
+- [x] **Markdown chain animation** — List lines like `* *A* → *B* → *C*` or `* *A* ↓ *B* ↓ *C*` reveal one term per advance (horizontal/vertical); plain manuals stay readable.
 - [ ] **Projector drawing alignment** — Viewport sync improved in 1.1.x; verify stroke position on projector vs tablet across fullscreen, extended display, and different aspect ratios.
 - [ ] **S Pen side button** — Automatic detection was disabled as unreliable; revisit a stable toggle for eraser mode if needed on target devices.
 - [ ] **Stage view design** — Deferred; refine from real use rather than a redesign pass now.
@@ -36,8 +37,8 @@ Backlog for the `cgv-presenter` app. Current release: **1.2.1**.
 - [x] **Controller desktop preview** — Windowed and fullscreen preview fill correctly without crushing verse thumbnails; phones unchanged.
 - [ ] **Song library UX** — Review remaining edge cases (nested folders, empty libraries).
 - [ ] **Song repository config** — Allow per-library defaults or clearer UI when multiple GitHub song folders are in use.
-- [ ] **Song background contrast** — Darken the overlay/filter on song backgrounds so lyrics stay readable.
-- [ ] **Teaching titles in songs** — Course/teaching titles are leaking onto the song output; clear or hide them when switching to songs.
+- [x] **Song background contrast** — Darken the media scrim while lyrics are live; remove it on Esc/blank so the default background shows clean.
+- [x] **Teaching titles in songs** — Clear the editorial H2/H3 folio when song/blank output is on the projector so teaching titles do not leak over lyrics.
 
 ## Bible references
 
@@ -48,6 +49,12 @@ Backlog for the `cgv-presenter` app. Current release: **1.2.1**.
 
 - [ ] **App README** — Add a short `README.md` (dev setup, `npm start`, `npm run make:mac`, release tag format `CGV-Presenter-v*`.
 - [ ] **Release checklist** — Document: bump version → commit → tag → push → CI → verify both assets on GitHub release.
+
+## Done (1.2.2)
+
+- [x] Markdown chain animation (`→` / `↓` list lines reveal term-by-term)
+- [x] Song background contrast: darker media scrim with lyrics; clean image on Esc/blank
+- [x] Teaching titles cleared from projector when songs / blank are live
 
 ## Done (1.2.1)
 

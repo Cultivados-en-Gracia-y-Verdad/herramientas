@@ -102,6 +102,7 @@ const phraseCueMarker = "::roots-phrase-cue::";
 const phraseUnitMarker = "::roots-phrase-unit::";
 const revealBatchMarker = "::roots-reveal-batch::";
 const crossReferenceMarker = "::roots-cross-references::";
+const animatedChainMarker = "::roots-animated-chain::";
 
 app.use(express.json({ limit: "30mb" }));
 app.use(
@@ -2129,6 +2130,15 @@ function renderLine(line) {
     };
   }
 
+  if (line.startsWith(animatedChainMarker)) {
+    const chain = JSON.parse(line.slice(animatedChainMarker.length));
+
+    return {
+      replaceGroup: chain.id,
+      html: renderAnimatedChain(chain)
+    };
+  }
+
   if (line.startsWith(h4IntroMarker)) {
     const intro = JSON.parse(line.slice(h4IntroMarker.length));
 
@@ -3043,6 +3053,91 @@ function isGrammarNoteLine(line) {
   return /^\*\s+\S/.test(String(line || ""));
 }
 
+function stripMarkdownEmphasis(value) {
+  return String(value || "")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/__([^_]+)__/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/_([^_]+)_/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .trim();
+}
+
+// Actor / flow chains authored as normal markdown:
+//   * *A* → *B* → *C*
+//   - *A* ↓ *B* ↓ *C*
+// Later we can extend to prose notes like: *lo que* (ὃ): describe a *principio*
+function parseAnimatedChain(markdown) {
+  const raw = String(markdown || "").trim();
+  if (!raw) return null;
+
+  const body = raw.replace(/^[-*]\s+/, "").trim();
+  const hasDown = body.includes("↓");
+  const hasRight = body.includes("→");
+  const direction = hasDown ? "vertical" : hasRight ? "horizontal" : null;
+  if (!direction) return null;
+  if (hasDown && hasRight) return null;
+
+  // v1: pure term chains only — skip grammar notes / descriptions.
+  if (/[:：]/.test(body) || /\[\^[^\]]+\]/.test(body)) return null;
+
+  const arrow = direction === "vertical" ? "↓" : "→";
+  const parts = body
+    .split(arrow)
+    .map(part => part.trim())
+    .filter(Boolean);
+
+  if (parts.length < 2) return null;
+
+  const items = parts.map(stripMarkdownEmphasis).filter(Boolean);
+  if (items.length < 2 || items.length !== parts.length) return null;
+  // Reject unbalanced / leftover emphasis (e.g. arrow inside one *…* span).
+  if (items.some(item => /[*_`]/.test(item))) return null;
+  if (items.some(item => item.length > 80)) return null;
+
+  return { direction, items };
+}
+
+function buildAnimatedChainReveals(line) {
+  const chain = parseAnimatedChain(line);
+  if (!chain) return null;
+
+  const id = `chain-${normalizeReferenceText(chain.items.join("-"))}-${chain.direction}`;
+
+  return chain.items.map((_, index) =>
+    `${animatedChainMarker}${JSON.stringify({
+      id,
+      direction: chain.direction,
+      items: chain.items.slice(0, index + 1)
+    })}`
+  );
+}
+
+function renderAnimatedChain(chain) {
+  const direction = chain.direction === "vertical" ? "vertical" : "horizontal";
+  const arrow = direction === "vertical" ? "↓" : "→";
+  const items = Array.isArray(chain.items) ? chain.items : [];
+  const parts = [];
+
+  items.forEach((item, index) => {
+    if (index > 0) {
+      parts.push(
+        `<span class="markdown-animation-arrow" aria-hidden="true">${arrow}</span>`
+      );
+    }
+
+    parts.push(
+      `<span class="markdown-animation-item">${escapeHtml(item)}</span>`
+    );
+  });
+
+  return `
+    <div class="markdown-animation markdown-animation-${direction}" data-direction="${direction}">
+      ${parts.join("")}
+    </div>
+  `.trim();
+}
+
 function parseCrossReferenceLine(line) {
   const match = String(line || "").match(
     /^\*\s+XRef\s*\(([^)]+)\)\s*:\s*[—-]\s*([^—]+?)\s*[—-]\s*(.+?)\s*$/i
@@ -3207,6 +3302,13 @@ function groupRevealLines(lines) {
       }
 
       revealLines.push(group.join("\n"));
+      previousPhraseUnit = null;
+      continue;
+    }
+
+    const animatedChainReveals = buildAnimatedChainReveals(line);
+    if (animatedChainReveals) {
+      revealLines.push(...animatedChainReveals);
       previousPhraseUnit = null;
       continue;
     }
@@ -5148,5 +5250,8 @@ server.listen(serverPort, "0.0.0.0", () => {
 
 module.exports = {
   serverEvents,
-  broadcastProjectorFrame
+  broadcastProjectorFrame,
+  parseAnimatedChain,
+  stripMarkdownEmphasis,
+  buildAnimatedChainReveals
 };

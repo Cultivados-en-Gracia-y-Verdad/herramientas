@@ -165,6 +165,16 @@ function applyRevealEntrance(container) {
       if (entry.innerHTML.length < previousHtml.length) return;
 
       if (entry.innerHTML !== previousHtml) {
+        const chainItems = [...entry.querySelectorAll(".markdown-animation-item")];
+        if (chainItems.length) {
+          const newest = chainItems[chainItems.length - 1];
+          const arrow = newest.previousElementSibling?.classList?.contains("markdown-animation-arrow")
+            ? newest.previousElementSibling
+            : null;
+          markEnter(arrow ? [arrow, newest] : [newest]);
+          return;
+        }
+
         const comments = [...entry.querySelectorAll(".teaching-comment")];
         if (comments.length) {
           markEnter([comments[comments.length - 1]]);
@@ -365,16 +375,27 @@ function getAudienceJoinUrl() {
   return `${window.location.origin}/audience.html`;
 }
 
+function clearEditorialFolio(slideElement) {
+  const parent = slideElement?.parentElement;
+  parent?.querySelector(".editorial-folio-header")?.remove();
+  slideElement?.style?.removeProperty("--folio-clearance");
+}
+
 function renderControllerProjector(projectorSlide) {
   const section = controllerState.sections?.[controllerState.step] || [];
   const media = String(controllerState.backgroundMedia || "").trim();
+  // Teaching H2/H3 folio is a sibling of the slide — clear it so it does not
+  // leak over song / blank output.
+  clearEditorialFolio(projectorSlide);
   projectorSlide.classList.remove("title-slide");
   projectorSlide.classList.add("song-output");
   projectorSlide.style.setProperty("--song-background", controllerState.background || "#0f172a");
   projectorSlide.style.setProperty("--song-color", controllerState.textColor || "#ffffff");
   projectorSlide.style.setProperty("--song-accent", controllerState.accentColor || "#38bdf8");
-  projectorSlide.classList.toggle("song-has-media", !controllerState.blank && !!media && !isVideoMedia(media));
-  projectorSlide.classList.toggle("song-has-video", !controllerState.blank && !!media && isVideoMedia(media));
+  // Darken media only while lyrics are live — Esc/blank shows the image clean.
+  const showMediaScrim = !controllerState.blank && !!media;
+  projectorSlide.classList.toggle("song-has-media", showMediaScrim && !isVideoMedia(media));
+  projectorSlide.classList.toggle("song-has-video", showMediaScrim && isVideoMedia(media));
 
   if (controllerState.blank) {
     projectorSlide.classList.add("blank-output");
