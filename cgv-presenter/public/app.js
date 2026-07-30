@@ -31,6 +31,26 @@ let popupState = { reference: null, scrollRatio: 0, verseIndex: 0, verseCount: 0
 let completedQuizIds = new Set();
 let revealAnimState = { slide: -1, step: -1, signatures: new Map() };
 
+function ensurePencilFilter() {
+  if (document.getElementById("cgv-pencil-filter")) return;
+
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.id = "cgv-pencil-filter";
+  svg.setAttribute("width", "0");
+  svg.setAttribute("height", "0");
+  svg.setAttribute("aria-hidden", "true");
+  svg.style.position = "absolute";
+  svg.innerHTML = `
+    <filter id="cgv-pencil-wobble" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.35" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  `;
+  document.body.prepend(svg);
+}
+
+ensurePencilFilter();
+
 const storedParticipantId = localStorage.getItem("rootsParticipantId")
   || (window.crypto?.randomUUID
     ? window.crypto.randomUUID()
@@ -189,6 +209,36 @@ function applyRevealEntrance(container) {
   revealAnimState = { slide, step, signatures: nextSignatures };
 }
 
+function fitMarkdownAnimations(root) {
+  if (!root) return;
+
+  root.querySelectorAll(".markdown-animation").forEach(chain => {
+    // Always start from CSS/inherited size so chains track surrounding text.
+    chain.style.removeProperty("font-size");
+
+    const parent = chain.parentElement;
+    const available = Math.max(
+      40,
+      (parent?.clientWidth || root.clientWidth || 0) - (Number.parseFloat(getComputedStyle(chain).marginLeft) || 0) - 8
+    );
+    if (available < 40) return;
+
+    const natural = Number.parseFloat(getComputedStyle(chain).fontSize) || 16;
+    if (chain.scrollWidth <= available + 1) {
+      // Fits at surrounding size — leave inherited, never enlarge.
+      return;
+    }
+
+    // Only shrink when the full chain does not fit.
+    let size = natural;
+    const min = Math.max(10, natural * 0.55);
+    while (size > min && chain.scrollWidth > available + 1) {
+      size -= 0.5;
+      chain.style.fontSize = `${size}px`;
+    }
+  });
+}
+
 function render() {
   const currentSlide = normalizeRenderedSlide(renderedSlides[slide]);
   const stickyEntries = flattenRevealEntries(currentSlide.sticky);
@@ -232,6 +282,8 @@ function render() {
       baseSize: 36,
       minSize: 18
     });
+    fitMarkdownAnimations(currentEl);
+    fitMarkdownAnimations(nextEl);
     applySharedPopupState();
   }
 
@@ -261,6 +313,7 @@ function render() {
       renderAudienceQrOverlay();
     }
     fitProjectorSlide(projectorSlide, slide);
+    fitMarkdownAnimations(projectorSlide);
     applySharedPopupState();
     if (isTablet) applyTabletPreviewScale();
   }
@@ -280,6 +333,7 @@ function render() {
         maxWidth: audienceSlide.clientWidth
       });
     }
+    fitMarkdownAnimations(audienceSlide);
     applySharedPopupState();
   }
 }

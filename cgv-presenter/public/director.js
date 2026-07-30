@@ -1,5 +1,46 @@
 const socket = io({ transports: ["websocket", "polling"] });
 
+(function ensurePencilFilter() {
+  if (document.getElementById("cgv-pencil-filter")) return;
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.id = "cgv-pencil-filter";
+  svg.setAttribute("width", "0");
+  svg.setAttribute("height", "0");
+  svg.setAttribute("aria-hidden", "true");
+  svg.style.position = "absolute";
+  svg.innerHTML = `
+    <filter id="cgv-pencil-wobble" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.35" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  `;
+  document.body.prepend(svg);
+})();
+
+function fitMarkdownAnimations(root) {
+  if (!root) return;
+
+  root.querySelectorAll(".markdown-animation").forEach(chain => {
+    chain.style.removeProperty("font-size");
+    const parent = chain.parentElement;
+    const available = Math.max(
+      40,
+      (parent?.clientWidth || root.clientWidth || 0) - (Number.parseFloat(getComputedStyle(chain).marginLeft) || 0) - 8
+    );
+    if (available < 40) return;
+
+    const natural = Number.parseFloat(getComputedStyle(chain).fontSize) || 16;
+    if (chain.scrollWidth <= available + 1) return;
+
+    let size = natural;
+    const min = Math.max(10, natural * 0.55);
+    while (size > min && chain.scrollWidth > available + 1) {
+      size -= 0.5;
+      chain.style.fontSize = `${size}px`;
+    }
+  });
+}
+
 let latestState = {};
 let songs = [];
 let selectedSongId = null;
@@ -572,6 +613,7 @@ function fitDirectorText() {
         songMode: false,
         size: lookahead
       };
+      fitMarkdownAnimations(content);
       return;
     }
   }
@@ -599,6 +641,7 @@ function fitDirectorText() {
       songMode: isSongMode,
       size: high
     };
+    fitMarkdownAnimations(content);
     return;
   }
 
@@ -623,6 +666,7 @@ function fitDirectorText() {
     songMode: isSongMode,
     size: best
   };
+  fitMarkdownAnimations(content);
 }
 
 function renderDirector(state = {}) {

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CGV chain style options</title>
+  <link rel="stylesheet" href="/fonts/instrument-serif/index.css" />
+  <style>
+    :root {
+      --scripture: "Instrument Serif", "Literata", Georgia, serif;
+      --ui: "IBM Plex Sans", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: var(--ui);
+      background: #e8edf4;
+      color: #111827;
+    }
+
+    header {
+      padding: 28px 32px 8px;
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 1.45rem;
+      font-weight: 650;
+    }
+
+    header p {
+      margin: 0;
+      color: #4b5563;
+      max-width: 52rem;
+      line-height: 1.45;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+      padding: 20px 24px 40px;
+    }
+
+    .option {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #cfd8e6;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .option-label {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e5eaf2;
+      background: #f8fafc;
+    }
+
+    .option-label strong {
+      font-size: 1.05rem;
+    }
+
+    .option-label span {
+      color: #64748b;
+      font-size: 0.92rem;
+    }
+
+    .stage {
+      min-height: 168px;
+      display: grid;
+      place-items: center;
+      padding: 28px 20px;
+    }
+
+    .stage-dark {
+      background: #0b1120;
+    }
+
+    .stage-paper {
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.55), transparent 40%),
+        linear-gradient(180deg, #f4efe4, #ebe3d4);
+    }
+
+    .chain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.4em 0.55em;
+      font-family: var(--scripture);
+      font-style: italic;
+      line-height: 1.2;
+    }
+
+    .arrow {
+      font-family: var(--ui);
+      font-style: normal;
+      opacity: 0.75;
+    }
+
+    /* 1 · Plain */
+    .plain {
+      color: #f1d286;
+      font-size: 2rem;
+    }
+
+    .plain .arrow { color: #f1d286; }
+
+    /* 2 · Pencil boxes */
+    .pencil {
+      color: #2a2a2a;
+      font-size: 1.85rem;
+      gap: 0.55em 0.7em;
+    }
+
+    .pencil .item {
+      display: inline-block;
+      padding: 0.28em 0.55em 0.22em;
+      background:
+        repeating-linear-gradient(
+          -18deg,
+          rgba(80, 80, 80, 0.07),
+          rgba(80, 80, 80, 0.07) 2px,
+          rgba(80, 80, 80, 0.14) 2px,
+          rgba(80, 80, 80, 0.14) 4px
+        ),
+        rgba(255, 255, 255, 0.35);
+      border: 2px solid transparent;
+      border-radius: 4px 7px 3px 8px / 6px 3px 8px 4px;
+      box-shadow:
+        0 0 0 1.5px rgba(40, 40, 40, 0.55),
+        1px 1px 0 rgba(40, 40, 40, 0.25),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+      filter: url(#pencil-wobble);
+      transform: rotate(-0.4deg);
+    }
+
+    .pencil .item:nth-child(3) { transform: rotate(0.5deg); }
+    .pencil .item:nth-child(5) { transform: rotate(-0.3deg); }
+
+    .pencil .arrow {
+      color: #444;
+      font-size: 0.9em;
+    }
+
+    /* 3 · Chalk cards */
+    .chalk {
+      color: #f8fafc;
+      font-size: 1.8rem;
+      gap: 0.55em 0.65em;
+    }
+
+    .chalk .item {
+      display: inline-block;
+      padding: 0.34em 0.62em 0.3em;
+      border-radius: 14px;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.08), transparent 45%),
+        #1e293b;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+      color: #f8fafc;
+    }
+
+    .chalk .arrow {
+      color: #5eead4;
+      opacity: 0.9;
+    }
+
+    /* 4 · Underline */
+    .underline-style {
+      color: #f1d286;
+      font-size: 2rem;
+    }
+
+    .underline-style .item {
+      display: inline-block;
+      padding-bottom: 0.08em;
+      background-image:
+        linear-gradient(90deg, transparent 0 2%, rgba(214, 186, 120, 0.95) 2% 98%, transparent 98%),
+        linear-gradient(90deg, transparent 0 4%, rgba(180, 150, 80, 0.45) 4% 96%, transparent 96%);
+      background-position: 0 100%, 0 calc(100% - 2px);
+      background-repeat: no-repeat;
+      background-size: 100% 2px, 100% 1px;
+      transform: rotate(-0.2deg);
+    }
+
+    .underline-style .item:nth-child(3) { transform: rotate(0.35deg); }
+    .underline-style .arrow { color: #f1d286; }
+
+    footer {
+      padding: 0 32px 36px;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    @media (min-width: 980px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true">
+    <filter id="pencil-wobble">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" />
+    </filter>
+  </svg>
+
+  <header>
+    <h1>CGV chain animation — style options</h1>
+    <p>
+      Same sample chain: <em>nosotros → visto → ojos</em>. Pick the look you want on the projector,
+      then tell me the number.
+    </p>
+  </header>
+
+  <div class="grid">
+    <section class="option">
+      <div class="option-label">
+        <strong>1 · Plain</strong>
+        <span>Current look</span>
+      </div>
+      <div class="stage stage-dark">
+        <div class="chain plain">
+          <span class="item">nosotros</span>
+          <span class="arrow">→</span>
+          <span class="item">visto</span>
+          <span class="arrow">→</span>
+          <span class="item">ojos</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="option">
+      <div class="option-label">
+        <strong>2 · Pencil boxes</strong>
+        <span>Graphite fill + uneven outline</span>
+      </div>
+      <div class="stage stage-paper">
+        <div class="chain pencil">
+          <span class="item">nosotros</span>
+          <span class="arrow">→</span>
+          <span class="item">visto</span>
+          <span class="arrow">→</span>
+          <span class="item">ojos</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="option">
+      <div class="option-label">
+        <strong>3 · Chalk cards</strong>
+        <span>Dark rounded cards</span>
+      </div>
+      <div class="stage stage-dark">
+        <div class="chain chalk">
+          <span class="item">nosotros</span>
+          <span class="arrow">→</span>
+          <span class="item">visto</span>
+          <span class="arrow">→</span>
+          <span class="item">ojos</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="option">
+      <div class="option-label">
+        <strong>4 · Underline</strong>
+        <span>Pencil underline only</span>
+      </div>
+      <div class="stage stage-dark">
+        <div class="chain underline-style">
+          <span class="item">nosotros</span>
+          <span class="arrow">→</span>
+          <span class="item">visto</span>
+          <span class="arrow">→</span>
+          <span class="item">ojos</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>Reply with 1, 2, 3, or 4 — or a mix (e.g. “2 on projector, 1 on presenter”).</footer>
+</body>
+</html>

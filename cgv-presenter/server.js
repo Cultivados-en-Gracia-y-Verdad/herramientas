@@ -3132,7 +3132,7 @@ function renderAnimatedChain(chain) {
   });
 
   return `
-    <div class="markdown-animation markdown-animation-${direction}" data-direction="${direction}">
+    <div class="markdown-animation markdown-animation-${direction} markdown-animation-diagram" data-direction="${direction}" data-style="diagram">
       ${parts.join("")}
     </div>
   `.trim();
