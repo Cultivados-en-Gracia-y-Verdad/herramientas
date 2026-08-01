@@ -18,8 +18,18 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.lib.utils import ImageReader
 from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import Flowable, Image, KeepTogether, PageBreak, Paragraph, SimpleDocTemplate, Spacer
+from reportlab.pdfbase.ttfonts import TTFont, TTFError
+from reportlab.platypus import (
+    Flowable,
+    Image,
+    KeepTogether,
+    PageBreak,
+    Paragraph,
+    SimpleDocTemplate,
+    Spacer,
+    Table,
+    TableStyle,
+)
 
 
 VERSE_HEADING_RE = re.compile(r"^[1-3]?\s?[A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+\s+\d+:\d+")
@@ -28,7 +38,10 @@ NUMBERED_LIST_RE = re.compile(r"^(?P<indent>\s*)(?P<marker>\d+[.)])\s+(?P<text>.
 IMAGE_RE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<path>[^)]+)\)$")
 FOOTNOTE_DEF_RE = re.compile(r"^\[\^(?P<id>[^\]]+)\]:\s*(?P<text>.+)$")
 FOOTNOTE_CITE_RE = re.compile(r"\[\^(?P<id>[^\]]+)\]")
-ACTOR_TRIPLE_RE = re.compile(r"→")
+HTML_COMMENT_RE = re.compile(r"^<!--.*?-->$")
+BR_RE = re.compile(r"<br\s*/?>", re.IGNORECASE)
+FENCE_RE = re.compile(r"^```(?P<lang>[\w-]*)\s*$")
+ACTOR_TRIPLE_RE = re.compile(r"[→⇒➡➜⟶⤷↪]")
 ACTORS_LINE_RE = re.compile(r"^Actores\b", re.IGNORECASE)
 TONO_LINE_RE = re.compile(r"^Tono\b", re.IGNORECASE)
 FRONT_MATTER_RE = re.compile(r"\A---\s*\n(?P<body>.*?)\n---\s*(?:\n|\Z)", re.DOTALL)
@@ -55,6 +68,11 @@ FONT_DIRS = [
     Path("/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype"),
 ]
 IOWAN_TTC = Path("/System/Library/Fonts/Supplemental/Iowan Old Style.ttc")
+ARROW_SYMBOLS_RE = re.compile(r"([→⇒➡➜⟶⤷↪↓⤵↧⇣↳])")
+MERMAID_NODE_DEF_RE = re.compile(
+    r"(?P<id>[A-Za-z][\w-]*)\s*(?:\[\s*\"(?P<quoted>[^\"]+)\"\s*\]|\[(?P<bracket>[^\]]+)\]|\(\s*\"(?P<round_quoted>[^\"]+)\"\s*\)|\((?P<round>[^)]+)\))"
+)
+MERMAID_EDGE_RE = re.compile(r"(?P<left>[A-Za-z][\w-]*).*?(?:-->|---|==>|\.-\.)\s*(?P<right>[A-Za-z][\w-]*)")
 
 # 2 spaces in source = one outline depth step. Wide enough to read as a tree.
 INDENT_STEP = 0.30 * inch
@@ -93,6 +111,31 @@ class Theme:
 class LayoutContext:
     paragraph_left: float = 0
     paragraph_parent: str = "body"
+
+
+class DownArrow(Flowable):
+    """Draw a down arrow instead of relying on a font glyph."""
+
+    def __init__(self, width: float, height: float = 0.24 * inch):
+        super().__init__()
+        self.width = width
+        self.height = height
+
+    def draw(self) -> None:
+        canvas = self.canv
+        center_x = self.width / 2
+        canvas.saveState()
+        canvas.setStrokeColor(colors.HexColor("#3a555c"))
+        canvas.setFillColor(colors.HexColor("#3a555c"))
+        canvas.setLineWidth(1.0)
+        canvas.line(center_x, self.height - 2, center_x, 7)
+        arrow = canvas.beginPath()
+        arrow.moveTo(center_x - 4, 9)
+        arrow.lineTo(center_x, 2)
+        arrow.lineTo(center_x + 4, 9)
+        arrow.close()
+        canvas.drawPath(arrow, stroke=0, fill=1)
+        canvas.restoreState()
 
 
 class PageNumberCanvas:
@@ -327,6 +370,26 @@ def register_fonts() -> tuple[str, str, str, str]:
         italic="CGVSerif-Italic",
         boldItalic="CGVSerif-BoldItalic",
     )
+    symbol_candidates = [
+        Path("/System/Library/Fonts/SFNS.ttf"),
+        Path("/System/Library/Fonts/SFNSMono.ttf"),
+        Path("/System/Library/Fonts/Apple Symbols.ttf"),
+        Path("/System/Library/Fonts/Supplemental/AppleGothic.ttf"),
+        Path("/System/Library/Fonts/Supplemental/AppleMyungjo.ttf"),
+        Path("/System/Library/Fonts/Supplemental/Arial Unicode.ttf"),
+        Path("/Library/Fonts/Arial Unicode.ttf"),
+        Path(
+            "/Users/johnwry/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype/DejaVuSans.ttf"
+        ),
+    ]
+    for symbol_font in symbol_candidates:
+        if not symbol_font.exists():
+            continue
+        try:
+            pdfmetrics.registerFont(TTFont("CGVSymbols", os.fspath(symbol_font)))
+            break
+        except TTFError:
+            continue
     return ("CGVSerif", "CGVSerif-Bold", "CGVSerif-Italic", "CGVSerif-BoldItalic")
 
 
@@ -346,8 +409,8 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
         leading=theme.leading,
         alignment=TA_LEFT,
         textColor=ink,
-        spaceBefore=3,
-        spaceAfter=7,
+        spaceBefore=2,
+        spaceAfter=4,
     )
 
     return {
@@ -409,11 +472,11 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             "Heading3Sintesis",
             parent=base,
             fontName=font_bold,
-            fontSize=12.2,
-            leading=16,
+            fontSize=14.8,
+            leading=18,
             textColor=accent,
-            spaceBefore=20,
-            spaceAfter=9,
+            spaceBefore=18,
+            spaceAfter=8,
             keepWithNext=True,
         ),
         # H4 — independent clause (Scripture root)
@@ -453,10 +516,10 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             parent=base,
             fontName=font_regular,
             fontSize=theme.body_size - 0.2,
-            leading=theme.leading,
+            leading=theme.leading - 0.5,
             textColor=colors.HexColor("#2a2620"),
-            spaceBefore=3,
-            spaceAfter=8,
+            spaceBefore=2,
+            spaceAfter=4,
         ),
         "scripture_phrase": ParagraphStyle(
             "ScripturePhrase",
@@ -523,10 +586,10 @@ def build_styles(theme: Theme) -> dict[str, ParagraphStyle]:
             parent=base,
             fontName=font_regular,
             fontSize=theme.body_size,
-            leading=theme.leading + 0.8,
+            leading=theme.leading,
             textColor=colors.HexColor("#2a2620"),
-            spaceBefore=3,
-            spaceAfter=8,
+            spaceBefore=1,
+            spaceAfter=4,
         ),
         "bullet": ParagraphStyle(
             "BulletText",
@@ -559,7 +622,7 @@ def answer_tag_html(match: re.Match[str], variant: str) -> str:
     if variant == "student":
         width = max(10, round(len(answer) * 2.6))
         return "<u>" + ("&nbsp;" * width) + "</u>"
-    return f"<b><u>{escape_inline(answer)}</u></b>"
+    return f"<b><u>{render_arrow_symbols(escape_inline(answer))}</u></b>"
 
 
 def protect_answer_tags(text: str, variant: str) -> tuple[str, dict[str, str]]:
@@ -600,10 +663,22 @@ def protect_footnote_cites(text: str) -> tuple[str, dict[str, str]]:
 
 
 def normalize_outline_symbols(text: str) -> str:
-    """Map arrows Iowan lacks to glyphs the book face actually has."""
-    text = text.replace("→", " › ")
-    text = re.sub(r"↳\s*", "· ", text)
+    """Normalize HTML line breaks before inline Markdown rendering."""
+    text = BR_RE.sub(" ", text)
     return re.sub(r" {2,}", " ", text)
+
+
+def render_arrow_symbols(text: str) -> str:
+    """Keep source arrows visible by using a font that has those glyphs."""
+    try:
+        pdfmetrics.getFont("CGVSymbols")
+    except KeyError:
+        return text
+
+    def replace(match: re.Match[str]) -> str:
+        return f"<font name='CGVSymbols'>{match.group(1)}</font>"
+
+    return ARROW_SYMBOLS_RE.sub(replace, text)
 
 
 def format_inline(text: str, variant: str = "teacher", *, scripture_style: bool = False) -> str:
@@ -614,6 +689,7 @@ def format_inline(text: str, variant: str = "teacher", *, scripture_style: bool 
     protected, answer_replacements = protect_answer_tags(stripped, variant)
     protected, footnote_replacements = protect_footnote_cites(protected)
     rendered = escape_inline(protected)
+    rendered = render_arrow_symbols(rendered)
     rendered = restore_protected(rendered, answer_replacements)
     return restore_protected(rendered, footnote_replacements)
 
@@ -710,6 +786,148 @@ def append_markdown_image(
     max_width = max(2.2 * inch, (letter[0] - 2 * Theme.margin_x) - left_indent)
     story.append(make_markdown_image(image_path, max_width))
     story.append(Spacer(1, 8))
+
+
+def strip_diagram_arrow_token(text: str) -> bool:
+    clean = html.unescape(re.sub(r"<[^>]+>", "", text)).strip()
+    return bool(re.fullmatch(r"[↓⤵↧⇣vV]+", clean))
+
+
+def append_box_diagram(
+    boxes: list[str],
+    story: list[Flowable],
+    styles: dict[str, ParagraphStyle],
+    variant: str,
+    left_indent: float,
+) -> bool:
+    if len(boxes) < 2:
+        return False
+
+    max_width = max(2.6 * inch, min(4.9 * inch, (letter[0] - 2 * Theme.margin_x) - left_indent))
+    box_style = ParagraphStyle(
+        f"DiagramBox{int(left_indent * 100)}",
+        parent=styles["writer"],
+        alignment=TA_CENTER,
+        fontSize=styles["writer"].fontSize,
+        leading=styles["writer"].leading,
+        spaceBefore=0,
+        spaceAfter=0,
+    )
+
+    flowables: list[Flowable] = []
+    for index, box_text in enumerate(boxes):
+        table = Table(
+            [[Paragraph(format_inline(box_text, variant), box_style)]],
+            colWidths=[max_width],
+            hAlign="LEFT",
+        )
+        table.setStyle(
+            TableStyle(
+                [
+                    ("BOX", (0, 0), (-1, -1), 0.8, colors.HexColor("#3a555c")),
+                    ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#f8f8f5")),
+                    ("LEFTPADDING", (0, 0), (-1, -1), 8),
+                    ("RIGHTPADDING", (0, 0), (-1, -1), 8),
+                    ("TOPPADDING", (0, 0), (-1, -1), 5),
+                    ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+                    ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ]
+            )
+        )
+        flowables.append(table)
+        if index < len(boxes) - 1:
+            flowables.append(DownArrow(max_width))
+
+    story.append(Spacer(1, 4))
+    story.append(KeepTogether(flowables))
+    story.append(Spacer(1, 5))
+    return True
+
+
+def append_break_diagram(
+    raw_text: str,
+    story: list[Flowable],
+    styles: dict[str, ParagraphStyle],
+    variant: str,
+    left_indent: float,
+) -> bool:
+    if not BR_RE.search(raw_text):
+        return False
+
+    parts = [part.strip() for part in BR_RE.split(raw_text) if part.strip()]
+    boxes = [part for part in parts if not strip_diagram_arrow_token(part)]
+    return append_box_diagram(boxes, story, styles, variant, left_indent)
+
+
+def clean_mermaid_label(text: str) -> str:
+    clean = BR_RE.sub(" ", text.strip())
+    clean = clean.strip().strip('"').strip("'")
+    return re.sub(r"\s+", " ", clean)
+
+
+def parse_mermaid_boxes(code: str) -> list[str]:
+    labels: dict[str, str] = {}
+    order: list[str] = []
+    outgoing: dict[str, str] = {}
+    incoming: set[str] = set()
+
+    for raw_line in code.splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("%%") or line.lower().startswith(("flowchart", "graph")):
+            continue
+        for match in MERMAID_NODE_DEF_RE.finditer(line):
+            node_id = match.group("id")
+            label = next(
+                value
+                for value in [
+                    match.group("quoted"),
+                    match.group("bracket"),
+                    match.group("round_quoted"),
+                    match.group("round"),
+                    node_id,
+                ]
+                if value
+            )
+            if node_id not in labels:
+                order.append(node_id)
+            labels[node_id] = clean_mermaid_label(label)
+        edge = MERMAID_EDGE_RE.search(line)
+        if edge:
+            left = edge.group("left")
+            right = edge.group("right")
+            outgoing.setdefault(left, right)
+            incoming.add(right)
+            if left not in labels:
+                labels[left] = left
+                order.append(left)
+            if right not in labels:
+                labels[right] = right
+                order.append(right)
+
+    if not labels:
+        return []
+    starts = [node_id for node_id in order if node_id not in incoming]
+    current = starts[0] if starts else order[0]
+    chain: list[str] = []
+    seen: set[str] = set()
+    while current and current not in seen:
+        seen.add(current)
+        chain.append(labels[current])
+        current = outgoing.get(current, "")
+    for node_id in order:
+        if node_id not in seen:
+            chain.append(labels[node_id])
+    return chain
+
+
+def append_mermaid_diagram(
+    code: str,
+    story: list[Flowable],
+    styles: dict[str, ParagraphStyle],
+    variant: str,
+    left_indent: float = 0,
+) -> bool:
+    return append_box_diagram(parse_mermaid_boxes(code), story, styles, variant, left_indent)
 
 
 def outline_left(indent_levels: int, base: float = INDENT_BASE) -> float:
@@ -868,8 +1086,8 @@ def flush_paragraph(
         parent=parent,
         leftIndent=context.paragraph_left if context.paragraph_parent != "body" else 0,
         firstLineIndent=0,
-        spaceBefore=2,
-        spaceAfter=7,
+        spaceBefore=1 if in_sintesis else 2,
+        spaceAfter=4 if in_sintesis else 5,
     )
     story.append(make_paragraph(text, style, variant))
     lines.clear()
@@ -895,6 +1113,8 @@ def parse_markdown(
     context = LayoutContext()
     in_sintesis = False
     pending_blank = False
+    code_lang: str | None = None
+    code_lines: list[str] = []
 
     def flush_lists() -> None:
         nonlocal context
@@ -910,16 +1130,37 @@ def parse_markdown(
     for raw in markdown.splitlines():
         line = raw.rstrip()
         stripped = line.strip()
+        fence_match = FENCE_RE.match(stripped)
+
+        if code_lang is not None:
+            if fence_match:
+                if code_lang == "mermaid":
+                    append_mermaid_diagram("\n".join(code_lines), story, styles, variant)
+                code_lang = None
+                code_lines.clear()
+            else:
+                code_lines.append(line)
+            continue
+
+        if fence_match:
+            flush_all()
+            code_lang = fence_match.group("lang").lower()
+            code_lines.clear()
+            continue
 
         if not stripped:
             flush_all()
             # Blank lines are slide breaks in the source; give the page a little air.
             if not pending_blank:
-                story.append(Spacer(1, 9))
+                story.append(Spacer(1, 3))
                 pending_blank = True
             continue
 
         pending_blank = False
+
+        if HTML_COMMENT_RE.match(stripped):
+            flush_all()
+            continue
 
         if stripped.startswith("\\begin{") or stripped.startswith("\\end{"):
             flush_all()
@@ -983,12 +1224,21 @@ def parse_markdown(
             if image_match:
                 append_markdown_image(image_match, story, styles, source_path, variant, left)
                 continue
+            if quote.strip().lower() == "en síntesis":
+                story.append(make_paragraph("En síntesis", styles["h3_sintesis"], variant))
+                context = LayoutContext()
+                in_sintesis = True
+                continue
+            if append_break_diagram(quote, story, styles, variant, left):
+                context = LayoutContext(left, "writer")
+                in_sintesis = False
+                continue
             quote_style = ParagraphStyle(
                 f"Writer{int(left * 100)}",
                 parent=styles["writer"],
                 leftIndent=left,
-                spaceBefore=3,
-                spaceAfter=8,
+                spaceBefore=2,
+                spaceAfter=4,
             )
             story.append(make_paragraph(quote, quote_style, variant))
             context = LayoutContext(left, "writer")
@@ -1005,7 +1255,7 @@ def parse_markdown(
                 is_scripture_heading = level == 4
                 heading = make_paragraph(text, style, variant, scripture_style=is_scripture_heading)
                 if level <= 2 and story:
-                    story.append(Spacer(1, 8))
+                    story.append(Spacer(1, 5))
                 story.append(heading)
                 context = LayoutContext()
                 in_sintesis = key == "h3_sintesis"
@@ -1019,6 +1269,8 @@ def parse_markdown(
 
         paragraph_lines.append(stripped)
 
+    if code_lang == "mermaid":
+        append_mermaid_diagram("\n".join(code_lines), story, styles, variant)
     flush_all()
     return story
 
@@ -1147,7 +1399,7 @@ def main(argv: Iterable[str] | None = None) -> int:
 
     variants = [args.single] if args.single else ["student", "teacher"]
     labels = {"student": "Manual del Alumno", "teacher": "Manual del Maestro"}
-    suffixes = {"student": "manual-del-alumno", "teacher": "manual-del-maestro"}
+    suffixes = {"student": "alumno", "teacher": "maestro"}
     written: list[Path] = []
 
     for variant in variants:
@@ -1162,7 +1414,7 @@ def main(argv: Iterable[str] | None = None) -> int:
 
         theme = Theme(
             body_size=args.body_size,
-            leading=args.body_size * 1.48,
+            leading=args.body_size * 1.36,
             title=args.title or metadata.get("title") or book or "Manual",
             subtitle=args.subtitle if args.subtitle is not None else metadata.get("subtitle", ""),
             telos=metadata.get("telos", ""),

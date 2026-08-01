@@ -26,46 +26,139 @@ function parseAnimatedChain(markdown) {
   const raw = String(markdown || "").trim();
   if (!raw) return null;
 
-  const body = raw.replace(/^[-*]\s+/, "").trim();
+  const body = raw.replace(/^(?:[-*]|>)\s*/, "").trim();
   const hasDown = body.includes("↓");
   const hasRight = body.includes("→");
-  const direction = hasDown ? "vertical" : hasRight ? "horizontal" : null;
-  if (!direction) return null;
-  if (hasDown && hasRight) return null;
+  if (!hasDown && !hasRight) return null;
   if (/[:：]/.test(body) || /\[\^[^\]]+\]/.test(body)) return null;
 
-  const arrow = direction === "vertical" ? "↓" : "→";
   const parts = body
-    .split(arrow)
+    .split(/([→↓])/)
     .map(part => part.trim())
     .filter(Boolean);
 
-  if (parts.length < 2) return null;
+  const items = [];
+  const connectors = [];
+  let expectItem = true;
 
-  const items = parts.map(stripMarkdownEmphasis).filter(Boolean);
-  if (items.length < 2 || items.length !== parts.length) return null;
+  for (const part of parts) {
+    if (part === "→" || part === "↓") {
+      if (expectItem || connectors.length >= items.length) return null;
+      connectors.push(part);
+      expectItem = true;
+      continue;
+    }
+
+    if (!expectItem) return null;
+    items.push(stripMarkdownEmphasis(part));
+    expectItem = false;
+  }
+
+  if (expectItem) return null;
+  if (items.length < 2 || connectors.length !== items.length - 1) return null;
   if (items.some(item => /[*_`]/.test(item))) return null;
   if (items.some(item => item.length > 80)) return null;
 
-  return { direction, items };
+  const direction = hasDown && hasRight
+    ? "mixed"
+    : hasDown
+      ? "vertical"
+      : "horizontal";
+
+  return { direction, items, connectors };
 }
 
 function buildAnimatedChainReveals(line) {
   const chain = parseAnimatedChain(line);
-  if (!chain) return null;
+  return chain ? buildAnimatedChainRevealsFromChain(chain) : null;
+}
+
+function buildAnimatedChainRevealsFromChain(chain) {
   const id = `chain-${chain.items.join("-").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, "")}-${chain.direction}`;
   return chain.items.map((_, index) =>
     `${animatedChainMarker}${JSON.stringify({
       id,
       direction: chain.direction,
-      items: chain.items.slice(0, index + 1)
+      items: chain.items.slice(0, index + 1),
+      connectors: (chain.connectors || []).slice(0, index)
     })}`
   );
 }
 
+function parseMultilineAnimatedChain(lines, startIndex) {
+  const first = parseAnimatedChain(lines[startIndex]);
+  if (!first || first.direction !== "horizontal") return null;
+
+  const items = [...first.items];
+  const connectors = [...first.connectors];
+  let index = startIndex + 1;
+  let consumed = 1;
+  let sawDown = false;
+  let expectNextRow = false;
+
+  while (index < lines.length) {
+    const raw = String(lines[index] || "").trim();
+    if (!raw) break;
+
+    if (raw === "↓") {
+      if (expectNextRow) return null;
+      connectors.push("↓");
+      sawDown = true;
+      expectNextRow = true;
+      index += 1;
+      consumed += 1;
+      continue;
+    }
+
+    if (expectNextRow) {
+      const next = parseAnimatedChain(raw);
+      if (next && next.direction === "horizontal") {
+        items.push(...next.items);
+        connectors.push(...next.connectors);
+        expectNextRow = false;
+        index += 1;
+        consumed += 1;
+        continue;
+      }
+
+      if (!/[→↓]/.test(raw) && !/^[-*#>]/.test(raw)) {
+        items.push(stripMarkdownEmphasis(raw));
+        expectNextRow = false;
+        index += 1;
+        consumed += 1;
+        continue;
+      }
+    }
+
+    break;
+  }
+
+  if (expectNextRow) return null;
+  if (!sawDown || consumed < 3) return null;
+  if (items.length < 3 || connectors.length !== items.length - 1) return null;
+  if (items.some(item => !item || item.length > 80 || /[*_`]/.test(item))) return null;
+
+  return {
+    chain: {
+      direction: "mixed",
+      items,
+      connectors
+    },
+    consumed
+  };
+}
+
 function groupRevealLines(lines) {
   const revealLines = [];
-  for (const line of lines) {
+  for (let index = 0; index < lines.length; index++) {
+    const multiline = parseMultilineAnimatedChain(lines, index);
+    if (multiline) {
+      revealLines.push(...buildAnimatedChainRevealsFromChain(multiline.chain));
+      index += multiline.consumed - 1;
+      continue;
+    }
+
+    const line = lines[index];
     const animated = buildAnimatedChainReveals(line);
     if (animated) {
       revealLines.push(...animated);
@@ -101,7 +194,14 @@ const samples = [];
 const missed = [];
 
 for (const block of slideBlocks) {
-  for (const line of block) {
+  for (let index = 0; index < block.length; index++) {
+    const multiline = parseMultilineAnimatedChain(block, index);
+    if (multiline) {
+      index += multiline.consumed - 1;
+      continue;
+    }
+
+    const line = block[index];
     if (/→|↓/.test(line) && !parseAnimatedChain(line) && !/[:：]|\[\^/.test(line)) {
       missed.push(line);
     }
@@ -117,7 +217,13 @@ for (const block of slideBlocks) {
     const payloads = chainReveals.map(line => JSON.parse(line.slice(animatedChainMarker.length)));
     samples.push({
       source: block.find(line => /→|↓/.test(line)),
-      steps: payloads.map(payload => payload.items.join(payload.direction === "vertical" ? " ↓ " : " → "))
+      steps: payloads.map(payload => {
+        const items = payload.items || [];
+        const connectors = payload.connectors || [];
+        return items.map((item, index) =>
+          index === 0 ? item : `${connectors[index - 1] || "→"} ${item}`
+        ).join(" ");
+      })
     });
   }
 }

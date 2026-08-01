@@ -31,8 +31,8 @@ python3 md_to_pdf.py
 
 By default, the exporter reads `manual.md` and writes two PDFs beside the source Markdown:
 
-- `manual-del-alumno.pdf`
-- `manual-del-maestro.pdf`
+- `alumno.pdf`
+- `maestro.pdf`
 
 If there is no local `manual.md`, it reads
 `/Users/johnwry/Nextcloud/Documents/GitHub/curriculo/25.1Pedro/slides/1-pedro-manual.md`.
@@ -96,4 +96,12 @@ Other:
 - inline `**bold**`, `*italic*`, and `` `code` ``
 - Scripture stays italic-only — not wrapped in «…»
 - actor triples (`*A* → *B* → *C*`) render with a distinct weight/color
+- Mermaid `flowchart TD` / `graph TD` chains render as local boxed diagrams with drawn arrows:
+
+```mermaid
+flowchart TD
+  A["Características del caso"] --> B["Si decimos que no tenemos pecado"]
+  B --> C["Resultado"]
+  C --> D["nos engañamos… y la verdad no está en nosotros"]
+```
 - blank lines are slide breaks in the source; the PDF keeps only modest spacing

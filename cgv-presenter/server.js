@@ -585,6 +585,10 @@ function renderMarkdownInline(value) {
   return marked.parseInline(value, { renderer: courseMarkdownRenderer });
 }
 
+function hasGreekScript(value) {
+  return /[\p{Script=Greek}]/u.test(String(value || ""));
+}
+
 function isScriptureBlockquote(token) {
   const text = String(token?.text || "")
     .replace(/<[^>]*>/g, "")
@@ -1384,6 +1388,229 @@ function buildStyleSettingsCss() {
     lines.push("}");
   });
 
+  if (settings.theme === "classic-outline") {
+    lines.push(`
+:root,
+.presenter,
+.audience {
+  --cgv-classic-outline-active: 1;
+}
+
+.slide,
+.projector-slide,
+.audience-slide {
+  --classic-outline-rule: color-mix(in srgb, var(--style-reference-color, #c7a96b) 58%, transparent);
+}
+
+.projector-slide h3,
+.projector-slide .reference-title,
+.audience-slide h3,
+.audience-slide .reference-title,
+.slide h3,
+.slide .reference-title {
+  margin: 0 0 0.58em;
+  padding: 0.24em 0;
+  border-top: 0.045em solid var(--classic-outline-rule);
+  border-bottom: 0.045em solid var(--classic-outline-rule);
+  color: var(--style-h3-color, #c7a96b);
+  font-family: var(--cgv-ui-font);
+  font-size: var(--style-h3-size, 0.78em);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.projector-slide h3::before,
+.projector-slide .reference-title::before,
+.audience-slide h3::before,
+.audience-slide .reference-title::before,
+.slide h3::before,
+.slide .reference-title::before {
+  content: none;
+}
+
+.projector-slide h4,
+.projector-slide .independent-clause,
+.projector-slide .scripture-heading,
+.projector-slide .marker-cue,
+.projector-slide .phrase-cue,
+.audience-slide h4,
+.audience-slide .independent-clause,
+.audience-slide .scripture-heading,
+.audience-slide .marker-cue,
+.audience-slide .phrase-cue,
+.slide h4,
+.slide .independent-clause,
+.slide .scripture-heading,
+.slide .marker-cue,
+.slide .phrase-cue {
+  margin: 0.18em auto 0.34em;
+  width: fit-content;
+  max-width: min(100%, 24em);
+  border: 0;
+  border-top: 0.04em solid color-mix(in srgb, var(--style-h4-color, #f5ead2) 52%, transparent);
+  border-bottom: 0.04em solid color-mix(in srgb, var(--style-h4-color, #f5ead2) 52%, transparent);
+  background: transparent;
+  color: var(--style-h4-color, var(--cgv-scripture-display-color, #f5ead2));
+  font-family: var(--cgv-scripture-font);
+  font-size: var(--style-h4-size, 1.02em);
+  font-style: italic;
+  font-weight: 600;
+  line-height: var(--style-scripture-line-height, 1.5);
+  padding: 0.28em 0.42em;
+  text-align: center;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: balance;
+}
+
+.projector-slide h3 + p,
+.audience-slide h3 + p,
+.slide h3 + p,
+.projector-slide .scripture-line,
+.audience-slide .scripture-line,
+.slide .scripture-line,
+.projector-slide blockquote.scripture-quote,
+.projector-slide blockquote.scripture-quote p,
+.audience-slide blockquote.scripture-quote,
+.audience-slide blockquote.scripture-quote p,
+.slide blockquote.scripture-quote,
+.slide blockquote.scripture-quote p {
+  max-width: 24em;
+  margin: 0.18em auto 0.44em;
+  color: var(--cgv-scripture-display-color, #f5ead2);
+  font-family: var(--cgv-scripture-font);
+  font-size: var(--style-scripture-size, 1.02em);
+  font-style: italic;
+  font-weight: 500;
+  line-height: var(--style-scripture-line-height, 1.54);
+  text-align: center;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: balance;
+}
+
+.projector-slide .phrase-cue-minus,
+.projector-slide .phrase-cue-dependent,
+.projector-slide .phrase-cue-plus,
+.audience-slide .phrase-cue-minus,
+.audience-slide .phrase-cue-dependent,
+.audience-slide .phrase-cue-plus,
+.slide .phrase-cue-minus,
+.slide .phrase-cue-dependent,
+.slide .phrase-cue-plus {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projector-slide h5,
+.audience-slide h5,
+.slide h5 {
+  max-width: 25em;
+  margin: 0.38em auto 0.12em;
+  padding-left: 0.76em;
+  border-left: 0.06em solid var(--classic-outline-rule);
+  color: var(--style-h5-color, #f8fafc);
+  font-family: var(--cgv-ui-font);
+  font-size: var(--style-h5-size, 0.82em);
+  font-weight: 500;
+  line-height: 1.42;
+}
+
+.projector-slide h6,
+.audience-slide h6,
+.slide h6,
+.projector-slide blockquote.teaching-comment,
+.projector-slide blockquote.teaching-comment p,
+.audience-slide blockquote.teaching-comment,
+.audience-slide blockquote.teaching-comment p,
+.slide blockquote.teaching-comment,
+.slide blockquote.teaching-comment p,
+.projector-slide .marker-grammar,
+.projector-slide .grammar-note,
+.audience-slide .marker-grammar,
+.audience-slide .grammar-note,
+.slide .marker-grammar,
+.slide .grammar-note {
+  max-width: 25em;
+  margin: 0.26em auto;
+  border-left: 0;
+  padding-left: 0;
+  color: var(--style-h6-color, #d1d5db);
+  font-family: var(--cgv-ui-font);
+  font-size: var(--style-h6-size, 0.74em);
+  line-height: 1.48;
+  text-align: left;
+}
+
+.projector-slide .mechanical-point,
+.audience-slide .mechanical-point,
+.slide .mechanical-point {
+  display: grid;
+  grid-template-columns: 1.1em minmax(0, 1fr);
+  gap: 0.4em;
+  align-items: start;
+  color: color-mix(in srgb, var(--style-h6-color, #d1d5db) 86%, var(--style-reference-color, #c7a96b) 14%);
+}
+
+.projector-slide .mechanical-point::before,
+.audience-slide .mechanical-point::before,
+.slide .mechanical-point::before {
+  width: 0.46em;
+  height: 0.46em;
+  margin: 0.42em auto 0;
+  border-radius: 0;
+  opacity: 0.68;
+  transform: rotate(45deg);
+}
+
+.projector-slide .markdown-animation,
+.audience-slide .markdown-animation,
+.slide .markdown-animation {
+  max-width: 24em;
+  margin: 0.46em auto;
+  padding: 0;
+}
+
+.projector-slide .markdown-animation-mixed,
+.audience-slide .markdown-animation-mixed,
+.slide .markdown-animation-mixed {
+  --chain-label-width: 4.9em;
+  --chain-arrow-width: 0.95em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projector-slide .markdown-animation-mixed .markdown-animation-label,
+.audience-slide .markdown-animation-mixed .markdown-animation-label,
+.slide .markdown-animation-mixed .markdown-animation-label {
+  border: 0.045em solid var(--classic-outline-rule);
+  border-radius: 0;
+  background: transparent;
+  color: var(--style-h3-color, #c7a96b);
+  font-size: 0.74em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.projector-slide .markdown-animation-mixed .markdown-animation-value,
+.projector-slide .markdown-animation-mixed .markdown-animation-continuation,
+.audience-slide .markdown-animation-mixed .markdown-animation-value,
+.audience-slide .markdown-animation-mixed .markdown-animation-continuation,
+.slide .markdown-animation-mixed .markdown-animation-value,
+.slide .markdown-animation-mixed .markdown-animation-continuation {
+  color: var(--cgv-scripture-display-color, #f5ead2);
+  font-family: var(--cgv-scripture-font);
+  font-size: 0.84em;
+  font-style: italic;
+  font-weight: 600;
+}
+`.trim());
+  }
+
   return lines.join("\n");
 }
 
@@ -1953,7 +2180,8 @@ function lookupSpanishVerseForGreek(bookCode, chapter, verse) {
   return "";
 }
 
-function buildGreekUsageMarkup(surface) {
+function buildGreekUsageMarkup(surface, options = {}) {
+  const { paren = true } = options;
   const usage = lookupGreekUsage(surface, {
     presenterRootDir: __dirname,
     lookupVerseText: lookupSpanishVerseForGreek
@@ -1961,7 +2189,9 @@ function buildGreekUsageMarkup(surface) {
   if (!usage) return null;
 
   const referenceKey = escapeHtml(`greek:${usage.surface}`);
-  const labelHtml = `(${escapeHtml(usage.surface)})`;
+  const labelHtml = paren
+    ? `(${escapeHtml(usage.surface)})`
+    : escapeHtml(surface);
   const meta = [usage.lemma, usage.morphology].filter(Boolean).join(" · ");
 
   const popupText = usage.occurrences.map((occurrence, index) => {
@@ -2016,7 +2246,35 @@ function enrichGreekParentheticals(value) {
     .split(/(<[^>]+>)/g)
     .map(part => {
       if (part.startsWith("<") && part.endsWith(">")) {
-        if (/^<span\b[^>]*\bbible-ref\b/i.test(part)) anchorDepth += 1;
+        if (/^<span\b/i.test(part) && anchorDepth > 0) anchorDepth += 1;
+        else if (/^<span\b[^>]*\bbible-ref\b/i.test(part)) anchorDepth += 1;
+        else if (/^<\/span>/i.test(part) && anchorDepth > 0) anchorDepth -= 1;
+        return part;
+      }
+      return anchorDepth > 0 ? part : enrichText(part);
+    })
+    .join("");
+}
+
+function enrichBareGreekWords(value) {
+  const html = String(value || "");
+  if (!hasGreekScript(html)) return html;
+
+  const pattern = /[\p{Script=Greek}][\p{Script=Greek}\p{M}'ʼ’·-]*/gu;
+
+  const enrichText = text => text.replace(pattern, match => {
+    const info = describeGreekForm(match, __dirname);
+    if (info.isConnector) return match;
+    return buildGreekUsageMarkup(match, { paren: false }) || match;
+  });
+
+  let anchorDepth = 0;
+  return html
+    .split(/(<[^>]+>)/g)
+    .map(part => {
+      if (part.startsWith("<") && part.endsWith(">")) {
+        if (/^<span\b/i.test(part) && anchorDepth > 0) anchorDepth += 1;
+        else if (/^<span\b[^>]*\bbible-ref\b/i.test(part)) anchorDepth += 1;
         else if (/^<\/span>/i.test(part) && anchorDepth > 0) anchorDepth -= 1;
         return part;
       }
@@ -2027,8 +2285,10 @@ function enrichGreekParentheticals(value) {
 
 function enrichPresentationMarkup(value) {
   return enrichBibleReferences(
-    enrichGreekParentheticals(
-      enrichFootnotes(String(value || ""))
+    enrichBareGreekWords(
+      enrichGreekParentheticals(
+        enrichFootnotes(String(value || ""))
+      )
     )
   );
 }
@@ -2204,7 +2464,7 @@ function renderLine(line) {
 
   if (isGrammarNoteLine(line)) {
     return `
-      <p class="marker-grammar grammar-note">
+      <p class="marker-grammar grammar-note mechanical-point">
         ${enrichPresentationMarkup(renderMarkdownInline(normalizeCommentGlosses(line.replace(/^\*\s+/, ""))).trim())}
       </p>
     `.trim();
@@ -3066,63 +3326,196 @@ function stripMarkdownEmphasis(value) {
 // Actor / flow chains authored as normal markdown:
 //   * *A* → *B* → *C*
 //   - *A* ↓ *B* ↓ *C*
-// Later we can extend to prose notes like: *lo que* (ὃ): describe a *principio*
+//   > Condición→Si...↓Resultado→Él...
 function parseAnimatedChain(markdown) {
   const raw = String(markdown || "").trim();
   if (!raw) return null;
 
-  const body = raw.replace(/^[-*]\s+/, "").trim();
+  const body = raw.replace(/^(?:[-*]|>)\s*/, "").trim();
   const hasDown = body.includes("↓");
   const hasRight = body.includes("→");
-  const direction = hasDown ? "vertical" : hasRight ? "horizontal" : null;
-  if (!direction) return null;
-  if (hasDown && hasRight) return null;
+  if (!hasDown && !hasRight) return null;
 
   // v1: pure term chains only — skip grammar notes / descriptions.
   if (/[:：]/.test(body) || /\[\^[^\]]+\]/.test(body)) return null;
 
-  const arrow = direction === "vertical" ? "↓" : "→";
   const parts = body
-    .split(arrow)
+    .split(/([→↓])/)
     .map(part => part.trim())
     .filter(Boolean);
 
-  if (parts.length < 2) return null;
+  const items = [];
+  const connectors = [];
+  let expectItem = true;
 
-  const items = parts.map(stripMarkdownEmphasis).filter(Boolean);
-  if (items.length < 2 || items.length !== parts.length) return null;
+  for (const part of parts) {
+    if (part === "→" || part === "↓") {
+      if (expectItem || connectors.length >= items.length) return null;
+      connectors.push(part);
+      expectItem = true;
+      continue;
+    }
+
+    if (!expectItem) return null;
+    items.push(stripMarkdownEmphasis(part));
+    expectItem = false;
+  }
+
+  if (expectItem) return null;
+  if (items.length < 2 || connectors.length !== items.length - 1) return null;
   // Reject unbalanced / leftover emphasis (e.g. arrow inside one *…* span).
   if (items.some(item => /[*_`]/.test(item))) return null;
   if (items.some(item => item.length > 80)) return null;
 
-  return { direction, items };
+  const direction = hasDown && hasRight
+    ? "mixed"
+    : hasDown
+      ? "vertical"
+      : "horizontal";
+
+  return { direction, items, connectors };
 }
 
-function buildAnimatedChainReveals(line) {
-  const chain = parseAnimatedChain(line);
-  if (!chain) return null;
-
-  const id = `chain-${normalizeReferenceText(chain.items.join("-"))}-${chain.direction}`;
+function buildAnimatedChainRevealsFromChain(chain) {
+  const connectorKey = (chain.connectors || []).join("");
+  const id = `chain-${normalizeReferenceText(chain.items.join("-"))}-${chain.direction}-${normalizeReferenceText(connectorKey)}`;
 
   return chain.items.map((_, index) =>
     `${animatedChainMarker}${JSON.stringify({
       id,
       direction: chain.direction,
-      items: chain.items.slice(0, index + 1)
+      items: chain.items.slice(0, index + 1),
+      connectors: (chain.connectors || []).slice(0, index)
     })}`
   );
 }
 
+function buildAnimatedChainReveals(line) {
+  const chain = parseAnimatedChain(line);
+  return chain ? buildAnimatedChainRevealsFromChain(chain) : null;
+}
+
+function parseMultilineAnimatedChain(lines, startIndex) {
+  const first = parseAnimatedChain(lines[startIndex]);
+  if (!first || first.direction !== "horizontal") return null;
+
+  const items = [...first.items];
+  const connectors = [...first.connectors];
+  let index = startIndex + 1;
+  let consumed = 1;
+  let sawDown = false;
+  let expectNextRow = false;
+
+  while (index < lines.length) {
+    const raw = String(lines[index] || "").trim();
+    if (!raw) break;
+
+    if (raw === "↓") {
+      if (expectNextRow) return null;
+      connectors.push("↓");
+      sawDown = true;
+      expectNextRow = true;
+      index += 1;
+      consumed += 1;
+      continue;
+    }
+
+    if (expectNextRow) {
+      const next = parseAnimatedChain(raw);
+      if (next && next.direction === "horizontal") {
+        items.push(...next.items);
+        connectors.push(...next.connectors);
+        expectNextRow = false;
+        index += 1;
+        consumed += 1;
+        continue;
+      }
+
+      if (!/[→↓]/.test(raw) && !/^[-*#>]/.test(raw)) {
+        items.push(stripMarkdownEmphasis(raw));
+        expectNextRow = false;
+        index += 1;
+        consumed += 1;
+        continue;
+      }
+    }
+
+    break;
+  }
+
+  if (expectNextRow) return null;
+  if (!sawDown || consumed < 3) return null;
+  if (items.length < 3 || connectors.length !== items.length - 1) return null;
+  if (items.some(item => !item || item.length > 80 || /[*_`]/.test(item))) return null;
+
+  return {
+    chain: {
+      direction: "mixed",
+      items,
+      connectors
+    },
+    consumed
+  };
+}
+
 function renderAnimatedChain(chain) {
-  const direction = chain.direction === "vertical" ? "vertical" : "horizontal";
-  const arrow = direction === "vertical" ? "↓" : "→";
+  const direction = ["horizontal", "vertical", "mixed"].includes(chain.direction)
+    ? chain.direction
+    : "horizontal";
   const items = Array.isArray(chain.items) ? chain.items : [];
+  const connectors = Array.isArray(chain.connectors) ? chain.connectors : [];
   const parts = [];
+  const renderItem = (item, index) => {
+    const classes = ["markdown-animation-item"];
+    if (connectors[index] === "→") classes.push("markdown-animation-label");
+    if (connectors[index - 1] === "→") classes.push("markdown-animation-value");
+    if (connectors[index - 1] === "↓" && connectors[index] !== "→") {
+      classes.push("markdown-animation-continuation");
+    }
+    return `<span class="${classes.join(" ")}">${escapeHtml(item)}</span>`;
+  };
+
+  if (direction === "mixed") {
+    const rows = [];
+    let row = items[0]
+      ? [renderItem(items[0], 0)]
+      : [];
+
+    for (let index = 1; index < items.length; index++) {
+      const arrow = connectors[index - 1] === "↓" ? "↓" : "→";
+      if (arrow === "↓") {
+        rows.push(row.join(""));
+        rows.push(
+          '<span class="markdown-animation-arrow markdown-animation-arrow-down" aria-hidden="true">↓</span>'
+        );
+        row = [];
+      } else {
+        row.push(
+          '<span class="markdown-animation-arrow markdown-animation-arrow-right" aria-hidden="true">→</span>'
+        );
+      }
+
+      row.push(renderItem(items[index], index));
+    }
+
+    if (row.length) rows.push(row.join(""));
+
+    return `
+      <div class="markdown-animation markdown-animation-${direction} markdown-animation-diagram" data-direction="${direction}" data-style="diagram">
+        ${rows.map(rowHtml => (
+          rowHtml.includes("markdown-animation-arrow-down")
+            ? `<div class="markdown-animation-row markdown-animation-down-row">${rowHtml}</div>`
+            : `<div class="markdown-animation-row">${rowHtml}</div>`
+        )).join("")}
+      </div>
+    `.trim();
+  }
 
   items.forEach((item, index) => {
     if (index > 0) {
+      const arrow = connectors[index - 1] === "↓" ? "↓" : "→";
       parts.push(
-        `<span class="markdown-animation-arrow" aria-hidden="true">${arrow}</span>`
+        `<span class="markdown-animation-arrow markdown-animation-arrow-${arrow === "↓" ? "down" : "right"}" aria-hidden="true">${arrow}</span>`
       );
     }
 
@@ -3302,6 +3695,14 @@ function groupRevealLines(lines) {
       }
 
       revealLines.push(group.join("\n"));
+      previousPhraseUnit = null;
+      continue;
+    }
+
+    const multilineAnimatedChain = parseMultilineAnimatedChain(lines, index);
+    if (multilineAnimatedChain) {
+      revealLines.push(...buildAnimatedChainRevealsFromChain(multilineAnimatedChain.chain));
+      index += multilineAnimatedChain.consumed - 1;
       previousPhraseUnit = null;
       continue;
     }
@@ -3502,6 +3903,39 @@ function normalizeSynthesisBlocks(blocks) {
   return normalized;
 }
 
+function isIndependentClauseLine(line) {
+  const value = String(line || "").trim();
+  return value.startsWith("#### ") || value.startsWith(h4IntroMarker);
+}
+
+function splitBlocksAtAdditionalIndependentClauses(blocks) {
+  return blocks.flatMap(block => {
+    const splitBlocks = [];
+    let current = [];
+    let hasIndependentClause = false;
+
+    for (const line of block) {
+      if (isIndependentClauseLine(line) && hasIndependentClause && current.length) {
+        splitBlocks.push(current);
+        current = [];
+        hasIndependentClause = false;
+      }
+
+      current.push(line);
+
+      if (isIndependentClauseLine(line)) {
+        hasIndependentClause = true;
+      }
+    }
+
+    if (current.length) {
+      splitBlocks.push(current);
+    }
+
+    return splitBlocks;
+  });
+}
+
 function getFirstHeadingLevel(lines) {
   for (const line of lines) {
     const match = line.match(/^(#{1,6})\s/);
@@ -3586,12 +4020,13 @@ function applyStickyHeadings(slidesToProcess) {
       sticky.push(stickyH3);
     }
 
-    // Nest stack: independent → dependent → phrase (commentary/observations never sticky)
-    if (canStickClauseContext && !slideH4 && stickyH4) {
+    // Keep only the most specific clause cue as context so teaching slides do not
+    // look like they contain multiple active clauses at once.
+    if (canStickClauseContext && !slideH4 && !slideDependent && !slidePhrase && stickyH4 && !stickyDependent && !stickyPhrase) {
       sticky.push(stickyH4);
     }
 
-    if (canStickClauseContext && !slideDependent && stickyDependent) {
+    if (canStickClauseContext && !slideDependent && !slidePhrase && stickyDependent && !stickyPhrase) {
       sticky.push(stickyDependent);
     }
 
@@ -4531,8 +4966,9 @@ function loadSlides() {
     )
     .filter(slide => slide.length > 0);
 
-  const parsedSlides = applyStickyHeadings(normalizeSynthesisBlocks(slideBlocks)
-    .map(parseSlide));
+  const parsedSlides = applyStickyHeadings(splitBlocksAtAdditionalIndependentClauses(
+    normalizeSynthesisBlocks(slideBlocks)
+  ).map(parseSlide));
 
   slides = [
     ...buildCoverSlides(presentationMeta),
