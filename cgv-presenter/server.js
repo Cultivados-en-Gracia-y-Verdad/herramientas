@@ -1643,6 +1643,27 @@ function buildStyleSettingsCss() {
   white-space: normal;
 }
 
+.projector-slide .marker-grammar .bible-ref.greek-ref,
+.projector-slide .grammar-note .bible-ref.greek-ref,
+.projector-slide .marker-cue .bible-ref.greek-ref,
+.projector-slide .phrase-cue .bible-ref.greek-ref,
+.audience-slide .marker-grammar .bible-ref.greek-ref,
+.audience-slide .grammar-note .bible-ref.greek-ref,
+.audience-slide .marker-cue .bible-ref.greek-ref,
+.audience-slide .phrase-cue .bible-ref.greek-ref,
+.slide .marker-grammar .bible-ref.greek-ref,
+.slide .grammar-note .bible-ref.greek-ref,
+.slide .marker-cue .bible-ref.greek-ref,
+.slide .phrase-cue .bible-ref.greek-ref {
+  color: var(--style-reference-color, #7dd3fc);
+  border-bottom-color: currentColor;
+  cursor: pointer;
+  font-family: var(--cgv-ui-font, inherit);
+  font-style: normal;
+  font-weight: 600;
+  text-shadow: 0 0 14px color-mix(in srgb, var(--style-reference-color, #7dd3fc) 24%, transparent);
+}
+
 .projector-slide .mechanical-point,
 .audience-slide .mechanical-point,
 .slide .mechanical-point {
@@ -2252,7 +2273,7 @@ function enrichFootnotes(value) {
     if (labelWest != null || labelFull != null) {
       const label = labelWest ?? labelFull;
       if (isGreekParentheticalLabel(label) && isGrammarFormFootnoteId(id)) {
-        return `(${label})${buildFootnoteMarkup(id, null)}`;
+        return `${buildGreekStudyLink(label, { paren: true })}${buildFootnoteMarkup(id, null)}`;
       }
       return buildFootnoteMarkup(id, label, { paren: true });
     }
@@ -2342,6 +2363,34 @@ function buildGreekUsageMarkup(surface, options = {}) {
   return `<span class="bible-ref greek-ref" tabindex="0" role="button" data-reference="${referenceKey}" data-verse-count="${usage.occurrences.length}">${labelHtml}<span class="bible-popup">${header}${popupText}${nav}</span></span>`;
 }
 
+function buildGreekFallbackMarkup(surface, options = {}) {
+  const { paren = true } = options;
+  const value = String(surface || "").trim();
+  if (!value) return "";
+
+  const info = describeGreekForm(value, __dirname);
+  const referenceKey = escapeHtml(`greek:${value}`);
+  const labelHtml = paren ? `(${escapeHtml(value)})` : escapeHtml(value);
+  const morphologyMeta = [info.lemma, info.morphology].filter(Boolean).join(" · ");
+  const morphologyDescription = info.morphologyDescription
+    ? `<span class="greek-morph-description">${escapeHtml(info.morphologyDescription)}</span>`
+    : "";
+  const note = info.lemma || info.morphology
+    ? "Forma griega reconocida, sin usos enlazados en el índice cargado."
+    : "Forma griega no encontrada en el índice cargado.";
+  const header = `<span class="greek-usage-header">
+    <strong>${escapeHtml(value)}</strong>
+    ${morphologyMeta || morphologyDescription ? `<span class="greek-usage-meta">${escapeHtml(morphologyMeta)}${morphologyDescription}</span>` : ""}
+    <span class="greek-usage-examples-title">${escapeHtml(note)}</span>
+  </span>`;
+
+  return `<span class="bible-ref greek-ref greek-ref-missing" tabindex="0" role="button" data-reference="${referenceKey}" data-verse-count="1">${labelHtml}<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true">${header}</span></span></span>`;
+}
+
+function buildGreekStudyLink(surface, options = {}) {
+  return buildGreekUsageMarkup(surface, options) || buildGreekFallbackMarkup(surface, options);
+}
+
 function buildGreekTranslationSummary(usage) {
   const translations = [];
   const seen = new Set();
@@ -2386,17 +2435,12 @@ function enrichGreekParentheticals(value) {
   const enrichText = text => text.replace(pattern, (match, surface) => {
     const info = describeGreekForm(surface, __dirname);
 
-    // Prefer pedagogical connector footnotes over MorphGNT usage dumps.
+    // Prefer explicit pedagogical connector footnotes over MorphGNT usage dumps.
     if (info.footnoteId && getFootnoteDefinition(info.footnoteId) !== undefined) {
       return buildFootnoteMarkup(info.footnoteId, surface, { paren: true });
     }
 
-    // Bare connectors without a note stay plain text (author should add [^kai], etc.).
-    if (info.isConnector && !isConditionMarker(info.lemma || surface)) {
-      return match;
-    }
-
-    return buildGreekUsageMarkup(surface) || match;
+    return buildGreekStudyLink(surface, { paren: true });
   });
 
   // Do not re-process Greek already wrapped by footnote/usage anchors.
@@ -2423,8 +2467,10 @@ function enrichBareGreekWords(value) {
 
   const enrichText = text => text.replace(pattern, match => {
     const info = describeGreekForm(match, __dirname);
-    if (info.isConnector && !isConditionMarker(info.lemma || match)) return match;
-    return buildGreekUsageMarkup(match, { paren: false }) || match;
+    if (info.footnoteId && getFootnoteDefinition(info.footnoteId) !== undefined) {
+      return buildFootnoteMarkup(info.footnoteId, match, { paren: false });
+    }
+    return buildGreekStudyLink(match, { paren: false });
   });
 
   let anchorDepth = 0;
@@ -2508,7 +2554,7 @@ function renderLine(line) {
 
     return {
       presenterHtml: `
-        <aside class="quiz-cue">
+        <aside class="quiz-cue"${quiz ? ` data-launch-quiz="${escapeHtml(quizMarker.quizId)}" role="button" tabindex="0"` : ""}>
           <div>
             <strong>${status}</strong>
             <span>${escapeHtml(title)}</span>
@@ -2518,7 +2564,7 @@ function renderLine(line) {
       `.trim(),
       html: quiz
         ? `
-        <aside class="quiz-cue projector-quiz-cue">
+        <aside class="quiz-cue projector-quiz-cue" data-launch-quiz="${escapeHtml(quizMarker.quizId)}" role="button" tabindex="0">
           <div>
             <strong>${serverText("quizReady")}</strong>
             <span>${escapeHtml(title)}</span>
@@ -2687,6 +2733,10 @@ function parseQuizMarker(line) {
   return {
     quizId: normalizeQuizId(match[1])
   };
+}
+
+function isQuizMarkerLine(line) {
+  return !!parseQuizMarker(line);
 }
 
 function parseFrontMatter(markdown) {
@@ -4425,7 +4475,11 @@ function normalizeSynthesisBlocks(blocks) {
     const points = [];
     let cursor = index + 1;
 
-    while (cursor < blocks.length && !isMarkdownHeadingBlock(blocks[cursor])) {
+    while (
+      cursor < blocks.length &&
+      !isMarkdownHeadingBlock(blocks[cursor]) &&
+      !blocks[cursor].some(isQuizMarkerLine)
+    ) {
       const point = getSynthesisPointFromBlock(blocks[cursor]);
       if (point) points.push(point);
       cursor++;

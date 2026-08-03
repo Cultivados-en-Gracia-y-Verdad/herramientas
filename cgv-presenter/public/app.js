@@ -31,6 +31,17 @@ let popupState = { reference: null, scrollRatio: 0, verseIndex: 0, verseCount: 0
 let completedQuizIds = new Set();
 let revealAnimState = { slide: -1, step: -1, signatures: new Map() };
 
+function uiText(key) {
+  const fallback = {
+    quizNotAvailable: "Quiz no disponible",
+    quizLiveNow: "Quiz en vivo",
+    joinLabel: "Entrar",
+    quizClosed: "Quiz cerrado",
+    responses: "Respuestas",
+  };
+  return window.CGVI18N?.t?.(key) || fallback[key] || key;
+}
+
 function ensurePencilFilter() {
   if (document.getElementById("cgv-pencil-filter")) return;
 
@@ -1322,7 +1333,7 @@ function renderProjectorQuiz() {
   if (error) {
     resultsEl.innerHTML = `
       <div class="projector-quiz-copy">
-        <strong>${t("quizNotAvailable")}</strong>
+        <strong>${uiText("quizNotAvailable")}</strong>
         <span>${escapeHtml(error.message)}</span>
       </div>
     `;
@@ -1342,10 +1353,10 @@ function renderProjectorQuiz() {
   if (quizState.active) {
     resultsEl.innerHTML = `
       <div class="projector-quiz-copy">
-        <strong>${t("quizLiveNow")}</strong>
+        <strong>${uiText("quizLiveNow")}</strong>
         <span>${escapeHtml(quiz.question)}</span>
         <div class="projector-quiz-join">
-          <b>${t("joinLabel")}:</b>
+          <b>${uiText("joinLabel")}:</b>
           <code>${escapeHtml(joinCode)}</code>
         </div>
         <small>${escapeHtml(joinUrl)}</small>
@@ -1357,8 +1368,8 @@ function renderProjectorQuiz() {
     const reviewItems = getQuizReviewItems();
     resultsEl.innerHTML = `
       <div class="projector-quiz-copy">
-        <strong>${t("quizClosed")}</strong>
-        <span>${t("responses")}: ${total}</span>
+        <strong>${uiText("quizClosed")}</strong>
+        <span>${uiText("responses")}: ${total}</span>
       </div>
       ${renderQuizReviewList(reviewItems)}
     `;
@@ -1493,13 +1504,24 @@ function newSession() {
   socket.emit("new-session");
 }
 
+async function startQuizByIdClient(quizId) {
+  if (!quizId) return;
+
+  try {
+    const response = await fetch(`/quiz/start/${encodeURIComponent(quizId)}`, { method: "POST" });
+    if (!response.ok) throw new Error("Quiz start failed");
+  } catch (error) {
+    socket.emit("start-quiz", quizId);
+  }
+}
+
 function startQuiz() {
   const select = document.getElementById("quizSelect");
-  socket.emit("start-quiz", select?.value);
+  startQuizByIdClient(select?.value);
 }
 
 function launchQuiz(quizId) {
-  socket.emit("start-quiz", quizId);
+  startQuizByIdClient(quizId);
 }
 
 function endQuiz() {
@@ -1600,8 +1622,21 @@ document.addEventListener("click", event => {
     return;
   }
 
-  // Clicks inside the projector/audience popup overlay should not dismiss it.
-  if ((isProjector || isAudience) && event.target.closest("#sharedPopupOverlay")) {
+  const quizLaunch = event.target.closest("[data-launch-quiz]");
+  if ((isPresenter || isProjector) && quizLaunch) {
+    event.preventDefault();
+    event.stopPropagation();
+    startQuizByIdClient(quizLaunch.dataset.launchQuiz);
+    return;
+  }
+
+  // Clicks inside the projector/audience popup overlay should not dismiss it,
+  // but nested references inside Greek usage popups should still open.
+  if (
+    (isProjector || isAudience) &&
+    event.target.closest("#sharedPopupOverlay") &&
+    !event.target.closest(".bible-ref")
+  ) {
     return;
   }
 

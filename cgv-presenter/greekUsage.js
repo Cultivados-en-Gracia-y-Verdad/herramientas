@@ -518,9 +518,10 @@ function describeMorphologyCode(code) {
   const labels = [PART_OF_SPEECH_LABELS[part] || part];
 
   if (part === "V-" && parsing.length >= 4) {
-    const tense = TENSE_LABELS[parsing[1]];
-    const voice = VOICE_LABELS[parsing[2]];
-    const mood = MOOD_LABELS[parsing[3]];
+    const hasPersonPrefix = /^[123]/u.test(parsing);
+    const tense = TENSE_LABELS[parsing[hasPersonPrefix ? 1 : 0]];
+    const voice = VOICE_LABELS[parsing[hasPersonPrefix ? 2 : 1]];
+    const mood = MOOD_LABELS[parsing[hasPersonPrefix ? 3 : 2]];
     [tense, voice, mood].filter(Boolean).forEach(label => labels.push(label));
   }
 
