@@ -221,6 +221,36 @@ textarea {
   overflow-wrap: anywhere;
 }
 
+.slide.clean-slide,
+.projector-slide.clean-slide,
+.audience-slide.clean-slide {
+  padding: clamp(18px, 3vmin, 34px);
+  padding-top: clamp(18px, 3vmin, 34px);
+  overflow-wrap: normal;
+}
+
+.slide.clean-slide .reveal-entry,
+.projector-slide.clean-slide .reveal-entry,
+.audience-slide.clean-slide .reveal-entry {
+  width: 100%;
+}
+
+.slide.clean-slide img,
+.projector-slide.clean-slide img,
+.audience-slide.clean-slide img {
+  max-width: min(100%, 92vw);
+  max-height: min(100%, 82vh);
+  object-fit: contain;
+}
+
+.slide.clean-slide .flowchart-animation,
+.projector-slide.clean-slide .flowchart-animation,
+.audience-slide.clean-slide .flowchart-animation {
+  width: min(100%, 76em);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .slide h1,
 .slide h2,
 .slide h3,
@@ -749,6 +779,138 @@ textarea {
   color: #fef3c7;
 }
 
+.flowchart-animation {
+  --flowchart-max-size: 24px;
+  --flowchart-min-size: 12px;
+  --flowchart-fit-size: var(--flowchart-max-size);
+  --flowchart-card-bg: rgba(15, 23, 42, 0.72);
+  --flowchart-card-border: rgba(148, 163, 184, 0.38);
+  --flowchart-accent: var(--style-reference-color, #38bdf8);
+  display: grid;
+  gap: 0.12em;
+  width: min(100%, 76em);
+  margin: 0.12em auto;
+  color: var(--style-h6-color, #e5edf8);
+  font-family: var(--cgv-ui-font);
+  font-size: var(--flowchart-fit-size);
+  font-style: normal;
+  line-height: 1.1;
+}
+
+.clean-slide .flowchart-animation {
+  --flowchart-max-size: 30px;
+  --flowchart-min-size: 12px;
+  width: min(100%, 82em);
+}
+
+.flowchart-level {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.34em;
+  width: 100%;
+}
+
+.flowchart-level-3,
+.flowchart-level-4,
+.flowchart-level-6,
+.flowchart-level-7 {
+  gap: 0.28em;
+}
+
+.flowchart-node {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  max-width: 14em;
+  padding: 0.28em 0.4em;
+  border: 1.5px solid var(--flowchart-card-border);
+  border-radius: 7px;
+  background: var(--flowchart-card-bg);
+  box-shadow: 0 0.18em 0.7em rgba(2, 6, 23, 0.22);
+  text-align: center;
+  text-wrap: balance;
+  overflow-wrap: normal;
+}
+
+.flowchart-node-heading {
+  max-width: 16em;
+  border-color: color-mix(in srgb, var(--flowchart-accent) 50%, transparent);
+  background: linear-gradient(180deg, rgba(8, 47, 73, 0.88), rgba(15, 23, 42, 0.78));
+  color: #e0f2fe;
+  font-weight: 760;
+}
+
+.flowchart-node-message {
+  max-width: 14em;
+  border-color: rgba(125, 211, 252, 0.48);
+  background: rgba(14, 116, 144, 0.3);
+  color: #bae6fd;
+  font-weight: 760;
+}
+
+.flowchart-node-decision {
+  max-width: 14em;
+  border-color: rgba(250, 204, 21, 0.48);
+  background: rgba(113, 63, 18, 0.22);
+  color: #fef3c7;
+  font-weight: 720;
+}
+
+.flowchart-node-case {
+  flex: 1 1 0;
+  border-color: rgba(96, 165, 250, 0.38);
+  background: rgba(30, 41, 59, 0.72);
+}
+
+.flowchart-node-result {
+  flex: 1 1 0;
+  border-color: rgba(203, 213, 225, 0.32);
+  background: rgba(51, 65, 85, 0.56);
+  color: #f8fafc;
+}
+
+.flowchart-reference {
+  display: block;
+  margin-bottom: 0.16em;
+  color: var(--flowchart-accent);
+  font-size: 0.82em;
+  font-weight: 800;
+}
+
+.flowchart-line {
+  display: block;
+}
+
+.flowchart-edge-row {
+  display: flex;
+  justify-content: center;
+  gap: 3.3em;
+  min-height: 0.52em;
+  color: color-mix(in srgb, var(--flowchart-accent) 75%, #ffffff 25%);
+  font-size: 0.72em;
+  font-weight: 800;
+  line-height: 0.62;
+  opacity: 0.86;
+}
+
+.flowchart-node.reveal-enter,
+.flowchart-edge.reveal-enter {
+  animation: cgv-flowchart-enter 280ms ease-out;
+}
+
+@keyframes cgv-flowchart-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.24em) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .presenter .slide .markdown-animation {
   color: var(--style-h6-color, #4b5563);
   font-size: var(--style-h6-size, 0.9em);
@@ -839,7 +1001,9 @@ textarea {
   .audience-slide .markdown-animation-item.reveal-enter,
   .presenter .slide .markdown-animation-arrow.reveal-enter,
   .projector-slide .markdown-animation-arrow.reveal-enter,
-  .audience-slide .markdown-animation-arrow.reveal-enter {
+  .audience-slide .markdown-animation-arrow.reveal-enter,
+  .flowchart-node.reveal-enter,
+  .flowchart-edge.reveal-enter {
     animation: none;
   }
 }
@@ -1614,22 +1778,34 @@ button {
   justify-content: center;
   width: 100%;
   max-width: none;
+  height: 100%;
+  max-height: none;
   margin: auto;
+  padding: clamp(10px, 2vmin, 24px);
   text-align: center;
+  overflow: hidden;
 }
 
 .projector-slide.cover-slide {
-  max-height: calc(100vh - clamp(104px, 13vh, 152px));
-  width: min(96vw, 100%);
+  min-height: calc(100vh - clamp(84px, 10vh, 120px));
+  width: min(98vw, 100%);
 }
 
 .cover-slide img {
-  max-width: min(96vw, 100%);
-  max-height: min(92vh, 100%);
-  width: auto;
-  height: auto;
+  display: block;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: auto;
   margin: 0;
-  object-fit: contain;
+  object-fit: contain !important;
+}
+
+.projector-slide.cover-slide img,
+.audience-slide.cover-slide img {
+  max-width: calc(100vw - clamp(20px, 4vmin, 48px));
+  max-height: calc(100vh - clamp(104px, 13vh, 152px));
 }
 
 .session-panel {

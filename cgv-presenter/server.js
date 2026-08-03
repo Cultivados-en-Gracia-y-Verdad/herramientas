@@ -103,6 +103,8 @@ const phraseUnitMarker = "::roots-phrase-unit::";
 const revealBatchMarker = "::roots-reveal-batch::";
 const crossReferenceMarker = "::roots-cross-references::";
 const animatedChainMarker = "::roots-animated-chain::";
+const flowchartMarker = "::roots-flowchart::";
+const cleanScreenPattern = /^<!--\s*@(?:clean|clean-screen|fullscreen|full-screen)\s*-->$/i;
 
 app.use(express.json({ limit: "30mb" }));
 app.use(
@@ -1493,6 +1495,33 @@ function buildStyleSettingsCss() {
   text-wrap: balance;
 }
 
+.projector-slide .scripture-line,
+.audience-slide .scripture-line,
+.slide .scripture-line {
+  display: block;
+  width: min(100%, 31em);
+  max-width: min(92vw, 31em);
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  text-wrap: balance;
+}
+
+.projector-slide .scripture-line em,
+.projector-slide .scripture-line i,
+.audience-slide .scripture-line em,
+.audience-slide .scripture-line i,
+.slide .scripture-line em,
+.slide .scripture-line i {
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
 .projector-slide .phrase-cue-minus,
 .projector-slide .phrase-cue-dependent,
 .projector-slide .phrase-cue-plus,
@@ -1535,6 +1564,7 @@ function buildStyleSettingsCss() {
 .audience-slide .grammar-note,
 .slide .marker-grammar,
 .slide .grammar-note {
+  width: min(100%, 25em);
   max-width: 25em;
   margin: 0.26em auto;
   border-left: 0;
@@ -1544,6 +1574,72 @@ function buildStyleSettingsCss() {
   font-size: var(--style-h6-size, 0.74em);
   line-height: 1.48;
   text-align: left;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: pretty;
+}
+
+.projector-slide blockquote.teaching-comment em,
+.projector-slide blockquote.teaching-comment i,
+.projector-slide h5 em,
+.projector-slide h5 i,
+.projector-slide h6 em,
+.projector-slide h6 i,
+.audience-slide blockquote.teaching-comment em,
+.audience-slide blockquote.teaching-comment i,
+.audience-slide h5 em,
+.audience-slide h5 i,
+.audience-slide h6 em,
+.audience-slide h6 i,
+.slide blockquote.teaching-comment em,
+.slide blockquote.teaching-comment i,
+.slide h5 em,
+.slide h5 i,
+.slide h6 em,
+.slide h6 i {
+  color: inherit;
+  font-family: var(--cgv-ui-font);
+  font-style: italic;
+  font-weight: inherit;
+  white-space: normal;
+}
+
+.projector-slide blockquote.teaching-comment,
+.projector-slide blockquote.teaching-comment p,
+.audience-slide blockquote.teaching-comment,
+.audience-slide blockquote.teaching-comment p,
+.slide blockquote.teaching-comment,
+.slide blockquote.teaching-comment p {
+  color: #ffffff;
+}
+
+.projector-slide .marker-grammar *,
+.projector-slide .grammar-note *,
+.audience-slide .marker-grammar *,
+.audience-slide .grammar-note *,
+.slide .marker-grammar *,
+.slide .grammar-note * {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.projector-slide .marker-grammar em,
+.projector-slide .marker-grammar i,
+.projector-slide .grammar-note em,
+.projector-slide .grammar-note i,
+.audience-slide .marker-grammar em,
+.audience-slide .marker-grammar i,
+.audience-slide .grammar-note em,
+.audience-slide .grammar-note i,
+.slide .marker-grammar em,
+.slide .marker-grammar i,
+.slide .grammar-note em,
+.slide .grammar-note i {
+  color: inherit;
+  font-family: var(--cgv-ui-font);
+  font-style: italic;
+  font-weight: inherit;
+  white-space: normal;
 }
 
 .projector-slide .mechanical-point,
@@ -2396,6 +2492,15 @@ function renderLine(line) {
     return {
       replaceGroup: chain.id,
       html: renderAnimatedChain(chain)
+    };
+  }
+
+  if (line.startsWith(flowchartMarker)) {
+    const chart = JSON.parse(line.slice(flowchartMarker.length));
+
+    return {
+      replaceGroup: chart.id,
+      html: renderFlowchart(chart)
     };
   }
 
@@ -3279,8 +3384,10 @@ function loadQuizBank(meta) {
 }
 
 function parseSlide(lines) {
-  const quizLine = lines.find(line => line.startsWith("? "));
-  const choiceLines = lines.filter(line => line.startsWith("- "));
+  const cleanScreen = lines.some(line => cleanScreenPattern.test(String(line || "").trim()));
+  const contentLines = lines.filter(line => !cleanScreenPattern.test(String(line || "").trim()));
+  const quizLine = contentLines.find(line => line.startsWith("? "));
+  const choiceLines = contentLines.filter(line => line.startsWith("- "));
 
   const quiz = quizLine && choiceLines.length
     ? {
@@ -3290,10 +3397,80 @@ function parseSlide(lines) {
     : null;
 
   const displayLines = quiz
-    ? lines.filter(line => !line.startsWith("? ") && !line.startsWith("- "))
-    : lines;
+    ? contentLines.filter(line => !line.startsWith("? ") && !line.startsWith("- "))
+    : contentLines;
 
-  return { lines: groupRevealLines(displayLines), quiz };
+  return { lines: groupRevealLines(displayLines), quiz, cleanScreen };
+}
+
+function normalizeSlideBlockLine(line) {
+  const trimmed = String(line || "").trim();
+  if (!trimmed) return "";
+
+  const match = trimmed.match(/^\[\^([^\]]+)\]:\s*(.*)$/);
+  if (!match) return trimmed;
+
+  const id = match[1].trim();
+  const note = match[2].trim();
+  return note ? `${id}\n: ${note}` : "";
+}
+
+function splitMarkdownIntoSlideBlocks(markdown) {
+  const blocks = [];
+  let current = [];
+  let inFence = false;
+
+  String(markdown || "").replace(/\r\n/g, "\n").split("\n").forEach(rawLine => {
+    const line = rawLine.trim();
+    const isFenceLine = /^```/.test(line);
+
+    if (isFenceLine) {
+      inFence = !inFence;
+      current.push(line);
+      return;
+    }
+
+    if (!line && !inFence) {
+      if (current.length) {
+        blocks.push(current.map(normalizeSlideBlockLine).filter(Boolean));
+        current = [];
+      }
+      return;
+    }
+
+    current.push(line);
+  });
+
+  if (current.length) {
+    blocks.push(current.map(normalizeSlideBlockLine).filter(Boolean));
+  }
+
+  return blocks.filter(block => block.length > 0);
+}
+
+function normalizeLayoutDirectiveBlocks(blocks) {
+  const normalized = [];
+  let pendingCleanScreen = false;
+
+  for (const block of blocks) {
+    const isCleanOnlyBlock = block.length > 0 &&
+      block.every(line => cleanScreenPattern.test(String(line || "").trim()));
+
+    if (isCleanOnlyBlock) {
+      pendingCleanScreen = true;
+      continue;
+    }
+
+    if (pendingCleanScreen) {
+      normalized.push(["<!-- @clean -->", ...block]);
+      pendingCleanScreen = false;
+      continue;
+    }
+
+    normalized.push(block);
+  }
+
+  return normalized;
 }
 
 function isPhraseCueLine(line) {
@@ -3531,6 +3708,223 @@ function renderAnimatedChain(chain) {
   `.trim();
 }
 
+function parseMermaidNodeExpression(value) {
+  const source = String(value || "").trim();
+  const match = source.match(/^([A-Za-z][\w-]*)(?:\s*(\["([\s\S]*?)"\]|\{"([\s\S]*?)"\}))?$/);
+  if (!match) return null;
+
+  return {
+    id: match[1],
+    label: match[3] || match[4] || "",
+    shape: match[4] ? "decision" : "box"
+  };
+}
+
+function normalizeFlowchartLabel(value, fallback = "") {
+  return String(value || fallback || "")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/\\n/g, "\n")
+    .split("\n")
+    .map(line => line.trim())
+    .filter(Boolean)
+    .join("\n");
+}
+
+function parseMermaidFlowchart(source) {
+  const lines = String(source || "")
+    .replace(/\r\n/g, "\n")
+    .split("\n")
+    .map(line => line.trim())
+    .filter(line => line && !line.startsWith("%%"));
+
+  if (!/^flowchart\s+TD\b/i.test(lines[0] || "")) return null;
+
+  const nodes = new Map();
+  const edges = [];
+
+  lines.slice(1).forEach(line => {
+    const parts = line.split(/\s*-->\s*/);
+    if (parts.length !== 2) return;
+
+    const from = parseMermaidNodeExpression(parts[0]);
+    const to = parseMermaidNodeExpression(parts[1]);
+    if (!from || !to) return;
+
+    [from, to].forEach(node => {
+      const existing = nodes.get(node.id) || {};
+      nodes.set(node.id, {
+        id: node.id,
+        label: normalizeFlowchartLabel(node.label || existing.label, node.id),
+        shape: node.shape === "decision" || existing.shape === "decision" ? "decision" : "box"
+      });
+    });
+
+    edges.push({ from: from.id, to: to.id });
+  });
+
+  if (!edges.length) return null;
+
+  const incoming = new Map(Array.from(nodes.keys()).map(id => [id, 0]));
+  edges.forEach(edge => incoming.set(edge.to, (incoming.get(edge.to) || 0) + 1));
+  const roots = Array.from(nodes.keys()).filter(id => !incoming.get(id));
+  const levels = new Map(Array.from(nodes.keys()).map(id => [id, 0]));
+  const queue = roots.length ? [...roots] : [edges[0].from];
+  const visited = new Set();
+
+  while (queue.length) {
+    const id = queue.shift();
+    if (visited.has(id)) continue;
+    visited.add(id);
+    const currentLevel = levels.get(id) || 0;
+
+    edges.filter(edge => edge.from === id).forEach(edge => {
+      levels.set(edge.to, Math.max(levels.get(edge.to) || 0, currentLevel + 1));
+      queue.push(edge.to);
+    });
+  }
+
+  edges.forEach(edge => {
+    levels.set(edge.to, Math.max(levels.get(edge.to) || 0, (levels.get(edge.from) || 0) + 1));
+  });
+
+  return {
+    nodes: Array.from(nodes.values()).map(node => ({
+      ...node,
+      level: levels.get(node.id) || 0
+    })),
+    edges
+  };
+}
+
+function parseFlowchartFence(lines, startIndex) {
+  const opening = String(lines[startIndex] || "").trim();
+  if (!/^```(?:mermaid)?\s*$/i.test(opening)) return null;
+
+  const body = [];
+  let index = startIndex + 1;
+
+  while (index < lines.length && String(lines[index] || "").trim() !== "```") {
+    body.push(lines[index]);
+    index += 1;
+  }
+
+  if (index >= lines.length) return null;
+
+  const flowchart = parseMermaidFlowchart(body.join("\n"));
+  if (!flowchart) return null;
+
+  return {
+    flowchart,
+    consumed: index - startIndex + 1
+  };
+}
+
+function buildFlowchartReveals(flowchart) {
+  const id = `flowchart-${normalizeReferenceText(
+    flowchart.nodes.map(node => node.id).join("-")
+  )}`;
+
+  return flowchart.edges.map((_, index) =>
+    `${flowchartMarker}${JSON.stringify({
+      id,
+      nodes: flowchart.nodes,
+      edges: flowchart.edges,
+      visibleEdgeCount: index + 1
+    })}`
+  );
+}
+
+function getFlowchartNodeKind(node) {
+  const label = String(node.label || "").toLowerCase();
+  if (node.shape === "decision") return "decision";
+  if (/message|god is light|mensaje|luz/.test(label)) return "message";
+  if (/authentic|auténtic|false|falso|response|respuesta|fellowship|comunión/.test(label)) return "result";
+  if (/^\s*1[:.]\d/.test(label)) return "case";
+  return "heading";
+}
+
+function renderFlowchartLabel(label) {
+  return String(label || "")
+    .split("\n")
+    .map((line, index) =>
+      `<span class="${index === 0 && /^1[:.]\d/.test(line) ? "flowchart-reference" : "flowchart-line"}">${escapeHtml(line)}</span>`
+    )
+    .join("");
+}
+
+function renderFlowchart(chart) {
+  const nodes = Array.isArray(chart.nodes) ? chart.nodes : [];
+  const edges = Array.isArray(chart.edges) ? chart.edges : [];
+  const visibleEdgeCount = Math.max(0, Math.min(Number(chart.visibleEdgeCount) || 0, edges.length));
+  const visibleEdges = edges.slice(0, visibleEdgeCount);
+  const visibleNodeIds = new Set();
+  const previousNodeIds = new Set();
+
+  visibleEdges.forEach(edge => {
+    visibleNodeIds.add(edge.from);
+    visibleNodeIds.add(edge.to);
+  });
+
+  edges.slice(0, Math.max(0, visibleEdgeCount - 1)).forEach(edge => {
+    previousNodeIds.add(edge.from);
+    previousNodeIds.add(edge.to);
+  });
+
+  const newestEdge = visibleEdges[visibleEdges.length - 1] || null;
+  const levels = new Map();
+  nodes
+    .filter(node => visibleNodeIds.has(node.id))
+    .forEach(node => {
+      const level = Number(node.level) || 0;
+      if (!levels.has(level)) levels.set(level, []);
+      levels.get(level).push(node);
+    });
+
+  const rows = Array.from(levels.entries())
+    .sort((a, b) => a[0] - b[0])
+    .map(([level, levelNodes], index, allRows) => {
+      const nodeHtml = levelNodes
+        .map(node => {
+          const isNew = !previousNodeIds.has(node.id);
+          return `
+            <div class="flowchart-node flowchart-node-${getFlowchartNodeKind(node)}" data-node-id="${escapeHtml(node.id)}"${isNew ? ' data-new="true"' : ""}>
+              ${renderFlowchartLabel(node.label)}
+            </div>
+          `.trim();
+        })
+        .join("");
+
+      const nextLevel = allRows[index + 1]?.[0];
+      const connectorCount = typeof nextLevel === "number"
+        ? visibleEdges.filter(edge =>
+            levelNodes.some(node => node.id === edge.from) &&
+            nodes.find(node => node.id === edge.to)?.level === nextLevel
+          ).length
+        : 0;
+      const connectorHtml = connectorCount
+        ? `<div class="flowchart-edge-row" data-level="${level}">${
+            Array.from({ length: connectorCount }).map((_, edgeIndex) =>
+              `<span class="flowchart-edge"${newestEdge && edgeIndex === connectorCount - 1 ? ' data-new="true"' : ""}>↓</span>`
+            ).join("")
+          }</div>`
+        : "";
+
+      return `
+        <div class="flowchart-level flowchart-level-${level}" data-level="${level}">
+          ${nodeHtml}
+        </div>
+        ${connectorHtml}
+      `.trim();
+    })
+    .join("");
+
+  return `
+    <div class="flowchart-animation" data-visible-edges="${visibleEdgeCount}">
+      ${rows}
+    </div>
+  `.trim();
+}
+
 function parseCrossReferenceLine(line) {
   const match = String(line || "").match(
     /^\*\s+XRef\s*\(([^)]+)\)\s*:\s*[—-]\s*([^—]+?)\s*[—-]\s*(.+?)\s*$/i
@@ -3680,6 +4074,14 @@ function groupRevealLines(lines) {
   for (let index = 0; index < lines.length; index++) {
     const line = lines[index];
     const manualTitleStart = line.match(/^:::(title|subtitle)\s*$/i);
+
+    const flowchartFence = parseFlowchartFence(lines, index);
+    if (flowchartFence) {
+      revealLines.push(...buildFlowchartReveals(flowchartFence.flowchart));
+      index += flowchartFence.consumed - 1;
+      previousPhraseUnit = null;
+      continue;
+    }
 
     if (manualTitleStart) {
       const group = [line];
@@ -4946,32 +5348,16 @@ function loadSlides() {
   presentationMeta = parsedDocument.meta;
   footnoteDefinitions = collectFootnoteDefinitions(parsedDocument.body);
 
-  const slideBlocks = parsedDocument.body
-    .split(/\n\s*\n/)
-    .map(block =>
-      block
-        .split("\n")
-        .map(line => line.trim())
-        .filter(Boolean)
-        // Keep appendix footnote definitions visible as definition cards;
-        // popups still resolve from footnoteDefinitions collected above.
-        .map(line => {
-          const match = line.match(/^\[\^([^\]]+)\]:\s*(.*)$/);
-          if (!match) return line;
-          const id = match[1].trim();
-          const note = match[2].trim();
-          return note ? `${id}\n: ${note}` : "";
-        })
-        .filter(Boolean)
-    )
-    .filter(slide => slide.length > 0);
+  const slideBlocks = normalizeLayoutDirectiveBlocks(
+    splitMarkdownIntoSlideBlocks(parsedDocument.body)
+  );
 
   const parsedSlides = applyStickyHeadings(splitBlocksAtAdditionalIndependentClauses(
     normalizeSynthesisBlocks(slideBlocks)
   ).map(parseSlide));
 
   slides = [
-    ...buildCoverSlides(presentationMeta),
+    ...buildCoverSlides(presentationMeta, currentCourse),
     ...parsedSlides
   ];
 
@@ -4988,8 +5374,19 @@ function loadSlides() {
   invalidatePresentationCaches();
 }
 
-function buildCoverSlides(meta = {}) {
-  const cover = String(meta.cover || "").trim();
+function getPresentationCover(meta = {}, course = {}) {
+  const hasFrontMatterCover = Object.prototype.hasOwnProperty.call(meta, "cover");
+  const cover = hasFrontMatterCover
+    ? meta.cover
+    : course.teachingImport
+      ? ""
+      : course.cover;
+
+  return String(cover || "").trim();
+}
+
+function buildCoverSlides(meta = {}, course = {}) {
+  const cover = getPresentationCover(meta, course);
   if (!cover) return [];
 
   return [parseSlide([`![${meta.title || "Course cover"}](${cover})`])];
@@ -5011,7 +5408,8 @@ function renderSlideAt(index) {
   if (cached) return cached;
 
   const rendered = {
-    sticky: (slide.stickyLines || []).map(renderLine),
+    cleanScreen: !!slide.cleanScreen,
+    sticky: slide.cleanScreen ? [] : (slide.stickyLines || []).map(renderLine),
     lines: slide.lines.map(renderLine)
   };
   renderedSlideCache.set(index, rendered);

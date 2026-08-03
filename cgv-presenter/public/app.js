@@ -185,6 +185,12 @@ function applyRevealEntrance(container) {
       if (entry.innerHTML.length < previousHtml.length) return;
 
       if (entry.innerHTML !== previousHtml) {
+        const flowchartNewItems = [...entry.querySelectorAll(".flowchart-node[data-new='true'], .flowchart-edge[data-new='true']")];
+        if (flowchartNewItems.length) {
+          markEnter(flowchartNewItems);
+          return;
+        }
+
         const chainItems = [...entry.querySelectorAll(".markdown-animation-item")];
         if (chainItems.length) {
           const newest = chainItems[chainItems.length - 1];
@@ -239,9 +245,37 @@ function fitMarkdownAnimations(root) {
   });
 }
 
+function fitFlowcharts(root) {
+  if (!root) return;
+
+  root.querySelectorAll(".flowchart-animation").forEach(chart => {
+    chart.style.removeProperty("--flowchart-fit-size");
+
+    const computed = getComputedStyle(chart);
+    const maxSize = Number.parseFloat(computed.getPropertyValue("--flowchart-max-size")) || 24;
+    const minSize = Number.parseFloat(computed.getPropertyValue("--flowchart-min-size")) || 12;
+    const rootRect = root.getBoundingClientRect();
+    const chartRect = chart.getBoundingClientRect();
+    const chartTop = chartRect.top - rootRect.top;
+    const availableWidth = Math.max(180, (root.clientWidth || rootRect.width || 0) - 12);
+    const availableHeight = Math.max(160, (root.clientHeight || rootRect.height || 0) - Math.max(0, chartTop) - 12);
+
+    let size = maxSize;
+    chart.style.setProperty("--flowchart-fit-size", `${size}px`);
+
+    while (
+      size > minSize &&
+      (chart.scrollWidth > availableWidth + 1 || chart.scrollHeight > availableHeight + 1)
+    ) {
+      size -= 0.5;
+      chart.style.setProperty("--flowchart-fit-size", `${size}px`);
+    }
+  });
+}
+
 function render() {
   const currentSlide = normalizeRenderedSlide(renderedSlides[slide]);
-  const stickyEntries = flattenRevealEntries(currentSlide.sticky);
+  const stickyEntries = currentSlide.cleanScreen ? [] : flattenRevealEntries(currentSlide.sticky);
   const visible = flattenRevealEntries(currentSlide.lines.slice(0, step + 1));
   const html = renderEntries([...stickyEntries, ...visible], {
     stickyCount: stickyEntries.length
@@ -249,13 +283,15 @@ function render() {
 
   if (isPresenter) {
     const currentEl = document.getElementById("current");
+    applyCleanSlideState(currentEl, currentSlide.cleanScreen);
     currentEl.innerHTML = extractEditorialFolio(currentEl, html);
     syncFolioClearance(currentEl);
     applyRevealEntrance(currentEl);
 
     const nextSlide = normalizeRenderedSlide(renderedSlides[slide + 1]);
     const nextEl = document.getElementById("next");
-    const nextSticky = flattenRevealEntries(nextSlide.sticky);
+    applyCleanSlideState(nextEl, nextSlide.cleanScreen);
+    const nextSticky = nextSlide.cleanScreen ? [] : flattenRevealEntries(nextSlide.sticky);
     const nextHtml = nextSlide.lines.length
       ? renderEntries([
           ...nextSticky,
@@ -284,6 +320,8 @@ function render() {
     });
     fitMarkdownAnimations(currentEl);
     fitMarkdownAnimations(nextEl);
+    fitFlowcharts(currentEl);
+    fitFlowcharts(nextEl);
     applySharedPopupState();
   }
 
@@ -302,8 +340,9 @@ function render() {
       return;
     }
 
-    projectorSlide.classList.remove("song-output", "blank-output", "song-has-media", "song-has-video", "title-slide");
+    projectorSlide.classList.remove("song-output", "blank-output", "song-has-media", "song-has-video", "title-slide", "clean-slide");
     projectorSlide.removeAttribute("style");
+    applyCleanSlideState(projectorSlide, currentSlide.cleanScreen);
     projectorSlide.innerHTML = extractEditorialFolio(projectorSlide, html);
     applySlideLayoutClass(projectorSlide);
     syncFolioClearance(projectorSlide);
@@ -314,12 +353,14 @@ function render() {
     }
     fitProjectorSlide(projectorSlide, slide);
     fitMarkdownAnimations(projectorSlide);
+    fitFlowcharts(projectorSlide);
     applySharedPopupState();
     if (isTablet) applyTabletPreviewScale();
   }
 
   if (isAudience) {
     const audienceSlide = document.getElementById("audienceSlide");
+    applyCleanSlideState(audienceSlide, currentSlide.cleanScreen);
     audienceSlide.innerHTML = extractEditorialFolio(audienceSlide, html);
     applySlideLayoutClass(audienceSlide);
     syncFolioClearance(audienceSlide);
@@ -334,7 +375,18 @@ function render() {
       });
     }
     fitMarkdownAnimations(audienceSlide);
+    fitFlowcharts(audienceSlide);
     applySharedPopupState();
+  }
+}
+
+function applyCleanSlideState(slideElement, cleanScreen) {
+  if (!slideElement) return;
+
+  slideElement.classList.toggle("clean-slide", !!cleanScreen);
+  if (cleanScreen) {
+    clearEditorialFolio(slideElement);
+    slideElement.style.removeProperty("--folio-clearance");
   }
 }
 
@@ -510,6 +562,7 @@ function normalizeRenderedSlide(renderedSlide) {
   }
 
   return {
+    cleanScreen: !!renderedSlide?.cleanScreen,
     sticky: renderedSlide?.sticky || [],
     lines: renderedSlide?.lines || []
   };
@@ -975,7 +1028,7 @@ function buildSlideHtmlAtStep(slideIndex, stepIndex = null) {
   const slideData = normalizeRenderedSlide(renderedSlides[slideIndex]);
   if (!slideData.lines?.length && !slideData.sticky?.length) return "";
 
-  const stickyEntries = flattenRevealEntries(slideData.sticky);
+  const stickyEntries = slideData.cleanScreen ? [] : flattenRevealEntries(slideData.sticky);
   const lineEntries = flattenRevealEntries(slideData.lines);
   const visibleLines = stepIndex == null
     ? lineEntries
