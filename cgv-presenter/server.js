@@ -3923,6 +3923,63 @@ function renderFlowchartLabel(label) {
     .join("");
 }
 
+function getFlowchartLayout(nodes, edges) {
+  const nodeIds = new Set(nodes.map(node => node.id));
+  const childrenById = new Map(nodes.map(node => [node.id, []]));
+  const incoming = new Map(nodes.map(node => [node.id, 0]));
+
+  edges.forEach(edge => {
+    if (!nodeIds.has(edge.from) || !nodeIds.has(edge.to)) return;
+    childrenById.get(edge.from)?.push(edge.to);
+    incoming.set(edge.to, (incoming.get(edge.to) || 0) + 1);
+  });
+
+  const roots = nodes.filter(node => !incoming.get(node.id)).map(node => node.id);
+  let nextLeaf = 0;
+  const rawColumns = new Map();
+  const visiting = new Set();
+
+  function assignColumn(id) {
+    if (rawColumns.has(id)) return rawColumns.get(id);
+    if (visiting.has(id)) {
+      const fallback = nextLeaf;
+      nextLeaf += 1;
+      rawColumns.set(id, fallback);
+      return fallback;
+    }
+
+    visiting.add(id);
+    const children = (childrenById.get(id) || []).filter(childId => nodeIds.has(childId));
+    let column;
+
+    if (!children.length) {
+      column = nextLeaf;
+      nextLeaf += 1;
+    } else {
+      const childColumns = children.map(assignColumn);
+      column = childColumns.reduce((sum, value) => sum + value, 0) / childColumns.length;
+    }
+
+    visiting.delete(id);
+    rawColumns.set(id, column);
+    return column;
+  }
+
+  (roots.length ? roots : nodes.map(node => node.id)).forEach(assignColumn);
+  nodes.forEach(node => assignColumn(node.id));
+
+  const columns = new Map(
+    Array.from(rawColumns.entries()).map(([id, value]) => [id, Math.round(value * 2) + 1])
+  );
+  const columnCount = Math.max(2, ...columns.values()) + 1;
+  const spans = new Map(nodes.map(node => [
+    node.id,
+    Number(node.level) <= 2 ? 4 : 2
+  ]));
+
+  return { columns, columnCount, spans };
+}
+
 function renderFlowchart(chart) {
   const nodes = Array.isArray(chart.nodes) ? chart.nodes : [];
   const edges = Array.isArray(chart.edges) ? chart.edges : [];
@@ -3942,6 +3999,7 @@ function renderFlowchart(chart) {
   });
 
   const newestEdge = visibleEdges[visibleEdges.length - 1] || null;
+  const layout = getFlowchartLayout(nodes, edges);
   const levels = new Map();
   nodes
     .filter(node => visibleNodeIds.has(node.id))
@@ -3957,8 +4015,10 @@ function renderFlowchart(chart) {
       const nodeHtml = levelNodes
         .map(node => {
           const isNew = !previousNodeIds.has(node.id);
+          const column = layout.columns.get(node.id) || 1;
+          const span = layout.spans.get(node.id) || 2;
           return `
-            <div class="flowchart-node flowchart-node-${getFlowchartNodeKind(node)}" data-node-id="${escapeHtml(node.id)}"${isNew ? ' data-new="true"' : ""}>
+            <div class="flowchart-node flowchart-node-${getFlowchartNodeKind(node)}" data-node-id="${escapeHtml(node.id)}" style="--flowchart-column: ${column}; --flowchart-span: ${span};"${isNew ? ' data-new="true"' : ""}>
               ${renderFlowchartLabel(node.label)}
             </div>
           `.trim();
@@ -3966,22 +4026,24 @@ function renderFlowchart(chart) {
         .join("");
 
       const nextLevel = allRows[index + 1]?.[0];
-      const connectorCount = typeof nextLevel === "number"
+      const connectorEdges = typeof nextLevel === "number"
         ? visibleEdges.filter(edge =>
             levelNodes.some(node => node.id === edge.from) &&
             nodes.find(node => node.id === edge.to)?.level === nextLevel
-          ).length
-        : 0;
-      const connectorHtml = connectorCount
-        ? `<div class="flowchart-edge-row" data-level="${level}">${
-            Array.from({ length: connectorCount }).map((_, edgeIndex) =>
-              `<span class="flowchart-edge"${newestEdge && edgeIndex === connectorCount - 1 ? ' data-new="true"' : ""}>↓</span>`
-            ).join("")
+          )
+        : [];
+      const connectorHtml = connectorEdges.length
+        ? `<div class="flowchart-edge-row" data-level="${level}" style="--flowchart-columns: ${layout.columnCount};">${
+            connectorEdges.map(edge => {
+              const column = layout.columns.get(edge.to) || 1;
+              const span = layout.spans.get(edge.to) || 2;
+              return `<span class="flowchart-edge" style="--flowchart-column: ${column}; --flowchart-span: ${span};"${newestEdge === edge ? ' data-new="true"' : ""}>↓</span>`;
+            }).join("")
           }</div>`
         : "";
 
       return `
-        <div class="flowchart-level flowchart-level-${level}" data-level="${level}">
+        <div class="flowchart-level flowchart-level-${level}" data-level="${level}" style="--flowchart-columns: ${layout.columnCount};">
           ${nodeHtml}
         </div>
         ${connectorHtml}

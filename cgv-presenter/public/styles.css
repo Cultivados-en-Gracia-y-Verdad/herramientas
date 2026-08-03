@@ -783,6 +783,7 @@ textarea {
   --flowchart-max-size: 24px;
   --flowchart-min-size: 12px;
   --flowchart-fit-size: var(--flowchart-max-size);
+  --flowchart-span: 2;
   --flowchart-card-bg: rgba(15, 23, 42, 0.72);
   --flowchart-card-border: rgba(148, 163, 184, 0.38);
   --flowchart-accent: var(--style-reference-color, #38bdf8);
@@ -804,9 +805,10 @@ textarea {
 }
 
 .flowchart-level {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(var(--flowchart-columns, 1), minmax(0, 1fr));
   align-items: stretch;
-  justify-content: center;
+  justify-items: center;
   gap: 0.34em;
   width: 100%;
 }
@@ -820,9 +822,11 @@ textarea {
 
 .flowchart-node {
   display: grid;
+  grid-column: var(--flowchart-column, auto) / span var(--flowchart-span, 1);
   place-items: center;
   min-width: 0;
-  max-width: 14em;
+  width: min(100%, calc(var(--flowchart-span, 2) * 7em));
+  max-width: calc(var(--flowchart-span, 2) * 7em);
   padding: 0.28em 0.4em;
   border: 1.5px solid var(--flowchart-card-border);
   border-radius: 7px;
@@ -834,7 +838,7 @@ textarea {
 }
 
 .flowchart-node-heading {
-  max-width: 16em;
+  max-width: calc(var(--flowchart-span, 2) * 8em);
   border-color: color-mix(in srgb, var(--flowchart-accent) 50%, transparent);
   background: linear-gradient(180deg, rgba(8, 47, 73, 0.88), rgba(15, 23, 42, 0.78));
   color: #e0f2fe;
@@ -842,7 +846,7 @@ textarea {
 }
 
 .flowchart-node-message {
-  max-width: 14em;
+  max-width: calc(var(--flowchart-span, 2) * 7em);
   border-color: rgba(125, 211, 252, 0.48);
   background: rgba(14, 116, 144, 0.3);
   color: #bae6fd;
@@ -850,7 +854,7 @@ textarea {
 }
 
 .flowchart-node-decision {
-  max-width: 14em;
+  max-width: calc(var(--flowchart-span, 2) * 7em);
   border-color: rgba(250, 204, 21, 0.48);
   background: rgba(113, 63, 18, 0.22);
   color: #fef3c7;
@@ -858,13 +862,11 @@ textarea {
 }
 
 .flowchart-node-case {
-  flex: 1 1 0;
   border-color: rgba(96, 165, 250, 0.38);
   background: rgba(30, 41, 59, 0.72);
 }
 
 .flowchart-node-result {
-  flex: 1 1 0;
   border-color: rgba(203, 213, 225, 0.32);
   background: rgba(51, 65, 85, 0.56);
   color: #f8fafc;
@@ -883,8 +885,9 @@ textarea {
 }
 
 .flowchart-edge-row {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(var(--flowchart-columns, 1), minmax(0, 1fr));
+  justify-items: center;
   gap: 3.3em;
   min-height: 0.52em;
   color: color-mix(in srgb, var(--flowchart-accent) 75%, #ffffff 25%);
@@ -892,6 +895,10 @@ textarea {
   font-weight: 800;
   line-height: 0.62;
   opacity: 0.86;
+}
+
+.flowchart-edge {
+  grid-column: var(--flowchart-column, auto) / span var(--flowchart-span, 1);
 }
 
 .flowchart-node.reveal-enter,
@@ -1337,10 +1344,12 @@ blockquote.scripture-quote em {
 
 .synthesis-box em,
 .synthesis-box i {
-  color: var(--synthesis-emphasis-color, #8a5f13);
-  font-family: var(--cgv-scripture-font);
+  color: var(--synthesis-emphasis-color, #7c4a03);
+  font-family: var(--cgv-ui-font, inherit);
+  font-size: 0.98em;
   font-style: italic;
   font-weight: 700;
+  line-height: inherit;
   text-shadow: none;
 }
 
@@ -2492,19 +2501,49 @@ button {
   color: var(--style-h5-color, #374151);
 }
 
-.projector-slide .synthesis-box {
-  background: var(--synthesis-background, #f5f2e8);
-  border-color: rgba(226, 232, 240, 0.72);
+.projector-slide .synthesis-box,
+.audience-slide .synthesis-box {
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.96), rgba(8, 13, 25, 0.98)),
+    var(--view-background, #020617);
+  border-color: rgba(125, 211, 252, 0.2);
   border-left-color: var(--synthesis-accent, #38bdf8);
-  box-shadow: 0 18px 42px rgba(0,0,0,0.45);
+  color: #f8fafc;
+  box-shadow: 0 22px 54px rgba(0,0,0,0.52);
 }
 
-.projector-slide .synthesis-box p {
-  color: var(--synthesis-title-color, #075985);
+.projector-slide .synthesis-box p,
+.audience-slide .synthesis-box p {
+  color: #7dd3fc;
 }
 
-.projector-slide .synthesis-box li {
-  color: var(--synthesis-color, #1f2937);
+.projector-slide .synthesis-box li,
+.audience-slide .synthesis-box li {
+  color: #f8fafc;
+}
+
+.projector-slide .synthesis-box em,
+.projector-slide .synthesis-box i,
+.audience-slide .synthesis-box em,
+.audience-slide .synthesis-box i {
+  color: var(--style-h4-color, var(--cgv-scripture-display-color, #f1d286));
+  font-family: var(--cgv-scripture-font);
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 700;
+  line-height: inherit;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.26);
+}
+
+.presenter .slide .synthesis-box em,
+.presenter .slide .synthesis-box i {
+  color: var(--synthesis-emphasis-color, #7c4a03);
+  font-family: var(--cgv-ui-font, inherit);
+  font-size: 0.98em;
+  font-style: italic;
+  font-weight: 700;
+  line-height: inherit;
+  text-shadow: none;
 }
 
 .projector-quiz {
