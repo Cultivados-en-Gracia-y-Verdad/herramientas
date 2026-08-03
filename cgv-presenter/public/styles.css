@@ -1335,6 +1335,15 @@ blockquote.scripture-quote em {
   margin: 0.24em 0;
 }
 
+.synthesis-box em,
+.synthesis-box i {
+  color: var(--synthesis-emphasis-color, #8a5f13);
+  font-family: var(--cgv-scripture-font);
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: none;
+}
+
 .bible-ref {
   position: relative;
   display: inline-block;
@@ -1356,7 +1365,8 @@ blockquote.scripture-quote em {
 }
 
 .greek-usage-header {
-  display: block;
+  display: grid;
+  gap: 0.34em;
   color: var(--style-reference-color, #0e7490);
   font-size: 0.92em;
   font-weight: 600;
@@ -1373,9 +1383,106 @@ blockquote.scripture-quote em {
   font-weight: 500;
 }
 
+.greek-usage-meta,
+.greek-morph-description,
+.greek-translation-summary,
+.greek-usage-examples-title,
+.greek-occurrence-morph,
+.greek-occurrence-condition {
+  display: block;
+  color: var(--muted, #64748b);
+  font-size: 0.82em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.greek-morph-description {
+  margin-top: 0.08em;
+  color: inherit;
+  opacity: 0.82;
+}
+
+.greek-translation-summary {
+  display: grid;
+  gap: 0.14em;
+  color: inherit;
+}
+
+.greek-translation-label {
+  color: var(--muted, #64748b);
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.greek-translation-list {
+  color: var(--popup-reference-color, currentColor);
+  font-size: 0.96em;
+  line-height: 1.28;
+}
+
+.greek-translation-list b {
+  font-weight: 700;
+}
+
+.greek-condition-panel {
+  display: grid;
+  gap: 0.14em;
+  margin: 0.1em 0;
+  padding: 0.44em 0.52em;
+  border-left: 0.22em solid var(--popup-accent, #0e7490);
+  border-radius: 0.35em;
+  background: color-mix(in srgb, var(--popup-accent, #0e7490) 10%, transparent);
+  color: inherit;
+  font-size: 0.86em;
+  line-height: 1.28;
+}
+
+.greek-condition-panel strong {
+  color: var(--popup-reference-color, currentColor);
+}
+
+.greek-condition-panel em {
+  color: inherit;
+  font-family: var(--cgv-ui-font);
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.84;
+}
+
+.greek-condition-label {
+  color: var(--muted, #64748b);
+  font-size: 0.78em;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.greek-usage-examples-title {
+  margin-top: 0.12em;
+  color: var(--popup-reference-color, var(--style-reference-color, #0e7490));
+  font-weight: 800;
+}
+
 .greek-usage-form {
   color: var(--muted, #64748b);
   font-size: 0.92em;
+}
+
+.greek-occurrence-condition {
+  display: inline-block;
+  margin: 0 0.35em;
+  padding: 0.04em 0.3em;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--popup-accent, #0e7490) 12%, transparent);
+  color: var(--popup-reference-color, currentColor);
+  font-size: 0.72em;
+  font-weight: 800;
+}
+
+.greek-occurrence-morph {
+  margin: 0.1em 0 0.16em;
 }
 
 .greek-usage-hit,

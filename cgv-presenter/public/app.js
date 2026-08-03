@@ -834,6 +834,15 @@ function referencesMatch(left, right) {
   return normalizePopupReferenceKey(left) === normalizePopupReferenceKey(right);
 }
 
+function findPopupVerseCount(reference) {
+  if (!reference) return 0;
+
+  const ref = Array.from(document.querySelectorAll(".bible-ref"))
+    .find(el => referencesMatch(el.dataset.reference, reference));
+  const popupBlocks = getPopupVerseBlocks(ref?.querySelector(".bible-popup"));
+  return Number(ref?.dataset.verseCount) || popupBlocks.length || 1;
+}
+
 function getActivePopupVerseTotal() {
   const openPopup = document.querySelector(".bible-ref.open .bible-popup");
   const overlay = document.getElementById("sharedPopupOverlay");
@@ -1624,14 +1633,23 @@ document.addEventListener("click", event => {
     event.preventDefault();
     const nextReference = reference.dataset.reference || null;
     if (isProjector) {
-      socket.emit("set-popup-reference", popupState.reference === nextReference ? null : nextReference);
+      const nextPopupReference = popupState.reference === nextReference ? null : nextReference;
+      popupState = {
+        reference: nextPopupReference,
+        scrollRatio: 0,
+        verseIndex: 0,
+        verseCount: nextPopupReference ? findPopupVerseCount(nextPopupReference) : 0
+      };
+      renderSharedPopupOverlay();
+      socket.emit("set-popup-reference", nextPopupReference);
       return;
     }
 
     popupState = {
       reference: popupState.reference === nextReference ? null : nextReference,
       scrollRatio: 0,
-      verseIndex: 0
+      verseIndex: 0,
+      verseCount: popupState.reference === nextReference ? 0 : findPopupVerseCount(nextReference)
     };
     renderSharedPopupOverlay();
     return;

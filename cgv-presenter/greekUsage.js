@@ -100,6 +100,7 @@ let indexState = {
   bleDir: "",
   surfaceToLemma: new Map(),
   lemmaRows: new Map(),
+  verseRows: new Map(),
   bleGlossByVerseForm: new Map(),
   bleGlossByVerseLemma: new Map()
 };
@@ -150,6 +151,14 @@ function normalizeGreek(value) {
     .replace(/^[,.;:!?·«»"'“”]+|[,.;:!?·«»"'“”]+$/gu, "")
     .trim()
     .toLocaleLowerCase("el");
+}
+
+const GREEK_TRANSLATION_HINTS = {
+  κοινωνία: ["comunión", "participación", "participar", "contribución", "colecta", "compañerismo"]
+};
+
+function greekTranslationHints(lemma) {
+  return GREEK_TRANSLATION_HINTS[normalizeGreek(lemma)] || [];
 }
 
 function normalizeSpanish(value) {
@@ -457,6 +466,140 @@ function formatRmac(partOfSpeech, parsing) {
   return `${partOfSpeech}${String(parsing || "").replace(/^-+/u, "").replace(/-+$/u, "")}`;
 }
 
+const PART_OF_SPEECH_LABELS = {
+  "A-": "adjetivo",
+  "C-": "conjunción",
+  "D-": "adverbio",
+  "I-": "interjección",
+  "N-": "sustantivo",
+  "P-": "preposición",
+  "RA": "artículo",
+  "RD": "pronombre demostrativo",
+  "RI": "pronombre interrogativo",
+  "RP": "pronombre personal",
+  "RR": "pronombre relativo",
+  "V-": "verbo",
+  "X-": "partícula"
+};
+
+const MOOD_LABELS = {
+  I: "indicativo",
+  S: "subjuntivo",
+  O: "optativo",
+  M: "imperativo",
+  N: "infinitivo",
+  P: "participio"
+};
+
+const TENSE_LABELS = {
+  P: "presente",
+  I: "imperfecto",
+  F: "futuro",
+  A: "aoristo",
+  X: "perfecto",
+  Y: "pluscuamperfecto"
+};
+
+const VOICE_LABELS = {
+  A: "activa",
+  M: "media",
+  P: "pasiva",
+  E: "medio/pasiva",
+  D: "medio deponente",
+  O: "pasivo deponente"
+};
+
+function describeMorphologyCode(code) {
+  const value = String(code || "").trim();
+  if (!value) return "";
+
+  const part = value.slice(0, 2);
+  const parsing = value.slice(2);
+  const labels = [PART_OF_SPEECH_LABELS[part] || part];
+
+  if (part === "V-" && parsing.length >= 4) {
+    const tense = TENSE_LABELS[parsing[1]];
+    const voice = VOICE_LABELS[parsing[2]];
+    const mood = MOOD_LABELS[parsing[3]];
+    [tense, voice, mood].filter(Boolean).forEach(label => labels.push(label));
+  }
+
+  return labels.join(" · ");
+}
+
+function isConditionMarker(surfaceOrLemma) {
+  return ["εἰ", "ἐάν", "ἐὰν", "ἄν", "ἂν"].includes(normalizeGreek(surfaceOrLemma));
+}
+
+function findNextFiniteVerb(row) {
+  if (!row?.verseId) return null;
+  const verseRows = indexState.verseRows.get(row.verseId) || [];
+  const startIndex = verseRows.findIndex(item => item === row);
+  const after = startIndex >= 0 ? verseRows.slice(startIndex + 1, startIndex + 12) : [];
+
+  return after.find(item => {
+    if (item.partOfSpeech !== "V-") return false;
+    const mood = String(item.parsing || "")[3];
+    return ["I", "S", "O"].includes(mood);
+  }) || null;
+}
+
+function classifyCondition(row) {
+  const marker = normalizeGreek(row?.lemma || row?.normalizedForm || row?.surfaceForm);
+  if (!isConditionMarker(marker)) return null;
+
+  const verb = findNextFiniteVerb(row);
+  const mood = String(verb?.parsing || "")[3] || "";
+  const tense = String(verb?.parsing || "")[1] || "";
+  const verbMorphology = verb ? formatRmac(verb.partOfSpeech, verb.parsing) : "";
+  const verbLabel = verb
+    ? `${verb.surfaceForm} (${describeMorphologyCode(verbMorphology) || verbMorphology})`
+    : "";
+
+  if (marker === "ἐάν" || marker === "ἐὰν" || marker === "ἄν" || marker === "ἂν") {
+    return {
+      className: mood === "S" ? "tercera clase" : "condición con ἐάν",
+      pattern: verb ? `ἐάν + ${MOOD_LABELS[mood] || verbMorphology}` : "ἐάν",
+      note: mood === "S"
+        ? "Condición prospectiva: si sucede, entonces se sigue el resultado."
+        : "Marcador condicional con ἐάν; revise el verbo cercano para el matiz.",
+      verb: verbLabel
+    };
+  }
+
+  if (marker === "εἰ") {
+    if (mood === "I") {
+      const isPast = tense === "I" || tense === "A";
+      return {
+        className: isPast ? "primera o segunda clase" : "primera clase",
+        pattern: `εἰ + ${MOOD_LABELS[mood]}`,
+        note: isPast
+          ? "εἰ con indicativo pasado puede funcionar como condición asumida o contraria al hecho; revise el contexto."
+          : "Condición presentada como asumida para el argumento.",
+        verb: verbLabel
+      };
+    }
+
+    if (mood === "O") {
+      return {
+        className: "cuarta clase",
+        pattern: "εἰ + optativo",
+        note: "Condición potencial o menos probable.",
+        verb: verbLabel
+      };
+    }
+
+    return {
+      className: "condición con εἰ",
+      pattern: verb ? `εἰ + ${MOOD_LABELS[mood] || verbMorphology}` : "εἰ",
+      note: "Marcador condicional; revise el verbo cercano para clasificarla.",
+      verb: verbLabel
+    };
+  }
+
+  return null;
+}
+
 function referenceFromVerseId(verseId) {
   const book = String(verseId || "").slice(0, 2);
   const chapter = Number(String(verseId).slice(2, 4));
@@ -510,12 +653,20 @@ function ensureGreekUsageIndex(presenterRootDir) {
       if (!indexState.lemmaRows.has(row.lemma)) {
         indexState.lemmaRows.set(row.lemma, []);
       }
-      indexState.lemmaRows.get(row.lemma).push({
+      const indexedRow = {
         verseId: row.verseId,
         surfaceForm: row.surfaceForm,
         normalizedForm: row.normalizedForm,
+        lemma: row.lemma,
+        partOfSpeech: row.partOfSpeech,
+        parsing: row.parsing,
         morphology: formatRmac(row.partOfSpeech, row.parsing)
-      });
+      };
+      indexState.lemmaRows.get(row.lemma).push(indexedRow);
+      if (!indexState.verseRows.has(row.verseId)) {
+        indexState.verseRows.set(row.verseId, []);
+      }
+      indexState.verseRows.get(row.verseId).push(indexedRow);
     }
   }
 
@@ -580,6 +731,7 @@ function lookupGreekUsage(surface, options = {}) {
     ...otherRows,
     ...exactRows.slice(MAX_EXACT_FORM_FIRST)
   ];
+  const translationHints = greekTranslationHints(lemma);
 
   const seenVerses = new Set();
   const occurrences = [];
@@ -598,9 +750,14 @@ function lookupGreekUsage(surface, options = {}) {
       ...ref,
       surfaceForm: row.surfaceForm,
       morphology: row.morphology,
+      morphologyDescription: describeMorphologyCode(row.morphology),
+      condition: classifyCondition(row),
       gloss,
       spanish,
-      spanishHtml: highlightSpanishInVerse(spanish, [gloss, cleanBleGloss(gloss).split(/\s+/u).pop()].filter(Boolean))
+      spanishHtml: highlightSpanishInVerse(
+        spanish,
+        [gloss, cleanBleGloss(gloss).split(/\s+/u).pop(), ...translationHints].filter(Boolean)
+      )
     });
 
     if (occurrences.length >= MAX_POPUP_VERSES) break;
@@ -612,6 +769,8 @@ function lookupGreekUsage(surface, options = {}) {
     surface: String(surface || "").trim(),
     lemma,
     morphology: morphology || occurrences[0].morphology || "",
+    morphologyDescription: describeMorphologyCode(morphology || occurrences[0].morphology || ""),
+    condition: occurrences.find(item => item.condition)?.condition || null,
     spanishLabel: pickGreekDisplaySpanish(occurrences, surface),
     count: occurrences.length,
     occurrences
@@ -698,6 +857,7 @@ function describeGreekForm(surface, presenterRootDir = __dirname) {
     || normalizeGreek(row.normalizedForm) === surfaceKey
   );
   const morphology = exact?.morphology || rows[0]?.morphology || "";
+  const condition = classifyCondition(exact || rows[0]);
   const footnoteId = FOOTNOTE_ID_BY_LEMMA[lemmaKey]
     || FOOTNOTE_ID_BY_LEMMA[surfaceKey]
     || "";
@@ -709,6 +869,8 @@ function describeGreekForm(surface, presenterRootDir = __dirname) {
     surface: String(surface || "").trim(),
     lemma,
     morphology,
+    morphologyDescription: describeMorphologyCode(morphology),
+    condition,
     footnoteId,
     isConnector
   };
@@ -721,5 +883,7 @@ module.exports = {
   normalizeGreek,
   highlightSpanishInVerse,
   describeGreekForm,
+  describeMorphologyCode,
+  isConditionMarker,
   BOOK_NAMES_ES
 };

@@ -12,7 +12,8 @@ const {
   ensureGreekUsageIndex,
   lookupGreekUsage,
   bibleBookCandidates,
-  describeGreekForm
+  describeGreekForm,
+  isConditionMarker
 } = require("./greekUsage");
 
 const app = express();
@@ -2288,7 +2289,20 @@ function buildGreekUsageMarkup(surface, options = {}) {
   const labelHtml = paren
     ? `(${escapeHtml(usage.surface)})`
     : escapeHtml(surface);
-  const meta = [usage.lemma, usage.morphology].filter(Boolean).join(" · ");
+  const morphologyDescription = usage.morphologyDescription
+    ? `<span class="greek-morph-description">${escapeHtml(usage.morphologyDescription)}</span>`
+    : "";
+  const morphologyMeta = [usage.lemma, usage.morphology].filter(Boolean).join(" · ");
+  const conditionPanel = usage.condition
+    ? `<span class="greek-condition-panel">
+        <span class="greek-condition-label">Condición</span>
+        <strong>${escapeHtml(usage.condition.className)}</strong>
+        <span>${escapeHtml(usage.condition.pattern || "")}</span>
+        ${usage.condition.verb ? `<span>${escapeHtml(usage.condition.verb)}</span>` : ""}
+        <em>${escapeHtml(usage.condition.note || "")}</em>
+      </span>`
+    : "";
+  const translationSummary = buildGreekTranslationSummary(usage);
 
   const popupText = usage.occurrences.map((occurrence, index) => {
     const spanish = occurrence.spanishHtml
@@ -2296,7 +2310,13 @@ function buildGreekUsageMarkup(surface, options = {}) {
     const formNote = occurrence.surfaceForm && occurrence.surfaceForm !== usage.surface
       ? ` <span class="greek-usage-form">(${escapeHtml(occurrence.surfaceForm)})</span>`
       : "";
-    return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(occurrence.reference)}</strong>${formNote} ${spanish}</span>`;
+    const occurrenceMorphology = occurrence.morphologyDescription || occurrence.morphology
+      ? `<span class="greek-occurrence-morph">${escapeHtml(occurrence.morphologyDescription || occurrence.morphology)}</span>`
+      : "";
+    const occurrenceCondition = occurrence.condition
+      ? `<span class="greek-occurrence-condition">${escapeHtml(occurrence.condition.className)}</span>`
+      : "";
+    return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(occurrence.reference)}</strong>${formNote} ${occurrenceCondition}${occurrenceMorphology} ${spanish}</span>`;
   }).join("");
 
   const nav = usage.occurrences.length > 1
@@ -2311,9 +2331,52 @@ function buildGreekUsageMarkup(surface, options = {}) {
   const titleHtml = spanishLabel
     ? `<strong class="greek-usage-spanish">${escapeHtml(spanishLabel)}</strong> <span class="greek-usage-greek">${escapeHtml(usage.surface)}</span>`
     : `<strong>${escapeHtml(usage.surface)}</strong>`;
-  const header = `<span class="greek-usage-header">${titleHtml} ${escapeHtml(meta)} · ${usage.count} uso${usage.count === 1 ? "" : "s"}</span>`;
+  const header = `<span class="greek-usage-header">
+    ${titleHtml}
+    <span class="greek-usage-meta">${escapeHtml(morphologyMeta)}${morphologyDescription}</span>
+    ${conditionPanel}
+    ${translationSummary}
+    <span class="greek-usage-examples-title">Usos similares en el NT · ${usage.count}</span>
+  </span>`;
 
   return `<span class="bible-ref greek-ref" tabindex="0" role="button" data-reference="${referenceKey}" data-verse-count="${usage.occurrences.length}">${labelHtml}<span class="bible-popup">${header}${popupText}${nav}</span></span>`;
+}
+
+function buildGreekTranslationSummary(usage) {
+  const translations = [];
+  const seen = new Set();
+
+  for (const occurrence of usage?.occurrences || []) {
+    const marked = extractFirstMarkedText(occurrence.spanishHtml);
+    const fallbackGloss = String(occurrence.gloss || "")
+      .replace(/[•·]/gu, " ")
+      .replace(/^(de|del|la|el|los|las|un|una)\s+/iu, "")
+      .replace(/\s+/gu, " ")
+      .trim();
+    const label = marked || fallbackGloss;
+    if (!label) continue;
+
+    const key = label
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/gu, "")
+      .toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    translations.push(label);
+    if (translations.length >= 5) break;
+  }
+
+  if (!translations.length) return "";
+
+  return `<span class="greek-translation-summary">
+    <span class="greek-translation-label">Traducción</span>
+    <span class="greek-translation-list">${translations.map(item => `<b>${escapeHtml(item)}</b>`).join(" · ")}</span>
+  </span>`;
+}
+
+function extractFirstMarkedText(value) {
+  const match = String(value || "").match(/<mark[^>]*>([\s\S]*?)<\/mark>/iu);
+  return match ? match[1].replace(/<[^>]+>/gu, "").trim() : "";
 }
 
 function enrichGreekParentheticals(value) {
@@ -2329,7 +2392,7 @@ function enrichGreekParentheticals(value) {
     }
 
     // Bare connectors without a note stay plain text (author should add [^kai], etc.).
-    if (info.isConnector) {
+    if (info.isConnector && !isConditionMarker(info.lemma || surface)) {
       return match;
     }
 
@@ -2360,7 +2423,7 @@ function enrichBareGreekWords(value) {
 
   const enrichText = text => text.replace(pattern, match => {
     const info = describeGreekForm(match, __dirname);
-    if (info.isConnector) return match;
+    if (info.isConnector && !isConditionMarker(info.lemma || match)) return match;
     return buildGreekUsageMarkup(match, { paren: false }) || match;
   });
 
@@ -2385,6 +2448,14 @@ function enrichPresentationMarkup(value) {
       enrichGreekParentheticals(
         enrichFootnotes(String(value || ""))
       )
+    )
+  );
+}
+
+function enrichGreekStudyMarkup(value) {
+  return enrichBareGreekWords(
+    enrichGreekParentheticals(
+      enrichFootnotes(String(value || ""))
     )
   );
 }
@@ -2589,7 +2660,7 @@ function renderLine(line) {
   const source = normalizeCommentGlosses(line);
   const headingLevel = getMarkdownHeadingLevel(line);
   const html = headingLevel > 0 && headingLevel <= 2
-    ? renderMarkdown(source).trim()
+    ? enrichGreekStudyMarkup(renderMarkdown(source)).trim()
     : enrichPresentationMarkup(renderMarkdown(source)).trim();
 
   if (line.startsWith("- ")) {
@@ -3649,7 +3720,7 @@ function renderAnimatedChain(chain) {
     if (connectors[index - 1] === "↓" && connectors[index] !== "→") {
       classes.push("markdown-animation-continuation");
     }
-    return `<span class="${classes.join(" ")}">${escapeHtml(item)}</span>`;
+    return `<span class="${classes.join(" ")}">${enrichPresentationMarkup(escapeHtml(item))}</span>`;
   };
 
   if (direction === "mixed") {
@@ -3697,7 +3768,7 @@ function renderAnimatedChain(chain) {
     }
 
     parts.push(
-      `<span class="markdown-animation-item">${escapeHtml(item)}</span>`
+      `<span class="markdown-animation-item">${enrichPresentationMarkup(escapeHtml(item))}</span>`
     );
   });
 
@@ -3847,7 +3918,7 @@ function renderFlowchartLabel(label) {
   return String(label || "")
     .split("\n")
     .map((line, index) =>
-      `<span class="${index === 0 && /^1[:.]\d/.test(line) ? "flowchart-reference" : "flowchart-line"}">${escapeHtml(line)}</span>`
+      `<span class="${index === 0 && /^1[:.]\d/.test(line) ? "flowchart-reference" : "flowchart-line"}">${enrichPresentationMarkup(escapeHtml(line))}</span>`
     )
     .join("");
 }
