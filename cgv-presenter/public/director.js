@@ -724,7 +724,7 @@ async function toggleFullscreen() {
 }
 
 function isSwipeIgnoredTarget(target) {
-  return !!target.closest("input, textarea, select, button, a, .song-drawer, .bible-popup");
+  return !!target.closest("input, textarea, select, button, a, .song-drawer, .bible-popup, .bible-ref");
 }
 
 function beginSwipe(event) {
@@ -815,6 +815,67 @@ function getDirectorPopupVerseBlocks(popup) {
   return Array.from(popup?.querySelectorAll(":scope > .bible-popup-verse") || []);
 }
 
+const directorDynamicPopupCache = new Map();
+const directorDynamicPopupInflight = new Set();
+
+function directorGreekSurfaceFromReference(reference) {
+  const value = String(reference || "").trim();
+  return value.startsWith("greek:") ? value.slice("greek:".length).trim() : "";
+}
+
+async function fetchDirectorGreekPopup(surface) {
+  const value = String(surface || "").trim();
+  if (!value) return null;
+
+  const key = `greek:${value}`;
+  if (!directorDynamicPopupCache.has(key)) {
+    directorDynamicPopupCache.set(
+      key,
+      fetch(`/greek/usage?surface=${encodeURIComponent(value)}`)
+        .then(response => {
+          if (!response.ok) throw new Error(`Greek lookup failed: ${response.status}`);
+          return response.json();
+        })
+        .catch(error => ({
+          found: false,
+          reference: key,
+          surface: value,
+          verseCount: 1,
+          popupHtml: `<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>${escapeHtml(value)}</strong><span class="greek-usage-examples-title">No se pudo cargar la información griega.</span></span></span></span>`,
+          error: error.message
+        }))
+    );
+  }
+
+  return directorDynamicPopupCache.get(key);
+}
+
+async function ensureDirectorDynamicPopup(reference) {
+  if (!reference?.classList?.contains("greek-ref")) {
+    return reference?.querySelector(".bible-popup") || null;
+  }
+
+  const existing = reference.querySelector(":scope > .bible-popup");
+  if (existing) return existing;
+
+  const surface = reference.dataset.greekSurface
+    || directorGreekSurfaceFromReference(reference.dataset.reference);
+  const payload = await fetchDirectorGreekPopup(surface);
+  if (!payload?.popupHtml) return null;
+
+  const wrapper = document.createElement("span");
+  wrapper.innerHTML = payload.popupHtml;
+  const popup = wrapper.firstElementChild;
+  if (!popup) return null;
+
+  reference.dataset.reference = payload.reference || reference.dataset.reference || `greek:${surface}`;
+  reference.dataset.verseCount = String(payload.verseCount || 1);
+  reference.classList.toggle("greek-ref-missing", !payload.found);
+  reference.appendChild(popup);
+  applyDirectorPopupVerseVisibility(popup, latestState.popupState?.verseIndex || 0);
+  return popup;
+}
+
 function applyDirectorPopupVerseVisibility(popup, verseIndex = 0) {
   if (!popup) return 0;
 
@@ -869,32 +930,64 @@ function stepDirectorPopupVerse(direction) {
   socket.emit("set-popup-verse", nextIndex);
 }
 
+function directorReferencesMatch(left, right) {
+  return String(left || "")
+    .replace(/[–—]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim()
+    === String(right || "")
+      .replace(/[–—]/g, "-")
+      .replace(/\s+/g, " ")
+      .trim();
+}
+
 function applyDirectorPopupState(force = false) {
   const activeReference = latestState.popupState?.reference;
   const verseIndex = latestState.popupState?.verseIndex || 0;
   if (
     !force &&
-    activeReference === lastDirectorPopupReference &&
+    directorReferencesMatch(activeReference, lastDirectorPopupReference) &&
     verseIndex === lastDirectorPopupVerseIndex
   ) {
     return;
   }
 
-  lastDirectorPopupReference = activeReference;
+  lastDirectorPopupReference = activeReference || null;
   lastDirectorPopupVerseIndex = verseIndex;
   document.querySelectorAll(".bible-ref.open").forEach(reference => reference.classList.remove("open"));
   if (!activeReference) return;
 
   document.querySelectorAll(".bible-ref").forEach(reference => {
-    const isActive = reference.dataset.reference === activeReference;
+    const isActive = directorReferencesMatch(reference.dataset.reference, activeReference);
     reference.classList.toggle("open", isActive);
-    if (isActive) {
-      applyDirectorPopupVerseVisibility(reference.querySelector(".bible-popup"), verseIndex);
+    if (!isActive) return;
+
+    const existingPopup = reference.querySelector(":scope > .bible-popup");
+    if (existingPopup) {
+      applyDirectorPopupVerseVisibility(existingPopup, verseIndex);
+      return;
+    }
+
+    if (reference.dataset.popupDynamic === "greek" || reference.classList.contains("greek-ref")) {
+      const requestKey = activeReference;
+      if (directorDynamicPopupInflight.has(requestKey)) return;
+      directorDynamicPopupInflight.add(requestKey);
+      ensureDirectorDynamicPopup(reference)
+        .then(popup => {
+          directorDynamicPopupInflight.delete(requestKey);
+          if (popup && directorReferencesMatch(latestState.popupState?.reference, requestKey)) {
+            reference.classList.add("open");
+            applyDirectorPopupVerseVisibility(popup, latestState.popupState?.verseIndex || 0);
+          }
+        })
+        .catch(() => {
+          directorDynamicPopupInflight.delete(requestKey);
+        });
     }
   });
 }
 
-document.addEventListener("click", event => {
+document.addEventListener("click", async event => {
   const verseButton = event.target.closest("[data-popup-verse]");
   if (verseButton) {
     event.preventDefault();
@@ -916,9 +1009,42 @@ document.addEventListener("click", event => {
   }
 
   event.preventDefault();
+  event.stopPropagation();
+
+  await ensureDirectorDynamicPopup(reference);
   const nextReference = reference.dataset.reference || null;
-  const isAlreadyOpen = reference.classList.contains("open");
-  socket.emit("set-popup-reference", isAlreadyOpen ? null : nextReference);
+  const alreadyOpen = reference.classList.contains("open")
+    || directorReferencesMatch(latestState.popupState?.reference, nextReference);
+
+  if (alreadyOpen) {
+    document.querySelectorAll(".bible-ref.open").forEach(el => el.classList.remove("open"));
+    latestState.popupState = {
+      ...(latestState.popupState || {}),
+      reference: null,
+      verseIndex: 0,
+      verseCount: 0
+    };
+    lastDirectorPopupReference = null;
+    lastDirectorPopupVerseIndex = 0;
+    socket.emit("set-popup-reference", null);
+    return;
+  }
+
+  // Optimistic local open so Greek / verse popups respond before the socket round-trip.
+  document.querySelectorAll(".bible-ref.open").forEach(el => {
+    if (el !== reference) el.classList.remove("open");
+  });
+  reference.classList.add("open");
+  applyDirectorPopupVerseVisibility(reference.querySelector(".bible-popup"), 0);
+  latestState.popupState = {
+    ...(latestState.popupState || {}),
+    reference: nextReference,
+    verseIndex: 0,
+    verseCount: Number(reference.dataset.verseCount) || 1
+  };
+  lastDirectorPopupReference = nextReference;
+  lastDirectorPopupVerseIndex = 0;
+  socket.emit("set-popup-reference", nextReference);
 });
 
 document.addEventListener("touchstart", beginSwipe, { passive: true });

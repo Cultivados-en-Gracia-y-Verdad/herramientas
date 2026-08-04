@@ -22,7 +22,8 @@
     "make:mac": "electron-forge make --platform=darwin --arch=arm64",
     "make:mac:release": "npm run make:mac",
     "make:win": "electron-forge make --platform=win32 --arch=x64",
-    "test:chains": "node scripts/test-animated-chains.js"
+    "test:chains": "node scripts/test-animated-chains.js",
+    "test:greek": "node scripts/test-greek-usage.js"
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^5.2.8",

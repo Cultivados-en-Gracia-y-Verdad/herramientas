@@ -227,6 +227,7 @@ let bibleReferences = {};
 let bibleChapterVerseCounts = {};
 let bibleBookNames = [];
 let bibleBookPatterns = [];
+const greekPopupBibleCache = new Map();
 let footnoteDefinitions = new Map();
 let state = {
   slide: 0,
@@ -1759,22 +1760,23 @@ function buildBibleBookAliases(book) {
   return Array.from(aliases);
 }
 
-function loadBibleReferences() {
-  const version = getBibleVersion();
-  const fileExtension = getBibleFileExtension(version);
-  const bibleDir = getActiveBibleDir(version);
+function readBibleReferenceDirectory(version) {
+  const normalizedVersion = normalizeBibleVersion(version);
+  const fileExtension = getBibleFileExtension(normalizedVersion);
+  const bibleDir = getActiveBibleDir(normalizedVersion);
+  const references = {};
+  const chapterVerseCounts = {};
 
   if (!bibleDir) {
-    bibleReferences = {};
-    bibleChapterVerseCounts = {};
-    bibleBookNames = [];
-    bibleBookPatterns = [];
-    console.warn(`No ${version} Bible data found. Bible reference popups will be disabled.`);
-    return;
+    return {
+      version: normalizedVersion,
+      bibleDir: "",
+      references,
+      chapterVerseCounts,
+      bookNames: [],
+      bookPatterns: []
+    };
   }
-
-  bibleReferences = {};
-  bibleChapterVerseCounts = {};
 
   fs.readdirSync(bibleDir)
     .filter(fileName => fileName.toLowerCase().endsWith(fileExtension))
@@ -1797,7 +1799,7 @@ function loadBibleReferences() {
         const text = match[4].trim();
         const key = `${normalizeReferenceText(book)}.${chapter}.${verse}`;
 
-        bibleReferences[key] = {
+        references[key] = {
           book,
           chapter,
           verse,
@@ -1805,22 +1807,50 @@ function loadBibleReferences() {
         };
 
         const chapterKey = `${normalizeReferenceText(book)}.${chapter}`;
-        bibleChapterVerseCounts[chapterKey] = Math.max(
-          bibleChapterVerseCounts[chapterKey] || 0,
+        chapterVerseCounts[chapterKey] = Math.max(
+          chapterVerseCounts[chapterKey] || 0,
           verse
         );
       });
     });
 
-  bibleBookNames = Array.from(
-    new Set(Object.values(bibleReferences).map(reference => reference.book))
+  const bookNames = Array.from(
+    new Set(Object.values(references).map(reference => reference.book))
   ).sort((a, b) => b.length - a.length);
-
-  bibleBookPatterns = bibleBookNames
+  const bookPatterns = bookNames
     .flatMap(buildBibleBookAliases)
     .sort((a, b) => b.length - a.length);
 
-  console.log(`Loaded ${bibleBookNames.length} ${version} Bible books from ${bibleDir}`);
+  return {
+    version: normalizedVersion,
+    bibleDir,
+    references,
+    chapterVerseCounts,
+    bookNames,
+    bookPatterns
+  };
+}
+
+function loadBibleReferences() {
+  const version = getBibleVersion();
+  const loaded = readBibleReferenceDirectory(version);
+  greekPopupBibleCache.clear();
+
+  if (!loaded.bibleDir) {
+    bibleReferences = {};
+    bibleChapterVerseCounts = {};
+    bibleBookNames = [];
+    bibleBookPatterns = [];
+    console.warn(`No ${version} Bible data found. Bible reference popups will be disabled.`);
+    return;
+  }
+
+  bibleReferences = loaded.references;
+  bibleChapterVerseCounts = loaded.chapterVerseCounts;
+  bibleBookNames = loaded.bookNames;
+  bibleBookPatterns = loaded.bookPatterns;
+
+  console.log(`Loaded ${bibleBookNames.length} ${version} Bible books from ${loaded.bibleDir}`);
   ensureGreekUsageIndex(__dirname);
 }
 
@@ -2178,12 +2208,6 @@ const FOOTNOTE_ID_ALIASES = {
   i: "inf"
 };
 
-// Morphology / clause-form notes attached after a Greek paren should not steal
-// the Greek click target: (ἀναγεννήσας)[^P] → usages + participle note.
-const GRAMMAR_FORM_FOOTNOTE_IDS = new Set([
-  "p", "part", "i", "inf", "rel", "conn"
-]);
-
 function resolveFootnoteId(id) {
   const lower = String(id || "").trim().toLowerCase();
   return FOOTNOTE_ID_ALIASES[lower] || lower;
@@ -2191,10 +2215,6 @@ function resolveFootnoteId(id) {
 
 function isGreekParentheticalLabel(value) {
   return /^[\p{Script=Greek}][\p{Script=Greek}\p{M}'ʼ’*·]*$/u.test(String(value || "").trim());
-}
-
-function isGrammarFormFootnoteId(id) {
-  return GRAMMAR_FORM_FOOTNOTE_IDS.has(String(id || "").trim().toLowerCase());
 }
 
 function collectFootnoteDefinitions(body) {
@@ -2272,7 +2292,7 @@ function enrichFootnotes(value) {
   const enrichText = text => text.replace(pattern, (match, labelWest, labelFull, labelWord, id) => {
     if (labelWest != null || labelFull != null) {
       const label = labelWest ?? labelFull;
-      if (isGreekParentheticalLabel(label) && isGrammarFormFootnoteId(id)) {
+      if (isGreekParentheticalLabel(label)) {
         return `${buildGreekStudyLink(label, { paren: true })}${buildFootnoteMarkup(id, null)}`;
       }
       return buildFootnoteMarkup(id, label, { paren: true });
@@ -2290,26 +2310,52 @@ function enrichFootnotes(value) {
 }
 
 function lookupSpanishVerseForGreek(bookCode, chapter, verse) {
+  const lookupKey = `${chapter}.${verse}`;
+  // Prefer readable Spanish (LBF/NBLA); fall back to the active teaching Bible (often BLE).
+  const preferredVersions = ["LBF", "NBLA", getBibleVersion()];
+
+  for (const version of preferredVersions) {
+    if (!version) continue;
+    if (!greekPopupBibleCache.has(version)) {
+      greekPopupBibleCache.set(version, readBibleReferenceDirectory(version));
+    }
+
+    const loaded = greekPopupBibleCache.get(version);
+    if (!loaded?.references || !Object.keys(loaded.references).length) continue;
+
+    for (const bookName of bibleBookCandidates(bookCode)) {
+      const key = `${normalizeReferenceText(bookName)}.${lookupKey}`;
+      const hit = loaded.references[key];
+      if (hit?.text) return hit.text;
+    }
+  }
+
+  // Last resort: already-loaded active bibleReferences map.
   for (const bookName of bibleBookCandidates(bookCode)) {
-    const key = `${normalizeReferenceText(bookName)}.${chapter}.${verse}`;
+    const key = `${normalizeReferenceText(bookName)}.${lookupKey}`;
     const hit = bibleReferences[key];
     if (hit?.text) return hit.text;
   }
+
   return "";
 }
 
-function buildGreekUsageMarkup(surface, options = {}) {
-  const { paren = true } = options;
+function greekReferenceKey(surface) {
+  return normalizeBibleReferenceKey(`greek:${String(surface || "").trim()}`);
+}
+
+function greekSurfaceFromReference(reference) {
+  const value = normalizeBibleReferenceKey(reference);
+  return value.startsWith("greek:") ? value.slice("greek:".length).trim() : "";
+}
+
+function buildGreekPopupPayload(surface) {
   const usage = lookupGreekUsage(surface, {
     presenterRootDir: __dirname,
     lookupVerseText: lookupSpanishVerseForGreek
   });
-  if (!usage) return null;
+  if (!usage) return buildGreekFallbackPopupPayload(surface);
 
-  const referenceKey = escapeHtml(`greek:${usage.surface}`);
-  const labelHtml = paren
-    ? `(${escapeHtml(usage.surface)})`
-    : escapeHtml(surface);
   const morphologyDescription = usage.morphologyDescription
     ? `<span class="greek-morph-description">${escapeHtml(usage.morphologyDescription)}</span>`
     : "";
@@ -2331,7 +2377,8 @@ function buildGreekUsageMarkup(surface, options = {}) {
     const formNote = occurrence.surfaceForm && occurrence.surfaceForm !== usage.surface
       ? ` <span class="greek-usage-form">(${escapeHtml(occurrence.surfaceForm)})</span>`
       : "";
-    const occurrenceMorphology = occurrence.morphologyDescription || occurrence.morphology
+    // When filtering to one morphology, the header already names it — don't repeat on every verse.
+    const occurrenceMorphology = !usage.morphologyMatch && (occurrence.morphologyDescription || occurrence.morphology)
       ? `<span class="greek-occurrence-morph">${escapeHtml(occurrence.morphologyDescription || occurrence.morphology)}</span>`
       : "";
     const occurrenceCondition = occurrence.condition
@@ -2352,25 +2399,45 @@ function buildGreekUsageMarkup(surface, options = {}) {
   const titleHtml = spanishLabel
     ? `<strong class="greek-usage-spanish">${escapeHtml(spanishLabel)}</strong> <span class="greek-usage-greek">${escapeHtml(usage.surface)}</span>`
     : `<strong>${escapeHtml(usage.surface)}</strong>`;
+  const shown = usage.occurrences.length;
+  const total = Number(usage.count) || shown;
+  const examplesLabel = usage.morphologyMatch ? "Misma morfología en el NT" : "Usos similares en el NT";
+  const examplesCount = total > shown ? `${shown} de ${total}` : String(total);
   const header = `<span class="greek-usage-header">
     ${titleHtml}
     <span class="greek-usage-meta">${escapeHtml(morphologyMeta)}${morphologyDescription}</span>
     ${conditionPanel}
     ${translationSummary}
-    <span class="greek-usage-examples-title">Usos similares en el NT · ${usage.count}</span>
+    <span class="greek-usage-examples-title">${examplesLabel} · ${examplesCount}</span>
   </span>`;
 
-  return `<span class="bible-ref greek-ref" tabindex="0" role="button" data-reference="${referenceKey}" data-verse-count="${usage.occurrences.length}">${labelHtml}<span class="bible-popup">${header}${popupText}${nav}</span></span>`;
+  return {
+    found: true,
+    reference: greekReferenceKey(usage.surface),
+    surface: usage.surface,
+    lemma: usage.lemma,
+    morphology: usage.morphology,
+    morphologyDescription: usage.morphologyDescription,
+    spanishLabel: usage.spanishLabel,
+    verseCount: shown,
+    matchCount: total,
+    popupHtml: `<span class="bible-popup greek-popup">${header}${popupText}${nav}</span>`
+  };
 }
 
-function buildGreekFallbackMarkup(surface, options = {}) {
-  const { paren = true } = options;
+function buildGreekFallbackPopupPayload(surface) {
   const value = String(surface || "").trim();
-  if (!value) return "";
+  if (!value) {
+    return {
+      found: false,
+      reference: "",
+      surface: "",
+      verseCount: 1,
+      popupHtml: `<span class="bible-popup greek-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>Forma griega no encontrada.</strong></span></span></span>`
+    };
+  }
 
   const info = describeGreekForm(value, __dirname);
-  const referenceKey = escapeHtml(`greek:${value}`);
-  const labelHtml = paren ? `(${escapeHtml(value)})` : escapeHtml(value);
   const morphologyMeta = [info.lemma, info.morphology].filter(Boolean).join(" · ");
   const morphologyDescription = info.morphologyDescription
     ? `<span class="greek-morph-description">${escapeHtml(info.morphologyDescription)}</span>`
@@ -2384,11 +2451,25 @@ function buildGreekFallbackMarkup(surface, options = {}) {
     <span class="greek-usage-examples-title">${escapeHtml(note)}</span>
   </span>`;
 
-  return `<span class="bible-ref greek-ref greek-ref-missing" tabindex="0" role="button" data-reference="${referenceKey}" data-verse-count="1">${labelHtml}<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true">${header}</span></span></span>`;
+  return {
+    found: false,
+    reference: greekReferenceKey(value),
+    surface: value,
+    lemma: info.lemma,
+    morphology: info.morphology,
+    morphologyDescription: info.morphologyDescription,
+    verseCount: 1,
+    popupHtml: `<span class="bible-popup greek-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true">${header}</span></span>`
+  };
 }
 
 function buildGreekStudyLink(surface, options = {}) {
-  return buildGreekUsageMarkup(surface, options) || buildGreekFallbackMarkup(surface, options);
+  const { paren = true } = options;
+  const value = String(surface || "").trim();
+  if (!value) return "";
+
+  const labelHtml = paren ? `(${escapeHtml(value)})` : escapeHtml(value);
+  return `<span class="bible-ref greek-ref" tabindex="0" role="button" data-reference="${escapeHtml(greekReferenceKey(value))}" data-popup-dynamic="greek" data-greek-surface="${escapeHtml(value)}" data-verse-count="1">${labelHtml}</span>`;
 }
 
 function buildGreekTranslationSummary(usage) {
@@ -4692,6 +4773,11 @@ function findPopupVerseCount(reference) {
   const key = normalizeBibleReferenceKey(reference);
   if (!key) return 0;
 
+  const greekSurface = greekSurfaceFromReference(key);
+  if (greekSurface) {
+    return buildGreekPopupPayload(greekSurface).verseCount || 1;
+  }
+
   const escapedKey = escapeRegExp(key);
 
   for (let index = 0; index < slides.length; index += 1) {
@@ -5812,6 +5898,19 @@ app.get("/bible/test", (req, res) => {
     html: enrichPresentationMarkup(text),
     status: getBibleStatus()
   });
+});
+
+app.get("/greek/usage", (req, res) => {
+  const surface = typeof req.query.surface === "string" && req.query.surface.trim()
+    ? req.query.surface.trim()
+    : greekSurfaceFromReference(req.query.reference);
+
+  if (!surface) {
+    res.status(400).json({ error: "Missing Greek surface form." });
+    return;
+  }
+
+  res.json(buildGreekPopupPayload(surface));
 });
 
 app.get("/courses/catalog", async (req, res) => {

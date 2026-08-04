@@ -139,6 +139,7 @@ function resolveBleInterlinearDir(presenterRootDir) {
 
   return firstExistingDirectory([
     configured,
+    path.join(presenterRootDir, "..", "..", "cgv-data", "interlinears", "NT"),
     path.join(presenterRootDir, "..", "Biblia-BLE", "output", "interlinear", "NT"),
     path.join(presenterRootDir, "..", "..", "cgv-data", "bibles", "BLE", "interlinear", "NT")
   ]);
@@ -146,6 +147,8 @@ function resolveBleInterlinearDir(presenterRootDir) {
 
 function normalizeGreek(value) {
   return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f\u1ab0-\u1aff\u1dc0-\u1dff]/gu, "")
     .normalize("NFC")
     .replace(/[⸀⸁⸂⸃*]/gu, "")
     .replace(/^[,.;:!?·«»"'“”]+|[,.;:!?·«»"'“”]+$/gu, "")
@@ -509,6 +512,25 @@ const VOICE_LABELS = {
   O: "pasivo deponente"
 };
 
+const CASE_LABELS = {
+  N: "nominativo",
+  G: "genitivo",
+  D: "dativo",
+  A: "acusativo",
+  V: "vocativo"
+};
+
+const NUMBER_LABELS = {
+  S: "singular",
+  P: "plural"
+};
+
+const GENDER_LABELS = {
+  M: "masculino",
+  F: "femenino",
+  N: "neutro"
+};
+
 function describeMorphologyCode(code) {
   const value = String(code || "").trim();
   if (!value) return "";
@@ -523,6 +545,14 @@ function describeMorphologyCode(code) {
     const voice = VOICE_LABELS[parsing[hasPersonPrefix ? 2 : 1]];
     const mood = MOOD_LABELS[parsing[hasPersonPrefix ? 3 : 2]];
     [tense, voice, mood].filter(Boolean).forEach(label => labels.push(label));
+  }
+
+  const declinedMatch = value.match(/^(N-|A-|RA|RD|RI|RP|RR)([NGDAV])([SP])([MFN])?/u);
+  if (declinedMatch) {
+    const [, , caseCode, numberCode, genderCode] = declinedMatch;
+    [CASE_LABELS[caseCode], NUMBER_LABELS[numberCode], GENDER_LABELS[genderCode]]
+      .filter(Boolean)
+      .forEach(label => labels.push(label));
   }
 
   return labels.join(" · ");
@@ -727,13 +757,20 @@ function lookupGreekUsage(surface, options = {}) {
   exactRows.sort((a, b) => a.verseId.localeCompare(b.verseId));
   otherRows.sort((a, b) => a.verseId.localeCompare(b.verseId));
 
-  const prioritized = [
-    ...exactRows.slice(0, MAX_EXACT_FORM_FIRST),
-    ...otherRows,
-    ...exactRows.slice(MAX_EXACT_FORM_FIRST)
-  ];
+  const sameMorphologyRows = morphology
+    ? rows.filter(row => row.morphology === morphology).sort((a, b) => a.verseId.localeCompare(b.verseId))
+    : [];
+  const morphologyMatch = sameMorphologyRows.length > 0;
+  const prioritized = morphologyMatch
+    ? sameMorphologyRows
+    : [
+      ...exactRows.slice(0, MAX_EXACT_FORM_FIRST),
+      ...otherRows,
+      ...exactRows.slice(MAX_EXACT_FORM_FIRST)
+    ];
   const translationHints = greekTranslationHints(lemma);
 
+  const totalMatchCount = new Set(prioritized.map(row => row.verseId)).size;
   const seenVerses = new Set();
   const occurrences = [];
 
@@ -761,6 +798,7 @@ function lookupGreekUsage(surface, options = {}) {
       )
     });
 
+    // Always cap popup size — high-frequency forms (καί, θεοῦ) would otherwise dump thousands of verses.
     if (occurrences.length >= MAX_POPUP_VERSES) break;
   }
 
@@ -773,7 +811,8 @@ function lookupGreekUsage(surface, options = {}) {
     morphologyDescription: describeMorphologyCode(morphology || occurrences[0].morphology || ""),
     condition: occurrences.find(item => item.condition)?.condition || null,
     spanishLabel: pickGreekDisplaySpanish(occurrences, surface),
-    count: occurrences.length,
+    count: totalMatchCount,
+    morphologyMatch,
     occurrences
   };
 }
