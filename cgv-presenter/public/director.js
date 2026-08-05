@@ -823,6 +823,11 @@ function directorGreekSurfaceFromReference(reference) {
   return value.startsWith("greek:") ? value.slice("greek:".length).trim() : "";
 }
 
+function directorHebrewSurfaceFromReference(reference) {
+  const value = String(reference || "").trim();
+  return value.startsWith("hebrew:") ? value.slice("hebrew:".length).trim() : "";
+}
+
 async function fetchDirectorGreekPopup(surface) {
   const value = String(surface || "").trim();
   if (!value) return null;
@@ -850,17 +855,49 @@ async function fetchDirectorGreekPopup(surface) {
   return directorDynamicPopupCache.get(key);
 }
 
+async function fetchDirectorHebrewPopup(surface) {
+  const value = String(surface || "").trim();
+  if (!value) return null;
+
+  const key = `hebrew:${value}`;
+  if (!directorDynamicPopupCache.has(key)) {
+    directorDynamicPopupCache.set(
+      key,
+      fetch(`/hebrew/usage?surface=${encodeURIComponent(value)}`)
+        .then(response => {
+          if (!response.ok) throw new Error(`Hebrew lookup failed: ${response.status}`);
+          return response.json();
+        })
+        .catch(error => ({
+          found: false,
+          reference: key,
+          surface: value,
+          verseCount: 1,
+          popupHtml: `<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>${escapeHtml(value)}</strong><span class="greek-usage-examples-title">No se pudo cargar la información hebrea.</span></span></span></span>`,
+          error: error.message
+        }))
+    );
+  }
+
+  return directorDynamicPopupCache.get(key);
+}
+
 async function ensureDirectorDynamicPopup(reference) {
-  if (!reference?.classList?.contains("greek-ref")) {
+  const isGreek = reference?.classList?.contains("greek-ref") || reference?.dataset?.popupDynamic === "greek";
+  const isHebrew = reference?.classList?.contains("hebrew-ref") || reference?.dataset?.popupDynamic === "hebrew";
+  if (!isGreek && !isHebrew) {
     return reference?.querySelector(".bible-popup") || null;
   }
 
   const existing = reference.querySelector(":scope > .bible-popup");
   if (existing) return existing;
 
-  const surface = reference.dataset.greekSurface
-    || directorGreekSurfaceFromReference(reference.dataset.reference);
-  const payload = await fetchDirectorGreekPopup(surface);
+  const surface = isHebrew
+    ? (reference.dataset.hebrewSurface || directorHebrewSurfaceFromReference(reference.dataset.reference))
+    : (reference.dataset.greekSurface || directorGreekSurfaceFromReference(reference.dataset.reference));
+  const payload = isHebrew
+    ? await fetchDirectorHebrewPopup(surface)
+    : await fetchDirectorGreekPopup(surface);
   if (!payload?.popupHtml) return null;
 
   const wrapper = document.createElement("span");
@@ -868,9 +905,10 @@ async function ensureDirectorDynamicPopup(reference) {
   const popup = wrapper.firstElementChild;
   if (!popup) return null;
 
-  reference.dataset.reference = payload.reference || reference.dataset.reference || `greek:${surface}`;
+  const prefix = isHebrew ? "hebrew" : "greek";
+  reference.dataset.reference = payload.reference || reference.dataset.reference || `${prefix}:${surface}`;
   reference.dataset.verseCount = String(payload.verseCount || 1);
-  reference.classList.toggle("greek-ref-missing", !payload.found);
+  reference.classList.toggle(`${prefix}-ref-missing`, !payload.found);
   reference.appendChild(popup);
   applyDirectorPopupVerseVisibility(popup, latestState.popupState?.verseIndex || 0);
   return popup;
@@ -968,7 +1006,12 @@ function applyDirectorPopupState(force = false) {
       return;
     }
 
-    if (reference.dataset.popupDynamic === "greek" || reference.classList.contains("greek-ref")) {
+    if (
+      reference.dataset.popupDynamic === "greek"
+      || reference.dataset.popupDynamic === "hebrew"
+      || reference.classList.contains("greek-ref")
+      || reference.classList.contains("hebrew-ref")
+    ) {
       const requestKey = activeReference;
       if (directorDynamicPopupInflight.has(requestKey)) return;
       directorDynamicPopupInflight.add(requestKey);

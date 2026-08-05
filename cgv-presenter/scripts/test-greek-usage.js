@@ -153,14 +153,22 @@ async function runHttpTests() {
       assert.ok(marked.some(text => /fe/.test(text)), `expected fe highlight, got: ${marked.join(", ")}`);
     });
 
-    check("/greek/usage names Bible version", () => {
+    check("/greek/usage header is Spanish — Greek (lemma) + Uso", () => {
+      assert.match(love.json.popupHtml, /greek-usage-title/i);
+      assert.match(love.json.popupHtml, /greek-usage-spanish/i);
+      assert.match(love.json.popupHtml, /greek-usage-greek/i);
+      assert.match(love.json.popupHtml, /greek-usage-lemma/i);
+      assert.match(love.json.popupHtml, /greek-usage-use-label">Uso/i);
+    });
+
+    check("/greek/usage names Bible version under verse", () => {
       assert.ok(love.json.bibleVersion, "expected bibleVersion on payload");
       assert.ok(
-        /greek-usage-bible/i.test(love.json.popupHtml),
-        "expected Texto/Bible version label in popup"
+        /greek-occurrence-bible/i.test(love.json.popupHtml),
+        "expected Bible version under occurrence verse"
       );
       assert.match(String(love.json.bibleVersion), /\bBLE\b/, `expected BLE study text, got ${love.json.bibleVersion}`);
-      assert.match(love.json.popupHtml, /\bBLE\b/);
+      assert.match(love.json.popupHtml, /greek-occurrence-bible">BLE</i);
     });
 
     check("/greek/usage shows BLE and NBLA word glosses", () => {

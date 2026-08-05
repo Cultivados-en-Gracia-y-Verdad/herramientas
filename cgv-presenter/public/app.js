@@ -853,6 +853,11 @@ function greekSurfaceFromReference(reference) {
   return value.startsWith("greek:") ? value.slice("greek:".length).trim() : "";
 }
 
+function hebrewSurfaceFromReference(reference) {
+  const value = normalizePopupReferenceKey(reference);
+  return value.startsWith("hebrew:") ? value.slice("hebrew:".length).trim() : "";
+}
+
 async function fetchGreekPopup(surface) {
   const value = String(surface || "").trim();
   if (!value) return null;
@@ -880,16 +885,47 @@ async function fetchGreekPopup(surface) {
   return dynamicPopupCache.get(key);
 }
 
+async function fetchHebrewPopup(surface) {
+  const value = String(surface || "").trim();
+  if (!value) return null;
+
+  const key = `hebrew:${value}`;
+  if (!dynamicPopupCache.has(key)) {
+    dynamicPopupCache.set(
+      key,
+      fetch(`/hebrew/usage?surface=${encodeURIComponent(value)}`)
+        .then(response => {
+          if (!response.ok) throw new Error(`Hebrew lookup failed: ${response.status}`);
+          return response.json();
+        })
+        .catch(error => ({
+          found: false,
+          reference: key,
+          surface: value,
+          verseCount: 1,
+          popupHtml: `<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>${escapeHtml(value)}</strong><span class="greek-usage-examples-title">No se pudo cargar la información hebrea.</span></span></span></span>`,
+          error: error.message
+        }))
+    );
+  }
+
+  return dynamicPopupCache.get(key);
+}
+
 async function ensureDynamicPopup(reference) {
-  if (!reference?.classList?.contains("greek-ref")) {
+  const isGreek = reference?.classList?.contains("greek-ref") || reference?.dataset?.popupDynamic === "greek";
+  const isHebrew = reference?.classList?.contains("hebrew-ref") || reference?.dataset?.popupDynamic === "hebrew";
+  if (!isGreek && !isHebrew) {
     return reference?.querySelector(".bible-popup") || null;
   }
 
   const existing = reference.querySelector(":scope > .bible-popup");
   if (existing) return existing;
 
-  const surface = reference.dataset.greekSurface || greekSurfaceFromReference(reference.dataset.reference);
-  const payload = await fetchGreekPopup(surface);
+  const surface = isHebrew
+    ? (reference.dataset.hebrewSurface || hebrewSurfaceFromReference(reference.dataset.reference))
+    : (reference.dataset.greekSurface || greekSurfaceFromReference(reference.dataset.reference));
+  const payload = isHebrew ? await fetchHebrewPopup(surface) : await fetchGreekPopup(surface);
   if (!payload?.popupHtml) return null;
 
   const wrapper = document.createElement("span");
@@ -897,9 +933,10 @@ async function ensureDynamicPopup(reference) {
   const popup = wrapper.firstElementChild;
   if (!popup) return null;
 
-  reference.dataset.reference = payload.reference || reference.dataset.reference || `greek:${surface}`;
+  const prefix = isHebrew ? "hebrew" : "greek";
+  reference.dataset.reference = payload.reference || reference.dataset.reference || `${prefix}:${surface}`;
   reference.dataset.verseCount = String(payload.verseCount || 1);
-  reference.classList.toggle("greek-ref-missing", !payload.found);
+  reference.classList.toggle(`${prefix}-ref-missing`, !payload.found);
   reference.appendChild(popup);
   applyPopupVerseVisibility(popup, popupState.verseIndex || 0);
   return popup;
@@ -1013,14 +1050,26 @@ function renderSharedPopupOverlay() {
     "greek-popup-overlay",
     !!(
       sourceReference?.classList.contains("greek-ref")
+      || sourceReference?.classList.contains("hebrew-ref")
       || sourcePopup?.classList.contains("greek-popup")
+      || sourcePopup?.classList.contains("hebrew-popup")
       || greekSurfaceFromReference(popupState.reference)
+      || hebrewSurfaceFromReference(popupState.reference)
     )
   );
 
-  if (!sourcePopup && sourceReference?.dataset.popupDynamic === "greek") {
+  if (
+    !sourcePopup
+    && (
+      sourceReference?.dataset.popupDynamic === "greek"
+      || sourceReference?.dataset.popupDynamic === "hebrew"
+    )
+  ) {
     const requestKey = popupState.reference;
-    overlay.innerHTML = `<span class="bible-popup-loading">Cargando estudio griego...</span>`;
+    const loadingLabel = sourceReference?.dataset.popupDynamic === "hebrew"
+      ? "Cargando estudio hebreo..."
+      : "Cargando estudio griego...";
+    overlay.innerHTML = `<span class="bible-popup-loading">${loadingLabel}</span>`;
     if (!dynamicPopupInflight.has(requestKey)) {
       dynamicPopupInflight.add(requestKey);
       ensureDynamicPopup(sourceReference)

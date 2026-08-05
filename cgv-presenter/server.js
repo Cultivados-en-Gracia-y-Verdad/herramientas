@@ -16,6 +16,11 @@ const {
   highlightSpanishInVerse,
   isConditionMarker
 } = require("./greekUsage");
+const {
+  lookupHebrewUsage,
+  describeHebrewForm,
+  bibleBookCandidates: hebrewBibleBookCandidates
+} = require("./hebrewUsage");
 
 const app = express();
 app.use(compression());
@@ -592,6 +597,10 @@ function renderMarkdownInline(value) {
 
 function hasGreekScript(value) {
   return /[\p{Script=Greek}]/u.test(String(value || ""));
+}
+
+function hasHebrewScript(value) {
+  return /[\p{Script=Hebrew}]/u.test(String(value || ""));
 }
 
 function isScriptureBlockquote(token) {
@@ -1656,7 +1665,19 @@ function buildStyleSettingsCss() {
 .slide .marker-grammar .bible-ref.greek-ref,
 .slide .grammar-note .bible-ref.greek-ref,
 .slide .marker-cue .bible-ref.greek-ref,
-.slide .phrase-cue .bible-ref.greek-ref {
+.slide .phrase-cue .bible-ref.greek-ref,
+.projector-slide .marker-grammar .bible-ref.hebrew-ref,
+.projector-slide .grammar-note .bible-ref.hebrew-ref,
+.projector-slide .marker-cue .bible-ref.hebrew-ref,
+.projector-slide .phrase-cue .bible-ref.hebrew-ref,
+.audience-slide .marker-grammar .bible-ref.hebrew-ref,
+.audience-slide .grammar-note .bible-ref.hebrew-ref,
+.audience-slide .marker-cue .bible-ref.hebrew-ref,
+.audience-slide .phrase-cue .bible-ref.hebrew-ref,
+.slide .marker-grammar .bible-ref.hebrew-ref,
+.slide .grammar-note .bible-ref.hebrew-ref,
+.slide .marker-cue .bible-ref.hebrew-ref,
+.slide .phrase-cue .bible-ref.hebrew-ref {
   color: var(--style-reference-color, #7dd3fc);
   border-bottom-color: currentColor;
   cursor: pointer;
@@ -2390,6 +2411,12 @@ function enrichFootnotes(value) {
     .join("");
 }
 
+function studyBookNameCandidates(bookKey) {
+  const greek = bibleBookCandidates(bookKey) || [];
+  const hebrew = hebrewBibleBookCandidates(bookKey) || [];
+  return [...new Set([...greek, ...hebrew])];
+}
+
 function lookupSpanishVerseByVersion(bookCode, chapter, verse, version) {
   const lookupKey = `${chapter}.${verse}`;
   const normalized = normalizeBibleVersion(version);
@@ -2404,7 +2431,7 @@ function lookupSpanishVerseByVersion(bookCode, chapter, verse, version) {
     return { text: "", version: "" };
   }
 
-  for (const bookName of bibleBookCandidates(bookCode)) {
+  for (const bookName of studyBookNameCandidates(bookCode)) {
     const key = `${normalizeReferenceText(bookName)}.${lookupKey}`;
     const hit = loaded.references[key];
     if (hit?.text) {
@@ -2431,7 +2458,7 @@ function lookupSpanishVerseForGreek(bookCode, chapter, verse) {
 
   // Last resort: already-loaded active bibleReferences map.
   const lookupKey = `${chapter}.${verse}`;
-  for (const bookName of bibleBookCandidates(bookCode)) {
+  for (const bookName of studyBookNameCandidates(bookCode)) {
     const key = `${normalizeReferenceText(bookName)}.${lookupKey}`;
     const hit = bibleReferences[key];
     if (hit?.text) {
@@ -2445,8 +2472,16 @@ function lookupSpanishVerseForGreek(bookCode, chapter, verse) {
   return { text: "", version: "" };
 }
 
+function lookupSpanishVerseForHebrew(bookSlug, chapter, verse) {
+  return lookupSpanishVerseForGreek(bookSlug, chapter, verse);
+}
+
 function greekReferenceKey(surface) {
   return normalizeBibleReferenceKey(`greek:${String(surface || "").trim()}`);
+}
+
+function hebrewReferenceKey(surface) {
+  return normalizeBibleReferenceKey(`hebrew:${String(surface || "").trim()}`);
 }
 
 function greekSurfaceFromReference(reference) {
@@ -2461,10 +2496,6 @@ function buildGreekPopupPayload(surface) {
   });
   if (!usage) return buildGreekFallbackPopupPayload(surface);
 
-  const morphologyDescription = usage.morphologyDescription
-    ? `<span class="greek-morph-description">${escapeHtml(usage.morphologyDescription)}</span>`
-    : "";
-  const morphologyMeta = [usage.lemma, usage.morphology].filter(Boolean).join(" · ");
   const conditionPanel = usage.condition
     ? `<span class="greek-condition-panel">
         <span class="greek-condition-label">Condición</span>
@@ -2480,7 +2511,6 @@ function buildGreekPopupPayload(surface) {
       .map(item => String(item.bibleVersion || "").trim().toUpperCase())
       .filter(Boolean)
   )];
-  const mixedBibleVersions = bibleVersions.length > 1;
   const bibleVersionLabel = bibleVersions.length
     ? bibleVersions.join(" · ")
     : "";
@@ -2498,10 +2528,13 @@ function buildGreekPopupPayload(surface) {
     const occurrenceCondition = occurrence.condition
       ? `<span class="greek-occurrence-condition">${escapeHtml(occurrence.condition.className)}</span>`
       : "";
-    const occurrenceVersion = mixedBibleVersions && occurrence.bibleVersion
-      ? ` <span class="greek-occurrence-bible">${escapeHtml(occurrence.bibleVersion)}</span>`
+    const version = String(
+      occurrence.bibleVersion || (bibleVersions.length === 1 ? bibleVersions[0] : "")
+    ).trim().toUpperCase();
+    const occurrenceVersion = version
+      ? `<span class="greek-occurrence-bible">${escapeHtml(version)}</span>`
       : "";
-    return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(occurrence.reference)}</strong>${occurrenceVersion}${formNote} ${occurrenceCondition}${occurrenceMorphology} ${spanish}</span>`;
+    return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(occurrence.reference)}</strong>${formNote} ${occurrenceCondition}${occurrenceMorphology} <span class="greek-occurrence-text">${spanish}</span>${occurrenceVersion}</span>`;
   }).join("");
 
   const nav = usage.occurrences.length > 1
@@ -2513,22 +2546,25 @@ function buildGreekPopupPayload(surface) {
     : "";
 
   const spanishLabel = String(usage.spanishLabel || "").trim();
+  const lemma = String(usage.lemma || "").trim();
+  const greekSurface = String(usage.surface || "").trim();
   const titleHtml = spanishLabel
-    ? `<strong class="greek-usage-spanish">${escapeHtml(spanishLabel)}</strong> <span class="greek-usage-greek">${escapeHtml(usage.surface)}</span>`
-    : `<strong>${escapeHtml(usage.surface)}</strong>`;
+    ? `<span class="greek-usage-title"><strong class="greek-usage-spanish">${escapeHtml(spanishLabel)}</strong> <span class="greek-usage-sep">—</span> <span class="greek-usage-greek">${escapeHtml(greekSurface)}</span>${lemma ? ` <span class="greek-usage-lemma">(${escapeHtml(lemma)})</span>` : ""}</span>`
+    : `<span class="greek-usage-title"><strong class="greek-usage-greek">${escapeHtml(greekSurface)}</strong>${lemma ? ` <span class="greek-usage-lemma">(${escapeHtml(lemma)})</span>` : ""}</span>`;
+  const useHtml = usage.morphologyDescription
+    ? `<span class="greek-usage-use"><span class="greek-usage-use-label">Uso</span> ${escapeHtml(usage.morphologyDescription)}</span>`
+    : (usage.morphology
+      ? `<span class="greek-usage-use"><span class="greek-usage-use-label">Uso</span> ${escapeHtml(usage.morphology)}</span>`
+      : "");
   const shown = usage.occurrences.length;
   const total = Number(usage.count) || shown;
   const examplesLabel = usage.morphologyMatch ? "Misma morfología en el NT" : "Usos similares en el NT";
   const examplesCount = total > shown ? `${shown} de ${total}` : String(total);
-  const bibleVersionMeta = bibleVersionLabel
-    ? `<span class="greek-usage-bible"><span class="greek-usage-bible-label">Texto</span> ${escapeHtml(bibleVersionLabel)}</span>`
-    : "";
   const header = `<span class="greek-usage-header">
     ${titleHtml}
-    <span class="greek-usage-meta">${escapeHtml(morphologyMeta)}${morphologyDescription}</span>
+    ${useHtml}
     ${conditionPanel}
     ${translationSummary}
-    ${bibleVersionMeta}
     <span class="greek-usage-examples-title">${examplesLabel} · ${examplesCount}</span>
   </span>`;
 
@@ -2561,16 +2597,14 @@ function buildGreekFallbackPopupPayload(surface) {
   }
 
   const info = describeGreekForm(value, __dirname);
-  const morphologyMeta = [info.lemma, info.morphology].filter(Boolean).join(" · ");
-  const morphologyDescription = info.morphologyDescription
-    ? `<span class="greek-morph-description">${escapeHtml(info.morphologyDescription)}</span>`
-    : "";
+  const lemma = String(info.lemma || "").trim();
+  const useText = String(info.morphologyDescription || info.morphology || "").trim();
   const note = info.lemma || info.morphology
     ? "Forma griega reconocida, sin usos enlazados en el índice cargado."
     : "Forma griega no encontrada en el índice cargado.";
   const header = `<span class="greek-usage-header">
-    <strong>${escapeHtml(value)}</strong>
-    ${morphologyMeta || morphologyDescription ? `<span class="greek-usage-meta">${escapeHtml(morphologyMeta)}${morphologyDescription}</span>` : ""}
+    <span class="greek-usage-title"><strong class="greek-usage-greek">${escapeHtml(value)}</strong>${lemma ? ` <span class="greek-usage-lemma">(${escapeHtml(lemma)})</span>` : ""}</span>
+    ${useText ? `<span class="greek-usage-use"><span class="greek-usage-use-label">Uso</span> ${escapeHtml(useText)}</span>` : ""}
     <span class="greek-usage-examples-title">${escapeHtml(note)}</span>
   </span>`;
 
@@ -2593,6 +2627,139 @@ function buildGreekStudyLink(surface, options = {}) {
 
   const labelHtml = paren ? `(${escapeHtml(value)})` : escapeHtml(value);
   return `<span class="bible-ref greek-ref" tabindex="0" role="button" data-reference="${escapeHtml(greekReferenceKey(value))}" data-popup-dynamic="greek" data-greek-surface="${escapeHtml(value)}" data-verse-count="1">${labelHtml}</span>`;
+}
+
+function hebrewSurfaceFromReference(reference) {
+  const value = normalizeBibleReferenceKey(reference);
+  return value.startsWith("hebrew:") ? value.slice("hebrew:".length).trim() : "";
+}
+
+function buildHebrewPopupPayload(surface) {
+  const usage = lookupHebrewUsage(surface, {
+    presenterRootDir: __dirname,
+    lookupVerseText: lookupSpanishVerseForHebrew
+  });
+  if (!usage) return buildHebrewFallbackPopupPayload(surface);
+
+  const translationSummary = buildGreekTranslationSummary(usage);
+  const bibleVersions = [...new Set(
+    usage.occurrences
+      .map(item => String(item.bibleVersion || "").trim().toUpperCase())
+      .filter(Boolean)
+  )];
+  const bibleVersionLabel = bibleVersions.length
+    ? bibleVersions.join(" · ")
+    : "";
+
+  const popupText = usage.occurrences.map((occurrence, index) => {
+    const spanish = occurrence.spanishHtml
+      || (occurrence.spanish ? escapeHtml(occurrence.spanish) : `<em>${escapeHtml(occurrence.surfaceForm)}</em>`);
+    const formNote = occurrence.surfaceForm && occurrence.surfaceForm !== usage.surface
+      ? ` <span class="greek-usage-form">(${escapeHtml(occurrence.surfaceForm)})</span>`
+      : "";
+    const occurrenceMorphology = !usage.morphologyMatch && (occurrence.morphologyDescription || occurrence.morphology)
+      ? `<span class="greek-occurrence-morph">${escapeHtml(occurrence.morphologyDescription || occurrence.morphology)}</span>`
+      : "";
+    const version = String(
+      occurrence.bibleVersion || (bibleVersions.length === 1 ? bibleVersions[0] : "")
+    ).trim().toUpperCase();
+    const occurrenceVersion = version
+      ? `<span class="greek-occurrence-bible">${escapeHtml(version)}</span>`
+      : "";
+    return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(occurrence.reference)}</strong>${formNote} ${occurrenceMorphology} <span class="greek-occurrence-text">${spanish}</span>${occurrenceVersion}</span>`;
+  }).join("");
+
+  const nav = usage.occurrences.length > 1
+    ? `<span class="bible-popup-nav">
+        <button type="button" class="bible-popup-nav-button" data-popup-verse="-1" aria-label="Previous verse">‹</button>
+        <span class="bible-popup-position"><span data-popup-verse-current>1</span> / ${usage.occurrences.length}</span>
+        <button type="button" class="bible-popup-nav-button" data-popup-verse="1" aria-label="Next verse">›</button>
+      </span>`
+    : "";
+
+  const spanishLabel = String(usage.spanishLabel || "").trim();
+  const lemma = String(usage.lemma || "").trim();
+  const hebrewSurface = String(usage.surface || "").trim();
+  const titleHtml = spanishLabel
+    ? `<span class="greek-usage-title"><strong class="greek-usage-spanish">${escapeHtml(spanishLabel)}</strong> <span class="greek-usage-sep">—</span> <span class="greek-usage-greek hebrew-surface">${escapeHtml(hebrewSurface)}</span>${lemma ? ` <span class="greek-usage-lemma hebrew-surface">(${escapeHtml(lemma)})</span>` : ""}</span>`
+    : `<span class="greek-usage-title"><strong class="greek-usage-greek hebrew-surface">${escapeHtml(hebrewSurface)}</strong>${lemma ? ` <span class="greek-usage-lemma hebrew-surface">(${escapeHtml(lemma)})</span>` : ""}</span>`;
+  const useHtml = usage.morphologyDescription
+    ? `<span class="greek-usage-use"><span class="greek-usage-use-label">Uso</span> ${escapeHtml(usage.morphologyDescription)}</span>`
+    : (usage.morphology
+      ? `<span class="greek-usage-use"><span class="greek-usage-use-label">Uso</span> ${escapeHtml(usage.morphology)}</span>`
+      : "");
+  const shown = usage.occurrences.length;
+  const total = Number(usage.count) || shown;
+  const examplesLabel = usage.morphologyMatch ? "Misma morfología en el AT" : "Usos similares en el AT";
+  const examplesCount = total > shown ? `${shown} de ${total}` : String(total);
+  const header = `<span class="greek-usage-header">
+    ${titleHtml}
+    ${useHtml}
+    ${translationSummary}
+    <span class="greek-usage-examples-title">${examplesLabel} · ${examplesCount}</span>
+  </span>`;
+
+  return {
+    found: true,
+    reference: hebrewReferenceKey(usage.surface),
+    surface: usage.surface,
+    lemma: usage.lemma,
+    strongs: usage.strongs,
+    morphology: usage.morphology,
+    morphologyDescription: usage.morphologyDescription,
+    spanishLabel: usage.spanishLabel,
+    bibleVersion: bibleVersionLabel,
+    bibleVersions,
+    verseCount: shown,
+    matchCount: total,
+    popupHtml: `<span class="bible-popup greek-popup hebrew-popup">${header}${popupText}${nav}</span>`
+  };
+}
+
+function buildHebrewFallbackPopupPayload(surface) {
+  const value = String(surface || "").trim();
+  if (!value) {
+    return {
+      found: false,
+      reference: "",
+      surface: "",
+      verseCount: 1,
+      popupHtml: `<span class="bible-popup greek-popup hebrew-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>Forma hebrea no encontrada.</strong></span></span></span>`
+    };
+  }
+
+  const info = describeHebrewForm(value, __dirname);
+  const lemma = String(info.lemma || "").trim();
+  const useText = String(info.morphologyDescription || info.morphology || "").trim();
+  const note = info.lemma || info.morphology
+    ? "Forma hebrea reconocida, sin usos enlazados en el índice cargado."
+    : "Forma hebrea no encontrada en el índice cargado.";
+  const header = `<span class="greek-usage-header">
+    <span class="greek-usage-title"><strong class="greek-usage-greek hebrew-surface">${escapeHtml(value)}</strong>${lemma ? ` <span class="greek-usage-lemma hebrew-surface">(${escapeHtml(lemma)})</span>` : ""}</span>
+    ${useText ? `<span class="greek-usage-use"><span class="greek-usage-use-label">Uso</span> ${escapeHtml(useText)}</span>` : ""}
+    <span class="greek-usage-examples-title">${escapeHtml(note)}</span>
+  </span>`;
+
+  return {
+    found: false,
+    reference: hebrewReferenceKey(value),
+    surface: value,
+    lemma: info.lemma,
+    strongs: info.strongs,
+    morphology: info.morphology,
+    morphologyDescription: info.morphologyDescription,
+    verseCount: 1,
+    popupHtml: `<span class="bible-popup greek-popup hebrew-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true">${header}</span></span>`
+  };
+}
+
+function buildHebrewStudyLink(surface, options = {}) {
+  const { paren = true } = options;
+  const value = String(surface || "").trim();
+  if (!value) return "";
+
+  const labelHtml = paren ? `(${escapeHtml(value)})` : escapeHtml(value);
+  return `<span class="bible-ref hebrew-ref" tabindex="0" role="button" data-reference="${escapeHtml(hebrewReferenceKey(value))}" data-popup-dynamic="hebrew" data-hebrew-surface="${escapeHtml(value)}" data-verse-count="1">${labelHtml}</span>`;
 }
 
 function normalizeSpanishLabelKey(value) {
@@ -2775,20 +2942,76 @@ function enrichBareGreekWords(value) {
     .join("");
 }
 
+function enrichHebrewParentheticals(value) {
+  const html = String(value || "");
+  const pattern = /\(([\p{Script=Hebrew}][\p{Script=Hebrew}\p{M}'ʼ’*·\/]*)\)(?!\[\^)/gu;
+
+  const enrichText = text => text.replace(pattern, (match, surface) => (
+    buildHebrewStudyLink(surface, { paren: true })
+  ));
+
+  let anchorDepth = 0;
+  return html
+    .split(/(<[^>]+>)/g)
+    .map(part => {
+      if (part.startsWith("<") && part.endsWith(">")) {
+        if (/^<span\b/i.test(part) && anchorDepth > 0) anchorDepth += 1;
+        else if (/^<span\b[^>]*\bbible-ref\b/i.test(part)) anchorDepth += 1;
+        else if (/^<\/span>/i.test(part) && anchorDepth > 0) anchorDepth -= 1;
+        return part;
+      }
+      return anchorDepth > 0 ? part : enrichText(part);
+    })
+    .join("");
+}
+
+function enrichBareHebrewWords(value) {
+  const html = String(value || "");
+  if (!hasHebrewScript(html)) return html;
+
+  const pattern = /[\p{Script=Hebrew}][\p{Script=Hebrew}\p{M}'ʼ’·\/-]*/gu;
+
+  const enrichText = text => text.replace(pattern, match => (
+    buildHebrewStudyLink(match, { paren: false })
+  ));
+
+  let anchorDepth = 0;
+  return html
+    .split(/(<[^>]+>)/g)
+    .map(part => {
+      if (part.startsWith("<") && part.endsWith(">")) {
+        if (/^<span\b/i.test(part) && anchorDepth > 0) anchorDepth += 1;
+        else if (/^<span\b[^>]*\bbible-ref\b/i.test(part)) anchorDepth += 1;
+        else if (/^<\/span>/i.test(part) && anchorDepth > 0) anchorDepth -= 1;
+        return part;
+      }
+      return anchorDepth > 0 ? part : enrichText(part);
+    })
+    .join("");
+}
+
 function enrichPresentationMarkup(value) {
   return enrichBibleReferences(
-    enrichBareGreekWords(
-      enrichGreekParentheticals(
-        enrichFootnotes(String(value || ""))
+    enrichBareHebrewWords(
+      enrichHebrewParentheticals(
+        enrichBareGreekWords(
+          enrichGreekParentheticals(
+            enrichFootnotes(String(value || ""))
+          )
+        )
       )
     )
   );
 }
 
 function enrichGreekStudyMarkup(value) {
-  return enrichBareGreekWords(
-    enrichGreekParentheticals(
-      enrichFootnotes(String(value || ""))
+  return enrichBareHebrewWords(
+    enrichHebrewParentheticals(
+      enrichBareGreekWords(
+        enrichGreekParentheticals(
+          enrichFootnotes(String(value || ""))
+        )
+      )
     )
   );
 }
@@ -4984,6 +5207,11 @@ function findPopupVerseCount(reference) {
     return buildGreekPopupPayload(greekSurface).verseCount || 1;
   }
 
+  const hebrewSurface = hebrewSurfaceFromReference(key);
+  if (hebrewSurface) {
+    return buildHebrewPopupPayload(hebrewSurface).verseCount || 1;
+  }
+
   const escapedKey = escapeRegExp(key);
 
   for (let index = 0; index < slides.length; index += 1) {
@@ -6117,6 +6345,19 @@ app.get("/greek/usage", (req, res) => {
   }
 
   res.json(buildGreekPopupPayload(surface));
+});
+
+app.get("/hebrew/usage", (req, res) => {
+  const surface = typeof req.query.surface === "string" && req.query.surface.trim()
+    ? req.query.surface.trim()
+    : hebrewSurfaceFromReference(req.query.reference);
+
+  if (!surface) {
+    res.status(400).json({ error: "Missing Hebrew surface form." });
+    return;
+  }
+
+  res.json(buildHebrewPopupPayload(surface));
 });
 
 app.get("/courses/catalog", async (req, res) => {

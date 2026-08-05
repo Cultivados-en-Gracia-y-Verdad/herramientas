@@ -46,6 +46,7 @@ Backlog for the `cgv-presenter` app. Current release: **1.2.7**.
 - [x] **One-verse popups** — Show a single verse at a time with ‹ › controls; sync by `verseIndex` across presenter, director, projector, and audience (replaces fragile scroll sync).
 - [ ] **Popup markup** — Spot-check director, stage, and projector views for remaining layout quirks on long single verses.
 - [x] **Greek word popups** — Click Greek → Spanish gloss, morphology, and same-morphology NT examples (lazy `/greek/usage`); connectors keep pedagogical footnotes; `(λέγων)[^P]` splits usage + participle note.
+- [x] **Hebrew word popups** — Click Hebrew → Spanish gloss, OSHB morphology, and same-morphology OT examples (lazy `/hebrew/usage`); same header layout as Greek (`Spanish — Hebrew (lemma)` + Uso + version under verse).
 
 ## Docs & process
 
