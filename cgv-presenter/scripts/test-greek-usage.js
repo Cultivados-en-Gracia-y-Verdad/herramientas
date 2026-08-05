@@ -171,6 +171,14 @@ async function runHttpTests() {
       assert.match(love.json.popupHtml, /NBLA<\/span>\s*<b>[^<]*amor/i);
     });
 
+    const koinonia = await getJson(`http://127.0.0.1:${port}/greek/usage?surface=${encodeURIComponent("κοινωνία")}`);
+    check("/greek/usage κοινωνία lists multiple NBLA options", () => {
+      assert.ok(koinonia.json.found);
+      assert.match(koinonia.json.popupHtml, /greek-translation-label">NBLA/i);
+      assert.match(koinonia.json.popupHtml, /comunión/i);
+      assert.match(koinonia.json.popupHtml, /participaci[oó]n/i);
+    });
+
     const born = await getJson(`http://127.0.0.1:${port}/greek/usage?surface=${encodeURIComponent("ἀναγεννήσας")}`);
     check("/greek/usage ἀναγεννήσας has morph description", () => {
       assert.ok(born.json.found);

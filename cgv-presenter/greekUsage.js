@@ -3,6 +3,7 @@ const path = require("path");
 
 const MAX_POPUP_VERSES = 12;
 const MAX_EXACT_FORM_FIRST = 8;
+const MAX_TRANSLATION_SAMPLES = 24;
 
 const BOOK_NAMES_ES = {
   "01": "Mateo",
@@ -890,6 +891,24 @@ function lookupGreekUsage(surface, options = {}) {
     }
   }
 
+  // Broader lemma sample for BLE/NBLA translation options (beyond morph-filtered popup verses).
+  const translationSamples = [];
+  const seenTranslationVerses = new Set();
+  const lemmaRowsForSamples = [...rows].sort((a, b) => a.verseId.localeCompare(b.verseId));
+  for (const row of lemmaRowsForSamples) {
+    if (seenTranslationVerses.has(row.verseId)) continue;
+    seenTranslationVerses.add(row.verseId);
+
+    const ref = referenceFromVerseId(row.verseId);
+    const gloss = lookupBleGloss(ref.book, ref.chapter, ref.verse, row.surfaceForm, lemma);
+    translationSamples.push({
+      ...ref,
+      surfaceForm: row.surfaceForm,
+      gloss
+    });
+    if (translationSamples.length >= MAX_TRANSLATION_SAMPLES) break;
+  }
+
   return {
     surface: String(surface || "").trim(),
     lemma,
@@ -897,8 +916,10 @@ function lookupGreekUsage(surface, options = {}) {
     morphologyDescription: describeMorphologyCode(morphology || occurrences[0].morphology || ""),
     condition: occurrences.find(item => item.condition)?.condition || null,
     spanishLabel,
+    translationHints,
     count: totalMatchCount,
     morphologyMatch,
+    translationSamples,
     occurrences
   };
 }
