@@ -156,9 +156,25 @@ function normalizeGreek(value) {
     .toLocaleLowerCase("el");
 }
 
-const GREEK_TRANSLATION_HINTS = {
-  κοινωνία: ["comunión", "participación", "participar", "contribución", "colecta", "compañerismo"]
-};
+const GREEK_TRANSLATION_HINTS = Object.fromEntries(
+  Object.entries({
+    κοινωνία: ["comunión", "participación", "participar", "contribución", "colecta", "compañerismo"],
+    πίστις: ["fe", "fidelidad", "confianza"],
+    πιστεύω: ["creer", "creo", "creyó", "creyeron", "creído", "creyendo"],
+    λόγος: ["palabra", "palabras", "mensaje", "asunto", "cuenta", "razón", "discurso", "dicho", "declaración", "hablar", "verbo"],
+    ἀγάπη: ["amor", "amada", "amado"],
+    ἀγαπάω: ["amar", "ama", "amó", "amado", "amada", "amando"],
+    ἔχω: ["tener", "tiene", "tienen", "tenía", "teniendo", "tuvo", "tenido", "dueño"],
+    θεός: ["Dios", "de Dios"],
+    κύριος: ["Señor", "del Señor", "amo"],
+    ἄνθρωπος: ["hombre", "persona", "ser humano", "hombres"],
+    γίνομαι: ["ser", "llegar a ser", "hacerse", "fue", "fue hecho", "sucedió"],
+    ποιέω: ["hacer", "hace", "hizo", "haciendo", "hecho"],
+    λέγω: ["decir", "dice", "dijo", "diciendo", "dicho"],
+    εἶδον: ["ver", "vio", "vieron", "visto"],
+    ὁράω: ["ver", "ve", "vio", "viendo", "visto"]
+  }).map(([lemma, hints]) => [normalizeGreek(lemma), hints])
+);
 
 function greekTranslationHints(lemma) {
   return GREEK_TRANSLATION_HINTS[normalizeGreek(lemma)] || [];
@@ -305,7 +321,7 @@ function glossCandidates(gloss) {
       normalized.replace(/ciones$/u, "cion"),
       normalized.replace(/es$/u, ""),
       normalized.replace(/s$/u, "")
-    ])].filter(key => key && key.length >= 3 && !SPANISH_STOPWORDS.has(key));
+    ])].filter(key => key && key.length >= 2 && !SPANISH_STOPWORDS.has(key));
 
     for (const key of keys) {
       candidates.add(key);
@@ -330,11 +346,12 @@ function glossCandidates(gloss) {
   return [...candidates]
     .map(term => String(term || "").trim())
     .filter(term => {
-      if (!term || term.length < 3) return false;
+      if (!term) return false;
       const normalized = normalizeSpanish(term);
       if (!normalized || SPANISH_STOPWORDS.has(normalized)) return false;
-      // Keep multi-word phrases even if a stopword is inside.
-      if (/\s/u.test(term)) return term.length >= 5;
+      // Keep short content words (fe, sí) for exact word-boundary matching.
+      if (normalized.length < 2) return false;
+      if (/\s/u.test(term)) return term.length >= 4;
       return true;
     })
     .sort((left, right) => right.length - left.length);
@@ -354,20 +371,54 @@ function highlightSpanishInVerse(text, glosses = []) {
 
   const terms = [...new Set(
     (Array.isArray(glosses) ? glosses : [glosses])
-      .flatMap(gloss => glossCandidates(gloss))
-      .filter(term => term && term.length > 1)
+      .flatMap(gloss => {
+        const value = String(gloss || "").trim();
+        if (!value) return [];
+        // Keep the raw display label itself (e.g. "fe", "de Dios") before expansion.
+        return [value, ...glossCandidates(value)];
+      })
+      .filter(term => term && normalizeSpanish(term).length >= 2)
   )].sort((left, right) => right.length - left.length);
 
-  // 1) Exact word or multi-word phrase (case-insensitive).
+  // 1) Exact word or multi-word phrase (case-insensitive). Allow 2-letter content words like "fe".
   for (const term of terms) {
-    if (term.length < 3) continue;
+    const normalizedTerm = normalizeSpanish(term);
+    if (normalizedTerm.length < 2) continue;
+    if (normalizedTerm.length < 3 && /\s/u.test(term)) continue;
     const pattern = new RegExp(`(?<![\\p{L}])(${escapeRegExp(term)})(?![\\p{L}])`, "iu");
     const match = source.match(pattern);
     if (!match) continue;
     return wrapHighlight(source, match.index ?? 0, match[1].length);
   }
 
-  // 2) Prefix / conjugation-aware word match inside the verse.
+  // 2) Accent-insensitive exact word match (fe / fé, Dios / DIOS).
+  const sourceNormalized = normalizeSpanish(source);
+  for (const term of terms) {
+    const normalizedTerm = normalizeSpanish(term);
+    if (normalizedTerm.length < 2 || /\s/u.test(normalizedTerm)) continue;
+    const pattern = new RegExp(`(?<![\\p{L}])(${escapeRegExp(normalizedTerm)})(?![\\p{L}])`, "iu");
+    const match = sourceNormalized.match(pattern);
+    if (!match || match.index == null) continue;
+    // Map normalized index back onto the original string by walking letters.
+    let originalIndex = 0;
+    let normalizedIndex = 0;
+    while (originalIndex < source.length && normalizedIndex < match.index) {
+      const ch = source[originalIndex];
+      const norm = normalizeSpanish(ch);
+      if (norm) normalizedIndex += norm.length;
+      originalIndex += 1;
+    }
+    let end = originalIndex;
+    let consumed = 0;
+    while (end < source.length && consumed < match[1].length) {
+      const norm = normalizeSpanish(source[end]);
+      if (norm) consumed += norm.length;
+      end += 1;
+    }
+    if (end > originalIndex) return wrapHighlight(source, originalIndex, end - originalIndex);
+  }
+
+  // 3) Prefix / conjugation-aware word match inside the verse.
   const words = source.match(/[\p{L}]+(?:['’-][\p{L}]+)*/gu) || [];
   const prefixes = terms
     .map(term => normalizeSpanish(term))
@@ -379,14 +430,18 @@ function highlightSpanishInVerse(text, glosses = []) {
     const wordStem = spanishStem(word);
     const hit = prefixes.some(prefix => {
       if (normalizedWord === prefix) return true;
-      // Word clearly begins with the gloss/prefix (examin→examínese, comprob→comprobado)
       if (prefix.length >= 3 && normalizedWord.startsWith(prefix)) return true;
-      // Short verb roots: am- → amen / aman / amará / AMARÁS
       if (prefix.length === 2 && normalizedWord.startsWith(prefix) && normalizedWord.length >= 3) {
         return true;
       }
-      // Strict stem equality only (avoid comprado≈comprob false friends)
       if (wordStem.length >= 4 && prefix.length >= 4 && wordStem === prefix) return true;
+      // Shared stem: teniendo / tenía / tenemos ↔ tener / tenia
+      if (wordStem.length >= 3 && prefix.length >= 3) {
+        const prefixStem = spanishStem(prefix);
+        if (prefixStem.length >= 3 && (wordStem.startsWith(prefixStem) || prefixStem.startsWith(wordStem))) {
+          return true;
+        }
+      }
       return false;
     });
     if (!hit) continue;
@@ -779,9 +834,15 @@ function lookupGreekUsage(surface, options = {}) {
     seenVerses.add(row.verseId);
 
     const ref = referenceFromVerseId(row.verseId);
-    const spanish = typeof options.lookupVerseText === "function"
-      ? options.lookupVerseText(ref.book, ref.chapter, ref.verse) || ""
+    const verseLookup = typeof options.lookupVerseText === "function"
+      ? options.lookupVerseText(ref.book, ref.chapter, ref.verse)
       : "";
+    const spanish = typeof verseLookup === "string"
+      ? verseLookup
+      : String(verseLookup?.text || "");
+    const bibleVersion = typeof verseLookup === "string"
+      ? ""
+      : String(verseLookup?.version || "").trim().toUpperCase();
     const gloss = lookupBleGloss(ref.book, ref.chapter, ref.verse, row.surfaceForm, lemma);
 
     occurrences.push({
@@ -792,6 +853,7 @@ function lookupGreekUsage(surface, options = {}) {
       condition: classifyCondition(row),
       gloss,
       spanish,
+      bibleVersion,
       spanishHtml: highlightSpanishInVerse(
         spanish,
         [gloss, cleanBleGloss(gloss).split(/\s+/u).pop(), ...translationHints].filter(Boolean)
@@ -804,13 +866,30 @@ function lookupGreekUsage(surface, options = {}) {
 
   if (!occurrences.length) return null;
 
+  const spanishLabel = pickGreekDisplaySpanish(occurrences, surface);
+  // Second pass: re-highlight every verse with the shared Spanish label so short
+  // glosses like "fe" and cross-verse equivalents stay marked consistently.
+  if (spanishLabel) {
+    for (const item of occurrences) {
+      item.spanishHtml = highlightSpanishInVerse(
+        item.spanish,
+        [
+          spanishLabel,
+          item.gloss,
+          cleanBleGloss(item.gloss).split(/\s+/u).pop(),
+          ...translationHints
+        ].filter(Boolean)
+      );
+    }
+  }
+
   return {
     surface: String(surface || "").trim(),
     lemma,
     morphology: morphology || occurrences[0].morphology || "",
     morphologyDescription: describeMorphologyCode(morphology || occurrences[0].morphology || ""),
     condition: occurrences.find(item => item.condition)?.condition || null,
-    spanishLabel: pickGreekDisplaySpanish(occurrences, surface),
+    spanishLabel,
     count: totalMatchCount,
     morphologyMatch,
     occurrences
@@ -824,19 +903,39 @@ function pickGreekDisplaySpanish(occurrences = [], surface = "") {
     ...occurrences
   ];
 
+  // Prefer the most common BLE gloss — more stable than the first verse hit
+  // (λόγος should stay "palabra", not "hablar" from a single context).
+  const glossCounts = new Map();
+  for (const item of ordered) {
+    const cleaned = cleanBleGloss(item.gloss);
+    if (!cleaned) continue;
+    const trimmed = cleaned.replace(/^(de|del|la|el|los|las|un|una)\s+/iu, "").trim() || cleaned;
+    const key = normalizeSpanish(trimmed);
+    if (!key || SPANISH_STOPWORDS.has(key)) continue;
+    const current = glossCounts.get(key) || { label: trimmed, count: 0 };
+    current.count += 1;
+    // Prefer the shorter lexical label when tied ("palabra" over "la palabra").
+    if (trimmed.length < current.label.length) current.label = trimmed;
+    glossCounts.set(key, current);
+  }
+
+  let best = null;
+  for (const entry of glossCounts.values()) {
+    if (
+      !best
+      || entry.count > best.count
+      || (entry.count === best.count && entry.label.length < best.label.length)
+    ) {
+      best = entry;
+    }
+  }
+  if (best?.label) return best.label;
+
   for (const item of ordered) {
     const mark = String(item.spanishHtml || "").match(/<mark[^>]*>([\s\S]*?)<\/mark>/iu);
     if (!mark) continue;
     const text = mark[1].replace(/<[^>]+>/gu, "").trim();
     if (text) return text;
-  }
-
-  for (const item of ordered) {
-    const cleaned = cleanBleGloss(item.gloss);
-    if (!cleaned) continue;
-    // Drop leading function words from mechanical BLE glosses ("de herencia").
-    const trimmed = cleaned.replace(/^(de|del|la|el|los|las|un|una)\s+/iu, "").trim();
-    return trimmed || cleaned;
   }
 
   return "";

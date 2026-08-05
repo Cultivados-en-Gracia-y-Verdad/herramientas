@@ -178,7 +178,8 @@ body.song-mode {
 }
 
 .director-content h3 + p,
-.director-content blockquote,
+.director-content blockquote.scripture-quote,
+.director-content blockquote.scripture-quote p,
 .director-content em {
   color: var(--director-scripture);
   font-family: Georgia, "Times New Roman", serif;
@@ -187,10 +188,29 @@ body.song-mode {
   letter-spacing: 0.01em;
 }
 
-.director-content blockquote {
+.director-content blockquote.scripture-quote {
   margin-left: 0;
   padding-left: 0.55em;
   border-left: 0.08em solid rgba(241, 210, 134, 0.42);
+}
+
+.director-content blockquote.teaching-comment,
+.director-content blockquote.teaching-comment p {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
+  color: var(--director-muted);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.director-content blockquote.teaching-comment em {
+  color: var(--director-scripture);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 .director-content h5 {
@@ -289,6 +309,7 @@ body.song-mode {
 .director-content .greek-morph-description,
 .director-content .greek-translation-summary,
 .director-content .greek-usage-examples-title,
+.director-content .greek-usage-bible,
 .director-content .greek-occurrence-morph,
 .director-content .greek-occurrence-condition {
   display: block;
@@ -296,6 +317,31 @@ body.song-mode {
   font-size: 0.78em;
   font-weight: 500;
   line-height: 1.25;
+}
+
+.director-content .greek-usage-bible {
+  font-weight: 600;
+}
+
+.director-content .greek-usage-bible-label {
+  margin-right: 0.28em;
+  font-size: 0.92em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.director-content .greek-occurrence-bible {
+  display: inline-block;
+  margin-left: 0.35em;
+  padding: 0.02em 0.28em;
+  border-radius: 999px;
+  background: rgba(14, 116, 144, 0.12);
+  color: #0e7490;
+  font-size: 0.68em;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
 }
 
 .director-content .greek-translation-label {
@@ -308,6 +354,10 @@ body.song-mode {
 .director-content .greek-translation-list b {
   color: #0e7490;
   font-weight: 700;
+}
+
+.director-content .greek-translation-sep {
+  color: #64748b;
 }
 
 .director-content .greek-condition-panel {

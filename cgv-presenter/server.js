@@ -13,6 +13,7 @@ const {
   lookupGreekUsage,
   bibleBookCandidates,
   describeGreekForm,
+  highlightSpanishInVerse,
   isConditionMarker
 } = require("./greekUsage");
 
@@ -2309,35 +2310,59 @@ function enrichFootnotes(value) {
     .join("");
 }
 
-function lookupSpanishVerseForGreek(bookCode, chapter, verse) {
+function lookupSpanishVerseByVersion(bookCode, chapter, verse, version) {
   const lookupKey = `${chapter}.${verse}`;
-  // Prefer readable Spanish (LBF/NBLA); fall back to the active teaching Bible (often BLE).
-  const preferredVersions = ["LBF", "NBLA", getBibleVersion()];
+  const normalized = normalizeBibleVersion(version);
+  if (!normalized) return { text: "", version: "" };
+
+  if (!greekPopupBibleCache.has(normalized)) {
+    greekPopupBibleCache.set(normalized, readBibleReferenceDirectory(normalized));
+  }
+
+  const loaded = greekPopupBibleCache.get(normalized);
+  if (!loaded?.references || !Object.keys(loaded.references).length) {
+    return { text: "", version: "" };
+  }
+
+  for (const bookName of bibleBookCandidates(bookCode)) {
+    const key = `${normalizeReferenceText(bookName)}.${lookupKey}`;
+    const hit = loaded.references[key];
+    if (hit?.text) {
+      return {
+        text: hit.text,
+        version: normalized
+      };
+    }
+  }
+
+  return { text: "", version: "" };
+}
+
+function lookupSpanishVerseForGreek(bookCode, chapter, verse) {
+  // Prefer BLE for Greek study popups: its wording matches the interlinear glosses
+  // used for highlighting. Fall back to LBF/NBLA/active until LBF coverage is complete.
+  const preferredVersions = ["BLE", "LBF", "NBLA", getBibleVersion()];
 
   for (const version of preferredVersions) {
     if (!version) continue;
-    if (!greekPopupBibleCache.has(version)) {
-      greekPopupBibleCache.set(version, readBibleReferenceDirectory(version));
-    }
-
-    const loaded = greekPopupBibleCache.get(version);
-    if (!loaded?.references || !Object.keys(loaded.references).length) continue;
-
-    for (const bookName of bibleBookCandidates(bookCode)) {
-      const key = `${normalizeReferenceText(bookName)}.${lookupKey}`;
-      const hit = loaded.references[key];
-      if (hit?.text) return hit.text;
-    }
+    const hit = lookupSpanishVerseByVersion(bookCode, chapter, verse, version);
+    if (hit.text) return hit;
   }
 
   // Last resort: already-loaded active bibleReferences map.
+  const lookupKey = `${chapter}.${verse}`;
   for (const bookName of bibleBookCandidates(bookCode)) {
     const key = `${normalizeReferenceText(bookName)}.${lookupKey}`;
     const hit = bibleReferences[key];
-    if (hit?.text) return hit.text;
+    if (hit?.text) {
+      return {
+        text: hit.text,
+        version: getBibleVersion()
+      };
+    }
   }
 
-  return "";
+  return { text: "", version: "" };
 }
 
 function greekReferenceKey(surface) {
@@ -2370,6 +2395,15 @@ function buildGreekPopupPayload(surface) {
       </span>`
     : "";
   const translationSummary = buildGreekTranslationSummary(usage);
+  const bibleVersions = [...new Set(
+    usage.occurrences
+      .map(item => String(item.bibleVersion || "").trim().toUpperCase())
+      .filter(Boolean)
+  )];
+  const mixedBibleVersions = bibleVersions.length > 1;
+  const bibleVersionLabel = bibleVersions.length
+    ? bibleVersions.join(" · ")
+    : "";
 
   const popupText = usage.occurrences.map((occurrence, index) => {
     const spanish = occurrence.spanishHtml
@@ -2384,7 +2418,10 @@ function buildGreekPopupPayload(surface) {
     const occurrenceCondition = occurrence.condition
       ? `<span class="greek-occurrence-condition">${escapeHtml(occurrence.condition.className)}</span>`
       : "";
-    return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(occurrence.reference)}</strong>${formNote} ${occurrenceCondition}${occurrenceMorphology} ${spanish}</span>`;
+    const occurrenceVersion = mixedBibleVersions && occurrence.bibleVersion
+      ? ` <span class="greek-occurrence-bible">${escapeHtml(occurrence.bibleVersion)}</span>`
+      : "";
+    return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(occurrence.reference)}</strong>${occurrenceVersion}${formNote} ${occurrenceCondition}${occurrenceMorphology} ${spanish}</span>`;
   }).join("");
 
   const nav = usage.occurrences.length > 1
@@ -2403,11 +2440,15 @@ function buildGreekPopupPayload(surface) {
   const total = Number(usage.count) || shown;
   const examplesLabel = usage.morphologyMatch ? "Misma morfología en el NT" : "Usos similares en el NT";
   const examplesCount = total > shown ? `${shown} de ${total}` : String(total);
+  const bibleVersionMeta = bibleVersionLabel
+    ? `<span class="greek-usage-bible"><span class="greek-usage-bible-label">Texto</span> ${escapeHtml(bibleVersionLabel)}</span>`
+    : "";
   const header = `<span class="greek-usage-header">
     ${titleHtml}
     <span class="greek-usage-meta">${escapeHtml(morphologyMeta)}${morphologyDescription}</span>
     ${conditionPanel}
     ${translationSummary}
+    ${bibleVersionMeta}
     <span class="greek-usage-examples-title">${examplesLabel} · ${examplesCount}</span>
   </span>`;
 
@@ -2419,6 +2460,8 @@ function buildGreekPopupPayload(surface) {
     morphology: usage.morphology,
     morphologyDescription: usage.morphologyDescription,
     spanishLabel: usage.spanishLabel,
+    bibleVersion: bibleVersionLabel,
+    bibleVersions,
     verseCount: shown,
     matchCount: total,
     popupHtml: `<span class="bible-popup greek-popup">${header}${popupText}${nav}</span>`
@@ -2472,35 +2515,100 @@ function buildGreekStudyLink(surface, options = {}) {
   return `<span class="bible-ref greek-ref" tabindex="0" role="button" data-reference="${escapeHtml(greekReferenceKey(value))}" data-popup-dynamic="greek" data-greek-surface="${escapeHtml(value)}" data-verse-count="1">${labelHtml}</span>`;
 }
 
-function buildGreekTranslationSummary(usage) {
-  const translations = [];
-  const seen = new Set();
+function normalizeSpanishLabelKey(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/gu, "")
+    .toLowerCase()
+    .trim();
+}
 
-  for (const occurrence of usage?.occurrences || []) {
-    const marked = extractFirstMarkedText(occurrence.spanishHtml);
-    const fallbackGloss = String(occurrence.gloss || "")
-      .replace(/[•·]/gu, " ")
-      .replace(/^(de|del|la|el|los|las|un|una)\s+/iu, "")
-      .replace(/\s+/gu, " ")
-      .trim();
-    const label = marked || fallbackGloss;
-    if (!label) continue;
-
-    const key = label
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/gu, "")
-      .toLowerCase();
-    if (seen.has(key)) continue;
-    seen.add(key);
-    translations.push(label);
-    if (translations.length >= 5) break;
+function pickMajoritySpanishLabel(labels = []) {
+  const counts = new Map();
+  for (const raw of labels) {
+    const label = String(raw || "").trim();
+    const key = normalizeSpanishLabelKey(label);
+    if (!key) continue;
+    const current = counts.get(key) || { label, count: 0 };
+    current.count += 1;
+    if (label.length < current.label.length) current.label = label;
+    counts.set(key, current);
   }
 
-  if (!translations.length) return "";
+  let best = null;
+  for (const entry of counts.values()) {
+    if (
+      !best
+      || entry.count > best.count
+      || (entry.count === best.count && entry.label.length < best.label.length)
+    ) {
+      best = entry;
+    }
+  }
+  return best?.label || "";
+}
+
+function pickNblaTranslationLabel(usage) {
+  const bleLabel = String(usage?.spanishLabel || "").trim();
+  const glossHints = [];
+  for (const occurrence of usage?.occurrences || []) {
+    const gloss = String(occurrence.gloss || "").trim();
+    if (gloss) glossHints.push(gloss);
+  }
+  if (bleLabel) glossHints.push(bleLabel);
+
+  const nblaLabels = [];
+  for (const occurrence of usage?.occurrences || []) {
+    const { text } = lookupSpanishVerseByVersion(
+      occurrence.book,
+      occurrence.chapter,
+      occurrence.verse,
+      "NBLA"
+    );
+    if (!text) continue;
+
+    const html = highlightSpanishInVerse(
+      text,
+      [
+        bleLabel,
+        occurrence.gloss,
+        String(occurrence.gloss || "").replace(/[•·]/gu, " ").split(/\s+/u).pop(),
+        ...glossHints
+      ].filter(Boolean)
+    );
+    const marked = extractFirstMarkedText(html);
+    if (marked) nblaLabels.push(marked);
+  }
+
+  return pickMajoritySpanishLabel(nblaLabels);
+}
+
+function buildGreekTranslationSummary(usage) {
+  const bleLabel = String(usage?.spanishLabel || "").trim()
+    || pickMajoritySpanishLabel(
+      (usage?.occurrences || []).map(occurrence => {
+        const marked = extractFirstMarkedText(occurrence.spanishHtml);
+        const fallbackGloss = String(occurrence.gloss || "")
+          .replace(/[•·]/gu, " ")
+          .replace(/^(de|del|la|el|los|las|un|una)\s+/iu, "")
+          .replace(/\s+/gu, " ")
+          .trim();
+        return marked || fallbackGloss;
+      })
+    );
+  const nblaLabel = pickNblaTranslationLabel(usage);
+
+  const parts = [];
+  if (bleLabel) {
+    parts.push(`<span class="greek-translation-version"><span class="greek-translation-label">BLE</span> <b>${escapeHtml(bleLabel)}</b></span>`);
+  }
+  if (nblaLabel) {
+    parts.push(`<span class="greek-translation-version"><span class="greek-translation-label">NBLA</span> <b>${escapeHtml(nblaLabel)}</b></span>`);
+  }
+  if (!parts.length) return "";
 
   return `<span class="greek-translation-summary">
-    <span class="greek-translation-label">Traducción</span>
-    <span class="greek-translation-list">${translations.map(item => `<b>${escapeHtml(item)}</b>`).join(" · ")}</span>
+    <span class="greek-translation-list">${parts.join('<span class="greek-translation-sep"> · </span>')}</span>
   </span>`;
 }
 

@@ -137,6 +137,34 @@ async function runHttpTests() {
       assert.match(love.json.popupHtml, /Mateo\s+24:12/i);
     });
 
+    const faith = await getJson(`http://127.0.0.1:${port}/greek/usage?surface=${encodeURIComponent("πίστις")}`);
+    check("/greek/usage πίστις highlights fe", () => {
+      assert.ok(faith.json.found);
+      assert.match(String(faith.json.spanishLabel || ""), /fe/i);
+      const marked = [...String(faith.json.popupHtml || "").matchAll(/<mark class="greek-usage-hit">([^<]*)<\/mark>/gi)]
+        .map(match => match[1].toLowerCase());
+      assert.ok(marked.length > 0, "expected at least one highlighted Spanish equivalent");
+      assert.ok(marked.some(text => /fe/.test(text)), `expected fe highlight, got: ${marked.join(", ")}`);
+    });
+
+    check("/greek/usage names Bible version", () => {
+      assert.ok(love.json.bibleVersion, "expected bibleVersion on payload");
+      assert.ok(
+        /greek-usage-bible/i.test(love.json.popupHtml),
+        "expected Texto/Bible version label in popup"
+      );
+      assert.match(String(love.json.bibleVersion), /\bBLE\b/, `expected BLE study text, got ${love.json.bibleVersion}`);
+      assert.match(love.json.popupHtml, /\bBLE\b/);
+    });
+
+    check("/greek/usage shows BLE and NBLA word glosses", () => {
+      assert.match(love.json.popupHtml, /greek-translation-summary/i);
+      assert.match(love.json.popupHtml, /greek-translation-label">BLE/i);
+      assert.match(love.json.popupHtml, /greek-translation-label">NBLA/i);
+      assert.match(love.json.popupHtml, /BLE<\/span>\s*<b>[^<]*amor/i);
+      assert.match(love.json.popupHtml, /NBLA<\/span>\s*<b>[^<]*amor/i);
+    });
+
     const born = await getJson(`http://127.0.0.1:${port}/greek/usage?surface=${encodeURIComponent("ἀναγεννήσας")}`);
     check("/greek/usage ἀναγεννήσας has morph description", () => {
       assert.ok(born.json.found);
