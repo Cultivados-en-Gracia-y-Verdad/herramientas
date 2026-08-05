@@ -6,9 +6,17 @@ const path = require('path');
 const macEntitlements = path.resolve(__dirname, 'build', 'entitlements.mac.plist');
 const appIcon = path.resolve(__dirname, 'assets', 'cgv-app-icon');
 const cgvDataBibles = path.resolve(__dirname, '..', '..', 'cgv-data', 'bibles');
+const cgvDataMorphology = path.resolve(__dirname, '..', '..', 'cgv-data', 'morphology');
+const cgvDataInterlinears = path.resolve(__dirname, '..', '..', 'cgv-data', 'interlinears');
 const bundledBibles = fs.existsSync(cgvDataBibles)
   ? cgvDataBibles
   : path.resolve(__dirname, 'bibles');
+const bundledMorphology = fs.existsSync(path.join(cgvDataMorphology, 'MorphGNT'))
+  ? cgvDataMorphology
+  : "";
+const bundledInterlinears = fs.existsSync(path.join(cgvDataInterlinears, 'NT'))
+  ? cgvDataInterlinears
+  : "";
 
 module.exports = {
   packagerConfig: {
@@ -26,6 +34,8 @@ module.exports = {
     },
     extraResource: [
       bundledBibles,
+      ...(bundledMorphology ? [bundledMorphology] : []),
+      ...(bundledInterlinears ? [bundledInterlinears] : []),
       path.resolve(__dirname, 'courses', 'Romanos'),
       path.resolve(__dirname, 'songs'),
     ],

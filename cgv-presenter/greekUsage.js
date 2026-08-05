@@ -123,9 +123,12 @@ function resolveMorphGntDir(presenterRootDir) {
   const configured = process.env.CGV_DATA_PATH
     ? path.join(process.env.CGV_DATA_PATH, "morphology", "MorphGNT")
     : "";
+  const resourcesRoot = process.resourcesPath || "";
 
   return firstExistingDirectory([
     configured,
+    resourcesRoot ? path.join(resourcesRoot, "morphology", "MorphGNT") : "",
+    resourcesRoot ? path.join(resourcesRoot, "MorphGNT") : "",
     path.join(presenterRootDir, "..", "..", "cgv-data", "morphology", "MorphGNT"),
     path.join(presenterRootDir, "..", "MNA", "SOURCES", "MorphGNT"),
     path.join(presenterRootDir, "data", "MorphGNT")
@@ -136,12 +139,16 @@ function resolveBleInterlinearDir(presenterRootDir) {
   const configured = process.env.CGV_DATA_PATH
     ? path.join(process.env.CGV_DATA_PATH, "bibles", "BLE", "interlinear", "NT")
     : "";
+  const resourcesRoot = process.resourcesPath || "";
 
   return firstExistingDirectory([
     configured,
+    resourcesRoot ? path.join(resourcesRoot, "interlinears", "NT") : "",
+    resourcesRoot ? path.join(resourcesRoot, "ble-interlinear") : "",
     path.join(presenterRootDir, "..", "..", "cgv-data", "interlinears", "NT"),
     path.join(presenterRootDir, "..", "Biblia-BLE", "output", "interlinear", "NT"),
-    path.join(presenterRootDir, "..", "..", "cgv-data", "bibles", "BLE", "interlinear", "NT")
+    path.join(presenterRootDir, "..", "..", "cgv-data", "bibles", "BLE", "interlinear", "NT"),
+    path.join(presenterRootDir, "data", "ble-interlinear")
   ]);
 }
 

@@ -54,6 +54,12 @@ check("ἀναγεννήσας → Spanish + same morphology", () => {
   assert.strictEqual(usage.occurrences.length, 1);
 });
 
+check("ὅ resolves in MorphGNT index", () => {
+  const usage = lookupGreekUsage("ὅ", { presenterRootDir: root });
+  assert.ok(usage, "ὅ lookup failed — MorphGNT missing or form absent");
+  assert.ok(usage.spanishLabel, "missing spanishLabel for ὅ");
+});
+
 check("high-frequency forms are capped at 12", () => {
   const usage = lookupGreekUsage("θεοῦ", { presenterRootDir: root });
   assert.ok(usage);
