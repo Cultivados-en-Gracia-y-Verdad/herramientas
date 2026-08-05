@@ -373,7 +373,8 @@ body.song-mode {
 }
 
 .director-content .greek-usage-hit,
-.director-content .bible-popup mark.greek-usage-hit {
+.director-content .bible-popup mark.greek-usage-hit,
+.director-content .bible-popup mark.bible-clause-hit {
   background: rgba(250, 204, 21, 0.45);
   color: inherit;
   border-radius: 0.15em;

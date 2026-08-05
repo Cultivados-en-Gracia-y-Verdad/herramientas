@@ -4,6 +4,10 @@ const https = require("https");
 const path = require("path");
 const { app, BrowserWindow, screen, Menu, dialog, shell } = require("electron");
 
+// Squirrel install/update/uninstall must run before Express binds the LAN port.
+const squirrelHandled = process.platform === "win32"
+  && require("./windowsSquirrel").handleSquirrelEvent(app);
+
 const APP_URL = "http://localhost:3000";
 const RELEASES_URL = "https://github.com/Cultivados-en-Gracia-y-Verdad/herramientas/releases";
 const LATEST_RELEASE_API_URL = "https://api.github.com/repos/Cultivados-en-Gracia-y-Verdad/herramientas/releases/latest";
@@ -15,7 +19,11 @@ app.setName("CGV Presenter");
 process.env.ROOTS_RUNTIME_DATA_DIR = app.getPath("userData");
 process.env.ROOTS_DEFAULT_COURSE_LIBRARY_DIR = DEFAULT_COURSE_LIBRARY_DIR;
 
-const { serverEvents, broadcastProjectorFrame } = require("./server");
+let serverEvents = { on() {} };
+let broadcastProjectorFrame = () => {};
+if (!squirrelHandled) {
+  ({ serverEvents, broadcastProjectorFrame } = require("./server"));
+}
 
 let presenterWindow;
 let projectorWindow;
@@ -104,6 +112,11 @@ const MAIN_TRANSLATIONS = {
     downloadSongs: "Descargar canciones de GitHub",
     controller: "Control",
     connectionQr: "Código QR de conexión",
+    allowWindowsFirewall: "Permitir acceso en Firewall de Windows...",
+    allowWindowsFirewallTitle: "Firewall de Windows",
+    allowWindowsFirewallDone: "CGV Presenter ya puede recibir conexiones en la red local (puerto 3000).\n\nSi Windows pidió permiso de administrador, acéptalo para aplicar la regla.",
+    allowWindowsFirewallFailed: "No se pudo actualizar el Firewall de Windows.\n\nAbre Seguridad de Windows → Firewall → Permitir una aplicación, o permite TCP puerto 3000 para CGV Presenter.",
+    allowWindowsFirewallSkipped: "Esta opción solo aplica en Windows.",
     stageView: "Vista de escenario",
     director: "Director",
     file: "Archivo",
@@ -209,6 +222,11 @@ MAIN_TRANSLATIONS.en = {
   downloadSongs: "Download Songs from GitHub",
   controller: "Controller",
   connectionQr: "Connection QR",
+  allowWindowsFirewall: "Allow Windows Firewall access...",
+  allowWindowsFirewallTitle: "Windows Firewall",
+  allowWindowsFirewallDone: "CGV Presenter can now accept local-network connections (port 3000).\n\nIf Windows asked for administrator permission, accept it to apply the rule.",
+  allowWindowsFirewallFailed: "Could not update Windows Firewall.\n\nOpen Windows Security → Firewall → Allow an app, or allow TCP port 3000 for CGV Presenter.",
+  allowWindowsFirewallSkipped: "This option only applies on Windows.",
   stageView: "Stage View",
   director: "Director",
   file: "File",
@@ -1095,6 +1113,34 @@ function openConnectionWindow() {
   });
 }
 
+async function allowWindowsFirewallAccess() {
+  if (process.platform !== "win32") {
+    dialog.showMessageBox({
+      type: "info",
+      title: mt("allowWindowsFirewallTitle"),
+      message: mt("allowWindowsFirewallSkipped")
+    });
+    return;
+  }
+
+  const { ensureLanPortRule } = require("./windowsFirewall");
+  const result = await ensureLanPortRule({ elevateIfNeeded: true });
+  if (result.ok) {
+    dialog.showMessageBox({
+      type: "info",
+      title: mt("allowWindowsFirewallTitle"),
+      message: mt("allowWindowsFirewallDone")
+    });
+    return;
+  }
+
+  dialog.showMessageBox({
+    type: "warning",
+    title: mt("allowWindowsFirewallTitle"),
+    message: mt("allowWindowsFirewallFailed")
+  });
+}
+
 function openStageWindow() {
   if (stageWindow && !stageWindow.isDestroyed()) {
     stageWindow.focus();
@@ -1313,6 +1359,12 @@ function createMenu() {
           accelerator: "CmdOrCtrl+Shift+Q",
           click: openConnectionWindow
         },
+        ...(process.platform === "win32"
+          ? [{
+            label: mt("allowWindowsFirewall"),
+            click: allowWindowsFirewallAccess
+          }]
+          : []),
         {
           label: mt(audienceQrMenuVisible ? "hideAudienceQrOnMainScreen" : "showAudienceQrOnMainScreen"),
           click: toggleAudienceQrOnMainScreen
@@ -1695,12 +1747,25 @@ async function createWindows() {
   setTimeout(showFirstRunSetup, 900);
 }
 
-app.whenReady().then(() => {
-  installTextEditingContextMenu();
-  createWindows();
-});
+if (!squirrelHandled) {
+  app.whenReady().then(async () => {
+    installTextEditingContextMenu();
+    if (process.platform === "win32") {
+      // Soft ensure: if install elevation was skipped, prompt once on first launch.
+      const { firewallRuleExists, ensureLanPortRule } = require("./windowsFirewall");
+      try {
+        if (!(await firewallRuleExists())) {
+          await ensureLanPortRule({ elevateIfNeeded: true });
+        }
+      } catch {
+        // User may cancel UAC; menu item remains available.
+      }
+    }
+    createWindows();
+  });
 
-app.on("window-all-closed", () => {
-  if (switchingMode) return;
-  app.quit();
-});
+  app.on("window-all-closed", () => {
+    if (switchingMode) return;
+    app.quit();
+  });
+}

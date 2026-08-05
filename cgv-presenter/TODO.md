@@ -1,11 +1,12 @@
 # CGV Presenter — TODO
 
-Backlog for the `cgv-presenter` app. Current release: **1.2.2**.
+Backlog for the `cgv-presenter` app. Current release: **1.2.7**.
 
 ## Distribution
 
 - [ ] **macOS notarization** — Signed builds still trigger “app is damaged” on first open for many users. Notarize with Apple and staple the ticket so Gatekeeper accepts normal double-click launch.
 - [ ] **Attach Windows build automatically** — CI builds the `.exe` on tag push, but uploading it to the GitHub release is still manual. Wire the workflow to attach `CGV.Presenter-*-Setup.exe` when a release is published.
+- [x] **Windows Firewall LAN rule** — Squirrel install/update adds inbound TCP 3000 (`CGV Presenter LAN`); uninstall removes it. View menu has a manual “Allow Windows Firewall access…” recovery action.
 
 ## Stability & performance
 

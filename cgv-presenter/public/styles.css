@@ -1447,6 +1447,11 @@ blockquote.scripture-quote em {
   font-weight: 500;
 }
 
+.greek-translation-option-sep {
+  color: var(--muted, #64748b);
+  font-weight: 500;
+}
+
 .greek-translation-list b {
   font-weight: 700;
 }
@@ -1542,7 +1547,9 @@ blockquote.scripture-quote em {
 
 .greek-usage-hit,
 .bible-popup mark.greek-usage-hit,
-.shared-popup-overlay mark.greek-usage-hit {
+.shared-popup-overlay mark.greek-usage-hit,
+.bible-popup mark.bible-clause-hit,
+.shared-popup-overlay mark.bible-clause-hit {
   background: color-mix(in srgb, var(--popup-accent, #0e7490) 28%, #fde68a 72%);
   color: inherit;
   border-radius: 0.18em;

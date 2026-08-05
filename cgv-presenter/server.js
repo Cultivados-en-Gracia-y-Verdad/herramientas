@@ -2026,14 +2026,67 @@ function normalizeBibleReferenceKey(value) {
     .trim();
 }
 
-function buildBibleReferencePopup(displayReference, verses) {
+function isClauseBoundaryWord(token) {
+  const bare = String(token || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/gu, "")
+    .replace(/^[,.;:!?¡¿«»"'“”]+|[,.;:!?¡¿«»"'“”]+$/gu, "")
+    .toLowerCase();
+  return /^(que|quien|quienes|cual|cuales|donde|cuando|porque|pues|aunque|si|para)$/u.test(bare)
+    || /[:;]$/u.test(String(token || ""));
+}
+
+function highlightVerseClause(text, finiteWord) {
+  const finite = Number(finiteWord);
+  if (!Number.isFinite(finite) || finite < 1) return escapeHtml(text);
+
+  const tokens = String(text || "").match(/\S+|\s+/gu) || [];
+  const wordIndexes = [];
+  tokens.forEach((token, index) => {
+    if (!/^\s+$/u.test(token)) wordIndexes.push(index);
+  });
+  if (!wordIndexes.length) return escapeHtml(text);
+
+  const finitePos = Math.min(Math.max(finite, 1), wordIndexes.length) - 1;
+
+  let startPos = finitePos;
+  while (startPos > 0) {
+    const prevToken = tokens[wordIndexes[startPos - 1]];
+    if (isClauseBoundaryWord(prevToken)) break;
+    startPos -= 1;
+  }
+
+  let endPos = finitePos;
+  while (endPos + 1 < wordIndexes.length) {
+    const nextToken = tokens[wordIndexes[endPos + 1]];
+    if (isClauseBoundaryWord(nextToken)) break;
+    endPos += 1;
+  }
+
+  const startTokenIndex = wordIndexes[startPos];
+  const endTokenIndex = wordIndexes[endPos];
+  let html = "";
+  for (let index = 0; index < tokens.length; index += 1) {
+    const token = tokens[index];
+    if (index === startTokenIndex) html += '<mark class="bible-clause-hit">';
+    html += escapeHtml(token);
+    if (index === endTokenIndex) html += "</mark>";
+  }
+  return html;
+}
+
+function buildBibleReferencePopup(displayReference, verses, options = {}) {
   const normalizedDisplay = escapeHtml(displayReference);
   const popupTitle = escapeHtml(normalizeBibleReferenceKey(displayReference));
   const verseCount = verses.length;
+  const startWord = Number(options.startWord) || 0;
   const popupText = verses
     .map((reference, index) => {
       const verseReference = `${reference.book} ${reference.chapter}:${reference.verse}`;
-      return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(verseReference)}</strong> ${escapeHtml(reference.text)}</span>`;
+      const textHtml = startWord && index === 0
+        ? highlightVerseClause(reference.text, startWord)
+        : escapeHtml(reference.text);
+      return `<span class="bible-popup-verse" data-verse-index="${index}"${index === 0 ? " data-active=\"true\"" : ""}><strong>${escapeHtml(verseReference)}</strong> ${textHtml}</span>`;
     })
     .join("");
 
@@ -2045,7 +2098,7 @@ function buildBibleReferencePopup(displayReference, verses) {
       </span>`
     : "";
 
-  return `<span class="bible-ref" tabindex="0" role="button" data-reference="${popupTitle}" data-verse-count="${verseCount}">${normalizedDisplay}<span class="bible-popup">${popupText}${nav}</span></span>`;
+  return `<span class="bible-ref" tabindex="0" role="button" data-reference="${popupTitle}" data-verse-count="${verseCount}"${startWord ? ` data-start-word="${startWord}"` : ""}>${normalizedDisplay}<span class="bible-popup">${popupText}${nav}</span></span>`;
 }
 
 function parseReferenceParts(book, referenceList) {
@@ -2053,10 +2106,24 @@ function parseReferenceParts(book, referenceList) {
   let currentChapter = null;
 
   referenceList.split(/\s*(?:,|\by\b)\s*/i).forEach(part => {
+    const clauseIdMatch = part.match(/^(\d{1,3}):(\d{1,3}):(\d{1,3})$/);
     const crossChapterRangeMatch = part.match(/^(\d{1,3}):(\d{1,3})(?:[-–](\d{1,3}):(\d{1,3}))$/);
     const chapterVerseMatch = part.match(/^(\d{1,3}):(\d{1,3})(?:[-–](\d{1,3}))?$/);
     const chapterRangeMatch = part.match(/^(\d{1,3})(?:[-–](\d{1,3}))$/);
     const verseOnlyMatch = part.match(/^(\d{1,3})(?:[-–](\d{1,3}))?$/);
+
+    if (clauseIdMatch) {
+      currentChapter = Number(clauseIdMatch[1]);
+      references.push({
+        type: "clause",
+        book,
+        chapter: currentChapter,
+        startVerse: Number(clauseIdMatch[2]),
+        endVerse: Number(clauseIdMatch[2]),
+        startWord: Number(clauseIdMatch[3])
+      });
+      return;
+    }
 
     if (crossChapterRangeMatch) {
       currentChapter = Number(crossChapterRangeMatch[1]);
@@ -2121,7 +2188,18 @@ function parseReferenceParts(book, referenceList) {
 }
 
 function buildBibleReferenceListMarkup(displayReference, book, referenceList) {
+  let startWord = 0;
   const verses = parseReferenceParts(book, referenceList).flatMap(reference => {
+    if (reference.type === "clause") {
+      startWord = Number(reference.startWord) || 0;
+      return getReferenceVerses(
+        reference.book,
+        reference.chapter,
+        reference.startVerse,
+        reference.endVerse
+      );
+    }
+
     if (reference.type === "chapter") {
       return getChapterVerses(reference.book, reference.chapter);
     }
@@ -2155,15 +2233,17 @@ function buildBibleReferenceListMarkup(displayReference, book, referenceList) {
   });
 
   if (!verses.length) return displayReference;
-  return buildBibleReferencePopup(displayReference, verses);
+  return buildBibleReferencePopup(displayReference, verses, { startWord });
 }
 
 function enrichBibleReferences(markdownLine) {
   if (!bibleBookPatterns.length) return markdownLine;
 
   const bookPattern = bibleBookPatterns.map(escapeRegExp).join("|");
+  // Allow CGV clause-ids (1:5:2) as well as normal verse/ranges (1:5, 1:5-10, 1:5–2:3).
+  const referenceAtom = String.raw`\d{1,3}(?::\d{1,3}(?::\d{1,3})?)?(?:[-–](?:(?:\d{1,3}:)?\d{1,3}))?`;
   const referencePattern = new RegExp(
-    `\\b(${bookPattern})\\s+((?:\\d{1,3}(?::\\d{1,3})?(?:[-–](?:(?:\\d{1,3}:)?\\d{1,3}))?)(?:\\s*(?:,|y)\\s*(?:(?:\\d{1,3}:)?\\d{1,3})(?:[-–](?:(?:\\d{1,3}:)?\\d{1,3}))?)*)`,
+    `\\b(${bookPattern})\\s+((?:${referenceAtom})(?:\\s*(?:,|y)\\s*(?:${referenceAtom}))*)`,
     "gi"
   );
 
@@ -2523,7 +2603,7 @@ function normalizeSpanishLabelKey(value) {
     .trim();
 }
 
-function pickMajoritySpanishLabel(labels = []) {
+function pickTopSpanishLabels(labels = [], max = 4) {
   const counts = new Map();
   for (const raw of labels) {
     const label = String(raw || "").trim();
@@ -2535,34 +2615,59 @@ function pickMajoritySpanishLabel(labels = []) {
     counts.set(key, current);
   }
 
-  let best = null;
-  for (const entry of counts.values()) {
-    if (
-      !best
-      || entry.count > best.count
-      || (entry.count === best.count && entry.label.length < best.label.length)
-    ) {
-      best = entry;
-    }
-  }
-  return best?.label || "";
+  return [...counts.values()]
+    .sort((a, b) => {
+      if (b.count !== a.count) return b.count - a.count;
+      return a.label.length - b.label.length;
+    })
+    .slice(0, Math.max(1, max))
+    .map(entry => entry.label);
 }
 
-function pickNblaTranslationLabel(usage) {
-  const bleLabel = String(usage?.spanishLabel || "").trim();
-  const glossHints = [];
-  for (const occurrence of usage?.occurrences || []) {
-    const gloss = String(occurrence.gloss || "").trim();
-    if (gloss) glossHints.push(gloss);
+function cleanTranslationGlossLabel(gloss) {
+  return String(gloss || "")
+    .replace(/[•·]/gu, " ")
+    .replace(/^(de|del|la|el|los|las|un|una)\s+/iu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function collectBleTranslationLabels(usage) {
+  const labels = [];
+  for (const sample of usage?.translationSamples || []) {
+    const cleaned = cleanTranslationGlossLabel(sample.gloss);
+    if (cleaned) labels.push(cleaned);
   }
-  if (bleLabel) glossHints.push(bleLabel);
+  for (const occurrence of usage?.occurrences || []) {
+    const marked = extractFirstMarkedText(occurrence.spanishHtml);
+    const cleaned = cleanTranslationGlossLabel(occurrence.gloss);
+    if (marked) labels.push(marked);
+    if (cleaned) labels.push(cleaned);
+  }
+  const fallback = String(usage?.spanishLabel || "").trim();
+  if (fallback) labels.push(fallback);
+  return pickTopSpanishLabels(labels, 4);
+}
+
+function collectNblaTranslationLabels(usage) {
+  const bleLabels = collectBleTranslationLabels(usage);
+  const glossHints = [
+    ...bleLabels,
+    ...(usage?.translationHints || []),
+    ...(usage?.translationSamples || []).map(sample => sample.gloss),
+    ...(usage?.occurrences || []).map(occurrence => occurrence.gloss)
+  ].filter(Boolean);
+
+  const samples = (usage?.translationSamples || []).length
+    ? usage.translationSamples
+    : (usage?.occurrences || []);
 
   const nblaLabels = [];
-  for (const occurrence of usage?.occurrences || []) {
+  for (const sample of samples) {
     const { text } = lookupSpanishVerseByVersion(
-      occurrence.book,
-      occurrence.chapter,
-      occurrence.verse,
+      sample.book,
+      sample.chapter,
+      sample.verse,
       "NBLA"
     );
     if (!text) continue;
@@ -2570,9 +2675,9 @@ function pickNblaTranslationLabel(usage) {
     const html = highlightSpanishInVerse(
       text,
       [
-        bleLabel,
-        occurrence.gloss,
-        String(occurrence.gloss || "").replace(/[•·]/gu, " ").split(/\s+/u).pop(),
+        ...bleLabels,
+        sample.gloss,
+        cleanTranslationGlossLabel(sample.gloss).split(/\s+/u).pop(),
         ...glossHints
       ].filter(Boolean)
     );
@@ -2580,30 +2685,23 @@ function pickNblaTranslationLabel(usage) {
     if (marked) nblaLabels.push(marked);
   }
 
-  return pickMajoritySpanishLabel(nblaLabels);
+  return pickTopSpanishLabels(nblaLabels, 4);
+}
+
+function formatGreekTranslationLabels(labels = []) {
+  return labels.map(item => `<b>${escapeHtml(item)}</b>`).join('<span class="greek-translation-option-sep"> · </span>');
 }
 
 function buildGreekTranslationSummary(usage) {
-  const bleLabel = String(usage?.spanishLabel || "").trim()
-    || pickMajoritySpanishLabel(
-      (usage?.occurrences || []).map(occurrence => {
-        const marked = extractFirstMarkedText(occurrence.spanishHtml);
-        const fallbackGloss = String(occurrence.gloss || "")
-          .replace(/[•·]/gu, " ")
-          .replace(/^(de|del|la|el|los|las|un|una)\s+/iu, "")
-          .replace(/\s+/gu, " ")
-          .trim();
-        return marked || fallbackGloss;
-      })
-    );
-  const nblaLabel = pickNblaTranslationLabel(usage);
+  const bleLabels = collectBleTranslationLabels(usage);
+  const nblaLabels = collectNblaTranslationLabels(usage);
 
   const parts = [];
-  if (bleLabel) {
-    parts.push(`<span class="greek-translation-version"><span class="greek-translation-label">BLE</span> <b>${escapeHtml(bleLabel)}</b></span>`);
+  if (bleLabels.length) {
+    parts.push(`<span class="greek-translation-version"><span class="greek-translation-label">BLE</span> ${formatGreekTranslationLabels(bleLabels)}</span>`);
   }
-  if (nblaLabel) {
-    parts.push(`<span class="greek-translation-version"><span class="greek-translation-label">NBLA</span> <b>${escapeHtml(nblaLabel)}</b></span>`);
+  if (nblaLabels.length) {
+    parts.push(`<span class="greek-translation-version"><span class="greek-translation-label">NBLA</span> ${formatGreekTranslationLabels(nblaLabels)}</span>`);
   }
   if (!parts.length) return "";
 
