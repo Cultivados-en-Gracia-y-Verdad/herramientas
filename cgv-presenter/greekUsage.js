@@ -99,11 +99,13 @@ let indexState = {
   loaded: false,
   morphDir: "",
   bleDir: "",
+  lbfDir: "",
   surfaceToLemma: new Map(),
   lemmaRows: new Map(),
   verseRows: new Map(),
   bleGlossByVerseForm: new Map(),
-  bleGlossByVerseLemma: new Map()
+  bleGlossByVerseLemma: new Map(),
+  lbfGlossByVerseForm: new Map()
 };
 
 function firstExistingDirectory(candidates) {
@@ -150,6 +152,27 @@ function resolveBleInterlinearDir(presenterRootDir) {
     path.join(presenterRootDir, "..", "Biblia-BLE", "output", "interlinear", "NT"),
     path.join(presenterRootDir, "..", "..", "cgv-data", "bibles", "BLE", "interlinear", "NT"),
     path.join(presenterRootDir, "data", "ble-interlinear")
+  ]);
+}
+
+// LBF is the human-approved, fluent translation — cgv-reader/data/lbf is its
+// source of truth (see cgv-product-suite-spec.md's Compiler architecture).
+// Each {book}.alignment.json there maps individual Greek tokens straight to
+// their LBF word, per verse — a real per-token lookup, not the fuzzy
+// highlight-and-extract cgv-presenter has to do for NBLA (which has no such
+// alignment). Only a handful of books have one compiled so far; lookup
+// degrades gracefully (empty) for the rest.
+function resolveLbfAlignmentDir(presenterRootDir) {
+  const configured = process.env.CGV_DATA_PATH
+    ? path.join(process.env.CGV_DATA_PATH, "..", "cgv-reader", "data", "lbf")
+    : "";
+  const resourcesRoot = process.resourcesPath || "";
+
+  return firstExistingDirectory([
+    configured,
+    resourcesRoot ? path.join(resourcesRoot, "lbf-alignment") : "",
+    path.join(presenterRootDir, "..", "..", "cgv-reader", "data", "lbf"),
+    path.join(presenterRootDir, "data", "lbf-alignment")
   ]);
 }
 
@@ -511,6 +534,46 @@ function lookupBleGloss(bookCode, chapter, verse, surfaceForm, lemma) {
   }
   const lemmaKey = `${book}|${Number(chapter)}|${Number(verse)}|${normalizeGreek(lemma)}`;
   return indexState.bleGlossByVerseLemma.get(lemmaKey) || "";
+}
+
+function loadLbfAlignmentIndex(presenterRootDir) {
+  const lbfDir = resolveLbfAlignmentDir(presenterRootDir);
+  indexState.lbfDir = lbfDir;
+  if (!lbfDir) return;
+
+  for (const testament of ["nt", "ot"]) {
+    const dir = path.join(lbfDir, testament);
+    let files = [];
+    try {
+      files = fs.readdirSync(dir).filter(name => name.endsWith(".alignment.json"));
+    } catch {
+      continue;
+    }
+
+    for (const file of files) {
+      const book = file.replace(/\.alignment\.json$/u, "");
+      let payload;
+      try {
+        payload = JSON.parse(fs.readFileSync(path.join(dir, file), "utf8"));
+      } catch {
+        continue;
+      }
+      for (const record of payload?.records || []) {
+        if (!record?.greekSurface || !record?.lbfSurface) continue;
+        const key = `${book}|${Number(record.chapter)}|${Number(record.verse)}|${normalizeGreek(record.greekSurface)}`;
+        if (!indexState.lbfGlossByVerseForm.has(key)) {
+          indexState.lbfGlossByVerseForm.set(key, record.lbfSurface);
+        }
+      }
+    }
+  }
+}
+
+function lookupLbfGloss(bookCode, chapter, verse, surfaceForm) {
+  const book = BOOK_SLUGS[bookCode];
+  if (!book) return "";
+  const formKey = `${book}|${Number(chapter)}|${Number(verse)}|${normalizeGreek(surfaceForm)}`;
+  return indexState.lbfGlossByVerseForm.get(formKey) || "";
 }
 
 function parseMorphLine(line) {

@@ -5,12 +5,41 @@ function todayIsoDate() {
   return new Date().toLocaleDateString("en-CA", { timeZone: "America/La_Paz" });
 }
 
-function normalizeStrongs(value = "") {
+function hasHebrewScript(value = "") {
+  return /[\u0590-\u05FF]/u.test(String(value || ""));
+}
+
+/**
+ * Normalize Strong's ids for Greek (G) and Hebrew/Aramaic (H).
+ * Bare digits default to G unless language is hebrew/aramaic or the lemma/surface is Hebrew script.
+ */
+export function normalizeStrongs(value = "", { language = "", lemma = "", surface = "" } = {}) {
   const raw = String(value || "").trim().toUpperCase();
   if (!raw) return "";
-  if (/^G\d+$/.test(raw)) return raw;
-  if (/^\d+$/.test(raw)) return `G${raw}`;
+  const prefixed = raw.match(/^([GHA])(\d+)/);
+  if (prefixed) return `${prefixed[1]}${prefixed[2]}`;
+  if (/^\d+$/.test(raw)) {
+    const lang = String(language || "").toLowerCase();
+    const hebrewish = lang === "hebrew" || lang === "aramaic" || lang === "he" || lang === "arc"
+      || hasHebrewScript(lemma)
+      || hasHebrewScript(surface);
+    return `${hebrewish ? "H" : "G"}${raw}`;
+  }
   return raw;
+}
+
+export function languageFromStrongs(strongs = "", fallback = "") {
+  const normalized = String(strongs || "").trim().toUpperCase();
+  if (normalized.startsWith("H") || normalized.startsWith("A")) return "hebrew";
+  if (normalized.startsWith("G")) return "greek";
+  return fallback || "";
+}
+
+function sourceLanguageLabel(language = "") {
+  if (language === "hebrew" || language === "aramaic" || language === "he" || language === "arc") {
+    return "Hebrew/Aramaic";
+  }
+  return "Greek";
 }
 
 function bookFromReference(reference = "") {
@@ -35,7 +64,9 @@ function parseDecisionVersions(markdown) {
     }
     return {
       lemma: fields.lemma || "",
-      strongs: normalizeStrongs(fields["strong's"] || fields.strongs || ""),
+      strongs: normalizeStrongs(fields["strong's"] || fields.strongs || "", {
+        lemma: fields.lemma || ""
+      }),
       status: fields.status || ""
     };
   });
@@ -44,6 +75,13 @@ function parseDecisionVersions(markdown) {
 function readPrimarySubject(readme = "") {
   const match = String(readme).match(/## Primary Subject\s*\n+([^\n]+)/);
   return (match?.[1] || "").trim();
+}
+
+function parsePrimarySubject(primary = "") {
+  const text = String(primary || "").trim();
+  const strongs = normalizeStrongs((text.match(/\b[GHA]\d+\b/i) || [])[0] || "");
+  const lemma = text.replace(/^[GHA]\d+\s*[—-]\s*/iu, "").trim();
+  return { strongs, lemma };
 }
 
 export async function listInvestigationIds(investigationsDir) {
@@ -60,9 +98,9 @@ export async function allocateNextInvestigationId(investigationsDir) {
   return `INV-${String(next).padStart(4, "0")}`;
 }
 
-export async function findInvestigationByLemma(investigationsDir, { lemma = "", strongs = "" } = {}) {
+export async function findInvestigationByLemma(investigationsDir, { lemma = "", strongs = "", language = "" } = {}) {
   const targetLemma = String(lemma || "").trim();
-  const targetStrongs = normalizeStrongs(strongs);
+  const targetStrongs = normalizeStrongs(strongs, { language, lemma });
   if (!targetLemma && !targetStrongs) return null;
 
   const ids = await listInvestigationIds(investigationsDir);
@@ -73,20 +111,18 @@ export async function findInvestigationByLemma(investigationsDir, { lemma = "", 
       readFile(join(dir, "README.md"), "utf8").catch(() => "")
     ]);
     const latest = parseDecisionVersions(decisionMd).at(-1);
-    const primary = readPrimarySubject(readme);
-    const primaryStrongs = normalizeStrongs((primary.match(/\bG\d+\b/) || [])[0] || "");
-    const primaryLemma = primary.replace(/^G\d+\s*[—-]\s*/u, "").trim();
+    const primary = parsePrimarySubject(readPrimarySubject(readme));
 
     const strongsMatch = targetStrongs
-      && (latest?.strongs === targetStrongs || primaryStrongs === targetStrongs);
+      && (latest?.strongs === targetStrongs || primary.strongs === targetStrongs);
     const lemmaMatch = targetLemma
-      && (latest?.lemma === targetLemma || primaryLemma === targetLemma);
+      && (latest?.lemma === targetLemma || primary.lemma === targetLemma);
 
     if (strongsMatch || lemmaMatch) {
       return {
         id,
-        lemma: latest?.lemma || primaryLemma || targetLemma,
-        strongs: latest?.strongs || primaryStrongs || targetStrongs,
+        lemma: latest?.lemma || primary.lemma || targetLemma,
+        strongs: latest?.strongs || primary.strongs || targetStrongs,
         status: latest?.status || "Draft"
       };
     }
@@ -103,13 +139,15 @@ function buildScaffold({
   clause,
   surface,
   ble,
-  book
+  book,
+  language
 }) {
   const date = todayIsoDate();
   const number = id.replace(/^INV-/u, "");
   const subject = [strongs, lemma].filter(Boolean).join(" — ") || lemma;
   const clauseText = clause || surface || lemma;
   const bleNote = ble || "—";
+  const languageLabel = sourceLanguageLabel(language);
 
   const readme = `# Investigation ${number}
 
@@ -135,7 +173,7 @@ ${clauseText}
 
 ## Why this investigation exists
 
-Translation paused because the translator chose to investigate the Greek lemma ${lemma}${strongs ? ` (${strongs})` : ""}.
+Translation paused because the translator chose to investigate the ${languageLabel} lemma ${lemma}${strongs ? ` (${strongs})` : ""}.
 
 ---
 
@@ -182,7 +220,7 @@ Questions belong in \`questions.md\`.
 
 ---
 
-## Origin Text
+## Origin Clause
 
 ${reference}
 
@@ -198,7 +236,7 @@ The investigation originates from ${reference}.
 
 ### O-002
 
-The current BLE provisional rendering is ${bleNote}.
+The current provisional rendering is ${bleNote}.
 `;
 
   const decision = `# Decision
@@ -224,7 +262,7 @@ Investigation opened; decision not yet made.
 
 ### Q-001
 
-Does ${lemma} require an LBF decision beyond the provisional BLE rendering?
+Does ${lemma} require an LBF decision beyond the provisional rendering?
 `;
 
   const evidence = `# Evidence
@@ -285,20 +323,35 @@ Additional evidence may be added as the investigation requires.
  * Create a new investigation folder from a lemma, or return an existing match.
  */
 export async function createInvestigationFromLemma(rootDir, body = {}) {
-  const lemma = String(body.lemma || "").trim();
-  if (!lemma) {
+  const surface = String(body.surface || "").trim();
+  const rawLemma = String(body.lemma || "").trim();
+  if (!rawLemma && !surface) {
     throw new Error("lemma is required");
   }
 
-  const strongs = normalizeStrongs(body.strongs);
+  const languageHint = String(body.language || "").trim().toLowerCase()
+    || languageFromStrongs(body.strongs)
+    || (hasHebrewScript(rawLemma) || hasHebrewScript(surface) ? "hebrew" : "greek");
+
+  const strongs = normalizeStrongs(body.strongs, {
+    language: languageHint,
+    lemma: rawLemma,
+    surface
+  });
+  const language = languageFromStrongs(strongs, languageHint);
+
+  // Prefer Hebrew surface as the human-facing lemma when OSHB only gave a number/code.
+  const lemma = language === "hebrew" && surface && (/^[\d/ a]+$/u.test(rawLemma) || !rawLemma)
+    ? surface
+    : (rawLemma || surface);
+
   const reference = String(body.reference || "").trim() || "Titus 1:1";
   const clause = String(body.clause || "").trim();
-  const surface = String(body.surface || "").trim();
   const ble = String(body.ble || body.rendering || "").trim();
   const book = String(body.book || "").trim() || bookFromReference(reference);
   const investigationsDir = join(rootDir, "investigations");
 
-  const existing = await findInvestigationByLemma(investigationsDir, { lemma, strongs });
+  const existing = await findInvestigationByLemma(investigationsDir, { lemma, strongs, language });
   if (existing && body.force !== true) {
     return {
       created: false,
@@ -306,6 +359,7 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
       id: existing.id,
       lemma: existing.lemma || lemma,
       strongs: existing.strongs || strongs,
+      language,
       status: existing.status || "Draft"
     };
   }
@@ -320,7 +374,8 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
     clause,
     surface,
     ble,
-    book
+    book,
+    language
   });
 
   await mkdir(join(investigationDir, "evidence"), { recursive: true });
@@ -335,6 +390,7 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
     id,
     lemma,
     strongs,
+    language,
     status: "Draft",
     reference
   };

@@ -1,0 +1,1137 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+  created_at: '2026-08-09T18:22:27.567540+00:00'
+  batch_size: 10
+  source_queue_artifacts:
+    spine:
+      path: /Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/translations/oshb-spine/daniel/daniel-oshb-spine.json
+      checksum_sha256: 40f53bf5f46fad84e28d796b3b3b7527f8420d47707af311a5959993dd8592c6
+    phrases:
+      path: /Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/translations/oshb-spine/daniel/daniel-phrases.json
+      checksum_sha256: fd72df728f641a53e38e821c8ae0edccb936e2d3fdbb5082a2b12490a40b819a
+review_instructions: Review each Spanish phrase against the supplied source-token
+  evidence. Use APPROVED only when the phrase is defensible and complete. Use NEEDS_REVISION
+  when correction is required, REJECTED for unusable output, and ESCALATE when judgment
+  requires a stronger specialist/human decision.
+items:
+- id: G0A-0001
+  reference: Daniel 1:2
+  mt_reference: Daniel 1:2
+  spanish: Y el Señor entregó en su mano a Joacim, rey de Judá, y parte de los utensilios
+    de la casa de Dios; y los llevó a la tierra de Sinar, a la casa de su dios, y
+    los utensilios llevó a la casa del tesoro de su dios.
+  source_tokens:
+  - sourceTokenId: h27001002001
+    surface: וַ/יִּתֵּן֩
+    lang: he
+    lemma: c/5414
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001002002
+    surface: אֲדֹנָ֨/י
+    lang: he
+    lemma: '136'
+    morph: HNcmpc/Sp1cs
+    gloss: null
+  - sourceTokenId: h27001002003
+    surface: בְּ/יָד֜/וֹ
+    lang: he
+    lemma: b/3027
+    morph: HR/Ncbsc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27001002004
+    surface: אֶת
+    lang: he
+    lemma: '853'
+    morph: HTo
+    gloss: null
+  - sourceTokenId: h27001002005
+    surface: יְהוֹיָקִ֣ים
+    lang: he
+    lemma: '3079'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001002006
+    surface: מֶֽלֶךְ
+    lang: he
+    lemma: '4428'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001002007
+    surface: יְהוּדָ֗ה
+    lang: he
+    lemma: '3063'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001002008
+    surface: וּ/מִ/קְצָת֙
+    lang: he
+    lemma: c/m/7117
+    morph: HC/R/Ncfsc
+    gloss: null
+  - sourceTokenId: h27001002009
+    surface: כְּלֵ֣י
+    lang: he
+    lemma: '3627'
+    morph: HNcmpc
+    gloss: null
+  - sourceTokenId: h27001002010
+    surface: בֵית
+    lang: he
+    lemma: 1004 b
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001002011
+    surface: הָֽ/אֱלֹהִ֔ים
+    lang: he
+    lemma: d/430
+    morph: HTd/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001002012
+    surface: וַ/יְבִיאֵ֥/ם
+    lang: he
+    lemma: c/935
+    morph: HC/Vhw3ms/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001002013
+    surface: אֶֽרֶץ
+    lang: he
+    lemma: '776'
+    morph: HNcbsc
+    gloss: null
+  - sourceTokenId: h27001002014
+    surface: שִׁנְעָ֖ר
+    lang: he
+    lemma: '8152'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001002015
+    surface: בֵּ֣ית
+    lang: he
+    lemma: 1004 b
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001002016
+    surface: אֱלֹהָ֑י/ו
+    lang: he
+    lemma: '430'
+    morph: HNcmpc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27001002017
+    surface: וְ/אֶת
+    lang: he
+    lemma: c/853
+    morph: HC/To
+    gloss: null
+  - sourceTokenId: h27001002018
+    surface: הַ/כֵּלִ֣ים
+    lang: he
+    lemma: d/3627
+    morph: HTd/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001002019
+    surface: הֵבִ֔יא
+    lang: he
+    lemma: '935'
+    morph: HVhp3ms
+    gloss: null
+  - sourceTokenId: h27001002020
+    surface: בֵּ֖ית
+    lang: he
+    lemma: 1004 b
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001002021
+    surface: אוֹצַ֥ר
+    lang: he
+    lemma: '214'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001002022
+    surface: אֱלֹהָֽי/ו
+    lang: he
+    lemma: '430'
+    morph: HNcmpc/Sp3ms
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0002
+  reference: Daniel 1:3
+  mt_reference: Daniel 1:3
+  spanish: Y el rey dijo a Aspenaz, jefe de sus eunucos, que trajera de los hijos
+    de Israel y de la simiente real y de los nobles,
+  source_tokens:
+  - sourceTokenId: h27001003001
+    surface: וַ/יֹּ֣אמֶר
+    lang: he
+    lemma: c/559
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001003002
+    surface: הַ/מֶּ֔לֶךְ
+    lang: he
+    lemma: d/4428
+    morph: HTd/Ncmsa
+    gloss: null
+  - sourceTokenId: h27001003003
+    surface: לְ/אַשְׁפְּנַ֖ז
+    lang: he
+    lemma: l/828
+    morph: HR/Np
+    gloss: null
+  - sourceTokenId: h27001003004
+    surface: רַ֣ב
+    lang: he
+    lemma: 7227 b
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001003005
+    surface: סָרִיסָ֑י/ו
+    lang: he
+    lemma: '5631'
+    morph: HNcmpc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27001003006
+    surface: לְ/הָבִ֞יא
+    lang: he
+    lemma: l/935
+    morph: HR/Vhc
+    gloss: null
+  - sourceTokenId: h27001003007
+    surface: מִ/בְּנֵ֧י
+    lang: he
+    lemma: m/1121 a
+    morph: HR/Ncmpc
+    gloss: null
+  - sourceTokenId: h27001003008
+    surface: יִשְׂרָאֵ֛ל
+    lang: he
+    lemma: '3478'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001003009
+    surface: וּ/מִ/זֶּ֥רַע
+    lang: he
+    lemma: c/m/2233
+    morph: HC/R/Ncmsc
+    gloss: null
+  - sourceTokenId: h27001003010
+    surface: הַ/מְּלוּכָ֖ה
+    lang: he
+    lemma: d/4410
+    morph: HTd/Ncfsa
+    gloss: null
+  - sourceTokenId: h27001003011
+    surface: וּ/מִן
+    lang: he
+    lemma: c/4480 a
+    morph: HC/R
+    gloss: null
+  - sourceTokenId: h27001003012
+    surface: הַֽ/פַּרְתְּמִֽים
+    lang: he
+    lemma: d/6579
+    morph: HTd/Ncmpa
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0003
+  reference: Daniel 1:4
+  mt_reference: Daniel 1:4
+  spanish: jóvenes en los cuales no hubiera ninguna mancha, y de buena apariencia,
+    e inteligentes en toda sabiduría, y conocedores de conocimiento, e entendidos
+    en ciencia, y que tuvieran fuerza en ellos para estar en el palacio del rey, y
+    para enseñarles la escritura y la lengua de los caldeos.
+  source_tokens:
+  - sourceTokenId: h27001004001
+    surface: יְלָדִ֣ים
+    lang: he
+    lemma: '3206'
+    morph: HNcmpa
+    gloss: null
+  - sourceTokenId: h27001004002
+    surface: אֲשֶׁ֣ר
+    lang: he
+    lemma: 834 a
+    morph: HTr
+    gloss: null
+  - sourceTokenId: h27001004003
+    surface: אֵֽין
+    lang: he
+    lemma: '369'
+    morph: HTn
+    gloss: null
+  - sourceTokenId: h27001004004
+    surface: בָּ/הֶ֣ם
+    lang: he
+    lemma: b
+    morph: HR/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001004005
+    surface: כָּל
+    lang: he
+    lemma: '3605'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001004006
+    surface: מאום
+    lang: he
+    lemma: 3971 a
+    morph: HNcmsa
+    gloss: null
+  - sourceTokenId: h27001004007
+    surface: מוּם֩
+    lang: he
+    lemma: 3971 a
+    morph: HNcmsa
+    gloss: null
+  - sourceTokenId: h27001004008
+    surface: וְ/טוֹבֵ֨י
+    lang: he
+    lemma: c/2896 a
+    morph: HC/Aampc
+    gloss: null
+  - sourceTokenId: h27001004009
+    surface: מַרְאֶ֜ה
+    lang: he
+    lemma: '4758'
+    morph: HNcmsa
+    gloss: null
+  - sourceTokenId: h27001004010
+    surface: וּ/מַשְׂכִּילִ֣ים
+    lang: he
+    lemma: c/7919 a
+    morph: HC/Vhrmpa
+    gloss: null
+  - sourceTokenId: h27001004011
+    surface: בְּ/כָל
+    lang: he
+    lemma: b/3605
+    morph: HR/Ncmsc
+    gloss: null
+  - sourceTokenId: h27001004012
+    surface: חָכְמָ֗ה
+    lang: he
+    lemma: '2451'
+    morph: HNcfsa
+    gloss: null
+  - sourceTokenId: h27001004013
+    surface: וְ/יֹ֤דְעֵי
+    lang: he
+    lemma: c/3045
+    morph: HC/Vqrmpc
+    gloss: null
+  - sourceTokenId: h27001004014
+    surface: דַ֨עַת֙
+    lang: he
+    lemma: '1847'
+    morph: HNcfsa
+    gloss: null
+  - sourceTokenId: h27001004015
+    surface: וּ/מְבִינֵ֣י
+    lang: he
+    lemma: c/995
+    morph: HC/Vhrmpc
+    gloss: null
+  - sourceTokenId: h27001004016
+    surface: מַדָּ֔ע
+    lang: he
+    lemma: '4093'
+    morph: HNcmsa
+    gloss: null
+  - sourceTokenId: h27001004017
+    surface: וַ/אֲשֶׁר֙
+    lang: he
+    lemma: c/834 a
+    morph: HC/Tr
+    gloss: null
+  - sourceTokenId: h27001004018
+    surface: כֹּ֣חַ
+    lang: he
+    lemma: 3581 b
+    morph: HNcmsa
+    gloss: null
+  - sourceTokenId: h27001004019
+    surface: בָּ/הֶ֔ם
+    lang: he
+    lemma: b
+    morph: HR/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001004020
+    surface: לַ/עֲמֹ֖ד
+    lang: he
+    lemma: l/5975
+    morph: HR/Vqc
+    gloss: null
+  - sourceTokenId: h27001004021
+    surface: בְּ/הֵיכַ֣ל
+    lang: he
+    lemma: b/1964
+    morph: HR/Ncmsc
+    gloss: null
+  - sourceTokenId: h27001004022
+    surface: הַ/מֶּ֑לֶךְ
+    lang: he
+    lemma: d/4428
+    morph: HTd/Ncmsa
+    gloss: null
+  - sourceTokenId: h27001004023
+    surface: וּֽ/לֲ/לַמְּדָ֥/ם
+    lang: he
+    lemma: c/l/3925
+    morph: HC/R/Vpc/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001004024
+    surface: סֵ֖פֶר
+    lang: he
+    lemma: 5612 a
+    morph: HNcmsa
+    gloss: null
+  - sourceTokenId: h27001004025
+    surface: וּ/לְשׁ֥וֹן
+    lang: he
+    lemma: c/3956
+    morph: HC/Ncbsc
+    gloss: null
+  - sourceTokenId: h27001004026
+    surface: כַּשְׂדִּֽים
+    lang: he
+    lemma: '3778'
+    morph: HNp
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0004
+  reference: Daniel 1:5
+  mt_reference: Daniel 1:5
+  spanish: Y el rey les asignó la porción del día en su día de los manjares del rey
+    y del vino de su beber, y para criarlos tres años, y al cabo de ellos estarían
+    delante del rey.
+  source_tokens:
+  - sourceTokenId: h27001005001
+    surface: וַ/יְמַן֩
+    lang: he
+    lemma: c/4487
+    morph: HC/Vpw3ms
+    gloss: null
+  - sourceTokenId: h27001005002
+    surface: לָ/הֶ֨ם
+    lang: he
+    lemma: l
+    morph: HR/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001005003
+    surface: הַ/מֶּ֜לֶךְ
+    lang: he
+    lemma: d/4428
+    morph: HTd/Ncmsa
+    gloss: null
+  - sourceTokenId: h27001005004
+    surface: דְּבַר
+    lang: he
+    lemma: '1697'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001005005
+    surface: י֣וֹם
+    lang: he
+    lemma: '3117'
+    morph: HNcmsa
+    gloss: null
+  - sourceTokenId: h27001005006
+    surface: בְּ/יוֹמ֗/וֹ
+    lang: he
+    lemma: b/3117
+    morph: HR/Ncmsc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27001005007
+    surface: מִ/פַּת
+    lang: he
+    lemma: m/6598+
+    morph: HR/Ncmsc
+    gloss: null
+  - sourceTokenId: h27001005008
+    surface: בַּ֤ג
+    lang: he
+    lemma: '6598'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001005009
+    surface: הַ/מֶּ֨לֶךְ֙
+    lang: he
+    lemma: d/4428
+    morph: HTd/Ncmsa
+    gloss: null
+  - sourceTokenId: h27001005010
+    surface: וּ/מִ/יֵּ֣ין
+    lang: he
+    lemma: c/m/3196
+    morph: HC/R/Ncmsc
+    gloss: null
+  - sourceTokenId: h27001005011
+    surface: מִשְׁתָּ֔י/ו
+    lang: he
+    lemma: '4960'
+    morph: HNcmsc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27001005012
+    surface: וּֽ/לְ/גַדְּלָ֖/ם
+    lang: he
+    lemma: c/l/1431
+    morph: HC/R/Vpc/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001005013
+    surface: שָׁנִ֣ים
+    lang: he
+    lemma: '8141'
+    morph: HNcfpa
+    gloss: null
+  - sourceTokenId: h27001005014
+    surface: שָׁל֑וֹשׁ
+    lang: he
+    lemma: '7969'
+    morph: HAcfsa
+    gloss: null
+  - sourceTokenId: h27001005015
+    surface: וּ/מִ֨/קְצָתָ֔/ם
+    lang: he
+    lemma: c/m/7117
+    morph: HC/R/Ncfsc/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001005016
+    surface: יַֽעַמְד֖וּ
+    lang: he
+    lemma: '5975'
+    morph: HVqi3mp
+    gloss: null
+  - sourceTokenId: h27001005017
+    surface: לִ/פְנֵ֥י
+    lang: he
+    lemma: l/6440
+    morph: HR/Ncbpc
+    gloss: null
+  - sourceTokenId: h27001005018
+    surface: הַ/מֶּֽלֶךְ
+    lang: he
+    lemma: d/4428
+    morph: HTd/Ncmsa
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0005
+  reference: Daniel 1:6
+  mt_reference: Daniel 1:6
+  spanish: Y hubo entre ellos, de los hijos de Judá, Daniel, Ananías, Misael y Azarías.
+  source_tokens:
+  - sourceTokenId: h27001006001
+    surface: וַ/יְהִ֥י
+    lang: he
+    lemma: c/1961
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001006002
+    surface: בָ/הֶ֖ם
+    lang: he
+    lemma: b
+    morph: HR/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001006003
+    surface: מִ/בְּנֵ֣י
+    lang: he
+    lemma: m/1121 a
+    morph: HR/Ncmpc
+    gloss: null
+  - sourceTokenId: h27001006004
+    surface: יְהוּדָ֑ה
+    lang: he
+    lemma: '3063'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001006005
+    surface: דָּנִיֵּ֣אל
+    lang: he
+    lemma: '1840'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001006006
+    surface: חֲנַנְיָ֔ה
+    lang: he
+    lemma: 2608 a
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001006007
+    surface: מִֽישָׁאֵ֖ל
+    lang: he
+    lemma: '4332'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001006008
+    surface: וַ/עֲזַרְיָֽה
+    lang: he
+    lemma: c/5838
+    morph: HC/Np
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0006
+  reference: Daniel 1:7
+  mt_reference: Daniel 1:7
+  spanish: 'Y el jefe de los eunucos les puso nombres: a Daniel le puso por nombre
+    Beltsasar, a Ananías Sadrac, a Misael Mesac y a Azarías Abed-nego.'
+  source_tokens:
+  - sourceTokenId: h27001007001
+    surface: וַ/יָּ֧שֶׂם
+    lang: he
+    lemma: c/7760 a
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001007002
+    surface: לָ/הֶ֛ם
+    lang: he
+    lemma: l
+    morph: HR/Sp3mp
+    gloss: null
+  - sourceTokenId: h27001007003
+    surface: שַׂ֥ר
+    lang: he
+    lemma: '8269'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001007004
+    surface: הַ/סָּרִיסִ֖ים
+    lang: he
+    lemma: d/5631
+    morph: HTd/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001007005
+    surface: שֵׁמ֑וֹת
+    lang: he
+    lemma: '8034'
+    morph: HNcmpa
+    gloss: null
+  - sourceTokenId: h27001007006
+    surface: וַ/יָּ֨שֶׂם
+    lang: he
+    lemma: c/7760 a
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001007007
+    surface: לְ/דָֽנִיֵּ֜אל
+    lang: he
+    lemma: l/1840
+    morph: HR/Np
+    gloss: null
+  - sourceTokenId: h27001007008
+    surface: בֵּ֣לְטְשַׁאצַּ֗ר
+    lang: he
+    lemma: '1095'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001007009
+    surface: וְ/לַֽ/חֲנַנְיָה֙
+    lang: he
+    lemma: c/l/2608 a
+    morph: HC/R/Np
+    gloss: null
+  - sourceTokenId: h27001007010
+    surface: שַׁדְרַ֔ךְ
+    lang: he
+    lemma: '7714'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001007011
+    surface: וּ/לְ/מִֽישָׁאֵ֣ל
+    lang: he
+    lemma: c/l/4332
+    morph: HC/R/Np
+    gloss: null
+  - sourceTokenId: h27001007012
+    surface: מֵישַׁ֔ךְ
+    lang: he
+    lemma: '4335'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001007013
+    surface: וְ/לַ/עֲזַרְיָ֖ה
+    lang: he
+    lemma: c/l/5838
+    morph: HC/R/Np
+    gloss: null
+  - sourceTokenId: h27001007014
+    surface: עֲבֵ֥ד
+    lang: he
+    lemma: 5664+
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001007015
+    surface: נְגֽוֹ
+    lang: he
+    lemma: '5664'
+    morph: HNp
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0007
+  reference: Daniel 1:8
+  mt_reference: Daniel 1:8
+  spanish: Y Daniel puso en su corazón que no se contaminaría con los manjares del
+    rey ni con el vino de su beber; y pidió al jefe de los eunucos que no se contaminara.
+  source_tokens:
+  - sourceTokenId: h27001008001
+    surface: וַ/יָּ֤שֶׂם
+    lang: he
+    lemma: c/7760 a
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001008002
+    surface: דָּנִיֵּאל֙
+    lang: he
+    lemma: '1840'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001008003
+    surface: עַל
+    lang: he
+    lemma: 5921 a
+    morph: HR
+    gloss: null
+  - sourceTokenId: h27001008004
+    surface: לִבּ֔/וֹ
+    lang: he
+    lemma: 3820 a
+    morph: HNcmsc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27001008005
+    surface: אֲשֶׁ֧ר
+    lang: he
+    lemma: 834 a
+    morph: HTr
+    gloss: null
+  - sourceTokenId: h27001008006
+    surface: לֹֽא
+    lang: he
+    lemma: '3808'
+    morph: HTn
+    gloss: null
+  - sourceTokenId: h27001008007
+    surface: יִתְגָּאַ֛ל
+    lang: he
+    lemma: '1351'
+    morph: HVti3ms
+    gloss: null
+  - sourceTokenId: h27001008008
+    surface: בְּ/פַתְבַּ֥ג
+    lang: he
+    lemma: b/6598
+    morph: HR/Ncmsc
+    gloss: null
+  - sourceTokenId: h27001008009
+    surface: הַ/מֶּ֖לֶךְ
+    lang: he
+    lemma: d/4428
+    morph: HTd/Ncmsa
+    gloss: null
+  - sourceTokenId: h27001008010
+    surface: וּ/בְ/יֵ֣ין
+    lang: he
+    lemma: c/b/3196
+    morph: HC/R/Ncmsc
+    gloss: null
+  - sourceTokenId: h27001008011
+    surface: מִשְׁתָּ֑י/ו
+    lang: he
+    lemma: '4960'
+    morph: HNcmsc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27001008012
+    surface: וַ/יְבַקֵּשׁ֙
+    lang: he
+    lemma: c/1245
+    morph: HC/Vpw3ms
+    gloss: null
+  - sourceTokenId: h27001008013
+    surface: מִ/שַּׂ֣ר
+    lang: he
+    lemma: m/8269
+    morph: HR/Ncmsc
+    gloss: null
+  - sourceTokenId: h27001008014
+    surface: הַ/סָּרִיסִ֔ים
+    lang: he
+    lemma: d/5631
+    morph: HTd/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001008015
+    surface: אֲשֶׁ֖ר
+    lang: he
+    lemma: 834 a
+    morph: HTr
+    gloss: null
+  - sourceTokenId: h27001008016
+    surface: לֹ֥א
+    lang: he
+    lemma: '3808'
+    morph: HTn
+    gloss: null
+  - sourceTokenId: h27001008017
+    surface: יִתְגָּאָֽל
+    lang: he
+    lemma: '1351'
+    morph: HVti3ms
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0008
+  reference: Daniel 1:9
+  mt_reference: Daniel 1:9
+  spanish: Y Dios concedió a Daniel favor y compasión delante del jefe de los eunucos.
+  source_tokens:
+  - sourceTokenId: h27001009001
+    surface: וַ/יִּתֵּ֤ן
+    lang: he
+    lemma: c/5414
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001009002
+    surface: הָֽ/אֱלֹהִים֙
+    lang: he
+    lemma: d/430
+    morph: HTd/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001009003
+    surface: אֶת
+    lang: he
+    lemma: '853'
+    morph: HTo
+    gloss: null
+  - sourceTokenId: h27001009004
+    surface: דָּ֣נִיֵּ֔אל
+    lang: he
+    lemma: '1840'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001009005
+    surface: לְ/חֶ֖סֶד
+    lang: he
+    lemma: l/2617 a
+    morph: HR/Ncmsa
+    gloss: null
+  - sourceTokenId: h27001009006
+    surface: וּֽ/לְ/רַחֲמִ֑ים
+    lang: he
+    lemma: c/l/7356 b
+    morph: HC/R/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001009007
+    surface: לִ/פְנֵ֖י
+    lang: he
+    lemma: l/6440
+    morph: HR/Ncbpc
+    gloss: null
+  - sourceTokenId: h27001009008
+    surface: שַׂ֥ר
+    lang: he
+    lemma: '8269'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001009009
+    surface: הַ/סָּרִיסִֽים
+    lang: he
+    lemma: d/5631
+    morph: HTd/Ncmpa
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0009
+  reference: Daniel 1:10
+  mt_reference: Daniel 1:10
+  spanish: 'Y el jefe de los eunucos dijo a Daniel: Temo a mi señor el rey, que ha
+    asignado vuestra comida y vuestra bebida; ¿por qué ha de ver vuestros rostros
+    más tristes que los de los jóvenes de vuestra misma edad? Así pondréis en peligro
+    mi cabeza ante el rey.'
+  source_tokens:
+  - sourceTokenId: h27001010001
+    surface: וַ/יֹּ֜אמֶר
+    lang: he
+    lemma: c/559
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001010002
+    surface: שַׂ֤ר
+    lang: he
+    lemma: '8269'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001010003
+    surface: הַ/סָּרִיסִים֙
+    lang: he
+    lemma: d/5631
+    morph: HTd/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001010004
+    surface: לְ/דָ֣נִיֵּ֔אל
+    lang: he
+    lemma: l/1840
+    morph: HR/Np
+    gloss: null
+  - sourceTokenId: h27001010005
+    surface: יָרֵ֤א
+    lang: he
+    lemma: '3373'
+    morph: HVqrmsa
+    gloss: null
+  - sourceTokenId: h27001010006
+    surface: אֲנִי֙
+    lang: he
+    lemma: '589'
+    morph: HPp1cs
+    gloss: null
+  - sourceTokenId: h27001010007
+    surface: אֶת
+    lang: he
+    lemma: '853'
+    morph: HTo
+    gloss: null
+  - sourceTokenId: h27001010008
+    surface: אֲדֹנִ֣/י
+    lang: he
+    lemma: '113'
+    morph: HNcmsc/Sp1cs
+    gloss: null
+  - sourceTokenId: h27001010009
+    surface: הַ/מֶּ֔לֶךְ
+    lang: he
+    lemma: d/4428
+    morph: HTd/Ncmsa
+    gloss: null
+  - sourceTokenId: h27001010010
+    surface: אֲשֶׁ֣ר
+    lang: he
+    lemma: 834 a
+    morph: HTr
+    gloss: null
+  - sourceTokenId: h27001010011
+    surface: מִנָּ֔ה
+    lang: he
+    lemma: '4487'
+    morph: HVpp3ms
+    gloss: null
+  - sourceTokenId: h27001010012
+    surface: אֶת
+    lang: he
+    lemma: '853'
+    morph: HTo
+    gloss: null
+  - sourceTokenId: h27001010013
+    surface: מַאֲכַלְ/כֶ֖ם
+    lang: he
+    lemma: '3978'
+    morph: HNcmsc/Sp2mp
+    gloss: null
+  - sourceTokenId: h27001010014
+    surface: וְ/אֶת
+    lang: he
+    lemma: c/853
+    morph: HC/To
+    gloss: null
+  - sourceTokenId: h27001010015
+    surface: מִשְׁתֵּי/כֶ֑ם
+    lang: he
+    lemma: '4960'
+    morph: HNcmsc/Sp2mp
+    gloss: null
+  - sourceTokenId: h27001010016
+    surface: אֲשֶׁ֡ר
+    lang: he
+    lemma: 834 a
+    morph: HTr
+    gloss: null
+  - sourceTokenId: h27001010017
+    surface: לָ/מָּה֩
+    lang: he
+    lemma: l/4100
+    morph: HR/Ti
+    gloss: null
+  - sourceTokenId: h27001010018
+    surface: יִרְאֶ֨ה
+    lang: he
+    lemma: '7200'
+    morph: HVqi3ms
+    gloss: null
+  - sourceTokenId: h27001010019
+    surface: אֶת
+    lang: he
+    lemma: '853'
+    morph: HTo
+    gloss: null
+  - sourceTokenId: h27001010020
+    surface: פְּנֵי/כֶ֜ם
+    lang: he
+    lemma: '6440'
+    morph: HNcbpc/Sp2mp
+    gloss: null
+  - sourceTokenId: h27001010021
+    surface: זֹֽעֲפִ֗ים
+    lang: he
+    lemma: '2196'
+    morph: HVqrmpa
+    gloss: null
+  - sourceTokenId: h27001010022
+    surface: מִן
+    lang: he
+    lemma: 4480 a
+    morph: HR
+    gloss: null
+  - sourceTokenId: h27001010023
+    surface: הַ/יְלָדִים֙
+    lang: he
+    lemma: d/3206
+    morph: HTd/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001010024
+    surface: אֲשֶׁ֣ר
+    lang: he
+    lemma: 834 a
+    morph: HTr
+    gloss: null
+  - sourceTokenId: h27001010025
+    surface: כְּ/גִֽילְ/כֶ֔ם
+    lang: he
+    lemma: k/1524 b
+    morph: HR/Ncmsc/Sp2mp
+    gloss: null
+  - sourceTokenId: h27001010026
+    surface: וְ/חִיַּבְתֶּ֥ם
+    lang: he
+    lemma: c/2325
+    morph: HC/Vpq2mp
+    gloss: null
+  - sourceTokenId: h27001010027
+    surface: אֶת
+    lang: he
+    lemma: '853'
+    morph: HTo
+    gloss: null
+  - sourceTokenId: h27001010028
+    surface: רֹאשִׁ֖/י
+    lang: he
+    lemma: 7218 a
+    morph: HNcmsc/Sp1cs
+    gloss: null
+  - sourceTokenId: h27001010029
+    surface: לַ/מֶּֽלֶךְ
+    lang: he
+    lemma: l/4428
+    morph: HRd/Ncmsa
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0010
+  reference: Daniel 1:11
+  mt_reference: Daniel 1:11
+  spanish: 'Y Daniel dijo al mayordomo a quien el jefe de los eunucos había encargado
+    de Daniel, Ananías, Misael y Azarías:'
+  source_tokens:
+  - sourceTokenId: h27001011001
+    surface: וַ/יֹּ֥אמֶר
+    lang: he
+    lemma: c/559
+    morph: HC/Vqw3ms
+    gloss: null
+  - sourceTokenId: h27001011002
+    surface: דָּנִיֵּ֖אל
+    lang: he
+    lemma: '1840'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001011003
+    surface: אֶל
+    lang: he
+    lemma: '413'
+    morph: HR
+    gloss: null
+  - sourceTokenId: h27001011004
+    surface: הַ/מֶּלְצַ֑ר
+    lang: he
+    lemma: d/4453
+    morph: HTd/Ncmsa
+    gloss: null
+  - sourceTokenId: h27001011005
+    surface: אֲשֶׁ֤ר
+    lang: he
+    lemma: 834 a
+    morph: HTr
+    gloss: null
+  - sourceTokenId: h27001011006
+    surface: מִנָּה֙
+    lang: he
+    lemma: '4487'
+    morph: HVpp3ms
+    gloss: null
+  - sourceTokenId: h27001011007
+    surface: שַׂ֣ר
+    lang: he
+    lemma: '8269'
+    morph: HNcmsc
+    gloss: null
+  - sourceTokenId: h27001011008
+    surface: הַ/סָּֽרִיסִ֔ים
+    lang: he
+    lemma: d/5631
+    morph: HTd/Ncmpa
+    gloss: null
+  - sourceTokenId: h27001011009
+    surface: עַל
+    lang: he
+    lemma: 5921 a
+    morph: HR
+    gloss: null
+  - sourceTokenId: h27001011010
+    surface: דָּנִיֵּ֣אל
+    lang: he
+    lemma: '1840'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001011011
+    surface: חֲנַנְיָ֔ה
+    lang: he
+    lemma: 2608 a
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001011012
+    surface: מִֽישָׁאֵ֖ל
+    lang: he
+    lemma: '4332'
+    morph: HNp
+    gloss: null
+  - sourceTokenId: h27001011013
+    surface: וַ/עֲזַרְיָֽה
+    lang: he
+    lemma: c/5838
+    morph: HC/Np
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''

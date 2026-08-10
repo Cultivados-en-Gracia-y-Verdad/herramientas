@@ -1,0 +1,51 @@
+schema_version: "0.1"
+book: daniel
+audit: HEBREW_ARAMAIC_FINAL_TRANSLATION_AUDIT
+
+summary:
+  total_phrases: 357
+  pass: 353
+  findings: 1
+  unresolved: 3
+
+findings:
+  - reference: Daniel 11:38
+    language: hebrew
+    exact_current_spanish: "Mas honrará en su lugar al dios Mauzim, dios que sus padres no conocieron: lo honrará con oro, y plata, y piedras preciosas, y con cosas de gran precio."
+    exact_hebrew_aramaic_form: "וְלֶאֱלֹהַּ מָעֻזִּים עַל כַּנּוֹ יְכַבֵּד"
+    relevant_morphology: "מָעֻזִּים: common masculine plural absolute noun, lemma 4581; יְכַבֵּד: Piel yiqtol 3ms."
+    relevant_syntax: "אֱלֹהַּ functions with the following plural noun מָעֻזִּים, yielding 'god of fortresses/strongholds'; the clause says that the king honors this god in his place."
+    why_the_spanish_is_not_defensible: "The current Spanish treats מָעֻזִּים as the proper name 'Mauzim'. In the supplied Hebrew form and morphology it is a common plural noun meaning fortresses/strongholds, so transliteration as a proper name hides a lexical relation required by the source."
+    smallest_defensible_correction: "Mas honrará en su lugar al dios de las fortalezas, dios que sus padres no conocieron: lo honrará con oro, y plata, y piedras preciosas, y con cosas de gran precio."
+    confidence: HIGH
+
+unresolved:
+  - reference: Daniel 2:1
+    language: hebrew
+    current_spanish: "Y en el segundo año del reino de Nabucodonosor, soñó Nabucodonosor sueños, y se turbó su espíritu, y su sueño se fue de él."
+    exact_source_construction: "וּשְׁנָתוֹ נִהְיְתָה עָלָיו"
+    competing_defensible_analyses:
+      - "The traditional Spanish 'su sueño se fue de él' takes the clause idiomatically as loss/departure of sleep in context after his spirit was troubled."
+      - "The surface syntax has שְׁנָתוֹ as subject, נִהְיְתָה as a Niphal/perfect form of היה, and עָלָיו as 'upon him', which does not transparently encode 'went away from him'."
+    what_remains_unresolved: "Whether LBF policy should preserve the traditional idiomatic rendering or revise toward a wording that more directly reflects the Hebrew construction."
+    confidence: MEDIUM
+  - reference: Daniel 9:27
+    language: hebrew
+    current_spanish: "Y en otra semana confirmará el pacto a muchos, y a la mitad de la semana hará cesar el sacrificio y la ofrenda: y sobre el ala de abominaciones vendrá uno que desola, hasta que la consumación determinada se derrame sobre el desolador."
+    exact_source_construction: "וְעַל כְּנַף שִׁקּוּצִים מְשֹׁמֵם ... תִּתַּךְ עַל שֹׁמֵם"
+    competing_defensible_analyses:
+      - "מְשֹׁמֵם may be read as a desolating one/desolator associated with the wing of abominations."
+      - "The construction may be read more abstractly as abominations causing desolation, with the final שֹׁמֵם functioning as desolate/desolator depending on syntactic analysis."
+      - "The phrase כְּנַף שִׁקּוּצִים is itself compact and disputed; 'ala de abominaciones' is formally close but does not settle the idiom."
+    what_remains_unresolved: "The current Spanish is plausible but still resolves a difficult Hebrew construction into one syntactic analysis. A project-level decision is needed for how formally to preserve the ambiguity in Daniel 9:27."
+    confidence: MEDIUM
+  - reference: Daniel 11:39
+    language: hebrew
+    current_spanish: "Y con el dios ajeno que conocerá, hará a los baluartes de Mauzim crecer en gloria: y los hará enseñorear sobre muchos, y por interés repartirá la tierra."
+    exact_source_construction: "וְעָשָׂה לְמִבְצְרֵי מָעֻזִּים עִם אֱלוֹהַּ נֵכָר אֲשֶׁר הִכִּיר יַרְבֶּה כָבוֹד"
+    competing_defensible_analyses:
+      - "מִבְצְרֵי מָעֻזִּים can be taken as a construct relationship involving fortified strongholds/fortresses."
+      - "עִם אֱלוֹהַּ נֵכָר may govern how he acts toward/against the fortresses, 'with a foreign god'."
+      - "יַרְבֶּה כָבוֹד may begin a following clause about increasing honor for those he recognizes, rather than describing the fortresses themselves."
+    what_remains_unresolved: "The current Spanish preserves the traditional 'Mauzim' treatment, but the syntax of the whole clause is compact enough that the smallest responsible correction requires a settled analysis of מִבְצְרֵי מָעֻזִּים and the scope of יַרְבֶּה כָבוֹד."
+    confidence: MEDIUM

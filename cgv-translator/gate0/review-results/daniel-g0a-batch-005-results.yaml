@@ -1,0 +1,161 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+items:
+- id: G0A-0081
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: 'El español contiene corrupción textual: «varones os judi». El arameo
+    גֻּבְרִין יְהוּדָאיִן expresa claramente «varones judíos».'
+  notes: Corregir la corrupción a «Hay unos varones judíos...» sin alterar el resto
+    de la relación.
+- id: G0A-0082
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: 'El español contiene corrupción textual: «fueron os traid estos varones».
+    El arameo הֵיתָיוּ ... קֳדָם מַלְכָּא expresa que estos varones fueron traídos
+    delante del rey.'
+  notes: Corregir a «Al punto fueron traídos estos varones delante del rey» o equivalente.
+- id: G0A-0083
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0084
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: En la condición וְהֵן לָא תִסְגְּדוּן, el español «si no la adoréis» es
+    gramaticalmente incorrecto. La condición requiere una forma como «si no la adoráis».
+  notes: Corregir únicamente la forma verbal de la condición.
+- id: G0A-0085
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0086
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0087
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0088
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0089
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0090
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0091
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0092
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0093
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0094
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0095
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: עַבְדוֹהִי דִּי אֱלָהָא עִלָּאָה identifica a los tres como siervos del
+    Dios Altísimo. «siervos del alto Dios» es comprensible pero no conserva con precisión
+    el título superlativo עִלָּאָה.
+  notes: Revisar a «siervos del Dios Altísimo» para mantener el título.
+- id: G0A-0096
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0097
+  decision: ESCALATE
+  confidence: medium
+  evidence: El segmento וּמִלַּת מַלְכָּא שַׁנִּיו se vierte «y el mandamiento del
+    rey mudaron». El valor contextual de שׁני aquí (cambiar/alterar frente a desobedecer
+    o dejar de lado la palabra del rey) afecta la traducción y merece decisión aramea
+    documentada.
+  notes: Enviar al especialista de arameo; no modernizar o reinterpretar automáticamente.
+- id: G0A-0098
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0099
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0100
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0101
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0102
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0103
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0104
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0105
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''

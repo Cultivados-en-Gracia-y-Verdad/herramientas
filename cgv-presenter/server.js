@@ -2446,9 +2446,12 @@ function lookupSpanishVerseByVersion(bookCode, chapter, verse, version) {
 }
 
 function lookupSpanishVerseForGreek(bookCode, chapter, verse) {
-  // Prefer BLE for Greek study popups: its wording matches the interlinear glosses
-  // used for highlighting. Fall back to LBF/NBLA/active until LBF coverage is complete.
-  const preferredVersions = ["BLE", "LBF", "NBLA", getBibleVersion()];
+  // LBF is the fluent, human-approved translation and always wins when it
+  // has coverage. BLE is mechanical (token-for-token, ungrammatical) and is
+  // now last resort only, for books LBF hasn't reached yet — never shown
+  // ahead of a real LBF verse again (see the 1 John 5:7-8 remnant this
+  // fixed: BLE used to be checked first for every book).
+  const preferredVersions = ["LBF", "NBLA", getBibleVersion(), "BLE"];
 
   for (const version of preferredVersions) {
     if (!version) continue;

@@ -78,12 +78,84 @@ async function loadLemmaStrongsIndexes() {
   return lemmaStrongsIndexPromise;
 }
 
-function normalizeStrongsId(value = "") {
+function normalizeStrongsId(value = "", { defaultPrefix = "G" } = {}) {
   const raw = String(value || "").trim().toUpperCase();
   if (!raw || raw === "—") return "";
-  if (/^G\d+$/.test(raw)) return raw;
-  if (/^\d+$/.test(raw)) return `G${raw}`;
+  const prefixed = raw.match(/^([GHA])(\d+)/);
+  if (prefixed) return `${prefixed[1]}${prefixed[2]}`;
+  if (/^\d+$/.test(raw)) return `${defaultPrefix}${raw}`;
   return raw;
+}
+
+function isHebrewStrongs(strongs = "") {
+  const normalized = String(strongs || "").trim().toUpperCase();
+  return normalized.startsWith("H") || normalized.startsWith("A");
+}
+
+/** Extract Strong's number stems from an OSHB lemma code (`b/8141`, `d/4428`, `1004 b`). */
+export function oshbLemmaStrongsNumbers(lemma = "") {
+  const nums = [];
+  for (const part of String(lemma || "").split("/")) {
+    const match = part.trim().match(/^(\d+)/u);
+    if (match) nums.push(match[1]);
+  }
+  return nums;
+}
+
+export function oshbLemmaMatchesStrongs(lemma = "", strongs = "") {
+  const num = String(strongs || "").trim().toUpperCase().replace(/^[GHA]/u, "");
+  if (!num) return false;
+  return oshbLemmaStrongsNumbers(lemma).includes(num);
+}
+
+const OT_BOOK_LABELS_EN = {
+  genesis: "Genesis",
+  exodo: "Exodus",
+  levitico: "Leviticus",
+  numeros: "Numbers",
+  deuteronomio: "Deuteronomy",
+  josue: "Joshua",
+  jueces: "Judges",
+  rut: "Ruth",
+  "1samuel": "1 Samuel",
+  "2samuel": "2 Samuel",
+  "1reyes": "1 Kings",
+  "2reyes": "2 Kings",
+  "1cronicas": "1 Chronicles",
+  "2cronicas": "2 Chronicles",
+  esdras: "Ezra",
+  nehemias: "Nehemiah",
+  ester: "Esther",
+  job: "Job",
+  salmos: "Psalms",
+  proverbios: "Proverbs",
+  eclesiastes: "Ecclesiastes",
+  cantares: "Song of Songs",
+  isaias: "Isaiah",
+  jeremias: "Jeremiah",
+  lamentaciones: "Lamentations",
+  ezequiel: "Ezekiel",
+  daniel: "Daniel",
+  oseas: "Hosea",
+  joel: "Joel",
+  amos: "Amos",
+  abdias: "Obadiah",
+  jonas: "Jonah",
+  miqueas: "Micah",
+  nahum: "Nahum",
+  habacuc: "Habakkuk",
+  sofonias: "Zephaniah",
+  hageo: "Haggai",
+  zacarias: "Zechariah",
+  malaquias: "Malachi"
+};
+
+function missingHebrewDataError(detail = "") {
+  const error = new Error(
+    `Could not find Hebrew occurrence data in cgv-data (interlinears/OT/*.tokens.jsonl).${detail ? ` ${detail}` : ""}`
+  );
+  error.code = "HEBREW_DATA_MISSING";
+  return error;
 }
 
 /**
@@ -91,8 +163,14 @@ function normalizeStrongsId(value = "") {
  * Accepts either a known Strong's, a lemma hint, or both.
  */
 export async function resolveGreekLemmaSubject({ strongs = "", lemma = "" } = {}) {
-  const normalizedStrongs = normalizeStrongsId(strongs);
+  const normalizedStrongs = normalizeStrongsId(strongs, { defaultPrefix: "G" });
   const lemmaHint = String(lemma || "").trim();
+
+  if (isHebrewStrongs(normalizedStrongs)) {
+    throw missingGreekDataError(
+      `Strong's ${normalizedStrongs} is Hebrew/Aramaic — use Hebrew occurrence gathering.`
+    );
+  }
 
   if (normalizedStrongs && prototypeStrongMappings[normalizedStrongs]) {
     const mapping = prototypeStrongMappings[normalizedStrongs];
@@ -632,6 +710,108 @@ export async function getGreekOccurrencesByStrongs(strongs, options = {}) {
     lemma: mapping.lemma,
     subject: mapping.subject,
     source: "cgv-data MorphGNT SBLGNT",
+    corpus: "NT",
+    language: "greek",
+    cgvDataPath: cgvDataDir,
+    occurrences
+  };
+}
+
+/**
+ * Gather OT occurrences for a Hebrew/Aramaic Strong's from OSHB token streams.
+ */
+export async function getHebrewOccurrencesByStrongs(strongs, options = {}) {
+  const lemmaHint = String(options.lemma || "").trim();
+  const normalizedStrongs = normalizeStrongsId(strongs, { defaultPrefix: "H" });
+  if (!isHebrewStrongs(normalizedStrongs) && !/^\d+$/.test(String(strongs || "").trim())) {
+    if (String(normalizedStrongs || "").startsWith("G")) {
+      throw missingHebrewDataError(`Strong's ${normalizedStrongs} is Greek — use Greek occurrence gathering.`);
+    }
+  }
+  const hebrewStrongs = isHebrewStrongs(normalizedStrongs)
+    ? normalizedStrongs
+    : normalizeStrongsId(strongs, { defaultPrefix: "H" });
+
+  const otDir = join(cgvDataDir, "interlinears", "OT");
+  let files = [];
+  try {
+    files = (await readdir(otDir))
+      .filter(file => file.endsWith(".tokens.jsonl"))
+      .sort();
+  } catch {
+    throw missingHebrewDataError(`Checked: ${otDir}`);
+  }
+  if (!files.length) {
+    throw missingHebrewDataError(`Checked: ${otDir}`);
+  }
+
+  const occurrences = [];
+  for (const file of files) {
+    const bookId = file.replace(/\.tokens\.jsonl$/u, "");
+    const bookLabel = OT_BOOK_LABELS_EN[bookId] || bookId;
+    const content = await readFile(join(otDir, file), "utf8");
+    const byVerse = new Map();
+
+    for (const line of content.replace(/\r\n/g, "\n").split("\n")) {
+      if (!line.trim()) continue;
+      let row;
+      try {
+        row = JSON.parse(line);
+      } catch {
+        continue;
+      }
+      const key = `${row.ch}:${row.vs}`;
+      if (!byVerse.has(key)) byVerse.set(key, []);
+      byVerse.get(key).push(row);
+    }
+
+    for (const rows of byVerse.values()) {
+      rows.sort((a, b) => Number(a.w) - Number(b.w));
+      const hebrewText = rows.map(row => row.surface).filter(Boolean).join(" ");
+      for (const row of rows) {
+        if (!oshbLemmaMatchesStrongs(row.lemma, hebrewStrongs)) continue;
+        const lang = String(row.morph || "").startsWith("A") ? "arc" : "he";
+        occurrences.push({
+          reference: `${bookLabel} ${row.ch}:${row.vs}`,
+          bookName: bookLabel,
+          bookId,
+          chapter: Number(row.ch),
+          verse: Number(row.vs),
+          author: bookLabel,
+          surfaceForm: row.surface || "",
+          lemma: row.lemma || lemmaHint || hebrewStrongs.replace(/^[HA]/u, ""),
+          strongs: hebrewStrongs,
+          morphology: row.morph || "",
+          lang,
+          sourceText: hebrewText,
+          hebrewText,
+          greekText: hebrewText,
+          gloss: row.es || "",
+          translations: {
+            projectLiteral: row.es || "",
+            ble: "",
+            rv1862: "",
+            rv1909: "",
+            spnbes: "",
+            spnvbl: ""
+          }
+        });
+      }
+    }
+  }
+
+  if (!occurrences.length) {
+    throw missingHebrewDataError(`No OT token rows for ${hebrewStrongs}${lemmaHint ? ` (${lemmaHint})` : ""}.`);
+  }
+
+  const displayLemma = lemmaHint || occurrences[0]?.surfaceForm || hebrewStrongs;
+  return {
+    strongs: hebrewStrongs,
+    lemma: displayLemma,
+    subject: `${hebrewStrongs} ${displayLemma}`.trim(),
+    source: "cgv-data OSHB interlinears/OT",
+    corpus: "OT",
+    language: "hebrew",
     cgvDataPath: cgvDataDir,
     occurrences
   };

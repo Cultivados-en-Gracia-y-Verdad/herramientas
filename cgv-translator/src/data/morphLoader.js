@@ -4,6 +4,11 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { findBook, sourceTokenId, NT_BOOKS, OT_PILOT_BOOKS } from "./bookCatalog.js";
+
+function oshbStrongsFromLemma(lemma) {
+  const match = String(lemma || "").match(/(\d{3,5})/u);
+  return match ? `H${match[1]}` : "";
+}
 import { strongsForLemma } from "./strongsIndex.js";
 import { getCgvDataPath } from "./cgvData.js";
 import { loadTranslationIndexes, resolveAlignedSpan } from "./translationIndexes.js";
@@ -239,12 +244,75 @@ async function loadTrSpineUnits(rootDir, book) {
   return { book, units, textualBasis: spine.textualBasis || "Scrivener 1894 TR" };
 }
 
+/**
+ * OSHB/WLC spine for OT LBF books (Hebrew + Aramaic share one index).
+ * Maps surface→greek / es→ble so the existing interlinear UI can render.
+ */
+async function loadOshbSpineUnits(rootDir, book) {
+  const spinePath = join(rootDir, "translations", "oshb-spine", book.id, `${book.id}-oshb-spine.json`);
+  const raw = await readFirstExistingFile([spinePath]);
+  if (!raw) return null;
+  let spine;
+  try {
+    spine = JSON.parse(raw);
+  } catch {
+    return null;
+  }
+  const units = [];
+  for (const verse of Object.values(spine.verses || {})) {
+    const chapter = Number(verse.ch);
+    const vs = Number(verse.vs);
+    const reference = `${book.label} ${chapter}:${vs}`;
+    const tokenRows = (verse.tokens || []).map(tok => {
+      const surface = tok.surface || "";
+      const gloss = tok.es || "";
+      return {
+        sourceTokenId: tok.sourceTokenId || "",
+        greek: surface,
+        surface,
+        lemma: tok.lemma || "",
+        strongs: oshbStrongsFromLemma(tok.lemma),
+        rmac: tok.morph || "",
+        morphology: tok.lang === "arc" ? "Aramaic" : (tok.lang === "he" ? "Hebrew" : ""),
+        ble: gloss,
+        rv1909: "",
+        lang: tok.lang || "",
+        w: tok.w,
+        oshbIndex: tok.oshbIndex,
+        oshbId: tok.oshbId || ""
+      };
+    });
+    const sourceTokenIds = tokenRows.map(row => row.sourceTokenId).filter(Boolean);
+    units.push({
+      bookId: book.id,
+      reference,
+      chapter,
+      verse: vs,
+      greekText: tokenRows.map(r => r.greek).filter(Boolean).join(" ").trim(),
+      sourceTokenIds,
+      tokenRows,
+      rv1909Text: "",
+      bleText: tokenRows.map(r => r.ble).filter(Boolean).join(" "),
+      textualBasis: spine.textualBasis || "OSHB/WLC"
+    });
+  }
+  units.sort((a, b) => a.chapter - b.chapter || a.verse - b.verse);
+  return { book, units, textualBasis: spine.textualBasis || "OSHB/WLC" };
+}
+
 export async function loadNtBookUnits(rootDir, bookId = "titus") {
   const book = findBook(bookId) || findBook("titus");
   if (!book) throw new Error(`Unknown book: ${bookId}`);
 
+  const oshbLoaded = await loadOshbSpineUnits(rootDir, book);
+  if (oshbLoaded) return oshbLoaded;
+
   const trLoaded = await loadTrSpineUnits(rootDir, book);
   if (trLoaded) return trLoaded;
+
+  if (book.spine === "oshb") {
+    throw new Error(`OSHB spine missing for ${book.id}`);
+  }
 
   const bookCode = book.bookCode || book.number;
   const cgvDataDir = getCgvDataPath();

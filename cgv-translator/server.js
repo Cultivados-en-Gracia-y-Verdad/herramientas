@@ -1,14 +1,14 @@
 import { createServer } from "node:http";
 import { appendFile, mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
-import { basename, extname, join, normalize } from "node:path";
+import { basename, dirname, extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
-import { getCgvDataPath, getGreekConstructionEvidence, getGreekOccurrencesByStrongs } from "./src/data/cgvData.js";
-import { loadTranslationIndexes, resolveAlignedSpan } from "./src/data/translationIndexes.js";
+import { getCgvDataPath, getGreekConstructionEvidence, getGreekOccurrencesByStrongs, getHebrewOccurrencesByStrongs } from "./src/data/cgvData.js";
+import { loadTranslationIndexes, resolveAlignedSpan, lookupRv1909AquiferVerse } from "./src/data/translationIndexes.js";
 import { describeAiAvailability, loadTranslatorEnv } from "./src/ai/suggestPhrase.js";
 import { analyzePhraseGates } from "./src/pipeline/analyzeGates.js";
 import { assistPhraseGates } from "./src/pipeline/assistGates.js";
-import { createInvestigationFromLemma } from "./src/investigations/createInvestigation.js";
-import { findBook, NT_BOOKS } from "./src/data/bookCatalog.js";
+import { createInvestigationFromLemma, languageFromStrongs } from "./src/investigations/createInvestigation.js";
+import { findBook, allTranslatorBooks } from "./src/data/bookCatalog.js";
 import { loadNtBookUnits } from "./src/data/morphLoader.js";
 
 const rootDir = fileURLToPath(new URL(".", import.meta.url));
@@ -33,26 +33,48 @@ function bookIdFromRequest(url, body = null) {
 
 function translationPathsForBook(bookId) {
   const book = resolveBook(bookId);
+  const oshbPhraseFile = join(translationsDir, "oshb-spine", book.id, `${book.id}-phrases.json`);
+  const oshbReverseLinksFile = join(translationsDir, "oshb-spine", book.id, `${book.id}-reverse-links.json`);
   // Prefer TR-remapped phrases when the TR spine pilot exists for this book.
   const trPhraseFile = join(translationsDir, "tr-spine", book.id, `${book.id}-phrases-tr.json`);
   const defaultPhraseFile = join(translationsDir, `${book.id}-phrases.json`);
   const reverseLinksFile = join(translationsDir, "tr-spine", book.id, `${book.id}-reverse-links.json`);
+  if (book.spine === "oshb") {
+    return {
+      book,
+      phraseFile: oshbPhraseFile,
+      defaultPhraseFile: oshbPhraseFile,
+      documentFile: join(translationsDir, `${book.bleSlug}.md`),
+      reverseLinksFile: oshbReverseLinksFile,
+      spineKind: "oshb"
+    };
+  }
   return {
     book,
     phraseFile: trPhraseFile,
     defaultPhraseFile,
     documentFile: join(translationsDir, `${book.bleSlug}.md`),
-    reverseLinksFile
+    reverseLinksFile,
+    spineKind: "tr"
   };
 }
 
 async function resolvePhraseFile(bookId) {
-  const { book, phraseFile, defaultPhraseFile, documentFile } = translationPathsForBook(bookId);
+  const paths = translationPathsForBook(bookId);
+  const { book, phraseFile, defaultPhraseFile, documentFile, spineKind } = paths;
+  if (spineKind === "oshb") {
+    try {
+      await stat(phraseFile);
+      return { book, phraseFile, documentFile, textualBasis: "OSHB/WLC", spineKind };
+    } catch {
+      return { book, phraseFile: defaultPhraseFile, documentFile, textualBasis: "OSHB/WLC", spineKind };
+    }
+  }
   try {
     await stat(phraseFile);
-    return { book, phraseFile, documentFile, textualBasis: "Scrivener 1894 TR" };
+    return { book, phraseFile, documentFile, textualBasis: "Scrivener 1894 TR", spineKind: "tr" };
   } catch {
-    return { book, phraseFile: defaultPhraseFile, documentFile, textualBasis: "MorphGNT/SBLGNT (fallback)" };
+    return { book, phraseFile: defaultPhraseFile, documentFile, textualBasis: "MorphGNT/SBLGNT (fallback)", spineKind: "morph" };
   }
 }
 const bibliaBleOutputDir = join(rootDir, "..", "Biblia-BLE", "output");
@@ -104,22 +126,65 @@ function sendJson(response, status, body) {
   send(response, status, JSON.stringify(body), "application/json; charset=utf-8");
 }
 
+function normalizeTokenRow(row = {}) {
+  const surface = typeof row.surface === "string" ? row.surface : "";
+  const greek = typeof row.greek === "string" && row.greek.trim()
+    ? row.greek
+    : surface;
+  const ble = typeof row.ble === "string" && row.ble.trim()
+    ? row.ble
+    : (typeof row.es === "string" ? row.es : "");
+  return {
+    ...row,
+    sourceTokenId: row.sourceTokenId != null ? String(row.sourceTokenId) : "",
+    greek,
+    surface: surface || greek,
+    lemma: typeof row.lemma === "string" ? row.lemma : "",
+    strongs: typeof row.strongs === "string" ? row.strongs : "",
+    rmac: typeof row.rmac === "string" ? row.rmac : (typeof row.morph === "string" ? row.morph : ""),
+    morphology: typeof row.morphology === "string" ? row.morphology : "",
+    ble,
+    rv1909: typeof row.rv1909 === "string" ? row.rv1909 : ""
+  };
+}
+
+function extractPhraseArray(value) {
+  if (Array.isArray(value)) return value;
+  if (value && typeof value === "object" && Array.isArray(value.phrases)) return value.phrases;
+  return [];
+}
+
 function normalizeTranslationPhrases(value) {
-  if (!Array.isArray(value)) return [];
-  return value
-    .map((item, index) => ({
-      reference: typeof item.reference === "string" && item.reference.trim()
-        ? item.reference.trim()
-        : "Titus 1:1",
-      phraseIndex: Number.isInteger(Number(item.phraseIndex)) ? Number(item.phraseIndex) : index,
-      greek: typeof item.greek === "string" ? item.greek : "",
-      spanish: typeof item.spanish === "string" ? item.spanish : "",
-      sourceTokenIds: Array.isArray(item.sourceTokenIds) ? item.sourceTokenIds.map(String) : [],
-      rv1909Text: typeof item.rv1909Text === "string" ? item.rv1909Text : "",
-      bleText: typeof item.bleText === "string" ? item.bleText : "",
-      suggestionSource: typeof item.suggestionSource === "string" ? item.suggestionSource : "",
-      approval: item && typeof item.approval === "object" && item.approval ? item.approval : undefined
-    }))
+  return extractPhraseArray(value)
+    .map((item, index) => {
+      const tokenRows = Array.isArray(item.tokenRows)
+        ? item.tokenRows.map(normalizeTokenRow)
+        : [];
+      const sourceTokenIds = Array.isArray(item.sourceTokenIds) && item.sourceTokenIds.length
+        ? item.sourceTokenIds.map(String)
+        : tokenRows.map(row => row.sourceTokenId).filter(Boolean);
+      const greekFromTokens = tokenRows.map(row => row.greek).filter(Boolean).join(" ");
+      return {
+        reference: typeof item.reference === "string" && item.reference.trim()
+          ? item.reference.trim()
+          : "Titus 1:1",
+        phraseIndex: Number.isInteger(Number(item.phraseIndex)) ? Number(item.phraseIndex) : index,
+        greek: typeof item.greek === "string" && item.greek.trim()
+          ? item.greek
+          : greekFromTokens,
+        spanish: typeof item.spanish === "string" ? item.spanish : "",
+        sourceTokenIds,
+        tokenRows,
+        rv1909Text: typeof item.rv1909Text === "string" ? item.rv1909Text : "",
+        bleText: typeof item.bleText === "string" ? item.bleText : "",
+        suggestionSource: typeof item.suggestionSource === "string" ? item.suggestionSource : "",
+        approval: item && typeof item.approval === "object" && item.approval ? item.approval : undefined,
+        chapter: item.chapter,
+        verse: item.verse,
+        mtChapter: item.mtChapter,
+        mtVerse: item.mtVerse
+      };
+    })
     .filter(item => item.phraseIndex >= 0)
     .sort((a, b) => a.phraseIndex - b.phraseIndex);
 }
@@ -136,6 +201,29 @@ async function readExistingTranslationPhrases(phraseFile) {
   } catch {
     return [];
   }
+}
+
+async function writeTranslationPhrases(phraseFile, phrases, book, textualBasis) {
+  await mkdir(dirname(phraseFile), { recursive: true });
+  if (book?.spine === "oshb") {
+    let existing = {};
+    try {
+      existing = JSON.parse(await readFile(phraseFile, "utf8"));
+      if (Array.isArray(existing)) existing = {};
+    } catch {
+      existing = {};
+    }
+    const doc = {
+      ...existing,
+      bookId: book.id,
+      textualBasis: existing.textualBasis || textualBasis || "OSHB/WLC",
+      schemaVersion: existing.schemaVersion || 1,
+      phrases
+    };
+    await writeFile(phraseFile, `${JSON.stringify(doc, null, 2)}\n`, "utf8");
+    return;
+  }
+  await writeFile(phraseFile, `${JSON.stringify(phrases, null, 2)}\n`, "utf8");
 }
 
 /**
@@ -460,12 +548,16 @@ async function loadTitusTranslationUnits() {
 }
 
 async function enrichTranslationPhraseRecords(phrases, bookId = "titus") {
+  const book = findBook(bookId) || findBook("titus");
   const [loaded, translationIndexes] = await Promise.all([
     loadNtBookUnits(rootDir, bookId).catch(() => ({ units: [] })),
     loadTranslationIndexes(getCgvDataPath()).catch(() => null)
   ]);
   const units = loaded.units || loaded || [];
   const unitsByReference = new Map(units.map(unit => [unit.reference, unit]));
+  const isOshb = book?.spine === "oshb";
+  const aquiferBook = book?.number != null ? String(book.number).padStart(2, "0") : "";
+
   return phrases.map(phrase => {
     const unit = unitsByReference.get(phrase.reference);
     if (!unit) return phrase;
@@ -481,16 +573,29 @@ async function enrichTranslationPhraseRecords(phrases, bookId = "titus") {
     const greekFromTokens = tokenRows.map(row => row.greek).filter(Boolean).join(" ");
     const rv1909TokenText = tokenRows.map(row => row.rv1909).filter(Boolean).join(" ");
     const bleTokenText = tokenRows.map(row => row.ble).filter(Boolean).join(" ");
-    const alignedRv1909 = translationIndexes
-      ? resolveAlignedSpan(translationIndexes, tokenIds)
-      : "";
+
+    let rv1909Text = "";
+    if (isOshb && translationIndexes && aquiferBook) {
+      const chapter = Number(phrase.chapter || unit.chapter);
+      const verse = Number(phrase.verse || unit.verse);
+      rv1909Text = lookupRv1909AquiferVerse(translationIndexes, aquiferBook, chapter, verse)
+        || unit.rv1909Text
+        || "";
+    } else if (translationIndexes) {
+      rv1909Text = resolveAlignedSpan(translationIndexes, tokenIds)
+        || rv1909TokenText
+        || phrase.rv1909Text
+        || "";
+    } else {
+      rv1909Text = rv1909TokenText || phrase.rv1909Text || "";
+    }
+
     return {
       ...phrase,
       greek: greekFromTokens || phrase.greek || "",
       sourceTokenIds: tokenIds,
       tokenRows,
-      // Always prefer phrase-scoped spans derived from this phrase's tokens.
-      rv1909Text: alignedRv1909 || rv1909TokenText || phrase.rv1909Text || "",
+      rv1909Text,
       bleText: bleTokenText || phrase.bleText || "",
       suggestionSource: phrase.suggestionSource || (phrase.spanish?.trim() ? "lbf-preliminary" : "blank"),
       textualBasis: phrase.textualBasis || unit.textualBasis || ""
@@ -692,7 +797,21 @@ async function handleDecision(request, response, id) {
   });
 }
 
+function occurrenceSourceText(occurrence) {
+  return occurrence?.sourceText
+    || occurrence?.hebrewText
+    || occurrence?.greekText
+    || "";
+}
+
+function isOtOccurrenceReport(report) {
+  return report?.corpus === "OT"
+    || report?.language === "hebrew"
+    || /^[HA]\d+/i.test(String(report?.strongs || ""));
+}
+
 function formatOccurrenceEvidence(report, generatedAt) {
+  const ot = isOtOccurrenceReport(report);
   const countBy = (items, getKey) => {
     const counts = new Map();
     for (const item of items) {
@@ -722,9 +841,12 @@ function formatOccurrenceEvidence(report, generatedAt) {
     .map(row => [row.label, morphDescription(row.label), row.count]);
   const distributionRows = countBy(report.occurrences, occurrence => occurrence.author || occurrence.bookName)
     .map(row => [row.label, row.count]);
-  const firstNt = report.occurrences[0]?.reference || "—";
+  const firstHit = report.occurrences[0]?.reference || "—";
   const firstPauline = firstReference(occurrence => occurrence.author === "Paul");
   const firstTitus = firstReference(occurrence => occurrence.bookName === "Titus");
+  const firstDaniel = firstReference(occurrence => occurrence.bookName === "Daniel");
+  const contextHeading = ot ? "Hebrew/Aramaic Context" : "Greek Context";
+  const morphHeader = ot ? "Morph" : "RMAC";
 
   const occurrenceSections = report.occurrences.map(occurrence => {
     const translations = occurrence.translations || {};
@@ -736,20 +858,20 @@ function formatOccurrenceEvidence(report, generatedAt) {
 
 ${valueOrDash(occurrence.reference)}
 
-#### Greek Context
+#### ${contextHeading}
 
-${valueOrDash(occurrence.greekText)}
+${valueOrDash(occurrenceSourceText(occurrence))}
 
 #### Morphology
 
 Surface form: ${valueOrDash(occurrence.surfaceForm)}  
 Lemma: ${valueOrDash(occurrence.lemma)}  
 Strong's: ${valueOrDash(occurrence.strongs)}  
-RMAC: ${valueOrDash(occurrence.morphology)}
+${morphHeader}: ${valueOrDash(occurrence.morphology)}
 
 #### Project
 
-Literal: ${valueOrDash(translations.projectLiteral)}
+Literal: ${valueOrDash(translations.projectLiteral || occurrence.gloss)}
 
 BLE: ${valueOrDash(translations.ble)}
 
@@ -766,6 +888,16 @@ SPNVBL: ${valueOrDash(translations.spnvbl)}
 </details>`;
   }).join("\n\n");
 
+  const firstUses = ot
+    ? `First OT occurrence: ${firstHit}
+
+First occurrence in Daniel: ${firstDaniel}`
+    : `First NT occurrence: ${firstHit}
+
+First Pauline occurrence: ${firstPauline}
+
+First occurrence in Titus: ${firstTitus}`;
+
   return `# Lemma Profile v0.1 — ${report.subject}
 
 ## Lemma Summary
@@ -774,7 +906,7 @@ SPNVBL: ${valueOrDash(translations.spnvbl)}
 |------|-------|
 | Lemma | ${valueOrDash(report.lemma)} |
 | Strong's | ${valueOrDash(report.strongs)} |
-| Total NT occurrences | ${report.occurrences.length} |
+| Total ${ot ? "OT" : "NT"} occurrences | ${report.occurrences.length} |
 | Source | cgv-data |
 | Generated timestamp | ${generatedAt} |
 
@@ -784,19 +916,15 @@ ${countTable(["Form", "Count"], formRows)}
 
 ## Morphology Summary
 
-${countTable(["RMAC", "Description", "Count"], morphologyRows)}
+${countTable([morphHeader, "Description", "Count"], morphologyRows)}
 
-## Author Distribution
+## ${ot ? "Book" : "Author"} Distribution
 
-${countTable(["Author / Book", "Count"], distributionRows)}
+${countTable([ot ? "Book" : "Author / Book", "Count"], distributionRows)}
 
 ## First Uses
 
-First NT occurrence: ${firstNt}
-
-First Pauline occurrence: ${firstPauline}
-
-First occurrence in Titus: ${firstTitus}
+${firstUses}
 
 ## Occurrence Blocks
 
@@ -805,6 +933,7 @@ ${occurrenceSections}
 }
 
 function formatSingleOccurrenceEvidence(report, generatedAt, target = {}) {
+  const ot = isOtOccurrenceReport(report);
   const reference = normalizeDecisionValue(target.reference);
   const surface = normalizeDecisionValue(target.surface);
   const occurrence = report.occurrences.find(item => (
@@ -812,6 +941,8 @@ function formatSingleOccurrenceEvidence(report, generatedAt, target = {}) {
     && (!surface || item.surfaceForm === surface)
   )) || report.occurrences[0];
   const translations = occurrence?.translations || {};
+  const contextHeading = ot ? "Hebrew/Aramaic Context" : "Greek Context";
+  const morphHeader = ot ? "Morph" : "RMAC";
 
   return `# Occurrence Evidence v0.1 — ${valueOrDash(occurrence?.reference)}
 
@@ -825,20 +956,20 @@ function formatSingleOccurrenceEvidence(report, generatedAt, target = {}) {
 | Source | cgv-data |
 | Generated timestamp | ${generatedAt} |
 
-## Greek Context
+## ${contextHeading}
 
-${valueOrDash(occurrence?.greekText)}
+${valueOrDash(occurrenceSourceText(occurrence))}
 
 ## Morphology
 
 Surface form: ${valueOrDash(occurrence?.surfaceForm)}  
 Lemma: ${valueOrDash(occurrence?.lemma)}  
 Strong's: ${valueOrDash(occurrence?.strongs)}  
-RMAC: ${valueOrDash(occurrence?.morphology)}
+${morphHeader}: ${valueOrDash(occurrence?.morphology)}
 
 ## Project
 
-Literal: ${valueOrDash(translations.projectLiteral)}
+Literal: ${valueOrDash(translations.projectLiteral || occurrence?.gloss)}
 
 BLE: ${valueOrDash(translations.ble)}
 
@@ -1018,7 +1149,7 @@ async function handleTranslation(request, response, url) {
     const phrases = await enrichTranslationPhraseRecords(merged, bookId);
     await mkdir(translationsDir, { recursive: true });
     await writeFile(documentFile, content.endsWith("\n") ? content : `${content}\n`, "utf8");
-    await writeFile(phraseFile, `${JSON.stringify(phrases, null, 2)}\n`, "utf8");
+    await writeTranslationPhrases(phraseFile, phrases, book, textualBasis);
     sendJson(response, 200, {
       saved: true,
       book: book.id,
@@ -1141,14 +1272,16 @@ async function handleApi(request, response, url) {
   }
 
   if (request.method === "GET" && url.pathname === "/api/translation/books") {
-    const books = NT_BOOKS.map(book => ({
+    const books = allTranslatorBooks().map(book => ({
       id: book.id,
       label: book.label,
       bleSlug: book.bleSlug,
-      hasPhrases: false
+      hasPhrases: false,
+      spine: book.spine || "nt"
     }));
     await Promise.all(books.map(async book => {
       const candidates = [
+        join(translationsDir, "oshb-spine", book.id, `${book.id}-phrases.json`),
         join(translationsDir, "tr-spine", book.id, `${book.id}-phrases-tr.json`),
         join(translationsDir, `${book.id}-phrases.json`)
       ];
@@ -1156,9 +1289,13 @@ async function handleApi(request, response, url) {
         try {
           await stat(candidate);
           book.hasPhrases = true;
-          book.textualBasis = candidate.includes("tr-spine")
-            ? "Scrivener 1894 TR"
-            : "MorphGNT/SBLGNT (fallback)";
+          if (candidate.includes("oshb-spine")) {
+            book.textualBasis = "OSHB/WLC";
+          } else if (candidate.includes("tr-spine")) {
+            book.textualBasis = "Scrivener 1894 TR";
+          } else {
+            book.textualBasis = "MorphGNT/SBLGNT (fallback)";
+          }
           break;
         } catch {
           // try next
@@ -1204,12 +1341,13 @@ async function handleApi(request, response, url) {
   if (request.method === "GET" && url.pathname === "/api/translation/reverse-links") {
     const bookId = bookIdFromRequest(url);
     const { book, reverseLinksFile } = translationPathsForBook(bookId);
+    const fallbackBasis = book.spine === "oshb" ? "OSHB/WLC" : "Scrivener 1894 TR";
     try {
       const raw = await readFile(reverseLinksFile, "utf8");
       const doc = JSON.parse(raw);
       sendJson(response, 200, {
         bookId: book.id,
-        textualBasis: doc.textualBasis || "Scrivener 1894 TR",
+        textualBasis: doc.textualBasis || fallbackBasis,
         schemaVersion: doc.schemaVersion || 1,
         stats: doc.stats || {},
         links: Array.isArray(doc.links) ? doc.links : []
@@ -1217,7 +1355,7 @@ async function handleApi(request, response, url) {
     } catch {
       sendJson(response, 200, {
         bookId: book.id,
-        textualBasis: "",
+        textualBasis: book.spine === "oshb" ? "OSHB/WLC" : "",
         schemaVersion: 1,
         stats: {},
         links: []
@@ -1327,8 +1465,8 @@ async function handleApi(request, response, url) {
     const decision = parseDecisionVersions(decisionContent).at(-1) || {};
     const meta = await readInvestigationMeta(id, investigationDir);
     const primary = String(meta.primarySubject || "");
-    const primaryStrongs = (primary.match(/\bG\d+\b/) || [])[0] || "";
-    const primaryLemma = primary.replace(/^G\d+\s*[—-]\s*/u, "").trim();
+    const primaryStrongs = (primary.match(/\b[GHA]\d+\b/i) || [])[0] || "";
+    const primaryLemma = primary.replace(/^[GHA]\d+\s*[—-]\s*/iu, "").trim();
 
     const strongs = normalizeDecisionValue(body.strongs)
       || normalizeDecisionValue(decision.strongs)
@@ -1340,6 +1478,7 @@ async function handleApi(request, response, url) {
       || normalizeDecisionValue(meta.originReference)
       || "Titus 1:1";
     const surface = normalizeDecisionValue(body.surface);
+    const language = languageFromStrongs(strongs, body.language || "");
 
     if (!strongs && !lemma) {
       sendJson(response, 400, {
@@ -1354,6 +1493,12 @@ async function handleApi(request, response, url) {
 
     try {
       if (body.type === "construction") {
+        if (language === "hebrew") {
+          sendJson(response, 400, {
+            error: "Construction gathering is Greek-only for now. Use Occurrence or Occurrences for Hebrew/Aramaic."
+          });
+          return;
+        }
         const report = await getGreekConstructionEvidence({
           strongs,
           lemma,
@@ -1367,7 +1512,9 @@ async function handleApi(request, response, url) {
         evidence = formatConstructionEvidence(report, generatedAt, id);
         historyEntry = `Generated Construction Evidence v0.1 for ${report.construction} from cgv-data.`;
       } else {
-        const report = await getGreekOccurrencesByStrongs(strongs, { lemma });
+        const report = language === "hebrew"
+          ? await getHebrewOccurrencesByStrongs(strongs, { lemma })
+          : await getGreekOccurrencesByStrongs(strongs, { lemma });
         evidence = body.type === "occurrence"
           ? formatSingleOccurrenceEvidence(report, generatedAt, {
             ...body,

@@ -38,9 +38,26 @@ export const OT_PILOT_BOOKS = [
   { id: "jonah", label: "Jonah", oshbFile: "Jonah.xml", bleSlug: "jonas", usfm: "JON", number: 32 }
 ];
 
+/** OT books with JSON OSHB spine under translations/oshb-spine/{id}/ */
+export const OSHB_SPINE_BOOKS = [
+  {
+    id: "daniel",
+    label: "Daniel",
+    bleSlug: "daniel",
+    usfm: "DAN",
+    number: 27,
+    bookCode: 27,
+    spine: "oshb"
+  }
+];
+
+export function allTranslatorBooks() {
+  return [...NT_BOOKS, ...OSHB_SPINE_BOOKS];
+}
+
 export function findBook(idOrLabel) {
   const key = String(idOrLabel || "").trim().toLowerCase();
-  return NT_BOOKS.find(b =>
+  return allTranslatorBooks().find(b =>
     b.id === key
     || b.label.toLowerCase() === key
     || b.bleSlug === key

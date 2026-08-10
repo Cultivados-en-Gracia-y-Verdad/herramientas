@@ -1,0 +1,32 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+items:
+- id: G0A-0031
+  decision: APPROVED
+  confidence: high
+  evidence: La reparación representa יַקִּירָה como «difícil» y conserva וְאָחֳרָן
+    לָא אִיתַי como la inexistencia de otro que pueda declarar el asunto; no se identifica
+    la distorsión señalada en la primera revisión.
+  notes: ''
+- id: G0A-0033
+  decision: APPROVED
+  confidence: high
+  evidence: La reparación representa מִתְקַטְּלִין directamente como «estaban siendo
+    ejecutados», sin añadir el traslado implícito en la versión anterior.
+  notes: ''
+- id: G0A-0044
+  decision: APPROVED
+  confidence: high
+  evidence: La reparación expresa הַעֵלְנִי como petición imperativa «llévame», corrigiendo
+    la forma defectuosa anterior y conservando la relación con el rey.
+  notes: ''
+- id: G0A-0055
+  decision: APPROVED
+  confidence: high
+  evidence: La reparación representa וּנְשָׂא הִמּוֹן רוּחָא como «los levantó el
+    viento», corrigiendo la corrupción/pronombre anterior y conservando el resto del
+    span.
+  notes: ''

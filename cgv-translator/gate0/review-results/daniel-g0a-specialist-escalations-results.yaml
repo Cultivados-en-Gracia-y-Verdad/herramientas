@@ -1,0 +1,62 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+items:
+- id: G0A-0021
+  decision: APPROVED
+  confidence: high
+  evidence: Daniel 2:1's unusual Hebrew נהיתה עליו is contextually understood as sleep
+    being gone/finished; the current Spanish «su sueño se fue de él» is defensible
+    and need not be changed.
+  notes: ''
+- id: G0A-0025
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: In Daniel 2:5, אזדא is better supported as making the king's word/decision
+    firm or irrevocable, not as saying that the matter/dream departed from him.
+  notes: Revise «El negocio se me fue» to «Mi decisión es firme».
+- id: G0A-0028
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: Daniel 2:8 repeats the same אזדא construction as 2:5 and should follow
+    the same translation decision.
+  notes: Revise «el negocio se me ha ido» to «mi decisión es firme».
+- id: G0A-0097
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: שני in Daniel 3:28 can denote changing/violating the king's word; Spanish
+    «mudaron» is misleading because it suggests editing the decree rather than violating
+    it.
+  notes: Use «quebrantaron el mandamiento del rey».
+- id: G0A-0126
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: The Aramaic imperative פרק in Daniel 4:27 is defensibly 'break off/break
+    away from'; the parallel clause specifies righteous conduct and mercy to the poor.
+    «redime tus pecados» risks importing a redemptive sense not required by the construction.
+  notes: Use a break-away formulation, preserving the parallel ethical clauses.
+- id: G0A-0276
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: ואין לו means that the anointed one has nothing / there is nothing for
+    him; «y no por sí» is a traditional interpretive expansion not supported by the
+    Hebrew wording.
+  notes: Use «y nada tendrá».
+- id: G0A-0277
+  decision: NEEDS_REVISION
+  confidence: medium
+  evidence: Daniel 9:27 is syntactically difficult, but the MT does not contain «pueblo»
+    in the final clause. A source-conservative rendering should retain כנף 'wing',
+    identify a desolating agent, and render the final שומם without adding a people.
+  notes: 'Use a deliberately source-conservative rendering: «sobre el ala de abominaciones
+    vendrá uno que desola... sobre el desolador»; do not insert «templo» or «pueblo»
+    without a textual/policy decision.'
+- id: G0A-0278
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: צבא most commonly denotes army/warfare and in Daniel 10:1 is well represented
+    as great conflict/war; «el tiempo fijado era largo» follows a traditional interpretive
+    rendering rather than the lexical wording.
+  notes: Use «y el conflicto era grande».

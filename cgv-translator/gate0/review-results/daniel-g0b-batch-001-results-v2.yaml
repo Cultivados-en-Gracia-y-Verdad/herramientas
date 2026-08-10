@@ -1,0 +1,61 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0B
+  gate: G0B_ALIGNMENT_VERIFICATION
+  book: daniel
+items:
+- id: G0B-00001
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'En el año' corresponds defensibly to the supplied source
+    token(s).
+  notes: ''
+- id: G0B-00002
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'tercero' corresponds defensibly to the supplied source token(s).
+  notes: ''
+- id: G0B-00003
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'del reino' corresponds defensibly to the supplied source
+    token(s).
+  notes: ''
+- id: G0B-00004
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'de Joacim' corresponds defensibly to the supplied source
+    token(s).
+  notes: ''
+- id: G0B-00005
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'rey' corresponds defensibly to the supplied source token(s).
+  notes: ''
+- id: G0B-00006
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'de Judá' corresponds defensibly to the supplied source token(s).
+  notes: ''
+- id: G0B-00007
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'vino' corresponds defensibly to the supplied source token(s).
+  notes: ''
+- id: G0B-00008
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'Nabucodonosor' corresponds defensibly to the supplied source
+    token(s).
+  notes: ''
+- id: G0B-00009
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'rey' corresponds defensibly to the supplied source token(s).
+  notes: ''
+- id: G0B-00010
+  decision: VERIFIED
+  confidence: high
+  evidence: Spanish unit 'de Babel' corresponds defensibly to the supplied source
+    token(s).
+  notes: ''

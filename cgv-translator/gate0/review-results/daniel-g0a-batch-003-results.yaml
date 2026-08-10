@@ -1,0 +1,157 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+items:
+- id: G0A-0031
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: El arameo יַקִּירָה califica el asunto como difícil/pesado, no como «singular».
+    Además, וְאָחֳרָן לָא אִיתַי expresa que no hay otro que pueda declararlo, no
+    simplemente «ni hay quien».
+  notes: Corregir sin introducir interpretación adicional.
+- id: G0A-0032
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0033
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: מִתְקַטְּלִין expresa que los sabios estaban siendo muertos/ejecutados.
+    «eran llevados a la muerte» añade una acción de traslado que no está en el span.
+  notes: Representar directamente la ejecución/muerte de los sabios.
+- id: G0A-0034
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0035
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0036
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0037
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0038
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0039
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0040
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0041
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0042
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0043
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0044
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: 'הַעֵלְנִי es una petición imperativa: «hazme entrar / llévame». La forma
+    española «me lleva delante del rey» es gramaticalmente defectuosa para esa petición.'
+  notes: Corregir a «llévame delante del rey» o equivalente.
+- id: G0A-0045
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0046
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0047
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0048
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0049
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0050
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0051
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0052
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0053
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0054
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase representa el span suministrado sin una omisión, adición o cambio
+    de relación gramatical sustantivo identificado en esta revisión.
+  notes: ''
+- id: G0A-0055
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: וּנְשָׂא הִמּוֹן רוּחָא expresa que el viento se los llevó/levantó. «y
+    os levantol el viento» es texto corrupto o error tipográfico y cambia los pronombres.
+  notes: Corregir el segmento a «y los levantó el viento» o equivalente.

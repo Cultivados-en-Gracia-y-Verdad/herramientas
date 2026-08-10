@@ -1,0 +1,30 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+items:
+- id: G0A-0081
+  decision: APPROVED
+  confidence: high
+  evidence: La reparación elimina la corrupción textual y representa גֻּבְרִין יְהוּדָאיִן
+    como «varones judíos», conservando la acusación y los tres nombres.
+  notes: ''
+- id: G0A-0082
+  decision: APPROVED
+  confidence: high
+  evidence: La reparación representa הֵיתָיוּ ... קֳדָם מַלְכָּא como que los varones
+    fueron traídos delante del rey y elimina la corrupción anterior.
+  notes: ''
+- id: G0A-0084
+  decision: APPROVED
+  confidence: high
+  evidence: La reparación corrige la condición a «si no la adoráis» y conserva la
+    secuencia de oír, postrarse/adorar, ser echados al horno y la pregunta final.
+  notes: ''
+- id: G0A-0095
+  decision: APPROVED
+  confidence: high
+  evidence: La reparación representa עַבְדוֹהִי דִּי אֱלָהָא עִלָּאָה como «siervos
+    del Dios Altísimo» y conserva la orden de salir y su salida del fuego.
+  notes: ''

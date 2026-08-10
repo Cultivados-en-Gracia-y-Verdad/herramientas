@@ -44,6 +44,7 @@ FENCE_RE = re.compile(r"^```(?P<lang>[\w-]*)\s*$")
 ACTOR_TRIPLE_RE = re.compile(r"[→⇒➡➜⟶⤷↪]")
 ACTORS_LINE_RE = re.compile(r"^Actores\b", re.IGNORECASE)
 TONO_LINE_RE = re.compile(r"^Tono\b", re.IGNORECASE)
+HEBREW_RUN_RE = re.compile(r"([֐-׿יִ-ﭏ]+(?:\s+[֐-׿יִ-ﭏ]+)*)")
 FRONT_MATTER_RE = re.compile(r"\A---\s*\n(?P<body>.*?)\n---\s*(?:\n|\Z)", re.DOTALL)
 DEFAULT_LOGO_PATH = Path(__file__).resolve().parent / "assets" / "cgv-logo.png"
 DEFAULT_MANUAL_PATH = Path(
@@ -390,6 +391,21 @@ def register_fonts() -> tuple[str, str, str, str]:
             break
         except TTFError:
             continue
+
+    hebrew_candidates = [
+        Path("/System/Library/Fonts/Supplemental/Times New Roman.ttf"),
+        Path("/System/Library/Fonts/Supplemental/Arial Unicode.ttf"),
+        Path("/Library/Fonts/Arial Unicode.ttf"),
+    ]
+    for heb_font in hebrew_candidates:
+        if not heb_font.exists():
+            continue
+        try:
+            pdfmetrics.registerFont(TTFont("CGVHebrew", os.fspath(heb_font)))
+            break
+        except TTFError:
+            continue
+
     return ("CGVSerif", "CGVSerif-Bold", "CGVSerif-Italic", "CGVSerif-BoldItalic")
 
 
@@ -681,6 +697,15 @@ def render_arrow_symbols(text: str) -> str:
     return ARROW_SYMBOLS_RE.sub(replace, text)
 
 
+def render_hebrew(text: str) -> str:
+    """Wrap Hebrew character runs in a font that has Hebrew glyphs."""
+    try:
+        pdfmetrics.getFont("CGVHebrew")
+    except KeyError:
+        return text
+    return HEBREW_RUN_RE.sub(lambda m: f"<font name='CGVHebrew'>{m.group(1)}</font>", text)
+
+
 def format_inline(text: str, variant: str = "teacher", *, scripture_style: bool = False) -> str:
     """Format inline Markdown. Scripture stays italic-only — never wrapped in «…»."""
     stripped = normalize_outline_symbols(text.strip())
@@ -690,6 +715,7 @@ def format_inline(text: str, variant: str = "teacher", *, scripture_style: bool 
     protected, footnote_replacements = protect_footnote_cites(protected)
     rendered = escape_inline(protected)
     rendered = render_arrow_symbols(rendered)
+    rendered = render_hebrew(rendered)
     rendered = restore_protected(rendered, answer_replacements)
     return restore_protected(rendered, footnote_replacements)
 

@@ -1,0 +1,578 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+  created_at: '2026-08-09T19:01:20.818347+00:00'
+  batch_size: 4
+  source_queue_artifacts:
+    spine:
+      path: /Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/translations/oshb-spine/daniel/daniel-oshb-spine.json
+      checksum_sha256: 40f53bf5f46fad84e28d796b3b3b7527f8420d47707af311a5959993dd8592c6
+    phrases:
+      path: /Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/translations/oshb-spine/daniel/daniel-phrases.json
+      checksum_sha256: 73e38b4986c81b095b1ca8e2eeaa1c15586707657d198584f6a14995e024cca9
+review_instructions: Review each Spanish phrase against the supplied source-token
+  evidence. Use APPROVED only when the phrase is defensible and complete. Use NEEDS_REVISION
+  when correction is required, REJECTED for unusable output, and ESCALATE when judgment
+  requires a stronger specialist/human decision.
+items:
+- id: G0A-0031
+  reference: Daniel 2:11
+  mt_reference: Daniel 2:11
+  spanish: Y el negocio que el rey demanda es difícil, y no hay otro que lo pueda
+    declarar delante del rey, salvo los dioses cuya morada no es con la carne.
+  source_tokens:
+  - sourceTokenId: h27002011001
+    surface: וּ/מִלְּתָ֨/א
+    lang: arc
+    lemma: c/4406
+    morph: AC/Ncfsd/Td
+    gloss: null
+  - sourceTokenId: h27002011002
+    surface: דִֽי
+    lang: arc
+    lemma: '1768'
+    morph: ATr
+    gloss: null
+  - sourceTokenId: h27002011003
+    surface: מַלְכָּ֤/ה
+    lang: arc
+    lemma: '4430'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002011004
+    surface: שָׁאֵל֙
+    lang: arc
+    lemma: '7593'
+    morph: AVqrmsa
+    gloss: null
+  - sourceTokenId: h27002011005
+    surface: יַקִּירָ֔ה
+    lang: arc
+    lemma: '3358'
+    morph: AAafsa
+    gloss: null
+  - sourceTokenId: h27002011006
+    surface: וְ/אָחֳרָן֙
+    lang: arc
+    lemma: c/321
+    morph: AC/Aamsa
+    gloss: null
+  - sourceTokenId: h27002011007
+    surface: לָ֣א
+    lang: arc
+    lemma: '3809'
+    morph: ATn
+    gloss: null
+  - sourceTokenId: h27002011008
+    surface: אִיתַ֔י
+    lang: arc
+    lemma: '383'
+    morph: ATa
+    gloss: null
+  - sourceTokenId: h27002011009
+    surface: דִּ֥י
+    lang: arc
+    lemma: '1768'
+    morph: ATr
+    gloss: null
+  - sourceTokenId: h27002011010
+    surface: יְחַוִּנַּ֖/הּ
+    lang: arc
+    lemma: '2324'
+    morph: AVpi3ms/Sp3fs
+    gloss: null
+  - sourceTokenId: h27002011011
+    surface: קֳדָ֣ם
+    lang: arc
+    lemma: '6925'
+    morph: AR
+    gloss: null
+  - sourceTokenId: h27002011012
+    surface: מַלְכָּ֑/א
+    lang: arc
+    lemma: '4430'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002011013
+    surface: לָהֵ֣ן
+    lang: arc
+    lemma: '3861'
+    morph: AC
+    gloss: null
+  - sourceTokenId: h27002011014
+    surface: אֱלָהִ֔ין
+    lang: arc
+    lemma: '426'
+    morph: ANcmpa
+    gloss: null
+  - sourceTokenId: h27002011015
+    surface: דִּ֚י
+    lang: arc
+    lemma: '1768'
+    morph: ATr
+    gloss: null
+  - sourceTokenId: h27002011016
+    surface: מְדָ֣רְ/ה֔וֹן
+    lang: arc
+    lemma: 4070 b
+    morph: ANcmsc/Sp3mp
+    gloss: null
+  - sourceTokenId: h27002011017
+    surface: עִם
+    lang: arc
+    lemma: '5974'
+    morph: AR
+    gloss: null
+  - sourceTokenId: h27002011018
+    surface: בִּשְׂרָ֖/א
+    lang: arc
+    lemma: '1321'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002011019
+    surface: לָ֥א
+    lang: arc
+    lemma: '3809'
+    morph: ATn
+    gloss: null
+  - sourceTokenId: h27002011020
+    surface: אִיתֽוֹ/הִי
+    lang: arc
+    lemma: '383'
+    morph: ATa/Sp3ms
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0033
+  reference: Daniel 2:13
+  mt_reference: Daniel 2:13
+  spanish: Y se publicó el mandamiento, y los sabios estaban siendo ejecutados; y
+    buscaron a Daniel y a sus compañeros para matarlos.
+  source_tokens:
+  - sourceTokenId: h27002013001
+    surface: וְ/דָתָ֣/א
+    lang: arc
+    lemma: c/1882
+    morph: AC/Ncfsd/Td
+    gloss: null
+  - sourceTokenId: h27002013002
+    surface: נֶפְקַ֔ת
+    lang: arc
+    lemma: '5312'
+    morph: AVqp3fs
+    gloss: null
+  - sourceTokenId: h27002013003
+    surface: וְ/חַכִּֽימַיָּ֖/א
+    lang: arc
+    lemma: c/2445
+    morph: AC/Ncmpd/Td
+    gloss: null
+  - sourceTokenId: h27002013004
+    surface: מִֽתְקַטְּלִ֑ין
+    lang: arc
+    lemma: '6992'
+    morph: AVMrmpa
+    gloss: null
+  - sourceTokenId: h27002013005
+    surface: וּ/בְע֛וֹ
+    lang: arc
+    lemma: c/1156
+    morph: AC/Vqp3mp
+    gloss: null
+  - sourceTokenId: h27002013006
+    surface: דָּנִיֵּ֥אל
+    lang: arc
+    lemma: '1841'
+    morph: ANp
+    gloss: null
+  - sourceTokenId: h27002013007
+    surface: וְ/חַבְר֖וֹ/הִי
+    lang: arc
+    lemma: c/2269
+    morph: AC/Ncmpc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27002013008
+    surface: לְ/הִתְקְטָלָֽה
+    lang: arc
+    lemma: l/6992
+    morph: AR/VMc
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0044
+  reference: Daniel 2:24
+  mt_reference: Daniel 2:24
+  spanish: 'Después de esto Daniel entró a Arioch, al cual el rey había puesto para
+    matar a los sabios de Babel; fue, y le dijo así: No mates a los sabios de Babel;
+    llévame delante del rey, que yo mostraré al rey la interpretación.'
+  source_tokens:
+  - sourceTokenId: h27002024001
+    surface: כָּ/ל
+    lang: arc
+    lemma: k/3606
+    morph: AC/C
+    gloss: null
+  - sourceTokenId: h27002024002
+    surface: קֳבֵ֣ל
+    lang: arc
+    lemma: '6903'
+    morph: AC
+    gloss: null
+  - sourceTokenId: h27002024003
+    surface: דְּנָ֗ה
+    lang: arc
+    lemma: '1836'
+    morph: AC
+    gloss: null
+  - sourceTokenId: h27002024004
+    surface: דָּֽנִיֵּאל֙
+    lang: arc
+    lemma: '1841'
+    morph: ANp
+    gloss: null
+  - sourceTokenId: h27002024005
+    surface: עַ֣ל
+    lang: arc
+    lemma: '5954'
+    morph: AVqp3ms
+    gloss: null
+  - sourceTokenId: h27002024006
+    surface: עַל
+    lang: arc
+    lemma: '5922'
+    morph: AR
+    gloss: null
+  - sourceTokenId: h27002024007
+    surface: אַרְי֔וֹךְ
+    lang: arc
+    lemma: 746 b
+    morph: ANp
+    gloss: null
+  - sourceTokenId: h27002024008
+    surface: דִּ֚י
+    lang: arc
+    lemma: '1768'
+    morph: ATr
+    gloss: null
+  - sourceTokenId: h27002024009
+    surface: מַנִּ֣י
+    lang: arc
+    lemma: '4483'
+    morph: AVpp3ms
+    gloss: null
+  - sourceTokenId: h27002024010
+    surface: מַלְכָּ֔/א
+    lang: arc
+    lemma: '4430'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002024011
+    surface: לְ/הוֹבָדָ֖ה
+    lang: arc
+    lemma: l/7
+    morph: AR/Vhc
+    gloss: null
+  - sourceTokenId: h27002024012
+    surface: לְ/חַכִּימֵ֣י
+    lang: arc
+    lemma: l/2445
+    morph: ATo/Ncmpc
+    gloss: null
+  - sourceTokenId: h27002024013
+    surface: בָבֶ֑ל
+    lang: arc
+    lemma: '895'
+    morph: ANp
+    gloss: null
+  - sourceTokenId: h27002024014
+    surface: אֲזַ֣ל
+    lang: arc
+    lemma: '236'
+    morph: AVqrmsa
+    gloss: null
+  - sourceTokenId: h27002024015
+    surface: וְ/כֵ֣ן
+    lang: arc
+    lemma: c/3652
+    morph: AC/D
+    gloss: null
+  - sourceTokenId: h27002024016
+    surface: אֲמַר
+    lang: arc
+    lemma: '560'
+    morph: AVqrmsa
+    gloss: null
+  - sourceTokenId: h27002024017
+    surface: לֵ֗/הּ
+    lang: arc
+    lemma: l
+    morph: AR/Sp3ms
+    gloss: null
+  - sourceTokenId: h27002024018
+    surface: לְ/חַכִּימֵ֤י
+    lang: arc
+    lemma: l/2445
+    morph: ATo/Ncmpc
+    gloss: null
+  - sourceTokenId: h27002024019
+    surface: בָבֶל֙
+    lang: arc
+    lemma: '895'
+    morph: ANp
+    gloss: null
+  - sourceTokenId: h27002024020
+    surface: אַל
+    lang: arc
+    lemma: '409'
+    morph: ATn
+    gloss: null
+  - sourceTokenId: h27002024021
+    surface: תְּהוֹבֵ֔ד
+    lang: arc
+    lemma: '7'
+    morph: AVhi2ms
+    gloss: null
+  - sourceTokenId: h27002024022
+    surface: הַעֵ֨לְ/נִי֙
+    lang: arc
+    lemma: '5954'
+    morph: AVhv2ms/Sp1cs
+    gloss: null
+  - sourceTokenId: h27002024023
+    surface: קֳדָ֣ם
+    lang: arc
+    lemma: '6925'
+    morph: AR
+    gloss: null
+  - sourceTokenId: h27002024024
+    surface: מַלְכָּ֔/א
+    lang: arc
+    lemma: '4430'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002024025
+    surface: וּ/פִשְׁרָ֖/א
+    lang: arc
+    lemma: c/6591
+    morph: AC/Ncmsd/Td
+    gloss: null
+  - sourceTokenId: h27002024026
+    surface: לְ/מַלְכָּ֥/א
+    lang: arc
+    lemma: l/4430
+    morph: AR/Ncmsd/Td
+    gloss: null
+  - sourceTokenId: h27002024027
+    surface: אֲחַוֵּֽא
+    lang: arc
+    lemma: '2324'
+    morph: AVpi1cs
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
+- id: G0A-0055
+  reference: Daniel 2:35
+  mt_reference: Daniel 2:35
+  spanish: Entonces fue también desmenuzado el hierro, el barro cocido, el metal,
+    la plata y el oro, y se tornaron como tamo de las eras del verano; y los levantó
+    el viento, y nunca más se les halló lugar. Mas la piedra que hirió a la imagen
+    fue hecha un gran monte, que hinchió toda la tierra.
+  source_tokens:
+  - sourceTokenId: h27002035001
+    surface: בֵּ/אדַ֣יִן
+    lang: arc
+    lemma: b/116
+    morph: AR/D
+    gloss: null
+  - sourceTokenId: h27002035002
+    surface: דָּ֣קוּ
+    lang: arc
+    lemma: '1855'
+    morph: AVqp3mp
+    gloss: null
+  - sourceTokenId: h27002035003
+    surface: כַ/חֲדָ֡ה
+    lang: arc
+    lemma: k/2298
+    morph: AR/Acfsa
+    gloss: null
+  - sourceTokenId: h27002035004
+    surface: פַּרְזְלָ/א֩
+    lang: arc
+    lemma: '6523'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002035005
+    surface: חַסְפָּ֨/א
+    lang: arc
+    lemma: '2635'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002035006
+    surface: נְחָשָׁ֜/א
+    lang: arc
+    lemma: '5174'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002035007
+    surface: כַּסְפָּ֣/א
+    lang: arc
+    lemma: '3702'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002035008
+    surface: וְ/דַהֲבָ֗/א
+    lang: arc
+    lemma: c/1722
+    morph: AC/Ncmsd/Td
+    gloss: null
+  - sourceTokenId: h27002035009
+    surface: וַ/הֲווֹ֙
+    lang: arc
+    lemma: c/1934
+    morph: AC/Vqp3mp
+    gloss: null
+  - sourceTokenId: h27002035010
+    surface: כְּ/ע֣וּר
+    lang: arc
+    lemma: k/5784
+    morph: AR/Ncmsa
+    gloss: null
+  - sourceTokenId: h27002035011
+    surface: מִן
+    lang: arc
+    lemma: '4481'
+    morph: AR
+    gloss: null
+  - sourceTokenId: h27002035012
+    surface: אִדְּרֵי
+    lang: arc
+    lemma: '147'
+    morph: ANcmpc
+    gloss: null
+  - sourceTokenId: h27002035013
+    surface: קַ֔יִט
+    lang: arc
+    lemma: '7007'
+    morph: ANcmsa
+    gloss: null
+  - sourceTokenId: h27002035014
+    surface: וּ/נְשָׂ֤א
+    lang: arc
+    lemma: c/5376
+    morph: AC/Vqp3ms
+    gloss: null
+  - sourceTokenId: h27002035015
+    surface: הִמּוֹן֙
+    lang: arc
+    lemma: '1994'
+    morph: APp3mp
+    gloss: null
+  - sourceTokenId: h27002035016
+    surface: רוּחָ֔/א
+    lang: arc
+    lemma: '7308'
+    morph: ANcfsd/Td
+    gloss: null
+  - sourceTokenId: h27002035017
+    surface: וְ/כָל
+    lang: arc
+    lemma: c/3606
+    morph: AC/Ncmsc
+    gloss: null
+  - sourceTokenId: h27002035018
+    surface: אֲתַ֖ר
+    lang: arc
+    lemma: '870'
+    morph: ANcmsa
+    gloss: null
+  - sourceTokenId: h27002035019
+    surface: לָא
+    lang: arc
+    lemma: '3809'
+    morph: ATn
+    gloss: null
+  - sourceTokenId: h27002035020
+    surface: הִשְׁתֲּכַ֣ח
+    lang: arc
+    lemma: '7912'
+    morph: AVup3ms
+    gloss: null
+  - sourceTokenId: h27002035021
+    surface: לְ/ה֑וֹן
+    lang: arc
+    lemma: l
+    morph: AR/Sp3mp
+    gloss: null
+  - sourceTokenId: h27002035022
+    surface: וְ/אַבְנָ֣/א
+    lang: arc
+    lemma: c/69
+    morph: AC/Ncfsd/Td
+    gloss: null
+  - sourceTokenId: h27002035023
+    surface: דִּֽי
+    lang: arc
+    lemma: '1768'
+    morph: ATr
+    gloss: null
+  - sourceTokenId: h27002035024
+    surface: מְחָ֣ת
+    lang: arc
+    lemma: '4223'
+    morph: AVqp3fs
+    gloss: null
+  - sourceTokenId: h27002035025
+    surface: לְ/צַלְמָ֗/א
+    lang: arc
+    lemma: l/6755
+    morph: AR/Ncmsd/Td
+    gloss: null
+  - sourceTokenId: h27002035026
+    surface: הֲוָ֛ת
+    lang: arc
+    lemma: '1934'
+    morph: AVqp3fs
+    gloss: null
+  - sourceTokenId: h27002035027
+    surface: לְ/ט֥וּר
+    lang: arc
+    lemma: l/2906
+    morph: AR/Ncmsa
+    gloss: null
+  - sourceTokenId: h27002035028
+    surface: רַ֖ב
+    lang: arc
+    lemma: '7229'
+    morph: AAamsa
+    gloss: null
+  - sourceTokenId: h27002035029
+    surface: וּ/מְלָ֥ת
+    lang: arc
+    lemma: c/4391
+    morph: AC/Vqp3fs
+    gloss: null
+  - sourceTokenId: h27002035030
+    surface: כָּל
+    lang: arc
+    lemma: '3606'
+    morph: ANcmsc
+    gloss: null
+  - sourceTokenId: h27002035031
+    surface: אַרְעָֽ/א
+    lang: arc
+    lemma: '772'
+    morph: ANcfsd/Td
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''

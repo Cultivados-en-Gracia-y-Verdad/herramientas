@@ -335,13 +335,31 @@ function lookupRvRendering(index, book, chapter, verse, strongs, occurrenceIndex
 }
 
 function lookupRvVerse(index, book, chapter, verse) {
-  return index.get(`${book}|${chapter}|${verse}`) || "";
+  const padded = String(book || "").padStart(2, "0");
+  return index.get(`${padded}|${chapter}|${verse}`)
+    || index.get(`${book}|${chapter}|${verse}`)
+    || "";
+}
+
+/** MorphGNT book 01–27 → Aquifer Protestant 40–66. */
+export function morphBookToAquiferBook(book) {
+  const value = Number(book);
+  if (!Number.isFinite(value) || value < 1 || value > 27) return "";
+  return String(value + 39).padStart(2, "0");
 }
 
 function bibleBookToMorphBook(book) {
   const value = Number(book);
   if (!Number.isFinite(value) || value < 40) return "";
   return String(value - 39).padStart(2, "0");
+}
+
+/**
+ * Look up RV1909 verse text by Aquifer Protestant book number (01–66).
+ */
+export function lookupRv1909AquiferVerse(indexes, aquiferBook, chapter, verse) {
+  if (!indexes?.rv1909) return "";
+  return lookupRvVerse(indexes.rv1909, aquiferBook, chapter, verse);
 }
 
 function stripLeadingVerseNumber(text) {
@@ -385,14 +403,18 @@ function parseMarkdownVerseIndex(content) {
     if (!verseLine) continue;
 
     const morphBook = bibleBookToMorphBook(bibleBook);
-    if (!morphBook) continue;
-
     const chapter = Number(chapterFromId || chapterText);
     const verse = Number(verseFromId || verseText);
-    const verseKey = `${morphBook}|${chapter}|${verse}`;
+    // Always index by Aquifer Protestant book number (01–66).
+    // MorphGNT 01–27 keys collide with OT Aquifer numbers (e.g. 27 = Daniel vs Revelation).
+    const verseKey = `${bibleBook}|${chapter}|${verse}`;
     const fullVerseKey = `${bibleBook}${chapterFromId}${verseFromId}`;
     const cleanText = stripLeadingVerseNumber(verseLine);
     verseTextIndex.set(verseKey, cleanText);
+    if (morphBook) {
+      // Keep a morph-prefixed alias for callers that still pass MorphGNT book codes.
+      verseTextIndex.set(`m${morphBook}|${chapter}|${verse}`, cleanText);
+    }
     tokenIndex.set(fullVerseKey, tokenizeVerseText(verseLine));
   }
 
@@ -579,12 +601,15 @@ export function resolveHistoricalRenderings(indexes, {
     strongs,
     occurrenceIndex
   );
+  const aquiferBook = morphBookToAquiferBook(book) || String(book || "").padStart(2, "0");
   const rv1862Focus = lookupRvRendering(indexes.rv1862, book, chapter, verse, strongs, occurrenceIndex);
-  const rv1909Focus = lookupRvRendering(indexes.rv1909, book, chapter, verse, strongs, occurrenceIndex);
+  const rv1909Focus = lookupRvRendering(indexes.rv1909, aquiferBook, chapter, verse, strongs, occurrenceIndex)
+    || lookupRvRendering(indexes.rv1909, `m${String(book || "").padStart(2, "0")}`, chapter, verse, strongs, occurrenceIndex);
 
   const rv1862 = lookupRvVerse(indexes.rv1862, book, chapter, verse) || rv1862Focus;
   const rv1909 = lookupAlignedSpan(indexes.rv1909Alignment, sourceTokenIds)
-    || lookupRvVerse(indexes.rv1909, book, chapter, verse)
+    || lookupRvVerse(indexes.rv1909, aquiferBook, chapter, verse)
+    || lookupRvVerse(indexes.rv1909, `m${String(book || "").padStart(2, "0")}`, chapter, verse)
     || rv1909Focus;
   const spnbes = indexes.spnbes.verseTextIndex.get(bcv) || spnbesFocus;
   const spnvbl = indexes.spnvbl.verseTextIndex.get(bcv) || spnvblFocus;

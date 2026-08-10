@@ -299,18 +299,23 @@ function linkInvestigationToWordInfo({ lemma = "", strongs = "", investigationId
 }
 
 function registerTokenAsGreekWord(token = {}) {
-  const lemma = token.lemma || token.greek || "";
+  const surface = token.greek || token.surface || "";
+  const lemma = token.lemma || surface || "";
   const strongs = String(token.strongs || "").trim().toUpperCase();
-  const key = greekWordKey({ strongs, lemma, surface: token.greek });
+  const key = greekWordKey({ strongs, lemma, surface });
   if (!key) return "";
 
   const existing = greekWordInfo[key]
     || Object.values(greekWordInfo).find(info =>
       (strongs && info.strongs === strongs)
       || (lemma && info.lemma === lemma)
-      || (token.greek && info.surface === token.greek)
+      || (surface && info.surface === surface)
     )
     || {};
+
+  const language = token.lang === "arc" || token.lang === "he" || isHebrewStrongs(strongs)
+    ? "hebrew"
+    : (existing.language || "greek");
 
   greekWordInfo[key] = {
     ...existing,
@@ -318,11 +323,12 @@ function registerTokenAsGreekWord(token = {}) {
     strongs: strongs || existing.strongs || "",
     investigationId: existing.investigationId || "",
     approved: existing.approved || false,
-    rendering: existing.rendering || token.ble || "",
+    rendering: existing.rendering || token.ble || token.es || "",
     source: existing.source || "BLE",
     reference: currentPhrase()?.reference || existing.reference || "Titus 1:1",
-    surface: token.greek || existing.surface || lemma,
-    rmac: token.rmac || existing.rmac || "",
+    surface: surface || existing.surface || lemma,
+    rmac: token.rmac || token.morph || existing.rmac || "",
+    language,
     construction: existing.construction
   };
   if (greekWordInfo[key].strongs) {
@@ -1148,12 +1154,16 @@ function renderSpanishUnits() {
       reverseLinksMeta.hidden = false;
       reverseLinksMeta.textContent = state.bookId === "titus"
         ? "No reverse links for this phrase yet."
-        : "Reverse interlinear available for Tito TR spine first.";
+        : state.bookId === "daniel"
+          ? "No reverse links for this phrase yet."
+          : "Reverse interlinear available for Tito TR spine first.";
     } else {
       const status = entry?.status || "seeded";
       reverseLinksMeta.hidden = false;
       if (status === "seeded-hand") {
         reverseLinksMeta.textContent = "Hand-seeded links — click a Spanish unit to highlight Greek.";
+      } else if (status === "gloss-seed") {
+        reverseLinksMeta.textContent = "Gloss-seed links — click a Spanish unit to highlight Hebrew/Aramaic; hand-refine before trusting.";
       } else if (status === "seeded-ai") {
         reverseLinksMeta.textContent = "AI-seeded (lemma+morph) — click to highlight; confirm before trusting.";
       } else if (status === "seeded-ai-invalid" || status === "seeded-ai-error") {
@@ -1284,19 +1294,19 @@ function renderPhraseInterlinear() {
       button.className = `greek-word-trigger ${info.approved ? "approved" : "provisional"}`;
       button.dataset.greekKey = key;
       if (token.sourceTokenId) button.dataset.sourceTokenId = token.sourceTokenId;
-      button.textContent = token.greek;
+      button.textContent = token.greek || token.surface || "—";
       greekLine.append(button);
     } else {
-      greekLine.textContent = token.greek || "—";
+      greekLine.textContent = token.greek || token.surface || "—";
     }
 
     const bleLine = document.createElement("div");
     bleLine.className = "interlinear-ble";
-    bleLine.textContent = token.ble || token.strongs || "—";
+    bleLine.textContent = token.ble || token.es || token.strongs || "—";
 
     const rmacLine = document.createElement("div");
     rmacLine.className = "interlinear-rmac";
-    rmacLine.textContent = token.rmac || "—";
+    rmacLine.textContent = token.rmac || token.morph || "—";
 
     item.append(greekLine, bleLine, rmacLine);
     phraseInterlinear.append(item);
@@ -1961,8 +1971,8 @@ async function syncGatherSubjectFromInvestigation() {
   const { decision } = await api(`/api/investigations/${state.investigation}/decision`).catch(() => ({ decision: null }));
   const meta = await api(`/api/investigations/${state.investigation}`).then(payload => payload.meta).catch(() => null);
   const primary = String(meta?.primarySubject || "");
-  const primaryStrongs = (primary.match(/\bG\d+\b/) || [])[0] || "";
-  const primaryLemma = primary.replace(/^G\d+\s*[—-]\s*/u, "").trim();
+  const primaryStrongs = (primary.match(/\b[GHA]\d+\b/i) || [])[0] || "";
+  const primaryLemma = primary.replace(/^[GHA]\d+\s*[—-]\s*/iu, "").trim();
 
   const lemma = decision?.lemma || primaryLemma || decisionLemma?.value || "";
   const strongs = decision?.strongs || primaryStrongs || decisionStrongs?.value || "";
@@ -1979,6 +1989,7 @@ async function syncGatherSubjectFromInvestigation() {
     state.selectedGreekKey = key;
     greekWordInfo[key] = {
       ...greekWordInfo[key],
+      language: sourceLanguageForToken({ strongs, lemma, surface: greekWordInfo[key].surface }),
       reference: meta?.originReference || greekWordInfo[key].reference || "Titus 1:1",
       surface: greekWordInfo[key].surface || lemma
     };
@@ -1996,14 +2007,15 @@ async function openGatherModal() {
 
   const info = selectedGreekInfo();
   const constructionInput = document.querySelector("input[name='gather-type'][value='construction']");
+  const hebrewSubject = sourceLanguageForToken(info) === "hebrew";
   if (constructionInput) {
-    constructionInput.disabled = !info.construction;
+    constructionInput.disabled = !info.construction || hebrewSubject;
     if (constructionInput.disabled && constructionInput.checked) {
       document.querySelector("input[name='gather-type'][value='occurrences']").checked = true;
     }
   }
   gatherMessage.textContent = info.lemma || info.strongs
-    ? `Subject: ${[info.strongs, info.lemma].filter(Boolean).join(" — ")}`
+    ? `Subject: ${[info.strongs, info.lemma].filter(Boolean).join(" — ")}${hebrewSubject ? " (OT / OSHB)" : ""}`
     : "Set lemma/Strong's in Decision before gathering.";
   replaceActions.hidden = true;
   runGather.disabled = !(info.lemma || info.strongs);
@@ -2152,21 +2164,35 @@ spanishUnits?.addEventListener("click", event => {
   highlightGreekTokenIds(tokenIds);
 });
 
+function isHebrewStrongs(strongs = "") {
+  return /^[HA]\d+/i.test(String(strongs || "").trim());
+}
+
+function sourceLanguageForToken(info = {}) {
+  if (info.language) return info.language;
+  if (isHebrewStrongs(info.strongs)) return "hebrew";
+  if (/[\u0590-\u05FF]/u.test(info.surface || info.lemma || "")) return "hebrew";
+  return "greek";
+}
+
 async function createInvestigationFromLemma(payload = {}) {
   const lemma = String(payload.lemma || "").trim();
   if (!lemma) {
     throw new Error("Lemma is required to start an investigation.");
   }
 
+  const language = payload.language || sourceLanguageForToken(payload);
   const result = await api("/api/investigations", {
     method: "POST",
     body: JSON.stringify({
       lemma,
       strongs: payload.strongs || "",
+      language,
       reference: payload.reference || currentPhrase()?.reference || "Titus 1:1",
       clause: payload.clause || phraseGreekText(currentPhrase()),
       surface: payload.surface || "",
-      ble: payload.ble || payload.rendering || ""
+      ble: payload.ble || payload.rendering || "",
+      book: payload.book || ""
     })
   });
 
@@ -2178,7 +2204,12 @@ async function createInvestigationFromLemma(payload = {}) {
     rendering: payload.ble || payload.rendering || "",
     source: result.existing ? "Existing investigation" : "New investigation"
   });
-  if (key) state.selectedGreekKey = key;
+  if (key) {
+    state.selectedGreekKey = key;
+    if (greekWordInfo[key]) {
+      greekWordInfo[key].language = result.language || language;
+    }
+  }
 
   await loadInvestigations();
   hideGreekDecisionPanel();
@@ -2219,6 +2250,11 @@ async function submitNewInvestigationModal() {
     await createInvestigationFromLemma({
       lemma,
       strongs: newInvStrongs.value.trim(),
+      language: sourceLanguageForToken({
+        lemma,
+        strongs: newInvStrongs.value.trim(),
+        surface: lemma
+      }),
       reference: newInvReference.value.trim() || currentPhrase()?.reference || "Titus 1:1",
       clause: phraseGreekText(currentPhrase()),
       surface: lemma,
@@ -2233,20 +2269,26 @@ async function submitNewInvestigationModal() {
 openInvestigationButton.addEventListener("click", () => {
   const info = greekWordInfo[state.selectedGreekKey];
   if (!info) {
-    prototypeMessage.textContent = "Select a Greek word first.";
+    prototypeMessage.textContent = "Select a source word first.";
     return;
   }
   if (info.investigationId) {
     void openInvestigation(info.investigationId);
     return;
   }
+  const language = sourceLanguageForToken(info);
+  const lemma = language === "hebrew" && info.surface
+    ? info.surface
+    : (info.lemma || info.surface || "");
   void createInvestigationFromLemma({
-    lemma: info.lemma,
+    lemma,
     strongs: info.strongs,
+    language,
     reference: info.reference || currentPhrase()?.reference,
     clause: phraseGreekText(currentPhrase()),
     surface: info.surface,
-    ble: info.rendering
+    ble: info.rendering,
+    book: state.bookId === "daniel" ? "Daniel" : ""
   }).catch(error => {
     prototypeMessage.textContent = error.message || "Could not create investigation.";
   });

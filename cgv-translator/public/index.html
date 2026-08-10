@@ -52,7 +52,7 @@
               placeholder="Translate this phrase from the source text…"
             ></textarea>
             <p class="scripture-label reverse-links-label">Reverse interlinear</p>
-            <div id="spanish-units" class="spanish-units" aria-label="Spanish units linked to Greek"></div>
+            <div id="spanish-units" class="spanish-units" aria-label="Spanish units linked to source tokens"></div>
             <p id="reverse-links-meta" class="reverse-links-meta" hidden></p>
             <p id="phrase-save-status" class="phrase-save-status" data-state="saved">Saved</p>
 
@@ -113,7 +113,7 @@
               </div>
             </div>
 
-            <aside id="decision-panel" class="decision-panel" aria-label="Greek word investigation" hidden>
+            <aside id="decision-panel" class="decision-panel" aria-label="Source word investigation" hidden>
               <p class="decision-title">Translation decision</p>
               <dl>
                 <div>
@@ -251,13 +251,13 @@
         </div>
 
         <label class="field-label" for="new-inv-lemma">Lemma</label>
-        <input id="new-inv-lemma" type="text" autocomplete="off" placeholder="πίστις" />
+        <input id="new-inv-lemma" type="text" autocomplete="off" placeholder="πίστις / מֶלֶךְ" />
 
         <label class="field-label" for="new-inv-strongs">Strong's (optional)</label>
-        <input id="new-inv-strongs" type="text" autocomplete="off" placeholder="G4102" />
+        <input id="new-inv-strongs" type="text" autocomplete="off" placeholder="G4102 or H4428" />
 
         <label class="field-label" for="new-inv-reference">Origin reference</label>
-        <input id="new-inv-reference" type="text" autocomplete="off" placeholder="Titus 1:1" />
+        <input id="new-inv-reference" type="text" autocomplete="off" placeholder="Titus 1:1 / Daniel 1:1" />
 
         <p id="new-investigation-message" class="modal-message" role="status" aria-live="polite"></p>
 

@@ -1,0 +1,13 @@
+schema_version: "0.1"
+
+packet:
+  queue_id: ""
+  gate: ""
+  book: ""
+
+items:
+  - id: ""
+    decision: PENDING
+    confidence: null
+    evidence: ""
+    notes: ""

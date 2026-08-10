@@ -1,0 +1,249 @@
+from __future__ import annotations
+from copy import deepcopy
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+import hashlib
+import yaml
+
+GATES = [
+    "G0_ALIGNMENT","G1_COMPILE","G2_MECHANICAL","G3_TEXTUAL","G4_SPECIALISTS",
+    "G5_ARCHITECTURE","G6_WRITING","G7_EDITORIAL","G8_FINAL_VERIFY",
+    "G9_HUMAN_REVIEW","G10_RELEASE",
+]
+
+GATE_LABELS = {
+    "G0_ALIGNMENT": "Source / Alignment Validation",
+    "G1_COMPILE": "Compiler Generate",
+    "G2_MECHANICAL": "Structural / Mechanical Validation",
+    "G3_TEXTUAL": "Textual Validation",
+    "G4_SPECIALISTS": "Specialist Validation",
+    "G5_ARCHITECTURE": "Architectural Review",
+    "G6_WRITING": "Authorized Writing",
+    "G7_EDITORIAL": "Editorial Processing",
+    "G8_FINAL_VERIFY": "Final Verification",
+    "G9_HUMAN_REVIEW": "Human Review",
+    "G10_RELEASE": "Release Gate",
+}
+
+VALID_TRANSITIONS = {
+    "NOT_STARTED": {"READY","BLOCKED"},
+    "READY": {"RUNNING","BLOCKED"},
+    "RUNNING": {"PASS","FAIL","REVIEW_REQUIRED","BLOCKED"},
+    "REVIEW_REQUIRED": {"PASS","FAIL"},
+    "FAIL": {"READY"},
+    "PASS": {"STALE"},
+    "STALE": {"READY"},
+    "BLOCKED": {"READY"},
+    "SKIPPED": set(),
+}
+
+def now_iso():
+    return datetime.now(timezone.utc).isoformat()
+
+def checksum(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024*1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+def load_yaml(path: Path):
+    with path.open("r", encoding="utf-8") as f:
+        return yaml.safe_load(f) or {}
+
+def save_yaml(path: Path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        yaml.safe_dump(data, f, allow_unicode=True, sort_keys=False)
+
+def new_state(template, project_id, title):
+    s = deepcopy(template)
+    s["project"]["id"] = project_id
+    s["project"]["title"] = title
+    return s
+
+def open_blockers(state):
+    return [b for b in state.get("blockers", []) if not b.get("resolved", False)]
+
+def compute_current_gate(state):
+    for g in GATES:
+        if state["gates"][g]["status"] not in {"PASS","SKIPPED"}:
+            return g
+    return "G10_RELEASE"
+
+def recompute(state):
+    state["workflow"]["current_gate"] = compute_current_gate(state)
+    if open_blockers(state):
+        state["project"]["status"] = "BLOCKED"
+    elif state["workflow"].get("release_status") == "RELEASED":
+        state["project"]["status"] = "RELEASED"
+    elif state["project"].get("status") not in {"PAUSED","ARCHIVED"}:
+        state["project"]["status"] = "ACTIVE"
+
+def record_event(state, actor, action, gate="", notes=""):
+    events = state.setdefault("provenance", [])
+    events.append({
+        "id": f"EVT-{len(events)+1:06d}",
+        "timestamp": now_iso(),
+        "actor": actor,
+        "action": action,
+        "gate": gate,
+        "notes": notes,
+    })
+
+def transition_gate(state, gate, new_status, actor="human", notes=""):
+    cur = state["gates"][gate]["status"]
+    if new_status == cur:
+        return
+    if new_status not in VALID_TRANSITIONS.get(cur, set()):
+        raise ValueError(f"Illegal transition: {gate} {cur} -> {new_status}")
+    idx = GATES.index(gate)
+    if new_status in {"RUNNING","PASS","REVIEW_REQUIRED"}:
+        for prev in GATES[:idx]:
+            if state["gates"][prev]["status"] not in {"PASS","SKIPPED"}:
+                raise ValueError(f"{gate} cannot proceed: {prev} has not passed.")
+    if open_blockers(state) and new_status in {"RUNNING","PASS"}:
+        raise ValueError("Project has open blockers.")
+    state["gates"][gate]["status"] = new_status
+    if new_status == "PASS" and idx + 1 < len(GATES):
+        nxt = GATES[idx+1]
+        if state["gates"][nxt]["status"] in {"BLOCKED","NOT_STARTED"}:
+            state["gates"][nxt]["status"] = "READY"
+    recompute(state)
+    record_event(state, actor, f"{cur} -> {new_status}", gate, notes)
+
+def verify_gate0_attestation(att, project_id):
+    errors = []
+    if att.get("schema_version") != "0.1":
+        errors.append("unsupported schema version")
+    project = att.get("project", {})
+    if project.get("book") != project_id:
+        errors.append(f"book/project mismatch: expected {project_id}")
+    if project.get("producer_project") != "cgv-translator":
+        errors.append("producer_project must be cgv-translator")
+
+    source = att.get("source", {})
+    alignment = att.get("alignment", {})
+    if source.get("name") != "LBF":
+        errors.append("source must be LBF")
+
+    for label, obj in [("source",source),("alignment",alignment)]:
+        if not obj.get("path"): errors.append(f"{label} path missing")
+        if not obj.get("revision"): errors.append(f"{label} revision missing")
+        if not obj.get("checksum_sha256"): errors.append(f"{label} checksum missing")
+
+    producer_required = [
+        "verse_completeness","verse_order","duplicate_source_segments",
+        "missing_source_segments","token_accounting","span_integrity","reproducibility"
+    ]
+    producer = att.get("producer", {})
+    if producer.get("status") != "PASS":
+        errors.append("producer status not PASS")
+    for c in producer_required:
+        if producer.get("checks", {}).get(c) != "PASS":
+            errors.append(f"producer check not PASS: {c}")
+
+    independent_required = [
+        "source_identity","source_text_integrity","alignment_integrity",
+        "span_boundary_review","suspicious_omission_review","suspicious_duplication_review"
+    ]
+    independent = att.get("independent_verification", {})
+    if independent.get("status") != "PASS":
+        errors.append("independent verification not PASS")
+    for c in independent_required:
+        if independent.get("checks", {}).get(c) != "PASS":
+            errors.append(f"independent check not PASS: {c}")
+
+    human = att.get("human_linguistic_review", {})
+    if human.get("required", True) and human.get("status") != "PASS":
+        errors.append("required human linguistic review not PASS")
+
+    final = att.get("attestation", {})
+    if final.get("status") != "VERIFIED":
+        errors.append("attestation status not VERIFIED")
+    if final.get("blockers"):
+        errors.append("attestation has unresolved blockers")
+
+    for label, obj in [("source",source),("alignment",alignment)]:
+        p = Path(obj.get("path",""))
+        if p.exists():
+            if checksum(p) != obj.get("checksum_sha256"):
+                errors.append(f"{label} checksum mismatch")
+
+    return errors
+
+def accept_gate0(state, att, attestation_path, actor="human"):
+    errors = verify_gate0_attestation(att, state["project"]["id"])
+    if errors:
+        raise ValueError("Gate 0 attestation rejected:\n- " + "\n- ".join(errors))
+
+    source = att["source"]
+    alignment = att["alignment"]
+
+    state["source"].update({
+        "name":"LBF",
+        "path":source["path"],
+        "revision":source["revision"],
+        "checksum":source["checksum_sha256"],
+        "validated":True,
+    })
+    state["alignment"].update({
+        "path":alignment["path"],
+        "revision":alignment["revision"],
+        "checksum":alignment["checksum_sha256"],
+        "status":"PASS",
+        "validated_at":att.get("attestation",{}).get("issued_at"),
+        "validated_by":[
+            att.get("producer",{}).get("tool_version") or "cgv-translator",
+            att.get("independent_verification",{}).get("verifier") or "independent-verifier",
+            att.get("human_linguistic_review",{}).get("reviewer") or "human-reviewer",
+        ],
+    })
+    g = state["gates"]["G0_ALIGNMENT"]
+    g.update({
+        "attestation_path":attestation_path,
+        "source_revision":source["revision"],
+        "alignment_revision":alignment["revision"],
+        "source_checksum":source["checksum_sha256"],
+        "alignment_checksum":alignment["checksum_sha256"],
+    })
+
+    if g["status"] == "READY":
+        transition_gate(state, "G0_ALIGNMENT", "RUNNING", actor, "Attestation received.")
+    if state["gates"]["G0_ALIGNMENT"]["status"] in {"RUNNING","REVIEW_REQUIRED"}:
+        transition_gate(state, "G0_ALIGNMENT", "PASS", actor, "Verified Translator attestation accepted.")
+
+    state["artifact"]["current"] = False
+    state["workflow"]["regeneration_required"] = True
+    recompute(state)
+
+def validate_state(state):
+    errors = []
+    for idx, g in enumerate(GATES):
+        status = state["gates"][g]["status"]
+        if status in {"PASS","SKIPPED"}:
+            for prev in GATES[:idx]:
+                if state["gates"][prev]["status"] not in {"PASS","SKIPPED"}:
+                    errors.append(f"{g} passed while {prev} has not passed")
+    if state["artifact"].get("current"):
+        if state["artifact"].get("generated_from_source_revision") != state["source"].get("revision"):
+            errors.append("current artifact source revision mismatch")
+        if state["artifact"].get("generated_from_alignment_revision") != state["alignment"].get("revision"):
+            errors.append("current artifact alignment revision mismatch")
+    return errors
+
+def next_action(state):
+    if open_blockers(state):
+        b = open_blockers(state)[0]
+        return f"Resolve blocker {b['id']}: {b['reason']}"
+    g = compute_current_gate(state)
+    st = state["gates"][g]["status"]
+    label = GATE_LABELS[g]
+    if st == "READY": return f"Start {g} — {label}"
+    if st == "RUNNING": return f"Complete {g} — {label}"
+    if st == "REVIEW_REQUIRED": return f"Review {g} — {label}"
+    if st == "FAIL": return f"Resolve failures and reset {g} to READY"
+    if st == "STALE": return f"Rerun {g} — {label}"
+    if st == "BLOCKED": return f"{g} — {label} is blocked"
+    return f"Review {g} — {label}"

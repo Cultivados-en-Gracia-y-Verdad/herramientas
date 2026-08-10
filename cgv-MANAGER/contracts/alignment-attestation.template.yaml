@@ -1,0 +1,62 @@
+schema_version: "0.1"
+
+project:
+  book: ""
+  language: "es"
+  producer_project: "cgv-translator"
+
+source:
+  name: "LBF"
+  path: ""
+  revision: ""
+  checksum_sha256: ""
+
+alignment:
+  path: ""
+  revision: ""
+  checksum_sha256: ""
+
+producer:
+  status: NOT_STARTED
+  tool_version: ""
+  checked_at: null
+  checks:
+    verse_completeness: NOT_STARTED
+    verse_order: NOT_STARTED
+    duplicate_source_segments: NOT_STARTED
+    missing_source_segments: NOT_STARTED
+    token_accounting: NOT_STARTED
+    span_integrity: NOT_STARTED
+    reproducibility: NOT_STARTED
+  report_path: ""
+
+independent_verification:
+  status: NOT_STARTED
+  verifier: ""
+  runtime: ""
+  model: ""
+  verified_at: null
+  checks:
+    source_identity: NOT_STARTED
+    source_text_integrity: NOT_STARTED
+    alignment_integrity: NOT_STARTED
+    span_boundary_review: NOT_STARTED
+    suspicious_omission_review: NOT_STARTED
+    suspicious_duplication_review: NOT_STARTED
+  report_path: ""
+  findings: []
+
+human_linguistic_review:
+  required: true
+  status: NOT_STARTED
+  reviewer: ""
+  reviewed_at: null
+  scope: ""
+  report_path: ""
+  findings: []
+
+attestation:
+  status: NOT_VERIFIED
+  issued_at: null
+  blockers: []
+  notes: ""

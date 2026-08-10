@@ -1,0 +1,15 @@
+tiers:
+  deterministic:
+    runtime: python
+  local_small:
+    runtime: opencode
+    model: qwen3.5-4b
+  local_reasoning:
+    runtime: opencode
+    model: qwen3.5-9b
+  strong_writer:
+    runtime: claude-code
+    model: sonnet
+  architecture:
+    runtime: claude-code
+    model: opus

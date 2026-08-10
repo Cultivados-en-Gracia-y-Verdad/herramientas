@@ -1,0 +1,81 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+items:
+- id: G0A-0001
+  decision: APPROVED
+  confidence: high
+  evidence: 'La frase española da cuenta del movimiento completo de Daniel 1:2: ויתן
+    אדני בידו, Joacim y parte de los utensilios, el traslado a Sinar y la colocación
+    de los utensilios en la casa del tesoro de su dios.'
+  notes: ''
+- id: G0A-0002
+  decision: APPROVED
+  confidence: high
+  evidence: 'La frase conserva los participantes y relaciones de Daniel 1:3: el rey
+    habla a Aspenaz, jefe de sus eunucos, y ordena traer de los hijos de Israel, de
+    la simiente real y de los nobles.'
+  notes: ''
+- id: G0A-0003
+  decision: APPROVED
+  confidence: medium
+  evidence: 'La frase representa todos los elementos principales de Daniel 1:4: jóvenes
+    sin defecto, buena apariencia, capacidad en sabiduría/conocimiento, aptitud para
+    estar en el palacio y aprendizaje de la escritura y lengua de los caldeos.'
+  notes: ''
+- id: G0A-0004
+  decision: APPROVED
+  confidence: high
+  evidence: La frase conserva la asignación diaria de comida y vino, el período de
+    tres años y el resultado de estar delante del rey; corresponde al orden y contenido
+    del span hebreo.
+  notes: ''
+- id: G0A-0005
+  decision: APPROVED
+  confidence: high
+  evidence: 'La frase representa directamente ויהי בהם מבני יהודה y los cuatro nombres:
+    Daniel, Ananías, Misael y Azarías, sin añadir relaciones no presentes.'
+  notes: ''
+- id: G0A-0006
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: El hebreo introduce que el jefe de los eunucos les puso nombres y luego
+    asigna cada nombre nuevo mediante לְ + nombre personal. La forma española 'puso
+    a Daniel Beltsasar' deja ambigua la relación gramatical entre Daniel y el nombre
+    Beltsasar.
+  notes: 'Revisar a una construcción española explícita, por ejemplo: ''y a Daniel
+    le puso por nombre Beltsasar...'' (y lo mismo para los demás), sin cambiar los
+    nombres ni el contenido.'
+- id: G0A-0007
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: ויבקש מן־שר הסריסים expresa una petición/solicitud dirigida al jefe de
+    los eunucos. 'Buscó del jefe' no conserva correctamente esa relación verbal en
+    español.
+  notes: Revisar 'y buscó del jefe...' a una forma equivalente a 'y pidió/solicitó
+    del jefe de los eunucos que no se contaminara', manteniendo el resto del span.
+- id: G0A-0008
+  decision: NEEDS_REVISION
+  confidence: medium
+  evidence: ויתן האלהים את־דניאל לחסד ולרחמים לפני שר הסריסים presenta a Daniel como
+    objeto de la acción y חסד/רחמים como la disposición favorable ante el jefe. 'Dios
+    dio a Daniel misericordia y compasiones' puede leerse como si Daniel recibiera
+    esas cualidades, no como favor/compasión concedidos ante el jefe.
+  notes: Revisar para conservar explícitamente la relación 'Dios concedió/puso a Daniel
+    en favor y compasión delante del jefe de los eunucos' o equivalente defendible.
+- id: G0A-0009
+  decision: NEEDS_REVISION
+  confidence: high
+  evidence: כגילכם contiene גיל, 'edad', y compara los rostros con los jóvenes de
+    la misma edad. 'los jóvenes que son como vosotros' pierde ese dato léxico específico.
+  notes: Revisar a 'los jóvenes de vuestra misma edad' o una formulación equivalente
+    que conserve גיל. El resto de la frase puede mantenerse.
+- id: G0A-0010
+  decision: APPROVED
+  confidence: medium
+  evidence: La frase conserva que Daniel habla al encargado/mayordomo que el jefe
+    de los eunucos había puesto sobre Daniel, Ananías, Misael y Azarías. La relación
+    de מנה ... על está representada sin omitir participantes.
+  notes: ''
