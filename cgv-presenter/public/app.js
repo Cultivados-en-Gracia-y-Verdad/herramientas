@@ -1016,7 +1016,7 @@ function applySharedPopupState() {
     reference.classList.remove("open");
   });
 
-  if ((isProjector || isAudience) && document.getElementById("sharedPopupOverlay")) {
+  if ((isProjector || isAudience || isPresenter) && document.getElementById("sharedPopupOverlay")) {
     return;
   }
 
@@ -1769,10 +1769,10 @@ document.addEventListener("click", async event => {
     return;
   }
 
-  // Clicks inside the projector/audience popup overlay should not dismiss it,
+  // Clicks inside the shared popup overlay should not dismiss it,
   // but nested references inside Greek usage popups should still open.
   if (
-    (isProjector || isAudience) &&
+    (isProjector || isAudience || isPresenter) &&
     event.target.closest("#sharedPopupOverlay") &&
     !event.target.closest(".bible-ref")
   ) {
@@ -1784,7 +1784,7 @@ document.addEventListener("click", async event => {
     return;
   }
 
-  if (isPresenter && reference) {
+  if (isPresenter && reference && !document.getElementById("sharedPopupOverlay")) {
     event.preventDefault();
     event.stopPropagation();
     await ensureDynamicPopup(reference);
@@ -1805,11 +1805,11 @@ document.addEventListener("click", async event => {
     return;
   }
 
-  if ((isProjector || isAudience) && reference && document.getElementById("sharedPopupOverlay")) {
+  if ((isProjector || isAudience || isPresenter) && reference && document.getElementById("sharedPopupOverlay")) {
     event.preventDefault();
     await ensureDynamicPopup(reference);
     const nextReference = reference.dataset.reference || null;
-    if (isProjector) {
+    if (isProjector || isPresenter) {
       const nextPopupReference = popupState.reference === nextReference ? null : nextReference;
       popupState = {
         reference: nextPopupReference,
