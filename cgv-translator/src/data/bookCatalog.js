@@ -48,6 +48,15 @@ export const OSHB_SPINE_BOOKS = [
     number: 27,
     bookCode: 27,
     spine: "oshb"
+  },
+  {
+    id: "zechariah",
+    label: "Zechariah",
+    bleSlug: "zacarias",
+    usfm: "ZEC",
+    number: 38,
+    bookCode: 38,
+    spine: "oshb"
   }
 ];
 
