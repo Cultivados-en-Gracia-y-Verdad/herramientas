@@ -2,7 +2,7 @@
 """Daniel golden-corpus regression for the CGV/LBF workflow.
 
 This script is read-only with respect to canonical Daniel artifacts. Any mutation
-used to exercise invalidation behavior happens only in memory or a temp directory.
+used to exercise invalidation behavior happens only in memory.
 """
 from __future__ import annotations
 
@@ -26,6 +26,7 @@ DANIEL_DIR = ROOT / "translations" / "oshb-spine" / "daniel"
 PHRASES = DANIEL_DIR / "daniel-phrases.json"
 SPINE = DANIEL_DIR / "daniel-oshb-spine.json"
 REVERSE = DANIEL_DIR / "daniel-reverse-links.json"
+FINAL_G0B_REVERSE = DANIEL_DIR / "daniel-reverse-links.final-g0b.json"
 G0A_REPORT = ROOT / "gate0" / "reports" / "daniel-g0a-promotion-report.yaml"
 G0B_RESULTS = ROOT / "gate0" / "review-results" / "daniel-g0b-final-verification-results.yaml"
 QUEUE_GENERATOR = ROOT / "gate0" / "generate-review-queues.py"
@@ -84,18 +85,18 @@ def check_save_cannot_self_approve() -> None:
     source = MAIN_JS.read_text(encoding="utf-8")
     forbidden = 'phrase.suggestionSource = phrase.workingText.trim() ? "lbf-approved" : "blank";'
     check(forbidden not in source, "Save does not assign lbf-approved")
-
-    # The canonical Save behavior must invalidate only a changed Spanish phrase.
     check('phrase.suggestionSource = "lbf-preliminary"' in source, "Changed saved Spanish becomes lbf-preliminary")
     check("spanishChanged" in source, "Save distinguishes changed from unchanged Spanish")
+    check("previousSuggestionSource" in source, "Failed Save restores the prior approval state")
 
 
 def check_book_artifacts() -> tuple[dict, dict, dict]:
-    for path in (PHRASES, SPINE, REVERSE, G0A_REPORT, G0B_RESULTS):
+    for path in (PHRASES, SPINE, REVERSE, FINAL_G0B_REVERSE, G0A_REPORT, G0B_RESULTS):
         check(path.is_file(), f"Required artifact exists: {path.relative_to(ROOT)}")
 
     check(sha256_file(PHRASES) == EXPECTED["phrases_sha256"], "Daniel phrase artifact matches verified checksum")
     check(sha256_file(SPINE) == EXPECTED["spine_sha256"], "Daniel OSHB spine matches audited checksum")
+    check(REVERSE.read_bytes() == FINAL_G0B_REVERSE.read_bytes(), "Current reverse links are exactly the final G0B alignment artifact")
 
     phrase_doc = load_json(PHRASES)
     spine_doc = load_json(SPINE)
@@ -109,15 +110,17 @@ def check_book_artifacts() -> tuple[dict, dict, dict]:
     refs = [p.get("reference") for p in phrases]
     check(len(refs) == len(set(refs)), "Daniel phrase references are unique")
 
-    source_tokens = sum(len(p.get("sourceTokenIds", [])) for p in phrases)
-    check(source_tokens == EXPECTED["source_tokens"], "Daniel phrase spine covers 6035 source tokens")
+    phrase_source_tokens = sum(len(p.get("sourceTokenIds", [])) for p in phrases)
+    check(phrase_source_tokens == EXPECTED["source_tokens"], "Daniel phrases cover 6035 source tokens")
 
-    language_counts = {"he": 0, "arc": 0}
-    for phrase in phrases:
-        for row in phrase.get("tokenRows", []):
-            lang = row.get("lang")
-            if lang in language_counts:
-                language_counts[lang] += 1
+    verses = spine_doc.get("verses", {})
+    check(len(verses) == EXPECTED["phrases"], "Daniel OSHB spine has 357 verses")
+    spine_tokens = [token for verse in verses.values() for token in verse.get("tokens", [])]
+    check(len(spine_tokens) == EXPECTED["source_tokens"], "Daniel OSHB spine has 6035 source tokens")
+    language_counts = {
+        "he": sum(token.get("lang") == "he" for token in spine_tokens),
+        "arc": sum(token.get("lang") == "arc" for token in spine_tokens),
+    }
     check(language_counts["he"] == EXPECTED["hebrew_tokens"], "Daniel Hebrew token count is 2333")
     check(language_counts["arc"] == EXPECTED["aramaic_tokens"], "Daniel Aramaic token count is 3702")
 
@@ -144,7 +147,6 @@ def check_g0a(phrase_doc: dict, spine_doc: dict) -> None:
     check(artifacts.get("phrases_sha256_after") == EXPECTED["phrases_sha256"], "G0A promotion output checksum matches current Daniel phrases")
     check(artifacts.get("spine_sha256") == EXPECTED["spine_sha256"], "G0A promotion source checksum matches current Daniel spine")
 
-    # Exercise targeted G0A invalidation entirely in memory.
     generator = load_queue_generator()
     baseline = generator.make_g0a("daniel", spine_doc, phrase_doc, SPINE, PHRASES)
     check(len(baseline["items"]) == 0, "Unchanged approved Daniel opens no new G0A work")
@@ -188,21 +190,34 @@ def check_g0b(phrase_doc: dict, spine_doc: dict, reverse_doc: dict) -> None:
     baseline = generator.make_g0b("daniel", spine_doc, phrase_doc, reverse_doc, SPINE, PHRASES, REVERSE)
     check(len(baseline["items"]) == 0, "Verified unchanged Daniel alignment opens no new G0B work")
 
-    # Test targeted review invalidation directly against the queue-preservation rule.
-    sample = {
-        "review_key": "G0B:Daniel 1:1:regression-unit",
-        "item_checksum": "alignment-evidence-v1",
-        "review": {"decision": "VERIFIED"},
-    }
+    # Model the required alignment-edit invalidation: the affected record must no
+    # longer claim verified status. The queue generator then reopens only that record.
+    changed_reverse = copy.deepcopy(reverse_doc)
+    changed_link = next((link for link in changed_reverse["links"] if link.get("units")), None)
+    check(changed_link is not None, "Daniel has an alignment record available for invalidation test")
+    affected_reference = changed_link.get("reference")
+    changed_link["status"] = "needs-review"
+    changed_link["units"][0]["sourceTokenIds"] = list(changed_link["units"][0].get("sourceTokenIds", []))
+    changed_queue = generator.make_g0b(
+        "daniel", spine_doc, phrase_doc, changed_reverse, SPINE, PHRASES, REVERSE
+    )
+    affected = [item for item in changed_queue["items"] if item.get("reference") == affected_reference]
+    unrelated = [item for item in changed_queue["items"] if item.get("reference") != affected_reference]
+    check(bool(affected), "Changed alignment with cleared verified status reopens affected G0B work")
+    check(not unrelated, "Alignment-only invalidation does not reopen unrelated G0B work")
+    check(len(generator.make_g0a("daniel", spine_doc, phrase_doc, SPINE, PHRASES)["items"]) == 0, "Alignment-only change leaves G0A valid")
+
+    sample = copy.deepcopy(affected[0])
+    sample["review"]["decision"] = "VERIFIED"
     same = [copy.deepcopy(sample)]
     preserved, reset = generator.preserve_review(same, {"items": [copy.deepcopy(sample)]})
     check(preserved == 1 and reset == 0, "Unchanged alignment evidence preserves G0B verification")
 
-    changed = [copy.deepcopy(sample)]
-    changed[0]["item_checksum"] = "alignment-evidence-v2"
-    changed[0]["review"] = {"decision": "PENDING"}
-    preserved, reset = generator.preserve_review(changed, {"items": [copy.deepcopy(sample)]})
-    check(preserved == 0 and reset == 1, "Changed alignment evidence invalidates only the affected G0B verification")
+    changed_evidence = [copy.deepcopy(sample)]
+    changed_evidence[0]["item_checksum"] = "changed-alignment-evidence-checksum"
+    changed_evidence[0]["review"] = {"decision": "PENDING"}
+    preserved, reset = generator.preserve_review(changed_evidence, {"items": [copy.deepcopy(sample)]})
+    check(preserved == 0 and reset == 1, "Changed alignment evidence invalidates the affected G0B verification")
 
 
 def check_release(phrase_doc: dict) -> None:
