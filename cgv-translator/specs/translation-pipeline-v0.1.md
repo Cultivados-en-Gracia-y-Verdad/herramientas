@@ -1,3 +1,14 @@
+> **Status: SUPERSEDED**
+>
+> This document describes an earlier prototype translation pipeline.
+> It is retained for historical reference.
+>
+> The canonical cgv-translator production workflow is defined in:
+>
+> `../WORKFLOW.md`
+
+---
+
 # Translation Pipeline v0.1
 
 ## Purpose
