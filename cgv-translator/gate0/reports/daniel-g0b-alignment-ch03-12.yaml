@@ -1,0 +1,7495 @@
+schema_version: '0.1'
+book: daniel
+audit: G0B_ALIGNMENT_CH03_12
+summary:
+  verses_processed: 287
+  units_processed: 3229
+  VERIFIED: 2843
+  RELINK: 1
+  DATA_ERROR_STALE_UNIT: 281
+  ESCALATE: 104
+  unexplained_empty_alignments: 104
+  unaccounted_lexical_source_tokens: 596
+  validation: FAIL
+relinks:
+- reference: Daniel 3:1
+  unitId: '70:9'
+  spanish_unit: codos
+  previous_sourceTokenIds: []
+  corrected_sourceTokenIds:
+  - h27003001011
+  decision: RELINK
+  confidence: HIGH
+  brief_reason: Current unit surface matches the unassigned same-verse Aramaic token אַמִּין / codo; prior empty link left a lexical token unaccounted.
+data_error_stale_units:
+- reference: Daniel 3:4
+  unitId: '73:6'
+  spanish_unit: y lenguas
+  current_spanish_slice: ' lenguas:'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:8
+  unitId: '77:1'
+  spanish_unit: en el mismo
+  current_spanish_slice: ' en aquel m'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:8
+  unitId: '77:2'
+  spanish_unit: tiempo
+  current_spanish_slice: smo ti
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:8
+  unitId: '77:3'
+  spanish_unit: algunos
+  current_spanish_slice: mpo, al
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:8
+  unitId: '77:4'
+  spanish_unit: varones
+  current_spanish_slice: unos va
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:8
+  unitId: '77:5'
+  spanish_unit: caldeos
+  current_spanish_slice: ones ca
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:8
+  unitId: '77:6'
+  spanish_unit: de los os
+  current_spanish_slice: n a los j
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:8
+  unitId: '77:7'
+  spanish_unit: judi
+  current_spanish_slice: díos
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:2'
+  spanish_unit: judi
+  current_spanish_slice: íos,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:3'
+  spanish_unit: los cuales
+  current_spanish_slice: 'os cuales '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:4'
+  spanish_unit: pusiste
+  current_spanish_slice: 'usiste '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:5'
+  spanish_unit: tú sobre
+  current_spanish_slice: 'ú sobre '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:6'
+  spanish_unit: los negocios
+  current_spanish_slice: 'os negocios '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:7'
+  spanish_unit: de la provincia
+  current_spanish_slice: 'e la provincia '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:8'
+  spanish_unit: de Babel
+  current_spanish_slice: e Babel;
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:9'
+  spanish_unit: Sadrac
+  current_spanish_slice: adrac,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:10'
+  spanish_unit: Mesac
+  current_spanish_slice: esac,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:11'
+  spanish_unit: y Abed
+  current_spanish_slice: ' Abed-'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:12'
+  spanish_unit: nego
+  current_spanish_slice: 'ego:'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:13'
+  spanish_unit: estos varones
+  current_spanish_slice: stos varones,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:14'
+  spanish_unit: oh rey
+  current_spanish_slice: h rey,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:15'
+  spanish_unit: de ti
+  current_spanish_slice: e ti;
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:16'
+  spanish_unit: no adoran
+  current_spanish_slice: 'o adoran '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:17'
+  spanish_unit: tus dioses
+  current_spanish_slice: us dioses,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:18'
+  spanish_unit: no adoran
+  current_spanish_slice: 'o adoran '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:19'
+  spanish_unit: la imagen
+  current_spanish_slice: 'a imagen '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:20'
+  spanish_unit: de oro
+  current_spanish_slice: 'e oro '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:12
+  unitId: '81:21'
+  spanish_unit: que tú levantaste
+  current_spanish_slice: ue tú levantaste.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:13
+  unitId: '82:12'
+  spanish_unit: os
+  current_spanish_slice: tr
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:13
+  unitId: '82:13'
+  spanish_unit: delante
+  current_spanish_slice: 'elante '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:13
+  unitId: '82:14'
+  spanish_unit: del rey
+  current_spanish_slice: el rey.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:14'
+  spanish_unit: Dios
+  current_spanish_slice: Altí
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:15'
+  spanish_unit: salid
+  current_spanish_slice: mo, s
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:16'
+  spanish_unit: y venid
+  current_spanish_slice: lid y v
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:17'
+  spanish_unit: Entonces
+  current_spanish_slice: id. Ento
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:18'
+  spanish_unit: Sadrac
+  current_spanish_slice: ces Sa
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:19'
+  spanish_unit: Mesac
+  current_spanish_slice: ac, M
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:20'
+  spanish_unit: y Abed
+  current_spanish_slice: 'ac, y '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:21'
+  spanish_unit: nego
+  current_spanish_slice: bed-
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:22'
+  spanish_unit: salieron
+  current_spanish_slice: go, sali
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:23'
+  spanish_unit: de en medio
+  current_spanish_slice: ron de en m
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:26
+  unitId: '95:24'
+  spanish_unit: del fuego
+  current_spanish_slice: dio del f
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:14'
+  spanish_unit: en él, y el mandamiento
+  current_spanish_slice: en él, y quebrantaron e
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:15'
+  spanish_unit: del rey
+  current_spanish_slice: ' mandam'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:16'
+  spanish_unit: mudaron
+  current_spanish_slice: ento de
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:17'
+  spanish_unit: y entregaron
+  current_spanish_slice: rey, y entre
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:18'
+  spanish_unit: sus cuerpos
+  current_spanish_slice: aron sus cu
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:19'
+  spanish_unit: antes
+  current_spanish_slice: 'rpos '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:20'
+  spanish_unit: que sirviesen
+  current_spanish_slice: ntes que sirv
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:21'
+  spanish_unit: ni adoraran
+  current_spanish_slice: esen ni ado
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:22'
+  spanish_unit: otro
+  current_spanish_slice: aran
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:23'
+  spanish_unit: dios
+  current_spanish_slice: otro
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 3:28
+  unitId: '97:24'
+  spanish_unit: que su Dios
+  current_spanish_slice: dios que su
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:9
+  unitId: '108:10'
+  spanish_unit: me expresa
+  current_spanish_slice: dime las v
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:9
+  unitId: '108:11'
+  spanish_unit: las visiones
+  current_spanish_slice: siones de mi
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:9
+  unitId: '108:12'
+  spanish_unit: de mi sueño
+  current_spanish_slice: sueño que h
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:9
+  unitId: '108:13'
+  spanish_unit: que he visto
+  current_spanish_slice: ' visto, y su'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:9
+  unitId: '108:14'
+  spanish_unit: y su interpretación
+  current_spanish_slice: nterpretación.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:0'
+  spanish_unit: las visiones
+  current_spanish_slice: n las vision
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:1'
+  spanish_unit: de mi cabeza
+  current_spanish_slice: s de mi cabe
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:2'
+  spanish_unit: en mi cama
+  current_spanish_slice: a en mi ca
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:3'
+  spanish_unit: me Parecia
+  current_spanish_slice: ': veía un '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:4'
+  spanish_unit: que veía
+  current_spanish_slice: 'rbol en '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:5'
+  spanish_unit: un árbol
+  current_spanish_slice: 'edio de '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:6'
+  spanish_unit: en medio
+  current_spanish_slice: a tierra
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:7'
+  spanish_unit: de la tierra
+  current_spanish_slice: ' cuya altura'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:8'
+  spanish_unit: cuya
+  current_spanish_slice: ra g
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:9'
+  spanish_unit: altura
+  current_spanish_slice: ande.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:10'
+  spanish_unit: era
+  current_spanish_slice: ''
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:10
+  unitId: '109:11'
+  spanish_unit: grande
+  current_spanish_slice: ''
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:27
+  unitId: '126:0'
+  spanish_unit: eso
+  current_spanish_slice: que
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:27
+  unitId: '126:1'
+  spanish_unit: una prolongación
+  current_spanish_slice: tal vez será eso
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:27
+  unitId: '126:2'
+  spanish_unit: de tu tranquilidad
+  current_spanish_slice: una prolongación d
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:29
+  unitId: '128:2'
+  spanish_unit: se andando
+  current_spanish_slice: andaba pas
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:29
+  unitId: '128:3'
+  spanish_unit: paseando
+  current_spanish_slice: ándose s
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:29
+  unitId: '128:4'
+  spanish_unit: sobre
+  current_spanish_slice: bre e
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:29
+  unitId: '128:5'
+  spanish_unit: el palacio
+  current_spanish_slice: ' palacio d'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:29
+  unitId: '128:6'
+  spanish_unit: del reino
+  current_spanish_slice: l reino d
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:29
+  unitId: '128:7'
+  spanish_unit: de Babel
+  current_spanish_slice: ' Babel,'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:31
+  unitId: '130:0'
+  spanish_unit: Aun
+  current_spanish_slice: Aún
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:31
+  unitId: '130:4'
+  spanish_unit: una voz
+  current_spanish_slice: ' una vo'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:31
+  unitId: '130:5'
+  spanish_unit: del cielo
+  current_spanish_slice: ' del ciel'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:31
+  unitId: '130:6'
+  spanish_unit: A ti
+  current_spanish_slice: ' A t'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 4:31
+  unitId: '130:7'
+  spanish_unit: de ti
+  current_spanish_slice: ' de t'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:2'
+  spanish_unit: los vasos
+  current_spanish_slice: 'os vasos '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:3'
+  spanish_unit: de oro
+  current_spanish_slice: 'e oro '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:4'
+  spanish_unit: que habían
+  current_spanish_slice: 'ue habían '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:5'
+  spanish_unit: del templo
+  current_spanish_slice: 'el templo '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:6'
+  spanish_unit: de la casa
+  current_spanish_slice: 'e la casa '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:7'
+  spanish_unit: de Dios
+  current_spanish_slice: 'e Dios '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:8'
+  spanish_unit: en Jerusalén
+  current_spanish_slice: n Jerusalén,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:9'
+  spanish_unit: y bebieron
+  current_spanish_slice: ' bebieron '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:10'
+  spanish_unit: con ellos
+  current_spanish_slice: 'on ellos '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:11'
+  spanish_unit: el rey
+  current_spanish_slice: 'l rey '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:12'
+  spanish_unit: y sus príncipes
+  current_spanish_slice: ' sus príncipes,'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:3
+  unitId: '139:13'
+  spanish_unit: y sus concubinas
+  current_spanish_slice: ' sus concubinas.'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:12
+  unitId: '148:6'
+  spanish_unit: la interpretación
+  current_spanish_slice: a interpretación.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:15
+  unitId: '151:2'
+  spanish_unit: delante
+  current_spanish_slice: 'elante '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:15
+  unitId: '151:3'
+  spanish_unit: de mí, sabios
+  current_spanish_slice: 'e mí sabios, '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:15
+  unitId: '151:4'
+  spanish_unit: astrólogos
+  current_spanish_slice: 'trólogos, '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:15
+  unitId: '151:5'
+  spanish_unit: esta escritura
+  current_spanish_slice: 'ta escritura, '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:15
+  unitId: '151:6'
+  spanish_unit: y me mostrasen
+  current_spanish_slice: me mostrasen s
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:15
+  unitId: '151:7'
+  spanish_unit: su interpretación
+  current_spanish_slice: ' interpretación: '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:15
+  unitId: '151:8'
+  spanish_unit: la interpretación
+  current_spanish_slice: ' interpretación d'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:15
+  unitId: '151:9'
+  spanish_unit: del negocio
+  current_spanish_slice: l negocio.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:20
+  unitId: '156:9'
+  spanish_unit: y traspasaron
+  current_spanish_slice: y quitaron de
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:20
+  unitId: '156:10'
+  spanish_unit: de él la gloria
+  current_spanish_slice: 'él la gloria:'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:1'
+  spanish_unit: lo mandando
+  current_spanish_slice: andó Belsas
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:2'
+  spanish_unit: Belsasar
+  current_spanish_slice: r, y vis
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:3'
+  spanish_unit: vistieron
+  current_spanish_slice: eron a Da
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:4'
+  spanish_unit: a Daniel
+  current_spanish_slice: iel de p
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:5'
+  spanish_unit: de púrpura
+  current_spanish_slice: rpura, y e
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:6'
+  spanish_unit: un collar
+  current_spanish_slice: llar de o
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:7'
+  spanish_unit: de oro
+  current_spanish_slice: o, y p
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:8'
+  spanish_unit: y pregonaron
+  current_spanish_slice: gonaron de é
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:9'
+  spanish_unit: de él que fuera
+  current_spanish_slice: ' que fuera el t'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:10'
+  spanish_unit: el tercer
+  current_spanish_slice: rcer seño
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:11'
+  spanish_unit: señor
+  current_spanish_slice: ' en e'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 5:29
+  unitId: '165:12'
+  spanish_unit: en el reino
+  current_spanish_slice: ' reino.'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:13
+  unitId: '180:4'
+  spanish_unit: oh rey
+  current_spanish_slice: ' ni de'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:13
+  unitId: '180:5'
+  spanish_unit: ni del edicto
+  current_spanish_slice: edicto que co
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:13
+  unitId: '180:6'
+  spanish_unit: que confirmaste
+  current_spanish_slice: firmaste; antes
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:13
+  unitId: '180:7'
+  spanish_unit: antes
+  current_spanish_slice: res v
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:13
+  unitId: '180:8'
+  spanish_unit: tres
+  current_spanish_slice: 'ces '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:13
+  unitId: '180:9'
+  spanish_unit: veces
+  current_spanish_slice: l día
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:13
+  unitId: '180:10'
+  spanish_unit: su petición
+  current_spanish_slice: ción.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:18
+  unitId: '185:0'
+  spanish_unit: Se Fue
+  current_spanish_slice: Se fue
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:18
+  unitId: '185:1'
+  spanish_unit: de él, y se le fue
+  current_spanish_slice: 'e él, y se le fue '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:18
+  unitId: '185:2'
+  spanish_unit: el sueño
+  current_spanish_slice: l sueño.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:0'
+  spanish_unit: Y lo mandando
+  current_spanish_slice: 'Y mandándolo '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:1'
+  spanish_unit: el rey
+  current_spanish_slice: l rey,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:3'
+  spanish_unit: hombres
+  current_spanish_slice: 'ombres '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:4'
+  spanish_unit: que habían
+  current_spanish_slice: 'ue habían '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:5'
+  spanish_unit: acusado
+  current_spanish_slice: 'cusado '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:6'
+  spanish_unit: a Daniel
+  current_spanish_slice: ' Daniel,'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:7'
+  spanish_unit: en el foso
+  current_spanish_slice: 'n el foso '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:8'
+  spanish_unit: de los leones
+  current_spanish_slice: e los leones,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:9'
+  spanish_unit: ellos
+  current_spanish_slice: llos,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:10'
+  spanish_unit: de ellos
+  current_spanish_slice: e ellos,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:11'
+  spanish_unit: y quebrantaron
+  current_spanish_slice: ' quebrantaron '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 6:24
+  unitId: '191:12'
+  spanish_unit: todos sus huesos
+  current_spanish_slice: odos sus huesos.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:4
+  unitId: '199:11'
+  spanish_unit: de la tierra
+  current_spanish_slice: a de la tier
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:4
+  unitId: '199:12'
+  spanish_unit: sobre
+  current_spanish_slice: a sob
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:4
+  unitId: '199:13'
+  spanish_unit: los pies
+  current_spanish_slice: e los pi
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:4
+  unitId: '199:14'
+  spanish_unit: de hombre
+  current_spanish_slice: a de homb
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:4
+  unitId: '199:15'
+  spanish_unit: y le fue
+  current_spanish_slice: ', y le f'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:4
+  unitId: '199:16'
+  spanish_unit: corazón
+  current_spanish_slice: o coraz
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:4
+  unitId: '199:17'
+  spanish_unit: de hombre
+  current_spanish_slice: n de homb
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:5
+  unitId: '200:8'
+  spanish_unit: 'así: te Levanta'
+  current_spanish_slice: 'así: Levántate,'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:5
+  unitId: '200:9'
+  spanish_unit: traga
+  current_spanish_slice: 'raga '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:5
+  unitId: '200:10'
+  spanish_unit: carne
+  current_spanish_slice: 'arne '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:5
+  unitId: '200:11'
+  spanish_unit: mucha
+  current_spanish_slice: ucha.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:2'
+  spanish_unit: de ave
+  current_spanish_slice: 'as de '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:3'
+  spanish_unit: en sus espaldas
+  current_spanish_slice: ve en sus espal
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:4'
+  spanish_unit: tenía
+  current_spanish_slice: 's: te'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:5'
+  spanish_unit: también
+  current_spanish_slice: ía tamb
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:6'
+  spanish_unit: esta bestia
+  current_spanish_slice: én esta bes
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:7'
+  spanish_unit: cuatro
+  current_spanish_slice: ia cua
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:8'
+  spanish_unit: cabezas
+  current_spanish_slice: ro cabe
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:9'
+  spanish_unit: y le fue
+  current_spanish_slice: 's; y le '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:10'
+  spanish_unit: dada
+  current_spanish_slice: ue d
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:6
+  unitId: '201:11'
+  spanish_unit: potestad
+  current_spanish_slice: da potes
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:16
+  unitId: '211:0'
+  spanish_unit: Me Llegue
+  current_spanish_slice: Me llegué
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:16
+  unitId: '211:3'
+  spanish_unit: y le pregunte
+  current_spanish_slice: y le pregunté
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:16
+  unitId: '211:7'
+  spanish_unit: Y me hablo
+  current_spanish_slice: Y me habló
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:16
+  unitId: '211:8'
+  spanish_unit: y me declaro
+  current_spanish_slice: y me declaró
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:23
+  unitId: '218:6'
+  spanish_unit: y la despedazará
+  current_spanish_slice: la despedazará.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:24
+  unitId: '219:5'
+  spanish_unit: reyes
+  current_spanish_slice: es re
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:24
+  unitId: '219:6'
+  spanish_unit: derribará
+  current_spanish_slice: es derrib
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:27
+  unitId: '222:5'
+  spanish_unit: y todos los os
+  current_spanish_slice: y todos los se
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:27
+  unitId: '222:6'
+  spanish_unit: señori
+  current_spanish_slice: 'oríos '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:27
+  unitId: '222:7'
+  spanish_unit: le servirán
+  current_spanish_slice: 'e servirán '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 7:27
+  unitId: '222:8'
+  spanish_unit: y obedecerán
+  current_spanish_slice: ' obedecerán.'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:2
+  unitId: '225:9'
+  spanish_unit: vi
+  current_spanish_slice: ' p'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:2
+  unitId: '225:10'
+  spanish_unit: pues en visión
+  current_spanish_slice: 'es en visión, '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:2
+  unitId: '225:11'
+  spanish_unit: estando
+  current_spanish_slice: tando j
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:2
+  unitId: '225:12'
+  spanish_unit: junto
+  current_spanish_slice: nto a
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:2
+  unitId: '225:13'
+  spanish_unit: al río
+  current_spanish_slice: ' río U'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:2
+  unitId: '225:14'
+  spanish_unit: Ulai
+  current_spanish_slice: ai,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:0'
+  spanish_unit: Y vilo
+  current_spanish_slice: Y lo v
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:1'
+  spanish_unit: que llegó
+  current_spanish_slice: ' que lleg'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:2'
+  spanish_unit: junto
+  current_spanish_slice: ' junt'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:3'
+  spanish_unit: al carnero
+  current_spanish_slice: ' al carner'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:4'
+  spanish_unit: y se levantó
+  current_spanish_slice: ' y se levant'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:5'
+  spanish_unit: contra
+  current_spanish_slice: ' contr'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:6'
+  spanish_unit: él, e lo hirio
+  current_spanish_slice: ' él, y lo hiri'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:7'
+  spanish_unit: y quebró
+  current_spanish_slice: ' y quebr'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:8'
+  spanish_unit: sus dos
+  current_spanish_slice: ' sus do'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:9'
+  spanish_unit: cuernos
+  current_spanish_slice: ' cuerno'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:7
+  unitId: '230:10'
+  spanish_unit: de su mano
+  current_spanish_slice: ' de su man'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:8
+  unitId: '231:10'
+  spanish_unit: los cuatro
+  current_spanish_slice: cuatro vie
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:8
+  unitId: '231:11'
+  spanish_unit: vientos
+  current_spanish_slice: tos del
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:8
+  unitId: '231:12'
+  spanish_unit: del cielo
+  current_spanish_slice: cielo.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:17
+  unitId: '240:14'
+  spanish_unit: se cumplirá
+  current_spanish_slice: del fin ser
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:17
+  unitId: '240:15'
+  spanish_unit: la visión
+  current_spanish_slice: ' la visió'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:18
+  unitId: '241:5'
+  spanish_unit: e me hizo
+  current_spanish_slice: y me hizo
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:23
+  unitId: '246:1'
+  spanish_unit: de os
+  current_spanish_slice: de és
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:23
+  unitId: '246:2'
+  spanish_unit: est
+  current_spanish_slice: os,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:23
+  unitId: '246:3'
+  spanish_unit: cuando
+  current_spanish_slice: 'uando '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:23
+  unitId: '246:4'
+  spanish_unit: un rey
+  current_spanish_slice: 'n rey '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:23
+  unitId: '246:5'
+  spanish_unit: altivo
+  current_spanish_slice: 'ltivo '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:23
+  unitId: '246:6'
+  spanish_unit: de rostro
+  current_spanish_slice: e rostro,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:23
+  unitId: '246:7'
+  spanish_unit: y entendido
+  current_spanish_slice: ' entendido '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 8:23
+  unitId: '246:8'
+  spanish_unit: en dudas
+  current_spanish_slice: n dudas.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:3
+  unitId: '253:1'
+  spanish_unit: le buscando
+  current_spanish_slice: 'buscándole '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:3
+  unitId: '253:2'
+  spanish_unit: en oración
+  current_spanish_slice: 'n oración '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:3
+  unitId: '253:3'
+  spanish_unit: y ruego
+  current_spanish_slice: ' ruego,'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:3
+  unitId: '253:4'
+  spanish_unit: en ayuno
+  current_spanish_slice: n ayuno,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:3
+  unitId: '253:5'
+  spanish_unit: y cilicio
+  current_spanish_slice: ' cilicio,'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:3
+  unitId: '253:6'
+  spanish_unit: y ceniza
+  current_spanish_slice: ' ceniza.'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:3'
+  spanish_unit: se apartando
+  current_spanish_slice: 'apartándose '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:4'
+  spanish_unit: para no oir
+  current_spanish_slice: 'ara no oir '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:5'
+  spanish_unit: tu voz
+  current_spanish_slice: 'u voz:'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:6'
+  spanish_unit: por lo cual
+  current_spanish_slice: 'or lo cual '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:7'
+  spanish_unit: sobre
+  current_spanish_slice: 'obre '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:8'
+  spanish_unit: nosotros
+  current_spanish_slice: 'osotros '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:9'
+  spanish_unit: y el juramento
+  current_spanish_slice: ' el juramento '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:10'
+  spanish_unit: que está escrito
+  current_spanish_slice: 'ue está escrito '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:11'
+  spanish_unit: en la ley
+  current_spanish_slice: 'n la ley '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:12'
+  spanish_unit: de Moisés
+  current_spanish_slice: e Moisés,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:13'
+  spanish_unit: siervo
+  current_spanish_slice: 'iervo '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:14'
+  spanish_unit: de Dios
+  current_spanish_slice: e Dios;
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:15'
+  spanish_unit: porque
+  current_spanish_slice: 'orque '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:11
+  unitId: '261:16'
+  spanish_unit: él pecamos
+  current_spanish_slice: l pecamos.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:23
+  unitId: '273:1'
+  spanish_unit: Entiende
+  current_spanish_slice: 'ntiende '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:23
+  unitId: '273:2'
+  spanish_unit: pues la palabra
+  current_spanish_slice: ues la palabra,
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:23
+  unitId: '273:3'
+  spanish_unit: y entiende
+  current_spanish_slice: ' entiende '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:23
+  unitId: '273:4'
+  spanish_unit: la visión
+  current_spanish_slice: a visión.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:3'
+  spanish_unit: 'y no por sí: y el pueblo'
+  current_spanish_slice: 'y nada tendrá: y el pueb'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:4'
+  spanish_unit: de un príncipe
+  current_spanish_slice: o de un prínci
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:5'
+  spanish_unit: que ha de venir
+  current_spanish_slice: e que ha de ven
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:6'
+  spanish_unit: destruirá
+  current_spanish_slice: ', destrui'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:7'
+  spanish_unit: a la ciudad
+  current_spanish_slice: á a la ciud
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:8'
+  spanish_unit: y el santuario
+  current_spanish_slice: d y el santuar
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:9'
+  spanish_unit: con inundación
+  current_spanish_slice: ; con inundaci
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:10'
+  spanish_unit: será
+  current_spanish_slice: n se
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:11'
+  spanish_unit: el fin
+  current_spanish_slice: á el f
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:12'
+  spanish_unit: de ella
+  current_spanish_slice: n de el
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:13'
+  spanish_unit: el fin
+  current_spanish_slice: a el f
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:14'
+  spanish_unit: de la guerra
+  current_spanish_slice: n de la guer
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:15'
+  spanish_unit: será
+  current_spanish_slice: a se
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:16'
+  spanish_unit: talada
+  current_spanish_slice: á tala
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:26
+  unitId: '276:17'
+  spanish_unit: con asolamientos
+  current_spanish_slice: a con asolamient
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:27
+  unitId: '277:9'
+  spanish_unit: después
+  current_spanish_slice: y sobre
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:27
+  unitId: '277:10'
+  spanish_unit: sobre
+  current_spanish_slice: ''
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:27
+  unitId: '277:11'
+  spanish_unit: el pueblo
+  current_spanish_slice: ''
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 9:27
+  unitId: '277:12'
+  spanish_unit: asolado
+  current_spanish_slice: ''
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 10:1
+  unitId: '278:12'
+  spanish_unit: la palabra
+  current_spanish_slice: labra, y t
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 10:1
+  unitId: '278:13'
+  spanish_unit: y tuvo
+  current_spanish_slice: o inte
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 10:1
+  unitId: '278:14'
+  spanish_unit: inteligencia
+  current_spanish_slice: igencia en l
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 10:1
+  unitId: '278:15'
+  spanish_unit: en la visión
+  current_spanish_slice: ' visión.'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 10:11
+  unitId: '288:6'
+  spanish_unit: yo
+  current_spanish_slice: 'o '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 10:11
+  unitId: '288:7'
+  spanish_unit: estaba
+  current_spanish_slice: 'staba '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 10:11
+  unitId: '288:8'
+  spanish_unit: temblando
+  current_spanish_slice: emblando.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 10:19
+  unitId: '296:6'
+  spanish_unit: me has fortalecido
+  current_spanish_slice: e has fortalecido.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:3
+  unitId: '301:0'
+  spanish_unit: Se Levantara
+  current_spanish_slice: Se levantará
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:5
+  unitId: '303:0'
+  spanish_unit: Y se hara
+  current_spanish_slice: Y se hará
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:6
+  unitId: '304:17'
+  spanish_unit: de ella
+  current_spanish_slice: n de pa
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:6
+  unitId: '304:18'
+  spanish_unit: en aquel
+  current_spanish_slice: te de el
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:6
+  unitId: '304:19'
+  spanish_unit: tiempo
+  current_spanish_slice: a en a
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:12
+  unitId: '310:2'
+  spanish_unit: se elevara
+  current_spanish_slice: se elevará
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:28
+  unitId: '326:0'
+  spanish_unit: Y se volvera
+  current_spanish_slice: Y se volverá
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:28
+  unitId: '326:8'
+  spanish_unit: pues, y se volvera
+  current_spanish_slice: pues, y se volverá
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:38
+  unitId: '336:4'
+  spanish_unit: lo honrara
+  current_spanish_slice: lo honrará
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:39
+  unitId: '337:4'
+  spanish_unit: y os
+  current_spanish_slice: y lo
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:39
+  unitId: '337:5'
+  spanish_unit: haral
+  current_spanish_slice: ' hará'
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:40
+  unitId: '338:12'
+  spanish_unit: y muchos
+  current_spanish_slice: y muchas
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:40
+  unitId: '338:13'
+  spanish_unit: os
+  current_spanish_slice: na
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:40
+  unitId: '338:14'
+  spanish_unit: por las tierras
+  current_spanish_slice: 'r las tierras, '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:40
+  unitId: '338:15'
+  spanish_unit: e inundará
+  current_spanish_slice: 'inundará, '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 11:40
+  unitId: '338:16'
+  spanish_unit: y pasará
+  current_spanish_slice: pasará.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:4
+  unitId: '347:10'
+  spanish_unit: y se multiplicara
+  current_spanish_slice: y se multiplicará
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:7
+  unitId: '350:21'
+  spanish_unit: del pueblo
+  current_spanish_slice: pueblo san
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:7
+  unitId: '350:22'
+  spanish_unit: santo
+  current_spanish_slice: o, to
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:7
+  unitId: '350:23'
+  spanish_unit: todas estas cosas
+  current_spanish_slice: s estas cosas ser
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:9
+  unitId: '352:8'
+  spanish_unit: del cumplimiento
+  current_spanish_slice: del fin.
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:10
+  unitId: '353:5'
+  spanish_unit: mas los os
+  current_spanish_slice: mas los im
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:10
+  unitId: '353:6'
+  spanish_unit: entenderá
+  current_spanish_slice: 'tenderá, '
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:10
+  unitId: '353:7'
+  spanish_unit: pero
+  current_spanish_slice: ro e
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:10
+  unitId: '353:8'
+  spanish_unit: entenderán
+  current_spanish_slice: tenderán l
+  decision: DATA_ERROR_STALE_UNIT
+- reference: Daniel 12:10
+  unitId: '353:9'
+  spanish_unit: los entendidos
+  current_spanish_slice: s entendidos.
+  decision: DATA_ERROR_STALE_UNIT
+escalates:
+- reference: Daniel 3:1
+  unitId: '70:5'
+  spanish_unit: de la cual
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:5
+  unitId: '74:10'
+  spanish_unit: os
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:5
+  unitId: '74:16'
+  spanish_unit: ha levantado
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:7
+  unitId: '76:9'
+  spanish_unit: se postraron
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:7
+  unitId: '76:15'
+  spanish_unit: había
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:11
+  unitId: '80:2'
+  spanish_unit: fuera
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:19
+  unitId: '88:16'
+  spanish_unit: veces
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:21
+  unitId: '90:7'
+  spanish_unit: y fueron
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:22
+  unitId: '91:3'
+  spanish_unit: daba
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:22
+  unitId: '91:6'
+  spanish_unit: procurado
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:25
+  unitId: '94:6'
+  spanish_unit: varones
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:26
+  unitId: '95:2'
+  spanish_unit: se acercó
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:27
+  unitId: '96:3'
+  spanish_unit: los capitanes
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 3:28
+  unitId: '97:1'
+  spanish_unit: habló
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:1
+  unitId: '100:8'
+  spanish_unit: os
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:5
+  unitId: '104:3'
+  spanish_unit: me turbaron
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:7
+  unitId: '106:5'
+  spanish_unit: y dije
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:7
+  unitId: '106:8'
+  spanish_unit: de ellos
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:7
+  unitId: '106:9'
+  spanish_unit: mas nunca
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:7
+  unitId: '106:10'
+  spanish_unit: me mostraron
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:15
+  unitId: '114:2'
+  spanish_unit: dejaréis
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:15
+  unitId: '114:6'
+  spanish_unit: y de metal
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:19
+  unitId: '118:3'
+  spanish_unit: era
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:22
+  unitId: '121:7'
+  spanish_unit: el cielo
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:23
+  unitId: '122:12'
+  spanish_unit: dejaréis
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:23
+  unitId: '122:21'
+  spanish_unit: que pasen
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:34
+  unitId: '133:11'
+  spanish_unit: y glorifiqué
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:34
+  unitId: '133:12'
+  spanish_unit: al que vive
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 4:36
+  unitId: '135:8'
+  spanish_unit: volvieron
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:1
+  unitId: '137:7'
+  spanish_unit: bebía
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:2
+  unitId: '138:3'
+  spanish_unit: mandó
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:7
+  unitId: '143:10'
+  spanish_unit: será
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:7
+  unitId: '143:18'
+  spanish_unit: se enseñoreará
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:14
+  unitId: '150:4'
+  spanish_unit: se halló
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:14
+  unitId: '150:6'
+  spanish_unit: y entendimiento
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:16
+  unitId: '152:10'
+  spanish_unit: serás
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:16
+  unitId: '152:11'
+  spanish_unit: el tercer
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:17
+  unitId: '153:6'
+  spanish_unit: y le mostraré
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:20
+  unitId: '156:2'
+  spanish_unit: se ensoberbeció
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:21
+  unitId: '157:7'
+  spanish_unit: fue
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:23
+  unitId: '159:12'
+  spanish_unit: demás
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:23
+  unitId: '159:13'
+  spanish_unit: de esto
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:23
+  unitId: '159:19'
+  spanish_unit: está tu vida
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:23
+  unitId: '159:20'
+  spanish_unit: y cuyos
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 5:26
+  unitId: '162:5'
+  spanish_unit: y halo
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 6:7
+  unitId: '174:10'
+  spanish_unit: sea
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 6:17
+  unitId: '184:6'
+  spanish_unit: la cual
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 6:19
+  unitId: '186:3'
+  spanish_unit: muy de mañana
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 6:25
+  unitId: '192:9'
+  spanish_unit: os
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 6:25
+  unitId: '192:10'
+  spanish_unit: sea
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:1
+  unitId: '196:3'
+  spanish_unit: de Babel
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:7
+  unitId: '202:10'
+  spanish_unit: y en grande
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:7
+  unitId: '202:11'
+  spanish_unit: manera
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:8
+  unitId: '203:7'
+  spanish_unit: entre
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:8
+  unitId: '203:14'
+  spanish_unit: como
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:10
+  unitId: '205:11'
+  spanish_unit: 'de él: el Juez'
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:11
+  unitId: '206:13'
+  spanish_unit: fue
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:11
+  unitId: '206:14'
+  spanish_unit: deshecho
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:13
+  unitId: '208:4'
+  spanish_unit: de días
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 7:15
+  unitId: '210:1'
+  spanish_unit: fue
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 8:1
+  unitId: '224:8'
+  spanish_unit: de aquella
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 8:12
+  unitId: '235:5'
+  spanish_unit: y le sucedió
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 8:12
+  unitId: '235:6'
+  spanish_unit: prósperamente
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 8:13
+  unitId: '236:5'
+  spanish_unit: cuándo
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 8:13
+  unitId: '236:8'
+  spanish_unit: del continuo
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 8:13
+  unitId: '236:15'
+  spanish_unit: para ser
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 8:18
+  unitId: '241:7'
+  spanish_unit: en pie
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 9:13
+  unitId: '263:6'
+  spanish_unit: sobre
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 9:14
+  unitId: '264:12'
+  spanish_unit: porque
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 9:16
+  unitId: '266:11'
+  spanish_unit: a causa
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 9:17
+  unitId: '267:7'
+  spanish_unit: resplandezca
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 9:19
+  unitId: '269:5'
+  spanish_unit: dilación
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 9:19
+  unitId: '269:8'
+  spanish_unit: mismo
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 9:27
+  unitId: '277:4'
+  spanish_unit: de la semana
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:1
+  unitId: '278:4'
+  spanish_unit: fue
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:1
+  unitId: '278:9'
+  spanish_unit: era
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:4
+  unitId: '281:3'
+  spanish_unit: estaba
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:5
+  unitId: '282:8'
+  spanish_unit: sus lomos
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:7
+  unitId: '284:2'
+  spanish_unit: sobre
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:7
+  unitId: '284:4'
+  spanish_unit: un gran
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:7
+  unitId: '284:5'
+  spanish_unit: temor
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:8
+  unitId: '285:6'
+  spanish_unit: antes
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:10
+  unitId: '287:3'
+  spanish_unit: e hizo
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:12
+  unitId: '289:11'
+  spanish_unit: fueron
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:14
+  unitId: '291:8'
+  spanish_unit: es
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 10:21
+  unitId: '298:5'
+  spanish_unit: y ninguno
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:12
+  unitId: '310:4'
+  spanish_unit: y derribará
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:13
+  unitId: '311:15'
+  spanish_unit: riquezas
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:15
+  unitId: '313:7'
+  spanish_unit: fuerte
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:15
+  unitId: '313:8'
+  spanish_unit: y los brazos
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:17
+  unitId: '315:6'
+  spanish_unit: con aquél
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:24
+  unitId: '322:2'
+  spanish_unit: en paz
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:25
+  unitId: '323:14'
+  spanish_unit: ejército
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:26
+  unitId: '324:0'
+  spanish_unit: Aun
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:36
+  unitId: '334:6'
+  spanish_unit: maravillas
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:36
+  unitId: '334:10'
+  spanish_unit: que sea
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:38
+  unitId: '336:10'
+  spanish_unit: de gran
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:38
+  unitId: '336:11'
+  spanish_unit: precio
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:40
+  unitId: '338:8'
+  spanish_unit: levantará
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:44
+  unitId: '342:3'
+  spanish_unit: lo espantarán
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 11:44
+  unitId: '342:8'
+  spanish_unit: y matar
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 12:5
+  unitId: '348:2'
+  spanish_unit: miré
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 12:10
+  unitId: '353:1'
+  spanish_unit: serán
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+- reference: Daniel 12:10
+  unitId: '353:2'
+  spanish_unit: limpios
+  decision: ESCALATE
+  brief_reason: Current/non-stale unit has empty sourceTokenIds and no unique conservative verse-local lexical relink was available.
+unaccounted_lexical_source_tokens:
+- reference: Daniel 3:1
+  sourceTokenId: h27003001002
+  surface: מַלְכָּ֗/א
+  ble: rey
+  rmac: ANcmsd/Td
+  strongs: H4430
+- reference: Daniel 3:1
+  sourceTokenId: h27003001009
+  surface: שִׁתִּ֔ין
+  ble: sesenta
+  rmac: AAcfpa
+  strongs: H8361
+- reference: Daniel 3:2
+  sourceTokenId: h27003002006
+  surface: סִגְנַיָּ֣/א
+  ble: prefectos
+  rmac: ANcmpd/Td
+  strongs: H5460
+- reference: Daniel 3:2
+  sourceTokenId: h27003002008
+  surface: אֲדַרְגָּזְרַיָּ/א֩
+  ble: consejeros
+  rmac: ANcmpd/Td
+  strongs: H148
+- reference: Daniel 3:2
+  sourceTokenId: h27003002009
+  surface: גְדָ֨בְרַיָּ֤/א
+  ble: tesoreros
+  rmac: ANcmpd/Td
+  strongs: H1411
+- reference: Daniel 3:2
+  sourceTokenId: h27003002010
+  surface: דְּתָבְרַיָּ/א֙
+  ble: jueces
+  rmac: ANcmpd/Td
+  strongs: H1884
+- reference: Daniel 3:2
+  sourceTokenId: h27003002011
+  surface: תִּפְתָּיֵ֔/א
+  ble: magistrados
+  rmac: ANcmpd/Td
+  strongs: H8614
+- reference: Daniel 3:2
+  sourceTokenId: h27003002013
+  surface: שִׁלְטֹנֵ֣י
+  ble: gobernantes
+  rmac: ANcmpc
+  strongs: H7984
+- reference: Daniel 3:2
+  sourceTokenId: h27003002014
+  surface: מְדִֽינָתָ֑/א
+  ble: provincia
+  rmac: ANcfsd/Td
+  strongs: H4083
+- reference: Daniel 3:2
+  sourceTokenId: h27003002017
+  surface: צַלְמָ֔/א
+  ble: imagen
+  rmac: ANcmsd/Td
+  strongs: H6755
+- reference: Daniel 3:2
+  sourceTokenId: h27003002019
+  surface: הֲקֵ֖ים
+  ble: se·levantó
+  rmac: AVhp3ms
+  strongs: H6966
+- reference: Daniel 3:2
+  sourceTokenId: h27003002020
+  surface: נְבוּכַדְנֶצַּ֥ר
+  ble: Nabucodonosor
+  rmac: ANp
+  strongs: H5020
+- reference: Daniel 3:2
+  sourceTokenId: h27003002021
+  surface: מַלְכָּֽ/א
+  ble: rey
+  rmac: ANcmsd/Td
+  strongs: H4430
+- reference: Daniel 3:3
+  sourceTokenId: h27003003011
+  surface: שִׁלְטֹנֵ֣י
+  ble: gobernantes
+  rmac: ANcmpc
+  strongs: H7984
+- reference: Daniel 3:4
+  sourceTokenId: h27003004005
+  surface: אָֽמְרִין֙
+  ble: dicen
+  rmac: AVqrmpa
+  strongs: H560
+- reference: Daniel 3:5
+  sourceTokenId: h27003005020
+  surface: הֲקֵ֖ים
+  ble: se·levantó
+  rmac: AVhp3ms
+  strongs: H6966
+- reference: Daniel 3:5
+  sourceTokenId: h27003005021
+  surface: נְבוּכַדְנֶצַּ֥ר
+  ble: Nabucodonosor
+  rmac: ANp
+  strongs: H5020
+- reference: Daniel 3:6
+  sourceTokenId: h27003006004
+  surface: יִפֵּ֖ל
+  ble: caa
+  rmac: AVqi3ms
+  strongs: H5308
+- reference: Daniel 3:7
+  sourceTokenId: h27003007013
+  surface: קיתרס
+  ble: cítara
+  rmac: ANcmsa
+  strongs: H7030
+- reference: Daniel 3:7
+  sourceTokenId: h27003007014
+  surface: קַתְר֤וֹס
+  ble: cítara
+  rmac: ANcmsa
+  strongs: H7030
+- reference: Daniel 3:7
+  sourceTokenId: h27003007015
+  surface: שַׂבְּכָא֙
+  ble: sambuca
+  rmac: ANcfsa
+  strongs: H5443
+- reference: Daniel 3:7
+  sourceTokenId: h27003007016
+  surface: פְּסַנְטֵרִ֔ין
+  ble: salterio
+  rmac: ANcmsa
+  strongs: H6460
+- reference: Daniel 3:7
+  sourceTokenId: h27003007018
+  surface: זְנֵ֣י
+  ble: géneros
+  rmac: ANcmpc
+  strongs: H2178
+- reference: Daniel 3:7
+  sourceTokenId: h27003007019
+  surface: זְמָרָ֑/א
+  ble: música
+  rmac: ANcmsd/Td
+  strongs: H2170
+- reference: Daniel 3:7
+  sourceTokenId: h27003007020
+  surface: נָֽפְלִ֨ין
+  ble: caen
+  rmac: AVqrmpa
+  strongs: H5308
+- reference: Daniel 3:7
+  sourceTokenId: h27003007022
+  surface: עַֽמְמַיָּ֜/א
+  ble: pueblo
+  rmac: ANcmpd/Td
+  strongs: H5972
+- reference: Daniel 3:8
+  sourceTokenId: h27003008002
+  surface: קֳבֵ֤ל
+  ble: conforme
+  rmac: AC
+  strongs: H6903
+- reference: Daniel 3:9
+  sourceTokenId: h27003009005
+  surface: מַלְכָּ֖/א
+  ble: rey
+  rmac: ANcmsd/Td
+  strongs: H4430
+- reference: Daniel 3:11
+  sourceTokenId: h27003011004
+  surface: יִפֵּ֖ל
+  ble: caa
+  rmac: AVqi3ms
+  strongs: H5308
+- reference: Daniel 3:12
+  sourceTokenId: h27003012018
+  surface: שָׂ֨מֽוּ
+  ble: pusieron
+  rmac: AVqp3mp
+  strongs: H7761
+- reference: Daniel 3:12
+  sourceTokenId: h27003012022
+  surface: טְעֵ֔ם
+  ble: decreto
+  rmac: ANcmsa
+  strongs: H2942
+- reference: Daniel 3:12
+  sourceTokenId: h27003012026
+  surface: פָלְחִ֔ין
+  ble: sirven
+  rmac: AVqrmpa
+  strongs: H6399
+- reference: Daniel 3:12
+  sourceTokenId: h27003012032
+  surface: סָגְדִֽין
+  ble: adoran
+  rmac: AVqrmpa
+  strongs: H5457
+- reference: Daniel 3:14
+  sourceTokenId: h27003014019
+  surface: סָֽגְדִֽין
+  ble: adoran
+  rmac: AVqrmpa
+  strongs: H5457
+- reference: Daniel 3:15
+  sourceTokenId: h27003015008
+  surface: תִשְׁמְע֡וּן
+  ble: oís
+  rmac: AVqi2mp
+  strongs: H8086
+- reference: Daniel 3:15
+  sourceTokenId: h27003015009
+  surface: קָ֣ל
+  ble: voz
+  rmac: ANcmsc
+  strongs: H7032
+- reference: Daniel 3:15
+  sourceTokenId: h27003015010
+  surface: קַרְנָ֣/א
+  ble: cuerno
+  rmac: ANcfsd/Td
+  strongs: H7162
+- reference: Daniel 3:15
+  sourceTokenId: h27003015011
+  surface: מַשְׁרוֹקִיתָ֣/א
+  ble: flauta
+  rmac: ANcfsd/Td
+  strongs: H4953
+- reference: Daniel 3:15
+  sourceTokenId: h27003015012
+  surface: קיתרס
+  ble: cítara
+  rmac: ANcmsa
+  strongs: H7030
+- reference: Daniel 3:15
+  sourceTokenId: h27003015013
+  surface: קַתְר֣וֹס
+  ble: cítara
+  rmac: ANcmsa
+  strongs: H7030
+- reference: Daniel 3:15
+  sourceTokenId: h27003015014
+  surface: שַׂבְּכָ֡א
+  ble: sambuca
+  rmac: ANcfsa
+  strongs: H5443
+- reference: Daniel 3:15
+  sourceTokenId: h27003015015
+  surface: פְּסַנְתֵּרִין֩
+  ble: salterio
+  rmac: ANcmsa
+  strongs: H6460
+- reference: Daniel 3:15
+  sourceTokenId: h27003015018
+  surface: זְנֵ֣י
+  ble: géneros
+  rmac: ANcmpc
+  strongs: H2178
+- reference: Daniel 3:15
+  sourceTokenId: h27003015019
+  surface: זְמָרָ֗/א
+  ble: música
+  rmac: ANcmsd/Td
+  strongs: H2170
+- reference: Daniel 3:15
+  sourceTokenId: h27003015020
+  surface: תִּפְּל֣וּן
+  ble: caéis
+  rmac: AVqi2mp
+  strongs: H5308
+- reference: Daniel 3:15
+  sourceTokenId: h27003015024
+  surface: עַבְדֵת֒
+  ble: hice
+  rmac: AVqp1cs
+  strongs: H5648
+- reference: Daniel 3:15
+  sourceTokenId: h27003015027
+  surface: תִסְגְּד֔וּן
+  ble: adoréis
+  rmac: AVqi2mp
+  strongs: H5457
+- reference: Daniel 3:15
+  sourceTokenId: h27003015029
+  surface: שַׁעֲתָ֣/ה
+  ble: hora
+  rmac: ANcfsd/Td
+  strongs: H8160
+- reference: Daniel 3:15
+  sourceTokenId: h27003015030
+  surface: תִתְרְמ֔וֹן
+  ble: sois·echado
+  rmac: AVui2mp
+  strongs: H7412
+- reference: Daniel 3:15
+  sourceTokenId: h27003015032
+  surface: אַתּ֥וּן
+  ble: horno
+  rmac: ANcmsc
+  strongs: H861
+- reference: Daniel 3:15
+  sourceTokenId: h27003015033
+  surface: נוּרָ֖/א
+  ble: fuego
+  rmac: ANcbsd/Td
+  strongs: H5135
+- reference: Daniel 3:15
+  sourceTokenId: h27003015034
+  surface: יָקִֽדְתָּ֑/א
+  ble: ardiente
+  rmac: AVqrfsd/Td
+  strongs: H3345
+- reference: Daniel 3:15
+  sourceTokenId: h27003015037
+  surface: אֱלָ֔הּ
+  ble: Dios
+  rmac: ANcmsa
+  strongs: H426
+- reference: Daniel 3:15
+  sourceTokenId: h27003015040
+  surface: מִן
+  ble: de
+  rmac: AR
+  strongs: H4481
+- reference: Daniel 3:16
+  sourceTokenId: h27003016014
+  surface: פִּתְגָ֖ם
+  ble: respuesta
+  rmac: ANcmsa
+  strongs: H6600
+- reference: Daniel 3:18
+  sourceTokenId: h27003018003
+  surface: יְדִ֥יעַ
+  ble: sabido
+  rmac: AVqsmsa
+  strongs: H3046
+- reference: Daniel 3:18
+  sourceTokenId: h27003018004
+  surface: לֶהֱוֵא
+  ble: es
+  rmac: AVqi3ms
+  strongs: H1934
+- reference: Daniel 3:18
+  sourceTokenId: h27003018019
+  surface: נִסְגֻּֽד
+  ble: adoremos
+  rmac: AVqi1cp
+  strongs: H5457
+- reference: Daniel 3:21
+  sourceTokenId: h27003021002
+  surface: גֻּבְרַיָּ֣/א
+  ble: hombre
+  rmac: ANcmpd/Td
+  strongs: H1400
+- reference: Daniel 3:22
+  sourceTokenId: h27003022020
+  surface: קַטִּ֣ל
+  ble: mató
+  rmac: AVpp3ms
+  strongs: H6992
+- reference: Daniel 3:22
+  sourceTokenId: h27003022022
+  surface: שְׁבִיבָ֖/א
+  ble: llama
+  rmac: ANcmsd/Td
+  strongs: H7631
+- reference: Daniel 3:22
+  sourceTokenId: h27003022024
+  surface: נוּרָֽ/א
+  ble: fuego
+  rmac: ANcbsd/Td
+  strongs: H5135
+- reference: Daniel 3:23
+  sourceTokenId: h27003023013
+  surface: מְכַפְּתִֽין
+  ble: atados
+  rmac: AVpsmpa
+  strongs: H3729
+- reference: Daniel 3:24
+  sourceTokenId: h27003024007
+  surface: עָנֵ֨ה
+  ble: respondió
+  rmac: AVqrmsa
+  strongs: H6032
+- reference: Daniel 3:24
+  sourceTokenId: h27003024011
+  surface: גֻבְרִ֨ין
+  ble: hombre
+  rmac: ANcmpa
+  strongs: H1400
+- reference: Daniel 3:24
+  sourceTokenId: h27003024012
+  surface: תְּלָתָ֜א
+  ble: tres
+  rmac: AAcmsa
+  strongs: H8532
+- reference: Daniel 3:24
+  sourceTokenId: h27003024013
+  surface: רְמֵ֤ינָא
+  ble: somos·echado
+  rmac: AVqp1cp
+  strongs: H7412
+- reference: Daniel 3:24
+  sourceTokenId: h27003024015
+  surface: נוּרָ/א֙
+  ble: fuego
+  rmac: ANcbsd/Td
+  strongs: H5135
+- reference: Daniel 3:24
+  sourceTokenId: h27003024016
+  surface: מְכַפְּתִ֔ין
+  ble: atan
+  rmac: AVprmpa
+  strongs: H3729
+- reference: Daniel 3:24
+  sourceTokenId: h27003024017
+  surface: עָנַ֤יִן
+  ble: respondió
+  rmac: AVqrmpa
+  strongs: H6032
+- reference: Daniel 3:24
+  sourceTokenId: h27003024020
+  surface: יַצִּיבָ֖א
+  ble: cierto
+  rmac: AAafsa
+  strongs: H3330
+- reference: Daniel 3:24
+  sourceTokenId: h27003024021
+  surface: מַלְכָּֽ/א
+  ble: rey
+  rmac: ANcmsd/Td
+  strongs: H4430
+- reference: Daniel 3:26
+  sourceTokenId: h27003026002
+  surface: קְרֵ֣ב
+  ble: ofreció
+  rmac: AVqp3ms
+  strongs: H7127
+- reference: Daniel 3:27
+  sourceTokenId: h27003027018
+  surface: הִתְחָרַ֔ךְ
+  ble: se·quemó
+  rmac: AVMp3ms
+  strongs: H2761
+- reference: Daniel 3:27
+  sourceTokenId: h27003027021
+  surface: שְׁנ֑וֹ
+  ble: cambiaron
+  rmac: AVqp3mp
+  strongs: H8133
+- reference: Daniel 3:27
+  sourceTokenId: h27003027023
+  surface: נ֔וּר
+  ble: fuego
+  rmac: ANcbsa
+  strongs: H5135
+- reference: Daniel 3:27
+  sourceTokenId: h27003027025
+  surface: עֲדָ֖ת
+  ble: quitó
+  rmac: AVqp3fs
+  strongs: H5709
+- reference: Daniel 3:28
+  sourceTokenId: h27003028001
+  surface: עָנֵ֨ה
+  ble: respondió
+  rmac: AVqrmsa
+  strongs: H6032
+- reference: Daniel 3:28
+  sourceTokenId: h27003028032
+  surface: לָהֵ֖ן
+  ble: por·eso
+  rmac: AC
+  strongs: H3861
+- reference: Daniel 3:29
+  sourceTokenId: h27003029016
+  surface: שַׁדְרַ֤ךְ
+  ble: Shadrach
+  rmac: ANp
+  strongs: H7715
+- reference: Daniel 3:29
+  sourceTokenId: h27003029017
+  surface: מֵישַׁךְ֙
+  ble: Meshak
+  rmac: ANp
+  strongs: H4336
+- reference: Daniel 3:29
+  sourceTokenId: h27003029019
+  surface: נְג֔וֹא
+  ble: Abed-Nego
+  rmac: ANp
+  strongs: H5665
+- reference: Daniel 3:29
+  sourceTokenId: h27003029020
+  surface: הַדָּמִ֣ין
+  ble: pedazos
+  rmac: ANcmpa
+  strongs: H1917
+- reference: Daniel 3:29
+  sourceTokenId: h27003029021
+  surface: יִתְעֲבֵ֔ד
+  ble: hace
+  rmac: AVui3ms
+  strongs: H5648
+- reference: Daniel 3:29
+  sourceTokenId: h27003029023
+  surface: נְוָלִ֣י
+  ble: muladar
+  rmac: ANcfsa
+  strongs: H5122
+- reference: Daniel 4:1
+  sourceTokenId: h27003031003
+  surface: לְֽ/כָל
+  ble: a·todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:3
+  sourceTokenId: h27003033005
+  surface: כְּ/מָ֣ה
+  ble: cuán
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:3
+  sourceTokenId: h27003033006
+  surface: תַקִּיפִ֑ין
+  ble: poderoso
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:5
+  sourceTokenId: h27004002002
+  surface: חֲזֵ֖ית
+  ble: vi
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:5
+  sourceTokenId: h27004002003
+  surface: וִֽ/ידַחֲלִנַּ֑/נִי
+  ble: y·temible·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:6
+  sourceTokenId: h27004003012
+  surface: יְהֽוֹדְעֻנַּֽ/נִי
+  ble: saben·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:7
+  sourceTokenId: h27004004007
+  surface: כַּשְׂדָּאֵ֖/י
+  ble: caldeos·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:7
+  sourceTokenId: h27004004014
+  surface: לָא
+  ble: 'no'
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:7
+  sourceTokenId: h27004004015
+  surface: מְהוֹדְעִ֥ין
+  ble: saben
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:7
+  sourceTokenId: h27004004016
+  surface: לִֽ/י
+  ble: a·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:8
+  sourceTokenId: h27004005009
+  surface: כְּ/שֻׁ֣ם
+  ble: según·el·nombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:8
+  sourceTokenId: h27004005010
+  surface: אֱלָהִ֔/י
+  ble: Dios·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:8
+  sourceTokenId: h27004005011
+  surface: וְ/דִ֛י
+  ble: y·que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:8
+  sourceTokenId: h27004005012
+  surface: רֽוּחַ
+  ble: espíritu
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:8
+  sourceTokenId: h27004005013
+  surface: אֱלָהִ֥ין
+  ble: Dios
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:9
+  sourceTokenId: h27004006022
+  surface: אֱמַֽר
+  ble: di
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:10
+  sourceTokenId: h27004007003
+  surface: עַֽל
+  ble: sobre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:12
+  sourceTokenId: h27004009019
+  surface: כָּל
+  ble: todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:13
+  sourceTokenId: h27004010005
+  surface: עַֽל
+  ble: sobre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:13
+  sourceTokenId: h27004010012
+  surface: נָחִֽת
+  ble: baja
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:15
+  sourceTokenId: h27004012005
+  surface: שְׁבֻ֔קוּ
+  ble: dejad
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:15
+  sourceTokenId: h27004012018
+  surface: חֲלָקֵ֖/הּ
+  ble: porción·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:16
+  sourceTokenId: h27004013012
+  surface: יַחְלְפ֥וּן
+  ble: pasan
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:16
+  sourceTokenId: h27004013013
+  surface: עֲלֽוֹ/הִי
+  ble: sobre·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014018
+  surface: אֲנָשָׁ֗/א
+  ble: hombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014019
+  surface: וּ/לְ/מַן
+  ble: y·a·quien
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014020
+  surface: דִּ֤י
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014021
+  surface: יִצְבֵּא֙
+  ble: quiere
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014022
+  surface: יִתְּנִנַּ֔/הּ
+  ble: da·ella
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014023
+  surface: וּ/שְׁפַ֥ל
+  ble: y·humilde
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014024
+  surface: אֲנָשִׁ֖ים
+  ble: hombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014025
+  surface: יְקִ֥ים
+  ble: se·levanta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014026
+  surface: עלי/ה
+  ble: sobre·ella
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:17
+  sourceTokenId: h27004014027
+  surface: עֲלַֽ/הּ
+  ble: sobre·ella
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015011
+  surface: אֱמַ֗ר
+  ble: di
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015017
+  surface: מַלְכוּתִ֗/י
+  ble: reino·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015018
+  surface: לָֽא
+  ble: 'no'
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015019
+  surface: יָכְלִ֤ין
+  ble: pueden
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015021
+  surface: לְ/הוֹדָ֣עֻתַ֔/נִי
+  ble: a·saber·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015022
+  surface: ו/אנתה
+  ble: y·tú
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015023
+  surface: וְ/אַ֣נְתְּ
+  ble: y·tú
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015024
+  surface: כָּהֵ֔ל
+  ble: puede
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015025
+  surface: דִּ֛י
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015026
+  surface: רֽוּחַ
+  ble: espíritu
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:18
+  sourceTokenId: h27004015029
+  surface: בָּֽ/ךְ
+  ble: en·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:19
+  sourceTokenId: h27004016006
+  surface: אֶשְׁתּוֹמַם֙
+  ble: quedé·atónito
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:19
+  sourceTokenId: h27004016008
+  surface: חֲדָ֔ה
+  ble: uno
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:19
+  sourceTokenId: h27004016013
+  surface: וְ/אָמַ֗ר
+  ble: y·dice
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:19
+  sourceTokenId: h27004016014
+  surface: בֵּלְטְשַׁאצַּר֙
+  ble: Belteshazzar
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:19
+  sourceTokenId: h27004016015
+  surface: חֶלְמָ֤/א
+  ble: sueño
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:19
+  sourceTokenId: h27004016025
+  surface: ל/שנאי/ך
+  ble: a·tus·enemigos·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:19
+  sourceTokenId: h27004016026
+  surface: לְ/שָֽׂנְאָ֖/ךְ
+  ble: a·tus·enemigos·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:21
+  sourceTokenId: h27004018011
+  surface: בָּרָ֔/א
+  ble: campo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:21
+  sourceTokenId: h27004018012
+  surface: וּ/בְ/עַנְפ֕וֹ/הִי
+  ble: y·en·sus·ramas·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:22
+  sourceTokenId: h27004019001
+  surface: אנתה
+  ble: tú
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:22
+  sourceTokenId: h27004019003
+  surface: ה֣וּא
+  ble: ella
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020001
+  surface: וְ/דִ֣י
+  ble: y·que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020017
+  surface: שְׁבֻ֔קוּ
+  ble: dejad
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020025
+  surface: וּ/בְ/טַ֧ל
+  ble: y·con·el·rocío
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020026
+  surface: שְׁמַיָּ֣/א
+  ble: cielos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020027
+  surface: יִצְטַבַּ֗ע
+  ble: se·moja
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020028
+  surface: וְ/עִם
+  ble: y·con
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020029
+  surface: חֵיוַ֤ת
+  ble: bestia
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020031
+  surface: חֲלָקֵ֔/הּ
+  ble: porción·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020036
+  surface: יַחְלְפ֥וּן
+  ble: pasan
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:23
+  sourceTokenId: h27004020037
+  surface: עֲלֽוֹ/הִי
+  ble: sobre·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:24
+  sourceTokenId: h27004021013
+  surface: מַלְכָּֽ/א
+  ble: rey·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022008
+  surface: לֶהֱוֵ֨ה
+  ble: es
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022009
+  surface: מְדֹרָ֜/ךְ
+  ble: tu·morada·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022010
+  surface: וְ/עִשְׂבָּ֥/א
+  ble: y·la·hierba
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022011
+  surface: כְ/תוֹרִ֣ין
+  ble: como·bueyes
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022012
+  surface: לָ֣/ךְ
+  ble: a·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022013
+  surface: יְטַֽעֲמ֗וּן
+  ble: hacer·gustar
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022014
+  surface: וּ/מִ/טַּ֤ל
+  ble: y·del·rocío
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022015
+  surface: שְׁמַיָּ/א֙
+  ble: cielos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022016
+  surface: לָ֣/ךְ
+  ble: a
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022017
+  surface: מְצַבְּעִ֔ין
+  ble: se·mojan
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022018
+  surface: וְ/שִׁבְעָ֥ה
+  ble: y·siete
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022019
+  surface: עִדָּנִ֖ין
+  ble: tiempo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022020
+  surface: יַחְלְפ֣וּן
+  ble: pasan
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022021
+  surface: עֲלָ֑/יךְ
+  ble: sobre·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022022
+  surface: עַ֣ד
+  ble: hasta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022023
+  surface: דִּֽי
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022024
+  surface: תִנְדַּ֗ע
+  ble: sabes
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022025
+  surface: דִּֽי
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022026
+  surface: שַׁלִּ֤יט
+  ble: autorizado
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022027
+  surface: עִלָּיָ/א֙
+  ble: Altísimo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022028
+  surface: בְּ/מַלְכ֣וּת
+  ble: en·reino
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022029
+  surface: אֲנָשָׁ֔/א
+  ble: hombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022030
+  surface: וּ/לְ/מַן
+  ble: y·a·quien
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022031
+  surface: דִּ֥י
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022032
+  surface: יִצְבֵּ֖א
+  ble: quiere
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:25
+  sourceTokenId: h27004022033
+  surface: יִתְּנִנַּֽ/הּ
+  ble: da·ella
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:26
+  sourceTokenId: h27004023001
+  surface: וְ/דִ֣י
+  ble: y·que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024005
+  surface: עלי/ך
+  ble: sobre·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024006
+  surface: עֲלָ֔/ךְ
+  ble: sobre·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024007
+  surface: ו/חטי/ך
+  ble: y·tu·pecado·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024008
+  surface: וַ/חֲטָאָ/ךְ֙
+  ble: y·tu·pecado·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024009
+  surface: בְּ/צִדְקָ֣ה
+  ble: con·justicia
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024010
+  surface: פְרֻ֔ק
+  ble: rompe
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024011
+  surface: וַ/עֲוָיָתָ֖/ךְ
+  ble: y·tus·iniquidades·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024012
+  surface: בְּ/מִחַ֣ן
+  ble: mostrando·misericordia
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024013
+  surface: עֲנָ֑יִן
+  ble: afligidos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024014
+  surface: הֵ֛ן
+  ble: por·tanto
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:27
+  sourceTokenId: h27004024015
+  surface: תֶּהֱוֵ֥א
+  ble: es
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:28
+  sourceTokenId: h27004025002
+  surface: מְּטָ֔א
+  ble: llegó
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:28
+  sourceTokenId: h27004025005
+  surface: מַלְכָּֽ/א
+  ble: rey
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:29
+  sourceTokenId: h27004026009
+  surface: בָבֶ֖ל
+  ble: Babilonia
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:29
+  sourceTokenId: h27004026010
+  surface: מְהַלֵּ֥ךְ
+  ble: anda
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:29
+  sourceTokenId: h27004026011
+  surface: הֲוָֽה
+  ble: es
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:30
+  sourceTokenId: h27004027001
+  surface: עָנֵ֤ה
+  ble: respondió
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:30
+  sourceTokenId: h27004027002
+  surface: מַלְכָּ/א֙
+  ble: rey
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:30
+  sourceTokenId: h27004027003
+  surface: וְ/אָמַ֔ר
+  ble: y·dice
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:30
+  sourceTokenId: h27004027016
+  surface: וְ/לִ/יקָ֥ר
+  ble: y·a·honra
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:30
+  sourceTokenId: h27004027017
+  surface: הַדְרִֽ/י
+  ble: mi·majestad·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029001
+  surface: וּ/מִן
+  ble: y·de
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029003
+  surface: לָ֨/ךְ
+  ble: a·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029004
+  surface: טָֽרְדִ֜ין
+  ble: echan
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029009
+  surface: עִשְׂבָּ֤/א
+  ble: hierba
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029010
+  surface: כְ/תוֹרִין֙
+  ble: como·bueyes
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029011
+  surface: לָ֣/ךְ
+  ble: a·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029012
+  surface: יְטַעֲמ֔וּן
+  ble: hacer·gustar
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029013
+  surface: וְ/שִׁבְעָ֥ה
+  ble: y·siete
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029014
+  surface: עִדָּנִ֖ין
+  ble: tiempo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029024
+  surface: בְּ/מַלְכ֣וּת
+  ble: en·reino
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:32
+  sourceTokenId: h27004029025
+  surface: אֲנָשָׁ֔/א
+  ble: hombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:33
+  sourceTokenId: h27004030004
+  surface: סָ֣פַת
+  ble: alcanzó
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:34
+  sourceTokenId: h27004031008
+  surface: וּ/מַנְדְּעִ/י֙
+  ble: y·entendimiento·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:34
+  sourceTokenId: h27004031024
+  surface: דָּ֥ר
+  ble: generación
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:34
+  sourceTokenId: h27004031025
+  surface: וְ/דָֽר
+  ble: y·generación
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:35
+  sourceTokenId: h27004032001
+  surface: וְ/כָל
+  ble: y·todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:35
+  sourceTokenId: h27004032002
+  surface: דארי
+  ble: habitan
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:35
+  sourceTokenId: h27004032017
+  surface: יְמַחֵ֣א
+  ble: here
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:35
+  sourceTokenId: h27004032018
+  surface: בִ/ידֵ֔/הּ
+  ble: en·mano·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:35
+  sourceTokenId: h27004032019
+  surface: וְ/יֵ֥אמַר
+  ble: y·dice
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:35
+  sourceTokenId: h27004032020
+  surface: לֵ֖/הּ
+  ble: a·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:35
+  sourceTokenId: h27004032021
+  surface: מָ֥ה
+  ble: qué
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:35
+  sourceTokenId: h27004032022
+  surface: עֲבַֽדְתְּ
+  ble: hiciste
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:36
+  sourceTokenId: h27004033010
+  surface: יְת֣וּב
+  ble: devolve
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:36
+  sourceTokenId: h27004033015
+  surface: יְבַע֑וֹן
+  ble: piden
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:36
+  sourceTokenId: h27004033022
+  surface: לִֽ/י
+  ble: a·mí
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:37
+  sourceTokenId: h27004034010
+  surface: כָל
+  ble: todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:37
+  sourceTokenId: h27004034018
+  surface: יָכִ֖ל
+  ble: puede
+  rmac: ''
+  strongs: ''
+- reference: Daniel 4:37
+  sourceTokenId: h27004034019
+  surface: לְ/הַשְׁפָּלָֽה
+  ble: para·abatir
+  rmac: ''
+  strongs: ''
+- reference: Daniel 5:1
+  sourceTokenId: h27005001011
+  surface: שָׁתֵֽה
+  ble: bebe
+  rmac: AVqrmsa
+  strongs: H8355
+- reference: Daniel 5:2
+  sourceTokenId: h27005002002
+  surface: אֲמַ֣ר
+  ble: dijo
+  rmac: AVqp3ms
+  strongs: H560
+- reference: Daniel 5:2
+  sourceTokenId: h27005002010
+  surface: הַנְפֵּק֙
+  ble: sacó
+  rmac: AVhp3ms
+  strongs: H5312
+- reference: Daniel 5:5
+  sourceTokenId: h27005005011
+  surface: נֶבְרַשְׁתָּ֔/א
+  ble: candelero
+  rmac: ANcfsd/Td
+  strongs: H5043
+- reference: Daniel 5:5
+  sourceTokenId: h27005005013
+  surface: גִּירָ֕/א
+  ble: yeso
+  rmac: ANcmsd/Td
+  strongs: H1528
+- reference: Daniel 5:5
+  sourceTokenId: h27005005015
+  surface: כְתַ֥ל
+  ble: pared
+  rmac: ANcmsc
+  strongs: H3797
+- reference: Daniel 5:5
+  sourceTokenId: h27005005016
+  surface: הֵיכְלָ֖/א
+  ble: templo
+  rmac: ANcmsd/Td
+  strongs: H1965
+- reference: Daniel 5:5
+  sourceTokenId: h27005005018
+  surface: מַלְכָּ֑/א
+  ble: rey
+  rmac: ANcmsd/Td
+  strongs: H4430
+- reference: Daniel 5:5
+  sourceTokenId: h27005005020
+  surface: חָזֵ֔ה
+  ble: ve
+  rmac: AVqrmsa
+  strongs: H2370
+- reference: Daniel 5:5
+  sourceTokenId: h27005005021
+  surface: פַּ֥ס
+  ble: palma
+  rmac: ANcmsc
+  strongs: H6447
+- reference: Daniel 5:5
+  sourceTokenId: h27005005022
+  surface: יְדָ֖/ה
+  ble: mano
+  rmac: ANcfsd/Td
+  strongs: H3028
+- reference: Daniel 5:5
+  sourceTokenId: h27005005024
+  surface: כָתְבָֽה
+  ble: escribe
+  rmac: AVqrfsa
+  strongs: H3790
+- reference: Daniel 5:6
+  sourceTokenId: h27005006009
+  surface: מִשְׁתָּרַ֔יִן
+  ble: soltados
+  rmac: AVMsmpa
+  strongs: H8271
+- reference: Daniel 5:6
+  sourceTokenId: h27005006013
+  surface: נָֽקְשָֽׁן
+  ble: golpeaban
+  rmac: AVqrfpa
+  strongs: H5368
+- reference: Daniel 5:7
+  sourceTokenId: h27005007001
+  surface: קָרֵ֤א
+  ble: lee
+  rmac: AVqrmsa
+  strongs: H7123
+- reference: Daniel 5:7
+  sourceTokenId: h27005007006
+  surface: כשדי/א
+  ble: caldeos
+  rmac: ANgmpd/Td
+  strongs: H3779
+- reference: Daniel 5:7
+  sourceTokenId: h27005007009
+  surface: עָנֵ֨ה
+  ble: respondió
+  rmac: AVqrmsa
+  strongs: H6032
+- reference: Daniel 5:8
+  sourceTokenId: h27005008008
+  surface: כָהֲלִ֤ין
+  ble: pueden
+  rmac: AVqrmpa
+  strongs: H3546
+- reference: Daniel 5:9
+  sourceTokenId: h27005009010
+  surface: מִֽשְׁתַּבְּשִֽׁין
+  ble: confundidos
+  rmac: AVMrmpa
+  strongs: H7672
+- reference: Daniel 5:10
+  sourceTokenId: h27005010007
+  surface: מִשְׁתְּיָ֖/א
+  ble: banquete
+  rmac: ANcmsd/Td
+  strongs: H4961
+- reference: Daniel 5:10
+  sourceTokenId: h27005010008
+  surface: עללת
+  ble: entró
+  rmac: AVqp3fs
+  strongs: H5954
+- reference: Daniel 5:10
+  sourceTokenId: h27005010009
+  surface: עַלַּ֑ת
+  ble: entró
+  rmac: AVqp3fs
+  strongs: H5954
+- reference: Daniel 5:10
+  sourceTokenId: h27005010021
+  surface: יִשְׁתַּנּֽוֹ
+  ble: cambien
+  rmac: AVMi3mp
+  strongs: H8133
+- reference: Daniel 5:11
+  sourceTokenId: h27005011028
+  surface: מַלְכָּֽ/א
+  ble: rey
+  rmac: ANcmsd/Td
+  strongs: H4430
+- reference: Daniel 5:12
+  sourceTokenId: h27005012009
+  surface: חֶלְמִין֩
+  ble: sueño
+  rmac: ANcmpa
+  strongs: H2493
+- reference: Daniel 5:12
+  sourceTokenId: h27005012011
+  surface: אֲחִידָ֜ן
+  ble: enigmas
+  rmac: ANcmpa
+  strongs: H280
+- reference: Daniel 5:12
+  sourceTokenId: h27005012013
+  surface: קִטְרִ֗ין
+  ble: nudos
+  rmac: ANcmpa
+  strongs: H7001
+- reference: Daniel 5:12
+  sourceTokenId: h27005012014
+  surface: הִשְׁתְּכַ֤חַת
+  ble: encontró
+  rmac: AVup3fs
+  strongs: H7912
+- reference: Daniel 5:12
+  sourceTokenId: h27005012018
+  surface: מַלְכָּ֥/א
+  ble: rey
+  rmac: ANcmsd/Td
+  strongs: H4430
+- reference: Daniel 5:12
+  sourceTokenId: h27005012019
+  surface: שָׂם
+  ble: puso
+  rmac: AVqp3ms
+  strongs: H7761
+- reference: Daniel 5:12
+  sourceTokenId: h27005012021
+  surface: בֵּלְטְשַׁאצַּ֑ר
+  ble: Belteshazzar
+  rmac: ANp
+  strongs: H1096
+- reference: Daniel 5:12
+  sourceTokenId: h27005012023
+  surface: דָּנִיֵּ֥אל
+  ble: Daniel
+  rmac: ANp
+  strongs: H1841
+- reference: Daniel 5:12
+  sourceTokenId: h27005012024
+  surface: יִתְקְרֵ֖י
+  ble: lee
+  rmac: AVui3ms
+  strongs: H7123
+- reference: Daniel 5:12
+  sourceTokenId: h27005012026
+  surface: יְהַֽחֲוֵֽה
+  ble: declara
+  rmac: AVhi3ms
+  strongs: H2324
+- reference: Daniel 5:13
+  sourceTokenId: h27005013021
+  surface: הַיְתִ֛י
+  ble: vino
+  rmac: AVhp3ms
+  strongs: H858
+- reference: Daniel 5:13
+  sourceTokenId: h27005013022
+  surface: מַלְכָּ֥/א
+  ble: rey
+  rmac: ANcmsd/Td
+  strongs: H4430
+- reference: Daniel 5:14
+  sourceTokenId: h27005014005
+  surface: ר֥וּחַ
+  ble: espíritu
+  rmac: ANcfsc
+  strongs: H7308
+- reference: Daniel 5:14
+  sourceTokenId: h27005014006
+  surface: אֱלָהִ֖ין
+  ble: Dios
+  rmac: ANcmpa
+  strongs: H426
+- reference: Daniel 5:14
+  sourceTokenId: h27005014011
+  surface: יַתִּירָ֖ה
+  ble: excelente
+  rmac: AAafsa
+  strongs: H3493
+- reference: Daniel 5:14
+  sourceTokenId: h27005014012
+  surface: הִשְׁתְּכַ֥חַת
+  ble: encontró
+  rmac: AVup3fs
+  strongs: H7912
+- reference: Daniel 5:15
+  sourceTokenId: h27005015013
+  surface: כָהֲלִ֥ין
+  ble: pueden
+  rmac: AVqrmpa
+  strongs: H3546
+- reference: Daniel 5:16
+  sourceTokenId: h27005016006
+  surface: תוכל
+  ble: puedes
+  rmac: AVqi2ms
+  strongs: H3202
+- reference: Daniel 5:16
+  sourceTokenId: h27005016007
+  surface: תִיכּ֥וּל
+  ble: puedes
+  rmac: AVqi2ms
+  strongs: H3202
+- reference: Daniel 5:16
+  sourceTokenId: h27005016008
+  surface: פִּשְׁרִ֛ין
+  ble: interpretación
+  rmac: ANcmpa
+  strongs: H6591
+- reference: Daniel 5:16
+  sourceTokenId: h27005016013
+  surface: הֵן֩
+  ble: si
+  rmac: AC
+  strongs: H2006
+- reference: Daniel 5:16
+  sourceTokenId: h27005016014
+  surface: תוכל
+  ble: puedes
+  rmac: AVqi2ms
+  strongs: H3202
+- reference: Daniel 5:16
+  sourceTokenId: h27005016015
+  surface: תִּכ֨וּל
+  ble: puedes
+  rmac: AVqi2ms
+  strongs: H3202
+- reference: Daniel 5:16
+  sourceTokenId: h27005016016
+  surface: כְּתָבָ֜/א
+  ble: escrito
+  rmac: ANcmsd/Td
+  strongs: H3792
+- reference: Daniel 5:17
+  sourceTokenId: h27005017009
+  surface: לֶֽהֶוְיָ֔ן
+  ble: son
+  rmac: AVqi3fp
+  strongs: H1934
+- reference: Daniel 5:17
+  sourceTokenId: h27005017012
+  surface: הַ֑ב
+  ble: da
+  rmac: AVqv2ms
+  strongs: H3052
+- reference: Daniel 5:17
+  sourceTokenId: h27005017014
+  surface: כְּתָבָ/א֙
+  ble: escrito
+  rmac: ANcmsd/Td
+  strongs: H3792
+- reference: Daniel 5:17
+  sourceTokenId: h27005017015
+  surface: אֶקְרֵ֣א
+  ble: leo
+  rmac: AVqi1cs
+  strongs: H7123
+- reference: Daniel 5:18
+  sourceTokenId: h27005018011
+  surface: יְהַ֖ב
+  ble: da
+  rmac: AVqi3ms
+  strongs: H3052
+- reference: Daniel 5:19
+  sourceTokenId: h27005019006
+  surface: כֹּ֣ל
+  ble: todo
+  rmac: ANcmsc
+  strongs: H3606
+- reference: Daniel 5:19
+  sourceTokenId: h27005019028
+  surface: צָבֵא֙
+  ble: quiere
+  rmac: AVqrmsa
+  strongs: H6634
+- reference: Daniel 5:19
+  sourceTokenId: h27005019029
+  surface: הֲוָ֣ה
+  ble: es
+  rmac: AVqp3ms
+  strongs: H1934
+- reference: Daniel 5:19
+  sourceTokenId: h27005019030
+  surface: מָרִ֔ים
+  ble: exalta
+  rmac: AVarmsa
+  strongs: H7313
+- reference: Daniel 5:19
+  sourceTokenId: h27005019032
+  surface: הֲוָ֥ה
+  ble: es
+  rmac: AVqp3ms
+  strongs: H1934
+- reference: Daniel 5:19
+  sourceTokenId: h27005019033
+  surface: צָבֵ֖א
+  ble: quiere
+  rmac: AVqrmsa
+  strongs: H6634
+- reference: Daniel 5:19
+  sourceTokenId: h27005019034
+  surface: הֲוָ֥ה
+  ble: es
+  rmac: AVqp3ms
+  strongs: H1934
+- reference: Daniel 5:19
+  sourceTokenId: h27005019035
+  surface: מַשְׁפִּֽיל
+  ble: abate
+  rmac: AVarmsa
+  strongs: H8214
+- reference: Daniel 5:20
+  sourceTokenId: h27005020002
+  surface: רִ֣ם
+  ble: exaltó
+  rmac: AVqp3ms
+  strongs: H7313
+- reference: Daniel 5:21
+  sourceTokenId: h27005021004
+  surface: טְרִ֜יד
+  ble: echó
+  rmac: AVQp3ms
+  strongs: H2957
+- reference: Daniel 5:22
+  sourceTokenId: h27005022006
+  surface: הַשְׁפֵּ֖לְתְּ
+  ble: abatiste
+  rmac: AVhp2ms
+  strongs: H8214
+- reference: Daniel 5:22
+  sourceTokenId: h27005022013
+  surface: יְדַֽעְתָּ
+  ble: sabes
+  rmac: AVqp2ms
+  strongs: H3046
+- reference: Daniel 5:23
+  sourceTokenId: h27005023008
+  surface: הַיְתִ֣יו
+  ble: vinieron
+  rmac: AVhp3mp
+  strongs: H858
+- reference: Daniel 5:23
+  sourceTokenId: h27005023018
+  surface: שָׁתַ֣יִן
+  ble: beben
+  rmac: AVqrmpa
+  strongs: H8355
+- reference: Daniel 5:23
+  sourceTokenId: h27005023023
+  surface: נְחָשָׁ֨/א
+  ble: bronce
+  rmac: ANcmsd/Td
+  strongs: H5174
+- reference: Daniel 5:23
+  sourceTokenId: h27005023024
+  surface: פַרְזְלָ֜/א
+  ble: hierro
+  rmac: ANcmsd/Td
+  strongs: H6523
+- reference: Daniel 5:23
+  sourceTokenId: h27005023025
+  surface: אָעָ֣/א
+  ble: madera
+  rmac: ANcmsd/Td
+  strongs: H636
+- reference: Daniel 5:23
+  sourceTokenId: h27005023029
+  surface: חָזַ֧יִן
+  ble: ven
+  rmac: AVqrmpa
+  strongs: H2370
+- reference: Daniel 5:23
+  sourceTokenId: h27005023031
+  surface: שָׁמְעִ֛ין
+  ble: oyen
+  rmac: AVqrmpa
+  strongs: H8086
+- reference: Daniel 5:23
+  sourceTokenId: h27005023033
+  surface: יָדְעִ֖ין
+  ble: saben
+  rmac: AVqrmpa
+  strongs: H3046
+- reference: Daniel 5:23
+  sourceTokenId: h27005023034
+  surface: שַׁבַּ֑חְתָּ
+  ble: alabaste
+  rmac: AVpp2ms
+  strongs: H7624
+- reference: Daniel 5:24
+  sourceTokenId: h27005024010
+  surface: רְשִֽׁים
+  ble: escribió
+  rmac: AVQp3ms
+  strongs: H7560
+- reference: Daniel 5:30
+  sourceTokenId: h27005030007
+  surface: כַשְׂדָּאָֽ/ה
+  ble: caldeos
+  rmac: ANgmsd/Td
+  strongs: H3779
+- reference: Daniel 5:31
+  sourceTokenId: h27006001007
+  surface: שִׁתִּ֥ין
+  ble: sesenta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 5:31
+  sourceTokenId: h27006001008
+  surface: וְ/תַרְתֵּֽין
+  ble: y·dos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:1
+  sourceTokenId: h27006002007
+  surface: לַ/אֲחַשְׁדַּרְפְּנַיָּ֖/א
+  ble: a·sátrapas
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:2
+  sourceTokenId: h27006003012
+  surface: אִלֵּ֗ין
+  ble: estas
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:2
+  sourceTokenId: h27006003013
+  surface: יָהֲבִ֤ין
+  ble: dan
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:2
+  sourceTokenId: h27006003014
+  surface: לְ/הוֹן֙
+  ble: a·ellos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:2
+  sourceTokenId: h27006003015
+  surface: טַעְמָ֔/א
+  ble: decreto
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:2
+  sourceTokenId: h27006003016
+  surface: וּ/מַלְכָּ֖/א
+  ble: y·rey
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:2
+  sourceTokenId: h27006003017
+  surface: לָֽא
+  ble: 'no'
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:2
+  sourceTokenId: h27006003018
+  surface: לֶהֱוֵ֥א
+  ble: sa
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:2
+  sourceTokenId: h27006003019
+  surface: נָזִֽק
+  ble: daña
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004004
+  surface: הֲוָ֣א
+  ble: es
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004005
+  surface: מִתְנַצַּ֔ח
+  ble: sobresalía
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004006
+  surface: עַל
+  ble: sobre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004008
+  surface: וַ/אֲחַשְׁדַּרְפְּנַיָּ֑/א
+  ble: y·sátrapas
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004009
+  surface: כָּ/ל
+  ble: según·todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004010
+  surface: קֳבֵ֗ל
+  ble: conforme
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004011
+  surface: דִּ֣י
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004012
+  surface: ר֤וּחַ
+  ble: espíritu
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004013
+  surface: יַתִּירָא֙
+  ble: excelente
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:3
+  sourceTokenId: h27006004014
+  surface: בֵּ֔/הּ
+  ble: en·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005007
+  surface: לְ/הַשְׁכָּחָ֥ה
+  ble: para·hallar
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005008
+  surface: לְ/דָנִיֵּ֖אל
+  ble: a·Daniel
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005009
+  surface: מִ/צַּ֣ד
+  ble: de·parte
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005010
+  surface: מַלְכוּתָ֑/א
+  ble: reino
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005011
+  surface: וְ/כָל
+  ble: y·todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005017
+  surface: כָּ/ל
+  ble: según·todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005018
+  surface: קֳבֵל֙
+  ble: conforme
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005019
+  surface: דִּֽי
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005020
+  surface: מְהֵימַ֣ן
+  ble: fiel
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005021
+  surface: ה֔וּא
+  ble: ella
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005022
+  surface: וְ/כָל
+  ble: y·todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005023
+  surface: שָׁלוּ֙
+  ble: negligencia
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005024
+  surface: וּ/שְׁחִיתָ֔ה
+  ble: y·corrupta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005025
+  surface: לָ֥א
+  ble: 'no'
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005026
+  surface: הִשְׁתְּכַ֖חַת
+  ble: encontró
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:4
+  sourceTokenId: h27006005027
+  surface: עֲלֽוֹ/הִי
+  ble: sobre·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:5
+  sourceTokenId: h27006006003
+  surface: אִלֵּךְ֙
+  ble: estos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:5
+  sourceTokenId: h27006006004
+  surface: אָֽמְרִ֔ין
+  ble: dicen
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:5
+  sourceTokenId: h27006006005
+  surface: דִּ֣י
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008001
+  surface: אִתְיָעַ֜טוּ
+  ble: se·aconsejaron
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008002
+  surface: כֹּ֣ל
+  ble: todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008017
+  surface: יִבְעֵ֣ה
+  ble: pide
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008018
+  surface: בָ֠עוּ
+  ble: petición
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008019
+  surface: מִן
+  ble: de
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008020
+  surface: כָּל
+  ble: todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008021
+  surface: אֱלָ֨הּ
+  ble: Dios
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008022
+  surface: וֶֽ/אֱנָ֜שׁ
+  ble: y·hombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008023
+  surface: עַד
+  ble: hasta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008024
+  surface: יוֹמִ֣ין
+  ble: día
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008025
+  surface: תְּלָתִ֗ין
+  ble: treinta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008026
+  surface: לָהֵן֙
+  ble: por·eso
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:7
+  sourceTokenId: h27006008027
+  surface: מִנָּ֣/ךְ
+  ble: de·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:8
+  sourceTokenId: h27006009009
+  surface: לְ/הַשְׁנָיָ֛ה
+  ble: a·cambiar
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:8
+  sourceTokenId: h27006009014
+  surface: לָ֥א
+  ble: 'no'
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:8
+  sourceTokenId: h27006009015
+  surface: תֶעְדֵּֽא
+  ble: quite
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:9
+  sourceTokenId: h27006010006
+  surface: רְשַׁ֥ם
+  ble: escribió
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:10
+  sourceTokenId: h27006011033
+  surface: דְּנָֽה
+  ble: esto
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013001
+  surface: בֵּ֠/אדַיִן
+  ble: en·entonces
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013002
+  surface: קְרִ֨יבוּ
+  ble: ofrecieron
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013003
+  surface: וְ/אָמְרִ֥ין
+  ble: y·dice
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013004
+  surface: קֳדָם
+  ble: delante
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013005
+  surface: מַלְכָּ/א֮
+  ble: rey
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013006
+  surface: עַל
+  ble: sobre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013007
+  surface: אֱסָ֣ר
+  ble: edicto
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013008
+  surface: מַלְכָּ/א֒
+  ble: rey
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013009
+  surface: הֲ/לָ֧א
+  ble: ¿·no
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013010
+  surface: אֱסָ֣ר
+  ble: edicto
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013011
+  surface: רְשַׁ֗מְתָּ
+  ble: escribiste
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013012
+  surface: דִּ֣י
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013013
+  surface: כָל
+  ble: todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013014
+  surface: אֱנָ֡שׁ
+  ble: hombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013015
+  surface: דִּֽי
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013016
+  surface: יִבְעֵה֩
+  ble: pide
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013017
+  surface: מִן
+  ble: de
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013018
+  surface: כָּל
+  ble: todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013019
+  surface: אֱלָ֨הּ
+  ble: Dios
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013020
+  surface: וֶֽ/אֱנָ֜שׁ
+  ble: y·hombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013021
+  surface: עַד
+  ble: hasta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013022
+  surface: יוֹמִ֣ין
+  ble: día
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013023
+  surface: תְּלָתִ֗ין
+  ble: treinta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013024
+  surface: לָהֵן֙
+  ble: por·eso
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013025
+  surface: מִנָּ֣/ךְ
+  ble: de·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013026
+  surface: מַלְכָּ֔/א
+  ble: rey
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:12
+  sourceTokenId: h27006013040
+  surface: תֶעְדֵּֽא
+  ble: quite
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:13
+  sourceTokenId: h27006014009
+  surface: מִן
+  ble: de
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:13
+  sourceTokenId: h27006014013
+  surface: יְה֗וּד
+  ble: Judá
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:13
+  sourceTokenId: h27006014014
+  surface: לָא
+  ble: 'no'
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:13
+  sourceTokenId: h27006014015
+  surface: שָׂ֨ם
+  ble: puso
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:13
+  sourceTokenId: h27006014016
+  surface: עלי/ך
+  ble: sobre·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:13
+  sourceTokenId: h27006014017
+  surface: עֲלָ֤/ךְ
+  ble: sobre·ti
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:13
+  sourceTokenId: h27006014019
+  surface: טְעֵ֔ם
+  ble: decreto
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:13
+  sourceTokenId: h27006014020
+  surface: וְ/עַל
+  ble: y·sobre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:14
+  sourceTokenId: h27006015018
+  surface: מִשְׁתַּדַּ֖ר
+  ble: se·esforzaba
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:15
+  sourceTokenId: h27006016001
+  surface: בֵּ/אדַ֨יִן֙
+  ble: en·entonces
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:15
+  sourceTokenId: h27006016002
+  surface: גֻּבְרַיָּ֣/א
+  ble: hombre
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:15
+  sourceTokenId: h27006016003
+  surface: אִלֵּ֔ךְ
+  ble: estos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:15
+  sourceTokenId: h27006016008
+  surface: לְ/מַלְכָּ֗/א
+  ble: a·rey
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:15
+  sourceTokenId: h27006016016
+  surface: כָל
+  ble: todo
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:15
+  sourceTokenId: h27006016017
+  surface: אֱסָ֥ר
+  ble: edicto
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:15
+  sourceTokenId: h27006016018
+  surface: וּ/קְיָ֛ם
+  ble: y·decreto
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:16
+  sourceTokenId: h27006017004
+  surface: וְ/הַיְתִיו֙
+  ble: y·vinieron
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:16
+  sourceTokenId: h27006017009
+  surface: אַרְיָוָתָ֑/א
+  ble: leones
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:16
+  sourceTokenId: h27006017010
+  surface: עָנֵ֤ה
+  ble: respondió
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:17
+  sourceTokenId: h27006018003
+  surface: חֲדָ֔ה
+  ble: uno
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:18
+  sourceTokenId: h27006019001
+  surface: אֱ֠דַיִן
+  ble: entonces
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:18
+  sourceTokenId: h27006019007
+  surface: וְ/דַחֲוָ֖ן
+  ble: y·instrumentos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:18
+  sourceTokenId: h27006019008
+  surface: לָא
+  ble: 'no'
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:18
+  sourceTokenId: h27006019009
+  surface: הַנְעֵ֣ל
+  ble: entró
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:18
+  sourceTokenId: h27006019010
+  surface: קָֽדָמ֑וֹ/הִי
+  ble: delante·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:18
+  sourceTokenId: h27006019012
+  surface: נַדַּ֥ת
+  ble: huyó
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:18
+  sourceTokenId: h27006019013
+  surface: עֲלֽוֹ/הִי
+  ble: sobre·él
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:19
+  sourceTokenId: h27006020001
+  surface: בֵּ/אדַ֣יִן
+  ble: en·entonces
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:19
+  sourceTokenId: h27006020010
+  surface: אֲזַֽל
+  ble: fue
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:20
+  sourceTokenId: h27006021014
+  surface: חַיָּ֔/א
+  ble: vivos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:21
+  sourceTokenId: h27006022005
+  surface: מַלִּ֑ל
+  ble: habló
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:22
+  sourceTokenId: h27006023022
+  surface: עַבְדֵֽת
+  ble: hice
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:24
+  sourceTokenId: h27006025013
+  surface: רְמ֔וֹ
+  ble: son·echado
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:24
+  sourceTokenId: h27006025014
+  surface: אִנּ֖וּן
+  ble: ellos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:24
+  sourceTokenId: h27006025015
+  surface: בְּנֵי/ה֣וֹן
+  ble: hijo·ellos
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:24
+  sourceTokenId: h27006025020
+  surface: גֻּבָּ֗/א
+  ble: foso
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:24
+  sourceTokenId: h27006025021
+  surface: עַ֠ד
+  ble: hasta
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:24
+  sourceTokenId: h27006025022
+  surface: דִּֽי
+  ble: que
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:24
+  sourceTokenId: h27006025023
+  surface: שְׁלִ֤טֽוּ
+  ble: dominaron
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:24
+  sourceTokenId: h27006025028
+  surface: הַדִּֽקוּ
+  ble: molieron
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:26
+  sourceTokenId: h27006027019
+  surface: ה֣וּא
+  ble: ella
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:27
+  sourceTokenId: h27006028001
+  surface: מְשֵׁיזִ֣ב
+  ble: libra
+  rmac: ''
+  strongs: ''
+- reference: Daniel 6:28
+  sourceTokenId: h27006029009
+  surface: פָּרְסָאָֽ/ה
+  ble: persa
+  rmac: ''
+  strongs: ''
+- reference: Daniel 7:1
+  sourceTokenId: h27007001002
+  surface: חֲדָ֗ה
+  ble: uno
+  rmac: AAcfsa
+  strongs: H2298
+- reference: Daniel 7:1
+  sourceTokenId: h27007001008
+  surface: חֲזָ֔ה
+  ble: vio
+  rmac: AVqp3ms
+  strongs: H2370
+- reference: Daniel 7:1
+  sourceTokenId: h27007001018
+  surface: אֲמַֽר
+  ble: dijo
+  rmac: AVqp3ms
+  strongs: H560
+- reference: Daniel 7:2
+  sourceTokenId: h27007002015
+  surface: רַבָּֽ/א
+  ble: grande
+  rmac: AAamsd/Td
+  strongs: H7229
+- reference: Daniel 7:3
+  sourceTokenId: h27007003007
+  surface: שָׁנְיָ֖ן
+  ble: cambian
+  rmac: AVqrfpa
+  strongs: H8133
+- reference: Daniel 7:3
+  sourceTokenId: h27007003009
+  surface: מִן
+  ble: de
+  rmac: AR
+  strongs: H4481
+- reference: Daniel 7:4
+  sourceTokenId: h27007004022
+  surface: יְהִ֥יב
+  ble: dio
+  rmac: AVQp3ms
+  strongs: H3052
+- reference: Daniel 7:6
+  sourceTokenId: h27007006003
+  surface: חָזֵ֣ה
+  ble: ve
+  rmac: AVqrmsa
+  strongs: H2370
+- reference: Daniel 7:6
+  sourceTokenId: h27007006004
+  surface: הֲוֵ֗ית
+  ble: soy
+  rmac: AVqp1cs
+  strongs: H1934
+- reference: Daniel 7:6
+  sourceTokenId: h27007006006
+  surface: אָֽחֳרִי֙
+  ble: otra
+  rmac: AAafsa
+  strongs: H317
+- reference: Daniel 7:6
+  sourceTokenId: h27007006009
+  surface: גַּפִּ֥ין
+  ble: alas
+  rmac: ANcbpa
+  strongs: H1611
+- reference: Daniel 7:6
+  sourceTokenId: h27007006010
+  surface: אַרְבַּ֛ע
+  ble: cuatro
+  rmac: AAcbsa
+  strongs: H703
+- reference: Daniel 7:7
+  sourceTokenId: h27007007019
+  surface: רַבְרְבָ֔ן
+  ble: grandes
+  rmac: AAafpa
+  strongs: H7260
+- reference: Daniel 7:7
+  sourceTokenId: h27007007020
+  surface: אָֽכְלָ֣ה
+  ble: come
+  rmac: AVqrfsa
+  strongs: H399
+- reference: Daniel 7:7
+  sourceTokenId: h27007007034
+  surface: עֲשַׂ֖ר
+  ble: diez
+  rmac: AAcbsa
+  strongs: H6236
+- reference: Daniel 7:8
+  sourceTokenId: h27007008006
+  surface: אָחֳרִ֤י
+  ble: otra
+  rmac: AAafsa
+  strongs: H317
+- reference: Daniel 7:10
+  sourceTokenId: h27007010017
+  surface: דִּינָ֥/א
+  ble: juicio
+  rmac: ANcmsd/Td
+  strongs: H1780
+- reference: Daniel 7:10
+  sourceTokenId: h27007010018
+  surface: יְתִ֖ב
+  ble: habita
+  rmac: AVqp3ms
+  strongs: H3488
+- reference: Daniel 7:13
+  sourceTokenId: h27007013001
+  surface: חָזֵ֤ה
+  ble: ve
+  rmac: AVqrmsa
+  strongs: H2370
+- reference: Daniel 7:14
+  sourceTokenId: h27007014017
+  surface: יֶעְדֵּ֔ה
+  ble: quite
+  rmac: AVqi3ms
+  strongs: H5709
+- reference: Daniel 7:14
+  sourceTokenId: h27007014021
+  surface: תִתְחַבַּֽל
+  ble: destrua
+  rmac: AVMi3fs
+  strongs: H2255
+- reference: Daniel 7:15
+  sourceTokenId: h27007015001
+  surface: אֶתְכְּרִיַּ֥ת
+  ble: se·angustió
+  rmac: AVip3fs
+  strongs: H3735
+- reference: Daniel 7:19
+  sourceTokenId: h27007019026
+  surface: רָֽפְסָֽה
+  ble: pisotea
+  rmac: AVqrfsa
+  strongs: H7512
+- reference: Daniel 7:20
+  sourceTokenId: h27007020011
+  surface: מִן
+  ble: de
+  rmac: AR
+  strongs: H4481
+- reference: Daniel 7:20
+  sourceTokenId: h27007020014
+  surface: תְּלָ֑ת
+  ble: tres
+  rmac: AAcbsa
+  strongs: H8532
+- reference: Daniel 7:22
+  sourceTokenId: h27007022013
+  surface: הֶחֱסִ֥נוּ
+  ble: tomaron·posesión
+  rmac: AVhp3mp
+  strongs: H2631
+- reference: Daniel 7:22
+  sourceTokenId: h27007022014
+  surface: קַדִּישִֽׁין
+  ble: santos
+  rmac: AAampa
+  strongs: H6922
+- reference: Daniel 7:23
+  sourceTokenId: h27007023001
+  surface: כֵּן֮
+  ble: así
+  rmac: AAampa
+  strongs: H3652
+- reference: Daniel 7:23
+  sourceTokenId: h27007023012
+  surface: מִן
+  ble: de
+  rmac: AR
+  strongs: H4481
+- reference: Daniel 7:23
+  sourceTokenId: h27007023013
+  surface: כָּל
+  ble: todo
+  rmac: AVqi3fs
+  strongs: H3606
+- reference: Daniel 7:23
+  sourceTokenId: h27007023014
+  surface: מַלְכְוָתָ֑/א
+  ble: reino
+  rmac: ANcfpd/Td
+  strongs: H4437
+- reference: Daniel 7:23
+  sourceTokenId: h27007023016
+  surface: כָּל
+  ble: todo
+  rmac: ANcmsc
+  strongs: H3606
+- reference: Daniel 7:23
+  sourceTokenId: h27007023017
+  surface: אַרְעָ֔/א
+  ble: tierra
+  rmac: ANcfsd/Td
+  strongs: H772
+- reference: Daniel 7:24
+  sourceTokenId: h27007024013
+  surface: מִן
+  ble: de
+  rmac: AR
+  strongs: H4481
+- reference: Daniel 7:24
+  sourceTokenId: h27007024014
+  surface: קַדְמָיֵ֔/א
+  ble: primera
+  rmac: AAampd/Td
+  strongs: H6933
+- reference: Daniel 7:24
+  sourceTokenId: h27007024016
+  surface: מַלְכִ֖ין
+  ble: rey
+  rmac: ANcmpa
+  strongs: H4430
+- reference: Daniel 7:24
+  sourceTokenId: h27007024017
+  surface: יְהַשְׁפִּֽל
+  ble: abate
+  rmac: AVhi3ms
+  strongs: H8214
+- reference: Daniel 7:27
+  sourceTokenId: h27007027011
+  surface: קַדִּישֵׁ֣י
+  ble: santos
+  rmac: AAampc
+  strongs: H6922
+- reference: Daniel 7:27
+  sourceTokenId: h27007027012
+  surface: עֶלְיוֹנִ֑ין
+  ble: Altísimos
+  rmac: AAampa
+  strongs: H5946
+- reference: Daniel 7:27
+  sourceTokenId: h27007027014
+  surface: מַלְכ֣וּת
+  ble: reino
+  rmac: ANcfsc
+  strongs: H4437
+- reference: Daniel 7:27
+  sourceTokenId: h27007027015
+  surface: עָלַ֔ם
+  ble: siglo
+  rmac: ANcmsa
+  strongs: H5957
+- reference: Daniel 7:27
+  sourceTokenId: h27007027017
+  surface: שָׁלְטָ֣נַיָּ֔/א
+  ble: dominio
+  rmac: ANcmpd/Td
+  strongs: H7985
+- reference: Daniel 7:27
+  sourceTokenId: h27007027019
+  surface: יִפְלְח֖וּן
+  ble: sirven
+  rmac: AVqi3mp
+  strongs: H6399
+- reference: Daniel 8:1
+  sourceTokenId: h27008001007
+  surface: נִרְאָ֤ה
+  ble: vio
+  rmac: HVNp3ms
+  strongs: H7200
+- reference: Daniel 8:5
+  sourceTokenId: h27008005007
+  surface: בָּ֤א
+  ble: viene
+  rmac: HVqrmsa
+  strongs: H935
+- reference: Daniel 8:5
+  sourceTokenId: h27008005008
+  surface: מִן
+  ble: de
+  rmac: HR
+  strongs: H4480
+- reference: Daniel 8:5
+  sourceTokenId: h27008005010
+  surface: עַל
+  ble: sobre
+  rmac: HR
+  strongs: H5921
+- reference: Daniel 8:5
+  sourceTokenId: h27008005011
+  surface: פְּנֵ֣י
+  ble: rostro
+  rmac: HNcbpc
+  strongs: H6440
+- reference: Daniel 8:5
+  sourceTokenId: h27008005012
+  surface: כָל
+  ble: todo
+  rmac: HNcmsc
+  strongs: H3605
+- reference: Daniel 8:7
+  sourceTokenId: h27008007015
+  surface: הָ֥יָה
+  ble: es
+  rmac: HVqp3ms
+  strongs: H1961
+- reference: Daniel 8:7
+  sourceTokenId: h27008007016
+  surface: כֹ֛חַ
+  ble: fuerza
+  rmac: HNcmsa
+  strongs: H3581
+- reference: Daniel 8:7
+  sourceTokenId: h27008007021
+  surface: אַ֨רְצָ/ה֙
+  ble: tierra
+  rmac: HNcbsa/Sd
+  strongs: H776
+- reference: Daniel 8:7
+  sourceTokenId: h27008007024
+  surface: הָיָ֥ה
+  ble: es
+  rmac: HVqp3ms
+  strongs: H1961
+- reference: Daniel 8:7
+  sourceTokenId: h27008007025
+  surface: מַצִּ֛יל
+  ble: libra
+  rmac: HVhrmsa
+  strongs: H5337
+- reference: Daniel 8:9
+  sourceTokenId: h27008009006
+  surface: אַחַ֖ת
+  ble: uno
+  rmac: HAcfsa
+  strongs: H259
+- reference: Daniel 8:12
+  sourceTokenId: h27008012002
+  surface: תִּנָּתֵ֥ן
+  ble: da
+  rmac: HVNi3fs
+  strongs: H5414
+- reference: Daniel 8:12
+  sourceTokenId: h27008012003
+  surface: עַל
+  ble: sobre
+  rmac: HR
+  strongs: H5921
+- reference: Daniel 8:13
+  sourceTokenId: h27008013002
+  surface: אֶֽחָד
+  ble: uno
+  rmac: HAcmsa
+  strongs: H259
+- reference: Daniel 8:13
+  sourceTokenId: h27008013004
+  surface: מְדַבֵּ֑ר
+  ble: habla
+  rmac: HVprmsa
+  strongs: H1696
+- reference: Daniel 8:13
+  sourceTokenId: h27008013006
+  surface: אֶחָ֨ד
+  ble: uno
+  rmac: HAcmsa
+  strongs: H259
+- reference: Daniel 8:14
+  sourceTokenId: h27008014010
+  surface: קֹֽדֶשׁ
+  ble: santo
+  rmac: HNcmsa
+  strongs: H6944
+- reference: Daniel 8:15
+  sourceTokenId: h27008015013
+  surface: גָֽבֶר
+  ble: varón
+  rmac: HNcmsa
+  strongs: H1397
+- reference: Daniel 8:19
+  sourceTokenId: h27008019006
+  surface: יִהְיֶ֖ה
+  ble: es
+  rmac: HVqi3ms
+  strongs: H1961
+- reference: Daniel 8:21
+  sourceTokenId: h27008021010
+  surface: ה֖וּא
+  ble: él
+  rmac: HPp3ms
+  strongs: H1931
+- reference: Daniel 8:26
+  sourceTokenId: h27008026007
+  surface: ה֑וּא
+  ble: él
+  rmac: HPp3ms
+  strongs: H1931
+- reference: Daniel 8:26
+  sourceTokenId: h27008026009
+  surface: סְתֹ֣ם
+  ble: serve
+  rmac: HVqv2ms
+  strongs: H5640
+- reference: Daniel 8:26
+  sourceTokenId: h27008026013
+  surface: רַבִּֽים
+  ble: mucho
+  rmac: HAampa
+  strongs: H7227
+- reference: Daniel 9:6
+  sourceTokenId: h27009006002
+  surface: שָׁמַ֨עְנוּ֙
+  ble: oímos
+  rmac: HVqp1cp
+  strongs: H8085
+- reference: Daniel 9:6
+  sourceTokenId: h27009006014
+  surface: כָּל
+  ble: todo
+  rmac: HNcmsc
+  strongs: H3605
+- reference: Daniel 9:6
+  sourceTokenId: h27009006015
+  surface: עַ֥ם
+  ble: pueblo
+  rmac: HNcmsc
+  strongs: H5971
+- reference: Daniel 9:7
+  sourceTokenId: h27009007005
+  surface: בֹּ֥שֶׁת
+  ble: límite
+  rmac: HNcfsc
+  strongs: H1322
+- reference: Daniel 9:7
+  sourceTokenId: h27009007010
+  surface: יְהוּדָה֙
+  ble: Judá
+  rmac: HNp
+  strongs: H3063
+- reference: Daniel 9:7
+  sourceTokenId: h27009007012
+  surface: יְרֽוּשָׁלִַ֔ם
+  ble: Jerusalén
+  rmac: HNp
+  strongs: H3389
+- reference: Daniel 9:7
+  sourceTokenId: h27009007014
+  surface: יִשְׂרָאֵ֞ל
+  ble: Israel
+  rmac: HNp
+  strongs: H3478
+- reference: Daniel 9:7
+  sourceTokenId: h27009007021
+  surface: שָׁ֔ם
+  ble: allí
+  rmac: HD
+  strongs: H8033
+- reference: Daniel 9:7
+  sourceTokenId: h27009007024
+  surface: מָֽעֲלוּ
+  ble: actuaron·infielmente
+  rmac: HVqp3cp
+  strongs: H4603
+- reference: Daniel 9:18
+  sourceTokenId: h27009018005
+  surface: פקח/ה
+  ble: abre
+  rmac: HVqv2ms/Sh
+  strongs: H6491
+- reference: Daniel 9:18
+  sourceTokenId: h27009018012
+  surface: נִקְרָ֥א
+  ble: llamó
+  rmac: HVNp3ms
+  strongs: H7121
+- reference: Daniel 9:20
+  sourceTokenId: h27009020015
+  surface: עַ֖ל
+  ble: sobre
+  rmac: HR
+  strongs: H5921
+- reference: Daniel 9:20
+  sourceTokenId: h27009020017
+  surface: קֹ֥דֶשׁ
+  ble: santo
+  rmac: HNcmsc
+  strongs: H6944
+- reference: Daniel 9:23
+  sourceTokenId: h27009023009
+  surface: חֲמוּד֖וֹת
+  ble: deseable
+  rmac: HNcfpa
+  strongs: H2530
+- reference: Daniel 9:23
+  sourceTokenId: h27009023010
+  surface: אָ֑תָּה
+  ble: tú
+  rmac: HPp2ms
+  strongs: H859
+- reference: Daniel 9:24
+  sourceTokenId: h27009024013
+  surface: חטאות
+  ble: pecado
+  rmac: HNcfpa
+  strongs: H2403
+- reference: Daniel 9:24
+  sourceTokenId: h27009024014
+  surface: חַטָּאת֙
+  ble: pecado
+  rmac: HNcfsa
+  strongs: H2403
+- reference: Daniel 9:24
+  sourceTokenId: h27009024016
+  surface: עָוֺ֔ן
+  ble: iniquidad
+  rmac: HNcbsa
+  strongs: H5771
+- reference: Daniel 9:24
+  sourceTokenId: h27009024018
+  surface: צֶ֣דֶק
+  ble: justicia
+  rmac: HNcmsc
+  strongs: H6664
+- reference: Daniel 9:24
+  sourceTokenId: h27009024019
+  surface: עֹֽלָמִ֑ים
+  ble: eterno
+  rmac: HNcmpa
+  strongs: H5769
+- reference: Daniel 9:24
+  sourceTokenId: h27009024021
+  surface: חָז֣וֹן
+  ble: visión
+  rmac: HNcmsa
+  strongs: H2377
+- reference: Daniel 9:24
+  sourceTokenId: h27009024024
+  surface: קֹ֥דֶשׁ
+  ble: santo
+  rmac: HNcmsc
+  strongs: H6944
+- reference: Daniel 9:24
+  sourceTokenId: h27009024025
+  surface: קָֽדָשִֽׁים
+  ble: santo
+  rmac: HNcmpa
+  strongs: H6944
+- reference: Daniel 9:27
+  sourceTokenId: h27009027004
+  surface: שָׁב֣וּעַ
+  ble: cantar
+  rmac: HNcmsa
+  strongs: H7620
+- reference: Daniel 9:27
+  sourceTokenId: h27009027005
+  surface: אֶחָ֑ד
+  ble: uno
+  rmac: HAcmsa
+  strongs: H259
+- reference: Daniel 9:27
+  sourceTokenId: h27009027016
+  surface: כָּלָה֙
+  ble: terminar
+  rmac: HNcfsa
+  strongs: H3617
+- reference: Daniel 9:27
+  sourceTokenId: h27009027018
+  surface: תִּתַּ֖ךְ
+  ble: derrama
+  rmac: HVqi3fs
+  strongs: H5413
+- reference: Daniel 9:27
+  sourceTokenId: h27009027019
+  surface: עַל
+  ble: sobre
+  rmac: HR
+  strongs: H5921
+- reference: Daniel 9:27
+  sourceTokenId: h27009027020
+  surface: שֹׁמֵֽם
+  ble: asola
+  rmac: HVqrmsa
+  strongs: H8074
+- reference: Daniel 10:1
+  sourceTokenId: h27010001002
+  surface: שָׁל֗וֹשׁ
+  ble: tres
+  rmac: HAcfsa
+  strongs: H7969
+- reference: Daniel 10:1
+  sourceTokenId: h27010001007
+  surface: נִגְלָ֣ה
+  ble: descubrió
+  rmac: HVNp3ms
+  strongs: H1540
+- reference: Daniel 10:2
+  sourceTokenId: h27010002009
+  surface: יָמִֽים
+  ble: días
+  rmac: HNcmpa
+  strongs: H3117
+- reference: Daniel 10:7
+  sourceTokenId: h27010007009
+  surface: הָי֣וּ
+  ble: son
+  rmac: HVqp3cp
+  strongs: H1961
+- reference: Daniel 10:7
+  sourceTokenId: h27010007012
+  surface: רָא֖וּ
+  ble: vieron
+  rmac: HVqp3cp
+  strongs: H7200
+- reference: Daniel 10:7
+  sourceTokenId: h27010007015
+  surface: אֲבָ֗ל
+  ble: sesenta
+  rmac: HD
+  strongs: ''
+- reference: Daniel 10:7
+  sourceTokenId: h27010007016
+  surface: חֲרָדָ֤ה
+  ble: calor
+  rmac: HNcfsa
+  strongs: H2731
+- reference: Daniel 10:7
+  sourceTokenId: h27010007017
+  surface: גְדֹלָה֙
+  ble: Er
+  rmac: HAafsa
+  strongs: H1419
+- reference: Daniel 10:8
+  sourceTokenId: h27010008010
+  surface: נִשְׁאַר
+  ble: cantó
+  rmac: HVNp3ms
+  strongs: H7604
+- reference: Daniel 10:8
+  sourceTokenId: h27010008018
+  surface: עָצַ֖רְתִּי
+  ble: serví
+  rmac: HVqp1cs
+  strongs: H6113
+- reference: Daniel 10:8
+  sourceTokenId: h27010008019
+  surface: כֹּֽחַ
+  ble: fuerza
+  rmac: HNcmsa
+  strongs: H3581
+- reference: Daniel 10:9
+  sourceTokenId: h27010009010
+  surface: הָיִ֛יתִי
+  ble: soy
+  rmac: HVqp1cs
+  strongs: H1961
+- reference: Daniel 10:10
+  sourceTokenId: h27010010003
+  surface: נָ֣גְעָה
+  ble: se·aproximó
+  rmac: HVqp3fs
+  strongs: H5060
+- reference: Daniel 10:11
+  sourceTokenId: h27010011016
+  surface: עַתָּ֖ה
+  ble: ahora
+  rmac: HD
+  strongs: H6258
+- reference: Daniel 10:11
+  sourceTokenId: h27010011017
+  surface: שֻׁלַּ֣חְתִּי
+  ble: envié
+  rmac: HVPp1cs
+  strongs: H7971
+- reference: Daniel 10:11
+  sourceTokenId: h27010011024
+  surface: עָמַ֥דְתִּי
+  ble: esto
+  rmac: HVqp1cs
+  strongs: H5975
+- reference: Daniel 10:11
+  sourceTokenId: h27010011025
+  surface: מַרְעִֽיד
+  ble: tembla
+  rmac: HVhrmsa
+  strongs: H7460
+- reference: Daniel 10:13
+  sourceTokenId: h27010013019
+  surface: אֵ֖צֶל
+  ble: padre
+  rmac: HR
+  strongs: H681
+- reference: Daniel 10:14
+  sourceTokenId: h27010014010
+  surface: ע֥וֹד
+  ble: todavía
+  rmac: HD
+  strongs: H5750
+- reference: Daniel 10:16
+  sourceTokenId: h27010016005
+  surface: נֹגֵ֖עַ
+  ble: se·aproxima
+  rmac: HVqrmsa
+  strongs: H5060
+- reference: Daniel 10:16
+  sourceTokenId: h27010016006
+  surface: עַל
+  ble: sobre
+  rmac: HR
+  strongs: H5921
+- reference: Daniel 10:16
+  sourceTokenId: h27010016021
+  surface: עָצַ֖רְתִּי
+  ble: serví
+  rmac: HVqp1cs
+  strongs: H6113
+- reference: Daniel 10:17
+  sourceTokenId: h27010017018
+  surface: נִשְׁאֲרָה
+  ble: cantó
+  rmac: HVNp3fs
+  strongs: H7604
+- reference: Daniel 10:19
+  sourceTokenId: h27010019014
+  surface: יְדַבֵּ֥ר
+  ble: hable
+  rmac: HVpj3ms
+  strongs: H1696
+- reference: Daniel 10:20
+  sourceTokenId: h27010020017
+  surface: בָּֽא
+  ble: viene
+  rmac: HVqrmsa
+  strongs: H935
+- reference: Daniel 11:2
+  sourceTokenId: h27011002003
+  surface: אַגִּ֣יד
+  ble: declaro
+  rmac: HVhi1cs
+  strongs: H5046
+- reference: Daniel 11:2
+  sourceTokenId: h27011002009
+  surface: עֹמְדִ֣ים
+  ble: estan
+  rmac: HVqrmpa
+  strongs: H5975
+- reference: Daniel 11:2
+  sourceTokenId: h27011002012
+  surface: יַעֲשִׁ֤יר
+  ble: conduce
+  rmac: HVhi3ms
+  strongs: H6238
+- reference: Daniel 11:3
+  sourceTokenId: h27011003006
+  surface: רַ֔ב
+  ble: mucho
+  rmac: HAamsa
+  strongs: H7227
+- reference: Daniel 11:4
+  sourceTokenId: h27011004006
+  surface: רוּח֣וֹת
+  ble: espíritu
+  rmac: HNcbpc
+  strongs: H7307
+- reference: Daniel 11:8
+  sourceTokenId: h27011008011
+  surface: יָבִ֣א
+  ble: viene
+  rmac: HVhi3ms
+  strongs: H935
+- reference: Daniel 11:12
+  sourceTokenId: h27011012009
+  surface: יָעֽוֹז
+  ble: se·fortalece
+  rmac: HVqi3ms
+  strongs: H5810
+- reference: Daniel 11:15
+  sourceTokenId: h27011015012
+  surface: יַעֲמֹ֔דוּ
+  ble: esten
+  rmac: HVqi3mp
+  strongs: H5975
+- reference: Daniel 11:17
+  sourceTokenId: h27011017019
+  surface: תִהְיֶֽה
+  ble: es
+  rmac: HVqi3fs
+  strongs: H1961
+- reference: Daniel 11:18
+  sourceTokenId: h27011018013
+  surface: יָשִׁ֥יב
+  ble: volve
+  rmac: HVhi3ms
+  strongs: H7725
+- reference: Daniel 11:19
+  sourceTokenId: h27011019008
+  surface: יִמָּצֵֽא
+  ble: halla
+  rmac: HVNi3ms
+  strongs: H4672
+- reference: Daniel 11:25
+  sourceTokenId: h27011025019
+  surface: יַעֲמֹ֔ד
+  ble: esta
+  rmac: HVqi3ms
+  strongs: H5975
+- reference: Daniel 11:25
+  sourceTokenId: h27011025023
+  surface: מַחֲשָׁבֽוֹת
+  ble: pensamiento
+  rmac: HNcfpa
+  strongs: H4284
+- reference: Daniel 11:26
+  sourceTokenId: h27011026009
+  surface: רַבִּֽים
+  ble: mucho
+  rmac: HAampa
+  strongs: H7227
+- reference: Daniel 11:27
+  sourceTokenId: h27011027009
+  surface: יְדַבֵּ֑רוּ
+  ble: hablan
+  rmac: HVpi3mp
+  strongs: H1696
+- reference: Daniel 11:30
+  sourceTokenId: h27011030017
+  surface: קֹֽדֶשׁ
+  ble: santo
+  rmac: HNcmsa
+  strongs: H6944
+- reference: Daniel 11:32
+  sourceTokenId: h27011032003
+  surface: יַחֲנִ֖יף
+  ble: divide
+  rmac: HVhi3ms
+  strongs: H2610
+- reference: Daniel 11:34
+  sourceTokenId: h27011034002
+  surface: יֵעָזְר֖וּ
+  ble: ayudan
+  rmac: HVNi3mp
+  strongs: H5826
+- reference: Daniel 11:34
+  sourceTokenId: h27011034003
+  surface: עֵ֣זֶר
+  ble: luz
+  rmac: HNcmsa
+  strongs: H5828
+- reference: Daniel 11:34
+  sourceTokenId: h27011034004
+  surface: מְעָ֑ט
+  ble: poco
+  rmac: HNcmsa
+  strongs: H4592
+- reference: Daniel 11:37
+  sourceTokenId: h27011037002
+  surface: אֱלֹהֵ֤י
+  ble: Dios
+  rmac: HNcmpc
+  strongs: H430
+- reference: Daniel 11:37
+  sourceTokenId: h27011037011
+  surface: אֱל֖וֹהַּ
+  ble: cien
+  rmac: HNcmsa
+  strongs: H433
+- reference: Daniel 11:37
+  sourceTokenId: h27011037013
+  surface: יָבִ֑ין
+  ble: entenda
+  rmac: HVqi3ms
+  strongs: H995
+- reference: Daniel 11:37
+  sourceTokenId: h27011037015
+  surface: עַל
+  ble: sobre
+  rmac: HR
+  strongs: H5921
+- reference: Daniel 11:37
+  sourceTokenId: h27011037016
+  surface: כֹּ֖ל
+  ble: todo
+  rmac: HNcmsa
+  strongs: H3605
+- reference: Daniel 11:37
+  sourceTokenId: h27011037017
+  surface: יִתְגַּדָּֽל
+  ble: es·grande
+  rmac: HVti3ms
+  strongs: H1431
+- reference: Daniel 11:42
+  sourceTokenId: h27011042007
+  surface: תִהְיֶ֖ה
+  ble: sa
+  rmac: HVqi3fs
+  strongs: H1961
+- reference: Daniel 12:1
+  sourceTokenId: h27012001016
+  surface: נִהְיְתָה֙
+  ble: es
+  rmac: HVNp3fs
+  strongs: H1961
+- reference: Daniel 12:2
+  sourceTokenId: h27012002012
+  surface: עוֹלָֽם
+  ble: eterno
+  rmac: HNcmsa
+  strongs: H5769
+- reference: Daniel 12:5
+  sourceTokenId: h27012005013
+  surface: הֵ֖נָּה
+  ble: él
+  rmac: HD
+  strongs: H2008
+- reference: Daniel 12:7
+  sourceTokenId: h27012007028
+  surface: כָל
+  ble: todo
+  rmac: HNcmsc
+  strongs: H3605
+- reference: Daniel 12:7
+  sourceTokenId: h27012007029
+  surface: אֵֽלֶּה
+  ble: estos
+  rmac: HPdxcp
+  strongs: H428
+- reference: Daniel 12:8
+  sourceTokenId: h27012008008
+  surface: אַחֲרִ֖ית
+  ble: fin
+  rmac: HNcfsa
+  strongs: H319
+- reference: Daniel 12:8
+  sourceTokenId: h27012008009
+  surface: אֵֽלֶּה
+  ble: estos
+  rmac: HPdxcp
+  strongs: H428
+- reference: Daniel 12:10
+  sourceTokenId: h27012010001
+  surface: יִ֠תְבָּֽרֲרוּ
+  ble: cocen
+  rmac: HVti3mp
+  strongs: H1305
+- reference: Daniel 12:11
+  sourceTokenId: h27012011008
+  surface: אֶ֖לֶף
+  ble: mil
+  rmac: HAcbsa
+  strongs: H505
+- reference: Daniel 12:11
+  sourceTokenId: h27012011009
+  surface: מָאתַ֥יִם
+  ble: cien
+  rmac: HAcbda
+  strongs: H3967
+- reference: Daniel 12:12
+  sourceTokenId: h27012012005
+  surface: אֶ֕לֶף
+  ble: mil
+  rmac: HAcbsa
+  strongs: H505
+- reference: Daniel 12:12
+  sourceTokenId: h27012012006
+  surface: שְׁלֹ֥שׁ
+  ble: tres
+  rmac: HAcfsa
+  strongs: H7969
+- reference: Daniel 12:12
+  sourceTokenId: h27012012007
+  surface: מֵא֖וֹת
+  ble: cien
+  rmac: HAcbpa
+  strongs: H3967
+- reference: Daniel 12:12
+  sourceTokenId: h27012012008
+  surface: שְׁלֹשִׁ֥ים
+  ble: susurrar
+  rmac: HAcbpa
+  strongs: H7970
+- reference: Daniel 12:13
+  sourceTokenId: h27012013002
+  surface: לֵ֣ךְ
+  ble: ve
+  rmac: HVqv2ms
+  strongs: H3212
+unaccounted_function_source_tokens:
+- reference: Daniel 3:2
+  sourceTokenId: h27003002007
+  surface: וּֽ/פַחֲוָתָ֡/א
+  ble: y·gobernadores
+  rmac: AC/Ncmpd/Td
+  strongs: H6347
+- reference: Daniel 3:2
+  sourceTokenId: h27003002012
+  surface: וְ/כֹ֖ל
+  ble: y·todo
+  rmac: AC/Ncmsc
+  strongs: H3606
+- reference: Daniel 3:2
+  sourceTokenId: h27003002015
+  surface: לְ/מֵתֵא֙
+  ble: para·traer
+  rmac: AR/Vqc
+  strongs: H858
+- reference: Daniel 3:2
+  sourceTokenId: h27003002016
+  surface: לַ/חֲנֻכַּ֣ת
+  ble: a·dedicación
+  rmac: AR/Ncfsc
+  strongs: H2597
+- reference: Daniel 3:2
+  sourceTokenId: h27003002018
+  surface: דִּ֥י
+  ble: que
+  rmac: ATr
+  strongs: H1768
+- reference: Daniel 3:3
+  sourceTokenId: h27003003021
+  surface: לָ/קֳבֵ֣ל
+  ble: a·conforme
+  rmac: AR/R
+  strongs: H6903
+- reference: Daniel 3:7
+  sourceTokenId: h27003007017
+  surface: וְ/כֹ֖ל
+  ble: y·todo
+  rmac: AC/Ncmsc
+  strongs: H3606
+- reference: Daniel 3:8
+  sourceTokenId: h27003008001
+  surface: כָּ/ל
+  ble: según·todo
+  rmac: AC/C
+  strongs: H3606
+- reference: Daniel 3:10
+  sourceTokenId: h27003010018
+  surface: ו/סיפניה
+  ble: y·zampoña
+  rmac: AC/Ncfsa
+  strongs: H5481
+- reference: Daniel 3:11
+  sourceTokenId: h27003011001
+  surface: וּ/מַן
+  ble: y·quien
+  rmac: AC/Pf3cs
+  strongs: H4479
+- reference: Daniel 3:12
+  sourceTokenId: h27003012017
+  surface: לָא
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:12
+  sourceTokenId: h27003012019
+  surface: עלי/ך
+  ble: sobre·ti
+  rmac: AR/Sp2ms
+  strongs: H5922
+- reference: Daniel 3:12
+  sourceTokenId: h27003012020
+  surface: עֲלָ֤/ךְ
+  ble: sobre·ti
+  rmac: AR/Sp2ms
+  strongs: H5922
+- reference: Daniel 3:12
+  sourceTokenId: h27003012031
+  surface: לָ֥א
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:14
+  sourceTokenId: h27003014018
+  surface: לָ֥א
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:15
+  sourceTokenId: h27003015006
+  surface: בְ/עִדָּנָ֡/א
+  ble: en·el·tiempo
+  rmac: AR/Ncmsd/Td
+  strongs: H5732
+- reference: Daniel 3:15
+  sourceTokenId: h27003015007
+  surface: דִּֽי
+  ble: que
+  rmac: ATr
+  strongs: H1768
+- reference: Daniel 3:15
+  sourceTokenId: h27003015016
+  surface: וְ/סוּמְפֹּ֨נְיָ֜ה
+  ble: y·zampoña
+  rmac: AC/Ncfsa
+  strongs: H5481
+- reference: Daniel 3:15
+  sourceTokenId: h27003015017
+  surface: וְ/כֹ֣ל
+  ble: y·todo
+  rmac: AC/Ncmsc
+  strongs: H3606
+- reference: Daniel 3:15
+  sourceTokenId: h27003015021
+  surface: וְ/תִסְגְּדוּן֮
+  ble: y·adoráis
+  rmac: AC/Vqi2mp
+  strongs: H5457
+- reference: Daniel 3:15
+  sourceTokenId: h27003015022
+  surface: לְ/צַלְמָ֣/א
+  ble: a·la·imagen
+  rmac: AR/Ncmsd/Td
+  strongs: H6755
+- reference: Daniel 3:15
+  sourceTokenId: h27003015023
+  surface: דִֽי
+  ble: que
+  rmac: ATr
+  strongs: H1768
+- reference: Daniel 3:15
+  sourceTokenId: h27003015025
+  surface: וְ/הֵן֙
+  ble: y·si
+  rmac: AC/C
+  strongs: H2006
+- reference: Daniel 3:15
+  sourceTokenId: h27003015026
+  surface: לָ֣א
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:15
+  sourceTokenId: h27003015028
+  surface: בַּ/הּ
+  ble: en·él
+  rmac: AR/Sp3ms
+  strongs: ''
+- reference: Daniel 3:15
+  sourceTokenId: h27003015031
+  surface: לְ/גֽוֹא
+  ble: dentro
+  rmac: AR/Ncmsc
+  strongs: H1459
+- reference: Daniel 3:15
+  sourceTokenId: h27003015035
+  surface: וּ/מַן
+  ble: y·quien
+  rmac: AC/Pi3cs
+  strongs: H4479
+- reference: Daniel 3:15
+  sourceTokenId: h27003015036
+  surface: ה֣וּא
+  ble: ella
+  rmac: ATa
+  strongs: H1932
+- reference: Daniel 3:15
+  sourceTokenId: h27003015038
+  surface: דֵּ֥י
+  ble: que
+  rmac: ATr
+  strongs: H1768
+- reference: Daniel 3:15
+  sourceTokenId: h27003015039
+  surface: יְשֵֽׁיזְבִנְ/כ֖וֹן
+  ble: libra·vosotros
+  rmac: AVei3ms/Sp2mp
+  strongs: H7804
+- reference: Daniel 3:15
+  sourceTokenId: h27003015041
+  surface: יְדָֽ/י
+  ble: mano·mí
+  rmac: ANcfpc/Sp1cs
+  strongs: H3028
+- reference: Daniel 3:16
+  sourceTokenId: h27003016006
+  surface: וְ/אָמְרִ֖ין
+  ble: y·dicen
+  rmac: AC/Vqrmpa
+  strongs: H560
+- reference: Daniel 3:16
+  sourceTokenId: h27003016015
+  surface: לַ/הֲתָבוּתָֽ/ךְ
+  ble: para·responderte·ti
+  rmac: AR/Vhc/Sp2ms
+  strongs: H8421
+- reference: Daniel 3:18
+  sourceTokenId: h27003018005
+  surface: לָ֖/ךְ
+  ble: a·ti
+  rmac: AR/Sp2ms
+  strongs: ''
+- reference: Daniel 3:18
+  sourceTokenId: h27003018009
+  surface: לֵֽ/אלָהָ/ךְ֙
+  ble: a·Dios·ti
+  rmac: AR/Ncmsc/Sp2ms
+  strongs: H426
+- reference: Daniel 3:18
+  sourceTokenId: h27003018018
+  surface: לָ֥א
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:22
+  sourceTokenId: h27003022021
+  surface: הִמּ֔וֹן
+  ble: ellos
+  rmac: APp3mp
+  strongs: H1994
+- reference: Daniel 3:22
+  sourceTokenId: h27003022023
+  surface: דִּ֥י
+  ble: que
+  rmac: ATr
+  strongs: H1768
+- reference: Daniel 3:23
+  sourceTokenId: h27003023001
+  surface: וְ/גֻבְרַיָּ֤/א
+  ble: y·los·hombres
+  rmac: AC/Ncmpd/Td
+  strongs: H1400
+- reference: Daniel 3:24
+  sourceTokenId: h27003024008
+  surface: וְ/אָמַ֜ר
+  ble: y·dice
+  rmac: AC/Vqrmsa
+  strongs: H560
+- reference: Daniel 3:24
+  sourceTokenId: h27003024009
+  surface: לְ/הַדָּֽבְר֗וֹ/הִי
+  ble: a·sus·consejeros·él
+  rmac: AR/Ncmpc/Sp3ms
+  strongs: H1907
+- reference: Daniel 3:24
+  sourceTokenId: h27003024010
+  surface: הֲ/לָא֩
+  ble: ¿·no
+  rmac: ATi/Tn
+  strongs: H3809
+- reference: Daniel 3:24
+  sourceTokenId: h27003024014
+  surface: לְ/גוֹא
+  ble: dentro
+  rmac: AR/Ncmsc
+  strongs: H1459
+- reference: Daniel 3:24
+  sourceTokenId: h27003024018
+  surface: וְ/אָמְרִין֙
+  ble: y·dicen
+  rmac: AC/Vqrmpa
+  strongs: H560
+- reference: Daniel 3:24
+  sourceTokenId: h27003024019
+  surface: לְ/מַלְכָּ֔/א
+  ble: a·rey
+  rmac: AR/Ncmsd/Td
+  strongs: H4430
+- reference: Daniel 3:25
+  sourceTokenId: h27003025013
+  surface: לָא
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:27
+  sourceTokenId: h27003027015
+  surface: וּ/שְׂעַ֤ר
+  ble: y·cabello
+  rmac: AC/Ncmsc
+  strongs: H8177
+- reference: Daniel 3:27
+  sourceTokenId: h27003027016
+  surface: רֵֽאשְׁ/הוֹן֙
+  ble: cabeza·ellos
+  rmac: ANcmsc/Sp3mp
+  strongs: H7217
+- reference: Daniel 3:27
+  sourceTokenId: h27003027017
+  surface: לָ֣א
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:27
+  sourceTokenId: h27003027019
+  surface: וְ/סָרְבָּלֵי/ה֖וֹן
+  ble: y·sus·mantos·ellos
+  rmac: AC/Ncmpc/Sp3mp
+  strongs: H5622
+- reference: Daniel 3:27
+  sourceTokenId: h27003027020
+  surface: לָ֣א
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:27
+  sourceTokenId: h27003027022
+  surface: וְ/רֵ֣יחַ
+  ble: y·olor
+  rmac: AC/Ncfsc
+  strongs: H7382
+- reference: Daniel 3:27
+  sourceTokenId: h27003027024
+  surface: לָ֥א
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 3:27
+  sourceTokenId: h27003027026
+  surface: בְּ/הֽוֹן
+  ble: en·ellos
+  rmac: AR/Sp3mp
+  strongs: ''
+- reference: Daniel 3:29
+  sourceTokenId: h27003029018
+  surface: וַ/עֲבֵ֣ד
+  ble: y·Abed-Nego
+  rmac: AC/Np
+  strongs: H5665
+- reference: Daniel 3:29
+  sourceTokenId: h27003029022
+  surface: וּ/בַיְתֵ֖/הּ
+  ble: y·casa·él
+  rmac: AC/Ncmsc/Sp3ms
+  strongs: H1005
+- reference: Daniel 5:2
+  sourceTokenId: h27005002022
+  surface: וּ/לְחֵנָתֵֽ/הּ
+  ble: y·sus·concubinas·él
+  rmac: AC/Ncfsc/Sp3ms
+  strongs: H3904
+- reference: Daniel 5:3
+  sourceTokenId: h27005003019
+  surface: וּ/לְחֵנָתֵֽ/הּ
+  ble: y·sus·concubinas·él
+  rmac: AC/Ncfpc/Sp3ms
+  strongs: H3904
+- reference: Daniel 5:5
+  sourceTokenId: h27005005010
+  surface: לָ/קֳבֵ֣ל
+  ble: a·conforme
+  rmac: AR/R
+  strongs: H6903
+- reference: Daniel 5:5
+  sourceTokenId: h27005005012
+  surface: עַל
+  ble: sobre
+  rmac: AR
+  strongs: H5922
+- reference: Daniel 5:5
+  sourceTokenId: h27005005014
+  surface: דִּֽי
+  ble: que
+  rmac: AT
+  strongs: H1768
+- reference: Daniel 5:5
+  sourceTokenId: h27005005017
+  surface: דִּ֣י
+  ble: que
+  rmac: AT
+  strongs: H1768
+- reference: Daniel 5:5
+  sourceTokenId: h27005005019
+  surface: וּ/מַלְכָּ֣/א
+  ble: y·rey
+  rmac: AC/Ncmsd/Td
+  strongs: H4430
+- reference: Daniel 5:5
+  sourceTokenId: h27005005023
+  surface: דִּ֥י
+  ble: que
+  rmac: ATr
+  strongs: H1768
+- reference: Daniel 5:7
+  sourceTokenId: h27005007003
+  surface: בְּ/חַ֔יִל
+  ble: con·fuerza
+  rmac: AR/Ncmsa
+  strongs: H2429
+- reference: Daniel 5:7
+  sourceTokenId: h27005007004
+  surface: לְ/הֶֽעָלָה֙
+  ble: para·hacer·entrar
+  rmac: AR/Vhc
+  strongs: H5954
+- reference: Daniel 5:7
+  sourceTokenId: h27005007005
+  surface: לְ/אָ֣שְׁפַיָּ֔/א
+  ble: a·encantadores
+  rmac: ATo/Ncmpd/Td
+  strongs: H826
+- reference: Daniel 5:7
+  sourceTokenId: h27005007007
+  surface: כַּשְׂדָּאֵ֖/י
+  ble: caldeos·mí
+  rmac: ANgmpc/Sp1cs
+  strongs: H3779
+- reference: Daniel 5:7
+  sourceTokenId: h27005007008
+  surface: וְ/גָזְרַיָּ֑/א
+  ble: y·adivinos
+  rmac: AC/Vqrmpd/Td
+  strongs: H1505
+- reference: Daniel 5:7
+  sourceTokenId: h27005007029
+  surface: עַֽל
+  ble: sobre
+  rmac: AR
+  strongs: H5922
+- reference: Daniel 5:7
+  sourceTokenId: h27005007031
+  surface: וְ/תַלְתִּ֥י
+  ble: y·tercero
+  rmac: AC/Aomsa
+  strongs: H8523
+- reference: Daniel 5:8
+  sourceTokenId: h27005008012
+  surface: וּ/פִשְׁרֵ֖/הּ
+  ble: y·la·interpretación·él
+  rmac: AC/Ncmsd/Sp3ms
+  strongs: H6591
+- reference: Daniel 5:8
+  sourceTokenId: h27005008013
+  surface: לְ/הוֹדָעָ֥ה
+  ble: a·saber
+  rmac: AR/Vhc
+  strongs: H3046
+- reference: Daniel 5:8
+  sourceTokenId: h27005008014
+  surface: לְ/מַלְכָּֽ/א
+  ble: a·rey
+  rmac: AR/Ncmsd/Td
+  strongs: H4430
+- reference: Daniel 5:10
+  sourceTokenId: h27005010002
+  surface: לָ/קֳבֵ֨ל
+  ble: a·conforme
+  rmac: AR/R
+  strongs: H6903
+- reference: Daniel 5:10
+  sourceTokenId: h27005010005
+  surface: וְ/רַבְרְבָנ֔וֹ/הִי
+  ble: y·sus·grandes·él
+  rmac: AC/Ncmpc/Sp3ms
+  strongs: H7261
+- reference: Daniel 5:10
+  sourceTokenId: h27005010006
+  surface: לְ/בֵ֥ית
+  ble: a·casa
+  rmac: AR/Ncmsc
+  strongs: H1005
+- reference: Daniel 5:10
+  sourceTokenId: h27005010017
+  surface: יְבַהֲלוּ/ךְ֙
+  ble: turben·ti
+  rmac: AVpi3mp/Sp2ms
+  strongs: H927
+- reference: Daniel 5:11
+  sourceTokenId: h27005011009
+  surface: וּ/בְ/יוֹמֵ֣י
+  ble: y·en·días
+  rmac: AC/R/Ncmpc
+  strongs: H3118
+- reference: Daniel 5:11
+  sourceTokenId: h27005011026
+  surface: הֲקִימֵ֖/הּ
+  ble: se·levantó·él
+  rmac: AVhp3ms/Sp3ms
+  strongs: H6966
+- reference: Daniel 5:11
+  sourceTokenId: h27005011027
+  surface: אֲב֥/וּךְ
+  ble: padre·ti
+  rmac: ANcmsc/Sp2ms
+  strongs: ''
+- reference: Daniel 5:12
+  sourceTokenId: h27005012010
+  surface: וַֽ/אַֽחֲוָיַ֨ת
+  ble: y·declarar
+  rmac: AC/Vhc
+  strongs: H263
+- reference: Daniel 5:12
+  sourceTokenId: h27005012012
+  surface: וּ/מְשָׁרֵ֣א
+  ble: y·comenzan
+  rmac: AC/Vprmpc
+  strongs: H8271
+- reference: Daniel 5:12
+  sourceTokenId: h27005012015
+  surface: בֵּ/הּ֙
+  ble: en·él
+  rmac: AR/Sp3ms
+  strongs: ''
+- reference: Daniel 5:12
+  sourceTokenId: h27005012016
+  surface: בְּ/דָ֣נִיֵּ֔אל
+  ble: en·Daniel
+  rmac: AR/Np
+  strongs: H1841
+- reference: Daniel 5:12
+  sourceTokenId: h27005012017
+  surface: דִּֽי
+  ble: que
+  rmac: ATr
+  strongs: H1768
+- reference: Daniel 5:12
+  sourceTokenId: h27005012020
+  surface: שְׁמֵ֖/הּ
+  ble: nombre·él
+  rmac: ANcmsc/Sp3ms
+  strongs: H8036
+- reference: Daniel 5:12
+  sourceTokenId: h27005012022
+  surface: כְּעַ֛ן
+  ble: ahora
+  rmac: AD
+  strongs: H3705
+- reference: Daniel 5:12
+  sourceTokenId: h27005012025
+  surface: וּ/פִשְׁרָ֥/ה
+  ble: y·la·interpretación
+  rmac: AC/Ncmsd/Td
+  strongs: H6591
+- reference: Daniel 5:14
+  sourceTokenId: h27005014013
+  surface: בָּֽ/ךְ
+  ble: en·ti
+  rmac: AR/Sp2ms
+  strongs: ''
+- reference: Daniel 5:15
+  sourceTokenId: h27005015011
+  surface: לְ/הוֹדָעֻתַ֑/נִי
+  ble: a·saber·mí
+  rmac: AR/Vhc/Sp1cs
+  strongs: H3046
+- reference: Daniel 5:15
+  sourceTokenId: h27005015012
+  surface: וְ/לָֽא
+  ble: y·no
+  rmac: AC/Tn
+  strongs: H3809
+- reference: Daniel 5:15
+  sourceTokenId: h27005015016
+  surface: לְ/הַחֲוָיָֽה
+  ble: para·declarar
+  rmac: AR/Vhc
+  strongs: H2324
+- reference: Daniel 5:16
+  sourceTokenId: h27005016017
+  surface: לְ/מִקְרֵ֗א
+  ble: para·leer
+  rmac: AR/Vqc
+  strongs: H7123
+- reference: Daniel 5:16
+  sourceTokenId: h27005016018
+  surface: וּ/פִשְׁרֵ/הּ֙
+  ble: y·la·interpretación·él
+  rmac: AC/Ncmsc/Sp3ms
+  strongs: H6591
+- reference: Daniel 5:16
+  sourceTokenId: h27005016019
+  surface: לְ/הוֹדָ֣עֻתַ֔/נִי
+  ble: a·saber·mí
+  rmac: AR/Vhc/Sp1cs
+  strongs: H3046
+- reference: Daniel 5:16
+  sourceTokenId: h27005016028
+  surface: וְ/תַלְתָּ֥א
+  ble: y·tercero
+  rmac: AC/Aobsa
+  strongs: H8531
+- reference: Daniel 5:17
+  sourceTokenId: h27005017007
+  surface: מַתְּנָתָ/ךְ֙
+  ble: dones·ti
+  rmac: ANcfpc/Sp2ms
+  strongs: H4978
+- reference: Daniel 5:17
+  sourceTokenId: h27005017008
+  surface: לָ֣/ךְ
+  ble: a·ti
+  rmac: AR/Sp2ms
+  strongs: ''
+- reference: Daniel 5:17
+  sourceTokenId: h27005017010
+  surface: וּ/נְבָ֥זְבְּיָתָ֖/ךְ
+  ble: y·recompensas·ti
+  rmac: AC/Ncfpc/Sp2ms
+  strongs: H5023
+- reference: Daniel 5:17
+  sourceTokenId: h27005017011
+  surface: לְ/אָחֳרָ֣ן
+  ble: a·otro
+  rmac: AR/Aamsa
+  strongs: H321
+- reference: Daniel 5:17
+  sourceTokenId: h27005017013
+  surface: בְּרַ֗ם
+  ble: pero
+  rmac: AD
+  strongs: H1297
+- reference: Daniel 5:17
+  sourceTokenId: h27005017018
+  surface: אֲהוֹדְעִנֵּֽ/הּ
+  ble: sé·él
+  rmac: AVhi1cs/Sp3ms
+  strongs: H3046
+- reference: Daniel 5:18
+  sourceTokenId: h27005018001
+  surface: אנתה
+  ble: tú
+  rmac: APp2ms
+  strongs: H607
+- reference: Daniel 5:18
+  sourceTokenId: h27005018002
+  surface: אַ֖נְתְּ
+  ble: tú
+  rmac: APp2ms
+  strongs: H607
+- reference: Daniel 5:18
+  sourceTokenId: h27005018010
+  surface: וְ/הַדְרָ֔/ה
+  ble: y·la·majestad
+  rmac: AC/Ncmsd/Td
+  strongs: H1923
+- reference: Daniel 5:18
+  sourceTokenId: h27005018012
+  surface: לִ/נְבֻכַדְנֶצַּ֥ר
+  ble: a·Nabucodonosor
+  rmac: AR/Np
+  strongs: H5020
+- reference: Daniel 5:18
+  sourceTokenId: h27005018013
+  surface: אֲבֽ/וּךְ
+  ble: padre·ti
+  rmac: ANcmsc/Sp2ms
+  strongs: ''
+- reference: Daniel 5:19
+  sourceTokenId: h27005019005
+  surface: לֵ֔/הּ
+  ble: a·él
+  rmac: AR/Sp3ms
+  strongs: ''
+- reference: Daniel 5:19
+  sourceTokenId: h27005019031
+  surface: וְ/דִֽי
+  ble: y·que
+  rmac: AC/Tr
+  strongs: H1768
+- reference: Daniel 5:20
+  sourceTokenId: h27005020013
+  surface: מִנֵּֽ/הּ
+  ble: de·él
+  rmac: AR/Sp3ms
+  strongs: H4481
+- reference: Daniel 5:21
+  sourceTokenId: h27005021001
+  surface: וּ/מִן
+  ble: y·de
+  rmac: AC/R
+  strongs: H4481
+- reference: Daniel 5:22
+  sourceTokenId: h27005022001
+  surface: ו/אנתה
+  ble: y·tú
+  rmac: AC/Pp2ms
+  strongs: H607
+- reference: Daniel 5:23
+  sourceTokenId: h27005023009
+  surface: קדמי/ך
+  ble: delante·ti
+  rmac: AR/Sp2ms
+  strongs: H6925
+- reference: Daniel 5:23
+  sourceTokenId: h27005023010
+  surface: קָֽדָמָ֗/ךְ
+  ble: delante·ti
+  rmac: AR/Sp2ms
+  strongs: H6925
+- reference: Daniel 5:23
+  sourceTokenId: h27005023022
+  surface: וְ֠/דַהֲבָ/א
+  ble: y·oro
+  rmac: AC/Ncmsd/Td
+  strongs: H1722
+- reference: Daniel 5:23
+  sourceTokenId: h27005023026
+  surface: וְ/אַבְנָ֗/א
+  ble: y·piedra
+  rmac: AC/Ncfsd/Td
+  strongs: ''
+- reference: Daniel 5:23
+  sourceTokenId: h27005023027
+  surface: דִּ֠י
+  ble: que
+  rmac: ATr
+  strongs: H1768
+- reference: Daniel 5:23
+  sourceTokenId: h27005023028
+  surface: לָֽא
+  ble: 'no'
+  rmac: ATn
+  strongs: H3809
+- reference: Daniel 5:23
+  sourceTokenId: h27005023030
+  surface: וְ/לָא
+  ble: y·no
+  rmac: AC/Tn
+  strongs: H3809
+- reference: Daniel 5:23
+  sourceTokenId: h27005023032
+  surface: וְ/לָ֥א
+  ble: y·no
+  rmac: AC/Tn
+  strongs: H3809
+- reference: Daniel 5:24
+  sourceTokenId: h27005024009
+  surface: דְנָ֖ה
+  ble: esto
+  rmac: APdxms
+  strongs: H1836
+- reference: Daniel 5:29
+  sourceTokenId: h27005029007
+  surface: ו/המונכ/א
+  ble: y·collar
+  rmac: AC/Ncmsd/Td
+  strongs: H2002
+- reference: Daniel 7:3
+  sourceTokenId: h27007003008
+  surface: דָּ֥א
+  ble: esta
+  rmac: APdxfs
+  strongs: H1668
+- reference: Daniel 7:3
+  sourceTokenId: h27007003010
+  surface: דָּֽא
+  ble: esta
+  rmac: APdxfs
+  strongs: H1668
+- reference: Daniel 7:4
+  sourceTokenId: h27007004023
+  surface: לַֽ/הּ
+  ble: a·ella
+  rmac: AR/Sp3fs
+  strongs: ''
+- reference: Daniel 7:5
+  sourceTokenId: h27007005010
+  surface: וּ/תְלָ֥ת
+  ble: y·tres
+  rmac: AC/Acbsa
+  strongs: H8532
+- reference: Daniel 7:6
+  sourceTokenId: h27007006005
+  surface: וַ/אֲר֤וּ
+  ble: y·he·aquí
+  rmac: AC/Tm
+  strongs: H718
+- reference: Daniel 7:6
+  sourceTokenId: h27007006007
+  surface: כִּ/נְמַ֔ר
+  ble: como·leopardo
+  rmac: AR/Ncmsa
+  strongs: H5245
+- reference: Daniel 7:6
+  sourceTokenId: h27007006008
+  surface: וְ/לַ֨/הּ
+  ble: y·a·ella
+  rmac: AC/R/Sp3fs
+  strongs: ''
+- reference: Daniel 7:6
+  sourceTokenId: h27007006021
+  surface: לַֽ/הּ
+  ble: a·ella
+  rmac: AR/Sp3fs
+  strongs: ''
+- reference: Daniel 7:7
+  sourceTokenId: h27007007021
+  surface: וּ/מַדֱּקָ֔ה
+  ble: y·mole
+  rmac: AC/Varfsa
+  strongs: H1855
+- reference: Daniel 7:7
+  sourceTokenId: h27007007035
+  surface: לַֽ/הּ
+  ble: a·ella
+  rmac: AR/Sp3fs
+  strongs: ''
+- reference: Daniel 7:8
+  sourceTokenId: h27007008024
+  surface: בְּ/קַרְנָ/א
+  ble: en·los·cuernos
+  rmac: AR/Ncfsd/Td
+  strongs: H7162
+- reference: Daniel 7:8
+  sourceTokenId: h27007008025
+  surface: דָ֔א
+  ble: esta
+  rmac: APdxfs
+  strongs: H1668
+- reference: Daniel 7:11
+  sourceTokenId: h27007011017
+  surface: וְ/הוּבַ֣ד
+  ble: y·pereció
+  rmac: AC/VHp3ms
+  strongs: ''
+- reference: Daniel 7:13
+  sourceTokenId: h27007013018
+  surface: הַקְרְבֽוּ/הִי
+  ble: ofrecieron·él
+  rmac: AVhp3mp/Sp3ms
+  strongs: H7127
+- reference: Daniel 7:14
+  sourceTokenId: h27007014006
+  surface: וְ/כֹ֣ל
+  ble: y·todo
+  rmac: AC/Ncmsc
+  strongs: H3606
+- reference: Daniel 7:16
+  sourceTokenId: h27007016016
+  surface: יְהוֹדְעִנַּֽ/נִי
+  ble: sabe·mí
+  rmac: AVhi3ms/Sp1cs
+  strongs: H3046
+- reference: Daniel 7:17
+  sourceTokenId: h27007017001
+  surface: אִלֵּין֙
+  ble: estas
+  rmac: APdxbp
+  strongs: H459
+- reference: Daniel 7:20
+  sourceTokenId: h27007020010
+  surface: וּ/נְפַ֥לָה
+  ble: y·cayó
+  rmac: AC/Vqp3fp
+  strongs: H5308
+- reference: Daniel 7:20
+  sourceTokenId: h27007020012
+  surface: קדמי/ה
+  ble: delante·ella
+  rmac: AR/Sp3fs
+  strongs: H6925
+- reference: Daniel 7:20
+  sourceTokenId: h27007020013
+  surface: קֳדָמַ֖/הּ
+  ble: delante·ella
+  rmac: AR/Sp3fs
+  strongs: H6925
+- reference: Daniel 7:21
+  sourceTokenId: h27007021010
+  surface: לְ/הֽוֹן
+  ble: a·ellos
+  rmac: AR/Sp3mp
+  strongs: ''
+- reference: Daniel 7:23
+  sourceTokenId: h27007023015
+  surface: וְ/תֵאכֻל֙
+  ble: y·come
+  rmac: AC/Vqi3fs
+  strongs: H399
+- reference: Daniel 7:23
+  sourceTokenId: h27007023018
+  surface: וּ/תְדוּשִׁנַּ֖/הּ
+  ble: y·la·triturará·ella
+  rmac: AC/Vqi3fs/Sp3fs
+  strongs: H1759
+- reference: Daniel 7:23
+  sourceTokenId: h27007023019
+  surface: וְ/תַדְּקִנַּֽ/הּ
+  ble: y·mole·ella
+  rmac: AC/Vai3fs/Sp3fs
+  strongs: H1855
+- reference: Daniel 7:24
+  sourceTokenId: h27007024015
+  surface: וּ/תְלָתָ֥ה
+  ble: y·tres
+  rmac: AC/Acbsa
+  strongs: H8532
+- reference: Daniel 7:27
+  sourceTokenId: h27007027013
+  surface: מַלְכוּתֵ/הּ֙
+  ble: reino·él
+  rmac: ANcfsc/Sp3ms
+  strongs: H4437
+- reference: Daniel 7:27
+  sourceTokenId: h27007027016
+  surface: וְ/כֹל֙
+  ble: y·todo
+  rmac: AC/Ncmsc
+  strongs: H3606
+- reference: Daniel 7:27
+  sourceTokenId: h27007027018
+  surface: לֵ֥/הּ
+  ble: a·él
+  rmac: AR/Sp3ms
+  strongs: ''
+- reference: Daniel 7:27
+  sourceTokenId: h27007027020
+  surface: וְ/יִֽשְׁתַּמְּעֽוּן
+  ble: y·oí
+  rmac: AC/VMi3mp
+  strongs: H8086
+- reference: Daniel 8:5
+  sourceTokenId: h27008005006
+  surface: הָֽ/עִזִּים֙
+  ble: la·iniquidad
+  rmac: HTd/Ncfpa
+  strongs: H5795
+- reference: Daniel 8:5
+  sourceTokenId: h27008005009
+  surface: הַֽ/מַּעֲרָב֙
+  ble: el·occidente
+  rmac: HTd/Ncmsa
+  strongs: H4628
+- reference: Daniel 8:6
+  sourceTokenId: h27008006014
+  surface: כֹּחֽ/וֹ
+  ble: fuerza·él
+  rmac: HNcmsc/Sp3ms
+  strongs: H3581
+- reference: Daniel 8:7
+  sourceTokenId: h27008007017
+  surface: בָּ/אַ֖יִל
+  ble: en·hijo
+  rmac: HRd/Ncmsa
+  strongs: H352
+- reference: Daniel 8:7
+  sourceTokenId: h27008007018
+  surface: לַ/עֲמֹ֣ד
+  ble: a·estar
+  rmac: HR/Vqc
+  strongs: H5975
+- reference: Daniel 8:7
+  sourceTokenId: h27008007019
+  surface: לְ/פָנָ֑י/ו
+  ble: delante·de·él
+  rmac: HR/Ncbpc/Sp3ms
+  strongs: H6440
+- reference: Daniel 8:7
+  sourceTokenId: h27008007020
+  surface: וַ/יַּשְׁלִיכֵ֤/הוּ
+  ble: y·escuchó·él
+  rmac: HC/Vhw3ms/Sp3ms
+  strongs: H7993
+- reference: Daniel 8:7
+  sourceTokenId: h27008007022
+  surface: וַֽ/יִּרְמְסֵ֔/הוּ
+  ble: y·pisoteó·él
+  rmac: HC/Vqw3ms/Sp3ms
+  strongs: H7429
+- reference: Daniel 8:7
+  sourceTokenId: h27008007023
+  surface: וְ/לֹא
+  ble: y·no
+  rmac: HC/Tn
+  strongs: H3808
+- reference: Daniel 8:7
+  sourceTokenId: h27008007026
+  surface: לָ/אַ֖יִל
+  ble: a·hijo
+  rmac: HRd/Ncmsa
+  strongs: H352
+- reference: Daniel 8:7
+  sourceTokenId: h27008007027
+  surface: מִ/יָּדֽ/וֹ
+  ble: de·mano·él
+  rmac: HR/Ncbsc/Sp3ms
+  strongs: H3027
+- reference: Daniel 8:8
+  sourceTokenId: h27008008009
+  surface: הַ/גְּדוֹלָ֔ה
+  ble: el·Er
+  rmac: HTd/Aafsa
+  strongs: H1419
+- reference: Daniel 8:8
+  sourceTokenId: h27008008013
+  surface: תַּחְתֶּ֔י/הָ
+  ble: debajo·de·ella
+  rmac: HR/Sp3fs
+  strongs: H8478
+- reference: Daniel 8:9
+  sourceTokenId: h27008009015
+  surface: הַ/צֶּֽבִי
+  ble: el·familia
+  rmac: HTd/Ncmsa
+  strongs: H6643
+- reference: Daniel 8:10
+  sourceTokenId: h27008010008
+  surface: הַ/צָּבָ֥א
+  ble: el·ejército
+  rmac: HTd/Ncbsa
+  strongs: H6635
+- reference: Daniel 8:10
+  sourceTokenId: h27008010009
+  surface: וּ/מִן
+  ble: y·de
+  rmac: HC/R
+  strongs: H4480
+- reference: Daniel 8:10
+  sourceTokenId: h27008010010
+  surface: הַ/כּוֹכָבִ֖ים
+  ble: las·estrellas
+  rmac: HTd/Ncmpa
+  strongs: H3556
+- reference: Daniel 8:10
+  sourceTokenId: h27008010011
+  surface: וַֽ/תִּרְמְסֵֽ/ם
+  ble: y·pisoteó·ellos
+  rmac: HC/Vqw3fs/Sp3mp
+  strongs: H7429
+- reference: Daniel 8:12
+  sourceTokenId: h27008012004
+  surface: הַ/תָּמִ֖יד
+  ble: el·carnero
+  rmac: HTd/Ncmsa
+  strongs: H8548
+- reference: Daniel 8:12
+  sourceTokenId: h27008012005
+  surface: בְּ/פָ֑שַׁע
+  ble: en·rebelión
+  rmac: HR/Ncmsa
+  strongs: H6588
+- reference: Daniel 8:12
+  sourceTokenId: h27008012006
+  surface: וְ/תַשְׁלֵ֤ךְ
+  ble: y·escucha
+  rmac: HC/Vhi3fs
+  strongs: H7993
+- reference: Daniel 8:13
+  sourceTokenId: h27008013005
+  surface: וַ/יֹּאמֶר֩
+  ble: y·dijo
+  rmac: HC/Vqw3ms
+  strongs: H559
+- reference: Daniel 8:13
+  sourceTokenId: h27008013008
+  surface: לַ/פַּֽלְמוֹנִ֣י
+  ble: al·cierto
+  rmac: HRd/Pf
+  strongs: H6422
+- reference: Daniel 8:14
+  sourceTokenId: h27008014002
+  surface: אֵלַ֔/י
+  ble: a·mí
+  rmac: HR/Sp1cs
+  strongs: H413
+- reference: Daniel 8:14
+  sourceTokenId: h27008014009
+  surface: וְ/נִצְדַּ֖ק
+  ble: y·justificará
+  rmac: HC/VNq3ms
+  strongs: H6663
+- reference: Daniel 8:15
+  sourceTokenId: h27008015005
+  surface: אֶת
+  ble: OBJ
+  rmac: HTo
+  strongs: H853
+- reference: Daniel 8:16
+  sourceTokenId: h27008016011
+  surface: אֶת
+  ble: OBJ
+  rmac: HTo
+  strongs: H853
+- reference: Daniel 8:16
+  sourceTokenId: h27008016012
+  surface: הַ/מַּרְאֶֽה
+  ble: la·apariencia
+  rmac: HTd/Ncmsa
+  strongs: H4758
+- reference: Daniel 8:19
+  sourceTokenId: h27008019007
+  surface: בְּ/אַחֲרִ֣ית
+  ble: en·fin
+  rmac: HR/Ncfsc
+  strongs: H319
+- reference: Daniel 8:19
+  sourceTokenId: h27008019008
+  surface: הַ/זָּ֑עַם
+  ble: la·indignación
+  rmac: HTd/Ncmsa
+  strongs: H2195
+- reference: Daniel 8:19
+  sourceTokenId: h27008019009
+  surface: כִּ֖י
+  ble: porque
+  rmac: HC
+  strongs: H3588
+- reference: Daniel 8:21
+  sourceTokenId: h27008021009
+  surface: עֵינָ֔י/ו
+  ble: ojos·él
+  rmac: HNcbdc/Sp3ms
+  strongs: H5869
+- reference: Daniel 8:21
+  sourceTokenId: h27008021011
+  surface: הַ/מֶּ֥לֶךְ
+  ble: el·rey
+  rmac: HTd/Ncmsa
+  strongs: H4428
+- reference: Daniel 8:22
+  sourceTokenId: h27008022010
+  surface: בְ/כֹחֽ/וֹ
+  ble: en·fuerza·él
+  rmac: HR/Ncmsc/Sp3ms
+  strongs: H3581
+- reference: Daniel 9:3
+  sourceTokenId: h27009003001
+  surface: וָ/אֶתְּנָ֣/ה
+  ble: y·di
+  rmac: HC/Vqw1cs/Sh
+  strongs: H5414
+- reference: Daniel 9:3
+  sourceTokenId: h27009003002
+  surface: אֶת
+  ble: OBJ
+  rmac: HTo
+  strongs: H853
+- reference: Daniel 9:6
+  sourceTokenId: h27009006011
+  surface: שָׂרֵ֖י/נוּ
+  ble: príncipes·nosotros
+  rmac: HNcmpc/Sp1cp
+  strongs: H8269
+- reference: Daniel 9:6
+  sourceTokenId: h27009006012
+  surface: וַ/אֲבֹתֵ֑י/נוּ
+  ble: y·padre·nosotros
+  rmac: HC/Ncmpc/Sp1cp
+  strongs: ''
+- reference: Daniel 9:6
+  sourceTokenId: h27009006013
+  surface: וְ/אֶ֖ל
+  ble: y·a
+  rmac: HC/R
+  strongs: H413
+- reference: Daniel 9:7
+  sourceTokenId: h27009007003
+  surface: הַ/צְּדָקָ֔ה
+  ble: la·justicia
+  rmac: HTd/Ncfsa
+  strongs: H6666
+- reference: Daniel 9:7
+  sourceTokenId: h27009007004
+  surface: וְ/לָ֛/נוּ
+  ble: y·a·nosotros
+  rmac: HC/R/Sp1cp
+  strongs: ''
+- reference: Daniel 9:7
+  sourceTokenId: h27009007006
+  surface: הַ/פָּנִ֖ים
+  ble: el·rostro
+  rmac: HTd/Ncbpa
+  strongs: H6440
+- reference: Daniel 9:7
+  sourceTokenId: h27009007007
+  surface: כַּ/יּ֣וֹם
+  ble: según·día
+  rmac: HRd/Ncmsa
+  strongs: H3117
+- reference: Daniel 9:7
+  sourceTokenId: h27009007008
+  surface: הַ/זֶּ֑ה
+  ble: este
+  rmac: HTd/Pdxms
+  strongs: H2088
+- reference: Daniel 9:7
+  sourceTokenId: h27009007009
+  surface: לְ/אִ֤ישׁ
+  ble: a·hombre
+  rmac: HR/Ncmsc
+  strongs: H376
+- reference: Daniel 9:7
+  sourceTokenId: h27009007011
+  surface: וּ/לְ/יוֹשְׁבֵ֣י
+  ble: y·a·habitantes
+  rmac: HC/R/Vqrmpc
+  strongs: H3427
+- reference: Daniel 9:7
+  sourceTokenId: h27009007013
+  surface: וּֽ/לְ/כָל
+  ble: y·a·todo
+  rmac: HC/R/Ncmsc
+  strongs: H3605
+- reference: Daniel 9:7
+  sourceTokenId: h27009007015
+  surface: הַ/קְּרֹבִ֣ים
+  ble: el·cercano
+  rmac: HTd/Aampa
+  strongs: H7138
+- reference: Daniel 9:7
+  sourceTokenId: h27009007016
+  surface: וְ/הָ/רְחֹקִ֗ים
+  ble: y·el·lejos
+  rmac: HC/Td/Aampa
+  strongs: H7350
+- reference: Daniel 9:7
+  sourceTokenId: h27009007017
+  surface: בְּ/כָל
+  ble: en·todo
+  rmac: HR/Ncmsc
+  strongs: H3605
+- reference: Daniel 9:7
+  sourceTokenId: h27009007018
+  surface: הָֽ/אֲרָצוֹת֙
+  ble: la·tierra
+  rmac: HTd/Ncbpa
+  strongs: H776
+- reference: Daniel 9:7
+  sourceTokenId: h27009007019
+  surface: אֲשֶׁ֣ר
+  ble: que
+  rmac: HTr
+  strongs: H834
+- reference: Daniel 9:7
+  sourceTokenId: h27009007020
+  surface: הִדַּחְתָּ֣/ם
+  ble: heredad·ellos
+  rmac: HVhp2ms/Sp3mp
+  strongs: H5080
+- reference: Daniel 9:7
+  sourceTokenId: h27009007022
+  surface: בְּ/מַעֲלָ֖/ם
+  ble: en·infidelidad·ellos
+  rmac: HR/Ncmsc/Sp3mp
+  strongs: H4604
+- reference: Daniel 9:7
+  sourceTokenId: h27009007023
+  surface: אֲשֶׁ֥ר
+  ble: que
+  rmac: HTr
+  strongs: H834
+- reference: Daniel 9:7
+  sourceTokenId: h27009007025
+  surface: בָֽ/ךְ
+  ble: en·ti
+  rmac: HR/Sp2fs
+  strongs: ''
+- reference: Daniel 9:8
+  sourceTokenId: h27009008010
+  surface: לָֽ/ךְ
+  ble: a·ti
+  rmac: HR/Sp2fs
+  strongs: ''
+- reference: Daniel 9:9
+  sourceTokenId: h27009009007
+  surface: בּֽ/וֹ
+  ble: en·él
+  rmac: HR/Sp3ms
+  strongs: ''
+- reference: Daniel 9:11
+  sourceTokenId: h27009011022
+  surface: לֽ/וֹ
+  ble: a·él
+  rmac: HR/Sp3ms
+  strongs: ''
+- reference: Daniel 9:12
+  sourceTokenId: h27009012007
+  surface: עָלֵ֗י/נוּ
+  ble: sobre·nosotros
+  rmac: HR/Sp1cp
+  strongs: H5921
+- reference: Daniel 9:14
+  sourceTokenId: h27009014018
+  surface: בְּ/קֹלֽ/וֹ
+  ble: en·santificar·él
+  rmac: HR/Ncmsc/Sp3ms
+  strongs: H6963
+- reference: Daniel 9:15
+  sourceTokenId: h27009015013
+  surface: לְ/ךָ֥
+  ble: a·ti
+  rmac: HR/Sp2ms
+  strongs: ''
+- reference: Daniel 9:16
+  sourceTokenId: h27009016011
+  surface: קָדְשֶׁ֑/ךָ
+  ble: santo·ti
+  rmac: HNcmsc/Sp2ms
+  strongs: H6944
+- reference: Daniel 9:16
+  sourceTokenId: h27009016020
+  surface: סְבִיבֹתֵֽי/נוּ
+  ble: alrededor·nosotros
+  rmac: HNcbpc/Sp1cp
+  strongs: H5439
+- reference: Daniel 9:18
+  sourceTokenId: h27009018008
+  surface: וּ/רְאֵה֙
+  ble: y·ve
+  rmac: HC/Vqv2ms
+  strongs: H7200
+- reference: Daniel 9:18
+  sourceTokenId: h27009018009
+  surface: שֹֽׁמְמֹתֵ֔י/נוּ
+  ble: oyen·nosotros
+  rmac: HVqrfpc/Sp1cp
+  strongs: H8077
+- reference: Daniel 9:18
+  sourceTokenId: h27009018010
+  surface: וְ/הָ/עִ֕יר
+  ble: y·el·reino
+  rmac: HC/Td/Ncfsa
+  strongs: H5892
+- reference: Daniel 9:18
+  sourceTokenId: h27009018011
+  surface: אֲשֶׁר
+  ble: que
+  rmac: HTr
+  strongs: H834
+- reference: Daniel 9:18
+  sourceTokenId: h27009018013
+  surface: שִׁמְ/ךָ֖
+  ble: nombre·ti
+  rmac: HNcmsc/Sp2ms
+  strongs: H8034
+- reference: Daniel 9:18
+  sourceTokenId: h27009018014
+  surface: עָלֶ֑י/הָ
+  ble: sobre·ella
+  rmac: HR/Sp3fs
+  strongs: H5921
+- reference: Daniel 9:18
+  sourceTokenId: h27009018015
+  surface: כִּ֣י
+  ble: porque
+  rmac: HC
+  strongs: H3588
+- reference: Daniel 9:18
+  sourceTokenId: h27009018026
+  surface: הָ/רַבִּֽים
+  ble: el·mucho
+  rmac: HTd/Aampa
+  strongs: H7227
+- reference: Daniel 9:22
+  sourceTokenId: h27009022003
+  surface: עִמִּ֑/י
+  ble: con·mí
+  rmac: HR/Sp1cs
+  strongs: H5973
+- reference: Daniel 9:23
+  sourceTokenId: h27009023007
+  surface: לְ/הַגִּ֔יד
+  ble: a·declarar
+  rmac: HR/Vhc
+  strongs: H5046
+- reference: Daniel 9:23
+  sourceTokenId: h27009023008
+  surface: כִּ֥י
+  ble: porque
+  rmac: HC
+  strongs: H3588
+- reference: Daniel 9:23
+  sourceTokenId: h27009023011
+  surface: וּ/בִין֙
+  ble: y·entende
+  rmac: HC/Vqv2ms
+  strongs: H995
+- reference: Daniel 9:23
+  sourceTokenId: h27009023012
+  surface: בַּ/דָּבָ֔ר
+  ble: en·palabra
+  rmac: HRd/Ncmsa
+  strongs: H1697
+- reference: Daniel 9:23
+  sourceTokenId: h27009023013
+  surface: וְ/הָבֵ֖ן
+  ble: y·entende
+  rmac: HC/Vhv2ms
+  strongs: H995
+- reference: Daniel 9:23
+  sourceTokenId: h27009023014
+  surface: בַּ/מַּרְאֶֽה
+  ble: en·apariencia
+  rmac: HRd/Ncmsa
+  strongs: H4758
+- reference: Daniel 9:24
+  sourceTokenId: h27009024010
+  surface: הַ/פֶּ֜שַׁע
+  ble: la·rebelión
+  rmac: HTd/Ncmsa
+  strongs: H6588
+- reference: Daniel 9:24
+  sourceTokenId: h27009024011
+  surface: ו/ל/חתם
+  ble: y·para·sellar
+  rmac: HC/R/Vqc
+  strongs: H2856
+- reference: Daniel 9:24
+  sourceTokenId: h27009024012
+  surface: וּ/לְ/הָתֵ֤ם
+  ble: y·para·consumar
+  rmac: HC/R/Vhc
+  strongs: H8552
+- reference: Daniel 9:24
+  sourceTokenId: h27009024015
+  surface: וּ/לְ/כַפֵּ֣ר
+  ble: y·a·expiar
+  rmac: HC/R/Vpc
+  strongs: H3722
+- reference: Daniel 9:24
+  sourceTokenId: h27009024017
+  surface: וּ/לְ/הָבִ֖יא
+  ble: y·a·venir
+  rmac: HC/R/Vhc
+  strongs: H935
+- reference: Daniel 9:24
+  sourceTokenId: h27009024020
+  surface: וְ/לַ/חְתֹּם֙
+  ble: y·para·sellar
+  rmac: HC/R/Vqc
+  strongs: H2856
+- reference: Daniel 9:24
+  sourceTokenId: h27009024022
+  surface: וְ/נָבִ֔יא
+  ble: y·profeta
+  rmac: HC/Ncmsa
+  strongs: H5030
+- reference: Daniel 9:24
+  sourceTokenId: h27009024023
+  surface: וְ/לִ/מְשֹׁ֖חַ
+  ble: y·para·ungir
+  rmac: HC/R/Vqc
+  strongs: H4886
+- reference: Daniel 9:25
+  sourceTokenId: h27009025022
+  surface: הָ/עִתִּֽים
+  ble: el·tiempo
+  rmac: HTd/Ncbpa
+  strongs: H6256
+- reference: Daniel 9:27
+  sourceTokenId: h27009027015
+  surface: וְ/עַד
+  ble: y·hasta
+  rmac: HC/R
+  strongs: H5704
+- reference: Daniel 9:27
+  sourceTokenId: h27009027017
+  surface: וְ/נֶ֣חֱרָצָ֔ה
+  ble: y·decide
+  rmac: HC/VNrfsa
+  strongs: H2782
+- reference: Daniel 10:1
+  sourceTokenId: h27010001018
+  surface: אֶת
+  ble: OBJ
+  rmac: HTo
+  strongs: H853
+- reference: Daniel 10:1
+  sourceTokenId: h27010001019
+  surface: הַ/דָּבָ֔ר
+  ble: la·palabra
+  rmac: HTd/Ncmsa
+  strongs: H1697
+- reference: Daniel 10:1
+  sourceTokenId: h27010001020
+  surface: וּ/בִ֥ינָה
+  ble: y·separar
+  rmac: HC/Ncfsa
+  strongs: H998
+- reference: Daniel 10:1
+  sourceTokenId: h27010001021
+  surface: ל֖/וֹ
+  ble: a·él
+  rmac: HR/Sp3ms
+  strongs: ''
+- reference: Daniel 10:1
+  sourceTokenId: h27010001022
+  surface: בַּ/מַּרְאֶֽה
+  ble: en·apariencia
+  rmac: HRd/Ncmsa
+  strongs: H4758
+- reference: Daniel 10:2
+  sourceTokenId: h27010002002
+  surface: הָ/הֵ֑ם
+  ble: ellos
+  rmac: HTd/Pp3mp
+  strongs: H1992
+- reference: Daniel 10:4
+  sourceTokenId: h27010004011
+  surface: הַ/גָּד֖וֹל
+  ble: el·Er
+  rmac: HTd/Aamsa
+  strongs: H1419
+- reference: Daniel 10:7
+  sourceTokenId: h27010007005
+  surface: אֶת
+  ble: OBJ
+  rmac: HTo
+  strongs: H853
+- reference: Daniel 10:7
+  sourceTokenId: h27010007006
+  surface: הַ/מַּרְאָ֔ה
+  ble: el·visión
+  rmac: HTd/Ncfsa
+  strongs: H4759
+- reference: Daniel 10:7
+  sourceTokenId: h27010007007
+  surface: וְ/הָ/אֲנָשִׁים֙
+  ble: y·los·hombres
+  rmac: HC/Td/Ncmpa
+  strongs: H376
+- reference: Daniel 10:7
+  sourceTokenId: h27010007008
+  surface: אֲשֶׁ֣ר
+  ble: que
+  rmac: HTr
+  strongs: H834
+- reference: Daniel 10:7
+  sourceTokenId: h27010007010
+  surface: עִמִּ֔/י
+  ble: con·mí
+  rmac: HR/Sp1cs
+  strongs: H5973
+- reference: Daniel 10:7
+  sourceTokenId: h27010007011
+  surface: לֹ֥א
+  ble: 'no'
+  rmac: HTn
+  strongs: H3808
+- reference: Daniel 10:7
+  sourceTokenId: h27010007013
+  surface: אֶת
+  ble: OBJ
+  rmac: HTo
+  strongs: H853
+- reference: Daniel 10:7
+  sourceTokenId: h27010007014
+  surface: הַ/מַּרְאָ֑ה
+  ble: el·visión
+  rmac: HTd/Ncfsa
+  strongs: H4759
+- reference: Daniel 10:10
+  sourceTokenId: h27010010004
+  surface: בִּ֑/י
+  ble: en·mí
+  rmac: HR/Sp1cs
+  strongs: ''
+- reference: Daniel 10:11
+  sourceTokenId: h27010011002
+  surface: אֵלַ֡/י
+  ble: a·mí
+  rmac: HR/Sp1cs
+  strongs: H413
+- reference: Daniel 10:11
+  sourceTokenId: h27010011014
+  surface: עָמְדֶ֔/ךָ
+  ble: estar·ti
+  rmac: HNcmsc/Sp2ms
+  strongs: H5975
+- reference: Daniel 10:11
+  sourceTokenId: h27010011015
+  surface: כִּ֥י
+  ble: porque
+  rmac: HC
+  strongs: H3588
+- reference: Daniel 10:11
+  sourceTokenId: h27010011018
+  surface: אֵלֶ֑י/ךָ
+  ble: a·ti
+  rmac: HR/Sp2ms
+  strongs: H413
+- reference: Daniel 10:11
+  sourceTokenId: h27010011019
+  surface: וּ/בְ/דַבְּר֥/וֹ
+  ble: y·en·hablar·él
+  rmac: HC/R/Vpc/Sp3ms
+  strongs: H1696
+- reference: Daniel 10:11
+  sourceTokenId: h27010011020
+  surface: עִמִּ֛/י
+  ble: con·mí
+  rmac: HR/Sp1cs
+  strongs: H5973
+- reference: Daniel 10:11
+  sourceTokenId: h27010011021
+  surface: אֶת
+  ble: OBJ
+  rmac: HTo
+  strongs: H853
+- reference: Daniel 10:11
+  sourceTokenId: h27010011022
+  surface: הַ/דָּבָ֥ר
+  ble: la·palabra
+  rmac: HTd/Ncmsa
+  strongs: H1697
+- reference: Daniel 10:11
+  sourceTokenId: h27010011023
+  surface: הַ/זֶּ֖ה
+  ble: este
+  rmac: HTd/Pdxms
+  strongs: H2088
+- reference: Daniel 10:13
+  sourceTokenId: h27010013013
+  surface: הָ/רִאשֹׁנִ֖ים
+  ble: la·primogenitura
+  rmac: HTd/Aampa
+  strongs: H7223
+- reference: Daniel 10:15
+  sourceTokenId: h27010015002
+  surface: עִמִּ֔/י
+  ble: con·mí
+  rmac: HR/Sp1cs
+  strongs: H5973
+- reference: Daniel 10:16
+  sourceTokenId: h27010016007
+  surface: שְׂפָתָ֑/י
+  ble: oír·mí
+  rmac: HNcfdc/Sp1cs
+  strongs: H8193
+- reference: Daniel 10:16
+  sourceTokenId: h27010016008
+  surface: וָ/אֶפְתַּח
+  ble: y·me·levanté
+  rmac: HC/Vqw1cs
+  strongs: H6605
+- reference: Daniel 10:16
+  sourceTokenId: h27010016009
+  surface: פִּ֗/י
+  ble: boca·mí
+  rmac: HNcmsc/Sp1cs
+  strongs: H6310
+- reference: Daniel 10:16
+  sourceTokenId: h27010016010
+  surface: וָ/אֲדַבְּרָ/ה֙
+  ble: y·hablé
+  rmac: HC/Vpw1cs/Sh
+  strongs: H1696
+- reference: Daniel 10:16
+  sourceTokenId: h27010016011
+  surface: וָ/אֹֽמְרָ/ה֙
+  ble: y·dije
+  rmac: HC/Vqw1cs/Sh
+  strongs: H559
+- reference: Daniel 10:17
+  sourceTokenId: h27010017017
+  surface: לֹ֥א
+  ble: 'no'
+  rmac: HTn
+  strongs: H3808
+- reference: Daniel 10:17
+  sourceTokenId: h27010017019
+  surface: בִֽ/י
+  ble: en·mí
+  rmac: HR/Sp1cs
+  strongs: ''
+- reference: Daniel 10:19
+  sourceTokenId: h27010019013
+  surface: וָ/אֹֽמְרָ֛/ה
+  ble: y·dije
+  rmac: HC/Vqw1cs/Sh
+  strongs: H559
+- reference: Daniel 10:19
+  sourceTokenId: h27010019015
+  surface: אֲדֹנִ֖/י
+  ble: Adonai·mí
+  rmac: HNcmsc/Sp1cs
+  strongs: H113
+- reference: Daniel 10:19
+  sourceTokenId: h27010019016
+  surface: כִּ֥י
+  ble: porque
+  rmac: HC
+  strongs: H3588
+- reference: Daniel 10:19
+  sourceTokenId: h27010019017
+  surface: חִזַּקְתָּֽ/נִי
+  ble: fortaleciste·mí
+  rmac: HVpp2ms/Sp1cs
+  strongs: H2388
+- reference: Daniel 11:1
+  sourceTokenId: h27011001009
+  surface: לֽ/וֹ
+  ble: a·él
+  rmac: HR/Sp3ms
+  strongs: ''
+- reference: Daniel 11:2
+  sourceTokenId: h27011002004
+  surface: לָ֑/ךְ
+  ble: a·ti
+  rmac: HR/Sp2fs
+  strongs: ''
+- reference: Daniel 11:2
+  sourceTokenId: h27011002010
+  surface: לְ/פָרַ֗ס
+  ble: a·Persia
+  rmac: HR/Np
+  strongs: H6539
+- reference: Daniel 11:2
+  sourceTokenId: h27011002011
+  surface: וְ/הָֽ/רְבִיעִי֙
+  ble: y·el·cuarto
+  rmac: HC/Td/Aomsa
+  strongs: H7243
+- reference: Daniel 11:2
+  sourceTokenId: h27011002020
+  surface: אֵ֖ת
+  ble: OBJ
+  rmac: HTo
+  strongs: H853
+- reference: Daniel 11:4
+  sourceTokenId: h27011004005
+  surface: לְ/אַרְבַּ֖ע
+  ble: a·cuatro
+  rmac: HR/Acfsa
+  strongs: H702
+- reference: Daniel 11:4
+  sourceTokenId: h27011004007
+  surface: הַ/שָּׁמָ֑יִם
+  ble: los·cielos
+  rmac: HTd/Ncmpa
+  strongs: H8064
+- reference: Daniel 11:4
+  sourceTokenId: h27011004016
+  surface: מַלְכוּת֔/וֹ
+  ble: reino·él
+  rmac: HNcfsc/Sp3ms
+  strongs: H4438
+- reference: Daniel 11:7
+  sourceTokenId: h27011007001
+  surface: וְ/עָמַ֛ד
+  ble: y·estará
+  rmac: HC/Vqq3ms
+  strongs: H5975
+- reference: Daniel 11:10
+  sourceTokenId: h27011010017
+  surface: מָעֻזּֽ/וֹ
+  ble: regalo·él
+  rmac: HNcmsc/Sp3ms
+  strongs: H4581
+- reference: Daniel 11:15
+  sourceTokenId: h27011015009
+  surface: וּ/זְרֹע֤וֹת
+  ble: y·sembrar
+  rmac: HC/Ncbpc
+  strongs: H2220
+- reference: Daniel 11:15
+  sourceTokenId: h27011015010
+  surface: הַ/נֶּ֨גֶב֙
+  ble: el·sur
+  rmac: HTd/Ncmsa
+  strongs: H5045
+- reference: Daniel 11:16
+  sourceTokenId: h27011016008
+  surface: וְ/יַעֲמֹ֥ד
+  ble: y·esta
+  rmac: HC/Vqi3ms
+  strongs: H5975
+- reference: Daniel 11:17
+  sourceTokenId: h27011017007
+  surface: וִ/ישָׁרִ֥ים
+  ble: y·recto
+  rmac: HC/Aampa
+  strongs: H3477
+- reference: Daniel 11:17
+  sourceTokenId: h27011017018
+  surface: ל֥/וֹ
+  ble: a·él
+  rmac: HR/Sp3ms
+  strongs: ''
+- reference: Daniel 11:18
+  sourceTokenId: h27011018012
+  surface: חֶרְפָּת֖/וֹ
+  ble: calor·él
+  rmac: HNcfsc/Sp3ms
+  strongs: H2781
+- reference: Daniel 11:18
+  sourceTokenId: h27011018014
+  surface: לֽ/וֹ
+  ble: a·él
+  rmac: HR/Sp3ms
+  strongs: ''
+- reference: Daniel 11:20
+  sourceTokenId: h27011020013
+  surface: וְ/לֹ֥א
+  ble: y·no
+  rmac: HC/Tn
+  strongs: H3808
+- reference: Daniel 11:20
+  sourceTokenId: h27011020014
+  surface: בְ/מִלְחָמָֽה
+  ble: en·rey
+  rmac: HR/Ncfsa
+  strongs: H4421
+- reference: Daniel 11:21
+  sourceTokenId: h27011021010
+  surface: וּ/בָ֣א
+  ble: y·vendrá
+  rmac: HC/Vqq3ms
+  strongs: H935
+- reference: Daniel 11:21
+  sourceTokenId: h27011021011
+  surface: בְ/שַׁלְוָ֔ה
+  ble: en·tus·prosperidades
+  rmac: HR/Ncfsa
+  strongs: H7962
+- reference: Daniel 11:21
+  sourceTokenId: h27011021012
+  surface: וְ/הֶחֱזִ֥יק
+  ble: y·fortalecerá
+  rmac: HC/Vhq3ms
+  strongs: H2388
+- reference: Daniel 11:32
+  sourceTokenId: h27011032004
+  surface: בַּ/חֲלַקּ֑וֹת
+  ble: con·lisonjas
+  rmac: HR/Aafpa
+  strongs: H2514
+- reference: Daniel 11:37
+  sourceTokenId: h27011037001
+  surface: וְ/עַל
+  ble: y·sobre
+  rmac: HC/R
+  strongs: H5921
+- reference: Daniel 11:37
+  sourceTokenId: h27011037003
+  surface: אֲבֹתָי/ו֙
+  ble: padre·él
+  rmac: HNcmpc/Sp3ms
+  strongs: ''
+- reference: Daniel 11:37
+  sourceTokenId: h27011037004
+  surface: לֹ֣א
+  ble: 'no'
+  rmac: HTn
+  strongs: H3808
+- reference: Daniel 11:37
+  sourceTokenId: h27011037009
+  surface: וְ/עַֽל
+  ble: y·sobre
+  rmac: HC/R
+  strongs: H5921
+- reference: Daniel 11:37
+  sourceTokenId: h27011037012
+  surface: לֹ֣א
+  ble: 'no'
+  rmac: HTn
+  strongs: H3808
+- reference: Daniel 11:37
+  sourceTokenId: h27011037014
+  surface: כִּ֥י
+  ble: porque
+  rmac: HC
+  strongs: H3588
+- reference: Daniel 11:42
+  sourceTokenId: h27011042006
+  surface: לֹ֥א
+  ble: 'no'
+  rmac: HTn
+  strongs: H3808
+- reference: Daniel 11:42
+  sourceTokenId: h27011042008
+  surface: לִ/פְלֵיטָֽה
+  ble: a·boca
+  rmac: HR/Ncfsa
+  strongs: H6413
+- reference: Daniel 11:45
+  sourceTokenId: h27011045014
+  surface: לֽ/וֹ
+  ble: a·él
+  rmac: HR/Sp3ms
+  strongs: ''
+- reference: Daniel 12:1
+  sourceTokenId: h27012001027
+  surface: הַ/נִּמְצָ֖א
+  ble: el·que·halla
+  rmac: HTd/VNrmsa
+  strongs: H4672
+- reference: Daniel 12:3
+  sourceTokenId: h27012003009
+  surface: וָ/עֶֽד
+  ble: y·hasta
+  rmac: HC/Ncmsa
+  strongs: H5703
+- reference: Daniel 12:4
+  sourceTokenId: h27012004001
+  surface: וְ/אַתָּ֣ה
+  ble: y·tú
+  rmac: HC/Pp2ms
+  strongs: H859
+- reference: Daniel 12:5
+  sourceTokenId: h27012005001
+  surface: וְ/רָאִ֨יתִי֙
+  ble: y·vi
+  rmac: HC/Vqp1cs
+  strongs: H7200
+- reference: Daniel 12:5
+  sourceTokenId: h27012005011
+  surface: הַ/יְאֹ֔ר
+  ble: la·ciudad
+  rmac: HTd/Ncmsa
+  strongs: H2975
+- reference: Daniel 12:5
+  sourceTokenId: h27012005012
+  surface: וְ/אֶחָ֥ד
+  ble: y·uno
+  rmac: HC/Acmsa
+  strongs: H259
+- reference: Daniel 12:5
+  sourceTokenId: h27012005014
+  surface: לִ/שְׂפַ֥ת
+  ble: a·borde
+  rmac: HR/Ncfsc
+  strongs: H8193
+- reference: Daniel 12:5
+  sourceTokenId: h27012005015
+  surface: הַ/יְאֹֽר
+  ble: la·ciudad
+  rmac: HTd/Ncmsa
+  strongs: H2975
+- reference: Daniel 12:9
+  sourceTokenId: h27012009007
+  surface: הַ/דְּבָרִ֖ים
+  ble: las·palabras
+  rmac: HTd/Ncmpa
+  strongs: H1697
+- reference: Daniel 12:10
+  sourceTokenId: h27012010002
+  surface: וְ/יִֽתְלַבְּנ֤וּ
+  ble: y·se·blanquearán
+  rmac: HC/Vti3mp
+  strongs: H3835
+- reference: Daniel 12:10
+  sourceTokenId: h27012010003
+  surface: וְ/יִצָּֽרְפוּ֙
+  ble: y·pacto
+  rmac: HC/VNi3mp
+  strongs: H6884
+- reference: Daniel 12:11
+  sourceTokenId: h27012011010
+  surface: וְ/תִשְׁעִֽים
+  ble: y·registrar
+  rmac: HC/Acbpa
+  strongs: H8673
+- reference: Daniel 12:12
+  sourceTokenId: h27012012009
+  surface: וַ/חֲמִשָּֽׁה
+  ble: y·cinco
+  rmac: HC/Acmsa
+  strongs: H2568
+validation:
+  checks:
+    every_used_sourceTokenId_exists: true
+    every_sourceTokenId_same_verse: true
+    json_parses: true
+    daniel_1_2_not_modified_this_pass: true
+    production_reverse_links_not_modified_by_this_script: true
+    all_stale_units_listed: true
+    all_unexplained_empty_alignments_listed: true
+    all_unaccounted_lexical_source_tokens_listed: true
+  errors:
+  - stale unit data remains listed
+  - unexplained empty alignments remain listed
+  - unaccounted lexical source tokens remain listed
+  missing_sourceTokenIds: []
+  cross_verse_links: []
+  duplicated_source_tokens: []
