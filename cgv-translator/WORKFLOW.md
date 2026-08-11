@@ -1,5 +1,6 @@
 # cgv-translator Workflow Standard
 
+<<<<<<< Updated upstream
 **Status:** Active  
 **Scope:** LBF translation, alignment, verification, approval, and release  
 **Version:** 0.3
@@ -17,6 +18,17 @@ Implementation specifications may add technical detail but may not contradict th
 # 2. Purpose
 
 `cgv-translator` governs the production of **La Biblia Fiel (LBF)** and its alignment to the biblical source text.
+=======
+**Status:** Draft  
+**Scope:** LBF translation, alignment, verification, approval, and release  
+**Version:** 0.2
+
+---
+
+# 1. Purpose
+
+cgv-translator governs the production of the **La Biblia Fiel (LBF)** translation and its alignment to the biblical source text.
+>>>>>>> Stashed changes
 
 The objective is to produce an LBF text that is:
 
@@ -31,11 +43,19 @@ The process must remain simple enough to be followed consistently.
 
 ---
 
+<<<<<<< Updated upstream
 # 3. System Responsibilities
 
 ## cgv-translator
 
 `cgv-translator` is the working environment for:
+=======
+# 2. System Responsibilities
+
+## cgv-translator
+
+cgv-translator is the working environment for:
+>>>>>>> Stashed changes
 
 - translation;
 - difficult-word investigations;
@@ -54,11 +74,19 @@ Approved LBF Bible and alignment data ultimately reside there.
 
 ## cgv-MANAGER
 
+<<<<<<< Updated upstream
 `cgv-MANAGER` records the approved artifact and determines what downstream workflow may begin.
 
 ---
 
 # 4. Core Translation Workflow
+=======
+cgv-MANAGER records the approved artifact and determines what downstream workflow may begin.
+
+---
+
+# 3. Core Translation Workflow
+>>>>>>> Stashed changes
 
 The canonical Translator sequence is:
 
@@ -86,6 +114,7 @@ This is the governing sequence.
 
 ---
 
+<<<<<<< Updated upstream
 # 5. Translator Compatibility Principle
 
 The LBF translation process may be carried out using AI, human work, `cgv-translator`, or a combination of these methods.
@@ -130,6 +159,13 @@ The workflow tracks the state of the work; it must not prevent the translator fr
 Translation normally proceeds **verse by verse**.
 
 Within `cgv-translator`, the underlying data may divide the verse into phrases or other alignment units.
+=======
+# 4. Working Unit
+
+Translation normally proceeds **verse by verse**.
+
+Within cgv-translator, the underlying data may divide the verse into phrases or other alignment units.
+>>>>>>> Stashed changes
 
 That implementation detail does not change the human workflow:
 
@@ -149,7 +185,11 @@ NEXT VERSE
 
 ---
 
+<<<<<<< Updated upstream
 # 7. Phase 1 — Translate
+=======
+# 5. Phase 1 — Translate
+>>>>>>> Stashed changes
 
 Begin from the declared biblical source text.
 
@@ -165,7 +205,11 @@ The translation should not begin from another Spanish Bible as its authority.
 
 ---
 
+<<<<<<< Updated upstream
 # 8. Difficult Translation Decisions
+=======
+# 6. Difficult Translation Decisions
+>>>>>>> Stashed changes
 
 Not every translated word requires documentation.
 
@@ -205,11 +249,17 @@ The investigation record exists so important decisions for this edition do not s
 
 A future edition may reconsider the decision.
 
+<<<<<<< Updated upstream
 Research or investigation by itself does not invalidate approved translation or alignment work. If the resulting decision changes the Spanish or alignment, the affected verification state is then returned to G0A or G0B as appropriate.
 
 ---
 
 # 9. G0A — Translation Verification
+=======
+---
+
+# 7. G0A — Translation Verification
+>>>>>>> Stashed changes
 
 After translation, the Spanish must be verified.
 
@@ -266,7 +316,11 @@ Translation does not proceed to final alignment verification until G0A passes.
 
 ---
 
+<<<<<<< Updated upstream
 # 10. Phase 2 — Alignment
+=======
+# 8. Phase 2 — Alignment
+>>>>>>> Stashed changes
 
 Once the translation has passed G0A, align the approved Spanish to the original-language source.
 
@@ -290,7 +344,11 @@ multiple source units → multiple Spanish units
 
 ---
 
+<<<<<<< Updated upstream
 # 11. G0B — Alignment Verification
+=======
+# 9. G0B — Alignment Verification
+>>>>>>> Stashed changes
 
 After alignment, verify the alignment.
 
@@ -329,7 +387,11 @@ An AI-generated or mechanically generated link still requires verification.
 
 ---
 
+<<<<<<< Updated upstream
 # 12. If G0B Finds an Alignment Problem
+=======
+# 10. If G0B Finds an Alignment Problem
+>>>>>>> Stashed changes
 
 If the translation is correct but the alignment is wrong:
 
@@ -345,7 +407,11 @@ G0B AGAIN
 
 ---
 
+<<<<<<< Updated upstream
 # 13. If G0B Reveals a Translation Problem
+=======
+# 11. If G0B Reveals a Translation Problem
+>>>>>>> Stashed changes
 
 Alignment may reveal that the Spanish itself needs correction.
 
@@ -371,7 +437,11 @@ A downstream alignment correction must not hide a translation defect.
 
 ---
 
+<<<<<<< Updated upstream
 # 14. Gate 0 Completion
+=======
+# 12. Gate 0 Completion
+>>>>>>> Stashed changes
 
 Gate 0 is complete only when:
 
@@ -385,7 +455,11 @@ No unresolved blocker may remain.
 
 ---
 
+<<<<<<< Updated upstream
 # 15. Review Independence
+=======
+# 13. Review Independence
+>>>>>>> Stashed changes
 
 Translation production and verification are different actions.
 
@@ -399,7 +473,11 @@ But production is not itself verification.
 
 ---
 
+<<<<<<< Updated upstream
 # 16. Chapter Progress
+=======
+# 14. Chapter Progress
+>>>>>>> Stashed changes
 
 As work progresses through a chapter:
 
@@ -416,7 +494,11 @@ The required translation and alignment verification must also be complete.
 
 ---
 
+<<<<<<< Updated upstream
 # 17. Book-Level Final Check
+=======
+# 15. Book-Level Final Check
+>>>>>>> Stashed changes
 
 After the entire book has passed verse-level work, review the book as a whole.
 
@@ -439,7 +521,11 @@ The purpose is **intentional consistency**, not forced identical translation in 
 
 ---
 
+<<<<<<< Updated upstream
 # 18. Final Translation Status
+=======
+# 16. Final Translation Status
+>>>>>>> Stashed changes
 
 A book is ready for approval only when:
 
@@ -459,7 +545,11 @@ TRANSLATION_APPROVED
 
 ---
 
+<<<<<<< Updated upstream
 # 19. Approved Output
+=======
+# 17. Approved Output
+>>>>>>> Stashed changes
 
 The approved Translator output consists of the reviewed LBF data needed downstream, including:
 
@@ -476,7 +566,11 @@ The exact storage/export schema may be defined separately.
 
 ---
 
+<<<<<<< Updated upstream
 # 20. Publication to cgv-data
+=======
+# 18. Publication to cgv-data
+>>>>>>> Stashed changes
 
 After approval:
 
@@ -498,9 +592,15 @@ The working Translator project remains the record of how the translation was dev
 
 ---
 
+<<<<<<< Updated upstream
 # 21. Manager Handoff
 
 `cgv-MANAGER` must receive or identify the exact approved `cgv-data` artifact.
+=======
+# 19. Manager Handoff
+
+cgv-MANAGER must receive or identify the exact approved `cgv-data` artifact.
+>>>>>>> Stashed changes
 
 Manager then determines whether the book is eligible for the next workflow stage.
 
@@ -526,7 +626,11 @@ Reader must not begin from an unofficial or unverified translation artifact.
 
 ---
 
+<<<<<<< Updated upstream
 # 22. Post-Approval Corrections
+=======
+# 20. Post-Approval Corrections
+>>>>>>> Stashed changes
 
 An approved translation may later require correction.
 
@@ -556,7 +660,11 @@ The previous approved artifact must not be silently changed while retaining the 
 
 ---
 
+<<<<<<< Updated upstream
 # 23. Definition of Done — Verse
+=======
+# 21. Definition of Done — Verse
+>>>>>>> Stashed changes
 
 A verse is complete when:
 
@@ -569,9 +677,15 @@ A verse is complete when:
 
 ---
 
+<<<<<<< Updated upstream
 # 24. Definition of Done — Book
 
 A book is complete in `cgv-translator` when:
+=======
+# 22. Definition of Done — Book
+
+A book is complete in cgv-translator when:
+>>>>>>> Stashed changes
 
 - [ ] every required verse is complete;
 - [ ] all G0A review is complete;
@@ -580,15 +694,24 @@ A book is complete in `cgv-translator` when:
 - [ ] book-level final review is complete;
 - [ ] no blocker remains;
 - [ ] human approval is recorded;
+<<<<<<< Updated upstream
 - [ ] final data package is ready for `cgv-data`.
 
 ---
 
 # 25. Non-Negotiable Rules
+=======
+- [ ] final data package is ready for cgv-data.
+
+---
+
+# 23. Non-Negotiable Rules
+>>>>>>> Stashed changes
 
 1. Translate from the declared source.
 2. AI may assist, but AI output must be verified.
 3. Difficult decisions should be documented; routine words do not require investigations.
+<<<<<<< Updated upstream
 4. Research alone does not invalidate verified work.
 5. G0A verifies the translation.
 6. A translation change returns the affected work to G0A.
@@ -606,6 +729,22 @@ A book is complete in `cgv-translator` when:
 ---
 
 # 26. Canonical Summary
+=======
+4. G0A verifies the translation.
+5. Translation must pass G0A before final acceptance.
+6. Alignment follows the translation.
+7. G0B verifies the alignment.
+8. A G0B finding may send the work back to translation.
+9. Do not hide translation problems through alignment changes.
+10. Do not hide alignment problems through Spanish rewriting.
+11. Do not declare work complete merely because text exists.
+12. Approved final data belongs in cgv-data.
+13. Downstream CGV work must use the approved canonical artifact.
+
+---
+
+# 24. Canonical Summary
+>>>>>>> Stashed changes
 
 ```text
 TRANSLATE
@@ -636,6 +775,30 @@ cgv-MANAGER
 cgv-reader
 ```
 
+<<<<<<< Updated upstream
 At any point before release, the translator may return to `cgv-translator` for research or correction. Only the affected verification state is reopened.
 
 That is the `cgv-translator` production workflow.
+=======
+That is the cgv-translator production workflow.
+
+> **Translator Compatibility Principle**
+>
+> The LBF translation process may be carried out using AI, human work, cgv-translator, or a combination of these methods.
+>
+> The workflow must remain compatible with cgv-translator throughout production.
+>
+> At any time, the translator may use cgv-translator to inspect the source, conduct an investigation, revise a Spanish phrase, modify an alignment, or correct other Translator-owned data.
+>
+> Such work does not bypass or restart the workflow. It returns the affected artifact to the appropriate verification step.
+>
+> Research alone does not invalidate approved work.
+>
+> A translation change invalidates the affected G0A approval and any G0B alignment that depends on that translation.
+>
+> An alignment-only change invalidates the affected G0B verification but does not by itself invalidate an unchanged G0A-approved translation.
+>
+> The workflow tracks the state of the work; it does not prevent the translator from returning to the text when correction or further research is required
+
+> **cgv-translator must remain an editable working environment until release. Approval controls changes; it does not make the text inaccessible.**
+>>>>>>> Stashed changes
