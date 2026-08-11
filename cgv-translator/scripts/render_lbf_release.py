@@ -77,7 +77,7 @@ def render_release_bytes(phrase_doc: dict) -> bytes:
 
 def default_output(root: Path, book_id: str) -> Path:
     config = BOOK_CONFIG[book_id]
-    return root.parent / "cgv-data" / "bibles" / "LBF" / f"{config['release_slug']}.lbf.md"
+    return root.parent.parent / "cgv-data" / "bibles" / "LBF" / f"{config['release_slug']}.lbf.md"
 
 
 def write_release(path: Path, payload: bytes) -> str:
