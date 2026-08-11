@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "regression:daniel": "python3 scripts/regression_daniel.py"
+    "regression:daniel": "python3 scripts/regression_daniel.py",
+    "bootstrap:ot": "python3 scripts/bootstrap_oshb_book.py",
+    "propose": "node scripts/propose_lbf.mjs"
   }
 }
