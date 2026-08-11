@@ -1,6 +1,6 @@
 # Translator-Specific Gate 0 Contract
 
-**Version:** 0.2  
+**Version:** 0.3  
 **Producer:** `cgv-translator`  
 **Consumer:** `cgv-MANAGER`
 
@@ -77,6 +77,41 @@ all phrase records must be lbf-approved
 ```
 
 Any `lbf-preliminary` record is a blocker unless the project specification explicitly allows it.
+
+## Translator edit compatibility
+
+`cgv-translator` remains editable during production.
+
+Research, investigation, phrase correction, and alignment correction are normal Translator operations and must not require abandoning or restarting the workflow.
+
+The governing rule is **targeted invalidation**:
+
+```text
+RESEARCH / INVESTIGATION ONLY
+    → no Gate 0 approval is invalidated
+
+SPANISH PHRASE CHANGED
+    → affected G0A approval becomes stale and must be reviewed again
+    → affected G0B verification becomes stale when the alignment depends on the changed Spanish
+
+ALIGNMENT ONLY CHANGED
+    → unchanged G0A approval remains valid
+    → affected G0B verification becomes stale and must be reviewed again
+```
+
+A change to one unit must not silently certify the changed unit from an earlier review.
+
+A change to one unit should not require re-review of unrelated units when the review infrastructure can identify the affected unit and its prior artifact identity.
+
+Until review artifacts support fully granular per-unit identity, whole-artifact checksum changes remain a conservative blocker. This is safe but broader than the intended final behavior.
+
+The implementation target is therefore:
+
+- preserve review results for unchanged units;
+- reopen only changed translation units for G0A;
+- reopen only changed or translation-dependent alignment units for G0B;
+- preserve all review history;
+- never silently reuse approval for changed content.
 
 ## Producer output
 
