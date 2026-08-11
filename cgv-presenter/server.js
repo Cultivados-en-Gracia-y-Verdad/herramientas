@@ -89,11 +89,11 @@ const defaultCourseDir = isLoadableCourseDir(getStarterRomanosCourseDir())
   : bundledDefaultCourseDir;
 const cgvRepository = {
   owner: "Cultivados-en-Gracia-y-Verdad",
-  repo: "curriculo",
+  repo: "cgv-data",
   branch: "main",
   coursesPath: "courses"
 };
-const cgvRepositoryBaseUrl = `https://github.com/${cgvRepository.owner}/${cgvRepository.repo}/tree/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
+const cgvRepositoryBaseUrl = `https://github.com/${cgvRepository.owner}/${cgvRepository.repo}/${cgvRepository.coursesPath}`;
 const cgvApiBaseUrl = `https://api.github.com/repos/${cgvRepository.owner}/${cgvRepository.repo}`;
 const cgvRawBaseUrl = `https://raw.githubusercontent.com/${cgvRepository.owner}/${cgvRepository.repo}/${cgvRepository.branch}/${cgvRepository.coursesPath}`;
 const defaultSongRepository = {
@@ -759,6 +759,14 @@ function rawCgvCourseUrl(relativePath) {
   return `${cgvRawBaseUrl}/${String(relativePath).split("/").map(encodeURIComponent).join("/")}`;
 }
 
+function cgvCourseSourceUrl(coursePath, relativePath = "") {
+  return [
+    cgvRepositoryBaseUrl,
+    String(coursePath || "").split("/").map(encodeURIComponent).join("/"),
+    String(relativePath || "").split("/").filter(Boolean).map(encodeURIComponent).join("/")
+  ].filter(Boolean).join("/");
+}
+
 function rawSongUrl(config, relativePath) {
   const segments = [config.branch, config.songsPath, relativePath]
     .filter(Boolean)
@@ -926,7 +934,7 @@ async function buildCatalogCourse(item) {
     updateAvailable,
     status,
     path: item.name,
-    repositoryUrl: item.html_url
+    repositoryUrl: cgvCourseSourceUrl(item.name, remoteManifest?.entry || "slides/markdown.md")
   };
 }
 
@@ -1078,7 +1086,9 @@ async function downloadCourseFromCgv(course) {
     entry: remoteManifest.entry && files.includes(remoteManifest.entry)
       ? remoteManifest.entry
       : entryPath,
-    source: cgvRepositoryBaseUrl
+    source: cgvCourseSourceUrl(coursePath, remoteManifest.entry && files.includes(remoteManifest.entry)
+      ? remoteManifest.entry
+      : entryPath)
   };
 
   fs.writeFileSync(
@@ -2727,7 +2737,7 @@ function buildHebrewFallbackPopupPayload(surface) {
       reference: "",
       surface: "",
       verseCount: 1,
-      popupHtml: `<span class="bible-popup greek-popup hebrew-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>Forma hebrea no encontrada.</strong></span></span></span>`
+      popupHtml: `<span class="bible-popup greek-popup hebrew-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>Forma hebrea/aramea no encontrada.</strong></span></span></span>`
     };
   }
 
@@ -2735,8 +2745,8 @@ function buildHebrewFallbackPopupPayload(surface) {
   const lemma = String(info.lemma || "").trim();
   const useText = String(info.morphologyDescription || info.morphology || "").trim();
   const note = info.lemma || info.morphology
-    ? "Forma hebrea reconocida, sin usos enlazados en el índice cargado."
-    : "Forma hebrea no encontrada en el índice cargado.";
+    ? "Forma hebrea/aramea reconocida, sin usos enlazados en el índice cargado."
+    : "Forma hebrea/aramea no encontrada en el índice cargado.";
   const header = `<span class="greek-usage-header">
     <span class="greek-usage-title"><strong class="greek-usage-greek hebrew-surface">${escapeHtml(value)}</strong>${lemma ? ` <span class="greek-usage-lemma hebrew-surface">(${escapeHtml(lemma)})</span>` : ""}</span>
     ${useText ? `<span class="greek-usage-use"><span class="greek-usage-use-label">Uso</span> ${escapeHtml(useText)}</span>` : ""}
@@ -6356,7 +6366,7 @@ app.get("/hebrew/usage", (req, res) => {
     : hebrewSurfaceFromReference(req.query.reference);
 
   if (!surface) {
-    res.status(400).json({ error: "Missing Hebrew surface form." });
+    res.status(400).json({ error: "Missing Hebrew/Aramaic surface form." });
     return;
   }
 

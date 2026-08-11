@@ -22,7 +22,7 @@ Backlog for the `cgv-presenter` app. Current release: **1.2.7**.
 
 ## Courses & content
 
-- [ ] **Bundled starter courses** — Only Romanos is bundled today. Decide which courses ship in the installer vs download-only from `curriculo` `main`.
+- [ ] **Bundled starter courses** — Only Romanos is bundled today. Decide which courses ship in the installer vs download-only from `cgv-data` `main`.
 - [ ] **Catalog path aliases** — Romanos uses `Romanos/` locally and `Romanos1-8` on GitHub; confirm alias logic covers future renames without manual manifest edits.
 - [ ] **Course update flow** — Test download → update → reload for courses published from `en-borrador` (manifest + slides + PDFs).
 

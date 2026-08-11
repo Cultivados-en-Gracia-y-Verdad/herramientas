@@ -903,7 +903,7 @@ async function fetchHebrewPopup(surface) {
           reference: key,
           surface: value,
           verseCount: 1,
-          popupHtml: `<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>${escapeHtml(value)}</strong><span class="greek-usage-examples-title">No se pudo cargar la información hebrea.</span></span></span></span>`,
+          popupHtml: `<span class="bible-popup"><span class="bible-popup-verse" data-verse-index="0" data-active="true"><span class="greek-usage-header"><strong>${escapeHtml(value)}</strong><span class="greek-usage-examples-title">No se pudo cargar la información hebrea/aramea.</span></span></span></span>`,
           error: error.message
         }))
     );
@@ -1067,7 +1067,7 @@ function renderSharedPopupOverlay() {
   ) {
     const requestKey = popupState.reference;
     const loadingLabel = sourceReference?.dataset.popupDynamic === "hebrew"
-      ? "Cargando estudio hebreo..."
+      ? "Cargando estudio hebreo/arameo..."
       : "Cargando estudio griego...";
     overlay.innerHTML = `<span class="bible-popup-loading">${loadingLabel}</span>`;
     if (!dynamicPopupInflight.has(requestKey)) {
