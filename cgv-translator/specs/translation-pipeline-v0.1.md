@@ -7,11 +7,8 @@
 >
 > `../WORKFLOW.md`
 
-<<<<<<< Updated upstream
 ---
 
-=======
->>>>>>> Stashed changes
 # Translation Pipeline v0.1
 
 ## Purpose
