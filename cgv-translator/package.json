@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node server.js",
     "regression:daniel": "python3 scripts/regression_daniel.py",
+    "regression:alignment": "python3 scripts/regression_alignment_invalidation.py",
     "bootstrap:ot": "python3 scripts/bootstrap_oshb_book.py",
-    "propose": "node scripts/propose_lbf.mjs"
+    "propose": "node scripts/propose_lbf.mjs",
+    "edit:alignment": "python3 scripts/edit_alignment.py"
   }
 }
