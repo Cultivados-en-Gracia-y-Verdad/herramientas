@@ -1,0 +1,67 @@
+name: Patch translator save guard
+
+on:
+  push:
+    branches:
+      - workflow/daniel-regression
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: workflow/daniel-regression
+          fetch-depth: 0
+      - name: Patch saveTranslationDocument exactly once
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path("cgv-translator/public/main.js")
+          source = path.read_text(encoding="utf-8")
+          old = '''  const previousSavedText = phrase.savedText || "";
+            phrase.savedText = phrase.workingText;
+            phrase.suggestionSource = phrase.workingText.trim() ? "lbf-approved" : "blank";'''.replace("            ", "  ", 2)
+          new = '''  const previousSavedText = phrase.savedText || "";
+            const previousSuggestionSource = phrase.suggestionSource || "";
+            const nextSavedText = phrase.workingText;
+            const spanishChanged = nextSavedText !== previousSavedText;
+            phrase.savedText = nextSavedText;
+            if (!nextSavedText.trim()) {
+              phrase.suggestionSource = "blank";
+            } else if (spanishChanged) {
+              phrase.suggestionSource = "lbf-preliminary";
+            }'''.replace("            ", "  ", 9)
+          if source.count(old) != 1:
+              raise SystemExit(f"expected old save block exactly once; found {source.count(old)}")
+          source = source.replace(old, new, 1)
+          old_catch = '''  } catch (error) {
+            phrase.savedText = previousSavedText;
+            renderVersePreview();'''.replace("            ", "  ", 2)
+          new_catch = '''  } catch (error) {
+            phrase.savedText = previousSavedText;
+            phrase.suggestionSource = previousSuggestionSource;
+            renderVersePreview();'''.replace("            ", "  ", 3)
+          if source.count(old_catch) != 1:
+              raise SystemExit(f"expected save catch block exactly once; found {source.count(old_catch)}")
+          path.write_text(source.replace(old_catch, new_catch, 1), encoding="utf-8")
+          PY
+          git diff --check
+          git diff -- cgv-translator/public/main.js
+      - name: Commit narrow patch
+        shell: bash
+        run: |
+          if git diff --quiet -- cgv-translator/public/main.js; then
+            echo "Save guard already patched."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cgv-translator/public/main.js
+          git commit -m "prevent translation save from self-approving"
+          git push origin HEAD:workflow/daniel-regression
