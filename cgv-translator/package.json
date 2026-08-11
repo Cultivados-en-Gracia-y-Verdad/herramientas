@@ -5,6 +5,7 @@
   "description": "CGV Translator investigation view prototype",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "regression:daniel": "python3 scripts/regression_daniel.py"
   }
 }
