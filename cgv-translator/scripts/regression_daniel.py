@@ -35,7 +35,10 @@ MAIN_JS = ROOT / "public" / "main.js"
 EXPECTED = {
     "phrases_sha256": "f5c7ce0d9d5deac3a305de2a11c997751100449e5c5ade13e40a96f7f8f189f7",
     "spine_sha256": "40f53bf5f46fad84e28d796b3b3b7527f8420d47707af311a5959993dd8592c6",
-    "release_sha256": "535faa52140083da58afd831de1b61be05851da61bddec0073eda68e91d1e390",
+    # This hash belongs to a historical export recorded by a producer audit
+    # whose overall producer_status was FAIL. It is retained only as continuity
+    # evidence that the rendered Spanish body has not drifted.
+    "legacy_export_sha256": "535faa52140083da58afd831de1b61be05851da61bddec0073eda68e91d1e390",
     "phrases": 357,
     "source_tokens": 6035,
     "hebrew_tokens": 2333,
@@ -212,11 +215,15 @@ def check_g0b(reverse_doc: dict) -> None:
     print("INFO  Daniel G0B is a legacy frozen-artifact certification; verification metadata was not promoted into reverse-links.")
 
 
-def check_release(phrase_doc: dict) -> None:
+def check_render_continuity(phrase_doc: dict) -> None:
     candidate = render_release_bytes(phrase_doc)
     candidate_sha = sha256_bytes(candidate)
-    print(f"INFO  Daniel release candidate SHA-256: {candidate_sha}")
-    check(candidate_sha == EXPECTED["release_sha256"], "Rendered Daniel release is byte-for-byte identical to the historical approved release")
+    print(f"INFO  Daniel continuity render SHA-256: {candidate_sha}")
+    check(
+        candidate_sha == EXPECTED["legacy_export_sha256"],
+        "Rendered Daniel text matches the historical export bytes used for continuity evidence",
+    )
+    print("INFO  Historical export continuity is not release approval; Daniel still requires the full book release gate.")
 
 
 def main() -> int:
@@ -227,7 +234,7 @@ def main() -> int:
         phrase_doc, spine_doc, reverse_doc = check_book_artifacts()
         check_g0a(phrase_doc, spine_doc)
         check_g0b(reverse_doc)
-        check_release(phrase_doc)
+        check_render_continuity(phrase_doc)
     except RegressionFailure as exc:
         print(f"FAIL  {exc}", file=sys.stderr)
         return 1
@@ -235,7 +242,7 @@ def main() -> int:
         print(f"FAIL  unexpected regression error: {exc}", file=sys.stderr)
         return 1
 
-    print("PASS  Daniel workflow regression")
+    print("PASS  Daniel workflow regression (release gate not implied)")
     return 0
 
 

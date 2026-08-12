@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Render an approved cgv-translator phrase artifact in cgv-data LBF format.
+"""Render an approved cgv-translator phrase artifact in LBF markdown format.
 
-This is the canonical release renderer. It does not approve translation or alignment.
-It only renders phrase records that are already marked lbf-approved.
+This renderer does not approve a translation, complete a book-level release gate, or
+publish a canonical Bible edition. It only renders phrase records already marked
+``lbf-approved`` into a deterministic candidate artifact.
 
-For safety, an existing release file is never replaced with different bytes.
+Direct publication into ``cgv-data`` is intentionally blocked until the release
+manifest enforces the complete RELEASE_GATE.md requirements (edition/version,
+book-level final review, human approval, exact revisions, and artifact identity).
 """
 from __future__ import annotations
 
@@ -14,11 +17,11 @@ from pathlib import Path
 
 
 BOOK_CONFIG = {
-    # Preserve the established cgv-data release header so Daniel regression can
-    # prove byte-for-byte identity with the historical approved artifact.
     "daniel": {
         "release_slug": "daniel",
-        "source_comment": "cgv-reader/data/lbf/ot/daniel.md",
+        # The rendered LBF is produced from the Translator-owned phrase artifact.
+        # Keep provenance upstream; cgv-reader is a downstream consumer.
+        "source_comment": "cgv-translator/translations/oshb-spine/daniel/daniel-phrases.json",
     },
 }
 
@@ -36,8 +39,8 @@ def render_release_bytes(phrase_doc: dict) -> bytes:
     config = BOOK_CONFIG.get(book_id)
     if not config:
         raise ValueError(
-            f"No canonical cgv-data release configuration for book {book_id!r}. "
-            "Add it deliberately before publishing that book."
+            f"No LBF render configuration for book {book_id!r}. "
+            "Add it deliberately before rendering that book."
         )
 
     phrases = phrase_doc["phrases"]
@@ -58,36 +61,46 @@ def render_release_bytes(phrase_doc: dict) -> bytes:
         status = str(phrase.get("suggestionSource") or "")
         if status != "lbf-approved":
             raise ValueError(
-                f"Refusing release: phrase {phrase.get('reference') or index} "
+                f"Refusing render: phrase {phrase.get('reference') or index} "
                 f"has suggestionSource={status!r}, not 'lbf-approved'."
             )
         reference = str(phrase.get("reference") or "").strip()
         spanish = str(phrase.get("spanish") or "").strip()
         if not reference or not spanish:
-            raise ValueError(f"Refusing release: blank reference/text at phrase {index}.")
+            raise ValueError(f"Refusing render: blank reference/text at phrase {index}.")
         if reference in seen:
-            raise ValueError(f"Refusing release: duplicate reference {reference}.")
+            raise ValueError(f"Refusing render: duplicate reference {reference}.")
         seen.add(reference)
         lines.append(f"{reference} {spanish}")
 
-    # Existing cgv-data LBF files do not require a terminal newline; byte identity
-    # is intentional and covered by the Daniel regression hash.
-    return "\n".join(lines).encode("utf-8")
+    # Canonical text files end with one terminal newline. Daniel's legacy export
+    # used this representation; matching it is continuity evidence, not approval.
+    return ("\n".join(lines) + "\n").encode("utf-8")
 
 
-def default_output(root: Path, book_id: str) -> Path:
-    config = BOOK_CONFIG[book_id]
-    return root.parent.parent / "cgv-data" / "bibles" / "LBF" / f"{config['release_slug']}.lbf.md"
+def path_is_inside(path: Path, parent: Path) -> bool:
+    try:
+        path.relative_to(parent)
+        return True
+    except ValueError:
+        return False
 
 
-def write_release(path: Path, payload: bytes) -> str:
+def write_candidate(path: Path, payload: bytes, translator_root: Path) -> str:
+    cgv_data_root = translator_root.parent.parent / "cgv-data"
+    if path_is_inside(path, cgv_data_root):
+        raise RuntimeError(
+            "Refusing direct publication to cgv-data. The complete book release "
+            "manifest/gate is not implemented yet; render the candidate outside "
+            "cgv-data and complete RELEASE_GATE.md first."
+        )
+
     if path.exists():
         current = path.read_bytes()
         if current == payload:
             return "UNCHANGED"
-        raise RuntimeError(
-            f"Refusing to mutate released artifact with different bytes: {path}"
-        )
+        raise RuntimeError(f"Refusing to replace candidate with different bytes: {path}")
+
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(payload)
     return "CREATED"
@@ -98,20 +111,23 @@ def main() -> int:
     parser.add_argument("--phrases", required=True, help="Approved phrase JSON")
     parser.add_argument(
         "--output",
-        help="Release path. Defaults to sibling cgv-data/bibles/LBF/<book>.lbf.md",
+        help="Candidate output path outside cgv-data. Omit with --stdout.",
     )
     parser.add_argument(
         "--stdout",
         action="store_true",
-        help="Render to stdout instead of writing a release file.",
+        help="Render candidate bytes to stdout without writing a file.",
     )
     args = parser.parse_args()
+
+    if bool(args.stdout) == bool(args.output):
+        raise SystemExit("Choose exactly one: --stdout or --output <candidate-path>.")
 
     phrase_path = Path(args.phrases).expanduser().resolve()
     phrase_doc = load_phrase_doc(phrase_path)
     book_id = str(phrase_doc.get("bookId") or "").strip().lower()
     if book_id not in BOOK_CONFIG:
-        raise SystemExit(f"Unsupported release book: {book_id!r}")
+        raise SystemExit(f"Unsupported render book: {book_id!r}")
 
     payload = render_release_bytes(phrase_doc)
     if args.stdout:
@@ -120,8 +136,8 @@ def main() -> int:
         return 0
 
     translator_root = Path(__file__).resolve().parents[1]
-    output = Path(args.output).expanduser().resolve() if args.output else default_output(translator_root, book_id)
-    result = write_release(output, payload)
+    output = Path(args.output).expanduser().resolve()
+    result = write_candidate(output, payload, translator_root)
     print(f"{result}: {output}")
     return 0
 
