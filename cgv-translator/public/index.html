@@ -35,6 +35,12 @@
               </div>
             </dl>
             <div class="translation-header-actions">
+              <form id="reference-jump-form" class="reference-jump-form" role="search" aria-label="Go to reference">
+                <label class="visually-hidden" for="reference-jump-input">Go to reference</label>
+                <input id="reference-jump-input" type="text" autocomplete="off" placeholder="Daniel 1:1" />
+                <button id="reference-jump-button" class="secondary-action" type="submit">Go</button>
+                <p id="reference-jump-status" class="reference-jump-status" role="status" aria-live="polite"></p>
+              </form>
               <button id="open-investigations-menu" class="secondary-action" type="button">Investigations</button>
             </div>
           </header>

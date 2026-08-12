@@ -1,7 +1,49 @@
 import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 
-const bookUsfxCodes = {
+const otBookUsfxCodes = {
+  "01": "GEN",
+  "02": "EXO",
+  "03": "LEV",
+  "04": "NUM",
+  "05": "DEU",
+  "06": "JOS",
+  "07": "JDG",
+  "08": "RUT",
+  "09": "1SA",
+  "10": "2SA",
+  "11": "1KI",
+  "12": "2KI",
+  "13": "1CH",
+  "14": "2CH",
+  "15": "EZR",
+  "16": "NEH",
+  "17": "EST",
+  "18": "JOB",
+  "19": "PSA",
+  "20": "PRO",
+  "21": "ECC",
+  "22": "SNG",
+  "23": "ISA",
+  "24": "JER",
+  "25": "LAM",
+  "26": "EZK",
+  "27": "DAN",
+  "28": "HOS",
+  "29": "JOL",
+  "30": "AMO",
+  "31": "OBA",
+  "32": "JON",
+  "33": "MIC",
+  "34": "NAM",
+  "35": "HAB",
+  "36": "ZEP",
+  "37": "HAG",
+  "38": "ZEC",
+  "39": "MAL"
+};
+
+const ntBookUsfxCodes = {
   "01": "MAT",
   "02": "MRK",
   "03": "LUK",
@@ -37,6 +79,8 @@ const strongsSearchPatterns = {
   G4102: /\b(fe|fidelidad)\b/giu
 };
 
+const rv1862OtUnavailable = "Unavailable in cgv-data: RV1862 source is NT-only.";
+
 const rv1862DuplicateBooks = {
   CORINTIOS: ["07", "08"],
   TESALONICENSES: ["13", "14"],
@@ -58,8 +102,9 @@ function normalizeHeader(line) {
   return line.trim().replace(/\^+/g, "").replace(/\.$/, "").toUpperCase();
 }
 
-function referenceToBcv(bookNumber, chapter, verse) {
-  const code = bookUsfxCodes[bookNumber];
+function referenceToBcv(bookNumber, chapter, verse, testament = "NT") {
+  const padded = String(bookNumber || "").padStart(2, "0");
+  const code = testament === "OT" ? otBookUsfxCodes[padded] : ntBookUsfxCodes[padded];
   if (!code) return "";
   return `${code}.${chapter}.${verse}`;
 }
@@ -91,7 +136,7 @@ function buildUsfxIndexes(content) {
     const bcv = match[1];
     verseTextIndex.set(bcv, stripUsfxVerseText(segment));
 
-    for (const wordMatch of segment.matchAll(/<w\s+s="(G\d+)">([^<]*)<\/w>/gi)) {
+    for (const wordMatch of segment.matchAll(/<w\s+s="([GHA]\d+)">([^<]*)<\/w>/gi)) {
       const strongs = wordMatch[1].toUpperCase();
       const text = wordMatch[2].trim();
       if (!text) continue;
@@ -354,6 +399,17 @@ function bibleBookToMorphBook(book) {
   return String(value - 39).padStart(2, "0");
 }
 
+function sourceBookToAquiferBook(book, testament = "NT") {
+  if (testament === "OT") {
+    const value = Number(book);
+    return Number.isFinite(value) && value >= 1 && value <= 39
+      ? String(value).padStart(2, "0")
+      : "";
+  }
+
+  return morphBookToAquiferBook(book);
+}
+
 /**
  * Look up RV1909 verse text by Aquifer Protestant book number (01–66).
  */
@@ -584,9 +640,10 @@ export function resolveHistoricalRenderings(indexes, {
   verse,
   strongs,
   occurrenceIndex,
+  testament = "NT",
   sourceTokenIds = []
 }) {
-  const bcv = referenceToBcv(book, chapter, verse);
+  const bcv = referenceToBcv(book, chapter, verse, testament);
   const spnbesFocus = lookupUsfxRendering(
     indexes.spnbes.strongIndex,
     indexes.spnbes.verseTextIndex,
@@ -601,15 +658,20 @@ export function resolveHistoricalRenderings(indexes, {
     strongs,
     occurrenceIndex
   );
-  const aquiferBook = morphBookToAquiferBook(book) || String(book || "").padStart(2, "0");
-  const rv1862Focus = lookupRvRendering(indexes.rv1862, book, chapter, verse, strongs, occurrenceIndex);
+  const paddedBook = String(book || "").padStart(2, "0");
+  const aquiferBook = sourceBookToAquiferBook(book, testament) || paddedBook;
+  const rv1862Focus = testament === "NT"
+    ? lookupRvRendering(indexes.rv1862, book, chapter, verse, strongs, occurrenceIndex)
+    : "";
   const rv1909Focus = lookupRvRendering(indexes.rv1909, aquiferBook, chapter, verse, strongs, occurrenceIndex)
-    || lookupRvRendering(indexes.rv1909, `m${String(book || "").padStart(2, "0")}`, chapter, verse, strongs, occurrenceIndex);
+    || (testament === "NT" ? lookupRvRendering(indexes.rv1909, `m${paddedBook}`, chapter, verse, strongs, occurrenceIndex) : "");
 
-  const rv1862 = lookupRvVerse(indexes.rv1862, book, chapter, verse) || rv1862Focus;
+  const rv1862 = testament === "NT"
+    ? lookupRvVerse(indexes.rv1862, book, chapter, verse) || rv1862Focus
+    : rv1862OtUnavailable;
   const rv1909 = lookupAlignedSpan(indexes.rv1909Alignment, sourceTokenIds)
     || lookupRvVerse(indexes.rv1909, aquiferBook, chapter, verse)
-    || lookupRvVerse(indexes.rv1909, `m${String(book || "").padStart(2, "0")}`, chapter, verse)
+    || (testament === "NT" ? lookupRvVerse(indexes.rv1909, `m${paddedBook}`, chapter, verse) : "")
     || rv1909Focus;
   const spnbes = indexes.spnbes.verseTextIndex.get(bcv) || spnbesFocus;
   const spnvbl = indexes.spnvbl.verseTextIndex.get(bcv) || spnvblFocus;

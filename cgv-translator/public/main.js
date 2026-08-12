@@ -97,6 +97,9 @@ const versePreviewText = document.querySelector("#verse-preview-text");
 const previousPhrase = document.querySelector("#previous-phrase");
 const nextPhrase = document.querySelector("#next-phrase");
 const bookSelect = document.querySelector("#book-select");
+const referenceJumpForm = document.querySelector("#reference-jump-form");
+const referenceJumpInput = document.querySelector("#reference-jump-input");
+const referenceJumpStatus = document.querySelector("#reference-jump-status");
 const saveStatus = document.querySelector("#save-status");
 const saveButton = document.querySelector("#save-button");
 const gatherEvidence = document.querySelector("#gather-evidence");
@@ -1088,6 +1091,135 @@ function translationApiPath(path) {
   return `${url.pathname}?${url.searchParams.toString()}`;
 }
 
+function normalizeReferencePart(value = "") {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/gu, "")
+    .replace(/\./gu, "")
+    .replace(/\s+/gu, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function activeBookLabel() {
+  return bookSelect?.selectedOptions?.[0]?.textContent?.trim() || "";
+}
+
+function bookIdForReferenceLabel(label = "") {
+  const normalized = normalizeReferencePart(label);
+  if (!normalized || !bookSelect) return "";
+  const prefixMatches = [];
+  for (const option of bookSelect.options) {
+    const optionLabel = normalizeReferencePart(option.textContent);
+    const optionValue = normalizeReferencePart(option.value);
+    if (normalized === optionLabel || normalized === optionValue) {
+      return option.value;
+    }
+    if (optionLabel.startsWith(normalized) || optionValue.startsWith(normalized)) {
+      prefixMatches.push(option.value);
+    }
+  }
+  return prefixMatches.length === 1 ? prefixMatches[0] : "";
+}
+
+function parseReferenceJump(value = "") {
+  const text = String(value || "").trim();
+  const match = text.match(/^(?:(.+?)\s+)?(\d+)\s*[:.]\s*(\d+)$/u);
+  if (!match) return null;
+
+  const [, rawBookLabel, rawChapter, rawVerse] = match;
+  const chapter = Number(rawChapter);
+  const verse = Number(rawVerse);
+  if (!Number.isInteger(chapter) || !Number.isInteger(verse) || chapter < 1 || verse < 1) {
+    return null;
+  }
+
+  const bookLabel = (rawBookLabel || activeBookLabel()).trim();
+  const bookId = rawBookLabel ? bookIdForReferenceLabel(bookLabel) : state.bookId;
+  if (!bookId) return null;
+
+  const resolvedLabel = rawBookLabel
+    ? [...bookSelect.options].find(option => option.value === bookId)?.textContent?.trim() || bookLabel
+    : activeBookLabel();
+
+  return {
+    bookId,
+    reference: `${resolvedLabel} ${chapter}:${verse}`
+  };
+}
+
+function findPhraseIndexByReference(reference) {
+  const target = normalizeReferencePart(reference);
+  return translationPhrases.findIndex(phrase => normalizeReferencePart(phrase.reference) === target);
+}
+
+async function switchTranslationBook(bookId) {
+  state.bookId = bookId;
+  if (bookSelect) bookSelect.value = bookId;
+  const url = new URL(window.location.href);
+  url.searchParams.set("book", state.bookId);
+  window.history.replaceState(null, "", `${url.pathname}?${url.searchParams.toString()}`);
+  state.phraseIndex = 0;
+  state.translationLoadedFromDisk = false;
+  translationUnitsLoaded = false;
+  translationUnits = [];
+  await loadTranslationDocument();
+  await enrichPhraseReferencesFromUnits();
+  await loadContinuationUnits({ force: true });
+}
+
+async function ensureReferenceLoaded(reference) {
+  let index = findPhraseIndexByReference(reference);
+  if (index !== -1) return index;
+
+  let appended = true;
+  while (appended) {
+    appended = await appendNextTranslationUnit();
+    index = findPhraseIndexByReference(reference);
+    if (index !== -1) return index;
+  }
+
+  if (!translationUnitsLoaded) {
+    await loadContinuationUnits({ force: true });
+    index = findPhraseIndexByReference(reference);
+    if (index !== -1) return index;
+  }
+
+  return -1;
+}
+
+async function jumpToReference(value = "") {
+  const target = parseReferenceJump(value);
+  if (!target) {
+    referenceJumpStatus.textContent = "Use a reference like Daniel 1:1 or 1:1.";
+    referenceJumpInput.focus();
+    return;
+  }
+
+  referenceJumpStatus.textContent = "Loading...";
+  try {
+    await flushTranslationSave();
+    if (target.bookId !== state.bookId) {
+      await switchTranslationBook(target.bookId);
+    }
+    const index = await ensureReferenceLoaded(target.reference);
+    if (index === -1) {
+      referenceJumpStatus.textContent = `${target.reference} is not available.`;
+      return;
+    }
+
+    state.phraseIndex = index;
+    state.translationReturn = null;
+    prototypeMessage.textContent = "";
+    renderTranslationPhrase({ focus: true, cursorPosition: getPhraseEnd(index) });
+    translationView.scrollTop = 0;
+    referenceJumpInput.value = target.reference;
+    referenceJumpStatus.textContent = "";
+  } catch (error) {
+    referenceJumpStatus.textContent = error.message || "Could not open reference.";
+  }
+}
+
 async function loadAvailableBooks() {
   const { books = [], active } = await api("/api/translation/books").catch(() => ({ books: [], active: "titus" }));
   if (!bookSelect) return;
@@ -1346,6 +1478,9 @@ function renderTranslationPhrase({ focus = false, cursorPosition = null } = {}) 
     .findIndex(item => item === phrase) + 1;
   translationReferenceTitle.textContent = `${reference} · Phrase ${phraseNumber || state.phraseIndex + 1}`;
   translationReferenceMeta.textContent = reference;
+  if (referenceJumpInput) {
+    referenceJumpInput.placeholder = reference;
+  }
   suggestionSourceLabel.textContent = suggestionSourceForPhrase(phrase);
   rv1909ReferenceText.textContent = phraseRv1909Text(phrase) || "—";
   bleReferenceText.textContent = phraseBleText(phrase) || "—";
@@ -2352,6 +2487,11 @@ previousPhrase.addEventListener("click", () => {
 
 nextPhrase.addEventListener("click", () => {
   void movePhrase(1);
+});
+
+referenceJumpForm?.addEventListener("submit", event => {
+  event.preventDefault();
+  void jumpToReference(referenceJumpInput?.value || "");
 });
 
 analyzeGatesButton.addEventListener("click", () => {

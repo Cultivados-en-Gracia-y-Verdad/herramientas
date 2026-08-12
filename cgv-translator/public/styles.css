@@ -10,6 +10,7 @@
   --accent: #5f6f52;
   --accent-soft: #e3eadc;
   --danger: #9b4d3c;
+  font-size: 18px;
   font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
 }
 
@@ -81,6 +82,7 @@ select {
   flex-wrap: wrap;
   gap: 0.5rem;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .translation-header h1 {
@@ -123,6 +125,37 @@ select {
   border: 1px solid color-mix(in srgb, var(--muted) 35%, transparent);
   border-radius: 4px;
   padding: 0.15rem 0.35rem;
+}
+
+.reference-jump-form {
+  display: grid;
+  grid-template-columns: minmax(9rem, 13rem) auto;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.reference-jump-form input {
+  min-height: 2.35rem;
+  border: 1px solid color-mix(in srgb, var(--muted) 35%, transparent);
+  border-radius: 4px;
+  padding: 0.35rem 0.55rem;
+  background: var(--paper);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.reference-jump-form input:focus {
+  border-color: rgba(95, 111, 82, 0.52);
+  outline: 2px solid rgba(95, 111, 82, 0.16);
+}
+
+.reference-jump-status {
+  grid-column: 1 / -1;
+  min-height: 1rem;
+  margin: -0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.2;
 }
 
 .visually-hidden {

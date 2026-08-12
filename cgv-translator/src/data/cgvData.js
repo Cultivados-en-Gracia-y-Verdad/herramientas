@@ -150,6 +150,48 @@ const OT_BOOK_LABELS_EN = {
   malaquias: "Malachi"
 };
 
+const OT_BOOK_NUMBERS = {
+  genesis: "01",
+  exodo: "02",
+  levitico: "03",
+  numeros: "04",
+  deuteronomio: "05",
+  josue: "06",
+  jueces: "07",
+  rut: "08",
+  "1samuel": "09",
+  "2samuel": "10",
+  "1reyes": "11",
+  "2reyes": "12",
+  "1cronicas": "13",
+  "2cronicas": "14",
+  esdras: "15",
+  nehemias: "16",
+  ester: "17",
+  job: "18",
+  salmos: "19",
+  proverbios: "20",
+  eclesiastes: "21",
+  cantares: "22",
+  isaias: "23",
+  jeremias: "24",
+  lamentaciones: "25",
+  ezequiel: "26",
+  daniel: "27",
+  oseas: "28",
+  joel: "29",
+  amos: "30",
+  abdias: "31",
+  jonas: "32",
+  miqueas: "33",
+  nahum: "34",
+  habacuc: "35",
+  sofonias: "36",
+  hageo: "37",
+  zacarias: "38",
+  malaquias: "39"
+};
+
 function missingHebrewDataError(detail = "") {
   const error = new Error(
     `Could not find Hebrew occurrence data in cgv-data (interlinears/OT/*.tokens.jsonl).${detail ? ` ${detail}` : ""}`
@@ -746,11 +788,14 @@ export async function getHebrewOccurrencesByStrongs(strongs, options = {}) {
   }
 
   const occurrences = [];
+  const translationIndexes = await loadTranslationIndexes(cgvDataDir);
   for (const file of files) {
     const bookId = file.replace(/\.tokens\.jsonl$/u, "");
     const bookLabel = OT_BOOK_LABELS_EN[bookId] || bookId;
+    const bookNumber = OT_BOOK_NUMBERS[bookId] || "";
     const content = await readFile(join(otDir, file), "utf8");
     const byVerse = new Map();
+    const verseOccurrenceCounts = new Map();
 
     for (const line of content.replace(/\r\n/g, "\n").split("\n")) {
       if (!line.trim()) continue;
@@ -771,8 +816,22 @@ export async function getHebrewOccurrencesByStrongs(strongs, options = {}) {
       for (const row of rows) {
         if (!oshbLemmaMatchesStrongs(row.lemma, hebrewStrongs)) continue;
         const lang = String(row.morph || "").startsWith("A") ? "arc" : "he";
+        const verseKey = `${bookId}|${row.ch}|${row.vs}`;
+        const occurrenceIndex = verseOccurrenceCounts.get(verseKey) ?? 0;
+        verseOccurrenceCounts.set(verseKey, occurrenceIndex + 1);
+        const historical = bookNumber
+          ? resolveHistoricalRenderings(translationIndexes, {
+            book: bookNumber,
+            chapter: Number(row.ch),
+            verse: Number(row.vs),
+            strongs: hebrewStrongs,
+            occurrenceIndex,
+            testament: "OT"
+          })
+          : defaultTranslations();
         occurrences.push({
           reference: `${bookLabel} ${row.ch}:${row.vs}`,
+          book: bookNumber,
           bookName: bookLabel,
           bookId,
           chapter: Number(row.ch),
@@ -787,14 +846,14 @@ export async function getHebrewOccurrencesByStrongs(strongs, options = {}) {
           hebrewText,
           greekText: hebrewText,
           gloss: row.es || "",
-          translations: {
-            projectLiteral: row.es || "",
-            ble: "",
-            rv1862: "",
-            rv1909: "",
-            spnbes: "",
-            spnvbl: ""
-          }
+          translations: buildHighlightedTranslations({
+            historical,
+            projectLiteralVerse: "",
+            projectLiteralToken: row.es || "",
+            bleVerse: "",
+            bleToken: "",
+            strongs: hebrewStrongs
+          })
         });
       }
     }
