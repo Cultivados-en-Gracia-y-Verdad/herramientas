@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Regression proof for targeted alignment invalidation using approved Daniel.
 
-No files are written. The test changes one alignment unit in memory and proves:
+No files are written. Daniel's historical final artifact predates promoted G0B
+metadata, so this test first models the post-promotion state in memory and then
+proves:
 - unchanged Spanish keeps G0A complete;
 - identical alignment evidence keeps verified state;
 - changed alignment evidence marks only the affected link needs-review;
-- G0B queues the affected reference again.
+- G0B queues only the affected reference again.
 """
 from __future__ import annotations
 
@@ -29,6 +31,23 @@ def sha256_bytes(raw: bytes) -> str:
     return hashlib.sha256(raw).hexdigest()
 
 
+def promote_in_memory(reverse_doc: dict) -> dict:
+    """Model the state a modern successful G0B promotion would persist.
+
+    This is deliberately test-only. It does not claim Daniel's historical file was
+    promoted; it creates a clean verified baseline so mutation semantics can be
+    tested independently of Daniel's legacy metadata format.
+    """
+    promoted = deepcopy(reverse_doc)
+    for link in promoted.get("links", []):
+        link["status"] = "verified"
+        for unit in link.get("units", []):
+            unit["status"] = "verified"
+            if str(unit.get("method") or "") in {"gloss-match", "seed", ""}:
+                unit["method"] = "external-verified"
+    return promoted
+
+
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
     base = root / "translations" / "oshb-spine" / "daniel"
@@ -42,7 +61,8 @@ def main() -> int:
     phrase_raw = phrase_path.read_bytes()
     spine_doc = json.loads(spine_path.read_text(encoding="utf-8"))
     phrase_doc = json.loads(phrase_raw.decode("utf-8"))
-    reverse_doc = json.loads(reverse_path.read_text(encoding="utf-8"))
+    historical_reverse = json.loads(reverse_path.read_text(encoding="utf-8"))
+    reverse_doc = promote_in_memory(historical_reverse)
 
     phrases = phrase_doc.get("phrases", [])
     assert phrases, "Daniel phrases missing"
@@ -50,6 +70,17 @@ def main() -> int:
 
     baseline_g0a = queues.make_g0a("daniel", spine_doc, phrase_doc, spine_path, phrase_path)
     assert baseline_g0a["summary"]["total"] == 0, "Approved Daniel unexpectedly requeued G0A"
+
+    baseline_g0b = queues.make_g0b(
+        "daniel",
+        spine_doc,
+        phrase_doc,
+        reverse_doc,
+        spine_path,
+        phrase_path,
+        reverse_path,
+    )
+    assert baseline_g0b["summary"]["total"] == 0, "Modeled verified Daniel unexpectedly requeued G0B"
 
     target_link = None
     target_unit = None
@@ -73,11 +104,13 @@ def main() -> int:
     changed = edit.apply_source_token_edit(unchanged, reference, unit_id, original_tokens)
     assert changed is False, "Identical alignment evidence should not invalidate G0B"
     unchanged_link = next(item for item in unchanged["links"] if item.get("reference") == reference)
-    assert unchanged_link.get("status") == "verified", "No-op alignment edit changed verified state"
+    unchanged_unit = next(item for item in unchanged_link["units"] if str(item.get("unitId")) == unit_id)
+    assert unchanged_link.get("status") == "verified", "No-op alignment edit changed verified link state"
+    assert unchanged_unit.get("status") == "verified", "No-op alignment edit changed verified unit state"
 
     candidate = deepcopy(reverse_doc)
-    # Use a deterministic evidence change without writing it. Clearing this one
-    # unit is sufficient to prove the state transition and queue behavior.
+    # Deterministic evidence change without writing it. Clearing this unit is
+    # sufficient to exercise the invalidation boundary.
     changed = edit.apply_source_token_edit(candidate, reference, unit_id, [])
     assert changed is True, "Changed alignment evidence was not detected"
     candidate_link = next(item for item in candidate["links"] if item.get("reference") == reference)
@@ -103,6 +136,7 @@ def main() -> int:
     after_g0a = queues.make_g0a("daniel", spine_doc, phrase_doc, spine_path, phrase_path)
     assert after_g0a["summary"]["total"] == 0, "Alignment-only edit invalidated G0A"
 
+    print("PASS: modeled verified Daniel opens no G0B work")
     print("PASS: identical alignment preserves G0B verification")
     print(f"PASS: changed alignment reopens G0B only for {reference}")
     print("PASS: Daniel Spanish/G0A remains unchanged")
