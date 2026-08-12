@@ -1,0 +1,48 @@
+name: Finalize investigation workflow
+
+on:
+  push:
+    branches:
+      - agent/investigation-workflow-invariants
+    paths:
+      - .github/workflows/finalize-investigation-workflow.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/investigation-workflow-invariants
+          fetch-depth: 0
+
+      - name: Check guarded migration
+        working-directory: cgv-translator
+        run: python3 scripts/finalize_investigation_workflow.py
+
+      - name: Apply guarded migration
+        working-directory: cgv-translator
+        run: python3 scripts/finalize_investigation_workflow.py --apply
+
+      - name: Run translator tests
+        working-directory: cgv-translator
+        run: npm test
+
+      - name: Commit finalized application behavior
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            cgv-translator/public/index.html \
+            cgv-translator/public/main.js \
+            cgv-translator/server.js \
+            cgv-translator/src/investigations/createInvestigation.js \
+            cgv-translator/src/pipeline/analyzeGates.js \
+            cgv-translator/src/pipeline/assistGates.js
+          git diff --cached --check
+          git diff --cached --quiet && exit 0
+          git commit -m "finalize investigation workflow invariants"
+          git push origin HEAD:agent/investigation-workflow-invariants
