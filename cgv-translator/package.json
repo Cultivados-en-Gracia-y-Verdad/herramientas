@@ -8,6 +8,7 @@
     "test": "node --test",
     "start": "node server.js",
     "fix:save-authority": "python3 scripts/apply_save_authority_patch.py",
+    "finalize:investigations": "python3 scripts/finalize_investigation_workflow.py",
     "regression:daniel": "python3 scripts/regression_daniel.py",
     "regression:alignment": "python3 scripts/regression_alignment_invalidation.py",
     "bootstrap:ot": "python3 scripts/bootstrap_oshb_book.py",
