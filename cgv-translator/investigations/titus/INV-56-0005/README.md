@@ -1,4 +1,4 @@
-# Investigation 0005
+# Investigation INV-56-0005
 
 ## Origin
 

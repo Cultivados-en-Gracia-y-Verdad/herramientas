@@ -2,7 +2,7 @@
 
 ## Metadata
 
-Investigation: INV-0003
+Investigation: INV-56-0003
 Reference: Titus 1:1
 Selected token: πίστιν
 Lemma: πίστις

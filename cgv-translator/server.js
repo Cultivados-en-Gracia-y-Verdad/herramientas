@@ -20,7 +20,11 @@ const translationsDir = join(rootDir, "translations");
 const port = Number(process.env.PORT || 1424);
 
 function resolveBook(bookId) {
-  return findBook(bookId) || findBook("titus");
+  const book = findBook(bookId);
+  if (!book) {
+    throw new Error(`Unknown Translator book: ${bookId}`);
+  }
+  return book;
 }
 
 function bookIdFromRequest(url, body = null) {
@@ -281,21 +285,23 @@ function mergeTranslationPhraseSaves(incoming, existing) {
   return merged.sort((a, b) => a.phraseIndex - b.phraseIndex);
 }
 
-function safeInvestigationPath(id) {
-  if (!/^INV-\d{4}$/.test(id)) {
+function investigationBookFromId(id) {
+  const match = String(id || "").match(/^INV-(\d{2})-(\d{4})$/);
+  if (!match) {
     throw new Error("Invalid investigation ID");
   }
-
-  const legacy = join(investigationsDir, id);
-  if (existsSync(legacy)) return legacy;
-
-  const bookDirs = readdirSync(investigationsDir, { withFileTypes: true })
-    .filter(entry => entry.isDirectory() && !/^INV-\d{4}$/.test(entry.name));
-  for (const entry of bookDirs) {
-    const candidate = join(investigationsDir, entry.name, id);
-    if (existsSync(candidate)) return candidate;
+  const bookNumber = Number(match[1]);
+  const book = allTranslatorBooks().find(item => Number(item.number) === bookNumber);
+  if (!book) {
+    throw new Error(`Unknown investigation book number: ${match[1]}`);
   }
+  return book;
+}
 
+function safeInvestigationPath(id) {
+  const book = investigationBookFromId(id);
+  const candidate = join(investigationsDir, book.id, id);
+  if (existsSync(candidate)) return candidate;
   throw new Error(`Investigation not found: ${id}`);
 }
 
@@ -623,7 +629,10 @@ const decisionDefaults = {
   strongs: "G1401",
   preferredRendering: "",
   confidence: "Medium",
-  reason: ""
+  reason: "",
+  approvalAuthority: "",
+  approvedBy: "",
+  approvedAt: ""
 };
 
 function normalizeDecisionValue(value) {
@@ -665,6 +674,9 @@ function parseDecisionVersions(markdown) {
       strongs: readField("Strong's"),
       preferredRendering: readField("Preferred Rendering"),
       confidence: readField("Confidence") || "Medium",
+      approvalAuthority: readField("Approval Authority"),
+      approvedBy: readField("Approved By"),
+      approvedAt: readField("Approved At"),
       reason
     };
   });
@@ -680,6 +692,9 @@ Lemma: ${valueOrDash(version.lemma)}
 Strong's: ${valueOrDash(version.strongs)}
 Preferred Rendering: ${valueOrDash(version.preferredRendering)}
 Confidence: ${valueOrDash(version.confidence)}
+Approval Authority: ${valueOrDash(version.approvalAuthority)}
+Approved By: ${valueOrDash(version.approvedBy)}
+Approved At: ${valueOrDash(version.approvedAt)}
 
 ### Reason
 
@@ -730,7 +745,10 @@ function decisionFromBody(body, fallback) {
     strongs: fallback.strongs || decisionDefaults.strongs,
     preferredRendering: normalizeDecisionValue(body.preferredRendering),
     confidence: ["High", "Medium", "Low"].includes(body.confidence) ? body.confidence : "Medium",
-    reason: normalizeDecisionValue(body.reason)
+    reason: normalizeDecisionValue(body.reason),
+    approvalAuthority: normalizeDecisionValue(fallback.approvalAuthority),
+    approvedBy: normalizeDecisionValue(fallback.approvedBy),
+    approvedAt: normalizeDecisionValue(fallback.approvedAt)
   };
 }
 
@@ -769,7 +787,10 @@ async function handleDecision(request, response, id) {
       ...latest,
       status: "Draft",
       version: nextDecisionVersion(existingLatest.version),
-      effectiveDate: ""
+      effectiveDate: "",
+      approvalAuthority: "",
+      approvedBy: "",
+      approvedAt: ""
     };
     versions.push(latest);
     historyEntries.push(`Revised decision for ${latest.strongs} ${latest.lemma}; created version ${latest.version}.`);
@@ -783,6 +804,15 @@ async function handleDecision(request, response, id) {
       sendJson(response, 400, { error: "Preferred Rendering and Reason are required before approval." });
       return;
     }
+    const approvedBy = normalizeDecisionValue(body.approvedBy);
+    if (body.humanConfirmation !== true || !approvedBy) {
+      sendJson(response, 400, { error: "Explicit human confirmation and approver name are required before approval." });
+      return;
+    }
+    if (approvedBy.length > 120) {
+      sendJson(response, 400, { error: "Approver name is too long." });
+      return;
+    }
 
     const previousApproved = versions.slice(0, -1).filter(version => version.status === "Approved");
     for (const version of previousApproved) {
@@ -790,10 +820,16 @@ async function handleDecision(request, response, id) {
       historyEntries.push(`Superseded decision ${version.version} for ${version.strongs} ${version.lemma}.`);
     }
 
-    if (current.status !== "Approved") {
-      current.status = "Approved";
-      current.effectiveDate = current.effectiveDate || todayIsoDate();
-      historyEntries.push(`Approved decision ${current.version} for ${current.strongs} ${current.lemma}.`);
+    const alreadyApproved = current.status === "Approved";
+    current.status = "Approved";
+    current.effectiveDate = current.effectiveDate || todayIsoDate();
+    current.approvalAuthority = "human";
+    current.approvedBy = approvedBy;
+    current.approvedAt = new Date().toISOString();
+    if (alreadyApproved) {
+      historyEntries.push(`Recorded human approval for decision ${current.version} by ${approvedBy}.`);
+    } else {
+      historyEntries.push(`Approved decision ${current.version} for ${current.strongs} ${current.lemma} by ${approvedBy}.`);
     }
   }
 
@@ -1224,6 +1260,7 @@ async function handleTranslationGates(request, response) {
   try {
     const analysis = await analyzePhraseGates({
       rootDir,
+      bookId: String(payload.book || "").trim().toLowerCase(),
       reference: payload.reference,
       greek: payload.greek,
       tokenRows: payload.tokenRows,
@@ -1254,6 +1291,7 @@ async function handleTranslationGatesAssist(request, response) {
   try {
     const analysis = await analyzePhraseGates({
       rootDir,
+      bookId: String(payload.book || "").trim().toLowerCase(),
       reference: payload.reference,
       greek: payload.greek,
       tokenRows: payload.tokenRows,
@@ -1381,8 +1419,10 @@ async function handleApi(request, response, url) {
       const bookId = bookIdFromRequest(url);
       const bookDir = join(investigationsDir, bookId);
       const entries = await readdir(bookDir, { withFileTypes: true }).catch(() => []);
+      const bookNumber = String(resolveBook(bookId).number).padStart(2, "0");
       const investigations = entries
-        .filter(entry => entry.isDirectory() && /^INV-\d{4}$/.test(entry.name))
+        .filter(entry => entry.isDirectory() && /^INV-\d{2}-\d{4}$/.test(entry.name))
+        .filter(entry => entry.name.startsWith(`INV-${bookNumber}-`))
         .map(entry => entry.name)
         .sort();
       sendJson(response, 200, { book: bookId, investigations });
@@ -1410,7 +1450,7 @@ async function handleApi(request, response, url) {
     return;
   }
 
-  const evidenceMatch = url.pathname.match(/^\/api\/investigations\/(INV-\d{4})\/evidence(?:\/([^/]+))?$/);
+  const evidenceMatch = url.pathname.match(/^\/api\/investigations\/(INV-\d{2}-\d{4})\/evidence(?:\/([^/]+))?$/);
   if (evidenceMatch) {
     const [, id, fileName] = evidenceMatch;
     const investigationDir = safeInvestigationPath(id);
@@ -1435,7 +1475,7 @@ async function handleApi(request, response, url) {
     return;
   }
 
-  const gatherMatch = url.pathname.match(/^\/api\/investigations\/(INV-\d{4})\/gather$/);
+  const gatherMatch = url.pathname.match(/^\/api\/investigations\/(INV-\d{2}-\d{4})\/gather$/);
   if (gatherMatch) {
     const [, id] = gatherMatch;
     const investigationDir = safeInvestigationPath(id);
@@ -1569,13 +1609,13 @@ async function handleApi(request, response, url) {
     return;
   }
 
-  const decisionMatch = url.pathname.match(/^\/api\/investigations\/(INV-\d{4})\/decision$/);
+  const decisionMatch = url.pathname.match(/^\/api\/investigations\/(INV-\d{2}-\d{4})\/decision$/);
   if (decisionMatch) {
     await handleDecision(request, response, decisionMatch[1]);
     return;
   }
 
-  const match = url.pathname.match(/^\/api\/investigations\/(INV-\d{4})(?:\/files\/([^/]+))?$/);
+  const match = url.pathname.match(/^\/api\/investigations\/(INV-\d{2}-\d{4})(?:\/files\/([^/]+))?$/);
   if (!match) {
     sendJson(response, 404, { error: "Not found" });
     return;
@@ -1648,9 +1688,9 @@ createServer(async (request, response) => {
       return;
     }
 
-    const evidenceAliasMatch = url.pathname.match(/^\/(?:investigations\/(INV-\d{4})\/)?evidence\/([^/]+)$/);
+    const evidenceAliasMatch = url.pathname.match(/^\/investigations\/(INV-\d{2}-\d{4})\/evidence\/([^/]+)$/);
     if (request.method === "GET" && evidenceAliasMatch) {
-      const [, id = "INV-0001", fileName] = evidenceAliasMatch;
+      const [, id, fileName] = evidenceAliasMatch;
       await sendEvidenceMarkdown(response, id, fileName);
       return;
     }

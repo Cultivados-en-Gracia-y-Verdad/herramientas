@@ -17,7 +17,7 @@ function bookIdFromLocation() {
 const state = {
   view: "translation",
   bookId: bookIdFromLocation(),
-  investigation: "INV-0001",
+  investigation: "INV-56-0001",
   tab: tabs[0],
   phraseIndex: 0,
   selectedGreekKey: "G1401",
@@ -70,6 +70,9 @@ const decisionStrongs = document.querySelector("#decision-strongs");
 const decisionRendering = document.querySelector("#decision-rendering");
 const decisionConfidence = document.querySelector("#decision-confidence");
 const decisionReason = document.querySelector("#decision-reason");
+const decisionApprovalAuthority = document.querySelector("#decision-approval-authority");
+const decisionApprovedBy = document.querySelector("#decision-approved-by");
+const decisionApprovedAt = document.querySelector("#decision-approved-at");
 const approveDecision = document.querySelector("#approve-decision");
 const translationEditor = document.querySelector("#translation-editor");
 const spanishUnits = document.querySelector("#spanish-units");
@@ -127,7 +130,7 @@ const defaultTranslationPhrases = [
     placeholder: "________",
     suffix: " de Dios",
     decisionStrong: "G1401",
-    investigationId: "INV-0001",
+    investigationId: "INV-56-0001",
     sourceTokenIds: ["n56001001001", "n56001001002", "n56001001003"],
     rv1909Text: "PABLO, siervo de Dios",
     bleText: "Pablo siervo de Dios",
@@ -146,7 +149,7 @@ const defaultTranslationPhrases = [
     placeholder: "________",
     suffix: " de Jesucristo",
     decisionStrong: "G652",
-    investigationId: "INV-0002",
+    investigationId: "INV-56-0002",
     sourceTokenIds: ["n56001001004", "n56001001005", "n56001001006", "n56001001007"],
     rv1909Text: "y apóstol de Jesucristo",
     bleText: "apóstol de Jesucristo",
@@ -166,7 +169,7 @@ const defaultTranslationPhrases = [
     placeholder: "________",
     suffix: " elegidos de Dios",
     decisionStrong: "G4102",
-    investigationId: "INV-0003",
+    investigationId: "INV-56-0003",
     sourceTokenIds: ["n56001001008", "n56001001009", "n56001001010", "n56001001011"],
     rv1909Text: "según la fe de los escogidos de Dios",
     bleText: "según fe elegidos de Dios",
@@ -231,7 +234,7 @@ const greekWordInfo = {
   G1401: {
     lemma: "δοῦλος",
     strongs: "G1401",
-    investigationId: "INV-0001",
+    investigationId: "INV-56-0001",
     approved: false,
     rendering: "siervo",
     source: "BLE",
@@ -241,7 +244,7 @@ const greekWordInfo = {
   G652: {
     lemma: "ἀπόστολος",
     strongs: "G652",
-    investigationId: "INV-0002",
+    investigationId: "INV-56-0002",
     approved: false,
     rendering: "apóstol",
     source: "BLE",
@@ -251,7 +254,7 @@ const greekWordInfo = {
   G4102: {
     lemma: "πίστις",
     strongs: "G4102",
-    investigationId: "INV-0003",
+    investigationId: "INV-56-0003",
     approved: false,
     rendering: "fe",
     source: "BLE",
@@ -607,6 +610,7 @@ const GATE_MARK = {
 
 function phrasePipelinePayload(phrase = currentPhrase()) {
   return {
+    book: state.bookId,
     reference: phrase.reference,
     greek: phraseGreekText(phrase),
     tokenRows: phrase.tokenRows || [],
@@ -1597,8 +1601,15 @@ function showGreekDecisionPanel(key, anchor) {
   positionDecisionPanel(anchor);
 }
 
+function decisionHasHumanApproval(decision) {
+  return decision?.status === "Approved"
+    && decision?.approvalAuthority === "human"
+    && Boolean(String(decision?.approvedBy || "").trim())
+    && Boolean(String(decision?.approvedAt || "").trim());
+}
+
 function applyDecisionToTranslation(decision) {
-  if (decision?.status !== "Approved" || !decision.preferredRendering) return;
+  if (!decisionHasHumanApproval(decision) || !decision.preferredRendering) return;
 
   const greekKey = greekKeyByStrong[decision.strongs]
     || linkInvestigationToWordInfo({
@@ -1639,14 +1650,16 @@ async function loadApprovedDecisions({ applyToText = !state.translationLoadedFro
       lemma: decision.lemma,
       strongs: decision.strongs,
       investigationId: id,
-      approved: decision.status === "Approved" && Boolean(decision.preferredRendering),
+      approved: decisionHasHumanApproval(decision) && Boolean(decision.preferredRendering),
       rendering: decision.preferredRendering || "",
-      source: decision.status === "Approved"
-        ? `Decision ${decision.version}`
-        : decision.status || "Draft"
+      source: decisionHasHumanApproval(decision)
+        ? `Human-approved decision ${decision.version}`
+        : decision.status === "Approved"
+          ? "Approved status missing human provenance"
+          : decision.status || "Draft"
     });
 
-    if (decision?.status === "Approved" && decision.preferredRendering) {
+    if (decisionHasHumanApproval(decision) && decision.preferredRendering) {
       decisions.push({ ...decision, investigationId: id });
       if (applyToText) {
         applyDecisionToTranslation({ ...decision, investigationId: id });
@@ -1881,7 +1894,14 @@ function fillDecisionForm(decision) {
   decisionRendering.value = decision.preferredRendering || "";
   decisionConfidence.value = decision.confidence || "Medium";
   decisionReason.value = decision.reason || "";
-  approveDecision.disabled = decision.status === "Approved";
+  decisionApprovalAuthority.value = decision.approvalAuthority || "";
+  decisionApprovedBy.value = decision.approvedBy || "";
+  decisionApprovedAt.value = decision.approvedAt || "";
+  const humanApproved = decisionHasHumanApproval(decision);
+  approveDecision.disabled = humanApproved || decision.status === "Superseded";
+  approveDecision.textContent = decision.status === "Approved" && !humanApproved
+    ? "Record Human Approval"
+    : "Approve";
   decisionStatus.disabled = decision.status === "Approved" || decision.status === "Superseded";
 }
 
@@ -1895,10 +1915,10 @@ function readDecisionForm() {
   };
 }
 
-async function saveDecision(action = "save") {
+async function saveDecision(action = "save", approval = {}) {
   const { decision } = await api(`/api/investigations/${state.investigation}/decision`, {
     method: "PUT",
-    body: JSON.stringify({ ...readDecisionForm(), action })
+    body: JSON.stringify({ ...readDecisionForm(), ...approval, action })
   });
   fillDecisionForm(decision);
   state.dirty = false;
@@ -1912,7 +1932,7 @@ async function returnToTranslation() {
   await saveCurrent();
   const decision = await loadApprovedDecisions({ applyToText: true });
   await saveTranslationDocument();
-  const approvedRendering = decision?.status === "Approved" ? decision.preferredRendering : "";
+  const approvedRendering = decisionHasHumanApproval(decision) ? decision.preferredRendering : "";
   const cursorPosition = approvedRendering
     ? getTranslationTargetEnd(approvedRendering)
     : state.translationReturn?.selectionEnd ?? getTranslationTargetEnd();
@@ -2124,7 +2144,7 @@ async function syncGatherSubjectFromInvestigation() {
     lemma,
     strongs,
     investigationId: state.investigation,
-    approved: decision?.status === "Approved",
+    approved: decisionHasHumanApproval(decision),
     rendering: decision?.preferredRendering || "",
     source: decision?.status || "Investigation"
   });
@@ -2270,8 +2290,17 @@ saveButton.addEventListener("click", () => {
 
 approveDecision.addEventListener("click", () => {
   void (async () => {
-    await saveDecision("approve");
-    prototypeMessage.textContent = "Decision approved.";
+    const approver = window.prompt(
+      "Type the human approver's name. This records final human approval for this investigation decision."
+    );
+    if (approver == null) return;
+    const approvedBy = approver.trim();
+    if (!approvedBy) {
+      prototypeMessage.textContent = "Human approver name is required.";
+      return;
+    }
+    await saveDecision("approve", { approvedBy, humanConfirmation: true });
+    prototypeMessage.textContent = "Human approval recorded.";
   })().catch(error => {
     prototypeMessage.textContent = error.message || "Decision approval error.";
   });
@@ -2519,7 +2548,7 @@ openGateInvestigationButton.addEventListener("click", () => {
   const lemma = openGateInvestigationButton.dataset.blockedLemma || "";
   const strongs = openGateInvestigationButton.dataset.blockedStrongs || "";
   if (!lemma && !strongs) {
-    void openInvestigation(state.investigation || "INV-0003");
+    void openInvestigation(state.investigation || "INV-56-0003");
     return;
   }
   void createInvestigationFromLemma({
@@ -2652,8 +2681,8 @@ async function openInitialRoute() {
 }
 
 function readInvestigationIdFromHash() {
-  const match = window.location.hash.match(/^#investigation\/(INV-\d{4})$/);
-  return match?.[1] || "INV-0001";
+  const match = window.location.hash.match(/^#investigation\/(INV-\d{2}-\d{4})$/);
+  return match?.[1] || state.investigation;
 }
 
 window.addEventListener("hashchange", () => {

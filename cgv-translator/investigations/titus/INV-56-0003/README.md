@@ -1,4 +1,4 @@
-# Investigation 0004
+# Investigation INV-56-0003
 
 ## Origin
 
@@ -12,17 +12,17 @@ Titus
 
 Reference
 
-Titus 1:6
+Titus 1:1
 
 Clause
 
-εἴ τίς ἐστιν ἀνέγκλητος μιᾶς γυναικὸς ἀνήρ τέκνα ἔχων πιστά μὴ ἐν κατηγορίᾳ ἀσωτίας ἢ ἀνυπότακτα
+κατὰ πίστιν ἐκλεκτῶν θεοῦ
 
 ---
 
 ## Why this investigation exists
 
-Translation paused because the translator chose to investigate the Greek lemma ἀνυπότακτος.
+Translation paused because the translator chose to investigate the Greek lemma πίστις (G4102).
 
 ---
 
@@ -40,7 +40,7 @@ The biblical text.
 
 ## Primary Subject
 
-ἀνυπότακτος
+G4102 — πίστις
 
 ---
 

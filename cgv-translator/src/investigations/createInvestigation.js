@@ -1,5 +1,6 @@
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { findBook } from "../data/bookCatalog.js";
 
 function todayIsoDate() {
   return new Date().toLocaleDateString("en-CA", { timeZone: "America/La_Paz" });
@@ -47,9 +48,31 @@ function bookFromReference(reference = "") {
   return match ? match[1].trim() : "Titus";
 }
 
+const INVESTIGATION_ID_RE = /^INV-(\d{2})-(\d{4})$/;
+
+export function parseInvestigationId(id = "") {
+  const match = String(id).match(INVESTIGATION_ID_RE);
+  if (!match) return null;
+  return {
+    bookNumber: Number(match[1]),
+    sequence: Number(match[2])
+  };
+}
+
+export function formatInvestigationId(bookNumber, sequence) {
+  const book = Number(bookNumber);
+  const item = Number(sequence);
+  if (!Number.isInteger(book) || book < 1 || book > 66) {
+    throw new Error("canonical book number must be an integer from 1 through 66");
+  }
+  if (!Number.isInteger(item) || item < 1 || item > 9999) {
+    throw new Error("investigation sequence must be an integer from 1 through 9999");
+  }
+  return `INV-${String(book).padStart(2, "0")}-${String(item).padStart(4, "0")}`;
+}
+
 function investigationNumber(id = "") {
-  const match = String(id).match(/^INV-(\d{4})$/);
-  return match ? Number(match[1]) : 0;
+  return parseInvestigationId(id)?.sequence || 0;
 }
 
 function parseDecisionVersions(markdown) {
@@ -87,27 +110,17 @@ function parsePrimarySubject(primary = "") {
 export async function listInvestigationIds(investigationsDir) {
   const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
   return entries
-    .filter(entry => entry.isDirectory() && /^INV-\d{4}$/.test(entry.name))
+    .filter(entry => entry.isDirectory() && INVESTIGATION_ID_RE.test(entry.name))
     .map(entry => entry.name)
     .sort();
 }
 
-async function listAllInvestigationIds(investigationsDir) {
-  const ids = new Set(await listInvestigationIds(investigationsDir));
-  const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
-  for (const entry of entries) {
-    if (!entry.isDirectory() || /^INV-\d{4}$/.test(entry.name)) continue;
-    for (const id of await listInvestigationIds(join(investigationsDir, entry.name))) {
-      ids.add(id);
-    }
-  }
-  return [...ids].sort();
-}
-
-export async function allocateNextInvestigationId(investigationsDir) {
-  const ids = await listAllInvestigationIds(investigationsDir);
-  const next = Math.max(0, ...ids.map(investigationNumber)) + 1;
-  return `INV-${String(next).padStart(4, "0")}`;
+export async function allocateNextInvestigationId(bookInvestigationsDir, bookNumber) {
+  const canonicalBookNumber = Number(bookNumber);
+  const ids = await listInvestigationIds(bookInvestigationsDir);
+  const localIds = ids.filter(id => parseInvestigationId(id)?.bookNumber === canonicalBookNumber);
+  const next = Math.max(0, ...localIds.map(investigationNumber)) + 1;
+  return formatInvestigationId(canonicalBookNumber, next);
 }
 
 export async function findInvestigationByLemma(investigationsDir, { lemma = "", strongs = "", language = "" } = {}) {
@@ -155,13 +168,12 @@ function buildScaffold({
   language
 }) {
   const date = todayIsoDate();
-  const number = id.replace(/^INV-/u, "");
   const subject = [strongs, lemma].filter(Boolean).join(" — ") || lemma;
   const clauseText = clause || surface || lemma;
   const bleNote = ble || "—";
   const languageLabel = sourceLanguageLabel(language);
 
-  const readme = `# Investigation ${number}
+  const readme = `# Investigation ${id}
 
 ## Origin
 
@@ -262,6 +274,9 @@ Lemma: ${lemma}
 Strong's: ${strongs}
 Preferred Rendering: 
 Confidence: 
+Approval Authority: 
+Approved By: 
+Approved At: 
 
 ### Reason
 
@@ -296,7 +311,7 @@ No policy has been established yet.
 
 ## ${date}
 
-Investigation created from ${reference || "translator request"} for ${subject}.
+Investigation ${id} created from ${reference || "translator request"} for ${subject}.
 `;
 
   const evidenceReadme = `# Evidence
@@ -364,9 +379,13 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
   if (!/^[a-z0-9][a-z0-9-]*$/.test(bookId)) {
     throw new Error("book id is required for a book-owned investigation");
   }
-  const book = String(body.bookLabel || "").trim() || bookFromReference(reference);
+  const bookInfo = findBook(bookId);
+  if (!bookInfo) {
+    throw new Error(`unknown Translator book: ${bookId}`);
+  }
+  const book = String(body.bookLabel || "").trim() || bookInfo.label;
   const investigationsDir = join(rootDir, "investigations");
-  const bookInvestigationsDir = join(investigationsDir, bookId);
+  const bookInvestigationsDir = join(investigationsDir, bookInfo.id);
 
   const existing = await findInvestigationByLemma(bookInvestigationsDir, { lemma, strongs, language });
   if (existing && body.force !== true) {
@@ -378,11 +397,11 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
       strongs: existing.strongs || strongs,
       language,
       status: existing.status || "Draft",
-      book: bookId
+      book: bookInfo.id
     };
   }
 
-  const id = await allocateNextInvestigationId(investigationsDir);
+  const id = await allocateNextInvestigationId(bookInvestigationsDir, bookInfo.number);
   const investigationDir = join(bookInvestigationsDir, id);
   const files = buildScaffold({
     id,
@@ -411,6 +430,6 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
     language,
     status: "Draft",
     reference,
-    book: bookId
+    book: bookInfo.id
   };
 }

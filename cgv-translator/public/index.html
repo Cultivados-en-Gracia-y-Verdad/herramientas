@@ -228,6 +228,18 @@
                     <option>Low</option>
                   </select>
                 </label>
+                <label>
+                  Approval Authority
+                  <input id="decision-approval-authority" type="text" readonly />
+                </label>
+                <label>
+                  Approved By
+                  <input id="decision-approved-by" type="text" readonly />
+                </label>
+                <label>
+                  Approved At
+                  <input id="decision-approved-at" type="text" readonly />
+                </label>
               </div>
 
               <label class="decision-rendering-field">
@@ -241,6 +253,7 @@
               </label>
 
               <div class="decision-actions">
+                <p>Final investigation approval must be explicitly human initiated and attributed.</p>
                 <button id="approve-decision" class="primary-action" type="button">Approve</button>
               </div>
             </section>

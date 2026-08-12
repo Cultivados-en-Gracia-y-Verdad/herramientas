@@ -1,4 +1,4 @@
-# Investigation 0008
+# Investigation INV-27-0001
 
 ## Origin
 
@@ -22,7 +22,7 @@ Clause
 
 ## Why this investigation exists
 
-Translation paused because the translator chose to investigate the Hebrew/Aramaic lemma עָלֶֽי/הָ (H5921).
+Translation paused because the translator chose to investigate the Hebrew/Aramaic lemma מֶלֶךְ (H4428).
 
 ---
 
@@ -40,7 +40,7 @@ The biblical text.
 
 ## Primary Subject
 
-H5921 — עָלֶֽי/הָ
+H4428 — מֶלֶךְ
 
 ---
 

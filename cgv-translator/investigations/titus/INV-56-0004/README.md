@@ -1,4 +1,4 @@
-# Investigation 0002
+# Investigation INV-56-0004
 
 ## Origin
 
@@ -12,17 +12,17 @@ Titus
 
 Reference
 
-Titus 1:1
+Titus 1:6
 
 Clause
 
-ἀπόστολος δὲ Ἰησοῦ Χριστοῦ
+εἴ τίς ἐστιν ἀνέγκλητος μιᾶς γυναικὸς ἀνήρ τέκνα ἔχων πιστά μὴ ἐν κατηγορίᾳ ἀσωτίας ἢ ἀνυπότακτα
 
 ---
 
 ## Why this investigation exists
 
-Translation paused because the translator chose to investigate the Greek lemma ἀπόστολος (G652).
+Translation paused because the translator chose to investigate the Greek lemma ἀνυπότακτος.
 
 ---
 
@@ -40,7 +40,7 @@ The biblical text.
 
 ## Primary Subject
 
-G652 — ἀπόστολος
+ἀνυπότακτος
 
 ---
 

@@ -127,19 +127,26 @@ function parseDecisionVersions(markdown) {
       strongs: fields["strong's"] || fields.strongs || "",
       preferredRendering: fields["preferred rendering"] || "",
       confidence: fields.confidence || "",
+      approvalAuthority: fields["approval authority"] || "",
+      approvedBy: fields["approved by"] || "",
+      approvedAt: fields["approved at"] || "",
       reason: reasonMatch ? reasonMatch[1].trim() : ""
     };
   });
 }
 
-export async function loadLemmaPolicyIndex(rootDir) {
-  const investigationsDir = join(rootDir, "investigations");
+export async function loadLemmaPolicyIndex(rootDir, bookId) {
+  const canonicalBookId = String(bookId || "").trim().toLowerCase();
+  if (!/^[a-z0-9][a-z0-9-]*$/.test(canonicalBookId)) {
+    throw new Error("book id is required for investigation policy lookup");
+  }
+  const investigationsDir = join(rootDir, "investigations", canonicalBookId);
   const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
   const approved = [];
   const openInvestigations = [];
 
   for (const entry of entries) {
-    if (!entry.isDirectory() || !/^INV-\d{4}$/.test(entry.name)) continue;
+    if (!entry.isDirectory() || !/^INV-\d{2}-\d{4}$/.test(entry.name)) continue;
     const markdown = await readFile(join(investigationsDir, entry.name, "decision.md"), "utf8").catch(() => "");
     const versions = parseDecisionVersions(markdown);
     const latest = versions.at(-1);
@@ -152,11 +159,18 @@ export async function loadLemmaPolicyIndex(rootDir) {
       preferredRendering: latest.preferredRendering || "",
       confidence: latest.confidence || "",
       reason: latest.reason || "",
-      status: latest.status || "Draft"
+      status: latest.status || "Draft",
+      approvalAuthority: latest.approvalAuthority || "",
+      approvedBy: latest.approvedBy || "",
+      approvedAt: latest.approvedAt || ""
     };
+    record.humanApproved = /^approved$/i.test(record.status)
+      && record.approvalAuthority === "human"
+      && Boolean(record.approvedBy)
+      && Boolean(record.approvedAt);
 
     openInvestigations.push(record);
-    if (/^approved$/i.test(record.status) && record.lemma && record.preferredRendering) {
+    if (record.humanApproved && record.lemma && record.preferredRendering) {
       approved.push(record);
     }
   }
@@ -164,8 +178,8 @@ export async function loadLemmaPolicyIndex(rootDir) {
   return { approved, openInvestigations };
 }
 
-export async function loadApprovedLemmaPolicies(rootDir) {
-  const { approved } = await loadLemmaPolicyIndex(rootDir);
+export async function loadApprovedLemmaPolicies(rootDir, bookId) {
+  const { approved } = await loadLemmaPolicyIndex(rootDir, bookId);
   return approved;
 }
 
@@ -247,7 +261,7 @@ function analyzeLemmaGate(tokenRows, policies, openInvestigations = []) {
     const significant = isSignificantLemma(row);
     const policy = findPolicy(row, policies);
     const openInv = findOpenInvestigation(row, openInvestigations);
-    const openIsDraft = openInv && !/^approved$/i.test(openInv.status || "");
+    const openIsDraft = openInv && !openInv.humanApproved;
 
     let status = "not-applicable";
     let allowedRenderings = [];
@@ -1204,13 +1218,14 @@ export function applySlotPolishes(mechanicalDraft, polishes = []) {
 
 export async function analyzePhraseGates({
   rootDir,
+  bookId,
   reference,
   greek,
   tokenRows = [],
   rv1909Text = "",
   priorLbf = []
 }) {
-  const { approved, openInvestigations } = await loadLemmaPolicyIndex(rootDir);
+  const { approved, openInvestigations } = await loadLemmaPolicyIndex(rootDir, bookId);
   const lemma = analyzeLemmaGate(tokenRows, approved, openInvestigations);
   const morphology = analyzeMorphologyGate(tokenRows, lemma);
   const immediateContext = analyzeImmediateContextGate(tokenRows, greek);

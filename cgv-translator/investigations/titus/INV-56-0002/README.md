@@ -1,4 +1,4 @@
-# Investigation 0003
+# Investigation INV-56-0002
 
 ## Origin
 
@@ -16,13 +16,13 @@ Titus 1:1
 
 Clause
 
-κατὰ πίστιν ἐκλεκτῶν θεοῦ
+ἀπόστολος δὲ Ἰησοῦ Χριστοῦ
 
 ---
 
 ## Why this investigation exists
 
-Translation paused because the translator chose to investigate the Greek lemma πίστις (G4102).
+Translation paused because the translator chose to investigate the Greek lemma ἀπόστολος (G652).
 
 ---
 
@@ -40,7 +40,7 @@ The biblical text.
 
 ## Primary Subject
 
-G4102 — πίστις
+G652 — ἀπόστολος
 
 ---
 

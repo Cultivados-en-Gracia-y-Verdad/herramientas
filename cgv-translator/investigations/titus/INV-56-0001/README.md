@@ -1,4 +1,4 @@
-# Investigation 0001
+# Investigation INV-56-0001
 
 ## Origin
 

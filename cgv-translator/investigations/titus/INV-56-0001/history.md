@@ -94,3 +94,11 @@ Generated Lemma Profile v0.1 occurrence evidence for G1401 δοῦλος from cg
 ## 2026-07-19
 
 Generated Lemma Profile v0.1 occurrence evidence for G1401 δοῦλος from cgv-data.
+
+## 2026-08-12 — Investigation ID migration
+
+Legacy ID: INV-0001
+
+Canonical ID: INV-56-0001
+
+The investigation content and decision history were preserved; only its canonical identifier changed.

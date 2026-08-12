@@ -71,3 +71,11 @@ Generated occurrence evidence for G4102 πίστις from cgv-data.
 ## 2026-07-13
 
 Generated Lemma Profile v0.1 occurrence evidence for G4102 πίστις from cgv-data.
+
+## 2026-08-12 — Investigation ID migration
+
+Legacy ID: INV-0003
+
+Canonical ID: INV-56-0003
+
+The investigation content and decision history were preserved; only its canonical identifier changed.
