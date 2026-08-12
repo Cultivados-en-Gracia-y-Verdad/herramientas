@@ -1034,8 +1034,16 @@ async function saveTranslationDocument() {
   syncTranslationDocumentFromEditor();
   const phrase = currentPhrase();
   const previousSavedText = phrase.savedText || "";
-  phrase.savedText = phrase.workingText;
-  phrase.suggestionSource = phrase.workingText.trim() ? "lbf-approved" : "blank";
+  const previousSuggestionSource = phrase.suggestionSource || "";
+  const nextSavedText = phrase.workingText;
+  const spanishChanged = nextSavedText !== previousSavedText;
+
+  phrase.savedText = nextSavedText;
+  if (!nextSavedText.trim()) {
+    phrase.suggestionSource = "blank";
+  } else if (spanishChanged) {
+    phrase.suggestionSource = "lbf-preliminary";
+  }
   setPhraseSaveStatus("Saving...", "saving");
   state.translationSaving = true;
   try {
@@ -1055,6 +1063,7 @@ async function saveTranslationDocument() {
     renderVersePreview();
   } catch (error) {
     phrase.savedText = previousSavedText;
+    phrase.suggestionSource = previousSuggestionSource;
     renderVersePreview();
     throw error;
   } finally {
@@ -1484,7 +1493,7 @@ function applyDecisionToTranslation(decision) {
 }
 
 async function loadApprovedDecisions({ applyToText = !state.translationLoadedFromDisk } = {}) {
-  const { investigations } = await api("/api/investigations");
+  const { investigations } = await api(translationApiPath("/api/investigations"));
   const decisions = [];
 
   for (const id of investigations) {
@@ -1539,7 +1548,7 @@ async function fetchText(path) {
 }
 
 async function loadInvestigations() {
-  const { investigations } = await api("/api/investigations");
+  const { investigations } = await api(translationApiPath("/api/investigations"));
   investigationList.innerHTML = "";
 
   for (const id of investigations) {
@@ -2182,7 +2191,7 @@ async function createInvestigationFromLemma(payload = {}) {
   }
 
   const language = payload.language || sourceLanguageForToken(payload);
-  const result = await api("/api/investigations", {
+  const result = await api(translationApiPath("/api/investigations"), {
     method: "POST",
     body: JSON.stringify({
       lemma,
@@ -2192,7 +2201,7 @@ async function createInvestigationFromLemma(payload = {}) {
       clause: payload.clause || phraseGreekText(currentPhrase()),
       surface: payload.surface || "",
       ble: payload.ble || payload.rendering || "",
-      book: payload.book || ""
+      book: payload.book || state.bookId || ""
     })
   });
 

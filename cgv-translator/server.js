@@ -1,4 +1,5 @@
 import { createServer } from "node:http";
+import { existsSync, readdirSync } from "node:fs";
 import { appendFile, mkdir, readFile, readdir, stat, writeFile } from "node:fs/promises";
 import { basename, dirname, extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -284,7 +285,18 @@ function safeInvestigationPath(id) {
   if (!/^INV-\d{4}$/.test(id)) {
     throw new Error("Invalid investigation ID");
   }
-  return join(investigationsDir, id);
+
+  const legacy = join(investigationsDir, id);
+  if (existsSync(legacy)) return legacy;
+
+  const bookDirs = readdirSync(investigationsDir, { withFileTypes: true })
+    .filter(entry => entry.isDirectory() && !/^INV-\d{4}$/.test(entry.name));
+  for (const entry of bookDirs) {
+    const candidate = join(investigationsDir, entry.name, id);
+    if (existsSync(candidate)) return candidate;
+  }
+
+  throw new Error(`Investigation not found: ${id}`);
 }
 
 function safeTabFile(file) {
@@ -1366,19 +1378,27 @@ async function handleApi(request, response, url) {
 
   if (url.pathname === "/api/investigations") {
     if (request.method === "GET") {
-      const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
+      const bookId = bookIdFromRequest(url);
+      const bookDir = join(investigationsDir, bookId);
+      const entries = await readdir(bookDir, { withFileTypes: true }).catch(() => []);
       const investigations = entries
         .filter(entry => entry.isDirectory() && /^INV-\d{4}$/.test(entry.name))
         .map(entry => entry.name)
         .sort();
-      sendJson(response, 200, { investigations });
+      sendJson(response, 200, { book: bookId, investigations });
       return;
     }
 
     if (request.method === "POST") {
       try {
         const body = await readJsonBody(request);
-        const result = await createInvestigationFromLemma(rootDir, body);
+        const bookId = bookIdFromRequest(url, body);
+        const book = resolveBook(bookId);
+        const result = await createInvestigationFromLemma(rootDir, {
+          ...body,
+          book: bookId,
+          bookLabel: book.label
+        });
         sendJson(response, result.created ? 201 : 200, result);
       } catch (error) {
         sendJson(response, 400, { error: error.message || "Could not create investigation" });

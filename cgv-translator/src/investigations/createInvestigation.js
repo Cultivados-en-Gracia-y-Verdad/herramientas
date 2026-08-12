@@ -92,8 +92,20 @@ export async function listInvestigationIds(investigationsDir) {
     .sort();
 }
 
+async function listAllInvestigationIds(investigationsDir) {
+  const ids = new Set(await listInvestigationIds(investigationsDir));
+  const entries = await readdir(investigationsDir, { withFileTypes: true }).catch(() => []);
+  for (const entry of entries) {
+    if (!entry.isDirectory() || /^INV-\d{4}$/.test(entry.name)) continue;
+    for (const id of await listInvestigationIds(join(investigationsDir, entry.name))) {
+      ids.add(id);
+    }
+  }
+  return [...ids].sort();
+}
+
 export async function allocateNextInvestigationId(investigationsDir) {
-  const ids = await listInvestigationIds(investigationsDir);
+  const ids = await listAllInvestigationIds(investigationsDir);
   const next = Math.max(0, ...ids.map(investigationNumber)) + 1;
   return `INV-${String(next).padStart(4, "0")}`;
 }
@@ -348,10 +360,15 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
   const reference = String(body.reference || "").trim() || "Titus 1:1";
   const clause = String(body.clause || "").trim();
   const ble = String(body.ble || body.rendering || "").trim();
-  const book = String(body.book || "").trim() || bookFromReference(reference);
+  const bookId = String(body.book || "").trim().toLowerCase();
+  if (!/^[a-z0-9][a-z0-9-]*$/.test(bookId)) {
+    throw new Error("book id is required for a book-owned investigation");
+  }
+  const book = String(body.bookLabel || "").trim() || bookFromReference(reference);
   const investigationsDir = join(rootDir, "investigations");
+  const bookInvestigationsDir = join(investigationsDir, bookId);
 
-  const existing = await findInvestigationByLemma(investigationsDir, { lemma, strongs, language });
+  const existing = await findInvestigationByLemma(bookInvestigationsDir, { lemma, strongs, language });
   if (existing && body.force !== true) {
     return {
       created: false,
@@ -360,12 +377,13 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
       lemma: existing.lemma || lemma,
       strongs: existing.strongs || strongs,
       language,
-      status: existing.status || "Draft"
+      status: existing.status || "Draft",
+      book: bookId
     };
   }
 
   const id = await allocateNextInvestigationId(investigationsDir);
-  const investigationDir = join(investigationsDir, id);
+  const investigationDir = join(bookInvestigationsDir, id);
   const files = buildScaffold({
     id,
     lemma,
@@ -392,6 +410,7 @@ export async function createInvestigationFromLemma(rootDir, body = {}) {
     strongs,
     language,
     status: "Draft",
-    reference
+    reference,
+    book: bookId
   };
 }
