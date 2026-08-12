@@ -274,6 +274,9 @@ Lemma: ${lemma}
 Strong's: ${strongs}
 Preferred Rendering: 
 Confidence: 
+Scope: Occurrence
+Scope Reference: ${reference}
+Scope Condition:
 Approval Authority: 
 Approved By: 
 Approved At: 

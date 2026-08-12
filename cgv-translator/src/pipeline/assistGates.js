@@ -59,10 +59,12 @@ function buildTranslatePrompt({ analysis, rulesMarkdown, rv1909Text }) {
     .map(t =>
       `- ${t.greek} (${t.lemma}${t.strongs ? ` ${t.strongs}` : ""}): ${
         t.allowedRenderings?.length
-          ? `prefer ${t.allowedRenderings.join("/")}`
-          : t.status === "blocked"
-            ? "BLOCKED — no policy"
-            : "no approved policy yet"
+          ? `specific approved rendering ${t.allowedRenderings.join("/")} (${t.policyScope || "scoped"})`
+          : t.guidanceRendering
+            ? `book-default lexical guidance: ${t.guidanceRendering}; inflect/realize according to morphology and syntax`
+            : t.status === "blocked"
+              ? "BLOCKED — no applicable approved decision"
+              : "no applicable approved decision yet"
       }`
     )
     .join("\n");

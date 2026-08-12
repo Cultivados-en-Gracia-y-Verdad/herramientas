@@ -630,6 +630,9 @@ const decisionDefaults = {
   preferredRendering: "",
   confidence: "Medium",
   reason: "",
+  scope: "",
+  scopeReference: "",
+  scopeCondition: "",
   approvalAuthority: "",
   approvedBy: "",
   approvedAt: ""
@@ -674,6 +677,9 @@ function parseDecisionVersions(markdown) {
       strongs: readField("Strong's"),
       preferredRendering: readField("Preferred Rendering"),
       confidence: readField("Confidence") || "Medium",
+      scope: readField("Scope"),
+      scopeReference: readField("Scope Reference"),
+      scopeCondition: readField("Scope Condition"),
       approvalAuthority: readField("Approval Authority"),
       approvedBy: readField("Approved By"),
       approvedAt: readField("Approved At"),
@@ -692,6 +698,9 @@ Lemma: ${valueOrDash(version.lemma)}
 Strong's: ${valueOrDash(version.strongs)}
 Preferred Rendering: ${valueOrDash(version.preferredRendering)}
 Confidence: ${valueOrDash(version.confidence)}
+Scope: ${valueOrDash(version.scope)}
+Scope Reference: ${valueOrDash(version.scopeReference)}
+Scope Condition: ${valueOrDash(version.scopeCondition)}
 Approval Authority: ${valueOrDash(version.approvalAuthority)}
 Approved By: ${valueOrDash(version.approvedBy)}
 Approved At: ${valueOrDash(version.approvedAt)}
@@ -718,6 +727,9 @@ function sameDecisionContent(left, right) {
     "strongs",
     "preferredRendering",
     "confidence",
+    "scope",
+    "scopeReference",
+    "scopeCondition",
     "reason"
   ].every(key => normalizeDecisionValue(left[key]) === normalizeDecisionValue(right[key]));
 }
@@ -745,6 +757,9 @@ function decisionFromBody(body, fallback) {
     strongs: fallback.strongs || decisionDefaults.strongs,
     preferredRendering: normalizeDecisionValue(body.preferredRendering),
     confidence: ["High", "Medium", "Low"].includes(body.confidence) ? body.confidence : "Medium",
+    scope: ["Occurrence", "Construction", "Book Default"].includes(body.scope) ? body.scope : "",
+    scopeReference: normalizeDecisionValue(body.scopeReference),
+    scopeCondition: normalizeDecisionValue(body.scopeCondition),
     reason: normalizeDecisionValue(body.reason),
     approvalAuthority: normalizeDecisionValue(fallback.approvalAuthority),
     approvedBy: normalizeDecisionValue(fallback.approvedBy),
@@ -802,6 +817,18 @@ async function handleDecision(request, response, id) {
     const current = versions.at(-1);
     if (!normalizeDecisionValue(current.preferredRendering) || !normalizeDecisionValue(current.reason)) {
       sendJson(response, 400, { error: "Preferred Rendering and Reason are required before approval." });
+      return;
+    }
+    if (!["Occurrence", "Construction", "Book Default"].includes(current.scope)) {
+      sendJson(response, 400, { error: "Decision Scope is required before approval." });
+      return;
+    }
+    if (current.scope === "Occurrence" && !normalizeDecisionValue(current.scopeReference)) {
+      sendJson(response, 400, { error: "Occurrence scope requires Scope Reference." });
+      return;
+    }
+    if (current.scope === "Construction" && !normalizeDecisionValue(current.scopeCondition)) {
+      sendJson(response, 400, { error: "Construction scope requires Scope Condition." });
       return;
     }
     const approvedBy = normalizeDecisionValue(body.approvedBy);

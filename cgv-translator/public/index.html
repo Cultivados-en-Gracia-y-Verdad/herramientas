@@ -229,6 +229,23 @@
                   </select>
                 </label>
                 <label>
+                  Scope
+                  <select id="decision-scope">
+                    <option value="">Select scope…</option>
+                    <option>Occurrence</option>
+                    <option>Construction</option>
+                    <option>Book Default</option>
+                  </select>
+                </label>
+                <label>
+                  Scope Reference
+                  <input id="decision-scope-reference" type="text" autocomplete="off" placeholder="Daniel 1:1" />
+                </label>
+                <label>
+                  Scope Condition
+                  <input id="decision-scope-condition" type="text" autocomplete="off" placeholder="morph=HNcmsc; surface=מֶלֶךְ" />
+                </label>
+                <label>
                   Approval Authority
                   <input id="decision-approval-authority" type="text" readonly />
                 </label>
@@ -253,7 +270,7 @@
               </label>
 
               <div class="decision-actions">
-                <p>Final investigation approval must be explicitly human initiated and attributed.</p>
+                <p>Final investigation approval must be explicitly human initiated and attributed. Scope is part of what is approved.</p>
                 <button id="approve-decision" class="primary-action" type="button">Approve</button>
               </div>
             </section>

@@ -70,6 +70,9 @@ const decisionStrongs = document.querySelector("#decision-strongs");
 const decisionRendering = document.querySelector("#decision-rendering");
 const decisionConfidence = document.querySelector("#decision-confidence");
 const decisionReason = document.querySelector("#decision-reason");
+const decisionScope = document.querySelector("#decision-scope");
+const decisionScopeReference = document.querySelector("#decision-scope-reference");
+const decisionScopeCondition = document.querySelector("#decision-scope-condition");
 const decisionApprovalAuthority = document.querySelector("#decision-approval-authority");
 const decisionApprovedBy = document.querySelector("#decision-approved-by");
 const decisionApprovedAt = document.querySelector("#decision-approved-at");
@@ -1894,6 +1897,9 @@ function fillDecisionForm(decision) {
   decisionRendering.value = decision.preferredRendering || "";
   decisionConfidence.value = decision.confidence || "Medium";
   decisionReason.value = decision.reason || "";
+  decisionScope.value = decision.scope || "";
+  decisionScopeReference.value = decision.scopeReference || "";
+  decisionScopeCondition.value = decision.scopeCondition || "";
   decisionApprovalAuthority.value = decision.approvalAuthority || "";
   decisionApprovedBy.value = decision.approvedBy || "";
   decisionApprovedAt.value = decision.approvedAt || "";
@@ -1911,6 +1917,9 @@ function readDecisionForm() {
     effectiveDate: decisionEffectiveDate.value,
     preferredRendering: decisionRendering.value,
     confidence: decisionConfidence.value,
+    scope: decisionScope.value,
+    scopeReference: decisionScopeReference.value,
+    scopeCondition: decisionScopeCondition.value,
     reason: decisionReason.value
   };
 }
@@ -2276,6 +2285,9 @@ translationEditor.addEventListener("input", () => {
   decisionEffectiveDate,
   decisionRendering,
   decisionConfidence,
+  decisionScope,
+  decisionScopeReference,
+  decisionScopeCondition,
   decisionReason
 ].forEach(control => {
   control.addEventListener("input", () => {
@@ -2290,8 +2302,24 @@ saveButton.addEventListener("click", () => {
 
 approveDecision.addEventListener("click", () => {
   void (async () => {
+    const scope = decisionScope.value;
+    if (!scope) {
+      prototypeMessage.textContent = "Select the decision scope before approval.";
+      decisionScope.focus();
+      return;
+    }
+    if (scope === "Occurrence" && !decisionScopeReference.value.trim()) {
+      prototypeMessage.textContent = "Occurrence scope requires a reference.";
+      decisionScopeReference.focus();
+      return;
+    }
+    if (scope === "Construction" && !decisionScopeCondition.value.trim()) {
+      prototypeMessage.textContent = "Construction scope requires a condition.";
+      decisionScopeCondition.focus();
+      return;
+    }
     const approver = window.prompt(
-      "Type the human approver's name. This records final human approval for this investigation decision."
+      `Type the human approver's name. This approves the rendering and its ${scope} scope.`
     );
     if (approver == null) return;
     const approvedBy = approver.trim();

@@ -127,6 +127,9 @@ function parseDecisionVersions(markdown) {
       strongs: fields["strong's"] || fields.strongs || "",
       preferredRendering: fields["preferred rendering"] || "",
       confidence: fields.confidence || "",
+      scope: fields.scope || "",
+      scopeReference: fields["scope reference"] || "",
+      scopeCondition: fields["scope condition"] || "",
       approvalAuthority: fields["approval authority"] || "",
       approvedBy: fields["approved by"] || "",
       approvedAt: fields["approved at"] || "",
@@ -160,6 +163,9 @@ export async function loadLemmaPolicyIndex(rootDir, bookId) {
       confidence: latest.confidence || "",
       reason: latest.reason || "",
       status: latest.status || "Draft",
+      scope: latest.scope || "",
+      scopeReference: latest.scopeReference || "",
+      scopeCondition: latest.scopeCondition || "",
       approvalAuthority: latest.approvalAuthority || "",
       approvedBy: latest.approvedBy || "",
       approvedAt: latest.approvedAt || ""
@@ -240,27 +246,70 @@ export function explainRmac(code = "") {
   return raw;
 }
 
-function findPolicy(row, policies) {
+function policyMatchesLemma(row, policy) {
   const strongs = String(row.strongs || "").toUpperCase();
   const lemma = row.lemma || "";
-  return policies.find(item =>
-    (strongs && item.strongs && item.strongs.toUpperCase() === strongs)
-    || (lemma && item.lemma === lemma)
-  ) || null;
+  return Boolean(
+    (strongs && policy.strongs && policy.strongs.toUpperCase() === strongs)
+    || (lemma && policy.lemma === lemma)
+  );
 }
 
-function findOpenInvestigation(row, openInvestigations) {
-  return findPolicy(row, openInvestigations);
+function constructionConditionMatches(row, condition = "") {
+  const clauses = String(condition || "").split(";").map(item => item.trim()).filter(Boolean);
+  if (!clauses.length) return false;
+  const supported = {
+    morph: String(row.rmac || row.morph || ""),
+    surface: String(row.greek || row.surface || ""),
+    lemma: String(row.lemma || ""),
+    strongs: String(row.strongs || "").toUpperCase()
+  };
+  for (const clause of clauses) {
+    const match = clause.match(/^(morph|surface|lemma|strongs)=(.+)$/u);
+    if (!match) return false;
+    const [, key, expectedRaw] = match;
+    const expected = key === "strongs" ? expectedRaw.trim().toUpperCase() : expectedRaw.trim();
+    if (supported[key] !== expected) return false;
+  }
+  return true;
 }
 
-function analyzeLemmaGate(tokenRows, policies, openInvestigations = []) {
+function policyApplicability(policy, row, reference) {
+  if (!policyMatchesLemma(row, policy)) return null;
+  if (policy.scope === "Occurrence") {
+    return policy.scopeReference === reference ? { priority: 3, kind: "occurrence" } : null;
+  }
+  if (policy.scope === "Construction") {
+    return constructionConditionMatches(row, policy.scopeCondition)
+      ? { priority: 2, kind: "construction" }
+      : null;
+  }
+  if (policy.scope === "Book Default") return { priority: 1, kind: "book-default" };
+  return null;
+}
+
+function findPolicy(row, policies, reference) {
+  return policies
+    .map(policy => ({ policy, match: policyApplicability(policy, row, reference) }))
+    .filter(item => item.match)
+    .sort((a, b) => b.match.priority - a.match.priority)[0]?.policy || null;
+}
+
+function findOpenInvestigation(row, openInvestigations, reference) {
+  const scoped = openInvestigations.find(item => policyApplicability(item, row, reference));
+  if (scoped) return scoped;
+  // Legacy/unscoped drafts remain blocking for their lemma until a human assigns scope.
+  return openInvestigations.find(item => policyMatchesLemma(row, item) && !item.scope) || null;
+}
+
+function analyzeLemmaGate(tokenRows, policies, openInvestigations = [], reference = "") {
   const tokens = [];
   const blocked = [];
 
   for (const row of tokenRows) {
     const significant = isSignificantLemma(row);
-    const policy = findPolicy(row, policies);
-    const openInv = findOpenInvestigation(row, openInvestigations);
+    const policy = findPolicy(row, policies, reference);
+    const openInv = findOpenInvestigation(row, openInvestigations, reference);
     const openIsDraft = openInv && !openInv.humanApproved;
 
     let status = "not-applicable";
@@ -270,7 +319,10 @@ function analyzeLemmaGate(tokenRows, policies, openInvestigations = []) {
     if (significant) {
       if (policy) {
         status = "resolved";
-        allowedRenderings = [policy.preferredRendering].filter(Boolean);
+        // Book Default is lexical guidance, not a hard exact-string constraint.
+        allowedRenderings = policy.scope === "Book Default"
+          ? []
+          : [policy.preferredRendering].filter(Boolean);
         policySource = `investigation/${policy.investigationId}`;
       } else if (openIsDraft) {
         // Investigation stop rule: pause when a live investigation is unresolved.
@@ -297,6 +349,8 @@ function analyzeLemmaGate(tokenRows, policies, openInvestigations = []) {
       policySource,
       investigationId: policy?.investigationId || openInv?.investigationId || null,
       confidence: policy?.confidence || (status === "provisional" ? "Low" : null),
+      policyScope: policy?.scope || null,
+      guidanceRendering: policy?.preferredRendering || null,
       status
     };
     tokens.push(token);
@@ -1226,7 +1280,7 @@ export async function analyzePhraseGates({
   priorLbf = []
 }) {
   const { approved, openInvestigations } = await loadLemmaPolicyIndex(rootDir, bookId);
-  const lemma = analyzeLemmaGate(tokenRows, approved, openInvestigations);
+  const lemma = analyzeLemmaGate(tokenRows, approved, openInvestigations, reference);
   const morphology = analyzeMorphologyGate(tokenRows, lemma);
   const immediateContext = analyzeImmediateContextGate(tokenRows, greek);
   const generalContext = await analyzeGeneralContextGate({
