@@ -1,0 +1,63 @@
+name: Translator readiness once
+
+on:
+  push:
+    branches:
+      - workflow/daniel-regression
+    paths:
+      - .github/workflows/translator-readiness-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: workflow/daniel-regression
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Python test dependency
+        run: python -m pip install --disable-pip-version-check pyyaml
+
+      - name: Apply exact Save authority patch
+        working-directory: cgv-translator
+        run: npm run fix:save-authority
+
+      - name: Daniel golden regression
+        working-directory: cgv-translator
+        run: npm run regression:daniel
+
+      - name: Alignment invalidation regression
+        working-directory: cgv-translator
+        run: npm run regression:alignment
+
+      - name: Zechariah bootstrap dry run
+        working-directory: cgv-translator
+        run: npm run bootstrap:ot -- zechariah --dry-run
+
+      - name: Verify patch scope
+        run: |
+          git diff --exit-code -- . ':(exclude)cgv-translator/public/main.js'
+          test -n "$(git diff -- cgv-translator/public/main.js)"
+
+      - name: Commit Save authority fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cgv-translator/public/main.js
+          git commit -m "translator: enforce external G0A save authority"
+          git push origin HEAD:workflow/daniel-regression
