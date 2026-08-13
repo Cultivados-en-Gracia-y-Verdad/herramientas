@@ -9,23 +9,25 @@ SPEC.loader.exec_module(LEX)
 
 
 class LexicalEditTests(unittest.TestCase):
-    def test_book_scope_is_targeted_and_reopens_changed_phrase(self):
+    def test_book_scope_changes_every_whole_word_occurrence(self):
         phrases = [
             {"reference": "Book 1:1", "phraseIndex": 0, "spanish": "bronce", "tokenRows": [{"strongs": "H1", "lemma": "lemma"}]},
             {"reference": "Book 1:2", "phraseIndex": 1, "spanish": "metal", "suggestionSource": "lbf-approved", "approval": {"status": "approved"}, "tokenRows": [{"strongs": "H1", "lemma": "lemma"}]},
-            {"reference": "Book 1:3", "phraseIndex": 2, "spanish": "metal", "tokenRows": [{"strongs": "H2", "lemma": "other"}]},
+            {"reference": "Book 1:3", "phraseIndex": 2, "spanish": "metal", "suggestionSource": "lbf-approved", "approval": {"status": "approved"}, "tokenRows": [{"strongs": "H2", "lemma": "other"}]},
         ]
         plan = LEX.build_plan(phrases, ("H1", "lemma"), "metal", "bronce")
         self.assertTrue(plan["safe"])
         self.assertEqual(plan["totalSourceOccurrences"], 2)
-        self.assertEqual(plan["phrasesChanged"], 1)
+        self.assertEqual(plan["terminologyOccurrences"], 3)
+        self.assertEqual(plan["phrasesChanged"], 2)
         updated = LEX.apply_plan({"phrases": phrases}, plan)
-        self.assertEqual(updated["phrases"][1]["spanish"], "bronce")
+        self.assertEqual([row["spanish"] for row in updated["phrases"]], ["bronce", "bronce", "bronce"])
         self.assertEqual(updated["phrases"][1]["suggestionSource"], "lbf-preliminary")
+        self.assertEqual(updated["phrases"][2]["suggestionSource"], "lbf-preliminary")
         self.assertEqual(updated["phrases"][1]["approval"]["status"], "invalidated")
-        self.assertEqual(updated["phrases"][2]["spanish"], "metal")
+        self.assertEqual(updated["phrases"][2]["approval"]["status"], "invalidated")
 
-    def test_ambiguous_mapping_fails_closed(self):
+    def test_no_old_rendering_fails_closed(self):
         phrases = [{"reference": "Book 1:1", "phraseIndex": 0, "spanish": "otra cosa", "tokenRows": [{"strongs": "H1", "lemma": "lemma"}]}]
         plan = LEX.build_plan(phrases, ("H1", "lemma"), "metal", "bronce")
         self.assertFalse(plan["safe"])
