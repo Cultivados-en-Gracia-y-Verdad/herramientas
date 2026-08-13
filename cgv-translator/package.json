@@ -10,6 +10,7 @@
     "test:all": "npm test && npm run test:workflow",
     "start": "node server.js",
     "workflow:book": "python3 scripts/book_workflow.py",
+    "edit:lexical": "python3 scripts/book_lexical_edit.py",
     "fix:save-authority": "python3 scripts/apply_save_authority_patch.py",
     "finalize:investigations": "python3 scripts/finalize_investigation_workflow.py",
     "regression:daniel": "python3 scripts/regression_daniel.py",
