@@ -19,6 +19,7 @@ except ImportError as exc:  # gate0 tooling already depends on PyYAML
     raise SystemExit("PyYAML is required. Install cgv-translator/gate0/requirements.txt") from exc
 
 from render_lbf_release import render_release_bytes
+from workflow_queues import alignment_errors
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,15 +36,13 @@ MAIN_JS = ROOT / "public" / "main.js"
 EXPECTED = {
     "phrases_sha256": "f5c7ce0d9d5deac3a305de2a11c997751100449e5c5ade13e40a96f7f8f189f7",
     "spine_sha256": "40f53bf5f46fad84e28d796b3b3b7527f8420d47707af311a5959993dd8592c6",
-    # This hash belongs to a historical export recorded by a producer audit
-    # whose overall producer_status was FAIL. It is retained only as continuity
-    # evidence that the rendered Spanish body has not drifted.
     "legacy_export_sha256": "535faa52140083da58afd831de1b61be05851da61bddec0073eda68e91d1e390",
     "phrases": 357,
     "source_tokens": 6035,
     "hebrew_tokens": 2333,
     "aramaic_tokens": 3702,
-    "g0b_items": 1181,
+    "alignment_units": 5024,
+    "legacy_g0b_items": 1181,
 }
 
 
@@ -94,12 +93,11 @@ def check_save_cannot_self_approve() -> None:
 
 
 def check_book_artifacts() -> tuple[dict, dict, dict]:
-    for path in (PHRASES, SPINE, REVERSE, FINAL_G0B_REVERSE, G0A_REPORT, G0B_RESULTS):
+    for path in (PHRASES, SPINE, REVERSE, G0A_REPORT):
         check(path.is_file(), f"Required artifact exists: {path.relative_to(ROOT)}")
 
     check(sha256_file(PHRASES) == EXPECTED["phrases_sha256"], "Daniel phrase artifact matches verified checksum")
     check(sha256_file(SPINE) == EXPECTED["spine_sha256"], "Daniel OSHB spine matches audited checksum")
-    check(REVERSE.read_bytes() == FINAL_G0B_REVERSE.read_bytes(), "Current reverse links are exactly the final G0B alignment artifact")
 
     phrase_doc = load_json(PHRASES)
     spine_doc = load_json(SPINE)
@@ -126,6 +124,36 @@ def check_book_artifacts() -> tuple[dict, dict, dict]:
     }
     check(language_counts["he"] == EXPECTED["hebrew_tokens"], "Daniel Hebrew token count is 2333")
     check(language_counts["arc"] == EXPECTED["aramaic_tokens"], "Daniel Aramaic token count is 3702")
+
+    structural_errors = alignment_errors("daniel", spine_doc, phrase_doc, reverse_doc)
+    if structural_errors:
+        preview = "; ".join(structural_errors[:8])
+        raise RegressionFailure(f"Current Daniel reverse links fail canonical structural validation: {preview}")
+    check(True, "Current Daniel reverse links pass canonical structural validation")
+
+    links = reverse_doc.get("links", [])
+    check(len(links) == EXPECTED["phrases"], "Daniel production alignment covers all 357 verses")
+    unit_count = sum(len(link.get("units", [])) for link in links)
+    check(unit_count == EXPECTED["alignment_units"], "Daniel production alignment has 5024 granular units")
+
+    phrase_by_ref = {str(row.get("reference")): row for row in phrases}
+    whole_verse_collapses = 0
+    for link in links:
+        units = link.get("units", [])
+        if len(units) != 1:
+            continue
+        ref = str(link.get("reference") or "")
+        row = phrase_by_ref.get(ref, {})
+        unit = units[0]
+        spanish = str(row.get("spanish") or "")
+        if (
+            str(unit.get("surface") or "") == spanish
+            and unit.get("charStart") == 0
+            and unit.get("charEnd") == len(spanish)
+            and set(map(str, unit.get("sourceTokenIds", []))) == set(map(str, row.get("sourceTokenIds", [])))
+        ):
+            whole_verse_collapses += 1
+    check(whole_verse_collapses == 0, "Daniel production alignment has no single-unit whole-verse collapses")
 
     return phrase_doc, spine_doc, reverse_doc
 
@@ -175,54 +203,31 @@ def check_g0a(phrase_doc: dict, spine_doc: dict) -> None:
     check(preserved == 0 and reset == 1, "Changed review evidence invalidates only the affected G0A approval")
 
 
-def check_g0b(reverse_doc: dict) -> None:
-    """Validate Daniel's frozen legacy G0B certification without rewriting history.
+def check_historical_g0b_evidence() -> None:
+    """Retain Daniel's old G0B packet as history, never as current authority."""
+    check(FINAL_G0B_REVERSE.is_file(), "Historical final-G0B alignment snapshot is retained as evidence")
+    check(G0B_RESULTS.is_file(), "Historical final external G0B result packet is retained as evidence")
+    check(REVERSE.read_bytes() != FINAL_G0B_REVERSE.read_bytes(), "Production alignment is no longer frozen to the historical final-G0B snapshot")
 
-    Daniel predates evidence-addressable G0B promotion. Its producer artifact retains
-    seed/gloss metadata even though an external verifier certified the frozen final
-    alignment snapshot. The historical authority is therefore the combination of:
-      1. current reverse-links bytes == frozen final-g0b snapshot; and
-      2. the final external result packet records every historical review item VERIFIED.
-
-    Targeted invalidation mechanics are tested separately by
-    regression_alignment_invalidation.py using an in-memory post-promotion state.
-    """
     results = load_yaml(G0B_RESULTS)
     packet = results.get("packet", {})
     items = results.get("items", [])
 
-    check(packet.get("gate") == "G0B_ALIGNMENT_VERIFICATION", "Final result packet identifies external G0B")
-    check(len(items) == EXPECTED["g0b_items"], "Final external G0B result contains 1181 review items")
-    check(all(item.get("decision") == "VERIFIED" for item in items), "All final external G0B items are VERIFIED")
+    check(packet.get("gate") == "G0B_ALIGNMENT_VERIFICATION", "Historical result packet identifies external G0B")
+    check(len(items) == EXPECTED["legacy_g0b_items"], "Historical external G0B result contains 1181 review items")
+    check(all(item.get("decision") == "VERIFIED" for item in items), "All historical external G0B items were VERIFIED")
 
     item_ids = [item.get("id") for item in items]
-    check(all(item_ids), "Every final external G0B result has an item id")
-    check(len(item_ids) == len(set(item_ids)), "Final external G0B result ids are unique")
-
-    links = reverse_doc.get("links", [])
-    check(bool(links), "Current Daniel reverse-link artifact is non-empty")
-
-    retains_seed_metadata = any(
-        link.get("status") != "verified"
-        or any(
-            str(unit.get("method") or "") in {"gloss-match", "seed"}
-            or unit.get("status") != "verified"
-            for unit in link.get("units", [])
-        )
-        for link in links
-    )
-    check(retains_seed_metadata, "Historical Daniel G0B artifact retains producer metadata rather than self-certifying")
-    print("INFO  Daniel G0B is a legacy frozen-artifact certification; verification metadata was not promoted into reverse-links.")
+    check(all(item_ids), "Every historical external G0B result has an item id")
+    check(len(item_ids) == len(set(item_ids)), "Historical external G0B result ids are unique")
+    print("INFO  Historical Daniel G0B evidence does not certify the current 5024-unit production alignment.")
 
 
 def check_render_continuity(phrase_doc: dict) -> None:
     candidate = render_release_bytes(phrase_doc)
     candidate_sha = sha256_bytes(candidate)
     print(f"INFO  Daniel continuity render SHA-256: {candidate_sha}")
-    check(
-        candidate_sha == EXPECTED["legacy_export_sha256"],
-        "Rendered Daniel text matches the historical export bytes used for continuity evidence",
-    )
+    check(candidate_sha == EXPECTED["legacy_export_sha256"], "Rendered Daniel text matches the historical export bytes used for continuity evidence")
     print("INFO  Historical export continuity is not release approval; Daniel still requires the full book release gate.")
 
 
@@ -231,9 +236,9 @@ def main() -> int:
         print("Daniel CGV/LBF regression")
         print(f"root: {ROOT}")
         check_save_cannot_self_approve()
-        phrase_doc, spine_doc, reverse_doc = check_book_artifacts()
+        phrase_doc, spine_doc, _reverse_doc = check_book_artifacts()
         check_g0a(phrase_doc, spine_doc)
-        check_g0b(reverse_doc)
+        check_historical_g0b_evidence()
         check_render_continuity(phrase_doc)
     except RegressionFailure as exc:
         print(f"FAIL  {exc}", file=sys.stderr)
