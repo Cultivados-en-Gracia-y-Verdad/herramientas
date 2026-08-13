@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
-"""Preview/apply a book-scoped lexical rendering change without creating approval."""
+"""Preview/apply a book-wide Spanish terminology change safely.
+
+A Book Default edit means exactly that: every whole-word occurrence of the selected
+Spanish rendering in the book is part of the operation. The source token selected at
+``--reference`` is retained as provenance, but incomplete source metadata may never
+silently narrow a book-wide edit.
+
+When applying, this command also re-synchronizes reverse-link surfaces and character
+spans without changing sourceTokenIds. Only translation approval is invalidated;
+source-token alignment evidence is preserved because the mapping itself did not change.
+"""
 from __future__ import annotations
 
 import argparse
@@ -37,16 +47,26 @@ def rows(doc: dict) -> list[dict]:
     return value
 
 
-def find_phrase_file(root: Path, book: str) -> Path:
-    candidates = [
-        root / "translations" / "oshb-spine" / book / f"{book}-phrases.json",
-        root / "translations" / "tr-spine" / book / f"{book}-phrases-tr.json",
-        root / "translations" / f"{book}-phrases.json",
+def find_book_file(root: Path, book: str, suffixes: list[str]) -> Path:
+    bases = [
+        root / "translations" / "oshb-spine" / book,
+        root / "translations" / "tr-spine" / book,
+        root / "translations",
     ]
-    for path in candidates:
-        if path.is_file():
-            return path
-    raise FileNotFoundError(f"phrase artifact not found for {book}")
+    for base in bases:
+        for suffix in suffixes:
+            path = base / suffix
+            if path.is_file():
+                return path
+    raise FileNotFoundError(f"book artifact not found for {book}: {', '.join(suffixes)}")
+
+
+def find_phrase_file(root: Path, book: str) -> Path:
+    return find_book_file(root, book, [f"{book}-phrases.json", f"{book}-phrases-tr.json"])
+
+
+def find_reverse_file(root: Path, book: str) -> Path:
+    return find_book_file(root, book, [f"{book}-reverse-links.json"])
 
 
 def find_target(phrases: list[dict], reference: str, surface: str) -> tuple[str, str, str]:
@@ -69,35 +89,45 @@ def find_target(phrases: list[dict], reference: str, surface: str) -> tuple[str,
 
 
 def build_plan(phrases: list[dict], target: tuple[str, str], old: str, new: str) -> dict:
+    """Plan a true book-wide rendering change.
+
+    Every whole-word old/new occurrence is included. ``sourceCount`` remains diagnostic
+    provenance only; it can never silently exclude another Spanish occurrence.
+    """
+    if old == new:
+        raise ValueError("--from and --to must differ")
     items = []
-    total = mapped = 0
     old_pattern = pattern(old)
     new_pattern = pattern(new)
+    source_total = 0
     for phrase in phrases:
         token_rows = phrase.get("tokenRows", []) if isinstance(phrase.get("tokenRows"), list) else []
         source_count = sum(1 for token in token_rows if matches(token, target))
-        if not source_count:
-            continue
-        total += source_count
+        source_total += source_count
         spanish = str(phrase.get("spanish") or "")
         old_count = len(old_pattern.findall(spanish))
         new_count = len(new_pattern.findall(spanish))
-        safe = old_count + new_count == source_count
-        if safe:
-            mapped += source_count
-        proposed = old_pattern.sub(new, spanish) if safe else spanish
+        if not old_count and not new_count:
+            continue
+        proposed = old_pattern.sub(new, spanish)
         items.append({
             "reference": phrase.get("reference"),
             "phraseIndex": phrase.get("phraseIndex"),
             "sourceCount": source_count,
-            "safe": safe,
+            "oldCount": old_count,
+            "newCount": new_count,
             "before": spanish,
             "after": proposed,
-            "changed": safe and proposed != spanish,
+            "changed": proposed != spanish,
         })
+    old_total = sum(item["oldCount"] for item in items)
+    new_total = sum(item["newCount"] for item in items)
     return {
-        "safe": total > 0 and mapped == total,
-        "totalSourceOccurrences": total,
+        "safe": bool(items) and old_total > 0,
+        "totalSourceOccurrences": source_total,
+        "terminologyOccurrences": old_total + new_total,
+        "oldOccurrences": old_total,
+        "newOccurrences": new_total,
         "phrasesAffected": len(items),
         "phrasesChanged": sum(bool(item["changed"]) for item in items),
         "items": items,
@@ -106,9 +136,10 @@ def build_plan(phrases: list[dict], target: tuple[str, str], old: str, new: str)
 
 def apply_plan(doc: dict, plan: dict) -> dict:
     if not plan.get("safe"):
-        raise ValueError("refusing partial book-wide edit")
+        raise ValueError("refusing incomplete book-wide edit")
     result = deepcopy(doc)
     by_index = {int(item["phraseIndex"]): item for item in plan["items"] if item["changed"]}
+    now = datetime.now(timezone.utc).isoformat()
     for phrase in rows(result):
         item = by_index.get(int(phrase.get("phraseIndex", -1)))
         if not item:
@@ -118,10 +149,96 @@ def apply_plan(doc: dict, plan: dict) -> dict:
         phrase["approval"] = {
             "status": "invalidated",
             "authority": "none",
-            "invalidatedBecause": "spanish-changed",
-            "invalidatedAt": datetime.now(timezone.utc).isoformat(),
+            "invalidatedBecause": "book-wide-spanish-rendering-changed",
+            "invalidatedAt": now,
         }
     return result
+
+
+def _units_match(text: str, units: list[dict]) -> bool:
+    for unit in units:
+        start, end = unit.get("charStart"), unit.get("charEnd")
+        surface = str(unit.get("surface") or "")
+        if not isinstance(start, int) or not isinstance(end, int) or not (0 <= start <= end <= len(text)):
+            return False
+        if text[start:end] != surface:
+            return False
+    return True
+
+
+def _shift_before(matches: list[re.Match[str]], position: int, delta: int) -> int:
+    return sum(delta for match in matches if match.end() <= position)
+
+
+def synchronize_reverse_links(reverse_doc: dict, plan: dict, old: str, new: str) -> tuple[dict, list[dict]]:
+    """Rebase reverse-link spans onto the post-edit Spanish without relinking tokens.
+
+    This supports the common interrupted state where the editor already changed one
+    phrase (for example Daniel 2:39) but reverse links still point at the old rendering.
+    """
+    links = reverse_doc.get("links")
+    if not isinstance(links, list):
+        raise ValueError("reverse-link artifact must contain links[]")
+    by_ref = {str(link.get("reference") or ""): link for link in links if isinstance(link, dict)}
+    old_pattern = pattern(old)
+    new_pattern = pattern(new)
+    delta = len(new) - len(old)
+    result = deepcopy(reverse_doc)
+    result_by_ref = {str(link.get("reference") or ""): link for link in result.get("links", []) if isinstance(link, dict)}
+    changed_units: list[dict] = []
+
+    for item in plan.get("items", []):
+        ref = str(item.get("reference") or "")
+        source_link = by_ref.get(ref)
+        target_link = result_by_ref.get(ref)
+        if source_link is None or target_link is None:
+            raise ValueError(f"alignment reference missing for terminology occurrence: {ref}")
+        units = source_link.get("units")
+        if not isinstance(units, list) or not units:
+            raise ValueError(f"alignment units missing for terminology occurrence: {ref}")
+
+        desired = str(item["after"])
+        candidates = [str(item["before"])]
+        reconstructed = new_pattern.sub(old, str(item["before"]))
+        if reconstructed not in candidates:
+            candidates.append(reconstructed)
+        base = next((candidate for candidate in candidates if _units_match(candidate, units)), None)
+        if base is None:
+            raise ValueError(f"{ref}: alignment matches neither current nor pre-edit Spanish; refusing blind rewrite")
+        if old_pattern.sub(new, base) != desired:
+            raise ValueError(f"{ref}: deterministic rendering substitution does not reproduce current Spanish")
+
+        replacements = list(old_pattern.finditer(base))
+        for match in replacements:
+            containers = [
+                unit for unit in units
+                if isinstance(unit.get("charStart"), int)
+                and isinstance(unit.get("charEnd"), int)
+                and unit["charStart"] <= match.start()
+                and match.end() <= unit["charEnd"]
+            ]
+            if len(containers) != 1:
+                raise ValueError(f"{ref}: rendering occurrence crosses alignment-unit boundary")
+
+        target_units = target_link.get("units", [])
+        for source_unit, target_unit in zip(units, target_units):
+            start, end = int(source_unit["charStart"]), int(source_unit["charEnd"])
+            new_start = start + _shift_before(replacements, start, delta)
+            new_end = end + _shift_before(replacements, end, delta)
+            if not (0 <= new_start <= new_end <= len(desired)):
+                raise ValueError(f"{ref} / {source_unit.get('unitId')}: rebased character span is invalid")
+            new_surface = desired[new_start:new_end]
+            surface_changed = new_surface != str(source_unit.get("surface") or "")
+            target_unit["charStart"] = new_start
+            target_unit["charEnd"] = new_end
+            target_unit["surface"] = new_surface
+            if surface_changed:
+                changed_units.append({"reference": ref, "unitId": target_unit.get("unitId")})
+
+        if not _units_match(desired, target_units):
+            raise ValueError(f"{ref}: rebased alignment does not match current Spanish")
+
+    return result, changed_units
 
 
 def main() -> int:
@@ -137,8 +254,10 @@ def main() -> int:
 
     root = Path(args.root).resolve()
     book = args.book.strip().lower()
-    path = find_phrase_file(root, book)
-    doc = json.loads(path.read_text(encoding="utf-8"))
+    phrase_path = find_phrase_file(root, book)
+    reverse_path = find_reverse_file(root, book)
+    doc = json.loads(phrase_path.read_text(encoding="utf-8"))
+    reverse_doc = json.loads(reverse_path.read_text(encoding="utf-8"))
     strongs, lemma, surface = find_target(rows(doc), args.reference, args.source_surface)
     plan = build_plan(rows(doc), (strongs, lemma), args.old, args.new)
 
@@ -147,25 +266,35 @@ def main() -> int:
     print(f"source: {surface}")
     print(f"lemma: {lemma or '—'}")
     print(f"strongs: {strongs or '—'}")
+    print("scope: Book Default (every Spanish whole-word occurrence)")
     print(f"rendering: {args.old!r} -> {args.new!r}")
-    print(f"source occurrences: {plan['totalSourceOccurrences']}")
+    print(f"selected-source occurrences (diagnostic): {plan['totalSourceOccurrences']}")
+    print(f"book terminology occurrences: {plan['terminologyOccurrences']}")
+    print(f"already {args.new!r}: {plan['newOccurrences']}")
+    print(f"changing from {args.old!r}: {plan['oldOccurrences']}")
     print(f"phrases affected: {plan['phrasesAffected']}")
     print(f"phrases changing: {plan['phrasesChanged']}")
     for item in plan["items"]:
-        marker = "CHANGE" if item["changed"] else ("OK" if item["safe"] else "MANUAL")
+        marker = "CHANGE" if item["changed"] else "OK"
         suffix = f" -> {item['after']}" if item["changed"] else ""
         print(f"{marker:6} {item['reference']}: {item['before']}{suffix}")
 
     if not plan["safe"]:
-        raise SystemExit("BLOCKED: at least one source occurrence cannot be mapped safely; no files changed")
+        raise SystemExit("BLOCKED: no book-wide occurrences can be changed; no files changed")
+
+    updated_reverse, changed_units = synchronize_reverse_links(reverse_doc, plan, args.old, args.new)
+    print(f"alignment units with changed Spanish surface: {len(changed_units)}")
     if not args.apply:
         print("DRY RUN: no files changed. Re-run with --apply after reviewing every listed occurrence.")
         return 0
 
     updated = apply_plan(doc, plan)
-    temp = path.with_suffix(path.suffix + ".tmp")
-    temp.write_text(json.dumps(updated, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    temp.replace(path)
+    phrase_temp = phrase_path.with_suffix(phrase_path.suffix + ".tmp")
+    reverse_temp = reverse_path.with_suffix(reverse_path.suffix + ".tmp")
+    phrase_temp.write_text(json.dumps(updated, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    reverse_temp.write_text(json.dumps(updated_reverse, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    phrase_temp.replace(phrase_path)
+    reverse_temp.replace(reverse_path)
 
     audit_path = root / "workflow" / book / "lexical-edits.jsonl"
     audit_path.parent.mkdir(parents=True, exist_ok=True)
@@ -177,13 +306,16 @@ def main() -> int:
         "target": {"surface": surface, "lemma": lemma, "strongs": strongs},
         "from": args.old,
         "to": args.new,
-        "sourceOccurrences": plan["totalSourceOccurrences"],
+        "terminologyOccurrences": plan["terminologyOccurrences"],
         "changedReferences": [item["reference"] for item in plan["items"] if item["changed"]],
+        "synchronizedReferences": [item["reference"] for item in plan["items"]],
+        "changedAlignmentUnits": changed_units,
         "authority": "editorial-change-not-approval",
     }
     with audit_path.open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(audit, ensure_ascii=False, sort_keys=True) + "\n")
-    print(f"APPLIED: {path}")
+    print(f"APPLIED: {phrase_path}")
+    print(f"SYNCHRONIZED: {reverse_path}")
     print(f"AUDIT: {audit_path}")
     print("Changed phrases are lbf-preliminary; run canonical G0A next. No approval was created.")
     return 0
