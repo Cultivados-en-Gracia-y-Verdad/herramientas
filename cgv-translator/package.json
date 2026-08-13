@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
+    "test:workflow": "python3 -m unittest discover -s test_py -p 'test_*.py'",
+    "test:all": "npm test && npm run test:workflow",
     "start": "node server.js",
+    "workflow:book": "python3 scripts/book_workflow.py",
     "fix:save-authority": "python3 scripts/apply_save_authority_patch.py",
     "finalize:investigations": "python3 scripts/finalize_investigation_workflow.py",
     "regression:daniel": "python3 scripts/regression_daniel.py",
