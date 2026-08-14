@@ -2,8 +2,8 @@
 
 > La Biblia Fiel — Zacarías.
 > Fuente: hebreo (OSHB/WLC). Snapshot `OSHB-WLC:2e287c8d0e0abd3bf601eb8ef9b4ee6ca3ae12cf36c0ed1612a7dcca54a2e777`.
-> Caps. 1–10: borrador de productor desde tokens OSHB (`producer-draft`). No está aprobado.
-> Caps. 11–14: texto previo sin spine; pendiente de retraducción token por token.
+> Caps. 1–11: borrador de productor desde tokens OSHB (`producer-draft`). No está aprobado.
+> Caps. 12–14: texto previo sin spine; pendiente de retraducción token por token.
 
 ## Capítulo 1
 
@@ -630,71 +630,71 @@ Y los fortaleceré en Jehová, y en su nombre andarán, declara Jehová.
 
 ### 11:1
 
-Abre tus puertas, oh Líbano, y consuma el fuego tus cedros.
+Abre, Líbano, tus puertas, y coma fuego en tus cedros.
 
 ### 11:2
 
-Aúlla, oh ciprés, porque el cedro ha caído, porque los grandes han sido destruidos. Aúllen, encinas de Basán, porque el bosque inaccesible ha sido derribado.
+Aúlla, ciprés, porque cayó cedro, que magníficos fueron devastados. Aúllen, encinas de Basán, porque bajó el bosque fortificado.
 
 ### 11:3
 
-Voz de aullido de los pastores, porque su magnificencia ha sido destruida; voz del rugido de los leoncillos, porque la soberbia del Jordán ha sido destruida.
+Voz de aullido de los pastores, porque fue devastado su manto; voz de rugido de leoncillos, porque fue devastada la soberbia del Jordán.
 
 ### 11:4
 
-Así dice Jehová mi Dios: Apacienta las ovejas de la matanza.
+Así dice Jehová mi Dios: Apacienta el rebaño de la matanza.
 
 ### 11:5
 
-A las cuales matan sus compradores sin sentirse culpables; y el que las vende dice: Bendito sea Jehová, porque me he enriquecido; y sus propios pastores no tienen compasión de ellas.
+Cuyos compradores las matarán, y no serán culpables; y sus vendedores dirá: Bendito Jehová, y me enriqueceré; y sus pastores no se apiadará sobre ellas.
 
 ### 11:6
 
-Porque no tendré más compasión de los habitantes de la tierra, declara Jehová; y he aquí yo entrego a los hombres, cada uno en mano de su prójimo y en mano de su rey; y ellos herirán la tierra, y yo no libraré de su mano.
+Porque no me apiadaré más de los habitantes de la tierra, declara Jehová; y he aquí yo hago hallar al hombre, un hombre en mano de su prójimo y en mano de su rey; y aplastarán la tierra, y no libraré de su mano.
 
 ### 11:7
 
-Y apacenté las ovejas de la matanza, esto es, a las pobres del rebaño. Y tomé para mí dos cayados: al uno llamé Gracia, y al otro llamé Ataduras; y apacenté las ovejas.
+Y apacenté el rebaño de la matanza, por tanto los pobres del rebaño. Y tomé para mí dos cayados; al uno llamé Agrado, y al uno llamé Cuerdas; y apacenté el rebaño.
 
 ### 11:8
 
-Y destruí a tres pastores en un mes; y mi alma se impacientó de ellos, y también el alma de ellos me aborreció.
+Y hice desaparecer a los tres pastores en un mes; y se acortó mi alma en ellos, y también el alma de ellos aborreció en mí.
 
 ### 11:9
 
-Y dije: No los apacentaré más; la que muera, que muera; y la que se pierda, que se pierda; y las que queden, que cada una coma la carne de su compañera.
+Y dije: No apacentaré a ustedes; la que muere morirá, y la que desaparece desaparecerá, y las que quedan comerán cada una la carne de su compañera.
 
 ### 11:10
 
-Y tomé mi cayado Gracia, y lo quebré, para romper mi pacto que había concertado con todos los pueblos.
+Y tomé mi cayado, Agrado, y lo corté, para romper mi pacto que corté con todos los pueblos.
 
 ### 11:11
 
-Y fue roto en aquel día, y así conocieron las pobres del rebaño que me observaban, que era palabra de Jehová.
+Y fue rota en aquel día; y conocieron así los pobres del rebaño, los que me guardan, que palabra de Jehová es él.
 
 ### 11:12
 
-Y les dije: Si les parece bien, denme mi salario; y si no, déjenlo. Y pesaron por mi salario treinta piezas de plata.
+Y dije a ellos: Si es bueno en los ojos de ustedes, den mi salario; y si no, cesen. Y pesaron mi salario: treinta de plata.
 
 ### 11:13
 
-Y me dijo Jehová: Arrójalo al alfarero, el magnífico precio con que me han estimado. Y tomé las treinta piezas de plata, y las arrojé en la casa de Jehová, al alfarero.
+Y dijo Jehová a mí: Arrójalo al alfarero, esplendor del precio que fui estimado de sobre ellos. Y tomé treinta la plata, y lo arrojé casa de Jehová, al alfarero.
 
 ### 11:14
 
-Y quebré mi otro cayado, Ataduras, para romper la hermandad entre Judá e Israel.
+Y corté mi cayado, el segundo, las Cuerdas, para romper la hermandad entre Judá y entre Israel.
 
 ### 11:15
 
-Y me dijo Jehová: Toma aún para ti los aperos de un pastor insensato.
+Y dijo Jehová a mí: Aún toma para ti instrumento de pastor necio.
 
 ### 11:16
 
-Porque he aquí yo levanto un pastor en la tierra que no visitará las que se pierden, ni buscará la joven, ni sanará la herida, ni sustentará la que está en pie; sino que comerá la carne de la gorda, y desgarrará las pezuñas de ellas.
+Porque he aquí yo levanto un pastor en la tierra: las desaparecidas no visitará, el muchacho no buscará, y la quebrada no sanará, la que está en pie no sustentará; y la carne de la gorda comerá, y las pezuñas de ellas despedazará.
 
 ### 11:17
 
-¡Ay del pastor inútil que abandona el rebaño! Espada sobre su brazo y sobre su ojo derecho; su brazo se secará por completo, y su ojo derecho será del todo oscurecido.
+¡Ay, pastor de la nada, dejador del rebaño! Espada sobre su brazo y sobre el ojo de su derecha; su brazo secándose se secará, y el ojo de su derecha oscureciéndose se oscurecerá.
 
 ## Capítulo 12
 
