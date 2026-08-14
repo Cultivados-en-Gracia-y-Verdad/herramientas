@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "recordId": "ROLES-daniel-0002",
+  "revision": 2,
+  "previousRecordId": "ROLES-daniel-0001",
+  "book": "daniel",
+  "recordedAt": "2026-08-14T14:29:11Z",
+  "recordedBy": "John Wry",
+  "status": "BLOCKED",
+  "translationRevision": {
+    "id": "TR-daniel-b338d84ac2cb",
+    "sha256": "b338d84ac2cbb74ffee1b5d01cfbc3e8da8c463fffd6d3125890ce8e99658198"
+  },
+  "alignmentDraftRevision": {
+    "id": "ALN-daniel-113848f598db",
+    "sha256": "113848f598dbf230badfce1b2489cfbee2612a136270e2ad8a9b7cee5513441e"
+  },
+  "assignments": {
+    "translationProducer": {
+      "name": "UNRESOLVED",
+      "status": "BLOCKED",
+      "possibleProducers": [
+        "John Wry"
+      ],
+      "evidence": "The exact translation artifact is attributed in Git only to BJWry (John Wry), but this does not establish who produced the Spanish content."
+    },
+    "translationReviewer": {
+      "name": "John Wry",
+      "status": "ASSIGNED"
+    },
+    "alignmentProducer": {
+      "name": "deterministic-gloss-dp-v1",
+      "kind": "AUTOMATION",
+      "usesAI": false,
+      "verificationAuthority": false,
+      "status": "ASSIGNED"
+    },
+    "alignmentReviewer": {
+      "name": "John Wry",
+      "status": "ASSIGNED"
+    },
+    "releaseApprover": {
+      "name": "John Wry",
+      "status": "ASSIGNED"
+    },
+    "releaseOperator": {
+      "name": "UNASSIGNED",
+      "status": "PENDING"
+    }
+  },
+  "blockers": [
+    {
+      "id": "ROLE-001",
+      "status": "BLOCKED",
+      "owner": "John Wry",
+      "nextAction": "Identify the translation producer or assign a G0A reviewer who is demonstrably independent of every possible producer.",
+      "reason": "The workflow prohibits the producer from being the sole reviewer of the same revision. Current Git history shows only BJWry/John Wry, so John Wry's independence cannot yet be demonstrated."
+    }
+  ]
+}

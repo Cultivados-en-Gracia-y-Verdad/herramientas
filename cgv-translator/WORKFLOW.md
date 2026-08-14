@@ -1,641 +1,206 @@
-# cgv-translator Workflow Standard
+# CGV Translator Workflow Standard
 
-**Status:** Active  
-**Scope:** LBF translation, alignment, verification, approval, and release  
-**Version:** 0.3
+**Status:** Active
+**Version:** 1.0
+**Scope:** LBF translation, investigation, alignment, verification, approval, and release
 
----
+## 1. Authority
 
-# 1. Authority
+This document is the canonical production policy for `cgv-translator`. The Constitution governs values; this standard governs work. Schemas and implementation specifications may add detail but may not weaken these controls.
 
-This document defines the canonical production workflow for `cgv-translator`.
+## 2. Required roles
 
-Implementation specifications may add technical detail but may not contradict this workflow.
+| Role | Responsibility | May give final approval? |
+| --- | --- | --- |
+| Producer | Creates or revises translation and alignment | No |
+| Translation reviewer | Performs G0A | No |
+| Alignment reviewer | Performs G0B | No |
+| Release approver | Accepts the completed book and authorizes publication | Yes |
+| Release operator | Builds, publishes, and registers the approved artifact | No |
 
----
+One person may hold multiple roles, but a producer may not be the sole reviewer of the same revision. AI may assist any role but may not be recorded as the accountable approver.
 
-# 2. Purpose
+## 3. Controlled records
 
-`cgv-translator` governs the production of **La Biblia Fiel (LBF)** and its alignment to the biblical source text.
+Every controlled record has an immutable ID, revision, author, timestamp, and status.
 
-The objective is to produce an LBF text that is:
+Required record types:
 
-- faithful to the source;
-- reviewed;
-- correctly aligned;
-- documented where difficult translation decisions required investigation;
-- approved;
-- ready to become canonical CGV data.
+- **Source snapshot:** declared source edition, tokenization version, and checksum.
+- **Translation unit:** Spanish text and its source/verse scope.
+- **Alignment set:** links between translation units and source tokens.
+- **Investigation:** question, evidence, conclusion, rationale, confidence, status, and affected scope.
+- **Gate decision:** gate, input revision IDs, reviewer, result, findings, and timestamp.
+- **Book review:** consistency checks, unresolved findings, and result.
+- **Release manifest:** exact approved revisions, schema version, build ID, and artifact checksum.
 
-The process must remain simple enough to be followed consistently.
+No approval applies to content not identified by revision.
 
----
+## 4. Common statuses
 
-# 3. System Responsibilities
+All reviews use only:
 
-## cgv-translator
+- `PENDING` — no valid decision exists for the current inputs;
+- `PASS` — the identified inputs satisfy the gate;
+- `CHANGES_REQUIRED` — specified correction is required;
+- `BLOCKED` — a named issue prevents a decision.
 
-`cgv-translator` is the working environment for:
+`BLOCKED` must identify an owner and next action. It is never releasable.
 
-- translation;
-- difficult-word investigations;
-- translation decisions;
-- translation verification;
-- alignment;
-- alignment verification;
-- revision;
-- approval preparation.
+## 5. Production state machine
 
-## cgv-data
-
-`cgv-data` is the canonical repository for final approved CGV data.
-
-Approved LBF Bible and alignment data ultimately reside there.
-
-## cgv-MANAGER
-
-`cgv-MANAGER` records the approved artifact and determines what downstream workflow may begin.
-
----
-
-# 4. Core Translation Workflow
-
-The canonical Translator sequence is:
-
-```text
-SOURCE
-   ↓
-TRANSLATE
-   ↓
-G0A — VERIFY TRANSLATION
-   ↓
-ALIGN
-   ↓
-G0B — VERIFY ALIGNMENT
-   ↓
-BOOK-LEVEL FINAL CHECK
-   ↓
-APPROVE
-   ↓
-PUBLISH TO cgv-data
-   ↓
-REGISTER WITH cgv-MANAGER
+```mermaid
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> G0A: submit translation
+    G0A --> Draft: changes required
+    G0A --> Align: pass
+    Align --> G0B: submit alignment
+    G0B --> Align: relink required
+    G0B --> Draft: translation defect
+    G0B --> VerseReady: pass
+    VerseReady --> BookReview: all verses ready
+    BookReview --> Draft: correction required
+    BookReview --> Approval: pass
+    Approval --> Release: approved
+    Release --> [*]: registered artifact
 ```
 
-This is the governing sequence.
+An investigation may be opened from any state. Opening or editing research does not invalidate work; adopting a conclusion that changes controlled content does.
 
----
+## 6. Draft translation
 
-# 5. Translator Compatibility Principle
+The Producer shall:
 
-The LBF translation process may be carried out using AI, human work, `cgv-translator`, or a combination of these methods.
+1. work from the declared source snapshot;
+2. create a translation-unit revision;
+3. link any controlling investigation decisions;
+4. submit the exact revision to G0A.
 
-The workflow must remain compatible with `cgv-translator` throughout production.
+Other translations may be consulted as evidence but may not replace accountability to the declared source.
 
-At any time, the translator may use `cgv-translator` to:
+## 7. Investigation policy
 
-- inspect the source;
-- conduct research;
-- open or continue an investigation;
-- revise a Spanish phrase;
-- modify an alignment;
-- correct other Translator-owned data.
+Open an investigation when a decision is non-routine, disputed, materially consequential, or likely to recur.
 
-Using `cgv-translator` does not bypass the workflow and does not require restarting unaffected work.
+An investigation is resolved only when it contains:
 
-A change returns only the affected artifact to the appropriate verification step.
+- a precise question;
+- relevant source occurrences or other evidence;
+- alternatives considered;
+- conclusion and rationale;
+- confidence and known uncertainty;
+- affected scope;
+- accountable decision-maker.
 
-```text
-RESEARCH ONLY
-    → no verification state is invalidated
+Possible statuses are `OPEN`, `RESOLVED`, and `SUPERSEDED`. An `OPEN` investigation blocks release only when marked release-blocking.
 
-SPANISH TRANSLATION CHANGED
-    → affected G0A approval must be verified again
-    → affected alignment must be reviewed or rebuilt if the change affects it
-    → affected G0B verification must be verified again when alignment is affected
+## 8. G0A — translation verification
 
-ALIGNMENT ONLY CHANGED
-    → unchanged G0A approval remains valid
-    → affected G0B verification must be verified again
-```
+**Inputs:** source snapshot revision, translation revision, linked controlling investigations, and relevant context.
 
-The workflow tracks the state of the work; it must not prevent the translator from returning to the text when correction or further research is required.
+The reviewer checks at minimum:
 
-`cgv-translator` remains an editable working environment until release. Approval controls the validity of the current artifact; it does not make the text inaccessible.
+- source meaning and grammatical relationships are represented;
+- nothing material is unsupported, omitted, or distorted;
+- ambiguity is preserved or resolved responsibly;
+- Spanish is intelligible and fit for downstream analysis;
+- controlling decisions are followed or explicitly challenged.
 
----
+**Output:** a gate decision bound to the input revisions. `CHANGES_REQUIRED` must contain actionable findings. A `PASS` becomes stale automatically when any bound input changes.
 
-# 6. Working Unit
+## 9. Alignment
 
-Translation normally proceeds **verse by verse**.
+Alignment begins only after a current G0A `PASS`.
 
-Within `cgv-translator`, the underlying data may divide the verse into phrases or other alignment units.
+The Producer records the actual correspondence between Spanish units and source tokens. One-to-one, one-to-many, many-to-one, many-to-many, discontinuous, and intentionally unaligned relationships are allowed when accurately typed and explained where non-obvious.
 
-That implementation detail does not change the human workflow:
+Completeness must not be manufactured through false links.
 
-```text
-VERSE
-  ↓
-TRANSLATE
-  ↓
-VERIFY
-  ↓
-ALIGN
-  ↓
-VERIFY ALIGNMENT
-  ↓
-NEXT VERSE
-```
+## 10. G0B — alignment verification
 
----
+**Inputs:** source snapshot revision, G0A-passed translation revision, alignment revision, and relevant investigations.
 
-# 7. Phase 1 — Translate
+The reviewer checks at minimum:
 
-Begin from the declared biblical source text.
+- each link represents a defensible translation relationship;
+- required source and Spanish units are accounted for;
+- unrelated tokens are not linked;
+- grammatical boundaries and discontinuities are represented accurately;
+- intentional omissions, additions, or null alignments are typed and justified.
 
-Produce the LBF Spanish translation of the verse.
+**Output:** a gate decision bound to the input revisions. Alignment findings return to Alignment. Translation findings return to Draft and make dependent G0B decisions stale.
 
-AI may assist substantially in producing the translation.
+## 11. Deterministic invalidation
 
-AI output is proposed translation work and remains subject to review.
+| Change | G0A | Alignment | G0B | Book review |
+| --- | --- | --- | --- | --- |
+| Research notes only | unchanged | unchanged | unchanged | unchanged |
+| Adopted decision with no content impact | unchanged | unchanged | unchanged | stale if book-wide conclusion changes |
+| Spanish text | stale for affected units | review affected links | stale for affected units | stale |
+| Alignment links only | unchanged | revised | stale for affected units | stale |
+| Source text or tokenization | stale for affected scope | stale for affected scope | stale for affected scope | stale |
+| Book-wide policy or terminology | recompute affected scope | review affected links | recompute affected scope | stale |
 
-The translator must consider the source text and necessary context.
+“Affected scope” must be stored explicitly or computed from record links. It may not be inferred only from memory.
 
-The translation should not begin from another Spanish Bible as its authority.
+## 12. Verse readiness
 
----
+A verse is `READY` only when the current source, translation, and alignment revisions have current G0A and G0B `PASS` decisions, all release-blocking findings are closed, and every required controlling investigation is resolved.
 
-# 8. Difficult Translation Decisions
+This is a computed state, not a manually assigned approval.
 
-Not every translated word requires documentation.
+## 13. Book review
 
-Investigations are reserved for difficult words, expressions, or translation questions where a responsible decision requires closer examination.
+When all included verses are `READY`, review the complete book for:
 
-When such a question occurs:
+- terminology, names, titles, and recurring constructions;
+- contextual consistency without forced uniformity;
+- application of book-wide investigation decisions;
+- alignment conventions and typed exceptions;
+- unresolved or stale records;
+- source coverage and verse inventory.
 
-```text
-DIFFICULT WORD / QUESTION
-        ↓
-OPEN INVESTIGATION
-        ↓
-EXAMINE OCCURRENCES
-        ↓
-OBSERVE HOW IT IS USED
-        ↓
-EXAMINE HOW IT HAS BEEN TRANSLATED
-        ↓
-ARRIVE AT DECISION
-        ↓
-RECORD PREFERRED RENDERING
-        ↓
-EXPLAIN WHY
-        ↓
-RETURN TO TRANSLATION
-```
+Any content correction follows the invalidation matrix. The book review passes only when rerun against the corrected revision set.
 
-The purpose is straightforward:
+## 14. Release approval
 
-**Document what we decided and how we arrived at that decision.**
+The Release approver may approve only when:
 
-The investigation record exists so important decisions for this edition do not survive only in:
+- every included verse computes as `READY`;
+- the book review has a current `PASS`;
+- no release-blocking investigation or finding is open;
+- the release manifest identifies every approved input revision;
+- the intended edition and version are stated.
 
-- human memory;
-- AI conversations;
-- temporary notes.
+Approval is a signed decision bound to the manifest. Approval does not mutate the underlying records.
 
-A future edition may reconsider the decision.
+## 15. Publication and registration
 
-Research or investigation by itself does not invalidate approved translation or alignment work. If the resulting decision changes the Spanish or alignment, the affected verification state is then returned to G0A or G0B as appropriate.
+The Release operator shall:
 
----
+1. build from the approved manifest;
+2. validate schema and referential integrity;
+3. create an artifact checksum;
+4. publish the immutable artifact to `cgv-data`;
+5. verify that the published checksum matches the manifest;
+6. register the artifact ID, checksum, edition, and version with `cgv-MANAGER`.
 
-# 9. G0A — Translation Verification
+Downstream work must consume the registered artifact, not a working copy.
 
-After translation, the Spanish must be verified.
+## 16. Corrections after release
 
-G0A concerns the **translation itself**.
+Never overwrite a released artifact. A correction creates new controlled revisions, runs only the gates invalidated by the change, receives a new book review and approval where required, and produces a new release manifest and artifact version. Prior releases remain traceable.
 
-It does not verify alignment.
+## 17. Audit requirements
 
-The question is:
+The system must be able to answer:
 
-> Does this Spanish faithfully represent the source?
+- what exact source, translation, and alignment revisions were approved;
+- who made and reviewed each decision;
+- what evidence supported non-routine choices;
+- which change invalidated a prior decision;
+- which checksum identifies the published artifact;
+- what downstream process used that artifact.
 
-The positive G0A decision is:
-
-```text
-APPROVED
-```
-
-Possible negative or unresolved states include:
-
-```text
-NEEDS_REVISION
-REJECTED
-ESCALATE
-```
-
-## G0A Review
-
-Verify matters such as:
-
-- Does the Spanish account for the source?
-- Was anything omitted?
-- Was anything added without support?
-- Was a grammatical relationship distorted?
-- Was ambiguity resolved that should remain open?
-- Is the Spanish sufficiently faithful for later CGV analysis?
-
-Natural-sounding Spanish alone is not enough.
-
-## If G0A fails
-
-```text
-G0A
- ↓
-NEEDS REVISION
- ↓
-RETURN TO TRANSLATION
- ↓
-REVISE
- ↓
-G0A AGAIN
-```
-
-Translation does not proceed to final alignment verification until G0A passes.
-
----
-
-# 10. Phase 2 — Alignment
-
-Once the translation has passed G0A, align the approved Spanish to the original-language source.
-
-Alignment records which Spanish unit corresponds to which source unit or units.
-
-Alignment must represent the real translation relationship.
-
-It must not create false relationships merely to make the alignment appear complete.
-
-Legitimate relationships may include:
-
-```text
-one source unit → one Spanish unit
-
-one source unit → multiple Spanish units
-
-multiple source units → one Spanish unit
-
-multiple source units → multiple Spanish units
-```
-
----
-
-# 11. G0B — Alignment Verification
-
-After alignment, verify the alignment.
-
-G0B concerns the **relationship between the Spanish and source units**.
-
-It does not primarily judge Spanish style.
-
-The positive G0B decision is:
-
-```text
-VERIFIED
-```
-
-Possible negative or unresolved states include:
-
-```text
-NEEDS_RELINK
-REJECTED
-ESCALATE
-```
-
-## G0B Review
-
-Verify matters such as:
-
-- Does this Spanish unit actually correspond to these source tokens?
-- Are relevant source tokens missing?
-- Are unrelated source tokens included?
-- Does the link cross a grammatical boundary incorrectly?
-- Has a mechanically plausible alignment created a false relationship?
-- Does the alignment preserve what CGV Reader will later need to observe?
-
-Generation method is not verification.
-
-An AI-generated or mechanically generated link still requires verification.
-
----
-
-# 12. If G0B Finds an Alignment Problem
-
-If the translation is correct but the alignment is wrong:
-
-```text
-G0B
- ↓
-NEEDS RELINK
- ↓
-FIX ALIGNMENT
- ↓
-G0B AGAIN
-```
-
----
-
-# 13. If G0B Reveals a Translation Problem
-
-Alignment may reveal that the Spanish itself needs correction.
-
-In that case:
-
-```text
-G0B
- ↓
-TRANSLATION PROBLEM DISCOVERED
- ↓
-RETURN TO TRANSLATION
- ↓
-REVISE SPANISH
- ↓
-G0A AGAIN
- ↓
-REALIGN AS NEEDED
- ↓
-G0B AGAIN
-```
-
-A downstream alignment correction must not hide a translation defect.
-
----
-
-# 14. Gate 0 Completion
-
-Gate 0 is complete only when:
-
-```text
-G0A = PASS
-AND
-G0B = PASS
-```
-
-No unresolved blocker may remain.
-
----
-
-# 15. Review Independence
-
-Translation production and verification are different actions.
-
-The producer should not simply declare its own output correct.
-
-AI may produce translation or alignment.
-
-AI may also assist review.
-
-But production is not itself verification.
-
----
-
-# 16. Chapter Progress
-
-As work progresses through a chapter:
-
-1. translate the verse;
-2. resolve difficult investigations where needed;
-3. pass G0A;
-4. align;
-5. pass G0B;
-6. continue to the next verse.
-
-Chapter completion should not depend merely on every verse having Spanish text.
-
-The required translation and alignment verification must also be complete.
-
----
-
-# 17. Book-Level Final Check
-
-After the entire book has passed verse-level work, review the book as a whole.
-
-This review exists to catch issues that may not be obvious while moving verse by verse.
-
-Review should consider:
-
-- consistency of repeated terminology;
-- names and titles;
-- recurring expressions;
-- repeated grammatical constructions;
-- difficult-word decisions made during the book;
-- translation choices made early in the book in light of later discoveries;
-- alignment consistency;
-- unresolved investigations;
-- unresolved G0A findings;
-- unresolved G0B findings.
-
-The purpose is **intentional consistency**, not forced identical translation in every context.
-
----
-
-# 18. Final Translation Status
-
-A book is ready for approval only when:
-
-- translation is complete;
-- G0A verification is complete;
-- alignment is complete;
-- G0B verification is complete;
-- difficult translation decisions requiring investigation are documented;
-- book-level final review is complete;
-- no blocking issue remains.
-
-Then the project may become:
-
-```text
-TRANSLATION_APPROVED
-```
-
----
-
-# 19. Approved Output
-
-The approved Translator output consists of the reviewed LBF data needed downstream, including:
-
-- LBF Spanish text;
-- source alignment;
-- appropriate source identifiers;
-- translation revision;
-- alignment revision;
-- approval state;
-- required provenance;
-- documented significant translation decisions.
-
-The exact storage/export schema may be defined separately.
-
----
-
-# 20. Publication to cgv-data
-
-After approval:
-
-```text
-TRANSLATION_APPROVED
-        ↓
-BUILD FINAL DATA
-        ↓
-PUBLISH TO cgv-data
-        ↓
-VERIFY PUBLISHED DATA
-        ↓
-REGISTER WITH cgv-MANAGER
-```
-
-`cgv-data` becomes the canonical home of the released LBF data.
-
-The working Translator project remains the record of how the translation was developed.
-
----
-
-# 21. Manager Handoff
-
-`cgv-MANAGER` must receive or identify the exact approved `cgv-data` artifact.
-
-Manager then determines whether the book is eligible for the next workflow stage.
-
-For the larger CGV process:
-
-```text
-cgv-translator
-      ↓
-G0A PASS
-      ↓
-G0B PASS
-      ↓
-APPROVED
-      ↓
-cgv-data
-      ↓
-cgv-MANAGER
-      ↓
-cgv-reader
-```
-
-Reader must not begin from an unofficial or unverified translation artifact.
-
----
-
-# 22. Post-Approval Corrections
-
-An approved translation may later require correction.
-
-If so:
-
-```text
-CORRECTION REQUIRED
-        ↓
-RETURN TO cgv-translator
-        ↓
-REVISE TRANSLATION / ALIGNMENT
-        ↓
-G0A AS REQUIRED
-        ↓
-G0B AS REQUIRED
-        ↓
-BOOK CHECK AS REQUIRED
-        ↓
-NEW APPROVAL
-        ↓
-NEW cgv-data REVISION
-        ↓
-REGISTER WITH cgv-MANAGER
-```
-
-The previous approved artifact must not be silently changed while retaining the same identity.
-
----
-
-# 23. Definition of Done — Verse
-
-A verse is complete when:
-
-- [ ] translation is complete;
-- [ ] required difficult-word investigations are resolved or properly flagged;
-- [ ] G0A translation verification passed;
-- [ ] alignment is complete;
-- [ ] G0B alignment verification passed;
-- [ ] no blocking issue remains.
-
----
-
-# 24. Definition of Done — Book
-
-A book is complete in `cgv-translator` when:
-
-- [ ] every required verse is complete;
-- [ ] all G0A review is complete;
-- [ ] all G0B review is complete;
-- [ ] required investigations are documented;
-- [ ] book-level final review is complete;
-- [ ] no blocker remains;
-- [ ] human approval is recorded;
-- [ ] final data package is ready for `cgv-data`.
-
----
-
-# 25. Non-Negotiable Rules
-
-1. Translate from the declared source.
-2. AI may assist, but AI output must be verified.
-3. Difficult decisions should be documented; routine words do not require investigations.
-4. Research alone does not invalidate verified work.
-5. G0A verifies the translation.
-6. A translation change returns the affected work to G0A.
-7. Alignment follows the translation.
-8. G0B verifies the alignment.
-9. An alignment-only change returns the affected work to G0B without invalidating unchanged G0A work.
-10. A G0B finding may send the work back to translation.
-11. Do not hide translation problems through alignment changes.
-12. Do not hide alignment problems through Spanish rewriting.
-13. Do not restart unaffected work when one unit changes.
-14. Do not declare work complete merely because text exists.
-15. Approved final data belongs in `cgv-data`.
-16. Downstream CGV work must use the approved canonical artifact.
-
----
-
-# 26. Canonical Summary
-
-```text
-TRANSLATE
-   ↓
-   ├── difficult word?
-   │       ↓
-   │   INVESTIGATE
-   │   OCCURRENCES
-   │   DECIDE
-   │   EXPLAIN WHY
-   │       ↓
-   └──── RETURN
-   ↓
-G0A — VERIFY TRANSLATION
-   ↓
-ALIGN
-   ↓
-G0B — VERIFY ALIGNMENT
-   ↓
-BOOK FINAL CHECK
-   ↓
-APPROVE
-   ↓
-cgv-data
-   ↓
-cgv-MANAGER
-   ↓
-cgv-reader
-```
-
-At any point before release, the translator may return to `cgv-translator` for research or correction. Only the affected verification state is reopened.
-
-That is the `cgv-translator` production workflow.
+If any answer depends solely on memory, chat history, or mutable notes, the workflow has failed.

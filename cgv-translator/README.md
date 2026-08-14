@@ -8,6 +8,38 @@ Translator does not replace the translator.
 
 Translator exposes evidence, records decisions, manages history, and assists the human translator in remaining accountable to the biblical text.
 
+## Verify a Book for Approval
+
+There is one active approval path and two required results: `TRANSLATION PASS` and `ALIGNMENT PASS`.
+
+```sh
+npm run verify:book -- prepare daniel
+npm run verify:book -- status daniel
+npm run release:status -- daniel
+```
+
+`prepare` performs strict, mechanical completeness checks and creates a large-text review packet under `verification/{book}/`. It never approves anything. AI verification is prohibited. A named human who directly examined the evidence records one translation decision and one alignment decision per verse:
+
+```sh
+npm run verify:book -- record daniel translation "Daniel 1:1" PASS --reviewer "Name" --human-confirmation
+npm run verify:book -- record daniel alignment "Daniel 1:1" PASS --reviewer "Name" --human-confirmation
+```
+
+After directly reviewing every verse in a chapter, the named human can record
+that chapter without 357 separate commands:
+
+```sh
+npm run verify:book -- record-chapter daniel translation 1 PASS --reviewer "Name" --human-confirmation
+```
+
+The command records a separate immutable, revision-bound decision for every
+verse. It cannot bypass review independence, cannot record AI review, and cannot
+start alignment review before the current translation revision has G0A `PASS`.
+`release:status` writes the exact remaining blockers to
+`verification/{book}/release-readiness.json`.
+
+See [WORKFLOW.md](WORKFLOW.md) for the complete, canonical process. Legacy Gate 0 paperwork has no approval authority and is preserved only under `CLAUDE-FAIL/`.
+
 ## Run the Investigation View Prototype
 
 From this folder:
@@ -33,11 +65,11 @@ ollama pull qwen2.5:7b
 
 Optional overrides go in `.env` (see `.env.example`). You can also set `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` instead.
 
-### Translation pipeline (per-gate)
+### Translation drafting pipeline
 
 1. **Analyze phrase** — mechanical Gates 1–5 + grammar skeleton (Gate 4 loads verse ±2 + local LBF)
 2. **Propose Spanish** — AI drafts modern Spanish under those constraints
-3. **Use draft** — copies into working Spanish for human edit/approval
+3. **Use draft** — copies into working Spanish for human editing before verification
 
 Grammar checks reject illegal readings and RV1909 orthography bleed. If AI fails checks, the mechanical skeleton is shown instead.
 

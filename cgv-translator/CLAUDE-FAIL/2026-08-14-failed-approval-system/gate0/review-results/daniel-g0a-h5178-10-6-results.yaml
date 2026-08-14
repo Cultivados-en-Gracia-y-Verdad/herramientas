@@ -1,0 +1,27 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+items:
+- id: G0A-0001
+  reference: Daniel 10:6
+  decision: APPROVED
+  confidence: high
+  evidence: 'Los 17 tokens están representados. La corrección afecta נְחֹ֣שֶׁת (H5178,
+    HNcfsa): «metal» → «bronce», el valor léxico del lemma en lugar de la generalización
+    heredada de RV1909. Verificado que el resto de la cláusula queda intacto: כְּ/עֵ֖ין
+    (token 11) sí está representado por «como de color de» — עַיִן en su sentido de
+    brillo/apariencia, no una adición sin apoyo — y קָלָ֑ל (H7044, adjetivo) por «resplandeciente»,
+    dentro del rango de ''pulido/bruñido''. H5178 aparece una sola vez en Daniel,
+    de modo que este cambio no crea ninguna nueva inconsistencia; al contrario, alinea
+    el cognado hebreo נְחֹשֶׁת con el arameo נְחָשׁ (H5174) ya armonizado.'
+  notes: 'Cambio léxico registrado en workflow/daniel/lexical-edits.jsonl (H5178,
+    «metal» → «bronce», 1 ocurrencia). Dos observaciones preexistentes que NO forman
+    parte de este cambio y que se elevan a la revisión final del libro, no a este
+    ítem: (1) כְ/תַרְשִׁ֗ישׁ se traduce «piedra de Tarsis» — la palabra «piedra» no
+    está en el hebreo, aunque el lemma designa una gema; (2) הָמֽוֹן (H1995) se traduce
+    «ejército», lo cual estrecha el sentido de multitud/estruendo a un cuerpo militar;
+    «multitud» sería más cercano al lemma en un símil sobre el SONIDO de sus palabras.
+    Ambas provienen del estado ya aprobado y requieren decisión editorial. Pendiente
+    para G0B: el cambio de longitud invalida los char spans de este versículo.'

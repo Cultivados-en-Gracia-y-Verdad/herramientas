@@ -1,7 +1,9 @@
 # Zacarías
 
 > La Biblia Fiel — Zacarías.
-> Fuente: hebreo (OSHB/WLC). Traducción del hebreo al español latinoamericano.
+> Fuente: hebreo (OSHB/WLC). Snapshot `OSHB-WLC:2e287c8d0e0abd3bf601eb8ef9b4ee6ca3ae12cf36c0ed1612a7dcca54a2e777`.
+> Caps. 1–8: borrador de productor desde tokens OSHB (`producer-draft`). No está aprobado.
+> Caps. 9–14: texto previo sin spine; pendiente de retraducción token por token.
 
 ## Capítulo 1
 
@@ -11,7 +13,7 @@ En el mes octavo, en el año segundo de Darío, vino palabra de Jehová a Zacar�
 
 ### 1:2
 
-Se airó Jehová contra sus padres con grande ira.
+Se airó Jehová contra sus padres con ira.
 
 ### 1:3
 
@@ -19,7 +21,7 @@ Y les dirás: Así dice Jehová de los ejércitos: Vuélvanse a mí, declara Jeh
 
 ### 1:4
 
-No sean como sus padres, a quienes los primeros profetas proclamaron diciendo: Así dice Jehová de los ejércitos: Vuélvanse ahora de sus malos caminos y de sus malas obras. Pero no oyeron ni me prestaron atención, declara Jehová.
+No sean como sus padres, a quienes los primeros profetas proclamaron diciendo: Así dice Jehová de los ejércitos: Vuélvanse ahora de sus malos caminos y de sus malas obras. Y no oyeron ni prestaron atención a mí, declara Jehová.
 
 ### 1:5
 
@@ -27,7 +29,7 @@ Sus padres, ¿dónde están? Y los profetas, ¿para siempre vivirán?
 
 ### 1:6
 
-Pero mis palabras y mis estatutos que mandé a mis siervos los profetas, ¿no alcanzaron a sus padres? Y se volvieron y dijeron: Como Jehová de los ejércitos se propuso hacernos conforme a nuestros caminos y conforme a nuestras obras, así ha hecho con nosotros.
+Pero mis palabras y mis estatutos que mandé a mis siervos los profetas, ¿no alcanzaron a sus padres? Y se volvieron y dijeron: Como Jehová de los ejércitos se propuso hacer con nosotros conforme a nuestros caminos y conforme a nuestras obras, así hizo con nosotros.
 
 ### 1:7
 
@@ -35,7 +37,7 @@ En el día veinticuatro del mes undécimo, que es el mes de Sebat, en el año se
 
 ### 1:8
 
-Vi de noche, y he aquí un hombre que cabalgaba sobre un caballo rojo, y él estaba entre los mirtos que había en la hondonada; y detrás de él caballos rojos, alazanes y blancos.
+Vi de noche, y he aquí un hombre cabalgando sobre un caballo rojo, y él estaba de pie entre los mirtos que había en la hondonada; y detrás de él caballos rojos, alazanes y blancos.
 
 ### 1:9
 
@@ -43,15 +45,15 @@ Y dije: ¿Qué son estos, señor mío? Y me dijo el ángel que hablaba conmigo: 
 
 ### 1:10
 
-Y respondió el hombre que estaba entre los mirtos, y dijo: Estos son los que Jehová ha enviado a recorrer la tierra.
+Y respondió el hombre que estaba de pie entre los mirtos, y dijo: Estos son los que Jehová envió a recorrer la tierra.
 
 ### 1:11
 
-Y respondieron al ángel de Jehová que estaba entre los mirtos, y dijeron: Hemos recorrido la tierra, y he aquí toda la tierra está asentada y quieta.
+Y respondieron al ángel de Jehová que estaba de pie entre los mirtos, y dijeron: Hemos recorrido la tierra, y he aquí toda la tierra está asentada y quieta.
 
 ### 1:12
 
-Y respondió el ángel de Jehová y dijo: Oh Jehová de los ejércitos, ¿hasta cuándo no tendrás compasión de Jerusalén y de las ciudades de Judá, contra las cuales has estado indignado estos setenta años?
+Y respondió el ángel de Jehová y dijo: Jehová de los ejércitos, ¿hasta cuándo tú no tendrás compasión de Jerusalén y de las ciudades de Judá, contra las cuales te has indignado estos setenta años?
 
 ### 1:13
 
@@ -63,11 +65,11 @@ Y me dijo el ángel que hablaba conmigo: Proclama diciendo: Así dice Jehová de
 
 ### 1:15
 
-Y con grande enojo estoy yo enojado contra las naciones que están tranquilas; porque cuando yo estaba un poco enojado, ellas ayudaron para mal.
+Y con gran ira estoy yo airado contra las naciones que están tranquilas, las cuales yo airé un poco, y ellas ayudaron para mal.
 
 ### 1:16
 
-Por tanto, así dice Jehová: Me he vuelto a Jerusalén con compasión; mi casa será edificada en ella, declara Jehová de los ejércitos, y el cordel será tendido sobre Jerusalén.
+Por tanto, así dice Jehová: Me he vuelto a Jerusalén con compasiones; mi casa será edificada en ella, declara Jehová de los ejércitos, y el cordel será tendido sobre Jerusalén.
 
 ### 1:17
 
@@ -75,7 +77,7 @@ Proclama otra vez diciendo: Así dice Jehová de los ejércitos: Aún rebosarán
 
 ### 1:18
 
-Y alcé mis ojos y miré, y he aquí cuatro cuernos.
+Y alcé mis ojos y vi, y he aquí cuatro cuernos.
 
 ### 1:19
 
@@ -87,17 +89,18 @@ Y me mostró Jehová cuatro artesanos.
 
 ### 1:21
 
-Y dije: ¿Qué vienen estos a hacer? Y habló diciendo: Estos son los cuernos que dispersaron a Judá, de modo que nadie alzó su cabeza; y vinieron estos para aterrarlos, para derribar los cuernos de las naciones que alzaron cuerno contra la tierra de Judá para dispersarla.
+Y dije: ¿Qué vienen estos a hacer? Y dijo diciendo: Estos son los cuernos que dispersaron a Judá, de modo que nadie alzó su cabeza; y vinieron estos para aterrarlos, para derribar los cuernos de las naciones que alzan cuerno contra la tierra de Judá para dispersarla.
+
 
 ## Capítulo 2
 
 ### 2:1
 
-Y alcé mis ojos y miré, y he aquí un hombre, y en su mano un cordel de medir.
+Y alcé mis ojos y vi, y he aquí un hombre, y en su mano un cordel de medir.
 
 ### 2:2
 
-Y dije: ¿Adónde vas? Y me dijo: A medir a Jerusalén, para ver cuánta es su anchura y cuánta su longitud.
+Y dije: ¿Adónde vas tú? Y me dijo: A medir a Jerusalén, para ver cuánta es su anchura y cuánta su longitud.
 
 ### 2:3
 
@@ -105,7 +108,7 @@ Y he aquí el ángel que hablaba conmigo salía, y otro ángel salía a su encue
 
 ### 2:4
 
-Y le dijo: Corre, habla a aquel joven, diciendo: Sin muros será habitada Jerusalén, por la multitud de hombres y de ganado en medio de ella.
+Y le dijo: Corre, habla a aquel joven, diciendo: Como lugares abiertos será habitada Jerusalén, por la multitud de hombres y de ganado en medio de ella.
 
 ### 2:5
 
@@ -113,57 +116,58 @@ Y yo seré para ella, declara Jehová, muro de fuego en derredor, y para gloria 
 
 ### 2:6
 
-¡Ea, ea! Huyan de la tierra del norte, declara Jehová; porque como los cuatro vientos de los cielos los esparcí, declara Jehová.
+¡Ay, ay! Huyan de la tierra del norte, declara Jehová; porque como los cuatro vientos de los cielos esparcí a ustedes, declara Jehová.
 
 ### 2:7
 
-¡Ea, Sión! Escapa, tú que habitas con la hija de Babilonia.
+¡Ay, Sión! Escapa, tú que habitas, hija de Babilonia.
 
 ### 2:8
 
-Porque así dice Jehová de los ejércitos: Tras la gloria me ha enviado a las naciones que los despojaron a ustedes; porque el que los toca, toca la niña de su ojo.
+Porque así dice Jehová de los ejércitos: Tras la gloria me envió a las naciones que despojan a ustedes; porque el que toca a ustedes, toca la niña de su ojo.
 
 ### 2:9
 
-Porque he aquí yo agito mi mano sobre ellas, y serán despojo para sus siervos; y sabrán que Jehová de los ejércitos me ha enviado.
+Porque he aquí yo agito mi mano sobre ellas, y serán despojo para sus siervos; y sabrán que Jehová de los ejércitos me envió.
 
 ### 2:10
 
-Canta y alégrate, hija de Sión; porque he aquí yo vengo, y habitaré en medio de ti, declara Jehová.
+Canta de júbilo y alégrate, hija de Sión; porque he aquí yo vengo, y habitaré en medio de ti, declara Jehová.
 
 ### 2:11
 
-Y se unirán muchas naciones a Jehová en aquel día, y serán para mí por pueblo; y habitaré en medio de ti, y sabrás que Jehová de los ejércitos me ha enviado a ti.
+Y se unirán muchas naciones a Jehová en aquel día, y serán para mí por pueblo; y habitaré en medio de ti, y sabrás que Jehová de los ejércitos me envió a ti.
 
 ### 2:12
 
-Y heredará Jehová a Judá, su porción sobre la tierra santa, y escogerá aún a Jerusalén.
+Y heredará Jehová a Judá, su porción, sobre la tierra santa, y escogerá aún a Jerusalén.
 
 ### 2:13
 
-Calle toda carne delante de Jehová, porque él se ha despertado de su santa morada.
+¡Silencio, toda carne, delante de Jehová, porque él se ha despertado de la morada de su santidad!
+
 
 ## Capítulo 3
 
 ### 3:1
 
-Y me mostró a Josué el sumo sacerdote, que estaba de pie delante del ángel de Jehová; y Satanás estaba a su derecha para acusarlo.
+Y me mostró a Josué el sumo sacerdote, de pie delante del ángel de Jehová; y el acusador estaba de pie a su derecha para acusarlo.
 
 ### 3:2
 
-Y dijo Jehová a Satanás: Jehová te reprenda, Satanás; y te reprenda Jehová, el que ha escogido a Jerusalén. ¿No es este un tizón arrebatado del fuego?
+Y dijo Jehová al acusador: Jehová te reprenda, acusador; y te reprenda Jehová, el que escoge a Jerusalén. ¿No es este un tizón arrebatado del fuego?
 
 ### 3:3
 
-Y Josué estaba vestido de ropas sucias, y estaba de pie delante del ángel.
+Y Josué estaba vestido de ropas inmundas, y de pie delante del ángel.
 
 ### 3:4
 
-Y respondió y dijo a los que estaban delante de él, diciendo: Quiten de sobre él las ropas sucias. Y le dijo: Mira, he quitado de sobre ti tu iniquidad, y te vestiré de ropas de gala.
+Y respondió y dijo a los que estaban de pie delante de él, diciendo: Quiten de sobre él las ropas inmundas. Y le dijo: Mira, he hecho pasar de sobre ti tu iniquidad, y te vestiré de ropas de gala.
 
 ### 3:5
 
-Y dije: Pongan un turbante limpio sobre su cabeza. Y pusieron el turbante limpio sobre su cabeza, y lo vistieron con ropas; y el ángel de Jehová estaba de pie.
+Y dije: Pongan un turbante puro sobre su cabeza. Y pusieron el turbante puro sobre su cabeza, y lo vistieron de ropas; y el ángel de Jehová estaba de pie.
 
 ### 3:6
 
@@ -171,19 +175,20 @@ Y el ángel de Jehová amonestó a Josué, diciendo:
 
 ### 3:7
 
-Así dice Jehová de los ejércitos: Si andas en mis caminos, y si guardas mi ordenanza, entonces tú también juzgarás mi casa, y también guardarás mis atrios, y te daré paso entre estos que están aquí de pie.
+Así dice Jehová de los ejércitos: Si andas en mis caminos, y si guardas mi encargo, entonces tú también juzgarás mi casa, y también guardarás mis atrios, y te daré paso entre estos que están de pie.
 
 ### 3:8
 
-Oye ahora, Josué sumo sacerdote, tú y tus compañeros que se sientan delante de ti, porque son hombres de presagio; porque he aquí yo traigo a mi siervo, el Renuevo.
+Oye ahora, Josué, el sumo sacerdote, tú y tus compañeros que están sentados delante de ti, porque ellos son hombres de señal; porque he aquí yo traigo a mi siervo, Renuevo.
 
 ### 3:9
 
-Porque he aquí la piedra que he puesto delante de Josué; sobre una sola piedra hay siete ojos. He aquí yo grabaré su grabadura, declara Jehová de los ejércitos, y quitaré la iniquidad de aquella tierra en un solo día.
+Porque he aquí la piedra que he puesto delante de Josué: sobre una piedra, siete ojos. He aquí yo grabo su grabadura, declara Jehová de los ejércitos, y quitaré la iniquidad de aquella tierra en un día.
 
 ### 3:10
 
-En aquel día, declara Jehová de los ejércitos, convidarán cada uno a su prójimo debajo de la vid y debajo de la higuera.
+En aquel día, declara Jehová de los ejércitos, llamarán cada uno a su prójimo debajo de la vid y debajo de la higuera.
+
 
 ## Capítulo 4
 
@@ -193,11 +198,11 @@ Y volvió el ángel que hablaba conmigo, y me despertó como un hombre que es de
 
 ### 4:2
 
-Y me dijo: ¿Qué ves? Y dije: He mirado, y he aquí un candelabro todo de oro, con su depósito sobre su cabeza, y sus siete lámparas sobre él, siete y siete tubos para las lámparas que están sobre su cabeza.
+Y me dijo: ¿Qué ves tú? Y dije: He visto, y he aquí un candelabro de oro, todo él, y su tazón sobre su cabeza, y sus siete lámparas sobre él, siete y siete tubos para las lámparas que están sobre su cabeza.
 
 ### 4:3
 
-Y dos olivos sobre él, uno a la derecha del depósito, y otro a su izquierda.
+Y dos olivos sobre él, uno a la derecha del tazón, y otro sobre su izquierda.
 
 ### 4:4
 
@@ -213,7 +218,7 @@ Y respondió y me dijo, diciendo: Esta es palabra de Jehová a Zorobabel, dicien
 
 ### 4:7
 
-¿Quién eres tú, oh gran monte? Delante de Zorobabel serás llanura. Y sacará la piedra principal con aclamaciones de: ¡Gracia, gracia a ella!
+¿Quién eres tú, el gran monte? Delante de Zorobabel, a llanura. Y sacará la piedra principal, aclamaciones: ¡Gracia, gracia a ella!
 
 ### 4:8
 
@@ -221,11 +226,11 @@ Y vino palabra de Jehová a mí, diciendo:
 
 ### 4:9
 
-Las manos de Zorobabel pusieron el cimiento de esta casa, y sus manos la acabarán; y sabrás que Jehová de los ejércitos me ha enviado a ustedes.
+Las manos de Zorobabel pusieron el cimiento de esta casa, y sus manos la acabarán; y sabrás que Jehová de los ejércitos me envió a ustedes.
 
 ### 4:10
 
-Porque los que menospreciaron el día de las pequeñeces se alegrarán, y verán la piedra de estaño en la mano de Zorobabel. Estos siete son los ojos de Jehová, que recorren toda la tierra.
+Porque ¿quién menospreció el día de las pequeñeces? Y se alegrarán, y verán la piedra de estaño en la mano de Zorobabel. Estos siete: los ojos de Jehová, ellos recorren toda la tierra.
 
 ### 4:11
 
@@ -233,7 +238,7 @@ Y respondí y le dije: ¿Qué son estos dos olivos a la derecha del candelabro y
 
 ### 4:12
 
-Y respondí por segunda vez y le dije: ¿Qué son las dos ramas de olivo que por medio de dos tubos de oro vierten de sí el oro?
+Y respondí por segunda vez y le dije: ¿Qué son las dos ramas de los olivos que están en la mano de los dos tubos de oro, que vierten de sobre ellos el oro?
 
 ### 4:13
 
@@ -241,45 +246,46 @@ Y me dijo, diciendo: ¿No sabes qué son estos? Y dije: No, señor mío.
 
 ### 4:14
 
-Y dijo: Estos son los dos hijos del aceite, que están delante del Señor de toda la tierra.
+Y dijo: Estos son los dos hijos del aceite, que están de pie junto al Señor de toda la tierra.
+
 
 ## Capítulo 5
 
 ### 5:1
 
-Y volví y alcé mis ojos y miré, y he aquí un rollo que volaba.
+Y volví y alcé mis ojos y vi, y he aquí un rollo que volaba.
 
 ### 5:2
 
-Y me dijo: ¿Qué ves? Y dije: Veo un rollo que vuela; su longitud es de veinte codos, y su anchura de diez codos.
+Y me dijo: ¿Qué ves tú? Y dije: Yo veo un rollo que vuela; su longitud es de veinte codos, y su anchura de diez codos.
 
 ### 5:3
 
-Y me dijo: Esta es la maldición que sale sobre la faz de toda la tierra; porque todo el que hurta, de este lado conforme a ella, ha quedado impune; y todo el que jura, del otro lado conforme a ella, ha quedado impune.
+Y me dijo: Esta es la maldición que sale sobre la faz de toda la tierra; porque todo el que hurta, de este conforme a ella, es limpiado; y todo el que jura, de este conforme a ella, es limpiado.
 
 ### 5:4
 
-La he sacado, declara Jehová de los ejércitos, y vendrá a la casa del ladrón, y a la casa del que jura falsamente en mi nombre; y morará en medio de su casa, y la consumirá con sus maderas y con sus piedras.
+La he sacado, declara Jehová de los ejércitos, y vendrá a la casa del ladrón y a la casa del que jura en mi nombre para mentira; y morará en medio de su casa, y la consumirá, y sus maderos y sus piedras.
 
 ### 5:5
 
-Y salió el ángel que hablaba conmigo, y me dijo: Alza ahora tus ojos y mira qué es esto que sale.
+Y salió el ángel que hablaba conmigo, y me dijo: Alza ahora tus ojos y mira qué es esta que sale.
 
 ### 5:6
 
-Y dije: ¿Qué es? Y dijo: Esta es la efa que sale. Y dijo: Esta es la iniquidad de ellos en toda la tierra.
+Y dije: ¿Qué es? Y dijo: Esta es la efa que sale. Y dijo: Esta es el ojo de ellos en toda la tierra.
 
 ### 5:7
 
-Y he aquí, una tapa de plomo fue levantada, y había una mujer sentada en medio de la efa.
+Y he aquí un talento de plomo levantado, y esta: una mujer sentada en medio de la efa.
 
 ### 5:8
 
-Y dijo: Esta es la Maldad. Y la arrojó dentro de la efa, y arrojó la piedra de plomo sobre la boca de ella.
+Y dijo: Esta es la maldad. Y la arrojó al medio de la efa, y arrojó la piedra de plomo a la boca de ella.
 
 ### 5:9
 
-Y alcé mis ojos y miré, y he aquí dos mujeres que salían, y viento había en sus alas; y tenían alas como alas de cigüeña. Y levantaron la efa entre la tierra y los cielos.
+Y alcé mis ojos y vi, y he aquí dos mujeres que salían, y viento en sus alas; y a ellas alas como las alas de la cigüeña. Y levantaron la efa entre la tierra y los cielos.
 
 ### 5:10
 
@@ -287,21 +293,22 @@ Y dije al ángel que hablaba conmigo: ¿Adónde llevan la efa?
 
 ### 5:11
 
-Y me dijo: Para edificarle casa en la tierra de Sinar; y será preparada y asentada allí sobre su base.
+Y me dijo: Para edificarle una casa en la tierra de Sinar; y será preparado, y será asentada allí sobre su base.
+
 
 ## Capítulo 6
 
 ### 6:1
 
-Y volví y alcé mis ojos y miré, y he aquí cuatro carros que salían de entre dos montes; y los montes eran montes de bronce.
+Y volví y alcé mis ojos y vi, y he aquí cuatro carros que salían de entre los dos montes; y los montes eran montes de bronce.
 
 ### 6:2
 
-En el primer carro había caballos rojos, y en el segundo carro caballos negros.
+En el primer carro caballos rojos, y en el segundo carro caballos negros.
 
 ### 6:3
 
-Y en el tercer carro caballos blancos, y en el cuarto carro caballos manchados y fuertes.
+Y en el tercer carro caballos blancos, y en el cuarto carro caballos manchados, fuertes.
 
 ### 6:4
 
@@ -309,11 +316,11 @@ Y respondí y dije al ángel que hablaba conmigo: ¿Qué son estos, señor mío?
 
 ### 6:5
 
-Y respondió el ángel y me dijo: Estos son los cuatro vientos de los cielos, que salen después de presentarse delante del Señor de toda la tierra.
+Y respondió el ángel y me dijo: Estos son los cuatro vientos de los cielos, que salen de presentarse junto al Señor de toda la tierra.
 
 ### 6:6
 
-Los caballos negros que están en él salen hacia la tierra del norte, y los blancos salieron tras ellos, y los manchados salieron hacia la tierra del sur.
+Los caballos negros que están en ella salen hacia la tierra del norte, y los blancos salieron tras ellos, y los manchados salieron hacia la tierra del sur.
 
 ### 6:7
 
@@ -321,7 +328,7 @@ Y los fuertes salieron y procuraron ir a recorrer la tierra. Y dijo: Vayan, reco
 
 ### 6:8
 
-Y me llamó y me habló, diciendo: Mira, los que salen hacia la tierra del norte han hecho reposar mi Espíritu en la tierra del norte.
+Y me gritó y me habló, diciendo: Mira, los que salen hacia la tierra del norte han hecho reposar mi espíritu en la tierra del norte.
 
 ### 6:9
 
@@ -329,7 +336,7 @@ Y vino palabra de Jehová a mí, diciendo:
 
 ### 6:10
 
-Toma de los del cautiverio, de Heldai, de Tobías y de Jedaías, y ven tú en aquel día, y entra en casa de Josías hijo de Sofonías, adonde vinieron desde Babilonia.
+Toma de los desterrados, de Heldai, y de Tobías y de Jedaías, y ven tú en aquel día, y entra en casa de Josías hijo de Sofonías, que vinieron de Babilonia.
 
 ### 6:11
 
@@ -337,11 +344,11 @@ Y tomarás plata y oro, y harás coronas, y las pondrás en la cabeza de Josué 
 
 ### 6:12
 
-Y le hablarás, diciendo: Así dice Jehová de los ejércitos, diciendo: He aquí el hombre cuyo nombre es el Renuevo, y de debajo de sí brotará, y edificará el templo de Jehová.
+Y le hablarás, diciendo: Así dice Jehová de los ejércitos, diciendo: He aquí el hombre, Renuevo es su nombre, y de debajo de él brotará, y edificará el templo de Jehová.
 
 ### 6:13
 
-Y él edificará el templo de Jehová, y él llevará la gloria, y se sentará y dominará en su trono; y será sacerdote en su trono, y consejo de paz habrá entre ambos.
+Y él edificará el templo de Jehová, y él llevará la majestad, y se sentará y gobernará sobre su trono; y será sacerdote sobre su trono, y consejo de paz habrá entre ambos.
 
 ### 6:14
 
@@ -349,29 +356,28 @@ Y las coronas serán para Helem, y para Tobías, y para Jedaías, y para Hen hij
 
 ### 6:15
 
-Y los que están lejos vendrán y edificarán en el templo de Jehová, y sabrán que Jehová de los ejércitos me ha enviado a ustedes. Y será, si diligentemente obedecen la voz de Jehová su Dios.
-
+Y los que están lejos vendrán y edificarán en el templo de Jehová, y sabrán que Jehová de los ejércitos me envió a ustedes. Y será, si de oír oyen la voz de Jehová su Dios.
 ## Capítulo 7
 
 ### 7:1
 
-Y aconteció en el año cuarto del rey Darío, que vino palabra de Jehová a Zacarías, en el cuarto día del mes noveno, que es Quisleu.
+Y aconteció en el año cuarto de Darío el rey: vino palabra de Jehová a Zacarías, en el cuatro del mes noveno, en Quisleu.
 
 ### 7:2
 
-Cuando Bet-el envió a Sarezer y a Regem-melec y a sus hombres, a implorar el favor de Jehová,
+Y envió Bet-el a Sarezer y a Regem-melec y a sus hombres, para implorar el rostro de Jehová,
 
 ### 7:3
 
-y a hablar a los sacerdotes que estaban en la casa de Jehová de los ejércitos, y a los profetas, diciendo: ¿Lloraré yo en el mes quinto, ayunando, como lo he hecho ya tantos años?
+diciendo a los sacerdotes que son de la casa de Jehová de los ejércitos, y a los profetas, diciendo: ¿Lloraré en el mes quinto, absteniéndome, como he hecho esto, cuántos años?
 
 ### 7:4
 
-Y vino a mí palabra de Jehová de los ejércitos, diciendo:
+Y vino palabra de Jehová de los ejércitos a mí, diciendo:
 
 ### 7:5
 
-Di a todo el pueblo de la tierra, y a los sacerdotes, diciendo: Cuando ayunaron y lloraron en el quinto y en el séptimo mes estos setenta años, ¿acaso ayunaron para mí?
+Di a todo el pueblo de la tierra y a los sacerdotes, diciendo: Cuando ayunaron y lamentando en el quinto y en el séptimo, y esto setenta años, ¿de ayunar me ayunaron a mí, yo?
 
 ### 7:6
 
@@ -379,7 +385,7 @@ Y cuando comen y cuando beben, ¿no son ustedes los que comen y ustedes los que 
 
 ### 7:7
 
-¿No son estas las palabras que Jehová proclamó por medio de los primeros profetas, cuando Jerusalén estaba habitada y próspera, con sus ciudades alrededor, y el Neguev y la Sefela estaban habitados?
+¿No son las palabras que proclamó Jehová por mano de los primeros profetas, cuando Jerusalén estaba habitada y tranquila, y sus ciudades alrededor de ella, y el Neguev y la Sefela habitaba?
 
 ### 7:8
 
@@ -387,28 +393,27 @@ Y vino palabra de Jehová a Zacarías, diciendo:
 
 ### 7:9
 
-Así dice Jehová de los ejércitos, diciendo: Juzguen juicio verdadero, y hagan misericordia y compasión cada uno con su hermano.
+Así dice Jehová de los ejércitos, diciendo: Juzguen juicio verdadero, y hagan misericordia y compasiones cada uno con su hermano.
 
 ### 7:10
 
-No opriman a la viuda, ni al huérfano, ni al extranjero, ni al pobre; y ninguno piense mal en su corazón contra su hermano.
+Y a la viuda y al huérfano, al extranjero y al pobre no opriman; y el mal de un hombre, su hermano, no piensen en su corazón.
 
 ### 7:11
 
-Pero no quisieron escuchar, y dieron hombro rebelde, y taparon sus oídos para no oír.
+Y rehusaron prestar atención, y dieron hombro rebelde, y sus oídos hicieron pesados para no oír.
 
 ### 7:12
 
-Y pusieron su corazón como diamante, para no oír la ley y las palabras que Jehová de los ejércitos envió por su Espíritu, por medio de los primeros profetas; y vino gran enojo de parte de Jehová de los ejércitos.
+Y su corazón pusieron como diamante, para no oír la ley y las palabras que envió Jehová de los ejércitos por su Espíritu, por mano de los primeros profetas; y hubo gran ira de parte de Jehová de los ejércitos.
 
 ### 7:13
 
-Y aconteció que así como él clamó y no escucharon, así ellos clamarán y yo no escucharé, dijo Jehová de los ejércitos.
+Y aconteció: como él llamó y no oyeron, así ellos llamarán y yo no oiré, dijo Jehová de los ejércitos.
 
 ### 7:14
 
-Y los dispersé con torbellino sobre todas las naciones que no conocieron; y la tierra fue desolada tras ellos, sin quien fuese ni viniese; y convirtieron la tierra deseable en desolación.
-
+Y los lanzaré con torbellino sobre todas las naciones que no los conocieron; y la tierra fue asolada tras ellos, sin quien pasa y sin quien vuelve; y pusieron una tierra deseable en desolación.
 ## Capítulo 8
 
 ### 8:1
@@ -417,15 +422,15 @@ Y vino palabra de Jehová de los ejércitos, diciendo:
 
 ### 8:2
 
-Así dice Jehová de los ejércitos: Celé por Sión con gran celo, y con gran ira celé por ella.
+Así dice Jehová de los ejércitos: Celé por Sión con gran celo, y con gran furor celé por ella.
 
 ### 8:3
 
-Así dice Jehová: Yo he vuelto a Sión, y habitaré en medio de Jerusalén; y Jerusalén será llamada Ciudad de Verdad, y el monte de Jehová de los ejércitos, Monte Santo.
+Así dice Jehová: Me he vuelto a Sión, y habitaré en medio de Jerusalén; y Jerusalén será llamada Ciudad de la Verdad, y el monte de Jehová de los ejércitos, monte de la santidad.
 
 ### 8:4
 
-Así dice Jehová de los ejércitos: Aún se sentarán ancianos y ancianas en las plazas de Jerusalén, cada uno con su bastón en su mano, por la multitud de días.
+Así dice Jehová de los ejércitos: Aún se sentarán ancianos y ancianas en las plazas de Jerusalén, y un hombre su bastón en su mano por la multitud de días.
 
 ### 8:5
 
@@ -433,11 +438,11 @@ Y las plazas de la ciudad se llenarán de niños y niñas jugando en sus plazas.
 
 ### 8:6
 
-Así dice Jehová de los ejércitos: Si esto parece maravilloso ante los ojos del remanente de este pueblo en aquellos días, ¿también será maravilloso ante mis ojos? declara Jehová de los ejércitos.
+Así dice Jehová de los ejércitos: Si es maravilloso a los ojos del remanente de este pueblo en aquellos días, ¿también a mis ojos será maravilloso? declara Jehová de los ejércitos.
 
 ### 8:7
 
-Así dice Jehová de los ejércitos: He aquí yo salvo a mi pueblo de la tierra del oriente y de la tierra del poniente del sol.
+Así dice Jehová de los ejércitos: He aquí yo salvo a mi pueblo de la tierra del oriente y de la tierra de la entrada del sol.
 
 ### 8:8
 
@@ -445,23 +450,23 @@ Y los traeré, y habitarán en medio de Jerusalén; y serán para mí por pueblo
 
 ### 8:9
 
-Así dice Jehová de los ejércitos: Fortalézcanse sus manos, ustedes que oyen en estos días estas palabras de boca de los profetas que hablaron desde el día que se puso el cimiento de la casa de Jehová de los ejércitos, para que el templo fuese edificado.
+Así dice Jehová de los ejércitos: Sean fuertes sus manos, los que oyen en estos días estas palabras de la boca de los profetas, que en el día en que fue cimentada la casa de Jehová de los ejércitos, el templo, para ser edificado.
 
 ### 8:10
 
-Porque antes de aquellos días no había paga para el hombre, ni paga para la bestia; ni había paz para el que salía ni para el que entraba, a causa del adversario; y yo solté a todo hombre, cada uno contra su prójimo.
+Porque antes de aquellos días no hubo paga para el hombre, ni paga para la bestia; ni para el que salía ni para el que entraba había paz a causa del adversario; y yo solté a todo hombre, cada uno contra su prójimo.
 
 ### 8:11
 
-Pero ahora no seré para el remanente de este pueblo como en los días primeros, declara Jehová de los ejércitos.
+Y ahora, no como los días primeros soy yo para el remanente de este pueblo, declara Jehová de los ejércitos.
 
 ### 8:12
 
-Porque habrá siembra de paz; la vid dará su fruto, y la tierra dará su producto, y los cielos darán su rocío; y haré que el remanente de este pueblo herede todas estas cosas.
+Porque siembra de paz: la vid dará su fruto, y la tierra dará su producto, y los cielos darán su rocío; y haré heredar al remanente de este pueblo todas estas cosas.
 
 ### 8:13
 
-Y será que así como fueron maldición entre las naciones, oh casa de Judá y casa de Israel, así los salvaré, y serán bendición. No teman; fortalézcanse sus manos.
+Y será que como fueron maldición entre las naciones, casa de Judá y casa de Israel, así los salvaré, y serán bendición. No teman; sean fuertes sus manos.
 
 ### 8:14
 
@@ -469,23 +474,23 @@ Porque así dice Jehová de los ejércitos: Como me propuse hacerles mal cuando 
 
 ### 8:15
 
-así de nuevo me he propuesto en estos días hacer bien a Jerusalén y a la casa de Judá. No teman.
+así me he vuelto, me he propuesto en estos días hacer bien a Jerusalén y a la casa de Judá. No teman.
 
 ### 8:16
 
-Estas son las cosas que deben hacer: Hablen verdad cada uno con su prójimo; juzguen con verdad y juicio de paz en sus puertas.
+Estas son las cosas que harán: Hablen verdad cada uno con su prójimo; verdad y juicio de paz juzguen en sus puertas.
 
 ### 8:17
 
-Y ninguno piense mal en su corazón contra su prójimo, ni amen juramento falso; porque todas estas cosas son las que aborrezco, declara Jehová.
+Y el mal de su prójimo no piensen en su corazón, ni amen juramento de mentira; porque todas estas que aborrecí, declara Jehová.
 
 ### 8:18
 
-Y vino a mí palabra de Jehová de los ejércitos, diciendo:
+Y vino palabra de Jehová de los ejércitos a mí, diciendo:
 
 ### 8:19
 
-Así dice Jehová de los ejércitos: El ayuno del cuarto mes, y el ayuno del quinto, y el ayuno del séptimo, y el ayuno del décimo, se convertirán para la casa de Judá en gozo y alegría, y en fiestas solemnes buenas. Amen, pues, la verdad y la paz.
+Así dice Jehová de los ejércitos: El ayuno del cuarto, y el ayuno del quinto, y el ayuno del séptimo, y el ayuno del décimo, será para la casa de Judá para gozo y para alegría y para fiestas buenas. Amen la verdad y la paz.
 
 ### 8:20
 
@@ -493,16 +498,15 @@ Así dice Jehová de los ejércitos: Aún vendrán pueblos y habitantes de mucha
 
 ### 8:21
 
-Y los habitantes de una ciudad irán a otra, diciendo: Vamos a implorar el favor de Jehová, y a buscar a Jehová de los ejércitos. Yo también iré.
+Y irán los habitantes de una a otra, diciendo: Vamos, de ir, a implorar el rostro de Jehová y a buscar a Jehová de los ejércitos. Iré también yo.
 
 ### 8:22
 
-Y vendrán muchos pueblos y naciones poderosas a buscar a Jehová de los ejércitos en Jerusalén, y a implorar el favor de Jehová.
+Y vendrán muchos pueblos y naciones poderosas a buscar a Jehová de los ejércitos en Jerusalén, y a implorar el rostro de Jehová.
 
 ### 8:23
 
-Así dice Jehová de los ejércitos: En aquellos días acontecerá que diez hombres de todas las lenguas de las naciones asirán la orla del manto de un hombre judío, diciendo: Iremos con ustedes, porque hemos oído que Dios está con ustedes.
-
+Así dice Jehová de los ejércitos: En aquellos días asirán diez hombres de todas las lenguas de las naciones, y asirán la orla de un hombre judío, diciendo: Iremos con ustedes, porque hemos oído que Dios está con ustedes.
 ## Capítulo 9
 
 ### 9:1

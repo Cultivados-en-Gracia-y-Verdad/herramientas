@@ -1,0 +1,26 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+items:
+- id: G0A-0001
+  reference: Daniel 10:6
+  decision: APPROVED
+  confidence: high
+  evidence: 'הָמֽוֹן (H1995, HNcmsa) se representa ahora con «multitud», el valor
+    primario del lemma (muchedumbre / estruendo de muchedumbre), en un símil sobre
+    el SONIDO de sus palabras. «Ejército» estrechaba el lemma a un cuerpo militar
+    y además chocaba con el uso establecido del libro: en Daniel 11:13 «ejército»
+    traduce חַ֥יִל (H2428) en la misma cláusula en que הָמ֔וֹן se traduce «multitud».
+    Con este cambio las 6 ocurrencias de H1995 en Daniel (10:6; 11:10; 11:11 ×2; 11:12;
+    11:13) se traducen «multitud» de forma consistente, y «ejército» queda reservado
+    para H2428. El resto del versículo no se modifica: verificado que «multitud» →
+    «ejército» reproduce exactamente el texto aprobado anterior.'
+  notes: 'Edición de alcance de una sola referencia, registrada en workflow/daniel/lexical-edits.jsonl
+    con scope «Single Reference». book_lexical_edit.py rechazó correctamente la edición
+    de alcance de libro porque no puede distinguir el «ejército» de H2428 en 11:13
+    del de H1995; el rechazo es comportamiento correcto de la herramienta, no un defecto.
+    Queda abierta para la revisión final del libro la otra observación de 10:6: כְ/תַרְשִׁישׁ
+    traducido «piedra de Tarsis», donde «piedra» no está en el hebreo. Pendiente para
+    G0B: el cambio de longitud invalida los char spans de este versículo.'

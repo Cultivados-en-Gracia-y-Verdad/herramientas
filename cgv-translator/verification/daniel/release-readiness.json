@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "recordType": "RELEASE_READINESS_REPORT",
+  "book": "daniel",
+  "checkedAt": "2026-08-14T17:41:58+00:00",
+  "authority": "DETERMINISTIC_FACTS_ONLY",
+  "aiVerificationPermitted": false,
+  "status": "PASS",
+  "inputRevisionIds": {
+    "source": "SRC-daniel-40f53bf5f46f",
+    "translation": "TR-daniel-b338d84ac2cb",
+    "alignment": "ALN-daniel-113848f598db"
+  },
+  "scriptFacts": {
+    "translationDefectCount": 0,
+    "alignmentDefectCount": 0,
+    "translationLegacyLabels": {
+      "lbf-approved": 356,
+      "lbf-preliminary": 1
+    },
+    "alignmentDraft": {
+      "path": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/translations/oshb-spine/daniel/daniel-reverse-links.draft-v1.json",
+      "exists": true,
+      "sha256": "113848f598dbf230badfce1b2489cfbee2612a136270e2ad8a9b7cee5513441e",
+      "gitTracked": false,
+      "deterministicDefectCount": 0,
+      "verificationAuthority": false
+    },
+    "sourceOrigin": {
+      "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/interlinears/OT/daniel.tokens.jsonl",
+      "exists": true,
+      "sha256": "f41d7613834a2fac3b1148eea1f971a70252bd574b0d6568b953d34f1138b598",
+      "gitTracked": true,
+      "spineTokenCount": 6035,
+      "originTokenCount": 6035,
+      "mismatchCount": 0,
+      "exactFieldMatch": true
+    }
+  },
+  "humanGates": {
+    "G0A": {
+      "status": "PASS",
+      "detail": "all 357 verses passed human review for these exact bytes"
+    },
+    "G0B": {
+      "status": "PASS",
+      "detail": "all 357 verses passed human review for these exact bytes"
+    }
+  },
+  "investigations": [
+    {
+      "id": "INV-27-0001",
+      "status": "RESOLVED",
+      "releaseBlocking": true,
+      "classification": "EXPLICIT"
+    },
+    {
+      "id": "INV-27-0002",
+      "status": "RESOLVED",
+      "releaseBlocking": true,
+      "classification": "EXPLICIT"
+    }
+  ],
+  "publicationInventory": {
+    "cgvDataRepository": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data",
+    "textCandidates": [
+      {
+        "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/daniel.lbf.md",
+        "exists": false,
+        "sha256": null,
+        "gitTracked": null
+      },
+      {
+        "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/daniel.lbf.final.md",
+        "exists": false,
+        "sha256": null,
+        "gitTracked": null
+      }
+    ],
+    "alignmentCandidate": {
+      "path": "/Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/alignments/daniel.alignment.json",
+      "exists": false,
+      "sha256": null,
+      "gitTracked": null
+    },
+    "managerState": {
+      "path": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-MANAGER/projects/daniel/state.yaml",
+      "exists": true,
+      "sha256": "5635e0fa42dc05b778e5c46ed6016ad8178f84e8292fbb4001e1d121b5c59a20",
+      "gitTracked": true
+    }
+  },
+  "blockers": []
+}

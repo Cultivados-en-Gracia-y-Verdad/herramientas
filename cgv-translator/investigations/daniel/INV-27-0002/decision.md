@@ -1,15 +1,33 @@
 # Decision
 
-## Version 0.1
+## Version 1.0
 
-Status: Draft
-Version: 0.1
-Effective Date: 2026-08-10
+Status: Resolved
+Release-Blocking: Yes
+Decision-Maker: John Wry
+Authority: Human
+Approved-At: 2026-08-14T15:41:34Z
+Version: 1.0
+Effective Date: 2026-08-14
 Lemma: עָלֶֽי/הָ
 Strong's: H5921
-Preferred Rendering: 
-Confidence: 
+Preferred Rendering: Context-sensitive occurrence-specific Spanish in the current G0A-approved Daniel revision
+Confidence: High
+Known Uncertainty: None that blocks release
+
+### Alternatives Considered
+
+1. Require one uniform Spanish rendering for every H5921 occurrence.
+2. Preserve the current occurrence-specific renderings already reviewed in G0A.
+
+### Conclusion
+
+No additional book-wide uniform-rendering rule is required. The current occurrence-specific Spanish, already passed through G0A, remains approved. Context-sensitive rendering is preferred over forced uniformity.
 
 ### Reason
 
-Investigation opened; decision not yet made.
+John Wry reviewed and confirmed this resolution as the accountable human decision-maker. The decision changes no controlled Spanish or alignment content, so the current G0A and G0B decisions remain valid under the workflow invalidation matrix.
+
+### Affected Scope
+
+Daniel occurrences of H5921 in translation revision `TR-daniel-b338d84ac2cb`.

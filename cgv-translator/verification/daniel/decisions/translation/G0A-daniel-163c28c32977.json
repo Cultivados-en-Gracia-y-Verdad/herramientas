@@ -1,0 +1,27 @@
+{
+  "recordId": "G0A-daniel-163c28c32977",
+  "schemaVersion": 1,
+  "revision": 1,
+  "recordType": "GATE_DECISION",
+  "book": "daniel",
+  "gate": "G0A",
+  "inputRevisionIds": {
+    "source": "SRC-daniel-40f53bf5f46f",
+    "translation": "TR-daniel-b338d84ac2cb"
+  },
+  "reviewer": "Brandon Flores",
+  "authority": "HUMAN",
+  "reviewMethod": "DIRECT_HUMAN_REVIEW",
+  "aiUsed": false,
+  "result": "PASS",
+  "scope": {
+    "type": "VERSE_SET",
+    "references": [
+      "Daniel 9:4"
+    ]
+  },
+  "findings": "Direct human G0A review completed; PASS communicated by Brandon Flores and confirmed by John Wry for the exact bound revision.",
+  "timestamp": "2026-08-14T14:40:28+00:00",
+  "owner": "",
+  "nextAction": ""
+}

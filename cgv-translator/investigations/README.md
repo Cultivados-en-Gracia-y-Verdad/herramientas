@@ -48,8 +48,8 @@ Do not treat an old investigation as automatically deciding a new book context w
 Before a book can pass its final release gate:
 
 - every required investigation owned by that book must be resolved and documented, or explicitly classified as a non-blocking deferred question;
-- any investigation whose decision changes Spanish must have the affected G0A verification repeated;
-- any investigation whose decision changes alignment must have the affected G0B verification repeated;
+- any investigation whose decision changes Spanish must have the affected translation verification repeated;
+- any investigation whose decision changes alignment must have the affected alignment verification repeated;
 - unresolved blocking investigations keep the book out of `cgv-data`.
 
 ## Existing legacy layout

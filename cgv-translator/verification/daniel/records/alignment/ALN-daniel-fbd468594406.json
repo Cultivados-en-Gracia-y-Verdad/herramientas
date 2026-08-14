@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "recordId": "ALN-daniel-fbd468594406",
+  "revision": 1,
+  "recordType": "ALIGNMENT",
+  "book": "daniel",
+  "author": "legacy-alignment-producer",
+  "recordedAt": "2026-08-14T14:25:49+00:00",
+  "status": "DRAFT",
+  "artifact": {
+    "path": "translations/oshb-spine/daniel/daniel-reverse-links.json",
+    "sha256": "fbd4685944066ed6f5582f4ca546081c87d78515e045766e947cc61dfdc75a72"
+  },
+  "details": {
+    "generator": null,
+    "textualBasis": "OSHB/WLC"
+  },
+  "owner": "John Wry",
+  "nextAction": "Submit only after current G0A PASS, then perform direct human G0B review."
+}

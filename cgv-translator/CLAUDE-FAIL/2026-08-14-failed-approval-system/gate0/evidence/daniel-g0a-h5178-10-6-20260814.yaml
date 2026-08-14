@@ -1,0 +1,187 @@
+schema_version: '0.1'
+queue:
+  id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+  artifact_revision: ''
+  artifacts:
+    spine:
+      path: translations/oshb-spine/daniel/daniel-oshb-spine.json
+      checksum_sha256: 40f53bf5f46fad84e28d796b3b3b7527f8420d47707af311a5959993dd8592c6
+    phrases:
+      path: translations/oshb-spine/daniel/daniel-phrases.json
+      checksum_sha256: 62eb9de6c79c73bee2809fc7b91e3b73a06f75901aac79d81aa5782f9bf21bca
+  created_at: '2026-08-14T00:58:01.745284+00:00'
+  status: PASS
+summary:
+  total: 1
+  approved_or_verified: 1
+  pending: 0
+  needs_revision_or_relink: 0
+  rejected: 0
+  escalated: 0
+items:
+- id: G0A-0001
+  review_key: G0A:Daniel 10:6
+  item_checksum: 92e3008dfacb18728cd176a39d95065767ff9720c16d01dcafa8f621d8a170ad
+  gate: G0A_TRANSLATION_APPROVAL
+  reference: Daniel 10:6
+  mt_reference: Daniel 10:6
+  spanish: Y su cuerpo era como piedra de Tarsis, y su rostro parecía un relámpago,
+    y sus ojos como antorchas de fuego, y sus brazos y sus pies como de color de bronce
+    resplandeciente, y la voz de sus palabras como la voz de ejército.
+  sourceTokenIds:
+  - h27010006001
+  - h27010006002
+  - h27010006003
+  - h27010006004
+  - h27010006005
+  - h27010006006
+  - h27010006007
+  - h27010006008
+  - h27010006009
+  - h27010006010
+  - h27010006011
+  - h27010006012
+  - h27010006013
+  - h27010006014
+  - h27010006015
+  - h27010006016
+  - h27010006017
+  source_tokens:
+  - sourceTokenId: h27010006001
+    surface: וּ/גְוִיָּת֣/וֹ
+    lang: he
+    lemma: c/1472
+    morph: HC/Ncfsc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27010006002
+    surface: כְ/תַרְשִׁ֗ישׁ
+    lang: he
+    lemma: k/8658
+    morph: HR/Ncmsa
+    gloss: null
+  - sourceTokenId: h27010006003
+    surface: וּ/פָנָ֞י/ו
+    lang: he
+    lemma: c/6440
+    morph: HC/Ncbpc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27010006004
+    surface: כְּ/מַרְאֵ֤ה
+    lang: he
+    lemma: k/4758
+    morph: HR/Ncmsc
+    gloss: null
+  - sourceTokenId: h27010006005
+    surface: בָרָק֙
+    lang: he
+    lemma: 1300 b
+    morph: HNcmsa
+    gloss: null
+  - sourceTokenId: h27010006006
+    surface: וְ/עֵינָי/ו֙
+    lang: he
+    lemma: c/5869 a
+    morph: HC/Ncbdc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27010006007
+    surface: כְּ/לַפִּ֣ידֵי
+    lang: he
+    lemma: k/3940
+    morph: HR/Ncmpc
+    gloss: null
+  - sourceTokenId: h27010006008
+    surface: אֵ֔שׁ
+    lang: he
+    lemma: '784'
+    morph: HNcbsa
+    gloss: null
+  - sourceTokenId: h27010006009
+    surface: וּ/זְרֹֽעֹתָי/ו֙
+    lang: he
+    lemma: c/2220
+    morph: HC/Ncbpc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27010006010
+    surface: וּ/מַרְגְּלֹתָ֔י/ו
+    lang: he
+    lemma: c/4772
+    morph: HC/Ncfpc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27010006011
+    surface: כְּ/עֵ֖ין
+    lang: he
+    lemma: k/5869 a
+    morph: HR/Ncbsc
+    gloss: null
+  - sourceTokenId: h27010006012
+    surface: נְחֹ֣שֶׁת
+    lang: he
+    lemma: 5178 a
+    morph: HNcfsa
+    gloss: null
+  - sourceTokenId: h27010006013
+    surface: קָלָ֑ל
+    lang: he
+    lemma: '7044'
+    morph: HAamsa
+    gloss: null
+  - sourceTokenId: h27010006014
+    surface: וְ/ק֥וֹל
+    lang: he
+    lemma: c/6963 a
+    morph: HC/Ncmsc
+    gloss: null
+  - sourceTokenId: h27010006015
+    surface: דְּבָרָ֖י/ו
+    lang: he
+    lemma: '1697'
+    morph: HNcmpc/Sp3ms
+    gloss: null
+  - sourceTokenId: h27010006016
+    surface: כְּ/ק֥וֹל
+    lang: he
+    lemma: k/6963 a
+    morph: HR/Ncmsc
+    gloss: null
+  - sourceTokenId: h27010006017
+    surface: הָמֽוֹן
+    lang: he
+    lemma: 1995 a
+    morph: HNcmsa
+    gloss: null
+  current_status: lbf-preliminary
+  review:
+    decision: APPROVED
+    reviewer: claude-g0a
+    runtime: cowork
+    model: claude-opus-5
+    confidence: high
+    evidence: 'Los 17 tokens están representados. La corrección afecta נְחֹ֣שֶׁת (H5178,
+      HNcfsa): «metal» → «bronce», el valor léxico del lemma en lugar de la generalización
+      heredada de RV1909. Verificado que el resto de la cláusula queda intacto: כְּ/עֵ֖ין
+      (token 11) sí está representado por «como de color de» — עַיִן en su sentido
+      de brillo/apariencia, no una adición sin apoyo — y קָלָ֑ל (H7044, adjetivo)
+      por «resplandeciente», dentro del rango de ''pulido/bruñido''. H5178 aparece
+      una sola vez en Daniel, de modo que este cambio no crea ninguna nueva inconsistencia;
+      al contrario, alinea el cognado hebreo נְחֹשֶׁת con el arameo נְחָשׁ (H5174)
+      ya armonizado.'
+    notes: 'Cambio léxico registrado en workflow/daniel/lexical-edits.jsonl (H5178,
+      «metal» → «bronce», 1 ocurrencia). Dos observaciones preexistentes que NO forman
+      parte de este cambio y que se elevan a la revisión final del libro, no a este
+      ítem: (1) כְ/תַרְשִׁ֗ישׁ se traduce «piedra de Tarsis» — la palabra «piedra»
+      no está en el hebreo, aunque el lemma designa una gema; (2) הָמֽוֹן (H1995)
+      se traduce «ejército», lo cual estrecha el sentido de multitud/estruendo a un
+      cuerpo militar; «multitud» sería más cercano al lemma en un símil sobre el SONIDO
+      de sus palabras. Ambas provienen del estado ya aprobado y requieren decisión
+      editorial. Pendiente para G0B: el cambio de longitud invalida los char spans
+      de este versículo.'
+    reviewed_at: '2026-08-14T00:58:52.150680+00:00'
+history:
+- timestamp: '2026-08-14T00:58:52.150693+00:00'
+  reviewer: claude-g0a
+  runtime: cowork
+  model: claude-opus-5
+  item_ids:
+  - G0A-0001

@@ -6,17 +6,20 @@ project:
   status: ACTIVE
 source:
   name: LBF
-  path: ''
-  revision: ''
-  checksum: ''
-  validated: false
+  path: /Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/releases/daniel/1.0.0/LBF-daniel-1.0.0-1533cdd52bdb/daniel.lbf.md
+  revision: TR-daniel-b338d84ac2cb
+  checksum: 5fabfa16477afd64788f3a9ea48c347d448c741f4f7173bf367b22d78d26b22d
+  validated: true
 alignment:
-  path: ''
-  revision: ''
-  checksum: ''
-  status: NOT_STARTED
-  validated_at: null
-  validated_by: []
+  path: /Users/johnwry/Nextcloud/Documents/GitHub/cgv-data/bibles/LBF/releases/daniel/1.0.0/LBF-daniel-1.0.0-1533cdd52bdb/daniel.alignment.json
+  revision: ALN-daniel-113848f598db
+  checksum: 113848f598dbf230badfce1b2489cfbee2612a136270e2ad8a9b7cee5513441e
+  status: PASS
+  validated_at: '2026-08-14T16:01:25+00:00'
+  validated_by:
+  - book_workflow.py/release_book.py schema 1
+  - Brandon Flores (G0A) and John Wry (G0B)
+  - Brandon Flores; John Wry
 compiler:
   name: CGV Reader Compiler
   version: ''
@@ -30,15 +33,20 @@ artifact:
   generated_at: null
   current: false
 workflow:
-  current_gate: G0_ALIGNMENT
+  current_gate: G1_COMPILE
   release_status: NOT_RELEASED
-  regeneration_required: false
+  regeneration_required: true
 gates:
   G0_ALIGNMENT:
-    status: RUNNING
+    status: PASS
     findings: []
+    attestation_path: /Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-translator/verification/daniel/manager-attestation.yaml
+    source_revision: TR-daniel-b338d84ac2cb
+    alignment_revision: ALN-daniel-113848f598db
+    source_checksum: 5fabfa16477afd64788f3a9ea48c347d448c741f4f7173bf367b22d78d26b22d
+    alignment_checksum: 113848f598dbf230badfce1b2489cfbee2612a136270e2ad8a9b7cee5513441e
   G1_COMPILE:
-    status: BLOCKED
+    status: READY
     findings: []
   G2_MECHANICAL:
     status: BLOCKED
@@ -82,6 +90,12 @@ provenance:
   findings_created: []
   findings_resolved: []
   notes: Beginning LBF source and alignment validation before first compilation.
+- id: EVT-000002
+  timestamp: '2026-08-14T16:02:00.689973+00:00'
+  actor: John Wry
+  action: RUNNING -> PASS
+  gate: G0_ALIGNMENT
+  notes: Verified Translator attestation accepted.
 human_approval:
   approved: false
   approved_by: null

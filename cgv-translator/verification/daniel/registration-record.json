@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "recordType": "MANAGER_REGISTRATION",
+  "recordId": "REG-daniel-5635e0fa42dc",
+  "revision": 1,
+  "book": "daniel",
+  "status": "PASS",
+  "registeredAt": "2026-08-14T16:02:00.689973+00:00",
+  "registeredBy": "John Wry",
+  "aiUsed": false,
+  "artifactId": "LBF-daniel-1.0.0-1533cdd52bdb",
+  "manifestId": "RELMAN-daniel-929d9a2cc6a2",
+  "manifestSha256": "92e4f79f357f9351bd6ff9fe7e01af94403374591336fdbdb3f635aa271bba88",
+  "sourceRevision": "TR-daniel-b338d84ac2cb",
+  "sourceChecksum": "5fabfa16477afd64788f3a9ea48c347d448c741f4f7173bf367b22d78d26b22d",
+  "alignmentRevision": "ALN-daniel-113848f598db",
+  "alignmentChecksum": "113848f598dbf230badfce1b2489cfbee2612a136270e2ad8a9b7cee5513441e",
+  "managerState": {
+    "path": "/Users/johnwry/Nextcloud/Documents/GitHub/herramientas/cgv-MANAGER/projects/daniel/state.yaml",
+    "sha256AfterRegistration": "5635e0fa42dc05b778e5c46ed6016ad8178f84e8292fbb4001e1d121b5c59a20",
+    "gate": "G0_ALIGNMENT",
+    "gateStatus": "PASS",
+    "nextGate": "G1_COMPILE",
+    "nextGateStatus": "READY",
+    "eventId": "EVT-000002"
+  },
+  "note": "Manager's later G1-G10 gates govern downstream CGV manual production; they do not change this approved LBF book release."
+}

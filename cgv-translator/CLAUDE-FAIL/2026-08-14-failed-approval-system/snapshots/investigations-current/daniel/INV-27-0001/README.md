@@ -1,0 +1,56 @@
+# Investigation INV-27-0001
+
+## Origin
+
+Project
+
+La Biblia Fiel
+
+Book
+
+Daniel
+
+Reference
+
+Daniel 1:1
+
+Clause
+
+בִּ/שְׁנַ֣ת שָׁל֔וֹשׁ לְ/מַלְכ֖וּת יְהוֹיָקִ֣ים מֶֽלֶךְ יְהוּדָ֑ה בָּ֣א נְבוּכַדְנֶאצַּ֧ר מֶֽלֶךְ בָּבֶ֛ל יְרוּשָׁלִַ֖ם וַ/יָּ֥צַר עָלֶֽי/הָ
+
+---
+
+## Why this investigation exists
+
+Translation paused because the translator chose to investigate the Hebrew/Aramaic lemma מֶלֶךְ (H4428).
+
+---
+
+## Objective
+
+Determine whether a stable LBF rendering is needed for the primary subject of this investigation.
+
+---
+
+## Final Authority
+
+The biblical text.
+
+---
+
+## Primary Subject
+
+H4428 — מֶלֶךְ
+
+---
+
+## Related Subjects
+
+H4430 — the Aramaic counterpart used through Daniel 2-7. Distinct lemma; not covered by
+this decision. See questions.md Q-003.
+
+---
+
+## Current Status
+
+Decided

@@ -1,0 +1,46 @@
+schema_version: '0.1'
+generated_at: '2026-08-14T00:49:52.650620+00:00'
+mode: APPLY
+book: daniel
+gate: G0A_TRANSLATION_APPROVAL
+validation:
+  queue_items: 8
+  decision_counts:
+    APPROVED: 8
+  all_queue_items_approved: true
+  queue_phrase_checksum_matches_current_artifact: true
+  queue_spine_checksum_matches_current_artifact: true
+  all_item_checksums_match: true
+  missing_references: 0
+  checksum_mismatches: 0
+promotion:
+  reviewed_approved_records: 8
+  promotable_preliminary_records: 8
+  already_approved_reviewed_records: 0
+  promoted_records: 8
+  preexisting_nonqueue_approved_records: 349
+status_counts_before:
+  lbf-approved: 349
+  lbf-preliminary: 8
+status_counts_after:
+  lbf-approved: 357
+  lbf-preliminary: 0
+artifacts:
+  queue: /sessions/rcw-01gyqupns3xf9tpdumpgrup3/mnt/cgv-translator/gate0/queues/daniel-g0a-translation-review.yaml
+  queue_sha256: d6937e30fdffb4efdd3cd7fe174afaaf9bf4e6babef3d729b51b66e4ff636805
+  phrases: /sessions/rcw-01gyqupns3xf9tpdumpgrup3/mnt/cgv-translator/translations/oshb-spine/daniel/daniel-phrases.json
+  phrases_sha256_before: 1e2a4560d09b3cf13929914c0460d99ef159e0b5f8a0c2688c4c1c3f17156e7e
+  spine: /sessions/rcw-01gyqupns3xf9tpdumpgrup3/mnt/cgv-translator/translations/oshb-spine/daniel/daniel-oshb-spine.json
+  spine_sha256: 40f53bf5f46fad84e28d796b3b3b7527f8420d47707af311a5959993dd8592c6
+  phrases_sha256_after: cdb6cba620af33431d21dcc072ba68379b867267807f4e5bd6690e261a3cd85b
+  archived_final_queue: /sessions/rcw-01gyqupns3xf9tpdumpgrup3/mnt/cgv-translator/gate0/evidence/daniel-g0a-final-review.yaml
+  backup_phrase_artifact: /sessions/rcw-01gyqupns3xf9tpdumpgrup3/mnt/cgv-translator/translations/oshb-spine/daniel/daniel-phrases.pre-g0a-promotion-20260814T004952Z.json
+promoted_references:
+- Daniel 2:32
+- Daniel 2:35
+- Daniel 2:45
+- Daniel 4:15
+- Daniel 4:23
+- Daniel 5:23
+- Daniel 5:4
+- Daniel 7:19

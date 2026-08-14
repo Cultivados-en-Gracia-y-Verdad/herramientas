@@ -1,101 +1,61 @@
 # CGV Translator Constitution
 
+**Status:** Governing
+**Version:** 1.0
+
 ## Purpose
 
-CGV Translator exists to assist the faithful translation of Scripture.
+CGV Translator helps people produce a faithful, reviewable, and traceable Scripture translation. It supports judgment; it does not replace accountable human decision-making.
 
-Translator does not replace the translator.
+## Article 1 — Source accountability
 
-Translator exists to preserve evidence, support investigation, and maintain accountability to the biblical text.
+Every translation claim must be accountable to the declared source text, its context, and its identified edition. Traditions, theories, preferences, and existing translations may inform inquiry but may not silently replace that source.
 
----
+## Article 2 — Evidence before commitment
 
-# Principle 1
+Observation and relevant evidence must precede non-routine conclusions. The strength of a claim must not exceed the strength of its evidence, and uncertainty must be recorded rather than hidden.
 
-The biblical text initiates every investigation.
+## Article 3 — Human responsibility
 
-Translator never begins with theories, traditions, or preferences.
+Software and AI may gather, compare, propose, detect, and explain. A named human remains accountable for review, approval, and release. Generated output is never self-validating.
 
----
+## Article 4 — Independent verification
 
-# Principle 2
+Production and verification are distinct acts. Translation and alignment require separate review because correctness in one does not establish correctness in the other.
 
-The biblical text is the final authority.
+## Article 5 — Traceability
 
-Every translation decision remains accountable to the source text.
+Every approval must identify the exact revisions reviewed. Every significant or disputed decision must link to its evidence and rationale. Released artifacts must be reproducible and identifiable by manifest and checksum.
 
----
+## Article 6 — Proportionate documentation
 
-# Principle 3
+Documentation must match risk and consequence. Routine choices need not become investigations; non-routine, disputed, recurring, or materially consequential choices must not survive only in memory, chat, or temporary notes.
 
-Observation precedes conclusion.
+## Article 7 — Honest representation
 
-Translator encourages careful observation before interpretation or translation policy.
+Translation and alignment records must represent the actual evidence and relationship, including ambiguity, uncertainty, omission, addition, and discontinuity. Apparent completeness must never be manufactured.
 
----
+## Article 8 — Controlled change
 
-# Principle 4
+Changes invalidate only decisions that depend on what changed. The affected scope must be explicit and reproducible. Released artifacts are immutable; corrections create new revisions.
 
-Evidence supports every policy.
+## Article 9 — Transparency and recoverability
 
-Translation policies should arise from documented evidence rather than memory or opinion.
+The history of material decisions, findings, revisions, approvals, and releases must remain inspectable. Superseded conclusions may be retired but not silently erased.
 
----
+## Article 10 — Necessary simplicity
 
-# Principle 5
+Every required field, state, gate, and feature must serve fidelity, verification, traceability, or safe release. Complexity without a demonstrated control benefit must be removed.
 
-Confidence grows through evidence.
+## Constitutional test
 
-Policies become more stable as evidence accumulates.
+A policy or feature is valid only if it:
 
-Stability never implies finality.
+1. preserves accountability to the source;
+2. keeps a human responsible for consequential decisions;
+3. makes evidence and revision identity traceable;
+4. distinguishes production from verification;
+5. handles change without concealing history;
+6. adds no complexity beyond its control value.
 
----
-
-# Principle 6
-
-Transparency is required.
-
-Every significant translation decision should be visible.
-
-Nothing important should be hidden.
-
----
-
-# Principle 7
-
-Explainability is required.
-
-Every translation policy should be traceable to the investigation that produced it.
-
----
-
-# Principle 8
-
-Mechanical work belongs to software.
-
-Scholarly judgment belongs to the translator.
-
-Translator automates gathering, organization, history, and consistency.
-
-The translator remains responsible for translation decisions.
-
----
-
-# Principle 9
-
-Investigations preserve institutional memory.
-
-Knowledge should not depend upon the memory of individual translators.
-
----
-
-# Principle 10
-
-Simplicity is preferred.
-
-Translator should never become more complicated than the translation work it supports.
-
-Every feature must solve a real problem encountered during translation.
-
-If the text did not require it, it probably should not exist.
+If it fails any test, it must be revised or removed.

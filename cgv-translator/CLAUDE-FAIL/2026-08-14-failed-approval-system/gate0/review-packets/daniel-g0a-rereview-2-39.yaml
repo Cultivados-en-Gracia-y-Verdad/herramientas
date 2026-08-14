@@ -1,0 +1,131 @@
+schema_version: '0.1'
+packet:
+  queue_id: daniel-G0A
+  gate: G0A_TRANSLATION_APPROVAL
+  book: daniel
+  created_at: '2026-08-13T14:11:36.092875+00:00'
+  batch_size: 1
+  source_queue_artifacts:
+    spine:
+      path: translations/oshb-spine/daniel/daniel-oshb-spine.json
+      checksum_sha256: 40f53bf5f46fad84e28d796b3b3b7527f8420d47707af311a5959993dd8592c6
+    phrases:
+      path: translations/oshb-spine/daniel/daniel-phrases.json
+      checksum_sha256: b338d84ac2cbb74ffee1b5d01cfbc3e8da8c463fffd6d3125890ce8e99658198
+review_instructions: Review each Spanish phrase against the supplied source-token
+  evidence. Use APPROVED only when the phrase is defensible and complete. Use NEEDS_REVISION
+  when correction is required, REJECTED for unusable output, and ESCALATE when judgment
+  requires a stronger specialist/human decision.
+items:
+- id: G0A-0001
+  reference: Daniel 2:39
+  mt_reference: Daniel 2:39
+  spanish: Y después de ti se levantará otro reino menor que tú; y otro tercer reino
+    de bronce, el cual se enseñoreará de toda la tierra.
+  source_tokens:
+  - sourceTokenId: h27002039001
+    surface: וּ/בָתְרָ֗/ךְ
+    lang: arc
+    lemma: c/870
+    morph: AC/Ncmsc/Sp2ms
+    gloss: null
+  - sourceTokenId: h27002039002
+    surface: תְּק֛וּם
+    lang: arc
+    lemma: '6966'
+    morph: AVqi3fs
+    gloss: null
+  - sourceTokenId: h27002039003
+    surface: מַלְכ֥וּ
+    lang: arc
+    lemma: '4437'
+    morph: ANcfsa
+    gloss: null
+  - sourceTokenId: h27002039004
+    surface: אָחֳרִ֖י
+    lang: arc
+    lemma: '317'
+    morph: AAafsa
+    gloss: null
+  - sourceTokenId: h27002039005
+    surface: ארע/א
+    lang: arc
+    lemma: '772'
+    morph: ANcfsc/Sd
+    gloss: null
+  - sourceTokenId: h27002039006
+    surface: אֲרַע
+    lang: arc
+    lemma: '772'
+    morph: ANcfsd
+    gloss: null
+  - sourceTokenId: h27002039007
+    surface: מִנָּ֑/ךְ
+    lang: arc
+    lemma: '4481'
+    morph: AR/Sp2ms
+    gloss: null
+  - sourceTokenId: h27002039008
+    surface: וּ/מַלְכ֨וּ
+    lang: arc
+    lemma: c/4437
+    morph: AC/Ncfsa
+    gloss: null
+  - sourceTokenId: h27002039009
+    surface: תליתיא
+    lang: arc
+    lemma: 8523 b
+    morph: AAobsd
+    gloss: null
+  - sourceTokenId: h27002039010
+    surface: תְלִיתָאָ֤ה
+    lang: arc
+    lemma: 8523 b
+    morph: AAofsa
+    gloss: null
+  - sourceTokenId: h27002039011
+    surface: אָחֳרִי֙
+    lang: arc
+    lemma: '317'
+    morph: AAafsa
+    gloss: null
+  - sourceTokenId: h27002039012
+    surface: דִּ֣י
+    lang: arc
+    lemma: '1768'
+    morph: ATr
+    gloss: null
+  - sourceTokenId: h27002039013
+    surface: נְחָשָׁ֔/א
+    lang: arc
+    lemma: '5174'
+    morph: ANcmsd/Td
+    gloss: null
+  - sourceTokenId: h27002039014
+    surface: דִּ֥י
+    lang: arc
+    lemma: '1768'
+    morph: ATr
+    gloss: null
+  - sourceTokenId: h27002039015
+    surface: תִשְׁלַ֖ט
+    lang: arc
+    lemma: '7981'
+    morph: AVqi3fs
+    gloss: null
+  - sourceTokenId: h27002039016
+    surface: בְּ/כָל
+    lang: arc
+    lemma: b/3606
+    morph: AR/Ncmsc
+    gloss: null
+  - sourceTokenId: h27002039017
+    surface: אַרְעָֽ/א
+    lang: arc
+    lemma: '772'
+    morph: ANcfsd/Td
+    gloss: null
+  current_status: lbf-preliminary
+  decision: PENDING
+  evidence: ''
+  notes: ''
