@@ -2,8 +2,8 @@
 
 > La Biblia Fiel — Zacarías.
 > Fuente: hebreo (OSHB/WLC). Snapshot `OSHB-WLC:2e287c8d0e0abd3bf601eb8ef9b4ee6ca3ae12cf36c0ed1612a7dcca54a2e777`.
-> Caps. 1–8: borrador de productor desde tokens OSHB (`producer-draft`). No está aprobado.
-> Caps. 9–14: texto previo sin spine; pendiente de retraducción token por token.
+> Caps. 1–10: borrador de productor desde tokens OSHB (`producer-draft`). No está aprobado.
+> Caps. 11–14: texto previo sin spine; pendiente de retraducción token por token.
 
 ## Capítulo 1
 
@@ -511,11 +511,11 @@ Así dice Jehová de los ejércitos: En aquellos días asirán diez hombres de t
 
 ### 9:1
 
-Carga de la palabra de Jehová sobre la tierra de Hadrac, y sobre Damasco será su reposo; porque de Jehová es el ojo del hombre y de todas las tribus de Israel.
+Carga de la palabra de Jehová en la tierra de Hadrac, y Damasco su reposo; porque de Jehová es el ojo del hombre y todas las tribus de Israel.
 
 ### 9:2
 
-Y también Hamat, que confina con ella; Tiro y Sidón, aunque sea muy sabia.
+Y también Hamat confina con ella; Tiro y Sidón, porque es muy sabia.
 
 ### 9:3
 
@@ -523,15 +523,15 @@ Y Tiro se edificó fortaleza, y amontonó plata como polvo, y oro fino como lodo
 
 ### 9:4
 
-He aquí el Señor la despojará, y herirá en el mar su poder; y ella será consumida con fuego.
+He aquí el Señor la desposeerá, y herirá en el mar su poderío; y ella en el fuego será consumida.
 
 ### 9:5
 
-Verá Ascalón y temerá; Gaza también, y se dolerá en gran manera; y Ecrón, porque su esperanza ha sido avergonzada. Y perecerá el rey de Gaza, y Ascalón no será habitada.
+Verá Ascalón y temerá; y Gaza, y se retorcerá mucho; y Ecrón, porque su esperanza ha sido avergonzada. Y perecerá el rey de Gaza, y Ascalón no será habitada.
 
 ### 9:6
 
-Y un extraño habitará en Asdod, y destruiré la soberbia de los filisteos.
+Y habitará un bastardo en Asdod, y cortaré la soberbia de los filisteos.
 
 ### 9:7
 
@@ -539,93 +539,92 @@ Y quitaré su sangre de su boca, y sus abominaciones de entre sus dientes; y que
 
 ### 9:8
 
-Y acamparé junto a mi casa como guardia, contra el que pasa y contra el que vuelve; y no pasará más sobre ellos un opresor, porque ahora he visto con mis ojos.
+Y acamparé por mi casa una guarnición, de quien pasa y de quien vuelve; y no pasará más sobre ellos un opresor, porque ahora he visto con mis ojos.
 
 ### 9:9
 
-Alégrate mucho, hija de Sión; da voces de júbilo, hija de Jerusalén. He aquí tu rey vendrá a ti, justo y salvador, humilde, y cabalgando sobre un asno, sobre un pollino hijo de asna.
+Alégrate mucho, hija de Sión; da voces, hija de Jerusalén. He aquí tu rey vendrá a ti; justo y salvo es él, pobre y cabalgando sobre un asno, y sobre un pollino hijo de asnas.
 
 ### 9:10
 
-Y destruiré los carros de Efraín, y los caballos de Jerusalén; y el arco de guerra será quebrado; y hablará paz a las naciones, y su señorío será de mar a mar, y desde el río hasta los confines de la tierra.
+Y cortaré el carro de Efraín y el caballo de Jerusalén, y será cortado el arco de guerra; y hablará paz a las naciones, y su señorío será de mar a mar, y desde el río hasta los confines de la tierra.
 
 ### 9:11
 
-Y tú también, por la sangre de tu pacto, yo he sacado a tus presos del pozo en que no hay agua.
+También tú, por la sangre de tu pacto, he soltado a tus presos del pozo; no hay agua en él.
 
 ### 9:12
 
-Vuélvanse a la fortaleza, oh presos de esperanza; hoy también les anuncio que les devolveré el doble.
+Vuélvanse a la fortaleza, presos de la esperanza; también hoy anuncio: el doble te devolveré.
 
 ### 9:13
 
-Porque he entesado para mí a Judá como arco, llené a Efraín, y despertaré a tus hijos, oh Sión, contra tus hijos, oh Grecia, y te pondré como espada de valiente.
+Porque he tensado para mí a Judá, arco llené a Efraín, y despertaré a tus hijos, Sión, contra tus hijos, Grecia, y te pondré como espada de valiente.
 
 ### 9:14
 
-Y Jehová será visto sobre ellos, y su saeta saldrá como el relámpago; y el Señor Jehová tocará trompeta, e irá con torbellinos del sur.
+Y Jehová será visto sobre ellos, y su saeta saldrá como el relámpago; y el Señor Jehová tocará el cuerno, e irá con torbellinos del sur.
 
 ### 9:15
 
-Jehová de los ejércitos los protegerá, y devorarán y someterán las piedras de honda; y beberán, y harán estruendo como de vino; y se llenarán como tazón, como los rincones del altar.
+Jehová de los ejércitos los protegerá, y devorarán y someterán las piedras de honda; y beberán, harán estruendo como vino, y se llenarán como el tazón, como las esquinas del altar.
 
 ### 9:16
 
-Y los salvará Jehová su Dios en aquel día como rebaño de su pueblo; porque como piedras de diadema serán levantadas sobre su tierra.
+Y los salvará Jehová su Dios en aquel día como rebaño de su pueblo; porque piedras de diadema ondeando sobre su tierra.
 
 ### 9:17
 
-Porque ¡cuán grande es su bondad, y cuán grande su hermosura! El trigo hará florecer a los jóvenes, y el mosto a las doncellas.
-
+Porque ¡qué su bondad y qué su hermosura! El trigo a los jóvenes, y el mosto hará fructificar a las doncellas.
 ## Capítulo 10
 
 ### 10:1
 
-Pidan a Jehová lluvia en la estación tardía. Jehová hace los relámpagos, y les dará lluvia abundante, a cada uno hierba en el campo.
+Pidan de Jehová lluvia en tiempo de lluvia tardía. Jehová hace relámpagos, y lluvia de aguacero dará a ellos, a un hombre hierba en el campo.
 
 ### 10:2
 
-Porque los terafines hablan vanidad, y los adivinos han visto mentira, y sueños de falsedad hablan, en vano consuelan; por eso se fueron como ovejas, fueron afligidos porque no tenían pastor.
+Porque los terafines hablaron iniquidad, y los adivinos vieron mentira, y sueños de la vanidad hablan, vanidad consuelan; por eso partieron como rebaño, son afligidos porque no hay pastor.
 
 ### 10:3
 
-Contra los pastores se ha encendido mi ira, y castigaré a los machos cabríos; porque Jehová de los ejércitos ha visitado su rebaño, la casa de Judá, y los ha puesto como su caballo de gloria en la batalla.
+Sobre los pastores se encendió mi ira, y sobre los machos cabríos visitaré; porque visitó Jehová de los ejércitos su rebaño, la casa de Judá, y los puso como caballo de su esplendor en la batalla.
 
 ### 10:4
 
-De él saldrá la piedra angular, de él la estaca, de él el arco de guerra, de él todo gobernante juntamente.
+De él la esquina, de él la estaca, de él el arco de guerra; de él saldrá todo opresor juntamente.
 
 ### 10:5
 
-Y serán como valientes que pisan el lodo de las calles en la batalla; y pelearán, porque Jehová estará con ellos; y avergonzarán a los que cabalgan caballos.
+Y serán como valientes, pisando en el lodo de las calles en la batalla, y pelearán, porque Jehová está con ellos, y secarán a los que cabalgan caballos.
 
 ### 10:6
 
-Y fortaleceré la casa de Judá, y salvaré la casa de José; y los haré volver, porque tendré misericordia de ellos; y serán como si no los hubiera desechado; porque yo soy Jehová su Dios, y les responderé.
+Y fortaleceré la casa de Judá, y la casa de José salvaré, y los haré volver, porque me apiadé de ellos; y serán como que no los deseché; porque yo soy Jehová su Dios, y les responderé.
 
 ### 10:7
 
-Y será Efraín como valiente, y se alegrará su corazón como de vino; y sus hijos lo verán y se alegrarán; su corazón se gozará en Jehová.
+Y serán como valiente Efraín, y se alegrará su corazón como vino; y sus hijos verán y se alegrarán; se gozará su corazón en Jehová.
 
 ### 10:8
 
-Yo les silbaré y los reuniré, porque los he redimido; y se multiplicarán como se multiplicaron.
+Silbaré a ellos y los reuniré, porque los redimí; y se multiplicarán como se multiplicaron.
 
 ### 10:9
 
-Y los sembraré entre los pueblos, y en lugares lejanos se acordarán de mí; y vivirán con sus hijos, y volverán.
+Y los sembraré en los pueblos, y en las lejanías se acordarán de mí; y vivirán con sus hijos, y volverán.
 
 ### 10:10
 
-Y los haré volver de la tierra de Egipto, y de Asiria los reuniré; y los traeré a la tierra de Galaad y al Líbano, y no les bastará.
+Y los haré volver de la tierra de Egipto, y de Asiria los reuniré; y a la tierra de Galaad y al Líbano los traeré, y no será hallado para ellos.
 
 ### 10:11
 
-Y pasará por el mar de angustia, y herirá las olas en el mar, y se secarán todas las profundidades del Nilo; y la soberbia de Asiria será derribada, y el cetro de Egipto se apartará.
+Y pasará en el mar, angustia, y herirá en el mar olas, y secarán todas las profundidades del Nilo; y será abatida la soberbia de Asiria, y el cetro de Egipto se apartará.
 
 ### 10:12
 
-Y los fortaleceré en Jehová, y en su nombre caminarán, declara Jehová.
+Y los fortaleceré en Jehová, y en su nombre andarán, declara Jehová.
 
 ## Capítulo 11
 
