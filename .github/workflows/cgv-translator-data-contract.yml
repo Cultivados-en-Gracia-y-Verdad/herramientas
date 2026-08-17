@@ -1,0 +1,41 @@
+name: cgv-translator data contract
+
+# Runs on every pull request and every push to main, deliberately WITHOUT a
+# paths filter. A required status check that is skipped by a paths filter leaves
+# branch protection waiting forever, so the job always runs and simply inspects
+# the cgv-translator/ subtree.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  boundary-check:
+    name: cgv-translator boundary check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check data contract
+        working-directory: cgv-translator
+        run: python3 scripts/check-data-contract.py
+
+      - name: Report (always)
+        if: always()
+        working-directory: cgv-translator
+        run: python3 scripts/check-data-contract.py --json > data-contract-report.json || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cgv-translator-data-contract-report
+          path: cgv-translator/data-contract-report.json
+          if-no-files-found: ignore

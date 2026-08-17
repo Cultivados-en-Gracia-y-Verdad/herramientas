@@ -1,0 +1,25 @@
+# Ownership rules for the herramientas repository.
+#
+# REPLACE every @OWNER_* placeholder below with a real GitHub user or team.
+# A team must be written as @org/team-name and must have write access.
+#
+# NOTE: there is deliberately no global `*` rule here. herramientas holds several
+# unrelated projects, and a catch-all would make one owner the reviewer for all
+# of them. If you want repository-wide ownership, uncomment the line below.
+#
+# *                                 @OWNER_GITHUB_USERNAME
+
+# cgv-translator: the LBF editing and approval application.
+/cgv-translator/                              @OWNER_GITHUB_USERNAME
+/cgv-translator/DATA_CONTRACT.md              @OWNER_GITHUB_USERNAME @CGV_DATA_STEWARD
+/cgv-translator/AGENTS.md                     @OWNER_GITHUB_USERNAME @CGV_DATA_STEWARD
+/cgv-translator/scripts/check-data-contract.py @OWNER_GITHUB_USERNAME @CGV_DATA_STEWARD
+/cgv-translator/.data-contract-baseline.json  @OWNER_GITHUB_USERNAME @CGV_DATA_STEWARD
+
+# Corpus copies and approval records: every path here is a baselined violation,
+# so changes need a steward's eyes until they are migrated to Biblia-LBF.
+/cgv-translator/translations/                 @OWNER_GITHUB_USERNAME @CGV_DATA_STEWARD
+/cgv-translator/verification/                 @OWNER_GITHUB_USERNAME @CGV_DATA_STEWARD
+
+# CI and ownership rules themselves.
+/.github/                                     @OWNER_GITHUB_USERNAME
